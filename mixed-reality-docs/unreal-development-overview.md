@@ -63,6 +63,12 @@ Other key features that play a role in mixed reality applications are available 
 
 If this is your first time creating or deploying an Unreal app for HoloLens, you'll need to [download supporting files](unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal) from the Epic Launcher. Once you have those files installed, you're ready to deploy from either the [Unreal editor](unreal-deploying.md) or the [Device Portal](unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal).
 
+### 5. Advanced services
+
+At this point in your development journey you might be looking for advanced services or a helping hand with commercial deployment. Integrating [Azure Cloud Services](mixed-reality-cloud-services.md) and Dynamics 365 features can level up your projects in a major way. We've compiled a few starting points for you to explore and expand your Mixed Reality knowledge.
+
+[!INCLUDE[](~/includes/unreal-cloud-services-d365.md)]
+
 ## What's next?
 
 A developers job is never done, especially when learning a new tool or SDK. The following sections can take you into areas beyond the beginner level material you've already completed, along with helpful resources if you get stuck. Note that these topics and resources are not in any sequential order, so feel free to jump around and explore!
