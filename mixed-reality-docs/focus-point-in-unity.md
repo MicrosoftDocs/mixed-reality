@@ -47,5 +47,17 @@ void Update()
 
 Note that the simple code above may end up reducing hologram stability if the focused object ends up behind the user.  This is why you should generally set "Enable Depth Buffer Sharing" instead of manually specifying a focus point.
 
+## Next Development Checkpoint
+
+If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs. From here, you can proceed to the next topic: 
+
+> [!div class="nextstepaction"]
+> [Tracking loss](tracking-loss-in-unity.md)
+
+Or jump directly to deploying your app on a device or emulator:
+
+> [!div class="nextstepaction"]
+> [Deploy to HoloLens or Windows Mixed Reality immersive headsets](using-visual-studio.md)
+
 ### See also
 * [Stabilization plane](hologram-stability.md#reprojection)

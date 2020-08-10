@@ -35,6 +35,18 @@ Speaking of other platforms, it has cross-platform support.  And while this does
 ### Performant
 Working with mobile platforms, we constructed it with performance in mind.  This is super important, and we wanted to ensure that the tools are not going to work against you.
 
+## Next Development Checkpoint
+
+If you're following the Unity development checkpoint journey we've laid out, your next task is to install the required tools.
+
+> [!div class="nextstepaction"]
+> [Install the tools](install-the-tools.md)
+
+If you're development environment is already ready to go, head over to the HoloLens 2 tutorial series and start building.
+
+> [!div class="nextstepaction"]
+> [HoloLens 2 tutorial series](mr-learning-base-01.md)
+
 ## See also
 * [MRTK getting started guide](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
 * [MRTK documentation home](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)

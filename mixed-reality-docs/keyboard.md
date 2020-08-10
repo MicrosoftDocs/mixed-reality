@@ -26,6 +26,13 @@ Your mixed reality application can invoke the system keyboard at any time. Note 
 
 ---
 
+## Next Development Checkpoint
+
+If you're following the Unity development checkpoint journey we've laid out, your next task is to deploy your application to a device or emulator. 
+
+> [!div class="nextstepaction"]
+> [Deploy to HoloLens or Windows Mixed Reality immersive headsets](using-visual-studio.md)
+
 ## See also
 
 * [Cursors](cursors.md)

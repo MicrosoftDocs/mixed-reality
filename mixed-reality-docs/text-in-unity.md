@@ -94,6 +94,18 @@ Unity's default font material does not support occlusion. Because of this, you w
 ![Shader with occlusion support](images/hug-text-07-1000px.png)<br>
 *Shader with occlusion support*
 
+## Next Development Checkpoint
+
+If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can proceed to the next building block: 
+
+> [!div class="nextstepaction"]
+> [Voice input](voice-input-in-unity.md)
+
+Or jump to Mixed Reality platform capabilities and APIs:
+
+> [!div class="nextstepaction"]
+> [Shared experiences](shared-experiences-in-unity.md)
+
 
 ## See also
 * [Text Prefab in the MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Prefabs/Text)

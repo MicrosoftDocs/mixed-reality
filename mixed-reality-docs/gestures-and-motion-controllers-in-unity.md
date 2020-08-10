@@ -524,6 +524,18 @@ Step-by-step tutorials, with more detailed customization examples, are available
 [![MR Input 213 - Motion controller](images/mr213-main-600px.jpg)](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-213)<br>
 *MR Input 213 - Motion controller*
 
+## Next Development Checkpoint
+
+If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can proceed to the next building block: 
+
+> [!div class="nextstepaction"]
+> [Hand and eye tracking](hand-eye-in-unit.md)
+
+Or jump to Mixed Reality platform capabilities and APIs:
+
+> [!div class="nextstepaction"]
+> [Shared experiences](shared-experiences-in-unity.md)
+
 ## See also
 
 * [Head-gaze and commit](gaze-and-commit.md)

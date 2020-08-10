@@ -37,3 +37,10 @@ We recommend installing the Unity game engine as the easiest way to get started 
 Now that you have your Windows 10, Visual Studio, and Windows 10 SDK ready to go, let's choose an engine to build on. 
 
 [!INCLUDE[](~/includes/tools-overview.md)]
+
+## Next Development Checkpoint
+
+If you're following the Unity development checkpoint journey we've laid out, your next task is to work through our HoloLens 2 tutorial series.
+
+> [!div class="nextstepaction"]
+> [HoloLens 2 tutorial series](mr-learning-base-01.md)

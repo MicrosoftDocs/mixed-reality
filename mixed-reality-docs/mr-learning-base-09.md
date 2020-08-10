@@ -135,3 +135,10 @@ In this tutorial, you learned how to create speech commands and how to control t
 This also concludes the [Getting started tutorials](mr-learning-base-01.md) series. Through these tutorials, you have successfully built a complete mixed reality experience from scratch using the MRTK.
 
 In the next two tutorial series, [Azure Spatial Anchors tutorials](mr-learning-asa-01.md) and [Multi-user capabilities tutorials](mr-learning-sharing-01.md), you will first learn how to integrate Azure Spatial Anchors into your project to anchor the Rover Explorer experience you created in the real world. Then, you will learn how to add multi-user capabilities to your project to share user and object movements in real-time.
+
+## Next Development Checkpoint
+
+If you're following the Unity development checkpoint journey we've laid out, your next task is to familiarize yourself with core building blocks of Mixed Reality apps.
+
+> [!div class="nextstepaction"]
+> [Basic interactions](mrtk-101.md)
