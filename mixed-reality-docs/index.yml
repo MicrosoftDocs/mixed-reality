@@ -91,7 +91,7 @@ productDirectory:
           text: Get your app ready for HoloLens 2
     # Card
     - title: Deploy HoloLens 2
-      imageSrc: images/icon-distribution.png
+      imageSrc: images/icon-distribution.jpg
       links:
         - url: https://docs.microsoft.com/hololens/hololens-requirements
           text: Prepare for commercial deployment
