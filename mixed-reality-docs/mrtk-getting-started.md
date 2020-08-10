@@ -47,6 +47,8 @@ If you're development environment is already ready to go, head over to the HoloL
 > [!div class="nextstepaction"]
 > [HoloLens 2 tutorial series](mr-learning-base-01.md)
 
+You can always go back to the [Unity development checkpoints](unity-development-overview.md) at any time.
+
 ## See also
 * [MRTK getting started guide](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
 * [MRTK documentation home](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)

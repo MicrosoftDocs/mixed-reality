@@ -142,3 +142,6 @@ If you're following the Unity development checkpoint journey we've laid out, you
 
 > [!div class="nextstepaction"]
 > [Basic interactions](mrtk-101.md)
+
+You can always go back to the [Unity development checkpoints](unity-development-overview.md#1-getting-started) at any time.
+

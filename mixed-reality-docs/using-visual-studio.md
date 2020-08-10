@@ -154,6 +154,20 @@ You can use Visual Studio to debug a Universal Windows app that's installed with
 6. Choose the type of code to debug (Managed, Native, Mixed)
 7. Click **Attach** or **Start**
 
+## Next Development Checkpoint
+
+If you're following the Unity development checkpoint journey we've laid out, you're in the midst of the deployment stage. From here, you can proceed to the next topic: 
+
+> [!div class="nextstepaction"]
+> [Deploying to HoloLens emulator](using-the-hololens-emulator.md)
+
+Or jump directly to adding advanced services:
+
+> [!div class="nextstepaction"]
+> [Advanced services](unity-development-overview.md#5-advanced-services)
+
+You can always go back to the [Unity development checkpoints](unity-development-overview.md#4-deploying-to-a-device-or-emulator) at any time.
+
 ## See also
 * [Install the tools](install-the-tools.md)
 * [Using the HoloLens emulator](using-the-hololens-emulator.md)

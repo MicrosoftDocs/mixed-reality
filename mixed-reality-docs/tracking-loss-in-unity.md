@@ -90,5 +90,7 @@ Or jump directly to deploying your app on a device or emulator:
 > [!div class="nextstepaction"]
 > [Deploy to HoloLens or Windows Mixed Reality immersive headsets](using-visual-studio.md)
 
+You can always go back to the [Unity development checkpoints](unity-development-overview.md#3-platform-capabilities-and-apis) at any time.
+
 ## See also
 * [Handling tracking loss in DirectX](coordinate-systems-in-directx.md#handling-tracking-loss)

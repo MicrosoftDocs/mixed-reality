@@ -304,3 +304,5 @@ If you're following the Unity development checkpoint journey we've laid out, you
 
 > [!div class="nextstepaction"]
 > [Shared experiences](shared-experiences-in-unity.md)
+
+You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.

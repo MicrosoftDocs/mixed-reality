@@ -44,3 +44,6 @@ If you're following the Unity development checkpoint journey we've laid out, you
 
 > [!div class="nextstepaction"]
 > [HoloLens 2 tutorial series](mr-learning-base-01.md)
+
+You can always go back to the [Unity development checkpoints](unity-development-overview.md#1-getting-started) at any time.
+

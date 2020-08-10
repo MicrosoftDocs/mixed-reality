@@ -152,6 +152,8 @@ Or jump to Mixed Reality platform capabilities and APIs:
 > [!div class="nextstepaction"]
 > [Shared experiences](shared-experiences-in-unity.md)
 
+You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.
+
 ## See also
 
 * [Mixed Reality Toolkit-Unity (MRTK) GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity)
