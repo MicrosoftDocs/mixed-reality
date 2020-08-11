@@ -43,7 +43,8 @@ Developing a Vuforia Engine app for HoloLens is fundamentally the same as develo
 1.	Download the [Vuforia Engine Sample for HoloLens](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) from the Unity Asset Store
 2.	Apply the [recommended Unity engine options for power and performance](performance-recommendations-for-unity.md)
 3.	Add the sample scenes to **Scenes** in **Build.**
-4.	In **Build Settings**, switch build platform to **UWP.**
+4.	In **Build Settings**, switch build platform to **UWP** by clicking the **Add Open Scenes** button.
+![image](https://user-images.githubusercontent.com/45470042/89573103-173daa80-d7f8-11ea-9284-931a7b6c913d.png)
 5.	Click the **Player Settings** button.  
    * Select the **UWP** icon and expand the **XR Settings** section.
    * Ensure that **Virtual Reality Supported** is enabled.    
