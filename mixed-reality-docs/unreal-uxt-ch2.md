@@ -112,7 +112,7 @@ That's all you need to do for the assets. Your next set of tasks is to create th
 
 ## Adding blueprints
 
-1. Click **Add New > New Folder** in the **Content Browser** and name it **Content Browser**. 
+1. Click **Add New > New Folder** in the **Content Browser** and name it **Blueprints**. 
 
 > [!NOTE]
 > If you're new to [blueprints](https://docs.unrealengine.com/en-US/Engine/Blueprints/index.html), they're special assets that provide a node-based interface for creating new types of Actors and script level events. 
