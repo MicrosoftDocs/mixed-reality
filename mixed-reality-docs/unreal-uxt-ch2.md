@@ -200,6 +200,7 @@ Now you'll follow the same steps to create a chess piece as you did with the boa
     * Set **Static Mesh** to **Chess_King** and **Material** to a new Material called **M_ChessWhite** in the Details panel. 
 
 4. Open **M_ChessWhite** in the Material editor and hook up the following **Texture Sample** nodes to the following:
+   * Set **Texture** to **ChessWhite_Albedo** and link the **RGB** to the **RGB** pin.
     * Set **Texture** to **ChessWhite_AO** and link the **RGB** to the **Ambient Occlusion** pin.
     * Set **Texture** to **ChessWhite_Metal** and link the **RGB** to the **Metallic** pin. 
     * Set **Texture** to **ChessWhite_Normal** and link the **RGB** to the **Normal** pin.
