@@ -37,12 +37,12 @@ Working with mobile platforms, we constructed it with performance in mind.  This
 
 ## Next Development Checkpoint
 
-If you're following the Unity development checkpoint journey we've laid out, your next task is to install the required tools.
+If you're following any of the development checkpoint journeys we've laid out (Unity, Unreal, or Native), your next task is to install the required tools.
 
 > [!div class="nextstepaction"]
 > [Install the tools](install-the-tools.md)
 
-If you're development environment is already ready to go, head over to the HoloLens 2 tutorial series and start building.
+If you're development environment is already ready to go, choose your engine from the tabs below and find your next step!
 
 > [!div class="nextstepaction"]
 > [HoloLens 2 tutorial series](mr-learning-base-01.md)
