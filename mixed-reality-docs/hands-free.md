@@ -1,6 +1,6 @@
 ---
 title: Hands-free
-description: Optimizing your app for hands-free
+description: Learn about the difficulties that users may face with a hands-and-controllers interface, and about various hands-free alternatives.
 author: liamartinez
 ms.author: liamar
 ms.date: 04/20/2019
