@@ -1,6 +1,6 @@
 ---
 title: Motion controllers
-description: Details on the Mixed Reality motion controllers.
+description: Learn about motion controllers which, unlike gestures, have a precise position in space and provide fine-grained interaction with digital objects.
 author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018

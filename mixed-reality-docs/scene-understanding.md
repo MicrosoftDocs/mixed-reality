@@ -1,6 +1,6 @@
 ---
 title: Scene understanding
-description: Introduction to scene understanding capabilities for HoloLens
+description: Learn about scene understanding, which gives Mixed Reality developers a high-level representation that eases development of environmentally aware applications.
 author: szymons
 ms.author: szymons
 ms.date: 07/08/2019

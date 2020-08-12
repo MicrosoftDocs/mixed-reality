@@ -1,6 +1,6 @@
 ---
 title: QR code tracking
-description: Learn how to detect QR codes on HoloLens 2.
+description: "Learn about QR codes: how to detect them on HoloLens 2, how to get and use the associated spatial coordinate systems, and best practices for detection." 
 author: dorreneb
 ms.author: dobrown
 ms.date: 05/15/2019

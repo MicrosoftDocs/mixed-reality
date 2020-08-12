@@ -1,6 +1,6 @@
 ---
 title: Mixed Reality native objects in Unity
-description: Get access to the underlying Holographic native objects in Unity.
+description: Learn how to access underlying native objects when needed, objects such as HolographicCamera and the current HolographicFrame. XRDevice provides the access.
 author: vladkol
 ms.author: vladkol
 ms.date: 05/20/2018

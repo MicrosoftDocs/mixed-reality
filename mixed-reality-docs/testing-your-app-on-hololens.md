@@ -1,6 +1,6 @@
 ---
 title: Testing your app on HoloLens
-description: Guidance and suggestions for testing your HoloLens app
+description: Learn about testing your HoloLens app for performance, proper function in varied environments, user comfort, correct interaction with inputs, battery usage, etc.
 author: jonmlyons
 ms.author: jlyons
 ms.date: 02/24/2019
