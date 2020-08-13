@@ -68,9 +68,10 @@ If this is your first time creating or deploying an Unreal app for HoloLens, you
 A developers job is never done, especially when learning a new tool or SDK. The following sections can take you into areas beyond the beginner level material you've already completed, along with helpful resources if you get stuck. Note that these topics and resources are not in any sequential order, so feel free to jump around and explore!
 
 ### Session videos from Mixed Reality Dev Days 2020
+This talk gives an overview of the features provided in Unreal Engine 4 and MRTK for Unreal, and how to use them to build epic experiences for HoloLens 2.
+
 <a href="https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Intro-to-MRTK-Unity" target="_blank">![Intro to MRTK-Unreal for HoloLens 2](images/MRDevDays_Session4.png)</a>
 
-In this talk, we'll provide an overview of the features provided in Unreal Engine 4 and MRTK for Unreal, and how to use them to build epic experiences for HoloLens 2.
 
 
 ### Streaming & Debugging
