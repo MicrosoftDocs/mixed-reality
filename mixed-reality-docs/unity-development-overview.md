@@ -83,10 +83,20 @@ If you're looking to add specific Mixed Reality features to your applications, w
 [!INCLUDE[](~/includes/unity-tutorials.md)]
 
 ### Session videos from Mixed Reality Dev Days 2020
-
-| [![Intro to MRTK-Unity](images/MRDevDays_Session1.png)](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Intro-to-MRTK-Unity)| [![MRTK's UX Building Blocks](images/MRDevDays_Session2.png)](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/MRTKs-UX-Building-Blocks)| [![MRTK Performance Tools](images/MRDevDays_Session3.png)](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/MRTK-Performance-and-Shaders)|
-|:--- | :--- | :--- | 
-| Tutorial on how to create a simple MRTK app from start to finish. Learn about interaction concepts and MRTK’s multi-platform capabilities. | Deep dive on the MRTK’s UX building blocks that help you build beautiful mixed reality experiences. | An introduction to performance tools, both in MRTK and external, as well as an overview of the MRTK Standard Shader.	 |
+:::row:::
+    :::column:::
+       [![Intro to MRTK-Unity](images/MRDevDays_Session1.png)](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Intro-to-MRTK-Unity)
+       Tutorial on how to create a simple MRTK app from start to finish. Learn about interaction concepts and MRTK’s multi-platform capabilities.
+    :::column-end:::
+    :::column:::
+       [![MRTK's UX Building Blocks](images/MRDevDays_Session2.png)](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/MRTKs-UX-Building-Blocks)
+       Deep dive on the MRTK’s UX building blocks that help you build beautiful mixed reality experiences.
+    :::column-end:::
+    :::column:::
+       [![MRTK Performance Tools](images/MRDevDays_Session3.png)](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/MRTK-Performance-and-Shaders)
+       An introduction to performance tools, both in MRTK and external, as well as an overview of the MRTK Standard Shader.
+    :::column-end:::
+:::row-end:::
 
 ### Additional resources
 
