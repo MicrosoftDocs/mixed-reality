@@ -53,7 +53,7 @@ While you can see and verify all data changes from the UI inside the application
 > [!TIP]
 > For testing from inside the Unity editor you can use a local emulator:
 
-> * on Windows 10 you can use [Azure storage Emulator](https://docs.microsoft.com/azure/storage/common/storage-use-emulator)
+> * on Windows 10 you can use [Azure Storage Emulator](https://docs.microsoft.com/azure/storage/common/storage-use-emulator)
 > * on MacOS/Linux you can use [Azurite Docker Image](https://hub.docker.com/_/microsoft-azure-storage-azurite) for Docker
 
 ## Preparing the scene
