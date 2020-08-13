@@ -120,7 +120,7 @@ Learn about frequently used common spatial interactions and UI building blocks f
 
 :::row:::	
     :::column:::	
-       [![Learn Unity](images/Final_unity_logo.png)](https://learn.unity.com/)<br>
+       [![Learn Unity](images/logo-unity.png)](https://learn.unity.com/)<br>
         **[Learn Unity](https://learn.unity.com/)**<br>
         Learn how to create interactive experiences with Unity. Learn by doing, from start to finish.
     :::column-end:::	
