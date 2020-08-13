@@ -85,7 +85,7 @@ If you're looking to add specific Mixed Reality features to your applications, w
 ### Session videos from Mixed Reality Dev Days 2020
 :::row:::
     :::column:::
-       [![Intro to MRTK-Unity](images/MRDevDays_Session1.png)](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Intro-to-MRTK-Unity)
+       <a href="https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Intro-to-MRTK-Unity" target="_blank">![Intro to MRTK-Unity](images/MRDevDays_Session1.png)</a>
        Tutorial on how to create a simple MRTK app from start to finish. Learn about interaction concepts and MRTK’s multi-platform capabilities.
     :::column-end:::
     :::column:::
