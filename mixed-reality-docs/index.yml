@@ -206,7 +206,7 @@ tools:
       url: https://github.com/microsoft/MixedRealityToolkit-Unreal
     # Card
     - title: Windows XR Plugin for Unity 
-      imageSrc: images/Final_unity_logo.png
+      imageSrc: images/icon-plugin.png
       url: https://docs.unity3d.com/Manual/com.unity.xr.windowsmr.html
     # Card
     - title: OpenXR Specifications 
