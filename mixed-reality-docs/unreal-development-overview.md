@@ -1,6 +1,6 @@
 ---
 title: Unreal Development Overview
-description: Overview of mixed reality development using Unreal Engine 4
+description: Learn about using the latest Unreal release to develop for Windows Mixed Reality and HoloLens 2 (AR). Tutorials and forums can help you get started.
 author: hferrone
 ms.author: v-haferr
 ms.date: 08/04/2020

@@ -1,6 +1,6 @@
 ---
 title: Billboarding and tag-along
-description: Objects with billboarding always orient themselves to face the user. 
+description: "Learn about two display techniques: billboarding, which keeps objects oriented to face the user; and tag-along, which keeps objects sufficiently close." 
 author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018

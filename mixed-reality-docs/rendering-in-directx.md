@@ -1,6 +1,6 @@
 ---
 title: Rendering in DirectX
-description: Explains holographic rendering for Windows Mixed Reality.
+description: Learn about Windows Mixed Reality rendering—based on DirectX—which lets an app reason about the position and orientation of observers of a holographic scene.
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020

@@ -1,6 +1,6 @@
 ---
 title: Case study - Using the stabilization plane to reduce holographic turbulence
-description: Using the stabilization plane to reduce holographic turbulence
+description: Learn how the success of your app depends on anchoring the hologram to a stabilization plane, and how this in turn depends on properly setting the focus point.
 author: bstrukus
 ms.author: bestruku
 ms.date: 03/21/2018

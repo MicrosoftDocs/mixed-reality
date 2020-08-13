@@ -1,6 +1,6 @@
 ---
 title: Device portal API reference
-description: API reference for the Windows Device Portal on HoloLens
+description: Everything in the Windows Device Portal is built on REST APIs that access  data and control devices. This article is a reference for those APIs.
 author: hamalawi
 ms.author: moelhama
 ms.date: 08/03/2020

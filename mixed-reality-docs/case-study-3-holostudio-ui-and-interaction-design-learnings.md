@@ -1,6 +1,6 @@
 ---
 title: Case study - 3 HoloStudio UI and interaction design learnings
-description: HoloStudio UI and interaction design learnings
+description: HoloStudio was one of the first apps for HoloLens. Learn what Microsoft discovered during development about best practices for 3D UI and interaction design.
 author: rwinj
 ms.author: marcghal
 ms.date: 03/21/2018
