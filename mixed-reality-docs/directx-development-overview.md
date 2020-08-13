@@ -19,7 +19,7 @@ keywords: DirectX, holographic rendering, native, native app, WinRT, WinRT app, 
 
 ## Development checkpoints
 
-Use the following checkpoints to bring your Unity games and applications into the world of mixed reality.
+Use the following checkpoints to bring your Native games and applications into the world of mixed reality.
 
 ### 1. Getting started
 
@@ -32,7 +32,7 @@ The differences between DirectX development for [2D views and immersive views](a
 |  Checkpoint  |  Outcome  |
 | --- | --- |
 | [What is OpenXR?](openxr.md) | Begin your native development journey by getting acquainted with OpenXR and what it has to offer |
-| [Install the latest tools](install-the-tools.md) | Download and install the latest Unity package and setup your project for mixed reality |
+| [Install the latest tools](install-the-tools.md) | Download and install the latest tools and setup your project for mixed reality |
 | [Setup for HoloLens 2](openxr-getting-started.md#getting-started-with-openxr-for-hololens-2) | Configure your device and environment for HoloLens 2 development |
 | [Set up for immersive headsets](openxr-getting-started.md#getting-started-with-openxr-for-windows-mixed-reality-headsets) | Configure your device and environment for Windows Immersive Headset development |
 | [Download the developer tools](openxr-getting-started.md#getting-the-windows-mixed-reality-openxr-developer-tools) | Try out the Windows Mixed Reality OpenXR Runtime |

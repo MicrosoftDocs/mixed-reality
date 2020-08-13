@@ -1,6 +1,6 @@
 ---
 title: Configure a New Unity project for Windows Mixed Reality 
-description: Instructions on configuring a Unity project for Windows Mixed Reality
+description: "Learn about two ways to set up a new Unity project for Windows Mixed Reality: have the Toolkit (v2) set up the environment, or manually change settings."
 author: thetuvix
 ms.author: alexturn
 ms.date: 07/29/2020

@@ -1,6 +1,6 @@
 ---
 title: Unity development overview
-description: Getting started building mixed reality apps in Unity.
+description: Get started building an app in Unity with the Mixed Reality Toolkit (MRTK). Learn about core building blocks, key features, and deploying your app.
 author: thetuvix
 ms.author: kurtie
 ms.date: 08/04/2020
@@ -8,7 +8,6 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, mixed reality, development, getting started, new project, porting, capability, camera, simulation, emulation, documentation
 ---
-
 
 # Unity development overview
 

@@ -1,6 +1,6 @@
 ---
 title: Locatable camera in Unity
-description: HoloLens locatable camera usage in Unity.
+description: Learn how to capture a photo to a file or to a Texture2D, how to capture a photo and interact with the raw bytes, and how to capture a video.
 author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018

@@ -1,6 +1,6 @@
 ---
 title: Unreal Development Overview
-description: Overview of mixed reality development using Unreal Engine 4
+description: Learn about using the latest Unreal release to develop for Windows Mixed Reality and HoloLens 2 (AR). Tutorials and forums can help you get started.
 author: hferrone
 ms.author: v-haferr
 ms.date: 08/04/2020
@@ -36,8 +36,8 @@ By the end of this section, you'll have a basic understanding of the Mixed Reali
 
 |  Checkpoint  |  Outcome  |
 | --- | --- |
-| [Install the latest tools](install-the-tools.md) | Download and install the latest Unity package and setup your project for mixed reality |
-| [HoloLens 2 tutorial series](unreal-uxt-ch1.md) | Dive into beginner level MRTK tutorials for HoloLens 2 hardware |
+| [Install the latest tools](install-the-tools.md) | Download and install the latest Unreal version and setup your project for mixed reality |
+| [HoloLens 2 tutorial series](unreal-uxt-ch1.md) | Dive into beginner level MRTK-Unreal tutorials for HoloLens 2 hardware |
 
 ### 2. Core building blocks
 
