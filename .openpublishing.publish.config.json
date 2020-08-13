@@ -1,4 +1,5 @@
 {
+  "build_entry_point": "op",
   "docsets_to_publish": [
     {
       "docset_name": "mixed-reality-docs",
