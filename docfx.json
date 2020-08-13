@@ -14,7 +14,9 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices"
-        ]
+        ],
+        "src": "articles",
+        "dest": "."
       }
     ],
     "resource": [
@@ -30,7 +32,24 @@
         "exclude": [
           "**/obj/**",
           "**/includes/**"
-        ]
+        ],
+        "src": "breadcrumb",
+        "dest": "breadcrumb"
+      },
+      {
+        "files": [
+          "includes/**/*.svg",
+          "includes/**/*.png",
+          "includes/**/*.jpg",
+          "includes/**/*.jpeg",
+          "includes/**/*.gif"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/_themes/**"
+        ],
+        "src": null,
+        "dest": null
       }
     ],
     "overwrite": [],
