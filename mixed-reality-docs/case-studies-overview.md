@@ -1,5 +1,4 @@
 ---
-layout: LandingPage
 title: Case study overview
 description: Stories, learnings and experiences the Mixed Reality team has encountered and jotted down along the way.
 author: grbury 
@@ -194,4 +193,3 @@ Read our high-level thoughts, and understand the principles we follow.
 <br>
 
 <br>
-
