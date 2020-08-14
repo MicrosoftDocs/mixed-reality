@@ -1,5 +1,4 @@
 ---
-layout: LandingPage
 title: Azure mixed reality services
 description: Use Azure mixed reality services to create 3D, multi-user and spatially-aware applications that are accessible across HoloLens, iOS, and Android devices. 
 author: grbury
