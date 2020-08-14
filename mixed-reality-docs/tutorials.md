@@ -54,6 +54,8 @@ The Mixed Reality Academy is a set of online step-by-step tutorials with corresp
         ### [MR Basics 101E: Complete project with emulator](holograms-101e.md)
         Set up a complete project, introducing core mixed reality features (gaze, gesture, voice, spatial sound, and spatial mapping) using the HoloLens emulator.
     :::column-end:::
+:::row-end:::
+:::row:::
     :::column:::
         ![MR Input 210 icon](images/Holograms210.jpg)
         ### [MR Input 210: Gaze](holograms-210.md)
@@ -69,6 +71,8 @@ The Mixed Reality Academy is a set of online step-by-step tutorials with corresp
         ### [MR Input 212: Voice](holograms-212.md)
         Voice allows us to interact with our holograms in an easy and natural way. In this course, you will learn to make users aware of available voice commands, give feedback that a voice command was heard, and use dictation to understand what the user is saying.
     :::column-end:::
+:::row-end:::
+:::row:::
     :::column:::
         ![MR Input 213 icon](images/MR213v2.jpg)
         ### [MR Input 213: Motion controllers](mixed-reality-213.md)
@@ -84,6 +88,8 @@ The Mixed Reality Academy is a set of online step-by-step tutorials with corresp
         ### [MR Spatial 230: Spatial mapping](holograms-230.md)
         Spatial mapping brings the real world and virtual world together. You'll explore shaders and use them to visualize your space. Then you'll learn to simplify the room mesh into simple planes, give feedback on placing holograms on real-world surfaces, and explore occlusion visual effects.
     :::column-end:::
+:::row-end:::
+:::row:::
     :::column:::
         ![MR Sharing 240 icon](images/Holograms240.jpg)
         ### [MR Sharing 240: Multiple HoloLens devices](holograms-240.md)
@@ -93,6 +99,8 @@ The Mixed Reality Academy is a set of online step-by-step tutorials with corresp
         ![MR Sharing 250 icon](images/MR250-new.jpg)
         ### [MR Sharing 250: HoloLens and immersive headsets](mixed-reality-250.md)
         In our //Build 2017 project, we demonstrate building an app that leverages the unique strengths of HoloLens and immersive (VR) headsets within a shared, cross-device experience.
+    :::column-end:::
+    :::column:::
     :::column-end:::
 :::row-end:::
 
@@ -178,6 +186,8 @@ These stand-alone tutorials are great for learning how to implement different Az
         ![MR and Azure Academy icon](images/MR-Azure-AcademyTile.jpg)
         ### [MR and Azure 313: IoT Hub Service](mr-azure-313.md)
         Learn how to implement Azure IoT Hub service on a virtual machine, and visualize the data on HoloLens.
+    :::column-end:::
+    :::column:::
     :::column-end:::
 
 :::row-end:::
