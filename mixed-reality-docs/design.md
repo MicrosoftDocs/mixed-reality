@@ -1,5 +1,4 @@
 ---
-layout: LandingPage
 title: Start designing and prototyping
 description: If you're ready to create something, learn the basic concepts you need to begin designing and prototyping.
 author: grbury 
