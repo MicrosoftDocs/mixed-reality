@@ -3,7 +3,7 @@ title: 5. Adding a button & resetting piece locations
 description: Part 5 of 6 in a tutorial series to build a simple chess app using Unreal Engine 4 and the Mixed Reality Toolkit UX Tools plugin
 author: hferrone
 ms.author: v-haferr
-ms.date: 06/10/2020
+ms.date: 08/14/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, tutorial, getting started, mrtk, uxt, UX Tools, documentation
@@ -80,5 +80,8 @@ You now have a mixed reality app with a chess piece and board that you can inter
 ![End scene in viewport](images/unreal-uxt/5-endscene.PNG)
 
 You're ready to move on to the final section of this tutorial where you'll learn how to correctly package and deploy the app to a device or emulator.
+
+> [!IMPORTANT]
+> We recommend that you update your project with the latest **[Unreal performance settings](performance-recommendations-for-unreal.md)** before deploying your application to a device or emulator.
 
 [Next Section: 6. Packaging & deploying to device or emulator](unreal-uxt-ch6.md)

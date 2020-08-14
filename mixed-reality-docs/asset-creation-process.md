@@ -1,6 +1,6 @@
 ---
 title: Asset creation process
-description: Guidance on creating assets for mixed reality experiences.
+description: Learn about the ways to get assets—authoring, purchasing, porting, and outsourcing—and about asset budgeting for performance. 
 author: shengkait
 ms.author: shentan
 ms.date: 03/21/2018

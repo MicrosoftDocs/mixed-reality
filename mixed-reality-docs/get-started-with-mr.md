@@ -31,7 +31,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
         Learn the tools and architecture
     :::column-end:::
     :::column:::
-       [![Jump in with Unity and MRTK](images/Tile-JumpIn.jpg)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)<br>
+       [![Jump in with Unity and MRTK](images/Unity-tile.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)<br>
         **[Jump in with Unity and MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)**<br>
         Optimize Unity for MR development
     :::column-end:::
@@ -182,7 +182,7 @@ A key to displaying content that looks realistic in holographic form is to mimic
         Get a demo of Mixed Reality and HoloLens at your local Microsoft Store.
     :::column-end:::
     :::column:::
-        [![Become a creator](images/icon-design.jpg)](design.md)<br>
+        [![Become a creator](images/icon-design.png)](design.md)<br>
         **[Become a creator](design.md)**<br>
         Learn the basic concepts you need to begin designing and prototyping.
     :::column-end:::
@@ -192,7 +192,7 @@ A key to displaying content that looks realistic in holographic form is to mimic
         See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
     :::column-end:::
     :::column:::
-        [![Start developing](images/icon-developer.jpg)](development.md)<br>
+        [![Start developing](images/icon-developer.png)](development.md)<br>
         **[Start developing](development.md)**<br>
         Choose a development path based on your skill level, work style or platform interest.
     :::column-end:::

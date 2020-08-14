@@ -1,6 +1,6 @@
 ---
 title: Release notes - May 2016
-description: HoloLens release notes for the Windows Holographic May 2016 Update.
+description: These are the HoloLens release notes for the Windows Holographic May 2016 Update—the latest feature development, major fixes, and changes.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018

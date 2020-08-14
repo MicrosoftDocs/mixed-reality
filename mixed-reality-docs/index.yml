@@ -59,7 +59,7 @@ productDirectory:
     # Card
     - title: Design
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: images/icon-design.jpg
+      imageSrc: images/icon-design.png
       links:
         - url: design.md
           text: Design and prototype
@@ -75,7 +75,7 @@ productDirectory:
           text: Understand interaction fundamentals
     # Card
     - title: Develop
-      imageSrc: images/icon-developer.jpg
+      imageSrc: images/icon-developer.png
       links:
         - url: development.md
           text: Choose your technology path
@@ -91,7 +91,7 @@ productDirectory:
           text: Get your app ready for HoloLens 2
     # Card
     - title: Deploy HoloLens 2
-      imageSrc: images/icon-distribution.png
+      imageSrc: images/icon-distribution.jpg
       links:
         - url: https://docs.microsoft.com/hololens/hololens-requirements
           text: Prepare for commercial deployment
@@ -206,7 +206,7 @@ tools:
       url: https://github.com/microsoft/MixedRealityToolkit-Unreal
     # Card
     - title: Windows XR Plugin for Unity 
-      imageSrc: images/Final_unity_logo.png
+      imageSrc: images/icon-plugin.png
       url: https://docs.unity3d.com/Manual/com.unity.xr.windowsmr.html
     # Card
     - title: OpenXR Specifications 

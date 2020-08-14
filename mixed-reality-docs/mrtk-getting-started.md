@@ -1,6 +1,6 @@
 ---
 title: Getting started with MRTK version 2
-description: For new developers who are interested in leveraging MRTK
+description: Learn about Mixed Reality Toolkit for Unity (MRTK)—a development kit for Microsoft HoloLens, Windows Mixed Reality immersive headsets, and OpenVR platforms.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 05/15/2019

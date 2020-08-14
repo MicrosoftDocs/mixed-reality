@@ -1,6 +1,6 @@
 ---
 title: Scene understanding SDK 
-description: Programming guide to the Scene Understanding SDK
+description: Learn about the Scene Understanding SDK, which mimics standard constructs such as 3D scene graphs and 2D rectangles and panels.
 author: szymons
 ms.author: szymons
 ms.date: 07/08/2019
@@ -10,7 +10,7 @@ keywords: Scene Understanding, Spatial Mapping, Windows Mixed Reality, Unity
 
 # Scene understanding SDK overview
 
-The goal of Scene understanding is to transform the un-structured environment sensor data that your Mixed Reality device captures and to convert it into a powerful but abstracted representation that is intuitive and easy to develop for. The SDK acts as the communication layer between your application and the Scene Understanding runtime. It's aimed to mimic existing standard constructs such as 3D scene graphs for 3D representations and 2D rectangles and panels for 2D applications. While the constructs Scene Understanding mimics will map to concrete frameworks you may use, in general SceneUnderstanding is framework agnostic allowing for interop between varied frameworks that interact with it. As Scene Understanding evolves the role of the SDK is to ensure new representations and capabilities continue to be exposed within a unified framework. In this document we will first introduce high level concepts that will help you get familiar with the development environment/usage and then provide more detailed documentation for specific classes and constructs.
+The goal of Scene understanding is to transform the un-structured environment sensor data that your Mixed Reality device captures and to convert it into a powerful but abstracted representation that is intuitive and easy to develop for. The SDK acts as the communication layer between your application and the Scene Understanding runtime. It's aimed to mimic existing standard constructs such as 3D scene graphs for 3D representations and 2D rectangles and panels for 2D applications. While the constructs that Scene Understanding mimics will map to concrete frameworks you may use, in general Scene Understanding is framework-agnostic, allowing for interop between varied frameworks that interact with it. As Scene Understanding evolves the role of the SDK is to ensure that new representations and capabilities continue to be exposed within a unified framework. In this document we will first introduce high level concepts that will help you get familiar with the development environment/usage and then provide more detailed documentation for specific classes and constructs.
 
 ## Where do I get the SDK?
 
