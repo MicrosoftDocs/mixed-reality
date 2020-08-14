@@ -116,6 +116,8 @@ These stand-alone tutorials are great for learning how to implement different Az
         ### [MR and Azure 302b: Custom vision](mr-azure-302b.md)
         Learn how to train a machine learning model, and use the trained model for image processing and analysis.
     :::column-end:::
+:::row-end:::
+:::row:::
     :::column:::
         ![MR and Azure Academy icon](images/MR-Azure-AcademyTile.jpg)
         ### [MR and Azure 303: Natural language understanding](mr-azure-303.md)
@@ -131,6 +133,8 @@ These stand-alone tutorials are great for learning how to implement different Az
         ### [MR and Azure 305: Functions and storage](mr-azure-305.md)
         In this course, you will learn how to create and use Azure Functions, and store data within Azure Storage, within a mixed reality app.
     :::column-end:::
+:::row-end:::
+:::row:::
     :::column:::
         ![MR and Azure Academy icon](images/MR-Azure-AcademyTile.jpg)
         ### [MR and Azure 306: Streaming video](mr-azure-306.md)
@@ -146,6 +150,8 @@ These stand-alone tutorials are great for learning how to implement different Az
         ### [MR and Azure 308: Cross-device notifications](mr-azure-308.md)
         In this course, you'll learn how to use several Azure services to deliver push notifications and scene changes from a PC app to a mixed reality app.
     :::column-end:::
+:::row-end:::
+:::row:::
     :::column:::
         ![MR and Azure Academy icon](images/MR-Azure-AcademyTile.jpg)
         ### [MR and Azure 309: Application insights](mr-azure-309.md)
@@ -161,6 +167,8 @@ These stand-alone tutorials are great for learning how to implement different Az
         ### [MR and Azure 311: Microsoft Graph](mr-azure-311.md)
         Learn how to connect to Microsoft Graph services from within a mixed reality app.
     :::column-end:::
+:::row-end:::
+:::row:::
     :::column:::
         ![MR and Azure Academy icon](images/MR-Azure-AcademyTile.jpg)
         ### [MR and Azure 312: Bot integration](mr-azure-312.md)
