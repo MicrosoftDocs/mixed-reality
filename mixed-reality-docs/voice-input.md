@@ -114,7 +114,7 @@ If you're already in the Cortana app you can also click the **?** icon on the si
 * "What time is it?"
 * "How much battery do I have left?"
 
-
+You can find more information on voice commands and localization in the [HoloLens Cortana](https://docs.microsoft.com/hololens/hololens-cortana) documentation.
 
 <br>
 
