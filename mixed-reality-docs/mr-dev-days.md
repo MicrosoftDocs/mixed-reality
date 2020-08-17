@@ -1,5 +1,4 @@
 ---
-layout: LandingPage
 title: Mixed Reality Dev Days
 description: Event page for Mixed Reality Dev Days
 author: jessemcculloch 
@@ -71,9 +70,8 @@ If you run into any issues with Altspace, please check the [troubleshooting page
 We have a networking space that will be opening after the Keynote on day one, and after the Fireside chat on day two and will remain open until 4pm Pacific time each day. If you would like the "RSVP" for this space, you can do so [here](https://account.altvr.com/events/1472955760198550135). The idea of the networking space is similar to the "hallway track" at a physical conference.  A place to meet up with fellow developers, designers, enthusiasts, and even Microsoft staff.
 
 ### May 21st
-||||||
+|**Time**|**Session Title**|**Speaker**|**Description**|**Link to Event Page**|
 |---------|---------|---------|---------|---------|
-|__***Time***__|__***Session Title***__|__***Speaker***__|__***Description***__|__***Link to Event Page***__|
 |9:30am - 10:30am|Opening Keynote|Alex Kipman|Come join us as Alex Kipman starts our first ever virtual Mixed Reality Dev Days event. If you are using a VR headset we encourage you to join us in AltspaceVR, and if you are joining from a computer, please check out our livestream at [https://aka.ms/MRDDKeynote](https://aka.ms/MRDDKeynote)|[RSVP Page](https://account.altvr.com/events/1475172303389065242)|
 |10:30am - 11:00am|**Break**||||
 |11:00am - 12:00pm|Intro to Azure Mixed Reality Services: Azure Remote Rendering|Jonathan Lyons, Christopher Manthei, and Marc Appelsmeier|Azure Remote Rendering just entered public preview.  Learn how you can use ARR to render interactive 3D models with hundreds of millions of polygons and stream them to devices like HoloLens 2 in real-time.|[RSVP Page](https://account.altvr.com/events/1475002657985790153)|
