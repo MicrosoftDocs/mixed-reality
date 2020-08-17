@@ -1,5 +1,4 @@
 ---
-layout: LandingPage
 title: Learn the tools and architecture
 description: Mixed reality developer documentation for HoloLens and immersive headsets.
 author: grbury
