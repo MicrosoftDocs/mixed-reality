@@ -1,5 +1,4 @@
 ---
-layout: LandingPage
 title: Mixed reality UX elements
 description: This document contains a set of topics that explain how to design for mixed reality devices.
 author: cre8ivepark
@@ -125,22 +124,22 @@ Learn about frequently used common spatial interactions and UI building blocks f
         **[Hand coach](hand-coach.md)**
     :::column-end:::
     :::column:::
-       [![Spatial mesh](images/UX/MRTK_PulseShader_SpatialMesh.gif)](spatial-mesh-ux.md)
+       [![Spatial mesh](images/ux/mrtk_pulseshader_spatialmesh.gif)](spatial-mesh-ux.md)
         **[Spatial mesh](spatial-mesh-ux.md)**
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-        [![Billboarding and tag-along](images/UX/MRTK_TagAlong.gif)](billboarding-and-tag-along.md)
+        [![Billboarding and tag-along](images/ux/mrtk_tagalong.gif)](billboarding-and-tag-along.md)
         **[Billboarding and tag-along](billboarding-and-tag-along.md)**
     :::column-end:::
     :::column:::
-       [![Progress indicator](images/UX/MRTK_ProgressIndicator.gif)](progress.md)
+       [![Progress indicator](images/ux/mrtk_progressindicator.gif)](progress.md)
         **[Progress indicator](progress.md)**
     :::column-end:::
     :::column:::
-       [![Surface magnetism](images/UX/MRTK_SurfaceMagnetism.gif)](surface-magnetism.md)
+       [![Surface magnetism](images/ux/mrtk_surfacemagnetism.gif)](surface-magnetism.md)
         **[Surface magnetism](surface-magnetism.md)**
     :::column-end:::
 :::row-end:::
