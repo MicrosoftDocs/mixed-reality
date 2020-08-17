@@ -1,5 +1,4 @@
 ---
-layout: LandingPage
 title: Mixed Reality Dev Days Session Recordings
 description: Session page with video links for MR Dev Days
 author: jessemcculloch 
