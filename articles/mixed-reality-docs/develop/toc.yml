@@ -1,14 +1,42 @@
-- name: Get started with Mixed Reality
-  href: get-started-with-mr.md
-- name: Expand your design process
-  href: case-study-expanding-the-design-process-for-mixed-reality.md
-- name: HoloLens hardware
+- name: Introduction to Mixed Reality development
+  href: development.md
+- name: Install the tools
+  href: install-the-tools.md
+- name: Cloud Services
+  href: mixed-reality-cloud-services.md
+- name: Unity
   items:
-  - name: HoloLens 2 hardware details
-    href: https://docs.microsoft.com/hololens/hololens2-hardware
-  - name: HoloLens (1st gen) hardware details
-    href: https://docs.microsoft.com/hololens/hololens1-hardware
-- name: Immersive headsets
+  - name: Unity development overview
+    href: unity-development-overview.md
+  - name: Getting started
+    items: 
+      - name: 
+        href: 
+  - name: Tutorials
+    items: 
+      - name: 
+        href: 
+  - name: Core building blocks
+    items: 
+      - name: 
+        href: 
+  - name: Platform capabilities and APIs
+    items: 
+      - name: 
+        href: 
+  - name: Sample apps
+    items: 
+      - name: 
+        href: 
+  - name: Settings and debugging
+    items: 
+      - name: 
+        href: 
+  - name: Visual Studio solutions
+    items: 
+      - name: 
+        href: 
+- name: Unreal
   items:
   - name: Immersive headset hardware details
     href: immersive-headset-hardware-details.md
@@ -18,3 +46,43 @@
     href: https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/
   - name: Location based entertainment
     href: location-based-experiences.md
+- name: Web
+  items:
+  - name: Web development overview
+    href: web/javascript-development-overview.md
+  - name: WebXR
+    href: web/webxr-overview.md
+  - name: WebVR
+    href: web/webvr-overview.md
+- name: Native
+  items:
+  - name: Immersive headset hardware details
+    href: immersive-headset-hardware-details.md
+  - name: Natigating the Windows Mixed Reality home
+    href: navigating-the-windows-mixed-reality-home.md
+  - name: VR enthusiast guide
+    href: https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/
+  - name: Location based entertainment
+    href: location-based-experiences.md
+- name: Platform capabilities and APIs
+  items:
+  - name: Immersive headset hardware details
+    href: immersive-headset-hardware-details.md
+  - name: Natigating the Windows Mixed Reality home
+    href: navigating-the-windows-mixed-reality-home.md
+  - name: VR enthusiast guide
+    href: https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/
+  - name: Location based entertainment
+    href: location-based-experiences.md
+- name: Porting apps
+  items:
+  - name: Get your existing app ready for HoloLens 2
+    href: porting-apps/mrtk-porting-guide.md
+  - name: Porting guide for immersive apps
+    href: porting-apps/porting-guides.md
+  - name: Input porting guide for Unity
+    href: porting-apps/input-porting-guide-for-unity.md
+  - name: Updating for SteamVR
+    href: porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md
+  - name: Updating 2D UWP apps for Mixed Reality
+    href: porting-apps/building-2d-apps.md
