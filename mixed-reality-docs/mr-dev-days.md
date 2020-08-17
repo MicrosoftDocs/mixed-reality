@@ -7,6 +7,7 @@ ms.date: 02/21/2020
 ms.topic: article
 keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Kinect
 ---
+# Mixed Reality Dev Days
 
 ![Mixed Reality Dev Days](images/MRDD/MRDevDaysBanner.png)
 
@@ -90,9 +91,8 @@ We have a networking space that will be opening after the Keynote on day one, an
 ||||||
 
 ### May 22nd
-||||||
+|**Time**|**Session Title**|**Speaker**|**Description**|**Link to Event Page**|
 |---------|---------|---------|---------|---------|
-|__***Time***__|__***Session Title***__|__***Speaker***__|__***Description***__|__***Link to Event Page***__|
 |9:30am - 10:30am|Fireside Chat|Alex Kipman & René Schulte|Opening up day two we have invited Microsoft MVP, Regional Director, and community member extraordinaire René Schulte to stand around a fire and chat about the topics the community is interested in. René has been gathering questions from the community for about a week, and we anticipate it's going to be a great conversation.|[RSVP Page](https://account.altvr.com/events/1472969601032651685)|
 |10:30am - 11:00am|**Break**||||
 |11:00am - 12:00pm|Designing AR/VR experiences using Microsoft Maquette|Ricardo Acosta|Designing a phone app or a website has a well-defined workflow. Unfortunately, due to its novelty designing spatial reality experiences can be tricky if you use the same 2D workflow or toolset. Luckily, the new Microsoft Maquette app focuses on helping UX designers to design.|[RSVP Page](https://account.altvr.com/events/1475022385332618137)|
