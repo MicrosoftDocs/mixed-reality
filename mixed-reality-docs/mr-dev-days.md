@@ -13,8 +13,6 @@ keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Ki
 
 We look forward to having you join us at Mixed Reality Dev Days! Get ready for a new event format, tailored to a completely digital experience in 2D and 3D with AltspaceVR, with opportunities to hear from Microsoft leaders, learn from experts, and connect with the mixed reality developer community. Register for the digital experience today, at no cost to you!
 
----
-
 ## Important Details
 
 **Date - May 21st and 22nd**
@@ -23,15 +21,11 @@ We look forward to having you join us at Mixed Reality Dev Days! Get ready for a
 
 **Registration - FREE**
 
----
-
 ## Registration
 
 [Register Now](https://mixedrealityprod.microsoftcrmportals.com/MRDDRegistration/)
 
 We are very excited to open up registration for Mixed Reality Dev Days.  The event is free and being held in AltspaceVR, however, we are still requesting that attendees register so we can send email updates as the event gets closer, as well as to make sure that we are staffed up for the number of attendees.
-
----
 
 ## About Altspace
 
@@ -59,8 +53,6 @@ If you run into any issues with Altspace, please check the [troubleshooting page
 - Unlike other virtual meetings, AltspaceVR is an immersive environment and as such, you can block other attendees view. Please respect other attendees space and view to ensure everyone has a good experience.
 - Friend everyone you want to talk to at the event, that way you can invite friends back to your AltspaceVR home to chat privately if you wish.
 - If you stand near a microphone, your voice will be broadcast to everyone at the event! so take care where you are when talking.
-
----
 
 ## Schedule - Subject to change
 
@@ -108,8 +100,6 @@ We have a networking space that will be opening after the Keynote on day one, an
 |2:30pm - 3:30pm|Tips from a Year of HoloLens 2 Development |Peter Vale|The HoloLens commercialization team will share tips and lessons learned from the past year working with our partners.  Gain insight into the most common issues along with best practices and techniques that you can use to get your HoloLens 2 application ready to share with your customers.|[RSVP Page](https://account.altvr.com/events/1475034807686660828)|
 ||||||
 
----
-
 ## Code of Conduct and Microsoft Standard Event Guidelines
 
 ### Code of Conduct 
@@ -122,7 +112,6 @@ We have a networking space that will be opening after the Keynote on day one, an
 
 ***We encourage everyone to behave responsibly within the AltspaceVR immersive environment as you would at any in-person event. Please respect other users space and do not block other attendees view of the stage when attending the event.  Be aware that like any in-person event, anything you say may be heard by other users at the event, if you require to have a private conversation then we recommend you take that to another space within AltspaceVR such as your AltspaceVR home***
 
----
 
 ## Frequently Asked Questions
 This section will be updated frequently as we get more questions from you!
