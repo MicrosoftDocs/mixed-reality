@@ -121,7 +121,7 @@ Learn about frequently used common spatial interactions and UI building blocks f
         **[Dialog](dialog-ui.md)**
     :::column-end:::
     :::column:::
-       [![Hand coach](images/MRTK_handCoach.jpg)](hand-coach.md)
+       [![Hand coach](images/HandCoach/MRTK_handCoach.jpg)](hand-coach.md)
         **[Hand coach](hand-coach.md)**
     :::column-end:::
     :::column:::

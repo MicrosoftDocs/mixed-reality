@@ -65,5 +65,5 @@ There are some additional ways to highlight directionality and improve immersion
 ## See also
 * [Spatial sound](spatial-sound.md)
 * [Spatial sound design](spatial-sound-design.md)
-* [Spatial sound in Unity](../develop/spatial-sound-in-unity.md)
+* [Spatial sound in Unity](../develop/unity/spatial-sound-in-unity.md)
 * [Video: Microsoft HoloLens: HoloTour](https://www.youtube.com/watch?v=pLd9WPlaMpY)

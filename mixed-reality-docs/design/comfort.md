@@ -9,8 +9,6 @@ ms.localizationpriority: high
 keywords: Mixed Reality, design, comfort, HoloLens 2, HoloLens (1st gen)
 ---
 
-
-
 # Comfort
 
 ## Overview

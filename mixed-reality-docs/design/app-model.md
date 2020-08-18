@@ -21,7 +21,7 @@ The lifecycle of a mixed reality app involves standard app concepts such as plac
 
 ### Placement is launch
 
-Every app starts in mixed reality by placing an app tile (just a [Windows secondary tile](https://docs.microsoft.com/uwp/api/Windows.UI.StartScreen.SecondaryTile)) in the [Windows Mixed Reality home](../discover/platform-capabitities-and-apis/navigating-the-windows-mixed-reality-home.md). These app tiles, on placement, will start running the app. These app tiles persist and stay at the location where they are placed, acting like launchers for anytime you want to get back to the app.
+Every app starts in mixed reality by placing an app tile (just a [Windows secondary tile](https://docs.microsoft.com/uwp/api/Windows.UI.StartScreen.SecondaryTile)) in the [Windows Mixed Reality home](../discover/navigating-the-windows-mixed-reality-home.md). These app tiles, on placement, will start running the app. These app tiles persist and stay at the location where they are placed, acting like launchers for anytime you want to get back to the app.
 
 ![Placement puts a secondary tile in the world](images/slide1-600px.png)<br>
 *Placement puts a secondary tile in the world*
@@ -37,7 +37,7 @@ When you remove a placed app tile from the world, this closes the underlying pro
 
 ### App suspension/termination
 
-In the [Windows Mixed Reality home](../discover/platform-capabitities-and-apis/navigating-the-windows-mixed-reality-home.md), the user is able to create multiple entry points for an app. They do this by launching your app from the Start menu and placing the app tile in the world. Each app tile behaves as a different entry point, and has a separate tile instance in the system. A query for [SecondaryTile.FindAllAsync](https://docs.microsoft.com/uwp/api/Windows.UI.StartScreen.SecondaryTile#Windows_UI_StartScreen_SecondaryTile_FindAllAsync) will result in a **SecondaryTile** for each app instance.
+In the [Windows Mixed Reality home](../discover/navigating-the-windows-mixed-reality-home.md), the user is able to create multiple entry points for an app. They do this by launching your app from the Start menu and placing the app tile in the world. Each app tile behaves as a different entry point, and has a separate tile instance in the system. A query for [SecondaryTile.FindAllAsync](https://docs.microsoft.com/uwp/api/Windows.UI.StartScreen.SecondaryTile#Windows_UI_StartScreen_SecondaryTile_FindAllAsync) will result in a **SecondaryTile** for each app instance.
 
 When a UWP app suspends, a screenshot is taken of the current state.
 

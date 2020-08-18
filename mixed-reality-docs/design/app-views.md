@@ -21,7 +21,7 @@ An immersive view gives your app the ability to create holograms in the world ar
 
 On [HoloLens](https://docs.microsoft.com/hololens/hololens1-hardware), your app renders its holograms on top of the user's real-world surroundings. On a [Windows Mixed Reality immersive headset](../discover/immersive-headset-hardware-details.md), the user cannot see the real world, and so your app must render everything the user will see.
 
-The [Windows Mixed Reality home](../discovernavigating-the-windows-mixed-reality-home.md) (including the Start menu and holograms you've placed around the environment) does not render while in an immersive view either. On HoloLens, any system notifications that occur while an immersive view is showing will be relayed audibly by Cortana, and the user can respond with voice input.
+The [Windows Mixed Reality home](../discover/navigating-the-windows-mixed-reality-home.md) (including the Start menu and holograms you've placed around the environment) does not render while in an immersive view either. On HoloLens, any system notifications that occur while an immersive view is showing will be relayed audibly by Cortana, and the user can respond with voice input.
 
 While in an immersive view, your app is also responsible for handling all input. Input in Windows Mixed Reality is made up of [gaze](gaze-and-commit.md), [gesture](gaze-and-commit.md#composite-gestures) (HoloLens only), [voice](voice-input.md) and [motion controllers](motion-controllers.md) (immersive headsets only).
 
