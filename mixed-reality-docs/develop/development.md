@@ -20,7 +20,7 @@ Mixed Reality is a big place, a nexus where real and virtual worlds collide with
 
 There are several development paths you can take through our documentation. The first step is finding the technology that's right for you. If you already have one in mind, go ahead and jump right to the respective tab below. If you're on the fence or just starting out, take a look through each one and understand what they offer, the available platforms and tools, and start creating!
 
-[!INCLUDE[](~includes/tech-path-overview.md)]
+[!INCLUDE[](includes/tech-path-overview.md)]
 
 ## What's next?
 
