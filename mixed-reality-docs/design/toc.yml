@@ -88,9 +88,9 @@
         items: 
           - name: Sound 
             href: ux-elements/spatial-sound-design.md
-          - name: Case study: Holotour
+          - name: Case study - Holotour
             href: ux-elements/case-study-spatial-sound-design-for-holotour.md
-          - name: Case study: Roboraid
+          - name: Case study - Roboraid
             href: ux-elements/case-study-using-spatial-sound-in-roboraid.md
   - name: Controls and behaviors
     items: 

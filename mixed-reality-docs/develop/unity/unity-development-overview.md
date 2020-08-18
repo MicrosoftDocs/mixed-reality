@@ -14,10 +14,10 @@ keywords: Unity, mixed reality, development, getting started, new project, porti
 
 ![Unity banner logo](images/unity_logo_banner.png)
 
-The fastest path to building a [mixed reality app](app-views.md) in [Unity](https://unity.com) is with the Mixed Reality Toolkit. If you're brand new to Unity, we recommend that you explore the beginner level [tutorials](https://unity3d.com/learn/tutorials) on the Unity Learn platform before continuing. It's also a good idea to visit the comprehensive [Asset Store](https://www.assetstore.unity3d.com/) and the [Unity Mixed Reality forums](https://forum.unity3d.com/forums/hololens.102/) to engage with the online community building mixed reality apps. You never know what cool assets or solutions you might find out in the wild. When you're ready to get started with MRTK head to the development checkpoints below!
+The fastest path to building a [mixed reality app](../design/core-concepts/app-views.md) in [Unity](https://unity.com) is with the Mixed Reality Toolkit. If you're brand new to Unity, we recommend that you explore the beginner level [tutorials](https://unity3d.com/learn/tutorials) on the Unity Learn platform before continuing. It's also a good idea to visit the comprehensive [Asset Store](https://www.assetstore.unity3d.com/) and the [Unity Mixed Reality forums](https://forum.unity3d.com/forums/hololens.102/) to engage with the online community building mixed reality apps. You never know what cool assets or solutions you might find out in the wild. When you're ready to get started with MRTK head to the development checkpoints below!
 
 > [!IMPORTANT]
-> Take a look at our **[porting guides](porting-guides.md)** if you have an existing Unity project that you want to bring over to HoloLens 2. We have guides for projects that are using HTK, MRTK v1, SteamVR or were developed for immersive headsets such as the Oculus Rift or HTC Vive.
+> Take a look at our **[porting guides](../porting-apps/porting-guides.md)** if you have an existing Unity project that you want to bring over to HoloLens 2. We have guides for projects that are using HTK, MRTK v1, SteamVR or were developed for immersive headsets such as the Oculus Rift or HTC Vive.
 
 ## Development checkpoints
 
@@ -29,8 +29,8 @@ The easiest way to develop in Unity is with the Mixed Reality Toolkit. MRTK will
 |  Checkpoint  |  Outcome  |
 | --- | --- |
 | [What is MRTK?](mrtk-getting-started.md) | Begin your journey by getting acquainted with the Mixed Reality Toolkit and what it has to offer |
-| [Install the latest tools](install-the-tools.md) | Download and install the latest Unity package and setup your project for mixed reality |
-| [HoloLens 2 tutorial series](mr-learning-base-01.md) | Dive into beginner level MRTK tutorials for HoloLens 2 hardware |
+| [Install the latest tools](../install-the-tools.md) | Download and install the latest Unity package and setup your project for mixed reality |
+| [HoloLens 2 tutorial series](tutorials/mr-learning-base-01.md) | Dive into beginner level MRTK tutorials for HoloLens 2 hardware |
 
 > [!IMPORTANT]
 > If you'd like to create a new Unity project without importing Mixed Reality Toolkit, there are a small set of Unity settings you'll need to manually change for Windows Mixed Reality. These are broken down into two categories: per-project and per-scene. Take a look at our configuration guide for the step-by-step process.
@@ -61,8 +61,8 @@ Other key features that play a role in mixed reality applications are available 
 Once you've got your holographic Unity project ready for testing, your next step is to export and build a Unity Visual Studio solution. With that VS solution in hand, you can run your application in one of three ways on a real or simulated device. By the end of this section, you'll be able to deploy your application on whichever device or emulator fits your development needs.
 
 * [HoloLens or Windows Mixed Reality immersive headset](using-visual-studio.md)
-* [HoloLens emulator](using-the-hololens-emulator.md)
-* [Windows Mixed Reality immersive headset simulator](using-the-windows-mixed-reality-simulator.md)
+* [HoloLens emulator](platform-capabilities-and-apis/using-the-hololens-emulator.md)
+* [Windows Mixed Reality immersive headset simulator](platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
 
 ## What's next?
 
@@ -72,9 +72,9 @@ A developers job is never done, especially when learning a new tool or SDK. The 
 
 If you have existing apps that you'd like to port over, the articles listed below are your next stop/
 
-* [HoloToolkit/MRTK to MRTK v2](mrtk-porting-guide.md)
-* [Porting guide for immersive apps](porting-guides.md)
-* [Input porting guide](using-the-windows-mixed-reality-simulator.md)
+* [HoloToolkit/MRTK to MRTK v2](../porting-apps/mrtk-porting-guide.md)
+* [Porting guide for immersive apps](../porting-apps/porting-guides.md)
+* [Input porting guide](platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
 
 ### Tutorials
 
@@ -107,11 +107,11 @@ In addition to this documentation available on docs.microsoft.com, Unity install
 
 ## See also
 * [Mixed Reality Toolkit v2](mrtk-getting-started.md)
-* [MR Basics 100: Getting started with Unity](holograms-100.md)
+* [MR Basics 100: Getting started with Unity](tutorials/holograms-100.md)
 * [Recommended settings for Unity](recommended-settings-for-unity.md)
 * [Performance recommendations for Unity](performance-recommendations-for-unity.md)
 * [Exporting and building a Unity Visual Studio solution](exporting-and-building-a-unity-visual-studio-solution.md)
 * [Using the Windows namespace with Unity apps for HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
 * [Best practices for working with Unity and Visual Studio](best-practices-for-working-with-unity-and-visual-studio.md)
 * [Unity Play Mode](unity-play-mode.md)
-* [Porting guides](porting-guides.md)
+* [Porting guides](../porting-apps/porting-guides.md)

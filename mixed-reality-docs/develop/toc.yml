@@ -108,11 +108,11 @@
                 href: tutorials/mr-learning-pc-holographic-remoting-02.md
       - name: HoloLens (1st Gen) and immersive headset tutorials 
         items: 
-          - name: MR Basics 100: Getting started with Unity
+          - name: MR Basics 100 - Getting started with Unity
             href: holograms-100.md
-          - name: MR Basics 101: Complete project with device 
+          - name: MR Basics 101 - Complete project with device 
             href: holograms-101.md
-          - name: MR Basics 101E: Complete project with emulator
+          - name: MR Basics 101E - Complete project with emulator
             href: holograms-101e.md
       - name: Mixed Reality and Azure Services tutorials 
         items: 

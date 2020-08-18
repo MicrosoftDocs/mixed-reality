@@ -36,9 +36,8 @@ By the end of this section, you'll have a basic understanding of the Mixed Reali
 
 |  Checkpoint  |  Outcome  |
 | --- | --- |
-| [What is MRTK?](mrtk-getting-started.md) | Begin your journey by getting acquainted with the Mixed Reality Toolkit and what it has to offer |
-| [Install the latest tools](install-the-tools.md) | Download and install the latest Unity package and setup your project for mixed reality |
-| [HoloLens 2 tutorial series](unreal-uxt-ch1.md) | Dive into beginner level MRTK tutorials for HoloLens 2 hardware |
+| [Install the latest tools](../install-the-tools.md) | Download and install the latest Unity package and setup your project for mixed reality |
+| [HoloLens 2 tutorial series](tutorials/unreal-uxt-ch1.md) | Dive into beginner level MRTK tutorials for HoloLens 2 hardware |
 
 ### 2. Core building blocks
 
@@ -61,7 +60,7 @@ Other key features that play a role in mixed reality applications are available 
 
 ### 4. Deploying to a device
 
-If this is your first time creating or deploying an Unreal app for HoloLens, you'll need to [download supporting files](unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal) from the Epic Launcher. Once you have those files installed, you're ready to deploy from either the [Unreal editor](unreal-deploying.md) or the [Device Portal](unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal).
+If this is your first time creating or deploying an Unreal app for HoloLens, you'll need to [download supporting files](tutorials/unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal) from the Epic Launcher. Once you have those files installed, you're ready to deploy from either the [Unreal editor](unreal-deploying.md) or the [Device Portal](tutorials/unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal).
 
 ## What's next?
 
@@ -103,7 +102,7 @@ Developing for mixed reality comes with performance checkpoints that depend on t
 | Developer docs & tutorials | 4.25 |
 
 > [!div class="nextstepaction"]
-> [Explore MRTK](mrtk-getting-started.md)
+> [Install the tools](../install-the-tools.md)
 
 ## See also
 * <a href="https://docs.unrealengine.com/Platforms/AR/HoloLens2/index.html" target="_blank">Unreal docs for streaming, deploying to emulator and device</a>
