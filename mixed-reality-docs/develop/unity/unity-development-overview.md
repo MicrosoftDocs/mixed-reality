@@ -9,7 +9,6 @@ ms.localizationpriority: high
 keywords: Unity, mixed reality, development, getting started, new project, porting, capability, camera, simulation, emulation, documentation
 ---
 
-
 # Unity development overview
 
 ![Unity banner logo](images/unity_logo_banner.png)
@@ -42,7 +41,7 @@ The easiest way to develop in Unity is with the Mixed Reality Toolkit. MRTK will
 
 All of the core building blocks for mixed reality applications are exposed in a manner consistent with other Unity APIs. These building blocks are available as standalone features and through the Mixed Reality Toolkit. You might not need all of them at once, but we recommend exploring early on. After diving into the core building blocks listed below, you'll have a toolbox full of features you can integrate into a Mixed Reality project by themselves or through MRTK.
 
-[!INCLUDE[](includes/unity-building-blocks.md)]
+[!INCLUDE[](~/includes/unity-building-blocks.md)]
 
 ### 3. Platform capabilities and APIs
 
@@ -72,7 +71,7 @@ A developers job is never done, especially when learning a new tool or SDK. The 
 
 If you have existing apps that you'd like to port over, the articles listed below are your next stop/
 
-* [HoloToolkit/MRTK to MRTK v2](../porting-apps/mrtk-porting-guide.md)
+* [HoloToolkit/MRTK to MRTK v2](mrtk-porting-guide.md)
 * [Porting guide for immersive apps](../porting-apps/porting-guides.md)
 * [Input porting guide](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
 

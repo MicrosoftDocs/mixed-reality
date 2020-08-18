@@ -14,7 +14,7 @@ keywords: Windows Mixed Reality, billboarding, tag-along
 
 <br>
 
-<img src="images/UX/MRTK_TagAlong.gif" alt="HoloLens perspective of a menu system that always faces the user" width="940px">
+<img src="images/MRTK_TagAlong.gif" alt="HoloLens perspective of a menu system that always faces the user" width="940px">
 <br>
 
 ## What is billboarding?
