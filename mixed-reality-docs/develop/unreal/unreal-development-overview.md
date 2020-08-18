@@ -43,7 +43,7 @@ By the end of this section, you'll have a basic understanding of the Mixed Reali
 
 There are several key features of mixed reality development that our tutorial series doesn't cover. These building blocks are available as standalone features and through the Mixed Reality Toolkit. You might not need all of them at once, but we recommend exploring early on. After diving into the core building blocks listed below, you'll have a toolbox full of features you can integrate into your Mixed Reality projects.
 
-[!INCLUDE[](~/includes/unreal-building-blocks.md)]
+[!INCLUDE[](includes/unreal-building-blocks.md)]
 
 > [!NOTE]
 > You can dive into the **[UX Tools for Unreal GitHub](https://github.com/microsoft/MixedReality-UXTools-Unreal)** repository for more details.

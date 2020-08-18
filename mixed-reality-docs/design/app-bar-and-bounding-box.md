@@ -8,7 +8,7 @@ ms.topic: article
 keywords: Windows Mixed Reality, App bar, bounding box
 ---
 # Bounding box and App bar
-![Bounding is the standard interface for object manipulation in Mixed Reality.](images/UX/UX_Hero_BoundingBox.jpg)<br>
+![Bounding is the standard interface for object manipulation in Mixed Reality.](images/UX_Hero_BoundingBox.jpg)<br>
 <br>
 
 ## What is the Bounding box?
