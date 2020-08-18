@@ -15,7 +15,7 @@ keywords: Windows Mixed Reality, design, color, light, materials
 
 Designing content for mixed reality requires careful consideration of color, lighting, and materials for each of the visual assets used in your experience. These decisions can be for both aesthetic purposes, like using light and material to set the tone of an immersive environment, and functional purposes, like using striking colors to alert users of an impending action. Each of these decisions must be weighed against the opportunities and constraints of your experience’s target device.
 
-Below are guidelines specific to rendering assets on both immersive and holographic headsets. Many of these are closely tied to other technical areas and a list of related subjects can be found in the [See also](color,-light-and-materials.md#see-also) section at the end of this article.
+Below are guidelines specific to rendering assets on both immersive and holographic headsets. Many of these are closely tied to other technical areas and a list of related subjects can be found in the [See also](color-light-and-materials.md#see-also) section at the end of this article.
 
 ## Rendering on immersive vs. holographic devices
 
@@ -95,7 +95,7 @@ Materials are crucial elements for making realistic holograms. By providing prop
 
 ## See also
 * [Designing content for holographic display](designing-content-for-holographic-display.md)
-* [Color Separation](hologram-stability.md#color-separation)
-* [Holograms](hologram.md)
+* [Color Separation](../develop/platform-capabilities-and-apis/hologram-stability.md#color-separation)
+* [Holograms](../develop/platform-capabilities-and-apis/hologram.md)
 * [Microsoft Design Language - color](https://www.microsoft.com/design/color)
 * [Universal Windows Platform - color](https://docs.microsoft.com/windows/uwp/style/color)

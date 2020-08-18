@@ -28,7 +28,7 @@ We created HoloTour experiences of two different locations: Rome and Machu Picch
 
 ### Capture the audio
 
-In our [case study about capturing the visual content for HoloTour](case-study-capturing-and-creating-content-for-holotour.md), we talk about the design of our camera rig. It consisted of 14 GoPro cameras in a 3D-printed housing that was designed to fit the tripod. To capture audio, we added a quad-microphone array below the cameras. The sound was fed into a compact four-channel recording unit at the base of the tripod. We chose microphones that performed well but were small enough to avoid interfering with the cameras.
+In our [case study about capturing the visual content for HoloTour](../out-of-scope/case-studies/case-study-capturing-and-creating-content-for-holotour.md), we talk about the design of our camera rig. It consisted of 14 GoPro cameras in a 3D-printed housing that was designed to fit the tripod. To capture audio, we added a quad-microphone array below the cameras. The sound was fed into a compact four-channel recording unit at the base of the tripod. We chose microphones that performed well but were small enough to avoid interfering with the cameras.
 
 ![Custom-made camera and microphone rig](images/camera-rig-microphones-300px.png)<br>
 *Custom camera and microphone rig*
@@ -65,5 +65,5 @@ There are some additional ways to highlight directionality and improve immersion
 ## See also
 * [Spatial sound](spatial-sound.md)
 * [Spatial sound design](spatial-sound-design.md)
-* [Spatial sound in Unity](spatial-sound-in-unity.md)
+* [Spatial sound in Unity](../develop/spatial-sound-in-unity.md)
 * [Video: Microsoft HoloLens: HoloTour](https://www.youtube.com/watch?v=pLd9WPlaMpY)
