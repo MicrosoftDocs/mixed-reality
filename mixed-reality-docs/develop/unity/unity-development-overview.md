@@ -41,7 +41,7 @@ The easiest way to develop in Unity is with the Mixed Reality Toolkit. MRTK will
 
 All of the core building blocks for mixed reality applications are exposed in a manner consistent with other Unity APIs. These building blocks are available as standalone features and through the Mixed Reality Toolkit. You might not need all of them at once, but we recommend exploring early on. After diving into the core building blocks listed below, you'll have a toolbox full of features you can integrate into a Mixed Reality project by themselves or through MRTK.
 
-[!INCLUDE[](~/includes/unity-building-blocks.md)]
+[!INCLUDE[](../includes/unity-building-blocks.md)]
 
 ### 3. Platform capabilities and APIs
 
@@ -79,7 +79,7 @@ If you have existing apps that you'd like to port over, the articles listed belo
 
 If you're looking to add specific Mixed Reality features to your applications, we have several curated tutorials that can run you through the process from end-to-end. Our most popular HoloLens 2 and HoloLens (1st Gen) content is listed below, but you can find the entire collection by visiting the tutorials overview.
 
-[!INCLUDE[](includes/unity-tutorials.md)]
+[!INCLUDE[](../includes/unity-tutorials.md)]
 
 ### Additional resources
 
