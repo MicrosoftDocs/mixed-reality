@@ -1,20 +1,22 @@
-- name: Get started with Mixed Reality
-  href: get-started-with-mr.md
-- name: Expand your design process
-  href: case-study-expanding-the-design-process-for-mixed-reality.md
-- name: HoloLens hardware
-  items:
-  - name: HoloLens 2 hardware details
-    href: https://docs.microsoft.com/hololens/hololens2-hardware
-  - name: HoloLens (1st gen) hardware details
-    href: https://docs.microsoft.com/hololens/hololens1-hardware
-- name: Immersive headsets
-  items:
-  - name: Immersive headset hardware details
-    href: immersive-headset-hardware-details.md
-  - name: Natigating the Windows Mixed Reality home
-    href: navigating-the-windows-mixed-reality-home.md
-  - name: VR enthusiast guide
-    href: https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/
-  - name: Location based entertainment
-    href: location-based-experiences.md
+- name: Learn about Azure Services 
+  href: azure-services .md
+- name: Get ready for the new Microsoft Edge
+  href: new-microsoft-edge.md 
+- name: Programs and events
+  items: 
+    - name: San Francisco Reactor Academy events calendar 
+      href: sf-academy-events.md 
+    - name: Mixed Reality Dev Days 
+      items: 
+        - name: Mixed Reality Dev Days 
+          href: mr-dev-days.md 
+        - name: Session recordings 
+          href: mr-dev-days-sessions.md 
+- name: Current Mixed Reality release notes 
+  href: release-notes-may-2020.md 
+- name: Community resources 
+  href: community.md 
+- name: Contributing to this documentation 
+  href: contributing.md 
+- name: Deploying HoloLens at scale 
+  href: https://docs.microsoft.com/hololens/
