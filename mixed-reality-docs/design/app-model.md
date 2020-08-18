@@ -21,7 +21,7 @@ The lifecycle of a mixed reality app involves standard app concepts such as plac
 
 ### Placement is launch
 
-Every app starts in mixed reality by placing an app tile (just a [Windows secondary tile](https://docs.microsoft.com/uwp/api/Windows.UI.StartScreen.SecondaryTile)) in the [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md). These app tiles, on placement, will start running the app. These app tiles persist and stay at the location where they are placed, acting like launchers for anytime you want to get back to the app.
+Every app starts in mixed reality by placing an app tile (just a [Windows secondary tile](https://docs.microsoft.com/uwp/api/Windows.UI.StartScreen.SecondaryTile)) in the [Windows Mixed Reality home](../../platform-capabitities-and-apis/navigating-the-windows-mixed-reality-home.md). These app tiles, on placement, will start running the app. These app tiles persist and stay at the location where they are placed, acting like launchers for anytime you want to get back to the app.
 
 ![Placement puts a secondary tile in the world](images/slide1-600px.png)<br>
 *Placement puts a secondary tile in the world*
@@ -37,7 +37,7 @@ When you remove a placed app tile from the world, this closes the underlying pro
 
 ### App suspension/termination
 
-In the [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md), the user is able to create multiple entry points for an app. They do this by launching your app from the Start menu and placing the app tile in the world. Each app tile behaves as a different entry point, and has a separate tile instance in the system. A query for [SecondaryTile.FindAllAsync](https://docs.microsoft.com/uwp/api/Windows.UI.StartScreen.SecondaryTile#Windows_UI_StartScreen_SecondaryTile_FindAllAsync) will result in a **SecondaryTile** for each app instance.
+In the [Windows Mixed Reality home](../../platform-capabitities-and-apis/navigating-the-windows-mixed-reality-home.md), the user is able to create multiple entry points for an app. They do this by launching your app from the Start menu and placing the app tile in the world. Each app tile behaves as a different entry point, and has a separate tile instance in the system. A query for [SecondaryTile.FindAllAsync](https://docs.microsoft.com/uwp/api/Windows.UI.StartScreen.SecondaryTile#Windows_UI_StartScreen_SecondaryTile_FindAllAsync) will result in a **SecondaryTile** for each app instance.
 
 When a UWP app suspends, a screenshot is taken of the current state.
 
@@ -123,7 +123,7 @@ Like in the previous section, you can use **ApplicationViewSwitcher.SwitchAsync*
 
 2D app views always appear in a fixed virtual slate. This makes all 2D views show the exact same amount of content. Here are some further details about the size of your app's 2D view:
 * The aspect ratio of the app is preserved while resizing.
-* App [resolution and scale factor](building-2d-apps.md#2d-app-view-resolution-and-scale-factor) are not changed by resizing.
+* App [resolution and scale factor](../../porting-apps/building-2d-apps.md#2d-app-view-resolution-and-scale-factor) are not changed by resizing.
 * Apps are not able to query their actual size in the world.
 
 ![2D apps appear with fixed window sizes](images/12493521-10104043956964683-6118765685995662420-o-500px.jpg)<br>
@@ -245,7 +245,7 @@ See [KnownFolders](https://docs.microsoft.com/uwp/api/Windows.Storage.KnownFolde
 
 ## App package
 
-With Windows 10 you no longer target an operating system but instead [target your app to one or more device families](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide#device-families). A device family identifies the APIs, system characteristics, and behaviors that you can expect across devices within the device family. It also determines the set of devices on which your app can be installed from the [Microsoft Store](submitting-an-app-to-the-microsoft-store.md#specifying-target-device-families).
+With Windows 10 you no longer target an operating system but instead [target your app to one or more device families](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide#device-families). A device family identifies the APIs, system characteristics, and behaviors that you can expect across devices within the device family. It also determines the set of devices on which your app can be installed from the [Microsoft Store](../distribute/submitting-an-app-to-the-microsoft-store.md#specifying-target-device-families).
 
 * To target both desktop headsets and HoloLens, target your app to the **Windows.Universal** device family.
 * To target just desktop headsets, target your app to the **Windows.Desktop** device family.
@@ -254,6 +254,6 @@ With Windows 10 you no longer target an operating system but instead [target you
 ## See also
 
 * [App views](app-views.md)
-* [Updating 2D UWP apps for mixed reality](building-2d-apps.md)
-* [3D app launcher design guidance](3d-app-launcher-design-guidance.md)
-* [Implementing 3D app launchers](implementing-3d-app-launchers.md)
+* [Updating 2D UWP apps for mixed reality](../discover/building-2d-apps.md)
+* [3D app launcher design guidance](../distribute/3d-app-launcher-design-guidance.md)
+* [Implementing 3D app launchers](../distribute/implementing-3d-app-launchers.md)

@@ -116,33 +116,33 @@
             href: holograms-101e.md
       - name: Mixed Reality and Azure Services tutorials 
         items: 
-          - name: MR and Azure 301: Language translation
+          - name: MR and Azure 301 - Language translation
             href: mr-azure-301.md
-          - name: MR and Azure 302: Computer vision
+          - name: MR and Azure 302 - Computer vision
             href: mr-azure-302.md
-          - name: MR and Azure 302b: Custom vision 
+          - name: MR and Azure 302b - Custom vision 
             href: mr-azure-302b.md
-          - name: MR and Azure 303: Natural language understanding
+          - name: MR and Azure 303 - Natural language understanding
             href: mr-azure-303.md
-          - name: MR and Azure 304: Face recognition
+          - name: MR and Azure 304 - Face recognition
             href: mr-azure-304.md
-          - name: MR and Azure 305: Functions and storage
+          - name: MR and Azure 305 - Functions and storage
             href: mr-azure-305.md
-          - name: MR and Azure 306: Streaming video
+          - name: MR and Azure 306 - Streaming video
             href: mr-azure-306.md
-          - name: MR and Azure 307: Maching learning
+          - name: MR and Azure 307 - Maching learning
             href: mr-azure-307.md
-          - name: MR and Azure 308: Cross-device notifications
+          - name: MR and Azure 308 - Cross-device notifications
             href: mr-azure-308.md
-          - name: MR and Azure 309: Applicaiton insights
+          - name: MR and Azure 309 - Applicaiton insights
             href: mr-azure-309.md
-          - name: MR and Azure 310: Object detection
+          - name: MR and Azure 310 - Object detection
             href: mr-azure-310.md
-          - name: MR and Azure 311: Microsoft Graph
+          - name: MR and Azure 311 - Microsoft Graph
             href: mr-azure-311.md
-          - name: MR and Azure 312: Bot integration
+          - name: MR and Azure 312 - Bot integration
             href: mr-azure-312.md
-          - name: MR and Azure 313: IoT Hub Service 
+          - name: MR and Azure 313 - IoT Hub Service 
             href: mr-azure-301.md
   - name: Core building blocks
     items: 
