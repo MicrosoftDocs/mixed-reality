@@ -41,7 +41,7 @@ Your first task is to create a function blueprint that resets a chess piece to i
 ## Adding a button
 Now that the function is setup correctly, your next task is to create a button that fires it off when touched. 
 
-1.	Click **Add New > Blueprint Class**, expand the **All Classes** section, and search for **SimpleButton**. 
+1.	Click **Add New > Blueprint Class**, expand the **All Classes** section, and search for **BP_SimpleButton**. 
     * Name it **ResetButton** and double click to open the Blueprint
 
 > [!NOTE]
