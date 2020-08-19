@@ -13,7 +13,7 @@ keywords: 6dof controllers, motion controllers
 
 :::row:::
     :::column:::
-        Motion controllers are [hardware accessories](hardware-accessories.md) that allow users to take action in mixed reality. An advantage of motion controllers over [gestures](gaze-and-commit.md#composite-gestures) is that the controllers have a precise position in space, allowing for fine grained interaction with digital objects. For Windows Mixed Reality immersive headsets, motion controllers are the primary way that users will take action in their world.<br>
+        Motion controllers are [hardware accessories](../discover/hardware-accessories.md) that allow users to take action in mixed reality. An advantage of motion controllers over [gestures](gaze-and-commit.md#composite-gestures) is that the controllers have a precise position in space, allowing for fine grained interaction with digital objects. For Windows Mixed Reality immersive headsets, motion controllers are the primary way that users will take action in their world.<br>
         <br>
         *Image: A Windows Mixed Reality motion controller*
     :::column-end:::
@@ -37,9 +37,9 @@ keywords: 6dof controllers, motion controllers
 </colgroup>
 <tr>
      <td><strong>Feature</strong></td>
-     <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-     <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+     <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
 </tr>
 <tr>
      <td>Motion controllers</td>
@@ -75,7 +75,7 @@ Windows Mixed Reality motion controllers offer precise and responsive tracking o
 * A PC capable of Bluetooth 4.0.
 
 **Check for Windows, Unity, and driver updates**
-* Visit [Install the tools](install-the-tools.md) for the preferred versions of Windows, Unity, etc. for mixed reality development.
+* Visit [Install the tools](../develop/install-the-tools.md) for the preferred versions of Windows, Unity, etc. for mixed reality development.
 * Make sure you have the most up-to-date [headset and motion controller drivers](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/mixed-reality-software).
 
 ### Pairing controllers
@@ -138,7 +138,7 @@ If the controllers are turned off after pairing, their status will show up as Pa
 
 * Verify your controllers work properly:
     1. Launch **Mixed Reality Portal** and enter your Mixed Reality Home.
-    2. Move your controllers and verify tracking, test buttons, and verify [teleportation](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) works. If they don't, then check out [motion controller troubleshooting](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers).
+    2. Move your controllers and verify tracking, test buttons, and verify [teleportation](../discover/navigating-the-windows-mixed-reality-home.md#getting-around-your-home) works. If they don't, then check out [motion controller troubleshooting](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers).
 
 ## Gazing and pointing
 
@@ -238,7 +238,7 @@ Both [hand gestures](gaze-and-commit.md#composite-gestures) and motion controlle
 
 These renderable models should all be rendered at the **grip pose** of the controller, as the origin of the model is aligned with this point in the physical world. If you are rendering controller models, you may then wish to raycast into your scene from the **pointer pose**, which represents the ray along which users will naturally expect to point, given that controller's physical design.
 
-For more information about how to load controller models dynamically in Unity, see the [Rendering the motion controller model in Unity](gestures-and-motion-controllers-in-unity.md#rendering-the-motion-controller-model-in-unity) section.
+For more information about how to load controller models dynamically in Unity, see the [Rendering the motion controller model in Unity](../develop/unity/gestures-and-motion-controllers-in-unity.md#rendering-the-motion-controller-model-in-unity) section.
 
 **2D controller line art**
  While we recommend attaching in-app controller tips and commands to the in-app controller models themselves, some developers may want to use 2D line art representations of the motion controllers in flat "tutorial" or "how-to" UI. For those developers, we've made .png motion controller line art files available in both black and white below (right-click to save).
@@ -261,7 +261,7 @@ Motion controller firmware is part of the headset driver and will be updated aut
 
 ### How I can check battery level?
 
-In the [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md), you can turn your controller over to see its battery level on the reverse side of the virtual model. There is no physical battery level indicator.
+In the [Windows Mixed Reality home](../discover/navigating-the-windows-mixed-reality-home.md), you can turn your controller over to see its battery level on the reverse side of the virtual model. There is no physical battery level indicator.
 
 ### Can you use these controllers without a headset? Just for the joystick/trigger/etc input?
 
@@ -273,13 +273,12 @@ See [motion controller troubleshooting](https://docs.microsoft.com/windows/mixed
 
 ## Filing motion controller feedback/bugs
 
-[Give us feedback](give-us-feedback.md) in Feedback Hub, using the "Mixed Reality -> Input" category.
+[Give us feedback](../give-us-feedback.md) in Feedback Hub, using the "Mixed Reality -> Input" category.
 
 ## See also
-* [Gestures and motion controllers in Unity](gestures-and-motion-controllers-in-unity.md)
-* [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)
+* [Gestures and motion controllers in Unity](../develop/unity/gestures-and-motion-controllers-in-unity.md)
+* [Hands and motion controllers in DirectX](../develop/native/hands-and-motion-controllers-in-directx.md)
 * [Gestures](gaze-and-commit.md#composite-gestures)
-* [MR Input 213: Motion controllers](mixed-reality-213.md)
 * [Enthusiast's Guide: Your Windows Mixed Reality home](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
 * [Enthusiast's Guide: Using games & apps in Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)
 * [How inside-out tracking works](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system)

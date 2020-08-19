@@ -10,7 +10,7 @@ keywords: Mixed Reality, Controls, interaction, ui, ux
 
 # Near menu
 
-![Near menu](images/UX/UX_Hero_NearMenu.jpg)
+![Near menu](images/UX_Hero_NearMenu.jpg)
 
 A near menu is a collection of buttons on a panel that follow you with [tag-along behavior](billboarding-and-tag-along.md#what-is-a-tag-along). It stays in a certain range of distance and angle to allow you to interact with content. You can use the pin button or grab and place the menu to make it world-locked and disable the tag-along behavior. This allows you to focus on the target content without being disturbed by the floating menu.
 

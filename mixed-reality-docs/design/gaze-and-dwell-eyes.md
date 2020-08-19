@@ -44,4 +44,4 @@ We recommend an onset time of 150-250 ms in a given proximity (meaning the user 
 * [Eye-gaze and commit](gaze-and-commit-eyes.md)
 * [Gaze and commit](gaze-and-commit.md)
 * [Gaze and dwell](gaze-and-dwell.md)
-* [Voice input](voice-design.md)
+* [Voice input](../out-of-scope/voice-design.md)

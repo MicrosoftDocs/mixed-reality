@@ -44,9 +44,9 @@ Below are a few examples for how you as a mixed reality developer can benefit fr
     </colgroup>
     <tr>
         <td><strong>Input model</strong></td>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td>Head-gaze and commit</td>
@@ -188,7 +188,7 @@ There are different types of voice interaction models:
 - Conversation user interfaces or entities like Cortana have an AI natural language capability.
 - Custom voice commands
 
-To find out more details as well as a comprehensive list of available voice commands and how to use them, check out our [voice commanding](voice-design.md) guidance.
+To find out more details as well as a comprehensive list of available voice commands and how to use them, check out our [voice commanding](../out-of-scope/voice-design.md) guidance.
 
 <br>
 
@@ -201,7 +201,7 @@ To find out more details as well as a comprehensive list of available voice comm
     :::column:::
         The HoloLens Clicker is the first peripheral device built specifically for HoloLens. It is included with HoloLens (1st gen) Development Edition. The HoloLens Clicker lets a user click with minimal hand motion, and commit as a secondary input. The HoloLens Clicker connects to HoloLens (1st gen) or HoloLens 2 using Bluetooth Low Energy (BTLE).<br>
         <br>
-        [More information and instructions to pair the device](hardware-accessories.md#pairing-bluetooth-accessories)<br>
+        [More information and instructions to pair the device](../discover/hardware-accessories.md#pairing-bluetooth-accessories)<br>
         <br>
         *Image: HoloLens Clicker*
     :::column-end:::
@@ -221,7 +221,7 @@ To find out more details as well as a comprehensive list of available voice comm
     :::column:::
         The Xbox Wireless Controller performs a click actuation as a secondary input by using the 'A' button. The device is mapped to a default set of actions that help navigate and control the system. If you want to customize the controller, use the Xbox Accessories application to configure your Xbox Wireless Controller.<br>
         <br>
-        [How to pair an Xbox controller with your PC](hardware-accessories.md#pairing-bluetooth-accessories)<br>
+        [How to pair an Xbox controller with your PC](../discover/hardware-accessories.md#pairing-bluetooth-accessories)<br>
         <br>
         *Image: Xbox Wireless Controller*
     :::column-end:::
@@ -250,7 +250,7 @@ Connect external devices such as switches, buttons, mounts, and joysticks to cre
 ![Xbox Adaptive Controller ports](images/xbox-adaptive-controller-ports.jpg)<br>
 *Xbox Adaptive Controller ports*
 
-[Instructions to pair the device](hardware-accessories.md#pairing-bluetooth-accessories)
+[Instructions to pair the device](../discover/hardware-accessories.md#pairing-bluetooth-accessories)
 
 <a href=https://www.xbox.com/xbox-one/accessories/controllers/xbox-adaptive-controller>More info available on the Xbox site</a>
 

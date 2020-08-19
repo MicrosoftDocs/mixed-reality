@@ -9,7 +9,7 @@ keywords: hand, menu, button, quick access, layout
 ---
 # Hand menu
 
-![Ulnar side hand location](images/UX/UX_Hero_HandMenu.jpg)
+![Ulnar side hand location](images/UX_Hero_HandMenu.jpg)
 
 The hand menu is one of the most unique UX patterns in HoloLens 2. It allows you to quickly bring up hand-attached UI. Since it's accessible anytime and can be shown and hidden easily, it's great for quick actions.
 
@@ -46,7 +46,7 @@ If the hand menu buttons are placed too close to the home button, it may acciden
 <br>
 
 ## Hand menu with large and complex UI controls
-<img src="images/UX/HandMenu_SizeExample.png" alt="HoloLens perspective of a menu system that always faces the user" width="940px">
+<img src="images/HandMenu_SizeExample.png" alt="HoloLens perspective of a menu system that always faces the user" width="940px">
 It's recommended to limit the number of buttons or UI controls on hand-attached menus. This is because extended interaction with a large number of UI elements can cause arm fatigue. If your experience requires a large menu, provide an easy way for the user to world lock the menu. One technique we recommend is to world-lock then menu when the hand drops or flips away from the user. A second technique is to allow the user to directly grab the menu with the other hand. When the user releases the menu, the menu should world lock. This way, a user can interact with various UI elements comfortably and confidently over an extended period of time. 
 
 When the menu is world-locked, make sure to provide a way to move the menu, and close the menu when it's no longer needed. Make the menu movable by providing handles on the sides or top of menu. Add a close button to allow the menu to close. Allow for the menu to re-attach to the hand when the user hand faces the user. We also recommend requiring that the users gazes at their hand to prevent false activations (see below).

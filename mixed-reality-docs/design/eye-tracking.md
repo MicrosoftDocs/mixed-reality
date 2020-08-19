@@ -26,9 +26,9 @@ Eye tracking API has been designed with a user’s privacy in mind, avoiding pas
 </colgroup>
 <tr>
      <td><strong>Feature</strong></td>
-     <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-     <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+     <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
 </tr>
 <tr>
      <td>Eye-gaze</td>
@@ -60,7 +60,7 @@ To learn more about the calibration and about how to ensure a smooth experience,
 ## Available eye tracking data
 Before going into detail about specific use cases for eye-gaze input, we want to briefly point out the capabilities that the HoloLens 2 [Eye Tracking API](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose) provides. 
 Developers get access to a single eye-gaze ray (gaze origin and direction) at approximately _30 FPS (30 Hz)_.
-For more detailed information about how to access eye tracking data, please refer to our developer guides for using [eye-gaze in DirectX](gaze-in-directx.md) and [eye-gaze in Unity](https://aka.ms/mrtk-eyes).
+For more detailed information about how to access eye tracking data, please refer to our developer guides for using [eye-gaze in DirectX](../develop/native/gaze-in-directx.md) and [eye-gaze in Unity](https://aka.ms/mrtk-eyes).
 
 The predicted eye-gaze is approximately within 1.5 degrees in visual angle around the actual target (see the illustration below). 
 As slight imprecisions are expected, developers should plan for some margin around this lower-bound value (e.g., 2.0-3.0 degrees may result in a much more comfortable experience). 
@@ -143,14 +143,14 @@ To help you, check out our overview of key advantages, challenges and design rec
 
 In rare cases, eye tracking data might not be available.
 This can be due to different reasons from which the most common are listed below:
-* The system failed to [calibrate the user](calibration.md).
-* The user skipped the [calibration](calibration.md).	
+* The system failed to [calibrate the user](../calibration.md).
+* The user skipped the [calibration](.../calibration.md).	
 * The user is calibrated, but decided to not give permission to your app to use their eye tracking data.	
 * The user has unique eyeglasses or some eye condition that the system does not yet support.	
 * External factors inhibiting reliable eye tracking such as smudges on the HoloLens visor or eyeglasses, intense direct sunlight and occlusions due to hair in front of the eyes.	
 
 Hence, developers should ensure that there is appropriate fallback support for these users. 
-On the [Eye Tracking in DirectX](gaze-in-directx.md#fallback-when-eye-tracking-is-not-available) page, we explain the APIs required to detect whether eye tracking data is available. 
+On the [Eye Tracking in DirectX](../develop/native/gaze-in-directx.md#fallback-when-eye-tracking-is-not-available) page, we explain the APIs required to detect whether eye tracking data is available. 
 
 While some users may have consciously decided to revoke access to their eye tracking data and are ok with the trade-off of an inferior user experience to the privacy of not providing access to their eye tracking data, in some cases this may be unintentional. 	
 Hence, if your app uses eye tracking, and this is an important part of the experience, we recommend clearly communicating this to the user. 	
@@ -178,16 +178,16 @@ Again, we recommend to clearly communicate this to the user who may be unaware t
 This page has hopefully provided you with a good overview to get you started understanding the role of eye tracking and eye-gaze input for HoloLens 2. 
 To get started developing, check out our information on the role of [eye-gaze for interacting with holograms](eye-gaze-interaction.md),
 [eye-gaze in Unity](https://aka.ms/mrtk-eyes) and 
-[eye-gaze in DirectX](gaze-in-directx.md).
+[eye-gaze in DirectX](../develop/native/gaze-in-directx.md).
 
 
 ## See also
-* [Calibration](calibration.md)
+* [Calibration](../calibration.md)
 * [Comfort](comfort.md)
 * [Eye-gaze-based interaction](eye-gaze-interaction.md)
-* [Eye-gaze in DirectX](gaze-in-directx.md)
+* [Eye-gaze in DirectX](../develop/native/gaze-in-directx.md)
 * [Eye-gaze in Unity (Mixed Reality Toolkit)](https://aka.ms/mrtk-eyes)
 * [Gaze and commit](gaze-and-commit.md)
-* [Voice input](voice-design.md)
+* [Voice input](../out-of-scope/voice-design.md)
 
 

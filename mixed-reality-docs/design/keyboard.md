@@ -9,7 +9,7 @@ keywords: Mixed Reality, Controls, interaction, ui, ux
 
 # Keyboard
 
-![Keyboard](images/UX/UX_Hero_Keyboard.jpg)
+![Keyboard](images/UX_Hero_Keyboard.jpg)
 
 Your mixed reality application can invoke the system keyboard at any time. Note that the system keyboard will behave according to the target platform's capabilities, for example the keyboard on HoloLens 2 supports direct hand interactions, while the keyboard on HoloLens (1st gen) supports gaze and air-tap gesture input.
 

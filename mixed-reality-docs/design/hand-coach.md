@@ -168,13 +168,13 @@ After you are satisfied with your animation
     *	Material: Teaching_Hand2
     *	Scripts: Refer to MRTK guidelines for <a href= "https://github.com/MixedRealityToolkit-Unity/blob/'HandCoachUX'/Documentation/README_HandCoach.md"> MRTK hand coach </a>
     *	Per- project setting
-        *	Scene set to UWP: Instruction can be found on the [Configure Unity Project](Configure-Unity-Project.md) for Windows Mixed Reality
+        *	Scene set to UWP: Instruction can be found on the [Configure Unity Project](../develop/unity/Configure-Unity-Project.md) for Windows Mixed Reality
 
 ## See also
 * [Interaction-fundamentals](interaction-fundamentals.md)
 * [Asset Creation Process](asset-creation-process.md)
-* [Gestures](gestures.md)
-* [Install the Tools](install-the-tools.md)
-* [Configure Unity Project](Configure-Unity-Project.md)
-* [Unity development overview](unity-development-overview.md)
-* [MRTK 101](mrtk-101.md)
+* [Gestures](../gestures.md)
+* [Install the Tools](../develop/install-the-tools.md)
+* [Configure Unity Project](../develop/unity/Configure-Unity-Project.md)
+* [Unity development overview](../develop/unity/unity-development-overview.md)
+* [MRTK 101](../develop/unitydmrtk-101.md)

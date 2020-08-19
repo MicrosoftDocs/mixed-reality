@@ -165,7 +165,7 @@ A:  Since Head-gaze and commit is the interaction model for HoloLens (1st gen), 
 A:  Any of the interaction models will work for these users.  
 
 > [!NOTE]
-> More guidance specific to app design [coming soon](news.md).
+> More guidance specific to app design [coming soon](../whats-new/news.md).
 
 
 ## Transitioning interaction models
