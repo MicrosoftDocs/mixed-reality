@@ -10,7 +10,7 @@ keywords: HoloLens (1st gen), HoloLens 2, Mixed Reality, cursors, targeting, gaz
 
 # Cursors
 
-![Cursors](images/UX/UX_Hero_Cursor.jpg)
+![Cursors](images/UX_Hero_Cursor.jpg)
 
 A cursor, or indicator of your current targeting vector, provides continuous feedback for the user to understand where the headset believes their current focus is at that time. The cursor allows the user to understand their current targeting point and acts as feedback to indicate what area, hologram, or point will respond to input. It is the digital representation of where the device understands the user's attention to be (though that may not be the same as determining anything about their intentions).
 
@@ -30,9 +30,9 @@ There are 3 kinds of cursors: **finger, ray**, and **head-gaze**. These pointing
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td>Finger cursor</td>
@@ -113,7 +113,7 @@ If you would like to customize the cursor feedback behaviors and appearances, he
 ### Look and feel
 * A donut or torus shaped cursor works for a lot of applications.
 * Pick a color and shape that best represents the experience you are creating.
-* Cursors are especially prone to [color separation](hologram-stability.md#color-separation).
+* Cursors are especially prone to [color separation](../develop/platform-capabilities-and-apis/hologram-stability.md#color-separation).
 * A small cursor with balanced opacity keeps it informative without dominating the visual hierarchy.
 * Be cognizant of using shadows or highlights behind your cursor as they might obstruct content and distract from the task at hand.
 * Cursors should align to and hug the surfaces in your app, this will give the user a feeling that the system can see where they are looking, but also that the system is aware of their surroundings. For example, in the Mixed Reality OS, the cursor aligns to the surfaces of the user's world, creating a feeling of awareness of the world even when the user isn't looking directly at a hologram.

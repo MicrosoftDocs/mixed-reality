@@ -10,7 +10,7 @@ keywords: coordinate system, spatial coordinate system, orientation-only, seated
 
 # Coordinate systems
 
-At their core, mixed reality apps place [holograms](hologram.md) in your world that look and sound like real objects. This involves precisely positioning and orienting those holograms at places in the world that are meaningful to the user, whether the world is their physical room or a virtual realm you've created. When reasoning about the position and orientation of your holograms, or any other geometry such as the [gaze](gaze-and-commit.md) ray or [hand positions](hands-and-tools.md), Windows provides various real-world coordinate systems in which that geometry can be expressed, known as **spatial coordinate systems**.
+At their core, mixed reality apps place [holograms](../out-of-scope/hologram.md) in your world that look and sound like real objects. This involves precisely positioning and orienting those holograms at places in the world that are meaningful to the user, whether the world is their physical room or a virtual realm you've created. When reasoning about the position and orientation of your holograms, or any other geometry such as the [gaze](gaze-and-commit.md) ray or [hand positions](hands-and-tools.md), Windows provides various real-world coordinate systems in which that geometry can be expressed, known as **spatial coordinate systems**.
 
 <br>
 
@@ -27,9 +27,9 @@ At their core, mixed reality apps place [holograms](hologram.md) in your world t
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="https://docs.microsoft.com/windows/mixed-reality/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td><a href="coordinate-systems.md#stationary-frame-of-reference">Stationary frame of reference</a></td>
@@ -100,7 +100,7 @@ Note that the Stage frame of reference is not yet supported on HoloLens. A room-
 
 All 3D graphics applications use [Cartesian coordinate systems](https://docs.microsoft.com/windows/uwp/graphics-concepts/coordinate-systems) to reason about the positions and orientations of objects in the virtual worlds they render. Such coordinate systems establish 3 perpendicular axes along which to position objects: an X, Y, and Z axis.
 
-In [mixed reality](mixed-reality.md), your apps will reason about both virtual and physical coordinate systems. Windows calls a coordinate system that has real meaning in the physical world a **spatial coordinate system**.
+In [mixed reality](../out-of-scope/mixed-reality.md), your apps will reason about both virtual and physical coordinate systems. Windows calls a coordinate system that has real meaning in the physical world a **spatial coordinate system**.
 
 Spatial coordinate systems express their coordinate values in meters. This means that objects placed 2 units apart in either the X, Y or Z axis will appear 2 meters apart from one another when rendered in mixed reality. This lets you easily render objects and environments at real-world scale.
 
@@ -110,7 +110,7 @@ In both kinds of coordinate systems, the positive X-axis points to the right and
 
 ## Building an orientation-only or seated-scale experience
 
-The key to holographic [rendering](rendering.md) is changing your app's view of its holograms each frame as the user moves around, to match their predicted head motion. You can build **seated-scale experiences** that respect changes to the user's head position and head orientation using a **stationary frame of reference**.
+The key to holographic [rendering](../develop/platform-capabilities-and-apis/rendering.md) is changing your app's view of its holograms each frame as the user moves around, to match their predicted head motion. You can build **seated-scale experiences** that respect changes to the user's head position and head orientation using a **stationary frame of reference**.
 
 Some content must ignore head position updates, staying fixed at a chosen heading and distance from the user at all times. The primary example is 360-degree video: because the video is captured from a single fixed perspective, it would ruin the illusion for the view position to move relative to the content, even though the view orientation must change as the user looks around. You can build such **orientation-only experiences** using an **attached frame of reference**.
 
@@ -128,7 +128,7 @@ Over time, as the system learns more about the user's environment, it may determ
 
 An attached frame of reference moves with the user as they walk around, with a fixed heading defined when the app first creates the frame. This lets the user comfortably look around at content placed within that frame of reference. Content rendered in this user-relative way is called **body-locked** content.
 
-When the headset can't figure out where it is in the world, an attached frame of reference provides the only coordinate system which can be used to render holograms. This makes it ideal for displaying fallback UI to tell the user that their device can't find them in the world. Apps that are seated-scale or higher should include an orientation-only fallback to help the user get going again, with UI similar to that shown in the [Mixed Reality home](navigating-the-windows-mixed-reality-home.md).
+When the headset can't figure out where it is in the world, an attached frame of reference provides the only coordinate system which can be used to render holograms. This makes it ideal for displaying fallback UI to tell the user that their device can't find them in the world. Apps that are seated-scale or higher should include an orientation-only fallback to help the user get going again, with UI similar to that shown in the [Mixed Reality home](..discover/navigating-the-windows-mixed-reality-home.md).
 
 ## Building a standing-scale or room-scale experience
 
@@ -224,9 +224,9 @@ Sometimes, a home or other space may have two identical areas. For example, two 
 
 ## See also
 * [GDC 2017 presentation on spatial coordinate systems and holographic rendering](https://channel9.msdn.com/events/GDC/GDC-2017/GDC2017-008)
-* [Coordinate systems in Unity](coordinate-systems-in-unity.md)
-* [Coordinate systems in DirectX](coordinate-systems-in-directx.md)
+* [Coordinate systems in Unity](../develop/unity/coordinate-systems-in-unity.md)
+* [Coordinate systems in DirectX](../develop/native/coordinate-systems-in-directx.md)
 * [Spatial anchors](spatial-anchors.md)
-* [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
+* [Shared experiences in mixed reality](../develop/platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
-* [Case study - Looking through holes in your reality](case-study-looking-through-holes-in-your-reality.md)
+* [Case study - Looking through holes in your reality](../out-of-scope/case-studies/case-study-looking-through-holes-in-your-reality.md)

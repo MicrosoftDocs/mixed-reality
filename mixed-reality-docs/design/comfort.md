@@ -64,23 +64,23 @@ IPD refers to the distance between the pupils, or centers, of an individual’s 
 
 #### HoloLens (1st gen)
 
-For HoloLens (1st gen), IPD is estimated and set during device [calibration](calibration.md). For new users to an already set up device, calibration must be run or IPD must be set manually. VO depends wholly on device fit. Specifically, to minimize VO, the device needs to be resting on a user’s head such that the displays are level with the axis of his/her eyes. 
+For HoloLens (1st gen), IPD is estimated and set during device [calibration](https://docs.microsoft.com/hololens/hololens-calibration). For new users to an already set up device, calibration must be run or IPD must be set manually. VO depends wholly on device fit. Specifically, to minimize VO, the device needs to be resting on a user’s head such that the displays are level with the axis of his/her eyes. 
 
 #### HoloLens 2
 
-For HoloLens 2, IPD is estimated and set during eye/device [calibration](calibration.md). For new users to an already set up device, calibration must be run to ensure IPD is set correctly. VO is accounted for automatically in HoloLens 2. 
+For HoloLens 2, IPD is estimated and set during eye/device [calibration](https://docs.microsoft.com/hololens/hololens-calibration). For new users to an already set up device, calibration must be run to ensure IPD is set correctly. VO is accounted for automatically in HoloLens 2. 
 
 ### Guidance for immersive devices
 
-Windows Mixed Reality immersive HMDs have no automatic calibration for IPD or VO. IPD can be set manually in software (under Mixed Reality Portal settings, see [calibration](calibration.md)), or some HMDs have a mechanical slider that allows the user to adjust the spacing of the lenses to a comfortable position (i.e., that roughly matches their IPD). 
+Windows Mixed Reality immersive HMDs have no automatic calibration for IPD or VO. IPD can be set manually in software (under Mixed Reality Portal settings, see [calibration](https://docs.microsoft.com/hololens/hololens-calibration)), or some HMDs have a mechanical slider that allows the user to adjust the spacing of the lenses to a comfortable position (i.e., that roughly matches their IPD). 
 
 ## Rendering rates
 
-Mixed reality apps are unique because users can move freely in the world and interact with virtual content like as though they were real objects. To maintain this impression, it is critical to render holograms so they appear stable in the world and animate smoothly. Rendering at a [minimum of 60 frames per second (FPS)](understanding-performance-for-mixed-reality.md) helps achieve this goal. There are some Mixed Reality devices that support rendering at framerates higher than 60 FPS and for these devices it is strongly recommended to render at the higher framerates to provide an optimal user experience.
+Mixed reality apps are unique because users can move freely in the world and interact with virtual content like as though they were real objects. To maintain this impression, it is critical to render holograms so they appear stable in the world and animate smoothly. Rendering at a [minimum of 60 frames per second (FPS)](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) helps achieve this goal. There are some Mixed Reality devices that support rendering at framerates higher than 60 FPS and for these devices it is strongly recommended to render at the higher framerates to provide an optimal user experience.
 
 **Diving deeper**
 
-To draw holograms to look like [they're stable in the real or virtual world](hologram-stability.md), apps need to render images from the user's position. Since image rendering takes time, HoloLens and other Windows Mixed Reality devices predict where a user's head will be when the images are shown in the displays. This prediction algorithm is an approximation. Windows Mixed Reality algorithms and hardware adjust the rendered image to account for the discrepancy between the predicted head position and the actual head position. This process makes the image seen by the user appear as if it were rendered from the correct location, and holograms feel stable. The updates work best for small changes in head position, and they can't completely account for some rendered image differences, like those caused by motion-parallax.
+To draw holograms to look like [they're stable in the real or virtual world](../develop/platform-capabilities-and-apis/hologram-stability.md), apps need to render images from the user's position. Since image rendering takes time, HoloLens and other Windows Mixed Reality devices predict where a user's head will be when the images are shown in the displays. This prediction algorithm is an approximation. Windows Mixed Reality algorithms and hardware adjust the rendered image to account for the discrepancy between the predicted head position and the actual head position. This process makes the image seen by the user appear as if it were rendered from the correct location, and holograms feel stable. The updates work best for small changes in head position, and they can't completely account for some rendered image differences, like those caused by motion-parallax.
 
 **By rendering at a minimum framerate of 60 FPS, you are doing two things to help make stable holograms:**
 1. Reducing the appearance of judder, which is characterized by uneven motion and double images. Faster hologram motion and lower render rates are associated with more pronounced judder. Therefore, striving to always maintain 60 FPS (or your device’s maximum render rate) will help avoid judder for moving holograms.
@@ -127,7 +127,7 @@ Optimal text legibility can help reduce eye strain and maintain user comfort, es
 * Lens properties like chromatic aberration
 * Text/font properties such as weight, spacing, serifs, and font/background color.  
 
-In general, we recommend testing specific applications for legibility and making font sizes as large as possible for a comfortable experience. You can find more detailed guidance for holographic and immersive devices in our [Typography](typography.md) and [Text in Unity](text-in-unity.md) pages.
+In general, we recommend testing specific applications for legibility and making font sizes as large as possible for a comfortable experience. You can find more detailed guidance for holographic and immersive devices in our [Typography](typography.md) and [Text in Unity](../develop/text-in-unity.md) pages.
 
 ## Holographic frame considerations
 
@@ -160,7 +160,7 @@ Muscle fatigue can accumulate when users are expected to keep a hand raised thro
 
 ## See also
 * [Gaze](gaze-and-commit.md)
-* [Hologram stability](hologram-stability.md)
+* [Hologram stability](../develop/platform-capabilities-and-apis/hologram-stability.md)
 * [Instinctual interactions](interaction-fundamentals.md)
 * [Holographic frame](holographic-frame.md)
-* [Calibration](calibration.md)
+* [Calibration](https://docs.microsoft.com/hololens/hololens-calibration)

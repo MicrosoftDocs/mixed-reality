@@ -9,9 +9,9 @@ keywords: UI design, holographic display, content design, dark theme, light them
 ---
 # Designing content for holographic display
 
-![Ulnar side hand location](images/UX/UX_Hero_DarkTheme.jpg)
+![Ulnar side hand location](images/UX_Hero_DarkTheme.jpg)
 
-When designing content for holographic displays, there are several elements that you need to consider for achieving the best experience. We've listed some of our recommendations below and you can learn more about the characteristics of holographic displays at [Color, light and materials](color,-light-and-materials.md) page.
+When designing content for holographic displays, there are several elements that you need to consider for achieving the best experience. We've listed some of our recommendations below and you can learn more about the characteristics of holographic displays at [Color, light and materials](color-light-and-materials.md) page.
 
 <br>
 

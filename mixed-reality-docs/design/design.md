@@ -15,9 +15,9 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 ![mixed reality design abstract](images/design-hero-image.png)
 
-## [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
+## [Expand your design process](../discover/case-study-expanding-the-design-process-for-mixed-reality.md)
 
-As Microsoft launched the HoloLens to an audience of eager developers in 2016, the team had already partnered with studios inside and outside of Microsoft to build the device’s launch experiences. These teams learned by doing, finding both opportunities and challenges in the new field of mixed reality design. [Read more](case-study-expanding-the-design-process-for-mixed-reality.md)
+As Microsoft launched the HoloLens to an audience of eager developers in 2016, the team had already partnered with studios inside and outside of Microsoft to build the device’s launch experiences. These teams learned by doing, finding both opportunities and challenges in the new field of mixed reality design. [Read more](../discover/case-study-expanding-the-design-process-for-mixed-reality.md)
 
 <br>
 
@@ -55,7 +55,7 @@ Spatial mapping makes it possible to place objects on real surfaces. This helps 
 
 <br>
 
-![Interaction design factors](images/UX/UX_Hero_Manipulation.jpg)
+![Interaction design factors](images/UX_Hero_Manipulation.jpg)
 
 ## Interaction design factors to consider
 
@@ -86,12 +86,12 @@ HoloLens 2 allows for a new level of context and human understanding within the 
 <br>
 
 
-![UX Elements](images/UX/UX_Hero_BoundingBox.jpg)
+![UX Elements](images/UX_Hero_BoundingBox.jpg)
 
 ## User experience elements for mixed reality
 
 
-### [Color, light and materials](color,-light-and-materials.md)
+### [Color, light and materials](color-light-and-materials.md)
 Designing content for mixed reality requires careful consideration of color, lighting, and materials for each of the visual assets used in your experience.
 
 <br>
@@ -151,23 +151,23 @@ Learn about frequently used common spatial interactions and UI building blocks f
 
 :::row:::
     :::column:::
-       [![Understand the basics](images/icon-lightbulb.png)](get-started-with-mr.md#understand-the-basics)<br>
-        **[Understand the basics](get-started-with-mr.md#understand-the-basics)**<br>
+       [![Understand the basics](images/icon-lightbulb.png)](../discover/get-started-with-mr.md#understand-the-basics)<br>
+        **[Understand the basics](../discover/get-started-with-mr.md#understand-the-basics)**<br>
         Get a better understanding of what defines mixed reality and how it’s being used.
     :::column-end:::
     :::column:::
-        [![Come to an event](images/icon-calendar.jpg)](sf-academy-events.md)<br>
-         **[Come to an event](sf-academy-events.md)**<br>
+        [![Come to an event](images/icon-calendar.jpg)](../whats-new/sf-academy-events.md)<br>
+         **[Come to an event](../whats-new/sf-academy-events.md)**<br>
         See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
     :::column-end:::
     :::column:::
-        [![Install the tools](images/icon-design.png)](install-the-tools.md)<br>
-         **[Install the tools](install-the-tools.md)**<br>
+        [![Install the tools](images/icon-design.png)](../develop/install-the-tools.md)<br>
+         **[Install the tools](../develop/install-the-tools.md)**<br>
         Use the installation checklist to get the tools you need to build apps for HoloLens and mixed reality.
     :::column-end:::
     :::column:::
-        [![Start developing](images/icon-developer.png)](development.md)<br>
-        **[Start developing](development.md)**<br>
+        [![Start developing](images/icon-developer.png)](../develop/development.md)<br>
+        **[Start developing](../develop/development.md)**<br>
         Choose a development path based on your skill level, work style, or platform interest.
     :::column-end:::
 :::row-end:::
