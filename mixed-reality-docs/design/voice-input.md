@@ -12,7 +12,7 @@ keywords: ggv, voice, cortana, speech, input
 
 # Voice input
 
-![Voice input](images/UX/UX_Hero_VoiceCommand.jpg)
+![Voice input](images/UX_Hero_VoiceCommand.jpg)
 
 Voice is one of the key forms of input on HoloLens. It allows you to directly command a hologram without having to use [hand gestures](gaze-and-commit.md#composite-gestures). Voice input can be a natural way to communicate your intent. Voice is especially good at traversing complex interfaces, because it lets users cut through nested menus with one command.
 
@@ -43,9 +43,9 @@ Of course, some voice commands don't require a target at all, such as "go to sta
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td>Voice input</td>
@@ -95,7 +95,7 @@ If you're already in the Cortana app you can also click the **?** icon on the si
 
 **HoloLens-specific commands**
 * "What can I say?"
-* "Go to Start" - instead of [bloom](system-gesture.md#bloom) to get to [Start Menu](navigating-the-windows-mixed-reality-home.md#start-menu)
+* "Go to Start" - instead of [bloom](system-gesture.md#bloom) to get to [Start Menu](../discover/navigating-the-windows-mixed-reality-home.md#start-menu)
 * "Launch <app>"
 * "Move <app> here"
 * "Take a picture"
@@ -332,6 +332,5 @@ With **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can
 ## See also
 * [Gaze and commit](gaze-and-commit.md)
 * [Instinctual interactions](interaction-fundamentals.md)
-* [MR Input 212: Voice](holograms-212.md)
-* [Voice input in DirectX](voice-input-in-directx.md)
-* [Voice input in Unity](voice-input-in-unity.md)
+* [Voice input in DirectX](../develop/native/voice-input-in-directx.md)
+* [Voice input in Unity](../develop/unity/voice-input-in-unity.md)

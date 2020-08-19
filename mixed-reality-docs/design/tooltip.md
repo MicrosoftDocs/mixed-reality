@@ -10,7 +10,7 @@ keywords: Mixed Reality, Controls, interaction, ui, ux
 
 # Tooltip
 
-![Tooltip](images/UX/UX_Hero_Tooltip.jpg)
+![Tooltip](images/UX_Hero_Tooltip.jpg)
 
 A tooltip is a short description that is linked to another control or object. They are used to convey a hint or extra information upon closer inspection. Tooltips help users understand unfamiliar objects in the physical environment that aren't described directly. 
 

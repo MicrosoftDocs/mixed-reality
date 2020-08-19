@@ -104,6 +104,6 @@ Sounds that reinforce the *progressive stages of button actions* and other inter
 With headphones or the HoloLens speakers, use head-related transfer function (HRTF)-based spatialization technologies. These technologies model the sound propagation around the head in the physical world. Even when a sound source is on the far side of one's head, sound propagates to the distant ear with some attenuation and delay. Speaker panning, in contrast, relies only on attenuation and applies total attenuation in the left ear when sounds are on the right side (and vice-versa). This technique can be uncomfortable for "normal hearing" listeners and inaccessible for listeners who have hearing impairment in one ear.
 
 ## Next steps
-* [Use spatial sound in Unity](spatial-sound-in-unity.md)
+* [Use spatial sound in Unity](../develop/unity/spatial-sound-in-unity.md)
 * [Case study of Roboraid](case-study-using-spatial-sound-in-roboraid.md)
 * [Case study of HoloTour](case-study-spatial-sound-design-for-holotour.md)

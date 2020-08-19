@@ -12,7 +12,7 @@ keywords: Windows Mixed Reality, design, controls, ui, ux
 
 <br>
 
-<img src="images/UX/MRTK_ProgressIndicator.gif" alt="Progress ring example in HoloLens" width="940px">
+<img src="images/MRTK_ProgressIndicator.gif" alt="Progress ring example in HoloLens" width="940px">
 
 A progress control provides feedback to the user that a long-running operation is underway. It can mean that the user cannot interact with the app when the progress indicator is visible, and can also indicate how long the wait time might be, depending on the indicator used.
 

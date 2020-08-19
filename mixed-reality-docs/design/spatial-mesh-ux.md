@@ -9,7 +9,7 @@ keywords: Mixed Reality, HoloLens, UI Controls, interaction, ui, ux, UX Design, 
 
 # Spatial mesh
 
-![Spatial mesh](images/UX/MRTK_PulseShader_SpatialMesh.gif)
+![Spatial mesh](images/MRTK_PulseShader_SpatialMesh.gif)
 
 Through the spatial mesh visualization, the user can learn how a device perceives and understands the physical environment. In addition to providing spatial context, proper spatial mesh visualization can create a delightful and magical experience.  
 
@@ -27,7 +27,7 @@ MRTK provides several materials for the spatial mesh visualization.
 
 - **MRTK_SurfaceReconstruction.mat**: This material gives you an animated pulse effect on the spatial mesh. You can use this material to visualize the environment at a specific moment of your experience or on the user's air-tap input. See **PulseShaderExamples.unity** scene for the examples.
 <br>
-<img src="images/UX/MRTK_SRMesh_Pulse.jpg" alt="Pulse spatial mesh visualization" width="640px">
+<img src="images/MRTK_SRMesh_Pulse.jpg" alt="Pulse spatial mesh visualization" width="640px">
 * Please see [MRTK - Spatial Awareness](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html) and [MRTK - Pulse Shader](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/PulseShader/README.html) for more details.
 
 <br>

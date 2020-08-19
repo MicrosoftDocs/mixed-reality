@@ -144,7 +144,7 @@ To help you, check out our overview of key advantages, challenges and design rec
 In rare cases, eye tracking data might not be available.
 This can be due to different reasons from which the most common are listed below:
 * The system failed to [calibrate the user](../calibration.md).
-* The user skipped the [calibration](.../calibration.md).	
+* The user skipped the [calibration](../calibration.md).	
 * The user is calibrated, but decided to not give permission to your app to use their eye tracking data.	
 * The user has unique eyeglasses or some eye condition that the system does not yet support.	
 * External factors inhibiting reliable eye tracking such as smudges on the HoloLens visor or eyeglasses, intense direct sunlight and occlusions due to hair in front of the eyes.	

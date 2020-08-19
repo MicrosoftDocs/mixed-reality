@@ -5,137 +5,137 @@
 - name: Core concepts
   items:
   - name: Overview
-    href: core-concepts/core-concepts-landingpage
+    href: core-concepts-landingpage
   - name: App model
-    href: core-concepts/app-model.md
+    href: app-model.md
   - name: App views
-    href: core-concepts/app-views.md
+    href: app-views.md
   - name: Comfort
-    href: core-concepts/comfort.md
+    href: comfort.md
   - name: Coordinate systems
-    href: core-concepts/coordinate-systems.md
+    href: coordinate-systems.md
   - name: Eye tracking
-    href: core-concepts/eye-tracking.md
+    href: eye-tracking.md
   - name: Holographic frame
-    href: core-concepts/holographic-frame.md
+    href: holographic-frame.md
   - name: Room scan visualization
-    href: core-concepts/room-scan-visualization.md
+    href: room-scan-visualization.md
   - name: Scene understanding
-    href: core-concepts/scene-understanding.md
+    href: scene-understanding.md
   - name: Spatial anchors
-    href: core-concepts/spatial-anchors.md
+    href: spatial-anchors.md
   - name: Sound
-    href: core-concepts/spatial-sound.md
+    href: spatial-sound.md
   - name: Spatial mapping
-    href: core-concepts/spatial-mapping.md
+    href: spatial-mapping.md
   - name: System gesture
-    href: core-concepts/system-gesture.md
+    href: system-gesture.md
   - name: Types of Mixed Reality apps
-    href: core-concepts/types-of-mixed-reality-apps.md
+    href: types-of-mixed-reality-apps.md
   - name: Designing content for holographic display
-    href: core-concepts/designing-content-for-holographic-display.md
+    href: designing-content-for-holographic-display.md
 - name: Interaction models
   items:
   - name: Instinctual interactions
-    href: interaction-models/interaction-fundamentals.md
+    href: interaction-fundamentals.md
   - name: Hands and motion controllers model
     items:
       - name: Direct manipulation with hands
-        href: interaction-models/direct-manipulation.md
+        href: direct-manipulation.md
       - name: Hands and motion controllers 
-        href: interaction-models/hands-and-tools.md
+        href: hands-and-tools.md
       - name: Motion controllers 
-        href: interaction-models/motion-controllers.md
+        href: motion-controllers.md
       - name: Point and commit with hands 
-        href: interaction-models/point-and-commit.md
+        href: point-and-commit.md
   - name: Hands-free model
     items:
       - name: Hands-free 
-        href: interaction-models/hands-free.md
+        href: hands-free.md
       - name: Voice input
-        href: interaction-models/voice-input.md
+        href: voice-input.md
       - name: Gaze and dwell
         items: 
           - name: Gaze and dwell
-            href: interaction-models/gaze-and-dwell.md
+            href: gaze-and-dwell.md
           - name: Eye-gaze and dwell
-            href: interaction-models/gaze-and-dwell-eyes.md
+            href: gaze-and-dwell-eyes.md
           - name: Head-gaze and dwell
-            href: interaction-models/gaze-and-dwell-head.md
+            href: gaze-and-dwell-head.md
   - name: Gaze and commit
     items:
       - name: Gaze and commit
-        href: interaction-models/gaze-and-commit.md
+        href: gaze-and-commit.md
       - name: Eye-gaze and commit
-        href: interaction-models/gaze-and-commit-eyes.md
+        href: gaze-and-commit-eyes.md
       - name: Head-gaze and commit 
-        href: interaction-models/gaze-and-commit-head.md
+        href: gaze-and-commit-head.md
   - name: Eye-gaze-based interaction
-    href: interaction-models/eye-gaze-interaction.md
+    href: eye-gaze-interaction.md
 - name: UX elements
   items:
   - name: Overview
-    href: ux-elements/app-patterns-landingpage.md
+    href: app-patterns-landingpage.md
   - name: Foundational elements
     items: 
       - name: Color, light, and materials
-        href: ux-elements/color-light-and-materials.md
+        href: color-light-and-materials.md
       - name: Scale
-        href: ux-elements/scale.md
+        href: scale.md
       - name: Typography
-        href: ux-elements/typography.md
+        href: typography.md
       - name: Sound
         items: 
           - name: Sound 
-            href: ux-elements/spatial-sound-design.md
+            href: spatial-sound-design.md
           - name: Case study - Holotour
-            href: ux-elements/case-study-spatial-sound-design-for-holotour.md
+            href: case-study-spatial-sound-design-for-holotour.md
           - name: Case study - Roboraid
-            href: ux-elements/case-study-using-spatial-sound-in-roboraid.md
+            href: case-study-using-spatial-sound-in-roboraid.md
   - name: Controls and behaviors
     items: 
       - name: Cursors
-        href: ux-elements/cursors.md
+        href: cursors.md
       - name: Hand ray
-        href: ux-elements/point-and-commit.md
+        href: point-and-commit.md
       - name: Button
-        href: ux-elements/button.md
+        href: button.md
       - name: Interactable object
-        href: ux-elements/interactable-object.md
+        href: interactable-object.md
       - name: Bounding box and App bar
-        href: ux-elements/app-bar-and-bounding-box.md
+        href: app-bar-and-bounding-box.md
       - name: Manipulation
-        href: ux-elements/direct-manipulation.md
+        href: direct-manipulation.md
       - name: Hand menu
-        href: ux-elements/hand-menu.md
+        href: hand-menu.md
       - name: Near menu
-        href: ux-elements/near-menu.md
+        href: near-menu.md
       - name: Object collection
-        href: ux-elements/object-collection.md
+        href: object-collection.md
       - name: Voice input
-        href: ux-elements/voice-input.md
+        href: voice-input.md
       - name: Keyboard
-        href: ux-elements/keyboard.md
+        href: keyboard.md
       - name: Tooltip
-        href: ux-elements/tooltip.md
+        href: tooltip.md
       - name: Slate
-        href: ux-elements/slate.md
+        href: slate.md
       - name: Slider
-        href: ux-elements/slider.md
+        href: slider.md
       - name: Shader
-        href: ux-elements/shader.md
+        href: shader.md
       - name: Dialog
-        href: ux-elements/dialog-ui.md
+        href: dialog-ui.md
       - name: Hand coach
-        href: ux-elements/hand-coach.md
+        href: hand-coach.md
       - name: Spatial mesh
-        href: ux-elements/spatial-mesh-ux.md
+        href: spatial-mesh-ux.md
       - name: Billboarding and tag-along
-        href: ux-elements/billboarding-and-tag-along.md
+        href: billboarding-and-tag-along.md
       - name: Displaying progress
-        href: ux-elements/progress.md
+        href: progress.md
       - name: Surface magnetism
-        href: ux-elements/surface-magnetism.md
+        href: surface-magnetism.md
 - name: Resources
   items:
   - name: Learn Unity

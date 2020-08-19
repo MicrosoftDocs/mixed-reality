@@ -20,7 +20,7 @@ This document is intended to provide a scenario overview and to clarify the rela
 
 This article only serves to introduce the Scene Understanding runtime and concepts. If you are looking for documentation on how to develop with Scene Understanding, you may be interested in the following:
 
-[Scene Understanding SDK overview](scene-understanding-SDK.md)
+[Scene Understanding SDK overview](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
 
 You can download the Scene Understanding Sample app from the sample GitHub site:
 
@@ -49,9 +49,9 @@ If you are looking for specific details on how to develop for Scene Understandin
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td>Scene understanding</td>
@@ -90,7 +90,7 @@ Scene understanding provides new constructs specifically designed to simplify pl
 <br>
 
 
-If your application intends to place 2D or 3D holograms on rigid structures of your environment, the simplicity and convenience of SceneQuads for placement is preferable to computing this information from the [spatial mapping](spatial-mapping.md) mesh. For more details on this topic, please see the [Scene understanding SDK reference](scene-understanding-SDK.md)
+If your application intends to place 2D or 3D holograms on rigid structures of your environment, the simplicity and convenience of SceneQuads for placement is preferable to computing this information from the [spatial mapping](spatial-mapping.md) mesh. For more details on this topic, please see the [Scene understanding SDK reference](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
 
 **Note** For legacy placement code that depends on the spatial mapping mesh, the spatial mapping mesh can be computed along with SceneQuads by setting EnableWorldMesh setting. If Scene understanding API does not satisfy your application's latency requirements, we recommend you continue to use the [Spatial mapping API](spatial-mapping.md#placement).
 
@@ -118,5 +118,5 @@ Additionally, the total number of surfaces returned by Spatial Mapping is limite
 
 ### See Also
 
-* [Scene understanding SDK](scene-understanding-SDK.md)
+* [Scene understanding SDK](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
 * [Spatial mapping](spatial-mapping.md)

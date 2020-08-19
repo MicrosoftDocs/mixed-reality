@@ -9,7 +9,6 @@ keywords: coordinate system, spatial coordinate system, world-scale, world, scal
 ---
 
 
-
 # Spatial anchors
 
 A spatial anchor represents an important point in the world that the system keeps track of over time. Each anchor has a [coordinate system](coordinate-systems.md) that adjusts as needed, relative to other anchors or frames of reference, in order to ensure that anchored holograms stay precisely in place.  Rendering a hologram in an anchor's coordinate system gives you the most accurate positioning for that hologram at any given time. This comes at the cost of small adjustments over time to the hologram's position as the system continually moves it back into place relative to the real world.
@@ -70,8 +69,8 @@ For cloud spatial anchors, your storage can scale as your scenario requires. You
 
 ## See also
 * [Coordinate systems](coordinate-systems.md)
-* [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
+* [Shared experiences in mixed reality](../develop/platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
-* [Persistence in Unity](persistence-in-unity.md)
-* [Spatial anchors in DirectX](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-spatial-anchors)
-* [Case study - Looking through holes in your reality](case-study-looking-through-holes-in-your-reality.md)
+* [Persistence in Unity](../develop/unity/persistence-in-unity.md)
+* [Spatial anchors in DirectX](../develop/native/coordinate-systems-in-directx.md#place-holograms-in-the-world-using-spatial-anchors)
+* [Case study - Looking through holes in your reality](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)

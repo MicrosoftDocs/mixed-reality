@@ -139,4 +139,4 @@ The realistic representation of Buzz provided a powerful focal point, complete w
 * [Comfort](comfort.md)
 * [Scale](scale.md)
 * [Head-gaze and dwell](gaze-and-dwell.md)
-* [Hologram stability](h../develop/platform-capabilities-and-apis/ologram-stability.md)
+* [Hologram stability](h../develop/platform-capabilities-and-apis/hologram-stability.md)
