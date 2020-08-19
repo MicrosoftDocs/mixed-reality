@@ -57,7 +57,7 @@ That will keep that hologram independently stable over time.
 
 ### Support mixed reality capture
 
-Although HoloLens 2's primary display uses additive environment blending, when the user initiates [mixed reality capture](../../design/mixed-reality-capture-for-developers.md), the app's rendering content will be alpha-blended with the environment video stream.
+Although HoloLens 2's primary display uses additive environment blending, when the user initiates [mixed reality capture](../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md), the app's rendering content will be alpha-blended with the environment video stream.
 To achieve the best visual quality in mixed reality capture videos, it's best to set the `XR_COMPOSITION_LAYER_BLEND_TEXTURE_SOURCE_ALPHA_BIT` in your projection layer's `layerFlags`.
 
 ## Best practices for performance on HoloLens 2

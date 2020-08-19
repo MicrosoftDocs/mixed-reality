@@ -213,7 +213,7 @@ Learn more about considerations for fallback solutions at [Eye tracking on Holol
 <br>
 
 ## See also
-* [Calibration](../calibration.md)
+* [Calibration](../../calibration.md)
 * [Coordinate systems in DirectX](coordinate-systems-in-directx.md)
 * [Eye-gaze on HoloLens 2](../../design/eye-tracking.md)
 * [Gaze and commit input model](../../design/gaze-and-commit.md)
