@@ -9,13 +9,12 @@ keywords: mrc, photo, video, capture, camera
 ---
 
 
-
 # Mixed reality capture for developers
 
 > [!NOTE]
 > See [Render from the PV camera](#render-from-the-pv-camera-opt-in) below for guidance on a new MRC capability for HoloLens 2.
 
-Since a user could take a [mixed reality capture](mixed-reality-capture.md) (MRC) photo or video at any time, there are a few things that you should keep in mind when developing your application. This includes best practices for MRC visual quality and being responsive to system changes while MRCs are being captured.
+Since a user could take a [mixed reality capture](../../design/mixed-reality-capture.md) (MRC) photo or video at any time, there are a few things that you should keep in mind when developing your application. This includes best practices for MRC visual quality and being responsive to system changes while MRCs are being captured.
 
 Developers can also seamlessly integrate mixed reality capture and insertion into their apps.
 
@@ -39,7 +38,7 @@ This means that holograms outside the focus plane won't align as well (due to th
 
 #### Set the focus point
 
-Immersive apps (on HoloLens) should set the [focus point](focus-point-in-unity.md) of where they want their stabilization plane to be. This ensures the best alignment in both the headset and in mixed reality capture.
+Immersive apps (on HoloLens) should set the [focus point](../unity/focus-point-in-unity.md) of where they want their stabilization plane to be. This ensures the best alignment in both the headset and in mixed reality capture.
 
 If a focus point is not set, the stabilization plane will default to two meters.
 
@@ -183,7 +182,7 @@ The following apply to both HoloLens (first-generation) and HoloLens 2, unless o
 
 * The system will throttle the application to 30Hz rendering. This creates some headroom for MRC to run so the app doesn’t need to keep a constant budget reserve and also matches the MRC video record framerate of 30fps
 * Hologram content in the right eye of the device may appear to “sparkle” when recording/streaming MRC: text may become more difficult to read and hologram edges may appear more jaggy (opting-in to 3rd camera render on **HoloLens 2** avoids this compromise)
-* MRC photos and videos will respect the application’s [focus point](focus-point-in-unity.md) if the application has enabled it, which will help ensure holograms are accurately positioned. For videos, the Focus Point is smoothed so holograms may appear to slowly drift into place if the Focus Point depth changes significantly. Holograms that are at different depths from the focus point may appear offset from the real world (see example below where Focus Point is set at 2 meters but hologram is positioned at 1 meter).
+* MRC photos and videos will respect the application’s [focus point](../unity/focus-point-in-unity.md) if the application has enabled it, which will help ensure holograms are accurately positioned. For videos, the Focus Point is smoothed so holograms may appear to slowly drift into place if the Focus Point depth changes significantly. Holograms that are at different depths from the focus point may appear offset from the real world (see example below where Focus Point is set at 2 meters but hologram is positioned at 1 meter).
 
 ![Holograms at 2 meters will appear perfectly registered to the world. Holograms at close or far distances may be slightly offset.](images/hologramaccuracydistancemrc-1000px.png)
 
@@ -205,7 +204,7 @@ While the user can always trigger a photo or video using the system MRC capture 
 
 ![HoloStudio adds a custom MRC camera using MRC effects](images/cameraiconholostudio-300px.jpg)
 
-Unity Applications should see [Locatable_camera_in_Unity](locatable-camera-in-unity.md) for the property to enable holograms.
+Unity Applications should see [Locatable_camera_in_Unity](../unity/locatable-camera-in-unity.md) for the property to enable holograms.
 
 Other applications can do this by using the [Windows Media Capture APIs](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.MediaCapture) to control the Camera and add an MRC Video and Audio effect to include virtual holograms and application audio in stills and videos.
 
@@ -285,7 +284,7 @@ Previous to the Windows 10 April 2018 Update, an app's custom MRC recorder was m
 
 ## See also
 
-* [Mixed reality capture](mixed-reality-capture.md)
+* [Mixed reality capture](../../design/mixed-reality-capture.md)
 * [Spectator view](spectator-view.md)
-* [Unity Development Overview](unity-development-overview.md)
-* [Unreal development overview](unreal-development-overview.md)
+* [Unity Development Overview](../unity/unity-development-overview.md)
+* [Unreal development overview](../unreal/unreal-development-overview.md)

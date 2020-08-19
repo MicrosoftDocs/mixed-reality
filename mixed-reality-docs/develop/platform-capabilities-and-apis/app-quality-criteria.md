@@ -9,7 +9,6 @@ keywords: app quality criteria, mixed reality, mixed reality app
 ---
 
 
-
 # App quality criteria
 
 This document describes the top factors impacting the quality of mixed reality apps. For each factor the following information is provided
@@ -33,8 +32,8 @@ Frame rate is the first pillar of hologram stability and user comfort. Frame rat
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -67,8 +66,8 @@ Frame rate is the first pillar of hologram stability and user comfort. Frame rat
 
 * [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
 * [Hologram stability and framerate](hologram-stability.md#frame-rate)
-* [Asset performance budget](asset-creation-process.md)
-* [Performance recommendations for Unity](performance-recommendations-for-unity.md)
+* [Asset performance budget](../../designasset-creation-process.md)
+* [Performance recommendations for Unity](../unity/performance-recommendations-for-unity.md)
 
 #### Tools and tutorials
 
@@ -96,8 +95,8 @@ Stable holograms will increase the usability and believability of your app, and 
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -136,10 +135,10 @@ While wearing the device and viewing the experience:
 * [Hologram stability and framerate](hologram-stability.md#frame-rate)
 * [Case study, Using the stabilization plane](case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)
 * [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
-* [Performance recommendations for Unity](performance-recommendations-for-unity.md)
-* [Spatial anchors](spatial-anchors.md)
-* [Handling tracking errors](coordinate-systems.md#handling-tracking-errors)
-* [Stationary frame of reference](coordinate-systems.md#stationary-frame-of-reference)
+* [Performance recommendations for Unity](../unity/performance-recommendations-for-unity.md)
+* [Spatial anchors](../../design/spatial-anchors.md)
+* [Handling tracking errors](../../design/coordinate-systems.md#handling-tracking-errors)
+* [Stationary frame of reference](../../design/coordinate-systems.md#stationary-frame-of-reference)
 
 #### Tools and tutorials
 
@@ -158,8 +157,8 @@ Misalignments of holograms with physical objects (if intended to be placed in re
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -191,16 +190,15 @@ Misalignments of holograms with physical objects (if intended to be placed in re
 
 #### Documentation
 
-* [Spatial mapping placement](spatial-mapping.md#placement)
-* [Room scanning process](case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)
-* [Spatial anchors best practices](spatial-anchors.md#best-practices)
-* [Handling tracking errors](coordinate-systems.md#handling-tracking-errors)
-* [Spatial mapping in Unity](spatial-mapping-in-unity.md)
-* [Vuforia development overview](vuforia-development-overview.md)
+* [Spatial mapping placement](../../design/spatial-mapping.md#placement)
+* [Room scanning process](../../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)
+* [Spatial anchors best practices](../../design/spatial-anchors.md#best-practices)
+* [Handling tracking errors](../../design/coordinate-systems.md#handling-tracking-errors)
+* [Spatial mapping in Unity](../../design/spatial-mapping-in-unity.md)
+* [Vuforia development overview](../unity/vuforia-development-overview.md)
 
 #### Tools and tutorials
 
-* [MR Spatial 230: Spatial mapping](holograms-230.md)
 * [MR Toolkit, Spatial Mapping Libraries](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/SpatialMapping/README.md)
 * [MR Companion Kit, Poster Calibration Sample](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/PosterCalibrationSample)
 * [MR Companion Kit, Kinect IPD](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/KinectIPD)
@@ -222,8 +220,8 @@ App developers control where users' eyes converge by placing content and hologra
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -262,9 +260,9 @@ App developers control where users' eyes converge by placing content and hologra
 ### Resources
 
 * [Render distance](hologram-stability.md#hologram-render-distances)
-* [Focus point in Unity](focus-point-in-unity.md)
-* [Experimenting with scale](scale.md#experimenting-with-scale)
-* [Text, Recommended font size](typography.md#recommended-font-size)
+* [Focus point in Unity](../unity/focus-point-in-unity.md)
+* [Experimenting with scale](../../design/scale.md#experimenting-with-scale)
+* [Text, Recommended font size](../../design/typography.md#recommended-font-size)
 
 ## Depth switching
 
@@ -279,8 +277,8 @@ Regardless of viewing zone of comfort issues, demands for the user to switch fre
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -307,7 +305,7 @@ Regardless of viewing zone of comfort issues, demands for the user to switch fre
 ### Resources
 
 * [Render distance](hologram-stability.md#hologram-render-distances)
-* [Focus point in Unity](focus-point-in-unity.md)
+* [Focus point in Unity](../unity/focus-point-in-unity.md)
 
 ## Use of spatial sound
 
@@ -322,8 +320,8 @@ In Windows Mixed Reality, the audio engine provides the aural component of the m
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -357,15 +355,14 @@ In Windows Mixed Reality, the audio engine provides the aural component of the m
 
 #### Documentation
 
-* [Spatial sound](spatial-sound.md)
-* [Spatial sound design](spatial-sound-design.md)
-* [Spatial sound in Unity](spatial-sound-in-unity.md)
-* [Case study, Spatial sound for HoloTour](case-study-spatial-sound-design-for-holotour.md)
-* [Case study, Using spatial sound in RoboRaid](case-study-using-spatial-sound-in-roboraid.md)
+* [Spatial sound](../../design/spatial-sound.md)
+* [Spatial sound design](../../design/spatial-sound-design.md)
+* [Spatial sound in Unity](../../design/spatial-sound-in-unity.md)
+* [Case study, Spatial sound for HoloTour](../../design/case-study-spatial-sound-design-for-holotour.md)
+* [Case study, Using spatial sound in RoboRaid](../../design/case-study-using-spatial-sound-in-roboraid.md)
 
 #### Tools and tutorials
 
-* [MR Spatial 220: Spatial sound](holograms-220.md)
 * [MRToolkit, Spatial Audio](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/SpatialSound/README.md)
 
 ## Focus on holographic frame (FOV) boundaries
@@ -381,8 +378,8 @@ Well-designed user experiences can create and maintain useful context of the vir
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -415,10 +412,10 @@ Well-designed user experiences can create and maintain useful context of the vir
 
 #### Documentation
 
-* [Holographic frame](holographic-frame.md)
-* [Case Study, HoloStudio UI and interaction design learnings](case-study-3-holostudio-ui-and-interaction-design-learnings.md?#problem-2-modal-dialogs-are-sometimes-out-of-the-holographic-frame)
-* [Scale of objects and environments](scale.md)
-* [Cursors, Visual cues](cursors.md#visual-cues)
+* [Holographic frame](../../design/holographic-frame.md)
+* [Case Study, HoloStudio UI and interaction design learnings](../../design/case-study-3-holostudio-ui-and-interaction-design-learnings.md?#problem-2-modal-dialogs-are-sometimes-out-of-the-holographic-frame)
+* [Scale of objects and environments](../../design/scale.md)
+* [Cursors, Visual cues](../../design/cursors.md#visual-cues)
 
 #### External references
 
@@ -437,8 +434,8 @@ Holograms should react to the user position in roughly the same ways that "real"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -457,7 +454,7 @@ Holograms should react to the user position in roughly the same ways that "real"
 <td> Meets </td><td> UI adapts to the user position, but may impede the view of key content requiring the user to adjust their position.</td>
 </tr><tr>
 <td> Fail </td><td><ol>
-<li>UI elements are lost or locked during movement causing user to unnaturally return to (or find) controls.</li><li>UI elements limit the view of primary content.</li><li>UI movement is not optimized for viewing distance and momentum particularly with <a href="billboarding-and-tag-along.md">tag-along</a> UI elements.</li>
+<li>UI elements are lost or locked during movement causing user to unnaturally return to (or find) controls.</li><li>UI elements limit the view of primary content.</li><li>UI movement is not optimized for viewing distance and momentum particularly with <a href="../../design/billboarding-and-tag-along.md">tag-along</a> UI elements.</li>
 </ol></td>
 </tr>
 </table>
@@ -477,15 +474,11 @@ Holograms should react to the user position in roughly the same ways that "real"
 
 #### Documentation
 
-* [Interaction design](hologram.md)
-* [Color, light, and material](color,-light-and-materials.md)
-* [Billboarding and tag-along](billboarding-and-tag-along.md)
-* [Instinctual interactions](interaction-fundamentals.md)
-* [Self-motion and user locomotion](comfort.md#self-motion-and-user-locomotion)
-
-#### Tools and tutorials
-
-* [MR Input 210: Gaze](holograms-210.md)
+* [Interaction design](../../out-of-scope/hologram.md)
+* [Color, light, and material](../../color,-light-and-materials.md)
+* [Billboarding and tag-along](../../design/billboarding-and-tag-along.md)
+* [Instinctual interactions](../../design/interaction-fundamentals.md)
+* [Self-motion and user locomotion](../../design/comfort.md#self-motion-and-user-locomotion)
 
 ## Input interaction clarity
 
@@ -500,8 +493,8 @@ Input interaction clarity is critical to an app's usability and includes input c
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -519,7 +512,7 @@ Input interaction clarity is critical to an app's usability and includes input c
 
 ### How to measure
 
-* The app uses consistent [standard input methods.](interaction-fundamentals.md)
+* The app uses consistent [standard input methods.](../../design/interaction-fundamentals.md)
 * If the app has custom input, it is clearly communicated through:
 * First-run experience
 * Introductory screens
@@ -538,32 +531,29 @@ Input interaction clarity is critical to an app's usability and includes input c
 
 #### Documentation
 
-* [Instinctual interactions](interaction-fundamentals.md)
-* [Interactable objects](interactable-object.md)
-* [Head-gaze and dwell](gaze-and-dwell.md)
-* [Cursors](cursors.md)
-* [Comfort and gaze](comfort.md#gaze-direction)
-* [Voice input](voice-input.md)
-* [Motion controllers](motion-controllers.md)
-* [Input porting guide for Unity](input-porting-guide-for-unity.md)
-* [Keyboard input in Unity](keyboard-input-in-unity.md)
-* [Gaze in Unity](gaze-in-unity.md)
-* [Gestures and motion controllers in Unity](gestures-and-motion-controllers-in-unity.md)
-* [Voice input in Unity](voice-input-in-unity.md)
-* [Keyboard, mouse, and controller input in DirectX](keyboard,-mouse,-and-controller-input-in-directx.md)
-* [Head and eye gaze in DirectX](gaze-in-directx.md)
-* [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)
-* [Voice input in DirectX](voice-input-in-directx.md)
+* [Instinctual interactions](../../design/interaction-fundamentals.md)
+* [Interactable objects](../../design/interactable-object.md)
+* [Head-gaze and dwell](../../design/gaze-and-dwell.md)
+* [Cursors](../../design/cursors.md)
+* [Comfort and gaze](../../design/comfort.md#gaze-direction)
+* [Voice input](../../design/voice-input.md)
+* [Motion controllers](../../design/motion-controllers.md)
+* [Input porting guide for Unity](../porting-apps/input-porting-guide-for-unity.md)
+* [Keyboard input in Unity](../unity/keyboard-input-in-unity.md)
+* [Gaze in Unity](../unity/gaze-in-unity.md)
+* [Gestures and motion controllers in Unity](../unity/gestures-and-motion-controllers-in-unity.md)
+* [Voice input in Unity](../unity/voice-input-in-unity.md)
+* [Keyboard, mouse, and controller input in DirectX](../../keyboard,-mouse,-and-controller-input-in-directx.md)
+* [Head and eye gaze in DirectX](../native/gaze-in-directx.md)
+* [Hands and motion controllers in DirectX](../native/hands-and-motion-controllers-in-directx.md)
+* [Voice input in DirectX](../native/voice-input-in-directx.md)
 
 #### Tools and tutorials
 
-* [Case study: The pursuit of more personal computing](case-study-the-pursuit-of-more-personal-computing.md#less-interface-in-your-face)
-* [Cast study: HoloStudio UI and interaction design learnings](case-study-3-holostudio-ui-and-interaction-design-learnings.md)
-* [Sample app: Periodic table of the elements](periodic-table-of-the-elements.md)
-* [Sample app: Lunar module](lunar-module.md)
-* [MR Input 210: Gaze](holograms-210.md)
-* [MR Input 211: Gestures](holograms-211.md)
-* [MR Input 212: Voice](holograms-212.md)
+* [Case study: The pursuit of more personal computing](../../out-of-scope/case-studies/case-study-the-pursuit-of-more-personal-computing.md#less-interface-in-your-face)
+* [Cast study: HoloStudio UI and interaction design learnings](../../out-of-scope/case-studies/case-study-3-holostudio-ui-and-interaction-design-learnings.md)
+* [Sample app: Periodic table of the elements](../unity/periodic-table-of-the-elements.md)
+* [Sample app: Lunar module](../unity/lunar-module.md)
 
 ## Interactable objects
 
@@ -578,8 +568,8 @@ A button has long been a metaphor used for triggering an event in the 2D abstrac
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -611,10 +601,10 @@ A button has long been a metaphor used for triggering an event in the 2D abstrac
 
 #### Documentation
 
-* [Interactable object](interactable-object.md)
-* [Text in Unity](text-in-unity.md)
-* [Bounding box and App bar](app-bar-and-bounding-box.md)
-* [Voice input](voice-input.md)
+* [Interactable object](../../design/interactable-object.md)
+* [Text in Unity](../unity/text-in-unity.md)
+* [Bounding box and App bar](../../design/app-bar-and-bounding-box.md)
+* [Voice input](../../design/voice-input.md)
 
 #### Tools and tutorials
 
@@ -633,8 +623,8 @@ Apps that require spatial mapping data rely on the device to automatically colle
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -666,10 +656,10 @@ Apps that require spatial mapping data rely on the device to automatically colle
 
 #### Documentation
 
-* [Room scan visualization](room-scan-visualization.md)
-* [Case study: Expanding the spatial mapping capabilities of HoloLens](case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)
-* [Case study: Spatial sound design for HoloTour](case-study-spatial-sound-design-for-holotour.md)
-* [Case study: Creating an immersive experience in Fragments](case-study-creating-an-immersive-experience-in-fragments.md)
+* [Room scan visualization](../../design/room-scan-visualization.md)
+* [Case study: Expanding the spatial mapping capabilities of HoloLens](../../out-of-scope/case-studies/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)
+* [Case study: Spatial sound design for HoloTour](../../out-of-scope/case-studies/case-study-spatial-sound-design-for-holotour.md)
+* [Case study: Creating an immersive experience in Fragments](../../out-of-scope/case-studies/case-study-creating-an-immersive-experience-in-fragments.md)
 
 #### Tools and tutorials
 
@@ -688,8 +678,8 @@ In a mixed reality app, content may be outside the field of view or occluded by 
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -716,7 +706,7 @@ In a mixed reality app, content may be outside the field of view or occluded by 
 
 ### Resources
 
-* [Holographic frame](holographic-frame.md)
+* [Holographic frame](../../design/holographic-frame.md)
 
 ## Data loading
 
@@ -731,8 +721,8 @@ A progress control provides feedback to the user that a long-running operation i
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="../../design/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -758,4 +748,4 @@ A progress control provides feedback to the user that a long-running operation i
 
 ### Resources
 
-* [Displaying progress](progress.md)
+* [Displaying progress](../../design/progress.md)

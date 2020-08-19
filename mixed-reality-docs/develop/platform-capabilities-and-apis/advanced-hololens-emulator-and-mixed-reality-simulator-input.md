@@ -14,7 +14,6 @@ keywords: HoloLens, Emulator, Simulation, Windows Mixed Reality
 
 Most emulator users will only need to use the basic input controls for the [HoloLens Emulator](using-the-hololens-emulator.md#basic-emulator-input) or the [Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md#basic-simulator-input). The details below are for advanced users who have found a need to simulate more complex types of input.
 
-
 ## Concepts
 
 To get started controlling the virtual input to the HoloLens Emulator and Windows Mixed Reality simulator, you should first understand a few concepts.
@@ -29,7 +28,7 @@ Motion refers to controlling and changing the position and orientation of someth
 
 Gesture and motion controller input are mapped closely to how they physical devices:
 * **Action**: This simulates the action of pressing the forefinger to the thumb or pulling the action button on a controller. For example, the Action input can be used to simulate the air-tap gesture, to scroll through content, and to press-and-hold.
-* **[Bloom](system-gesture.md#bloom)/System gesture or Home**: The HoloLens bloom/system gesture or a controller's Home button is used to return to the shell and to perform system actions.
+* **[Bloom](../../design/system-gesture.md#bloom)/System gesture or Home**: The HoloLens bloom/system gesture or a controller's Home button is used to return to the shell and to perform system actions.
 
 Hands have a rich representation in HoloLens 2.  In addition to being tracked/not tracked, and usable for driving gestures, hands now have an articulated skeleton model fit to them and exposed to the developer.  This introduces 26 tracked points on each hand.  
 * **Joint**: One of twenty tracked positions for a given tracked hand. This will have a point is 3d space associated with it.
@@ -48,7 +47,7 @@ You can also control the state of simulated sensor input:
 
 The following table shows how each type of input maps to the keyboard, mouse, and Xbox controller. Each type has a different mapping depending on the input control mode; more information on input control modes is provided later in this document.
 
-|  |  Keyboard |  Mouse |  Xbox controller | 
+| Input |  Keyboard |  Mouse |  Xbox controller | 
 |----------|----------|----------|----------|
 |  Yaw |  Left / right arrows |  Drag Left / Right |  Right thumbstick left / right | 
 |  Pitch |  Up / down arrows |  Drag up / down |  Right thumbstick up / down | 
@@ -91,8 +90,8 @@ The following table describe the options for targeting, and the way to activate 
   
 The following table shows how each target modifier maps each of the core movement input concepts
 
-|  | Default (Body) |  Hand/controller (Hold Alt, hold gamepad shoulder button, or toggle UI pushpin) |  Head (Hold H)  |  Eyes (Hold Y or toggle UI pushpin) |
-|----------|----------|----------|----------|
+| Input | Default (Body) |  Hand/controller (Hold Alt, hold gamepad shoulder button, or toggle UI pushpin) |  Head (Hold H)  |  Eyes (Hold Y or toggle UI pushpin) |
+|----------|----------|----------|----------|----------|
 |  Yaw |  Turn body left / right |  Move hand left / right |  Turn head left / right | Eye gaze looks left/right |
 |  Pitch |  Turn head up / down |  Move hand up / down |  Turn head Up / down | Eye gaze looks up/down | 
 |  Roll |  Roll head left / right |  |  Roll head left / right | (No action) |
@@ -160,6 +159,6 @@ The following keyboard shortcuts are available for accessing the Perception Simu
 | Dock or undock the panel to/from the emulator or Mixed Reality Portal window | F9 | If the window is closed when undocked, it is docked and hidden. |
 
 ## See also
-* [Install the tools](install-the-tools.md)
+* [Install the tools](../install-the-tools.md)
 * [Using the HoloLens emulator](using-the-hololens-emulator.md)
 * [Using the Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md)

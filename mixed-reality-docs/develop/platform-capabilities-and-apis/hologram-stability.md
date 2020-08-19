@@ -24,9 +24,9 @@ The following terminology can help you when you're identifying problems with the
 * **Accuracy.** Once the hologram is world-locked and placed in the real world, it should stay where it's placed relative to the surrounding environment and independent of user motion or small and sparse environment changes. If a hologram later appears in an unexpected location, it's an *accuracy* problem. Such scenarios can happen if two distinct rooms look identical.
 * **Jitter.** Users observe jitter as high frequency shaking of a hologram, which can happen when tracking of the environment degrades. For users, the solution is running [sensor tuning](sensor-tuning.md).
 * **Judder.** Low rendering frequencies result in uneven motion and double images of holograms. Judder is especially noticeable in holograms with motion. Developers need to maintain a [constant 60 FPS](hologram-stability.md#frame-rate).
-* **Drift.** Users see drift as a hologram appears to move away from where it was originally placed. Drift happens when holograms are placed far away from [spatial anchors](spatial-anchors.md), particularly in parts of the environment that aren't fully mapped. Creating holograms close to spatial anchors lowers the likelihood of drift.
+* **Drift.** Users see drift as a hologram appears to move away from where it was originally placed. Drift happens when holograms are placed far away from [spatial anchors](../../design/spatial-anchors.md), particularly in parts of the environment that aren't fully mapped. Creating holograms close to spatial anchors lowers the likelihood of drift.
 * **Jumpiness.** When a hologram "pops" or "jumps" away from its location occasionally. Jumpiness can occur as tracking adjusts holograms to match updated understanding of your environment.
-* **Swim.** When a hologram appears to sway corresponding to the motion of the user's head. Swim occurs when the application hasn't fully implemented [reprojection](hologram-stability.md#reprojection), and if the HoloLens isn't [calibrated](calibration.md) for the current user. The user can rerun the [calibration](calibration.md) application to fix the issue. Developers can update the stabilization plane to further enhance stability.
+* **Swim.** When a hologram appears to sway corresponding to the motion of the user's head. Swim occurs when the application hasn't fully implemented [reprojection](hologram-stability.md#reprojection), and if the HoloLens isn't [calibrated](../../calibration.md) for the current user. The user can rerun the [calibration](../../calibration.md) application to fix the issue. Developers can update the stabilization plane to further enhance stability.
 * **Color separation.** The displays in HoloLens are color sequential displays, which flash color channels of red-green-blue-green at 60 Hz (individual color fields are shown at 240 Hz). Whenever a user tracks a moving hologram with their eyes, that hologram's leading and trailing edges separate in their constituent colors, producing a rainbow effect. The degree of separation is dependent upon the speed of the hologram. In some rarer cases, moving ones head rapidly while looking at a stationary hologram can also result in a rainbow effect, which is called *[color separation](hologram-stability.md#color-separation)*.
 
 ## Frame rate
@@ -44,7 +44,7 @@ By rendering at 60 FPS, you're doing three things to help make stable holograms:
 **Frame-rate consistency**
  Frame rate consistency is as important as a high frames-per-second. Occasionally dropped frames are inevitable for any content-rich application, and the HoloLens implements some sophisticated algorithms to recover from occasional glitches. However, a constantly fluctuating framerate is a lot more noticeable to a user than running consistently at lower frame rates. For example, an application that renders smoothly for five frames (60 FPS for the duration of these five frames) and then drops every other frame for the next 10 frames (30 FPS for the duration of these 10 frames) will appear more unstable than an application that consistently renders at 30 FPS.
 
-On a related note, the operating system throttles down applications to 30 FPS when [mixed reality capture](mixed-reality-capture.md) is running.
+On a related note, the operating system throttles down applications to 30 FPS when [mixed reality capture](../../design/mixed-reality-capture.md) is running.
 
 **Performance analysis**
  There are different kinds of tools that can be used to benchmark your application frame rate, such as:
@@ -120,7 +120,7 @@ Some GPU viewing tools will allow visualization of the depth buffer.  Applicatio
 
 ![Stabilization plane for 3D objects](images/stab-plane-500px.jpg)
 
-The device will automatically attempt to choose this plane, but the application should assist by selecting the focus point in the scene. Unity apps running on a HoloLens should choose the best focus point based on your scene and pass it into [SetFocusPoint()](focus-point-in-unity.md). An example of setting the focus point in DirectX is included in the default spinning cube template.
+The device will automatically attempt to choose this plane, but the application should assist by selecting the focus point in the scene. Unity apps running on a HoloLens should choose the best focus point based on your scene and pass it into [SetFocusPoint()](../unity/focus-point-in-unity.md). An example of setting the focus point in DirectX is included in the default spinning cube template.
 
 Unity will submit your depth buffer to Windows to enable per-pixel reprojection when you run your app on an immersive headset connected to a desktop PC, which provides even better image quality without explicit work by the app. You should only provide a Focus Point when your app is running on a HoloLens, or the per-pixel reprojection will be overridden.
 
@@ -172,7 +172,7 @@ Due to the nature of HoloLens displays, an artifact called "color-separation" ca
 Though it's difficult to completely avoid color separation, there are several techniques available to mitigate it.
 
 **Color-separation can be seen on:**
-* Objects that are moving quickly, including head-locked objects such as the [cursor](cursors.md).
+* Objects that are moving quickly, including head-locked objects such as the [cursor](../../design/cursors.md).
 * Objects that are substantially far from the [stabilization plane](hologram-stability.md#reprojection).
 
 **To attenuate the effects of color-separation:**
@@ -187,6 +187,6 @@ As before, rendering at 60 FPS and setting the stabilization plane are the most 
 
 ## See also
 * [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
-* [Color, light, and materials](color,-light-and-materials.md)
-* [Instinctual interactions](interaction-fundamentals.md)
+* [Color, light, and materials](../../color,-light-and-materials.md)
+* [Instinctual interactions](../../design/interaction-fundamentals.md)
 * [MRTK Hologram Stabilization](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/hologram-stabilization.html)

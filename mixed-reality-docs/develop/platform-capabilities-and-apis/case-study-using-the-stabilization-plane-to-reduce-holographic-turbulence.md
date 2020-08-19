@@ -9,7 +9,6 @@ keywords: Windows Mixed Reality, holograms, stabilization, case study
 ---
 
 
-
 # Case study - Using the stabilization plane to reduce holographic turbulence
 
 Working with holograms can be tricky. The fact that you can move around your space and see your holograms from all different angles provides a level of immersion that you can’t get with a normal computer screen. Keeping these holograms in place and looking realistic is a technical feat accomplished by both the Microsoft HoloLens hardware and the intelligent design of holographic apps.
@@ -28,7 +27,7 @@ When developing the following apps, we noticed that when we didn't use the plane
 
 ### Galaxy Explorer: Stationary content, 3D interactivity
 
-[Galaxy Explorer](galaxy-explorer.md) has two major elements in the scene: The main view of the celestial content and the small UI toolbar that follows your gaze. For the stabilization logic, we look at what your current gaze vector intersects with in each frame to determine if it hits anything on a specified collision layer. In this case, the layers we’re interested in are the planets, so if your gaze falls on a planet, the stabilization plane is placed there. If none of the objects in the target collision layer are hit, the app uses a secondary “plan B” layer. If nothing is being gazed at, the stabilization plane is kept at the same distance as it was when gazing at the content. The UI tools are left out as a plane target as we found the jump between near and far reduced the stability of the overall scene.
+[Galaxy Explorer](../unity/galaxy-explorer.md) has two major elements in the scene: The main view of the celestial content and the small UI toolbar that follows your gaze. For the stabilization logic, we look at what your current gaze vector intersects with in each frame to determine if it hits anything on a specified collision layer. In this case, the layers we’re interested in are the planets, so if your gaze falls on a planet, the stabilization plane is placed there. If none of the objects in the target collision layer are hit, the app uses a secondary “plan B” layer. If nothing is being gazed at, the stabilization plane is kept at the same distance as it was when gazing at the content. The UI tools are left out as a plane target as we found the jump between near and far reduced the stability of the overall scene.
 
 The design of Galaxy Explorer lends itself well to keeping things stable and reducing the effect of color separation. The user is encouraged to walk around and orbit the content rather than move along it from side to side, and the planets are orbiting slowly enough that the color separation isn’t noticeable. Additionally, a constant 60 FPS is maintained, which goes a long way in preventing color separation from happening.
 
@@ -95,6 +94,6 @@ Turn to your right once more until you see a new configuration of dots. In this 
 </table>
 
 ## See also
-* [MR Basics 100: Getting started with Unity](holograms-100.md)
-* [Focus point in Unity](focus-point-in-unity.md)
+* [MR Basics 100: Getting started with Unity](../unity/tutorials/holograms-100.md)
+* [Focus point in Unity](../unity/focus-point-in-unity.md)
 * [Hologram stability](hologram-stability.md)

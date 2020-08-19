@@ -9,7 +9,6 @@ keywords: HoloLens, Remoting, Holographic Remoting
 ---
 
 
-
 # Writing a Holographic Remoting remote app
 
 >[!IMPORTANT]
@@ -17,13 +16,13 @@ keywords: HoloLens, Remoting, Holographic Remoting
 
 By creating a Holographic Remoting remote app, remote content that is rendered on a remote machine can be streamed to HoloLens 2. This article describes how this can be achieved. All code on this page and working projects can be found in the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
-Holographic remoting allows an app to target HoloLens 2 with holographic content rendered on a desktop PC or on a UWP device such as the Xbox One, allowing access to more system resources and making it possible to integrate remote [immersive views](app-views.md) into existing desktop PC software. A remote app receives an input data stream from HoloLens 2, renders content in a virtual immersive view, and streams content frames back to HoloLens 2. The connection is made using standard Wi-Fi. Holographic Remoting is added to a desktop or UWP app via a NuGet packet. Additional code is required which handles the connection and renders in an immersive view.
+Holographic remoting allows an app to target HoloLens 2 with holographic content rendered on a desktop PC or on a UWP device such as the Xbox One, allowing access to more system resources and making it possible to integrate remote [immersive views](../../design/app-views.md) into existing desktop PC software. A remote app receives an input data stream from HoloLens 2, renders content in a virtual immersive view, and streams content frames back to HoloLens 2. The connection is made using standard Wi-Fi. Holographic Remoting is added to a desktop or UWP app via a NuGet packet. Additional code is required which handles the connection and renders in an immersive view.
 
 A typical remoting connection will have as low as 50 ms of latency. The player app can report the latency in real-time.
 
 ## Prerequisites
 
-A good starting point is a working DirectX based Desktop or UWP app which targets the Windows Mixed Reality API. For details see [DirectX development overview](directx-development-overview.md). The [C++ holographic project template](creating-a-holographic-directx-project.md) is a good starting point.
+A good starting point is a working DirectX based Desktop or UWP app which targets the Windows Mixed Reality API. For details see [DirectX development overview](../native/directx-development-overview.md). The [C++ holographic project template](../native/creating-a-holographic-directx-project.md) is a good starting point.
 
 >[!IMPORTANT]
 >Any app using Holographic Remoting should be authored to use a [multi-threaded apartment](https://docs.microsoft.com//windows/win32/com/multithreaded-apartments). The use of a [single-threaded apartment](https://docs.microsoft.com//windows/win32/com/single-threaded-apartments) is supported but will lead to sub-optimal performance and possibly stuttering during playback. When using C++/WinRT [winrt::init_apartment](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/get-started) a multi-threaded apartment is the default.

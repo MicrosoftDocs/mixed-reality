@@ -15,7 +15,7 @@ Research Mode was introduced in the 1st Generation HoloLens to give access to ke
 * **Visible Light Environment Tracking Cameras** - Gray-scale cameras used by the system for head tracking and map building.
 * **Depth Camera** – Operates in two modes:  
     + AHAT, high-frequency (45 FPS) near-depth sensing used for hand tracking. Differently from the 1st version short-throw mode, AHAT gives pseudo-depth with phase wrap beyond 1 meter. 
-    + Long-throw, low-frequency (1-5 FPS) far-depth sensing used by [Spatial Mapping](spatial-mapping.md)
+    + Long-throw, low-frequency (1-5 FPS) far-depth sensing used by [Spatial Mapping](../../design/spatial-mapping.md)
 
 * **Two versions of the IR-reflectivity stream** - Used by the HoloLens to compute depth. These images are illuminated by infrared and unaffected by ambient visible light.
 

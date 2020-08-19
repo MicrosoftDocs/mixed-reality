@@ -16,7 +16,7 @@ HoloLens 2 can detect QR codes in the environment around the headset, establishi
 
 <table>
 <tr>
-<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Feature</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td> QR code detection</td><td style="text-align: center;">️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">✔️</td>
 </tr>
@@ -117,7 +117,7 @@ private:
 
 ## Getting the coordinate system for a QR code
 
-Each detected QR code exposes a [spatial coordinate system](coordinate-systems.md) aligned with the QR code at the top left corner of the fast detection square in the top left as seen below.  When directly using the QR SDK, the Z-axis is pointing into the paper (not shown) - when converted into Unity coordinates, the Z-axis points out of the paper and is left-handed.
+Each detected QR code exposes a [spatial coordinate system](../../design/coordinate-systems.md) aligned with the QR code at the top left corner of the fast detection square in the top left as seen below.  When directly using the QR SDK, the Z-axis is pointing into the paper (not shown) - when converted into Unity coordinates, the Z-axis points out of the paper and is left-handed.
 
 A QR code's SpatialCoordinateSystem aligns as shown. This coordinate system can be obtained from the platform by calling <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">SpatialGraphInteropPreview::CreateCoordinateSystemForNode</a> and passing in the code's SpatialGraphNodeId.
 
@@ -215,7 +215,7 @@ Windows Mixed Reality devices detect QR codes at the system level in the driver.
 It is recommended to configure your app to ignore QR codes older than a specific timestamp. Currently, the API does not support clearing QR code history.
 
 ### QR code placement in a space
-For recommendations on where and how to place QR codes, please refer to [Environment considerations for HoloLens](environment-considerations-for-hololens.md).
+For recommendations on where and how to place QR codes, please refer to [Environment considerations for HoloLens](../../environment-considerations-for-hololens.md).
 
 ## QR API reference
 
@@ -452,5 +452,5 @@ namespace Microsoft.MixedReality.QR
 ```
 
 ## See also
-* [Coordinate systems](coordinate-systems.md)
+* [Coordinate systems](../../design/coordinate-systems.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>

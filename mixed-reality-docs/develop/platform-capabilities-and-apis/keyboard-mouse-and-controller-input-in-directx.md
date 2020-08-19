@@ -9,18 +9,17 @@ keywords: Windows Mixed Reality, keyboard, mouse, game controller, xbox controll
 ---
 
 
-
 # Keyboard, mouse, and controller input in DirectX
 
 > [!NOTE]
-> This article relates to the legacy WinRT native APIs.  For new native app projects, we recommend using the **[OpenXR API](openxr-getting-started.md)**.
+> This article relates to the legacy WinRT native APIs.  For new native app projects, we recommend using the **[OpenXR API](../native/openxr-getting-started.md)**.
 
 Keyboards, mice, and game controllers can all be useful forms of input for Windows Mixed Reality devices. Bluetooth keyboards and mice are both supported on HoloLens, for use with debugging your app or as an alternate form of input. Windows Mixed Reality also supports immersive headsets attached to PCs - where mice, keyboards, and game controllers have historically been the norm.
 
 To use keyboard input on HoloLens, pair a Bluetooth keyboard to your device or use virtual input via the Windows Device Portal. To use keyboard input while wearing a Windows Mixed Reality immersive headset, assign input focus to mixed reality by putting on the device or using the Windows Key + Y keyboard combination. Keep in mind that apps intended for HoloLens must provide functionality without these devices attached.
 
 >[!NOTE]
->The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, though you will need to translate the code.
+>The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](../native/creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, though you will need to translate the code.
 
 ## Subscribe for CoreWindow input events
 
@@ -266,4 +265,4 @@ There are some key differences in how this code can be used on Microsoft HoloLen
 * Bluetooth controllers work as well.
 
 ## See also
-* [Hardware accessories](hardware-accessories.md)
+* [Hardware accessories](../../discover/hardware-accessories.md)

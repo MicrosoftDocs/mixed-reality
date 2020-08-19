@@ -9,10 +9,9 @@ keywords: rendering, hologram
 ---
 
 
-
 # Rendering
 
-Holographic rendering enables your application to draw a hologram at a precise location in the world around the user, whether it's precisely placed in the physical world or within a virtual realm you've created. [Holograms](hologram.md) are objects made of sound and light. Rendering enables your application to add the light.
+Holographic rendering enables your application to draw a hologram at a precise location in the world around the user, whether it's precisely placed in the physical world or within a virtual realm you've created. [Holograms](../../out-of-scope/hologram.md) are objects made of sound and light. Rendering enables your application to add the light.
 
 ## Device support
 
@@ -25,9 +24,9 @@ Holographic rendering enables your application to draw a hologram at a precise l
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td>Rendering</td>
@@ -41,11 +40,11 @@ Holographic rendering enables your application to draw a hologram at a precise l
 
 Key to holographic rendering is knowing whether you are rendering to a see-through display like HoloLens that lets the user see both the physical world and your holograms together, or an opaque display like a Windows Mixed Reality immersive headset that blocks out the world.
 
-Devices with **see-through displays**, such as [HoloLens](hololens-hardware-details.md), add light to the world. Black pixels are fully transparent, while brighter pixels are increasingly opaque. Because the light from the displays is added to the light from the real world, white pixels are somewhat translucent.
+Devices with **see-through displays**, such as [HoloLens](../../hololens-hardware-details.md), add light to the world. Black pixels are fully transparent, while brighter pixels are increasingly opaque. Because the light from the displays is added to the light from the real world, white pixels are somewhat translucent.
 
-While stereoscopic rendering provides one depth cue for your holograms, adding [grounding effects](interaction-fundamentals.md) can help users see more easily what surface a hologram is near. One grounding technique is to add a glow around a hologram on the nearby surface, and then render a shadow against this glow. In this way, your shadow appears to subtract light from the environment. [Spatial sound](spatial-sound.md) is another extremely important depth cue, letting users reason about the distance and relative location of a hologram.
+While stereoscopic rendering provides one depth cue for your holograms, adding [grounding effects](../../design/interaction-fundamentals.md) can help users see more easily what surface a hologram is near. One grounding technique is to add a glow around a hologram on the nearby surface, and then render a shadow against this glow. In this way, your shadow appears to subtract light from the environment. [Spatial sound](../../design/spatial-sound.md) is another extremely important depth cue, letting users reason about the distance and relative location of a hologram.
 
-Devices with **opaque displays**, like [Windows Mixed Reality immersive headsets](immersive-headset-hardware-details.md), block out the world. Black pixels are solid black, and any other color appears as that color to the user. Your application is responsible for rendering everything the user sees. This makes it even more important to maintain a constant refresh rate so that users have a comfortable experience.
+Devices with **opaque displays**, like [Windows Mixed Reality immersive headsets](../../discover/immersive-headset-hardware-details.md), block out the world. Black pixels are solid black, and any other color appears as that color to the user. Your application is responsible for rendering everything the user sees. This makes it even more important to maintain a constant refresh rate so that users have a comfortable experience.
 
 ## Predicted rendering parameters
 
@@ -61,19 +60,19 @@ When rendering a frame, the system specifies the back-buffer viewport in which y
 
 For applications that find themselves unable to render at the required refresh rate, [system rendering parameters can be configured](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration) to reduce memory pressure and rendering cost at the cost of increased pixel aliasing. The back buffer format can also be changed, which for some apps can help to improve memory bandwidth and pixel throughput.
 
-The rendering frustum, resolution, and framerate in which your app is asked to render might also change from frame to frame, and might differ across the left and right eye. For example, when [mixed reality capture](mixed-reality-capture.md) (MRC) is active and the [photo/video camera view configuration](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfigurationKind#Windows_Graphics_Holographic_HolographicViewConfigurationKind) is not opted-into, one eye might be rendered with a larger FOV or resolution.
+The rendering frustum, resolution, and framerate in which your app is asked to render might also change from frame to frame, and might differ across the left and right eye. For example, when [mixed reality capture](../../design/mixed-reality-capture.md) (MRC) is active and the [photo/video camera view configuration](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfigurationKind#Windows_Graphics_Holographic_HolographicViewConfigurationKind) is not opted-into, one eye might be rendered with a larger FOV or resolution.
 
 For any given frame, your app *must* render using the view transform, projection transform, and viewport resolution provided by the system. Additionally, your application must never assume that any rendering or view parameter remains fixed from frame-to-frame. Engines like Unity handle all these transforms for you in their own camera objects so that the physical movement of your users and the state of the system is always respected. If your application allows for virtual movement of the user through the world (e.g. using the thumbstick on a gamepad), you can add a parent rig object above the camera that moves it around. This causes the camera to reflect both the user's virtual and physical motion. If your application modifies the view transform, projection transform, or viewport dimension provided by the system, it must inform the system by calling the appropriate [override API](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicCameraPose#Windows_Graphics_Holographic_HolographicCameraPose).
 
 To enhance the stability of your holographic rendering, your app should provide to Windows each frame the depth buffer it used for rendering. If your app does provide a depth buffer, it should have coherent depth values, with depth expressed in meters from the camera. This enables the system to use your per-pixel depth data to better stabilize content if the user's head ends up slightly offset from the predicted location. If you are not able to provide your depth buffer, you can provide a focus point and normal, defining a plane that cuts through most of your content. If both the depth buffer and a focus plane are provided, the system might use both. In particular, it is helpful to provide both the depth buffer and a focus point that includes a velocity vector when your application displays holograms that are in motion.
 
-Refer to [Rendering in DirectX](rendering-in-directx.md) article for low-level details about his topic.
+Refer to [Rendering in DirectX](../native/rendering-in-directx.md) article for low-level details about his topic.
 
 ## Holographic cameras
 
 Windows Mixed Reality introduces the concept of a **holographic camera**. Holographic cameras are similar to the traditional camera found in 3D graphics texts; they define both the extrinsic (position and orientation) and intrinsic camera properties. (For example:, field-of-view is used to view a virtual 3D scene.) Unlike traditional 3D cameras, the application is not in control of the position, orientation, and intrinsic properties of the camera. Rather, the position and orientation of the holographic camera is implicitly controlled by the user's movement. The user's movement is relayed to the application on a frame-by-frame basis via a view transform. Likewise, the camera's intrinsic properties are defined by the device's calibrated optics and relayed frame-by-frame via the projection transform.
 
-In general, your application will render for a single stereo camera. However, a robust rendering loop will support multiple cameras, and will support both mono and stereo cameras. For example, the system might ask your application to render from an alternate perspective when the user activates a feature like [mixed reality capture](mixed-reality-capture.md) (MRC), depending on the shape of the headset in question. Applications that can support multiple cameras get them by [opting-in](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration) to the [kind](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfigurationKind#Windows_Graphics_Holographic_HolographicViewConfigurationKind) of cameras they can support.
+In general, your application will render for a single stereo camera. However, a robust rendering loop will support multiple cameras, and will support both mono and stereo cameras. For example, the system might ask your application to render from an alternate perspective when the user activates a feature like [mixed reality capture](../../design/mixed-reality-capture.md) (MRC), depending on the shape of the headset in question. Applications that can support multiple cameras get them by [opting-in](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration) to the [kind](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfigurationKind#Windows_Graphics_Holographic_HolographicViewConfigurationKind) of cameras they can support.
 
 ## Volume rendering
 
@@ -99,4 +98,4 @@ When rendering medical MRIs or engineering volumes in 3D, [volume rendering](vol
 
 ## See also
 * [Hologram stability](hologram-stability.md)
-* [Rendering in DirectX](rendering-in-directx.md)
+* [Rendering in DirectX](../native/rendering-in-directx.md)

@@ -13,13 +13,13 @@ keywords: HoloLens, Remoting, Holographic Remoting
 >[!IMPORTANT]
 >This document describes the creation of a custom player application for HoloLens 2. Custom players written for HoloLens 2 are not compatible with remote applications written for HoloLens 1. This implies that both applications must use NuGet package version **2.x.x**.
 
-By creating a custom Holographic Remoting player app you can create a custom application capable of displaying [immersive views](app-views.md) from on a remote machine on your HoloLens 2. This article describes how this can be achieved. All code on this page and working projects can be found in the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+By creating a custom Holographic Remoting player app you can create a custom application capable of displaying [immersive views](../../design/app-views.md) from on a remote machine on your HoloLens 2. This article describes how this can be achieved. All code on this page and working projects can be found in the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
 A Holographic Remoting player allows your app to display holographic content [rendered](rendering.md) on a desktop PC or on a UWP device such as the Xbox One, allowing access to more system resources. A Holographic Remoting player app streams input data to a Holographic Remoting remote application and receives back an immersive view as video and audio stream. The connection is made using standard Wi-Fi. To create a player app, you will use a NuGet package to add Holographic Remoting to your UWP app, and write code to handle the connection and to display an immersive view. 
 
 ## Prerequisites
 
-A good starting point is a working DirectX based UWP app that already targets the Windows Mixed Reality API. For details see [DirectX development overview](directx-development-overview.md). If you do not have an existing app and want to start from scratch the [C++ holographic project template](creating-a-holographic-directx-project.md) is a good starting point.
+A good starting point is a working DirectX based UWP app that already targets the Windows Mixed Reality API. For details see [DirectX development overview](../native/directx-development-overview.md). If you do not have an existing app and want to start from scratch the [C++ holographic project template](../native/creating-a-holographic-directx-project.md) is a good starting point.
 
 >[!IMPORTANT]
 >Any app using Holographic Remoting should be authored to use a [multi-threaded apartment](https://docs.microsoft.com//windows/win32/com/multithreaded-apartments). The use of a [single-threaded appartment](https://docs.microsoft.com//windows/win32/com/single-threaded-apartments) is supported but will lead to sub-optimal performance and possibly stuttering during playback. When using C++/WinRT [winrt::init_apartment](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/get-started) a multi-threaded apartment is the default.

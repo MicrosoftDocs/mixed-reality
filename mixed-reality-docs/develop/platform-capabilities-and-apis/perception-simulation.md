@@ -9,7 +9,6 @@ keywords: HoloLens, simulation, testing
 ---
 
 
-
 # Perception simulation
 
 Do you want to build an automated test for your app? Do you want your tests to go beyond component-level unit testing and really exercise your app end-to-end? Perception Simulation is what you're looking for. The Perception Simulation library sends human and world input data to your app so you can automate your tests. For example, you can simulate the input of a human looking to a specific, repeatable position and then performing a gesture or using a motion controller.
@@ -19,7 +18,7 @@ Perception Simulation can send simulated input like this to a physical HoloLens,
 To begin using simulation in your code, start by creating an IPerceptionSimulationManager object. From that object, you can issue commands to control properties of a simulated "human", including head position, hand position, and gestures, and you can enable and manipulate motion controllers.
 
 ## Setting Up a Visual Studio Project for Perception Simulation
-1. [Install the HoloLens emulator](install-the-tools.md) on your development PC. The emulator includes the libraries you will use for Perception Simulation.
+1. [Install the HoloLens emulator](../install-the-tools.md) on your development PC. The emulator includes the libraries you will use for Perception Simulation.
 2. Create a new Visual Studio C# desktop project (a Console Project works great to get started).
 3. Add the following binaries to your project as references (Project->Add->Reference...). You can find them in %ProgramFiles(x86)%\Microsoft XDE\\(version), such as **%ProgramFiles(x86)%\Microsoft XDE\\10.0.18362.0** for the HoloLens 2 Emulator.  (Note: although the binaries are part of the HoloLens 2 Emulator, they also work for Windows Mixed Reality on the desktop.)
     a. PerceptionSimulationManager.Interop.dll - Managed C# wrapper for Perception Simulation.

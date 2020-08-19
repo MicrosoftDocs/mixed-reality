@@ -9,7 +9,6 @@ keywords: HoloLens, Remoting, Holographic Remoting
 ---
 
 
-
 # Holographic Remoting Player
 
 >[!IMPORTANT]
@@ -22,7 +21,7 @@ The Holographic Remoting Player can only be used with PC apps that are specifica
 The Holographic Remoting Player is available for both HoloLens (1st gen) and HoloLens 2.  PC apps that supported Holographic Remoting with HoloLens need to be updated to support Holographic Remoting with HoloLens 2. Please contact your app provider if you have questions about which versions are supported.
 
 >[!TIP]
->Starting with version [2.2.0](holographic-remoting-version-history.md#v2.2.0) the Holographic Remoting player is also available for Windows PCs running [Windows Mixed Reality](navigating-the-windows-mixed-reality-home.md).
+>Starting with version [2.2.0](holographic-remoting-version-history.md#v2.2.0) the Holographic Remoting player is also available for Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md).
 
 ## Connecting to the Holographic Remoting Player
 
