@@ -26,7 +26,7 @@ Eye tracking API has been designed with a user’s privacy in mind, avoiding pas
 </colgroup>
 <tr>
      <td><strong>Feature</strong></td>
-     <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
+     <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
 </tr>
@@ -41,7 +41,7 @@ Eye tracking API has been designed with a user’s privacy in mind, avoiding pas
 <br>
 
 ## Calibration 
-For eye tracking to work accurately, each user is required to go through an [eye tracking user calibration](calibration.md) for which the user has to look at a set of holographic targets. 
+For eye tracking to work accurately, each user is required to go through an [eye tracking user calibration](../calibration.md) for which the user has to look at a set of holographic targets. 
 This allows the device to adjust the system for a more comfortable and higher quality viewing experience for the user and to ensure accurate eye tracking at the same time. 
 
 Eye tracking should work for most users, but there are rare cases in which a user might not be able to calibrate successfully. Calibration might fail for various reasons, including but not limited to: 
@@ -53,7 +53,7 @@ Eye tracking should work for most users, but there are rare cases in which a use
 
 Developers should make sure to provide adequate support for users for whom eye tracking data may not be available (who are not able to calibrate successfully). We have provided recommendations for fallback solutions in the section at the bottom of this page. 
 
-To learn more about the calibration and about how to ensure a smooth experience, please check our [eye tracking user calibration](calibration.md) page.
+To learn more about the calibration and about how to ensure a smooth experience, please check our [eye tracking user calibration](../calibration.md) page.
 
 <br>
 
