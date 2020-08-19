@@ -15,7 +15,7 @@ keywords: Mixed Reality, spatial locator, spatial reference frame, spatial coord
 > [!NOTE]
 > This article relates to the legacy WinRT native APIs.  For new native app projects, we recommend using the **[OpenXR API](openxr-getting-started.md)**.
 
-[Coordinate systems](coordinate-systems.md) form the basis for spatial understanding offered by Windows Mixed Reality APIs.
+[Coordinate systems](../../design/coordinate-systems.md) form the basis for spatial understanding offered by Windows Mixed Reality APIs.
 
 Today's seated VR or single-room VR devices establish one primary coordinate system to represent their tracked space. Windows Mixed Reality devices such as HoloLens are designed to be used throughout large undefined environments, with the device discovering and learning about its surroundings as the user walks around. This allows the device to adapt to continually-improving knowledge about the user's rooms, but results in coordinate systems that will change their relationship to one another through the lifetime of the app. Windows Mixed Reality supports a wide spectrum of devices, ranging from seated immersive headsets through world-attached reference frames.
 
@@ -30,7 +30,7 @@ Methods that return spatial information, represented as points, rays, or volumes
 
 A SpatialCoordinateSystem has a dynamic relationship with other coordinate systems, including those that represent the device's position. At any point in time, the device may be able to locate some coordinate systems and not others. For most coordinate systems, your app must be ready to handle periods of time during which they cannot be located.
 
-Your application should not create SpatialCoordinateSystems directly - rather they should be consumed via the Perception APIs. There are three primary sources of coordinate systems in the Perception APIs, each of which map to a concept described on the [Coordinate systems](coordinate-systems.md) page:
+Your application should not create SpatialCoordinateSystems directly - rather they should be consumed via the Perception APIs. There are three primary sources of coordinate systems in the Perception APIs, each of which map to a concept described on the [Coordinate systems](../../design/coordinate-systems.md) page:
 * To get a stationary frame of reference, create a <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstationaryframeofreference" target="_blank">SpatialStationaryFrameOfReference</a> or obtain one from the current <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference" target="_blank">SpatialStageFrameOfReference</a>.
 * To get a spatial anchor, create a <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchor" target="_blank">SpatialAnchor</a>.
 * To get an attached frame of reference, create a <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocatorattachedframeofreference" target="_blank">SpatialLocatorAttachedFrameOfReference</a>.
@@ -280,7 +280,7 @@ std::vector<unsigned short> SpatialStageManager::TriangulatePoints(std::vector<f
 
 ## Place holograms in the world using a stationary frame of reference
 
-The [SpatialStationaryFrameOfReference](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialstationaryframeofreference.aspx) class represents a frame of reference that [remains stationary](coordinate-systems.md#stationary-frame-of-reference) relative to the user's surroundings as the user moves around. This frame of reference prioritizes keeping coordinates stable near the device. One key use of a SpatialStationaryFrameOfReference is to act as the underlying world coordinate system within a rendering engine when rendering holograms.
+The [SpatialStationaryFrameOfReference](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialstationaryframeofreference.aspx) class represents a frame of reference that [remains stationary](../../design/coordinate-systems.md#stationary-frame-of-reference) relative to the user's surroundings as the user moves around. This frame of reference prioritizes keeping coordinates stable near the device. One key use of a SpatialStationaryFrameOfReference is to act as the underlying world coordinate system within a rendering engine when rendering holograms.
 
 To get a SpatialStationaryFrameOfReference, use the [SpatialLocator](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatiallocator.aspx) class and call [CreateStationaryFrameOfReferenceAtCurrentLocation](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatiallocator.createstationaryframeofreferenceatcurrentlocation.aspx).
 
@@ -297,7 +297,7 @@ From the Windows Holographic app template code:
 
 ## Place holograms in the world using spatial anchors
 
-[Spatial anchors](coordinate-systems.md#spatial-anchors) are a great way to place holograms at a specific place in the real world, with the system ensuring the anchor stays in place over time. This topic explains how to create and use an anchor, and how to work with anchor data.
+[Spatial anchors](../../design/coordinate-systems.md#spatial-anchors) are a great way to place holograms at a specific place in the real world, with the system ensuring the anchor stays in place over time. This topic explains how to create and use an anchor, and how to work with anchor data.
 
 You can create a SpatialAnchor at any position and orientation within the SpatialCoordinateSystem of your choosing. The device must be able to locate that coordinate system at the moment, and the system must not have reached its limit of spatial anchors.
 
@@ -574,7 +574,7 @@ For rendering, you can often obtain better results by grouping objects according
 
 ## Create holograms using a device-attached frame of reference
 
-There are times when you want to render a hologram that [remains attached](coordinate-systems.md#attached-frame-of-reference) to the device's location, for example a panel with debugging information or an informational message when the device is only able to determine its orientation and not its position in space. To accomplish this, we use an attached frame of reference.
+There are times when you want to render a hologram that [remains attached](../../design/coordinate-systems.md#attached-frame-of-reference) to the device's location, for example a panel with debugging information or an informational message when the device is only able to determine its orientation and not its position in space. To accomplish this, we use an attached frame of reference.
 
 The SpatialLocatorAttachedFrameOfReference class defines coordinate systems which are relative to the device rather than to the real-world. This frame has a fixed heading relative to the user's surroundings that points in the direction the user was facing when the reference frame was created. From then on, all orientations in this frame of reference are relative to that fixed heading, even as the user rotates the device.
 
@@ -616,7 +616,7 @@ During the update, we now obtain the coordinate system at the time stamp obtaine
 
 ### Get a spatial pointer pose, and follow the user's Gaze
 
-We want our example hologram to follow the user's [gaze](gaze-and-commit.md), similar to how the holographic shell can follow the user's gaze. For this, we need to get the SpatialPointerPose from the same time stamp.
+We want our example hologram to follow the user's [gaze](../../design/gaze-and-commit.md), similar to how the holographic shell can follow the user's gaze. For this, we need to get the SpatialPointerPose from the same time stamp.
 
 ```
 SpatialPointerPose^ pose = SpatialPointerPose::TryGetAtTimestamp(currentCoordinateSystem, prediction->Timestamp);
@@ -795,8 +795,8 @@ From **AppMain.cpp:**
 The [spatial mapping](spatial-mapping-in-directx.md) APIs make use of coordinate systems to get model transforms for surface meshes.
 
 ## See also
-* [Coordinate systems](coordinate-systems.md)
-* [Spatial anchors](spatial-anchors.md)
+* [Coordinate systems](../../design/coordinate-systems.md)
+* [Spatial anchors](../../design/spatial-anchors.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * [Head and eye gaze in DirectX](gaze-in-directx.md)
 * [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)

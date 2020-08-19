@@ -2,7 +2,7 @@
 
 ![Unity](../images/unity_logo_banner.png)<br>
 
-Build a cross-platform, full-featured mixed reality app with Unity. See the [Unity development overview](../unity-development-overview.md) to get started with Unity development for HoloLens or Windows Mixed Reality immersive headsets.
+Build a cross-platform, full-featured mixed reality app with Unity. See the [Unity development overview](../unity/unity-development-overview.md) to get started with Unity development for HoloLens or Windows Mixed Reality immersive headsets.
 
 ## What does Unity offer?
 
@@ -30,11 +30,11 @@ You have several hardware and emulator options when building Mixed Reality apps 
 
 |  Tool/SDK  |  Description  |
 | --- | --- |
-| [Mixed Reality Toolkit for Unity](../mrtk-getting-started.md) | The Mixed Reality Toolkit for Unity is an open source cross-platform development kit built to accelerate development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets and OpenVR platform. |
+| [Mixed Reality Toolkit for Unity](../unity/mrtk-getting-started.md) | The Mixed Reality Toolkit for Unity is an open source cross-platform development kit built to accelerate development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets and OpenVR platform. |
 
 ## Examples
 
-We have several open source [sample apps](../samples.md) for you to download and play around with to get a feel for a Mixed Reality end product in Unity. There are also MRTK example scenes available for you to test out specific features:
+We have several open source [sample apps](../unity/samples.md) for you to download and play around with to get a feel for a Mixed Reality end product in Unity. There are also MRTK example scenes available for you to test out specific features:
 * [Hand interaction examples scene (MRTK) for Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#open-and-run-the-handinteractionexamples-scene-in-editor) -
 The HandInteractionExamples.unity example scene contains various types of interactions and UI controls that highlight articulated hand input.
 
@@ -90,7 +90,7 @@ The WebXR Device API is an open specification that allows you to experience Mixe
 
  ![Native](../images/native_logo_banner.png)
 
-Create mixed reality apps with a direct line to the Windows Mixed Reality APIs. See the [Native development overview](../directx-development-overview.md) to get started with native app development using OpenXR or legacy WinRT for HoloLens 2 or Windows Mixed Reality immersive headsets. The Windows Mixed Reality API supports applications written in C++ and C#, allowing you to build your own framework or middleware in either language.
+Create mixed reality apps with a direct line to the Windows Mixed Reality APIs. See the [Native development overview](../native/directx-development-overview.md) to get started with native app development using OpenXR or legacy WinRT for HoloLens 2 or Windows Mixed Reality immersive headsets. The Windows Mixed Reality API supports applications written in C++ and C#, allowing you to build your own framework or middleware in either language.
 
 ## What does OpenXR offer?
 
@@ -117,9 +117,9 @@ You have several hardware, emulator, and streaming options when building Mixed R
 
 |  Tool/SDK  |  Description  |
 | --- | --- |
-| [OpenXR Developer Tools](../openxr-getting-started.md#getting-the-windows-mixed-reality-openxr-developer-tools) | Provides a demo scene that exercises various features of OpenXR, along with a System Status page that provides key information about the active runtime and the current headset. |
+| [OpenXR Developer Tools](../native/openxr-getting-started.md#getting-the-windows-mixed-reality-openxr-developer-tools) | Provides a demo scene that exercises various features of OpenXR, along with a System Status page that provides key information about the active runtime and the current headset. |
 | [OpenXR Spec](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html) |  Describes what OpenXR is, what capabilities and features it offers, and how to implement it into your own projects. |
-| [OpenXR Loader](../openxr-getting-started.md#integrate-the-openxr-loader-into-a-project) | Discovers the active OpenXR runtime on the device and provides access to the core functions and extension functions that it implements. |
+| [OpenXR Loader](../native/openxr-getting-started.md#integrate-the-openxr-loader-into-a-project) | Discovers the active OpenXR runtime on the device and provides access to the core functions and extension functions that it implements. |
 
 ## Examples
 

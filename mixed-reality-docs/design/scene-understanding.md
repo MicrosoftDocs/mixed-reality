@@ -32,7 +32,7 @@ If you do not have a device and wish to access sample scenes to try Scene Unders
 
 ### SDK
 
-If you are looking for specific details on how to develop for Scene Understanding or details on how Scene understanding works and how to develop for it, see the [Scene Understanding SDK overview](scene-understanding-SDK.md) documentation.
+If you are looking for specific details on how to develop for Scene Understanding or details on how Scene understanding works and how to develop for it, see the [Scene Understanding SDK overview](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md) documentation.
 
 
 ### Sample

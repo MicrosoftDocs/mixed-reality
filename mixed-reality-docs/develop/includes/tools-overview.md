@@ -9,13 +9,13 @@ We recommend the [Unity LTS (Long Term Support)](https://unity3d.com/unity/qa/lt
 * If you need to use a different version of Unity for specific reasons, Unity supports side-by-side installs of different versions.
 
 ### 2. Import Mixed Reality Toolkit (MRTK)
-![MRTK](../images/UX/MRTK_UX_Hero.png)
+![MRTK](../../design/images/MRTK_UX_Hero.png)
 
-[Mixed Reality Toolkit](../mrtk-getting-started.md) (MRTK) is an open-source, cross-platform development kit for mixed reality applications. MRTK provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. The toolkit is intended to accelerate the development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and the OpenVR platform.
+[Mixed Reality Toolkit](../unity/mrtk-getting-started.md) (MRTK) is an open-source, cross-platform development kit for mixed reality applications. MRTK provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. The toolkit is intended to accelerate the development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and the OpenVR platform.
 
 :::row:::
     :::column:::
-        <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">![Unity](../images/MRTK-Unity-Banner.png)<br>**Mixed Reality Toolkit-Unity (GitHub)**</a><br>
+        <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">![Unity](../../design/images/MRTK-Unity-Banner.png)<br>**Mixed Reality Toolkit-Unity (GitHub)**</a><br>
     :::column-end:::
 :::row-end:::
 
@@ -35,9 +35,9 @@ The Windows 10 SDK works best on the Windows 10 operating system. This SDK is al
 
 #### For HoloLens development
 
-When setting up your development PC for HoloLens development, please make sure it meets the system requirements for both <a href="https://unity3d.com/unity/system-requirements" target="_blank">Unity</a> and <a href="https://docs.microsoft.com//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a>. If you plan on using the [HoloLens emulator](../using-the-hololens-emulator.md), you'll want to make sure your PC meets the [HoloLens emulator system requirements](../using-the-hololens-emulator.md#hololens-emulator-system-requirements) as well.
+When setting up your development PC for HoloLens development, please make sure it meets the system requirements for both <a href="https://unity3d.com/unity/system-requirements" target="_blank">Unity</a> and <a href="https://docs.microsoft.com//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a>. If you plan on using the [HoloLens emulator](../using-the-hololens-emulator.md), you'll want to make sure your PC meets the [HoloLens emulator system requirements](../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-emulator-system-requirements) as well.
 
-To get started with the HoloLens emulator, see [Using the HoloLens emulator](../using-the-hololens-emulator.md).
+To get started with the HoloLens emulator, see [Using the HoloLens emulator](../platform-capabilities-and-apis/using-the-hololens-emulator.md).
 
 If you plan to develop for both HoloLens and Windows Mixed Reality immersive (VR) headsets, use the system recommendations and requirements in the section below.
 
@@ -82,7 +82,7 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 ### What's next?
 
 > [!div class="nextstepaction"]
-> [Start your Unity journey](../unity-development-overview.md)
+> [Start your Unity journey](../unity/unity-development-overview.md)
 
 # [Unreal](#tab/unreal)
 
@@ -93,13 +93,13 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 We recommend installing [Unreal Engine version 4.25](https://docs.unrealengine.com//GettingStarted/Installation/index.html) or later to take full advantage of built-in HoloLens support.
 
 ### 2. Import Mixed Reality Toolkit (MRTK)
-![MRTK](../images/UX/MRTK_UX_Hero.png)
+![MRTK](../../design/images/MRTK_UX_Hero.png)
 
 Mixed Reality Toolkit (MRTK) is an open-source, cross-platform development kit for mixed reality applications. MRTK provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. The toolkit is intended to accelerate the development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and the OpenVR platform.
 
 :::row:::
     :::column:::
-        <a href="https://github.com/Microsoft/MixedRealityToolkit-Unreal" target="_blank">![Unity](../images/MRTK-Unreal-Banner.png)<br>**Mixed Reality Toolkit-Unreal (GitHub)**</a><br>
+        <a href="https://github.com/Microsoft/MixedRealityToolkit-Unreal" target="_blank">![Unity](../../design/images/MRTK-Unreal-Banner.png)<br>**Mixed Reality Toolkit-Unreal (GitHub)**</a><br>
     :::column-end:::
 :::row-end:::
 
@@ -119,7 +119,7 @@ The Windows 10 SDK works best on the Windows 10 operating system. This SDK is al
 
 #### For HoloLens development
 
-When setting up your development PC for HoloLens development, please make sure you meet the system requirements for [Unreal](https://docs.unrealengine.com/GettingStarted/RecommendedSpecifications/index.html) and and <a href="https://docs.microsoft.com//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a>. If you plan on using the [HoloLens emulator](../using-the-hololens-emulator.md), you'll want to make sure your PC meets the [HoloLens emulator system requirements](../using-the-hololens-emulator.md#hololens-emulator-system-requirements) as well.
+When setting up your development PC for HoloLens development, please make sure you meet the system requirements for [Unreal](https://docs.unrealengine.com/GettingStarted/RecommendedSpecifications/index.html) and and <a href="https://docs.microsoft.com//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a>. If you plan on using the [HoloLens emulator](../using-the-hololens-emulator.md), you'll want to make sure your PC meets the [HoloLens emulator system requirements](../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-emulator-system-requirements) as well.
 
 If you plan to develop for both HoloLens and Windows Mixed Reality immersive (VR) headsets, use the system recommendations and requirements in the section below.
 
@@ -164,13 +164,13 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 ### What's next?
 
 > [!div class="nextstepaction"]
-> [Start your Unreal journey](../unreal-development-overview.md)
+> [Start your Unreal journey](../unreal/unreal-development-overview.md)
 
 # [Native (OpenXR)](#tab/native)
 
  ![Native app development](../images/native_logo_banner.png)
 
-Native OpenXR development doesn't have an engine for you to download. You can find everything you need to begin development in the [Getting started with OpenXR](../openxr-getting-started.md) document.
+Native OpenXR development doesn't have an engine for you to download. You can find everything you need to begin development in the [Getting started with OpenXR](../native/openxr-getting-started.md) document.
 
 ### 1. Set up your PC for mixed reality development
 
@@ -178,7 +178,7 @@ The Windows 10 SDK works best on the Windows 10 operating system. This SDK is al
 
 #### For HoloLens development
 
-When setting up your development PC for HoloLens development, please make sure you meet the system requirements for <a href="https://docs.microsoft.com//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a>. If you plan on using the [HoloLens emulator](../using-the-hololens-emulator.md), you'll want to make sure your PC meets the [HoloLens emulator system requirements](../using-the-hololens-emulator.md#hololens-emulator-system-requirements) as well.
+When setting up your development PC for HoloLens development, please make sure you meet the system requirements for <a href="https://docs.microsoft.com//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a>. If you plan on using the [HoloLens emulator](../using-the-hololens-emulator.md), you'll want to make sure your PC meets the [HoloLens emulator system requirements](../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-emulator-system-requirements) as well.
 
 If you plan to develop for both HoloLens and Windows Mixed Reality immersive (VR) headsets, use the system recommendations and requirements in the section below.
 
@@ -226,6 +226,6 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 ### What's next?
 
 > [!div class="nextstepaction"]
-> [Start your Native journey](../directx-development-overview.md)
+> [Start your Native journey](../native/directx-development-overview.md)
 
 

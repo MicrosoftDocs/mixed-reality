@@ -5,7 +5,7 @@
 - name: Core concepts
   items:
   - name: Overview
-    href: core-concepts-landingpage
+    href: core-concepts-landingpage.md
   - name: App model
     href: app-model.md
   - name: App views
