@@ -10,7 +10,7 @@ keywords: shared experience, mixed reality, hologram, spatial anchor, multi-user
 
 # Shared experiences in mixed reality
 
-Holograms don't need to stay private to just one user. Holographic apps may share [spatial anchors](spatial-anchors.md) from one HoloLens, iOS or Android device to another, enabling users to render a hologram at the same place in the real world across multiple devices.
+Holograms don't need to stay private to just one user. Holographic apps may share [spatial anchors](../../design/spatial-anchors.md) from one HoloLens, iOS or Android device to another, enabling users to render a hologram at the same place in the real world across multiple devices.
 
 ## Six questions to define shared scenarios
 
@@ -90,14 +90,14 @@ Consider your sharing experiences fitting into one of these two categories:
 * **Similar**: Environments that tend to have similar furniture, ambient light and sound, physical room size. For example: Professor is in lecture hall A and students are in lecture hall B. Lecture hall A might have fewer chairs than B but they both may have a physical desk to place holograms on.
 * **Dissimilar**: Environments that are quite different in furniture settings, room sizes, light and sound considerations. For example: A professor is in a focus room whereas students are in a large lecture hall, filled with students and teachers.
 
-It's important to [think about the environment](environment-considerations-for-hololens.md), as it will influence:
+It's important to [think about the environment](../../environment-considerations-for-hololens.md), as it will influence:
 
 * How people will experience these objects. For example: If your experience works best on a table and the user has no table? Or on a flat floor surface but the user has a cluttered space.
 * Scale of the objects. For example: Placing a 6 feet human model on a table could be challenging but a heart model would work great.
 
 ### 6. What devices are they using?
 
-Today you’re often likely to see shared experiences between two [**immersive devices**](immersive-headset-hardware-details.md) (those devices might differ slightly in terms of buttons and relative capability, but not greatly) or two **holographic devices** given the solutions being targeted at these devices. But consider if **2D devices** (a mobile/desktop participant or observer) will be a necessary consideration, especially in situations of **mixed 2D and 3D devices**. Understanding the types of devices your participants will be using is important, not only because they come with different fidelity and data constraints and opportunities, but because users have unique expectations for each platform.
+Today you’re often likely to see shared experiences between two [**immersive devices**](../../discover/immersive-headset-hardware-details.md) (those devices might differ slightly in terms of buttons and relative capability, but not greatly) or two **holographic devices** given the solutions being targeted at these devices. But consider if **2D devices** (a mobile/desktop participant or observer) will be a necessary consideration, especially in situations of **mixed 2D and 3D devices**. Understanding the types of devices your participants will be using is important, not only because they come with different fidelity and data constraints and opportunities, but because users have unique expectations for each platform.
 
 ## Exploring the potential of shared experiences
 
@@ -135,10 +135,10 @@ The key to shared experiences is having multiple users seeing the same holograms
 To share anchors, use the [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors):
 
 * First the user places the hologram.
-* App creates a [spatial anchor](spatial-anchors.md), to pin that hologram precisely in the world.
+* App creates a [spatial anchor](../../design/spatial-anchors.md), to pin that hologram precisely in the world.
 * The anchors can be shared to HoloLens, iOS and Android devices via [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/).
 
-With a shared spatial anchor, the app on each device now has a [common coordinate system](coordinate-systems.md) in which they can place content. Now the app can ensure to position and orient the hologram at the same location.
+With a shared spatial anchor, the app on each device now has a [common coordinate system](../../design/coordinate-systems.md) in which they can place content. Now the app can ensure to position and orient the hologram at the same location.
 
 On HoloLens devices, you can also share anchors offline from one device to another.  Use the links below to decide what's best for your application.
 
@@ -167,7 +167,7 @@ Leverage [MixedReality-SpectatorView](https://github.com/microsoft/MixedReality-
 
 ## Multi-user collaborative experience
 
-Start with our [multi-user learning tutorial](mrlearning-sharing(photon)-ch1.md), which leverages [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/) for local users and [Photon SDK](https://www.photonengine.com/PUN) for syncing the content/state in the scene. Create locally collaborative applications where each user has his/her own perspective on the holograms in the scene and can each fully interact with the holograms.  Updates are provided across all devices and interaction conflict management is handled by Photon.
+Start with our [multi-user learning tutorial](../../mrlearning-sharing(photon)-ch1.md), which leverages [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/) for local users and [Photon SDK](https://www.photonengine.com/PUN) for syncing the content/state in the scene. Create locally collaborative applications where each user has his/her own perspective on the holograms in the scene and can each fully interact with the holograms.  Updates are provided across all devices and interaction conflict management is handled by Photon.
 
 > [!NOTE]
 > Please note that [Photon](https://www.photonengine.com/) is a non-Microsoft product, so a billing relationship with Photon may be required to productize and scale for higher usage.
@@ -182,5 +182,5 @@ Different scenario or desire to use a different tech/service? Provide feedback a
 
 * [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
 * [Shared spatial anchors in DirectX](shared-spatial-anchors-in-directx.md)
-* [Shared experiences in Unity](shared-experiences-in-unity.md)
+* [Shared experiences in Unity](../unity/shared-experiences-in-unity.md)
 * [Spectator view](spectator-view.md)

@@ -42,7 +42,7 @@ Share sheet so you can save video, email it, or share with other supporting apps
 
 The following table shows different Spectator View functionality and their capabilities. Choose the option that best fits your video recording needs:
 
-|                                      | Mobile                  |                    Video Camera              |
+|      Functionality                                | Mobile                  |                    Video Camera              |
 |--------------------------------------|:-----------------------:|:-------------------------------------------:|
 | HD quality                           |         Full HD         |        Professional quality filming (as determined by video camera)      |
 | Easy camera movement                 |            ✔            |                      ✔                      |
@@ -57,6 +57,6 @@ The following table shows different Spectator View functionality and their capab
 | Runtime setup duration               |         Instant          |                     Slow                    |
 ## See also
 
-* [Mixed reality capture](mixed-reality-capture.md) 
+* [Mixed reality capture](../../mixed-reality-capture.md) 
 * [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
 * [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)

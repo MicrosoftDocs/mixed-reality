@@ -14,7 +14,7 @@ keywords: mrc, photo, video, capture, camera
 > [!NOTE]
 > See [Render from the PV camera](#render-from-the-pv-camera-opt-in) below for guidance on a new MRC capability for HoloLens 2.
 
-Since a user could take a [mixed reality capture](../../design/mixed-reality-capture.md) (MRC) photo or video at any time, there are a few things that you should keep in mind when developing your application. This includes best practices for MRC visual quality and being responsive to system changes while MRCs are being captured.
+Since a user could take a [mixed reality capture](../../mixed-reality-capture.md) (MRC) photo or video at any time, there are a few things that you should keep in mind when developing your application. This includes best practices for MRC visual quality and being responsive to system changes while MRCs are being captured.
 
 Developers can also seamlessly integrate mixed reality capture and insertion into their apps.
 
@@ -284,7 +284,7 @@ Previous to the Windows 10 April 2018 Update, an app's custom MRC recorder was m
 
 ## See also
 
-* [Mixed reality capture](../../design/mixed-reality-capture.md)
+* [Mixed reality capture](../../mixed-reality-capture.md)
 * [Spectator view](spectator-view.md)
 * [Unity Development Overview](../unity/unity-development-overview.md)
 * [Unreal development overview](../unreal/unreal-development-overview.md)

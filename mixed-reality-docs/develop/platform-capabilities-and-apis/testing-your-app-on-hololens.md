@@ -9,7 +9,6 @@ keywords: HoloLens, testing
 ---
 
 
-
 # Testing your app on HoloLens
 
 Testing HoloLens applications are very similar to testing Windows applications. All the usual areas should be considered (functionality, interoperability, performance, security, reliability, etc.). There are, however, some areas that require special handling or attention to details that are not usually observed in PC or phone apps. Holographic apps need to run smoothly in a diverse set of environments. They also need to maintain performance and user comfort at all times. Guidance for testing these areas is detailed in this topic.

@@ -10,7 +10,7 @@ keywords: camera, hololens, color camera, front facing, hololens 2, cv, computer
 
 # Locatable camera
 
-HoloLens includes a world-facing camera mounted on the front of the device, which enables apps to see what the user sees. Developers have access to and control of the camera, just as they would for color cameras on smartphones, portables, or desktops. The same universal windows [media capture](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.mediacapture.aspx) and windows media foundation APIs that work on mobile and desktop work on HoloLens. Unity [has also wrapped these windows APIs](../../design/locatable-camera-in-unity.md) to abstract simple usage of the camera on HoloLens for tasks such as taking regular photos and videos (with or without holograms) and locating the camera's position in and perspective on the scene.
+HoloLens includes a world-facing camera mounted on the front of the device, which enables apps to see what the user sees. Developers have access to and control of the camera, just as they would for color cameras on smartphones, portables, or desktops. The same universal windows [media capture](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.mediacapture.aspx) and windows media foundation APIs that work on mobile and desktop work on HoloLens. Unity [has also wrapped these windows APIs](../unity/locatable-camera-in-unity.md) to abstract simple usage of the camera on HoloLens for tasks such as taking regular photos and videos (with or without holograms) and locating the camera's position in and perspective on the scene.
 
 ## Device camera information
 
@@ -54,7 +54,7 @@ HoloLens includes a world-facing camera mounted on the front of the device, whic
   | Videoconferencing,100 BalancedVideoAndPhoto,120 | 424x240   |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
 
 > [!NOTE]
-> Customers can leverage [mixed reality capture](../../design/mixed-reality-capture.md) to take videos or photos of your app, which include holograms and video stabilization.
+> Customers can leverage [mixed reality capture](../../mixed-reality-capture.md) to take videos or photos of your app, which include holograms and video stabilization.
 >
 >As a developer, there are considerations you should take into account when creating your app if you want it to look as good as possible when a customer captures content. You can also enable (and customize) mixed reality capture from directly within your app. Learn more at [mixed reality capture for developers](mixed-reality-capture-for-developers.md).
 
@@ -252,7 +252,7 @@ Examples:
 ## See also
 * [Locatable camera sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)
 * [Locatable camera in Unity](../unity/locatable-camera-in-unity.md)
-* [Mixed reality capture](../../design/mixed-reality-capture.md)
+* [Mixed reality capture](../../mixed-reality-capture.md)
 * [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
 * [Media capture introduction](https://msdn.microsoft.com/library/windows/apps/mt243896.aspx)
 * [Holographic face tracking sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)

@@ -66,7 +66,7 @@ Frame rate is the first pillar of hologram stability and user comfort. Frame rat
 
 * [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
 * [Hologram stability and framerate](hologram-stability.md#frame-rate)
-* [Asset performance budget](../../designasset-creation-process.md)
+* [Asset performance budget](../../design/asset-creation-process.md)
 * [Performance recommendations for Unity](../unity/performance-recommendations-for-unity.md)
 
 #### Tools and tutorials
@@ -191,10 +191,10 @@ Misalignments of holograms with physical objects (if intended to be placed in re
 #### Documentation
 
 * [Spatial mapping placement](../../design/spatial-mapping.md#placement)
-* [Room scanning process](../../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)
+* [Room scanning process](../../out-of-scope/case-studies/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)
 * [Spatial anchors best practices](../../design/spatial-anchors.md#best-practices)
 * [Handling tracking errors](../../design/coordinate-systems.md#handling-tracking-errors)
-* [Spatial mapping in Unity](../../design/spatial-mapping-in-unity.md)
+* [Spatial mapping in Unity](../unity/spatial-mapping-in-unity.md)
 * [Vuforia development overview](../unity/vuforia-development-overview.md)
 
 #### Tools and tutorials
@@ -357,7 +357,7 @@ In Windows Mixed Reality, the audio engine provides the aural component of the m
 
 * [Spatial sound](../../design/spatial-sound.md)
 * [Spatial sound design](../../design/spatial-sound-design.md)
-* [Spatial sound in Unity](../../design/spatial-sound-in-unity.md)
+* [Spatial sound in Unity](../unity/spatial-sound-in-unity.md)
 * [Case study, Spatial sound for HoloTour](../../design/case-study-spatial-sound-design-for-holotour.md)
 * [Case study, Using spatial sound in RoboRaid](../../design/case-study-using-spatial-sound-in-roboraid.md)
 
@@ -413,7 +413,7 @@ Well-designed user experiences can create and maintain useful context of the vir
 #### Documentation
 
 * [Holographic frame](../../design/holographic-frame.md)
-* [Case Study, HoloStudio UI and interaction design learnings](../../design/case-study-3-holostudio-ui-and-interaction-design-learnings.md?#problem-2-modal-dialogs-are-sometimes-out-of-the-holographic-frame)
+* [Case Study, HoloStudio UI and interaction design learnings](../../out-of-scope/case-studies/case-study-3-holostudio-ui-and-interaction-design-learnings.md?#problem-2-modal-dialogs-are-sometimes-out-of-the-holographic-frame)
 * [Scale of objects and environments](../../design/scale.md)
 * [Cursors, Visual cues](../../design/cursors.md#visual-cues)
 
@@ -508,7 +508,7 @@ Input interaction clarity is critical to an app's usability and includes input c
 
 |  Best  |  Meets |  Fail |
 --- | --- | ---
-|  Input interaction methods are consistent with Windows Mixed Reality provided [guidance](interaction-fundamentals.md). Any custom input should not be redundant with standard input (rather use standard interaction) and must be clearly communicated and demonstrated to the user. | Similar to best, but custom inputs are redundant with standard input methods. User can still achieve the goal and progress through the app experience. | Difficult to understand input method or button mapping. Input is heavily customized, does not support standard input, no instructions, or likely to cause fatigue and comfort issues. | 
+|  Input interaction methods are consistent with Windows Mixed Reality provided [guidance](../../design/interaction-fundamentals.md). Any custom input should not be redundant with standard input (rather use standard interaction) and must be clearly communicated and demonstrated to the user. | Similar to best, but custom inputs are redundant with standard input methods. User can still achieve the goal and progress through the app experience. | Difficult to understand input method or button mapping. Input is heavily customized, does not support standard input, no instructions, or likely to cause fatigue and comfort issues. | 
 
 ### How to measure
 
@@ -658,7 +658,7 @@ Apps that require spatial mapping data rely on the device to automatically colle
 
 * [Room scan visualization](../../design/room-scan-visualization.md)
 * [Case study: Expanding the spatial mapping capabilities of HoloLens](../../out-of-scope/case-studies/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)
-* [Case study: Spatial sound design for HoloTour](../../out-of-scope/case-studies/case-study-spatial-sound-design-for-holotour.md)
+* [Case study: Spatial sound design for HoloTour](../../design/case-study-spatial-sound-design-for-holotour.md)
 * [Case study: Creating an immersive experience in Fragments](../../out-of-scope/case-studies/case-study-creating-an-immersive-experience-in-fragments.md)
 
 #### Tools and tutorials
@@ -722,7 +722,7 @@ A progress control provides feedback to the user that a long-running operation i
     </colgroup>
     <tr>
         <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="../../design/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>

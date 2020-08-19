@@ -348,7 +348,7 @@ For more detailed information please see our samples on quads which show specifi
 
 ### Mesh
 
-Meshes represent geometric representations of objects or environments. Much like [spatial mapping](spatial-mapping.md), mesh index and vertex data provided with each spatial surface mesh uses the same familiar layout as the vertex and index buffers that are used for rendering triangle meshes in all modern rendering APIs. Vertex positions are provided in the coordinate system of the `Scene`. The specific APIs used to reference this data are as follows:
+Meshes represent geometric representations of objects or environments. Much like [spatial mapping](../../design/spatial-mapping.md), mesh index and vertex data provided with each spatial surface mesh uses the same familiar layout as the vertex and index buffers that are used for rendering triangle meshes in all modern rendering APIs. Vertex positions are provided in the coordinate system of the `Scene`. The specific APIs used to reference this data are as follows:
 
 ```cs
 void GetTriangleIndices(int[] indices);
@@ -385,6 +385,6 @@ If you do not have a HoloLens2 device but want to play with Scene Understanding 
 
 ## See also
 
-* [Spatial mapping](spatial-mapping.md)
-* [Scene understanding](scene-understanding.md)
+* [Spatial mapping](../../design/spatial-mapping.md)
+* [Scene understanding](../../design/scene-understanding.md)
 * [Unity Sample](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples)

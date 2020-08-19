@@ -9,11 +9,10 @@ keywords: HoloLens, synchronize, spatial anchor, transfer, multiplayer, view, sc
 ---
 
 
-
 # Shared experiences in DirectX
 
 > [!NOTE]
-> This article relates to the legacy WinRT native APIs.  For new native app projects, we recommend using the **[OpenXR API](openxr-getting-started.md)**.
+> This article relates to the legacy WinRT native APIs.  For new native app projects, we recommend using the **[OpenXR API](../native/openxr-getting-started.md)**.
 
 A shared experience is one where multiple users, each with their own HoloLens, iOS or Android device, collectively view and interact with the same hologram which is positioned at a fixed point in space. This is accomplished through spatial anchor sharing.
 
@@ -29,7 +28,7 @@ Once you're up and running with Azure Spatial Anchors, you can then <a href="htt
 
 ## Local anchor transfers
 
-In situations where you cannot use Azure Spatial Anchors, [local anchor transfers](local-anchor-transfers-in-directx.md) enable one HoloLens device to export an anchor to be imported by a second HoloLens device.  Note that this approach provides less robust anchor recall than Azure Spatial Anchors, and iOS and Android devices are not supported by this approach.
+In situations where you cannot use Azure Spatial Anchors, [local anchor transfers](../native/local-anchor-transfers-in-directx.md) enable one HoloLens device to export an anchor to be imported by a second HoloLens device.  Note that this approach provides less robust anchor recall than Azure Spatial Anchors, and iOS and Android devices are not supported by this approach.
 
 ## See also
 * [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)

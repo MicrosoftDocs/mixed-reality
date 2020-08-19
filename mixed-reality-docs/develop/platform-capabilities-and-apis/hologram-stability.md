@@ -10,6 +10,7 @@ appliesto:
     - HoloLens
 ---
 
+
 # Hologram stability
 
 ## Overview
@@ -22,7 +23,7 @@ The quality of holograms is a result of good environment and good app developmen
 
 The following terminology can help you when you're identifying problems with the environment, inconsistent or low rendering rates, or anything else.
 * **Accuracy.** Once the hologram is world-locked and placed in the real world, it should stay where it's placed relative to the surrounding environment and independent of user motion or small and sparse environment changes. If a hologram later appears in an unexpected location, it's an *accuracy* problem. Such scenarios can happen if two distinct rooms look identical.
-* **Jitter.** Users observe jitter as high frequency shaking of a hologram, which can happen when tracking of the environment degrades. For users, the solution is running [sensor tuning](sensor-tuning.md).
+* **Jitter.** Users observe jitter as high frequency shaking of a hologram, which can happen when tracking of the environment degrades. For users, the solution is running [sensor tuning](../../design/sensor-tuning.md).
 * **Judder.** Low rendering frequencies result in uneven motion and double images of holograms. Judder is especially noticeable in holograms with motion. Developers need to maintain a [constant 60 FPS](hologram-stability.md#frame-rate).
 * **Drift.** Users see drift as a hologram appears to move away from where it was originally placed. Drift happens when holograms are placed far away from [spatial anchors](../../design/spatial-anchors.md), particularly in parts of the environment that aren't fully mapped. Creating holograms close to spatial anchors lowers the likelihood of drift.
 * **Jumpiness.** When a hologram "pops" or "jumps" away from its location occasionally. Jumpiness can occur as tracking adjusts holograms to match updated understanding of your environment.
@@ -44,7 +45,7 @@ By rendering at 60 FPS, you're doing three things to help make stable holograms:
 **Frame-rate consistency**
  Frame rate consistency is as important as a high frames-per-second. Occasionally dropped frames are inevitable for any content-rich application, and the HoloLens implements some sophisticated algorithms to recover from occasional glitches. However, a constantly fluctuating framerate is a lot more noticeable to a user than running consistently at lower frame rates. For example, an application that renders smoothly for five frames (60 FPS for the duration of these five frames) and then drops every other frame for the next 10 frames (30 FPS for the duration of these 10 frames) will appear more unstable than an application that consistently renders at 30 FPS.
 
-On a related note, the operating system throttles down applications to 30 FPS when [mixed reality capture](../../design/mixed-reality-capture.md) is running.
+On a related note, the operating system throttles down applications to 30 FPS when [mixed reality capture](../../mixed-reality-capture.md) is running.
 
 **Performance analysis**
  There are different kinds of tools that can be used to benchmark your application frame rate, such as:
