@@ -13,7 +13,7 @@ keywords: eye-gaze, head-gaze, head tracking, eye tracking, directx, input, holo
 > [!NOTE]
 > This article relates to the legacy WinRT native APIs.  For new native app projects, we recommend using the **[OpenXR API](openxr-getting-started.md)**.
 
-In Windows Mixed Reality, eye and head gaze input is used to determine what the user is looking at. This can be used to drive primary input models such as [head-gaze and commit](gaze-and-commit.md), and also to provide context for types of interactions. There are two types of gaze vectors available through the API: head-gaze and eye-gaze.  Both are provided as a three dimensional ray with an origin and direction. Applications can then raycast into their scenes, or the real world, and determine what the user is targeting.
+In Windows Mixed Reality, eye and head gaze input is used to determine what the user is looking at. This can be used to drive primary input models such as [head-gaze and commit](../../design/gaze-and-commit.md), and also to provide context for types of interactions. There are two types of gaze vectors available through the API: head-gaze and eye-gaze.  Both are provided as a three dimensional ray with an origin and direction. Applications can then raycast into their scenes, or the real world, and determine what the user is targeting.
 
 **Head-gaze** represents the direction that the user's head is pointed in. Think of this as the position and forward direction of the device itself, with the position representing the center point between the two displays. Head-gaze is available on all Mixed Reality devices.
 
@@ -31,9 +31,9 @@ Both head and eye-gaze rays are accessible through the  [SpatialPointerPose](htt
 </colgroup>
 <tr>
      <td><strong>Feature</strong></td>
-     <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+     <td><a href="../../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-     <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+     <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
 </tr>
 <tr>
      <td>Head-gaze</td>
@@ -73,7 +73,7 @@ if (pointerPose)
 
 ## Using eye-gaze
 
-Please note that for your users to use eye-gaze input, each user has to go through an [eye tracking user calibration](calibration.md) the first time they use the device. 
+Please note that for your users to use eye-gaze input, each user has to go through an [eye tracking user calibration](../../calibration.md) the first time they use the device. 
 The eye-gaze API is very similar to head-gaze.
 It uses the same [SpatialPointerPose](https://docs.microsoft.com//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) API, which provides a ray origin and direction that you can raycast against your scene.  The only difference is that you need to explicitly enable eye tracking before using it. For this, you need to do two steps:
 1. Request user permission to use eye tracking in your app.
@@ -171,7 +171,7 @@ if (pointerPose)
 ```
 
 ## Fallback when eye tracking is not available
-As mentioned in our [eye tracking design docs](eye-tracking.md#fallback-solutions-when-eye-tracking-is-not-available), both designers as well as developers should be aware that there may be instances in which eye tracking data may not be available to your app.
+As mentioned in our [eye tracking design docs](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-is-not-available), both designers as well as developers should be aware that there may be instances in which eye tracking data may not be available to your app.
 There are various reasons for this ranging from a user not being calibrated, the user having denied the app access to his/her eye tracking data or simply temporary interferences (such as smudges on the HoloLens visor or hair occluding the user's eyes). 
 While some of the APIs have already been mentioned in this document, in the following, we provide a summary of how to detect that eye tracking is available as a quick reference: 
 
@@ -182,7 +182,7 @@ While some of the APIs have already been mentioned in this document, in the foll
 * Check that the user has given your app permission to use their eye tracking data: Retrieve the current _'GazeInputAccessStatus'_. An example on how to do this is explained at [Requesting access to gaze input](https://docs.microsoft.com/windows/mixed-reality/gaze-in-directX#requesting-access-to-gaze-input).	
 
 In addition, you may want to check that your eye tracking data is not stale by adding a timeout between received eye tracking data updates and otherwise fallback to head-gaze as discussed below. 	
-Please visit our [fallback design considerations](eye-tracking.md#fallback-solutions-when-eye-tracking-is-not-available) for more information.
+Please visit our [fallback design considerations](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-is-not-available) for more information.
 
 <br>
 
@@ -199,7 +199,7 @@ However, for input that routes through the SpatialInteractionManager, there's an
 <br>
 
 ## Calibration
-For eye tracking to work accurately, each user is required to go through an [eye tracking user calibration](calibration.md). 
+For eye tracking to work accurately, each user is required to go through an [eye tracking user calibration](../../calibration.md). 
 This allows the device to adjust the system for a more comfortable and higher quality viewing experience for the user and to ensure accurate eye tracking at the same time. 
 Developers don’t need to do anything on their end to manage user calibration. 
 The system will ensure that the user gets prompted to calibrate the device under the following circumstances:
@@ -208,14 +208,14 @@ The system will ensure that the user gets prompted to calibrate the device under
 * The calibration process did not succeed the last time the user used the device
 
 Developers should make sure to provide adequate support for users for whom eye tracking data may not be available. 
-Learn more about considerations for fallback solutions at [Eye tracking on Hololens 2](eye-tracking.md).
+Learn more about considerations for fallback solutions at [Eye tracking on Hololens 2](../../design/eye-tracking.md).
 
 <br>
 
 ## See also
-* [Calibration](calibration.md)
+* [Calibration](../calibration.md)
 * [Coordinate systems in DirectX](coordinate-systems-in-directx.md)
-* [Eye-gaze on HoloLens 2](eye-tracking.md)
-* [Gaze and commit input model](gaze-and-commit.md)
+* [Eye-gaze on HoloLens 2](../../design/eye-tracking.md)
+* [Gaze and commit input model](../../design/gaze-and-commit.md)
 * [Hands and motion controllers in DirectX](hands-and-motion-controllers-in-directx.md)
 * [Voice Input in DirectX](voice-input-in-directx.md)

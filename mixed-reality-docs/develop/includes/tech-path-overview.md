@@ -48,7 +48,7 @@ This page covers how to get quickly started with using eye tracking in MRTK by b
 
 ![Unreal](../images/unreal_logo_banner.png)
 
-Build a cross-platform, full-featured mixed reality app with Unreal. See the [Unreal development overview](../unreal-development-overview.md) to get started with Unreal development for HoloLens.
+Build a cross-platform, full-featured mixed reality app with Unreal. See the [Unreal development overview](../unreal/unreal-development-overview.md) to get started with Unreal development for HoloLens.
 
 ## What does Unreal offer?
 
@@ -83,7 +83,7 @@ You have several hardware, emulator, and streaming options when building Mixed R
 
 ![Web](../images/javascript_logo_banner.png)
 
-The WebXR Device API is an open specification that allows you to experience Mixed Reality apps in your browser on any platform. See the [Javascript development overview](../javascript-development-overview.md) to get started building Mixed Reality apps for any platform.
+The WebXR Device API is an open specification that allows you to experience Mixed Reality apps in your browser on any platform. See the [Javascript development overview](../native/javascript-development-overview.md) to get started building Mixed Reality apps for any platform.
 
 
 # [Native (OpenXR)](#tab/native)

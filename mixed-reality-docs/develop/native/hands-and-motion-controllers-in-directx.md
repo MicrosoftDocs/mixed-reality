@@ -13,7 +13,7 @@ keywords: hands, motion controllers, directx, input, holograms
 > [!NOTE]
 > This article relates to the legacy WinRT native APIs.  For new native app projects, we recommend using the **[OpenXR API](openxr-getting-started.md)**.
 
-In Windows Mixed Reality, both hand and [motion controller](motion-controllers.md) input is handled through the spatial input APIs, found in the [Windows.UI.Input.Spatial](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial) namespace. This enables you to easily handle common actions like **Select** presses the same way across both hands and motion controllers.
+In Windows Mixed Reality, both hand and [motion controller](../../design/motion-controllers.md) input is handled through the spatial input APIs, found in the [Windows.UI.Input.Spatial](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial) namespace. This enables you to easily handle common actions like **Select** presses the same way across both hands and motion controllers.
 
 ## Getting started
 
@@ -229,7 +229,7 @@ On HoloLens (first gen), interactions and gestures should generally derive their
 
 ## See also
 * [Head and eye gaze in DirectX](gaze-in-directx.md)
-* [Direct manipulation input model](direct-manipulation.md)
-* [Point-and-commit input model](point-and-commit.md)
-* [Gaze and commit input model](gaze-and-commit.md)
-* [Motion controllers](motion-controllers.md)
+* [Direct manipulation input model](../../design/direct-manipulation.md)
+* [Point-and-commit input model](../../design/point-and-commit.md)
+* [Gaze and commit input model](../../design/gaze-and-commit.md)
+* [Motion controllers](../../design/motion-controllers.md)

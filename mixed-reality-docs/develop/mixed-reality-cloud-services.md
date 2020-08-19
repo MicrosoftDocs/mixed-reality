@@ -51,67 +51,67 @@ The standalone services listed below do not apply to Mixed Reality, but can be h
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
-        <td><a href="../unity/tutorials/mr-azure-301.md">Language translation</a></td>
+        <td><a href="unity/tutorials/mr-azure-301.md">Language translation</a></td>
         <td>✔️</td>
         <td>✔️</td>
     </tr>
     <tr>
-        <td><a href="../unity/tutorials/mr-azure-302.md">Computer vision</a></td>
+        <td><a href="unity/tutorials/mr-azure-302.md">Computer vision</a></td>
         <td>✔️</td>
         <td>✔️</td>
     </tr>
     <tr>
-        <td><a href="../unity/tutorials/mr-azure-302b.md">Custom vision</a></td>
+        <td><a href="unity/tutorials/mr-azure-302b.md">Custom vision</a></td>
         <td>✔️</td>
         <td>✔️</td>
     </tr>
     <tr>
-        <td><a href="../unity/tutorials/mr-azure-303.md">Cross-device notifications</a></td>
+        <td><a href="unity/tutorials/mr-azure-303.md">Cross-device notifications</a></td>
         <td>✔️</td>
         <td>✔️</td>
     </tr>
     <tr>
-        <td><a href="../unity/tutorials/mr-azure-304.md">Face recognition</a></td>
+        <td><a href="unity/tutorials/mr-azure-304.md">Face recognition</a></td>
         <td>✔️</td>
         <td>✔️</td>
     </tr>
     <tr>
-        <td><a href="../unity/tutorials/mr-azure-305.md">Functions and storage</a></td>
+        <td><a href="unity/tutorials/mr-azure-305.md">Functions and storage</a></td>
         <td>✔️</td>
         <td>✔️</td>
     </tr>
     <tr>
-        <td><a href="../unity/tutorials/mr-azure-306.md">Streaming video</a></td>
+        <td><a href="unity/tutorials/mr-azure-306.md">Streaming video</a></td>
         <td>❌</td>
         <td>✔️</td>
     </tr>
     <tr>
-        <td><a href="../unity/tutorials/mr-azure-307.md">Machine learning</a></td>
+        <td><a href="unity/tutorials/mr-azure-307.md">Machine learning</a></td>
         <td>✔️</td>
         <td>✔️</td>
     </tr>
     <tr>
-        <td><a href=../unity/tutorials/"mr-azure-308.md">Functions and storage</a></td>
+        <td><a href="unity/tutorials/"mr-azure-308.md">Functions and storage</a></td>
         <td>✔️</td>
         <td>✔️</td>
     </tr>
     <tr>
-        <td><a href="../unity/tutorials/mr-azure-309.md">Application insights</a></td>
+        <td><a href="unity/tutorials/mr-azure-309.md">Application insights</a></td>
         <td>✔️</td>
         <td>✔️</td>
     </tr>
     <tr>
-        <td><a href="../unity/tutorials/mr-azure-310.md">Object detection</a></td>
+        <td><a href="unity/tutorials/mr-azure-310.md">Object detection</a></td>
         <td>✔️</td>
         <td>✔️</td>
     </tr>
     <tr>
-        <td><a href="../unity/tutorials/mr-azure-311.md">Microsoft Graph</a></td>
+        <td><a href="unity/tutorials/mr-azure-311.md">Microsoft Graph</a></td>
         <td>✔️</td>
         <td>✔️</td>
     </tr>
     <tr>
-        <td><a href="../unity/tutorials/mr-azure-312.md">Bot integration</a></td>
+        <td><a href="unity/tutorials/mr-azure-312.md">Bot integration</a></td>
         <td>✔️</td>
         <td>✔️</td>
     </tr>
