@@ -128,7 +128,7 @@ Over time, as the system learns more about the user's environment, it may determ
 
 An attached frame of reference moves with the user as they walk around, with a fixed heading defined when the app first creates the frame. This lets the user comfortably look around at content placed within that frame of reference. Content rendered in this user-relative way is called **body-locked** content.
 
-When the headset can't figure out where it is in the world, an attached frame of reference provides the only coordinate system which can be used to render holograms. This makes it ideal for displaying fallback UI to tell the user that their device can't find them in the world. Apps that are seated-scale or higher should include an orientation-only fallback to help the user get going again, with UI similar to that shown in the [Mixed Reality home](..discover/navigating-the-windows-mixed-reality-home.md).
+When the headset can't figure out where it is in the world, an attached frame of reference provides the only coordinate system which can be used to render holograms. This makes it ideal for displaying fallback UI to tell the user that their device can't find them in the world. Apps that are seated-scale or higher should include an orientation-only fallback to help the user get going again, with UI similar to that shown in the [Mixed Reality home](../discover/navigating-the-windows-mixed-reality-home.md).
 
 ## Building a standing-scale or room-scale experience
 

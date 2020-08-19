@@ -127,7 +127,7 @@ Optimal text legibility can help reduce eye strain and maintain user comfort, es
 * Lens properties like chromatic aberration
 * Text/font properties such as weight, spacing, serifs, and font/background color.  
 
-In general, we recommend testing specific applications for legibility and making font sizes as large as possible for a comfortable experience. You can find more detailed guidance for holographic and immersive devices in our [Typography](typography.md) and [Text in Unity](../develop/text-in-unity.md) pages.
+In general, we recommend testing specific applications for legibility and making font sizes as large as possible for a comfortable experience. You can find more detailed guidance for holographic and immersive devices in our [Typography](typography.md) and [Text in Unity](../develop/unity/text-in-unity.md) pages.
 
 ## Holographic frame considerations
 

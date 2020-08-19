@@ -30,9 +30,9 @@ Based on these, we provide several design recommendations to help you create sat
 </colgroup>
 <tr>
      <td><strong>Feature</strong></td>
-     <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+     <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-     <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+     <td><a href="https://docs.microsoft.com/en-us/windows/mixed-reality/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
 </tr>
 <tr>
      <td>Eye-gaze</td>
@@ -155,14 +155,14 @@ We distinguish two types of imprecisions which are noticeable to users: offset a
 This page provided you with a good overview to get you started understanding eye-gaze as an input in mixed reality. 
 To get started developing, check out our information on 
 [eye-gaze in Unity](https://aka.ms/mrtk-eyes) and 
-[eye-gaze in DirectX](gaze-in-directx.md).
+[eye-gaze in DirectX](../develop/native/gaze-in-directx.md).
 
 
 ## See also
 * [Comfort](comfort.md)
-* [Eye-gaze in DirectX](gaze-in-directx.md)
+* [Eye-gaze in DirectX](../develop/native/gaze-in-directx.md)
 * [Eye-gaze in Unity (Mixed Reality Toolkit)](https://aka.ms/mrtk-eyes)
 * [Eye tracking on HoloLens 2](eye-tracking.md)
 * [Gaze and commit](gaze-and-commit.md)
 * [Gaze and dwell](gaze-and-dwell.md)
-* [Voice input](voice-design.md)
+* [Voice input](../out-of-scope/voice-design.md)

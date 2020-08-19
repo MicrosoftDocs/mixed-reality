@@ -11,7 +11,7 @@ keywords: Mixed Reality, Gaze, gaze targeting, interaction, design, hands near, 
 
 # Direct manipulation with hands
 
-![Button](images/UX/UX_Hero_Manipulation.jpg)
+![Button](images/UX_Hero_Manipulation.jpg)
 
 Direct manipulation is an input model that involves touching holograms directly with your hands. The idea behind this concept is that objects behave just as they would in the real world. Buttons can be activated simply by pressing them, objects can be picked up by grabbing them, and 2D content behaves like a virtual touchscreen. This makes direct manipulation easy for users to learn, and fun. It's considered a "near" input model in that it's best used for interacting with content within arms reach.
 
@@ -28,9 +28,9 @@ Direct manipulation is affordance-based, meaning it's user friendly. There are n
 </colgroup>
 <tr>
      <td><strong>Input model</strong></td>
-     <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+     <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-     <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+     <td><a href="https://docs.microsoft.com/windows/mixed-reality/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
 </tr>
 <tr>
      <td>Direct manipulation with hands</td>

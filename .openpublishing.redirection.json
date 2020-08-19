@@ -96,7 +96,7 @@
 			"redirect_document_id": false
 		},
 		{
-			"source_path": "mixed-reality-docs/hololens-hardware-details.md",
+			"source_path": "mixed-reality-docs/discover/hololens-hardware-details.md",
 			"redirect_url": "https://docs.microsoft.com/hololens/hololens1-hardware",
 			"redirect_document_id": false
 		},
@@ -141,7 +141,7 @@
 			"redirect_document_id": false
 		},
 		{
-			"source_path": "mixed-reality-docs/color,-light-and-materials.md",
+			"source_path": "mixed-reality-docs/design/color,-light-and-materials.md",
 			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/color-light-and-materials",
 			"redirect_document_id": false
 		},
