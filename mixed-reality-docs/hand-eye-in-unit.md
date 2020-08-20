@@ -17,7 +17,7 @@ HoloLens 2 has introduced instinctual interactions using articulated hand and ey
 
 ## Building blocks supporting hands and eye tracking input in MRTK
 
-MRTK provides a set of UI Controls and building blocks to help you accelerate your development.
+MRTK provides a set of UI controls and building blocks to help you accelerate your development.
 :::row:::
     :::column:::
 [![Button](images/MRTK_Button_Main.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) [**Button**](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
@@ -93,11 +93,9 @@ Examples for logging, loading and visualizing what users have been looking at in
     :::column-end:::
 :::row-end:::
 
-## Example Scenes
+## Example scenes
 
-Explore MRTK's various types of interactions and UI controls in [this example scene](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandInteractionExamples.html).
-
-You can find  other example scenes in [Mixed Reality Toolkit GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity) under **Assets/MixedRealityToolkit.Examples/Demos**folder.
+Explore MRTK's various types of interactions and UI controls in [HandInteractionExamples.unity scene](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandInteractionExamples.html).
 
 [![Example Scene](images/MRTK_Examples.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandInteractionExamples.html)
 
