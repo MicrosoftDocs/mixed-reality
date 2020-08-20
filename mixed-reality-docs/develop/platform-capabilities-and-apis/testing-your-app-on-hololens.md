@@ -26,7 +26,7 @@ Holographic apps need to run smoothly in a diverse set of environments. They als
 6. **Test your app at different levels of ambient noise.** If you've implemented voice commands, try invoking them with varying levels of ambient noise.
 7. **Test your app seated and standing**. Make sure to test from both seating and standing positions.
 8. **Test your app from different distances**. Can UI elements be read and interacted with from far away? Does your app react to users getting too close to your holograms?
-9. **Test your app against common app bar interactions**. All app tiles and 2D universal apps have a [app bar](navigating-the-windows-mixed-reality-home.md#moving-and-adjusting-apps) that allows you to control how the app is positioned in the Mixed World. Make sure clicking Remove terminates your app process gracefully and that the Back button is supported within the context of your 2D universal app. Try scaling and moving your app in [Adjust mode](navigating-the-windows-mixed-reality-home.md#moving-and-adjusting-apps) both while it is active, and while it is a suspended app tile.
+9. **Test your app against common app bar interactions**. All app tiles and 2D universal apps have a [app bar](../../discover/navigating-the-windows-mixed-reality-home.md#moving-and-adjusting-apps) that allows you to control how the app is positioned in the Mixed World. Make sure clicking Remove terminates your app process gracefully and that the Back button is supported within the context of your 2D universal app. Try scaling and moving your app in [Adjust mode](../../discover/navigating-the-windows-mixed-reality-home.md#moving-and-adjusting-apps) both while it is active, and while it is a suspended app tile.
 
 ### Environmental test matrix
 
@@ -43,7 +43,7 @@ Holographic apps need to run smoothly in a diverse set of environments. They als
 
 ### Interaction models
 
-Make sure the hologram interactions work with your chosen [interaction model](interaction-fundamentals.md).
+Make sure the hologram interactions work with your chosen [interaction model](../../design/interaction-fundamentals.md).
 It's also a good idea to validate with different accessories, like mouse and keyboard, if these accessories are needed to support accessibility.
 
 **Validate when your app has a different behavior with mouse and touch.** This will identify inconsistencies and help with design decisions to make the experience more natural for users. For example, triggering an action based on hover.
@@ -51,13 +51,13 @@ It's also a good idea to validate with different accessories, like mouse and key
 
 ### Custom voice commands
 
-[Voice input](voice-input.md) is a natural form of interaction. The user experience can be magical or confusing depending on your choice of commands and how you expose them. As a rule, you should not use system voice commands such as "Select" or "Hey Cortana" as custom commands. Here are a few points to consider:
+[Voice input](../../design/voice-input.md) is a natural form of interaction. The user experience can be magical or confusing depending on your choice of commands and how you expose them. As a rule, you should not use system voice commands such as "Select" or "Hey Cortana" as custom commands. Here are a few points to consider:
 1. **Avoid using commands that sound similar.** This can potentially trigger the incorrect command.
 2. **Choose phonetically rich words when possible.** This will minimize and/or avoid false activations.
 
 ### Peripherals
 
-Users can interact with your App through [peripherals](hardware-accessories.md). Apps don't need to do anything special to take advantage of that capability, however there are a couple things worth checking.
+Users can interact with your App through [peripherals](../../discover/hardware-accessories.md). Apps don't need to do anything special to take advantage of that capability, however there are a couple things worth checking.
 1. **Validate custom interactions.** Things like custom keyboard shortcuts for your app.
 2. **Validate switching input types.** Attempting to use multiple input methods to complete a task, such as voice, gesture, mouse, and keyboard all in the same scenario.
 
@@ -106,7 +106,7 @@ Some app developers might want to automate testing of their apps. Beyond simple 
 
 ## Windows App Certification Kit
 
-To give your app the best chance of being [published on the Windows Store](submitting-an-app-to-the-microsoft-store.md), validate and test it locally before you submit it for certification. If your app targets the Windows.Holographic device family, the [Windows App Certification Kit](https://msdn.microsoft.com/library/windows/apps/xaml/mt186449.aspx) will only run local static analysis tests on your PC. No tests will be run on your HoloLens.
+To give your app the best chance of being [published on the Windows Store](../../distribute/submitting-an-app-to-the-microsoft-store.md), validate and test it locally before you submit it for certification. If your app targets the Windows.Holographic device family, the [Windows App Certification Kit](https://msdn.microsoft.com/library/windows/apps/xaml/mt186449.aspx) will only run local static analysis tests on your PC. No tests will be run on your HoloLens.
 
 ## See also
-* [Submitting an app to the Windows Store](submitting-an-app-to-the-microsoft-store.md)
+* [Submitting an app to the Windows Store](../../distribute/submitting-an-app-to-the-microsoft-store.md)

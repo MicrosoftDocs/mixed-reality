@@ -280,5 +280,5 @@ If your system hangs when the emulator is starting, disable hardware acceleratio
 ## See also
 * [Advanced HoloLens Emulator and Mixed Reality Simulator input](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)
 * [HoloLens Emulator software history](hololens-emulator-archive.md)
-* [Spatial mapping in Unity](spatial-mapping-in-unity.md)
-* [Spatial mapping in DirectX](spatial-mapping-in-directx.md)
+* [Spatial mapping in Unity](../unity/spatial-mapping-in-unity.md)
+* [Spatial mapping in DirectX](../unity/spatial-mapping-in-directx.md)

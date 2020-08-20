@@ -15,7 +15,7 @@ ms.localizationpriority: high
 
 <table>
 <tr>
-<th>Feature</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"><a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Feature</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"><a href="../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td> Windows Device Portal</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
 </tr>
@@ -33,7 +33,7 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 4. Select the **Update** menu item.
 5. Select the **For developers** menu item.
 6. Enable **Developer Mode**.
-7. [Scroll down](gaze-and-commit.md#composite-gestures) and enable **Device Portal**.
+7. [Scroll down](../../design/gaze-and-commit.md#composite-gestures) and enable **Device Portal**.
 8. If you are setting up Windows Device Portal so you can deploy apps to this HoloLens over USB or Wi-Fi, click **Pair** to [generate a pairing PIN](using-visual-studio.md). Leave the Settings app at the PIN popup until you enter the PIN into Visual Studio during your first deployment.
 
    ![Enabling developer mode in the Settings app for Windows Holographic](images/deviceportalsettings.png)
@@ -52,7 +52,7 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 
 ## Connecting over USB
 
-1. [Install the tools](install-the-tools.md) to make sure you have Visual Studio Update 1 with the Windows 10 developer tools installed on your PC. This enables USB connectivity.
+1. [Install the tools](../install-the-tools.md) to make sure you have Visual Studio Update 1 with the Windows 10 developer tools installed on your PC. This enables USB connectivity.
 2. Connect your HoloLens to your PC with a micro-USB cable for HoloLens (1st Gen) or USB-C for HoloLens 2.
 3. From a web browser on your PC, go to [https://127.0.0.1:10080](https://127.0.0.1:10080).
 

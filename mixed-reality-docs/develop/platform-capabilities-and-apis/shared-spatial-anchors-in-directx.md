@@ -28,7 +28,7 @@ Once you're up and running with Azure Spatial Anchors, you can then <a href="htt
 
 ## Local anchor transfers
 
-In situations where you cannot use Azure Spatial Anchors, [local anchor transfers](../native/local-anchor-transfers-in-directx.md) enable one HoloLens device to export an anchor to be imported by a second HoloLens device.  Note that this approach provides less robust anchor recall than Azure Spatial Anchors, and iOS and Android devices are not supported by this approach.
+In situations where you cannot use Azure Spatial Anchors, [local anchor transfers](../../out-of-scope/local-anchor-transfers-in-directx.md) enable one HoloLens device to export an anchor to be imported by a second HoloLens device.  Note that this approach provides less robust anchor recall than Azure Spatial Anchors, and iOS and Android devices are not supported by this approach.
 
 ## See also
 * [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)

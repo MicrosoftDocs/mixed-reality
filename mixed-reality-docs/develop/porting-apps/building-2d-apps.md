@@ -70,8 +70,8 @@ If you do not use Visual Studio for your development environment, you can open *
 
 ### Run in the HoloLens Emulator
 
-Now that your UWP app targets "Windows.Universal", let's build your app and run it in the [HoloLens Emulator](using-the-hololens-emulator.md).
-* Make sure you have [installed the HoloLens Emulator](install-the-tools.md).
+Now that your UWP app targets "Windows.Universal", let's build your app and run it in the [HoloLens Emulator](../platform-capabilities-and-apis/using-the-hololens-emulator.md).
+* Make sure you have [installed the HoloLens Emulator](../install-the-tools.md).
 * In Visual Studio, select the **x86** build configuration for your app
 
   ![x86 build configuration in Visual Studio](images/x86setting.png)<br>
@@ -107,7 +107,7 @@ These steps will walk you through debugging your UWP app using the Visual Studio
 
 Now that your UWP app is running on immersive headsets and/or HoloLens as a 2D hologram, next we'll make sure it looks beautiful. Here are some things to consider:
 * Windows Mixed Reality will run all 2D apps at a fixed resolution and DPI that equates to 853x480 effective pixels. Consider if your design needs refinement at this scale and review the design guidance below to improve your experience on HoloLens and immersive headsets.
-* Windows Mixed Reality [does not support](app-model.md) 2D live tiles. If your core functionality is showing information on a live tile, consider moving that information back into your app or explore [3D app launchers](3d-app-launcher-design-guidance.md).
+* Windows Mixed Reality [does not support](../../design/app-model.md) 2D live tiles. If your core functionality is showing information on a live tile, consider moving that information back into your app or explore [3D app launchers](3d-app-launcher-design-guidance.md).
 
 ### 2D app view resolution and scale factor
 
@@ -136,7 +136,7 @@ This resolution has several advantages:
 
 ### Understand the app model
 
-The [app model](app-model.md) for mixed reality is designed to use the Mixed Reality Home, where many apps live together. Think of this as the mixed reality equivalent of the desktop, where you run many 2D apps at once. This has implications on app life cycle, Tiles, and other key features of your app.
+The [app model](../../design/app-model.md) for mixed reality is designed to use the Mixed Reality Home, where many apps live together. Think of this as the mixed reality equivalent of the desktop, where you run many 2D apps at once. This has implications on app life cycle, Tiles, and other key features of your app.
 
 ### App bar and back button
 
@@ -155,27 +155,27 @@ It is important to test your app to make sure the text is readable, the buttons 
 
 ## New input possibilities
 
-HoloLens uses advanced depth sensors to see the world and see users. This enables advanced hand gestures like [bloom](system-gesture.md#bloom) and [air-tap](gaze-and-commit.md#composite-gestures). Powerful microphones also enable [voice experiences](voice-input.md).
+HoloLens uses advanced depth sensors to see the world and see users. This enables advanced hand gestures like [bloom](../../design/system-gesture.md#bloom) and [air-tap](../../design/gaze-and-commit.md#composite-gestures). Powerful microphones also enable [voice experiences](../../design/voice-input.md).
 
 With Desktop headsets, users can use motion controllers to point at apps and take action. They can also use a gamepad, targeting objects with their gaze.
 
-Windows takes care of all of this complexity for UWP apps, translating your [gaze](gaze-and-commit.md), gestures, voice and motion controller input to [pointer events](https://msdn.microsoft.com/library/windows/apps/mt404610#pointer_events) that abstract away the input mechanism. For example, a user may have done an air-tap with their hand or pulled the Select trigger on a motion controller, but 2D applications don't need to know where the input came from - they just see a 2D touch press, as if on a touchscreen.
+Windows takes care of all of this complexity for UWP apps, translating your [gaze](../../design/gaze-and-commit.md), gestures, voice and motion controller input to [pointer events](https://msdn.microsoft.com/library/windows/apps/mt404610#pointer_events) that abstract away the input mechanism. For example, a user may have done an air-tap with their hand or pulled the Select trigger on a motion controller, but 2D applications don't need to know where the input came from - they just see a 2D touch press, as if on a touchscreen.
 
 Here are the high level concepts/scenarios you should understand for input when bringing your UWP app to HoloLens:
-* [Gaze](gaze-and-commit.md) turns into hover events, which can unexpectedly trigger menus, flyouts or other user interface elements to pop up just by gazing around your app.
+* [Gaze](../../design/gaze-and-commit.md) turns into hover events, which can unexpectedly trigger menus, flyouts or other user interface elements to pop up just by gazing around your app.
 * Gaze is not as precise as mouse input. Use appropriately sized hit targets for HoloLens, similar to touch-friendly mobile applications. Small elements near the edges of the app are especially hard to interact with.
 * Users must switch input modes to go from scrolling to dragging to two finger panning. If your app was designed for touch input, consider ensuring that no major functionality is locked behind two finger panning. If so, consider having alternative input mechanisms like buttons that can initiate two finger panning. For example, the Maps app can zoom with two finger panning but has a plus, minus, and rotate button to simulate the same zoom interactions with single clicks.
 
-[Voice input](voice-input.md) is a critical part of the mixed reality experience. We've enabled all of the speech APIs that are in Windows 10 powering Cortana when using a headset.
+[Voice input](../../design/voice-input.md) is a critical part of the mixed reality experience. We've enabled all of the speech APIs that are in Windows 10 powering Cortana when using a headset.
 
 ## Publish and Maintain your Universal app
 
 Once your app is up and running, package your app to [submit it to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md).
 
 ## See also
-* [App model](app-model.md)
-* [Head-gaze and commit](gaze-and-commit.md)
-* [Motion controllers](motion-controllers.md)
-* [Voice input](voice-input.md)
+* [App model](../../design/app-model.md)
+* [Head-gaze and commit](../../design/gaze-and-commit.md)
+* [Motion controllers](../../design/motion-controllers.md)
+* [Voice input](../../design/voice-input.md)
 * [Submitting an app to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md)
 * [Using the HoloLens emulator](using-the-hololens-emulator.md)

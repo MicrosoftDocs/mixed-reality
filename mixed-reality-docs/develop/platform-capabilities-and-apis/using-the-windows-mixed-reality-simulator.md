@@ -60,5 +60,5 @@ The Mixed Reality simulator can simulate up to two hand-held tracked motion cont
 ## See also
 * [Using the HoloLens emulator](using-the-hololens-emulator.md)
 * [Advanced Mixed Reality Simulator Input](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)
-* [Spatial mapping in Unity](spatial-mapping-in-unity.md)
-* [Spatial mapping in DirectX](spatial-mapping-in-directx.md)
+* [Spatial mapping in Unity](../unity/spatial-mapping-in-unity.md)
+* [Spatial mapping in DirectX](../unity/spatial-mapping-in-directx.md)

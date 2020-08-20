@@ -16,11 +16,11 @@ The performant framerate values for each target platform are listed below.
 
 | Platform | Target Frame Rate |
 |----------|-------------------|
-| [HoloLens](hololens-hardware-details.md) | 60 FPS |
-| [Windows Mixed Reality Ultra PCs](immersive-headset-hardware-details.md) | 90 FPS |
-| [Windows Mixed Reality PCs](immersive-headset-hardware-details.md) | 60 FPS |
+| [HoloLens](../../hololens-hardware-details.md) | 60 FPS |
+| [Windows Mixed Reality Ultra PCs](../../discover/immersive-headset-hardware-details.md) | 90 FPS |
+| [Windows Mixed Reality PCs](../../discover/immersive-headset-hardware-details.md) | 60 FPS |
 
-The framework below outlines best practices for hitting target frame rates. If developing in Unity, consider reading the [performance recommendations for Unity article](performance-recommendations-for-unity.md) for tips on measuring and improving framerate in the Unity environment.
+The framework below outlines best practices for hitting target frame rates. If developing in Unity, consider reading the [performance recommendations for Unity article](../unity/performance-recommendations-for-unity.md) for tips on measuring and improving framerate in the Unity environment.
 
 ## Understanding performance bottlenecks
 
@@ -134,8 +134,8 @@ Excessive memory allocation and deallocation operations can result in inconsiste
 Object pooling is a popular technique to reduce the cost of continuous allocations and deallocations of objects. This is done by allocating a large pool of identical objects and re-using inactive, available instances from this pool instead of constantly spawning and destroying objects over time. Object pools are great for re-useable components that have variable lifetime during an app.
 
 ## See also
-- [Performance recommendations for Unity](performance-recommendations-for-unity.md)
-- [Recommended settings for Unity](recommended-settings-for-unity.md)
+- [Performance recommendations for Unity](../unity/performance-recommendations-for-unity.md)
+- [Recommended settings for Unity](../unity/recommended-settings-for-unity.md)
 - [Optimize 3D models](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
 - [Best practices for converting and optimizing real-time 3D Models](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/best-practices)
 

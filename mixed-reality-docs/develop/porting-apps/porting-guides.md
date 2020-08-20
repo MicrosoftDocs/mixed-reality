@@ -8,6 +8,7 @@ ms.topic: article
 keywords: port, porting, unity, middleware, engine, UWP, Win32
 ---
 
+
 # Porting guides
 
 ## Overview
@@ -28,7 +29,7 @@ At a high level, the following steps are involved in porting existing content:
 
 ### Common step 1: Make sure you have the right development hardware
 
-The [install the tools](install-the-tools.md#immersive-vr-headset-requirements) page lists the recommended development hardware.
+The [install the tools](../install-the-tools.md#immersive-vr-headset-requirements) page lists the recommended development hardware.
 
 ### Common step 2: Upgrade to the latest flight of Windows 10
 
@@ -40,10 +41,10 @@ The Windows Mixed Reality platform is still under active development. We recomme
 
 ### Common step 3: Upgrade to the most recent build of Visual Studio
 * If you're using Visual Studio then upgrade to the most recent build
-* See [Install the tools](install-the-tools.md#installation-checklist) page under Visual Studio 2019
+* See [Install the tools](../install-the-tools.md#installation-checklist) page under Visual Studio 2019
 
 ### Common step 4: Choose the correct Adapter
-* In systems like notebooks with two GPUs, [target the correct adapter](rendering-in-directx.md#hybrid-graphics-pcs-and-mixed-reality-applications). This applies to Unity and native DirectX apps where a ID3D11Device is created, either explicitly or implicitly (Media Foundation), for its functionality.
+* In systems like notebooks with two GPUs, [target the correct adapter](../native/rendering-in-directx.md#hybrid-graphics-pcs-and-mixed-reality-applications). This applies to Unity and native DirectX apps where a ID3D11Device is created, either explicitly or implicitly (Media Foundation), for its functionality.
 
 ## Unity porting guidance
 
@@ -52,7 +53,7 @@ The Windows Mixed Reality platform is still under active development. We recomme
 Review the common steps listed above to make sure your development environment is set up correctly. In step #3, if you're using Visual Studio you should select the **Game Development with Unity** workload. You may deselect the "Unity Editor optional" component since you'll be installing a newer version of Unity in the next step.
 
 ### Unity step 2: Upgrade to the latest public build of Unity with Windows MR Support
-1. Download the latest [recommended public build of Unity](install-the-tools.md) with mixed reality support.
+1. Download the latest [recommended public build of Unity](../install-the-tools.md) with mixed reality support.
 2. Save a copy of your project before you get started
 3. Review the [documentation](https://docs.unity3d.com/Manual/UpgradeGuides.html) available from Unity on upgrading if your project was built on an older version of Unity.
 4. Follow the [instructions](https://docs.unity3d.com/Manual/APIUpdater.html) on Unity's site for using their automatic API updater
@@ -81,7 +82,7 @@ Select "Switch Platform"
 ### Unity step 5: Setup your Windows Mixed Reality hardware
 1. Review steps in [Immersive headset setup](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/before-you-start
 )
-2. Learn about [Using the Windows Mixed Reality simulator](using-the-windows-mixed-reality-simulator.md) and [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)
+2. Learn about [Using the Windows Mixed Reality simulator](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) and [Navigating the Windows Mixed Reality home](../../discover/navigating-the-windows-mixed-reality-home.md)
 
 ### Unity step 6: Target your application to run on Windows Mixed Reality
 1. First, you must remove or conditionally compile out any other library support specific to a particular VR SDK. Those assets frequently change settings and properties on your project in ways that are incompatible with other VR SDKs, such as Windows Mixed Reality.
@@ -92,7 +93,7 @@ Select "Switch Platform"
 
 ### Unity step 7: Use the stage to place content on the floor
 
-You can build Mixed Reality experiences across a wide range of [experience scales](coordinate-systems.md).
+You can build Mixed Reality experiences across a wide range of [experience scales](../../design/coordinate-systems.md).
 
 If you're porting a **seated-scale experience**, you must ensure Unity is set to the **Stationary** tracking space type:
 
@@ -100,9 +101,9 @@ If you're porting a **seated-scale experience**, you must ensure Unity is set to
 XRDevice.SetTrackingSpaceType(TrackingSpaceType.Stationary);
 ```
 
-This above code sets Unity's world coordinate system to track the [stationary frame of reference](coordinate-systems.md#spatial-coordinate-systems). In the Stationary tracking mode, content placed in the editor just in front of the camera's default location (forward is -Z) appears in front of the user when the app launches. To recenter the user's seated origin, you can call Unity's [XR.InputTracking.Recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html) method.
+This above code sets Unity's world coordinate system to track the [stationary frame of reference](../../design/coordinate-systems.md#spatial-coordinate-systems). In the Stationary tracking mode, content placed in the editor just in front of the camera's default location (forward is -Z) appears in front of the user when the app launches. To recenter the user's seated origin, you can call Unity's [XR.InputTracking.Recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html) method.
 
-If you're porting a **standing-scale experience** or **room-scale experience**, you'll be placing content relative to the floor. You reason about the user's floor using the **[spatial stage](coordinate-systems.md#spatial-coordinate-systems)**, which represents the user's defined floor-level origin and optional room boundary, set up during first run. For these experiences, you must ensure Unity is set to the **RoomScale** tracking space type. While RoomScale is the default, you'll want to set it explicitly and ensure you get back true, to catch situations where the user has moved their computer away from the room they calibrated:
+If you're porting a **standing-scale experience** or **room-scale experience**, you'll be placing content relative to the floor. You reason about the user's floor using the **[spatial stage](../../design/coordinate-systems.md#spatial-coordinate-systems)**, which represents the user's defined floor-level origin and optional room boundary, set up during first run. For these experiences, you must ensure Unity is set to the **RoomScale** tracking space type. While RoomScale is the default, you'll want to set it explicitly and ensure you get back true, to catch situations where the user has moved their computer away from the room they calibrated:
 
 ```cs
 if (XRDevice.SetTrackingSpaceType(TrackingSpaceType.RoomScale))
@@ -121,7 +122,7 @@ In script code, you can then call the TryGetGeometry method on you're the UnityE
 
 The system will automatically render the boundary when the user approaches it. Your app does not need to use this polygon to render the boundary itself.
 
-For more information, see the [Coordinate systems in Unity](coordinate-systems-in-unity.md) page.
+For more information, see the [Coordinate systems in Unity](../../design/coordinate-systems-in-unity.md) page.
 
 Some applications use a rectangle to constrain their interaction. Retrieving the largest inscribed rectangle is not directly supported in the UWP API or Unity. The example code linked to below shows how to find a rectangle within the traced bounds. It's heuristic-based so may not find the optimal solution, however, results are consistent with expectations. Parameters in the algorithm can be tuned to find more precise results at the cost of processing time. The algorithm is in a fork of the Mixed Reality Toolkit that uses the 5.6 preview MRTP version of Unity. This isn't publicly available. The code should be directly usable in 2017.2 and higher versions of Unity. The code will be ported to the current MRTK in the near future.
 
@@ -148,10 +149,10 @@ Each game or application targeting an existing HMD will have a set of inputs tha
 
 Windows Mixed Reality will be available on a broad class of devices, ranging from high end gaming PCs, down to broad market mainstream PCs. Depending on what market you're targeting, there's a significant difference in the available compute and graphics budgets for your application. During this porting exercise, you're likely leveraging a premium PC, and have had significant compute and graphics budgets available to your app. If you wish to make your app available to a broader audience, you should test and profile your app on [the representative hardware that you wish to target](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
 
-Both [Unity](https://docs.unity3d.com/Manual/Profiler.html) and [Visual Studio](https://docs.microsoft.com/visualstudio/profiling/index) include performance profilers, and both [Microsoft](understanding-performance-for-mixed-reality.md) and [Intel](https://software.intel.com/articles/vr-content-developer-guide) publish guidelines on performance profiling and optimization. There's an extensive discussion of performance available at [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md). Further, there are specific details for Unity under [Performance Recommendations for Unity](performance-recommendations-for-unity.md).
+Both [Unity](https://docs.unity3d.com/Manual/Profiler.html) and [Visual Studio](https://docs.microsoft.com/visualstudio/profiling/index) include performance profilers, and both [Microsoft](understanding-performance-for-mixed-reality.md) and [Intel](https://software.intel.com/articles/vr-content-developer-guide) publish guidelines on performance profiling and optimization. There's an extensive discussion of performance available at [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md). Further, there are specific details for Unity under [Performance Recommendations for Unity](../unity/performance-recommendations-for-unity.md).
 
 ## See also
 * [Input porting guide for Unity](input-porting-guide-for-unity.md)
 * [Windows Mixed Reality minimum PC hardware compatibility guidelines](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
-* [Performance Recommendations for Unity](performance-recommendations-for-unity.md)
+* [Performance Recommendations for Unity](../unity/performance-recommendations-for-unity.md)
