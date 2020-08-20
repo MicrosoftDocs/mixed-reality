@@ -88,8 +88,8 @@ Select "Switch Platform"
 1. First, you must remove or conditionally compile out any other library support specific to a particular VR SDK. Those assets frequently change settings and properties on your project in ways that are incompatible with other VR SDKs, such as Windows Mixed Reality.
     * For example, if your project references the SteamVR SDK, you'll need to update your project to instead use Unity's common VR APIs that support both Windows Mixed Reality and SteamVR.
     * Specific steps for conditionally excluding other VR SDKs are coming soon.
-2. In your Unity project, [target the Windows 10 SDK](holograms-100.md#target-windows-10-sdk)
-3. For each scene, [setup the camera](holograms-100.md#chapter-2---setup-the-camera)
+2. In your Unity project, [target the Windows 10 SDK](../unity/tutorials/holograms-100.md#target-windows-10-sdk)
+3. For each scene, [setup the camera](../unity/tutorials/holograms-100.md#chapter-2---setup-the-camera)
 
 ### Unity step 7: Use the stage to place content on the floor
 
@@ -122,7 +122,7 @@ In script code, you can then call the TryGetGeometry method on you're the UnityE
 
 The system will automatically render the boundary when the user approaches it. Your app does not need to use this polygon to render the boundary itself.
 
-For more information, see the [Coordinate systems in Unity](../../design/coordinate-systems-in-unity.md) page.
+For more information, see the [Coordinate systems in Unity](../unity/coordinate-systems-in-unity.md) page.
 
 Some applications use a rectangle to constrain their interaction. Retrieving the largest inscribed rectangle is not directly supported in the UWP API or Unity. The example code linked to below shows how to find a rectangle within the traced bounds. It's heuristic-based so may not find the optimal solution, however, results are consistent with expectations. Parameters in the algorithm can be tuned to find more precise results at the cost of processing time. The algorithm is in a fork of the Mixed Reality Toolkit that uses the 5.6 preview MRTP version of Unity. This isn't publicly available. The code should be directly usable in 2017.2 and higher versions of Unity. The code will be ported to the current MRTK in the near future.
 
@@ -149,10 +149,10 @@ Each game or application targeting an existing HMD will have a set of inputs tha
 
 Windows Mixed Reality will be available on a broad class of devices, ranging from high end gaming PCs, down to broad market mainstream PCs. Depending on what market you're targeting, there's a significant difference in the available compute and graphics budgets for your application. During this porting exercise, you're likely leveraging a premium PC, and have had significant compute and graphics budgets available to your app. If you wish to make your app available to a broader audience, you should test and profile your app on [the representative hardware that you wish to target](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
 
-Both [Unity](https://docs.unity3d.com/Manual/Profiler.html) and [Visual Studio](https://docs.microsoft.com/visualstudio/profiling/index) include performance profilers, and both [Microsoft](understanding-performance-for-mixed-reality.md) and [Intel](https://software.intel.com/articles/vr-content-developer-guide) publish guidelines on performance profiling and optimization. There's an extensive discussion of performance available at [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md). Further, there are specific details for Unity under [Performance Recommendations for Unity](../unity/performance-recommendations-for-unity.md).
+Both [Unity](https://docs.unity3d.com/Manual/Profiler.html) and [Visual Studio](https://docs.microsoft.com/visualstudio/profiling/index) include performance profilers, and both [Microsoft](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) and [Intel](https://software.intel.com/articles/vr-content-developer-guide) publish guidelines on performance profiling and optimization. There's an extensive discussion of performance available at [Understanding Performance for Mixed Reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md). Further, there are specific details for Unity under [Performance Recommendations for Unity](../unity/performance-recommendations-for-unity.md).
 
 ## See also
 * [Input porting guide for Unity](input-porting-guide-for-unity.md)
 * [Windows Mixed Reality minimum PC hardware compatibility guidelines](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
-* [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
+* [Understanding Performance for Mixed Reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 * [Performance Recommendations for Unity](../unity/performance-recommendations-for-unity.md)

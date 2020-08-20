@@ -197,7 +197,7 @@
           - name: Periodic Table of the Elements 2.0
             href: https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158
           - name: Galaxy Explorer 2.0
-            href: unity/galaxy-explorer-update
+            href: unity/galaxy-explorer-update.md
       - name: HoloLens (1st Gen)
         items: 
           - name: Periodic Table of the Elements
@@ -229,17 +229,17 @@
       - name: Build a chess app with MRTK UX Tools
         items: 
           - name: Getting started
-            href: unreal/unreal-uxt-ch1.md
+            href: unreal/tutorials/unreal-uxt-ch1.md
           - name: Initializing your project
-            href: unreal/unreal-uxt-ch2.md
+            href: unreal/tutorials/unreal-uxt-ch2.md
           - name: Mixed Reality setup
-            href: unreal/unreal-uxt-ch3.md
+            href: unreal/tutorials/unreal-uxt-ch3.md
           - name: Adding interactivity
-            href: unreal/unreal-uxt-ch4.md
+            href: unreal/tutorials/unreal-uxt-ch4.md
           - name: UI and functions
-            href: unreal/unreal-uxt-ch5.md
+            href: unreal/tutorials/unreal-uxt-ch5.md
           - name: Packaging and deploying
-            href: unreal/unreal-uxt-ch6.md
+            href: unreal/tutorials/unreal-uxt-ch6.md
   - name: Core building blocks
     items: 
       - name: Gaze input in Unreal 
@@ -361,7 +361,7 @@
         - name: Custom Holographic Remoting data channels
           href: platform-capabilities-and-apis/holographic-remoting-custom-data-channels.md 
         - name: Secure Connection with Holographic Remoting 
-          href: platform-capabilities-and-apis/holographic-remoting-secure-connection. 
+          href: platform-capabilities-and-apis/holographic-remoting-secure-connection. md
         - name: Troubleshooting and limitations
           href: platform-capabilities-and-apis/holographic-remoting-troubleshooting.md
         - name: Version history 
@@ -387,7 +387,7 @@
         - name: Understanding performance for Mixed Reality
           href: platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md 
         - name: Performance recommendations for Unity 
-          href: platform-capabilities-and-apis/performance-recommendations-for-unity.md 
+          href: unity/performance-recommendations-for-unity.md 
         - name: Using Visual Studio to deploy and debug
           href: platform-capabilities-and-apis/using-visual-studio.md 
         - name: Testing your app on HoloLens
@@ -413,7 +413,7 @@
 - name: Porting apps
   items:
   - name: Get your existing app ready for HoloLens 2
-    href: porting-apps/mrtk-porting-guide.md
+    href: unity/mrtk-porting-guide.md
   - name: Porting guide for immersive apps
     href: porting-apps/porting-guides.md
   - name: Input porting guide for Unity

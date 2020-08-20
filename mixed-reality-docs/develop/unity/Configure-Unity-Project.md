@@ -35,7 +35,7 @@ The first setting you need to change for WMR is the project platform:
 ![Unity XR settings](images/unity-uwp-settings.png)<br>
 *Unity XR settings*
 
-After the platform is configured correctly, you need to let Unity know that your app should create an [immersive view](app-views.md) instead of a 2D view when exported:
+After the platform is configured correctly, you need to let Unity know that your app should create an [immersive view](../../design/app-views.md) instead of a 2D view when exported:
 1. From the **Build Settings...** window, open **Player Settings...**
 2. Select the **Settings for Universal Windows Platform** tab and expand the **XR Settings** group
 3. In the **XR Settings** section, check the **Virtual Reality Supported** checkbox to add the **Virtual Reality Devices** list.
@@ -52,7 +52,7 @@ It's recommended that you make the manifest declarations in Unity to include the
 
 |  Capability  |  APIs requiring capability | 
 |----------|----------|
-|  SpatialPerception  |  SurfaceObserver (access to [spatial mapping](spatial-mapping.md) meshes on HoloLens)&mdash;*No capability needed for general spatial tracking of the headset* | 
+|  SpatialPerception  |  SurfaceObserver (access to [spatial mapping](../../design/spatial-mapping.md) meshes on HoloLens)&mdash;*No capability needed for general spatial tracking of the headset* | 
 |  WebCam  |  PhotoCapture and VideoCapture | 
 |  PicturesLibrary / VideosLibrary  |  PhotoCapture or VideoCapture, respectively (when storing the captured content) | 
 |  Microphone  |  VideoCapture (when capturing audio), DictationRecognizer, GrammarRecognizer, and KeywordRecognizer | 
@@ -71,7 +71,7 @@ HoloLens has a mobile-class GPU. If your app is targeting HoloLens, you'll want 
 
 ### Unity camera settings
 
-With **Virtual Reality Supported** checked, the [Unity Camera](camera-in-unity.md) component handles [head tracking and stereoscopic rendering](rendering.md). That means there's no need for you to replace the Main Camera object with a custom camera.
+With **Virtual Reality Supported** checked, the [Unity Camera](camera-in-unity.md) component handles [head tracking and stereoscopic rendering](../../design/rendering.md). That means there's no need for you to replace the Main Camera object with a custom camera.
 
 If your app is targeting HoloLens specifically, you need to change a few settings to optimize for the device's transparent displays. These settings allow your holographic content to show through to the physical world:
 1. In the **Hierarchy**, select the **Main Camera**

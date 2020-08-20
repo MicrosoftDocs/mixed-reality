@@ -9,7 +9,6 @@ keywords: unity, visual studio, export, build, deploy
 ---
 
 
-
 # Exporting and building a Unity Visual Studio solution
 
 If you don't intend on using the system keyboard in your application, our recommendation is to use *D3D* as your application will use slightly less memory and have a slightly faster launch time. If you are using the TouchScreenKeyboard API in your project to use the system keyboard, you need to export as *XAML*.
@@ -53,7 +52,7 @@ Checking the "C# Projects" checkbox when exporting your app from Unity creates a
 
 ## Building and deploying a Unity Visual Studio solution
 
-The remainder of building and deploying apps happens in [Visual Studio](using-visual-studio.md). You will need to specify a Unity build configuration. Unity's naming conventions may differ from what you're usually used to in Visual Studio:
+The remainder of building and deploying apps happens in [Visual Studio](../platform-capabilities-and-apis/using-visual-studio.md). You will need to specify a Unity build configuration. Unity's naming conventions may differ from what you're usually used to in Visual Studio:
 
 |  Configuration  |  Explanation | 
 |----------|----------|

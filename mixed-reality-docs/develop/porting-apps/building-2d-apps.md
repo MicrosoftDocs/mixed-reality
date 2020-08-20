@@ -74,7 +74,7 @@ Now that your UWP app targets "Windows.Universal", let's build your app and run 
 * Make sure you have [installed the HoloLens Emulator](../install-the-tools.md).
 * In Visual Studio, select the **x86** build configuration for your app
 
-  ![x86 build configuration in Visual Studio](images/x86setting.png)<br>
+  ![x86 build configuration in Visual Studio](../platform-capabilities-and-apis/images/x86setting.png)<br>
 * Select **HoloLens Emulator** in the deployment target drop-down menu
 
   ![HoloLens Emulator in deployment target list](images/deployemulator-500px.png)<br>
@@ -107,7 +107,7 @@ These steps will walk you through debugging your UWP app using the Visual Studio
 
 Now that your UWP app is running on immersive headsets and/or HoloLens as a 2D hologram, next we'll make sure it looks beautiful. Here are some things to consider:
 * Windows Mixed Reality will run all 2D apps at a fixed resolution and DPI that equates to 853x480 effective pixels. Consider if your design needs refinement at this scale and review the design guidance below to improve your experience on HoloLens and immersive headsets.
-* Windows Mixed Reality [does not support](../../design/app-model.md) 2D live tiles. If your core functionality is showing information on a live tile, consider moving that information back into your app or explore [3D app launchers](3d-app-launcher-design-guidance.md).
+* Windows Mixed Reality [does not support](../../design/app-model.md) 2D live tiles. If your core functionality is showing information on a live tile, consider moving that information back into your app or explore [3D app launchers](../../distribute/3d-app-launcher-design-guidance.md).
 
 ### 2D app view resolution and scale factor
 
@@ -151,7 +151,7 @@ The [app model](../../design/app-model.md) for mixed reality is designed to use 
 
 ### Test your 2D app's design
 
-It is important to test your app to make sure the text is readable, the buttons are targetable, and the overall app looks correct. You can [test](testing-your-app-on-hololens.md) on a desktop headset, a HoloLens, an emulator, or a touch device with resolution set to 1280x720 @150%.
+It is important to test your app to make sure the text is readable, the buttons are targetable, and the overall app looks correct. You can [test](../platform-capabilities-and-apis/testing-your-app-on-hololens.md) on a desktop headset, a HoloLens, an emulator, or a touch device with resolution set to 1280x720 @150%.
 
 ## New input possibilities
 
@@ -170,7 +170,7 @@ Here are the high level concepts/scenarios you should understand for input when 
 
 ## Publish and Maintain your Universal app
 
-Once your app is up and running, package your app to [submit it to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md).
+Once your app is up and running, package your app to [submit it to the Microsoft Store](../../distribute/submitting-an-app-to-the-microsoft-store.md).
 
 ## See also
 * [App model](../../design/app-model.md)
@@ -178,4 +178,4 @@ Once your app is up and running, package your app to [submit it to the Microsoft
 * [Motion controllers](../../design/motion-controllers.md)
 * [Voice input](../../design/voice-input.md)
 * [Submitting an app to the Microsoft Store](submitting-an-app-to-the-microsoft-store.md)
-* [Using the HoloLens emulator](using-the-hololens-emulator.md)
+* [Using the HoloLens emulator](../platform-capabilities-and-apis/using-the-hololens-emulator.md)

@@ -15,7 +15,7 @@ keywords: Unity, focus point, focus plane, stabilization plane, stabilization po
 **Namespace:** *UnityEngine.XR.WSA*<br>
 **Type**: *HolographicSettings*
 
-The [focus point](hologram-stability.md#reprojection) can be set to provide HoloLens a hint about how to best perform stabilization on the holograms currently being displayed.
+The [focus point](../../design/hologram-stability.md#reprojection) can be set to provide HoloLens a hint about how to best perform stabilization on the holograms currently being displayed.
 
 If you want to set the Focus Point in Unity, it needs to be set every frame using *HolographicSettings.SetFocusPointForFrame()*. If the Focus Point is not set for a frame, the default stabilization plane will be used.
 
@@ -48,4 +48,4 @@ void Update()
 Note that the simple code above may end up reducing hologram stability if the focused object ends up behind the user.  This is why you should generally set "Enable Depth Buffer Sharing" instead of manually specifying a focus point.
 
 ### See also
-* [Stabilization plane](hologram-stability.md#reprojection)
+* [Stabilization plane](../../design/hologram-stability.md#reprojection)

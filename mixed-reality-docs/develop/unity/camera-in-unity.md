@@ -12,7 +12,7 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, holograph
 
 When you wear a mixed reality headset, it becomes the center of your holographic world. The Unity [Camera](https://docs.unity3d.com/Manual/class-Camera.html) component will automatically handle stereoscopic rendering and will follow your head movement and rotation when your project has "Virtual Reality Supported" selected with "Windows Mixed Reality" as the device (in the Other Settings section of the Windows Store Player Settings). This may be listed as "Windows Holographic" in older versions of Unity.
 
-However, to fully optimize visual quality and [hologram stability](hologram-stability.md), you should set the camera settings described below.
+However, to fully optimize visual quality and [hologram stability](../platform-capabilities-and-apis/hologram-stability.md), you should set the camera settings described below.
 
 >[!NOTE]
 >These settings need to be applied to the Camera in each scene of your app.
@@ -29,8 +29,8 @@ You can also manually configure the project without MRTK with the guide in the s
 
 The default settings on the Unity Camera component are for traditional 3D applications which need a skybox-like background as they don't have a real world.
 
-* When running on an **[immersive headset](immersive-headset-hardware-details.md)**, you are rendering everything the user sees, and so you'll likely want to keep the skybox.
-* However, when running on a **holographic headset** like [HoloLens](hololens-hardware-details.md), the real world should appear behind everything the camera renders. To do this, set the camera background to be transparent (in HoloLens, black renders as transparent) instead of a Skybox texture:
+* When running on an **[immersive headset](../../discover/immersive-headset-hardware-details.md)**, you are rendering everything the user sees, and so you'll likely want to keep the skybox.
+* However, when running on a **holographic headset** like [HoloLens](../../hololens-hardware-details.md), the real world should appear behind everything the camera renders. To do this, set the camera background to be transparent (in HoloLens, black renders as transparent) instead of a Skybox texture:
     1. Select the Main Camera in the Hierarchy panel
     2. In the Inspector panel, find the Camera component and change the Clear Flags dropdown from Skybox to Solid Color
     3. Select the Background color picker and change the RGBA values to (0, 0, 0, 0)
@@ -49,10 +49,10 @@ It will be easier to lay out your app if you imagine the starting position of th
 
 ## Clip planes
 
-Rendering content too close to the user can be uncomfortable in mixed reality. You can adjust the [near and far clip planes](hologram-stability.md#hologram-render-distances) on the Camera component.
+Rendering content too close to the user can be uncomfortable in mixed reality. You can adjust the [near and far clip planes](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances) on the Camera component.
 
 1. Select the Main Camera in the Hierarchy panel
-2. In the Inspector panel, find the Camera component Clipping Planes and change the Near textbox from 0.3 to .85. Content rendered even closer can lead to user discomfort and should be avoided per the [render distance guidelines](hologram-stability.md#hologram-render-distances).
+2. In the Inspector panel, find the Camera component Clipping Planes and change the Near textbox from 0.3 to .85. Content rendered even closer can lead to user discomfort and should be avoided per the [render distance guidelines](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances).
 
 ## Multiple Cameras
 
@@ -60,7 +60,7 @@ When there are multiple Camera components in the scene, Unity knows which camera
 
 ## Recentering a seated experience
 
-If you're building a [seated-scale experience](coordinate-systems.md), you can recenter Unity's world origin at the user's current head position by calling the **[XR.InputTracking.Recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html)** method.
+If you're building a [seated-scale experience](../../design/coordinate-systems.md), you can recenter Unity's world origin at the user's current head position by calling the **[XR.InputTracking.Recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html)** method.
 
 ## Reprojection modes
 
@@ -90,5 +90,5 @@ Providing a depth buffer to Windows can improve visual quality so long as Window
 
 ## See also
 
-* [Hologram stability](hologram-stability.md)
+* [Hologram stability](../platform-capabilities-and-apis/hologram-stability.md)
 * [MixedRealityToolkit Main Camera.prefab](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Input/Prefabs)
