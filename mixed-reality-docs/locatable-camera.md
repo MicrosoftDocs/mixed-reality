@@ -33,6 +33,7 @@ HoloLens includes a world-facing camera mounted on the front of the device, whic
 * Auto-focus photo/video (PV) camera with auto white balance, auto exposure, and full image processing pipeline.
 * White Privacy LED facing the world will illuminate whenever the camera is active.
 * HoloLens 2 supports different camera profiles. Learn how to [discover and select camera capabilities](https://docs.microsoft.com//windows/uwp/audio-video-camera/camera-profiles).
+* Select video conferencing profile provides better performance on HoloLens 2. Learn how to [select video conferencing profile](https://github.com/microsoft/Windows-universal-samples/blob/master/Samples/HolographicMixedRealityCapture/cpp/MediaCaptureManager.cpp).
 * The camera supports the following profiles and resolutions (all video modes are 16:9 aspect ratio):
   
   | Profile                                         | Video     | Preview   | Still     | Frame rates | Horizontal Field of View (H-FOV) | Suggested usage                             |
