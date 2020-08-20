@@ -40,7 +40,7 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 
 ## Connecting over Wi-Fi
 
-1. [Connect your HoloLens to Wi-Fi](connecting-to-wi-fi-on-hololens.md).
+1. [Connect your HoloLens to Wi-Fi](../../connecting-to-wi-fi-on-hololens.md).
 2. Look up your device's IP address by either:
    * Going to **Settings > Network & Internet > Wi-Fi > Advanced Options**.
    * Going to **Settings > Network & Internet** and selecting **Hardware properties**.
@@ -290,7 +290,7 @@ Use the file explorer to browse, upload, and download files. You can work with f
 ### Kiosk Mode
 
 >[!NOTE]
->Kiosk mode is only available with the [Microsoft HoloLens Commercial Suite](commercial-features.md).
+>Kiosk mode is only available with the [Microsoft HoloLens Commercial Suite](../../commercial-features.md).
 
 Check the [Set up HoloLens in kiosk mode](https://docs.microsoft.com/hololens/hololens-kiosk#set-up-kiosk-mode-using-the-windows-device-portal-windows-10-version-1607-and-version-1803) article in Windows IT Pro Center for up-to-date instructions on enabling kiosk mode via Windows Device Portal.
 
