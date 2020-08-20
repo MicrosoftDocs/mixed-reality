@@ -105,8 +105,8 @@ You can find  other example scenes in [Mixed Reality Toolkit GitHub](https://git
 
 ## See also
 
-* [Eye-based interaction] (eye-gaze-interaction.md)
-* [Eye tracking on HoloLens 2] (eye-tracking.md)
+* [Eye-based interaction](eye-gaze-interaction.md)
+* [Eye tracking on HoloLens 2](eye-tracking.md)
 * [Gaze and commit](gaze-and-commit.md)
 * [Hands - Direct manipulation](direct-manipulation.md)
 * [Hands - Gestures](gaze-and-commit.md#composite-gestures)
