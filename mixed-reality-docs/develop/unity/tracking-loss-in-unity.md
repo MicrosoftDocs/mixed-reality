@@ -79,4 +79,4 @@ private void WorldManager_OnPositionalLocatorStateChanged(PositionalLocatorState
 ```
 
 ## See also
-* [Handling tracking loss in DirectX](coordinate-systems-in-directx.md#handling-tracking-loss)
+* [Handling tracking loss in DirectX](../native/coordinate-systems-in-directx.md#handling-tracking-loss)

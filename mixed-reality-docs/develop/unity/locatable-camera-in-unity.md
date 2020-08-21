@@ -9,12 +9,11 @@ keywords: photo, video, hololens, camera, unity, locatable
 ---
 
 
-
 # Locatable camera in Unity
 
 ## Enabling the capability for Photo Video Camera
 
-The "WebCam" capability must be declared for an app to use the [camera](../../design/locatable-camera.md).
+The "WebCam" capability must be declared for an app to use the [camera](../platform-capabilities-and-apis/locatable-camera.md).
 1. In the Unity Editor, go to the player settings by navigating to the "Edit > Project Settings > Player" page
 2. Click the "Windows Store" tab
 3. In the "Publishing Settings > Capabilities" section, check the **WebCam** and **Microphone** capabilities
@@ -305,4 +304,4 @@ void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
     * Ensure the **WebCam** capability is specified in your project.
 
 ## See Also
-* [Locatable camera](../../design/locatable-camera.md)
+* [Locatable camera](../platform-capabilities-and-apis/locatable-camera.md)

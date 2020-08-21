@@ -60,7 +60,7 @@ The user can change the surface type by air tapping the buttons on the bottom of
 
 By default, holograms will be placed in the location where the user is gazing at the moment the application is launched. This sometimes leads to unwanted result such as holograms being placed behind a wall or in the middle of a table. A fitbox allows a user to use gaze to determine the location where the hologram will be placed. It is made with a simple PNG image texture which can be easily customized with your own images or 3D objects.
 
-![Fitbox](images/450px-periodictable-fitbox.jpg)
+![Fitbox](../../design/images/450px-periodictable-fitbox.jpg)
 
 ## Technical details
 

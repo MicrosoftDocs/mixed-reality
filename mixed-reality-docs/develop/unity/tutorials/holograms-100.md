@@ -19,7 +19,7 @@ This tutorial will walk you through creating a basic mixed reality app built wit
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td>MR Basics 100: Getting started with Unity</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -27,7 +27,7 @@ This tutorial will walk you through creating a basic mixed reality app built wit
 
 ## Prerequisites
 
-* A Windows 10 PC configured with the correct [tools installed](install-the-tools.md).
+* A Windows 10 PC configured with the correct [tools installed](../../install-the-tools.md).
 
 ## Chapter 1 - Create a New Project
 
@@ -72,7 +72,7 @@ Second, the default Camera background needs some thought.
 
 Third, let us consider the near clip plane in Unity and prevent objects from being rendered too close to the users eyes as a user approaches an object or an object approaches a user.
 
-**For HoloLens applications**, the near clip plane can be set to the [HoloLens recommended](camera-in-unity.md#clip-planes) 0.85 meters.
+**For HoloLens applications**, the near clip plane can be set to the [HoloLens recommended](../camera-in-unity.md#clip-planes) 0.85 meters.
 
 1. With the **Main Camera** still selected in the **Hierarchy** panel, find the **Camera** component in the **Inspector** panel and change the **Near Clip Plane** field from the default **0.3** to the HoloLens recommended **0.85**.
 
@@ -94,7 +94,7 @@ In this chapter, we will set some Unity project settings that help us target the
 
 ![Unity quality settings for HoloLens](images/qualitysettings.png)
 
-Since maintaining high framerate on HoloLens is so important, we want the quality settings tuned for fastest performance. For more detailed performance information, [Performance recommendations for Unity](performance-recommendations-for-unity.md).
+Since maintaining high framerate on HoloLens is so important, we want the quality settings tuned for fastest performance. For more detailed performance information, [Performance recommendations for Unity](../performance-recommendations-for-unity.md).
 
 1. Select **Edit > Project Settings > Quality**
 2. Select the **dropdown** under the **Universal Windows Platform** logo and select **Very Low**. You'll know the setting is applied correctly when the box in the Universal Windows Platform column and **Very Low** row is green.
@@ -105,9 +105,9 @@ Since maintaining high framerate on HoloLens is so important, we want the qualit
 
 **Target Windows Holographic SDK**
 
-![Target Windows Holographic SDK](images/xrsettings.png)
+![Target Windows Holographic SDK](../images/xrsettings.png)
 
-We need to let Unity know that the app we are trying to export should create an [immersive view](app-views.md) instead of a 2D view. We do this by enabling Virtual Reality support on Unity targeting the Windows 10 SDK.
+We need to let Unity know that the app we are trying to export should create an [immersive view](../../../design/app-views.md) instead of a 2D view. We do this by enabling Virtual Reality support on Unity targeting the Windows 10 SDK.
 
 1. Go to **Edit > Project Settings > Player**.
 2. In the **Inspector Panel** for Player Settings, select the **Universal Windows Platform** icon.
@@ -145,7 +145,7 @@ Now that we have created our cube, it is time to do a quick check in device. You
 
 ### For HoloLens use Unity Remoting
 
-1. On your HoloLens, install and run the [Holographic Remoting Player](holographic-remoting-player.md), available from the Windows Store. Launch the application on the device, and it will enter a waiting state and show the IP address of the device. Note down the IP.
+1. On your HoloLens, install and run the [Holographic Remoting Player](../../platform-capabilities-and-apis/holographic-remoting-player.md), available from the Windows Store. Launch the application on the device, and it will enter a waiting state and show the IP address of the device. Note down the IP.
 2. Open **Window > XR > Holographic Emulation**.
 3. Change **Emulation Mode** from **None** to **Remote to Device**.
 4. In **Remote Machine**, enter the IP address of your HoloLens noted earlier.
@@ -199,7 +199,7 @@ The instructions differ for deploying to a device versus the emulator. Follow th
 2. Enter the IP address of your mixed reality device and change **Authentication Mode** to Universal (Unencrypted Protocol) for HoloLens and **Windows** for other devices.
 3. Click **Debug > Start without debugging**.
 
-**For HoloLens**, If this is the first time deploying to your device, you will need to pair [using Visual Studio](using-visual-studio.md).
+**For HoloLens**, If this is the first time deploying to your device, you will need to pair [using Visual Studio](../../platform-capabilities-and-apis/using-visual-studio.md).
 
 ### Deploy to mixed reality device over USB
 
@@ -220,7 +220,7 @@ Now that your app is deployed, try moving all around the cube and observe that i
 
 ## See also
 
-* [Unity development overview](unity-development-overview.md)
-* [Best practices for working with Unity and Visual Studio](best-practices-for-working-with-unity-and-visual-studio.md)
+* [Unity development overview](../unity-development-overview.md)
+* [Best practices for working with Unity and Visual Studio](../best-practices-for-working-with-unity-and-visual-studio.md)
 * [MR Basics 101](holograms-101.md)
 * [MR Basics 101E](holograms-101e.md)

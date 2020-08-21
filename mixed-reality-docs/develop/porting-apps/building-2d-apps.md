@@ -9,7 +9,6 @@ keywords: 2D app, UWP, flat app, HoloLens, immersive headset, app model, back bu
 ---
 
 
-
 # Updating 2D UWP apps for mixed reality
 
 Windows Mixed Reality enables a user to see holograms as if they are right around you, in your physical or digital world. At its core, both HoloLens and the Desktop PCs you attach immersive headset accessories to are Windows 10 devices; this means that you're able to run almost all of the Universal Windows Platform (UWP) apps in the Store as 2D apps.
@@ -177,5 +176,5 @@ Once your app is up and running, package your app to [submit it to the Microsoft
 * [Head-gaze and commit](../../design/gaze-and-commit.md)
 * [Motion controllers](../../design/motion-controllers.md)
 * [Voice input](../../design/voice-input.md)
-* [Submitting an app to the Microsoft Store](../.../distribute/submitting-an-app-to-the-microsoft-store.md)
+* [Submitting an app to the Microsoft Store](../../distribute/submitting-an-app-to-the-microsoft-store.md)
 * [Using the HoloLens emulator](../platform-capabilities-and-apis/using-the-hololens-emulator.md)

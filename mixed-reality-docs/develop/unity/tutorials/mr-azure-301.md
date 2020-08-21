@@ -33,7 +33,7 @@ This course will teach you how to get the results from the Translator Service in
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td> MR and Azure 301: Language translation</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -45,16 +45,16 @@ This course will teach you how to get the results from the Translator Service in
 ## Prerequisites
 
 > [!NOTE]
-> This tutorial is designed for developers who have basic experience with Unity and C#. Please also be aware that the prerequisites and written instructions within this document represent what has been tested and verified at the time of writing (May 2018). You are free to use the latest software, as listed within the [install the tools](install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you'll find in newer software than what's listed below.
+> This tutorial is designed for developers who have basic experience with Unity and C#. Please also be aware that the prerequisites and written instructions within this document represent what has been tested and verified at the time of writing (May 2018). You are free to use the latest software, as listed within the [install the tools](../../install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you'll find in newer software than what's listed below.
 
 We recommend the following hardware and software for this course:
 
 - A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
-- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist)
-- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist)
-- [Unity 2017.4](install-the-tools.md#installation-checklist)
-- [Visual Studio 2017](install-the-tools.md#installation-checklist)
-- A [Windows Mixed Reality immersive (VR) headset](immersive-headset-hardware-details.md) or [Microsoft HoloLens](hololens-hardware-details.md) with Developer mode enabled
+- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](../../install-the-tools.md#installation-checklist)
+- [The latest Windows 10 SDK](../../install-the-tools.md#installation-checklist)
+- [Unity 2017.4](../../install-the-tools.md#installation-checklist)
+- [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
+- A [Windows Mixed Reality immersive (VR) headset](../../../discover/immersive-headset-hardware-details.md) or [Microsoft HoloLens](../../../hololens-hardware-details.md) with Developer mode enabled
 - A set of headphones with a built-in microphone (if the headset doesn't have a built-in mic and speakers)
 - Internet access for Azure setup and translation retrieval
 

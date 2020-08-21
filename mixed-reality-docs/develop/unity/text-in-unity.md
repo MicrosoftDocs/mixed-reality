@@ -8,6 +8,7 @@ ms.topic: article
 keywords: Windows Mixed Reality, design, Controls, font, typography, ui, ux
 ---
 
+
 # Text in Unity
 
 Text is one of the most important components in holographic apps. To display text in Unity, there are three types of text components you can use — UI Text, 3D Text Mesh, and Text Mesh Pro. By default, UI Text and 3D Text Mesh appear blurry and are too big. You need to tweak a few variables to get sharp, high-quality text that has a manageable size in HoloLens. By applying a scaling factor to get proper dimensions when using the UI Text and 3D Text Mesh components, you can achieve better rendering quality.
@@ -25,7 +26,7 @@ Unity assumes that all new elements added to a scene are 1 Unity Unit in size, o
 <br>
 Most visual designers use points to define font sizes in the real world. There are about 2835 (2,834.645666399962) points in 1 meter. Based on the point system conversion to 1 meter and Unity's default Text Mesh font size of 13, the simple math of 13 divided by 2835 equals 0.0046 (0.004586111116 to be exact) which provides a good standard scale to start with (some may wish to round to 0.005). Scaling the text object or container to these values will not only allow for the 1:1 conversion of font sizes in a design program, but also provides a standard so you can maintain consistency throughout your experience.
 
-![Unity 3D Text Mesh with different font sizes](images/Text_In_Unity_Measurements1.png)<br>
+![Unity 3D Text Mesh with different font sizes image](images/Text_In_Unity_Measurements1.png)<br>
 *Scaling values for the Unity 3D Text and UI Text*
 
 <br>
@@ -48,7 +49,7 @@ When adding a UI or canvas based text element to a scene, the size disparity is 
 
 With Unity's Text Mesh Pro, you can secure the text rendering quality. It supports crisp text outlines regardless of the distance using the [Signed Distance Field (SDF)](https://steamcdn-a.akamaihd.net/apps/valve/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf) technique. Using the same calculation method that we used above for the 3D Text Mesh and UI Text, we can find the proper scaling values to use with conventional typographic points. Since the default 3D Text Mesh Pro font with the size of 36 has a bounding size of 2.5 Unity units (2.5m), we can use a scaling value of 0.005 to get the point size. The Text Mesh Pro under the UI menu has a default bounding size of 25 Unity units (25m). This gives us 0.0005 for the scaling value.
 
-![Unity 3D Text Mesh with different font sizes](images/Text_In_Unity_Measurements2.png)<br>
+![Unity 3D Text Mesh with different font size measurements](images/Text_In_Unity_Measurements2.png)<br>
 *Scaling values for the Unity 3D Text and UI Text*
 
 ## Recommended text size
@@ -97,6 +98,6 @@ Unity's default font material does not support occlusion. Because of this, you w
 
 ## See also
 * [Text Prefab in the MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Prefabs/Text)
-* [Typography](typography.md)
+* [Typography](../../design/typography.md)
 
  

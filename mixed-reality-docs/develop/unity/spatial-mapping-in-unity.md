@@ -52,7 +52,7 @@ How to enable the SpatialPerception capability:
 2. Click on the **"Windows Store"** tab
 3. Expand **"Publishing Settings"** and check the **"SpatialPerception"** capability in the **"Capabilities"** list
 
-Note that if you have already exported your Unity project to a Visual Studio solution, you will need to either export to a new folder or manually [set this capability in the AppxManifest in Visual Studio](../../design/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).
+Note that if you have already exported your Unity project to a Visual Studio solution, you will need to either export to a new folder or manually [set this capability in the AppxManifest in Visual Studio](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).
 
 Spatial mapping also requires a MaxVersionTested of at least 10.0.10586.0:
 1. In Visual Studio, right click on **Package.appxmanifest** in the Solution Explorer and select **View Code**

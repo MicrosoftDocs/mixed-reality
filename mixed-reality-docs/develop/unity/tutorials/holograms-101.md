@@ -19,7 +19,7 @@ keywords: mixed reality, Windows Mixed Reality, HoloLens, hologram, academy, tut
 
 >[!VIDEO https://www.youtube.com/embed/XKIIEC5BMWg]
 
-This tutorial will walk you through a complete project, built in Unity, that demonstrates core Windows Mixed Reality features on HoloLens including [gaze](gaze-and-commit.md), [gestures](gaze-and-commit.md#composite-gestures), [voice input](voice-input.md), [spatial sound](spatial-sound.md) and [spatial mapping](spatial-mapping.md).
+This tutorial will walk you through a complete project, built in Unity, that demonstrates core Windows Mixed Reality features on HoloLens including [gaze](../../../design/gaze-and-commit.md), [gestures](../../../design/gaze-and-commit.md#composite-gestures), [voice input](../../../design/voice-input.md), [spatial sound](spatial-sound.md) and [spatial mapping](../../../design/spatial-mapping.md).
 
 The tutorial will take approximately 1 hour to complete.
 
@@ -27,7 +27,7 @@ The tutorial will take approximately 1 hour to complete.
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td>MR Basics 101: Complete project with device</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>
@@ -37,8 +37,8 @@ The tutorial will take approximately 1 hour to complete.
 
 ### Prerequisites
 
-* A Windows 10 PC configured with the correct [tools installed](install-the-tools.md).
-* A HoloLens device [configured for development](using-visual-studio.md#enabling-developer-mode).
+* A Windows 10 PC configured with the correct [tools installed](../../install-the-tools.md).
+* A HoloLens device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).
 
 ### Project files
 
@@ -117,7 +117,7 @@ In this chapter, we'll setup our first Unity project and step through the build 
   * Leave the **Authentication Mode** set to **Universal**.
   * Click **Select**
 
-* Click **Debug > Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](using-visual-studio.md#pairing-your-device).
+* Click **Debug > Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](../../platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
 
 * The Origami project will now build, deploy to your HoloLens, and then run.
 * Put on your HoloLens and look around to see your new holograms.
@@ -126,7 +126,7 @@ In this chapter, we'll setup our first Unity project and step through the build 
 
 >[!VIDEO https://www.youtube.com/embed/MSO2BoFSQbM]
 
-In this chapter, we are going to introduce the first of three ways of interacting with your holograms -- [gaze](gaze-and-commit.md).
+In this chapter, we are going to introduce the first of three ways of interacting with your holograms -- [gaze](../../../design/gaze-and-commit.md).
 
 ### Objectives
 
@@ -202,7 +202,7 @@ public class WorldCursor : MonoBehaviour
 
 >[!VIDEO https://www.youtube.com/embed/kW3ThJ2MbvQ]
 
-In this chapter, we'll add support for [gestures](gaze-and-commit.md#composite-gestures). When the user selects a paper sphere, we'll make the sphere fall by turning on gravity using Unity's physics engine.
+In this chapter, we'll add support for [gestures](../../../design/gaze-and-commit.md#composite-gestures). When the user selects a paper sphere, we'll make the sphere fall by turning on gravity using Unity's physics engine.
 
 ### Objectives
 
@@ -313,7 +313,7 @@ public class SphereCommands : MonoBehaviour
 
 >[!VIDEO https://www.youtube.com/embed/1-Aq0VVtHM8]
 
-In this chapter, we'll add support for two [voice commands](voice-input.md): "Reset world" to return the dropped spheres to their original location, and "Drop sphere" to make the sphere fall.
+In this chapter, we'll add support for two [voice commands](../../../design/voice-input.md): "Reset world" to return the dropped spheres to their original location, and "Drop sphere" to make the sphere fall.
 
 ### Objectives
 
@@ -436,7 +436,7 @@ public class SphereCommands : MonoBehaviour
 
 >[!VIDEO https://www.youtube.com/embed/Aj4de5Ncbfo]
 
-In this chapter, we'll add music to the app, and then trigger sound effects on certain actions. We'll be using [spatial sound](spatial-sound.md) to give sounds a specific location in 3D space.
+In this chapter, we'll add music to the app, and then trigger sound effects on certain actions. We'll be using [spatial sound](../../../design/spatial-sound.md) to give sounds a specific location in 3D space.
 
 ### Objectives
 
@@ -545,7 +545,7 @@ public class SphereSounds : MonoBehaviour
 
 >[!VIDEO https://www.youtube.com/embed/Pkt1_wNLLXY]
 
-Now we are going to use [spatial mapping](spatial-mapping.md) to place the game board on a real object in the real world.
+Now we are going to use [spatial mapping](../../../design/spatial-mapping.md) to place the game board on a real object in the real world.
 
 ### Objectives
 
@@ -693,8 +693,8 @@ You are now ready to start creating your own holographic experience!
 ## See also
 
 * [MR Basics 101E: Complete project with emulator](holograms-101e.md)
-* [Gaze](gaze-and-commit.md)
-* [Head-gaze and commit](gaze-and-commit.md)
-* [Voice input](voice-input.md)
-* [Spatial sound](spatial-sound.md)
-* [Spatial mapping](spatial-mapping.md)
+* [Gaze](../../../design/gaze-and-commit.md)
+* [Head-gaze and commit](../../../design/gaze-and-commit.md)
+* [Voice input](../../../design/voice-input.md)
+* [Spatial sound](../../../design/spatial-sound.md)
+* [Spatial mapping](../../../design/spatial-mapping.md)
