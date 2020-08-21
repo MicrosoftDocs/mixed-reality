@@ -39,7 +39,7 @@ Once you’re connected, click the drop-down arrow to the right of the **Play** 
 >If this is your first time packaging an Unreal app for HoloLens, you'll need to download supporting files from the Epic Launcher. 
 >- Go to the **Library** tab in the Epic Games Launcher, select the dropdown arrow next to **Launch** >and click **Options**. 
 >- Under **Target Platforms**, select **HoloLens 2** and click **Apply**. 
->![Project Settings - Description](images/unreal-uxt/6-installationoptions.PNG)
+>![Project Setting options - Description](images/unreal-uxt/6-installationoptions.PNG)
 
 1.	Go to **Edit > Project Settings**. 
     * Add a project name under **Project > Description > About > Project Name**. 

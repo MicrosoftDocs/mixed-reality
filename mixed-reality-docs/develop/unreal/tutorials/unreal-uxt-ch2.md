@@ -135,7 +135,7 @@ The objects you've created are default grey, which isn't much fun to look at. Ad
 
 2. Click **Add Component > Scene** from the **Components** panel and name it **Root**. Notice that **Root** shows up as a child of **DefaultSceneRoot** in the screenshot below:
 
-![Replacing the root](images/unreal-uxt/2-root-blueprint.PNG)
+![Replacing the root in blueprint](images/unreal-uxt/2-root-blueprint.PNG)
 
 
 3. Click-and-drag **Root** onto **DefaultSceneRoot** to replace it and get rid of the sphere in the viewport. 

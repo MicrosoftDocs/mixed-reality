@@ -43,7 +43,7 @@ For more details, see:
 
 ## Distance-based attenuation
 Unity's default distance-based decay has a minimum distance of 1 meter and a maximum distance of 500 meters, with a logarithmic rolloff. These settings may work for your scenario, or you may find that sources attenuate too quickly or too slowly. For more details, see:
-* [Sound design in mixed reality](tutorials/spatial-sound-design.md) for recommended settings.
+* [Sound design in mixed reality](../../design/spatial-sound-design.md) for recommended settings.
 * [Unity's audio source documentation](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html) for instructions on setting these curves.
 
 ## Reverb

@@ -17,7 +17,7 @@ keywords: mixed reality, Windows Mixed Reality, HoloLens, hologram, academy, tut
 
  >[!VIDEO https://www.youtube.com/embed/Xzm8_s05mm8]
 
-This tutorial will walk you through a complete project, built in Unity, that demonstrates core Windows Mixed Reality features on HoloLens including [gaze](../../../design/gaze-and-commit.md), [gestures](../../../design/gaze-and-commit.md#composite-gestures), [voice input](voice-input.md), [spatial sound](../../../design/spatial-sound.md) and [spatial mapping](../../../design/spatial-mapping.md). The tutorial will take approximately 1 hour to complete.
+This tutorial will walk you through a complete project, built in Unity, that demonstrates core Windows Mixed Reality features on HoloLens including [gaze](../../../design/gaze-and-commit.md), [gestures](../../../design/gaze-and-commit.md#composite-gestures), [voice input](../../../design/voice-input.md), [spatial sound](../../../design/spatial-sound.md) and [spatial mapping](../../../design/spatial-mapping.md). The tutorial will take approximately 1 hour to complete.
 
 ## Device support
 

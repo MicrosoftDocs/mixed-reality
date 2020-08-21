@@ -57,7 +57,7 @@ As you can expect, type sizes that we use on a PC or a tablet device (typically 
 
 For the near interaction at 0.45m (45cm), the minimum legible font's viewing angle and the height are 0.4°-0.5° / 3.14–3.9mm. It is about 9-12pt with the scaling factor introduced above.
 
-![Near and far interaction range](images/typography-distance-1000px.jpg)
+![Near and far interaction range](../../design/images/typography-distance-1000px.jpg)
 *Content at near and far interaction range*
 
 ### The minimum legible font size
@@ -76,7 +76,7 @@ For the near interaction at 0.45m (45cm), the minimum legible font's viewing ang
 Segoe UI (the default font for Windows) works well in most cases. However, avoid using light or semi light font families in small size since thin vertical strokes will vibrate and it will degrade the legibility. Modern fonts with enough stroke thickness work well. For example, Helvetica and Arial look gorgeous and are very legible in HoloLens with regular or bold weights.
 
 
-![Viewing Angle](images/Text_In_Unity_ViewingAngle.jpg)
+![Viewing Angle](../../design/images/Text_In_Unity_ViewingAngle.jpg)
 *Viewing distance, angle, and text height*
 
 ## Text with Mixed Reality Toolkit v2
