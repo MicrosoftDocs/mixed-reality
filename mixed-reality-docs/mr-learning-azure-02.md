@@ -1,5 +1,5 @@
 ---
-title: Azure Cloud Tutorials - 2. Integrating Azure storage
+title: Azure Cloud Tutorials - 2. Integrating Azure Storage
 description: Complete this course to learn how to implement Azure Table Storage and Azure Blob Storage within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
@@ -9,21 +9,21 @@ keywords: mixed reality, unity, tutorial, hololens, hololens 2, azure storage
 ms.localizationpriority: high
 ---
 
-# 2. Integrating Azure storage
+# 2. Integrating Azure Storage
 
 In this tutorial, you will learn how to save entity data to Azure Table storage and thumbnail images to Azure Blob storage. This feature will allow us to store and retrieve *Tracked Objects* with data like ID, Name, Thumbnail Image, etc. across sessions and devices to the cloud.
 
 ## Objectives
 
-* Learn the basics about Azure storage
+* Learn the basics about Azure Storage
 * Learn how to store, modify and retrieve data from Table storage
 * Learn how to store and delete images from Blob storage
 
-## Understanding Azure storage
+## Understanding Azure Storage
 
-**Azure storage** is a Microsoft storage solution on the cloud that can cover many scenarios and requirements. It can scale massively and is easily approachable by developers. All services can be consumed under the umbrella of an **Azure storage Account**. For our use case we will use *Table storage* and *Blob storage*.
+**Azure Storage** is a Microsoft storage solution on the cloud that can cover many scenarios and requirements. It can scale massively and is easily approachable by developers. All services can be consumed under the umbrella of an **Azure Storage Account**. For our use case we will use *Table storage* and *Blob storage*.
 
-Learn more about [Azure storage services](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-overview).
+Learn more about [Azure Storage services](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-overview).
 
 ### Azure Table storage
 
@@ -42,13 +42,13 @@ Learn more about [Azure Blob storage](https://docs.microsoft.com/azure/storage/b
 
 ## Preparing Azure Storage
 
-To consume the Azure storage services you will need an Azure storage account. To create a storage account, see [Create a storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal). To learn more about storage accounts, see [Azure storage account overview](https://docs.microsoft.com/azure/storage/common/storage-account-overview).
+To consume the Azure Storage services you will need an Azure Storage account. To create a storage account, see [Create a storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal). To learn more about storage accounts, see [Azure Storage account overview](https://docs.microsoft.com/azure/storage/common/storage-account-overview).
 
 Once you have a storage account, you can retrieve the connection string from the **Azure Portal** which will be needed in the next section of this lesson.
 
 ### Optional Azure Storage Explorer
 
-While you can see and verify all data changes from the UI inside the application, we recommend to install [Azure storage Explorer](https://azure.microsoft.com/features/storage-explorer/). This tool allows you to visually see the data in the Azure storage and is of great help when debugging and learning.
+While you can see and verify all data changes from the UI inside the application, we recommend to install [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/). This tool allows you to visually see the data in the Azure Storage and is of great help when debugging and learning.
 
 > [!TIP]
 > For testing from inside the Unity editor you can use a local emulator:
@@ -62,7 +62,7 @@ In the Hierarchy window, locate the **DataManager** object and select it.
 
 ![mr-learning-azure](images/mr-learning-azure/tutorial2-section4-step1-1.png)
 
-From the Inspector window you will see that the **DataManager (script)** component is where all **Azure storage** related settings are kept. All relevant settings are already set, you just need to replace the *Connection String* field with the one you can retrieve from the Azure Portal. If you are using a local Azure storage emulator solution, then you can keep the already provided *Connection String*.
+From the Inspector window you will see that the **DataManager (script)** component is where all **Azure Storage** related settings are kept. All relevant settings are already set, you just need to replace the *Connection String* field with the one you can retrieve from the Azure Portal. If you are using a local Azure Storage emulator solution, then you can keep the already provided *Connection String*.
 
 The **DataManager (script)** is responsible for talking to the **Table storage** and **Blob storage** which is consumed by other controller scripts on the UI components.
 
@@ -104,7 +104,7 @@ Now rerun the application and search for the *Tracked Object* of the previously 
 
 ## Congratulations
 
-In this tutorial you learned how Azure storage services can be used to persist unstructured data, like in our case **Tracked Objects** and binaries in form of thumbnail images for the **HoloLens 2** demo application on the cloud.
+In this tutorial you learned how Azure Storage services can be used to persist unstructured data, like in our case **Tracked Objects** and binaries in form of thumbnail images for the **HoloLens 2** demo application on the cloud.
 
 In the next tutorial you will learn how to use Azure Custom Vision to detect images associated with a *Tracked Object*.
 
