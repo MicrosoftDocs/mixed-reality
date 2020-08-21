@@ -9,7 +9,6 @@ keywords: Windows Mixed Reality, HoloLens, mrtk, design, sample app, controls
 ---
 
 
-
 # Surfaces
 
 >[!NOTE]
@@ -50,5 +49,5 @@ https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0#activetab=pivot:overview
 
 ## See also
 
-* [Interactable object](interactable-object.md)
-* [Object collection](object-collection.md)
+* [Interactable object](../../design/interactable-object.md)
+* [Object collection](../../design/object-collection.md)

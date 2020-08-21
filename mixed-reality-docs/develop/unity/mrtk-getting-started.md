@@ -10,7 +10,7 @@ keywords: Windows Mixed Reality, test, Mixed Reality Toolkit, MRTK version 2, MR
 ---
 
 # Getting started with MRTK for Unity
-![MRTK](images/UX/MRTK_UX_Hero.png)
+![MRTK](../../design/images/MRTK_UX_Hero.png)
 
 ## What is Mixed Reality Toolkit (MRTK)?
 The MRTK is an amazing open source toolkit that has been around since the HoloLens was first released, and would not be where it is today without the hard work of our developer community who have contributed to it. Over the past 3 years, we have listened to the feedback of our developer community, and built MRTK v2 to take the biggest concerns into account.  
@@ -38,5 +38,5 @@ Working with mobile platforms, we constructed it with performance in mind.  This
 ## See also
 * [MRTK getting started guide](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
 * [MRTK documentation home](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
-* [Install the tools](install-the-tools.md)
+* [Install the tools](../install-the-tools.md)
 * [Porting from HTK/MRTK to MRTK version 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)

@@ -42,7 +42,7 @@ To make an object grabbable, assign these two scripts: ManipulationHandler.cs an
 
 <img alt="NearInteractionGrabbable and ManipulationHandler.cs assigned to an object" width="800" src="images/MRTK101/MRTK_ManipulationHandler.png">
 
-<img alt="NearInteractionGrabbable and ManipulationHandler.cs assigned to an object" width="800" src="images/MRTK101/MRTK_GrabMove.gif">
+<img alt="NearInteractionGrabbable and ManipulationHandler.cs assigned to an object for grab and move" width="800" src="images/MRTK101/MRTK_GrabMove.gif">
 
 
 ## How to resize an object?
@@ -50,14 +50,14 @@ ManipulationHandler.cs supports two-handed scale/rotation. This works with vario
 
 - [Learn more about Manipulation Handler in the MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ManipulationHandler.html)
 
-<img alt="NearInteractionGrabbable and ManipulationHandler.cs assigned to an object" width="800" src="images/MRTK101/MRTK_ManipulationHandler.gif">
+<img alt="NearInteractionGrabbable and ManipulationHandler.cs assigned to an object for manipulation" width="800" src="images/MRTK101/MRTK_ManipulationHandler.gif">
 
 ## How to move or rotate an object with precision?
 Assign BoundingBox.cs to an object to use Bounding Box which is the interface for scaling and rotating an object. By default, it shows HoloLens 1 style blue handles and wires. To use HoloLens 2 style proximity-based animated handles, you need to assign prefabs and materials. Please refer to [Bounding Box documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html) and the BoundingBoxExamples.unity scene for the configuration details.
 
-<img alt="BoundingBox.cs assigned to an object" width="800" src="images/MRTK101/MRTK_BoundingBox.png">
+<img alt="BoundingBox.cs assigned to an object image" width="800" src="images/MRTK101/MRTK_BoundingBox.png">
 
-<img alt="BoundingBox.cs assigned to an object" width="800" src="images/MRTK101/MRTK_BoundingBox.gif">
+<img alt="BoundingBox.cs assigned to an object gif" width="800" src="images/MRTK101/MRTK_BoundingBox.gif">
 
 
 - [Learn more about Bounding Box in the MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)
@@ -66,16 +66,16 @@ Assign BoundingBox.cs to an object to use Bounding Box which is the interface fo
 Assign PointerHandler.cs to an object. In the inspector, you will be able to use events OnPointerDown(), OnPointerUp(), OnPointerClicked(), OnPointerDragged()
 To use these events in a script, implement IMixedRealityPointerHandler.
 
-<img alt="PointerHandler.cs assigned to an object" width="800" src="images/MRTK101/MRTK_PointerHandler.png">
+<img alt="PointerHandler.cs assigned to an object image" width="800" src="images/MRTK101/MRTK_PointerHandler.png">
 
 - [Learn more about Input System in the MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)
 
 ## How to add visual feedback?
 Assign Interactable.cs to an object. In the inspector, create a new theme. Using Interactable's theme profiles, you can easily add visual feedback to all available input interaction states.
 
-<img alt="PointerHandler.cs assigned to an object" width="800" src="images/MRTK101/MRTK_Interactable.png">
+<img alt="Image of PointerHandler.cs assigned to an object" width="800" src="images/MRTK101/MRTK_Interactable.png">
 
-<img alt="Interactable" width="800" src="images/MRTK101/MRTK_Interactable.gif">
+<img alt="Interactable gif" width="800" src="images/MRTK101/MRTK_Interactable.gif">
 
 
 Interactable provides various types of themes including the shader theme which allows you to control properties of the shader per interaction state.
@@ -86,11 +86,11 @@ Another important building block for visual feedback is the MRTK Standard Shader
 
 Create a new material and select the Shader 'Mixed Reality Toolkit > Standard'. Or you can pick one of the existing materials that use MRTK Standard Shader.
 
-<img alt="MRTK Standard Shader" width="400" src="images/MRTK101/MRTK_Shader0.png">
+<img alt="MRTK Standard Shader image 1" width="400" src="images/MRTK101/MRTK_Shader0.png">
 <br/><br/>
-<img alt="MRTK Standard Shader" width="800" src="images/MRTK101/MRTK_Shader1.png">
+<img alt="MRTK Standard Shader image 2" width="800" src="images/MRTK101/MRTK_Shader1.png">
 
-<img alt="MRTK Standard Shader" width="800" src="images/MRTK101/MRTK_Shader.gif">
+<img alt="MRTK Standard Shader image 3" width="800" src="images/MRTK101/MRTK_Shader.gif">
 
 
 - [Learn more about MRTK Standard Shader in the MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html)
@@ -103,7 +103,7 @@ Add AudioSource to an object. Then, in the scripts that exposes input events(e.g
 ## How to use HoloLens 2 style button prefabs?
 MRTK provides various types of HoloLens 2's shell(OS) style buttons. It provides sophisticated visual feedbacks such as proximity light, compressing box, and a ripple effect on the button surface.
 
-<img alt="Interactable" width="800" src="images/MRTK101/MRTK_Button.gif">
+<img alt="Interactable button" width="800" src="images/MRTK101/MRTK_Button.gif">
 
 Simply drag and drop one of the HoloLens 2 style pressable button prefab into your scene. The prefab uses Interactable.cs which is introduced above. You can use exposed events such as OnClick() in the Interactable to trigger actions.
 
@@ -115,16 +115,16 @@ Simply drag and drop one of the HoloLens 2 style pressable button prefab into yo
 Assign RadialView.cs script to an object. It is part of the Solver script series that allows you to achieve various types of object positioning in 3D space. SolverHandler.cs will be automatically added.
 Below is an example of RadialView configuration to achieve 'lazy follow' tag-along behavior just like the Start menu in the HoloLens shell. You can specify the minimum/maximum distance and minimum/maximum view degrees. The example below shows positioning the object between 0.4m and 0.8m range within 15°. Adjust Lerp Time values to make the positional update faster or slower.
 
-<img alt="MRTK Standard Shader" width="400" src="images/MRTK101/MRTK_SolverRadialView.png">
+<img alt="MRTK Standard Shader for solver" width="400" src="images/MRTK101/MRTK_SolverRadialView.png">
 
-<img alt="Interactable" width="800" src="images/MRTK101/MRTK_RadialViewSolver.gif">
+<img alt="Interactable radial solver" width="800" src="images/MRTK101/MRTK_RadialViewSolver.gif">
 
 - [Learn more about Solvers in the MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html)
 
 ## How to make an object face you?
 Assign Billboard.cs script to an object. It will always face you, regardless of your position. You can specify the pivot axis option.
 
-<img alt="Billboard.cs script assigned to an object with Pivot Axis option Y" width="800" src="images/MRTK101/MRTK_Billboard.png">
+<img alt="Image of Billboard.cs script assigned to an object with Pivot Axis option Y" width="800" src="images/MRTK101/MRTK_Billboard.png">
 
 <img alt="Billboard.cs script assigned to an object with Pivot Axis option Y" width="800" src="images/MRTK101/MRTK_Billboard.gif">
 

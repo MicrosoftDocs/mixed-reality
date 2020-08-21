@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 # Performance recommendations for Unity
 
-This article builds on the discussion outlined in [performance recommendations for mixed reality](understanding-performance-for-mixed-reality.md) but focuses on learnings specific to the Unity engine environment.
+This article builds on the discussion outlined in [performance recommendations for mixed reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) but focuses on learnings specific to the Unity engine environment.
 
 ## Use recommended Unity project settings
 
@@ -99,6 +99,7 @@ public class ExampleClass : MonoBehaviour
 
     Certain Unity APIs, although useful, can be very expensive to execute. Most of these involve searching your entire scene graph for some matching list of GameObjects. These operations can generally be avoided by caching references or implementing a manager component for the GameObjects in question to track the references at runtime.
 
+    ```csharp
         GameObject.SendMessage()
         GameObject.BroadcastMessage()
         UnityEngine.Object.Find()
@@ -107,6 +108,7 @@ public class ExampleClass : MonoBehaviour
         UnityEngine.Object.FindObjectsOfType()
         UnityEngine.Object.FindGameObjectsWithTag()
         UnityEngine.Object.FindGameObjectsWithTag()
+    ```
 
 >[!NOTE]
 > *[SendMessage()](https://docs.unity3d.com/ScriptReference/GameObject.SendMessage.html)* and *[BroadcastMessage()](https://docs.unity3d.com/ScriptReference/GameObject.BroadcastMessage.html)* should be eliminated at all costs. These functions can be on the order of 1000x slower than direct function calls.
@@ -162,17 +164,23 @@ Any repeating Unity callback functions (i.e Update) that are executed many times
     The following Unity APIs are common operations for many Holographic Apps. Although not always possible, the results from these functions can very commonly be computed once and the results re-utilized across the application for a given frame.
 
     a) Generally it is good practice to have a dedicated Singleton class or service to handle your gaze Raycast into the scene and then re-use this result in all other scene components, instead of making repeated and essentially identical Raycast operations by each component. Of course, some applications may require raycasts from different origins or against different [LayerMasks](https://docs.unity3d.com/ScriptReference/LayerMask.html).
-
+    
+    ```csharp
         UnityEngine.Physics.Raycast()
         UnityEngine.Physics.RaycastAll()
+    ```
 
     b) Avoid GetComponent() operations in repeated Unity callbacks like Update() by [caching references](#cache-references) in Start() or Awake()
-
+    
+    ```csharp
         UnityEngine.Object.GetComponent()
+    ```
 
     c) It is good practice to instantiate all objects, if possible, at initialization and use [object pooling](#object-pooling) to recycle and re-use GameObjects throughout runtime of your application
 
+    ```csharp
         UnityEngine.Object.Instantiate()
+    ```
 
 3) **Avoid interfaces and virtual constructs**
 
@@ -255,7 +263,7 @@ Learn more about [optimizing graphics rendering in Unity](https://unity3d.com/le
 
 ### Optimize depth buffer sharing
 
-It is generally recommended to enable **Depth buffer sharing** under **Player XR Settings** to optimize for [hologram stability](Hologram-stability.md). When enabling depth-based late-stage reprojection with this setting however, it is recommended to select **16-bit depth format** instead of **24-bit depth format**. The 16-bit depth buffers will drastically reduce the bandwidth (and thus power) associated with depth buffer traffic. This can be a big win both in power reduction and performance improvement. However, there are two possible negative outcomes by using *16-bit depth format*.
+It is generally recommended to enable **Depth buffer sharing** under **Player XR Settings** to optimize for [hologram stability](../platform-capabilities-and-apis/Hologram-stability.md). When enabling depth-based late-stage reprojection with this setting however, it is recommended to select **16-bit depth format** instead of **24-bit depth format**. The 16-bit depth buffers will drastically reduce the bandwidth (and thus power) associated with depth buffer traffic. This can be a big win both in power reduction and performance improvement. However, there are two possible negative outcomes by using *16-bit depth format*.
 
 **Z-Fighting**
 

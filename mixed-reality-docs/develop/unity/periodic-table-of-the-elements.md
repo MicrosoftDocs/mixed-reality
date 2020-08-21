@@ -9,13 +9,12 @@ keywords: Windows Mixed Reality, design, sample app, controls
 ---
 
 
-
 # Periodic Table of the Elements
 
 >[!NOTE]
 >This article discusses an exploratory sample we’ve created in the [Mixed Reality Design Labs](https://github.com/Microsoft/MRDesignLabs_Unity), a place where we share our learnings about and suggestions for mixed reality app development. Our design-related articles and code will evolve as we make new discoveries.
 
-[Periodic Table of the Elements](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) is a open-source sample app from Microsoft's Mixed Reality Design Labs. With this project, you can learn how to lay out an array of objects in 3D space with various surface types using an **[Object collection](object-collection.md)**. Also learn how to create interactable objects that respond to standard inputs from HoloLens. You can use this project's components to create your own mixed reality app experience.
+[Periodic Table of the Elements](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) is a open-source sample app from Microsoft's Mixed Reality Design Labs. With this project, you can learn how to lay out an array of objects in 3D space with various surface types using an **[Object collection](../../design/object-collection.md)**. Also learn how to create interactable objects that respond to standard inputs from HoloLens. You can use this project's components to create your own mixed reality app experience.
 
 ![Period Table of the Elements app](images/640px-periodictable-hero.jpg)
 
@@ -47,13 +46,13 @@ The user can change the surface type by air tapping the buttons on the bottom of
 
 ### Interactable object (button)
 
-[Interactable object](interactable-object.md) is an object which can respond to basic HoloLens inputs. It is provided as a prefab/script which you can easily apply to any object. For example, you can make a coffee cup in your scene interactable and respond to inputs such as gaze, air tap, navigation and manipulation gestures. [Learn more](interactable-object.md)
+[Interactable object](../../design/interactable-object.md) is an object which can respond to basic HoloLens inputs. It is provided as a prefab/script which you can easily apply to any object. For example, you can make a coffee cup in your scene interactable and respond to inputs such as gaze, air tap, navigation and manipulation gestures. [Learn more](../../design/interactable-object.md)
 
 ![nteractable object](images/640px-periodictable-interactableobject.jpg)
 
 ### Object collection
 
-[Object collection](object-collection.md) is an object which helps you lay out multiple objects in various shapes. It supports plane, cylinder, sphere and scatter. You can configure additional properties such as radius, number of rows and the spacing. [Learn more](object-collection.md)
+[Object collection](../../design/object-collection.md) is an object which helps you lay out multiple objects in various shapes. It supports plane, cylinder, sphere and scatter. You can configure additional properties such as radius, number of rows and the spacing. [Learn more](../../design/object-collection.md)
 
 ![Object collection](images/640px-periodictable-collections.jpg)
 
@@ -104,5 +103,5 @@ This is an example of visualizing sports data using Object collection and other 
 
 ## See also
 
-* [Interactable object](interactable-object.md)
-* [Object collection](object-collection.md)
+* [Interactable object](../../design/interactable-object.md)
+* [Object collection](../../design/object-collection.md)

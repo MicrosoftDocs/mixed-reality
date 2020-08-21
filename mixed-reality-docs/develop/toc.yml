@@ -361,7 +361,7 @@
         - name: Custom Holographic Remoting data channels
           href: platform-capabilities-and-apis/holographic-remoting-custom-data-channels.md 
         - name: Secure Connection with Holographic Remoting 
-          href: platform-capabilities-and-apis/holographic-remoting-secure-connection. md
+          href: platform-capabilities-and-apis/holographic-remoting-secure-connection.md
         - name: Troubleshooting and limitations
           href: platform-capabilities-and-apis/holographic-remoting-troubleshooting.md
         - name: Version history 

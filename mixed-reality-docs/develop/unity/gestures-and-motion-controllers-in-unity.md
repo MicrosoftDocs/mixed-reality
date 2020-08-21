@@ -1,6 +1,6 @@
 ---
 title: Gestures and motion controllers in Unity
-description: There are two key ways to take action on your gaze in Unity, hand gestures and motion controllers.
+description: A description of the two ways to take action on your gaze in Unity, hand gestures and motion controllers.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
@@ -9,10 +9,9 @@ keywords: gestures, motion controllers, unity, gaze, input
 ---
 
 
-
 # Gestures and motion controllers in Unity
 
-There are two key ways to take action on your [gaze in Unity](gaze-in-unity.md), [hand gestures](gaze-and-commit.md#composite-gestures) and [motion controllers](motion-controllers.md) in HoloLens and Immersive HMD. You access the data for both sources of spatial input through the same APIs in Unity.
+There are two key ways to take action on your [gaze in Unity](gaze-in-unity.md), [hand gestures](../../design/gaze-and-commit.md#composite-gestures) and [motion controllers](../../design/motion-controllers.md) in HoloLens and Immersive HMD. You access the data for both sources of spatial input through the same APIs in Unity.
 
 Unity provides two primary ways to access spatial input data for Windows Mixed Reality, the common *Input.GetButton/Input.GetAxis* APIs that work across multiple Unity XR SDKs, and an *InteractionManager/GestureRecognizer* API specific to Windows Mixed Reality that exposes the full set of spatial input data available.
 
@@ -200,7 +199,7 @@ foreach (var interactionSourceState in interactionSourceStates) {
 ```
 
 Each *InteractionSourceState* you get back represents an interaction source at the current moment in time. The *InteractionSourceState* exposes info such as:
-* Which [kinds of presses](motion-controllers.md) are occurring (Select/Menu/Grasp/Touchpad/Thumbstick)
+* Which [kinds of presses](../../design/motion-controllers.md) are occurring (Select/Menu/Grasp/Touchpad/Thumbstick)
 
    ```cs
    if (interactionSourceState.selectPressed) {
@@ -302,7 +301,7 @@ This means that polling gives you a source pose or head pose that is 30-40ms for
 To accurately target based on the user's original intent for a hand or controller press, you should use the historical source pose or head pose from that *InteractionSourcePressed* or *InteractionSourceReleased* input event.
 
 You can target a press or release with historical pose data from the user's head or their controller:
-* The head pose at the moment in time when a gesture or controller press occurred, which can be used for **targeting** to determine what the user was [gazing](gaze-and-commit.md) at:
+* The head pose at the moment in time when a gesture or controller press occurred, which can be used for **targeting** to determine what the user was [gazing](../../design/gaze-and-commit.md) at:
 
    ```cs
    void InteractionManager_InteractionSourcePressed(InteractionSourcePressedEventArgs args) {
@@ -398,7 +397,7 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 **Namespace:** *UnityEngine.XR.WSA.Input*<br>
 **Types**: *GestureRecognizer*, *GestureSettings*, *InteractionSourceKind*
 
-Your app can also recognize higher-level composite gestures for spatial input sources, Tap, Hold, Manipulation and Navigation gestures. You can recognize these composite gestures across both [hands](gaze-and-commit.md#composite-gestures) and [motion controllers](motion-controllers.md) using the GestureRecognizer.
+Your app can also recognize higher-level composite gestures for spatial input sources, Tap, Hold, Manipulation and Navigation gestures. You can recognize these composite gestures across both [hands](../../design/gaze-and-commit.md#composite-gestures) and [motion controllers](../../design/motion-controllers.md) using the GestureRecognizer.
 
 Each Gesture event on the GestureRecognizer provides the SourceKind for the input as well as the targeting head ray at the time of the event. Some events provide additional context specific information.
 
@@ -473,7 +472,7 @@ void OnDestroy()
 
 ## Rendering the motion controller model in Unity
 
-![Motion Controller model and teleportation](images/motioncontrollertest-teleport-1000px.png)<br>
+![Motion Controller model and teleportation](../../design/images/motioncontrollertest-teleport-1000px.png)<br>
 *Motion controller model and teleportation*
 
 To render motion controllers in your app that match the physical controllers your users are holding and articulate as various buttons are pressed, you can use the **MotionController prefab** in the [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/).  This prefab dynamically loads the correct glTF model at runtime from the system's installed motion controller driver.  It's important to load these models dynamically rather than importing them manually in the editor, so that your app will show physically accurate 3D models for any current and future controllers your users may have.
@@ -486,7 +485,7 @@ To render motion controllers in your app that match the physical controllers you
 Throwing objects in virtual reality is a harder problem then it may at first seem. As with most physically based interactions, when throwing in game acts in an unexpected way, it is immediately obvious and breaks immersion. We have spent some time thinking deeply about how to represent a physically correct throwing behavior, and have come up with a few guidelines, enabled through updates to our platform, that we would like to share with you.
 
 You can find an example of how we recommend to implement throwing [here](https://github.com/keluecke/MixedRealityToolkit-Unity/blob/master/External/Unitypackages/ThrowingStarter.unitypackage). This sample follows these four guidelines:
-* **Use the controller’s *velocity* instead of position**. In the November update to Windows, we introduced a change in behavior when in the [''Approximate'' positional tracking state](motion-controllers.md#controller-tracking-state). When in this state, velocity information about the controller will continue to be reported for as long as we believe it is high accuracy, which is often longer than position remains high accuracy.
+* **Use the controller’s *velocity* instead of position**. In the November update to Windows, we introduced a change in behavior when in the [''Approximate'' positional tracking state](../../design/motion-controllers.md#controller-tracking-state). When in this state, velocity information about the controller will continue to be reported for as long as we believe it is high accuracy, which is often longer than position remains high accuracy.
 * **Incorporate the *angular velocity* of the controller**. This logic is all contained in the `throwing.cs` file in the `GetThrownObjectVelAngVel` static method, within the package linked above:
    1. As angular velocity is conserved, the thrown object must maintain the same angular velocity as it had at the moment of the throw:
    `objectAngularVelocity = throwingControllerAngularVelocity;`
@@ -513,20 +512,9 @@ You can access gesture and motion controller from the input Manager.
 * [Gesture in MRTK v2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Gestures.html)
 * [Motion Controller in MRTK v2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Controllers.html)
 
-
-## Follow along with tutorials
-
-Step-by-step tutorials, with more detailed customization examples, are available in the Mixed Reality Academy:
-
-- [MR Input 211: Gesture](holograms-211.md)
-- [MR Input 213: Motion controllers](mixed-reality-213.md)
-
-[![MR Input 213 - Motion controller](images/mr213-main-600px.jpg)](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-213)<br>
-*MR Input 213 - Motion controller*
-
 ## See also
 
-* [Head-gaze and commit](gaze-and-commit.md)
-* [Motion controllers](motion-controllers.md)
+* [Head-gaze and commit](../../design/gaze-and-commit.md)
+* [Motion controllers](../../design/motion-controllers.md)
 
 

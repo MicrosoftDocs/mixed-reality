@@ -59,7 +59,7 @@ else
     // RoomScale mode was not set successfully.  App cannot make assumptions about where the floor plane is.
 }
 ```
-* If SetTrackingSpaceType returns true, Unity has successfully switched its world coordinate system to track the [stage frame of reference](coordinate-systems.md#spatial-coordinate-systems).
+* If SetTrackingSpaceType returns true, Unity has successfully switched its world coordinate system to track the [stage frame of reference](../../design/coordinate-systems.md#spatial-coordinate-systems).
 * If SetTrackingSpaceType returns false, Unity was unable to switch to the stage frame of reference, likely because the user has not set up even a floor in their environment. This is not common, but can happen if the stage was set up in a different room and the device was moved to the current room without the user setting up a new stage.
 
 Once your app successfully sets the RoomScale tracking space type, content placed on the y=0 plane will appear on the floor. The origin at (0, 0, 0) will be the specific place on the floor where the user stood during room setup, with -Z representing the forward direction they were facing during setup.
@@ -164,8 +164,8 @@ To get started building shared experiences in Unity, try out the 5-minute <a hre
 Once you're up and running with Azure Spatial Anchors, you can then <a href="https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">create and locate anchors in Unity</a>.
 
 ## See Also
-* [Experience scales](coordinate-systems.md#mixed-reality-experience-scales)
-* [Spatial stage](coordinate-systems.md#stage-frame-of-reference)
+* [Experience scales](../../design/coordinate-systems.md#mixed-reality-experience-scales)
+* [Spatial stage](../../design/coordinate-systems.md#stage-frame-of-reference)
 * [Tracking loss in Unity](tracking-loss-in-unity.md)
 * [Spatial anchors](../../design/spatial-anchors.md)
 * [Persistence in Unity](persistence-in-unity.md)

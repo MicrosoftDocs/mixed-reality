@@ -8,6 +8,7 @@ ms.topic: article
 keywords: unity, settings, mixed reality
 ---
 
+
 # Recommended settings for Unity
 
 Unity provides a set of default options that are generally the average case for all platforms. However, Unity offers some behaviors specific to mixed reality that can be toggled through project settings.
@@ -165,5 +166,5 @@ The applicable capabilities for enabling the commonly used APIs for Holographic 
 ## See also
 
 * [Unity development overview](unity-development-overview.md)
-* [Understanding performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
+* [Understanding performance for Mixed Reality]../../design/(understanding-performance-for-mixed-reality.md)
 * [Performance recommendations for Unity](performance-recommendations-for-unity.md)

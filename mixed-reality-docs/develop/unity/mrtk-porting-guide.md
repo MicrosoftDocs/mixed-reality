@@ -19,7 +19,7 @@ The sections below detail information for each stage:
 
 | Step 1 | Step 2 | Step 3 | Step 4 |
 |----------|-------------------|-------------------|-------------------|
-| ![Visual Studio logo](images/visualstudio_logo.png) | ![Unity logo](images/final_unity_logo.png)| ![Unity icon](images/hololens2_icon.jpg) | ![MRTK logo](images/final_mrtk-small_logo.png) |
+| ![Visual Studio logo](../images/visualstudio_logo.png) | ![Unity logo](../../design/images/final_unity_logo.png)| ![Unity icon](images/hololens2_icon.jpg) | ![MRTK logo](../../design/images/final_mrtk-small_logo.png) |
 | Download latest tools | Update Unity Project | Compile for ARM | Migrate to MRTK v2
 
 Prerequisites:
@@ -29,7 +29,7 @@ It's **highly recommended** that you use source control to save a snapshot your 
 > [!NOTE]
 > Before porting, ensure you have the latest tools installed for Windows Mixed Reality development. For most existing HoloLens developers, this involves updating to the latest version of Visual Studio 2019 and installing the appropriate Windows SDK. The content that follows dives further into different Unity versions and the Mixed Reality Toolkit (MRTK) Version 2.
 >
-> For more information, please see [Install the tools](install-the-tools.md).
+> For more information, please see [Install the tools](../install-the-tools.md).
 
 ## Migrate project to the latest version of Unity
 
@@ -144,9 +144,9 @@ Every application and scenario are different, and we’ll continue to refine and
 - The shader compiler on ARM runs during the first draw call after the shader has been loaded or something the shader relies on has changed, not at shader load time. The impact on framerate can be noticeable, depending on how many shaders need to be compiled. This has various implications for how shaders should be handled, packaged, updated differently on HoloLens 2 vs HoloLens (1st gen).
 
 ## See also
-* [Install the tools](install-the-tools.md)
+* [Install the tools](../install-the-tools.md)
 * [Getting started with MRTK version 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
 * [HTK APIs to MRTK APIs](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)
 * [Recommended settings for Unity](recommended-settings-for-unity.md)
-* [Understanding performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
+* [Understanding performance for Mixed Reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 
