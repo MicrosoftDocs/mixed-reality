@@ -80,14 +80,14 @@ For the near interaction at 0.45m(45cm), the minimum legible font's viewing angl
 *Content at near and far interaction range*
 
 ### The minimum legible font size
-| Distance | Viewing angle | Text height | Font size** |
+| Distance | Viewing angle | Text height | Font size |
 |---------|---------|---------|---------|
 | 45cm (direct manipulation distance) | 0.4°-0.5° | 3.14–3.9mm | 8.9–11.13pt |
 | 2m | 0.35°-0.4° | 12.21–13.97mm | 34.63-39.58pt |
 
 
 ### The comfortably legible font size
-| Distance | Viewing angle | Text height | Font size** |
+| Distance | Viewing angle | Text height | Font size |
 |---------|---------|---------|---------|
 | 45cm (direct manipulation distance) | 0.65°-0.8° | 5.1-6.3mm | 14.47-17.8pt |
 | 2m | 0.6°-0.75° | 20.9-26.2mm | 59.4-74.2pt |
