@@ -12,9 +12,9 @@ keywords: 3D, model, place in home, place, world, modeling, mixed reality home, 
 # Enable placement of 3D models in the mixed reality home
 
 > [!NOTE]
-> This feature was added as part of the [Windows 10 April 2018 Update](release-notes-april-2018.md). Older versions of Windows are not compatible with this feature.
+> This feature was added as part of the [Windows 10 April 2018 Update](../whats-new/release-notes-april-2018.md). Older versions of Windows are not compatible with this feature.
 
-The [Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md) is the starting point where users land before launching applications. In some scenarios, 2D apps (like the Holograms app) enable placement of 3D models directly into the mixed reality home as decorations or for further inspection in full 3D. The *add model protocol* allows you to send a 3D model from your website or application directly into the Windows Mixed Reality home, where it will persist like [3D app launchers](3d-app-launcher-design-guidance.md), 2D apps, and holograms. 
+The [Windows Mixed Reality home](../discover/navigating-the-windows-mixed-reality-home.md) is the starting point where users land before launching applications. In some scenarios, 2D apps (like the Holograms app) enable placement of 3D models directly into the mixed reality home as decorations or for further inspection in full 3D. The *add model protocol* allows you to send a 3D model from your website or application directly into the Windows Mixed Reality home, where it will persist like [3D app launchers](3d-app-launcher-design-guidance.md), 2D apps, and holograms. 
 
 For example, if you're developing an application that surfaces a catalog of 3D furniture for designing a space, you can use the *add model protocol* to allow users to place those 3D furniture models from the catalog. Once placed in the world, users can move, resize, and remove these 3D models just like other holograms in the home. This article provides an overview of implementing the *add model protocol* so that you can start enabling users to decorate their world with 3D objects from your app or the web.
 
@@ -28,8 +28,8 @@ For example, if you're developing an application that surfaces a catalog of 3D f
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td>Add model protocol</td>
@@ -90,4 +90,4 @@ private async void launchURI_Click(object sender, RoutedEventArgs e)
 ## See also
 
 * [Creating 3D models for use in the Windows Mixed Reality home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
-* [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)
+* [Navigating the Windows Mixed Reality home](../discover/navigating-the-windows-mixed-reality-home.md)
