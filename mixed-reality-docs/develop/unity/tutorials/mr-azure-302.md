@@ -56,7 +56,7 @@ We recommend the following hardware and software for this course:
 - [The latest Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017.4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- A [Windows Mixed Reality immersive (VR) headset](../../../discover/immersive-headset-hardware-details.md) or [Microsoft HoloLens](../../hololens-hardware-details.md) with Developer mode enabled
+- A [Windows Mixed Reality immersive (VR) headset](../../../discover/immersive-headset-hardware-details.md) or [Microsoft HoloLens](../../../hololens-hardware-details.md) with Developer mode enabled
 - A camera connected to your PC (for immersive headset development)
 - Internet access for Azure setup and Computer Vision API retrieval
 
@@ -66,9 +66,9 @@ We recommend the following hardware and software for this course:
 2.	Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](https://docs.microsoft.com/hololens/hololens-setup). 
 3.	It is a good idea to perform Calibration and Sensor Tuning when beginning developing a new HoloLens App (sometimes it can help to perform those tasks for each user). 
 
-For help on Calibration, please follow this [link to the HoloLens Calibration article](../../calibration.md#hololens-2).
+For help on Calibration, please follow this [link to the HoloLens Calibration article](../../../calibration.md#hololens-2).
 
-For help on Sensor Tuning, please follow this [link to the HoloLens Sensor Tuning article](../../sensor-tuning.md).
+For help on Sensor Tuning, please follow this [link to the HoloLens Sensor Tuning article](../../../sensor-tuning.md).
 
 ## Chapter 1 – The Azure Portal
 

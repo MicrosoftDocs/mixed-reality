@@ -25,7 +25,7 @@ highlightedContent:
     # Card
     - title: What is Mixed Reality?
       itemType: overview
-      url: mixed-reality.md 
+      url: out-of-scope/mixed-reality.md 
     # Card
     - title: Introducing HoloLens 2
       itemType: overview
@@ -37,11 +37,11 @@ highlightedContent:
     # Card
     - title: Try a sample app
       itemType: sample
-      url: samples.md
+      url: develop/unity/samples.md
     # Card
     - title: Developers
       itemType: overview
-      url: development.md
+      url: develop/development.md
     # Card
     - title: IT admins
       itemType: overview
@@ -63,31 +63,31 @@ productDirectory:
       links:
         - url: design.md
           text: Design and prototype
-        - url: types-of-mixed-reality-apps.md
+        - url: design/types-of-mixed-reality-apps.md
           text: Choose your type of Mixed Reality app
-        - url: case-study-expanding-the-design-process-for-mixed-reality.md
+        - url: design/case-study-expanding-the-design-process-for-mixed-reality.md
           text: Expand your design process
-        - url: app-patterns-landingpage.md
+        - url: design/app-patterns-landingpage.md
           text: Learn about UX elements
-        - url: comfort.md
+        - url: design/comfort.md
           text: Learn about user comfort
-        - url: interaction-fundamentals.md
+        - url: design/interaction-fundamentals.md
           text: Understand interaction fundamentals
     # Card
     - title: Develop
       imageSrc: images/icon-developer.png
       links:
-        - url: development.md
+        - url: develop/development.md
           text: Choose your technology path
-        - url: install-the-tools.md
+        - url: develop/install-the-tools.md
           text: Install the tools
-        - url: unity-development-overview.md
+        - url: develop/unity/unity-development-overview.md
           text: Get started with Unity
-        - url: unreal-development-overview.md
+        - url: develop/unreal/unreal-development-overview.md
           text: Get started with Unreal
-        - url: directx-development-overview.md
+        - url: develop/native/directx-development-overview.md
           text: Get started with Native
-        - url: mrtk-porting-guide.md
+        - url: develop/unity/mrtk-porting-guide.md
           text: Get your app ready for HoloLens 2
     # Card
     - title: Deploy HoloLens 2
@@ -116,78 +116,78 @@ conceptualContent:
     - title: Unity
       summary: Create, configure, and deploy applications in Unity with the Mixed Reality Toolkit SDK.  
       links:
-        - url: unity-development-overview.md
+        - url: develop/unity/unity-development-overview.md
           itemType: overview
           text: Unity development overview
-        - url: mrtk-getting-started.md
+        - url: develop/unity/mrtk-getting-started.md
           itemType: overview
           text: What is MRTK?
-        - url: mr-learning-base-01.md
+        - url: develop/unity/tutorials/mr-learning-base-01.md
           itemType: tutorial
           text: HoloLens 2 tutorial series
-        - url: mrtk-101.md
+        - url: develop/unity/mrtk-101.md
           itemType: concept
           text: Core building blocks
-        - url: shared-experiences-in-unity.md
+        - url: develop/unity/shared-experiences-in-unity.md
           itemType: concept
           text: Platform capabilities and APIs
-        - url: exporting-and-building-a-unity-visual-studio-solution.md
+        - url: develop/unity/exporting-and-building-a-unity-visual-studio-solution.md
           itemType: deploy
           text: Deploying to device or emulator
       # footerLink (optional)
       footerLink:
-        url: unity-development-overview.md
+        url: develop/unity/unity-development-overview.md
         text: See more
 
     # Card
     - title: Unreal 
       summary: Build, customize, and deploy applications in Unreal with the Mixed Reality Toolkit SDK.
       links:
-        - url: unreal-development-overview.md
+        - url: develop/unreal/unreal-development-overview.md
           itemType: overview
           text: Unreal development overview
-        - url: unreal-uxt-ch1.md
+        - url: develop/unreal/unreal-uxt-ch1.md
           itemType: tutorial
           text: Build a chess app tutorial series
-        - url: unreal-gaze-input.md
+        - url: develop/unreal/unreal-gaze-input.md
           itemType: concept
           text: Core building blocks
-        - url: unreal-hololens-camera.md
+        - url: develop/unreal/unreal-hololens-camera.md
           itemType: concept
           text: Platform capabilities and APIs
-        - url: performance-recommendations-for-unreal.md
+        - url: develop/unreal/performance-recommendations-for-unreal.md
           itemType: concept
           text: Performance recommendations
-        - url: unreal-deploying.md
+        - url: develop/unreal/unreal-deploying.md
           itemType: deploy
           text: Deploying to device or emulator
       # footerLink (optional)
       footerLink:
-        url: unreal-development-overview.md
+        url: develop/unreal/unreal-development-overview.md
         text: See more
 
     # Card
     - title: Native
       summary: Construct native holographic experiences with OpenXR, WinRT, and DirectX.
       links:
-        - url: directx-development-overview.md
+        - url: develop/native/directx-development-overview.md
           itemType: overview
           text: Native development overview
-        - url: openxr.md
+        - url: develop/native/openxr.md
           itemType: overview
           text: What is OpenXR?
-        - url: openxr-getting-started.md
+        - url: develop/native/openxr-getting-started.md
           itemType: get-started
           text: Get started with OpenXR
-        - url: openxr-best-practices.md
+        - url: develop/native/openxr-best-practices.md
           itemType: concept
           text: OpenXR best practices
-        - url: openxr-troubleshooting.md
+        - url: develop/native/openxr-troubleshooting.md
           itemType: reference
           text: OpenXR troubleshooting
       # footerLink (optional)
       footerLink:
-        url: directx-development-overview.md
+        url: develop/native/directx-development-overview.md
         text: See more
 
 # tools section (optional)

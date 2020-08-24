@@ -8,6 +8,7 @@ ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, language understanding intelligence service, luis, hololens, immersive, vr
 ---
 
+
 >[!NOTE]
 >The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.
 
@@ -37,7 +38,7 @@ Be prepared to Train LUIS several times, which is covered in [Chapter 12](#chapt
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td>MR and Azure 303: Natural language understanding (LUIS)</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -49,16 +50,16 @@ Be prepared to Train LUIS several times, which is covered in [Chapter 12](#chapt
 ## Prerequisites
 
 > [!NOTE]
-> This tutorial is designed for developers who have basic experience with Unity and C#. Please also be aware that the prerequisites and written instructions within this document represent what has been tested and verified at the time of writing (May 2018). You are free to use the latest software, as listed within the [install the tools](install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you'll find in newer software than what's listed below.
+> This tutorial is designed for developers who have basic experience with Unity and C#. Please also be aware that the prerequisites and written instructions within this document represent what has been tested and verified at the time of writing (May 2018). You are free to use the latest software, as listed within the [install the tools](../../install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you'll find in newer software than what's listed below.
 
 We recommend the following hardware and software for this course:
 
 - A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
-- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md)
-- [The latest Windows 10 SDK](install-the-tools.md)
-- [Unity 2017.4](install-the-tools.md)
-- [Visual Studio 2017](install-the-tools.md)
-- A [Windows Mixed Reality immersive (VR) headset](immersive-headset-hardware-details.md) or [Microsoft HoloLens](hololens-hardware-details.md) with Developer mode enabled
+- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](../../install-the-tools.md)
+- [The latest Windows 10 SDK](../../install-the-tools.md)
+- [Unity 2017.4](../../install-the-tools.md)
+- [Visual Studio 2017](../../install-the-tools.md)
+- A [Windows Mixed Reality immersive (VR) headset](../../../discover/immersive-headset-hardware-details.md) or [Microsoft HoloLens](../../../hololens-hardware-details.md) with Developer mode enabled
 - A set of headphones with a built-in microphone (if the headset doesn't have a built-in mic and speakers)
 - Internet access for Azure setup and LUIS retrieval
 
@@ -417,24 +418,21 @@ The following is a typical set up for developing with the mixed reality, and as 
 
 9.	Left click on the **Plane** to select it. In the *Inspector Panel* set the *Transform* component with the following values:
 
-    |       | Transform - *Position* |       |
+    |   X Axis    | Y Axis |   Z Axis    |
     |:-----:|:----------------------:|:-----:|
-    | **X** | **Y**                  | **Z** |
     | 0     | -1                     | 0     |
 
 
 10.	Left click on the **Sphere** to select it. In the *Inspector Panel* set the *Transform* component with the following values:
 
-    |       | Transform - *Position* |       |
+    |   X Axis    | Y Axis |   Z Axis    |
     |:-----:|:----------------------:|:-----:|
-    | **X** | **Y**                  | **Z** |
     | 2     | 1                      | 2     |
 
 11.	Left click on the **Cylinder** to select it. In the *Inspector Panel* set the *Transform* component with the following values:
 
-    |       | Transform - *Position* |       |
+    |   X Axis    | Y Axis |   Z Axis    |
     |:-----:|:----------------------:|:-----:|
-    | **X** | **Y**                  | **Z** |
     | -2    | 1                      | 2     |
 
 12.	Left click on the **Cube** to select it. In the *Inspector Panel* set the *Transform* component with the following values:

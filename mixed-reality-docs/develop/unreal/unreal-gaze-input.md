@@ -23,7 +23,7 @@ The [Windows Mixed Reality plugin](https://docs.unrealengine.com/Platforms/VR/WM
 
 You can find the full list of features in Unreal's [Head Mounted Display](https://docs.unrealengine.com/BlueprintAPI/Input/HeadMountedDisplay/index.html) and [Eye Tracking](https://docs.unrealengine.com/BlueprintAPI/EyeTracking/index.html) documentation.
 
-In addition to the Unreal APIs, check out the documentation on [eye-gaze-based interaction](eye-gaze-interaction.md) for HoloLens 2 and read up on how [eye tracking on HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/eye-tracking) works.
+In addition to the Unreal APIs, check out the documentation on [eye-gaze-based interaction](../../design/eye-gaze-interaction.md) for HoloLens 2 and read up on how [eye tracking on HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/eye-tracking) works.
 
 > [!IMPORTANT]
 > Eye tracking is only supported on HoloLens 2.
@@ -41,7 +41,7 @@ Gaze input needs to be enabled in the HoloLens project settings before you can u
 That's all the setup you'll need to start adding gaze input to your HoloLens 2 apps in Unreal. More information on gaze input and how it affects users in mixed reality can be found at the links below. Be sure to think about these when building your interactive experiences.
 
 ## See also
-* [Calibration](calibration.md)
-* [Comfort](comfort.md)
-* [Gaze and commit](gaze-and-commit.md)
-* [Voice input](voice-design.md)
+* [Calibration](../../calibration.md)
+* [Comfort](../../design/comfort.md)
+* [Gaze and commit](../../design/gaze-and-commit.md)
+* [Voice input](../../design/voice-design.md)

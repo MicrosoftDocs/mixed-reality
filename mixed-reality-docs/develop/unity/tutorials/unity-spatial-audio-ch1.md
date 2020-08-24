@@ -70,7 +70,7 @@ Using NuGet for Unity, install the MRTK and Microsoft Spatializer plugins:
 
 4. On the menu bar, click **Mixed Reality Toolkit -> Add to Scene and Configure..** to add MRTK to your scene.
 
-For additional guidance, including how to build your app and deploy to a HoloLens 2, see [Chapter 1 of the MR Learning Base Module](mrlearning-base-ch1.md).
+For additional guidance, including how to build your app and deploy to a HoloLens 2, see [Chapter 1 of the MR Learning Base Module](../../../mrlearning-base-ch1.md).
 
 ## Enable the Microsoft Spatializer plugin
 Enable the **Microsoft Spatializer** plugin. Open **Edit -> Project Settings -> Audio**, and change **Spatializer Plugin** to "Microsoft Spatializer". The **Audio** section of the **Project Settings** will now look like this:

@@ -1,6 +1,6 @@
 ---
 title: Mixed Reality native objects in Unity
-description: Get access to the underlying Holographic native objects in Unity.
+description: Get access to underlying Holographic native objects in Unity.
 author: vladkol
 ms.author: vladkol
 ms.date: 05/20/2018
@@ -9,10 +9,9 @@ keywords: unity, mixed reality, native, xrdevice, spatialcoordinatesystem, holog
 ---
 
 
-
 # Mixed Reality native objects in Unity
 
-[Getting a HolographicSpace](getting-a-holographicspace.md) is what every Mixed Reality app does before it starts receiving camera data and rendering frames. In Unity, the engine takes care of those steps for you, handling Holographic objects and updates internally as part of its render loop.
+[Getting a HolographicSpace](../native/getting-a-holographicspace.md) is what every Mixed Reality app does before it starts receiving camera data and rendering frames. In Unity, the engine takes care of those steps for you, handling Holographic objects and updates internally as part of its render loop.
 
 However, in advanced scenarios you may need to get access to the underlying native objects, such as the <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a> and current <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>. <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.html" target="_blank">UnityEngine.XR.XRDevice</a> is what provides access to these native objects.
 
@@ -91,7 +90,7 @@ namespace NumericsConversion
 ### Using HolographicFrame native data
 
 > [!NOTE]
-> Changing the state of the native objects received via HolographicFrameNativeData may cause unpredictable behaviour and rendering artifacts, especially if Unity also reasons about that same state.  For example, you should not call HolographicFrame.UpdateCurrentPrediction, or else the pose prediction that Unity renders with that frame will be out of sync with the pose that Windows is expecting, which will reduce [hologram stability](hologram-stability.md).
+> Changing the state of the native objects received via HolographicFrameNativeData may cause unpredictable behaviour and rendering artifacts, especially if Unity also reasons about that same state.  For example, you should not call HolographicFrame.UpdateCurrentPrediction, or else the pose prediction that Unity renders with that frame will be out of sync with the pose that Windows is expecting, which will reduce [hologram stability](../platform-capabilities-and-apis/hologram-stability.md).
 
 You can use data from HolographicFrameNativeData when access to native interfaces is required for rendering or debugging purposes, in your native plugins or C# code. 
 
@@ -130,4 +129,4 @@ public static bool GetCurrentFrameDateTime(out DateTime frameDateTime)
 * <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a>
 * <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>
 * <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a>
-* [Rendering in DirectX](rendering-in-directx.md)
+* [Rendering in DirectX](../native/rendering-in-directx.md)

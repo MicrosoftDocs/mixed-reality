@@ -35,7 +35,7 @@ This course will teach you how to get the results from the Custom Vision Service
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td> MR and Azure 302b: Custom vision</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -47,16 +47,16 @@ This course will teach you how to get the results from the Custom Vision Service
 ## Prerequisites
 
 > [!NOTE]
-> This tutorial is designed for developers who have basic experience with Unity and C#. Please also be aware that the prerequisites and written instructions within this document represent what has been tested and verified at the time of writing (July 2018). You are free to use the latest software, as listed within the [install the tools](install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you will find in newer software than what is listed below.
+> This tutorial is designed for developers who have basic experience with Unity and C#. Please also be aware that the prerequisites and written instructions within this document represent what has been tested and verified at the time of writing (July 2018). You are free to use the latest software, as listed within the [install the tools](../../install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you will find in newer software than what is listed below.
 
 We recommend the following hardware and software for this course:
 
 - A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
-- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist)
-- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist)
-- [Unity 2017.4](install-the-tools.md#installation-checklist)
-- [Visual Studio 2017](install-the-tools.md#installation-checklist)
-- A [Windows Mixed Reality immersive (VR) headset](immersive-headset-hardware-details.md) or [Microsoft HoloLens](hololens-hardware-details.md) with Developer mode enabled
+- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](../../install-the-tools.md#installation-checklist)
+- [The latest Windows 10 SDK](../../install-the-tools.md#installation-checklist)
+- [Unity 2017.4](../../install-the-tools.md#installation-checklist)
+- [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
+- A [Windows Mixed Reality immersive (VR) headset](../../../discover/immersive-headset-hardware-details.md) or [Microsoft HoloLens](hololens-hardware-details.md) with Developer mode enabled
 - A camera connected to your PC (for immersive headset development)
 - Internet access for Azure setup and Custom Vision API retrieval
 - A series of at least five (5) images (ten (10) recommended) for each object that you would like the Custom Vision Service to recognize. If you wish, you can use [the images already provided with this course (a computer mouse and a keyboard) ](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20302b%20-%20Custom%20vision/ComputerVision_Images.zip).
@@ -67,9 +67,9 @@ We recommend the following hardware and software for this course:
 2.	Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](https://docs.microsoft.com/hololens/hololens-setup). 
 3.	It is a good idea to perform Calibration and Sensor Tuning when beginning developing a new HoloLens app (sometimes it can help to perform those tasks for each user). 
 
-For help on Calibration, please follow this [link to the HoloLens Calibration article](calibration.md#hololens-2).
+For help on Calibration, please follow this [link to the HoloLens Calibration article](../../../calibration.md#hololens-2).
 
-For help on Sensor Tuning, please follow this [link to the HoloLens Sensor Tuning article](sensor-tuning.md).
+For help on Sensor Tuning, please follow this [link to the HoloLens Sensor Tuning article](../../../sensor-tuning.md).
 
 ## Chapter 1 - The Custom Vision Service Portal
 
@@ -79,22 +79,22 @@ To use the *Custom Vision Service* in Azure, you will need to configure an insta
 
 2.  Click on the **Get Started** button.
 
-    ![](images/AzureLabs-Lab302b-01.png)
+    ![Get started with Custom Vision Service](images/AzureLabs-Lab302b-01.png)
 
 3.  Sign in to the *Custom Vision Service* Portal.
 
-    ![](images/AzureLabs-Lab302b-02.png)
+    ![Sign in to portal](images/AzureLabs-Lab302b-02.png)
 
     > [!NOTE]
     > If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
 
 4.  Once you are logged in for the first time, you will be prompted with the *Terms of Service* panel. Click on the checkbox to agree to the terms. Then click on **I agree**.
 
-    ![](images/AzureLabs-Lab302b-03.png)
+    ![Terms of service](images/AzureLabs-Lab302b-03.png)
 
 5.  Having agreed to the Terms, you will be navigated to the *Projects* section of the Portal. Click on **New Project**.
 
-    ![](images/AzureLabs-Lab302b-04.png)
+    ![Create new project](images/AzureLabs-Lab302b-04.png)
 
 6.  A tab will appear on the right-hand side, which will prompt you to specify some fields for the project.
 
@@ -108,7 +108,7 @@ To use the *Custom Vision Service* in Azure, you will need to configure an insta
     
     5. Set the *Domains* as **General**.
 
-        ![](images/AzureLabs-Lab302b-05.png)
+        ![Set the domains](images/AzureLabs-Lab302b-05.png)
 
         > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
 
@@ -122,19 +122,19 @@ To train your Custom Vision Service project:
 
 1.  Click on the **+** button next to **Tags.**
 
-    ![](images/AzureLabs-Lab302b-06.png)
+    ![Add new tag](images/AzureLabs-Lab302b-06.png)
 
 2.  Add the **name** of the object you would like to recognize. Click on **Save**.
 
-    ![](images/AzureLabs-Lab302b-07.png)
+    ![Add object name and save](images/AzureLabs-Lab302b-07.png)
 
 3.  You will notice your **Tag** has been added (you may need to reload your page for it to appear). Click the checkbox alongside your new tag, if it is not already checked.
 
-    ![](images/AzureLabs-Lab302b-08.png)
+    ![Enable new tag](images/AzureLabs-Lab302b-08.png)
 
 4.  Click on **Add Images** in the center of the page.
 
-    ![](images/AzureLabs-Lab302b-09.png)
+    ![Add images](images/AzureLabs-Lab302b-09.png)
 
 5.  Click on **Browse local files**, and search, then select, the images you would like to upload, with the minimum being five (5). Remember all of these images should contain the object which you are training.
 
@@ -143,40 +143,40 @@ To train your Custom Vision Service project:
 
 6.  Once you can see the images in the tab, select the appropriate tag in the **My Tags** box.
 
-    ![](images/AzureLabs-Lab302b-10.png)
+    ![Select tags](images/AzureLabs-Lab302b-10.png)
 
 7.  Click on **Upload files**. The files will begin uploading. Once you have confirmation of the upload, click **Done**.
 
-    ![](images/AzureLabs-Lab302b-11.png)
+    ![Upload files](images/AzureLabs-Lab302b-11.png)
 
 8.  Repeat the same process to create a new **Tag** named **Keyboard** and upload the appropriate photos for it. Make sure to **uncheck** *Mouse* once you have created the new tags, so to show the *Add images* window.
 
 9.  Once you have both Tags set up, click on **Train**, and the first training iteration will start building.
 
-    ![](images/AzureLabs-Lab302b-12.png)
+    ![Enable training iteration](images/AzureLabs-Lab302b-12.png)
 
-10. Once it is built, you will be able to see two buttons called **Make default** and **Prediction URL**. Click on **Make default** first, then click on **Prediction URL**.
+10. Once it's built, you'll be able to see two buttons called **Make default** and **Prediction URL**. Click on **Make default** first, then click on **Prediction URL**.
 
-    ![](images/AzureLabs-Lab302b-13.png)
+    ![Make default and prediction URL](images/AzureLabs-Lab302b-13.png)
 
     > [!NOTE] 
     > The endpoint URL which is provided from this, is set to whichever *Iteration* has been marked as default. As such, if you later make a new *Iteration* and update it as default, you will not need to change your code.
 
 11. Once you have clicked on *Prediction URL*, open *Notepad*, and copy and paste the **URL** and the **Prediction-Key**, so that you can retrieve it when you need it later in the code.
 
-    ![](images/AzureLabs-Lab302b-14.png)
+    ![Copy and paste URL and Prediction-Key](images/AzureLabs-Lab302b-14.png)
 
 12. Click on the **Cog** at the top right of the screen.
 
-    ![](images/AzureLabs-Lab302b-15.png)
+    ![Click on cog icon to open settings](images/AzureLabs-Lab302b-15.png)
 
 13. Copy the **Training Key** and paste it into a *Notepad*, for later use.
 
-    ![](images/AzureLabs-Lab302b-16.png)
+    ![Copy training key](images/AzureLabs-Lab302b-16.png)
 
 14. Also copy your **Project Id**, and also paste it into your *Notepad* file, for later use.
 
-    ![](images/AzureLabs-Lab302b-16a.png)
+    ![Copy project id](images/AzureLabs-Lab302b-16a.png)
 
 ## Chapter 3 - Set up the Unity project
 
@@ -184,19 +184,19 @@ The following is a typical set up for developing with mixed reality, and as such
 
 1.  Open *Unity* and click **New**.
 
-    ![](images/AzureLabs-Lab302b-17.png)
+    ![Create new Unity project](images/AzureLabs-Lab302b-17.png)
 
 2.  You will now need to provide a Unity project name. Insert **AzureCustomVision.** Make sure the project template is set to **3D**. Set the **Location** to somewhere appropriate for you (remember, closer to root directories is better). Then, click **Create project**.
 
-    ![](images/AzureLabs-Lab302b-18.png)
+    ![Configure project settings](images/AzureLabs-Lab302b-18.png)
 
 3.  With Unity open, it is worth checking the default **Script Editor** is set to **Visual Studio**. Go to **Edit* > *Preferences** and then from the new window, navigate to **External Tools**. Change **External Script Editor** to **Visual Studio 2017**. Close the **Preferences** window.
 
-    ![](images/AzureLabs-Lab302b-19.png)
+    ![Configure external tools](images/AzureLabs-Lab302b-19.png)
 
 4.  Next, go to **File > Build Settings** and select **Universal Windows Platform**, then click on the **Switch Platform** button to apply your selection.
 
-    ![](images/AzureLabs-Lab302b-20.png)
+    ![Configure build settings ](images/AzureLabs-Lab302b-20.png)
 
 5.  While still in **File > Build Settings** and make sure that:
 
@@ -212,21 +212,21 @@ The following is a typical set up for developing with mixed reality, and as such
 
         1. Do this by selecting **Add Open Scenes**. A save window will appear.
 
-            ![](images/AzureLabs-Lab302b-21.png)
+            ![Add open scene to build list](images/AzureLabs-Lab302b-21.png)
 
         2. Create a new folder for this, and any future, scene, then select the **New folder** button, to create a new folder, name it **Scenes**.
 
-            ![](images/AzureLabs-Lab302b-22.png)
+            ![Create new scene folder](images/AzureLabs-Lab302b-22.png)
 
         3. Open your newly created **Scenes** folder, and then in the *File name:* text field, type **CustomVisionScene**, then click on **Save**.
 
-            ![](images/AzureLabs-Lab302b-23.png)
+            ![Name new scene file](images/AzureLabs-Lab302b-23.png)
 
             > Be aware, you must save your Unity scenes within the *Assets* folder, as they must be associated with the Unity project. Creating the scenes folder (and other similar folders) is a typical way of structuring a Unity project.
             
     7.  The remaining settings, in *Build Settings*, should be left as default for now.
 
-        ![](images/AzureLabs-Lab302b-24.png)
+        ![Default build settings](images/AzureLabs-Lab302b-24.png)
 
 6.  In the *Build Settings* window, click on the **Player Settings** button, this will open the related panel in the space where the *Inspector* is located.
 
@@ -240,7 +240,7 @@ The following is a typical set up for developing with mixed reality, and as such
 
         3. **API Compatibility Level** should be **.NET 4.6**
 
-        ![](images/AzureLabs-Lab302b-25.png)
+        ![Set API compantiblity](images/AzureLabs-Lab302b-25.png)
 
     2.  Within the **Publishing Settings** tab, under **Capabilities**, check:
 
@@ -250,11 +250,11 @@ The following is a typical set up for developing with mixed reality, and as such
 
         3. **Microphone**
 
-        ![](images/AzureLabs-Lab302b-26.png)
+        ![Configure publishing settings](images/AzureLabs-Lab302b-26.png)
 
     3.  Further down the panel, in **XR Settings** (found below **Publish Settings**), tick **Virtual Reality Supported**, make sure the **Windows Mixed Reality SDK** is added.
 
-    ![](images/AzureLabs-Lab302b-27.png)
+    ![Configure XR settings](images/AzureLabs-Lab302b-27.png)
 
 8.  Back in *Build Settings* *Unity C\# Projects* is no longer greyed out; tick the checkbox next to this.
 
@@ -275,17 +275,17 @@ To import the Newtonsoft library into your project, use the Unity Package which 
 
 2.  In the **Import Unity Package** box that pops up, ensure everything under (and including) **Plugins** is selected.
 
-    ![](images/AzureLabs-Lab302b-28.png)
+    ![Import all package items](images/AzureLabs-Lab302b-28.png)
 
 3.  Click the **Import** button to add the items to your project.
 
 4.  Go to the **Newtonsoft** folder under **Plugins** in the project view and select the *Newtonsoft.Json plugin*.
 
-    ![](images/AzureLabs-Lab302b-29.png)
+    ![Select Newtonsoft plugin](images/AzureLabs-Lab302b-29.png)
 
 5.  With the *Newtonsoft.Json plugin* selected, ensure that **Any Platform** is **unchecked**, then ensure that **WSAPlayer** is also **unchecked**, then click **Apply**. This is just to confirm that the files are configured correctly.
 
-    ![](images/AzureLabs-Lab302b-30.png)
+    ![Configure Newtonsoft plugin](images/AzureLabs-Lab302b-30.png)
 
     > [!NOTE]
     > Marking these plugins configures them to only be used in the Unity Editor. There are a different set of them in the WSA folder which will be used after the project is exported from Unity.
@@ -295,7 +295,7 @@ To import the Newtonsoft library into your project, use the Unity Package which 
     -   **only** **WSAPlayer** is **checked**
     -   **Dont process** is **checked**
 
-    ![](images/AzureLabs-Lab302b-31.png)
+    ![Configure Newtonsoft plugin platform settings](images/AzureLabs-Lab302b-31.png)
 
 ## Chapter 5 - Camera setup
 
@@ -313,7 +313,7 @@ To import the Newtonsoft library into your project, use the Unity Package which 
 
     5.  Set the **Background** Color of the camera Component to **Black, Alpha 0 (Hex Code: #00000000)** (ignore this for immersive headset).
 
-    ![](images/AzureLabs-Lab302b-32.png)
+    ![Configure Camera component properties](images/AzureLabs-Lab302b-32.png)
 
 
 ## Chapter 6 - Create the CustomVisionAnalyser class.
@@ -339,7 +339,7 @@ To create this class:
 
 1.  Right-click in the *Asset Folder* located in the *Project Panel*, then click **Create > Folder**. Call the folder **Scripts**.
 
-    ![](images/AzureLabs-Lab302b-33.png)
+    ![Create scripts folder](images/AzureLabs-Lab302b-33.png)
 
 2.  Double-click on the folder just created, to open it.
 
@@ -1673,7 +1673,7 @@ To deploy on HoloLens:
 
 4.  In the *Solution Platform*, select **x86, Remote Machine**. You will be prompted to insert the **IP address** of a remote device (the HoloLens, in this case, which you noted).
 
-    ![](images/AzureLabs-Lab302b-34.png)
+    ![Set IP address](images/AzureLabs-Lab302b-34.png)
 
 5. Go to **Build** menu and click on **Deploy Solution** to sideload the application to your HoloLens.
 
@@ -1717,30 +1717,30 @@ To make your Service more accurate, you will need to continue to train the model
 
 1. Head to your Azure Custom Vision Portal again, and once you are in your project, select the *Predictions* tab (from the top center of the page):
 
-    ![](images/AzureLabs-Lab302b-35.png)
+    ![Select predictions tab](images/AzureLabs-Lab302b-35.png)
 
 2. You will see all the images which were sent to your Service whilst your application was running. If you hover over the images, they will provide you with the predictions that were made for that image:
 
-    ![](images/AzureLabs-Lab302b-36.png)
+    ![List of prediction images](images/AzureLabs-Lab302b-36.png)
 
 3. Select one of your images to open it. Once open, you will see the predictions made for that image to the right. If you the predictions were correct, and you wish to add this image to your Service's training model, click the *My Tags* input box, and select the tag you wish to associate. When you are finished, click the *Save and close* button to the bottom right, and continue on to the next image.
 
-    ![](images/AzureLabs-Lab302b-37.png)
+    ![Select image to open](images/AzureLabs-Lab302b-37.png)
 
 4. Once you are back to the grid of images, you will notice the images which you have added tags to (and saved), will be removed. If you find any images which you think do not have your tagged item within them, you can delete them, by clicking the tick on that image (can do this for several images) and then clicking *Delete* in the upper right corner of the grid page. On the popup that follows, you can click either *Yes, delete* or *No*, to confirm the deletion or cancel it, respectively. 
 
-    ![](images/AzureLabs-Lab302b-38.png)
+    ![Delete images](images/AzureLabs-Lab302b-38.png)
 
 5. When you are ready to proceed, click the green *Train* button in the top right. Your Service model will be trained with all the images which you have now provided (which will make it more accurate). Once the training is complete, make sure to click the *Make default* button once more, so that your *Prediction URL* continues to use the most up-to-date iteration of your Service.
 
-    ![](images/AzureLabs-Lab302b-39.png)
-    ![](images/AzureLabs-Lab302b-40.png)
+    ![Start training service model](images/AzureLabs-Lab302b-39.png)
+    ![Select make default option](images/AzureLabs-Lab302b-40.png)
 
 ## Your finished Custom Vision API application
 
 Congratulations, you built a mixed reality app that leverages the Azure Custom Vision API to recognize real world objects, train the Service model, and display confidence of what has been seen.
 
-![](images/AzureLabs-Lab302b-00.png)
+![Finished project example](images/AzureLabs-Lab302b-00.png)
 
 ## Bonus exercises
 

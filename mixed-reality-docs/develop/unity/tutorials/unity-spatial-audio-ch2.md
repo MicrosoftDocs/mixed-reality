@@ -25,7 +25,7 @@ The button prefab is the entry represented by a blue icon, rather than a white i
 ![Button transform](images/spatial-audio/button-transform.png)
 
 ## Spatialize button feedback
-In this step, you'll spatialize the audio feedback for the button. For related design suggestions, see [spatial sound design](spatial-sound-design.md). 
+In this step, you'll spatialize the audio feedback for the button. For related design suggestions, see [spatial sound design](../../../design/spatial-sound-design.md). 
 
 The **Audio Mixer** pane is where you'll define destinations, called **Mixer Groups**, for audio playback from **Audio Source** components. 
 * Open the **Audio Mixer** pane from the menu bar using **Window -> Audio -> Audio Mixer**

@@ -8,6 +8,7 @@ ms.topic: article
 keywords: Windows Mixed Reality, hand tracking, Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, features, documentation, guides, holograms, game development
 ---
 
+
 # Hand tracking in Unreal
 
 ## Overview
@@ -22,7 +23,7 @@ Hand pose lets you track the hands and fingers of the active user and use it as 
 
 The `EWMRHandKeypoint` enum describes the Hand’s bone hierarchy. You can find each hand keypoint listed in your Blueprints:
 
-![Hand Keypoint BP](images/unreal/hand-keypoint-bp.png)
+![Hand Keypoint BP](../native/images/hand-keypoint-bp.png)
 
 The full C++ enum is listed below:
 ```cpp
@@ -326,7 +327,7 @@ You can find the Blueprint function in under **Windows Mixed Reality Spatial Inp
 ![Capture Gestures](images/unreal/capture-gestures.png)
 
 ### Enum
-The `ESPatialInputAxisGestureType` enum describes spatial axis gestures and are [fully documented](holograms-211.md).
+The `ESPatialInputAxisGestureType` enum describes spatial axis gestures and are [fully documented](../../out-of-scope/deprecated/holograms-211.md).
 
 Blueprint: 
 

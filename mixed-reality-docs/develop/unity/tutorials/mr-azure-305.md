@@ -37,7 +37,7 @@ In your application, it is up to you as to how you will integrate the results wi
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td>MR and Azure 305: Functions and storage</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -49,16 +49,16 @@ In your application, it is up to you as to how you will integrate the results wi
 ## Prerequisites
 
 > [!NOTE]
-> This tutorial is designed for developers who have basic experience with Unity and C#. Please also be aware that the prerequisites and written instructions within this document represent what has been tested and verified at the time of writing (May 2018). You are free to use the latest software, as listed within the [install the tools](install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you'll find in newer software than what's listed below.
+> This tutorial is designed for developers who have basic experience with Unity and C#. Please also be aware that the prerequisites and written instructions within this document represent what has been tested and verified at the time of writing (May 2018). You are free to use the latest software, as listed within the [install the tools](../../install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you'll find in newer software than what's listed below.
 
 We recommend the following hardware and software for this course:
 
 - A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
-- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md#installation-checklist)
-- [The latest Windows 10 SDK](install-the-tools.md#installation-checklist)
-- [Unity 2017.4](install-the-tools.md#installation-checklist)
-- [Visual Studio 2017](install-the-tools.md#installation-checklist)
-- A [Windows Mixed Reality immersive (VR) headset](immersive-headset-hardware-details.md) or [Microsoft HoloLens](hololens-hardware-details.md) with Developer mode enabled
+- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](../../install-the-tools.md#installation-checklist)
+- [The latest Windows 10 SDK](../../install-the-tools.md#installation-checklist)
+- [Unity 2017.4](../../install-the-tools.md#installation-checklist)
+- [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
+- A [Windows Mixed Reality immersive (VR) headset](../../../discover/immersive-headset-hardware-details.md) or [Microsoft HoloLens](../../../hololens-hardware-details.md) with Developer mode enabled
 - A subscription to an Azure account for creating Azure resources
 - Internet access for Azure setup and data retrieval
 
@@ -229,9 +229,9 @@ To create an Azure Function:
 
 15. Click on **Get function URL** and take note of the *endpoint* displayed. You will need to insert it into the *AzureServices* class that you will create later in this course.
 
-    ![get function endpoint](images/AzureLabs-Lab5-16.png)
+    ![Get function endpoint](images/AzureLabs-Lab5-16.png)
 
-    ![get function endpoint](images/AzureLabs-Lab5-16-5.png)
+    ![Insert function endpoint](images/AzureLabs-Lab5-16-5.png)
 
 ## Chapter 3 - Setting up the Unity project
 
@@ -244,11 +244,11 @@ Set up and test your mixed reality immersive headset.
 
 1.  Open Unity and click **New**.
 
-    ![create new unity project](images/AzureLabs-Lab5-17.png)
+    ![Create new unity project](images/AzureLabs-Lab5-17.png)
 
 2.  You will now need to provide a Unity Project name. Insert **MR_Azure_Functions**. Make sure the project type is set to **3D**. Set the *Location* to somewhere appropriate for you (remember, closer to root directories is better). Then, click **Create project**.
 
-    ![give new unity project a name](images/AzureLabs-Lab5-18.png)
+    ![Give new unity project a name](images/AzureLabs-Lab5-18.png)
 
 3.  With Unity open, it is worth checking the default **Script Editor** is set to **Visual Studio**. Go to **Edit** > **Preferences** and then from the new window, navigate to **External Tools**. Change **External Script Editor** to **Visual Studio 2017**. Close the **Preferences** window.
 
@@ -284,11 +284,11 @@ Set up and test your mixed reality immersive headset.
 
         3.  Open your newly created **Scenes** folder, and then in the **File name:** text field, type **FunctionsScene**, then press **Save**.
 
-            ![save functions scene](images/AzureLabs-Lab5-23.png)
+            ![Save functions scene](images/AzureLabs-Lab5-23.png)
 
 6.  The remaining settings, in **Build Settings**, should be left as default for now.
 
-    ![save functions scene](images/AzureLabs-Lab5-24.png)
+    ![Leave default build settings](images/AzureLabs-Lab5-24.png)
 
 7.  In the *Build Settings* window, click on the **Player Settings** button, this will open the related panel in the space where the *Inspector* is located.
 
@@ -452,11 +452,11 @@ Set up and test your mixed reality immersive headset.
 
 10. Your Hierarchy Panel structure should now look like this:
 
-    ![text mesh in scene view](images/AzureLabs-Lab5-43b.png)
+    ![Text mesh in hierarchy](images/AzureLabs-Lab5-43b.png)
 
 10. Your scene should now look like this:
 
-    ![text mesh in scene view](images/AzureLabs-Lab5-44.png)
+    ![Text mesh in scene view](images/AzureLabs-Lab5-44.png)
 
 
 ## Chapter 6 - Import Azure Storage for Unity

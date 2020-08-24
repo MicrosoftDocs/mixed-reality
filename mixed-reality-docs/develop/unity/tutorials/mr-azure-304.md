@@ -1,6 +1,6 @@
 ---
 title: MR and Azure 304 - Face recognition
-description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
+description: Complete this course to implement Azure Face Recognition within a mixed reality application.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
@@ -36,7 +36,7 @@ In your application, it is up to you as to how you will integrate the results wi
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td> MR and Azure 304: Face recognition</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -48,16 +48,16 @@ In your application, it is up to you as to how you will integrate the results wi
 ## Prerequisites
 
 > [!NOTE]
-> This tutorial is designed for developers who have basic experience with Unity and C#. Please also be aware that the prerequisites and written instructions within this document represent what has been tested and verified at the time of writing (May 2018). You are free to use the latest software, as listed within the [install the tools](install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you'll find in newer software than what's listed below.
+> This tutorial is designed for developers who have basic experience with Unity and C#. Please also be aware that the prerequisites and written instructions within this document represent what has been tested and verified at the time of writing (May 2018). You are free to use the latest software, as listed within the [install the tools](../../install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you'll find in newer software than what's listed below.
 
 We recommend the following hardware and software for this course:
 
 - A development PC, [compatible with Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for immersive (VR) headset development
-- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](install-the-tools.md)
-- [The latest Windows 10 SDK](install-the-tools.md)
-- [Unity 2017.4](install-the-tools.md)
-- [Visual Studio 2017](install-the-tools.md)
-- A [Windows Mixed Reality immersive (VR) headset](immersive-headset-hardware-details.md) or [Microsoft HoloLens](hololens-hardware-details.md) with Developer mode enabled
+- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](../../install-the-tools.md)
+- [The latest Windows 10 SDK](../../install-the-tools.md)
+- [Unity 2017.4](../../install-the-tools.md)
+- [Visual Studio 2017](../../install-the-tools.md)
+- A [Windows Mixed Reality immersive (VR) headset](../../../discover/immersive-headset-hardware-details.md) or [Microsoft HoloLens](../../../hololens-hardware-details.md) with Developer mode enabled
 - A camera connected to your PC (for immersive headset development)
 - Internet access for Azure setup and Face API retrieval
 
@@ -67,9 +67,9 @@ We recommend the following hardware and software for this course:
 2.	Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](https://docs.microsoft.com/hololens/hololens-setup). 
 3.	It is a good idea to perform Calibration and Sensor Tuning when beginning developing a new HoloLens App (sometimes it can help to perform those tasks for each user). 
 
-For help on Calibration, please follow this [link to the HoloLens Calibration article](calibration.md#hololens-2).
+For help on Calibration, please follow this [link to the HoloLens Calibration article](../../../calibration.md#hololens-2).
 
-For help on Sensor Tuning, please follow this [link to the HoloLens Sensor Tuning article](sensor-tuning.md).
+For help on Sensor Tuning, please follow this [link to the HoloLens Sensor Tuning article](../../../sensor-tuning.md).
 
 ## Chapter 1 - The Azure Portal
 
@@ -321,12 +321,12 @@ To import the library:
 1.  Download the Unity Package.
 2.  Click on **Assets**, **Import Package**, **Custom Package**.
 
-    ![Import the Newtonsoft.Json library](images/AzureLabs-Lab4-20.png)
+    ![Import Newtonsoft.Json](images/AzureLabs-Lab4-20.png)
 
 3.	Look for the Unity Package you have downloaded, and click Open.
 4.  Make sure all the components of the package are ticked and click **Import**.
 
-    ![Import the Newtonsoft.Json library](images/AzureLabs-Lab4-21.png)
+    ![Import the Newtonsoft.Json assets](images/AzureLabs-Lab4-21.png)
 
 ## Chapter 6 - Create the FaceAnalysis class
 
@@ -799,13 +799,13 @@ To begin the Build process:
 2.	Go to File, Build Settings, click on Add Open Scenes.
 3.	Make sure to tick Unity C# Projects.
 
-    ![Deploy the solution from Visual Studio.](images/AzureLabs-Lab4-24.png)
+    ![Deploy the Visual Studio solution](images/AzureLabs-Lab4-24.png)
 
 4.	Press Build. Upon doing so, Unity will launch a File Explorer window, where you need to create and then select a folder to build the app into. Create that folder now, within the Unity project, and call it App. Then with the App folder selected, press Select Folder. 
 5.	Unity will begin building your project, out to the App folder. 
 6.	Once Unity has finished building (it might take some time), it will open a File Explorer window at the location of your build.
 
-    ![Deploy the solution from Visual Studio.](images/AzureLabs-Lab4-25.png)
+    ![Deploy the solution from Visual Studio](images/AzureLabs-Lab4-25.png)
 
 7.	Open your App folder, and then open the new Project Solution (as seen above, MR_FaceRecognition.sln).
 
@@ -826,7 +826,7 @@ To deploy on HoloLens:
 3.	In the Solution Configuration select **Debug**.
 4.	In the Solution Platform, select **x86**, **Remote Machine**. 
 
-    ![Deploy the solution from Visual Studio.](images/AzureLabs-Lab4-26.png)
+    ![Change the solution configuration](images/AzureLabs-Lab4-26.png)
  
 5.	Go to the **Build menu** and click on **Deploy Solution**, to sideload the application to your HoloLens.
 6.	Your App should now appear in the list of installed apps on your HoloLens, ready to be launched!

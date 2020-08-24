@@ -9,7 +9,6 @@ keywords: Vuforia, markers, coordinates, frame of reference, tracking
 ---
 
 
-
 # Using Vuforia Engine with Unity
 
 Vuforia Engine brings an important capability to HoloLens – the power to connect AR experiences to specific images and objects in the environment. You can use this capability to overlay guided step-by-step instructions on top of machinery for the industrial enterprise or add digital features and experiences to a physical product or game.
@@ -21,7 +20,7 @@ Existing Vuforia Engine apps that were built for phones and tablets can easily b
 
 ## Get the tools
 
-[Install the recommended versions](install-the-tools.md) of Visual Studio and Unity and then configure Unity to use Visual Studio and the preferred IDE and compiler. 
+[Install the recommended versions](../install-the-tools.md) of Visual Studio and Unity and then configure Unity to use Visual Studio and the preferred IDE and compiler. 
 
 When installing Unity, be sure to install the “Windows Store IL2CPP Scripting Backend”.
 
@@ -100,9 +99,9 @@ To change the performance mode in Unity, navigate to Vuforia Configuration (Ctrl
 
 
 ## See also
-* [Install the tools](install-the-tools.md)
-* [Coordinate systems](coordinate-systems.md)
-* [Spatial mapping](spatial-mapping.md)
+* [Install the tools](../install-the-tools.md)
+* [Coordinate systems](../../design/coordinate-systems.md)
+* [Spatial mapping](../../design/spatial-mapping.md)
 * [Camera in Unity](camera-in-unity.md)
 * [Exporting and building a Unity Visual Studio solution](exporting-and-building-a-unity-visual-studio-solution.md)
 * [Vuforia documentation: Developing for Windows 10 in Unity](https://library.vuforia.com/articles/Solution/Developing-for-Windows-10-in-Unity)
