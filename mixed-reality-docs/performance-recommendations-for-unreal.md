@@ -23,15 +23,42 @@ You can find each of the following settings in **Edit > Project Settings**.
 
 ![Mobile target setting](images/unreal/performance-recommendations-img-01.png)
 
-2. Disabling occlusion culling:
+2. Forward Rendering: 
+    * This feature is much better for Mixed Reality than the default Deferred rendering pipeline. This is primarily because of the number of features that can then be individually turned off. 
+    * You can find more information in [Unreal's documentation](https://docs.unrealengine.com/Platforms/VR/DevelopVR/VRPerformance/index.html).
+
+![Forward rendering](images/unreal/performance-recommendations-img-04.png)
+
+3. Vertex fogging: 
+
+![Vetex fogging options](images/unreal/performance-recommendations-img-05.png)
+
+4. Disabling occlusion culling:
     * Scroll to the **Engine** section, select **Rendering**, expand the **Culling** section, and uncheck **Occlusion Culling**.
         + If you need occlusion culling for a detailed scene being rendered, it's recommended that you enable **Support Software Occlusion Culling** in **Engine > Rendering**. This lets Unreal to do the work on the CPU and avoid GPU occlusion queries, which perform poorly on HoloLens 2.
+    * Occlusion culling on the GPU on mobile devices is slow. Generally, we want the GPU to be concerned primarily with rendering. If you feel that there occlusion will help performance, try enabling software occlusion instead. Note that enabling software occlusion could make performance worse if you are already CPU bound, i.e, you have a large number of draw-calls.
 
 ![Disable occlusion culling](images/unreal/performance-recommendations-img-02.png)
 
-3. Using mobile multi-view:
+	
+5. Depth-Stencil:
+    * This feature requires an extra pass, meaning its slow. Translucency is slow on Unreal; you can find more information in [Unreal's documentation](https://docs.unrealengine.com/Engine/Performance/Guidelines/index.html).
+
+![Depth stencil](images/unreal/performance-recommendations-img-06.png)
+
+6. Using mobile multi-view:
     * Scroll to the **Engine** section, select **Rendering**, expand the **VR** section, and enable both **Instanced Stereo** and **Mobile Multi-View**. Mobile HDR should be unchecked.
 
 ![VR rendering settings](images/unreal/performance-recommendations-img-03.png)
 
-4. Setting the **Maximum number of CSM cascades to render** to **1** and **Max Movable Spotlights / Point Lights** to **0**. 
+7. Cascaded Shadow Maps: 
+    * Reducing the number of shadow maps will improve performance. 
+    * Setting the **Maximum number of CSM cascades to render** to **1**.
+
+![Cascaded shadow maps](images/unreal/performance-recommendations-img-07.png)
+
+8. Mobile Shader Permutation Reduction
+    * If your lights don't move independently of the camera, then you can safely set this value to 0. The primary benefit is that it will allow Unreal to cull several shader permutations, speeding up shader compilation.
+
+![Mobile shader permutation reduction](images/unreal/performance-recommendations-img-08.png)
+
