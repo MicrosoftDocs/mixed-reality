@@ -24,10 +24,10 @@ Developers can purchase any of the Windows Mixed Reality immersive headsets avai
 * Inside-out tracking
 
 ## Input support
-* [Motion controllers](motion-controllers.md)
+* [Motion controllers](../design/motion-controllers.md)
 * [Gamepads supported by UWP](hardware-accessories.md)
 * [Mouse and keyboard](hardware-accessories.md)
-* [Voice](voice-input.md) (via connected headset or microphone)
+* [Voice](../design/voice-input.md) (via connected headset or microphone)
 
 ## See also
-* [Install the tools](install-the-tools.md)
+* [Install the tools](../install-the-tools.md)

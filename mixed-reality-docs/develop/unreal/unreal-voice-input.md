@@ -55,8 +55,7 @@ Speech Mappings can be used as Input components like Action or Axis Mappings or 
 That's all the setup you'll need to start adding voice input to your HoloLens apps in Unreal. You can find more information on speech and interactivity can be found at the links below, and be sure to think about the experience you're creating for your users.
 
 ## See also
-* [Voice Input](voice-input.md)
-* [Gaze and commit](gaze-and-commit.md)
-* [Instinctual interactions](interaction-fundamentals.md)
-* [MR Input 212: Voice](holograms-212.md)
+* [Voice Input](../../design/voice-input.md)
+* [Gaze and commit](../../design/gaze-and-commit.md)
+* [Instinctual interactions](../../design/interaction-fundamentals.md)
 

@@ -14,7 +14,7 @@ Windows Mixed Reality devices support accessories. You can use Bluetooth or USB 
 
 For information about using Bluetooth accessories with HoloLens, see [Connect to Bluetooth and USB-C devices](https://docs.microsoft.com/hololens/hololens-connect-devices).
 
-Windows Mixed Reality immersive headsets require accessories for input beyond [gaze](gaze-and-commit.md) and [voice](voice-input.md). Supported accessories include **keyboard and mouse**, **gamepad**, and **[motion controllers](motion-controllers.md)**.
+Windows Mixed Reality immersive headsets require accessories for input beyond [gaze](../design/gaze-and-commit.md) and [voice](../design/voice-input.md). Supported accessories include **keyboard and mouse**, **gamepad**, and **[motion controllers](../design/motion-controllers.md)**.
 
 ## Pairing Bluetooth accessories
 
@@ -29,7 +29,7 @@ Pairing a Bluetooth peripheral with an immersive headset is similar to pairing a
 
 ## Motion controllers
 
-Windows Mixed Reality [motion controllers](motion-controllers.md) are supported by immersive headsets, but not HoloLens. These controllers offer precise and responsive tracking of movement in your field of view using the sensors in the immersive headset, meaning there is no need to install hardware on the walls in your space. Each controller features several methods of input.
+Windows Mixed Reality [motion controllers](../design/motion-controllers.md) are supported by immersive headsets, but not HoloLens. These controllers offer precise and responsive tracking of movement in your field of view using the sensors in the immersive headset, meaning there is no need to install hardware on the walls in your space. Each controller features several methods of input.
 
 ![Windows Mixed Reality motion controllers](images/winmr-ck-1080x1080-350px.jpg)
 

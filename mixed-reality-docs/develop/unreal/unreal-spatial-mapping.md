@@ -13,7 +13,7 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, dev
 ## Overview
 Spatial mapping makes it possible to place objects on surfaces in the physical world by showing the world around the HoloLens, which makes holograms seem more real to the user. Spatial mapping also anchors objects in the user's world by taking advantage of real world depth cues. This helps convince the user that these holograms are actually in their space; holograms floating in space or moving with the user will not feel as real. You want to place items for comfort whenever possible.
 
-You can find more information on spatial mapping quality, placement, occlusion, rendering, and more, in the [Spatial mapping](spatial-mapping.md) document.
+You can find more information on spatial mapping quality, placement, occlusion, rendering, and more, in the [Spatial mapping](../../design/spatial-mapping.md) document.
 
 ## Enabling Spatial Mapping
 
@@ -75,4 +75,4 @@ There are similar delegates for updated and removed events:
 You can find the full list of events in the [UARTrackedGeometry](https://docs.unrealengine.com/API/Runtime/AugmentedReality/UARTrackedGeometry/index.html) API.
 
 ## See also
-* [Spatial mapping](spatial-mapping.md)
+* [Spatial mapping](../../design/spatial-mapping.md)
