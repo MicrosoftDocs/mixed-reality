@@ -192,7 +192,7 @@ Use the following workflow to make changes to the documentation with Visual Stud
       ![Sync changes from MicrosoftDocs/mixed-reality to your fork](images/sync_repos.PNG)
    2. In Visual Studio Code, click the sync button to sync your freshly updated fork to the local clone.
       
-      ![Click the sync button](images/sync_clone.png)
+      ![Click the sync button image](images/sync_clone.png)
 2. Create or edit articles in your cloned repo using Visual Studio Code.
    1. Edit one or more articles (add images to “images” folder if necessary).
    2. **Save** changes in **Explorer**.

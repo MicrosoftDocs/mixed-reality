@@ -9,7 +9,6 @@ keywords: Windows Mixed Reality, design, interaction, voice
 ---
 
 
-
 # Voice commanding
 
 When using voice commands, gaze is typically used as the targeting mechanism, whether as a pointer ("select") or to direct your command to an application ("see it, say it"). Of course, some voice commands don't require a target at all, like "go to start" or "Hey, Cortana."
@@ -26,9 +25,9 @@ When using voice commands, gaze is typically used as the targeting mechanism, wh
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><a href="../discover/hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="../immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td>Voice commanding</td>
@@ -69,9 +68,9 @@ Saying "select" at any time will activate whatever the gaze cursor is pointing a
 Windows Mixed Reality has employed a "see it, say it" voice model where **labels on buttons are identical to the associated voice commands**. Because there isn’t any dissonance between the label and the voice command, users can better understand what to say to control the system. To reinforce this, while dwelling on a button, a **"voice dwell tip"** appears to communicate which buttons are voice enabled.
 
 
-![See it say it example 1](images/voice-seeitsayit1-640px.jpg)
+![See it say it example 1](../design/images/voice-seeitsayit1-640px.jpg)
 
-![See it say it example 2](images/voice-seeitsayit2-640px.jpg)<br>
+![See it say it example 2](../design/images/voice-seeitsayit2-640px.jpg)<br>
 *Examples of "see it, say it"*
 
 ### Voice's strengths
@@ -93,7 +92,7 @@ Voice also has some weaknesses. Fine-grained control is one of them. (for exampl
 
 When Voice is applied properly, the user understands **what they can say and get clear feedback** the system **heard them correctly**. These two signals make the user feel confident in using Voice as a primary input. Below is a diagram showing what happens to the cursor when voice input is recognized and how it communicates that to the user.
 
-![Voice feedback states for cursor](images/voicefeedbackstates.png)<br>
+![Voice feedback states for cursor](../design/images/voicefeedbackstates.png)<br>
 *Voice feedback states for cursor*
 
 ## Top things users should know about "speech" in mixed reality
@@ -111,5 +110,5 @@ When Voice is applied properly, the user understands **what they can say and get
 * Can I use voice to command things out the holographic frame on HoloLens?
 
 ## See also
-* [Gestures](gaze-and-commit.md#composite-gestures)
-* [Head-gaze and dwell](gaze-and-dwell.md)
+* [Gestures](../design/gaze-and-commit.md#composite-gestures)
+* [Head-gaze and dwell](../design/gaze-and-dwell.md)

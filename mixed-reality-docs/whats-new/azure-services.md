@@ -15,7 +15,7 @@ Unlock what every human is an expert at—the three-dimensional, physical world 
 
 ## Multi-user, spatially aware applications using Spatial Anchors
 
-![ Azure Spatial Anchors image](images/AzureSpatialAnchors.jpg)
+![ Azure Spatial Anchors image](../design/images/AzureSpatialAnchors.jpg)
 
 Build multi-user, spatially aware mixed reality applications using Spatial Anchors. Create mixed reality apps that map, designate, and recall precise points of interest that are accessible across HoloLens, iOS, and Android devices. Enable wayfinding across spaces to help your users collaborate more efficiently.
 
@@ -24,7 +24,7 @@ Build multi-user, spatially aware mixed reality applications using Spatial Ancho
 
 ## Interactive, high-quality 3D models using Remote Rendering
 
-![ Remote rendering image](images/RemoteRendering.jpg)
+![ Remote rendering image](../design/images/RemoteRendering.jpg)
 
 In scenarios where every detail matters—industrial plant management, design review for assets like truck engines, pre-operative surgery planning, and more—3D visualization brings that detail to life. It's what helps designers, engineers, doctors, and students better understand complex information and make the right call.
 
@@ -62,5 +62,5 @@ Bring interactive, high-quality 3D models to untethered devices with every detai
 
 ## See also
 
-* Azure Spatial Anchor tutorials for HoloLens 2 - [1 of 3 Getting started with Azure Spatial Anchors](mrlearning-asa-ch1.md)
-* Azure Speech Services tutorials for HoloLens 2 - [1 of 4 Integrating and using speech recognition and transcription](mrlearning-speechSDK-ch1.md)
+* Azure Spatial Anchor tutorials for HoloLens 2 - [1 of 3 Getting started with Azure Spatial Anchors](.../develop/unity/tutorials/mrlearning-asa-ch1.md)
+* Azure Speech Services tutorials for HoloLens 2 - [1 of 4 Integrating and using speech recognition and transcription](../develop/unity/tutorials/mrlearning-speechSDK-ch1.md)
