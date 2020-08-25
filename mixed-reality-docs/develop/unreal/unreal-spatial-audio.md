@@ -1,6 +1,6 @@
 ---
 title: Spatial audio in Unreal
-description: Overview of the spatial audio plugin for Unreal engine.
+description: Overview of the spatial audio plugin for Unreal.
 author: hferrone
 ms.author: v-haferr
 ms.date: 06/15/2020
@@ -25,7 +25,7 @@ The first step to adding spatial sound to your project is installing the Microso
 3. Restarting the Unreal Editor by selecting **Restart Now** from the plugins page. 
 
 > [!NOTE]
-> If you haven't already, you'll need to install the **Microsoft Windows Mixed Reality** and **HoloLens** plugins by following the instructions in the **[Initializing your project](unreal-uxt-ch2.md)** section of our Unreal tutorial series.
+> If you haven't already, you'll need to install the **Microsoft Windows Mixed Reality** and **HoloLens** plugins by following the instructions in the **[Initializing your project](tutorials/unreal-uxt-ch2.md)** section of our Unreal tutorial series.
 
 ![Unreal spatial audio plugin](images/unreal-spatial-audio-img-01.png)
 

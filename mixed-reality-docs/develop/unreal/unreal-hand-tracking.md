@@ -23,7 +23,7 @@ Hand pose lets you track the hands and fingers of the active user and use it as 
 
 The `EWMRHandKeypoint` enum describes the Hand’s bone hierarchy. You can find each hand keypoint listed in your Blueprints:
 
-![Hand Keypoint BP](../native/images/hand-keypoint-bp.png)
+![Hand Keypoint BP](images/hand-keypoint-bp.png)
 
 The full C++ enum is listed below:
 ```cpp
@@ -60,7 +60,7 @@ enum class EWMRHandKeypoint : uint8
 
 You can find the numerical values for each enum case in the [Windows.Perception.People.HandJointKind](https://docs.microsoft.com/uwp/api/windows.perception.people.handjointkind) table. The entire hand pose layout with matching enum cases is shown in the image below:
 
-![Hand Skeleton](images/hand-skeleton.png)
+![Hand Skeleton](../native/images/hand-skeleton.png)
  
 ### Supporting Hand Tracking
 

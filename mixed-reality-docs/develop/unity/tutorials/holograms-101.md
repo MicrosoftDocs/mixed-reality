@@ -8,8 +8,6 @@ ms.topic: article
 keywords: mixed reality, Windows Mixed Reality, HoloLens, hologram, academy, tutorial
 ---
 
-<br>
-
 # MR Basics 101: Complete project with device
 
 <br>

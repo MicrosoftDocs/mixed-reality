@@ -18,7 +18,7 @@ The HoloLens 2 can see QR codes in world space using the webcam, which renders t
 - Lighting and backdrop
 - Size, distance, and angular position
 
-Pay special attention to the [environment considerations](environment-considerations-for-hololens.md) when QR codes are being placed in your app. You can find more information on each of these topics and instructions on how to download the required NuGet package in the main [QR code tracking](qr-code-tracking.md) document. 
+Pay special attention to the [environment considerations](../../environment-considerations-for-hololens.md) when QR codes are being placed in your app. You can find more information on each of these topics and instructions on how to download the required NuGet package in the main [QR code tracking](../platform-capabilities-and-apis/qr-code-tracking.md) document. 
 
 ## Enabling QR detection
 Since the HoloLens 2 needs to use the webcam to see QR codes, you'll need to enable it in the project settings:
@@ -43,7 +43,7 @@ QR codes are surfaced through Unreal’s AR tracked geometry system as a tracked
 3. Click **+** next to **On Add Tracked Geometry** to add the node to the Event Graph.
     - You can find the full list of events in the [UARTrackableNotify](https://docs.unrealengine.com/API/Runtime/AugmentedReality/UARTrackableNotifyComponent/index.html) component API. 
 
-![QR Render Example](images/unreal-qr-codes-tracked-geometry.png)
+![QR Render Example image](images/unreal-qr-codes-tracked-geometry.png)
 
 ## Using a tracked image
 The Event Graph in the following image shows the **OnUpdateTrackedImage** event being used to render a point in the center of a QR code and print out its data. 
@@ -65,6 +65,6 @@ Every QR code has a unique guid ID, which you can find by:
 There's a lot going on behind the scenes with QR codes, so this isn't the end of the road. Be sure to check out the following links for more details on what's under the hood.
 
 ## See also
-* [Spatial mapping](spatial-mapping.md)
-* [Holograms](hologram.md)
-* [Coordinate systems](coordinate-systems.md)
+* [Spatial mapping](../design/spatial-mapping.md)
+* [Holograms](../../out-of-scope/hologram.md)
+* [Coordinate systems](../design/coordinate-systems.md)

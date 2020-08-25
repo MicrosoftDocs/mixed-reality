@@ -1,6 +1,6 @@
 ---
 title: Getting started tutorials - 1. Introduction
-description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to create a mixed reality application.
+description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to create a mixed reality application from scratch.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
@@ -36,9 +36,9 @@ Tutorials in this series are meant to be sequential, so please go through them i
 
 ## Prerequisites
 
-* A Windows 10 PC configured with the correct [tools installed](install-the-tools.md)
+* A Windows 10 PC configured with the correct [tools installed](../../install-the-tools.md)
 * [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 or later
-* A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
+* A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.15 installed and the Universal Windows Platform Build Support module added
 
 > [!CAUTION]

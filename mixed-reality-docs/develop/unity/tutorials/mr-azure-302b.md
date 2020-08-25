@@ -8,8 +8,6 @@ ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, custom vision, hololens, immersive, vr
 ---
 
-<br>
-
 # MR and Azure 302b: Custom vision
 
 <br>
@@ -61,7 +59,7 @@ We recommend the following hardware and software for this course:
 - [The latest Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017.4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- A [Windows Mixed Reality immersive (VR) headset](../../../discover/immersive-headset-hardware-details.md) or [Microsoft HoloLens](hololens-hardware-details.md) with Developer mode enabled
+- A [Windows Mixed Reality immersive (VR) headset](../../../discover/immersive-headset-hardware-details.md) or [Microsoft HoloLens](../../../hololens-hardware-details.md) with Developer mode enabled
 - A camera connected to your PC (for immersive headset development)
 - Internet access for Azure setup and Custom Vision API retrieval
 - A series of at least five (5) images (ten (10) recommended) for each object that you would like the Custom Vision Service to recognize. If you wish, you can use [the images already provided with this course (a computer mouse and a keyboard) ](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20302b%20-%20Custom%20vision/ComputerVision_Images.zip).

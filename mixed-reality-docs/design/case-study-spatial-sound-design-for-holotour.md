@@ -9,7 +9,6 @@ keywords: Windows Mixed Reality, HoloLens, HoloTour, spatial sound, case study
 ---
 
 
-
 # Case study: Spatial sound design for HoloTour
 
 Panoramic videos and holographic scenery are only part of the formula for a truly immersive virtual Microsoft HoloLens tour. This article describes how sound was used to make you feel like you're actually in each HoloTour location.
@@ -28,7 +27,7 @@ We created HoloTour experiences of two different locations: Rome and Machu Picch
 
 ### Capture the audio
 
-In our [case study about capturing the visual content for HoloTour](../out-of-scope/case-studies/case-study-capturing-and-creating-content-for-holotour.md), we talk about the design of our camera rig. It consisted of 14 GoPro cameras in a 3D-printed housing that was designed to fit the tripod. To capture audio, we added a quad-microphone array below the cameras. The sound was fed into a compact four-channel recording unit at the base of the tripod. We chose microphones that performed well but were small enough to avoid interfering with the cameras.
+In our [case study about capturing the visual content for HoloTour](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md), we talk about the design of our camera rig. It consisted of 14 GoPro cameras in a 3D-printed housing that was designed to fit the tripod. To capture audio, we added a quad-microphone array below the cameras. The sound was fed into a compact four-channel recording unit at the base of the tripod. We chose microphones that performed well but were small enough to avoid interfering with the cameras.
 
 ![Custom-made camera and microphone rig](images/camera-rig-microphones-300px.png)<br>
 *Custom camera and microphone rig*

@@ -8,8 +8,6 @@ ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, face recognition, hololens, immersive, vr
 ---
 
-<br> 
-
 # MR and Azure 304: Face recognition
 
 <br>

@@ -1,6 +1,6 @@
 ---
 title: Azure Spatial Anchors tutorials - 1. Introduction
-description: Complete this course to learn how to implement Azure Spatial Anchors within a mixed reality application.
+description: Complete this course to implement Azure Spatial Anchors within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
@@ -32,9 +32,9 @@ Tutorials in this series:
 
 ## Prerequisites
 
-* A Windows 10 computer configured with the correct [tools installed](install-the-tools.md)
+* A Windows 10 computer configured with the correct [tools installed](../../install-the-tools.md)
 * Windows 10 SDK 10.0.18362.0 or later version
-* A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
+* A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.15 installed and the Universal Windows Platform Build Support module added
 * Completed the [Create a Spatial Anchors resource](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) section of the [Quickstart: Create a Unity HoloLens app that uses Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens) tutorial
 * Finished the [Getting started tutorials](mr-learning-base-01.md) series or some basic prior experience with Unity and MRTK

@@ -373,4 +373,4 @@ Here are some examples of different types of mesh processing that you may find u
 * [Scene Understanding](scene-understanding.md)
 * [Room scan visualization](room-scan-visualization.md)
 * [Spatial sound design](spatial-sound-design.md)
-* [Case study - Looking through holes in your reality](../out-of-scope/case-studies/case-study-looking-through-holes-in-your-reality.md)
+* [Case study - Looking through holes in your reality](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)

@@ -63,5 +63,5 @@ When you're done with an anchor you can clear individual anchors or the entire a
 
 ## See also
 * [Azure Spatial Anchors](unreal-azure-spatial-anchors.md)
-* [Spatial anchors](spatial-anchors.md)
-* [Coordinate systems](coordinate-systems.md)
+* [Spatial anchors](../design/spatial-anchors.md)
+* [Coordinate systems](../design/coordinate-systems.md)

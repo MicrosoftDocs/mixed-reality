@@ -21,19 +21,19 @@ The HoloLens has a Photo/Video (PV) Camera that is used for both Mixed Reality C
 
 The system, and custom MRC recorders, create mixed reality captures by combining the PV Camera with holograms rendered by the immersive app.
 
-By default, mixed reality capture uses the right eye's holographic output. If an immersive app chooses to [render from the PV Camera](mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in) then that will be used instead. This improves the mapping between the real world and the holograms in the MRC video.
+By default, mixed reality capture uses the right eye's holographic output. If an immersive app chooses to [render from the PV Camera](../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in) then that will be used instead. This improves the mapping between the real world and the holograms in the MRC video.
 
 To opt-in to rendering from the PV Camera:
 
 1. Call **SetEnabledMixedRealityCamera** and **ResizeMixedRealityCamera**
     * Use the **Size X** and **Size Y** values to set the video dimensions.
 
-![Camera 3rd](images/unreal-camera-3rd.PNG)
+![Camera 3rd](../platform-capabilities-and-apis/images/unreal-camera-3rd.PNG)
 
 Unreal will then handle requests from MRC to render from the PV Camera's perspective.
 
 > [!NOTE]
-> Only when [Mixed Reality Capture](mixed-reality-capture.md) is triggered will the app be asked to render from the photo/video camera's perspective.
+> Only when [Mixed Reality Capture](../../mixed-reality-capture.md) is triggered will the app be asked to render from the photo/video camera's perspective.
 
 ## Using the PV Camera
 
@@ -55,12 +55,12 @@ To render the camera image:
 4. Create a new function for this timer, in this case **MaterialTimer**, and call **GetARCameraImage** to get the texture from the webcam.  
 5. If the texture is valid, set a texture parameter in the shader to the image.  Otherwise, start the material timer again. 
 
-![Camera Texture](images/unreal-camera-texture.PNG)
+![Camera Texture image](images/unreal-camera-texture.PNG)
 
 5. Make sure the material has a parameter matching the name in **SetTextureParameterValue** that's bound to a color entry. Without this, the camera image can't be properly displayed.
 
 ![Camera Texture](images/unreal-camera-material.PNG)
 
 ## See also
-* [Locatable camera](locatable-camera.md)
-* [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
+* [Locatable camera](../platform-capabilities-and-apis/locatable-camera.md)
+* [Mixed reality capture for developers](../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md)

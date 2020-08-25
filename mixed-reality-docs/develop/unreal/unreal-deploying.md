@@ -17,7 +17,7 @@ There are two ways to deploy an Unreal application to HoloLens 2:
 * Directly from the Unreal editor
 * As a package uploaded via the device portal
 
-Both options require you to set up your HoloLens to use the [device portal](using-the-windows-device-portal.md) for development. 
+Both options require you to set up your HoloLens to use the [device portal](../platform-capabilities-and-apis/using-the-windows-device-portal.md) for development. 
 
 ## Deploying to device from the Unreal editor
 
@@ -45,4 +45,4 @@ Both options require you to set up your HoloLens to use the [device portal](usin
 
 ## Deploying to device via device portal
 
-You can find detailed instructions on [packaging and deploying an app](unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal) in the last section of the Getting Started with Unreal tutorial series.
+You can find detailed instructions on [packaging and deploying an app](tutorials/unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal) in the last section of the Getting Started with Unreal tutorial series.

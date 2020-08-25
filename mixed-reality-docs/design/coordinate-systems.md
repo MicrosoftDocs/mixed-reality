@@ -229,4 +229,4 @@ Sometimes, a home or other space may have two identical areas. For example, two 
 * [Spatial anchors](spatial-anchors.md)
 * [Shared experiences in mixed reality](../develop/platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
-* [Case study - Looking through holes in your reality](../out-of-scope/case-studies/case-study-looking-through-holes-in-your-reality.md)
+* [Case study - Looking through holes in your reality](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)

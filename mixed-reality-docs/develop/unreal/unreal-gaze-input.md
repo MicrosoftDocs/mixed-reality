@@ -44,4 +44,4 @@ That's all the setup you'll need to start adding gaze input to your HoloLens 2 a
 * [Calibration](../../calibration.md)
 * [Comfort](../../design/comfort.md)
 * [Gaze and commit](../../design/gaze-and-commit.md)
-* [Voice input](../../design/voice-design.md)
+* [Voice input](../../out-of-scope/voice-design.md)

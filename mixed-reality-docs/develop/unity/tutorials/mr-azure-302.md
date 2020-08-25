@@ -8,8 +8,6 @@ ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, computer vision, hololens, immersive, vr
 ---
 
-<br>
-
 # MR and Azure 302: Computer vision
 
 <br>

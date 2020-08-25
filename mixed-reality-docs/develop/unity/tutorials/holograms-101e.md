@@ -8,8 +8,6 @@ ms.topic: article
 keywords: mixed reality, Windows Mixed Reality, HoloLens, hologram, academy, tutorial, emulator
 ---
 
-<br>
-
 # MR Basics 101E: Complete project with emulator
 
 >[!NOTE]
