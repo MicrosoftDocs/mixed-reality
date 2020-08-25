@@ -313,7 +313,7 @@ Design for worst case scenarios, and maybe consider using adaptive rendering for
 
 
 ## See also
-* [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
-* [Performance Recommendations for Unity](performance-recommendations-for-unity.md)
+* [Understanding Performance for Mixed Reality](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
+* [Performance Recommendations for Unity](../develop/unity/performance-recommendations-for-unity.md)
 
  

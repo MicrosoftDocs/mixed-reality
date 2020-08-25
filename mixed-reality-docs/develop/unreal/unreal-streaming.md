@@ -19,12 +19,12 @@ Streaming from a PC to HoloLens provides two major advantages:
 * It lets your mixed reality app take advantage of your PCs computational power. 
 * It helps speed up development iteration time. 
 
-To get started, you'll need to download the [Holographic Remoting Player](holographic-remoting-player.md) to your HoloLens device. This allows your app to stream  directly to the remoting player on your HoloLens from the following sources:
+To get started, you'll need to download the [Holographic Remoting Player](../platform-capabilities-and-apis/holographic-remoting-player.md) to your HoloLens device. This allows your app to stream  directly to the remoting player on your HoloLens from the following sources:
 
 * The Unreal Engine editor
 * A packaged Windows executable 
 
-When streaming, you have access to almost all of the same HoloLens capabilities as you would when running an application on a device. This includes [hand joint tracking](unreal-hand-tracking.md) (if you're on a HoloLens 2), [spatial mapping](unreal-spatial-mapping.md), and [spatial anchors](unreal-spatial-anchors.md), but leaves out the features on this [list of limitations](holographic-remoting-troubleshooting.md). 
+When streaming, you have access to almost all of the same HoloLens capabilities as you would when running an application on a device. This includes [hand joint tracking](unreal-hand-tracking.md) (if you're on a HoloLens 2), [spatial mapping](unreal-spatial-mapping.md), and [spatial anchors](unreal-spatial-anchors.md), but leaves out the features on this [list of limitations](../platform-capabilities-and-apis/holographic-remoting-troubleshooting.md). 
 
 > [!NOTE]
 > * Streaming quality is highly dependent on the strength of your wifi network.
@@ -63,7 +63,7 @@ When streaming, you have access to almost all of the same HoloLens capabilities 
 
 As a developer, you'll find that streaming from the Unreal editor to your HoloLens device provides big benefits when testing, namely that you no longer have to wait for your app to build and deploy before trying out your updates.
 
-You can find detailed instructions on [streaming from the Unreal editor](unreal-uxt-ch6.md#device-only-streaming) in the last section of the Getting Started with Unreal tutorial series.
+You can find detailed instructions on [streaming from the Unreal editor](tutorials/unreal-uxt-ch6.md#device-only-streaming) in the last section of the Getting Started with Unreal tutorial series.
 
 ## Streaming from a packaged Windows executable
 
@@ -83,6 +83,6 @@ As of Unreal 4.25.1, you can stream your app to a HoloLens 2 device from a packa
 Hit enter and watch your application start streaming!
 
 ## See also
-* [Holographic remoting version history](holographic-remoting-version-history.md)
-* [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)
-* [Establishing a secure connection with Holographic Remoting](holographic-remoting-secure-connection.md)
+* [Holographic remoting version history](../platform-capabilities-and-apis/holographic-remoting-version-history.md)
+* [Writing a custom Holographic Remoting player app](../platform-capabilities-and-apis/holographic-remoting-create-player.md)
+* [Establishing a secure connection with Holographic Remoting](../platform-capabilities-and-apis/holographic-remoting-secure-connection.md)

@@ -65,6 +65,6 @@ Every QR code has a unique guid ID, which you can find by:
 There's a lot going on behind the scenes with QR codes, so this isn't the end of the road. Be sure to check out the following links for more details on what's under the hood.
 
 ## See also
-* [Spatial mapping](../design/spatial-mapping.md)
+* [Spatial mapping](../../design/spatial-mapping.md)
 * [Holograms](../../out-of-scope/hologram.md)
-* [Coordinate systems](../design/coordinate-systems.md)
+* [Coordinate systems](../../design/coordinate-systems.md)

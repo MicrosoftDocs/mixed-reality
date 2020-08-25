@@ -9,7 +9,6 @@ keywords: Sharing, Anchor, WorldAnchor, MR Sharing 250, WorldAnchorTransferBatch
 ---
 
 
-
 # Local anchor transfers in Unity
 
 In situations where you cannot use <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>, local anchor transfers enable one HoloLens device to export an anchor to be imported by a second HoloLens device.
@@ -34,7 +33,7 @@ How to enable the *SpatialPerception* capability:
 **Namespace:** *UnityEngine.XR.WSA.Sharing*<br>
 **Type**: *WorldAnchorTransferBatch*
 
-To transfer a [WorldAnchor](coordinate-systems-in-unity.md), one must establish the anchor to be transferred. The user of one HoloLens scans their environment and either manually or programmatically chooses a point in space to be the Anchor for the shared experience. The data that represents this point can then be serialized and transmitted to the other devices that are sharing in the experience. Each device then de-serializes the anchor data and attempts to locate that point in space. In order for Anchor Transfer to work, each device must have scanned in enough of the environment such that the point represented by the anchor can be identified.
+To transfer a [WorldAnchor](../develop/unity/coordinate-systems-in-unity.md), one must establish the anchor to be transferred. The user of one HoloLens scans their environment and either manually or programmatically chooses a point in space to be the Anchor for the shared experience. The data that represents this point can then be serialized and transmitted to the other devices that are sharing in the experience. Each device then de-serializes the anchor data and attempts to locate that point in space. In order for Anchor Transfer to work, each device must have scanned in enough of the environment such that the point represented by the anchor can be identified.
 
 ### Setup
 
