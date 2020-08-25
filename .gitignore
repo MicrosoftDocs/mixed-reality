@@ -8,5 +8,8 @@ _repo.*/
 .vscode
 .DS_Store
 
+mixed-reality-pr/article-template.md
+mixed-reality-pr/out-of-scope/deprecated
+
 .openpublishing.buildcore.ps1
 *.icloud
