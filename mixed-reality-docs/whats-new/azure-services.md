@@ -62,5 +62,5 @@ Bring interactive, high-quality 3D models to untethered devices with every detai
 
 ## See also
 
-* Azure Spatial Anchor tutorials for HoloLens 2 - [1 of 3 Getting started with Azure Spatial Anchors](.../develop/unity/tutorials/mrlearning-asa-ch1.md)
+* Azure Spatial Anchor tutorials for HoloLens 2 - [1 of 3 Getting started with Azure Spatial Anchors](../mrlearning-asa-ch1.md)
 * Azure Speech Services tutorials for HoloLens 2 - [1 of 4 Integrating and using speech recognition and transcription](../develop/unity/tutorials/mrlearning-speechSDK-ch1.md)

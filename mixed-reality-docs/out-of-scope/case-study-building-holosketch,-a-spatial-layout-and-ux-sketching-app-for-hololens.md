@@ -186,7 +186,7 @@ You can use the video recording feature in HoloLens by saying 'Hey Cortana, Star
 
 <table style="border-collapse:collapse">
 <tr>
-<td style="border-style: none" width="60px"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
+<td style="border-style: none" width="60px"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="../develop/unity/images/dongyoonpark.jpg"></td>
 <td style="border-style: none"><b>Dong Yoon Park</b><br>UX Designer @Microsoft</td>
 </tr>
 <tr>

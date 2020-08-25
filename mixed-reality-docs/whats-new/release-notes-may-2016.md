@@ -9,10 +9,9 @@ keywords: HoloLens, release notes, os, features, build, platform
 ---
 
 
-
 # Release notes - May 2016
 
-The HoloLens team is committed to provide you with an update on our latest feature development and major fixes through the Windows Insider Program. Thanks to all your suggestions, we take your feedback to heart. Please continue to [give us feedback](give-us-feedback.md) through the Feedback Hub, the [developer forums](https://forums.hololens.com) and [Twitter via @HoloLens](https://twitter.com/hololens).
+The HoloLens team is committed to provide you with an update on our latest feature development and major fixes through the Windows Insider Program. Thanks to all your suggestions, we take your feedback to heart. Please continue to [give us feedback](../give-us-feedback.md) through the Feedback Hub, the [developer forums](https://forums.hololens.com) and [Twitter via @HoloLens](https://twitter.com/hololens).
 
 **Release version:** Windows Holographic May 2016 Update (**10.0.14342.1016**)
 

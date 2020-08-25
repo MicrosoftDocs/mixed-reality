@@ -9,7 +9,6 @@ keywords: release notes, version, windows 10, build, 19h1, os, may 2019
 ---
 
 
-
 # Release notes - May 2019
 
 The **Windows 10 May 2019 Update** (also known as 19H1) includes new features for Windows Mixed Reality (VR) headsets, such as the ability to launch Win32 applications in the mixed reality home. HoloLens (1st gen) is in Long Term Servicing (LTS), with servicing updates to be released monthly.
@@ -47,7 +46,7 @@ We're tracking an issue that requires a monitor to be connected to the PC in ord
 
 ## Provide feedback and report issues
 
-Please use the [Feedback Hub app on your Windows 10 PC](give-us-feedback.md) or your HoloLens device to provide feedback and report issues. Using Feedback Hub ensures that all necessary diagnostics information is included to help our engineers quickly debug and resolve the problem.
+Please use the [Feedback Hub app on your Windows 10 PC](../give-us-feedback.md) or your HoloLens device to provide feedback and report issues. Using Feedback Hub ensures that all necessary diagnostics information is included to help our engineers quickly debug and resolve the problem.
 
 >[!NOTE]
 >Be sure to accept the prompt that asks whether you’d like Feedback Hub to access your Documents folder (select **Yes** when prompted).
@@ -65,6 +64,6 @@ Please use the [Feedback Hub app on your Windows 10 PC](give-us-feedback.md) or 
 ## See also
 * [Immersive headset support (external link)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
 * [HoloLens support (external link)](https://support.microsoft.com/products/hololens)
-* [Install the tools](install-the-tools.md)
-* [Give us feedback](give-us-feedback.md)
+* [Install the tools](../develop/install-the-tools.md)
+* [Give us feedback](../give-us-feedback.md)
 

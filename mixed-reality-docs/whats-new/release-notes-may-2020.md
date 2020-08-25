@@ -61,5 +61,5 @@ We continually look to improve compatibility.  If you find your favorite classic
 ## See also
 * [Immersive headset support (external link)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
 * [HoloLens support (external link)](https://support.microsoft.com/products/hololens)
-* [Install the tools](install-the-tools.md)
-* [Give us feedback](give-us-feedback.md)
+* [Install the tools](../develop/install-the-tools.md)
+* [Give us feedback](../give-us-feedback.md)

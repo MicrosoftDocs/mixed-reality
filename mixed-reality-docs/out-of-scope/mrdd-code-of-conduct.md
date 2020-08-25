@@ -9,7 +9,7 @@ ms.topic: article
 keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Kinect
 ---
 
-![Mixed Reality Dev Days](images/MRDD/MRDevDaysBanner.png)  
+![Mixed Reality Dev Days](../whats-new/images/MRDD/MRDevDaysBanner.png)  
 
 # Code of Conduct and Microsoft Standard Event Guidelines
 

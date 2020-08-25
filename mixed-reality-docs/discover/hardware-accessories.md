@@ -31,7 +31,7 @@ Pairing a Bluetooth peripheral with an immersive headset is similar to pairing a
 
 Windows Mixed Reality [motion controllers](../design/motion-controllers.md) are supported by immersive headsets, but not HoloLens. These controllers offer precise and responsive tracking of movement in your field of view using the sensors in the immersive headset, meaning there is no need to install hardware on the walls in your space. Each controller features several methods of input.
 
-![Windows Mixed Reality motion controllers](../develop/images/winmr-ck-1080x1080-350px.jpg)
+![Windows Mixed Reality motion controllers](../design/images/winmr-ck-1080x1080-350px.jpg)
 
 ## Bluetooth keyboards
 
