@@ -24,7 +24,7 @@ In order to do this, we needed a 360° camera rig with directional audio capture
 
 The first version—made from cardboard, Velcro, duct tape, and 14 GoPro cameras—was something MacGyver would have been proud of. After reviewing everything from low-end solutions to custom manufactured rigs, GoPro cameras were ultimately the best option for us because they were small, affordable, and had easy-to-use memory storage. The small form factor was especially important because it allowed us to place cameras fairly close together—the smaller the distance between cameras, the smaller the stitching artifacts will be. Our unique camera arrangement allowed us to get full sphere coverage *plus* enough overlap to intelligently align cameras and smooth out some artifacts during the stitching process.
 
-Taking advantage of the [spatial sound](spatial-sound.md) capabilities on HoloLens is critical to creating a convincingly real immersive experience. We used a four-microphone array situated beneath the cameras on the tripod, which would capture sound from the location of our camera in four directions, giving us enough information to create spatial sounds in our scenes.
+Taking advantage of the [spatial sound](../design/spatial-sound.md) capabilities on HoloLens is critical to creating a convincingly real immersive experience. We used a four-microphone array situated beneath the cameras on the tripod, which would capture sound from the location of our camera in four directions, giving us enough information to create spatial sounds in our scenes.
 
 ![Our 360° camera rig set up for filming outside the Pantheon.](images/camera-pantheon-200px.png)
 
