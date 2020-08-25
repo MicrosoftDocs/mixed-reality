@@ -327,8 +327,9 @@ You can find the Blueprint function in under **Windows Mixed Reality Spatial Inp
 ![Capture Gestures](images/unreal/capture-gestures.png)
 
 ### Enum
+<!-- Deprecated
 The `ESPatialInputAxisGestureType` enum describes spatial axis gestures and are [fully documented](../../out-of-scope/deprecated/holograms-211.md).
-
+-->
 Blueprint: 
 
 ![Gesture Type](images/unreal/gesture-type.png)

@@ -28,9 +28,9 @@ ms.localizationpriority: high
 
 ## Prerequisites
 
-* A Windows 10 PC configured with the correct [tools installed](install-the-tools.md)
+* A Windows 10 PC configured with the correct [tools installed](../../install-the-tools.md)
 * Basic c# programming knowledge
-* A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
+* A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.X mounted, and the Universal Windows Platform Build Support module added
 
 We **strongly recommend** completing the [Getting started](mr-learning-base-01.md) tutorials series or some basic prior experience with Unity and MRTK before continuing.
@@ -64,7 +64,7 @@ Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base
 Download and **import** the [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/onginnovations/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.0.0/MRTK.Tutorials.PCHolographicRemoting.unitypackage).
 
 >[!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) instructions.
+> For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](../../../mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) instructions.
 
 After importing the tutorial assets, your Project window should look similar to this:
 

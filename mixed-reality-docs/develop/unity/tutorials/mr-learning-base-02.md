@@ -191,7 +191,7 @@ When the build process has completed, Unity will prompt Windows File Explorer to
 ![mr-learning-base](images/mr-learning-base/base-02-section8-step1-1.png)
 
 > [!NOTE]
-> If Visual Studio asks you to install new components, take a moment to check that you have all the prerequisite components in the **[Install the Tools](install-the-tools.md)** documentation.
+> If Visual Studio asks you to install new components, take a moment to check that you have all the prerequisite components in the **[Install the Tools](../../install-the-tools.md)** documentation.
 
 Configure Visual Studio for HoloLens by selecting the **Master** or **Release** configuration, the **ARM64** architecture, and **Device** as target:
 
@@ -211,17 +211,17 @@ Connect your HoloLens to your computer, then select **Debug** > **Start Without 
 ![mr-learning-base](images/mr-learning-base/base-02-section8-step1-3.png)
 
 > [!IMPORTANT]
-> Before building to your device, the device must be in Developer Mode and paired with your development computer. Both of these steps can be completed by following [these instructions](using-visual-studio.md).
+> Before building to your device, the device must be in Developer Mode and paired with your development computer. Both of these steps can be completed by following [these instructions](../../platform-capabilities-and-apis/using-visual-studio.md).
 
 > [!TIP]
-> You can also deploy to the [HoloLens Emulator](using-the-hololens-emulator.md) or create an [App Package](https://docs.microsoft.com/windows/uwp/packaging/packaging-uwp-apps) for sideloading.
+> You can also deploy to the [HoloLens Emulator](../../platform-capabilities-and-apis/using-the-hololens-emulator.md) or create an [App Package](https://docs.microsoft.com/windows/uwp/packaging/packaging-uwp-apps) for sideloading.
 
 Using Start Without Debugging automatically starts the app on your device without the Visual Studio debugger attached.
 
 Select **Build > Deploy Solution** to deploy to your device without having the app start automatically.
 
 > [!NOTE]
->You may notice the Diagnostics profiler in the app, which you can toggle on or off by using the speech command **Toggle Diagnostics**. It's recommended that you keep the profiler visible most of the time during development to understand when changes to the app may impact performance. For example, HoloLens apps should [continuously run at 60 FPS](understanding-performance-for-mixed-reality.md).
+>You may notice the Diagnostics profiler in the app, which you can toggle on or off by using the speech command **Toggle Diagnostics**. It's recommended that you keep the profiler visible most of the time during development to understand when changes to the app may impact performance. For example, HoloLens apps should [continuously run at 60 FPS](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md).
 
 ## Congratulations
 

@@ -19,10 +19,10 @@ Over the course of your HoloLens development you may need to write a feature usi
 - Save a file on the HoloLens from an Unreal blueprint using the new DLL
 
 ## Getting started
-1. Check that you have all [required tools](unreal-uxt-ch1.md) installed
-2. [Create a new Unreal project](unreal-uxt-ch2.md#creating-a-new-unreal-project) and name it **Consumewinrt**
-3. Enable the [required plugins](unreal-uxt-ch2.md#enabling-required-plugins) for HoloLens development
-4. [Setup for deployment](unreal-uxt-ch6.md) to a device or emulator
+1. Check that you have all [required tools](tutorials/unreal-uxt-ch1.md) installed
+2. [Create a new Unreal project](tutorials/unreal-uxt-ch2.md#creating-a-new-unreal-project) and name it **Consumewinrt**
+3. Enable the [required plugins](tutorials/unreal-uxt-ch2.md#enabling-required-plugins) for HoloLens development
+4. [Setup for deployment](tutorials/unreal-uxt-ch6.md) to a device or emulator
 
 ## Creating a WinRT DLL 
 1. Open a new Visual Studio project and create a **DLL (Universal Windows)** project in the same directory to the Unreal game’s **uproject** file. 
@@ -268,7 +268,7 @@ void AWinfrtActor::BeginPlay()
 
 ![Configuring the DLL](images/unreal-winrt-img-08.png)
 
-4. [Package this game for HoloLens](unreal-uxt-ch6.md), deploy it, and run.  
+4. [Package this game for HoloLens](tutorials/unreal-uxt-ch6.md), deploy it, and run.  
 
 When Unreal calls OpenFileDialogue, a File Dialogue opens on the HoloLens prompting for a .txt file name.  After the file is saved, go to the **File explorer** tab in the device portal to see the contents “Hello WinRT”. 
 

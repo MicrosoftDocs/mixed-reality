@@ -65,10 +65,10 @@ The application is mainly driven by traditional UI, so you use the [Azure Bot Se
 >[!TIP]
 >If you have not completed the [Getting started tutorials](mr-learning-base-01.md) series yet, it's recommended that you complete those tutorials first.
 
-* A Windows 10 PC configured with the correct [tools installed](install-the-tools.md)
+* A Windows 10 PC configured with the correct [tools installed](../../install-the-tools.md)
 * Windows 10 SDK 10.0.18362.0 or later
 * Some basic C# programming ability
-* A HoloLens 2 device [configured for development](using-visual-studio.md#enabling-developer-mode)
+* A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
 * A connected webcam if you like to test from Unity editor
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.X installed and the Universal Windows Platform Build Support module added
 
