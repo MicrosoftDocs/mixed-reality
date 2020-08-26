@@ -5,6 +5,7 @@
 # Discover
 ## [Get started with Mixed Reality](get-started-with-mr.md)
 ## [What is Mixed Reality?] (mixed-reality.md)
+## [What is a hologram?](hologram.md)
 ## [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
 
 ## HoloLens hardware

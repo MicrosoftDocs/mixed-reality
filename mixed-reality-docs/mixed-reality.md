@@ -3,7 +3,7 @@ title: What is Mixed Reality?
 description: This article defines Mixed Reality and demonstrates where AR and VR devices sit along the Mixed Reality spectrum.
 author: brandonbray
 ms.author: branbray
-ms.date: 03/21/2018
+ms.date: 08/26/2020
 ms.topic: article
 keywords: Mixed Reality, holographic, AR, VR, MR, XR, augmented reality, virtual reality, explanation
 ms.localizationpriority: high
