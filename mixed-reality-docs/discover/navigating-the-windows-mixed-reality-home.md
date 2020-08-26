@@ -9,7 +9,6 @@ keywords: shell, os, platform, cliff house, house, home, environment, start, sta
 ---
 
 
-
 # Navigating the Windows Mixed Reality home
 
 Just like the Windows PC experience starts with the desktop, Windows Mixed Reality starts with the home. The Windows Mixed Reality home leverages our innate ability to understand and navigate 3D places. With HoloLens, your home is your physical space. With immersive headsets, your home is a virtual place.
@@ -25,19 +24,19 @@ The Start menu consists of:
 * Cortana (on immersive headsets, a Start tile; on HoloLens, at the top of Start)
 * Pinned apps
 * The All apps button (plus sign)
-* Photo and video buttons for [mixed reality capture](mixed-reality-capture.md)
+* Photo and video buttons for [mixed reality capture](../develop/platform-capabilities-and-apis/mixed-reality-capture.md)
 
 Switch between the pinned apps and All apps views by selecting the plus or minus buttons. To open the Start menu on HoloLens, use the bloom gesture. On an immersive headset, press the Windows button on your controller.
 
 ## Launching apps
 
-To launch an app, select it on Start. The Start menu will disappear, and the app will open in placement mode, as either a 2D window or a [3D model](implementing-3d-app-launchers.md).
+To launch an app, select it on Start. The Start menu will disappear, and the app will open in placement mode, as either a 2D window or a [3D model](../distribute/implementing-3d-app-launchers.md).
 
 To run the app, you’ll need to then place it in your home:
-1. Use your [gaze](gaze-and-commit.md) or controller to position the app where you want it. It will automatically adjust (in size and position) to conform to the space where you place it.
+1. Use your [gaze](../design/gaze-and-commit.md) or controller to position the app where you want it. It will automatically adjust (in size and position) to conform to the space where you place it.
 2. Place the app using air-tap (HoloLens) or the Select button (immersive headsets). To cancel and bring back the Start menu, use the bloom gesture or the Windows button.
 
-[2D apps](building-2d-apps.md), created for desktop, mobile, or Xbox can be modified to run as mixed reality immersive apps using the [HolographicSpace API](https://msdn.microsoft.com/library/windows/apps/windows.graphics.holographic.holographicspace.aspx). An immersive app takes the user out of the home and into an immersive experience. Users can return home with the bloom gesture (HoloLens) or by pressing the Windows button on their controller (immersive headsets).
+[2D apps](../develop/porting-apps/building-2d-apps.md), created for desktop, mobile, or Xbox can be modified to run as mixed reality immersive apps using the [HolographicSpace API](https://msdn.microsoft.com/library/windows/apps/windows.graphics.holographic.holographicspace.aspx). An immersive app takes the user out of the home and into an immersive experience. Users can return home with the bloom gesture (HoloLens) or by pressing the Windows button on their controller (immersive headsets).
 
 Apps can also be launched via an app-to-app API or via Cortana.
 
@@ -65,17 +64,17 @@ With **immersive headsets**, you can similarly get up and walk around in your pl
 
 **To teleport:**
 1. Bring up the teleportation reticle.
-   * Using [motion controllers](motion-controllers.md): press the thumbstick forward and hold it in that position.
+   * Using [motion controllers](../design/motion-controllers.md): press the thumbstick forward and hold it in that position.
    * Using an Xbox controller: press the left thumbstick forward and hold it in that position.
    * Using a mouse: hold down the right-click mouse button (and use the scroll wheel to rotate the direction you want to face when you teleport).
 2. Place the reticle where you want to teleport.
-   * Using [motion controllers](motion-controllers.md): tilt the controller (on which you're holding the thumbstick forward) to move the reticle.
-   * Using an Xbox controller: use your [gaze](gaze-and-commit.md) to move the reticle.
+   * Using [motion controllers](../design/motion-controllers.md): tilt the controller (on which you're holding the thumbstick forward) to move the reticle.
+   * Using an Xbox controller: use your [gaze](../design/gaze-and-commit.md) to move the reticle.
    * Using a mouse: move your mouse to move the reticle.
 3. Release the button to teleport where the reticle was placed.
 
 **To virtually "walk:"**
-* Using [motion controllers](motion-controllers.md): click down on the thumbstick and hold, then move the thumbstick in the direction you want to "walk."
+* Using [motion controllers](../design/motion-controllers.md): click down on the thumbstick and hold, then move the thumbstick in the direction you want to "walk."
 * Using an Xbox controller: click down on the left thumbstick and hold, then move the thumbstick in the direction you want to "walk."
 
 ## Immersive headset input support
@@ -84,7 +83,7 @@ With **immersive headsets**, you can similarly get up and walk around in your pl
 
 ### Motion controllers
 
-The best Windows Mixed Reality experience will be with Windows Mixed Reality [motion controllers](motion-controllers.md) that support 6 degrees-of-freedom tracking using just the sensors in your headset - no external cameras or markers required!
+The best Windows Mixed Reality experience will be with Windows Mixed Reality [motion controllers](../design/motion-controllers.md) that support 6 degrees-of-freedom tracking using just the sensors in your headset - no external cameras or markers required!
 
 Navigation commands coming soon.
 
@@ -94,8 +93,8 @@ Navigation commands coming soon.
   * Tap the thumbstick left, right, or back to move left, right, or back in small increments.
   * Click down on the left thumbstick and hold, then move the thumbstick in the direction you want to [virtually "walk."](navigating-the-windows-mixed-reality-home.md#getting-around-your-home)
 * Tap the **right thumbstick** left or right to rotate the direction you're facing by 45 degrees.
-* Pressing the **A** button performs a select and acts like the [air tap](gaze-and-commit.md#composite-gestures) gesture.
-* Pressing the **Guide** button brings up the [Start menu](navigating-the-windows-mixed-reality-home.md#start-menu) and acts like the [bloom](system-gesture.md#bloom) gesture.
+* Pressing the **A** button performs a select and acts like the [air tap](../design/gaze-and-commit.md#composite-gestures) gesture.
+* Pressing the **Guide** button brings up the [Start menu](navigating-the-windows-mixed-reality-home.md#start-menu) and acts like the [bloom](../design/system-gesture.md#bloom) gesture.
 * Pressing the **left and right triggers** lets you zoom in and out of a 2D desktop app you're interacting with in the home.
 
 ### Keyboard and mouse
@@ -103,23 +102,23 @@ Navigation commands coming soon.
 **Note:** Use **Windows Key + Y** to switch the mouse between controlling your PC's desktop and the Windows Mixed Reality home.
 
 Within the Windows Mixed Reality home:
-* Pressing the **left-click** mouse button performs a select and acts like the [air tap](gaze-and-commit.md#composite-gestures) gesture.
+* Pressing the **left-click** mouse button performs a select and acts like the [air tap](../design/gaze-and-commit.md#composite-gestures) gesture.
 * Holding the **right-click** mouse button brings up the [teleportation](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) reticle.
-* Pressing the **Windows** key on the keyboard brings up the [Start Menu](navigating-the-windows-mixed-reality-home.md#start-menu) and acts like the [bloom](system-gesture.md#bloom) gesture.
-* When [gazing](gaze-and-commit.md) at a 2D desktop app, you can **left-click** to select, **right-click** to bring up context menus, and use the **scroll wheel** to scroll (just like on your PC's desktop).
+* Pressing the **Windows** key on the keyboard brings up the [Start Menu](navigating-the-windows-mixed-reality-home.md#start-menu) and acts like the [bloom](../design/system-gesture.md#bloom) gesture.
+* When [gazing](../design/gaze-and-commit.md) at a 2D desktop app, you can **left-click** to select, **right-click** to bring up context menus, and use the **scroll wheel** to scroll (just like on your PC's desktop).
 
 ## Cortana
 
-[Cortana](voice-input.md#hey-cortana) is your personal assistant in Windows Mixed Reality, just like on PC and phone. HoloLens has a built-in microphone, but immersive headsets may require additional hardware. Use Cortana to open apps, restart your device, look things up online, and more. Developers may also choose to [integrate Cortana](https://dev.windows.com/cortana) into their experiences.
+[Cortana](../design/voice-input.md#hey-cortana) is your personal assistant in Windows Mixed Reality, just like on PC and phone. HoloLens has a built-in microphone, but immersive headsets may require additional hardware. Use Cortana to open apps, restart your device, look things up online, and more. Developers may also choose to [integrate Cortana](https://dev.windows.com/cortana) into their experiences.
 
-You can also use voice commands to get around your home. For example, point at a button (using [gaze](gaze-and-commit.md) or a controller, depending on the device) and say “Select.” Other voice commands include “Go home,” “Bigger,” “Smaller,” “Close,” and “Face me.”
+You can also use voice commands to get around your home. For example, point at a button (using [gaze](../design/gaze-and-commit.md) or a controller, depending on the device) and say “Select.” Other voice commands include “Go home,” “Bigger,” “Smaller,” “Close,” and “Face me.”
 
 ## Store, Settings, and system apps
 
 Windows Mixed Reality has a number of built-in apps, such as:
 * **Microsoft Store** to get apps and games
 * **Feedback Hub** to submit feedback about the system and system apps
-* **Settings** to configure system settings ([including networking](connecting-to-wi-fi-on-hololens.md) and system updates)
+* **Settings** to configure system settings ([including networking](../connecting-to-wi-fi-on-hololens.md) and system updates)
 * **Microsoft Edge** to browse websites
 * **Photos** to view and share photos and videos
 * **Calibration** (HoloLens only) for adjusting the HoloLens experience to the current user
@@ -132,9 +131,9 @@ Windows Mixed Reality has a number of built-in apps, such as:
 * **File Explorer** Access files and folders located on your device
 
 ## See also
-* [App views](app-views.md)
-* [Motion controllers](motion-controllers.md)
+* [App views](../design/app-views.md)
+* [Motion controllers](../design/motion-controllers.md)
 * [Hardware accessories](hardware-accessories.md)
-* [Environment considerations for HoloLens](environment-considerations-for-hololens.md)
-* [Implementing 3D app launchers](implementing-3d-app-launchers.md)
-* [Creating 3D models for use in the Windows Mixed Reality home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
+* [Environment considerations for HoloLens](../environment-considerations-for-hololens.md)
+* [Implementing 3D app launchers](../distribute/implementing-3d-app-launchers.md)
+* [Creating 3D models for use in the Windows Mixed Reality home](../distribute/creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)

@@ -61,11 +61,11 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: images/icon-design.png
       links:
-        - url: design.md
+        - url: design/design.md
           text: Design and prototype
         - url: design/types-of-mixed-reality-apps.md
           text: Choose your type of Mixed Reality app
-        - url: design/case-study-expanding-the-design-process-for-mixed-reality.md
+        - url: out-of-scope/case-study-expanding-the-design-process-for-mixed-reality.md
           text: Expand your design process
         - url: design/app-patterns-landingpage.md
           text: Learn about UX elements
@@ -146,7 +146,7 @@ conceptualContent:
         - url: develop/unreal/unreal-development-overview.md
           itemType: overview
           text: Unreal development overview
-        - url: develop/unreal/unreal-uxt-ch1.md
+        - url: develop/unreal/tutorials/unreal-uxt-ch1.md
           itemType: tutorial
           text: Build a chess app tutorial series
         - url: develop/unreal/unreal-gaze-input.md
@@ -228,15 +228,15 @@ additionalContent:
         - title: Distribute
           links:
             - text: Designing a 3D app launcher
-              url: 3d-app-launcher-design-guidance.md
+              url: distribute/3d-app-launcher-design-guidance.md
             - text: Creating 3D models for the Mixed Reality Home
-              url: creating-3d-models-for-use-in-the-windows-mixed-reality-home.md
+              url: distribute/creating-3d-models-for-use-in-the-windows-mixed-reality-home.md
             - text: Implementing 3D app launchers in UWP apps
-              url: implementing-3d-app-launchers.md
+              url: distribute/implementing-3d-app-launchers.md
             - text: Adding in-app purchases
-              url: in-app-purchases.md
+              url: distribute/in-app-purchases.md
             - text: Submitting to the Microsoft Store
-              url: submitting-an-app-to-the-microsoft-store.md
+              url: distribute/submitting-an-app-to-the-microsoft-store.md
         # Card
         - title: Dynamics 365 Mixed Reality
           links:
@@ -252,11 +252,11 @@ additionalContent:
         - title: Azure Cloud Services
           links:
             - text: Cloud Services overview
-              url: mixed-reality-cloud-services.md
+              url: develop/mixed-reality-cloud-services.md
             - text: Jump into Azure Spatial Anchors
               url: https://docs.microsoft.com/azure/spatial-anchors/
             - text: Azure Spatial Anchors tutorials
-              url: mr-learning-asa-01.md
+              url: develop/unity/tutorials/mr-learning-asa-01.md
             - text: Develop with Azure Remote Rendering 
               url: https://docs.microsoft.com/azure/remote-rendering/
             - text: Azure Remote Rendering Tutorials
@@ -265,11 +265,11 @@ additionalContent:
         - title: HoloLens 2 Sample apps
           links:
             - text: Surfaces
-              url: sampleapp-surfaces.md
+              url: develop/unity/sampleapp-surfaces.md
             - text: Periodic Table of Elements 2.0
               url: https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158
             - text: Galaxy Explorer 2.0 
-              url: galaxy-explorer-update.md
+              url: develop/unity/galaxy-explorer-update.md
 
         # Card
         #- title: Porting guides

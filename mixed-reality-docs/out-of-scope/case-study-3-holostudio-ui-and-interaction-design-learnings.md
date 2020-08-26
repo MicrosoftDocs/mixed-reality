@@ -42,7 +42,7 @@ After trying a few different things, we finally settled on using a "thought bubb
 
 **What we learned**
 
-It's much harder in 3D to alert users to things they need to pay attention to. Using attention directors such as [spatial sound](spatial-sound.md), light rays, or thought bubbles, can lead users to where they need to be.
+It's much harder in 3D to alert users to things they need to pay attention to. Using attention directors such as [spatial sound](../design/spatial-sound.md), light rays, or thought bubbles, can lead users to where they need to be.
 
 ## Problem #3: Sometimes UI can get blocked by other holograms
 
@@ -70,6 +70,6 @@ Users need to be able to easily access UI controls even if they've been blocked,
 </table>
 
 ## See also
-* [Instinctual interactions](interaction-fundamentals.md)
+* [Instinctual interactions](../design/interaction-fundamentals.md)
 
  

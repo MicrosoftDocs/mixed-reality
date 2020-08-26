@@ -13,7 +13,6 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 ## Choose your track
 
-
 :::row:::
     :::column:::
        [![I'm new to mixed reality](images/Tile-New.jpg)](get-started-with-mr.md#understand-the-basics)<br>
@@ -21,13 +20,13 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
         Understand the basics
     :::column-end:::
     :::column:::
-       [![I'm a designer](images/Tile-Create.jpg)](design.md)<br>
-        **[I'm a designer](design.md)**<br>
+       [![I'm a designer](images/Tile-Create.jpg)](../design/design.md)<br>
+        **[I'm a designer](../design/design.md)**<br>
         Start designing and prototyping
     :::column-end:::
     :::column:::
-       [![I'm a developer](images/Tile-Develop.jpg)](development.md)<br>
-        **[I'm a developer](development.md)**<br>
+       [![I'm a developer](images/Tile-Develop.jpg)](../development/development.md)<br>
+        **[I'm a developer](../development/development.md)**<br>
         Learn the tools and architecture
     :::column-end:::
     :::column:::
@@ -79,7 +78,7 @@ Internally at Microsoft, we are creating mixed reality applications to empower e
 
 <br>
 
-#### [The pursuit of more personal computing](case-study-the-pursuit-of-more-personal-computing.md)
+#### [The pursuit of more personal computing](../out-of-scope/case-study-the-pursuit-of-more-personal-computing.md)
 Tomorrow’s opportunities are uncovered by building products today. The solutions these products provide reveal what’s necessary to advance the future. With mixed reality, this is especially true: Meaningful insight comes from getting hands-on with real work — real devices, real customers, real problems.
 
 
@@ -149,22 +148,22 @@ HoloLens 2 offers the most comfortable and immersive mixed reality experience av
 
 ## What are the core concepts of an experience?
 
-### [Keep the user comfortable - (Comfort)](comfort.md)
+### [Keep the user comfortable - (Comfort)](../design/comfort.md)
 To ensure maximum comfort on head-mounted displays, it’s important for designers and developers to create and present content in a way that mimics how these cues operate in the natural world.
 
 <br>
 
-### [How the user sees the world - (Holographic frame)](holographic-frame.md)
+### [How the user sees the world - (Holographic frame)](../design/holographic-frame.md)
 Users see the world of mixed reality through a rectangular viewport, powered by their headset. On the HoloLens, this rectangular area is called the holographic frame and allows users to see digital content overlaid onto the real world around them.
 
 <br>
 
-### [Making holographic objects feel real - (Spatial mapping)](spatial-mapping.md)
+### [Making holographic objects feel real - (Spatial mapping)](../design/spatial-mapping.md)
 Spatial mapping makes it possible to place objects on real surfaces. This helps anchor objects in the user's world and takes advantage of real world depth cues.
 
 <br>
 
-### [Suggesting the scale of an object - (Scale)](scale.md)
+### [Suggesting the scale of an object - (Scale)](../design/scale.md)
 A key to displaying content that looks realistic in holographic form is to mimic the visual statistics of the real world as closely as possible. This means incorporating as many of the visual cues as we can that help us (in the real world) understand where objects are, how big they are, and what they’re made of.
 
 
@@ -182,18 +181,18 @@ A key to displaying content that looks realistic in holographic form is to mimic
         Get a demo of Mixed Reality and HoloLens at your local Microsoft Store.
     :::column-end:::
     :::column:::
-        [![Become a creator](images/icon-design.png)](design.md)<br>
-        **[Become a creator](design.md)**<br>
+        [![Become a creator](images/icon-design.png)](../design/design.md)<br>
+        **[Become a creator](../design/design.md)**<br>
         Learn the basic concepts you need to begin designing and prototyping.
     :::column-end:::
     :::column:::
-        [![Come to an event](images/icon-calendar.jpg)](sf-academy-events.md)<br>
-        **[Come to an event](sf-academy-events.md)**<br>
+        [![Come to an event](images/icon-calendar.jpg)](../whats-new/sf-academy-events.md)<br>
+        **[Come to an event](../whats-new/sf-academy-events.md)**<br>
         See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
     :::column-end:::
     :::column:::
-        [![Start developing](images/icon-developer.png)](development.md)<br>
-        **[Start developing](development.md)**<br>
+        [![Start developing](images/icon-developer.png)](../develop/development.md)<br>
+        **[Start developing](../develop/development.md)**<br>
         Choose a development path based on your skill level, work style or platform interest.
     :::column-end:::
 :::row-end:::
