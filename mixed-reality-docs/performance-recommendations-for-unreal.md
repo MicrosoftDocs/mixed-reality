@@ -62,3 +62,5 @@ You can find each of the following settings in **Edit > Project Settings**.
 
 ![Mobile shader permutation reduction](images/unreal/performance-recommendations-img-08.png)
 
+## See also
+* [Unreal Engine mobile performance guidelines]( https://docs.unrealengine.com/Platforms/Mobile/Performance/index.html)
