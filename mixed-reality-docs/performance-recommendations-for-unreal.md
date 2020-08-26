@@ -23,26 +23,26 @@ You can find each of the following settings in **Edit > Project Settings**.
 
 ![Mobile target setting](images/unreal/performance-recommendations-img-01.png)
 
-2. Forward Rendering: 
-    * This feature is much better for Mixed Reality than the default Deferred rendering pipeline. This is primarily because of the number of features that can then be individually turned off. 
+2. Using the Forward Renderer: 
+    * This feature is much better for Mixed Reality than the default Deferred rendering pipeline. This is primarily because of the number of features that can be individually turned off. 
     * You can find more information in [Unreal's documentation](https://docs.unrealengine.com/Platforms/VR/DevelopVR/VRPerformance/index.html).
 
 ![Forward rendering](images/unreal/performance-recommendations-img-04.png)
 
-3. Vertex fogging: 
+3. Disabling Vertex Fogging: 
 
-![Vetex fogging options](images/unreal/performance-recommendations-img-05.png)
+![Vertex fogging options](images/unreal/performance-recommendations-img-05.png)
 
 4. Disabling occlusion culling:
     * Scroll to the **Engine** section, select **Rendering**, expand the **Culling** section, and uncheck **Occlusion Culling**.
         + If you need occlusion culling for a detailed scene being rendered, it's recommended that you enable **Support Software Occlusion Culling** in **Engine > Rendering**. This lets Unreal to do the work on the CPU and avoid GPU occlusion queries, which perform poorly on HoloLens 2.
-    * Occlusion culling on the GPU on mobile devices is slow. Generally, we want the GPU to be concerned primarily with rendering. If you feel that there occlusion will help performance, try enabling software occlusion instead. Note that enabling software occlusion could make performance worse if you are already CPU bound, i.e, you have a large number of draw-calls.
+    * Occlusion culling on the GPU on mobile devices is slow. Generally, you want the GPU to be primarily concerned with rendering. If you feel that occlusion will help performance, try enabling software occlusion instead. Note that enabling software occlusion could make performance worse if you're already CPU bound by a large number of draw-calls.
 
 ![Disable occlusion culling](images/unreal/performance-recommendations-img-02.png)
 
 	
-5. Depth-Stencil:
-    * This feature requires an extra pass, meaning its slow. Translucency is slow on Unreal; you can find more information in [Unreal's documentation](https://docs.unrealengine.com/Engine/Performance/Guidelines/index.html).
+5. Disabling Depth-Stencil:
+    * This feature requires an extra pass, meaning it's slow. Translucency is also slow on Unreal. You can find more information in [Unreal's documentation](https://docs.unrealengine.com/Engine/Performance/Guidelines/index.html).
 
 ![Depth stencil](images/unreal/performance-recommendations-img-06.png)
 
@@ -51,9 +51,9 @@ You can find each of the following settings in **Edit > Project Settings**.
 
 ![VR rendering settings](images/unreal/performance-recommendations-img-03.png)
 
-7. Cascaded Shadow Maps: 
+7. Reducing Cascaded Shadow Maps: 
     * Reducing the number of shadow maps will improve performance. 
-    * Setting the **Maximum number of CSM cascades to render** to **1**.
+    * Set the **Maximum number of CSM cascades to render** to **1**.
 
 ![Cascaded shadow maps](images/unreal/performance-recommendations-img-07.png)
 
