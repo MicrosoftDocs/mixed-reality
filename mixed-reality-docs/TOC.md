@@ -3,7 +3,9 @@
 
 <!-- Discover top level folder -->
 # Discover
-## [Get started with mixed reality](get-started-with-mr.md)
+## [Get started with Mixed Reality](get-started-with-mr.md)
+## [What is Mixed Reality?](mixed-reality.md)
+## [What is a hologram?](hologram.md)
 ## [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
 
 ## HoloLens hardware
@@ -39,7 +41,7 @@
 ### [Sound](spatial-sound.md)
 ### [Spatial mapping](spatial-mapping.md)
 ### [System gesture](system-gesture.md)
-### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
+### [Types of Mixed Reality apps](types-of-mixed-reality-apps.md)
 ### [Designing content for holographic display](designing-content-for-holographic-display.md)
 
 ## Interaction models
@@ -108,7 +110,7 @@
 ## [Cloud services overview](mixed-reality-cloud-services.md)
 
 <!-- Deprecated
-## Mixed reality cloud services
+## Mixed Reality cloud services
 ### [Azure Remote Rendering](https://docs.microsoft.com/azure/remote-rendering)
 ### [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
 -->
@@ -270,8 +272,8 @@
 #### [Streaming in Unreal](unreal-streaming.md)
 
 <!-- Web section -->
-## Web
-### [Web development overview](javascript-development-overview.md)
+## Javascript
+### [Javascript development overview](javascript-development-overview.md)
 ### [WebXR](webxr-overview.md)
 ### [WebVR](webvr-overview.md)
 
@@ -305,13 +307,13 @@
 #### [Keyboard, mouse, and controller input](keyboard-mouse-and-controller-input-in-directx.md)
 #### [Using XAML with holographic apps](using-xaml-with-holographic-directx-apps.md)
 #### [QR code tracking](qr-code-tracking.md)
-### [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
+### [Shared experiences in Mixed Reality](shared-experiences-in-mixed-reality.md)
 #### [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
 #### [Spectator view](spectator-view.md)
 #### [WebRTC](https://github.com/microsoft/MixedReality-WebRTC)
 ### Camera and capture
 #### [Locatable camera](locatable-camera.md)
-#### [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
+#### [Mixed Reality capture for developers](mixed-reality-capture-for-developers.md)
 #### [How it works - Mixed Reality Capture Studios](how-it-works-mixed-reality-capture-studios.md)
 ### Holographic remoting
 #### [Holographic Remoting Player](holographic-remoting-player.md)
@@ -330,7 +332,7 @@
 #### [Volume rendering](volume-rendering.md)
 #### [Hologram stability](hologram-stability.md)
 #### [Using the stabilization plane to reduce holographic turbulence](case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)
-#### [Understanding performance for mixed reality](understanding-performance-for-mixed-reality.md)
+#### [Understanding performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
 #### [Performance recommendations for Unity](performance-recommendations-for-unity.md)
 #### [Using Visual Studio to deploy and debug](using-visual-studio.md)
 #### [Testing your app on HoloLens](testing-your-app-on-hololens.md)
@@ -349,7 +351,7 @@
 ### [Porting guide for immersive apps](porting-guides.md)
 ### [Input porting guide for Unity](input-porting-guide-for-unity.md)
 ### [Updating your SteamVR application for Windows Mixed Reality](updating-your-steamvr-application-for-windows-mixed-reality.md)
-### [Updating 2D UWP apps for mixed reality](building-2d-apps.md)
+### [Updating 2D UWP apps for Mixed Reality](building-2d-apps.md)
 
 <!-- Distribute top level folder -->
 # Distribute
@@ -371,7 +373,7 @@
 ### [San Francisco Reactor Academy events calendar](sf-academy-events.md)
 ### [Mixed Reality Dev Days](mr-dev-days.md)
 #### [Session Recordings](mr-dev-days-sessions.md)
-## [Current mixed reality release notes](release-notes-may-2020.md)
+## [Current Mixed Reality release notes](release-notes-may-2020.md)
 ## [Community Resources](community.md)
 ## [Contributing to this documentation](CONTRIBUTING.md)
 ## [Deploying HoloLens at scale](https://docs.microsoft.com/hololens/)
