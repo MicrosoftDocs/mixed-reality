@@ -18,7 +18,7 @@ Mixed Reality is a blend of physical and digital worlds, unlocking the links bet
 * Spatial sound
 * Locations and positioning in both real and virtual spaces
 
-![The Mixed Reality spectrum](images/mixedrealityspectrum-worlds.png)<br>
+![The Mixed Reality spectrum image](images/mixedrealityspectrum-worlds.png)<br>
 *Image: Mixed Reality is the result of blending the physical world with the digital world.*
 
 <br>s
