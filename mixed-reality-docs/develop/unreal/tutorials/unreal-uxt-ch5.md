@@ -93,6 +93,6 @@ You now have a mixed reality app with a chess piece and board that you can inter
 You're ready to move on to the final section of this tutorial where you'll learn how to correctly package and deploy the app to a device or emulator.
 
 > [!IMPORTANT]
-> At this point, you should update your project with the recommended **[Unreal performance settings](performance-recommendations-for-unreal.md)** before deploying your application to a device or emulator.
+> At this point, you should update your project with the recommended **[Unreal performance settings](../performance-recommendations-for-unreal.md)** before deploying your application to a device or emulator.
 
 [Next Section: 6. Packaging & deploying to device or emulator](unreal-uxt-ch6.md)
