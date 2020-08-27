@@ -9,6 +9,7 @@ ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, performance, optimization, settings, documentation
 ---
 
+
 # Performance recommendations for Unreal
 
 ## Overview
@@ -30,6 +31,7 @@ You can find each of the following settings in **Edit > Project Settings**.
 ![Forward rendering](images/unreal/performance-recommendations-img-04.png)
 
 3. Disabling Vertex Fogging: 
+    * Vertex fogging applies fog calculations at each vertex in a polygon and then interpolates the results across the face of the polygon. If your game does not use fog, you should choose this setting to disable fog to increase shading performance.
 
 ![Vertex fogging options](images/unreal/performance-recommendations-img-05.png)
 
@@ -52,12 +54,16 @@ You can find each of the following settings in **Edit > Project Settings**.
 ![VR rendering settings](images/unreal/performance-recommendations-img-03.png)
 
 7. Reducing Cascaded Shadow Maps: 
-    * Reducing the number of shadow maps will improve performance. 
-    * Set the **Maximum number of CSM cascades to render** to **1**.
+    * Reducing the number of shadow maps will improve performance. Generally, this should be set to 1 unless there is a visible quality loss. 
 
 ![Cascaded shadow maps](images/unreal/performance-recommendations-img-07.png)
 
-8. Mobile Shader Permutation Reduction
+## Optional settings
+
+> [NOTE]
+> The following settings may improve performance, but at the cost of disabling certain features. Only use these settings if you're sure you don't need the features in question.
+
+1. Mobile Shader Permutation Reduction
     * If your lights don't move independently of the camera, then you can safely set this value to 0. The primary benefit is that it will allow Unreal to cull several shader permutations, speeding up shader compilation.
 
 ![Mobile shader permutation reduction](images/unreal/performance-recommendations-img-08.png)
