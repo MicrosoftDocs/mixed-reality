@@ -10,6 +10,7 @@ ms.localizationpriority: high
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial
 ---
 
+
 # Tutorials 
 
 ![HoloLens 2 user](images/08_Tutorials.png)
@@ -22,7 +23,7 @@ The HoloLens 2 tutorials are designed to help developers learn both techniques a
 
 * Getting started tutorials
     * Unity - [1 of 9 Introduction](tutorials/mr-learning-base-01.md)
-    * Unreal - [1 of 6 Getting started](tutorials/unreal-uxt-ch1.md)
+    * Unreal - [1 of 6 Getting started](../unreal/tutorials/unreal-uxt-ch1.md)
 * Azure Spatial Anchors tutorials - [1 of 5 Introduction](tutorials/mr-learning-asa-01.md)
 * Multi-user capabilities tutorials - [1 of 5 Introduction](tutorials/mr-learning-sharing-01.md)
 * Azure Speech Services tutorials - [1 of 4 Integrating and using speech recognition and transcription](tutorials/mrlearning-speechSDK-ch1.md)
@@ -42,7 +43,7 @@ The Mixed Reality Academy is a set of online step-by-step tutorials with corresp
 <br>
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
                             <li>
-                                    <a href="holograms-100.md" title="MR Basics 100" data-linktype="absolute-path">
+                                    <a href="tutorials/holograms-100.md" title="MR Basics 100" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -61,7 +62,7 @@ The Mixed Reality Academy is a set of online step-by-step tutorials with corresp
                                </a>
                             </li>
                             <li>
-                                  <a href="holograms-101.md" title="MR Basics 101" data-linktype="absolute-path">
+                                  <a href="tutorials/holograms-101.md" title="MR Basics 101" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -80,7 +81,7 @@ The Mixed Reality Academy is a set of online step-by-step tutorials with corresp
                                </a>
                             </li>
                             <li>
-                                <a href="holograms-101e.md" title="MR Basics 101E" data-linktype="absolute-path">
+                                <a href="tutorials/holograms-101e.md" title="MR Basics 101E" data-linktype="absolute-path">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -106,7 +107,7 @@ These stand-alone tutorials are great for learning how to implement different Az
 
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
     <li>
-                                   <a href="mr-azure-301.md" title="MR and Azure 301" data-linktype="absolute-path">
+                                   <a href="tutorials/mr-azure-301.md" title="MR and Azure 301" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -125,7 +126,7 @@ These stand-alone tutorials are great for learning how to implement different Az
                               </a>
                             </li>
                                  <li>
-                                   <a href="mr-azure-302.md" title="MR and Azure 302" data-linktype="absolute-path">
+                                   <a href="tutorials/mr-azure-302.md" title="MR and Azure 302" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -144,7 +145,7 @@ These stand-alone tutorials are great for learning how to implement different Az
                               </a>
                             </li>
                                  <li>
-                                   <a href="mr-azure-302b.md" title="MR and Azure 302b" data-linktype="absolute-path">
+                                   <a href="tutorials/mr-azure-302b.md" title="MR and Azure 302b" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -163,7 +164,7 @@ These stand-alone tutorials are great for learning how to implement different Az
                               </a>
                             </li>                            
                                  <li>
-                                   <a href="mr-azure-303.md" title="MR and Azure 303" data-linktype="absolute-path">
+                                   <a href="tutorials/mr-azure-303.md" title="MR and Azure 303" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -182,7 +183,7 @@ These stand-alone tutorials are great for learning how to implement different Az
                               </a>
                             </li>
                                  <li>
-                                   <a href="mr-azure-304.md" title="MR and Azure 304" data-linktype="absolute-path">
+                                   <a href="tutorials/mr-azure-304.md" title="MR and Azure 304" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -201,7 +202,7 @@ These stand-alone tutorials are great for learning how to implement different Az
                               </a>
                             </li>
                                  <li>
-                                   <a href="mr-azure-305.md" title="MR and Azure 305" data-linktype="absolute-path">
+                                   <a href="tutorials/mr-azure-305.md" title="MR and Azure 305" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -220,7 +221,7 @@ These stand-alone tutorials are great for learning how to implement different Az
                               </a>
                             </li>
                                  <li>
-                                   <a href="mr-azure-306.md" title="MR and Azure 306" data-linktype="absolute-path">
+                                   <a href="tutorials/mr-azure-306.md" title="MR and Azure 306" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -239,7 +240,7 @@ These stand-alone tutorials are great for learning how to implement different Az
                               </a>
                             </li>
                                  <li>
-                                   <a href="mr-azure-307.md" title="MR and Azure 307" data-linktype="absolute-path">
+                                   <a href="tutorials/mr-azure-307.md" title="MR and Azure 307" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -258,7 +259,7 @@ These stand-alone tutorials are great for learning how to implement different Az
                               </a>
                             </li>
                                  <li>
-                                   <a href="mr-azure-308.md" title="MR and Azure 308" data-linktype="absolute-path">
+                                   <a href="tutorials/mr-azure-308.md" title="MR and Azure 308" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -277,7 +278,7 @@ These stand-alone tutorials are great for learning how to implement different Az
                               </a>
                             </li>
                                  <li>
-                                   <a href="mr-azure-309.md" title="MR and Azure 309" data-linktype="absolute-path">
+                                   <a href="tutorials/mr-azure-309.md" title="MR and Azure 309" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -296,7 +297,7 @@ These stand-alone tutorials are great for learning how to implement different Az
                               </a>
                             </li> 
                                  <li>
-                                   <a href="mr-azure-310.md" title="MR and Azure 310" data-linktype="absolute-path">
+                                   <a href="tutorials/mr-azure-310.md" title="MR and Azure 310" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -315,7 +316,7 @@ These stand-alone tutorials are great for learning how to implement different Az
                               </a>
                             </li> 
                                  <li>
-                                   <a href="mr-azure-311.md" title="MR and Azure 311" data-linktype="absolute-path">
+                                   <a href="tutorials/mr-azure-311.md" title="MR and Azure 311" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -334,7 +335,7 @@ These stand-alone tutorials are great for learning how to implement different Az
                               </a>
                             </li> 
                                  <li>
-                                   <a href="mr-azure-312.md" title="MR and Azure 312" data-linktype="absolute-path">
+                                   <a href="tutorials/mr-azure-312.md" title="MR and Azure 312" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">
@@ -353,7 +354,7 @@ These stand-alone tutorials are great for learning how to implement different Az
                               </a>
                             </li> 
                                  <li>
-                                   <a href="mr-azure-313.md" title="MR and Azure 313" data-linktype="absolute-path">
+                                   <a href="tutorials/mr-azure-313.md" title="MR and Azure 313" data-linktype="absolute-path">
                               <div class="cardSize">
                                   <div class="cardPadding">
                                       <div class="card">

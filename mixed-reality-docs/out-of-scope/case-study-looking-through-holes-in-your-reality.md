@@ -17,7 +17,7 @@ When people think about mixed reality and what they can do with Microsoft HoloLe
 
 If you've fought aliens as they break through your walls in **[RoboRaid](https://www.youtube.com/watch?v=Hf9qkURqtbM)**, unlocked a wall safe in **[Fragments](case-study-creating-an-immersive-experience-in-fragments.md)**, or were lucky enough to see the UNSC Infinity hangar in the **[Halo 5 experience at E3 in 2015](https://www.youtube.com/watch?v=QDw5QjDtFy8)**, then you've seen what I'm talking about. Depending on your imagination, this visual trick can be used to put temporary holes in your drywall or to hide worlds under a loose floorboard.
 
-![RoboRaid adds three-dimensional pipes and other structure behind your walls, visible only through holes created as the invaders break through.](images/roboraid-640px.png)
+![RoboRaid adds three-dimensional pipes and other structure behind your walls, visible only through holes created as the invaders break through.](../develop/unity/images/roboraid-640px.png)
 
 RoboRaid adds three-dimensional pipes and other structure behind your walls, visible only through holes created as the invaders break through.
 
@@ -31,7 +31,7 @@ Secondly, that holographic content is visually limited to a very specific space,
 
 ![This is not an actual screenshot, but an illustration of how the secret underworld from MR Basics 101 looks on HoloLens. The black enclosure doesn’t show up, but you can see content through a virtual hole. (When looking through an actual device, the floor would seem to disappear even more because your eyes focus at a further distance as if it’s not even there.)](images/origamiholecomposited-640px.png)
 
-This is not an actual screenshot, but an illustration of how the secret underworld from the [MR Basics 101](holograms-101.md) looks on HoloLens. The black enclosure doesn’t show up, but you can see content through a virtual hole. (When looking through an actual device, the floor would seem to disappear even more because your eyes focus at a further distance as if it’s not even there.)
+This is not an actual screenshot, but an illustration of how the secret underworld from the [MR Basics 101](../develop/unity/tutorials/holograms-101.md) looks on HoloLens. The black enclosure doesn’t show up, but you can see content through a virtual hole. (When looking through an actual device, the floor would seem to disappear even more because your eyes focus at a further distance as if it’s not even there.)
 
 ### World-locking holographic content
 
@@ -79,7 +79,7 @@ Implementing an invisible occlusion material like that will let your app draw a 
 
 ![Here is the secret underworld from MR Basics 101 as Unity draws it, except for the outer parts of the occluding box. Note that the pivot for the underworld is at the center of the box, which helps keep the hole as stable as possible relative to your actual floor.](images/underworld-occluded-640px.png)
 
-Here is the secret underworld from [MR Basics 101](holograms-101.md) as Unity draws it, except for the outer parts of the occluding box. Note that the pivot for the underworld is at the center of the box, which helps keep the hole as stable as possible relative to your actual floor.
+Here is the secret underworld from [MR Basics 101](../develop/unity/tutorials/holograms-101.md) as Unity draws it, except for the outer parts of the occluding box. Note that the pivot for the underworld is at the center of the box, which helps keep the hole as stable as possible relative to your actual floor.
 
 ## Do it yourself
 
@@ -89,7 +89,7 @@ Have a HoloLens and want to try out the effect for yourself? The easiest thing y
 
 Viewing this model in your Unity editor will show a large black box around the flowerpot. On HoloLens, the box disappears, giving way to a magic window effect.
 
-If you want to build an app that uses this technique, check out the [MR Basics 101 tutorial](holograms-101.md) in the [Mixed Reality tutorials](tutorials.md). Chapter 7 ends with an explosion in your floor that reveals a hidden underworld (as pictured above). Who said tutorials had to be boring?
+If you want to build an app that uses this technique, check out the [MR Basics 101 tutorial](../develop/unity/tutorials/holograms-101.md) in the [Mixed Reality tutorials](../develop/unity/tutorials.md). Chapter 7 ends with an explosion in your floor that reveals a hidden underworld (as pictured above). Who said tutorials had to be boring?
 
 Here are some ideas of where you can take this idea next:
 * Think of ways to make the content inside the virtual hole interactive. Letting your users have some impact beyond their walls can really improve the sense of wonder that this trick can provide.
@@ -105,7 +105,7 @@ Here are some ideas of where you can take this idea next:
 </table>
 
 ## See also
-* [MR Basics 101: Complete project with device](holograms-101.md)
-* [Coordinate systems](coordinate-systems.md)
-* [Spatial anchors](spatial-anchors.md)
-* [Spatial mapping](spatial-mapping.md)
+* [MR Basics 101: Complete project with device](../develop/unity/tutorials/holograms-101.md)
+* [Coordinate systems](../design/coordinate-systems.md)
+* [Spatial anchors](../design/spatial-anchors.md)
+* [Spatial mapping](../design/spatial-mapping.md)

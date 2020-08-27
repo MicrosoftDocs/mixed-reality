@@ -139,7 +139,7 @@ In this mixed reality first-person shooter, use gaze and gesture to target enemi
          <i>February 2016<i>
     :::column-end:::
     :::column:::
-       [![Looking through holes in your reality](../develop/images/roboraid-640px.png)](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)
+       [![Looking through holes in your reality](../develop/unity/images/roboraid-640px.png)](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)
         **[Looking through holes in your reality](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)**<br>
         This case study explains how to implement the "magic window" effect on HoloLens, allowing the user to see behind walls, under the floor, and into virtual openings within their actual environment.<br>
         <i>February 2016<i>
