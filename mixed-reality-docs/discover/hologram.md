@@ -9,13 +9,12 @@ keywords: Windows Mixed Reality, HoloLens, holograms, design, interaction
 ---
 
 
-
 # What is a hologram?
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/MVXH5V8MVQo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-HoloLens lets you create **holograms**, objects made of light and sound that appear in the world around you, just as if they were real objects. Holograms respond to your [gaze](gaze-and-commit.md), [gestures](gaze-and-commit.md#composite-gestures) and [voice commands](voice-input.md), and can interact with [real-world surfaces](spatial-mapping.md) around you. With holograms, you can create digital objects that are part of your world.
+HoloLens lets you create **holograms**, objects made of light and sound that appear in the world around you, just as if they were real objects. Holograms respond to your [gaze](../design/gaze-and-commit.md), [gestures](../design/gaze-and-commit.md#composite-gestures) and [voice commands](../design/voice-input.md), and can interact with [real-world surfaces](../design/spatial-mapping.md) around you. With holograms, you can create digital objects that are part of your world.
 
 <br>
 
@@ -31,9 +30,9 @@ HoloLens lets you create **holograms**, objects made of light and sound that app
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td>Holograms</td>
@@ -49,13 +48,13 @@ HoloLens lets you create **holograms**, objects made of light and sound that app
 
 ## A hologram is made of light and sound
 
-The holograms that HoloLens [renders](rendering.md) appear in the holographic frame directly in front of the user's eyes. Holograms add light to your world, which means that you see both the light from the display and the light from your surroundings. HoloLens doesn't remove light from your eyes, so holograms can't be rendered with the color black. Instead, black content appears as transparent.
+The holograms that HoloLens [renders](../develop/platorm-capabilities-and-apis/rendering.md) appear in the holographic frame directly in front of the user's eyes. Holograms add light to your world, which means that you see both the light from the display and the light from your surroundings. HoloLens doesn't remove light from your eyes, so holograms can't be rendered with the color black. Instead, black content appears as transparent.
 
 Holograms can have many different appearances and behaviors. Some are realistic and solid, and others are cartoonish and ethereal. Holograms can highlight features in your surroundings, and they can be elements in your app's user interface.
 
 ![Hands manipulating a hologram](images/hologram-hands-940px.jpg)
 
-Holograms can also make [sounds](spatial-sound.md), which will appear to come from a specific place in your surroundings. On HoloLens, sound comes from two speakers that are located directly above your ears, without covering them. Similar to the displays, the speakers are additive, introducing new sounds without blocking the sounds from your environment.
+Holograms can also make [sounds](../design/spatial-sound.md), which will appear to come from a specific place in your surroundings. On HoloLens, sound comes from two speakers that are located directly above your ears, without covering them. Similar to the displays, the speakers are additive, introducing new sounds without blocking the sounds from your environment.
 
 <br>
 
@@ -63,7 +62,7 @@ Holograms can also make [sounds](spatial-sound.md), which will appear to come fr
 
 ## A hologram can be placed in the world or tag along with you
 
-When you have a particular location where you want a hologram, you can [place](coordinate-systems.md) it precisely there in the world. As you walk around that hologram, it will appear stable relative to the world around you. If you use a [spatial anchor](coordinate-systems.md#spatial-anchors) to pin that object firmly to the world, the system can even remember where you left it when you come back later.
+When you have a particular location where you want a hologram, you can [place](../design/coordinate-systems.md) it precisely there in the world. As you walk around that hologram, it will appear stable relative to the world around you. If you use a [spatial anchor](../design/coordinate-systems.md#spatial-anchors) to pin that object firmly to the world, the system can even remember where you left it when you come back later.
 
 ![Two men using Microsoft Dynamics 365 Layout in a retail space](images/HLS19_retailLayoutHologram_001-940px.jpg)
 
@@ -95,7 +94,7 @@ Holograms aren't only about light and sound; they're also an active part of your
 
 Holograms enable personal interactions that aren't possible elsewhere. Because the HoloLens knows where it is in the world, a holographic character can look you directly in the eyes as you walk around the room.
 
-A hologram can also interact with your surroundings. For example, you can place a holographic bouncing ball above a table. Then, with an [air tap](gaze-and-commit.md#composite-gestures), watch the ball bounce and make sound when it hits the table.
+A hologram can also interact with your surroundings. For example, you can place a holographic bouncing ball above a table. Then, with an [air tap](../design/gaze-and-commit.md#composite-gestures), watch the ball bounce and make sound when it hits the table.
 
 Holograms can also be occluded by real-world objects. For example, a holographic character might walk through a door and behind a wall, out of your sight.
 
@@ -126,5 +125,5 @@ Holograms can also be occluded by real-world objects. For example, a holographic
 
 ## See also
 * [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
-* [Spatial sound](spatial-sound.md)
-* [Color, light and materials](color,-light-and-materials.md)
+* [Spatial sound](../design/spatial-sound.md)
+* [Color, light and materials](../../color,-light-and-materials.md)

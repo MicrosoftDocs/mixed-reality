@@ -24,7 +24,7 @@ The Start menu consists of:
 * Cortana (on immersive headsets, a Start tile; on HoloLens, at the top of Start)
 * Pinned apps
 * The All apps button (plus sign)
-* Photo and video buttons for [mixed reality capture](../../mixed-reality-capture.md)
+* Photo and video buttons for [mixed reality capture](../mixed-reality-capture.md)
 
 Switch between the pinned apps and All apps views by selecting the plus or minus buttons. To open the Start menu on HoloLens, use the bloom gesture. On an immersive headset, press the Windows button on your controller.
 
