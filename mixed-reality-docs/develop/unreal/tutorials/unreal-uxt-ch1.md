@@ -22,10 +22,9 @@ By the end of the series you'll have hands-on experience with:
 * Adding buttons
 * Playing on an emulator or device
 
-If you have any questions, check out our [Unreal development overview](https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview).
 
 ## Prerequisites
-Make sure you've met the following requirements before jumping in:
+Make sure you've installed the following before jumping in:
 * Windows 10 1809 or later
 * Windows 10 SDK 10.0.18362.0 or later
 * [Unreal Engine](https://www.unrealengine.com/en-US/get-now) 4.25 or later
@@ -33,7 +32,7 @@ Make sure you've met the following requirements before jumping in:
 * Visual Studio 2019 with the workloads below
 
 ### Installing Visual Studio 2019
-The last step is to setup Visual Studio as follows:
+There are a few steps to ensure you have all the required Visual Studio packages:
 1. Install the latest version of [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)
 2. Install the following [workloads](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?view=vs-2019#modify-workloads):
     * Desktop development with C++
@@ -43,6 +42,6 @@ The last step is to setup Visual Studio as follows:
 3. Install the following [components](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?view=vs-2019#modify-individual-components):
     * Compilers, build tools, and runtimes > MSVC v142 - VS 2019 C++ ARM64 build tools (latest version)
 
-That's it! You're all set to move on to starting the chess app project.
+That's it! You're all set to move on to starting the chess project.
 
 [Next section: 2. Initializing your project and first application](unreal-uxt-ch2.md)

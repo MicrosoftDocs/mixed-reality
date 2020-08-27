@@ -30,7 +30,7 @@ Advancements in sensors and processing are giving rise to a new area of computer
 
 <br>
 
-![Venn diagram showing interactions between computers, humans and environments](images/mixed-reality-venn-diagram-300px.png)<br> 
+![Venn diagram showing interactions between computers, humans and environments](images/mixed-reality-venn-diagram-300px.png)<br>
 *Image: The interactions between between computers, humans and environments.*
 
 <br>
@@ -115,4 +115,3 @@ Often, it is best to think what type of experience an application or game develo
 * [Understand the basics of mixed reality](get-started-with-mr.md#understand-the-basics)
 * [Start creating and prototyping](../design/design.md)
 * [Learn the tools and architecture](../develop/development.md)
-

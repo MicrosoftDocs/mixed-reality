@@ -1,6 +1,6 @@
 ---
 title: Direct manipulation with hands
-description: Overview of the direct manipulation input model
+description: Learn about direct manipulation, an input model in which users touch holograms directly with their hands.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 04/02/2019

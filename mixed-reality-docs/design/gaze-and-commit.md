@@ -1,6 +1,6 @@
 ---
 title: Gaze and commit
-description: General overview of the "gaze and commit" input model - using either eye or head input.
+description: Learn about the gaze and commit input model, including two types of gaze (head-gaze and eye-gaze), and various types of commit.
 author: sostel
 ms.author: sostel
 ms.date: 10/31/2019

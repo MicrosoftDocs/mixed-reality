@@ -37,7 +37,7 @@ To update to the current release, open the *Settings* app, go to *Update & Secur
 
   ![The app bar can be hidden for 2D apps like photos](images/img-3626-400px.jpg)<br>
   The app bar can be hidden for apps with a 2D view, like Photos
-  
+
 * **File picker** works just like you expect it to on HoloLens.
 * Updated **Edge browser** to map unified user experience with desktop and phone. We enabled multiple instances of your browser, custom HoloLens new tab page, tab peek, and open in new windows, along with power & performance improvements.
 * **Groove Music** app is now on HoloLens. Visit the store to download it and try playing in the background.

@@ -1,5 +1,4 @@
 ---
-layout: LandingPage
 title: Mixed reality UX elements
 description: This document contains a set of topics that explain how to design for mixed reality devices.
 author: cre8ivepark
@@ -146,4 +145,3 @@ Learn about frequently used common spatial interactions and UI building blocks f
 :::row-end:::
 
 <br>
-

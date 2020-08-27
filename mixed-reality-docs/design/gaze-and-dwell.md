@@ -10,19 +10,19 @@ keywords: Mixed Reality, gaze, dwell, interaction, design, eye tracking, head tr
 
 # Gaze and dwell
 
-When hands are occupied with tools and parts, gestures can be tedious or impossible. 
-Voice commands may also be unreliable in certain contexts, for example under excessively loud conditions. 
-Gaze and dwell offers a familiar and easy-to-master mechanism for working heads-up and hands-free on HoloLens. 
+When hands are occupied with tools and parts, gestures can be tedious or impossible.
+Voice commands may also be unreliable in certain contexts, for example under excessively loud conditions.
+Gaze and dwell offers a familiar and easy-to-master mechanism for working heads-up and hands-free on HoloLens.
 Additionally, gaze and dwell is a great fallback which is independent of noise interference or silence constraints in the operating environment.
 We distinguish two variants of _gaze and dwell_: [Head-gaze and dwell](gaze-and-dwell-head.md) and [Eye-gaze and dwell](gaze-and-dwell-eyes.md).
 
 ## Scenarios
 
-Gaze and dwell excels in scenarios where a person's hands are busy with other tasks, and voice isn't 100% reliable or available due to environmental or social constraints. 
-A good example is a person wearing a HoloLens to overlay reference information while repairing a car engine. 
-Their hands are busy with tools or supporting their body as they lean into the engine compartment. 
-The garage space is loud, with the constant banging and buzzing of tools, making voice commands difficult. 
-Gaze and dwell allows the person using the HoloLens to confidently navigate their reference material without interrupting their workflow. 
+Gaze and dwell excels in scenarios where a person's hands are busy with other tasks, and voice isn't 100% reliable or available due to environmental or social constraints.
+A good example is a person wearing a HoloLens to overlay reference information while repairing a car engine.
+Their hands are busy with tools or supporting their body as they lean into the engine compartment.
+The garage space is loud, with the constant banging and buzzing of tools, making voice commands difficult.
+Gaze and dwell allows the person using the HoloLens to confidently navigate their reference material without interrupting their workflow.
 
 ## Device support
 
@@ -57,7 +57,7 @@ Gaze and dwell allows the person using the HoloLens to confidently navigate thei
 <br>
 
 ---
- 
+
  ## See also
 * [Eye-based interaction](eye-gaze-interaction.md)
 * [Eye tracking on HoloLens 2](eye-tracking.md)
