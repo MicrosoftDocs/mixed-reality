@@ -30,7 +30,7 @@ HoloLens lets you create **holograms**, objects made of light and sound that app
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
@@ -48,7 +48,7 @@ HoloLens lets you create **holograms**, objects made of light and sound that app
 
 ## A hologram is made of light and sound
 
-The holograms that HoloLens [renders](../develop/platorm-capabilities-and-apis/rendering.md) appear in the holographic frame directly in front of the user's eyes. Holograms add light to your world, which means that you see both the light from the display and the light from your surroundings. HoloLens doesn't remove light from your eyes, so holograms can't be rendered with the color black. Instead, black content appears as transparent.
+The holograms that HoloLens [renders](../develop/platform-capabilities-and-apis/rendering.md) appear in the holographic frame directly in front of the user's eyes. Holograms add light to your world, which means that you see both the light from the display and the light from your surroundings. HoloLens doesn't remove light from your eyes, so holograms can't be rendered with the color black. Instead, black content appears as transparent.
 
 Holograms can have many different appearances and behaviors. Some are realistic and solid, and others are cartoonish and ethereal. Holograms can highlight features in your surroundings, and they can be elements in your app's user interface.
 
@@ -126,4 +126,4 @@ Holograms can also be occluded by real-world objects. For example, a holographic
 ## See also
 * [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
 * [Spatial sound](../design/spatial-sound.md)
-* [Color, light and materials](../../color,-light-and-materials.md)
+* [Color, light and materials](../color,-light-and-materials.md)

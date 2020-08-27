@@ -1,57 +1,43 @@
 ---
 layout: LandingPage
-title: Tutorials and sample apps
-description: Provides code samples and tutorials on mixed reality development.
+title: Tutorials 
+description: Provides tutorials on mixed reality development.
 author: keveleigh
 ms.author: kurtie
-ms.date: 10/22/2019
+ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial
+keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial
 ---
 
-# Tutorials and sample apps
+# Tutorials 
 
 ![HoloLens 2 user](images/08_Tutorials.png)
 
 Currently, all of our tutorials and sample apps are Unity or Unreal based. As we develop content for other engines and platforms, you will find them under the relevant heading in the Table of Contents.
 
-## HoloLens 2 tutorials
+## HoloLens 2 
 
 The HoloLens 2 tutorials are designed to help developers learn both techniques and best practices for developing mixed reality applications. The Unity tutorials are based on the [Mixed Reality Toolkit 2.0 (MRTK 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity), and the Unreal tutorial is based on the [UX Tools for Unreal Engine 0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal).
 
 * Getting started tutorials
-    * Unity - [1 of 7 Overview and objectives](mrlearning-base.md)
-    * Unreal - [1 of 6 Getting started](unreal-uxt-ch1.md)
-* Azure Spatial Anchor tutorials - [1 of 4 Getting started with Azure Spatial Anchors](mrlearning-asa-ch1.md)
-* Azure Speech Services tutorials - [1 of 4 Integrating and using speech recognition and transcription](mrlearning-speechSDK-ch1.md)
-* Multi-user capabilities tutorials - [1 of 5 Setting up Photon Unity Networking](mrlearning-sharing(photon)-ch1.md)
+    * Unity - [1 of 9 Introduction](tutorials/mr-learning-base-01.md)
+    * Unreal - [1 of 6 Getting started](tutorials/unreal-uxt-ch1.md)
+* Azure Spatial Anchors tutorials - [1 of 5 Introduction](tutorials/mr-learning-asa-01.md)
+* Multi-user capabilities tutorials - [1 of 5 Introduction](tutorials/mr-learning-sharing-01.md)
+* Azure Speech Services tutorials - [1 of 4 Integrating and using speech recognition and transcription](tutorials/mrlearning-speechSDK-ch1.md)
 
-## Open source sample apps
-
-The open source sample apps are applications that have been created by our teams and we have provided the source code so that developers could look at it and learn from our projects.
-
-### HoloLens 2 open source sample apps
-* [Surfaces](sampleapp-surfaces.md)
-* [Periodic Table of the Elements 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
-* [Galaxy Explorer 2.0](galaxy-explorer-update.md)
-
-### HoloLens (1st gen) open source sample apps
-* [Periodic Table of the Elements 1.0](periodic-table-of-the-elements.md)
-* [Galaxy Explorer 1.0](galaxy-explorer.md)
-* [Lunar Module](lunar-module.md)
-
-## Mixed Reality Academy tutorials
+## Mixed Reality Academy 
 
 The Mixed Reality Academy is a set of online step-by-step tutorials with corresponding project files:
 
 * The tutorials cover 100, 200, and 300 level topics, in which: 100-level covers project basics, 200-level covers core MR building blocks, and 300-level covers cloud service integration.
 * Most courses cover concepts applicable to both HoloLens and immersive (VR) headsets.
 * Each tutorial is organized by chapter, and most include video demonstrations of the key concepts.
-* A Windows 10 PC with the correct [tools installed](install-the-tools.md) is a common prerequiste to complete each tutorial.
+* A Windows 10 PC with the correct [tools installed](../install-the-tools.md) is a common prerequiste to complete each tutorial.
 
 >[!NOTE]
->The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind. As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices. These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2. They will be maintained to continue working on the supported devices. [A new series of tutorials](mrlearning-base.md) has been posted for HoloLens 2.
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind. As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices. These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2. They will be maintained to continue working on the supported devices. [A new series of tutorials](tutorials/mr-learning-base-01.md) has been posted for HoloLens 2.
 
 <br>
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
@@ -112,158 +98,6 @@ The Mixed Reality Academy is a set of online step-by-step tutorials with corresp
                                     </div>
                                   </a>
                             </li>
-                            <li>
-                             <a href="holograms-210.md" title="MR Input 210" data-linktype="absolute-path">
-                              <div class="cardSize">
-                                  <div class="cardPadding">
-                                      <div class="card">
-                                          <div class="cardImageOuter">
-                                              <div class="cardImage">
-                                                  <img src="images/Holograms210.jpg" alt="MR Input 210 icon">
-                                              </div>
-                                          </div>
-                                          <div class="cardText">
-                                              <h3>MR Input 210: Gaze</h3>
-                                              <p>Gaze is the first form of input, and reveals the user's intent and awareness. You will add contextual awareness to your cursor and holograms, taking full advantage of what your app knows about the user's gaze.</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                               </a>
-                            </li>
-                            <li>
-                            <a href="holograms-211.md" title="MR Input 211" data-linktype="absolute-path">
-                              <div class="cardSize">
-                                  <div class="cardPadding">
-                                      <div class="card">
-                                          <div class="cardImageOuter">
-                                              <div class="cardImage">
-                                                  <img src="images/Holograms211.jpg" alt="MR Input 211 icon">
-                                              </div>
-                                          </div>
-                                          <div class="cardText">
-                                              <h3>MR Input 211: Gesture</h3>
-                                              <p>Gestures turn user intention into action. With gestures, users can interact with holograms. In this course, you will learn to track the user's hands, respond to user input, and give feedback based on hand state and location.</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              </a>
-                            </li>         
-                            <li>
-                             <a href="holograms-212.md" title="MR Input 212" data-linktype="absolute-path">
-                              <div class="cardSize">
-                                  <div class="cardPadding">
-                                      <div class="card">
-                                          <div class="cardImageOuter">
-                                              <div class="cardImage">
-                                                  <img src="images/Holograms212.jpg" alt="MR Input 212 icon">
-                                              </div>
-                                          </div>
-                                          <div class="cardText">
-                                              <h3>MR Input 212: Voice</h3>
-                                              <p>Voice allows us to interact with our holograms in an easy and natural way. In this course, you will learn to make users aware of available voice commands, give feedback that a voice command was heard, and use dictation to understand what the user is saying.</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              </a>
-                            </li>
-                             <li>
-                              <a href="mixed-reality-213.md" title="MR Input 213" data-linktype="absolute-path">
-                              <div class="cardSize">
-                                  <div class="cardPadding">
-                                      <div class="card">
-                                          <div class="cardImageOuter">
-                                              <div class="cardImage">
-                                                  <img src="images/MR213v2.jpg" alt="MR Input 213 icon">
-                                              </div>
-                                          </div>
-                                          <div class="cardText">
-                                              <h3>MR Input 213: Motion controllers</h3>
-                                              <p>This course will explore ways of visualizing motion controllers in immersive (VR) headsets, handling input events, and attaching custom UI elements to the controllers.</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              </a>
-                            </li>   
-                              <li>
-                              <a href="holograms-220.md" title="MR Spatial 220" data-linktype="absolute-path">
-                              <div class="cardSize">
-                                  <div class="cardPadding">
-                                      <div class="card">
-                                          <div class="cardImageOuter">
-                                              <div class="cardImage">
-                                                  <img src="images/Holograms220b.jpg" alt="MR Spatial 220 icon">
-                                              </div>
-                                          </div>
-                                          <div class="cardText">
-                                              <h3>MR Spatial 220: Spatial sound</h3>
-                                              <p>Spatial sound breathes life into holograms and gives them presence. In this course, you will learn to use spatial sound to ground holograms in the surrounding world, give feedback during interactions, and use audio to find your holograms.</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              </a>
-                            </li>      
-                               <li>
-                               <a href="holograms-230.md" title="MR Spatial 230" data-linktype="absolute-path">
-                              <div class="cardSize">
-                                  <div class="cardPadding">
-                                      <div class="card">
-                                          <div class="cardImageOuter">
-                                              <div class="cardImage">
-                                                  <img src="images/Holograms230.jpg" alt="MR Spatial 230 icon">
-                                              </div>
-                                          </div>
-                                          <div class="cardText">
-                                              <h3>MR Spatial 230: Spatial mapping</h3>
-                                              <p>Spatial mapping brings the real world and virtual world together. You'll explore shaders and use them to visualize your space. Then you'll learn to simplify the room mesh into simple planes, give feedback on placing holograms on real-world surfaces, and explore occlusion visual effects.</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                             </a>
-                            </li> 
-                                <li>
-                                <a href="holograms-240.md" title="MR Sharing 240" data-linktype="absolute-path">
-                              <div class="cardSize">
-                                  <div class="cardPadding">
-                                      <div class="card">
-                                          <div class="cardImageOuter">
-                                              <div class="cardImage">
-                                                  <img src="images/Holograms240.jpg" alt="MR Sharing 240 icon">
-                                              </div>
-                                          </div>
-                                          <div class="cardText">
-                                              <h3>MR Sharing 240: Multiple HoloLens devices</h3>
-                                              <p>Our //Build 2016 project! Set up a complete project with coordinate systems shared between HoloLens devices, allowing users to take part in a shared holographic world.</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                             </a>
-                            </li> 
-                                 <li>
-                                   <a href="mixed-reality-250.md" title="MR Sharing 250" data-linktype="absolute-path">
-                              <div class="cardSize">
-                                  <div class="cardPadding">
-                                      <div class="card">
-                                          <div class="cardImageOuter">
-                                              <div class="cardImage">
-                                                  <img src="images/MR250-new.jpg" alt="MR Sharing 250 icon">
-                                              </div>
-                                          </div>
-                                          <div class="cardText">
-                                              <h3>MR Sharing 250: HoloLens and immersive headsets</h3>
-                                              <p>In our //Build 2017 project, we demonstrate building an app that leverages the unique strengths of HoloLens and immersive (VR) headsets within a shared, cross-device experience.</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              </a>
-                            </li> 
 </ul>
 
 ## Mixed Reality and Azure Services tutorials

@@ -85,7 +85,7 @@ Before Microsoft HoloLens shipped, we asked our developer community what kind of
          <i>February 2016<i>
     :::column-end:::
     :::column:::
-       [![The Making of Galaxy Explorer for HoloLens 2](images/ge-update-interactions-concept-force-grab.png)](../develop/unity/galaxy-explorer-update.md)
+       [![The Making of Galaxy Explorer for HoloLens 2](../develop/unity/images/ge-update-interactions-concept-force-grab.png)](../develop/unity/galaxy-explorer-update.md)
         **[The Making of Galaxy Explorer for HoloLens 2](../develop/unity/galaxy-explorer-update.md)**<br>
         Welcome to the journey of how we are updating Galaxy Explorer for HoloLens 2. Galaxy Explorer was originally developed as an open source application for HoloLens (1st gen) through the Share Your Idea program, and is one of the first mixed reality experiences many people had. Now we are updating it for the new capabilities of HoloLens 2.<br>
         <i>June 2019<i>
@@ -104,19 +104,19 @@ HoloTour for Microsoft HoloLens provides immersive 3D personal tours of iconic l
 
 :::row:::
     :::column:::
-       [![Spatial sound design for HoloTour](images/recreated-colosseum-holotour-500px.png)](../design/case-study-spatial-sound-design-for-holotour.md)
+       [![Spatial sound design for HoloTour](../out-of-scope/images/recreated-colosseum-holotour-500px.png)](../design/case-study-spatial-sound-design-for-holotour.md)
         **[Spatial sound design for HoloTour](../design/case-study-spatial-sound-design-for-holotour.md)**<br>
         To create a truly immersive 3D virtual tour for Microsoft HoloLens, the panoramic videos and holographic scenery are only part of the formula.<br>
          <i>August 2016<i>
     :::column-end:::
     :::column:::
-       [![Creating impossible perspectives for HoloTour](images/rome-colosseum-overlay-500px.png)](../out-of-scope/case-study-creating-impossible-perspectives-for-holotour.md)
+       [![Creating impossible perspectives for HoloTour](../out-of-scope/images/rome-colosseum-overlay-500px.png)](../out-of-scope/case-study-creating-impossible-perspectives-for-holotour.md)
         **[Creating impossible perspectives for HoloTour](../out-of-scope/case-study-creating-impossible-perspectives-for-holotour.md)**<br>
         We wanted your experiences in HoloTour for HoloLens to be unforgettable. In addition to the traditional tourist stops, we planned out some "impossible perspectives".<br>
         <i>August 2016<i>
     :::column-end:::
     :::column:::
-       [![Capturing and creating content for HoloTour](images/camera-machu-pichu-500px.png)](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md)
+       [![Capturing and creating content for HoloTour](../out-of-scope/images/camera-machu-pichu-500px.png)](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md)
         **[Capturing and creating content for HoloTour](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md)**<br>
         HoloTour provides immersive 3D personal tours of iconic locations around the world. As we found out, creating a convincingly real 3D rendering of a well-known location takes a blend of creative and technological wizardry.<br>
         <i>August 2016<i>
@@ -133,14 +133,14 @@ In this mixed reality first-person shooter, use gaze and gesture to target enemi
 
 :::row:::
     :::column:::
-       [![Using spatial sound in RoboRaid](images/successful-dodge-roboraid-500px.jpg)](../design/case-study-using-spatial-sound-in-roboraid.md)
+       [![Using spatial sound in RoboRaid](../design/images/successful-dodge-roboraid-500px.jpg)](../design/case-study-using-spatial-sound-in-roboraid.md)
         **[Using spatial sound in RoboRaid](../design/case-study-using-spatial-sound-in-roboraid.md)**<br>
         Spatial sound is one of the most exciting features of Microsoft HoloLens, providing a way for users to perceive what's going on around them when objects are out of the line of sight.<br>
          <i>February 2016<i>
     :::column-end:::
     :::column:::
-       [![Looking through holes in your reality](images/roboraid-640px.png)](../design/case-study-looking-through-holes-in-your-reality.md)
-        **[Looking through holes in your reality](../design/case-study-looking-through-holes-in-your-reality.md)**<br>
+       [![Looking through holes in your reality](../develop/images/roboraid-640px.png)](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)
+        **[Looking through holes in your reality](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)**<br>
         This case study explains how to implement the "magic window" effect on HoloLens, allowing the user to see behind walls, under the floor, and into virtual openings within their actual environment.<br>
         <i>February 2016<i>
     :::column-end:::
@@ -159,13 +159,13 @@ Read our high-level thoughts, and understand the principles we follow.
 
 :::row:::
     :::column:::
-       [![Representing humans in mixed reality](images/bang-ai-weiwie.jpg)](../out-of-scope/case-study-representing-humans-in-mixed-reality.md)
+       [![Representing humans in mixed reality](../develop/unity/images/bang-ai-weiwie.jpg)](../out-of-scope/case-study-representing-humans-in-mixed-reality.md)
         **[Representing humans in mixed reality](../out-of-scope/case-study-representing-humans-in-mixed-reality.md)**<br>
         What kind of opportunities emerge when we cannot only create fantastic elements, but utilize the most realistic captures of environments, objects, and people in mixed reality?<br>
          <i>November 2017<i>
     :::column-end:::
     :::column:::
-       [![My first year on the HoloLens design team](images/MotionController.jpg)](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md)
+       [![My first year on the HoloLens design team](../develop/unity/images/MotionController.jpg)](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md)
         **[My first year on the HoloLens design team](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md)**<br>
         My journey from a 2D flatland to the 3D world started when I joined the HoloLens design team in January 2016.<br>
         <i>January 2016<i>
@@ -180,7 +180,7 @@ Read our high-level thoughts, and understand the principles we follow.
 
 :::row:::
     :::column:::
-       [![AfterNow's process - envisioning, prototyping, building](images/whatisenvisioning-640px.png)](../out-of-scope/case-study-afternows-process-envisioning,-prototyping,-building.md)
+       [![AfterNow's process - envisioning, prototyping, building](../out-of-scope/images/whatisenvisioning-640px.png)](../out-of-scope/case-study-afternows-process-envisioning,-prototyping,-building.md)
         **[AfterNow's process - envisioning, prototyping, building](../out-of-scope/case-study-afternows-process-envisioning,-prototyping,-building.md)**<br>
         At AfterNow, we work with you to turn your ideas and aspirations into concrete, fully operational products and experiences ready for the market. But before we write a single line of code, we create a blueprint through a process called envisioning.<br>
         <i>April 2017<i>
