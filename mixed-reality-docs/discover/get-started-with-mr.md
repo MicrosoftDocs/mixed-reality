@@ -25,8 +25,8 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
         Start designing and prototyping
     :::column-end:::
     :::column:::
-       [![I'm a developer](images/Tile-Develop.jpg)](../development/development.md)<br>
-        **[I'm a developer](../development/development.md)**<br>
+       [![I'm a developer](images/Tile-Develop.jpg)](../develop/development.md)<br>
+        **[I'm a developer](../develop/development.md)**<br>
         Learn the tools and architecture
     :::column-end:::
     :::column:::
@@ -53,13 +53,13 @@ If you're new to mixed reality, you will learn what it is and understand its cap
 ### What is mixed reality?
 
 
-#### [Mixed reality is a spectrum](mixed-reality.md)
+#### [Mixed reality is a spectrum](../discover/mixed-reality.md)
 Mixed reality is the result of blending the physical world with the digital world. It is the next evolution in human, computer, and environment interaction and unleashes possibilities that until now were only restricted to our imaginations.
 
 <br>
 
 
-#### [What is a hologram?](hologram.md)
+#### [What is a hologram?](../discover/hologram.md)
 HoloLens lets you create holograms, which are objects made of light and sound that appear in the world around you, just as if they were real objects. Holograms respond to your gaze, gestures and voice commands, and can interact with real-world surfaces around you. With holograms, you can create digital objects that are part of your world.
 
 <br>

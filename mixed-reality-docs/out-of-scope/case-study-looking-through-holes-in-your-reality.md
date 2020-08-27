@@ -9,7 +9,6 @@ keywords: Windows Mixed Reality, HoloLens, magic window, parallax
 ---
 
 
-
 # Case study - Looking through holes in your reality
 
 When people think about mixed reality and what they can do with Microsoft HoloLens, they usually stick to questions like "What objects can I add to my room?" or “What can I layer on top of my space?" I’d like to highlight another area you can consider—essentially a magic trick—using the same technology to look into or through real physical objects around you.

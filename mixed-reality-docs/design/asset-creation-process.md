@@ -9,7 +9,6 @@ keywords: asset, creation, process, budget, polygons, textures, shaders, perform
 ---
 
 
-
 # Asset creation process
 
 Windows Mixed Reality builds on the decades of investment Microsoft has made into DirectX. This means that all of the experience and skills developers have with building 3D graphics continues to be valuable with HoloLens.
@@ -61,7 +60,7 @@ Below is an example budget for your experience. Performance is usually not a sin
 
 Both the developers and artists have to consider the capabilities of the device and the graphics engine. Microsoft HoloLens has all of the computational and graphics built into the device. It shares the capabilities developers would find on a mobile platform.
 
-The creation process for assets is the same regardless of whether you're targeting an experience for a [holographic device or an immersive device](../out-of-scope/mixed-reality.md#the-mixed-reality-spectrum). The primary thing to note is the device capability as mentioned above as well as scale since you can see the real world in mixed reality you will want to maintain the correct scale based on the experience. 
+The creation process for assets is the same regardless of whether you're targeting an experience for a [holographic device or an immersive device](../discover/mixed-reality.md#the-mixed-reality-spectrum). The primary thing to note is the device capability as mentioned above as well as scale since you can see the real world in mixed reality you will want to maintain the correct scale based on the experience. 
 
 ## Authoring assets
 

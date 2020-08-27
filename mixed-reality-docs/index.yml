@@ -25,7 +25,7 @@ highlightedContent:
     # Card
     - title: What is Mixed Reality?
       itemType: overview
-      url: out-of-scope/mixed-reality.md 
+      url: discover/mixed-reality.md 
     # Card
     - title: Introducing HoloLens 2
       itemType: overview
@@ -65,7 +65,7 @@ productDirectory:
           text: Design and prototype
         - url: design/types-of-mixed-reality-apps.md
           text: Choose your type of Mixed Reality app
-        - url: out-of-scope/case-study-expanding-the-design-process-for-mixed-reality.md
+        - url: discover/case-study-expanding-the-design-process-for-mixed-reality.md
           text: Expand your design process
         - url: design/app-patterns-landingpage.md
           text: Learn about UX elements
@@ -75,7 +75,7 @@ productDirectory:
           text: Understand interaction fundamentals
     # Card
     - title: Develop
-      imageSrc: images/icon-developer.png
+      imageSrc: design/images/icon-developer.png
       links:
         - url: develop/development.md
           text: Choose your technology path
@@ -91,7 +91,7 @@ productDirectory:
           text: Get your app ready for HoloLens 2
     # Card
     - title: Deploy HoloLens 2
-      imageSrc: images/icon-distribution.png
+      imageSrc: design/images/icon-distribution.png
       links:
         - url: https://docs.microsoft.com/hololens/hololens-requirements
           text: Prepare for commercial deployment

@@ -41,7 +41,7 @@ The differences between DirectX development for [2D views and immersive views](.
 
 ### 2. Core building blocks
 
-Windows Mixed Reality applications use the following APIs to build [mixed-reality](../../out-of-scope/mixed-reality.md) experiences for HoloLens and other immersive headsets:
+Windows Mixed Reality applications use the following APIs to build [mixed-reality](../../discover/mixed-reality.md) experiences for HoloLens and other immersive headsets:
 
 |  Feature  |  Capability  |
 | --- | --- |

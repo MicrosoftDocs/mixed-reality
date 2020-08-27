@@ -11,7 +11,7 @@ keywords: rendering, hologram
 
 # Rendering
 
-Holographic rendering enables your application to draw a hologram at a precise location in the world around the user, whether it's precisely placed in the physical world or within a virtual realm you've created. [Holograms](../../out-of-scope/hologram.md) are objects made of sound and light. Rendering enables your application to add the light.
+Holographic rendering enables your application to draw a hologram at a precise location in the world around the user, whether it's precisely placed in the physical world or within a virtual realm you've created. [Holograms](../../discover/hologram.md) are objects made of sound and light. Rendering enables your application to add the light.
 
 ## Device support
 

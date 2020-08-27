@@ -96,6 +96,6 @@ Materials are crucial elements for making realistic holograms. By providing prop
 ## See also
 * [Designing content for holographic display](designing-content-for-holographic-display.md)
 * [Color Separation](../develop/platform-capabilities-and-apis/hologram-stability.md#color-separation)
-* [Holograms](../out-of-scope/hologram.md)
+* [Holograms](../discover/hologram.md)
 * [Microsoft Design Language - color](https://www.microsoft.com/design/color)
 * [Universal Windows Platform - color](https://docs.microsoft.com/windows/uwp/style/color)

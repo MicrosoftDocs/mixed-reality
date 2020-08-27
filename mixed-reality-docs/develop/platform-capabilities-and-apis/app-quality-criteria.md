@@ -474,7 +474,7 @@ Holograms should react to the user position in roughly the same ways that "real"
 
 #### Documentation
 
-* [Interaction design](../../out-of-scope/hologram.md)
+* [Interaction design](../../discover/hologram.md)
 * [Color, light, and material](../../color,-light-and-materials.md)
 * [Billboarding and tag-along](../../design/billboarding-and-tag-along.md)
 * [Instinctual interactions](../../design/interaction-fundamentals.md)

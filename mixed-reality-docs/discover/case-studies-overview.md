@@ -21,8 +21,8 @@ Stories, learnings and experiences the Mixed Reality team has encountered and jo
          <i>July 2016<i>
     :::column-end:::
     :::column:::
-       [![Building HoloSketch, a spatial layout and UX sketching app for HoloLens](images/holosketch-image-01-640px.png)](../../case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)
-        **[Building HoloSketch, a spatial layout and UX sketching app for HoloLens](../../case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)**<br>
+       [![Building HoloSketch, a spatial layout and UX sketching app for HoloLens](images/holosketch-image-01-640px.png)](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)
+        **[Building HoloSketch, a spatial layout and UX sketching app for HoloLens](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)**<br>
         HoloSketch is an on-device spatial layout and UX sketching tool for HoloLens to help build holographic experiences.<br>
         <i>July 2017<i>
     :::column-end:::
@@ -48,8 +48,8 @@ Stories, learnings and experiences the Mixed Reality team has encountered and jo
         <i>September 2016<i>
     :::column-end:::
     :::column:::
-       [![Using the stabilization plane to reduce holographic turbulence](images/holotour-stabilization-plane-500px.jpg)](../out-of-scope/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)
-        **[Using the stabilization plane to reduce holographic turbulence](../out-of-scope/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)**<br>
+       [![Using the stabilization plane to reduce holographic turbulence](images/holotour-stabilization-plane-500px.jpg)](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)
+        **[Using the stabilization plane to reduce holographic turbulence](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)**<br>
         Working with holograms can be tricky. The fact that you can move around your space and see your holograms from all different angles provides a level of immersion that you can’t get with a normal computer screen.<br>
         <i>April 2017<i>
     :::column-end:::
@@ -85,8 +85,8 @@ Before Microsoft HoloLens shipped, we asked our developer community what kind of
          <i>February 2016<i>
     :::column-end:::
     :::column:::
-       [![The Making of Galaxy Explorer for HoloLens 2](images/ge-update-interactions-concept-force-grab.png)](../design/galaxy-explorer-update.md)
-        **[The Making of Galaxy Explorer for HoloLens 2](../design/galaxy-explorer-update.md)**<br>
+       [![The Making of Galaxy Explorer for HoloLens 2](images/ge-update-interactions-concept-force-grab.png)](../develop/unity/galaxy-explorer-update.md)
+        **[The Making of Galaxy Explorer for HoloLens 2](../develop/unity/galaxy-explorer-update.md)**<br>
         Welcome to the journey of how we are updating Galaxy Explorer for HoloLens 2. Galaxy Explorer was originally developed as an open source application for HoloLens (1st gen) through the Share Your Idea program, and is one of the first mixed reality experiences many people had. Now we are updating it for the new capabilities of HoloLens 2.<br>
         <i>June 2019<i>
     :::column-end:::
@@ -104,8 +104,8 @@ HoloTour for Microsoft HoloLens provides immersive 3D personal tours of iconic l
 
 :::row:::
     :::column:::
-       [![Spatial sound design for HoloTour](images/recreated-colosseum-holotour-500px.png)](../out-of-scope/case-study-spatial-sound-design-for-holotour.md)
-        **[Spatial sound design for HoloTour](../out-of-scope/case-study-spatial-sound-design-for-holotour.md)**<br>
+       [![Spatial sound design for HoloTour](images/recreated-colosseum-holotour-500px.png)](../design/case-study-spatial-sound-design-for-holotour.md)
+        **[Spatial sound design for HoloTour](../design/case-study-spatial-sound-design-for-holotour.md)**<br>
         To create a truly immersive 3D virtual tour for Microsoft HoloLens, the panoramic videos and holographic scenery are only part of the formula.<br>
          <i>August 2016<i>
     :::column-end:::
@@ -133,14 +133,14 @@ In this mixed reality first-person shooter, use gaze and gesture to target enemi
 
 :::row:::
     :::column:::
-       [![Using spatial sound in RoboRaid](images/successful-dodge-roboraid-500px.jpg)](../out-of-scope/case-study-using-spatial-sound-in-roboraid.md)
-        **[Using spatial sound in RoboRaid](../out-of-scope/case-study-using-spatial-sound-in-roboraid.md)**<br>
+       [![Using spatial sound in RoboRaid](images/successful-dodge-roboraid-500px.jpg)](../design/case-study-using-spatial-sound-in-roboraid.md)
+        **[Using spatial sound in RoboRaid](../design/case-study-using-spatial-sound-in-roboraid.md)**<br>
         Spatial sound is one of the most exciting features of Microsoft HoloLens, providing a way for users to perceive what's going on around them when objects are out of the line of sight.<br>
          <i>February 2016<i>
     :::column-end:::
     :::column:::
-       [![Looking through holes in your reality](images/roboraid-640px.png)](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)
-        **[Looking through holes in your reality](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)**<br>
+       [![Looking through holes in your reality](images/roboraid-640px.png)](../design/case-study-looking-through-holes-in-your-reality.md)
+        **[Looking through holes in your reality](../design/case-study-looking-through-holes-in-your-reality.md)**<br>
         This case study explains how to implement the "magic window" effect on HoloLens, allowing the user to see behind walls, under the floor, and into virtual openings within their actual environment.<br>
         <i>February 2016<i>
     :::column-end:::
@@ -180,8 +180,8 @@ Read our high-level thoughts, and understand the principles we follow.
 
 :::row:::
     :::column:::
-       [![AfterNow's process - envisioning, prototyping, building](images/whatisenvisioning-640px.png)](../../case-study-afternows-process-envisioning,-prototyping,-building.md)
-        **[AfterNow's process - envisioning, prototyping, building](../../case-study-afternows-process-envisioning,-prototyping,-building.md)**<br>
+       [![AfterNow's process - envisioning, prototyping, building](images/whatisenvisioning-640px.png)](../out-of-scope/case-study-afternows-process-envisioning,-prototyping,-building.md)
+        **[AfterNow's process - envisioning, prototyping, building](../out-of-scope/case-study-afternows-process-envisioning,-prototyping,-building.md)**<br>
         At AfterNow, we work with you to turn your ideas and aspirations into concrete, fully operational products and experiences ready for the market. But before we write a single line of code, we create a blueprint through a process called envisioning.<br>
         <i>April 2017<i>
     :::column-end:::

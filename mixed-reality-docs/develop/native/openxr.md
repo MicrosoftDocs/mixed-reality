@@ -13,7 +13,7 @@ keywords: OpenXR, Khronos, BasicXRApp, DirectX, native, native app, custom engin
 
 <img align="right" src="images/openxr.png" alt="OpenXR logo">
 
-OpenXR is an open royalty-free API standard from <a href="https://www.khronos.org/" target="_blank">Khronos</a> that provides engines native access to a wide range of devices from many vendors that span across the [mixed reality spectrum](../../out-of-scope/mixed-reality.md).
+OpenXR is an open royalty-free API standard from <a href="https://www.khronos.org/" target="_blank">Khronos</a> that provides engines native access to a wide range of devices from many vendors that span across the [mixed reality spectrum](../../discover/mixed-reality.md).
 
 You can develop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive headset on the desktop.  If you don't have access to a headset, you can use the HoloLens 2 Emulator or the Windows Mixed Reality Simulator instead.
 

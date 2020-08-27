@@ -10,7 +10,7 @@ keywords: coordinate system, spatial coordinate system, orientation-only, seated
 
 # Coordinate systems
 
-At their core, mixed reality apps place [holograms](../out-of-scope/hologram.md) in your world that look and sound like real objects. This involves precisely positioning and orienting those holograms at places in the world that are meaningful to the user, whether the world is their physical room or a virtual realm you've created. When reasoning about the position and orientation of your holograms, or any other geometry such as the [gaze](gaze-and-commit.md) ray or [hand positions](hands-and-tools.md), Windows provides various real-world coordinate systems in which that geometry can be expressed, known as **spatial coordinate systems**.
+At their core, mixed reality apps place [holograms](../discover/hologram.md) in your world that look and sound like real objects. This involves precisely positioning and orienting those holograms at places in the world that are meaningful to the user, whether the world is their physical room or a virtual realm you've created. When reasoning about the position and orientation of your holograms, or any other geometry such as the [gaze](gaze-and-commit.md) ray or [hand positions](hands-and-tools.md), Windows provides various real-world coordinate systems in which that geometry can be expressed, known as **spatial coordinate systems**.
 
 <br>
 
@@ -100,7 +100,7 @@ Note that the Stage frame of reference is not yet supported on HoloLens. A room-
 
 All 3D graphics applications use [Cartesian coordinate systems](https://docs.microsoft.com/windows/uwp/graphics-concepts/coordinate-systems) to reason about the positions and orientations of objects in the virtual worlds they render. Such coordinate systems establish 3 perpendicular axes along which to position objects: an X, Y, and Z axis.
 
-In [mixed reality](../out-of-scope/mixed-reality.md), your apps will reason about both virtual and physical coordinate systems. Windows calls a coordinate system that has real meaning in the physical world a **spatial coordinate system**.
+In [mixed reality](../discover/mixed-reality.md), your apps will reason about both virtual and physical coordinate systems. Windows calls a coordinate system that has real meaning in the physical world a **spatial coordinate system**.
 
 Spatial coordinate systems express their coordinate values in meters. This means that objects placed 2 units apart in either the X, Y or Z axis will appear 2 meters apart from one another when rendered in mixed reality. This lets you easily render objects and environments at real-world scale.
 

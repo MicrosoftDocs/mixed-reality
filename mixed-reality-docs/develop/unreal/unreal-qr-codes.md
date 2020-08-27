@@ -66,5 +66,5 @@ There's a lot going on behind the scenes with QR codes, so this isn't the end of
 
 ## See also
 * [Spatial mapping](../../design/spatial-mapping.md)
-* [Holograms](../../out-of-scope/hologram.md)
+* [Holograms](../../discover/hologram.md)
 * [Coordinate systems](../../design/coordinate-systems.md)
