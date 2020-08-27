@@ -1,5 +1,5 @@
 - name: Learn about Azure Services 
-  href: azure-services .md
+  href: azure-services.md
 - name: Get ready for the new Microsoft Edge
   href: new-microsoft-edge.md 
 - name: Programs and events
@@ -15,7 +15,7 @@
 - name: Current Mixed Reality release notes 
   href: release-notes-may-2020.md 
 - name: Community resources 
-  href: community.md 
+  href: ../discover/community.md 
 - name: Contributing to this documentation 
   href: contributing.md 
 - name: Deploying HoloLens at scale 
