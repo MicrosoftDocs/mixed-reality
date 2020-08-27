@@ -22,7 +22,7 @@ Welcome to Windows Holographic, available for the first time on Microsoft HoloLe
 
 Try the inbox apps
 * **Microsoft Edge.** Modern web browser for Windows 10.
-* **Settings.** Check system information, [connect to Wi-Fi](../connecting-to-wi-fi-on-hololens.md), and [connect to Bluetooth devices](hardware-accessories.md).
+* **Settings.** Check system information, [connect to Wi-Fi](../connecting-to-wi-fi-on-hololens.md), and [connect to Bluetooth devices](../discover/hardware-accessories.md).
 * **Holograms.** Place holograms in your world, walk around them, then see and hear them from any angle.
 * **Calibration.** Repeat the [calibration](../calibration.md) done during the out-of-box-experience. Do this whenever switching users.
 * **Learn Gestures.** Repeat the gesture tutorial done during the out-of-box experience.
@@ -33,7 +33,7 @@ To unlock the device for development, open the *Settings* app, go to *Update & S
 ## See also
 * [HoloLens known issues](../hololens-known-issues.md)
 * [Install the tools](../develop/install-the-tools.md)
-* [Navigating the Windows Mixed Reality home](navigating-the-windows-mixed-reality-home.md)
+* [Navigating the Windows Mixed Reality home](../develop/platform-capabilities-and-apis/navigating-the-windows-mixed-reality-home.md)
 * [Hardware accessories](../discover/hardware-accessories.md)
 * [Mixed reality capture](../mixed-reality-capture.md)
 * [Using the HoloLens emulator](../develop/platform-capabilities-and-apis/using-the-hololens-emulator.md)
