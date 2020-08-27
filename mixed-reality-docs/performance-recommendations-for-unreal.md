@@ -60,7 +60,7 @@ You can find each of the following settings in **Edit > Project Settings**.
 
 ## Optional settings
 
-> [NOTE]
+> [!NOTE]
 > The following settings may improve performance, but at the cost of disabling certain features. Only use these settings if you're sure you don't need the features in question.
 
 1. Mobile Shader Permutation Reduction
