@@ -1,7 +1,7 @@
 ---
 
 # Mandatory fields.
-title: Javascript development Overview
+title: JavaScript Development Overview
 description: Overview of Mixed Reality development using JavaScript for web, mobile and windows immersive headsets.
 author: yonet
 ms.author: ayyonet
@@ -11,7 +11,7 @@ keywords: WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, windows mix
 
 ---
 
-# Javascript development overview
+# JavaScript development overview
 
 ## Mixed Reality applications on the web
 
