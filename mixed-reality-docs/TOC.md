@@ -272,8 +272,8 @@
 #### [Streaming in Unreal](unreal-streaming.md)
 
 <!-- Web section -->
-## Javascript
-### [Javascript development overview](javascript-development-overview.md)
+## JavaScript
+### [JavaScript development overview](javascript-development-overview.md)
 ### [WebXR](webxr-overview.md)
 ### [WebVR](webvr-overview.md)
 
