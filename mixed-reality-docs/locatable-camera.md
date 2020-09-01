@@ -38,7 +38,7 @@ HoloLens includes a world-facing camera mounted on the front of the device, whic
   
   | Profile                                         | Video     | Preview   | Still     | Frame rates | Horizontal Field of View (H-FOV) | Suggested usage                             |
   |-------------------------------------------------|-----------|-----------|-----------|-------------|----------------------------------|---------------------------------------------|
-  | Legacy,0  BalancedVideoAndPhoto,100             | 2272x1278 | 2272x1278 |           | 15,30       | 64.69                            | High quality video recording                |
+  | Legacy,0  BalancedVideoAndPhoto,100             | 2284x1284 | 2284x1284 |           | 15,30       | 64.69                            | High quality video recording                |
   | Legacy,0  BalancedVideoAndPhoto,100             | 896x504   | 896x504   |           | 15,30       | 64.69                            | Preview stream for high quality photo capture |
   | Legacy,0  BalancedVideoAndPhoto,100             |           |           | 3904x2196 |             | 64.69                            | High quality photo capture                  |
   | BalancedVideoAndPhoto,120                       | 1952x1100 | 1952x1100 | 1952x1100 | 15,30       | 64.69                            | Long duration scenarios                     |
