@@ -82,7 +82,7 @@ Don’t expect users can listen to one set of instructions via voice over and wa
 ## Can I create my own?
 
 Yes! We encourage you to create your own unique gesture for your game and contribute back to the community!
-We have provided a Maya file of a Rigged hand that can be used for your app which can be downloaded here: <a href="files/HandCoach_MRTK.zip"> Download HandCoach_MRTK.zip</a>
+We have provided a Maya file of a Rigged hand that can be used for your app which can be downloaded here: <a href="files/HandCoach_MRTK.zip"> Download HandCoach_MRTK.zip </a>
 
 ![Example of Animated Hands in Maya](images/HandCoach/MayaSelect_Gif.gif)<br>
 *Example of animated Hand Poking a box in Maya*
@@ -90,7 +90,7 @@ We have provided a Maya file of a Rigged hand that can be used for your app whic
 
 **Recommended authoring tool**
 
-Among 3D artists, many choose to use [Autodesk’s Maya which itself is able to use HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) to transform the way assets are created. The hands file provided is a Maya Binary File, so it is recommended to use Maya to animate and export the hands. If you prefer to use another 3D program, here is a <b>.FBX</b>: <a href="files/HandCoachMRTK_FBX.zip">           Download HandCoachMRTK_FBX.zip</a> to create your own controller setup. 
+Among 3D artists, many choose to use [Autodesk’s Maya which itself is able to use HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) to transform the way assets are created. The hands file provided is a Maya Binary File, so it is recommended to use Maya to animate and export the hands. If you prefer to use another 3D program, here is a <b>.FBX</b>: <a href="files/HandCoachMRTK_FBX.zip"> Download HandCoachMRTK_FBX.zip </a> to create your own controller setup. 
 
 If using the downloadable maya Hand File provided, it is suggested to scale down the hands in unity to 0.6.
 
