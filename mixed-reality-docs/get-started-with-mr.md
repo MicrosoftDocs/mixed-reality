@@ -75,7 +75,7 @@ HoloLens lets you create holograms, which are objects made of light and sound th
 ### What can you do with mixed reality?
 
 #### [A new vision for work](https://dynamics.microsoft.com//mixed-reality/overview/)
-Internally at Microsoft, we are creating mixed reality applications to empower employees and optimize operations. The Dynamics 365 team has worked on a range of projects that demonstrate the possibilities: Remote Assist, Layout and Guides.
+Internally at Microsoft, we are creating Mixed Reality applications to empower employees and optimize operations. The Dynamics 365 team has worked on a range of projects that demonstrate the possibilities, including [Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview), [Layout](https://docs.microsoft.com/dynamics365/mixed-reality/layout/) and [Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/).
 
 <br>
 
