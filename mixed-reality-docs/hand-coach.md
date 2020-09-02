@@ -117,21 +117,21 @@ If using the downloadable maya Hand File provided, it is suggested to scale down
 After you are satisfied with your animation
 * Select all joints: Select > Hierarchy
 
-     ![Example: Menu Location](images/HandCoach/Hierarchy.png)<br>
+     ![Example: Hierarchy in Menu](images/HandCoach/Hierarchy.png)<br>
 * Bake out your animation: Switch to Animation > Key > Bake Animation
 
-     ![Example: Menu Location](images/HandCoach/BakeAnimation.png)<br>
+     ![Example: Bake Animation Menu Location](images/HandCoach/BakeAnimation.png)<br>
 * Delete the Controller Rig: Outliner > MainR_Grp or MainL_Grp
 
-     ![Example: Menu Location](images/HandCoach/ControllerRig.png)<br>
+     ![Example: Controller Rig Menu Location](images/HandCoach/ControllerRig.png)<br>
 
 * Export as FBX: Select JNT + Mesh: File > Export Selection (option box) > Export Selection
 
-     ![Example: Menu Location](images/HandCoach/OptionBox.png)<br>
+     ![Example: Export selection Menu Location](images/HandCoach/OptionBox.png)<br>
 
      ![Example: Menu Location](images/HandCoach/SelectionExport.png)<br>
 
-     ![Example: Menu Location](images/HandCoach/FBXSelection.png)<br>
+     ![Example: Export Options Menu Location](images/HandCoach/FBXSelection.png)<br>
 
 
  When exporting as a FBX and brought into Unity, scale the hands down to 0.6. We found that this was perfect balance for displaying the hands. 
@@ -154,10 +154,7 @@ After you are satisfied with your animation
 * If you notice distortion on the hands, you need to go to Unity's Quality settings increase the amount of bones. 
  Go to Unity's Edit > Project Settings > Quality > Other > Blend Weights. Make sure "4 bones" are selected to see Smooth Joints. 
 
-   ![Example: Menu Location](images/HandCoach/ProjectSettings.png)<br>
-
-
-
+   ![Example: Project Settings Window](images/HandCoach/ProjectSettings.png)<br>
 
 
 ### What to avoid
