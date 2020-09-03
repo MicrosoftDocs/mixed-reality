@@ -48,4 +48,3 @@ Using the surface magnetism technique, you can place a holographic object on a r
 * [Shader](shader.md)
 * [Billboarding and tag-along](billboarding-and-tag-along.md)
 * [Displaying progress](progress.md)
-* [Surface magnetism](surface-magnetism.md)
