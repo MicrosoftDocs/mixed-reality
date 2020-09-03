@@ -13,14 +13,19 @@ We recommend the [Unity LTS (Long Term Support)](https://unity3d.com/unity/qa/lt
 
 [Mixed Reality Toolkit](../mrtk-getting-started.md) (MRTK) is an open-source, cross-platform development kit for mixed reality applications. MRTK provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. The toolkit is intended to accelerate the development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and the OpenVR platform.
 
+For installation, we recommend completing the [Getting Started section](../unity-development-overview.md#1-getting-started) of our curated [Unity development journey](../unity-development-overview.md). If you're already following the Unity development journey, finish up the rest of the setup steps listed below and continue on to the [HoloLens 2 Getting Started tutorials](../mr-learning-base-01.md).
+
+> [!IMPORTANT]
+> Note that installation instructions are targeted for the latest stable combination of MRTK and Unity releases, which are **MRTK 2.4.0** and **Unity 2019.3.15**.
+
+> [!NOTE]
+> If you don't want to use MRTK for Unity, you'll need to script all interactions and behaviors yourself.
+
 :::row:::
     :::column:::
         <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">![Unity](../images/MRTK-Unity-Banner.png)<br>**Mixed Reality Toolkit-Unity (GitHub)**</a><br>
     :::column-end:::
 :::row-end:::
-
-> [!NOTE]
-> If you don't want to use MRTK for Unity, you'll need to script all interactions and behaviors yourself.
 
 #### Other tools [optional]
 * <a href="https://github.com/Microsoft/MixedRealityCompanionKit" target="_blank">Mixed Reality Companion Kit (GitHub)</a> - code bits and components that might not run directly on HoloLens or immersive (VR) headsets, but instead pair with them to build experiences targeting Windows Mixed Reality.
@@ -79,6 +84,8 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 </tr>
 </table>
 
+If you're new to MRTK development with Unity, we recommend following our curated Unity development journey:
+
 > [!div class="nextstepaction"]
 > [Start your Unity journey](../unity-development-overview.md)
 
@@ -103,6 +110,8 @@ We recommend installing [Unreal Engine version 4.25](https://docs.unrealengine.c
 ![MRTK](../images/UX/MRTK_UX_Hero.png)
 
 Mixed Reality Toolkit (MRTK) is an open-source, cross-platform development kit for mixed reality applications. MRTK provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. The toolkit is intended to accelerate the development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and the OpenVR platform.
+
+For installation, we recommend completing the [Getting Started section](../unreal-development-overview.md#1-getting-started) of our curated [Unreal development journey](../unreal-development-overview.md). If you're already following the Unreal development journey, finish up the rest of the setup steps listed below and continue on to the [HoloLens 2 Getting Started tutorials](../unreal-uxt-ch1.md).
 
 :::row:::
     :::column:::
@@ -167,6 +176,8 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 <td> Bluetooth</td><td colspan="2"> Bluetooth 4.0 (for accessory connectivity)</td>
 </tr>
 </table>
+
+If you're new to MRTK development with Unreal, we recommend following our curated Unreal development journey:
 
 > [!div class="nextstepaction"]
 > [Start your Unreal journey](../unreal-development-overview.md)
@@ -236,6 +247,8 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 <td> Bluetooth</td><td colspan="2"> Bluetooth 4.0 (for accessory connectivity)</td>
 </tr>
 </table>
+
+If you're new to Native development with MRTK, we recommend following our curated Native development journey:
 
 > [!div class="nextstepaction"]
 > [Start your Native journey](../directx-development-overview.md)
