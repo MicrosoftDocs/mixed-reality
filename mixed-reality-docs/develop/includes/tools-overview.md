@@ -13,6 +13,11 @@ We recommend the [Unity LTS (Long Term Support)](https://unity3d.com/unity/qa/lt
 
 [Mixed Reality Toolkit](../unity/mrtk-getting-started.md) (MRTK) is an open-source, cross-platform development kit for mixed reality applications. MRTK provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. The toolkit is intended to accelerate the development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and the OpenVR platform.
 
+For installation, we recommend completing the [Getting Started section](../unity-development-overview.md#1-getting-started) of our curated [Unity development journey](../unity-development-overview.md). If you're already following the Unity development journey, finish up the rest of the setup steps listed below and continue on to the [HoloLens 2 Getting Started tutorials](../mr-learning-base-01.md).
+
+> [!IMPORTANT]
+> Note that installation instructions are targeted for the latest stable combination of MRTK and Unity releases, which are MRTK 2.4.0 and Unity 2019.3.15.
+
 :::row:::
     :::column:::
         <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">![Unity](../images/MRTK-Unity-Banner.png)<br>**Mixed Reality Toolkit-Unity (GitHub)**</a><br>
@@ -80,9 +85,15 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 </table>
 
 ### What's next?
+If you're new to MRTK development with Unity, we recommend following our curated Unity development journey:
 
 > [!div class="nextstepaction"]
 > [Start your Unity journey](../unity/unity-development-overview.md)
+
+If you're already taking part in the [Unity development journey](../unity-development-overview.md), it's time to dive into MRTK in a real project with the HoloLens 2 Getting Started tutorials:
+
+> [!div class="nextstepaction"]
+> [HoloLens 2 Getting Started tutorials](../mr-learning-base-01.md)
 
 # [Unreal](#tab/unreal)
 
@@ -96,6 +107,8 @@ We recommend installing [Unreal Engine version 4.25](https://docs.unrealengine.c
 ![MRTK](../../design/images/MRTK_UX_Hero.png)
 
 Mixed Reality Toolkit (MRTK) is an open-source, cross-platform development kit for mixed reality applications. MRTK provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. The toolkit is intended to accelerate the development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and the OpenVR platform.
+
+For installation, we recommend completing the [Getting Started section](../unreal-development-overview.md#1-getting-started) of our curated [Unreal development journey](../unreal-development-overview.md). If you're already following the Unreal development journey, finish up the rest of the setup steps listed below and continue on to the [HoloLens 2 Getting Started tutorials](../unreal-uxt-ch1.md).
 
 :::row:::
     :::column:::
@@ -163,8 +176,15 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 
 ### What's next?
 
+If you're new to MRTK development with Unreal, we recommend following our curated Unreal development journey:
+
 > [!div class="nextstepaction"]
 > [Start your Unreal journey](../unreal/unreal-development-overview.md)
+
+If you're already taking part in the [Unreal development journey](../unreal-development-overview.md), it's time to dive into MRTK in a real project with the HoloLens 2 Getting Started tutorials:
+
+> [!div class="nextstepaction"]
+> [HoloLens 2 Getting Started tutorials](../unreal-uxt-ch1.md)
 
 # [Native (OpenXR)](#tab/native)
 
@@ -225,7 +245,13 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 
 ### What's next?
 
+If you're new to Native development with MRTK, we recommend following our curated Native development journey:
+
 > [!div class="nextstepaction"]
 > [Start your Native journey](../native/directx-development-overview.md)
 
+If you're already taking part in the [Native development journey](../directx-development-overview.md), it's time to setup your environment for HoloLens 2:
+
+> [!div class="nextstepaction"]
+> [Setup for HoloLens 2](../openxr-getting-started.md#getting-started-with-openxr-for-hololens-2)
 

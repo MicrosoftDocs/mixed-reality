@@ -1,6 +1,6 @@
 ---
 title: Camera in Unity
-description: How to use Unity's Main Camera for Windows Mixed Reality development to do holographic rendering
+description: How to use Unity's Main Camera for Windows Mixed Reality development to do holographic rendering.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
@@ -12,25 +12,19 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, holograph
 
 When you wear a mixed reality headset, it becomes the center of your holographic world. The Unity [Camera](https://docs.unity3d.com/Manual/class-Camera.html) component will automatically handle stereoscopic rendering and will follow your head movement and rotation when your project has "Virtual Reality Supported" selected with "Windows Mixed Reality" as the device (in the Other Settings section of the Windows Store Player Settings). This may be listed as "Windows Holographic" in older versions of Unity.
 
-However, to fully optimize visual quality and [hologram stability](../platform-capabilities-and-apis/hologram-stability.md), you should set the camera settings described below.
+However, to fully optimize visual quality and [hologram stability](hologram-stability.md), you should set the camera settings described below.
 
 >[!NOTE]
 >These settings need to be applied to the Camera in each scene of your app.
 >
 >By default, when you create a new scene in Unity, it will contain a Main Camera GameObject in the Hierarchy which includes the Camera component, but does not have the settings below properly applied.
 
-## Automatic Scene and Camera Setup with Mixed Reality Toolkit v2
-
-Follow the [step-by-step](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) guide to add Mixed Reality Toolkit v2 to your Unity project and it will configure your project automatically.
-
-You can also manually configure the project without MRTK with the guide in the section below.
-
 ## Holographic vs. immersive headsets
 
 The default settings on the Unity Camera component are for traditional 3D applications which need a skybox-like background as they don't have a real world.
 
-* When running on an **[immersive headset](../../discover/immersive-headset-hardware-details.md)**, you are rendering everything the user sees, and so you'll likely want to keep the skybox.
-* However, when running on a **holographic headset** like [HoloLens](../../hololens-hardware-details.md), the real world should appear behind everything the camera renders. To do this, set the camera background to be transparent (in HoloLens, black renders as transparent) instead of a Skybox texture:
+* When running on an **[immersive headset](immersive-headset-hardware-details.md)**, you are rendering everything the user sees, and so you'll likely want to keep the skybox.
+* However, when running on a **holographic headset** like [HoloLens](hololens-hardware-details.md), the real world should appear behind everything the camera renders. To do this, set the camera background to be transparent (in HoloLens, black renders as transparent) instead of a Skybox texture:
     1. Select the Main Camera in the Hierarchy panel
     2. In the Inspector panel, find the Camera component and change the Clear Flags dropdown from Skybox to Solid Color
     3. Select the Background color picker and change the RGBA values to (0, 0, 0, 0)
@@ -49,10 +43,10 @@ It will be easier to lay out your app if you imagine the starting position of th
 
 ## Clip planes
 
-Rendering content too close to the user can be uncomfortable in mixed reality. You can adjust the [near and far clip planes](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances) on the Camera component.
+Rendering content too close to the user can be uncomfortable in mixed reality. You can adjust the [near and far clip planes](hologram-stability.md#hologram-render-distances) on the Camera component.
 
 1. Select the Main Camera in the Hierarchy panel
-2. In the Inspector panel, find the Camera component Clipping Planes and change the Near textbox from 0.3 to .85. Content rendered even closer can lead to user discomfort and should be avoided per the [render distance guidelines](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances).
+2. In the Inspector panel, find the Camera component Clipping Planes and change the Near textbox from 0.3 to .85. Content rendered even closer can lead to user discomfort and should be avoided per the [render distance guidelines](hologram-stability.md#hologram-render-distances).
 
 ## Multiple Cameras
 
@@ -60,7 +54,7 @@ When there are multiple Camera components in the scene, Unity knows which camera
 
 ## Recentering a seated experience
 
-If you're building a [seated-scale experience](../../design/coordinate-systems.md), you can recenter Unity's world origin at the user's current head position by calling the **[XR.InputTracking.Recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html)** method.
+If you're building a [seated-scale experience](coordinate-systems.md), you can recenter Unity's world origin at the user's current head position by calling the **[XR.InputTracking.Recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html)** method.
 
 ## Reprojection modes
 
@@ -88,7 +82,11 @@ To set whether your Unity app will provide a depth buffer to Windows:
 
 Providing a depth buffer to Windows can improve visual quality so long as Windows can accurately map the normalized per-pixel depth values in your depth buffer back to distances in meters, using the near and far planes you've set in Unity on the main camera.  If your render passes handle depth values in typical ways, you should generally be fine here, though translucent render passes that write to the depth buffer while showing through to existing color pixels can confuse the reprojection.  If you know that your render passes will leave many of your final depth pixels with inaccurate depth values, you are likely to get better visual quality by unchecking "Enable Depth Buffer Sharing".
 
+## Automatic Scene and Camera Setup with Mixed Reality Toolkit v2
+
+Follow the [step-by-step](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) guide to add Mixed Reality Toolkit v2 to your Unity project and it will configure your project automatically. You can also manually configure the project without MRTK with the guide in the section below.
+
 ## See also
 
-* [Hologram stability](../platform-capabilities-and-apis/hologram-stability.md)
+* [Hologram stability](hologram-stability.md)
 * [MixedRealityToolkit Main Camera.prefab](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Input/Prefabs)

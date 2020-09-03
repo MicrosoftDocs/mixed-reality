@@ -373,7 +373,7 @@ At this point you should understand the core building blocks of the scene unders
 
 ### Where can I get sample code?
 
-Scene Understanding sample code for Unity can be found on our [Unity Sample Page](https://github.com/sceneunderstanding-microsoft/unitysample) page. This application will allow you to communicate with your device and render the various scene objects, or, it will allow you to load a serialized scene on your PC and allow you to experience Scene Understanding without a device.
+Scene Understanding sample code for Unity can be found on our [Unity Sample Page](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples) page. This application will allow you to communicate with your device and render the various scene objects, or, it will allow you to load a serialized scene on your PC and allow you to experience Scene Understanding without a device.
 
 ### Where can I get sample scenes?
 
