@@ -1,6 +1,6 @@
 ---
 title: Spatial audio in Unreal
-description: Overview of the spatial audio plugin for Unreal engine.
+description: Learn the ins-and-outs of the spatial audio plugin for Unreal engine.
 author: hferrone
 ms.author: v-haferr
 ms.date: 06/15/2020

@@ -55,7 +55,7 @@ To render the camera image:
 4. Create a new function for this timer, in this case **MaterialTimer**, and call **GetARCameraImage** to get the texture from the webcam.  
 5. If the texture is valid, set a texture parameter in the shader to the image.  Otherwise, start the material timer again. 
 
-![Camera Texture](images/unreal-camera-texture.PNG)
+![Camera Texture from webcam](images/unreal-camera-texture.PNG)
 
 5. Make sure the material has a parameter matching the name in **SetTextureParameterValue** that's bound to a color entry. Without this, the camera image can't be properly displayed.
 

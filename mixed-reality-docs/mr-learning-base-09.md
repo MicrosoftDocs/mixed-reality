@@ -1,6 +1,6 @@
 ---
 title: Getting started tutorials - 9. Using speech commands
-description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to create a mixed reality application.
+description: Learn how to use the Mixed Reality Toolkit (MRTK) to create a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
@@ -24,7 +24,7 @@ In this tutorial, you will learn how to create speech commands and how to contro
 
 In the Unity menu, select Mixed Reality Toolkit > Utilities > **Configure Unity Project** to open the **MRTK Project Configurator** window, then in the **UWP Capabilities** section, verify that **Enable Microphone Capability** is greyed out:
 
-![mr-learning-base](images/mr-learning-base/base-09-section1-step1-1.png)
+![Enable microphone capability](images/mr-learning-base/base-09-section1-step1-1.png)
 
 > [!NOTE]
 > The Microphone capability should have been enabled during the [Apply the MRTK Project Configurator settings](mr-learning-base-02.md#1-apply-the-mrtk-project-configurator-settings) instructions when you configured the Unity project at the beginning of this tutorial series. However, if it is not enabled, make sure you enable it now.
@@ -37,7 +37,7 @@ In the Hierarchy window, select the **MixedRealityToolkit** object, then in the 
 * Clone the **DefaultMixedRealitySpeechCommandsProfile** and give it a suitable name, for example, _GettingStarted_MixedRealitySpeechCommandsProfile_
 * Verify that **Start Behaviour** is set to **Auto Start**
 
-![mr-learning-base](images/mr-learning-base/base-09-section2-step1-1.png)
+![Creating speech commands](images/mr-learning-base/base-09-section2-step1-1.png)
 
 > [!TIP]
 > For a reminder on how to clone MRTK profiles, you can refer to the [Configuring the MRTK profiles](mr-learning-base-03.md) instructions.
@@ -49,7 +49,7 @@ In the Speech > **Speech Commands** section, click the **+ Add a New Speech Comm
 * Enable Bounding Box
 * Disable Bounding Box
 
-![mr-learning-base](images/mr-learning-base/base-09-section2-step1-2.png)
+![Adding new speech commands](images/mr-learning-base/base-09-section2-step1-2.png)
 
 > [!TIP]
 > If your computer does not have a microphone you can assign a KeyCode to the speech commands, which will let you trigger them when the corresponding key is pressed.
@@ -58,7 +58,7 @@ In the Speech > **Speech Commands** section, click the **+ Add a New Speech Comm
 
 In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** folder to locate the tooltip prefabs:
 
-![mr-learning-base](images/mr-learning-base/base-09-section3-step1-1.png)
+![Opening tooltip folder](images/mr-learning-base/base-09-section3-step1-1.png)
 
 In the Hierarchy window, right-click on an empty spot and select **Create Empty** to add an empty object to your scene.
 
@@ -67,11 +67,11 @@ Name the object **SpeechInputHandler_Global**, then in the Inspector window, use
 * **Uncheck** the **Is Focus Required** checkbox, so the user is not required to look at the object with the SpeechInputHandler component to trigger the speech command
 * From the Project window, assign the **SpeechConfirmation Tooltip** prefab to the **Speech Confirmation Tooltip Prefab** field, to have this prefab appear when a speech command is recognized
 
-![mr-learning-base](images/mr-learning-base/base-09-section3-step1-2.png)
+![Configuring speech input handler component](images/mr-learning-base/base-09-section3-step1-2.png)
 
 On the SpeechInputHandler component, click the small **+** icon three times to add three keyword elements:
 
-![mr-learning-base](images/mr-learning-base/base-09-section3-step1-3.png)
+![Adding keyword elements to speech input handler](images/mr-learning-base/base-09-section3-step1-3.png)
 
 Expand **Element 0** and configure it as follows:
 
@@ -81,7 +81,7 @@ Expand **Element 0** and configure it as follows:
 * From the **No Function** dropdown, select **GameObject** > **SetActive (bool)** to set this function as the action to be executed when the event is triggered
 * Check the argument checkbox, so it is **checked**
 
-![mr-learning-base](images/mr-learning-base/base-09-section3-step1-4.png)
+![Configure keyword element 0](images/mr-learning-base/base-09-section3-step1-4.png)
 
 Expand **Element 1** and configure it as follows:
 
@@ -95,7 +95,7 @@ Expand **Element 1** and configure it as follows:
 * From the **No Function** dropdown, select **ObjectManipulator** > **bool enabled** to update this property value when the event is triggered
 * Check the argument checkbox, so it is **checked**
 
-![mr-learning-base](images/mr-learning-base/base-09-section3-step1-5.png)
+![Configure keyword element 1](images/mr-learning-base/base-09-section3-step1-5.png)
 
 Expand **Element 2** and configure it as follows:
 
@@ -109,14 +109,14 @@ Expand **Element 2** and configure it as follows:
 * From the **No Function** dropdown, select **ObjectManipulator** > **bool enabled** to update this property value when the event is triggered
 * Verify that the argument checkbox is **unchecked**
 
-![mr-learning-base](images/mr-learning-base/base-09-section3-step1-6.png)
+![Configure keyword element 2](images/mr-learning-base/base-09-section3-step1-6.png)
 
 In the Hierarchy window, select the RoverExplorer > **RoverAssembly** object, then in the Inspector window, use the **Add Component** button to add the **SpeechInputHandler** component and configure it as follows:
 
 * Verify that the **Is Focus Required** checkbox is **check**, so the user is required to look at the object with the SpeechInputHandler component, i.e., the RoverAssembly, to trigger the speech command
 * From the Project window, assign the **SpeechConfirmation Tooltip** prefab to the **Speech Confirmation Tooltip Prefab** field, to have this prefab appear when a speech command is recognized
 
-![mr-learning-base](images/mr-learning-base/base-09-section3-step1-7.png)
+![Add speech input handler to Rover Assembly](images/mr-learning-base/base-09-section3-step1-7.png)
 
 On the SpeechInputHandler component, click the small **+** icon to add a keyword element, expand the newly created element, then configure it as follows:
 
@@ -126,7 +126,7 @@ On the SpeechInputHandler component, click the small **+** icon to add a keyword
 * From the **No Function** dropdown, select **TapToPlace** > **bool enabled** to update this property value when the event is triggered
 * Check the argument checkbox, so it is **checked**
 
-![mr-learning-base](images/mr-learning-base/base-09-section3-step1-8.png)
+![Configure speech input handler on Rover Assembly](images/mr-learning-base/base-09-section3-step1-8.png)
 
 ## Congratulations
 
