@@ -61,6 +61,20 @@ To render the camera image:
 
 ![Camera Texture](images/unreal-camera-material.PNG)
 
+## Next Development Checkpoint
+
+If you're following the Unreal development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs. From here, you can proceed to the next topic: 
+
+> [!div class="nextstepaction"]
+> [QR codes](unreal-qr-codes.md)
+
+Or jump directly to deploying your app on a device or emulator:
+
+> [!div class="nextstepaction"]
+> [Deploying to device](unreal-deploying.md)
+
+You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#3-platform-capabilities-and-apis) at any time.
+
 ## See also
 * [Locatable camera](locatable-camera.md)
 * [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)

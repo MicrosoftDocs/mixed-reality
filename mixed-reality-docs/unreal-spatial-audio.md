@@ -100,6 +100,20 @@ All attenuation objects come with modifiable settings for:
 
 [Sound attenuation in Unreal](https://docs.unrealengine.com/Engine/Audio/DistanceModelAttenuation/index.html) has details and implementation specifics on each of these topics.
 
+## Next Development Checkpoint
+
+If you're following the Unreal development checkpoint journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can proceed to the next building block: 
+
+> [!div class="nextstepaction"]
+> [Voice input](unreal-voice-input.md)
+
+Or jump to Mixed Reality platform capabilities and APIs:
+
+> [!div class="nextstepaction"]
+> [HoloLens camera](unreal-hololens-camera.md)
+
+You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#2-core-building-blocks) at any time.
+
 
 ## See also
 * [Spatial Sound](https://docs.microsoft.com/windows/mixed-reality/spatial-sound)

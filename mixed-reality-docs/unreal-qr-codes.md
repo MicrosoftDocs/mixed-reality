@@ -64,6 +64,20 @@ Every QR code has a unique guid ID, which you can find by:
 
 There's a lot going on behind the scenes with QR codes, so this isn't the end of the road. Be sure to check out the following links for more details on what's under the hood.
 
+## Next Development Checkpoint
+
+If you're following the Unreal development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs. From here, you can proceed to the next topic: 
+
+> [!div class="nextstepaction"]
+> [WinRT](unreal-winRT.md)
+
+Or jump directly to deploying your app on a device or emulator:
+
+> [!div class="nextstepaction"]
+> [Deploying to device](unreal-deploying.md)
+
+You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#3-platform-capabilities-and-apis) at any time.
+
 ## See also
 * [Spatial mapping](spatial-mapping.md)
 * [Holograms](hologram.md)

@@ -82,15 +82,9 @@ To set whether your Unity app will provide a depth buffer to Windows:
 
 Providing a depth buffer to Windows can improve visual quality so long as Windows can accurately map the normalized per-pixel depth values in your depth buffer back to distances in meters, using the near and far planes you've set in Unity on the main camera.  If your render passes handle depth values in typical ways, you should generally be fine here, though translucent render passes that write to the depth buffer while showing through to existing color pixels can confuse the reprojection.  If you know that your render passes will leave many of your final depth pixels with inaccurate depth values, you are likely to get better visual quality by unchecking "Enable Depth Buffer Sharing".## Next Development Checkpoint
 
-If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can proceed to the next building block: 
+## Automatic Scene and Camera Setup with Mixed Reality Toolkit v2
 
-> [!div class="nextstepaction"]
-> [Camera](camera-in-unity.md)
-
-Or jump to Mixed Reality platform capabilities and APIs:
-
-> [!div class="nextstepaction"]
-> [Shared experiences](shared-experiences-in-unity.md)
+Follow the [step-by-step](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) guide to add Mixed Reality Toolkit v2 to your Unity project and it will configure your project automatically. You can also manually configure the project without MRTK with the guide in the section below.
 
 ## Next Development Checkpoint
 
@@ -105,10 +99,6 @@ Or jump to Mixed Reality platform capabilities and APIs:
 > [Shared experiences](shared-experiences-in-unity.md)
 
 You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.
-
-## Automatic Scene and Camera Setup with Mixed Reality Toolkit v2
-
-Follow the [step-by-step](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) guide to add Mixed Reality Toolkit v2 to your Unity project and it will configure your project automatically. You can also manually configure the project without MRTK with the guide in the section below.
 
 ## See also
 

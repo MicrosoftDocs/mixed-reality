@@ -46,3 +46,12 @@ Both options require you to set up your HoloLens to use the [device portal](usin
 ## Deploying to device via device portal
 
 You can find detailed instructions on [packaging and deploying an app](unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal) in the last section of the Getting Started with Unreal tutorial series.
+
+## Next Development Checkpoint
+
+If you're following the Unreal development checkpoint journey we've laid out, you're in the midst of the deployment stage. From here, you can proceed to adding advanced services:
+
+> [!div class="nextstepaction"]
+> [Advanced services](unreal-development-overview.md#5-advanced-services)
+
+You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#4-deploying-to-a-device-or-emulator) at any time.
