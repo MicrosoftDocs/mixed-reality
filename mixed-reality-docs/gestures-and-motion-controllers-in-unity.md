@@ -1,13 +1,12 @@
 ---
 title: Gestures and motion controllers in Unity
-description: There are two key ways to take action on your gaze in Unity, hand gestures and motion controllers.
+description: Learn how to take action on your gaze in Unity with hand gestures and motion controllers.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: gestures, motion controllers, unity, gaze, input
 ---
-
 
 
 # Gestures and motion controllers in Unity

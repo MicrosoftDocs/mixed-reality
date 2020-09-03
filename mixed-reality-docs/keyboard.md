@@ -1,5 +1,6 @@
 ---
 title: Keyboard
+description: Learn how to invoke the system keyboard in MRTK.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
