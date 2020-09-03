@@ -55,11 +55,25 @@ To render the camera image:
 4. Create a new function for this timer, in this case **MaterialTimer**, and call **GetARCameraImage** to get the texture from the webcam.  
 5. If the texture is valid, set a texture parameter in the shader to the image.  Otherwise, start the material timer again. 
 
-![Camera Texture](images/unreal-camera-texture.PNG)
+![Camera Texture from webcam](images/unreal-camera-texture.PNG)
 
 5. Make sure the material has a parameter matching the name in **SetTextureParameterValue** that's bound to a color entry. Without this, the camera image can't be properly displayed.
 
 ![Camera Texture](images/unreal-camera-material.PNG)
+
+## Next Development Checkpoint
+
+If you're following the Unreal development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs. From here, you can proceed to the next topic: 
+
+> [!div class="nextstepaction"]
+> [QR codes](unreal-qr-codes.md)
+
+Or jump directly to deploying your app on a device or emulator:
+
+> [!div class="nextstepaction"]
+> [Deploying to device](unreal-deploying.md)
+
+You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#3-platform-capabilities-and-apis) at any time.
 
 ## See also
 * [Locatable camera](locatable-camera.md)

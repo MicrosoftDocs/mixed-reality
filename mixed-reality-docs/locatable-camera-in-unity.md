@@ -304,5 +304,19 @@ void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
 * No resolutions are available
     * Ensure the **WebCam** capability is specified in your project.
 
+## Next Development Checkpoint
+
+If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs. From here, you can proceed to the next topic: 
+
+> [!div class="nextstepaction"]
+> [Focus point](focus-point-in-unity.md)
+
+Or jump directly to deploying your app on a device or emulator:
+
+> [!div class="nextstepaction"]
+> [Deploy to HoloLens or Windows Mixed Reality immersive headsets](using-visual-studio.md)
+
+You can always go back to the [Unity development checkpoints](unity-development-overview.md#3-platform-capabilities-and-apis) at any time.
+
 ## See Also
 * [Locatable camera](locatable-camera.md)

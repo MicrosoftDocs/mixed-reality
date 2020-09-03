@@ -276,6 +276,13 @@ When Unreal calls OpenFileDialogue, a File Dialogue opens on the HoloLens prompt
 
 We encourage you to use the code in this tutorial as a starting point for consuming WinRT code in Unreal.  It allows users to save files to the HoloLens disk using the same file dialogue as Windows.  Follow the same process to export any additional functions from the HoloLensWinrtDLL header and used in Unreal.  Note the DLL code that waits on any async WinRT code in a background MTA thread, which avoids deadlocking the Unreal game thread. 
 
+## Next Development Checkpoint
+
+If you're following the Unreal development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs. From here, you can proceed to any [topic](unreal-development-overview.md#3-platform-capabilities-and-apis) or jump directly to deploying your app on a device or emulator.
+
+> [!div class="nextstepaction"]
+> [Deploying to device](unreal-deploying.md)
+
 ## See also
 * [C++/WinRT APIs](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/)
 * [FileSavePicker class](https://docs.microsoft.com/uwp/api/Windows.Storage.Pickers.FileSavePicker) 

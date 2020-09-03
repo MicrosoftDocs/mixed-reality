@@ -63,6 +63,14 @@ Once you've got your holographic Unity project ready for testing, your next step
 * [HoloLens emulator](using-the-hololens-emulator.md)
 * [Windows Mixed Reality immersive headset simulator](using-the-windows-mixed-reality-simulator.md)
 
+### 5. Advanced services
+
+At this point in your development journey you might be looking for advanced services or a helping hand with commercial deployment. Integrating [Azure Cloud Services](mixed-reality-cloud-services.md) and Dynamics 365 features can level up your projects in a major way. We've compiled a few starting points for you to explore and expand your Mixed Reality knowledge.
+
+[!INCLUDE[](~/includes/unity-cloud-services-d365.md)]
+
+We also have a [comprehensive list of support documentation for additional Azure services](mixed-reality-cloud-services.md#standalone-services) that you can add to your Unity projects on a self-serve basis.
+
 ## What's next?
 
 A developers job is never done, especially when learning a new tool or SDK. The following sections can take you into areas beyond the beginner level material you've already completed, along with helpful resources if you get stuck. Note that these topics and resources are not in any sequential order, so feel free to jump around and explore!

@@ -39,7 +39,7 @@ Once you’re connected, click the drop-down arrow to the right of the **Play** 
 >If this is your first time packaging an Unreal app for HoloLens, you'll need to download supporting files from the Epic Launcher. 
 >- Go to the **Library** tab in the Epic Games Launcher, select the dropdown arrow next to **Launch** >and click **Options**. 
 >- Under **Target Platforms**, select **HoloLens 2** and click **Apply**. 
->![Project Settings - Description](images/unreal-uxt/6-installationoptions.PNG)
+>![Change target platform in project settings](images/unreal-uxt/6-installationoptions.PNG)
 
 1.	Go to **Edit > Project Settings**. 
     * Add a project name under **Project > Description > About > Project Name**. 
@@ -80,3 +80,17 @@ Once you’re connected, click the drop-down arrow to the right of the **Play** 
     * You can now go to **All Apps** and tap the the newly installed app to run it, or you can start the app directly from the **Windows Device Portal**. 
 
 Congratulations! Your HoloLens mixed reality application is finished and ready to go. However, this isn't the end of the road. MRTK has lots of standalone features that you can add to your projects, including spatial mapping, gaze and voice input, and even QR codes. More information on these features can be found in the [Unreal development overview](https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview).
+
+## Next Development Checkpoint
+
+If you're following the Unreal development checkpoint journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can proceed to the next building block: 
+
+> [!div class="nextstepaction"]
+> [Gaze input](unreal-gaze-input.md)
+
+Or jump to Mixed Reality platform capabilities and APIs:
+
+> [!div class="nextstepaction"]
+> [HoloLens camera](unreal-hololens-camera.md)
+
+You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#2-core-building-blocks) at any time.

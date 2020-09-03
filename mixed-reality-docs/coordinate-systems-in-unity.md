@@ -163,6 +163,20 @@ To get started building shared experiences in Unity, try out the 5-minute <a hre
 
 Once you're up and running with Azure Spatial Anchors, you can then <a href="https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">create and locate anchors in Unity</a>.
 
+## Next Development Checkpoint
+
+If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality core building blocks. From here, you can proceed to the next building block: 
+
+> [!div class="nextstepaction"]
+> [Gaze](gaze-in-unity.md)
+
+Or jump to Mixed Reality platform capabilities and APIs:
+
+> [!div class="nextstepaction"]
+> [Shared experiences](shared-experiences-in-unity.md)
+
+You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.
+
 ## See Also
 * [Experience scales](coordinate-systems.md#mixed-reality-experience-scales)
 * [Spatial stage](coordinate-systems.md#stage-frame-of-reference)

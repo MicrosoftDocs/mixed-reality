@@ -7,6 +7,7 @@
 ## [What is Mixed Reality?](mixed-reality.md)
 ## [What is a hologram?](hologram.md)
 ## [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
+## [Cloud services overview](mixed-reality-cloud-services.md)
 
 ## HoloLens hardware
 ### [HoloLens 2 hardware details](https://docs.microsoft.com/hololens/hololens2-hardware)
@@ -107,7 +108,6 @@
 # Develop
 ## [Introduction to Mixed Reality development](development.md)
 ## [Install the tools](install-the-tools.md)
-## [Cloud services overview](mixed-reality-cloud-services.md)
 
 <!-- Deprecated
 ## Mixed Reality cloud services
