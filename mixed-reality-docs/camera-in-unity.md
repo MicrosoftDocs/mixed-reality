@@ -19,12 +19,6 @@ However, to fully optimize visual quality and [hologram stability](hologram-stab
 >
 >By default, when you create a new scene in Unity, it will contain a Main Camera GameObject in the Hierarchy which includes the Camera component, but does not have the settings below properly applied.
 
-## Automatic Scene and Camera Setup with Mixed Reality Toolkit v2
-
-Follow the [step-by-step](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) guide to add Mixed Reality Toolkit v2 to your Unity project and it will configure your project automatically.
-
-You can also manually configure the project without MRTK with the guide in the section below.
-
 ## Holographic vs. immersive headsets
 
 The default settings on the Unity Camera component are for traditional 3D applications which need a skybox-like background as they don't have a real world.
@@ -111,6 +105,10 @@ Or jump to Mixed Reality platform capabilities and APIs:
 > [Shared experiences](shared-experiences-in-unity.md)
 
 You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.
+
+## Automatic Scene and Camera Setup with Mixed Reality Toolkit v2
+
+Follow the [step-by-step](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) guide to add Mixed Reality Toolkit v2 to your Unity project and it will configure your project automatically. You can also manually configure the project without MRTK with the guide in the section below.
 
 ## See also
 

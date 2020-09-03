@@ -13,7 +13,7 @@ ms.localizationpriority: high
 
 ![Point and commit with hands on HoloLens 2](images/02_MixedRealitySlashMixedReality.png)
 
-Mixed Reality is a blend of physical and digital worlds, unlocking the links between human, computer, and environment interaction. This new reality is based on advancements in computer vision, graphical processing power, display technology, and input systems. However, the term *Mixed Reality* was introduced in a 1994 paper by Paul Milgram and Fumio Kishino, "[A Taxonomy of Mixed Reality Visual Displays](https://etclab.mie.utoronto.ca/people/paul_dir/IEICE94/ieice.html)." Their paper explored the concept of the *virtuality continuum* and the categorization of taxonomy applied to displays. Since then, the application of Mixed Reality has gone beyond displays to include:
+Mixed Reality is a blend of physical and digital worlds, unlocking the links between human, computer, and environment interaction. This new reality is based on advancements in computer vision, graphical processing power, display technology, and input systems. However, the term *Mixed Reality* was introduced in a 1994 paper by Paul Milgram and Fumio Kishino, "[A Taxonomy of Mixed Reality Visual Displays](https://search.ieice.org/bin/summary.php?id=e77-d_12_1321)." Their paper explored the concept of the *virtuality continuum* and the categorization of taxonomy applied to displays. Since then, the application of Mixed Reality has gone beyond displays to include:
 * Environmental input
 * Spatial sound
 * Locations and positioning in both real and virtual spaces
