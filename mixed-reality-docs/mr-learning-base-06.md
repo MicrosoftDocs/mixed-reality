@@ -80,7 +80,7 @@ and the **Explode** button to toggle the exploded view on and off:
 
 ## Creating a dynamic menu that follows the user
 
-In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **UX** > **Prefabs** > **Menus** folder, click-and-drag the **NearMenu4x1** prefab into the Hierarchy window, set its Transform **Position** to X = 0, Y = -0.4, Z = 0 and configure it as follows:
+In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **Menus** folder, click-and-drag the **NearMenu4x1** prefab into the Hierarchy window, set its Transform **Position** to X = 0, Y = -0.4, Z = 0 and configure it as follows:
 
 * Verify that the **SolverHandler** component's **Tracked Target Type** is set to **Head**
 * Check the checkbox next to the **RadialView** Solver component so it is enabled by default
@@ -101,7 +101,10 @@ Rename the first button to **Indicator**, then in the Inspector window, configur
 
 ![mr-learning-base](images/mr-learning-base/base-06-section2-step1-3.png)
 
-In the Hierarchy window, select the **Indicator** object, then in the Inspector window, uncheck the checkbox next to its name to make it inactive by default:
+In the Hierarchy window, select the **Indicator** object, then in the Inspector window:
+
+* Uncheck the checkbox next to its name to make it inactive by default
+* Use the **Add Component** button to add the **Directional Indicator Controller (Script)** component
 
 ![mr-learning-base](images/mr-learning-base/base-06-section2-step1-4.png)
 
@@ -121,7 +124,7 @@ Rename the second button to **TapToPlace**, then in the Inspector window, config
 In the Hierarchy window, select the **RoverAssembly** object, then in the Inspector window, configure the **Tap To Place (Script)** component as follows:
 
 * Uncheck the checkbox next to its name to make it inactive by default
-* In the **On Placing Started ()** event section, click the **+** icon to add a new event:
+* In the **On Placing Stopped ()** event section, click the **+** icon to add a new event
 * Assign the RoverExplorer > **RoverAssembly** object to the **None (Object)** field
 * From the **No Function** dropdown, select **TapToPlace** > **bool Enabled** to update this property value when the event is triggered
 * Verify that the argument checkbox is **unchecked**

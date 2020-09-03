@@ -93,7 +93,7 @@ Now that the scene is setup, you can start adding in the chess board and piece t
 ## Importing assets
 The scene is looking a bit empty at the moment, but you'll fix that by importing the ready-made assets into the project.
 
-1. Download and unzip the [GitHub](https://github.com/microsoft/MixedReality-Unreal-Samples/blob/master/ChessApp/ChessAssets.7z) assets folder.
+1. Download and unzip the [GitHub](https://github.com/microsoft/MixedReality-Unreal-Samples/blob/master/ChessApp/ChessAssets.7z) assets folder using [7-zip](https://www.7-zip.org/).
 
 2. Click **Add New > New Folder** from the **Content Browser** and name it **ChessAssets**. 
     * Double-click the new folder - this is where you'll import the 3D assets.
@@ -112,7 +112,7 @@ That's all you need to do for the assets. Your next set of tasks is to create th
 
 ## Adding blueprints
 
-1. Click **Add New > New Folder** in the **Content Browser** and name it **Content Browser**. 
+1. Click **Add New > New Folder** in the **Content Browser** and name it **Blueprints**. 
 
 > [!NOTE]
 > If you're new to [blueprints](https://docs.unrealengine.com/en-US/Engine/Blueprints/index.html), they're special assets that provide a node-based interface for creating new types of Actors and script level events. 
@@ -200,6 +200,7 @@ Now you'll follow the same steps to create a chess piece as you did with the boa
     * Set **Static Mesh** to **Chess_King** and **Material** to a new Material called **M_ChessWhite** in the Details panel. 
 
 4. Open **M_ChessWhite** in the Material editor and hook up the following **Texture Sample** nodes to the following:
+   * Set **Texture** to **ChessWhite_Albedo** and link the **RGB** to the **Base Color** pin.
     * Set **Texture** to **ChessWhite_AO** and link the **RGB** to the **Ambient Occlusion** pin.
     * Set **Texture** to **ChessWhite_Metal** and link the **RGB** to the **Metallic** pin. 
     * Set **Texture** to **ChessWhite_Normal** and link the **RGB** to the **Normal** pin.

@@ -1,5 +1,4 @@
 ---
-layout: LandingPage
 title: Start designing and prototyping
 description: If you're ready to create something, learn the basic concepts you need to begin designing and prototyping.
 author: grbury 
@@ -25,18 +24,13 @@ As Microsoft launched the HoloLens to an audience of eager developers in 2016, t
 
 ## What are the core concepts of an experience?
 
-### [Keep the user comfortable - (Comfort)](comfort.md)
-To ensure maximum comfort on head-mounted displays, it’s important for designers and developers to create and present content in a way that mimics how these cues operate in the natural world.
+### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
+One of the advantages of developing apps for mixed reality is that there is a spectrum of experiences that the platform can support. From fully immersive, virtual environments, to light information layering over a user’s current environment, mixed reality provides a robust set of tools to bring any experience to life.
 
 <br>
 
 ### [Consider how the user sees the world - (Holographic frame)](holographic-frame.md)
 Users see the world of mixed reality through a rectangular viewport powered by their headset. On the HoloLens, this rectangular area is called the holographic frame and allows users to see digital content overlaid onto the real world around them.
-
-<br>
-
-### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
-One of the advantages of developing apps for mixed reality is that there is a spectrum of experiences that the platform can support. From fully immersive, virtual environments, to light information layering over a user’s current environment, mixed reality provides a robust set of tools to bring any experience to life.
 
 <br>
 
@@ -49,6 +43,9 @@ At their core, mixed reality apps place holograms in your world to look and soun
 Spatial mapping makes it possible to place objects on real surfaces. This helps anchor objects in the user's world and takes advantage of real world depth cues.
 
 <br>
+
+### [Keep the user comfortable - (Comfort)](comfort.md)
+To ensure maximum comfort on head-mounted displays, it’s important for designers and developers to create and present content in a way that mimics how these cues operate in the natural world.
 
 
 ---
@@ -120,7 +117,7 @@ Learn about frequently used common spatial interactions and UI building blocks f
 
 :::row:::	
     :::column:::	
-       [![Learn Unity](images/Final_unity_logo.png)](https://learn.unity.com/)<br>
+       [![Learn Unity](images/logo-unity.png)](https://learn.unity.com/)<br>
         **[Learn Unity](https://learn.unity.com/)**<br>
         Learn how to create interactive experiences with Unity. Learn by doing, from start to finish.
     :::column-end:::	

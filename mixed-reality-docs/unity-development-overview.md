@@ -1,6 +1,6 @@
 ---
 title: Unity development overview
-description: Getting started building mixed reality apps in Unity.
+description: Get started building an app in Unity with the Mixed Reality Toolkit (MRTK). Learn about core building blocks, key features, and deploying your app.
 author: thetuvix
 ms.author: kurtie
 ms.date: 08/04/2020
@@ -8,7 +8,6 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, mixed reality, development, getting started, new project, porting, capability, camera, simulation, emulation, documentation
 ---
-
 
 # Unity development overview
 
@@ -89,6 +88,22 @@ If you have existing apps that you'd like to port over, the articles listed belo
 If you're looking to add specific Mixed Reality features to your applications, we have several curated tutorials that can run you through the process from end-to-end. Our most popular HoloLens 2 and HoloLens (1st Gen) content is listed below, but you can find the entire collection by visiting the tutorials overview.
 
 [!INCLUDE[](~/includes/unity-tutorials.md)]
+
+### Session videos from Mixed Reality Dev Days 2020
+:::row:::
+    :::column:::
+       <a href="https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Intro-to-MRTK-Unity" target="_blank">![Intro to MRTK-Unity](images/MRDevDays_Session1.png)</a>
+       Tutorial on how to create a simple MRTK app from start to finish. Learn about interaction concepts and MRTK’s multi-platform capabilities.
+    :::column-end:::
+    :::column:::
+       [![MRTK's UX Building Blocks](images/MRDevDays_Session2.png)](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/MRTKs-UX-Building-Blocks)
+       Deep dive on the MRTK’s UX building blocks that help you build beautiful mixed reality experiences.
+    :::column-end:::
+    :::column:::
+       [![MRTK Performance Tools](images/MRDevDays_Session3.png)](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/MRTK-Performance-and-Shaders)
+       An introduction to performance tools, both in MRTK and external, as well as an overview of the MRTK Standard Shader.
+    :::column-end:::
+:::row-end:::
 
 ### Additional resources
 

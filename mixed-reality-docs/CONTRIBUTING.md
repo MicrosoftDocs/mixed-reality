@@ -1,6 +1,6 @@
 ---
 title: Contributing instructions
-description: How to contribute to the Windows Mixed Reality documentation. 
+description: Learn how to contribute to the Windows Mixed Reality developer documentation on the docs.microsoft.com platform, which uses GitHub-flavored Markdown. 
 author: mattwojo
 ms.author: mattwoj
 ms.date: 03/21/2018

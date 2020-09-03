@@ -31,7 +31,7 @@ highlightedContent:
       itemType: overview
       url: https://docs.microsoft.com/hololens/hololens2-hardware
     # Card
-    - title: Dynamics 365 Mixed Reality
+    - title: Dynamics 365 Mixed Reality applications
       itemType: overview
       url: https://docs.microsoft.com/dynamics365/mixed-reality/
     # Card
@@ -90,8 +90,8 @@ productDirectory:
         - url: mrtk-porting-guide.md
           text: Get your app ready for HoloLens 2
     # Card
-    - title: Deploy HoloLens 2
-      imageSrc: images/icon-distribution.png
+    - title: Deploy
+      imageSrc: images/icon-distribution.jpg
       links:
         - url: https://docs.microsoft.com/hololens/hololens-requirements
           text: Prepare for commercial deployment
@@ -206,7 +206,7 @@ tools:
       url: https://github.com/microsoft/MixedRealityToolkit-Unreal
     # Card
     - title: Windows XR Plugin for Unity 
-      imageSrc: images/Final_unity_logo.png
+      imageSrc: images/icon-plugin.png
       url: https://docs.unity3d.com/Manual/com.unity.xr.windowsmr.html
     # Card
     - title: OpenXR Specifications 

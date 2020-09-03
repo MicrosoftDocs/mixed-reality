@@ -1,6 +1,6 @@
 ---
 title: Input porting guide for Unity
-description: Learn how to handle input for Windows Mixed Reality in Unity.
+description: "Learn about two APIs for Windows Mixed Reality input: Unity's APIs for multiple platforms, and Windows APIs for strong support of HoloLens."
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018

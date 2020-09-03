@@ -26,8 +26,7 @@ If you're using a HoloLens 2 you also have access to the additional inputs below
 * **Magnetometer** – Used by the system to estimate absolute orientation.
 
 > [!IMPORTANT]
-> Research Mode is currently in Public Preview. HoloLens 2 samples, tutorials, and full API documentation will be available at [ECCV 2020](https://eccv2020.eu/
- ) in the Research Mode Git repository.
+> Research Mode is currently in Public Preview. 
 
 ![Research Mode app screenshot](images/sensor-stream-viewer.jpg)<br>
 *A mixed reality capture of a test application that displays the eight sensor streams available in Research Mode*
@@ -109,17 +108,19 @@ Applications can access the sensor stream data in the same way that photo and vi
 
 All APIs that work for HoloLens development are also available in Research Mode. In particular, the application  knows precisely where HoloLens is in 6DoF space at each sensor frame capture time.
 
-You can find sample applications on how to access the various Research Mode streams, how to use the [intrinsics and extrinsics](https://docs.microsoft.com/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world), and how to record streams in the [HoloLensForCV GitHub repo](https://github.com/Microsoft/HoloLensForCV) repo.
-
- > [!NOTE]
- > At this time, the HoloLensForCV sample doesn't work on HoloLens 2.
+You can find sample applications on accessing the various Research Mode streams, using the [intrinsics and extrinsics](https://docs.microsoft.com/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world), and recording streams in the respective Research Mode repos:
+* [HoloLens (1st gen)](https://github.com/Microsoft/HoloLensForCV)
+* [HoloLens 2](https://github.com/microsoft/HoloLens2ForCV)
 
 ## Support
 
-Please use the [issue tracker](https://github.com/Microsoft/HololensForCV/issues) in the HoloLensForCV repository to post feedback and track known issues.
+For HoloLens (1st gen), please use the [issue tracker](https://github.com/Microsoft/HololensForCV/issues) in the HoloLensForCV repository to post feedback and track known issues.
+
+For HoloLens 2, please use the [issue tracker](https://github.com/microsoft/HoloLens2ForCV/issues) in the HoloLens2ForCV repository to post feedback and track known issues.
 
 ## See also
 
 * [Microsoft Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197)
 * [HoloLensForCV GitHub repo](https://github.com/Microsoft/HoloLensForCV)
+* [HoloLens2ForCV GitHub repo](https://github.com/microsoft/HoloLens2ForCV)
 * [Using the Windows Device Portal](using-the-windows-device-portal.md)

@@ -1,6 +1,6 @@
 ---
 title: Point and commit with hands
-description: Overview of the point and commit input model
+description: Learn about the point and commit input model, which enables users to target, select, and manipulate 2D content and 3D objects that are out of reach.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 04/05/2019

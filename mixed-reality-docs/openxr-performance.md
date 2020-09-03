@@ -1,6 +1,6 @@
 ---
 title: OpenXR performance
-description: Debug the GPU performance your OpenXR applications.
+description: Debug the GPU performance of your OpenXR applications.
 author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2020
@@ -23,3 +23,11 @@ To avoid performance penalities, [submit a single `XrCompositionProjectionLayer`
 Additional considerations will result in better performance:
 * [Use the 16-bit depth format](openxr-best-practices.md#choose-a-reasonable-depth-range)
 * [Make instanced draw calls](openxr-best-practices.md#render-with-texture-array-and-vprt)
+
+## Graphics debugging
+
+You can debug the GPU performance of your OpenXR applications using <a href="https://renderdoc.org/" target="_blank">RenderDoc</a>:
+* For debugging **Win32 OpenXR applications** for immersive desktop headsets, the <a href="https://renderdoc.org/" target="_blank">mainline version of RenderDoc</a> should work as is.
+* For debugging **UWP OpenXR applications** on HoloLens 2, you can use a <a href="https://github.com/brycehutchings/renderdoc" target="_blank">UWP fork of RenderDoc</a>.
+
+PIX support for OpenXR applications is coming soon.

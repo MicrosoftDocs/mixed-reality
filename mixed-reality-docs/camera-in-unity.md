@@ -1,6 +1,6 @@
 ---
 title: Camera in Unity
-description: How to use Unity's Main Camera for Windows Mixed Reality development to do holographic rendering
+description: How to use Unity's Main Camera for Windows Mixed Reality development to do holographic rendering.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019

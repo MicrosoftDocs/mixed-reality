@@ -1,6 +1,6 @@
 ---
 title: Unreal Development Overview
-description: Overview of mixed reality development using Unreal Engine 4
+description: Learn about using the latest Unreal release to develop for Windows Mixed Reality and HoloLens 2 (AR). Tutorials and forums can help you get started.
 author: hferrone
 ms.author: v-haferr
 ms.date: 08/04/2020
@@ -36,9 +36,8 @@ By the end of this section, you'll have a basic understanding of the Mixed Reali
 
 |  Checkpoint  |  Outcome  |
 | --- | --- |
-| [What is MRTK?](https://github.com/microsoft/MixedRealityToolkit-Unreal) | Begin your journey by getting acquainted with the Mixed Reality Toolkit and what it has to offer |
-| [Install the latest tools](install-the-tools.md) | Download and install the latest Unity package and setup your project for mixed reality |
-| [HoloLens 2 tutorial series](unreal-uxt-ch1.md) | Dive into beginner level MRTK tutorials for HoloLens 2 hardware |
+| [Install the latest tools](install-the-tools.md) | Download and install the latest Unreal version and setup your project for mixed reality |
+| [HoloLens 2 tutorial series](unreal-uxt-ch1.md) | Dive into beginner level MRTK-Unreal tutorials for HoloLens 2 hardware |
 
 ### 2. Core building blocks
 
@@ -72,6 +71,13 @@ At this point in your development journey you might be looking for advanced serv
 ## What's next?
 
 A developers job is never done, especially when learning a new tool or SDK. The following sections can take you into areas beyond the beginner level material you've already completed, along with helpful resources if you get stuck. Note that these topics and resources are not in any sequential order, so feel free to jump around and explore!
+
+### Session videos from Mixed Reality Dev Days 2020
+This talk gives an overview of the features provided in Unreal Engine 4 and MRTK for Unreal, and how to use them to build epic experiences for HoloLens 2.
+
+<a href="https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Intro-to-Unreal--MRTK-for-HoloLens-2" target="_blank">![Intro to MRTK-Unreal for HoloLens 2](images/MRDevDays_Session4.png)</a>
+
+
 
 ### Streaming & Debugging
 
