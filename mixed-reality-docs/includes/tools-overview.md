@@ -87,9 +87,9 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 If you're following the Unity development checkpoint journey we've laid out, your next task is to work through our HoloLens 2 tutorial series.
 
 > [!div class="nextstepaction"]
-> [HoloLens 2 tutorial series](mr-learning-base-01.md)
+> [HoloLens 2 tutorial series](../mr-learning-base-01.md)
 
-You can always go back to the [Unity development checkpoints](unity-development-overview.md#1-getting-started) at any time.
+You can always go back to the [Unity development checkpoints](../unity-development-overview.md#1-getting-started) at any time.
 
 # [Unreal](#tab/unreal)
 
@@ -176,9 +176,9 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 If you're following the Unreal development checkpoint journey we've laid out, your next task is to work through our HoloLens 2 tutorial series.
 
 > [!div class="nextstepaction"]
-> [HoloLens 2 tutorial series](unreal-uxt-ch1.md)
+> [HoloLens 2 tutorial series](../unreal-uxt-ch1.md)
 
-You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#1-getting-started) at any time.
+You can always go back to the [Unreal development checkpoints](../unreal-development-overview.md#1-getting-started) at any time.
 
 # [Native (OpenXR)](#tab/native)
 
@@ -245,8 +245,8 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 If you're following the Native development checkpoint journey we've laid out, your next task is to configure your development environment for HoloLens 2.
 
 > [!div class="nextstepaction"]
-> [Setup for HoloLens 2](openxr-getting-started.md#getting-started-with-openxr-for-hololens-2)
+> [Setup for HoloLens 2](../openxr-getting-started.md#getting-started-with-openxr-for-hololens-2)
 
-You can always go back to the [Native development checkpoints](directx-development-overview.md#1-getting-started) at any time.
+You can always go back to the [Native development checkpoints](../directx-development-overview.md#1-getting-started) at any time.
 
 
