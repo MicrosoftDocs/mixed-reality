@@ -4,7 +4,7 @@
 
 ### 1. Download the latest version
 
-We recommend the [Unity LTS (Long Term Support)](https://unity3d.com/unity/qa/lts-releases) stream as the best version to use when starting new projects, updating to its latest revision to pick up the latest stable fixes. 
+We recommend the [Unity LTS (Long Term Support)](https://unity3d.com/unity/qa/lts-releases) stream as the best version to use when starting new projects, updating to its latest revision to pick up the latest stable fixes.
 * The current recommendation is to use **Unity 2019**, which is the LTS build required for MRTK v2 below.
 * If you need to use a different version of Unity for specific reasons, Unity supports side-by-side installs of different versions.
 
@@ -33,7 +33,7 @@ For installation, we recommend completing the [Getting Started section](../unity
 
 ### 3. Set up your PC for Mixed Reality development
 
-The Windows 10 SDK works best on the Windows 10 operating system. This SDK is also supported on Windows 8.1, Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2. Note that not all tools are supported on older operating systems. 
+The Windows 10 SDK works best on the Windows 10 operating system. This SDK is also supported on Windows 8.1, Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2. Note that not all tools are supported on older operating systems.
 
 > [!NOTE]
 > You can develop and deploy your apps for HoloLens, VR immersive headsets, or both. Make sure you fulfill the requirements below depending on your needs.
@@ -128,7 +128,7 @@ For installation, we recommend completing the [Getting Started section](../unrea
 
 ### 3. Set up your PC for mixed reality development
 
-The Windows 10 SDK works best on the Windows 10 operating system. This SDK is also supported on Windows 8.1, Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2. Note that not all tools are supported on older operating systems. 
+The Windows 10 SDK works best on the Windows 10 operating system. This SDK is also supported on Windows 8.1, Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2. Note that not all tools are supported on older operating systems.
 
 > [!NOTE]
 > You can develop and deploy your apps for HoloLens, VR immersive headsets, or both. Make sure you fulfill the requirements below depending on your needs.
@@ -261,5 +261,3 @@ If you're following the Native development checkpoint journey we've laid out, yo
 > [Setup for HoloLens 2](../openxr-getting-started.md#getting-started-with-openxr-for-hololens-2)
 
 You can always go back to the [Native development checkpoints](../directx-development-overview.md#1-getting-started) at any time.
-
-
