@@ -9,7 +9,6 @@ keywords: galaxy explorer, case study, project, sample
 ---
 
 
-
 # Galaxy Explorer
 
 **You shared your ideas. We’re sharing the code.**

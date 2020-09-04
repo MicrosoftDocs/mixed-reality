@@ -246,6 +246,7 @@
 <!-- Unreal section -->
 ## Unreal
 ### [Unreal development overview](unreal-development-overview.md)
+
 ### Tutorials
 #### Build a chess app with MRTK UX Tools
 ##### [1. Getting started](unreal-uxt-ch1.md)
@@ -254,6 +255,7 @@
 ##### [4. Adding interactivity](unreal-uxt-ch4.md)
 ##### [5. UI and functions](unreal-uxt-ch5.md)
 ##### [6. Packaging and deploying](unreal-uxt-ch6.md)
+
 ### Core building blocks
 #### [Gaze input in Unreal](unreal-gaze-input.md)
 #### [Hand tracking in Unreal](unreal-hand-tracking.md)
@@ -262,10 +264,16 @@
 #### [Local spatial anchors in Unreal](unreal-spatial-anchors.md)
 #### [Azure spatial anchors in Unreal](unreal-azure-spatial-anchors.md)
 #### [Voice input in Unreal](unreal-voice-input.md)
+
 ### Platform capabilities and APIs
 #### [HoloLens camera in Unreal](unreal-hololens-camera.md)
 #### [QR codes in Unreal](unreal-qr-codes.md)
 #### [WinRT in Unreal](unreal-winrt.md)
+
+### Sample apps
+#### HoloLens 2
+##### [Kippy's Escape](unreal-kippys-escape.md)
+
 ### Deployment and performance
 #### [Deploy to device in Unreal](unreal-deploying.md)
 #### [Performance recommendations for Unreal](performance-recommendations-for-unreal.md)
