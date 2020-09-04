@@ -1,0 +1,62 @@
+### YamlMime:Hub
+
+title: Windows Mixed Reality enthusiast documentation # < 60 chars
+summary: Information for intermediate to advanced customers on how to get the most out of using Windows Mixed Reality. # < 160 chars
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: windows
+
+metadata:
+  title: Windows Mixed Reality enthusiast documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Information for intermediate to advanced customers on how to get the most out of using Windows Mixed Reality. # Required; article description that is displayed in search results. < 160 chars.
+  services: guidance
+  ms.service: guidance #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: hub-page # Required
+  ms.prod: mixed-reality
+  ms.technology: enthusiast-guide
+  author: mattwojo #Required; your GitHub user alias, with correct capitalization.
+  ms.author: mattwoj #Required; microsoft alias of author; optional team alias.
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Before you buy
+      itemType: learn
+      url: before-you-buy-faqs.md
+    # Card
+    - title: Get started
+      itemType: get-started
+      url: before-you-start.md
+    # Card
+    - title: Learn Mixed Reality
+      itemType: how-to-guide
+      url: learn-mixed-reality.md
+    # Card
+    - title: Windows Mixed Reality academy
+      itemType: video
+      url: https://developer.microsoft.com/en-us/windows/mixed-reality/academy
+
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: More resources # < 60 chars (optional)
+      summary: Find related links to troubleshooting, development documentation and forums. # < 160 chars (optional)
+      items:
+        # Card
+        - title: Troubleshooting
+          summary: A-to-Z troubleshooting on all areas of Windows Mixed Reality
+          url: installation_errors.md
+        # Card
+        - title: Feedback
+          summary: Collect additional articles diving deeper on Windows Mixed Reality, from filing useful feedback to how subsystems work.
+          url: filing-feedback.md
+        # Card
+        - title: Development documentation
+          summary: Development and design documentation
+          url: https://developer.microsoft.com/windows/mixed-reality
+  # footer (optional)
+  footer: "Found a problem on our site? [Let us know!](https://forums.hololens.com/categories/using-windows-mixed-reality)"
