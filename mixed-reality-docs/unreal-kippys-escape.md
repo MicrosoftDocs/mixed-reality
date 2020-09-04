@@ -39,9 +39,9 @@ To keep within our short production schedule, we agreed that a floating characte
 
 *Kippy showing different expressions via its eyes*
 
-![If the user takes too long to solve a puzzle, Kippy will give the user a hint ](images/kippys-escape/kippys-escape-img-04.gif)
+![If the user takes too long to solve a puzzle, Kippy will give the user a hint](images/kippys-escape/kippys-escape-img-04.gif)
 
-*Kippy showing different expressions via its eyes*
+*If the user takes too long to solve a puzzle, Kippy will give the user a hint*
 
 Beyond the character and environment design, we made a concerted effort to make the game feel fun. Eye tracking allowed us to fire off material and sound attributes, which highlighted key pieces of the game. Spatial audio helped make the levels feel at home in the player’s surroundings. Being able to grab objects, push buttons and manipulate sliders drives innovative player engagements, so it was important to make sure these connection points felt natural. 
 
