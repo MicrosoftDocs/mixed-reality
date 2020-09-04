@@ -30,7 +30,7 @@ Using the unique HoloLens 2 features as guidance for our game design, we scoped 
 ![Early game design sketches](images/kippys-escape/kippys-escape-img-01.png)
 *Some early sketches for what the experience might look like*
 
-![Early game design sketches](images/kippys-escape/kippys-escape-img-02.png)
+![Renderings of the second island](images/kippys-escape/kippys-escape-img-02.png)
 *Renderings of the second island*
 
 To keep within our short production schedule, we agreed that a floating character could capture intent and emotion without rigorous animation cycles. And so Kippy was born! It emotes a few different expressions through its eyes and through minimalistic vocal sound effects to help guide the player throughout the experience. 
@@ -101,7 +101,7 @@ Boot up your HoloLens 2 and download the app from the Microsoft Store, or clone 
 
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
-<td style="border-style: none" width="60"><img alt="Picture of Jack Caron" width="60" height="60" src="images/kippys-escape/summer-wu.jpg"></td>
+<td style="border-style: none" width="60"><img alt="Picture of Summer Wu" width="60" height="60" src="images/kippys-escape/summer-wu.jpg"></td>
 <td style="border-style: none"><b>Summer Wu</b><br><i>Producer</i><br>Summer works on the mixed reality developer platform and heads the team’s Unreal Engine related efforts.</td>
 </tr>
 </table>
