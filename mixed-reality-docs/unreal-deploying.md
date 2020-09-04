@@ -52,6 +52,6 @@ You can find detailed instructions on [packaging and deploying an app](unreal-ux
 If you're following the Unreal development checkpoint journey we've laid out, you're in the midst of the deployment stage. From here, you can proceed to adding advanced services:
 
 > [!div class="nextstepaction"]
-> [Advanced services](unreal-development-overview.md#5-advanced-services)
+> [Advanced services](unreal-development-overview.md#5-adding-services)
 
 You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#4-deploying-to-a-device) at any time.

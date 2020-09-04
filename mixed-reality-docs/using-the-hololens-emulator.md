@@ -287,7 +287,7 @@ If you're following the Unity development checkpoint journey we've laid out, you
 Or jump directly to adding advanced services:
 
 > [!div class="nextstepaction"]
-> [Advanced services](unity-development-overview.md#5-advanced-services)
+> [Advanced services](unity-development-overview.md#5-adding-services)
 
 You can always go back to the [Unity development checkpoints](unity-development-overview.md#4-deploying-to-a-device-or-emulator) at any time.
 
