@@ -1,13 +1,12 @@
 ---
 title: Gestures and motion controllers in Unity
-description: There are two key ways to take action on your gaze in Unity, hand gestures and motion controllers.
+description: Learn how to take action on your gaze in Unity with hand gestures and motion controllers.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: gestures, motion controllers, unity, gaze, input
 ---
-
 
 
 # Gestures and motion controllers in Unity
@@ -523,6 +522,20 @@ Step-by-step tutorials, with more detailed customization examples, are available
 
 [![MR Input 213 - Motion controller](images/mr213-main-600px.jpg)](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-213)<br>
 *MR Input 213 - Motion controller*
+
+## Next Development Checkpoint
+
+If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can proceed to the next building block: 
+
+> [!div class="nextstepaction"]
+> [Hand and eye tracking](hand-eye-in-unit.md)
+
+Or jump to Mixed Reality platform capabilities and APIs:
+
+> [!div class="nextstepaction"]
+> [Shared experiences](shared-experiences-in-unity.md)
+
+You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.
 
 ## See also
 

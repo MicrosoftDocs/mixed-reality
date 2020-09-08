@@ -193,12 +193,18 @@ When the build process has completed, Unity will prompt Windows File Explorer to
 > [!NOTE]
 > If Visual Studio asks you to install new components, take a moment to check that you have all the prerequisite components in the **[Install the Tools](install-the-tools.md)** documentation.
 
-Configure Visual Studio for HoloLens by selecting the **Master** or **Release** configuration, the **ARM64** architecture, and **Device** as target:
+To deploy with a PC to USB connection, configure Visual Studio for HoloLens by selecting the **Master** or **Release** configuration, the **ARM64** architecture, and **Device** as target:
 
 ![mr-learning-base](images/mr-learning-base/base-02-section8-step1-2.png)
 
 > [!TIP]
 > If you're deploying to HoloLens (1st generation), select the **x86** architecture.
+
+To deploy over WiFi, configure Visual Studio for HoloLens by selecting the **Master** or **Release** configuration, the **ARM64** architecture, and **Remote Machine** as the target. 
+* Go to **Project -> Properties -> Configuration Properties -> Debugging** and check that **Configuration** is set to **(Release)** and **Platform** to **ARM64**. 
+* In the dropdown **Debugger** to launch, select **Remote Machine** and add the real network address of your Hololens as Machine Name:
+
+![mr-learning-base](images/mr-learning-base/VS_ProjectProperties.png)
 
 > [!NOTE]
 > For HoloLens, you will typically build for the ARM architecture. However, there is a  <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank"><strong>known issue</strong></a> in Unity 2019.3 that causes errors when selecting ARM as the build architecture in Visual Studio. The recommended workaround is to build for ARM64. If that is not an option, go to **Edit > Project Settings > Player > Other Settings** and disable **Graphics Jobs**.

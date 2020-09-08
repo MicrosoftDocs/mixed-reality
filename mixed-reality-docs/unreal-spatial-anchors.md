@@ -61,6 +61,20 @@ When you're done with an anchor you can clear individual anchors or the entire a
 > [!NOTE]
 > Bear in mind that Spatial Anchors are still in Beta, so be sure to check back for updated information and features.
 
+## Next Development Checkpoint
+
+If you're following the Unreal development checkpoint journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can proceed to the next building block: 
+
+> [!div class="nextstepaction"]
+> [Azure Spatial Anchors](unreal-azure-spatial-anchors.md)
+
+Or jump to Mixed Reality platform capabilities and APIs:
+
+> [!div class="nextstepaction"]
+> [HoloLens camera](unreal-hololens-camera.md)
+
+You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#2-core-building-blocks) at any time.
+
 ## See also
 * [Azure Spatial Anchors](unreal-azure-spatial-anchors.md)
 * [Spatial anchors](spatial-anchors.md)

@@ -10,7 +10,7 @@ keywords: mixed reality, unity, tutorial, hololens2, spatial audio
 
 # Adding spatial audio to your Unity project
 
-Welcome to the spatial audio tutioral for Unity on HoloLens2. This tutorial sequence shows:
+Welcome to the spatial audio tutorial for Unity on HoloLens2. This tutorial sequence shows:
 * How to use HRTF offload on HoloLens 2 in Unity
 * How to enable reverb when using HRTF offload
 

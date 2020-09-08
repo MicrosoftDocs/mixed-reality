@@ -297,3 +297,12 @@ The microphone helper script can be found in the [Input/Scripts/Utilities folder
 You can find the examples of the voice input in this scene.
 
 - [HoloToolkit-Examples/Input/Scenes/SpeechInputSource.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Input/Scenes/SpeechInputSource.unity)
+
+## Next Development Checkpoint
+
+If you're following the Unity development checkpoint journey we've laid out, you're next task is exploring the Mixed Reality platform capabilities and APIs:
+
+> [!div class="nextstepaction"]
+> [Shared experiences](shared-experiences-in-unity.md)
+
+You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.

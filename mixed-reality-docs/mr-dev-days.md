@@ -1,5 +1,4 @@
 ---
-layout: LandingPage
 title: Mixed Reality Dev Days
 description: Event page for Mixed Reality Dev Days
 author: jessemcculloch 
@@ -8,12 +7,11 @@ ms.date: 02/21/2020
 ms.topic: article
 keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Kinect
 ---
+# Mixed Reality Dev Days
 
 ![Mixed Reality Dev Days](images/MRDD/MRDevDaysBanner.png)
 
 We look forward to having you join us at Mixed Reality Dev Days! Get ready for a new event format, tailored to a completely digital experience in 2D and 3D with AltspaceVR, with opportunities to hear from Microsoft leaders, learn from experts, and connect with the mixed reality developer community. Register for the digital experience today, at no cost to you!
-
----
 
 ## Important Details
 
@@ -23,15 +21,11 @@ We look forward to having you join us at Mixed Reality Dev Days! Get ready for a
 
 **Registration - FREE**
 
----
-
 ## Registration
 
 [Register Now](https://mixedrealityprod.microsoftcrmportals.com/MRDDRegistration/)
 
 We are very excited to open up registration for Mixed Reality Dev Days.  The event is free and being held in AltspaceVR, however, we are still requesting that attendees register so we can send email updates as the event gets closer, as well as to make sure that we are staffed up for the number of attendees.
-
----
 
 ## About Altspace
 
@@ -60,8 +54,6 @@ If you run into any issues with Altspace, please check the [troubleshooting page
 - Friend everyone you want to talk to at the event, that way you can invite friends back to your AltspaceVR home to chat privately if you wish.
 - If you stand near a microphone, your voice will be broadcast to everyone at the event! so take care where you are when talking.
 
----
-
 ## Schedule - Subject to change
 
 **All times are Pacific Daylight Time** 
@@ -71,9 +63,8 @@ If you run into any issues with Altspace, please check the [troubleshooting page
 We have a networking space that will be opening after the Keynote on day one, and after the Fireside chat on day two and will remain open until 4pm Pacific time each day. If you would like the "RSVP" for this space, you can do so [here](https://account.altvr.com/events/1472955760198550135). The idea of the networking space is similar to the "hallway track" at a physical conference.  A place to meet up with fellow developers, designers, enthusiasts, and even Microsoft staff.
 
 ### May 21st
-||||||
+|**Time**|**Session Title**|**Speaker**|**Description**|**Link to Event Page**|
 |---------|---------|---------|---------|---------|
-|__***Time***__|__***Session Title***__|__***Speaker***__|__***Description***__|__***Link to Event Page***__|
 |9:30am - 10:30am|Opening Keynote|Alex Kipman|Come join us as Alex Kipman starts our first ever virtual Mixed Reality Dev Days event. If you are using a VR headset we encourage you to join us in AltspaceVR, and if you are joining from a computer, please check out our livestream at [https://aka.ms/MRDDKeynote](https://aka.ms/MRDDKeynote)|[RSVP Page](https://account.altvr.com/events/1475172303389065242)|
 |10:30am - 11:00am|**Break**||||
 |11:00am - 12:00pm|Intro to Azure Mixed Reality Services: Azure Remote Rendering|Jonathan Lyons, Christopher Manthei, and Marc Appelsmeier|Azure Remote Rendering just entered public preview.  Learn how you can use ARR to render interactive 3D models with hundreds of millions of polygons and stream them to devices like HoloLens 2 in real-time.|[RSVP Page](https://account.altvr.com/events/1475002657985790153)|
@@ -92,9 +83,8 @@ We have a networking space that will be opening after the Keynote on day one, an
 ||||||
 
 ### May 22nd
-||||||
+|**Time**|**Session Title**|**Speaker**|**Description**|**Link to Event Page**|
 |---------|---------|---------|---------|---------|
-|__***Time***__|__***Session Title***__|__***Speaker***__|__***Description***__|__***Link to Event Page***__|
 |9:30am - 10:30am|Fireside Chat|Alex Kipman & René Schulte|Opening up day two we have invited Microsoft MVP, Regional Director, and community member extraordinaire René Schulte to stand around a fire and chat about the topics the community is interested in. René has been gathering questions from the community for about a week, and we anticipate it's going to be a great conversation.|[RSVP Page](https://account.altvr.com/events/1472969601032651685)|
 |10:30am - 11:00am|**Break**||||
 |11:00am - 12:00pm|Designing AR/VR experiences using Microsoft Maquette|Ricardo Acosta|Designing a phone app or a website has a well-defined workflow. Unfortunately, due to its novelty designing spatial reality experiences can be tricky if you use the same 2D workflow or toolset. Luckily, the new Microsoft Maquette app focuses on helping UX designers to design.|[RSVP Page](https://account.altvr.com/events/1475022385332618137)|
@@ -110,8 +100,6 @@ We have a networking space that will be opening after the Keynote on day one, an
 |2:30pm - 3:30pm|Tips from a Year of HoloLens 2 Development |Peter Vale|The HoloLens commercialization team will share tips and lessons learned from the past year working with our partners.  Gain insight into the most common issues along with best practices and techniques that you can use to get your HoloLens 2 application ready to share with your customers.|[RSVP Page](https://account.altvr.com/events/1475034807686660828)|
 ||||||
 
----
-
 ## Code of Conduct and Microsoft Standard Event Guidelines
 
 ### Code of Conduct 
@@ -124,7 +112,6 @@ We have a networking space that will be opening after the Keynote on day one, an
 
 ***We encourage everyone to behave responsibly within the AltspaceVR immersive environment as you would at any in-person event. Please respect other users space and do not block other attendees view of the stage when attending the event.  Be aware that like any in-person event, anything you say may be heard by other users at the event, if you require to have a private conversation then we recommend you take that to another space within AltspaceVR such as your AltspaceVR home***
 
----
 
 ## Frequently Asked Questions
 This section will be updated frequently as we get more questions from you!

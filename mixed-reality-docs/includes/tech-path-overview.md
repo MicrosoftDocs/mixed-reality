@@ -78,6 +78,10 @@ You have several hardware, emulator, and streaming options when building Mixed R
 | --- | --- |
 | [Mixed Reality Toolkit for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) | The Mixed Reality Toolkit for Unreal (MRTK-Unreal) is a set of components, in the form of plugins, samples and documentation, designed to accelerate development of mixed reality applications using the Unreal Engine. |
 
+## Examples
+
+* [Kippy's Escape](../unreal-kippys-escape.md) - Kippy’s Escape is an open-source HoloLens 2 sample app built with Unreal Engine 4 and Mixed Reality UX Tools for Unreal. The game showcases the unique features of the HoloLens 2 hardware and the development power of the Mixed Reality UX Tools.
+
 
 # [Web](#tab/web)
 

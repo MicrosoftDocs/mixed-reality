@@ -82,7 +82,7 @@ Don’t expect users can listen to one set of instructions via voice over and wa
 ## Can I create my own?
 
 Yes! We encourage you to create your own unique gesture for your game and contribute back to the community!
-We have provided a Maya file of a Rigged hand that can be used for your app which can be downloaded here: <a href="files/HandCoach_MRTK.zip"> Download HandCoach_MRTK.zip</a>
+We have provided a Maya file of a Rigged hand that can be used for your app which can be downloaded here: <a href="files/HandCoach_MRTK.zip"> Download HandCoach_MRTK.zip </a>
 
 ![Example of Animated Hands in Maya](images/HandCoach/MayaSelect_Gif.gif)<br>
 *Example of animated Hand Poking a box in Maya*
@@ -90,7 +90,7 @@ We have provided a Maya file of a Rigged hand that can be used for your app whic
 
 **Recommended authoring tool**
 
-Among 3D artists, many choose to use [Autodesk’s Maya which itself is able to use HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) to transform the way assets are created. The hands file provided is a Maya Binary File, so it is recommended to use Maya to animate and export the hands. If you prefer to use another 3D program, here is a <b>.FBX</b>: <a href="files/HandCoachMRTK_FBX.zip">           Download HandCoachMRTK_FBX.zip</a> to create your own controller setup. 
+Among 3D artists, many choose to use [Autodesk’s Maya which itself is able to use HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) to transform the way assets are created. The hands file provided is a Maya Binary File, so it is recommended to use Maya to animate and export the hands. If you prefer to use another 3D program, here is a <b>.FBX</b>: <a href="files/HandCoachMRTK_FBX.zip"> Download HandCoachMRTK_FBX.zip </a> to create your own controller setup. 
 
 If using the downloadable maya Hand File provided, it is suggested to scale down the hands in unity to 0.6.
 
@@ -117,21 +117,21 @@ If using the downloadable maya Hand File provided, it is suggested to scale down
 After you are satisfied with your animation
 * Select all joints: Select > Hierarchy
 
-     ![Example: Menu Location](images/HandCoach/Hierarchy.png)<br>
+     ![Example: Hierarchy in Menu](images/HandCoach/Hierarchy.png)<br>
 * Bake out your animation: Switch to Animation > Key > Bake Animation
 
-     ![Example: Menu Location](images/HandCoach/BakeAnimation.png)<br>
+     ![Example: Bake Animation Menu Location](images/HandCoach/BakeAnimation.png)<br>
 * Delete the Controller Rig: Outliner > MainR_Grp or MainL_Grp
 
-     ![Example: Menu Location](images/HandCoach/ControllerRig.png)<br>
+     ![Example: Controller Rig Menu Location](images/HandCoach/ControllerRig.png)<br>
 
 * Export as FBX: Select JNT + Mesh: File > Export Selection (option box) > Export Selection
 
-     ![Example: Menu Location](images/HandCoach/OptionBox.png)<br>
+     ![Example: Export selection Menu Location](images/HandCoach/OptionBox.png)<br>
 
      ![Example: Menu Location](images/HandCoach/SelectionExport.png)<br>
 
-     ![Example: Menu Location](images/HandCoach/FBXSelection.png)<br>
+     ![Example: Export Options Menu Location](images/HandCoach/FBXSelection.png)<br>
 
 
  When exporting as a FBX and brought into Unity, scale the hands down to 0.6. We found that this was perfect balance for displaying the hands. 
@@ -154,10 +154,7 @@ After you are satisfied with your animation
 * If you notice distortion on the hands, you need to go to Unity's Quality settings increase the amount of bones. 
  Go to Unity's Edit > Project Settings > Quality > Other > Blend Weights. Make sure "4 bones" are selected to see Smooth Joints. 
 
-   ![Example: Menu Location](images/HandCoach/ProjectSettings.png)<br>
-
-
-
+   ![Example: Project Settings Window](images/HandCoach/ProjectSettings.png)<br>
 
 
 ### What to avoid
