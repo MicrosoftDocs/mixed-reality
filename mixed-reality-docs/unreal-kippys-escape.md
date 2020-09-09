@@ -88,7 +88,7 @@ While there’s likely more we could have done, we felt that was a good balance 
 
 ## Try it out! 
 
-Boot up your HoloLens 2 and download the app from the Microsoft Store, or clone the [repository](https://github.com/microsoft/MixedReality-Unreal-KippysEscape) from GitHub and build the app yourself!  
+Boot up your HoloLens 2 and [download](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) the app from the Microsoft Store, or clone the [repository](https://github.com/microsoft/MixedReality-Unreal-KippysEscape) from GitHub and build the app yourself!  
 
 ## About the team
 
