@@ -1,3 +1,41 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@hferrone 
+Learn Git and GitHub without any code!
+Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+
+
+MicrosoftDocs
+/
+mixed-reality-pr
+Internal
+18
+1613
+Code
+Issues
+57
+Pull requests
+5
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+mixed-reality-pr/docfx.json
+
+Harrison Ferronr Update config publisher
+Latest commit 664fa14 5 days ago
+ History
+ 1 contributor
+79 lines (79 sloc)  2.17 KB
+  
 {
   "build": {
     "content": [
@@ -50,9 +88,43 @@
       "feedback_github_repo": "MicrosoftDocs/mixed-reality",
       "feedback_product_url": "https://docs.microsoft.com/windows/mixed-reality/give-us-feedback"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "author" : {
+        "mixed-reality-docs/enthusiast-guide/**/*.md": "paaron301"
+      },
+      "keywords": {
+        "mixed-reality-docs/enthusiast-guide/**/*.md": "mixed reality, virtual reality, vr"
+      },
+      "ms.author": {
+        "mixed-reality-docs/enthusiast-guide/**/*.md": "paaron"
+      },
+      "ms.date": {
+        "mixed-reality-docs/enthusiast-guide/**/*.md": "12/10/2017"
+      },
+      "ms.prod": {
+        "mixed-reality-docs/enthusiast-guide/**/*.md": "mixed-reality"
+      },
+      "ms.technology": {
+        "mixed-reality-docs/enthusiast-guide/**/*.md": "enthusiast-guide"
+      },
+      "titleSuffix": {
+        "mixed-reality-docs/enthusiast-guide/**/*.md": "Enthusiast Guide"
+      }
+    },
     "template": [],
     "dest": "mixed-reality",
     "markdownEngineName": "markdig"
   }
 }
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
