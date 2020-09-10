@@ -2,8 +2,7 @@
 title: Azure Spatial Anchors in Unreal
 description: Overview of creating Azure Spatial Anchors in Unreal engine.
 author: hferrone
-services: azure-spatial-anchors
-ms.author: v-haferr
+ms.author: v-hferrone
 ms.date: 07/01/2020
 ms.topic: tutorial
 ms.service: azure-spatial-anchors

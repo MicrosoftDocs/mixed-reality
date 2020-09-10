@@ -1,8 +1,8 @@
 ---
 title: Performance recommendations for Unity
 description: Unity-specific tips to improve performance with mixed reality apps.
-author: troy-ferrell
-ms.author: trferrel
+author: hferrone
+ms.author: v-hferrone
 ms.date: 03/26/2019
 ms.topic: article
 keywords: graphics, cpu, gpu, rendering, garbage collection, hololens
@@ -200,7 +200,7 @@ Any repeating Unity callback functions (i.e Update) that are executed many times
 
     b) The type of colliders in Unity have widely different performance characteristics. The order below lists the most performant colliders to least performant colliders from left to right. It is most important to avoid Mesh Colliders, which are substantially more expensive than the primitive colliders.
 
-        Sphere < Capsule < Box <<< Mesh (Convex) < Mesh (non-Convex)
+    Sphere < Capsule < Box <<< Mesh (Convex) < Mesh (non-Convex)
 
     See [Unity Physics Best Practices](https://unity3d.com/learn/tutorials/topics/physics/physics-best-practices) for more info
 
@@ -347,9 +347,9 @@ Unity has provided an excellent page that explains in detail how the garbage col
 One of the most common practices that leads to excessive garbage collection is not caching references to components and classes in Unity development. Any references should be captured during Start() or Awake() and re-used in later functions such as Update() or LateUpdate().
 
 Other quick tips:
-- Use the [StringBuilder](https://docs.microsoft.com/dotnet/api/system.text.stringbuilder?view=netframework-4.7.2) C# class to dynamically build complex strings at runtime
+- Use the [StringBuilder](https://docs.microsoft.com/dotnet/api/system.text.stringbuilder) C# class to dynamically build complex strings at runtime
 - Remove calls to Debug.Log() when no longer needed, as they still execute in all build versions of an app
-- If your holographic app generally requires lots of memory, consider calling  [_**System.GC.Collect()**_](https://docs.microsoft.com/dotnet/api/system.gc.collect?view=netframework-4.7.2) during loading phases such as when presenting a loading or transition screen
+- If your holographic app generally requires lots of memory, consider calling  [_**System.GC.Collect()**_](https://docs.microsoft.com/dotnet/api/system.gc.collect) during loading phases such as when presenting a loading or transition screen
 
 #### Object pooling
 

@@ -21,7 +21,7 @@ _Head-gaze and commit_ is a special case of the [gaze and commit](gaze-and-commi
     </colgroup>
     <tr>
         <td><strong>Input model</strong></td>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>

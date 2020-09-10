@@ -1,8 +1,8 @@
 ---
 title: Head-gaze and dwell
 description: Overview of the head-gaze and dwell input model
-author:  liamartinez
-ms.author: liamar
+author:  hferrone
+ms.author: v-hferrone
 ms.date: 05/13/2019
 ms.topic: article
 keywords: Mixed Reality, gaze, dwell, interaction, design

@@ -2,7 +2,7 @@
 title: HoloLens Photo/Video Camera in Unreal
 description: Guide to using the HoloLens photo/video camera in Unreal
 author: hferrone
-ms.author: v-haferr
+ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high

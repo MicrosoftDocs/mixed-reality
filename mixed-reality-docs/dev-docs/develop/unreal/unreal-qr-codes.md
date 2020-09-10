@@ -2,7 +2,7 @@
 title: QR codes in Unreal
 description: A guide to using QR codes in Unreal
 author: hferrone
-ms.author: v-haferr
+ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high

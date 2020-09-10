@@ -2,7 +2,7 @@
 title: 4. Making your scene interactive
 description: Part 4 of 6 in a tutorial series to build a simple chess app using Unreal Engine 4 and the Mixed Reality Toolkit UX Tools plugin
 author: hferrone
-ms.author: v-haferr
+ms.author: v-hferrone
 ms.date: 08/18/2020
 ms.topic: article
 ms.localizationpriority: high

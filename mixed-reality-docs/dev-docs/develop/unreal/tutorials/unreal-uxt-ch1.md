@@ -2,7 +2,7 @@
 title: 1. Getting started
 description: Part 1 of 6 in a tutorial series to build a simple chess app using Unreal Engine 4 and the Mixed Reality Toolkit UX Tools plugin
 author: hferrone
-ms.author: v-haferr
+ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
@@ -34,12 +34,12 @@ Make sure you've installed the following before jumping in:
 ### Installing Visual Studio 2019
 There are a few steps to ensure you have all the required Visual Studio packages:
 1. Install the latest version of [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)
-2. Install the following [workloads](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?view=vs-2019#modify-workloads):
+2. Install the following [workloads](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-workloads):
     * Desktop development with C++
     * .NET desktop development
     * Universal Windows Platform development
 
-3. Install the following [components](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?view=vs-2019#modify-individual-components):
+3. Install the following [components](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-individual-components):
     * Compilers, build tools, and runtimes > MSVC v142 - VS 2019 C++ ARM64 build tools (latest version)
 
 That's it! You're all set to move on to starting the chess project.

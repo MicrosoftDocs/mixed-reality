@@ -29,7 +29,7 @@ Mixed Reality is a blend of physical and digital worlds, unlocking the links bet
 
 Over the past several decades, exploration into the relationship between human and computer input has continued, leading to the discipline known as *human computer interaction* or HCI. Human input happens through different means, including keyboards, mice, touch, ink, voice, and even Kinect skeletal tracking.
 
-Advancements in sensors and processing are giving rise to a new area of computer input from environments. The interaction between computers and environments is effectively environmental understanding or *perception*, which is why the API names in Windows that reveal environmental information are called the [perception APIs](https://docs.microsoft.com/uwp/api/Windows.Perception). Environmental input captures things like a person's position in the world ([head tracking](coordinate-systems.md)), surfaces and boundaries ([spatial mapping](spatial-mapping.md) and [scene understanding](scene-understanding.md)), ambient lighting, environmental sound, object recognition, and location.
+Advancements in sensors and processing are giving rise to a new area of computer input from environments. The interaction between computers and environments is effectively environmental understanding or *perception*, which is why the API names in Windows that reveal environmental information are called the [perception APIs](https://docs.microsoft.com/uwp/api/Windows.Perception). Environmental input captures things like a person's position in the world ([head tracking](../design/coordinate-systems.md)), surfaces and boundaries ([spatial mapping](../design/spatial-mapping.md) and [scene understanding](../design/scene-understanding.md)), ambient lighting, environmental sound, object recognition, and location.
 
 <br>
 
@@ -112,6 +112,6 @@ It's best to think what type of experience an application or game developer want
 
 * [What is a hologram?](hologram.md)
 * [Understand the basics of Mixed Reality](get-started-with-mr.md#understand-the-basics)
-* [Start creating and prototyping](design.md)
-* [Learn the tools and architecture](development.md)
+* [Start creating and prototyping](../design/design.md)
+* [Learn the tools and architecture](../development/development.md)
 

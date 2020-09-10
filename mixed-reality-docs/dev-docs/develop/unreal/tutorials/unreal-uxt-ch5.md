@@ -2,7 +2,7 @@
 title: 5. Adding a button & resetting piece locations
 description: Part 5 of 6 in a tutorial series to build a simple chess app using Unreal Engine 4 and the Mixed Reality Toolkit UX Tools plugin
 author: hferrone
-ms.author: v-haferr
+ms.author: v-hferrone
 ms.date: 08/14/2020
 ms.topic: article
 ms.localizationpriority: high

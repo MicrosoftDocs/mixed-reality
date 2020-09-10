@@ -2,7 +2,7 @@
 title: Unreal Development Overview
 description: Overview of mixed reality development using Unreal Engine 4
 author: hferrone
-ms.author: v-haferr
+ms.author: v-hferrone
 ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
@@ -70,7 +70,7 @@ A developers job is never done, especially when learning a new tool or SDK. The 
 
 If you want to test out your application on a HoloLens device while still in development, you can [stream it directly from your PC](unreal-streaming.md) by using either the Unreal editor or a packaged Windows executable file.
 
-If you're looking to debug the application with Visual Studio, follow these [instructions](https://docs.microsoft.com/visualstudio/debugger/debug-installed-app-package?view=vs-2019#remote).
+If you're looking to debug the application with Visual Studio, follow these [instructions](https://docs.microsoft.com/visualstudio/debugger/debug-installed-app-package#remote).
 
 ### Performance
 

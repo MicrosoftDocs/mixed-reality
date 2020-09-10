@@ -26,7 +26,7 @@ Eye tracking API has been designed with a user’s privacy in mind, avoiding pas
 </colgroup>
 <tr>
      <td><strong>Feature</strong></td>
-     <td><a href="../../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
 </tr>
@@ -41,7 +41,7 @@ Eye tracking API has been designed with a user’s privacy in mind, avoiding pas
 <br>
 
 ## Calibration 
-For eye tracking to work accurately, each user is required to go through an [eye tracking user calibration](../../calibration.md) for which the user has to look at a set of holographic targets. 
+For eye tracking to work accurately, each user is required to go through an [eye tracking user calibration](../calibration.md) for which the user has to look at a set of holographic targets. 
 This allows the device to adjust the system for a more comfortable and higher quality viewing experience for the user and to ensure accurate eye tracking at the same time. 
 
 Eye tracking should work for most users, but there are rare cases in which a user might not be able to calibrate successfully. Calibration might fail for various reasons, including but not limited to: 
@@ -53,7 +53,7 @@ Eye tracking should work for most users, but there are rare cases in which a use
 
 Developers should make sure to provide adequate support for users for whom eye tracking data may not be available (who are not able to calibrate successfully). We have provided recommendations for fallback solutions in the section at the bottom of this page. 
 
-To learn more about the calibration and about how to ensure a smooth experience, please check our [eye tracking user calibration](../../calibration.md) page.
+To learn more about the calibration and about how to ensure a smooth experience, please check our [eye tracking user calibration](../calibration.md) page.
 
 <br>
 
@@ -143,8 +143,8 @@ To help you, check out our overview of key advantages, challenges and design rec
 
 In rare cases, eye tracking data might not be available.
 This can be due to different reasons from which the most common are listed below:
-* The system failed to [calibrate the user](../../calibration.md).
-* The user skipped the [calibration](../../calibration.md).	
+* The system failed to [calibrate the user](../calibration.md).
+* The user skipped the [calibration](../calibration.md).	
 * The user is calibrated, but decided to not give permission to your app to use their eye tracking data.	
 * The user has unique eyeglasses or some eye condition that the system does not yet support.	
 * External factors inhibiting reliable eye tracking such as smudges on the HoloLens visor or eyeglasses, intense direct sunlight and occlusions due to hair in front of the eyes.	
@@ -182,7 +182,7 @@ To get started developing, check out our information on the role of [eye-gaze fo
 
 
 ## See also
-* [Calibration](../../calibration.md)
+* [Calibration](../calibration.md)
 * [Comfort](comfort.md)
 * [Eye-gaze-based interaction](eye-gaze-interaction.md)
 * [Eye-gaze in DirectX](../develop/native/gaze-in-directx.md)

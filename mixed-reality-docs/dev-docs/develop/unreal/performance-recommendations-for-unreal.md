@@ -2,7 +2,7 @@
 title: Performance recommendations for Unreal
 description: Recommendations for optimal performance for mixed reality apps in Unreal
 author: hferrone
-ms.author: v-haferr
+ms.author: v-hferrone
 ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high

@@ -1,8 +1,8 @@
 ---
 title: Hands-free
 description: Learn about the difficulties that users may face with a hands-and-controllers interface, and about various hands-free alternatives.
-author: liamartinez
-ms.author: liamar
+author: hferrone
+ms.author: v-hferrone
 ms.date: 04/20/2019
 ms.topic: article
 keywords: Mixed Reality, hands-free, gaze, gaze targeting, interaction, design

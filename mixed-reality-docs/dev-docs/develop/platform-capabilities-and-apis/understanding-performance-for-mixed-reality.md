@@ -1,8 +1,8 @@
 ---
 title: Understanding Performance for Mixed Reality
 description: Advanced topics and details on optimizing performance for Windows Mixed Reality Apps
-author: troy-ferrell
-ms.author: trferrel
+author: hferrone
+ms.author: v-hferrone
 ms.date: 3/26/2019
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Performance, Optimization, CPU, GPU
@@ -43,7 +43,7 @@ There are many tools that allow you to understand the performance profile of you
 
 Below are some common tools to gain deep profiling information for your application:
 - [Intel Graphics Performance Analyzers](https://software.intel.com/gpa)
-- [Visual Studio Graphics Debuggers](https://docs.microsoft.com/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics?view=vs-2017)
+- [Visual Studio Graphics Debuggers](https://docs.microsoft.com/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)
 - [Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html)
 - [Unity Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html)
 

@@ -2,7 +2,7 @@
 title: Spatial Mapping in Unreal
 description: Guide to using spatial mapping in Unreal
 author: hferrone
-ms.author: v-haferr
+ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
