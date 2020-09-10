@@ -27,9 +27,9 @@ keywords: none
 </colgroup>
 <tr>
      <td><strong>Feature</strong></td>
-     <td><a href="hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+     <td><a href="../../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-     <td><a href="immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+     <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
 </tr>
 <tr>
      <td>Subject matter or article title</td>
@@ -60,7 +60,7 @@ Editorial conventions:
 *   Don't try to be funny.
 *   Write using en-us (United States English) spelling and conventions.
 *   **Use sentence casing for titles, section headings and... well everything.** Within sentences, the only words that should be capitalized are proper nouns (just as you learned in grammar school). Brand names (e.g. Microsoft HoloLens) are proper nouns. Feature names (e.g. spatial mapping) are not proper nouns unless they are trademarked.
-*   Do not write links of the form, "For more information go [here](contributing.md)." Instead, place links [contextually](contributing.md) without directing the reader to go somewhere else.
+*   Do not write links of the form, "For more information go [here](../whats-new/contributing.md)." Instead, place links [contextually](../whats-new/contributing.md) without directing the reader to go somewhere else.
 *   This documentation is the source of truth. Information must be accurate and current.
 
 <br>
@@ -230,6 +230,6 @@ Set iframe to width="940" height="530".
 
 ## See also
 
-* [Related article 1 name](design.md)
-* [Related article 2 name](design.md)
-* [Related article 3 name - link to a specific section](design.md#what-are-the-core-concepts-of-an-experience)
+* [Related article 1 name](../design/design.md)
+* [Related article 2 name](../design/design.md)
+* [Related article 3 name - link to a specific section](../design/design.md#what-are-the-core-concepts-of-an-experience)

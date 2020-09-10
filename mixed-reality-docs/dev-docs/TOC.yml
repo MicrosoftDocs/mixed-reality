@@ -1,5 +1,5 @@
 - name: Welcome to Mixed Reality
-  href: index.yml
+  href: dev-docs/index.yml
 - name: Discover
   href: discover/toc.yml
 - name: Design
