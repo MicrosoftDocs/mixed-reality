@@ -113,5 +113,5 @@ It's best to think what type of experience an application or game developer want
 * [What is a hologram?](hologram.md)
 * [Understand the basics of Mixed Reality](get-started-with-mr.md#understand-the-basics)
 * [Start creating and prototyping](../design/design.md)
-* [Learn the tools and architecture](../development/development.md)
+* [Learn the tools and architecture](../develop/development.md)
 

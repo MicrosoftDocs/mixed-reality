@@ -5,9 +5,7 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 07/01/2020
 ms.topic: tutorial
-ms.service: azure-spatial-anchors
 ms.localizationpriority: high
-
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, azure development, spatial anchors, mixed reality, development, features, new project, emulator, documentation, guides, holograms, game development
 ---
 # Azure Spatial Anchors in Unreal
