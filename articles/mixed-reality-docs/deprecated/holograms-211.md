@@ -9,15 +9,15 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 ---
 
 >[!NOTE]
->The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](mrlearning-base.md) has been posted for HoloLens 2.
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](../../mrlearning-base.md) has been posted for HoloLens 2.
 
 # MR Input 211: Gesture
 
-[Gestures](gaze-and-commit.md#composite-gestures) turn user intention into action. With gestures, users can interact with holograms. In this course, we'll learn how to track the user's hands, respond to user input, and give feedback to the user based on hand state and location.
+[Gestures](../design/gaze-and-commit.md#composite-gestures) turn user intention into action. With gestures, users can interact with holograms. In this course, we'll learn how to track the user's hands, respond to user input, and give feedback to the user based on hand state and location.
 
 >[!VIDEO https://www.youtube.com/embed/c9zlpfFeEtc]
 
-In [MR Basics 101](holograms-101.md), we used a simple air-tap gesture to interact with our holograms. Now, we'll move beyond the air-tap gesture and explore new concepts to:
+In [MR Basics 101](../develop/unity/tutorials/holograms-101.md), we used a simple air-tap gesture to interact with our holograms. Now, we'll move beyond the air-tap gesture and explore new concepts to:
 
 * Detect when the user's hand is being tracked and provide feedback to the user.
 * Use a navigation gesture to rotate our holograms.
@@ -33,7 +33,7 @@ In this course, we'll revisit the Unity project **Model Explorer**, which we bui
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td>MR Input 211: Gesture</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -43,11 +43,11 @@ In this course, we'll revisit the Unity project **Model Explorer**, which we bui
 
 ### Prerequisites
 
-* A Windows 10 PC configured with the correct [tools installed](install-the-tools.md).
+* A Windows 10 PC configured with the correct [tools installed](../develop/install-the-tools.md).
 * Some basic C# programming ability.
-* You should have completed [MR Basics 101](holograms-101.md).
-* You should have completed [MR Input 210](holograms-210.md).
-* A HoloLens device [configured for development](using-visual-studio.md#enabling-developer-mode).
+* You should have completed [MR Basics 101](../develop/unity/tutorials/holograms-101.md).
+* You should have completed [MR Input 210](../develop/unity/tutorials/holograms-210.md).
+* A HoloLens device [configured for development](../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).
 
 ### Project files
 
@@ -94,7 +94,7 @@ If deploying to HoloLens:
 1. Using the top toolbar in Visual Studio, change the target from Debug to **Release** and from ARM to **x86**.
 2. Click on the drop down arrow next to the Local Machine button, and select **Remote Machine**.
 3. Enter **your HoloLens device IP address** and set Authentication Mode to **Universal (Unencrypted Protocol)**. Click **Select**. If you do not know your device IP address, look in **Settings > Network & Internet > Advanced Options**.
-4. In the top menu bar, click **Debug -> Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](using-visual-studio.md#pairing-your-device).
+4. In the top menu bar, click **Debug -> Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
 5. When the app has deployed, dismiss the **Fitbox** with a **select gesture**.
 
 If deploying to an immersive headset:

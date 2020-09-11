@@ -9,15 +9,15 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 ---
 
 >[!NOTE]
->The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](mrlearning-base.md) has been posted for HoloLens 2.
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](../mrlearning-base.md) has been posted for HoloLens 2.
 
 # MR Input 210: Gaze
 
-[Gaze](gaze-and-commit.md) is the first form of input and reveals the user's intent and awareness. MR Input 210 (aka Project Explorer) is a deep dive into gaze-related concepts for Windows Mixed Reality. We will be adding contextual awareness to our cursor and holograms, taking full advantage of what your app knows about the user's gaze.
+[Gaze](../design/gaze-and-commit.md) is the first form of input and reveals the user's intent and awareness. MR Input 210 (aka Project Explorer) is a deep dive into gaze-related concepts for Windows Mixed Reality. We will be adding contextual awareness to our cursor and holograms, taking full advantage of what your app knows about the user's gaze.
 
 >[!VIDEO https://www.youtube.com/embed/yKAttGduVp0]
 
-We have a friendly astronaut here to help you learn gaze concepts. In [MR Basics 101](holograms-101.md), we had a simple cursor that just followed your gaze. Today we're moving a step beyond the simple cursor:
+We have a friendly astronaut here to help you learn gaze concepts. In [MR Basics 101](../develop/unity/tutorials/holograms-101.md), we had a simple cursor that just followed your gaze. Today we're moving a step beyond the simple cursor:
 
 * We're making the cursor and our holograms gaze-aware: both will change based on where the user is looking - or where the user is *not* looking. This makes them context-aware.
 * We will add feedback to our cursor and holograms to give the user more context on what is being targeted. This feedback can be audio and visual.
@@ -32,7 +32,7 @@ We have a friendly astronaut here to help you learn gaze concepts. In [MR Basics
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td>MR Input 210: Gaze</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -42,10 +42,10 @@ We have a friendly astronaut here to help you learn gaze concepts. In [MR Basics
 
 ### Prerequisites
 
-* A Windows 10 PC configured with the correct [tools installed](install-the-tools.md).
+* A Windows 10 PC configured with the correct [tools installed](../develop/install-the-tools.md).
 * Some basic C# programming ability.
-* You should have completed [MR Basics 101](holograms-101.md).
-* A HoloLens device [configured for development](using-visual-studio.md#enabling-developer-mode).
+* You should have completed [MR Basics 101](../develop/unity/tutorials/holograms-101.md).
+* A HoloLens device [configured for development](../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).
 
 ### Project files
 
@@ -80,7 +80,7 @@ We have a friendly astronaut here to help you learn gaze concepts. In [MR Basics
 
 ### Unity settings for HoloLens
 
-We need to let Unity know that the app we are trying to export should create an [immersive view](app-views.md) instead of a 2D view. We do that by adding HoloLens as a virtual reality device.
+We need to let Unity know that the app we are trying to export should create an [immersive view](../design/app-views.md) instead of a 2D view. We do that by adding HoloLens as a virtual reality device.
 
 1. Go to **Edit > Project Settings > Player**.
 2. In the **Inspector Panel** for Player Settings, select the **Windows Store** icon.
@@ -153,7 +153,7 @@ If deploying to HoloLens:
 1. Using the top toolbar in Visual Studio, change the target from Debug to **Release** and from ARM to **x86**.
 2. Click on the drop down arrow next to the Local Machine button, and select **Remote Machine**.
 3. Enter **your HoloLens device IP address** and set Authentication Mode to **Universal (Unencrypted Protocol)**. Click **Select**. If you do not know your device IP address, look in **Settings > Network & Internet > Advanced Options**.
-4. In the top menu bar, click **Debug -> Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](using-visual-studio.md#pairing-your-device).
+4. In the top menu bar, click **Debug -> Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
 5. When the app has deployed, dismiss the **Fitbox** with a **select gesture**.
 
 If deploying to an immersive headset:
