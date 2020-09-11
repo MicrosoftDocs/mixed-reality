@@ -3,8 +3,8 @@
   "docsets_to_publish": [
     {
       "docset_name": "mixed-reality-docs",
-      "build_source_folder": "mixed-reality-docs",
-      "build_output_subfolder": "mixed-reality-docs",
+      "build_source_folder": ".",
+      "build_output_subfolder": ".",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
