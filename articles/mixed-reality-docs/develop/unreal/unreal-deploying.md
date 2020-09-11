@@ -13,11 +13,11 @@ appliesto:
 # Deploy to device in Unreal
 
 ## Overview
-There are two ways to deploy an Unreal application to HoloLens 2: 
+There are two ways to deploy an Unreal application to HoloLens 2:
 * Directly from the Unreal editor
 * As a package uploaded via the device portal
 
-Both options require you to set up your HoloLens to use the [device portal](../platform-capabilities-and-apis/using-the-windows-device-portal.md) for development. 
+Both options require you to set up your HoloLens to use the [device portal](../platform-capabilities-and-apis/using-the-windows-device-portal.md) for development.
 
 ## Deploying to device from the Unreal editor
 
@@ -33,16 +33,25 @@ Both options require you to set up your HoloLens to use the [device portal](../p
 
 5. Enter your devices' IP address and port information separated by a colon as the device identifier. For example, "127.0.0.1:10080" (when connected via USB). Use your Device Portal username and password credentials.
 
-6. Hit **Add** and close the device manager. 
+6. Hit **Add** and close the device manager.
     * In the case of an error (such as wrong address, user name or password), a message will be printed to the Output Log.
 
 ![Adding an unlisted device](images/unreal/add-unlisted-device.png)
 
-7. Click the dropdown arrow next to the **Launch** button again - this time you should see the HoloLens device you just added. Select the HoloLens device to build and deploy to your HoloLens. 
+7. Click the dropdown arrow next to the **Launch** button again - this time you should see the HoloLens device you just added. Select the HoloLens device to build and deploy to your HoloLens.
 
 >[!NOTE]
 >Building for the device may involve recompiling shaders (especially on the first run)- this can take a while. Don't let the device go to sleep until the app is running (you may have to wear it). Otherwise shader compilation will fail!
 
 ## Deploying to device via device portal
 
-You can find detailed instructions on [packaging and deploying an app](tutorials/unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal) in the last section of the Getting Started with Unreal tutorial series.
+You can find detailed instructions on [packaging and deploying an app](unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal) in the last section of the Getting Started with Unreal tutorial series.
+
+## Next Development Checkpoint
+
+If you're following the Unreal development checkpoint journey we've laid out, you're in the midst of the deployment stage. From here, you can proceed to adding advanced services:
+
+> [!div class="nextstepaction"]
+> [Advanced services](unreal-development-overview.md#5-adding-services)
+
+You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#4-deploying-to-a-device) at any time.

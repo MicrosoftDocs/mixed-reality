@@ -81,7 +81,7 @@ In Episode 7, the team completes the project and shares their code.
 
 ## Case study
 
-You can find even more insights and lessons from developing Galaxy Explorer by reading the ["Creating a galaxy in mixed reality" case study](../../out-of-scope/case-study-creating-a-galaxy-in-mixed-reality.md).
+You can find even more insights and lessons from developing Galaxy Explorer by reading the ["Creating a galaxy in mixed reality" case study](case-study-creating-a-galaxy-in-mixed-reality.md).
 
 ## Meet the team
 
@@ -101,5 +101,5 @@ We’ll had one full-time tester – Lena – who tested our builds every day, s
 We are all a part of a larger studio here at Microsoft (think team in non-game development). There were a bunch of other people involved as well – we called on the talents of our art director, audio engineer and studio leadership frequently throughout the project, but those folks were shared resources with other projects our broader team has.
 
 ## See also
-* [Case study - Creating a galaxy in mixed reality](../../out-of-scope/case-study-creating-a-galaxy-in-mixed-reality.md)
+* [Case study - Creating a galaxy in mixed reality](case-study-creating-a-galaxy-in-mixed-reality.md)
 * [Galaxy Explorer GitHub repo](https://github.com/Microsoft/GalaxyExplorer)

@@ -63,6 +63,14 @@ Windows Mixed Reality applications use the following APIs to build [mixed-realit
 
 You can develop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive headset on the desktop.  If you don't have access to a headset, you can use the [HoloLens 2 Emulator](../platform-capabilities-and-apis/using-the-hololens-emulator.md) or the [Windows Mixed Reality Simulator](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) instead.
 
+<!--
+### 4. Advanced services
+
+At this point in your development journey you might be looking for advanced services or a helping hand with commercial deployment. Integrating [Azure Cloud Services](mixed-reality-cloud-services.md) and Dynamics 365 features can level up your projects in a major way. We've compiled a few starting points for you to explore and expand your Mixed Reality knowledge.
+
+[!INCLUDE[](~/includes/native-cloud-services-d365.md)]
+-->
+
 ## What's next?
 
 A developers job is never done, especially when learning a new tool or SDK. The following sections can take you into areas beyond the beginner level material you've already completed, along with helpful resources if you get stuck. Note that these topics and resources are not in any sequential order, so feel free to jump around and explore!

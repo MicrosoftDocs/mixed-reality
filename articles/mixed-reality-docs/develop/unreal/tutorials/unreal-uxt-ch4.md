@@ -104,6 +104,9 @@ Good news everyone! You're ready to test out the app with its new virtual hands 
 - Move your mouse to move the hand and scroll with your **mouse wheel** to move the hand **forwards** or **backwards**. 
 - Click the left mouse button to **pinch**, click the middle mouse button to **poke**. 
 
+> [!NOTE]
+> Input simulation may not work if you have multiple headsets plugged into your PC. If you're having issues, try unplugging your other headsets. 
+
 ![Simulated hands in the viewport](images/unreal-uxt/4-handsim.PNG)
 
 Try using the simulated hands to pick up, move, and set down the white chess king and manipulate the board! Experiment with both near and far interaction - notice that when your hands get close enough to grab the board and king directly, the hand ray disappears and is replaced with a finger cursor at the tip of the index finger. 

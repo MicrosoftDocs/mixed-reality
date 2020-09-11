@@ -15,7 +15,7 @@ keywords: Unity, focus point, focus plane, stabilization plane, stabilization po
 **Namespace:** *UnityEngine.XR.WSA*<br>
 **Type**: *HolographicSettings*
 
-The [focus point](../platform-capabilities-and-apis/hologram-stability.md#reprojection) can be set to provide HoloLens a hint about how to best perform stabilization on the holograms currently being displayed.
+The [focus point](hologram-stability.md#reprojection) can be set to provide HoloLens a hint about how to best perform stabilization on the holograms currently being displayed.
 
 If you want to set the Focus Point in Unity, it needs to be set every frame using *HolographicSettings.SetFocusPointForFrame()*. If the Focus Point is not set for a frame, the default stabilization plane will be used.
 
@@ -34,10 +34,10 @@ There are many ways to set the Focus Point, as suggested by the overloads availa
 public GameObject focusedObject;
 void Update()
 {
-    // Normally the normal is best set to be the opposite of the main camera's 
+    // Normally the normal is best set to be the opposite of the main camera's
     // forward vector.
-    // If the content is actually all on a plane (like text), set the normal to 
-    // the normal of the plane and ensure the user does not pass through the 
+    // If the content is actually all on a plane (like text), set the normal to
+    // the normal of the plane and ensure the user does not pass through the
     // plane.
     var normal = -Camera.main.transform.forward;     
     var position = focusedObject.transform.position;
@@ -47,5 +47,19 @@ void Update()
 
 Note that the simple code above may end up reducing hologram stability if the focused object ends up behind the user.  This is why you should generally set "Enable Depth Buffer Sharing" instead of manually specifying a focus point.
 
+## Next Development Checkpoint
+
+If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs. From here, you can proceed to the next topic:
+
+> [!div class="nextstepaction"]
+> [Tracking loss](tracking-loss-in-unity.md)
+
+Or jump directly to deploying your app on a device or emulator:
+
+> [!div class="nextstepaction"]
+> [Deploy to HoloLens or Windows Mixed Reality immersive headsets](using-visual-studio.md)
+
+You can always go back to the [Unity development checkpoints](unity-development-overview.md#3-platform-capabilities-and-apis) at any time.
+
 ### See also
-* [Stabilization plane](../platform-capabilities-and-apis/hologram-stability.md#reprojection)
+* [Stabilization plane](hologram-stability.md#reprojection)

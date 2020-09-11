@@ -58,7 +58,20 @@ For examples of spatial sound in Unity, see:
 * [MRTK demos](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.Examples/Demos/Audio)
 * The [Microsoft Spatializer sample project](https://github.com/microsoft/spatialaudio-unity/tree/master/Samples/MicrosoftSpatializerSample)
 
-## Next steps
-* [Sound design in mixed reality](../../design/spatial-sound-design.md)
-* [Microsoft's spatializer tutorial](tutorials/unity-spatial-audio-ch1.md)
+## Next Development Checkpoint
 
+If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality core building blocks. From here, you can proceed to the next building block:
+
+> [!div class="nextstepaction"]
+> [Text](text-in-unity.md)
+
+Or jump to Mixed Reality platform capabilities and APIs:
+
+> [!div class="nextstepaction"]
+> [Shared experiences](shared-experiences-in-unity.md)
+
+You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.
+
+## See also
+* [Sound design in mixed reality](spatial-sound-design.md)
+* [Microsoft's spatializer tutorial](unity-spatial-audio-ch1.md)

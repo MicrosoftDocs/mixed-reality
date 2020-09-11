@@ -1,6 +1,6 @@
 ---
 title: Spatial audio in Unreal
-description: Overview of the spatial audio plugin for Unreal.
+description: Learn the ins-and-outs of the spatial audio plugin for Unreal engine.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/15/2020
@@ -14,15 +14,15 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remotin
 
 Unlike vision, humans hear in 360 degree surround sound. Spatial sound emulates how human hearing works, providing the cues needed to identify sound locations in world-space. When you add spatial sound in your mixed reality applications, you're enhancing the level of immersion your users experience.  
 
-High quality spatial sound processing is complex, so the HoloLens 2 comes with dedicated hardware for processing those sound objects.  Before you can access this hardware processing support, you'll need to install the **MicrosoftSpatialSound** plugin in your Unreal project. This article will walk you through the installation and configuration of that plugin and point you towards more in-depth resources for using spatial sound in the Unreal engine. 
+High quality spatial sound processing is complex, so the HoloLens 2 comes with dedicated hardware for processing those sound objects.  Before you can access this hardware processing support, you'll need to install the **MicrosoftSpatialSound** plugin in your Unreal project. This article will walk you through the installation and configuration of that plugin and point you towards more in-depth resources for using spatial sound in the Unreal engine.
 
-## Installing the Microsoft Spatial Sound plugin 
+## Installing the Microsoft Spatial Sound plugin
 
-The first step to adding spatial sound to your project is installing the Microsoft Spatial Sound plugin, which you can find by: 
+The first step to adding spatial sound to your project is installing the Microsoft Spatial Sound plugin, which you can find by:
 
-1. Clicking **Edit > Plugins** and searching for **MicrosoftSpatialSound** in the search box. 
-2. Selecting the **Enabled** checkbox in the **MicrosoftSpatialSound** plugin. 
-3. Restarting the Unreal Editor by selecting **Restart Now** from the plugins page. 
+1. Clicking **Edit > Plugins** and searching for **MicrosoftSpatialSound** in the search box.
+2. Selecting the **Enabled** checkbox in the **MicrosoftSpatialSound** plugin.
+3. Restarting the Unreal Editor by selecting **Restart Now** from the plugins page.
 
 > [!NOTE]
 > If you haven't already, you'll need to install the **Microsoft Windows Mixed Reality** and **HoloLens** plugins by following the instructions in the **[Initializing your project](tutorials/unreal-uxt-ch2.md)** section of our Unreal tutorial series.
@@ -45,7 +45,7 @@ If you're going to be previewing your application in the Unreal editor on a desk
 
 ## Enabling spatial audio on your workstation
 Spatial audio is disabled by default on desktop versions of Windows. You can enable it by:
-* Right-clicking on the **volume** icon in the task bar. 
+* Right-clicking on the **volume** icon in the task bar.
     + Choose **Spatial sound -> Windows Sonic for Headphones** to get the best representation of what you'll hear on HoloLens 2.
 
 ![Spatialization plugin](images/unreal-spatial-audio-img-04.png)
@@ -59,7 +59,7 @@ After you've installed and configured the necessary plugins:
 
 ![Adding ambient sound actor](images/unreal-spatial-audio-img-07.png)
 
-2. Make the **Ambient Sound** actor a child of a visual element in your scene. 
+2. Make the **Ambient Sound** actor a child of a visual element in your scene.
     * An Ambient Sound actor doesn't have any visual representation by default, so you'll only hear a sound from its position in the scene. Attaching it to a visual element let's you see and move the actor like any other asset.
 
 3.  Right-click on the **Content Browser** and selecting **Create Advanced Asset -> Sounds -> Sound Attenuation**:
@@ -71,7 +71,7 @@ After you've installed and configured the necessary plugins:
 
 ![Set spatialization method](images/unreal-spatial-audio-img-03.png)
 
-5. Select the **Ambient Sound** actor and scroll down to the **Attenuation** section in the **Details** panel. 
+5. Select the **Ambient Sound** actor and scroll down to the **Attenuation** section in the **Details** panel.
     * Set the **Attenuation Settings** property to the **Sound Attenuation** asset you created.
 
 ![Set attenuation setting](images/unreal-spatial-audio-img-08.png)
@@ -80,7 +80,7 @@ After you've installed and configured the necessary plugins:
 
 ![Set sound asset](images/unreal-spatial-audio-img-09.png)
 
-> [!NOTE] 
+> [!NOTE]
 > The SoundAsset file needs to be mono to be spatialized with the Microsoft Spatial Sound plug-in. You can find the sound file properties by hovering over the asset in the Content Browser window as shown in the screenshot below.
 
 ![New sound attenuation asset](images/unreal-spatial-audio-img-10.png)
@@ -99,6 +99,20 @@ All attenuation objects come with modifiable settings for:
 * Occlusion
 
 [Sound attenuation in Unreal](https://docs.unrealengine.com/Engine/Audio/DistanceModelAttenuation/index.html) has details and implementation specifics on each of these topics.
+
+## Next Development Checkpoint
+
+If you're following the Unreal development checkpoint journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can proceed to the next building block:
+
+> [!div class="nextstepaction"]
+> [Voice input](unreal-voice-input.md)
+
+Or jump to Mixed Reality platform capabilities and APIs:
+
+> [!div class="nextstepaction"]
+> [HoloLens camera](unreal-hololens-camera.md)
+
+You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#2-core-building-blocks) at any time.
 
 
 ## See also

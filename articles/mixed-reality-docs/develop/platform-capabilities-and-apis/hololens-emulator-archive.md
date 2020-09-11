@@ -3,7 +3,7 @@ title: HoloLens Emulator archive
 description: List of released builds of the Microsoft HoloLens Emulator.
 author: hamalawi
 ms.author: moelhama
-ms.date: 8/10/2020
+ms.date: 9/07/2020
 ms.topic: article
 keywords: HoloLens, Emulator, Builds, Versions
 ---
@@ -12,8 +12,10 @@ keywords: HoloLens, Emulator, Builds, Versions
 
 HoloLens Emulator (1st gen) and HoloLens 2 Emulator builds install side-by-side. We generally recommend using the latest available build, but there might be cases where you want or need to test an app against an old emulator. This page includes links to released versions.
 
-|  Build |  Release Date |  Notes | 
+|  Build |  Release Date |  Notes |
 |----------|----------|----------|
+|  [HoloLens 2 Emulator build 10.0.19041.1117](https://go.microsoft.com/fwlink/?linkid=2141987) | September 07, 2020 | Windows Holographic, version 2004 September 2020 Update.  For general HoloLens 2 release notes, please see https://docs.microsoft.com/hololens/hololens-release-notes |
+|  [HoloLens 2 Emulator build 10.0.18362.1079](https://go.microsoft.com/fwlink/?linkid=2141985) | September 07, 2020 | Windows Holographic, version 1903 September 2020 Update.  For general HoloLens 2 release notes, please see https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator build 10.0.19041.1113](https://go.microsoft.com/fwlink/?linkid=2138219) | August 11, 2020 | Windows Holographic, version 2004 August 2020 Update.  For general HoloLens 2 release notes, please see https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator build 10.0.18362.1074](https://go.microsoft.com/fwlink/?linkid=2138317) | August 11, 2020 | Windows Holographic, version 1903 August 2020 Update.  For general HoloLens 2 release notes, please see https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator build 10.0.19041.1109](https://go.microsoft.com/fwlink/?linkid=2135188) | July 14, 2020 | Windows Holographic, version 2004 July 2020 Update.  For general HoloLens 2 release notes, please see https://docs.microsoft.com/hololens/hololens-release-notes |
@@ -36,16 +38,16 @@ HoloLens Emulator (1st gen) and HoloLens 2 Emulator builds install side-by-side.
 
 ## HoloLens Emulator (1st gen) archive
 
-|  Build |  Release Date |  Notes | 
+|  Build |  Release Date |  Notes |
 |----------|----------|----------|
 |  [HoloLens Emulator build 10.0.17763.134](https://go.microsoft.com/fwlink/?linkid=2065980) | November 19, 2018 | Latest HoloLens (1st gen) build. Windows 10 October 2018 Update. |
-|  [HoloLens Emulator build 10.0.17134.80](https://go.microsoft.com/fwlink/?linkid=874531) | May 21, 2018 | 
+|  [HoloLens Emulator build 10.0.17134.80](https://go.microsoft.com/fwlink/?linkid=874531) | May 21, 2018 |
 |  [HoloLens Emulator build 10.0.14393.1358](https://go.microsoft.com/fwlink/?linkid=852626) |  July 7, 2017 |
 |  [HoloLens Emulator build 10.0.14393.0](https://go.microsoft.com/fwlink/?LinkID=823018) |  August 2, 2016 |
 |  [HoloLens Emulator build 10.0.14342.1018](https://go.microsoft.com/fwlink/?LinkID=823018) |  May 31, 2016 |
 |  [HoloLens Emulator build 10.0.11082.1033](https://go.microsoft.com/fwlink/?LinkID=724053) |  March 30, 2016 |
 
 ## See also
-* [Install the tools](../install-the-tools.md)
+* [Install the tools](install-the-tools.md)
 * [Using the HoloLens emulator](using-the-hololens-emulator.md)
 * [Advanced HoloLens emulator and Mixed reality simulator input](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)

@@ -10,16 +10,16 @@ keywords: coordinate system, spatial coordinate system, orientation-only, seated
 
 # Coordinate systems in Unity
 
-Windows Mixed Reality supports apps across a wide range of [experience scales](../../design/coordinate-systems.md), from orientation-only and seated-scale apps up through room-scale apps. On HoloLens, you can go further and build world-scale apps that let users walk beyond 5 meters, exploring an entire floor of a building and beyond.
+Windows Mixed Reality supports apps across a wide range of [experience scales](coordinate-systems.md), from orientation-only and seated-scale apps up through room-scale apps. On HoloLens, you can go further and build world-scale apps that let users walk beyond 5 meters, exploring an entire floor of a building and beyond.
 
-Your first step in building a mixed reality experience in Unity is to determine which [experience scale](../../design/coordinate-systems.md) your app will target.
+Your first step in building a mixed reality experience in Unity is to determine which [experience scale](coordinate-systems.md) your app will target.
 
 ## Building an orientation-only or seated-scale experience
 
 **Namespace:** *UnityEngine.XR*<br>
 **Type:** *XRDevice*
 
-To build an **orientation-only** or **seated-scale experience**, you must set Unity to the Stationary tracking space type. This sets Unity's world coordinate system to track the [stationary frame of reference](../../design/coordinate-systems.md#spatial-coordinate-systems). In the Stationary tracking mode, content placed in the editor just in front of the camera's default location (forward is -Z) will appear in front of the user when the app launches.
+To build an **orientation-only** or **seated-scale experience**, you must set Unity to the Stationary tracking space type. This sets Unity's world coordinate system to track the [stationary frame of reference](coordinate-systems.md#spatial-coordinate-systems). In the Stationary tracking mode, content placed in the editor just in front of the camera's default location (forward is -Z) will appear in front of the user when the app launches.
 
 ```cs
 XRDevice.SetTrackingSpaceType(TrackingSpaceType.Stationary);
@@ -45,7 +45,7 @@ InputTracking.Recenter();
 **Namespace:** *UnityEngine.XR*<br>
 **Type:** *XRDevice*
 
-For a **standing-scale** or **room-scale experience**, you'll need to place content relative to the floor. You reason about the user's floor using the **[spatial stage](../../design/coordinate-systems.md#spatial-coordinate-systems)**, which represents the user's defined floor-level origin and optional room boundary, set up during first run.
+For a **standing-scale** or **room-scale experience**, you'll need to place content relative to the floor. You reason about the user's floor using the **[spatial stage](coordinate-systems.md#spatial-coordinate-systems)**, which represents the user's defined floor-level origin and optional room boundary, set up during first run.
 
 To ensure that Unity is operating with its world coordinate system at floor-level, you can set Unity to the RoomScale tracking space type, and ensure that the set succeeds:
 
@@ -59,7 +59,7 @@ else
     // RoomScale mode was not set successfully.  App cannot make assumptions about where the floor plane is.
 }
 ```
-* If SetTrackingSpaceType returns true, Unity has successfully switched its world coordinate system to track the [stage frame of reference](../../design/coordinate-systems.md#spatial-coordinate-systems).
+* If SetTrackingSpaceType returns true, Unity has successfully switched its world coordinate system to track the [stage frame of reference](coordinate-systems.md#spatial-coordinate-systems).
 * If SetTrackingSpaceType returns false, Unity was unable to switch to the stage frame of reference, likely because the user has not set up even a floor in their environment. This is not common, but can happen if the stage was set up in a different room and the device was moved to the current room without the user setting up a new stage.
 
 Once your app successfully sets the RoomScale tracking space type, content placed on the y=0 plane will appear on the floor. The origin at (0, 0, 0) will be the specific place on the floor where the user stood during room setup, with -Z representing the forward direction they were facing during setup.
@@ -84,7 +84,7 @@ if (UnityEngine.Experimental.XR.Boundary.TryGetGeometry(vertices, Boundary.Type.
 **Namespace:** *UnityEngine.XR.WSA*<br>
 **Type:** *WorldAnchor*
 
-For true **world-scale experiences** on HoloLens that let users wander beyond 5 meters, you'll need new techniques beyond those used for room-scale experiences. One key technique you'll use is to create a [spatial anchor](../../design/coordinate-systems.md#spatial-anchors) to lock a cluster of holograms precisely in place in the physical world, regardless of how far the user has roamed, and then [find those holograms again in later sessions](../../design/coordinate-systems.md#spatial-anchor-persistence).
+For true **world-scale experiences** on HoloLens that let users wander beyond 5 meters, you'll need new techniques beyond those used for room-scale experiences. One key technique you'll use is to create a [spatial anchor](coordinate-systems.md#spatial-anchors) to lock a cluster of holograms precisely in place in the physical world, regardless of how far the user has roamed, and then [find those holograms again in later sessions](coordinate-systems.md#spatial-anchor-persistence).
 
 In Unity, you create a spatial anchor by adding the **WorldAnchor** Unity component to a GameObject.
 
@@ -163,11 +163,25 @@ To get started building shared experiences in Unity, try out the 5-minute <a hre
 
 Once you're up and running with Azure Spatial Anchors, you can then <a href="https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">create and locate anchors in Unity</a>.
 
+## Next Development Checkpoint
+
+If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality core building blocks. From here, you can proceed to the next building block:
+
+> [!div class="nextstepaction"]
+> [Gaze](gaze-in-unity.md)
+
+Or jump to Mixed Reality platform capabilities and APIs:
+
+> [!div class="nextstepaction"]
+> [Shared experiences](shared-experiences-in-unity.md)
+
+You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.
+
 ## See Also
-* [Experience scales](../../design/coordinate-systems.md#mixed-reality-experience-scales)
-* [Spatial stage](../../design/coordinate-systems.md#stage-frame-of-reference)
+* [Experience scales](coordinate-systems.md#mixed-reality-experience-scales)
+* [Spatial stage](coordinate-systems.md#stage-frame-of-reference)
 * [Tracking loss in Unity](tracking-loss-in-unity.md)
-* [Spatial anchors](../../design/spatial-anchors.md)
+* [Spatial anchors](spatial-anchors.md)
 * [Persistence in Unity](persistence-in-unity.md)
 * [Shared experiences in Unity](shared-experiences-in-unity.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>

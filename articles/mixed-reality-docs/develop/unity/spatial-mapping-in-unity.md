@@ -474,6 +474,20 @@ The understanding dll internally stores the playspace as a grid of 8cm sized vox
 ## Spatial Mapping in Mixed Reality Toolkit
 For more information on using Spatial Mapping with Mixed Reality Toolkit v2, see the <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html" target="_blank">Spatial Awareness section</a> of the MRTK docs.
 
+## Next Development Checkpoint
+
+If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can proceed to the next building block: 
+
+> [!div class="nextstepaction"]
+> [Text](text-in-unity.md)
+
+Or jump to Mixed Reality platform capabilities and APIs:
+
+> [!div class="nextstepaction"]
+> [Shared experiences](shared-experiences-in-unity.md)
+
+You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.
+
 ## See also
 * [Coordinate systems](../../design/coordinate-systems.md)
 * [Coordinate systems in Unity](coordinate-systems-in-unity.md)

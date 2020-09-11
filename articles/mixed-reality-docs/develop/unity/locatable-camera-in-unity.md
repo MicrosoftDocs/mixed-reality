@@ -1,6 +1,6 @@
 ---
 title: Locatable camera in Unity
-description: HoloLens locatable camera usage in Unity.
+description: Learn how to capture a photo to a file or to a Texture2D, how to capture a photo and interact with the raw bytes, and how to capture a video.
 author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
@@ -9,11 +9,12 @@ keywords: photo, video, hololens, camera, unity, locatable
 ---
 
 
+
 # Locatable camera in Unity
 
 ## Enabling the capability for Photo Video Camera
 
-The "WebCam" capability must be declared for an app to use the [camera](../platform-capabilities-and-apis/locatable-camera.md).
+The "WebCam" capability must be declared for an app to use the [camera](locatable-camera.md).
 1. In the Unity Editor, go to the player settings by navigating to the "Edit > Project Settings > Player" page
 2. Click the "Windows Store" tab
 3. In the "Publishing Settings > Capabilities" section, check the **WebCam** and **Microphone** capabilities
@@ -303,5 +304,19 @@ void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
 * No resolutions are available
     * Ensure the **WebCam** capability is specified in your project.
 
+## Next Development Checkpoint
+
+If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs. From here, you can proceed to the next topic:
+
+> [!div class="nextstepaction"]
+> [Focus point](focus-point-in-unity.md)
+
+Or jump directly to deploying your app on a device or emulator:
+
+> [!div class="nextstepaction"]
+> [Deploy to HoloLens or Windows Mixed Reality immersive headsets](using-visual-studio.md)
+
+You can always go back to the [Unity development checkpoints](unity-development-overview.md#3-platform-capabilities-and-apis) at any time.
+
 ## See Also
-* [Locatable camera](../platform-capabilities-and-apis/locatable-camera.md)
+* [Locatable camera](locatable-camera.md)

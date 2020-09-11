@@ -9,12 +9,13 @@ keywords: Voice input, KeywordRecognizer, GrammarRecognizer, microphone, dictati
 ---
 
 
+
 # Voice input in Unity
 
 >[!NOTE]
 >Instead of the below information, consider using the Unity plug-in for the Cognitive Speech Services SDK which has much better Speech Accuracy results and provides easy access to speech-to-text decode and advanced speech features like dialog, intent based interaction, translation, text-to-speech synthesis and natural language speech recognition. Find the sample and documentaion here: https://docs.microsoft.com//azure/cognitive-services/speech-service/quickstart-csharp-unity   
 
-Unity exposes three ways to add [Voice input](../../design/voice-input.md) to your Unity application.
+Unity exposes three ways to add [Voice input](voice-input.md) to your Unity application.
 
 With the KeywordRecognizer (one of two types of PhraseRecognizers), your app can be given an array of string commands to listen for. With the GrammarRecognizer (the other type of PhraseRecognizer), your app can be given an SRGS file defining a specific grammar to listen for. With the DictationRecognizer, your app can listen for any word and provide the user with a note or other display of their speech.
 
@@ -143,7 +144,7 @@ grammarRecognizer.Start();
 **Namespace:** *UnityEngine.Windows.Speech*<br>
 **Types**: *DictationRecognizer*, *SpeechError*, *SpeechSystemStatus*
 
-Use the DictationRecognizer to convert the user's speech to text. The DictationRecognizer exposes [dictation](../../design/voice-input.md#dictation) functionality and supports registering and listening for hypothesis and phrase completed events, so you can give feedback to your user both while they speak and afterwards. Start() and Stop() methods respectively enable and disable dictation recognition. Once done with the recognizer, it should be disposed using Dispose() method to release the resources it uses. It will release these resources automatically during garbage collection at an additional performance cost if they are not released prior to that.
+Use the DictationRecognizer to convert the user's speech to text. The DictationRecognizer exposes [dictation](voice-input.md#dictation) functionality and supports registering and listening for hypothesis and phrase completed events, so you can give feedback to your user both while they speak and afterwards. Start() and Stop() methods respectively enable and disable dictation recognition. Once done with the recognizer, it should be disposed using Dispose() method to release the resources it uses. It will release these resources automatically during garbage collection at an additional performance cost if they are not released prior to that.
 
 There are only a few steps needed to get started with dictation:
 1. Create a new DictationRecognizer
@@ -296,3 +297,12 @@ The microphone helper script can be found in the [Input/Scripts/Utilities folder
 You can find the examples of the voice input in this scene.
 
 - [HoloToolkit-Examples/Input/Scenes/SpeechInputSource.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Input/Scenes/SpeechInputSource.unity)
+
+## Next Development Checkpoint
+
+If you're following the Unity development checkpoint journey we've laid out, you're next task is exploring the Mixed Reality platform capabilities and APIs:
+
+> [!div class="nextstepaction"]
+> [Shared experiences](shared-experiences-in-unity.md)
+
+You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.

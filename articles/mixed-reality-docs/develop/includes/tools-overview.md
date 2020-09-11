@@ -4,7 +4,7 @@
 
 ### 1. Download the latest version
 
-We recommend the [Unity LTS (Long Term Support)](https://unity3d.com/unity/qa/lts-releases) stream as the best version to use when starting new projects, updating to its latest revision to pick up the latest stable fixes. 
+We recommend the [Unity LTS (Long Term Support)](https://unity3d.com/unity/qa/lts-releases) stream as the best version to use when starting new projects, updating to its latest revision to pick up the latest stable fixes.
 * The current recommendation is to use **Unity 2019**, which is the LTS build required for MRTK v2 below.
 * If you need to use a different version of Unity for specific reasons, Unity supports side-by-side installs of different versions.
 
@@ -16,7 +16,10 @@ We recommend the [Unity LTS (Long Term Support)](https://unity3d.com/unity/qa/lt
 For installation, we recommend completing the [Getting Started section](../unity/unity-development-overview.md#1-getting-started) of our curated [Unity development journey](../unity/unity-development-overview.md). If you're already following the Unity development journey, finish up the rest of the setup steps listed below and continue on to the [HoloLens 2 Getting Started tutorials](../unity/tutorials/mr-learning-base-01.md).
 
 > [!IMPORTANT]
-> Note that installation instructions are targeted for the latest stable combination of MRTK and Unity releases, which are MRTK 2.4.0 and Unity 2019.3.15.
+> Note that installation instructions are targeted for the latest stable combination of MRTK and Unity releases, which are **MRTK 2.4.0** and **Unity 2019.3.15**.
+
+> [!NOTE]
+> If you don't want to use MRTK for Unity, you'll need to script all interactions and behaviors yourself.
 
 :::row:::
     :::column:::
@@ -24,16 +27,13 @@ For installation, we recommend completing the [Getting Started section](../unity
     :::column-end:::
 :::row-end:::
 
-> [!NOTE]
-> If you don't want to use MRTK for Unity, you'll need to script all interactions and behaviors yourself.
-
 #### Other tools [optional]
 * <a href="https://github.com/Microsoft/MixedRealityCompanionKit" target="_blank">Mixed Reality Companion Kit (GitHub)</a> - code bits and components that might not run directly on HoloLens or immersive (VR) headsets, but instead pair with them to build experiences targeting Windows Mixed Reality.
 * <a href="https://github.com/Microsoft/MixedRealityToolkit" target="_blank">Mixed Reality Toolkit - Common (GitHub)</a> - a collection of shared scripts and components.
 
 ### 3. Set up your PC for Mixed Reality development
 
-The Windows 10 SDK works best on the Windows 10 operating system. This SDK is also supported on Windows 8.1, Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2. Note that not all tools are supported on older operating systems. 
+The Windows 10 SDK works best on the Windows 10 operating system. This SDK is also supported on Windows 8.1, Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2. Note that not all tools are supported on older operating systems.
 
 > [!NOTE]
 > You can develop and deploy your apps for HoloLens, VR immersive headsets, or both. Make sure you fulfill the requirements below depending on your needs.
@@ -84,16 +84,19 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 </tr>
 </table>
 
-### What's next?
 If you're new to MRTK development with Unity, we recommend following our curated Unity development journey:
 
 > [!div class="nextstepaction"]
 > [Start your Unity journey](../unity/unity-development-overview.md)
 
-If you're already taking part in the [Unity development journey](../unity/unity-development-overview.md), it's time to dive into MRTK in a real project with the HoloLens 2 Getting Started tutorials:
+## Next Development Checkpoint
+
+If you're following the Unity development checkpoint journey we've laid out, your next task is to work through our HoloLens 2 tutorial series.
 
 > [!div class="nextstepaction"]
-> [HoloLens 2 Getting Started tutorials](../unity/tutorials/mr-learning-base-01.md)
+> [HoloLens 2 tutorial series](../mr-learning-base-01.md)
+
+You can always go back to the [Unity development checkpoints](../unity-development-overview.md#1-getting-started) at any time.
 
 # [Unreal](#tab/unreal)
 
@@ -125,7 +128,7 @@ For installation, we recommend completing the [Getting Started section](../unrea
 
 ### 3. Set up your PC for mixed reality development
 
-The Windows 10 SDK works best on the Windows 10 operating system. This SDK is also supported on Windows 8.1, Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2. Note that not all tools are supported on older operating systems. 
+The Windows 10 SDK works best on the Windows 10 operating system. This SDK is also supported on Windows 8.1, Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2. Note that not all tools are supported on older operating systems.
 
 > [!NOTE]
 > You can develop and deploy your apps for HoloLens, VR immersive headsets, or both. Make sure you fulfill the requirements below depending on your needs.
@@ -174,17 +177,19 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 </tr>
 </table>
 
-### What's next?
-
 If you're new to MRTK development with Unreal, we recommend following our curated Unreal development journey:
 
 > [!div class="nextstepaction"]
 > [Start your Unreal journey](../unreal/unreal-development-overview.md)
 
-If you're already taking part in the [Unreal development journey](../unreal/unreal-development-overview.md), it's time to dive into MRTK in a real project with the HoloLens 2 Getting Started tutorials:
+## Next Development Checkpoint
+
+If you're following the Unreal development checkpoint journey we've laid out, your next task is to work through our HoloLens 2 tutorial series.
 
 > [!div class="nextstepaction"]
-> [HoloLens 2 Getting Started tutorials](../unreal/tutorials/unreal-uxt-ch1.md)
+> [HoloLens 2 tutorial series](../unreal-uxt-ch1.md)
+
+You can always go back to the [Unreal development checkpoints](../unreal-development-overview.md#1-getting-started) at any time.
 
 # [Native (OpenXR)](#tab/native)
 
@@ -243,15 +248,16 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 </tr>
 </table>
 
-### What's next?
-
 If you're new to Native development with MRTK, we recommend following our curated Native development journey:
 
 > [!div class="nextstepaction"]
 > [Start your Native journey](../native/directx-development-overview.md)
 
-If you're already taking part in the [Native development journey](../native/directx-development-overview.md), it's time to setup your environment for HoloLens 2:
+## Next Development Checkpoint
+
+If you're following the Native development checkpoint journey we've laid out, your next task is to configure your development environment for HoloLens 2.
 
 > [!div class="nextstepaction"]
 > [Setup for HoloLens 2](../native/openxr-getting-started.md#getting-started-with-openxr-for-hololens-2)
 
+You can always go back to the [Native development checkpoints](../directx-development-overview.md#1-getting-started) at any time.
