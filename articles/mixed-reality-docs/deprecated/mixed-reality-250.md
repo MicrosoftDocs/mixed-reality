@@ -8,12 +8,10 @@ ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, immersive, motion controller, sharing, xbox controller, networking, cross-device
 ---
 
->[!NOTE]
->The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](mrlearning-base.md) has been posted for HoloLens 2.
-
-<br>
-
 # MR Sharing 250: HoloLens and immersive headsets
+
+>[!NOTE]
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](../mrlearning-base.md) has been posted for HoloLens 2.
 
 With the flexibility of Universal Windows Platform (UWP), it is easy to create an application that spans multiple devices. With this flexibility, we can create experiences that leverage the strengths of each device. This tutorial will cover a basic shared experience that runs on both HoloLens and Windows Mixed Reality immersive headsets. This content was originally delivered at the Microsoft Build 2017 conference in Seattle, WA.
 
@@ -28,7 +26,7 @@ With the flexibility of Universal Windows Platform (UWP), it is easy to create a
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td>MR Sharing 250: HoloLens and immersive headsets</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -38,7 +36,7 @@ With the flexibility of Universal Windows Platform (UWP), it is easy to create a
 
 ### Prerequisites
 
-* A Windows 10 PC with the [necessary development tools](install-the-tools.md) and [configured to support a Windows Mixed Reality immersive headset](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
+* A Windows 10 PC with the [necessary development tools](.../develop/install-the-tools.md) and [configured to support a Windows Mixed Reality immersive headset](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
 * An Xbox controller that works with your PC.
 * At least one HoloLens device and one immersive headset.
 * A network which allows UDP Broadcast for discovery.
@@ -46,7 +44,7 @@ With the flexibility of Universal Windows Platform (UWP), it is easy to create a
 ### Project files
 
 * Download the [files](https://github.com/Microsoft/MixedReality250/archive/master.zip) required by the project. Extract the files to an easy to remember location.
-* This project requires the [a recommended version of Unity with Windows Mixed Reality support](install-the-tools.md).
+* This project requires the [a recommended version of Unity with Windows Mixed Reality support](../develop/install-the-tools.md).
 
 >[!NOTE]
 >If you want to look through the source code before downloading, it's [available on GitHub](https://github.com/Microsoft/MixedReality250).
@@ -126,7 +124,7 @@ Show how to handle input for a Windows Mixed Reality application.
 
 Building on the application from chapter 1, we will add functionality to allow the user to pick up the hologram and place it on a real world surface in HoloLens or on a virtual table in an immersive headset.
 
-**Input Refresher:** On HoloLens the select gesture is the **air tap**. On immersive headsets, we will use the **A** button on the Xbox controller. For more information check out the [interaction model overview](interaction-fundamentals.md).
+**Input Refresher:** On HoloLens the select gesture is the **air tap**. On immersive headsets, we will use the **A** button on the Xbox controller. For more information check out the [interaction model overview](../design/interaction-fundamentals.md).
 
 ### Steps
 
@@ -250,7 +248,7 @@ We will update the application to put immersive headset users on the island with
 **Updated Input for the Immersive device:**
 
 * The left bumper and right bumper buttons on the Xbox controller rotate the player
-* Holding the Y button on the Xbox controller will enable a [teleport](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) cursor. If the cursor has a spinning arrow indicator when you release the Y button, you will be teleported to the cursor's location.
+* Holding the Y button on the Xbox controller will enable a [teleport](../discover/navigating-the-windows-mixed-reality-home.md#getting-around-your-home) cursor. If the cursor has a spinning arrow indicator when you release the Y button, you will be teleported to the cursor's location.
 
 ### Steps
 
@@ -263,7 +261,7 @@ We will update the application to put immersive headset users on the island with
 
 ### Digging into the code
 
-Immersive headset users will be tethered to their PCs with a cable, but our island is larger than the cable is long. To compensate, we need the ability to move the camera independently of the user's motion. Please see the [comfort page](comfort.md) for more information about designing your mixed reality application (in particular self motion and locomotion).
+Immersive headset users will be tethered to their PCs with a cable, but our island is larger than the cable is long. To compensate, we need the ability to move the camera independently of the user's motion. Please see the [comfort page](../design/comfort.md) for more information about designing your mixed reality application (in particular self motion and locomotion).
 
 In order to describe this process it will be useful to define two terms. First, **dolly** will be the object that moves the camera independently from the user. A child game object of the **dolly** will be the **main camera**. The main camera is attached to the user's head.
 

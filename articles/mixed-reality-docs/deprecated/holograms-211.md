@@ -8,10 +8,10 @@ ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, gesture
 ---
 
->[!NOTE]
->The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](../../mrlearning-base.md) has been posted for HoloLens 2.
-
 # MR Input 211: Gesture
+
+>[!NOTE]
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](../mrlearning-base.md) has been posted for HoloLens 2.
 
 [Gestures](../design/gaze-and-commit.md#composite-gestures) turn user intention into action. With gestures, users can interact with holograms. In this course, we'll learn how to track the user's hands, respond to user input, and give feedback to the user based on hand state and location.
 
@@ -33,7 +33,7 @@ In this course, we'll revisit the Unity project **Model Explorer**, which we bui
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td>MR Input 211: Gesture</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -46,7 +46,7 @@ In this course, we'll revisit the Unity project **Model Explorer**, which we bui
 * A Windows 10 PC configured with the correct [tools installed](../develop/install-the-tools.md).
 * Some basic C# programming ability.
 * You should have completed [MR Basics 101](../develop/unity/tutorials/holograms-101.md).
-* You should have completed [MR Input 210](../develop/unity/tutorials/holograms-210.md).
+* You should have completed [MR Input 210](holograms-210.md).
 * A HoloLens device [configured for development](../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).
 
 ### Project files
