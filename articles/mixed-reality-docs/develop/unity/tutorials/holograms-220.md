@@ -11,13 +11,13 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 # MR Spatial 220: Spatial sound
 
 >[!NOTE]
->The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](../mrlearning-base.md) has been posted for HoloLens 2.
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](../../../mrlearning-base.md) has been posted for HoloLens 2.
 
-[Spatial sound](../design/spatial-sound.md) breathes life into holograms and gives them presence in our world. Holograms are composed of both light and sound, and if you happen to lose sight of your holograms, spatial sound can help you find them. Spatial sound is not like the typical sound that you would hear on the radio, it is sound that is positioned in 3D space. With spatial sound, you can make holograms sound like they're behind you, next to you, or even on your head! In this course, you will:
+[Spatial sound](../../../design/spatial-sound.md) breathes life into holograms and gives them presence in our world. Holograms are composed of both light and sound, and if you happen to lose sight of your holograms, spatial sound can help you find them. Spatial sound is not like the typical sound that you would hear on the radio, it is sound that is positioned in 3D space. With spatial sound, you can make holograms sound like they're behind you, next to you, or even on your head! In this course, you will:
 
 * Configure your development environment to use Microsoft Spatial Sound.
 * Use Spatial Sound to enhance interactions.
-* Use Spatial Sound in conjunction with [Spatial Mapping](../design/spatial-mapping.md).
+* Use Spatial Sound in conjunction with [Spatial Mapping](../../../design/spatial-mapping.md).
 * Understand sound design and mixing best practices.
 * Use sound to enhance special effects and bring the user into the Mixed Reality world.
 
@@ -25,7 +25,7 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td>MR Spatial 220: Spatial sound</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -35,10 +35,10 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 
 ### Prerequisites
 
-* A Windows 10 PC configured with the correct [tools installed](../develop/install-the-tools.md).
+* A Windows 10 PC configured with the correct [tools installed](../../../develop/install-the-tools.md).
 * Some basic C# programming ability.
-* You should have completed [MR Basics 101](../develop/unity/tutorials/holograms-101.md).
-* A HoloLens device [configured for development](../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).
+* You should have completed [MR Basics 101](../../../develop/unity/tutorials/holograms-101.md).
+* A HoloLens device [configured for development](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).
 
 ### Project files
 
@@ -104,7 +104,7 @@ If deploying to HoloLens:
 1. Using the top toolbar in Visual Studio, change the target from Debug to **Release** and from ARM to **x86**.
 2. Click on the drop down arrow next to the Local Machine button, and select **Remote Machine**.
 3. Enter **your HoloLens device IP address** and set Authentication Mode to **Universal (Unencrypted Protocol)**. Click **Select**. If you do not know your device IP address, look in **Settings > Network & Internet > Advanced Options**.
-4. In the top menu bar, click **Debug -> Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
+4. In the top menu bar, click **Debug -> Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
 
 If deploying to an immersive headset:
 
