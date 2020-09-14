@@ -517,7 +517,7 @@ You can access gesture and motion controller from the input Manager.
 
 Step-by-step tutorials, with more detailed customization examples, are available in the Mixed Reality Academy:
 
-- [MR Input 211: Gesture](../../deprecated/holograms-211.md)
+- [MR Input 211: Gesture](tutorials/holograms-211.md)
 - [MR Input 213: Motion controllers](../../deprecated/mixed-reality-213.md)
 
 [![MR Input 213 - Motion controller](images/mr213-main-600px.jpg)](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-213)<br>
