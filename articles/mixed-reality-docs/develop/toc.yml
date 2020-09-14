@@ -276,10 +276,6 @@
         href: unreal/unreal-qr-codes.md
       - name: WinRT in Unreal
         href: unreal/unreal-winrt.md
-  - name: Sample apps
-    items: 
-      - name: Kippy's Escape  
-        href: unreal/unreal-kippys-escape.md
   - name: Deployment and performance 
     items: 
       - name: Deploy to device in Unreal
