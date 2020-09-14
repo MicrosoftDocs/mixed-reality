@@ -1,0 +1,81 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "**/_themes.pdf/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.svg",
+          "**/*.gif",
+          "**/*.pdf",
+          "**/*.wav",
+          "**/*.zip"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "breadcrumb_path": "/windows/mixed-reality/breadcrumb/toc.json",
+      "extendBreadcrumb": true,
+      "uhfHeaderId": "MSDocsHeader-Hololens",
+      "titleSuffix": "Mixed Reality",
+      "ms.prod": "mixed-reality",
+      "ms.technology": "mr-dev",
+      "ms.date": "3/21/2018",
+      "keywords": "mixed reality, windows mixed reality, hololens, mr, vr, ar, xr, virtual reality, augmented reality, holographic, develop, design, documentation",
+      "searchScope": ["MixedReality"],
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/mixed-reality",
+      "feedback_product_url": "https://docs.microsoft.com/windows/mixed-reality/give-us-feedback"
+    },
+    "fileMetadata": {
+      "author" : {
+        "mixed-reality-docs/enthusiast-guide/**/*.md": "paaron301"
+      },
+      "keywords": {
+        "mixed-reality-docs/enthusiast-guide/**/*.md": "mixed reality, virtual reality, vr"
+      },
+      "ms.author": {
+        "mixed-reality-docs/enthusiast-guide/**/*.md": "paaron"
+      },
+      "ms.date": {
+        "mixed-reality-docs/enthusiast-guide/**/*.md": "12/10/2017"
+      },
+      "ms.prod": {
+        "mixed-reality-docs/enthusiast-guide/**/*.md": "mixed-reality"
+      },
+      "ms.technology": {
+        "mixed-reality-docs/enthusiast-guide/**/*.md": "enthusiast-guide"
+      },
+      "titleSuffix": {
+        "mixed-reality-docs/enthusiast-guide/**/*.md": "Enthusiast Guide"
+      }
+    },
+    "template": [],
+    "dest": "mixed-reality",
+    "markdownEngineName": "markdig"
+  }
+}
+
