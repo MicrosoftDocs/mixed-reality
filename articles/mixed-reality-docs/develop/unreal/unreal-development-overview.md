@@ -64,9 +64,9 @@ If this is your first time creating or deploying an Unreal app for HoloLens, you
 
 ### 5. Adding services
 
-At this point in your development journey you might be looking to add services or for a helping hand with commercial deployment. Integrating [Azure Cloud Services](mixed-reality-cloud-services.md) and Dynamics 365 features can level up your projects in a major way. We've compiled a few starting points for you to explore and expand your Mixed Reality knowledge.
+At this point in your development journey you might be looking to add services or for a helping hand with commercial deployment. Integrating [Azure Cloud Services](../mixed-reality-cloud-services.md) and Dynamics 365 features can level up your projects in a major way. We've compiled a few starting points for you to explore and expand your Mixed Reality knowledge.
 
-[!INCLUDE[](~/includes/unreal-cloud-services-d365.md)]
+[!INCLUDE[](../includes/unreal-cloud-services-d365.md)]
 
 ## What's next?
 
