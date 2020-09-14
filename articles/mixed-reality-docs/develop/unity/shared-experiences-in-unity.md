@@ -9,7 +9,6 @@ keywords: Sharing, Anchor, WorldAnchor, MR Sharing 250, WorldAnchorTransferBatch
 ---
 
 
-
 # Shared experiences in Unity
 
 A shared experience is one where multiple users, each with their own HoloLens, iOS or Android device, collectively view and interact with the same hologram which is positioned at a fixed point in space. This is accomplished through spatial anchor sharing.
@@ -26,7 +25,7 @@ Once you're up and running with Azure Spatial Anchors, you can then <a href="htt
 
 ## Local anchor transfers
 
-In situations where you cannot use Azure Spatial Anchors, [local anchor transfers](local-anchor-transfers-in-unity.md) enable one HoloLens device to export an anchor to be imported by a second HoloLens device.  Note that this approach provides less robust anchor recall than Azure Spatial Anchors, and iOS and Android devices are not supported by this approach.
+In situations where you cannot use Azure Spatial Anchors, [local anchor transfers](../../out-of-scope/local-anchor-transfers-in-unity.md) enable one HoloLens device to export an anchor to be imported by a second HoloLens device.  Note that this approach provides less robust anchor recall than Azure Spatial Anchors, and iOS and Android devices are not supported by this approach.
 
 ## Next Development Checkpoint
 
@@ -38,11 +37,11 @@ If you're following the Unity development checkpoint journey we've laid out, you
 Or jump directly to deploying your app on a device or emulator:
 
 > [!div class="nextstepaction"]
-> [Deploy to HoloLens or Windows Mixed Reality immersive headsets](using-visual-studio.md)
+> [Deploy to HoloLens or Windows Mixed Reality immersive headsets](../platform-capabilities-and-apis/using-visual-studio.md)
 
 You can always go back to the [Unity development checkpoints](unity-development-overview.md#3-platform-capabilities-and-apis) at any time.
 
 ## See also
-* [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
+* [Shared experiences in mixed reality](../platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * <a href="https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Azure Spatial Anchors SDK for Unity</a>

@@ -73,5 +73,5 @@ Or jump to Mixed Reality platform capabilities and APIs:
 You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.
 
 ## See also
-* [Sound design in mixed reality](spatial-sound-design.md)
-* [Microsoft's spatializer tutorial](unity-spatial-audio-ch1.md)
+* [Sound design in mixed reality](../../design/spatial-sound-design.md)
+* [Microsoft's spatializer tutorial](tutorials/unity-spatial-audio-ch1.md)

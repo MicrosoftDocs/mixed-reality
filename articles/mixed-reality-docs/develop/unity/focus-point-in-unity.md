@@ -9,13 +9,12 @@ keywords: Unity, focus point, focus plane, stabilization plane, stabilization po
 ---
 
 
-
 # Focus point in Unity
 
 **Namespace:** *UnityEngine.XR.WSA*<br>
 **Type**: *HolographicSettings*
 
-The [focus point](hologram-stability.md#reprojection) can be set to provide HoloLens a hint about how to best perform stabilization on the holograms currently being displayed.
+The [focus point](../platform-capabilities-and-apis/hologram-stability.md#reprojection) can be set to provide HoloLens a hint about how to best perform stabilization on the holograms currently being displayed.
 
 If you want to set the Focus Point in Unity, it needs to be set every frame using *HolographicSettings.SetFocusPointForFrame()*. If the Focus Point is not set for a frame, the default stabilization plane will be used.
 
@@ -57,9 +56,9 @@ If you're following the Unity development checkpoint journey we've laid out, you
 Or jump directly to deploying your app on a device or emulator:
 
 > [!div class="nextstepaction"]
-> [Deploy to HoloLens or Windows Mixed Reality immersive headsets](using-visual-studio.md)
+> [Deploy to HoloLens or Windows Mixed Reality immersive headsets](../platform-capabilities-and-apis/using-visual-studio.md)
 
 You can always go back to the [Unity development checkpoints](unity-development-overview.md#3-platform-capabilities-and-apis) at any time.
 
 ### See also
-* [Stabilization plane](hologram-stability.md#reprojection)
+* [Stabilization plane](../platform-capabilities-and-apis/hologram-stability.md#reprojection)

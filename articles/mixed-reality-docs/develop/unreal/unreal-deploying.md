@@ -45,7 +45,7 @@ Both options require you to set up your HoloLens to use the [device portal](../p
 
 ## Deploying to device via device portal
 
-You can find detailed instructions on [packaging and deploying an app](unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal) in the last section of the Getting Started with Unreal tutorial series.
+You can find detailed instructions on [packaging and deploying an app](tutorials/unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal) in the last section of the Getting Started with Unreal tutorial series.
 
 ## Next Development Checkpoint
 

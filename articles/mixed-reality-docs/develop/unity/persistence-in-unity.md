@@ -119,6 +119,6 @@ Or jump to Mixed Reality platform capabilities and APIs:
 You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.
 
 ## See Also
-* [Spatial anchor persistence](coordinate-systems.md#spatial-anchor-persistence)
+* [Spatial anchor persistence](../../design/coordinate-systems.md#spatial-anchor-persistence)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * <a href="https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Azure Spatial Anchors SDK for Unity</a>
