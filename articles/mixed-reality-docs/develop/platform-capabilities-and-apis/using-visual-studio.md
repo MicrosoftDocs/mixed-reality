@@ -10,7 +10,6 @@ keywords: Visual Studio, HoloLens, Mixed Reality, debug, deploy
 ---
 
 
-
 # Using Visual Studio to deploy and debug
 
 Whether you want to use DirectX or Unity to develop your mixed reality app, you will use Visual Studio for debugging and deploying. In this section, you will learn how to:
@@ -19,8 +18,8 @@ Whether you want to use DirectX or Unity to develop your mixed reality app, you 
 * Debug mixed reality apps.
 
 ## Prerequisites
-1. See [Install the Tools](install-the-tools.md) for installation instructions.
-2. Create a new Universal Windows app project in Visual Studio.  For HoloLens (1st gen), use Visual Studio 2017 or newer.  For Hololens 2, use Visual Studio 2019 16.2 or newer. C# and C++ are supported. (Or follow the instructions to [create an app in Unity](holograms-100.md).)
+1. See [Install the Tools](../../develop/install-the-tools.md) for installation instructions.
+2. Create a new Universal Windows app project in Visual Studio.  For HoloLens (1st gen), use Visual Studio 2017 or newer.  For Hololens 2, use Visual Studio 2019 16.2 or newer. C# and C++ are supported. (Or follow the instructions to [create an app in Unity](../../develop/unity/tutorials/holograms-100.md).)
 
 ## Enabling Developer Mode
 
@@ -28,7 +27,7 @@ Start by enabling **Developer Mode** on your device, so Visual Studio can connec
 
 ### HoloLens
 1. Turn on your HoloLens and put on the device.
-2. Perform the [start gesture](system-gesture.md) to launch the main menu.
+2. Perform the [start gesture](../../design/system-gesture.md) to launch the main menu.
 3. Select the **Settings** tile to launch the app in your environment.
 4. Select the **Update** menu item.
 5. Select the **For developers** menu item.
@@ -106,7 +105,7 @@ The first time you deploy an app from Visual Studio to your HoloLens, you will b
 To un-pair your HoloLens from all computers it was paired with, launch the **Settings** app, go to **Update > For Developers** and tap on **Clear**.
 
 ## Deploying an app to the HoloLens (1st gen) Emulator
-1. Make sure you have **[installed the HoloLens Emulator](install-the-tools.md)**.
+1. Make sure you have **[installed the HoloLens Emulator](../install-the-tools.md)**.
 2. Select an **x86** build configuration for your app.</br>
 ![x86 build configuration in Visual Studio](images/x86setting.png)</br>
 3. Select **HoloLens Emulator** in the deployment target drop-down menu</br>
@@ -115,7 +114,7 @@ To un-pair your HoloLens from all computers it was paired with, launch the **Set
 ![Start Without Debugging in Visual Studio](images/deploywithdebugging.png)</br>
 
 ## Deploying an app to the HoloLens 2 Emulator
-1. Make sure you have **[installed the HoloLens Emulator](install-the-tools.md)**.
+1. Make sure you have **[installed the HoloLens Emulator](../install-the-tools.md)**.
 2. Select an **x86** or **x64** build configuration for your app.</br>
 ![x86 build configuration in Visual Studio](images/x86setting.png)</br>
 3. Select **HoloLens 2 Emulator** in the deployment target drop-down menu</br>
@@ -164,12 +163,12 @@ If you're following the Unity development checkpoint journey we've laid out, you
 Or jump directly to adding advanced services:
 
 > [!div class="nextstepaction"]
-> [Advanced services](unity-development-overview.md#5-adding-services)
+> [Advanced services](../../develop/unity/unity-development-overview.md#5-adding-services)
 
-You can always go back to the [Unity development checkpoints](unity-development-overview.md#4-deploying-to-a-device-or-emulator) at any time.
+You can always go back to the [Unity development checkpoints](../../develop/unity/unity-development-overview.md#4-deploying-to-a-device-or-emulator) at any time.
 
 ## See also
-* [Install the tools](install-the-tools.md)
+* [Install the tools](../install-the-tools.md)
 * [Using the HoloLens emulator](using-the-hololens-emulator.md)
 * [Deploying and debugging Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/library/windows/apps/xaml/mt613243.aspx)
 * [Enable your device for development](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)

@@ -80,7 +80,7 @@ You have several hardware, emulator, and streaming options when building Mixed R
 
 ## Examples
 
-* [Kippy's Escape](../unreal-kippys-escape.md) - Kippy’s Escape is an open-source HoloLens 2 sample app built with Unreal Engine 4 and Mixed Reality UX Tools for Unreal. The game showcases the unique features of the HoloLens 2 hardware and the development power of the Mixed Reality UX Tools.
+* [Kippy's Escape](../unreal/unreal-kippys-escape.md) - Kippy’s Escape is an open-source HoloLens 2 sample app built with Unreal Engine 4 and Mixed Reality UX Tools for Unreal. The game showcases the unique features of the HoloLens 2 hardware and the development power of the Mixed Reality UX Tools.
 
 
 # [Web](#tab/web)

@@ -248,7 +248,7 @@ In the emulator, you will only see holograms that you render. But you will not s
 * When uninstalling the HoloLens 2 Emulator, the hard disk image (Flash.vhdx) may be left on your hard drive in the Windows Kits\10\Emulation\HoloLens\<build number> folder.  It is safe to delete this file.
 * Hardware graphics acceleration may cause Holographic apps to crash on some systems with AMD or Intel graphics.  Disabling hardware graphics acceleration in the emulator Tools window works around this issue.
 * After installing the latest Windows updates as of July 2020, hardware graphics acceleration in the HoloLens Emulator (1st Gen) might no longer be available.
-The RemoteFX component needed for hardware graphics acceleration has been deprecated and will be removed in a future Windows release.  To re-enable hardware graphics acceleration, use the [Enable-VMRemoteFXPhysicalVideoAdapter PowerShell cmdlet](https://docs.microsoft.com/powershell/module/hyper-v/enable-vmremotefxphysicalvideoadapter?view=win10-ps).  Please refer to the [documentation on the deprecation and removal of RemoteFX support in Windows](https://support.microsoft.com/help/4570006/update-to-disable-and-remove-the-remotefx-vgpu-component) for additional information.
+The RemoteFX component needed for hardware graphics acceleration has been deprecated and will be removed in a future Windows release.  To re-enable hardware graphics acceleration, use the [Enable-VMRemoteFXPhysicalVideoAdapter PowerShell cmdlet](https://docs.microsoft.com/powershell/module/hyper-v/enable-vmremotefxphysicalvideoadapter).  Please refer to the [documentation on the deprecation and removal of RemoteFX support in Windows](https://support.microsoft.com/help/4570006/update-to-disable-and-remove-the-remotefx-vgpu-component) for additional information.
 
 ## Troubleshooting
 
@@ -287,12 +287,12 @@ If you're following the Unity development checkpoint journey we've laid out, you
 Or jump directly to adding advanced services:
 
 > [!div class="nextstepaction"]
-> [Advanced services](unity-development-overview.md#5-adding-services)
+> [Advanced services](../../develop/unity/unity-development-overview.md#5-adding-services)
 
-You can always go back to the [Unity development checkpoints](unity-development-overview.md#4-deploying-to-a-device-or-emulator) at any time.
+You can always go back to the [Unity development checkpoints](../../develop/unity/unity-development-overview.md#4-deploying-to-a-device-or-emulator) at any time.
 
 ## See also
 * [Advanced HoloLens Emulator and Mixed Reality Simulator input](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)
 * [HoloLens Emulator software history](hololens-emulator-archive.md)
-* [Spatial mapping in Unity](spatial-mapping-in-unity.md)
-* [Spatial mapping in DirectX](spatial-mapping-in-directx.md)
+* [Spatial mapping in Unity](../../develop/unity/spatial-mapping-in-unity.md)
+* [Spatial mapping in DirectX](../../develop/native/spatial-mapping-in-directx.md)

@@ -94,9 +94,9 @@ If you're new to MRTK development with Unity, we recommend following our curated
 If you're following the Unity development checkpoint journey we've laid out, your next task is to work through our HoloLens 2 tutorial series.
 
 > [!div class="nextstepaction"]
-> [HoloLens 2 tutorial series](../mr-learning-base-01.md)
+> [HoloLens 2 tutorial series](../unity/tutorials/mr-learning-base-01.md)
 
-You can always go back to the [Unity development checkpoints](../unity-development-overview.md#1-getting-started) at any time.
+You can always go back to the [Unity development checkpoints](../unity/unity-development-overview.md#1-getting-started) at any time.
 
 # [Unreal](#tab/unreal)
 
@@ -187,9 +187,9 @@ If you're new to MRTK development with Unreal, we recommend following our curate
 If you're following the Unreal development checkpoint journey we've laid out, your next task is to work through our HoloLens 2 tutorial series.
 
 > [!div class="nextstepaction"]
-> [HoloLens 2 tutorial series](../unreal-uxt-ch1.md)
+> [HoloLens 2 tutorial series](../unreal/tutorials/unreal-uxt-ch1.md)
 
-You can always go back to the [Unreal development checkpoints](../unreal-development-overview.md#1-getting-started) at any time.
+You can always go back to the [Unreal development checkpoints](../unreal/unreal-development-overview.md#1-getting-started) at any time.
 
 # [Native (OpenXR)](#tab/native)
 
@@ -260,4 +260,4 @@ If you're following the Native development checkpoint journey we've laid out, yo
 > [!div class="nextstepaction"]
 > [Setup for HoloLens 2](../native/openxr-getting-started.md#getting-started-with-openxr-for-hololens-2)
 
-You can always go back to the [Native development checkpoints](../directx-development-overview.md#1-getting-started) at any time.
+You can always go back to the [Native development checkpoints](../native/directx-development-overview.md#1-getting-started) at any time.

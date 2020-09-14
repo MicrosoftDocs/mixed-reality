@@ -59,14 +59,14 @@ The Mixed Reality simulator can simulate up to two hand-held tracked motion cont
 
 ## Next Development Checkpoint
 
-If you're following the Unity development checkpoint journey we've laid out, you're in the midst of the deployment stage. From here, you can proceed to the next [topic](unity-development-overview.md#4-deploying-to-a-device-or-emulator) or jump directly to adding advanced services.
+If you're following the Unity development checkpoint journey we've laid out, you're in the midst of the deployment stage. From here, you can proceed to the next [topic](../../develop/unity/unity-development-overview.md#4-deploying-to-a-device-or-emulator) or jump directly to adding advanced services.
 
 > [!div class="nextstepaction"]
-> [Advanced services](unity-development-overview.md#5-adding-services)
+> [Advanced services](../../develop/unity/unity-development-overview.md#5-adding-services)
 
 
 ## See also
 * [Using the HoloLens emulator](using-the-hololens-emulator.md)
 * [Advanced Mixed Reality Simulator Input](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)
-* [Spatial mapping in Unity](spatial-mapping-in-unity.md)
-* [Spatial mapping in DirectX](spatial-mapping-in-directx.md)
+* [Spatial mapping in Unity](../../develop/unity/spatial-mapping-in-unity.md)
+* [Spatial mapping in DirectX](../../develop/native/spatial-mapping-in-directx.md)
