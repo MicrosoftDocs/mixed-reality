@@ -20,7 +20,7 @@
     items: 
       - name: Overview
         href: unity/tutorials.md
-      - name: HoloLens 2 tutorials.md
+      - name: HoloLens 2 tutorials
         items: 
           - name: Getting started tutorials
             items: 
