@@ -168,11 +168,6 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/mrlearning-speechSDK-ch1.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/mrlearning-speechSDK-ch1.md",
 			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mrlearning-speechsdk-ch1",
 			"redirect_document_id": true
 		},
