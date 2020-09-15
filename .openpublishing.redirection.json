@@ -123,7 +123,7 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/academy.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/tutorials#mixed-reality-academy-tutorials",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/tutorials#mixed-reality-academy",
 			"redirect_document_id": false
 		},
 		{
@@ -165,16 +165,6 @@
 			"source_path": "mixed-reality-docs/mr-dev-docs/saving-and-finding-your-files.md",
 			"redirect_url": "https://docs.microsoft.com/hololens/hololens-find-and-save-files",
 			"redirect_document_id": false
-		},
-		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/mrlearning-speechSDK-ch1.md#build-your-application-to-your-device",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/mrlearning-speechSDK-ch1.md#getting-started",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mrlearning-speechsdk-ch1",
-			"redirect_document_id": true
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/using-webvr-in-edge-with-windows-mixed-reality.md",
