@@ -747,13 +747,8 @@
 			"redirect_document_id": true
 		},
 		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/mrlearning-base.md",
-			"redirect_url": "mr-learning-base-01",
-			"redirect_document_id": false
-		},
-		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/mr-learning-base-01.md",
-			"redirect_url": "mr-learning-base-01",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-01",
 			"redirect_document_id": true
 		},
 		{
