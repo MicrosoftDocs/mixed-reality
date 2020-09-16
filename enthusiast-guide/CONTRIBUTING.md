@@ -5,6 +5,10 @@ author: mattwojo
 ms.author: mattwoj
 ms.date: 03/21/2018
 ms.topic: article
+ms.prod: Windows Mixed Reality
+keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Feedback, Feedback Hub, bugs
+appliesto:
+    - Windows 10
 ---
 
 # Contributing to the Mixed Reality Enthusiast Guide
