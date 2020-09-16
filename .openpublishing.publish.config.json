@@ -1,9 +1,23 @@
 {
   "docsets_to_publish": [
     {
+      "docset_name": "enthusiast-guide",
+      "build_source_folder": "enthusiast-guide",
+      "build_output_subfolder": "enthusiast-guide",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
       "docset_name": "mixed-reality-docs",
-      "build_source_folder": "mixed-reality-docs",
-      "build_output_subfolder": "mixed-reality-docs",
+      "build_source_folder": "mixed-reality-docs/mr-dev-docs",
+      "build_output_subfolder": "mixed-reality-docs/mr-dev-docs",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
