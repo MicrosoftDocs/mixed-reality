@@ -6,7 +6,8 @@ ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, software components, release history, release notes, version historyappliesto:
+keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, software components, release history, release notes, version history
+appliesto:
     - Windows 10
 ---
 
