@@ -1,8 +1,13 @@
 ---
 title: Mixed Reality software overview and release history
 description: An overview of the major software components for Windows Mixed Reality, and their release history
+author: hferrone
+ms.author: v-hferrone
+ms.date: 09/15/2020
 ms.topic: article
-keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, software components, release history, release notes, version history
+ms.localizationpriority: high
+keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, software components, release history, release notes, version historyappliesto:
+    - Windows 10
 ---
 
 

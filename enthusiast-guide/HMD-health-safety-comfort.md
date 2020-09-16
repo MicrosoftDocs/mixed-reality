@@ -1,8 +1,14 @@
 ---
 title: Windows Mixed Reality immersive headset health, safety, and comfort
 description: Best practices for using Windows Mixed Reality immersive headsets.
+author: hferrone
+ms.author: v-hferrone
+ms.date: 09/15/2020
 ms.topic: article
+ms.localizationpriority: high
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Comfort, Safety, Health, Immersive, Headsets
+appliesto:
+    - Windows 10
 ---
 
 # Windows Mixed Reality immersive headset health, safety, and comfort

@@ -1,8 +1,14 @@
 ---
 title: Headset Display FAQs
 description: Advanced Windows Mixed Reality troubleshooting for headset display issues that goes beyond our standard consumer support documentation.
+author: hferrone
+ms.author: v-hferrone
+ms.date: 09/15/2020
 ms.topic: article
+ms.localizationpriority: high
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support
+appliesto:
+    - Windows 10
 ---
 
 # Headset display FAQs

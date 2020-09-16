@@ -1,8 +1,13 @@
 ---
 title: Installation errors
 description: Advanced Windows Mixed Reality troubleshooting that goes beyond our standard consumer support documentation.
+author: hferrone
+ms.author: v-hferrone
+ms.date: 09/15/2020
 ms.topic: article
-keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support, Installation
+ms.localizationpriority: highkeywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support, Installation
+appliesto:
+    - Windows 10
 ---
 
 # Installation errors

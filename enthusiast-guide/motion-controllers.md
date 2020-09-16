@@ -1,8 +1,14 @@
 ---
 title: How motion controllers work
 description: Learn about motion controllers—hardware accessories that offer precise and responsive tracking of movement using the sensors in the immersive headset.
+author: hferrone
+ms.author: v-hferrone
+ms.date: 09/15/2020
 ms.topic: article
+ms.localizationpriority: high  
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, controller, Motion controller
+appliesto:
+    - Windows 10
 ---
 
 
