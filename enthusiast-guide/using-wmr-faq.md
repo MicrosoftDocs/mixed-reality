@@ -68,14 +68,14 @@ If your motion controllers aren’t working properly, aren't connecting, or if y
 * If the Settings app is open to the Bluetooth & other devices page, close it.
 
 ## I’m experiencing discomfort when I use my headset
-<!-- TODO: Use Health and safety interlink -->
-For general info about comfort in Windows Mixed Reality, see [Windows Mixed Reality immersive headset health, safety, and comfort](). For details about your specific headset, check with the headset manufacturer.
+
+For general info about comfort in Windows Mixed Reality, see [Windows Mixed Reality immersive headset health, safety, and comfort](wmr-health-safety-comfort.md). For details about your specific headset, check with the headset manufacturer.
 
 ## My visuals are choppy, load slowly, or don’t look good
-<!-- TODO: Use Windows Mixed Reality PC hardware guidelines interlink -->
+
 If your mixed reality visuals don’t look their best, try the following.
 
-* Make sure your headset is plugged into the correct graphics card on your PC. Some PCs have both integrated and discrete graphics cards. The discrete card will generally provide the best performance. [Learn more about PC hardware]().
+* Make sure your headset is plugged into the correct graphics card on your PC. Some PCs have both integrated and discrete graphics cards. The discrete card will generally provide the best performance. [Learn more about PC hardware](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md).
 * Close unused apps on your desktop.
 * Adjust your headset’s fit: move it lower and higher or left and right, and make sure it fits snugly.
 * Adjust your headset's visual settings (**Settings > Mixed reality > Headset display**). When **Visual quality** is set to **Automatic**, we'll choose the best mixed reality experience for your PC. For an experience with more visual detail, set **Visual quality** to **High**. If your visuals are choppy, you may want to select a lower setting.
@@ -110,7 +110,7 @@ If you're using a 2.4GHz Wi-Fi connection, your motion controllers might slow do
 
 <!-- TODO: Use Windows Mixed Reality PC hardware guidelines interlink -->
 * Switch to a 5GHz Wi-Fi connection, if one is available. [Learn more](https://support.microsoft.com/help/4000461)
-* Use a separate Bluetooth adapter to connect your motion controllers to your PC. [See recommended adapters]()
+* Use a separate Bluetooth adapter to connect your motion controllers to your PC. [See recommended adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 
 ## What is the Experience options setting?
 

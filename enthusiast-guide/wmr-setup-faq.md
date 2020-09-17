@@ -20,7 +20,7 @@ Here’s some info to help troubleshoot problems you might run into when you set
 Try the following:
 * Go to **Settings  > Update & security > Windows Update** and make sure Windows Update is turned on. Then, download and install any updates that are waiting to be installed.
 * Make sure your PC is connected to the internet and has at least 2GB of free storage space.
-* Restart your PC and try again.
+* Restart your PC and try again. You may need to repeat several times or run the Windows Update troubleshooter to clear pending updates. 
 
 > [!NOTE]
 > * If you're on an enterprise managed network, check with your administrator. They might need to enable Windows Mixed Reality. Looking for the IT pro instructions? See **[this article](https://docs.microsoft.com/windows/application-management/manage-windows-mixed-reality)**.
@@ -68,7 +68,7 @@ Try the following:
 * Turn the controllers off and on again while holding them in front of you. Press and hold the Windows  button for 4 seconds to turn a controller off, then press and hold it again for 2 seconds to turn it on. 
 * Go to **Settings  > Devices > Bluetooth & other devices** on your PC and make sure they’re paired (you should see them listed on the page).
 
-[Learn more about motion controllers](https://support.microsoft.com/en-us/help/4040517)
+[Learn more about motion controllers](controllers-in-wmr.md)
 
 ## I get a message that says, “Connect your headset” even though I’ve plugged in my headset
 
@@ -118,7 +118,7 @@ Windows Mixed Reality is available in the following languages. If your PC is set
 * Spanish (Mexico)
 * Spanish (Spain)
 
-The Windows Mixed Reality on-screen keyboard is English (United States) only. To enter text in another language, use a physical keyboard connected to your PC. You can also use dictation in one of the supported Windows Mixed Reality languages listed above—just select **microphone**  on the on-screen keyboard.
+You can also use dictation in one of the supported Windows Mixed Reality languages listed above—just select **microphone**  on the on-screen keyboard.
 
 Windows Mixed Reality is also available in the following languages without speech commands or dictation features:
 
@@ -129,7 +129,7 @@ Windows Mixed Reality is also available in the following languages without speec
 
 ## When I plug in my headset, nothing happens—Mixed Reality Portal doesn’t open.
 
-Mixed Reality Portal, the app that takes you through Windows Mixed Reality setup, is designed to open automatically when you plug in a compatible headset. If it doesn’t open, go to **Start** and type **Mixed Reality Portal** in the **Search**  box to open the app from there. If you can’t find Mixed Reality Portal, that might mean you need to [update to the latest version of Windows](https://support.microsoft.com/help/12373).
+Mixed Reality Portal, the app that takes you through Windows Mixed Reality setup, is designed to open automatically when you plug in a compatible headset. If it doesn’t open, go to **Start** and type **Mixed Reality Portal** in the **Search**  box to open the app from there. If you can’t find Mixed Reality Portal, that might mean you need to [update to the latest version of Windows](https://support.microsoft.com/help/12373) or that your headset isn't correctly connected to the PC.
 
 ## I can’t hear any sound in my headset, or sound is playing through my computer.
 
@@ -155,14 +155,17 @@ Some audio headsets have a physical button to mute and unmute the microphone. If
 
 Try this:
 
-* Unplug the HDMI cable and the USB cable from the head mount display and then plug them back in.
+* Unplug the display cable and the USB cable from the head mount display and then plug them back in.
 
 ## My Wi-Fi slows down when I use Windows Mixed Reality
 
 If you're using a 2.4 GHz Wi-Fi connection, your motion controllers might slow down your Wi-Fi. Try one of the following:
 
 * Switch to a 5 GHz Wi-Fi connection, if one is available. Learn more
-* Use a separate Bluetooth adapter to connect your motion controllers to your PC. [See recommended adapters](https://support.microsoft.com/help/4039260)
+* Use a separate Bluetooth adapter to connect your motion controllers to your PC. [See recommended adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+
+> [!NOTE]
+> Newer headsets pair directly to the controllers through a built-in Bluetooth chip and shouldn’t experience this issue. 
 
 ## See also
 * [Ask the community](https://answers.microsoft.com)
