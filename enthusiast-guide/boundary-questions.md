@@ -1,6 +1,6 @@
 ---
 title: Boundary FAQs
-description: Advanced Windows Mixed Reality troubleshooting that goes beyond our standard consumer support documentation.
+description: Advanced Windows Mixed Reality troubleshooting for boundary questions that goes beyond our standard consumer support documentation.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -17,7 +17,7 @@ appliesto:
 
 A boundary defines the area you can move around in while wearing your Windows Mixed Reality headset. It's important to create a boundary to help you avoid the obstacles you can't see while in headset. The boundary looks like a white outline inside mixed reality and appears when you come close to it. When you see it, slow your movements, and avoid crossing the boundary or extending your limbs beyond it.
 
-The area inside the boundary should be free of furniture, low-hanging light fixtures, ceiling fans, etc. so you won't bump into or trip over anything. [Learn about health and safety in Windows Mixed Reality](HMD-health-safety-comfort.md).
+The area inside the boundary should be free of furniture, low-hanging light fixtures, ceiling fans, etc. so you won't bump into or trip over anything. [Learn about health and safety in Windows Mixed Reality](wmr-health-safety-comfort.md).
 
 ## How do I create a boundary?
 

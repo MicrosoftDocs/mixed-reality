@@ -1,6 +1,6 @@
 ---
 title: Headset connectivity FAQs
-description: Advanced Windows Mixed Reality troubleshooting that goes beyond our standard consumer support documentation.
+description: Advanced Windows Mixed Reality headset connectivity troubleshooting that goes beyond our standard consumer support documentation.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020

@@ -100,7 +100,7 @@ If you see "HoloLens Sensors" with a yellow exclamation mark in Device Manager, 
 On a laptop with integrated graphics and an Nvidia GPU, an error occurs after a period of time that appears to cause a previous frame to display after the next frame, resulting in double vision the faster you move your head in a yaw, pitch, or roll movement. The issue appears to be on drivers after Nvidia Graphics Driver 436.48.  Installing this driver will fix the issue until Nvidia solves the problem in the updated drivers. For a direct install of Nvidia Graphics Driver 436.48, visit [NVIDIA](https://www.nvidia.com/Download/driverResults.aspx/152007/en-us).
 
 ## I’m uncomfortable in my headset.
-For general info about comfort in Windows Mixed Reality, see [Windows Mixed Reality immersive headset health, safety, and comfort](HMD-health-safety-comfort.md). For details about your specific headset, check with the headset manufacturer.
+For general info about comfort in Windows Mixed Reality, see [Windows Mixed Reality immersive headset health, safety, and comfort](wmr-health-safety-comfort.md). For details about your specific headset, check with the headset manufacturer.
 
 ## How can I get a clearer view in my headset?
 Try adjusting the fit of your headset. Move it up and down, or left and right, on your face and adjust the straps so it feels snug.

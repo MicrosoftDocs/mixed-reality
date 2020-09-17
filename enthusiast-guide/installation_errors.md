@@ -1,6 +1,6 @@
 ---
 title: Installation errors
-description: Advanced Windows Mixed Reality troubleshooting that goes beyond our standard consumer support documentation.
+description: Advanced Windows Mixed Reality installation error troubleshooting that goes beyond our standard consumer support documentation.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
