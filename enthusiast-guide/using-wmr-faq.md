@@ -19,7 +19,7 @@ Still need help? For advanced troubleshooting, check out this article.
 
 ## I see a message that says “Lost tracking” or “We don’t have a boundary for this space.”
 
-Select **Start > Mixed Reality Portal** on your desktop. Select **Menu**, then select **Run setup** to create a new boundary.
+Select **Start > Mixed Reality Portal** on your desktop. Select **Menu**, then select **Run setup** to create a new boundary. Windows Mixed Reality supports multiple locations and will identify the space you are in at startup as long as the room hasn’t significantly changed.  
 
 
 ## I can’t hear any sound, or the sound is coming from my computer instead of my headset
@@ -53,17 +53,19 @@ You can also temporarily turn off the boundary from Mixed Reality Portal: select
 If your motion controllers aren’t working properly, aren't connecting, or if you don’t see an image of the controllers when you’re wearing your headset, try the following:
 
 * Make sure your controllers are turned on. To turn them on, press and hold the **Windows** button for 2 seconds.
-* Select **Settings > Devices > Bluetooth & other devices** on your PC and make sure the controllers are listed as paired. If they’re not, you’ll need to pair them. [Learn how](controllers-in-wmr.md)
 * Select **Start > Mixed Reality Portal** on your PC and then select **Menu** You should see your motion controllers listed, along with a status message:
     * Ready – The controllers are all set.
     * Lost tracking – Mixed Reality Portal can’t find your controllers. Hold them in front of your headset and restart them by pressing the **Windows** button for 4 seconds, then again for 2 seconds.
     * Low battery – Replace the controller batteries.
-* If you have other Bluetooth devices paired with your PC, such as headphones or gamepads, try removing some. Select **Settings > Devices > Bluetooth & other devices** on your PC, select the devices, and then select **Remove device**.
-* Remove Bluetooth headphones and speakers in **Settings > Devices > Bluetooth & other devices**, and turn the devices off. 
-* If you’re using a USB Bluetooth adapter, make sure it’s plugged into a black USB 2.0 port and is plugged in as far away as possible from any other wireless transmitters or USB flash drives, including the USB connector for your headset. 
-* If your PC has built-in Bluetooth and you’re having connection problems, try using a USB Bluetooth adapter instead. (To do this, you’ll need to also turn off your built-in Bluetooth radio in [Device Manager](https://support.microsoft.com/help/4026149), and then pair your other Bluetooth devices with the new adapter.)
+* If using Wi-Fi, try connecting your PC to a 5GHz Wi-Fi network to reduce wireless interference. 
+* For newer headsets that pair directly to the controllers, select the **“…”** button in **Mixed Reality Portal** and choose **Set up controllers**. This will take you to the headset app for pairing the controllers to the headset.  
+* For older headsets that don’t have built-in Bluetooth for the controllers to pair directly:  
+    * Select Settings  > Devices > Bluetooth & other devices on your PC and make sure the controllers are listed as paired. If they’re not, you’ll need to pair them. 
+    * If you have other Bluetooth devices paired with your PC, such as headphones or gamepads, try removing some. Select **Settings > Devices > Bluetooth & other devices** on your PC, select the devices, and then select **Remove device**.
+    * Remove Bluetooth headphones and speakers in **Settings > Devices > Bluetooth & other devices**, and turn the devices off. 
+    * If you’re using a USB Bluetooth adapter, make sure it’s plugged into a black USB 2.0 port and is plugged in as far away as possible from any other wireless transmitters or USB flash drives, including the USB connector for your headset. 
+    * If your PC has built-in Bluetooth and you’re having connection problems, try using a USB Bluetooth adapter instead. (To do this, you’ll need to also turn off your built-in Bluetooth radio in [Device Manager](https://support.microsoft.com/help/4026149), and then pair your other Bluetooth devices with the new adapter.)
 * If the Settings app is open to the Bluetooth & other devices page, close it.
-* Make sure your PC is connected to a 5GHz Wi-Fi network.
 
 ## I’m experiencing discomfort when I use my headset
 <!-- TODO: Use Health and safety interlink -->
@@ -116,13 +118,13 @@ The Experience options setting (**Settings > Mixed reality > Headset display > E
 
 Here are the options:
 
-* Automatic: Windows Mixed Reality will determine the best experience for your hardware configuration. For most people, this is the best choice to start with.
+* Automatic or Let Windows decide: Windows Mixed Reality will determine the best experience for your hardware configuration. For most people, this is the best choice to start with.
 * 60Hz: Sets the refresh rate to 60Hz and turns off certain features, such as video capture and preview in Mixed Reality Portal.
-* 90Hz: Sets the refresh rate to 90Hz.
+* 90Hz: Sets the refresh rate to 90Hz if your headset can run at that speed. If cable issues prevent the headset from running at 90Hz you may see an error at startup with this mode selected. 
 
 ## I see a message that says "Put on your headset" even though I have my headset on
 
-When you put on your headset, Windows Mixed Reality needs a bit of time to reload your space. This can take a few seconds. If this message doesn't go away, make sure the protective sticker has been removed from the proximity sensor, which is on the inside of the headset, between the lenses. If the sticker has been removed and you're still having problems, contact your headset manufacturer.
+When you put on your headset, Windows Mixed Reality needs a bit of time to reload your space. This can take a few seconds. If this message doesn't go away, make sure the protective sticker has been removed from the proximity sensor, which is on the inside of the headset, between the lenses. If the sticker has been removed and you're still having problems, contact your headset manufacturer. Pressing **Win+Y** on your keyboard will manually trigger the headset to run if the proximity sensor is not triggering automatically. 
 
 Still need help? For advanced troubleshooting, check out [this article](troubleshooting-windows-mixed-reality.md).
 
