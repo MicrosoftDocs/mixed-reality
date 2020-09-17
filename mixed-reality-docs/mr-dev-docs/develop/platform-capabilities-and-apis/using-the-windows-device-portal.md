@@ -10,7 +10,6 @@ ms.localizationpriority: high
 ---
 
 
-
 # Using the Windows Device Portal
 
 <table>
@@ -36,7 +35,7 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 7. [Scroll down](../../design/gaze-and-commit.md#composite-gestures) and enable **Device Portal**.
 8. If you are setting up Windows Device Portal so you can deploy apps to this HoloLens over USB or Wi-Fi, click **Pair** to [generate a pairing PIN](using-visual-studio.md). Leave the Settings app at the PIN popup until you enter the PIN into Visual Studio during your first deployment.
 
-   ![Enabling developer mode in the Settings app for Windows Holographic](images/deviceportalsettings.png)
+![Enabling developer mode in the Settings app for Windows Holographic](images/using-windows-portal-img-01.jpg)
 
 ## Connecting over Wi-Fi
 
@@ -45,7 +44,7 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
    * Going to **Settings > Network & Internet > Wi-Fi > Advanced Options**.
    * Going to **Settings > Network & Internet** and selecting **Hardware properties**.
 
-![HoloLens 2 settings](images/windows-device-portal-img-16.png)
+![HoloLens 2 settings](images/using-windows-portal-img-02.jpg)
 
 3. From a web browser on your PC, go to https://<YOUR_HOLOLENS_IP_ADDRESS>
    * The browser will display the following message: "There's a problem with this website's security certificate". This happens because the certificate which is issued to the Device Portal is a test certificate. You can ignore this certificate error for now and proceed.
@@ -102,7 +101,7 @@ Each HoloLens generates a unique self-signed certificate for its SSL connection.
 
 ### Home
 
-![Windows Device Portal home page on Microsoft HoloLens](images/windows-device-portal-home-page-1000px.png)<br>
+![Windows Device Portal home page on Microsoft HoloLens](images/using-windows-portal-img-04.png)<br>
 *Windows Device Portal home page on Microsoft HoloLens*
 
 Your Device Portal session starts at the Home page. Access other pages from the navigation bar along the left side of the home page.
@@ -126,7 +125,7 @@ The home page shows the following info:
 
 ### 3D View
 
-![3D View page in Windows Device Portal on Microsoft HoloLens](images/3dview-1000px.png)<br>
+![3D View page in Windows Device Portal on Microsoft HoloLens](images/using-windows-portal-img-05.png)<br>
 *3D View page in Windows Device Portal on Microsoft HoloLens*
 
 Use the 3D View page to see how HoloLens interprets your surroundings. Navigate the view by using the mouse:
@@ -154,7 +153,7 @@ Map Manager allows you to share maps across devices, which can be used to setup 
 
 To access the Map Manager, log into the Device Portal and select **Mixed Reality -> Map Manager**: 
 
-![Map manager page in Windows Device Portal](images/map-manager-img-01.png)
+![Map manager page in Windows Device Portal](images/using-windows-portal-img-06.png)
 *Map Manager page in Windows Device Portal on Microsoft HoloLens*
 
 #### Exporting and importing maps
@@ -169,7 +168,7 @@ To import maps and anchors, click **Upload a map file** and **Upload an anchor f
 
 ### Mixed Reality Capture
 
-![Mixed Reality Capture page in Windows Device Portal on Microsoft HoloLens](images/windows-device-portal-mixed-reality-capture-page-1000px.png)<br>
+![Mixed Reality Capture page in Windows Device Portal on Microsoft HoloLens](images/using-windows-portal-img-07.png)<br>
 *Mixed Reality Capture page in Windows Device Portal on Microsoft HoloLens*
 
 Use the Mixed Reality Capture page to save media streams from the HoloLens.
@@ -226,7 +225,7 @@ All settings on this page apply to captures taken using Windows Device Portal, b
 
 ### Performance Tracing
 
-![Performance Tracing page in Windows Device Portal on Microsoft HoloLens](images/windows-device-portal-performance-tracing-page-1000px.png)<br>
+![Performance Tracing page in Windows Device Portal on Microsoft HoloLens](images/using-windows-portal-img-08.png)<br>
 *Performance Tracing page in Windows Device Portal on Microsoft HoloLens*
 
 Capture [Windows Performance Recorder](https://msdn.microsoft.com/library/windows/hardware/hh448205.aspx) (WPR) traces from your HoloLens.
@@ -239,14 +238,14 @@ Captured ETL files can be opened for analysis in [Windows Performance Analyzer](
 
 ### Processes
 
-![Processes page in Windows Device Portal on Microsoft HoloLens](images/windows-device-portal-running-processes-page-1000px.png)<br>
+![Processes page in Windows Device Portal on Microsoft HoloLens](images/using-windows-portal-img-09.png)<br>
 *Processes page in Windows Device Portal on Microsoft HoloLens*
 
 Shows details about currently running processes. This includes both apps and system processes.
 
 ### System Performance
 
-![System Performance page in Windows Device Portal on Microsoft HoloLens](images/windows-device-portal-system-performance-page-1000px.png)<br>
+![System Performance page in Windows Device Portal on Microsoft HoloLens](images/using-windows-portal-img-10.png)<br>
 *System Performance page in Windows Device Portal on Microsoft HoloLens*
 
 Shows real-time graphs of system diagnostic info, like power usage, frame rate, and CPU load.
@@ -263,7 +262,7 @@ These are the available metrics:
 
 ### Apps
 
-![Apps page in Windows Device Portal on Microsoft HoloLens](images/windows-device-portal-apps-page-1000px.png)<br>
+![Apps page in Windows Device Portal on Microsoft HoloLens](images/using-windows-portal-img-11.png)<br>
 *Apps page in Windows Device Portal on Microsoft HoloLens*
 
 Manages the apps that are installed on the HoloLens.
@@ -275,14 +274,14 @@ Manages the apps that are installed on the HoloLens.
 
 ### App Crash Dumps
 
-![App Crash Dumps page in Windows Device Portal on Microsoft HoloLens](images/windows-device-portal-dev-apps-crash-dumps-page-1000px.png)<br>
+![App Crash Dumps page in Windows Device Portal on Microsoft HoloLens](images/using-windows-portal-img-12.png)<br>
 *App Crash Dumps page in Windows Device Portal on Microsoft HoloLens*
 
 This page allows you to collect crash dumps for your side-loaded apps. Check the **Crash Dumps Enabled** checkbox for each app for which you want to collect crash dumps. Return to this page to collect crash dumps. Dump files can be [opened in Visual Studio for debugging](https://msdn.microsoft.com/library/d5zhxt22.aspx).
 
 ### File Explorer
 
-![File Explorer page in Windows Device Portal on Microsoft HoloLens](images/fileexplorer-1000px.png)<br>
+![File Explorer page in Windows Device Portal on Microsoft HoloLens](images/using-windows-portal-img-13.png)<br>
 *File Explorer page in Windows Device Portal on Microsoft HoloLens*
 
 Use the file explorer to browse, upload, and download files. You can work with files in the Documents folder, Pictures folder, and in the local storage folders for apps that you deployed from Visual Studio or the Device Portal.
@@ -292,11 +291,13 @@ Use the file explorer to browse, upload, and download files. You can work with f
 >[!NOTE]
 >Kiosk mode is only available with the [Microsoft HoloLens Commercial Suite](../../commercial-features.md).
 
+![Kiosk mode page in Windows Device Portal on Microsoft HoloLens](images/using-windows-portal-img-14.png)
+
 Check the [Set up HoloLens in kiosk mode](https://docs.microsoft.com/hololens/hololens-kiosk#set-up-kiosk-mode-using-the-windows-device-portal-windows-10-version-1607-and-version-1803) article in Windows IT Pro Center for up-to-date instructions on enabling kiosk mode via Windows Device Portal.
 
 ### Logging
 
-![Logging page in Windows Device Portal on Microsoft HoloLens](images/windows-device-portal-logging-page-1000px.png)<br>
+![Logging page in Windows Device Portal on Microsoft HoloLens](images/using-windows-portal-img-15.png)<br>
 *Logging page in Windows Device Portal on Microsoft HoloLens*
 
 Manages realtime Event Tracing for Windows (ETW) on the HoloLens.
@@ -321,7 +322,7 @@ For example, you can specify the criteria *(Task Name contains 'Foo' or 'Bar') A
 
 ### Simulation
 
-![Simulation page in Windows Device Portal on Microsoft HoloLens](images/windows-device-portal-simulation-page-1000px.png)<br>
+![Simulation page in Windows Device Portal on Microsoft HoloLens](images/using-windows-portal-img-16.png)<br>
 *Simulation page in Windows Device Portal on Microsoft HoloLens*
 
 Allows you to record and play back input data for testing.
@@ -332,7 +333,7 @@ Allows you to record and play back input data for testing.
 
 ### Networking
 
-![Networking page in Windows Device Portal on Microsoft HoloLens](images/windows-device-portal-networking-page-1000px.png)<br>
+![Networking page in Windows Device Portal on Microsoft HoloLens](images/using-windows-portal-img-17.png)<br>
 *Networking page in Windows Device Portal on Microsoft HoloLens*
 
 Manages Wi-Fi connections on the HoloLens.
@@ -342,7 +343,7 @@ Manages Wi-Fi connections on the HoloLens.
 
 ### Virtual Input
 
-![Virtual Input page in Windows Device Portal on Microsoft HoloLens](images/windows-device-portal-virtual-input-page-1000px.png)<br>
+![Virtual Input page in Windows Device Portal on Microsoft HoloLens](images/using-windows-portal-img-18.png)<br>
 *Virtual Input page in Windows Device Portal on Microsoft HoloLens*
 
 Sends keyboard input from the remote machine to the HoloLens.
