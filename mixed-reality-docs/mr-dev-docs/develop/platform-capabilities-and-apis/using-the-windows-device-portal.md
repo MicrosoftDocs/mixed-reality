@@ -14,7 +14,7 @@ ms.localizationpriority: high
 
 <table>
 <tr>
-<th>Feature</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"><a href="../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Feature</th><th style="width:150px"><a href="../../hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px">
 </tr><tr>
 <td> Windows Device Portal</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
 </tr>
@@ -32,6 +32,10 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 4. Select the **Update** menu item.
 5. Select the **For developers** menu item.
 6. Enable **Developer Mode**.
+
+> [!IMPORTANT]
+> If you're in multi-user and not an admin, the ability to enter Developer Mode may be grayed out. Please ensure that you are an **[admin on the device](https://docs.microsoft.com/hololens/security-adminless-os)**.
+
 7. [Scroll down](../../design/gaze-and-commit.md#composite-gestures) and enable **Device Portal**.
 8. If you are setting up Windows Device Portal so you can deploy apps to this HoloLens over USB or Wi-Fi, click **Pair** to [generate a pairing PIN](using-visual-studio.md). Leave the Settings app at the PIN popup until you enter the PIN into Visual Studio during your first deployment.
 
