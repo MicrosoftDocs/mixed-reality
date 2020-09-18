@@ -60,7 +60,7 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 3. From a web browser on your PC, go to [https://127.0.0.1:10080](https://127.0.0.1:10080).
 
 > [!NOTE]
-> If you're having issues with USB connectivity double check that the USB Device Connectivity optional component is installed as part of your **[tool package](install-the-tools.md#installation-checklist)**.
+> If you're having issues with USB connectivity double check that the USB Device Connectivity optional component is installed as part of your **[tool package](../install-the-tools.md#installation-checklist)**.
 
 ## Connecting to an emulator
 
