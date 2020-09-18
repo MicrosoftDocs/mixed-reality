@@ -42,11 +42,11 @@ Your first task is to create a function blueprint that resets a chess piece to i
 Now that the function is setup correctly, your next task is to create a button that fires it off when touched. 
 
 
-1.	Click **Add New > Blueprint Class**, expand the **All Classes** section, and search for **BP_SimpleButton**. 
+1.	Click **Add New > Blueprint Class**, expand the **All Classes** section, and search for **BP_ButtonHololens2**. 
     * Name it **ResetButton** and double click to open the Blueprint
 
 > [!NOTE]
-> **BP_SimpleButton** is a 3D button Blueprint Actor that's part of the UX Tools plugin.
+> **BP_ButtonHololens2** is a 3D button Blueprint Actor that's part of the UX Tools plugin.
 
 ![Subclass the new Blueprint from the HoloLens 2 style button](images/unreal-uxt/5-subclass.PNG)
 
