@@ -64,11 +64,11 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 
 ### Moving files over USB
 
-You can move files from your PC to your HoloLens by without any additional setup:
+You can move files from your PC to your HoloLens without any additional setup.
 1. Connect your PC to your HoloLens with a USB cord
 2. Drag your files into **PC\\[Your_HoloLens_Device_Name]\Internal Storage** on your desktop
 3. Open the **Start Menu** and select **All apps > File Explorer** on your HoloLens
-a
+
 > [!NOTE]
 > You may need to select **This device** on the left side of the panel to navigate away from "Recently used" to locate your files. 
 
