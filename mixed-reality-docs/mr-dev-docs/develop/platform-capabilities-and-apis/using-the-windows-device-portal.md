@@ -55,12 +55,12 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 
 ## Connecting over USB
 
-1. [Install the tools](../install-the-tools.md) to make sure you have Visual Studio Update 1 with the Windows 10 developer tools installed on your PC. This enables USB connectivity.
+1. [Install the tools](../install-the-tools.md) to make sure you have Visual Studio with the Windows 10 developer tools installed on your PC to enable USB connectivity.
 2. Connect your HoloLens to your PC with a micro-USB cable for HoloLens (1st Gen) or USB-C for HoloLens 2.
 3. From a web browser on your PC, go to [https://127.0.0.1:10080](https://127.0.0.1:10080).
 
-> [!NOTE]
-> If you're having issues with USB connectivity double check that the USB Device Connectivity optional component is installed as part of your **[tool package](../install-the-tools.md#installation-checklist)**.
+> [!IMPORTANT]
+> If you're having issues with USB connectivity double check that the USB Device Connectivity optional component is installed as part of your **[Visual Studio tool package](../install-the-tools.md#installation-checklist)**.
 
 ## Connecting to an emulator
 
