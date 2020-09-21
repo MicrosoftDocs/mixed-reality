@@ -62,6 +62,16 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 > [!IMPORTANT]
 > If you're having issues with USB connectivity double check that the USB Device Connectivity optional component is installed as part of your **[Visual Studio tool package](../install-the-tools.md#installation-checklist)**.
 
+### Moving files over USB
+
+You can move files from your PC to your HoloLens by without any additional setup by:
+1. Connecting your PC to your HoloLens with a USB cord
+2. Dragging and dropping the files you want to copy into the **PC\[Your HoloLens Device Name]]\Internal Storage** folder on your desktop
+3. Open the **Start Menu** and select **All apps > File Explorer** 
+
+> [!NOTE]
+> You may need to select **This device** on the left side of the panel to navigate away from "Recently used" to locate your files. 
+
 ## Connecting to an emulator
 
 You can also use the Device Portal with your emulator. To connect to the Device Portal, use the [toolbar](using-the-hololens-emulator.md). Click on this icon:
