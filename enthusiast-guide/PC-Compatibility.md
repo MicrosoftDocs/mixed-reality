@@ -5,7 +5,6 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 09/16/2020
 ms.topic: article
-ms.localizationpriority: high
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, compatible, compatibility, PC, system requirements
 appliesto:
     - Windows 10

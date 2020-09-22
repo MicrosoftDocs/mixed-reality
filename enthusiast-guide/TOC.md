@@ -46,4 +46,4 @@
 ### [Mixed Reality software overview and release history](mixed-reality-software.md)
 ### [How motion controllers work](motion-controllers.md)
 ### [How inside-out tracking works](tracking-system.md)
-### [Headset health, safety, and comfort](HMD-health-safety-comfort.md)
+### [Headset health, safety, and comfort](wmr-health-safety-comfort.md)
