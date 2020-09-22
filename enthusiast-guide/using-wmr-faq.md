@@ -5,11 +5,11 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
-ms.localizationpriority: high
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Feedback, Feedback Hub, bugs
 appliesto:
     - Windows 10
 ---
+
 
 # Using Windows Mixed Reality FAQ
 
