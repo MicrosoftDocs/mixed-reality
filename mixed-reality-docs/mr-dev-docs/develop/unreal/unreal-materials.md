@@ -23,7 +23,7 @@ If you need to provide tiling of UVs on your material, you should use Customized
 
 You should set blend mode to opaque unless there is a strong reason to do otherwise. Masked and Translucent materials are slow. [Details here](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html).
 
-![Material settings in Unreal](images/unreal-materials-img-02.jpg)
+![Changing blend mode](images/unreal-materials-img-02.jpg)
 
 ## Updating lighting for mobile
 
