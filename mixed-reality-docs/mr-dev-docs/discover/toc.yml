@@ -6,6 +6,8 @@
   href: hologram.md 
 - name: Expand your design process
   href: case-study-expanding-the-design-process-for-mixed-reality.md
+- name: Running the MRTK Examples Hub 
+  href: running-examples-hub.md
 - name: HoloLens hardware
   items:
   - name: HoloLens 2 hardware details
