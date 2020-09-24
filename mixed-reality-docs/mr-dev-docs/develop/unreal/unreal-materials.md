@@ -17,7 +17,7 @@ Materials can make or break performance in Unreal Engine. This page acts as a qu
 
 If you need to provide tiling of UVs on your material, you should use CustomizedUVs rather than modifying the UV of the texture node directly. CustomizedUVs allow UV manipulation to happen in the Vertex shaders rather than Pixel shader. [Details here](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html).
 
-<!-- TODO: Get better images for this section -->
+![Material settings in Unreal](images/unreal-materials-img-01.png)
 
 ## Changing Blend Mode
 
@@ -65,7 +65,7 @@ The material instance created via the Content Browser (**right-click→Create Ma
 
 [More info here](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html)
 
-![Creating material instances in Unreal](images/unreal-materials-img-08.jpg)
+![Creating material instances in Unreal](images/unreal-materials-img-08.png)
 
 Keep an eye on the complexity of your materials/shaders. You can view the cost of your Material on various platforms by clicking on the Platform Stats icon.
 
@@ -83,5 +83,6 @@ You can get a quick idea of the relative complexity of your shader via the Shade
 ![Material complexity in Unreal](images/unreal-materials-img-10.png)
 
 ## See also
-<!-- TODO: Add additional links -->
-* 
+* [Mobile materials](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html)
+* [View modes](https://docs.unrealengine.com/Engine/UI/LevelEditor/Viewports/ViewModes/index.html)
+* [Material instances](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html)
