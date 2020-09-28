@@ -88,7 +88,7 @@
                 href: unity/tutorials/unity-spatial-audio-ch4.md
               - name: 5. Using reverb to add distance to spatial audio
                 href: unity/tutorials/unity-spatial-audio-ch5.md
-          - name: Spatial audio tutorials
+          - name: Azure Cloud Services tutorials
             items: 
               - name: 1. Azure Cloud Services for HoloLens 2
                 href: unity/tutorials/mr-learning-azure-01.md
