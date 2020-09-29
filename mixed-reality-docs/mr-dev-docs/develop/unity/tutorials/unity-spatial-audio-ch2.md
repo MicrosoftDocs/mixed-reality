@@ -72,5 +72,6 @@ Try out your app on a HoloLens 2, or in the Unity editor. In the app, you can to
 
 When testing in the Unity editor, press the space bar and scroll with the scroll wheel to activate hand simulation. For more info, see the [MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene).
 
-Continue to [Chapter 3](unity-spatial-audio-ch3.md) to add a video to your app, and spatialize the audio from the video.
+> [!div class="nextstepaction"]
+> [Chapter 3](unity-spatial-audio-ch3.md)
 

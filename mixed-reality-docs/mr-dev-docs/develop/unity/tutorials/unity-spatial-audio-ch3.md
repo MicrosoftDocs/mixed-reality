@@ -93,5 +93,6 @@ After these changes, the **Inspector** pane for the **Video Player** will look l
 ## Next steps
 Try out your app on a HoloLens 2 or in the Unity editor. You'll see and hear the video, and the audio from the video will be spatialized.
 
-Continue to [Chapter 4](unity-spatial-audio-ch4.md) to use the button to enable and disable spatialization at run time.
+> [!div class="nextstepaction"]
+> [Chapter 4](unity-spatial-audio-ch4.md) 
 

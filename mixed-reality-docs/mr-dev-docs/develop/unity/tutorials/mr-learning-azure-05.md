@@ -183,7 +183,7 @@ Now run the application again and this time ask **find me a tracked object**, th
 
 ## Congratulations
 
-In this tutorial you learned how Azure Bot Framework can be used to interact with the application via conversation with natural language. You learned how to develope your own bot and what all the moving pieces are to get it running,
+In this tutorial you learned how Azure Bot Framework can be used to interact with the application via conversation with natural language. You learned how to develop your own bot and what all the moving pieces are to get it running,
 
 ## Conclusion
 

@@ -53,4 +53,5 @@ Tutorials in this series:
 > [!CAUTION]
 > The recommended Unity version for this tutorial series is Unity 2019.3.15. This supersedes any Unity version requirements stated in the prerequisites linked above.
 
-[Next Tutorial: 2. Setting up Photon Unity Networking](mr-learning-sharing-02.md)
+> [!div class="nextstepaction"]
+> [Next Tutorial: 2. Setting up Photon Unity Networking](mr-learning-sharing-02.md)

@@ -37,6 +37,7 @@ Once you’re connected, click the drop-down arrow to the right of the **Play** 
 
 >[!NOTE]
 >If this is your first time packaging an Unreal app for HoloLens, you'll need to download supporting files from the Epic Launcher.
+>- Go to **Editor Preferences > General > Source Code > Source Code Editor** and check that Visual Studio 2019 is selected.
 >- Go to the **Library** tab in the Epic Games Launcher, select the dropdown arrow next to **Launch** >and click **Options**.
 >- Under **Target Platforms**, select **HoloLens 2** and click **Apply**.
 >![Change target platform in project settings](images/unreal-uxt/6-installationoptions.PNG)

@@ -110,4 +110,5 @@ You just learned how to modify a setting in the MRTK profile. As you can see, to
 
 In this tutorial, you learned how to clone, customize, and configure MRTK profiles and settings.
 
-[Next Tutorial: 4. Positioning objects in the scene](mr-learning-base-04.md)
+> [!div class="nextstepaction"]
+> [Next Tutorial: 4. Positioning objects in the scene](mr-learning-base-04.md)

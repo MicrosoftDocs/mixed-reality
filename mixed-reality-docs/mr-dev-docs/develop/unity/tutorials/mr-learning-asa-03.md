@@ -90,4 +90,5 @@ In this tutorial, you learned how to persist Azure Spatial Anchors between app s
 
 In the next tutorial, you will learn how to provide users with real-time feedback. This feedback will include information about Anchor creation, the quality of environment understanding, and the Azure session's state. Without feedback, users may not know whether an anchor has successfully been uploaded to Azure, whether the quality of the environment is sufficient for anchor creation, or the current state.
 
-[Next Tutorial: 4. Displaying Azure Spatial Anchor feedback](mr-learning-asa-04.md)
+> [!div class="nextstepaction"]
+> [Next Tutorial: 4. Displaying Azure Spatial Anchor feedback](mr-learning-asa-04.md)

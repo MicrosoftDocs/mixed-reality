@@ -86,5 +86,7 @@ On desktop versions of Windows, spatial audio is disabled by default. Enable it 
 > This setting is only required if you plan to test your project in the Unity editor.
 
 ## Next steps
-Continue on to [Unity spatial audio chapter 2](unity-spatial-audio-ch2.md) to spatialize button interaction sounds.
+
+> [!div class="nextstepaction"]
+> [Unity spatial audio chapter 2](unity-spatial-audio-ch2.md)
 
