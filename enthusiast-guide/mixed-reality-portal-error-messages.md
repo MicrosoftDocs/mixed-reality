@@ -1,11 +1,10 @@
 ---
 title: Mixed Reality Portal error messages
-description: Advanced Windows Mixed Reality troubleshooting that goes beyond our standard consumer support documentation.
+description: Advanced Windows Mixed Reality portal messages troubleshooting that goes beyond our standard consumer support documentation.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
-ms.localizationpriority: high
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support, Mixed Reality Portal
 appliesto:
     - Windows 10

@@ -18,7 +18,7 @@ Welcome to this series of tutorials focused on bringing **Azure Cloud** services
 > [!NOTE]
 > This tutorial series will focus on the **HoloLens 2** but due the cross-platform nature of Unity, most of your learnings will also apply for Desktop and Smartphone applications.
 
-In this first tutorial, [Introducing Azure Cloud Services for HoloLens 2](mr-learning-azure-01.md), you begin by explaining the goals of the application, briefly introduce you to each Azure Cloud service and set up the unity project.
+In this first tutorial, you begin by explaining the goals of the application, briefly introduce you to each Azure Cloud service and set up the unity project.
 
 In the second tutorial, [Integrating Azure Storage](mr-learning-azure-02.md), you start off by integrating Azure Storage as the persistence solution for the demo application, learn the differences between Blob Storage and Table Storage, prepare the needed project resources, setup the scene and verify the read, update and delete data operations.
 
@@ -211,4 +211,5 @@ In this tutorial, you were introduced to the tutorial series, learned about the 
 
 In the next lesson, you will use Azure storage as a cloud based persistence solution for storing data and images.
 
-[Next tutorial: 2. Integrating Azure storage](mr-learning-azure-02.md)
+> [!div class="nextstepaction"]
+> [Next tutorial: 2. Integrating Azure storage](mr-learning-azure-02.md)

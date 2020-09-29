@@ -149,4 +149,5 @@ Once Unity has finished the PUN setup process, the PUN Setup menu will display t
 
 You have successfully created a PUN app and connected it to your Unity project. Your next step is to allow connections with other users so that multiple users can see each other.
 
-[Next Tutorial: 3. Connecting multiple users](mr-learning-sharing-03.md)
+> [!div class="nextstepaction"]
+> [Next Tutorial: 3. Connecting multiple users](mr-learning-sharing-03.md)

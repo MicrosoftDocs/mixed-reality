@@ -5,7 +5,6 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
-ms.localizationpriority: high
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Feedback, Feedback Hub, bugs
 appliesto:
     - Windows 10
@@ -14,31 +13,26 @@ appliesto:
 
 # Controllers in Windows Mixed Reality
 
-<!-- NEED VIDEO AND CAPTION -->
-
 Windows Mixed Reality is designed to work best with mixed reality motion controllers, which provide natural, precise interactions with no need to install hardware on your walls.
 
-You can also use an Xbox controller or a mouse and keyboard. And remember, you can always get around in mixed reality [using just your voice](https://support.microsoft.com/help/4041322).
+You can also use an Xbox controller or a mouse and keyboard. And remember, you can always get around in mixed reality [using just your voice](using-speech-in-wmr.md).
 
 Having trouble with your motion controllers? [Get help](using-wmr-faq.md#im-having-trouble-with-my-motion-controllers)
 
 ## Motion controller setup
 
-Motion controllers use Bluetooth to connect to your PC. If your PC doesn’t have Bluetooth, you can buy a USB 4.0 Bluetooth micro adapter and plug that into the PC.
+Most headsets come pre-paired directly to the headset, but some early headsets require the motion controllers to be paired to your PC with Bluetooth 4.0. When you connect your immersive headset for the first time, you'll be walked through turning on your motion controllers during setup. But if you need to re-pair them later on, here’s how: 
 
-When you connect your immersive headset for the first time, you'll be walked through pairing your motion controllers. But if you need to pair them later on, here’s how:
-
-1. Insert 2 AA batteries into each controller. Don’t put the battery cover back on yet, though.
-2. Press and hold the Windows button for 2 seconds to turn on each controller. They’ll buzz when they turn on.
-3. Put the controllers in pairing mode. The pairing button is inside the battery compartment. Press and hold it until the controller lights start flashing.
-4. On your PC, go to **Settings  > Devices  > Bluetooth & other devices** and then select **Add Bluetooth or other device  > Bluetooth**.
-5. When the controllers appear, select them to pair.
+1. Launch **Mixed Reality Portal** with your headset connected.  
+2. In the lower-left corner select **… > Pair controllers**.  
+3. Insert 2 AA batteries into each controller and follow the instructions provided on-screen.
 
 > [!NOTE]
-> * If another set of motion controllers is paired with your PC, you'll need to unpair those controllers before pairing new ones.
-> * If you paired a set of motion controllers with your current PC and then paired them with a second PC, you'll need to unpair and re-pair them with the current PC before using them again.
+> * For controllers that pair directly to your PC, you’ll need to put them into pairing mode by turning them on and then pressing the pairing button inside the battery compartment until the lights start flashing.  
+> 
+> * Motion controllers only support being paired to one computer or PC at a time. If you need to use them with a different headset, you’ll need to go through the pairing process .  
 
-<!-- NEED IMAGE AND CAPTION -->
+![Bluetooth controller pairing](images/controllers-in-wmr-img-01.png)
 
 [Get help connecting](wmr-setup-faq.md#my-motion-controllers-arent-working)
 
@@ -58,9 +52,8 @@ Here’s how to get around in mixed reality with motion controllers, an Xbox gam
 > [!TIP]
 > To switch input between mixed reality and your desktop, press **Windows logo key + Y** on your PC keyboard.
 
-<!-- NEED IMAGE AND CAPTION -->
+![Motion controller button mapping](images/controllers-in-wmr-img-02.png)
 
-<!-- NEED TABLE -->
 |  To do this  |  Motion controllers  | Gamepad | Mouse + keyboard |
 | --- | --- | --- | --- |
 | Teleport | Press the thumbstick forward, then point the controller where you want to go. Release the thumbstick. | Press the left thumbstick forward, then look where you want to go. Release the thumbstick. | Click and hold the right button, then point the mouse where you want to go. Release the button. |

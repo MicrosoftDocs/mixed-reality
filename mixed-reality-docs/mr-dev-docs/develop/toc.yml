@@ -1,9 +1,9 @@
 - name: Introduction to Mixed Reality development
   href: development.md
+- name: Introduction to Cloud Services
+  href: mixed-reality-cloud-services.md
 - name: Install the tools
   href: install-the-tools.md
-- name: Cloud Services
-  href: mixed-reality-cloud-services.md
 - name: Unity
   items:
   - name: Unity development overview

@@ -187,4 +187,5 @@ Press the Play button to enter Game mode, then press-and-hold the right mouse bu
 
 In this tutorial, you learned how to create a simple user interface using MRTK's provided button and menu prefabs alongside Unity's TextMeshPro component and how to configure the buttons to trigger events when they are pressed. You also learned how to add dynamic tooltip UI elements to provide the user with additional information.
 
-[Next Tutorial: 7. Interacting with 3D objects](mr-learning-base-07.md)
+> [!div class="nextstepaction"]
+> [Next Tutorial: 7. Interacting with 3D objects](mr-learning-base-07.md)

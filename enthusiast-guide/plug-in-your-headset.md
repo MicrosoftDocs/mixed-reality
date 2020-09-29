@@ -5,7 +5,6 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
-ms.localizationpriority: high
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, headset, setup, get started
 appliesto:
     - Windows 10

@@ -51,4 +51,5 @@ In the Hierarchy window, select the **Feedback** object still, then in the Inspe
 
 In this tutorial, you learned how to create a UI panel. It displays the current status of the Azure Spatial Anchors experience for providing users with real-time feedback.
 
-[Next Tutorial: 5. Azure Spatial Anchors for Android and iOS](mr-learning-asa-05.md)
+> [!div class="nextstepaction"]
+> [Next Tutorial: 5. Azure Spatial Anchors for Android and iOS](mr-learning-asa-05.md)

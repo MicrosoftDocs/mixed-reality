@@ -4,7 +4,6 @@ description: Advanced Windows Mixed Reality troubleshooting that goes beyond our
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
-ms.localizationpriority: high
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support, Uninstalling Windows Mixed Reality, Supported Languages
 appliesto:
     - Windows 10

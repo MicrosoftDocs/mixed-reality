@@ -49,4 +49,5 @@ You have implemented speech commands powered by Azure. Run the application on yo
 
 In the next tutorial, you will learn how to translate speech using Azure speech translation.
 
-[Next Tutorial: 3. Adding the Azure Cognitive Services speech translation component](mrlearning-speechSDK-ch3.md)
+> [!div class="nextstepaction"]
+> [Next Tutorial: 3. Adding the Azure Cognitive Services speech translation component](mrlearning-speechSDK-ch3.md)

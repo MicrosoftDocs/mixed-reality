@@ -39,4 +39,5 @@ If you now enter Game mode, you can test the speech translation by first pressin
 
 Your project can now successfully translate the words you speak into several different languages. Run the application on your device to ensure the feature is working properly.
 
-[Next tutorial: 4. Setting up intent and natural language understanding](mrlearning-speechSDK-ch4.md)
+> [!div class="nextstepaction"]
+> [Next tutorial: 4. Setting up intent and natural language understanding](mrlearning-speechSDK-ch4.md)
