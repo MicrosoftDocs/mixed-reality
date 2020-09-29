@@ -211,4 +211,5 @@ In this tutorial, you were introduced to the tutorial series, learned about the 
 
 In the next lesson, you will use Azure storage as a cloud based persistence solution for storing data and images.
 
-[Next tutorial: 2. Integrating Azure storage](mr-learning-azure-02.md)
+> [!div class="nextstepaction"]
+> [Next tutorial: 2. Integrating Azure storage](mr-learning-azure-02.md)

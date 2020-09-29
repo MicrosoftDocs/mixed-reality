@@ -190,4 +190,5 @@ In this tutorial, you learned the fundamentals of Azure Spatial Anchors. This tu
 
 In the next tutorial, you will learn how to save Azure anchor IDs to your HoloLens 2 for retrieval, even after the app is restarted, and how to transfer anchor IDs between multiple devices to achieve spatial alignment.
 
-[Next Tutorial: 3. Saving, retrieving and sharing Azure Spatial Anchors](mr-learning-asa-03.md)
+> [!div class="nextstepaction"]
+> [Next Tutorial: 3. Saving, retrieving and sharing Azure Spatial Anchors](mr-learning-asa-03.md)

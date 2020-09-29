@@ -227,4 +227,5 @@ Select **Build > Deploy Solution** to deploy to your device without having the a
 
 You've now deployed your first HoloLens app. As you walk around, you should see a spatial mapping mesh covering the surfaces that are perceived by the HoloLens. Additionally, you should see indicators on your hands and fingers for hand tracking and a frame rate counter for keeping an eye on app performance. These features are just a few foundational pieces included with MRTK. In the upcoming tutorials, you'll add content to your scene to explore the capabilities of HoloLens and the MRTK.
 
-[Next Tutorial: 3. Configuring the MRTK profiles](mr-learning-base-03.md)
+> [!div class="nextstepaction"]
+> [Next Tutorial: 3. Configuring the MRTK profiles](mr-learning-base-03.md)

@@ -95,4 +95,5 @@ In this tutorial, you learned how Azure Spatial Anchors could save and retrieve 
 
 In the final tutorial, you will learn how to use the **Azure Bot Service** to add natural language as a new interaction method for our application.
 
-[Next tutorial: 5. Integrating Azure Bot Service with LUIS](mr-learning-azure-05.md)
+> [!div class="nextstepaction"]
+> [Next tutorial: 5. Integrating Azure Bot Service with LUIS](mr-learning-azure-05.md)

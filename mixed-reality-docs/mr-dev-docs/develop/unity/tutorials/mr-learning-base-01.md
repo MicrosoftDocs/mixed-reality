@@ -47,4 +47,6 @@ Tutorials in this series are meant to be sequential, so please go through them i
 > [!CAUTION]
 > The recommended Unity version for this tutorial series is Unity 2019.3.15. This supersedes any Unity version requirements stated in the prerequisites linked above.
 
-[Next Tutorial: 2. Initializing your project and deploying your first application](mr-learning-base-02.md)
+> [!div class="nextstepaction"]
+> [Next Tutorial: 2. Initializing your project and deploying your first application](mr-learning-base-02.md)
+

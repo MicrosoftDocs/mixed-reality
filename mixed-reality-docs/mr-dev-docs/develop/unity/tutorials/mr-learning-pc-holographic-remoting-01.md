@@ -197,4 +197,5 @@ In this tutorial, you learned to build a mixed reality experience demonstrating 
 
 In the next lesson, you will learn how to create a Holographic Remoting application for PC to connect HoloLens 2 at any point, providing a way to Visualize 3D content in mixed reality.
 
-[Next Lesson: 2. Create Holographic Remoting application](mr-learning-pc-holographic-remoting-02.md)
+> [!div class="nextstepaction"]
+> [Next Lesson: 2. Create Holographic Remoting application](mr-learning-pc-holographic-remoting-02.md)
