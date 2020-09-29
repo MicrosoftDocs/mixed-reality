@@ -17,7 +17,7 @@ Welcome to the Getting Started tutorial series! Over the course of these tutoria
 
 Tutorials in this series are meant to be sequential, so please go through them in the correct order:
 
-1. [Introduction](mr-learning-base-01.md)
+1. [Introduction](mr-learning-base-01.md) (You're already here)
 2. [Initializing your project and deploying your first application](mr-learning-base-02.md)
 3. [Configuring the MRTK profiles](mr-learning-base-03.md)
 4. [Positioning objects in the scene](mr-learning-base-04.md)

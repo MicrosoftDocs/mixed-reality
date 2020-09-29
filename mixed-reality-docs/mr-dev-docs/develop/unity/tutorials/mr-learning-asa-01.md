@@ -17,7 +17,7 @@ Welcome to the Azure Spatial Anchors tutorials! Through this tutorial series, yo
 
 Tutorials in this series:
 
-1. [Introduction](mr-learning-asa-01.md)
+1. [Introduction](mr-learning-asa-01.md) (You're already here)
 2. [Getting started with Azure Spatial Anchors](mr-learning-asa-02.md)
 3. [Saving, retrieving, and sharing Azure Spatial Anchors](mr-learning-asa-03.md)
 4. [Displaying Azure Spatial Anchor feedback](mr-learning-asa-04.md)
