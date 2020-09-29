@@ -121,7 +121,7 @@ Rename the second button to **TapToPlace**, then in the Inspector window, config
 In the Hierarchy window, select the **RoverAssembly** object, then in the Inspector window, configure the **Tap To Place (Script)** component as follows:
 
 * Uncheck the checkbox next to its name to make it inactive by default
-* In the **On Placing Started ()** event section, click the **+** icon to add a new event:
+* In the **On Placing Stopped ()** event section, click the **+** icon to add a new event:
 * Assign the RoverExplorer > **RoverAssembly** object to the **None (Object)** field
 * From the **No Function** dropdown, select **TapToPlace** > **bool Enabled** to update this property value when the event is triggered
 * Verify that the argument checkbox is **unchecked**
