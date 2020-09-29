@@ -29,7 +29,7 @@ You can find more details on materials in the [Unreal Engine documentation](http
 
 ## Changing Blend Mode
 
-You should set blend mode to opaque unless there is a strong reason to do otherwise. Masked and Translucent materials are slow. [Details here](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html).
+You should set blend mode to opaque unless there is a strong reason to do otherwise. Masked and Translucent materials are slow. You can find more details on materials in the [Unreal Engine documentation](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html).
 
 ![Changing blend mode](images/unreal-materials-img-02.jpg)
 
@@ -63,30 +63,24 @@ If your material doesn't require reflections or shine, then setting this option 
 
 The following are not "settings" as much as they are best practices related to Materials.
 
-When creating parameters, prefer to use "Static Parameters" wherever possible. Static Switches can be used to remove an entire branch of a material with no runtime cost. Instances can have different values, making it possible to have a templated shader setup with no performance loss. The downside, however, is that this creates many permutations that will cause a lot of shader recompilation. Try to minimize the number of static parameters in the material and the number of permutations of those static parameters that are actually used. [Details here](https://docs.unrealengine.com/Engine/Rendering/Materials/ExpressionReference/Parameters/index.html#staticswitchparameter).
+When creating parameters, prefer to use "Static Parameters" wherever possible. Static Switches can be used to remove an entire branch of a material with no runtime cost. Instances can have different values, making it possible to have a templated shader setup with no performance loss. The downside, however, is that this creates many permutations that will cause a lot of shader recompilation. Try to minimize the number of static parameters in the material and the number of permutations of those static parameters that are actually used. You can find more details on rendering material parameters in the [Unreal Engine documentation](https://docs.unrealengine.com/Engine/Rendering/Materials/ExpressionReference/Parameters/index.html#staticswitchparameter).
 
 ![Best practices for material settings](images/unreal-materials-img-07.jpg)
 
 When creating Material Instances, preference should be given to **Material Instance Constant** over Material Instance Dynamic. **Material Instance Constant** is an instanced Material that calculates only once, prior to runtime.
 
-The material instance created via the Content Browser (**right-click→Create Material Instance**) is a Material Instance Constant. Material Instance Dynamic are created via code. 
-
-[More info here](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html)
+The material instance created via the Content Browser (**right-click > Create Material Instance**) is a Material Instance Constant. Material Instance Dynamic are created via code. You can find more details on material instances in the [Unreal Engine documentation](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html).
 
 ![Creating material instances in Unreal](images/unreal-materials-img-08.png)
 
-Keep an eye on the complexity of your materials/shaders. You can view the cost of your Material on various platforms by clicking on the Platform Stats icon.
-
-[More info here](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html)
+Keep an eye on the complexity of your materials/shaders. You can view the cost of your Material on various platforms by clicking on the Platform Stats icon. You can also find more details on materials in the [Unreal Engine documentation](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html).
 
 ![Creating material instance dynamic settings in Unreal](images/unreal-materials-img-09.png)
 
-You can get a quick idea of the relative complexity of your shader via the Shader Complexity View mode.
+You can get a quick idea of the relative complexity of your shader via the Shader Complexity [View mode]((https://docs.unrealengine.com/Engine/UI/LevelEditor/Viewports/ViewModes/index.html)).
 
 * View Mode Hotkey: Alt + 8
 * Console command: viewmode shadercomplexity
-
-[More info here](https://docs.unrealengine.com/Engine/UI/LevelEditor/Viewports/ViewModes/index.html)
 
 ![Material complexity in Unreal](images/unreal-materials-img-10.png)
 
