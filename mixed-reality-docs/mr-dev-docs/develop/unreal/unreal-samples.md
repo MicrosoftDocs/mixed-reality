@@ -32,6 +32,7 @@ A subset of the samples use interactive UX components such as buttons and slider
 
 Our partners at Epic Games have released an excellent HoloLens 2 sample project on the Unreal Marketplace. 
 
-> [!NOTE] This experience must be streamed from a high-end PC to the headset.
+> [!NOTE] 
+> This experience must be streamed from a high-end PC to the headset.
 
 * [Mission AR](https://docs.unrealengine.com/en-US/Resources/Showcases/MissionAR/index.html)
