@@ -15,9 +15,17 @@ Materials can make or break performance in Unreal Engine. This page acts as a qu
 
 ## Using CustomizedUVs
 
-If you need to provide tiling of UVs on your material, you should use CustomizedUVs rather than modifying the UV of the texture node directly. CustomizedUVs allow UV manipulation to happen in the Vertex shaders rather than Pixel shader. [Details here](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html).
+If you need to provide tiling of UVs on your material, you should use CustomizedUVs rather than modifying the UV of the texture node directly. CustomizedUVs allow UV manipulation to happen in the Vertex shaders rather than Pixel shader. 
 
-![Material settings in Unreal](images/unreal-materials-img-01.png)
+![Material settings in Unreal](images/unreal-materials-img-01c.png)
+
+You can find more details on materials in the [Unreal Engine documentation](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html) and best practice examples in the screenshots below:
+
+[ ![Recommended material settings in Unreal](images/unreal-materials-img-01.png) ](images/unreal-materials-img-01.png#lightbox)
+*Recommended material setup*
+
+[ ![Non recommended material settings in Unreal](images/unreal-materials-img-01b.png) ](images/unreal-materials-img-01b.png#lightbox)
+*Non-recommended material setup*
 
 ## Changing Blend Mode
 
