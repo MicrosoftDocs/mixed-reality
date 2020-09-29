@@ -77,7 +77,7 @@ Keep an eye on the complexity of your materials/shaders. You can view the cost o
 
 ![Creating material instance dynamic settings in Unreal](images/unreal-materials-img-09.png)
 
-You can get a quick idea of the relative complexity of your shader via the Shader Complexity [View mode]((https://docs.unrealengine.com/Engine/UI/LevelEditor/Viewports/ViewModes/index.html)).
+You can get a quick idea of the relative complexity of your shader via the Shader Complexity [View mode](https://docs.unrealengine.com/Engine/UI/LevelEditor/Viewports/ViewModes/index.html).
 
 * View Mode Hotkey: Alt + 8
 * Console command: viewmode shadercomplexity
