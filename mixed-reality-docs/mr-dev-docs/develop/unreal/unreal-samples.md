@@ -19,7 +19,7 @@ keywords: unreal, samples, UX Tools plugin, MRTK-Unreal, mixedrealitytoolkit, mi
 Most of the open source sample apps made by our team can be found in the Unreal Mixed Reality Samples [repository](https://github.com/microsoft/MixedReality-Unreal-Samples) on GitHub. We have provided the source code so that developers can look at, learn from, and reuse our projects.
 
 * [HoloLens2Example](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/HoloLens2Example) 
-* [HoloPipes](https://github.com/microsoft/MixedReality-Unreal-HoloPipes) - Download from the [Microsoft Store](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0) in HoloLens 2
+* [HoloPipes](https://github.com/microsoft/MixedReality-Unreal-HoloPipes) - Download from the [Microsoft Store](https://www.microsoft.com/en-us/p/holopipes/9mszb3nnrxn9) in HoloLens 2
 
 ### Made with the Mixed Reality Toolkit for Unreal
 
