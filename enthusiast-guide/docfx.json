@@ -1,0 +1,63 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "**/docfx.json",
+          "_repo.en-us/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices.md"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.svg",
+          "**/*.pdf"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**",
+          "_themes/**",
+          "_themes.pdf/**",
+          "**/docfx.json",
+          "_repo.en-us/**"
+        ]
+      }
+    ],
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "breadcrumb_path": "/windows/mixed-reality/enthusiast-guide/breadcrumb/toc.json",
+      "extendBreadcrumb": true,
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/mixedreality-enthusiast-guide",
+      "feedback_product_url": "https://developer.microsoft.com/en-us/windows/mixed-reality/give_us_feedback",
+      "titleSuffix": "Enthusiast Guide",
+      "author": "hferrone",
+      "ms.author": "v-hferrone",
+      "ms.date": "09/16/2020",
+      "ms.prod": "mixed-reality",
+      "ms.technology": "enthusiast-guide",
+      "keywords": "mixed reality, virtual reality, vr, hololens"
+    },
+    "fileMetadata": {},
+    "template": [],
+    "dest": "enthusiast-guide",
+    "markdownEngineName": "markdig"
+  }
+}

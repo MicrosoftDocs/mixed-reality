@@ -1,9 +1,0 @@
-- name: Docs
-  tocHref: /
-  href: /
-  items:
-  - name: Windows
-    href: /windows/
-    items:
-     - name: Mixed Reality
-       href: /windows/mixed-reality/
