@@ -15,20 +15,6 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "maquette",
-      "build_source_folder": "maquette",
-      "build_output_subfolder": "maquette",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "mixed-reality-docs",
       "build_source_folder": "mixed-reality-docs/mr-dev-docs",
       "build_output_subfolder": "mixed-reality-docs/mr-dev-docs",
