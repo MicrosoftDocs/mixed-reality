@@ -109,5 +109,6 @@ After these changes, the **Interactable** component will look like this:
 ## Next steps
 Try out your app on a HoloLens 2 or in the Unity editor. In the app, you can now touch the button to activate and deactivate spatialization on the video. When testing in the Unity editor, press the space bar and scroll with the scroll wheel to activate hand simulation. 
 
-Continue on to [Chapter 5](unity-spatial-audio-ch5.md) to add perceived distance to sound sources using reverb.
+> [!div class="nextstepaction"]
+> [Chapter 5](unity-spatial-audio-ch5.md) 
 

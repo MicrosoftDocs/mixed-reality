@@ -108,4 +108,5 @@ In this tutorial you learned how Azure storage services can be used to persist u
 
 In the next tutorial you will learn how to use Azure Custom Vision to detect images associated with a *Tracked Object*.
 
-[Next tutorial: 3. Integrating Azure Custom Vision](mr-learning-azure-03.md)
+> [!div class="nextstepaction"]
+> [Next tutorial: 3. Integrating Azure Custom Vision](mr-learning-azure-03.md)

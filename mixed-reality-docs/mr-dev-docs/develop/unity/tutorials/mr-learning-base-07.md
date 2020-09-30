@@ -166,4 +166,5 @@ To learn more about the Bounding Box component and its associated properties, yo
 
 In this tutorial, you learned how to enable near and far manipulation for 3D objects and how to limit the allowed types of manipulation. You also learned how to add bounding boxes around 3D objects to make it easier to control the object manipulation.
 
-[Next Tutorial: 8. Using eye-tracking](mr-learning-base-08.md)
+> [!div class="nextstepaction"]
+> [Next Tutorial: 8. Using eye-tracking](mr-learning-base-08.md)

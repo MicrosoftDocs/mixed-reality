@@ -94,4 +94,5 @@ If you now enter Game mode and then press-and-hold the right mouse button while 
 
 In this tutorial, you learned how to enable eye-tracking for HoloLens 2 and how to add eye-tracking to objects to trigger actions when the user looks at the objects.
 
-[Next Tutorial: 9. Using speech commands](mr-learning-base-09.md)
+> [!div class="nextstepaction"]
+> [Next Tutorial: 9. Using speech commands](mr-learning-base-09.md)
