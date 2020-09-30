@@ -69,7 +69,7 @@ At this point in your development journey you might be looking to add services o
 
 [!INCLUDE[](../includes/unity-cloud-services-d365.md)]
 
-We also have a [comprehensive list of support documentation for additional Azure services](../mixed-reality-cloud-services.md#standalone-services) that you can add to your Unity projects on a self-serve basis.
+We also have a [comprehensive list of support documentation for additional Azure services](../mixed-reality-cloud-services.md#standalone-unity-services) that you can add to your Unity projects on a self-serve basis.
 
 ## What's next?
 

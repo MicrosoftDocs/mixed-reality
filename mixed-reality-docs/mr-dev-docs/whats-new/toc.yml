@@ -1,5 +1,5 @@
-- name: Learn about Azure Services 
-  href: azure-services.md
+# - name: Learn about Azure Services 
+  # href: azure-services.md
 - name: Get ready for the new Microsoft Edge
   href: new-microsoft-edge.md 
 - name: Programs and events

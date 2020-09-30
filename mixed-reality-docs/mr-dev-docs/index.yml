@@ -24,7 +24,7 @@ highlightedContent:
   items:
     # Card
     - title: What is Mixed Reality?
-      itemType: overview
+      itemType: concept
       url: discover/mixed-reality.md 
     # Card
     - title: Introducing HoloLens 2
@@ -32,24 +32,28 @@ highlightedContent:
       url: https://docs.microsoft.com/hololens/hololens2-hardware
     # Card
     - title: Dynamics 365 Mixed Reality applications
-      itemType: overview
+      itemType: reference 
       url: https://docs.microsoft.com/dynamics365/mixed-reality/
+    # Card
+    - title: Azure Cloud Services
+      itemType: whats-new 
+      url: develop/mixed-reality-cloud-services.md
+    # Card
+    - title: Developers
+      itemType: get-started 
+      url: develop/development.md
+    # Card
+    - title: IT admins
+      itemType: quickstart
+      url: https://docs.microsoft.com/hololens/hololens-requirements
+    # Card
+    - title: VR enthusiasts
+      itemType: how-to-guide
+      url: https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/
     # Card
     - title: Try a sample app
       itemType: sample
       url: develop/unity/samples.md
-    # Card
-    - title: Developers
-      itemType: overview
-      url: develop/development.md
-    # Card
-    - title: IT admins
-      itemType: overview
-      url: https://docs.microsoft.com/hololens/hololens-requirements
-    # Card
-    - title: VR enthusiasts
-      itemType: overview
-      url: https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/
 
 # productDirectory section (optional)
 productDirectory:
