@@ -36,7 +36,7 @@ You have several hardware and emulator options when building Mixed Reality apps 
 
 There are several cloud services that can be integrated into Mixed Reality projects built in Unity, specifically **Azure Remote Rendering** and **Azure Spatial Anchors**. These services can add shared holographic content and real-time 3D rendering to your applications, making them more compelling and immersive for your users.
 
-All of these services are covered over the course of the [Unity development journey](../unity/unity-development-overview.md), which is the **strongly recommended path for learning Mixed Reality with Unity**. You're already on this path, so just keep reading and follow the big blue button at the bottom of the article. However, if you're at a more advanced development stage and already know you want to jump in, check out our [cloud services overview](mixed-reality-cloud-services.md) or go directly to the [services resources](../unity/unity-development-overview.md#5-adding-services).
+All of these services are covered over the course of the [Unity development journey](../unity/unity-development-overview.md), which is the **strongly recommended path for learning Mixed Reality with Unity**. You're already on this path, so just keep reading and follow the big blue button at the bottom of the article. However, if you're at a more advanced development stage and already know you want to jump in, check out our [cloud services overview](../mixed-reality-cloud-services.md) or go directly to the [services resources](../unity/unity-development-overview.md#5-adding-services).
 
 ## Dynamics 365 Guides
 
@@ -92,7 +92,7 @@ You have several hardware, emulator, and streaming options when building Mixed R
 
 When building Mixed Reality apps in Unreal, you have access to a powerful cloud service called **Azure Spatial Anchors**, which you can use to add, persist, and share holographic content across different devices. 
 
-Azure Spatial Anchors is covered over the course of the [Unreal development journey](../unreal/unreal-development-overview.md), which is the **strongly recommended path for learning Mixed Reality with Unreal**. You're already on this path, so just keep reading and follow the big blue button at the bottom of the article. However, if you're at a more advanced development stage and already know you want to jump in, check out our [cloud services overview](mixed-reality-cloud-services.md) or go directly to the [services resources](../unreal/unreal-development-overview.md#5-adding-services).
+Azure Spatial Anchors is covered over the course of the [Unreal development journey](../unreal/unreal-development-overview.md), which is the **strongly recommended path for learning Mixed Reality with Unreal**. You're already on this path, so just keep reading and follow the big blue button at the bottom of the article. However, if you're at a more advanced development stage and already know you want to jump in, check out our [cloud services overview](../mixed-reality-cloud-services.md) or go directly to the [services resources](../unreal/unreal-development-overview.md#5-adding-services).
 
 ## Dynamics 365 Guides
 
