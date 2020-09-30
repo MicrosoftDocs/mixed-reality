@@ -12,6 +12,8 @@ keywords: Mixed Reality, develop, development, HoloLens, cloud services
 
 # Introduction to Cloud Services
 
+![ Azure Spatial Anchors image](../design/images/AzureSpatialAnchors.jpg)
+
 Unlock what every human is an expert at—the three-dimensional, physical world around us—with Azure mixed reality services. Help people create, learn, and collaborate more effectively by capturing and surfacing digital information within the context of their work and world. Bring 3D to mobile devices, headsets, and other untethered devices. Using Azure, help ensure that your most sensitive information is protected.
 
 ## Mixed Reality services
@@ -37,8 +39,6 @@ As an added bonus, ARR doesn't restrict what kind of user interface you can use 
 
 ### Azure Spatial Anchors
 Azure Spatial Anchors, or ASA, is a cross-platform service that allows you to build spatially aware mixed reality applications. With Azure Spatial Anchors, you can map, persist, and share holographic content across multiple devices at real-world scale. 
-
-![ Azure Spatial Anchors image](../design/images/AzureSpatialAnchors.jpg)
 
 ASA is a uniquely tailored solution for common use cases in Mixed Reality, inclulding:
 * **Way-finding**: Where two or more spatial anchors could be connected to create a task list or points of interest a user must interact with.
