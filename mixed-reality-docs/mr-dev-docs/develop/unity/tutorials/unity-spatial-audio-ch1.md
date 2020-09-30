@@ -11,12 +11,15 @@ keywords: mixed reality, unity, tutorial, hololens2, spatial audio
 # Adding spatial audio to your Unity project
 
 Welcome to the spatial audio tutorial for Unity on HoloLens2. This tutorial sequence shows:
-* How to use HRTF offload on HoloLens 2 in Unity
+* How to use head-related transfer function (HRTF) offload on HoloLens 2 in Unity
 * How to enable reverb when using HRTF offload
 
 The [Microsoft Spatializer GitHub repository](https://github.com/microsoft/spatialaudio-unity) has a completed Unity project of this tutorial sequence. 
 
-For our recommendations on when it can be helpful to spatialize sounds, see [spatial sound design](https://docs.microsoft.com/windows/mixed-reality/spatial-sound-design).
+For an understanding about what it means to spatialize sounds using HRTF-based spatialization technologies and recommendations for when it can be helpful, see [spatial sound design](https://docs.microsoft.com/windows/mixed-reality/spatial-sound-design).
+
+## What is HRTF offload?
+Processing audio using HRTF-based algorithms requires a large amount of specialized computation. HoloLens 2 includes dedicated hardware that can be utilized to avoid burdening the application processor, thus "offloading" the processing of HRTF-based algorithms.  The Microsoft spatializer plugin provides an easy way for your application to take advantage of the dedicated HRTF hardware so your application can use more of the application processor for operations other than spatial audio.
 
 ## Objectives
 In this first chapter, you'll:
