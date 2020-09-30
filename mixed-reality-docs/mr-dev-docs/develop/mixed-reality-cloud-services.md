@@ -1,6 +1,6 @@
 ---
 layout: LandingPage
-title: Introduction to Cloud Services
+title: Azure Cloud Services
 description: Mixed reality cloud services resources.
 author: hferrone
 ms.author: v-haferr
@@ -10,7 +10,7 @@ ms.localizationpriority: high
 keywords: Mixed Reality, develop, development, HoloLens, cloud services
 ---
 
-# Introduction to Cloud Services
+# Azure Cloud Services
 
 ![ Azure Spatial Anchors image](../design/images/AzureSpatialAnchors.jpg)
 
