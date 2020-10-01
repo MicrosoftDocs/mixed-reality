@@ -21,11 +21,11 @@ Unlock what every human is an expert at—the three-dimensional, physical world 
 Mixed Reality cloud services like **Azure Remote Rendering** and **Azure Spatial Anchors** help developers build compelling immersive experiences on a variety of platforms. These services allow you to integrate spatial awareness into your projects when you're making applications for 3D training, predictive equipment maintenance, and design review, all in the context of your users’ environments.
 
 ### Azure Remote Rendering
-Azure Remote Rendering, or ARR, is a service that lets you to render highly complex 3D models in real time and stream them to a device. ARR is currently in public preview and can be added to your Unity or Native C++ projects targeting HoloLens 2 or Windows desktop PC.
+Azure Remote Rendering, or ARR, is a service that lets you render highly complex 3D models in real time and stream them to a device. ARR is currently in public preview and can be added to your Unity or Native C++ projects targeting HoloLens 2 or Windows desktop PC.
 
 ![ Remote rendering image](../design/images/RemoteRendering.jpg)
 
-ARR is an essential component of any Mixed Reality application that runs on an untethered device, as they have significantly less computational rendering power. Take the side-by-side image comparison below as an example: the high-fidelity model on the left has over 18 million triangles, while the reduced model on the right has only around 200,000. In scenarios where every detail matters — industrial plant management, design review for assets like truck engines, pre-operative surgery planning, and more — 3D visualization brings that detail to life. It's what helps designers, engineers, doctors, and students better understand complex information and make the right call. But this simplification can result in a loss of important detail that's needed in key business and design decisions.
+ARR is an essential component of any Mixed Reality application that runs on an untethered device, as they have less computational rendering power. Take the following side-by-side engine model comparison as an example: the high-fidelity model on the left has over 18 million triangles, while the reduced model on the right has only around 200,000. In scenarios where every detail matters—industrial plant management, design review for assets like truck engines, pre-operative surgery planning, and more—3D visualization brings that detail to life. It's what helps designers, engineers, doctors, and students better understand complex information and make the right call. But this simplification can result in a loss of important detail that's needed in key business and design decisions.
 
 ![Example of Azure Remote Rendering in Unity showcase app](images/arr-engine.png)
 
@@ -40,7 +40,7 @@ As an added bonus, ARR doesn't restrict what kind of user interface you can use 
 ### Azure Spatial Anchors
 Azure Spatial Anchors, or ASA, is a cross-platform service that allows you to build spatially aware mixed reality applications. With Azure Spatial Anchors, you can map, persist, and share holographic content across multiple devices at real-world scale. 
 
-ASA is a uniquely tailored solution for common use cases in Mixed Reality, inclulding:
+ASA is a uniquely tailored solution for common use cases in Mixed Reality, including:
 * **Way-finding**: Where two or more spatial anchors could be connected to create a task list or points of interest a user must interact with.
 * **Multi-user experiences**: Where users could pass moves back and forth by interacting with objects in the same virtual space.
 * **Persisting virtual content in the real-world**: Where users could place virtual objects in the real-world that are viewable from other supported devices.
@@ -84,7 +84,7 @@ The service can be developed in a host of environments and deployed to a large g
 
 ## Standalone Unity services
 
-The standalone services listed below do not apply to Mixed Reality, but can be helpful in a wide range of development contexts. If you're developing in Unity, each of these services can integrated into your new or existing projects.
+The standalone services listed below don't apply to Mixed Reality, but can be helpful in a wide range of development contexts. If you're developing in Unity, each of these services can be integrated into your new or existing projects.
 
 ### Device support
 <table>
