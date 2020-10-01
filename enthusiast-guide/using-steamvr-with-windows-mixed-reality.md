@@ -69,41 +69,6 @@ To join:
 ### Windows Insider Program
 
 Windows Mixed Reality is a part of Windows 10.  Many fixes and features that affect SteamVR users come with the Windows OS.  If you want to try the latest Windows 10 preview builds, we encourage you to join the [Windows Insider Program](https://insider.windows.com).
-  
-## Enabling controller thumbstick controls in any SteamVR application
-
-**Windows Mixed Reality for SteamVR** has an experimental feature to enable the use of a controller thumbstick for artificial movement in any StreamVR application.  Thumbstick controls simulate real movement as if you were actually walking around your physical space.  This may cause issues for some applications.
-
-To enable thumbstick controls:
-1. Edit "C:\Program Files (x86)\Steam\steamapps\common\MixedRealityVRDriver\resources\settings\default.vrsettings"
-    * Path will be different if **Windows Mixed Reality for SteamVR** was installed to a different library.
-2. Change **thumbstickControlsEnabled** to true as shown in the examples below.
-3. To reverse the handedness of the controls, change **thumbstickControlsReversed** to true.
-4. To increase comfort, this feature defaults to small discrete turns. If you would prefer a smooth turning experience, set **thumbstickTurnSmooth** to true.
-
-**Example 1: Enabling thumbstick controls**
-```
-  "driver_Holographic_Experimental" : {
-        // Some people may experience increased discomfort such as nausea, motion sickness, dizziness,
-        // disorientation, headache, fatigue, or eye strain when using thumbstick controls in Windows Mixed Reality.
-        "thumbstickControlsEnabled" : true,
-        "thumbstickControlsReversed" : false,
-        "thumbstickTurnSmooth" : false,
-        "thumbstickDeadzone" : 0.25
-    }
-```
-    
-**Example 2: Enabling smooth turn**
-```
-  "driver_Holographic_Experimental" : {
-        // Some people may experience increased discomfort such as nausea, motion sickness, dizziness,
-        // disorientation, headache, fatigue, or eye strain when using thumbstick controls in Windows Mixed Reality.
-        "thumbstickControlsEnabled" : true,
-        "thumbstickControlsReversed" : false,
-        "thumbstickTurnSmooth" : true,
-        "thumbstickDeadzone" : 0.25
-    }
-```
 
 ## Enabling motion reprojection for SteamVR Apps
 Windows Mixed Reality for SteamVR has an experimental motion reprojection feature to make 90 FPS reprojection more smooth.
@@ -116,75 +81,35 @@ When motionReprojectionMode is set to "auto", motion reprojection will turn on a
 1.	When using a application resolution greater than 150% you may experience blurring. When using motion reprojection we recommend using a value less than 150%.
 2. Sharp contrast edges or text, especially on in-game HUDs or menus, may look temporarily warped or distorted due to disocclusion.
 3.	SteamVR Home and many other games that do not reliably hit 50-60 FPS on your PC will continue to have a poor experience with this mode.
-4.  Some games have been reported to run at 50% speed or with increased latency (lag). Please report these games through the [Windows Feedback Hub](filing-feedback.md) instructions below.
- 
+4. Some games have been reported to run at 50% speed or with increased latency (lag). Please report these games through the [Windows Feedback Hub](filing-feedback.md) instructions below.
+
 Initially we have experimental support for recent generation NVidia GPUs. We are continuing to iterate on and improve our motion reprojection support on additional GPUs, and we’re eager to hear your feedback.
 
 
-**Supported GPUs:** Nvidia GeForce GTX1060, AMD RX470 or better, with Windows Mixed Reality compatible graphics drivers installed
+**Supported GPUs:** Nvidia GeForce GTX1060, AMD RX470 or better, with Windows Mixed Reality compatible graphics drivers installed.
 
 To enable motion reprojection: 
 1.	Make sure you have opted into the **Windows Mixed Reality for SteamVR Beta** using the instructions above.
-2.	Close SteamVR if it is running.
-3.	Edit "C:\Program Files (x86)\Steam\steamapps\common\MixedRealityVRDriver\resources\settings\default.vrsettings"
-    * Path will be different if Windows Mixed Reality for SteamVR was installed to a different library.
-4.	Add the following line just below "driver_Holographic_Experimental" as shown in Example 1 below.
-    * *"motionReprojectionMode" : "auto",*
-5.	Restart SteamVR with Windows Mixed Reality
+2.	Open the SteamVR dashboard.
+3. Open Windows Mixed Reality for SteamVR Settings by clicking the button on the left side with the Windows Mixed Reality logo.
+4.	In the UI that pops up, select the Graphics tab.
+5. Select "Auto" for "Default SteamVR app motion reprojection mode" to enable automatic motion reprojection.
+
+![Enable LSR & LSR Indicator with SettingsUX](images/settingsux-enable-lsr.gif)
 
 **Motion Reprojection Indicator**
-*motionReprojectionIndicatorEnabled* is a new setting in the configuration file to help diagnose issues with the experimental automatic motion reprojection feature. When set to true, you will see an indicator in the top-left of your headset display during automatic motion reprojection. The color and position of this indicator corresponds to the current motion reprojection mode - see the diagram below for examples.
+
+The motion reprojection indicator helps diagnose issues with the experimental automatic motion reprojection feature. When set to true, you will see an indicator in the top-left of your headset display during automatic motion reprojection. The color and position of this indicator corresponds to the current motion reprojection mode - see the diagram below for examples.
 
 ![mvLSR Indicator](images/mvLSRIndicator.png)
- 
-**Example 1: Enabling automatic motion reprojection**
- ```
-  "driver_Holographic_Experimental" : {
-         "motionReprojectionMode" : "auto", 
-         
-         // motionReprojectionIndicatorEnabled is a new setting in the configuration file to help diagnose issues with the experimental automatic motion reprojection feature. When set to true, you will see an indicator in the headset that corresponds to the current motion reprojection mode:
-        // green = off because application can render at full framerate
-        // light blue = on because application is cpu bound
-        // dark blue = on because application is gpu bound
-        // red = off because application running at less than half framerate, reduce super sampling if enabled
-        // Uncomment the next line to enable the motion reprojection indicator
-        
-        // "motionReprojectionIndicatorEnabled" : true,
-         
-        // Some people may experience increased discomfort such as nausea, motion sickness, dizziness,
-        // disorientation, headache, fatigue, or eye strain when using thumbstick controls in Windows Mixed Reality.
-        "thumbstickControlsEnabled" : false,
-        "thumbstickControlsReversed" : false,
-        "thumbstickTurnSmooth" : false,
-        "thumbstickDeadzone" : 0.25        
-    }
-```
-**Example 2: Enabling motion reprojection at all times**
- ```
-  "driver_Holographic_Experimental" : {
-         "motionReprojectionMode" : "motionvector",      
-         
-        // Some people may experience increased discomfort such as nausea, motion sickness, dizziness,
-        // disorientation, headache, fatigue, or eye strain when using thumbstick controls in Windows Mixed Reality.
-        "thumbstickControlsEnabled" : false,
-        "thumbstickControlsReversed" : false,
-        "thumbstickTurnSmooth" : false,
-        "thumbstickDeadzone" : 0.25        
-    }
-```
-**Example 3: Disabling motion reprojection**
-```
-  "driver_Holographic_Experimental" : {
-        // "motionReprojectionMode" : "auto", 
-        
-        // Some people may experience increased discomfort such as nausea, motion sickness, dizziness,
-        // disorientation, headache, fatigue, or eye strain when using thumbstick controls in Windows Mixed Reality.
-        "thumbstickControlsEnabled" : false,
-        "thumbstickControlsReversed" : false,
-        "thumbstickTurnSmooth" : false,
-        "thumbstickDeadzone" : 0.25
-    }
-```
+
+Green = motion reprojection is off because the application can render at full framerate.
+
+Light blue = motion reprojection is on because the application is cpu bound.
+
+Dark blue = motion reprojection is on because the application is gpu bound.
+
+Red = motion reprojection is off because the application is running at less than half framerate; try reducing super sampling if enabled.
 
 ## Sharing feedback on SteamVR
 
