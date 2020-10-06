@@ -23,7 +23,7 @@ In this tutorial, you will learn how to build your project to Android and iOS de
 In this section, you will upgrade and install the following inbuilt packages:
 
 * AR Foundation 3.1.3
-* Legacy Input Helpers 2.1.4
+* XR Legacy Input Helpers 2.1.4
 * ARCore XR Plugin 3.1.3 for Android support
 * ARKit XR plugin 3.1.3 for iOS support
 

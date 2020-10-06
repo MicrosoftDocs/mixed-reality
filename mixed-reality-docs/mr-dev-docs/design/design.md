@@ -11,109 +11,67 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 # Start designing and prototyping
 
-
 ![mixed reality design abstract](images/design-hero-image.png)
 
-## [Expand your design process](../discover/case-study-expanding-the-design-process-for-mixed-reality.md)
+Mixed Reality applications are unlike anything else in the world today, and designing them is hard work. Not only do you have to account for the new combinations of real and virtual worlds you're creating, but also the new kinds of user experiences they bring to the table. Since Mixed Reality is a big place, we've selected important points along its design spectrum and laid them out below as a series of checkpoints. These are meant to be sequential, but if you've already dipped your feet in feel free to jump to any of the following sections.
 
-As Microsoft launched the HoloLens to an audience of eager developers in 2016, the team had already partnered with studios inside and outside of Microsoft to build the device’s launch experiences. These teams learned by doing, finding both opportunities and challenges in the new field of mixed reality design. [Read more](../discover/case-study-expanding-the-design-process-for-mixed-reality.md)
+## Design checkpoints
 
-<br>
+Use the following checkpoints to bring your application ideas and concepts into the world of mixed reality.
 
----
+### 1. Getting started
 
-## What are the core concepts of an experience?
+Like all journeys, your adventure into designing Mixed Reality applications starts with the basics. We recommend familiarizing yourself with the [What is Mixed Reality](../discover/mixed-reality.md) and [What is a hologram?](../discover/hologram.md) articles to get your mind primed for immersive design. Once you've completed your read-through, you'll be ready to start your Mixed Reality design journey!
 
-### [Types of mixed reality apps](types-of-mixed-reality-apps.md)
-One of the advantages of developing apps for mixed reality is that there is a spectrum of experiences that the platform can support. From fully immersive, virtual environments, to light information layering over a user’s current environment, mixed reality provides a robust set of tools to bring any experience to life.
+|  Checkpoint  |  Outcome  |
+| --- | --- |
+| [Expand your design process](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Get a first-hand look at methods, insights, and design theory gathered from Mixed Reality developers inside and outside of Microsoft |
+| [Types of Mixed Reality apps](types-of-mixed-reality-apps.md) | Decide where your app experience will live on the Mixed Reality spectrum |
 
-<br>
+### 2. Core concepts
 
-### [Consider how the user sees the world - (Holographic frame)](holographic-frame.md)
-Users see the world of mixed reality through a rectangular viewport powered by their headset. On the HoloLens, this rectangular area is called the holographic frame and allows users to see digital content overlaid onto the real world around them.
+Whether you're developing for VR or AR, there are a several core concepts that apply to designing fluid immersive experiences. Understanding the users point of view, positioning objects, and ensuring everyone is comfortable and safe are your top priorities at this stage of your journey. By the end of this section you'll have a solid foundation to carry through into interaction design.
 
-<br>
+![Core concepts example image](images/fragments-750px.jpg)
 
-### [Keeping holograms in place - (Coordinate systems)](coordinate-systems.md)
-At their core, mixed reality apps place holograms in your world to look and sound like real objects. This involves precisely positioning those holograms at places in the world that are meaningful to the user, whether it's their physical room or a virtual realm you've created.
+|  Concept  |  Outcome  |
+| --- | --- |
+| [Holographic frame](holographic-frame.md) | Understand how users see your content overlaid onto the real world when wearing their headsets |
+| [Coordinate systems](coordinate-systems.md) | Learn how to position holograms at places in the world that are meaningful to the user, whether it's their physical room or a virtual realm you've created |
+| [Spatial mapping](spatial-mapping.md) | Anchor objects in the user's world and take advantage of real world depth cues |
+| [Comfort considerations](comfort.md) | Ensure user comfort and safety by creating and presenting immersive content in a way that mimics the natural world |
 
-<br>
+### 3. Interaction design
 
-### [Making holographic objects feel real - (Spatial mapping)](spatial-mapping.md)
-Spatial mapping makes it possible to place objects on real surfaces. This helps anchor objects in the user's world and takes advantage of real world depth cues.
-
-<br>
-
-### [Keep the user comfortable - (Comfort)](comfort.md)
-To ensure maximum comfort on head-mounted displays, it’s important for designers and developers to create and present content in a way that mimics how these cues operate in the natural world.
-
-
----
-
-<br>
+No matter how beautiful and immersive a virtual experience is, it's useless without interaction. This section will walk you through basic interaction models, hand and motion controllers, using voice input, and gathering eye tracking data from your users. By the end of this section you'll be ready to tackle the last big topic on your design journey: user experience.
 
 ![Interaction design factors](images/UX_Hero_Manipulation.jpg)
 
-## Interaction design factors to consider
+|  Concept  |  Outcome  |
+| --- | --- |
+| [Interaction models](interaction-fundamentals.md) | Provide your users with instinctual interactions through hand, eye, and voice input |
+| [Hands and motion controllers](hands-and-tools.md) | Learn how holograms can be touched and manipulated at close range with a users' hands or at long range with precise interactions |
+| [Voice input](voice-input.md) | Use voice commands as input in your immersive apps to control surrounding holograms and environments  |
+| [Eye Tracking](eye-tracking.md) | Add a new level of context and human understanding in a holographic experience by using information about what your users are looking at |
 
+### 4. User experience elements
 
-### [Choose an interaction model for your customer](interaction-fundamentals.md)
-The philosophy of simple, instinctual interactions is interwoven throughout the Mixed Reality platform. We've taken three steps to ensure that application designers and developers can provide their customers with easy and intuitive interactions.
-
-<br>
-
-### [Hands and motion controllers](hands-and-tools.md)
-Users can touch and manipulate holograms directly with one or both hands much like they do with real world objects. Or with motion controllers, you can extend the user's physical capabilities by providing precise interactions across a large range of distances.
-
-<br>
-
-### [Directly commanding objects with voice input](voice-input.md)
-Voice is one of the key forms of input on HoloLens. It allows you to directly command a hologram without having to use gestures. Voice input can be a natural way to communicate your intent.
-
-<br>
-
-### [Leveraging the user's eye-gaze](eye-tracking.md)
-HoloLens 2 allows for a new level of context and human understanding within the holographic experience by providing developers with the ability to use information about what users are looking at.
-
-<br>
-
-
----
-
-<br>
-
+Now that you've mastered basic interactions, you can focus on the finer points of user experience elements and how to adapt them for Mixed Reality's unique environments. You'll cover common behaviors, asset design, object scaling, and typography, all with an eye on making your apps as intuitive for users as possible. This section marks the end of the official Mixed Reality design journey, but there are more resources in the [What's next?](#whats-next) section to keep you going.
 
 ![UX Elements](images/UX_Hero_BoundingBox.jpg)
 
-## User experience elements for mixed reality
+|  Concept  |  Outcome  |
+| --- | --- |
+| [Common controls and behaviors](app-patterns-landingpage.md) | Learn about frequently used spatial interactions and UI building blocks |
+| [Color, light and materials](color-light-and-materials.md) | Design quality assets for Mixed Reality that take color, lighting, and materials into account |
+| [Object scale](scale.md) | Incorporate as many real-world visual cues as possible to us help your users understand where objects are, how big they are, and what they’re made of |
+| [Typography](typography.md) | Use clear, readable text in three-dimensional space to give your users the important information they need |
 
+## What's next?
 
-### [Color, light and materials](color-light-and-materials.md)
-Designing content for mixed reality requires careful consideration of color, lighting, and materials for each of the visual assets used in your experience.
+A designers job is never done, especially when learning to create immersive experiences in a new paradigm. The following sections will take you beyond the beginner level design material you've already completed and into the world of Mixed Reality development. These topics and resources aren't in any sequential order, so feel free to explore!
 
-<br>
-
-### [Suggesting the scale of an object](scale.md)
-A key to displaying content that looks realistic in holographic form is to mimic the visual characteristics of the real world as closely as possible. This means incorporating as many of the visual cues as we can that help us (in the real world) understand where objects are, how big they are, and what they’re made of.
-
-<br>
-
-### [Clear and readable typography](typography.md)
-Just like typography on 2D screens, the goal is to be clear and readable. With the three-dimensional aspect of mixed reality, there is an opportunity to affect the text and the overall user experience in an even greater way.
-
-<br>
-
-### [Common controls and behaviors](app-patterns-landingpage.md)
-Learn about frequently used common spatial interactions and UI building blocks for mixed reality experiences.
-
-
-
-<br>
-
-
----
-
-## Choose a prototyping option  
+### Choose a prototyping option  
 
 :::row:::	
     :::column:::	
@@ -142,9 +100,7 @@ Learn about frequently used common spatial interactions and UI building blocks f
 
 ---
 
-
-
-## What would you like to do next?
+### Additional resources
 
 :::row:::
     :::column:::
@@ -169,9 +125,6 @@ Learn about frequently used common spatial interactions and UI building blocks f
     :::column-end:::
 :::row-end:::
 
-
 <br>
 
 <br>
-
-
