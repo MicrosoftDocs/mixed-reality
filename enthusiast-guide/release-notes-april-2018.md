@@ -27,12 +27,12 @@ To update to the latest release for either device type, open the **Settings** ap
 
 The Windows 10 April 2018 Update includes many improvements for using Windows Mixed Reality immersive (VR) headsets with your desktop PC, such as: 
 
-* **New environments for the mixed reality home** - You can now choose between the Cliff House and the new Skyloft environment by selecting **Places** on the Start menu. We've also added [an experimental feature](./enthusiast-guide/design/add-custom-home-environments.md) that will let you use custom environments you've created.
+* **New environments for the mixed reality home** - You can now choose between the Cliff House and the new Skyloft environment by selecting **Places** on the Start menu. We've also added [an experimental feature](./mixed-reality-docs/dev-docs/design/add-custom-home-environments.md) that will let you use custom environments you've created.
 * **Quick access to mixed reality capture** - You can now take mixed reality photos using a motion controller. Hold the Windows button and then tap the trigger. This works across environments and apps, but will not capture content protected with DRM.
 * **New options for launching and resizing content** - Apps are now automatically placed in front of you when you launch them from the Start menu. You can also now resize 2D apps by dragging the edges and corners of the window.
 * **Easily jump to content with "teleport" voice command** - You can now quickly teleport to be in front of content in the Windows Mixed Reality home by gazing at content and saying "teleport."
-* **[Animated 3D app launchers](./enthusiast-guide/distribute/creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#animation-guidelines) and [decorative 3D objects](./enthusiast-guide/distribute/enable-placement-of-3d-models-in-the-home.md) for the mixed reality home** - You can now add animation to 3D app launchers and allow users to place decorative 3D models from a webpage or 2D app into the Windows Mixed Reality home.
-* **[Improvements to Windows Mixed Reality for SteamVR](./enthusiast-guide/develop/porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md)** - Windows Mixed Reality for SteamVR is out of "early access" with new upgrades, including: haptic feedback when using motion controllers, improved performance and reliability, and improvements to the appearance of motion controllers in SteamVR.
+* **[Animated 3D app launchers](./mixed-reality-docs/dev-docs/distribute/creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#animation-guidelines) and [decorative 3D objects](./mixed-reality-docs/dev-docs/distribute/enable-placement-of-3d-models-in-the-home.md) for the mixed reality home** - You can now add animation to 3D app launchers and allow users to place decorative 3D models from a webpage or 2D app into the Windows Mixed Reality home.
+* **[Improvements to Windows Mixed Reality for SteamVR](./mixed-reality-docs/dev-docs/develop/porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md)** - Windows Mixed Reality for SteamVR is out of "early access" with new upgrades, including: haptic feedback when using motion controllers, improved performance and reliability, and improvements to the appearance of motion controllers in SteamVR.
 * **Other improvements** - Automatic performance settings have been updated to provide a more optimized experience (you can [manually override](#visual-quality) this setting). Setup now provides more detailed information about common compatibility issues with USB 3.0 controllers and graphics cards.
 
 ## New features for HoloLens
@@ -46,7 +46,7 @@ The Windows 10 April 2018 Update has arrived for all HoloLens customers! This up
     <th>Feature</th><th>Details</th><th>Instructions</th>
   </tr>
   <tr>
-    <td>Auto-placement of 2D and 3D content on launch</td><td>A 2D app launcher or 2D UWP app auto-places in the world at an optimal size and distance when launched instead of requiring the user to place it. If an <a href="./enthusiast-guide/design/app-views.md">immersive app</a> uses a 2D app launcher instead of a <a href="./enthusiast-guide/distribute/3d-app-launcher-design-guidance.md">3D app launcher</a>, the immersive app will auto-launch from the 2D app launcher same as in RS1.<br><br>A 3D app launcher from the Start menu also auto-places in the world. Instead of auto-launching the app, users can then click on the launcher to launch the immersive app. 3D content opened from the Holograms app and from Edge also auto-places in the world.</td><td>When opening an app from the Start menu, you will no longer be asked to place it in the world.<br><br>If the 2D app/<a href="./enthusiast-guide/distribute/3d-app-launcher-design-guidance.md">3D app launcher</a> placement is not optimal, you can easily move them using new fluid app manipulations described below. You can also re-position the 2D app launcher/3D content by saying "Move this" and then using gaze to re-position the content.</td>
+    <td>Auto-placement of 2D and 3D content on launch</td><td>A 2D app launcher or 2D UWP app auto-places in the world at an optimal size and distance when launched instead of requiring the user to place it. If an <a href="./mixed-reality-docs/dev-docs/design/app-views.md">immersive app</a> uses a 2D app launcher instead of a <a href="./mixed-reality-docs/dev-docs/distribute/3d-app-launcher-design-guidance.md">3D app launcher</a>, the immersive app will auto-launch from the 2D app launcher same as in RS1.<br><br>A 3D app launcher from the Start menu also auto-places in the world. Instead of auto-launching the app, users can then click on the launcher to launch the immersive app. 3D content opened from the Holograms app and from Edge also auto-places in the world.</td><td>When opening an app from the Start menu, you will no longer be asked to place it in the world.<br><br>If the 2D app/<a href="./mixed-reality-docs/dev-docs/distribute/3d-app-launcher-design-guidance.md">3D app launcher</a> placement is not optimal, you can easily move them using new fluid app manipulations described below. You can also re-position the 2D app launcher/3D content by saying "Move this" and then using gaze to re-position the content.</td>
   </tr>
   <tr>
     <td>Fluid app manipulation</td><td>Move, resize, and rotate 2D and 3D content without having to enter "Adjust" mode.</td><td>To move a 2D UWP app or 2D app launcher, simply gaze at its app bar and then use the tap + hold + drag gesture. You can move 3D content by gazing anywhere on the object and then using tap + hold + drag.<br><br>To resize 2D content, gaze at its corner. The gaze cursor will turn into a resize cursor, and then you can tap + hold + drag to resize. You can also make 2D content taller or wider by looking at its edges and dragging.<br><br>To resize 3D content, lift up both your hands into gesture frame, fingers up in the ready position. You'll see the cursor turn into a state with 2 little hands. Do the tap and hold gesture with both your hands. Moving your hands closer or farther apart you will change the size of the object. Moving your hands forward and backward relative to each other will rotate the object. You can also resize/rotate 2D content this way.</td>
@@ -55,7 +55,7 @@ The Windows 10 April 2018 Update has arrived for all HoloLens customers! This up
     <td>2D app horizontal resize with reflow</td><td>Make a 2D UWP app wider in aspect ratio to see more app content. For example, making the Mail app wide enough to show the Preview Pane.</td><td>Simply gaze at the left or right edge of the 2D UWP app to see the resize cursor, then use the tap + hold + drag gesture to resize.</td>
   </tr>
   <tr>
-    <td>Expanded voice command support</td><td>You can do more simply using your voice.</td><td>Try these voice commands:<ul><li>"Go to Start" - Brings up the Start menu or exits an <a href="./enthusiast-guide/design/app-views.md">immersive app</a>.</li><li>"Move this" - Allows you to move an object.</li></ul></td>
+    <td>Expanded voice command support</td><td>You can do more simply using your voice.</td><td>Try these voice commands:<ul><li>"Go to Start" - Brings up the Start menu or exits an <a href="./mixed-reality-docs/dev-docs/design/app-views.md">immersive app</a>.</li><li>"Move this" - Allows you to move an object.</li></ul></td>
   </tr>
   <tr>
     <td>Updated Holograms and Photos apps</td><td>Updated Holograms app with new holograms. Updated Photos app.</td><td>You will notice an updated look to the Holograms and Photos apps. The Holograms app includes several new Holograms and a label maker for easier creation of text.</td>
@@ -105,7 +105,7 @@ The Windows 10 April 2018 Update has arrived for all HoloLens customers! This up
 </td>
   </tr>
   <tr>
-      <td>Research mode</td><td>Allows developers to access key HoloLens sensors when building academic and industrial applications to test new ideas in the fields of computer vision and robotics, including:<ul><li>The four environment tracking cameras</li><li>Two versions of the depth mapping camera data</li><li>Two versions of an IR-reflectivity stream</li></ul></td><td><a href="./enthusiast-guide/develop/platform-capabilities-and-apis/research-mode.md">Research mode documentation</a><br><a href="https://github.com/Microsoft/HoloLensForCV">Research mode sample apps</a></td>
+      <td>Research mode</td><td>Allows developers to access key HoloLens sensors when building academic and industrial applications to test new ideas in the fields of computer vision and robotics, including:<ul><li>The four environment tracking cameras</li><li>Two versions of the depth mapping camera data</li><li>Two versions of an IR-reflectivity stream</li></ul></td><td><a href="./mixed-reality-docs/dev-docs/develop/platform-capabilities-and-apis/research-mode.md">Research mode documentation</a><br><a href="https://github.com/Microsoft/HoloLensForCV">Research mode sample apps</a></td>
   </tr>
 </table>
 
@@ -172,7 +172,7 @@ The Windows 10 April 2018 Update has arrived for all HoloLens customers! This up
 
 ## Known issues
 
-We've worked hard to deliver a great Windows Mixed Reality experience, but we're still tracking some known issues. If you find others, please [give us feedback](./enthusiast-guide/give-us-feedback.md).
+We've worked hard to deliver a great Windows Mixed Reality experience, but we're still tracking some known issues. If you find others, please [give us feedback](./mixed-reality-docs/dev-docs/give-us-feedback.md).
 
 ### HoloLens
 
@@ -183,7 +183,7 @@ You may notice the following issues after updating from RS1 to RS4 on your HoloL
 * **Apps and placed holograms reset** - Apps placed in your world will be removed after the update and will need to be re-placed throughout your space. 
 * **Feedback Hub may not launch immediately** - Immediately after update, it will take a few minutes before you are able to launch some inbox apps such as Feedback Hub, while they update themselves. 
 * **Corporate Wi-Fi certificates need to be re-synced** - We're investigating an issue that requires the HoloLens to be connected to a different network in order for corporate certificates to be re-synced to the device before it is able to reconnect to corporate networks using certificates. 
-* **H.265 HEVC Video Playback does not work** - Applications that attempt to play back H.265 videos will receive an error message. The workaround is to [access the Windows Device Portal](./enthusiast-guide/develop/platform-capabilities-and-apis/using-the-windows-device-portal.md), select **Apps** on the left navigation bar, and **remove** the HEVC application. Then, install the latest [HEVC Video Extension](https://www.microsoft.com/p/hevc-video-extensions/9nmzlz57r3t7) from the Microsoft Store. We are investigating the issue. 
+* **H.265 HEVC Video Playback does not work** - Applications that attempt to play back H.265 videos will receive an error message. The workaround is to [access the Windows Device Portal](./mixed-reality-docs/dev-docs/develop/platform-capabilities-and-apis/using-the-windows-device-portal.md), select **Apps** on the left navigation bar, and **remove** the HEVC application. Then, install the latest [HEVC Video Extension](https://www.microsoft.com/p/hevc-video-extensions/9nmzlz57r3t7) from the Microsoft Store. We are investigating the issue. 
 
 #### For developers: updating HoloLens apps for devices running Windows 10 April 2018 Update
 
@@ -250,7 +250,7 @@ We've identified a performance regression when using Surface Book 2 on the initi
 
 ## Provide feedback and report issues
 
-Please use the [Feedback Hub app on your HoloLens or Windows 10 PC](./enthusiast-guide/give-us-feedback.md) to provide feedback and report issues. Using Feedback Hub ensures that all necessary diagnostics information is included to help our engineers quickly debug and resolve the problem.
+Please use the [Feedback Hub app on your HoloLens or Windows 10 PC](./mixed-reality-docs/dev-docs/give-us-feedback.md) to provide feedback and report issues. Using Feedback Hub ensures that all necessary diagnostics information is included to help our engineers quickly debug and resolve the problem.
 
 >[!NOTE]
 >Be sure to accept the prompt that asks whether you’d like Feedback Hub to access your Documents folder (select **Yes** when prompted).
@@ -265,6 +265,6 @@ Please use the [Feedback Hub app on your HoloLens or Windows 10 PC](./enthusiast
 ## See also
 * [Immersive headset support (external link)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
 * [HoloLens support (external link)](https://support.microsoft.com/products/hololens)
-* [Install the tools](./enthusiast-guide/develop/install-the-tools.md)
-* [Give us feedback](./enthusiast-guide/give-us-feedback.md)
+* [Install the tools](./mixed-reality-docs/dev-docs/develop/install-the-tools.md)
+* [Give us feedback](./mixed-reality-docs/dev-docs/give-us-feedback.md)
 
