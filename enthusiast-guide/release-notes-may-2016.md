@@ -11,7 +11,7 @@ keywords: HoloLens, release notes, os, features, build, platform
 
 # Release notes - May 2016
 
-The HoloLens team is committed to provide you with an update on our latest feature development and major fixes through the Windows Insider Program. Thanks to all your suggestions, we take your feedback to heart. Please continue to [give us feedback](./enthusiast-guide/give-us-feedback.md) through the Feedback Hub, the [developer forums](https://forums.hololens.com) and [Twitter via @HoloLens](https://twitter.com/hololens).
+The HoloLens team is committed to provide you with an update on our latest feature development and major fixes through the Windows Insider Program. Thanks to all your suggestions, we take your feedback to heart. Please continue to [give us feedback](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback) through the Feedback Hub, the [developer forums](https://forums.hololens.com) and [Twitter via @HoloLens](https://twitter.com/hololens).
 
 **Release version:** Windows Holographic May 2016 Update (**10.0.14342.1016**)
 
@@ -30,7 +30,7 @@ To update to the current release, open the *Settings* app, go to *Update & Secur
    * Try looking at a hologram and rotate it by saying "face me"
    * Change its size by saying "bigger" or "smaller"
    * Move an app by saying "Hey Cortana, move *app name* here."
-* We've made **developing on HoloLens easier**. You can now browse, upload, and download files through the [Windows Device Portal](./enthusiast-guide/develop/platform-capabilities-and-apis/using-the-windows-device-portal.md). You can access the Documents folder, Pictures folder, and the local storage for any app you side-loaded or deployed through Visual Studio.
+* We've made **developing on HoloLens easier**. You can now browse, upload, and download files through the [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal). You can access the Documents folder, Pictures folder, and the local storage for any app you side-loaded or deployed through Visual Studio.
 * The **emulator now supports log-in with a Microsoft Account** just like you would on a real HoloLens. You can enable this from the Additional Tools menu ">>".
 * **2D Apps now hide the app bar and cursor when watching video full screen** to avoid distraction. With this, your video watching experience will be even more enjoyable on HoloLens.
 * You can also **pin photos without the app bar** in your world .
@@ -55,7 +55,7 @@ To update to the current release, open the *Settings* app, go to *Update & Secur
 * Faster **app registration** and **auto detection of time zone** during OOBE, giving you the best first user experience.
 * **Storage sense** allows you to view remaining and used disk space by the system and apps in the settings app.
 * We have converged Feedback App and Inside Hub into a single app **Feedback Hub** that will be the go-to tool for **giving us feedback**, which features you love, which features you could do without, or when something could be better. When you join the Insider Program, you can keep up on **get latest Insider news**, **rate builds** and go on **feedback quests** from Feedback Hub.
-* We've also [published an updated HoloLens Emulator](./enthusiast-guide/develop/install-the-tools.md) build.
+* We've also [published an updated HoloLens Emulator](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools) build.
 * Your mixed reality videos now look better due to automatic **video stabilization**.
 
 ## Major fixes
@@ -109,12 +109,12 @@ We fixed issues with Visual Studio where
 * [Release notes - March 2016](release-notes-march-2016.md)
 
 ## See also
-* [HoloLens known issues](./enthusiast-guide/hololens-known-issues.md)
-* [Install the tools](./enthusiast-guide/develop/install-the-tools.md)
-* [Shell](./enthusiast-guide/discover/navigating-the-windows-mixed-reality-home.md)
-* [Updating 2D UWP apps for mixed reality](./enthusiast-guide/develop/porting-apps/building-2d-apps.md)
-* [Hardware accessories](./enthusiast-guide/discover/hardware-accessories.md)
-* [Mixed reality capture](./enthusiast-guide/mixed-reality-capture.md)
-* [Voice input](./enthusiast-guide/design/voice-input.md)
-* [Submitting an app to the Windows Store](./enthusiast-guide/distribute/submitting-an-app-to-the-microsoft-store.md)
-* [Using the HoloLens emulator](./enthusiast-guide/develop/platform-capabilities-and-apis/using-the-hololens-emulator.md)
+* [HoloLens known issues](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
+* [Install the tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
+* [Shell](https://docs.microsoft.com/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)
+* [Updating 2D UWP apps for mixed reality](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/building-2d-apps)
+* [Hardware accessories](https://docs.microsoft.com/windows/mixed-reality/discover/hardware-accessories)
+* [Mixed reality capture](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-capture)
+* [Voice input](https://docs.microsoft.com/windows/mixed-reality/design/voice-input)
+* [Submitting an app to the Windows Store](https://docs.microsoft.com/windows/mixed-reality/distribute/submitting-an-app-to-the-microsoft-store)
+* [Using the HoloLens emulator](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)

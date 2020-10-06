@@ -37,7 +37,7 @@ The Windows 10 April 2018 Update includes many improvements for using Windows Mi
 
 ## New features for HoloLens
 
-The Windows 10 April 2018 Update has arrived for all HoloLens customers! This update is packed with improvements that have been introduced since the last major release of HoloLens software in [August 2016](release-notes-august-2016).
+The Windows 10 April 2018 Update has arrived for all HoloLens customers! This update is packed with improvements that have been introduced since the last major release of HoloLens software in [August 2016](release-notes-august-2016.md).
 
 ### For everyone
 
