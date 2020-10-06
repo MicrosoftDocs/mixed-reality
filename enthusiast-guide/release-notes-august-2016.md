@@ -12,18 +12,18 @@ keywords: HoloLens, release notes, os, platform, features, commercial suite
 
 # Release notes - August 2016
 
-The HoloLens team is listening to feedback from developers in the Windows Insider Program to prioritize our work. Please continue to [give us feedback](../give-us-feedback.md) through the Feedback Hub, the [developer forums](https://forums.hololens.com) and [Twitter via @HoloLens](https://twitter.com/hololens). As Windows 10 embraces the Anniversary Update, the HoloLens team is happy to deliver further improve to the holographic experience. In this update, we focused on major fixes, improvements, and introducing features requested by businesses and available in the Microsoft HoloLens Commercial Suite.
+The HoloLens team is listening to feedback from developers in the Windows Insider Program to prioritize our work. Please continue to [give us feedback](./enthusiast-guide/give-us-feedback.md) through the Feedback Hub, the [developer forums](https://forums.hololens.com) and [Twitter via @HoloLens](https://twitter.com/hololens). As Windows 10 embraces the Anniversary Update, the HoloLens team is happy to deliver further improve to the holographic experience. In this update, we focused on major fixes, improvements, and introducing features requested by businesses and available in the Microsoft HoloLens Commercial Suite.
 
 **Latest release:** Windows Holographic August 2016 Update (**10.0.14393.0**, Windows 10 Anniversary Release)
 
 >[!VIDEO https://www.youtube.com/embed/tNd0e2CiAkE]
 
-To [update to the current release](../updating-hololens.md), open the *Settings* app, go to *Update & Security*, then select the *Check for updates* button.
+To [update to the current release](./enthusiast-guide/updating-hololens.md), open the *Settings* app, go to *Update & Security*, then select the *Check for updates* button.
 
 ## New features
 
 **Attach To Process Debugging**
- HoloLens now supports attach-to-process debugging. You can use Visual Studio 2015 Update 3 to connect to a running app on a HoloLens and [start debugging it](../develop/platform-capabilities-and-apis/using-visual-studio.md#debugging-an-installed-or-running-app). This works without the need to deploy from a Visual Studio project.
+ HoloLens now supports attach-to-process debugging. You can use Visual Studio 2015 Update 3 to connect to a running app on a HoloLens and [start debugging it](./enthusiast-guide/develop/platform-capabilities-and-apis/using-visual-studio.md#debugging-an-installed-or-running-app). This works without the need to deploy from a Visual Studio project.
 
 **Updated HoloLens Emulator**
  We've also released an updated version of the HoloLens Emulator.
@@ -53,7 +53,7 @@ We've fixed the following issues:
 
 ## Introducing Microsoft HoloLens Commercial Suite
 
-The Microsoft HoloLens Commercial Suite is ready for enterprise deployment. We've added several highly requested [commercial features](../commercial-features.md) from our early business partners.
+The Microsoft HoloLens Commercial Suite is ready for enterprise deployment. We've added several highly requested [commercial features](./enthusiast-guide/commercial-features.md) from our early business partners.
 
 Please contact your local Microsoft account manager to purchase the Microsoft HoloLens Commercial Suite.
 
@@ -78,7 +78,7 @@ Please contact your local Microsoft account manager to purchase the Microsoft Ho
 </tr><tr>
 <td>Virtual Private Network (VPN)</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td><a href="../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#kiosk-mode">Kiosk mode</a></td><td></td><td style="text-align: center;">✔️</td>
+<td><a href="./enthusiast-guide/develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#kiosk-mode">Kiosk mode</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <th colspan="3" style="text-align: left;"> Management and deployment</th>
 </tr><tr>
@@ -117,7 +117,7 @@ Please contact your local Microsoft account manager to purchase the Microsoft Ho
 * [Release notes - March 2016](release-notes-march-2016.md)
 
 ## See also
-* [HoloLens known issues](../hololens-known-issues.md)
-* [Commercial features](../commercial-features.md)
-* [Install the tools](../develop/install-the-tools.md)
-* [Using the HoloLens emulator](../develop/platform-capabilities-and-apis/using-the-hololens-emulator.md)
+* [HoloLens known issues](./enthusiast-guide/hololens-known-issues.md)
+* [Commercial features](./enthusiast-guide/commercial-features.md)
+* [Install the tools](./enthusiast-guide/develop/install-the-tools.md)
+* [Using the HoloLens emulator](./enthusiast-guide/develop/platform-capabilities-and-apis/using-the-hololens-emulator.md)
