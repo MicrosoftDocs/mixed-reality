@@ -232,4 +232,4 @@ Set iframe to width="940" height="530".
 
 * [Related article 1 name](../design/design.md)
 * [Related article 2 name](../design/design.md)
-* [Related article 3 name - link to a specific section](../design/design.md#what-are-the-core-concepts-of-an-experience)
+* [Related article 3 name - link to a specific section](../design/design.md#2-core-concepts)

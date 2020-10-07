@@ -1,6 +1,6 @@
 - name: Introduction to Mixed Reality development
   href: development.md
-- name: Introduction to Cloud Services
+- name: Azure Cloud Services
   href: mixed-reality-cloud-services.md
 - name: Install the tools
   href: install-the-tools.md
@@ -288,6 +288,8 @@
         href: unreal/unreal-deploying.md
       - name: Performance recommendations for Unreal
         href: unreal/performance-recommendations-for-unreal.md
+      - name: Material recommendations in Unreal 
+        href: unreal/unreal-materials.md
       - name: Streaming in Unreal
         href: unreal/unreal-streaming.md
 - name: Web

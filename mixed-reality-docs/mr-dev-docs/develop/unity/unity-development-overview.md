@@ -69,11 +69,11 @@ At this point in your development journey you might be looking to add services o
 
 [!INCLUDE[](../includes/unity-cloud-services-d365.md)]
 
-We also have a [comprehensive list of support documentation for additional Azure services](../mixed-reality-cloud-services.md#standalone-services) that you can add to your Unity projects on a self-serve basis.
+We also have a [comprehensive list of support documentation for additional Azure services](../mixed-reality-cloud-services.md#standalone-unity-services) that you can add to your Unity projects on a self-serve basis.
 
 ## What's next?
 
-A developers job is never done, especially when learning a new tool or SDK. The following sections can take you into areas beyond the beginner level material you've already completed, along with helpful resources if you get stuck. Note that these topics and resources are not in any sequential order, so feel free to jump around and explore!
+A developers job is never done, especially when learning a new tool or SDK. The following sections can take you into areas beyond the beginner level material you've already completed, along with helpful resources if you get stuck. Note that these topics and resources aren't in any sequential order, so feel free to jump around and explore!
 
 ### Porting
 

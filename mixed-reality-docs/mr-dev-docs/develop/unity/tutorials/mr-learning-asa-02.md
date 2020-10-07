@@ -59,6 +59,9 @@ After you have imported the tutorial assets your Project window should look simi
 
 ![mr-learning-asa](images/mr-learning-asa/asa-02-section3-step1-1.png)
 
+> [!NOTE]
+> If you see any CS0618 warnings regarding 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' is obsolete, you can ignore these warnings.
+
 > [!TIP]
 > For a reminder on how to import a Unity custom package, you can refer to the [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) instructions.
 
