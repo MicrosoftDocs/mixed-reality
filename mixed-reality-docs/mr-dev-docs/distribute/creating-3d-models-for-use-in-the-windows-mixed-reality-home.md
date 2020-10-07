@@ -183,7 +183,7 @@ LODs are displayed in Windows Mixed Reality based on a system driven by the scre
 ## Animation guidelines
 
 > [!NOTE]
-> This feature was added as part of [Windows 10 April 2018 Update](../whats-new/release-notes-april-2018.md). On older versions of Windows these animations will not play back, however, they will still load if authored according to the guidance in this article.  
+> This feature was added as part of [Windows 10 April 2018 Update](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018). On older versions of Windows these animations will not play back, however, they will still load if authored according to the guidance in this article.  
 
 The mixed reality home supports animated glTF objects on HoloLens and immersive (VR) headsets. If you wish to trigger animations on your model, you'll need to use the Animation Map extension on the glTF format. This extension lets you trigger animations in the glTF model based on the users presence in the world, for example trigger an animation when the user is close to the object or while they are looking at it. If you glTF object has animations, but doesn't define triggers the animations will not be played back. The section below describes one workflow for adding these triggers to any animated glTF object.
 
@@ -240,7 +240,7 @@ Animations cannot be longer than 20 minutes and cannot contain more than 36,000 
 ## glTF Implementation notes
 Windows MR does not support flipping geometry using negative scales. Geometry with negative scales will likely result in visual artifacts.
 
-The glTF asset MUST point to the default scene using the scene attribute to be rendered by Windows MR. Additionally the Windows MR glTF loader prior to the [Windows 10 April 2018 update](../whats-new/release-notes-april-2018.md) **requires** accessors:
+The glTF asset MUST point to the default scene using the scene attribute to be rendered by Windows MR. Additionally the Windows MR glTF loader prior to the [Windows 10 April 2018 update](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018) **requires** accessors:
 * Must have min and max values.
 * Type SCALAR must be componentType UNSIGNED_SHORT (5123) or UNSIGNED_INT (5125).
 * Type VEC2 and VEC3 must be componentType FLOAT (5126).
