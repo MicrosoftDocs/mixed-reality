@@ -68,6 +68,12 @@ Thanks to your feedback, we've added and clarified settings on the Headset displ
 
 #### New Cortana app
 This update to Windows includes the latest version of the Cortana app, which is currently US English-only and no longer supports certain mixed-reality specific commands such as "Take a picture" and "Take a video." You'll still be able to use the new Cortana to launch apps, and it also supports new productivity focused commands like, "When's my next meeting?" or "Send an email to <name> that I'm running late."
+    
+#### Additional updates in available in 19041.546 (released October 2020)
+This desktop monthly servicing update includes following changes for Windows Mixed Reality devices: 
+* Reduces distortions and aberrations in Windows Mixed Reality head-mounted displays (HMD). 
+* Adds support for upcoming HP Windows Mixed Reality motion controllers. 
+* Changes the behavior of the 90Hz refresh rate setting in Windows Mixed Reality to no longer automatically switch back to 60Hz in certain cases when 90Hz cannot be achieved. 
 
 #### Please help us improve!
 We continually look to improve compatibility.  If you find your favorite classic Win32 application not behaving correctly while in Windows Mixed Reality, please submit feedback via our [Feedback Hub](https://support.microsoft.com//help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub).
