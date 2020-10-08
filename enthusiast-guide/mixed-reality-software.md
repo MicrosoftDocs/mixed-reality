@@ -90,8 +90,8 @@ This driver is automatically downloaded and installed via Windows Update, but do
 
    | Version          | Release Date          | Major changes                                                 |
    |------------------|-----------------------|---------------------------------------------------------------|
-   | [10.0.19041.1009](https://www.microsoft.com/en-us/download/details.aspx?id=101260)  | May 7th, 2020      | Compatible with Windows 10, version 1903, and newer.<br/><ul><li>Windows Mixed Reality headset platform minor fixes and reliability improvements.</li></ul>  | 
-
+   | [10.0.19041.1009](https://www.microsoft.com/en-us/download/details.aspx?id=101260)  | May 7th, 2020      | Compatible with Windows 10, version 1903, and newer.<br/><ul><li>Windows Mixed Reality headset platform minor fixes and reliability improvements.</li></ul>  |
+   | [10.0.19041.2034](https://www.microsoft.com/en-us/download/details.aspx?id=102156)  | October 8th, 2020  | Compatible with Windows 10, version 1903, and newer.<br/><ul><li>Official support for the HP Reverb G2, HP Omnicept, and the new HP Controllers</li><li>Minor display corrections for HP Reverb and Samsung Odyssey+ headsets. ([OS Build 19041.546](https://support.microsoft.com/en-us/help/4577063/windows-10-update-kb4577063) or higher).</li><li>Improvements around sleeping computers and power state transitions to reduce SWW 1-4 errors.</li><li>Windows Mixed Reality headset platform minor fixes and reliability improvements.|
 
 #### Windows 10, version 1903 (May 2019 Update) ####
 
@@ -101,7 +101,6 @@ This driver is automatically downloaded and installed via Windows Update, but do
    | [10.0.18362.1062](https://www.microsoft.com/en-us/download/details.aspx?id=58492)  | June 24th, 2019      | Compatible with Windows 10, version 1809, and newer.<br/><ul><li>Windows Mixed Reality headset platform and reliability improvements around sleeping computers and power state transitions.</li></ul>  | 
    | [10.0.18362.1024](https://www.microsoft.com/en-us/download/details.aspx?id=58225)  | May 1st, 2019      | Compatible with Windows 10, version 1809, and newer.<br/><ul><li>Contains firmware update for 2017 Acer, Asus, Dell, Fujitsu, HP, Lenovo and Medion Windows Mixed Reality headsets. This firmware update improves headset display compatibility and reliability with certain graphics adapters and/or graphics drivers.</li><li>Windows Mixed Reality headset platform and reliability improvements</li></ul>  | 
 
-
 #### Windows 10, version 1803 (April 2018 Update) and version 1809 (October 2018 Update) ####
 
    | Version          | Release Date          | Major changes                                                 |
@@ -109,7 +108,6 @@ This driver is automatically downloaded and installed via Windows Update, but do
    | [10.0.17763.1069](https://www.microsoft.com/en-us/download/details.aspx?id=57702)  | January 2nd, 2019      | Compatible with Windows 10, version 1803, and newer.<br/><ul><li>Headset tracking jitter and stutter fixes</li><li>Flashlight mode reliability fixes</li></ul>  | 
    | [10.0.17760.1000](https://www.microsoft.com/en-us/download/details.aspx?id=57358)  | October 1st, 2018      | Initial public release of the driver for Windows 10, version 1809.<br/>Compatible with Windows 10, version 1803, and newer.<br/><ul><li>Enables new Windows Mixed Reality features, such as flashlight mode, in Windows 10, version 1809</li><li>Headset tracking and reliability improvements</li><li>Motion controller tracking and performance improvements</li><li>USB performance and improvements</li></ul>  | 
    | [10.0.17134.1004](https://www.microsoft.com/en-us/download/details.aspx?id=56845)  | April 27th, 2018      | Initial public release of the driver for Windows 10, version 1803<br/> <ul><li>Headset tracking and reliability improvements</li><li>Motion controller tracking and performance improvements</li></ul>  |
-
 
 #### Windows 10, version 1709 (Fall Creators Update) ####
 
@@ -125,6 +123,12 @@ This driver is automatically downloaded and installed via Windows Update, but do
 ### Mixed Reality motion controller model driver release history ###
 
 This driver is also automatically downloaded and installed via Windows Update, but download links are provided inline:
+
+#### Windows 10, version 2004 (May 2020 Update)
+
+| Version          | Release Date          | Major changes                                                 |
+   |------------------|-----------------------|---------------------------------------------------------------|
+   | [10.0.19041.2034](https://www.microsoft.com/en-us/download/details.aspx?id=102155)  | September 16th, 2020      | Initial public release of the driver for the new HP Controllers. Compatible with Windows 10, version 1903, and newer.  |
 
 #### Windows 10, version 1803 (April 2018 Update) and version 1809 (October 2018 Update) ####
 
