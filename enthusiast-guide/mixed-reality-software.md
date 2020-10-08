@@ -128,7 +128,7 @@ This driver is also automatically downloaded and installed via Windows Update, b
 
 | Version          | Release Date          | Major changes                                                 |
    |------------------|-----------------------|---------------------------------------------------------------|
-   | [10.0.19041.2034](https://www.microsoft.com/en-us/download/details.aspx?id=102155)  | September 16th, 2020      | Initial public release of the driver for the new HP Controllers. Compatible with Windows 10, version 1903, and newer. This driver is compatible only with new HP Controllers.  |
+   | [10.0.19041.2034](https://www.microsoft.com/en-us/download/details.aspx?id=102155)  | September 16th, 2020      | Initial public release of the driver for the new HP Controller. Compatible with Windows 10, version 1903, and newer. This driver is compatible only with new HP Controller.  |
 
 #### Windows 10, version 1803 (April 2018 Update) and version 1809 (October 2018 Update) ####
 
