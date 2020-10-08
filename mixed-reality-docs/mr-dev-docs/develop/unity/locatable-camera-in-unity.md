@@ -14,7 +14,7 @@ keywords: photo, video, hololens, camera, unity, locatable
 
 ## Enabling the capability for Photo Video Camera
 
-The "WebCam" capability must be declared for an app to use the [camera](../platform-capab ilities-and-apis/locatable-camera.md).
+The "WebCam" capability must be declared for an app to use the [camera](../platform-capabilities-and-apis/locatable-camera.md).
 1. In the Unity Editor, go to the player settings by navigating to the "Edit > Project Settings > Player" page
 2. Click the "Windows Store" tab
 3. In the "Publishing Settings > Capabilities" section, check the **WebCam** and **Microphone** capabilities
@@ -314,7 +314,7 @@ If you're following the Unity development checkpoint journey we've laid out, you
 Or jump directly to deploying your app on a device or emulator:
 
 > [!div class="nextstepaction"]
-> [Deploy to HoloLens or Windows Mixed Reality immersive headsets](../platform-capab ilities-and-apis/using-visual-studio.md)
+> [Deploy to HoloLens or Windows Mixed Reality immersive headsets](../platform-capabilities-and-apis/using-visual-studio.md)
 
 You can always go back to the [Unity development checkpoints](unity-development-overview.md#3-platform-capabilities-and-apis) at any time.
 
