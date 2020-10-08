@@ -91,7 +91,7 @@ This driver is automatically downloaded and installed via Windows Update, but do
    | Version          | Release Date          | Major changes                                                 |
    |------------------|-----------------------|---------------------------------------------------------------|
    | [10.0.19041.1009](https://www.microsoft.com/en-us/download/details.aspx?id=101260)  | May 7th, 2020      | Compatible with Windows 10, version 1903, and newer.<br/><ul><li>Windows Mixed Reality headset platform minor fixes and reliability improvements.</li></ul>  |
-   | [10.0.19041.2034](https://www.microsoft.com/en-us/download/details.aspx?id=102156)  | October 8th, 2020  | Compatible with Windows 10, version 1903, and newer.<br/><ul><li>Official support for the HP Reverb G2, HP Omnicept, and the new HP Controllers</li><li>Minor display corrections for HP Reverb and Samsung Odyssey+ headsets. ([OS Build 19041.546](https://support.microsoft.com/en-us/help/4577063/windows-10-update-kb4577063) or higher).</li><li>Improvements around sleeping computers and power state transitions to reduce SWW 1-4 errors.</li><li>Windows Mixed Reality headset platform minor fixes and reliability improvements.|
+   | [10.0.19041.2034](https://www.microsoft.com/en-us/download/details.aspx?id=102156)  | October 8th, 2020  | Compatible with Windows 10, version 1903, and newer.<br/><ul><li>Official support for the HP Reverb G2, HP Omnicept, and the new HP Controllers.</li><li>Minor display corrections for HP Reverb and Samsung Odyssey+ headsets. ([OS Build 19041.546](https://support.microsoft.com/en-us/help/4577063/windows-10-update-kb4577063) or higher or [OS Builds 18362.1110 and 18363.1110](https://support.microsoft.com/en-us/help/4577062/windows-10-update-kb4577062) or higher).</li><li>Improvements around sleeping computers and power state transitions to reduce SWW 1-4 errors.</li><li>Windows Mixed Reality headset platform minor fixes and reliability improvements.|
 
 #### Windows 10, version 1903 (May 2019 Update) ####
 
@@ -128,7 +128,7 @@ This driver is also automatically downloaded and installed via Windows Update, b
 
 | Version          | Release Date          | Major changes                                                 |
    |------------------|-----------------------|---------------------------------------------------------------|
-   | [10.0.19041.2034](https://www.microsoft.com/en-us/download/details.aspx?id=102155)  | September 16th, 2020      | Initial public release of the driver for the new HP Controllers. Compatible with Windows 10, version 1903, and newer.  |
+   | [10.0.19041.2034](https://www.microsoft.com/en-us/download/details.aspx?id=102155)  | September 16th, 2020      | Initial public release of the driver for the new HP Controllers. Compatible with Windows 10, version 1903, and newer. This driver is compatible only with new HP Controllers.  |
 
 #### Windows 10, version 1803 (April 2018 Update) and version 1809 (October 2018 Update) ####
 
