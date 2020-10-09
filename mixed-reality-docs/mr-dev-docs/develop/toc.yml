@@ -4,6 +4,18 @@
   href: mixed-reality-cloud-services.md
 - name: Install the tools
   href: install-the-tools.md
+- name: Porting apps
+  items:
+  - name: Porting overview
+    href: porting-apps/porting-overview.md
+  - name: Get your existing app ready for HoloLens 2
+    href: unity/mrtk-porting-guide.md
+  - name: Porting guide for immersive apps
+    href: porting-apps/porting-guides.md
+  - name: Updating for SteamVR
+    href: porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md
+  - name: Updating 2D UWP apps for Mixed Reality
+    href: porting-apps/building-2d-apps.md
 - name: Unity
   items:
   - name: Unity development overview
@@ -430,15 +442,3 @@
           href: platform-capabilities-and-apis/device-portal-api-reference.md 
         - name: HoloLens Research Mode
           href: platform-capabilities-and-apis/research-mode.md 
-- name: Porting apps
-  items:
-  - name: Get your existing app ready for HoloLens 2
-    href: unity/mrtk-porting-guide.md
-  - name: Porting guide for immersive apps
-    href: porting-apps/porting-guides.md
-  - name: Input porting guide for Unity
-    href: porting-apps/input-porting-guide-for-unity.md
-  - name: Updating for SteamVR
-    href: porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md
-  - name: Updating 2D UWP apps for Mixed Reality
-    href: porting-apps/building-2d-apps.md
