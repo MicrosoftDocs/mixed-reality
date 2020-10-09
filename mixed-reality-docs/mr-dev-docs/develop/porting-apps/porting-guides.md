@@ -45,11 +45,11 @@ The Windows Mixed Reality platform is still under active development. We recomme
 
 ## Unity porting guidance
 
-[!INCLUDE[](../includes/unity-porting-guidance.md)]
+[!INCLUDE[](includes/unity-porting-guidance.md)]
 
 ## Unreal porting guidance
 
-[!INCLUDE[](../includes/unreal-porting-guidance.md)]
+[!INCLUDE[](includes/unreal-porting-guidance.md)]
 
 ## See also
 * [Input porting guide for Unity](input-porting-guide-for-unity.md)
