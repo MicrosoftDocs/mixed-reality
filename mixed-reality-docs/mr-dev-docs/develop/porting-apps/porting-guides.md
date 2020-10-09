@@ -47,13 +47,9 @@ The Windows Mixed Reality platform is still under active development. We recomme
 
 [!INCLUDE[](../includes/unity-porting-guidance.md)]
 
-## Reverb G2 porting steps
+## Unreal porting guidance
 
-### 1. Add G2 porting steps...
-
-### 2. Controller input
-
-[!INCLUDE[](../includes/reverb-g2-porting-controllers.md)]
+[!INCLUDE[](../includes/unreal-porting-guidance.md)]
 
 ## See also
 * [Input porting guide for Unity](input-porting-guide-for-unity.md)

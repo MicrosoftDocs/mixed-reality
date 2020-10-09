@@ -103,7 +103,13 @@ Windows Mixed Reality will be available on a broad class of devices, ranging fro
 
 Both [Unity](https://docs.unity3d.com/Manual/Profiler.html) and [Visual Studio](https://docs.microsoft.com/visualstudio/profiling/index) include performance profilers, and both [Microsoft](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) and [Intel](https://software.intel.com/articles/vr-content-developer-guide) publish guidelines on performance profiling and optimization. There's an extensive discussion of performance available at [Understanding Performance for Mixed Reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md). Further, there are specific details for Unity under [Performance Recommendations for Unity](../unity/performance-recommendations-for-unity.md).
 
-# [Input](#tab/input)
+# [HP Reverb G2](#tab/reverb)
+
+### 1. Add G2 porting steps...
+
+### 2. Controller input
+
+# [Input mapping](#tab/input)
 
 You can port your input logic to Windows Mixed Reality using one of two approaches, Unity's general Input.GetButton/GetAxis APIs that span across multiple platforms, or the Windows-specific XR.WSA.Input APIs that offer richer data specifically for motion controllers and HoloLens hands.
 
