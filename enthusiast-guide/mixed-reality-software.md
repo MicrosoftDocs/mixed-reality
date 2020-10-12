@@ -34,20 +34,70 @@ Managing your Windows Mixed Reality headset:
 
 8. The **Device Companion App**, developed and maintained by each of the headset manufacturers, provides a quick introduction to your Windows Mixed Reality headset. On headsets with built-in Bluetooth capability, the Device Companion app enables restoring Motion Controllers to their factory Bluetooth pairing. Some headsets (such as the Samsung Odyssey, and Samsung Odyssey+) also use the Device Companion App to deliver headset firmware updates from the headset manufacturer. This app is downloaded automatically the first time your headset is plugged in and can be found in the Windows Start Menu.
 
+## Windows 10 release notes - May 2020
 
-## Release history ##
+The **Windows 10 May 2020 Update (v2004)** includes new features for Windows Mixed Reality (VR) headsets, such as the ability to launch Win32 applications in the mixed reality home. HoloLens (1st gen) is in Long Term Servicing (LTS), with servicing updates to be released monthly.
 
-### Mixed Reality headset and motion controller driver release history ###
+To update to the latest release on PC for Windows Mixed Reality immersive (VR) headsets, open the **Settings** app, go to **Update & Security**, then select the **Check for updates** button. On a Windows 10 PC, you can also manually install the **Windows 10 May 2020 Update** using the [Windows media creation tool](https://www.microsoft.com/software-download/windows10).
+
+**Latest release for Desktop**: Windows 10 v2004 (10.0.19041.264)
+
+### Updates for Windows Mixed Reality immersive headsets
+
+#### Introducing the new Microsoft Edge
+As [previously announced](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge), we've made updates to better support using the new Microsoft Edge browser in Windows Mixed Reality. The new Microsoft Edge adopts the Chromium open source project to create better web compatibility for customers and less fragmentation of the web for all web developers. It also supports WebXR, the new standard for creating immersive web experiences for VR headsets, in place of WebVR.
+
+#### Improved Settings for WMR
+Thanks to your feedback, we've added and clarified settings on the Headset display page:
+
+* **Visual quality of my home** - changing these settings affects only the mixed reality home environment (Cliff House and Skyloft):
+
+* **Adjust level of detail and quality of effects in the mixed reality home** - this changes some of the rendering affects we use in the home. In particular, the visual quality of different materials (wood, concrete, etc.) will scale as you change this setting from low to high.
+
+* **Change app window resolution** - by default, most 2D windows launched in the home are launched with a 720p resolution. While you can manually resize them horizontally & vertically, you can also opt to have them all launch at 1080p instead. Previously this option was available as the Very high (beta) option under Visual quality. We've appropriately split it out as a separate setting now.
+
+* **Experience options** - these options adjust the mixed reality experience to reduce load on systems where the hardware might struggle to keep up with an unrestricted 90 fps. You can choose to explicitly enable or disable these additional settings, or choose Let Windows decide and let our heuristics continue deciding when to toggle these on and off.
+
+* **Resolution** - if you have a high-resolution headset like the HP Reverb, we support running it at its native resolution, or at a reduced resolution for performance reasons. Earlier headsets, like the Samsung Odyssey and Odyssey+, only support a single resolution so you won't be able to change this setting on those headsets.
+
+* **Frame rate** - you can now manually set the frame rate of the headset display, or continue to let Windows use its heuristics to determine if 60 Hz or 90 Hz is more appropriate.
+
+* **Calibration** - as before, you can adjust your IPD (interpupillary distance) if supported by your headset.
+
+* **Input switching** - toggle the input focus switching (Win+Y) behavior to be automatic (based on presence sensor feedback) or manual.
+
+#### New Cortana app
+This update to Windows includes the latest version of the Cortana app, which is currently US English-only and no longer supports certain mixed-reality specific commands such as "Take a picture" and "Take a video." You'll still be able to use the new Cortana to launch apps, and it also supports new productivity focused commands like, "When's my next meeting?" or "Send an email to <name> that I'm running late."
+    
+#### Additional updates in available in 19041.546 (released October 2020)
+This desktop monthly servicing update includes the following changes for Windows Mixed Reality devices: 
+* Reduces distortions and aberrations in Windows Mixed Reality head-mounted displays (HMD). 
+* Adds support for upcoming HP Windows Mixed Reality motion controllers. 
+* Changes the behavior of the 90Hz refresh rate setting in Windows Mixed Reality to no longer automatically switch back to 60Hz in certain cases when 90Hz cannot be achieved. 
+
+#### Please help us improve!
+We continually look to improve compatibility.  If you find your favorite classic Win32 application not behaving correctly while in Windows Mixed Reality, please submit feedback via our [Feedback Hub](https://support.microsoft.com//help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub).
+
+### Prior release notes
+
+* [Release notes - May 2019](release-notes-may-2019.md)
+* [Release notes - October 2018](release-notes-october-2018.md)
+* [Release notes - April 2018](release-notes-april-2018.md)
+* [Release notes - October 2017](release-notes-october-2017.md)
+* [Release notes - August 2016](release-notes-august-2016.md)
+* [Release notes - May 2016](release-notes-may-2016.md)
+* [Release notes - March 2016](release-notes-march-2016.md)
+
+## Mixed Reality headset and motion controller driver release history ###
 
 This driver is automatically downloaded and installed via Windows Update, but download links are provided inline:
-
 
 #### Windows 10, version 2004 (May 2020 Update) ####
 
    | Version          | Release Date          | Major changes                                                 |
    |------------------|-----------------------|---------------------------------------------------------------|
-   | [10.0.19041.1009](https://www.microsoft.com/en-us/download/details.aspx?id=101260)  | May 7th, 2020      | Compatible with Windows 10, version 1903, and newer.<br/><ul><li>Windows Mixed Reality headset platform minor fixes and reliability improvements.</li></ul>  | 
-
+   | [10.0.19041.1009](https://www.microsoft.com/en-us/download/details.aspx?id=101260)  | May 7th, 2020      | Compatible with Windows 10, version 1903, and newer.<br/><ul><li>Windows Mixed Reality headset platform minor fixes and reliability improvements.</li></ul>  |
+   | [10.0.19041.2034](https://www.microsoft.com/en-us/download/details.aspx?id=102156)  | October 8th, 2020  | Compatible with Windows 10, version 1903, and newer.<br/><ul><li>Official support for the HP Reverb G2, HP Omnicept, and the new HP Controller.</li><li>Minor display corrections for HP Reverb and Samsung Odyssey+ headsets. (Requires [OS Build 19041.546](https://support.microsoft.com/en-us/help/4577063/windows-10-update-kb4577063) or higher or [OS Builds 18362.1110 and 18363.1110](https://support.microsoft.com/en-us/help/4577062/windows-10-update-kb4577062) or higher).</li><li>Improvements to computer power state transitions from sleep to reduce SWW 1-4 errors.</li><li>Windows Mixed Reality headset platform minor fixes and reliability improvements.|
 
 #### Windows 10, version 1903 (May 2019 Update) ####
 
@@ -57,7 +107,6 @@ This driver is automatically downloaded and installed via Windows Update, but do
    | [10.0.18362.1062](https://www.microsoft.com/en-us/download/details.aspx?id=58492)  | June 24th, 2019      | Compatible with Windows 10, version 1809, and newer.<br/><ul><li>Windows Mixed Reality headset platform and reliability improvements around sleeping computers and power state transitions.</li></ul>  | 
    | [10.0.18362.1024](https://www.microsoft.com/en-us/download/details.aspx?id=58225)  | May 1st, 2019      | Compatible with Windows 10, version 1809, and newer.<br/><ul><li>Contains firmware update for 2017 Acer, Asus, Dell, Fujitsu, HP, Lenovo and Medion Windows Mixed Reality headsets. This firmware update improves headset display compatibility and reliability with certain graphics adapters and/or graphics drivers.</li><li>Windows Mixed Reality headset platform and reliability improvements</li></ul>  | 
 
-
 #### Windows 10, version 1803 (April 2018 Update) and version 1809 (October 2018 Update) ####
 
    | Version          | Release Date          | Major changes                                                 |
@@ -65,7 +114,6 @@ This driver is automatically downloaded and installed via Windows Update, but do
    | [10.0.17763.1069](https://www.microsoft.com/en-us/download/details.aspx?id=57702)  | January 2nd, 2019      | Compatible with Windows 10, version 1803, and newer.<br/><ul><li>Headset tracking jitter and stutter fixes</li><li>Flashlight mode reliability fixes</li></ul>  | 
    | [10.0.17760.1000](https://www.microsoft.com/en-us/download/details.aspx?id=57358)  | October 1st, 2018      | Initial public release of the driver for Windows 10, version 1809.<br/>Compatible with Windows 10, version 1803, and newer.<br/><ul><li>Enables new Windows Mixed Reality features, such as flashlight mode, in Windows 10, version 1809</li><li>Headset tracking and reliability improvements</li><li>Motion controller tracking and performance improvements</li><li>USB performance and improvements</li></ul>  | 
    | [10.0.17134.1004](https://www.microsoft.com/en-us/download/details.aspx?id=56845)  | April 27th, 2018      | Initial public release of the driver for Windows 10, version 1803<br/> <ul><li>Headset tracking and reliability improvements</li><li>Motion controller tracking and performance improvements</li></ul>  |
-
 
 #### Windows 10, version 1709 (Fall Creators Update) ####
 
@@ -81,6 +129,12 @@ This driver is automatically downloaded and installed via Windows Update, but do
 ### Mixed Reality motion controller model driver release history ###
 
 This driver is also automatically downloaded and installed via Windows Update, but download links are provided inline:
+
+#### Windows 10, version 2004 (May 2020 Update)
+
+| Version          | Release Date          | Major changes                                                 |
+   |------------------|-----------------------|---------------------------------------------------------------|
+   | [10.0.19041.2034](https://www.microsoft.com/en-us/download/details.aspx?id=102155)  | September 16th, 2020      | Initial public release of the driver for the new HP Controller. Compatible with Windows 10, version 1903, and newer. This driver is compatible only with new HP Controller.  |
 
 #### Windows 10, version 1803 (April 2018 Update) and version 1809 (October 2018 Update) ####
 

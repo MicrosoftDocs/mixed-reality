@@ -11,6 +11,7 @@
 ### [Plug in your headset](plug-in-your-headset.md)
 ### [Install Windows Mixed Reality](install-windows-mixed-reality.md)
 ### [Set up Windows Mixed Reality](set-up-windows-mixed-reality.md)
+### [Windows Mixed Reality Setup FAQ](wmr-setup-faq.md)
 ### [Immersive headset health, safety, and comfort](wmr-health-safety-comfort.md)
 
 ## Using Windows Mixed Reality
@@ -22,11 +23,10 @@
 ### [SteamVR](using-steamvr-with-windows-mixed-reality.md)
 ### [Using Microsoft Edge](using-microsoft-edge.md)  
 ### [WebVR](webvr.md)
+### [Using Windows Mixed Reality FAQ](using-wmr-faq.md)
 
 ## Troubleshooting FAQs
-### [General Windows Mixed Reality FAQ](troubleshooting-windows-mixed-reality.md)
-### [Windows Mixed Reality Setup FAQ](wmr-setup-faq.md)
-### [Using Windows Mixed Reality FAQ](using-wmr-faq.md)
+### [General FAQ](troubleshooting-windows-mixed-reality.md)
 ### [Installation errors](installation_errors.md)
 ### [Setup](set-up-questions.md)
 ### [Boundaries](boundary-questions.md)

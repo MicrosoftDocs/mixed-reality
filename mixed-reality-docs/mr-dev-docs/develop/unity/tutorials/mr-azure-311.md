@@ -489,7 +489,7 @@ To create this class:
             // Attempt authentication
             _authResult = await AcquireTokenAsync(_client, _scopes, userId);
 
-            // If authentication is successfull, retrieve the meetings
+            // If authentication is successful, retrieve the meetings
             if (!string.IsNullOrEmpty(_authResult.AccessToken))
             {
                 // Once Auth as been completed, find the meetings for the day
