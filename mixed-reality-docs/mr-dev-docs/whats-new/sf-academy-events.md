@@ -1,9 +1,9 @@
 ---
-title: SF Reactor Academy events calendar
+title: Mixed Reality Speaker Series
 description: Calendar of mixed reality developer events at the Reactor in San Francisco.
 author: danielescudero
 ms.author: daescu
-ms.date: 02/24/2019
+ms.date: 10/12/2020
 ms.topic: article
 keywords: event, calendar, academy, schedule, sf, san francisco, reactor
 ---
