@@ -20,7 +20,7 @@ The fastest path to building a [mixed reality app](../../design/app-views.md) in
 
 ## Development checkpoints
 
-Use the following checkpoints to bring your Unity games and applications into the world of mixed reality.
+Use the following checkpoints to bring your Unity games and applications into the world of mixed reality. If you haven't already explored the [Designing Holograms sample application](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd), we recommend downloading and using it to familiarize yourself with the basics of Mixed Reality UX. 
 
 ### 1. Getting started
 The easiest way to develop in Unity is with the Mixed Reality Toolkit. MRTK will help you automatically setup a project for Mixed Reality and provide a set of features to accelerate your development process. By the end of this section, you'll have a basic understanding of the Mixed Reality Toolkit, a properly configured development environment for Mixed Reality apps, and a working MRTK project in Unity that you built yourself.
