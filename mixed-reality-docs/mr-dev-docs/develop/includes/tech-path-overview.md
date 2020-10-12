@@ -103,11 +103,11 @@ You can use **Microsoft Dynamics 365 Guides** to visually tether holographic ins
 * [Kippy's Escape](../unreal/unreal-kippys-escape.md) - Kippy’s Escape is an open-source HoloLens 2 sample app built with Unreal Engine 4 and Mixed Reality UX Tools for Unreal. The game showcases the unique features of the HoloLens 2 hardware and the development power of the Mixed Reality UX Tools.
 
 
-# [Web](#tab/web)
+# [JavaScript](#tab/web)
 
 ![Web](../images/javascript_logo_banner.png)
 
-The WebXR Device API is an open specification that allows you to experience Mixed Reality apps in your browser on any platform. See the [Javascript development overview](../web/javascript-development-overview.md) to get started building Mixed Reality apps for any platform.
+The WebXR Device API is an open specification that allows you to experience Mixed Reality apps in your browser on any platform. See the [JavaScript development overview](../web/javascript-development-overview.md) to get started building Mixed Reality apps for any platform.
 
 
 # [Native (OpenXR)](#tab/native)
