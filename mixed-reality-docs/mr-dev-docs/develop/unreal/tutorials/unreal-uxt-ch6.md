@@ -78,7 +78,7 @@ Once you’re connected, click the drop-down arrow to the right of the **Play** 
     * In the next dialogue, include the appropriate **VCLibs** and **appx** files (arm64 for device, x64 for emulator). You can find these under **HoloLens** inside the folder where you saved your package.
 
 8.	Click **Install**
-    * You can now go to **All Apps** and tap the the newly installed app to run it, or you can start the app directly from the **Windows Device Portal**. 
+    * You can now go to **All Apps** and tap the newly installed app to run it, or you can start the app directly from the **Windows Device Portal**. 
 
 Congratulations! Your HoloLens mixed reality application is finished and ready to go. However, this isn't the end of the road. MRTK has lots of standalone features that you can add to your projects, including spatial mapping, gaze and voice input, and even QR codes. More information on these features can be found in the [Unreal development overview](https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview).
 
