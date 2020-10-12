@@ -361,7 +361,7 @@
         - name: Spectator view
           href: platform-capabilities-and-apis/spectator-view.md 
         - name: WebRTC 
-          href: https://github.com/microsoft/MixedReality-WebRTC.md 
+          href: https://github.com/microsoft/MixedReality-WebRTC 
     - name: Camera and capture  
       items: 
         - name: Locatable camera 
