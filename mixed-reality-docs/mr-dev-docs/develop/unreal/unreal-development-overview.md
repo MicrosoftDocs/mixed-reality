@@ -27,7 +27,7 @@ If you're new to Unreal development don't jump in blind. Explore the Unreal <a h
 
 ## Development checkpoints
 
-Use the following checkpoints to bring your Unreal games and applications into the world of mixed reality.
+Use the following checkpoints to bring your Unreal games and applications into the world of mixed reality. If you haven't already explored the [Designing Holograms sample application](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd), we recommend downloading and using it to familiarize yourself with the basics of Mixed Reality UX.
 
 ### 1. Getting started
 

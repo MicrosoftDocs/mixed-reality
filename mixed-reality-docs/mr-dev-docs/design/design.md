@@ -23,10 +23,13 @@ Use the following checkpoints to bring your application ideas and concepts into 
 
 Like all journeys, your adventure into designing Mixed Reality applications starts with the basics. We recommend familiarizing yourself with the [What is Mixed Reality](../discover/mixed-reality.md) and [What is a hologram?](../discover/hologram.md) articles to get your mind primed for immersive design. Once you've completed your read-through, you'll be ready to start your Mixed Reality design journey!
 
+![Getting started gif from Designing Holograms app](images/HandTracking2.gif)
+
 |  Checkpoint  |  Outcome  |
 | --- | --- |
 | [Expand your design process](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Get a first-hand look at methods, insights, and design theory gathered from Mixed Reality developers inside and outside of Microsoft |
 | [Types of Mixed Reality apps](types-of-mixed-reality-apps.md) | Decide where your app experience will live on the Mixed Reality spectrum |
+| [Designing Holograms sample app](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Learn the fundamentals of Mixed Reality UX Design by experiencing it yourself by diving into into Mixed Reality behaviors, tips and recommendations for creating amazing HoloLens apps |
 
 ### 2. Core concepts
 
