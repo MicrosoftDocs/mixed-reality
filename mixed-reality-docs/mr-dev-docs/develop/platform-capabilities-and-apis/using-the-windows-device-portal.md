@@ -371,3 +371,20 @@ Click or tap the region under **Virtual keyboard** to enable sending keystrokes 
 ## Device Portal REST API's
 
 Everything in the device portal is built on top of [REST API's](device-portal-api-reference.md) that you can optionally use to access the data and control your device programmatically.
+
+## Troubleshooting
+
+### How to fix the "It's lonely here" message
+
+> [!NOTE]
+> Going from a HoloLens 2 to HoloLens (1st gen) may cause the pages to become lonely if used on the HoloLens 2 prior to use on the HoloLens (1st gen).
+
+![It's lonely here message in Device Portal page](images/using-windows-portal-img-19.png)
+
+1. Select **Reset layout** from the top-left Menu:
+
+![Selecting Reset layout from the device portal menu](images/using-windows-portal-img-20.png)
+
+2. Click **Reset layout** under the **Reset workspace** heading. The portal page will automatically refresh and display your content.
+
+![Selecting Reset layout from the Reset workspace page](images/using-windows-portal-img-21.png)
