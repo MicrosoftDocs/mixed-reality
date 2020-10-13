@@ -13,6 +13,10 @@ keywords: HoloLens, Remoting, Holographic Remoting
 > [!IMPORTANT]
 > This guidance is specific to Holographic Remoting on HoloLens 2.
 
+## Version 2.3.1 (October 10, 2020) <a name="v2.3.1"></a>
+* Fixed regression with remote pose prediction which caused visual jitter.
+* Implemented PerceptionDeviceSetCreateFactoryOverride which ensures that PerceptionDevice.dll shipped with Holographic Remoting does not interfere with the version shipped with Windows 10.
+
 ## Version 2.3.0 (October 2, 2020) <a name="v2.3.0"></a>
 * Fixed crashes which can happen when Holographic Remoting Player is suspended.
 * Stability improvements.
