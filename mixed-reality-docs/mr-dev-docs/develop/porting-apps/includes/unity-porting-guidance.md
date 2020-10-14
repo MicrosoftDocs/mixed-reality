@@ -103,7 +103,7 @@ Both [Unity](https://docs.unity3d.com/Manual/Profiler.html) and [Visual Studio](
 You can port your input logic to Windows Mixed Reality using one of two approaches, Unity's general Input.GetButton/GetAxis APIs that span across multiple platforms, or the Windows-specific XR.WSA.Input APIs that offer richer data specifically for motion controllers and HoloLens hands.
 
 > [!IMPORTANT]
-> If you're using HP Reverb G2 controllers, please refer to [this article](../../immersive-vr/unity-reverb-g2-controllers.md) for additional input mapping instructions.
+> If you're using HP Reverb G2 controllers, please refer to [this article](../../unity/unity-reverb-g2-controllers.md) for additional input mapping instructions.
 
 ## General Input.GetButton/GetAxis APIs
 
@@ -139,11 +139,11 @@ These pose coordinates are all expressed in Unity world coordinates.
 ## Unreal porting guidance
 
 > [!IMPORTANT]
-> If you're using HP Reverb G2 controllers, please refer to [this article](../../unreal-reverb-g2-controllers.md) for additional input mapping instructions.
+> If you're using HP Reverb G2 controllers, please refer to [this article](../../unreal/unreal-reverb-g2-controllers.md) for additional input mapping instructions.
 
 ## See also
 * [Motion controllers]()../../design/motion-controllers.md)
-* [Gestures and motion controllers in Unity](../unity/gestures-and-motion-controllers-in-unity.md)
+* [Gestures and motion controllers in Unity](../../unity/gestures-and-motion-controllers-in-unity.md)
 * [UnityEngine.XR.WSA.Input](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
 * [UnityEngine.XR.InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)
-* [Porting guides](../porting-apps/porting-guides.md)
+* [Porting guides](../porting-guides.md)
