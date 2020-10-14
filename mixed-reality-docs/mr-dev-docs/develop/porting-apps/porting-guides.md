@@ -50,7 +50,7 @@ The Windows Mixed Reality platform is still under active development. We recomme
 ## Unreal porting guidance
 
 > [!IMPORTANT]
-> If you're using HP Reverb G2 controllers, please refer to [this article](../../unreal/unreal-reverb-g2-controllers.md) for additional input mapping instructions.
+> If you're using HP Reverb G2 controllers, please refer to [this article](../unreal/unreal-reverb-g2-controllers.md) for additional input mapping instructions.
 
 ## See also
 * [Input porting guide for Unity](input-porting-guide-for-unity.md)
