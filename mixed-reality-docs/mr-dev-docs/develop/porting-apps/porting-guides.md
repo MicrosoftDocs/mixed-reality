@@ -53,7 +53,11 @@ The Windows Mixed Reality platform is still under active development. We recomme
 > If you're using HP Reverb G2 controllers, please refer to [this article](../unreal/unreal-reverb-g2-controllers.md) for additional input mapping instructions.
 
 ## See also
-* [Input porting guide for Unity](input-porting-guide-for-unity.md)
 * [Windows Mixed Reality minimum PC hardware compatibility guidelines](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [Understanding Performance for Mixed Reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 * [Performance Recommendations for Unity](../unity/performance-recommendations-for-unity.md)
+* [Motion controllers](../../design/motion-controllers.md)
+* [Gestures and motion controllers in Unity](../../unity/gestures-and-motion-controllers-in-unity.md)
+* [UnityEngine.XR.WSA.Input](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
+* [UnityEngine.XR.InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)
+* [Porting guides](../porting-guides.md)

@@ -135,10 +135,3 @@ To better represent these controllers, there are two kinds of poses you can inve
     * Currently, the pointer pose is available only through the Windows-specific API (**sourceState.sourcePose.TryGetPosition/Rotation**, requesting the Pointer pose).
 
 These pose coordinates are all expressed in Unity world coordinates.
-
-## See also
-* [Motion controllers]()../../design/motion-controllers.md)
-* [Gestures and motion controllers in Unity](../../unity/gestures-and-motion-controllers-in-unity.md)
-* [UnityEngine.XR.WSA.Input](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
-* [UnityEngine.XR.InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)
-* [Porting guides](../porting-guides.md)
