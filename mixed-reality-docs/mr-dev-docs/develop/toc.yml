@@ -213,7 +213,7 @@
   - name: Immersive VR
     items:
       - name: HP Reverb G2 controllers in Unity
-        href: unity-reverb-g2-controllers.md
+        href: unity/unity-reverb-g2-controllers.md
   - name: Sample apps
     items: 
       - name: Overview 
@@ -295,7 +295,7 @@
   - name: Immersive VR 
     items: 
       - name: HP Reverb G2 controllers in Unreal
-        href: unreal-reverb-g2-controllers.md
+        href: unreal/unreal-reverb-g2-controllers.md
   - name: Sample apps
     items: 
       - name: Overview
