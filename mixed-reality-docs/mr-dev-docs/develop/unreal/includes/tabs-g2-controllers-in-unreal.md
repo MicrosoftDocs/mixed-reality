@@ -1,12 +1,12 @@
 # [OpenXR](#tab/openxr)
 
-## Enabling OpenXRHPController Plugin 
+### Enabling OpenXRHPController Plugin 
 
 The interaction profile and controller mappings are in the OpenXRHPController plugin, which must be enabled to expose the controller mappings to Unreal’s input system. 
 
 ![Enabling the OpenXRHPController plugin](../images/reverb-g2-img-01.png)
 
-## Porting From Existing OpenXR Game 
+### Porting From Existing OpenXR Game 
 
 If no controller bindings exist in the game for the HP Mixed Reality Controller, the OpenXR runtime will attempt to remap the existing bindings to the active controller.  In this case, the game has Oculus Touch bindings and no HP Mixed Reality Controller bindings.
 
@@ -19,6 +19,6 @@ The events will still fire, but if the game needs to make use of controller spec
 
 # [SteamVR](#tab/steamvr)
 
-## Enabling PHP Controller
+### Enabling PHP Controller
 
 

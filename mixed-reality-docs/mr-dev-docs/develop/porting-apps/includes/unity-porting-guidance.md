@@ -136,11 +136,6 @@ To better represent these controllers, there are two kinds of poses you can inve
 
 These pose coordinates are all expressed in Unity world coordinates.
 
-## Unreal porting guidance
-
-> [!IMPORTANT]
-> If you're using HP Reverb G2 controllers, please refer to [this article](../../unreal/unreal-reverb-g2-controllers.md) for additional input mapping instructions.
-
 ## See also
 * [Motion controllers]()../../design/motion-controllers.md)
 * [Gestures and motion controllers in Unity](../../unity/gestures-and-motion-controllers-in-unity.md)

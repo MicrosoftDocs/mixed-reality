@@ -1,5 +1,6 @@
 # [HP Reverb G2](#tab/reverb)
 
-### 1. Add G2 porting steps...
+## Unreal porting guidance
 
-### 2. Controller input
+> [!IMPORTANT]
+> If you're using HP Reverb G2 controllers, please refer to [this article](../../unreal/unreal-reverb-g2-controllers.md) for additional input mapping instructions.
