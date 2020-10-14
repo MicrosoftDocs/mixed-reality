@@ -76,12 +76,7 @@ The system will automatically render the boundary when the user approaches it. Y
 
 For more information, see the [Coordinate systems in Unity](../unity/coordinate-systems-in-unity.md) page.
 
-Some applications use a rectangle to constrain their interaction. Retrieving the largest inscribed rectangle is not directly supported in the UWP API or Unity. The example code linked to below shows how to find a rectangle within the traced bounds. It's heuristic-based so may not find the optimal solution, however, results are consistent with expectations. Parameters in the algorithm can be tuned to find more precise results at the cost of processing time. The algorithm is in a fork of the Mixed Reality Toolkit that uses the 5.6 preview MRTP version of Unity. This isn't publicly available. The code should be directly usable in 2017.2 and higher versions of Unity. The code will be ported to the current MRTK in the near future.
-
-[zip file of code on GitHub](https://github.com/KevinKennedy/MixedRealityToolkit-Unity/releases/tag/5.6.MRTP20) Important files:
-* Assets/HoloToolkit/Stage/Scripts/StageManager.cs - example of usage
-* Assets/HoloToolkit/Stage/Scripts/LargestRectangle.cs - implementation of the algorithm
-* Assets/HoloToolkit-UnitTests/Editor/Stage/LargestRectangleTest.cs - trivial test of the algorithm
+<!-- Some applications use a rectangle to constrain their interaction. Retrieving the largest inscribed rectangle is not directly supported in the UWP API or Unity. The example code linked to below shows how to find a rectangle within the traced bounds. It's heuristic-based so may not find the optimal solution, however, results are consistent with expectations. Parameters in the algorithm can be tuned to find more precise results at the cost of processing time. The algorithm is in a fork of the Mixed Reality Toolkit that uses the 5.6 preview MRTP version of Unity. This isn't publicly available. The code should be directly usable in 2017.2 and higher versions of Unity. The code will be ported to the current MRTK in the near future. -->
 
 Example of results:
 
@@ -103,15 +98,12 @@ Windows Mixed Reality will be available on a broad class of devices, ranging fro
 
 Both [Unity](https://docs.unity3d.com/Manual/Profiler.html) and [Visual Studio](https://docs.microsoft.com/visualstudio/profiling/index) include performance profilers, and both [Microsoft](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) and [Intel](https://software.intel.com/articles/vr-content-developer-guide) publish guidelines on performance profiling and optimization. There's an extensive discussion of performance available at [Understanding Performance for Mixed Reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md). Further, there are specific details for Unity under [Performance Recommendations for Unity](../unity/performance-recommendations-for-unity.md).
 
-# [HP Reverb G2](#tab/reverb)
-
-### 1. Add G2 porting steps...
-
-### 2. Controller input
-
 # [Input mapping](#tab/input)
 
 You can port your input logic to Windows Mixed Reality using one of two approaches, Unity's general Input.GetButton/GetAxis APIs that span across multiple platforms, or the Windows-specific XR.WSA.Input APIs that offer richer data specifically for motion controllers and HoloLens hands.
+
+> [!IMPORTANT]
+> If you're using HP Reverb G2 controllers, please refer to [this article](../immersive-vr/unity-reverb-g2-controllers.md) for additional input mapping instructions.
 
 ## General Input.GetButton/GetAxis APIs
 
@@ -143,6 +135,11 @@ To better represent these controllers, there are two kinds of poses you can inve
     * Currently, the pointer pose is available only through the Windows-specific API (**sourceState.sourcePose.TryGetPosition/Rotation**, requesting the Pointer pose).
 
 These pose coordinates are all expressed in Unity world coordinates.
+
+## Unreal porting guidance
+
+> [!IMPORTANT]
+> If you're using HP Reverb G2 controllers, please refer to [this article](../unreal-reverb-g2-controllers.md) for additional input mapping instructions.
 
 ## See also
 * [Motion controllers]()../../design/motion-controllers.md)

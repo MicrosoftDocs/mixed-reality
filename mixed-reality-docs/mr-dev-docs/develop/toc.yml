@@ -210,6 +210,10 @@
         href: unity/unity-xrdevice-advanced.md
       - name: Using Vuforial with Unity 
         href: unity/vuforia-development-overview.md
+  - name: Immersive VR
+    items:
+      - name: HP Reverb G2 controllers in Unity
+        href: unity-reverb-g2-controllers.md
   - name: Sample apps
     items: 
       - name: Overview 
@@ -282,14 +286,16 @@
         href: unreal/unreal-voice-input.md
   - name: Platform capabilities and APIs 
     items: 
-      - name: HP Reverb G2 controllers in Unreal
-        href: unreal-reverb-g2-controllers.md
       - name: HoloLens Photo/Video Camera in Unreal
         href: unreal/unreal-hololens-camera.md
       - name: QR codes in Unreal
         href: unreal/unreal-qr-codes.md
       - name: WinRT in Unreal
         href: unreal/unreal-winrt.md
+  - name: Immersive VR 
+    items: 
+      - name: HP Reverb G2 controllers in Unreal
+        href: unreal-reverb-g2-controllers.md
   - name: Sample apps
     items: 
       - name: Overview
