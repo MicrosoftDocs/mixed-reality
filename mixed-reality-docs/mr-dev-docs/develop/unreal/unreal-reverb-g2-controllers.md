@@ -34,4 +34,4 @@ Right click on a Blueprint and search for the new action names from the input sy
 
 ## Using controller input
 
-[!INCLUDE[](includes/tabs-g2-controller-mappings-in-unreal.md)]
+[!INCLUDE[](includes/tabs-g2-controller-mapping-in-unreal.md)]
