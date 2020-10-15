@@ -70,7 +70,7 @@ There are a variety of features and services available through Windows Mixed Rea
 ### 4. Troubleshooting, tips & resources
 When you run into trouble with anything relating to your immersive hardware, start with the [General FAQ](troubleshooting-windows-mixed-reality.md) we've put together. If you don't find what you're looking for there, we have an exhaustive list of topic-specific FAQ documents in the **Troubleshooting FAQs** section that cover everything from installation and error codes all the way to performance and headset displays. 
 
-We are always on the lookout for new issues and bugs, so if you run into any that are undocumented please send us [feedback here](filing-feedback.md)
+We are always on the lookout for new issues and bugs, so if you run into any that are undocumented please send us [feedback here](filing-feedback.md).
 
 If you want to know more about how specific features work in VR, check out the articles below:
 * [How motion controllers works](motion-controllers.md)
@@ -82,5 +82,4 @@ If you want to know more about how specific features work in VR, check out the a
 > [!div class="nextstepaction"]
 > [Minimum PC hardware guidelines](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
 
-## See also
-[TODO: Need links]
+<br>
