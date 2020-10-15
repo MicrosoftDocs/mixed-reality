@@ -15,29 +15,34 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
 
 Before diving into the design your experience, it's helpful to understand a few core concepts. Each topic below is an underlying factor that fundamentally affects and contributes to the quality of the mixed reality experience you are creating for your user. 
 
+
+
+[![Types of mixed reality apps](images/enhancedenvironmentapps-640px.jpg)](types-of-mixed-reality-apps.md)
+        **[Types of mixed reality apps](types-of-mixed-reality-apps.md)**
+
 :::row:::
+    :::column:::
+        [![App model](images/teleportation-640px.png)](app-model.md)
+        **[App model](app-model.md)**
+    :::column-end:::
     :::column:::
        [![Comfort](images/comfort-chart.PNG)](comfort.md)
         **[Comfort](comfort.md)**
     :::column-end:::
     :::column:::
-       [![Holographic frame](images/destinationmars-750px.png)](holographic-frame.md)
-        **[Holographic frame](holographic-frame.md)**
-    :::column-end:::
-    :::column:::
-       [![Types of mixed reality apps](images/enhancedenvironmentapps-640px.jpg)](types-of-mixed-reality-apps.md)
-        **[Types of mixed reality apps](types-of-mixed-reality-apps.md)**
+        [![Coordinate systems](images/coordinate-systems.PNG)](coordinate-systems.md)
+        **[Coordinate systems](coordinate-systems.md)**
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       [![App model](images/teleportation-640px.png)](app-model.md)
-        **[App model](app-model.md)**
+        [![Holographic frame](images/destinationmars-750px.png)](holographic-frame.md)
+        **[Holographic frame](holographic-frame.md)**
     :::column-end:::
     :::column:::
-        [![Coordinate systems](images/coordinate-systems.PNG)](coordinate-systems.md)
-        **[Coordinate systems](coordinate-systems.md)**
+        [![Room scan visualization](images/sr-mixedworld-140429-8pm-00068-1000px.png)](room-scan-visualization.md)
+        **[Room scan visualization](room-scan-visualization.md)**
     :::column-end:::
     :::column:::
         [![Scene understanding](images/scene-understanding.png)](scene-understanding.md)
@@ -51,8 +56,7 @@ Before diving into the design your experience, it's helpful to understand a few 
         **[Spatial mapping](spatial-mapping.md)**
     :::column-end:::
     :::column:::
-       [![Room scan visualization](images/sr-mixedworld-140429-8pm-00068-1000px.png)](room-scan-visualization.md)
-        **[Room scan visualization](room-scan-visualization.md)**
+       
     :::column-end:::
     :::column:::
        [![Spatial anchors](images/azurespatialanchors.jpg)](spatial-anchors.md)
