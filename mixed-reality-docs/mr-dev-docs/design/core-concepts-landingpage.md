@@ -15,11 +15,6 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
 
 Before diving into the design your experience, it's helpful to understand a few core concepts. Each topic below is an underlying factor that fundamentally affects and contributes to the quality of the mixed reality experience you are creating for your user. 
 
-
-
-[![Types of mixed reality apps](images/enhancedenvironmentapps-640px.jpg)](types-of-mixed-reality-apps.md)
-        **[Types of mixed reality apps](types-of-mixed-reality-apps.md)**
-
 :::row:::
     :::column:::
         [![App model](images/teleportation-640px.png)](app-model.md)
@@ -52,15 +47,16 @@ Before diving into the design your experience, it's helpful to understand a few 
 
 :::row:::
     :::column:::
-       [![Spatial mapping](images/surfacereconstruction.jpg)](spatial-mapping.md)
+        [![Spatial anchors](images/azurespatialanchors.jpg)](spatial-anchors.md)
+        **[Spatial anchors](spatial-anchors.md)**
+    :::column-end:::
+    :::column:::
+        [![Spatial mapping](images/surfacereconstruction.jpg)](spatial-mapping.md)
         **[Spatial mapping](spatial-mapping.md)**
     :::column-end:::
     :::column:::
-       
-    :::column-end:::
-    :::column:::
-       [![Spatial anchors](images/azurespatialanchors.jpg)](spatial-anchors.md)
-        **[Spatial anchors](spatial-anchors.md)**
+        [![Types of mixed reality apps](images/enhancedenvironmentapps-640px.jpg)](types-of-mixed-reality-apps.md)
+        **[Types of mixed reality apps](types-of-mixed-reality-apps.md)**
     :::column-end:::
 :::row-end:::
 
