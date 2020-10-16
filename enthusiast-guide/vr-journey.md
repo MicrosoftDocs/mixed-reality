@@ -11,16 +11,14 @@ keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR,
 
 # Start your VR journey
 
-[TODO: Need header image]
+![Stock image of VR overlaid environment](images/BeforeYouBegin-tile.jpg)
 
 ## Setup & usability checkpoints
 
 Use the following checkpoints to setup, configure, and use your immersive VR devices to bring your applications and games to life.
 
 ### 1. Before you buy
-Building virtual reality applications is a intense process, but once you've set out on that path it's often hard to know what physical devices you'll need to be successful. This section will walk you through the minimum PC requirements, compatibility checks, and frequently asked questions associated with virtual reality hardware.
-
-[TODO: Need header image]
+It's important that your PC can handle the VR hardware you’re buying in order to have the best setup and usage experience. In some cases, you may need to order additional [adapters or hardware](recommended-adapters-for-windows-mixed-reality-capable-pcs.md).This section will walk you through the minimum PC requirements, compatibility checks, and frequently asked questions associated with virtual reality hardware.
 
 |  Checkpoint  |  Outcome  |
 | --- | --- |
@@ -28,30 +26,18 @@ Building virtual reality applications is a intense process, but once you've set 
 | [Get help with PC compatibility](get-help-with-pc-compatibility.md) | Understand the generated report from the Windows Mixed Reality PC check |
 | [Buying FAQs](before-you-buy-faqs.md) | Get answers to all your buying questions about technical specifications, devices, and controllers |
 
-> [!NOTE]
-> If your PC doesn't have the full-sized HDMI and USB 3.0 ports needed to connect your immersive headset you'll need the right **[adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)**.
-
 ### 2. Getting started
 Once you have your device, you'll need to correctly set up and configure it for use. By the end of this section you'll have all the software requirements installed and be ready to start using Windows Mixed Reality.
 
-[TODO: Need header image]
-
 |  Checkpoint  |  Outcome  |
 | --- | --- |
-| [Prerequisites check](before-you-start.md) | Make sure your development environment is correctly setup |
-| [Plugin your headset](plug-in-your-headset.md) | Connect your headset and troubleshoot known issues |
-| [Install Windows Mixed Reality](install-windows-mixed-reality.md) | Launch the Mixed Reality Portal and download Windows Mixed Reality |
 | [Set up Windows Mixed Reality](set-up-windows-mixed-reality.md) | Get comfortable with your controllers, room boundaries, speech input, and installing Microsoft Edge |
 | [Windows Mixed Reality setup FAQs](wmr-setup-faq.md) | Get answers and troubleshooting help with known issues during the setup process |
-
-> [!NOTE]
-> Before proceeding, we recommend familiarizing yourself with our **[immersive headset health, safety, and comfort](wmr-health-safety-comfort.md)** guidelines.
+| [Immersive headset health, safety, and comfort guidelines](wmr-health-safety-comfort.md) | Recommendations to stay safe while using Windows Mixed Reality before using your headset  |
 
 
 ### 3. Using Windows Mixed Reality
-There are a variety of features and services available through Windows Mixed Reality and immersive VR headsets. By the end of this section, you'll be comfortable navigating the virtual home environment, using controllers and speech as inputs, and integrating services and applications like SteamVR and Microsoft Edge.
-
-[TODO: Need header image]
+There are a variety of features and services available through Windows Mixed Reality and immersive VR headsets. By the end of this section, you'll be comfortable navigating the virtual home environment, using controllers and speech as inputs, and integrating services and applications like SteamVR and WebVR.
 
 |  Checkpoint  |  Feature  |
 | --- | --- |
