@@ -1,10 +1,12 @@
 # [Windows Mixed Reality enthusiast documentation](index.yml)
+## [Start your VR journey](vr-journey.md)
 
 ## Before you buy
-### [Frequently asked questions](before-you-buy-faqs.md)
-### [Recommended adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+<!-- ### [What is Windows Mixed Reality?](windows-mixed-reality.md) -->
 ### [Minimum PC hardware guidelines](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
+### [Recommended adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 ### [Get help with PC compatibility](get-help-with-pc-compatibility.md)
+### [Frequently asked questions](before-you-buy-faqs.md)
 
 ## Getting started
 ### [Before you start](before-you-start.md)
@@ -46,4 +48,3 @@
 ### [Mixed Reality software overview and release history](mixed-reality-software.md)
 ### [How motion controllers work](motion-controllers.md)
 ### [How inside-out tracking works](tracking-system.md)
-### [Headset health, safety, and comfort](wmr-health-safety-comfort.md)

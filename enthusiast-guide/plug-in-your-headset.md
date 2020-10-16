@@ -24,7 +24,7 @@ Identify the HDMI out port on your computer and plug in the headset's HDMI cable
 
 ## Connect headphones to your headset
 
-Unless you purchased a Samsung HMD Odyssey headset (which has integrated AKG headphones and an integrated dual-array microphone), you will need to connect headphones (preferably with an inline microphone) that can plug into your headset's 3.5mm audio jack.
+Unless you purchased a Samsung HMD Odyssey headset, HP Reverb or HP Reverb G2 (which have integrated AKG headphones and an integrated dual-array microphone), you will need to connect headphones (preferably with an inline microphone) that can plug into your headset's 3.5mm audio jack.
 
 ## Common issues
 * You plugged in the HDMI cable before plugging in the USB 3.0 cable.  Make sure that you plug in the USB 3.0 cable **before** plugging in the HDMI cable.
