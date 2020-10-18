@@ -132,7 +132,7 @@ For all other HMD's, please refer to the following requirements:
     <td style="vertical-align: middle"><a href="Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md">USB connectivity</a></td>
     <td colspan="2" style="vertical-align: middle; text-align: center;">USB 3.0 Type-A </td>
 </tr><tr>
-    <td style="vertical-align: middle">Bluetooth connectivity (for <a href="Motion-controllers.md">motion controllers</a>)</td>
+    <td style="vertical-align: middle">Bluetooth connectivity (for <a href="controllers-in-wmr.md">motion controllers</a>)</td>
     <td colspan="3" style="vertical-align: middle; text-align: center;">Bluetooth 4.0</td>
 </tr><tr>
     <td style="vertical-align: middle">Expected headset framerate</td>
