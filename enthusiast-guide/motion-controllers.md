@@ -32,6 +32,7 @@ Windows Mixed Reality motion controllers offer precise and responsive tracking o
 ![Get to know your controller](images/controllerimage.png)
 
 **Features:**
+
 * Optical tracking
 * Trigger
 * Grab button
@@ -58,7 +59,8 @@ Windows Mixed Reality motion controllers offer precise and responsive tracking o
 |     Scroll in an app window     |                                                                                                    Pull and hold the trigger, then move the controller up or down.                                                                                                     |
 |  Zoom in or out in app window   |                                                                                            Pull both triggers, then move the controllers closer together or farther apart.                                                                                             |
 
-## Updating controller firmware
+## Updating motion controllers firmware
+
 * If an immersive headset is connected to your PC, and new controller firmware is available, the firmware will be pushed to your motion controllers automatically the next time they're turned on.
 * Controller firmware updates are indicated by a pattern of illuminating LED quadrants in a circular motion, and take 1-2 minutes. Firmware updates can occasionally take longer, up to 10 minutes, which may indicate poor Bluetooth connectivity or radio interference.
 * In case firmware update is interrupted (controller powered off or battery runs out) it will be tried again on next power on.
@@ -66,7 +68,7 @@ Windows Mixed Reality motion controllers offer precise and responsive tracking o
 * Both controllers should be connected now. (Check Bluetooth and other devices for the following): ![Controllers connected](images/cyk-connected.jpg)
 * Verify your controllers work properly:
   * Launch **Mixed Reality Portal** and enter your Mixed Reality Home.
-  * Move your controllers and verify tracking, test buttons, and verify teleportation works. If they don't, then check out [the motion controller troubleshooting section](motion-controller-problems.md) 
+  * Move your controllers and verify tracking, test buttons, and verify teleportation works. If they don't, then check out [the motion controller troubleshooting section](motion-controller-problems.md)
 
 ## FAQ
 
