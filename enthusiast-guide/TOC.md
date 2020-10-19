@@ -43,8 +43,7 @@
 ### [WebVR](webvr-questions.md)
 ### [Other questions](other-questions.md)
 
-## Appendix
+## Resources
 ### [Filing bugs and feedback](filing-feedback.md)
 ### [Mixed Reality software overview and release history](mixed-reality-software.md)
-### [How motion controllers work](motion-controllers.md)
 ### [How inside-out tracking works](tracking-system.md)
