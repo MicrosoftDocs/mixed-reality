@@ -28,6 +28,7 @@
 ### [Using Windows Mixed Reality FAQ](using-wmr-faq.md)
 
 ## Troubleshooting FAQs
+### [Filing bugs and feedback](filing-feedback.md)
 ### [General FAQ](troubleshooting-windows-mixed-reality.md)
 ### [Installation errors](installation_errors.md)
 ### [Setup](set-up-questions.md)
@@ -44,6 +45,6 @@
 ### [Other questions](other-questions.md)
 
 ## Resources
-### [Filing bugs and feedback](filing-feedback.md)
+### [Immersive headset health, safety, and comfort](wmr-health-safety-comfort.md)
 ### [Mixed Reality software overview and release history](mixed-reality-software.md)
 ### [How inside-out tracking works](tracking-system.md)

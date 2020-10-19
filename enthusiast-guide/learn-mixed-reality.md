@@ -37,7 +37,7 @@ Learn Mixed Reality is an app. The app can be launched from the Start menu insid
 3. Select "Learn Mixed Reality"
 4. Left-click with your mouse to place the app in your home and launch the app
 
-To learn more about how to get around in mixed reality with motion controllers, review [motion controllers in Mixed reality](controllers-in-wmr.md)
+To learn more about how to get around in mixed reality with motion controllers, review [motion controllers in Mixed Reality](controllers-in-wmr.md)
 
 ## Use voice commands and Cortana inside of the Windows Mixed Reality home
 
