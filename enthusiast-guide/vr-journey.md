@@ -69,7 +69,7 @@ We are always on the lookout for new issues and bugs, so if you run into any tha
 
 If you want to know more about how specific features work in VR, check out the articles below:
 
-* [How motion controllers works](motion-controllers.md)
+* [How motion controllers works](controllers-in-wmr.md)
 * [How inside-out tracking works](tracking-system.md)
 
 > [!NOTE]
