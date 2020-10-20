@@ -119,7 +119,7 @@ public:
     }
 
 private:
-    winrt::Windows::Storage::StorageFile m_file = winrt::Windows::Storage::StorageFile(nullprt);
+    winrt::Windows::Storage::StorageFile m_file = winrt::Windows::Storage::StorageFile(nullptr);
     std::thread m_thread;
 
     winrt::Windows::Foundation::IAsyncAction OpenFileDialogueAction()
