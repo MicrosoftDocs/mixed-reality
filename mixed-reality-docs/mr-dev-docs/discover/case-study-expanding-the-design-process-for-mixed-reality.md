@@ -79,7 +79,7 @@ Our process today starts with whiteboarding and sticky notes and expands into ph
 The design process is messy and every team is different. However, methods like bodystorming, acting, and storyboarding can help alleviate difficulties in iteration.
 
 ![Design process flow 2](images/MRDesignProcess_Flow3.png)<br>
-*In reality, it is continous iterative phases*
+*In reality, it is continuous iterative phases*
 
 
 ## Expanding your team's skills
