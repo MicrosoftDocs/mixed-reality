@@ -195,7 +195,7 @@ public class ConsumeWinRT : ModuleRules
             // which is two directories up from the game .exe (Binaries/HoloLens)
             return Path.GetFullPath(
                    Path.Combine(ModulePath,
-                   "../../ThirddParty/HoloLensWinrtDLL"));
+                   "../../ThirdParty/HoloLensWinrtDLL"));
         }
     }
 }
