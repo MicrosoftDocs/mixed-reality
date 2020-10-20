@@ -47,7 +47,7 @@ Check that your PC is connected to the Internet. You will need to download drive
 
 ## Make sure you have a compatible graphics driver
 
-Your PC must have a WDDM 2.2 or later graphics driver in order to complete Mixed Reality setup. If it does not already have a compatible graphics driver, try these sources:
+Your PC must have a WDDM 2.2 or later graphics driver in order to complete Windows Mixed Reality setup. If it does not already have a compatible graphics driver, try these sources:
 
 * Check for the latest critical driver updates using Windows Update (**Start > Windows Settings > Update and Security > Check for Updates**)
 * Check for the latest optional driver updates:
@@ -59,7 +59,7 @@ Your PC must have a WDDM 2.2 or later graphics driver in order to complete Mixed
 
 ## Make sure that you have any required adapters
 
-Your Windows Mixed Reality compatible PC may not have the full-sized HDMI and USB 3.0 ports needed to connect your immersive headset. Or you may need a Bluetooth adapter to meet the Mixed Reality Portal requirements.  If that's the case, you'll need adapters to connect your headset and motion controllers. You'll find a list of adapter types you may need, and some recommendations on specific adapter models [here](recommended-adapters-for-windows-mixed-reality-capable-pcs.md).
+Your Windows Mixed Reality compatible PC may not have the full-sized HDMI and USB 3.0 ports needed to connect your immersive headset. Or you may need a Bluetooth adapter to meet the Windows Mixed Reality Portal requirements.  If that's the case, you'll need adapters to connect your headset and motion controllers. Make sure to review a list of [adapter types you may need, and some recommendations on specific adapter models](recommended-adapters-for-windows-mixed-reality-capable-pcs.md).
 
 ## Make sure that you have input devices
 
@@ -71,7 +71,7 @@ Unless you purchased a Samsung HMD Odyssey, HP Reverb or HP Reverb G2 headsets (
 
 ## Make sure that you have a large, open space
 
-If you want to move around while using Windows Mixed Reality you'll need to have a large, open space.  During setup you will be asked to choose between "Seated and standing" or "All experiences". Chose "All experiences" and set up a boundary if you want to move around.
+If you want to move around while using Windows Mixed Reality you'll need to have a large, open space.  During setup you will be asked to choose between "Seated and standing" or "All experiences". Chose "All experiences" and set up a boundary if you want to move around. Review the [immersive headset health, safety, and comfort guidelines](wmr-health-safety-comfort.md) to understand the space requirements.
 
 ### Seated and standing (no boundary)
 

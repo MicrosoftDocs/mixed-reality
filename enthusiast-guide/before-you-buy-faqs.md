@@ -305,8 +305,6 @@ Technical details listed above are referenced from manufacturer specifications a
 
 **Quick Answer:** Windows Mixed Reality will only work with approved Windows Mixed Reality headsets / controllers. See <https://www.microsoft.com/en-us/store/b/virtualreality>
 
-
-
 ## Motion Controllers
 
 ### How do motion controllers work with my PC?
