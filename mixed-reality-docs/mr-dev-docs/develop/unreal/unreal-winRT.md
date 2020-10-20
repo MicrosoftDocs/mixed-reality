@@ -260,7 +260,7 @@ void AWinfrtActor::BeginPlay()
     * In the **Place Actors** tab, search for the new **WinrtActor** and drag it into the scene 
     * Open the level blueprint to execute the blueprint callable function in the **WinrtActor** 
 
-![Configuring the DLL](images/unreal-winrt-img-06.png)
+![Placing the WinrtActor in the scene](images/unreal-winrt-img-06.png)
 
 2. In the **World Outliner**, find the **WindrtActor** previously dropped into the scene and drag it into the level blueprint: 
 
