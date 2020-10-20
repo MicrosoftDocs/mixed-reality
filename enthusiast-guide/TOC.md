@@ -14,7 +14,6 @@
 ### [Install Windows Mixed Reality](install-windows-mixed-reality.md)
 ### [Set up Windows Mixed Reality](set-up-windows-mixed-reality.md)
 ### [Windows Mixed Reality Setup FAQ](wmr-setup-faq.md)
-### [Immersive headset health, safety, and comfort](wmr-health-safety-comfort.md)
 
 ## Using Windows Mixed Reality
 ### [Learn Mixed Reality](learn-mixed-reality.md)
