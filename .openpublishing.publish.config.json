@@ -1,9 +1,9 @@
 {
   "docsets_to_publish": [
     {
-      "docset_name": "enthusiast-guide1",
+      "docset_name": "enthusiast-guide",
       "build_source_folder": "enthusiast-guide",
-      "build_output_subfolder": "enthusiast-guide1",
+      "build_output_subfolder": "enthusiast-guide",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
