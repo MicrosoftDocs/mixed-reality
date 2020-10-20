@@ -106,7 +106,7 @@ With the newly duplicated Parts child objects still selected, click-and-drag the
 
 ![mr-learning-base](images/mr-learning-base/base-04-section4-step1-3.png)
 
-To make it easier to work with your scene, in the Hierarchy window, click the **eye** icon to the left of the object to toggle the **scene visibility** for the **RoverExplorer** object off. This hides the object in the Scene window without changing its in-game visibility:
+To make it easier to work with your scene, in the Hierarchy window, click the **eye** icon to the left of the object to toggle the **scene visibility** for the **RoverAssembly** object off. This hides the object in the Scene window without changing its in-game visibility:
 
 ![mr-learning-base](images/mr-learning-base/base-04-section4-step1-4.png)
 
@@ -138,5 +138,4 @@ Then click the **Update Collection** button to update the position of the RoverP
 
 In this tutorial, you learned how to position objects in the scene relative to the user and use MRTK's Grid Object Collection feature to organize objects in a collection.
 
-> [!div class="nextstepaction"]
-> [Next Tutorial: 5. Creating dynamic content using Solvers](mr-learning-base-05.md)
+[Next Tutorial: 5. Creating dynamic content using Solvers](mr-learning-base-05.md)

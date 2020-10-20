@@ -101,7 +101,10 @@ Rename the first button to **Indicator**, then in the Inspector window, configur
 
 ![mr-learning-base](images/mr-learning-base/base-06-section2-step1-3.png)
 
-In the Hierarchy window, select the **Indicator** object, then in the Inspector window, uncheck the checkbox next to its name to make it inactive by default:
+In the Hierarchy window, select the **Indicator** object, then in the Inspector window:
+
+* Uncheck the checkbox next to its name to make it inactive by default
+* Use the **Add Component** button to add the **Directional Indicator Controller (Script)** component
 
 ![mr-learning-base](images/mr-learning-base/base-06-section2-step1-4.png)
 
@@ -121,7 +124,7 @@ Rename the second button to **TapToPlace**, then in the Inspector window, config
 In the Hierarchy window, select the **RoverAssembly** object, then in the Inspector window, configure the **Tap To Place (Script)** component as follows:
 
 * Uncheck the checkbox next to its name to make it inactive by default
-* In the **On Placing Stopped ()** event section, click the **+** icon to add a new event:
+* In the **On Placing Started ()** event section, click the **+** icon to add a new event:
 * Assign the RoverExplorer > **RoverAssembly** object to the **None (Object)** field
 * From the **No Function** dropdown, select **TapToPlace** > **bool Enabled** to update this property value when the event is triggered
 * Verify that the argument checkbox is **unchecked**
@@ -187,5 +190,4 @@ Press the Play button to enter Game mode, then press-and-hold the right mouse bu
 
 In this tutorial, you learned how to create a simple user interface using MRTK's provided button and menu prefabs alongside Unity's TextMeshPro component and how to configure the buttons to trigger events when they are pressed. You also learned how to add dynamic tooltip UI elements to provide the user with additional information.
 
-> [!div class="nextstepaction"]
-> [Next Tutorial: 7. Interacting with 3D objects](mr-learning-base-07.md)
+[Next Tutorial: 7. Interacting with 3D objects](mr-learning-base-07.md)
