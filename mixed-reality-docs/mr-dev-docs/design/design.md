@@ -83,12 +83,12 @@ A designers job is never done, especially when learning to create immersive expe
         Learn how to create interactive experiences with Unity. Learn by doing, from start to finish.
     :::column-end:::	
     :::column:::	
-        [![Mixed Reality Toolkit (MRTK)](images/icon-mrtk_74x74.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
+        [![Mixed Reality Toolkit (MRTK)](images/Final_mrtk-small_logo.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
         **[Mixed Reality Toolkit (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity)**<br>	
         With spatial interaction and UI building blocks, jump-start your mixed reality design and development with Unity.	
     :::column-end:::
     :::column:::	
-        [![Mixed Reality Design Labs](images/icon-mrdl_74x74.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
+        [![Mixed Reality Design Labs](images/Final_mrdl_logo.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
         **[Mixed Reality Design Labs](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)**<br>	
         Get sample apps that show you how to use MRTK's building blocks to create beautiful mixed reality experiences.
     :::column-end:::		
@@ -117,12 +117,12 @@ A designers job is never done, especially when learning to create immersive expe
         See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
     :::column-end:::
     :::column:::
-        [![Install the tools](images/icon-design_74x74.png)](../develop/install-the-tools.md)<br>
+        [![Install the tools](images/icon-design.png)](../develop/install-the-tools.md)<br>
          **[Install the tools](../develop/install-the-tools.md)**<br>
         Use the installation checklist to get the tools you need to build apps for HoloLens and mixed reality.
     :::column-end:::
     :::column:::
-        [![Start developing](images/icon-developer_74x74.png)](../develop/development.md)<br>
+        [![Start developing](images/icon-developer.png)](../develop/development.md)<br>
         **[Start developing](../develop/development.md)**<br>
         Choose a development path based on your skill level, work style, or platform interest.
     :::column-end:::
