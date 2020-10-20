@@ -71,7 +71,7 @@ High-fidelity storyboards are a powerful tool when bringing in new stakeholders 
 
 ## Design process
 
-With those three methods our process today looks something like this. We often start with whiteboarding and sticky notes. Then expand into physical bodystorming and acting. Then we translate that thinking into storyboards and something we call a 'One-Line Concept' (the high-level sentence that describes what we're making) Then prototyping and asset creation. You can see how much design work happens physically before we get into the development phase.
+Our process today starts with whiteboarding and sticky notes and expands into physical bodystorming and acting. We then translate that thinking into storyboards and something we call a 'One-Line Concept' (the high-level sentence that describes what we're making) before moving on to prototyping and asset creation. Our design work is often physical before we get into the development phase.
 
 ![Design process flow 1](images/MRDesignProcess_Flow2.png)<br>
 *Overall design process*
