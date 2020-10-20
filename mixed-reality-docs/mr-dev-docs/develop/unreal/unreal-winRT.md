@@ -179,9 +179,11 @@ Linking and using a DLL in Unreal requires a C++ project. If you're using a Blue
 ![Configuring the DLL](images/unreal-winrt-img-05.png)
 
 ### Linking the DLL
-1. In **ConsumeWinRT.build.cs**, add a property to find the include path for the DLL (the directory containing HoloLensWinrtDLL.h). The DLL is in a child directory to the include path, so this property will be used as the binary root dir:
+1. In **ConsumerWinRT.build.cs**, add a property to find the include path for the DLL (the directory containing HoloLensWinrtDLL.h). The DLL is in a child directory to the include path, so this property will be used as the binary root dir:
 
 ```cs
+using System.IO;
+
 public class ConsumeWinRT : ModuleRules
 {
     private string WinrtIncPath
