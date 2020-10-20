@@ -97,7 +97,7 @@ In the update loop, check if the keyboard received new input and store it for us
 ```cs
 if (TouchScreenKeyboard.visible == false && keyboard != null)
 {
-       if (keyboard.done == true)
+       if (keyboard.status == TouchScreenKeyboard.Status.Done)
        {
            keyboardText = keyboard.text;
            keyboard = null;
