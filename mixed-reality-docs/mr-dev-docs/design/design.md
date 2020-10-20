@@ -27,9 +27,9 @@ Like all journeys, your adventure into designing Mixed Reality applications star
 
 |  Checkpoint  |  Outcome  |
 | --- | --- |
-| [Expand your design process](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Get a first-hand look at methods, insights, and design theory gathered from Mixed Reality developers inside and outside of Microsoft |
+| [Expand your design process](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Get a first-hand look at design process for Mixed Reality, gathered from designers inside and outside of Microsoft |
 | [Types of Mixed Reality apps](types-of-mixed-reality-apps.md) | Decide where your app experience will live on the Mixed Reality spectrum |
-| [Designing Holograms app](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Learn the fundamentals of Mixed Reality UX Design by experiencing it yourself by diving into into Mixed Reality behaviors, tips and recommendations for creating amazing HoloLens apps |
+| [Designing Holograms app](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Learn the fundamentals of Mixed Reality UX Design by experiencing it yourself by diving into into Mixed Reality behaviors, tips and recommendations for creating amazing HoloLens apps (available for download from Microsoft Store in HoloLens 2) |
 
 ### 2. Core concepts
 
@@ -41,7 +41,7 @@ Whether you're developing for VR or AR, there are a several core concepts that a
 | --- | --- |
 | [Holographic frame](holographic-frame.md) | Understand how users see your content overlaid onto the real world when wearing their headsets |
 | [Coordinate systems](coordinate-systems.md) | Learn how to position holograms at places in the world that are meaningful to the user, whether it's their physical room or a virtual realm you've created |
-| [Spatial mapping](spatial-mapping.md) | Anchor objects in the user's world and take advantage of real world depth cues |
+| [Spatial mapping](spatial-mapping.md) | Anchor objects in the user's world and take advantage of real world's physical surfaces |
 | [Comfort considerations](comfort.md) | Ensure user comfort and safety by creating and presenting immersive content in a way that mimics the natural world |
 
 ### 3. Interaction design
@@ -78,24 +78,40 @@ A designers job is never done, especially when learning to create immersive expe
 
 :::row:::	
     :::column:::	
-       [![Learn Unity](images/logo-unity.png)](https://learn.unity.com/)<br>
+       :::row:::	
+       [![Learn Unity](images/logo-unity.png)](https://learn.unity.com/)
+       :::row-end:::
+       :::row:::	
         **[Learn Unity](https://learn.unity.com/)**<br>
         Learn how to create interactive experiences with Unity. Learn by doing, from start to finish.
+       :::row-end:::
     :::column-end:::	
     :::column:::	
+       :::row:::	
         [![Mixed Reality Toolkit (MRTK)](images/Final_mrtk-small_logo.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
+       :::row-end:::
+       :::row:::	
         **[Mixed Reality Toolkit (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity)**<br>	
         With spatial interaction and UI building blocks, jump-start your mixed reality design and development with Unity.	
+       :::row-end:::
     :::column-end:::
     :::column:::	
+       :::row:::	
         [![Mixed Reality Design Labs](images/Final_mrdl_logo.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
+       :::row-end:::
+       :::row:::	
         **[Mixed Reality Design Labs](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)**<br>	
         Get sample apps that show you how to use MRTK's building blocks to create beautiful mixed reality experiences.
+       :::row-end:::
     :::column-end:::		
     :::column:::	
+       :::row:::	
         [![Microsoft Maquette](images/Final_maquette_logo.png)](https://www.maquette.ms/)<br>
+       :::row-end:::
+       :::row:::	
         **[Microsoft Maquette](https://www.maquette.ms/)**<br>	
         Design for VR. Microsoft Maquette makes spatial prototyping easy, quick, and immersive.	
+       :::row-end:::
     :::column-end:::	
 :::row-end:::
 

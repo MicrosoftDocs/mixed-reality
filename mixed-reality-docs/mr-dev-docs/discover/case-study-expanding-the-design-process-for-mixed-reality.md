@@ -9,7 +9,6 @@ keywords: Windows Mixed Reality, design, process, case study
 ---
 
 # Thinking differently for Mixed Reality
-
 When Microsoft launched the HoloLens (1st gen) to an audience of eager developers in 2016, the team had already partnered with studios inside and outside of Microsoft to build the device’s launch experiences. These teams learned by doing, finding both opportunities and challenges in the new field of mixed reality design.
 
 To help new teams and partners innovate more effectively, we turned their methods and insights into a curriculum of design and development lessons that we teach developers in our Mixed Reality Academy (including week-long design workshops we offer to our enterprise partners).
@@ -30,8 +29,9 @@ With mixed reality, the traditional 2D design process begins to break down: sket
 When we work with external partners, we hear stories of teams waiting for the developer to finish the prototype before they can continue their design process. This often means the rest of the team is blocked in making meaningful progress on the product, overloading the developer to solve both the technical implementation as well as major components of the user experience (as they attempt to put a rough idea into code).
 
 ## Techniques for expanding the design process
-
 Our teams at Microsoft have a set of techniques to more effectively include their team and quickly iterate through complex design problems. While not a formal process, these techniques are intended to supplement rather than replace your workflow. These methods allow those without specialized 3D skills to offer ideas before diving into the prototyping phase. Different roles and disciplines (not just 3D designers and developers) can be part of the design process, uncovering opportunities and identifying possible challenges that might occur later in development.
+
+![Teams working during a workshop in the Mixed Reality Academy](images/MRDesignProcess_Flow1.png)<br>
 
 ## Generating ideas with bodystorming
 
@@ -68,6 +68,19 @@ Low-fidelity storyboards are the right fidelity for quick discussions, especiall
 *Example of a high-fidelity storyboard*
 
 High-fidelity storyboards are a powerful tool when bringing in new stakeholders or combining insights from a bodystorming session with the proposed aesthetic direction of your experience. Storyboards can build off mood boards to illustrate the final appearance of a virtual experience, as well as capture key moments that may be pivotal to the final product. Keep in mind that high-fidelity storyboards often require an artist, especially one embedded within the team, who can capture difficult-to-describe ideas. At Microsoft, we have added storyboard artists, often with backgrounds in game development, to our mixed reality teams who attend meetings prepared to quickly capture sketches that will later be expanded into higher fidelity mockups. These individuals work closely with technical artists, helping to convey the artistic direction of assets used in the final experience.
+
+## Design process
+
+With those three methods our process today looks something like this. We often start with whiteboarding and sticky notes. Then expand into physical bodystorming and acting. Then we translate that thinking into storyboards and something we call a 'One-Line Concept' (the high-level sentence that describes what we're making) Then prototyping and asset creation. You can see how much design work happens physically before we get into the development phase.
+
+![Design process](images/MRDesignProcess_Flow2.png)<br>
+*Overall design process*
+
+The design process is messy and every team is different. However, methods like bodystorming, acting, and storyboarding can help alleviate difficulties in iteration.
+
+![Design process](images/MRDesignProcess_Flow3.png)<br>
+*In reality, it is continous iterative phases*
+
 
 ## Expanding your team's skills
 
