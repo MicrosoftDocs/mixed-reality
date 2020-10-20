@@ -82,34 +82,34 @@ A designers job is never done, especially when learning to create immersive expe
        [![Learn Unity](images/logo-unity.png)](https://learn.unity.com/)
        :::row-end:::
        :::row:::	
-        **[Learn Unity](https://learn.unity.com/)**<br>
+        **[Learn Unity](https://learn.unity.com/)**
         Learn how to create interactive experiences with Unity. Learn by doing, from start to finish.
        :::row-end:::
     :::column-end:::	
     :::column:::	
        :::row:::	
-        [![Mixed Reality Toolkit (MRTK)](images/Final_mrtk-small_logo.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
+        [![Mixed Reality Toolkit (MRTK)](images/Final_mrtk-small_logo.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)
        :::row-end:::
        :::row:::	
-        **[Mixed Reality Toolkit (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity)**<br>	
+        **[Mixed Reality Toolkit (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity)**
         With spatial interaction and UI building blocks, jump-start your mixed reality design and development with Unity.	
        :::row-end:::
     :::column-end:::
     :::column:::	
        :::row:::	
-        [![Mixed Reality Design Labs](images/Final_mrdl_logo.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
+        [![Mixed Reality Design Labs](images/Final_mrdl_logo.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)
        :::row-end:::
        :::row:::	
-        **[Mixed Reality Design Labs](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)**<br>	
+        **[Mixed Reality Design Labs](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)**
         Get sample apps that show you how to use MRTK's building blocks to create beautiful mixed reality experiences.
        :::row-end:::
     :::column-end:::		
     :::column:::	
        :::row:::	
-        [![Microsoft Maquette](images/Final_maquette_logo.png)](https://www.maquette.ms/)<br>
+        [![Microsoft Maquette](images/Final_maquette_logo.png)](https://www.maquette.ms/)
        :::row-end:::
        :::row:::	
-        **[Microsoft Maquette](https://www.maquette.ms/)**<br>	
+        **[Microsoft Maquette](https://www.maquette.ms/)**
         Design for VR. Microsoft Maquette makes spatial prototyping easy, quick, and immersive.	
        :::row-end:::
     :::column-end:::	
