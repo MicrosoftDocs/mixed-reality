@@ -82,7 +82,7 @@ There are no additional steps required if you choose this option.
 
 ## What is the maximum size of the boundary?
 
-The currently supported maximum boundary size in Windows Mixed Reality is 18x18ft (5.7x5.7m) or 13ft (4m) radius from the center.  The boundary size is dependent on the anchor point and how far from the anchor point you can move before you risk the stability of the boundary.  Windows Mixed Reality is built on a stage abstraction in the platform, the stage being the space you move around in, and that stage depends on a single anchor (which nearly every app also assumes – it’s how Vive and Oculus work too, as they only have a single coordinate system).  The reason that this is important is that with inside-out tracking, as you move further away from an anchor point the headset tracking is reliable at keeping the boundary stable.  Where the boundary is intended to help avoid physical obstacles, it becomes more and more of a problem the further out from the center you go.  Two factors went into the decision on maximum boundary size; the maximum distance at which Windows Mixed Reality headsets could provide the best room scale experience with a boundary and the length of the headset cable, which for most Windows Mixed Reality headsets is 10ft (3m). 
+The currently supported maximum boundary size in Windows Mixed Reality is 18x18ft (5.7x5.7m) or 13ft (4m) radius from the center.  The boundary size is dependent on the anchor point and how far from the anchor point you can move before you risk the stability of the boundary.  Windows Mixed Reality is built on a stage abstraction in the platform, the stage being the space you move around in, and that stage depends on a single anchor (which nearly every app also assumes – it’s how Vive and Oculus work too, as they only have a single coordinate system).  The reason that this is important is that with inside-out tracking, as you move further away from an anchor point the headset tracking is reliable at keeping the boundary stable.  Where the boundary is intended to help avoid physical obstacles, it becomes more and more of a problem the further out from the center you go.  Two factors went into the decision on maximum boundary size; the maximum distance at which Windows Mixed Reality headsets could provide the best room scale experience with a boundary and the length of the headset cable, which for most Windows Mixed Reality headsets is 10ft (3m).
 
 ## Set up speech
 
@@ -108,7 +108,7 @@ Your headset's native resolution is shown here.
 
 If you connect a headset with higher resolution displays (for example, headsets with 4320x2160 displays) to your PC, you'll see a setting to adjust the Mixed reality display resolution.
 
-* This setting provides the option for the Windows Mixed Reality composition stack to render natively (for example, at 4320x2160), or to have the composition stack render at a lower resolution and upscale (for example, render at 2880x1440 and upscale to 4320x2160.
+* This setting provides the option for the Windows Mixed Reality composition stack to render natively (for example, at 4320x2160), or to have the composition stack render at a lower resolution and upscale (for example, render at 2880x1440 and upscale to 4320x2160).
 * The default setting is to render natively (for example, the **4320 x 2160 (best quality)** option) to provide the best visual quality possible from your headset.
 * If your PC does not meet the minimum graphics hardware requirements for your headset with higher resolution displays, and/or if you're seeing graphics performance issues, you could try using selecting the **Automatic upscaling (best performance)** option.
 
@@ -127,9 +127,7 @@ This advanced setting overrides the default headset display refresh rate experie
 * **90Hz**
 
 >[!Note]
->The automatic refresh rate setting for HP Reverb G2 is 90Hz
-
-Certain Windows Mixed Reality features, including Mixed Reality Portal preview and a larger headset display FOV, are only available with the 90Hz experience.
+>When first setting up HP Reverb G2 headset the experience will be changed to 90Hz to ensure the .best experience.  If needed you can change this back to Automatic.
 
 ### Input switching
 
@@ -176,5 +174,5 @@ Entering mixed reality a second time is as easy as putting the headset back on w
 * [Troubleshooting installation](installation_errors.md)
 * [Troubleshooting setup](set-up-questions.md)
 * [Learn Mixed Reality](learn-mixed-reality.md)
-* [How motion controllers work](controllers-in-wmr.md)
+* [Motion controllers](controllers-in-wmr.md)
 * [How inside-out tracking works](tracking-system.md)

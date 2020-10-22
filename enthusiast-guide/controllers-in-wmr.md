@@ -13,19 +13,10 @@ appliesto:
 # Motion controllers in Windows Mixed Reality
 
 Motion controllers are hardware accessories that allow users to take action in mixed reality. An advantage of motion controllers over gestures is that the controllers have a precise position in space, allowing for fine-grained interaction with digital objects. For Windows Mixed Reality immersive headsets, motion controllers are the primary way that users will take action in their world.
+
 Windows Mixed Reality motion controllers offer precise and responsive tracking of movement in your field of view using the sensors in the immersive headset, meaning there is no need to install hardware on the walls in your space. These motion controllers will offer the same ease of setup and portability as Windows Mixed Reality immersive headsets.
 
-Windows Mixed Reality is designed to work best with mixed reality motion controllers, which provide natural, precise interactions with no need to install hardware on your walls.
-
-You can also use an Xbox controller, a mouse and keyboard or get around by [using just your voice](using-speech-in-wmr.md).
-
-**Features:**
-
-* Optical tracking
-* Trigger
-* Grab button
-* Thumbstick
-* Touchpad
+You can also use an Xbox controller, a mouse, and keyboard or get around by [using just your voice](using-speech-in-wmr.md).
 
 ## Motion controller setup
 
@@ -33,12 +24,12 @@ Most headsets come pre-paired directly to the headset, but some early headsets r
 
 1. Launch **Mixed Reality Portal** with your headset connected.  
 2. In the lower-left corner select **… > Set up controllers**.
-3. Insert 2 AA batteries into each controller and put your controller in pairing mode (see instructions in Pair motion controllers section)
+3. Insert 2 AA batteries into each controller and put your controller in pairing mode (see instructions in [pair motion controllers section](controllers-in-wmr.md#Pair-motion-controllers)
 4. Follow the instructions provided on-screen.
 
 > [!NOTE]
-> * For controllers that pair directly to your PC, you’ll need to put them into pairing mode by turning them on and then pressing the pairing button inside the battery compartment until the lights start flashing.  
-> * Motion controllers only support being paired to one computer or PC at a time. If you need to use them with a different headset, you’ll need to go through the pairing process. See [Set up Windows Mixed Reality](set-up-windows-mixed-reality.md)
+> * For controllers that pair directly to your PC, you’ll need to put them into pairing mode by turning them on and then pressing the pairing button inside the battery compartment until the lights start flashing.
+> * Motion controllers only support being paired to one PC at a time. If you need to use them with a different headset, you’ll need to go through the pairing process. See [Set up Windows Mixed Reality](set-up-windows-mixed-reality.md)
 
 [Get help connecting](wmr-setup-faq.md#my-motion-controllers-arent-working)
 
@@ -53,20 +44,29 @@ Most headsets come pre-paired directly to the headset, but some early headsets r
 
 ## Pair motion controllers
 
+If you are using a headset that includes an integrated Bluetooth controller, such as the Samsung Odyssey+ or HP Reverb, your controllers should already be paired. But you can still pair your controllers using set up app (it should be already installed during the HMD set up. You can also get it from Microsoft store).
+
+### Pair motion controllers to HMD
+
 Power the controllers by pressing the Windows button for 2 seconds until LEDs light up.
 
 Remove the battery cover from your controllers and find the small pairing button at the edge of the controller. Hold this button down to pair with your PC.
+    ![Motion controller pairing](images/connect_controller.png)
 
-If you are using HP Reverb G2 headset, your controllers should be already paired. But you can pair your controllers by using HP Reverb G2 VR set up app (it should be already installed during the set up. You can also get it from Microsoft store). Also, you can pair your controller to a PV by adding another bluetooth device:
+Launch **Mixed Reality Portal** with your headset connected.  
+In the lower-left corner select **… > Set up controllers**.
+Follow the instructions on the screen.
+
+### Pair motion controllers to PC
+
+You can pair your controller to a PC by adding another bluetooth device.
+
+Power the controllers and place them into pairing mode as described above.
 
 * Navigate to Computer settings
 * Device/ Add Bluetooth or other device.
 
-![Motion controller pairing](images/connect_controller.png)
-
-You may see a message in the bottom right hand corner of your screen as the firmware on your controllers get updated. While this is happening, you can advance to the next step in the tutorial, but don't turn off your controllers.
-
-Once controller firmware update is complete it will restart and re-connect to host PC. LEDs will be solid on and bright.
+Once pairing is complete, LEDs will be solid on and bright.
 
 ### Common issues
 
@@ -124,8 +124,8 @@ Your controller communicates to you what it's doing by vibrating and blinking it
 * If an immersive headset is connected to your PC, and new controller firmware is available, the firmware will be pushed to your motion controllers automatically the next time they're turned on.
 * Controller firmware updates are indicated by a pattern of illuminating LED quadrants in a circular motion, and take 1-2 minutes. Firmware updates can occasionally take longer, up to 10 minutes, which may indicate poor Bluetooth connectivity or radio interference.
 * In case firmware update is interrupted (controller powered off or battery runs out) it will be tried again on next power on.
-* After the firmware update completes, the controllers will reboot and reconnect. 
-* Both controllers should be connected now. (Check Bluetooth and other devices for the following): ![Controllers connected](images/cyk-connected.jpg)
+* After the firmware update completes, the controllers will reboot and reconnect.
+* Both controllers should be connected now. Navigate to Mixed Reality Portal to check the status of your controllers.
 * Verify your controllers work properly:
   * Launch **Mixed Reality Portal** and enter your Mixed Reality Home.
   * Move your controllers and verify tracking, test buttons, and verify teleportation works. If they don't, then check out [the motion controller troubleshooting section](motion-controller-problems.md)
@@ -150,4 +150,4 @@ Give us feedback in Feedback Hub, using the "Mixed Reality -> Input" category.
 * [Contact us for support](https://support.microsoft.com/contactus/)
 * [Troubleshooting](troubleshooting-windows-mixed-reality.md)
 
-Having trouble with your motion controllers? [Get help](using-wmr-faq.md#im-having-trouble-with-my-motion-controllers)
+Having trouble with your motion controllers? [Get help](motion-controller-problems.md)
