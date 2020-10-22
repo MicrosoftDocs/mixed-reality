@@ -10,7 +10,7 @@ keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Home, N
 
 ## What is the Windows Mixed Reality home
 
-Windows Mixed Reality is the first spatial operating system. Instead of using a flat screen and a 2D interface, it leverages our instinctual ability to navigate three-dimensional space. Every place has a purpose, and content has context. Just as your PC starts at the desktop interface and your phone begins with a home screen, Windows Mixed Reality starts at the Mixed Reality home. It's an environment that you can navigate and personalize to make your own. It's the canvas for the thousands of apps available in the Microsoft Store. You can multitask with these apps like you've never been able to before--in 3D where space is almost limitless.
+Windows Mixed Reality is the first spatial operating system. Instead of using a flat screen and a 2D interface, it leverages our instinctual ability to navigate three-dimensional space. Every place has a purpose, and content has context. Just as your PC starts at the desktop interface and your phone begins with a home screen, Windows Mixed Reality starts at the Mixed Reality home. It's an environment that you can navigate and personalize to make your own. It's the canvas for the thousands of apps available in the Microsoft Store or SteamVR. You can multitask with these apps like you've never been able to before--in 3D where space is almost limitless.
 
 ## Move through the Windows Mixed Reality home
 
@@ -22,7 +22,7 @@ Windows Mixed Reality is the first spatial operating system. Instead of using a 
   * A handy feature is called "Snap to app" that lets you jump to the ideal position to interact with app windows. Simply point you teleportation arc to a window and let go. The system will automatically place you in the ideal location to enjoy the content of that targeted window.
 * **Virtually walking:** You can virtually move continuously by depressing the thumbstick (you should feel it click) on your motion controllers or gamepad and then moving in the desired direction.
 
-## launch an app
+## Launch an app
 
 1. From your Windows Mixed Reality home, press the Windows button on your controller to launch the Start menu.
 2. Select the app you wish to launch.
@@ -69,7 +69,7 @@ Go to **Settings > Mixed Reality > Environment > Reset my home** ![Windows Setti
 
 ## Turn off the boundary
 
-Go to Windows Mixed Reality Portal and open the menu in the upper left of the screen. Select **Run Set up > Room Boundary**. Switch the toggle to OFF. You should remain seated at your desk if you turn off the boundary.
+Go to Mixed Reality Portal and open the menu in the upper left of the screen. Select **Run Set up > Room Boundary**. Switch the toggle to OFF. You should remain seated at your desk if you turn off the boundary.
 
 ## Spatial sound in the Windows Mixed Reality home
 

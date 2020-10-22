@@ -30,10 +30,12 @@ For more information on PC compatibility issues, go [here](https://support.micro
 
 ## Make sure you have the Windows 10 Version 1709 or newer installed
 
-You must be running the Windows 10 Version 1709 (the Fall Creators Update) or newer to use Windows Mixed Reality. Compatible versions of Windows 10 include:
-* Windows 10 Version 1709 (Fall Creators Update, build 16299)
-* Windows 10 Version 1803 (Spring Update, build 17134)
-* Windows 10 Version 1809 (October Update, build 17763)
+You must be running the Windows 10 Version 1903 or newer to use Windows Mixed Reality. Compatible versions of Windows 10 include:
+
+* Windows 10 Version 1903
+* Windows 10 Version 1909
+* Windows 10 Version 2004
+* Windows 10 Version 20H2
 
 To see which version of Windows 10 your device is currently running, select the **Start** button, then select **Settings  > System > About**.
 
@@ -43,7 +45,7 @@ For more information on how to keep your PC up to date go [here](https://support
 
 ## Make sure your PC is connected to the internet
 
-Check that your PC is connected to the Internet. You will need to download drivers and some additional software to get Windows Mixed Reality up and running.  If your Wi-Fi network connection is set to metered, change it to un-metered. [Learn more](https://support.microsoft.com/en-us/help/4028458/windows-metered-connections-in-windows-10).
+Check that your PC is connected to the Internet. You will need to download drivers and some additional software to get Windows Mixed Reality up and running.
 
 ## Make sure you have a compatible graphics driver
 
@@ -59,15 +61,11 @@ Your PC must have a WDDM 2.2 or later graphics driver in order to complete Windo
 
 ## Make sure that you have any required adapters
 
-Your Windows Mixed Reality compatible PC may not have the full-sized HDMI and USB 3.0 ports needed to connect your immersive headset. Or you may need a Bluetooth adapter to meet the Windows Mixed Reality Portal requirements.  If that's the case, you'll need adapters to connect your headset and motion controllers. Make sure to review a list of [adapter types you may need, and some recommendations on specific adapter models](recommended-adapters-for-windows-mixed-reality-capable-pcs.md).
+Your Windows Mixed Reality compatible PC may not have the full-sized HDMI and USB 3.0 ports needed to connect your immersive headset. Or you may need a Bluetooth adapter to meet the Windows Mixed Reality Portal requirements.  If that's the case, you'll need adapters to connect your headset and motion controllers. Make sure to review the list of [adapter types you may need, and some recommendations on specific adapter models](recommended-adapters-for-windows-mixed-reality-capable-pcs.md).
 
 ## Make sure that you have input devices
 
 Windows Mixed Reality is designed to work best with Windows Mixed Reality motion controllers, which provide natural, precise interactions with no need to install hardware on your walls. But you can also use an Xbox controller or a mouse and keyboard.
-
-## Get headphones if your headset didn't come with them
-
-Unless you purchased a Samsung HMD Odyssey, HP Reverb or HP Reverb G2 headsets (which have integrated AKG headphones and an integrated dual-array microphone), you will need to get an audio headset a pair of headphones that can plug into your HMD’s headset's 3.5mm audio jack.
 
 ## Make sure that you have a large, open space
 
