@@ -43,14 +43,25 @@ If you run a community that you would like included on this page, please send an
 
 |||||
 |---------|---------|---------|---------|
-|![Daniel Escudero](images/BiographyImages/DanielEscudero_270x270.jpg)</br>**Daniel Escudero**</br>*MR Academy Lead Designer*|Interactive designer, prototyper and coder, specialized in Mixed Reality, with over 15 years of interaction design experience. Currently designing and prototyping new forms of interaction for Mixed Reality as well as creating workshops and hackathons with San Francisco Bay Area partners and the MR/VR/AR community. Mentor and speaker for Mixed Reality Design at multiple MR/VR/AR events and lectures.|San Francisco, Ca|[Email](mailto:daescu@microsoft.com)|
-|<!-- ![Daniel Gonzalez](images/BiographyImages/) --></br>**Daniel Gonzalez**</br>*Program Manager II*| |Redmond, Wa|[Email](mailto:dgonza@microsoft.com)|
-|<!-- ![Jane Fang](images/BiographyImages/) --></br>**Jane Fang**</br>*Principal Program Manager Lead*| |San Francisco, Ca|[Email](mailto:jafang@microsoft.com)|
+|![Daniel Escudero](images/BiographyImages/DanielEscudero_270x270.jpg)</br>**Daniel Escudero**</br>*MR Academy Lead Designer*|Interactive designer, prototyper and coder, specialized in Mixed Reality, with over 15 years of interaction design experience. Currently designing and prototyping new forms of interaction for Mixed Reality as well as creating workshops and hackathons with San Francisco Bay Area partners and the MR/VR/AR community. Mentor and speaker for Mixed Reality Design at multiple MR/VR/AR events and lectures.|San Francisco, CA|[Email](mailto:daescu@microsoft.com)|
+|<!-- ![Daniel Gonzalez](images/BiographyImages/) --></br>**Daniel Gonzalez**</br>*Program Manager II*| |Redmond, WA|[Email](mailto:dgonza@microsoft.com)|
+|<!-- ![Jane Fang](images/BiographyImages/) --></br>**Jane Fang**</br>*Principal Program Manager Lead*| |San Francisco, CA|[Email](mailto:jafang@microsoft.com)|
 |![Jesse McCulloch](images/BiographyImages/JesseMcCulloch270x270.png)</br>**Jesse McCulloch**</br>*Program Manager II*|Jesse is a Program Manager on the Mixed Reality Developer Ecosystem team at Microsoft. He is often found hanging out in developer Slack groups, on Twitter trying to keep up with everything going on in this rapidly growing space, or in a big metal tube flying through the air on his way to engage with developers in the real world.|Redmond, Wa|[Email](mailto:jemccull@microsoft.com)|
-|<!-- ![Jo Ryall](images/BiographyImages/) --></br>**Jo Ryall**</br>*Head of Marketing, SF Academy*| |San Francisco, Ca|[Email](mailto:joryal@microsoft.com)|
-|![Nick Klingensmith](images/BiographyImages/NickKlingensmith_270x270.png)</br>**Nick Klingensmith**</br>*MR Academy Lead Engineer*|Nick is an experienced game developer specializing in tool development, graphics programming, MR, and Unity! With over 100 published games, he's worked on small arcade games, mobile high fidelity GPU pushing titles, all the way to massive networked social games. The tools he's published on the Unity Asset Store are also used in thousands of games, on just about every modern platform imaginable. Nick has collected most of the official Unity certifications, and also helped write them. Nick currently works for Microsoft as the lead engineer on the Mixed Reality Academy team in San Francisco.|San Francisco, Ca|[Email](mailto:niklinge@microsoft.com)|
+|<!-- ![Jo Ryall](images/BiographyImages/) --></br>**Jo Ryall**</br>*Head of Marketing, SF Academy*| |San Francisco, CA|[Email](mailto:joryal@microsoft.com)|
+|![Nick Klingensmith](images/BiographyImages/NickKlingensmith_270x270.png)</br>**Nick Klingensmith**</br>*MR Academy Lead Engineer*|Nick is an experienced game developer specializing in tool development, graphics programming, MR, and Unity! With over 100 published games, he's worked on small arcade games, mobile high fidelity GPU pushing titles, all the way to massive networked social games. The tools he's published on the Unity Asset Store are also used in thousands of games, on just about every modern platform imaginable. Nick has collected most of the official Unity certifications, and also helped write them. Nick currently works for Microsoft as the lead engineer on the Mixed Reality Academy team in San Francisco.|San Francisco, CA|[Email](mailto:niklinge@microsoft.com)|
 
 </br>
+
+## Microsoft MR Design Team, Developer Experience
+
+|||||
+|---------|---------|---------|---------|
+|![Yoon Park](images/BiographyImages/YoonPark_270x270.jpg)</br>**Yoon Park**</br>*Principal UX Designer*|Yoon is a designer, creative technologist, and author from Seoul, Korea. As a Principal UX Designer at Microsoft’s Mixed Reality design team, he is leading the design effort for the open-source project Mixed Reality Toolkit(MRTK), Mixed Reality Design Labs(MRDL), and documentation. He shares his personal MR project design stories on [Medium](https://medium.com/@dongyoonpark/designing-type-in-space-for-hololens-2-4d926355d5b3). | Redmond, WA|[Twitter](https://twitter.com/cre8ivepark) [Medium](https://medium.com/@dongyoonpark) [LinkedIn](https://www.linkedin.com/in/cre8ivepark/) [Email](mailto:dongyoon.park@microsoft.com)|
+|![Cameron Micka](images/BiographyImages/CameronMicka_270x270.png)</br>**Cameron Micka**</br>*Senior Software Engineer*|Cameron Micka is a software engineer who takes pride in empowering developers to achieve their artistic and creative ambitions. Cameron joined Microsoft in 2016 after developing video games for nearly a decade at LucasArts Entertainment, Fun Bits Interactive, and his own startup. At Microsoft Cameron’s role is to build tools for Mixed Reality developers and consult with partners and customers. | Redmond, WA|[Twitter](https://twitter.com/tcmicka) [Email](mailto:cameron.micka@microsoft.com)|
+
+</br>
+
+
 
 ## Azure Cloud Advocate Spatial Computing Team
 
