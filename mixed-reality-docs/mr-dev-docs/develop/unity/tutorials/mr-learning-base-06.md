@@ -124,7 +124,7 @@ Rename the second button to **TapToPlace**, then in the Inspector window, config
 In the Hierarchy window, select the **RoverAssembly** object, then in the Inspector window, configure the **Tap To Place (Script)** component as follows:
 
 * Uncheck the checkbox next to its name to make it inactive by default
-* In the **On Placing Started ()** event section, click the **+** icon to add a new event:
+* In the **On Placing Stopped ()** event section, click the **+** icon to add a new event:
 * Assign the RoverExplorer > **RoverAssembly** object to the **None (Object)** field
 * From the **No Function** dropdown, select **TapToPlace** > **bool Enabled** to update this property value when the event is triggered
 * Verify that the argument checkbox is **unchecked**
@@ -165,7 +165,7 @@ In the Hierarchy window, expand the RoverExplorer > **RoverParts** object and se
 * Ensure the **Focus Enabled** checkbox is checked to require the user to look at the part for the tooltip to appear
 * Assign the **Simple Line ToolTip** prefab from the Project window to the **Tool Tip Prefab** field
 * Change the ToolTip Override Settings > **Settings Mode** to **Override**
-* Change the ToolTip Override Settings > **Manual Pivot Location Position Y** to **1.5**
+* Change the ToolTip Override Settings > **Manual Pivot Local Position Y** to **1.5**
 
 ![mr-learning-base](images/mr-learning-base/base-06-section4-step1-2.png)
 
