@@ -18,21 +18,46 @@ metadata:
 
 # highlightedContent section (optional)
 # Maximum of 8 items
-highlightedContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Before you buy
-      itemType: learn
-      url: windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md
+    - title: About Windows Mixed Reality VR
+      linkLists:
+      -   linkListType: overview
+          links:
+          - text: What is Windows Mixed Reality?
+            url: vr-journey.md
+      - linkListType: concept
+        links:
+          - text: PC hardware guidelines
+            url: windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md
+          - text: Before you start
+            url: before-you-start.md
+          - text: Install Windows Mixed Reality
+            url: install-windows-mixed-reality.md
     # Card
-    - title: Get started
-      itemType: get-started
-      url: before-you-start.md
+    - title: Getting started with Virtual Reality
+      linkLists:
+      - linkListType: get-started
+        links:
+          - text: Set up Windows Mixed Reality
+            url: set-up-windows-mixed-reality.md
+          - text: Your Mixed Reality home
+            url: your-mixed-reality-home.md
+          - text: Controllers in Windows Mixed Reality
+            url: controllers-in-wmr.md
     # Card
-    - title: Learn Mixed Reality
-      itemType: how-to-guide
-      url: learn-mixed-reality.md
+    - title: Troubleshooting
+      linkLists:
+      - linkListType: reference
+        links:
+          - text: General FAQ
+            url: troubleshooting-windows-mixed-reality.md
+          - text: Filing bugs and feedback
+            url: filing-feedback.md
+          - text: Error codes
+            url: error-codes.md
     # Card
     - title: Windows Mixed Reality academy
       itemType: video
@@ -44,16 +69,16 @@ additionalContent:
   # Supports up to 3 sections
   sections:
     - title: More resources # < 60 chars (optional)
-      summary: Find related links to troubleshooting, development documentation and forums. # < 160 chars (optional)
+      summary: Find related links to additional resources development documentation and forums. # < 160 chars (optional)
       items:
         # Card
-        - title: Troubleshooting
-          summary: A-to-Z troubleshooting on all areas of Windows Mixed Reality
-          url: installation_errors.md
+        - title: Resources
+          summary: Health and safety guidance
+          url: wmr-health-safety-comfort.md
         # Card
         - title: Feedback
-          summary: Collect additional articles diving deeper on Windows Mixed Reality, from filing useful feedback to how subsystems work.
-          url: filing-feedback.md
+          summary: Mixed Reality software overview and release history
+          url: mixed-reality-software.md
         # Card
         - title: Development documentation
           summary: Development and design documentation
