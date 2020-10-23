@@ -42,11 +42,11 @@ The same action and axis mappings in the game’s input project settings can be 
 
 1. Create a new C++ Class with File/New C++ Class...
 
-![Creating a new C++ class](../images/reverb-g2-img-11.png)
+![Creating a new C++ class](images/reverb-g2-img-11.png)
 
 2. Create a pawn
 
-![Creating a pawn](../images/reverb-g2-img-11.png)
+![Creating a pawn](images/reverb-g2-img-12.png)
 
 3. In the project’s Visual Studio solution, find the new Pawn class and configure it for input.
 * First, in the constructor, set AutoPossessPlayer to the first player to route input to the pawn.
