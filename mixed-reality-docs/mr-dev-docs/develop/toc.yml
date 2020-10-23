@@ -6,8 +6,8 @@
   href: install-the-tools.md
 - name: Porting apps
   items:
-  - name: Porting overview
-    href: porting-apps/porting-overview.md
+  # - name: Porting overview
+  #   href: porting-apps/porting-overview.md
   - name: Get your existing app ready for HoloLens 2
     href: unity/mrtk-porting-guide.md
   - name: Porting guide for immersive apps

@@ -1,7 +1,7 @@
 ---
 title: HP Reverb G2 Controllers in Unreal 
 description: Instructions on using the HP Reverb G2 Controllers in OpenXR and SteamVR
-author: fieldsJacksonG
+author: hferrone
 ms.author: jacksonf
 ms.date: 10/9/2020
 ms.topic: article
