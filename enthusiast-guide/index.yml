@@ -47,11 +47,11 @@ highlightedContent:
     - title: Windows Mixed Reality academy
       itemType: video
       url: https://developer.microsoft.com/en-us/windows/mixed-reality/academy
-      
+
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
-  title: More resources  # < 60 chars (optional)
+  title: Start with Windows Mixed Reality  # < 60 chars (optional)
   summary: Find additional information about Mixed Reality software, hardware, and troubleshooting. # < 160 chars (optional)
   items:
     # Card
@@ -111,13 +111,13 @@ additionalContent:
       summary: Find related links to additional resources development documentation and forums. # < 160 chars (optional)
       items:
         # Card
-        - title: Resources
-          summary: Health and safety guidance
-          url: wmr-health-safety-comfort.md
+        - title: inside-out tracking
+          summary: Learn how inside-out tracking works
+          url: tracking-system.md
         # Card
-        - title: Feedback
-          summary: Mixed Reality software overview and release history
-          url: mixed-reality-software.md
+        - title: Speech in Mixed Reality
+          summary: Learn how to use speech in Windows Mixed Reality
+          url: using-speech-in-wmr.md
         # Card
         - title: Development documentation
           summary: Development and design documentation
