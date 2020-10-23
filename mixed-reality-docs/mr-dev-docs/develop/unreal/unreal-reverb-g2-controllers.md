@@ -14,7 +14,8 @@ Need introduction...
 
 ## Getting started
 
-Unreal Engine 4.26 and either OpenXR or SteamVR is required to access the HP Motion Controller plugin you'll need to work with the HP Reverb G2 controllers.
+> [!IMPORTANT]
+> Unreal Engine 4.26 and either OpenXR or SteamVR is required to access the HP Motion Controller plugin you'll need to work with the HP Reverb G2 controllers.
 
 [!INCLUDE[](includes/tabs-g2-controllers-in-unreal.md)]
 
