@@ -115,6 +115,9 @@ For more information, see the [Unity button/axis mapping table](../../unity/gest
 
 If your app already builds custom input logic for each platform, you can choose to use the Windows-specific spatial input APIs under the **UnityEngine.XR.WSA.Input** namespace. This lets you access additional information, such as position accuracy or the source kind, letting you tell hands and controllers apart on HoloLens.
 
+> [!NOTE]
+> If you're using HP Reverb G2 controllers, all input APIs will continue to work except for **InteractionSource.supportsTouchpad**, which will return false with no touchpad data.
+
 For more information, see the [overview of the UnityEngine.XR.WSA.Input APIs](../../unity/gestures-and-motion-controllers-in-unity.md#windows-specific-apis-xrwsainput).
 
 ## Grip pose vs. pointing pose
