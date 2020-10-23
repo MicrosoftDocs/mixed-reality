@@ -19,7 +19,7 @@ Need introduction...
 
 [!INCLUDE[](includes/tabs-g2-controllers-in-unreal.md)]
 
-### Porting From Existing OpenXR Game 
+## Porting an existing OpenXR app 
 
 If no controller bindings exist in the game for the HP Mixed Reality Controller, the OpenXR runtime will attempt to remap the existing bindings to the active controller.  In this case, the game has Oculus Touch bindings and no HP Mixed Reality Controller bindings.
 
@@ -29,7 +29,7 @@ The events will still fire, but if the game needs to make use of controller spec
    
 ![Using multiple controller bindings](images/reverb-g2-img-05.png)
 
-## Adding Input Action Mappings 
+## Adding input action mappings 
 
 Define a new action and map to one of the key presses in the HP Mixed Reality Controller section.
 
@@ -39,13 +39,13 @@ The HP Reverb G2 controller also has an analog grip, which can be used in the ax
 
 ![Using the Squeeze axis bindings](images/reverb-g2-img-03.png)
 
-## Adding Input Events to Game
+## Adding input events
 
 Right click on a Blueprint and search for the new action names from the input system to add events for these actions.  Here the Blueprint is responding to the events with a print string outputting the current button and axis state.
 
 ![Blueprint responding to events and outputting current button and axis state](images/reverb-g2-img-06.png)
 
-### Using Input 
+### Using input 
 
 [!INCLUDE[](includes/tabs-g2-controller-mapping-in-unreal.md)]
 
