@@ -19,51 +19,89 @@ metadata:
 # highlightedContent section (optional)
 # Maximum of 8 items
 
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
-landingContent: 
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+# productDirectory section (optional)
+highlightedContent:
   items:
     # Card
     - title: About Windows Mixed Reality VR
-      linkLists:
-      -   linkListType: overview
-          links:
-          - text: What is Windows Mixed Reality?
-            url: vr-journey.md
-      - linkListType: concept
-        links:
-          - text: PC hardware guidelines
-            url: windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md
-          - text: Before you start
-            url: before-you-start.md
-          - text: Install Windows Mixed Reality
-            url: install-windows-mixed-reality.md
+      itemType: overview
+      url: vr-journey.md
+    # Card
+    - title: Understand the hardware requirements
+      itemType: learn
+      url: windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md
     # Card
     - title: Getting started with Virtual Reality
-      linkLists:
-      - linkListType: get-started
-        links:
-          - text: Set up Windows Mixed Reality
-            url: set-up-windows-mixed-reality.md
-          - text: Your Mixed Reality home
-            url: your-mixed-reality-home.md
-          - text: Controllers in Windows Mixed Reality
-            url: controllers-in-wmr.md
+      itemType: get-started
+      url: set-up-windows-mixed-reality.md
     # Card
-    - title: Troubleshooting
-      linkLists:
-      - linkListType: reference
-        links:
-          - text: General FAQ
-            url: troubleshooting-windows-mixed-reality.md
-          - text: Filing bugs and feedback
-            url: filing-feedback.md
-          - text: Error codes
-            url: error-codes.md
+    - title: Health and safety guidance
+      itemType: concept
+      url: wmr-health-safety-comfort.md
+    # Card
+    - title: Mixed Reality software overview and release history
+      itemType: concept
+      url: mixed-reality-software.md
     # Card
     - title: Windows Mixed Reality academy
       itemType: video
       url: https://developer.microsoft.com/en-us/windows/mixed-reality/academy
-
+      
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  title: More resources  # < 60 chars (optional)
+  summary: Find additional information about Mixed Reality software, hardware, and troubleshooting. # < 160 chars (optional)
+  items:
+    # Card
+    - title: Quickstarts
+      links:
+        - url: plug-in-your-headset.md
+          itemType: quickstart
+          text: Connect your headset
+        - url: install-windows-mixed-reality.md
+          itemType: quickstart
+          text: Install Windows Mixed Reality software
+        - url: learn-mixed-reality.md
+          itemType: quickstart
+          text: Run the learning experience
+      # footerLink (optional)
+      footerLink:
+        url: using-games-and-apps-in-windows-mixed-reality.md
+        text: See more
+    # Card
+    - title: References
+      links:
+        - url: your-mixed-reality-home.md
+          itemType: concept
+          text: Your Mixed Reality home
+        - url: controllers-in-wmr.md
+          itemType: concept
+          text: Motion controllers in Windows Mixed Reality
+        - url: using-steamvr-with-windows-mixed-reality.md
+          itemType: concept
+          text: SteamVR with Windows Mixed Reality
+      # footerLink (optional)
+      footerLink:
+        url: using-speech-in-wmr.md
+        text: See more
+    # Card
+    - title: Troubleshooting
+      links:
+        - url: troubleshooting-windows-mixed-reality.md
+          itemType: concept
+          text: General FAQ
+        - url: filing-feedback.md
+          itemType: concept
+          text: Filing bugs and feedback
+        - url: error-codes.md
+          itemType: concept
+          text: Error codes
+      # footerLink (optional)
+      footerLink:
+        url: installation_errors.md
+        text: See more
 # additionalContent section (optional)
 # Card with summary style
 additionalContent:
