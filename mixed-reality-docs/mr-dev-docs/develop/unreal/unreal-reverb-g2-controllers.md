@@ -16,6 +16,16 @@ Need introduction...
 
 [!INCLUDE[](includes/tabs-g2-controllers-in-unreal.md)]
 
+### Porting From Existing OpenXR Game 
+
+If no controller bindings exist in the game for the HP Mixed Reality Controller, the OpenXR runtime will attempt to remap the existing bindings to the active controller.  In this case, the game has Oculus Touch bindings and no HP Mixed Reality Controller bindings.
+
+![Remapping existing bindings when no controller bindings exist](images/reverb-g2-img-04.png)
+
+The events will still fire, but if the game needs to make use of controller specific bindings, like the right menu button, the HP Mixed Reality interaction profile must be used.  Multiple controller bindings can be specified per action to better support different devices.
+   
+![Using multiple controller bindings](images/reverb-g2-img-05.png)
+
 ## Adding Input Action Mappings 
 
 Define a new action and map to one of the key presses in the HP Mixed Reality Controller section.
@@ -31,10 +41,6 @@ The HP Reverb G2 controller also has an analog grip, which can be used in the ax
 Right click on a Blueprint and search for the new action names from the input system to add events for these actions.  Here the Blueprint is responding to the events with a print string outputting the current button and axis state.
 
 ![Blueprint responding to events and outputting current button and axis state](images/reverb-g2-img-06.png)
-
-## Using controller input
-
-[!INCLUDE[](includes/tabs-g2-controller-mapping-in-unreal.md)]
 
 ### Input in C++
 
@@ -99,7 +105,7 @@ private:
 
 4. Compile from Visual Studio to launch the editor with the new pawn. Drag and drop the pawn from the content browser into the game and the pawn will now execute the callbacks when input is pressed.
 
-
+## See also
 * [SteamVR Input](https://docs.unrealengine.com/Platforms/VR/SteamVR/HowTo/SteamVRInput/index.html)
 * [Using SteamVR with Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)
 * [Unreal Player Camera](https://docs.unrealengine.com/Programming/Tutorials/PlayerCamera/3/index.html)
