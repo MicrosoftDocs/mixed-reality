@@ -90,8 +90,11 @@ On the **Inspector** pane of the **Quad**, click **Add Component** and add the *
 ![Add script to quad](images/spatial-audio/add-script-to-quad.png)
 
 On the **Spatialize On Off** component of the **Quad**:
-1. Find the **PressableButtonHoloLens2 -> IconAndText -> TextMeshPro** subobject in the **Hierarchy**
-2. Drag the **TextMeshPro** suboject onto the **ButtonTextObject** field of the **Spatialize On Off** component
+1. Find the **PressableButtonHoloLens2 -> IconAndText -> TextMeshPro** subject in the **Hierarchy**:
+
+![Find the PressableButtonHoloLens2 object in the hierarchy](images/spatial-audio/pressable-button-object.png)
+
+2. Drag the **TextMeshPro** subject onto the **ButtonTextObject** field of the **Spatialize On Off** component
 
 After these changes, the **Spatialize On Off** component of the **Quad** will look like this:
 

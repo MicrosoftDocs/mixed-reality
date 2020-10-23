@@ -13,13 +13,14 @@ appliesto:
 
 # Headset connectivity FAQs
 
-## My computer does not have an HDMI and/or Display Port.
+## My computer does not have an HDMI and/or Display Port
+
 You may need to use an adapter. Go [here](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) for a list of supported adapters.
 
 ## Can I use USB or HDMI and/or DisplayPort extension cables with Windows Mixed Reality headsets?
 Windows Mixed Reality headsets do not officially support the use of USB, HDMI, or DisplayPort extension cables. Using these cables may significantly impact your Mixed Reality experience because of variances in resulting signal integrity and bus power between your PC's USB controller and the Mixed Reality headset. If the headset display briefly shows a blue screen and then turns black and Mixed Reality Portal restarts or completely de-enumerates during use, or if the headset audio cuts out or becomes glitchy, or if the headset flickers between black and the correct display, try using your headset without extension cables.
 
-## I am getting a "Check your display cable" error.
+## I am getting a "Check your display cable" error
 
 * If you are using any adapters to connect your headset to your PC, make sure they support Windows Mixed Reality (the adapter must be 4K capable). Also try connecting the adapter to the PC before connecting the headset to the adapter.
 * Try using a different HDMI and/or DisplayPort port.
@@ -31,11 +32,11 @@ Windows Mixed Reality headsets do not officially support the use of USB, HDMI, o
 * Make sure that you plugged your headset's HDMI cable into an "HDMI out" port on your PC, not an "HDMI in" port.
 * Windows may be unable to detect the display cable connection. Open the Device Manager and see if the headset is listed under "Monitors". If not, select **Action > Scan for hardware changes**. 
 
-## A message says "Put on your headset" but I have my headset on.
+## A message says "Put on your headset" but I have my headset on
 
 When you put on your headset, Windows Mixed Reality may need a few seconds to reload your space. If this message doesn't go away, make sure the protective sticker has been removed from the proximity sensor, which is on the inside of the headset between the lenses. If this doesn't resolve the problem, contact your headset manufacturer.
 
-## A message says "Connect your headset" but I’ve plugged in my headset.
+## A message says "Connect your headset" but I’ve plugged in my headset
 
 1. Make sure the headset's USB and HDMI and/or DisplayPort cables are connected to the correct ports on your PC. Here is how to identify the correct ports:
     * USB 3.0 ports have a special logo with an "SS" mark (indicating "SuperSpeed"). The port's inside piece is normally blue, whereas older USB 2.0 ports are typically black or white on the inside.
@@ -52,7 +53,7 @@ Note for Surface users: Earlier versions of the Surface Dock and Surface Book US
 
 Note for Windows 10 N users: If your PC is running Windows 10 N, you'll see a "Code 28: The install class is not present or is invalid" error in Device Manager after plugging in your Mixed Reality headset. N editions of Windows 10 are not supported by Windows Mixed Reality. Follow these [instructions](headset-display.md#im-getting-a-the-install-class-is-not-present-or-is-invalid-error-in-device-manager) for more information.
 
-This information is also displayed in a [troubleshooting flowchart](headset-connectivity-flowchart.md). 
+This information is also displayed in a [troubleshooting flowchart](headset-connectivity-flowchart.md).
 
 ## A message says "Check your USB cable" or "Insufficient USB speed".
 

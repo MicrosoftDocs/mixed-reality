@@ -101,7 +101,10 @@ Rename the first button to **Indicator**, then in the Inspector window, configur
 
 ![mr-learning-base](images/mr-learning-base/base-06-section2-step1-3.png)
 
-In the Hierarchy window, select the **Indicator** object, then in the Inspector window, uncheck the checkbox next to its name to make it inactive by default:
+In the Hierarchy window, select the **Indicator** object, then in the Inspector window:
+
+* Uncheck the checkbox next to its name to make it inactive by default
+* Use the **Add Component** button to add the **Directional Indicator Controller (Script)** component
 
 ![mr-learning-base](images/mr-learning-base/base-06-section2-step1-4.png)
 
@@ -162,7 +165,7 @@ In the Hierarchy window, expand the RoverExplorer > **RoverParts** object and se
 * Ensure the **Focus Enabled** checkbox is checked to require the user to look at the part for the tooltip to appear
 * Assign the **Simple Line ToolTip** prefab from the Project window to the **Tool Tip Prefab** field
 * Change the ToolTip Override Settings > **Settings Mode** to **Override**
-* Change the ToolTip Override Settings > **Manual Pivot Location Position Y** to **1.5**
+* Change the ToolTip Override Settings > **Manual Pivot Local Position Y** to **1.5**
 
 ![mr-learning-base](images/mr-learning-base/base-06-section4-step1-2.png)
 
@@ -187,5 +190,4 @@ Press the Play button to enter Game mode, then press-and-hold the right mouse bu
 
 In this tutorial, you learned how to create a simple user interface using MRTK's provided button and menu prefabs alongside Unity's TextMeshPro component and how to configure the buttons to trigger events when they are pressed. You also learned how to add dynamic tooltip UI elements to provide the user with additional information.
 
-> [!div class="nextstepaction"]
-> [Next Tutorial: 7. Interacting with 3D objects](mr-learning-base-07.md)
+[Next Tutorial: 7. Interacting with 3D objects](mr-learning-base-07.md)

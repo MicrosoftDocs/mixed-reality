@@ -12,14 +12,16 @@ appliesto:
 
 # Get help with PC compatibility in Windows Mixed Reality
 
-When you set up Windows Mixed Reality or run the [Windows Mixed Reality PC Check](https://www.microsoft.com/p/windows-mixed-reality-pc-check/9nzvl19n7cnc?rtc=1#activetab=pivot:overviewtab) app on your computer, you'll get a report on whether your PC is ready to run it. Here are some details on what you might see. 
+When you set up Windows Mixed Reality or run the [Windows Mixed Reality PC Check](https://www.microsoft.com/p/windows-mixed-reality-pc-check/9nzvl19n7cnc?rtc=1#activetab=pivot:overviewtab) app on your computer, you'll get a report on whether your PC is ready to run it. Here are some details on what you might see.
 
-[Just show me the specs](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
+To make sure you can run Mixed Reality, please review [minimum PC hardware compatibility requirements](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md).
 
 ## You're good to go
-Good news—your PC can run Windows Mixed Reality. But keep in mind that there's still variation among computer hardware and configuration, so the mixed reality experience might not be the same on every PC. 
+
+Good news— your PC can run Windows Mixed Reality. But keep in mind that there's still variation among computer hardware and configuration, so the Mixed Reality experience might not be the same on every PC.
 
 ## Supports some features
+
 Your PC should be able to run some Windows Mixed Reality experiences, but might not provide the best possible experience. Graphics might lag, some apps and games might not perform well, and some might not run at all. 
 
 Here are the messages you might see, and what to do about them:
@@ -29,7 +31,7 @@ Here are the messages you might see, and what to do about them:
 Integrated graphics cards will provide the best Windows Mixed Reality experience on PCs with dual-channel RAM. If you run into performance problems, try one of the following:
 
 * Install a [compatible discrete graphics card](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines).
-* Install an additional RAM stick to create dual-channel RAM. 
+* Install an additional RAM stick to create dual-channel RAM.
 * Switch to a [compatible PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).
 
 ### This PC has a hybrid graphics configuration with an incompatible PCIe link
@@ -38,7 +40,7 @@ PCIe stands for *Peripheral Component Interconnect Express*. This is the connect
 
 ### This PC's graphics driver might not work well with Windows Mixed Reality
 
-If you run into problems, try downloading a new graphics driver using Windows Update (**Start > Settings > Update & security > Check for updates**)—or go to your PC manufacturer or graphics card manufacturer's website. 
+If you run into problems, try downloading a new graphics driver using Windows Update (**Start > Settings > Update & security > Check for updates**)—or go to your PC manufacturer or graphics card manufacturer's website.
 
 > [!div class="nextstepaction"]
 > [Check for updates](ms-settings:windowsupdate?activationSource=SMC-Article-4045777)
@@ -63,9 +65,10 @@ If you run into problems running Windows Mixed Reality, try the following:
     * If the list includes an "eXtensible Host Controller" item that includes "Etron" in the name, that USB controller isn't compatible with Windows Mixed Reality. You'll need to use a different USB port on the PC or purchase a different USB 3.0 host controller.
 4. Restart your PC.
 5. Return to Device Manager and locate the eXtensible Host Controller item again. If you now see “Microsoft” at the end of the device name, you’re good to go. If not, repeat the uninstall steps to remove any additional non-Microsoft versions of the driver.
+
 * If that still doesn't work, add a PCIe USB card to your PC.
 
-### This PC doesn't have Bluetooth 4.0 for controllers.
+### This PC doesn't have Bluetooth 4.0 for controllers
 
 Bluetooth 4.0 is required for mixed reality motion controllers on some headsets. You can still use Windows Mixed Reality with an Xbox controller or with a mouse and keyboard, or you can use a USB Bluetooth adapter to connect motion controllers to your PC. [See recommended adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 
@@ -81,7 +84,8 @@ A self-powered USB 3.0 port is needed to connect a Windows Mixed Reality headset
 
 This PC should work, but a high-performance Intel processor will provide the best experience. We recommend an 8th Gen Intel® Core™ or 7th Gen Intel® Core™ i5 processor.
 
-## Can't run mixed reality
+## Can't run Windows Mixed Reality
+
 Here are the messages you might see, and what to do about them:
 
 ### This PC's graphics card won't work with Windows Mixed Reality
@@ -89,6 +93,7 @@ Here are the messages you might see, and what to do about them:
 This PC's graphics card is not compatible with Windows Mixed Reality. You'll need to add a [compatible graphics card](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) or switch to a [compatible PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).
 
 ### This PC's graphics driver won't work with Windows Mixed Reality
+
 This PC's graphics driver won't work with Windows Mixed Reality. Try downloading a new graphics driver using Windows Update (**Start > Settings > Update & security > Check for updates**)—or go to your PC manufacturer or graphics card manufacturer's website. 
 
 > [!div class="nextstepaction"]
@@ -121,6 +126,7 @@ You'll need a USB 3.0 port to connect a Windows Mixed Reality headset. If you're
 To use Windows Mixed Reality, you'll a PC with a monitor connected. If you are using a virtual machine or don't have a monitor, try using a virtual display adapter. This is a device that plugs into the PC's DisplayPort and emulates a computer display. 
 
 ## Getting the best performance
+
 Some hardware configurations might cause performance problems with Windows Mixed Reality. For problems like slow loading, choppy visuals, or poor visual quality, try these common fixes:
 
 * Close any open apps running on your PC desktop.
@@ -132,7 +138,7 @@ Some hardware configurations might cause performance problems with Windows Mixed
 > If you see a message that says, "This hardware configuration might work with Windows Mixed Reality, but it hasn't been tested yet," you could run into some performance issues when running Windows Mixed Reality for long sessions .
 
 ## See also
+
 * [Ask the community](https://answers.microsoft.com)
 * [Contact us for support](https://support.microsoft.com/contactus/)
 * [Troubleshooting](troubleshooting-windows-mixed-reality.md)
-

@@ -73,7 +73,7 @@ To get started, follow the [SteamVR setup instructions for Windows Mixed Reality
 If you're interested in learning more about how Windows Mixed Reality works, you may also want to read about:
 * [Your Mixed Reality home](your-mixed-reality-home.md)
 * [Tracking system](tracking-system.md)
-* [Motion controllers](motion-controllers.md)
+* [Motion controllers](controllers-in-wmr.md)
 * [WebVR](webvr.md)
 * [Using SteamVR with Windows Mixed Reality](using-steamvr-with-windows-mixed-reality.md)
 * [Filing feedback](filing-feedback.md)
