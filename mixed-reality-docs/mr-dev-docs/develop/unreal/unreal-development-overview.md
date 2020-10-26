@@ -22,6 +22,9 @@ Getting started with <a href="https://docs.microsoft.com/windows/mixed-reality" 
 
 If you're new to Unreal development don't jump in blind. Explore the Unreal <a href="https://docs.unrealengine.com/GettingStarted/index.html" target="_blank">tutorial series</a> to get up to speed and look for assets and support in the Unreal <a href="https://www.unrealengine.com/marketplace/store" target="_blank">marketplace</a> and mixed reality <a href="https://forums.unrealengine.com/development-discussion/vr-ar-development" target="_blank">forums</a>. These resources are your links to the community of builders and problem solvers in todays mixed reality market.
 
+> [!IMPORTANT]
+> Take a look at our **[porting guides](../porting-apps/porting-overview.md)** if you have an existing Unreal project that you want to bring over to HoloLens 2 or immersive headsets such as the Reverb G2.
+
 ## Development checkpoints
 
 Use the following checkpoints to bring your Unreal games and applications into the world of mixed reality. If you haven't already explored the [Designing Holograms sample application](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd), we recommend downloading and using it to familiarize yourself with the basics of Mixed Reality UX.
