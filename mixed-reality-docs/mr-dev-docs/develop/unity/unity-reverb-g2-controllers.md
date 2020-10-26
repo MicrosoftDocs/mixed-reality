@@ -14,18 +14,18 @@ keywords: Unity, Reverb, Reverb G2, HP Reverb G2, mixed reality, development, mo
 HP Motion controllers are a brand new type of Windows Mixed Reality controllers: all the same tracking technology with a slightly different set of available inputs: 
 
 * Touchpad has been replaced by two buttons: A and B for the right controller, and X and Y for the left controller. 
-* Grasp is now a trigger that publishes a continuous stream of values between 0.0 and 1.0 instead of a button with two possible states (Pressed and Not Pressed). 
+* Grasp is now a trigger that publishes a stream of values between 0.0 and 1.0 instead of a button with Pressed and Not Pressed states. 
 
-Since the new inputs are not accessible through existing Windows and Unity APIs, you'll need to use the dedicated **Microsoft.MixedReality.Input** UPM (Unity Package Manager) Package. 
+Since the new inputs aren't accessible through existing Windows and Unity APIs, you need the dedicated **Microsoft.MixedReality.Input** UPM Package. 
 
 > [!IMPORTANT]
 > **Classes in this package do not replace existing Windows and Unity APIs but complement them.** Features commonly available to both classic Windows Mixed Reality controllers and HP Motion Controllers are accessible through the same code path using existing APIs. Only the new inputs require the use of the additional Microsoft.MixedReality.Input package. 
 
 ## HP Motion Controller overview
 
-*Microsoft.MixedReality.Input.MotionController* represents a motion controller. Each *MotionController* instance has an *XR.WSA.Input.InteractionSource* instance, which can be correlated using handedness, vendor id, product id and version. The MotionController’s methods and properties describe the inputs supported by the controller, including its buttons, triggers, 2D axis and thumbstick. 
+*Microsoft.MixedReality.Input.MotionController* represents a motion controller. Each *MotionController* instance has an *XR.WSA.Input.InteractionSource* instance, which can be correlated using handedness, vendor ID, product ID, and version. The MotionController’s methods and properties describe the inputs supported by the controller, including its buttons, triggers, 2D axis, and thumbstick. 
 
-MotionController instances are discovered by creating a *MotionControllerWatcher* and subscribing to its events, similar to using *InteractionManager* events to discover new *InteractionSource* instances. The MotionController class also exposes methods for accessing input states through the *MotionControllerReading* class. The MotionControllerReading class represents a snapshot of the controller’s state at a given time. 
+You can grab MotionController instances by creating a *MotionControllerWatcher* and subscribing to its events, similar to using *InteractionManager* events to discover new *InteractionSource* instances. The MotionController class also exposes methods for accessing input states through the *MotionControllerReading* class. The MotionControllerReading class represents a snapshot of the controller’s state at a given time. 
 
 ## Installing Microsoft.MixedReality.Input using the Unity Package Manager 
 
@@ -33,7 +33,7 @@ The Unity Package Manager uses a [manifest file](https://docs.unity3d.com/Manual
 
 ### Registering the Mixed Reality component server 
 
-For each project that will be using the Microsoft Mixed Reality Toolkit, the manifest.json file (in the Packages folder) will need to have the Mixed Reality scoped registry added. To properly modify manifest.json to support Mixed Reality: 
+For each project that will be using the Microsoft Mixed Reality Toolkit, the manifest.json file (in the Packages folder) needs the Mixed Reality scoped registry added. To properly modify manifest.json to support Mixed Reality: 
     1. Open <projectRoot>/Packages/manifest.json in a text editor, such as Visual Studio Code. 
     2. At the top of the manifest file, add the Mixed Reality server to the scoped registry section and save the file. 
     
@@ -64,13 +64,13 @@ Modify the dependencies section of the <projectRoot>/Packages/manifest.json file
 
 ### Input values
 
-A MotionController can expose two kind of inputs: 
+A MotionController can expose two kinds of inputs: 
 
-* Buttons and trigger states are expressed by an unique float value between 0.0 and 1.0 that indicates how much they're pressed.
+* Buttons and trigger states are expressed by a unique float value between 0.0 and 1.0 that indicates how much they're pressed.
     * A button can only return 0.0 (when not pressed) or 1.0 (when pressed) while a trigger can return continuous values between 0.0 (fully released) to 1.0 (fully pressed). 
 * Thumbstick state is expressed by a Vector2 whose X and Y components are between -1.0 and 1.0. 
 
-You can use the *MotionController.GetPressableInputs()* method to return a list of inputs returning a pressed value (buttons and triggers) or the *MotionController.GetXYInputs()* method to return a list of inputs returning a 2-axis value. 
+You can use *MotionController.GetPressableInputs()* to return a list of inputs returning a pressed value (buttons and triggers) or the *MotionController.GetXYInputs()* method to return a list of inputs returning a 2-axis value. 
 
 A MotionControllerReading instance represents the state of the controller at a given time: 
 
@@ -79,7 +79,7 @@ A MotionControllerReading instance represents the state of the controller at a g
 
 ### Creating a cache to maintain a collection of MotionController instances and their states 
 
-Start by instantiating a MotionControllerWatcher and registering handlers for its *MotionControllerAdded* and *MotionControllerRemoved* events, which keeps a cache of available MotionController instances. This cache should be a MonoBehavior attached to a GameObject as demonstrated in the following code:
+Start by instantiating a MotionControllerWatcher and registering handlers for its *MotionControllerAdded* and *MotionControllerRemoved* events to keep a cache of available MotionController instances. This cache should be a MonoBehavior attached to a GameObject as demonstrated in the following code:
 
 ```csharp
 public class MotionControllerStateCache : MonoBehaviour 
@@ -166,7 +166,7 @@ public class MotionControllerStateCache : MonoBehaviour
 
 ### Reading new inputs by polling 
 
-The current state of each known controller is read through *MotionController.TryGetReadingAtTime* during the *Update* method of the MonoBehavior class. You want to pass *DateTime.Now* as the timestamp parameter to ensure that the latest state of the controller is read. 
+You can read the current state of each known controller through *MotionController.TryGetReadingAtTime* during the *Update* method of the MonoBehavior class. You want to pass *DateTime.Now* as the timestamp parameter to ensure that the latest state of the controller is read. 
 
 ```csharp
 public class MotionControllerStateCache : MonoBehaviour 
@@ -282,7 +282,7 @@ void Update()
 
 ### Generating events from the new inputs 
 
-Instead of polling for a controller’s state, you might want to get data directly from a buttons Pressed and Released events, which let's you handle even the quickest actions lasting less than a frame. In order for this approach to work, the cache of motion controllers should process all states published by a controller since the last frame, which you can do by storing the timestamp of the last MotionControllerReading retrieved from a MotionController and calling *MotionController.TryGetReadingAfterTime()*: 
+Instead of polling for a controller’s state, you can get data directly from a buttons' Pressed and Released events, which let's you handle even the quickest actions lasting less than a frame. In order for this approach to work, the cache of motion controllers needs to process all states published by a controller since the last frame, which you can do by storing the timestamp of the last MotionControllerReading retrieved from a MotionController and calling *MotionController.TryGetReadingAfterTime()*: 
 
 ```csharp
 private class MotionControllerState 
