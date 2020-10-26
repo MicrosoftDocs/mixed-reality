@@ -1,4 +1,4 @@
-# [C++](#tab/cpp)
+# [All platforms](#tab/all)
 
 The same action and axis mappings in the game’s input project settings can be used from C++.
 
