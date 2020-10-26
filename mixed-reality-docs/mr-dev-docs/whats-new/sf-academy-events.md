@@ -20,6 +20,6 @@ Join the Microsoft Mixed Reality Team at these upcoming events!
 | Mixed Reality Speaker Series|August 25, 2020|[MR Best Practices using Unreal Engine](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Tips-and-Best-Practices-for-using-UE4-in-MR)|
 | Mixed Reality Speaker Series|September 1, 2020|[Creating Entertaining Characters for AR/VR](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Creating-Entertaining-Characters-for-Mixed-Reality)|
 | HoloLens & Mixed Reality Meetup|September 8, 2020|[Human perception and Mixed Reality](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Human-Perception-and-Mixed-Reality)|
-| HoloLens & Mixed Reality Mixed Reality Speaker Series|October 22, 2020|[Introduction to WebXR with BabylonJS](https://www.meetup.com/hololens-mr/events/274042144/)|
+| Mixed Reality Speaker Series|October 22, 2020|[Introduction to WebXR with BabylonJS](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Adding-Augmented-Reality-to-your-Typescript-Project)|
 
 
