@@ -10,8 +10,6 @@ keywords: Unreal, Unreal Engine 4, UE4, Reverb, Reverb G2, HP Reverb G2, mixed r
 
 # HP Reverb G2 Controllers in Unreal 
 
-Need introduction...
-
 ## Getting started
 
 > [!IMPORTANT]

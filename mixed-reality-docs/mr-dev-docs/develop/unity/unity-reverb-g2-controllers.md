@@ -11,8 +11,6 @@ keywords: Unity, Reverb, Reverb G2, HP Reverb G2, mixed reality, development, mo
 
 # HP Reverb G2 Controllers in Unity
 
-Need introductions...
-
 ## Getting started
 
 There's no additional setup required to use the HP Reverb G2 controller if you're developing for SteamVR or using the Windows Mixed Reality Input API (XR.WSA.Input). However, the A, B, X, Y buttons and the squeeze trigger are not currently accessible through the Input Manager unless you're using SteamVR. Support for the extra Reverb G2 inputs will be available in the near future, so be sure to check back!
