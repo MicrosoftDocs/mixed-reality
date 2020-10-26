@@ -1,2 +1,8 @@
 - name: Index
   href: index.md
+- name: Getting started
+  href: getting-started/toc.yml
+- name: Samples
+  href: samples/toc.yml
+- name: Resources
+  href: resources/toc.yml
