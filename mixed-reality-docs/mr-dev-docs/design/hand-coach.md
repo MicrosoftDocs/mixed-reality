@@ -63,7 +63,7 @@ For Hololens2, we designed out hand interactions based on instinctual and natura
 
 ### Intuitive
 
-When animating hands, it should be obvious and shoudn't cause any confusion. The animation of the hands is a representation of the gesture your trying to evoke to the user to understand it's purpose. 
+When animating hands, it should be obvious and shouldn't cause any confusion. The animation of the hands is a representation of the gesture your trying to evoke to the user to understand it's purpose. 
 
 For example, if you wish a user to press a button, a hand pressing a button would be triggered.
 
