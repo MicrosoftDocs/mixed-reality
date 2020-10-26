@@ -1,5 +1,5 @@
 - name: Index
-  href: index.md
+  href: index.yml
 - name: Getting started
   href: getting-started/toc.yml
 - name: Samples

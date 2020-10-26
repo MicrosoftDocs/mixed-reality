@@ -41,7 +41,8 @@
     "globalMetadata": {
       "breadcrumb_path": "/windows/mixed-reality/maquette/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "feedback_system": "None",
+      "ms.prod": "mixed-reality"
     },
     "fileMetadata": {},
     "template": [],
