@@ -4,10 +4,6 @@
 
 Build a cross-platform, full-featured mixed reality app with Unity. See the [Unity development overview](../unity/unity-development-overview.md) to get started with Unity development for HoloLens or Windows Mixed Reality immersive headsets.
 
-## What does Unity offer?
-
-Unity is one of the leading real-time development platforms on the market, boasting an ecosystem with a dedicated [learning platform](https://unity.com/products/learn-premium), [asset store](https://assetstore.unity.com/), [full documentation](https://docs.unity3d.com/Manual/index.html), and a thriving community. Unity's underlying runtime code is written in C++, but all development scripting is done in C#. Whether you're looking to build games, movies and animation cinematics, or even render architectural or engineering concepts in a virtual world, Unity has the infrastructure to support you.
-
 ## Available hardware platforms
 
 You have several hardware and emulator options when building Mixed Reality apps with Unity. While our developer documentation focuses on HoloLens devices, you'll find device support sections with details on immersive headset deployment when applicable.
@@ -60,10 +56,6 @@ This page covers how to get quickly started with using eye tracking in MRTK by b
 
 Build a cross-platform, full-featured mixed reality app with Unreal. See the [Unreal development overview](../unreal/unreal-development-overview.md) to get started with Unreal development for HoloLens.
 
-## What does Unreal offer?
-
-Unreal Engine 4 is a powerful, open source creation engine with full support for mixed reality in both C++ and Blueprints. As of Unreal Engine 4.25, HoloLens support is full-featured and production-ready.
-
 ## Available hardware platforms
 
 You have several hardware, emulator, and streaming options when building Mixed Reality apps with Unreal Engine. While our developer documentation focuses on HoloLens devices, you can package your Unreal projects as x64 desktop apps and run them on immersive headsets just fine.
@@ -115,10 +107,6 @@ The WebXR Device API is an open specification that allows you to experience Mixe
  ![Native](../images/native_logo_banner.png)
 
 Create mixed reality apps with a direct line to the Windows Mixed Reality APIs. See the [Native development overview](../native/directx-development-overview.md) to get started with native app development using OpenXR or legacy WinRT for HoloLens 2 or Windows Mixed Reality immersive headsets. The Windows Mixed Reality API supports applications written in C++ and C#, allowing you to build your own framework or middleware in either language.
-
-## What does OpenXR offer?
-
-OpenXR is an open royalty-free API standard from Khronos that provides engines native access to a wide range of devices from vendors across the mixed reality spectrum. You can develop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive headset on the desktop. If you don't have access to a headset, emulators for HoloLens 2 and Windows Mixed Reality headsets are available.
 
 ## Available hardware platforms
 
