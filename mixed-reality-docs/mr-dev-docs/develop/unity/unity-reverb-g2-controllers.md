@@ -23,9 +23,9 @@ Since the new inputs aren't accessible through existing Windows and Unity APIs, 
 
 ## HP Motion Controller overview
 
-*Microsoft.MixedReality.Input.MotionController* represents a motion controller. Each *MotionController* instance has an *XR.WSA.Input.InteractionSource* instance, which can be correlated using handedness, vendor ID, product ID, and version. The MotionController’s methods and properties describe the inputs supported by the controller, including its buttons, triggers, 2D axis, and thumbstick. 
+*Microsoft.MixedReality.Input.MotionController* represents a motion controller. Each *MotionController* instance has an *XR.WSA.Input.InteractionSource* peer, which can be correlated using handedness, vendor ID, product ID, and version. 
 
-You can grab MotionController instances by creating a *MotionControllerWatcher* and subscribing to its events, similar to using *InteractionManager* events to discover new *InteractionSource* instances. The MotionController class also exposes methods for accessing input states through the *MotionControllerReading* class. The MotionControllerReading class represents a snapshot of the controller’s state at a given time. 
+You can grab MotionController instances by creating a *MotionControllerWatcher* and subscribing to its events, similar to using *InteractionManager* events to discover new *InteractionSource* instances. The MotionController’s methods and properties describe the inputs supported by the controller, including its buttons, triggers, 2D axis, and thumbstick. The MotionController class also exposes methods for accessing input states through the *MotionControllerReading* class. The MotionControllerReading class represents a snapshot of the controller’s state at a given time. 
 
 ## Installing Microsoft.MixedReality.Input using the Unity Package Manager 
 
