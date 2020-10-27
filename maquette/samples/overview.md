@@ -10,7 +10,7 @@ keywords: Windows Mixed Reality, Maquette, prototyping, Mixed Reality, Virtual R
 
 # Samples overview
 
-![Logo](.../images/MaquetteIcon.png) Maquette Script Example Apps
+![Logo](../images/MaquetteIcon.png) Maquette Script Example Apps
 
 ## Examples
 
@@ -22,8 +22,8 @@ keywords: Windows Mixed Reality, Maquette, prototyping, Mixed Reality, Virtual R
 * Unpack the following zipfile to your ~/Documents/Maquette/Scripts directory: 
 
 <p align="center">
-Example scripts: <a href="../images/ExampleScripts.zip" download="ExampleScripts.zip">
-  <img src="/doc_staging/images/jsicon.png" alt="Example Scripts">
+Example scripts: <a href="../files/ExampleScripts.zip" download="ExampleScripts.zip">
+  <img src="../images/jsicon.png" alt="Example Scripts">
 </a>
 </p>
 

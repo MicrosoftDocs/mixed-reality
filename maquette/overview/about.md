@@ -15,7 +15,7 @@ keywords: Windows Mixed Reality, Maquette, prototyping, Mixed Reality, Virtual R
 Maquette integrates standard ECMA 5.1 Javascript to enable investment of interactivity in Maquette scenes and objects which can be edited and executed from within VSCode. Properties of objects are exposed for reading and setting from within script, object methods called, and object and system events fielded. Script can also interact with Maquette itself via system objects accessible via script. Various UI controls that the user can interact with are part of the system. These can be added when authoring in Maquette or created and managed from within script. User interaction events with these elements (data entry, clicks, etc) are also exposed to script as events. With these additions, simple to complex scenes can be built, from experiments to data visualization to explorations of Mixed Reality user scenarios to fully realized experiences in AR or VR.
 
 <p align="center">
-  <img src="../images/ScriptingOverview.png" alt="Scripting overview video screenshot">
+  <img src="images/ScriptingOverview.png" alt="Scripting overview video screenshot">
 </p>
 
 60 second'ish video
