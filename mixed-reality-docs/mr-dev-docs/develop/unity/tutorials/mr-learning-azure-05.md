@@ -41,7 +41,7 @@ The goal of the bot is to have the abilities to tell how many *Tracked Objects* 
 
 You are about to start creating the Bot, but to make it useful you need to give it a resource from which it can pull data. Since the *Bot* will be able to count the amount of **Tracked Objects**, find specific ones by name and tell details, you will use a simple Azure Function that has access to the **Azure Table storage**.
 
-Download the Azure Function Project: [Tracked Objects Azure Function](https://github.com/microsoft/MixedRealityLearning/releases/download/a-tag/AzureFunction_TrackedObjectsService.zip)
+Download the Tracked Objects Azure Function project: [AzureFunction_TrackedObjectsService.zip](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/AzureFunction_TrackedObjectsService.zip) and extract it to your hard drive.
 
 This Azure Function has two actions, **Count** and **Find** which can be invoked via basic *HTTP* *GET* calls. You can inspect the code in **Visual Studio**.
 
@@ -64,8 +64,7 @@ Once the **Bot Framework Composer** is installed, start the application and you 
 
 ![mr-learning-azure](images/mr-learning-azure/tutorial5-section4-step1-1.png)
 
-You have prepared a bot composer project which provides the needed dialogues and triggers for this tutorial.
-Download the project: [Bot Framework Composer project](https://github.com/microsoft/MixedRealityLearning/releases/download/a-tag/BotComposerProject_TrackedObjectsBot.zip)
+We have prepared a bot composer project which provides the needed dialogues and triggers for this tutorial. Download the Bot Framework Composer project: [BotComposerProject_TrackedObjectsBot.zip](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/BotComposerProject_TrackedObjectsBot.zip) and extract it to your hard drive.
 
 On the top bar click on **Open** and select the Bot Framework project you have downloaded which is named **TrackedObjectsBot**. After the project is fully loaded, you should see the project ready.
 
