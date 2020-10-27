@@ -282,7 +282,7 @@ void Update()
 
 ### Generating events from the new inputs 
 
-Instead of polling for a controller’s state, you can get data directly from a buttons' Pressed and Released events, which let's you handle even the quickest actions lasting less than a frame. In order for this approach to work, the cache of motion controllers needs to process all states published by a controller since the last frame, which you can do by storing the timestamp of the last MotionControllerReading retrieved from a MotionController and calling *MotionController.TryGetReadingAfterTime()*: 
+Instead of polling for a controller's state once per frame, you have the option of handling all state changes as events, which lets you handle even the quickest actions lasting less than a frame. In order for this approach to work, the cache of motion controllers needs to process all states published by a controller since the last frame, which you can do by storing the timestamp of the last MotionControllerReading retrieved from a MotionController and calling *MotionController.TryGetReadingAfterTime()*: 
 
 ```csharp
 private class MotionControllerState 

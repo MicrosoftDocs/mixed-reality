@@ -64,7 +64,7 @@ The button/axis ID mappings for Windows Mixed Reality differ from OpenVR's mappi
 >[!NOTE]
 >These button/axis IDs differ from the IDs that Unity uses for OpenVR due to collisions in the mappings used by gamepads, Oculus Touch and OpenVR.
 
-### Using HP Reverb G2 controllers
+<!-- ### Using HP Reverb G2 controllers
 
 If you're using the HP Reverb G2 controllers, refer to the table below for button and axis IDs.
 
@@ -89,7 +89,7 @@ If you're using the HP Reverb G2 controllers, refer to the table below for butto
 <td> TriggerButton </td><td> Button 14 </td><td> Button 15 </td><td> Index trigger</td>
 </tr><tr>
 </tr>
-</table>
+</table> -->
 
 
 ## Grip pose vs. pointing pose
