@@ -1,7 +1,9 @@
 - name: Index
   href: index.yml
-- name: Getting started
-  href: getting-started/toc.yml
+- name: Overview
+  href: overview/toc.yml
+- name: Quickstarts
+  href: quickstarts/toc.yml
 - name: Samples
   href: samples/toc.yml
 - name: Resources

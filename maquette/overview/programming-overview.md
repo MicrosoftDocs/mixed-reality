@@ -1,6 +1,6 @@
 ---
 title: Programming overview
-description: Learn how to setup and use controllers in Windows Mixed Reality.
+description: Learn how to access Maquette objects and interfaces with scripting.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/26/2020
@@ -10,21 +10,21 @@ keywords: Windows Mixed Reality, Maquette, prototyping, Mixed Reality, Virtual R
 
 # Programming overview
 
-![Logo](/doc_staging/images/MaquetteIcon.png) Programming Overview
-============
+![Logo](../images/MaquetteIcon.png) Programming Overview
+
 Microsoft Maquette uses JavaScript (ECMAScript 5.1 with extensions) based on the [Jint](https://github.com/sebastienros/jint) interpreter. The extension `.mqjs` is used to distinguish Maquette javascript files from normal JavaScript.
 
 Maquette objects and interfaces are accessible and scriptable via the `Maquette` Object. Documentation on Maquette Objects and interfaces are provided in Maquette's API Reference.
 
 MaquetteScript is a new addition and in flux so changes should be expected. More detailed documentation and updates available soon.
 
-Spotlights on Scripting
------------------
+## Spotlights on Scripting
+
 * TBD - Scripting Spotlights focused as Samples/Tutorials
   * 2x Images/Caption – link to spotlight page
 
-Overview
------------------
+## Overview
+
 * Mqjs vs. JS
 * Programming Model
   * Editing vs. Running
