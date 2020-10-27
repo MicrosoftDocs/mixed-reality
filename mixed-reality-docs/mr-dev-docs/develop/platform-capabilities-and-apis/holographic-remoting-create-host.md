@@ -349,7 +349,7 @@ void SampleRemoteMain::Render(HolographicFrame holographicFrame)
 
 ```
 
-To verify if depth reprojection is correclty working on HoloLens 2 you can enable a depth visualizer via the Device Portal. See [Verifying Depth is Set Correctly](hologram-stability.md#verifying-depth-is-set-correctly) for details.
+To verify if depth reprojection is correctly working on HoloLens 2 you can enable a depth visualizer via the Device Portal. See [Verifying Depth is Set Correctly](hologram-stability.md#verifying-depth-is-set-correctly) for details.
 
 ## Optional: Custom data channels
 
