@@ -103,7 +103,7 @@ If that doesn't work, you'll need to add a [compatible graphics card](windows-mi
 
 ### This PC's processor won't work with Windows Mixed Reality
 
-This PC's processor doesn't supprot AVX/Popcnt instructions. To run Windows Mixed Reality, you'll need to replace it with a [compatible graphics card](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) or switch to a [compatible PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).
+This PC's processor doesn't support AVX/Popcnt instructions. To run Windows Mixed Reality, you'll need to replace it with a [compatible graphics card](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) or switch to a [compatible PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).
 
 ### This PC doesn't have enough free disk space to run Windows Mixed Reality
 
