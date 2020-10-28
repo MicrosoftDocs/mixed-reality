@@ -33,7 +33,7 @@ The Unity Package Manager uses a [manifest file](https://docs.unity3d.com/Manual
 
 ### Registering the Mixed Reality component server 
 
-For each project that will be using the Microsoft Mixed Reality Toolkit, the manifest.json file (in the Packages folder) needs the Mixed Reality scoped registry added. To properly modify manifest.json to support Mixed Reality: 
+For each project that will be using the Mixed Reality Input package, the manifest.json file (in the Packages folder) needs the Mixed Reality scoped registry added. To properly modify manifest.json to support Mixed Reality: 
     1. Open <projectRoot>/Packages/manifest.json in a text editor, such as Visual Studio Code. 
     2. At the top of the manifest file, add the Mixed Reality server to the scoped registry section and save the file. 
     
