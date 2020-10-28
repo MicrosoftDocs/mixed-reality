@@ -1638,7 +1638,7 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/mr-learning-overview.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/out-of-scope/mr-learning-overview",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/mr-learning-overview",
 			"redirect_document_id": true
 		},
 		{
