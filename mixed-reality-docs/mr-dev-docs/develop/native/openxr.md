@@ -75,6 +75,10 @@ You can develop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive 
 
 To start developing OpenXR applications for HoloLens 2 or immersive Windows Mixed Reality headsets, see [how to get started with OpenXR development](openxr-getting-started.md).
 
+For a tour through all the major components of the OpenXR API, along with examples of the real-world applications using OpenXR today, check out this 60-minute walkthrough video:
+
+>[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/OpenXR-Cross-platform-native-mixed-reality/player?format=ny]
+
 ## See also
 
 * <a href="https://www.khronos.org/openxr/" target="_blank">More information on OpenXR</a>

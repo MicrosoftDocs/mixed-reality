@@ -52,6 +52,12 @@ After building an OpenXR Win32 desktop .EXE, you can use it with a VR headset on
 
 After building an OpenXR UWP app package, you can [deploy that package](../platform-capabilities-and-apis/using-visual-studio.md) to either a HoloLens 2 device or the HoloLens 2 Emulator.
 
+## Learning the OpenXR API
+
+For a tour of the OpenXR API, check out this 60-minute video that walks through the code of the <a href="https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp" target="_blank">BasicXrApp</a> sample in Visual Studio.  The video shows how each of the major components of the OpenXR API can be used in your own engine, and also demonstrates some of the applications built on OpenXR today.
+
+>[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/OpenXR-Cross-platform-native-mixed-reality/player?format=ny]
+
 ## Integrate the OpenXR loader into a project
 
 To get started with OpenXR in an existing project, you'll include the OpenXR loader.  The loader discovers the active OpenXR runtime on the device and provides access to the core functions and extension functions that it implements.
