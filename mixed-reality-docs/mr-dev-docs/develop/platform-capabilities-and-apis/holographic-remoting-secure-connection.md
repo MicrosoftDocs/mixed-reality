@@ -47,7 +47,8 @@ Ensuring proper authentication requires some extra work though. What exactly you
 
 First some terminology: when describing network connections, the terms _client_ and _server_ will be used. The server is the side listening for incoming connections on a known endpoint address, and the client is the one connecting to the server's endpoint.
 
->[!NOTE] The client and and server roles are not tied to whether an app is acting as a player or as a remote. While the samples have the player in the server role, it's easy to reverse the roles if it better fits your use case.
+>[!NOTE]
+> The client and and server roles are not tied to whether an app is acting as a player or as a remote. While the samples have the player in the server role, it's easy to reverse the roles if it better fits your use case.
 
 ### Planning the server-to-client authentication
 
@@ -88,7 +89,7 @@ A shared secret won't be enough to cover this use case. Instead, you can use tok
 * The client sends this token to the server through Holographic Remoting
 * The server validates the client's token against the identity provider
 
-One example of an identity provider is the [Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/).
+One example of an identity provider is the [Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/).
 
 Like in the previous use case, make sure these tokens aren't sent through insecure channels or otherwise exposed.
 
