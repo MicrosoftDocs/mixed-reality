@@ -29,7 +29,7 @@ Windows Mixed Reality supports [two kinds of apps](../../design/app-views.md):
 
 The differences between DirectX development for [2D views and immersive views](../../design/app-views.md) primarily concern holographic rendering and spatial input. Your UWP application's [IFrameworkView](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) or your Win32 application's HWND are required and remain largely the same. The same is true for the WinRT APIs that are available to your app. But you must use a different subset of these APIs to take advantage of holographic features. For example, the swapchain and frame present is managed by the system for holographic applications in order to enable a pose-predicted frame loop.
 
-[!INCLUDE[](includes/native-getting-started.md)]
+[!INCLUDE[](../includes/native-getting-started.md)]
 
 ### 2. Core building blocks
 
