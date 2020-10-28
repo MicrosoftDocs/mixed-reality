@@ -35,7 +35,7 @@ The differences between DirectX development for [2D views and immersive views](.
 | [Install the latest tools](../install-the-tools.md) | Download and install the latest Unity package and setup your project for mixed reality |
 | [Setup for HoloLens 2](openxr-getting-started.md#getting-started-with-openxr-for-hololens-2) | Configure your device and environment for HoloLens 2 development |
 | [Set up for immersive headsets](openxr-getting-started.md#getting-started-with-openxr-for-windows-mixed-reality-headsets) | Configure your device and environment for Windows Immersive Headset development |
-| [Download the developer tools](openxr-getting-started.md#getting-the-windows-mixed-reality-openxr-developer-tools) | Try out the Windows Mixed Reality OpenXR Runtime |
+| [Download the developer tools](openxr-getting-started.md#getting-the-openxr-developer-tools-for-windows-mixed-reality) | Try out the Windows Mixed Reality OpenXR Runtime |
 | [Add the OpenXR Loader](openxr-getting-started.md#integrate-the-openxr-loader-into-a-project) | Discover the active OpenXR runtime on your device and access the core and extension functions that it implements |
 | [Try a sample app](openxr-getting-started.md#building-a-sample-openxr-app) | Explore a UWP and Win32 versions of the same basic app on your device |
 
