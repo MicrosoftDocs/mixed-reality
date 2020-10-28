@@ -28,6 +28,9 @@ In Mixed Reality Portal, you can:
 * Get to your mixed reality photos. Select **Menu > See mixed reality photos**.
 * Get mixed reality apps and games. Select **Menu > Get mixed reality apps**.
 
+> [!div class="nextstepaction"]
+> [Get Mixed Reality Portal](https://www.microsoft.com/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab)
+
 ## Download Windows Mixed Reality
 
 Windows Mixed Reality is approximately 1GB in size, and your download times will vary depending on your internet connection. If you hit a message that says "We couldn't download the Mixed Reality software", please view [the troubleshooting steps](installation_errors.md#we-couldnt-download-the-mixed-reality-software-or-hang-tight-while-we-do-some-downloading).
