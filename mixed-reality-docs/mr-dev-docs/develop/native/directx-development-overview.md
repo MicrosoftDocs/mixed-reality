@@ -29,15 +29,7 @@ Windows Mixed Reality supports [two kinds of apps](../../design/app-views.md):
 
 The differences between DirectX development for [2D views and immersive views](../../design/app-views.md) primarily concern holographic rendering and spatial input. Your UWP application's [IFrameworkView](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) or your Win32 application's HWND are required and remain largely the same. The same is true for the WinRT APIs that are available to your app. But you must use a different subset of these APIs to take advantage of holographic features. For example, the swapchain and frame present is managed by the system for holographic applications in order to enable a pose-predicted frame loop.
 
-|  Checkpoint  |  Outcome  |
-| --- | --- |
-| [What is OpenXR?](openxr.md) | Begin your native development journey by getting acquainted with OpenXR and what it has to offer |
-| [Install the latest tools](../install-the-tools.md) | Download and install the latest Unity package and setup your project for mixed reality |
-| [Setup for HoloLens 2](openxr-getting-started.md#getting-started-with-openxr-for-hololens-2) | Configure your device and environment for HoloLens 2 development |
-| [Set up for immersive headsets](openxr-getting-started.md#getting-started-with-openxr-for-windows-mixed-reality-headsets) | Configure your device and environment for Windows Immersive Headset development |
-| [Download the developer tools](openxr-getting-started.md#getting-the-openxr-developer-tools-for-windows-mixed-reality) | Try out the Windows Mixed Reality OpenXR Runtime |
-| [Add the OpenXR Loader](openxr-getting-started.md#integrate-the-openxr-loader-into-a-project) | Discover the active OpenXR runtime on your device and access the core and extension functions that it implements |
-| [Try a sample app](openxr-getting-started.md#building-a-sample-openxr-app) | Explore a UWP and Win32 versions of the same basic app on your device |
+[!INCLUDE[](includes/native-getting-started.md)]
 
 ### 2. Core building blocks
 

@@ -151,3 +151,6 @@ Feel free to play around with the sample app to get a feel for what's possible w
 
 <!-- Go to actual GH link for more samples -->
 * [BasicXrApp](https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp) - Demonstrates a simple OpenXR sample with two Visual Studio project files, one for both a Win32 desktop app and one for a UWP HoloLens 2 app.
+
+You can also watch a 60-minute walkthrough of BasicXrApp that tours all key components of the OpenXR API in Visual Studio:
+>[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/OpenXR-Cross-platform-native-mixed-reality/player?format=ny]
