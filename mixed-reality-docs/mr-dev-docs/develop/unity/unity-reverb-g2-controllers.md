@@ -56,7 +56,7 @@ Modify the dependencies section of the <projectRoot>/Packages/manifest.json file
 
 <pre>
   "dependencies": { 
-    "com.microsoft.mixedreality.input": "0.9.0", 
+    "com.microsoft.mixedreality.input": "0.9.2006", 
   }
 </pre>
 
