@@ -17,17 +17,17 @@ appliesto:
 
 ### Where can I buy a Windows Mixed Reality ready PC or headset?
 
-**Quick Answer:** You can buy a Windows Mixed Reality ready PC or headset at an approved local retailer or online from a variety of retailers including the Microsoft Store. Find a Windows Mixed Reality ready PC or headset online: <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>
+**Quick Answer:** You can buy a Windows Mixed Reality ready PC or headset at an approved local retailer or online from a variety of retailers including the Microsoft Store. Find a Windows Mixed Reality ready PC or headset online: <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
 ### Where can I try Windows Mixed Reality?
 
-**Quick Answer:** You can try Windows Mixed Reality at a [Microsoft Reactor](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet) near you.  
-* Find your local Microsoft Reactor: <https://www.microsoft.com/en-us/store/locations/all-locations>
+**Quick Answer:** You can try Windows Mixed Reality at a [Microsoft Reactor](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet) near you.
+
 * Find Microsoft Reactor events on Meetup.com: <https://www.meetup.com/pro/microsoft-reactor>
 
 ### Which manufacturers are selling Windows Mixed Reality devices?
 
-**Quick Answer:** Headsets and motion controllers are currently available from HP. See <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>
+**Quick Answer:** Headsets and motion controllers are currently available from HP. See <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
 ### Where can I buy standalone motion controllers?
 
