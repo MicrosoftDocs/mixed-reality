@@ -29,11 +29,11 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
         **[I'm a developer](../develop/development.md)**<br>
         Learn the tools and architecture
     :::column-end:::
-    :::column:::
+    <!-- :::column:::
        [![Jump in with Unity and MRTK](../images/Unity-tile.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)<br>
         **[Jump in with Unity and MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)**<br>
         Optimize Unity for MR development
-    :::column-end:::
+    :::column-end::: -->
 :::row-end:::
 
 

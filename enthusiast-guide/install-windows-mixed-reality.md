@@ -12,6 +12,9 @@ appliesto:
 
 # Install Windows Mixed Reality software
 
+> [!div class="nextstepaction"]
+> [Get Mixed Reality Portal](https://www.microsoft.com/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab)
+
 ## Launch Mixed Reality Portal
 
 After you plug in your Windows Mixed Reality headset and the driver installs successfully, the Mixed Reality Portal (MRP) will automatically launch on your Desktop. If this does not happen automatically, you can always launch Mixed Reality portal from the Start menu (**Start > Mixed Reality Portal**). Once the portal has launched, click **Get Started**
