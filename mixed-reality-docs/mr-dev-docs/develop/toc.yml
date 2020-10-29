@@ -28,6 +28,8 @@
         href: unity/mrtk-getting-started.md
       - name: Configure Unity project for Windows Mixed Reality
         href: unity/configure-unity-project.md
+      - name: Mixed Reality cookbook
+        href: mr-cookbook.md
       - name: Get your existing app ready for HoloLens 2
         href: unity/mrtk-porting-guide.md
   - name: Tutorials
