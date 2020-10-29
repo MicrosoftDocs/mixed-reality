@@ -50,7 +50,7 @@ Sometimes during the resume process, the video card cannot establish a connectio
 
 ## The Mixed Reality Portal says “Can't run mixed reality on this headset” but this worked fine with my previous WMR headset
 
-This may happen because your HP Reverb G2 requires a more powerful PC to ensure the best experience. For more information, please review the minimum [PC requirements](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md##Compatibility-guidelines)
+This may happen because your HP Reverb G2 requires a more powerful PC to ensure the best experience. For more information, please review the minimum [PC requirements](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
 
 ## It looks like my left display is stretched, and the right display is off-centered and half black
 

@@ -1,6 +1,6 @@
 ---
 title: Other questions
-description: Advanced Windows Mixed Reality troubleshooting that goes beyond our standard consumer support documentation.
+description: Additional Windows Mixed Reality troubleshooting tips that go beyond our standard consumer support documentation.
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
