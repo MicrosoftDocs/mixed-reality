@@ -39,7 +39,8 @@ If you are seeing a 7-14 “something went wrong” error, please try the follow
 
 Try plugging the cable into a different USB Hub.  
 
-> [!NOTE] HP recommends using only USB controllers built into the motherboard with Reverb G2
+> [!NOTE]
+> HP recommends using only USB controllers built into the motherboard with Reverb G2
 > devices.
 > If you are unable to connect your device, please contact [HP Support](https://support.hp.com/us-en)
 
