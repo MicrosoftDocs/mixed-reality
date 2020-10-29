@@ -11,7 +11,7 @@ appliesto:
 
 # HP Reverb G2 Frequently Asked Questions
 
-## Is there a specific order I should connect cables to my computer
+## Is there a specific order I should follow to connect my headset cables to a PC
 
 HP Recommends:
 
