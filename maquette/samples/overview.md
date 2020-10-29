@@ -10,14 +10,17 @@ keywords: Windows Mixed Reality, Maquette, prototyping, Mixed Reality, Virtual R
 
 # Samples overview
 
+<!-- TODO(Harrison): Need consolidated logo with text -->
 ![Logo](../images/MaquetteIcon.png) Maquette Script Example Apps
 
+<!-- TODO(Stefan): Do these examples exist or do they need to be created? -->
 ## Examples
 
 * Emphasis is showcasing how and where it could be used to DO something vs. explaining specific feature or API
 * More complete because they also explain workflows
 * They are inherently complete examples of scripting in use
 
+<!-- TODO(Stefan): Have these scripts been released yet or still waiting on update/review? -->
 ` The following scripts are not released yet...need update/review.`
 * Unpack the following zipfile to your ~/Documents/Maquette/Scripts directory: 
 
@@ -29,6 +32,7 @@ Example scripts: <a href="files/ExampleScripts.zip" download="ExampleScripts.zip
 
 ## Maquettes spotlights
 
+<!-- TODO(Stefan): Do these projects exist somewhere? -->
 * Tic Tac Toe
 * Tetris
 * Ricardo Cooking App Storyboard
@@ -44,6 +48,7 @@ Example scripts: <a href="files/ExampleScripts.zip" download="ExampleScripts.zip
 
 ## Scripting Tutorials
 
+<!-- TODO(Harrison/Stefan): Need to break these out into their own docs and create content for them. -->
 Examples demonstrating how scripting works - focus on how to do specific operations
 * Feature example 1
 * Feature example 2

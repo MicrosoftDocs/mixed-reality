@@ -1,10 +1,8 @@
 - name: About Maquette
   href: about.md
-- name: Installing Maquette
+- name: Installion
   href: installation.md
 - name: Programming overview
   href: programming-overview.md
 - name: Core language
   href: core-language.md
-- name: Programming workflow
-  href: programming-workflow.md
