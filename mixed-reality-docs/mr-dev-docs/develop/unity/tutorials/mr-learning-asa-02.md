@@ -127,7 +127,7 @@ In the Hierarchy window, select the next button named **DeleteAzureAnchor**, the
 * Assign the **DeleteAzureAnchor** object to the **None (Object)** field
 * From the **No Function** dropdown, select **AnchorModuleScript** > **DeleteAzureAnchor ()** to set this function as the action to be executed when the event is triggered
 
-![Unity with FindAzureAnchor button OnClick event configured](images/mr-learning-asa/asa-02-section5-step1-6.png)
+![Unity with DeleteAzureAnchor button OnClick event configured](images/mr-learning-asa/asa-02-section5-step1-6.png)
 
 ## Connecting the scene to the Azure resource
 

@@ -83,7 +83,7 @@ Close the Build Settings window.
 
 In the Unity menu, select **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** to open the **MRTK Project Configurator** window, ensure all options are selected, then click the **Apply** button to apply the settings:
 
-![Unity MRTK Project Configurator window](images/mr-learning-asa/asa-05-section3-step1-2.png)
+![Unity MRTK Project Configurator window Android](images/mr-learning-asa/asa-05-section3-step1-2.png)
 
 In the Unity menu, select **Edit** > **Project Settings...** to open the Player Settings window, then locate the **Player** >  **Other Settings** section, select **Vulkan** and remove it by clicking the **"-"** symbol:
 
@@ -102,7 +102,7 @@ In the Build Settings window, click the **Build And Run** button to open the Bui
 
 Choose a suitable location to store your build, for example, _D:\MixedRealityLearning\Builds_, then give the apk a suitable name, for example, _MRTKTutorials-AzureSpatialAnchors_, and click the **Save** button to start the build process:
 
-![Unity Build Settings window with Save prompt window](images/mr-learning-asa/asa-05-section3-step1-5.png)
+![Unity Build Settings window with Save prompt window iOS](images/mr-learning-asa/asa-05-section3-step1-5.png)
 
 > [!NOTE]
 If you get any error in the Unity Console window related to Android SDK, NDK, or JDK modules, you need to open Unity Hub and install the associated Android Build Support modules.
@@ -124,7 +124,7 @@ Close the Build Settings window.
 
 In the Unity menu, select **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** to open the **MRTK Project Configurator** window, ensure all options are selected, then click the **Apply** button to apply the settings:
 
-![Unity MRTK Project Configurator window](images/mr-learning-asa/asa-05-section4-step1-2.png)
+![Unity MRTK Project Configurator window iOS](images/mr-learning-asa/asa-05-section4-step1-2.png)
 
 In the Unity menu, select **Edit** > **Project Settings...** to open the Player Settings window, then locate the **Player** >  **Other Settings** section, uncheck the **Strip Engine Code** checkbox to disable it:
 
@@ -140,7 +140,7 @@ In the Build Settings window, click the **Build** button to open the Build iOS w
 
 Choose a suitable location to store your Xcode project, for example, _D:\MixedRealityLearning\Builds_, create a new folder and give it a suitable name, for example, _MRTKTutorials-AzureSpatialAnchors_, and then click the **Select Folder** button to start the build process:
 
-![Unity Build Settings window with Save prompt window](images/mr-learning-asa/asa-05-section4-step1-5.png)
+![Unity Build Settings window with Save prompt window iOS](images/mr-learning-asa/asa-05-section4-step1-5.png)
 
 When the build process is complete, follow the [Export the Xcode project](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project) instructions to learn to deploy your Xcode project to your iOS device.
 
