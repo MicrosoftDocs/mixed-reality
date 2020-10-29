@@ -60,7 +60,7 @@ While you can see and verify all data changes from the UI inside the application
 
 In the Hierarchy window, locate the **DataManager** object and select it.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial2-section4-step1-1.png)
+![Unity with DataManager script component configuration fields shown in Inspector](images/mr-learning-azure/tutorial2-section4-step1-1.png)
 
 From the Inspector window you will see that the **DataManager (script)** component is where all **Azure storage** related settings are kept. All relevant settings are already set, you just need to replace the *Connection String* field with the one you can retrieve from the Azure Portal. If you are using a local Azure storage emulator solution, then you can keep the already provided *Connection String*.
 
