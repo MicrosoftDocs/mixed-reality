@@ -3,7 +3,7 @@ title: Enabling connection security for Holographic Remoting
 description: This page explains how to configure Holographic Remoting to use encrypted and authenticated connections between player and remote apps.
 author: markkeinz
 ms.author: makei
-ms.date: 03/11/2020
+ms.date: 10/29/2020
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting
 ---
