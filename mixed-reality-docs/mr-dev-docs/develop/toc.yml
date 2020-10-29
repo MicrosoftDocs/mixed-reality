@@ -2,8 +2,22 @@
   href: development.md
 - name: Azure Cloud Services
   href: mixed-reality-cloud-services.md
+- name: Mixed Reality Learning overview
+  href: mr-learning-overview.md
 - name: Install the tools
   href: install-the-tools.md
+- name: Porting apps
+  items:
+  # - name: Porting overview
+  #   href: porting-apps/porting-overview.md
+  - name: Get your existing app ready for HoloLens 2
+    href: unity/mrtk-porting-guide.md
+  - name: Porting guide for immersive apps
+    href: porting-apps/porting-guides.md
+  - name: Updating for SteamVR
+    href: porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md
+  - name: Updating 2D UWP apps for Mixed Reality
+    href: porting-apps/building-2d-apps.md
 - name: Unity
   items:
   - name: Unity development overview
@@ -198,6 +212,10 @@
         href: unity/unity-xrdevice-advanced.md
       - name: Using Vuforial with Unity 
         href: unity/vuforia-development-overview.md
+  - name: Immersive VR
+    items:
+      - name: HP Reverb G2 controllers in Unity
+        href: unity/unity-reverb-g2-controllers.md
   - name: Sample apps
     items: 
       - name: Overview 
@@ -276,6 +294,10 @@
         href: unreal/unreal-qr-codes.md
       - name: WinRT in Unreal
         href: unreal/unreal-winrt.md
+  - name: Immersive VR 
+    items: 
+      - name: HP Reverb G2 controllers in Unreal
+        href: unreal/unreal-reverb-g2-controllers.md
   - name: Sample apps
     items: 
       - name: Overview
@@ -361,7 +383,7 @@
         - name: Spectator view
           href: platform-capabilities-and-apis/spectator-view.md 
         - name: WebRTC 
-          href: https://github.com/microsoft/MixedReality-WebRTC.md 
+          href: https://github.com/microsoft/MixedReality-WebRTC 
     - name: Camera and capture  
       items: 
         - name: Locatable camera 
@@ -430,15 +452,3 @@
           href: platform-capabilities-and-apis/device-portal-api-reference.md 
         - name: HoloLens Research Mode
           href: platform-capabilities-and-apis/research-mode.md 
-- name: Porting apps
-  items:
-  - name: Get your existing app ready for HoloLens 2
-    href: unity/mrtk-porting-guide.md
-  - name: Porting guide for immersive apps
-    href: porting-apps/porting-guides.md
-  - name: Input porting guide for Unity
-    href: porting-apps/input-porting-guide-for-unity.md
-  - name: Updating for SteamVR
-    href: porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md
-  - name: Updating 2D UWP apps for Mixed Reality
-    href: porting-apps/building-2d-apps.md

@@ -23,7 +23,7 @@ Before continuing, make sure you have all the prerequisites from the [Getting St
 * Creating Actors and script-level events with blueprints
 
 ## Creating a new Unreal project
-The first thing you need is a project to work with. If this is your first time creating an Unreal app for HoloLens, you'll need to [download supporting files](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch6#packaging-and-deploying-the-app) from the Epic Launcher.
+The first thing you need is a project to work with. If this is your first time creating an Unreal app for HoloLens, you'll need to [download supporting files](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/tutorials/unreal-uxt-ch6#packaging-and-deploying-the-app-via-device-portal) from the Epic Launcher.
 
 1. Launch Unreal Engine
 

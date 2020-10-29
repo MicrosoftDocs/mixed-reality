@@ -16,11 +16,11 @@ keywords: Unity, mixed reality, development, getting started, new project, porti
 The fastest path to building a [mixed reality app](../../design/app-views.md) in [Unity](https://unity.com) is with the Mixed Reality Toolkit. If you're brand new to Unity, we recommend that you explore the beginner level [tutorials](https://unity3d.com/learn/tutorials) on the Unity Learn platform before continuing. It's also a good idea to visit the comprehensive [Asset Store](https://www.assetstore.unity3d.com/) and the [Unity Mixed Reality forums](https://forum.unity3d.com/forums/hololens.102/) to engage with the online community building mixed reality apps. You never know what cool assets or solutions you might find out in the wild. When you're ready to get started with MRTK head to the development checkpoints below!
 
 > [!IMPORTANT]
-> Take a look at our **[porting guides](../porting-apps/porting-guides.md)** if you have an existing Unity project that you want to bring over to HoloLens 2. We have guides for projects that are using HTK, MRTK v1, SteamVR or were developed for immersive headsets such as the Oculus Rift or HTC Vive.
+> Take a look at our **[porting guides](../porting-apps/porting-overview.md)** if you have an existing Unity project that you want to bring over to HoloLens 2. We have guides for projects that are using HTK, MRTK v1, SteamVR or were developed for immersive headsets such as the Reverb G2, Oculus Rift, HTC Vive.
 
 ## Development checkpoints
 
-Use the following checkpoints to bring your Unity games and applications into the world of mixed reality.
+Use the following checkpoints to bring your Unity games and applications into the world of mixed reality. If you haven't already explored the [Designing Holograms sample application](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd), we recommend downloading and using it to familiarize yourself with the basics of Mixed Reality UX. 
 
 ### 1. Getting started
 The easiest way to develop in Unity is with the Mixed Reality Toolkit. MRTK will help you automatically setup a project for Mixed Reality and provide a set of features to accelerate your development process. By the end of this section, you'll have a basic understanding of the Mixed Reality Toolkit, a properly configured development environment for Mixed Reality apps, and a working MRTK project in Unity that you built yourself.

@@ -58,7 +58,7 @@ To join:
   
 ### SteamVR Beta
 
-SteamVR is built and released by Valve and is common across all SteamVR headsets.  It follows a similar model of releasing updates to Beta members before publising to all users.
+SteamVR is built and released by Valve and is common across all SteamVR headsets.  It follows a similar model of releasing updates to Beta members before publishing to all users.
 
 To join:
   1. In Steam, use the drop down under the **Library** menu to filter to **Tools**.

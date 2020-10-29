@@ -23,10 +23,13 @@ Use the following checkpoints to bring your application ideas and concepts into 
 
 Like all journeys, your adventure into designing Mixed Reality applications starts with the basics. We recommend familiarizing yourself with the [What is Mixed Reality](../discover/mixed-reality.md) and [What is a hologram?](../discover/hologram.md) articles to get your mind primed for immersive design. Once you've completed your read-through, you'll be ready to start your Mixed Reality design journey!
 
+![Getting started gif from Designing Holograms app](images/HandTracking2.gif)
+
 |  Checkpoint  |  Outcome  |
 | --- | --- |
-| [Expand your design process](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Get a first-hand look at methods, insights, and design theory gathered from Mixed Reality developers inside and outside of Microsoft |
+| [Expand your design process](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Get a first-hand look at design process for Mixed Reality, gathered from designers inside and outside of Microsoft |
 | [Types of Mixed Reality apps](types-of-mixed-reality-apps.md) | Decide where your app experience will live on the Mixed Reality spectrum |
+| [Designing Holograms app](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Learn the fundamentals of Mixed Reality UX Design by experiencing it yourself by diving into into Mixed Reality behaviors, tips and recommendations for creating amazing HoloLens apps (available for download from Microsoft Store in HoloLens 2) |
 
 ### 2. Core concepts
 
@@ -38,7 +41,7 @@ Whether you're developing for VR or AR, there are a several core concepts that a
 | --- | --- |
 | [Holographic frame](holographic-frame.md) | Understand how users see your content overlaid onto the real world when wearing their headsets |
 | [Coordinate systems](coordinate-systems.md) | Learn how to position holograms at places in the world that are meaningful to the user, whether it's their physical room or a virtual realm you've created |
-| [Spatial mapping](spatial-mapping.md) | Anchor objects in the user's world and take advantage of real world depth cues |
+| [Spatial mapping](spatial-mapping.md) | Anchor objects in the user's world and take advantage of real world's physical surfaces |
 | [Comfort considerations](comfort.md) | Ensure user comfort and safety by creating and presenting immersive content in a way that mimics the natural world |
 
 ### 3. Interaction design

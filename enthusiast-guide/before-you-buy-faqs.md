@@ -17,25 +17,21 @@ appliesto:
 
 ### Where can I buy a Windows Mixed Reality ready PC or headset?
 
-**Quick Answer:** You can buy a Windows Mixed Reality ready PC or headset at an approved local retailer or online from a variety of retailers including the Microsoft Store. Find a Windows Mixed Reality ready PC or headset online: <https://www.microsoft.com/en-us/windows/view-all-devices?col=wmr> 
+**Quick Answer:** You can buy a Windows Mixed Reality ready PC or headset at an approved local retailer or online from a variety of retailers including the Microsoft Store. Find a Windows Mixed Reality ready PC or headset online: <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
 ### Where can I try Windows Mixed Reality?
 
-**Quick Answer:** You can try Windows Mixed Reality at a [Microsoft Reactor](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet) near you.  
-* Find your local Microsoft Reactor: <https://www.microsoft.com/en-us/store/locations/all-locations>
+**Quick Answer:** You can try Windows Mixed Reality at a [Microsoft Reactor](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet) near you.
+
 * Find Microsoft Reactor events on Meetup.com: <https://www.meetup.com/pro/microsoft-reactor>
 
 ### Which manufacturers are selling Windows Mixed Reality devices?
 
-**Quick Answer:** Headsets and motion controllers are currently available from Acer, ASUS, HP and Samsung. See <https://www.microsoft.com/en-us/store/collections/vrandmixedrealityheadsets>
+**Quick Answer:** Headsets and motion controllers are currently available from HP. See <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
 ### Where can I buy standalone motion controllers?
 
 **Quick Answer:** Unfortunately, we're not aware of any retailers selling standalone motion controllers at this time.
-
-### What is the price point?
-
-**Quick Answer:** Headset and controller pricing varies by manufacturer and retailer. See <https://www.microsoft.com/en-us/store/collections/vrandmixedrealityheadsets> for Mixed Reality devices currently for sale from Microsoft.
 
 ### What is the difference between a Windows Mixed Reality PC and a Windows Mixed Reality Ultra PC?
 
@@ -43,7 +39,7 @@ appliesto:
 
 ### Why is this called Windows "Mixed Reality" when the devices look like they provide a "Virtual Reality" experience?
 
-**Quick Answer:** Mixed Reality refers to the full spectrum of spatial computing, from augmented reality and holograms to virtual reality. Microsofts Mixed Reality platform supports both Virtual Reality and Augmented Reality. We currently support two device types with similar technology on that spectrum: HoloLens (AR) and Windows Mixed Reality (VR) headsets with motion controllers. 
+**Quick Answer:** Mixed Reality refers to the full spectrum of spatial computing, from augmented reality and holograms to virtual reality. Windows Mixed Reality platform supports devices across Virtual Reality (VR) and Augmented Reality (AR). We currently support two device types with similar technology on that spectrum: HoloLens (AR) and Windows Mixed Reality (VR) headsets with motion controllers.
 
 Learn more about Mixed Reality here: <https://docs.microsoft.com/windows/mixed-reality/mixed-reality>
 
@@ -57,19 +53,17 @@ Learn more about Mixed Reality here: <https://docs.microsoft.com/windows/mixed-r
 
 **Quick Answer:** No, the inside-out cameras on Windows Mixed Reality headsets are used for positional tracking only. Windows Mixed Reality headsets are occluded, meaning that they are for Virtual Reality and do not provide a view of the real world or Augmented Reality. 
 
-### What is inside-out tracking? How is it different than Outside-in tracking or Lighthouse tracking?
+### What is inside-out tracking? How is it different than outside-in tracking or lighthouse tracking?
 
-* **Inside-out Tracking** Windows Mixed Reality uses inside-out tracking. With Inside-out tracking cameras are built into the headset and track changes in the environement in order to determine the headsets position in relation to the environment as you move around. 
+* **Inside-out tracking** Windows Mixed Reality uses inside-out tracking. With inside-out tracking cameras are built into the headset and track changes in the environment in order to determine the headsets position in relation to the environment as you move around.
 
-* **Outside-in Tracking** Oculus, Vive and others use Outside-in tracking.  With Outside-in tracking the headset is tracked by one or more external devices. Camera(s) are built into those external devices, placed around the environment and are used to determine the position of the headset in relation to the environment. 
+* **Outside-in tracking** Oculus, Vive and others use outside-in tracking.  With outside-in tracking the headset is tracked by one or more external devices. Camera(s) are built into those external devices, placed around the environment and are used to determine the position of the headset in relation to the environment.
 
 To learn more about inside-out tracking you can go here: <https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system>
 
 ### Can inside-out tracking of motion controllers impact my game play due to camera FOV?
 
-**Quick Answer:** We recommend you visit a Microsoft store near you to try out the headset and controllers for yourself and get a feel for it. This page will help you find a Microsoft Store location near you: <https://www.microsoft.com/en-us/store/locations/all-locations>
-
-**Not so Quick Answer:** Like the headsets, the Windows Mixed Reality motion controllers require no setup of external tracking sensors. Instead, the controllers are tracked by sensors in the headset itself. If the user moves the controllers out of the headset's field of view, in most cases Windows will continue to infer controller positions and provide them to the app. When the controller has lost visual tracking for long enough, the controller's positions will drop to approximate-accuracy positions. At this point, the system will body-lock the controller to the user, tracking the user's position as they move around, while still exposing the controller's true orientation using its internal orientation sensors. Many apps that use controllers to point at and activate UI elements can operate normally while in approximate accuracy without the user even noticing. The best way to get a feel for this is to try it yourself. Try visiting a Microsoft store near you and check it out! In the meantime, here's a video with examples of immersive content that works with motion controllers across various tracking states: 
+ Like the headsets, the Windows Mixed Reality motion controllers require no setup of external tracking sensors. Instead, the controllers are tracked by sensors in the headset itself. If the user moves the controllers out of the headset's field of view, in most cases Windows will continue to infer controller positions and provide them to the app. When the controller has lost visual tracking for long enough, the controller's positions will drop to approximate-accuracy positions. At this point, the system will body-lock the controller to the user, tracking the user's position as they move around, while still exposing the controller's true orientation using its internal orientation sensors. Many apps that use controllers to point at and activate UI elements can operate normally while in approximate accuracy without the user even noticing. The best way to get a feel for this is to try it yourself.
 
 ### How is Windows Mixed Reality different from Samsung Gear VR?
 
@@ -307,16 +301,14 @@ Technical details listed above are referenced from manufacturer specifications a
 
 **Quick Answer:** Windows Mixed Reality will only work with approved Windows Mixed Reality headsets / controllers. See <https://www.microsoft.com/en-us/store/b/virtualreality>
 
-
-
 ## Motion Controllers
 
 ### How do motion controllers work with my PC?
 
 **Quick Answer:** Windows Mixed Reality motion controllers use Bluetooth. Depending on the headset, the motion controllers are either paired to the Bluetooth radio on the headset (if equipped), or to the Bluetooth radio on your PC.
 
-* Some Windows Mixed Reality headsets, including the Acer OJO 500 and Samsung Odyssey+, feature built-in Bluetooth radios for use with motion controllers. The motion controllers that come with these headsets are pre-paired to the headset from the factory, and do not require your PC to have a separate Bluetooth radio.
-* Other Windows Mixed Reality headsets will need to be paired with a Bluetooth radio on your PC. 
+* Some Windows Mixed Reality headsets, including the Acer OJO 500, Samsung Odyssey+, HP Reverb, and HP Reverb G2 feature built-in Bluetooth radios for use with motion controllers. The motion controllers that come with these headsets are pre-paired to the headset from the factory, and do not require your PC to have a separate Bluetooth radio.
+* Other Windows Mixed Reality headsets will need to be paired with a Bluetooth radio on your PC.
 
 ### Are Windows Mixed Reality motion controllers cross-compatible between Windows Mixed Reality headsets?
 

@@ -103,7 +103,7 @@ In the Import Unity Package window, click the **All** button to ensure all the a
 
 ### 1. Apply the MRTK Project Configurator settings
 
-After Unity has finished importing the package from the previous section, the MRTK Project Configurator window should appear. If it doesn't, open the Configurator window by going to the Unity menu and selecting **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project**:
+After Unity has finished importing the package from the previous section, the MRTK Project Configurator window should appear. If it doesn't, you can manually open it by going to **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project**:
 
 ![mr-learning-base](images/mr-learning-base/base-02-section5-step1-1.png)
 
