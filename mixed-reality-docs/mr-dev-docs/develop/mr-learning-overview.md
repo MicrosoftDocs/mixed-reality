@@ -11,15 +11,9 @@ ms.localizationpriority: high
 
 # Mixed Reality Learning overview
 
-Microsoft Learn is a free, online training platform that provides interactive learning for Microsoft products and more. Our goal is to help you become proficient on our technologies and learn more skills with fun, hands-on interactive content that's specific to your role and goals. If you want to know more about Microsoft Learn, check out our introduction [video](https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Microsoft-Learn).
+The more tools you have when developing for Mixed Reality the better. While documentation and written tutorials are crucial, if you're more of a visual learner then our video content on Microsoft Learn is the place to be. More modules are being added all the time, so be sure to check back for more updates!
 
-<!-- The MR Learning Modules are an updated approach to teaching developers how to create applications for the Mixed Reality Platform and devices, based on learnings from the original Academy tutorial series. Some examples of feedback we wanted to address with this new series include:
-
-* Tutorials don't implement or show how to use the Mixed Reality Toolkit
-* The tutorials are great for learning how to implement one thing, but not for building an application
-* There is not really any UI guidance available
-
-With that feedback in hand, we set out to design a set of tutorials that would not only address the above items, but also will give all developers a useful baseline code template to begin from. -->
+Our Learn modules are an opportunity for you to become proficient in Mixed Reality development, offering a module-based structure that can get you started with key tools such as Mixed Reality Toolkit, Unity, and Azure mixed reality services. Getting to Hello World has never been clearer, as we lay out the Learning Objectives, Prerequisites, and set time to completion expectations all in one interface. Get started with Mixed Reality Learn modules today or check out our Microsoft Learn introduction [video](https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Microsoft-Learn)!
 
 ## Unity modules
 
