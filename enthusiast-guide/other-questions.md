@@ -14,6 +14,7 @@ appliesto:
 ## My graphics driver isn't supported (I'm getting graphics driver failure errors).
 
 Search for and run "dxdiag":
+
 1.	If the result is “Basic Renderer”, the graphics driver is not installed. To fix this:
     * Go to **Device Manager > Action > Scan for Hardware Changes**.
     * Use Windows Update to update the driver.
