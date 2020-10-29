@@ -102,7 +102,7 @@ In the Build Settings window, click the **Build And Run** button to open the Bui
 
 Choose a suitable location to store your build, for example, _D:\MixedRealityLearning\Builds_, then give the apk a suitable name, for example, _MRTKTutorials-AzureSpatialAnchors_, and click the **Save** button to start the build process:
 
-![Unity Build Settings window with Save prompt window iOS](images/mr-learning-asa/asa-05-section3-step1-5.png)
+![Unity Build Settings window with Save prompt window Android](images/mr-learning-asa/asa-05-section3-step1-5.png)
 
 > [!NOTE]
 If you get any error in the Unity Console window related to Android SDK, NDK, or JDK modules, you need to open Unity Hub and install the associated Android Build Support modules.
