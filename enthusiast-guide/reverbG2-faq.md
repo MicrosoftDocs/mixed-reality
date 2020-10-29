@@ -23,10 +23,11 @@ HP Recommends:
 
 There are a few things you can try if you feel that your display looks a little blurry:
 
-- Make sure that your headset is set on your head correctly.
+- Make sure that your headset is on your head correctly so that your eyes are centered with regards to the lenses.
 - Try to adjust the IPD (interpupillary distance). Note that Reverb G2 uses a hardware IPD. To change it, look for IPD adjustment on your headset.
 - If you need glasses or contacts, they are still required.
 - Check your lenses if they need to be cleaned (microfiber cloth only – no fluids).
+- Due to the advanced design of the headset there may be some minor image ghosting in the first few minutes when starting the device while cold until the LCDs have the opportunity to warm up.
 
 ## I am getting a 7-14 “Something Went Wrong” error when I plug in my headset
 
@@ -38,7 +39,9 @@ If you are seeing a 7-14 “something went wrong” error, please try the follow
 
 Try plugging the cable into a different USB Hub.  
 
-> [!NOTE] HP recommends using only USB controllers built into the motherboard with Reverb G2 devices. If you are unable to connect your device, please contact [HP Support](https://support.hp.com/us-en)
+> [!NOTE] HP recommends using only USB controllers built into the motherboard with Reverb G2
+> devices.
+> If you are unable to connect your device, please contact [HP Support](https://support.hp.com/us-en)
 
 ## I am getting a 13-14 “Something Went Wrong” error when my PC resumes from hibernate (S4)
 
