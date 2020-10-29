@@ -27,7 +27,7 @@ In this tutorial, you will learn how to enable eye-tracking for HoloLens 2 and a
 
 In the Unity menu, select Mixed Reality Toolkit > Utilities > **Configure Unity Project** to open the **MRTK Project Configurator** window, then in the **UWP Capabilities** section, verify that **Enable Eye Gaze Input Capability** is greyed out:
 
-![mr-learning-base](images/mr-learning-base/base-08-section1-step1-1.png)
+![Unity MRTK Project Configurator window](images/mr-learning-base/base-08-section1-step1-1.png)
 
 > [!NOTE]
 > The Gaze Input capability should have been enabled during the [Apply the MRTK Project Configurator settings](mr-learning-base-02.md#1-apply-the-mrtk-project-configurator-settings) instructions when you configured the Unity project at the beginning of this tutorial series. However, if it is not enabled, make sure you enable it now.
@@ -41,7 +41,7 @@ In the Hierarchy window, select the **MixedRealityToolkit** object, then in the 
 * Clone the **DefaultMixedRealityPointerProfile** and give it a suitable name, for example, _GettingStarted_MixedRealityPointerProfile_
 * Locate the **Gaze Settings** section and check the **Is Eye Tracking Enabled** checkbox
 
-![mr-learning-base](images/mr-learning-base/base-08-section2-step1-1.png)
+![Unity MixedRealityToolkit component with newly created profiles applied and eye tracking enabled](images/mr-learning-base/base-08-section2-step1-1.png)
 
 > [!TIP]
 > For a reminder on how to clone MRTK profiles, you can refer to the [Configuring the MRTK profiles](mr-learning-base-03.md) instructions.
@@ -54,20 +54,20 @@ In the Hierarchy window, select the **MixedRealityToolkit** object, then in the 
 * Clone the **DefaultMixedRealityInputSimulationProfile** and give it a suitable name, for example, _GettingStarted_MixedRealityInputSimulationProfile_
 * Locate the **Eye Simulation** section and check the **Simulate Eye Position** checkbox
 
-![mr-learning-base](images/mr-learning-base/base-08-section3-step1-1.png)
+![Unity MixedRealityToolkit component with newly created profile applied and eye simulation enabled](images/mr-learning-base/base-08-section3-step1-1.png)
 
 ## Adding eye-tracking to objects
 
 In the Hierarchy window, expand the RoverExplorer > **Buttons** object, then for each of the three child button objects, expand and select the SeeItSayItLabel > **TextMeshPro** object:
 
-![mr-learning-base](images/mr-learning-base/base-08-section4-step1-1.png)
+![Unity with TextMeshPro object selected](images/mr-learning-base/base-08-section4-step1-1.png)
 
 With the three TextMeshPro objects still selected, in the Inspector window, use the **Add Component** button to add the following components to all the selected objects:
 
 * **Box Collider** component
 * **EyeTrackingTarget** component
 
-![mr-learning-base](images/mr-learning-base/base-08-section4-step1-2.png)
+![Unity with TextMeshPro object selected and components added](images/mr-learning-base/base-08-section4-step1-2.png)
 
 In the Hierarchy window, select the **Hints** > SeeItSayItLabel > **TextMeshPro** object, then configure the **EyeTrackingTarget** component as follows:
 
@@ -82,13 +82,13 @@ In the Hierarchy window, select the **Hints** > SeeItSayItLabel > **TextMeshPro*
   * From the **No Function** dropdown, select **TextMeshPro** > **float fontSize** to update this property value when the event is triggered
   * Set the argument to **0.04** to reset the font size back to 0.04
 
-![mr-learning-base](images/mr-learning-base/base-08-section4-step1-3.png)
+![Unity with Hints TextMeshPro object selected and EyeTrackingTarget component configured](images/mr-learning-base/base-08-section4-step1-3.png)
 
 **Repeat** this step for the **Explode** > SeeItSayItLabel > **TextMeshPro** object and the **Reset** > SeeItSayItLabel > **TextMeshPro** object.
 
 If you now enter Game mode and then press-and-hold the right mouse button while moving your mouse until the gaze hit's one of the labels, you will see the font size increase by 50% and reset back to its original size when looking away:
 
-![mr-learning-base](images/mr-learning-base/base-08-section4-step1-4.png)
+![Unity Play mode split view with gaze hitting eye tracking target Explode button label](images/mr-learning-base/base-08-section4-step1-4.png)
 
 ## Congratulations
 

@@ -31,11 +31,11 @@ In the Hierarchy window, right-click on the **RoverExplorer** object and select 
 * **Rotation**: X = 90, Y = 0, Z = 0
 * **Scale**: X = 1, Y = 1, Z = 1
 
-![mr-learning-base](images/mr-learning-base/base-06-section1-step1-1.png)
+![Unity with newly created Buttons object selected and positioned](images/mr-learning-base/base-06-section1-step1-1.png)
 
 In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** folder, click-and-drag the **PressableRoundButton** prefab on to the **Buttons** object, then right-click on the PressableRoundButton and select **Duplicate** to create a copy, repeat until you have a total of three PressableRoundButton objects:
 
-![mr-learning-base](images/mr-learning-base/base-06-section1-step1-2.png)
+![Unity with newly added PressableRoundButton prefabs](images/mr-learning-base/base-06-section1-step1-2.png)
 
 In the Hierarchy window, select the **Buttons** object, then in the Inspector window, use the **Add Component** button to add the **GridObjectCollection** component and configure it as follows:
 
@@ -46,13 +46,13 @@ In the Hierarchy window, select the **Buttons** object, then in the Inspector wi
 
 Then click the **Update Collection** button to update the position of the Buttons object's child objects:
 
-![mr-learning-base](images/mr-learning-base/base-06-section1-step1-3.png)
+![Unity Buttons object with GridObjectCollection component added, configured, and applied](images/mr-learning-base/base-06-section1-step1-3.png)
 
 In the Hierarchy window, name the buttons **Hints**, **Explode**, and **Reset**.
 
 For each button, select the **SeeItSayItLabel** > **TextMeshPro** child object, then in the Inspector window, change the respective **TextMeshPro - Text** component text to match the button names:
 
-![mr-learning-base](images/mr-learning-base/base-06-section1-step1-4.png)
+![Unity with button text labels configured](images/mr-learning-base/base-06-section1-step1-4.png)
 
 Once done, collapse the Buttons object's child objects.
 
@@ -61,22 +61,22 @@ In the Hierarchy window, select the **Hints** button object, then in the Inspect
 * Assign the **RoverAssembly** object to the **None (Object)** field
 * From the **No Function** dropdown, select **PlacementHintsController** > **TogglePlacementHints ()** to set this function as the action to be executed when the event is triggered
 
-![mr-learning-base](images/mr-learning-base/base-06-section1-step1-5.png)
+![Unity with Hints button object OnClick event configured](images/mr-learning-base/base-06-section1-step1-5.png)
 
 In the Hierarchy window, select the **Explode** button object, then in the Inspector window, configure the Interactable **OnClick ()** event as follows:
 
 * Assign the **RoverAssembly** object to the **None (Object)** field
 * From the **No Function** dropdown, select **ExplodedViewController** > **ToggleExplodedView ()** to set this function as the action to be executed when the event is triggered
 
-![mr-learning-base](images/mr-learning-base/base-06-section1-step1-6.png)
+![Unity with Explode button object OnClick event configured](images/mr-learning-base/base-06-section1-step1-6.png)
 
 Press the Play button to enter Game mode, then press-and-hold the space bar button to activate the hand and use the mouse to press the **Hints** button to toggle the visibility of the placement hint objects:
 
-![mr-learning-base](images/mr-learning-base/base-06-section1-step1-7.png)
+![Unity Play mode split view with Hints button being pressed](images/mr-learning-base/base-06-section1-step1-7.png)
 
 and the **Explode** button to toggle the exploded view on and off:
 
-![mr-learning-base](images/mr-learning-base/base-06-section1-step1-8.png)
+![Unity Play mode split view with Explode button being pressed](images/mr-learning-base/base-06-section1-step1-8.png)
 
 ## Creating a dynamic menu that follows the user
 
@@ -85,11 +85,11 @@ In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **Featu
 * Verify that the **SolverHandler** component's **Tracked Target Type** is set to **Head**
 * Check the checkbox next to the **RadialView** Solver component so it is enabled by default
 
-![mr-learning-base](images/mr-learning-base/base-06-section2-step1-1.png)
+![Unity with newly added near menu prefab selected](images/mr-learning-base/base-06-section2-step1-1.png)
 
 In the Hierarchy window, rename the object to **Menu**, then expand its **ButtonCollection** child object to reveal the four buttons:
 
-![mr-learning-base](images/mr-learning-base/base-06-section2-step1-2.png)
+![Unity with Menu object selected and ButtonCollection object expanded](images/mr-learning-base/base-06-section2-step1-2.png)
 
 Rename the first button to **Indicator**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:
 
@@ -99,14 +99,14 @@ Rename the first button to **Indicator**, then in the Inspector window, configur
 * Verify that the argument checkbox is **checked**
 * Change the **Icon** to the 'search' icon
 
-![mr-learning-base](images/mr-learning-base/base-06-section2-step1-3.png)
+![Unity with Indicator button object Button Config Helper configured](images/mr-learning-base/base-06-section2-step1-3.png)
 
 In the Hierarchy window, select the **Indicator** object, then in the Inspector window:
 
 * Uncheck the checkbox next to its name to make it inactive by default
 * Use the **Add Component** button to add the **Directional Indicator Controller (Script)** component
 
-![mr-learning-base](images/mr-learning-base/base-06-section2-step1-4.png)
+![Unity with Indicator object selected, disabled, and DirectionalIndicatorController component added](images/mr-learning-base/base-06-section2-step1-4.png)
 
 > [!NOTE]
 > Now, when the app starts, the Indicator is disabled by default and can be enabled by pressing the Indicator button.
@@ -119,7 +119,7 @@ Rename the second button to **TapToPlace**, then in the Inspector window, config
 * Verify that the argument checkbox is **checked**
 * Change the **Icon** to the 'hand with ray' icon
 
-![mr-learning-base](images/mr-learning-base/base-06-section2-step1-5.png)
+![Unity with TapToPlace button object Button Config Helper configured](images/mr-learning-base/base-06-section2-step1-5.png)
 
 In the Hierarchy window, select the **RoverAssembly** object, then in the Inspector window, configure the **Tap To Place (Script)** component as follows:
 
@@ -129,7 +129,7 @@ In the Hierarchy window, select the **RoverAssembly** object, then in the Inspec
 * From the **No Function** dropdown, select **TapToPlace** > **bool Enabled** to update this property value when the event is triggered
 * Verify that the argument checkbox is **unchecked**
 
-![mr-learning-base](images/mr-learning-base/base-06-section2-step1-6.png)
+![Unity with TapToPlace component reconfigured](images/mr-learning-base/base-06-section2-step1-6.png)
 
 > [!NOTE]
 > Now, when the app starts, the Tap to Place functionality is disabled by default and can be enabled by pressing the Tap to Place button. Additionally, when the tap to place is completed, it will disable itself.
@@ -143,7 +143,7 @@ In the Hierarchy window, right-click on the **Table** object and select **3D Obj
 * Change **Height** to 1
 * Change **Rotation X** to 90
 
-![mr-learning-base](images/mr-learning-base/base-06-section3-step1-1.png)
+![Unity with newly created TextMeshPro object selected](images/mr-learning-base/base-06-section3-step1-1.png)
 
 Then configure the **TextMeshPro - Text** component as follows::
 
@@ -152,13 +152,13 @@ Then configure the **TextMeshPro - Text** component as follows::
 * Change **Font Size** to 1
 * Change Extra Settings > **Margins** to 0.03
 
-![mr-learning-base](images/mr-learning-base/base-06-section3-step1-2.png)
+![Unity with TextMeshPro component configured](images/mr-learning-base/base-06-section3-step1-2.png)
 
 ## Adding tooltips
 
 In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** folder to locate the tooltip prefabs:
 
-![mr-learning-base](images/mr-learning-base/base-06-section4-step1-1.png)
+![Unity Project window with ToolTips folder selected](images/mr-learning-base/base-06-section4-step1-1.png)
 
 In the Hierarchy window, expand the RoverExplorer > **RoverParts** object and select all its child rover part objects, then in the Inspector window, use the **Add Component** button to add the **ToolTipSpawner** component and configure it as follows:
 
@@ -167,13 +167,13 @@ In the Hierarchy window, expand the RoverExplorer > **RoverParts** object and se
 * Change the ToolTip Override Settings > **Settings Mode** to **Override**
 * Change the ToolTip Override Settings > **Manual Pivot Local Position Y** to **1.5**
 
-![mr-learning-base](images/mr-learning-base/base-06-section4-step1-2.png)
+![Unity with all rover part objects selected and ToolTipSpawner component added and configured](images/mr-learning-base/base-06-section4-step1-2.png)
 
 In the Hierarchy window, select the first rover part, RoverParts > **Camera_Part**, and configure the **ToolTipSpawner** component as follows:
 
 * Change **Tool Tip Text** to reflect the name of the part, i.e., **Camera**
 
-![mr-learning-base](images/mr-learning-base/base-06-section4-step1-3.png)
+![Unity with Camera ToolTipText configured](images/mr-learning-base/base-06-section4-step1-3.png)
 
 **Repeat** this step for each of the rover part objects to configure the **ToolTipSpawner** component as follows:
 
@@ -184,7 +184,7 @@ In the Hierarchy window, select the first rover part, RoverParts > **Camera_Part
 
 Press the Play button to enter Game mode, then press-and-hold the right mouse button while moving your mouse until the gaze hit's one of the parts and the tooltip for that part will be displayed:
 
-![mr-learning-base](images/mr-learning-base/base-06-section4-step1-4.png)
+![Unity Play mode split view with tooltip triggered by gaze](images/mr-learning-base/base-06-section4-step1-4.png)
 
 ## Congratulations
 
