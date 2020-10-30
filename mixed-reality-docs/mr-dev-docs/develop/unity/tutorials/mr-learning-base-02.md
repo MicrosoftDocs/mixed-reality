@@ -111,6 +111,16 @@ In the MRTK Project Configurator window, expand the **Modify Configurations** se
 
 ![Unity MRTK Project Configurator window](images/mr-learning-base/base-02-section5-step1-2.png)
 
+> [!NOTE]
+> You are using Unity's built-in legacy XR instead of the new XR Plugin System because the new system is not fully compatible with the [recommended Unity and MRTK versions](mr-learning-base-01.md#prerequisites) for this tutorial series. Consequently, you can ignore any information or warnings regarding built-in XR being deprecated.
+
+> [!TIP]
+> Applying the MRTK Default Settings is optional but strongly recommended as it will help configure some recommended Unity settings:
+>
+> * Enable legacy XR: Enables VR for the project.
+> * Set Single Pass Instanced rendering path: Improves graphics performance by executing the render pipeline for both eyes in the same draw call. To learn more about this topic, you can refer to the [Single-Pass Instanced rendering](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html#single-pass-instanced-rendering) section of MRTK's [Performance](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html) documentation.
+> * Set default Spatial Awareness layer: Creates a Unity Layer named Spatial Awareness and configures MRTK to use this layer for the spatial awareness mesh. To learn more about Unity Layers, you can refer to Unity's <a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">Customizing Your Workspace</a> documentation.
+
 ### 2. Configure additional project settings
 
 In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window:
@@ -127,9 +137,15 @@ In the MRTK Project Configurator window, use the **Audio spatializer** dropdown 
 
 ![Unity MRTK Project Configurator with MS HRTF Spatializer selected](images/mr-learning-base/base-02-section5-step2-3.png)
 
+> [!TIP]
+> Setting the Audio spatializer property is optional but may improve the audio experience in your project. If you set it to MS HRTF Spatializer, this spatializer plugin will be used when Unity's AudioSource.spatialize property is enabled. To learn more about this topic, you can refer to the [Spatial audio tutorials](unity-spatial-audio-ch1.md).
+
 In the Project Settings window, select **Player** > **XR Settings**, then use the **Depth Format** dropdown to select **16-bit depth**:
 
 ![Unity XR Settings with 16-bit depth selected](images/mr-learning-base/base-02-section5-step2-4.png)
+
+> [!TIP]
+> Reducing the Depth Format to 16-bit is optional but my help improve graphics performance in your project. To learn more about this topic, you can refer to the [Depth buffer sharing (HoloLens)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html#depth-buffer-sharing-hololens) section of MRTK's [Performance](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html) documentation.
 
 In the Project Settings window, select **Player** > **Publishing Settings**, then in the **Package name** field, enter a suitable name, for example, _MRTKTutorials-GettingStarted_:
 
