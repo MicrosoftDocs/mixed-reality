@@ -91,7 +91,7 @@ If the floor looks off (for example, you feel like you’re floating), select **
 
 ## I got a message that said to plug in and charge my PC. Why?
 
-If you're using a laptop, Windows Mixed Reality works best when the PC is both fully charged and plugged in. 
+If you're using a laptop, Windows Mixed Reality works best when the PC is both fully charged and plugged in.
 
 ## How do I uninstall Windows Mixed Reality?
 
@@ -102,7 +102,7 @@ When you're ready to start using your headset again, plug it in, and Mixed Reali
 > [!NOTE]
 > If you see a message that says "We couldn't finish removing Windows Mixed Reality," this means that some files, including information about your environment, might still be on your computer. This can cause problems if you decide to reinstall Windows Mixed Reality later on.
 > 
-> To learn how to manually remove any remaining Windows Mixed Reality info from your PC, see **[this article](troubleshooting-windows-mixed-reality.md#how-to-uninstall-windows-mixed-reality)**. 
+> To learn how to manually remove any remaining Windows Mixed Reality info from your PC, see **[this article](installation_errors.md)**.
 
 ## My Wi-Fi slows down when I'm using Windows Mixed Reality
 
