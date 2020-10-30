@@ -11,7 +11,7 @@ When you run into trouble with anything relating to your immersive hardware, thi
 See the following articles for the areas you have been having issue with.
 
 - [Installation errors](installation_errors.md)
-- [Setup](set-up-questions.md)
+- [Setup](wmr-set-up-faq.md)
 - [Boundaries](boundary-questions.md)
 - [Headset connectivity](headset-connectivity.md)
 - [Headset display](headset-display.md)

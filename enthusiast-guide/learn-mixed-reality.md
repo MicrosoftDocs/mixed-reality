@@ -41,7 +41,7 @@ To learn more about how to get around in mixed reality with motion controllers, 
 
 ## Use voice commands and Cortana inside of the Windows Mixed Reality home
 
-[Learn the voice commands you can use in the Windows Mixed Reality home](https://support.microsoft.com/en-us/help/4041322/windows-10-speech-in-windows-mixed-reality)
+[Learn the voice commands you can use in the Windows Mixed Reality home](https://support.microsoft.com/help/4041322/windows-10-speech-in-windows-mixed-reality)
 
 ## Show a preview of what I'm seeing in my headset on my desktop's screen
 
@@ -50,5 +50,5 @@ Just press the **Play** icon at the bottom of the Mixed Reality Portal app.
 ## See also
 
 * [Troubleshooting installation](installation_errors.md)
-* [Troubleshooting setup](set-up-questions.md)
+* [Troubleshooting setup](wmr-set-up-faq.md)
 * [Your mixed reality home](your-mixed-reality-home.md)

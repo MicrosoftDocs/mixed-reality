@@ -146,8 +146,10 @@ Give us feedback in Feedback Hub, using the "Mixed Reality -> Input" category.
 
 ## See also
 
-* [Ask the community](https://answers.microsoft.com)
-* [Contact us for support](https://support.microsoft.com/contactus/)
-* [Troubleshooting](troubleshooting-windows-mixed-reality.md)
+- [HP Controllers in Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+- [HP Controllers in Unreal](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+- [Ask the community](https://answers.microsoft.com)
+- [Contact us for support](https://support.microsoft.com/contactus/)
+- [Troubleshooting](troubleshooting-windows-mixed-reality.md)
 
 Having trouble with your motion controllers? [Get help](motion-controller-problems.md)
