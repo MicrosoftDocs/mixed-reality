@@ -1,13 +1,13 @@
 ---
-title: Mixed Reality Dev Days
-description: Event page for Mixed Reality Dev Days
+title: Mixed Reality Dev Days Japan
+description: Event page for Mixed Reality Dev Days Japan
 author: jessemcculloch 
 ms.author: jemccull
-ms.date: 02/21/2020
+ms.date: 10/30/2020
 ms.topic: article
 keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Kinect
 ---
-# Mixed Reality Dev Days
+# Mixed Reality Dev Days Japan
 
 ![Mixed Reality Dev Days](images/MRDD/MRDevDaysBanner.png)
 
