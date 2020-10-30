@@ -24,7 +24,7 @@ Most headsets come pre-paired directly to the headset, but some early headsets r
 
 1. Launch **Mixed Reality Portal** with your headset connected.  
 2. In the lower-left corner select **… > Set up controllers**.
-3. Insert 2 AA batteries into each controller and put your controller in pairing mode (see instructions in [pair motion controllers section](controllers-in-wmr.md#Pair-motion-controllers)
+3. Insert 2 AA batteries into each controller and put your controller in pairing mode (see instructions in [pair motion controllers section](controllers-in-wmr.md#pair-motion-controllers)
 4. Follow the instructions provided on-screen.
 
 > [!NOTE]

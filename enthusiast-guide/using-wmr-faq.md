@@ -36,7 +36,7 @@ Windows Mixed Reality is designed to play sound through your immersive headset w
 
 ## Speech commands aren’t working
 
-To use Speech commands, your PC’s speech and language settings must be set to a [supported Windows Mixed Reality region and language](wmr-setup-faq.md#what-languages-are-supported-in-windows-mixed-reality). To check your Windows region and language, select **Settings > Time & language > Region & language**. To check your Speech language, select **Settings > Time & language > Speech**.
+To use Speech commands, your PC’s speech and language settings must be set to a [supported Windows Mixed Reality region and language](other-questions.md#what-languages-are-supported-in-windows-mixed-reality). To check your Windows region and language, select **Settings > Time & language > Region & language**. To check your Speech language, select **Settings > Time & language > Speech**.
 
 If your headset doesn’t have a built-in mic, attach headphones with a mic to the headset or to your PC. To have mic input switch automatically to your headset when your headphones are directly connected to it, select **Settings > Mixed reality > Audio and speech**, and make sure that **When I wear my headset, switch to headset mic** is turned on.
 

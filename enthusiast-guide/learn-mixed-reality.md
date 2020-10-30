@@ -50,5 +50,5 @@ Just press the **Play** icon at the bottom of the Mixed Reality Portal app.
 ## See also
 
 * [Troubleshooting installation](installation_errors.md)
-* [Troubleshooting setup](wmr-set-up-faq.md)
+* [Troubleshooting setup](wmr-setup-faq.md)
 * [Your mixed reality home](your-mixed-reality-home.md)
