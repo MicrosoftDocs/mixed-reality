@@ -1,6 +1,6 @@
 ---
 title: PC Holographic Remoting tutorials - 2. Create a Holographic Remoting PC application
-description: Complete this course to learn how to remote mixed reality experience form your PC to HoloLens 2.
+description: Complete this course to learn how to create a PC application to remote a mixed reality experience from your PC to HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
