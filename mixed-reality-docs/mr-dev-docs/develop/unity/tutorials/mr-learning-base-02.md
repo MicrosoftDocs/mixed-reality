@@ -1,6 +1,6 @@
 ---
 title: Getting started tutorials - 2. Initializing your project and deploying your first application
-description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to create a mixed reality application.
+description: This course shows you how to configure your Unity project for the Mixed Reality Toolkit (MRTK) and how to deploy it to your HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020

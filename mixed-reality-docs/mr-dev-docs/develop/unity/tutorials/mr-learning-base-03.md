@@ -1,6 +1,6 @@
 ---
 title: Getting started tutorials - 3. Configuring the MRTK profiles
-description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to create a mixed reality application.
+description: This course shows you how to configure the Mixed Reality Toolkit (MRTK) profiles.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020

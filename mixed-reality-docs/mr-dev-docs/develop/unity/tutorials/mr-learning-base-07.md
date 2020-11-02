@@ -1,6 +1,6 @@
 ---
 title: Getting started tutorials - 7. Interacting with 3D objects
-description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to create a mixed reality application.
+description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to interact with 3D objects.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020

@@ -1,6 +1,6 @@
 ---
 title: Getting started tutorials - 6. Creating user interfaces
-description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to create a mixed reality application.
+description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to create user interfaces.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
