@@ -1,6 +1,6 @@
 ---
 title: Multi-user capabilities tutorials - 3. Connecting multiple users
-description: Complete this course to learn how to implement multi-user shared experiences within a HoloLens 2 application.
+description: Complete this course to learn how to connect multiple users in a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
