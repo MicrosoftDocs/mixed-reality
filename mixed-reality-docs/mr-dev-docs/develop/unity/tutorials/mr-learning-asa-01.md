@@ -1,6 +1,6 @@
 ---
 title: Azure Spatial Anchors tutorials - 1. Introduction
-description: Complete this course to implement Azure Spatial Anchors within a mixed reality application.
+description: Complete this course to learn how to implement Azure Spatial Anchors in a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020

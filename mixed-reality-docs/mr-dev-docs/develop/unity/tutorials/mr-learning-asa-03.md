@@ -1,6 +1,6 @@
 ---
 title: Azure Spatial Anchors tutorials - 3. Saving, retrieving, and sharing Azure Spatial Anchors
-description: Complete this course to learn how to implement Azure Spatial Anchors within a mixed reality application.
+description: Complete this course to learn how to save, retrieve, and share Azure Spatial Anchors in a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
