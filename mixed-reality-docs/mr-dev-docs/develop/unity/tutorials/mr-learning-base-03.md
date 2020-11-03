@@ -15,7 +15,11 @@ ms.localizationpriority: high
 
 In this tutorial, you will learn how to customize and configure the MRTK profiles.
 
+The <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Profiles/Profiles.html" target="_blank">MRTK profiles</a> is a tree of nested profiles that make up the configuration information for how the MRTK systems and features should be initialized. The top-level profile, the Configuration Profile, contains nested profiles for each of the primary core systems. Each nested profile is designed to configure the behavior of their corresponding system.
+
 This particular example will show you how to hide the spatial awareness mesh by changing the settings of the Spatial Mesh Observer. However, you may follow these same principles to customize any setting or value in the MRTK profiles.
+
+As you experienced when you deployed your project to your HoloLens 2 during the [previous tutorial](mr-learning-base-02.md#congratulations), the <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html" target="_blank">Spatial Awareness</a> mesh is a collection of meshes representing the geometry of the environment. It's a helpful visualization to see initially but it's typically turned off to avoid the visual distraction and the additional performance hit of having it on.
 
 ## Objectives
 
@@ -66,6 +70,9 @@ In the Unity menu, select **File** > **Save** to save your scene.
 In the Hierarchy window, select the **MixedRealityToolkit** object, then in the Inspector window, select the **Spatial Awareness** tab, and then check the **Enable Spatial Awareness System** checkbox:
 
 ![Unity MixedRealityToolkit component with Spatial Awareness System enabled](images/mr-learning-base/base-03-section1-step2-1.png)
+
+> [!NOTE]
+> For future projects, if your app doesn't need to respond to or interact with the environment, it's recommended to keep the spatial awareness turned off to reduce performance cost.
 
 ### 3. Clone the default Spatial Awareness System Profile
 
