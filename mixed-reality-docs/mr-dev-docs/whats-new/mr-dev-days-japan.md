@@ -15,7 +15,7 @@ We look forward to having you join us at Mixed Reality Dev Day! Get ready to hea
 
 ## Important Details
 
-**Date - December 18th, 2020**
+**Date - December 16th, 2020**
 
 **Location - Microsoft Teams Live Events**
 
