@@ -42,9 +42,6 @@ MaquetteScript is a new addition and in flux so changes should be expected. More
 
 ## Programming workflow
 
-<!-- TODO(Harrison): Need consolidated logo with text -->
-![Logo](/doc_staging/images/MaquetteIcon.png) Programming Workflow
-
 <!-- TODO(Stefan): Which of these bullets are no longer TBD? We only want to include documentation on existing content. -->
 TBD
 * REPL

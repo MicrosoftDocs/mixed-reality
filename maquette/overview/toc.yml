@@ -1,6 +1,6 @@
 - name: About Maquette
   href: about.md
-- name: Installion
+- name: Installation
   href: installation.md
 - name: Programming overview
   href: programming-overview.md
