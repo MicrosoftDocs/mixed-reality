@@ -24,7 +24,7 @@ Most headsets come pre-paired directly to the headset, but some early headsets r
 
 1. Launch **Mixed Reality Portal** with your headset connected.  
 2. In the lower-left corner select **… > Set up controllers**.
-3. Insert 2 AA batteries into each controller and put your controller in pairing mode (see instructions in [pair motion controllers section](controllers-in-wmr.md#Pair-motion-controllers)
+3. Insert 2 AA batteries into each controller and put your controller in pairing mode (see instructions in [pair motion controllers section](controllers-in-wmr.md#pair-motion-controllers)
 4. Follow the instructions provided on-screen.
 
 > [!NOTE]
@@ -146,8 +146,10 @@ Give us feedback in Feedback Hub, using the "Mixed Reality -> Input" category.
 
 ## See also
 
-* [Ask the community](https://answers.microsoft.com)
-* [Contact us for support](https://support.microsoft.com/contactus/)
-* [Troubleshooting](troubleshooting-windows-mixed-reality.md)
+- [HP Controllers in Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+- [HP Controllers in Unreal](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+- [Ask the community](https://answers.microsoft.com)
+- [Contact us for support](https://support.microsoft.com/contactus/)
+- [Troubleshooting](troubleshooting-windows-mixed-reality.md)
 
 Having trouble with your motion controllers? [Get help](motion-controller-problems.md)

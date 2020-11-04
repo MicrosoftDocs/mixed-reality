@@ -1,6 +1,6 @@
 ---
 title: Other questions
-description: Advanced Windows Mixed Reality troubleshooting that goes beyond our standard consumer support documentation.
+description: Additional Windows Mixed Reality troubleshooting tips that go beyond our standard consumer support documentation.
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
@@ -14,6 +14,7 @@ appliesto:
 ## My graphics driver isn't supported (I'm getting graphics driver failure errors).
 
 Search for and run "dxdiag":
+
 1.	If the result is “Basic Renderer”, the graphics driver is not installed. To fix this:
     * Go to **Device Manager > Action > Scan for Hardware Changes**.
     * Use Windows Update to update the driver.
@@ -23,7 +24,7 @@ Search for and run "dxdiag":
     * Use Windows Update to update the driver.
     * If that update doesn't fix the problem, go to the manufacturer’s website and install the latest driver update. 
     * If an update isn't available for your GPU, WMR may not be supported on your device. If you think it should be, contact [support](https://support.microsoft.com).
-    
+
 If Windows Mixed Reality setup says your graphics card doesn’t meet the requirements and you think it does, make sure your headset is plugged into the correct card.
 
 ## My Samsung Odyssey or Odyssey+ headset firmware update is stuck.
@@ -31,6 +32,7 @@ If Windows Mixed Reality setup says your graphics card doesn’t meet the requir
 Samsung owns and publishes headset firmware updates delivered via their "Samsung HMD Odyssey Setup" and "Samsung HMD Odyssey+ Setup" device companion apps. For more details and for help with Samsung firmware update issues, please reach out to Samsung customer service.
 
 If the firmware update process is getting stuck, and there has been no progress for more than five minutes:
+
 * Unplug all of your other USB devices temporarily and retry the firmware update.
 * Connect your Samsung headset to a different USB 3.0 port on your PC.
 * Disable and/or uninstall any software installed that may interfere with firmware updates, like Gigabyte's AORUS App Center.
@@ -39,28 +41,32 @@ If the firmware update process is getting stuck, and there has been no progress 
 ## How do I access my PC desktop in mixed reality?
 Launch the Desktop app in the headset from **Windows Button > All apps > Desktop** to access your PC desktop in mixed reality.
 
-## How can I see multiple monitors in mixed reality?
-By default, Desktop app automatically switches to display the monitor with focus. If you want to see all of your monitors in mixed reality: 
+## How can I see multiple monitors in Mixed Reality
+
+By default, Desktop app automatically switches to display the monitor with focus. If you want to see all of your monitors in mixed reality:
+
 * Click the monitor icon on the top left corner of the app.
 * Disable "Automatically Switch Monitor".
 * Pick the monitor you want to see.
 * Launch another instance of the Desktop app.
 * Pick the monitor you want to see on that instance.
 * Repeat for all of your physical monitors.
-Note that you will have to reselect the monitor to show on each Desktop app every time you restart mixed reality. 
+Note that you will have to reselect the monitor to show on each Desktop app every time you restart mixed reality.
 
-## My Desktop app only shows a black screen.
+## My Desktop app only shows a black screen
+
 If your PC has an Nvidia hybrid GPU, the issue may be caused by Nvidia device running the runtimebroker.exe on the discrete GPU instead of the integrated one. To fix this issue, follow these instructions under "[How do I create Optimus settings for a new program?](http://nvidia.custhelp.com/app/answers/detail/a_id/2615/~/how-do-i-customize-optimus-profiles-and-settings%3F)" to add C:\windows\system32\runtimebroker.exe and force it to run on the "Integrated graphics" processor. 
 
 ## My Wi-Fi slows down when I'm using Windows Mixed Reality.
 
 If you're using a 2.4GHz Wi-Fi connection, your motion controllers might slow down your Wi-Fi. Try one of the following:
-* Switch to a 5GHz Wi-Fi connection, if one is available. [Learn more](https://support.microsoft.com/en-us/help/4000461).
-* Use a separate Bluetooth adapter to connect your motion controllers to your PC. See [recommended adapters](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines).
+
+* Switch to a 5GHz Wi-Fi connection, if one is available. [Learn more](https://support.microsoft.com/help/4000461).
+* Use a separate Bluetooth adapter to connect your motion controllers to your PC. See [recommended adapters](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines).
 
 ## I got a message that said to plug in and charge my PC. Why?
 
-If you're using a laptop, Windows Mixed Reality works best when the PC is both fully charged and plugged in. 
+If you're using a laptop, Windows Mixed Reality works best when the PC is both fully charged and plugged in.
 
 ## What is the Experience options setting?
 
@@ -69,9 +75,10 @@ This setting (**Settings > Mixed reality > Headset display > Experience options*
 * 60Hz: Sets the refresh rate to 60Hz and turns off certain features, such as video capture and preview in Mixed Reality Portal.
 * 90Hz: Sets the refresh rate to 90Hz.
 
-## What languages are supported in Windows Mixed Reality?
+## What languages are supported in Windows Mixed Reality
 
 Windows Mixed Reality is available in the following languages:
+
 * Chinese Simplified (China)
 * English (Australia)
 * English (Canada)
