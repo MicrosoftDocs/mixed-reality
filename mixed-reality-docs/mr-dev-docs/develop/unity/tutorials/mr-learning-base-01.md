@@ -1,5 +1,5 @@
 ---
-title: Getting started tutorials - 1. Introduction
+title: Getting started tutorials - 1. Introduction to the Getting started tutorials
 description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to create a mixed reality application from scratch.
 author: jessemcculloch
 ms.author: jemccull
@@ -9,7 +9,7 @@ keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
 
-# 1. Introduction
+# 1. Introduction to the Getting started tutorials
 
 ## Overview
 

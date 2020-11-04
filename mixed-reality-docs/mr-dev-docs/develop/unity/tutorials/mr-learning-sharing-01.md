@@ -1,6 +1,6 @@
 ---
-title: Multi-user capabilities tutorials - 1. Introduction
-description: Complete this course to learn how to implement multi-user shared experiences in a HoloLens 2 application.
+title: Multi-user capabilities tutorials - 1. Introduction to the Multi-user capabilities tutorials 
+description: Complete this course to learn how to implement shared multi-user experiences in a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
@@ -9,7 +9,7 @@ keywords: mixed reality, unity, tutorial, hololens
 ms.localizationpriority: high
 ---
 
-# 1. Introduction
+# 1. Introduction to the Multi-user capabilities tutorials
 
 ## Overview
 

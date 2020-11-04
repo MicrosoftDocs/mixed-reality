@@ -1,6 +1,6 @@
 ---
 title: Getting started tutorials - 9. Using speech commands
-description: Learn how to use the Mixed Reality Toolkit (MRTK) to create a mixed reality application.
+description: This course shows you how to use speech commands with the Mixed Reality Toolkit (MRTK).
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
