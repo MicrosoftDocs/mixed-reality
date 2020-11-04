@@ -33,7 +33,7 @@ We are very excited to open up registration for Mixed Reality Dev Days Japan.  T
 **All times are Japan Standard Time (UTC+9)** 
 
 
-### December 18th
+### December 16th
 |**Time**|**Session Title**|**Speaker**|**Language**|**Level**|
 |---------|---------|---------|---------|---------|
 |10:00am - 10:50am|Opening Keynote|TBD|JA/EN|N/A|
@@ -54,6 +54,10 @@ We are very excited to open up registration for Mixed Reality Dev Days Japan.  T
 |5:15pm - 5:40pm|*Session 11* Azure Kinect DK Deep Dive, Case study|TBD|JA|400|
 |5:45pm - 6:00pm|Closing|TBD|JA|NA|
 ||||||
+
+#### Contributors (English subtitle reviewers)
+
+Futo Horio ([@Futo_Horio](https://twitter.com/Futo_Horio)), Takahiro Miyaura ([@takabrz1](https://twitter.com/takabrz1)), Akihiro Ueyama ([@akihiro01051](https://twitter.com/akihiro01051)), Kaoru Nakamura ([@kaorun55](https://twitter.com/kaorun55)), Shinya Tachihara ([@deco_c_](https://twitter.com/deco_c_))
 
 ## Frequently Asked Questions
 This section will be updated frequently as we get more questions from you!
