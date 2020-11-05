@@ -36,17 +36,17 @@ In this section, you will learn how to configure the scene and make the necessar
 
 In the Project window, navigate to the **Assets > MRTK.Tutorials.AzureCloudServices > Prefabs > Manager**
 
-![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step1-1.png)
+![Unity with AnchorManager prefab selected](images/mr-learning-azure/tutorial4-section1-step1-1.png)
 
 From the **Manager** folder, drag and drop the prefab **Anchor Manager** into the scene Hierarchy.
 
 Select **Anchor Manager** GameObject in the Hierarchy, and in the Inspector section, you will find **Spatial Anchor Manager** (Script). Find account ID and key field and add the credentials which you had created in the prerequisite in the earlier stage.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step2-1.png)
+![Unity with newly added AnchorManager prefab still selected](images/mr-learning-azure/tutorial4-section1-step2-1.png)
 
 Now find the **Scene Controller** object in your scene Hierarchy and select it. You will see the **Scene Controller** Inspector.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step3-1.png)
+![Unity with SceneController script component configured](images/mr-learning-azure/tutorial4-section1-step3-1.png)
 
 You will observe that the **Anchor Manager** field in the **Scene Controller** component is empty, drag and drop the **Anchor Manager** from the Hierarchy in the scene into that field and save the scene.
 

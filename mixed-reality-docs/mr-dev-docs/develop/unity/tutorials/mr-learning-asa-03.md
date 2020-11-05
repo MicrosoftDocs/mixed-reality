@@ -1,6 +1,6 @@
 ---
 title: Azure Spatial Anchors tutorials - 3. Saving, retrieving, and sharing Azure Spatial Anchors
-description: Complete this course to learn how to implement Azure Spatial Anchors within a mixed reality application.
+description: Complete this course to learn how to save, retrieve, and share Azure Spatial Anchors in a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
@@ -22,11 +22,11 @@ In this tutorial, you will learn how to save Azure Spatial Anchors across multip
 
 In the Hierarchy window, expand the **ButtonParent** object. Select the **last four child button** objects. In the Inspector window, **check** the checkbox next to the name field to make all the objects active.
 
-![mr-learning-asa](images/mr-learning-asa/asa-03-section1-step1-1.png)
+![Unity with previously inactive button objects selected and active](images/mr-learning-asa/asa-03-section1-step1-1.png)
 
 In the Hierarchy window, select the **ButtonParent** objects. Then in the Inspector window, locate the **GridObjectCollection** component and click the **Update Collection** button to update the position of all the **ButtonParent** object's child objects.
 
-![mr-learning-asa](images/mr-learning-asa/asa-03-section1-step1-2.png)
+![Unity with GridObjectCollection component updated](images/mr-learning-asa/asa-03-section1-step1-2.png)
 
 ## Persisting Azure Spatial Anchors between app sessions
 
@@ -34,7 +34,7 @@ In this section, you will learn how to save and retrieve the Azure Anchor ID to 
 
 In the Hierarchy window, expand the **ButtonParent** object and locate the two buttons named **SaveAzureAnchorIdToDisk** and **GetAzureAnchorIdFromDisk**:
 
-![mr-learning-asa](images/mr-learning-asa/asa-03-section2-step1-1.png)
+![Unity with SaveAzureAnchorIdToDisk and GetAzureAnchorIdFromDisk button objects selected](images/mr-learning-asa/asa-03-section2-step1-1.png)
 
 Follow the same steps as in the [configuring the buttons to operate the scene](mr-learning-asa-02.md#configuring-the-buttons-to-operate-the-scene) instructions from the previous tutorial to configure the **Interactable (Script)** component on each of the two buttons:
 
@@ -63,7 +63,7 @@ There are many ways to transfer Azure Anchor IDs between devices, including meth
 
 In the Hierarchy window, expand the **ButtonParent** object.   Locate the two buttons named **ShareAzureAnchorIdToNetwork** and **GetAzureAnchorIdFromNetwork**:
 
-![mr-learning-asa](images/mr-learning-asa/asa-03-section3-step1-1.png)
+![Unity with ShareAzureAnchorIdToNetwork and GetAzureAnchorIdFromNetwork button objects selected](images/mr-learning-asa/asa-03-section3-step1-1.png)
 
 Follow the same steps as in the [configuring the buttons to operate the scene](mr-learning-asa-02.md#configuring-the-buttons-to-operate-the-scene) instructions from the previous tutorial to configure the **Interactable (Script)** component on each of the two buttons:
 
