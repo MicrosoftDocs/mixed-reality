@@ -134,6 +134,13 @@ As an immersive experience, these users were encouraged to look around, moving t
 
 The realistic representation of Buzz provided a powerful focal point, complete with subtle techniques to turn Buzz toward the user to feel as though he is there, speaking to you. As the user moves about the experience, Buzz will shift toward you to a threshold before returning to a neutral state if the user moves too far beyond his periphery. If the user looks way from Buzz completely (for example, to look at something elsewhere in the scene) then back to Buzz, the narrator's directional position will once again be focused on the user. Techniques like this provide a powerful sense of immersion and create a focal point within the holographic frame, reducing excessive head movement and promoting [user comfort](comfort.md).
 
+## Next Discovery Checkpoint
+
+If you're following the [discovery journey](get-started-with-mr.md) we've laid out, you're in the midst of exploring the basics of Mixed Reality. From here, you can proceed to the next foundational topic: 
+
+> [!div class="nextstepaction"]
+> [Making holographic objects feel real - (Spatial mapping)](../design/spatial-mapping.md)
+
 ## See also
 * [Instinctual interactions](interaction-fundamentals.md)
 * [Comfort](comfort.md)
