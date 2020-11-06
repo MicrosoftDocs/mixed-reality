@@ -366,6 +366,13 @@ Here are some examples of different types of mesh processing that you may find u
 * In order for the surface meshes to be orientated correctly, each GameObject needs to be active before it is sent to the SurfaceObserver to have its mesh constructed. Otherwise, the meshes will show up in your space but rotated at weird angles.
 * The GameObject that runs the script that communicates with the SurfaceObserver needs to be set to the origin. Otherwise, all of GameObjects that you create and send to the SurfaceObserver to have their meshes constructed will have an offset equal to the offset of the Parent Game Object. This can make your meshes show up several meters away which makes it very hard to debug what is going on.
 
+## Next Discovery Checkpoint
+
+If you're following the [discovery journey](../discover/get-started-with-mr.md) we've laid out, you're in the midst of exploring the basics of Mixed Reality. From here, you can proceed to the next foundational topic: 
+
+> [!div class="nextstepaction"]
+> [Suggesting the scale of an object - (Scale)](../design/scale.md)
+
 ## See also
 * [Coordinate systems](coordinate-systems.md)
 * [Spatial mapping in DirectX](../develop/native/spatial-mapping-in-directx.md)

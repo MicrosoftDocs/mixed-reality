@@ -77,6 +77,18 @@ This can create a few possible artifacts in the experience however:
 
 ---
 
+## Next Discovery Checkpoint
+
+If you're following the [discovery journey](../discover/get-started-with-mr.md) we've laid out, you're at the end your initial foray into Mixed Reality foundations. You can either check out what industry partners are doing with Mixed Reality in the real world: 
+
+> [!div class="nextstepaction"]
+> [See how industry partners are using mixed reality](../discover/get-started-with-mr.md#see-how-industry-partners-are-using-mixed-reality)
+
+Or continue on to the design journey:
+
+> [!div class="nextstepaction"]
+> [Start your design journey](../design/design.md)
+
 ## See also
 * [Color, light and materials](../color,-light-and-materials.md)
 * [Typography](typography.md)
