@@ -362,6 +362,8 @@
             href: native/spatial-mapping-in-directx.md 
 - name: Platform capabilities and APIs
   items:
+    - name: Feature samples 
+      href: platform-capabilities-and-apis/feature-samples.md
     - name: Core building blocks 
       items: 
         - name: Scene understanding 
