@@ -70,10 +70,10 @@ The application is mainly driven by traditional UI, so you use the [Azure Bot Se
 * Some basic C# programming ability
 * A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
 * A connected webcam if you like to test from Unity editor
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.X installed and the Universal Windows Platform Build Support module added
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019 LTS installed and the Universal Windows Platform Build Support module added
 
 > [!CAUTION]
-> The recommended Unity version for this tutorial series is Unity 2019.3.X. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
+> The recommended Unity version for this tutorial series is Unity 2019 LTS. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
 
 ## Creating and preparing the Unity project
 

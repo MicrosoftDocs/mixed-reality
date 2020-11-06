@@ -31,12 +31,12 @@ ms.localizationpriority: high
 * A Windows 10 PC configured with the correct [tools installed](../../install-the-tools.md)
 * Basic c# programming knowledge
 * A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.X mounted, and the Universal Windows Platform Build Support module added
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019 LTS mounted, and the Universal Windows Platform Build Support module added
 
 We **strongly recommend** completing the [Getting started](mr-learning-base-01.md) tutorials series or some basic prior experience with Unity and MRTK before continuing.
 
 > [!IMPORTANT]
-> * The recommended Unity version for this tutorial series is Unity 2019.3.X. It supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
+> * The recommended Unity version for this tutorial series is Unity 2019 LTS. It supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
 > * Holographic Remoting with MRTK projects will only work with legacy XR. XR SDK is not supported at this time.
 
 ## Creating and preparing the Unity project
