@@ -160,7 +160,7 @@ Muscle fatigue can accumulate when users are expected to keep a hand raised thro
 
 ## Next Discovery Checkpoint
 
-If you're following the [discovery journey](get-started-with-mr.md) we've laid out, you're in the midst of exploring the basics of Mixed Reality. From here, you can proceed to the next foundational topic: 
+If you're following the [discovery journey](../discover/get-started-with-mr.md) we've laid out, you're in the midst of exploring the basics of Mixed Reality. From here, you can proceed to the next foundational topic: 
 
 > [!div class="nextstepaction"]
 > [How the user sees the world - (Holographic frame)](../design/holographic-frame.md)

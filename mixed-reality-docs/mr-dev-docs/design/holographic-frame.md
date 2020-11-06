@@ -136,7 +136,7 @@ The realistic representation of Buzz provided a powerful focal point, complete w
 
 ## Next Discovery Checkpoint
 
-If you're following the [discovery journey](get-started-with-mr.md) we've laid out, you're in the midst of exploring the basics of Mixed Reality. From here, you can proceed to the next foundational topic: 
+If you're following the [discovery journey](../discover/get-started-with-mr.md) we've laid out, you're in the midst of exploring the basics of Mixed Reality. From here, you can proceed to the next foundational topic: 
 
 > [!div class="nextstepaction"]
 > [Making holographic objects feel real - (Spatial mapping)](../design/spatial-mapping.md)

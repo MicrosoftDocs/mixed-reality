@@ -149,7 +149,7 @@ It's hard to say what the far future of mixed reality will look like for consume
 
 ## Next Discovery Checkpoint
 
-If you're following the [discovery journey](get-started-with-mr.md) we've laid out, you're in the midst of exploring the basics of Mixed Reality. From here, you can proceed to the next foundational topic: 
+If you're following the [discovery journey](../discover/get-started-with-mr.md) we've laid out, you're in the midst of exploring the basics of Mixed Reality. From here, you can proceed to the next foundational topic: 
 
 > [!div class="nextstepaction"]
 > [Immersive, ergonomic, instinctual and untethered](https://www.microsoft.com//hololens/hardware)

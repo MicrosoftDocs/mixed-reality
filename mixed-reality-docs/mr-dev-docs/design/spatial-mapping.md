@@ -368,7 +368,7 @@ Here are some examples of different types of mesh processing that you may find u
 
 ## Next Discovery Checkpoint
 
-If you're following the [discovery journey](get-started-with-mr.md) we've laid out, you're in the midst of exploring the basics of Mixed Reality. From here, you can proceed to the next foundational topic: 
+If you're following the [discovery journey](../discover/get-started-with-mr.md) we've laid out, you're in the midst of exploring the basics of Mixed Reality. From here, you can proceed to the next foundational topic: 
 
 > [!div class="nextstepaction"]
 > [Suggesting the scale of an object - (Scale)](../design/scale.md)
