@@ -28,7 +28,7 @@ The feature samples listed below correspond to specific implementations that are
 
 ## [Holographic Mixed Reality Capture](mixed-reality-capture-for-developers.md)
 
-* [Mixed Reality Capture samples](https://docs.microsoft.com/en-us/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/)
+* [Mixed Reality Capture samples](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/)
 
 ## [Holographic Remoting](holographic-remoting-player.md)
 
