@@ -24,7 +24,7 @@
     href: unity/unity-development-overview.md
   - name: Getting started
     items: 
-      - name: Getting started with Mixed Reality Toolkit v2
+      - name: Getting started with MRTK
         href: unity/mrtk-getting-started.md
       - name: Configure Unity project for Windows Mixed Reality
         href: unity/configure-unity-project.md
