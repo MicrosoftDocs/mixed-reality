@@ -32,7 +32,7 @@ The first setting you need to change for WMR is the project platform:
 5. Set **Build Type** to **D3D**
 6. Set **UWP SDK** to **Latest installed**
 
-<img src="images/unity-uwp-settings.png" width="550px">
+<img src="images/unity-uwp-settings.png" width="550px" alt="Unity XR Settings">
 *Unity XR settings*
 
 After the platform is configured correctly, you need to let Unity know that your app should create an [immersive view](../../design/app-views.md) instead of a 2D view when exported:
