@@ -15,7 +15,7 @@ keywords: Unity, mixed reality, development, getting started, new project
 
 Windows Mixed Reality (WMR) is a Microsoft platform introduced as part of the Windows 10 operating system. The WMR platform lets you build applications that render digital content on holographic and VR display devices.
 
-When setting up for WMR, there are two paths you can take. Your first option is to install the [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) (MRTK) v2, which will automatically set up the WMR environment. The second option is to manually change a few Unity settings to get rolling with WMR. 
+When setting up for WMR, there are two paths you can take. Your first option is to install the [Mixed Reality Toolkit (MRTK)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html), which will automatically set up the WMR environment. The second option is to manually change a few Unity settings to get rolling with WMR. 
 
 > [!NOTE]
 > You can always import MRTK later on, so there's no penalty for going the manual route first.
@@ -32,7 +32,7 @@ The first setting you need to change for WMR is the project platform:
 5. Set **Build Type** to **D3D**
 6. Set **UWP SDK** to **Latest installed**
 
-![Unity XR settings](images/unity-uwp-settings.png)<br>
+<img src="images/unity-uwp-settings.png" width="550px" alt="Unity XR Settings">
 *Unity XR settings*
 
 After the platform is configured correctly, you need to let Unity know that your app should create an [immersive view](../../design/app-views.md) instead of a 2D view when exported:
@@ -87,5 +87,7 @@ If your app is targeting HoloLens specifically, you need to change a few setting
 > If you delete and create a new camera, make sure your new camera is tagged as **MainCamera**.
 
 ## See also
-* [Mixed Reality Toolkit v2](mrtk-getting-started.md)
+* [MRTK - Installation guide (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
+* [MRTK - Documentation home (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+* [Install the tools](../install-the-tools.md)
 * [Unity Development Overview](unity-development-overview.md)

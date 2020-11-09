@@ -21,10 +21,11 @@ MRTK for Unity is an open-source, cross-platform development kit for mixed reali
 
 >[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Setting-up-your-HoloLens-2-development-environment/player?format=ny]
 
-See the [MRTK's documentation on GitHub](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html) to explore more.
+See the [MRTK's documentation on GitHub](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html) to explore more. To get started, follow the steps on the [Installation guide](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html) page.
+
 
 ## New with MRTK v2
-We want to stress our commitment to these platform tools.  In fact, we leveraged MRTK version 2 to develop our inbox experiences, such as the setup experience (OOBE) and our Mixed Reality Learning application.  You can also expect to see new HoloLens 2 capabilities first exposed through MRTK because we believe it’s the best way to develop on our platform. 
+We want to stress our commitment to these platform tools.  In fact, we leveraged MRTK version 2 to develop our inbox experiences, such as the out-of-box setup experience (OOBE) and our Mixed Reality Tips application. You can also expect to see new HoloLens 2 capabilities first exposed through MRTK because we believe it’s the best way to develop on our platform. 
 
 ### Modular
 We have built it in a modular way, so there's no need to take every bit of the toolkit into your project.  There are actually a few benefits to this.  It keeps your project size smaller, and makes it easier to manage.  Additionally, because it’s built with scriptable objects and is interface-driven, it’s also possible for you to replace the components that are included with your own, to support other services, systems, and platforms.
@@ -36,7 +37,7 @@ Speaking of other platforms, it has cross-platform support.  And while this does
 Working with mobile platforms, we constructed it with performance in mind.  This is super important, and we wanted to ensure that the tools are not going to work against you.
 
 ## See also
-* [MRTK getting started guide](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
-* [MRTK documentation home](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
 * [Install the tools](../install-the-tools.md)
-* [Porting from HTK/MRTK to MRTK version 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)
+* [MRTK - Installation guide (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
+* [MRTK - Documentation home (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+* [Porting from HoloToolkit/MRTK to MRTK version 2 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)
