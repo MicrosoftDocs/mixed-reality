@@ -172,7 +172,7 @@
             href: unity/tutorials/mr-azure-301.md
   - name: Core building blocks
     items: 
-      - name: MRTK 101 - How to ouse Mixed Reality Toolkit Unity for basic interactions
+      - name: MRTK 101 - Building core interactions using Mixed Reality Toolkit Unity
         href: unity/mrtk-101.md
       - name: Camera in Unity
         href: unity/camera-in-unity.md
