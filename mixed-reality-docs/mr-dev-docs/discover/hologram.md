@@ -127,14 +127,8 @@ Holograms can also be occluded by real-world objects. For example, a holographic
 If you're following the [discovery journey](get-started-with-mr.md) we've laid out, you're in the midst of exploring the basics of Mixed Reality. From here, you can proceed to the next foundational topic: 
 
 > [!div class="nextstepaction"]
-> [A new vision for work](https://dynamics.microsoft.com//mixed-reality/overview/)
-
-Or jump to:
-
-> [!div class="nextstepaction"]
-> [The pursuit of more personal computing](../out-of-scope/case-study-the-pursuit-of-more-personal-computing.md)
+> [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
 
 ## See also
-* [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
 * [Spatial sound](../design/spatial-sound.md)
 * [Color, light and materials](../color,-light-and-materials.md)

@@ -11,6 +11,8 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 # Get started with Mixed Reality
 
+![Virtual hummingbird with human hand](images/01_MixedReality.png)
+
 The Mixed Reality ecosystem is an emerging landscape of physical and digital interactions, limited only by your imagination. Whether you're an experienced developer or a new convert, we recommend beginning your Mixed Reality journey with the resources we've laid out in the links below. There's a lot of new ground to cover, so let's get started! 
 
 ## Choose your track
@@ -46,43 +48,30 @@ If you already know which area of Mixed Reality you'd like to explore, feel free
 
 If you're new to mixed reality, it's important that you start from the bottom and work your way up through its core concepts, experiences, and capabilities. We've created a sequential journey of sorts to help you set a firm foundation for designing and developing your own ideas in Mixed Reality.
 
-### 1. What is mixed reality?
+### What is mixed reality?
 
-![Virtual hummingbird with human hand](images/01_MixedReality.png)
+![What can you do with mixed reality?](images/HLS19_remoteAssistHologram_001.jpg)
+
+Before you dive into application design or development, you need to understand what we mean by Mixed Reality. This section is designed to get you acquainted with the Mixed Reality spectrum, including the range of environmental input, perceptual changes, design challenges, and devices that come with it. 
 
 |  Concept  |  Outcome  |
 | --- | --- |
 | [Mixed reality is a spectrum](../discover/mixed-reality.md) | Mixed reality blends the physical with the digital, the next evolution in human, computer, and environment interactions |
 | [What is a hologram?](../discover/hologram.md) | HoloLens lets you create holograms, which are objects made of light and sound that appear in the world around you, just as if they were real objects. Holograms respond to your gaze, gestures and voice commands, and can interact with real-world surfaces around you |
+| [Expand your design process](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Expand your design mindset with spatial thinking, bodystorming, and acting when creating your immersive experiences  |
 
-### 2. What can you do with mixed reality?
-
-![What can you do with mixed reality?](images/HLS19_remoteAssistHologram_001.jpg)
-
-|  Concept  |  Outcome  |
-| --- | --- |
-| [A new vision for work](https://dynamics.microsoft.com//mixed-reality/overview/) | Explore a range of products that can empower employees and optimize operations with Dynamics 365, including [Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview), [Layout](https://docs.microsoft.com/dynamics365/mixed-reality/layout/) and [Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/) |
-| [The pursuit of more personal computing](../out-of-scope/case-study-the-pursuit-of-more-personal-computing.md) | The solutions these products provide reveal what’s necessary to advance the future. With mixed reality, this is especially true: Meaningful insight comes from getting hands-on with real work — real devices, real customers, real problems |
-
-### 3. What are the capabilities of HoloLens?
-
-![HoloLens exploded view](images/HoloLens2_ExplodedView_8k.png)
-
-|  Concept  |  Outcome  |
-| --- | --- |
-| [Immersive, ergonomic, instinctual and untethered](https://www.microsoft.com//hololens/hardware) | HoloLens 2 offers the most comfortable and immersive mixed reality experience available, with industry-leading solutions that deliver value in minutes—all enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft |
-
-### 4. What are the core concepts of an experience?
+### Explore core concepts of Mixed Reality experiences
 
 ![core experiences](images/text_in_unity_viewingangle.jpg)
 
+Now that you're Mixed Reality foundation is established, it's important to internalize the core concepts of the Mixed Reality experiences you'll be creating. Pay special attention to user comfort and scale to make the immersion as complete as possible.
+
 |  Concept  |  Outcome  |
 | --- | --- |
-| [Keep the user comfortable - (Comfort)](../design/comfort.md) | To ensure maximum comfort on head-mounted displays, it’s important for designers and developers to create and present content in a way that mimics how these cues operate in the natural world |
-| [How the user sees the world - (Holographic frame)](../design/holographic-frame.md) | Users see the world of mixed reality through a rectangular viewport, powered by their headset. On the HoloLens, this rectangular area is called the holographic frame and allows users to see digital content overlaid onto the real world around them |
-| [Making holographic objects feel real - (Spatial mapping)](../design/spatial-mapping.md) | Spatial mapping makes it possible to place objects on real surfaces. This helps anchor objects in the user's world and takes advantage of real world depth cues |
-| [Suggesting the scale of an object - (Scale)](../design/scale.md) | A key to displaying content that looks realistic in holographic form is to mimic the visual statistics of the real world as closely as possible. This means incorporating as many of the visual cues as we can that help us (in the real world) understand where objects are, how big they are, and what they’re made of |
-
+| [Keeping users comfortable](../design/comfort.md) | To ensure maximum comfort on head-mounted displays, it’s important for designers and developers to create and present content in a way that mimics how these cues operate in the natural world |
+| [Holographic frame](../design/holographic-frame.md) | Users see the world of mixed reality through a rectangular viewport, powered by their headset. On the HoloLens, this rectangular area is called the holographic frame and allows users to see digital content overlaid onto the real world around them |
+| [Spatial mapping](../design/spatial-mapping.md) | Spatial mapping makes it possible to place objects on real surfaces. This helps anchor objects in the user's world and takes advantage of real world depth cues |
+| [Staying true to scale](../design/scale.md) | A key to displaying content that looks realistic in holographic form is to mimic the visual statistics of the real world as closely as possible. This means incorporating as many of the visual cues as we can that help us (in the real world) understand where objects are, how big they are, and what they’re made of |
 
 ## See how industry partners are using mixed reality
 
@@ -124,15 +113,21 @@ If you're new to mixed reality, it's important that you start from the bottom an
 
 ---
 
+### Explore HoloLens and Dynamics 365
+
+![HoloLens exploded view](images/HoloLens2_ExplodedView_8k.png)
+
+If you're curious to see how the different Mixed Reality hardware and services work, check out the links below. These links will navigate you to different parts of the Microsoft documentation, but we recommend bookmarking and returning here to continue on your design and development journey.
+
+|  Concept  |  Outcome  |
+| --- | --- |
+| [HoloLens hardware](https://www.microsoft.com//hololens/hardware) | HoloLens 2 offers the most comfortable and immersive mixed reality experience available, with industry-leading solutions that deliver value in minutes—all enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft |
+| [A new vision of work](https://dynamics.microsoft.com/mixed-reality/overview/) | Explore a range of products that can empower employees and optimize operations with Dynamics 365, including [Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview), [Layout](https://docs.microsoft.com/dynamics365/mixed-reality/layout/) and [Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/). Meaningful insight comes from getting hands-on with real work, real devices, and real users |
+
 ## What would you like to do next?
 
 
 :::row:::
-    :::column:::
-       [![Try it out](images/icon-hololensuser.jpg)](https://www.microsoft.com//windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)<br>
-        **[Try out mixed reality](https://www.microsoft.com//windows/windows-mixed-reality?icid=SSM_Search_Promo_XCat_WindowsMixedReality_CTA1#storelocator)**<br>
-        Get a demo of Mixed Reality and HoloLens at your local Microsoft Store.
-    :::column-end:::
     :::column:::
         [![Become a creator](images/icon-design.png)](../design/design.md)<br>
         **[Become a creator](../design/design.md)**<br>
@@ -156,6 +151,10 @@ If you're new to mixed reality, it's important that you start from the bottom an
 <br>
 
 
-
 >[!IMPORTANT]
 >All mixed reality development materials are provided on this site for your reference only. Your application, its usage, and its effect on end users is your sole responsibility as the application developer, including ensuring that your app does not cause discomfort, injury, or any other harm to the end user, and including appropriate warnings and disclaimers. You need to at all times take the appropriate steps in the development and publishing of your application to ensure that your application is safe, and that you meet all obligations in your [App Developer Agreement with Microsoft](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement).
+
+## See also
+* [Immersive headset hardware details](immersive-headset-hardware-details.md)
+* [Community resources](community.md)
+* [VR enthusiast guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/)
