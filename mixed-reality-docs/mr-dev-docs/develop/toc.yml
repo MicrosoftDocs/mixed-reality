@@ -210,7 +210,7 @@
         href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
       - name: Mixed Reality native objects in Unity
         href: unity/unity-xrdevice-advanced.md
-      - name: Using Vuforial with Unity 
+      - name: Using Vuforia with Unity 
         href: unity/vuforia-development-overview.md
   - name: Immersive VR
     items:
