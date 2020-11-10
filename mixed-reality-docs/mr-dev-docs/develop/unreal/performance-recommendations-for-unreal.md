@@ -38,7 +38,7 @@ You can find each of the following settings in **Edit > Project Settings**.
 4. Ensure **Default** or **D3D12** is the selected **Default RHI** when using OpenXR.
     * Selecting **D3D11** will have a negative performance impact due to the platform performing an additional render pass. **D3D12** should provide rendering performance improvements besides avoiding the additional render pass.
 
-![Default RHI](images/unreal/performance-recommendations-img-08.png)
+![Default RHI](images/unreal/performance-recommendations-img-09.png)
 
 5. Disabling Vertex Fogging: 
     * Vertex fogging applies fog calculations at each vertex in a polygon and then interpolates the results across the face of the polygon. If your game does not use fog, you should choose this setting to disable fog to increase shading performance.
