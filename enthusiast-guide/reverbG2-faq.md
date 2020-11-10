@@ -69,3 +69,16 @@ While many games will work immediately with HP Motion Controllers, some games ha
 - Wrong model displayed: fixing this requires a game update. Usually, this does not block any features of the game but might lead to confusion or even visual artifacts.
 - Dependency on the Touchpad or more generally on the controller's input layout. SteamVR allows to create custom bindings to help circumvent this kind of issue:
     - Windows Mixed Reality for SteamVR includes custom bindings for some games. These bindings are used automatically when the game is started, and no user action is needed.
+
+## My SteamVR games don't appear to work correctly with my HP Motion controllers
+
+While developers are working to update their games for HP Motion Controller compatibility, we have provided custom controller bindings for many of the most popular games on Steam. With "Windows Mixed Reality for SteamVR" fully updated to version 1.2.444, these bindings should be picked up automatically when your game is running. However, if your game does not seem to register your actions at this time, you can manually search for custom binding profiles using the SteamVR Settings menu.
+To do this
+
+- Open the SteamVR menu by pressing the right motion controller's menu button
+- Select the "Settings" icon in the bottom-right corner of the SteamVR menu
+- Select the "Controllers" tab
+- Select the "Manage Controller Bindings" option
+
+From here you can change your active controller binding to "Custom" which will open up the option to try community-shared game bindings.
+If no custom game bindings have been shared for this game yet (or if you are not fully satisfied with the ones you've tried), you can also create your own custom game bindings, and even help the rest of the community by sharing them after a few game sessions.
