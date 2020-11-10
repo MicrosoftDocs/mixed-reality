@@ -37,12 +37,9 @@ If you already know which area of Mixed Reality you'd like to explore, feel free
     :::column-end:::
 :::row-end:::
 
-
 <br>
 
 ---
-
-<br>
 
 ## Understand the basics
 
@@ -60,18 +57,9 @@ Before you dive into application design or development, you need to understand w
 | [What is a hologram?](../discover/hologram.md) | HoloLens lets you create holograms, which are objects made of light and sound that appear in the world around you, just as if they were real objects. Holograms respond to your gaze, gestures and voice commands, and can interact with real-world surfaces around you |
 | [Expand your design process](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Expand your design mindset with spatial thinking, bodystorming, and acting when creating your immersive experiences  |
 
-### Explore core concepts of Mixed Reality experiences
+<br>
 
-![core experiences](images/text_in_unity_viewingangle.jpg)
-
-Now that you're Mixed Reality foundation is established, it's important to internalize the core concepts of the Mixed Reality experiences you'll be creating. Pay special attention to user comfort and scale to make the immersion as complete as possible.
-
-|  Concept  |  Outcome  |
-| --- | --- |
-| [Keeping users comfortable](../design/comfort.md) | To ensure maximum comfort on head-mounted displays, it’s important for designers and developers to create and present content in a way that mimics how these cues operate in the natural world |
-| [Holographic frame](../design/holographic-frame.md) | Users see the world of mixed reality through a rectangular viewport, powered by their headset. On the HoloLens, this rectangular area is called the holographic frame and allows users to see digital content overlaid onto the real world around them |
-| [Spatial mapping](../design/spatial-mapping.md) | Spatial mapping makes it possible to place objects on real surfaces. This helps anchor objects in the user's world and takes advantage of real world depth cues |
-| [Staying true to scale](../design/scale.md) | A key to displaying content that looks realistic in holographic form is to mimic the visual statistics of the real world as closely as possible. This means incorporating as many of the visual cues as we can that help us (in the real world) understand where objects are, how big they are, and what they’re made of |
+---
 
 ## See how industry partners are using mixed reality
 
@@ -113,7 +101,7 @@ Now that you're Mixed Reality foundation is established, it's important to inter
 
 ---
 
-### Explore HoloLens and Dynamics 365
+### Explore HoloLens and Mixed Reality services
 
 ![HoloLens exploded view](images/HoloLens2_ExplodedView_8k.png)
 
@@ -122,10 +110,10 @@ If you're curious to see how the different Mixed Reality hardware and services w
 |  Concept  |  Outcome  |
 | --- | --- |
 | [HoloLens hardware](https://www.microsoft.com//hololens/hardware) | HoloLens 2 offers the most comfortable and immersive mixed reality experience available, with industry-leading solutions that deliver value in minutes—all enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft |
-| [A new vision of work](https://dynamics.microsoft.com/mixed-reality/overview/) | Explore a range of products that can empower employees and optimize operations with Dynamics 365, including [Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview), [Layout](https://docs.microsoft.com/dynamics365/mixed-reality/layout/) and [Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/). Meaningful insight comes from getting hands-on with real work, real devices, and real users |
+| [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | Explore a range of products that can empower employees and optimize operations with Dynamics 365, including [Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview), [Layout](https://docs.microsoft.com/dynamics365/mixed-reality/layout/) and [Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/). Meaningful insight comes from getting hands-on with real work, real devices, and real users |
+| [Azure Cloud Services](../develop/mixed-reality-cloud-services.md) | Build compelling immersive experiences on a variety of platforms by adding spatial awareness, spatial anchors, and complex 3D model rendering |
 
 ## What would you like to do next?
-
 
 :::row:::
     :::column:::
