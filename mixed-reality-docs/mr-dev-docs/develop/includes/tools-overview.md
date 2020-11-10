@@ -62,7 +62,7 @@ Possible solutions include:
 
 ##### I can't deploy over USB
 
-If you're not able to deploy an application directly over USB, make sure you've met all the installation requirements listed above and follow our [step-by-step tutorial](unity/tutorials/mr-learning-base-02.md#building-your-application-to-your-hololens-2).
+If you're not able to deploy an application directly over USB, make sure you've met all the installation requirements listed above and follow our [step-by-step tutorial](../unity/tutorials/mr-learning-base-02.md#building-your-application-to-your-hololens-2).
 
 #### Immersive (VR) headset requirements
 
@@ -175,7 +175,7 @@ Possible solutions include:
 
 ##### I can't deploy over USB
 
-If you're not able to deploy an application directly over USB, make sure you've met all the installation requirements listed above and follow our [step-by-step tutorial](unreal/tutorials/unreal-uxt-ch6.md).
+If you're not able to deploy an application directly over USB, make sure you've met all the installation requirements listed above and follow our [step-by-step tutorial](../unreal/tutorials/unreal-uxt-ch6.md).
 
 #### Immersive (VR) headset requirements
 
