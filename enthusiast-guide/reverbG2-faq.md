@@ -64,11 +64,7 @@ There are a few reasons why your system is not able to render at the native reso
 
 ## Why are my HP Motion Controller models not showing up correctly in a game
 
-While many games will work immediately with HP Motion Controllers, some games have dependencies on existing controllers features and might therefore have some issues:
-
-- Wrong model displayed: fixing this requires a game update. Usually, this does not block any features of the game but might lead to confusion or even visual artifacts.
-- Dependency on the Touchpad or more generally on the controller's input layout. SteamVR allows to create custom bindings to help circumvent this kind of issue:
-    - Windows Mixed Reality for SteamVR includes custom bindings for some games. These bindings are used automatically when the game is started, and no user action is needed.
+While most games do not display the controllers or use the models installed by the driver, some games use their own versions of the controller models, either to customize them or to display contextual help for the available inputs. Usually, this does not block any features of the games but might lead to confusion or even visual artifacts. This can only be fixed with an update of the game itself.
 
 ## My SteamVR games don't appear to work correctly with my HP Motion controllers
 
