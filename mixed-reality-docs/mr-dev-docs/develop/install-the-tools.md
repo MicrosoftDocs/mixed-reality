@@ -38,19 +38,3 @@ Now that you have your Windows 10, Visual Studio, and Windows 10 SDK ready to go
 
 [!INCLUDE[](includes/tools-overview.md)]
 
-## HoloLens troubleshooting
-
-### Setting Developer Mode is grayed out
-
-If you're running into issues enabling Developer Mode on your device you might not be the [device owner](https://docs.microsoft.com/hololens/security-adminless-os). In multi-user mode, the person who uses the device first is the device owner - any subsequent users won't have the required permissions to enable Developer Mode or other configuration changes. 
-
-Possible solutions include:
-
-* Having the device owner turn Developer Mode on before passing the device to other users or developers
-* Suggest that your IT / Intune Admin enables ApplicationManagement/AllowDeveloperUnlock for the specific device
-* Use the [Advanced Recovery Companion (ARC)](https://docs.microsoft.com/hololens/hololens-recovery)
-
-
-### I can't deploy over USB
-
-If you're not able to deploy an application directly over USB, check that you've met the listed [requirements]().
