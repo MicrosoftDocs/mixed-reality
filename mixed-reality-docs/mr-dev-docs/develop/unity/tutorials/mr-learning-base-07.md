@@ -1,6 +1,6 @@
 ---
 title: Getting started tutorials - 7. Interacting with 3D objects
-description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to create a mixed reality application.
+description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to interact with 3D objects.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
@@ -48,7 +48,7 @@ In the Hierarchy window, expand the RoverExplorer > **RoverParts** object and se
 * **NearInteractionGrabbable** component
 * **Part Assembly Controller (Script)** component
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-1.png)
+![Unity with RoverAssembly and all rover part objects selected and components added](images/mr-learning-base/base-07-section1-step1-1.png)
 
 > [!TIP]
 > To select multiple objects that are not next to each other, press-and-hold the CTRL key while using the mouse to select any object.
@@ -63,14 +63,14 @@ With all the rover part objects and the RoverAssembly object still selected, in 
 
 * From the **Two Handed Manipulation Type** dropdown, uncheck the Scale, so only **Move** and **Rotate** is enabled
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-2.png)
+![Unity with Two Handed Manipulation Type configured](images/mr-learning-base/base-07-section1-step1-2.png)
 
 > [!NOTE]
 > At this point, you have enabled object manipulation for all the rover part objects and the RoverAssembly object.
 
 In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **StandardAssets** > **Audio** folder to locate the audio clips:
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-3.png)
+![Unity Project window with Audio folder selected](images/mr-learning-base/base-07-section1-step1-3.png)
 
 In the Hierarchy window, reselect all the **rover part objects**, then in the Inspector window, use the **Add Component** button to add the **Audio Sources** component and configure it as follows:
 
@@ -78,13 +78,13 @@ In the Hierarchy window, reselect all the **rover part objects**, then in the In
 * Uncheck the **Play On Awake** checkbox
 * Change **Spatial Blend** to 1
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-4.png)
+![Unity with all rover parts selected and Audio Source component added and configured](images/mr-learning-base/base-07-section1-step1-4.png)
 
 In the Hierarchy window, expand the RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** object to reveal all of the placement hint objects, then select the first rover part, RoverParts > **Camera_Part**, and configure the **Part Assembly Controller (Script)** component as follows:
 
 * Assign the **Camera_PlacementHint** object to the **Location To Place** field
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-5.png)
+![Unity with Camera_Part PartAssemblyController component configured](images/mr-learning-base/base-07-section1-step1-5.png)
 
 **Repeat** this step for each of the remaining rover part objects and the RoverAssembly object to configure the **Part Assembly Controller (Script)** component as follows:
 
@@ -99,11 +99,11 @@ In the Hierarchy window, select the RoverExplorer > Buttons > **Reset** button o
 * Assign the **RoverAssembly** object to the **None (Object)** field
 * From the **No Function** dropdown, select **PartAssemblyController** > **ResetPlacement ()** to set this function as the action to be executed when the event is triggered
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-6.png)
+![Unity with Reset button object OnClick event configured](images/mr-learning-base/base-07-section1-step1-6.png)
 
 If you now enter Game mode, you can use near or far interaction to place the rover parts on to the Rover. Once the part is close to the corresponding placement hint, it will snap into place and become part of the Rover. To reset the placements, you can press the Reset button:
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-7.png)
+![Unity Play mode split view with Reset button being pressed](images/mr-learning-base/base-07-section1-step1-7.png)
 
 To learn more about the Object Manipulator component and its associated properties, you can visit the [Object Manipulator](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
@@ -120,7 +120,7 @@ In the Hierarchy window, select the **RoverExplorer** object, then in the Inspec
 
 Then **uncheck** the checkbox next to both components to make them **disabled** by default:
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-1.png)
+![Unity with RoverExplorer object selected and components added and disabled](images/mr-learning-base/base-07-section2-step1-1.png)
 
 > [!NOTE]
 > The Bounding Box visualization is created at runtime and, therefore, not visible before you enter Game mode.
@@ -140,7 +140,7 @@ In the Hierarchy window, expand the Menu > **ButtonCollection** object to reveal
 * Verify that the argument checkbox is **checked**
 * Leave the **Icon** as the 'cube with bounding box' icon
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-2.png)
+![Unity with BoundingBox_Enable button object selected and Button Config Helper component configured](images/mr-learning-base/base-07-section2-step1-2.png)
 
 Rename the forth and last button to **BoundingBox_Disable**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:
 
@@ -154,11 +154,11 @@ Rename the forth and last button to **BoundingBox_Disable**, then in the Inspect
 * Verify that the argument checkbox is **unchecked**
 * Change the **Icon** to the 'cube with bounding box" icon
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-3.png)
+![Unity with BoundingBox_Disable button object selected and Button Config Helper component configured](images/mr-learning-base/base-07-section2-step1-3.png)
 
 If you now enter Game mode and enable the Bounding Box by clicking the Enable button, you can use near or far interaction to move, rotate, and scale the Bounding Box, and use the Disable button to disable the Bounding Box again:
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-4.png)
+![Unity Play mode split view with Bounding Box being manipulated](images/mr-learning-base/base-07-section2-step1-4.png)
 
 To learn more about the Bounding Box component and its associated properties, you can visit the [Bounding box](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 

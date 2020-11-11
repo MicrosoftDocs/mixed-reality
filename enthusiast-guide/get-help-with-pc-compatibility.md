@@ -68,7 +68,7 @@ If you run into problems running Windows Mixed Reality, try the following:
 
 ### This PC doesn't have Bluetooth 4.0 for controllers
 
-Bluetooth 4.0 is required for mixed reality motion controllers on some headsets. You can still use Windows Mixed Reality with an Xbox controller or with a mouse and keyboard, or you can use a USB Bluetooth adapter to connect motion controllers to your PC. [See recommended adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+2018 and newer Windows Mixed Reality headsets already have the built in Bluetooth, but if you have older headset, bluetooth 4.0 is required for mixed reality motion controllers. You can still use Windows Mixed Reality with an Xbox controller or with a mouse and keyboard, or you can use a USB Bluetooth adapter to connect motion controllers to your PC. [See recommended adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 
 ### Depending on your headset, you may need a Bluetooth adapter to use motion controllers
 
@@ -78,21 +78,13 @@ Some headsets have Bluetooth built in so controllers can pair directly to the he
 
 A self-powered USB 3.0 port is needed to connect a Windows Mixed Reality headset. Connect a powered USB 3.0 hub to the PC and use that to connect your headset.
 
-### This PC should work, but you'll have the best experience with a high-performance Intel® processor
-
-This PC should work, but a high-performance Intel processor will provide the best experience. We recommend an 8th Gen Intel® Core™ or 7th Gen Intel® Core™ i5 processor.
-
-## Can't run Windows Mixed Reality
-
-If you can't run Windows Mixed Reality, refer to the list of messages you might see and possible solutions below:
-
 ### This PC's graphics card won't work with Windows Mixed Reality
 
 This PC's graphics card is not compatible with Windows Mixed Reality. You'll need to add a [compatible graphics card](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) or switch to a [compatible PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).
 
 ### This PC's graphics driver won't work with Windows Mixed Reality
 
-This PC's graphics driver won't work with Windows Mixed Reality. Try downloading a new graphics driver using Windows Update by selecting **Start > Settings > Update & security > Check for updates** or go to your PC manufacturer or graphics card manufacturer's website. 
+This PC's graphics driver won't work with Windows Mixed Reality. Try downloading a new graphics driver using Windows Update by selecting **Start > Settings > Update & security > Check for updates** or go to your PC manufacturer or graphics card manufacturer's website.
 
 > [!div class="nextstepaction"]
 > [Check for updates](ms-settings:windowsupdate?activationSource=SMC-Article-4045777)
@@ -101,7 +93,7 @@ If that doesn't work, you'll need to add a [compatible graphics card](windows-mi
 
 ### This PC's processor won't work with Windows Mixed Reality
 
-This PC's processor doesn't support AVX/Popcnt instructions. To run Windows Mixed Reality, you'll need to replace it with a [compatible graphics card](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) or switch to a [compatible PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).
+This PC's processor doesn't support AVX/Popcnt instructions. To run Windows Mixed Reality, you'll need to replace it with a [compatible graphics card](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) or switch to a compatible PC.
 
 ### This PC doesn't have enough free disk space to run Windows Mixed Reality
 
@@ -121,7 +113,7 @@ You'll need a USB 3.0 port to connect a Windows Mixed Reality headset. If you're
 
 ### You can't run this app via remote desktop
 
-To use Windows Mixed Reality, you need a PC with a monitor connected. If you're using a virtual machine or don't have a monitor, try using a virtual display adapter. This is a device that plugs into the PC's DisplayPort and emulates a computer display. 
+To use Windows Mixed Reality, you need a PC with a monitor connected. If you're using a virtual machine or don't have a monitor, try using a virtual display adapter. This is a device that plugs into the PC's DisplayPort and emulates a computer display.
 
 ## Getting the best performance
 

@@ -18,6 +18,11 @@ Learn more about the [Windows Mixed Reality and the new Microsoft Edge](https://
 
 ## Viewing WebXR
 
+> [!IMPORTANT]
+> Microsoft Edge (Legacy) only supports WebVR, a deprecated API that is not available in current browsers. However, the new **[Chromium-based Edge browser](../../whats-new/new-microsoft-edge.md)** supports WebXR and is available for VR prototyping in Windows Mixed Reality. WebVR will not be available in the new Chromium-based Edge browser.
+> 
+> If you're looking for a way to prototype WebXR on HoloLens 2 today, check out [Firefox Reality](https://mixedreality.mozilla.org/firefox-reality/).
+
 To test if your browser supports WebXR, you can navigate to [WebXR Samples](https://immersive-web.github.io/webxr-samples/) in your browser.
 
 ## See Also

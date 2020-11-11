@@ -1,6 +1,6 @@
 ---
 title: Multi-user capabilities tutorials - 3. Connecting multiple users
-description: Complete this course to learn how to implement multi-user shared experiences within a HoloLens 2 application.
+description: Complete this course to learn how to connect multiple users in a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
@@ -26,13 +26,13 @@ In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCa
 * **NetworkLobby** prefab
 * **SharedPlayground** prefab
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section1-step1-1.png)
+![Unity with newly added NetworkLobby and SharedPlayground prefabs selected](images/mr-learning-sharing/sharing-03-section1-step1-1.png)
 
 In the Project window, navigate to the **Assets** > **MRTK.Tutorials.AzureSpatialAnchors** > **Prefabs** folder, then click-and-drag the following prefab into the Hierarchy window to add it to your scene:
 
 * **DebugWindow** prefab
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section1-step1-2.png)
+![Unity with newly added DebugWindow prefab selected](images/mr-learning-sharing/sharing-03-section1-step1-2.png)
 
 ## Creating the user prefab
 
@@ -44,23 +44,23 @@ In the Hierarchy window, right-click on an empty area and select **Create Empty*
 
 * Ensure the Transform **Position** is set to X = 0, Y = 0, Z = 0:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step1-1.png)
+![Unity with newly created PhotonUser object selected](images/mr-learning-sharing/sharing-03-section2-step1-1.png)
 
 In the Hierarchy window, select the **PhotonUser** object, then in the Inspector window, use the **Add Component** button to add the **Photon User (Script)** component to the PhotonUser object:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step1-2.png)
+![Unity with Photon User component added](images/mr-learning-sharing/sharing-03-section2-step1-2.png)
 
 In the Inspector window, use the **Add Component** button to add the **Generic Net Sync (Script)** component to the PhotonUser object and configure it as follows:
 
 * Check the **Is User** checkbox
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step1-3.png)
+![Unity with Generic Net Sync component added and configured](images/mr-learning-sharing/sharing-03-section2-step1-3.png)
 
 In the Inspector window, use the **Add Component** button to add the **Photon View (Script)** component to the PhotonUser object and configure it as follows:
 
 * To the **Observed Components** field, assign the **Generic Net Sync (Script)** component
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step1-4.png)
+![Unity with Photon View component added and configured](images/mr-learning-sharing/sharing-03-section2-step1-4.png)
 
 ### 2. Create the avatar
 
@@ -72,21 +72,21 @@ Then, in the Hierarchy window, right-click on the **PhotonUser** object and sele
 * Change the Transform **Scale** to a suitable size, for example, X = 0.15, Y = 0.15, Z = 0.15
 * To the MeshRenderer > Materials > **Element 0** field, assign the **MRTK_Standard_White** material
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step2-1.png)
+![Unity with newly created and configured avatar sphere](images/mr-learning-sharing/sharing-03-section2-step2-1.png)
 
 ### 3. Create the prefab
 
 In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources** folder:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step3-1.png)
+![Unity Project window with Resource folder selected](images/mr-learning-sharing/sharing-03-section2-step3-1.png)
 
 With the Resources folder still selected, **click-and-drag** the **PhotonUser** object from the Hierarchy window into the **Resources** folder to make the PhotonUser object a prefab:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step3-2.png)
+![Unity with newly created PhotonUser prefab selected](images/mr-learning-sharing/sharing-03-section2-step3-2.png)
 
 In the Hierarchy window, right-click on the **PhotonUser** object and select **Delete** to remove it from the scene:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step3-3.png)
+![Unity with newly created PhotonUser prefab object removed from scene](images/mr-learning-sharing/sharing-03-section2-step3-3.png)
 
 ## Configuring PUN to instantiate the user prefab
 
@@ -98,13 +98,13 @@ In the Hierarchy window, expand the **NetworkLobby** object and select the **Net
 
 * To the **Photon User Prefab** field, assign the **PhotonUser** prefab from the Resources folder
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section3-step1-1.png)
+![Unity with Photon Room component partially configured](images/mr-learning-sharing/sharing-03-section3-step1-1.png)
 
 ## Trying the experience with multiple users
 
 If you now build and deploy the Unity project to your HoloLens, then, back in Unity, enter Game mode while the app is running on your HoloLens, you will see the HoloLens user avatar move when you move your head (HoloLens) around:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section4-step1-1.gif)
+![Animation showing Unity with networked users](images/mr-learning-sharing/sharing-03-section4-step1-1.gif)
 
 > [!TIP]
 > For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Building your app to your HoloLens 2](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions.

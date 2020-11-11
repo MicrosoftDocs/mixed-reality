@@ -21,6 +21,7 @@ The engineering team uses the same mechanism internally for tracking and fixing 
 ## Before you file feedback
 
 Please make sure your PC is set to provide us with full data for feedback and diagnostics. Here's how to double check the setting on your PC before filing feedback:
+
 1. Open the Windows **Settings** app.
 2. Click on **Privacy**.
 3. Go to **Feedback & diagnostics** on the left pane (note that this has been renamed to **Diagnotics & feedback** in recent Windows Insider builds of Windows.
@@ -28,6 +29,7 @@ Please make sure your PC is set to provide us with full data for feedback and di
 5. Be sure to restart your PC and repeat the steps to reproduce your issue before filing feedback.
 
 ## How to file feedback for Windows Mixed Reality immersive headsets on PC
+
 1. Ensure you have the immersive headset connected to your PC.
 2. Launch **Feedback Hub** on desktop with the HMD connected.
 3. Go to **Feedback Tab** on the left pane. ![Feedback Tab](images/feedback1.png) 
@@ -47,13 +49,12 @@ Please make sure your PC is set to provide us with full data for feedback and di
    | Set up           | Anything that is preventing you from setting up the device.                           |
    | All other issues | Anything else.                                                                        |
 
-
 9. To help us identify and fix the bug faster, capturing traces and video is extremely helpful. To start collecting traces, click on **Start capture**. This will begin collecting traces and a video capture of your mixed reality scenario.![Start Capture](images/feedback4.png)
 10. Leave the Feedback app and run through the broken scenario. Do not close the Feedback Hub app at this point.
 11. After you are done with your scenario, go back to the feedback app and click **Stop Capture**. Once you do that, you should see that a file containing the traces has been added.
 12. Click **Submit**.![Submit](images/feedback5.png)
 
-This will lead you to the "Thank You" page. At this point, your feedback has been successfully submitted. 
+This will lead you to the "Thank You" page. At this point, your feedback has been successfully submitted.
 
 After you submit feedback, to easily direct other people (e.g. co-workers, Microsoft staff, [forum](https://forums.hololens.com/) readers, etc.) to the issue go to **Feedback > My Feedback**, click on the issue, and use the **Share** icon to get a shortened URL you can give to others to upvote, or escalate.
 
@@ -62,12 +63,10 @@ After you submit feedback, to easily direct other people (e.g. co-workers, Micro
 >    * Have a minimum of 3GB free disk space available on the main drive of the device.
 >    * Ensure that a non-metered network is available in order to upload cabs.
 
-
 ## After filing feedback
 
 Make sure to check back regularly with Feedback Hub after filing feedback! In most cases, we'll try to respond as soon as we can. If you're not already in touch with us when you file feedback, the only way we can reach out to you with troubleshooting suggestions or more questions is via the comments system in Feedback Hub. Unfortunately, at this time, notifications are not sent to you outside of Feedback Hub.
 
-
 ## See also
-* [Troubleshooting](troubleshooting-windows-mixed-reality.md)
 
+* [Troubleshooting](troubleshooting-windows-mixed-reality.md)
