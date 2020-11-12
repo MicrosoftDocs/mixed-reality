@@ -30,27 +30,27 @@ Coming soon
 **All times are Japan Standard Time (UTC+9)** 
 
 
+
 ### December 16th
 |**Time**|**Session Title**|**Speaker**|**Language**|**Level**|
 |---------|---------|---------|---------|---------|
 |10:00am - 10:50am|Opening Keynote|TBD|JA/EN|N/A|
 |10:50am - 11:00am|**Break**||||
-|11:00am - 11:25am|*Session 1* What is Mixed Reality? What can you do with HL2?  MR tech stack|TBD|JA|100|
-|11:30am - 11:55am|*Session 2* Japan commercial market momentum update with customers and partners Case studies|TBD|JA|200|
-|12:00pm - 12:50pm|*Lunch Session* Panel: Interactive free discussion, Q and A, MRTK + Oculus Quest 2|TBD|JA|200|
+|11:00am - 11:25am|*Session 1* What is Mixed Reality? What can you do with HL2?  MR tech stack|Atsushi Suzuki|JA|100|
+|11:30am - 11:55am|*Session 2* Japan commercial market momentum update with customers and partners Case studies|Tetsu Muranaka|JA|200|
+|12:00pm - 12:50pm|*Lunch Session* Panel: Interactive free discussion, Q and A, MRTK + Oculus Quest 2|Madoka Chiyoda + Microsoft MVPs|JA|200|
 |12:50pm - 1:00pm|**Break**||||
-|1:00pm - 1:25pm|*Session 3* Overview of HoloLens 2 development|TBD|JA|200|
-|1:30pm - 1:55pm|*Session 4* HoloLens 2 & MRTK v2.5 (MRTK-Unity)|TBD|JA|300|
-|2:00pm - 2:20pm|*Session 5* Getting started with the HoloLens 2 and Unreal Engine (MRTK-Unreal)|TBD|EN|300|
-|2:30pm - 2:55pm|*Session 6* MR App design (Best practice for creating UI/UX for HL2 app)|TBD|EN|300|
+|1:00pm - 1:25pm|*Session 3* Overview of HoloLens 2 development|Madoka Chiyoda|JA|200|
+|1:30pm - 1:55pm|*Session 4* HoloLens 2 & MRTK v2.5 (MRTK-Unity)|Yoon Park|JA|300|
+|2:00pm - 2:20pm|*Session 5* Getting started with the HoloLens 2 and Unreal Engine (MRTK-Unreal)|Cameron Micka|EN|300|
+|2:30pm - 2:55pm|*Session 6* MR App design (Best practice for creating UI/UX for HL2 app)|Daniel Escudero|EN|300|
 |2:55pm - 3:15pm|**Break**||||
 |3:15pm - 3:40pm|*Session 7* Azure Object Anchors|TBD|EN|300|
-|3:45pm - 4:10pm|*Session 8* Azure Remote Rendering|TBD|JA|300|
+|3:45pm - 4:10pm|*Session 8* Azure Remote Rendering|Atsushi Suzuki|JA|300|
 |4:15pm - 4:40pm|*Session 9* Azure Spatial Anchors|TBD|EN|300|
-|4:45pm - 5:10pm|*Session 10* World Locking Tool|TBD|EN|300|
-|5:15pm - 5:40pm|*Session 11* Azure Kinect DK Deep Dive, Case study|TBD|JA|400|
-|5:45pm - 6:00pm|Closing|TBD|JA|NA|
-||||||
+|4:45pm - 5:10pm|*Session 10* Unity + PiXYZ|(Unity Japan)|JA|200|
+|5:15pm - 5:40pm|*Session 11* Azure Kinect DK Deep Dive, Case study|Shinji Chiba|JA|400|
+|5:45pm - 6:00pm|Closing|Madoka Chiyoda|JA|NA|
 
 #### Contributors (English subtitle reviewers)
 
