@@ -37,7 +37,7 @@ Once you have your device, you'll need to correctly set up and configure it for 
 
 |  Checkpoint  |  Outcome  |
 | --- | --- |
-| [Set up Windows Mixed Reality](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) | Get comfortable with your controllers, room boundaries, speech input, and Microsoft Edge on your new VR device |
+| [Set up Windows Mixed Reality](set-up-windows-mixed-reality.md) | Get comfortable with your controllers, room boundaries, speech input, and Microsoft Edge on your new VR device |
 | [Windows Mixed Reality setup FAQs](wmr-setup-faq.md) | Get answers and troubleshooting help with known issues when setting up Windows Mixed Reality |
 | [Health, safety, and comfort guidelines](wmr-health-safety-comfort.md) | Recommendations to stay safe while using Windows Mixed Reality before using your headset  |
 

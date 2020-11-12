@@ -31,13 +31,15 @@ There are a few things you can try if you feel that your display looks a little 
 
 ## I am getting a 7-14 “Something Went Wrong” error when I plug in my headset
 
+The 7-14 Something Went Wrong code means that some of the required USB2 components weren’t found.  Due to the extra-long cable of the HP Reverb G2, some of the tolerances for the USB signals are tighter.  This means that one port on your computer may work more reliably than another.
+
 If you are seeing a 7-14 “something went wrong” error, please try the following steps:
 
-- Make sure that you have the most recent drivers installed.
-- Try plugging the cable into a different USB-3.0 port.
-- Please use the USB C to A adapter included to try different ports.
-
-Try plugging the cable into a different USB Hub.  
+- Make sure that you have the most recent drivers installed for your headset and your USB controller.
+- Make sure you are using a Microsoft USB driver. There should be a “Microsoft” in the name of the "eXtensible Host Controller" device.
+- Try plugging the cable into a different USB-3.0 port on your computer. (Try USB Type-C and Type-A ports)
+- Use the included USB C to A adapter included to try different ports.
+- Try plugging the headset in through a USB Hub to your computer.
 
 > [!NOTE]
 > HP recommends using only USB controllers built into the motherboard with Reverb G2
