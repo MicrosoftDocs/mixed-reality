@@ -48,7 +48,8 @@ Coming soon
 |3:15pm - 3:40pm|*Session 7* Azure Object Anchors|TBD|EN|300|
 |3:45pm - 4:10pm|*Session 8* Azure Remote Rendering|Atsushi Suzuki|JA|300|
 |4:15pm - 4:40pm|*Session 9* Azure Spatial Anchors|TBD|EN|300|
-|4:45pm - 5:10pm|*Session 10* Unity + PiXYZ|(Unity Japan)|JA|200|
+<!--|4:45pm - 5:10pm|*Session 10* Unity + PiXYZ|(Unity Japan)|JA|200|-->
+|4:45pm - 5:10pm|*Session 10* TBD|TBD|JA|200|
 |5:15pm - 5:40pm|*Session 11* Azure Kinect DK Deep Dive, Case study|Shinji Chiba|JA|400|
 |5:45pm - 6:00pm|Closing|Madoka Chiyoda|JA|NA|
 
