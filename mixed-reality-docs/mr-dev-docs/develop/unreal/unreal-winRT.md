@@ -235,20 +235,25 @@ public ConsumeWinRT(ReadOnlyTargetRules target) : base(Target)
 ```
 
 3. Open **WinrtActor.h** and add two function definitions, one that a blueprint can use and another that uses the DLL code: 
+
 ```cpp
 public:
     UFUNCTION(BlueprintCallable)
-    static void OpenFileDialogue;
+    static void OpenFileDialogue();
 ```
 
 4. Open **WinrtActor.cpp** and load the DLL in BeginPlay: 
 
 ```cpp
-void AWinfrtActor::BeginPlay()
+void AWinrtActor::BeginPlay()
 {
-#if PLATFORM_HOLOLENS
-    HoloLensWinrtDLL::OpenFileDialogue();
-#endif
+	Super::BeginPlay();
+
+	const FString BinDir = FPaths::ProjectDir() / 
+		"ThirdParty" / "HoloLensWinrtDLL" / 
+		"arm64" / "Release" / "HoloLensWinrtDLL";
+	void * dllHandle = FPlatformProcess::GetDllHandle(
+		*(BinDir / "HoloLensWinrtDLL.dll"));
 }
 ``` 
 
