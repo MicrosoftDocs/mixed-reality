@@ -42,18 +42,17 @@ Coming soon
 |12:50pm - 1:00pm|**Break**||||
 |1:00pm - 1:25pm|*Session 3* Overview of HoloLens 2 development|Madoka Chiyoda|JA|200|
 |1:30pm - 1:55pm|*Session 4* HoloLens 2 & MRTK v2.5 (MRTK-Unity)|Yoon Park|JA|300|
-|2:00pm - 2:20pm|*Session 5* Getting started with the HoloLens 2 and Unreal Engine (MRTK-Unreal)|Cameron Micka|EN|300|
+|2:00pm - 2:25pm|*Session 5* Getting started with the HoloLens 2 and Unreal Engine (MRTK-Unreal)|Cameron Micka|EN|300|
 |2:30pm - 2:55pm|*Session 6* MR App design (Best practice for creating UI/UX for HL2 app)|Daniel Escudero|EN|300|
-|2:55pm - 3:15pm|**Break**||||
-|3:15pm - 3:40pm|*Session 7* Azure Object Anchors|TBD|EN|300|
-|3:45pm - 4:10pm|*Session 8* Azure Remote Rendering|Atsushi Suzuki|JA|300|
-|4:15pm - 4:40pm|*Session 9* Azure Spatial Anchors|TBD|EN|300|
-<!--|4:45pm - 5:10pm|*Session 10* Unity + PiXYZ|(Unity Japan)|JA|200|-->
-|4:45pm - 5:10pm|*Session 10* TBD|TBD|JA|200|
-|5:15pm - 5:40pm|*Session 11* Azure Kinect DK Deep Dive, Case study|Shinji Chiba|JA|400|
-|5:45pm - 6:00pm|Closing|Madoka Chiyoda|JA|NA|
+|2:55pm - 3:10pm|**Break**||||
+|3:10pm - 3:35pm|*Session 7* Azure Object Anchors|TBD|EN|300|
+|3:40pm - 4:05pm|*Session 8* Azure Remote Rendering|Atsushi Suzuki|JA|300|
+|4:10pm - 4:35pm|*Session 9* Azure Spatial Anchors|TBD|EN|300|
+|4:40pm - 5:05pm|*Session 10* TBD|TBD|JA|200|
+|5:10pm - 5:35pm|*Session 11* Azure Kinect DK Deep Dive, Case study|Shinji Chiba|JA|400|
+|5:35pm - 5:50pm|Closing|Madoka Chiyoda|JA|NA|
 
-#### Contributors (English subtitle reviewers)
+#### Contributors (Technical reviewers for the subtitles)
 
 Futo Horio ([@Futo_Horio](https://twitter.com/Futo_Horio)), Takahiro Miyaura ([@takabrz1](https://twitter.com/takabrz1)), Akihiro Ueyama ([@akihiro01051](https://twitter.com/akihiro01051)), Kaoru Nakamura ([@kaorun55](https://twitter.com/kaorun55)), Shinya Tachihara ([@deco_c_](https://twitter.com/deco_c_))
 
