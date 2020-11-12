@@ -255,6 +255,13 @@ void AWinrtActor::BeginPlay()
 	void * dllHandle = FPlatformProcess::GetDllHandle(
 		*(BinDir / "HoloLensWinrtDLL.dll"));
 }
+
+void AWinrtActor::OpenFileDialogue()
+{
+#if PLATFORM_HOLOLENS
+	HoloLensWinrtDLL::OpenFileDialogue();
+#endif
+}
 ``` 
 
 >[!CAUTION]
