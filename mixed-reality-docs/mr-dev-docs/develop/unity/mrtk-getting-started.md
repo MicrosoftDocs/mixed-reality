@@ -19,7 +19,7 @@ MRTK for Unity is an open-source, cross-platform development kit for mixed reali
 
 <br>
 
->[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Setting-up-your-HoloLens-2-development-environment/player?format=ny]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCG]
 
 See the [MRTK's documentation on GitHub](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html) to explore more. To get started, follow the steps on the [Installation guide](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html) page.
 
