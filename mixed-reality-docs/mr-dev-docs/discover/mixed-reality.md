@@ -114,10 +114,4 @@ If you're following the [discovery journey](get-started-with-mr.md) we've laid o
 > [!div class="nextstepaction"]
 > [What is a hologram?](hologram.md)
 
-## See also
-
-* [What is a hologram?](hologram.md)
-* [Understand the basics of Mixed Reality](get-started-with-mr.md#understand-the-basics)
-* [Start creating and prototyping](../design/design.md)
-* [Learn the tools and architecture](../develop/development.md)
 
