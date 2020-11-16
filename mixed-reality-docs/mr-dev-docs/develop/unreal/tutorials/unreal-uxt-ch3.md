@@ -67,6 +67,9 @@ At this point, the project still needs a player object. In Unreal, a **Pawn** re
 
 3. Click **Add Component > Camera** from the **Components** panel and name it **Camera**. This allows the player camera to move with the HoloLens 2 device.
 
+> [!NOTE]
+> Make sure that the **Camera** component is a direct child of the root (**CollisionComponent**).
+
 4. **Compile** and **Save** the Blueprint.
 
 With your work here done, return to the Main Window.
