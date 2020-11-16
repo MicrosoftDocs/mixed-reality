@@ -5,7 +5,7 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: mixed reality, Windows Mixed Reality, HoloLens, hologram, academy, tutorial
+keywords: mixed reality, Windows Mixed Reality, HoloLens, hologram, academy, tutorial, HoloLens, Mixed Reality Academy, unity, mixed reality headset, windows mixed reality headset, virtual reality headset, Windows 10
 ---
 
 # MR Basics 101: Complete project with device
