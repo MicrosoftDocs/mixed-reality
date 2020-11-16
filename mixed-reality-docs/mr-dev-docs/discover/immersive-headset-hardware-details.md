@@ -29,5 +29,3 @@ Developers can purchase any of the Windows Mixed Reality immersive headsets avai
 * [Mouse and keyboard](hardware-accessories.md)
 * [Voice](../design/voice-input.md) (via connected headset or microphone)
 
-## See also
-* [Install the tools](../develop/install-the-tools.md)
