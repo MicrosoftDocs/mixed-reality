@@ -7,7 +7,7 @@ ms.author: grbury
 ms.date: 07/31/2020
 ms.topic: overview
 ms.localizationpriority: high
-keywords: Mixed Reality, develop, development, HoloLens, unity, unreal, directx
+keywords: Mixed Reality, develop, development, HoloLens, unity, unreal, directx, mixed reality headset, windows mixed reality headset, virtual reality headset, what is virtual reality, what is augmented reality, virtual reality development, augmented reality development
 ---
 
 # Introduction to Mixed Reality development

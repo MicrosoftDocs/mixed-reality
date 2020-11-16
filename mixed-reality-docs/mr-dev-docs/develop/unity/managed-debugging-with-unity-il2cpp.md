@@ -5,7 +5,7 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: unity, visual studio, debugging, il2cpp
+keywords: unity, visual studio, debugging, il2cpp, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset, UWP
 ---
 
 # Managed debugging with Unity IL2CPP

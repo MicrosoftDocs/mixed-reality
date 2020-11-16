@@ -5,7 +5,7 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: mixed reality, Windows Mixed Reality, HoloLens, immersive, vr, mr, get started, hologram, academy, tutorial
+keywords: mixed reality, Windows Mixed Reality, HoloLens, immersive, vr, mr, get started, hologram, academy, tutorial, Mixed Reality Academy, unity, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 # MR Basics 100: Getting started with Unity

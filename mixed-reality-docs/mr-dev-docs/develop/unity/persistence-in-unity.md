@@ -5,9 +5,8 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: HoloLens, persistence, Unity
+keywords: HoloLens, persistence, Unity, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 
 # Persistence in Unity

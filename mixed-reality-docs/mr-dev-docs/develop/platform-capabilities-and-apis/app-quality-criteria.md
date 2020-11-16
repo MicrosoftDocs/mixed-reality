@@ -5,7 +5,7 @@ author: cjdgit
 ms.author: crderr
 ms.date: 03/21/2018
 ms.topic: article
-keywords: app quality criteria, mixed reality, mixed reality app
+keywords: app quality criteria, mixed reality, mixed reality app, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 

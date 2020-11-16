@@ -5,7 +5,7 @@ author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: azure, custom vision, object detection, mixed reality, academy, unity, tutorial, api, hololens
+keywords: azure, custom vision, object detection, mixed reality, academy, unity, tutorial, api, hololens, Windows 10, Visual Studio
 ---
 
 
