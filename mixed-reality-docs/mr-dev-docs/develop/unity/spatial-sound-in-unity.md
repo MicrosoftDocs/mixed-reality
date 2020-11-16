@@ -5,7 +5,7 @@ author: kegodin
 ms.author: kegodin
 ms.date: 11/07/2019
 ms.topic: article
-keywords: Unity, spatial sound, HRTF, room size
+keywords: Unity, spatial sound, HRTF, room size, mixed reality headset, windows mixed reality headset, virtual reality headset, MRTK, Mixed Reality Toolkit, spatializer, reverb
 ---
 
 

@@ -5,7 +5,7 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 08/27/2019
 ms.topic: article
-keywords: HoloLens, MRTK, Mixed Reality Toolkit, Windows Mixed Reality, design, sample app, controls
+keywords: HoloLens, MRTK, Mixed Reality Toolkit, Windows Mixed Reality, design, sample app, controls, mixed reality headset, windows mixed reality headset, virtual reality headset
 ms.localizationpriority: high
 ---
 

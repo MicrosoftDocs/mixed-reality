@@ -5,7 +5,7 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Voice input, KeywordRecognizer, GrammarRecognizer, microphone, dictation, voice
+keywords: Voice input, KeywordRecognizer, GrammarRecognizer, microphone, dictation, voice, mixed reality headset, windows mixed reality headset, virtual reality headset, MRTK, Mixed Reality Toolkit
 ---
 
 
