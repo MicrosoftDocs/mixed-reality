@@ -5,7 +5,7 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 07/29/2020
 ms.topic: article
-keywords: unity, settings, mixed reality
+keywords: unity, settings, mixed reality, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset, performance, quality settings, lighting settings, depth buffer, xr, tracking loss
 ---
 
 
