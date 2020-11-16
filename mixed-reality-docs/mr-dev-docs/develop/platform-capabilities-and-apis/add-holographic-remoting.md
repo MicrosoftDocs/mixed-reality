@@ -9,7 +9,6 @@ keywords: Windows Mixed Reality, holograms, holographic remoting, remote renderi
 ---
 
 
-
 # Add Holographic Remoting (HoloLens (1st gen))
 
 >[!IMPORTANT]
