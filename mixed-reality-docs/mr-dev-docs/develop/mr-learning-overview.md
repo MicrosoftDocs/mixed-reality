@@ -5,7 +5,7 @@ author: hferrone
 ms.author: jemccull
 ms.date: 10/28/2020
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens, learn
+keywords: mixed reality, unity, tutorial, hololens, learn, mixed reality headset, windows mixed reality headset, virtual reality headset, what is virtual reality, what is augmented reality, MRTK, mixed reality toolkit, language translation, Azure, Azure cognitive services
 ms.localizationpriority: high
 ---
 
