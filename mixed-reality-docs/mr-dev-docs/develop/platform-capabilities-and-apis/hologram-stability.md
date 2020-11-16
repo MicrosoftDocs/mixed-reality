@@ -5,7 +5,7 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 07/08/2020
 ms.topic: article
-keywords: holograms, stability, hololens
+keywords: holograms, stability, hololens, mixed reality headset, windows mixed reality headset, virtual reality headset, frame rate, rendering, reprojection, color separation
 appliesto:
     - HoloLens
 ---
