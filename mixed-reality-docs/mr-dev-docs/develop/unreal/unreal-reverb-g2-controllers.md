@@ -5,7 +5,7 @@ author: hferrone
 ms.author: jacksonf
 ms.date: 10/9/2020
 ms.topic: article
-keywords: Unreal, Unreal Engine 4, UE4, Reverb, Reverb G2, HP Reverb G2, mixed reality, development, motion controllers, user input, features, new project, emulator, documentation, guides, features, holograms, game development
+keywords: Unreal, Unreal Engine 4, UE4, Reverb, Reverb G2, HP Reverb G2, mixed reality, development, motion controllers, user input, features, new project, emulator, documentation, guides, features, holograms, game development, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 # HP Reverb G2 Controllers in Unreal 
