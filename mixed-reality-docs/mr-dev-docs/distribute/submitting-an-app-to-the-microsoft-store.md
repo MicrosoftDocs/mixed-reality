@@ -5,7 +5,7 @@ author: hferrone
 ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
-keywords: Microsoft Store, HoloLens, immersive headsets, app, uwp, submit, submission, filters, metadata, system requirements, keywords, wack, certification, package, appx, merchandising
+keywords: Microsoft Store, HoloLens, immersive headsets, app, uwp, submit, submission, filters, metadata, system requirements, keywords, wack, certification, package, appx, merchandising, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 
@@ -63,7 +63,7 @@ You'll be prompted to set the target and minimum version of Windows when you cre
 
 ### Specifying target device families
 
-Windows Mixed Reality applications (for both [HoloLens](../hololens-hardware-details.md) and [immersive headsets](../discover/immersive-headset-hardware-details.md)) are part of the Universal Windows Platform, so any app package with a **Windows.Universal** [target device family](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) cab run on HoloLens or Windows 10 PCs with immersive headsets. If you don't specify a target device family in your app manifest, you may inadvertently open your app up to unintended Windows 10 devices. Follow the steps below to specify the intended Windows 10 device family, then [double-check that the correct device families are set when you upload your app package in Partner Center for Microsoft Store submission.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
+Windows Mixed Reality applications (for both [HoloLens](../hololens-hardware-details.md) and [immersive headsets](../discover/immersive-headset-hardware-details.md)) are part of the Universal Windows Platform, so any app package with a **Windows.Universal** [target device family](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) can run on HoloLens or Windows 10 PCs with immersive headsets. If you don't specify a target device family in your app manifest, you may inadvertently open your app up to unintended Windows 10 devices. Follow the steps below to specify the intended Windows 10 device family, then [double-check that the correct device families are set when you upload your app package in Partner Center for Microsoft Store submission.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
 
 * To set this field in Visual Studio, right-click on the **Package.appxmanifest** and select **View Code**, then find the **TargetDeviceFamily Name** field. By default, it should look like the following entry:
 

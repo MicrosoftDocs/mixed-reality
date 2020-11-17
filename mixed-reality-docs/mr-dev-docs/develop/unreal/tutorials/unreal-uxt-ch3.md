@@ -6,7 +6,7 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, tutorial, getting started, mrtk, uxt, UX Tools, documentation
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, tutorial, getting started, mrtk, uxt, UX Tools, documentation, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 # 3. Setting up your project for mixed reality
@@ -66,6 +66,9 @@ At this point, the project still needs a player object. In Unreal, a **Pawn** re
 ![Adjust the Pawn's Collision Presets](images/unreal-uxt/3-nocollision.PNG)
 
 3. Click **Add Component > Camera** from the **Components** panel and name it **Camera**. This allows the player camera to move with the HoloLens 2 device.
+
+> [!NOTE]
+> Make sure that the **Camera** component is a direct child of the root (**CollisionComponent**).
 
 4. **Compile** and **Save** the Blueprint.
 

@@ -5,8 +5,10 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
-keywords: Mixed Reality, gaze, gaze targeting, interaction, design
+keywords: Mixed Reality, gaze, gaze targeting, interaction, design, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, target, focus, smoothing
 ---
+
+
 # Head-gaze and commit
 _Head-gaze and commit_ is a special case of the [gaze and commit](gaze-and-commit.md) input model that involves targeting an object with the direction of your head pointing forward (head-direction), and then acting on it with a secondary input, such as the hand gesture air tap or the voice command "Select". 
 

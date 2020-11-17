@@ -5,7 +5,7 @@ author: kegodin
 ms.author: kegodin
 ms.date: 11/02/2019
 ms.topic: article
-keywords: Windows Mixed Reality, spatial sound, design, style
+keywords: Windows Mixed Reality, spatial sound, design, style, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, gestures, interactions, attenuation
 ---
 
 # How to use sound in mixed-reality applications

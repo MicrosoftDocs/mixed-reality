@@ -5,9 +5,8 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
-keywords: Windows Mixed Reality, design, style, font, typography, ui, ux
+keywords: Windows Mixed Reality, design, style, font, typography, ui, ux, text, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens
 ---
-
 
 
 # Typography

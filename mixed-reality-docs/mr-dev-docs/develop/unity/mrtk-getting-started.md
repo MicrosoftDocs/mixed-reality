@@ -6,7 +6,7 @@ ms.author: dongpark
 ms.date: 05/15/2019
 ms.topic: article
 ms.localizationpriority: high
-keywords: Windows Mixed Reality, test, Mixed Reality Toolkit, MRTK version 2, MRTK, tools, SDK, HoloLens, HoloLens 2
+keywords: Windows Mixed Reality, test, Mixed Reality Toolkit, MRTK version 2, MRTK, tools, SDK, HoloLens, HoloLens 2, mixed reality headset, windows mixed reality headset, virtual reality headset, cross-platform
 ---
 
 # Getting started with MRTK for Unity

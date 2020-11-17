@@ -5,7 +5,7 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
-keywords: eye-gaze, head-gaze, head tracking, eye tracking, directx, input, holograms
+keywords: eye-gaze, head-gaze, head tracking, eye tracking, directx, input, holograms, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 # Head-gaze and eye-gaze input in DirectX

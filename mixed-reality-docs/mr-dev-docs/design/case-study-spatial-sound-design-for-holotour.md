@@ -5,7 +5,7 @@ author:  jsyltebo
 ms.author: jsylte
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, HoloLens, HoloTour, spatial sound, case study
+keywords: Windows Mixed Reality, HoloLens, HoloTour, spatial sound, case study, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, audio
 ---
 
 

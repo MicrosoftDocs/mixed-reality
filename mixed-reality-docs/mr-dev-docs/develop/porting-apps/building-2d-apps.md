@@ -5,7 +5,7 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 2D app, UWP, flat app, HoloLens, immersive headset, app model, back button, app bar, dpi, resolution, scale
+keywords: 2D app, UWP, flat app, HoloLens, immersive headset, app model, back button, app bar, dpi, resolution, scale, porting, HoloLens 1st gen, HoloLens 2, mixed reality headset, windows mixed reality headset, migration, Windows 10
 ---
 
 

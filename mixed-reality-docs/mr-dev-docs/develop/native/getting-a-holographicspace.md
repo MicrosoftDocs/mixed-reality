@@ -5,7 +5,7 @@ author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Windows Mixed Reality, HolographicSpace, CoreWindow, spatial input, rendering, swap chain, holographic frame, update loop, game loop, frame of reference, locatability, sample code, walkthrough
+keywords: Windows Mixed Reality, HolographicSpace, CoreWindow, spatial input, rendering, swap chain, holographic frame, update loop, game loop, frame of reference, locatability, sample code, walkthrough, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 

@@ -5,7 +5,7 @@ author: shengkait
 ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
-keywords: asset, creation, process, budget, polygons, textures, shaders, performance
+keywords: asset, creation, process, budget, polygons, textures, shaders, performance, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, assets
 ---
 
 

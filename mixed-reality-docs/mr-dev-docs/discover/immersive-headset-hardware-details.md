@@ -5,9 +5,8 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: vr, hardware, specs, specifications, tech, sensors, optics, display
+keywords: vr, hardware, specs, specifications, tech, sensors, optics, display, mixed reality headset, virtual reality headset, what is virtual reality, immersive headsets
 ---
-
 
 
 # Immersive headset hardware details

@@ -5,7 +5,7 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
-keywords: Unity, mixed reality, development, getting started, new project
+keywords: Unity, mixed reality, development, getting started, new project, Windows Mixed Reality, UWP, XR, performance
 ---
 
 

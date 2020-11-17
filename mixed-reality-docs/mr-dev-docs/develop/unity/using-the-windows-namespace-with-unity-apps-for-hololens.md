@@ -5,7 +5,7 @@ author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, WinRT, windows mixed reality, API, walkthrough 
+keywords: Unity, WinRT, windows mixed reality, API, walkthrough, mixed reality headset, windows mixed reality headset, virtual reality headset, Mixed Reality APIs
 ---
 
 # WinRT APIs with Unity for HoloLens

@@ -5,7 +5,7 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/29/2020
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens
+keywords: mixed reality, unity, tutorial, hololens, PC holographic remoting, tooltips, eye-tracking
 ms.localizationpriority: high
 ---
 

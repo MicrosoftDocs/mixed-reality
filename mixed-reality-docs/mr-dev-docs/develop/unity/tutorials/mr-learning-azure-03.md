@@ -5,7 +5,7 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens, hololens 2, azure custom vision, azure cognitive services
+keywords: mixed reality, unity, tutorial, hololens, hololens 2, azure custom vision, azure cognitive services, azure cloud services, Windows 10
 ms.localizationpriority: high
 ---
 

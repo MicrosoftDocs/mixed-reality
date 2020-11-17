@@ -6,7 +6,7 @@ ms.author: cmeekhof
 ms.date: 04/02/2019
 ms.topic: article
 ms.localizationpriority: high
-keywords: Mixed Reality, Gaze, gaze targeting, interaction, design, hands near, HoloLens
+keywords: Mixed Reality, Gaze, gaze targeting, interaction, design, hands near, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset, MRTK, Mixed Reality Toolkit, button, colliders, bounding box, 2D, instinctual gestures
 ---
 
 # Direct manipulation with hands

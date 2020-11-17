@@ -5,7 +5,7 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: unity, visual studio, export, build, deploy
+keywords: unity, visual studio, export, build, deploy, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset, UWP, deploying
 ---
 
 

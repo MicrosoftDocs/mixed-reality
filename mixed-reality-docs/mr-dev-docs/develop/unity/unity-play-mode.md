@@ -5,7 +5,7 @@ author: jonmlyons
 ms.author: jlyons
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, remoting, holographic remoting, holographic remoting player
+keywords: Unity, remoting, holographic remoting, holographic remoting player, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset, unity play mode
 ---
 
 

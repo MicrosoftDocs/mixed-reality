@@ -5,7 +5,7 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: immersive view, 2D view, slate, app
+keywords: immersive view, 2D view, slate, app, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit
 ---
 
 # App views

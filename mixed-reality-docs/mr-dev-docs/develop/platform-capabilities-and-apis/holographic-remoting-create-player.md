@@ -5,7 +5,7 @@ author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
-keywords: HoloLens, Remoting, Holographic Remoting
+keywords: HoloLens, Remoting, Holographic Remoting, NuGet, app manifest, player context, remote app, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 # Writing a custom Holographic Remoting player app
