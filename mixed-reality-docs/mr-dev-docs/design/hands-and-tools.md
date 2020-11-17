@@ -5,7 +5,7 @@ author: shengkait
 ms.author: shentan
 ms.date: 04/26/2019
 ms.topic: article
-keywords: Mixed Reality, hands, motion controllers, interaction, design
+keywords: Mixed Reality, hands, motion controllers, interaction, design, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit
 ---
 
 # Hands and motion controllers

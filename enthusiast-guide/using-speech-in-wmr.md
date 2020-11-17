@@ -118,9 +118,9 @@ Say "Hey Cortana,” then use one of the following commands:
 Switch to dictation mode any time the keyboard is active for an easy way to type. Select microphone  on the keyboard—or just say “start dictating”—to get started.
 
 > [!NOTE]
-> The mixed reality keyboard is only available in English, but you can use dictation in any of the supported [Windows Mixed Reality languages](wmr-setup-faq.md#what-languages-are-supported-in-windows-mixed-reality).
+> The mixed reality keyboard is only available in English, but you can use dictation in any of the supported [Windows Mixed Reality languages](other-questions.md#what-languages-are-supported-in-windows-mixed-reality).
 
-### Keyboard dictation commands 
+### Keyboard dictation commands
 
 | To do this | Say this |
 | --- | --- |
@@ -131,6 +131,7 @@ Switch to dictation mode any time the keyboard is active for an easy way to type
 | Select everything in the dictation box | Select all |
 
 ### Punctuation
+
 You’ll need to say the names of the punctuation you want to use. For instance, you might say "Hey **comma** what are you up to **question mark**."
 
 Here are the punctuation keywords you can use:
@@ -141,12 +142,12 @@ Here are the punctuation keywords you can use:
 * Open quote(s), close quote(s)
 * Hashtag, smiley/smiley face, frowny, winky
 * Dollar, percent
- 
-Sometimes it's helpful to spell out things like email addresses. For instance, to dictate example@outlook.com, you'd say "E X A M P L E at outlook dot com."
 
+Sometimes it's helpful to spell out things like email addresses. For instance, to dictate example@outlook.com, you'd say "E X A M P L E at outlook dot com."
 
 To stop dictating, select **Done**.
 
 ## See also
+
 * [Ask the community](https://answers.microsoft.com)
 * [Contact us for support](https://support.microsoft.com/contactus/)

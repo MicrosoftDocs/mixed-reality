@@ -5,7 +5,7 @@ author: grbury
 ms.author: grbury
 ms.date: 08/24/2019
 ms.topic: overview
-keywords: Windows Mixed Reality, HoloLens, case study, vision, scenarios
+keywords: Windows Mixed Reality, HoloLens, case study, vision, scenarios, case studies, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 # Case study gallery

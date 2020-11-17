@@ -5,9 +5,8 @@ author: grayclee
 ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
-keywords: Windows Mixed Reality, design, Hand coach, immersive headset, MRTK, hands, helping hands
+keywords: Windows Mixed Reality, design, Hand coach, immersive headset, MRTK, hands, helping hands, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit
 ---
-
 
 
 # Hand coach
@@ -63,7 +62,7 @@ For Hololens2, we designed out hand interactions based on instinctual and natura
 
 ### Intuitive
 
-When animating hands, it should be obvious and shoudn't cause any confusion. The animation of the hands is a representation of the gesture your trying to evoke to the user to understand it's purpose. 
+When animating hands, it should be obvious and shouldn't cause any confusion. The animation of the hands is a representation of the gesture your trying to evoke to the user to understand it's purpose. 
 
 For example, if you wish a user to press a button, a hand pressing a button would be triggered.
 

@@ -5,7 +5,7 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 07/29/2020
 ms.topic: article
-keywords: unity, settings, mixed reality
+keywords: unity, settings, mixed reality, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset, performance, quality settings, lighting settings, depth buffer, xr, tracking loss
 ---
 
 
@@ -166,5 +166,5 @@ The applicable capabilities for enabling the commonly used APIs for Holographic 
 ## See also
 
 * [Unity development overview](unity-development-overview.md)
-* [Understanding performance for Mixed Reality]../../design/(understanding-performance-for-mixed-reality.md)
+* [Understanding performance for Mixed Reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 * [Performance recommendations for Unity](performance-recommendations-for-unity.md)

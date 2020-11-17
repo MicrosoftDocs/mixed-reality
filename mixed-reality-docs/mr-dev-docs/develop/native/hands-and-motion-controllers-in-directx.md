@@ -5,7 +5,7 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
-keywords: hands, motion controllers, directx, input, holograms
+keywords: hands, motion controllers, directx, input, holograms, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 # Hands and motion controllers in DirectX

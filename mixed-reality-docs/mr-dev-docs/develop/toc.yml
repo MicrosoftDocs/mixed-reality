@@ -2,15 +2,29 @@
   href: development.md
 - name: Azure Cloud Services
   href: mixed-reality-cloud-services.md
+- name: Mixed Reality Learning overview
+  href: mr-learning-overview.md
 - name: Install the tools
   href: install-the-tools.md
+- name: Porting apps
+  items:
+  # - name: Porting overview
+  #   href: porting-apps/porting-overview.md
+  - name: Get your existing app ready for HoloLens 2
+    href: unity/mrtk-porting-guide.md
+  - name: Porting guide for immersive apps
+    href: porting-apps/porting-guides.md
+  - name: Updating for SteamVR
+    href: porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md
+  - name: Updating 2D UWP apps for Mixed Reality
+    href: porting-apps/building-2d-apps.md
 - name: Unity
   items:
   - name: Unity development overview
     href: unity/unity-development-overview.md
   - name: Getting started
     items: 
-      - name: Getting started with Mixed Reality Toolkit v2
+      - name: Getting started with MRTK
         href: unity/mrtk-getting-started.md
       - name: Configure Unity project for Windows Mixed Reality
         href: unity/configure-unity-project.md
@@ -158,7 +172,7 @@
             href: unity/tutorials/mr-azure-301.md
   - name: Core building blocks
     items: 
-      - name: MRTK 101 - How to ouse Mixed Reality Toolkit Unity for basic interactions
+      - name: MRTK 101 - Building core interactions using Mixed Reality Toolkit Unity
         href: unity/mrtk-101.md
       - name: Camera in Unity
         href: unity/camera-in-unity.md
@@ -196,8 +210,12 @@
         href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
       - name: Mixed Reality native objects in Unity
         href: unity/unity-xrdevice-advanced.md
-      - name: Using Vuforial with Unity 
+      - name: Using Vuforia with Unity 
         href: unity/vuforia-development-overview.md
+  - name: Immersive VR
+    items:
+      - name: HP Reverb G2 controllers in Unity
+        href: unity/unity-reverb-g2-controllers.md
   - name: Sample apps
     items: 
       - name: Overview 
@@ -205,7 +223,7 @@
       - name: HoloLens 2 
         items: 
           - name: Surfaces
-            href: 
+            href: unity/sampleapp-surfaces.md
           - name: Periodic Table of the Elements 2.0
             href: https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158
           - name: Galaxy Explorer 2.0
@@ -276,6 +294,10 @@
         href: unreal/unreal-qr-codes.md
       - name: WinRT in Unreal
         href: unreal/unreal-winrt.md
+  - name: Immersive VR 
+    items: 
+      - name: HP Reverb G2 controllers in Unreal
+        href: unreal/unreal-reverb-g2-controllers.md
   - name: Sample apps
     items: 
       - name: Overview
@@ -361,7 +383,7 @@
         - name: Spectator view
           href: platform-capabilities-and-apis/spectator-view.md 
         - name: WebRTC 
-          href: https://github.com/microsoft/MixedReality-WebRTC.md 
+          href: https://github.com/microsoft/MixedReality-WebRTC 
     - name: Camera and capture  
       items: 
         - name: Locatable camera 
@@ -430,15 +452,3 @@
           href: platform-capabilities-and-apis/device-portal-api-reference.md 
         - name: HoloLens Research Mode
           href: platform-capabilities-and-apis/research-mode.md 
-- name: Porting apps
-  items:
-  - name: Get your existing app ready for HoloLens 2
-    href: unity/mrtk-porting-guide.md
-  - name: Porting guide for immersive apps
-    href: porting-apps/porting-guides.md
-  - name: Input porting guide for Unity
-    href: porting-apps/input-porting-guide-for-unity.md
-  - name: Updating for SteamVR
-    href: porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md
-  - name: Updating 2D UWP apps for Mixed Reality
-    href: porting-apps/building-2d-apps.md

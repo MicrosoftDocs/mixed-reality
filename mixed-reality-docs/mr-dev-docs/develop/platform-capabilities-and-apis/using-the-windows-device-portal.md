@@ -56,11 +56,12 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 ## Connecting over USB
 
 1. [Install the tools](../install-the-tools.md) to make sure you have Visual Studio with the Windows 10 developer tools installed on your PC to enable USB connectivity.
-2. Connect your HoloLens to your PC with a micro-USB cable for HoloLens (1st Gen) or USB-C for HoloLens 2.
-3. From a web browser on your PC, go to [https://127.0.0.1:10080](https://127.0.0.1:10080).
 
 > [!IMPORTANT]
 > If you're having issues with USB connectivity double check that the USB Device Connectivity optional component is installed as part of your **[Visual Studio tool package](../install-the-tools.md#installation-checklist)**.
+
+2. Connect your HoloLens to your PC with a micro-USB cable for HoloLens (1st Gen) or USB-C for HoloLens 2.
+3. From a web browser on your PC, go to [https://127.0.0.1:10080](https://127.0.0.1:10080).
 
 ### Moving files over USB
 
@@ -370,3 +371,20 @@ Click or tap the region under **Virtual keyboard** to enable sending keystrokes 
 ## Device Portal REST API's
 
 Everything in the device portal is built on top of [REST API's](device-portal-api-reference.md) that you can optionally use to access the data and control your device programmatically.
+
+## Troubleshooting
+
+### How to fix the "It's lonely here" message
+
+> [!NOTE]
+> Going from a HoloLens 2 to HoloLens (1st gen) may cause the pages to become lonely if used on the HoloLens 2 prior to use on the HoloLens (1st gen).
+
+![It's lonely here message in Device Portal page](images/using-windows-portal-img-19.png)
+
+1. Select **Reset layout** from the top-left Menu:
+
+![Selecting Reset layout from the device portal menu](images/using-windows-portal-img-20.png)
+
+2. Click **Reset layout** under the **Reset workspace** heading. The portal page will automatically refresh and display your content.
+
+![Selecting Reset layout from the Reset workspace page](images/using-windows-portal-img-21.png)

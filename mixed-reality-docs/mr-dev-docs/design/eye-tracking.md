@@ -5,7 +5,7 @@ author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
-keywords: Eye tracking, mixed reality, input, eye-gaze, calibration
+keywords: Eye tracking, mixed reality, input, eye-gaze, calibration, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, intent, actions
 ---
 # Eye tracking on HoloLens 2
 

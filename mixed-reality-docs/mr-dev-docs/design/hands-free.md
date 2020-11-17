@@ -5,7 +5,7 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 04/20/2019
 ms.topic: article
-keywords: Mixed Reality, hands-free, gaze, gaze targeting, interaction, design
+keywords: Mixed Reality, hands-free, gaze, gaze targeting, interaction, design, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, voice input, usability
 ---
 
 

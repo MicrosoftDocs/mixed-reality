@@ -12,6 +12,9 @@ appliesto:
 
 # Install Windows Mixed Reality software
 
+> [!div class="nextstepaction"]
+> [Get Mixed Reality Portal](https://www.microsoft.com/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab)
+
 ## Launch Mixed Reality Portal
 
 After you plug in your Windows Mixed Reality headset and the driver installs successfully, the Mixed Reality Portal (MRP) will automatically launch on your Desktop. If this does not happen automatically, you can always launch Mixed Reality portal from the Start menu (**Start > Mixed Reality Portal**). Once the portal has launched, click **Get Started**
@@ -43,9 +46,10 @@ If you run into problems or get an error message while using Mixed Reality Porta
 
 **Make sure that your PC recognizes your headset**
 
-If restarting doesn’t work, make sure that your headset is recognized by your PC. Select Start , type device manager in the search box, and then select it in the list. Expand Mixed reality devices and see if your headset is listed. 
+If restarting doesn’t work, make sure that your headset is recognized by your PC. Select Start , type device manager in the search box, and then select it in the list. Expand Mixed reality devices and see if your headset is listed.
 
 If it isn't listed, try the following:
+
 * Plug the headset into different ports on the PC, if available.
 * Check for the latest software updates from [Windows Update](https://support.microsoft.com/help/12373).
 * Uninstall and reinstall Windows Mixed Reality:
@@ -83,8 +87,9 @@ You will see a "Getting ready to set you up" message on your screen with a spinn
 ![Getting ready to set you up](images/1050px-gettingsetup.png)
 
 ## See also
+
 * [Ask the community](https://answers.microsoft.com)
 * [Contact us for support](https://support.microsoft.com/contactus/)
 * [Troubleshooting Installation](installation_errors.md)
-* [Troubleshooting Setup](set-up-questions.md)
+* [Troubleshooting Setup](wmr-setup-faq.md)
 * [Set up Windows Mixed Reality](set-up-windows-mixed-reality.md)

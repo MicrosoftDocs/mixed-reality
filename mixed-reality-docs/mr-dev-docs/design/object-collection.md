@@ -5,7 +5,7 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, controls, design
+keywords: Windows Mixed Reality, controls, design, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, object collection, 2D, 3D, MRTK, Mixed Reality Toolkit
 ---
 
 # Object collection

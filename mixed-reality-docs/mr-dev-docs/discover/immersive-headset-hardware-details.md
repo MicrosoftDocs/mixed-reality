@@ -5,9 +5,8 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: vr, hardware, specs, specifications, tech, sensors, optics, display
+keywords: vr, hardware, specs, specifications, tech, sensors, optics, display, mixed reality headset, virtual reality headset, what is virtual reality, immersive headsets
 ---
-
 
 
 # Immersive headset hardware details
@@ -29,5 +28,3 @@ Developers can purchase any of the Windows Mixed Reality immersive headsets avai
 * [Mouse and keyboard](hardware-accessories.md)
 * [Voice](../design/voice-input.md) (via connected headset or microphone)
 
-## See also
-* [Install the tools](../develop/install-the-tools.md)

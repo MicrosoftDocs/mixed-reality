@@ -5,9 +5,8 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Mixed Reality, spatial locator, spatial reference frame, spatial coordinate system, spatial stage, sample code, image stabilization, spatial anchor, spatial anchor store, tracking loss, walkthrough
+keywords: Mixed Reality, spatial locator, spatial reference frame, spatial coordinate system, spatial stage, sample code, image stabilization, spatial anchor, spatial anchor store, tracking loss, walkthrough, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 
 # Coordinate systems in DirectX

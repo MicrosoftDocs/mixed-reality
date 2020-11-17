@@ -6,7 +6,7 @@ ms.author: cmeekhof
 ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
-keywords: Mixed Reality, interaction, design, HoloLens, hands, far, point and commit 
+keywords: Mixed Reality, interaction, design, HoloLens, hands, far, point and commit , mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, hand rays, object manipulation, MRTK, Mixed Reality Toolkit, DoF
 ---
 
 # Point and commit with hands

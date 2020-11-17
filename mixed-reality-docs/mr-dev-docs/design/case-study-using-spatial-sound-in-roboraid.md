@@ -5,9 +5,8 @@ author: mattzmsft
 ms.author: hakons
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, HoloLens, RoboRaid, spatial sound
+keywords: Windows Mixed Reality, HoloLens, RoboRaid, spatial sound, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, cpu
 ---
-
 
 
 # Case study - Using spatial sound in RoboRaid

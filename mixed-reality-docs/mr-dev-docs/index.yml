@@ -51,9 +51,9 @@ highlightedContent:
       itemType: how-to-guide
       url: https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/
     # Card
-    - title: Try a sample app
-      itemType: sample
-      url: develop/unity/samples.md
+    - title: Mixed Reality Learn modules
+      itemType: learn
+      url: develop/mr-learning-overview.md
 
 # productDirectory section (optional)
 productDirectory:

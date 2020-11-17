@@ -5,7 +5,7 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: coordinate system, spatial coordinate system, orientation-only, seated-scale, standing-scale, room-scale, world-scale, 360 degree, seated, standing, room, world, scale, position, orientation, Unity, anchor, spatial anchor, world anchor, world-locked, world-locking, body-locked, body-locking, tracking loss, locatability, bounds, recenter
+keywords: coordinate system, spatial coordinate system, orientation-only, seated-scale, standing-scale, room-scale, world-scale, 360 degree, seated, standing, room, world, scale, position, orientation, Unity, anchor, spatial anchor, world anchor, world-locked, world-locking, body-locked, body-locking, tracking loss, locatability, bounds, recenter, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 # Coordinate systems in Unity

@@ -9,7 +9,3 @@
       - name: Mixed Reality
         tocHref: /windows/mixed-reality/
         topicHref: "/windows/mixed-reality/index"
-        items: 
-          - name: Enthusiast Guide
-            tocHref: /windows/mixed-reality/enthusiast-guide
-            topicHref: "/windows/mixed-reality/enthusiast-guide/index"

@@ -6,7 +6,7 @@ ms.author: grbury
 ms.date: 07/29/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Windows Mixed Reality, test, MRTK, MRTK version 2, HoloLens 2
+keywords: Windows Mixed Reality, test, MRTK, MRTK version 2, HoloLens 2, unity, porting, HoloLens 1st gen, mixed reality headset, windows mixed reality headset, virtual reality headset, migration, best practices, ARM
 ---
 
 # Get your existing app ready for HoloLens 2
@@ -19,7 +19,7 @@ The sections below detail information for each stage:
 
 | Step 1 | Step 2 | Step 3 | Step 4 |
 |----------|-------------------|-------------------|-------------------|
-| ![Visual Studio logo](../images/visualstudio_logo.png) | ![Unity logo](../../design/images/final_unity_logo.png)| ![Unity icon](images/hololens2_icon.jpg) | ![MRTK logo](../../design/images/final_mrtk-small_logo.png) |
+| ![Visual Studio logo](../images/visualstudio_logo.png) | ![Unity logo](../../design/images/logo-unity.png)| ![Unity icon](images/hololens2_icon.jpg) | ![MRTK logo](../../design/images/74-12.png) |
 | Download latest tools | Update Unity Project | Compile for ARM | Migrate to MRTK v2
 
 Prerequisites:
@@ -77,10 +77,10 @@ After ingesting the relevant DLLs, build a Visual Studio solution from Unity and
 
 Check out the following resources for more information on using MRTK version 2:
 
-- [MRTK Landing Page](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
-- [Getting started with MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
-- [MRTK Hands](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/HandTracking.html)
-- [MRTK Eye Tracking](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html)
+- [MRTK - Documentation home (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+- [Installation guide (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
+- [MRTK - Hand tracking (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/HandTracking.html)
+- [MRTK - Eye tracking (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html)
 
 ### Prepare for the migration
 
@@ -145,8 +145,9 @@ Every application and scenario are different, and we’ll continue to refine and
 
 ## See also
 * [Install the tools](../install-the-tools.md)
-* [Getting started with MRTK version 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
-* [HTK APIs to MRTK APIs](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)
+* [MRTK - Installation guide (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
+* [MRTK - Documentation home (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+* [Porting from HoloToolkit/MRTK to MRTK version 2 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)
 * [Recommended settings for Unity](recommended-settings-for-unity.md)
 * [Understanding performance for Mixed Reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 

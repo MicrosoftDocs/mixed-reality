@@ -5,7 +5,7 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: gestures, motion controllers, unity, gaze, input
+keywords: gestures, motion controllers, unity, gaze, input, mixed reality headset, windows mixed reality headset, virtual reality headset, MRTK, Mixed Reality Toolkit
 ---
 
 
@@ -63,6 +63,34 @@ The button/axis ID mappings for Windows Mixed Reality differ from OpenVR's mappi
 
 >[!NOTE]
 >These button/axis IDs differ from the IDs that Unity uses for OpenVR due to collisions in the mappings used by gamepads, Oculus Touch and OpenVR.
+
+<!-- ### Using HP Reverb G2 controllers
+
+If you're using the HP Reverb G2 controllers, refer to the table below for button and axis IDs.
+
+<table>
+<tr>
+<th rowspan="2"><a href="https://docs.unity3d.com/ScriptReference/XR.CommonUsages.html">Input </th><th colspan="2">Common Unity APIs</a><br />(Input.GetButton/GetAxis) </th><th rowspan="2">HP Reverb G2 Input API</a></th>
+</tr><tr>
+<th> Left hand </th><th> Right hand</th>
+</tr><tr>
+<td> Primary2DAxis </td><td> Axis 1 (X) / Axis 2 (Y) </td><td> Axis 4 (X) / Axis 5(Y) </td><td> Thumbstick</td>
+</tr><tr>
+<td> Trigger pressed </td><td> Axis 9 </td><td> Axis 10 </td><td> Index trigger</td>
+</tr><tr>
+<td> Grip </td><td> Axis 11d </td><td> Axis 12 </td><td> Grip trigger</td>
+</tr><tr>
+<td> PrimaryButton pressed </td><td> Button 2 </td><td> Button 0 </td><td> Menu button pressed</td>
+</tr><tr>
+<td> SecondaryButton pressed </td><td> Button 3 </td><td> Button 1 </td><td> A/X button</td>
+</tr><tr>
+<td> GripButton </td><td> Button 4 </td><td> Button 5 </td><td> Grip trigger</td>
+</tr><tr>
+<td> TriggerButton </td><td> Button 14 </td><td> Button 15 </td><td> Index trigger</td>
+</tr><tr>
+</tr>
+</table> -->
+
 
 ## Grip pose vs. pointing pose
 

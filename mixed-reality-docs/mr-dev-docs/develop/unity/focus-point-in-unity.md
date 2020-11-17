@@ -5,7 +5,7 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, focus point, focus plane, stabilization plane, stabilization point, reprojection, LSR, depth buffer
+keywords: Unity, focus point, focus plane, stabilization plane, stabilization point, reprojection, LSR, depth buffer, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 

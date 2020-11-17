@@ -5,7 +5,7 @@ author: fieldsJacksonG
 ms.author: jacksonf
 ms.date: 07/08/2020
 ms.topic: article
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remoting, mixed reality, development, getting started, features, new project, emulator, documentation, guides, features, holograms, game development
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remoting, mixed reality, development, getting started, features, new project, emulator, documentation, guides, features, holograms, game development, mixed reality headset, windows mixed reality headset, virtual reality headset, WinRT, DLL
 ---
 # WinRT in Unreal
 
@@ -44,7 +44,7 @@ Over the course of your HoloLens development you may need to write a feature usi
         * Add **await** to **Additional Options** to ensure we can wait on async tasks  
         * Change **C++ Language Standard** to **ISO C++17 Standard (/std:c++17)** to include any WinRT code
 
-![Configuring the DLL](images/unreal-winrt-img-03.png)
+![Upgrading project properties](images/unreal-winrt-img-03.png)
 
 Your project is ready to update the DLL’s source with WinRT code that opens a file dialogue and saves a file to the HoloLens disk.  
 
@@ -119,7 +119,7 @@ public:
     }
 
 private:
-    winrt::Windows::Storage::StorageFile m_file = winrt::Windows::Storage::StorageFile(nullprt);
+    winrt::Windows::Storage::StorageFile m_file = winrt::Windows::Storage::StorageFile(nullptr);
     std::thread m_thread;
 
     winrt::Windows::Foundation::IAsyncAction OpenFileDialogueAction()
@@ -169,19 +169,21 @@ Linking and using a DLL in Unreal requires a C++ project. If you're using a Blue
 
 1. In the Unreal editor, open **File > New C++ Class…** and create a new **Actor** named **WinrtActor** to run the code in the DLL: 
 
-![Configuring the DLL](images/unreal-winrt-img-04.png)
+![Creating a new Actor](images/unreal-winrt-img-04.png)
 
 > [!NOTE]
-> A solution has now been created in the same directory as the uproject file along with a new build script named Source/ConsumeWinRT/ConsumerWinRT.Build.cs.
+> A solution has now been created in the same directory as the uproject file along with a new build script named Source/ConsumeWinRT/ConsumeWinRT.Build.cs.
 
 2. Open the solution, browse for the **Games/ConsumeWinRT/Source/ConsumeWinRT** folder, and open **ConsumeWinRT.build.cs**:
 
-![Configuring the DLL](images/unreal-winrt-img-05.png)
+![Opening the ConsumeWinRT.build.cs file](images/unreal-winrt-img-05.png)
 
 ### Linking the DLL
 1. In **ConsumeWinRT.build.cs**, add a property to find the include path for the DLL (the directory containing HoloLensWinrtDLL.h). The DLL is in a child directory to the include path, so this property will be used as the binary root dir:
 
 ```cs
+using System.IO;
+
 public class ConsumeWinRT : ModuleRules
 {
     private string WinrtIncPath
@@ -195,7 +197,7 @@ public class ConsumeWinRT : ModuleRules
             // which is two directories up from the game .exe (Binaries/HoloLens)
             return Path.GetFullPath(
                    Path.Combine(ModulePath,
-                   "../../ThirddParty/HoloLensWinrtDLL"));
+                   "../../ThirdParty/HoloLensWinrtDLL"));
         }
     }
 }
@@ -232,20 +234,35 @@ public ConsumeWinRT(ReadOnlyTargetRules target) : base(Target)
 }
 ```
 
-3. Open **WinrtActor.h** and add two function definitions, one that a blueprint can use and another that uses the DLL code: 
+3. Open **WinrtActor.h** and add one function definition, one that a blueprint will call: 
+
 ```cpp
 public:
     UFUNCTION(BlueprintCallable)
-    static void OpenFileDialogue;
+    static void OpenFileDialogue();
 ```
 
-4. Open **WinrtActor.cpp** and load the DLL in BeginPlay: 
+4. Open **WinrtActor.cpp** and update BeginPlay to load the DLL: 
 
 ```cpp
-void AWinfrtActor::BeginPlay()
+void AWinrtActor::BeginPlay()
+{
+	Super::BeginPlay();
+
+    // Gets path to DLL location
+	const FString BinDir = FPaths::ProjectDir() / 
+		"ThirdParty" / "HoloLensWinrtDLL" / 
+		"arm64" / "Release" / "HoloLensWinrtDLL";
+
+    // Loads DLL into application
+	void * dllHandle = FPlatformProcess::GetDllHandle(
+		*(BinDir / "HoloLensWinrtDLL.dll"));
+}
+
+void AWinrtActor::OpenFileDialogue()
 {
 #if PLATFORM_HOLOLENS
-    HoloLensWinrtDLL::OpenFileDialogue();
+	HoloLensWinrtDLL::OpenFileDialogue();
 #endif
 }
 ``` 
@@ -258,15 +275,15 @@ void AWinfrtActor::BeginPlay()
     * In the **Place Actors** tab, search for the new **WinrtActor** and drag it into the scene 
     * Open the level blueprint to execute the blueprint callable function in the **WinrtActor** 
 
-![Configuring the DLL](images/unreal-winrt-img-06.png)
+![Placing the WinrtActor in the scene](images/unreal-winrt-img-06.png)
 
 2. In the **World Outliner**, find the **WindrtActor** previously dropped into the scene and drag it into the level blueprint: 
 
-![Configuring the DLL](images/unreal-winrt-img-07.png)
+![Dragging the WinrtActor into the level blueprint](images/unreal-winrt-img-07.png)
 
 3. In the level blueprint, drag the output node from WinrtActor, search for **Open File Dialogue**, then route the node from any user input.  In this case, Open File Dialogue is being called from a speech event: 
 
-![Configuring the DLL](images/unreal-winrt-img-08.png)
+![Configuring nodes in the level blueprint](images/unreal-winrt-img-08.png)
 
 4. [Package this game for HoloLens](tutorials/unreal-uxt-ch6.md), deploy it, and run.  
 

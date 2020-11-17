@@ -1638,7 +1638,7 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/mr-learning-overview.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/out-of-scope/mr-learning-overview",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/mr-learning-overview",
 			"redirect_document_id": true
 		},
 		{
@@ -1680,46 +1680,6 @@
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/new-microsoft-edge.md",
 			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/whats-new/new-microsoft-edge",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/release-notes-april-2018.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/whats-new/release-notes-april-2018",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/release-notes-august-2016.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/whats-new/release-notes-august-2016",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/release-notes-march-2016.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/whats-new/release-notes-march-2016",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/release-notes-may-2016.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/whats-new/release-notes-may-2016",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/release-notes-may-2019.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/whats-new/release-notes-may-2019",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/release-notes-may-2020.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/whats-new/release-notes-may-2020",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/release-notes-october-2017.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/whats-new/release-notes-october-2017",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/release-notes-october-2018.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/whats-new/release-notes-october-2018",
 			"redirect_document_id": true
 		},
 		{

@@ -5,9 +5,8 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: in-app purchases, hololens
+keywords: in-app purchases, hololens, XAML, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 
 # In-app purchases

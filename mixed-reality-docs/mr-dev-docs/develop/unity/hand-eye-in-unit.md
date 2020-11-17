@@ -5,7 +5,7 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: gestures, motion controllers, unity, gaze, input
+keywords: gestures, motion controllers, unity, gaze, input, mixed reality headset, windows mixed reality headset, virtual reality headset, MRTK, Mixed Reality Toolkit
 ---
 
 # Articulated Hand and Eye Tracking in Unity
@@ -40,6 +40,20 @@ Explore MRTK's various types of interactions and UI controls in [this example sc
 You can find  other example scenes in [Mixed Reality Toolkit GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity) under **Assets/MixedRealityToolkit.Examples/Demos**folder.
 
 [![Example Scene](images/MRTK_Examples.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandInteractionExamples.html)
+
+## Next Development Checkpoint
+
+If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can proceed to the next building block:
+
+> [!div class="nextstepaction"]
+> [Spatial Mapping](spatial-mapping-in-unity.md)
+
+Or jump to Mixed Reality platform capabilities and APIs:
+
+> [!div class="nextstepaction"]
+> [Shared experiences](shared-experiences-in-unity.md)
+
+You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.
 
 ## See also
 

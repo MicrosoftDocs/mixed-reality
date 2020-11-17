@@ -5,8 +5,9 @@ author: kegodin
 ms.author: kegodin
 ms.date: 11/07/2019
 ms.topic: article
-keywords: spatial sound, surround sound, 3d audio, 3d sound, spatial audio
+keywords: spatial sound, surround sound, 3d audio, 3d sound, spatial audio, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, case studies, acoustics
 ---
+
 
 # Audio in mixed reality
 Audio is an essential part of design and productivity in mixed reality. Sound can:

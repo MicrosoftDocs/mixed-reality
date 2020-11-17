@@ -5,9 +5,8 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: spatial mapping, HoloLens, mixed reality, surface reconstruction, mesh
+keywords: spatial mapping, HoloLens, mixed reality, surface reconstruction, mesh, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, scene understanding, world mesh, occlusion, physics, navigation, surface observer, rendering, mesh processing
 ---
-
 
 
 # Spatial mapping

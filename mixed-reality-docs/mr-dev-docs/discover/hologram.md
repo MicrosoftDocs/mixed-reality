@@ -5,7 +5,7 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, HoloLens, holograms, design, interaction
+keywords: Windows Mixed Reality, HoloLens, holograms, design, interaction, mixed reality headset, windows mixed reality headset, what is augmented reality
 ---
 
 
@@ -122,8 +122,10 @@ Holograms can also be occluded by real-world objects. For example, a holographic
 
 ---
 
+## Next Discovery Checkpoint
 
-## See also
-* [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
-* [Spatial sound](../design/spatial-sound.md)
-* [Color, light and materials](../color,-light-and-materials.md)
+If you're following the [discovery journey](get-started-with-mr.md) we've laid out, you're in the midst of exploring the basics of Mixed Reality. From here, you can proceed to the next foundational topic: 
+
+> [!div class="nextstepaction"]
+> [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
+

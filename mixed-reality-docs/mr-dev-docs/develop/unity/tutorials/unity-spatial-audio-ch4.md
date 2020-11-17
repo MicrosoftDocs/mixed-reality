@@ -5,7 +5,7 @@ author: kegodin
 ms.author: kegodin
 ms.date: 12/01/2019
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens2, spatial audio
+keywords: mixed reality, unity, tutorial, hololens2, spatial audio, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head-related transfer function, reverb, Microsoft Spatializer
 ---
 
 # Enabling and disabling spatialization at run time
@@ -90,8 +90,11 @@ On the **Inspector** pane of the **Quad**, click **Add Component** and add the *
 ![Add script to quad](images/spatial-audio/add-script-to-quad.png)
 
 On the **Spatialize On Off** component of the **Quad**:
-1. Find the **PressableButtonHoloLens2 -> IconAndText -> TextMeshPro** subobject in the **Hierarchy**
-2. Drag the **TextMeshPro** suboject onto the **ButtonTextObject** field of the **Spatialize On Off** component
+1. Find the **PressableButtonHoloLens2 -> IconAndText -> TextMeshPro** subject in the **Hierarchy**:
+
+![Find the PressableButtonHoloLens2 object in the hierarchy](images/spatial-audio/pressable-button-object.png)
+
+2. Drag the **TextMeshPro** subject onto the **ButtonTextObject** field of the **Spatialize On Off** component
 
 After these changes, the **Spatialize On Off** component of the **Quad** will look like this:
 

@@ -4,7 +4,7 @@
   href: new-microsoft-edge.md 
 - name: Programs and events
   items: 
-    - name: San Francisco Reactor Academy events calendar 
+    - name: Mixed Reality Speaker Series
       href: sf-academy-events.md 
     - name: Mixed Reality Dev Days 
       items: 
@@ -12,6 +12,8 @@
           href: mr-dev-days.md 
         - name: Session recordings 
           href: mr-dev-days-sessions.md 
+    - name: Mixed Reality Dev Days Japan
+      href: mr-dev-days-japan.md 
 - name: Current Mixed Reality release notes 
   href: release-notes-may-2020.md 
 - name: Community resources 

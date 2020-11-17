@@ -5,7 +5,7 @@ author: brandonbray
 ms.author: branbray
 ms.date: 08/26/2020
 ms.topic: article
-keywords: Mixed Reality, holographic, AR, VR, MR, XR, augmented reality, virtual reality, explanation
+keywords: Mixed Reality, holographic, AR, VR, MR, XR, augmented reality, virtual reality, explanation, case study, mixed reality headset, windows mixed reality headset, virtual reality headset, what is virtual reality, what is augmented reality
 ms.localizationpriority: high
 ---
 
@@ -92,7 +92,7 @@ There are two main types of devices that deliver Windows Mixed Reality experienc
 </table> 
 
 
-> [NOTE]
+> [!NOTE]
 > Whether a device is connected to or tethered to a separate PC (via USB cable or Wi-Fi) or self-contained (untethered) doesn't reflect whether a device is holographic or immersive. Features that improve mobility lead to better experiences, and both holographic and immersive devices could be tethered or untethered.
 
 Technological advancement is what has enabled Mixed Reality experiences. There are no devices today that can run experiences across the entire spectrum. Windows 10 provides a common Mixed Reality platform for both device manufacturers and developers. Devices today can support a specific range within the Mixed Reality spectrum, with new devices expanding that range. In the future, holographic devices will become more immersive, and immersive devices will become more holographic.
@@ -107,11 +107,11 @@ It's best to think what type of experience an application or game developer want
 * **In the middle (fully Mixed Reality).** These experiences blend the real world and the digital world. Viewers who have seen the movie [Jumanji](https://en.wikipedia.org/wiki/Jumanji) can reconcile how the physical structure of the house where the story took place was blended with a jungle environment.
 * **Towards the right (near digital reality).** Users experience a digital environment, and are unaware of what occurs in the physical environment around them.
 
+## Next Discovery Checkpoint
 
-## See also
+If you're following the [discovery journey](get-started-with-mr.md) we've laid out, you're in the midst of exploring the basics of Mixed Reality. From here, you can proceed to the next foundational topic: 
 
-* [What is a hologram?](hologram.md)
-* [Understand the basics of Mixed Reality](get-started-with-mr.md#understand-the-basics)
-* [Start creating and prototyping](../design/design.md)
-* [Learn the tools and architecture](../develop/development.md)
+> [!div class="nextstepaction"]
+> [What is a hologram?](hologram.md)
+
 

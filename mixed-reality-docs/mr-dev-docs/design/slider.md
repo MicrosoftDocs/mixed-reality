@@ -5,7 +5,7 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Mixed Reality, Controls, interaction, ui, ux
+keywords: Mixed Reality, Controls, interaction, ui, ux, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, slider, MRTK, Mixed Reality Toolkit
 ---
 
 # Slider

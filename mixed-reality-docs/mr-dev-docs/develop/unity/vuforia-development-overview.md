@@ -5,7 +5,7 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 12/20/2019
 ms.topic: article
-keywords: Vuforia, markers, coordinates, frame of reference, tracking
+keywords: Vuforia, markers, coordinates, frame of reference, tracking, mixed reality headset, windows mixed reality headset, virtual reality headset, unity, HoloLens, device tracking, performance mode, Vuforia Developer Portal
 ---
 
 

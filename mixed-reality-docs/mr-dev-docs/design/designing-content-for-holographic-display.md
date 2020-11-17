@@ -5,8 +5,10 @@ author: yoonpark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
-keywords: UI design, holographic display, content design, dark theme, light theme
+keywords: UI design, holographic display, content design, dark theme, light theme, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, design, pixels
 ---
+
+
 # Designing content for holographic display
 
 ![Ulnar side hand location](images/UX_Hero_DarkTheme.jpg)

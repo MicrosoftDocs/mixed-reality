@@ -5,7 +5,7 @@ author: nbarragan23
 ms.author: nobarr
 ms.date: 08/27/2019
 ms.topic: article
-keywords: hand, menu, button, quick access, layout
+keywords: hand, menu, button, quick access, layout, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit
 ---
 # Hand menu
 

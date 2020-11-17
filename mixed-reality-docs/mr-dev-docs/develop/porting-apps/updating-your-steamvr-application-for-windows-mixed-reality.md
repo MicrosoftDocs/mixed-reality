@@ -5,9 +5,8 @@ author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
-keywords: SteamVR, Compatibility
+keywords: SteamVR, Compatibility, porting, HoloLens 1st gen, mixed reality headset, windows mixed reality headset, migration, Windows 10, Steam, motion controllers, haptics
 ---
-
 
 
 # Updating your SteamVR application
@@ -27,6 +26,10 @@ To start testing out your game or app on Windows Mixed Reality make sure to firs
 
 When designing or adjusting your control layout keep in mind the following set of reserved commands:
 1. Clicking down the **left and right analog thumbstick** is reserved for the **Steam Dashboard**.
+
+> [!NOTE]
+> If you're using an HP Reverb G2 controller, clicking the right menu button is reserved for the **Steam Dashboard**.
+
 2. The **Windows button** will always return users to the Windows Mixed Reality home.
 
 If possible, default to thumb stick based teleportation to match the [Windows Mixed Reality home](../../discover/navigating-the-windows-mixed-reality-home.md#getting-around-your-home) teleportation behavior

@@ -6,7 +6,7 @@ ms.author: v-hferrone
 ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remoting, mixed reality, development, getting started, features, new project, emulator, documentation, guides, features, holograms, game development
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remoting, mixed reality, development, getting started, features, new project, emulator, documentation, guides, features, holograms, game development, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 # Unreal Development Overview
 
@@ -22,9 +22,12 @@ Getting started with <a href="https://docs.microsoft.com/windows/mixed-reality" 
 
 If you're new to Unreal development don't jump in blind. Explore the Unreal <a href="https://docs.unrealengine.com/GettingStarted/index.html" target="_blank">tutorial series</a> to get up to speed and look for assets and support in the Unreal <a href="https://www.unrealengine.com/marketplace/store" target="_blank">marketplace</a> and mixed reality <a href="https://forums.unrealengine.com/development-discussion/vr-ar-development" target="_blank">forums</a>. These resources are your links to the community of builders and problem solvers in todays mixed reality market.
 
+> [!IMPORTANT]
+> Take a look at our **[porting guides](../porting-apps/porting-overview.md)** if you have an existing Unreal project that you want to bring over to HoloLens 2 or immersive headsets such as the Reverb G2.
+
 ## Development checkpoints
 
-Use the following checkpoints to bring your Unreal games and applications into the world of mixed reality.
+Use the following checkpoints to bring your Unreal games and applications into the world of mixed reality. If you haven't already explored the [Designing Holograms sample application](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd), we recommend downloading and using it to familiarize yourself with the basics of Mixed Reality UX.
 
 ### 1. Getting started
 
@@ -36,7 +39,7 @@ By the end of this section, you'll have a basic understanding of the Mixed Reali
 
 |  Checkpoint  |  Outcome  |
 | --- | --- |
-| [Install the latest tools](../install-the-tools.md) | Download and install the latest Unity package and setup your project for mixed reality |
+| [Install the latest tools](../install-the-tools.md) | Download and install the latest version of Unreal Engine and setup your project for mixed reality |
 | [HoloLens 2 tutorial series](tutorials/unreal-uxt-ch1.md) | Dive into beginner level MRTK tutorials for HoloLens 2 hardware |
 
 ### 2. Core building blocks

@@ -36,7 +36,7 @@ Windows Mixed Reality is designed to play sound through your immersive headset w
 
 ## Speech commands aren’t working
 
-To use Speech commands, your PC’s speech and language settings must be set to a [supported Windows Mixed Reality region and language](wmr-setup-faq.md#what-languages-are-supported-in-windows-mixed-reality). To check your Windows region and language, select **Settings > Time & language > Region & language**. To check your Speech language, select **Settings > Time & language > Speech**.
+To use Speech commands, your PC’s speech and language settings must be set to a [supported Windows Mixed Reality region and language](other-questions.md#what-languages-are-supported-in-windows-mixed-reality). To check your Windows region and language, select **Settings > Time & language > Region & language**. To check your Speech language, select **Settings > Time & language > Speech**.
 
 If your headset doesn’t have a built-in mic, attach headphones with a mic to the headset or to your PC. To have mic input switch automatically to your headset when your headphones are directly connected to it, select **Settings > Mixed reality > Audio and speech**, and make sure that **When I wear my headset, switch to headset mic** is turned on.
 
@@ -91,7 +91,7 @@ If the floor looks off (for example, you feel like you’re floating), select **
 
 ## I got a message that said to plug in and charge my PC. Why?
 
-If you're using a laptop, Windows Mixed Reality works best when the PC is both fully charged and plugged in. 
+If you're using a laptop, Windows Mixed Reality works best when the PC is both fully charged and plugged in.
 
 ## How do I uninstall Windows Mixed Reality?
 
@@ -102,7 +102,7 @@ When you're ready to start using your headset again, plug it in, and Mixed Reali
 > [!NOTE]
 > If you see a message that says "We couldn't finish removing Windows Mixed Reality," this means that some files, including information about your environment, might still be on your computer. This can cause problems if you decide to reinstall Windows Mixed Reality later on.
 > 
-> To learn how to manually remove any remaining Windows Mixed Reality info from your PC, see **[this article](troubleshooting-windows-mixed-reality.md#how-to-uninstall-windows-mixed-reality)**. 
+> To learn how to manually remove any remaining Windows Mixed Reality info from your PC, see **[this article](installation_errors.md)**.
 
 ## My Wi-Fi slows down when I'm using Windows Mixed Reality
 

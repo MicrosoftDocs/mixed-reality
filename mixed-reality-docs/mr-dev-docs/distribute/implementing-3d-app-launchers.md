@@ -5,7 +5,7 @@ author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
-keywords: 3D, logo, icon, modeling, launcher, 3D launcher, tile, live cube, deep link, secondarytile, secondary tile, UWP
+keywords: 3D, logo, icon, modeling, launcher, 3D launcher, tile, live cube, deep link, secondarytile, secondary tile, UWP, mixed reality headset, windows mixed reality headset, virtual reality headset, XML, bounding box, unity
 ---
 
 
