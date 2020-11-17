@@ -5,9 +5,8 @@ author: mavitazk
 ms.author: pinkb 
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, design, color, light, materials
+keywords: Windows Mixed Reality, design, color, light, materials, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit
 ---
-
 
 
 # Color, light and materials

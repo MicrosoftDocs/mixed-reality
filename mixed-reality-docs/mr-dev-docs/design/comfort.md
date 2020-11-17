@@ -6,7 +6,7 @@ ms.author: erpau
 ms.date: 06/25/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Mixed Reality, design, comfort, HoloLens 2, HoloLens (1st gen)
+keywords: Mixed Reality, design, comfort, HoloLens 2, HoloLens (1st gen), mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, locomotion
 ---
 
 # Comfort

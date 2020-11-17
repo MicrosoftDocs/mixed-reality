@@ -5,9 +5,8 @@ author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, billboarding, tag-along
+keywords: Windows Mixed Reality, billboarding, tag-along, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit
 ---
-
 
 
 # Billboarding and tag-along

@@ -5,9 +5,8 @@ author: mrwied
 ms.author: jonwie
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, design, introduction, guidance
+keywords: Windows Mixed Reality, design, introduction, guidance, mixed reality headset, windows mixed reality headset, virtual reality headset, ux, resources
 ---
-
 
 
 # About this design guidance

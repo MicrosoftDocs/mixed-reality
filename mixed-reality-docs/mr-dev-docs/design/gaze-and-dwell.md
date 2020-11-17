@@ -5,7 +5,7 @@ author:  sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
-keywords: Mixed Reality, gaze, dwell, interaction, design, eye tracking, head tracking
+keywords: Mixed Reality, gaze, dwell, interaction, design, eye tracking, head tracking, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit
 ---
 
 # Gaze and dwell

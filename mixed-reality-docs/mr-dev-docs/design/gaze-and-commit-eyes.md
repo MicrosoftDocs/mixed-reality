@@ -6,7 +6,7 @@ ms.author: sostel
 ms.date: 05/05/2019
 ms.topic: article
 ms.localizationpriority: high
-keywords: Eye Tracking, Mixed Reality, Input, Eye Gaze, Eye Targeting, HoloLens 2, Eye-based Selection
+keywords: Eye Tracking, Mixed Reality, Input, Eye Gaze, Eye Targeting, HoloLens 2, Eye-based Selection, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, gaze
 ---
 
 # Eye-gaze and commit

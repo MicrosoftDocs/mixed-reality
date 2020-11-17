@@ -5,7 +5,7 @@ author:  hferrone
 ms.author: v-hferrone
 ms.date: 05/13/2019
 ms.topic: article
-keywords: Mixed Reality, gaze, dwell, interaction, design
+keywords: Mixed Reality, gaze, dwell, interaction, design, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, ux, guidelines, list view
 ---
 
 # Head-gaze and dwell

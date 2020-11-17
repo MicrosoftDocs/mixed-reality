@@ -5,9 +5,8 @@ author: cre8ivepark
 ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
-keywords: Mixed Reality, Controls, interaction, ui, ux
+keywords: Mixed Reality, Controls, interaction, cues, ui, ux, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, audio 
 ---
-
 
 
 # Interactable object

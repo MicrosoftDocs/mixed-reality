@@ -5,9 +5,8 @@ author: grayclee
 ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
-keywords: Windows Mixed Reality, design, Hand coach, immersive headset, MRTK, hands, helping hands
+keywords: Windows Mixed Reality, design, Hand coach, immersive headset, MRTK, hands, helping hands, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit
 ---
-
 
 
 # Hand coach

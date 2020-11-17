@@ -5,7 +5,7 @@ author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
-keywords: Eye Tracking, Mixed Reality, Input, eye-gaze
+keywords: Eye Tracking, Mixed Reality, Input, eye-gaze, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, design, interactions
 ---
 # Eye-gaze-based interaction on HoloLens 2
 
