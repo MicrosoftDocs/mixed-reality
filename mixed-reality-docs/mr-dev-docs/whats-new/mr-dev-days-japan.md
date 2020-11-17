@@ -45,7 +45,7 @@ We are very excited to open up registration for Mixed Reality Dev Days Japan.  T
 |1:00pm - 1:25pm|*Session 3* Overview of HoloLens 2 development|Madoka Chiyoda|JA|200|
 |1:30pm - 1:55pm|*Session 4* HoloLens 2 & MRTK v2.5 (MRTK-Unity)|Yoon Park|JA|300|
 |2:00pm - 2:25pm|*Session 5* Getting started with the HoloLens 2 and Unreal Engine (MRTK-Unreal)|Cameron Micka|EN|300|
-|2:30pm - 2:55pm|*Session 6* MR App design (Best practice for creating UI/UX for HL2 app)|Daniel Escudero|EN|300|
+|2:30pm - 2:55pm|*Session 6* Creating the "Designing Holograms" app. We'll dive into features, challenges and other fun learnings we discovered while creating this new HoloLens 2 app.|Daniel Escudero|EN|300|
 |2:55pm - 3:10pm|**Break**||||
 |3:10pm - 3:35pm|*Session 7* Azure Object Anchors|TBD|EN|300|
 |3:40pm - 4:05pm|*Session 8* Azure Remote Rendering|Atsushi Suzuki|JA|300|
