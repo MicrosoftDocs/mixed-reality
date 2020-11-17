@@ -5,7 +5,7 @@ author: brandonbray
 ms.author: branbray
 ms.date: 08/26/2020
 ms.topic: article
-keywords: Mixed Reality, holographic, AR, VR, MR, XR, augmented reality, virtual reality, explanation
+keywords: Mixed Reality, holographic, AR, VR, MR, XR, augmented reality, virtual reality, explanation, case study, mixed reality headset, windows mixed reality headset, virtual reality headset, what is virtual reality, what is augmented reality
 ms.localizationpriority: high
 ---
 

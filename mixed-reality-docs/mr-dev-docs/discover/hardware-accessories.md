@@ -5,7 +5,7 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 05/20/2020
 ms.topic: article
-keywords: how-to, accessories, bluetooth, bt, controller, gamepad, clicker, xbox
+keywords: how-to, accessories, bluetooth, bt, controller, gamepad, clicker, xbox, hardware, mixed reality headset, windows mixed reality headset, virtual reality headset, motion controller
 ---
 
 # Hardware accessories
