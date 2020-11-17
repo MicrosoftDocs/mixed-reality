@@ -5,9 +5,8 @@ author: rwinj
 ms.author: willyang
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, design, app patterns
+keywords: Windows Mixed Reality, design, app patterns, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens
 ---
-
 
 
 # Types of mixed reality apps

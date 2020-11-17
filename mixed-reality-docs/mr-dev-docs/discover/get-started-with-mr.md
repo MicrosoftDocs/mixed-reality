@@ -6,7 +6,7 @@ ms.author: grbury
 ms.date: 07/29/2020
 ms.topic: overview
 ms.localizationpriority: high
-keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects
+keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 # Get started with Mixed Reality

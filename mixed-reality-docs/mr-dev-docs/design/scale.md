@@ -5,9 +5,8 @@ author: shengkait
 ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, Style, design
+keywords: Windows Mixed Reality, Style, design, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, scale, holograms
 ---
-
 
 
 # Scale

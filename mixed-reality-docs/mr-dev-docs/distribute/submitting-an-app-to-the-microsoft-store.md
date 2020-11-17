@@ -5,7 +5,7 @@ author: hferrone
 ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
-keywords: Microsoft Store, HoloLens, immersive headsets, app, uwp, submit, submission, filters, metadata, system requirements, keywords, wack, certification, package, appx, merchandising
+keywords: Microsoft Store, HoloLens, immersive headsets, app, uwp, submit, submission, filters, metadata, system requirements, keywords, wack, certification, package, appx, merchandising, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 

@@ -5,7 +5,7 @@ author: danielescudero
 ms.author: daescu
 ms.date: 04/08/2018
 ms.topic: article
-keywords: Windows Mixed Reality, design, process, case study
+keywords: Windows Mixed Reality, design, process, case study, mixed reality headset, windows mixed reality headset, virtual reality headset, what is virtual reality, what is augmented reality, bodystorming, storyboards, feedback
 ---
 
 # Thinking differently for Mixed Reality

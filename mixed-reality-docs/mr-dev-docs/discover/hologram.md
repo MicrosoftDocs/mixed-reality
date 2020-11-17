@@ -5,7 +5,7 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, HoloLens, holograms, design, interaction
+keywords: Windows Mixed Reality, HoloLens, holograms, design, interaction, mixed reality headset, windows mixed reality headset, what is augmented reality
 ---
 
 

@@ -5,8 +5,9 @@ author: szymons
 ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
-keywords: Scene understanding, Spatial Mapping, Windows Mixed Reality, Unity
+keywords: Scene understanding, Spatial Mapping, Windows Mixed Reality, Unity, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, occlusion, SDK
 ---
+
 
 # Scene understanding
 

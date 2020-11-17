@@ -5,7 +5,7 @@ author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
-keywords: 3D, logo, icon, modeling, launcher, 3D launcher, tile, live cube, win32
+keywords: 3D, logo, icon, modeling, launcher, 3D launcher, tile, live cube, win32, mixed reality headset, windows mixed reality headset, virtual reality headset, manifest
 ---
 
 # Implement 3D app launchers (Win32 apps)

@@ -5,7 +5,7 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/25/2020
 ms.topic: article
-keywords: HoloLens, Windows Mixed Reality, holographic frame, field of view
+keywords: HoloLens, Windows Mixed Reality, holographic frame, field of view, FOV, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, interactions, navigation, menu
 ---
 
 # Holographic frame
