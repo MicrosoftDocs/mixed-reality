@@ -5,7 +5,7 @@ author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, Sample apps, Design, HoloLens
+keywords: Windows Mixed Reality, Sample apps, Design, MRTK, Mixed Reality Toolkit, Unity, sample apps, example apps, open source, Microsoft Store, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 
@@ -15,6 +15,11 @@ keywords: Windows Mixed Reality, Sample apps, Design, HoloLens
 >This article discusses an exploratory sample we’ve created in the [Mixed Reality Design Labs](https://github.com/Microsoft/MRDesignLabs_Unity), a place where we share our learnings about and suggestions for mixed reality app development. Our design-related articles and code will evolve as we make new discoveries.
 
 [Lunar Module](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule) is an open-source sample app from Microsoft's Mixed Reality Design Labs. With this project, you can learn how to extend HoloLens' base gestures with two-handed tracking and Xbox controller input, create objects that are reactive to surface mapping and plane finding and implement simple menu systems. All of the project's components are available for use in your own mixed reality app experiences.
+
+## Demo video 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IcIP]
+
+Recorded with HoloLens 2 using Mixed Reality Capture
 
 ## Rethinking classic experiences for Windows Mixed Reality
 
@@ -100,6 +105,7 @@ You can find scripts and prefabs for the Lunar Module sample app on the [Mixed R
 </table>
 
 ## See also
-* [Motion controllers](../../design/motion-controllers.md)
-* [Head-gaze and commit](../../design/gaze-and-commit.md)
-* [Types of mixed reality apps](../../design/types-of-mixed-reality-apps.md)
+* [MRTK Examples Hub](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(Download from Microsoft Store in HoloLens 2)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+* [Surfaces](sampleapp-surfaces.md) - [(Download from Microsoft Store in HoloLens 2)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
+* [Periodic Table of the Elements 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
+* [Galaxy Explorer 2.0](galaxy-explorer-update.md)

@@ -5,9 +5,8 @@ author: pbarnettms
 ms.author: pbarnett
 ms.date: 06/8/2020
 ms.topic: article
-keywords: HoloLens, Emulator, Simulation, Windows Mixed Reality
+keywords: HoloLens, Emulator, Simulation, Windows Mixed Reality, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 
 # Advanced HoloLens Emulator and Mixed Reality Simulator input

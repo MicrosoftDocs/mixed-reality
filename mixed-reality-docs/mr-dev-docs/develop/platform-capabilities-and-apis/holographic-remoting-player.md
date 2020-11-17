@@ -5,7 +5,7 @@ author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
-keywords: HoloLens, Remoting, Holographic Remoting
+keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windows mixed reality headset, virtual reality headset, diagnostics, performance
 ---
 
 
@@ -65,8 +65,6 @@ On **HoloLens 2** the app will show you:
 * **Latency** - The average turnaround in milliseconds over the last second. 
 Turnaround in this context means the time from sending pose/sensor data from the HoloLens to the remote/remote side till displaying the video frame for that pose/telemetry data on the HoloLens display.
 * **Video frames discarded** - The number of discarded video frames over the last second and since a connection has been established. The primary cause for discarded video frames is when a video frame does not arrive in order and for that reason needs to be discarded as there is already a newer one. This is similar to *discarded frames* but the cause is at a lower level in the Remoting stack. Discarded video frames are only expected under quite bad network conditions.
-
-
 
 While on the main screen, you can say **"disable diagnostics"** to turn off diagnostics.
 

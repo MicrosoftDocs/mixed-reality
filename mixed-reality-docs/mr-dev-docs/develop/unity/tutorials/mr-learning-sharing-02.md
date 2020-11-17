@@ -1,11 +1,11 @@
 ---
 title: Multi-user capabilities tutorials - 2. Setting up Photon Unity Networking
-description: Complete this course to learn how to implement multi-user shared experiences within a HoloLens 2 application.
+description: Complete this course to learn how to implement Photon Unity Network in a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens
+keywords: mixed reality, unity, tutorial, hololens, multi-user capabilities, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, PUN
 ms.localizationpriority: high
 ---
 
@@ -43,7 +43,7 @@ Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base
 
 In the Unity menu, select **Edit** > **Project Settings...** to open the Player Settings window, then locate the **Player** >  **Publishing Settings** section:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
+![Unity Player settings](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
 
 In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, **SpatialPerception**, and **GazeInput** capabilities, which you enabled during the [Configuring the Unity project](mr-learning-base-02.md#configuring-the-unity-project) step above, are enabled.
 
@@ -52,13 +52,13 @@ Then enable the following additional capabilities:
 * **InternetClientServer** capability
 * **PrivateNetworkClientServer** capability
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section2-step1-2.png)
+![Unity Capabilities settings](images/mr-learning-sharing/sharing-02-section2-step1-2.png)
 
 ## Installing inbuilt Unity packages
 
 In the Unity menu, select **Window** > **Package Manager** to open the Package Manager window, then select **AR Foundation** and click the **Install** button to install the package:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section3-step1-1.png)
+![Unity Package Manager with AR Foundation selected](images/mr-learning-sharing/sharing-02-section3-step1-1.png)
 
 > [!NOTE]
 > You are installing the AR Foundation package because it is required by the Azure Spatial Anchors SDK you will import in the next section.
@@ -74,7 +74,7 @@ Download and **import** the following Unity custom packages **in the order they 
 
 After you have imported the tutorial assets your Project window should look similar to this:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section4-step1-1.png)
+![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-sharing/sharing-02-section4-step1-1.png)
 
 > [!TIP]
 > For a reminder on how to import a Unity custom package, you can refer to the [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) instructions.
@@ -88,15 +88,15 @@ In the Unity menu, select **Window** > **Asset Store** to open the Asset Store w
 
 When the download is complete, click the **Import** button to open the Import Unity Package window:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section5-step1-1.png)
+![Unity Asset Store with PUN 2 - Free](images/mr-learning-sharing/sharing-02-section5-step1-1.png)
 
 In the Import Unity Package window, click the **All** button to ensure all the assets are selected, then click the **Import** button to import the assets:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section5-step1-2.png)
+![Unity with PUN 2 import window](images/mr-learning-sharing/sharing-02-section5-step1-2.png)
 
 Once Unity has completed the import process, the Pun Wizard window will appear with the PUN Setup menu loaded, you can ignore or close this window for now:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section5-step1-3.png)
+![Unity with PUN Setup window](images/mr-learning-sharing/sharing-02-section5-step1-3.png)
 
 ## Creating the PUN application
 
@@ -104,11 +104,11 @@ In this section, you will create a Photon account, if you don't already have one
 
 Navigate to the Photon <a href="https://dashboard.photonengine.com/account/signin" target="_blank">dashboard</a> and sign in if you already have an account you want to use, otherwise, click the **Create One** link and follow the instructions to register a new account:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section6-step1-1.png)
+![Photon login page](images/mr-learning-sharing/sharing-02-section6-step1-1.png)
 
 Once signed in, click the **Create a New App** button:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section6-step1-2.png)
+![Photon dashboard welcome page](images/mr-learning-sharing/sharing-02-section6-step1-2.png)
 
 On the Create a New Application page, enter the following values:
 
@@ -119,11 +119,11 @@ On the Create a New Application page, enter the following values:
 
 Then click the **Create** button to create the new app:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section6-step1-3.png)
+![Photon create application page](images/mr-learning-sharing/sharing-02-section6-step1-3.png)
 
 Once Photon has finished the creation process, the new PUN app will appear on your dashboard:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section6-step1-4.png)
+![Photon application page](images/mr-learning-sharing/sharing-02-section6-step1-4.png)
 
 ## Connecting the Unity project to the PUN application
 
@@ -131,7 +131,7 @@ In this section, you will connect your Unity project to the PUN app you created 
 
 On the Photon dashboard, click the **App ID** field to reveal the app ID, then copy it to your clipboard:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section7-step1-1.png)
+![Photon application page with App Id selected](images/mr-learning-sharing/sharing-02-section7-step1-1.png)
 
 In the Unity menu, select **Window** > **Photon Unity Networking** > **PUN Wizard** to open the Pun Wizard window, click the **Setup Project** button to open the PUN Setup menu, and configure it as follows:
 
@@ -139,11 +139,11 @@ In the Unity menu, select **Window** > **Photon Unity Networking** > **PUN Wizar
 
 Then click the **Setup Project** button to apply the app ID:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section7-step1-2.png)
+![Unity PUN Setup window with AppId filled in](images/mr-learning-sharing/sharing-02-section7-step1-2.png)
 
 Once Unity has finished the PUN setup process, the PUN Setup menu will display the message **Done!** and automatically select the **PhotonServerSettings** asset in the Project window, so its properties are displayed in the Inspector window:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section7-step1-3.png)
+![Unity PUN Setup window with Setup Project applied](images/mr-learning-sharing/sharing-02-section7-step1-3.png)
 
 ## Congratulations
 

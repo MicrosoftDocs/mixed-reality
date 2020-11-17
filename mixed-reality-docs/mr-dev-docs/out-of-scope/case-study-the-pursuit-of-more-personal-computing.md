@@ -147,6 +147,18 @@ Entertainment is in many ways pushing the bounds of mixed reality (especially vi
 
 It's hard to say what the far future of mixed reality will look like for consumers, but focusing on unique problems, getting hands-on with real hardware, and **experimenting *today* with the intersection between mixed reality, voice, and AI is key**. Microsoft is just getting started with mixed reality but learning from the successes realized by businesses today will help you create the experiences of tomorrow.
 
+## Next Discovery Checkpoint
+
+If you're following the [discovery journey](../discover/get-started-with-mr.md) we've laid out, you're in the midst of exploring the basics of Mixed Reality. From here, you can proceed to the next foundational topic: 
+
+> [!div class="nextstepaction"]
+> [Immersive, ergonomic, instinctual and untethered](https://www.microsoft.com//hololens/hardware)
+
+Or jump into Mixed Reality core experiences:
+
+> [!div class="nextstepaction"]
+> [Keep the user comfortable - (Comfort)](../design/comfort.md)
+
 ## About the author
 
 <table style="border-collapse:collapse">

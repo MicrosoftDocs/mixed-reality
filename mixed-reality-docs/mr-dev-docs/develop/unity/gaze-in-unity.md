@@ -5,7 +5,7 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: eye-gaze, head-gaze, unity, hologram, mixed reality
+keywords: eye-gaze, head-gaze, unity, hologram, mixed reality, mixed reality headset, windows mixed reality headset, virtual reality headset, MRTK, Mixed Reality Toolkit
 ---
 
 

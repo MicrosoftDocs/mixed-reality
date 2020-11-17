@@ -5,7 +5,7 @@ author: fieldsJacksonG
 ms.author: jacksonf
 ms.date: 07/08/2020
 ms.topic: article
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remoting, mixed reality, development, getting started, features, new project, emulator, documentation, guides, features, holograms, game development
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remoting, mixed reality, development, getting started, features, new project, emulator, documentation, guides, features, holograms, game development, mixed reality headset, windows mixed reality headset, virtual reality headset, WinRT, DLL
 ---
 # WinRT in Unreal
 
@@ -234,20 +234,35 @@ public ConsumeWinRT(ReadOnlyTargetRules target) : base(Target)
 }
 ```
 
-3. Open **WinrtActor.h** and add two function definitions, one that a blueprint can use and another that uses the DLL code: 
+3. Open **WinrtActor.h** and add one function definition, one that a blueprint will call: 
+
 ```cpp
 public:
     UFUNCTION(BlueprintCallable)
-    static void OpenFileDialogue;
+    static void OpenFileDialogue();
 ```
 
-4. Open **WinrtActor.cpp** and load the DLL in BeginPlay: 
+4. Open **WinrtActor.cpp** and update BeginPlay to load the DLL: 
 
 ```cpp
-void AWinfrtActor::BeginPlay()
+void AWinrtActor::BeginPlay()
+{
+	Super::BeginPlay();
+
+    // Gets path to DLL location
+	const FString BinDir = FPaths::ProjectDir() / 
+		"ThirdParty" / "HoloLensWinrtDLL" / 
+		"arm64" / "Release" / "HoloLensWinrtDLL";
+
+    // Loads DLL into application
+	void * dllHandle = FPlatformProcess::GetDllHandle(
+		*(BinDir / "HoloLensWinrtDLL.dll"));
+}
+
+void AWinrtActor::OpenFileDialogue()
 {
 #if PLATFORM_HOLOLENS
-    HoloLensWinrtDLL::OpenFileDialogue();
+	HoloLensWinrtDLL::OpenFileDialogue();
 #endif
 }
 ``` 

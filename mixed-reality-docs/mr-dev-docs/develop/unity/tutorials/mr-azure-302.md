@@ -5,7 +5,7 @@ author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: azure, mixed reality, academy, unity, tutorial, api, computer vision, hololens, immersive, vr
+keywords: azure, mixed reality, academy, unity, tutorial, api, computer vision, hololens, immersive, vr, Windows 10, Visual Studio
 ---
 
 # MR and Azure 302: Computer vision

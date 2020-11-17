@@ -30,7 +30,7 @@ Like all journeys, your adventure into designing Mixed Reality applications star
 | [Expand your design process](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Get a first-hand look at design process for Mixed Reality, gathered from designers inside and outside of Microsoft |
 | [Types of Mixed Reality apps](types-of-mixed-reality-apps.md) | Decide where your app experience will live on the Mixed Reality spectrum |
 | [Designing Holograms app](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Learn the fundamentals of Mixed Reality UX Design by experiencing it yourself by diving into into Mixed Reality behaviors, tips and recommendations for creating amazing HoloLens apps (available for download from Microsoft Store in HoloLens 2) |
-
+| [MRTK Examples Hub](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4) | Experience common spatial interactions and UX building blocks for Mixed Reality (available for download from Microsoft Store in HoloLens 2) |
 ### 2. Core concepts
 
 Whether you're developing for VR or AR, there are a several core concepts that apply to designing fluid immersive experiences. Understanding the users point of view, positioning objects, and ensuring everyone is comfortable and safe are your top priorities at this stage of your journey. By the end of this section you'll have a solid foundation to carry through into interaction design.
@@ -83,17 +83,17 @@ A designers job is never done, especially when learning to create immersive expe
         Learn how to create interactive experiences with Unity. Learn by doing, from start to finish.
     :::column-end:::	
     :::column:::	
-        [![Mixed Reality Toolkit (MRTK)](images/Final_mrtk-small_logo.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
+        [![Mixed Reality Toolkit (MRTK)](images/74-12.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
         **[Mixed Reality Toolkit (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity)**<br>	
         With spatial interaction and UI building blocks, jump-start your mixed reality design and development with Unity.	
     :::column-end:::
     :::column:::	
-        [![Mixed Reality Design Labs](images/Final_mrdl_logo.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
+        [![Mixed Reality Design Labs](images/74-13.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
         **[Mixed Reality Design Labs](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)**<br>	
         Get sample apps that show you how to use MRTK's building blocks to create beautiful mixed reality experiences.
     :::column-end:::		
     :::column:::	
-        [![Microsoft Maquette](images/Final_maquette_logo.png)](https://www.maquette.ms/)<br>
+        [![Microsoft Maquette](images/74-14.png)](https://www.maquette.ms/)<br>
         **[Microsoft Maquette](https://www.maquette.ms/)**<br>	
         Design for VR. Microsoft Maquette makes spatial prototyping easy, quick, and immersive.	
     :::column-end:::	
@@ -107,22 +107,22 @@ A designers job is never done, especially when learning to create immersive expe
 
 :::row:::
     :::column:::
-       [![Understand the basics](images/icon-lightbulb.png)](../discover/get-started-with-mr.md#understand-the-basics)<br>
+       [![Understand the basics](images/74-15.png)](../discover/get-started-with-mr.md#understand-the-basics)<br>
         **[Understand the basics](../discover/get-started-with-mr.md#understand-the-basics)**<br>
         Get a better understanding of what defines mixed reality and how it’s being used.
     :::column-end:::
     :::column:::
-        [![Come to an event](images/icon-calendar.jpg)](../whats-new/sf-academy-events.md)<br>
+        [![Come to an event](images/74-16.png)](../whats-new/sf-academy-events.md)<br>
          **[Come to an event](../whats-new/sf-academy-events.md)**<br>
         See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
     :::column-end:::
     :::column:::
-        [![Install the tools](images/icon-design.png)](../develop/install-the-tools.md)<br>
+        [![Install the tools](images/74-17.png)](../develop/install-the-tools.md)<br>
          **[Install the tools](../develop/install-the-tools.md)**<br>
         Use the installation checklist to get the tools you need to build apps for HoloLens and mixed reality.
     :::column-end:::
     :::column:::
-        [![Start developing](images/icon-developer.png)](../develop/development.md)<br>
+        [![Start developing](images/74-18.png)](../develop/development.md)<br>
         **[Start developing](../develop/development.md)**<br>
         Choose a development path based on your skill level, work style, or platform interest.
     :::column-end:::

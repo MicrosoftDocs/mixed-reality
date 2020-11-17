@@ -5,7 +5,7 @@ author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: azure, mixed reality, academy, unity, tutorial, api, translator text, hololens, immersive, vr
+keywords: azure, mixed reality, academy, unity, tutorial, api, translator text, hololens, immersive, vr, language translation, Windows 10, Visual Studio
 ---
 
 # MR and Azure 301: Language translation

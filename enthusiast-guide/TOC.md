@@ -27,11 +27,10 @@
 ### [Using Windows Mixed Reality FAQ](using-wmr-faq.md)
 
 ## Troubleshooting and FAQs
+### [FAQ overview](troubleshooting-windows-mixed-reality.md)
 ### [Filing bugs and feedback](filing-feedback.md)
 ### [Error codes](error-codes.md)
-### [General FAQ](troubleshooting-windows-mixed-reality.md)
 ### [Installation errors](installation_errors.md)
-### [Setup](set-up-questions.md)
 ### [Boundaries](boundary-questions.md)
 ### [Headset connectivity](headset-connectivity.md)
 ### [Headset display](headset-display.md)
@@ -48,3 +47,5 @@
 ### [Immersive headset health, safety, and comfort](wmr-health-safety-comfort.md)
 ### [Mixed Reality software overview and release history](mixed-reality-software.md)
 ### [How inside-out tracking works](tracking-system.md)
+### [HP Reverb G2 Controllers in Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+### [HP Reverb G2 Controllers in Unreal](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
