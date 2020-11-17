@@ -5,7 +5,7 @@ author: thmignon
 ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
-keywords: 3D, model, place in home, place, world, modeling, mixed reality home, web, app
+keywords: 3D, model, place in home, place, world, modeling, mixed reality home, web, app, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 

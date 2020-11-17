@@ -5,7 +5,7 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 10/02/2020
 ms.topic: article
-keywords: app, uwp, submit, submission, filters, metadata, system requirements, keywords, wack, certification, package, appx, merchandising
+keywords: app, uwp, submit, submission, filters, metadata, system requirements, keywords, wack, certification, package, appx, merchandising, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 
