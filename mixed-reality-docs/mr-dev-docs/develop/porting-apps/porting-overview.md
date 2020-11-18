@@ -8,11 +8,10 @@ ms.topic: article
 keywords: porting, unity, middleware, engine, UWP, Win32
 ---
 
+
 # Porting overview
 
 [//TODO: Need header image]
-
-## Possible starting points
 
 ### Unity
 
@@ -28,7 +27,13 @@ WMR headsets
 *Current state* 2019 LTS + Mirage + Legacy(Non-XRSDK) + ARF3.x (ASA works with this setup)
 *Ideal* Unity 2019 LTS + Mirage + XRSDK + ARF2.x (ASA doesn't work with this current setup)
 
+uninstall XRSDK and reinstall Legacy to move back 
+
 ### Unreal
 
+4.25 -> 4.26 coming 12/1/2020
+UXT 0.9 -> 0.10
+Update for SteamVR
 
-### Native (OpenXR)
+Updating your SteamVR app for Windows Mixed Reality
+
