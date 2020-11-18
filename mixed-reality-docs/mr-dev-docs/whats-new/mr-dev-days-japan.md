@@ -21,6 +21,8 @@ We look forward to having you join us at Mixed Reality Dev Day! Get ready to hea
 
 **Registration - FREE**
 
+**Primary Language - Japanese**
+
 ## Registration
 
 [Registeration - Now Open](https://mixedrealityprod.microsoftcrmportals.com/event/sessions?id=MR_Dev_Days_Japan864059683)
