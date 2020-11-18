@@ -1,5 +1,9 @@
 # [Available in MRTK](#tab/mrtk)
 
+The [Mixed Reality Toolkit for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) is a set of plugins designed to speed up your development in Unreal. Each plugin includes components, samples, and documentation for setting up immersive experiences.
+
+* [UX Tools for Unreal](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-ux-tools) is the first plugin to be released and is currently only supported on HoloLens 2. The plugin includes C++ code, Blueprints, and example assets of common UX features for input simulation, hand interactions, surface magnetism and more.
+
 |  Feature  |  Capabilities  |
 | --- | --- |
 | [Input simulation](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/InputSimulation.md) | Use mouse and keyboard input in the editor to simulate a Head-Mounted Display (HMD) and hand tracking features |
