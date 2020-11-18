@@ -33,11 +33,15 @@ First, you'll need to install the tools for HoloLens 2 development. Next, go thr
 | --- | --- |
 | [Install the latest tools](../install-the-tools.md) | Download and install the latest version of Unreal Engine and setup your project for mixed reality |
 | [HoloLens 2 tutorial series](tutorials/unreal-uxt-ch1.md) | Get set up for mixed reality development in Unreal, build your first app with MRTK, and deploy your app to HoloLens 2 |
-| (Optional) Get started with [OpenXR](../native/openxr) in Unreal | If you're looking to build an OpenXR app in Unreal, you should disable the Windows Mixed Reality plugin and enable the OpenXR, OpenXRHandTracking (for hand joint tracking), OpenXRMsftHandInteraction (for gestures), and OpenXREyeTracker (for eye tracking) engine plugins instead. You'll also need to download the [Mixed Reality Platform Extensions](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-platform-extensions) plugin from the Unreal Engine Marketplace and ensure it is enabled in your project. |
+| (Optional) Get started with [OpenXR](../native/openxr.md) in Unreal | If you're looking to build an OpenXR app in Unreal, you should disable the Windows Mixed Reality plugin and enable the OpenXR, OpenXRHandTracking (for hand joint tracking), OpenXRMsftHandInteraction (for gestures), and OpenXREyeTracker (for eye tracking) engine plugins instead. You'll also need to download the [Mixed Reality Platform Extensions](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-platform-extensions) plugin from the Unreal Engine Marketplace and ensure it is enabled in your project. |
 
 ### 2. Core building blocks
 
 There are a number of key mixed reality features that our tutorial series doesn't cover. These building blocks are available as standalone features and through the Mixed Reality Toolkit. You might not need all of them at once, but we recommend exploring early on. After diving into the core building blocks listed below, you'll have a toolbox full of features you can integrate into your Mixed Reality projects.
+
+The [Mixed Reality Toolkit for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) is a set of plugins designed to speed up your development in Unreal. Each plugin includes components, samples, and documentation for setting up immersive experiences.
+
+* [UX Tools for Unreal](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-ux-tools) is the first plugin to be released and is currently only supported on HoloLens 2. The plugin includes C++ code, Blueprints, and example assets of common UX features for input simulation, hand interactions, surface magnetism and more.
 
 [!INCLUDE[](../includes/unreal-building-blocks.md)]
 
@@ -70,7 +74,7 @@ At this point in your development journey you might be looking to add services o
 
 A developer's job is never done, especially when learning a new tool or SDK. The following sections can take you into areas beyond the beginner level material you've already completed, along with helpful resources if you get stuck. Note that these topics and resources are not in any sequential order, so feel free to jump around and explore!
 
-### Streaming & Debugging
+### Debugging
 
 If you're looking to debug the application while it's running on device with Visual Studio, follow these [instructions](https://docs.microsoft.com/visualstudio/debugger/debug-installed-app-package#remote).
 
