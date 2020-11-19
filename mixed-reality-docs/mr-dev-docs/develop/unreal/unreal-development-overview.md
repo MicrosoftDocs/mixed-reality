@@ -33,7 +33,7 @@ First, you'll need to install the tools for HoloLens 2 development. Next, go thr
 | --- | --- |
 | [Install the latest tools](../install-the-tools.md) | Download and install the latest version of Unreal Engine and setup your project for mixed reality |
 | [HoloLens 2 tutorial series](tutorials/unreal-uxt-ch1.md) | Get set up for mixed reality development in Unreal, build your first app with MRTK, and deploy your app to HoloLens 2 |
-| (Optional) Get started with [OpenXR](../native/openxr.md) in Unreal | If you're looking to build an OpenXR app in Unreal, you should disable the Windows Mixed Reality plugin and enable the OpenXR, OpenXRHandTracking (for hand joint tracking), OpenXRMsftHandInteraction (for gestures), and OpenXREyeTracker (for eye tracking) engine plugins instead. You'll also need to download the [Mixed Reality Platform Extensions](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-platform-extensions) plugin from the Unreal Engine Marketplace and ensure it is enabled in your project. |
+| (Optional) Get started with [OpenXR](../native/openxr.md) in Unreal | If you're looking to build an OpenXR app in Unreal, you should disable the following engine plugin:<ul><li>Windows Mixed Reality</li></ul><br>Download and enable the following plugin from the Unreal Engine Marketplace:<ul><li> [Mixed Reality Platform Extensions](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-platform-extensions)</li></ul>|
 
 ### 2. Core building blocks
 
@@ -84,35 +84,34 @@ Developing for mixed reality comes with performance checkpoints that depend on t
 
 ## Supported Features
 
-| HoloLens 2 Feature | Earliest Supported Unreal Engine Version |
-| ----------- | ----------- |
-| ARM64 support | 4.23 |
-| Streaming from a PC | 4.23 |
-| Spatial mapping | 4.23 |
-| Hand and joint tracking | 4.23 |
-| Eye tracking | 4.23 |
-| Voice input | 4.23 |
-| Spatial anchors | 4.23 |
-| Camera access | 4.23 |
-| QR codes | 4.23 |
-| Spatial audio | 4.23 |
+| HoloLens 2 Feature | Earliest Supported Unreal Engine Version | Supported in OpenXR (4.26) |
+| ----------- | ----------- | ----------- |
+| ARM64 support | 4.23 | ✔️ |
+| Streaming from a PC | 4.23 | ✔️ |
+| Spatial mapping | 4.23 | ✔️ |
+| Hand and joint tracking | 4.23 | ✔️ |
+| Eye tracking | 4.23 | ✔️ |
+| Voice input | 4.23 | ✔️ | 
+| Spatial anchors | 4.23 | ✔️ | 
+| Camera access | 4.23 | 
+| QR codes | 4.23 | ✔️ |
+| Spatial audio | 4.23 | ✔️ |
 | Spectator Screen support for streaming | 4.24 |
 | Planar LSR over streaming | 4.24 |
-| [Sample apps](unreal-samples.md) | 4.24 |
-| Mobile multi-View: Performance hits 60 fps | 4.25 |
+| [Sample apps](unreal-samples.md) | 4.24 | ✔️ |
+| Mobile multi-View: Performance hits 60 fps | 4.25 | ✔️ |
 | 3rd camera render | 4.25 |
-| Streaming from a packaged desktop app | 4.25.1 |
+| Streaming from a packaged desktop app | 4.25.1 | ✔️ |
 | Azure Spatial Anchors for HoloLens 2 (beta) | 4.25 |
-| OpenXR support (beta) | 4.25 |
-| UX Tools support (0.8) | 4.25 |
-| Developer docs & tutorials | 4.25 |
-| System keyboard | 4.26 |
-| HoloLens Media Player plugin | 4.26 |
+| Mixed Reality UX Tools support | 4.25 | ✔️ |
+| Developer docs & tutorials | 4.25 | ✔️ |
+| System keyboard | 4.26 | ✔️ |
+| HoloLens Media Player plugin | 4.26 | ✔️ |
 | Azure Spatial Anchors for iOS and Android (beta) | 4.26 |
-| Mixed Reality Platform Extensions plugin with mixed reality-specific OpenXR extensions | 4.26 |
-| Streaming from Azure to HoloLens 2 | 4.26 |
-| Windows App Certification Kit compliance for packaged apps | 4.26 |
-| HP Reverb G2 controller support | 4.26 |
+| Mixed Reality Platform Extensions plugin with Mixed Reality-specific OpenXR extensions | 4.26 | ✔️ |
+| Streaming from Azure to HoloLens 2 | 4.26 | ✔️ |
+| Windows App Certification Kit compliance for packaged apps | 4.26 | ✔️ |
+| HP Reverb G2 controller support | 4.26 | ✔️ |
 
 > [!div class="nextstepaction"]
 > [Install the tools](../install-the-tools.md)
