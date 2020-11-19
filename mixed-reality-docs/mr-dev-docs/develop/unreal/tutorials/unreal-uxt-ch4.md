@@ -35,7 +35,7 @@ Before you start working with user input, you'll need to add the plugin to the p
 
 3. To view the plugin's content, click on **View Options > Show Engine Content** in the bottom right corner of the **Content Browser**. Scroll down until you find **UXTools Content** and expand that directory. You'll see subfolders for components including Buttons, Input Simulation, and Pointers, as well as a **C++ Classes** folder with additional code.
 
-![Ensure Mixed Reality UX Tools is enabled](images/unreal-uxt/4-showenginecontent.PNG)
+![Show Engine Content](images/unreal-uxt/4-showenginecontent.PNG)
  
 Additional plugin documentation can be found on the Mixed Reality UX Tools GitHub [repository](https://aka.ms/uxt-unreal). 
 
