@@ -1,6 +1,6 @@
 # [HoloLens](#tab/hololens)
 
-If you have a HoloLens application ready to go, you can proceed to adding [In-app purchases](../distributing-your-apps.md#integrating-in-app-purchases) or head straight to [Microsoft Store submissions](../distributing-your-apps.md#submitting-to-the-microsoft-store) section.
+If you have a HoloLens application ready to go, you can proceed to adding [In-app purchases](../distribute-overview.md#integrating-in-app-purchases) or head straight to [Microsoft Store submissions](../distribute-overview.md#submitting-to-the-microsoft-store) section.
 
 # [Windows Mixed Reality](#tab/wmr)
 
