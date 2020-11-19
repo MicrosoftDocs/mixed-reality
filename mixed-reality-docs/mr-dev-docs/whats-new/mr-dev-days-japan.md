@@ -49,10 +49,10 @@ We are very excited to open up registration for Mixed Reality Dev Days Japan.  T
 |2:00pm - 2:25pm|*Session 5* Getting started with the HoloLens 2 and Unreal Engine (MRTK-Unreal)|Cameron Micka|EN|300|
 |2:30pm - 2:55pm|*Session 6* Creating the "Designing Holograms" app. We'll dive into features, challenges and other fun learnings we discovered while creating this new HoloLens 2 app.|Daniel Escudero|EN|300|
 |2:55pm - 3:10pm|**Break**||||
-|3:10pm - 3:35pm|*Session 7* Azure Object Anchors|TBD|EN|300|
+|3:10pm - 3:35pm|*Session 7* Azure Object Anchors|Jesse McCulloch|EN|300|
 |3:40pm - 4:05pm|*Session 8* Azure Remote Rendering|Atsushi Suzuki|JA|300|
-|4:10pm - 4:35pm|*Session 9* Azure Spatial Anchors|TBD|EN|300|
-|4:40pm - 5:05pm|*Session 10* TBD|TBD|JA|200|
+|4:10pm - 4:35pm|*Session 9* Azure Spatial Anchors|TBD|JA|300|
+|4:40pm - 5:05pm|*Session 10* Unity + PiXYZ|Shinobu Takahashi (Unity)|JA|200|
 |5:10pm - 5:35pm|*Session 11* Azure Kinect DK Deep Dive, Case study|Shinji Chiba|JA|400|
 |5:35pm - 5:50pm|Closing|Madoka Chiyoda|JA|NA|
 
