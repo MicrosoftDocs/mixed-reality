@@ -38,7 +38,7 @@ If you are seeing a 7-14 “something went wrong” error, please try the follow
 - Make sure that you have the most recent drivers installed for your headset and your USB controller.
 - Make sure you are using a Microsoft USB driver. There should be a “Microsoft” in the name of the "eXtensible Host Controller" device.
 - Try plugging the cable into a different USB-3.0 port on your computer. (Try USB Type-C and Type-A ports)
-- Use the included USB C to A adapter included to try different ports.
+- Use the included USB C to A adapter to try different ports.
 - Try plugging the headset in through a USB Hub to your computer.
 
 > [!NOTE]

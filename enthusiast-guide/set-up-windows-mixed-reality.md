@@ -8,9 +8,25 @@ keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, get sta
 
 # Set up Windows Mixed Reality
 
-## Prepare your space
+## Get ready
+
+To run Windows Mixed Reality, you'll need:
+
+* A compatible mixed reality immersive headset. [Learn more](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)
+* A [Windows Mixed Reality-ready PC](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) with the correct ports for your headset
+* Motion [controllers](controllers-in-wmr.md), an Xbox controller, or a mouse and keyboard
+* Headphones with a mic (if your headset doesn't have them built in)
+* A large, open space
+
+## Get set
 
 Prepare your space (including your overhead space). Make sure there are no obstacles, hazards, or fragile items in the area you’ll be using. Don’t set up at the top of a staircase or under an extra-low ceiling fan. Remove breakables and obstacles from the area, and make sure that you and anyone who uses your headset reads and understands the safety guidelines.
+
+Once your space is ready, plug in your  headset, but don't put it on quite yet—first we'll need to do some setup on your PC. We’ll run a PC check, download some software, connect your controllers, and create a [boundary](boundary-questions.md) to help you avoid obstacles.
+
+Then comes the fun part—put on your headset and enter the mixed world. Cortana will be waiting to give you a tour. Have fun!
+
+## Go!
 
 Once your space is ready, plug in your  headset, but don't put it on quite yet—first we'll need to do some setup on your PC. We’ll run a PC check, download some software, connect your controllers, and create a [boundary](boundary-questions.md) to help you avoid obstacles.
 
