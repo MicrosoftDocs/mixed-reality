@@ -42,11 +42,11 @@ If you're using UE 4.26, refer to the following blueprint setup:
 ## Setting up a tracked image
 
 QR codes are surfaced through Unreal’s AR tracked geometry system as a tracked image. To get this working, you'll need to:
-1. Create a Blueprint and add an **ARTrackableNotify** component.
+1. Create an Actor Blueprint and add an **ARTrackableNotify** component:
 
 ![QR AR Trackable Notify](images/unreal-spatialmapping-artrackablenotify.PNG)
 
-2. Select **ARTrackableNotify** and expand the **Events** section in the **Details** panel.
+2. Select **ARTrackableNotify** and expand the **Events** section in the **Details** panel:
 
 ![QR Events](images/unreal-spatialmapping-events.PNG)
 
