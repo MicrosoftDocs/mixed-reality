@@ -25,7 +25,7 @@ It's important that your PC can handle the VR hardware you’re buying in order 
 
 |  Checkpoint  |  Outcome  |
 | --- | --- |
-| [Before you start](before-you-start.md) |  |
+| [Before you start](before-you-start.md) | Make sure you have everything you need to start your VR journey |
 | [Minimum PC hardware guidelines](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) | Everything you need to know about running Windows Mixed Reality, Windows Mixed Reality Ultra, and the Windows Mixed Reality Portal app |
 | [Get help with PC compatibility](get-help-with-pc-compatibility.md) | Understand the generated report from the Windows Mixed Reality PC check |
 | [Buying FAQs](before-you-buy-faqs.md) | Get answers to all your buying questions about technical specifications, devices, and controllers |
@@ -60,10 +60,12 @@ There are a variety of features and services available through Windows Mixed Rea
 
 ## 4. Discover apps and content
 
-Find immersive games, desktop applications, and VR content and use the Microsoft Edge browser in the resources below. 
+Find immersive games, desktop applications, and VR content in the resources below. 
 
 <br>
 
+|  Checkpoint  |  Feature  |
+| --- | --- |
 | [Games, 360 video, and apps](using-games-and-apps-in-windows-mixed-reality.md) | Get started with your first immersive game, 2D store slates, desktop applications, and WebVR experiences |
 | [Using SteamVR](using-steamvr-with-windows-mixed-reality.md) | Connect your device and play SteamVR games and learn about the Windows Insider Program |
 | [Using Microsoft Edge](using-microsoft-edge.md) | Install the latest version of Microsoft Edge on your immersive device |
