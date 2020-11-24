@@ -5,7 +5,7 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: gestures, motion controllers, unity, gaze, input
+keywords: gestures, motion controllers, unity, gaze, input, mixed reality headset, windows mixed reality headset, virtual reality headset, MRTK, Mixed Reality Toolkit
 ---
 
 # Articulated Hand and Eye Tracking in Unity

@@ -5,9 +5,8 @@ author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
-keywords: SteamVR, Compatibility
+keywords: SteamVR, Compatibility, porting, HoloLens 1st gen, mixed reality headset, windows mixed reality headset, migration, Windows 10, Steam, motion controllers, haptics
 ---
-
 
 
 # Updating your SteamVR application

@@ -5,9 +5,8 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: volumetric video, holographic video, mixed reality video, hologram
+keywords: volumetric video, holographic video, mixed reality video, hologram, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 
 # How it works - Mixed Reality Capture Studios

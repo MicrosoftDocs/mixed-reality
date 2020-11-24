@@ -6,7 +6,7 @@ ms.author: grbury
 ms.date: 07/29/2020
 ms.topic: overview
 ms.localizationpriority: high
-keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects
+keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 # Get started with Mixed Reality
@@ -138,11 +138,6 @@ If you're curious to see how the different Mixed Reality hardware and services w
 
 <br>
 
-
 >[!IMPORTANT]
 >All mixed reality development materials are provided on this site for your reference only. Your application, its usage, and its effect on end users is your sole responsibility as the application developer, including ensuring that your app does not cause discomfort, injury, or any other harm to the end user, and including appropriate warnings and disclaimers. You need to at all times take the appropriate steps in the development and publishing of your application to ensure that your application is safe, and that you meet all obligations in your [App Developer Agreement with Microsoft](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement).
 
-## See also
-* [Immersive headset hardware details](immersive-headset-hardware-details.md)
-* [Community resources](community.md)
-* [VR enthusiast guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/)

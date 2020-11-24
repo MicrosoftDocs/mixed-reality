@@ -5,7 +5,7 @@ author: jessemcculloch
 ms.author: ishitak
 ms.date: 08/03/2020
 ms.topic: article
-keywords: mixed reality, vr, lbe, location
+keywords: mixed reality, vr, lbe, location, mixed reality headset, windows mixed reality headset, virtual reality headset, hardware, HoloLens, multi-player, cloud services, azure
 ---
 
 # Location Based Entertainment with Windows Mixed Reality

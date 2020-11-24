@@ -6,7 +6,7 @@ ms.author: kurtie
 ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unity, mixed reality, development, getting started, new project, porting, capability, camera, simulation, emulation, documentation
+keywords: Unity, mixed reality, development, getting started, new project, porting, capability, camera, simulation, emulation, documentation, mixed reality headset, windows mixed reality headset, virtual reality headset, what is virtual reality, what is augmented reality, MRTK, mixed reality toolkit, spatial mapping, voice input, locatable camera, emulator, Azure, tutorials
 ---
 
 # Unity development overview

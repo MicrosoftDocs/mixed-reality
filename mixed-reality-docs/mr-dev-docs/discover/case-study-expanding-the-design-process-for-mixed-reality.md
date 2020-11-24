@@ -5,7 +5,7 @@ author: danielescudero
 ms.author: daescu
 ms.date: 04/08/2018
 ms.topic: article
-keywords: Windows Mixed Reality, design, process, case study
+keywords: Windows Mixed Reality, design, process, case study, mixed reality headset, windows mixed reality headset, virtual reality headset, what is virtual reality, what is augmented reality, bodystorming, storyboards, feedback
 ---
 
 # Thinking differently for Mixed Reality
@@ -123,6 +123,12 @@ Simple, cheap art supplies are key to providing team members with the tools nece
 * Pencils
 * Sharpies
 
-## See also
-* [Case study - My first year on the HoloLens design team](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md)
-* [Case study - AfterNow's process - envisioning, prototyping, building](https://developer.microsoft.com/windows/mixed-reality/case_study_-_afternow's_process_-_envisioning,_prototyping,_building)
+## Next Discovery Checkpoint
+
+Congratulations, you've completed the core of the Mixed Reality discovery journey! You can either return to the main [discovery journey page](get-started-with-mr.md) and [see how industry partners are using Mixed Reality](get-started-with-mr.md#see-how-industry-partners-are-using-mixed-reality) and [explore the HoloLens](get-started-with-mr.md#explore-hololens-and-mixed-reality-services), or start your design or development journeys:
+
+> [!div class="nextstepaction"]
+> [Start your design journey](../design/design.md)
+
+> [!div class="nextstepaction"]
+> [Start your development journey](../develop/development.md)

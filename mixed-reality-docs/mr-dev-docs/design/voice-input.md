@@ -5,9 +5,8 @@ author: hak0n
 ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
-keywords: ggv, voice, cortana, speech, input
+keywords: ggv, voice, cortana, speech, input, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, gaze
 ---
-
 
 
 # Voice input

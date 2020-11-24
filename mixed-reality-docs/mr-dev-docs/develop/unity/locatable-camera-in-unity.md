@@ -5,7 +5,7 @@ author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: photo, video, hololens, camera, unity, locatable
+keywords: photo, video, hololens, camera, unity, locatable, PVC, photo video camera, mixed reality headset, windows mixed reality headset, virtual reality headset, webcam, photo capture, video capture
 ---
 
 

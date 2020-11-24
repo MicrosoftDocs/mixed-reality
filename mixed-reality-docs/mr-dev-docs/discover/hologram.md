@@ -5,7 +5,7 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, HoloLens, holograms, design, interaction
+keywords: Windows Mixed Reality, HoloLens, holograms, design, interaction, mixed reality headset, windows mixed reality headset, what is augmented reality
 ---
 
 
@@ -129,6 +129,3 @@ If you're following the [discovery journey](get-started-with-mr.md) we've laid o
 > [!div class="nextstepaction"]
 > [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
 
-## See also
-* [Spatial sound](../design/spatial-sound.md)
-* [Color, light and materials](../color,-light-and-materials.md)

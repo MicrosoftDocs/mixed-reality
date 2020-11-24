@@ -6,7 +6,7 @@ ms.author: grbury
 ms.date: 07/29/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Windows Mixed Reality, test, MRTK, MRTK version 2, HoloLens 2
+keywords: Windows Mixed Reality, test, MRTK, MRTK version 2, HoloLens 2, unity, porting, HoloLens 1st gen, mixed reality headset, windows mixed reality headset, virtual reality headset, migration, best practices, ARM
 ---
 
 # Get your existing app ready for HoloLens 2

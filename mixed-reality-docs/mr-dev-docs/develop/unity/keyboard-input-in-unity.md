@@ -5,9 +5,8 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: keyboard, input, unity, touchscreenkeyboard
+keywords: keyboard, input, unity, touchscreenkeyboard, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 
 # Keyboard input in Unity

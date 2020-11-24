@@ -5,7 +5,7 @@ author: brandonbray
 ms.author: branbray
 ms.date: 08/26/2020
 ms.topic: article
-keywords: Mixed Reality, holographic, AR, VR, MR, XR, augmented reality, virtual reality, explanation
+keywords: Mixed Reality, holographic, AR, VR, MR, XR, augmented reality, virtual reality, explanation, case study, mixed reality headset, windows mixed reality headset, virtual reality headset, what is virtual reality, what is augmented reality
 ms.localizationpriority: high
 ---
 
@@ -114,10 +114,4 @@ If you're following the [discovery journey](get-started-with-mr.md) we've laid o
 > [!div class="nextstepaction"]
 > [What is a hologram?](hologram.md)
 
-## See also
-
-* [What is a hologram?](hologram.md)
-* [Understand the basics of Mixed Reality](get-started-with-mr.md#understand-the-basics)
-* [Start creating and prototyping](../design/design.md)
-* [Learn the tools and architecture](../develop/development.md)
 

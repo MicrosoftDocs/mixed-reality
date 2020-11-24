@@ -5,7 +5,7 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
-keywords: Windows Mixed Reality, design, Controls, font, typography, ui, ux
+keywords: Windows Mixed Reality, design, Controls, font, typography, ui, ux, mixed reality headset, windows mixed reality headset, virtual reality headset, MRTK, Mixed Reality Toolkit
 ---
 
 # Text in Unity
@@ -88,7 +88,7 @@ Based on these scaling factors, we have created [text prefabs with UI Text and 3
 
 ### Shader with occlusion support
 
-Unity's default font material does not support occlusion. Because of this, you will see the text behind the objects by default. We have included a simple [shader that supports the occlusion](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MRTK/Core/StandardAssets/Shaders/Text3DShader.shader). The image below shows the text with default font material (left) and the text with proper occlusion (right).
+Unity's default font material does not support occlusion. Because of this, you will see the text behind the objects by default. We have included a simple [shader that supports the occlusion](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/StandardAssets/Shaders/Text3DShader.shader). The image below shows the text with default font material (left) and the text with proper occlusion (right).
 
 ![Shader with occlusion support](images/hug-text-07-1000px.png)<br>
 *Shader with occlusion support*

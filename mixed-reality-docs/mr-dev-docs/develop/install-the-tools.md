@@ -6,7 +6,7 @@ ms.author: alexturn
 ms.date: 09/07/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit
+keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit, mixed reality headset, windows mixed reality headset, virtual reality headset, installation, Windows, HoloLens, emulator, unreal, openxr
 ---
 
 # Install the tools

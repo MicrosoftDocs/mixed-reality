@@ -5,7 +5,7 @@ author: drneil
 ms.author: jemccull
 ms.date: 07/11/2018
 ms.topic: article
-keywords: azure, mixed reality, academy, edge, iot edge, tutorial, api, notification, functions, tables, hololens, immersive, vr, iot, virtual machine, ubuntu, python
+keywords: azure, mixed reality, academy, edge, iot edge, tutorial, api, notification, functions, tables, hololens, immersive, vr, iot, virtual machine, ubuntu, python, Windows 10, Visual Studio
 ---
 
 
