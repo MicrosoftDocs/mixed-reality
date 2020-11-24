@@ -1,15 +1,11 @@
 # [Windows Mixed Reality enthusiast documentation](index.yml)
 ## [Start your VR journey](vr-journey.md)
 
-## Before you buy
-<!-- ### [What is Windows Mixed Reality?](windows-mixed-reality.md) -->
+## Getting started
+### [Before you start](before-you-start.md)
 ### [Minimum PC hardware guidelines](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
 ### [Recommended adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 ### [Get help with PC compatibility](get-help-with-pc-compatibility.md)
-### [Frequently asked questions](before-you-buy-faqs.md)
-
-## Getting started
-### [Before you start](before-you-start.md)
 ### [Plug in your headset](plug-in-your-headset.md)
 ### [Install Windows Mixed Reality](install-windows-mixed-reality.md)
 ### [Set up Windows Mixed Reality](set-up-windows-mixed-reality.md)
@@ -31,6 +27,7 @@
 ### [Filing bugs and feedback](filing-feedback.md)
 ### [Error codes](error-codes.md)
 ### [Installation errors](installation_errors.md)
+### [Before you buy](before-you-buy-faqs.md)
 ### [Boundaries](boundary-questions.md)
 ### [Headset connectivity](headset-connectivity.md)
 ### [Headset display](headset-display.md)
