@@ -1,5 +1,5 @@
 ---
-title: Updating your SteamVR application
+title: Updating SteamVR apps for Windows Mixed Reality
 description: Best practices for updating your SteamVR application to maximize compatiblity with Windows Mixed Reality headsets.
 author: thmignon
 ms.author: thmignon
@@ -9,7 +9,7 @@ keywords: SteamVR, Compatibility, porting, HoloLens 1st gen, mixed reality heads
 ---
 
 
-# Updating your SteamVR application
+# Updating SteamVR apps for Windows Mixed Reality
 We encourage developers to test and optimize their SteamVR experiences to run on Windows Mixed Reality headsets. This documentation covers common improvements developers can make to ensure that their experience runs great on Windows Mixed Reality.
 
 ## Initial setup instructions

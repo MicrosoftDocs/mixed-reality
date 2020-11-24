@@ -1,5 +1,5 @@
 ---
-title: Get your existing app ready for HoloLens 2
+title: Get HoloLens (1st Gen) apps ready for HoloLens 2
 description: Designed for developers who have an existing app on HoloLens (1st gen) and/or older MRTK who are looking to port to MRTK version 2 and HoloLens 2.
 author: grbury
 ms.author: grbury
@@ -9,7 +9,7 @@ ms.localizationpriority: high
 keywords: Windows Mixed Reality, test, MRTK, MRTK version 2, HoloLens 2, unity, porting, HoloLens 1st gen, mixed reality headset, windows mixed reality headset, virtual reality headset, migration, best practices, ARM
 ---
 
-# Get your existing app ready for HoloLens 2
+# Get HoloLens (1st Gen) apps ready for HoloLens 2
 
 ## Overview
 

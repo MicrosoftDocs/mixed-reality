@@ -10,13 +10,13 @@
   items:
   - name: Porting overview
     href: porting-apps/porting-overview.md
-  - name: Get your existing app ready for HoloLens 2
+  - name: Get HoloLens (1st Gen) apps ready for HoloLens 2
     href: unity/mrtk-porting-guide.md
-  - name: Porting guide for immersive apps
+  - name: Porting VR apps to Windows Mixed Reality
     href: porting-apps/porting-guides.md
-  - name: Updating for SteamVR
+  - name: Updating SteamVR apps for Windows Mixed Reality
     href: porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md
-  - name: Updating 2D UWP apps for Mixed Reality
+  - name: Updating 2D UWP apps for Windows Mixed Reality
     href: porting-apps/building-2d-apps.md
 - name: Unity
   items:
