@@ -10,8 +10,6 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, dev
 ---
 # HoloLens Photo/Video Camera in Unreal
 
-## Overview
-
 [!INCLUDE[](includes/tabs-pv-camera.md)]
 
 ## Next Development Checkpoint
