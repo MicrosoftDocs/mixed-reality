@@ -1,4 +1,4 @@
-# [4.25](#tab/4.25)
+# [4.25](#tab/425)
 
 The HoloLens has a Photo/Video (PV) Camera that is used for both Mixed Reality Capture (MRC) and can be used by an app to access real-world visuals. 
 
@@ -52,7 +52,7 @@ To render the camera image:
 
 ![Camera Texture](../images/unreal-camera-material.PNG)
 
-# [4.26](#tab/4.26)
+# [4.26](#tab/426)
 
 The HoloLens has a PV camera on the visor which can be rendered in the Unreal scene, or used to locate objects in Unreal world space from pixel coordinates in the camera frame. 
 

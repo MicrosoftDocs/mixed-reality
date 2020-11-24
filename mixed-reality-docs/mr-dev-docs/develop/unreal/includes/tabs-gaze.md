@@ -1,4 +1,4 @@
-# [4.25](#tab/4.25)
+# [4.25](#tab/425)
 
 The [Windows Mixed Reality plugin](https://docs.unrealengine.com/Platforms/VR/WMR/index.html) doesn’t provide any built-in functions for gaze input, but HoloLens 2 does support eye tracking. The actual tracking features are provided by Unreal's **Head Mounted Display** and **Eye Tracking** APIs and include:
 
@@ -27,7 +27,7 @@ Gaze input needs to be enabled in the HoloLens project settings before you can u
 
 That's all the setup you'll need to start adding gaze input to your HoloLens 2 apps in Unreal. More information on gaze input and how it affects users in mixed reality can be found at the links below. Be sure to think about these when building your interactive experiences.
 
-# [4.26](#tab/4.26)
+# [4.26](#tab/426)
 
 Gaze is used to indicate what the user is looking at.  This uses the eye tracking cameras on the device to find a ray in Unreal world space matching what the user is currently looking at.
 
