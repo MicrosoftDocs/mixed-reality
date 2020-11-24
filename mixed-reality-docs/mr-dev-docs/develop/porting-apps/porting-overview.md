@@ -15,6 +15,8 @@ When it comes to porting or upgrading your existing projects for Mixed Reality, 
 
 ## Recommended development setups
 
+It's important to keep your projects up-to-date, whether or not your porting an app to another target device. Refer to the engine-based resources listed below for our current recommendations.
+
 ### Unity
 
 Our current recommendation for Unity development with Mixed Reality is **Unity 2019 LTS using the Legacy XR package**. If you're project uses the Mixed Reality Toolkit, double-check that you're on the latest version, which is currently **MRTK-Unity 2.5**.
@@ -34,7 +36,7 @@ If you have an existing HoloLens (1st Gen) Unity application that you'd like to 
 
 ### Windows Mixed Reality headsets
 
-If you've built content for other devices, such as the Oculus Rift or HP Reverb G2, you'll need to re-target vendor-specific VR SDKs and potentially input mapping APIs. You can find information for both Unity and Unreal porting scenarios in our [immersive apps porting guide](porting-guide.md).
+If you've built content for other devices, such as the Oculus Rift or HP Reverb G2, you'll need to re-target vendor-specific VR SDKs and potentially input mapping APIs. You can find information for both Unity and Unreal porting scenarios in our [immersive apps porting guide](porting-guides.md).
 
 ### SteamVR applications
 
