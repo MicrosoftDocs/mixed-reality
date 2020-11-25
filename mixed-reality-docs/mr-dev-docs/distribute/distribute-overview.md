@@ -46,12 +46,12 @@ Getting your apps into the hands of your users or out into the world is the most
     <td>✔️</td>
     <td>❌</td>
 </tr>
-<!-- <tr>
+<tr>
     <td><a href="https://docs.microsoft.com/hololens/app-deploy-app-installer"><strong>Company Portal</strong></a></td>
     <td>❌</td>
     <td>❌</td>
     <td>✔️</td>
-</tr> -->
+</tr>
 <tr>
     <td><a href="https://docs.microsoft.com/hololens/app-deploy-intune"><strong>MDM - Required App Install</strong></a></td>
     <td>❌</td>
@@ -78,12 +78,15 @@ Getting your apps into the hands of your users or out into the world is the most
 </tr>
 </table>
 
+> [!IMPORTANT]
+> App Installer isn't currently available for managed devices or HoloLens (1st Gen) devices.
+
 > [!NOTE]
 > If you're using development-time scenarios that require Developer Mode to be enabled, refer to the following resources: 
-> * [Visual Studio](https://docs.microsoft.com/hololens/holographic-custom-apps#deploying-from-microsoft-visual-studio-2015)
-> * [Device Portal](https://docs.microsoft.com/hololens/holographic-custom-apps#installing-an-application-package-with-the-device-portal)
+> * [Deploying and debugging with Visual Studio](../develop/platform-capabilities-and-apis/using-visual-studio.md)
+> * [Installing an application package with the Device Portal](https://docs.microsoft.com/hololens/holographic-custom-apps#installing-an-application-package-with-the-device-portal)
 
-If you need to lock down your HoloLens 2 application for distribution or deployment in secure environments, refer to the [offline secure HoloLens 2](https://docs.microsoft.com/hololens/hololens-common-scenarios-offline-secure) instructions or instal the app through a Provisioning Package without enabling developer mode.
+If you need to install a HoloLens 2 application while you're offline, refer to the [offline secure HoloLens 2](https://docs.microsoft.com/hololens/hololens-common-scenarios-offline-secure) instructions or instal the app through a Provisioning Package without enabling developer mode.
 
 ## See also
 * [Finding, installing, and uninstalling applications from the Microsoft Store](https://docs.microsoft.com/hololens/holographic-store-apps)
