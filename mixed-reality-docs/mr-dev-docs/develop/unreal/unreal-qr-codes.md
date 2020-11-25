@@ -10,8 +10,6 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, dev
 ---
 # QR codes in Unreal
 
-## Overview
-
 The HoloLens 2 can see QR codes in world space using the webcam, which renders them as holograms using a coordinate system at each code's real-world position.  In addition to single QR codes, HoloLens 2 can also render holograms in the same location on multiple devices to create a shared experience. Make sure you're following the best practices for adding QR codes to your applications:
 
 - Quiet zones
@@ -19,6 +17,9 @@ The HoloLens 2 can see QR codes in world space using the webcam, which renders t
 - Size, distance, and angular position
 
 Pay special attention to the [environment considerations](../../environment-considerations-for-hololens.md) when QR codes are being placed in your app. You can find more information on each of these topics and instructions on how to download the required NuGet package in the main [QR code tracking](../platform-capabilities-and-apis/qr-code-tracking.md) document.
+
+> [!CAUTION]
+> QR codes are the only type of images that can be tracked by HoloLens out of the box - Unreal's **UARTrackedImage** module isn't supported on HoloLens. If you need to track custom images, you can access the device's [webcam](unreal-hololens-camera.md) and process images using a third party image recognition library. 
 
 ## Enabling QR detection
 Since the HoloLens 2 needs to use the webcam to see QR codes, you'll need to enable it in the project settings:
@@ -29,7 +30,7 @@ You'll also need to opt into QR code tracking by [adding an ARSessionConfig asse
 
 Right before the usage, you should manually enable the tracking by calling `UHoloLensARFunctionLibrary::StartCameraCapture()`. After ending the QR code tracking, you should disable it by `UHoloLensARFunctionLibrary::StopCameraCapture()` to save the device resources.
 
-## Setting up a tracked image
+## Setting up a tracked QR code
 
 QR codes are surfaced through Unreal’s AR tracked geometry system as a tracked image. To get this working, you'll need to:
 1. Create a Blueprint and add an **ARTrackableNotify** component.
@@ -45,7 +46,7 @@ QR codes are surfaced through Unreal’s AR tracked geometry system as a tracked
 
 ![Add node to On Add Tracked Geometry](images/unreal-qr-codes-tracked-geometry.png)
 
-## Using a tracked image
+## Using a tracked QR code
 The Event Graph in the following image shows the **OnUpdateTrackedImage** event being used to render a point in the center of a QR code and print out its data.
 
 ![QR Render Example](images/unreal-qr-render.PNG)
