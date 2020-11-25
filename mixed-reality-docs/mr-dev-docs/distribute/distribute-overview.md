@@ -15,17 +15,17 @@ keywords: HoloLens, Mixed Reality, immersive headsets, app, uwp, submit, submiss
 
 Getting your apps into the hands of your users or out into the world is the most important, and sometimes painstaking, part of any development effort. We've simplified process into a set of resources listed below, all of which depend on the distribution and deployment scenario that's best suited for you or your team.
 
+[!INCLUDE[](includes/before-submission.md)]
+
 ## Distribution options
 
 > [!IMPORTANT]
-> * There are no restrictions for installing on a local device.
-> 
-> * If you're sharing your app with another party, you need to build and supply the appx file. No extra permissions are required.
+> * If you're sharing your app with another party, you need to build and supply the appx file. 
+>     * If you're using App Installer, you'll also need to share the certificate with the user.
 > 
 > * If you're sharing with an organization, you need a work or school account and access to the organizations [MDM (Mobile Device Management)](https://docs.microsoft.com/hololens/hololens-enroll-mdm) infrastructure. 
-
-> [!NOTE]
-> If you're app target is a Windows Mixed Reality headset, you can either build straight from Unity or Unreal and choose one of the options below, or create a .exe file and distribute however you like. 
+>    * If you're the sharing party, you need to be an Admin in your tenant and use the [Microsoft Endpoint Manager admin center](https://docs.microsoft.com/mem/intune/apps/apps-deploy) to make the app available.
+>    * If you're the end user, you need to enroll with the sharing organization's tenant. 
 
 <table>
 <colgroup>
@@ -40,24 +40,18 @@ Getting your apps into the hands of your users or out into the world is the most
     <td><strong>Share with anyone</strong></td>
     <td><strong>Share with an organization</strong></td>
 </tr>
-<!-- <tr>
-    <td><a href="https://docs.microsoft.com/hololens/app-deploy-app-installer"><strong>App Installer</strong></a></td>
+<tr>
+    <td><a href="https://docs.microsoft.com/hololens/app-deploy-app-installer"><strong>App Installer</strong></a> (through <a href="https://docs.microsoft.com/hololens/hololens-insider">Windows Insider builds</a>)</td>
     <td>✔️</td>
     <td>✔️</td>
     <td>❌</td>
-</tr> -->
+</tr>
 <!-- <tr>
     <td><a href="https://docs.microsoft.com/hololens/app-deploy-app-installer"><strong>Company Portal</strong></a></td>
     <td>❌</td>
     <td>❌</td>
     <td>✔️</td>
 </tr> -->
-<tr>
-    <td><a href="https://docs.microsoft.com/hololens/holographic-custom-apps#installing-an-application-package-with-the-device-portal"><strong>Device Portal</strong></a></td>
-    <td>✔️</td>
-    <td>✔️</td>
-    <td>❌</td>
-</tr>
 <tr>
     <td><a href="https://docs.microsoft.com/hololens/app-deploy-intune"><strong>MDM - Required App Install</strong></a></td>
     <td>❌</td>
@@ -82,44 +76,14 @@ Getting your apps into the hands of your users or out into the world is the most
     <td>✔️</td>
     <td>✔️</td>
 </tr>
-<tr>
-    <td><a href="https://docs.microsoft.com/hololens/holographic-custom-apps#deploying-from-microsoft-visual-studio-2015"><strong>Visual Studio</strong></a></td>
-    <td>✔️</td>
-    <td>❌</td>
-    <td>❌</td>
-</tr>
 </table>
 
-If you need to lock down your HoloLens 2 application for distribution or deployment in secure environments, refer to the [offline secure HoloLens 2](https://docs.microsoft.com/hololens/hololens-common-scenarios-offline-secure) instructions, which include the following restrictions:
+> [!NOTE]
+> If you're using development-time scenarios that require Developer Mode to be enabled, refer to the following resources: 
+> * [Visual Studio](https://docs.microsoft.com/hololens/holographic-custom-apps#deploying-from-microsoft-visual-studio-2015)
+> * [Device Portal](https://docs.microsoft.com/hololens/holographic-custom-apps#installing-an-application-package-with-the-device-portal)
 
-* Disable WiFi.
-* Disable BlueTooth.
-* Disable Microphones.
-* Prevents adding or removing provisioning packages.
-* No user can enable any of the above restricted components.
-
-## Designing 3D app launchers for VR 
-
-3D app launchers appear as objects in the Windows Mixed Reality home environment that appears whenever a user puts on an immersive headset. These objects are yours to create and customize however you like, but it's recommended that you start with our [design guidance](../3d-app-launcher-design-guidance.md) article to get the hang of good design practices, including scaling, type, color choice, texturing, and above all making it stand out in a virtual environment.
-
-### Modeling and exporting 3D app launchers
-
-Once you're set on the idea for your 3D app launcher, you need to make sure it meets the Microsoft Store requirements, including asset file format, triangle count, texture sizes, animation length, and asset optimization. This process can be highly technical, so we recommend using our [3D model creation](../creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) article to check all the boxes. Assets that don't to meet this authoring specification won't be rendered in the Windows Mixed Reality home.
-
-### Adding 3D app launchers in your apps
-
-After you've ensured that your 3D app launcher meets the Windows Mixed Reality authoring guidelines, it can be used to override the default 2D launcher for your application in the Windows Mixed Reality home environment. The process for integrating a 3D app launcher into your application depends on the type of application you're developing:
-
-* [UWP apps](../implementing-3d-app-launchers.md)
-* [Win32 apps](../implementing-3d-app-launchers-win32.md)
-
-### [Optional] Placing 3D models in the Windows Mixed Reality home
-
-As an added bonus, some 2D applications let you place 3D models directly into the Windows Mixed Reality home as decorations or for further inspection in full 3D. The add model protocol lets you to send a 3D model from your website or application to the Windows Mixed Reality home, where it'll persist like 3D app launchers, 2D apps, and holograms. Check out [how to place 3D models in the Windows Mixed Reality home](../enable-placement-of-3d-models-in-the-home.md) to find more details and instructions on how to liven up your own apps.
-
-## Integrating In-app purchases
-
-If you're looking to monetize your Mixed Reality experiences, check out our [In-app purchases](in-app-purchases.md) article.
+If you need to lock down your HoloLens 2 application for distribution or deployment in secure environments, refer to the [offline secure HoloLens 2](https://docs.microsoft.com/hololens/hololens-common-scenarios-offline-secure) instructions or instal the app through a Provisioning Package without enabling developer mode.
 
 ## See also
 * [Finding, installing, and uninstalling applications from the Microsoft Store](https://docs.microsoft.com/hololens/holographic-store-apps)
