@@ -2,7 +2,7 @@
 title: UMG and keyboard in Unreal
 description: Learn how to use Unrealm Motion Graphics to create a UI system out of widgets.
 author: hferrone
-ms.author: sw5813
+ms.author: Summer.Wu
 ms.date: 11/25/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, HoloLens 2, eye tracking, gaze input, head mounted display, Unreal engine, mixed reality headset, windows mixed reality headset, virtual reality headset, widgets, UI, UMG, Unreal Motion Graphics, Unreal Engine, UE, UE4
