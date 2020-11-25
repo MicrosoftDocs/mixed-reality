@@ -11,7 +11,14 @@ keywords: porting, unity, middleware, engine, UWP, Win32
 
 # Porting overview
 
-When it comes to porting or upgrading your existing projects for Mixed Reality, several scenarios may apply depending on whether your app was built with Unity or Unreal Engine, HoloLens (1st Gen) or HoloLens 2, or SteamVR. This overview page contains our current recommendations for each platform and device - be sure to check back as these processes are always changing. 
+When it comes to porting or upgrading your existing projects for Mixed Reality, several scenarios may apply depending on whether your app was built with Unity or Unreal Engine, HoloLens (1st Gen) or HoloLens 2, or SteamVR. This overview page contains our current recommendations for each platform and device - be sure to check back as these processes are always changing.
+
+First, choose a development setup based on our [Unity](#unity) and [Unreal](#unreal) recommendations, then follow one or more of our porting scenarios:
+
+- [HoloLens (1st Gen) to HoloLens 2](#hololens-1st-gen-unity-apps-to-hololens-2)
+- [Windows Mixed Reality headsets](#windows-mixed-reality-headsets)
+- [SteamVR apps](#steamvr-applications)
+- [2D UWP apps](#2d-universal-windows-applications)
 
 ## Recommended development setups
 
