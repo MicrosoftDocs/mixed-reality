@@ -1,22 +1,26 @@
 ---
 title: Designing holograms
-description: 
+description: Learn about Mixed Reality through Microsoft's new Designing Holograms application.
 author: hferrone
-ms.author: mazeller
+ms.author: daescu
 ms.date: 11/24/2020
 ms.topic: article
-keywords: MRTK, Mixed Reality Toolkit, holograms, mixed reality headset, virtual reality headset, what is virtual reality
+keywords: MRTK, Mixed Reality Toolkit, holograms, Designing Holograms, learning, sample app, mixed reality headset, virtual reality headset, what is virtual reality
 ---
 
 
 # The making of Designing Holograms
+
+> [!NOTE]
+> Please allow for a small loading window to account for all the cool GIFs and embedded videos on this page.
 
 Learn the fundamentals of Mixed Reality UX Design by experiencing it yourself. The unique approach of the Designing Holograms app dives into Mixed Reality behaviors, tips, and recommendations to help you create engaging and amazing HoloLens apps. Download this free app from the Microsoft Store and learn from Microsoft’s Mixed Reality Design Team!​
 
 ![Animated GIF of the head tracking scene in the Designing Hologram's demo room](images/designing-holograms/demo-room.gif)
 *Designing Hologram’s demo room (also known as the doll house)​*
 
-Boot up your HoloLens 2 and [download Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) from the Microsoft Store and enjoy learning Mixed Reality User Experience Design.
+> [!div class="nextstepaction"]
+> [Download the Designing Holograms app](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd)
 
 ## Mixed Reality design is hard
 
@@ -27,7 +31,7 @@ This is the most challenging aspect of Mixed Reality development, designing apps
 ![Image from the HoloLens 2 Design Workshop in San Francisco](images/designing-holograms/workshop.jpeg)
 *Image from the HoloLens 2 Design Workshop in San Francisco​*
 
-## An opportunity to teach MR in MR
+## An opportunity to teach Mixed Reality in Mixed Reality
 
 It wasn’t obvious at first, but this was an excellent opportunity to use Mixed Reality as a Medium to teach it.​
 
@@ -63,7 +67,7 @@ So we tried out a mini 1:10 scale and the result was this fantastic birds-eye vi
 
 ## Using Mixed Reality Capture
 
-One of the most characteristic features of this app is that we used a Mixed reality Capture to teach and demonstrate mr design concepts.​
+One of the most characteristic features of this app is that we used a Mixed reality Capture to teach and demonstrate Mixed Reality design concepts.​
 
 Microsoft has two Mixed Reality Capture studios, one in Redmond and the other in San Francisco. Microsoft also licenses this technology  to other studios including Avatar Dimension in Washington D.C., Metastage in Los Angeles, Dimension Studios in London, SK Telecom in Seoul and Volucap in Berlin. You can find more information on our [Mixed Reality Capture Studios here](https://www.microsoft.com/mixed-reality/capture-studios).​
 
@@ -99,43 +103,9 @@ The second one, was animating objects to sync with a capture’s movement. In di
 ![Synced animation between a Mixed Reality Capture and UI panel](images/designing-holograms/synced-objects.gif)
 *Synced animation between a Mixed Reality Capture and UI panel​*
 
-<!-- ## Core concepts
-
-### Holographic frame
-
-![](images/designing-holograms/FOVandFOI.gif)
-
-### Coordinate systems
-
-![](images/designing-holograms/CoordinateSystems.gif)
-
-### Eye tracking
-
-![](images/designing-holograms/EyeTracking.gif)
-
-### Room scan visualization / Spatial mapping
-
-![](images/designing-holograms/SpatialMapping.gif)
-
-### Scene understanding
-
-![](images/designing-holograms/SceneUnderstanding.gif)
-
-### Point and Commit with hands (handRays)
-
-![](images/designing-holograms/HandRays.gif)
-
-### Attention Directors
-
-### Gaze Targeting
-
-### Gaze and Dwell (hands free)
-
-### Direct Manipulation with hands -->
-
 ### UI creative process
 
-When we started ideating the Ui design, besides from transporting information we also wanted to show some of the magic and the possibilities that holograms have to offer. Simply showing static 2D windows and text boxes doesn’t feel right in the 3D world and doesn’t show much of the possibilities at hand, so right from the beginning we decided to move away from that and make full use of holographic 3D space.​
+When we started ideating the UI design, besides from transporting information we also wanted to show some of the magic and the possibilities that holograms have to offer. Simply showing static 2D windows and text boxes doesn’t feel right in the 3D world and doesn’t show much of the possibilities at hand, so right from the beginning we decided to move away from that and make full use of holographic 3D space.​
 
 At first, we started with adding some thickness to the panels and icons in addition to text information. Still, as a user, what I see is a text box. Text boxes with images, but we are not quite there. We went further by then making use of the MRTK shaders. The MRTK shaders became a powerful tool, and we made use of its stencil features, some may know it as the portal effect, to add negative depth to the panels. That means instead of adding elements in front of a text box, the icons now appear behind a transparent panel. What I see now as a user is something that I just can’t replicate anymore in the real world, and this is where holographic magic started to happen. Also as a user I don’t really like to read, I do that a lot already in the physical world.​
 
@@ -145,7 +115,7 @@ Obviously icons work a lot better than simple text does, so in order to provide 
 
 ## "Try it out" moments
 
-Designing Holograms teaches MR concepts, but it also allows you to try them in your room. So after some of those explanations, we pause and take you out from the doll house, and into an interactive moment where you can be hands on. Here are some examples of those interactive moments.​
+Designing Holograms teaches Mixed Realityconcepts, but it also allows you to try them in your room. So after some of those explanations, we pause and take you out from the doll house, and into an interactive moment where you can be hands on. Here are some examples of those interactive moments.​
 
 ![Animated GIF of the hand tracking frame showing when hands are detected and when they enter the field of view](images/designing-holograms/try-out-1.gif)
 *The hand tracking frame showing when hands are detected and when they enter the field of view.​*
@@ -171,3 +141,6 @@ Designing Holograms teaches MR concepts, but it also allows you to try them in y
 <td style="border-style: none"><b>Martin Wettig​</b><br><i>Senior 3D Artist</i><br>Martin leads 3D Art and UI Design on Designing Holograms and was previously a Senior 3D Artist in one of Microsoft’s Mixed Reality Studios in Berlin.​</td>
 </tr>
 </table>
+
+> [!div class="nextstepaction"]
+> [Download the Designing Holograms app](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd)
