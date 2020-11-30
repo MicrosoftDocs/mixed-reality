@@ -25,7 +25,7 @@ There are two concerns to address to ensure tracking will work well for you:
 
 ## How much light is enough light?
 
-A good rule of thumb is if you can comfortably move around in the environment without feeling it is too dark and if you can observe the features on another persons face from across the room, then the tracking system probably has enough light.
+A good rule of thumb is if you can comfortably move around in the environment without feeling it is too dark and if you can observe the features on another persons face from across the room, then the tracking system probably has enough light. Bear in mind there is such thing as too much light - if you are looking into the sun, the cameras can get saturated and then won't be able to track reliably. 
 
 ## What is the recommended amount of environmental features?
 
@@ -37,7 +37,7 @@ The device is designed to support motion in excess of what is normally experienc
 
 ## Where will tracking not work?
 
-Tracking will not work in a dark room where the cameras will not be able to see enough features due to low light. Tracking will generally not perform well (or sometimes work at all) in moving vehicles such as airplanes, buses, trains, cars or elevators.
+Tracking will not work in a dark room where the cameras will not be able to see enough features due to low light. Tracking will generally not perform well (or sometimes work at all) in moving vehicles such as airplanes, buses, trains, cars or elevators. Furthermore, in situations where there is too much light, or a strong light difference, tracking can fail. For example, if there is a direct stream of sunlight into a room, the cameras may lower exposure to reduce saturation from that, and then not be able to see regular natural features. A good rule of thumb here is relatively even lighting, and if you have to squint or find things uncomfortably bright, then the tracking system may not do well. 
 
 ## What is the difference between 3DOF and 6DOF?
 
