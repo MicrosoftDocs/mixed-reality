@@ -42,7 +42,7 @@ Designing Holograms is a visual experience that explains mixed reality design co
 
 <br>
 
-> [!VIDEO images/designing-holograms/teaching-mr.mp4]
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Designing-Holograms-app-trailer/player]
 
 *Designing Holograms trailer video​*
 
@@ -50,7 +50,7 @@ Designing Holograms is a visual experience that explains mixed reality design co
 
 The doll house is the virtual environment we use throughout the app, an 80 x 60 x 40-cm miniature room that contains the basic elements that most rooms have in common, like walls, lamps, furniture, a table, and a TV. The doll house is the main protagonist of the app experience, so we needed to make sure that it would work great in any environment. Think of it as a small demo room for visualizing all sorts of mixed reality concepts.
 
-> [!VIDEO images/designing-holograms/dollhouse.mp4]
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Dollhouse-adjustment-behavior-in-the-Designing-Holograms-app/player]
 *Video of the Dollhouse adjustment behavior​*
 
 ### 1:1 vs 1:10 prototypes
@@ -77,14 +77,14 @@ Microsoft has a Mixed Reality Capture studio in San Francisco. Microsoft also li
 
 <br>
 
-> [!VIDEO images/designing-holograms/raw-capture.mp4]
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Raw-capture-footage-for-the-Designing-Holograms-app/player]
 *Raw footage of Daniel Escudero from one of the 106 cameras in the Mixed Reality Capture Studio in San Francisco.​*
 
 The capture process generates a keyframed mesh, normals, and texture, which can be delivered as OBJ/PNG files for further post-production, or ready for playback as an H.264 compressed MP4 file. These files can be imported into Unity, Unreal, native, and WebXR and run on Windows, iOS, Mac, Android, Magic Leap, and Playstation VR.​
 
 <br>
 
-> [!VIDEO images/designing-holograms/capture-player.mp4]
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Mixed-Reality-Capture-footage-for-the-Designing-Holograms-app/player]
 *The Capture Player provided to analyze mp4s that contain video with audio and embedded meshes.​*
 
 ## Manipulating captures and virtual objects
