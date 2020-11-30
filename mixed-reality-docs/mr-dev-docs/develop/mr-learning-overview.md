@@ -42,6 +42,7 @@ Whether you're just starting or an experienced professional, our hands-on approa
 Import the Mixed Reality Toolkit into your Unity project to accelerate your mixed reality development.
 
 **Learning objectives**
+
 By the end of this module you will be able to:
 
 * Configure Unity for Windows Mixed Reality Development
@@ -55,6 +56,7 @@ By the end of this module you will be able to:
 Create a language translator application for your Mixed Reality device (Windows Mixed Reality, HoloLens 2, etc.) by using Cognitive Services.
 
 **Learning objectives**
+
 By the end of this module, you'll be able to:
 
 * Configure a Unity project for the Speech service in Azure Cognitive Services
