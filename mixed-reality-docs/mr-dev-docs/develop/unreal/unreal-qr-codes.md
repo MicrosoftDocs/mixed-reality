@@ -25,19 +25,18 @@ Pay special attention to the [environment considerations](../../environment-cons
 Since the HoloLens 2 needs to use the webcam to see QR codes, you'll need to enable it in the project settings:
 - Open **Edit > Project Settings**, scroll to the **Platforms** section and click **HoloLens**.
     + Expand the **Capabilities** section and check **Webcam**.  
+- You'll also need to opt into QR code tracking by [adding an ARSessionConfig asset](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset).
 
-You'll also need to opt into QR code tracking by [adding an ARSessionConfig asset](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset).
-
-Right before the usage, you should manually enable the tracking by calling `UHoloLensARFunctionLibrary::StartCameraCapture()`. After ending the QR code tracking, you should disable it by `UHoloLensARFunctionLibrary::StopCameraCapture()` to save the device resources.
+[!INCLUDE[](includes/tabs-qr-codes.md)]
 
 ## Setting up a tracked QR code
 
 QR codes are surfaced through Unreal’s AR tracked geometry system as a tracked image. To get this working, you'll need to:
-1. Create a Blueprint and add an **ARTrackableNotify** component.
+1. Create an Actor Blueprint and add an **ARTrackableNotify** component:
 
 ![QR AR Trackable Notify](images/unreal-spatialmapping-artrackablenotify.PNG)
 
-2. Select **ARTrackableNotify** and expand the **Events** section in the **Details** panel.
+2. Select **ARTrackableNotify** and expand the **Events** section in the **Details** panel:
 
 ![QR Events](images/unreal-spatialmapping-events.PNG)
 
