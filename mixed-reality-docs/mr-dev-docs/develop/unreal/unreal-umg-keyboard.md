@@ -11,7 +11,7 @@ keywords: Windows Mixed Reality, holograms, HoloLens 2, eye tracking, gaze input
 
 # UMG and keyboard in Unreal
 
-Unreal Motion Graphics (UMG) is Unreal Engine’s built-in UI system, used to create interfaces such as menus and text boxes. User interfaces built with UMG consist of widgets. This guide will show you how to create a new widget, add it to world space, and enable interaction with that widget in mixed reality, using the system keyboard as an example. You can learn more about UMG in the official Unreal Engine documentation (https://docs.unrealengine.com/en-US/Engine/UMG/index.html). 
+Unreal Motion Graphics (UMG) is Unreal Engine’s built-in UI system, used to create interfaces such as menus and text boxes. User interfaces built with UMG consist of widgets. This guide will show you how to create a new widget, add it to world space, and enable interaction with that widget in mixed reality, using the system keyboard as an example. You can learn more about UMG in the official Unreal Engine [documentation](https://docs.unrealengine.com/en-US/Engine/UMG/index.html). 
 
 ## Create a new widget
 

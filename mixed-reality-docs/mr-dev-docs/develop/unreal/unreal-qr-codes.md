@@ -27,18 +27,7 @@ Since the HoloLens 2 needs to use the webcam to see QR codes, you'll need to ena
     + Expand the **Capabilities** section and check **Webcam**.  
 - You'll also need to opt into QR code tracking by [adding an ARSessionConfig asset](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset).
 
-### UE 4.25
-
-If you're using UE 4.25, we recommend using the following blueprint setup to add a small delay, because QR code tracking must be initialized AFTER starting an AR Session:
-
-![Blueprint of the Toggle ARCapture function with delay](images/qr-codes-img-01.png)
-
-### UE 4.26
-
-If you're using UE 4.26, refer to the following blueprint setup:
-
-![Blueprint of the Toggle ARCapture function with delay for UE 4.26](images/qr-codes-img-02.png)
-
+[!INCLUDE[](includes/tabs-qr-codes.md)]
 
 ## Setting up a tracked QR code
 

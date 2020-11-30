@@ -1,10 +1,5 @@
 # [4.25](#tab/425)
 
-The HoloLens has a Photo/Video (PV) Camera that is used for both Mixed Reality Capture (MRC) and can be used by an app to access real-world visuals. 
-
-> [!IMPORTANT]
-> The PV Camera isn't supported with Holographic Remoting, but it's possible to use a webcam attached to your PC to simulate the HoloLens PV Camera functionality.
-
 ## Render from the PV Camera for MRC
 
 > [!NOTE]
@@ -52,14 +47,9 @@ To render the camera image:
 
 ![Camera Texture](../images/unreal-camera-material.PNG)
 
-# [4.26](#tab/426)
-
-The HoloLens has a PV camera on the visor which can be rendered in the Unreal scene, or used to locate objects in Unreal world space from pixel coordinates in the camera frame. 
+# [4.26](#tab/426) 
 
 ## PV Camera Feed Setup
-
-> [!IMPORTANT]
-> The camera feed from the HoloLens will only work on device and not over remoting.
 
 - In **Project Settings > HoloLens**, enable the **Webcam** capability:
 

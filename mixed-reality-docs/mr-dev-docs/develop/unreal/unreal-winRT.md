@@ -9,6 +9,8 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remotin
 ---
 # WinRT in Unreal
 
+Over the course of your HoloLens development you may need to write a feature using WinRT. For example, opening a file dialogue in a HoloLens application would need the FileSavePicker in winrt/Windows.Storage.Pickers.h header file. WinRT is supported in Unreal's build system from version 4.26 onwards.
+
 [!INCLUDE[](includes/tabs-winRT.md)]
 
 ## Next Development Checkpoint

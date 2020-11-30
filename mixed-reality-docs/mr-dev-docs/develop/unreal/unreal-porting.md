@@ -1,6 +1,6 @@
 ---
-title: Unreal Development Overview
-description: Overview of mixed reality development using Unreal Engine 4
+title: Upgrading projects in Unreal
+description: Overview of version upgrade steps and deprecated APIs in Unreal projects.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 11/23/2020
@@ -10,9 +10,11 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, dev
 ---
 
 
-# Upgrading your Unreal versions
+# Upgrading projects in Unreal
 
 When updating to a new version of Unreal, deprecated functions will show up as warnings when compiling the blueprint or packaging the project.  Functions are deprecated when a new function has been added that should be used instead. 
+
+## 4.26 upgrades
  
 In 4.26, all AR and VR platforms have been refactored to add common interfaces and keep application code platform agnostic.  Because of this refactor, HoloLens projects updating to 4.26 may see more warnings than usual.  Updating to the new APIs is recommended so the project can be more easily ported to other platforms.
 

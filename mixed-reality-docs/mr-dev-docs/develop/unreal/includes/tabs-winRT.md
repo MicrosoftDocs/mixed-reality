@@ -1,6 +1,6 @@
 # [4.25](#tab/425)
 
-Over the course of your HoloLens development you may need to write a feature using WinRT. For example, opening a file dialogue in a HoloLens application would need the FileSavePicker in winrt/Windows.Storage.Pickers.h header file.  Since Unreal doesn't natively compile WinRT code, it's your job to build a separate binary and that can be consumed by Unreal’s build system. This tutorial will walk you through just such a scenario.
+Unreal doesn't natively compile WinRT code in version 4.25, so it's your job to build a separate binary and that can be consumed by Unreal’s build system. This tutorial will walk you through just such a scenario.
 
 ## Objectives
 - Create a Universal Windows DLL that opens a FileSaveDialogue
@@ -283,8 +283,6 @@ When Unreal calls OpenFileDialogue, a File Dialogue opens on the HoloLens prompt
 We encourage you to use the code in this tutorial as a starting point for consuming WinRT code in Unreal.  It allows users to save files to the HoloLens disk using the same file dialogue as Windows.  Follow the same process to export any additional functions from the HoloLensWinrtDLL header and used in Unreal.  Note the DLL code that waits on any async WinRT code in a background MTA thread, which avoids deadlocking the Unreal game thread. 
 
 # [4.26](#tab/426)
-
-Over the course of your HoloLens development you may need to write a feature using WinRT. For example, opening a file dialogue in a HoloLens application would need the FileSavePicker in winrt/Windows.Storage.Pickers.h header file. Starting from 4.26 Unreal natively support WinRT in its build system. 
 
 ## The standard WinRT APIs
 
