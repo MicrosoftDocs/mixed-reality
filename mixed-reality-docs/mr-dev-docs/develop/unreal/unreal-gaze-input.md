@@ -11,7 +11,92 @@ keywords: Windows Mixed Reality, holograms, HoloLens 2, eye tracking, gaze input
 
 # Gaze Input
 
-[!INCLUDE[](includes/tabs-gaze.md)]
+Gaze is used to indicate what the user is looking at.  This uses the eye tracking cameras on the device to find a ray in Unreal world space matching what the user is currently looking at.
+
+## Enabling eye tracking
+
+- In **Project Settings > HoloLens**, enable the **Gaze Input** capability:
+
+![Screenshot of HoloLens project setting capabilities with gaze input highlighted](images/unreal-gaze-img-01.png)
+
+- Create a new actor and add it to your scene
+
+> [!NOTE] 
+> HoloLens eye tracking in Unreal only has a single gaze ray for both eyes instead of the two rays needed for stereoscopic tracking, which is not supported.
+
+## Using eye tracking
+
+First check that the device supports eye tracking with the IsEyeTrackerConnected function.  If this returns true, call GetGazeData to find where the user’s eyes are looking at during the current frame:
+
+![Blueprint of the Is Eye Tracking Connected function](images/unreal-gaze-img-02.png)
+
+> [!NOTE]
+> The fixation point and the confidence value are not available on HoloLens.
+
+To find what the user is looking at, use the gaze origin and direction in a line trace.  The start of this vector is the gaze origin and the end is the origin plus the gaze direction multiplied by the desired distance:
+
+![Blueprint of the Get Gaze Data function](images/unreal-gaze-img-03.png)
+
+## Getting head orientation
+
+Alternatively, the HMD rotation can be used to represent the direction of the user’s head.  This does not require the Gaze Input capability but won't give you any eye tracking information.  A reference to the blueprint must be added as the world context to get the correct output data:
+
+> [!NOTE]
+> Getting HMD Data is only available in Unreal 4.26 and onwards.
+
+![Blueprint of the Get HMDData function](images/unreal-gaze-img-04.png)
+
+## Using C++ 
+
+- In your game’s build.cs file, add “EyeTracker” to the PublicDependencyModuleNames list:
+
+```cpp
+PublicDependencyModuleNames.AddRange(
+    new string[] {
+        "Core",
+        "CoreUObject",
+        "Engine",
+        "InputCore",
+        "EyeTracker"
+});
+```
+
+- In “File/ New C++ Class”, Create a new C++ actor called “EyeTracker”
+    - A Visual Studio solution will open to the new EyeTracker class. Build and run to open the Unreal game with the new EyeTracker actor.  Search for “EyeTracker” in the “Place Actors” window.  Drag and drop this class into the game window to add it to the project:
+
+![Screenshot of an actor with the place actor window open](images/unreal-gaze-img-06.png)
+
+- In EyeTracker.cpp, add includes for EyeTrackerFunctionLibrary, and DrawDebugHelpers:
+
+```cpp
+#include "EyeTrackerFunctionLibrary.h"
+#include "DrawDebugHelpers.h"
+```
+
+In Tick, check that the device supports eye tracking with UEyeTrackerFunctionLibrary::IsEyeTrackerConnected.  Then find the start and end of a ray for a line trace from UEyeTrackerFunctionLibrary::GetGazeData:
+
+```cpp
+void AEyeTracker::Tick(float DeltaTime)
+{
+    Super::Tick(DeltaTime);
+
+    if(UEyeTrackerFunctionLibrary::IsEyeTrackerConnected())
+    {
+        FEyeTrackerGazeData GazeData;
+        if(UEyeTrackerFunctionLibrary::GetGazeData(GazeData))
+        {
+            FVector Start = GazeData.GazeOrigin;
+            FVector End = GazeData.GazeOrigin + GazeData.GazeDirection * 100;
+
+            FHitResult Hit Result;
+            if (GWorld->LineTraceSingleByChannel(HitResult, Start, End, ECollisionChannel::ECC_Visiblity))
+            {
+                DrawDebugCoordinateSystem(GWorld, HitResult.Location, FQuat::Identity.Rotator(), 10);
+            }
+        }
+    }
+}
+```
 
 ## Next Development Checkpoint
 
