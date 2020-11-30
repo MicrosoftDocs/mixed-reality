@@ -20,7 +20,7 @@ First, choose a development setup based on our [Unity](#unity) and [Unreal](#unr
 - [SteamVR apps](#steamvr-applications)
 - [2D UWP apps](#2d-universal-windows-applications)
 
-## Recommended development setups
+## Recommended project targets
 
 It's important to keep your projects up-to-date, whether or not your porting an app to another target device. Refer to the engine-based resources listed below for our current recommendations.
 
@@ -28,8 +28,13 @@ It's important to keep your projects up-to-date, whether or not your porting an 
 
 Our current recommendation for Unity development with Mixed Reality is **Unity 2019 LTS using the Legacy XR package**. If your project uses the Mixed Reality Toolkit, double-check that you're on the latest version, which is currently **MRTK-Unity 2.5**.
 
-> [!IMPORTANT]
-> While the XRSDK is available with this version of Unity, Azure Spatial Anchors is not currently compatible with this setup. This recommendation will be updated with a future release of the Azure Spatial Anchors package for Unity. If you're currently using the XRSDK in your project and want to use Azure Spatial Anchors, uninstall XRSDK and reinstall the Legacy XR package to revert your project settings.
+> [!CAUTION]
+> While the XR SDK is available with this version of Unity, Azure Spatial Anchors is not currently compatible with this setup. This recommendation will be updated with a future release of the Azure Spatial Anchors package for Unity. 
+> 
+> * If you don't need Azure Spatial Anchors, you can [configure your Unity project for XR](https://docs.unity3d.com/Manual/configuring-project-for-xr.html) and [get started with MRTK and XR SDK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithMRTKAndXRSDK.html).
+> 
+> * If you're currently using the XR SDK in your project and want to use Azure Spatial Anchors, uninstall XR SDK and reinstall the Legacy XR package to revert your project settings.
+
 
 ### Unreal 
 

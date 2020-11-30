@@ -949,7 +949,12 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/mrtk-porting-guide.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-porting-guide",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/porting-hl1-hl2",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/mrtk-porting-guide.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/porting-hl1-hl2",
 			"redirect_document_id": true
 		},
 		{
