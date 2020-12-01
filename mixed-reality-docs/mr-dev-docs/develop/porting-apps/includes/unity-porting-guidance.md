@@ -87,7 +87,8 @@ Algorithm is based on a blog by Daniel Smilkov: [Largest rectangle in a polygon]
 ### 8. Work through your input model
 
 Each game or application targeting an existing HMD will have a set of inputs that it handles, types of inputs that it needs for the experience, and specific APIs that it calls to get those inputs. We've invested in trying to make it as simple and straightforward as possible to take advantage of the inputs available in Windows Mixed Reality.
-1. Read through the **Input porting guide for Unity** in the adjacent tab for details of how Windows Mixed Reality exposes input, and how that maps to what your application may do today.
+
+Read through the [Input porting guide for Unity](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/porting-apps/porting-guides?tabs=input) in the adjacent tab for details of how Windows Mixed Reality exposes input, and how that maps to what your application may do today.
 
 ### 9. Performance testing and tuning
 
