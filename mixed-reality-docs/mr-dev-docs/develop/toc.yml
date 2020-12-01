@@ -2,6 +2,8 @@
   href: development.md
 - name: Azure Cloud Services
   href: mixed-reality-cloud-services.md
+- name: OpenXR overview
+  href: openxr-overview.md
 - name: Mixed Reality Learning overview
   href: mr-learning-overview.md
 - name: Install the tools
@@ -26,6 +28,8 @@
     items: 
       - name: Getting started with MRTK
         href: unity/mrtk-getting-started.md
+      - name: Getting started with OpenXR
+        href: unity/openxr-getting-started.md
       - name: Configure Unity project for Windows Mixed Reality
         href: unity/configure-unity-project.md
   - name: Tutorials
