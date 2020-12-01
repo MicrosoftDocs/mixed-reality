@@ -11,7 +11,7 @@ keywords: HoloLens, Mixed Reality, immersive headsets, app, uwp, submit, submiss
 
 # Distributing your apps
 
-![Floaty bird 3D app lancher in WMR home](images/20171016-151526-mixedreality1-1200px-1000px.jpg)
+![Floaty bird 3D app lancher in WMR home](images/distribute-hero-image.png)
 
 Getting your apps into the hands of your users or out into the world is the most important, and sometimes painstaking, part of any development effort. We've simplified process into a set of resources listed below, all of which depend on the distribution and deployment scenario that's best suited for you or your team.
 
