@@ -27,7 +27,7 @@ Since the HoloLens 2 needs to use the webcam to see QR codes, you'll need to ena
     + Expand the **Capabilities** section and check **Webcam**.  
 - You'll also need to opt into QR code tracking by [adding an ARSessionConfig asset](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset).
 
-[!INCLUDE[](includes/tabs-qr-codes.md)]
+[!INCLUDE[](includes/tabs-qr-codes-1.md)]
 
 ## Setting up a tracked QR code
 
@@ -48,7 +48,7 @@ QR codes are surfaced through Unreal’s AR tracked geometry system as a tracked
 ## Using a tracked QR code
 The Event Graph in the following image shows the **OnUpdateTrackedImage** event being used to render a point in the center of a QR code and print out its data.
 
-![QR Render Example](images/unreal-qr-render.PNG)
+[!INCLUDE[](includes/tabs-qr-codes-2.md)]
 
 Here's what's going on:
 1. First, the tracked image is cast to an **ARTrackedQRCode** to check that the current updated image is a QR code.  
