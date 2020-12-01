@@ -86,6 +86,9 @@ Algorithm is based on a blog by Daniel Smilkov: [Largest rectangle in a polygon]
 
 ### 8. Work through your input model
 
+> [!CAUTION]
+> If you're project is using any of the XR.WSA APIs, these are being phased out in favor of the XR SDK in future Unity releases. You can find more i
+
 Each game or application targeting an existing HMD will have a set of inputs that it handles, types of inputs that it needs for the experience, and specific APIs that it calls to get those inputs. We've invested in trying to make it as simple and straightforward as possible to take advantage of the inputs available in Windows Mixed Reality.
 1. Read through the **Input porting guide for Unity** in the adjacent tab for details of how Windows Mixed Reality exposes input, and how that maps to what your application may do today.
 2. Choose whether you're going to leverage Unity's cross-VR-SDK input API, or the MR-specific input API. The general Input.GetButton/Input.GetAxis APIs are used by Unity VR apps today for [Oculus input](https://docs.unity3d.com/Manual/OculusControllers.html) and [OpenVR input](https://docs.unity3d.com/Manual/OpenVRControllers.html). If your apps are already using these APIs for motion controllers, this is the easiest path - you should just need to remap buttons and axes in the Input Manager.
@@ -106,6 +109,9 @@ You can port your input logic to Windows Mixed Reality using one of two approach
 > If you're using HP Reverb G2 controllers, please refer to [this article](../../unity/unity-reverb-g2-controllers.md) for additional input mapping instructions.
 
 ## General Input.GetButton/GetAxis APIs
+
+> [!CAUTION]
+> If you're project is using any of the XR.WSA APIs, these are being phased out in favor of the XR SDK in future Unity releases. You can find more information about the [XR Input system and APIs here](https://docs.unity3d.com/Manual/xr_input.html).
 
 Unity currently uses its general Input.GetButton/Input.GetAxis APIs to expose input for [the Oculus SDK](https://docs.unity3d.com/Manual/OculusControllers.html) and [the OpenVR SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html). If your apps are already using these APIs for input, this is the easiest path for supporting motion controllers in Windows Mixed Reality: you should just need to remap buttons and axes in the Input Manager.
 

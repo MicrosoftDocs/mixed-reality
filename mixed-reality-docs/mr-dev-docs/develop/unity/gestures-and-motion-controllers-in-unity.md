@@ -15,6 +15,10 @@ There are two key ways to take action on your [gaze in Unity](gaze-in-unity.md),
 
 Unity provides two primary ways to access spatial input data for Windows Mixed Reality, the common *Input.GetButton/Input.GetAxis* APIs that work across multiple Unity XR SDKs, and an *InteractionManager/GestureRecognizer* API specific to Windows Mixed Reality that exposes the full set of spatial input data available.
 
+## API deprecation
+
+If you're project is using any of the XR.WSA APIs, these are being phased out in favor of the XR SDK in future Unity releases. You can find more information about the [XR Input system and APIs here](https://docs.unity3d.com/Manual/xr_input.html).
+
 ## Unity button/axis mapping table
 
 The button and axis IDs in the table below are supported in Unity's Input Manager for Windows Mixed Reality motion controllers through the *Input.GetButton/GetAxis* APIs, while the "Windows MR-specific" column refers to properties available off of the *InteractionSourceState* type. Each of these APIs are described in detail in the sections below.
