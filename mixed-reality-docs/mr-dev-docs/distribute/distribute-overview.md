@@ -23,9 +23,9 @@ Getting your apps into the hands of your users or out into the world is the most
 > * If you're sharing your app with another party, you need to build and supply the appx file. 
 >     * If you're using App Installer, you'll also need to share the certificate with the user.
 > 
-> * If you're sharing with an organization, you need a work or school account and access to the organizations [MDM (Mobile Device Management)](https://docs.microsoft.com/hololens/hololens-enroll-mdm) infrastructure. 
->    * If you're the sharing party, you need to be an Admin in your tenant and use the [Microsoft Endpoint Manager admin center](https://docs.microsoft.com/mem/intune/apps/apps-deploy) to make the app available.
->    * If you're the end user, you need to enroll with the sharing organization's tenant. 
+> * If you're sharing with an organization, you need a work or school account and access to the organizations [MDM (Mobile Device Management)](https://docs.microsoft.com/hololens/hololens-enroll-mdm) infrastructure.  
+>    * If you're the sharing party, you need to be an Admin in your tenant and use the [Microsoft Endpoint Manager admin center](https://docs.microsoft.com/mem/intune/apps/apps-deploy) to make the app available. Another option is to share the appx file and the app dependencies with your end user.
+>    * If you're the end user, the app will either automatically download or be available for download once you enroll with the sharing organization's tenant. 
 
 <table>
 <colgroup>
@@ -47,7 +47,7 @@ Getting your apps into the hands of your users or out into the world is the most
     <td>❌</td>
 </tr>
 <tr>
-    <td><a href="https://docs.microsoft.com/hololens/app-deploy-app-installer"><strong>Company Portal</strong></a></td>
+    <td><a href="https://docs.microsoft.com/hololens/app-deploy-app-installer"><strong>MDM - Company Portal</strong></a></td>
     <td>❌</td>
     <td>❌</td>
     <td>✔️</td>
@@ -76,17 +76,24 @@ Getting your apps into the hands of your users or out into the world is the most
     <td>✔️</td>
     <td>✔️</td>
 </tr>
+<tr>
+    <td><a href="#additional-scenarios"><strong>Custom Win32 deployment</strong></a> (Windows Mixed Reality only - see below)</td>
+    <td>✔️</td>
+    <td>✔️</td>
+    <td>❌</td>
+</tr>
 </table>
 
 > [!IMPORTANT]
 > App Installer isn't currently available for managed devices or HoloLens (1st Gen) devices.
 
-> [!NOTE]
-> If you're using development-time scenarios that require Developer Mode to be enabled, refer to the following resources: 
-> * [Deploying and debugging with Visual Studio](../develop/platform-capabilities-and-apis/using-visual-studio.md)
-> * [Installing an application package with the Device Portal](https://docs.microsoft.com/hololens/holographic-custom-apps#installing-an-application-package-with-the-device-portal)
+## Additional scenarios
 
-If you need to install a HoloLens 2 application while you're offline, refer to the [offline secure HoloLens 2](https://docs.microsoft.com/hololens/hololens-common-scenarios-offline-secure) instructions or instal the app through a Provisioning Package without enabling developer mode.
+* For Win32 application deployment, including Steam and Game Pass, you can produce a Win32 .EXE file using the PC Standalone build target from Unity and submit your apps as normal to your chosen platform. 
+
+* If you need to install a HoloLens 2 application while you're offline, refer to the [offline secure HoloLens 2](https://docs.microsoft.com/hololens/hololens-common-scenarios-offline-secure) instructions or instal the app through a Provisioning Package without enabling developer mode.
+
+* You can also deploy builds to your device and share them with other developers who have Developer Mode enabled by [deploying and debugging with Visual Studio](../develop/platform-capabilities-and-apis/using-visual-studio.md) or [installing an application package with the Device Portal](https://docs.microsoft.com/hololens/holographic-custom-apps#installing-an-application-package-with-the-device-portal).
 
 ## See also
 * [Finding, installing, and uninstalling applications from the Microsoft Store](https://docs.microsoft.com/hololens/holographic-store-apps)

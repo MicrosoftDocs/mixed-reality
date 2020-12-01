@@ -6,9 +6,6 @@ If you have a HoloLens application, choose your preferred [distribution option](
 
 If you're working with an immersive application that targets a Windows Mixed Reality headset, create a 3D app launcher, then choose your preferred [distribution option](../distribute-overview.md#distribution-options) from the table below. If you're publishing to the Microsoft Store, you have the option of adding [In-app purchases](../in-app-purchases.md) to monetize your content.
 
-> [!NOTE]
-> For custom Win32 and Steam application deployment, you can simply produce a Win32 .EXE file targeting the PC Standalone build target from Unity and submit your apps to your chosen platform. 
-
 ### Designing 3D app launchers for VR 
 
 3D app launchers appear as objects in the Windows Mixed Reality home environment that appears whenever a user puts on an immersive headset. These objects are yours to create and customize however you like, but it's recommended that you start with our [design guidance](../3d-app-launcher-design-guidance.md) article to get the hang of good design practices, including scaling, type, color choice, texturing, and above all making it stand out in a virtual environment.
