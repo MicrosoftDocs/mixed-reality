@@ -3,7 +3,7 @@ title: Holographic Remoting Version History
 description: Version History for Holographic Remoting on HoloLens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 01/12/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
