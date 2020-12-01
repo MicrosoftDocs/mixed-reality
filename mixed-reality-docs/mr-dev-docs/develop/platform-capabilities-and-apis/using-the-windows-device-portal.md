@@ -27,55 +27,68 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 ## Setting up HoloLens to use Windows Device Portal
 
 1. Power on your HoloLens and put on the device.
+
 2. Perform the [Start gesture](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) for HoloLens2 or [Bloom](https://docs.microsoft.com/hololens/hololens1-basic-usage#open-the-start-menu-with-bloom) on HoloLens (1st Gen) to launch the main menu. 
+
 3. Gaze at the **Settings** tile and perform the [air-tap](https://docs.microsoft.com/hololens/hololens1-basic-usage#select-holograms-with-gaze-and-air-tap) gesture on HoloLens (1st Gen) or select it on HoloLens 2 by [touching it or using a Hand ray](https://docs.microsoft.com/hololens/hololens2-basic-usage). 
+
 4. Select the **Update** menu item.
+
 5. Select the **For developers** menu item.
+
 6. Enable **Developer Mode**.
 
-> [!IMPORTANT]
-> If you're in multi-user and not an admin, the ability to enter Developer Mode may be grayed out. Please ensure that you are an **[admin on the device](https://docs.microsoft.com/hololens/security-adminless-os)**.
+   > [!IMPORTANT]
+   > If you're in multi-user and not an admin, the ability to enter Developer Mode may be grayed out. Please ensure that you are an **[admin on the device](https://docs.microsoft.com/hololens/security-adminless-os)**.
 
 7. [Scroll down](../../design/gaze-and-commit.md#composite-gestures) and enable **Device Portal**.
+
 8. If you are setting up Windows Device Portal so you can deploy apps to this HoloLens over USB or Wi-Fi, click **Pair** to [generate a pairing PIN](using-visual-studio.md). Leave the Settings app at the PIN popup until you enter the PIN into Visual Studio during your first deployment.
 
-![Enabling developer mode in the Settings app for Windows Holographic](images/using-windows-portal-img-01.jpg)
+   ![Enabling developer mode in the Settings app for Windows Holographic](images/using-windows-portal-img-01.jpg)
 
 ## Connecting over Wi-Fi
 
 1. [Connect your HoloLens to Wi-Fi](../../connecting-to-wi-fi-on-hololens.md).
+
 2. Look up your device's IP address by either:
    * Going to **Settings > Network & Internet > Wi-Fi > Advanced Options**.
    * Going to **Settings > Network & Internet** and selecting **Hardware properties**.
 
-![HoloLens 2 settings](images/using-windows-portal-img-02.jpg)
+   ![HoloLens 2 settings](images/using-windows-portal-img-02.jpg)
 
 3. From a web browser on your PC, go to https://<YOUR_HOLOLENS_IP_ADDRESS>
-   * The browser will display the following message: "There's a problem with this website's security certificate". This happens because the certificate which is issued to the Device Portal is a test certificate. You can ignore this certificate error for now and proceed.
+   
+   The browser will display the following message: "There's a problem with this website's security certificate". This happens because the certificate which is issued to the Device Portal is a test certificate. You can ignore this certificate error for now and proceed.
 
 ## Connecting over USB
 
 1. [Install the tools](../install-the-tools.md) to make sure you have Visual Studio with the Windows 10 developer tools installed on your PC to enable USB connectivity.
 
-> [!IMPORTANT]
-> If you're having issues with USB connectivity double check that the USB Device Connectivity optional component is installed as part of your **[Visual Studio tool package](../install-the-tools.md#installation-checklist)**.
+   > [!IMPORTANT]
+   > If you're having issues with USB connectivity double check that the USB Device Connectivity optional component is installed as part of your **[Visual Studio tool package](../install-the-tools.md#installation-checklist)**.
 
 2. Connect your HoloLens to your PC with a micro-USB cable for HoloLens (1st Gen) or USB-C for HoloLens 2.
+
 3. From a web browser on your PC, go to [https://127.0.0.1:10080](https://127.0.0.1:10080).
 
 ### Moving files over USB
 
 You can move files from your PC to your HoloLens without any additional setup.
-1. Connect your PC to your HoloLens with a USB cord
-2. Drag your files into **PC\\[Your_HoloLens_Device_Name]\Internal Storage** on your desktop
-3. Open the **Start Menu** and select **All apps > File Explorer** on your HoloLens
 
-> [!NOTE]
-> You may need to select **This device** on the left side of the panel to navigate away from "Recently used" to locate your files. 
+1. Connect your PC to your HoloLens with a USB cord.
+
+2. Drag your files into **PC\\[Your_HoloLens_Device_Name]\Internal Storage** on your desktop.
+
+3. Open the **Start Menu** and select **All apps > File Explorer** on your HoloLens.
+
+   > [!NOTE]
+   > You may need to select **This device** on the left side of the panel to navigate away from "Recently used" to locate your files. 
 
 ## Connecting to an emulator
 
 You can also use the Device Portal with your emulator. To connect to the Device Portal, use the [toolbar](using-the-hololens-emulator.md). Click on this icon:
+
 ![Open Device Portal icon](images/emulator-deviceportal.png) **Open Device Portal**: Open the Windows Device Portal for the HoloLens OS in the emulator.
 
 ## Creating a Username and Password
@@ -84,11 +97,17 @@ You can also use the Device Portal with your emulator. To connect to the Device 
 *Set up access to Windows Device Portal*
 
 The first time you connect to the Device Portal on your HoloLens, you will need to create a username and password.
+
 1. In a web browser on your PC, enter the IP address of the HoloLens. The Set up access page opens.
+
 2. Click or tap **Request pin** and look at the HoloLens display to get the generated PIN.
+
 3. Enter the PIN in the **PIN displayed on your device** textbox.
+
 4. Enter the user name you will use to connect to the Device Portal. It doesn't need to be a Microsoft Account (MSA) name or a domain name.
+
 5. Enter a password and confirm it. The password must be at least seven characters in length. It doesn't need to be an MSA or domain password.
+
 6. Click **Pair** to connect to Windows Device Portal on the HoloLens.
 
 If you wish to change this username or password at any time, you can repeat this process by visiting the device security page by  navigating to: https://<YOUR_HOLOLENS_IP_ADDRESS>/devicepair.htm.
@@ -98,20 +117,26 @@ If you wish to change this username or password at any time, you can repeat this
 If you see a "certificate error" in your browser, you can fix it by creating a trust relationship with the device.
 
 Each HoloLens generates a unique self-signed certificate for its SSL connection. By default, this certificate is not trusted by your PC's web browser and you may get a "certificate error". By downloading this certificate from your HoloLens (over USB or a Wi-Fi network you trust) and trusting it on your PC, you can securely connect to your device.
+
 1. **Make sure you are on a secure network (USB or a Wi-Fi network you trust).**
+
 2. Download this device's certificate from the "Security" page on the Device Portal.
-   * Navigate to: https://<YOUR_HOLOLENS_IP_ADDRESS>/devicepair.htm
-   * Open the node for System > Preferences. 
-   * Scroll down to Device Security, click the "Download this device's certificate" button.
+
+   1. Navigate to: https://<YOUR_HOLOLENS_IP_ADDRESS>/devicepair.htm
+   1. Open the node for System > Preferences. 
+   1. Scroll down to Device Security, click the "Download this device's certificate" button.
+   
 3. Install the certificate in the "Trusted Root Certification Authorities" store on your PC.
-   * From the Windows menu, type: Manage Computer Certificates and start the applet.
-   * Expand the **Trusted Root Certification Authority** folder.
-   * Click the **Certificates** folder.
-   * From the Action menu, select: All Tasks > Import...
-   * Complete the Certificate Import Wizard, using the certificate file you downloaded from the Device Portal.
+
+   1. From the Windows menu, type: Manage Computer Certificates and start the applet.
+   1. Expand the **Trusted Root Certification Authority** folder.
+   1. Click the **Certificates** folder.
+   1. From the Action menu, select: **All Tasks > Import**.
+   1. Complete the Certificate Import Wizard, using the certificate file you downloaded from the Device Portal.
+   
 4. Restart the browser.
 
->[!NOTE]
+> [!NOTE]
 > This certificate will only be trusted for the device and the user will have to go through the process again if the device is flashed.
 
 
@@ -135,10 +160,15 @@ The toolbar at the top of the page provides access to commonly used status and f
 
 The home page shows the following info:
 * **Device Status:** monitors the health of your device and reports critical errors.
+
 * **Windows information:** shows the name of the HoloLens and the currently installed version of Windows.
+
 * **Preferences** section contains the following settings:
+
    * **IPD**: Sets the interpupillary distance (IPD), which is the distance, in millimeters, between the center of the user's pupils when looking straight ahead. The setting takes effect immediately. The default value was calculated automatically when you set up your device.
+   
    * **Device name**: Assign a name to the HoloLens. You must reboot the device after changing this value for it to take effect. After clicking **Save**, a dialog will ask if you want to reboot the device immediately or reboot later.
+   
    * **Sleep settings**: Sets the length of time to wait before the device goes to sleep when it's plugged in and when it's on battery.
 
 ### 3D View
@@ -147,12 +177,16 @@ The home page shows the following info:
 *3D View page in Windows Device Portal on Microsoft HoloLens*
 
 Use the 3D View page to see how HoloLens interprets your surroundings. Navigate the view by using the mouse:
-* Rotate: left click + mouse;
-* Pan: right click + mouse;
+* Rotate: left click + mouse.
+
+* Pan: right click + mouse.
+
 * Zoom: mouse scroll.
+
 * **Tracking options**
    * Turn on continuous visual tracking by checking **Force visual tracking**. 
    * **Pause** stops visual tracking.
+   
 * **View options**: Set options on the 3D view:
   * **Tracking**: Indicates whether visual tracking is active.
   * **Show floor**: Displays a checkered floor plane.
@@ -162,7 +196,9 @@ Use the 3D View page to see how HoloLens interprets your surroundings. Navigate 
   * **Show spatial anchors**: Displays spatial anchors for the active app. You must click the Update button to get and refresh the anchors.
   * **Show details**: Displays hand positions, head rotation quaternions, and the device origin vector as they change in real time.
   * **Full screen button**: Shows the 3D View in full screen mode. Press ESC to exit full screen view.
+  
 * **Surface reconstruction**: Click or tap **Update** to display the latest spatial mapping mesh from the device. A full pass may take some time to complete (up to a few seconds). The mesh does not update automatically in the 3D view, and you must manually click **Update** to get the latest mesh from the device. Click **Save** to save the current spatial mapping mesh as an obj file on your PC.
+
 * **Spatial anchors**: Click Update to display or update the spatial anchors for the active app.
 
 ### Map Manager
@@ -190,26 +226,46 @@ To import maps and anchors, click **Upload a map file** and **Upload an anchor f
 *Mixed Reality Capture page in Windows Device Portal on Microsoft HoloLens*
 
 Use the Mixed Reality Capture page to save media streams from the HoloLens.
+
 * **Capture Settings**: Control the media streams that are captured by checking the following settings:
+
   * **Holograms**: Captures the holographic content in the video stream. Holograms are rendered in mono, not stereo.
+  
   * **PV camera**: Captures the video stream from the photo/video camera.
+  
   * **Mic Audio**: Captures audio from the microphone array.
+  
   * **App Audio**: Captures audio from the currently running app.
+  
   * **Render from Camera**: Aligns the capture to be from the perspective of the photo/video camera, if [supported by the running app](mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in) (HoloLens 2 only).
+  
   * **Live preview quality**: Select the screen resolution, frame rate, and streaming rate for the live preview.
+  
 * **Audio Settings** (HoloLens 2 only):
+
   * **Audio Media Category**: Select the category is used when processing the microphone. **Default**  will include some of the environment whereas **Communications** applies background noise cancellation.
+  
   * **App Audio Gain**: The gain applied to app audio's volume.
+  
   * **Mic Audio Gain**: The gain applied to mic audio's volume.
+  
 * **Photo and Video Settings** (HoloLens 2, version 2004 or later):
+
   * **Capture Profile**: Select the profile used when taking photos and videos. The profile determines which resolutions and frame-rates are available.
+  
   * **Photo Resolution**: The resolution the photo will be taken with.
+  
   * **Video Resolution and Frame-rate**: The resolution and frame-rate the video will be taken with.
+  
   * **Video Stabilization Buffer**: The buffer size used when taking a video. The higher the value, the better it can compensate for quick movements.
+  
 * Click or tap the **Live preview** button to show the capture stream. **Stop live preview** stops the capture stream.
+
 * Click or tap **Record** to start recording the mixed-reality stream, using the specified settings. **Stop recording** ends the recording and saves it.
 * Click or tap **Take photo** to take a still image from the capture stream.
+
 * Click or tap **Restore Default Settings** to restore the default settings for audio, photo, and video settings.
+
 * **Videos and photos**: Shows a list of video and photo captures taken on the device.
 
 All settings on this page apply to captures taken using Windows Device Portal, but some additionally apply to System MRC (start menu, hardware buttons, global voice commands, Miracast) and to custom MRC Recorders.
@@ -284,6 +340,7 @@ These are the available metrics:
 *Apps page in Windows Device Portal on Microsoft HoloLens*
 
 Manages the apps that are installed on the HoloLens.
+
 * **Installed apps**: Remove and start apps.
 * **Running apps**: Lists apps that are running currently.
 * **Install app**: Select app packages for installation from a folder on your computer/network.
@@ -321,20 +378,26 @@ Check the [Set up HoloLens in kiosk mode](https://docs.microsoft.com/hololens/ho
 Manages realtime Event Tracing for Windows (ETW) on the HoloLens.
 
 Check **Hide providers** to show the **Events** list only.
+
 * **Registered providers**: Select the ETW provider and the tracing level. Tracing level is one of these values:
-   1. Abnormal exit or termination
-   2. Severe errors
-   3. Warnings
-   4. Non-error warnings
+  - Abnormal exit or termination
+  - Severe errors
+  - Warnings
+  - Non-error warnings
 
 Click or tap **Enable** to start tracing. The provider is added to the **Enabled Providers** dropdown.
 * **Custom providers**: Select a custom ETW provider and the tracing level. Identify the provider by its GUID. Don't include brackets in the GUID.
+
 * **Enabled providers**: Lists the enabled providers. Select a provider from the dropdown and click or tap **Disable** to stop tracing. Click or tap **Stop all** to suspend all tracing.
+
 * **Providers history**: Shows the ETW providers that were enabled during the current session. Click or tap **Enable** to activate a provider that was disabled. Click or tap **Clear** to clear the history.
+
 * **Events**: Lists ETW events from the selected providers in table format. This table is updated in real time. Beneath the table, click the **Clear** button to delete all ETW events from the table. This does not disable any providers. You can click **Save to file** to export the currently collected ETW events to a CSV file locally.
+
 * **Filters**: Allow you to filter the ETW events collected by ID, Keyword, Level, Provider Name, Task Name, or Text. You can combine several criteria together:
-   1. For criteria applying to the same property, events that can satisfy any one of these criteria are shown.
-   2. For criteria applying to a different property, events must satisfy all of the criteria
+
+  - For criteria applying to the same property, events that can satisfy any one of these criteria are shown.
+  - For criteria applying to a different property, events must satisfy all of the criteria
 
 For example, you can specify the criteria *(Task Name contains 'Foo' or 'Bar') AND (Text contains 'error' or 'warning')*
 
@@ -344,9 +407,13 @@ For example, you can specify the criteria *(Task Name contains 'Foo' or 'Bar') A
 *Simulation page in Windows Device Portal on Microsoft HoloLens*
 
 Allows you to record and play back input data for testing.
+
 * **Capture room**: Used to download a simulated room file that contains the spatial mapping mesh for the user's surroundings. Name the room and then click **Capture** to save the data as a .xef file on your PC. This room file can be loaded into the HoloLens emulator.
+
 * **Recording**: Check the streams to record, name the recording, and click or tap **Record** to start recoding. Perform actions with your HoloLens and then click **Stop** to save the data as a .xef file on your PC. This file can be loaded on the HoloLens emulator or device.
+
 * **Playback**: Click or tap **Upload recording** to select a xef file from your PC and send the data to the HoloLens.
+
 * **Control mode**: Select **Default** or **Simulation** from the dropdown, and click or tap the **Set** button to select the mode on the HoloLens. Choosing "Simulation" disables the real sensors on your HoloLens and uses uploaded simulated data instead. If you switch to "Simulation", your HoloLens will not respond to the real user until you switch back to "Default".
 
 ### Networking
@@ -356,7 +423,9 @@ Allows you to record and play back input data for testing.
 
 Manages Wi-Fi connections on the HoloLens.
 * **WiFi adapters**: Select a Wi-Fi adapter and profile by using the dropdown controls. Click or tap **Connect** to use the selected adapter.
+
 * **Available networks**: Lists the Wi-Fi networks that the HoloLens can connect to. Click or tap **Refresh** to update the list.
+
 * **IP configuration**: Shows the IP address and other details of the network connection.
 
 ### Virtual Input
@@ -383,8 +452,8 @@ Everything in the device portal is built on top of [REST API's](device-portal-ap
 
 1. Select **Reset layout** from the top-left Menu:
 
-![Selecting Reset layout from the device portal menu](images/using-windows-portal-img-20.png)
+   ![Selecting Reset layout from the device portal menu](images/using-windows-portal-img-20.png)
 
 2. Click **Reset layout** under the **Reset workspace** heading. The portal page will automatically refresh and display your content.
 
-![Selecting Reset layout from the Reset workspace page](images/using-windows-portal-img-21.png)
+   ![Selecting Reset layout from the Reset workspace page](images/using-windows-portal-img-21.png)
