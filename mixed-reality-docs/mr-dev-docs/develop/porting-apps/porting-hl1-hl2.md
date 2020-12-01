@@ -115,7 +115,7 @@ In MRTK Version 2, you can simulate hand interactions directly in Unity as well 
 ## Updating your interaction model for HoloLens 2
 
 > [!CAUTION]
-> If you're project is using any of the XR.WSA APIs, these are being phased out in favor of the XR SDK in future Unity releases. You can find more information about the [XR Input system and APIs here](https://docs.unity3d.com/Manual/xr_input.html).
+> If your project is using any of the XR.WSA APIs, these are being phased out in favor of Unity's new XR input APIs in future Unity releases. You can find more information about the [XR input APIs here](https://docs.unity3d.com/Manual/xr_input.html).
 
 Once your application is ported and prepped for HoloLens 2, you're ready to consider updating your interaction model and hologram design placements.
 In HoloLens (1st gen), your application likely has a gaze and commit interaction model with holograms relatively far away to fit into the field of view.
