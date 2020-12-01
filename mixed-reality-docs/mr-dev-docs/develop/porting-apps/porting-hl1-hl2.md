@@ -1,5 +1,5 @@
 ---
-title: Get HoloLens (1st Gen) apps ready for HoloLens 2
+title: Porting HoloLens (1st Gen) apps to HoloLens 2
 description: Designed for developers who have an existing app on HoloLens (1st gen) and/or older MRTK who are looking to port to MRTK version 2 and HoloLens 2.
 author: hferrone
 ms.author: grbury
@@ -9,7 +9,7 @@ ms.localizationpriority: high
 keywords: Windows Mixed Reality, test, MRTK, MRTK version 2, HoloLens 2, unity, porting, HoloLens 1st gen, mixed reality headset, windows mixed reality headset, virtual reality headset, migration, best practices, ARM
 ---
 
-# Get HoloLens (1st Gen) apps ready for HoloLens 2
+# Porting HoloLens (1st Gen) apps to HoloLens 2
 
 ## Overview
 
@@ -113,6 +113,9 @@ For information on the specific API differences between HTK/MRTK and MRTK v2, se
 In MRTK Version 2, you can simulate hand interactions directly in Unity as well as develop with the new APIs for hand interactions and eye tracking. The HoloLens 2 device is required to create a satisfying user experience. You are encouraged to start studying the documentation and tools for greater understanding. [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) supports development on HoloLens (1st gen) and traditional input models, such as select via air-tap can be tested on HoloLens (1st gen). 
 
 ## Updating your interaction model for HoloLens 2
+
+> [!CAUTION]
+> If you're using 
 
 Once your application is ported and prepped for HoloLens 2, you're ready to consider updating your interaction model and hologram design placements.
 In HoloLens (1st gen), your application likely has a gaze and commit interaction model with holograms relatively far away to fit into the field of view.
