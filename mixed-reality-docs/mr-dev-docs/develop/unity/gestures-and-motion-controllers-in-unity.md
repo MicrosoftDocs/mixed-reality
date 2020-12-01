@@ -1,9 +1,9 @@
 ---
 title: Gestures and motion controllers in Unity
 description: Learn how to take action on your gaze in Unity with hand gestures and motion controllers.
-author: thetuvix
+author: hferrone
 ms.author: alexturn
-ms.date: 03/21/2018
+ms.date: 12/1/2020
 ms.topic: article
 keywords: gestures, motion controllers, unity, gaze, input, mixed reality headset, windows mixed reality headset, virtual reality headset, MRTK, Mixed Reality Toolkit
 ---
@@ -14,6 +14,12 @@ keywords: gestures, motion controllers, unity, gaze, input, mixed reality headse
 There are two key ways to take action on your [gaze in Unity](gaze-in-unity.md), [hand gestures](../../design/gaze-and-commit.md#composite-gestures) and [motion controllers](../../design/motion-controllers.md) in HoloLens and Immersive HMD. You access the data for both sources of spatial input through the same APIs in Unity.
 
 Unity provides two primary ways to access spatial input data for Windows Mixed Reality, the common *Input.GetButton/Input.GetAxis* APIs that work across multiple Unity XR SDKs, and an *InteractionManager/GestureRecognizer* API specific to Windows Mixed Reality that exposes the full set of spatial input data available.
+
+## Unity XR input APIs
+
+For new projects, we recommend using the new XR input APIs from the beginning. 
+
+You can find more information about the [XR APIs here](https://docs.unity3d.com/Manual/xr_input.html).
 
 ## Unity button/axis mapping table
 
@@ -209,6 +215,9 @@ Note that this represents the controller's grip pose (where the user holds the c
 Note that the relationship between this grip pose and the pointer pose (where the tip of the controller is pointing) may differ across controllers. At this moment, accessing the controller's pointer pose is only possible through the MR-specific input API, described in the sections below.
 
 ## Windows-specific APIs (XR.WSA.Input)
+
+> [!CAUTION]
+> If your project is using any of the XR.WSA APIs, these are being phased out in favor of the XR SDK in future Unity releases. For new projects, we recommend using the XR SDK from the beginning. You can find more information about the [XR Input system and APIs here](https://docs.unity3d.com/Manual/xr_input.html).
 
 **Namespace:** *UnityEngine.XR.WSA.Input*<br>
 **Types**: *InteractionManager*, *InteractionSourceState*, *InteractionSource*, *InteractionSourceProperties*, *InteractionSourceKind*, *InteractionSourceLocation*
