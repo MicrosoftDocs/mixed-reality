@@ -50,6 +50,10 @@ If you are seeing a 7-14 “something went wrong” error, please try the follow
 
 Sometimes during the resume process, the video card cannot establish a connection, so unplugging the USB Type C from your PC and plugging it back in may help to establish a connection.
 
+## My HP Motion Controller joystick will sometimes stick to one side
+
+This issue is corrected by fully depressing the joystick until it clicks and it will move freely.
+
 ## The Mixed Reality Portal says “Can't run mixed reality on this headset” but this worked fine with my previous WMR headset
 
 This may happen because your HP Reverb G2 requires a more powerful PC to ensure the best experience. For more information, please review the minimum [PC requirements](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
