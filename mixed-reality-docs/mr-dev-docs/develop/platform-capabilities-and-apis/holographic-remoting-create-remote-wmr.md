@@ -1,28 +1,28 @@
 ---
-title: Writing a Holographic Remoting remote app
+title: Writing a Holographic Remoting remote app (WMR)
 description: By creating a Holographic Remoting remote app remote content, that is rendered on a remote machine, can be streamed to HoloLens 2. This article describes how this can be achieved.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windows mixed reality headset, virtual reality headset, NuGet
 ---
 
 
-# Writing a Holographic Remoting remote app
+# Writing a Holographic Remoting remote app using the HolographicSpace API
 
 >[!IMPORTANT]
->This document describes the creation of a remote application for HoloLens 2. Remote applications for **HoloLens (1st gen)** must use NuGet package version **1.x.x**. This implies that remote applications written for HoloLens 2 are not compatible with HoloLens 1 and vice versa. The documentation for HoloLens 1 can be found [here](add-holographic-remoting.md).
+>This document describes the creation of a remote application for HoloLens 2 using the [HolographicSpace API](../native/getting-a-holographicspace.md). Remote applications for **HoloLens (1st gen)** must use NuGet package version **1.x.x**. This implies that remote applications written for HoloLens 2 are not compatible with HoloLens 1 and vice versa. The documentation for HoloLens 1 can be found [here](add-holographic-remoting.md).
 
-By creating a Holographic Remoting remote app, remote content that is rendered on a remote machine can be streamed to HoloLens 2. This article describes how this can be achieved. All code on this page and working projects can be found in the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+By creating a Holographic Remoting remote app, remote content that is rendered on a remote machine can be streamed to HoloLens 2 and immersive devices like Windows Mixed Reality headsets. This article describes how this can be achieved. All code on this page and working projects can be found in the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
-Holographic remoting allows an app to target HoloLens 2 with holographic content rendered on a desktop PC or on a UWP device such as the Xbox One, allowing access to more system resources and making it possible to integrate remote [immersive views](../../design/app-views.md) into existing desktop PC software. A remote app receives an input data stream from HoloLens 2, renders content in a virtual immersive view, and streams content frames back to HoloLens 2. The connection is made using standard Wi-Fi. Holographic Remoting is added to a desktop or UWP app via a NuGet packet. Additional code is required which handles the connection and renders in an immersive view.
+Holographic remoting allows an app to target HoloLens 2 and Windows Mixed Reality headsets with holographic content rendered on a desktop PC or on a UWP device such as the Xbox One, allowing access to more system resources and making it possible to integrate remote [immersive views](../../design/app-views.md) into existing desktop PC software. A remote app receives an input data stream from HoloLens 2, renders content in a virtual immersive view, and streams content frames back to HoloLens 2. The connection is made using standard Wi-Fi. Holographic Remoting is added to a desktop or UWP app via a NuGet packet. Additional code is required which handles the connection and renders in an immersive view.
 
 A typical remoting connection will have as low as 50 ms of latency. The player app can report the latency in real-time.
 
 ## Prerequisites
 
-A good starting point is a working DirectX based Desktop or UWP app which targets the Windows Mixed Reality API. For details see [DirectX development overview](../native/directx-development-overview.md). The [C++ holographic project template](../native/creating-a-holographic-directx-project.md) is a good starting point.
+A good starting point is a working DirectX based Desktop or UWP app which targets the [HolographicSpace API](../native/getting-a-holographicspace.md). For details see [DirectX development overview](../native/directx-development-overview.md). The [C++ holographic project template](../native/creating-a-holographic-directx-project.md) is a good starting point.
 
 >[!IMPORTANT]
 >Any app using Holographic Remoting should be authored to use a [multi-threaded apartment](https://docs.microsoft.com//windows/win32/com/multithreaded-apartments). The use of a [single-threaded apartment](https://docs.microsoft.com//windows/win32/com/single-threaded-apartments) is supported but will lead to sub-optimal performance and possibly stuttering during playback. When using C++/WinRT [winrt::init_apartment](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/get-started) a multi-threaded apartment is the default.
@@ -79,13 +79,13 @@ m_holographicSpace = winrt::Windows::Graphics::Holographic::HolographicSpace::Cr
 
 ## Connect to the device
 
-Once the remote app is ready for rendering content a connection to the device can be established.
+Once the remote app is ready for rendering content a connection to the player device can be established.
 
 Connection can be done in one of two ways.
 1) The remote app connects to the player running on the device.
 2) The player running on the device connects to the remote app.
 
-To establish a connection from the remote app to HoloLens 2 call the ```Connect``` method on the remote context specifying the hostname and port. The port used by the Holographic Remoting Player is **8265**.
+To establish a connection from the remote app to the player device call the ```Connect``` method on the remote context specifying the hostname and port. The port used by the Holographic Remoting Player is **8265**.
 
 ```cpp
 try
