@@ -3,7 +3,7 @@ title: Writing a custom Holographic Remoting player
 description: By creating a custom Holographic Remoting player app you can create an custom application capable of displaying content rendered on a remote machine to your HoloLens 2. This article describes how this can be achieved.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 30/11/2020
+ms.date: 01/12/2020
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, NuGet, app manifest, player context, remote app, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---

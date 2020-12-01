@@ -3,7 +3,7 @@ title: Enabling connection security for Holographic Remoting
 description: This page explains how to configure Holographic Remoting to use encrypted and authenticated connections between player and remote apps.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 30/11/2020
+ms.date: 01/12/2020
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windows mixed reality headset, virtual reality headset, security, authentication, server-to-client
 ---
