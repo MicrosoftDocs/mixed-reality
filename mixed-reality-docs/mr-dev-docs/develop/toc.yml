@@ -292,6 +292,8 @@
         href: unreal/unreal-hololens-camera.md
       - name: QR codes in Unreal
         href: unreal/unreal-qr-codes.md
+      - name: UMG and keyboard in Unreal
+        href: unreal/unreal-umg-keyboard.md
       - name: WinRT in Unreal
         href: unreal/unreal-winrt.md
   - name: Immersive VR 
@@ -308,6 +310,8 @@
     items: 
       - name: Deploy to device in Unreal
         href: unreal/unreal-deploying.md
+      - name: Upgrading projects in Unreal
+        href: unreal/unreal-porting.md
       - name: Performance recommendations for Unreal
         href: unreal/performance-recommendations-for-unreal.md
       - name: Material recommendations in Unreal 
