@@ -88,9 +88,6 @@ Algorithm is based on a blog by Daniel Smilkov: [Largest rectangle in a polygon]
 
 Each game or application targeting an existing HMD will have a set of inputs that it handles, types of inputs that it needs for the experience, and specific APIs that it calls to get those inputs. We've invested in trying to make it as simple and straightforward as possible to take advantage of the inputs available in Windows Mixed Reality.
 1. Read through the **Input porting guide for Unity** in the adjacent tab for details of how Windows Mixed Reality exposes input, and how that maps to what your application may do today.
-2. Choose whether you're going to leverage Unity's cross-VR-SDK input API, or the MR-specific input API. The general Input.GetButton/Input.GetAxis APIs are used by Unity VR apps today for [Oculus input](https://docs.unity3d.com/Manual/OculusControllers.html) and [OpenVR input](https://docs.unity3d.com/Manual/OpenVRControllers.html). If your apps are already using these APIs for motion controllers, this is the easiest path - you should just need to remap buttons and axes in the Input Manager.
-    * You can access motion controller data in Unity using either the general cross-VR-SDK Input.GetButton/Input.GetAxis APIs or the MR-specific UnityEngine.XR.WSA.Input APIs. (previously in the UnityEngine.XR.WSA.Input namespace in Unity 5.6)
-    * See the [example in Toolkit](https://github.com/Microsoft/HoloToolkit-Unity/pull/572) that combines gamepad and motion controllers.
 
 ### 9. Performance testing and tuning
 
@@ -103,15 +100,24 @@ Both [Unity](https://docs.unity3d.com/Manual/Profiler.html) and [Visual Studio](
 You can port your input logic to Windows Mixed Reality using one of two approaches, Unity's general Input.GetButton/GetAxis APIs that span across multiple platforms, or the Windows-specific XR.WSA.Input APIs that offer richer data specifically for motion controllers and HoloLens hands.
 
 > [!IMPORTANT]
-> If you're using HP Reverb G2 controllers, please refer to [this article](../../unity/unity-reverb-g2-controllers.md) for additional input mapping instructions.
+> If your using HP Reverb G2 controllers, please refer to [this article](../../unity/unity-reverb-g2-controllers.md) for additional input mapping instructions.
 
-## General Input.GetButton/GetAxis APIs
+## Unity XR input APIs
+
+For new projects, we recommend using the new XR input APIs from the beginning. 
+
+You can find more information about the [XR APIs here](https://docs.unity3d.com/Manual/xr_input.html).
+
+## Input.GetButton/GetAxis APIs
 
 Unity currently uses its general Input.GetButton/Input.GetAxis APIs to expose input for [the Oculus SDK](https://docs.unity3d.com/Manual/OculusControllers.html) and [the OpenVR SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html). If your apps are already using these APIs for input, this is the easiest path for supporting motion controllers in Windows Mixed Reality: you should just need to remap buttons and axes in the Input Manager.
 
 For more information, see the [Unity button/axis mapping table](../../unity/gestures-and-motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) and the [overview of the common Unity APIs](../../unity/gestures-and-motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis).
 
 ## Windows-specific XR.WSA.Input APIs
+
+> [!CAUTION]
+> If your project is using any of the XR.WSA APIs, these are being phased out in favor of the XR SDK in future Unity releases. For new projects, we recommend using the XR SDK from the beginning. You can find more information about the [XR Input system and APIs here](https://docs.unity3d.com/Manual/xr_input.html).
 
 If your app already builds custom input logic for each platform, you can choose to use the Windows-specific spatial input APIs under the **UnityEngine.XR.WSA.Input** namespace. This lets you access additional information, such as position accuracy or the source kind, letting you tell hands and controllers apart on HoloLens.
 

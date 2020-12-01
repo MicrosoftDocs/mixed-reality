@@ -1,9 +1,9 @@
 ---
 title: Add holographic remoting
 description: Explains how to use Holographic Remoting to render holograms to a HoloLens over the network.
-author: mikeriches
-ms.author: mriches
-ms.date: 05/24/2019
+author: florianbagarmicrosoft
+ms.author: flbagar
+ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, holographic remoting, remote rendering, network rendering, HoloLens, remote holograms, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
@@ -19,7 +19,7 @@ keywords: Windows Mixed Reality, holograms, holographic remoting, remote renderi
 HoloLens developers using Holographic Remoting will need to update their apps to make them compatible with HoloLens 2. This requires a new version of the Holographic Remoting NuGet package. If an application using the Holographic Remoting NuGet package with a version number smaller than 2.0.0.0 attempts to connect to the Holographic Remoting Player on HoloLens 2, the connection will fail.
 
 >[!NOTE]
->Guidance specific to HoloLens 2 can be found [here](holographic-remoting-create-host.md).
+>Guidance specific to HoloLens 2 can be found [here](holographic-remoting-create-remote-wmr.md).
 
 
 ## Add holographic remoting to your desktop or UWP app

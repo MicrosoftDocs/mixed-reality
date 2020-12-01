@@ -1,7 +1,7 @@
 ---
-title: Get your existing app ready for HoloLens 2
+title: Porting HoloLens (1st Gen) apps to HoloLens 2
 description: Designed for developers who have an existing app on HoloLens (1st gen) and/or older MRTK who are looking to port to MRTK version 2 and HoloLens 2.
-author: grbury
+author: hferrone
 ms.author: grbury
 ms.date: 07/29/2020
 ms.topic: article
@@ -9,7 +9,7 @@ ms.localizationpriority: high
 keywords: Windows Mixed Reality, test, MRTK, MRTK version 2, HoloLens 2, unity, porting, HoloLens 1st gen, mixed reality headset, windows mixed reality headset, virtual reality headset, migration, best practices, ARM
 ---
 
-# Get your existing app ready for HoloLens 2
+# Porting HoloLens (1st Gen) apps to HoloLens 2
 
 ## Overview
 
@@ -19,7 +19,7 @@ The sections below detail information for each stage:
 
 | Step 1 | Step 2 | Step 3 | Step 4 |
 |----------|-------------------|-------------------|-------------------|
-| ![Visual Studio logo](../images/visualstudio_logo.png) | ![Unity logo](../../design/images/logo-unity.png)| ![Unity icon](images/hololens2_icon.jpg) | ![MRTK logo](../../design/images/74-12.png) |
+| ![Visual Studio logo](../images/visualstudio_logo.png) | ![Unity logo](../../design/images/logo-unity.png)| ![Unity icon](../unity/images/hololens2_icon.jpg) | ![MRTK logo](../../design/images/74-12.png) |
 | Download latest tools | Update Unity Project | Compile for ARM | Migrate to MRTK v2
 
 Prerequisites:
@@ -50,7 +50,7 @@ To help clarify additional differences between [Unity 2018 LTS](https://unity3d.
 
 ## Update scene/project settings in Unity
 
-After updating to [Unity 2019 LTS](https://unity3d.com/unity/qa/lts-releases), it's recommended that you update particular settings in Unity for optimal results on the device. These settings are outlined in detail under [recommended settings for Unity](Recommended-settings-for-Unity.md).
+After updating to [Unity 2019 LTS](https://unity3d.com/unity/qa/lts-releases), it's recommended that you update particular settings in Unity for optimal results on the device. These settings are outlined in detail under [recommended settings for Unity](../unity/Recommended-settings-for-Unity.md).
 
 It should be reiterated that the [.NET scripting back-end](https://docs.unity3d.com/Manual/windowsstore-dotnet.html) is being deprecated in Unity 2018 and *removed* in Unity 2019. Developers should strongly consider switching their project to [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html).
 
@@ -104,7 +104,7 @@ For information on the specific API differences between HTK/MRTK and MRTK v2, se
     - This action eases future MRTK ingestions and updates.
 - Review and explore sample scenes provided in the MRTK, especially *HandInteractionExamples.scene*.
 - Rebuild canvas-based UI with quads, colliders, and TextMeshPro text.
-- Enable [Depth Buffer Sharing](camera-in-unity.md#sharing-your-depth-buffers-with-windows) or [set focus point](focus-point-in-unity.md); prefer to use a 16-bit depth buffer for better performance. Ensure when rendering color, to also render depth. Unity generally does not write depth for transparent and text gameobjects. 
+- Enable [Depth Buffer Sharing](../unity/camera-in-unity.md#sharing-your-depth-buffers-with-windows) or [set focus point](../unity/focus-point-in-unity.md); prefer to use a 16-bit depth buffer for better performance. Ensure when rendering color, to also render depth. Unity generally does not write depth for transparent and text gameobjects. 
 - Set Single Pass Instanced Rendering Path.
 - Utilize the [HoloLens 2 configuration profile for MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Profiles/Profiles.html#hololens-2-profile)
 
@@ -113,6 +113,9 @@ For information on the specific API differences between HTK/MRTK and MRTK v2, se
 In MRTK Version 2, you can simulate hand interactions directly in Unity as well as develop with the new APIs for hand interactions and eye tracking. The HoloLens 2 device is required to create a satisfying user experience. You are encouraged to start studying the documentation and tools for greater understanding. [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) supports development on HoloLens (1st gen) and traditional input models, such as select via air-tap can be tested on HoloLens (1st gen). 
 
 ## Updating your interaction model for HoloLens 2
+
+> [!CAUTION]
+> If your project is using any of the XR.WSA APIs, these are being phased out in favor of Unity's new XR input APIs in future Unity releases. You can find more information about the [XR input APIs here](https://docs.unity3d.com/Manual/xr_input.html).
 
 Once your application is ported and prepped for HoloLens 2, you're ready to consider updating your interaction model and hologram design placements.
 In HoloLens (1st gen), your application likely has a gaze and commit interaction model with holograms relatively far away to fit into the field of view.
@@ -148,6 +151,6 @@ Every application and scenario are different, and we’ll continue to refine and
 * [MRTK - Installation guide (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
 * [MRTK - Documentation home (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
 * [Porting from HoloToolkit/MRTK to MRTK version 2 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)
-* [Recommended settings for Unity](recommended-settings-for-unity.md)
+* [Recommended settings for Unity](../unity/recommended-settings-for-unity.md)
 * [Understanding performance for Mixed Reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 
