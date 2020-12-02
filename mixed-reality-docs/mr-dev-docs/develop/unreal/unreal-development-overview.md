@@ -12,7 +12,8 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remotin
 
 ![Unreal banner logo](../images/unreal_logo_banner.png)
 
-Getting started with <a href="https://docs.microsoft.com/windows/mixed-reality" target="_blank" title="Mixed Reality Docs"> mixed reality applications</a> is a big task. New concepts, platforms, and cutting edge hardware can seem like barriers. However, if you're an Unreal developer you're in luck. Support for <a href="https://www.microsoft.com/windows/windows-mixed-reality" target="_blank" title="Windows Mixed Reality Docs">Windows Mixed Reality</a> (VR) and <a href="https://www.microsoft.com/hololens/hardware" target="_blank" title="HoloLens 2 Docs">HoloLens 2</a> (AR) is now included in Unreal Engine's newest <a href="https://docs.unrealengine.com/Support/Builds/ReleaseNotes/4_25/index.html" target="_blank" title="Unreal Engine 4.25 release notes">release</a>. This update includes:
+Getting started with <a href="https://docs.microsoft.com/windows/mixed-reality" target="_blank" title="Mixed Reality Docs"> mixed reality applications</a> is a significant task. New concepts, platforms, and hardware can seem like barriers. However, if you're an Unreal developer you're in luck. Support for <a href="https://www.microsoft.com/windows/windows-mixed-reality" target="_blank" title="Windows Mixed Reality Docs">Windows Mixed Reality</a> (VR) and <a href="https://www.microsoft.com/hololens/hardware" target="_blank" title="HoloLens 2 Docs">HoloLens 2</a> (AR) is now included in Unreal Engine's newest <a href="https://docs.unrealengine.com/Support/Builds/ReleaseNotes/4_25/index.html" target="_blank" title="Unreal Engine 4.25 release notes">release</a>. This update includes:
+
 * Mixed Reality UX Tools plugin support
 * OpenXR support
 * App Remoting from a desktop app
@@ -20,14 +21,14 @@ Getting started with <a href="https://docs.microsoft.com/windows/mixed-reality" 
 * Mixed reality capture
 * Initial support for Azure Spatial Anchors
 
-If you're new to Unreal development don't jump in blind. Explore the Unreal <a href="https://docs.unrealengine.com/GettingStarted/index.html" target="_blank">tutorial series</a> to get up to speed and look for assets and support in the Unreal <a href="https://www.unrealengine.com/marketplace/store" target="_blank">marketplace</a> and mixed reality <a href="https://forums.unrealengine.com/development-discussion/vr-ar-development" target="_blank">forums</a>. These resources are your links to the community of builders and problem solvers in todays mixed reality market.
+If you're new to Unreal development, don't jump in blind. Explore the Unreal <a href="https://docs.unrealengine.com/GettingStarted/index.html" target="_blank">tutorial series</a> and look for assets in the Unreal <a href="https://www.unrealengine.com/marketplace/store" target="_blank">marketplace</a>. You can also find support in the mixed reality <a href="https://forums.unrealengine.com/development-discussion/vr-ar-development" target="_blank">forums</a>. These resources are your links to the community of builders and problem solvers in today's mixed reality market.
 
 > [!IMPORTANT]
 > Take a look at our **[porting guide](unreal-reverb-g2-controllers.md)** if you have an existing Unreal project that you want to bring over to immersive headsets such as the Reverb G2.
 
 ## Development checkpoints
 
-Use the following checkpoints to bring your Unreal games and applications into the world of mixed reality. If you haven't already explored the [Designing Holograms sample application](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd), we recommend downloading and using it to familiarize yourself with the basics of Mixed Reality UX.
+Use the following checkpoints to bring your Unreal games and applications into the world of mixed reality. If you haven't explored the [Designing Holograms sample application](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd), we recommend downloading it to familiarize yourself with the basics of Mixed Reality UX.
 
 ### 1. Getting started
 
@@ -39,7 +40,7 @@ By the end of this section, you'll have a basic understanding of the Mixed Reali
 
 |  Checkpoint  |  Outcome  |
 | --- | --- |
-| [Install the latest tools](../install-the-tools.md) | Download and install the latest version of Unreal Engine and setup your project for mixed reality |
+| [Install the latest tools](../install-the-tools.md) | Download and install the latest version of Unreal Engine and set up your project for mixed reality |
 | [HoloLens 2 tutorial series](tutorials/unreal-uxt-ch1.md) | Dive into beginner level MRTK tutorials for HoloLens 2 hardware |
 
 ### 2. Core building blocks
@@ -63,17 +64,17 @@ Other key features that play a role in mixed reality applications are available 
 
 ### 4. Deploying to a device
 
-If this is your first time creating or deploying an Unreal app for HoloLens, you'll need to [download supporting files](tutorials/unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal) from the Epic Launcher. Once you have those files installed, you're ready to deploy from either the [Unreal editor](unreal-deploying.md) or the [Device Portal](tutorials/unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal).
+If you're a first-time Unreal app developer for HoloLens, you'll need to [download supporting files](tutorials/unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal) from the Epic Launcher. Once you have those files installed, you're ready to deploy from either the [Unreal editor](unreal-deploying.md) or the [Device Portal](tutorials/unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal).
 
 ### 5. Adding services
 
-At this point in your development journey you might be looking to add services or for a helping hand with commercial deployment. Integrating [Azure Cloud Services](../mixed-reality-cloud-services.md) and Dynamics 365 features can level up your projects in a major way. We've compiled a few starting points for you to explore and expand your Mixed Reality knowledge.
+At this point in your development journey, you might be looking to add services or for a helping hand with commercial deployment. Integrating [Azure Cloud Services](../mixed-reality-cloud-services.md) and Dynamics 365 features can level up your projects in a major way. We've compiled a few starting points for you to explore and expand your Mixed Reality knowledge.
 
 [!INCLUDE[](../includes/unreal-cloud-services-d365.md)]
 
 ## What's next?
 
-A developers job is never done, especially when learning a new tool or SDK. The following sections can take you into areas beyond the beginner level material you've already completed, along with helpful resources if you get stuck. Note that these topics and resources are not in any sequential order, so feel free to jump around and explore!
+A developer's job is never done, especially when learning a new tool or SDK. The following sections can take you into areas beyond the beginner level material you've already completed, along with helpful resources if you get stuck. Resources aren't in any sequential order, so feel free to jump around and explore!
 
 ### Streaming & Debugging
 
@@ -83,7 +84,7 @@ If you're looking to debug the application with Visual Studio, follow these [ins
 
 ### Performance
 
-Developing for mixed reality comes with performance checkpoints that depend on the platform. A HoloLens 2 app must run at 60 frames per second for holograms to appear stable and responsive. Luckily, we have [performance recommendations](performance-recommendations-for-unreal.md) for achieving this in your Unreal applications.
+Developing for mixed reality comes with performance checkpoints that depend on the platform. A HoloLens 2 app must run at 60 frames per second for holograms to appear stable and responsive. Luckily, we have [performance recommendations](performance-recommendations-for-unreal.md) for upgrading performance in your Unreal applications.
 
 ## Supported Features
 
@@ -103,7 +104,7 @@ Developing for mixed reality comes with performance checkpoints that depend on t
 | Planar LSR over streaming | 4.24 |
 | Sample apps ([HoloLens2Example](https://github.com/microsoft/MixedReality-Unreal-Samples) and [Mission AR](https://docs.unrealengine.com/Resources/Showcases/MissionAR/index.html)) | 4.24 |
 | Mobile multi-View: Performance hits 60 fps | 4.25 |
-| 3rd camera render | 4.25 |
+| Third camera render | 4.25 |
 | Streaming from a packaged desktop app | 4.25.1 |
 | Azure Spatial Anchors for HoloLens 2 (beta) | 4.25 |
 | OpenXR support (beta) | 4.25 |
