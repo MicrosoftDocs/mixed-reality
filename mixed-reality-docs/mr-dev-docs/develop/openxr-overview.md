@@ -12,6 +12,9 @@ keywords: openxr, unity, unreal, directx, oculus, steamvr, htc, minecraft, blend
 
 <!-- Could use another hero image here -->
 
+> [!IMPORTANT]
+> OpenXR is still in the experimental development stage - new release information will be added to this page, so check back with us!
+
 What an amazing ride!  Earlier this year, [Microsoft and Oculus started shipping conformant OpenXR runtimes to all customers](https://www.khronos.org/news/press/multiple-conformant-openxr-implementations-ship-bringing-to-life-the-dream-of-portable-xr-applications), with [SteamVR](https://store.steampowered.com/newshub/app/250820/view/2396425843528787269) and [HTC](https://forum.vive.com/topic/8927-vive-cosmos-openxr-developer-preview/) previewing OpenXR support soon after.  Since then, we've seen wide adoption of OpenXR across the industry: from the new RenderDragon engine in Minecraft to the WebXR implementation in Edge and Chrome – from Babylon Native to Blender 2.83.
 
 With OpenXR, you can build engines and apps that target HoloLens 2 with the same API that you use to target PC VR headsets, including Windows Mixed Reality headsets, Oculus Rift headsets and (currently in developer preview) SteamVR headsets.  OpenXR lets engines write code once that's then portable across hardware platforms from a wide range of VR and AR vendors.
