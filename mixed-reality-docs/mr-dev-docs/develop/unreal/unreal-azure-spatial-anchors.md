@@ -10,8 +10,6 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, azure development, sp
 ---
 # Azure Spatial Anchors in Unreal
 
-## Overview
-
 Azure Spatial Anchors is a Microsoft Mixed Reality service, allowing augmented reality devices to discover, share, and persist anchor points in the physical world. Documentation below provides instructions for integrating the Azure Spatial Anchors service into an Unreal project. If you're looking for more information, check out the [Azure Spatial Anchors service](https://azure.microsoft.com/services/spatial-anchors/).
 
 > [!NOTE]
@@ -52,6 +50,7 @@ Enable the Azure Spatial Anchors plugins in the Unreal editor by:
 Once that's done, restart the Unreal Editor for the plugin changes to take effect. The project is now ready to use Azure Spatial Anchors.
 
 ## Starting a Spatial Anchors session
+
 An Azure Spatial Anchors session allows client applications to communicate with the Azure Spatial Anchors service. You'll need to create and start an Azure Spatial Anchors session to create, persist, and share Azure Spatial Anchors:
 
 1. Open the blueprint for the Pawn you're using in the application.
@@ -88,9 +87,9 @@ Your Event Graph blueprint should look like the screenshot below:
 
 ![Spatial Anchors plugins](images/asa-unreal/unreal-spatial-anchors-img-08.png)
 
-
 ## Creating an anchor
-An Azure Spatial Anchor represents a physical world pose in the augmented reality application space, which locks augmented reality content to locations in the physical world. Azure Spatial Anchors can also be shared among different users. This sharing allows augmented reality content drawn on different devices to be positioned in the same location in the physical world. 
+
+An Azure Spatial Anchor represents a physical world pose in the augmented reality application space, which locks augmented reality content to physical locations. Azure Spatial Anchors can also be shared among different users. This sharing allows augmented reality content drawn on different devices to be positioned in the same location in the physical world. 
 
 To create a new Azure Spatial Anchor:
 1. Check that an Azure Spatial Anchors session is running. The application can't create or persist an Azure Spatial Anchor when no Azure Spatial Anchors session is running.
@@ -133,11 +132,11 @@ After configuring the Azure Spatial Anchor with your parameters, call **Save Clo
 
 In the example below, the Azure Spatial Anchor is stored in a set during an input event callback. The anchor is then saved on the EventTick. Saving an Azure Spatial Anchor may take multiple attempts depending on the amount of spatial data that your Azure Spatial Anchors session has created. That's why it's a good idea to check whether the save call succeeded.
 
-If the anchor doesn't save, re-add it to the set of anchors still needing to be saved. Future EventTicks will try to save the anchor until it's successfully stored in the Azure Spatial Anchor service.
+If the anchor doesn't save, readd it to the set of anchors still needing to be saved. Future EventTicks will keep trying to save the anchor until it's successfully stored.
 
 ![Spatial Anchors plugins](images/asa-unreal/unreal-spatial-anchors-img-16.png)
 
-Once the anchor saves, you can use the AR Pins' transform as a reference transform for placing content in the application. Other users can detect this anchor and align AR content for different devices in the physical world.
+Once the anchor saves, the AR Pins' transform acts as a reference transform for placing content in your app. Other users can detect this anchor and align AR content for different devices in the physical world.
 
 ## Deleting an Anchor
 
@@ -157,7 +156,7 @@ Your Event Graph blueprint should now look like the screenshot below:
 
 ## Locating pre-existing anchors
 
-In addition to creating Azure Spatial Anchors, you can detect anchors created by peers with the Azure Spatial Anchors service:
+Existing anchors can be created by peers with the Azure Spatial Anchors service:
 
 1. Obtain an Azure Spatial Anchor identifier for the anchor that you would like to detect.
     * An anchor identifier can be obtained for an anchor created by the same device in a previous Azure Spatial Anchors session. It can also be created and shared by peer devices interacting with the Azure Spatial Anchors service.
@@ -175,11 +174,11 @@ In addition to creating Azure Spatial Anchors, you can detect anchors created by
 
 ![Spatial Anchors plugins](images/asa-unreal/unreal-spatial-anchors-img-20.png)
 
-In order to locate Azure Spatial Anchors created by peers using the Azure Spatial Anchor service, the application will have to create an **Azure Spatial Anchors Watcher**:
+To locate Azure Spatial Anchors created by peers using the Azure Spatial Anchor service, the application will have to create an **Azure Spatial Anchors Watcher**:
 1. Check that an Azure Spatial Anchors session is running.
 2. Create an **AzureSpatialAnchorsLocateCriteria**.
     * You can specify various location parameters like distance from the user or distance from another anchor.
-3. Declare your desired Azure Spatial Anchor identifier in the **AzureSpatialAnchorsLocateCritieria**.
+3. Declare the Azure Spatial Anchor identifier you're looking for in the **AzureSpatialAnchorsLocateCritieria**.
 4. Call **Create Watcher**.
 
 ![Spatial Anchors plugins](images/asa-unreal/unreal-spatial-anchors-img-21.png)
@@ -196,7 +195,7 @@ Your final Event Graph blueprint should now look like the screenshot below:
 
 ## Next Development Checkpoint
 
-If you're following the Unreal development checkpoint journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can proceed to the next building block: 
+If you're following the Unreal development journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can continue to the next building block: 
 
 > [!div class="nextstepaction"]
 > [Spatial mapping](unreal-spatial-mapping.md)
