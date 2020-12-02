@@ -394,6 +394,8 @@
           href: platform-capabilities-and-apis/mixed-reality-capture-for-developers.md 
         - name: How it works - Mixed Reality Capture Studios 
           href: platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md 
+        - name: Installing PIX for HoloLens 2
+          href: platform-capabilities-and-apis/installing-pix-hololens.md
     - name: Holographic remoting  
       items: 
         - name: Holographic Remoting Player 
