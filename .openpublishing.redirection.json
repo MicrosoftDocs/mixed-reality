@@ -953,6 +953,11 @@
 			"redirect_document_id": true
 		},
 		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/mrtk-porting-guide.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/porting-hl1-hl2",
+			"redirect_document_id": true
+		},
+		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/performance-recommendations-for-unity.md",
 			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/unity/performance-recommendations-for-unity",
 			"redirect_document_id": true
@@ -1299,8 +1304,13 @@
 			"redirect_document_id": true
 		},
 		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/holographic-remoting-create-host.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/holographic-remoting-create-host",
+			"source_path": "mixed-reality-docs/mr-dev-docs/holographic-remoting-create-remote-wmr.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/holographic-remoting-create-remote-wmr",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/holographic-remoting-create-remote-openxr.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/holographic-remoting-create-remote-openxr",
 			"redirect_document_id": true
 		},
 		{

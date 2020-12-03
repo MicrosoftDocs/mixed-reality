@@ -1,9 +1,9 @@
 ---
 title: Enabling connection security for Holographic Remoting
 description: This page explains how to configure Holographic Remoting to use encrypted and authenticated connections between player and remote apps.
-author: markkeinz
-ms.author: makei
-ms.date: 10/29/2020
+author: florianbagarmicrosoft
+ms.author: flbagar
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windows mixed reality headset, virtual reality headset, security, authentication, server-to-client
 ---
@@ -33,8 +33,11 @@ Security in Holographic Remoting, when set up correctly for your use case, gives
 * **Confidentiality:** no third party can read the information exchanged between player and remote app
 * **Integrity:** player and remote can detect any in-transit changes to their communication
 
->[!TIP]
->To be able to use security features, you will need to implement both a [custom player](holographic-remoting-create-player.md) and a [custom remote app](holographic-remoting-create-host.md).
+>[!IMPORTANT]
+>To be able to use security features, you will need to implement both a [custom player](holographic-remoting-create-player.md) and a custom remote app using either [Windows Mixed Reality](holographic-remoting-create-remote-wmr.md) or [OpenXR](holographic-remoting-create-remote-openxr.md) APIs.
+
+>[!NOTE]
+> Starting with version [2.4.0](holographic-remoting-version-history.md#v2.4.0) remote apps using the [OpenXR API](../native/openxr.md) can be created. An overview on how to establish a secure connection in an OpenXR environment can be found [below](#secure-connection-using-the-openxr-api).
 
 ## Planning the security implementation
 
@@ -163,8 +166,26 @@ Implement the `ICertificateValidator` interface as follows:
 >[!NOTE]
 >If your use case requires a different form of validation (see certificate use case #1 above), bypass system validation entirely. Instead, use any API or library that can handle DER-encoded X.509 certificates to decode the certificate chain and perform the checks needed for your use case.
 
+## Secure connection using the OpenXR API
+
+When using the the [OpenXR API](../native/openxr.md) all secure connection related API is available as part of the `XR_MSFT_holographic_remoting` OpenXR extension.
+
+>[!IMPORTANT]
+>To learn about the Holographic Remoting OpenXR extension API, check out the [specification](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/master/remote_openxr/specification.html) which can be found in the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+
+The key elements for secure connection using the `XR_MSFT_holographic_remoting` OpenXR extension are the following callbacks.
+- `xrRemotingRequestAuthenticationTokenCallbackMSFT`, generates or retrieves the authentication token to be sent.
+- `xrRemotingValidateServerCertificateCallbackMSFT`, validates the certificate chain.
+- `xrRemotingValidateAuthenticationTokenCallbackMSFT`, validates the client authentication token.
+- `xrRemotingRequestServerCertificateCallbackMSFT`, supply the server application with the certificate to use.
+
+These callbacks can be provided to the remoting OpenXR runtime via `xrRemotingSetSecureConnectionClientCallbacksMSFT` and `xrRemotingSetSecureConnectionServerCallbacksMSFT`. Additionally, the secure connection needs to be enabled via the secureConnection parameter on the `XrRemotingConnectInfoMSFT` structure or the `XrRemotingListenInfoMSFT` structure depending on whether you are using `xrRemotingConnectMSFT` or `xrRemotingListenMSFT`.
+
+This API is quite similar to the IDL based API described in [Implementing holographic remoting security](#implementing-holographic-remoting-security) but instead of implementing interfaces your are supposed to provide callback implementations. You can find an detailed example as part of the OpenXR sample app found in the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+
 ## See Also
-* [Writing a Holographic Remoting remote app](holographic-remoting-create-host.md)
+* [Writing a Holographic Remoting remote app using Windows Mixed Realiy APIs](holographic-remoting-create-remote-wmr.md)
+* [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md)
 * [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)
 * [Holographic Remoting troubleshooting and limitations](holographic-remoting-troubleshooting.md)
 * [Holographic Remoting software license terms](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
