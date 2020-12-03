@@ -94,6 +94,9 @@ Tells the shader if something is metal or not. Raw Metal = 1.0 white Non metal =
 
 Windows Mixed Reality home offers a series of optimizations on top of the core glTF spec defined using custom extensions. These optimizations are required on Windows versions <= 1709 and recommended on newer versions of Windows. You can easily optimize any glTF 2.0 model using the [Windows Mixed Reality Asset Converter available on GitHub](https://github.com/Microsoft/glTF-Toolkit/releases). This tool will perform the correct texture packing and optimizations as specified below. For general usage we recommend using the WindowsMRAssetConverter, but if you need more control over the experience and would like to build your own optimization pipeline then you can refer to the detailed specification below.  
 
+> [!NOTE]
+> For a definitive list of what the possibilities are for exact model limits, refer to the [3D model optimization](https://docs.microsoft.com/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models) article for use in Dynamics 365 applications.
+
 ### Materials
 
 To improve asset loading time in Mixed Reality environments Windows MR supports rendering compressed DDS textures packed according to the texture packing scheme defined in this section. DDS textures are referenced using the [MSFT_texture_dds extension](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_texture_dds). Compressing textures is highly recommended. 

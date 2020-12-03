@@ -3,7 +3,7 @@ title: Mixed Reality Learning overview
 description: Get a look at the available Mixed Reality Learn modules.
 author: hferrone
 ms.author: jemccull
-ms.date: 10/28/2020
+ms.date: 11/30/2020
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, learn, mixed reality headset, windows mixed reality headset, virtual reality headset, what is virtual reality, what is augmented reality, MRTK, mixed reality toolkit, language translation, Azure, Azure cognitive services
 ms.localizationpriority: high
@@ -15,6 +15,24 @@ The more tools you have when developing for Mixed Reality the better. While docu
 
 Our Learn modules are an opportunity for you to become proficient in Mixed Reality development, offering a module-based structure that can get you started with key tools such as Mixed Reality Toolkit, Unity, and Azure mixed reality services. Getting to Hello World has never been clearer, as we lay out the Learning Objectives, Prerequisites, and set time to completion expectations all in one interface. Get started with Mixed Reality Learn modules today or check out our Microsoft Learn introduction [video](https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Microsoft-Learn)!
 
+## General modules
+
+If you're curious about the foundations of Mixed Reality or haven't chosen a development path yet, start with our tech-agnostic learning modules to get started.
+
+### [Introduction to Mixed Reality](https://docs.microsoft.com/learn/modules/intro-to-mixed-reality/)
+
+Build a foundation in the core concepts, terminology, and design processes unique to the Mixed Reality development space.
+
+**Learning objectives**
+
+By the end of this module, you'll be able to:
+
+* Define Mixed Reality and differentiate between virtual and augmented reality
+* Describe the core ideas behind holograms
+* Start designing and developing 3D applications
+* Understand what Mixed Reality offers in real-world apps
+* Leverage the power of the cloud for Mixed Reality
+
 ## Unity modules
 
 Whether you're just starting or an experienced professional, our hands-on approach to Mixed Reality development in Unity helps you get to your goals faster, with more confidence, and at your own pace.
@@ -24,6 +42,7 @@ Whether you're just starting or an experienced professional, our hands-on approa
 Import the Mixed Reality Toolkit into your Unity project to accelerate your mixed reality development.
 
 **Learning objectives**
+
 By the end of this module you will be able to:
 
 * Configure Unity for Windows Mixed Reality Development
@@ -37,6 +56,7 @@ By the end of this module you will be able to:
 Create a language translator application for your Mixed Reality device (Windows Mixed Reality, HoloLens 2, etc.) by using Cognitive Services.
 
 **Learning objectives**
+
 By the end of this module, you'll be able to:
 
 * Configure a Unity project for the Speech service in Azure Cognitive Services
