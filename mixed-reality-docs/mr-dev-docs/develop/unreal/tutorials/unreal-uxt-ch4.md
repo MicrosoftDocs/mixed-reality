@@ -17,7 +17,7 @@ In the previous tutorial you added an ARSession, Pawn, and Game Mode to complete
 
 ## Objectives
 
-* Installing the Mixed Reality UX Tools plugin from the Unreal Engine Marketplace
+* Installing the Mixed Reality UX Tools plugin from GitHub
 * Adding Hand Interaction Actors to your fingertips
 * Creating and adding Manipulators to objects in the scene
 * Using input simulation to validate the project
