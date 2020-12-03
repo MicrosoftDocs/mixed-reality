@@ -56,7 +56,7 @@ This issue is corrected by fully depressing the joystick until it clicks and it 
 
 ## Others state I am very loud or that my audio is clipping while I am using the microphone with some applications
 
-When the HP Reverb G2 microphone is initially recognized by Windows, it’s automatically set to 100% input level. This is a default settings from Microsoft Windows. Because of the high quality microphones in Reverb G2, their sensitivity is much higher than the default Windows 10 settings expect. We recommend setting the Reverb G2 microphone input level starting at 50%. An optimal setting will be specific to its user for use with applications which do not have an “auto-gain” microphone setting. Examples of applications which have an “auto-gain” are Skype, Zoom, Teams, and Cisco WebEx. Not all VR social or broadcasting applications have this feature.
+Input volume levels are automatically set to 100% when the HP Reverb G2 microphone is first recognized by a Windows PC. Because of the Reverb G2's high-quality microphones, input sensitivity is much higher than the default Windows 10 settings expect. We recommend setting the Reverb G2 microphone input level starting at 50% and scale up from there. An optimal setting is specific to the user, especially when using applications that don't have an “auto-gain” microphone setting. Examples of applications that have “auto-gain” are Skype, Zoom, Teams, and Cisco WebEx, but not all VR social or broadcasting applications have this feature.
 
 ## The Mixed Reality Portal says “Can't run mixed reality on this headset” but this worked fine with my previous WMR headset
 
