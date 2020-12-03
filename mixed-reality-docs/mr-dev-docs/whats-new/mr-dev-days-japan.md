@@ -51,7 +51,7 @@ We are very excited to open up registration for Mixed Reality Dev Days Japan.  T
 |2:55pm - 3:10pm|**Break**||||
 |3:10pm - 3:35pm|*Session 7* Azure Object Anchors|Jesse McCulloch|EN|300|
 |3:40pm - 4:05pm|*Session 8* Azure Remote Rendering|Atsushi Suzuki|JA|300|
-|4:10pm - 4:35pm|*Session 9* Azure Spatial Anchors|TBD|JA|300|
+|4:10pm - 4:35pm|*Session 9* Aligning Hologram and Real World through Azure Spatial Anchors|Yingguang Mei|EN|300|
 |4:40pm - 5:05pm|*Session 10* Unity + PiXYZ|Shinobu Takahashi (Unity)|JA|200|
 |5:10pm - 5:35pm|*Session 11* Azure Kinect DK Deep Dive, Case study|Shinji Chiba|JA|400|
 |5:35pm - 5:50pm|Closing|Madoka Chiyoda|JA|NA|
