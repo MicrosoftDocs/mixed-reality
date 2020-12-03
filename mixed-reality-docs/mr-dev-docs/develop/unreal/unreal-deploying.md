@@ -54,4 +54,4 @@ If you're following the Unreal development journey we've laid out, you're in the
 > [!div class="nextstepaction"]
 > [Advanced services](unreal-development-overview.md#5-adding-services)
 
-You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#4-deploying-to-a-device) at any time.
+You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#4-streaming-and-deploying-to-a-device) at any time.

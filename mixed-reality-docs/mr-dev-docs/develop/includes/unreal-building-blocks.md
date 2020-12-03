@@ -2,11 +2,11 @@
 
 |  Feature  |  Capabilities  |
 | --- | --- |
-| [Input simulation](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/InputSimulation.md) | Use mouse and keyboard input in the editor to simulate a Head-Mounted Display (HMD) and hand tracking features |
-| [Hand interaction](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/HandInteraction.md) | Interact with UX components using articulated hand inputs |
-| [Pressable button component](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/PressableButton.md) | Drive the state of button blueprints through low level components |
-| [Manipulator component](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/Manipulator.md) | Move and rotate an actor with one or two-hand manipulation input |
-| [Follow behavior component](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/FollowComponent.md) | Keep an actor or component within sight of another component |
+| [Input simulation](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/InputSimulation.html) | Use mouse and keyboard input in the editor to simulate a Head-Mounted Display (HMD) and hand tracking features |
+| [Hand interaction](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html) | Interact with UX components using articulated hand inputs |
+| [Pressable button](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/PressableButton.html) | Drive the state of button blueprints through low level components |
+| [Manipulator](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Manipulator.html) | Move and rotate an actor with one or two-hand manipulation input |
+| [Follow behavior](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/FollowComponent.html) | Keep an actor or component within sight of another component |
 
 # [Standalone features](#tab/standalone)
 
