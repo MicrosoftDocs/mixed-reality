@@ -2,8 +2,8 @@
 title: Gaze Input in Unreal
 description: Tutorial on setting up gaze input for HoloLens and Unreal Engine
 author: hferrone
-ms.author: v-hferrone
-ms.date: 12/2/2020
+ms.author: jacksonf
+ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, HoloLens 2, eye tracking, gaze input, head mounted display, Unreal engine, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
@@ -21,7 +21,7 @@ Gaze input in mixed reality apps is all about finding out what your users are lo
 
 - Create a new actor and add it to your scene
 
-> [!NOTE] 
+> [!NOTE]
 > HoloLens eye tracking in Unreal only has a single gaze ray for both eyes. Stereoscopic tracking, which requires two rays, isn't supported.
 
 ## Using eye tracking
@@ -46,7 +46,7 @@ You can also use the rotation of the Head Mounted Display (HMD) to represent the
 
 ![Blueprint of the Get HMDData function](images/unreal-gaze-img-04.png)
 
-## Using C++ 
+## Using C++
 
 - In your game’s **build.cs** file, add **EyeTracker** to the **PublicDependencyModuleNames** list:
 
@@ -100,7 +100,7 @@ void AEyeTracker::Tick(float DeltaTime)
 
 ## Next Development Checkpoint
 
-If you're following the Unreal development journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can continue to the next building block: 
+If you're following the Unreal development journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can continue to the next building block:
 
 > [!div class="nextstepaction"]
 > [Hand tracking](unreal-hand-tracking.md)
