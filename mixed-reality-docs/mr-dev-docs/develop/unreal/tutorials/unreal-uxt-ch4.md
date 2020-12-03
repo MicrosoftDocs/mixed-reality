@@ -25,17 +25,18 @@ In the previous tutorial you added an ARSession, Pawn, and Game Mode to complete
 ## Downloading the Mixed Reality UX Tools plugin
 Before you start working with user input, you'll need to add the plugin to the project.
 
-1.	[Download](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-ux-tools) the Mixed Reality UX Tools plugin from the Unreal Engine Marketplace and install it to your engine via the Epic Launcher. Restart your editor.
+1. On the Mixed Reality UX Tools [releases page](https://github.com/microsoft/MixedReality-UXTools-Unreal/releases) on GitHub, navigate to the UX Tools for Unreal v0.10.0 release and download **UXTools.0.10.0.zip**. Unzip the file.
 
-![Install to engine from the Unreal Engine Marketplace](images/unreal-uxt/4-marketplace.PNG)
+2.	Create a new folder called **Plugins** in the root folder of the project. Copy the unzipped UXTools plugin into this folder and restart the Unreal editor. 
 
-2. Go to **Edit > Plugins** and ensure the Mixed Reality UX Tools plugin is enabled.
+![Create a project plugins folder](images/unreal-uxt/4-plugins.PNG)
 
-![Ensure Mixed Reality UX Tools is enabled](images/unreal-uxt/4-uxtenabled.PNG)
+3.	The UXTools plugin has a Content folder with subfolders for components including **Buttons**, **Input Simulation**, and **Pointers**, as well as a C++ Classes folder with additional code.  
 
-3. To view the plugin's content, click on **View Options > Show Engine Content** in the bottom right corner of the **Content Browser**. Scroll down until you find **UXTools Content** and expand that directory. You'll see subfolders for components including Buttons, Input Simulation, and Pointers, as well as a **C++ Classes** folder with additional code.
+> [!NOTE]
+> If you don’t see the **UXTools Content** section in the **Content Browser**, click **View Options > Show Plugin Content**. 
 
-![Show Engine Content](images/unreal-uxt/4-showenginecontent.PNG)
+![Show plugin content](images/unreal-uxt/4-showplugincontent.PNG)
  
 Additional plugin documentation can be found on the Mixed Reality UX Tools GitHub [repository](https://aka.ms/uxt-unreal). 
 
