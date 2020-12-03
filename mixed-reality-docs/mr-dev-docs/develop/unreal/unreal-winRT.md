@@ -1,7 +1,7 @@
 ---
 title: WinRT in Unreal
 description: Overview of the spatial audio plugin for Unreal engine.
-author: fieldsJacksonG
+author: hferrone
 ms.author: jacksonf
 ms.date: 07/08/2020
 ms.topic: article
