@@ -5,7 +5,7 @@ author: kegodin
 ms.author: kegodin
 ms.date: 12/01/2019
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens2, spatial audio
+keywords: mixed reality, unity, tutorial, hololens2, spatial audio, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head-related transfer function, reverb, Microsoft Spatializer, prefabs, volume curve
 ---
 
 # Spatializing button interaction sounds
@@ -65,6 +65,15 @@ To disable this attenuation, adjust the **Volume** curve. In the **Audio Source*
 After these changes, the **3D Sound Settings** section of the **Audio Source** properties of the **PressableButtonHoloLens2** will look like this:
 
 ![Button 3D sound settings](images/spatial-audio/button-3d-sound-settings.png)
+
+## Testing the spatialize audio
+
+Feel free to test out the new spatialized button interaction sounds:
+
+* Enter game mode in the Unity editor, ideally with a looped audio sample in the scene
+* Move the object with the audio source from left to right and compare with and without spatial audio enabled. You can change the Audio Source settings for testing by:
+    * Moving the Spatial Blend property between 0 - 1 (2D non-spatialized and 3D spatialized sound)
+    * Checking and unchecking the Spatialize property
 
 ## Next steps
 

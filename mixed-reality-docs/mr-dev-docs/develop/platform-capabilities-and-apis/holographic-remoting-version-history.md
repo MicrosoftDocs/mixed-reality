@@ -3,15 +3,19 @@ title: Holographic Remoting Version History
 description: Version History for Holographic Remoting on HoloLens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
-keywords: HoloLens, Remoting, Holographic Remoting
+keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 # Holographic Remoting Version History
 
 > [!IMPORTANT]
 > This guidance is specific to Holographic Remoting on HoloLens 2.
+
+## Version 2.4.0 (December 1, 2020) <a name="v2.4.0"></a>
+* Holographic Remoting now support writing remote apps using the [OpenXR API](../native/openxr.md). To get started check out [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md).
+* Bug fixes and stability improvements.
 
 ## Version 2.3.1 (October 10, 2020) <a name="v2.3.1"></a>
 * Fixed regression with remote pose prediction which caused visual jitter.
@@ -97,8 +101,9 @@ keywords: HoloLens, Remoting, Holographic Remoting
 * First public release of Holographic Remoting for HoloLens 2.
 
 ## See Also
+* [Writing a Holographic Remoting remote app using Windows Mixed Realiy APIs](holographic-remoting-create-remote-wmr.md)
+* [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md)
 * [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)
-* [Writing a Holographic Remoting host app](holographic-remoting-create-host.md)
 * [Holographic Remoting troubleshooting and limitations](holographic-remoting-troubleshooting.md)
 * [Holographic Remoting software license terms](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839)

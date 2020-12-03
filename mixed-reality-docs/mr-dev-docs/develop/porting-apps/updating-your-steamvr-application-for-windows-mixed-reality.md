@@ -1,16 +1,15 @@
 ---
-title: Updating your SteamVR application
+title: Updating SteamVR apps for Windows Mixed Reality
 description: Best practices for updating your SteamVR application to maximize compatiblity with Windows Mixed Reality headsets.
 author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
-keywords: SteamVR, Compatibility
+keywords: SteamVR, Compatibility, porting, HoloLens 1st gen, mixed reality headset, windows mixed reality headset, migration, Windows 10, Steam, motion controllers, haptics
 ---
 
 
-
-# Updating your SteamVR application
+# Updating SteamVR apps for Windows Mixed Reality
 We encourage developers to test and optimize their SteamVR experiences to run on Windows Mixed Reality headsets. This documentation covers common improvements developers can make to ensure that their experience runs great on Windows Mixed Reality.
 
 ## Initial setup instructions
@@ -49,7 +48,7 @@ Windows Mixed Reality motion controllers use a standard haptics motor, as oppose
 
 ## Launching SteamVR apps from Windows Mixed Reality Start menu
 
-For VR experiences distributed through Steam, we've [updated the Windows Mixed Reality for SteamVR Beta](https://steamcommunity.com/games/719950/announcements/detail/1687045485866139800) along with the latest [Windows Insider](https://insider.windows.com) RS5 flights so that SteamVR titles now show up in the Windows Mixed Reality Start menu in the "All apps" list automatically. With these software versions installed, your customers can now launch SteamVR titles directly from within the Windows Mixed Reality home without removing their headsets.
+For VR experiences distributed through Steam, we've [updated Windows Mixed Reality for SteamVR](https://steamcommunity.com/games/719950/announcements/detail/1687045485866139800) along with the latest [Windows releases](https://insider.windows.com) so that SteamVR titles now show up in the Windows Mixed Reality Start menu in the "All apps" list automatically.
 
 ## Windows Mixed Reality logo
 

@@ -5,7 +5,7 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens
+keywords: mixed reality, unity, tutorial, hololens, PC holographic remoting, Visual Studio
 ms.localizationpriority: high
 ---
 # 2. Creating a Holographic Remoting PC application
@@ -33,6 +33,11 @@ Your Holographic Remoting app is now ready to build on your PC. Follow the below
 ### 1. Set the player settings
 
 In the Unity menu, select Edit > Project Settings to open the Player Settings window.
+
+In the Project Settings window, expand the **Publishing Settings**, scroll down to the **Capabilities** section and select the below-shown capability checkbox in addition to the existing capabilities.
+
+* Internet Clint server
+* Private Network Client Server
 
 In the **XR Settings** section, select the **WSA Holographic Remoting Supported** checkbox and enable the Holographic Remoting.
 

@@ -6,7 +6,7 @@ ms.author: erpau
 ms.date: 06/25/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Mixed Reality, design, comfort, HoloLens 2, HoloLens (1st gen)
+keywords: Mixed Reality, design, comfort, HoloLens 2, HoloLens (1st gen), mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, locomotion
 ---
 
 # Comfort
@@ -157,13 +157,6 @@ The optimal (resting) gaze angle is considered between 10-20 degrees below horiz
 ## Arm positions
 
 Muscle fatigue can accumulate when users are expected to keep a hand raised throughout the duration of an experience. It can also be fatiguing to require the user to repeatedly make air tap gestures over long durations. We therefore recommend that experiences avoid requiring constant, repeated gesture input. This goal can be achieved by incorporating short breaks or offering a mixture of gesture and speech input to interact with the app.
-
-## Next Discovery Checkpoint
-
-If you're following the [discovery journey](../discover/get-started-with-mr.md) we've laid out, you're in the midst of exploring the basics of Mixed Reality. From here, you can proceed to the next foundational topic: 
-
-> [!div class="nextstepaction"]
-> [How the user sees the world - (Holographic frame)](../design/holographic-frame.md)
 
 ## See also
 * [Gaze](gaze-and-commit.md)

@@ -5,9 +5,8 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, tracking loss, tracking loss image
+keywords: Unity, tracking loss, tracking loss image, polling, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 
 # Tracking loss in Unity

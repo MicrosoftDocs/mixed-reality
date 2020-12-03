@@ -1,12 +1,12 @@
 ---
 title: 3. Setting up your project for mixed reality
-description: Part 3 of 6 in a tutorial series to build a simple chess app using Unreal Engine 4 and the Mixed Reality Toolkit UX Tools plugin
+description: Part 3 of 6 in a tutorial series to build a simple chess app using Unreal Engine 4 and the Mixed Reality UX Tools plugin
 author: hferrone
 ms.author: v-hferrone
-ms.date: 06/10/2020
+ms.date: 11/18/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, tutorial, getting started, mrtk, uxt, UX Tools, documentation
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, tutorial, getting started, mrtk, uxt, UX Tools, documentation, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 # 3. Setting up your project for mixed reality
@@ -56,16 +56,16 @@ At this point, the project still needs a player object. In Unreal, a **Pawn** re
 
 ![Create a new Pawn inheriting from DefaultPawn](images/unreal-uxt/3-defaultpawn.PNG)
 
+2. Click **Add Component > Camera** from the **Components** panel and name it **Camera**. Make sure that the **Camera** component is a direct child of the root (**CollisionComponent**). This allows the player camera to move with the HoloLens 2 device.
+
 > [!NOTE]
 > By default, Pawns have mesh and collision components. In most Unreal projects, Pawns are solid objects that can collide with other components. Since the Pawn and user are the same in mixed reality, you want to be able to pass through holograms without any collisions. 
 
-2. Select **CollisionComponent** from the **Components** panel and scroll down to the **Collision** section of the **Details** panel. 
+3. Select **CollisionComponent** from the **Components** panel and scroll down to the **Collision** section of the **Details** panel. 
     * Click the **Collision Presets** dropdown and change the value to **NoCollision**. 
     * Do the same for the **MeshComponent**
 
 ![Adjust the Pawn's Collision Presets](images/unreal-uxt/3-nocollision.PNG)
-
-3. Click **Add Component > Camera** from the **Components** panel and name it **Camera**. This allows the player camera to move with the HoloLens 2 device.
 
 4. **Compile** and **Save** the Blueprint.
 
@@ -74,8 +74,7 @@ With your work here done, return to the Main Window.
 ## Create a Game Mode
 The last puzzle piece of the mixed reality setup is the Game Mode. The Game Mode determines a number of settings for the game or experience, including the default pawn to use.
 
-1.	Click **Add New > Blueprint Class** in the **Content** folder and expand the **All Classes** section at the bottom. 
-    * Search for **Game Mode Base**, name it **MRGameMode** and double-click to open. 
+1.	Click **Add New > Blueprint Class** in the **Content** folder and select **Game Mode Base** as the parent class. Name it **MRGameMode** and double-click to open. 
 
 ![MRGameMode in the Content Browser](images/unreal-uxt/3-gamemode.PNG)
 

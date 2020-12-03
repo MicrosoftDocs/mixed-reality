@@ -1,12 +1,12 @@
 ---
 title: 5. Adding a button & resetting piece locations
-description: Part 5 of 6 in a tutorial series to build a simple chess app using Unreal Engine 4 and the Mixed Reality Toolkit UX Tools plugin
+description: Part 5 of 6 in a tutorial series to build a simple chess app using Unreal Engine 4 and the Mixed Reality UX Tools plugin
 author: hferrone
 ms.author: v-hferrone
-ms.date: 08/14/2020
+ms.date: 11/18/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, tutorial, getting started, mrtk, uxt, UX Tools, documentation
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, tutorial, getting started, mrtk, uxt, UX Tools, documentation, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 # 5. Adding a button & resetting piece locations
@@ -14,7 +14,7 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, tut
 
 ## Overview
 
-In the previous tutorial, you added Hand Interaction Actors to the Pawn and Manipulator components to the chess board to make them both interactive. In this section, you'll continue working with the Mixed Reality Toolkit UX Tools plugin by building out the features of your chess app. This includes creating a new function and learning how to get references to Actors in a Blueprint. By the end of this section, you'll be ready to package and deploy the mixed reality app on a device or emulator.
+In the previous tutorial, you added Hand Interaction Actors to the Pawn and Manipulator components to the chess board to make them both interactive. In this section, you'll continue working with the Mixed Reality UX Tools plugin by building out the features of your chess app. This includes creating a new function and learning how to get references to Actors in a Blueprint. By the end of this section, you'll be ready to package and deploy the app to a HoloLens 2 device or emulator.
 
 ## Objectives
 
@@ -42,11 +42,8 @@ Your first task is to create a function blueprint that resets a chess piece to i
 Now that the function is setup correctly, your next task is to create a button that fires it off when touched. 
 
 
-1.	Click **Add New > Blueprint Class**, expand the **All Classes** section, and search for **BP_ButtonHoloLens2**. 
+1.	Click **Add New > Blueprint Class**, expand the **All Classes** section, and search for **UxtPressableButtonActor**. 
     * Name it **ResetButton** and double click to open the Blueprint
-
-> [!NOTE]
-> **BP_ButtonHoloLens2** is a 3D button Blueprint Actor that's part of the UX Tools plugin.
 
 ![Subclass the new Blueprint from the HoloLens 2 style button](images/unreal-uxt/5-subclass.PNG)
 
@@ -58,9 +55,9 @@ This will open up the Icon Brush Editor, which is a utility provided by the UX T
 
 ![Select an icon for the button](images/unreal-uxt/5-iconbrusheditor.PNG)
 
-There are plenty of other settings you can adjust to configure your button. To learn more about the UXT Pressable Button component, check out the [documentation](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/PressableButton.html).
+There are plenty of other settings you can adjust to configure your button. To learn more about the UXT Pressable Button component, check out the [documentation](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/PressableButton.html).
 
-3. Click **UxtPressableButton (Inherited)** in the **Components** panel and scroll down the **Details** panel to the **Events** section. 
+3. Click **ButtonComponent (Inherited)** in the **Components** panel and scroll down the **Details** panel to the **Events** section. 
     * Click the green **+** button next to **On Button Pressed** to add an event to the Event Graph, which will be called when the button is pressed. 
     
 From here, you’ll want to call **WhiteKing**’s **Reset Location** function, which needs a reference to the **WhiteKing** Actor in the Level. 

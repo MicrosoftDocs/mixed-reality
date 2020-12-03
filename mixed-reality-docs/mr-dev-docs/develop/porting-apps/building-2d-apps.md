@@ -1,15 +1,15 @@
 ---
-title: Updating 2D UWP apps for mixed reality
+title: Updating 2D UWP apps for Windows Mixed Reality
 description: This article outlines updating your existing 2D Universal Windows Platform app to run on HoloLens and Windows Mixed Reality immersive headsets.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 2D app, UWP, flat app, HoloLens, immersive headset, app model, back button, app bar, dpi, resolution, scale
+keywords: 2D app, UWP, flat app, HoloLens, immersive headset, app model, back button, app bar, dpi, resolution, scale, porting, HoloLens 1st gen, HoloLens 2, mixed reality headset, windows mixed reality headset, migration, Windows 10
 ---
 
 
-# Updating 2D UWP apps for mixed reality
+# Updating 2D UWP apps for Windows Mixed Reality
 
 Windows Mixed Reality enables a user to see holograms as if they are right around you, in your physical or digital world. At its core, both HoloLens and the Desktop PCs you attach immersive headset accessories to are Windows 10 devices; this means that you're able to run almost all of the Universal Windows Platform (UWP) apps in the Store as 2D apps.
 

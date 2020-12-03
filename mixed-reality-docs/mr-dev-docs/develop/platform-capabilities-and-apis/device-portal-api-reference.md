@@ -5,9 +5,8 @@ author: hamalawi
 ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
-keywords: HoloLens, Windows Device Portal, API
+keywords: HoloLens, Windows Device Portal, API, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 
 # Device portal API reference

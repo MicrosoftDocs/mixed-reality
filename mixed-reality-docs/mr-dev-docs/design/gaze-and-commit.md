@@ -5,8 +5,10 @@ author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
-keywords: Mixed Reality, gaze, gaze targeting, interaction, design, eye tracking, head tracking
+keywords: Mixed Reality, gaze, gaze targeting, interaction, design, eye tracking, head tracking, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit
 ---
+
+
 # Gaze and commit
 
 _Gaze and commit_ is a fundamental input model that is closely related with the way we're interacting with our computers using the mouse: _Point & click_.

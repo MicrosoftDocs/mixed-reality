@@ -5,7 +5,7 @@ author: sw5813
 ms.author: suwu
 ms.date: 7/10/2020
 ms.topic: article
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, deploy to device, PC, documentation
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, deploy to device, PC, documentation, mixed reality headset, windows mixed reality headset, virtual reality headset
 appliesto:
 - HoloLens 2
 ---
@@ -54,4 +54,4 @@ If you're following the Unreal development checkpoint journey we've laid out, yo
 > [!div class="nextstepaction"]
 > [Advanced services](unreal-development-overview.md#5-adding-services)
 
-You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#4-deploying-to-a-device) at any time.
+You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#4-streaming-and-deploying-to-a-device) at any time.

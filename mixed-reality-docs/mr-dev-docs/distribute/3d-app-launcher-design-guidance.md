@@ -5,9 +5,8 @@ author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, design, 3D app launcher, immersive headset, live cube
+keywords: Windows Mixed Reality, design, 3D app launcher, immersive headset, live cube, mixed reality headset, windows mixed reality headset, virtual reality headset, UWP, Win32, lighting, color
 ---
-
 
 
 # 3D app launcher design guidance

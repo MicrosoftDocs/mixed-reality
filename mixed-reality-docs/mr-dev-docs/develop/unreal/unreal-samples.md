@@ -7,7 +7,7 @@ ms.author: suwu
 ms.date: 09/29/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: unreal, samples, UX Tools plugin, MRTK-Unreal, mixedrealitytoolkit, mixedrealitytoolkit-unreal, unreal engine, open source
+keywords: unreal, samples, UX Tools plugin, MRTK-Unreal, mixedrealitytoolkit, mixedrealitytoolkit-unreal, unreal engine, open source, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 # Unreal sample apps

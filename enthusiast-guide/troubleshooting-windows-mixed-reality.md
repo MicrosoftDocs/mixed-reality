@@ -24,12 +24,13 @@ For issues with installation, including your PC not being able to run Windows Mi
 - [Installation errors](installation_errors.md)
 - [Setup](wmr-setup-faq.md)
 
-### Headset issues
+### Hardware issues
 
 For issues with your physical headset device, including cable connections, connection errors, launching the Mixed Reality Portal, or black/blank headset displays, check out the following articles:
 
 - [Headset connectivity](headset-connectivity.md)
 - [Headset display](headset-display.md)
+- [Motion controllers](motion-controller-problems.md)
 
 ### Core experience issues
 
@@ -39,18 +40,12 @@ If you're experiencing issues with creating boundaries (the moveable area you ca
 - [Speech and audio](speech-and-audio.md)
 - [Tracking system](tracking.md)
 
-### Third-party VR issues
+### VR experience issues
 
 If you're having issues playing games on SteamVR, installing Windows Developer Mode, or viewing WebVR content in a browser, the articles below are the place to be:
 
 - [SteamVR](steamvr-questions.md)
 - [WebVR](webvr-questions.md)
-
-### Motion controller issues
-
-Any motion controller-related issues, including vibrations, poor movement tracking, input accuracy, and pairing questions, are covered in detail in the following article:
-
-- [Motion controllers](motion-controller-problems.md)
 
 ### Performance issues 
 

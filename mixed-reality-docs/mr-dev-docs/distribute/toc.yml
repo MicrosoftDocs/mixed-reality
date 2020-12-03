@@ -1,5 +1,5 @@
-# - name: Overview 
-#   href: distribute-overview.md
+- name: Overview 
+  href: distribute-overview.md
 - name: 3D app launchers 
   items: 
     - name: Design guidance 

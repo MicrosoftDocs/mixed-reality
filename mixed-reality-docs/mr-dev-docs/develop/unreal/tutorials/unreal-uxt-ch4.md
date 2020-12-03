@@ -1,31 +1,31 @@
 ---
 title: 4. Making your scene interactive
-description: Part 4 of 6 in a tutorial series to build a simple chess app using Unreal Engine 4 and the Mixed Reality Toolkit UX Tools plugin
+description: Part 4 of 6 in a tutorial series to build a simple chess app using Unreal Engine 4 and the Mixed Reality UX Tools plugin
 author: hferrone
 ms.author: v-hferrone
-ms.date: 08/18/2020
+ms.date: 11/18/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, tutorial, getting started, mrtk, uxt, UX Tools, documentation
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, tutorial, getting started, mrtk, uxt, UX Tools, documentation, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 # 4. Making your scene interactive
 
 ## Overview
 
-In the previous tutorial you added an ARSession, Pawn, and Game Mode to complete the mixed reality setup for the chess app. This section focuses on using the open source [Mixed Reality Toolkit UX Tools](https://github.com/microsoft/MixedReality-UXTools-Unreal) plugin, which provides tools to make the scene interactive. By the end of this section you'll be able to move the chess pieces with user input. 
+In the previous tutorial you added an ARSession, Pawn, and Game Mode to complete the mixed reality setup for the chess app. This section focuses on using the open source [Mixed Reality UX Tools](https://github.com/microsoft/MixedReality-UXTools-Unreal) plugin, which provides tools to make the scene interactive. By the end of this section you'll be able to move the chess pieces with user input. 
 
 ## Objectives
 
-* Downloading the Mixed Reality Toolkit UX Tools plugin 
+* Installing the Mixed Reality UX Tools plugin from GitHub
 * Adding Hand Interaction Actors to your fingertips
 * Creating and adding Manipulators to objects in the scene
 * Using input simulation to validate the project
 
-## Downloading the MRTK UX Tools plugin
+## Downloading the Mixed Reality UX Tools plugin
 Before you start working with user input, you'll need to add the plugin to the project.
 
-1.	On the Mixed Reality UX Tools [releases page](https://github.com/microsoft/MixedReality-UXTools-Unreal/releases) on GitHub, navigate to the UX Tools for Unreal v0.9.0 release and download **UXTools.0.9.0.zip**. Unzip the file.
+1. On the Mixed Reality UX Tools [releases page](https://github.com/microsoft/MixedReality-UXTools-Unreal/releases) on GitHub, navigate to the UX Tools for Unreal v0.10.0 release and download **UXTools.0.10.0.zip**. Unzip the file.
 
 2.	Create a new folder called **Plugins** in the root folder of the project. Copy the unzipped UXTools plugin into this folder and restart the Unreal editor. 
 
@@ -37,8 +37,10 @@ Before you start working with user input, you'll need to add the plugin to the p
 > If you don’t see the **UXTools Content** section in the **Content Browser**, click **View Options > Show Plugin Content**. 
 
 ![Show plugin content](images/unreal-uxt/4-showplugincontent.PNG)
+ 
+Additional plugin documentation can be found on the Mixed Reality UX Tools GitHub [repository](https://aka.ms/uxt-unreal). 
 
-With the plugin installed, you're ready to start using the tools it has to offer, starting with hand interaction actors.
+With the plugin installed, you're ready to start using the tools it has to offer, starting with hand interaction actors. 
 
 ## Spawning Hand Interaction Actors
 Hand interaction with UX elements is performed with Hand Interaction Actors, which create and drive the pointers and visuals for near and far interactions.
@@ -50,7 +52,7 @@ In our case, adding a Hand Interaction Actor to **MRPawn** will:
 - Provide articulated hand input events that can be manipulated through the Pawn.
 - Allow far interaction input events through hand rays extending from the palms of the virtual hands.
 
-In order to drive these concepts home, you're encouraged to read through the [documentation](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.9.x/Docs/HandInteraction.md) on hand interactions before continuing. 
+In order to drive these concepts home, you're encouraged to read through the [documentation](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html) on hand interactions before continuing. 
 
 Once you're ready, open the **MRPawn** Blueprint and go to the **Event Graph**. 
 
@@ -74,11 +76,9 @@ Both Uxt Hand Interaction Actors need owners and initial transform locations. Th
 3. Last but not least, check the **Show Near Cursor on Grab Targets** box for both Hand Interaction Actors. This will cause a cursor to appear on the grab target as your index finger approaches it, which will make it easier to see where your finger is relative to the target.
     * **Compile**, **save**, and return to the Main window. 
 
-Make sure the connections match the following screenshot, but feel free to drag around nodes to make your Blueprint more readable
+Make sure the connections match the following screenshot, but feel free to drag around nodes to make your Blueprint more readable.
 
 ![Complete UXT Hand Interaction Actor setup](images/unreal-uxt/4-fingerptrs.PNG) 
-
-You can find more information about the Hand Interaction Actor provided in the MRTK UX Tools plugin in the [documentation](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/HandInteraction.html).
 
 Now the virtual hands in the project have a way of selecting objects, but they still can't manipulate them. Your last task before testing the app is to add Manipulator components to the actors in the scene.
 
@@ -96,10 +96,10 @@ A Manipulator is a component that responds to articulated hand input and can be 
 
 3. Repeat the steps above for the **WhiteKing** Actor.
 
-You can find more information about the Manipulator Components provided in the MRTK UX Tools plugin in the [documentation](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/Manipulator.html).
+You can find more information about the Manipulator Components provided in the Mixed Reality UX Tools plugin in the [documentation](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Manipulator.html).
 
 ## Testing the scene
-Good news everyone! You're ready to test out the app with its new virtual hands and user input. Press **Play** in the Main Window and you'll see two mesh hands provided by the MRTK UX Tools plugin with hand rays extending from each hand’s palm. You can control the hands and their interactions as follows:
+Good news everyone! You're ready to test out the app with its new virtual hand input. Press **Play** in the Main Window and you'll see two mesh hands provided by the Mixed Reality UX Tools plugin with hand rays extending from each hand’s palm. You can control the hands and their interactions as follows:
 - Hold down the **left Alt** key to control the **left hand** and the **left Shift** key to control the **right hand**. 
 - Move your mouse to move the hand and scroll with your **mouse wheel** to move the hand **forwards** or **backwards**. 
 - Click the left mouse button to **pinch**, click the middle mouse button to **poke**. 
@@ -111,7 +111,7 @@ Good news everyone! You're ready to test out the app with its new virtual hands 
 
 Try using the simulated hands to pick up, move, and set down the white chess king and manipulate the board! Experiment with both near and far interaction - notice that when your hands get close enough to grab the board and king directly, the hand ray disappears and is replaced with a finger cursor at the tip of the index finger. 
 
-You can find more information about the simulated hands feature provided by the MRTK UX Tools plugin in the [documentation](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/InputSimulation.html).
+You can find more information about the simulated hands feature provided by the MRTK UX Tools plugin in the [documentation](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/InputSimulation.html).
 
 Now that your virtual hands can interact with objects, you're ready to move on to the next tutorial and add user interfaces and events.
 

@@ -5,7 +5,7 @@ author: grbury
 ms.author: grbury
 ms.date: 10/02/2019
 ms.topic: overview
-keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens, interaction, UX elements, behaviors, building blocks
+keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens, interaction, UX elements, behaviors, building blocks, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, comfort, app model, coordinate, holographic frame
 ---
 
 # Core concepts overview

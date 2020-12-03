@@ -5,7 +5,7 @@ author: bstrukus
 ms.author: bestruku
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, holograms, stabilization, case study
+keywords: Windows Mixed Reality, holograms, stabilization, case study, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 

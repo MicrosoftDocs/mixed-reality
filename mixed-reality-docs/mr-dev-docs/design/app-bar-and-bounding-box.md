@@ -5,8 +5,10 @@ author: radicalad
 ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
-keywords: Windows Mixed Reality, App bar, bounding box
+keywords: Windows Mixed Reality, App bar, bounding box, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit
 ---
+
+
 # Bounding box and App bar
 ![Bounding is the standard interface for object manipulation in Mixed Reality.](images/UX_Hero_BoundingBox.jpg)<br>
 <br>

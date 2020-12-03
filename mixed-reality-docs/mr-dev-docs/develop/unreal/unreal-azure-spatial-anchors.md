@@ -2,17 +2,20 @@
 title: Azure Spatial Anchors in Unreal
 description: Overview of creating Azure Spatial Anchors in Unreal engine.
 author: hferrone
-ms.author: v-hferrone
+ms.author: jacksonf
 ms.date: 07/01/2020
 ms.topic: tutorial
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, azure development, spatial anchors, mixed reality, development, features, new project, emulator, documentation, guides, holograms, game development
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, azure development, spatial anchors, mixed reality, development, features, new project, emulator, documentation, guides, holograms, game development, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 # Azure Spatial Anchors in Unreal
 
 ## Overview
 
 Azure Spatial Anchors is a Microsoft Mixed Reality service, allowing augmented reality devices to discover, share, and persist anchor points in the physical world. Documentation below provides instructions for integrating the Azure Spatial Anchors service into an Unreal project. If you're looking for more information, check out the [Azure Spatial Anchors service](https://azure.microsoft.com/services/spatial-anchors/).
+
+> [!NOTE]
+> Unreal Engine 4.26 now has plugins for ARKit and ARCore support if you're targeting iOS or Android.
 
 > [!IMPORTANT]
 > Local anchors are stored on device, while Azure Spatial Anchors are stored in the cloud. If you're looking to store your anchors locally on a device, we have a [Local Spatial Anchors](unreal-spatial-anchors.md) document that can walk you through the process. Note that you can have local and Azure anchors in the same project without conflict.

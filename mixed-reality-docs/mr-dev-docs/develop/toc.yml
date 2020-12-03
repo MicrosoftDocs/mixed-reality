@@ -1,6 +1,6 @@
 - name: Introduction to Mixed Reality development
   href: development.md
-- name: Azure Cloud Services
+- name: Azure mixed reality cloud services overview 
   href: mixed-reality-cloud-services.md
 - name: Mixed Reality Learning overview
   href: mr-learning-overview.md
@@ -8,15 +8,15 @@
   href: install-the-tools.md
 - name: Porting apps
   items:
-  # - name: Porting overview
-  #   href: porting-apps/porting-overview.md
-  - name: Get your existing app ready for HoloLens 2
-    href: unity/mrtk-porting-guide.md
-  - name: Porting guide for immersive apps
+  - name: Porting overview
+    href: porting-apps/porting-overview.md
+  - name: Porting HoloLens (1st Gen) apps to HoloLens 2
+    href: porting-apps/porting-hl1-hl2.md
+  - name: Porting VR apps to Windows Mixed Reality
     href: porting-apps/porting-guides.md
-  - name: Updating for SteamVR
+  - name: Updating SteamVR apps for Windows Mixed Reality
     href: porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md
-  - name: Updating 2D UWP apps for Mixed Reality
+  - name: Updating 2D UWP apps for Windows Mixed Reality
     href: porting-apps/building-2d-apps.md
 - name: Unity
   items:
@@ -24,12 +24,10 @@
     href: unity/unity-development-overview.md
   - name: Getting started
     items: 
-      - name: Getting started with Mixed Reality Toolkit v2
+      - name: Getting started with MRTK
         href: unity/mrtk-getting-started.md
       - name: Configure Unity project for Windows Mixed Reality
         href: unity/configure-unity-project.md
-      - name: Get your existing app ready for HoloLens 2
-        href: unity/mrtk-porting-guide.md
   - name: Tutorials
     items: 
       - name: Overview
@@ -172,7 +170,7 @@
             href: unity/tutorials/mr-azure-301.md
   - name: Core building blocks
     items: 
-      - name: MRTK 101 - How to ouse Mixed Reality Toolkit Unity for basic interactions
+      - name: MRTK 101 - Building core interactions using Mixed Reality Toolkit Unity
         href: unity/mrtk-101.md
       - name: Camera in Unity
         href: unity/camera-in-unity.md
@@ -210,7 +208,7 @@
         href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
       - name: Mixed Reality native objects in Unity
         href: unity/unity-xrdevice-advanced.md
-      - name: Using Vuforial with Unity 
+      - name: Using Vuforia with Unity 
         href: unity/vuforia-development-overview.md
   - name: Immersive VR
     items:
@@ -223,7 +221,7 @@
       - name: HoloLens 2 
         items: 
           - name: Surfaces
-            href: 
+            href: unity/sampleapp-surfaces.md
           - name: Periodic Table of the Elements 2.0
             href: https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158
           - name: Galaxy Explorer 2.0
@@ -292,6 +290,8 @@
         href: unreal/unreal-hololens-camera.md
       - name: QR codes in Unreal
         href: unreal/unreal-qr-codes.md
+      - name: UMG and keyboard in Unreal
+        href: unreal/unreal-umg-keyboard.md
       - name: WinRT in Unreal
         href: unreal/unreal-winrt.md
   - name: Immersive VR 
@@ -308,6 +308,10 @@
     items: 
       - name: Deploy to device in Unreal
         href: unreal/unreal-deploying.md
+      - name: Publishing to the Microsoft Store
+        href: unreal/unreal-publishing-to-store.md
+      - name: Upgrading projects in Unreal
+        href: unreal/unreal-porting.md
       - name: Performance recommendations for Unreal
         href: unreal/performance-recommendations-for-unreal.md
       - name: Material recommendations in Unreal 
@@ -399,7 +403,11 @@
         - name: Holographic Remoting Player 
           href: platform-capabilities-and-apis/holographic-remoting-player.md 
         - name: Writing a Holographic Remoting remote app
-          href: platform-capabilities-and-apis/holographic-remoting-create-host.md 
+          items:
+            - name: HolographicSpace API
+              href: platform-capabilities-and-apis/holographic-remoting-create-remote-wmr.md
+            - name: OpenXR API
+              href: platform-capabilities-and-apis/holographic-remoting-create-remote-openxr.md
         - name: Writing a custom Holographic Remoting player app
           href: platform-capabilities-and-apis/holographic-remoting-create-player.md 
         - name: Custom Holographic Remoting data channels

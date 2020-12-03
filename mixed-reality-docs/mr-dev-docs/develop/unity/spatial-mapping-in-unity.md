@@ -5,9 +5,8 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, spatial mapping, renderer, collider, mesh, scanning, component
+keywords: Unity, spatial mapping, renderer, collider, mesh, scanning, component, mixed reality headset, windows mixed reality headset, virtual reality headset, MRTK, Mixed Reality Toolkit
 ---
-
 
 
 # Spatial mapping in Unity

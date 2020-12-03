@@ -31,13 +31,15 @@ There are a few things you can try if you feel that your display looks a little 
 
 ## I am getting a 7-14 “Something Went Wrong” error when I plug in my headset
 
+The 7-14 Something Went Wrong code means that some of the required USB2 components weren’t found.  Due to the extra-long cable of the HP Reverb G2, some of the tolerances for the USB signals are tighter.  This means that one port on your computer may work more reliably than another.
+
 If you are seeing a 7-14 “something went wrong” error, please try the following steps:
 
-- Make sure that you have the most recent drivers installed.
-- Try plugging the cable into a different USB-3.0 port.
-- Please use the USB C to A adapter included to try different ports.
-
-Try plugging the cable into a different USB Hub.  
+- Make sure that you have the most recent drivers installed for your headset and your USB controller.
+- Make sure you are using a Microsoft USB driver. There should be a “Microsoft” in the name of the "eXtensible Host Controller" device.
+- Try plugging the cable into a different USB-3.0 port on your computer. (Try USB Type-C and Type-A ports)
+- Use the included USB C to A adapter to try different ports.
+- Try plugging the headset in through a USB Hub to your computer.
 
 > [!NOTE]
 > HP recommends using only USB controllers built into the motherboard with Reverb G2
@@ -47,6 +49,14 @@ Try plugging the cable into a different USB Hub.
 ## I am getting a 13-14 “Something Went Wrong” error when my PC resumes from hibernate (S4)
 
 Sometimes during the resume process, the video card cannot establish a connection, so unplugging the USB Type C from your PC and plugging it back in may help to establish a connection.
+
+## My HP Motion Controller joystick will sometimes stick to one side
+
+This issue is corrected by fully depressing the joystick until it clicks and it will move freely.
+
+## Others state I am very loud or that my audio is clipping while I am using the microphone with some applications
+
+Input volume levels are automatically set to 100% when the HP Reverb G2 microphone is first recognized by a Windows PC. Because of the Reverb G2's high-quality microphones, input sensitivity is much higher than the default Windows 10 settings expect. We recommend setting the Reverb G2 microphone input level starting at 50% and scale up from there. An optimal setting is specific to the user, especially when using applications that don't have an “auto-gain” microphone setting. Examples of applications that have “auto-gain” are Skype, Zoom, Teams, and Cisco WebEx, but not all VR social or broadcasting applications have this feature.
 
 ## The Mixed Reality Portal says “Can't run mixed reality on this headset” but this worked fine with my previous WMR headset
 
@@ -64,8 +74,17 @@ There are a few reasons why your system is not able to render at the native reso
 
 ## Why are my HP Motion Controller models not showing up correctly in a game
 
-While many games will work immediately with HP Motion Controllers, some games have dependencies on existing controllers features and might therefore have some issues:
+While most games do not display the controllers or use the models installed by the driver, some games use their own versions of the controller models, either to customize them or to display contextual help for the available inputs. Usually, this does not block any features of the games but might lead to confusion or even visual artifacts. This can only be fixed with an update of the game itself.
 
-- Wrong model displayed: fixing this requires a game update. Usually, this does not block any features of the game but might lead to confusion or even visual artifacts.
-- Dependency on the Touchpad or more generally on the controller's input layout. SteamVR allows to create custom bindings to help circumvent this kind of issue:
-    - Windows Mixed Reality for SteamVR includes custom bindings for some games. These bindings are used automatically when the game is started, and no user action is needed.
+## My SteamVR games don't appear to work correctly with my HP Motion controllers
+
+While developers are working to update their games for HP Motion Controller compatibility, we have provided custom controller bindings for many of the most popular games on Steam. With "Windows Mixed Reality for SteamVR" fully updated to version 1.2.444, these bindings should be picked up automatically when your game is running. However, if your game does not seem to register your actions at this time, you can manually search for custom binding profiles using the SteamVR Settings menu.
+To do this
+
+- Open the SteamVR menu by pressing the right motion controller's menu button
+- Select the "Settings" icon in the bottom-right corner of the SteamVR menu
+- Select the "Controllers" tab
+- Select the "Manage Controller Bindings" option
+
+From here you can change your active controller binding to "Custom" which will open up the option to try community-shared game bindings.
+If no custom game bindings have been shared for this game yet (or if you are not fully satisfied with the ones you've tried), you can also create your own custom game bindings, and even help the rest of the community by sharing them after a few game sessions.

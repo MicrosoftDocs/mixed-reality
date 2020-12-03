@@ -3,16 +3,16 @@ title: Holographic Remoting Player
 description: The Holographic Remoting Player is a companion app that connects to PC apps and games that support Holographic Remoting. Holographic Remoting streams holographic content from a PC to your Microsoft HoloLens in real-time, using a Wi-Fi connection.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
-keywords: HoloLens, Remoting, Holographic Remoting
+keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windows mixed reality headset, virtual reality headset, diagnostics, performance
 ---
 
 
 # Holographic Remoting Player
 
 >[!IMPORTANT]
->Holographic Remoting for HoloLens 2 is a major version change. [Remote applications for **HoloLens (1st gen)**](add-holographic-remoting.md) must use NuGet package version **1.x.x** and [remote applications for **HoloLens 2**](holographic-remoting-create-host.md) must use **2.x.x**. This implies that remote applications written for HoloLens 2 are not compatible with HoloLens (1st gen) and vice versa.
+>Holographic Remoting for HoloLens 2 is a major version change. [Remote applications for **HoloLens (1st gen)**](add-holographic-remoting.md) must use NuGet package version **1.x.x** and [remote applications for **HoloLens 2**](holographic-remoting-create-remote-wmr.md) must use **2.x.x**. This implies that remote applications written for HoloLens 2 are not compatible with HoloLens (1st gen) and vice versa.
 
 The [Holographic Remoting Player](https://www.microsoft.com/p/holographic-remoting-player/9nblggh4sv40) is a companion app that connects to PC apps and games that support Holographic Remoting. Holographic Remoting streams holographic content from a PC to your Microsoft HoloLens in real-time, using a Wi-Fi connection.
 
@@ -22,6 +22,9 @@ The Holographic Remoting Player is available for both HoloLens (1st gen) and Hol
 
 >[!TIP]
 >Starting with version [2.2.0](holographic-remoting-version-history.md#v2.2.0) the Holographic Remoting player is also available for Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md).
+
+>[!TIP]
+>Starting with version [2.4.0](holographic-remoting-version-history.md#v2.4.0) remote apps using the [OpenXR API](../native/openxr.md) can be created. To get started check out [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md).
 
 ## Connecting to the Holographic Remoting Player
 
@@ -66,8 +69,6 @@ On **HoloLens 2** the app will show you:
 Turnaround in this context means the time from sending pose/sensor data from the HoloLens to the remote/remote side till displaying the video frame for that pose/telemetry data on the HoloLens display.
 * **Video frames discarded** - The number of discarded video frames over the last second and since a connection has been established. The primary cause for discarded video frames is when a video frame does not arrive in order and for that reason needs to be discarded as there is already a newer one. This is similar to *discarded frames* but the cause is at a lower level in the Remoting stack. Discarded video frames are only expected under quite bad network conditions.
 
-
-
 While on the main screen, you can say **"disable diagnostics"** to turn off diagnostics.
 
 ## PC System Requirements
@@ -77,6 +78,7 @@ While on the main screen, you can say **"disable diagnostics"** to turn off diag
 
 ## See Also
 * [HoloLens (1st gen): Add Holographic Remoting](add-holographic-remoting.md)
-* [HoloLens 2: Writing a Holographic Remoting remote app](holographic-remoting-create-host.md)
+* [Writing a Holographic Remoting remote app using Windows Mixed Realiy APIs](holographic-remoting-create-remote-wmr.md)
+* [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md)
 * [Holographic Remoting software license terms](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839)

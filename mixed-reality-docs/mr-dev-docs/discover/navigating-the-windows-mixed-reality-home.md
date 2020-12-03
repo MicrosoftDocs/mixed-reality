@@ -5,7 +5,7 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: shell, os, platform, cliff house, house, home, environment, start, start menu, home menu, pins, app, launch apps, place apps, teleport, move, navigate
+keywords: shell, os, platform, cliff house, house, home, environment, start, start menu, home menu, pins, app, launch apps, place apps, teleport, move, navigate, mixed reality headset, virtual reality headset, what is virtual reality
 ---
 
 
