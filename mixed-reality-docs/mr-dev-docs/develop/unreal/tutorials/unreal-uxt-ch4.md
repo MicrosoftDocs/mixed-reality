@@ -50,7 +50,7 @@ In our case, adding a Hand Interaction Actor to **MRPawn** will:
 - Provide articulated hand input events that can be manipulated through the Pawn.
 - Allow far interaction input events through hand rays extending from the palms of the virtual hands.
 
-In order to drive these concepts home, you're encouraged to read through the [documentation](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.9.x/Docs/HandInteraction.md) on hand interactions before continuing. 
+In order to drive these concepts home, you're encouraged to read through the [documentation](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/HandInteraction.html) on hand interactions before continuing.
 
 Once you're ready, open the **MRPawn** Blueprint and go to the **Event Graph**. 
 
