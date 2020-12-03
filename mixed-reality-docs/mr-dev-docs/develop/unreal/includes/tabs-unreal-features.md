@@ -9,8 +9,6 @@ The latest Unreal Engine 4.26 release includes:
 * Windows App Certification Kit compliance for packaged apps
 * HP Reverb G2 controller support
 
-Unreal Engine 4.26 is currently in preview and available on the Epic Launcher. 
-
 # [4.25](#tab/ue425)
 
 Unreal Engine 4.25 includes:
