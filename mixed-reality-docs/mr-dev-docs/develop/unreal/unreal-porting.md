@@ -2,7 +2,7 @@
 title: Upgrading projects in Unreal
 description: Overview of version upgrade steps and deprecated APIs in Unreal projects.
 author: hferrone
-ms.author: v-hferrone
+ms.author: jacksonf
 ms.date: 11/23/2020
 ms.topic: article
 ms.localizationpriority: high
