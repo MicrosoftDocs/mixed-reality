@@ -87,7 +87,7 @@
 			"redirect_document_id": false
 		},
 		{
-			"source_path": "/mixed-reality-docs/get-apps-for-hololens.md",
+			"source_path": "mixed-reality-docs/get-apps-for-hololens.md",
 			"redirect_url": "https://docs.microsoft.com/hololens/holographic-store-apps",
 			"redirect_document_id": false
 		},
