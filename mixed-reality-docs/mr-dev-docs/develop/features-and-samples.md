@@ -13,7 +13,7 @@ ms.localizationpriority: high
 
 ![Animated gif of the periodic table of contents sample app running on HoloLens](https://user-images.githubusercontent.com/13754172/90335383-ab391e80-e00f-11ea-8a6c-b61aa910b83d.gif)
 
-Currently, all of our tutorials and sample apps are built in Unity or Unreal. Our team has created a number of sample apps to help you get a handle on Mixed Reality development first-hand, and we've provided the source code as a reference. As we develop content for other engines and platforms, you'll find them under the relevant heading in the Table of Contents.
+Currently, all of our tutorials and sample apps are built in Unity or Unreal. As we develop content for other engines and platforms, you'll find them under the relevant heading in the Table of Contents.
 
 ## Sample apps
 

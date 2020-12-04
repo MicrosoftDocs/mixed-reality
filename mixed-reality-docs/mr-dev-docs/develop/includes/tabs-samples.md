@@ -1,5 +1,7 @@
 # [Unity](#tab/unity)
 
+The open source sample apps were been created by our teams to help you get a handle on Mixed Reality development first-hand. We've provided the projects and full source code as a learning reference.
+
 ### HoloLens 2 open source sample apps
 
 * [MRTK Examples Hub](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(Download from Microsoft Store in HoloLens 2)](https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4)
