@@ -10,23 +10,16 @@ keywords: HoloLens, HoloLens 2, PIX, capture, mixed reality headset, windows mix
 
 # Installing PIX for HoloLens 2
 
-<!-- Need introduction: Why/What problem does this solve? -->
+[PIX](https://devblogs.microsoft.com/pix) is a performance tuning and debugging tool for DirectX 12 applications on Windows. 
 
 ## Setup
 
 1. Grab the latest PIX [release]( https://devblogs.microsoft.com/pix/download) from your host PC and connect your HoloLens 2 to your PC via a USB cable.
 
-<!-- What does Flash with retail image mean and how does a user do it? -->
-2. On your HoloLens 2, flash HoloLens 2 with Retail image
+2. If your HoloLens 2 is on a [Windows Insider build](https://insider.windows.com) or has a configuration that breaks PIX,  [re-flash your device](https://docs.microsoft.com/en-us/hololens/hololens-recovery) to erase all data.
 
-<!-- What is OOBE? Where are the instructions for this? Is this for internal MSA only?-->
-3. Complete OOBE
-    * Join MSFTGUEST when prompted to connect to Wi-fi
-    * Sign in using your MSA
+3. Enable **Developer Mode** and **Device Portal**:
 
-4. Once OOBE is complete, enable **Developer Mode** and **Device Portal**:
-
-<!-- Needs to be more descriptive -->
 * Open **Settings** from Shell:
 
 ![](images/pix-img-01.jpg)
@@ -48,7 +41,7 @@ keywords: HoloLens, HoloLens 2, PIX, capture, mixed reality headset, windows mix
 * With the device still connected, awake, and with the user logged in, launch Visual Studio.
 
 > [!IMPORTANT]
-> Make sure your device isn't in standby mode or asleep.
+> Make sure your device isn't in standby mode or asleep. If you're having trouble with this step, refer to the [Windows Device Portal instructions](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
 
 ## Preparing for deployment
 
@@ -74,8 +67,7 @@ keywords: HoloLens, HoloLens 2, PIX, capture, mixed reality headset, windows mix
 
 ## Launching PIX
 
-<!-- These steps are unclear -->
-First, close the app on your HoloLens 2. Then, launch PIX, connect to your device, and click **Home**:
+First, use Device Portal to verify the app is not running on the HoloLens 2. Then, launch PIX, connect to your device, and click **Home**:
 
 ![](images/pix-img-10.png)
 
@@ -117,5 +109,5 @@ First, close the app on your HoloLens 2. Then, launch PIX, connect to your devic
 
 PIX is now ready for use!
 
-<!-- Need see also links -->
 ## See also
+* [PIX homepage](https://devblogs.microsoft.com/pix)
