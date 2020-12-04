@@ -22,21 +22,21 @@ keywords: HoloLens, HoloLens 2, PIX, capture, mixed reality headset, windows mix
 
 * Open **Settings** from Shell:
 
-![](images/pix-img-01.jpg)
+![Screenshot of the HoloLens menu with settings button highlighted](images/pix-img-01.jpg)
 
 * Select **Update & Security**:
 
-![](images/pix-img-02.jpg)
+![Screenshot of settings window open on HoloLens with update and security button highlighted](images/pix-img-02.jpg)
 
 * Click **For Developers**:
 
-![](images/pix-img-03.jpg)
+![Screenshot of security and updates window open with for developers button highlighted](images/pix-img-03.jpg)
 
 * Turn on **Use Developer Features** and **Enable Device Portal**
 
-![](images/pix-img-04.jpg)
+![Screenshot of for developers window open in settings with enable device portal button highlighted](images/pix-img-04.jpg)
 
-![](images/pix-img-05.jpg)
+![Screenshot of for developers window open in settings with use develop features toggle highlighted](images/pix-img-05.jpg)
 
 * With the device still connected, awake, and with the user logged in, launch Visual Studio.
 
@@ -47,19 +47,19 @@ keywords: HoloLens, HoloLens 2, PIX, capture, mixed reality headset, windows mix
 
 1. In Visual Studio, set **ARM64** as the platform and **Device** as the device:
 
-![](images/pix-img-06.png)
+![Screenshot of visual studios solution with platform and device settings highlighted](images/pix-img-06.png)
 
 2. When Visual Studio prompts you for a **PIN** from the device:
 
-![](images/pix-img-07.png)
+![Screenshot of visual studio pop-up asking for PIN](images/pix-img-07.png)
 
 * Select **Settings** from Shell
 * Select **Update & Security**
 * Click **For Developers** and press Pair under **Device Discovery** 
 
-![](images/pix-img-08.jpg)
+![Screenshot of for developers window open in settings with device discovery highlighted](images/pix-img-08.jpg)
 
-![](images/pix-img-09.jpg)
+![Screenshot of paid device pop-up with registration code highlighted](images/pix-img-09.jpg)
 
 * Enter the generated PIN number in Visual Studio
 
@@ -69,11 +69,11 @@ keywords: HoloLens, HoloLens 2, PIX, capture, mixed reality headset, windows mix
 
 First, use Device Portal to verify the app is not running on the HoloLens 2. Then, launch PIX, connect to your device, and click **Home**:
 
-![](images/pix-img-10.png)
+![Screenshot of PIX application home screen](images/pix-img-10.png)
 
 * Select **Connect** from the left-side menu:
 
-![](images/pix-img-11.png)
+![Screenshot of PIX application left-side menu with connect button highlighted](images/pix-img-11.png)
 
 2. From the **Computer** tab, click **Add** and enter the following credentials:
     * Alias: Up to user’s discretion
@@ -81,28 +81,28 @@ First, use Device Portal to verify the app is not running on the HoloLens 2. The
 
 3. Click **Connect** in the lower-right of the **Computer** tab:
 
-![](images/pix-img-12.png)
+![Screenshot of PIX application connect window with alias, host name, IP address, and add button highlighted](images/pix-img-12.png)
 
 > [!NOTE]
 > The first connection is always slower because binaries are being copied.
 
 4. When PIX has connected to the HoloLens 2, find your app in the **Select Target Process** section in the Launch UWP tab, and click **Launch**:
 
-![](images/pix-img-13.png)
+![Screenshot of PIX application with the select target process window and launch button highlighted](images/pix-img-13.png)
 
-## GPU capture
+## GPU captured
 
 1. Start the GPU capture by clicking **Photo** in the **GPU Capture** section:
 
-![](images/pix-img-14.png)
+![Screenshot of the PIX application with the PC connection panel open with GPU capture highlighted](images/pix-img-14.png)
 
 2. Open the capture for analysis by clicking on the generated screen shot in the **GPU Capture** panel:
 
-![](images/pix-img-15.png)
+![Screenshot of the PIX application with the GPU capture section open with GPU capture panel highlighted](images/pix-img-15.png)
 
 3. Press **Start** to begin the analysis:
 
-![](images/pix-img-16.png)
+![Screenshot of the PIX application the start button highlighted](images/pix-img-16.png)
 
 > [!IMPORTANT]
 > If you collect timing data after taking a GPU capture, you'll be required to reboot the headset. This is a one-time restart of the device and is required for timing data collection.
