@@ -17,9 +17,9 @@ The open source sample apps were been created by our teams to help you get a han
 
 # [Unreal](#tab/unreal)
 
-### HoloLens 2 open source sample apps
-
 Most of the open source sample apps made by our team can be found in the Unreal Mixed Reality Samples [repository](https://github.com/microsoft/MixedReality-Unreal-Samples) on GitHub. We've provided the source code so that developers can look at, learn from, and reuse our projects.
+
+### HoloLens 2 open source sample apps
 
 * [HoloLens2Example](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/HoloLens2Example) 
 * [HoloPipes](https://github.com/microsoft/MixedReality-Unreal-HoloPipes) - Download from the [Microsoft Store](https://www.microsoft.com/p/holopipes/9mszb3nnrxn9) in HoloLens 2

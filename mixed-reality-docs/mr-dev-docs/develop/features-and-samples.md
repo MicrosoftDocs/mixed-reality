@@ -11,8 +11,7 @@ ms.localizationpriority: high
 
 # Samples and feature apps
 
-![Animated gif of the periodic table of contents sample app running on HoloLens](https://user-images.githubusercontent.com/13754172/90335383-ab391e80-e00f-11ea-8a6c-b61aa910b83d.gif)
-
+![Picture of a user wearing a HoloLens and manipulating a hologram with hand movement](unreal/images/unreal-developer.jpg)
 Currently, all of our tutorials and sample apps are built in Unity or Unreal. As we develop content for other engines and platforms, you'll find them under the relevant heading in the Table of Contents.
 
 ## Sample apps
