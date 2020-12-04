@@ -1,11 +1,15 @@
 - name: Introduction to Mixed Reality development
   href: development.md
-- name: Azure mixed reality cloud services overview 
-  href: mixed-reality-cloud-services.md
-- name: Mixed Reality Learning overview
-  href: mr-learning-overview.md
 - name: Install the tools
   href: install-the-tools.md
+- name: Getting started
+  items: 
+  - name: Azure mixed reality cloud services overview 
+    href: mixed-reality-cloud-services.md
+  - name: Mixed Reality Learning overview
+    href: mr-learning-overview.md
+  - name: Samples and feature apps 
+    href: features-and-samples.md
 - name: Porting apps
   items:
   - name: Porting overview
@@ -216,8 +220,6 @@
         href: unity/unity-reverb-g2-controllers.md
   - name: Sample apps
     items: 
-      - name: Overview 
-        href: unity/samples.md
       - name: HoloLens 2 
         items: 
           - name: Surfaces
@@ -300,8 +302,6 @@
         href: unreal/unreal-reverb-g2-controllers.md
   - name: Sample apps
     items: 
-      - name: Overview
-        href: unreal/unreal-samples.md
       - name: Kippy's Escape  
         href: unreal/unreal-kippys-escape.md
   - name: Deployment and performance 
