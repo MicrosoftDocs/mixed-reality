@@ -1,11 +1,15 @@
 - name: Introduction to Mixed Reality development
   href: development.md
-- name: Azure mixed reality cloud services overview 
-  href: mixed-reality-cloud-services.md
-- name: Mixed Reality Learning overview
-  href: mr-learning-overview.md
 - name: Install the tools
   href: install-the-tools.md
+- name: Getting started
+  items: 
+  - name: Azure mixed reality cloud services overview 
+    href: mixed-reality-cloud-services.md
+  - name: Mixed Reality Learning overview
+    href: mr-learning-overview.md
+  - name: Feature samples overview 
+    href: feature-samples.md
 - name: Porting apps
   items:
   - name: Porting overview
@@ -366,8 +370,6 @@
             href: native/spatial-mapping-in-directx.md 
 - name: Platform capabilities and APIs
   items:
-    - name: Feature samples 
-      href: platform-capabilities-and-apis/feature-samples.md
     - name: Core building blocks 
       items: 
         - name: Scene understanding 
