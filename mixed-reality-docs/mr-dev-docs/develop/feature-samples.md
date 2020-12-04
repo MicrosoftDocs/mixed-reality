@@ -21,8 +21,8 @@ Research Mode was introduced in the 1st Generation HoloLens to give access to ke
 
 | Reference article | Sample application |
 | --- | --- |
-| [Research Mode](research-mode.md) | [HoloLens (1st gen)](https://github.com/microsoft/HoloLensForCV/tree/master/Samples) |
-| [Research Mode](research-mode.md) | [HoloLens 2](https://github.com/microsoft/HoloLens2ForCV/tree/main/Samples) |
+| [Research Mode](platform-capabilities-and-apis/research-mode.md) | [HoloLens (1st gen)](https://github.com/microsoft/HoloLensForCV/tree/master/Samples) |
+| [Research Mode](platform-capabilities-and-apis/research-mode.md) | [HoloLens 2](https://github.com/microsoft/HoloLens2ForCV/tree/main/Samples) |
 
 ## QR codes
 
@@ -32,7 +32,7 @@ HoloLens 2 can detect QR codes in the environment around the headset, establishi
 
 | Reference article | Sample |
 | --- | --- |
-| [QR codes](qr-code-tracking.md) | [QR code tracking in Unity](https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes) |
+| [QR codes](platform-capabilities-and-apis/qr-code-tracking.md) | [QR code tracking in Unity](https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes) |
 
 ## WebRTC
 
@@ -52,7 +52,7 @@ Mixed reality capture (MRC) captures the first-person experience of mixing real 
 
 | Reference article | Sample |
 | --- | --- |
-| [Mixed Reality Capture](mixed-reality-capture-for-developers.md) | [Mixed Reality Capture samples](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/) |
+| [Mixed Reality Capture](platform-capabilities-and-apis/mixed-reality-capture-for-developers.md) | [Mixed Reality Capture samples](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/) |
 
 ## Holographic Remoting
 
@@ -62,7 +62,7 @@ The Holographic Remoting Player is a companion app that connects to PC apps and 
 
 | Reference article | Sample |
 | --- | --- |
-| [Holographic Remoting](holographic-remoting-player.md) | [Holographic Remoting samples](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples) |
+| [Holographic Remoting](platform-capabilities-and-apis/holographic-remoting-player.md) | [Holographic Remoting samples](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples) |
 
 
 ## MRTK UX Tools in Unreal 
