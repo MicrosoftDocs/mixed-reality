@@ -11,13 +11,11 @@ keywords: Windows Mixed Reality, hand tracking, Unreal, Unreal Engine 4, UE4, Ho
 
 # Hand tracking in Unreal
 
-## Overview
-
-The hand tracking system uses a person’s palms and fingers as input. You can get the position and rotation of every finger, the entire palm, and even hand gestures to use in your code. 
+The hand tracking system uses a person’s palms and fingers as input. Data on position and rotation of every finger, the entire palm, and hand gestures is available. 
 
 ## Hand Pose
 
-Hand pose lets you track the hands and fingers of the active user and use it as input, which you can access through Blueprints and C++. You can find more technical details in Unreal's [Windows.Perception.People.HandPose](https://docs.microsoft.com/uwp/api/windows.perception.people.handpose) API. The Unreal API sends the data as a coordinate system, with ticks synchronized with the Unreal Engine.
+Hand pose lets you track and use the hands and fingers of your users as input. You can access tracking data both in Blueprints and C++. You can find more technical details in Unreal's [Windows.Perception.People.HandPose](https://docs.microsoft.com/uwp/api/windows.perception.people.handpose) API. The Unreal API sends the data as a coordinate system, with ticks synchronized with the Unreal Engine.
 
 ### Understanding the bone hierarchy
 
@@ -68,7 +66,7 @@ You can use hand tracking in Blueprints by adding **Supports Hand Tracking** fro
 
 ![Hand Tracking BP](images/unreal/hand-tracking-bp.png)
 
-This function returns `true` if hand tracking is supported on the device and `false` if hand tracking is not available.
+This function returns `true` if hand tracking is supported on the device and `false` if hand tracking isn't available.
 
 ![Supports Hand Tracking BP](images/unreal/supports-hand-tracking-bp.png)
 
@@ -81,6 +79,7 @@ static bool UWindowsMixedRealityHandTrackingFunctionLibrary::SupportsHandTrackin
 ```
 
 ### Getting Hand Tracking
+
 You can use **GetHandJointTransform** to return spatial data from the hand. The data updates every frame, but if you're inside a frame the returned values are cached. It's not recommended to have heavy logic in this function for performance reasons. 
 
 ![Get Hand Joint Transform](images/unreal/get-hand-joint-transform.png)
@@ -90,24 +89,25 @@ C++:
 static bool UWindowsMixedRealityHandTrackingFunctionLibrary::GetHandJointTransform(EControllerHand Hand, EWMRHandKeypoint Keypoint, FTransform& OutTransform, float& OutRadius)
 ```
 
-Function parameter breakdown:
+Here's a breakdown of GetHandJointTransform's function parameters:
 
-* **Hand** – an be the left or right hand of the user
+* **Hand** – can be the users left or right hand.
 * **Keypoint** – the bone of the hand. 
 * **Transform** – coordinates and orientation of bone’s base. You can request the base of the next bone to get the transform data for the end of a bone. A special Tip bone gives end of distal. 
 * **Radius** — radius of the base of the bone.
-* **Return Value** — true if the bone is tracked this frame, false if the bone is not tracked.
+* **Return Value** — true if the bone is tracked this frame, false if the bone isn't tracked.
 
 ## Hand Live Link Animation
+
 Hand poses are exposed to Animation using the [Live Link plugin](https://docs.unrealengine.com/Engine/Animation/LiveLinkPlugin/index.html).
 
 If the Windows Mixed Reality and Live Link plugins are enabled: 
 1. Select **Window > Live Link** to open the Live Link editor window. 
-2. Click **Source** and enable **Windows Mixed Reality Hand Tracking Source**
+2. Select **Source** and enable **Windows Mixed Reality Hand Tracking Source**
 
 ![Live Link Source](images/unreal/live-link-source.png)
  
-After you enable the source and open an animation asset, expand the **Animation** section in the **Preview Scene** tab too see additional options (the details are in Unreal’s Live Link documentation - as the plugin is in beta, the process may change later).
+After you enable the source and open an animation asset, expand the **Animation** section in the **Preview Scene** tab too see additional options.
 
 ![Live Link Animation](images/unreal/live-link-animation.png)
  
@@ -173,7 +173,7 @@ UMRMeshComponent* UARTrackedGeometry::GetUnderlyingMesh()
 
 ### Blueprint API Reference
 
-In order to work with Hand Meshes in Blueprints:
+To work with Hand Meshes in Blueprints:
 1. Add an **ARTrackableNotify** Component to a Blueprint actor
 
 ![ARTrackable Notify](images/unreal/ar-trackable-notify.png)
@@ -190,7 +190,8 @@ In order to work with Hand Meshes in Blueprints:
 
 You can use a hand ray as a pointing device in both C++ and Blueprints, which exposes the [Windows.UI.Input.Spatial.SpatialPointerInteractionSourcePose](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose) API.
 
-It’s important to mention that since the results of all the functions change every frame, they're all made callable. For more information about pure and impure or callable functions, see the Blueprint user guid on [functions](https://docs.unrealengine.com/en-US/Engine/Blueprints/UserGuide/Functions/index.html#purevs.impure)
+> [!IMPORTANT]
+> Since all function results change every frame, they're all made callable. For more information about pure and impure or callable functions, see the Blueprint user guid on [functions](https://docs.unrealengine.com/en-US/Engine/Blueprints/UserGuide/Functions/index.html#purevs.impure).
 
 To use Hand Rays in Blueprints, search for any of the actions under **Windows Mixed Reality HMD**:
 
@@ -199,6 +200,7 @@ To use Hand Rays in Blueprints, search for any of the actions under **Windows Mi
 To access them in C++, include `WindowsMixedRealityFunctionLibrary.h` to the top of your calling code file.
 
 ### Enum
+
 You also have access to input cases under **EHMDInputControllerButtons**, which can be used in Blueprints:
 
 ![Input Controller Buttons](images/unreal/input-controller-buttons.png)
@@ -214,10 +216,11 @@ enum class EHMDInputControllerButtons : uint8
 ```
 
 Below is a breakdown of the two applicable enum cases:
+
 * **Select** - User triggered Select event. 
-    * The event can be triggered in HoloLens 2 by air-tap, gaze and commit, or by saying “Select” with [voice input](unreal-voice-input.md) enabled. 
+    * Triggered in HoloLens 2 by air-tap, gaze, and commit, or by saying “Select” with [voice input](unreal-voice-input.md) enabled. 
 * **Grasp** - User triggered Grasp event. 
-    * This event can be triggered in HoloLens 2 by closing the user’s fingers on a hologram. 
+    * Triggered in HoloLens 2 by closing the user’s fingers on a hologram. 
 
 You can access the tracking status of your hand mesh in C++ through the `EHMDTrackingStatus` enum shown below:
 
@@ -231,18 +234,21 @@ enum class EHMDTrackingStatus : uint8
 ```
 
 Below is a breakdown of the two applicable enum cases:
+
 * **NotTracked** –- the hand isn’t visible
 * **Tracked** –- the hand is fully tracked
 
 ### Struct
+
 The PointerPoseInfo struct can give you information on the following hand data:
+
 * **Origin** – origin of the hand
 * **Direction** – direction of the hand
 * **Up** – up vector of the hand
 * **Orientation** – orientation quaternion 
 * **Tracking Status** – current tracking status
 
-You can access this through Blueprints, as shown below:
+You can access the PointerPoseInfo struct through Blueprints, as shown below:
 
 ![Pointer Pose Info BP](images/unreal/pointer-pose-info-bp.png)
 
@@ -320,7 +326,7 @@ static EHMDTrackingStatus UWindowsMixedRealityFunctionLibrary::GetControllerTrac
 
 ## Gestures
 
-The Hololens 2 can track spatial gestures, which means you can capture those gestures as input. You can find more details about gestures are the [HoloLens 2 Basic Usage](https://docs.microsoft.com/hololens/hololens2-basic-usage) document.
+The HoloLens 2 tracks spatial gestures, which means you can capture those gestures as input. You can find more details about gestures are the [HoloLens 2 Basic Usage](https://docs.microsoft.com/hololens/hololens2-basic-usage) document.
 
 You can find the Blueprint function in under **Windows Mixed Reality Spatial Input**, and the C++ function by adding `WindowsMixedRealitySpatialInputFunctionLibrary.h` in your calling code file.
 
@@ -404,7 +410,7 @@ const FKey FSpatialInputKeys::RightNavigationZGesture(RightNavigationZGestureNam
 
 ## Next Development Checkpoint
 
-If you're following the Unreal development checkpoint journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can proceed to the next building block: 
+If you're following the Unreal development journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can continue to the next building block: 
 
 > [!div class="nextstepaction"]
 > [Local Spatial Anchors](unreal-spatial-anchors.md)

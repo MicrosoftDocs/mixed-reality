@@ -1,6 +1,6 @@
 - name: Introduction to Mixed Reality development
   href: development.md
-- name: Azure Cloud Services
+- name: Azure mixed reality cloud services overview 
   href: mixed-reality-cloud-services.md
 - name: Mixed Reality Learning overview
   href: mr-learning-overview.md
@@ -308,6 +308,8 @@
     items: 
       - name: Deploy to device in Unreal
         href: unreal/unreal-deploying.md
+      - name: Publishing to the Microsoft Store
+        href: unreal/unreal-publishing-to-store.md
       - name: Upgrading projects in Unreal
         href: unreal/unreal-porting.md
       - name: Performance recommendations for Unreal
