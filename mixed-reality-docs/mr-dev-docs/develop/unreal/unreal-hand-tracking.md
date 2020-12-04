@@ -11,8 +11,6 @@ keywords: Windows Mixed Reality, hand tracking, Unreal, Unreal Engine 4, UE4, Ho
 
 # Hand tracking in Unreal
 
-## Overview
-
 The hand tracking system uses a person’s palms and fingers as input. You can get the position and rotation of every finger, the entire palm, and even hand gestures to use in your code. 
 
 ## Hand Pose
