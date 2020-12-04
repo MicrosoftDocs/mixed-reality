@@ -8,6 +8,7 @@ ms.topic: article
 keywords: HoloLens, HoloLens 2, PIX, capture, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
+
 # Installing PIX for HoloLens 2
 
 [PIX](https://devblogs.microsoft.com/pix) is a performance tuning and debugging tool for DirectX 12 applications on Windows. 
@@ -16,7 +17,7 @@ keywords: HoloLens, HoloLens 2, PIX, capture, mixed reality headset, windows mix
 
 1. Grab the latest PIX [release]( https://devblogs.microsoft.com/pix/download) from your host PC and connect your HoloLens 2 to your PC via a USB cable.
 
-2. If your HoloLens 2 is on a [Windows Insider build](https://insider.windows.com) or has a configuration that breaks PIX,  [re-flash your device](https://docs.microsoft.com/en-us/hololens/hololens-recovery) to erase all data.
+2. If your HoloLens 2 is on a [Windows Insider build](https://insider.windows.com) or has a configuration that breaks PIX,  [re-flash your device](https://docs.microsoft.com/hololens/hololens-recovery) to erase all data.
 
 3. Enable **Developer Mode** and **Device Portal**:
 
