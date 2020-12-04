@@ -77,7 +77,7 @@ Getting your apps into the hands of your users or out into the world is the most
     <td>✔️</td>
 </tr>
 <tr>
-    <td><a href="#additional-scenarios"><strong>Custom Win32 deployment</strong></a> (Windows Mixed Reality only - see below)</td>
+    <td><a href="#additional-scenarios"><strong>Custom Win32 deployment</strong></a> (Not available for HoloLens devices - see below)</td>
     <td>✔️</td>
     <td>✔️</td>
     <td>❌</td>
