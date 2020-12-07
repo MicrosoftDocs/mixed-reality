@@ -5,11 +5,11 @@
 > [!NOTE]
 > This requires **Unreal Engine 4.25** or newer.
 
-The system, and custom MRC recorders, create mixed reality captures by combining the PV Camera with holograms rendered by the immersive app.
+The system and custom MRC recorders create mixed reality captures by combining the PV Camera with holograms rendered by the app.
 
-By default, mixed reality capture uses the right eye's holographic output. If an immersive app chooses to [render from the PV Camera](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in) then that will be used instead. This improves the mapping between the real world and the holograms in the MRC video.
+By default, mixed reality capture uses the right eye's holographic output. If an immersive app chooses to [render from the PV Camera](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in), then that will be used instead. Rendering from the PV Camera improves the mapping between the real world and the holograms in the MRC video.
 
-To opt-in to rendering from the PV Camera:
+To opt in to rendering from the PV Camera:
 
 1. Call **SetEnabledMixedRealityCamera** and **ResizeMixedRealityCamera**
     * Use the **Size X** and **Size Y** values to set the video dimensions.
@@ -43,7 +43,7 @@ To render the camera image:
 
 ![Camera Texture from webcam](../images/unreal-camera-texture.PNG)
 
-5. Make sure the material has a parameter matching the name in **SetTextureParameterValue** that's bound to a color entry. Without this, the camera image can't be properly displayed.
+5. Make sure the material has a parameter that matches the name in **SetTextureParameterValue** that's bound to a color entry. Without the parameter, the camera image can't be displayed properly.
 
 ![Camera Texture](../images/unreal-camera-material.PNG)
 
@@ -65,7 +65,7 @@ To render the camera image:
 
 ## Rendering the PV Camera Feed
 
-- In the CamCapture blueprint, turn the PV Camera on:
+- In the CamCapture blueprint, turn on the PV Camera:
 
 ![Blueprint of the Toggle ARCapture function with the PV Camera turned on](../images/unreal-pvc-img-04.png)
 
@@ -73,7 +73,7 @@ To render the camera image:
 
 ![Blueprint of the Create Dynamic Material Instance function](../images/unreal-pvc-img-05.png)
 
-- Get the texture from the camera feed and assign it to the dynamic material if it is valid.  If the texture is not valid, start a timer and try again after the timeout:
+- Get the texture from the camera feed and assign it to the dynamic material if it's valid.  If the texture isn't valid, start a timer and try again after the timeout:
 
 ![Blueprint of camera feed texture assigned to the dynamic material](../images/unreal-pvc-img-06.png)
 
@@ -83,13 +83,13 @@ To render the camera image:
 
 ## Find Camera Positions in World Space
 
-The camera on the HoloLens 2 is offset vertically from the device’s head tracking.  To account for this, a few functions exist to locate the camera in world space.
+The camera on the HoloLens 2 is offset vertically from the device’s head tracking.  A few functions exist to locate the camera in world space to account for the offset.
 
-GetPVCameraToWorldTransform gets the transform in world space of the PVCamera.  This will be positioned on the camera lens:
+GetPVCameraToWorldTransform gets the transform in world space of the PV Camera and will be positioned on the camera lens:
 
 ![Blueprint of the Get PVCamera to World Transform function](../images/unreal-pvc-img-08.png)
 
-GetWorldSpaceRayFromCameraPoint casts a ray from the camera lens into the scene in Unreal world space to find what is on a particular pixel in the camera frame:
+GetWorldSpaceRayFromCameraPoint casts a ray from the camera lens into the scene in Unreal world space to find a pixel's content in the camera frame:
 
 ![Blueprint of the Get World Space Ray from Camera Point](../images/unreal-pvc-img-09.png)
 
@@ -97,7 +97,7 @@ GetPVCameraIntrinsics returns the camera intrinsic values, which can be used whe
 
 ![Blueprint of Get PVCamera Intrinsics functions](../images/unreal-pvc-img-10.png)
 
-To find what exists in world space at a particular pixel coordinate, you can use a line trace with the world space ray:
+To find what exists in world space at a particular pixel coordinate, use a line trace with the world space ray:
 
 ![Blueprint of the world space ray being used to find out what exists in the world space at a particular coordinate](../images/unreal-pvc-img-11.png)
 
@@ -161,7 +161,7 @@ ACamCapture::ACamCapture()
 
 In BeginPlay create a dynamic material instance from the project’s camera material, apply it to the static mesh component, and start the HoloLens camera. 
  
-In the editor, right click on the CamTextureMaterial in the content browser and select “Copy Reference” to get the string for CameraMatPath.
+In the editor, right-click on the CamTextureMaterial in the content browser and select “Copy Reference” to get the string for CameraMatPath.
 
 ```cpp
 void ACamCapture::BeginPlay()

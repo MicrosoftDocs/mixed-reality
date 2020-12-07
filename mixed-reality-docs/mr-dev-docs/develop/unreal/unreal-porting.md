@@ -12,11 +12,11 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, dev
 
 # Upgrading projects in Unreal
 
-When updating to a new version of Unreal, deprecated functions will show up as warnings when compiling the blueprint or packaging the project.  Functions are deprecated when a new function has been added that should be used instead. 
+When updating to a new version of Unreal, deprecated functions show up as warnings when compiling blueprints or packaging the project.  Functions are deprecated when a new function has been added that should be used instead. 
 
 ## 4.26 upgrades
  
-In 4.26, all AR and VR platforms have been refactored to add common interfaces and keep application code platform agnostic.  Because of this refactor, HoloLens projects updating to 4.26 may see more warnings than usual.  Updating to the new APIs is recommended so the project can be more easily ported to other platforms.
+In 4.26, all AR and VR platforms have been refactored to add common interfaces and keep application code platform agnostic, so you may see more warnings than usual.  Updating to the new APIs is recommended so the project can be more easily ported to other platforms.
 
 Warning messages will show which function has been deprecated and indicate what function to use instead.  All deprecated functions will continue to work for this release but may not work in future releases.  Deprecated functions will also no longer be listed when searching for functions in a blueprint.
 
@@ -45,4 +45,4 @@ Warning messages will show which function has been deprecated and indicate what 
 | GetVersionString | ![Blueprint of the Get Version String function](images/unreal-porting-img-16.png) |
 | IsTrackingAvailable | ![Blueprint of the IsTrackingAvailable property](images/unreal-porting-img-17.png) |
 | IsButtonClicked, IsButtonDown, IsGrasped, IsSelectPressed | Use Unreal’s input action system. |
-| SetFocusPointForFrame | Removed in 4.26.  Previously this was used for reprojection when remoting, which now supports depth reprojection. |
+| SetFocusPointForFrame | Removed in 4.26.  Previously used for reprojection when remoting, which now supports depth reprojection. |

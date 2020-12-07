@@ -258,53 +258,95 @@ Notice that it is the SceneObject that has the transform that is relative to the
 
 ### Dealing with Transforms
 
-Scene Understanding has made a deliberate attempt to align with traditional 3D scene representations when dealing with transforms. Each Scene is therefore confined to a single coordinate system much like most common 3D environmental representations. SceneObjects each provide their location as a position and orientation within that coordinate system. If your application is dealing with Scenes that stretch the limit of what a single origin provides it can anchor SceneObjects to SpatialAnchors, or generate several scenes and merge them together, but for simplicity we assume that watertight scenes exist in their own origin that's localized by one NodeId defined by Scene.OriginSpatialGraphNodeId.
+Scene Understanding has made a deliberate attempt to align with traditional 3D scene representations when dealing with transforms. Each Scene is therefore confined to a single coordinate system much like most common 3D environmental representations. SceneObjects each provide their location relative to that coordinate system. If your application is dealing with Scenes that stretch the limit of what a single origin provides it can anchor SceneObjects to SpatialAnchors, or generate several scenes and merge them together, but for simplicity we assume that watertight scenes exist in their own origin that's localized by one NodeId defined by Scene.OriginSpatialGraphNodeId.
 
-The following Unity code, for example, shows how to use Windows Perception and Unity APIs to align coordinate systems together. See [SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) and [SpatialGraphInteropPreview](https://docs.microsoft.com//uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) for details on the Windows Perception APIs, and [Mixed Reality native objects in Unity](https://docs.microsoft.com//windows/mixed-reality/unity-xrdevice-advanced) for details on obtaining a SpatialCoordinateSystem that corresponds to Unity's world origin, as well as the `.ToUnity()` extension method for converting between `System.Numerics.Matrix4x4` and `UnityEngine.Matrix4x4`.
+The following Unity code, for example, shows how to use Windows Perception and Unity APIs to align coordinate systems together. See [SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) and [SpatialGraphInteropPreview](https://docs.microsoft.com//uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) for details on the Windows Perception APIs, and [Mixed Reality native objects in Unity](https://docs.microsoft.com//windows/mixed-reality/unity-xrdevice-advanced) for details on obtaining a SpatialCoordinateSystem that corresponds to Unity's world origin.
 
 ```cs
-public class SceneRootComponent : MonoBehavior
+private System.Numerics.Matrix4x4? GetSceneToUnityTransformAsMatrix4x4(SceneUnderstanding.Scene scene)
 {
-    public SpatialCoordinateSystem worldOrigin;
-    public Scene scene;
-    SpatialCoordinateSystem sceneOrigin;
-    
-    void Start()
-    {
-        // Initialize a SpatialCoordinateSystem for the scene's node in the system's Spatial Graph.
-        scene.origin = SpatialGraphInteropPreview.CreateCoordinateSystemForNode(scene.OriginSpatialGraphNodeId);
-    }
-    
-    void Update()
-    {
-        // Try to get the current transform of the scene's spatial graph node.
-        // This may not be available, e.g. when tracking has been lost.
-        var sceneToWorld = sceneOrigin.TryGetTransformTo(worldOrigin);
-        if (sceneToWorld.HasValue)
-        {
-            // Convert the transform to Unity numerics and update the game object.
-            var sceneToWorldUnity = sceneToWorld.Value.ToUnity();
-            this.gameObject.transform.SetPositionAndRotation(sceneToWorldUnity.GetColumn(3), sceneToWorldUnity.rotation);
-        }
-    }
+
+      System.Numerics.Matrix4x4? sceneToUnityTransform = System.Numerics.Matrix4x4.Identity;
+
+      Windows.Perception.Spatial.SpatialCoordinateSystem sceneCoordinateSystem = Microsoft.Windows.Perception.Spatial.Preview.SpatialGraphInteropPreview.CreateCoordinateSystemForNode(scene.OriginSpatialGraphNodeId);
+      HolograhicFrameData holoFrameData =  Marshal.PtrToStructure<HolograhicFrameData>(UnityEngine.XR.XRDevice.GetNativePtr());
+      Windows.Perception.Spatial.SpatialCoordinateSystem unityCoordinateSystem = Microsoft.Windows.Perception.Spatial.SpatialCoordinateSystem.FromNativePtr(holoFrameData.ISpatialCoordinateSystemPtr);
+
+      sceneToUnityTransform = sceneCoordinateSystem.TryGetTransformTo(unityCoordinateSystem);
+
+      if(sceneToUnityTransform != null)
+      {
+          sceneToUnityTransform = ConvertRightHandedMatrix4x4ToLeftHanded(sceneToUnityTransform.Value);
+      }
+      else
+      {
+          return null;
+      }
+
+    return sceneToUnityTransform;
 }
 ```
 
-Each `SceneObject` has a `Position` and `Orientation` property which can be used to position corresponding content relative to the origin of the containing `Scene`. For example, the following example assumes that the game is a child of the scene root, and assigns its local position and rotation to align to a given `SceneObject`:
+Each `SceneObject` has a transform which is then applied to that object. In Unity we convert to right handed coordinates and assign local transforms as so:
 
 ```cs
-void SetLocalTransformFromSceneObject(GameObject gameObject, SceneObject sceneObject)
+private System.Numerics.Matrix4x4 ConvertRightHandedMatrix4x4ToLeftHanded(System.Numerics.Matrix4x4 matrix)
 {
-    gameObject.transform.localPosition = sceneObject.Position.ToUnity();
-    gameObject.transform.localRotation = sceneObject.Orientation.ToUnity());
+    matrix.M13 = -matrix.M13;
+    matrix.M23 = -matrix.M23;
+    matrix.M43 = -matrix.M43;
+
+    matrix.M31 = -matrix.M31;
+    matrix.M32 = -matrix.M32;
+    matrix.M34 = -matrix.M34;
+
+    return matrix;
 }
+
+ private void SetUnityTransformFromMatrix4x4(Transform targetTransform, System.Numerics.Matrix4x4 matrix, bool updateLocalTransformOnly = false)
+ {
+    if(targetTransform == null)
+    {
+        return;
+    }
+
+    Vector3 unityTranslation;
+    Quaternion unityQuat;
+    Vector3 unityScale;
+
+    System.Numerics.Vector3 vector3;
+    System.Numerics.Quaternion quaternion;
+    System.Numerics.Vector3 scale;
+
+    System.Numerics.Matrix4x4.Decompose(matrix, out scale, out quaternion, out vector3);
+
+    unityTranslation = new Vector3(vector3.X, vector3.Y, vector3.Z);
+    unityQuat        = new Quaternion(quaternion.X, quaternion.Y, quaternion.Z, quaternion.W);
+    unityScale       = new Vector3(scale.X, scale.Y, scale.Z);
+
+    if(updateLocalTransformOnly)
+    {
+        targetTransform.localPosition = unityTranslation;
+        targetTransform.localRotation = unityQuat;
+    }
+    else
+    {
+        targetTransform.SetPositionAndRotation(unityTranslation, unityQuat);
+    }
+}
+
+// Assume we have an SU object called suObject and a unity equivalent unityObject
+
+System.Numerics.Matrix4x4 converted4x4LocationMatrix = ConvertRightHandedMatrix4x4ToLeftHanded(suObject.GetLocationAsMatrix());
+SetUnityTransformFromMatrix4x4(unityObject.transform, converted4x4LocationMatrix, true);
+        
 ```
 
 ### Quad
 
 Quads were designed to facilitate 2D placement scenarios and should be thought of as extensions to 2D canvas UX elements. While Quads are components of SceneObjects and can be rendered in 3D, the Quad APIs themselves assume Quads are 2D structures. They offer information such as extent, shape, and provide APIs for placement.
 
-Quads have rectangular extents, but they represent arbitrarily shaped 2D surfaces. To enable placement on these 2D surfaces that interact with the 3D environment quads offer utilities to make this interaction possible. Currently Scene Understanding provides two such functions, **FindCentermostPlacement** and **GetOcclusionMask**. FindCentermostPlacement is a high level API that locates a position on the quad where an object can be placed and will try to find the best location for your object guaranteeing that the bounding box you provide will reside on the underlying surface.
+Quads have rectangular extents, but they represent arbitrarily shaped 2D surfaces. To enable placement on these 2D surfaces that interact with the 3D environment quads offer utilities to make this interaction possible. Currently Scene Understanding provides two such functions, **FindCentermostPlacement** and **GetSurfaceMask**. FindCentermostPlacement is a high level API that locates a position on the quad where an object can be placed and will try to find the best location for your object guaranteeing that the bounding box you provide will reside on the underlying surface.
 
 > [!NOTE]
 > The coordinates of the output are relative to the quad in "quad space" with the top left corner being (x = 0, y = 0), just as it would be with other windows Rect types. Be sure to take this into account when working with the origins of your own objects. 
@@ -367,7 +409,11 @@ mesh.GetVertexPositions(positions);
 
 The index/vertex buffers must be >= the index/vertex counts, but otherwise can be arbitrarily sized allowing for efficient memory re-use.
 
-## Developing with scene understandings
+### ColliderMesh
+
+Scene objects provide access to mesh and collider mesh data via the Meshes and ColliderMeshes properties. These meshes will always match, meaning that the i'th index of the Meshes property represents the same geometryh as the i'th index of the ColliderMeshes property. If the runtime/object supports collider meshes you are guarateed to get the lowest polygon, highest order approximation and it's genrally good practice to use ColliderMeshes wherever your application would use colliders. If the system does not support colliders the Mesh object returned in ColliderMeshes will be the same object as the mesh reducing memory constraints.
+
+## Developing with scene understanding
 
 At this point you should understand the core building blocks of the scene understanding runtime and SDK. The bulk of the power and complexity lies in access patterns, interaction with 3D frameworks, and tools that can be written on top of these APIs to perform more advanced tasks like spatial planning, room analysis, navigation, physics etc. We hope to capture these in samples that should hopefully guide you in the proper direction to make your scenarios shine. If there are samples/scenarios we are not addressing, please let us know and we will try to document/prototype what you need.
 

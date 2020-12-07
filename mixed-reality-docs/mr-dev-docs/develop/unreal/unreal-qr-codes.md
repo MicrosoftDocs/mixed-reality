@@ -8,9 +8,11 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, features, documentation, guides, holograms, qr codes, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
+
+
 # QR codes in Unreal
 
-The HoloLens 2 can see QR codes in world space using the webcam, which renders them as holograms using a coordinate system at each code's real-world position.  In addition to single QR codes, HoloLens 2 can also render holograms in the same location on multiple devices to create a shared experience. Make sure you're following the best practices for adding QR codes to your applications:
+The HoloLens 2 can see QR codes in world space using the webcam, which renders them as holograms at each code's real-world position. HoloLens 2 can also render holograms in the same location on multiple devices to create a shared experience. Make sure you're following the best practices for adding QR codes to your applications:
 
 - Quiet zones
 - Lighting and backdrop
@@ -23,7 +25,7 @@ Pay special attention to the [environment considerations](../../environment-cons
 
 ## Enabling QR detection
 Since the HoloLens 2 needs to use the webcam to see QR codes, you'll need to enable it in the project settings:
-- Open **Edit > Project Settings**, scroll to the **Platforms** section and click **HoloLens**.
+- Open **Edit > Project Settings**, scroll to the **Platforms** section, and select **HoloLens**.
     + Expand the **Capabilities** section and check **Webcam**.  
 - You'll also need to opt into QR code tracking by [adding an ARSessionConfig asset](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset).
 
@@ -62,7 +64,7 @@ Every QR code has a unique guid ID, which you can find by:
 
 ![QR Guid](images/unreal-qr-guid.PNG)
 
-There's a lot going on behind the scenes with QR codes, so this isn't the end of the road. Be sure to check out the following links for more details on what's under the hood.
+There's a lot going on behind the scenes with QR codes, so you're not at the end of the road. Be sure to check out the following links for more details on what's under the hood.
 
 ## Next Development Checkpoint
 
