@@ -3,10 +3,10 @@ title: Unreal Development Overview
 description: Overview of mixed reality development using Unreal Engine 4
 author: hferrone
 ms.author: v-hferrone
-ms.date: 12/3/2020
+ms.date: 12/7/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remoting, mixed reality, development, getting started, features, new project, emulator, documentation, guides, features, holograms, game development, mixed reality headset, windows mixed reality headset, virtual reality headset
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remoting, mixed reality, development, getting started, features, new project, emulator, documentation, guides, features, holograms, game development, mixed reality headset, windows mixed reality headset, virtual reality headset, OpenXR
 ---
 # Unreal Development Overview
 
@@ -33,7 +33,7 @@ First, you'll need to install the tools for HoloLens 2 development. Next, go thr
 | --- | --- |
 | [Install the latest tools](../install-the-tools.md) | Download and install the latest version of Unreal Engine and setup your project for mixed reality |
 | [HoloLens 2 tutorial series](tutorials/unreal-uxt-ch1.md) | Get set up for mixed reality development in Unreal, build your first app with MRTK, and deploy your app to HoloLens 2 |
-| (Optional) Get started with [OpenXR](../native/openxr.md) in Unreal | If you're looking to build an OpenXR app in Unreal, you should disable the following engine plugin:<ul><li>Windows Mixed Reality</li></ul><br>Download and enable the following plugin in your project from GitHub:<ul><li> [Mixed Reality Platform Extensions](https://github.com/microsoft/Microsoft-OpenXR-Unreal)</li></ul><br>The full list of currently supported features in OpenXR is [below](#supported-features).|
+| (Optional) Get started with [OpenXR](../native/openxr.md) in Unreal | If you're looking to build an OpenXR app in Unreal, you should disable the following engine plugin:<ul><li>Windows Mixed Reality</li></ul><br>Download and enable the following plugin in your project from GitHub:<ul><li> [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal)</li></ul><br>The full list of currently supported features in OpenXR is [below](#supported-features).|
 
 ### 2. Core building blocks
 
@@ -108,7 +108,7 @@ Developing for mixed reality comes with performance checkpoints that depend on t
 | System keyboard | 4.26 | ✔️ |
 | HoloLens Media Player plugin | 4.26 | ✔️ |
 | Azure Spatial Anchors for iOS and Android (beta) | 4.26 |
-| Mixed Reality Platform Extensions plugin with Mixed Reality-specific OpenXR extensions | 4.26 | ✔️ |
+| Microsoft OpenXR plugin with Microsoft vendor-specific OpenXR extensions | 4.26 | ✔️ |
 | Streaming from Azure to HoloLens 2 | 4.26 | ✔️ |
 | Windows App Certification Kit compliance for packaged apps | 4.26 | ✔️ |
 | HP Reverb G2 controller support | 4.26 | ✔️ |
