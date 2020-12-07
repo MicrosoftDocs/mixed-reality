@@ -984,8 +984,18 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/samples.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/unity/samples",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/features-and-samples",
 			"redirect_document_id": true
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/samples.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/features-and-samples",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unreal/unreal-samples.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/features-and-samples",
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/shared-experiences-in-unity.md",

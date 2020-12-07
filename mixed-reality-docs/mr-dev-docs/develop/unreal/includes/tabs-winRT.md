@@ -1,20 +1,23 @@
 # [4.25](#tab/425)
 
-Unreal doesn't natively compile WinRT code in version 4.25, so it's your job to build a separate binary and that can be consumed by Unreal’s build system. This tutorial will walk you through just such a scenario.
+Unreal doesn't natively compile WinRT code in version 4.25, so it's your job to build a separate binary that Unreal’s build system can consume. 
 
 ## Objectives
+
 - Create a Universal Windows DLL that opens a FileSaveDialogue
 - Link that DLL to an Unreal game project
 - Save a file on the HoloLens from an Unreal blueprint using the new DLL
 
 ## Getting started
+
 1. Check that you have all [required tools](../tutorials/unreal-uxt-ch1.md) installed
 2. [Create a new Unreal project](../tutorials/unreal-uxt-ch2.md#creating-a-new-unreal-project) and name it **Consumewinrt**
 3. Enable the [required plugins](../tutorials/unreal-uxt-ch2.md#enabling-required-plugins) for HoloLens development
 4. [Setup for deployment](../tutorials/unreal-uxt-ch6.md) to a device or emulator
 
 ## Creating a WinRT DLL 
-1. Open a new Visual Studio project and create a **DLL (Universal Windows)** project in the same directory to the Unreal game’s **uproject** file. 
+
+1. Open a new Visual Studio project and create a **DLL (Universal Windows)** project in the same directory as the Unreal game’s **uproject** file. 
 
 ![Creating a DLL](../images/unreal-winrt-img-01.png)
 
@@ -24,10 +27,10 @@ Unreal doesn't natively compile WinRT code in version 4.25, so it's your job to 
 ![Configuring the DLL](../images/unreal-winrt-img-02.png)
 
 > [!IMPORTANT]
-> After the new project compiles, you want to pay special attention to the blank cpp and header files, named **HoloLensWinrtDLL.cpp** and **HoloLensWinrtDLL.h** respectively. The header is the include file that uses the DLL in Unreal, while the cpp holds the body of any functions you export and includes any WinRT code that Unreal wouldn't otherwise be able to compile. 
+> After the new project compiles, pay special attention to the blank cpp and header files, named **HoloLensWinrtDLL.cpp** and **HoloLensWinrtDLL.h** respectively. The header is the include file that uses the DLL in Unreal, while the cpp holds the body of any functions you export and includes any WinRT code that Unreal wouldn't otherwise be able to compile. 
 
 3. Before you add any code, you need to update the project properties to ensure the WinRT code you need can compile: 
-    * Right click on the HoloLensWinrtDLL project and select **properties**  
+    * Right-click on the HoloLensWinrtDLL project and select **properties**  
     * Change the **Configuration** dropdown to **All Configurations** and the **Platform** dropdown to **All Platforms**  
     * Under **Configuration Properties> C/C++> All Options**:
         * Add **await** to **Additional Options** to ensure we can wait on async tasks  
@@ -38,6 +41,7 @@ Unreal doesn't natively compile WinRT code in version 4.25, so it's your job to 
 Your project is ready to update the DLL’s source with WinRT code that opens a file dialogue and saves a file to the HoloLens disk.  
 
 ## Adding the DLL code
+
 1. Open **HoloLensWinrtDLL.h** and add a dll exported function for Unreal to consume: 
 
 ```cpp
@@ -280,7 +284,7 @@ When Unreal calls OpenFileDialogue, a File Dialogue opens on the HoloLens prompt
 
 ## Summary 
 
-We encourage you to use the code in this tutorial as a starting point for consuming WinRT code in Unreal.  It allows users to save files to the HoloLens disk using the same file dialogue as Windows.  Follow the same process to export any additional functions from the HoloLensWinrtDLL header and used in Unreal.  Note the DLL code that waits on any async WinRT code in a background MTA thread, which avoids deadlocking the Unreal game thread. 
+We encourage you to use this tutorial as a starting point for consuming WinRT code in Unreal when you need to save files to the HoloLens disk using the same file dialogue as Windows.  The same process applies to exporting additional functions from the HoloLensWinrtDLL header and used in Unreal.  Pay special attention to the DLL code that waits on async WinRT code in a background MTA thread, which avoids deadlocking the Unreal game thread. 
 
 # [4.26](#tab/426)
 
@@ -332,9 +336,9 @@ Before writing any code, you need to disable common warnings in WinRT headers by
 
 ## WinRT from a NuGet package
 
-It’s a little more complicated if you need to add a nuget package with WinRT support. In this case, Visual Studio can do practically all job for you, but the Unreal build system can’t. Luckily, it’s not too difficult. Below is an example of how you would go about downloading the Microsoft.MixedReality.QR package. You can replace it with another, just make sure that you don’t lose the winmd file and copy the correct dll. 
+It’s a little more complicated if you need to add a NuGet package with WinRT support. In this case, Visual Studio can do practically all job for you, but the Unreal build system can’t. Luckily, it’s not too difficult. Below is an example of how you would go about downloading the Microsoft.MixedReality.QR package. You can replace it with another, just make sure you don’t lose the winmd file and copy the correct dll. 
 
-Windows SDK dlls from the previous section are handled by the OS. Nuget’s dlls must be managed by the code in your module. You should add code to download them, copy into binaries folder and load into the process memory at the module startup.
+Windows SDK dlls from the previous section are handled by the OS. NuGet’s dlls must be managed by the code in your module. We recommend adding code to download them, copying into binaries folder, and load into the process memory at the module startup.
 
 At the first step, you should add a packages.config (https://docs.microsoft.com/nuget/reference/packages-config) into the root folder of your module. There you should add all packages you want to download, including all their dependencies. Here I added Microsoft.MixedReality.QR as a primary payload and two others as dependencies to it. The format of that file is same as in Visual Studio:
 
@@ -504,7 +508,7 @@ private void SafeCopy(string source, string destination)
 }
 ```
 
-Nuget DLLs needs to load into your Win32 process memory manually. You should add manual loading into the startup method of your module:
+NuGet DLLs needs to load into your Win32 process memory manually; we recommend adding manual loading into the startup method of your module:
 
 ```cpp
 void StartupModule() override

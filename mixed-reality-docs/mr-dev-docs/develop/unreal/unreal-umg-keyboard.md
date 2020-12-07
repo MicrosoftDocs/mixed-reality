@@ -11,7 +11,7 @@ keywords: Windows Mixed Reality, holograms, HoloLens 2, eye tracking, gaze input
 
 # UMG and keyboard in Unreal
 
-Unreal Motion Graphics (UMG) is Unreal Engine’s built-in UI system, used to create interfaces such as menus and text boxes. User interfaces built with UMG consist of widgets. This guide will show you how to create a new widget, add it to world space, and enable interaction with that widget in mixed reality, using the system keyboard as an example. You can learn more about UMG in the official Unreal Engine [documentation](https://docs.unrealengine.com/en-US/Engine/UMG/index.html). 
+Unreal Motion Graphics (UMG) is Unreal Engine’s built-in UI system, used to create interfaces such as menus and text boxes. User interfaces built with UMG consist of widgets. We'll guide you through creating a new widget, adding it to world space, and enabling interaction using the system keyboard as an example. You can learn more about UMG in the official Unreal Engine [documentation](https://docs.unrealengine.com/en-US/Engine/UMG/index.html). 
 
 ## Create a new widget
 
@@ -19,11 +19,11 @@ Unreal Motion Graphics (UMG) is Unreal Engine’s built-in UI system, used to cr
 
 ![Screenshot of adding a widget blueprint from the Unreal menu](images/unreal-umg-img-01.png)
 
-- Open the new blueprint and add components from the Palette to the canvas.  In this case we have added two Text Box components from the “Input” section:
+- Open the new blueprint and add components from the Palette to the canvas.  In this case, we've added two Text Box components from the “Input” section:
 
 ![Screenshot of the hierarchy window with text widget component highlighted and expanded](images/unreal-umg-img-02.png)
 
-- Select a widget in the Hierarchy or Designer window and modify parameters in the details panel.  In this case, we’ve added some default “Hint Text” and a tint color when the cursor is hovering over the text box to give feedback that the widget is ready to be interacted with.  A text box will pop up a virtual keyboard on HoloLens when it is interacted with:
+- Select a widget in the Hierarchy or Designer window and modify parameters in the details panel.  In this case, we’ve added some default “Hint Text” and a tint color that appears when you hover over the text box.  A text box will pop up a virtual keyboard on HoloLens when it's interacted with:
 
 ![Screenshot of modified parameters in the hierarchy window](images/unreal-umg-img-03.png)
 
@@ -53,13 +53,16 @@ UMG Widgets typically receive input from a mouse.  On HoloLens or VR, we need to
 
 ![Screenshot of a new actor with a widget interaction component highlighted](images/unreal-umg-img-08.png)
 
-- In the details panel for the Widget Interaction component, set the interaction distance to the desired distance, set the **Interaction Source** to **custom**, and for development, set **Show Debug** to **true**:
+- In the details panel for the Widget Interaction component:
+    - Set the interaction distance to the distance value you want
+    - Set the **Interaction Source** to **custom**
+    - For development, set **Show Debug** to **true**:
 
 ![Screenshot of the widget interaction and debugging component properties](images/unreal-umg-img-09.png)
 
-The default for Interaction Source is “World”, which should send raycasts based on the world position of the Widget Interaction component, but in AR and VR this does not appear to be the case.  Enabling “Show Debug” and adding a hover tint to widgets while developing is important to sanity check the widget interaction component is doing what you expect.  The workaround is to use a custom source and set the raycast in the event graph from the hand ray.  
+The default for Interaction Source is “World”, which should send raycasts based on the world position of the Widget Interaction component. In AR and VR, that's not the case.  Enabling “Show Debug” and adding a hover tint to widgets is important to check the widget interaction component is doing what you expect.  The workaround is to use a custom source and set the raycast in the event graph from the hand ray.  
 
-Here we are calling this from Event Tick:
+Here we're calling this from Event Tick:
 
 ![Blueprint of event tick](images/unreal-umg-img-10.png)
 
