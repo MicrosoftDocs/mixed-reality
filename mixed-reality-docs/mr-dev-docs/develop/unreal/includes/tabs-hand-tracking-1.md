@@ -272,7 +272,7 @@ To get the data for the hand rays, you should use the “Get Motion Controller D
 
 Below is an example of determining whether a hand ray hits a Widget and setting a custom hit result accordingly:
 
-![Blueprint of get motion controller data function](images/unreal-hand-tracking-img-04.png) 
+![Blueprint of get motion controller data function](../images/unreal-hand-tracking-img-04.png) 
 
 ## Hand Mesh Debug Visualization
 
@@ -283,7 +283,7 @@ The hand meshes can be used for various reasons, primarily in debug purposes. Th
 
 Then in the blueprint editor, you should use “Set Use Hand Mesh” function from Microsoft-OpenXR-Unreal with “Enabled XRVisualization” as a parameter just like the following:
 
-![Blueprint of event begin play connected to set use hand mesh function with enabled xrvisualization mode](images/unreal-hand-tracking-img-05.png)
+![Blueprint of event begin play connected to set use hand mesh function with enabled xrvisualization mode](../images/unreal-hand-tracking-img-05.png)
 
 To manage the rendering process, you should use “Render Motion Controller” from XRVisualization:
 
