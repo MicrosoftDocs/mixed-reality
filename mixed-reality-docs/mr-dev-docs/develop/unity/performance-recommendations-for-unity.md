@@ -115,9 +115,9 @@ public class ExampleClass : MonoBehaviour
 
 3) **Beware of boxing**
 
-    [Boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing) is a core concept of the C# language and runtime. It is the process of wrapping value-typed variables such as char, int, bool, etc. into reference-typed variables. When a value-typed variable is "boxed", it is wrapped inside of a System.Object which is stored on the managed heap. Thus, memory is allocated and eventually when disposed must be processed by the garbage collector. These allocations and deallocations incur a performance cost and in many scenarios are unnecessary or can be easily replaced by a less expensive alternative.
+    [Boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing) is a core concept of the C# language and runtime. It is the process of wrapping value-typed variables such as `char`, `int`, `bool`, etc. into reference-typed variables. When a value-typed variable is "boxed", it is wrapped inside of a `System.Object` which is stored on the managed heap. Thus, memory is allocated and eventually when disposed must be processed by the garbage collector. These allocations and deallocations incur a performance cost and in many scenarios are unnecessary or can be easily replaced by a less expensive alternative.
 
-    One of the most common forms of boxing in development is the use of [nullable value types](https://docs.microsoft.com//dotnet/csharp/programming-guide/nullable-types/). It is common to want to be able to return null for a value type in a function, especially when the operation may fail trying to get the value. The potential problem with this approach is that allocation now occurs on the heap and consequently needs to be garbage collected later.
+    To avoid boxing, be sure that the variables, fields and properties in which you store numeric types and structs (including `Nullable<T>`) are strongly-typed as specific types such as `int`, `float?` or `MyStruct`, instead of using object.  If putting these objects into a list, be sure to use a strongly-typed list such as `List<int>` rather than `List<object>` or `ArrayList`.
 
     **Example of boxing in C#**
 
@@ -125,21 +125,6 @@ public class ExampleClass : MonoBehaviour
     // boolean value type is boxed into object boxedMyVar on the heap
     bool myVar = true;
     object boxedMyVar = myVar;
-    ```
-
-    **Example of problematic boxing via nullable value types**
-
-    This code demonstrates a dummy particle class that one may create in a Unity project. A call to `TryGetSpeed()` will cause object allocation on the heap which will need to be garbage collected at a later point in time. This example is particularly problematic as there may be 1000+ or many more particles in a scene, each being asked for their current speed. Thus, 1000's of objects would be allocated and consequently de-allocated every frame, which would greatly diminish performance. Re-writing the function to return a negative value such as -1 to indicate a failure would avoid this issue and keep memory on the stack.
-
-    ```csharp
-        public class MyParticle
-        {
-            // Example of function returning nullable value type
-            public int? TryGetSpeed()
-            {
-                // Returns current speed int value or null if fails
-            }
-        }
     ```
 
 #### Repeating code paths
