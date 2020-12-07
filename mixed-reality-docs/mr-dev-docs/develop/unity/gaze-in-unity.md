@@ -13,7 +13,6 @@ keywords: eye-gaze, head-gaze, unity, hologram, mixed reality, mixed reality hea
 
 [Gaze](../../design/gaze-and-commit.md) is a primary way for users to target the [holograms](../../discover/hologram.md) your app creates in [Mixed Reality](../../discover/mixed-reality.md).
 
-
 ## Implementing head-gaze
 
 Conceptually, [head-gaze](../../design/gaze-and-commit.md) is implemented by projecting a ray from the user's head where the headset is, in the forward direction they are facing and determining what that ray collides with.
