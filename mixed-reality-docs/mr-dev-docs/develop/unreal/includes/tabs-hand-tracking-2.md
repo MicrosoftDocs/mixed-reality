@@ -88,15 +88,15 @@ HoloLens can not only track a hand itself, but also identify the hand’s gestur
 
 ## Windows Mixed Reality
 
-![](../images/unreal-hand-tracking-img-09.png)
+![Blueprint of event begin play connected to configure gestures function](../images/unreal-hand-tracking-img-09.png)
 
 Then you should add code to subscribe to the following events:
 
-![](../images/unreal/key-events.png)
-![](../images/unreal/key-events2.png)
+![Blueprint of Windows spatial input hold, tap, and left manipulation gestures](../images/unreal/key-events.png)
+![Screenshot of Windows spatial input tap gesture options in the details panel](../images/unreal/key-events2.png)
 
 ## OpenXR
 
 In OpenXR, gesture events are tracked through the input pipeline. Using hand interaction, the device can automatically recognise Tap and Hold gestures, but not the others. They are named as OpenXRMsftHandInteraction Select and Grip mappings. You don’t need to enable subscription, you should declare the events in Project Settings/Engine/Input, just like this:
 
-![](../images/unreal-hand-tracking-img-12.png)
+![Screenshot of the OpenXR action mappings](../images/unreal-hand-tracking-img-12.png)
