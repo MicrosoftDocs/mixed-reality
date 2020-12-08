@@ -2,12 +2,15 @@
 
 The latest Unreal Engine 4.26 release includes:
 * OpenXR support
+* Support for [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal) plugin with Microsoft's vendor-specific OpenXR extensions
 * HoloLens Media Player plugin for performant video playback
 * Azure Spatial Anchors for iOS and Android (beta)
-* Mixed Reality Platform Extensions plugin with Mixed Reality-specific OpenXR extensions
 * Streaming from Azure to HoloLens 2
 * Windows App Certification Kit compliance for packaged apps
 * HP Reverb G2 controller support
+
+See the Unreal Engine 4.26 <a href="https://docs.unrealengine.com/Support/Builds/ReleaseNotes/4_26/index.html" target="_blank" title="Unreal Engine 4.26 release notes">release notes</a> for more. 
+
 
 # [4.25](#tab/ue425)
 
