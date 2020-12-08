@@ -3,7 +3,7 @@ title: Streaming in Unreal
 description: A guide to streaming in Unreal to HoloLens 2
 author: sw5813
 ms.author: suwu
-ms.date: 7/10/2020
+ms.date: 12/7/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, streaming, PC, holographic app remoting, holographic remoting player, documentation, mixed reality headset, windows mixed reality headset, virtual reality headset
@@ -29,6 +29,14 @@ When streaming, you have access to almost all of the same HoloLens capabilities 
 > [!NOTE]
 > * Streaming quality is highly dependent on the strength of your wifi network.
 > * All capabilities are automatically enabled for the holographic remoting player. If you find a capability that requires user permission (ex: eye tracking) to be working over streaming but not when running on device, check to ensure you've enabled the proper capabilities under your project settings.
+
+### Streaming limitations
+
+Hand meshes, the HoloLens camera, and the system keyboard are unavailable over streaming. Note that speech input for streamed apps can be acquired via the microphone of the PC you are streaming from.
+
+#### OpenXR
+
+Unreal 4.26 running on OpenXR supports streaming to versions 2.4.0+ of the Holographic Remoting Player. OpenXR streaming in 2.4.0 is missing support for spatial mapping and spatial anchors. 
 
 ## Device support
 
@@ -75,12 +83,18 @@ In Unreal 4.25.1 and onwards, you can stream your app to a HoloLens 2 device fro
 2. Once the package has finished building, open the **Holographic Remoting Player** on your HoloLens 2 and make note of the IP Address. 
 3. Leave the **Holographic Remoting Player** open and use the command line prompt to: 
     * cd into the local directory where you saved your package.
-    * Enter the following command: ```<App Name>.exe -vr -HoloLensRemoting=<IP Address>```
+    * Enter the following command: `<App Name>.exe -vr -HoloLensRemoting=<IP Address>`
 
 > [!NOTE]
 > The application name in your project settings should be automatically used to create the Windows package. If these are different for some reason, use the Windows executable name in the command prompt.
 
 Hit enter and watch your application start streaming!
+
+### Command line options
+
+Additional command line options for streaming from each platform in Unreal Engine 4.26+ can be found in the table below. 
+
+[!INCLUDE[](includes/tabs-streaming-args.md)]
 
 ## See also
 
