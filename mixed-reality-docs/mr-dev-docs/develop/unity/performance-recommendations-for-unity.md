@@ -9,6 +9,7 @@ keywords: graphics, cpu, gpu, rendering, garbage collection, hololens
 ms.localizationpriority: high
 ---
 
+
 # Performance recommendations for Unity
 
 This article builds on the [performance recommendations for mixed reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md), but focuses on Unity-specific improvements.
@@ -36,7 +37,7 @@ The content below covers more in-depth performance practices, especially targete
 
 #### Cache references
 
-It's best practice to cache references to all relevant components and GameObjects at initialization. This is because repeating function calls such as *[GetComponent\<T>()](https://docs.unity3d.com/ScriptReference/GameObject.GetComponent.html)* are more expensive relative to the memory cost to store a pointer. This also applies to the regularly used [Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html). *Camera.main* just uses *[FindGameObjectsWithTag()](https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html)* underneath, which expensively searches your scene graph for a camera object with the *"MainCamera"* tag.
+We recommend caching references to all relevant components and GameObjects at initialization because repeating function calls such as *[GetComponent\<T>()](https://docs.unity3d.com/ScriptReference/GameObject.GetComponent.html)* and [Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html) are more expensive relative to the memory cost to store a pointer. . *Camera.main* just uses *[FindGameObjectsWithTag()](https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html)* underneath, which expensively searches your scene graph for a camera object with the *"MainCamera"* tag.
 
 ```CS
 using UnityEngine;
@@ -81,7 +82,7 @@ public class ExampleClass : MonoBehaviour
 
 1) **Avoid use of [LINQ](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq)**
 
-    Although LINQ can be clean and easy to read and write, it generally requires much more computation and particularly more memory allocation than writing the algorithm out manually.
+    Although LINQ can be clean and easy to read and write, it generally requires more computation and memory than if you wrote the algorithm manually.
 
     ```CS
     // Example Code
@@ -115,7 +116,7 @@ public class ExampleClass : MonoBehaviour
 
 3) **Beware of boxing**
 
-    [Boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing) is a core concept of the C# language and runtime. It is the process of wrapping value-typed variables such as `char`, `int`, `bool`, etc. into reference-typed variables. When a value-typed variable is "boxed", it is wrapped inside of a `System.Object`, which is stored on the managed heap. Thus, memory is allocated and eventually when disposed must be processed by the garbage collector. These allocations and deallocations incur a performance cost and in many scenarios are unnecessary or can be easily replaced by a less expensive alternative.
+    [Boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing) is a core concept of the C# language and runtime. It's the process of wrapping value-typed variables such as `char`, `int`, `bool`, etc. into reference-typed variables. When a value-typed variable is "boxed", it's wrapped in a `System.Object`, which is stored on the managed heap. Memory is allocated and eventually when disposed must be processed by the garbage collector. These allocations and deallocations incur a performance cost and in many scenarios are unnecessary or can be easily replaced by a less expensive alternative.
 
     To avoid boxing, be sure that the variables, fields, and properties in which you store numeric types and structs (including `Nullable<T>`) are strongly typed as specific types such as `int`, `float?` or `MyStruct`, instead of using object.  If putting these objects into a list, be sure to use a strongly typed list such as `List<int>` rather than `List<object>` or `ArrayList`.
 
@@ -133,7 +134,7 @@ Any repeating Unity callback functions (i.e Update) that are executed many times
 
 1) **Empty callback functions**
 
-    Although the code below may seem innocent to leave in your application, especially since every Unity script auto-initializes with this code block, these empty callbacks can actually become expensive. Unity operates back and forth over an unmanaged/managed code boundary, between UnityEngine code and your application code. Context switching over this bridge is fairly expensive, even if there's nothing to execute. This becomes especially problematic if your app has 100s of GameObjects with components that have empty repeating Unity callbacks.
+    Although the code below may seem innocent to leave in your application, especially since every Unity script auto-initializes with an Update method, these empty callbacks can become expensive. Unity operates back and forth between an unmanaged and managed code boundary, between UnityEngine code and your application code. Context switching over this bridge is fairly expensive, even if there's nothing to execute. This becomes especially problematic if your app has 100s of GameObjects with components that have empty repeating Unity callbacks.
 
     ```CS
     void Update()
@@ -148,7 +149,7 @@ Any repeating Unity callback functions (i.e Update) that are executed many times
 
     The following Unity APIs are common operations for many Holographic Apps. Although not always possible, the results from these functions can commonly be computed once and the results reutilized across the application for a given frame.
 
-    a) It's generally good practice to have a dedicated Singleton class or service to handle your gaze Raycast into the scene and then reuse this result in all other scene components, instead of making repeated and identical Raycast operations by each component. Some applications may require raycasts from different origins or against different [LayerMasks](https://docs.unity3d.com/ScriptReference/LayerMask.html).
+    a) It's good practice to have a dedicated Singleton class or service to handle your gaze Raycast into the scene and then reuse this result in all other scene components, instead of making repeated and identical Raycast operations by each component. Some applications may require raycasts from different origins or against different [LayerMasks](https://docs.unity3d.com/ScriptReference/LayerMask.html).
     
     ```csharp
         UnityEngine.Physics.Raycast()
@@ -175,7 +176,7 @@ Any repeating Unity callback functions (i.e Update) that are executed many times
 
 4) **Avoid passing structs by value**
 
-    Unlike classes, structs are value-types and when passed directly to a function, their contents are copied into a newly created instance. This copy adds CPU cost, as well as additional memory on the stack. For small structs, the effect is very minimal and thus acceptable. However, for functions repeatedly invoked every frame as well as functions taking large structs, if possible modify the function definition to pass by reference. [Learn more here](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method)
+    Unlike classes, structs are value-types and when passed directly to a function, their contents are copied into a newly created instance. This copy adds CPU cost, as well as additional memory on the stack. For small structs, the effect is minimal and thus acceptable. However, for functions repeatedly invoked every frame as well as functions taking large structs, if possible modify the function definition to pass by reference. [Learn more here](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method)
 
 #### Miscellaneous
 
@@ -264,7 +265,7 @@ Techniques that operate on the full screen can be expensive since their order of
 
 ### Optimal lighting settings
 
-[Real-time Global Illumination](https://docs.unity3d.com/Manual/GIIntro.html) in Unity can provide outstanding visual results but involves expensive lighting calculations. We recommended to disable real time Global Illumination for every Unity scene file via **Window** > **Rendering** > **Lighting Settings** > Uncheck **Real-time Global Illumination**.
+[Real-time Global Illumination](https://docs.unity3d.com/Manual/GIIntro.html) in Unity can provide outstanding visual results but involves expensive lighting calculations. We recommended disabling real-time Global Illumination for every Unity scene file via **Window** > **Rendering** > **Lighting Settings** > Uncheck **Real-time Global Illumination**.
 
 Furthermore, it's recommended to disable all shadow casting as these also add expensive GPU passes onto a Unity scene. Shadows can be disable per light but can also be controlled holistically via Quality settings.
 
@@ -338,13 +339,13 @@ Other quick tips:
 
 #### Object pooling
 
-Object pooling is a popular technique to reduce the cost of continuous allocations & deallocations of objects. This is done by allocating a large pool of identical objects and reusing inactive, available instances from this pool instead of constantly spawning and destroying objects over time. Object pools are great for reuseable components that have variable lifetime during an app.
+Object pooling is a popular technique for reducing the cost of continuous object allocation and deallocations. This is done by allocating a large pool of identical objects and reusing inactive, available instances from this pool instead of constantly spawning and destroying objects over time. Object pools are great for reuseable components that have variable lifetime during an app.
 
 - [Object Pooling Tutorial in Unity](https://unity3d.com/learn/tutorials/topics/scripting/object-pooling) 
 
 ## Startup performance
 
-You should consider starting your app with a smaller scene, then using *[SceneManager.LoadSceneAsync](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadSceneAsync.html)* to load the rest of the scene. This allows your app to get to an interactive state as fast as possible. Be aware that there may be a large CPU spike while the new scene is being activated and that any rendered content might stutter or hitch. One way to work around this is to set the AsyncOperation.allowSceneActivation property to "false" on the scene being loaded, wait for the scene to load, clear the screen too black, and then set it back to "true" to complete the scene activation.
+Consider starting your app with a smaller scene, then using *[SceneManager.LoadSceneAsync](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadSceneAsync.html)* to load the rest of the scene. This allows your app to get to an interactive state as fast as possible. There may be a large CPU spike while the new scene is being activated and that any rendered content might stutter or hitch. One way to work around this is to set the AsyncOperation.allowSceneActivation property to "false" on the scene being loaded, wait for the scene to load, clear the screen too black, and then set it back to "true" to complete the scene activation.
 
 Remember that while the startup scene is loading, the holographic splash screen will be displayed to the user.
 
