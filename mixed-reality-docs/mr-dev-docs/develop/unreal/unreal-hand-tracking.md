@@ -17,7 +17,7 @@ The hand tracking system uses a person’s palms and fingers as input. Data on p
 
 Hand pose lets you track and use the hands and fingers of your users as input, which can be accessed in both Blueprints and C++. The Unreal API sends the data as a coordinate system, with ticks synchronized with the Unreal Engine.
 
-![Hand Skeleton](../../native/images/hand-skeleton.png)
+![Hand Skeleton](../native/images/hand-skeleton.png)
 
 [!INCLUDE[](includes/tabs-tracking-hand-pose.md)]
 
@@ -97,15 +97,15 @@ The hand meshes can be used for various reasons, primarily in debug purposes. Th
 
 Then in the blueprint editor, you should use **Set Use Hand Mesh** function from Microsoft-OpenXR-Unreal with **Enabled XRVisualization** as a parameter:
 
-![Blueprint of event begin play connected to set use hand mesh function with enabled xrvisualization mode](../images/unreal-hand-tracking-img-05.png)
+![Blueprint of event begin play connected to set use hand mesh function with enabled xrvisualization mode](images/unreal-hand-tracking-img-05.png)
 
 To manage the rendering process, you should use **Render Motion Controller** from XRVisualization:
 
-![Blueprint of get motion controller data function connected to render motion controller function](../images/unreal-hand-tracking-img-06.png)
+![Blueprint of get motion controller data function connected to render motion controller function](images/unreal-hand-tracking-img-06.png)
 
 The result:
 
-![Image of digital hand overlayed on a real human hand](../images/unreal-hand-tracking-img-07.png)
+![Image of digital hand overlayed on a real human hand](images/unreal-hand-tracking-img-07.png)
 
 #### Hand Mesh as a Tracked Geometry
 
@@ -113,7 +113,7 @@ If you need anything more complicated, such as drawing a hand mesh with a custom
 
 To enable that mode you should call **Set Use Hand Mesh** with **Enabled Tracking Geometry**:
 
-![Blueprint of event begin play connected to set use hand mesh function with enabled tracking geometry mode](../images/unreal-hand-tracking-img-08.png)
+![Blueprint of event begin play connected to set use hand mesh function with enabled tracking geometry mode](images/unreal-hand-tracking-img-08.png)
 
 > [!NOTE]
 > It’s not possible for both modes to be enabled at the same time. If you enable one, the other is automatically disabled. 
