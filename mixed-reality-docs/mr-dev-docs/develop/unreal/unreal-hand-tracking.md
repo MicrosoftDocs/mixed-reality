@@ -1,4 +1,4 @@
----
+ ---
 title: Hand tracking in Unreal
 description: Explains how to use Hand tracking in Unreal
 author: hferrone
@@ -13,7 +13,15 @@ keywords: Windows Mixed Reality, hand tracking, Unreal, Unreal Engine 4, UE4, Ho
 
 The hand tracking system uses a person’s palms and fingers as input. Data on position and rotation of every finger, the entire palm, and hand gestures is available. Starting in Unreal 4.26, hand tracking is based on the Unreal HeadMountedDisplay plugin and uses a common API across all XR platforms and devices. Functionality is the same for both Windows Mixed Reality and OpenXR systems.
 
-[!INCLUDE[](includes/tabs-hand-tracking-1.md)]
+## Hand pose
+
+Hand pose lets you track and use the hands and fingers of your users as input, which can be accessed in both Blueprints and C++. The Unreal API sends the data as a coordinate system, with ticks synchronized with the Unreal Engine.You can find more technical details in Unreal's [Windows.Perception.People.HandPose](https://docs.microsoft.com/uwp/api/windows.perception.people.handpose) API. 
+
+[!INCLUDE[](includes/tabs-tracking-hand-pose.md)]
+
+## Hand Live Link Animation
+
+[!INCLUDE[](includes/tabs-tracking-live-link.md)]
 
 ## Accessing Hand Mesh Data
 
@@ -80,6 +88,25 @@ To work with Hand Meshes in Blueprints:
 3. Overwrite On Add/Update/Remove Tracked Geometry with the following nodes in your Event Graph:
 
 ![On ARTrackable Notify](images/unreal/on-artrackable-notify.png)
+
+### Hand Mesh Debug Visualization
+
+[!INCLUDE[](includes/tabs-tracking-mesh-debug.md)]
+
+### Hand Mesh as a Tracked Geometry
+
+[!INCLUDE[](includes/tabs-tracking-mesh-geometry.md)]
+
+## Hand rays
+
+Getting hand pose works for close interactions like grabbing objects or pressing buttons. However, sometimes you must work with holograms that are far away from you. This can be accomplished with hand rays. You can draw a ray from your hand to a far point and, with some help from Unreal ray tracing, select a hologram that would otherwise be out of reach. 
+
+You can use a hand ray as a pointing device in both C++ and Blueprints, which exposes the [Windows.UI.Input.Spatial.SpatialPointerInteractionSourcePose](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose) API.
+
+> [!IMPORTANT]
+> Since all function results change every frame, they're all made callable. For more information about pure and impure or callable functions, see the Blueprint user guid on [functions](https://docs.unrealengine.com/Engine/Blueprints/UserGuide/Functions/index.html#purevs.impure).
+
+[!INCLUDE[](includes/tabs-tracking-hand-rays.md)]
 
 ## Gestures
 
