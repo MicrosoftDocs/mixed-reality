@@ -83,6 +83,8 @@ To work with Hand Meshes in Blueprints:
 
 ## Gestures
 
+The HoloLens 2 tracks spatial gestures, which means you can capture those gestures as input. You can find more details about gestures are the [HoloLens 2 Basic Usage](https://docs.microsoft.com/hololens/hololens2-basic-usage) document.
+
 [!INCLUDE[](includes/tabs-hand-tracking-2.md)]
 
 ## Next Development Checkpoint
