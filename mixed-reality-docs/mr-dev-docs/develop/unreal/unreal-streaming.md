@@ -92,7 +92,7 @@ Hit enter and watch your application start streaming!
 
 ### Command line options
 
-Additional command line options for streaming from each platform can be found in the table below. 
+Additional command line options for streaming from each platform in Unreal Engine 4.26+ can be found in the table below. 
 
 [!INCLUDE[](includes/tabs-streaming-args.md)]
 
