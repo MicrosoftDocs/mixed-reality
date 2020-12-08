@@ -106,13 +106,13 @@ You can use a hand ray as a pointing device in both C++ and Blueprints, which ex
 > [!IMPORTANT]
 > Since all function results change every frame, they're all made callable. For more information about pure and impure or callable functions, see the Blueprint user guid on [functions](https://docs.unrealengine.com/Engine/Blueprints/UserGuide/Functions/index.html#purevs.impure).
 
-[!INCLUDE[](includes/tabs-tracking-hand-rays.md)]
+[!INCLUDE[](includes/tabs-tracking-hand-ray.md)]
 
 ## Gestures
 
-The HoloLens 2 tracks spatial gestures, which means you can capture those gestures as input. You can find more details about gestures are the [HoloLens 2 Basic Usage](https://docs.microsoft.com/hololens/hololens2-basic-usage) document.
+The HoloLens 2 tracks spatial gestures, which means you can capture those gestures as input. Gesture tracking is based on a subscription model. You should use the “Configure Gestures” function to tell the device which gestures you want to track.  You can find more details about gestures are the [HoloLens 2 Basic Usage](https://docs.microsoft.com/hololens/hololens2-basic-usage) document.
 
-[!INCLUDE[](includes/tabs-hand-tracking-2.md)]
+[!INCLUDE[](includes/tabs-tracking-gestures.md)]
 
 ## Next Development Checkpoint
 
