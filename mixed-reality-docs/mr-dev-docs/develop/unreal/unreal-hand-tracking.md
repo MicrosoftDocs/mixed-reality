@@ -1,4 +1,4 @@
- ---
+---
 title: Hand tracking in Unreal
 description: Explains how to use Hand tracking in Unreal
 author: hferrone
