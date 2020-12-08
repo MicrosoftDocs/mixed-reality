@@ -254,6 +254,8 @@
   items:
   - name: Unreal development overview 
     href: unreal/unreal-development-overview.md
+  - name: Upgrading projects in Unreal
+    href: unreal/unreal-porting.md
   - name: Tutorials 
     items:
       - name: Build a chess app with MRTK UX Tools
@@ -310,8 +312,6 @@
         href: unreal/unreal-deploying.md
       - name: Publishing to the Microsoft Store
         href: unreal/unreal-publishing-to-store.md
-      - name: Upgrading projects in Unreal
-        href: unreal/unreal-porting.md
       - name: Performance recommendations for Unreal
         href: unreal/performance-recommendations-for-unreal.md
       - name: Material recommendations in Unreal 
