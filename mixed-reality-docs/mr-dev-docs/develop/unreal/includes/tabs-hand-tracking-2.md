@@ -97,6 +97,6 @@ Then you should add code to subscribe to the following events:
 
 ## OpenXR
 
-In OpenXR, gesture events are tracked through the input pipeline. Using hand interaction, the device can automatically recognise Tap and Hold gestures, but not the others. They are named as OpenXRMsftHandInteraction Select and Grip mappings. You don’t need to enable subscription, you should declare the events in Project Settings/Engine/Input, just like this:
+In OpenXR, gesture events are tracked through the input pipeline. Using hand interaction, the device can automatically recognize Tap and Hold gestures, but not the others. They are named as OpenXRMsftHandInteraction Select and Grip mappings. You don’t need to enable subscription, you should declare the events in Project Settings/Engine/Input, just like this:
 
 ![Screenshot of the OpenXR action mappings](../images/unreal-hand-tracking-img-12.png)

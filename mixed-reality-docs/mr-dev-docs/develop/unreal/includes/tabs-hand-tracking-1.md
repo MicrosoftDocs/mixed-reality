@@ -2,7 +2,7 @@
 
 ## Hand Pose
 
-Hand pose lets you track and use the hands and fingers of your users as input. You can access tracking data both in Blueprints and C++. You can find more technical details in Unreal's [Windows.Perception.People.HandPose](https://docs.microsoft.com/uwp/api/windows.perception.people.handpose) API. The Unreal API sends the data as a coordinate system, with ticks synchronized with the Unreal Engine.
+Hand pose lets you track and use the hands and fingers of your users as input, which can be accessed in both Blueprints and C++. The Unreal API sends the data as a coordinate system, with ticks synchronized with the Unreal Engine.You can find more technical details in Unreal's [Windows.Perception.People.HandPose](https://docs.microsoft.com/uwp/api/windows.perception.people.handpose) API. 
 
 ### Understanding the bone hierarchy
 
@@ -81,8 +81,8 @@ Here's a breakdown of GetHandJointTransform's function parameters:
 * **Hand** – can be the users left or right hand.
 * **Keypoint** – the bone of the hand.
 * **Transform** – coordinates and orientation of bone’s base. You can request the base of the next bone to get the transform data for the end of a bone. A special Tip bone gives end of distal.
-* **Radius** — radius of the base of the bone.
-* **Return Value** — true if the bone is tracked this frame, false if the bone isn't tracked.
+* **Radius—radius of the base of the bone.
+* **Return Value—true if the bone is tracked this frame, false if the bone isn't tracked.
 
 ## Hand Live Link Animation
 
@@ -256,13 +256,13 @@ The hierarchy is described by EHandKeypoint enum:
 
 ![Image of hand keypoint bluprint options](../images/hand-keypoint-bp.png)
 
-You can get all this data from a user’s hands using the “Get Motion Controller Data” function. That function returns an XRMotionControllerData structure. Below is a sample Blueprint script which parses the XRMotionControllerData structure to get the locations of the hand joints and draw a small debug coordinate system at each joint’s location.
+You can get all this data from a user’s hands using the “Get Motion Controller Data” function. That function returns an XRMotionControllerData structure. Below is a sample Blueprint script that parses the XRMotionControllerData structure to get hand joint locations and draws a debug coordinate system at each joint’s location.
 
-You can get all this data from a user’s hands using the “Get Motion Controller Data” function. That function returns an XRMotionControllerData structure. Below is a sample Blueprint script which parses the XRMotionControllerData structure to get the locations of the hand joints and draw a small debug coordinate system at each joint’s location.
+You can get all this data from a user’s hands using the “Get Motion Controller Data” function. That function returns an XRMotionControllerData structure. Below is a sample Blueprint script, which parses the XRMotionControllerData structure to get the locations of the hand joints and draw a small debug coordinate system at each joint’s location.
 
 ![Blueprint of get gaze data function connected to line trace by channel function](../images/unreal-hand-tracking-img-03.png)
 
-It is important to mention that you must check that the structure is valid and that it is a hand. Otherwise, you may get undefined behaviour amid access to positions, rotations and radii arrays.
+It's important to check if the structure is valid and that it's a hand. Otherwise, you may get undefined behavior in access to positions, rotations, and radii arrays.
 
 ## Hand Ray
 
@@ -270,7 +270,7 @@ Getting hand pose works for close interactions like grabbing objects or pressing
 
 To get the data for the hand rays, you should use the “Get Motion Controller Data” function from the previous section. The returned structure contains two parameters you can use to create a hand ray – “Aim Position” and “Aim Rotation”. These parameters form a ray directed by your elbow. You should take them and find a hologram being pointed by.
 
-Below is an example of determining whether a hand ray hits a Widget and setting a custom hit result accordingly:
+Below is an example of determining whether a hand ray hits a Widget and setting a custom hit result:
 
 ![Blueprint of get motion controller data function](../images/unreal-hand-tracking-img-04.png) 
 
@@ -279,9 +279,9 @@ Below is an example of determining whether a hand ray hits a Widget and setting 
 > [!IMPORTANT]
 > Hand meshes are supported in OpenXR only, not in Windows Mixed Reality. 
 
-The hand meshes can be used for various reasons, primarily in debug purposes. The recommended way to visualise hand mesh is to use Epic’s XRVisualization plugin together with Microsoft-OpenXR-Unreal. 
+The hand meshes can be used for various reasons, primarily in debug purposes. The recommended way to visualize hand mesh is to use Epic’s XRVisualization plugin together with Microsoft-OpenXR-Unreal. 
 
-Then in the blueprint editor, you should use “Set Use Hand Mesh” function from Microsoft-OpenXR-Unreal with “Enabled XRVisualization” as a parameter just like the following:
+Then in the blueprint editor, you should use “Set Use Hand Mesh” function from Microsoft-OpenXR-Unreal with “Enabled XRVisualization” as a parameter:
 
 ![Blueprint of event begin play connected to set use hand mesh function with enabled xrvisualization mode](../images/unreal-hand-tracking-img-05.png)
 
@@ -295,13 +295,14 @@ The result:
 
 ## Hand Mesh as a Tracked Geometry
 
-The previous section describes a simple but not configurable way to show hand meshes. If you need anything more complicated such as drawing a hand mesh with a custom shader, you need to get the meshes as a tracked geometry. 
+The previous section describes a simple but not configurable way to show hand meshes. If you need anything more complicated, such as drawing a hand mesh with a custom shader, you need to get the meshes as a tracked geometry. 
 
 To enable that mode you should call “Set Use Hand Mesh” with “Enabled Tracking Geometry":
 
 ![Blueprint of event begin play connected to set use hand mesh function with enabled tracking geometry mode](../images/unreal-hand-tracking-img-08.png)
 
-Please note that it’s not possible for both modes to be enabled at the same time. If you enable one, the another is automatically disabled. 
+> [!NOTE]
+> It’s not possible for both modes to be enabled at the same time. If you enable one, the other is automatically disabled. 
 
 
 
