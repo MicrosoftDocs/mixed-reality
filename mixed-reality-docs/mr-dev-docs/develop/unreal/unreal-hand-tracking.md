@@ -15,7 +15,9 @@ The hand tracking system uses a person’s palms and fingers as input. Data on p
 
 ## Hand pose
 
-Hand pose lets you track and use the hands and fingers of your users as input, which can be accessed in both Blueprints and C++. The Unreal API sends the data as a coordinate system, with ticks synchronized with the Unreal Engine.You can find more technical details in Unreal's [Windows.Perception.People.HandPose](https://docs.microsoft.com/uwp/api/windows.perception.people.handpose) API. 
+Hand pose lets you track and use the hands and fingers of your users as input, which can be accessed in both Blueprints and C++. The Unreal API sends the data as a coordinate system, with ticks synchronized with the Unreal Engine.
+
+![Hand Skeleton](../../native/images/hand-skeleton.png)
 
 [!INCLUDE[](includes/tabs-tracking-hand-pose.md)]
 
@@ -89,19 +91,36 @@ To work with Hand Meshes in Blueprints:
 
 ![On ARTrackable Notify](images/unreal/on-artrackable-notify.png)
 
-### Hand Mesh Debug Visualization
+### Hand Mesh in OpenXR
 
-[!INCLUDE[](includes/tabs-tracking-mesh-debug.md)]
+The hand meshes can be used for various reasons, primarily in debug purposes. The recommended way to visualize hand mesh is to use Epic’s XRVisualization plugin together with Microsoft-OpenXR-Unreal. 
 
-### Hand Mesh as a Tracked Geometry
+Then in the blueprint editor, you should use **Set Use Hand Mesh** function from Microsoft-OpenXR-Unreal with **Enabled XRVisualization** as a parameter:
 
-[!INCLUDE[](includes/tabs-tracking-mesh-geometry.md)]
+![Blueprint of event begin play connected to set use hand mesh function with enabled xrvisualization mode](../images/unreal-hand-tracking-img-05.png)
+
+To manage the rendering process, you should use **Render Motion Controller** from XRVisualization:
+
+![Blueprint of get motion controller data function connected to render motion controller function](../images/unreal-hand-tracking-img-06.png)
+
+The result:
+
+![Image of digital hand overlayed on a real human hand](../images/unreal-hand-tracking-img-07.png)
+
+#### Hand Mesh as a Tracked Geometry
+
+If you need anything more complicated, such as drawing a hand mesh with a custom shader, you need to get the meshes as a tracked geometry. 
+
+To enable that mode you should call **Set Use Hand Mesh** with **Enabled Tracking Geometry**:
+
+![Blueprint of event begin play connected to set use hand mesh function with enabled tracking geometry mode](../images/unreal-hand-tracking-img-08.png)
+
+> [!NOTE]
+> It’s not possible for both modes to be enabled at the same time. If you enable one, the other is automatically disabled. 
 
 ## Hand rays
 
-Getting hand pose works for close interactions like grabbing objects or pressing buttons. However, sometimes you must work with holograms that are far away from you. This can be accomplished with hand rays. You can draw a ray from your hand to a far point and, with some help from Unreal ray tracing, select a hologram that would otherwise be out of reach. 
-
-You can use a hand ray as a pointing device in both C++ and Blueprints, which exposes the [Windows.UI.Input.Spatial.SpatialPointerInteractionSourcePose](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose) API.
+Getting hand pose works for close interactions like grabbing objects or pressing buttons. However, sometimes you need to work with holograms that are far away from your users. This can be accomplished with hand rays, which can be used as pointing devices in both C++ and Blueprints. You can draw a ray from your hand to a far point and, with some help from Unreal ray tracing, select a hologram that would otherwise be out of reach. 
 
 > [!IMPORTANT]
 > Since all function results change every frame, they're all made callable. For more information about pure and impure or callable functions, see the Blueprint user guid on [functions](https://docs.unrealengine.com/Engine/Blueprints/UserGuide/Functions/index.html#purevs.impure).

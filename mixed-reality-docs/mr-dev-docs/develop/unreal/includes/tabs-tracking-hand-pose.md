@@ -37,9 +37,7 @@ enum class EWMRHandKeypoint : uint8
 };
 ```
 
-You can find the numerical values for each enum case in the [Windows.Perception.People.HandJointKind](https://docs.microsoft.com/uwp/api/windows.perception.people.handjointkind) table. The entire hand pose layout with matching enum cases is shown in the image below:
-
-![Hand Skeleton](../../native/images/hand-skeleton.png)
+You can find the numerical values for each enum case in the [Windows.Perception.People.HandJointKind](https://docs.microsoft.com/uwp/api/windows.perception.people.handjointkind) table.
 
 ### Supporting Hand Tracking
 
