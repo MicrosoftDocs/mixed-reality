@@ -11,6 +11,9 @@ keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Realit
 
 # Getting started with OpenXR
 
+> [!CAUTION]
+> OpenXR is still in the experimental development stage. If you haven't decided between Unity and Unreal as your development engine, we recommend starting with the [introduction to Mixed Reality](development.md) and come back to OpenXR when you need an API to build engines. New release information will be added to this page, so check back with us!
+
 <!-- Need introductory context paragraph -->
 
 ## Getting the OpenXR packages
