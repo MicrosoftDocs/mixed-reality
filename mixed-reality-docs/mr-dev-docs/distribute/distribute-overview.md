@@ -3,7 +3,7 @@ title: Distributing your apps
 description: An overview of the different distribution options for various supported platforms and publishing stores. 
 author: hferrone
 ms.author: v-hferrone
-ms.date: 10/02/2020
+ms.date: 12/9/2020
 ms.topic: article
 keywords: HoloLens, Mixed Reality, immersive headsets, app, uwp, submit, submission, filters, metadata, system requirements, keywords, wack, certification, package, appx, merchandising
 ---
@@ -77,7 +77,7 @@ Getting your apps into the hands of your users or out into the world is the most
     <td>✔️</td>
 </tr>
 <tr>
-    <td><a href="#additional-scenarios"><strong>Custom Win32 deployment</strong></a> (Windows Mixed Reality only - see below)</td>
+    <td><a href="#additional-scenarios"><strong>Custom Win32 deployment</strong></a> (Not available for HoloLens devices - see below)</td>
     <td>✔️</td>
     <td>✔️</td>
     <td>❌</td>

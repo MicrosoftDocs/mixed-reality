@@ -3,7 +3,7 @@ title: Get started with Mixed Reality
 description: To help someone new to mixed reality learn what it is and understand its capabilities.
 author: grbury
 ms.author: grbury
-ms.date: 07/29/2020
+ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects, mixed reality headset, windows mixed reality headset, virtual reality headset
@@ -55,6 +55,7 @@ Before you dive into application design or development, you need to understand w
 | --- | --- |
 | [Mixed reality is a spectrum](../discover/mixed-reality.md) | Mixed reality blends the physical with the digital, the next evolution in human, computer, and environment interactions |
 | [What is a hologram?](../discover/hologram.md) | HoloLens lets you create holograms, which are objects made of light and sound that appear in the world around you, just as if they were real objects. Holograms respond to your gaze, gestures and voice commands, and can interact with real-world surfaces around you |
+| [Mixed Reality learning overview](mr-learning-overview.md#general-modules) | Try out our curated Mixed Reality module through Microsoft Learn |
 | [Expand your design process](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Expand your design mindset with spatial thinking, bodystorming, and acting when creating your immersive experiences  |
 
 <br>

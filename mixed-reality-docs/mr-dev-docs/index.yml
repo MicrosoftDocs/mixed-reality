@@ -35,7 +35,7 @@ highlightedContent:
       itemType: reference 
       url: https://docs.microsoft.com/dynamics365/mixed-reality/
     # Card
-    - title: Azure Cloud Services
+    - title: Azure mixed reality cloud services 
       itemType: whats-new 
       url: develop/mixed-reality-cloud-services.md
     # Card
