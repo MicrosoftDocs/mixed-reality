@@ -1465,6 +1465,11 @@
 			"redirect_document_id": false
 		},
 		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/mr-learning-overview.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/discover/mr-learning-overview",
+			"redirect_document_id": false
+		},
+		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/case-study-expanding-the-design-process-for-mixed-reality.md",
 			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/discover/case-study-expanding-the-design-process-for-mixed-reality",
 			"redirect_document_id": false
