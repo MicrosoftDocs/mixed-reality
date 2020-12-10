@@ -2,7 +2,7 @@
 title: Spatial sound in Unity
 description: Play spatial sound from a specific 3D point within your Unity scene.
 author: kegodin
-ms.author: kegodin
+ms.author: v-hferrone
 ms.date: 11/07/2019
 ms.topic: article
 keywords: Unity, spatial sound, HRTF, room size, mixed reality headset, windows mixed reality headset, virtual reality headset, MRTK, Mixed Reality Toolkit, spatializer, reverb
@@ -15,12 +15,12 @@ This page links to resources for spatial sound in Unity.
 
 ## Spatializer options
 Spatializer options for mixed reality applications include:
-* The *MS HRTF Spatializer*. Unity provides this as part of the *Windows Mixed Reality* optional package.
-  * This runs on CPU in a higher-cost 'single-source' architecture.
-  * This is provided for backwards compatibility with original HoloLens applications.
-* The *Microsoft Spatializer*. This is available from the [Microsoft spatializer GitHub repository](https://github.com/microsoft/spatialaudio-unity).
-  * This uses a lower-cost 'multi-source' architecture.
-  * On HoloLens 2, this is offloaded to a hardware accelerator.
+* Unity provides the *MS HRTF Spatializer* as part of the *Windows Mixed Reality* optional package.
+  * Runs on CPU in a higher-cost 'single-source' architecture.
+  * Provided for backwards compatibility with original HoloLens applications.
+* The *Microsoft Spatializer* is available from the [Microsoft spatializer GitHub repository](https://github.com/microsoft/spatialaudio-unity).
+  * Uses a lower-cost 'multi-source' architecture.
+  * Offloaded to a hardware accelerator on the HoloLens 2. 
 
 For new applications, we recommend the *Microsoft Spatializer*.
 
@@ -30,19 +30,21 @@ Use [NuGet for Unity](https://github.com/GlitchEnzo/NuGetForUnity/releases/lates
 * Attach an **Audio Source** to an object in the hierarchy
 * Check the **Enable spatialization** checkbox
 * Move the **Spatial Blend** slider to '1'
-* Ensure spatial audio is enabled on your developer workstation. Enable it by right-clicking on the volume icon in the task bar and making sure that Spatial Sound is set to something other than "off." To get the best representation of what you'll hear on HoloLens 2, choose **Windows Sonic for Headphones**.
+* Ensure spatial audio is enabled on your developer workstation. 
+    * Right-click on the volume icon in the task bar and making sure that Spatial Sound is set to something other than "off". 
+    * Choose **Windows Sonic for Headphones** to get the best representation of what you'll hear on HoloLens 2.
 
 >[!NOTE]
 >If you get an error in Unity about not being able to load plugin Microsoft.SpatialAudio.Spatializer.Unity because one of its dependencies is missing, check that you have the latest version of the [Microsoft Visual C++ Redistributable](https://support.microsoft.com/en-us/help/2977003/the-latest-supported-visual-c-downloads) installed on your PC.
 
-For more details, see:
+For more information, see:
 * [Microsoft spatializer GitHub repository](https://github.com/microsoft/spatialaudio-unity)
 * [Microsoft's spatializer tutorial](tutorials/unity-spatial-audio-ch1.md)
 * [Unity's audio source documentation](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html)
 * [Unity's spatializer documentation](https://docs.unity3d.com/Manual/VRAudioSpatializer.html)
 
 ## Distance-based attenuation
-Unity's default distance-based decay has a minimum distance of 1 meter and a maximum distance of 500 meters, with a logarithmic rolloff. These settings may work for your scenario, or you may find that sources attenuate too quickly or too slowly. For more details, see:
+Unity's default distance-based decay has a minimum distance of 1 meter and a maximum distance of 500 meters, with a logarithmic rolloff. These settings may work for your scenario, or you may find that sources attenuate too quickly or too slowly. For more information, see:
 * [Sound design in mixed reality](../../design/spatial-sound-design.md) for recommended settings.
 * [Unity's audio source documentation](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html) for instructions on setting these curves.
 
@@ -60,7 +62,7 @@ For examples of spatial sound in Unity, see:
 
 ## Next Development Checkpoint
 
-If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality core building blocks. From here, you can proceed to the next building block:
+If you're following the Unity development journey we've laid out, you're in the midst of exploring the Mixed Reality core building blocks. From here, you can continue to the next building block:
 
 > [!div class="nextstepaction"]
 > [Text](text-in-unity.md)
