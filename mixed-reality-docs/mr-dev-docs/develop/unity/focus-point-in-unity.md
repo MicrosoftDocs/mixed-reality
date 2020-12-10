@@ -14,9 +14,9 @@ keywords: Unity, focus point, focus plane, stabilization plane, stabilization po
 **Namespace:** *UnityEngine.XR.WSA*<br>
 **Type**: *HolographicSettings*
 
-The [focus point](../platform-capabilities-and-apis/hologram-stability.md#reprojection) can be set to provide HoloLens a hint about how to best perform stabilization on the holograms currently being displayed.
+Use the [focus point](../platform-capabilities-and-apis/hologram-stability.md#reprojection) to provide HoloLens with a hint about how to best stabilize the holograms currently being displayed.
 
-If you want to set the Focus Point in Unity, it needs to be set every frame using *HolographicSettings.SetFocusPointForFrame()*. If the Focus Point is not set for a frame, the default stabilization plane will be used.
+If you want to set the Focus Point in Unity, it needs to be set every frame using *HolographicSettings.SetFocusPointForFrame()*. When the Focus Point isn't set for a frame, the default stabilization plane is used.
 
 > [!NOTE]
 > By default, new Unity projects have the "Enable Depth Buffer Sharing" option set.  With this option, a Unity app running on either an immersive desktop headset or a HoloLens running the Windows 10 April 2018 Update (RS4) or later will submit your depth buffer to Windows to optimize hologram stability automatically, without your app specifying a focus point:
@@ -44,11 +44,12 @@ void Update()
 }
 ```
 
-Note that the simple code above may end up reducing hologram stability if the focused object ends up behind the user.  This is why you should generally set "Enable Depth Buffer Sharing" instead of manually specifying a focus point.
+> [!NOTE]
+> The simple code above may reduce hologram stability if the focused object ends up behind the user. We generally recommend setting **[Enable Depth Buffer Sharing](camera-in-unity.md#sharing-your-depth-buffers-with-windows)** instead of manually specifying a focus point.
 
 ## Next Development Checkpoint
 
-If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs. From here, you can proceed to the next topic:
+If you're following the Unity development journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs. From here, you can continue to the next topic:
 
 > [!div class="nextstepaction"]
 > [Tracking loss](tracking-loss-in-unity.md)
