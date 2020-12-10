@@ -125,9 +125,10 @@ Each HoloLens generates a unique self-signed certificate for its SSL connection.
 
 ![Screenshot of the Apps manager page open in the Windows Device Portal](images/sideloading-1.png)
 
-If the device is running Windows 10 in S mode, and it's the first time that the certificate has been installed on the device, restart the device.
-
 ### Installing an app
+
+> [NOTE]
+> In order for an app to install successfully via Device Portal it must be signed by a certificate, this certificate must be installed to the device prior to attempting to install the app. See the [previous section](#installing-a-certificate) for instructions.
 
 1. When you've [created an app package from Visual Studio](using-visual-studio.md), you can remotely install it onto your device from the generated files:
 
