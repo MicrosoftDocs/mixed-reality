@@ -11,15 +11,15 @@ keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, mix
 ---
 
 
-# Tutorials 
+# Tutorials
 
 ![HoloLens 2 user](images/08_Tutorials.png)
 
-Currently, all of our tutorials and sample apps are Unity or Unreal based. As we develop content for other engines and platforms, you will find them under the relevant heading in the Table of Contents.
+Currently, all of our tutorials and sample apps are Unity or Unreal based. As we develop content for other engines and platforms, you'll find them under the relevant heading in the Table of Contents.
 
 ## HoloLens 2 
 
-The HoloLens 2 tutorials are designed to help developers learn both techniques and best practices for developing mixed reality applications. The Unity tutorials are based on the [Mixed Reality Toolkit 2.0 (MRTK 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity), and the Unreal tutorial is based on the [UX Tools for Unreal Engine 0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal).
+The HoloLens 2 tutorials are designed to teach techniques and best practices for developing mixed reality applications. The Unity tutorials are based on the [Mixed Reality Toolkit 2.0 (MRTK 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity), and the Unreal tutorial is based on the [UX Tools for Unreal Engine 0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal).
 
 * Getting started tutorials
     * Unity - [1 of 9 Introduction](tutorials/mr-learning-base-01.md)
@@ -35,7 +35,7 @@ The Mixed Reality Academy is a set of online step-by-step tutorials with corresp
 * The tutorials cover 100, 200, and 300 level topics, in which: 100-level covers project basics, 200-level covers core MR building blocks, and 300-level covers cloud service integration.
 * Most courses cover concepts applicable to both HoloLens and immersive (VR) headsets.
 * Each tutorial is organized by chapter, and most include video demonstrations of the key concepts.
-* A Windows 10 PC with the correct [tools installed](../install-the-tools.md) is a common prerequiste to complete each tutorial.
+* A Windows 10 PC with the correct [tools installed](../install-the-tools.md) is a common prerequisite to complete each tutorial.
 
 >[!NOTE]
 >The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind. As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices. These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2. They will be maintained to continue working on the supported devices. [A new series of tutorials](tutorials/mr-learning-base-01.md) has been posted for HoloLens 2.
@@ -103,7 +103,7 @@ The Mixed Reality Academy is a set of online step-by-step tutorials with corresp
 
 ## Mixed Reality and Azure Services tutorials
 
-These stand-alone tutorials are great for learning how to implement different Azure services into your Unity project. These tutorials are all based on either HoloLens (1st gen) or our Immersive Headsets, but the lessons on using the services should be transferable to most any device.
+These stand-alone tutorials are great for learning how to implement different Azure services into your Unity project. These tutorials are all based on either HoloLens (first gen) or our Immersive Headsets, but the lessons on using the services should be transferable to most any device.
 
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
     <li>
@@ -194,7 +194,7 @@ These stand-alone tutorials are great for learning how to implement different Az
                                           </div>
                                           <div class="cardText">
                                               <h3>MR and Azure 304: Face recognition</h3>
-                                              <p>Learn how to use the Azure Face API to perform face detection and recognition in your mixed reality app.</p>
+                                              <p>Learn how to use the Azure Face API for face detection and recognition in your mixed reality app.</p>
                                           </div>
                                       </div>
                                   </div>
@@ -213,7 +213,7 @@ These stand-alone tutorials are great for learning how to implement different Az
                                           </div>
                                           <div class="cardText">
                                               <h3>MR and Azure 305: Functions and storage</h3>
-                                              <p>In this course, you will learn how to create and use Azure Functions, and store data within Azure Storage, within a mixed reality app.</p>
+                                              <p>In this course, you'll learn how to create and use Azure Functions, and store data within Azure Storage, within a mixed reality app.</p>
                                           </div>
                                       </div>
                                   </div>
