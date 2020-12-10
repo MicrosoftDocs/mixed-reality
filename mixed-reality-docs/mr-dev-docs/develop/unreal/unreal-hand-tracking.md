@@ -25,7 +25,21 @@ Hand pose lets you track and use the hands and fingers of your users as input, w
 
 [!INCLUDE[](includes/tabs-tracking-live-link.md)]
 
-## Accessing Hand Mesh Data
+## Hand Mesh
+
+### Hand Mesh as a Tracked Geometry
+
+> [!IMPORTANT]
+> Getting hand meshes as a tracked geometry in OpenXR requires you to call **Set Use Hand Mesh** with **Enabled Tracking Geometry**.
+
+To enable that mode you should call **Set Use Hand Mesh** with **Enabled Tracking Geometry**:
+
+![Blueprint of event begin play connected to set use hand mesh function with enabled tracking geometry mode](images/unreal-hand-tracking-img-08.png)
+
+> [!NOTE]
+> It’s not possible for both modes to be enabled at the same time. If you enable one, the other is automatically disabled.
+
+### Accessing Hand Mesh Data
 
 ![Hand Mesh](images/unreal/hand-mesh.png)
 
@@ -91,7 +105,7 @@ To work with Hand Meshes in Blueprints:
 
 ![On ARTrackable Notify](images/unreal/on-artrackable-notify.png)
 
-### Hand Mesh in OpenXR
+### Hand Mesh visualization in OpenXR
 
 The hand meshes can be used for various reasons, primarily in debug purposes. The recommended way to visualize hand mesh is to use Epic’s XRVisualization plugin together with Microsoft-OpenXR-Unreal. 
 
@@ -105,18 +119,9 @@ To manage the rendering process, you should use **Render Motion Controller** fro
 
 The result:
 
-![Image of digital hand overlayed on a real human hand](images/unreal-hand-tracking-img-07.png)
-
-#### Hand Mesh as a Tracked Geometry
+![Image of digital hand overlayed on a real human hand](images/unreal-hand-tracking-img-07.png) 
 
 If you need anything more complicated, such as drawing a hand mesh with a custom shader, you need to get the meshes as a tracked geometry. 
-
-To enable that mode you should call **Set Use Hand Mesh** with **Enabled Tracking Geometry**:
-
-![Blueprint of event begin play connected to set use hand mesh function with enabled tracking geometry mode](images/unreal-hand-tracking-img-08.png)
-
-> [!NOTE]
-> It’s not possible for both modes to be enabled at the same time. If you enable one, the other is automatically disabled. 
 
 ## Hand rays
 
