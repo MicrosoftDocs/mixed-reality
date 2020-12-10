@@ -1,11 +1,13 @@
 - name: Introduction to Mixed Reality development
   href: development.md
-- name: Azure mixed reality cloud services overview 
-  href: mixed-reality-cloud-services.md
-- name: Mixed Reality Learning overview
-  href: mr-learning-overview.md
 - name: Install the tools
   href: install-the-tools.md
+- name: Getting started
+  items: 
+  - name: Azure mixed reality cloud services overview 
+    href: mixed-reality-cloud-services.md
+  - name: Samples and feature apps 
+    href: features-and-samples.md
 - name: Porting apps
   items:
   - name: Porting overview
@@ -216,8 +218,6 @@
         href: unity/unity-reverb-g2-controllers.md
   - name: Sample apps
     items: 
-      - name: Overview 
-        href: unity/samples.md
       - name: HoloLens 2 
         items: 
           - name: Surfaces
@@ -252,6 +252,8 @@
   items:
   - name: Unreal development overview 
     href: unreal/unreal-development-overview.md
+  - name: Upgrading projects in Unreal
+    href: unreal/unreal-porting.md
   - name: Tutorials 
     items:
       - name: Build a chess app with MRTK UX Tools
@@ -300,16 +302,14 @@
         href: unreal/unreal-reverb-g2-controllers.md
   - name: Sample apps
     items: 
-      - name: Overview
-        href: unreal/unreal-samples.md
       - name: Kippy's Escape  
         href: unreal/unreal-kippys-escape.md
   - name: Deployment and performance 
     items: 
       - name: Deploy to device in Unreal
         href: unreal/unreal-deploying.md
-      - name: Upgrading projects in Unreal
-        href: unreal/unreal-porting.md
+      - name: Publishing to the Microsoft Store
+        href: unreal/unreal-publishing-to-store.md
       - name: Performance recommendations for Unreal
         href: unreal/performance-recommendations-for-unreal.md
       - name: Material recommendations in Unreal 
@@ -394,6 +394,8 @@
           href: platform-capabilities-and-apis/mixed-reality-capture-for-developers.md 
         - name: How it works - Mixed Reality Capture Studios 
           href: platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md 
+        - name: Installing PIX for HoloLens 2
+          href: platform-capabilities-and-apis/installing-pix-hololens.md
     - name: Holographic remoting  
       items: 
         - name: Holographic Remoting Player 

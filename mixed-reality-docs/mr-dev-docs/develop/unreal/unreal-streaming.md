@@ -12,19 +12,19 @@ appliesto:
 - HoloLens 2
 ---
 
+
 # Streaming in Unreal
 
-## Overview
 Streaming from a PC to HoloLens provides two major advantages: 
 * It lets your mixed reality app take advantage of your PCs computational power. 
 * It helps speed up development iteration time. 
 
-To get started, you'll need to download the [Holographic Remoting Player](../platform-capabilities-and-apis/holographic-remoting-player.md) to your HoloLens device. This allows your app to stream  directly to the remoting player on your HoloLens from the following sources:
+To get started, you'll need to download the [Holographic Remoting Player](../platform-capabilities-and-apis/holographic-remoting-player.md) to your HoloLens device. The Holographic Remoting Player lets your app to stream  directly to the remoting player on your HoloLens from the following sources:
 
 * The Unreal Engine editor
 * A packaged Windows executable 
 
-When streaming, you have access to almost all of the same HoloLens capabilities as you would when running an application on a device. This includes [hand joint tracking](unreal-hand-tracking.md) (if you're on a HoloLens 2), [spatial mapping](unreal-spatial-mapping.md), and [spatial anchors](unreal-spatial-anchors.md), but leaves out the features on this [list of limitations](../platform-capabilities-and-apis/holographic-remoting-troubleshooting.md). 
+When streaming, you have access to almost all of the same HoloLens capabilities as you would when running an application on a device. This includes [hand joint tracking](unreal-hand-tracking.md) if you're on a HoloLens 2, [spatial mapping](unreal-spatial-mapping.md), and [spatial anchors](unreal-spatial-anchors.md), but leaves out the features on this [list](../platform-capabilities-and-apis/holographic-remoting-troubleshooting.md). 
 
 > [!NOTE]
 > * Streaming quality is highly dependent on the strength of your wifi network.
@@ -48,7 +48,7 @@ Unreal 4.26 running on OpenXR supports streaming to versions 2.4.0+ of the Holog
     </colgroup>
     <tr>
         <td><strong>Source</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens 1st Gen</strong></a></td>
+        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens first Gen</strong></a></td>
         <td><a href="https://www.microsoft.com/hololens/hardware"><strong>HoloLens 2</strong></a></td>
         <td><strong>Immersive Headsets</strong></td>
     </tr>
@@ -69,16 +69,16 @@ Unreal 4.26 running on OpenXR supports streaming to versions 2.4.0+ of the Holog
 
 ## Streaming from the Unreal editor
 
-As a developer, you'll find that streaming from the Unreal editor to your HoloLens device provides big benefits when testing, namely that you no longer have to wait for your app to build and deploy before trying out your updates.
+As a developer, you'll find that streaming from the Unreal editor to your HoloLens device provides significant benefits when testing, namely that you no longer have to wait for your app to build and deploy before trying out your updates.
 
-You can find detailed instructions on [streaming from the Unreal editor](tutorials/unreal-uxt-ch6.md#device-only-streaming) in the last section of the Getting Started with Unreal tutorial series.
+You can find detailed instructions for [streaming from the Unreal editor](tutorials/unreal-uxt-ch6.md#device-only-streaming) in our tutorial series.
 
 ## Streaming from a packaged Windows executable
 
-As of Unreal 4.25.1, you can stream your app to a HoloLens 2 device from a packaged Windows executable by following the steps below: 
+In Unreal 4.25.1 and onwards, you can stream your app to a HoloLens 2 device from a packaged Windows executable: 
 
 1. Go to **File > Package Project > Windows** in the editor menu. 
-    * Choose a location to save your package and click **Select Folder**.
+    * Choose a location to save your package and select **Select Folder**.
 
 2. Once the package has finished building, open the **Holographic Remoting Player** on your HoloLens 2 and make note of the IP Address. 
 3. Leave the **Holographic Remoting Player** open and use the command line prompt to: 
@@ -97,6 +97,7 @@ Additional command line options for streaming from each platform in Unreal Engin
 [!INCLUDE[](includes/tabs-streaming-args.md)]
 
 ## See also
+
 * [Holographic remoting version history](../platform-capabilities-and-apis/holographic-remoting-version-history.md)
 * [Writing a custom Holographic Remoting player app](../platform-capabilities-and-apis/holographic-remoting-create-player.md)
 * [Establishing a secure connection with Holographic Remoting](../platform-capabilities-and-apis/holographic-remoting-secure-connection.md)

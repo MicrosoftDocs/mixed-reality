@@ -11,7 +11,7 @@ keywords: unity, mixed reality, native, xrdevice, spatialcoordinatesystem, holog
 
 # Mixed Reality native objects in Unity
 
-[Getting a HolographicSpace](../native/getting-a-holographicspace.md) is what every Mixed Reality app does before it starts receiving camera data and rendering frames. In Unity, the engine takes care of those steps for you, handling Holographic objects and updates internally as part of its render loop.
+Every Mixed Reality app [gets a HolographicSpace](../native/getting-a-holographicspace.md) before it starts receiving camera data and rendering frames. In Unity, the engine takes care of those steps for you, handling Holographic objects and internally updating as part of its render loop.
 
 However, in advanced scenarios you may need to get access to the underlying native objects, such as the <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a> and current <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>. <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.html" target="_blank">UnityEngine.XR.XRDevice</a> is what provides access to these native objects.
 
@@ -45,13 +45,13 @@ HolographicFrameNativeData hfd = Marshal.PtrToStructure<HolographicFrameNativeDa
 
 ### Unmarshaling native pointers
 
-If you are using [Microsoft.Windows.MixedReality.DotNetWinRT](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT) you can construct a managed object from a native pointer using the `FromNativePtr()` method:
+If you are using [Microsoft.Windows.MixedReality.DotNetWinRT](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT), you can construct a managed object from a native pointer using the `FromNativePtr()` method:
 
 ```cs
 var worldOrigin = Microsoft.Windows.Perception.Spatial.SpatialCoordinateSystem.FromNativePtr(hfd.ISpatialCoordinateSystemPtr);
 ```
 
-Otherwise, use `Marshal.GetObjectForIUnknown()` and cast to the desired type:
+Otherwise, use `Marshal.GetObjectForIUnknown()` and cast to the type you want:
 
 ```cs
 #if ENABLE_WINMD_SUPPORT
@@ -92,9 +92,10 @@ namespace NumericsConversion
 > [!NOTE]
 > Changing the state of the native objects received via HolographicFrameNativeData may cause unpredictable behaviour and rendering artifacts, especially if Unity also reasons about that same state.  For example, you should not call HolographicFrame.UpdateCurrentPrediction, or else the pose prediction that Unity renders with that frame will be out of sync with the pose that Windows is expecting, which will reduce [hologram stability](../platform-capabilities-and-apis/hologram-stability.md).
 
-You can use data from HolographicFrameNativeData when access to native interfaces is required for rendering or debugging purposes, in your native plugins or C# code. 
+If you need access to native interfaces for rendering or debugging purposes, use data from HolographicFrameNativeData in your native plugins or C# code. 
 
-Here is an example of how you can use HolographicFrameNativeData to get the current frame's prediction for photon time. 
+Here's an example of how you can use HolographicFrameNativeData to get the current frame's prediction for photon time. 
+
 ```cs
 using System;
 using System.Runtime.InteropServices;

@@ -2,15 +2,15 @@
 title: HoloLens Photo/Video Camera in Unreal
 description: Guide to using the HoloLens photo/video camera in Unreal
 author: hferrone
-ms.author: v-hferrone
-ms.date: 06/10/2020
+ms.author: jacksonf
+ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, features, documentation, guides, holograms, camera, PV camera, MRC, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 # HoloLens Photo/Video Camera in Unreal
 
-The HoloLens has a Photo/Video (PV) Camera on the visor that can be used for both Mixed Reality Capture (MRC) and by an app to locate objects in Unreal world space from pixel coordinates in the camera frame.
+The HoloLens has a Photo/Video (PV) Camera on the visor that can be used for both Mixed Reality Capture (MRC) and locating objects in Unreal world space from pixel coordinates in the camera frame.
 
 > [!IMPORTANT]
 > The PV Camera isn't supported with Holographic Remoting, but it's possible to use a webcam attached to your PC to simulate the HoloLens PV Camera functionality.
@@ -19,7 +19,7 @@ The HoloLens has a Photo/Video (PV) Camera on the visor that can be used for bot
 
 ## Next Development Checkpoint
 
-If you're following the Unreal development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs. From here, you can proceed to the next topic:
+If you're following the Unreal development journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs. From here, you can continue to the next topic:
 
 > [!div class="nextstepaction"]
 > [QR codes](unreal-qr-codes.md)

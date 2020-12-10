@@ -1,9 +1,9 @@
 ---
 title: WinRT in Unreal
 description: Overview of the spatial audio plugin for Unreal engine.
-author: fieldsJacksonG
+author: hferrone
 ms.author: jacksonf
-ms.date: 07/08/2020
+ms.date: 12/9/2020
 ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remoting, mixed reality, development, getting started, features, new project, emulator, documentation, guides, features, holograms, game development, mixed reality headset, windows mixed reality headset, virtual reality headset, WinRT, DLL
 ---
@@ -15,7 +15,7 @@ Over the course of your HoloLens development you may need to write a feature usi
 
 ## Next Development Checkpoint
 
-If you're following the Unreal development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs. From here, you can proceed to any [topic](unreal-development-overview.md#3-platform-capabilities-and-apis) or jump directly to deploying your app on a device or emulator.
+If you're following the Unreal development journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs. From here, you can continue to any [topic](unreal-development-overview.md#3-platform-capabilities-and-apis) or jump directly to deploying your app on a device or emulator.
 
 > [!div class="nextstepaction"]
 > [Deploying to device](unreal-deploying.md)
