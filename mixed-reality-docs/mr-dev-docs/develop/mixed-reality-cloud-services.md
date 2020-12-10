@@ -4,7 +4,7 @@ title: Azure mixed reality cloud services overview
 description: Mixed reality cloud services resources.
 author: hferrone
 ms.author: v-haferr
-ms.date: 06/5/2020
+ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, develop, development, HoloLens, cloud services, Azure, remote rendering, spatial anchors, cognitive services, cognition, unity, machine learning, speech translation, computer vision, Microsoft Graph

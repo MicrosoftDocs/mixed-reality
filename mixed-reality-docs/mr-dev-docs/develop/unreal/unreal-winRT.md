@@ -3,7 +3,7 @@ title: WinRT in Unreal
 description: Overview of the spatial audio plugin for Unreal engine.
 author: hferrone
 ms.author: jacksonf
-ms.date: 07/08/2020
+ms.date: 12/9/2020
 ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remoting, mixed reality, development, getting started, features, new project, emulator, documentation, guides, features, holograms, game development, mixed reality headset, windows mixed reality headset, virtual reality headset, WinRT, DLL
 ---
