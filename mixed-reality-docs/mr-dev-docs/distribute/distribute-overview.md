@@ -41,7 +41,7 @@ Getting your apps into the hands of your users or out into the world is the most
     <td><strong>Share with an organization</strong></td>
 </tr>
 <tr>
-    <td><a href="https://docs.microsoft.com/hololens/app-deploy-app-installer"><strong>App Installer</strong></a> (through <a href="https://docs.microsoft.com/hololens/hololens-insider">Windows Insider builds</a>)</td>
+    <td><a href="https://docs.microsoft.com/hololens/app-deploy-app-installer"><strong>App Installer</strong></td>
     <td>✔️</td>
     <td>✔️</td>
     <td>❌</td>
@@ -62,7 +62,7 @@ Getting your apps into the hands of your users or out into the world is the most
     <td><a href="submitting-an-app-to-the-microsoft-store.md"><strong>Microsoft Store</strong></a></td>
     <td>❌</td>
     <td>✔️</td>
-    <td>✔️</td>
+    <td>✔️</td>s
 </tr>
 <tr>
     <td><a href="https://docs.microsoft.com/hololens/app-deploy-store-business"><strong>Microsoft Store for Business</strong></a></td>
@@ -98,14 +98,3 @@ Getting your apps into the hands of your users or out into the world is the most
 ## See also
 * [Finding, installing, and uninstalling applications from the Microsoft Store](https://docs.microsoft.com/hololens/holographic-store-apps)
 
-<!-- ## Submitting to the Microsoft Store
-
-You've finally made it to the last step on your distribution journey, actually getting your app into the Microsoft Store! Our [submission guidelines](submitting-an-app-to-the-microsoft-store.md) article will take you through: 
-
-* Partner Center registration 
-* Asset preparation
-* App packaging
-* Testing
-* Final submission process
-
-You can even give out free trials to get future consumers excited about your new immersive experience. Once your app is listed on the Microsoft Store you can sit back, engage with your expanding user community, and think about all the new features you want to add! -->
