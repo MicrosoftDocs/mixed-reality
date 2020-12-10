@@ -23,9 +23,9 @@ With the KeywordRecognizer (one of two types of PhraseRecognizers), your app can
 
 ## Enabling the capability for Voice
 
-The **Microphone** capability must be declared for an app to leverage Voice input.
+The **Microphone** capability must be declared for an app to use Voice input.
 1. In the Unity Editor, go to the player settings by navigating to "Edit > Project Settings > Player"
-2. Click on the "Windows Store" tab
+2. Select on the "Windows Store" tab
 3. In the "Publishing Settings > Capabilities" section, check the **Microphone** capability
 
 ## Phrase Recognition
@@ -54,7 +54,7 @@ KeywordRecognizer keywordRecognizer;
 Dictionary<string, System.Action> keywords = new Dictionary<string, System.Action>();
 ```
 
-Now add a keyword to the dictionary (e.g. inside of a Start() method). We're adding the "activate" keyword in this example:
+Now add a keyword to the dictionary, for example in of a Start() method. We're adding the "activate" keyword in this example:
 
 ```
 //Create keywords for keyword recognizer
@@ -122,7 +122,7 @@ Now register for the OnPhraseRecognized event
 grammarRecognizer.OnPhraseRecognized += grammarRecognizer_OnPhraseRecognized;
 ```
 
-You will get a callback containing information specified in your SRGS grammar which you can handle appropriately. Most of the important information will be provided in the semanticMeanings array.
+You'll get a callback containing information specified in your SRGS grammar, which you can handle appropriately. Most of the important information will be provided in the semanticMeanings array.
 
 ```
 private void Grammar_OnPhraseRecognized(PhraseRecognizedEventArgs args)
@@ -143,7 +143,7 @@ grammarRecognizer.Start();
 **Namespace:** *UnityEngine.Windows.Speech*<br>
 **Types**: *DictationRecognizer*, *SpeechError*, *SpeechSystemStatus*
 
-Use the DictationRecognizer to convert the user's speech to text. The DictationRecognizer exposes [dictation](../../design/voice-input.md#dictation) functionality and supports registering and listening for hypothesis and phrase completed events, so you can give feedback to your user both while they speak and afterwards. Start() and Stop() methods respectively enable and disable dictation recognition. Once done with the recognizer, it should be disposed using Dispose() method to release the resources it uses. It will release these resources automatically during garbage collection at an additional performance cost if they are not released prior to that.
+Use the DictationRecognizer to convert the user's speech to text. The DictationRecognizer exposes [dictation](../../design/voice-input.md#dictation) functionality and supports registering and listening for hypothesis and phrase completed events, so you can give feedback to your user both while they speak and afterwards. Start() and Stop() methods respectively enable and disable dictation recognition. Once done with the recognizer, it should be disposed using Dispose() method to release the resources it uses. It will release these resources automatically during garbage collection at an additional performance cost if they aren't released before that.
 
 There are only a few steps needed to get started with dictation:
 1. Create a new DictationRecognizer
@@ -152,9 +152,9 @@ There are only a few steps needed to get started with dictation:
 
 ### Enabling the capability for dictation
 
-The "Internet Client" capability, in addition to the "Microphone" capability mentioned above, must be declared for an app to leverage dictation.
+The "Internet Client" capability, along with the "Microphone" capability mentioned above, must be declared for an app to leverage dictation.
 1. In the Unity Editor, go to the player settings by navigating to "Edit > Project Settings > Player" page
-2. Click on the "Windows Store" tab
+2. Select on the "Windows Store" tab
 3. In the "Publishing Settings > Capabilities" section, check the **InternetClient** capability
 
 ### DictationRecognizer
@@ -247,7 +247,7 @@ private void DictationRecognizer_DictationError(string error, int hresult)
 }
 ```
 
-Once you have subscribed and handled the dictation events that you care about, start the dictation recognizer to begin receiving events.
+Once you've subscribed and handled the dictation events that you care about, start the dictation recognizer to begin receiving events.
 
 ```
 dictationRecognizer.Start();
@@ -265,10 +265,10 @@ dictationRecognizer.Dispose();
 
 **Tips**
 * Start() and Stop() methods respectively enable and disable dictation recognition.
-* Once done with the recognizer, it must be disposed using Dispose() method to release the resources it uses. It will release these resources automatically during garbage collection at an additional performance cost if they are not released prior to that.
+* Once done with the recognizer, it must be disposed using Dispose() method to release the resources it uses. It will release these resources automatically during garbage collection at an additional performance cost if they aren't released before that.
 * Timeouts occur after a set period of time. You can check for these timeouts in the DictationComplete event. There are two timeouts to be aware of:
-   1. If the recognizer starts and doesn't hear any audio for the first five seconds, it will timeout.
-   2. If the recognizer has given a result but then hears silence for twenty seconds, it will timeout.
+   1. If the recognizer starts and doesn't hear any audio for the first five seconds, it will time out.
+   2. If the recognizer has given a result, but then hears silence for 20 seconds, it will time out.
 
 ## Using both Phrase Recognition and Dictation
 
@@ -288,7 +288,7 @@ You could also just start a KeywordRecognizer, which will restart the PhraseReco
 
 ## Using the microphone helper
 
-The Mixed Reality Toolkit on GitHub contains a microphone helper class to hint at developers if there is a usable microphone on the system. One use for it is where one would want to check if there is microphone on system before showing any speech interaction hints in the application.
+The Mixed Reality Toolkit on GitHub contains a microphone helper class to hint at developers if there's a usable microphone on the system. One use for it's where one would want to check if there's microphone on system before showing any speech interaction hints in the application.
 
 The microphone helper script can be found in the [Input/Scripts/Utilities folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/MicrophoneHelper.cs). The GitHub repo also contains a [small sample](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Input/Scripts/MicrophoneHelperSample.cs) demonstrating how to use the helper.
 
