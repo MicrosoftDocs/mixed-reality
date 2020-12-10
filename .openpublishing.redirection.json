@@ -914,8 +914,13 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/hand-eye-in-unit.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/unity/hand-eye-in-unit",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/unity/hand-eye-in-unity",
 			"redirect_document_id": true
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/hand-eye-in-unit.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/unity/hand-eye-in-unity",
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/keyboard-input-in-unity.md",
@@ -1462,6 +1467,11 @@
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/case-studies-overview.md",
 			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/discover/case-studies-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/mr-learning-overview.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/discover/mr-learning-overview",
 			"redirect_document_id": false
 		},
 		{

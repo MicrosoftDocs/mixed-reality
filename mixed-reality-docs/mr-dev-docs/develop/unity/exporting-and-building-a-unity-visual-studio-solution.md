@@ -11,15 +11,15 @@ keywords: unity, visual studio, export, build, deploy, HoloLens, mixed reality h
 
 # Exporting and building a Unity Visual Studio solution
 
-If you don't intend on using the system keyboard in your application, our recommendation is to use *D3D* as your application will use slightly less memory and have a slightly faster launch time. If you are using the TouchScreenKeyboard API in your project to use the system keyboard, you need to export as *XAML*.
+If your app doesn't need the system keyboard, our recommendation is to use *D3D* so that your app uses slightly less memory and a faster launch time. However, if you're using the system keyboard through the TouchScreenKeyboard API, you need to export the project as *XAML*.
 
 ## How to export from Unity
 
 ![Unity build settings](images/unitybuildsettings-300px.png)<br>
-*Unity build settings*
+*Build settings in Unity editor*
 
-1. When you are ready to export your project from Unity, open the **File** menu and select **Build Settings...**
-2. Click **Add Open Scenes** to add your scene to the build.
+1. When you're ready to export your project from Unity, open the **File** menu and select **Build Settings...**
+2. Select **Add Open Scenes** to add your scene to the build.
 3. In the **Build Settings** dialog, choose the following options to export for HoloLens:
    * **Platform:** *Universal Windows Platform* and be sure to select **Switch Platform** for your selection to take effect.
    * **SDK:** *Universal 10*.
@@ -38,13 +38,13 @@ If you don't intend on using the system keyboard in your application, our recomm
 9. Return to the **Build Settings** dialog.
 10. Select **Build**.
 11. In the Windows Explorer dialog that appears, create a new folder to hold Unity's build output. Generally, we name the folder "App".
-12. Select the newly created folder and click **Select Folder**.
+12. Select the newly created folder and select **Select Folder**.
 13. Once Unity has finished building, a Windows Explorer window will open to the project root directory. Navigate into the newly created folder.
 14. Open the generated Visual Studio solution file located inside this folder.
 
 ## When to re-export from Unity
 
-Checking the "C# Projects" checkbox when exporting your app from Unity creates a Visual Studio solution that includes all your Unity script files. This allows you to iterate on your scripts without re-exporting from Unity. However, if you want to make changes to your project that aren't just changing the contents of scripts, you will need to re-export from Unity. Some examples of times you need to re-export from Unity are:
+Checking the **C# Projects** checkbox when exporting your app from Unity creates a Visual Studio solution that includes all your Unity script files. Having all your scripts in one place lets you iterate without re-exporting from Unity. However, if you make changes to your project that aren't just changing the contents of scripts, you'll need to re-export from Unity. Some examples of times you need to re-export from Unity are:
 * You add or remove assets in the Project tab.
 * You change any value in the Inspector tab.
 * You add or remove objects from the Hierarchy tab.
@@ -52,7 +52,7 @@ Checking the "C# Projects" checkbox when exporting your app from Unity creates a
 
 ## Building and deploying a Unity Visual Studio solution
 
-The remainder of building and deploying apps happens in [Visual Studio](../platform-capabilities-and-apis/using-visual-studio.md). You will need to specify a Unity build configuration. Unity's naming conventions may differ from what you're usually used to in Visual Studio:
+The remainder of building and deploying apps happens in [Visual Studio](../platform-capabilities-and-apis/using-visual-studio.md). You will need to specify a Unity build configuration. Unity's naming conventions may differ from what you're used to in Visual Studio:
 
 |  Configuration  |  Explanation | 
 |----------|----------|
@@ -60,8 +60,8 @@ The remainder of building and deploying apps happens in [Visual Studio](../platf
 |  Master  |  All optimizations are turned on and the profiler is disabled. Used to submit apps to the Store. | 
 |  Release  |  All optimizations are turned on and the profiler is enabled. Used to evaluate app performance. | 
 
-Note, the above list is a subset of the common triggers that will cause the Visual Studio project to need to be generated. In general, editing .cs files from within Visual Studio will not require the project to be regenerated from within Unity.
+Note, the above list is a subset of the common triggers that will cause the Visual Studio project to need to be generated. In general, editing .cs files from within Visual Studio won't require the project to be regenerated from within Unity.
 
 ## Troubleshooting
 
-If you find that edits to your .cs files are not being recognized in your Visual Studio project, ensure that "Unity C# Projects" is checked when you generate the VS project from Unity's Build menu.
+If you find that edits to your .cs files aren't being recognized in your Visual Studio project, ensure that **Unity C# Projects** is checked when you generate the VS project from Unity's Build menu.

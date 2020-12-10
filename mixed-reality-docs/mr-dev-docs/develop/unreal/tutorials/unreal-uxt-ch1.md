@@ -29,20 +29,27 @@ Make sure you've installed the following before jumping in:
 * Windows 10 1809 or later
 * Windows 10 SDK 10.0.18362.0 or later
 * [Unreal Engine](https://www.unrealengine.com/en-US/get-now) 4.25 or later
-* Microsoft HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode) or Emulator
+* Microsoft HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode) or [Emulator](../../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-2-emulator-overview)
 * Visual Studio 2019 with the workloads below
 
 ### Installing Visual Studio 2019
 
 First, make sure your setup with all the required Visual Studio packages:
 1. Install the latest version of [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)
-2. Install the following [workloads](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-workloads):
+1. Install the following [workloads](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-workloads):
     * Desktop development with C++
     * .NET desktop development
     * Universal Windows Platform development
+1. Expand Universal Windows Platform development and select: 
+    * USB Device Connectivity
+    * C++ (v142) Universal Windows Platform tools
 
-3. Install the following [components](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-individual-components):
+1. Install the following [components](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-individual-components):
     * Compilers, build tools, and runtimes > MSVC v142 - VS 2019 C++ ARM64 build tools (latest version)
+
+You can confirm the installation with the following picture
+
+![Important Ticks in VS installer](images/unreal-uxt/1-install-the-tools.png)
 
 That's it! You're all set to move on to starting the chess project.
 

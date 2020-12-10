@@ -46,3 +46,7 @@ Warning messages will show which function has been deprecated and indicate what 
 | IsTrackingAvailable | ![Blueprint of the IsTrackingAvailable property](images/unreal-porting-img-17.png) |
 | IsButtonClicked, IsButtonDown, IsGrasped, IsSelectPressed | Use Unreal’s input action system. |
 | SetFocusPointForFrame | Removed in 4.26.  Previously used for reprojection when remoting, which now supports depth reprojection. |
+
+## 4.26 changes
+
+The significant change is that **Start in VR** from **Edit > Project Settings > Project > Description > Settings** is mandatory for starting Windows Mixed Reality plugin. Without that parameter, you will not see your holograms on the device.
