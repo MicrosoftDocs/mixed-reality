@@ -114,6 +114,37 @@ Each HoloLens generates a unique self-signed certificate for its SSL connection.
 >[!NOTE]
 > This certificate will only be trusted for the device and the user will have to go through the process again if the device is flashed.
 
+## Sideloading applications
+
+### Installing a certificate
+
+1. In Windows Device Portal, navigate to the **Apps** manager page
+2. In the Deploy apps section, select **Install Certificate**
+3. Under Select certificate file (.cer) used to sign an app package, select Choose File and browse to the certificate associated with the app package that you want to sideload
+4. Select **Install** to start the installation
+
+![Screenshot of the Apps manager page open in the Windows Device Portal](images/sideloading-1.png)
+
+If the device is running Windows 10 in S mode, and it's the first time that the certificate has been installed on the device, restart the device.
+
+### Installing an app
+
+1. When you've [created an app package from Visual Studio](using-visual-studio.md), you can remotely install it onto your device from the generated files:
+
+![Screenshot of the app package file contents](images/sideloading-2.png)
+
+2. In Windows Device Portal, navigate to the **Apps** manager page
+3. In the **Deploy** apps section, select **Local Storage**
+4. Under Select the application package, select Choose File and browse to the app package that you want to sideload
+5. Check the respective boxes if you want to install optional or framework packages along with the app installation and select **Next**:
+
+![Screenshot of the Apps manager page open in the Windows Device Portal with Local Storage tab highlighted](images/sideloading-3.png)
+
+6. Select **Install** to initiate the installation
+ 
+![Screenshot of the Apss manager page open in the Windows Device Portal with installation successfully completed](images/sideloading-4.png) 
+
+Once the installation is complete, go back to the **All apps** page on your HoloLens and launch your newly installed application!
 
 ## Device Portal Pages
 
