@@ -107,9 +107,9 @@ To work with Hand Meshes in Blueprints:
 
 ### Hand Mesh visualization in OpenXR
 
-The hand meshes can be used for various reasons, primarily in debug purposes. The recommended way to visualize hand mesh is to use Epic’s XRVisualization plugin together with Microsoft-OpenXR-Unreal. 
+The recommended way to visualize hand mesh is to use Epic’s XRVisualization plugin together with the [Microsoft OpenXR plugin](https://github.com/microsoft/Microsoft-OpenXR-Unreal). 
 
-Then in the blueprint editor, you should use **Set Use Hand Mesh** function from Microsoft-OpenXR-Unreal with **Enabled XRVisualization** as a parameter:
+Then in the blueprint editor, you should use **Set Use Hand Mesh** function from the [Microsoft OpenXR plugin](https://github.com/microsoft/Microsoft-OpenXR-Unreal) with **Enabled XRVisualization** as a parameter:
 
 ![Blueprint of event begin play connected to set use hand mesh function with enabled xrvisualization mode](images/unreal-hand-tracking-img-05.png)
 

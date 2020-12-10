@@ -79,11 +79,7 @@ Here's a breakdown of GetHandJointTransform's function parameters:
 
 # [4.26](#tab/426)
 
-The entire hand pose layout with matching enum cases is shown in the image below:
-
-![Image of hand skeleton](../../native/images/hand-skeleton.png)
-
-The hierarchy is described by EHandKeypoint enum:
+The hierarchy is described by `EHandKeypoint` enum:
 
 ![Image of hand keypoint bluprint options](../images/hand-keypoint-bp.png)
 
