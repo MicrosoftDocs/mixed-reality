@@ -44,6 +44,7 @@ Once you’re connected, click the drop-down arrow to the right of the **Play** 
 1.	Go to **Edit > Project Settings**.
     * Add a project name under **Project > Description > About > Project Name**.
     * Add **CN=YourCompanyName** under **Project > Description > Publisher > Company Distinguished Name**.
+    * Select **Start in VR** under **Project > Description > Settings**.
 
 > [!IMPORTANT]
 > Leaving either of these fields blank will result in an error when you try and generate a new certificate in step 3.
@@ -51,7 +52,10 @@ Once you’re connected, click the drop-down arrow to the right of the **Play** 
 > [!IMPORTANT]
 > The publisher's name must be in [LADPv3 Distinguished Names Format](https://www.ietf.org/rfc/rfc2253.txt). A malformed publisher's name leads to the "Signing key not found. The app could not be digitally signed." error upon packaging.
 
-![Project Settings - Description](images/unreal-uxt/6-cn.PNG)
+> [!IMPORTANT]
+> Not selecting "Start in VR" will lead your application trying to start in a slate
+
+![Project Settings - Description](images/unreal-uxt/6-cn-new.PNG)
 
 2.	Enable **Build for HoloLens Emulation** and/or **Build for HoloLens Device** under **Platforms > HoloLens**.
 
