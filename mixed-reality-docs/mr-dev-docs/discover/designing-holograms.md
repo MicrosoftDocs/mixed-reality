@@ -119,6 +119,32 @@ Obviously icons work a lot better than simple text does, so in order to provide 
 
 ![Animated GIF of an interactive holographic menu system](images/designing-holograms/creative-process.gif)
 
+## Core concepts
+
+**Holographic frame**
+
+![Animated GIF of a user looking around the dollhouse with the holographic frame highlighted](images/designing-holograms/FOVandFOI.gif)
+
+**Coordinate systems**
+
+![Animated GIF of a user looking around the dollhouse with the coordinate systems highlighted](images/designing-holograms/CoordinateSystems.gif)
+
+**Eye tracking**
+
+![Animated GIF of a user looking at stationary holograms with the eye gaze ray highlighted](images/designing-holograms/EyeTracking.gif)
+
+**Room scan visualization and spatial mapping**
+
+![Animated GIF of all surfaces inside the dollhouse being mapped](images/designing-holograms/SpatialMapping.gif)
+
+**Scene understanding**
+
+![Animated GIF of objects in the dollhouse being recognized](images/designing-holograms/SceneUnderstanding.gif)
+
+**Point and commit with hand rays**
+
+![Animated GIF of a user raising his hand with a hand ray highlighted](images/designing-holograms/HandRays.gif)
+
 ## "Try it out" moments
 
 Designing Holograms teaches mixed reality concepts, but it also allows you to try them in your room. After some of those explanations, we pause and take you out of the doll house and into an interactive moment. Here are some examples of those interactive moments:
