@@ -127,7 +127,7 @@ Each HoloLens generates a unique self-signed certificate for its SSL connection.
 
 ### Installing an app
 
-> [NOTE]
+> [!NOTE]
 > In order for an app to install successfully via Device Portal it must be signed by a certificate, this certificate must be installed to the device prior to attempting to install the app. See the [previous section](#installing-a-certificate) for instructions.
 
 1. When you've [created an app package from Visual Studio](using-visual-studio.md), you can remotely install it onto your device from the generated files:
