@@ -2,7 +2,7 @@
 title: Spatial audio tutorials - 4. Enabling and disabling spatial audio at run time
 description: Use a button to enable and disable spatialization of audio at run time.
 author: kegodin
-ms.author: kegodin
+ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens2, spatial audio, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head-related transfer function, reverb, Microsoft Spatializer
