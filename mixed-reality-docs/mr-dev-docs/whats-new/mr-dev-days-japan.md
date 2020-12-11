@@ -38,23 +38,23 @@ We are very excited to open up registration for Mixed Reality Dev Days Japan.  T
 ### December 16th
 |**Time**|**Session Title**|**Speaker**|**Language**|**Level**|
 |---------|---------|---------|---------|---------|
-|10:00am - 10:50am|Opening Keynote|TBD|JA/EN|N/A|
-|10:50am - 11:00am|**Break**||||
-|11:00am - 11:25am|*Session 1* What is Mixed Reality? What can you do with HL2?  MR tech stack|Atsushi Suzuki|JA|100|
-|11:30am - 11:55am|*Session 2* Japan commercial market momentum update with customers and partners Case studies|Tetsu Muranaka|JA|200|
+|10:00am - 10:50am|Opening Keynote|Madoka Chiyoda, Alex Kipman, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA/EN|N/A|
+|10:50am - 11:00am|**Break (10min)**||||
+|11:00am - 11:25am|*Session 1* Intro to Mixed Reality|Atsushi Suzuki|JA|100|
+|11:30am - 11:55am|*Session 2* Mixed Reality business momentum|Tetsu Muranaka|JA|200|
 |12:00pm - 12:50pm|*Lunch Session* Panel: Interactive free discussion, Q and A, MRTK + Oculus Quest 2|Madoka Chiyoda + Microsoft MVPs|JA|200|
-|12:50pm - 1:00pm|**Break**||||
+|12:50pm - 1:00pm|**Break (10min)**||||
 |1:00pm - 1:25pm|*Session 3* Overview of HoloLens 2 development|Madoka Chiyoda|JA|200|
-|1:30pm - 1:55pm|*Session 4* MRTK's UX Building Blocks (v2.5.0)|Yoon Park|JA|300|
+|1:30pm - 1:55pm|*Session 4* MRTK UX components v2.5.0|Yoon Park|JA|300|
 |2:00pm - 2:25pm|*Session 5* Getting started with the HoloLens 2 and Unreal Engine (MRTK-Unreal)|Cameron Micka|EN|300|
-|2:30pm - 2:55pm|*Session 6* Creating the "Designing Holograms" app. We'll dive into features, challenges and other fun learnings we discovered while creating this new HoloLens 2 app.|Daniel Escudero|EN|300|
-|2:55pm - 3:10pm|**Break**||||
-|3:10pm - 3:35pm|*Session 7* Azure Object Anchors|Jesse McCulloch|EN|300|
-|3:40pm - 4:05pm|*Session 8* Azure Remote Rendering|Atsushi Suzuki|JA|300|
-|4:10pm - 4:35pm|*Session 9* Aligning Hologram and Real World through Azure Spatial Anchors|Yingguang Mei|EN|300|
-|4:40pm - 5:05pm|*Session 10* Unity + PiXYZ|Shinobu Takahashi (Unity)|JA|200|
-|5:10pm - 5:35pm|*Session 11* Azure Kinect DK Deep Dive, Case study|Shinji Chiba|JA|400|
-|5:35pm - 5:50pm|Closing|Madoka Chiyoda|JA|NA|
+|2:30pm - 2:55pm|*Session 6* Making Designing Holograms|Daniel Escudero|EN|300|
+|2:55pm - 3:15pm|**Break (20min)**||||
+|3:15pm - 3:40pm|*Session 7* Azure Object Anchors|Jesse McCulloch|EN|300|
+|3:45pm - 4:10pm|*Session 8* Azure Remote Rendering|Atsushi Suzuki|JA|300|
+|4:15pm - 4:40pm|*Session 9* Aligning Hologram and Real World through Azure Spatial Anchors|Yingguang Mei|EN|300|
+|4:45pm - 5:10pm|*Session 10* Unity + PiXYZ|Shinobu Takahashi (Unity Technologies Japan)|JA|200|
+|5:15pm - 5:40pm|*Session 11* Azure Kinect DK Deep Dive, Case Study|Shinji Chiba|JA|400|
+|5:45pm - 6:00pm|Closing|Madoka Chiyoda|JA|N/A|
 
 #### Contributors (Technical reviewers for the subtitles)
 
