@@ -438,7 +438,7 @@
           href: platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md
         - name: Understanding performance for Mixed Reality
           href: platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md
-        - name: Performance recommendations for Unity 
+        - name: Performance recommendations for Unity
           href: unity/performance-recommendations-for-unity.md
         - name: Using Visual Studio to deploy and debug
           href: platform-capabilities-and-apis/using-visual-studio.md
@@ -454,11 +454,13 @@
           href: platform-capabilities-and-apis/hololens-emulator-archive.md
         - name: Perception simulation
           href: platform-capabilities-and-apis/perception-simulation.md
-    - name: Research tools
+    - name: Device Portal
       items:
         - name: Using the Windows Device Portal
           href: platform-capabilities-and-apis/using-the-windows-device-portal.md
         - name: Device portal API reference
           href: platform-capabilities-and-apis/device-portal-api-reference.md
+    - name: Research tools
+      items:
         - name: HoloLens Research Mode
           href: platform-capabilities-and-apis/research-mode.md
