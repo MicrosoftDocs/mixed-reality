@@ -21,7 +21,7 @@ Before using the Mixed Reality OpenXR Plugin, you need to install Unity’s “O
 2. Select **Install**   
 3. Once installation is complete, search for **OpenXR XR Plugin** and select **Install**
 
-![Screenshot of the Unity Package Manager window open in the Unity editor](images/openxr-img-1.png)
+![Screenshot of the Unity Package Manager window open in the Unity editor](images/openxr-img-01.png)
 
 > [!NOTE]
 > If you're not targeting HoloLens 2, you can skip to [configuring the XR Plugin Management for OpenXR](#configure-xr-plugin-management-for-openxr).
@@ -67,7 +67,7 @@ To add the OpenXR package, modify the dependencies section of the Packages/manif
 
 Once the OpenXR package has been added to the package manifest, it can be managed using the Unity Package Manager user interface.  
 
-![Screenshot of the Unity Package Manager open in the Unity Editor with Mixed Reality OpenXR Plugin highlighted](images/openxr-2.png)
+![Screenshot of the Unity Package Manager open in the Unity Editor with Mixed Reality OpenXR Plugin highlighted](images/openxr-img-02.png)
 
 > [!Note] 
 > If the OpenXR package is removed using the Unity Package Manager, you'll have to re-add it using the previously described steps.
@@ -81,7 +81,7 @@ To set OpenXR as the the runtime in Unity:
 3. Select **Initialize XR on Startup** and **OpenXR (Preview)**
 4. If targeting HoloLens 2, select **Windows Mixed Reality Feature Set**
 
-![Screenshot of the project settings panel open in the Unity editor with XR Plug-in management highlighted](images/openxr-3.png)
+![Screenshot of the project settings panel open in the Unity editor with XR Plug-in management highlighted](images/openxr-img-03.png)
 
 5. Select **OpenXR** under the XR Plug-in Management package
 6. Set Render Mode to **Single Pass Instanced**
@@ -99,7 +99,7 @@ To utilize one or more of the examples, please use the following steps:
 2. In the list of packages, select **Mixed Reality OpenXR Plugin**
 3. Locate the sample in the **Samples** list and select **Import**
 
-![Screenshot of Unity Package Manager open in Unity editor with Mixed Reality OpenXR Plugin selected and import button highlighted](images/openxr-4.png)
+![Screenshot of Unity Package Manager open in Unity editor with Mixed Reality OpenXR Plugin selected and import button highlighted](images/openxr-img-04.png)
 
 ### For all other OpenXR samples
 
