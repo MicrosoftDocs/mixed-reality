@@ -64,15 +64,17 @@ Futo Horio ([@Futo_Horio](https://twitter.com/Futo_Horio)), Takahiro Miyaura ([@
 This section will be updated frequently as we get more questions from you!
 
 **Q** - Who should attend Mixed Reality Dev Day
+
 **A** - This event is inclusive of everyone who works or plays in the Mixed Reality space. While most of the content is going to be developer-focused, we also know that there is interesting content for a wide variety of roles beyond developers. Please remember to check the schedule for updates to see the kind of content we will be providing.  
-  
-**Q** - I cannot find the event in Teams Live Events  
+
+**Q** - I cannot find the event in Teams Live Events
+
 **A** - To participate, click on the link in the email you will receive after registering for the event. We recommend watching on the Teams PC app, and you can also participate in the Teams mobile app or in your desktop browser.
 
 If for some reason you are unable to log in to Teams, please check the YouTube channel where the event will be broadcast simultaneously. However, you will not be able to participate in QA with the speakers.
 
-  
-**Q** - Will the presentation materials and session videos be available after the event? 
+**Q** - Will the presentation materials and session videos be available after the event?
+
 **A** - We will be releasing each video sessions, but due to the time involved, please consider joining us live if you can!
 
 <!--  
