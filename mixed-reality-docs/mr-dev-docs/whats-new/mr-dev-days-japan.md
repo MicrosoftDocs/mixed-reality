@@ -38,7 +38,7 @@ We are very excited to open up registration for Mixed Reality Dev Days Japan.  T
 ### December 16th
 |**Time**|**Session Title**|**Speaker**|**Language**|**Level**|
 |---------|---------|---------|---------|---------|
-|10:00am - 10:50am|Opening Keynote|Madoka Chiyoda, Alex Kipman, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA/EN|N/A|
+|10:00am - 10:50am|Opening Keynote with special welcome from Alex Kipman|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA/EN|N/A|
 |10:50am - 11:00am|**Break (10min)**||||
 |11:00am - 11:25am|*Session 1* Intro to Mixed Reality|Atsushi Suzuki|JA|100|
 |11:30am - 11:55am|*Session 2* Mixed Reality business momentum|Tetsu Muranaka|JA|200|
