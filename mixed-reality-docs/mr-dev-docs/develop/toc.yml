@@ -1,13 +1,11 @@
 - name: Introduction to Mixed Reality development
   href: development.md
+- name: Azure mixed reality cloud services overview
+  href: mixed-reality-cloud-services.md
+- name: Samples and feature apps
+  href: features-and-samples.md
 - name: Install the tools
   href: install-the-tools.md
-- name: Getting started
-  items:
-  - name: Azure mixed reality cloud services overview
-    href: mixed-reality-cloud-services.md
-  - name: Samples and feature apps
-    href: features-and-samples.md
 - name: Porting apps
   items:
   - name: Porting overview
@@ -24,21 +22,21 @@
   items:
   - name: Unity development overview
     href: unity/unity-development-overview.md
-  - name: Getting started
+  - name: Project configurations
     items:
-      - name: Getting started with MRTK
+      - name: Introducing MRTK 
         href: unity/mrtk-getting-started.md
-      - name: Getting started with OpenXR
-        href: unity/openxr-getting-started.md
-      - name: Configure Unity project for Windows Mixed Reality
+      - name: Configure your project without MRTK
         href: unity/configure-unity-project.md
+      - name: Using the Mixed Reality OpenXR Plugin
+        href: unity/openxr-getting-started.md
   - name: Tutorials
     items:
       - name: Overview
         href: unity/tutorials.md
       - name: HoloLens 2 tutorials
         items:
-          - name: Getting started tutorials
+          - name: MRTK tutorials
             items:
               - name: 1. Introduction
                 href: unity/tutorials/mr-learning-base-01.md

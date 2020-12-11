@@ -1,5 +1,5 @@
 ---
-title: Getting started with OpenXR
+title: Using the Mixed Reality OpenXR Plugin for Unity
 description: 
 author: hferrone
 ms.author: alexturn
@@ -9,72 +9,103 @@ keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Realit
 ---
 
 
-# Getting started with OpenXR
+# Using the Mixed Reality OpenXR Plugin for Unity
 
-> [!CAUTION]
-> OpenXR is still in the experimental development stage. If you haven't decided between Unity and Unreal as your development engine, we recommend starting with the [introduction to Mixed Reality](development.md) and come back to OpenXR when you need an API to build engines. New release information will be added to this page, so check back with us!
+Starting with Unity version 2020.2, Microsoft’s Mixed Reality OpenXR Plugin package is available using the Unity Package Manager (UPM).
 
-<!-- Need introductory context paragraph -->
+## Installing Unity’s OpenXR and XR Plugin Management packages
 
-## Getting the OpenXR packages
+Before using the Mixed Reality OpenXR Plugin, you need to install Unity’s “OpenXR XR Plugin” and “XR Plugin Management” packages:
 
-<!-- Coming soon -->
- 
-## Installing the OpenXR packages
+1. In the Unity Editor, navigate to **Window > Package Manager**, select **Packages: Unity Registry**, and search for**XR Plugin Management**
+2. Select **Install**   
+3. Once installation is complete, search for **OpenXR XR Plugin** and select **Install**
 
-Make sure you have at least the first 2 tarball files below ready. 
-* **com.unity.xr.openxr-**<version>**.tgz**
-* **com.microsoft.mixedreality.openxr-**<version>**.tgz**
-* (optional) **com.microsoft.mixedreality.toolkit.openxr-**<version>**.tgz**
-
-Next, you need to install the packages in Unity:
-
-1. Open **Package Manager** in the Unity Editor:
-
-![](images/openxr-getting-started-img-01.png)
-
-2. Add the downloaded **com.unity.xr.openxr-*.tgz** from tarball file:
-
-![](images/openxr-getting-started-img-02.png)
-
-3. Add the downloaded **com.microsoft.mixedreality.openxr-*.tgz** from tarball file.
-4. (Optional) See [MRTK support for OpenXR](file:///C:/display/OX/MRTK+support+for+OpenXR) for information on the **com.microsoft.mixedreality.toolkit.openxr-*.tgz** package.
-
-## Using the sample scene
-
-1. Add **AR Foundation 4.0.*** package from Unity store:
-
-![](images/openxr-getting-started-img-03.png)
-
-2. Open **Package Manager** for **Mixed Reality OpenXR Plugin** and import the **Sample Scene**:
-
-![](images/openxr-getting-started-img-04.png)
-
-3. Open the **SampleScene** from the **Project** pane:
-
-![](images/openxr-getting-started-img-05.png)
-
-## Running OpenXR projects on HoloLens 2
-
-1. Select **File > Build Settings... > Switch platform to Universal Windows Platform**:
-
-![](images/openxr-getting-started-img-06.png)
-
-2. Go to **Edit > Project Settings ... > XR plugin Management** and check **OpenXR Loader**:
-
-![](images/openxr-getting-started-img-07.png)
-
-3. Also make sure the **Mixed Reality OpenXR Plugin** extension is enabled:
-
-![](images/openxr-getting-started-img-08.png)
-
-4. Update your project settings for best quality by following our [Unity best practices on HoloLens 2](file:///C:/display/OX/Unity+best+practices+on+HL2)
-5. Click **Build** and choose a save location for the Visual Studio project:
-
-![](images/openxr-getting-started-img-09.png)
-
-6. Open the **.sln** file in to generated folder in latest release of Visual Studio.
-7. Set configuration to **Release, ARM64**, and **Device** then press F5 to build, deploy and run on your HoloLens 2 device.
+![Screenshot of the Unity Package Manager window open in the Unity editor](images/openxr-img-1.png)
 
 > [!NOTE]
-> Debug mode has known visual bugs.
+> If you're not targeting HoloLens 2, you can skip to [configuring the XR Plugin Management for OpenXR](#configure-xr-plugin-management-for-openxr).
+
+## Installing Mixed Reality features using the Unity Package Manager
+
+The Unity Package Manager uses a manifest file named *manifest.json* to determine which packages to install and the registries they can be installed from.
+
+> [!IMPORTANT]
+> OpenXR is still experimental in Unity and this process may change over time as we work to optimize the developer experience.
+
+### Registering the Mixed Reality component server
+
+The manifest.json file in the Packages folder needs to have the Mixed Reality scoped registry added for each project that uses OpenXR. To properly modify manifest.json to support Mixed Reality:
+
+1.	Open **<projectRoot>/Packages/manifest.json** in a text editor like Visual Studio Code
+2.	At the top of the manifest file, add the Mixed Reality server to the scoped registry section and save the file
+
+```
+{
+  "scopedRegistries": [
+    {
+      "name": "Microsoft Mixed Reality",
+      "url": "https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry/",
+      "scopes": [
+        "com.microsoft.mixedreality"
+      ]
+    }
+  ],
+```
+
+### Adding the Mixed Reality OpenXR Plugin package
+
+Once the Microsoft Mixed Reality scoped registry has been added to the manifest, the OpenXR package can be specified.
+To add the OpenXR package, modify the dependencies section of the Packages/manifest.json file:
+
+```
+  "dependencies": {
+    "com.microsoft.mixedreality.openxr": "1.0",
+```
+
+## Managing OpenXR features with the Unity Package Manager
+
+Once the OpenXR package has been added to the package manifest, it can be managed using the Unity Package Manager user interface.  
+
+![Screenshot of the Unity Package Manager open in the Unity Editor with Mixed Reality OpenXR Plugin highlighted](images/openxr-2.png)
+
+> [!Note] 
+> If the OpenXR package is removed using the Unity Package Manager, you'll have to re-add it using the previously described steps.
+
+## Configure XR Plugin Management for OpenXR
+
+To set OpenXR as the the runtime in Unity: 
+
+1. In the Unity Editor, navigate to **Edit > Project Settings**
+2. In the list of Settings, select **XR Plugin Management**
+3. Select **Initialize XR on Startup** and **OpenXR (Preview)**
+4. If targeting HoloLens 2, select **Windows Mixed Reality Feature Set**
+
+![Screenshot of the project settings panel open in the Unity editor with XR Plug-in management highlighted](images/openxr-3.png)
+
+5. Select **OpenXR** under the XR Plug-in Management package
+6. Set Render Mode to **Single Pass Instanced**
+7. Set Depth Submission Mode to *Depth 16 Bit**
+
+You're now ready to begin developing with OpenXR in Unity!  Continue on to the next section to learn how to use the OpenXR samples.
+
+## Using OpenXR examples
+
+To utilize one or more of the examples, please use the following steps:
+
+### HoloLens 2 samples
+
+1. In the Unity Editor, navigate to **Window > Package Manager**
+2. In the list of packages, select **Mixed Reality OpenXR Plugin**
+3. Locate the sample in the **Samples** list and select **Import**
+
+![Screenshot of Unity Package Manager open in Unity editor with Mixed Reality OpenXR Plugin selected and import button highlighted](images/openxr-4.png)
+
+### For all other OpenXR samples
+
+1. In the Unity Editor, navigate to **Window > Package Manager**
+2. In the list of packages, select **OpenXR XR Plugin**
+3. Locate the sample in the **Samples** list and select **Import**
+
+> [!NOTE]
+>  When a package is updated, Unity provides the option to update imported samples.  Updating an imported sample will overwrite any changes that have been made to the sample and associated assets.
