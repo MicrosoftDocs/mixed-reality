@@ -1,6 +1,6 @@
 ---
 title: Using the Mixed Reality OpenXR Plugin for Unity
-description: 
+description: Learn how to enable the Mixed Reality OpenXR plugin for Unity projects.
 author: hferrone
 ms.author: alexturn
 ms.date: 12/1/2020
