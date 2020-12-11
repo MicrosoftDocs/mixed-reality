@@ -24,7 +24,7 @@ If you choose the WMR manual setup, the settings you need to change are broken-d
 
 If you're targeting Desktop VR, we suggest using the PC Standalone Platform selected by default on a new Unity project:
 
-![Screenshot of Build Settings window open in the unity editor with PC, Mac & Standalone platform highlighted](images/wmr-config-img-1.png)
+![Screenshot of Build Settings window open in the unity editor with PC, Mac & Standalone platform highlighted](images/wmr-config-img-1.jpg)
 
 If you're targeting HoloLens 2, you need to switch to the Universal Windows Platform:
 
@@ -123,4 +123,3 @@ If your app is targeting HoloLens specifically, you need to change a few setting
 
 ## See also
 * [Install the tools](../install-the-tools.md)
-
