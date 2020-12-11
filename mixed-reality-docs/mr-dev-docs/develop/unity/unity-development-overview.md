@@ -1,7 +1,7 @@
 ---
-title: Unity development overview
-description: Getting started building mixed reality apps in Unity.
-author: thetuvix
+title: Unity development for HoloLens
+description: Getting started building mixed reality apps in Unity for HoloLens.
+author: hferrone
 ms.author: kurtie
 ms.date: 12/9/2020
 ms.topic: article
@@ -9,7 +9,7 @@ ms.localizationpriority: high
 keywords: Unity, mixed reality, development, getting started, new project, porting, capability, camera, simulation, emulation, documentation, mixed reality headset, windows mixed reality headset, virtual reality headset, what is virtual reality, what is augmented reality, MRTK, mixed reality toolkit, spatial mapping, voice input, locatable camera, emulator, Azure, tutorials
 ---
 
-# Unity development overview
+# Unity development for HoloLens 
 
 ![Unity banner logo](../images/unity_logo_banner.png)
 
