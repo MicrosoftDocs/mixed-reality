@@ -11,3 +11,6 @@ keywords: Unity, mixed reality, development, getting started, new project, porti
 
 
 # Unity development for VR and Windows Mixed Reality
+
+![Unity banner logo](../images/unity_logo_banner.png)
+
