@@ -45,8 +45,8 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "mrtk",
-      "build_source_folder": "mrtk",
+      "docset_name": "mrtk-docs",
+      "build_source_folder": "mrtk-docs",
       "build_output_subfolder": "mrtk",
       "locale": "en-us",
       "monikers": [],
