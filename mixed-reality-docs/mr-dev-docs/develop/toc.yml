@@ -20,11 +20,11 @@
     href: porting-apps/building-2d-apps.md
 - name: Unity
   items:
-  - name: Unity development overview  
+  - name: Unity development overview
     href: unity/unity-development-overview.md
   - name: Project configurations
     items:
-      - name: Introducing MRTK 
+      - name: Introducing MRTK
         href: unity/mrtk-getting-started.md
       - name: Configure your project without MRTK
         href: unity/configure-unity-project.md
@@ -312,6 +312,10 @@
         href: unreal/unreal-publishing-to-store.md
       - name: Performance recommendations for Unreal
         href: unreal/performance-recommendations-for-unreal.md
+      - name: Material recommendations in Unreal
+        href: unreal/unreal-materials.md
+      - name: Profiling with Unreal Insights
+        href: unreal/unreal-insights.md
       - name: Material recommendations in Unreal
         href: unreal/unreal-materials.md
       - name: Streaming in Unreal
