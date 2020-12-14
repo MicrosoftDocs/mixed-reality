@@ -85,7 +85,7 @@ To set OpenXR as the the runtime in Unity:
 
 5. Select **OpenXR** under the XR Plug-in Management package
 6. Set Render Mode to **Single Pass Instanced**
-7. Set Depth Submission Mode to *Depth 16 Bit**
+7. Set Depth Submission Mode to **Depth 16 Bit**
 
 You're now ready to begin developing with OpenXR in Unity!  Continue on to the next section to learn how to use the OpenXR samples.
 
