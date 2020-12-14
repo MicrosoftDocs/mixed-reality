@@ -24,7 +24,7 @@ If you choose the WMR manual setup, the settings you need to change are broken-d
 
 If you're targeting Desktop VR, we suggest using the PC Standalone Platform selected by default on a new Unity project:
 
-![Screenshot of Build Settings window open in the unity editor with PC, Mac & Standalone platform highlighted](images/wmr-config-img-1.jpg)
+![Screenshot of Build Settings window open in the unity editor with PC, Mac & Standalone platform highlighted](images/wmr-config-img-3.png)
 
 If you're targeting HoloLens 2, you need to switch to the Universal Windows Platform:
 
@@ -34,9 +34,9 @@ If you're targeting HoloLens 2, you need to switch to the Universal Windows Plat
 4.	Set **Target device** to **HoloLens**
 5.	Set **Build Type** to **D3D**
 6.	Set **UWP SDK** to **Latest installed**
-7.	Set** Build configuration** to **Release** because there are known performance issues with Debug
+7.	Set **Build configuration** to **Release** because there are known performance issues with Debug
 
-![Screenshot of Build Settings window open in unity editor with Universal Windows Platform highlighted](images/wmr-config-img-2.png)
+![Screenshot of Build Settings window open in unity editor with Universal Windows Platform highlighted](images/wmr-config-img-4.png)
 
 After setting your platform, you need to let Unity know to create an [immersive view](../../design/app-views.md) instead of a 2D view when exported.
 
@@ -44,22 +44,22 @@ After setting your platform, you need to let Unity know to create an [immersive 
 
 1. In the Unity Editor, navigate to **Edit > Project settings** and select **XR Plugin Management**
 
-![Screenshot of Project Settings window open in unity editor with XR Plugin management highlighted](images/wmr-config-img-3.png)
+![Screenshot of Project Settings window open in unity editor with XR Plugin management highlighted](images/wmr-config-img-5.png)
 
 2. Select **Install XR Plugin Management**
 
-![Screenshot of Package manager window open in unity editor](images/wmr-config-img-4.png)
+![Screenshot of Package manager window open in unity editor](images/wmr-config-img-6.png)
 
 3. In the Unity Editor, navigate to **Edit > Project Settings** and select **XR Plugin Management**
 4. Select **Initialize XR on Startup** and **Windows Mixed Reality**
 
-![Screenshot of Project settings window open in unity editor with XR Plugin management highlighted](images/wmr-config-img-5.png)
+![Screenshot of Project settings window open in unity editor with XR Plugin management highlighted](images/wmr-config-img-7.png)
 
 5. Expand the **XR Plug-in Management** section and select **Windows Mixed Reality**
 6. Set **Render Mode** to **Single Pass Instanced**
 7. Set **Depth Submission Mode** to **Depth 16 Bit**
 
-![Screenshot of Project settings window open in unity editor with Windows Mixed Reality section highlighted](images/wmr-config-img-6.png)
+![Screenshot of Project settings window open in unity editor with Windows Mixed Reality section highlighted](images/wmr-config-img-8.png)
 
 ### For Legacy XR 
 
@@ -72,9 +72,7 @@ After setting your platform, you need to let Unity know to create an [immersive 
 4. Set **Stereo Rendering Mode** to **Single Pass Instance**
 5. Select **WSA Holographic Remoting Supported** if you'd like to use Holographic remoting 
 
-![Screenshot of Project settings window open in unity editor with Player settings section highlighted](images/wmr-config-img-7.png)
-
-In the **XR Settings** group, confirm that "Windows Mixed Reality" is listed as a supported device. (this option may appear as Windows Holographic in older versions of Unity).
+![Screenshot of Project settings window open in unity editor with Player settings section highlighted](images/wmr-config-img-9.png)
 
 ### Updating the manifest
 
@@ -98,7 +96,7 @@ HoloLens has a mobile-class GPU. If your app is targeting HoloLens, you'll want 
 2. Select the **dropdown** under the **Windows Store** logo and select **Very Low**. You'll know the setting is applied correctly when the box in the Windows Store column and **Very Low** row is green
 3. In the **Shadows** section, select **Disable Shadows**
 
-![Screenshot of Project settings window open in unity editor with quality settings section highlighted](images/wmr-config-img-8.png)<br>
+![Screenshot of Project settings window open in unity editor with quality settings section highlighted](images/wmr-config-img-10.png)<br>
 *Unity quality settings*
 
 ## Per-scene settings
@@ -115,7 +113,7 @@ If your app is targeting HoloLens specifically, you need to change a few setting
 4. Change the **Background** color to **RGBA 0,0,0,0**. Black renders as transparent in HoloLens.
 5. Change **Clipping Planes - Near** to the [HoloLens recommended](camera-in-unity.md#clip-planes) 0.85 (meters).
 
-![Screenshot of the inspector tab open in the Unity editor](images/wmr-config-img-9.png)<br>
+![Screenshot of the inspector tab open in the Unity editor](images/wmr-config-img-11.png)<br>
 *Unity camera settings*
 
 > [!IMPORTANT]
