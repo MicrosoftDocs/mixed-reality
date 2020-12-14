@@ -96,7 +96,7 @@ Unreal lets you to create and configure a "Custom Profile" in the HoloLens launc
 
 Back in Unreal Insights, select the **Live** connection to your device to start profiling
 
-The custom profile is shared between projects. From here on out, you can use the custom profile you created instead of having to do this every time. You only need to recreate the connection to the device every time you start Unreal (steps 3, 4, and 5).
+The custom profile is shared between projects. From here on out, you can use the custom profile you created instead of having to do this every time. You only need to recreate the connection to the device every time you start Unreal with steps 3 to 6 in the [setup section](#setup).
 
 ## See also
 * [Unreal Insights documentation](https://docs.unrealengine.com/TestingAndOptimization/PerformanceAndProfiling/UnrealInsights/index.html)
