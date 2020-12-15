@@ -1,7 +1,7 @@
 ---
 title: Configure your project without MRTK 
 description: Instructions on configuring a Unity project for Windows Mixed Reality
-author: thetuvix
+author: hferrone
 ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
@@ -13,7 +13,7 @@ keywords: Unity, mixed reality, development, getting started, new project, Windo
 
 Windows Mixed Reality (WMR) is a Microsoft platform introduced as part of the Windows 10 operating system. The WMR platform lets you build applications that render digital content on holographic and VR display devices.
 
-When setting up for WMR, you can manually change a few Unity settings and get right into development, or install the [Mixed Reality Toolkit (MRTK)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html) to automatically set up the WMR environment. 
+While Microsoft and the community have created opensource tools such as the [Mixed Reality Toolkit (MRTK)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html) that will automatically set up the WMR environment, many developers wish to build their experiences from the ground up.  The following documentation will demonstrate how to properly set up a project for Mixed Reality development whether you are using MRTK or not.  The settings you need to change are broken down into two categories: per-project settings and per-scene settings.
 
 > [!NOTE]
 > You can always import MRTK later on, so there's no penalty for going the manual route first.
@@ -44,20 +44,16 @@ After setting your platform, you need to let Unity know to create an [immersive 
 
 1. In the Unity Editor, navigate to **Edit > Project settings** and select **XR Plugin Management**
 
-![Screenshot of Project Settings window open in unity editor with XR Plugin management highlighted](images/wmr-config-img-5.png)
-
 2. Select **Install XR Plugin Management**
 
-![Screenshot of Package manager window open in unity editor](images/wmr-config-img-6.png)
+![Screenshot of Project Settings window open in unity editor with XR Plugin management highlighted](images/wmr-config-img-5.png)
 
-3. In the Unity Editor, navigate to **Edit > Project Settings** and select **XR Plugin Management**
-4. Select **Initialize XR on Startup** and **Windows Mixed Reality**
+3. Select **Initialize XR on Startup** and **Windows Mixed Reality**
 
 ![Screenshot of Project settings window open in unity editor with XR Plugin management highlighted](images/wmr-config-img-7.png)
 
-5. Expand the **XR Plug-in Management** section and select **Windows Mixed Reality**
-6. Set **Render Mode** to **Single Pass Instanced**
-7. Set **Depth Submission Mode** to **Depth 16 Bit**
+4. Expand the **XR Plug-in Management** section and select **Windows Mixed Reality**
+5. Check all boxes and set **Depth Submission Mode** to **Depth 16 Bit**
 
 ![Screenshot of Project settings window open in unity editor with Windows Mixed Reality section highlighted](images/wmr-config-img-8.png)
 

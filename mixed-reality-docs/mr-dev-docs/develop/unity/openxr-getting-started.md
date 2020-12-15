@@ -109,3 +109,14 @@ To utilize one or more of the examples, please use the following steps:
 
 > [!NOTE]
 >  When a package is updated, Unity provides the option to update imported samples.  Updating an imported sample will overwrite any changes that have been made to the sample and associated assets.
+
+## Unsupported features in 2020.2
+
+| Category | Features |
+| --- | --- |
+| World Scale Tracking | Unbounded Anchor Anchor store Azure Spatial Anchors Anchor data export |
+
+## See also
+* [Configuring your project without MRTK](configure-unity-project.md)
+* [Recommended settings for Unity](recommended-settings-for-unity.md)
+* [Performance recommendations for Unity](performance-recommendations-for-unity.md#how-to-profile-with-unity)
