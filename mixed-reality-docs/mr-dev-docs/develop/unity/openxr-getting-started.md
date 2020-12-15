@@ -110,11 +110,23 @@ To utilize one or more of the examples, please use the following steps:
 > [!NOTE]
 >  When a package is updated, Unity provides the option to update imported samples.  Updating an imported sample will overwrite any changes that have been made to the sample and associated assets.
 
-## Unsupported features in 2020.2
+## Features in 2020.2 
 
-| Category | Features |
-| --- | --- |
-| World Scale Tracking | Unbounded Anchor Anchor store Azure Spatial Anchors Anchor data export |
+<br>
+
+| Category | Features | 2020.2 |
+| --- | --- | --- |
+| [Hand joints](hand-eye-in-unity.md) | Articulated hand tracking | ✔️ |
+| [Eye gaze](../../design/gaze-and-dwell-eyes.md) | Eye-gaze and dwell | ✔️ |
+| Remoting from Player in Unity Editor | ----------------------- | ✔️ |
+| Controller input | Gestures <br> Motion controllers | ❌ |
+| World Scale Tracking | Unbounded Anchor <br> Anchor store <br> Azure Spatial Anchors <br> Anchor data export | ❌ |
+| Advanced Hand Visualization | Hand Mesh <br> Controller Gltf model | ❌ |
+| Advanced MR features | Reprojection mode <br> Software keyboard placement <br> QR codes <br> SR | ❌ |
+| Scene Understanding | Plane finding <br> Placement <br> Labeling | ❌ |
+| Mixed Reality Capture | 1st person <br> Locatable Camera | ❌ |
+| Testing without deploying | Editor Remoting <br> In-editor HaT <br> MRTK Simulation | ❌ |
+| Developer tools | Traces <br> Settings <br> Diagnoses <br> Jiggle mode <br> PIX <br> RenderDoc | ❌ |
 
 ## See also
 * [Configuring your project without MRTK](configure-unity-project.md)

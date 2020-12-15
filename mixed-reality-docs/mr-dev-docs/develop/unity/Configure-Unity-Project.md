@@ -115,5 +115,14 @@ If your app is targeting HoloLens specifically, you need to change a few setting
 > [!IMPORTANT]
 > If you delete and create a new camera, make sure your new camera is tagged as **MainCamera**.
 
+## Next steps
+
+Now that your project is ready, you can start developing your Mixed Reality experience:
+
+* Add [core building blocks](unity-development-overview.md#2-core-building-blocks)
+* Check out available [platform capabilities and APIs](unity-development-overview.md#3-platform-capabilities-and-apis)
+* Learn how to [deploy your app](../platform-capabilities-and-apis/using-visual-studio.md#deploying-an-app-to-your-local-pc---immersive-headset)
+* Use the [Mixed Reality simulator](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
+
 ## See also
 * [Install the tools](../install-the-tools.md)
