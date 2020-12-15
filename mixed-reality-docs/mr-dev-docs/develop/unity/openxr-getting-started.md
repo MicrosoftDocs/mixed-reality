@@ -60,7 +60,7 @@ To add the OpenXR package, modify the dependencies section of the Packages/manif
 
 ```
   "dependencies": {
-    "com.microsoft.mixedreality.openxr": "1.0",
+    "com.microsoft.mixedreality.openxr": "0.1.0",
 ```
 
 ## Managing OpenXR features with the Unity Package Manager
