@@ -9,7 +9,7 @@ keywords: Unity, mixed reality, development, getting started, new project, Windo
 ---
 
 
-# Configure your project without MRTK
+# Configuring your project without MRTK
 
 Windows Mixed Reality (WMR) is a Microsoft platform introduced as part of the Windows 10 operating system. The WMR platform lets you build applications that render digital content on holographic and VR display devices.
 

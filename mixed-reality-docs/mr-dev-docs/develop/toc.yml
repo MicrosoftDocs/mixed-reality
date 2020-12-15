@@ -26,10 +26,12 @@
     items:
       - name: Introducing MRTK
         href: unity/mrtk-getting-started.md
-      - name: Configure your project without MRTK
+      - name: Configuring your project without MRTK
         href: unity/configure-unity-project.md
       - name: Using the Mixed Reality OpenXR Plugin
         href: unity/openxr-getting-started.md
+      - name: OpenXR plugin Supported Features 
+        href: unity/openxr-supported-features.md 
   - name: Tutorials
     items:
       - name: Overview
