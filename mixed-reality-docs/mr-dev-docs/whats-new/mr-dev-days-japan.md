@@ -25,9 +25,9 @@ We look forward to having you join us at Mixed Reality Dev Day! Get ready to hea
 
 ## Registration
 
-[Registeration - Now Open](https://mixedrealityprod.microsoftcrmportals.com/event/sessions?id=MR_Dev_Days_Japan864059683)
+[WATCH NOW - Microsoft Teams Live Events](https://aka.ms/MRDDJPLive)
 
-We are very excited to open up registration for Mixed Reality Dev Days Japan.  The event is free and being held online in Microsoft Teams Live Events.  We request that attendees register so we can send email updates as the event gets closer and so that you can participate in the interactive elements of the event.
+We recommend watching on the Teams PC app, and you can also participate in the Teams mobile app or in your desktop browser. If for some reason you are unable to log in to Teams, please check the [YouTube Live](https://youtu.be/zxZu1uHjyo4). However, you will not be able to participate in QA with the speakers.
 
 ## Schedule - Subject to change
 
