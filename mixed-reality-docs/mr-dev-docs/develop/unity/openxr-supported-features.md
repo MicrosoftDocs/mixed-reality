@@ -46,4 +46,4 @@ The following issues and missing features are known with Mixed Reality OpenXR pl
 * When you suspend and resume a Unity app on HoloLens 2, the app can't correctly resume, which leads to 4 spinning dots in the HoloLens view. 
     *  Set **Depth submission Mode** to **None** in the OpenXR project settings as a workaround
 * **ARPlaneSubsystem** is not supported yet. **ARPlaneManager**, **ARRaycastManager**, and related APIs like **ARAnchorManager.AttachAnchor** are also not supported on HoloLens 2.
-* Anchors aren't supported by Holographic remoting yet, but support is coming in the near future.
+* **Anchors** aren't supported by Holographic remoting yet, but support is coming in the near future.
