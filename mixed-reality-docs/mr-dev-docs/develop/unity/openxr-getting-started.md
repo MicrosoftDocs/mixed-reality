@@ -13,15 +13,28 @@ keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Realit
 
 Starting with Unity version 2020.2, Microsoft’s Mixed Reality OpenXR Plugin package is available using the Unity Package Manager (UPM).
 
+## Prerequisites
+
+-	Unity 2020.2+ 
+-	Unity OpenXR plugin 0.1.1 or later
+-	Visual Studio 2019 or later
+-	Install **UWP** platform support in Unity for HoloLens 2 apps
+
+> [!NOTE]
+> If you're building VR applications on Windows PC, all you need is Unity's OpenXR plugin. You don't need to install UWP platform support or the Mixed Reality OpenXR plugin package. 
+
 ## Installing Unity’s OpenXR and XR Plugin Management packages
 
 Before using the Mixed Reality OpenXR Plugin, you need to install Unity’s “OpenXR XR Plugin” and “XR Plugin Management” packages:
 
 1. In the Unity Editor, navigate to **Window > Package Manager**, select **Packages: Unity Registry**, and search for**XR Plugin Management**
 2. Select **Install**   
-3. Once installation is complete, search for **OpenXR XR Plugin** and select **Install**
 
 ![Screenshot of the Unity Package Manager window open in the Unity editor](images/openxr-img-01.png)
+
+3. Once installation is complete, search for **OpenXR XR Plugin** and select **Install**
+
+<!-- Image coming after Unity publishes -->
 
 > [!NOTE]
 > If you're not targeting HoloLens 2, you can skip to [configuring the XR Plugin Management for OpenXR](#configure-xr-plugin-management-for-openxr).
