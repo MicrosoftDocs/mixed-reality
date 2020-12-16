@@ -33,28 +33,29 @@ We recommend watching on the Teams PC app, and you can also participate in the T
 
 **All times are Japan Standard Time (UTC+9)** 
 
-
-
 ### December 16th
+
+**We've been delayed an hour from our original schedule.**
+
 |**Time**|**Session Title**|**Speaker**|**Language**|**Level**|
 |---------|---------|---------|---------|---------|
-|10:00am - 10:50am|Opening Keynote|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA/EN|N/A|
-|10:50am - 11:00am|**Break (10min)**||||
-|11:00am - 11:25am|*Session 1* Intro to Mixed Reality|Atsushi Suzuki|JA|100|
-|11:30am - 11:55am|*Session 2* Mixed Reality business momentum|Tetsu Muranaka|JA|200|
-|12:00pm - 12:50pm|*Lunch Session* Panel: Interactive free discussion, Q and A, MRTK + Oculus Quest 2|Madoka Chiyoda + Microsoft MVPs|JA|200|
-|12:50pm - 1:00pm|**Break (10min)**||||
-|1:00pm - 1:25pm|*Session 3* Overview of HoloLens 2 development|Madoka Chiyoda|JA|200|
-|1:30pm - 1:55pm|*Session 4* MRTK UX components v2.5.0|Yoon Park|JA|300|
-|2:00pm - 2:25pm|*Session 5* Getting started with the HoloLens 2 and Unreal Engine (MRTK-Unreal)|Cameron Micka|EN|300|
-|2:30pm - 2:55pm|*Session 6* Making Designing Holograms|Daniel Escudero|EN|300|
-|2:55pm - 3:15pm|**Break (20min)**||||
-|3:15pm - 3:40pm|*Session 7* Azure Object Anchors|Jesse McCulloch|EN|300|
-|3:45pm - 4:10pm|*Session 8* Azure Remote Rendering|Atsushi Suzuki|JA|300|
-|4:15pm - 4:40pm|*Session 9* Aligning Hologram and Real World through Azure Spatial Anchors|Yingguang Mei|EN|300|
-|4:45pm - 5:10pm|*Session 10* Unity + PiXYZ|Shinobu Takahashi (Unity Technologies Japan)|JA|200|
-|5:15pm - 5:40pm|*Session 11* Azure Kinect DK Deep Dive, Case Study|Shinji Chiba|JA|400|
-|5:45pm - 6:00pm|Closing|Madoka Chiyoda|JA|N/A|
+|11:00am - 11:50am|Opening Keynote|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA/EN|N/A|
+|11:50am - 12:00pm|**Break (10min)**||||
+|12:00pm - 12:25pm|*Session 1* Intro to Mixed Reality|Atsushi Suzuki|JA|100|
+|12:30pm - 12:55pm|*Session 2* Mixed Reality business momentum|Tetsu Muranaka|JA|200|
+|1:00pm - 1:50pm|*Lunch Session* Panel: Interactive free discussion, Q and A, MRTK + Oculus Quest 2|Madoka Chiyoda + Microsoft MVPs|JA|200|
+|1:50pm - 2:00pm|**Break (10min)**||||
+|2:00pm - 2:25pm|*Session 3* Overview of HoloLens 2 development|Madoka Chiyoda|JA|200|
+|2:30pm - 2:55pm|*Session 4* MRTK UX components v2.5.0|Yoon Park|JA|300|
+|3:00pm - 3:25pm|*Session 5* Getting started with the HoloLens 2 and Unreal Engine (MRTK-Unreal)|Cameron Micka|EN|300|
+|3:30pm - 3:55pm|*Session 6* Making Designing Holograms|Daniel Escudero|EN|300|
+|3:55pm - 4:15pm|**Break (20min)**||||
+|4:15pm - 4:40pm|*Session 7* Azure Object Anchors|Jesse McCulloch|EN|300|
+|4:45pm - 5:10pm|*Session 8* Azure Remote Rendering|Atsushi Suzuki|JA|300|
+|5:15pm - 5:40pm|*Session 9* Aligning Hologram and Real World through Azure Spatial Anchors|Yingguang Mei|EN|300|
+|5:45pm - 6:10pm|*Session 10* Unity + PiXYZ|Shinobu Takahashi (Unity Technologies Japan)|JA|200|
+|6:15pm - 6:40pm|*Session 11* Azure Kinect DK Deep Dive, Case Study|Shinji Chiba|JA|400|
+|6:45pm - 7:00pm|Closing|Madoka Chiyoda|JA|N/A|
 
 #### Contributors (Technical reviewers for the subtitles)
 
