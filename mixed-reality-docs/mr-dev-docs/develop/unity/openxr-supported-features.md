@@ -19,14 +19,14 @@ The following features are currently supported:
 
 * Supports both UWP applications for HoloLens 2 and Win32 VR applications for Windows Mixed Reality headsets.
 * Optimizes UWP package and CoreWindow interaction for HoloLens 2 applications.
-* World scale tracking using Anchor and Unbounded space.
-* Anchor storage API to persistent anchors to HoloLens 2 local storage.
+* World scale tracking using Anchors and Unbounded space.
+* Anchor storage API to persist anchors to HoloLens 2 local storage.
 * Motion controller and hand interactions, including the new HP Reverb G2 controller.
 * Articulated hand tracking using 26 joints and joint radius inputs.
 * Eye gaze interaction on HoloLens 2.
-* Locating PV camera on HoloLens 2.
+* Locating photo/video (PV) camera on HoloLens 2.
 * Mixed Reality Capture using 3rd eye rendering through PV camera.
-* Supports "Play" to HoloLens 2 using Holographic Remoting app, allow developers to debug scripts without build and deploy to the device.
+* Supports "Play" to HoloLens 2 using the Holographic Remoting app, allowing developers to debug scripts without building and deploying to the device.
 * Compatible with MRTK Unity 2.5.2 through MRTK OpenXR adapter package. <missing link>
 * Compatible with Unity [ARFoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) or later
 
