@@ -39,6 +39,28 @@ The following features are currently supported:
 
 ![Screenshot of Windows Mixed Reality features window open in Unity editor with features sets highlighted](images/openxr-features-img-01.png)
 
+
+## Motion controller and hand interactions
+To learn the basics about mixed reality interactions in Unity, visit the [Unity Manual for Unity XR Input](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html). This Unity documentation covers the mappings from controller-specific inputs to more generalizable `InputFeatureUsage`s, how available XR inputs can be identified and categorized, how to read data from these inputs, and more. 
+ 
+The Mixed Reality OpenXR Plugin provides additional input interaction profiles, mapped to standard `InputFeatureUsage`s as detailed below: 
+ 
+| `InputFeatureUsage` | HP Reverb G2 Controller (OpenXR) | HoloLens Hand (OpenXR) |
+| ---- | ---- | ---- |
+| primary2DAxis | Joystick | |
+| primary2DAxisClick | Joystick - Click | |
+| trigger | Trigger  | |
+| grip | Grip | Air tap or squeeze |
+| primaryButton | [X/A] - Press | Air tap |
+| secondaryButton | [Y/B] - Press | |
+| gripButton | Grip - Press | |
+| triggerButton | Trigger - Press | |
+| menuButton | Menu | |
+
+#### Haptics
+For information on using haptics in Unity’s XR Input system, documentation can be found at the [Unity Manual for Unity XR Input - Haptics](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html#Haptics). 
+
+
 ## What's coming soon
 
 The following issues and missing features are known with Mixed Reality OpenXR plugin **version 0.1.0**. We're working on these and will release fixes and new features in upcoming releases.
