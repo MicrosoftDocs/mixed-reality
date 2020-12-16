@@ -117,7 +117,7 @@ Navigate to **Mixed Reality> OpenXR > Apply recommended project settings for Hol
 To utilize one or more of the examples, please use the following steps. 
 
 > [!NOTE]
-> You'll need to install [ARFoundation 4.0+]((https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html)) to run the samples.
+> You'll need to install [ARFoundation 4.0+](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) to run the samples.
 
 ### HoloLens 2 samples
 
