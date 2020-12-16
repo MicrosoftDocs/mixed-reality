@@ -11,9 +11,9 @@ keywords: porting, unity, middleware, engine, UWP, Win32
 
 # Porting overview
 
-When it comes to porting or upgrading your existing projects for Mixed Reality, several scenarios may apply depending on whether your app was built with Unity or Unreal Engine, HoloLens (1st Gen) or HoloLens 2, or SteamVR. This overview page contains our current recommendations for each platform and device - be sure to check back as these processes are always changing.
+When it comes to porting or upgrading your existing projects for Mixed Reality, your porting journey depends on whether your app is built with Unity or Unreal Engine, and targets HoloLens (1st Gen) or HoloLens 2, or SteamVR. This overview page contains our current recommendations for each platform and device - be sure to check back as these processes are always changing.
 
-First, setup your project target based on either our [Unity](#unity) and [Unreal](#unreal) recommendations, then follow one or more of our porting scenarios:
+First, set up your project target based on either our [Unity](#unity) and [Unreal](#unreal) recommendations, then follow one or more of our porting scenarios:
 
 - [HoloLens (1st Gen) to HoloLens 2](#hololens-1st-gen-unity-apps-to-hololens-2)
 - [Windows Mixed Reality headsets](#windows-mixed-reality-headsets)
@@ -22,7 +22,7 @@ First, setup your project target based on either our [Unity](#unity) and [Unreal
 
 ## Recommended project targets
 
-It's important to keep your projects up-to-date, whether or not your porting an app to another target device. Refer to the engine-based resources listed below for our current recommendations.
+It's important to keep your projects up to date, whether your porting an app to another target device. Refer to the engine-based resources listed below for our current recommendations.
 
 ### Unity
 
@@ -48,7 +48,7 @@ If you have an existing HoloLens (1st Gen) Unity application that you'd like to 
 
 ### Windows Mixed Reality headsets
 
-If you've built content for other devices, such as the Oculus Rift or HP Reverb G2, you'll need to re-target vendor-specific VR SDKs and potentially input mapping APIs. You can find information for both Unity and Unreal porting scenarios in our [immersive apps porting guide](porting-guides.md).
+If you've built content for other devices, such as the Oculus Rift or HP Reverb G2, you'll need to retarget vendor-specific VR SDKs and potentially input-mapping APIs. You can find information for both Unity and Unreal porting scenarios in our [immersive apps porting guide](porting-guides.md).
 
 ### SteamVR applications
 
@@ -56,5 +56,5 @@ For any SteamVR experiences that you want to update for Windows Mixed Reality he
 
 ### 2D Universal Windows applications
 
-If you have an existing 2D UWP app that you'd like to port to either a Windows Mixed Reality immersive headset or HoloLens, follow the instructions in our [porting 2D UWP apps for Windows Mixed Reality](building-2d-apps.md) article.
+If you have an existing 2D UWP app that you'd like to port to either a Windows Mixed Reality immersive headset or HoloLens, follow our [porting 2D UWP apps for Windows Mixed Reality](building-2d-apps.md) instructions.
 
