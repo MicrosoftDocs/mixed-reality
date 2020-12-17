@@ -63,7 +63,7 @@ m_speechCommandList->Append(StringReference(L"SpeechRecognizer"));
    m_speechCommandData.push_back(float4(0.5f, 0.1f, 1.f, 1.f));
 ```
 
-To load the commands list into the list of constraints for the speech recognizer use a [SpeechRecognitionListConstraint](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionlistconstraint.aspx) object.
+To load the commands list into the list of constraints for the speech recognizer, use a [SpeechRecognitionListConstraint](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionlistconstraint.aspx) object.
 
 ```
 SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListConstraint(m_speechCommandList);
@@ -91,7 +91,7 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
            );
 ```
 
-Your *OnResultGenerated* event handler receives event data in a [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx) instance. If the confidence is greater than the threshold that you defined, your app should note that the event happened. Save the event data so that you can use it in a subsequent update loop.
+Your *OnResultGenerated* event handler receives event data in a [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx) instance. If the confidence is greater than the threshold you defined, your app should note that the event happened. Save the event data so that you can use it in a later update loop.
 
 From *HolographicVoiceInputSampleMain.cpp*:
 
@@ -152,7 +152,7 @@ auto constraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScen
    {
 ```
 
-If compilation succeeds, we can proceed with speech recognition.
+If compilation succeeds, we can continue with speech recognition.
 
 ```
 try
@@ -363,7 +363,7 @@ Concurrency::task<void> HolographicSpeechPromptSampleMain::StopCurrentRecognizer
 
 The holographic speech samples use speech synthesis to provide audible instructions to the user. This section shows how to create a synthesized voice sample  and then play it back through the HRTF audio APIs.
 
-You should provide your own speech prompts when you request phrase input. Prompts can also help indicate when speech commands can be spoken for a continuous-recognition scenario. The following example demonstrates how to use a speech synthesizer to do this. You could also use a pre-recorded voice clip, a visual UI, or another indicator of what to say, for example in scenarios where the prompt is not dynamic.
+We recommend providing your own speech prompts when you request phrase input. Prompts can also help indicate when speech commands can be spoken for a continuous-recognition scenario. The following example demonstrates how to use a speech synthesizer to do this. You could also use a pre-recorded voice clip, a visual UI, or another indicator of what to say, for example in scenarios where the prompt isn't dynamic.
 
 First, create the SpeechSynthesizer object.
 
