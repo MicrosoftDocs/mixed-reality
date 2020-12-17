@@ -1,5 +1,5 @@
 ---
-title: Getting started tutorials - 4. Positioning objects in the scene
+title: MRTK tutorials - 4. Positioning objects in the scene
 description: This course shows you how to position objects in the scene and how to use the Mixed Reality Toolkit (MRTK) to organize objects in a grid.
 author: jessemcculloch
 ms.author: jemccull

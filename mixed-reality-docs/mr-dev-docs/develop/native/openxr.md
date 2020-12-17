@@ -70,7 +70,32 @@ As of July 2020, the Windows Mixed Reality OpenXR Runtime supports a set of `MSF
 
 While some of these extensions may start out as vendor-specific `MSFT` extensions, Microsoft and other OpenXR runtime vendors are working together to design cross-vendor `EXT` or `KHR` extensions for many of these feature areas. Cross-vendor extensions will make the code you write for those features portable across runtime vendors, as with the core specification.
 
-## Get started with OpenXR
+## Getting started with OpenXR
+
+![Screenshot of minecraft being played by a user wearing a mixed reality headset](images/openxr-minecraft.jpg)
+
+*Minecraft's new RenderDragon engine is building its desktop VR support using OpenXR*
+
+Microsoft has been working with Unity and Epic Games to ensure the future of mixed reality is open, not just for HoloLens 2, but across the full breadth of PC VR, including [HP’s new Reverb G2 headset](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).  For more information on developing for HoloLens (1st gen), see the [release notes](https://docs.microsoft.com/hololens/hololens1-release-notes).
+
+To learn how you can get started with OpenXR in Unity, Unreal Engine or your own engine, read on!
+
+### OpenXR in Unity
+
+Today, the supported Unity development path for HoloLens 2, HoloLens (1st gen), and Windows Mixed Reality headsets is **Unity 2019 LTS** with the existing WinRT API backend.  You can jump into [OpenXR with Unity](../unity/openxr-getting-started.md); If you’re targeting the new HP Reverb G2 controller in a Unity 2019 app, see our [HP Reverb G2 input docs](../unity/unity-reverb-g2-controllers.md).
+
+Starting with **Unity 2020 LTS**, [Unity will ship an OpenXR backend](https://forum.unity.com/threads/unitys-plans-for-openxr.993225/) that supports HoloLens 2 and Windows Mixed Reality headsets.  This includes support for the OpenXR extensions that light up the [full capabilities of HoloLens 2 and Windows Mixed Reality headsets](#roadmap), including hand/eye tracking, spatial anchors and HP Reverb G2 controllers.  MRTK-Unity support for OpenXR is currently under development in the [mrtk_development branch](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development) and will be available alongside that OpenXR preview package.
+
+Starting in **Unity 2021**, OpenXR will then graduate to be the only supported Unity backend for targeting HoloLens 2 and Windows Mixed Reality headsets.
+
+### OpenXR in Unreal Engine
+
+As of **Unreal Engine 4.23**, full support for HoloLens 2 and Windows Mixed Reality headsets are available through the Windows Mixed Reality (WinRT) plugin.
+
+Unreal Engine 4.23 was also the first major game engine release to ship preview support for OpenXR 1.0!  Now in **Unreal Engine 4.26**, support for HoloLens 2, Windows Mixed Reality and other desktop VR headsets will be available through [Unreal Engine’s built-in OpenXR plugin](https://github.com/microsoft/Microsoft-OpenXR-Unreal).  Unreal Engine 4.26 will also ship with its first set of OpenXR extension plugins enabling hand interaction and HP Reverb G2 controller support, lighting up the [full feature set of HoloLens 2 and Windows Mixed Reality headsets](#roadmap).  Unreal Engine 4.26 is available in preview today on the [Epic Games Launcher](https://www.unrealengine.com/download/creators), with the official release coming later this year.  MRTK-Unreal support for OpenXR will be available alongside that release as well.
+
+
+### OpenXR for native development
 
 You can develop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive headset on the desktop.  If you don't have access to a headset, you can use the HoloLens 2 Emulator or the Windows Mixed Reality Simulator instead.
 

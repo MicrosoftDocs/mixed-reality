@@ -153,7 +153,7 @@ Here are some of the artifacts you might see in MRC if your app isn't clearing t
 <table>
 <tr>
 <td>
-<img src="images/chessboardblackedges-300px.jpg" alt="Failing to clear to transparent black: black edge artifacts around holograms"/>
+<img src="images/chessboardblackedges-300px.jpg" alt="Failure to clear to transparent black: black edge artifacts around holograms"/>
 </td>
 <td>
 <img src="images/fieldblackedges-300px.jpg" alt="Failing to clear to transparent black: black edge artifacts around holograms"/>
