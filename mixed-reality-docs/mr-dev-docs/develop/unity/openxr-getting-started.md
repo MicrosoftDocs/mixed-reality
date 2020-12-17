@@ -103,7 +103,7 @@ To utilize one or more of the examples, install [ARFoundation 4.0+](https://docs
 2. In the list of packages, select **Mixed Reality OpenXR Plugin**
 3. Locate the sample in the **Samples** list and select **Import**
 
-![Screenshot of Unity Package Manager open in Unity editor with Mixed Reality OpenXR Plugin selected and samples import button highlighted](images/openxr-img-09.png)
+![Screenshot of Unity Package Manager open in Unity editor with Mixed Reality OpenXR Plugin selected and samples import button highlighted](images/openxr-img-10.png)
 
 <!-- ### For all other OpenXR samples
 
