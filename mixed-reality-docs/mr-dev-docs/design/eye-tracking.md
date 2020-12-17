@@ -150,7 +150,7 @@ This can be due to different reasons from which the most common are listed below
 * External factors inhibiting reliable eye tracking such as smudges on the HoloLens visor or eyeglasses, intense direct sunlight and occlusions due to hair in front of the eyes.	
 
 Hence, developers should ensure that there is appropriate fallback support for these users. 
-On the [Eye Tracking in DirectX](../develop/native/gaze-in-directx.md#fallback-when-eye-tracking-is-not-available) page, we explain the APIs required to detect whether eye tracking data is available. 
+On the [Eye Tracking in DirectX](../develop/native/gaze-in-directx.md#fallback-when-eye-tracking-isnt-available) page, we explain the APIs required to detect whether eye tracking data is available. 
 
 While some users may have consciously decided to revoke access to their eye tracking data and are ok with the trade-off of an inferior user experience to the privacy of not providing access to their eye tracking data, in some cases this may be unintentional. 	
 Hence, if your app uses eye tracking, and this is an important part of the experience, we recommend clearly communicating this to the user. 	
