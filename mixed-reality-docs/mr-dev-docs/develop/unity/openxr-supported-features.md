@@ -30,10 +30,29 @@ The following features are currently supported:
 * Compatible with MRTK Unity 2.5.2 through MRTK OpenXR adapter package. <missing link>
 * Compatible with Unity [ARFoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) or later
 
-<!-- ## Holographic Remoting in Unity Editor play mode
+## Holographic Remoting in Unity Editor play mode
 
-![Screenshot of Windows Mixed Reality features window open in Unity editor with features sets highlighted](images/openxr-features-img-01.png) -->
+Building a UWP Unity project in Visual Studio project and then packaging and deploying it to a HoloLens 2 device can take some time. One solution is to enable the Holographic Editor Remoting, which lets you debug your C# script using “Play” mode directly to a HoloLens 2 device over your network. This scenario avoids the overhead of building and deploying a UWP package to remote device.
 
+1. First, you need to [install the Holographic Remoting Player app](https://www.microsoft.com/store/productId/9NBLGGH4SV40) from Store on your HoloLens 2  
+2. Run the Holographic Remoting Player app on HoloLens 2 and you'll see the version number and IP address to connect to
+    * You'll need v2.4 or later to work with the OpenXR plugin
+
+![Screenshot of the Holographic Remoting Player running in the HoloLens](images/openxr-features-img-01.png)
+
+3. Open **Edit -> Project Settings**, navigate to **XR plug-in Management**, and check the **Windows Mixed Reality feature set** box:
+
+![Screenshot of project settings panel open in the Unity Editor with XR Plug-in management highlighted](images/openxr-features-img-02.png)
+
+4. Expand the **Features** section under **OpenXR** and select **Show All**
+5. Check the **Holographic Editor Remoting** checkbox and input the IP address you get from the Holographic Remoting app:
+
+![Screenshot of project settings panel open in the Unity Editor with Features highlighted](images/openxr-features-img-03.png)
+
+Now you can click the “Play” button to play your Unity app into the Holographic Remoting app on your HoloLens. You can also [attach Visual Studio to Unity](https://docs.microsoft.com/visualstudio/gamedev/unity/get-started/using-visual-studio-tools-for-unity?pivots=windows) to debug C# scripts in the play mode.
+
+> [!NOTE]
+> As of version 0.1.0 the Holographic Remoting, runtime doesn’t support Anchor feature, and ARAnchorManager functionalities will not work through remoting.  This feature is coming in future releases.
 
 ## Motion controller and hand interactions
 To learn the basics about mixed reality interactions in Unity, visit the [Unity Manual for Unity XR Input](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html). This Unity documentation covers the mappings from controller-specific inputs to more generalizable `InputFeatureUsage`s, how available XR inputs can be identified and categorized, how to read data from these inputs, and more. 
