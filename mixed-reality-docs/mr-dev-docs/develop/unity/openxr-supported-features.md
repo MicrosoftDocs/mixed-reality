@@ -21,12 +21,12 @@ The following features are currently supported:
 * Optimizes UWP package and CoreWindow interaction for HoloLens 2 applications.
 * World scale tracking using Anchors and Unbounded space.
 * Anchor storage API to persist anchors to HoloLens 2 local storage.
-* Motion controller and hand interactions, including the new HP Reverb G2 controller.
+* [Motion controller and hand interactions](#motion-controller-and-hand-interactions), including the new HP Reverb G2 controller.
 * Articulated hand tracking using 26 joints and joint radius inputs.
 * Eye gaze interaction on HoloLens 2.
 * Locating photo/video (PV) camera on HoloLens 2.
 * Mixed Reality Capture using 3rd eye rendering through PV camera.
-* Supports "Play" to HoloLens 2 using the Holographic Remoting app, allowing developers to debug scripts without building and deploying to the device.
+* Supports ["Play" to HoloLens 2 with the Holographic Remoting app](#holographic-remoting-in-unity-editor-play-mode), allowing developers to debug scripts without building and deploying to the device.
 * Compatible with MRTK Unity 2.5.2 through MRTK OpenXR adapter package. <missing link>
 * Compatible with Unity [ARFoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) or later
 
