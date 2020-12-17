@@ -1,6 +1,6 @@
 ---
 title: Spatial mapping in DirectX
-description: Explains how to implement spatial mapping in your DirectX app. This includes a detailed explanation of the spatial mapping sample application that is included with the Universal Windows Platform SDK.
+description: Learn how to implement spatial mapping in your DirectX app, including the spatial mapping sample application that comes with the Universal Windows Platform SDK.
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
@@ -14,7 +14,7 @@ keywords: Windows mixed reality, spatial mapping, environment, interaction, dire
 > [!NOTE]
 > This article relates to the legacy WinRT native APIs.  For new native app projects, we recommend using the **[OpenXR API](openxr-getting-started.md)**.
 
-This topic describes how to implement [spatial mapping](../../design/spatial-mapping.md) in your DirectX app. This includes a detailed explanation of the spatial mapping sample application that is included with the Universal Windows Platform SDK.
+This topic describes how to implement [spatial mapping](../../design/spatial-mapping.md) in your DirectX app, including a detailed explanation of the spatial mapping sample application packaged with the Universal Windows Platform SDK.
 
 This topic uses code from the [HolographicSpatialMapping](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicSpatialMapping) UWP code sample.
 
@@ -46,7 +46,7 @@ This topic uses code from the [HolographicSpatialMapping](https://github.com/Mic
 
 ## DirectX development overview
 
-Native application development for spatial mapping uses the APIs under the [Windows.Perception.Spatial](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.aspx) namespace. These APIs provide full control of spatial mapping functionality, in a manner directly analogous to the spatial mapping APIs exposed by [Unity](../unity/spatial-mapping-in-unity.md).
+Native application development for spatial mapping uses the APIs in the [Windows.Perception.Spatial](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.aspx) namespace. These APIs give you full control of spatial mapping functionality, in the same way that spatial mapping APIs are exposed by [Unity](../unity/spatial-mapping-in-unity.md).
 
 ### Perception APIs
 
@@ -54,24 +54,24 @@ The primary types provided for spatial mapping development are as follows:
 * [SpatialSurfaceObserver](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.aspx) provides information about surfaces in application-specified regions of space near the user, in the form of SpatialSurfaceInfo objects.
 * [SpatialSurfaceInfo](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceinfo.aspx) describes a single extant spatial surface, including a unique ID, bounding volume and time of last change. It will provide a SpatialSurfaceMesh asynchronously upon request.
 * [SpatialSurfaceMeshOptions](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemeshoptions.aspx) contains parameters used to customize the SpatialSurfaceMesh objects requested from SpatialSurfaceInfo.
-* [SpatialSurfaceMesh](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.aspx) represents the mesh data for a single spatial surface. The data for vertex positions, vertex normals and triangle indices is contained in member SpatialSurfaceMeshBuffer objects.
+* [SpatialSurfaceMesh](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.aspx) represents the mesh data for a single spatial surface. The data for vertex positions, vertex normals, and triangle indices is contained in member SpatialSurfaceMeshBuffer objects.
 * [SpatialSurfaceMeshBuffer](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemeshbuffer.aspx) wraps a single type of mesh data.
 
 When developing an application using these APIs, your basic program flow will look like this (as demonstrated in the sample application described below):
 - **Set up your SpatialSurfaceObserver**
   - Call [RequestAccessAsync](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.requestaccessasync.aspx), to ensure that the user has given permission for your application to use the device's spatial mapping capabilities.
   - Instantiate a SpatialSurfaceObserver object.
-  - Call [SetBoundingVolumes](https://msdn.microsoft.com/library/windows/apps/mt592747.aspx) to specify the regions of space in which you want information about spatial surfaces. You may modify these regions in the future by simply calling this function again. Each region is specified using a [SpatialBoundingVolume](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialboundingvolume.aspx).
-  - Register for the [ObservedSurfacesChanged](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.observedsurfaceschanged.aspx) event, which will fire whenever new information is available about the spatial surfaces in the regions of space you have specified.
+  - Call [SetBoundingVolumes](https://msdn.microsoft.com/library/windows/apps/mt592747.aspx) to specify the regions of space in which you want information about spatial surfaces. You may modify these regions in the future by calling this function again. Each region is specified using a [SpatialBoundingVolume](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialboundingvolume.aspx).
+  - Register for the [ObservedSurfacesChanged](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.observedsurfaceschanged.aspx) event, which will fire whenever new information is available about the spatial surfaces in the regions of space you've specified.
 - **Process ObservedSurfacesChanged events**
   - In your event handler, call [GetObservedSurfaces](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.getobservedsurfaces.aspx) to receive a map of SpatialSurfaceInfo objects. Using this map, you can update your records of which spatial surfaces [exist in the user's environment](../../design/spatial-mapping.md#mesh-caching).
   - For each SpatialSurfaceInfo object, you may query [TryGetBounds](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceinfo.trygetbounds.aspx) to determine the spatial extents of the surface, expressed in a [spatial coordinate system](../../design/coordinate-systems.md) of your choosing.
-  - If you decide to request mesh for a spatial surface, call [TryComputeLatestMeshAsync](https://msdn.microsoft.com/library/windows/apps/mt592715.aspx). You may provide options specifying the desired density of triangles, and the format of the returned mesh data.
+  - If you decide to request,  mesh for a spatial surface, call [TryComputeLatestMeshAsync](https://msdn.microsoft.com/library/windows/apps/mt592715.aspx). You may provide options specifying the density of triangles, and the format of the returned mesh data.
 - **Receive and process mesh**
-  - Each call to TryComputeLatestMeshAsync will aysnchronously return one SpatialSurfaceMesh object.
-  - From this object you can access the contained SpatialSurfaceMeshBuffer objects in order to access the triangle indices, vertex positions and (if requested) vertex normals of the mesh. This data will be in a format directly compatible with the [Direct3D 11 APIs](https://msdn.microsoft.com/library/windows/desktop/ff476501(v=vs.85).aspx) used for rendering meshes.
-  - From here your application can optionally perform analysis or [processing](../../design/spatial-mapping.md#mesh-processing) of the mesh data, and use it for [rendering](../../design/spatial-mapping.md#rendering) and physics [raycasting and collision](../../design/spatial-mapping.md#raycasting-and-collision).
-  - One important detail to note is that you must apply a scale to the mesh vertex positions (for example in the vertex shader used for rendering the meshes), to convert them from the optimized integer units in which they are stored in the buffer, to meters. You can retrieve this scale by calling [VertexPositionScale](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.vertexpositionscale.aspx).
+  - Each call to TryComputeLatestMeshAsync will asynchronously return one SpatialSurfaceMesh object.
+  - From this object, you can access the contained SpatialSurfaceMeshBuffer objects, which gives you access to the triangle indices, vertex positions, and vertex normals of the mesh if you request them. This data will be in a format directly compatible with the [Direct3D 11 APIs](https://msdn.microsoft.com/library/windows/desktop/ff476501(v=vs.85).aspx) used for rendering meshes.
+  - From here your application can optionally analyze or [process](../../design/spatial-mapping.md#mesh-processing) the mesh data, and use it for [rendering](../../design/spatial-mapping.md#rendering) and physics [raycasting and collision](../../design/spatial-mapping.md#raycasting-and-collision).
+  - One important detail to note is that you must apply a scale to the mesh vertex positions (for example in the vertex shader used for rendering the meshes), to convert them from the optimized integer units in which they're stored in the buffer, to meters. You can retrieve this scale by calling [VertexPositionScale](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.vertexpositionscale.aspx).
 
 ### Troubleshooting
 * Don't forget to scale mesh vertex positions in your vertex shader, using the scale returned by [SpatialSurfaceMesh.VertexPositionScale](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.vertexpositionscale.aspx)
@@ -80,11 +80,11 @@ When developing an application using these APIs, your basic program flow will lo
 
 The [Holographic Spatial Mapping](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicSpatialMapping) code sample includes code that you can use to get started loading surface meshes into your app, including infrastructure for managing and rendering surface meshes.
 
-Now, we walk through how to add surface mapping capability to your DirectX app. You can add this code to your [Windows Holographic app template](creating-a-holographic-directx-project.md) project, or you can follow along by browsing through the code sample mentioned above. This code sample is based on the Windows Holographic app template.
+Now, we walk through how to add surface-mapping capability to your DirectX app. You can add this code to your [Windows Holographic app template](creating-a-holographic-directx-project.md) project, or you can follow along by browsing through the code sample mentioned above. This code sample is based on the Windows Holographic app template.
 
 ### Set up your app to use the spatialPerception capability
 
-Your app must be able to use the spatial mapping capability. This is necessary because the spatial mesh is a representation of the user's environment, which may be considered private data. Declare this capability in the package.appxmanifest file for your app. Here's an example:
+Your app can use the spatial mapping capability. This is necessary because the spatial mesh is a representation of the user's environment, which may be considered private data. Declare this capability in the package.appxmanifest file for your app. Here's an example:
 
 ```xml
 <Capabilities>
@@ -106,7 +106,7 @@ The capability comes from the **uap2** namespace. To get access to this namespac
 
 ### Check for spatial mapping feature support
 
-Windows Mixed Reality supports a wide range of devices, including devices which do not support spatial mapping. If your app can use spatial mapping, or must use spatial mapping, to provide functionality, it should check to make sure that spatial mapping is supported before trying to use it. For example, if spatial mapping is required by your mixed reality app, it should display a message to that effect if a user tries running it on a device without spatial mapping. Or, your app may be able to render its own virtual environment in place of the user's environment, providing an experience that is similar to what would happen if spatial mapping were available. In any event, this API allows your app to be aware of when it will not get spatial mapping data and respond in the appropriate way.
+Windows Mixed Reality supports a wide range of devices, including devices, which don't support spatial mapping. If your app can use spatial mapping, or must use spatial mapping, to provide functionality, it should check to make sure spatial mapping is supported before trying to use it. For example, if spatial mapping is required by your mixed reality app, it should display a message to that effect if a user tries running it on a device without spatial mapping. Or, your app can render its own virtual environment in place of the user's environment, providing an experience that is similar to what would happen if spatial mapping were available. In any event, this API allows your app to be aware of when it won't get spatial mapping data and respond in the appropriate way.
 
 To check the current device for spatial mapping support, first make sure the UWP contract is at level 4 or greater and then call SpatialSurfaceObserver::IsSupported(). Here's how to do so in the context of the [Holographic Spatial Mapping](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicSpatialMapping) code sample. Support is checked just before requesting access.
 
@@ -132,7 +132,7 @@ if (m_surfaceObserver == nullptr)
            /// etc ...
 ```
 
-Note that when the UWP contract is less than level 4, the app should proceed as though the device is capable of doing spatial mapping.
+When the UWP contract is less than level 4, the app should proceed as though the device is capable of doing spatial mapping.
 
 ### Request access to spatial mapping data
 
@@ -197,7 +197,7 @@ Next, you need to configure the surface observer to observe a specific bounding 
         m_surfaceObserver->SetBoundingVolume(bounds);
 ```
 
-Note that you can set multiple bounding volumes instead.
+You can set multiple bounding volumes instead.
 
 *This is pseudocode:*
 
@@ -205,7 +205,7 @@ Note that you can set multiple bounding volumes instead.
 m_surfaceObserver->SetBoundingVolumes(/* iterable collection of bounding volumes*/);
 ```
 
-It is also possible to use other bounding shapes - such as a view frustum, or a bounding box that is not axis aligned.
+It's also possible to use other bounding shapes - such as a view frustum, or a bounding box that isn't axis aligned.
 
 *This is pseudocode:*
 
@@ -215,11 +215,11 @@ m_surfaceObserver->SetBoundingVolume(
             );
 ```
 
-If your app needs to do anything differently when surface mapping data is not available, you can write code to respond to the case where the [SpatialPerceptionAccessStatus](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialperceptionaccessstatus.aspx) is not **Allowed** - for example, it will not be allowed on PCs with immersive devices attached because those devices don't have hardware for spatial mapping. For these devices, you should instead rely on the spatial stage for information about the user's environment and device configuration.
+If your app needs to do anything differently when surface mapping data isn't available, you can write code to respond to the case where the [SpatialPerceptionAccessStatus](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialperceptionaccessstatus.aspx) isn't **Allowed** - for example, it won't be allowed on PCs with immersive devices attached because those devices don't have hardware for spatial mapping. For these devices, you should instead rely on the spatial stage for information about the user's environment and device configuration.
 
 ### Initialize and update the surface mesh collection
 
-If the surface observer was successfully created, we can proceed to initialize our surface mesh collection. Here, we use the pull model API to get the current set of observed surfaces right away:
+If the surface observer was successfully created, we can continue to initialize our surface mesh collection. Here, we use the pull model API to get the current set of observed surfaces right away:
 
 ```cpp
 auto mapContainingSurfaceCollection = m_surfaceObserver->GetObservedSurfaces();
@@ -232,7 +232,7 @@ auto mapContainingSurfaceCollection = m_surfaceObserver->GetObservedSurfaces();
         }
 ```
 
-There is also a push model available to get surface mesh data. You are free to design your app to use only the pull model if you choose, in which case you'll poll for data every so often - say, once per frame - or during a specific time period, such as during game setup. If so, the above code is what you need.
+There's also a push model available to get surface mesh data. You're free to design your app to use only the pull model if you choose, in which case you'll poll for data every so often - say, once per frame - or during a specific time period, such as during game setup. If so, the above code is what you need.
 
 In our code sample, we chose to demonstrate the use of both models for pedagogical purposes. Here, we subscribe to an event to receive up-to-date surface mesh data whenever the system recognizes a change.
 
@@ -244,7 +244,7 @@ m_surfaceObserver->ObservedSurfacesChanged += ref new TypedEventHandler<SpatialS
 
 Our code sample is also configured to respond to these events. Let's walk through how we do this.
 
-**NOTE:** This might not be the most efficient way for your app to handle mesh data. This code is written for clarity and is not optimized.
+**NOTE:** This might not be the most efficient way for your app to handle mesh data. This code is written for clarity and isn't optimized.
 
 The surface mesh data is provided in a read-only map that stores [SpatialSurfaceInfo](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceinfo.aspx) objects using [Platform::Guids](https://msdn.microsoft.com/library/windows/desktop/aa373931.aspx) as key values.
 
@@ -313,7 +313,7 @@ Getting the surface mesh information was as easy as pulling a data collection an
 
 In our code example, we chose to use the surface meshes for rendering. This is a common scenario for occluding holograms behind real-world surfaces. You can also render the meshes, or render processed versions of them, to show the user what areas of the room are scanned before you start providing app or game functionality.
 
-The code sample starts the process when it receives surface mesh updates from the event handler that we described in the previous section. The important line of code in this function is the call to update the surface *mesh*: by this time we have already processed the mesh info, and we are about to get the vertex and index data for use as we see fit.
+The code sample starts the process when it receives surface mesh updates from the event handler that we described in the previous section. The important line of code in this function is the call to update the surface *mesh*: by this time we have already processed the mesh info, and we're about to get the vertex and index data for use as we see fit.
 
 From RealtimeSurfaceMeshRenderer.cpp:
 
@@ -335,7 +335,7 @@ void RealtimeSurfaceMeshRenderer::AddOrUpdateSurface(Guid id, SpatialSurfaceInfo
 }
 ```
 
-Our sample code is designed so that a data class, **SurfaceMesh**, handles mesh data processing and rendering. These meshes are what the **RealtimeSurfaceMeshRenderer** actually keeps a map of. Each one has a reference to the SpatialSurfaceMesh it came from, and we use it any time that we need to access the mesh vertex or index buffers, or get a transform for the mesh. For now, we flag the mesh as needing an update.
+Our sample code is designed so that a data class, **SurfaceMesh**, handles mesh data processing and rendering. These meshes are what the **RealtimeSurfaceMeshRenderer** actually keeps a map of. Each one has a reference to the SpatialSurfaceMesh it came from, so you can use it anytime you need to access the mesh vertex or index buffers, or get a transform for the mesh. For now, we flag the mesh as needing an update.
 
 From SurfaceMesh.cpp:
 
@@ -450,7 +450,7 @@ void SurfaceMesh::UpdateTransform(
 }
 ```
 
-When it's time to render surface meshes, we do some prep work before rendering the collection. We set up the shader pipeline for the current rendering configuration, and we set up the input assembler stage. Note that the holographic camera helper class **CameraResources.cpp** already has set up the view/projection constant buffer by now.
+When it's time to render surface meshes, we do some prep work before rendering the collection. We set up the shader pipeline for the current rendering configuration, and we set up the input assembler stage. The holographic camera helper class **CameraResources.cpp** already has set up the view/projection constant buffer by now.
 
 From **RealtimeSurfaceMeshRenderer::Render**:
 
@@ -496,7 +496,7 @@ else
 }
 ```
 
-Once this is done, we loop on our meshes and tell each one to draw itself. **NOTE:** This sample code is not optimized to use any sort of frustum culling, but you should include this feature in your app.
+Once this is done, we loop on our meshes and tell each one to draw itself. **NOTE:** This sample code isn't optimized to use any sort of frustum culling, but you should include this feature in your app.
 
 ```cpp
 std::lock_guard<std::mutex> guard(m_meshCollectionLock);
@@ -657,7 +657,7 @@ else
 
 We can also just draw the surface meshes to the stereo display buffers. We chose to draw full faces with lighting, but you're free to draw wireframe, process meshes before rendering, apply a texture map, and so on.
 
-Here, our code sample tells the mesh renderer to draw the collection. This time we don't specify a depth-only pass, so it will attach a pixel shader and complete the rendering pipeline using the targets that we specified for the current virtual camera.
+Here, our code sample tells the mesh renderer to draw the collection. This time we don't specify a depth-only pass, it'll attach a pixel shader and complete the rendering pipeline using the targets that we specified for the current virtual camera.
 
 ```cpp
 // Spatial Mapping mesh rendering pass: Draw Spatial Mapping mesh over the world.
