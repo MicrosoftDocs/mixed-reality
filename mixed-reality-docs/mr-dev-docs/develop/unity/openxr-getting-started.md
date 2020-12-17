@@ -21,7 +21,7 @@ Starting with Unity version 2020.2, Microsoft’s Mixed Reality OpenXR Plugin pa
 *	Install **UWP** platform support in Unity for HoloLens 2 apps
 
 > [!NOTE]
-> If you're building VR applications on Windows PC, all you need is Unity's OpenXR plugin. You don't need to install UWP platform support or the Mixed Reality OpenXR plugin package. 
+> If you're building VR applications on Windows PC, the Mixed Reality OpenXR plugin is not necessarily required. However, you'll want to install the plugin if you're customizing controller mapping for HP Reverb G2 controllers or building apps that work on both HoloLens 2 and VR headsets.
 
 ## Installing the Mixed Reality OpenXR plugin
 
@@ -103,7 +103,7 @@ To utilize one or more of the examples, install [ARFoundation 4.0+](https://docs
 2. In the list of packages, select **Mixed Reality OpenXR Plugin**
 3. Locate the sample in the **Samples** list and select **Import**
 
-![Screenshot of Unity Package Manager open in Unity editor with Mixed Reality OpenXR Plugin selected and samples import button highlighted](images/openxr-img-09.png)
+![Screenshot of Unity Package Manager open in Unity editor with Mixed Reality OpenXR Plugin selected and samples import button highlighted](images/openxr-img-10.png)
 
 <!-- ### For all other OpenXR samples
 
