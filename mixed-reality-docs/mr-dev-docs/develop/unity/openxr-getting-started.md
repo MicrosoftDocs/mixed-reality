@@ -25,7 +25,7 @@ Starting with Unity version 2020.2, Microsoft’s Mixed Reality OpenXR Plugin pa
 
 ## Installing the Mixed Reality OpenXR plugin
 
-Before using the Mixed Reality OpenXR Plugin, you need to install Unity’s **OpenXR Plugin** and **XR Plugin Management** packages:
+Your project needs to install the **OpenXR Plugin** and **XR Plugin Management** packages before using the Mixed Reality OpenXR Plugin. If you've already installed them, great! If not, installing the Mixed Reality OpenXR plugin will automatically install them as dependencies:
 
 1. In the Unity Editor, navigate to **Edit > Project Settings > Package Manager**
 2. Expand the **Scoped Registries** section, enter the following information, and select **Save**:   
