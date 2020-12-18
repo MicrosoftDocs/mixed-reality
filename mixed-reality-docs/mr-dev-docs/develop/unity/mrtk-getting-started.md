@@ -1,5 +1,5 @@
 ---
-title: Getting started with MRTK version 2
+title: Introducing MRTK for Unity
 description: For new developers who are interested in using MRTK
 author: cre8ivepark
 ms.author: dongpark
@@ -10,7 +10,8 @@ keywords: Windows Mixed Reality, test, Mixed Reality Toolkit, MRTK version 2, MR
 ---
 
 
-# Getting started with MRTK for Unity
+# Introducing MRTK for Unity
+
 ![MRTK](../../design/images/MRTK_UX_Hero.png)
 
 ## What is Mixed Reality Toolkit (MRTK)?

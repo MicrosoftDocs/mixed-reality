@@ -23,38 +23,39 @@ We look forward to having you join us at Mixed Reality Dev Day! Get ready to hea
 
 **Primary Language - Japanese**
 
-## Registration
+## Session Recordings
 
-[Registeration - Now Open](https://mixedrealityprod.microsoftcrmportals.com/event/sessions?id=MR_Dev_Days_Japan864059683)
+[Watch all videos - YouTube playlist](https://www.youtube.com/playlist?list=PLQEKit6tfVVIZaQWKTuNMONjPiIKMuJRH)
 
-We are very excited to open up registration for Mixed Reality Dev Days Japan.  The event is free and being held online in Microsoft Teams Live Events.  We request that attendees register so we can send email updates as the event gets closer and so that you can participate in the interactive elements of the event.
+Thank you for joining Mixed Reality Dev Days Japan. All videos are archived on our YouTube Channel. Looking forward to seeing you again!
 
 ## Schedule - Subject to change
 
 **All times are Japan Standard Time (UTC+9)** 
 
-
-
 ### December 16th
+
+**We've been delayed an hour from our original schedule.**
+
 |**Time**|**Session Title**|**Speaker**|**Language**|**Level**|
 |---------|---------|---------|---------|---------|
-|10:00am - 10:50am|Opening Keynote|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA/EN|N/A|
-|10:50am - 11:00am|**Break (10min)**||||
-|11:00am - 11:25am|*Session 1* Intro to Mixed Reality|Atsushi Suzuki|JA|100|
-|11:30am - 11:55am|*Session 2* Mixed Reality business momentum|Tetsu Muranaka|JA|200|
-|12:00pm - 12:50pm|*Lunch Session* Panel: Interactive free discussion, Q and A, MRTK + Oculus Quest 2|Madoka Chiyoda + Microsoft MVPs|JA|200|
-|12:50pm - 1:00pm|**Break (10min)**||||
-|1:00pm - 1:25pm|*Session 3* Overview of HoloLens 2 development|Madoka Chiyoda|JA|200|
-|1:30pm - 1:55pm|*Session 4* MRTK UX components v2.5.0|Yoon Park|JA|300|
-|2:00pm - 2:25pm|*Session 5* Getting started with the HoloLens 2 and Unreal Engine (MRTK-Unreal)|Cameron Micka|EN|300|
-|2:30pm - 2:55pm|*Session 6* Making Designing Holograms|Daniel Escudero|EN|300|
-|2:55pm - 3:15pm|**Break (20min)**||||
-|3:15pm - 3:40pm|*Session 7* Azure Object Anchors|Jesse McCulloch|EN|300|
-|3:45pm - 4:10pm|*Session 8* Azure Remote Rendering|Atsushi Suzuki|JA|300|
-|4:15pm - 4:40pm|*Session 9* Aligning Hologram and Real World through Azure Spatial Anchors|Yingguang Mei|EN|300|
-|4:45pm - 5:10pm|*Session 10* Unity + PiXYZ|Shinobu Takahashi (Unity Technologies Japan)|JA|200|
-|5:15pm - 5:40pm|*Session 11* Azure Kinect DK Deep Dive, Case Study|Shinji Chiba|JA|400|
-|5:45pm - 6:00pm|Closing|Madoka Chiyoda|JA|N/A|
+|11:00am - 11:50am|[Opening Keynote with special welcome from Alex Kipman](https://youtu.be/MamMO11TnzY)|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA/EN|N/A|
+|11:50am - 12:00pm|**Break (10min)**||||
+|12:00pm - 12:25pm|*Session 1* [Intro to Mixed Reality](https://youtu.be/HqJy91y8Of0)|Atsushi Suzuki|JA|100|
+|12:30pm - 12:55pm|*Session 2* [Mixed Reality business momentum](https://youtu.be/fJJ9I8UGbio)|Tetsu Muranaka|JA|200|
+|1:00pm - 1:50pm|*Lunch Session* Panel: Interactive free discussion, Q and A, MRTK + Oculus Quest 2 *update later|Madoka Chiyoda + Microsoft MVPs|JA|200|
+|1:50pm - 2:00pm|**Break (10min)**||||
+|2:00pm - 2:25pm|*Session 3* [Overview of HoloLens 2 development](https://youtu.be/_z0CwAVkbiQ)|Madoka Chiyoda|JA|200|
+|2:30pm - 2:55pm|*Session 4* [MRTK UX components v2.5.0](https://youtu.be/If5R9diyF50)|Yoon Park|JA|300|
+|3:00pm - 3:25pm|*Session 5* [Getting started with the HoloLens 2 and Unreal Engine (MRTK-Unreal)](https://youtu.be/AsAuPx0iz3o)|Cameron Micka|EN|300|
+|3:30pm - 3:55pm|*Session 6* [Making Designing Holograms](https://youtu.be/jHn9yydiRTw)|Daniel Escudero|EN|300|
+|3:55pm - 4:15pm|**Break (20min)**||||
+|4:15pm - 4:40pm|*Session 7* [Azure Object Anchors](https://youtu.be/dZCb6VJlaaU)|Jesse McCulloch|EN|300|
+|4:45pm - 5:10pm|*Session 8* [Azure Remote Rendering](https://youtu.be/MEhL12WGOW0)|Atsushi Suzuki|JA|300|
+|5:15pm - 5:40pm|*Session 9* [Aligning Hologram and Real World through Azure Spatial Anchors](https://youtu.be/ApBd_jSHg9Q)|Yingguang Mei|EN|300|
+|5:45pm - 6:10pm|*Session 10* [Unity + PiXYZ](https://youtu.be/ggRZRRN36VI)|Shinobu Takahashi (Unity Technologies Japan)|JA|200|
+|6:15pm - 6:40pm|*Session 11* [Azure Kinect DK Deep Dive, Case Study](https://youtu.be/C6gg2jBL3Tw)|Shinji Chiba|JA|400|
+|6:45pm - 7:00pm|Closing|Madoka Chiyoda|JA|N/A|
 
 #### Contributors (Technical reviewers for the subtitles)
 
