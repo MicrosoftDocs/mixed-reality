@@ -1,6 +1,6 @@
 ---
 title: Recommended adapters for Windows Mixed Reality capable PCs
-description: List of recommended adapters for use with Windows Mixed Reality headsets if your PC does not have full-sized USB and HDMI ports.
+description: List of recommended adapters for use with Windows Mixed Reality headsets if your PC doesn't have full-sized USB and HDMI ports.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -14,7 +14,7 @@ appliesto:
 > [!NOTE]
 > We will be updating, making additions to and may be revising these Windows Mixed Reality PC adapter recommendations. Please check back regularly for the latest.
 
-Your [Windows Mixed Reality compatible PC](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) may not have the full-sized HDMI and USB 3.0 ports needed to connect your immersive headset. If that's the case, you'll need adapters to connect your headset. Some adapters may also require the addition of a coupler to connect to your PC and/or the headset cable. Below you'll find a list of adapter types you may need, and some recommendations on specific adapter models.
+Your [Windows Mixed Reality compatible PC](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) may not have the full-sized HDMI and USB 3.0 ports needed to connect your immersive headset. If that's the case, you'll need an adapter. Some adapters also require the addition of a coupler to connect to your PC and/or the headset cable. We've listed the different types of available adapters and some recommendations on specific models to get you started.
 
 ## Recommended display adapters
 
