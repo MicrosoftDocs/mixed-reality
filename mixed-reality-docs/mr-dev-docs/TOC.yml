@@ -9,6 +9,6 @@
 - name: Distribute
   href: distribute/toc.yml
 - name: Contributing
-  href: contribibuting.md
+  href: contributing.md
 - name: What's new
   href: whats-new/toc.yml
