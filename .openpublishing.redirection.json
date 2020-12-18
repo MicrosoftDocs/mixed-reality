@@ -1694,8 +1694,13 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/contributing.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/whats-new/contributing",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/distribute/contributing",
 			"redirect_document_id": true
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/whats-new/contributing.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/distribute/contributing",
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/mr-dev-days-sessions.md",
