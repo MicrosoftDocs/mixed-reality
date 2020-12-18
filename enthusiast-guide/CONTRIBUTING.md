@@ -44,13 +44,23 @@ The publishing system is tied to GitHub, so these steps are important. You'll be
 | 1. If you're viewing a Docs.microsoft.com page, click the **Edit** button in the upper right of the page.  You will be redirected to the corresponding Markdown source file in the [GitHub repository](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide). | ![Edit Button](images/edit_button.jpg) |
 | 2. If you don't already have a GitHub account, click **Sign Up** in the upper right and create a new account. | ![Signup button](images/signup-for-github-button.png)|
 | 3. On the corresponding GitHub page that opens, click Edit (the pencil icon). | ![Pencil button](images/pencil_button.jpg)|
-| 4. In the Edit file pane, use Markdown language to make changes to the content. ([How to write markdown.](https://help.github.com/articles/basic-writing-and-formatting-syntax/))| ![Edit File](images/edit-in-github.png)|
+| 4. In the Edit file pane, [update the files metadata](#updating-metadata) and use Markdown language to change the content. ([How to write markdown.](https://help.github.com/articles/basic-writing-and-formatting-syntax/))| ![Edit File](images/edit-in-github.png)|
 | 5. Click Preview changes to verify the formatting looks as expected. | ![Preview changes](images/edit-in-github.png)|
 | 6. When you're done, scroll to the bottom of the page and click "Propose file change", you will be presented with a "Comparing changes" page, allowing you to verify your changes. Then click the "Create pull request" button to submit your changes. At this point you are finished! | ![Propose a change](images/propose.jpg)|
 
 After you submit changes (via a pull request), they will be reviewed by a member of the documentation team. If your request is accepted, updates are published to [https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide).
 
 *For internal review only, you can see your changes at [https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide](https://review.docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/?branch=master).
+
+### Updating Metadata
+
+Update metadata at the top of each article:
+   * **title**: Page title that appears in the browser tab when the article is being viewed. Page titles are used for SEO and indexing, so don't change the title unless necessary (though this is less critical before documentation goes public).
+   * **description**: Write a brief description of the article's content, which boosts SEO and discovery.
+   * **author**: If you're the primary owner of the page, add your GitHub alias here.
+   * **ms.author**: If you're the primary owner of the page, add your Microsoft alias here (you don't need @microsoft.com, just the alias).
+   * **ms.date**: Update the date if you're adding major content to the page, but not for fixes like clarification, formatting, grammar, or spelling.
+   * **keywords**: Keywords aid in SEO (search engine optimization). Add keywords, separated by a comma and a space, that are specific to your article, but no punctuation after the last keyword in your list. You don't need to add global keywords that apply to all articles, as those are managed elsewhere. 
 
 ### Renaming or deleting an existing article
 
@@ -103,7 +113,7 @@ Use the following workflow to *create new articles* in the documentation repo vi
    ---
    ```
 
-5. Fill in the relevant metadata fields per the instructions in the [section above](#editing-an-existing-article).
+5. Fill in the relevant metadata fields per the instructions in the [section above](#updating-metadata).
 6. Write article content using [Markdown basics](#markdown-basics).
 7. Add a `## See also` section at the bottom of the article with links to other relevant articles.
 8. When finished, select **Commit new file**.
@@ -189,7 +199,7 @@ Follow these steps to configure Visual Studio Code to work with this repo:
 Use the following workflow to make changes to the documentation with Visual Studio Code:
 
 >[!NOTE]
->All the guidance for [editing](#editing-an-existing-article) and [creating](#creating-a-new-article) articles, and the [basics of editing Markdown](#markdown-basics), from above applies when using Visual Studio Code as well.
+>All the guidance for [editing](#how-to-make-a-change) and [creating](#creating-a-new-article) articles, and the [basics of editing Markdown](#markdown-basics), from above applies when using Visual Studio Code as well.
 
 1. Make sure your cloned fork is up to date with the official repo.
    1. In a web browser, create a pull request to sync recent changes from other contributors in MicrosoftDocs/mixed-reality 'master' to your fork (make sure the arrow is pointing the right way).
