@@ -36,7 +36,7 @@ Azure Remote Rendering Preview brings interactive, high-quality 3D models to unt
 
 :::row:::
     :::column:::
-       [![Speech](images/speech.jpg)](https://docs.microsoft.com/azure/cognitive-services/speech-service/)
+       [![Speech bubble icon with blank grey background](images/speech.jpg)](https://docs.microsoft.com/azure/cognitive-services/speech-service/)
     :::column-end:::
     :::column span="2":::
         ### [Speech](https://docs.microsoft.com/azure/cognitive-services/speech-service/)
@@ -48,7 +48,7 @@ Azure Remote Rendering Preview brings interactive, high-quality 3D models to unt
 
 :::row:::
     :::column:::
-       [![Vision](images/vision.jpg)](https://docs.microsoft.com/azure/cognitive-services/computer-vision/)
+       [![Vision eye graphic with blank grey background](images/vision.jpg)](https://docs.microsoft.com/azure/cognitive-services/computer-vision/)
     :::column-end:::
     :::column span="2":::
         ### [Vision](https://docs.microsoft.com/azure/cognitive-services/computer-vision/)
