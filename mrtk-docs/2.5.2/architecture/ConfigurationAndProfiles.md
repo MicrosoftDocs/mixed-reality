@@ -37,7 +37,7 @@ MRTK version update.
 While profiles can be individually modified (by going to the serialized asset of the ScriptableObject),
 they are generally accessed through the MRTK inspector of the root MixedRealityToolkit scene object.
 
-![Profile](../../Documentation/Images/Profiles/input_profile.png)
+![Profile](../features/Images/Profiles/input_profile.png)
 
 The picture above shows the sheer volume of settings - note that each option on the left will show
 the configuration for its corresponding service.

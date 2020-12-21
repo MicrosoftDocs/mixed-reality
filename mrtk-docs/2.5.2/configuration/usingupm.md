@@ -56,7 +56,7 @@ To add an MRTK package, modify the dependencies section of the `Packages/manifes
 
 Once a Mixed Reality Toolkit package has been added to the package manifest, it can be managed using the Unity Package Manager user interface.
 
-![MRTK Foundation UPM Package](Images/Packaging/MRTK_FoundationUPM.png)
+![MRTK Foundation UPM Package](../features/Images/Packaging/MRTK_FoundationUPM.png)
 
 > [!Note]
 > If a Mixed Reality Toolkit package is removed using the Unity Package Manager, it will have to be re-added using the [previously described steps](#adding-mrtk-packages).
@@ -72,7 +72,7 @@ To utilize one or more of the examples, please use the following steps:
 1. Locate the desired sample(s) in the `Samples` list
 1. Click `Import into Project`
 
-![Importing samples](Images/Packaging/MRTK_ExamplesUpm.png)
+![Importing samples](../features/Images/Packaging/MRTK_ExamplesUpm.png)
 
 When an example package is updated, Unity provides the option to update imported samples.
 
