@@ -26,7 +26,7 @@ Gaze functionality (both head and eye) is provided by the
 [GazeProvider](xref:Microsoft.MixedReality.Toolkit.Input.GazeProvider). This provider can be configured
 in the *Pointer* section of the input system profile:
 
-![Gaze Configuration Entrypoint](../../Documentation/Images/Input/GazeConfigurationEntrypoint.png)
+![Gaze Configuration Entrypoint](../Images/Input/GazeConfigurationEntrypoint.png)
 
 Like other sources of input, the gaze provider interacts with objects in the scene
 through use of a pointer [(see this document for information on pointers)](../Architecture/InputSystem/ControllersPointersAndFocus.md).
