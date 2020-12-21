@@ -1,3 +1,11 @@
+# [4.26](#tab/426)
+
+To get the data for the hand rays, you should use the Get Motion Controller Data function from the previous section. The returned structure contains two parameters you can use to create a hand ray – **Aim Position** and **Aim Rotation**. These parameters form a ray directed by your elbow. You should take them and find a hologram being pointed by.
+
+Below is an example of determining whether a hand ray hits a Widget and setting a custom hit result:
+
+![Blueprint of get motion controller data function](../images/unreal-hand-tracking-img-04.png) 
+
 # [4.25](#tab/425)
 
 To use Hand Rays in Blueprints, search for any of the actions under **Windows Mixed Reality HMD**:
@@ -130,10 +138,3 @@ C++:
 ```cpp
 static EHMDTrackingStatus UWindowsMixedRealityFunctionLibrary::GetControllerTrackingStatus(EControllerHand hand);
 ```
-# [4.26](#tab/426)
-
-To get the data for the hand rays, you should use the Get Motion Controller Data function from the previous section. The returned structure contains two parameters you can use to create a hand ray – **Aim Position** and **Aim Rotation**. These parameters form a ray directed by your elbow. You should take them and find a hologram being pointed by.
-
-Below is an example of determining whether a hand ray hits a Widget and setting a custom hit result:
-
-![Blueprint of get motion controller data function](../images/unreal-hand-tracking-img-04.png) 
