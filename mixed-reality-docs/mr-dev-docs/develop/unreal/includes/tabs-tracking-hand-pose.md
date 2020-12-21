@@ -1,3 +1,15 @@
+# [4.26](#tab/426)
+
+The hierarchy is described by `EHandKeypoint` enum:
+
+![Image of hand keypoint bluprint options](../images/hand-keypoint-bp.png)
+
+You can get all this data from a user’s hands using the **Get Motion Controller Data** function. That function returns an **XRMotionControllerData** structure. Below is a sample Blueprint script that parses the XRMotionControllerData structure to get hand joint locations and draws a debug coordinate system at each joint’s location.
+
+![Blueprint of get gaze data function connected to line trace by channel function](../images/unreal-hand-tracking-img-03.png)
+
+It's important to check if the structure is valid and that it's a hand. Otherwise, you may get undefined behavior in access to positions, rotations, and radii arrays.
+
 # [4.25](#tab/425)
 
 The `EWMRHandKeypoint` enum describes the Hand’s bone hierarchy. You can find each hand keypoint listed in your Blueprints:
@@ -76,15 +88,3 @@ Here's a breakdown of GetHandJointTransform's function parameters:
 * **Radius—radius of the base of the bone.
 * **Return Value—true if the bone is tracked this frame, false if the bone isn't tracked.
 
-
-# [4.26](#tab/426)
-
-The hierarchy is described by `EHandKeypoint` enum:
-
-![Image of hand keypoint bluprint options](../images/hand-keypoint-bp.png)
-
-You can get all this data from a user’s hands using the **Get Motion Controller Data** function. That function returns an **XRMotionControllerData** structure. Below is a sample Blueprint script that parses the XRMotionControllerData structure to get hand joint locations and draws a debug coordinate system at each joint’s location.
-
-![Blueprint of get gaze data function connected to line trace by channel function](../images/unreal-hand-tracking-img-03.png)
-
-It's important to check if the structure is valid and that it's a hand. Otherwise, you may get undefined behavior in access to positions, rotations, and radii arrays.

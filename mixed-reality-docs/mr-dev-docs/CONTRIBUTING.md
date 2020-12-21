@@ -43,12 +43,12 @@ Use the following workflow to make updates to *an existing article* via GitHub i
    ![Edit an article.](images/editpage.png)
 3. Edit the content of the article according to the ["Markdown basics"](#markdown-basics).
 4. Update metadata at the top of each article:
-   * title: Page title that appears in the browser tab when the article is being viewed. Page titles are used for SEO and indexing, so don't change the title unless necessary (though this is less critical before documentation goes public).
-   * description: Write a brief description of the article's content, which boosts SEO and discovery.
-   * author: If you're the primary owner of the page, add your GitHub alias here.
-   * ms.author: If you're the primary owner of the page, add your Microsoft alias here (you don't need @microsoft.com, just the alias).
-   * ms.date: Update the date if you're adding major content to the page, but not for fixes like clarification, formatting, grammar, or spelling.
-   * keywords: Keywords aid in SEO (search engine optimization). Add keywords, separated by a comma and a space, that are specific to your article, but no punctuation after the last keyword in your list. You don't need to add global keywords that apply to all articles, as those are managed elsewhere. 
+   * **title**: Page title that appears in the browser tab when the article is being viewed. Page titles are used for SEO and indexing, so don't change the title unless necessary (though this is less critical before documentation goes public).
+   * **description**: Write a brief description of the article's content, which boosts SEO and discovery.
+   * **author**: If you're the primary owner of the page, add your GitHub alias here.
+   * **ms.author**: If you're the primary owner of the page, add your Microsoft alias here (you don't need @microsoft.com, just the alias).
+   * **ms.date**: Update the date if you're adding major content to the page, but not for fixes like clarification, formatting, grammar, or spelling.
+   * **keywords**: Keywords aid in SEO (search engine optimization). Add keywords, separated by a comma and a space, that are specific to your article, but no punctuation after the last keyword in your list. You don't need to add global keywords that apply to all articles, as those are managed elsewhere. 
 5. When you've completed your article edits, scroll down and select **Propose file change**.
 6. On the next page, select **Create pull request** to merge your automatically created branch into 'master.'
 7. Repeat the steps above for the next article you want to edit.
