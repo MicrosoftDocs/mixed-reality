@@ -13,7 +13,7 @@ Furthermore, it is particularly important to utilize the Visual Profiler to trac
 > [!NOTE]
 > If building for Windows Mixed Reality, deploy with [MASTER configuration builds](https://docs.microsoft.com/windows/mixed-reality/exporting-and-building-a-unity-visual-studio-solution#building_and_deploying_a_unity_visual_studio_solution)
 
-![Visual Profiler Interface](../../Documentation/Images/Diagnostics/VisualProfiler.png)
+![Visual Profiler Interface](../features/Images/Diagnostics/VisualProfiler.png)
 
 ### Optimize window
 
@@ -23,7 +23,7 @@ Generally, these settings involve rendering configurations that are ideal for mi
 
 The recommended settings referenced below can be auto-configured in a Unity project by leveraging the MRTK Optimize Window.
 
-![MRTK Optimize Window Settings](../../Documentation/Images/Performance/OptimizeWindow_Settings.png)
+![MRTK Optimize Window Settings](../features/Images/Performance/OptimizeWindow_Settings.png)
 
 ### Unity Profiler
 
@@ -31,7 +31,7 @@ The [Unity Profiler](https://docs.unity3d.com/Manual/ProfilerWindow.html) is a u
 
 #### Time spent on the CPU
 
-![Example Unity Profiler Graph](../../Documentation/Images/Performance/UnityProfilerGraph.png)
+![Example Unity Profiler Graph](../features/Images/Performance/UnityProfilerGraph.png)
 
 To maintain comfortable frame rates (typically 60 frames per second), applications need to achieve a maximum frame time of 16.6 milliseconds of CPU time. To help identify the cost of MRTK functionality, the Microsoft Mixed Reality Toolkit contains a markers for inner loop (per frame) code paths. These markers use the following format, to assist in understanding the specific functionality being utilized:
 
@@ -42,7 +42,7 @@ To maintain comfortable frame rates (typically 60 frames per second), applicatio
 > [!Note]
 > There may be additional data following the method name. This is used to identify conditionally executed, potentially expensive functionality that may be avoided by small changes to application code.
 
-![Example Unity Profiler Hierarchy](../../Documentation/Images/Performance/UnityProfilerHierarchy.png)
+![Example Unity Profiler Hierarchy](../features/Images/Performance/UnityProfilerHierarchy.png)
 
 In this example, the hierarchy has been expanded to show that the UpdateHandData method of WindowsMixedRealityArticulatedHand class is consuming 0.44 ms of CPU time during the frame being analyzed. This data can be used to help determine if a performance issue is related to application code or from elsewhere in the system.
 
@@ -195,11 +195,11 @@ If estimating the rough performance tradeoff between one shader and another, it 
 
 Unity Standard shader statistics example
 
-![Unity Standard Shader Statistics](../../Documentation/Images/Performance/UnityStandardShader-Stats.PNG)
+![Unity Standard Shader Statistics](../features/Images/Performance/UnityStandardShader-Stats.PNG)
 
 MRTK Standard shader statistics example
 
-![MRTK Standard Shader Statistics](../../Documentation/Images/Performance/MRTKStandardShader-Stats.PNG)
+![MRTK Standard Shader Statistics](../features/Images/Performance/MRTKStandardShader-Stats.PNG)
 
 ## See also
 

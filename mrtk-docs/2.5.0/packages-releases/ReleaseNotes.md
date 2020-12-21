@@ -11,7 +11,7 @@
 
 The Mixed Reality Toolkit can now be managed using the Unity Package Manager.
 
-![MRTK Foundation UPM Package](Images/Packaging/MRTK_FoundationUPM.png)
+![MRTK Foundation UPM Package](../features/Images/Packaging/MRTK_FoundationUPM.png)
 
 > [!Note]
 > There are some manual steps required to import the MRTK UPM packages. Please review [Mixed Reality Toolkit and Unity Package Manager](usingupm.md) for more information. 
@@ -119,7 +119,7 @@ See [ARFoundation](CrossPlatform/UsingARFoundation.md#install-required-packages)
 - For those who will be using [Holographic Remoting with legacy XR pipeline](Tools/HolographicRemoting.md#legacy-xr-setup-instructions) on HoloLens 2, there is now a [manual step](Tools/HolographicRemoting.md#dotnetwinrt_present-define-written-into-player-settings) to perform.
 
 ###  Bounds control graduated
-![Bounds control](../Documentation/Images/BoundsControl/MRTK_BoundsControl_Main.png)
+![Bounds control](../features/Images/BoundsControl/MRTK_BoundsControl_Main.png)
 [Bounds control](README_BoundsControl.md) graduated out of experimental and comes with a bunch of new features and tons of bug fixes.
 Here a list of the highlights of this update:
 - properties are split into configurations which makes it easier to set up bounds control
@@ -138,7 +138,7 @@ Constraints can now be used by both, bounds control and object manipulator via t
 Additionally to the automatic behavior constraint manager also comes with a manual mode that lets users decide which constraint should be processed.
 For this reason the way we display constraints in the property inspector changed a bit. 
 
-<img src="../Documentation/Images/ConstraintManager/ManualSelection.png" width="600">
+<img src="../features/Images/ConstraintManager/ManualSelection.png" width="600">
 
 The constraints that are applied to the component are now shown as a list in the constraint manager component whereas the component using the constraint manager (either [bounds control](README_BoundsControl.md#constraint-system) or [object manipulator](README_ObjectManipulator.md#constraint-manager)) will now show the selected constraint manager and mode (auto or manual). 
 For more information read the [constraint manager](README_ConstraintManager.md) section in our docs.
@@ -159,7 +159,7 @@ Updated pulse shader example for the spatial mesh to match HoloLens 2's shell be
 ![Pulse on air-tap](https://user-images.githubusercontent.com/13754172/90310153-d0536180-df29-11ea-939a-e9572d4f5670.gif)
 
 ### Elastic system - Experimental
-![Elastic System2](Images/Elastics/Elastics_Main.gif)
+![Elastic System2](../features/Images/Elastics/Elastics_Main.gif)
 
 MRTK now comes with an [elastic simulation system](Elastics/ElasticSystem.md) that includes a wide variety of extensible and flexible subclasses, offering bindings for 4-dimensional quaternion springs, 3-dimensional volume springs and simple linear spring systems.
 
@@ -272,7 +272,7 @@ To resolve, please ensure that:
 - **Window** > **Package Manager** has one or more XR packages installed
 - **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** and make a selection for **Audio Spatializer**
 
-  ![Select Audio Apatializer](Images/ReleaseNotes/SpatializerSelection.png)
+  ![Select Audio Apatializer](../features/Images/ReleaseNotes/SpatializerSelection.png)
 
 
 ### NullReferenceException: Object reference not set to an instance of an object (SceneTransitionService.Initialize)

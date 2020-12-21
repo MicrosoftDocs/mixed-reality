@@ -42,7 +42,7 @@ These packages are released and supported by Microsoft from source code in the [
 
 The Mixed Reality Toolkit Foundation is the set of code that enables your application to leverage common functionality across Mixed Reality Platforms.
 
-<img src="../../Documentation/Images/Input/MRTK_Package_Foundation.png" width="350px" style="display:block;">  
+<img src="../features/Images/Input/MRTK_Package_Foundation.png" width="350px" style="display:block;">  
 <sup>MRTK Foundation Package</sup>
 
 The MRTK Foundation package contains the following.
@@ -129,7 +129,7 @@ The optional Microsoft.MixedRealityToolkit.TestUtilities package is a collection
 The examples package contains demos, sample scripts, and sample scenes that exercise functionality in the foundation package. This package contains the [HandInteractionExample scene](../README_HandInteractionExamples.md) (pictured below) which contains sample objects
 that respond to various types of hand input (articulated and non-articulated).
 
-![HandInteractionExample scene](../Images/MRTK_Examples.png)
+![HandInteractionExample scene](../features/Images/MRTK_Examples.png)
 
 This package also contains eye tracking demos, which are [documented here](../EyeTracking/EyeTracking_ExamplesOverview.md)
 
