@@ -10,30 +10,30 @@ keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Trouble
 
 ## My headset has stopped tracking
 
-Make sure the lights are on, and that there isn't anything obstructing the inside-out tracking cameras on the front of your headset. If tracking is lost, it can take a few seconds to resume. If it doesn't resume, restart the Windows Mixed Reality Portal.
+Make sure the lights are on, and that there isn't anything obstructing the inside-out tracking cameras on the front of your headset. If tracking is lost, it can take a few seconds to resume. Restart the Windows Mixed Reality Portal is tracking doesn't restart.
 
 ## I can look around but I can't translate (I'm stuck in 3DOF)
 
-This means that the tracking system cannot generate pose, or the application has stopped using new pose data to render. Check the following:
+This means that the tracking system can't generate pose, or the application has stopped using new pose data to render. To fix the issue:
 
 * Make sure the room has enough light.
 * Make sure the room has enough details to track.
 * Unplug the device, close Windows Mixed Reality, and plug in the device again.
 * If the message persists, contact [customer support](https://support.microsoft.com/)
 
-## The view in the HMD is completely frozen
+## The view in the HMD is frozen
 
 This usually means the application or a system level component has failed. Try to:
 
 1. Press the "home" button to leave the application.
-2. Unplug the device, close MRP and plug the device back in.
+2. Unplug the device, close MRP, and plug the device back in.
 3. Restart the PC.
 
-## The world briefly froze and perhaps tilted or flipped upside down before returning to normal
+## The world briefly froze and tilted or flipped upside down before returning to normal
 
-This could be caused by an application or system level component hitting a fatal error, or a temporary lack of memory or CPU resources. To check:
+This could be caused by an application or system level component hitting a fatal error or a temporary lack of memory or CPU resources. To check:
 
-1. Open Task Manager and ensure that at least 20% of the CPU is free, 400MB of memory is available and disk IO should be below 80%.
+1. Open Task Manager and ensure that at least 20% of the CPU is free, 400 MB of memory is available and disk IO should be below 80%.
 2. Go to **Event Viewer > Windows Logs > Application** to look for any errors from around the time of the freeze. Look for anything that refers to HoloLens sensors, Mixed Reality, or the application that you were running around that time. Those logs might explain what caused the failure.
 3. Restart the PC if the problem persists.
 
