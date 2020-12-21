@@ -12,7 +12,7 @@ appliesto:
 
 # Windows Mixed Reality PC Check app
 
-The **[Windows Mixed Reality PC Check](windows-mixed-reality-pc-check-app.md)** app is the best way to make sure your PC is ready to run Windows Mixed Reality.
+The **[Windows Mixed Reality PC Check](https://www.microsoft.com/store/p/windows-mixed-reality-pc-check/9nzvl19n7cnc)** app is the best way to make sure your PC is ready to run Windows Mixed Reality. The Windows Mixed Reality PC Check app only works on PCs with at least Windows 10 Version 1607 installed. To check your version of Windows, type "winver" in the search bar and run the command. For Windows 10 versions earlier than 1607, the app will still show up in the Store, but you'll get an error when you try to install.
 
 <a href="https://www.microsoft.com/store/productid/9NZVL19N7CNC"><img alt="Download Windows Mixed Reality PC Check app" src="images/WMR-PC-Check-app.png"/></a>
 
