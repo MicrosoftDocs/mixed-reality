@@ -74,7 +74,7 @@ For details on the packages and their contents, please see [MRTK Packages](Packa
 > Android and iOS development require additional package installations. For more information, see [How to configure MRTK for iOS and Android](CrossPlatform/UsingARFoundation.md).
 After importing the Foundation package, you may see a prompt similar to the following:
 
-![UnitySetupPrompt](../Documentation/Images/MRTK_UnitySetupPrompt.png)
+![UnitySetupPrompt](features/Images/MRTK_UnitySetupPrompt.png)
 
 MRTK is attempting to set up your project for building Mixed Reality solutions by doing the following:
 
@@ -95,7 +95,7 @@ To create a **HoloLens application**, switch to the Universal Windows Platform:
 1. Select **Universal Windows Platform** in the **Platform** list
 1. Click the **Switch Platform** button
 
-![Switch Platform](../Documentation/Images/getting_started/SwitchPlatform.png)
+![Switch Platform](features/Images/getting_started/SwitchPlatform.png)
 
 >[!NOTE]
 > The Mixed Reality Toolkit will prompt to apply recommended changes to the project when the platform is selected. Whenever the platform is switched, the appropriate settings will be checked and prompted, if necessary.
@@ -108,7 +108,7 @@ To create a **HoloLens application**, switch to the Universal Windows Platform:
 
 1. From the menu bar, select Mixed Reality Toolkit -> Add to Scene and Configure
 
-    ![Configure to scene](../Documentation/Images/MRTK_ConfigureScene.png)
+    ![Configure to scene](features/Images/MRTK_ConfigureScene.png)
 
     The inspector will now show the currently active MRTK configuration profile and the profile selection dropdown, where the default profile is already preselected.
     Profiles configure the behavior of MRTK core components and are described in more detail in the [profiles](Profiles/Profiles.md) article.
@@ -121,7 +121,7 @@ To create a **HoloLens application**, switch to the Universal Windows Platform:
 
     You will then see the following in your Scene hierarchy:
 
-    ![MRTK Scene Setup](../Documentation/Images/MRTK_SceneSetup.png)
+    ![MRTK Scene Setup](features/Images/MRTK_SceneSetup.png)
 
     Which contains the following:
 
@@ -154,7 +154,7 @@ Check out [MRTK 101: How to use Mixed Reality Toolkit Unity for Basic Interactio
 
 The [hand interaction examples scene](README_HandInteractionExamples.md) article is a great place to learn more about the UX controls and interactions in MRTK.
 
-[![HandInteractionExample scene](../Documentation/Images/MRTK_Examples.png)](README_HandInteractionExamples.md)
+[![HandInteractionExample scene](features/Images/MRTK_Examples.png)](README_HandInteractionExamples.md)
 
 To try the hand interaction scene, do the following steps.
 
@@ -162,7 +162,7 @@ To try the hand interaction scene, do the following steps.
 
 1. You may get a prompt asking you to import "TMP Essentials".
 
-    ![TMP Essentials](../Documentation/Images/getting_started/MRTK_GettingStarted_TMPro.png)
+    ![TMP Essentials](features/Images/getting_started/MRTK_GettingStarted_TMPro.png)
 
     If you get such a prompt, select the "Import TMP essentials" button. "TMP Essentials" refers to Text Mesh Pro plugin, which some of the MRTK examples use for improved text rendering. (See [Text in Unity](https://docs.microsoft.com/windows/mixed-reality/text-in-unity) for more detailed information)
 
