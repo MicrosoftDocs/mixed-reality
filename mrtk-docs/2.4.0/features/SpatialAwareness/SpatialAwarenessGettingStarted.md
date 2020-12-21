@@ -1,6 +1,6 @@
 # Spatial awareness
 
-![Spatial Awareness](../../Documentation/Images/SpatialAwareness/MRTK_SpatialAwareness_Main.png)
+![Spatial Awareness](../Images/SpatialAwareness/MRTK_SpatialAwareness_Main.png)
 
 The Spatial Awareness system provides real-world environmental awareness in mixed reality applications. When introduced on Microsoft HoloLens, Spatial Awareness provided a collection of meshes, representing the geometry of the environment, which allowed for compelling interactions between holograms and the real-world.
 
@@ -29,15 +29,15 @@ The Mixed Reality Toolkit ships with a few default pre-configured profiles. Some
 
 1. Select the MixedRealityToolkit object in the scene hierarchy to open in the Inspector Panel.
 
-    ![MRTK Configured Scene Hierarchy](../../Documentation/Images/MRTK_ConfiguredHierarchy.png)
+    ![MRTK Configured Scene Hierarchy](../Images/MRTK_ConfiguredHierarchy.png)
 
 1. Navigate to the *Spatial Awareness System* section and check *Enable Spatial Awareness System*
 
-    ![Enable Spatial Awareness](../../Documentation/Images/SpatialAwareness/MRTKConfig_SpatialAwareness.png)
+    ![Enable Spatial Awareness](../Images/SpatialAwareness/MRTKConfig_SpatialAwareness.png)
 
 1. Select the desired Spatial Awareness system implementation type. The [`MixedRealitySpatialAwarenessSystem`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.MixedRealitySpatialAwarenessSystem) is the default provided.
 
-    ![Select the Spatial Awareness System Implementation](../../Documentation/Images/SpatialAwareness/SpatialAwarenessSelectSystemType.png)
+    ![Select the Spatial Awareness System Implementation](../Images/SpatialAwareness/SpatialAwarenessSelectSystemType.png)
 
 ### Register observers
 
@@ -47,12 +47,12 @@ The Spatial Awareness system is similar in that data providers supply the system
 
 1. Open or expand the *Spatial Awareness System profile*
 
-    ![Spatial Awareness System Profile](../../Documentation/Images/SpatialAwareness/SpatialAwarenessProfile.png)
+    ![Spatial Awareness System Profile](../Images/SpatialAwareness/SpatialAwarenessProfile.png)
 
 1. Click the *"Add Spatial Observer"* button
 1. Select the desired *Spatial Observer implementation type*
 
-    ![Select the Spatial Observer Implementation](../../Documentation/Images/SpatialAwareness/SpatialAwarenessSelectObserver.png)
+    ![Select the Spatial Observer Implementation](../Images/SpatialAwareness/SpatialAwarenessSelectObserver.png)
 
 1. [Modify configuration properties on the observer](ConfiguringSpatialAwarenessMeshObserver.md) as necessary
 

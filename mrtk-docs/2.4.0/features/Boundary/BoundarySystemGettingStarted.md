@@ -20,15 +20,15 @@ The following steps presume use of the MixedRealityToolkit object. Steps require
 
 1. Select the MixedRealityToolkit object in the scene hierarchy.
 
-    ![MRTK Configured Scene Hierarchy](../../Documentation/Images/MRTK_ConfiguredHierarchy.png)
+    ![MRTK Configured Scene Hierarchy](../Images/MRTK_ConfiguredHierarchy.png)
 
 1. Navigate the Inspector panel to the Boundary System section and check Enable
 
-    ![Enable the Boundary System](../../Documentation/Images/Boundary/MRTKConfig_Boundary.png)
+    ![Enable the Boundary System](../Images/Boundary/MRTKConfig_Boundary.png)
 
 1. Select the Boundary System implementation. The default class implementation provided by the MRTK is the [`MixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.MixedRealityBoundarySystem)
 
-    ![Select the Boundary System Implementation](../../Documentation/Images/Boundary/BoundarySelectSystemType.png)
+    ![Select the Boundary System Implementation](../Images/Boundary/BoundarySelectSystemType.png)
 
 > [!NOTE]
 > All Boundary System implementation must extend the [`IMixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.IMixedRealityBoundarySystem)
@@ -37,7 +37,7 @@ The following steps presume use of the MixedRealityToolkit object. Steps require
 
 The [Boundary System uses a configuration profile](ConfiguringBoundaryVisualization.md) to specify which boundary components are to be displayed and to configure their appearance.
 
-![Boundary Visualization Options](../../Documentation/Images/Boundary/BoundaryVisualizationProfile.png)
+![Boundary Visualization Options](../Images/Boundary/BoundaryVisualizationProfile.png)
 
 > [!NOTE]
 > Users of the default profile, `DefaultMixedRealityBoundaryVisualizationProfile` (Assets/MRTK/SDK/Profiles) will have the boundary system pre-configured to display a floor plane, the play area and the tracked area.

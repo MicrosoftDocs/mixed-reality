@@ -1,6 +1,6 @@
 # Progress Indicators
 
-![Progress Indicators](../Documentation/Images/ProgressIndicator/MRTK_ProgressIndicator_Main.png)
+![Progress Indicators](Images/ProgressIndicator/MRTK_ProgressIndicator_Main.png)
 
 ## Example scene
 

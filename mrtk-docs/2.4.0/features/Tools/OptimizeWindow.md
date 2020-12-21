@@ -10,7 +10,7 @@ The *Performance Target* instructs the optimize tool on what kind of device endp
 - *VR Standalone* are mobile-class devices, such as the Oculus Go or Quest
 - *VR Tethered* are PC-powered devices, such as the Samsung Odyssey, Oculus Rift or HTC Vive etc.
 
-![MRTK Optimize Window Performance Target](../../Documentation/Images/Performance/OptimizeWindowPerformanceTarget.jpg)
+![MRTK Optimize Window Performance Target](../Images/Performance/OptimizeWindowPerformanceTarget.jpg)
 
 ## Setting optimizations
 
@@ -18,7 +18,7 @@ The settings optimization tab covers some of the important rendering configurati
 
 A green check icon means that an optimal value has been configured in the project/scene for this particular setting. A yellow warning icon indicates the current configuration can be improved. Clicking the associated button in a given section will auto-configure that setting in the Unity project/scene to a more optimal value.
 
-![MRTK Optimize Window Settings](../../Documentation/Images/Performance/OptimizeWindow_Settings.png)
+![MRTK Optimize Window Settings](../Images/Performance/OptimizeWindow_Settings.png)
 
 ### Single Pass Instanced rendering
 
@@ -48,7 +48,7 @@ Furthermore, for *AR Headsets*, it is recommended to utilize a 16-bit depth form
 
 The *Scene Analysis* tab is designed to inform developers on which elements currently in the scene will likely have the most impact on performance.
 
-![MRTK Optimize Window Settings](../../Documentation/Images/Performance/OptimizeWindow_SceneAnalysis.png)
+![MRTK Optimize Window Settings](../Images/Performance/OptimizeWindow_SceneAnalysis.png)
 
 ### Lighting analysis
 
@@ -68,7 +68,7 @@ The [Unity Standard shader](https://docs.unity3d.com/Manual/shader-StandardShade
 
 The *Shader Analysis* tab scans the current project's Asset folder for materials using the Unity Standard shader or if desired, all materials not using Mixed Reality Toolkit provided shaders. Once discovered, developers can convert all materials or convert individually using the appropriate buttons.
 
-![MRTK Optimize Window Settings](../../Documentation/Images/Performance/OptimizeWindow_ShaderAnalysis.png)
+![MRTK Optimize Window Settings](../Images/Performance/OptimizeWindow_ShaderAnalysis.png)
 
 ## See also
 
