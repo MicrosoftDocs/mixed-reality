@@ -46,11 +46,11 @@ The [Leap Motion Data Provider](CrossPlatform/LeapMotionMRTK.md) enables articul
 
 A [Leap Motion Controller](https://www.ultraleap.com/product/leap-motion-controller/) is required to use this data provider.
 
-![LeapMotionIntroGif](Images/CrossPlatform/LeapMotion/LeapMotionSideBySide2.gif)
+![LeapMotionIntroGif](../features/Images/CrossPlatform/LeapMotion/LeapMotionSideBySide2.gif)
 
 **Migration window**
 
-![Migration window](Images/MigrationWindow/MRTK_Migration_Window.png)
+![Migration window](../features/Images/MigrationWindow/MRTK_Migration_Window.png)
 
 MRTK now comes with a migration tool that will help you upgrade deprecated components to their newer
 versions and to keep existing code working even as MRTK makes breaking changes.
@@ -88,7 +88,7 @@ This version of MRTK modifies the layout of the MRTK folder structure. This chan
 
 **MRTK Toolbox**
 
-![MRTK Toolbox](Images/Tools/MRTKToolboxWindow.png)
+![MRTK Toolbox](../features/Images/Tools/MRTKToolboxWindow.png)
 
 The [MRTK Toolbox](README_Toolbox.md) is a Unity editor window utility that makes it easy to discover and spawn MRTK UX prefab components into the current scene. Items can be filtered in view by using the search bar at the top of the window. The toolbox window is designed to spawn MRTK out-of-box prefabs into the current scene.
 
@@ -96,7 +96,7 @@ The [MRTK Toolbox](README_Toolbox.md) is a Unity editor window utility that make
 
 [Tap to Place](README_TapToPlace.md) is a far interaction component used to easily place a game object on surface. Tap to Place uses a combination of two clicks and head movement to place an object.
 
-![TapToPlace](Images/Solver/TapToPlace/TapToPlaceIntroGif.gif)
+![TapToPlace](../features/Images/Solver/TapToPlace/TapToPlaceIntroGif.gif)
 
 **Button Config Helper added to Pressable Buttons**
 ![Button Config Helper](https://user-images.githubusercontent.com/9789716/70167111-e3175600-167a-11ea-9c52-444509c06105.gif)
@@ -120,7 +120,7 @@ Hand menu has been adapted in many applications. One of the biggest issue we fou
 ![0416_HandMenu_04](https://user-images.githubusercontent.com/13754172/79508227-f9043280-7fed-11ea-995f-ac3cfe42fe65.gif)
 
 **Dialog (Experimental)**
-<br/><img src="Images/Dialog/MRTK_UX_Dialog_Main.png" width="450">
+<br/><img src="../features/Images/Dialog/MRTK_UX_Dialog_Main.png" width="450">
 
 Dialog UI has been ported over from HoloToolkit with new HoloLens 2 shell-style design updates.
 
@@ -136,7 +136,7 @@ the MRTK input system that can be used to help optimize applications.
 
 Markers take the format of "[MRTK] ClassWithoutNamespace.Method".
 
-![Profiler Markers](Images/ReleaseNotes/ProfilerMarkers.png)
+![Profiler Markers](../features/Images/ReleaseNotes/ProfilerMarkers.png)
 
 **WindowsApiChecker: IsMethodAvailable(), IsPropertyAvailable() and IsTypeAvailable()**
 
@@ -186,11 +186,11 @@ The Button Config Helper is an editor feature that makes it easier to customize 
 
 The audio spatializer can now be specified in the MRTK configuration dialog. Installing new spatializers, such as the [Microsoft Spatializer](https://www.nuget.org/packages/Microsoft.SpatialAudio.Spatializer.Unity/), will re-prompt to allow for easy selection.
 
-![MRTK Configuration Select Spatializer](Images/ReleaseNotes/SpatializerSelection.png)
+![MRTK Configuration Select Spatializer](../features/Images/ReleaseNotes/SpatializerSelection.png)
 
 **Object manipulator graduated to SDK**
 
-![Object manipulator](../Documentation/Images/ManipulationHandler/MRTK_Manipulation_Main.png)
+![Object manipulator](../features//Images/ManipulationHandler/MRTK_Manipulation_Main.png)
 
 ObjectManipulator now graduated to SDK and is no longer an experimental feature. This control is replacing the existing ManipulationHandler class which is now deprecated. ObjectManipulator comes with a new more flexible constraint system and correctly responds to physics. A full feature list and guide how to set up can be found in [object manipulator documentation](README_ObjectManipulator.md).
 Users can take advantage of the new [migration window](Tools/MigrationWindow.md) to upgrade their existing gameobject using ManipulationHandler to ObjectManipulator

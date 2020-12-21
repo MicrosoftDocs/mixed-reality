@@ -1,4 +1,4 @@
-<img src="../Images/MRTK_Logo_Rev.png">
+<img src="../features/Images/MRTK_Logo_Rev.png">
 
 # Documentation guidelines
 

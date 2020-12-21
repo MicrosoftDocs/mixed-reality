@@ -47,6 +47,7 @@ For the smoothest upgrade path, please use the following steps.
     - (Optional) Extensions
     > [!NOTE]
     > If additional extensions had been installed, they may need to be re-imported.
+    
     - (Optional) Examples
 1. Close Unity and delete the **Library** folder. This step is necessary to force Unity to refresh its
    asset database and reconcile existing custom profiles.
@@ -306,7 +307,7 @@ The `NearInteractionTouchableSurface` class has been added and now serves as the
 
 The hand mesh and joint visualizations now have a separate editor and player settings. The hand tracking profile has been updated to allow for setting these visualizations to; Nothing, Everything, Editor or Player.
 
-![Hand visualization modes](Images/ReleaseNotes/HandTrackingVisualizationModes.png)
+![Hand visualization modes](../features/Images/ReleaseNotes/HandTrackingVisualizationModes.png)
 
 Custom hand tracking profiles may need to be updated to work correctly with version 2.1.0.
 
@@ -393,11 +394,11 @@ Using the new CoreSystem class will ensure that your application code will not n
 
 With the addition of the IMixedRealityRaycastProvider, the input system configuration profile was changed. If you have a custom profile, you may receive the errors in the following image when you run your application.
 
-![Selecting the Raycast provider](Images/ReleaseNotes/UnableToRegisterRaycastProvider.png)
+![Selecting the Raycast provider](../features/Images/ReleaseNotes/UnableToRegisterRaycastProvider.png)
 
 To fix these, please add an IMixedRealityRaycastProvider instance to your input system profile.
 
-![Selecting the Raycast provider](Images/ReleaseNotes/SelectRaycastProvider.png)
+![Selecting the Raycast provider](../features/Images/ReleaseNotes/SelectRaycastProvider.png)
 
 **Event System**
 

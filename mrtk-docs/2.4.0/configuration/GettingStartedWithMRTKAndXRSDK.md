@@ -22,7 +22,7 @@ For MRTK 2.3, Windows Mixed Reality is supported on XR SDK.
 1. Ensure that Initialize XR on Startup is checked.
 1. (**_Optional_**) Click on the Windows Mixed Reality tab under XR Plug-in Management and create a custom settings profile to change the defaults. If the list of settings are already there, no profile needs to be created.
 
-![Plugin management](Images/XRSDK/PluginManagement.png)
+![Plugin management](../features/Images/XRSDK/PluginManagement.png)
 
 ### Required in MRTK
 
@@ -34,41 +34,41 @@ To migrate an existing profile to XR SDK, the following services and data provid
 
 From [`WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityCameraSettings)
 
-![Legacy camera settings](Images/XRSDK/CameraSystemLegacy.png)
+![Legacy camera settings](../features/Images/XRSDK/CameraSystemLegacy.png)
 
 to [`XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings) **and** [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings)
 
-![XR SDK camera settings](Images/XRSDK/CameraSystemXRSDK.png)
+![XR SDK camera settings](../features/Images/XRSDK/CameraSystemXRSDK.png)
 
 #### Input
 
 From [`WindowsMixedReality.Input.WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager)
 
-![Legacy input settings](Images/XRSDK/InputSystemWMRLegacy.png)
+![Legacy input settings](../features/Images/XRSDK/InputSystemWMRLegacy.png)
 
 to [`XRSDK.WindowsMixedReality.WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityDeviceManager)
 
-![XR SDK input settings](Images/XRSDK/InputSystemWMRXRSDK.png)
+![XR SDK input settings](../features/Images/XRSDK/InputSystemWMRXRSDK.png)
 
 #### Boundary
 
 From [`MixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.MixedRealityBoundarySystem)
 
-![Legacy boundary settings](Images/XRSDK/BoundarySystemLegacy.png)
+![Legacy boundary settings](../features/Images/XRSDK/BoundarySystemLegacy.png)
 
 to  [`XRSDKBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.XRSDK.XRSDKBoundarySystem)
 
-![XR SDK boundary settings](Images/XRSDK/BoundarySystemXRSDK.png)
+![XR SDK boundary settings](../features/Images/XRSDK/BoundarySystemXRSDK.png)
 
 #### Spatial awareness
 
 From [`WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver)
 
-![Legacy spatial awareness settings](Images/XRSDK/SpatialAwarenessLegacy.png)
+![Legacy spatial awareness settings](../features/Images/XRSDK/SpatialAwarenessLegacy.png)
 
 to [`XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver)
 
-![XR SDK spatial awareness settings](Images/XRSDK/SpatialAwarenessXRSDK.png)
+![XR SDK spatial awareness settings](../features/Images/XRSDK/SpatialAwarenessXRSDK.png)
 
 #### Controller mappings
 
