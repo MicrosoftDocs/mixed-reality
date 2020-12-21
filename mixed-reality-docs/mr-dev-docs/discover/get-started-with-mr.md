@@ -66,6 +66,42 @@ Before you dive into application design or development, you need to understand w
 
 :::row:::
     :::column:::
+       [![Mercedes](images/mercedes.png)](https://customers.microsoft.com/story/839709-mercedes-benz-automotive-holoLens-en-usa)
+    :::column-end:::
+    :::column span="2":::
+        ### [Mercedes-Benz is transforming the service workforce with HoloLens 2 and Dynamics 365 Remote Assist](https://customers.microsoft.com/story/839709-mercedes-benz-automotive-holoLens-en-usa)
+        Mercedes-Benz USA is using HoloLens 2 and Dynamics 365 Remote Assist to improve service technician efficiency, reduce time to problem solution, and reduce the cost and environmental impact of service-related travel.
+    :::column-end:::
+:::row-end:::
+
+---
+
+:::row:::
+    :::column:::
+       [![BHP](images/bhp.png)](https://customers.microsoft.com/story/850776-bhp-energy-dynamics-365-hololens)
+    :::column-end:::
+    :::column span="2":::
+        ### [BHP increases the pace of innovation despite lockdown with mixed reality and IoT](https://customers.microsoft.com/story/850776-bhp-energy-dynamics-365-hololens)
+        Despite the impact and restrictions due to COVID-19, BHP is delivering support and training to field workers from thousands of miles away with HoloLens 2 and Dynamics 365 Remote Assist.
+    :::column-end:::
+:::row-end:::
+
+---
+
+:::row:::
+    :::column:::
+       [![MediView](images/mediview.jpeg)](https://customers.microsoft.com/story/848966-mediview-mcs-story)
+    :::column-end:::
+    :::column span="2":::
+        ### [Healthcare startup cuts time to market by up to 70%, despite pandemic](https://customers.microsoft.com/story/848966-mediview-mcs-story)
+        Healthcare startup Mediview has developed a remarkable product that uses 3D holograms projected either directly on top of the patient’s anatomy or hovering above it to help surgeons see the patients internal anatomy and guide them through procedures.
+    :::column-end:::
+:::row-end:::
+
+---
+
+:::row:::
+    :::column:::
        [![Bentley](images/Bentley-Synchro1.jpg)](https://binged.it/31AR3kP)
     :::column-end:::
     :::column span="2":::
