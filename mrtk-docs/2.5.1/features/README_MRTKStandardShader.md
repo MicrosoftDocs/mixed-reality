@@ -1,6 +1,6 @@
 # MRTK Standard Shader
 
-![Standard shader examples](../Documentation/Images/MRTKStandardShader/MRTK_StandardShader.jpg)
+![Standard shader examples](Images/MRTKStandardShader/MRTK_StandardShader.jpg)
 
 MRTK Standard shading system utilizes a single, flexible shader that can achieve visuals similar to Unity's Standard Shader, implement [Fluent Design System](https://www.microsoft.com/design/fluent/) principles, and remain performant on mixed reality devices.
 

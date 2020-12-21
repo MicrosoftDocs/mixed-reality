@@ -1,6 +1,6 @@
 # Sliders
 
-![Slider example](../Documentation/Images/Slider/MRTK_UX_Slider_Main.jpg)
+![Slider example](Images/Slider/MRTK_UX_Slider_Main.jpg)
 
 Sliders are UI components that allow you to continuously change a value by moving a slider on a track. Currently the Pinch Slider can be moved by directly grabbing the slider, either directly or at a distance. Sliders work on AR and VR, using motion controllers, hands, or Gesture + Voice.
 
@@ -36,7 +36,7 @@ Sliders expose the following events:
 
 You can directly move the starting and end points of the slider by moving the handles in the Scene:
 
-![Sliders Config](../Documentation/Images/Sliders/MRTK_Sliders_Setup.png)
+![Sliders Config](Images/Sliders/MRTK_Sliders_Setup.png)
 
 You can also specify the axis (in local space) of the slider via the _Slider Axis_ field
 

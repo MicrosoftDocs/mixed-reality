@@ -2,7 +2,7 @@
 
 ## General settings
 
-![Diagnostics General Settings](../../Documentation/Images/Diagnostics/DiagnosticsGeneralSettings.png)
+![Diagnostics General Settings](../Images/Diagnostics/DiagnosticsGeneralSettings.png)
 
 ### Enable verbose logging
 
@@ -23,7 +23,7 @@ When disabled, all configured diagnostic options will be hidden.
 
 ## Profiler settings
 
-![Diagnostics Profiler Settings](../../Documentation/Images/Diagnostics/DiagnosticsProfilerSettings.png)
+![Diagnostics Profiler Settings](../Images/Diagnostics/DiagnosticsProfilerSettings.png)
 
 ### Show profiler
 

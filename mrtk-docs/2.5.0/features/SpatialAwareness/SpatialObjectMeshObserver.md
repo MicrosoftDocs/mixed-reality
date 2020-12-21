@@ -17,7 +17,7 @@ This guide will walk through setting up a *Spatial Object Mesh Observer*. There 
 1. Open or expand the *Spatial Awareness System* tab
 1. Click on *"Add Spatial Observer"* button
 
-    ![Add Spatial Observer](../../Documentation/Images/SpatialAwareness/AddObserver.png)
+    ![Add Spatial Observer](../Images/SpatialAwareness/AddObserver.png)
 
 1. Select the *SpatialObjectMeshObserver* type
 
@@ -26,7 +26,7 @@ This guide will walk through setting up a *Spatial Object Mesh Observer*. There 
 1. Select the desired *Spatial Mesh Object*. By default, the observer is configured with an example model. This model was created using a Microsoft HoloLens but it is possible to [create a new scan mesh object](#acquiring-environment-scans).
 1. [Configure rest of the Mesh Observer profile properties](ConfiguringSpatialAwarenessMeshObserver.md)
 
-    ![Select the Mesh Object](../../Documentation/Images/SpatialAwareness/ObjectObserverProfile.png)
+    ![Select the Mesh Object](../Images/SpatialAwareness/ObjectObserverProfile.png)
 
 ### Spatial object mesh observer profile notes
 
