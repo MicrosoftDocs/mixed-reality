@@ -53,7 +53,7 @@ if (MixedRealityServiceRegistry.TryGetService<INewService>(out service))
 
 ## See also
 
-- [Systems, extension services and data providers](../Architecture/SystemsExtensionsProviders.md)
+- [Systems, extension services and data providers](../../architecture/SystemsExtensionsProviders.md)
 - [Extension service creation wizard](../Tools/ExtensionServiceCreationWizard.md)
 - [IMixedRealityExtensionService](xref:Microsoft.MixedReality.Toolkit.IMixedRealityExtensionService)
 - [MixedRealityServiceRegistry](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry)

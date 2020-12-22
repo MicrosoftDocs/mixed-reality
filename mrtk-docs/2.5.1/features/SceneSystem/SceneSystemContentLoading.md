@@ -126,6 +126,6 @@ Trees | Vegetation | •
 
 ## Editor behavior
 
-You can perform all these operations in editor and in play mode by using the Scene System's [service inspector.](../MixedRealityConfigurationGuide.md#editor-utilities) In edit mode scene loads will be instantaneous, while in play mode you can observe loading progress and use [activation tokens.](SceneSystemLoadProgress.md)
+You can perform all these operations in editor and in play mode by using the Scene System's [service inspector.](../../out-of-scope/MixedRealityConfigurationGuide.md#editor-utilities) In edit mode scene loads will be instantaneous, while in play mode you can observe loading progress and use [activation tokens.](SceneSystemLoadProgress.md)
 
 ![MRTK_SceneSystemServiceInspector](../Images/SceneSystem/MRTK_SceneSystemServiceInspector.PNG)
