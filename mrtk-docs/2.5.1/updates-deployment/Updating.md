@@ -9,7 +9,7 @@
 
 ## Upgrading to a new version of MRTK
 
-*It is strongly recommended to run the [migration tool](Tools/MigrationWindow.md) after getting the MRTK update*
+*It is strongly recommended to run the [migration tool](../features/Tools/MigrationWindow.md) after getting the MRTK update*
 to auto-fix and upgrade from deprecated components and adjust to breaking changes. The migration tool is part of
 the **Tools** package.
 
@@ -54,7 +54,7 @@ For the smoothest upgrade path, please use the following steps.
     - Select **MixedRealityToolkit -> Add to Scene and Configure**
     - Select **MixedRealityToolkit -> Utilities -> Update -> Controller Mapping Profiles** (only needs to be done once)
             - This will update any custom controller mapping profiles with updated axes and data, while leaving your custom-assigned input actions intact
-1. Run the [migration tool](Tools/MigrationWindow.md) and run the tool on the *Full Project* to ensure that all of your code is updated to the latest.
+1. Run the [migration tool](../features/Tools/MigrationWindow.md) and run the tool on the *Full Project* to ensure that all of your code is updated to the latest.
    The migration window contains a number of different migration handlers, which must each be run on their own. This step involves:
    - Select the first migration handler from the **Migration Handler Selection** dropdown.
    - Click the "Full Project" button.
@@ -93,13 +93,13 @@ uses hard coded paths to MRTK resources, they will need to be updated per the fo
 
 This version of MRTK modifies the steps required for eye gaze setup. The _'IsEyeTrackingEnabled'_ checkbox can be found in the gaze settings of the input pointer profile. Checking this box will enable eye based gaze, rather then the default head based gaze.
 
-For more information on these changes and complete instructions for eye tracking setup, please see the [eye tracking](EyeTracking/EyeTracking_BasicSetup.md) article.
+For more information on these changes and complete instructions for eye tracking setup, please see the [eye tracking](../features/EyeTracking/EyeTracking_BasicSetup.md) article.
 
 ### Eye gaze pointer behavior in 2.4.0
 
 The eye gaze default pointer behavior have been modified to match the head gaze default pointer behavior. An eye gaze pointer will automatically be suppressed once a hand is detected. The eye gaze pointer will become visible again after saying "Select".
 
-Details about gaze and hand setups can be found in the [eyes and hands](EyeTracking/EyeTracking_EyesAndHands.md#how-to-keep-gaze-pointer-always-on) article.
+Details about gaze and hand setups can be found in the [eyes and hands](../features/EyeTracking/EyeTracking_EyesAndHands.md#how-to-keep-gaze-pointer-always-on) article.
 
 ### API changes in 2.4.0
 
@@ -330,7 +330,7 @@ The input simulation system has been upgraded, which changes a few settings in t
 1. Keys for rotating hands have been removed, hand rotation is now controlled by the mouse as well. Holding `HandRotateButton` (Ctrl) together with the left/right hand manipulation key (LShift/Space) will enable hand rotation.
 1. A new axis "UpDown" has been introduced to the input axis list. This controls camera movement in the vertical and defaults to Q/E keys as well as the controller trigger buttons.
 
-For more information on these changes, please see the [input simulation service](InputSimulation/InputSimulationService.md) article.
+For more information on these changes, please see the [input simulation service](../features/InputSimulation/InputSimulationService.md) article.
 
 **Mouse data provider profile**
 

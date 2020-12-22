@@ -54,7 +54,7 @@ In order to utilize depth-based LSR, there are two important steps that develope
 
 ##### Transparent MRTK Standard shader
 
-For transparent materials using the [MRTK Standard shader](README_MRTKStandardShader.md), select the material to view it in the *Inspector* window. Then click the *Fix Now* button to convert the material to write to depth (i.e Z-Write On).
+For transparent materials using the [MRTK Standard shader](../features/README_MRTKStandardShader.md), select the material to view it in the *Inspector* window. Then click the *Fix Now* button to convert the material to write to depth (i.e Z-Write On).
 
 Before
 
