@@ -78,7 +78,7 @@ In the idle state, the button's front plate is not visible. As a finger approach
 
 In HoloLens 2 shell-style button, there are many visual cues and affordances to increase the user's confidence on interaction.
 
-|  ![Proximity light](../Documentation/Images/Button/ux_button_affordance_proximitylight.jpg) | ![Focus highlight](../Documentation/Images/Button/ux_button_affordance_focushighlight.jpg)  | ![Compressing cage](../Documentation/Images/Button/ux_button_affordance_compression.jpg) | ![Pulse on trigger](../Documentation/Images/Button/ux_button_affordance_pulse.jpg) |
+|  ![Proximity light](Images/Button/ux_button_affordance_proximitylight.jpg) | ![Focus highlight](Images/Button/ux_button_affordance_focushighlight.jpg)  | ![Compressing cage](Images/Button/ux_button_affordance_compression.jpg) | ![Pulse on trigger](Images/Button/ux_button_affordance_pulse.jpg) |
 |:--- | :--- | :--- | :--- |
 | Proximity light | Focus highlight | Compressing cage | Pulse on trigger |
 
