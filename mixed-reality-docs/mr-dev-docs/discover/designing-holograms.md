@@ -8,7 +8,6 @@ ms.topic: article
 keywords: MRTK, Mixed Reality Toolkit, holograms, Designing Holograms, learning, sample app, mixed reality headset, virtual reality headset, what is virtual reality
 ---
 
-
 # The making of Designing Holograms
 
 > [!NOTE]
@@ -93,7 +92,7 @@ Mixed Reality Captures produce virtual representations of people or animals, but
 
 ### Head Gaze Adjustment​
 
-Headgaze adjustment lets you to move a captured person’s head at runtime, meaning you could have a capture face towards a user. In our case, we used it to show the field of view and field of interest. What you see below is a moving gameobject acting as a target for the head gaze to look at. As we move the target from side to side, the head of the capture follows.​
+Headgaze adjustment lets you move a captured person’s head at runtime, meaning you could have a capture face towards a user. In our case, we used it to show the field of view and field of interest. What you see below is a moving gameobject acting as a target for the head gaze to look at. As we move the target from side to side, the head of the capture follows.​
 
 We used this trick to make sure that the idle capture would always face towards holograms placed in different parts of the doll house.​ 
 

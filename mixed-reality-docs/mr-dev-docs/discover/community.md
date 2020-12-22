@@ -8,8 +8,6 @@ ms.topic: article
 keywords: Mixed Reality, community, mvp, meetup
 ---
 
-
-
 # Mixed Reality Community
 
 At Microsoft, we believe that having access to strong communities is essential for the growth of developers, platforms, and ecosystems.  This page is meant to help developers find the many places they can take part in communities, as well as introduce you to some of the team and community members who are here to help you.
