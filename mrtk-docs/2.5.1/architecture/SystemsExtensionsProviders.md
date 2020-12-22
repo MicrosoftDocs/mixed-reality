@@ -23,7 +23,7 @@ Each of the listed systems are surfaced in the MixedRealityToolkit component's c
 Extension services are components that extend the functionality of the Mixed Reality Toolkit. All extension services must specify
 that they implement the [`IMixedRealityExtensionService`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityExtensionService) interface.
 
-For information on creating extension services, please reference the [Extension services](../Extensions/ExtensionServices.md) article.
+For information on creating extension services, please reference the [Extension services](../features/Extensions/ExtensionServices.md) article.
 
 To be accessible to the MRTK, extension services are registered and configured using the Extensions section of the MixedRealityToolkit
 component's configuration profile.

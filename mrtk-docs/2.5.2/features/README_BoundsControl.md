@@ -165,7 +165,7 @@ Elastics can be used when manipulating objects via bounds control. Note that the
 
 By default, when you just assign the [`BoundsControl.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundsControl) script, it will show the handle of the HoloLens 1st gen style. To use HoloLens 2 style handles, you need to assign proper handle prefabs and materials.
 
-![Bounds Control](../Documentation/Images/BoundsControl/MRTK_BoundsControl_HandleStyles1.png)
+![Bounds Control](Images/BoundsControl/MRTK_BoundsControl_HandleStyles1.png)
 
 Below are the prefabs, materials, and the scaling values for the HoloLens 2 style bounds control handles. You can find this example in the `BoundsControlExamples` scene.
 

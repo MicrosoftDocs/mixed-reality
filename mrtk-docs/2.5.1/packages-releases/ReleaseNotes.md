@@ -2,7 +2,7 @@
 
 - [What's new](#whats-new)
 - [Breaking changes](#breaking-changes)
-- [Updating guidance](Updating.md#upgrading-to-a-new-version-of-mrtk)
+- [Updating guidance](../updates-deployment/Updating.md#upgrading-to-a-new-version-of-mrtk)
 - [Known issues](#known-issues)
 
 > [!IMPORTANT]
