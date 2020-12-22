@@ -110,7 +110,7 @@ HoloTour for Microsoft HoloLens provides immersive 3D personal tours of iconic l
         *August 2016*
     :::column-end:::
     :::column:::
-       [![Capturing and creating content for HoloTour](../out-of-scope/images/camera-machu-pichu-500px.png)](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md)
+       [![Capturing and creating content for machu pichu HoloTour](../out-of-scope/images/camera-machu-pichu-500px.png)](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md)
         **[Capturing and creating content for HoloTour](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md)**<br>
         HoloTour provides immersive 3D personal tours of iconic locations around the world. As we found out, creating a convincingly real 3D rendering of a well-known location takes a blend of creative and technological wizardry.<br>
         *August 2016*
