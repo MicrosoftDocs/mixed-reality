@@ -8,7 +8,6 @@ ms.topic: article
 keywords: Microsoft Store, HoloLens, immersive headsets, app, uwp, submit, submission, filters, metadata, system requirements, keywords, wack, certification, package, appx, merchandising, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
-
 # Submitting an app to the Microsoft Store
 
 > [!IMPORTANT]
