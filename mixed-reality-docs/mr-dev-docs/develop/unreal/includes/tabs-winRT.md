@@ -4,7 +4,7 @@
 
 The most common and easiest way to use WinRT is to call methods from WinSDK. To do so, open YourModule.Build.cs file and add the following lines:
 
-```cpp
+```csharp
 if (Target.Platform == UnrealTargetPlatform.Win64 || Target.Platform == UnrealTargetPlatform.HoloLens)
 {
 	// These parameters are mandatory for winrt support
@@ -23,6 +23,9 @@ Next, you need to add the following WinRT headers:
 
 ```cpp
 #if (PLATFORM_WINDOWS || PLATFORM_HOLOLENS) 
+//Before writing any code, you need to disable common warnings in WinRT headers
+#pragma warning(disable : 5205 4265 4268 4946)
+
 #include "Windows/AllowWindowsPlatformTypes.h"
 #include "Windows/AllowWindowsPlatformAtomics.h"
 #include "Windows/PreWindowsApi.h"
@@ -40,11 +43,6 @@ Next, you need to add the following WinRT headers:
 
 WinRT code can only be compiled in the Win64 and HoloLens platforms, so the if statement prevents WinRT libraries from being included on other platforms. unknwn.h was added for having the IUnknown interface. 
 
-Before writing any code, you need to disable common warnings in WinRT headers by using:
-
-```cpp
-#pragma warning(disable : 5205 4265)
-```
 
 ## WinRT from a NuGet package
 
@@ -67,7 +65,7 @@ Now you can download the NuGet, the required packages, or refer to the NuGet [do
 
 Open YourModule.Build.cs and add the following code:
 
-```cpp
+```csharp
 if(Target.Platform == UnrealTargetPlatform.Win64 || Target.Platform == UnrealTargetPlatform.HoloLens)
 {
 	string MyModuleName = GetType().Name;
@@ -85,7 +83,7 @@ if(Target.Platform == UnrealTargetPlatform.Win64 || Target.Platform == UnrealTar
 
 	string BinariesSubFolder = Path.Combine("Binaries", "ThirdParty", Target.Type.ToString(), Target.Platform.ToString(), Target.Architecture);
 
-			PrivateDefinitions.Add(string.Format("THIRDPARTY_BINARY_SUBFOLDER=\"{0}\"", BinariesSubFolder.Replace(@"\", @"\\")));
+	PrivateDefinitions.Add(string.Format("THIRDPARTY_BINARY_SUBFOLDER=\"{0}\"", BinariesSubFolder.Replace(@"\", @"\\")));
 
 	string BinariesFolder = Path.Combine(PluginDirectory, BinariesSubFolder);
 	Directory.CreateDirectory(BinariesFolder);
@@ -96,7 +94,7 @@ if(Target.Platform == UnrealTargetPlatform.Win64 || Target.Platform == UnrealTar
 	{
 		using (System.Net.WebClient myWebClient = new System.Net.WebClient())
 		{
-								myWebClient.DownloadFile(@"https://dist.nuget.org/win-x86-commandline/latest/nuget.exe", NugetExe);
+			myWebClient.DownloadFile(@"https://dist.nuget.org/win-x86-commandline/latest/nuget.exe", NugetExe);
 		}
 	}
 
@@ -116,7 +114,7 @@ if(Target.Platform == UnrealTargetPlatform.Win64 || Target.Platform == UnrealTar
 	string[] InstalledPackages = Utils.RunLocalProcessAndReturnStdOut(NugetExe, string.Format("list -Source \"{0}\"", NugetFolder)).Split(new char[] {'\r', '\n' });
 
 	// get WinRT package 
-	string CppWinRTPackage = InstalledPackages.First(x => x.StartsWith("Microsoft.Windows.CppWinRT"));
+	string CppWinRTPackage = InstalledPackages.FirstOrDefault(x => x.StartsWith("Microsoft.Windows.CppWinRT"));
 	if(!string.IsNullOrEmpty(CppWinRTPackage))
 	{
 		string CppWinRTName = CppWinRTPackage.Replace(" ", ".");
@@ -147,16 +145,15 @@ if(Target.Platform == UnrealTargetPlatform.Win64 || Target.Platform == UnrealTar
 		}
 
 		PrivateIncludePaths.Add(CppWinRTFolder);
-
 	}
 	else
 	{
-		// fall to default WinSDK headers
-						PrivateIncludePaths.Add(Path.Combine(Target.WindowsPlatform.WindowsSdkDir, "Include", Target.WindowsPlatform.WindowsSdkVersion, "cppwinrt"));
-			}
+		// fall back to default WinSDK headers
+		PrivateIncludePaths.Add(Path.Combine(Target.WindowsPlatform.WindowsSdkDir, "Include", Target.WindowsPlatform.WindowsSdkVersion, "cppwinrt"));
+	}
 
 	// WinRT lib for some job
-	string QRPackage = InstalledPackages.First(x => x.StartsWith("Microsoft.MixedReality.QR"));
+	string QRPackage = InstalledPackages.FirstOrDefault(x => x.StartsWith("Microsoft.MixedReality.QR"));
 	if (!string.IsNullOrEmpty(QRPackage))
 	{
 		string QRFolderName = QRPackage.Replace(" ", ".");
@@ -177,7 +174,7 @@ if(Target.Platform == UnrealTargetPlatform.Win64 || Target.Platform == UnrealTar
 	if(Target.Platform == UnrealTargetPlatform.Win64)
 	{
 		// Microsoft.VCRTForwarders.140 is needed to run WinRT dlls in Win64 platforms
-		string VCRTForwardersPackage = InstalledPackages.First(x => x.StartsWith("Microsoft.VCRTForwarders.140"));
+		string VCRTForwardersPackage = InstalledPackages.FirstOrDefault(x => x.StartsWith("Microsoft.VCRTForwarders.140"));
 		if (!string.IsNullOrEmpty(VCRTForwardersPackage))
 		{
 			string VCRTForwardersName = VCRTForwardersPackage.Replace(" ", ".");
@@ -193,7 +190,7 @@ if(Target.Platform == UnrealTargetPlatform.Win64 || Target.Platform == UnrealTar
 
 You'll need to define the SafeCopy method as follows:
 
-```cpp
+```csharp
 private void SafeCopy(string source, string destination)
 {
 	if(!File.Exists(source))
