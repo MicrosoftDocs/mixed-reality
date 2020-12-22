@@ -1,6 +1,6 @@
 ---
 title: Case study overview
-description: Stories, learnings and experiences the Mixed Reality team has encountered and jotted down along the way.
+description: Stories, learnings, and experiences the Mixed Reality team has found and jotted down along the way.
 author: grbury 
 ms.author: grbury
 ms.date: 08/24/2019
@@ -10,25 +10,25 @@ keywords: Windows Mixed Reality, HoloLens, case study, vision, scenarios, case s
 
 # Case study gallery
 
-Stories, learnings and experiences the Mixed Reality team has encountered and jotted down along the way.
+Stories, learnings, and experiences the Mixed Reality team has found and jotted down along the way.
 
 :::row:::
     :::column:::
        [![3 HoloStudio UI and interaction design learnings](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)
         **[3 HoloStudio UI and interaction design learnings](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
-        HoloStudio was one of the first apps for HoloLens. Because of this, we had to create new best practices for 3D UI and interaction design. We did this through a lot of user testing, prototyping, and trial and error.<br>
+        HoloStudio was one of the first apps for HoloLens. Because of this, we had to create new best practices for 3D UI and interaction design. We did this through user testing, prototyping, and trial and error.<br>
         *July 2016*
     :::column-end:::
     :::column:::
        [![Building HoloSketch, a spatial layout and UX sketching app for HoloLens](images/holosketch-image-01-640px.png)](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)
-        **[Building HoloSketch, a spatial layout and UX sketching app for HoloLens](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)**<br>
+        **[Building HoloSketch, a spatial layout, and UX sketching app for HoloLens](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)**<br>
         HoloSketch is an on-device spatial layout and UX sketching tool for HoloLens to help build holographic experiences.<br>
          *July 2017*
     :::column-end:::
     :::column:::
        [![Creating an immersive experience in Fragments](images/surfacereconstruction.jpg)](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)
         **[Creating an immersive experience in Fragments](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)**<br>
-        Fragments is an interactive crime drama for Microsoft HoloLens, where you follow the clues to solve a mystery that takes place in your real-world space.<br>
+        Fragments are an interactive crime drama for Microsoft HoloLens, where you follow the clues to solve a mystery that takes place in your real-world space.<br>
         *August 2016*
     :::column-end:::
 :::row-end:::
@@ -83,7 +83,7 @@ Before Microsoft HoloLens shipped, we asked our developer community what kind of
     :::column:::
        [![The Making of Galaxy Explorer for HoloLens 2](../develop/unity/images/ge-update-interactions-concept-force-grab.png)](../develop/unity/galaxy-explorer-update.md)
         **[The Making of Galaxy Explorer for HoloLens 2](../develop/unity/galaxy-explorer-update.md)**<br>
-        Welcome to the journey of how we are updating Galaxy Explorer for HoloLens 2. Galaxy Explorer was originally developed as an open source application for HoloLens (1st gen) through the Share Your Idea program, and is one of the first mixed reality experiences many people had. Now we are updating it for the new capabilities of HoloLens 2.<br>
+        Welcome to the journey of how we're updating Galaxy Explorer for HoloLens 2. Galaxy Explorer was originally developed as an open-source application for HoloLens (1st gen) through the Share Your Idea program, and is one of the first mixed reality experiences many people had. Now we're updating it for the new capabilities of HoloLens 2.<br>
         *June 2019*
     :::column-end:::
     :::column:::
@@ -150,7 +150,7 @@ Read our high-level thoughts, and understand the principles we follow.
     :::column:::
        [![Representing humans in mixed reality](../develop/unity/images/bang-ai-weiwie.jpg)](../out-of-scope/case-study-representing-humans-in-mixed-reality.md)
         **[Representing humans in mixed reality](../out-of-scope/case-study-representing-humans-in-mixed-reality.md)**<br>
-        What kind of opportunities emerge when we cannot only create fantastic elements, but utilize the most realistic captures of environments, objects, and people in mixed reality?<br>
+        What kind of opportunities emerge when we can't only create fantastic elements, but use the most realistic captures of environments, objects, and people in mixed reality?<br>
          *November 2017*
     :::column-end:::
     :::column:::
@@ -171,7 +171,7 @@ Read our high-level thoughts, and understand the principles we follow.
     :::column:::
        [![AfterNow's process - envisioning, prototyping, building](../out-of-scope/images/whatisenvisioning-640px.png)](../out-of-scope/case-study-afternows-process-envisioning,-prototyping,-building.md)
         **[AfterNow's process - envisioning, prototyping, building](../out-of-scope/case-study-afternows-process-envisioning,-prototyping,-building.md)**<br>
-        At AfterNow, we work with you to turn your ideas and aspirations into concrete, fully operational products and experiences ready for the market. But before we write a single line of code, we create a blueprint through a process called envisioning.<br>
+        At AfterNow, we work with you to turn your ideas and aspirations into concrete, fully operational products, and experiences ready for the market. But before we write a single line of code, we create a blueprint through a process called envisioning.<br>
         *April 2017*
     :::column-end:::
     :::column:::
