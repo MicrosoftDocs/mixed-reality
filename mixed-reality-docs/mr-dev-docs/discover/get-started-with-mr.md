@@ -1,6 +1,6 @@
 ---
 title: Get started with Mixed Reality
-description: To help someone new to mixed reality learn what it is and understand its capabilities.
+description: Learn the basics of mixed reality theory, development, and common use cases.
 author: grbury
 ms.author: grbury
 ms.date: 12/9/2020
@@ -13,7 +13,7 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 ![Virtual hummingbird with human hand](images/01_MixedReality.png)
 
-The Mixed Reality ecosystem is an emerging landscape of physical and digital interactions, limited only by your imagination. Whether you're an experienced developer or a new convert, we recommend beginning your Mixed Reality journey with the resources we've laid out in the links below. There's a lot of new ground to cover, so let's get started! 
+The Mixed Reality ecosystem is an emerging landscape of physical and digital interactions, limited only by your imagination. Whether you're an experienced developer or a new convert, we recommend beginning your Mixed Reality journey with the resources we've laid out below. There's a lot of new ground to cover, so let's get started! 
 
 ## Choose your track
 
@@ -43,18 +43,18 @@ If you already know which area of Mixed Reality you'd like to explore, feel free
 
 ## Understand the basics
 
-If you're new to mixed reality, it's important that you start from the bottom and work your way up through its core concepts, experiences, and capabilities. We've created a sequential journey of sorts to help you set a firm foundation for designing and developing your own ideas in Mixed Reality.
+If you're new to mixed reality, it's important you start from the bottom and work your way up through its core concepts, experiences, and capabilities. We've created a sequential journey of sorts to help you set a firm foundation for designing and developing your own ideas in Mixed Reality.
 
 ### What is mixed reality?
 
 ![What can you do with mixed reality?](images/HLS19_remoteAssistHologram_001.jpg)
 
-Before you dive into application design or development, you need to understand what we mean by Mixed Reality. This section is designed to get you acquainted with the Mixed Reality spectrum, including the range of environmental input, perceptual changes, design challenges, and devices that come with it. 
+Before you dive into application design or development, you need to understand what we mean by Mixed Reality. This section is designed to get you acquainted with the Mixed Reality spectrum, including environmental input, perceptual changes, design challenges, and devices. 
 
 |  Concept  |  Outcome  |
 | --- | --- |
 | [Mixed reality is a spectrum](../discover/mixed-reality.md) | Mixed reality blends the physical with the digital, the next evolution in human, computer, and environment interactions |
-| [What is a hologram?](../discover/hologram.md) | HoloLens lets you create holograms, which are objects made of light and sound that appear in the world around you, just as if they were real objects. Holograms respond to your gaze, gestures and voice commands, and can interact with real-world surfaces around you |
+| [What is a hologram?](../discover/hologram.md) | HoloLens lets you create holograms, which are objects made of light and sound that appear in the world around you like real objects. Holograms respond to your gaze, gestures and voice commands, and can interact with real-world surfaces around you |
 | [Mixed Reality learning overview](mr-learning-overview.md#general-modules) | Try out our curated Mixed Reality module through Microsoft Learn |
 | [Expand your design process](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Expand your design mindset with spatial thinking, bodystorming, and acting when creating your immersive experiences  |
 
@@ -82,7 +82,7 @@ Before you dive into application design or development, you need to understand w
     :::column-end:::
     :::column span="2":::
         ### [BHP increases the pace of innovation despite lockdown with mixed reality and IoT](https://customers.microsoft.com/story/850776-bhp-energy-dynamics-365-hololens)
-        Despite the impact and restrictions due to COVID-19, BHP is delivering support and training to field workers from thousands of miles away with HoloLens 2 and Dynamics 365 Remote Assist.
+        Despite COVID-19's impact and restrictions, BHP is delivering support and training to field workers from thousands of miles away with HoloLens 2 and Dynamics 365 Remote Assist.
     :::column-end:::
 :::row-end:::
 
@@ -129,8 +129,8 @@ Before you dive into application design or development, you need to understand w
        [![Philips-Azurion](images/Philips-Azurion1.jpg)](https://binged.it/31B1RiR)
     :::column-end:::
     :::column span="2":::
-        ### [Philips is piloting HoloLens in the domain of image-guided minimally invasive procedures](https://binged.it/31B1RiR)
-        Philips is piloting HoloLens in the domain of image-guided minimally invasive procedures, during which physicians rely on live X-ray, ultrasound and other sources of information to "see" inside the patient and guide their actions.
+        ### [Philips is piloting HoloLens in the domain of image-guided invasive procedures](https://binged.it/31B1RiR)
+        Philips is piloting HoloLens in the domain of image-guided invasive procedures, during which physicians rely on live X-ray, ultrasound, and other sources of information to "see" inside the patient and guide their actions.
     :::column-end:::
 :::row-end:::
 
@@ -142,13 +142,13 @@ Before you dive into application design or development, you need to understand w
 
 ![HoloLens exploded view](images/HoloLens2_ExplodedView_8k.png)
 
-If you're curious to see how the different Mixed Reality hardware and services work, check out the links below. These links will navigate you to different parts of the Microsoft documentation, but we recommend bookmarking and returning here to continue on your design and development journey.
+If you're curious to see how the different Mixed Reality hardware and services work, check out the links below. These links will navigate you to different parts of the Microsoft documentation. We recommend bookmarking and returning here to continue on your design and development journey.
 
 |  Concept  |  Outcome  |
 | --- | --- |
 | [HoloLens hardware](https://www.microsoft.com//hololens/hardware) | HoloLens 2 offers the most comfortable and immersive mixed reality experience available, with industry-leading solutions that deliver value in minutes—all enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft |
-| [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | Explore a range of products that can empower employees and optimize operations with Dynamics 365, including [Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview), [Layout](https://docs.microsoft.com/dynamics365/mixed-reality/layout/) and [Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/). Meaningful insight comes from getting hands-on with real work, real devices, and real users |
-| [Azure Cloud Services](../develop/mixed-reality-cloud-services.md) | Build compelling immersive experiences on a variety of platforms by adding spatial awareness, spatial anchors, and complex 3D model rendering |
+| [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | Explore a range of products that can empower employees and optimize operations with Dynamics 365, including [Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview), [Layout, and [Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/). Meaningful insight comes from getting hands-on with real work, real devices, and real users |
+| [Azure Cloud Services](../develop/mixed-reality-cloud-services.md) | Build compelling immersive experiences on different platforms with spatial awareness, spatial anchors, and complex 3D model rendering |
 
 ## What would you like to do next?
 
@@ -161,7 +161,7 @@ If you're curious to see how the different Mixed Reality hardware and services w
         :::column:::
         [![Start developing](images/icon-developer.png)](../develop/development.md)<br>
         **[Start developing](../develop/development.md)**<br>
-        Choose a development path based on your skill level, work style or platform interest.
+        Choose a development path based on your skill level, work style, or platform interest.
     :::column-end:::
     :::column:::
         [![Come to an event](images/icon-calendar.jpg)](../whats-new/sf-academy-events.md)<br>
