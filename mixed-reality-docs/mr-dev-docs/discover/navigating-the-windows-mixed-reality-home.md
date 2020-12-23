@@ -8,7 +8,6 @@ ms.topic: article
 keywords: shell, os, platform, cliff house, house, home, environment, start, start menu, home menu, pins, app, launch apps, place apps, teleport, move, navigate, mixed reality headset, virtual reality headset, what is virtual reality
 ---
 
-
 # Navigating the Windows Mixed Reality home
 
 Just like the Windows PC experience starts with the desktop, Windows Mixed Reality starts with the home. The Windows Mixed Reality home leverages our innate ability to understand and navigate 3D places. With HoloLens, your home is your physical space. With immersive headsets, your home is a virtual place.
