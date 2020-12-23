@@ -66,7 +66,7 @@ Before you dive into application design or development, you need to understand w
 
 :::row:::
     :::column:::
-       [![Mercedes](images/mercedes.png)](https://customers.microsoft.com/story/839709-mercedes-benz-automotive-holoLens-en-usa)
+       [![Mercedes automotive HoloLens](images/mercedes.png)](https://customers.microsoft.com/story/839709-mercedes-benz-automotive-holoLens-en-usa)
     :::column-end:::
     :::column span="2":::
         ### [Mercedes-Benz is transforming the service workforce with HoloLens 2 and Dynamics 365 Remote Assist](https://customers.microsoft.com/story/839709-mercedes-benz-automotive-holoLens-en-usa)
@@ -78,7 +78,7 @@ Before you dive into application design or development, you need to understand w
 
 :::row:::
     :::column:::
-       [![BHP](images/bhp.png)](https://customers.microsoft.com/story/850776-bhp-energy-dynamics-365-hololens)
+       [![BHP energy dynamics 365 HoloLens](images/bhp.png)](https://customers.microsoft.com/story/850776-bhp-energy-dynamics-365-hololens)
     :::column-end:::
     :::column span="2":::
         ### [BHP increases the pace of innovation despite lockdown with mixed reality and IoT](https://customers.microsoft.com/story/850776-bhp-energy-dynamics-365-hololens)
