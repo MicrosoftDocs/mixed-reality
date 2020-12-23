@@ -34,7 +34,7 @@ Sets a box collider from the object for bounds computation.
 
 ### Box padding
 
-Adds a padding to the collider bounds used to calculate the extents of the control. This will influence not only interaction but also impact the visuals. 
+Adds a padding to the collider bounds used to calculate the extents of the control. This will influence not only interaction but also impact the visuals.
 
 ### Flatten axis
 Indicates whether the control is flattened in one of the axes, making it 2 dimensional and disallowing manipulation along that axis. This feature can be used for thin objects like slates.
@@ -44,11 +44,11 @@ If flatten axis is set to *Flatten Auto* the script will automatically pick the 
 The smoothing section allows to configure smoothing behavior for scale and rotate of the control.
 
 ### Visuals
-The appearance of bounds control can be configured by modifying one of the corresponding visuals configurations. 
+The appearance of bounds control can be configured by modifying one of the corresponding visuals configurations.
 Visual configurations are either linked or inlined scriptable objects and are described in more detail in the [configuration object section](#configuration-objects).
 
 ## Configuration Objects
-The control comes with a set of configuration objects that can be stored as scriptable objects and shared between different instances or prefabs. Configurations can be shared and linked either as individual scriptable asset files or nested scriptable assets inside of prefabs. Further configurations can also be defined directly on the instance without linking to an external or nested scriptable asset. 
+The control comes with a set of configuration objects that can be stored as scriptable objects and shared between different instances or prefabs. Configurations can be shared and linked either as individual scriptable asset files or nested scriptable assets inside of prefabs. Further configurations can also be defined directly on the instance without linking to an external or nested scriptable asset.
 
 The bounds control inspector will indicate whether a configuration is shared or inlined as part of the current instance by showing a message in the property inspector. In addition shared instances won't be editable directly in the bounds control property window itself, but instead the asset it's linking to has to be directly modfied to avoid any accidental changes on shared configurations.
 
@@ -135,7 +135,6 @@ Show and hide the handles with animation based on the distance to the hands. It 
 - **Medium Grow Rate**: Rate a proximity scaled object scales when the hand moves from medium to close proximity.
 - **Close Grow Rate**: Rate a proximity scaled object scales when the hand moves from close proximity to object center.
 
-
 ## Constraint System
 Bounds control supports using the [constraint manager](README_ConstraintManager.md) to limit or modify translation, rotation or scaling behavior while using bounds control handles.
 
@@ -183,7 +182,6 @@ Below are the prefabs, materials, and the scaling values for the HoloLens 2 styl
 * **Rotation Handle Size**: 0.016
 * **Rotation Handle Collider Padding**: 0.016 (makes the grabbable collider slightly bigger than handle visual)
 
-
 ## Transformation changes with object manipulator
 
 A bounds control can be used in combination with [`ObjectManipulator.cs`](README_ObjectManipulator.md) to allow for certain types of manipulation (eg. moving the object) without using handles. The manipulation handler supports both one and two-handed interactions. [Hand tracking](Input/HandTracking.md) can be used to interact with an object up close.
@@ -191,7 +189,6 @@ A bounds control can be used in combination with [`ObjectManipulator.cs`](README
 <img src="../features/Images/BoundsControl/MRTK_BoundsControl_ObjectManipulator.png" width="450">
 
 In order for the bounds control edges to behave the same way when moving it using [`ObjectManipulator`](README_ObjectManipulator.md)'s far interaction, it is advised to connect its events for *On Manipulation Started* / *On Manipulation Ended* to `BoundsControl.HighlightWires` / `BoundsControl.UnhighlightWires` respectively, as shown in the screenshot above.
-
 
 ## How to add and configure a bounds control using Unity Inspector
 
@@ -222,14 +219,14 @@ In order for the bounds control edges to behave the same way when moving it usin
 
 1. Configure options either directly on the control or via one of the scriptable configurations (see [Inspector properties](#inspector-properties) and [Configurations](#configuration-objects) section below)
 
-    ```c#
-	// Change activation method
-	boundsControl.BoundsControlActivation = BoundsControlActivationType.ActivateByProximityAndPointer;
-    // Make the scale handles large
-    boundsControl.ScaleHandlesConfig.HandleSize = 0.1f;
-    // Hide rotation handles for x axis
-    boundsControl.RotationHandlesConfig.ShowRotationHandleForX = false;
-    ```
+```c#
+// Change activation method
+boundsControl.BoundsControlActivation = BoundsControlActivationType.ActivateByProximityAndPointer;
+// Make the scale handles large
+boundsControl.ScaleHandlesConfig.HandleSize = 0.1f;
+// Hide rotation handles for x axis
+boundsControl.RotationHandlesConfig.ShowRotationHandleForX = false;
+```
 
 1. (Optional) Assign prefabs and materials for a HoloLens 2 style bounds control. This still requires assignments through the inspector since the materials and prefabs should be dynamically loaded.
 
@@ -257,7 +254,7 @@ rotationHandleConfiguration.ColliderPadding = 0.016f;
 
 ### Example: Set minimum, maximum bounds control scale using MinMaxScaleConstraint
 
-To set the minimum and maximum scale, attach a [`MinMaxScaleConstraint`](xref:Microsoft.MixedReality.Toolkit.UI.MinMaxScaleConstraint) to your control. As bounds control automatically attaches and activates constraint manager the MinMaxScaleConstraint will be automatically applied to the transformation changes once it's attached and configured. 
+To set the minimum and maximum scale, attach a [`MinMaxScaleConstraint`](xref:Microsoft.MixedReality.Toolkit.UI.MinMaxScaleConstraint) to your control. As bounds control automatically attaches and activates constraint manager the MinMaxScaleConstraint will be automatically applied to the transformation changes once it's attached and configured.
 
 You can also use MinMaxScaleConstraint to set minimum and maximum scale for [`ObjectManipulator`](xref:Microsoft.MixedReality.Toolkit.UI.ObjectManipulator).
 
