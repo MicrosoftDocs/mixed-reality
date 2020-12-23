@@ -17,7 +17,7 @@ placing it in the center of the Holographic Frame and then performing the air ta
 
 This type of gaze is based on where the user's eyes are looking. Eye gaze is only present
 on systems that support eye tracking. See the
-[eye tracking documentation](../EyeTracking/EyeTracking_Main.md) for more details on how
+[eye tracking documentation](../../EyeTracking/EyeTracking_Main.md) for more details on how
 to use eye gaze.
 
 ## GazeProvider

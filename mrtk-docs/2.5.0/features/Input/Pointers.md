@@ -2,7 +2,7 @@
 
 ![Pointer](../Images/Pointers/MRTK_Pointer_Main.png)
 
-This article explains how to configure and respond to Pointer input in practice, compared to [Pointer Architecture](../Architecture/InputSystem/ControllersPointersAndFocus.md)
+This article explains how to configure and respond to Pointer input in practice, compared to [Pointer Architecture](../../architecture/InputSystem/ControllersPointersAndFocus.md)
 
 Pointers are instanced automatically at runtime when a new controller is detected. More than one pointer can be attached to a controller. For example, with the default pointer profile, Windows Mixed Reality controllers get both a line and a parabolic pointer for normal selection and teleportation respectively.
 
@@ -330,5 +330,5 @@ render when the pointer is not interacting with anything.
 
 ## See also
 
-- [Pointer Architecture](../Architecture/InputSystem/ControllersPointersAndFocus.md)
+- [Pointer Architecture](../../architecture/InputSystem/ControllersPointersAndFocus.md)
 - [Input Events](InputEvents.md)

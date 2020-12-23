@@ -328,5 +328,5 @@ render when the pointer is not interacting with anything.
 
 ## See also
 
-- [Pointer Architecture](../Architecture/InputSystem/ControllersPointersAndFocus.md)
+- [Pointer Architecture](../../architecture/InputSystem/ControllersPointersAndFocus.md)
 - [Input Events](InputEvents.md)

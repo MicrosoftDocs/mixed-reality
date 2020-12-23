@@ -1,6 +1,6 @@
 # Optimize window
 
-The MRTK Optimize Window is a utility to help automate and inform in the process of configuring a mixed reality project for best [performance](../Performance/PerfGettingStarted.md) in Unity. This tool generally focuses on rendering configurations that when set to the correct preset can save milliseconds of processing.
+The MRTK Optimize Window is a utility to help automate and inform in the process of configuring a mixed reality project for best [performance](../../Performance/PerfGettingStarted.md) in Unity. This tool generally focuses on rendering configurations that when set to the correct preset can save milliseconds of processing.
 
 The *Active Build Target* is the [build platform currently targeted](https://docs.unity3d.com/Manual/BuildSettings.html) by the project for compiling.
 
@@ -26,7 +26,7 @@ A green check icon means that an optimal value has been configured in the projec
 
 ### Depth buffer sharing
 
-To improve [hologram stabilization](../hologram-Stabilization.md), developers can share the application's depth buffer which gives the platform information on where and what holograms to stabilize in the rendered scene.
+To improve [hologram stabilization](../../Performance/hologram-Stabilization.md), developers can share the application's depth buffer which gives the platform information on where and what holograms to stabilize in the rendered scene.
 
 ### Depth buffer format
 
@@ -72,5 +72,5 @@ The *Shader Analysis* tab scans the current project's Asset folder for materials
 
 ## See also
 
-- [Performance](../Performance/PerfGettingStarted.md)
-- [Hologram Stabilization](../hologram-stabilization.md)
+- [Performance](../../Performance//PerfGettingStarted.md)
+- [Hologram Stabilization](../../Performance/hologram-stabilization.md)

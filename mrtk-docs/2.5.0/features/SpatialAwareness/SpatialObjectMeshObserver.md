@@ -72,7 +72,7 @@ The [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/usi
 ## See also
 
 - [Profiles](../Profiles/Profiles.md)
-- [Mixed Reality Toolkit Profile configuration guide](../MixedRealityConfigurationGuide.md)
+- [Mixed Reality Toolkit Profile configuration guide](../../out-of-scope/MixedRealityConfigurationGuide.md)
 - [Spatial Awareness Getting started](SpatialAwarenessGettingStarted.md)
 - [Configuring Mesh Observers on Device](ConfiguringSpatialAwarenessMeshObserver.md)
 - [Configuring Mesh Observers via code](UsageGuide.md)
