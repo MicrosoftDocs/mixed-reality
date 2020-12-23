@@ -16,7 +16,7 @@ Learn about the foundational elements that you need to design a great mixed real
 :::row:::
     :::column:::
        [![Color, light and materials](images/640px-fragments.png)](color-light-and-materials.md)
-        **[Color, light and materials](color-light-and-materials.md)**
+        **[Color, light, and materials](color-light-and-materials.md)**
     :::column-end:::
     :::column:::
        [![Scale](images/volvo-cars-microsoft-hololens-experience01-640px.png)](scale.md)
