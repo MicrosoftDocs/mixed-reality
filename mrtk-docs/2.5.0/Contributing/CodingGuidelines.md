@@ -193,7 +193,7 @@ An interesting example where having logging is useful (along with interesting pa
 DebugUtilities.LogVerboseFormat("RaiseSourceDetected: Source ID: {0}, Source Type: {1}", source.SourceId, source.SourceType);
 ```
 
-This type of logging can help catch issues like https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8016,
+This type of logging can help catch [issues](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8016) like ,
 which were caused by mismatched source detected and source lost events.
 
 Avoid adding logs for data and events that are occurring on every frame - ideally logging should
@@ -202,7 +202,7 @@ changes and events that come from that are interesting to log). The ongoing stat
 holding a gesture" logged every frame is not interesting and will overwhelm the logs.
 
 Note that this verbose logging is not turned on by default (it must be enabled in the
-[Diagnostic System settings](../Diagnostics/ConfiguringDiagnostics.md#enable-verbose-logging))
+[Diagnostic System settings](../features/Diagnostics/ConfiguringDiagnostics.md#enable-verbose-logging))
 
 ### Spaces vs tabs
 

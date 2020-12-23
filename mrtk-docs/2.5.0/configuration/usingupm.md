@@ -8,7 +8,7 @@ The Unity Package Manager uses a [manifest file](https://docs.unity3d.com/Manual
 
 > [!Note]
 > As of version 2.5.0 of the MRTK, initial registration of the server and packages is a per-project, manual procedure, please read the following sections for detailed instructions.
-> 
+>
 > This process is required due to UPM's use of legacy npm search functionality (/-/all) that is not supported by Azure DevOps.
 
 ### Registering the Mixed Reality component server
@@ -36,7 +36,7 @@ For each project that will be using the Microsoft Mixed Reality Toolkit, the `ma
 
 Once the Microsoft Mixed Reality scoped registry has been added to the manifest, the MRTK packages can be specified.
 
-The [Unity Package Manager](Packaging/MRTK_Packages.md#unity-package-manager) section of the [Mixed Reality Toolkit package](Packaging/MRTK_Packages.md) article describes the available MRTK packages, their contents and the scenarios for their use.
+The [Unity Package Manager](../packages-releases/MRTK_Packages.md#unity-package-manager) section of the [Mixed Reality Toolkit package](../packages-releases/MRTK_Packages.md) article describes the available MRTK packages, their contents and the scenarios for their use.
 
 To add an MRTK package, modify the dependencies section of the `Packages/manifest.json` file. The following example illustrates adding the foundation, tools and examples packages, the standard assets package will be added automatically as a dependency of the foundation.
 
@@ -76,4 +76,4 @@ When an example package is updated, Unity provides the option to update imported
 
 ## See Also
 
-- [Mixed Reality Toolkit packages](Packaging/MRTK_Packages.md)
+- [Mixed Reality Toolkit packages](../packages-releases/MRTK_Packages.md)

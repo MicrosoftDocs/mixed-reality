@@ -1,6 +1,6 @@
 # Core system
 
-At the heart of the input system is the [InputSystem](../../Input/Overview.md), which is a service that is responsible for initializing and operating all of the input related functionality associated with the MRTK.
+At the heart of the input system is the [InputSystem](../../features/Input/Overview.md), which is a service that is responsible for initializing and operating all of the input related functionality associated with the MRTK.
 
 > [!NOTE]
 > It is assumed that readers have already read and have a basic understanding of the
@@ -8,8 +8,8 @@ At the heart of the input system is the [InputSystem](../../Input/Overview.md), 
 
 This service is responsible for:
 
-- Reading the [input system profile](../../MixedRealityConfigurationGuide.md#input-system-settings)
-- Starting the configured [data providers](../../Input/InputProviders.md) (for example, `Windows Mixed Reality Device Manager` and `OpenVR Device Manager`).
+- Reading the [input system profile](../../out-of-scope/MixedRealityConfigurationGuide.md#input-system-settings)
+- Starting the configured [data providers](../../features/Input/InputProviders.md) (for example, `Windows Mixed Reality Device Manager` and `OpenVR Device Manager`).
 - Instantiation of the [GazeProvider](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGazeProvider), which is a component that is responsible for providing HoloLens (1st generation) style head gaze information
   in addition to HoloLens 2 style eye gaze information.
 - Instantiation of the [FocusProvider](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusProvider), which is a component that is responsible for determining objects that have focus. This
@@ -34,8 +34,7 @@ This is done by using [ExecuteHierarchy](https://docs.unity3d.com/ScriptReferenc
 
 ### Global listeners
 
-Events can be sent to global listeners. It's possible to register for all input events by using
-the input system's [`IMixedRealityEventSystem`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem)
+Events can be sent to global listeners. It's possible to register for all input events by using the input system's [`IMixedRealityEventSystem`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem)
 interface. It's recommended to use the [RegisterHandler](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem.RegisterHandler``1(IEventSystemHandler))
 method for registering for global events - the deprecated `Register` function will cause listeners
 to get notified of ALL input events, rather than just input events of a particular type
@@ -67,7 +66,7 @@ The basic flow of a device manager involves:
 
 1. The device manager is instantiated by the input system service.
 2. The device manager registers with its underlying system (for example, the Windows Mixed Reality
-   device manager will register for [input](../../Input/InputEvents.md) and [gesture](../../Input/Gestures.md#gesture-events) events.
+   device manager will register for [input](../../features/Input/InputEvents.md) and [gesture](../../features/Input/Gestures.md#gesture-events) events.
 3. It creates controllers that it discovers from the underlying system (for example
    the provider could detect the presence of articulated hands)
 4. In its Update() loop, call UpdateController() to poll for the new state of the underlying system
