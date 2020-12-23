@@ -11,9 +11,19 @@ ms.topic: article
 
 Welcome to the [public repo for Mixed Reality developer documentation](https://github.com/MicrosoftDocs/mixed-reality/tree/master/mixed-reality-docs)! Any articles you create or edit in this repo **will be visible to the public.** 
 
-The Mixed Reality docs are now on the docs.microsoft.com platform, which uses GitHub-flavored Markdown with Markdig features. The content you edit in this repo gets formatted into stylized pages that show up at https://docs.microsoft.com/windows/mixed-reality. If you want to contribute to HoloLens or VR enthusiast documentation, visit their respective [HoloLens](https://github.com/MicrosoftDocs/Hololens) and [VR](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) repositories.
+The Mixed Reality docs are now on the docs.microsoft.com platform, which uses GitHub-flavored Markdown with Markdig features. The content you edit in this repo gets formatted into stylized pages that show up at https://docs.microsoft.com/windows/mixed-reality. 
 
 This page covers the basic steps and guidelines for contributing and links to Markdown basics. Thank you for your contribution!
+
+## Available repos
+
+<br>
+
+| Repository name | URL |
+| --- | --- |
+| Mixed Reality | [MicrosoftDocs/mixed-reality](https://docs.microsoft.com/windows/mixed-reality) |
+| VR Enthusiasts Guide | [MicrosoftDocs/mixed-reality/enthusiast-guide](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
+| HoloLens | [MicrosoftDocs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
 
 ## Before you start
 
