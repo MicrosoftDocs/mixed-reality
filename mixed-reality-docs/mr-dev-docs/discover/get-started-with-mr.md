@@ -90,7 +90,7 @@ Before you dive into application design or development, you need to understand w
 
 :::row:::
     :::column:::
-       [![MediView](images/mediview.jpeg)](https://customers.microsoft.com/story/848966-mediview-mcs-story)
+       [![MediView HoloLens story](images/mediview.jpeg)](https://customers.microsoft.com/story/848966-mediview-mcs-story)
     :::column-end:::
     :::column span="2":::
         ### [Healthcare startup cuts time to market by up to 70%, despite pandemic](https://customers.microsoft.com/story/848966-mediview-mcs-story)
