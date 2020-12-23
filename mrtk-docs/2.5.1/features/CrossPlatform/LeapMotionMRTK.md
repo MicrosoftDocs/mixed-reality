@@ -52,10 +52,10 @@ This provider can be used in editor and on device while on the Standalone platfo
     ![LeapDataProviderPreClone](../Images/CrossPlatform/LeapMotion/LeapMotionDeviceManagerProfile.png)
 
     - The Leap Motion Data Provider contains the `LeapControllerOrientation` property which is the location of the Leap Motion Controller. `LeapControllerOrientation.Headset` indicates the controller is mounted on a headset. `LeapControllerOrientation.Desk` indicates the controller is placed flat on desk. The default value is set to `LeapControllerOrientation.Headset`.
-    - Each controller orientation contains offset properties: 
+    - Each controller orientation contains offset properties:
       - The **Headset** orientation offset properties mirror the offset properties in the LeapXRServiceProvider component.  The `LeapVRDeviceOffsetMode` has three options: Default, Manual Head Offset and Transform.  If the offset mode is Default, then an offset will not be applied to the Leap Motion Controller.  The Manual Head Offset mode allows for the modification of three properties: `LeapVRDeviceOffsetY`, `LeapVRDeviceOffsetZ` and `LeapVRDeviceTiltX`.  The axis offset property values are then applied to default controller placement.  The Transform offset mode contains the `LeapVRDeviceOrigin` Transform property which specifies a new origin for the Leap Motion Controller.
       - The **Desk** orientation contains the `LeapControllerOffset` property which defines the anchor position of the desk leap hands.  The offset is calculated relative to the main camera position and the default value is (0,-0.2, 0.35) to make sure the hands appear in front and in view of the camera.
-      
+
         > [!NOTE]
         > The offset properties in the profile are applied once when the application starts.  To modify the values during runtime, get the Leap Motion Service Provider from the Leap Motion Device Manager:
         >```
@@ -162,7 +162,7 @@ To test if the Leap Motion Unity Modules have integrated with MRTK:
   - This will display a pop up window with a message about whether or not the Leap Motion Unity Modules have integrated with MRTK.
 - If the message says that the assets have not been integrated:
     - Make sure the Leap Motion Unity Modules are in the project
-    - Make sure that the version added is supported, see the table at the top of the page for versions supported. 
+    - Make sure that the version added is supported, see the table at the top of the page for versions supported.
     - Try **Mixed Reality Toolkit > Utilities > Leap Motion > Integrate Leap Motion Unity Modules**
 
 ### Copying assembly Multiplayer HLAPI failed
