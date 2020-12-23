@@ -338,7 +338,7 @@ scenarios and times in which in this is helpful:
 1. After startup, after the MRTK is initialized, swapping the profile to change the way certain features
    behave. For example, there may be a specific sub-experience in the application that wants far hand
    pointers completely removed. **Note** that this type of swapping currently doesn't work due to
-   this issue: https://github.com/microsoft/MixedRealityToolkit-Unity/issues/4289.
+   this [issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/4289):
 
 ## Swapping profiles prior to MRTK initialization
 
@@ -373,7 +373,7 @@ public class ProfileSwapper : MonoBehaviour
 
 Instead of "RuntimeSwapparoo.asset", it's possible to have some arbitrary set of profiles which apply to
 specific platforms (for example, one for HoloLens 1, one for VR, one for HoloLens 2, etc). It's possible
-to use various other indicators (i.e. https://docs.unity3d.com/ScriptReference/SystemInfo.html, or
+to use various other [indicators](https://docs.unity3d.com/ScriptReference/SystemInfo.html), or
 whether or not the camera is opaque/transparent), to figure out which profile to load.
 
 ## See also
