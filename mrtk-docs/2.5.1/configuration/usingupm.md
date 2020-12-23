@@ -8,7 +8,7 @@ The Unity Package Manager uses a [manifest file](https://docs.unity3d.com/Manual
 
 > [!Note]
 > As of version 2.5.1 of the MRTK, initial registration of the server and packages is a per-project, manual procedure, please read the following sections for detailed instructions.
-> 
+>
 > This process is required due to UPM's use of legacy npm search functionality (/-/all) that is not supported by Azure DevOps.
 
 ### Registering the Mixed Reality component server
@@ -48,8 +48,8 @@ To add an MRTK package, modify the dependencies section of the `Packages/manifes
 ```
 > [!IMPORTANT]
 > There is a known compiler issue that impacts applications built for Microsoft HoloLens 2 using
-> ARM64. This issue is addressed in the forthcoming 16.8 update for Visual Studio 2019. Until the 
-> update is available, please import the `com.microsoft.mixedreality.toolkit.tools` package to apply 
+> ARM64. This issue is addressed in the forthcoming 16.8 update for Visual Studio 2019. Until the
+> update is available, please import the `com.microsoft.mixedreality.toolkit.tools` package to apply
 > a workaround.
 
 ## Managing Mixed Reality features with the Unity Package Manager
