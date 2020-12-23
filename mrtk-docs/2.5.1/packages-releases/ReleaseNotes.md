@@ -7,8 +7,8 @@
 
 > [!IMPORTANT]
 > There is a known compiler issue that impacts applications built for Microsoft HoloLens 2 using
-> ARM64. This issue is addressed in the forthcoming 16.8 update for Visual Studio 2019. Until the 
-> update is available, please import the `com.microsoft.mixedreality.toolkit.tools` package to apply 
+> ARM64. This issue is addressed in the forthcoming 16.8 update for Visual Studio 2019. Until the
+> update is available, please import the `com.microsoft.mixedreality.toolkit.tools` package to apply
 > a workaround.
 
 ## What's new
@@ -44,7 +44,7 @@ In some situations (e.g. when using the LeapMotion provider in the Unity Editor)
 Depending on the length of the project path, importing examples via Unity Package Manager may generate FileNotFoundException messages in the Unity Console. The
 cause of this is the path to the "missing" file being longer than MAX_PATH (256 characters). To resolve, please shorten the length of the project path.
 
-### No spatializer was specified. The application will not support Spatial Sound.
+### No spatializer was specified. The application will not support Spatial Sound
 
 A "No spatializer was specified" warning will appear if an audio spatializer is not configured. This can occur if no XR package is installed, as Unity includes spatializers in these pacakges.
 
