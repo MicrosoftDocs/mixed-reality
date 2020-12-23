@@ -53,7 +53,7 @@ If it is absolutely necessary to add a TODO, follow these steps:
    TODO.
 2. Reference the issue URL in the todo in the docs.
 
-\<\!-- TODO(https://github.com/microsoft/MixedRealityToolkit-Unity/issues/ISSUE_NUMBER_HERE): A brief blurb on the issue --\>
+\<\!-- [TODO](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/ISSUE_NUMBER_HERE): A brief blurb on the issue --\>
 
 ### Highlighted sections
 
