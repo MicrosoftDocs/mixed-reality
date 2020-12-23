@@ -7,7 +7,7 @@ MRTK is available as [asset](#asset-packages) (.unitypackage) packages and via t
 
 ## Asset packages
 
-The MRTK asset (.unitypackage) can be downloaded from [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases). 
+The MRTK asset (.unitypackage) can be downloaded from [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases).
 
 Some of the benefits of using asset packages include:
 
@@ -25,7 +25,7 @@ Some of the challenges are:
 - Manual update process
   - Multiple steps
   - Large (3000+ file) source control updates
-  - Risk of losing changes made to MRTK 
+  - Risk of losing changes made to MRTK
 - Importing the examples package typically means including all examples
 
 The available packages are:
@@ -171,7 +171,7 @@ Some of the challenges are:
 
 ### Foundation package
 
-The foundation package (`com.microsoft.mixedreality.toolkit.foundation`) forms the basis of the Mixed Reality Toolkit. 
+The foundation package (`com.microsoft.mixedreality.toolkit.foundation`) forms the basis of the Mixed Reality Toolkit.
 
 | Folder | Component | Description |
 | --- | --- | --- |
@@ -213,7 +213,7 @@ Dependencies:
 The standard assets package (`com.microsoft.mixedreality.toolkit.standardassets)` is a collection of components that are recommended for all mixed reality experiences, including:
 
 - MRTK Standard shader
-- Basic materials using the MRTK Standard shader 
+- Basic materials using the MRTK Standard shader
 - Audio files
 - Fonts
 - Textures
@@ -226,7 +226,7 @@ Dependencies: none
 
 ### Extension packages
 
-The optional extensions package (`com.microsoft.mixedreality.toolkit.extensions)` contains additional components that expand the functionality of the MRTK. 
+The optional extensions package (`com.microsoft.mixedreality.toolkit.extensions)` contains additional components that expand the functionality of the MRTK.
 
 | Folder | Component | Description |
 | --- | --- | --- |
