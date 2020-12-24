@@ -40,4 +40,4 @@ You can see a simple example of how to bring up system keyboard in `MixedReality
 
 ## See Also
 
-- [Mixed Reality Keyboard Helper Classes](../Assets/MRTK/SDK/Experimental/MixedRealityKeyboard/README_MixedRealityKeyboard.md)
+- [Mixed Reality Keyboard Helper Classes](../missing-docs/MixedRealityKeyboard/README_MixedRealityKeyboard.md)
