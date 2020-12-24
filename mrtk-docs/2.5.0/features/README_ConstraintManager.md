@@ -8,10 +8,9 @@ Currently the following MRTK UX elements are supporting constraint manager:
 - [Bounds control](README_BoundsControl.md)
 - [Object manipulator](README_ObjectManipulator.md)
 
-
 ## Inspector properties and fields
 
-Constraint manager can be operated in two modes: 
+Constraint manager can be operated in two modes:
 - Auto constraint selection
 - Manual constraint selection
 
@@ -21,7 +20,6 @@ Constraint manager can be operated in two modes:
 
 The default mode of constraint manager, auto constraint selection, will provide a list of all attached constraint components as well as [go to buttons](#go-to-component) and an [add constraint button](#add-constraint-to-game-object).
 
-
 #### Add constraint to game object
 
 This button allows a constraint component to be added directly from the constraint manager inspector. All constraint types in a project should be visible here. See [transform constraints](#transform-constraints) for more info.
@@ -29,7 +27,6 @@ This button allows a constraint component to be added directly from the constrai
 #### Go to component
 
 All constraints found on the object wil be listed here with a *Go to component* button. This button will cause the inspector to scroll to the selected constraint component so that it can be configured.
-
 
 ### Manual constraint selection
 

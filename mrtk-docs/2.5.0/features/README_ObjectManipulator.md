@@ -93,7 +93,7 @@ Specify which physical properties a manipulated object should keep upon release.
 
 #### Use forces for near manipulation
 
-Whether physics forces are used to move the object when performing near manipulations. Setting this to *false* will make the object feel more directly connected to the users hand. Setting this to *true* will honor the mass and inertia of the object, but may feel as though the object is connected through a spring. The default is *false*. 
+Whether physics forces are used to move the object when performing near manipulations. Setting this to *false* will make the object feel more directly connected to the users hand. Setting this to *true* will honor the mass and inertia of the object, but may feel as though the object is connected through a spring. The default is *false*.
 
 ### Smoothing
 
@@ -154,7 +154,6 @@ When a rigidbody is added, collisions should work correctly.
 ### With rigidbody
 
 <img src="Images/ObjectManipulator/MRTK_PhysicsManipulation_Rigidbody.gif" width="500">
-
 
 ## Elastics (Experimental)
 Elastics can be used when manipulating objects via object manipulator. Note that the [elastics system](Elastics/ElasticSystem.md) is still in experimental state. To enable elastics either link an existing elastics manager component or create and link a new elastics manager via the `Add Elastics Manager` button.
