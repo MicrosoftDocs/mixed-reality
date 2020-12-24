@@ -10,16 +10,17 @@ Currently the following MRTK components supporting the [elastics manager](xref:M
 - [Object manipulator](../README_ObjectManipulator.md)
 
 ## Elastics manager
+
 ![Elastic System2](../Images/Elastics/Elastics_Main.gif)
 
-The elastics manager processes passed transforms and feeds them into the elastics system. 
+The elastics manager processes passed transforms and feeds them into the elastics system.
 
 Enabling elastics for custom components can be achieved by two steps:
+
 1. Calling the Initialize method on manipulation start, updating the system with the current host transform.
 1. Querying ApplyHostTransform whenever a elastics calculation should be performed on the updated target transform.
 
 Note that elastics will continue simulating once manipulation ends (through the elastics manager update loop). To block the behavior, elastics auto update [EnableElasticsUpdate](xref:Microsoft.MixedReality.Toolkit.Experimental.Physics.ElasticsManager.EnableElasticsUpdate) can be set to false.
-
 
 By default, the elastics manager component, when added to a game object, won't have elastics enabled for any transforms type.
 The field `Manipulation types using elastic feedback` needs to be enabled for specific transform types to create elastics configuration and extents for the selected type.
@@ -36,7 +37,7 @@ Elastics manager offers configuration objects options for the following transfor
 - Scale Elastic
 
 #### Elastic configuration object
-A elastics configuration defines properties for a damped harmonic oscillator differential system. 
+A elastics configuration defines properties for a damped harmonic oscillator differential system.
 The following properties can be adjusted but already come with a set of defaults in MRTK:
 - **Mass**: mass of the simulated oscillator element.
 - **HandK**: hand spring constant.

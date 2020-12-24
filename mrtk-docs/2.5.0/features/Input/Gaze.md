@@ -17,7 +17,7 @@ placing it in the center of the Holographic Frame and then performing the air ta
 
 This type of gaze is based on where the user's eyes are looking. Eye gaze is only present
 on systems that support eye tracking. See the
-[eye tracking documentation](../../EyeTracking/EyeTracking_Main.md) for more details on how
+[eye tracking documentation](../EyeTracking/EyeTracking_Main.md) for more details on how
 to use eye gaze.
 
 ## GazeProvider
@@ -29,7 +29,7 @@ in the *Pointer* section of the input system profile:
 ![Gaze Configuration Entrypoint](../Images/Input/GazeConfigurationEntrypoint.png)
 
 Like other sources of input, the gaze provider interacts with objects in the scene
-through use of a pointer [(see this document for information on pointers)](../Architecture/InputSystem/ControllersPointersAndFocus.md).
+through use of a pointer [(see this document for information on pointers)](../../architecture/InputSystem/ControllersPointersAndFocus.md).
 In the case of the gaze provider, its pointer is implemented via `InternalGazePointer`
 and is not configured through a profile.
 
