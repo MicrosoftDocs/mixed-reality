@@ -37,10 +37,10 @@ If you are new to to the Git workflow, [check out this introduction from Github]
 
 When adding a bug fix or feature, follow these steps:
 
-1. Implement the bug fix or feature. Instructions for building and deploying MRTK are at [BuildAndDeploy](../BuildAndDeploy.md). Remember to follow the [Coding Guidelines](CodingGuidelines.md).
+1. Implement the bug fix or feature. Instructions for building and deploying MRTK are at [BuildAndDeploy](../updates-deployment/BuildAndDeploy.md). Remember to follow the [Coding Guidelines](../Contributing/CodingGuidelines.md).
 1. If adding a feature, also add an example scene that demonstrates the feature.
 1. If adding an experimental feature, then writing tests and documentation are not necessary. Instead, follow [experimental feature guidelines](ExperimentalFeatures.md).
 1. Add tests to verify the bug fix / feature. Instructions for writing and running tests are at [UnitTests](UnitTests.md).
 1. Ensure the code and feature(s) are documented as described in the [Documentation Guidelines](DocumentationGuide.md).
-1. Ensure the code works as intended on all platforms. Please see [Release notes](../ReleaseNotes.md) for the list of supported platforms. For Windows UWP projects, code must be [WACK compliant](https://developer.microsoft.com/windows/develop/app-certification-kit). To do this, generate a Visual Studio solution, right click on project; **Store** > **Create App Packages**. Follow the prompts and run WACK tests. Make sure they all succeed.
+1. Ensure the code works as intended on all platforms. Please see [Release notes](../packages-releases/ReleaseNotes.md) for the list of supported platforms. For Windows UWP projects, code must be [WACK compliant](https://developer.microsoft.com/windows/develop/app-certification-kit). To do this, generate a Visual Studio solution, right click on project; **Store** > **Create App Packages**. Follow the prompts and run WACK tests. Make sure they all succeed.
 1. Follow the instructions at [Pull Requests](PullRequests.md) when making a pull request.

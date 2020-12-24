@@ -1,3 +1,3 @@
 # Spatial awareness
 
-Read [Spatial Awareness Getting Started](../SpatialAwareness/SpatialAwarenessGettingStarted.md)
+Read [Spatial Awareness Getting Started](../features/SpatialAwareness/SpatialAwarenessGettingStarted.md)
