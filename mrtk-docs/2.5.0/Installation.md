@@ -43,7 +43,7 @@ To get started with the Mixed Reality Toolkit, you will need:
 ### Optional
 
 * [Getting started tutorials](#getting-started-tutorials)
-* [XR SDK getting started guide (Unity 2019.3 or later)](GettingStartedWithMRTKAndXRSDK.md).
+* [XR SDK getting started guide (Unity 2019.3 or later)](configuration/GettingStartedWithMRTKAndXRSDK.md).
 * [Learn about the core building blocks of MRTK](#learn-about-the-core-building-blocks-of-mrtk)
 * [Run the HandInteractionExamples scene in the Unity Editor](#run-the-handinteractionexamples-scene-in-the-unity-editor)
 
