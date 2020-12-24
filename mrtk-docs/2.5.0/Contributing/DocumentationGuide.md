@@ -308,9 +308,9 @@ Performance notes are recommended for CPU and/or GPU heavy components and **may*
 
 ## Breaking changes
 
-Breaking changes documentation is to consist of a top level [file](BreakingChanges.md) which links to each feature area's individual BreakingChanges.md.
+Breaking changes documentation is to consist of a top level [file](BreakingChanges.md) which links to each feature area's individual [BreakingChanges.md](BreakingChanges.md).
 
-The feature area BreakingChanges.md files are to contain the list of all known breaking changes for a given release **as well as** the history of breaking changes from past releases.
+The feature area [BreakingChanges.md](BreakingChanges.md) files are to contain the list of all known breaking changes for a given release **as well as** the history of breaking changes from past releases.
 
 For example:
 
