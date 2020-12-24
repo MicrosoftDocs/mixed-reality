@@ -2,7 +2,7 @@
 
 - [What's new](#whats-new)
 - [Breaking changes](#breaking-changes)
-- [Updating guidance](Updating.md#upgrading-to-a-new-version-of-mrtk)
+- [Updating guidance](../updates-deployment/Updating.md#upgrading-to-a-new-version-of-mrtk)
 - [Known issues](#known-issues)
 
 ## What's new
@@ -14,19 +14,19 @@ The Mixed Reality Toolkit can now be managed using the Unity Package Manager.
 ![MRTK Foundation UPM Package](../features/Images/Packaging/MRTK_FoundationUPM.png)
 
 > [!Note]
-> There are some manual steps required to import the MRTK UPM packages. Please review [Mixed Reality Toolkit and Unity Package Manager](usingupm.md) for more information. 
+> There are some manual steps required to import the MRTK UPM packages. Please review [Mixed Reality Toolkit and Unity Package Manager](usingupm.md) for more information.
 
 ### Oculus Quest XRSDK support
 
 MRTK now supports running Oculus Quest Headsets and Controllers using the native XR SDK pipeline. Hand tracking is also supported with the [Oculus Integration Unity package](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) thanks to [Eric Provencher's](https://twitter.com/prvncher) work on MRTK-Quest!
 
-For instructions on how to deploy your device on the Oculus Quest using the new pipeline, see the [Oculus Quest Setup Guide](CrossPlatform/OculusQuestMRTK.md)
+For instructions on how to deploy your device on the Oculus Quest using the new pipeline, see the [Oculus Quest Setup Guide](../features/CrossPlatform/OculusQuestMRTK.md)
 
 ### Scrolling Object Collection
 
-The MRTK UX component has been upgraded from an experimental feature and offers more freedom for layouting 3D content of different sizes with added support for objects that have no colliders attached. A new option for disabling content masking was also added, making prototyping easier. 
+The MRTK UX component has been upgraded from an experimental feature and offers more freedom for layouting 3D content of different sizes with added support for objects that have no colliders attached. A new option for disabling content masking was also added, making prototyping easier.
 
-See [Scrolling Object Collection](README_ScrollingObjectCollection.md) for more information.
+See [Scrolling Object Collection](../features/README_ScrollingObjectCollection.md) for more information.
 
 ![Scrolling Object Collection](https://user-images.githubusercontent.com/16922045/94465118-51537900-01b7-11eb-8f8b-bf864a8fee03.gif)
 
@@ -42,7 +42,7 @@ The HandInteractionExamples scene now has a configurable shortcut to show a help
 ![Input Simulation Cheat Sheet](https://user-images.githubusercontent.com/13754172/93232433-dea8cd80-f7b4-11ea-8500-eaee202f606f.png)
 
 ### Input Simulation Eye Gaze with mouse
-Users can now use the Mouse for simulating eye tracking. See the `Eye Simulation Mode` field in the input simulation profile and set it to Mouse. This replaces the previous `Simulate Eye Position` field 
+Users can now use the Mouse for simulating eye tracking. See the `Eye Simulation Mode` field in the input simulation profile and set it to Mouse. This replaces the previous `Simulate Eye Position` field
 
 ![Eye Gaze Mouse](https://user-images.githubusercontent.com/39840334/87720928-892b5280-c76a-11ea-9411-73ab69fc756c.gif)
 
@@ -76,16 +76,15 @@ yield return leftHand.SetGesture(ArticulatedHandPose.GestureId.Open);
 ```
 
 For instructions on how to write a test using these TestUtilities, see this section on
-[writing tests](Contributing/UnitTests.md#writing-tests)
+[writing tests](../Contributing/UnitTests.md#writing-tests)
 
 For examples of existing tests that use this infrastructure, see MRTK's [PlayModeTests](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/Tests/PlayModeTests)
-
 
 ### Support for the Leap Motion 4.5.1 Unity Modules
 
 Support for the Leap Motion Unity Modules version 4.5.1 has been added and support for the 4.4.0 assets has been removed. The current supported versions of the Leap Motion Unity Modules are 4.5.0 and 4.5.1.
 
-There is also an additional step for initial Leap Motion integration, see [How to Configure the Leap Motion Hand Tracking in MRTK](CrossPlatform/LeapMotionMRTK.md) for more information.
+There is also an additional step for initial Leap Motion integration, see [How to Configure the Leap Motion Hand Tracking in MRTK](../features/CrossPlatform/LeapMotionMRTK.md) for more information.
 
 ### Spatial Awareness Mesh Observer better handles customization of materials
 
@@ -97,7 +96,7 @@ This enables developers to alter the mesh material and not have the changes over
 
 With the introduction of Unity Package Manger MRTK, MRTK now writes a `link.xml` file to the `Assets/MixedRealityToolkit.Generated` folder, if none is present. It is recommended to add this file (and `link.xml.meta`) be added to source control. Link.xml is used to influence the [managed code stripping](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML) functionality of the Unity linker.
 
-More information on the MRTK link.xml file can be found in the [MRTK and managed code stripping](MRTK_and_managed_code_stripping.md) article.
+More information on the MRTK link.xml file can be found in the [MRTK and managed code stripping](../out-of-scope/MRTK_and_managed_code_stripping.md) article.
 
 ### Unity 2019.3+: MRTK configuration dialog no longer attempts to enable legacy XR support
 
@@ -113,14 +112,14 @@ Unity responsiveness improvements.
 
 In some cases there was a tradeoff that had to be made:
 
-- See [Leap Motion Hand Tracking Configuration](CrossPlatform/LeapMotionMRTK.md) for the extra integration step.
+- See [Leap Motion Hand Tracking Configuration](../features/CrossPlatform/LeapMotionMRTK.md) for the extra integration step.
 - For those who are using ARFoundation, there's now an additional manual step in its getting started steps.
-See [ARFoundation](CrossPlatform/UsingARFoundation.md#install-required-packages) for the new steps.
-- For those who will be using [Holographic Remoting with legacy XR pipeline](Tools/HolographicRemoting.md#legacy-xr-setup-instructions) on HoloLens 2, there is now a [manual step](Tools/HolographicRemoting.md#dotnetwinrt_present-define-written-into-player-settings) to perform.
+See [ARFoundation](../features/CrossPlatform/UsingARFoundation.md#install-required-packages) for the new steps.
+- For those who will be using [Holographic Remoting with legacy XR pipeline](../features/Tools/HolographicRemoting.md#legacy-xr-setup-instructions) on HoloLens 2, there is now a [manual step](../features/Tools/HolographicRemoting.md#dotnetwinrt_present-define-written-into-player-settings) to perform.
 
-###  Bounds control graduated
+### Bounds control graduated
 ![Bounds control](../features/Images/BoundsControl/MRTK_BoundsControl_Main.png)
-[Bounds control](README_BoundsControl.md) graduated out of experimental and comes with a bunch of new features and tons of bug fixes.
+[Bounds control](../features/README_BoundsControl.md) graduated out of experimental and comes with a bunch of new features and tons of bug fixes.
 Here a list of the highlights of this update:
 - properties are split into configurations which makes it easier to set up bounds control
 - configurations can be shared through scriptable objects
@@ -130,20 +129,20 @@ Here a list of the highlights of this update:
 - full constraint support through constraint manager
 - elastics system integration (experimental)
 
-The old bounding box is now deprecated and existing game objects using bounding box can be [upgraded using the migration tool](Tools/MigrationWindow.md) or the [bounding box inspector](README_BoundingBox.md#migrating-to-bounds-control).
+The old bounding box is now deprecated and existing game objects using bounding box can be [upgraded using the migration tool](../features/Tools/MigrationWindow.md) or the [bounding box inspector](../features/README_BoundingBox.md#migrating-to-bounds-control).
 
-###  Constraint manager component
-Constraints can now be used by both, bounds control and object manipulator via the new [constraint manager component](README_ConstraintManager.md). Both components will create a constraint manager per default and process any attached constraints automatically.
+### Constraint manager component
+Constraints can now be used by both, bounds control and object manipulator via the new [constraint manager component](../features/README_ConstraintManager.md). Both components will create a constraint manager per default and process any attached constraints automatically.
 
 Additionally to the automatic behavior constraint manager also comes with a manual mode that lets users decide which constraint should be processed.
-For this reason the way we display constraints in the property inspector changed a bit. 
+For this reason the way we display constraints in the property inspector changed a bit.
 
 <img src="../features/Images/ConstraintManager/ManualSelection.png" width="600">
 
-The constraints that are applied to the component are now shown as a list in the constraint manager component whereas the component using the constraint manager (either [bounds control](README_BoundsControl.md#constraint-system) or [object manipulator](README_ObjectManipulator.md#constraint-manager)) will now show the selected constraint manager and mode (auto or manual). 
-For more information read the [constraint manager](README_ConstraintManager.md) section in our docs.
+The constraints that are applied to the component are now shown as a list in the constraint manager component whereas the component using the constraint manager (either [bounds control](../features/README_BoundsControl.md#constraint-system) or [object manipulator](../features/README_ObjectManipulator.md#constraint-manager)) will now show the selected constraint manager and mode (auto or manual).
+For more information read the [constraint manager](../features/README_ConstraintManager.md) section in our docs.
 
-###  HoloLens 2 Button material update
+### HoloLens 2 Button material update
 Updated HoloLens 2 Button's front cage material to remove black color in MRC.
 
 ![HoloLens 2 button material update](https://user-images.githubusercontent.com/13754172/94341269-dcf7c900-0042-11eb-9028-e55abd2ead67.png)
@@ -161,12 +160,12 @@ Updated pulse shader example for the spatial mesh to match HoloLens 2's shell be
 ### Elastic system - Experimental
 ![Elastic System2](../features/Images/Elastics/Elastics_Main.gif)
 
-MRTK now comes with an [elastic simulation system](Elastics/ElasticSystem.md) that includes a wide variety of extensible and flexible subclasses, offering bindings for 4-dimensional quaternion springs, 3-dimensional volume springs and simple linear spring systems.
+MRTK now comes with an [elastic simulation system](../features/Elastics/ElasticSystem.md) that includes a wide variety of extensible and flexible subclasses, offering bindings for 4-dimensional quaternion springs, 3-dimensional volume springs and simple linear spring systems.
 
 Currently the following MRTK components supporting the [elastics manager](xref:Microsoft.MixedReality.Toolkit.Experimental.Physics.ElasticsManager) can leverage elastics functionality:
 
-- [Bounds control](README_BoundsControl.md#elastics-experimental)
-- [Object manipulator](README_ObjectManipulator.md#elastics-experimental)  
+- [Bounds control](../features/README_BoundsControl.md#elastics-experimental)
+- [Object manipulator](../features/README_ObjectManipulator.md#elastics-experimental)  
 
 <img src="https://user-images.githubusercontent.com/5544935/88151572-568cba00-cbaf-11ea-91c2-d6b51829b638.gif" width="38%">
 <img src="https://user-images.githubusercontent.com/5544935/88151578-58567d80-cbaf-11ea-8f96-d24f2cf0d6e9.gif" width="45.7%">
@@ -177,7 +176,7 @@ An example of joystick interface that can control a large target object.
 ![Joystick](https://user-images.githubusercontent.com/43013191/86156887-769ef100-babb-11ea-85be-ed6a6aed89d2.png)
 
 ### Color picker (Experimental)
-An experimental control that makes it easy to change material colors on any object at runtime. 
+An experimental control that makes it easy to change material colors on any object at runtime.
 ![Color picker](https://user-images.githubusercontent.com/43013191/85468370-3b536e00-b561-11ea-812c-b3f7d43dd999.png)
 
 ![Color picker](https://user-images.githubusercontent.com/43013191/85468994-fa0f8e00-b561-11ea-89f2-0810d1998518.png)
@@ -263,7 +262,7 @@ In some situations (e.g. when using the LeapMotion provider in the Unity Editor)
 Depending on the length of the project path, importing examples via Unity Package Manager may generate FileNotFoundException messages in the Unity Console. The
 cause of this is the path to the "missing" file being longer than MAX_PATH (256 characters). To resolve, please shorten the length of the project path.
 
-### No spatializer was specified. The application will not support Spatial Sound.
+### No spatializer was specified. The application will not support Spatial Sound
 
 A "No spatializer was specified" warning will appear if an audio spatializer is not configured. This can occur if no XR package is installed, as Unity includes spatializers in these pacakges.
 
@@ -274,9 +273,7 @@ To resolve, please ensure that:
 
   ![Select Audio Apatializer](../features/Images/ReleaseNotes/SpatializerSelection.png)
 
-
 ### NullReferenceException: Object reference not set to an instance of an object (SceneTransitionService.Initialize)
-
 
 In some situations, opening `EyeTrackingDemo-00-RootScene` may cause a NullReferenceException in the Initialize method of the SceneTransitionService class.
 This error is due to the Scene Transition Service's configuration profile being unset. To resolve, please use the following steps:
@@ -286,8 +283,7 @@ This error is due to the Scene Transition Service's configuration profile being 
 - If not expanded, expand `Scene Transition Service`
 - Set the value of `Configuration Profile` to **MRTKExamplesHubSceneTransitionServiceProfile**
 
-<img src="Images/ReleaseNotes/FixSceneTransitionProfile.png" width="500px">
-
+<img src="../features/Images/ReleaseNotes/FixSceneTransitionProfile.png" width="500px">
 
 ### Oculus Quest
 

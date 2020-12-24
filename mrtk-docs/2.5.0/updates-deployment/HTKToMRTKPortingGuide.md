@@ -7,7 +7,7 @@
 |                           | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
 | Type                      | Specific events for buttons, with input type info when relevant. | Action / Gesture based input, passed along via events. |
-| Setup                     | Place the InputManager in the scene. | Enable the input system in the [Configuration Profile](MixedRealityConfigurationGuide.md) and specify a concrete input system type. |
+| Setup                     | Place the InputManager in the scene. | Enable the input system in the [Configuration Profile](../out-of-scope/MixedRealityConfigurationGuide.md) and specify a concrete input system type. |
 | Configuration             | Configured in the Inspector, on each individual script in the scene. | Configured via the Mixed Reality Input System Profile and its related profile, listed below. |
 
 Related profiles:
@@ -25,13 +25,13 @@ Platform support components (e.g., Windows Mixed Reality Device Manager) must be
 
 ### Interface and event mappings
 
-Some events no longer have unique events and now contain a [MixedRealityInputAction](Input/InputActions.md). These actions are specified in the Input Actions profile and mapped to specific controllers and platforms in the Controller Mapping profile. Events like `OnInputDown` should now check the MixedRealityInputAction type.
+Some events no longer have unique events and now contain a [MixedRealityInputAction](../features/Input/InputActions.md). These actions are specified in the Input Actions profile and mapped to specific controllers and platforms in the Controller Mapping profile. Events like `OnInputDown` should now check the MixedRealityInputAction type.
 
 Related input systems:
 
-* [Input Overview](Input/Overview.md)
-* [Input Events](Input/InputEvents.md)
-* [Input Pointers](Input/Pointers.md)
+* [Input Overview](../features/Input/Overview.md)
+* [Input Events](../features/Input/InputEvents.md)
+* [Input Pointers](../features/Input/Pointers.md)
 
 | HTK 2017 |  MRTK v2  | Action Mapping |
 |----------|-----------|----------------|
@@ -115,16 +115,16 @@ Related input systems:
 
 |                           | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| Button                     | [Interactable Objects](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [Button](README_Button.md) |
-| Interactable                     | [Interactable Objects](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [Interactable](README_Interactable.md) |
-| Bounding Box             | [Bounding Box](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md) | [Bounding Box](README_BoundingBox.md) |
-| App Bar             | [App Bar](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md) | [App Bar](README_AppBar.md) |
-| One Hand Manipulation (Grb and Move)   | [HandDraggable](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/Interactions/HandDraggable.cs) | [Manipulation Handler](README_ManipulationHandler.md) |
-| Two Hand Manipulation (Grab/Move/Rotate/Scale)             | [TwoHandManipulatable](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/Interactions/TwoHandManipulatable.cs) | [Manipulation Handler](README_ManipulationHandler.md) |
-| Keyboard             | [Keyboard prefab]() | [System Keyboard](README_SystemKeyboard.md) |
-| Tooltip             | [Tooltip](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_TooltipExample.md) | [Tooltip](README_Tooltip.md) |
-| Object Collection             | [Object Collection](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_ObjectCollection.md) | [Object Collection](README_ObjectCollection.md) |
-| Solver             | [Solver](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Utilities/Readme/README_SolverSystem.md) | [Solver](README_Solver.md) |
+| Button                     | [Interactable Objects](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [Button](../features/README_Button.md) |
+| Interactable                     | [Interactable Objects](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [Interactable](../features/README_Interactable.md) |
+| Bounding Box             | [Bounding Box](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md) | [Bounding Box](../features/README_BoundingBox.md) |
+| App Bar             | [App Bar](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md) | [App Bar](../features/README_AppBar.md) |
+| One Hand Manipulation (Grb and Move)   | [HandDraggable](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/Interactions/HandDraggable.cs) | [Manipulation Handler](../features/README_ManipulationHandler.md) |
+| Two Hand Manipulation (Grab/Move/Rotate/Scale)             | [TwoHandManipulatable](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/Interactions/TwoHandManipulatable.cs) | [Manipulation Handler](../features/README_ManipulationHandler.md) |
+| Keyboard             | [Keyboard prefab]() | [System Keyboard](../features/README_SystemKeyboard.md) |
+| Tooltip             | [Tooltip](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_TooltipExample.md) | [Tooltip](../features/README_Tooltip.md) |
+| Object Collection             | [Object Collection](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_ObjectCollection.md) | [Object Collection](../features/README_ObjectCollection.md) |
+| Solver             | [Solver](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Utilities/Readme/README_SolverSystem.md) | [Solver](../features/README_Solver.md) |
 
 ## Utilities
 
@@ -133,7 +133,7 @@ Some Utilities have been reconciled as duplicates with the Solver system. Please
 | HTK 2017 |  MRTK v2  |
 |----------|-----------|
 | Billboard | [`Billboard`](xref:Microsoft.MixedReality.Toolkit.UI.Billboard) |
-| Tagalong | [`RadialView`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.RadialView) or [`Orbital`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.Orbital) [Solver](README_Solver.md) |
-| FixedAngularSize | [`ConstantViewSize`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.ConstantViewSize) [Solver](README_Solver.md) |
-| FpsDisplay | [Diagnostics System](Diagnostics/DiagnosticsSystemGettingStarted.md) (in Configuration Profile) |
-| NearFade | Built-in to [Mixed Reality Toolkit Standard shader](README_MRTKStandardShader.md) |
+| Tagalong | [`RadialView`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.RadialView) or [`Orbital`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.Orbital) [Solver](../features/README_Solver.md) |
+| FixedAngularSize | [`ConstantViewSize`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.ConstantViewSize) [Solver](../features/README_Solver.md) |
+| FpsDisplay | [Diagnostics System](../features/Diagnostics/DiagnosticsSystemGettingStarted.md) (in Configuration Profile) |
+| NearFade | Built-in to [Mixed Reality Toolkit Standard shader](../features/README_MRTKStandardShader.md) |
