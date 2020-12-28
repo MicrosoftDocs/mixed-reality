@@ -1,6 +1,6 @@
 ---
 title: Button
-description: A button gives the user a way to trigger an immediate action. It is one of the most foundational components in mixed reality.
+description: Learn how to trigger an immediate action with buttons, which is one of mixed reality's foundational components.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
@@ -12,8 +12,7 @@ keywords: Mixed Reality, Controls, interaction, ui, ux, mixed reality headset, w
 
 ![Button](images/UX_Hero_Button.jpg)
 
-A button gives the user a way to trigger an immediate action. It is one of the most foundational components in mixed reality. In HoloLens 2, a button has many visual cues and affordances to increase the user's interaction confidence. 
-
+A button lets your users trigger immediate actions in a mixed reality experience. In HoloLens 2, buttons have visual cues and affordances that help increase interaction confidence with users. 
 
 :::row:::
     :::column:::
@@ -39,20 +38,20 @@ A button gives the user a way to trigger an immediate action. It is one of the m
 
 <br>
 
-
 ---
 
 ## Button in MRTK(Mixed Reality Toolkit) for Unity
-**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides various types of button prefabs. You can find shell-style buttons for HoloLens 2 and HoloLens (1st gen) as well as customized examples. HoloLens 2 button prefab contains a lot of detailed affordances that help improve the user's confidence. It includes proximity-based highlight, compressing front cage, and a pulse effect on trigger.
+**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides various types of button prefabs, including shell-style buttons for HoloLens 2 and HoloLens (1st gen). The HoloLens 2 button prefab contains several detailed affordances that help improve user confidence:
 
-* [MRTK - Button](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
+* Proximity-based highlight
+* Compressing front cage
+* Pulse effect on trigger.
 
-
+* Check out the [MRTK - Button](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) for more instructions and customized examples.
 
 <br>
 
 ---
-
 
 ## See also
 
