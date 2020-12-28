@@ -29,7 +29,7 @@ When using **Unity 2019.3** and later the **Enable MSBuild for Unity** is not av
 1. Set the target platform in **File > Build Settings** to **Universal Windows Platform**
 1. Click **Apply**
 1. Open **Window > Package Manager**
-    - Ensure that the **Windows XR Plugin** is not installed if the project isn't using [XR SDK](../GettingStartedWithMRTKAndXRSDK.md), as the legacy **Windows Mixed Reality** package will not function alongside it
+    - Ensure that the **Windows XR Plugin** is not installed if the project isn't using [XR SDK](../../configuration/GettingStartedWithMRTKAndXRSDK.md), as the legacy **Windows Mixed Reality** package will not function alongside it
 1. Open **Edit > Project Settings > Player**
 
     ![Windows Mixed Reality SDK](../Images/Tools/Remoting/WindowsMixedRealitySDK.png)
@@ -83,7 +83,7 @@ Win32Exception: ApplicationName='dotnet', CommandLine='msbuild DotNetAdapter.csp
 
 The solution to this is to ensure that the [.NET Core CLI tools are installed](https://docs.microsoft.com/dotnet/core/tools/?tabs=netcore2x) and reboot the system to force all apps to get a refreshed system path.
 
-If hand joints over remoting are still not working after following the above steps, there might be something misconfigured in the profiles for general hand joints on-device. In that case, please [reach out on one of our help resources](../WelcomeToMRTK.md#getting-help).
+If hand joints over remoting are still not working after following the above steps, there might be something misconfigured in the profiles for general hand joints on-device. In that case, please [reach out on one of our help resources](../../WelcomeToMRTK.md#getting-help).
 
 #### Manual DotNetAdapter installation
 
@@ -110,7 +110,7 @@ In the event that the installation of the DotNetAdapter cannot be performed via 
 
 ### Removing HoloLens 2-specific remoting support
 
-If you're running into conflicts or other issues due to the presence of the DotNetWinRT adapter, please [reach out on one of our help resources](../WelcomeToMRTK.md#getting-help).
+If you're running into conflicts or other issues due to the presence of the DotNetWinRT adapter, please [reach out on one of our help resources](../../WelcomeToMRTK.md#getting-help).
 
 You can also temporarily remove the adapter to workaround your issue via the following steps:
 

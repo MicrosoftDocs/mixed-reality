@@ -4,7 +4,7 @@ Near interactions come in the form of touches and grabs. Touch and grab events a
 
 Three key steps are required to listen for touch and/or grab input events on a particular GameObject.
 
-1. Ensure the relevant pointer is registered in the main [MRTK Configuration Profile](../MixedRealityConfigurationGuide.md).
+1. Ensure the relevant pointer is registered in the main [MRTK Configuration Profile](../../out-of-scope/MixedRealityConfigurationGuide.md).
 1. Ensure the desired GameObject has the appropriate [grab](#add-grab-interactions) or [touch](#add-touch-interactions) script component and [`Unity Collider`](https://docs.unity3d.com/ScriptReference/Collider.html).
 1. Implement an input handler interface on an attached script to the desired GameObject to listen for the [grab](#grab-code-example) or [touch](#touch-code-example) events.
 
