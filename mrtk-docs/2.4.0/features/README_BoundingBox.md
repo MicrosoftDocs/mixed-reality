@@ -140,7 +140,7 @@ Bounding box provides the following events. This example uses these events to pl
 * **Scale Started**: Fires when scaling ends.
 * **Scale Ended**: Fires when scaling ends.
 
-<img src="../Documentation/Images/BoundingBox/MRTK_BoundingBox_Events.png" width="450">
+<img src="Images/BoundingBox/MRTK_BoundingBox_Events.png" width="450">
 
 ## Handle styles
 
