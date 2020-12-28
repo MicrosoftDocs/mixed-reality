@@ -11,8 +11,6 @@ keywords: Mixed Reality, design, comfort, HoloLens 2, HoloLens (1st gen), mixed 
 
 # Comfort
 
-## Overview
-
 During natural viewing, the human visual system relies on multiple sources of information, or “cues,” to interpret 3D shapes and the relative positions of objects. Some cues rely only on a single eye (monocular cues), including [linear perspective](https://en.wikipedia.org/wiki/Perspective_(graphical)), [familiar size](https://en.wikipedia.org/wiki/Size#Perception_of_size), occlusion, [depth-of-field blur](https://en.wikipedia.org/wiki/Depth_of_field), and [accommodation](https://en.wikipedia.org/wiki/Accommodation_(eye)). Other cues rely on both eyes (binocular cues), and include [vergence](https://en.wikipedia.org/wiki/Vergence) (essentially the relative rotations of the eyes required to look at an object) and [binocular disparity](https://en.wikipedia.org/wiki/Stereopsis) (the pattern of differences between the projections of the scene on the back of the two eyes). To ensure maximum comfort on head-mounted displays, it’s important for designers and developers to create and present content in a way that mimics how these cues operate in the natural world. From a physical perspective, it is also important to design content that does not require fatiguing motions of the neck or arms. In this article, we’ll go over key considerations to keep in mind to achieve these goals.
 
 ## Vergence-accommodation conflict
@@ -24,7 +22,6 @@ In most head-mounted displays users will always accommodate to the focal distanc
 <br>
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/-606oZKLa_s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 ### Guidance for holographic devices
 
@@ -48,7 +45,6 @@ When designing content for direct (near) interaction in HoloLens 2, or **in any 
 **We recommend creating a “depth budget” for apps based on the amount of time a user is expected to view content that is near (less than 1.0m) and moving in depth**. An example is to avoid placing the user in those situations more than 25% of the time. If the depth budget is exceeded, we recommend careful user testing to ensure it remains a comfortable experience. 
 
 In general, we also recommend careful testing to ensure any interaction requirements (e.g., velocity of movement, reachability, etc.) at near interaction distances remain comfortable for users. 
-
 
 ### Guidance for immersive devices
 
