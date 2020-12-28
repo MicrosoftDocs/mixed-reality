@@ -24,7 +24,7 @@ For HoloTour, we wanted to take advantage of the spatial sound capabilities of H
 
 We created HoloTour experiences of two different locations: Rome and Machu Picchu. To make these tours feel authentic and compelling, we wanted to capture audio from the locations where we filmed instead of using generic sounds.
 
-### Capture the audio
+### Capturing the audio
 
 In our [case study about capturing the visual content for HoloTour](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md), we talk about the design of our camera rig. It consisted of 14 GoPro cameras in a 3D-printed housing that was designed to fit the tripod. To capture audio, we added a quad-microphone array below the cameras. The sound feeds into a compact four-channel recording unit at the base of the tripod. We chose microphones that did well but were small enough to avoid interfering with the cameras.
 
@@ -37,13 +37,13 @@ One challenge of the camera-array audio is that you're at the mercy of off-camer
 
 Every capture day generates many files. So it was important to develop a system to track which files correspond to a particular location or camera shot. Our recording unit was set up to automatically name files by date and "take" number. We backed up files to external drives at the end of each day. We also found it important to verbally slate the beginning of the audio recordings. This precaution allows easy contextual identification of the content in case file-name problems occur. It was also important to visually slate the camera rig capture, because the video and audio were recorded as separate media and had to be synchronized during post-production.
 
-### Edit the audio
+### Editing the audio
 
 Back at the studio after the capture trip, the first step in assembling a directional and immersive aural experience is to review all the captured audio for a location. We pick the best takes and identify highlights that can be applied during integration. The audio is then edited and cleaned up. For example, a car horn blast that lasts a second or so and repeats a few times might be replaced with quieter ambient audio from the same capture session.
 
 After the video edit for a location is set, the sound designer can synchronize the corresponding audio. At this point, we assess both the camera-rig and mobile sound captures to decide which elements would build the best immersive audio scene. We found it useful to put all the sound elements into an audio editor and build quick linear mock-ups to experiment with different mix ideas. This step gave us better-formed ideas for when it came time to build the actual HoloTour scenes.
 
-### Assemble the scene
+### Assembling the scene
 
 The first step to building a 3D ambient scene is to create a bed of general background ambient looping sounds that will support other features and interactive sound elements in a scene. We take a holistic approach to implementation as determined by the design criteria for any particular scene. Some scenes might index toward using the synchronized camera capture. More "cinematic" moments might require a curated approach that relies on discretely placed sounds, interactive elements, and music.
 
