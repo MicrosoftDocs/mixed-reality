@@ -61,7 +61,7 @@ The HolographicBackplate material is applied to several UI panels in the HoloLen
 
 **Visual complexity and accessibility**
 
-Since holographic objects blend with the physical environment, content or UI legibitlity on transparent or translucent windows could be degraded. Additionally, when transparent holographic objects are overlaid on top of each other, it could make it difficult for the user to interact because of the confusing depth.
+Since holographic objects blend with the physical environment, content or UI legibility on transparent or translucent windows could be degraded. Additionally, when transparent holographic objects are overlaid on top of each other, it could make it difficult for the user to interact because of the confusing depth.
 
 **Performance**
 
@@ -69,7 +69,7 @@ For transparent or translucent objects to render correctly they must be sorted a
 
 **Hologram stability issue with Depth LSR technology**
 
-To improve holographic reprojection, or hologram stability, an application can submit a depth buffer to the system for every rendered frame. When using the depth buffer for reprojection, you need to write a depth buffer for every color rendered pixedl a corresponding depth. Any pixel with a depth value should also have color value. If the above guidance isn't followed, areas of the rendered image that lack valid depth information may be reprojected in a way that produces artifacts, which is often visible as a wave-like distortion.
+To improve holographic reprojection, or hologram stability, an application can submit a depth buffer to the system for every rendered frame. When using the depth buffer for reprojection, you need to write a depth buffer for every color rendered pixel a corresponding depth. Any pixel with a depth value should also have color value. If the above guidance isn't followed, areas of the rendered image that lack valid depth information may be reprojected in a way that produces artifacts, which are often visible as a wave-like distortion.
 
 
 ## Design guidelines

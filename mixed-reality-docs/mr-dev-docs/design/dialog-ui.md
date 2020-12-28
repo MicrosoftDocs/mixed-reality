@@ -11,7 +11,7 @@ keywords: Mixed Reality, HoloLens, UI Controls, interaction, ui, ux, UX Design, 
 
 ![Dialog](images/MRTK_UX_Dialog.jpg)
 
-Dialog controls are UI overlays that provide contextual app information. They often request some kind of action from the user. Use dialogs to notify users of important information or to request confirmation or additional info before an action can be completed.
+Dialog controls are UI overlays that provide contextual app information, often requesting a user action. Use dialogs to give users important information and request confirmation or extra information before an action can be completed.
 
 <br>
 
@@ -27,7 +27,7 @@ MRTK provides dialog control in three sizes with one or two button options. You 
 ![Dialog](images/MRTK_UX_Dialog_Types.jpg)
 
 
-* Please see [MRTK - Dialog](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/Dialog/README_Dialog.html) for more details.
+* For more information, see [MRTK - Dialog](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/Dialog/README_Dialog.html).
 
 <br>
 
