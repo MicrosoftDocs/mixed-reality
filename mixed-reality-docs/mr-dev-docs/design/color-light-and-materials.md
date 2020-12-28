@@ -8,8 +8,8 @@ ms.topic: article
 keywords: Windows Mixed Reality, design, color, light, materials, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit
 ---
 
-
 # Color, light and materials
+
 ![Color, light and materials](images/RemoteRendering.jpg)
 
 Designing content for mixed reality requires careful consideration of color, lighting, and materials for each of the visual assets used in your experience. These decisions can be for both aesthetic purposes, like using light and material to set the tone of an immersive environment, and functional purposes, like using striking colors to alert users of an impending action. Each of these decisions must be weighed against the opportunities and constraints of your experience’s target device.
@@ -23,6 +23,7 @@ Content rendered in immersive headsets will appear visually different when compa
 Always take time to test your holographic experiences in a holographic headset. The appearance of content, even if it is built specifically for holographic devices, will differ as seen on secondary monitors, snapshots, and in spectator view. Remember to walk around experiences with a device, testing the lighting of holograms and observing from all sides (as well as from above and below) how your content is rendered. Be sure to test at a range of brightness settings on the device, as it is unlikely all users will share an assumed default, as well as a diverse set of lighting conditions.
 
 ## Fundamentals of rendering on holographic devices
+
 * **Holographic devices have additive displays** – Holograms are created by adding light to the light from the real world – white will appear brightly, while black will appear transparent.
 
 * **Colors impact varies with the user’s environment** – There are many diverse lighting conditions in a user’s room. Create content with appropriate levels of contrast to help with clarity.
