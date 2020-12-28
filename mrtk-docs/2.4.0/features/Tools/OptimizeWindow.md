@@ -72,5 +72,5 @@ The *Shader Analysis* tab scans the current project's Asset folder for materials
 
 ## See also
 
-- [Performance](../Performance/PerfGettingStarted.md)
-- [Hologram Stabilization](../hologram-stabilization.md)
+- [Performance](../../Performance/PerfGettingStarted.md)
+- [Hologram Stabilization](../../Performance/hologram-stabilization.md)

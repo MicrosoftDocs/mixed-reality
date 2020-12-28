@@ -20,7 +20,7 @@ Two input system services are provided to record and play back input respectivel
 
 [`InputRecordingService`](xref:Microsoft.MixedReality.Toolkit.Input.InputRecordingService) takes data from the main camera transform and active hand controllers and stores it in an internal buffer. When requested this data is then serialized into binary files for storage and later replay.
 
-<a target="_blank" href="../../Documentation/Images/InputSimulation/MRTK_InputAnimation_RecordingDiagram.png">
+<a target="_blank" href="../Images/InputSimulation/MRTK_InputAnimation_RecordingDiagram.png">
   <img src="../Images/InputSimulation/MRTK_InputAnimation_RecordingDiagram.png" title="Recording input animation" width="80%" class="center" />
 </a>
 
@@ -36,7 +36,7 @@ For details on the binary file format see [Input Animation File Format Specifica
 
 [`InputPlaybackService`](xref:Microsoft.MixedReality.Toolkit.Input.InputPlaybackService) reads a binary file with input animation data and then applies this data through the [InputSimulationService](xref:Microsoft.MixedReality.Toolkit.Input.InputSimulationService) to recreate the recorded movements.
 
-<a target="_blank" href="../../Documentation/Images/InputSimulation/MRTK_InputAnimation_PlaybackDiagram.png">
+<a target="_blank" href="../Images/InputSimulation/MRTK_InputAnimation_PlaybackDiagram.png">
   <img src="../Images/InputSimulation/MRTK_InputAnimation_PlaybackDiagram.png" title="Playing back input animation" width="80%" class="center" />
 </a>
 

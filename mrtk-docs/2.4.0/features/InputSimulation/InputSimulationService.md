@@ -14,7 +14,7 @@ Users can use a conventional keyboard and mouse combination to control simulated
 
 ## Enabling the input simulation service
 
-Input simulation is enabled by default in the profiles that ship with MRTK. 
+Input simulation is enabled by default in the profiles that ship with MRTK.
 
 Input simulation is an optional [Mixed Reality service](../../out-of-scope/MixedRealityServices.md) though and can be removed as a data provider in the [Input System profile](../Input/InputProviders.md).
 
