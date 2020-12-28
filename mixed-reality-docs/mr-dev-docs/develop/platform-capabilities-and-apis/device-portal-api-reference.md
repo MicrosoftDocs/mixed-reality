@@ -387,6 +387,9 @@ Stops the current mixed reality recording
 
 ## Mixed Reality Streaming
 
+> [!CAUTION]
+> Because of loopback isolation, you can't connect to Mixed Reality Streaming from inside an app on a device.
+
 HoloLens supports live preview of mixed reality via chunked download of a fragmented mp4.
 
 Mixed reality streams share the same set of parameters to control what is captured:
