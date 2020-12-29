@@ -40,11 +40,11 @@ Core services provide the default implementations for the system service interfa
 
 The MRTK foundation includes the following system services:
 
-- [Boundary System](../Boundary/BoundarySystemGettingStarted.md)
-- [Diagnostic System](../Diagnostics/DiagnosticsSystemGettingStarted.md)
-- [Input System](../Input/Overview.md)
-- [Spatial Awareness System](../SpatialAwareness/SpatialAwarenessGettingStarted.md)
-- [Teleport System](../TeleportSystem/Overview.md)
+- [Boundary System](../features/Boundary/BoundarySystemGettingStarted.md)
+- [Diagnostic System](../features/Diagnostics/DiagnosticsSystemGettingStarted.md)
+- [Input System](../features/Input/Overview.md)
+- [Spatial Awareness System](../features/SpatialAwareness/SpatialAwarenessGettingStarted.md)
+- [Teleport System](../features/TeleportSystem/Overview.md)
 
 * **Feature Assets**
 
@@ -54,16 +54,16 @@ Feature Assets are collections of related functionality delivered as Unity asset
 
 The extensions package contains additional services and components that extend the functionality of the foundation package.
 
-- [Scene Transition Service](../Extensions/SceneTransitionService/SceneTransitionServiceOverview.md)
+- [Scene Transition Service](../features/Extensions/SceneTransitionService/SceneTransitionServiceOverview.md)
 
 ## Examples package
 
-The examples package contains demos, sample scripts, and sample scenes that exercise functionality in the foundation package. This package contains the [HandInteractionExample scene](../README_HandInteractionExamples.md) (pictured below) which contains sample objects
+The examples package contains demos, sample scripts, and sample scenes that exercise functionality in the foundation package. This package contains the [HandInteractionExample scene](../features/README_HandInteractionExamples.md) (pictured below) which contains sample objects
 that respond to various types of hand input (articulated and non-articulated).
 
 ![HandInteractionExample scene](../features/Images/MRTK_Examples.png)
 
-This package also contains eye tracking demos, which are [documented here](../EyeTracking/EyeTracking_ExamplesOverview.md)
+This package also contains eye tracking demos, which are [documented here](../features/EyeTracking/EyeTracking_ExamplesOverview.md)
 
 More generally, any new feature in the MRTK should contain a corresponding example in the examples package, roughly following
 the same folder structure and location.
@@ -73,10 +73,10 @@ the same folder structure and location.
 The tools package contains tools that are useful for creating mixed reality experiences whose code will ultimately not
 ship as part of an application.
 
-- [Dependency Window](../Tools/DependencyWindow.md)
-- [Extension Service Creation Wizard](../Tools/ExtensionServiceCreationWizard.md)
-- [Optimize Window](../Tools/OptimizeWindow.md)
-- [Screenshot Utility](../Tools/ScreenshotUtility.md)
+- [Dependency Window](../features/Tools/DependencyWindow.md)
+- [Extension Service Creation Wizard](../features/Tools/ExtensionServiceCreationWizard.md)
+- [Optimize Window](../features/Tools/OptimizeWindow.md)
+- [Screenshot Utility](../features/Tools/ScreenshotUtility.md)
 
 ## See also
 

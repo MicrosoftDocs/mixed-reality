@@ -1,8 +1,8 @@
 # Mixed Reality and HoloLens Keyboard Helper Classes
 
-MRTK provides several experimental helper components to assist with launching and reading text from the [System Keyboard](../../../../../Documentation/README_SystemKeyboard.md). 
+MRTK provides several experimental helper components to assist with launching and reading text from the [System Keyboard](../../features/README_SystemKeyboard.md). 
 
-Note that the system keyboard will behave according to the target platform's capabilities, for example the keyboard on HoloLens 2 would support direct hand interactions, while the keyboard on HoloLens (1st gen) would support GGV<sup>[1](https://docs.microsoft.com/windows/mixed-reality/gaze)</sup>. Additionally, the system keyboard will not show up when performing [Unity Remoting](../../../../../Documentation/Tools/HolographicRemoting.md) from the editor to a HoloLens.
+Note that the system keyboard will behave according to the target platform's capabilities, for example the keyboard on HoloLens 2 would support direct hand interactions, while the keyboard on HoloLens (1st gen) would support GGV<sup>[1](https://docs.microsoft.com/windows/mixed-reality/gaze)</sup>. Additionally, the system keyboard will not show up when performing [Unity Remoting](../../features/Tools/HolographicRemoting.md) from the editor to a HoloLens.
 
 
 ## MixedRealityKeyboard

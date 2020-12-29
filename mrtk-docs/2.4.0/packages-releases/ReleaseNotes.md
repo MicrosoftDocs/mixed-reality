@@ -2,7 +2,7 @@
 
 - [What's new](#whats-new-in-240)
 - [Breaking changes](#breaking-changes-in-240)
-- [Updating guidance](Updating.md#upgrading-to-a-new-version-of-mrtk)
+- [Updating guidance](upgrading.md#upgrading-to-a-new-version-of-mrtk)
 - [Known issues](#known-issues-in-240)
 
 This release of the Microsoft Mixed Reality Toolkit supports the following devices and platforms.
@@ -34,7 +34,7 @@ Other files can be found on the [GitHub release page](https://github.com/microso
 
 **NuGet requirements**
 
-If importing the [Mixed Reality Toolkit NuGet packages](MRTKNuGetPackage.md), the following software is recommended.
+If importing the [Mixed Reality Toolkit NuGet packages](../reference-docs/MRTKNuGetPackage.md), the following software is recommended.
 
 - [NuGet for Unity 2.0.0 or newer](https://github.com/GlitchEnzo/NuGetForUnity/releases/latest)
 
@@ -42,7 +42,7 @@ If importing the [Mixed Reality Toolkit NuGet packages](MRTKNuGetPackage.md), th
 
 **Ultraleap Hand Tracking Support**
 
-The [Leap Motion Data Provider](CrossPlatform/LeapMotionMRTK.md) enables articulated hand tracking for VR applications and is also useful for rapid prototyping in the editor.  The data provider can be configured to use the Leap Motion Controller mounted on a headset or placed on a desk face up.
+The [Leap Motion Data Provider](../features/CrossPlatform/LeapMotionMRTK.md) enables articulated hand tracking for VR applications and is also useful for rapid prototyping in the editor.  The data provider can be configured to use the Leap Motion Controller mounted on a headset or placed on a desk face up.
 
 A [Leap Motion Controller](https://www.ultraleap.com/product/leap-motion-controller/) is required to use this data provider.
 
@@ -58,7 +58,7 @@ versions and to keep existing code working even as MRTK makes breaking changes.
 **It is generally recommended to run the migration tool after pulling a new version of MRTK** to
 ensure that as much of your project will be auto-adjusted to the latest MRTK code.
 
-The [migration window](Tools/MigrationWindow.md) can be found in 'Mixed Reality Toolkit > Utilities >
+The [migration window](../features/Tools/MigrationWindow.md) can be found in 'Mixed Reality Toolkit > Utilities >
 Migration Window'. It it part of the **Tools** package.
 
 It currently supports:
@@ -90,17 +90,17 @@ This version of MRTK modifies the layout of the MRTK folder structure. This chan
 
 ![MRTK Toolbox](../features/Images/Tools/MRTKToolboxWindow.png)
 
-The [MRTK Toolbox](README_Toolbox.md) is a Unity editor window utility that makes it easy to discover and spawn MRTK UX prefab components into the current scene. Items can be filtered in view by using the search bar at the top of the window. The toolbox window is designed to spawn MRTK out-of-box prefabs into the current scene.
+The [MRTK Toolbox](../features/README_Toolbox.md) is a Unity editor window utility that makes it easy to discover and spawn MRTK UX prefab components into the current scene. Items can be filtered in view by using the search bar at the top of the window. The toolbox window is designed to spawn MRTK out-of-box prefabs into the current scene.
 
 **Tap to Place**
 
-[Tap to Place](README_TapToPlace.md) is a far interaction component used to easily place a game object on surface. Tap to Place uses a combination of two clicks and head movement to place an object.
+[Tap to Place](../features/README_TapToPlace.md) is a far interaction component used to easily place a game object on surface. Tap to Place uses a combination of two clicks and head movement to place an object.
 
 ![TapToPlace](../features/Images/Solver/TapToPlace/TapToPlaceIntroGif.gif)
 
 **Button Config Helper added to Pressable Buttons**
 ![Button Config Helper](https://user-images.githubusercontent.com/9789716/70167111-e3175600-167a-11ea-9c52-444509c06105.gif)
-This new feature makes it easy to change the icon and text of the buttons. Icon supports quad, sprite, and TextMesh Pro's SDF font texture. See MRTK's [Button documentation](README_Button.md#how-to-change-the-icon-and-text) for the details.
+This new feature makes it easy to change the icon and text of the buttons. Icon supports quad, sprite, and TextMesh Pro's SDF font texture. See MRTK's [Button documentation](../features/README_Button.md#how-to-change-the-icon-and-text) for the details.
 
 **New HoloLens 2-style Toggle Buttons - Checkbox, Switch, Radio**
 <br/><img src="https://user-images.githubusercontent.com/13754172/75299797-df631d80-57ea-11ea-8857-8ef647df0aca.gif" width="450">
@@ -148,7 +148,7 @@ This version of MRTK adds three new methods to the [`WindowsApiChecker`](xref:Mi
 
 We have introduced two helper components, [`UI_KeyboardInputField`](xref:Microsoft.MixedReality.Toolkit.Experimental.UI.UI_KeyboardInputField) and [`TMP_KeyboardInputField`](xref:Microsoft.MixedReality.Toolkit.Experimental.UI.TMP_KeyboardInputField) that can be added to text input fields in Unity UI to enable the HoloLens 2 and Windows Mixed Reality Keyboard to show up when the fields are clicked.
 
-For more information, see - [Mixed Reality Keyboard Helpers](../Assets/MRTK/SDK/Experimental/MixedRealityKeyboard/README_MixedRealityKeyboard.md).
+For more information, see - [Mixed Reality Keyboard Helpers](../reference-docs/MixedRealityKeyboard/README_MixedRealityKeyboard.md).
 
 **Grid Object Collection Alignment Options**
 
@@ -192,8 +192,8 @@ The audio spatializer can now be specified in the MRTK configuration dialog. Ins
 
 ![Object manipulator](../features//Images/ManipulationHandler/MRTK_Manipulation_Main.png)
 
-ObjectManipulator now graduated to SDK and is no longer an experimental feature. This control is replacing the existing ManipulationHandler class which is now deprecated. ObjectManipulator comes with a new more flexible constraint system and correctly responds to physics. A full feature list and guide how to set up can be found in [object manipulator documentation](README_ObjectManipulator.md).
-Users can take advantage of the new [migration window](Tools/MigrationWindow.md) to upgrade their existing gameobject using ManipulationHandler to ObjectManipulator
+ObjectManipulator now graduated to SDK and is no longer an experimental feature. This control is replacing the existing ManipulationHandler class which is now deprecated. ObjectManipulator comes with a new more flexible constraint system and correctly responds to physics. A full feature list and guide how to set up can be found in [object manipulator documentation](../features/README_ObjectManipulator.md).
+Users can take advantage of the new [migration window](../features/Tools/MigrationWindow.md) to upgrade their existing gameobject using ManipulationHandler to ObjectManipulator
 
 **Bounds control improvements**
 
@@ -227,7 +227,7 @@ if (CoreServices.InputSystem.GazeProvider is GazeProvider gazeProvider)
 
 This version of MRTK modifies the steps required for eye gaze setup. The _'IsEyeTrackingEnabled'_ checkbox can be found in the gaze settings of the input pointer profile. Checking this box will enable eye based gaze, rather then the default head based gaze.
 
-For more information on these changes and complete instructions for eye tracking setup, please see the [eye tracking](EyeTracking/EyeTracking_BasicSetup.md) article.
+For more information on these changes and complete instructions for eye tracking setup, please see the [eye tracking](../features/EyeTracking/EyeTracking_BasicSetup.md) article.
 
 ### Known issues in 2.4.0
 
@@ -255,11 +255,11 @@ For a more details see [Issue 7948](https://github.com/microsoft/MixedRealityToo
 
 **Applications appearing as a 2D slate on Unity 2019.3**
 
-When using Unity 2019.3, enabling XR support does not configure a default SDK (legacy) or plugin (XR Mangement). This results in applications being constrained to a 2D slate. Details on resolving this can be found in the [Building and Deploying MRTK article](BuildAndDeploy.md#unity-20193-and-hololens).
+When using Unity 2019.3, enabling XR support does not configure a default SDK (legacy) or plugin (XR Mangement). This results in applications being constrained to a 2D slate. Details on resolving this can be found in the [Building and Deploying MRTK article](../updates-deployment/BuildAndDeploy.md#unity-20193-and-hololens).
 
 **Unity 2019.3: ARM build architecture**
 
-There is a [known issue](https://issuetracker.unity3d.com/issues/enabling-graphics-jobs-in-2019-dot-3-x-results-in-a-crash-or-nothing-rendering-on-hololens-2) in Unity 2019.3 that causes errors when selecting ARM as the build architecture in Visual Studio. The recommended work around is to build for ARM64. If that is not an option, please disable **Graphics Jobs** in **Edit** > **Project Settings** > **Player** > **Other Settings**. For more information see [Building and Deploying](BuildAndDeploy.md#unity-20193-and-hololens).
+There is a [known issue](https://issuetracker.unity3d.com/issues/enabling-graphics-jobs-in-2019-dot-3-x-results-in-a-crash-or-nothing-rendering-on-hololens-2) in Unity 2019.3 that causes errors when selecting ARM as the build architecture in Visual Studio. The recommended work around is to build for ARM64. If that is not an option, please disable **Graphics Jobs** in **Edit** > **Project Settings** > **Player** > **Other Settings**. For more information see [Building and Deploying](../updates-deployment/BuildAndDeploy.md#unity-20193-and-hololens).
 
 **Runtime profile swapping**
 

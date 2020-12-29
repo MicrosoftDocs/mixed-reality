@@ -54,7 +54,7 @@ In order to utilize depth-based LSR, there are two important steps that develope
 
 ##### Transparent MRTK Standard shader
 
-For transparent materials using the [MRTK Standard shader](README_MRTKStandardShader.md), select the material to view it in the *Inspector* window. Then click the *Fix Now* button to convert the material to write to depth (i.e Z-Write On).
+For transparent materials using the [MRTK Standard shader](../features/README_MRTKStandardShader.md), select the material to view it in the *Inspector* window. Then click the *Fix Now* button to convert the material to write to depth (i.e Z-Write On).
 
 Before
 
@@ -118,7 +118,7 @@ public void RemoveAnchor()
 
 ## See also
 
-- [Performance](Performance/PerfGettingStarted.md)
+- [Performance](../Performance/PerfGettingStarted.md)
 - [Environment Considerations for HoloLens](https://docs.microsoft.com/windows/mixed-reality/environment-considerations-for-hololens)
 - [Hologram Stability Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/hologram-stability)
 - [Focus point in Unity](https://docs.microsoft.com/windows/mixed-reality/focus-point-in-unity)
