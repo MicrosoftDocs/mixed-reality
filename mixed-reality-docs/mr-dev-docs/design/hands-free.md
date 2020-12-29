@@ -8,13 +8,12 @@ ms.topic: article
 keywords: Mixed Reality, hands-free, gaze, gaze targeting, interaction, design, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, voice input, usability
 ---
 
-
 # Hands-free
 
 ## Scenarios
 
 As outlined in the [interaction model overview](interaction-fundamentals.md), once you have identified your users and their goals, ask yourself what environmental or situational challenges they might face as they work to accomplish their tasks. 
-For example, many users need to use their hands to accomplish their real-world goals, and they will have difficulty interacting with a hands-and-controllers based interface. 
+For example, many users need to use their hands to accomplish their real-world goals, and they will have difficulty interacting with a hands-and-controllers based interface.
 
 Some specific scenarios include: 
 * Being guided through a task, while the user's hands are busy
@@ -25,14 +24,12 @@ Some specific scenarios include:
 * Social awkwardness to perform large hand gestures
 * Tight spaces
 
-
 ## Hands-free modalities
 
 ### [Voice input](voice-input.md)
 
 Using your voice to command and control an interface offers a convenient way to operate hands-free and to use shortcuts to flexibly skip multiple steps if desired. 
 With voice input, the user can simply read any button's name out loud to activate it _("see it, say it")_ and converse with a digital agent who can accomplish tasks for you.
-
 
 ### [Gaze and dwell](gaze-and-dwell.md)
 
@@ -41,7 +38,6 @@ Loud factory environments, privacy, or social norms can all be constraints.
 The gaze + dwell model allows the user to navigate an app without any additional input aside from their eye or head gaze: 
 The user simply keeps gazing (with their head or eyes) at the target and lingers there for a moment to activate it. 
 To learn more about the individual design considerations for gaze + dwell, check out [eye-gaze + dwell](gaze-and-dwell-eyes.md) and [head-gaze + dwell](gaze-and-dwell-head.md).
-
 
 ## Transitioning in and out of hands-free
 
@@ -60,6 +56,7 @@ The user should have the ability to:
 * Switch to the controller using a controller 
 
 ### Create redundant ways to switch modes
+
 While the first principle is about access, the second one is about availability. There should not just be a single way to transition in and out of a mode. 
 
 Some examples would be: 
@@ -67,8 +64,8 @@ Some examples would be:
 * A voice command to transition to, using head-gaze and dwell
 
 ### Add a dash of drama
-A mode switch is a big deal--it is important that when these transitions happen that they be an explicit, even a dramatic switch, to let the user know what happened. 
 
+A mode switch is a big deal--it is important that when these transitions happen that they be an explicit, even a dramatic switch, to let the user know what happened. 
 
 ## Usability checklist
 
@@ -94,8 +91,8 @@ Does the user understand ...
 * Example: Voice targeting is better with object highlighting
 * Example: Voice interactions are better with captions that need to be turned on
 
-
 ## See also
+
 * [Eye tracking on HoloLens 2](eye-tracking.md)
 * [Gaze and commit](gaze-and-commit.md)
 * [Gaze and dwell](gaze-and-dwell.md)
