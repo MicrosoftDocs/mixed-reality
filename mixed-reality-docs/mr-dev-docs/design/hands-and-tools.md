@@ -9,6 +9,7 @@ keywords: Mixed Reality, hands, motion controllers, interaction, design, mixed r
 ---
 
 # Hands and motion controllers
+
 ## Scenarios
 If you choose to adopt this interaction model after reading the [interaction overview](interaction-fundamentals.md), it means that you are developing an application requiring users to use two hands to interact with the holographic world. Your application is going to achieve the goal of removing the boundary between virtual and physical.
 
