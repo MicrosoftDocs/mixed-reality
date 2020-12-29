@@ -7,6 +7,7 @@ ms.date: 08/27/2019
 ms.topic: article
 keywords: hand, menu, button, quick access, layout, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit
 ---
+
 # Hand menu
 
 ![Ulnar side hand location](images/UX_Hero_HandMenu.jpg)
@@ -19,10 +20,10 @@ You'll find our recommended best practices for working with hand menus in the li
 
 <br>
 
-
 ---
 
 ## Best practices
+
 **Keep the number of buttons small** 
 
 Due to the close distance between a hand-locked menu and the eyes and also the user's tendency to focus on a relatively small visual area at any time (the attentional cone of vision is roughly 10 degrees), we recommend keeping the number of buttons small. Based on our exploration, one column with three buttons works well by keeping all the content within the field of view (FOV) even when a user moves their hands to the center of the FOV. 
@@ -46,6 +47,7 @@ If the hand menu buttons are placed too close to the home button, it may acciden
 <br>
 
 ## Hand menu with large and complex UI controls
+
 <img src="images/HandMenu_SizeExample.png" alt="HoloLens perspective of a menu system that always faces the user" width="940px">
 It's recommended to limit the number of buttons or UI controls on hand-attached menus. This is because extended interaction with a large number of UI elements can cause arm fatigue. If your experience requires a large menu, provide an easy way for the user to world lock the menu. One technique we recommend is to world-lock then menu when the hand drops or flips away from the user. A second technique is to allow the user to directly grab the menu with the other hand. When the user releases the menu, the menu should world lock. This way, a user can interact with various UI elements comfortably and confidently over an extended period of time. 
 
@@ -62,7 +64,6 @@ When the menu is world-locked, make sure to provide a way to move the menu, and 
 **Manual grab & pull to world-lock the menu**
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4AJAf]
-
 
 ## How to prevent false activation
 
@@ -86,7 +87,6 @@ In human anatomy, the ulnar nerve is a nerve that runs near the ulna bone. The u
 
 Below are 2 recommended placements based on our explorations:
 
-
 :::row:::
     :::column:::
         ![Ulnar side hand location](images/UlnarSideHandMenu.gif)<br>
@@ -104,15 +104,13 @@ Below are 2 recommended placements based on our explorations:
     :::column-end:::
 :::row-end:::
 
-
-
 <br>
 
 ---
 
 ## Menu positions that are not recommended
-We have done user research with different menus layouts and locations, the following menu locations are **NOT recommended**, find the cons of each study below:
 
+We have done user research with different menus layouts and locations, the following menu locations are **NOT recommended**, find the cons of each study below:
 
 :::row:::
     :::column:::
@@ -165,6 +163,7 @@ We have done user research with different menus layouts and locations, the follo
 ---
 
 ## Hand menu in MRTK (Mixed Reality Toolkit) for Unity
+
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides scripts and example scenes for the hand menu. The HandConstraintPalmUp solver script allows you to attach any objects to the hands with various configurable options. MRTK's hand menu examples include useful options such as flat palm and gaze requirement for preventing false activation.
 
 * [Hand Menu Documentations](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandMenu.html)
@@ -176,7 +175,6 @@ You can try hand menu examples in HoloLens 2 with MRTK Examples Hub app.
 <br>
 
 ---
-
 
 ## See also
 
