@@ -90,5 +90,5 @@ With the latest source from MRTK, you can build the NuGet package locally and co
 
 ## See also
 
-- [Building and Deploying MRTK](BuildAndDeploy.md)
+- [Building and Deploying MRTK](../updates-deployment/BuildAndDeploy.md)
 - [MRTK Package Contents](MRTK_PackageContents.md)
