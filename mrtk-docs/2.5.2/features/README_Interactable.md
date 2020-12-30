@@ -56,19 +56,19 @@ An *Interactable's* enabled property is different than the enabled property conf
 
 **Input Actions**
 
-Select the [input action](./Input/InputActions.md) from the input configuration or controller mapping profile that the *Interactable* component should react to.
+Select the [input action](Input/InputActions.md) from the input configuration or controller mapping profile that the *Interactable* component should react to.
 
 This property can be configured at runtime in code via [`Interactable.InputAction`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.InputAction).
 
 **IsGlobal**
 
-If true, this will mark the component as a global input listener for the selected [input action](./Input/InputActions.md). Default behavior is false which will restrict input to only this *Interactable* collider/GameObject.
+If true, this will mark the component as a global input listener for the selected [input action](Input/InputActions.md). Default behavior is false which will restrict input to only this *Interactable* collider/GameObject.
 
 This property can be configured at runtime in code via [`Interactable.IsGlobal`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.IsGlobal).
 
 **Speech Command**
 
-[Speech command](./Input/Speech.md), from the MRTK Speech Commands Profile, to trigger an OnClick event for voice interaction.
+[Speech command](Input/Speech.md), from the MRTK Speech Commands Profile, to trigger an OnClick event for voice interaction.
 
 This property can be configured at runtime in code via [`Interactable.VoiceCommand`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.VoiceCommand).
 
@@ -354,7 +354,7 @@ public static void AddToggleEvents(Interactable interactable)
 ## See also
 
 * [Visual Themes](VisualThemes.md)
-* [Input Actions](./Input/InputActions.md)
-* [Speech Commands](./Input/Speech.md)
+* [Input Actions](Input/InputActions.md)
+* [Speech Commands](Input/Speech.md)
 * [Buttons](README_Button.md)
 * [MRTK Standard Shader](README_MRTKStandardShader.md)

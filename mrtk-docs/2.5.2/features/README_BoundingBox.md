@@ -189,8 +189,9 @@ A bounding box can be combined with [`ManipulationHandler.cs`](README_Manipulati
 In order for the bounding box edges to behave the same way when moving it using [`ManipulationHandler`](README_ManipulationHandler.md)'s far interaction, it is advised to connect its events for *On Manipulation Started* / *On Manipulation Ended* to `BoundingBox.HighlightWires` / `BoundingBox.UnhighlightWires` respectively, as shown in the screenshot above.
 
 ## Migrating to bounds control
+
 Existing prefabs and instances using [bounding box](README_BoundingBox.md) can be upgraded to the new bounds control via the [migration window](Tools/MigrationWindow.md) which is part of the MRTK tools package.
 
 For upgrading individual instances of bounding box there's also an a migration option inside the property inspector of the component.
 
-<img src="../Documentation/Images/BoundsControl/MRTK_BoundsControl_Migrate.png" width="450">
+<img src="Images/BoundsControl/MRTK_BoundsControl_Migrate.png" width="450">

@@ -5,13 +5,14 @@ Per default, constraint manager will automatically collect all [constraint compo
 However users can opt for configuring the list of applied constraints manually and allowing only a subset of attached constraints to be applied.
 
 Currently the following MRTK UX elements are supporting constraint manager:
+
 - [Bounds control](README_BoundsControl.md)
 - [Object manipulator](README_ObjectManipulator.md)
 
-
 ## Inspector properties and fields
 
-Constraint manager can be operated in two modes: 
+Constraint manager can be operated in two modes:
+
 - Auto constraint selection
 - Manual constraint selection
 
@@ -21,7 +22,6 @@ Constraint manager can be operated in two modes:
 
 The default mode of constraint manager, auto constraint selection, will provide a list of all attached constraint components as well as [go to buttons](#go-to-component) and an [add constraint button](#add-constraint-to-game-object).
 
-
 #### Add constraint to game object
 
 This button allows a constraint component to be added directly from the constraint manager inspector. All constraint types in a project should be visible here. See [transform constraints](#transform-constraints) for more info.
@@ -29,7 +29,6 @@ This button allows a constraint component to be added directly from the constrai
 #### Go to component
 
 All constraints found on the object wil be listed here with a *Go to component* button. This button will cause the inspector to scroll to the selected constraint component so that it can be configured.
-
 
 ### Manual constraint selection
 
@@ -39,12 +38,15 @@ If constraint manager is set to manual mode, only constraints that are linked in
 When enabling manual mode for the first time, constraint manager will populate the list will all available components as a starting point for selecting attached constraint components.
 
 ### Remove entry
+
 This removes the entry from the manually selected list. Note that this option will not remove the constraint component from the game object. Constraint components always need to be removed manually to ensure not accidentally breaking any other component referring to this component.
 
 ### Add entry
+
 Add entry will open a dropdown showing all available constraint components that are not in the manual list yet. By clicking on any of the entries that component will be added to the manual constraint selection.
 
 ### Add new constraint
+
 This option will add a component of the selected type to the game object and add the newly created constraint component to the manual constraint list.
 
 ## Transform constraints
