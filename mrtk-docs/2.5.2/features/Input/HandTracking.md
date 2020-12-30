@@ -15,8 +15,7 @@ By default the hand joint prefabs are simple geometric primitives. These can be 
 > [!WARNING]
 > Avoid using complex scripts or expensive rendering in joint prefabs, since joint objects are transformed on every frame and can have significant performance cost!
 
-
-Default Hand Joint Representation |  Joint Labels 
+Default Hand Joint Representation |  Joint Labels
 :-------------------------:|:-------------------------:
 <img src="../Images/InputSimulation/ArticulatedHandJoints.png" height="300px"  style="display:inline;">  |  <img src="../Images/InputSimulation/MRTK_Core_Input_Hands_JointNames.png" height="300px"  style="display:inline;">
 

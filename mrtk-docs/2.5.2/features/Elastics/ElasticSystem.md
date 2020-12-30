@@ -10,16 +10,17 @@ Currently the following MRTK components supporting the [elastics manager](xref:M
 - [Object manipulator](../README_ObjectManipulator.md)
 
 ## Elastics manager
+
 ![Elastic System2](../Images/Elastics/Elastics_Main.gif)
 
-The elastics manager processes passed transforms and feeds them into the elastics system. 
+The elastics manager processes passed transforms and feeds them into the elastics system.
 
 Enabling elastics for custom components can be achieved by two steps:
+
 1. Calling the Initialize method on manipulation start, updating the system with the current host transform.
 1. Querying ApplyHostTransform whenever a elastics calculation should be performed on the updated target transform.
 
 Note that elastics will continue simulating once manipulation ends (through the elastics manager update loop). To block the behavior, elastics auto update [EnableElasticsUpdate](xref:Microsoft.MixedReality.Toolkit.Experimental.Physics.ElasticsManager.EnableElasticsUpdate) can be set to false.
-
 
 By default, the elastics manager component, when added to a game object, won't have elastics enabled for any transforms type.
 The field `Manipulation types using elastic feedback` needs to be enabled for specific transform types to create elastics configuration and extents for the selected type.
@@ -31,13 +32,16 @@ Similar to [bounds control configurations](../README_BoundsControl.md#configurat
 The elastics manager inspector will indicate whether a configuration is shared or inlined as part of the current instance by showing a message in the property inspector. In addition, shared instances won't be editable directly in the elastics manager property window itself, but instead the asset it's linking to has to be directly modfied to avoid any accidental changes on shared configurations.
 
 Elastics manager offers configuration objects options for the following transform types, each of them represented by a [elastic configuration object](#elastic-configuration-object):
+
 - Translation Elastic
 - Rotation Elastic
 - Scale Elastic
 
 #### Elastic configuration object
-A elastics configuration defines properties for a damped harmonic oscillator differential system. 
+
+A elastics configuration defines properties for a damped harmonic oscillator differential system.
 The following properties can be adjusted but already come with a set of defaults in MRTK:
+
 - **Mass**: mass of the simulated oscillator element.
 - **HandK**: hand spring constant.
 - **EndK**: end cap spring constant.
@@ -45,9 +49,11 @@ The following properties can be adjusted but already come with a set of defaults
 - **Drag**: drag/damper factor, proportional to velocity.
 
 ### Elastics extents
+
 Elastics extents settings vary depending on the type of manipulation. Translation and scale are represented by [volume elastic extents](#volume-elastic-extent) and rotation is represented by a [quaternion elastic extent](#quaternion-elastic-extent).
 
 #### Volume elastic extent
+
 Volume extents define a three dimensional space in which the damped harmonic oscillator is free to move.
 
 ![Elastic Volume Stretch Bounds](../Images/Elastics/Elastics_Volume_Bounds.gif)
@@ -61,6 +67,7 @@ Volume extents define a three dimensional space in which the damped harmonic osc
 ![Elastic Volume Snap Grid](../Images/Elastics/Elastics_Volume_Snap.gif)
 
 #### Quaternion elastic extent
+
 Quaternion extents define a four dimensional rotation space in which the damped harmonic oscillator is free to rotate.
 
 ![Elastic Rotation Example](../Images/Elastics/Elastics_Rotation.gif)
