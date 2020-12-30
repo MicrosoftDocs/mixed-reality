@@ -2,8 +2,8 @@
 title: MRTK tutorials - 2. Initializing your project and deploying your first application
 description: This course shows you how to configure your Unity project for the Mixed Reality Toolkit (MRTK) and how to deploy it to your HoloLens 2.
 author: jessemcculloch
-ms.author: vtieto
-ms.date: 12/30/20
+ms.author: v-hferrone
+ms.date: 12/30/2020
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, TextMeshPro, 
 ms.localizationpriority: high
@@ -25,16 +25,16 @@ In this tutorial, you'll learn how to create a new Unity project, configure it f
 
 1. Launch **Unity Hub**, select the **Projects** tab, and then click the **down arrow** next to the **New** button:
 
-    :::image type="content" source="images/mr-learning-base/base-02-section1-step1-1.png" alt-text="Unity Hub with the "New" button's down arrow highlighted.":::
+![Unity Hub with the "New" button's down arrow highlighted](images/mr-learning-base/base-02-section1-step1-1.png)
 
-1. In the dropdown menu, select the Unity version specified in the [Prerequisites](mr-learning-base-01.md#prerequisites):
+2. In the dropdown menu, select the Unity version specified in the [Prerequisites](mr-learning-base-01.md#prerequisites):
 
-    :::image type="content" source="images/mr-learning-base/base-02-section1-step1-2.png" alt-text="Select the Unity version.":::
+![Select the Unity version](images/mr-learning-base/base-02-section1-step1-2.png)
 
     > [!TIP]
     > If the particular Unity version is not available in Unity Hub, you can initiate the installation from Unity's <a href="https://unity3d.com/get-unity/download/archive" target="_blank">Download Archive</a>.
 
-1. In the **Create a new project** window, do the following:
+3. In the **Create a new project** window, do the following:
 
     * Ensure **Templates** is set to **3D**.
     * In the **Project Name** box, enter a suitable name for your project (for example, "MRTK Tutorials").
@@ -45,7 +45,7 @@ In this tutorial, you'll learn how to create a new Unity project, configure it f
 
     * Click the **Create** button. This creates and launches your new Unity project.
 
-    :::image type="content" source="images/mr-learning-base/base-02-section1-step1-3.png" alt-text="Unity Hub with the "Create a new project" window filled out.":::
+![Unity Hub with the "Create a new project" window filled out](images/mr-learning-base/base-02-section1-step1-3.png)
 
     The status bar keeps you updated on your progress.
 
@@ -55,13 +55,13 @@ In this tutorial, you'll learn how to create a new Unity project, configure it f
 
 1. On the menu bar, select **File** > **Build Settings...** 
 
-    :::image type="content" source="images/mr-learning-base/base-02-section2-step1-1.png" alt-text="Unity Build Settings... menu path.":::
+![Unity Build Settings... menu path](images/mr-learning-base/base-02-section2-step1-1.png)
 
-1. In the **Build Settings** window, select **Universal Windows Platform** and then click the **Switch Platform** button:
+2. In the **Build Settings** window, select **Universal Windows Platform** and then click the **Switch Platform** button:
 
-    :::image type="content" source="images/mr-learning-base/base-02-section2-step1-2.png" alt-text="Unity Build Settings window with UWP selected to switch platform from Standalone.":::
+![Unity Build Settings window with UWP selected to switch platform from Standalone](images/mr-learning-base/base-02-section2-step1-2.png)
 
-1. Wait for Unity to finish switching the platform, and then close the **Build Settings** window.
+3. Wait for Unity to finish switching the platform, and then close the **Build Settings** window.
 
 ## Importing the TextMeshPro Essential Resources
 
@@ -69,11 +69,11 @@ The TextMeshPro Essential Resources are required by MRTK's UI elements. If you a
 
 1. On the menu bar, select **Window** > **TextMeshPro** > **Import TMP Essential Resources**.
 
-    :::image type="content" source="images/mr-learning-base/base-02-section3-step1-1.png" alt-text="Unity Import TMP Essential Resources menu path.":::
+![Unity Import TMP Essential Resources menu path](images/mr-learning-base/base-02-section3-step1-1.png)
 
-1. In the **Import Unity Package** window, click the **All** button to ensure that all the assets are selected, and then click the **Import** button to import the assets:
+2. In the **Import Unity Package** window, click the **All** button to ensure that all the assets are selected, and then click the **Import** button to import the assets:
 
-    :::image type="content" source="images/mr-learning-base/base-02-section3-step1-2.png" alt-text="Unity TMP Essential Resources import window.":::
+![Unity TMP Essential Resources import window](images/mr-learning-base/base-02-section3-step1-2.png)
 
 ## Importing the Mixed Reality Toolkit
 
@@ -81,23 +81,23 @@ The TextMeshPro Essential Resources are required by MRTK's UI elements. If you a
 
     [Microsoft.MixedReality.Toolkit.Unity.Foundation.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.4.0/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.4.0.unitypackage)
 
-1. On the menu bar, select **Assets** > **Import Package** > **Custom Package...**.
-1. In the **Import package...** dialog, navigate to the location of the package you just downloaded, then select it, and then click the **Open** button.
-1. In the **Import Unity Package** window, click the **All** button to ensure that all the assets are selected, and then click the **Import** button to import the assets.
+2. On the menu bar, select **Assets** > **Import Package** > **Custom Package...**.
+3. In the **Import package...** dialog, navigate to the location of the package you just downloaded, then select it, and then click the **Open** button.
+4. In the **Import Unity Package** window, click the **All** button to ensure that all the assets are selected, and then click the **Import** button to import the assets.
 
 ## Selecting MRTK and project settings
 
 After Unity has finished importing the package from the previous section, the **MRTK Project Configurator** window should appear. If it doesn't, you can manually open it by going to **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project**:
 
-:::image type="content" source="images/mr-learning-base/base-02-section5-step1-1.png" alt-text="Unity Configure Unity Project menu path.":::
+![Unity Configure Unity Project menu path](images/mr-learning-base/base-02-section5-step1-1.png)
 
 1. In the **MRTK Project Configurator** window, expand the **Modify Configurations** section, if necessary, and then ensure that all options are selected.
 
-    :::image type="content" source="images/mr-learning-base/base-02-section5-step1-2.png" alt-text="Unity MRTK Project Configurator window with Modify Configurations displayed.":::
+![Unity MRTK Project Configurator window with Modify Configurations displayed](images/mr-learning-base/base-02-section5-step1-2.png)
 
-1. To apply the settings, click the **Apply** button.
+2. To apply the settings, click the **Apply** button.
 
-    :::image type="content" source="images/mr-learning-base/apply.png" alt-text="Click the "Apply button in the MRTK.":::
+![Apply button in the MRTK](images/mr-learning-base/apply.png)
 
     > [!NOTE]
     > You are using Unity's built-in legacy XR instead of the new XR Plugin System because the new system is not fully compatible with the [recommended Unity and MRTK versions](mr-learning-base-01.md#prerequisites) for this tutorial series. If you see any warnings about built-in XR being deprecated, you can ignore them.
@@ -109,35 +109,35 @@ After Unity has finished importing the package from the previous section, the **
     > * Set Single Pass Instanced rendering path: Improves graphics performance by executing the render pipeline for both eyes in the same draw call. To learn more about this topic, you can refer to the [Single-Pass Instanced rendering](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html#single-pass-instanced-rendering) section of MRTK's [Performance](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html) documentation.
     > * Set default Spatial Awareness layer: Creates a Unity Layer named Spatial Awareness and configures MRTK to use this layer for the spatial awareness mesh. To learn more about Unity Layers, you can refer to Unity's <a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">Customizing Your Workspace</a> documentation.
 
-1. On the menu bar, select **Edit** > **Project Settings...** .
+3. On the menu bar, select **Edit** > **Project Settings...** .
 
-1. In the **Project Settings** window, select **Player**, then click the **XR Settings** dropdown, and then select the box next to **Virtual Reality Supported**:
+4. In the **Project Settings** window, select **Player**, then click the **XR Settings** dropdown, and then select the box next to **Virtual Reality Supported**:
 
-    :::image type="content" source="images/mr-learning-base/base-02-section5-step2-2.png" alt-text="Unity XR Settings with Virtual Reality Supported displayed.":::
+![Unity XR Settings with Virtual Reality Supported displayed](images/mr-learning-base/base-02-section5-step2-2.png)
 
     This imports the Windows Mixed Reality SDK:
 
-    :::image type="content" source="images/mr-learning-base/mixed-reality-sdk.png" alt-text="Unity XR Settings with Virtual Reality SDKs displayed.":::
+![Unity XR Settings with Virtual Reality SDKs displayed](images/mr-learning-base/mixed-reality-sdk.png)
 
     After Unity has finished importing the Windows Mixed Reality SDK, the **MRTK Project Configurator** window should appear again. If it doesn't, select **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** to open it.
 
-1. In the **MRTK Project Configurator** window, click the **Audio spatializer** dropdown, and then select **MS HRTF Spatializer**.
+5. In the **MRTK Project Configurator** window, click the **Audio spatializer** dropdown, and then select **MS HRTF Spatializer**.
 
-    :::image type="content" source="images/mr-learning-base/base-02-section5-step2-3.png" alt-text="Project settings with Audio spatializer options displayed.":::
+![Project settings with Audio spatializer options displayed](images/mr-learning-base/base-02-section5-step2-3.png)
 
-1. Click the **Apply** button. This closes the **MRTK Project Configurator** window.
+6. Click the **Apply** button. This closes the **MRTK Project Configurator** window.
 
     > [!TIP]
     > Setting the Audio spatializer property is optional but may improve the audio experience in your project. If you set it to MS HRTF Spatializer, this spatializer plugin will be used when Unity's AudioSource.spatialize property is enabled. To learn more about this topic, you can refer to the Spatial audio tutorials.
 
-1. In the **Project Settings** window, click the **Depth Format** dropdown, and then select **16-bit depth**:
+7. In the **Project Settings** window, click the **Depth Format** dropdown, and then select **16-bit depth**:
 
     :::image type="content" source="images/mr-learning-base/base-02-section5-step2-4.png" alt-text="Unity XR Settings with 16-bit depth selected.":::
 
     > [!TIP]
     > Reducing the Depth Format to 16-bit is optional but may help improve graphics performance in your project. To learn more about this topic, you can refer to the [Depth buffer sharing (HoloLens)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html#depth-buffer-sharing-hololens) section of MRTK's [Performance](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html) documentation.
 
-1. Click the **Publishing Settings** drop-down, and then in the **Package name** box, enter a suitable name (for example, "MRTK-Tutorials-Getting-Started").
+8. Click the **Publishing Settings** drop-down, and then in the **Package name** box, enter a suitable name (for example, "MRTK-Tutorials-Getting-Started").
 
     :::image type="content" source="images/mr-learning-base/base-02-section5-step2-5.png" alt-text="Unity Publishing Settings with Package name configured.":::
 
@@ -148,7 +148,7 @@ After Unity has finished importing the package from the previous section, the **
 
     :::image type="content" source="images/mr-learning-base/product-name.png" alt-text="Unity Project Settings with Product name configured.":::
 
-1. Close the **Project Settings** window.
+9. Close the **Project Settings** window.
 
 ## Creating and configuring the scene
 
