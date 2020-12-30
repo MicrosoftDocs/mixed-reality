@@ -1,6 +1,6 @@
 ---
 title: Azure mixed reality services
-description: Use Azure mixed reality services to create 3D, multi-user and spatially-aware applications that are accessible across HoloLens, iOS, and Android devices.
+description: Use Azure mixed reality services to create 3D, multi-user, and spatially aware applications that are accessible across HoloLens, iOS, and Android devices.
 author: grbury
 ms.author: grbury
 ms.date: 08/21/2019
@@ -8,15 +8,14 @@ ms.topic: overview
 keywords: Mixed Reality, develop, development, HoloLens, Azure services, spatial anchors, speech, vision, remote rendering
 ---
 
-
 # Azure mixed reality services
-Unlock what every human is an expert at—the three-dimensional, physical world around us—with Azure mixed reality services. Help people create, learn, and collaborate more effectively by capturing and surfacing digital information within the context of their work and world. Bring 3D to mobile devices, headsets, and other untethered devices. Using Azure, help ensure that your most sensitive information is protected.
+Unlock what every human is an expert at—the three-dimensional, physical world around us—with Azure mixed reality services. Help people create, learn, and collaborate more effectively with digital information capture and surfacing. Bring 3D to mobile devices, headsets, and other untethered devices. Using Azure, help ensure that your most sensitive information is protected.
 
 ## Multi-user, spatially aware applications using Spatial Anchors
 
 ![ Azure Spatial Anchors image](../design/images/AzureSpatialAnchors.jpg)
 
-Build multi-user, spatially aware mixed reality applications using Spatial Anchors. Create mixed reality apps that map, designate, and recall precise points of interest that are accessible across HoloLens, iOS, and Android devices. Enable wayfinding across spaces to help your users collaborate more efficiently.
+Build multi-user, spatially aware mixed reality applications using Spatial Anchors. Create mixed reality apps that map, designate, and recall precise points of interest accessible across HoloLens, iOS, and Android devices. Enable wayfinding across spaces to help your users collaborate more efficiently.
 
 [Try Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
 
@@ -25,20 +24,19 @@ Build multi-user, spatially aware mixed reality applications using Spatial Ancho
 
 ![ Remote rendering image](../design/images/RemoteRendering.jpg)
 
-In scenarios where every detail matters—industrial plant management, design review for assets like truck engines, pre-operative surgery planning, and more—3D visualization brings that detail to life. It's what helps designers, engineers, doctors, and students better understand complex information and make the right call.
+In scenarios were every detail matters—industrial plant management, design review for assets like truck engines, pre-operative surgery planning, and more—3D visualization brings that detail to life. It's what helps designers, engineers, doctors, and students understand complex information and make the right call.
 
-Today, to run high-quality 3D models on mobile devices and mixed reality headsets, you often need to "decimate" 3D models and simplify them enough to run on target hardware. But this simplification can result in a loss of important detail that's needed in key business and design decisions.
+If you're running high-quality 3D models on mobile devices and mixed reality headsets today, you need to simplify 3D models enough to run on target hardware. This simplification can result in a loss of important detail that's needed in key business and design decisions.
 
-Bring interactive, high-quality 3D models to untethered devices with every detail intact and no compromise on quality using Azure Remote Rendering Preview.
+Azure Remote Rendering Preview brings interactive, high-quality 3D models to untethered devices with every detail intact and no quality compromises.
 
 [Learn more about Azure Remote Rendering](https://azure.microsoft.com/services/remote-rendering)
-
 
 ## Cognitive Services
 
 :::row:::
     :::column:::
-       [![Speech](images/speech.jpg)](https://docs.microsoft.com/azure/cognitive-services/speech-service/)
+       [![Speech bubble icon with blank grey background](images/speech.jpg)](https://docs.microsoft.com/azure/cognitive-services/speech-service/)
     :::column-end:::
     :::column span="2":::
         ### [Speech](https://docs.microsoft.com/azure/cognitive-services/speech-service/)
@@ -50,7 +48,7 @@ Bring interactive, high-quality 3D models to untethered devices with every detai
 
 :::row:::
     :::column:::
-       [![Vision](images/vision.jpg)](https://docs.microsoft.com/azure/cognitive-services/computer-vision/)
+       [![Vision eye graphic with blank grey background](images/vision.jpg)](https://docs.microsoft.com/azure/cognitive-services/computer-vision/)
     :::column-end:::
     :::column span="2":::
         ### [Vision](https://docs.microsoft.com/azure/cognitive-services/computer-vision/)
