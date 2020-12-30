@@ -8,7 +8,6 @@ ms.topic: article
 keywords: Windows Mixed Reality, Style, design, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, scale, holograms
 ---
 
-
 # Scale
 
 A key to displaying content that looks realistic in holographic form is to mimic the visual statistics of the real world as closely as possible. This means incorporating as many of the visual cues as we can that help us (in the real world) understand where objects are, how big they are, and what they’re made of. The scale of an object is one of the most important of those visual cues, giving a viewer a sense of the size of an object as well as cues to its location (especially for objects which have a known size). Further, viewing objects at real scale has been seen as one of the key experience differentiators for mixed reality in general – something that hasn’t been possible on screen-based viewing previously.
