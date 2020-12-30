@@ -32,4 +32,4 @@ The smaller panel along the top lists the names of all detected sources.
 ## See also
 
 - [Creating an input system data provider](../Input/CreateDataProvider.md)
-- [Controller mapping tool](./ControllerMappingTool.md)
+- [Controller mapping tool](ControllerMappingTool.md)

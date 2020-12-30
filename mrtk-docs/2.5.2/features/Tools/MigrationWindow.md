@@ -35,6 +35,6 @@ Pressing the *Migrate* button will update the component targeted by the migratio
 
 ## See also
 
-- [Updating from earlier versions](../Updating.md)
-- [Microsoft Mixed Reality Toolkit releases](../ReleaseNotes.md)
-- [MRTK roadmap](../Contributing/Roadmap.md)
+- [Updating from earlier versions](../../updates-deployment/Updating.md)
+- [Microsoft Mixed Reality Toolkit releases](../../packages-releases/ReleaseNotes.md)
+- [MRTK roadmap](../../contributing/Roadmap.md)

@@ -15,9 +15,9 @@ Users can use a conventional keyboard and mouse combination to control simulated
 
 ## Enabling the input simulation service
 
-Input simulation is enabled by default in the profiles that ship with MRTK. 
+Input simulation is enabled by default in the profiles that ship with MRTK.
 
-Input simulation is an optional [Mixed Reality service](../MixedRealityServices.md) though and can be removed as a data provider in the [Input System profile](../Input/InputProviders.md).
+Input simulation is an optional [Mixed Reality service](../../out-of-scope/MixedRealityServices.md) though and can be removed as a data provider in the [Input System profile](../Input/InputProviders.md).
 
 Under the Input System Data provider configuration, the Input Simulation service can be configured with the following.
 
@@ -27,7 +27,6 @@ Under the Input System Data provider configuration, the Input Simulation service
 > [!NOTE]
 > The Input Simulation service can be used on other platform endpoints such as standalone by changing the **Supported Platform(s)** property to include the desired targets.
 > ![Input Simulation Supported Platforms](../Images/InputSimulation/InputSimulationSupportedPlatforms.gif)
-
 
 ## Input simulation tools window
 
@@ -154,7 +153,7 @@ For manipulating objects with two hands at the same time, the persistent hand mo
 1. Manipulate one hand at a time:
     1. Hold **Space** to control the right hand
     1. Move the hand to where you want to grab the object
-    1. Press the **left mouse button** to activate the *Pinch* gesture. 
+    1. Press the **left mouse button** to activate the *Pinch* gesture.
     1. Release **Space** to stop controlling the right hand. The hand will be frozen in place and be locked into the *Pinch* gesture since it is no longer being manipulated.
 1. Repeat the process with the other hand, grabbing the same object in a second spot.
 1. Now that both hands are grabbing the same object, you can move either of them to perform two-handed manipulation.

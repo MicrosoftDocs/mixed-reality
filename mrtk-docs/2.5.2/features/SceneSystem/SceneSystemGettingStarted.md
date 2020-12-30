@@ -37,7 +37,6 @@ To import use the following steps:
 
 - Select **Import**
 
-
 ### Asset (.unitypackage) files
 
 If the SceneSystemResources folder has been deleted, or was deselected during import, it can be recovered using the following steps:
@@ -48,7 +47,7 @@ If the SceneSystemResources folder has been deleted, or was deselected during im
 
   ![Reimport scene system resources](../Images/SceneSystem/ReimportSceneSystemResources.png)
 
-- Select **Import** 
+- Select **Import**
 
 ## How to use the scene system
 
