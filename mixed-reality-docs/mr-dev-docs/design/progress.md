@@ -8,14 +8,13 @@ ms.topic: article
 keywords: Windows Mixed Reality, design, controls, ui, ux, progress indicator, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit
 ---
 
-
 # Progress indicator
 
 <br>
 
 <img src="images/MRTK_ProgressIndicator.gif" alt="Progress ring example in HoloLens" width="940px">
 
-A progress control provides feedback to the user that a long-running operation is underway. It can mean that the user cannot interact with the app when the progress indicator is visible, and can also indicate how long the wait time might be, depending on the indicator used.
+A progress control provides feedback that a long-running operation is underway. When a progress indicator is visible, users can see the wait time and can't interact with the app.
 
 <br>
 
@@ -23,12 +22,12 @@ A progress control provides feedback to the user that a long-running operation i
 
 ## Types of progress
 
-It is important to provide the user information about what is happening. In mixed reality users can be easily distracted by physical environment or objects if your app does not gives good visual feedback. For situations that take a few seconds, such when data is loading or a scene is updating, it is good idea to show a visual indicator. There are two options to show the user that an operation is underway – a **Progress bar** or a **Progress ring**.
+It's important to provide the user information about what is happening. In mixed reality, users can be easily distracted by the physical environment or objects if your app doesn't have good visual feedback. For situations that take a few seconds, like when data is loading or a scene is updating, it's a good idea to show a visual indicator. There are two options to show the user that an operation is underway – a **Progress bar** or a **Progress ring**.
 
 :::row:::
     :::column:::
         ### Progress bar<br>
-        A Progress bar shows the percentage completed of a task. It should be used during an operation whose duration is known (determinate), but it's progress should not block the user's interaction with the app.<br>
+        A Progress bar shows the percentage completed of a task. It should be used during an operation whose duration is known (determinate), but its progress shouldn't block the user's interaction with the app.<br>
         <br>
         *Image: Progress bar example in HoloLens*
     :::column-end:::
@@ -45,7 +44,7 @@ It is important to provide the user information about what is happening. In mixe
 :::row:::
     :::column:::
         ### Progress ring<br>
-        A Progress ring only has an indeterminate state, and should be used when any further user interaction is blocked until the operation has completed.<br>
+        A Progress ring only has an indeterminate state, and should be used when user interaction is blocked until the operation has completed.<br>
         <br>
         *Image: Progress ring example in HoloLens*
     :::column-end:::
