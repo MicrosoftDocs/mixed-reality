@@ -47,7 +47,7 @@ In this tutorial, you'll learn how to create a new Unity project, configure it f
 
 ![Unity Hub with the "Create a new project" window filled out](images/mr-learning-base/base-02-section1-step1-3.png)
 
-    The status bar keeps you updated on your progress.
+The status bar keeps you updated on your progress.
 
     :::image type="content" source="images/mr-learning-base/base-02-section1-step1-4.png" alt-text="The Unity progress bar keeps you updated on your "create project" status.":::
 
@@ -99,15 +99,15 @@ After Unity has finished importing the package from the previous section, the **
 
 ![Apply button in the MRTK](images/mr-learning-base/apply.png)
 
-    > [!NOTE]
-    > You are using Unity's built-in legacy XR instead of the new XR Plugin System because the new system is not fully compatible with the [recommended Unity and MRTK versions](mr-learning-base-01.md#prerequisites) for this tutorial series. If you see any warnings about built-in XR being deprecated, you can ignore them.
+> [!NOTE]
+> You are using Unity's built-in legacy XR instead of the new XR Plugin System because the new system is not fully compatible with the [recommended Unity and MRTK versions](mr-learning-base-01.md#prerequisites) for this tutorial series. If you see any warnings about built-in XR being deprecated, you can ignore them.
 
-    > [!TIP]
-    > Applying the MRTK Default Settings is optional but strongly recommended as it will help configure some recommended Unity settings:
-    >
-    > * Enable legacy XR: Enables VR for the project.
-    > * Set Single Pass Instanced rendering path: Improves graphics performance by executing the render pipeline for both eyes in the same draw call. To learn more about this topic, you can refer to the [Single-Pass Instanced rendering](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html#single-pass-instanced-rendering) section of MRTK's [Performance](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html) documentation.
-    > * Set default Spatial Awareness layer: Creates a Unity Layer named Spatial Awareness and configures MRTK to use this layer for the spatial awareness mesh. To learn more about Unity Layers, you can refer to Unity's <a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">Customizing Your Workspace</a> documentation.
+> [!TIP]
+> Applying the MRTK Default Settings is optional but strongly recommended as it will help configure some recommended Unity settings:
+>
+> * Enable legacy XR: Enables VR for the project.
+> * Set Single Pass Instanced rendering path: Improves graphics performance by executing the render pipeline for both eyes in the same draw call. To learn more about this topic, you can refer to the [Single-Pass Instanced rendering](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html#single-pass-instanced-rendering) section of MRTK's [Performance](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html) documentation.
+> * Set default Spatial Awareness layer: Creates a Unity Layer named Spatial Awareness and configures MRTK to use this layer for the spatial awareness mesh. To learn more about Unity Layers, you can refer to Unity's <a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">Customizing Your Workspace</a> documentation.
 
 3. On the menu bar, select **Edit** > **Project Settings...** .
 
@@ -115,11 +115,11 @@ After Unity has finished importing the package from the previous section, the **
 
 ![Unity XR Settings with Virtual Reality Supported displayed](images/mr-learning-base/base-02-section5-step2-2.png)
 
-    This imports the Windows Mixed Reality SDK:
+This imports the Windows Mixed Reality SDK:
 
 ![Unity XR Settings with Virtual Reality SDKs displayed](images/mr-learning-base/mixed-reality-sdk.png)
 
-    After Unity has finished importing the Windows Mixed Reality SDK, the **MRTK Project Configurator** window should appear again. If it doesn't, select **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** to open it.
+After Unity has finished importing the Windows Mixed Reality SDK, the **MRTK Project Configurator** window should appear again. If it doesn't, select **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** to open it.
 
 5. In the **MRTK Project Configurator** window, click the **Audio spatializer** dropdown, and then select **MS HRTF Spatializer**.
 
@@ -153,23 +153,23 @@ After Unity has finished importing the package from the previous section, the **
 ## Creating and configuring the scene
 
 1. On the menu bar, select **File** > **New Scene**.
-1. To add the MRTK to the scene, on the menu bar, select **Mixed Reality Toolkit** > **Add to Scene and Configure...**.
+2. To add the MRTK to the scene, on the menu bar, select **Mixed Reality Toolkit** > **Add to Scene and Configure...**.
 
     :::image type="content" source="images/mr-learning-base/base-02-section6-step1-2.png" alt-text="Unity Add to Scene and Configure... menu path.":::
 
-1. In the **Hierarchy** window, ensure that **MixedRealityToolkit** is selected.
+3. In the **Hierarchy** window, ensure that **MixedRealityToolkit** is selected.
 
     :::image type="content" source="images/mr-learning-base/select-mixed-reality-toolkit.png" alt-text="Ensure that MixedRealityTookit is selected.":::
 
-1. In the **Inspector** window's **MixedRealityToolkit** section, verify that the configuration profile is set to **DefaultMixedRealityToolkitConfigurationProfile**:
+4. In the **Inspector** window's **MixedRealityToolkit** section, verify that the configuration profile is set to **DefaultMixedRealityToolkitConfigurationProfile**:
 
     :::image type="content" source="images/mr-learning-base/base-02-section6-step1-3.png" alt-text="Unity MixedRealityToolkit component with DefaultMixedRealityTookitConfigurationProfile selected.":::
 
     > [!IMPORTANT]
     > Typically, you will use the DefaultHoloLens2ConfigurationProfile when developing for HoloLens. However, for this tutorial, you will use the DefaultMixedRealityToolkitConfigurationProfile. In the next tutorial, [Configuring the MRTK profiles](mr-learning-base-03.md), you will change to the DefaultHoloLens2ConfigurationProfile.
 
-1. On the menu bar, select **File** > **Save As...** 
-1. In the **Save Scene** dialog, navigate to your project's **Scenes** folder. In the **File name** box, give your scene a suitable name (for example, "\_GettingStarted\_"), and then click the **Save** button.
+5. On the menu bar, select **File** > **Save As...** 
+6. In the **Save Scene** dialog, navigate to your project's **Scenes** folder. In the **File name** box, give your scene a suitable name (for example, "\_GettingStarted\_"), and then click the **Save** button.
 
     :::image type="content" source="images/mr-learning-base/base-02-section6-step1-5.png" alt-text="Unity save scene Save prompt window.":::
 
@@ -179,20 +179,20 @@ After Unity has finished importing the package from the previous section, the **
 - Your device is in Developer Mode.
 - Your device is paired with your development computer. If it's not, you will see the following dialog box in Visual Studio during the build process:
 
-    :::image type="content" source="images/mr-learning-base/pin-request.png" alt-text="Add your current scene to the "Scenes in Build" list.":::
+![Add your current scene to the "Scenes in Build" list](images/mr-learning-base/pin-request.png)
 
  To learn more about both of these steps, see [Using Visual Studio to deploy and debug](../../platform-capabilities-and-apis/using-visual-studio.md).
 
 1. On the menu bar, select **File** > **Build Settings...**.
-1. In the **Build Settings** window, click the **Add Open Scenes** button to add your current scene to the **Scenes In Build** list.
+2. In the **Build Settings** window, click the **Add Open Scenes** button to add your current scene to the **Scenes In Build** list.
 
-    :::image type="content" source="images/mr-learning-base/base-02-section7-step1-1.png" alt-text="Add your current scene to the "Scenes in Build" list.":::
+![Add your current scene to the "Scenes in Build" list](images/mr-learning-base/base-02-section7-step1-1.png)
 
-1. Click the **Build** button.
+3. Click the **Build** button.
 
     :::image type="content" source="images/mr-learning-base/build-button.png" alt-text="Click the Build button.":::
 
-1. In the **Build Universal Windows Platform** dialog, choose a suitable location to store your build (for example, you may want to create a "Builds" folder in your "MRTK Tutorials" folder). Create a new folder and give it a suitable name (for example, "GettingStarted"), then select the folder, and then click the **Select Folder** button to start the build process.
+4. In the **Build Universal Windows Platform** dialog, choose a suitable location to store your build (for example, you may want to create a "Builds" folder in your "MRTK Tutorials" folder). Create a new folder and give it a suitable name (for example, "GettingStarted"), then select the folder, and then click the **Select Folder** button to start the build process.
 
     :::image type="content" source="images/mr-learning-base/base-02-section7-step1-2.png" alt-text="Unity Build window with your build folder displayed.":::
 
@@ -203,14 +203,14 @@ After Unity has finished importing the package from the previous section, the **
     > [!TIP]
     > You can also deploy to the [HoloLens Emulator](../../platform-capabilities-and-apis/using-the-hololens-emulator.md) or create an [App Package](https://docs.microsoft.com/windows/uwp/packaging/packaging-uwp-apps) for sideloading.
 
-1. When the build process has completed, in File Explorer, navigate to the location where you stored the build, and then double-click the solution file to open it in Visual Studio:
+5. When the build process has completed, in File Explorer, navigate to the location where you stored the build, and then double-click the solution file to open it in Visual Studio:
 
     :::image type="content" source="images/mr-learning-base/base-02-section8-step1-1.png" alt-text="Windows Explorer with newly created Visual Studio solution file selected.":::
 
     > [!NOTE]
     > If Visual Studio asks you to install new components, take a moment to check that you have all the prerequisite components in the **[Install the Tools](../../install-the-tools.md)** documentation.
 
-1. Configure Visual Studio for HoloLens by selecting the **Master** or **Release** configuration, the **ARM64** architecture, and **Device** as the target.
+6. Configure Visual Studio for HoloLens by selecting the **Master** or **Release** configuration, the **ARM64** architecture, and **Device** as the target.
 
     > [!TIP]
     > If you're deploying to HoloLens (1st generation), select the **x86** architecture.
@@ -223,7 +223,7 @@ After Unity has finished importing the package from the previous section, the **
     > [!NOTE]
     > If you don't see Device as a target option, you may need to change the startup project for the Visual Studio solution from the IL2CPP project to the UWP project. To do this, in the Solution Explorer, right-click on YourProjectName (Universal Windows), and then select **Set as StartUp Project**.
 
-1. Connect your HoloLens to your computer, and then do one of the following:
+7. Connect your HoloLens to your computer, and then do one of the following:
 - To build the app, deploy it to your HoloLens, and start it automatically without the Visual Studio debugger attached, on the menu bar, select **Debug** > **Start Without Debugging**.
 
     :::image type="content" source="images/mr-learning-base/base-02-section8-step1-3.png" alt-text="Visual Studio Start Without Debugging menu path.":::
