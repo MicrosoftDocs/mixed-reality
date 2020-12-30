@@ -9,12 +9,12 @@
 
 ## Upgrading to a new version of MRTK
 
-The 2.4.0 release has some changes that may impact application projects. Breaking change details, including mitigation guidance, can be found in the [**Updating 2.3.0 to 2.4.0**](Updating.md#updating-230-to-240) article.
+The 2.4.0 release has some changes that may impact application projects. Breaking change details, including mitigation guidance, can be found in the [**Updating 2.3.0 to 2.4.0**](../updates-deployment/Updating.md#updating-230-to-240) article.
 
 > [!NOTE]
 > At this time, it is not supported to switch between using .unitypackage files and NuGet.
 
-*Starting with 2.4.0, it is strongly recommended to run the [migration tool](Tools/MigrationWindow.md)
+*Starting with 2.4.0, it is strongly recommended to run the [migration tool](../features/Tools/MigrationWindow.md)
 after getting the MRTK update** to auto-fix and upgrade from deprecated components and adjust to
 breaking changes. The migration tool is part of the **Tools** package.
 
@@ -47,7 +47,6 @@ For the smoothest upgrade path, please use the following steps.
     - (Optional) Extensions
     > [!NOTE]
     > If additional extensions had been installed, they may need to be re-imported.
-    
     - (Optional) Examples
 1. Close Unity and delete the **Library** folder. This step is necessary to force Unity to refresh its
    asset database and reconcile existing custom profiles.
@@ -56,11 +55,11 @@ For the smoothest upgrade path, please use the following steps.
     - Select **MixedRealityToolkit -> Add to Scene and Configure**
     - Select **MixedRealityToolkit -> Utilities -> Update -> Controller Mapping Profiles** (only needs to be done once)
             - This will update any custom controller mapping profiles with updated axes and data, while leaving your custom-assigned input actions intact
-1. Run the [migration tool](Tools/MigrationWindow.md) and run the tool on the *Full Project* to ensure that all of your code is updated to the latest.
+1. Run the [migration tool](../features/Tools/MigrationWindow.md) and run the tool on the *Full Project* to ensure that all of your code is updated to the latest.
 
 ### NuGet packages
 
-If your project was created using the [Mixed Reality Toolkit NuGet packages](MRTKNuGetPackage.md), please use the following steps.
+If your project was created using the [Mixed Reality Toolkit NuGet packages](../reference-docs/MRTKNuGetPackage.md), please use the following steps.
 
 1. Select **NuGet > Manage NuGet Packages**
 1. Select the **Online** tab and click **Refresh**
@@ -100,7 +99,7 @@ uses hard coded paths to MRTK resources, they will need to be updated per the fo
 
 This version of MRTK modifies the steps required for eye gaze setup. The _'IsEyeTrackingEnabled'_ checkbox can be found in the gaze settings of the input pointer profile. Checking this box will enable eye based gaze, rather then the default head based gaze.
 
-For more information on these changes and complete instructions for eye tracking setup, please see the [eye tracking](EyeTracking/EyeTracking_BasicSetup.md) article.
+For more information on these changes and complete instructions for eye tracking setup, please see the [eye tracking](../features/EyeTracking/EyeTracking_BasicSetup.md) article.
 
 ### API changes in 2.4.0
 
@@ -331,7 +330,7 @@ The input simulation system has been upgraded, which changes a few settings in t
 1. Keys for rotating hands have been removed, hand rotation is now controlled by the mouse as well. Holding `HandRotateButton` (Ctrl) together with the left/right hand manipulation key (LShift/Space) will enable hand rotation.
 1. A new axis "UpDown" has been introduced to the input axis list. This controls camera movement in the vertical and defaults to Q/E keys as well as the controller trigger buttons.
 
-For more information on these changes, please see the [input simulation service](InputSimulation/InputSimulationService.md) article.
+For more information on these changes, please see the [input simulation service](../features/InputSimulation/InputSimulationService.md) article.
 
 **Mouse data provider profile**
 
