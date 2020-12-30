@@ -8,7 +8,6 @@ ms.topic: article
 keywords: Scene understanding, Spatial Mapping, Windows Mixed Reality, Unity, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, occlusion, SDK
 ---
 
-
 # Scene understanding
 
 Scene understanding provides Mixed Reality developers with a structured, high-level environment representation designed to make developing for environmentally aware applications intuitive. Scene understanding does this by combining the power of existing mixed reality runtimes, such as the highly accurate less structured [spatial mapping](spatial-mapping.md) and new AI driven runtimes. By combining these technologies, Scene understanding generates representations of 3D environments that are similar to those you may have used in frameworks such as Unity or ARKit/ARCore. The Scene understanding entry point begins with a Scene Observer, which is called by your application to compute a new scene. Today, the technology is capable of generating 3 distinct but related object categories: simplified watertight environment meshes that infer the planar room structure without clutter, plane regions for placement that we call Quads, and a snapshot of the [spatial mapping](spatial-mapping.md) mesh that aligns with the Quads/Watertight data that we surface.
@@ -35,9 +34,7 @@ If you do not have a device and wish to access sample scenes to try Scene Unders
 
 If you are looking for specific details on how to develop for Scene Understanding or details on how Scene understanding works and how to develop for it, see the [Scene Understanding SDK overview](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md) documentation.
 
-
 ### Sample
-
 
 ## Device support
 
