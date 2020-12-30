@@ -2,7 +2,7 @@
 title: MRTK tutorials - 2. Initializing your project and deploying your first application
 description: This course shows you how to configure your Unity project for the Mixed Reality Toolkit (MRTK) and how to deploy it to your HoloLens 2.
 author: jessemcculloch
-ms.author: v-hferrone
+ms.author: v-vtieto
 ms.date: 12/30/2020
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, TextMeshPro, 
