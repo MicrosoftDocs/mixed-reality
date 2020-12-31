@@ -16,7 +16,7 @@ Spatial mapping provides a detailed representation of real-world surfaces in the
 
 >[!VIDEO https://www.youtube.com/embed/zff2aQ1RaVo]
 
-## Device support
+## Device supports
 
 <table>
     <colgroup>
@@ -44,7 +44,7 @@ Spatial mapping provides a detailed representation of real-world surfaces in the
 
 Spatial mapping makes it possible to place objects on real surfaces. This helps anchor objects in the user's world and takes advantage of real world depth cues. Occluding your holograms based on other holograms and real world objects helps convince the user that these holograms are actually in their space. Holograms floating in space or moving with the user won't feel as real. When possible, place items for comfort.
 
-Visualize surfaces when placing or moving holograms (use a projected grid). This will help the user know where they can best place their holograms, and shows the user if the spot they're trying to place the hologram hasn't been mapped yet. You can "billboard items" toward the user if they end up at too much of an angle.
+Visualize surfaces when placing or moving holograms (use a projected grid). This helps users know where they can best place their holograms, and shows if the spot they're trying to place the hologram isn't mapped. You can "billboard items" toward the user if they end up at too much of an angle.
 
 ## Conceptual overview
 
@@ -87,7 +87,7 @@ Constraining the placement of holograms (or more generally, any selection of spa
 
 An important caveat here's that when an application infers distance from direction (for example by doing a raycast along the user's gaze direction to find the nearest spatial surface), this must yield results that the user can reliably predict. Otherwise, the user will lose their sense of control and this can quickly become frustrating. One method that helps with this is to do multiple raycasts instead of just one. The aggregate results should be smoother and more predictable, less susceptible to influence from transient 'outlier' results (as can be caused by rays passing through tiny holes or hitting small bits of geometry that the user isn't aware of). Aggregation or smoothing can also be performed over time; for example, you can limit the maximum speed at which a hologram can vary in distance from the user. Simply limiting the minimum and maximum distance value can also help, so the hologram being moved doesn't suddenly fly away into the distance or come crashing back into the user's face.
 
-Applications can also use the shape and direction of surfaces to guide hologram placement. A holographic chair shouldn't penetrate through walls and should sit flush with the floor even if it's slightly uneven. This kind of functionality would likely rely upon the use of physics collisions rather than just raycasts, however similar concerns will apply. If the hologram being placed has many small polygons that stick out, like the legs on a chair, it may make sense to expand the physics representation of those polygons to something wider and smoother so that they're more able to slide over spatial surfaces without snagging.
+Applications can also use the shape and direction of surfaces to guide hologram placement. A holographic chair shouldn't penetrate through walls and should sit flush with the floor even if it's slightly uneven. This kind of functionality would likely rely upon the use of physics collisions rather than raycasts, however similar concerns will apply. If the hologram being placed has many small polygons that stick out, like the legs on a chair, it may make sense to expand the physics representation of those polygons to something wider and smoother so that they're more able to slide over spatial surfaces without snagging.
 
 At its extreme, user input can be simplified away entirely and spatial surfaces can be used to do entirely automatic hologram placement. For example, the application could place a holographic light-switch somewhere on the wall for the user to press. The same caveat about predictability applies doubly here; if the user expects control over hologram placement, but the application doesn't always place holograms where they expect (if the light-switch appears somewhere that the user can't reach), then this will be a frustrating experience. It can actually be worse to do automatic placement that requires user correction some of the time, than to just require the user to always do placement themselves; because successful automatic placement is *expected*, manual correction feels like a burden!
 
@@ -103,7 +103,7 @@ Occlusion also provides information to the user; when a hologram appears to be o
 
 Occlusion can also be used to prime expectations for a natural user interface based upon familiar physical interactions; if a hologram is occluded by a surface it is because that surface is solid, so the user should expect that the hologram will *collide* with that surface and not pass through it.
 
-Sometimes, occlusion of holograms is undesirable. If a user needs to interact with a hologram, then they need to see it - even if it is behind a real-world surface. In such cases, it usually makes sense to render such a hologram differently when it's occluded (for example, by reducing its brightness). This way, the user will be able to visually locate the hologram, but they will still be aware that it is behind something.
+Sometimes, occlusion of holograms is undesirable. If a user needs to interact with a hologram, then they need to see it - even if it is behind a real-world surface. In such cases, it usually makes sense to render such a hologram differently when it's occluded (for example, by reducing its brightness). This way, the user can visually locate the hologram, but they'll still know it's behind something.
 
 ### Physics
 
