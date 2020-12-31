@@ -92,12 +92,12 @@ Each of the individual profiles are detailed below:
 
 * Focus Settings
 * [Input actions settings](#input-actions-settings)
-* [Input actions rules](#inputactionrules)
-* [Pointer configuration](#pointer)
-* [Gestures configuration](#gestures)
-* [Speech commands](#speech)
-* [Controller mapping configuration](#mapping)
-* [Controller visualization settings](#visualization)
+* [Input actions rules](#input-actions-rules)
+* [Pointer configuration](#Pointer-configuration)
+* [Gestures configuration](#Gestures-configuration)
+* [Speech commands](#Speech-commands)
+* [Controller mapping configuration](#Controller-mapping-configuration)
+* [Controller visualization settings](#Controller-visualization-settings)
 
 ---
 <a name="boundary"></a>
@@ -123,7 +123,7 @@ The Mixed Reality Project provides a full featured Teleportation system for mana
 ## Spatial awareness settings
 
 The Mixed Reality Project provides a rebuilt spatial awareness system for working with spatial scanning systems in the project which is selected by default.
-You can view the architecture behind the [MRTK Spatial awareness system here](../Documentation/Architecture/SpatialAwareness.md).
+You can view the architecture behind the [MRTK Spatial awareness system here](../architecture/SpatialAwareness.md).
 
 <img src="../features/Images/MixedRealityToolkitConfigurationProfileScreens/MRTK_SpatialAwarenessSystemSelection.png" width="650px" style="display:block;">
 
@@ -154,7 +154,7 @@ The diagnostics profile provides several simple systems to monitor whilst the pr
 
 ## Scene system settings
 
-The MRTK provides this optional service to help you manage complex additive scene loading / unloading. To decide if the Scene System would be a good fit for your project, read the [Scene System Getting Started Guide.](SceneSystem/SceneSystemGettingStarted.md)
+The MRTK provides this optional service to help you manage complex additive scene loading / unloading. To decide if the Scene System would be a good fit for your project, read the [Scene System Getting Started Guide.](../features/SceneSystem/SceneSystemGettingStarted.md)
 
 <img src="../features/Images/MixedRealityToolkitConfigurationProfileScreens/MRTK_SceneSystemProfile.png" width="650px" style="display:block;">
 
@@ -319,7 +319,7 @@ You can enable service inspectors by checking *Use Service Inspectors* under *Ed
 
 ### Depth buffer renderer
 
-Sharing the depth buffer with some mixed reality platforms can improve [hologram stabilization](hologram-stabilization.md). For example, the Windows Mixed Reality platform can modify the rendered scene per-pixel to account for subtle head movements during the time it took to render a frame. However, these techniques require depth buffers with accurate data to know where and how far geometry is from the user.
+Sharing the depth buffer with some mixed reality platforms can improve [hologram stabilization](../performance/hologram-stabilization.md). For example, the Windows Mixed Reality platform can modify the rendered scene per-pixel to account for subtle head movements during the time it took to render a frame. However, these techniques require depth buffers with accurate data to know where and how far geometry is from the user.
 
 To ensure a scene renders all necessary data to the depth buffer, developers can toggle the *Render Depth Buffer* feature under *Editor Settings* in the Configuration Profile. This will take the current depth buffer and render it as color to the scene view by applying a post-processing effect, [`DepthBufferRenderer`](xref:Microsoft.MixedReality.Toolkit.Rendering.DepthBufferRenderer), to the main camera.
 
@@ -378,4 +378,4 @@ whether or not the camera is opaque/transparent), to figure out which profile to
 
 ## See also
 
-* [Hologram Stabilization](hologram-stabilization.md)
+* [Hologram Stabilization](../performance/hologram-stabilization.md)

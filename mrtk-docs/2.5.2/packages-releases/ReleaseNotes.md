@@ -8,7 +8,7 @@
 > [!IMPORTANT]
 > There is a known compiler issue that impacts applications built for Microsoft HoloLens 2 using
 > ARM64. This issue is fixed by updating Visual Studio 2019 to version 16.8 or later. If you are unable to update Visual Studio, 
-> please import the `com.microsoft.mixedreality.toolkit.tools` package to apply 
+> please import the `com.microsoft.mixedreality.toolkit.tools` package to apply
 > a workaround.
 
 ## What's new
