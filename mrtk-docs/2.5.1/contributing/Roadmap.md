@@ -45,6 +45,7 @@ Quality and stability are the top priority for this and all Microsoft Mixed Real
 **User Experience**
 
 We're listening to your feedback about MRTK and have continued plans for:
+
 - Bug fixes
 - Making MRTK UX controls easier to understand
 - HoloLens Shell parity

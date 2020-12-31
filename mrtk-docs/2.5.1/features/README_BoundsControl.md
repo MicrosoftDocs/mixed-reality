@@ -37,22 +37,27 @@ Sets a box collider from the object for bounds computation.
 Adds a padding to the collider bounds used to calculate the extents of the control. This will influence not only interaction but also impact the visuals.
 
 ### Flatten axis
+
 Indicates whether the control is flattened in one of the axes, making it 2 dimensional and disallowing manipulation along that axis. This feature can be used for thin objects like slates.
 If flatten axis is set to *Flatten Auto* the script will automatically pick the axis with the smallest extent as flatten axis.
 
 ### Smoothing
+
 The smoothing section allows to configure smoothing behavior for scale and rotate of the control.
 
 ### Visuals
+
 The appearance of bounds control can be configured by modifying one of the corresponding visuals configurations.
 Visual configurations are either linked or inlined scriptable objects and are described in more detail in the [configuration object section](#configuration-objects).
 
 ## Configuration Objects
+
 The control comes with a set of configuration objects that can be stored as scriptable objects and shared between different instances or prefabs. Configurations can be shared and linked either as individual scriptable asset files or nested scriptable assets inside of prefabs. Further configurations can also be defined directly on the instance without linking to an external or nested scriptable asset.
 
 The bounds control inspector will indicate whether a configuration is shared or inlined as part of the current instance by showing a message in the property inspector. In addition shared instances won't be editable directly in the bounds control property window itself, but instead the asset it's linking to has to be directly modfied to avoid any accidental changes on shared configurations.
 
 Currently bounds control offers configuration objects options for the following features:
+
 - Handles
   - [Scale handles](#scale-handles-configuration)
   - [Rotation handles](#rotation-handles-configuration)
@@ -62,6 +67,7 @@ Currently bounds control offers configuration objects options for the following 
 - [Proximity effect](#proximity-effect-configuration)
 
 ### Box configuration
+
 The box configuration is responsible for rendering a solid box with bounds defined via collider size and box padding. The following properties can be set up:
 
 - **Box material**: defines the material applied to the rendered box when no interaction takes place. A box will only be rendered if this material is set.
@@ -69,6 +75,7 @@ The box configuration is responsible for rendering a solid box with bounds defin
 - **Flatten axis display scale**: a scale that is applied to the box display if one of the axes is [flattened](#flatten-axis).
 
 ### Scale handles configuration
+
 This property drawer allows to modify behavior and visualization of scale handles of bounds control.
 
 - **Handle material**: material applied to the handles.
@@ -83,6 +90,7 @@ This property drawer allows to modify behavior and visualization of scale handle
 - **Scale behavior**: can be set to uniform or non-uniform scaling.
 
 ### Rotation handles configuration
+
 This configuration defines the rotation handle behavior.
 
 - **Handle material**: material applied to the handles.
@@ -98,6 +106,7 @@ This configuration defines the rotation handle behavior.
 - **Show handle for Z**: controls visibility of the handle for Z axis.
 
 ### Translation handles configuration
+
 Allows enabling and configuring translation handles for bounds control. Note that translation handles are disabled per default.
 
 - **Handle material**: material applied to the handles.
@@ -113,6 +122,7 @@ Allows enabling and configuring translation handles for bounds control. Note tha
 - **Show handle for Z**: controls visibility of the handle for Z axis.
 
 ### <a name="links-configuration">Links configuration (wireframe)</a>
+
 The links configuration enables the wireframe feature of bounds control. The following properties can be configured:
 
 - **Wireframe material**: the material applied to the wireframe mesh.
@@ -121,6 +131,7 @@ The links configuration enables the wireframe feature of bounds control. The fol
 - **Show wireframe**: controls visibility of the wireframe.
 
 ### Proximity effect configuration
+
 Show and hide the handles with animation based on the distance to the hands. It has two-step scaling animation. Defaults are set to HoloLens 2 style behavior.
 
 <img src="../features/Images/BoundsControl/MRTK_BoundsControl_Proximity.png">
@@ -136,6 +147,7 @@ Show and hide the handles with animation based on the distance to the hands. It 
 - **Close Grow Rate**: Rate a proximity scaled object scales when the hand moves from close proximity to object center.
 
 ## Constraint System
+
 Bounds control supports using the [constraint manager](README_ConstraintManager.md) to limit or modify translation, rotation or scaling behavior while using bounds control handles.
 
 The property inspector will show all available constraint managers attached to the same game object in a dropdown with an option to scroll and highlight the selected constraint manager.
@@ -156,6 +168,7 @@ Bounds control provides the following events. This example uses these events to 
 <img src="../features/Images/BoundsControl/MRTK_BoundsControl_Events.png" width="450">
 
 ## Elastics (Experimental)
+
 Elastics can be used when manipulating objects via bounds control. Note that the [elastics system](Elastics/ElasticSystem.md) is still in experimental state. To enable elastics either link an existing elastics manager component or create and link a new elastics manager via the `Add Elastics Manager` button.
 
 <img src="Images/BoundsControl/MRTK_BoundsControl_Elastics.png" width="450">
@@ -280,6 +293,7 @@ private void PutABoundsControlAroundIt(GameObject target)
 ```
 
 ## Migrating from Bounding Box
+
 Existing prefabs and instances using [bounding box](README_BoundingBox.md) can be upgraded to the new bounds control via the [migration window](Tools/MigrationWindow.md) which is part of the MRTK tools package.
 
 For upgrading individual instances of bounding box there's also an a migration option inside the property inspector of the component.

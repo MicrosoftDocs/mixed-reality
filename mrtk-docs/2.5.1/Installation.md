@@ -129,7 +129,7 @@ To create a **HoloLens application**, switch to the Universal Windows Platform:
     * The Main Camera is moved as a child to the Playspace - Which allows the playspace to manage the camera in conjunction with the SDKs.
 
     >[!NOTE]
-    > While working in your scene, **DO NOT move the Main Camera** or the **MixedRealityPlayspace**. These are controlled by the active SDK and the MRTK respectively. Any settings you make to the Main Camera or MixedRealityPlayspace transforms will at best be overwritten, and at worst result in undefined behavior. 
+    > While working in your scene, **DO NOT move the Main Camera** or the **MixedRealityPlayspace**. These are controlled by the active SDK and the MRTK respectively. Any settings you make to the Main Camera or MixedRealityPlayspace transforms will at best be overwritten, and at worst result in undefined behavior.
     >
     > The entire rig, Camera and Playspace, can be moved by adding another GameObject to the scene, and making it the parent of the MixedRealityPlayspace. When that object is moved, the Playspace and Camera will follow loosely behind, subject to the additional local transform changes made by the active SDK and the MRTK.
     >
@@ -138,7 +138,6 @@ To create a **HoloLens application**, switch to the Universal Windows Platform:
     > Further discussion of AR/VR camera rigs can be found in [Unity's documentation](https://docs.unity3d.com/Packages/com.unity.xr.legacyinputhelpers@2.1/manual/index.html#xr-rig-explanation) and elsewhere.
 
 1. **Press Play** and test out hand simulation by pressing the **spacebar**. You can open the keyboard shorcut reference by pressing **CTRL+H key**.
-
 
 You are now ready to build and deploy to device! Follow the steps instructions at [Build and Deploy MRTK](updates-deployment/BuildAndDeploy.md).
 
@@ -149,6 +148,7 @@ The Hand Interaction Examples scene is a great place to experience core spatial 
 [![HandInteractionExample scene](../../mrtk-docs/2.5.1/features/Images/MRTK_Examples.png)](README_HandInteractionExamples.md)
 
 To try the scene, do the following steps.
+
 1. Make sure to import **Microsoft.MixedRealityToolkit.Unity.Examples.unitypackage** package into your project.
 
 1. Open the **HandInteractionExamples** scene under `Assets/MRTK/Examples/Demos/HandTracking/Scenes/HandInteractionExamples`
@@ -206,14 +206,13 @@ If you are new to MRTK, or MR development, we recommend you check out the [Getti
 - Check out MR Dev Day 2020's session video
 [MRTK's UX Building Blocks](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/MRTKs-UX-Building-Blocks)
 
-
 ## Next steps
 
 Here are some suggested next steps:
 
 * Check out [MRTK 101: How to use Mixed Reality Toolkit Unity for Basic Interactions](https://docs.microsoft.com/windows/mixed-reality/mrtk-101) to learn about how to achieve common spatial interactions such as grab, move, scale, and rotate.
 * Learn about the UX controls available in MRTK in [UI and interaction building blocks](reference-docs/README.md#ux-building-blocks).
-* Try [MRTK Examples Hub](features/README_ExampleHub.md) and [Designing Holograms](https://www.microsoft.com/en-us/p/designing-holograms/9nxwnjklrzwd) app which can be downloaded from Microsoft Store app in your HoloLens 2. 
+* Try [MRTK Examples Hub](features/README_ExampleHub.md) and [Designing Holograms](https://www.microsoft.com/en-us/p/designing-holograms/9nxwnjklrzwd) app which can be downloaded from Microsoft Store app in your HoloLens 2.
 
 * Learn how to work with the MRTK Configuration profile in the [mixed reality configuration guide](out-of-scope/MixedRealityConfigurationGuide.md).
 * Learn about the [MRTK's Architecture](architecture/Overview.md)

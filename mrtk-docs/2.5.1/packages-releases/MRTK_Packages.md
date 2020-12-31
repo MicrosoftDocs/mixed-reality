@@ -4,7 +4,6 @@ The Mixed Reality Toolkit (MRTK) is a collection of packages that enable cross p
 
 MRTK is available as [asset](#asset-packages) (.unitypackage) packages and via the [Unity Package Manager](#unity-package-manager).
 
-
 ## Asset packages
 
 The MRTK asset (.unitypackage) can be downloaded from [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases).

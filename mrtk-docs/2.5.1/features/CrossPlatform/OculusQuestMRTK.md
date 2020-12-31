@@ -19,6 +19,7 @@ This data provider does **NOT** use Unity's **XR Pipeline** or **Legacy XR Pipel
 1. Ensure that [developer mode](https://developer.oculus.com/documentation/native/android/mobile-device-setup/) is enabled on your device. Installing the Oculus ADB Drivers is optional.
 
 ## Setting up the XR Pipeline for Oculus Quest
+
 1. Ensure that the **Oculus XR Plugin** is installed under **Window --> Package Manager**
 
     ![OculusXRPluginPackage](../Images/CrossPlatform/OculusQuest/OculusXRPluginPackage.png)
@@ -28,6 +29,7 @@ This data provider does **NOT** use Unity's **XR Pipeline** or **Legacy XR Pipel
     ![OculusPluginProvider](../Images/CrossPlatform/OculusQuest/OculusPluginProvider.png)
 
 ## Setting up the Oculus Integration Unity package to enable handtracking
+
 1. Download and import [Oculus Integration](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) from the Unity Asset Store. The latest version tested to
 work is 20.0.0. Older versions can be found from this [archive](https://developer.oculus.com/downloads/package/unity-integration-archive/)
 
@@ -42,6 +44,7 @@ to "Controllers and Hands".
     ![OculusIntegrationControllerAndHands](../Images/CrossPlatform/OculusQuest/OculusIntegrationControllerAndHands.png)
 
 ## Setting up the scene
+
 1. Create a new Unity scene or open a pre-existing scene like HandInteractionExamples
 1. Add MRTK to the scene by navigating to **Mixed Reality Toolkit** > **Add to Scene and Configure**
 
@@ -71,6 +74,7 @@ to "Controllers and Hands".
     - You can verify that the Oculus Controllers are detected by
 
 ## Build and deploy your project to Oculus Quest
+
 1. Plug in your Oculus Quest via a USB 3.0 -> USB C cable
 1. Navigate to **File > Build Settings**
 1. Change the deployment to **Android**
