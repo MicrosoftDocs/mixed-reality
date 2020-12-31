@@ -34,20 +34,20 @@ Bright color makes it difficult for the user to see their hands when directly in
 
 Because of the characteristics of holographic displays, a large bright area on the display can become blotchy. By using dark color schemes, you can minimize this issue. 
 
-## Design guidelines
+## Design guidelines for color choices
 
 **Use dark color for the UI background**
 
 By using the dark color scheme, you can minimize eye fatigue and improve the confidence on direct hand interactions. 
 
-![Dark UI examples](images/color_dark_examples.jpg)
+![Examples of dark color used for the content background](images/color_dark_examples.jpg)
 *Examples of dark color used for the content background*
 
 **Use semibold or bold font weight**
 
 HoloLens allows your experience to show beautiful high-resolution text. However, it's recommended that you avoid thin font weights such as light or semi-light because the vertical strokes can jitter in small font size. 
 
-![Dark UI examples](images/color_font_examples.jpg)
+![Bold or semi-bold font weight (upper panel) improves the legibility](images/color_font_examples.jpg)
 *Bold or semi-bold font weight (upper panel) improves the legibility*
 
 **Use MRTK’s HolographicBackplate material**
@@ -56,6 +56,7 @@ The HolographicBackplate material is applied to several UI panels in the HoloLen
 
 
 ## Challenges with transparent or translucent UI backplate 
+
 ![Transparent UI examples](images/color_transparent_examples.jpg)
 *Examples of transparent UI backplate*
 
@@ -72,7 +73,8 @@ For transparent or translucent objects to render correctly they must be sorted a
 To improve holographic reprojection, or hologram stability, an application can submit a depth buffer to the system for every rendered frame. When using the depth buffer for reprojection, you need to write a depth buffer for every color rendered pixel a corresponding depth. Any pixel with a depth value should also have color value. If the above guidance isn't followed, areas of the rendered image that lack valid depth information may be reprojected in a way that produces artifacts, which are often visible as a wave-like distortion.
 
 
-## Design guidelines
+## Design guidelines for transparent elements
+
 **Use opaque UI background**
 
 By default, transparent or translucent objects don't write depth to allow for proper blending. Ways to mitigate this issue include, using opaque objects, ensuring translucent objects appear close to opaque objects (such as a translucent button in front of an opaque backplate), forcing translucent objects to write depth (not applicable in all scenarios), or rendering proxy objects, which only contribute depth values at the end of the frame.
@@ -92,19 +94,19 @@ If your project must use transparent objects, try to minimize the number of pixe
 <br/>
 
 ## Dark UI examples in MRTK (Mixed Reality Toolkit) for Unity
+
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides many UI building block examples based on the dark color schemes.
 
 * [Near Menu](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_NearMenu.html)
 * [Dialog](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/Dialog/README_Dialog.html)
 * [Hand Menu](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandMenu.html)
 
-
 <br>
 
 ---
 
-
 ## See also
+
 * [Color, light, and materials](color-light-and-materials.md)
 * [Cursors](cursors.md)
 * [Hand ray](point-and-commit.md)

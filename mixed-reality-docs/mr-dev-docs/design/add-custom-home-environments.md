@@ -106,7 +106,7 @@ WindowsMRAssetConverter FileToConvert.gltf -max-texture-size 1024 -min-version 1
 
 Once you have your final.glb environment, you're ready to test it out in the headset. Start at step 2 in the ["Trying a sample environment"](#trying-a-sample-environment) section to use your custom environment as the mixed reality home. 
 
-## Feedback
+## Sending feedback
 
 While we're evaluating this experimental feature, we're interested in learning how you're using custom environments, any bugs you may find, and how you like the feature. Share any feedback for creating and using custom home environments in the [developer forums](https://forums.hololens.com/categories/custom-home-environments).
 

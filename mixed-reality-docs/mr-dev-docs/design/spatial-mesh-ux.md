@@ -1,5 +1,6 @@
 ---
 title: Spatial mesh visualization
+description: Learn about how devices understand physical environments using spatial meshes.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020

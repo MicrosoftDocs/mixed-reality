@@ -16,22 +16,22 @@ A button lets your users trigger immediate actions in a mixed reality experience
 
 :::row:::
     :::column:::
-       ![Move](images/UX_Button_Affordance_ProximityLight.jpg)<br>
+       ![Button with proximity light effect shown](images/UX_Button_Affordance_ProximityLight.jpg)<br>
        **Proximity light**<br>
     :::column-end:::
     :::column:::
-       ![Rotate](images/UX_Button_Affordance_FocusHighlight.jpg)<br>
+       ![Button selected with focus highlight effect shown](images/UX_Button_Affordance_FocusHighlight.jpg)<br>
         **Focus highlight**<br>
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       ![Move](images/UX_Button_Affordance_Compression.jpg)<br>
+       ![Button being pressed with compression cage effect shown](images/UX_Button_Affordance_Compression.jpg)<br>
        **Compressing cage**<br>
     :::column-end:::
     :::column:::
-       ![Rotate](images/UX_Button_Affordance_Pulse.jpg)<br>
+       ![Button being pressed with trigger pulse effect shown](images/UX_Button_Affordance_Pulse.jpg)<br>
         **Pulse on trigger**<br>
     :::column-end:::
 :::row-end:::

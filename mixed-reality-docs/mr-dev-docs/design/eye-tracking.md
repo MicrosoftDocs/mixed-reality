@@ -193,8 +193,8 @@ To get started developing, check out our information on the role of [eye-gaze fo
 [eye-gaze in Unity](https://aka.ms/mrtk-eyes) and 
 [eye-gaze in DirectX](../develop/native/gaze-in-directx.md).
 
-
 ## See also
+
 * [Calibration](../calibration.md)
 * [Comfort](comfort.md)
 * [Eye-gaze-based interaction](eye-gaze-interaction.md)
