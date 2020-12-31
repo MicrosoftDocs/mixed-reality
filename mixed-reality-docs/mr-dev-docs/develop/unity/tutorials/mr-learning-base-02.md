@@ -49,7 +49,7 @@ In this tutorial, you'll learn how to create a new Unity project, configure it f
 
 The status bar keeps you updated on your progress.
 
-:::image type="content" source="images/mr-learning-base/base-02-section1-step1-4.png" alt-text="The Unity progress bar keeps you updated on your "create project" status.":::
+![The Unity progress bar keeps you updated on your "create project" status](images/mr-learning-base/base-02-section1-step1-4.png)
 
 ## Switching the build platform
 
