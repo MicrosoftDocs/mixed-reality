@@ -12,9 +12,15 @@ appliesto:
 
 # Get help with PC compatibility in Windows Mixed Reality
 
-When you're setting up Windows Mixed Reality or running the [Windows Mixed Reality PC Check](https://www.microsoft.com/p/windows-mixed-reality-pc-check/9nzvl19n7cnc?rtc=1#activetab=pivot:overviewtab), you'll get a report on whether your PC is up to the task. We've broken out specific details on what you might see in the sections below.
+When you're setting up Windows Mixed Reality or using the [Mixed Reality Portal](install-windows-mixed-reality.md), you'll get a report on whether your PC is up to the task. We've broken out specific details on what you might see in the sections below.
 
-Before going any further, make sure your computer meets the [minimum PC hardware compatibility requirements](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) to run Mixed Reality.
+Before going any further, try the most common fixes below: 
+
+> [!div class="checklist"]
+> * Make sure your computer meets the [minimum PC hardware compatibility requirements](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
+> * Check that your [graphics card and processor](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) are compatible
+> * Check the [recommended adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) list
+> * Update your graphics driver by selecting **Start > Settings > Update & security > Check for updates** 
 
 ## You're good to go
 
@@ -31,7 +37,7 @@ Integrated graphics cards will provide the best Windows Mixed Reality experience
 > [!div class="checklist"]
 > * Install a [compatible discrete graphics card](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines)
 > * Install an additional RAM stick to create dual-channel RAM
-> * Switch to a [compatible PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)
+> * Switch to a [compatible PC](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines)
 
 ### This PC has a hybrid graphics configuration with an incompatible PCIe link
 
@@ -49,7 +55,7 @@ If that doesn't work, you'll need to:
 
 > [!div class="checklist"]
 > * Add a [compatible graphics card](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) 
-> * Switch to a [compatible PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)
+> * Switch to a [compatible PC](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines)
 
 ### This PC's processor might not work well with Windows Mixed Reality
 
@@ -57,14 +63,20 @@ Your PC's processor might not work well with Windows Mixed Reality because it do
 
 > [!div class="checklist"]
 > * Replace the processor with a [compatible one](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) 
-> * Switch to a [compatible PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)
+> * Switch to a [compatible PC](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines)
 
 ### This PC might not have a compatible USB configuration
 
-If you run into problems running Windows Mixed Reality:
+For problems running Windows Mixed Reality:
 
 > [!div class="checklist"]
-> * Plug your headset into a different USB port, if available.
+> * Check our [recommended adapters documentation](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) for solutions to common compatibility issues
+> * Consider using an [external powered USB hub](recommended-adapters-for-windows-mixed-reality-capable-pcs.md#using-external-usb-30-hubs-with-windows-mixed-reality-headsets)
+
+If the problems persist:
+
+> [!div class="checklist"]
+> * Plug your headset into a different USB port, if you have one available.
 > * If that doesn't work, uninstall your PC's current USB driver, and then reinstall a Microsoft driver:
 
 1. Select **Start**, and then type "device manager" in the **Search** box.
@@ -80,15 +92,15 @@ If you run into problems running Windows Mixed Reality:
 
 ### This PC doesn't have Bluetooth 4.0 for controllers
 
-2018 and newer Windows Mixed Reality headsets already have the built-in Bluetooth, but if you have older headset, bluetooth 4.0 is required for mixed reality motion controllers. You can still use Windows Mixed Reality with an Xbox controller, a mouse and keyboard, or a USB Bluetooth adapter to connect motion controllers to your PC. [See recommended adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+2018 and newer Windows Mixed Reality headsets already have the built-in Bluetooth, but if you have older headset, bluetooth 4.0 is required for mixed reality motion controllers. You can still [use Windows Mixed Reality with an Xbox controller](motion-controller-problems.md#can-i-pair-my-xbox-controller-to-my-pc-so-i-can-use-it-in-headset), a [mouse and keyboard](https://docs.microsoft.com/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home#keyboard-and-mouse), or a [USB Bluetooth adapter to connect motion controllers](motion-controller-problems.md#how-can-i-tell-if-im-using-bluetooth-technology) to your PC. [See recommended adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 
 ### Depending on your headset, you may need a Bluetooth adapter to use motion controllers
 
-Some headsets have Bluetooth built in so controllers can pair directly to the headsets. Others require a Bluetooth radio in the PC (or a separate dongle) to use motion controllers. For more information, see the [recommended adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) page.
+Some headsets have Bluetooth built in so controllers can pair directly to the headsets. Others require a Bluetooth radio in the PC (or a separate dongle) to use motion controllers. For more information, see the [recommended adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md#windows-mixed-reality-compatible-usb-bluetooth-adapters) page.
 
 ### This PC doesn't have a self-powered USB port
 
-A self-powered USB 3.0 port is needed to connect a Windows Mixed Reality headset. Connect a powered USB 3.0 hub to the PC and use that to connect your headset.
+A self-powered USB 3.0 port is needed to connect a Windows Mixed Reality headset. Connect a [powered USB 3.0 hub](recommended-adapters-for-windows-mixed-reality-capable-pcs.md#using-external-usb-30-hubs-with-windows-mixed-reality-headsets) to the PC and use that to connect your headset.
 
 ### This PC's graphics card won't work with Windows Mixed Reality
 
@@ -96,7 +108,7 @@ This PC's graphics card isn't compatible with Windows Mixed Reality. You'll need
 
 > [!div class="checklist"]
 > * Add a [compatible graphics card](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) 
-> * Switch to a [compatible PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)
+> * Switch to a [compatible PC](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines)
 
 ### This PC's graphics driver won't work with Windows Mixed Reality
 
@@ -110,7 +122,7 @@ If that doesn't work, you'll need to:
 
 > [!div class="checklist"]
 > * Add a [compatible graphics card](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) 
-> * Switch to a [compatible PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)
+> * Switch to a [compatible PC](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines)
 
 ### This PC's processor won't work with Windows Mixed Reality
 
@@ -118,7 +130,7 @@ This PC's processor doesn't support AVX/Popcnt instructions. To run Windows Mixe
 
 > [!div class="checklist"]
 > * Replace it with a [compatible graphics card](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) 
-> * Switch to a [compatible PC](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)
+> * Switch to a [compatible PC](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines)
 
 ### This PC doesn't have enough free disk space to run Windows Mixed Reality
 
@@ -126,7 +138,7 @@ Windows Mixed Reality requires 10 GB of free disk space for setup and best perfo
 
 ### This PC is running an edition of Windows that doesn't support Windows Mixed Reality
 
-Windows Mixed Reality works on Windows 10 Home and Windows 10 Pro. You'll need to install one of those editions to use Windows Mixed Reality.
+Windows Mixed Reality works on [Windows 10 Home](https://www.microsoft.com/p/windows-10-home/d76qx4bznwk4?activetab=pivot:overviewtab) and [Windows 10 Pro](https://www.microsoft.com/p/windows-10-pro/DF77X4D43RKT?icid=W10Pro_upsell_071817&activetab=pivot:overviewtab). You'll need to install one of those editions to use Windows Mixed Reality.
 
 ### This PC isn't running the latest version of Windows 10
 
@@ -149,8 +161,22 @@ Some hardware configurations might cause performance problems with Windows Mixed
 * If there are extra monitors connected to the PC’s graphics card, disconnect them.
 * Try downloading some different mixed reality apps from the Windows Store—some may work better with your computer setup.
 
+If you're still having performance issues, update the following [Windows Mixed Reality](set-up-windows-mixed-reality.md) settings for an optimal user experience:
+
+* Experience
+* Resolution
+* Frame-rate
+* Calibration
+
 > [!NOTE]
 > If you see a message that says, "This hardware configuration might work with Windows Mixed Reality, but it hasn't been tested yet," you could run into some performance issues when running Windows Mixed Reality for long sessions.
+
+## Working with SteamVR
+
+Enjoying games from SteamVR is a great way to experience everything VR has to offer. However, you'll want to make sure that you're getting the best performance out of your immersive device. After you've installed [Steam](https://store.steampowered.com/about):
+
+* Follow the instructions for [using SteamVR with Windows Mixed Reality](using-steamvr-with-windows-mixed-reality.md)
+* Install the [SteamVR Performance Test](https://store.steampowered.com/app/323910/SteamVR_Performance_Test) apps
 
 ## Next VR checkpoint
 
