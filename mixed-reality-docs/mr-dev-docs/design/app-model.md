@@ -10,34 +10,34 @@ keywords: UWP, app model, lifecycle, suspend, resume, tile, views, contracts, mi
 
 # App model
 
-Windows Mixed Reality uses the app model provided by the [Universal Windows Platform](https://docs.microsoft.com/windows/uwp/get-started/) (UWP), a model and environment for modern Windows apps. The UWP app model defines how apps are installed, updated, versioned and removed safely and completely. It governs the application life cycle - how apps execute, sleep and terminate - and how they can preserve state. It also covers integration and interaction with the operating system, files and other apps.
+Windows Mixed Reality uses the app model provided by the [Universal Windows Platform](https://docs.microsoft.com/windows/uwp/get-started/) (UWP), which is a model and environment for modern Windows apps. The UWP app model defines how apps are safely installed, updated, versioned, and removed completely. It also governs the application life cycle - how apps execute, sleep, and stop - and how they can preserve state. Finally, the app model covers integration and interaction with the operating system, files, and other apps.
 
 ![2D apps arranged in the Windows Mixed Reality home in a breakfast area](images/20160112-055908-hololens-500px.jpg)<br>
 *Apps with a 2D view arranged in the Windows Mixed Reality home*
 
 ## App lifecycle
 
-The lifecycle of a mixed reality app involves standard app concepts such as placement, launch, termination and removal.
+The lifecycle of a mixed reality app involves standard app concepts such as placement, launch, termination, and removal.
 
 ### Placement is launch
 
-Every app starts in mixed reality by placing an app tile (just a [Windows secondary tile](https://docs.microsoft.com/uwp/api/Windows.UI.StartScreen.SecondaryTile)) in the [Windows Mixed Reality home](../discover/navigating-the-windows-mixed-reality-home.md). These app tiles, on placement, will start running the app. These app tiles persist and stay at the location where they are placed, acting like launchers for anytime you want to get back to the app.
+Every app starts in mixed reality by placing an app tile (just a [Windows secondary tile](https://docs.microsoft.com/uwp/api/Windows.UI.StartScreen.SecondaryTile)) in the [Windows Mixed Reality home](../discover/navigating-the-windows-mixed-reality-home.md). These app tiles, on placement, will start running the app. These app tiles persist and stay at their placed location, acting like launchers for anytime you want to get back to the app.
 
 ![Placement puts a secondary tile in the world](images/slide1-600px.png)<br>
 *Placement puts a secondary tile in the world*
 
-As soon as placement completes (unless the placement was started by an [app to app](app-model.md#protocols) launch), the app starts launching. Windows Mixed Reality can run a limited number of apps at one time. As soon as you place and launch an app, other active apps may suspend, leaving a screenshot of the app's last state on its app tile wherever you placed it. See [Windows 10 UWP app lifecycle](https://docs.microsoft.com/windows/uwp/launch-resume/app-lifecycle) for more information on handling resume and other app life cycle events.
+As soon as placement completes (unless the placement was started by an [app to app](app-model.md#protocols) launch), the app starts launching. Windows Mixed Reality can run a limited number of apps at one time. As soon as you place and launch an app, other active apps may suspend. Suspended apps leave a screenshot of the app's last state on its app tile wherever you placed it. For more information on handling resume and other lifecycle events, see [Windows 10 UWP app lifecycle](https://docs.microsoft.com/windows/uwp/launch-resume/app-lifecycle).
 
 ![After placing a tile, the app starts running](images/slide2-500px.png) ![State diagram for app running, suspended or not running](images/ic576232-500px.png)<br>
 *Left: after placing a tile, the app starts running. Right: state diagram for app running, suspended, or not running.*
 
 ### Remove is close/terminate process
 
-When you remove a placed app tile from the world, this closes the underlying processes. This can be useful for ensuring your app is terminated or restarting a problematic app.
+When you remove a placed app tile from the world, the underlying processes closes. This can be useful for ensuring your app is stopped or restarting a problematic app.
 
 ### App suspension/termination
 
-In the [Windows Mixed Reality home](../discover/navigating-the-windows-mixed-reality-home.md), the user is able to create multiple entry points for an app. They do this by launching your app from the Start menu and placing the app tile in the world. Each app tile behaves as a different entry point, and has a separate tile instance in the system. A query for [SecondaryTile.FindAllAsync](https://docs.microsoft.com/uwp/api/Windows.UI.StartScreen.SecondaryTile#Windows_UI_StartScreen_SecondaryTile_FindAllAsync) will result in a **SecondaryTile** for each app instance.
+In the [Windows Mixed Reality home](../discover/navigating-the-windows-mixed-reality-home.md), the user can create multiple entry points for an app by launching your app from the Start menu and placing the app tile in the world. Each app tile behaves as a different entry point, and has a separate tile instance in the system. A query for [SecondaryTile.FindAllAsync](https://docs.microsoft.com/uwp/api/Windows.UI.StartScreen.SecondaryTile#Windows_UI_StartScreen_SecondaryTile_FindAllAsync) will result in a **SecondaryTile** for each app instance.
 
 When a UWP app suspends, a screenshot is taken of the current state.
 
@@ -50,7 +50,7 @@ One key difference from other Windows 10 shells is how the app is informed of an
 |----------|----------|----------|
 |  Launch new instance of app from the Start menu  |   |  **Activated** with a new [TileId](https://docs.microsoft.com/uwp/api/windows.ui.startscreen.secondarytile#Windows_UI_StartScreen_SecondaryTile_TileId) | 
 |  Launch second instance of app from the Start menu  |   |  **Activated** with a new **TileId** | 
-|  Select the instance of the app that is not currently active  |   |  **Activated** with the **TileId** associated with the instance | 
+|  Select the instance of the app that isn't currently active  |   |  **Activated** with the **TileId** associated with the instance | 
 |  Select a different app, then select the previously active instance  |  **Resuming** raised  |  | 
 |  Select a different app, then select the instance that was previously inactive  |  **Resuming** raised  |  Then **Activated** with the **TileId** associated with the instance | 
 
@@ -63,16 +63,16 @@ Sometimes your app needs to continue doing work in the background or playing aud
 
 ## App views
 
-When your app activates, you can choose what type of view you'd like to display. For an app's **CoreApplication**, there is always a primary [app view](https://docs.microsoft.com/uwp/api/Windows.UI.ViewManagement.ApplicationView) and any number of further app views you would like to create. On desktop, you can think of an app view as a window. Our mixed reality app templates create a Unity project where the primary app view is [immersive](app-views.md). 
+When your app activates, you can choose what type of view you'd like to display. For an app's **CoreApplication**, there's always a primary [app view](https://docs.microsoft.com/uwp/api/Windows.UI.ViewManagement.ApplicationView) and any number of further app views you would like to create. On desktop, you can think of an app view as a window. Our mixed reality app templates create a Unity project where the primary app view is [immersive](app-views.md). 
 
-Your app can create an additional 2D app view using technology like XAML, to use Windows 10 features such as in-app purchase. If your app started as a UWP app for other Windows 10 devices, your primary view is 2D, but you could "light up" in mixed reality by adding an additional app view that's immersive to show an experience volumetrically. Imagine building a photo viewer app in XAML where the slideshow button switched to an immersive app view that flew photos from the app across the world and surfaces.
+Your app can create an extra 2D app view using technology like XAML, to use Windows 10 features such as in-app purchase. If your app started as a UWP app for other Windows 10 devices, your primary view is 2D. However, you can "light up" in mixed reality by adding another app view that's immersive to show an experience volumetrically. Imagine building a photo viewer app in XAML where the slideshow button switched to an immersive app view that flew photos from the app across the world and surfaces.
 
 ![The running app can have a 2D view or an immersive view](images/slide3-800px.png)<br>
 *The running app can have a 2D view or an immersive view*
 
 ### Creating an immersive view
 
-Mixed reality apps are those that create an immersive view, which is achieved with the [HolographicSpace](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace) type.
+Mixed reality apps create an immersive view, which is achieved with the [HolographicSpace](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace) type.
 
 An app that is purely immersive should always create an immersive view on launch, even if launched from the desktop. Immersive views always show up in the headset, regardless of where they were created from. Activating an immersive view will display the Mixed Reality Portal and guide the user to put on their headset.
 
@@ -85,14 +85,14 @@ An app that starts with a 2D view on the desktop monitor may create a secondary 
 
 Anything other than an immersive view is rendered as a 2D view in your world.
 
-An app may have 2D views on both the desktop monitor and in the headset. Note that a new 2D view will be placed in the same shell as the view that created it, either on the monitor or in the headset. It is not currently possible for an app or a user to move a 2D view between the Mixed Reality home and the monitor.
+An app may have 2D views on both the desktop monitor and in the headset. A new 2D view will be placed in the same shell as the view that created it, either on the monitor or in the headset. It isn't currently possible for an app or a user to move a 2D view between the Mixed Reality home and the monitor.
 
 ![Apps running in 2D view share the space in the mixed world with other apps](images/slide5-800px.png)<br>
 *Apps running in a 2D view share the space with other apps*
 
 ### Placement of additional app tiles
 
-You can place as many apps with a 2D view in your world as you want with the [Secondary Tile APIs](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/secondary-tiles). These "pinned" tiles will appear as splash screens that users must place and then can later use to launch your app. Windows Mixed Reality does not currently support rendering any of the 2D tile content as live tiles.
+You can place as many apps with a 2D view in your world as you want with the [Secondary Tile APIs](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/secondary-tiles). These "pinned" tiles will appear as splash screens that users must place and then can later use to launch your app. Windows Mixed Reality doesn't currently support rendering any of the 2D tile content as live tiles.
 
 ![Apps can have multiple placements using secondary tiles](images/slide6-800px.png)<br>
 *Apps can have multiple placements using secondary tiles*
@@ -123,8 +123,8 @@ Like in the previous section, you can use **ApplicationViewSwitcher.SwitchAsync*
 
 2D app views always appear in a fixed virtual slate. This makes all 2D views show the exact same amount of content. Here are some further details about the size of your app's 2D view:
 * The aspect ratio of the app is preserved while resizing.
-* App [resolution and scale factor](../develop/porting-apps/building-2d-apps.md#2d-app-view-resolution-and-scale-factor) are not changed by resizing.
-* Apps are not able to query their actual size in the world.
+* App [resolution and scale factor](../develop/porting-apps/building-2d-apps.md#2d-app-view-resolution-and-scale-factor) aren't changed by resizing.
+* Apps aren't able to query their actual size in the world.
 
 ![2D apps appear with fixed window sizes](images/12493521-10104043956964683-6118765685995662420-o-500px.jpg)<br>
 *Apps with a 2D view appear with fixed window sizes*
@@ -140,7 +140,7 @@ The Start menu uses the standard small tile and medium tile for pins and the **A
 
 As you build apps, you have access to the rich app to app communication mechanisms available on Windows 10. Many of the new Protocol APIs and file registrations work perfectly on HoloLens to enable app launching and communication. 
 
-Note that for desktop headsets, the app associated with a given file extension or protocol may be a Win32 app that can only appear on the desktop monitor or in the desktop slate.
+For desktop headsets, the app associated with a given file extension or protocol may be a Win32 app that can only appear on the desktop monitor or in the desktop slate.
 
 ### Protocols
 
@@ -152,13 +152,13 @@ There are some things to consider when launching another application:
 
 * When doing a modal launch, such as through [LaunchUriForResultsAsync](https://docs.microsoft.com/uwp/api/Windows.System.Launcher#Windows_System_Launcher_LaunchUriForResultsAsync_Windows_Foundation_Uri_Windows_System_LauncherOptions_Windows_Foundation_Collections_ValueSet_), the modal app is placed on top of the window.
 
-* Windows Mixed Reality cannot overlay applications on top of exclusive views. In order to show the launched app, Windows takes the user back to the world to display the application.
+* Windows Mixed Reality can't overlay applications on top of exclusive views. To show the launched app, Windows takes the user back to the world to display the application.
 
 ### File pickers
 
 HoloLens supports both [FileOpenPicker](https://docs.microsoft.com/uwp/api/Windows.Storage.Pickers.FileOpenPicker) and [FileSavePicker](https://docs.microsoft.com/uwp/api/Windows.Storage.Pickers.FileSavePicker) contracts. However, no app comes pre-installed that fulfills the file picker contracts. These apps - OneDrive, for example - can be installed from the Microsoft Store.
 
-If you have more than one file picker app installed, you will not see any disambiguation UI for choosing which app to launch; instead, the first file picker installed will be chosen. When saving a file, the filename is generated which includes the timestamp. This cannot be changed by the user.
+If you have more than one file picker app installed, you won't see any disambiguation UI for choosing which app to launch. Instead, the first file picker installed will be chosen. When saving a file, the filename is generated which includes the timestamp. This cannot be changed by the user.
 
 By default, the following extensions are supported locally:
 
@@ -202,7 +202,7 @@ App contracts and extension points allow you to register your app to take advant
 
 ## App file storage
 
-All storage is through the [Windows.Storage namespace](https://docs.microsoft.com/uwp/api/Windows.Storage). See the following documentation for more details. HoloLens does not support app storage sync/roaming.
+All storage is through the [Windows.Storage namespace](https://docs.microsoft.com/uwp/api/Windows.Storage). HoloLens doesn't support app storage sync/roaming. For more information, check out the documentation below:
 
 * [Files, folders, and libraries](https://docs.microsoft.com/windows/uwp/files/index)
 * [Store and retrieve settings and other app data](https://docs.microsoft.com/windows/uwp/design/app-settings/store-and-retrieve-app-data)
@@ -219,7 +219,7 @@ See [KnownFolders](https://docs.microsoft.com/uwp/api/Windows.Storage.KnownFolde
 </tr><tr>
 <td><a href="https://docs.microsoft.com/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_CameraRoll">CameraRoll</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>Gets the Camera Roll folder.</td>
 </tr><tr>
-<td><a href="https://docs.microsoft.com/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_DocumentsLibrary">DocumentsLibrary</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>Gets the Documents library. The Documents library is not intended for general use.</td>
+<td><a href="https://docs.microsoft.com/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_DocumentsLibrary">DocumentsLibrary</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>Gets the Documents library. The Documents library isn't intended for general use.</td>
 </tr><tr>
 <td><a href="https://docs.microsoft.com/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_MusicLibrary">MusicLibrary</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>Gets the Music library.</td>
 </tr><tr>
@@ -245,9 +245,9 @@ See [KnownFolders](https://docs.microsoft.com/uwp/api/Windows.Storage.KnownFolde
 
 ## App package
 
-With Windows 10 you no longer target an operating system but instead [target your app to one or more device families](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide#device-families). A device family identifies the APIs, system characteristics, and behaviors that you can expect across devices within the device family. It also determines the set of devices on which your app can be installed from the [Microsoft Store](../distribute/submitting-an-app-to-the-microsoft-store.md#specifying-target-device-families).
+With Windows 10, you no longer target an operating system but instead [target your app to one or more device families](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide#device-families). A device family identifies the APIs, system characteristics, and behaviors that you can expect across devices within the device family. It also determines the set of devices on which your app can be installed from the [Microsoft Store](../distribute/submitting-an-app-to-the-microsoft-store.md#specifying-target-device-families).
 
-* To target both desktop headsets and HoloLens, target your app to the **Windows.Universal** device family.
+* To target both desktop headsets and HoloLens, target your app to the **Windows. Universal** device family.
 * To target just desktop headsets, target your app to the **Windows.Desktop** device family.
 * To target just HoloLens, target your app to the **Windows.Holographic** device family.
 
