@@ -8,7 +8,6 @@ ms.topic: article
 keywords: ggv, voice, cortana, speech, input, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, gaze
 ---
 
-
 # Voice input
 
 ![Voice input](images/UX_Hero_VoiceCommand.jpg)
@@ -79,11 +78,9 @@ You will hear a sound and see a tooltip with "select" appear as confirmation. "S
     :::column-end:::
 :::row-end:::
 
-
 <br>
 
 ---
-
 
 ## Hey Cortana
 
@@ -113,8 +110,6 @@ If you're already in the Cortana app you can also click the **?** icon on the si
 * "What time is it?"
 * "How much battery do I have left?"
 
-
-
 <br>
 
 ---
@@ -132,10 +127,7 @@ If you're already in the Cortana app you can also click the **?** icon on the si
     :::column-end:::
 :::row-end:::
 
-
 <br>
-
-
 
 :::row:::
     :::column:::
@@ -148,11 +140,9 @@ If you're already in the Cortana app you can also click the **?** icon on the si
     :::column-end:::
 :::row-end:::
 
-
 <br>
 
 ---
-
 
 ## Voice commands for fast hologram manipulation
 
@@ -168,15 +158,12 @@ On HoloLens 2, you can also create more natural interactions in combination with
 For example, you could simply look at a hologram and say "put _this_" and then look over where you want to place it and say "over _here_".
 Or you could look at a holographic part on a complex machine and say: "give me more information about _this_".
 
-
-
 ## Discovering voice commands
 
 Some commands, like the commands for fast manipulation above, can be hidden. To learn about what commands you can use, gaze at an object and say, "what can I say?". A list of possible commands pops up. 
 You can also use the head gaze cursor to look around and reveal the voice tooltips for each button in front of you. 
 
 If you want a complete list, just say, "Show all commands" anytime. 
-
 
 ## Dictation
 
@@ -186,7 +173,6 @@ Rather than typing with [air taps](gaze-and-commit.md#composite-gestures), voice
 *Voice dictation starts by selecting the microphone button on the keyboard*
 
 Any time the holographic keyboard is active, you can switch to dictation mode instead of typing. Select the microphone on the side of the text input box to get started.
-
 
 ## Adding voice commands to your app
 
@@ -284,11 +270,13 @@ When Voice is applied properly, the user understands **what they can say and get
 <br>
 
 ## Top things users should know about "speech" in mixed reality
+
 * Say **"Select"** while targeting a button (you can use this anywhere to click a button).
 * You can say the **label name of an app bar button** in some apps to take an action. For example, while looking at an app, a user can say the command "Remove" to remove the app from the world (this saves time from having to click it with your hand).
 * You can initiate Cortana listening by saying **"Hey Cortana."** You can ask her questions ("Hey Cortana, how tall is the Eiffel tower"), tell her to open an app ("Hey Cortana, open Netflix"), or tell her to bring up the Start Menu ("Hey Cortana, take me home") and more.
 
 ## Common questions and concerns users have about voice
+
 * What can I say?
 * How do I know the system heard me correctly?
    * The system keeps getting my voice commands wrong.
@@ -325,10 +313,10 @@ With **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can
 
 * [MRTK - Voice command](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Speech.html)
 
-
 ---
 
 ## See also
+
 * [Gaze and commit](gaze-and-commit.md)
 * [Instinctual interactions](interaction-fundamentals.md)
 * [Voice input in DirectX](../develop/native/voice-input-in-directx.md)
