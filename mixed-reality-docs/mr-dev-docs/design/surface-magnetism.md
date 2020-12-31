@@ -19,11 +19,11 @@ Using the surface magnetism technique, you can place a holographic object on a r
 ---
 
 ## Surface magnetism in MRTK (Mixed Reality Toolkit) for Unity
+
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides scripts and example scenes for the surface magnetism technique. You can use surface magnetism with various types of inputs such as hand-ray, eye gaze, and motion controllers.
 
 * [MRTK - Surface magnetism solver](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html#surfacemagnetism)
 * [MRTK - Spatial awareness + Surface magnetism example scenes](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/Examples/Demos/Solvers/Scenes/SurfaceMagnetismSpatialAwarenessExample.unity)
-
 
 <br>
 
