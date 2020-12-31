@@ -1,11 +1,11 @@
 ---
 title: Using Vuforia with Unity
-description: Leverage Vuforia to build Windows Mixed Reality applications in Unity.
+description: Use Vuforia to build Windows Mixed Reality applications in Unity.
 author: thetuvix
 ms.author: alexturn
 ms.date: 12/20/2019
 ms.topic: article
-keywords: Vuforia, markers, coordinates, frame of reference, tracking
+keywords: Vuforia, markers, coordinates, frame of reference, tracking, mixed reality headset, windows mixed reality headset, virtual reality headset, unity, HoloLens, device tracking, performance mode, Vuforia Developer Portal
 ---
 
 
@@ -13,7 +13,7 @@ keywords: Vuforia, markers, coordinates, frame of reference, tracking
 
 Vuforia Engine brings an important capability to HoloLens – the power to connect AR experiences to specific images and objects in the environment. You can use this capability to overlay guided step-by-step instructions on top of machinery for the industrial enterprise or add digital features and experiences to a physical product or game.
 
-For greater flexibility when developing AR experiences, Vuforia Engine offers a broad range of features and targets. One of our newest features, Vuforia Model Targets, is a key capability for both commercial and industrial uses. Model Targets allow applications to recognize physical objects like machines, automobiles or toys and track them based on a CAD or digital 3D model. For industrial uses, this feature can provide assembly workers and service technicians with AR work instructions and procedural guidance while in the factory or out in the field.
+Vuforia Engine offers a broad range of features and targets to make your AR development process more flexible. One of our newest features, Vuforia Model Targets, is a key capability for both commercial and industrial uses. Model Targets allow applications to recognize physical objects like machines, automobiles, or toys and track them based on a CAD or digital 3D model. For industrial uses, this feature can provide assembly workers and service technicians with AR work instructions and procedural guidance while in the factory or out in the field.
 
 Existing Vuforia Engine apps that were built for phones and tablets can easily be configured in Unity to run on HoloLens. You can even use Vuforia Engine to take your new HoloLens app to Windows 10 tablets such as the Surface Pro and Surface Book.
 
@@ -28,9 +28,9 @@ Add the Vuforia Engine package as described [here.](https://library.vuforia.com/
 
 ## Getting started with Vuforia Engine
 
-The best starting point for learning about using Vuforia Engine with HoloLens is with the [Vuforia Engine HoloLens sample](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) (available in the Unity Asset Store). The sample provides a complete HoloLens project including pre-configured scenes that can be deployed to a HoloLens.
+The best starting point for learning about Vuforia Engine and HoloLens is the [Vuforia Engine HoloLens sample](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) (available in the Unity Asset Store). The sample provides a complete HoloLens project including pre-configured scenes that can be deployed to a HoloLens.
 
-The scenes show how to use Vuforia Image Targets to recognize an image and augment it with digital content in a HoloLens experience. The Vuforia Engine Hololens Sample also includes a scene showing the usage of Model Targets and VuMarks on HoloLens. You can easily substitute your own content in the scenes to experiment with the creation of HoloLens apps that use Vuforia Engine.
+The scenes show how to use Vuforia Image Targets to recognize an image and augment it with digital content in a HoloLens experience. The Vuforia Engine HoloLens Sample also includes a scene showing the usage of Model Targets and VuMarks on HoloLens. You can easily substitute your own content in the scenes to experiment with the creation of HoloLens apps that use Vuforia Engine.
 
 
 
@@ -44,7 +44,7 @@ Developing a Vuforia Engine app for HoloLens is fundamentally the same as develo
 3.	Add the sample scenes to **Scenes** in **Build.**
 4.	In **Build Settings**, switch build platform to **UWP** by clicking the **Add Open Scenes** button.
 ![image](https://user-images.githubusercontent.com/45470042/89573103-173daa80-d7f8-11ea-9284-931a7b6c913d.png)
-5.	Click the **Player Settings** button.  
+5.	Select the **Player Settings** button.  
    * Select the **UWP** icon and expand the **XR Settings** section.
    * Ensure that **Virtual Reality Supported** is enabled.    
    * Under **Virtual Reality SDKs** ensure that:
@@ -67,11 +67,11 @@ Developers looking to create their own AR experiences with Vuforia Engine and Ho
 
 ## Device Tracking with Vuforia
 
-[Device Tracking](https://library.vuforia.com/features/environments/device-tracker-overview.html) maintains tracking even when a target is no longer in view. It is automatically enabled for all targets when the Positional Device Tracker is enabled. For HoloLens applications, the Positional Device Tracker is started automatically in Unity.
+[Device Tracking](https://library.vuforia.com/features/environments/device-tracker-overview.html) maintains tracking even when a target is no longer in view. It's automatically enabled for all targets when the Positional Device Tracker is enabled. For HoloLens applications, the Positional Device Tracker is started automatically in Unity.
 
 Vuforia Engine automatically fuses the poses from camera tracking and HoloLens's spatial tracking to provide stable target poses independent of whether the target is seen by the camera or not.
 
-Since the process is handled automatically, it does not require any programming by the developer.
+Since the process is handled automatically, it doesn't require any programming by the developer.
 
 
 **The following is a high-level description of the process:**
@@ -83,13 +83,12 @@ Since the process is handled automatically, it does not require any programming 
 
 Targets that are detected, but no longer in view, are reported as EXTENDED_TRACKED. In these cases, the DefaultTrackableEventHandler script that is used on all targets continues to render augmentation content. The developer can control this behavior by implementing a custom trackable event handler script.
 
-
 ## Performance Mode with Vuforia Engine 
 
-It is possible through the Vuforia Engine to manage the performance on the HoloLens to extent AR experiences and reduce the workload on the CPU. The Vuforia Engine offers three modes that can be selected: default, for optimizing speed, and for optimizing quality. 
+It's possible through the Vuforia Engine to manage the performance on the HoloLens to extent AR experiences and reduce the workload on the CPU. The Vuforia Engine offers three modes that can be selected: default, for optimizing speed, and for optimizing quality. 
 
-*	MODE_OPTIMIZE_SPEED lets you minimize the workload on the HoloLens device and is great for extending AR experiences. It is recommended for situations where the app is tracking static objects/targets.
-*	MODE_DEFAULT is the normal mode which can be used in most scenarios.
+*	MODE_OPTIMIZE_SPEED lets you minimize the workload on the HoloLens device and is great for extending AR experiences. We recommended for situations where the app is tracking static objects/targets.
+*	MODE_DEFAULT is the normal mode, which can be used in most scenarios.
 *	MODE_OPTIMIZE_QUALITY is better for tracking movable targets or model targets you expect to be picked up.
 
 **Setting the mode**
@@ -108,4 +107,4 @@ To change the performance mode in Unity, navigate to Vuforia Configuration (Ctrl
 * [Vuforia documentation: How to install the Vuforia Unity extension](https://library.vuforia.com/articles/Solution/Installing-the-Unity-Extension)
 * [Vuforia documentation: Working with the HoloLens sample in Unity](https://library.vuforia.com/articles/Solution/Working-with-the-HoloLens-sample-in-Unity)
 * [Vuforia documentation: Device Tracking in Vuforia](https://library.vuforia.com/features/environments/device-tracker-overview.html)
-* [Vuforia documentation: Framerate and Performance Optomization](https://library.vuforia.com/content/vuforia-library/en/articles/Solution/Framerate-Optimization-for-Mixed-Reality-Apps.html)
+* [Vuforia documentation: Framerate and Performance Optimization](https://library.vuforia.com/content/vuforia-library/en/articles/Solution/Framerate-Optimization-for-Mixed-Reality-Apps.html)

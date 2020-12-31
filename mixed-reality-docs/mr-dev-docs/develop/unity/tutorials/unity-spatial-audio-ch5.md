@@ -2,10 +2,10 @@
 title: Spatial audio tutorials - 5. Using reverb to add distance to spatial audio
 description: Add a reverb effect to enhance the sense of distance variation to spatial audio.
 author: kegodin
-ms.author: kegodin
+ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens2, spatial audio
+keywords: mixed reality, unity, tutorial, hololens2, spatial audio, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head-related transfer function, reverb, Microsoft Spatializer, audio mixer, SFX reverb
 ---
 
 # Using reverb to add distance to spatial audio

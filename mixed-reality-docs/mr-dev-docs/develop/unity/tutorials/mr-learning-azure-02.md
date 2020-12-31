@@ -5,7 +5,7 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens, hololens 2, azure storage
+keywords: mixed reality, unity, tutorial, hololens, hololens 2, azure storage, azure cloud services, Windows 10
 ms.localizationpriority: high
 ---
 
@@ -48,19 +48,18 @@ Once you have a storage account, you can retrieve the connection string from the
 
 ### Optional Azure Storage Explorer
 
-While you can see and verify all data changes from the UI inside the application, we recommend to install [Azure storage Explorer](https://azure.microsoft.com/features/storage-explorer/). This tool allows you to visually see the data in the Azure storage and is of great help when debugging and learning.
+While you can see and verify all data changes from the UI inside the application, we recommend to install [Azure Storage Explorer](https://azure.microsoft.com/features/storage-explorer/). This tool allows you to visually see the data in the Azure storage and is of great help when debugging and learning.
 
 > [!TIP]
 > For testing from inside the Unity editor you can use a local emulator:
-
-> * on Windows 10 you can use [Azure storage Emulator](https://docs.microsoft.com/azure/storage/common/storage-use-emulator)
+> * on Windows 10 you can use [Azure Storage Emulator](https://docs.microsoft.com/azure/storage/common/storage-use-emulator)
 > * on MacOS/Linux you can use [Azurite Docker Image](https://hub.docker.com/_/microsoft-azure-storage-azurite) for Docker
 
 ## Preparing the scene
 
 In the Hierarchy window, locate the **DataManager** object and select it.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial2-section4-step1-1.png)
+![Unity with DataManager script component configuration fields shown in Inspector](images/mr-learning-azure/tutorial2-section4-step1-1.png)
 
 From the Inspector window you will see that the **DataManager (script)** component is where all **Azure storage** related settings are kept. All relevant settings are already set, you just need to replace the *Connection String* field with the one you can retrieve from the Azure Portal. If you are using a local Azure storage emulator solution, then you can keep the already provided *Connection String*.
 
@@ -108,4 +107,5 @@ In this tutorial you learned how Azure storage services can be used to persist u
 
 In the next tutorial you will learn how to use Azure Custom Vision to detect images associated with a *Tracked Object*.
 
-[Next tutorial: 3. Integrating Azure Custom Vision](mr-learning-azure-03.md)
+> [!div class="nextstepaction"]
+> [Next tutorial: 3. Integrating Azure Custom Vision](mr-learning-azure-03.md)

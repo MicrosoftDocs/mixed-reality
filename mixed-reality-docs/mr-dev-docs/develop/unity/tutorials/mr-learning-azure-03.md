@@ -5,7 +5,7 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens, hololens 2, azure custom vision, azure cognitive services
+keywords: mixed reality, unity, tutorial, hololens, hololens 2, azure custom vision, azure cognitive services, azure cloud services, Windows 10
 ms.localizationpriority: high
 ---
 
@@ -38,11 +38,11 @@ Follow this [quickstart tutorial](https://docs.microsoft.com/azure/cognitive-ser
 
 In the Project window, navigate to the **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager** folder.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial3-section4-step1-1.png)
+![Unity with Project window showing path to ObjectDetectionManager prefab](images/mr-learning-azure/tutorial3-section4-step1-1.png)
 
 From there drag the prefab **ObjectDetectionManager** into the scene Hierarchy.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial3-section4-step1-2.png)
+![Unity with ObjectDetectionManager script component configuration fields shown in Inspector](images/mr-learning-azure/tutorial3-section4-step1-2.png)
 
 In the Hierarchy window locate the **ObjectDetectionManager** object and select it.
 The **ObjectDetectionManager** prefab contains the **ObjectDetectionManager (script)** component and as you can see from the Inspector window it depends on several settings.
@@ -61,11 +61,11 @@ In the [custom vision](https://www.customvision.ai/projects) dashboard, open the
 
 Now with the **ObjectDetectionManager (script)** setup correctly, find the **SceneController** object in your scene Hierarchy and select it.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial3-section4-step1-3.png)
+![Unity with SceneController script component configuration fields shown in Inspector](images/mr-learning-azure/tutorial3-section4-step1-3.png)
 
 You see *Object Detection Manager* field in the **SceneController** component is empty, drag the **ObjectDetectionManager** from the Hierarchy into that field and save the scene.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial3-section4-step1-4.png)
+![Unity with SceneController script component configured](images/mr-learning-azure/tutorial3-section4-step1-4.png)
 
 ## Take and upload images
 
@@ -91,4 +91,5 @@ In this tutorial you learned how Azure Custom Vision can be used to train images
 
 In the next tutorial you will learn how to use Azure Spatial Anchors to link a *Tracked Object* with a location in the physical world and how to display an arrow that will guide the user back to the Tracked Object's linked location.
 
-[Next tutorial: 4. Integrating Azure Spatial Anchors](mr-learning-azure-04.md)
+> [!div class="nextstepaction"]
+> [Next tutorial: 4. Integrating Azure Spatial Anchors](mr-learning-azure-04.md)

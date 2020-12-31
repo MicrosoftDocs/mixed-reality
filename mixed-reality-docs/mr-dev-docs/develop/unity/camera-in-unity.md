@@ -5,15 +5,19 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, holographic rendering, holographic, immersive, focus point, depth buffer, orientation-only, positional, opaque, transparent, clip
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, holographic rendering, holographic, immersive, focus point, depth buffer, orientation-only, positional, opaque, transparent, clip, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 
 # Camera in Unity
 
-When you wear a mixed reality headset, it becomes the center of your holographic world. The Unity [Camera](https://docs.unity3d.com/Manual/class-Camera.html) component will automatically handle stereoscopic rendering and will follow your head movement and rotation when your project has "Virtual Reality Supported" selected with "Windows Mixed Reality" as the device (in the Other Settings section of the Windows Store Player Settings). This may be listed as "Windows Holographic" in older versions of Unity.
+When you wear a mixed reality headset, it becomes the center of your holographic world. The Unity [Camera](https://docs.unity3d.com/Manual/class-Camera.html) component will automatically handle stereoscopic rendering and follow your head movement and rotation. However, to fully optimize visual quality and [hologram stability](../platform-capabilities-and-apis/hologram-stability.md), you should set the camera settings described below.
 
-However, to fully optimize visual quality and [hologram stability](../platform-capabilities-and-apis/hologram-stability.md), you should set the camera settings described below.
+## Setup
+
+1. Go to **Other Settings** section of the **Windows Store Player Settings**
+2. Choose **Windows Mixed Reality** as the device, which may be listed as **Windows Holographic** in older versions of Unity
+3. Select **Virtual Reality Supported**
 
 >[!NOTE]
 >These settings need to be applied to the Camera in each scene of your app.
@@ -22,10 +26,10 @@ However, to fully optimize visual quality and [hologram stability](../platform-c
 
 ## Holographic vs. immersive headsets
 
-The default settings on the Unity Camera component are for traditional 3D applications which need a skybox-like background as they don't have a real world.
+The default settings on the Unity Camera component are for traditional 3D applications, which need a skybox-like background as they don't have a real world.
 
-* When running on an **[immersive headset](../../discover/immersive-headset-hardware-details.md)**, you are rendering everything the user sees, and so you'll likely want to keep the skybox.
-* However, when running on a **holographic headset** like [HoloLens](../../hololens-hardware-details.md), the real world should appear behind everything the camera renders. To do this, set the camera background to be transparent (in HoloLens, black renders as transparent) instead of a Skybox texture:
+* When running on an **[immersive headset](../../discover/immersive-headset-hardware-details.md)**, you're rendering everything the user sees, and so you'll likely want to keep the skybox.
+* However, when running on a **holographic headset** like [HoloLens](../../hololens-hardware-details.md), the real world should appear behind everything the camera renders. Set the camera background to be transparent (in HoloLens, black renders as transparent) instead of a Skybox texture:
     1. Select the Main Camera in the Hierarchy panel
     2. In the Inspector panel, find the Camera component and change the Clear Flags dropdown from Skybox to Solid Color
     3. Select the Background color picker and change the RGBA values to (0, 0, 0, 0)
@@ -47,11 +51,11 @@ It will be easier to lay out your app if you imagine the starting position of th
 Rendering content too close to the user can be uncomfortable in mixed reality. You can adjust the [near and far clip planes](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances) on the Camera component.
 
 1. Select the Main Camera in the Hierarchy panel
-2. In the Inspector panel, find the Camera component Clipping Planes and change the Near textbox from 0.3 to .85. Content rendered even closer can lead to user discomfort and should be avoided per the [render distance guidelines](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances).
+2. In the Inspector panel, find the Camera component Clipping Planes and change the Near textbox from 0.3 to 0.85. Content rendered even closer can lead to user discomfort and should be avoided per the [render distance guidelines](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances).
 
 ## Multiple Cameras
 
-When there are multiple Camera components in the scene, Unity knows which camera to use for stereoscopic rendering and head tracking by checking which GameObject has the MainCamera tag.
+When there are multiple Camera components in the scene, Unity knows which camera to use for stereoscopic rendering and head tracking based on which GameObject has the MainCamera tag.
 
 ## Recentering a seated experience
 
@@ -63,33 +67,33 @@ Both HoloLens and immersive headsets will reproject each frame your app renders 
 
 By default:
 
-* **Immersive headsets** will perform positional reprojection, adjusting your holograms for misprediction in both position and orientation, if the app provides a depth buffer for a given frame.  If a depth buffer is not provided, the system will only correct mispredictions in orientation.
-* **Holographic headsets** like HoloLens will perform positional reprojection whether the app provides its depth buffer or not.  Positional reprojection is possible without depth buffers on HoloLens as rendering is often sparse with a stable background provided by the real world.
+* **Immersive headsets** will take care of positional reprojection if the app provides a depth buffer for a given frame. Immersive headsets will also adjust your holograms for misprediction in both position and orientation. If a depth buffer isn't provided, the system will only correct mispredictions in orientation.
+* **Holographic headsets** like HoloLens will take care of positional reprojection whether the app provides its depth buffer or not.  Positional reprojection is possible without depth buffers on HoloLens as rendering is often sparse with a stable background provided by the real world.
 
-If you know that you are building an [orientation-only experience](coordinate-systems-in-unity.md#building-an-orientation-only-or-seated-scale-experience) with rigidly body-locked content (e.g. 360-degree video content), you can explicitly set the reprojection mode to be orientation only by setting [HolographicSettings.ReprojectionMode](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.ReprojectionMode.html) to [HolographicReprojectionMode.OrientationOnly](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.HolographicReprojectionMode.html).
+If you know that you're building an [orientation-only experience](coordinate-systems-in-unity.md#building-an-orientation-only-or-seated-scale-experience) with rigidly body-locked content (for example, 360-degree video content), you can explicitly set the reprojection mode to orientation only by setting [HolographicSettings.ReprojectionMode](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.ReprojectionMode.html) to [HolographicReprojectionMode.OrientationOnly](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.HolographicReprojectionMode.html).
 
 ## Sharing your depth buffers with Windows
 
 Sharing your app's depth buffer to Windows each frame will give your app one of two boosts in hologram stability, based on the type of headset you're rendering for:
 
-* **Immersive headsets** can perform positional reprojection when a depth buffer is provided, adjusting your holograms for misprediction in both position and orientation.
+* **Immersive headsets** can take care of positional reprojection when a depth buffer is provided, adjusting your holograms for misprediction in both position and orientation.
 * **Holographic headsets** have a few different methods. HoloLens 1 will automatically select a [focus point](focus-point-in-unity.md) when a depth buffer is provided, optimizing hologram stability along the plane that intersects the most content. HoloLens 2 will stabilize content using [Depth LSR (see Remarks)](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint).
 
 To set whether your Unity app will provide a depth buffer to Windows:
 
 1. Go to **Edit** > **Project Settings** > **Player** > **Universal Windows Platform tab** > **XR Settings**.
 2. Expand the **Windows Mixed Reality SDK** item.
-3. Check or uncheck the **Enable Depth Buffer Sharing** check box.  This will be checked by default in new projects created since this feature was added to Unity and will be unchecked by default for older projects that were upgraded.
+3. Check or uncheck the **Enable Depth Buffer Sharing** check box.  Enable Depth Buffer Sharing is checked by default in new projects, since this feature was added to Unity and will be unchecked by default for older projects that were upgraded.
 
-Providing a depth buffer to Windows can improve visual quality so long as Windows can accurately map the normalized per-pixel depth values in your depth buffer back to distances in meters, using the near and far planes you've set in Unity on the main camera.  If your render passes handle depth values in typical ways, you should generally be fine here, though translucent render passes that write to the depth buffer while showing through to existing color pixels can confuse the reprojection.  If you know that your render passes will leave many of your final depth pixels with inaccurate depth values, you are likely to get better visual quality by unchecking "Enable Depth Buffer Sharing".## Next Development Checkpoint
+A depth buffer can improve visual quality so long as Windows can accurately map the normalized per-pixel depth values in your depth buffer back to distances in meters, using the near and far planes you've set in Unity on the main camera.  If your render passes handle depth values in typical ways, you should generally be fine here, though translucent render passes that write to the depth buffer while showing through to existing color pixels can confuse the reprojection.  If you know that your render passes will leave many of your final depth pixels with inaccurate depth values, you are likely to get better visual quality by unchecking "Enable Depth Buffer Sharing".
 
-## Automatic Scene and Camera Setup with Mixed Reality Toolkit v2
+## Automatic Scene and Camera Setup with Mixed Reality Toolkit 
 
-Follow the [step-by-step](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) guide to add Mixed Reality Toolkit v2 to your Unity project and it will configure your project automatically. You can also manually configure the project without MRTK with the guide in the section below.
+Follow the [step-by-step](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) guide to add Mixed Reality Toolkit to your Unity project and it will configure your project automatically. You can also manually configure the project without MRTK with the guide in the section below.
 
 ## Next Development Checkpoint
 
-If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can proceed to the next building block:
+If you're following the Unity development journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can continue to the next building block:
 
 > [!div class="nextstepaction"]
 > [Gaze](gaze-in-unity.md)

@@ -1,11 +1,11 @@
 ---
 title: PC Holographic Remoting tutorials - 1. Getting started with PC Holographic Remoting
-description: Complete this course to learn how to remote mixed reality experience form your PC to HoloLens 2.
+description: Complete this course to learn how to remote mixed reality a experience from your PC to HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/29/2020
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens
+keywords: mixed reality, unity, tutorial, hololens, PC holographic remoting, tooltips, eye-tracking
 ms.localizationpriority: high
 ---
 
@@ -15,7 +15,7 @@ ms.localizationpriority: high
 
   Welcome to the HoloLens 2 tutorials. In this two-part tutorial series, you will learn how to create a mixed reality experience demonstration and how to create a PC app for Holographic Remoting.
 
-   In this tutorial, [Create mixed reality experience](mr-learning-pc-holographic-remoting-01.md), you will learn how to create a mixed reality experience. It will demonstrate UI elements, 3D model manipulation, model clipping, and eye-tracking features.
+   In this tutorial, you'll learn how to create a mixed reality experience. It will demonstrate UI elements, 3D model manipulation, model clipping, and eye-tracking features.
 
   In the second tutorial, [Create a Holographic Remoting application](mr-learning-pc-holographic-remoting-02.md), you will learn how to create a PC app for Holographic Remoting. And connect to HoloLens 2 at any point, providing a way to visualize 3D content in mixed reality.
 
@@ -31,12 +31,12 @@ ms.localizationpriority: high
 * A Windows 10 PC configured with the correct [tools installed](../../install-the-tools.md)
 * Basic c# programming knowledge
 * A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.3.X mounted, and the Universal Windows Platform Build Support module added
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019 LTS mounted, and the Universal Windows Platform Build Support module added
 
 We **strongly recommend** completing the [Getting started](mr-learning-base-01.md) tutorials series or some basic prior experience with Unity and MRTK before continuing.
 
 > [!IMPORTANT]
-> * The recommended Unity version for this tutorial series is Unity 2019.3.X. It supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
+> * The recommended Unity version for this tutorial series is Unity 2019 LTS. It supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
 > * Holographic Remoting with MRTK projects will only work with legacy XR. XR SDK is not supported at this time.
 
 ## Creating and preparing the Unity project
@@ -61,14 +61,14 @@ Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base
 
 ## Importing the tutorial assets
 
-Download and **import** the [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/onginnovations/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.0.0/MRTK.Tutorials.PCHolographicRemoting.unitypackage).
+Download and **import** the [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.0/MRTK.Tutorials.PCHolographicRemoting.unitypackage).
 
 >[!TIP]
 > For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](../../../mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) instructions.
 
 After importing the tutorial assets, your Project window should look similar to this:
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section2-Step1-1.png)
+![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mrlearning-pc-holographic-remoting/Tutorial1-Section2-Step1-1.png)
 
 ## Configuring and preparing the scene
 
@@ -83,15 +83,15 @@ In the Project window, navigate to **Assets** > **MRTK.Tutorials.PCHolograhicRem
 * ModelParent
 * Platform
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-1.png)
+![Unity with prefabs to be added to scene selected](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-1.png)
 
 Drag-and-drop these models from the prefabs folder into the **Hierarchy window**.
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-2.png)
+![Unity with newly added prefabs still selected](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-2.png)
 
 To focus in on the objects in the scene, you can double-click on the **ModelParent** object, and then zoom slightly in again:
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-3.png)
+![Unity with ModelParent object in focus](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-3.png)
 
 > [!TIP]
 > If you find the large icons in your scene, such as, the large framed 'T' icons distracting, you can hide these by <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">toggling the Gizmos</a> to the off position.
@@ -104,15 +104,15 @@ In this section, you will add scripts into the scene to create button events dem
 
 In the Hierarchy window, expand the **ButtonParent** object and select the **NextButton**. In the Inspector window, locate the **Interactable (Script)** component and click on **+** icon under **OnClick ()** event.
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-1.png)
+![Unity with NextButton OnClick event added](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-1.png)
 
 With the **NextButton** object still selected in the Hierarchy window, click-and-drag the **ButtonParent** object from the Hierarchy window into the empty **None (Object)** field of the event you just added to make the ButtonParent object listen for button click event from this button:
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-2.png)
+![Unity with NextButton OnClick event listener configured](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-2.png)
 
 Click the **No Function** dropdown of the same event. Then select **ViewButtonControl** > **NextModel ()** to set the **NextModel ()** function as the action that is triggered when the button pressed events is fired from this button:
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-3.png)
+![Unity with NextButton OnClick event action selection path](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-3.png)
 
 ### 2. Configuring the remaining buttons
 
@@ -132,17 +132,17 @@ With the ButtonParent object still selected in the Hierarchy window, in the Insp
 
 In the **Size** field, enter the number of 3D models you would like to have in your scene. In this case, it would be six. It will create fields for adding new 3D models.
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step3-1.png)
+![Unity with ViewButtonControl script component fields](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step3-1.png)
 
 Drag and drop each child object of ModelParent Object into these fields.
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step3-2.png)
+![Unity with ViewButtonControl script component fields configured](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step3-2.png)
 
 Drag and drop the  **ClippingObjects** object from the Hierarchy window to the  **Toggle Button (Script)** component **Clipping Object** field.
 >[!NOTE]
 >Stay in button parent object only.
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step3-3.png)
+![Unity with ToggleButton script component field configured](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step3-3.png)
 
 In the Hierarchy window, select the **ClippingObjects** prefab and enable it in the Inspector window to turn on the Clipping objects.
 
@@ -154,7 +154,7 @@ In the Hierarchy window, expand the **ClippingObjects** object to expose the thr
 
 To configure the **ClippingSphere** object, click on it, and in the Inspector window, locate the **Clipping Sphere (Script)** component. Enter the number of renderers in the size field that you need to add for your 3D model. In this case, add 10 for MarsCuriosityRover child objects. It will create fields for adding renderers, drag and drop MarsCuriosityRover Object's child model objects into these fields.
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section5-Step1-1.png)
+![Unity with ClippingSphere script component fields configured](images/mrlearning-pc-holographic-remoting/Tutorial1-Section5-Step1-1.png)
 
 Follow the same process and add MarsCuriosityRover's child objects renderers to the **ClippingBox** and **ClippingPlane** objects.
 
@@ -171,7 +171,7 @@ In the Hierarchy window, select the ModelParent object. Expand the ***MarsCurios
 * Observe five corresponding tooltip objects associated with MarsCuriosityRover parts in the Hierarchy window.
 * You will be configuring these objects to highlight the experience when you look at the MarsCuriosityRover parts.
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step1-1.png)
+![Unity with Rover object selected and expanded](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step1-1.png)
 
 ### 2. Implement While Looking At Target ()  &  On Look Away () events
 
@@ -180,11 +180,11 @@ In the Hierarchy window, select the ***POI-Camera*** object. In the Inspector wi
 * To **None (Object)** field, assign the **POI-Camera ToolTip** object
 * From **No Function** dropdown of **While Looking At Target ()** event, select **GameObject** > **SetActive (bool).** Select the **Checkbox** under it to highlight the tooltip as the action that is triggered when you look at the target object.
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-1.png)
+![Unity with EyeTrackingTarget WhileLookingAtTarget event configuration in progress](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-1.png)
 
 * Follow the same process and click on the **No Function** dropdown of the **On Look Away ()** event listener. Then select **GameObject** > **SetActive (bool**) and leave the **Checkbox** empty to hide the tooltip as the action that is triggered when you look away from the target object.
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-2.png)
+![Unity with EyeTrackingTarget OnLookAway event configured](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-2.png)
 
 Follow the same process and assign respective tooltip objects to their same **MarsCuriosityRover** parts
 **While Looking At Target ()** & **On Look Away ()** events.
@@ -197,4 +197,5 @@ In this tutorial, you learned to build a mixed reality experience demonstrating 
 
 In the next lesson, you will learn how to create a Holographic Remoting application for PC to connect HoloLens 2 at any point, providing a way to Visualize 3D content in mixed reality.
 
-[Next Lesson: 2. Create Holographic Remoting application](mr-learning-pc-holographic-remoting-02.md)
+> [!div class="nextstepaction"]
+> [Next Lesson: 2. Create Holographic Remoting application](mr-learning-pc-holographic-remoting-02.md)

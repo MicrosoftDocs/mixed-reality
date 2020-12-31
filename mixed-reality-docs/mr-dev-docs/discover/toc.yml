@@ -3,11 +3,17 @@
 - name: What is Mixed Reality?
   href: mixed-reality.md
 - name: What is a hologram?
-  href: hologram.md 
+  href: hologram.md
+- name: Mixed Reality Learning overview
+  href: mr-learning-overview.md
 - name: Expand your design process
   href: case-study-expanding-the-design-process-for-mixed-reality.md
-- name: Running the MRTK Examples Hub 
+- name: Running the MRTK Examples Hub
   href: running-examples-hub.md
+- name: Designing holograms
+  href: designing-holograms.md
+- name: Case studies overview
+  href: case-studies-overview.md
 - name: HoloLens hardware
   items:
   - name: HoloLens 2 hardware details

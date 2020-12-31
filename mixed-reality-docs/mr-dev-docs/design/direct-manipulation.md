@@ -6,7 +6,7 @@ ms.author: cmeekhof
 ms.date: 04/02/2019
 ms.topic: article
 ms.localizationpriority: high
-keywords: Mixed Reality, Gaze, gaze targeting, interaction, design, hands near, HoloLens
+keywords: Mixed Reality, Gaze, gaze targeting, interaction, design, hands near, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset, MRTK, Mixed Reality Toolkit, button, colliders, bounding box, 2D, instinctual gestures
 ---
 
 # Direct manipulation with hands
@@ -29,7 +29,7 @@ Direct manipulation is affordance-based, meaning it's user friendly. There are n
 <tr>
      <td><strong>Input model</strong></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
-     <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+     <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></a></td>
      <td><a href="https://docs.microsoft.com/windows/mixed-reality/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
 </tr>
 <tr>

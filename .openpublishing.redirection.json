@@ -87,7 +87,7 @@
 			"redirect_document_id": false
 		},
 		{
-			"source_path": "/mixed-reality-docs/get-apps-for-hololens.md",
+			"source_path": "mixed-reality-docs/get-apps-for-hololens.md",
 			"redirect_url": "https://docs.microsoft.com/hololens/holographic-store-apps",
 			"redirect_document_id": false
 		},
@@ -914,8 +914,13 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/hand-eye-in-unit.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/unity/hand-eye-in-unit",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/unity/hand-eye-in-unity",
 			"redirect_document_id": true
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/hand-eye-in-unit.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/unity/hand-eye-in-unity",
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/keyboard-input-in-unity.md",
@@ -953,6 +958,11 @@
 			"redirect_document_id": true
 		},
 		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/mrtk-porting-guide.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/porting-hl1-hl2",
+			"redirect_document_id": true
+		},
+		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/performance-recommendations-for-unity.md",
 			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/unity/performance-recommendations-for-unity",
 			"redirect_document_id": true
@@ -979,8 +989,18 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/samples.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/unity/samples",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/features-and-samples",
 			"redirect_document_id": true
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/samples.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/features-and-samples",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unreal/unreal-samples.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/features-and-samples",
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/shared-experiences-in-unity.md",
@@ -1299,8 +1319,13 @@
 			"redirect_document_id": true
 		},
 		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/holographic-remoting-create-host.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/holographic-remoting-create-host",
+			"source_path": "mixed-reality-docs/mr-dev-docs/holographic-remoting-create-remote-wmr.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/holographic-remoting-create-remote-wmr",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/holographic-remoting-create-remote-openxr.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/holographic-remoting-create-remote-openxr",
 			"redirect_document_id": true
 		},
 		{
@@ -1442,6 +1467,11 @@
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/case-studies-overview.md",
 			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/discover/case-studies-overview",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/mr-learning-overview.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/discover/mr-learning-overview",
 			"redirect_document_id": false
 		},
 		{
@@ -1638,7 +1668,7 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/mr-learning-overview.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/out-of-scope/mr-learning-overview",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/mr-learning-overview",
 			"redirect_document_id": true
 		},
 		{
@@ -1663,8 +1693,8 @@
 			"redirect_document_id": true
 		},
 		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/contributing.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/whats-new/contributing",
+			"source_path": "mixed-reality-docs/mr-dev-docs/whats-new/contributing.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/contributing",
 			"redirect_document_id": true
 		},
 		{
@@ -1680,46 +1710,6 @@
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/new-microsoft-edge.md",
 			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/whats-new/new-microsoft-edge",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/release-notes-april-2018.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/whats-new/release-notes-april-2018",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/release-notes-august-2016.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/whats-new/release-notes-august-2016",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/release-notes-march-2016.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/whats-new/release-notes-march-2016",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/release-notes-may-2016.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/whats-new/release-notes-may-2016",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/release-notes-may-2019.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/whats-new/release-notes-may-2019",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/release-notes-may-2020.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/whats-new/release-notes-may-2020",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/release-notes-october-2017.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/whats-new/release-notes-october-2017",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/release-notes-october-2018.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/whats-new/release-notes-october-2018",
 			"redirect_document_id": true
 		},
 		{

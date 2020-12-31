@@ -3,31 +3,34 @@ title: Local Spatial Anchors in Unreal
 description: Guide to using spatial anchors in Unreal
 author: hferrone
 ms.author: v-hferrone
-ms.date: 06/10/2020
+ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, features, documentation, guides, holograms, spatial anchors
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, features, documentation, guides, holograms, spatial anchors, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
+
+
 # Local Spatial Anchors in Unreal
 
-## Overview
+Spatial anchors save holograms in real-world space between application sessions as **ARPin**s. Once saved in the HoloLens' anchor store, ARPin's can be loaded in future sessions and are an ideal fallback option when there's no internet connectivity.
 
-Spatial anchors are used to save holograms in real-world space between application sessions. These get surfaced through Unreal as **ARPin**s and saved in the HoloLens’ anchor store, which is loaded in future sessions. Local anchors are ideal as a fallback when there is no internet connectivity.
+> [!NOTE]
+> Anchor functions from UE 4.25 are obsolete in 4.26 and should be replaced with newer ones. 
 
 > [!IMPORTANT]
 > Local anchors are stored on device, while Azure Spatial Anchors are stored in the cloud. If you're looking to use Azure cloud services to store your anchors, we have a document that can walk you through integrating [Azure Spatial Anchors](unreal-azure-spatial-anchors.md). Note that you can have local and Azure anchors in the same project without conflict.
 
 ## Checking the anchor store
 
-Before saving or loading anchors, you need to check if the anchor store is ready.  Calling any of the HoloLens anchor functions before the anchor store is ready will not succeed.  
+Before saving or loading anchors, you need to check if the anchor store is ready.  Calling any of the HoloLens anchor functions before the anchor store is ready won't succeed.  
 
-![Spatial Anchors Store Ready](images/unreal-spatialanchors-store-ready.PNG)
+[!INCLUDE[](includes/tabs-sa-1.md)]
 
 ## Saving anchors
 
-Once the application has a component that needs to be pinned to the world, it can be saved to the anchor store with the following sequence: 
+Once the application has a component you need to pin to the world, it can be saved to the anchor store with the following sequence: 
 
-![Spatial Anchors Save](images/unreal-spatialanchors-save.PNG)
+[!INCLUDE[](includes/tabs-sa-2.md)]
 
 Breaking this down:
 1. Spawn an actor at a known location.
@@ -35,13 +38,13 @@ Breaking this down:
 3. Add the actor to the **ARPin** and save the pin to the HoloLens anchor store.  
     * The anchor name you choose must be unique, which in this example is the current timestamp. 
 
-4. If the anchor is successfully saved to the anchor store, you can be inspect it in the HoloLens device portal under **System > Map manager > Anchor Files Saved On Device**. 
+4. If the anchor is successfully saved to the anchor store, you can see it in the HoloLens device portal under **System > Map manager > Anchor Files Saved On Device**. 
 
 ## Loading anchors
 
 When an application starts, you can use the following blueprint to restore components to their anchor locations:
 
-![Spatial Anchors Load](images/unreal-spatialanchors-load.PNG)
+[!INCLUDE[](includes/tabs-sa-3.md)]
 
 Breaking this down:
 1. Iterate over all of the anchors in the anchor store. 
@@ -54,16 +57,16 @@ The anchor ID is also queried so that different actors can be spawned depending 
 
 ## Removing anchors 
 
-When you're done with an anchor you can clear individual anchors or the entire anchor store with the **Remove ARPin from WMRAnchor Store** and **Remove All ARPins from WMRAnchor Store** components.
+When you're done with an anchor, you can clear individual anchors or the entire anchor store with the **Remove ARPin from WMRAnchor Store** and **Remove All ARPins from WMRAnchor Store** components.
 
-![Spatial Anchors Remove](images/unreal-spatialanchors-remove.PNG)
+[!INCLUDE[](includes/tabs-sa-4.md)]
 
 > [!NOTE]
 > Bear in mind that Spatial Anchors are still in Beta, so be sure to check back for updated information and features.
 
 ## Next Development Checkpoint
 
-If you're following the Unreal development checkpoint journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can proceed to the next building block: 
+If you're following the Unreal development journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can continue to the next building block: 
 
 > [!div class="nextstepaction"]
 > [Azure Spatial Anchors](unreal-azure-spatial-anchors.md)

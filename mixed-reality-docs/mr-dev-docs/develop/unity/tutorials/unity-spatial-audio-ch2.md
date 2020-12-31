@@ -2,10 +2,10 @@
 title: Spatial audio tutorials - 2. Spatializing button interaction sounds
 description: Add a button to your project, and spatialize the button interaction sounds.
 author: kegodin
-ms.author: kegodin
+ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens2, spatial audio
+keywords: mixed reality, unity, tutorial, hololens2, spatial audio, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head-related transfer function, reverb, Microsoft Spatializer, prefabs, volume curve
 ---
 
 # Spatializing button interaction sounds
@@ -66,11 +66,21 @@ After these changes, the **3D Sound Settings** section of the **Audio Source** p
 
 ![Button 3D sound settings](images/spatial-audio/button-3d-sound-settings.png)
 
+## Testing the spatialize audio
+
+Feel free to test out the new spatialized button interaction sounds:
+
+* Enter game mode in the Unity editor, ideally with a looped audio sample in the scene
+* Move the object with the audio source from left to right and compare with and without spatial audio enabled. You can change the Audio Source settings for testing by:
+    * Moving the Spatial Blend property between 0 - 1 (2D non-spatialized and 3D spatialized sound)
+    * Checking and unchecking the Spatialize property
+
 ## Next steps
 
 Try out your app on a HoloLens 2, or in the Unity editor. In the app, you can touch the button and hear the spatialized button interaction sounds.
 
 When testing in the Unity editor, press the space bar and scroll with the scroll wheel to activate hand simulation. For more info, see the [MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene).
 
-Continue to [Chapter 3](unity-spatial-audio-ch3.md) to add a video to your app, and spatialize the audio from the video.
+> [!div class="nextstepaction"]
+> [Chapter 3](unity-spatial-audio-ch3.md)
 

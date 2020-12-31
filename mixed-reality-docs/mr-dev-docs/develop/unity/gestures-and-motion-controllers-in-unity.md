@@ -1,11 +1,11 @@
 ---
 title: Gestures and motion controllers in Unity
 description: Learn how to take action on your gaze in Unity with hand gestures and motion controllers.
-author: thetuvix
+author: hferrone
 ms.author: alexturn
-ms.date: 03/21/2018
+ms.date: 12/1/2020
 ms.topic: article
-keywords: gestures, motion controllers, unity, gaze, input
+keywords: gestures, motion controllers, unity, gaze, input, mixed reality headset, windows mixed reality headset, virtual reality headset, MRTK, Mixed Reality Toolkit
 ---
 
 
@@ -13,17 +13,23 @@ keywords: gestures, motion controllers, unity, gaze, input
 
 There are two key ways to take action on your [gaze in Unity](gaze-in-unity.md), [hand gestures](../../design/gaze-and-commit.md#composite-gestures) and [motion controllers](../../design/motion-controllers.md) in HoloLens and Immersive HMD. You access the data for both sources of spatial input through the same APIs in Unity.
 
-Unity provides two primary ways to access spatial input data for Windows Mixed Reality, the common *Input.GetButton/Input.GetAxis* APIs that work across multiple Unity XR SDKs, and an *InteractionManager/GestureRecognizer* API specific to Windows Mixed Reality that exposes the full set of spatial input data available.
+Unity provides two primary ways to access spatial input data for Windows Mixed Reality. The common *Input.GetButton/Input.GetAxis* APIs work across multiple Unity XR SDKs, while the *InteractionManager/GestureRecognizer* API specific to Windows Mixed Reality exposes the full set of spatial input data.
+
+## Unity XR input APIs
+
+For new projects, we recommend using the new XR input APIs from the beginning. 
+
+You can find more information about the [XR APIs here](https://docs.unity3d.com/Manual/xr_input.html).
 
 ## Unity button/axis mapping table
 
-The button and axis IDs in the table below are supported in Unity's Input Manager for Windows Mixed Reality motion controllers through the *Input.GetButton/GetAxis* APIs, while the "Windows MR-specific" column refers to properties available off of the *InteractionSourceState* type. Each of these APIs are described in detail in the sections below.
+Unity's Input Manager for Windows Mixed Reality motion controllers supports the button and axis IDs listed below through the *Input.GetButton/GetAxis* APIs. The "Windows MR-specific" column refers to properties available off of the *InteractionSourceState* type. Each of these APIs is described in detail in the sections below.
 
 The button/axis ID mappings for Windows Mixed Reality generally match the Oculus button/axis IDs.
 
 The button/axis ID mappings for Windows Mixed Reality differ from OpenVR's mappings in two ways:
 1. The mapping uses touchpad IDs that are distinct from thumbstick, to support controllers with both thumbsticks and touchpads.
-2. The mapping avoids overloading the A and X button IDs for the Menu buttons, to leave those available for physical ABXY buttons.
+2. The mapping avoids overloading the A and X button IDs for the Menu buttons to leave them available for the physical ABXY buttons.
 
 <table>
 <tr>
@@ -64,17 +70,45 @@ The button/axis ID mappings for Windows Mixed Reality differ from OpenVR's mappi
 >[!NOTE]
 >These button/axis IDs differ from the IDs that Unity uses for OpenVR due to collisions in the mappings used by gamepads, Oculus Touch and OpenVR.
 
+<!-- ### Using HP Reverb G2 controllers
+
+If you're using the HP Reverb G2 controllers, refer to the table below for button and axis IDs.
+
+<table>
+<tr>
+<th rowspan="2"><a href="https://docs.unity3d.com/ScriptReference/XR.CommonUsages.html">Input </th><th colspan="2">Common Unity APIs</a><br />(Input.GetButton/GetAxis) </th><th rowspan="2">HP Reverb G2 Input API</a></th>
+</tr><tr>
+<th> Left hand </th><th> Right hand</th>
+</tr><tr>
+<td> Primary2DAxis </td><td> Axis 1 (X) / Axis 2 (Y) </td><td> Axis 4 (X) / Axis 5(Y) </td><td> Thumbstick</td>
+</tr><tr>
+<td> Trigger pressed </td><td> Axis 9 </td><td> Axis 10 </td><td> Index trigger</td>
+</tr><tr>
+<td> Grip </td><td> Axis 11d </td><td> Axis 12 </td><td> Grip trigger</td>
+</tr><tr>
+<td> PrimaryButton pressed </td><td> Button 2 </td><td> Button 0 </td><td> Menu button pressed</td>
+</tr><tr>
+<td> SecondaryButton pressed </td><td> Button 3 </td><td> Button 1 </td><td> A/X button</td>
+</tr><tr>
+<td> GripButton </td><td> Button 4 </td><td> Button 5 </td><td> Grip trigger</td>
+</tr><tr>
+<td> TriggerButton </td><td> Button 14 </td><td> Button 15 </td><td> Index trigger</td>
+</tr><tr>
+</tr>
+</table> -->
+
+
 ## Grip pose vs. pointing pose
 
-Windows Mixed Reality supports motion controllers in a variety of form factors, with each controller's design differing in its relationship between the user's hand position and the natural "forward" direction that apps should use for pointing when rendering the controller.
+Windows Mixed Reality supports motion controllers in a variety of form factors. Each controller's design differs in its relationship between the user's hand position and the natural "forward" direction that apps should use for pointing when rendering the controller.
 
 To better represent these controllers, there are two kinds of poses you can investigate for each interaction source, the **grip pose** and the **pointer pose**. Both the grip pose and pointer pose coordinates are expressed by all Unity APIs in global Unity world coordinates.
 
 ### Grip pose
 
-The **grip pose** represents the location of either the palm of a hand detected by a HoloLens, or the palm holding a motion controller.
+The **grip pose** represents the location of the users palm, either detected by a HoloLens or holding a motion controller.
 
-On immersive headsets, the grip pose is best used to render **the user's hand** or **an object held in the user's hand**, such as a sword or gun. The grip pose is also used when visualizing a motion controller, as the **renderable model** provided by Windows for a motion controller uses the grip pose as its origin and center of rotation.
+On immersive headsets, the grip pose is best used to render **the user's hand** or **an object held in the user's hand**. The grip pose is also used when visualizing a motion controller. The **renderable model** provided by Windows for a motion controller uses the grip pose as its origin and center of rotation.
 
 The grip pose is defined specifically as follows:
 * The **grip position**: The palm centroid when holding the controller naturally, adjusted left or right to center the position within the grip. On the Windows Mixed Reality motion controller, this position generally aligns with the Grasp button.
@@ -88,7 +122,7 @@ You can access the grip pose through either Unity's cross-vendor input API (*[XR
 
 The **pointer pose** represents the tip of the controller pointing forward.
 
-The system-provided pointer pose is best used to raycast when you are **rendering the controller model itself**. If you are rendering some other virtual object in place of the controller, such as a virtual gun, you should point with a ray that is most natural for that virtual object, such as a ray that travels along the barrel of the app-defined gun model. Because users can see the virtual object and not the physical controller, pointing with the virtual object will likely be more natural for those using your app.
+The system-provided pointer pose is best used to raycast when you're **rendering the controller model itself**. If you're rendering some other virtual object in place of the controller, such as a virtual gun, you should point with a ray that's most natural for that virtual object, such as a ray that travels along the barrel of the app-defined gun model. Because users can see the virtual object and not the physical controller, pointing with the virtual object will likely be more natural for those using your app.
 
 Currently, the pointer pose is available in Unity only through the Windows MR-specific API, *sourceState.sourcePose.TryGetPosition/Rotation*, passing in *InteractionSourceNode.Pointer* as the argument.
 
@@ -96,7 +130,7 @@ Currently, the pointer pose is available in Unity only through the Windows MR-sp
 
 Like the headsets, the Windows Mixed Reality motion controller requires no setup of external tracking sensors. Instead, the controllers are tracked by sensors in the headset itself.
 
-If the user moves the controllers out of the headset's field of view, in most cases Windows will continue to infer controller positions and provide them to the app. When the controller has lost visual tracking for long enough, the controller's positions will drop to approximate-accuracy positions.
+If the user moves the controllers out of the headset's field of view, Windows continues to infer controller positions in most cases. When the controller has lost visual tracking for long enough, the controller's positions will drop to approximate-accuracy positions.
 
 At this point, the system will body-lock the controller to the user, tracking the user's position as they move around, while still exposing the controller's true orientation using its internal orientation sensors. Many apps that use controllers to point at and activate UI elements can operate normally while in approximate accuracy without the user noticing.
 
@@ -125,10 +159,10 @@ Apps that wish to treat positions differently based on tracking state may go fur
 </table>
 
 These motion controller tracking states are defined as follows:
-* **High accuracy:** While the motion controller is within the headset's field of view, it will generally provide high-accuracy positions, based on visual tracking. Note that a moving controller that momentarily leaves the field of view or is momentarily obscured from the headset sensors (e.g. by the user's other hand) will continue to return high-accuracy poses for a short time, based on inertial tracking of the controller itself.
-* **High accuracy (at risk of losing):** When the user moves the motion controller past the edge of the headset's field of view, the headset will soon be unable to visually track the controller's position. The app knows when the controller has reached this FOV boundary by seeing the **SourceLossRisk** reach 1.0. At that point, the app may choose to pause controller gestures that require a steady stream of very high-quality poses.
+* **High accuracy:** While the motion controller is within the headset's field of view, it will generally provide high-accuracy positions, based on visual tracking. A moving controller that momentarily leaves the field of view or is momentarily obscured from the headset sensors (e.g. by the user's other hand) will continue to return high-accuracy poses for a short time, based on inertial tracking of the controller itself.
+* **High accuracy (at risk of losing):** When the user moves the motion controller past the edge of the headset's field of view, the headset will soon be unable to visually track the controller's position. The app knows when the controller has reached this FOV boundary by seeing the **SourceLossRisk** reach 1.0. At that point, the app may choose to pause controller gestures that require a steady stream of high quality poses.
 * **Approximate accuracy:** When the controller has lost visual tracking for long enough, the controller's positions will drop to approximate-accuracy positions. At this point, the system will body-lock the controller to the user, tracking the user's position as they move around, while still exposing the controller's true orientation using its internal orientation sensors. Many apps that use controllers to point at and activate UI elements can operate as normal while in approximate accuracy without the user noticing. Apps with heavier input requirements may choose to sense this drop from **High** accuracy to **Approximate** accuracy by inspecting the **PositionAccuracy** property, for example to give the user a more generous hitbox on off-screen targets during this time.
-* **No position:** While the controller can operate at approximate accuracy for a long time, sometimes the system knows that even a body-locked position is not meaningful at the moment. For example, a controller that was just turned on may have never been observed visually, or a user may put down a controller that's then picked up by someone else. At those times, the system will not provide any position to the app, and *TryGetPosition* will return false.
+* **No position:** While the controller can operate at approximate accuracy for a long time, sometimes the system knows that even a body-locked position isn't meaningful at the moment. For example, a controller that was turned on may have never been observed visually, or a user may put down a controller that's then picked up by someone else. At those times, the system won't provide any position to the app, and *TryGetPosition* will return false.
 
 ## Common Unity APIs (Input.GetButton/GetAxis)
 
@@ -158,7 +192,7 @@ You can add more logical buttons by changing the **Size** property under **Axes*
 
 ### Getting a physical button's pressed state directly
 
-You can also access buttons manually by their fully-qualified name, using *Input.GetKey*:
+You can also access buttons manually by their fully qualified name, using *Input.GetKey*:
 
 ```cs
 if (Input.GetKey("joystick button 8"))
@@ -176,11 +210,15 @@ Vector3 leftPosition = InputTracking.GetLocalPosition(XRNode.LeftHand);
 Quaternion leftRotation = InputTracking.GetLocalRotation(XRNode.LeftHand);
 ```
 
-Note that this represents the controller's grip pose (where the user holds the controller), which is useful for rendering a sword or gun in the user's hand, or a model of the controller itself.
-
-Note that the relationship between this grip pose and the pointer pose (where the tip of the controller is pointing) may differ across controllers. At this moment, accessing the controller's pointer pose is only possible through the MR-specific input API, described in the sections below.
+> [!NOTE] 
+> The above code represents the controller's grip pose (where the user holds the controller), which is useful for rendering a sword or gun in the user's hand, or a model of the controller itself.
+> 
+> The relationship between this grip pose and the pointer pose (where the tip of the controller is pointing) may differ across controllers. At this moment, accessing the controller's pointer pose is only possible through the MR-specific input API, described in the sections below.
 
 ## Windows-specific APIs (XR.WSA.Input)
+
+> [!CAUTION]
+> If your project is using any of the XR.WSA APIs, these are being phased out in favor of the XR SDK in future Unity releases. For new projects, we recommend using the XR SDK from the beginning. You can find more information about the [XR Input system and APIs here](https://docs.unity3d.com/Manual/xr_input.html).
 
 **Namespace:** *UnityEngine.XR.WSA.Input*<br>
 **Types**: *InteractionManager*, *InteractionSourceState*, *InteractionSource*, *InteractionSourceProperties*, *InteractionSourceKind*, *InteractionSourceLocation*
@@ -224,7 +262,7 @@ Each *InteractionSourceState* you get back represents an interaction source at t
 
 ### Polling for forward-predicted rendering poses
 
-* When polling for interaction source data from hands and controllers, the poses you get are forward-predicted poses for the moment in time when this frame's photons will reach the user's eyes.  These forward-predicted poses are best used for **rendering** the controller or a held object each frame.  If you are targeting a given press or release with the controller, that will be most accurate if you use the historical event APIs described below.
+* When polling for interaction source data from hands and controllers, the poses you get are forward-predicted poses for the moment in time when this frame's photons will reach the user's eyes.  Forward-predicted poses are best used for **rendering** the controller or a held object each frame.  If you're targeting a given press or release with the controller, that will be most accurate if you use the historical event APIs described below.
 
    ```cs
    var sourcePose = interactionSourceState.sourcePose;
@@ -275,7 +313,7 @@ To handle interaction source events:
 
 ### How to stop handling an event
 
-You need to stop handling an event when you are no longer interested in the event or you are destroying the object that has subscribed to the event. To stop handling the event, you unsubscribe from the event.
+You need to stop handling an event when you're no longer interested in the event or you're destroying the object that has subscribed to the event. To stop handling the event, you unsubscribe from the event.
 
 ```cs
 InteractionManager.InteractionSourcePressed -= InteractionManager_InteractionSourcePressed;
@@ -292,11 +330,11 @@ The available interaction source events are:
 
 ### Events for historical targeting poses that most accurately match a press or release
 
-The polling APIs described earlier give your app forward-predicted poses.  While those predicted poses are best for rendering the controller or a virtual handheld object, future poses are not optimal for targeting, for two key reasons:
-* When the user presses a button on a controller, there can be about 20ms of wireless latency over Bluetooth before the system receives the press.
-* Then, if you are using a forward-predicted pose, there would be another 10-20ms of forward prediction applied to target the time when the current frame's photons will reach the user's eyes.
+The polling APIs described earlier give your app forward-predicted poses.  While those predicted poses are best for rendering the controller or a virtual handheld object, future poses aren't optimal for targeting, for two key reasons:
+* When the user presses a button on a controller, there can be about 20 ms of wireless latency over Bluetooth before the system receives the press.
+* Then, if you're using a forward-predicted pose, there would be another 10-20 ms of forward prediction applied to target the time when the current frame's photons will reach the user's eyes.
 
-This means that polling gives you a source pose or head pose that is 30-40ms forward from where the user's head and hands actually were back when the press or release happened.  For HoloLens hand input, while there's no wireless transmission delay, there is a similar processing delay to detect the press.
+This means that polling gives you a source pose or head pose that is 30-40 ms forward from where the user's head and hands actually were back when the press or release happened.  For HoloLens hand input, while there's no wireless transmission delay, there's a similar processing delay to detect the press.
 
 To accurately target based on the user's original intent for a hand or controller press, you should use the historical source pose or head pose from that *InteractionSourcePressed* or *InteractionSourceReleased* input event.
 
@@ -315,7 +353,7 @@ You can target a press or release with historical pose data from the user's head
    }
    ```
 
-* The source pose at the moment in time when a motion controller press occurred, which can be used for **targeting** to determine what the user was pointing the controller at.  This will be the state of the controller that experienced the press.  If you are rendering the controller itself, you can request the pointer pose rather than the grip pose, to shoot the targeting ray from what the user will consider the natural tip of that rendered controller:
+* The source pose at the moment in time when a motion controller press occurred, which can be used for **targeting** to determine what the user was pointing the controller at.  This will be the state of the controller that experienced the press.  If you're rendering the controller itself, you can request the pointer pose rather than the grip pose, to shoot the targeting ray from what the user will consider the natural tip of that rendered controller:
 
    ```cs
    void InteractionManager_InteractionSourcePressed(InteractionSourcePressedEventArgs args)
@@ -397,9 +435,9 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 **Namespace:** *UnityEngine.XR.WSA.Input*<br>
 **Types**: *GestureRecognizer*, *GestureSettings*, *InteractionSourceKind*
 
-Your app can also recognize higher-level composite gestures for spatial input sources, Tap, Hold, Manipulation and Navigation gestures. You can recognize these composite gestures across both [hands](../../design/gaze-and-commit.md#composite-gestures) and [motion controllers](../../design/motion-controllers.md) using the GestureRecognizer.
+Your app can also recognize higher-level composite gestures for spatial input sources, Tap, Hold, Manipulation, and Navigation gestures. You can recognize these composite gestures across both [hands](../../design/gaze-and-commit.md#composite-gestures) and [motion controllers](../../design/motion-controllers.md) using the GestureRecognizer.
 
-Each Gesture event on the GestureRecognizer provides the SourceKind for the input as well as the targeting head ray at the time of the event. Some events provide additional context specific information.
+Each Gesture event on the GestureRecognizer provides the SourceKind for the input as well as the targeting head ray at the time of the event. Some events provide additional context-specific information.
 
 There are only a few steps required to capture gestures using a Gesture Recognizer:
 1. Create a new Gesture Recognizer
@@ -417,7 +455,7 @@ GestureRecognizer recognizer = new GestureRecognizer();
 
 ### Specify which gestures to watch for
 
-Specify which gestures you are interested in via *SetRecognizableGestures()*:
+Specify which gestures you're interested in via *SetRecognizableGestures()*:
 
 ```cs
 recognizer.SetRecognizableGestures(GestureSettings.Tap | GestureSettings.Hold);
@@ -425,7 +463,7 @@ recognizer.SetRecognizableGestures(GestureSettings.Tap | GestureSettings.Hold);
 
 ### Subscribe to events for those gestures
 
-Subscribe to events for the gestures you are interested in.
+Subscribe to events for the gestures you're interested in.
 
 ```cs
 void Start()
@@ -442,7 +480,7 @@ void Start()
 
 ### Start capturing gestures
 
-By default, a *GestureRecognizer* does not monitor input until *StartCapturingGestures()* is called. It is possible that a gesture event may be generated after *StopCapturingGestures()* is called if input was performed before the frame where *StopCapturingGestures()* was processed. The *GestureRecognizer* will remember whether it was on or off during the previous frame in which the gesture actually occurred, and so it is reliable to start and stop gesture monitoring based on this frame's gaze targeting.
+By default, a *GestureRecognizer* doesn't monitor input until *StartCapturingGestures()* is called. It's possible that a gesture event may be generated after *StopCapturingGestures()* is called if input was performed before the frame where *StopCapturingGestures()* was processed. The *GestureRecognizer* will remember whether it was on or off during the previous frame in which the gesture actually occurred, and so it's reliable to start and stop gesture monitoring based on this frame's gaze targeting.
 
 ```cs
 recognizer.StartCapturingGestures();
@@ -478,28 +516,28 @@ void OnDestroy()
 To render motion controllers in your app that match the physical controllers your users are holding and articulate as various buttons are pressed, you can use the **MotionController prefab** in the [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity/).  This prefab dynamically loads the correct glTF model at runtime from the system's installed motion controller driver.  It's important to load these models dynamically rather than importing them manually in the editor, so that your app will show physically accurate 3D models for any current and future controllers your users may have.
 
 1. Follow the [Getting Started](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/GettingStarted.md) instructions to download the Mixed Reality Toolkit and add it to your Unity project.
-2. If you replaced your camera with the *MixedRealityCameraParent* prefab as part of the Getting Started steps, you're good to go!  That prefab includes motion controller rendering.  Otherwise, add *Assets/HoloToolkit/Input/Prefabs/MotionControllers.prefab* into your scene from the Project pane.  You'll want to add that prefab as a child of whatever parent object you use to move the camera around when the user teleports within your scene, so that the controllers come along with the user.  If your app does not involve teleporting, just add the prefab at the root of your scene.
+2. If you replaced your camera with the *MixedRealityCameraParent* prefab as part of the Getting Started steps, you're good to go!  That prefab includes motion controller rendering.  Otherwise, add *Assets/HoloToolkit/Input/Prefabs/MotionControllers.prefab* into your scene from the Project pane.  You'll want to add that prefab as a child of whatever parent object you use to move the camera around when the user teleports within your scene, so that the controllers come along with the user.  If your app doesn't involve teleporting, just add the prefab at the root of your scene.
 
 ## Throwing objects
 
-Throwing objects in virtual reality is a harder problem then it may at first seem. As with most physically based interactions, when throwing in game acts in an unexpected way, it is immediately obvious and breaks immersion. We have spent some time thinking deeply about how to represent a physically correct throwing behavior, and have come up with a few guidelines, enabled through updates to our platform, that we would like to share with you.
+Throwing objects in virtual reality is a harder problem than it may at first seem. As with most physically based interactions, when throwing in game acts in an unexpected way, it's immediately obvious and breaks immersion. We've spent some time thinking deeply about how to represent a physically correct throwing behavior, and have come up with a few guidelines, enabled through updates to our platform, that we would like to share with you.
 
 You can find an example of how we recommend to implement throwing [here](https://github.com/keluecke/MixedRealityToolkit-Unity/blob/master/External/Unitypackages/ThrowingStarter.unitypackage). This sample follows these four guidelines:
-* **Use the controller’s *velocity* instead of position**. In the November update to Windows, we introduced a change in behavior when in the [''Approximate'' positional tracking state](../../design/motion-controllers.md#controller-tracking-state). When in this state, velocity information about the controller will continue to be reported for as long as we believe it is high accuracy, which is often longer than position remains high accuracy.
+* **Use the controller’s *velocity* instead of position**. In the November update to Windows, we introduced a change in behavior when in the [''Approximate'' positional tracking state](../../design/motion-controllers.md#controller-tracking-state). When in this state, velocity information about the controller will continue to be reported for as long as we believe its high accuracy, which is often longer than position remains high accuracy.
 * **Incorporate the *angular velocity* of the controller**. This logic is all contained in the `throwing.cs` file in the `GetThrownObjectVelAngVel` static method, within the package linked above:
    1. As angular velocity is conserved, the thrown object must maintain the same angular velocity as it had at the moment of the throw:
    `objectAngularVelocity = throwingControllerAngularVelocity;`
-   2. As the center of mass of the thrown object is likely not at the origin of the grip pose, it likely has a different velocity then that of the controller in the frame of reference of the user. The portion of the object’s velocity contributed in this way is the instantaneous tangential velocity of the center of mass of the thrown object around the controller origin. This tangential velocity is the cross product of the angular velocity of the controller with the vector representing the distance between the controller origin and the center of mass of the thrown object.
+   2. As the center of mass of the thrown object is likely not at the origin of the grip pose, it likely has a different velocity than that of the controller in the frame of reference of the user. The portion of the object’s velocity contributed in this way is the instantaneous tangential velocity of the center of mass of the thrown object around the controller origin. This tangential velocity is the cross product of the angular velocity of the controller with the vector representing the distance between the controller origin and the center of mass of the thrown object.
 
       ```cs
       Vector3 radialVec = thrownObjectCenterOfMass - throwingControllerPos;
       Vector3 tangentialVelocity = Vector3.Cross(throwingControllerAngularVelocity, radialVec);
       ```
 
-   3. The total velocity of the thrown object is thus the sum of velocity of the controller and this tangential velocity:
+   3. The total velocity of the thrown object is the sum of velocity of the controller and this tangential velocity:
    `objectVelocity = throwingControllerVelocity + tangentialVelocity;`
 
-* **Pay close attention to the *time* at which we apply the velocity**. When a button is pressed, it can take up to 20ms for that event to bubble up through Bluetooth to the operating system. This means that if you poll for a controller state change from pressed to not pressed or vice versa, the controller pose information you get with it will actually be ahead of this change in state. Further, the controller pose presented by our polling API is forward predicted to reflect a likely pose at the time the frame will be displayed which could be more then 20ms in the future. This is good for *rendering* held objects, but compounds our time problem for *targeting* the object as we calculate the trajectory for the moment the user released their throw. Fortunately, with the November update, when a Unity event like *InteractionSourcePressed* or *InteractionSourceReleased* is sent, the state includes the historical pose data from back when the button was actually pressed or released.  To get the most accurate controller rendering and controller targeting during throws, you must correctly use polling and eventing, as appropriate:
+* **Pay close attention to the *time* at which we apply the velocity**. When a button is pressed, it can take up to 20 ms for that event to bubble up through Bluetooth to the operating system. This means that if you poll for a controller state change from pressed to not pressed or the other way around, the controller pose information you get with it will actually be ahead of this change in state. Further, the controller pose presented by our polling API is forward predicted to reflect a likely pose at the time the frame will be displayed which could be more than 20 ms in the future. This is good for *rendering* held objects, but compounds our time problem for *targeting* the object as we calculate the trajectory for the moment the user released the throw. Fortunately, with the November update, when a Unity event like *InteractionSourcePressed* or *InteractionSourceReleased* is sent, the state includes the historical pose data from back when the button was pressed or released.  To get the most accurate controller rendering and controller targeting during throws, you must correctly use polling and eventing, as appropriate:
    * For **controller rendering** each frame, your app should position the controller's *GameObject* at the forward-predicted controller pose for the current frame’s photon time.  You get this data from Unity polling APIs like *[XR.InputTracking.GetLocalPosition](https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalPosition.html)* or *[XR.WSA.Input.InteractionManager.GetCurrentReading](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.GetCurrentReading.html)*.
    * For **controller targeting** upon a press or release, your app should raycast and calculate trajectories based on the historical controller pose for that press or release event.  You get this data from Unity eventing APIs, like *[InteractionManager.InteractionSourcePressed](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.InteractionSourcePressed.html)*.
 * **Use the grip pose**. Angular velocity and velocity are reported relative to the grip pose, not pointer pose.
@@ -525,7 +563,7 @@ Step-by-step tutorials, with more detailed customization examples, are available
 
 ## Next Development Checkpoint
 
-If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can proceed to the next building block:
+If you're following the Unity development journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can continue to the next building block:
 
 > [!div class="nextstepaction"]
 > [Hand and eye tracking](hand-eye-in-unit.md)

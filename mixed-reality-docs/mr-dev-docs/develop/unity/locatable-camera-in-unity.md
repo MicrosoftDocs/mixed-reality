@@ -5,21 +5,20 @@ author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: photo, video, hololens, camera, unity, locatable
+keywords: photo, video, hololens, camera, unity, locatable, PVC, photo video camera, mixed reality headset, windows mixed reality headset, virtual reality headset, webcam, photo capture, video capture
 ---
-
 
 
 # Locatable camera in Unity
 
 ## Enabling the capability for Photo Video Camera
 
-The "WebCam" capability must be declared for an app to use the [camera](../platform-capab ilities-and-apis/locatable-camera.md).
+The "WebCam" capability must be declared for an app to use the [camera](../platform-capabilities-and-apis/locatable-camera.md).
 1. In the Unity Editor, go to the player settings by navigating to the "Edit > Project Settings > Player" page
-2. Click the "Windows Store" tab
+2. Select the "Windows Store" tab
 3. In the "Publishing Settings > Capabilities" section, check the **WebCam** and **Microphone** capabilities
 
-Only a single operation can occur with the camera at a time. To determine which mode (photo, video, or none) the camera is currently in, you can check UnityEngine.XR.WSA.WebCam.Mode.
+Only a single operation can occur with the camera at a time. You can check with mode the camera is currently in with UnityEngine.XR.WSA.WebCam.Mode. Available modes are photo, video, or none.
 
 ## Photo Capture
 
@@ -30,13 +29,13 @@ The *PhotoCapture* type allows you to take still photographs with the Photo Vide
 1. Create a *PhotoCapture* object
 2. Create a *CameraParameters* object with the settings you want
 3. Start Photo Mode via *StartPhotoModeAsync*
-4. Take the desired photo
+4. Take the photo you want
     * (optional) Interact with that picture
 5. Stop Photo Mode and clean up resources
 
 ### Common Set Up for PhotoCapture
 
-For all three uses, start with the same first 3 steps above
+For all three uses, start with the same first three steps above
 
 Start by creating a *PhotoCapture* object
 
@@ -67,7 +66,7 @@ void OnPhotoCaptureCreated(PhotoCapture captureObject)
    }
 ```
 
-In the end, you will also use the same clean up code presented here
+In the end, you'll also use the same clean-up code presented here
 
 ```cs
 void OnStoppedPhotoMode(PhotoCapture.PhotoCaptureResult result)
@@ -121,9 +120,9 @@ void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
 
 ### Capture a Photo to a Texture2D
 
-When capturing data to a Texture2D, the process is extremely similar to capturing to disk.
+When capturing data to a Texture2D, the process is similar to capturing to disk.
 
-Follow the set up process above.
+Follow the setup process above.
 
 In *OnPhotoModeStarted*, capture a frame to memory.
 
@@ -141,7 +140,7 @@ private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
    }
 ```
 
-You will then apply your result to a texture and use the common clean up code above.
+You'll then apply your result to a texture and use the common clean-up code above.
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
@@ -162,9 +161,9 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 
 ### Capture a Photo and Interact with the Raw bytes
 
-To interact with the raw bytes of an in memory frame, follow the same set up steps as above and *OnPhotoModeStarted* as in capturing a photo to a Texture2D. The difference is in *OnCapturedPhotoToMemory* where you can get the raw bytes and interact with them.
+To interact with the raw bytes of an in memory frame, follow the same setup steps as above and *OnPhotoModeStarted* as in capturing a photo to a Texture2D. The difference is in *OnCapturedPhotoToMemory* where you can get the raw bytes and interact with them.
 
-In this example, you will create a *List<Color>* which could be further processed or applied to a texture via *SetPixels()*
+In this example, you'll create a *List<Color>* to be further processed or applied to a texture via *SetPixels()*
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
@@ -202,7 +201,7 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 **Namespace:** *UnityEngine.XR.WSA.WebCam*<br>
 **Type:** *VideoCapture*
 
-*VideoCapture* functions very similarly to *PhotoCapture*. The only two differences are that you must specify a Frames Per Second (FPS) value and you can only save directly to disk as an .mp4 file. The steps to use *VideoCapture* are as follows:
+*VideoCapture* functions similarly to *PhotoCapture*. The only two differences are that you must specify a Frames Per Second (FPS) value and you can only save directly to disk as a .mp4 file. The steps to use *VideoCapture* are as follows:
 1. Create a *VideoCapture* object
 2. Create a *CameraParameters* object with the settings you want
 3. Start Video Mode via *StartVideoModeAsync*
@@ -219,7 +218,7 @@ void Start ()
    }
 ```
 
-Next, set up the parameters you will want for the recording and start.
+Next, set up the parameters you'll want for the recording and start.
 
 ```cs
 void OnVideoCaptureCreated (VideoCapture videoCapture)
@@ -274,7 +273,7 @@ void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-At a later point, you will want to stop the recording. This could happen from a timer or user input, for instance.
+At a later point, you'll want to stop the recording using a timer or user input, for instance.
 
 ```cs
 // The user has indicated to stop recording
@@ -306,7 +305,7 @@ void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
 
 ## Next Development Checkpoint
 
-If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs. From here, you can proceed to the next topic:
+If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs. From here, you can continue to the next topic:
 
 > [!div class="nextstepaction"]
 > [Focus point](focus-point-in-unity.md)
@@ -314,7 +313,7 @@ If you're following the Unity development checkpoint journey we've laid out, you
 Or jump directly to deploying your app on a device or emulator:
 
 > [!div class="nextstepaction"]
-> [Deploy to HoloLens or Windows Mixed Reality immersive headsets](../platform-capab ilities-and-apis/using-visual-studio.md)
+> [Deploy to HoloLens or Windows Mixed Reality immersive headsets](../platform-capabilities-and-apis/using-visual-studio.md)
 
 You can always go back to the [Unity development checkpoints](unity-development-overview.md#3-platform-capabilities-and-apis) at any time.
 

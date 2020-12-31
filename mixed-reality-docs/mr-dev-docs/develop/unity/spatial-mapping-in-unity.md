@@ -5,18 +5,17 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, spatial mapping, renderer, collider, mesh, scanning, component
+keywords: Unity, spatial mapping, renderer, collider, mesh, scanning, component, mixed reality headset, windows mixed reality headset, virtual reality headset, MRTK, Mixed Reality Toolkit
 ---
-
 
 
 # Spatial mapping in Unity
 
-This topic describes how to use [spatial mapping](../../design/spatial-mapping.md) in your Unity project, retrieving triangle meshes that represent the surfaces in the world around a HoloLens device, for placement, occlusion, room analysis and more.
+[spatial mapping](../../design/spatial-mapping.md) lets you retrieve triangle meshes that represent the surfaces in the world around a HoloLens device. You can use surface data for placement, occlusion, and room analysis to give your Unity projects an extra dose of immersion.
 
 Unity includes full support for spatial mapping, which is exposed to developers in the following ways:
 1. Spatial mapping components available in the MixedRealityToolkit, which provide a convenient and rapid path for getting started with spatial mapping
-2. Lower-level spatial mapping APIs, which provide full control and enable more sophisticated application specific customization
+2. Lower-level spatial mapping APIs, which provide full control and enable more sophisticated application-specific customization
 
 To use spatial mapping in your app, the spatialPerception capability needs to be set in your AppxManifest.
 
@@ -31,7 +30,7 @@ To use spatial mapping in your app, the spatialPerception capability needs to be
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens (first gen)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
@@ -49,19 +48,20 @@ In order for an app to consume spatial mapping data, the SpatialPerception capab
 
 How to enable the SpatialPerception capability:
 1. In the Unity Editor, open the **"Player Settings"** pane (Edit > Project Settings > Player)
-2. Click on the **"Windows Store"** tab
+2. Select on the **"Windows Store"** tab
 3. Expand **"Publishing Settings"** and check the **"SpatialPerception"** capability in the **"Capabilities"** list
 
-Note that if you have already exported your Unity project to a Visual Studio solution, you will need to either export to a new folder or manually [set this capability in the AppxManifest in Visual Studio](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).
+> [!NOTE]
+> If you have already exported your Unity project to a Visual Studio solution, you will need to either export to a new folder or manually [set this capability in the AppxManifest in Visual Studio](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).
 
 Spatial mapping also requires a MaxVersionTested of at least 10.0.10586.0:
-1. In Visual Studio, right click on **Package.appxmanifest** in the Solution Explorer and select **View Code**
+1. In Visual Studio, right-click on **Package.appxmanifest** in the Solution Explorer and select **View Code**
 2. Find the line specifying **TargetDeviceFamily** and change **MaxVersionTested="10.0.10240.0"** to **MaxVersionTested="10.0.10586.0"**
 3. **Save** the Package.appxmanifest.
 
 ## Getting started with Unity's built-in spatial mapping components
 
-Unity offers 2 components for easily adding spatial mapping to your app, **Spatial Mapping Renderer** and **Spatial Mapping Collider**.
+Unity offers two components for easily adding spatial mapping to your app, **Spatial Mapping Renderer** and **Spatial Mapping Collider**.
 
 ### Spatial Mapping Renderer
 
@@ -93,12 +93,12 @@ These components make it drag-and-drop easy to get started with Spatial Mapping.
 
 ## Using the low-level Unity Spatial Mapping API
 
-If you need more control than you get from the Spatial Mapping Renderer and Spatial Mapping Collider components, you can use the low-level Spatial Mapping script APIs.
+If you need more control than the Spatial Mapping Renderer and Spatial Mapping Collider components offer, use the low-level Spatial Mapping APIs.
 
 **Namespace:** *UnityEngine.XR.WSA*<br>
 **Types**: *SurfaceObserver*, *SurfaceChange*, *SurfaceData*, *SurfaceId*
 
-The following is an outline of the suggested flow for an application that uses the spatial mapping APIs.
+We've outlined the suggested flow for an application that uses the spatial mapping APIs in the sections below.
 
 ### Set up the SurfaceObserver(s)
 
@@ -132,9 +132,9 @@ private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bou
 
 ### Handling Surface Changes
 
-There are several main cases to handle. Added & Updated which can use the same code path and Removed.
-* In the Added & Updated cases in the example, we add or get the GameObject representing this mesh from the dictionary, create a SurfaceData struct with the necessary components, then call RequestMeshDataAsync to populate the GameObject with the mesh data and position in the scene.
-* In the Removed case, we remove the GameObject representing this mesh from the dictionary and destroy it.
+There are several main cases to handle - added and updated, which can use the same code path, and removed.
+* In the added and updated cases, we add or get the GameObject representing this mesh from the dictionary, create a SurfaceData struct with the necessary components, then call RequestMeshDataAsync to populate the GameObject with the mesh data and position in the scene.
+* In the removed case, we remove the GameObject representing this mesh from the dictionary and destroy it.
 
 ```cs
 System.Collections.Generic.Dictionary<SurfaceId, GameObject> spatialMeshObjects = 
@@ -186,7 +186,7 @@ System.Collections.Generic.Dictionary<SurfaceId, GameObject> spatialMeshObjects 
 
 ### Handling Data Ready
 
-The OnDataReady handler receives a SurfaceData object. The WorldAnchor, MeshFilter and (optionally) MeshCollider objects it contains reflect the latest state of the associated spatial surface. Optionally perform analysis and/or [processing](../../design/spatial-mapping.md#mesh-processing) of the mesh data by accessing the Mesh member of the MeshFilter object. Render the spatial surface with the latest mesh and (optionally) use it for physics collisions and raycasts. It's important to confirm that the contents of the SurfaceData are not null.
+The OnDataReady handler receives a SurfaceData object. The WorldAnchor, MeshFilter, and (optionally) MeshCollider objects it contains reflect the latest state of the associated spatial surface. Optionally, analyze and/or [process](../../design/spatial-mapping.md#mesh-processing) the mesh data by accessing the Mesh member of the MeshFilter object. Render the spatial surface with the latest mesh and (optionally) use it for physics collisions and raycasts. It's important to confirm that the contents of the SurfaceData aren't null.
 
 ### Start processing on updates
 
@@ -211,23 +211,23 @@ void Start () {
 
 ## Higher-level mesh analysis: SpatialUnderstanding
 
-The <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a> is a collection of helpful utility code for holographic development built upon the holographic Unity APIs.
+The <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a> is a collection of utility code for holographic development built on Unity's holographic APIs.
 
 ### Spatial Understanding
 
-When placing holograms in the physical world it is often desirable to go beyond spatial mapping’s mesh and surface planes. When placement is done procedurally, a higher level of environmental understanding is desirable. This usually requires making decisions about what is floor, ceiling, and walls. In addition, the ability to optimize against a set of placement constraints to determining the most desirable physical locations for holographic objects.
+When placing holograms in the physical world, it's often desirable to go beyond spatial mapping’s mesh and surface planes. When placement is done procedurally, a higher level of environmental understanding is desirable. This usually requires making decisions about what is floor, ceiling, and walls. You also have the ability to optimize against a set of placement constraints to determine the most best physical locations for holographic objects.
 
-During the development of Young Conker and Fragments, Asobo Studios faced this problem head on, developing a room solver for this purpose. Each of these games had game specific needs, but they shared core spatial understanding technology. The HoloToolkit.SpatialUnderstanding library encapsulates this technology, allowing you to quickly find empty spaces on the walls, place objects on the ceiling, identify placed for character to sit, and a myriad of other spatial understanding queries.
+During development of Young Conker and Fragments, Asobo Studios faced this problem head on by developing a room solver. Each of these games had game-specific needs, but they shared core spatial understanding technology. The HoloToolkit.SpatialUnderstanding library encapsulates this technology, allowing you to quickly find empty spaces on the walls, place objects on the ceiling, identify placed for character to sit, and a myriad of other spatial understanding queries.
 
 All of the source code is included, allowing you to customize it to your needs and share your improvements with the community. The code for the C++ solver has been wrapped into a UWP dll and exposed to Unity with a drop in prefab contained within the MixedRealityToolkit.
 
 ### Understanding Modules
 
-There are three primary interfaces exposed by the module: topology for simple surface and spatial queries, shape for object detection, and the object placement solver for constraint based placement of object sets. Each of these is described below. In addition to the three primary module interfaces, a ray casting interface can be used to retrieve tagged surface types and a custom watertight playspace mesh can be copied out.
+There are three primary interfaces exposed by the module: topology for simple surface and spatial queries, shape for object detection, and the object placement solver for constraint-based placement of object sets. Each of these is described below. In addition to the three primary module interfaces, a ray casting interface can be used to retrieve tagged surface types and a custom watertight playspace mesh can be copied out.
 
 ### Ray Casting
 
-After the room has been scanned and finalized, labels are internally generated for surfaces like the floor, ceiling, and walls. The “PlayspaceRaycast” function takes a ray and returns if the ray collides with a known surface and if so, information about that surface in the form of a “RaycastResult”.
+After the room scan is completed, labels are internally generated for surfaces like the floor, ceiling, and walls. The “PlayspaceRaycast” function takes a ray and returns if the ray collides with a known surface and if so, information about that surface in the form of a “RaycastResult”.
 
 ```cpp
 struct RaycastResult
@@ -255,7 +255,7 @@ struct RaycastResult
 };
 ```
 
-Internally, the raycast is computed against the computed 8cm cubed voxel representation of the playspace. Each voxel contains a set of surface elements with processed topology data (aka surfels). The surfels contained within the intersected voxel cell are compared and the best match used to look up the topology information. This topology data contains the labeling returned in the form of the “SurfaceTypes” enum, as well as the surface area of the intersected surface.
+Internally, the raycast is computed against the computed 8-cm cubed voxel representation of the playspace. Each voxel contains a set of surface elements with processed topology data (aka surfels). The surfels contained within the intersected voxel cell is compared and the best match used to look up the topology information. This topology data contains the labeling returned in the form of the “SurfaceTypes” enum, as well as the surface area of the intersected surface.
 
 In the Unity sample, the cursor casts a ray each frame. First, against Unity’s colliders. Second, against the understanding module’s world representation. And finally, again UI elements. In this application, UI gets priority, next the understanding result, and lastly, Unity’s colliders. The SurfaceType is reported as text next to the cursor.
 
@@ -264,7 +264,10 @@ In the Unity sample, the cursor casts a ray each frame. First, against Unity’s
 
 ### Topology Queries
 
-Within the DLL, the topology manager handles labeling of the environment. As mentioned above, much of the data is stored within surfels, contained within a voxel volume. In addition, the “PlaySpaceInfos” structure is used to store information about the playspace, including the world alignment (more details on this below), floor, and ceiling height. Heuristics are used for determining floor, ceiling, and walls. For example, the largest and lowest horizontal surface with greater than 1 m2 surface area is considered the floor. Note that the camera path during the scanning process is also used in this process.
+Within the DLL, the topology manager handles labeling of the environment. As mentioned above, much of the data is stored within surfels, contained within a voxel volume. In addition, the “PlaySpaceInfos” structure is used to store information about the playspace, including the world alignment (more details on this below), floor, and ceiling height. Heuristics are used for determining floor, ceiling, and walls. For example, the largest and lowest horizontal surface with greater than 1-m2 surface area is considered the floor. 
+
+> [!NOTE]
+> The camera path during the scanning process is also used in this process.
 
 A subset of the queries exposed by the Topology manager are exposed out through the dll. The exposed topology queries are as follows.
 
@@ -303,13 +306,14 @@ struct TopologyResult
 };
 ```
 
-Note that in the Unity sample, each of these queries is linked up to a button in the virtual UI panel. The sample hard codes the parameters for each of these queries to reasonable values. See SpaceVisualizer.cs in the sample code for more examples.
+> [!NOTE]
+> In the Unity sample, each of these queries is linked up to a button in the virtual UI panel. The sample hard codes the parameters for each of these queries to reasonable values. See SpaceVisualizer.cs in the sample code for more examples.
 
 ### Shape Queries
 
-Inside of the dll, the shape analyzer (“ShapeAnalyzer_W”) uses the topology analyzer to match against custom shapes defined by the user. The Unity sample defines a set of shapes and exposes the results out through the in-app query menu, within the shape tab. The intention is that the user can define their own object shape queries and make use of those, as needed by their application.
+In the dll, the shape analyzer (“ShapeAnalyzer_W”) uses the topology analyzer to match against custom shapes defined by the user. The Unity sample defines a set of shapes and exposes the results out through the in-app query menu, within the shape tab. The intention is that the user can define their own object shape queries and make use of those, as needed by their application.
 
-Note that the shape analysis works on horizontal surfaces only. A couch, for example, is defined by the flat seat surface and the flat top of the couch back. The shape query looks for two surfaces of a specific size, height, and aspect range, with the two surfaces aligned and connected. Using the APIs terminology, the couch seat and back top are shape components and the alignment requirements are shape component constraints.
+The shape analysis works on horizontal surfaces only. A couch, for example, is defined by the flat seat surface and the flat top of the couch back. The shape query looks for two surfaces of a specific size, height, and aspect range, with the two surfaces aligned and connected. Using the APIs terminology, the couch seat and back top are shape components and the alignment requirements are shape component constraints.
 
 An example query defined in the Unity sample (ShapeDefinition.cs), for “sittable” objects is as follows.
 
@@ -328,9 +332,9 @@ shapeComponents = new List<ShapeComponent>()
 AddShape("Sittable", shapeComponents);
 ```
 
-Each shape query is defined by a set of shape components, each with a set of component constraints and a set of shape constraints which listing dependencies between the components. This example includes three constraints in a single component definition and no shape constraints between components (as there is only one component).
+Each shape query is defined by a set of shape components, each with a set of component constraints and a set of shape constraints which listing dependencies between the components. This example includes three constraints in a single component definition and no shape constraints between components (as there's only one component).
 
-In contrast, the couch shape has two shape components and four shape constraints. Note that components are identified by their index in the user’s component list (0 and 1 in this example).
+In contrast, the couch shape has two shape components and four shape constraints. Components are identified by their index in the user’s component list (0 and 1 in this example).
 
 ```cs
 shapeConstraints = new List<ShapeConstraint>()
@@ -413,7 +417,7 @@ Solver_PlaceObject(
     UnderstandingDLL.GetStaticObjectPlacementResultPtr());
 ```
 
-If successful, a “ObjectPlacementResult” structure containing the placement position, dimensions and orientation is returned. In addition, the placement is added to the dll’s internal list of placed objects. Subsequent placement queries will take this object into account. The “LevelSolver.cs” file in the Unity sample contains more example queries.
+If successful, a “ObjectPlacementResult” structure containing the placement position, dimensions, and orientation is returned. In addition, the placement is added to the dll’s internal list of placed objects. Subsequent placement queries will take this object into account. The “LevelSolver.cs” file in the Unity sample contains more example queries.
 
 ![Results of object placement](images/su-objectplacement-1000px.jpg)<br>
 *Figure 3: The blue boxes how the result from three place on floor queries with away from camera position rules*
@@ -433,7 +437,7 @@ One-time scan process –
     Query functions will not function until after the scan has been finalized.
 ```
 
-User driven playspace “painting” – During the scanning phase, the user moves and looks around the plays pace, effectively painting the areas which should be included. The generated mesh is important to provide user feedback during this phase. Indoors home or office setup – The query functions are designed around flat surfaces and walls at right angles. This is a soft limitation. However, during the scanning phase, a primary axis analysis is completed to optimize the mesh tessellation along major and minor axis. The included SpatialUnderstanding.cs file manages the scanning phase process. It calls the following functions.
+User driven playspace “painting” – During the scanning phase, the user moves and looks around the plays pace, effectively painting the areas, which should be included. The generated mesh is important to provide user feedback during this phase. Indoors home or office setup – The query functions are designed around flat surfaces and walls at right angles. This is a soft limitation. However, during the scanning phase, a primary axis analysis is completed to optimize the mesh tessellation along major and minor axis. The included SpatialUnderstanding.cs file manages the scanning phase process. It calls the following functions.
 
 ```
 SpatialUnderstanding_Init – Called once at the start.
@@ -458,11 +462,11 @@ Import_UnderstandingMesh –
     after scanning has been finalized.
 ```
 
-The scanning flow, driven by the “SpatialUnderstanding” behavior calls InitScan, then UpdateScan each frame. When the statistics query reports reasonable coverage, the user is allowed to airtap to call RequestFinish to indicate the end of the scanning phase. UpdateScan continues to be called until it’s return value indicates that the dll has completed processing.
+The scanning flow, driven by the “SpatialUnderstanding” behavior calls InitScan, then UpdateScan each frame. When the statistics query reports reasonable coverage, the user is allowed to airtap to call RequestFinish to indicate the end of the scanning phase. UpdateScan continues to be called until its return value indicates that the dll has completed processing.
 
 ### Understanding Mesh
 
-The understanding dll internally stores the playspace as a grid of 8cm sized voxel cubes. During the initial part of scanning, a primary component analysis is completed to determine the axes of the room. Internally, it stores its voxel space aligned to these axes. A mesh is generated approximately every second by extracting the isosurface from the voxel volume. 
+The understanding dll internally stores the playspace as a grid of 8 cm sized voxel cubes. During the initial part of scanning, a primary component analysis is completed to determine the axes of the room. Internally, it stores its voxel space aligned to these axes. A mesh is generated approximately every second by extracting the isosurface from the voxel volume. 
 
 ![Generated mesh produced from the voxel volume](images/su-custommesh.jpg)<br>
 *Generated mesh produced from the voxel volume*
@@ -476,7 +480,7 @@ For more information on using Spatial Mapping with Mixed Reality Toolkit v2, see
 
 ## Next Development Checkpoint
 
-If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can proceed to the next building block: 
+If you're following the Unity development journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can continue to the next building block: 
 
 > [!div class="nextstepaction"]
 > [Text](text-in-unity.md)

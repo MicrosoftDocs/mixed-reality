@@ -3,9 +3,9 @@ title: Custom Holographic Remoting data channels
 description: Custom data channels can be used to send user data over the already established Holographic Remoting connection.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
-keywords: HoloLens, Remoting, Holographic Remoting
+keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windows mixed reality headset, virtual reality headset, data channels
 ---
 
 # Custom Holographic Remoting data channels
@@ -33,15 +33,15 @@ winrt::Microsoft::Holographic::AppRemoting::IDataChannel::OnDataReceived_revoker
 winrt::Microsoft::Holographic::AppRemoting::IDataChannel::OnClosed_revoker m_customChannelClosedEventRevoker;
 ```
 
-After a connection was successfully established, the creation of new data channels can be initiated from either the remote side and/or the player side. Both the RemoteContext and the PlayerContext provide a ```CreateDataChannel()``` method to do this. The first parameter is the channel ID which is used to identify the data channel in subsequent operations. The second parameter is the priority which specifies the priority with which data of this channel is transferred to the other side. The valid range for channel IDs is 0 up to and including 63 for the remote side and 64 up to and including 127 for the player side. Valid priorities are ```Low```, ```Medium``` or ```High``` (on both sides).
+After a connection is successfully established, you can create new data channels from either the remote side, the player side, or both. Both the RemoteContext and the PlayerContext provide a ```CreateDataChannel()``` method for creating data channels. The first parameter is the channel ID, which is used to identify the data channel in subsequent operations. The second parameter is the priority, which specifies the priority with which data of this channel is transferred to the other side. Valid channel IDs on the remote side are from 0 up to and including 63, and 64 up to and including 127 for the player side. Valid priorities are ```Low```, ```Medium```, or ```High``` (on both sides).
 
-To initiate the creation of a data channel on the **remote** side:
+To start the creation of a data channel on the **remote** side:
 ```cpp
 // Valid channel ids for channels created on the remote side are 0 up to and including 63
 m_remoteContext.CreateDataChannel(0, DataChannelPriority::Low);
 ```
 
-To initiate the creation of a data channel on the **player** side:
+To start the creation of a data channel on the **player** side:
 ```cpp
 // Valid channel ids for channels created on the player side are 64 up to and including 127
 m_playerContext.CreateDataChannel(64, DataChannelPriority::Low);
@@ -109,7 +109,8 @@ m_customDataChannel.Close();
 ```
 
 ## See Also
-* [Writing a Holographic Remoting remote app](holographic-remoting-create-host.md)
+* [Writing a Holographic Remoting remote app using Windows Mixed Reality APIs](holographic-remoting-create-remote-wmr.md)
+* [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md)
 * [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)
 * [Holographic Remoting troubleshooting and limitations](holographic-remoting-troubleshooting.md)
 * [Holographic Remoting software license terms](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)

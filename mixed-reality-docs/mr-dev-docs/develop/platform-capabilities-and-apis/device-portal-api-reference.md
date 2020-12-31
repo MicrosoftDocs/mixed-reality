@@ -5,9 +5,8 @@ author: hamalawi
 ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
-keywords: HoloLens, Windows Device Portal, API
+keywords: HoloLens, Windows Device Portal, API, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 
 # Device portal API reference
@@ -387,6 +386,9 @@ Parameters
 Stops the current mixed reality recording
 
 ## Mixed Reality Streaming
+
+> [!CAUTION]
+> Because of loopback isolation, you can't connect to Mixed Reality Streaming from inside an app on a device.
 
 HoloLens supports live preview of mixed reality via chunked download of a fragmented mp4.
 

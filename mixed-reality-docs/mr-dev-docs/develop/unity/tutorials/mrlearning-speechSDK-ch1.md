@@ -5,7 +5,7 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens
+keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, speech recognition, Windows 10
 ms.localizationpriority: high
 ---
 
@@ -30,10 +30,10 @@ In this tutorial series, you will create a Mixed Reality application that explor
 * Windows 10 SDK 10.0.18362.0 or later
 * Some basic C# programming ability
 * A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.2.X installed and the Universal Windows Platform Build Support module added
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019 LTS installed and the Universal Windows Platform Build Support module added
 
 > [!IMPORTANT]
-> The recommended Unity version for this tutorial series is Unity 2019.2.X. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
+> The recommended Unity version for this tutorial series is Unity 2019 LTS. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
 
 ## Creating and preparing the Unity project
 
@@ -151,4 +151,5 @@ You have implemented speech recognition powered by Azure. Run the application on
 
 In the next tutorial, you will learn how to execute commands using Azure speech recognition.
 
-[Next tutorial: 2. Using speech recognition to execute commands](mrlearning-speechSDK-ch2.md)
+> [!div class="nextstepaction"]
+> [Next tutorial: 2. Using speech recognition to execute commands](mrlearning-speechSDK-ch2.md)

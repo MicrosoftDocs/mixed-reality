@@ -5,7 +5,7 @@ author: sw5813
 ms.author: suwu
 ms.date: 9/4/2020
 ms.topic: article
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, deploy to device, PC, documentation
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, deploy to device, PC, documentation, mixed reality headset, windows mixed reality headset, virtual reality headset
 appliesto:
 - HoloLens 2
 ---
@@ -13,7 +13,14 @@ appliesto:
 
 # The Making of Kippy's Escape
 
-Kippy the robot wakes up to find itself stranded on an island. It’s up to you to put on your problem-solving hat to help it find a path back to its rocket ship! Kippy’s Escape is an open-source [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware) sample app built with Unreal Engine 4 and [Mixed Reality UX Tools for Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal). In this post, we’ll walk you through our process for bringing Kippy’s Escape to life, from first principles and visual design to implementing and optimizing the experience. You can find more information on developing Mixed Reality applications with MRTK UX Tools in the [Unreal development overview](unreal-development-overview.md).
+Kippy the robot wakes up to find itself stranded on an island. It’s up to you to put on your problem-solving hat to help it find a path back to its rocket ship! Strap on your HoloLens 2 and [download the app](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) from the Microsoft Store or clone the [repository](https://github.com/microsoft/MixedReality-Unreal-KippysEscape) from GitHub and get Kippy home safe!  
+
+> [!IMPORTANT]
+> Make sure you're using **Unreal Engine 4.25 or later** if you're building Kippy's Escape from the GitHub repository.
+
+## Overview
+
+Kippy’s Escape is an open-source [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware) sample app built with Unreal Engine 4 and [Mixed Reality UX Tools for Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal). In this post, we’ll walk you through our process from first principles and visual design to implementing and optimizing the experience. You can find more information on developing Mixed Reality applications with MRTK UX Tools in the [Unreal development overview](unreal-development-overview.md).
 
 ## First principles 
 
@@ -25,7 +32,7 @@ We came up with three guiding principles for the experience: that it needed to b
 
 The HoloLens 2 has access to design features found nowhere else in gaming today. Objects can be directly pushed or manipulated using your hands or targeted with eye tracking. These key features are behind some of the fun moments we built out in Kippy’s Escape.  
 
-Using the unique HoloLens 2 features as guidance for our game design, we scoped out a few small environment scenarios. Islands made a lot of sense because they can be adjusted for different player heights, and provided some entertaining bridge ideas. From there, we landed on the theme of ancient civilization meets sci-fi tech, with the idea that someone had built machinery over ruins harnessing a strange energy provided by each island. The islands were each given their own look and feel, a detail that helped create visual interest. A good balance between modeling and texturing was top of mind to keep draw calls low for rendering performance, so a stylized look was designed with that in mind. 
+Using the unique HoloLens 2 features as guidance for our game design, we scoped out a few small environment scenarios. Islands made sense because they can be adjusted for different player heights, and provided some entertaining bridge ideas. We landed on the theme of ancient civilization meets sci-fi tech, with the idea that someone had built machinery over ruins harnessing a strange energy provided by each island. The islands were each given their own look and feel, a detail that helped create visual interest. A good balance between modeling and texturing would keep draw calls low for rendering performance, so a stylized look was designed with that in mind. 
 
 ![Early game design sketches](images/kippys-escape/kippys-escape-img-01.png)
 *Some early sketches for what the experience might look like*
@@ -43,7 +50,7 @@ To keep within our short production schedule, we agreed that a floating characte
 
 *If the user takes too long to solve a puzzle, Kippy will give the user a hint*
 
-Beyond the character and environment design, we made a concerted effort to make the game feel fun. Eye tracking allowed us to fire off material and sound attributes, which highlighted key pieces of the game. Spatial audio helped make the levels feel at home in the player’s surroundings. Being able to grab objects, push buttons and manipulate sliders drives innovative player engagements, so it was important to make sure these connection points felt natural. 
+Beyond the character and environment design, we made a concerted effort to make the game feel fun. Eye tracking allowed us to fire off material and sound attributes, which highlighted key pieces of the game. Spatial audio helped make the levels feel at home in the player’s surroundings. Being able to grab objects, push buttons, and manipulate sliders drives innovative player engagements. It was important to make sure these connection points felt natural. 
 
 ![The end of the bridge cable glows when the user’s hand approaches it](images/kippys-escape/kippys-escape-img-05.gif)
 
@@ -106,4 +113,4 @@ Boot up your HoloLens 2 and [download](https://www.microsoft.com/p/kippys-escape
 </tr>
 </table>
 
-Special thanks to our friends at [Framestore](https://www.framestore.com/) for helping us take Kippy’s Escape to the next level. From character development, to asset design, to game programming, their collaboration on this project was pivotal.  
+Special thanks to our friends at [Framestore](https://www.framestore.com/) for helping us bring Kippy’s Escape to life. From character development, to asset design, to game programming, their collaboration on this project was pivotal.  

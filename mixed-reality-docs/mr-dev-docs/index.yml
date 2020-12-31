@@ -24,7 +24,7 @@ highlightedContent:
   items:
     # Card
     - title: What is Mixed Reality?
-      itemType: overview
+      itemType: concept
       url: discover/mixed-reality.md 
     # Card
     - title: Introducing HoloLens 2
@@ -32,24 +32,28 @@ highlightedContent:
       url: https://docs.microsoft.com/hololens/hololens2-hardware
     # Card
     - title: Dynamics 365 Mixed Reality applications
-      itemType: overview
+      itemType: reference 
       url: https://docs.microsoft.com/dynamics365/mixed-reality/
     # Card
-    - title: Try a sample app
-      itemType: sample
-      url: develop/unity/samples.md
+    - title: Azure mixed reality cloud services 
+      itemType: whats-new 
+      url: develop/mixed-reality-cloud-services.md
     # Card
     - title: Developers
-      itemType: overview
+      itemType: get-started 
       url: develop/development.md
     # Card
     - title: IT admins
-      itemType: overview
+      itemType: quickstart
       url: https://docs.microsoft.com/hololens/hololens-requirements
     # Card
     - title: VR enthusiasts
-      itemType: overview
-      url: https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/
+      itemType: how-to-guide
+      url: https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/vr-journey
+    # Card
+    - title: Mixed Reality Learn modules
+      itemType: learn
+      url: develop/mr-learning-overview.md
 
 # productDirectory section (optional)
 productDirectory:
@@ -85,9 +89,9 @@ productDirectory:
           text: Get started with Unity
         - url: develop/unreal/unreal-development-overview.md
           text: Get started with Unreal
-        - url: develop/native/directx-development-overview.md
-          text: Get started with Native
-        - url: develop/unity/mrtk-porting-guide.md
+        - url: develop/porting-apps/porting-overview.md
+          text: Port your existing apps
+        - url: develop/porting-apps/porting-hl1-hl2.md
           text: Get your app ready for HoloLens 2
     # Card
     - title: Deploy
@@ -227,6 +231,8 @@ additionalContent:
         # Card
         - title: Distribute
           links:
+            - text: Distribution overview 
+              url: distribute/distribute-overview.md
             - text: Designing a 3D app launcher
               url: distribute/3d-app-launcher-design-guidance.md
             - text: Creating 3D models for the Mixed Reality Home
@@ -270,35 +276,13 @@ additionalContent:
               url: https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158
             - text: Galaxy Explorer 2.0 
               url: develop/unity/galaxy-explorer-update.md
-
         # Card
-        #- title: Porting guides
-          #links:
-            #- text: Get your app ready for HoloLens 2
-             # url: mrtk-porting-guide.md
-            #- text: Porting guide for immersive apps
-             # url: porting-guides.md
-            #- text: Input porting guide for Unity
-            #  url: input-porting-guide-for-unity.md
-            #- text: Updating your SteamVR applications
-             # url: updating-your-steamvr-application-for-windows-mixed-reality.md
-            #- text: Updating 2D UWP apps for Mixed Reality
-            #  url: building-2d-apps.md
-            
-
-
-      # Supports up to 3 sections
-  #sections:
-    #- title: Learn modules and samples # < 60 chars (optional)
-     # summary: Follow along with learning resources and sample applications.   # < 160 chars (optional)
-      #items:
-        # Card
-       # - title: Learn modules
-       #   links:
-       #     - text: MRTK TBD
-        #      url: mr-learning-overview.md
-         #   - text: Azure Cognitive Services TBD 
-         #     url: https://docs.microsoft.com/hololens/hololens-identity
-          #  - text: Azure Spatial Anchors TBD 
-          #    url: https://docs.microsoft.com/hololens/hololens-enroll-mdmk
+        - title: Learn modules
+          links:
+            - text: Introduction to Mixed Reality
+              url: https://docs.microsoft.com/learn/modules/intro-to-mixed-reality/
+            - text: Set up a mixed reality project in Unity with the Mixed Reality Toolkit
+              url: https://docs.microsoft.com/learn/modules/mixed-reality-toolkit-project-unity/
+            - text: Create a language translator application with Unity and Azure Cognitive Services
+              url: https://docs.microsoft.com/learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/
 

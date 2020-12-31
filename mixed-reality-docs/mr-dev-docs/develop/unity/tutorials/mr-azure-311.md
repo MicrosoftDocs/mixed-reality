@@ -5,7 +5,7 @@ author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: azure, mixed reality, academy, unity, tutorial, api, microsoft graph, hololens, immersive, vr
+keywords: azure, mixed reality, academy, unity, tutorial, api, microsoft graph, hololens, immersive, vr, Windows 10, Visual Studio
 ---
 
 # MR and Azure 311 - Microsoft Graph
@@ -489,7 +489,7 @@ To create this class:
             // Attempt authentication
             _authResult = await AcquireTokenAsync(_client, _scopes, userId);
 
-            // If authentication is successfull, retrieve the meetings
+            // If authentication is successful, retrieve the meetings
             if (!string.IsNullOrEmpty(_authResult.AccessToken))
             {
                 // Once Auth as been completed, find the meetings for the day

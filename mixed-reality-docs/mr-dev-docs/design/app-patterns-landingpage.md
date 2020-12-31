@@ -5,7 +5,7 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: overview
-keywords: UX design, Mixed Reality UX, UX, app patterns, controls, style, HoloLens, interaction, spatial interaction, spatial UI, UX elements, behaviors, building blocks, typography, color
+keywords: UX design, Mixed Reality UX, UX, app patterns, controls, style, HoloLens, interaction, spatial interaction, spatial UI, UX elements, behaviors, building blocks, typography, color, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit
 ---
 
 # UX elements overview

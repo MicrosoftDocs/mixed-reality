@@ -5,7 +5,7 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: galaxy explorer, case study, project, sample
+keywords: galaxy explorer, case study, project, sample, MRTK, Mixed Reality Toolkit, Unity, sample apps, example apps, open source, Microsoft Store, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 
@@ -13,7 +13,8 @@ keywords: galaxy explorer, case study, project, sample
 
 **You shared your ideas. We’re sharing the code.**
 
-The Galaxy Explorer Project is ready. You shared your ideas with the community, chose an app, watched a team build it, and can now get the source code. If you have a device, Galaxy Explorer Project is also available for download from the Windows Store for Microsoft HoloLens.
+The Galaxy Explorer Project is ready. You've shared your ideas with the community, chosen an app, watched a team build it, and now you can get the source code. If you have a device, the Galaxy Explorer Project is available for download from the Windows Store for Microsoft HoloLens.
+
 >[!TIP]
 >[Get the code](https://github.com/Microsoft/GalaxyExplorer) on GitHub
 
@@ -88,7 +89,7 @@ You can find even more insights and lessons from developing Galaxy Explorer by r
 ![Galaxy Explorer development team](images/syiteampic.jpg)<br>
 *Galaxy Explorer development team*
 
-We learned the building the right team is one of the most important investments we could make. We decided to organize similarly to a game studio for those of you familiar with that development model. We chose to have eleven core team members to control scope, since we had a fixed timeframe (create something cool before Build on March 30, 2016).
+We learned that building the right team is one of the most important investments we could make and decided to organize similarly to a game studio for those of you familiar with that development model. We chose to have 11 core team members to control scope, since we had a fixed timeframe (create something cool before Build on March 30, 2016).
 
 For this project, we started with a producer, Jessica who conducted planning, reviewing progress, and keeping things running day to day. She's the one with pink hair. We had a design director (Jon) and a senior designer (Peter). They held the creative vision for Galaxy Explorer. Jon is the one in glasses in the front row, and Peter is the second from the right in the back.
 
@@ -96,9 +97,9 @@ We had three developers – BJ (between Jon and Jessica), Mike (second row on th
 
 We started out with four artists full-time – a concept artist (Jedd, second from left in the back), a modeler (Andy, third from right in the back), a technical artist (Alex (right-most person)) and an animator (Steve (left-most person). Each of them does more than that, too – but those are their primary responsibilities.
 
-We’ll had one full-time tester – Lena – who tested our builds every day, set up our build reviews, and reviewed features as they come online. Everyone tested constantly though, as we were always looking at our builds. Lena's the one rocking the leather jacket.
+We had one full-time tester – Lena – who tested our builds every day, set up our build reviews, and reviewed features as they come online. Everyone tested constantly though, as we were always looking at our builds. Lena's the one rocking the leather jacket.
 
-We are all a part of a larger studio here at Microsoft (think team in non-game development). There were a bunch of other people involved as well – we called on the talents of our art director, audio engineer and studio leadership frequently throughout the project, but those folks were shared resources with other projects our broader team has.
+We're all a part of a larger studio here at Microsoft (think team in non-game development). There were a bunch of other people involved as well – we called on the talents of our art director, audio engineer, and studio leadership frequently throughout the project, but those folks were shared resources with other projects our broader team has.
 
 ## See also
 * [Case study - Creating a galaxy in mixed reality](../../out-of-scope/case-study-creating-a-galaxy-in-mixed-reality.md)

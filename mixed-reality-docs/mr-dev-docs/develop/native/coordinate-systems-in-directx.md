@@ -1,13 +1,12 @@
 ---
 title: Coordinate systems in DirectX
-description: Explains how to use Windows Mixed Reality spatial locators, reference frames, spatial anchors, and coordinate systems, how to use the SpatialStage, how to handle tracking loss, how to save and load anchors, and how to do image stabilization.
+description: Learn about coordinate systems in DirectX and Mixed Reality with spatial locators, reference frames, and spatial anchors. Use the SpatialStage and handle tracking loss, saving and loading anchors, and image stabilization.
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Mixed Reality, spatial locator, spatial reference frame, spatial coordinate system, spatial stage, sample code, image stabilization, spatial anchor, spatial anchor store, tracking loss, walkthrough
+keywords: Mixed Reality, spatial locator, spatial reference frame, spatial coordinate system, spatial stage, sample code, image stabilization, spatial anchor, spatial anchor store, tracking loss, walkthrough, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 
 # Coordinate systems in DirectX
@@ -17,20 +16,20 @@ keywords: Mixed Reality, spatial locator, spatial reference frame, spatial coord
 
 [Coordinate systems](../../design/coordinate-systems.md) form the basis for spatial understanding offered by Windows Mixed Reality APIs.
 
-Today's seated VR or single-room VR devices establish one primary coordinate system to represent their tracked space. Windows Mixed Reality devices such as HoloLens are designed to be used throughout large undefined environments, with the device discovering and learning about its surroundings as the user walks around. This allows the device to adapt to continually-improving knowledge about the user's rooms, but results in coordinate systems that will change their relationship to one another through the lifetime of the app. Windows Mixed Reality supports a wide spectrum of devices, ranging from seated immersive headsets through world-attached reference frames.
+Today's seated VR or single-room VR devices establish one primary coordinate system for their tracked space. Mixed Reality devices like HoloLens are designed for large undefined environments, with the device discovering and learning about its surroundings as the user walks around. The device adapts to continually improving knowledge about the user's rooms, but results in coordinate systems that change their relationship to one another over the apps lifetime. Windows Mixed Reality supports a wide spectrum of devices, ranging from seated immersive headsets through world-attached reference frames.
 
 >[!NOTE]
 >The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, though you will need to translate the code.
 
 ## Spatial coordinate systems in Windows
 
-The core type used to reason about real-world coordinate systems in Windows is the <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a>. An instance of this type represents an arbitrary coordinate system and provides a method to get a transformation matrix that you can use to transform between two coordinate systems without understanding the details of each.
+The core type used to reason about real-world coordinate systems in Windows is the <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a>. An instance of this type represents an arbitrary coordinate system, providing a method for getting transformation matrix data that you can use to transform between two coordinate systems without understanding the details of each.
 
-Methods that return spatial information, represented as points, rays, or volumes in the user's surroundings, will accept a SpatialCoordinateSystem parameter to let you decide the coordinate system in which it's most useful for those coordinates to be returned. The units for these coordinates will always be in meters.
+Methods that return spatial information will accept a SpatialCoordinateSystem parameter to let you decide the coordinate system in which it's most useful for those coordinates to be returned. Spatial information is represented as points, rays, or volumes in the user's surroundings, and the units for these coordinates will always be in meters.
 
-A SpatialCoordinateSystem has a dynamic relationship with other coordinate systems, including those that represent the device's position. At any point in time, the device may be able to locate some coordinate systems and not others. For most coordinate systems, your app must be ready to handle periods of time during which they cannot be located.
+A SpatialCoordinateSystem has a dynamic relationship with other coordinate systems, including those that represent the device's position. At any point, the device can locate some coordinate systems and not others. For most coordinate systems, your app must be ready to handle periods of time during which they cannot be located.
 
-Your application should not create SpatialCoordinateSystems directly - rather they should be consumed via the Perception APIs. There are three primary sources of coordinate systems in the Perception APIs, each of which map to a concept described on the [Coordinate systems](../../design/coordinate-systems.md) page:
+Your application shouldn't create SpatialCoordinateSystems directly - rather they should be consumed via the Perception APIs. There are three primary sources of coordinate systems in the Perception APIs, each of which map to a concept described on the [Coordinate systems](../../design/coordinate-systems.md) page:
 * To get a stationary frame of reference, create a <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstationaryframeofreference" target="_blank">SpatialStationaryFrameOfReference</a> or obtain one from the current <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference" target="_blank">SpatialStageFrameOfReference</a>.
 * To get a spatial anchor, create a <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchor" target="_blank">SpatialAnchor</a>.
 * To get an attached frame of reference, create a <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocatorattachedframeofreference" target="_blank">SpatialLocatorAttachedFrameOfReference</a>.
@@ -40,11 +39,17 @@ All of the coordinate systems returned by these objects are right-handed, with +
 ![Left-hand and right-hand coordinate systems](images/left-hand-right-hand.gif)<br>
 *Left-hand and right-hand coordinate systems*
 
-To bootstrap into a SpatialCoordinateSystem based on the position of a HoloLens, use the <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a> class to create either an attached or stationary frame of reference, as described in the sections below.
+Use the <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a> class to create either an attached or stationary frame of reference to bootstrap into a SpatialCoordinateSystem based on the HoloLens position. Continue to the next section to learn more about this process.
 
 ## Place holograms in the world using a spatial stage
 
-The coordinate system for opaque Windows Mixed Reality immersive headsets is accessed using the static <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.current" target="_blank">SpatialStageFrameOfReference::Current</a> property. This API provides a coordinate system, information about whether the player is seated or mobile, the boundary of a safe area for walking around if the player is mobile, and an indication of whether or not the headset is directional. There is also an event handler for updates to the spatial stage.
+The coordinate system for opaque Windows Mixed Reality immersive headsets is accessed using the static <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.current" target="_blank">SpatialStageFrameOfReference::Current</a> property. This API provides:
+
+* A coordinate system
+* Information about whether the player is seated or mobile
+* The boundary of a safe area for walking around if the player is mobile
+* An indication of whether the headset is directional. 
+* An event handler for updates to the spatial stage.
 
 First, we get the spatial stage and subscribe for updates to it: 
 
@@ -65,7 +70,7 @@ SpatialStageManager::SpatialStageManager(
 }
 ```
 
-In the OnCurrentChanged method, your app should inspect the spatial stage and update the player experience accordingly. In this example, we provide a visualization of the stage boundary, as well as the start position specified by the user and the stage's range of view and range of movement properties. We also fall back to our own stationary coordinate system, when a stage cannot be provided.
+In the OnCurrentChanged method, your app should inspect the spatial stage and update the player experience. In this example, we provide a visualization of the stage boundary and the start position specified by the user and the stage's range of view and range of movement properties. We also fall back to our own stationary coordinate system, when a stage cannot be provided.
 
 
 Code for **Spatial stage update**
@@ -172,7 +177,7 @@ void SpatialStageManager::OnCurrentChanged(Object^ /*o*/)
 }
 ```
 
-The set of vertices that define the stage boundary are provided in clockwise order. The Windows Mixed Reality shell draws a fence at the boundary when the user approaches it; you may wish to triangularize the walkable area for your own purposes. The following algorithm can be used to triangularize the stage.
+The set of vertices that define the stage boundary are provided in clockwise order. The Windows Mixed Reality shell draws a fence at the boundary when the user approaches it, but you may want to triangularize the walkable area for your own purposes. The following algorithm can be used to triangularize the stage.
 
 
 Code for **Spatial stage triangularization**
@@ -293,7 +298,7 @@ From the Windows Holographic app template code:
            referenceFrame = locator.CreateStationaryFrameOfReferenceAtCurrentLocation();
 ```
 * Stationary reference frames are designed to provide a best-fit position relative to the overall space. Individual positions within that reference frame are allowed to drift slightly. This is normal as the device learns more about the environment.
-* When precise placement of individual holograms is required, a SpatialAnchor should be used to anchor the individual hologram to a position in the real world - for example, a point the user indicates to be of special interest. Anchor positions do not drift, but can be corrected; the anchor will use the corrected position starting in the next frame after the correction has occurred.
+* When precise placement of individual holograms is required, a SpatialAnchor should be used to anchor the individual hologram to a position in the real world - for example, a point the user indicates to be of special interest. Anchor positions don't drift, but can be corrected; the anchor will use the corrected position starting in the next frame after the correction has occurred.
 
 ## Place holograms in the world using spatial anchors
 
@@ -301,9 +306,9 @@ From the Windows Holographic app template code:
 
 You can create a SpatialAnchor at any position and orientation within the SpatialCoordinateSystem of your choosing. The device must be able to locate that coordinate system at the moment, and the system must not have reached its limit of spatial anchors.
 
-Once defined, the coordinate system of a SpatialAnchor adjusts continually to retain the precise position and orientation of its initial location. You can then use this SpatialAnchor to render holograms that will appear fixed in the user's surroundings at that exact location.
+Once defined, the coordinate system of a SpatialAnchor adjusts continually to keep the precise position and orientation of its initial location. You can then use this SpatialAnchor to render holograms that will appear fixed in the user's surroundings at that exact location.
 
-The effects of the adjustments that keep the anchor in place are magnified as distance from the anchor increases. Therefore, you should avoid rendering content relative to an anchor that is more than about 3 meters from that anchor's origin.
+The effects of the adjustments that keep the anchor in place are magnified as distance from the anchor increases. You should avoid rendering content relative to an anchor that is more than about 3 meters from that anchor's origin.
 
 The [CoordinateSystem](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.coordinatesystem.aspx) property gets a coordinate system that lets you place content relative to the anchor, with easing applied when the device adjusts the anchor's precise location.
 
@@ -313,9 +318,9 @@ Use the [RawCoordinateSystem](https://msdn.microsoft.com/library/windows/apps/wi
 
 You can persist a SpatialAnchor locally using the [SpatialAnchorStore](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchorstore.aspx) class and then get it back in a future app session on the same HoloLens device.
 
-By using <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>, you can create a durable cloud anchor from a local SpatialAnchor, which your app can then locate across multiple HoloLens, iOS and Android devices.  By sharing a common spatial anchor across multiple devices, each user can see content rendered relative to that anchor in the same physical location.  This allows for real-time shared experiences.
+By using <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>, you can create a durable cloud anchor from a local SpatialAnchor, which your app can then locate across multiple HoloLens, iOS and Android devices.  By sharing a common spatial anchor across multiple devices, each user can see content rendered relative to that anchor in the same physical location in real time. 
 
-You can also use <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> for asynchronous hologram persistence across HoloLens, iOS and Android devices.  By sharing a durable cloud spatial anchor, multiple devices can observe the same persisted hologram over time, even if those devices are not present together at the same time.
+You can also use <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> for asynchronous hologram persistence across HoloLens, iOS, and Android devices.  By sharing a durable cloud spatial anchor, multiple devices can observe the same persisted hologram over time, even if those devices aren't present together at the same time.
 
 To get started building shared experiences in your HoloLens app, try out the 5-minute <a href="https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens" target="_blank">Azure Spatial Anchors HoloLens quickstart</a>.
 
@@ -325,9 +330,10 @@ Once you're up and running with Azure Spatial Anchors, you can then <a href="htt
 
 For this code sample, we modified the Windows Holographic app template to create anchors when the **Pressed** gesture is detected. The cube is then placed at the anchor during the render pass.
 
-Since multiple anchors are supported by the helper class, we can place as many cubes as we want using this code sample!
+Since multiple anchors are supported by the helper class, we can place as many cubes as we want to use this code sample!
 
-Note that the IDs for anchors are something you control in your app. In this example, we have created a naming scheme that is sequential based on the number of anchors currently stored in the app's collection of anchors.
+> [!NOTE]
+> The IDs for anchors are something you control in your app. In this example, we have created a naming scheme that is sequential based on the number of anchors currently stored in the app's collection of anchors.
 
 ```
    // Check for new input state since the last frame.
@@ -409,7 +415,7 @@ When the class starts up, we request the SpatialAnchorStore asynchronously. This
    });
 ```
 
-You will be given a SpatialAnchorStore that you can use to save the anchors. This is an IMapView that associates key values that are Strings, with data values that are SpatialAnchors. In our sample code, we store this in a private class member variable that is accessible through a public function of our helper class.
+You'll be given a SpatialAnchorStore that you can use to save the anchors. This is an IMapView that associates key values that are Strings, with data values that are SpatialAnchors. In our sample code, we store this in a private class member variable that is accessible through a public function of our helper class.
 
 ```
    SampleSpatialAnchorHelper::SampleSpatialAnchorHelper(SpatialAnchorStore^ anchorStore)
@@ -483,11 +489,11 @@ When you're ready to try saving the in-memory anchors to the SpatialAnchorStore,
 
 ### Load content from the anchor store when the app resumes
 
-When your app resumes, or at any other time necessary for your app's implementaiton, you can restore anchors that were previously saved to the AnchorStore by transferring them from the anchor store's IMapView to your own in-memory database of SpatialAnchors.
+You can restore saved anchors in the AnchorStore by transferring them from the anchor store's IMapView to your own in-memory database of SpatialAnchors when your app resumes or at any time.
 
-To restore anchors from the SpatialAnchorStore, restore each one that you are interested in to your own in-memory collection.
+To restore anchors from the SpatialAnchorStore, restore each one that you're interested in to your own in-memory collection.
 
-You need your own in-memory database of SpatialAnchors; some way to associate Strings with the SpatialAnchors that you create. In our sample code, we choose to use a Windows::Foundation::Collections::IMap to store the anchors, which makes it easy to use the same key and data value for the SpatialAnchorStore.
+You need your own in-memory database of SpatialAnchors to associate Strings with the SpatialAnchors that you create. In our sample code, we choose to use a Windows::Foundation::Collections::IMap to store the anchors, which makes it easy to use the same key and data value for the SpatialAnchorStore.
 
 ```
    // This is an in-memory anchor list that is separate from the anchor store.
@@ -551,7 +557,7 @@ Using our helper class, it's almost unnecessary to wrap the Clear function. We c
 
 ### Example: Relating anchor coordinate systems to stationary reference frame coordinate systems
 
-Let's say that you have an anchor, and you want to relate something in your anchor's coordinate system to the SpatialStationaryReferenceFrame that you’re already using for most of your other content. You can use [TryGetTransformTo](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialcoordinatesystem.trygettransformto.aspx) to obtain a transform from the anchor’s coordinate system to that of the stationary reference frame:
+Let's say you have an anchor, and you want to relate something in your anchor's coordinate system to the SpatialStationaryReferenceFrame you’re already using for your other content. You can use [TryGetTransformTo](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialcoordinatesystem.trygettransformto.aspx) to get a transform from the anchor’s coordinate system to that of the stationary reference frame:
 
 ```
    // In this code snippet, someAnchor is a SpatialAnchor^ that has been initialized and is valid in the current environment.
@@ -576,17 +582,17 @@ For rendering, you can often obtain better results by grouping objects according
 
 There are times when you want to render a hologram that [remains attached](../../design/coordinate-systems.md#attached-frame-of-reference) to the device's location, for example a panel with debugging information or an informational message when the device is only able to determine its orientation and not its position in space. To accomplish this, we use an attached frame of reference.
 
-The SpatialLocatorAttachedFrameOfReference class defines coordinate systems which are relative to the device rather than to the real-world. This frame has a fixed heading relative to the user's surroundings that points in the direction the user was facing when the reference frame was created. From then on, all orientations in this frame of reference are relative to that fixed heading, even as the user rotates the device.
+The SpatialLocatorAttachedFrameOfReference class defines coordinate systems, which are relative to the device rather than to the real-world. This frame has a fixed heading relative to the user's surroundings that points in the direction the user was facing when the reference frame was created. From then on, all orientations in this frame of reference are relative to that fixed heading, even as the user rotates the device.
 
 For HoloLens, the origin of this frame's coordinate system is located at the center of rotation of the user's head, so that its position is not affected by head rotation. Your app can specify an offset relative to this point to position holograms in front of the user.
 
 To get a SpatialLocatorAttachedFrameOfReference, use the SpatialLocator class and call CreateAttachedFrameOfReferenceAtCurrentHeading.
 
-Note that this applies to the entire range of Windows Mixed Reality devices.
+This applies to the entire range of Windows Mixed Reality devices.
 
 ### Use a reference frame attached to the device
 
-These sections talk about what we changed in the Windows Holographic app template to enable a device-attached frame of reference using this API. Note that this "attached" hologram will work alongside stationary or anchored holograms, and may also be used when the device is temporarily unable to find its position in the world.
+These sections talk about what we changed in the Windows Holographic app template to enable a device-attached frame of reference using this API. This "attached" hologram will work alongside stationary or anchored holograms, and may also be used when the device is temporarily unable to find its position in the world.
 
 First, we changed the template to store a SpatialLocatorAttachedFrameOfReference instead of a SpatialStationaryFrameOfReference:
 
@@ -624,7 +630,7 @@ SpatialPointerPose^ pose = SpatialPointerPose::TryGetAtTimestamp(currentCoordina
 
 This SpatialPointerPose has the information needed to position the hologram according to the [user's current heading](gaze-in-directx.md).
 
-For reasons of user comfort, we use linear interpolation ("lerp") to smooth the change in position such that it occurs over a period of time. This is more comfortable for the user than locking the hologram to their gaze. Lerping the tag-along hologram's position also allows us to stabilize the hologram by dampening the movement; if we did not do this dampening, the user would see the hologram jitter because of what are normally considered to be imperceptible movements of the user's head.
+For user comfort, we use linear interpolation ("lerp") to smooth the change in position over a period of time. This is more comfortable for the user than locking the hologram to their gaze. Lerping the tag-along hologram's position also allows us to stabilize the hologram by dampening the movement. If we didn't do this dampening, the user would see the hologram jitter because of what are normally considered to be imperceptible movements of the user's head.
 
 From **StationaryQuadRenderer::PositionHologram**:
 
@@ -651,7 +657,7 @@ From **StationaryQuadRenderer::PositionHologram**:
 ```
 
 >[!NOTE]
->In the case of a debugging panel, you might choose to reposition the hologram off to the side a little so that it does not obstruct your view. Here's an example of how you might do that.
+>In the case of a debugging panel, you might choose to reposition the hologram off to the side a little so that it doesn't obstruct your view. Here's an example of how you might do that.
 
 For **StationaryQuadRenderer::PositionHologram**:
 
@@ -668,7 +674,7 @@ For **StationaryQuadRenderer::PositionHologram**:
 
 ### Rotate the hologram to face the camera
 
-It is not enough to simply position the hologram, which in this case is a quad; we must also rotate the object to face the user. Note that this rotation occurs in world space, because this type of billboarding allows the hologram to remain a part of the user's environment. View-space billboarding is not as comfortable because the hologram becomes locked to the display orientation; in that case, you would also have to interpolate between the left and right view matrices in order to acquire a view-space billboard transform that does not disrupt stereo rendering. Here, we rotate on the X and Z axes to face the user.
+It isn't enough to position the hologram, which in this case is a quad; we must also rotate the object to face the user. This rotation occurs in world space, because this type of billboarding allows the hologram to remain a part of the user's environment. View-space billboarding isn't as comfortable because the hologram becomes locked to the display orientation; in that case, you would also have to interpolate between the left and right view matrices to acquire a view-space billboard transform that doesn't disrupt stereo rendering. Here, we rotate on the X and Z axes to face the user.
 
 From **StationaryQuadRenderer::Update**:
 
@@ -737,7 +743,7 @@ That's it! The hologram will now "chase" a position that is 2 meters in front of
 
 ## Handling tracking loss
 
-When the device cannot locate itself in the world, the app experiences "tracking loss". Windows Mixed Reality apps should be able to handle such disruptions to the positional tracking system. These disruptions can be observed, and responses created, by using the LocatabilityChanged event on the default SpatialLocator.
+When the device can't locate itself in the world, the app experiences "tracking loss". Windows Mixed Reality apps should be able to handle such disruptions to the positional tracking system. These disruptions can be observed, and responses created, by using the LocatabilityChanged event on the default SpatialLocator.
 
 From **AppMain::SetHolographicSpace:**
 

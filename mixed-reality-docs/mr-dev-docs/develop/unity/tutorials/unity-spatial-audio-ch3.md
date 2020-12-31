@@ -2,10 +2,10 @@
 title: Spatial audio tutorials - 3. Spatializing audio from a video
 description: Import a video asset into your Unity project, and spatialize the audio from the video.
 author: kegodin
-ms.author: kegodin
+ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens2, spatial audio
+keywords: mixed reality, unity, tutorial, hololens2, spatial audio, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head-related transfer function, reverb, Microsoft Spatializer, video importing, Video Player
 ---
 
 # Spatializing audio from a video
@@ -93,5 +93,6 @@ After these changes, the **Inspector** pane for the **Video Player** will look l
 ## Next steps
 Try out your app on a HoloLens 2 or in the Unity editor. You'll see and hear the video, and the audio from the video will be spatialized.
 
-Continue to [Chapter 4](unity-spatial-audio-ch4.md) to use the button to enable and disable spatialization at run time.
+> [!div class="nextstepaction"]
+> [Chapter 4](unity-spatial-audio-ch4.md) 
 

@@ -1,13 +1,12 @@
 ---
 title: Persistence in Unity
-description: Persistence lets your users pin individual holograms or a workspace wherever they want it, and then find it later where they expect over many uses of your app.
+description: Persistence lets your user's pin individual holograms wherever they want, and then find it later over many uses of your app.
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: HoloLens, persistence, Unity
+keywords: HoloLens, persistence, Unity, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 
 # Persistence in Unity
@@ -15,25 +14,25 @@ keywords: HoloLens, persistence, Unity
 **Namespace:** *UnityEngine.XR.WSA.Persistence*<br>
 **Class:** *WorldAnchorStore*
 
-The WorldAnchorStore is the key to creating holographic experiences where holograms stay in specific real world positions across instances of the application. This lets your users pin individual holograms or a workspace wherever they want it, and then find it later where they expect over many uses of your app.
+The WorldAnchorStore is the key to creating holographic experiences where holograms stay in specific real world positions across instances of the application. Users can then pin individual holograms wherever they want, and find them later in the same spot over many uses of your app.
 
 ## How to persist holograms across sessions
 
-The WorldAnchorStore will allow you to persist the location of WorldAnchor's across sessions. To actually persist holograms across sessions, you will need to separately keep track of your GameObjects that use a particular world anchor. It often makes sense to create a GameObject root with a world anchor and have children holograms anchored by it with a local position offset.
+The WorldAnchorStore will allow you to persist the location of WorldAnchor's across sessions. To actually persist holograms across sessions, you'll need to separately keep track of your GameObjects that use a particular world anchor. It often makes sense to create a GameObject root with a world anchor and have children holograms anchored by it with a local position offset.
 
 To load holograms from previous sessions:
 1. Get the WorldAnchorStore
-2. Load app data relating to the world anchor which gives you the id of the world anchor
-3. Load a world anchor from its id
+2. Load app data relating to the world anchor, which gives you the ID of the world anchor
+3. Load a world anchor from its ID
 
 To save holograms for future sessions:
 1. Get the WorldAnchorStore
-2. Save a world anchor specifying an id
-3. Save app data relating to the world anchor along with an id
+2. Save a world anchor specifying an ID
+3. Save app data relating to the world anchor along with an ID
 
 ### Getting the WorldAnchorStore
 
-We will want to keep a reference to the WorldAnchorStore around so we know we are ready to go when we want to perform an operation. Since this is an async call, potentially as soon as start up, we want to call
+You'll want to keep a reference to the WorldAnchorStore so you know when it's ready to perform an operation. Since this is an async call, potentially as soon as start up, you want to call:
 
 ```
 WorldAnchorStore.GetAsync(StoreLoaded);
@@ -48,11 +47,11 @@ private void StoreLoaded(WorldAnchorStore store)
 }
 ```
 
-We now have a reference to the WorldAnchorStore which we will use to save and load specific World Anchors.
+We now have a reference to the WorldAnchorStore, which we'll use to save and load specific World Anchors.
 
 ### Saving a WorldAnchor
 
-To save, we simply need to name what we are saving and pass it in the WorldAnchor we got before when we want to save. Note: trying to save two anchors to the same string will fail (store.Save will return false). You need to Delete the previous save before saving the new one:
+To save, we simply need to name what we are saving and pass it in the WorldAnchor we got before when we want to save. Note: trying to save two anchors to the same string will fail (store.Save will return false). Delete the previous save before saving the new one:
 
 ```
 private void SaveGame()
@@ -98,7 +97,7 @@ for (int index = 0; index < ids.Length; index++)
 
 ## Persisting holograms for multiple devices
 
-You can use <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> to create a durable cloud anchor from a local WorldAnchor, which your app can then locate across multiple HoloLens, iOS and Android devices, even if those devices are not present together at the same time.  Because cloud anchors are persistent, multiple devices over time can each see content rendered relative to that anchor in the same physical location.
+You can use <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> to create a durable cloud anchor from a local WorldAnchor, which your app can then locate across multiple HoloLens, iOS and Android devices, even if those devices aren't present together at the same time.  Because cloud anchors are persistent, multiple devices over time can each see content rendered relative to that anchor in the same physical location.
 
 To get started building shared experiences in Unity, try out the 5-minute <a href="https://docs.microsoft.com/azure/spatial-anchors/unity-overview" target="_blank">Azure Spatial Anchors Unity quickstarts</a>.
 
@@ -106,7 +105,7 @@ Once you're up and running with Azure Spatial Anchors, you can then <a href="htt
 
 ## Next Development Checkpoint
 
-If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality core building blocks. From here, you can proceed to the next building block:
+If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality core building blocks. From here, you can continue to the next building block:
 
 > [!div class="nextstepaction"]
 > [Spatial mapping](spatial-mapping-in-unity.md)

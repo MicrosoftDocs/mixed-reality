@@ -1,15 +1,15 @@
 ---
-title: Multi-user capabilities tutorials - 1. Introduction
-description: Complete this course to learn how to implement multi-user shared experiences in a HoloLens 2 application.
+title: Multi-user capabilities tutorials - 1. Introduction to the Multi-user capabilities tutorials 
+description: Complete this course to learn how to implement shared multi-user experiences in a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens
+keywords: mixed reality, unity, tutorial, hololens, multi-user capabilities, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
 ms.localizationpriority: high
 ---
 
-# 1. Introduction
+# 1. Introduction to the Multi-user capabilities tutorials
 
 ## Overview
 
@@ -53,4 +53,5 @@ Tutorials in this series:
 > [!CAUTION]
 > The recommended Unity version for this tutorial series is Unity 2019.3.15. This supersedes any Unity version requirements stated in the prerequisites linked above.
 
-[Next Tutorial: 2. Setting up Photon Unity Networking](mr-learning-sharing-02.md)
+> [!div class="nextstepaction"]
+> [Next Tutorial: 2. Setting up Photon Unity Networking](mr-learning-sharing-02.md)
