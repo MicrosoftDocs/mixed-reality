@@ -31,8 +31,8 @@ In this tutorial, you'll learn how to create a new Unity project, configure it f
 
 ![Select the Unity version](images/mr-learning-base/base-02-section1-step1-2.png)
 
-    > [!TIP]
-    > If the particular Unity version is not available in Unity Hub, you can initiate the installation from Unity's <a href="https://unity3d.com/get-unity/download/archive" target="_blank">Download Archive</a>.
+> [!TIP]
+> If the particular Unity version is not available in Unity Hub, you can initiate the installation from Unity's <a href="https://unity3d.com/get-unity/download/archive" target="_blank">Download Archive</a>.
 
 3. In the **Create a new project** window, do the following:
 
@@ -49,7 +49,7 @@ In this tutorial, you'll learn how to create a new Unity project, configure it f
 
 The status bar keeps you updated on your progress.
 
-    :::image type="content" source="images/mr-learning-base/base-02-section1-step1-4.png" alt-text="The Unity progress bar keeps you updated on your "create project" status.":::
+:::image type="content" source="images/mr-learning-base/base-02-section1-step1-4.png" alt-text="The Unity progress bar keeps you updated on your "create project" status.":::
 
 ## Switching the build platform
 
@@ -179,7 +179,7 @@ After Unity has finished importing the Windows Mixed Reality SDK, the **MRTK Pro
 - Your device is in Developer Mode.
 - Your device is paired with your development computer. If it's not, you will see the following dialog box in Visual Studio during the build process:
 
-![Add your current scene to the "Scenes in Build" list](images/mr-learning-base/pin-request.png)
+![Entering PIN for pairing devices](images/mr-learning-base/pin-request.png)
 
  To learn more about both of these steps, see [Using Visual Studio to deploy and debug](../../platform-capabilities-and-apis/using-visual-studio.md).
 

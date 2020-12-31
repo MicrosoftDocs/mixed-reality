@@ -34,7 +34,7 @@ You can also use 2D images with Object collection. The examples below demonstrat
 
 ![An example of 2D images with Object collection](images/940px-layout-3dobjects-3.jpg)
 
-![An example of 2D images with Object collection](images/940px-layout-2dimages.jpg)<br>
+![Examples of using object collection with 2D images](images/940px-layout-2dimages.jpg)<br>
 *Examples of using object collection with 2D images*
 
 <br>

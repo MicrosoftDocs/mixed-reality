@@ -198,12 +198,12 @@ A 2D [slate](slate.md) is a holographic container used to host 2D app content, s
 
 :::row:::
     :::column:::
-       ![Move](images/manipulate-2d-slate-move.jpg)<br>
+       ![Graphic showing grab and drag feature](images/manipulate-2d-slate-move.jpg)<br>
        **Move**<br>
        Move your hands toward corners and edges to reveal the closest manipulation affordances. Grab the Holobar at the top of the 2D slate, which lets you move the whole slate.
     :::column-end:::
     :::column:::
-       ![Scale](images/manipulate-2d-slate-scale.jpg)<br>
+       ![Graphic showing scale feature](images/manipulate-2d-slate-scale.jpg)<br>
         **Scale**<br>
         Grab the manipulation affordances and do uniform scaling through the corner affordances.
     :::column-end:::
@@ -229,17 +229,17 @@ Affordance-base manipulation lets you manipulate the 3D object through a boundin
 
 :::row:::
     :::column:::
-       ![Move](images/3d-object-manipulation-move.jpg)<br>
+       ![Graphic showing an objects bounding box and move feature](images/3d-object-manipulation-move.jpg)<br>
        **Move**<br>
        As soon as a user's hand is close to a 3D object, the bounding box, and the nearest affordance are revealed. Users can grab the bounding box to move the whole object.
     :::column-end:::
     :::column:::
-       ![Rotate](images/3d-object-manipulation-rotate.jpg)<br>
+       ![Graphic showing user grabbing an objects edge to rotate](images/3d-object-manipulation-rotate.jpg)<br>
         **Rotate**<br>
         Users can grab the edge affordances to rotate.
     :::column-end:::
     :::column:::
-       ![Scale](images/3d-object-manipulation-scale.jpg)<br>
+       ![Graphic showing user grabbing an objects corner to scale](images/3d-object-manipulation-scale.jpg)<br>
        **Scale**<br>
        Users can grab the corner affordances to scale uniformly.
     :::column-end:::
@@ -268,15 +268,15 @@ For example, if we encourage the user to grab an object or a control point with 
 
 :::row:::
     :::column:::
-       ![Move](images/instinctual-gestures-smallobject.jpg)<br>
+       ![Graphic showing user grabbing small object to move](images/instinctual-gestures-smallobject.jpg)<br>
        **Small object**<br>
     :::column-end:::
     :::column:::
-       ![Rotate](images/instinctual-gestures-mediumobject.jpg)<br>
+       ![Graphic showing user grabbing medium object to move](images/instinctual-gestures-mediumobject.jpg)<br>
         **Medium object**<br>
     :::column-end:::
     :::column:::
-       ![Scale](images/instinctual-gestures-largeobject.jpg)<br>
+       ![Graphic showing user grabbing large object to move](images/instinctual-gestures-largeobject.jpg)<br>
        **Large object**<br>
     :::column-end:::
 :::row-end:::

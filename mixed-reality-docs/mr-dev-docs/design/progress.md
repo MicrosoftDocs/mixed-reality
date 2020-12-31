@@ -50,7 +50,7 @@ It's important to provide the user information about what is happening. In mixed
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![Progress ring example in HoloLens](images/640px-progressring.jpg)<br>
+       ![Progress ring example on HoloLens device](images/640px-progressring.jpg)<br>
     :::column-end:::
 :::row-end:::
 
