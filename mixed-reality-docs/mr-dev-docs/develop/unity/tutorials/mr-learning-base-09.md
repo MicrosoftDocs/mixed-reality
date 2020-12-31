@@ -1,5 +1,5 @@
 ---
-title: Getting started tutorials - 9. Using speech commands
+title: MRTK tutorials - 9. Using speech commands
 description: This course shows you how to use speech commands with the Mixed Reality Toolkit (MRTK).
 author: jessemcculloch
 ms.author: jemccull

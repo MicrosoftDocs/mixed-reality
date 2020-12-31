@@ -1693,8 +1693,8 @@
 			"redirect_document_id": true
 		},
 		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/contributing.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/whats-new/contributing",
+			"source_path": "mixed-reality-docs/mr-dev-docs/whats-new/contributing.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/contributing",
 			"redirect_document_id": true
 		},
 		{

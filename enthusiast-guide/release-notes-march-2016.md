@@ -8,8 +8,6 @@ ms.topic: article
 keywords: release notes, HoloLens, os, platform, features, build, launch
 ---
 
-
-
 # Release notes - March 2016
 
 Welcome to Windows Holographic, available for the first time on Microsoft HoloLens. We want to [hear your feedback](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback). Use the Feedback Hub, the [developer forums](https://forums.hololens.com) and [Twitter via @HoloLens](https://twitter.com/hololens).
@@ -24,11 +22,11 @@ Try the inbox apps
 * **Microsoft Edge.** Modern web browser for Windows 10.
 * **Settings.** Check system information, [connect to Wi-Fi](https://docs.microsoft.com/windows/mixed-reality/connecting-to-wi-fi-on-hololens), and [connect to Bluetooth devices](https://docs.microsoft.com/windows/mixed-reality/discover/hardware-accessories).
 * **Holograms.** Place holograms in your world, walk around them, then see and hear them from any angle.
-* **Calibration.** Repeat the [calibration](https://docs.microsoft.com/windows/mixed-reality/calibration) done during the out-of-box-experience. Do this whenever switching users.
+* **Calibration.** Repeat the [calibration](https://docs.microsoft.com/windows/mixed-reality/calibration) done during the out-of-box-experience whenever switching users.
 * **Learn Gestures.** Repeat the gesture tutorial done during the out-of-box experience.
 * **Photos.** See the mixed reality capture photos and videos you take with the device, then place them in world along with holograms.
 
-To unlock the device for development, open the *Settings* app, go to *Update & Security*, switch to the *For developers* page, and set the developer mode toggle to on. This is the same place where you can enable the [Device Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
+To unlock the device for development, open the *Settings* app, go to *Update & Security*, switch to the *For developers* page, and set the developer mode toggle to on. You can also enable the [Device Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal) from here.
 
 ## See also
 * [HoloLens known issues](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
