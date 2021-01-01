@@ -33,10 +33,10 @@ The easiest way to develop in Unity is with the Mixed Reality Toolkit. MRTK will
 | [HoloLens 2 tutorial series](tutorials/mr-learning-base-01.md) | Dive into beginner level MRTK tutorials for HoloLens 2 hardware |
 
 > [!IMPORTANT]
-> If you'd like to create a new Unity project without importing Mixed Reality Toolkit, there are a small set of Unity settings you'll need to manually change for Windows Mixed Reality. These are broken down into two categories: per-project and per-scene. Take a look at our configuration guide for the step-by-step process.
+> If you'd like to create a new Unity project without importing Mixed Reality Toolkit, there are a small set of Unity settings you'll need to manually change for Windows Mixed Reality. These are broken down into two categories: per-project and per-scene. Take a look at our [configuration guide](configure-unity-project.md) for the step-by-step process.
 
 > [!NOTE]
-> Once you've setup MRTK V2 in your project, standard Unity game objects like the camera will light up immediately for a seated-scale experience. You can find instructions on changing the experience scale of your application on the coordinate systems page.
+> Once you've setup MRTK V2 in your project, standard Unity game objects like the camera will light up immediately for a seated-scale experience. You can find instructions on changing the experience scale of your application on the [coordinate systems](coordinate-systems-in-unity.md) page.
 
 ### 2. Core building blocks
 
@@ -78,7 +78,7 @@ A developers job is never done, especially when learning a new tool or SDK. The 
 
 ### Porting
 
-If you have existing apps that you'd like to port over, the articles listed below are your next stop/
+If you have existing apps that you'd like to port over, the articles listed below are your next stop:
 
 * [HoloToolkit/MRTK to MRTK v2](mrtk-porting-guide.md)
 * [Porting guide for immersive apps](../porting-apps/porting-guides.md)
@@ -109,11 +109,11 @@ In addition to this documentation available on docs.microsoft.com, Unity install
 | [Scripting reference](https://docs.unity3d.com/ScriptReference/) | This section of the documentation contains details of the scripting API that Unity provides and is accessible online from the Unity Editor by clicking **Help > Scripting Reference** |
 | [Manual](https://docs.unity3d.com/Manual/index.html) | This manual is designed to help you learn how to use Unity, from basic to advanced techniques, and is accessible online or from the Unity Editor by clicking **Help > Manual** |
 
-
 > [!div class="nextstepaction"]
 > [Explore MRTK](mrtk-getting-started.md)
 
 ## See also
+
 * [Mixed Reality Toolkit v2](mrtk-getting-started.md)
 * [MR Basics 100: Getting started with Unity](tutorials/holograms-100.md)
 * [Recommended settings for Unity](recommended-settings-for-unity.md)

@@ -9,7 +9,6 @@ ms.localizationpriority: high
 keywords: Unity, mixed reality, development, getting started, new project, porting, capability, camera, simulation, emulation, documentation, mixed reality headset, windows mixed reality headset, virtual reality headset, what is virtual reality, what is augmented reality, MRTK, mixed reality toolkit, spatial mapping, voice input, locatable camera, emulator, Azure, tutorials
 ---
 
-
 # Unity development for VR and Windows Mixed Reality
 
 ![Unity banner logo](../images/unity_logo_banner.png)
@@ -25,3 +24,66 @@ Use the following checkpoints to bring your Unity games and applications into th
 
 ### 1. Getting started
 
+There are a small set of Unity settings you'll need to manually change for Windows Mixed Reality and VR developoment. These are broken down into two categories: per-project and per-scene. By the end of this section, you'll have the tools and project settings to start creating your own apps!
+
+|  Checkpoint  |  Outcome  |
+| --- | --- |
+| [Install the latest tools](../install-the-tools.md) | Download and install the latest Unity package and setup your project for mixed reality |
+| [Configuring your project for WMR](configure-unity-project.md) | Learn how to build applications that render digital content on holographic and VR display devices |
+
+### 2. Core building blocks
+
+After starting a new immersive project, you'll need some basic building blocks to develop immersive apps. All of the core building blocks for mixed reality applications are exposed in a manner consistent with other Unity APIs. You might not need all of them at once, but we recommend exploring early on. After diving into the core building blocks listed below, you'll have a toolbox full of features you can integrate into a VR project.
+
+[!INCLUDE[](../includes/unity-building-blocks-wmr.md)]
+
+### 3. Platform capabilities and APIs
+
+Other key features that play a role in immersive applications are available through Unity APIs without any extra packages or setup. After diving into the more advanced capabilities that Unity offers, you'll be able to build deeper, complex VR apps.
+
+|  Feature  |  Capabilities  |
+| --- | --- |
+| [Shared experiences](shared-experiences-in-unity.md) | View and interact collectively with the same hologram at a fixed point in space using spatial anchor sharing |
+| [Locatable camera](locatable-camera-in-unity.md) | Capture photos and video content in your Mixed Reality application |
+| [Focus point](focus-point-in-unity.md) | Provide HoloLens a hint about how to best perform stabilization on the holograms currently being displayed |
+| [Tracking loss](tracking-loss-in-unity.md) | Handle scenarios where your device can't locate itself in the applications world space |
+| [Keyboard input](keyboard-input-in-unity.md) | Get input from real-world and Mixed Reality keyboards in your apps |
+
+### 4. Deploying to a device or emulator
+
+Once you've got your holographic Unity project ready for testing, your next step is to export and build a Unity Visual Studio solution. With that VS solution in hand, you can run your application on real or simulated devices. By the end of this section, you'll be able to deploy your application on a device or emulator that fits your development needs.
+
+* [Windows Mixed Reality immersive headset](../platform-capabilities-and-apis/using-visual-studio.md)
+* [Windows Mixed Reality immersive headset simulator](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
+
+### 5. Adding services
+
+At this point in your development journey you might be looking to add services or for a helping hand with commercial deployment. Integrating [Azure Cloud Services](../mixed-reality-cloud-services.md) and Dynamics 365 features can level up your projects in a major way. We've compiled a few starting points for you to explore and expand your Mixed Reality knowledge.
+
+[!INCLUDE[](../includes/unity-cloud-services-d365.md)]
+
+We also have a [comprehensive list of support documentation for additional Azure services](../mixed-reality-cloud-services.md#standalone-unity-services) that you can add to your Unity projects on a self-serve basis.
+
+## What's next?
+
+A developers job is never done, especially when learning a new tool or SDK. The following sections can take you into areas beyond the beginner level material you've already completed, along with helpful resources if you get stuck. Note that these topics and resources aren't in any sequential order, so feel free to jump around and explore!
+
+### Porting
+
+If you have existing apps that you'd like to port over, the articles listed below are your next stop:
+
+* [Porting VR apps to Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/porting-guides?tabs=project)
+* [Updating SteamVR apps for Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/updating-your-steamvr-application-for-windows-mixed-reality)
+
+### Additional resources
+
+Before going out into the world of mixed reality on your own, we recommend taking a look at the extra documentation below. 
+
+* [VR enthusiast guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/vr-journey)
+
+## See also 
+
+* [Recommended settings for Unity](recommended-settings-for-unity.md)
+* [Performance recommendations for Unity](performance-recommendations-for-unity.md)
+* [Exporting and building a Unity Visual Studio solution](exporting-and-building-a-unity-visual-studio-solution.md)
+* [Best practices for working with Unity and Visual Studio](best-practices-for-working-with-unity-and-visual-studio.md)
