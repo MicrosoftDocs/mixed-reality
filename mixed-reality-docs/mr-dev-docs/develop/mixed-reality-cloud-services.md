@@ -23,7 +23,7 @@ Mixed Reality cloud services like **Azure Remote Rendering** and **Azure Spatial
 ### Azure Remote Rendering
 Azure Remote Rendering, or ARR, is a service that lets you render highly complex 3D models in real time and stream them to a device. ARR is currently in public preview and can be added to your Unity or Native C++ projects targeting HoloLens 2 or Windows desktop PC.
 
-![ Remote rendering image](../design/images/RemoteRendering.jpg)
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Intro-to-Azure-Mixed-Reality-Services-Azure-Remote-Rendering/player]
 
 ARR is an essential component of any Mixed Reality application that runs on an untethered device, as they have less computational rendering power. Take the following side-by-side engine model comparison as an example: the high-fidelity model on the left has over 18 million triangles, while the reduced model on the right has only around 200,000. In scenarios where every detail matters—industrial plant management, design review for assets like truck engines, pre-operative surgery planning, and more—3D visualization brings that detail to life. It's what helps designers, engineers, doctors, and students better understand complex information and make the right call. But this simplification can result in a loss of important detail that's needed in key business and design decisions.
 
