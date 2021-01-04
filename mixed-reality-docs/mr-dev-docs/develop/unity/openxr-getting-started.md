@@ -48,7 +48,7 @@ Once the Microsoft Mixed Reality scoped registry has been added to the manifest,
 
 To add the OpenXR package:
 
-1. Open **<projectRoot>/Packages/manifest.json** in a text editor like Visual Studio Code
+1. Open **[projectRoot]/Packages/manifest.json** in a text editor like Visual Studio Code
     1. To get here, right click on **Packages** in the left panel of the Project window. Then, click **Show in Explorer**.
     ![Screenshot of the packages listing in the Project window](images/packages.png)
 1. Modify the dependencies section of the *Packages/manifest.json* file as follows:
