@@ -5,7 +5,7 @@ author: jessemcculloch
 ms.author: v-vtieto
 ms.date: 12/30/2020
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, TextMeshPro, 
+keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, TextMeshPro,
 ms.localizationpriority: high
 ---
 
@@ -40,8 +40,8 @@ In this tutorial, you'll learn how to create a new Unity project, configure it f
     * In the **Project Name** box, enter a suitable name for your project (for example, "MRTK Tutorials").
     * Click the three-dot button next to **Location**, and then navigate to the folder where you want to save your project.
 
-    > [!CAUTION]
-    > When working on Windows, there is a MAX_PATH limit of 255 characters. Because of this, you should save the Unity project close to the root of the drive.
+> [!CAUTION]
+> When working on Windows, there is a MAX_PATH limit of 255 characters. Because of this, you should save the Unity project close to the root of the drive.
 
     * Click the **Create** button. This creates and launches your new Unity project.
 
@@ -53,7 +53,7 @@ The status bar keeps you updated on your progress.
 
 ## Switching the build platform
 
-1. On the menu bar, select **File** > **Build Settings...** 
+1. On the menu bar, select **File** > **Build Settings...**
 
 ![Unity Build Settings... menu path](images/mr-learning-base/base-02-section2-step1-1.png)
 
@@ -168,7 +168,7 @@ After Unity has finished importing the Windows Mixed Reality SDK, the **MRTK Pro
     > [!IMPORTANT]
     > Typically, you will use the DefaultHoloLens2ConfigurationProfile when developing for HoloLens. However, for this tutorial, you will use the DefaultMixedRealityToolkitConfigurationProfile. In the next tutorial, [Configuring the MRTK profiles](mr-learning-base-03.md), you will change to the DefaultHoloLens2ConfigurationProfile.
 
-5. On the menu bar, select **File** > **Save As...** 
+5. On the menu bar, select **File** > **Save As...**
 6. In the **Save Scene** dialog, navigate to your project's **Scenes** folder. In the **File name** box, give your scene a suitable name (for example, "\_GettingStarted\_"), and then click the **Save** button.
 
     :::image type="content" source="images/mr-learning-base/base-02-section6-step1-5.png" alt-text="Unity save scene Save prompt window.":::
