@@ -33,7 +33,7 @@ You can find each of the following settings in **Edit > Project Settings**.
 
 ![VR rendering settings](images/unreal/performance-recommendations-img-03.png)
 
-4. Ensure **Default** or **D3D12** is the selected **Default RHI** when using OpenXR.
+4. **[OpenXR only]** Ensure **Default** or **D3D12** is the selected **Default RHI**:
     * Selecting **D3D11** will have a negative performance impact due to the platform performing an additional render pass. **D3D12** should provide rendering performance improvements besides avoiding the additional render pass.
 
 ![Default RHI](images/unreal/performance-recommendations-img-09.png)
