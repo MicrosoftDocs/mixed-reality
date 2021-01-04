@@ -95,7 +95,7 @@ If you're developing for HoloLens 2, navigate to **Mixed Reality> OpenXR > Apply
 
 ## Try out the Unity sample scenes
 
-To utilize one or more of the examples, install [ARFoundation 4.0+](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html#installing-ar-foundation) from the **Pacakage Manager**:
+To utilize one or more of the examples, install [ARFoundation 4.0+](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html#installing-ar-foundation) from the **Package Manager**:
 
 ![Screenshot of Unity Package Manager open in Unity editor with AR Foundation highlighted](images/openxr-img-09.png)
 
