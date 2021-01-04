@@ -40,8 +40,8 @@ In this tutorial, you'll learn how to create a new Unity project, configure it f
     * In the **Project Name** box, enter a suitable name for your project (for example, "MRTK Tutorials").
     * Click the three-dot button next to **Location**, and then navigate to the folder where you want to save your project.
 
-    > [!CAUTION]
-    > When working on Windows, there is a MAX_PATH limit of 255 characters. Because of this, you should save the Unity project close to the root of the drive.
+> [!CAUTION]
+> When working on Windows, there is a MAX_PATH limit of 255 characters. Because of this, you should save the Unity project close to the root of the drive.
 
     * Click the **Create** button. This creates and launches your new Unity project.
 
