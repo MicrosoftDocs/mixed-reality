@@ -5,7 +5,7 @@ author: jessemcculloch
 ms.author: v-vtieto
 ms.date: 12/30/2020
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, TextMeshPro, 
+keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, TextMeshPro,
 ms.localizationpriority: high
 ---
 
@@ -31,8 +31,8 @@ In this tutorial, you'll learn how to create a new Unity project, configure it f
 
 ![Select the Unity version](images/mr-learning-base/base-02-section1-step1-2.png)
 
-    > [!TIP]
-    > If the particular Unity version is not available in Unity Hub, you can initiate the installation from Unity's <a href="https://unity3d.com/get-unity/download/archive" target="_blank">Download Archive</a>.
+> [!TIP]
+> If the particular Unity version is not available in Unity Hub, you can initiate the installation from Unity's <a href="https://unity3d.com/get-unity/download/archive" target="_blank">Download Archive</a>.
 
 3. In the **Create a new project** window, do the following:
 
@@ -49,11 +49,11 @@ In this tutorial, you'll learn how to create a new Unity project, configure it f
 
 The status bar keeps you updated on your progress.
 
-    :::image type="content" source="images/mr-learning-base/base-02-section1-step1-4.png" alt-text="The Unity progress bar keeps you updated on your "create project" status.":::
+![The Unity progress bar keeps you updated on your "create project" status](images/mr-learning-base/base-02-section1-step1-4.png)
 
 ## Switching the build platform
 
-1. On the menu bar, select **File** > **Build Settings...** 
+1. On the menu bar, select **File** > **Build Settings...**
 
 ![Unity Build Settings... menu path](images/mr-learning-base/base-02-section2-step1-1.png)
 
@@ -168,7 +168,7 @@ After Unity has finished importing the Windows Mixed Reality SDK, the **MRTK Pro
     > [!IMPORTANT]
     > Typically, you will use the DefaultHoloLens2ConfigurationProfile when developing for HoloLens. However, for this tutorial, you will use the DefaultMixedRealityToolkitConfigurationProfile. In the next tutorial, [Configuring the MRTK profiles](mr-learning-base-03.md), you will change to the DefaultHoloLens2ConfigurationProfile.
 
-5. On the menu bar, select **File** > **Save As...** 
+5. On the menu bar, select **File** > **Save As...**
 6. In the **Save Scene** dialog, navigate to your project's **Scenes** folder. In the **File name** box, give your scene a suitable name (for example, "\_GettingStarted\_"), and then click the **Save** button.
 
     :::image type="content" source="images/mr-learning-base/base-02-section6-step1-5.png" alt-text="Unity save scene Save prompt window.":::
@@ -179,7 +179,7 @@ After Unity has finished importing the Windows Mixed Reality SDK, the **MRTK Pro
 - Your device is in Developer Mode.
 - Your device is paired with your development computer. If it's not, you will see the following dialog box in Visual Studio during the build process:
 
-![Add your current scene to the "Scenes in Build" list](images/mr-learning-base/pin-request.png)
+![Entering PIN for pairing devices](images/mr-learning-base/pin-request.png)
 
  To learn more about both of these steps, see [Using Visual Studio to deploy and debug](../../platform-capabilities-and-apis/using-visual-studio.md).
 
