@@ -37,11 +37,13 @@ The teleport pointer now has improved animations and audio feedback. We also imp
 https://streamable.com/3f222q
 
 ### Input Simulation Cheat Sheet
+
 The HandInteractionExamples scene now has a configurable shortcut to show a help page for input simulation
 
 ![Input Simulation Cheat Sheet](https://user-images.githubusercontent.com/13754172/93232433-dea8cd80-f7b4-11ea-8500-eaee202f606f.png)
 
 ### Input Simulation Eye Gaze with mouse
+
 Users can now use the Mouse for simulating eye tracking. See the `Eye Simulation Mode` field in the input simulation profile and set it to Mouse. This replaces the previous `Simulate Eye Position` field
 
 ![Eye Gaze Mouse](https://user-images.githubusercontent.com/39840334/87720928-892b5280-c76a-11ea-9411-73ab69fc756c.gif)
@@ -105,6 +107,7 @@ from the MRTK configuration dialog. If desired, legacy XR support can be enabled
 **Player** > **XR Settings** > **Virtual Reality Supported**.
 
 ### Reduction in InitializeOnLoad overhead
+
 We've been doing work to reduce the amount of work that runs in InitializeOnLoad handlers, which should lead to
 improvements in inner loop development speed. InitializeOnLoad handlers run every time a script is compiled, prior
 to entering play mode, and also at editor launch. These handlers now run in far fewer cases, resulting in general
@@ -118,9 +121,11 @@ See [ARFoundation](../features/CrossPlatform/UsingARFoundation.md#install-requir
 - For those who will be using [Holographic Remoting with legacy XR pipeline](../features/Tools/HolographicRemoting.md#legacy-xr-setup-instructions) on HoloLens 2, there is now a [manual step](../features/Tools/HolographicRemoting.md#dotnetwinrt_present-define-written-into-player-settings) to perform.
 
 ### Bounds control graduated
+
 ![Bounds control](../features/Images/BoundsControl/MRTK_BoundsControl_Main.png)
 [Bounds control](../features/README_BoundsControl.md) graduated out of experimental and comes with a bunch of new features and tons of bug fixes.
 Here a list of the highlights of this update:
+
 - properties are split into configurations which makes it easier to set up bounds control
 - configurations can be shared through scriptable objects
 - every property / scriptable property is runtime configurable
@@ -132,6 +137,7 @@ Here a list of the highlights of this update:
 The old bounding box is now deprecated and existing game objects using bounding box can be [upgraded using the migration tool](../features/Tools/MigrationWindow.md) or the [bounding box inspector](../features/README_BoundingBox.md#migrating-to-bounds-control).
 
 ### Constraint manager component
+
 Constraints can now be used by both, bounds control and object manipulator via the new [constraint manager component](../features/README_ConstraintManager.md). Both components will create a constraint manager per default and process any attached constraints automatically.
 
 Additionally to the automatic behavior constraint manager also comes with a manual mode that lets users decide which constraint should be processed.
@@ -143,21 +149,25 @@ The constraints that are applied to the component are now shown as a list in the
 For more information read the [constraint manager](../features/README_ConstraintManager.md) section in our docs.
 
 ### HoloLens 2 Button material update
+
 Updated HoloLens 2 Button's front cage material to remove black color in MRC.
 
 ![HoloLens 2 button material update](https://user-images.githubusercontent.com/13754172/94341269-dcf7c900-0042-11eb-9028-e55abd2ead67.png)
 
 ### Description panel update, movable example scene
+
 Updated description panel. (SceneDescriptionPanelRev.prefab) New design provides a grabbable top bar which allows the user to adjust/move the entire scene.
 
 ![Description panel update](https://user-images.githubusercontent.com/13754172/91176366-28a21480-e71d-11ea-9e80-7e219595de9c.png)
 
 ### Spatial mesh visualization - Pulse on air-tap
+
 Updated pulse shader example for the spatial mesh to match HoloLens 2's shell behavior.
 
 ![Pulse on air-tap](https://user-images.githubusercontent.com/13754172/90310153-d0536180-df29-11ea-939a-e9572d4f5670.gif)
 
 ### Elastic system - Experimental
+
 ![Elastic System2](../features/Images/Elastics/Elastics_Main.gif)
 
 MRTK now comes with an [elastic simulation system](../features/Elastics/ElasticSystem.md) that includes a wide variety of extensible and flexible subclasses, offering bindings for 4-dimensional quaternion springs, 3-dimensional volume springs and simple linear spring systems.
@@ -171,17 +181,20 @@ Currently the following MRTK components supporting the [elastics manager](xref:M
 <img src="https://user-images.githubusercontent.com/5544935/88151578-58567d80-cbaf-11ea-8f96-d24f2cf0d6e9.gif" width="45.7%">
 
 ### Joystick (Experimental)
+
 An example of joystick interface that can control a large target object.
 
 ![Joystick](https://user-images.githubusercontent.com/43013191/86156887-769ef100-babb-11ea-85be-ed6a6aed89d2.png)
 
 ### Color picker (Experimental)
+
 An experimental control that makes it easy to change material colors on any object at runtime.
 ![Color picker](https://user-images.githubusercontent.com/43013191/85468370-3b536e00-b561-11ea-812c-b3f7d43dd999.png)
 
 ![Color picker](https://user-images.githubusercontent.com/43013191/85468994-fa0f8e00-b561-11ea-89f2-0810d1998518.png)
 
 <br/><br/>
+
 ## Breaking changes
 
 ### Assembly Definition Files Changes

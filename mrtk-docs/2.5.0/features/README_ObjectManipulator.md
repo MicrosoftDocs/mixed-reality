@@ -70,9 +70,11 @@ Specifies how two hand manipulation can transform an object. Because this proper
 ### Constraints
 
 #### Enable constraints
+
 This setting will enable the linked [constraint manager](README_ConstraintManager.md). Transform changes will be processed by constraints registered to the selected [constraint manager](README_ConstraintManager.md).
 
 #### Constraint manager
+
 The dropdown allows to select any of the attached [constraint managers](README_ConstraintManager.md). Object manipulator ensures there's a [constraint manager](README_ConstraintManager.md) attached at all times.
 Note that multiple components of the same type will show up under the same name in unity. To make it easier to distinguish between multiple constraint managers on the same object, the available options will show a hint on the configuration of the selected constraint manager (manual or auto constraint selection).
 
@@ -156,6 +158,7 @@ When a rigidbody is added, collisions should work correctly.
 <img src="Images/ObjectManipulator/MRTK_PhysicsManipulation_Rigidbody.gif" width="500">
 
 ## Elastics (Experimental)
+
 Elastics can be used when manipulating objects via object manipulator. Note that the [elastics system](Elastics/ElasticSystem.md) is still in experimental state. To enable elastics either link an existing elastics manager component or create and link a new elastics manager via the `Add Elastics Manager` button.
 
 <img src="Images/BoundsControl/MRTK_BoundsControl_Elastics.png" width="450">

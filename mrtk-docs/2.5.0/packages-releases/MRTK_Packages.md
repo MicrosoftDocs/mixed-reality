@@ -271,6 +271,7 @@ The optional test utilities package (`com.microsoft.mixedreality.toolkit.testuti
 | MRTK/Tests | |
 | | TestUtilities | Methods to simplify creation of play mode tests, including hand simulation utilities. |
 Dependencies:
+
 - Foundation (`com.microsoft.mixedreality.toolkit.foundation`)
 
 ### Examples package
