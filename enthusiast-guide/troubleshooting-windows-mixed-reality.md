@@ -26,7 +26,7 @@ For issues with installation, running Windows Mixed Reality, setup errors, minim
 
 ### Hardware issues
 
-For issues with your physical headset device, cable connections, connection errors, launching the Mixed Reality Portal, and black or blank headset displays, check out the following articles:
+For problems with your physical headset device, cable connections, connection errors, launching the Mixed Reality Portal, and black or blank headset displays, check out the following articles:
 
 - [Headset connectivity](headset-connectivity.md)
 - [Headset display](headset-display.md)
