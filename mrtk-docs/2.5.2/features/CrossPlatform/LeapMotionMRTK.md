@@ -162,7 +162,7 @@ To test if the Leap Motion Unity Modules have integrated with MRTK:
   - This will display a pop up window with a message about whether or not the Leap Motion Unity Modules have integrated with MRTK.
 - If the message says that the assets have not been integrated:
     - Make sure the Leap Motion Unity Modules are in the project
-    - Make sure that the version added is supported, see the table at the top of the page for versions supported. 
+    - Make sure that the version added is supported, see the table at the top of the page for versions supported.
     - Try **Mixed Reality Toolkit > Utilities > Leap Motion > Integrate Leap Motion Unity Modules**
 
 ### Copying assembly Multiplayer HLAPI failed

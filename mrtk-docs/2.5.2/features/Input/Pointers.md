@@ -121,8 +121,6 @@ a grabbable but cannot see it. The *Visual FOV* is defined via a cone instead of
 
 <img src="../Images/Input/Pointers/SpherePointer_VisualFOV.png" width="200">
 
-
-
 #### Teleport pointers
 
 - [`TeleportPointer`](xref:Microsoft.MixedReality.Toolkit.Teleport.TeleportPointer) will raise a teleport request when action is taken (i.e the teleport button is pressed) in order to move the user.

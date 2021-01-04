@@ -112,7 +112,6 @@ In the event that the installation of the DotNetAdapter cannot be performed via 
 
 1. Enable [a required flag](#dotnetwinrt_present-define-written-into-player-settings)
 
-
 ### Removing HoloLens 2-specific remoting support
 
 If you're running into conflicts or other issues due to the presence of the DotNetWinRT adapter, please [reach out on one of our help resources](../WelcomeToMRTK.md#getting-help).
@@ -157,7 +156,7 @@ Once the project has been configured, a connection can be established to the Hol
 
 ## Connecting to the HoloLens with USB cable
 
-USB cable connection gives better rendering quality and stability. To use USB cable connection, disconnect from the HoloLens from Wi-Fi in HoloLens's Settings and launch Holographic Remoting Player app. It will display an IP address that starts with 169. Use this IP address in Unity's Holographic Emulation setting to connect. Once the IP address for USB cable has been identified, it is safe to connect the HoloLens to Wi-Fi again. 
+USB cable connection gives better rendering quality and stability. To use USB cable connection, disconnect from the HoloLens from Wi-Fi in HoloLens's Settings and launch Holographic Remoting Player app. It will display an IP address that starts with 169. Use this IP address in Unity's Holographic Emulation setting to connect. Once the IP address for USB cable has been identified, it is safe to connect the HoloLens to Wi-Fi again.
 
 ## Starting a remoting session
 

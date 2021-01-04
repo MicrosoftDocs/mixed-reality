@@ -46,6 +46,7 @@ To add an MRTK package, modify the dependencies section of the `Packages/manifes
     "com.microsoft.mixedreality.toolkit.tools": "2.5.1",
     "com.microsoft.mixedreality.toolkit.examples": "2.5.1",
 ```
+
 > [!IMPORTANT]
 > There is a known compiler issue that impacts applications built for Microsoft HoloLens 2 using
 > ARM64. This issue is addressed in the forthcoming 16.8 update for Visual Studio 2019. Until the

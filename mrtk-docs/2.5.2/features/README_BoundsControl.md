@@ -57,6 +57,7 @@ The control comes with a set of configuration objects that can be stored as scri
 The bounds control inspector will indicate whether a configuration is shared or inlined as part of the current instance by showing a message in the property inspector. In addition shared instances won't be editable directly in the bounds control property window itself, but instead the asset it's linking to has to be directly modfied to avoid any accidental changes on shared configurations.
 
 Currently bounds control offers configuration objects options for the following features:
+
 - Handles
   - [Scale handles](#scale-handles-configuration)
   - [Rotation handles](#rotation-handles-configuration)
