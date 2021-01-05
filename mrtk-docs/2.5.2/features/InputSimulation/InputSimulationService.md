@@ -193,4 +193,4 @@ style interactions (so ensure that **Default Controller Simulation Mode** is set
 
 ## See also
 
-- [Input System profile](../Input/InputProviders.md).
+* [Input System profile](../Input/InputProviders.md).

@@ -14,13 +14,13 @@ A slate control is composed of the following elements:
 * **BackPlate**: The back side of the slate.
 * **ContentQuad**: Content is assigned as material. The example uses a sample material 'PanContent'.
 
-<img src="Images/Slate/MRTK_SlateStructure.jpg" width="650">
+<img src="Images/Slate/MRTK_SlateStructure.jpg" width="650" alt="Slate Structure">
 
 ## Bounds control
 
 A slate control contains a bounds control script for scaling and rotating. For more information on bounds control, please see the [bounds control](README_BoundsControl.md) page.
 
-<img src="Images/Slate/MRTK_Slate_BB.jpg" width="650">
+<img src="Images/Slate/MRTK_Slate_BB.jpg" width="650" alt="Slate BB">
 
 ## Buttons
 
@@ -29,16 +29,16 @@ A standard slate offers two buttons as default on the top right of the title bar
 * **Follow Me**: Toggles an orbital solver components to make the slate object follow the user.
 * **Close**: Disables the slate object.
 
-<img src="Images/Slate/MRTK_Slate_Buttons.jpg" width="650">
+<img src="Images/Slate/MRTK_Slate_Buttons.jpg" width="650" alt="Slate Button">
 
 ## Scripts
 
 In general, the `NearInteractionTouchable.cs` script must be attached to any object that is intended to receive touch events from the `IMixedRealityTouchHandler`.
 
-<img src="Images/Slate/MRTK_Slate_Scripts.png">
+<img src="Images/Slate/MRTK_Slate_Scripts.png" alt="Slate Scripts">
 
 * `HandInteractionPan.cs` This script handles articulated hand input for touching and moving the content on the slate's *ContentQuad*.
 
 * `HandInteractionPanZoom.cs`: In addition to the panning interaction, this script supports two-handed zooming.
 
-<img src="Images/Slate/MRTK_Slate_PanZoom.png" width="500">
+<img src="Images/Slate/MRTK_Slate_PanZoom.png" width="500" alt="Slate Panzoom">

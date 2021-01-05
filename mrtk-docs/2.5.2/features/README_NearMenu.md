@@ -10,7 +10,7 @@ Near Menu is a UX control which provides a collection of buttons or other UI com
 - **Pin**: Using the 'Pin' button, the menu can be world-locked and released.
 - **Grab and move**: The menu is always grabbable and movable. Regardless of the previous state, the menu will be pinned(world-locked) when grabbed and released. There are visual cues for the grabbable area. They are revealed on hand proximity.
 
-<img src="Images/NearMenu/MRTK_UX_NearMenu_Grab.png">
+<img src="Images/NearMenu/MRTK_UX_NearMenu_Grab.png" alt="Near Menu">
 
 ## Prefabs
 
@@ -27,7 +27,7 @@ Near Menu prefabs are designed to demonstrate how to use MRTK's various componen
 
 You can find examples of Near Menu prefabs in the `NearMenuExamples` scene.
 
-<img src="Images/NearMenu/MRTK_UX_NearMenu_Examples.png">
+<img src="Images/NearMenu/MRTK_UX_NearMenu_Examples.png" alt="Near Menu Example">
 
 ## Structure
 
@@ -45,20 +45,20 @@ Near Menu prefabs are made with following MRTK components.
 **1. Add/Remove Buttons**
 
 Under `ButtonCollection` object, add or remove buttons.  
-<img src="Images/NearMenu/MRTK_UX_NearMenu_Custom0.png" width="450">
+<img src="Images/NearMenu/MRTK_UX_NearMenu_Custom0.png" width="450" alt="Near Menu Custome 0">
 
 **2. Update the Grid Object Collection**
 
 Click `Update Collection` button in the Inspector of the `ButtonCollection` object. It will update the grid layout.  
-<img src="Images/NearMenu/MRTK_UX_NearMenu_Custom1.png">
+<img src="Images/NearMenu/MRTK_UX_NearMenu_Custom1.png" alt="Near Menu Custom 1">
 
 You can configure the number of rows using `Rows` property of the Grid Object Collection.  
-<img src="Images/NearMenu/MRTK_UX_NearMenu_Custom2.png">
+<img src="Images/NearMenu/MRTK_UX_NearMenu_Custom2.png" alt="Near Menu custome 2">
 
 **3. Adjust the backplate size**
 
 Adjust the size of the `Quad` under `Backplate` object. The width and height of the backplate should be `0.032 * [Number of the buttons + 1]`. For example, if you have 3 x 2 buttons, the width of the backplate is `0.032 * 4` and the height is `0.032 * 3`. You can directly put this expression into the Unity's field.  
-<img src="Images/NearMenu/MRTK_UX_NearMenu_Custom3.png" width="450">
+<img src="Images/NearMenu/MRTK_UX_NearMenu_Custom3.png" width="450" alt="Near menu customer 3">
 
 - Default size of the HoloLens 2 button is 3.2x3.2 cm (0.032m)
 

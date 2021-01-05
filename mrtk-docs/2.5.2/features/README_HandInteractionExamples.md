@@ -7,11 +7,11 @@ The `HandInteractionExamples` (Assets/MRTK/Examples/Demos/HandTracking/Scenes/Ha
 > [!NOTE]
 > This example scene uses *TextMesh Pro*. To open the scene, click *'Import TMP Essentials'* when the respective prompt is shown during the import of the scene. Unity will then import TextMesh Pro packages.
 
-<img src="Images/HandInteractionExamples/MRTK_Examples_TMP2.png" width="450">
+<img src="Images/HandInteractionExamples/MRTK_Examples_TMP2.png" width="450" alt="TMP2">
 
 If you see large text after the TextMesh Pro import, open another Unity scene and then open the example scene again.
 
-<img src="Images/HandInteractionExamples/MRTK_Examples_TMP1.png" width="350">
+<img src="Images/HandInteractionExamples/MRTK_Examples_TMP1.png" width="350" alt="TMP1">
 
 ## Pressable button
 

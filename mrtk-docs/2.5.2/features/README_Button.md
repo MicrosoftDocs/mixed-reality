@@ -37,9 +37,9 @@ The `Button` (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/Button.prefab) is
 
 For HoloLens 2, it is recommended to use buttons with an opaque backplate. Transparent buttons are not recommended because of these usability and stability issues:
 
-- Icon and text are difficult to read with the physical environment
-- It is hard to understand when the event triggers
-- Holograms that are displayed through a transparent plane can be unstable with HoloLens 2's Depth LSR stabilization
+* Icon and text are difficult to read with the physical environment
+* It is hard to understand when the event triggers
+* Holograms that are displayed through a transparent plane can be unstable with HoloLens 2's Depth LSR stabilization
 
 ![Button](Images/Button/MRTK_Button_UsePlated.png)
 
@@ -61,15 +61,15 @@ Simply drag `PressableButtonHoloLens2` (Assets/MRTK/SDK/Features/UX/Interactable
 
 The events exposed in the prefab itself as well as the [Interactable](README_Interactable.md) component can be used to trigger additional actions. The pressable buttons in the [HandInteractionExample scene](README_HandInteractionExamples.md) use Interactable's *OnClick* event to trigger a change in the color of a cube. This event gets triggered for different types of input methods such as gaze, air-tap, hand-ray, as well as physical button presses through the pressable button script.
 
-<img src="Images/Button/MRTK_Button_HowToUse_Interactable.png" width="450">
+<img src="Images/Button/MRTK_Button_HowToUse_Interactable.png" width="450" alt="How to use Interactable">
 
 You can configure when the pressable button fires the *OnClick* event via the `PhysicalPressEventRouter` on the button. For example, you can set *OnClick* to fire when the button is first pressed, as opposed to being pressed and released, by setting *Interactable On Click* to *Event On Press*.
 
-<img src="Images/Button/MRTK_Button_HowTo_Events.png" width="450">
+<img src="Images/Button/MRTK_Button_HowTo_Events.png" width="450" alt="How to use Events">
 
 To leverage specific articulated hand input state information, you can use pressable buttons events - *Touch Begin*, *Touch End*, *Button Pressed*, *Button Released*. These events will not fire in response to air-tap, hand-ray, or eye inputs, however. **To support both near and far interactions, it is recommended to use Interactable's *OnClick* event.**
 
-<img src="Images/Button/MRTK_Button_HowTo_PressableButton.png" width="450">
+<img src="Images/Button/MRTK_Button_HowTo_PressableButton.png" width="450" alt="How to use pressable button">
 
 ## Interaction states
 
@@ -198,23 +198,23 @@ Click 'Fix Bounds'
 **Speech Input Handler**
 The [Interactable](README_Interactable.md) script in Pressable Button already implements `IMixedRealitySpeechHandler`. A voice command keyword can be set here.
 
-<img src="Images/Button/MRTK_Button_Speech1.png" width="450">
+<img src="Images/Button/MRTK_Button_Speech1.png" width="450" alt="Speech Button 1">
 
 **Speech Input Profile**
 Additionally, you need to register the voice command keyword in the global *Speech Commands Profile*.
 
-<img src="Images/Button/MRTK_Button_Speech2.png" width="450">
+<img src="Images/Button/MRTK_Button_Speech2.png" width="450" alt="Speech Button 2">
 
 **See-it, Say-it label**
 The pressable button prefab has a placeholder TextMesh Pro label under the *SeeItSayItLabel* object. You can use this label to communicate the voice command keyword for the button to the user.
 
-<img src="Images/Button/MRTK_Button_Speech3.png" width="450">
+<img src="Images/Button/MRTK_Button_Speech3.png" width="450" alt="Speech Button 3">
 
 ## How to make a button from scratch
 
 You can find the examples of these buttons in the **PressableButtonExample** scene.
 
-<img src="Images/Button/MRTK_PressableButtonCube0.png">
+<img src="Images/Button/MRTK_PressableButtonCube0.png" alt="Pressable button cube 0">
 
 ### 1. Creating a pressable button with cube (near interaction only)
 
@@ -224,37 +224,37 @@ You can find the examples of these buttons in the **PressableButtonExample** sce
 
 In the `PressableButton`'s Inspector panel, assign the cube object to the **Moving Button Visuals**.
 
-<img src="Images/Button/MRTK_PressableButtonCube3.png" width="450">
+<img src="Images/Button/MRTK_PressableButtonCube3.png" width="450" alt="Pressable button cube 3">
 
 When you select the cube, you will see multiple colored layers on the object. This visualizes the distance values under **Press Settings**. Using the handles, you can configure when to start press (move the object) and when to trigger event.
 
-<img src="Images/Button/MRTK_PressableButtonCube1.jpg" width="450">
+<img src="Images/Button/MRTK_PressableButtonCube1.jpg" width="450" alt="Pressable Button Cube 1">
 
-<img src="Images/Button/MRTK_PressableButtonCube2.png" width="450">
+<img src="Images/Button/MRTK_PressableButtonCube2.png" width="450" alt="Pressable Button Cube 2">
 
 When you press the button, it will move and generate proper events exposed in the `PressableButton.cs` script such as TouchBegin(), TouchEnd(), ButtonPressed(), ButtonReleased().
 
-<img src="Images/Button/MRTK_PressableButtonCubeRun1.jpg">
+<img src="Images/Button/MRTK_PressableButtonCubeRun1.jpg" alt="Pressable Button cube1">
 
 ### 2. Adding visual feedback to the basic cube button
 
 MRTK Standard Shader provides various features that makes it easy to add visual feedback. Create a material and select shader `Mixed Reality Toolkit/Standard`. Or you can use or duplicate one of the existing materials under `/SDK/StandardAssets/Materials/` that uses MRTK Standard Shader.
 
-<img src="Images/Button/MRTK_PressableButtonCube4.png" width="450">
+<img src="Images/Button/MRTK_PressableButtonCube4.png" width="450" alt="Pressable button cube 4">
 
 Check `Hover Light` and `Proximity Light` under **Fluent Options**. This enables visual feedback for both near hand(Proximity Light) and far pointer(Hover Light) interactions.
 
-<img src="Images/Button/MRTK_PressableButtonCube5.png" width="450">
+<img src="Images/Button/MRTK_PressableButtonCube5.png" width="450" alt="Pressable Button Cube 5">
 
-<img src="Images/Button/MRTK_PressableButtonCubeRun2.jpg">
+<img src="Images/Button/MRTK_PressableButtonCubeRun2.jpg" alt="Pressable button cube 2">
 
 ### 3. Adding audio feedback to the basic cube button
 
 Since `PressableButton.cs` script exposes events such as TouchBegin(), TouchEnd(), ButtonPressed(), ButtonReleased(), we can easily assign audio feedback. Simply add Unity's `Audio Source` to the cube object then assign audio clips by selecting AudioSource.PlayOneShot(). You can use MRTK_Select_Main and MRTK_Select_Secondary audio clips under `/SDK/StandardAssets/Audio/` folder.
 
-<img src="Images/Button/MRTK_PressableButtonCube7.png" width="450">
+<img src="Images/Button/MRTK_PressableButtonCube7.png" width="450" alt="Pressable button cue 7">
 
-<img src="Images/Button/MRTK_PressableButtonCube6.png" width="450">
+<img src="Images/Button/MRTK_PressableButtonCube6.png" width="450" alt="Pressable button cube 6">
 
 ### 4. Adding visual states and handle far interaction events
 
@@ -264,20 +264,20 @@ Since `PressableButton.cs` script exposes events such as TouchBegin(), TouchEnd(
 
 You will see the object respond to both far (hand ray or gaze cursor) and near(hand) interactions.
 
-<img src="Images/Button/MRTK_PressableButtonCubeRun3.jpg">
-<img src="Images/Button/MRTK_PressableButtonCubeRun4.jpg">
+<img src="Images/Button/MRTK_PressableButtonCubeRun3.jpg" alt="Pressable Button Run Cube 3">
+<img src="Images/Button/MRTK_PressableButtonCubeRun4.jpg" alt="Pressable Button Run Cube 4">
 
 ## Custom button examples
 
 In the [HandInteractionExample scene](README_HandInteractionExamples.md), see the piano and round button examples which are both using `PressableButton`.
 
-<img src="Images/Button/MRTK_Button_Custom1.png" width="450">
+<img src="Images/Button/MRTK_Button_Custom1.png" width="450" alt="Button Custom 1">
 
-<img src="Images/Button/MRTK_Button_Custom2.png" width="450">
+<img src="Images/Button/MRTK_Button_Custom2.png" width="450" alt="Button Custom 2">
 
 Each piano key has a `PressableButton` and a `NearInteractionTouchable` script assigned. It is important to verify that the *Local Forward* direction of `NearInteractionTouchable` is correct. It is represented by a white arrow in the editor. Make sure the arrow points away from the button's front face:
 
-<img src="Images/Button/MRTK_Button_Custom3.png" width="450">
+<img src="Images/Button/MRTK_Button_Custom3.png" width="450" alt="Button Custom 3">
 
 ## See also
 

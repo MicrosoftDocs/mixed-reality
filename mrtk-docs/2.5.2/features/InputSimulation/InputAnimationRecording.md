@@ -20,8 +20,8 @@ Two input system services are provided to record and play back input respectivel
 
 [`InputRecordingService`](xref:Microsoft.MixedReality.Toolkit.Input.InputRecordingService) takes data from the main camera transform and active hand controllers and stores it in an internal buffer. When requested this data is then serialized into binary files for storage and later replay.
 
-<a target="_blank" href="../Images/InputSimulation/MRTK_InputAnimation_RecordingDiagram.png">
-  <img src="../Images/InputSimulation/MRTK_InputAnimation_RecordingDiagram.png" title="Recording input animation" width="80%" class="center" />
+<a target="_blank" href="../Images/InputSimulation/MRTK_InputAnimation_RecordingDiagram.png" alt="Recording Diagram">
+  <img src="../Images/InputSimulation/MRTK_InputAnimation_RecordingDiagram.png" title="Recording input animation" width="80%" alt="Input Recording Diagram" class="center" />
 </a>
 
 To start recording input call the [`StartRecording`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputRecordingService.StartRecording) function. [`StopRecording`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputRecordingService.StopRecording) will pause recording (but not discard the data recorded so far, use [`DiscardRecordedInput`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputRecordingService.DiscardRecordedInput) to do this if needed).
@@ -71,9 +71,9 @@ The input recording window has two modes:
 
   The time control buttons from left to right are:
 
-  - _Reset_ the playback time to the start of the animation.
-  - _Play_ animation continuously over time.
-  - _Step_ forward one time step.
+  * _Reset_ the playback time to the start of the animation.
+  * _Play_ animation continuously over time.
+  * _Step_ forward one time step.
 
   The slider can also be used to scrub through the animation timeline.
 

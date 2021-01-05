@@ -37,24 +37,24 @@ There are two principal chains of events, depending on user input:
 
 - "Hold":
     1. Hold tap:
-        * start _Manipulation_
+        - start _Manipulation_
     1. Hold tap beyond [HoldStartDuration](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSimulationProfile.HoldStartDuration):
-        * start _Hold_
+        - start _Hold_
     1. Release tap:
-        * complete _Hold_
-        * complete _Manipulation_
+        - complete _Hold_
+        - complete _Manipulation_
 
 - "Move":
     1. Hold tap:
-        * start _Manipulation_
+        - start _Manipulation_
     1. Hold tap beyond [HoldStartDuration](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSimulationProfile.HoldStartDuration):
-        * start _Hold_
+        - start _Hold_
     1. Move hand beyond [NavigationStartThreshold](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSimulationProfile.NavigationStartThreshold):
-        * cancel _Hold_
-        * start _Navigation_
+        - cancel _Hold_
+        - start _Navigation_
     1. Release tap:
-        * complete _Manipulation_
-        * complete _Navigation_
+        - complete _Manipulation_
+        - complete _Navigation_
 
 ## Example scene
 
