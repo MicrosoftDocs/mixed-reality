@@ -105,8 +105,8 @@ productDirectory:
           text: Enroll your devices 
         - url: https://docs.microsoft.com/hololens/hololens-updates
           text: Manage your HoloLens updates
-        - url: https://docs.microsoft.com/hololens/hololens-release-notes
-          text: Release notes
+        - url: https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview
+          text: Cloud connected deployment with Remote Assist 
         - url: https://docs.microsoft.com/hololens/hololens-troubleshooting
           text: Troubleshooting & support
 
