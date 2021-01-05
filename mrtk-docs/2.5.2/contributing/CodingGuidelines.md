@@ -193,7 +193,7 @@ An interesting example where having logging is useful (along with interesting pa
 DebugUtilities.LogVerboseFormat("RaiseSourceDetected: Source ID: {0}, Source Type: {1}", source.SourceId, source.SourceType);
 ```
 
-This type of logging can help catch issues like https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8016,
+This type of logging can help catch the issue like [https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8016](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8016),
 which were caused by mismatched source detected and source lost events.
 
 Avoid adding logs for data and events that are occurring on every frame - ideally logging should

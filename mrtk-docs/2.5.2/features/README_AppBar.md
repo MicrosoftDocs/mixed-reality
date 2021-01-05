@@ -10,6 +10,6 @@ Drag and drop `AppBar` (Assets/MRTK/SDK/Features/UX/Prefabs/AppBar/AppBar.prefab
 
 **Important:** The bounds control activation option for the target object should be 'Activate Manually'.
 
-<img src="Images/AppBar/MRTK_AppBar_Setup1.png" width="450">
+<img src="Images/AppBar/MRTK_AppBar_Setup1.png" width="450" alt="Setup 1">
 
-<img src="Images/AppBar/MRTK_AppBar_Setup2.png" width="450">
+<img src="Images/AppBar/MRTK_AppBar_Setup2.png" width="450" alt="Setup 2">

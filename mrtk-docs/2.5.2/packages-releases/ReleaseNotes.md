@@ -44,7 +44,7 @@ In some situations (e.g. when using the LeapMotion provider in the Unity Editor)
 Depending on the length of the project path, importing examples via Unity Package Manager may generate FileNotFoundException messages in the Unity Console. The
 cause of this is the path to the "missing" file being longer than MAX_PATH (256 characters). To resolve, please shorten the length of the project path.
 
-### No spatializer was specified. The application will not support Spatial Sound.
+### No spatializer was specified. The application will not support Spatial Sound
 
 A "No spatializer was specified" warning will appear if an audio spatializer is not configured. This can occur if no XR package is installed, as Unity includes spatializers in these pacakges.
 
@@ -65,7 +65,7 @@ This error is due to the Scene Transition Service's configuration profile being 
 - If not expanded, expand `Scene Transition Service`
 - Set the value of `Configuration Profile` to **MRTKExamplesHubSceneTransitionServiceProfile**
 
-<img src="../features/Images/ReleaseNotes/FixSceneTransitionProfile.png" width="500px">
+<img src="../features/Images/ReleaseNotes/FixSceneTransitionProfile.png" width="500px" alt="Fix Scene Transition">
 
 ### Oculus Quest
 
