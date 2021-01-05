@@ -41,14 +41,14 @@ This means that if you had already built your Unity project and set up the appxm
 
 Set up the _MixedRealityToolkit_ by simply clicking _'Mixed Reality Toolkit -> Configure…'_ in the menu bar.
 
-![MRTK](../Images/EyeTracking/mrtk_setup_configure.jpg)
+![MRTK to Scene](../Images/EyeTracking/mrtk_setup_configure.jpg)
 
 ### Setting up the MRTK profiles required for eye tracking
 
 After setting up your MRTK scene, you will be asked to choose a profile for MRTK.
 You can simply select _DefaultMixedRealityToolkitConfigurationProfile_ and then select the _'Copy & Customize'_ option.
 
-![MRTK](../Images/EyeTracking/mrtk_setup_configprofile.jpg)
+![MRTK Configure](../Images/EyeTracking/mrtk_setup_configprofile.jpg)
 
 ### Create an "eye gaze data provider"
 
@@ -59,7 +59,7 @@ You can simply select _DefaultMixedRealityToolkitConfigurationProfile_ and then 
   - Under **Type** select _'Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input'_ -> _'WindowsMixedRealityEyeGazeDataProvider'_
   - For **Platform(s)** select _'Windows Universal'_.
 
-![MRTK](../Images/EyeTracking/mrtk_setup_eyes_dataprovider.jpg)
+![MRTK Eye Tracking Setup 1](../Images/EyeTracking/mrtk_setup_eyes_dataprovider.jpg)
 
 ### Simulating eye tracking in the Unity Editor
 
@@ -74,7 +74,7 @@ For this, it is better to ensure frequent tests of your eye-based interactions o
     - Clone the _'DefaultMixedRealityInputSimpulationProfile'_ to make changes to it.
     - Check the _'Simulate Eye Position'_ checkbox.
 
-    ![MRTK](../Images/EyeTracking/mrtk_setup_eyes_simulate.jpg)
+    ![MRTK Eye Tracking Setup 2](../Images/EyeTracking/mrtk_setup_eyes_simulate.jpg)
 
 2. **Disable default head gaze cursor**:
 In general, it is recommended to avoid showing an eye gaze cursor or if absolutely required to make it _very_ subtle.

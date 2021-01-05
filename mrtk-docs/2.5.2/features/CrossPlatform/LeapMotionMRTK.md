@@ -37,11 +37,11 @@ This provider can be used in editor and on device while on the Standalone platfo
 
     - Select the **Input** Configuration Profile
 
-    ![InputConfigurationProfile](../Images/CrossPlatform/InputConfigurationProfile.png)
+    ![InputConfigurationProfileView](../Images/CrossPlatform/InputConfigurationProfile.png)
 
     - Select **Clone** in the input system profile to enable modification.
 
-    ![LeapMotionInputProfileClone](../Images/CrossPlatform/CloneInputSystemProfile.png)
+    ![LeapMotionInputProfileCloneView](../Images/CrossPlatform/CloneInputSystemProfile.png)
 
     - Open the **Input Data Providers** section, select **Add Data Provider** at the top, a new data provider will be added at the end of the list.  Open the new data provider and set the **Type** to **Microsoft.MixedReality.Toolkit.LeapMotion.Input > LeapMotionDeviceManager**
 
@@ -185,5 +185,5 @@ The example scene is contained in the **Microsoft.MixedReality.Toolkit.Examples*
 
 ## See also
 
-* [Input Providers](../Input/InputProviders.md)
-* [Hand Tracking](../Input/HandTracking.md)
+- [Input Providers](../Input/InputProviders.md)
+- [Hand Tracking](../Input/HandTracking.md)

@@ -1,6 +1,6 @@
 # Eye-supported target selection
 
-![MRTK](../Images/EyeTracking/mrtk_et_targetselect.png)
+![MRTK Target Selection](../Images/EyeTracking/mrtk_et_targetselect.png)
 
 This page discusses different options for accessing eye gaze data and eye gaze specific events to select targets in MRTK. Eye tracking allows for fast and effortless target selections using a combination of information about what a user is looking at with additional inputs such as _hand tracking_ and _voice commands_:
 
@@ -208,7 +208,7 @@ For the example of the _'smart attentive notifications'_, the following happens:
 The key to an enjoyable experience here is to carefully tune the speed of any of these behaviors to avoid causing discomfort by reacting to the user’s eye gaze too quickly all the time.
 Otherwise this can quickly feel extremely overwhelming.
 
-<img src="../Images/EyeTracking/mrtk_et_EyeTrackingTarget_Notification.jpg" width="750" alt="MRTK">
+<img src="../Images/EyeTracking/mrtk_et_EyeTrackingTarget_Notification.jpg" width="750" alt="MRTK Notification">
 
 ### Example #2: Holographic gem rotates slowly when looking at it
 
