@@ -59,7 +59,7 @@ The MRTK team supports the open future of mixed reality through [OpenXR](https:/
 
 [Developer documentation](https://microsoft.github.io/MixedRealityToolkit-Unity) and example scenes are an ongoing priority for the MRTK team.
 
-With continued investments in [MRTK tutorials](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/tutorials), the MRTK team seeks to accelerate the getting started experience for developers and improve instructions on how to leverage Azure Services and other extensions with the MRTK.
+With continued investments in [MRTK tutorials](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials), the MRTK team seeks to accelerate the getting started experience for developers and improve instructions on how to leverage Azure Services and other extensions with the MRTK.
 
 **Packaging**
 
