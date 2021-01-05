@@ -74,7 +74,7 @@ For details on the packages and their contents, please see [MRTK Packages](packa
 > Android and iOS development require additional package installations. For more information, see [How to configure MRTK for iOS and Android](features/CrossPlatform/UsingARFoundation.md).
 After importing the Foundation package, you may see a prompt similar to the following:
 
-![MRTK Project Configurator](features/Images/MRTK_UnitySetupPrompt.png)
+<img src="features/Images/MRTK_UnitySetupPrompt.png" width="600" alt="MRTK Window">
 
 MRTK is attempting to set up your project for building Mixed Reality solutions by doing the following:
 
@@ -95,7 +95,7 @@ To create a **HoloLens application**, switch to the Universal Windows Platform:
 1. Select **Universal Windows Platform** in the **Platform** list
 1. Click the **Switch Platform** button
 
-    ![Build Settings](features/Images/getting_started/SwitchPlatform.png)
+    <img src="features/Images/getting_started/SwitchPlatform.png" width="600" alt="Platform Switching">
 
 >[!NOTE]
 > The Mixed Reality Toolkit will prompt to apply recommended changes to the project when the platform is selected. Whenever the platform is switched, the appropriate settings will be checked and prompted, if necessary.
@@ -108,7 +108,7 @@ To create a **HoloLens application**, switch to the Universal Windows Platform:
 
 1. From the menu bar, select Mixed Reality Toolkit -> Add to Scene and Configure
 
-    ![Add to Scene and configure](features/Images/MRTK_ConfigureScene.png)
+    <img src="features/Images/MRTK_ConfigureScene.png" width="300" alt="Configure MRTK">
 
     The inspector will now show the currently active MRTK configuration profile and the profile selection dropdown, where the default profile is already preselected.
     Profiles configure the behavior of MRTK core components and are described in more detail in the [profiles](features/Profiles/Profiles.md) article.
@@ -120,7 +120,8 @@ To create a **HoloLens application**, switch to the Universal Windows Platform:
     > * See the [profiles](Profiles/Profiles.md#hololens-2-profile) for more information on the differences between DefaultMixedRealityToolkitConfigurationProfile and DefaultHoloLens2ConfigurationProfile.
 
     You will then see the following in your Scene hierarchy:
-    ![add to scene](features/Images/MRTK_SceneSetup.png)
+
+     <img src="features/Images/MRTK_SceneSetup.png" width="300" alt="Scene Setup View">
 
     Which contains the following:
 
@@ -155,7 +156,7 @@ To try the scene, do the following steps.
 
 1. You may get a prompt asking you to import "TMP Essentials".
 
-    ![Import Text Mesh Pro](features/Images/getting_started/MRTK_GettingStarted_TMPro.png)
+    <img src="features/Images/getting_started/MRTK_GettingStarted_TMPro.png" width="600" alt="TMP Getting Started">
 
     If you get such a prompt, select the "Import TMP essentials" button. "TMP Essentials" refers to Text Mesh Pro plugin, which some of the MRTK examples use for improved text rendering. (See [Text in Unity](https://docs.microsoft.com/windows/mixed-reality/text-in-unity) for more detailed information)
 
