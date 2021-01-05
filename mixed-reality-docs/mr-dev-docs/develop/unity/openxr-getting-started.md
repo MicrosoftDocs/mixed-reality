@@ -122,6 +122,10 @@ To utilize one or more of the examples, install [ARFoundation 4.0+](https://docs
 
 Now that you have your project configured for OpenXR and have access to samples, check out what [features](openxr-supported-features.md) are currently supported in our OpenXR plugin.
 
+## Have Feedback?
+
+OpenXR is still experimental, so we’d appreciate any feedback you can give us to help make it better. You'll find us on the [Unity Forums](https://aka.ms/unityforums) by tagging your forum post with **Microsoft** + **OpenXR** and either **HoloLens 2** or **Windows Mixed Reality**.
+
 ## See also
 
 * [Configuring your project without MRTK](configure-unity-project.md)
