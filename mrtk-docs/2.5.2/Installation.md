@@ -31,7 +31,7 @@ To get started with the Mixed Reality Toolkit, you will need:
 ## Add MRTK to your Unity project
 
 > [!Note]
-> Users of Unity 2019.4 and newer, can use the Unity Package Manager to import MRTK. Please see [Using the Unity Package Manager](usingupm.md) for more information.
+> Users of Unity 2019.4 and newer, can use the Unity Package Manager to import MRTK. Please see [Using the Unity Package Manager](configuration/usingupm.md) for more information.
 
 ### Required
 
@@ -71,10 +71,10 @@ For details on the packages and their contents, please see [MRTK Packages](packa
 > If you are using Unity 2018.4.12f1 or earlier, note you will experience compilation errors shown in the console. Go to `Assets\MRTK\Providers\XRSDK\Microsoft.MixedReality.Toolkit.Providers.XRSDK.asmdef` in the project window and remove the missing reference in the inspector. Repeat those steps with `Assets\MRTK\Providers\Oculus\XRSDK\Microsoft.MixedReality.Toolkit.Providers.XRSDK.Oculus.asmdef` and `Assets\MRTK\Providers\WindowsMixedReality\XRSDK\Microsoft.MixedReality.Toolkit.Providers.XRSDK.WMR.asmdef`. Note you must revert the changes by replacing those three asmdef files with original (i.e. unmodified) ones when upgrading to Unity 2019.  
 
 > [!Note]
-> Android and iOS development require additional package installations. For more information, see [How to configure MRTK for iOS and Android](CrossPlatform/UsingARFoundation.md).
+> Android and iOS development require additional package installations. For more information, see [How to configure MRTK for iOS and Android](features/CrossPlatform/UsingARFoundation.md).
 After importing the Foundation package, you may see a prompt similar to the following:
 
-<img src="features/Images/MRTK_UnitySetupPrompt.png" width="600">
+<img src="features/Images/MRTK_UnitySetupPrompt.png" width="600">]
 
 MRTK is attempting to set up your project for building Mixed Reality solutions by doing the following:
 
@@ -145,7 +145,7 @@ You are now ready to build and deploy to device! Follow the steps instructions a
 
 The Hand Interaction Examples scene is a great place to experience core spatial interactions and UX controls.
 
-[![HandInteractionExample scene](features/Images/MRTK_Examples.png)](README_HandInteractionExamples.md)
+[![HandInteractionExample scene](features/Images/MRTK_Examples.png)](features/README_HandInteractionExamples.md)
 
 To try the scene, do the following steps.
 
@@ -212,7 +212,7 @@ Here are some suggested next steps:
 
 * Check out [MRTK 101: How to use Mixed Reality Toolkit Unity for Basic Interactions](https://docs.microsoft.com/windows/mixed-reality/mrtk-101) to learn about how to achieve common spatial interactions such as grab, move, scale, and rotate.
 * Learn about the UX controls available in MRTK in [UI and interaction building blocks](reference-docs/README.md#ux-building-blocks).
-* Try [MRTK Examples Hub](README_ExampleHub.md) and [Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) app which can be downloaded from Microsoft Store app in your HoloLens 2.
+* Try [MRTK Examples Hub](features/README_ExampleHub.md) and [Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) app which can be downloaded from Microsoft Store app in your HoloLens 2.
 
 * Learn how to work with the MRTK Configuration profile in the [mixed reality configuration guide](out-of-scope/MixedRealityConfigurationGuide.md).
 * Learn about the [MRTK's Architecture](architecture/Overview.md)
