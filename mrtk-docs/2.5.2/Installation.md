@@ -194,16 +194,16 @@ Congratulations, you just used your first MRTK scene. Now onto creating your own
 
 ## Getting started tutorials
 
-If you are new to MRTK, or MR development, we recommend you check out the [Getting started tutorials](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-01) which uses MRTK v2.
+If you are new to MRTK, or MR development, we recommend you check out the [Getting started tutorials](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-01) which uses MRTK v2.
 
 ## Learn about the core building blocks of MRTK
 
-- Check out [MRTK 101: How to use Mixed Reality Toolkit Unity for Basic Interactions (HoloLens 2, HoloLens, Windows Mixed Reality, Open VR)](https://docs.microsoft.com/windows/mixed-reality/mrtk-101) to learn about core building blocks.
+* Check out [MRTK 101: How to use Mixed Reality Toolkit Unity for Basic Interactions (HoloLens 2, HoloLens, Windows Mixed Reality, Open VR)](https://docs.microsoft.com/windows/mixed-reality/mrtk-101) to learn about core building blocks.
 
-- Check out MR Dev Day 2020's session video
+* Check out MR Dev Day 2020's session video
 [Introduction to MRTK](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Intro-to-MRTK-Unity)
 
-- Check out MR Dev Day 2020's session video
+* Check out MR Dev Day 2020's session video
 [MRTK's UX Building Blocks](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/MRTKs-UX-Building-Blocks)
 
 ## Next steps
@@ -212,7 +212,7 @@ Here are some suggested next steps:
 
 * Check out [MRTK 101: How to use Mixed Reality Toolkit Unity for Basic Interactions](https://docs.microsoft.com/windows/mixed-reality/mrtk-101) to learn about how to achieve common spatial interactions such as grab, move, scale, and rotate.
 * Learn about the UX controls available in MRTK in [UI and interaction building blocks](reference-docs/README.md#ux-building-blocks).
-* Try [MRTK Examples Hub](README_ExampleHub.md) and [Designing Holograms](https://www.microsoft.com/en-us/p/designing-holograms/9nxwnjklrzwd) app which can be downloaded from Microsoft Store app in your HoloLens 2.
+* Try [MRTK Examples Hub](README_ExampleHub.md) and [Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) app which can be downloaded from Microsoft Store app in your HoloLens 2.
 
 * Learn how to work with the MRTK Configuration profile in the [mixed reality configuration guide](out-of-scope/MixedRealityConfigurationGuide.md).
 * Learn about the [MRTK's Architecture](architecture/Overview.md)
