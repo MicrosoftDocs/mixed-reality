@@ -112,6 +112,16 @@ In addition to this documentation available on docs.microsoft.com, Unity install
 > [!div class="nextstepaction"]
 > [Explore MRTK](mrtk-getting-started.md)
 
+## Have feedback?
+
+You can find us on the [Unity Forums](https://forum.unity.com/forums/ar-vr-xr-discussion.80/) by tagging **Microsoft** and a combination of the following tags to help us understand what plugin you're providing feedback for:
+
+* HoloLens 2 
+* WMR
+* OpenXR
+* XRSDK
+* Legacy XR 
+
 ## See also
 * [Mixed Reality Toolkit v2](mrtk-getting-started.md)
 * [MR Basics 100: Getting started with Unity](tutorials/holograms-100.md)
