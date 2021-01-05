@@ -114,10 +114,10 @@ In addition to this documentation available on docs.microsoft.com, Unity install
 
 ## Have feedback?
 
-You can find us on the [Unity Forums](https://forum.unity.com/forums/ar-vr-xr-discussion.80/) by tagging **Microsoft** and a combination of the following tags to help us understand what plugin you're providing feedback for:
+You can find us on the [Unity Forums](https://aka.ms/unityforums) by tagging **Microsoft** and a combination of the following tags to help us understand what plugin you're providing feedback for:
 
 * HoloLens 2 
-* WMR
+* Windows Mixed Reality
 * OpenXR
 * XRSDK
 * Legacy XR 

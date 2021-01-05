@@ -124,7 +124,7 @@ Now that you have your project configured for OpenXR and have access to samples,
 
 ## Have Feedback?
 
-OpenXR is still experimental, so we’d appreciate any feedback you can give us to help make it better. You'll find us on the [Unity Forums](https://forum.unity.com/forums/ar-vr-xr-discussion.80/) by tagging your forum post with **Microsoft** + **OpenXR** and either **HoloLens 2** or **WMR**.
+OpenXR is still experimental, so we’d appreciate any feedback you can give us to help make it better. You'll find us on the [Unity Forums](https://aka.ms/unityforums) by tagging your forum post with **Microsoft** + **OpenXR** and either **HoloLens 2** or **Windows Mixed Reality**.
 
 ## See also
 
