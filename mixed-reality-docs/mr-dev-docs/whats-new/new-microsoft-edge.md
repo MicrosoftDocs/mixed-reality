@@ -8,7 +8,7 @@ ms.topic: article
 keywords: edge, new, immersive web, microsoft edge, browser, vr, 360, 360 video, 360 viewer, webxr, webvr
 ---
 
-# Windows Mixed Reality and the new Microsoft Edge
+# The new Microsoft Edge for Windows Mixed Reality
 
 The [new Microsoft Edge is now available for download](https://blogs.windows.com/windowsexperience/?p=173496), but customers can also [wait for a future update to install it with Windows 10](https://blogs.windows.com/msedgedev/2020/01/15/upgrading-new-microsoft-edge-79-chromium/), following a measured roll-out approach over the next several months. 
 
