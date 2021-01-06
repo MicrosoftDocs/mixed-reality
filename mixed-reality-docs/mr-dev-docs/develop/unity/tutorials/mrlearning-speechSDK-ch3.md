@@ -1,5 +1,5 @@
 ---
-title: Azure Speech Services tutorials - 3. Adding the Azure Cognitive Services speech translation component
+title: Adding the Azure Cognitive Services speech translation component
 description: In this course, you will learn how to implement Azure Speech SDK within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull

@@ -1,5 +1,5 @@
 ---
-title: Azure Speech Services tutorials - 4. Setting up intent and natural language understanding
+title: Setting up intent and natural language understanding
 description: Complete this course to learn how to implement Azure Speech SDK within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull

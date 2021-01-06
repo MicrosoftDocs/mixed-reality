@@ -1,5 +1,5 @@
 ---
-title: Azure Spatial Anchors tutorials - 1. Introduction to the Azure Spatial Anchors tutorials
+title: Introduction to the Azure Spatial Anchors tutorials
 description: Complete this course to learn how to implement Azure Spatial Anchors in a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
@@ -10,8 +10,6 @@ ms.localizationpriority: high
 ---
 
 # 1. Introduction to the Azure Spatial Anchors tutorials
-
-## Overview
 
 Welcome to the Azure Spatial Anchors tutorials! Through this tutorial series, you will learn the fundamentals of <a href="https://azure.microsoft.com/services/spatial-anchors" target="_blank">Azure Spatial Anchors</a> (ASA) and how to anchor a complete mixed reality experience in the real world. You will also learn how to deploy your project to Android and iOS.
 

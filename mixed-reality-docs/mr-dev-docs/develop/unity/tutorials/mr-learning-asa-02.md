@@ -1,5 +1,5 @@
 ---
-title: Azure Spatial Anchors tutorials - 2. Getting started with Azure Spatial Anchors
+title: Getting started with Azure Spatial Anchors
 description: Complete this course to learn how to use Azure Spatial Anchors to anchor objects in a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
@@ -10,8 +10,6 @@ ms.localizationpriority: high
 ---
 
 # 2. Getting started with Azure Spatial Anchors
-
-## Overview
 
 In this tutorial, you will explore the various steps required to start and stop an Azure Spatial Anchors session and to create, upload, and download Azure Spatial Anchors on a single device.
 

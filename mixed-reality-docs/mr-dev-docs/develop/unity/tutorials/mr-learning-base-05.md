@@ -1,5 +1,5 @@
 ---
-title: MRTK tutorials - 5. Creating dynamic content using Solvers
+title: Creating dynamic content using Solvers
 description: This course shows you how to use the Mixed Reality Toolkit (MRTK) solvers to create dynamic content.
 author: jessemcculloch
 ms.author: jemccull
@@ -10,8 +10,6 @@ ms.localizationpriority: high
 ---
 
 # 5. Creating dynamic content using Solvers
-
-## Overview
 
 In this tutorial, you will explore ways to dynamically place holograms using the MRTK's available placement tools, known as Solvers, to solve complex spatial placement scenarios. In the MRTK, Solvers are a system of scripts and behaviors used to allow objects to follow you, the user, or other game objects in the scene. They can also be used to snap to certain positions, making your app more intuitive.
 

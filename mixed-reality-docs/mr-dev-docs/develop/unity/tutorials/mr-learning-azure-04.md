@@ -1,5 +1,5 @@
 ---
-title: Azure Cloud Tutorials - 4. Integrating Azure Spatial Anchors
+title: Integrating Azure Spatial Anchors
 description: Complete this course to learn how to implement Azure Spatial Anchors within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull

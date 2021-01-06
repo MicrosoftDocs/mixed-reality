@@ -1,5 +1,5 @@
 ---
-title: Multi-user capabilities tutorials - 3. Connecting multiple users
+title: Connecting multiple users
 description: Complete this course to learn how to connect multiple users in a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull

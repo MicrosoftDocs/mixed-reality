@@ -1,5 +1,5 @@
 ---
-title: Spatial audio tutorials - 4. Enabling and disabling spatial audio at run time
+title: Enabling and disabling spatial audio at run time
 description: Use a button to enable and disable spatialization of audio at run time.
 author: kegodin
 ms.author: v-hferrone
@@ -11,11 +11,13 @@ keywords: mixed reality, unity, tutorial, hololens2, spatial audio, MRTK, mixed 
 # Enabling and disabling spatialization at run time
 
 ## Objectives
+
 In this 4th chapter, you'll:
 * Add a new script to control spatialization on a game object
 * Drive the spatialization control script from button actions
 
 ## Add spatialization control script
+
 Right-click in the **Project** pane and create a new C# script by choosing **Create -> C# Script**. Name your script "SpatializeOnOff".
 
 ![Create script](images/spatial-audio/create-script.png)
@@ -85,6 +87,7 @@ public class SpatializeOnOff : MonoBehaviour
 > If you prefer to fully disable spatialization, modify the script to also adjust the **spatialization** boolean property of the **SourceObject** variable.
 
 ## Attach your script and drive it from the button
+
 On the **Inspector** pane of the **Quad**, click **Add Component** and add the **Spatialize On Off** script:
 
 ![Add script to quad](images/spatial-audio/add-script-to-quad.png)
@@ -110,6 +113,7 @@ After these changes, the **Interactable** component will look like this:
 ![Button action settings](images/spatial-audio/button-action-settings.png)
 
 ## Next steps
+
 Try out your app on a HoloLens 2 or in the Unity editor. In the app, you can now touch the button to activate and deactivate spatialization on the video. When testing in the Unity editor, press the space bar and scroll with the scroll wheel to activate hand simulation. 
 
 > [!div class="nextstepaction"]

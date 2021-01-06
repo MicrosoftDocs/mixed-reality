@@ -1,5 +1,5 @@
 ---
-title: Case study - Using the stabilization plane to reduce holographic turbulence
+title: Case study - Using the stabilization plane
 description: Using the stabilization plane to reduce holographic turbulence
 author: bstrukus
 ms.author: bestruku

@@ -1,5 +1,5 @@
 ---
-title: Azure Cloud Tutorials - 5. Integrating Azure Bot Service with LUIS
+title: Integrating Azure Bot Service with LUIS
 description: Complete this course to learn how to implement Azure Bot Service and natural language understanding within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull

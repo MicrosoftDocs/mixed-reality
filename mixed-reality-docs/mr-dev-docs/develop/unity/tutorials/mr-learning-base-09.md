@@ -1,5 +1,5 @@
 ---
-title: MRTK tutorials - 9. Using speech commands
+title: Using speech commands
 description: This course shows you how to use speech commands with the Mixed Reality Toolkit (MRTK).
 author: jessemcculloch
 ms.author: jemccull
@@ -10,8 +10,6 @@ ms.localizationpriority: high
 ---
 
 # 9. Using speech commands
-
-## Overview
 
 In this tutorial, you will learn how to create speech commands and how to control them globally. You will also learn how to control local speech commands that require the user to look at the object that controls the speech command.
 

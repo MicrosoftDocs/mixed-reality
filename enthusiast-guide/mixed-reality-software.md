@@ -1,5 +1,5 @@
 ---
-title: Mixed Reality software overview and release history
+title: Software overview and release history
 description: An overview of the major software components for Windows Mixed Reality, and their release history
 author: hferrone
 ms.author: v-hferrone

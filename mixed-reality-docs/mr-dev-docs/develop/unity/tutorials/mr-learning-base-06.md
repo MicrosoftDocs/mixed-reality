@@ -1,5 +1,5 @@
 ---
-title: MRTK tutorials - 6. Creating user interfaces
+title: Creating user interfaces
 description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to create user interfaces.
 author: jessemcculloch
 ms.author: jemccull
@@ -10,8 +10,6 @@ ms.localizationpriority: high
 ---
 
 # 6. Creating user interfaces
-
-## Overview
 
 In this tutorial, you will learn how to create a simple user interface using MRTK's button and menu prefabs alongside Unity's TextMeshPro component. You will also learn how to configure the buttons to trigger events and add dynamic tooltip UI elements to provide the user with additional information.
 

@@ -1,5 +1,5 @@
 ---
-title: Azure Cloud Tutorials - 1. Azure Cloud Services for HoloLens 2
+title: Azure Cloud Services for HoloLens 2
 description: Complete this course to learn how to implement various Azure Services within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
@@ -10,8 +10,6 @@ ms.localizationpriority: high
 ---
 
 # 1. Azure Cloud Services for HoloLens 2
-
-## Overview
 
 Welcome to this series of tutorials focused on bringing **Azure Cloud** services into a **HoloLens 2** application. In this five-part tutorial series, you will learn how to integrate several **Azure Cloud** services into a **Unity** project for **HoloLens 2**. With each consecutive chapter, you will add new **Azure Cloud** services to expand the application features and user experience, while teaching you the fundamentals of each **Azure Cloud** service.
 

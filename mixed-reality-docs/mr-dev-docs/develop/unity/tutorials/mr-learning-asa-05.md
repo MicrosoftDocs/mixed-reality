@@ -1,5 +1,5 @@
 ---
-title: Azure Spatial Anchors tutorials - 5. Azure Spatial Anchors for Android and iOS
+title: Azure Spatial Anchors for Android and iOS
 description: Complete this course to learn how to deploy a Unity project with Mixed Reality Toolkit (MRTK) and Azure Spatial Anchors to Android and iOS.
 author: jessemcculloch
 ms.author: jemccull

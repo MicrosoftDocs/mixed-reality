@@ -1,5 +1,5 @@
 ---
-title: Windows Mixed Reality minimum PC hardware compatibility guidelines
+title: Windows Mixed Reality PC compatibility guidelines
 description: Chart outlining the minimum PC system requirements for compatibility with Windows Mixed Reality.
 author: hferrone
 ms.author: v-hferrone

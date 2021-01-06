@@ -1,5 +1,5 @@
 ---
-title: Get help with PC compatibility in Windows Mixed Reality
+title: Get help with PC compatibility 
 description: Help resource for PC compatibility issues when working with Windows Mixed Reality.
 author: hferrone
 ms.author: v-hferrone

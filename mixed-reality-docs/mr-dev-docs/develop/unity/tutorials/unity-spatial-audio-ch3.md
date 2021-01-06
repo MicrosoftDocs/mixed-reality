@@ -1,5 +1,5 @@
 ---
-title: Spatial audio tutorials - 3. Spatializing audio from a video
+title: Spatializing audio from a video
 description: Import a video asset into your Unity project, and spatialize the audio from the video.
 author: kegodin
 ms.author: v-hferrone
@@ -9,6 +9,7 @@ keywords: mixed reality, unity, tutorial, hololens2, spatial audio, MRTK, mixed 
 ---
 
 # Spatializing audio from a video
+
 In this 3rd chapter of the spatial audio module of the HoloLens 2 Unity tutorials, you'll:
 * Import a video and add a Video Player
 * Play the video onto a quadrangle
@@ -35,6 +36,7 @@ Next, add a **Video Player** object to the **Hierarchy** by right-clicking on th
 ![Video player in Hierarchy](images/spatial-audio/video-player-in-hierarchy.png)
 
 ## Play video onto a quadrangle
+
 The **Video Player** object needs a textured game object on which to render the video. First, add a **Quad** to your **Hierarchy** by right-clicking on the **Hierarchy** pane and choosing **3D Object -> Quad**:
 
 ![Add Quad to Hierarchy](images/spatial-audio/add-quad-to-hierarchy.png)
@@ -69,6 +71,7 @@ The **Inspector** pane for the **Video Player** will now look like this:
 ![Video player properties](images/spatial-audio/video-player-properties.png)
 
 ## Spatialize the audio from the video
+
 In the **Inspector** pane for the **Quad**, create an **Audio Source** to which you'll route the audio from the video:
 * Click **Add Component** at the bottom of the pane
 * Add an **Audio Source**
@@ -91,6 +94,7 @@ After these changes, the **Inspector** pane for the **Video Player** will look l
 ![Video player set audio source](images/spatial-audio/video-player-set-audio-source.png)
 
 ## Next steps
+
 Try out your app on a HoloLens 2 or in the Unity editor. You'll see and hear the video, and the audio from the video will be spatialized.
 
 > [!div class="nextstepaction"]

@@ -1,5 +1,5 @@
 ---
-title: Multi-user capabilities tutorials - 2. Setting up Photon Unity Networking
+title: Setting up Photon Unity Networking
 description: Complete this course to learn how to implement Photon Unity Network in a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
@@ -10,8 +10,6 @@ ms.localizationpriority: high
 ---
 
 # 2. Setting up Photon Unity Networking
-
-## Overview
 
 In this tutorial, you will prepare for creating a shared experience using Photon Unity Networking (PUN). You will learn how to create a PUN app, import PUN assets into your Unity project, and connect your Unity project to the PUN app.
 

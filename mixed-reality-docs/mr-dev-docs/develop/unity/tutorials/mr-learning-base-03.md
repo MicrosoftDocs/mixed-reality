@@ -1,5 +1,5 @@
 ---
-title: MRTK tutorials - 3. Configuring the MRTK profiles
+title: Configuring the MRTK profiles
 description: This course shows you how to configure the Mixed Reality Toolkit (MRTK) profiles.
 author: jessemcculloch
 ms.author: jemccull
@@ -10,8 +10,6 @@ ms.localizationpriority: high
 ---
 
 # 3. Configuring the MRTK profiles
-
-## Overview
 
 In this tutorial, you will learn how to customize and configure the MRTK profiles.
 

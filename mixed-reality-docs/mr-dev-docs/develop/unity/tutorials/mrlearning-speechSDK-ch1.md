@@ -1,5 +1,5 @@
 ---
-title: Azure Speech Services tutorials - 1. Integrating and using speech recognition and transcription
+title: Integrating and using speech recognition and transcription
 description: Complete this course to learn how to implement Azure Speech SDK within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
@@ -10,9 +10,6 @@ ms.localizationpriority: high
 ---
 
 # 1. Integrating and using speech recognition and transcription
-
-## Overview
-
 
 In this tutorial series, you will create a Mixed Reality application that explores the use of Azure Speech Services with the HoloLens 2. When you complete this tutorial series, you will be able to use your device's microphone to transcribe speech to text in real time, translate your speech into other languages, and leverage the Intent recognition feature to understand voice commands using artificial intelligence.
 

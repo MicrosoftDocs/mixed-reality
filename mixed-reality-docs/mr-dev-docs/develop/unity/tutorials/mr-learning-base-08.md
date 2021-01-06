@@ -1,5 +1,5 @@
 ---
-title: MRTK tutorials - 8. Using eye-tracking
+title: Using eye-tracking
 description: This course shows you how to use eye-tracking with the Mixed Reality Toolkit (MRTK).
 author: jessemcculloch
 ms.author: jemccull
@@ -10,8 +10,6 @@ ms.localizationpriority: high
 ---
 
 # 8. Using eye-tracking
-
-## Overview
 
 In this tutorial, you will learn how to enable eye-tracking for HoloLens 2 and add eye-tracking to objects to trigger actions when the user looks at the objects.
 
