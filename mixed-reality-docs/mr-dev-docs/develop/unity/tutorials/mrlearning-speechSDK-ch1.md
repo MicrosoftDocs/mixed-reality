@@ -1,6 +1,6 @@
 ---
 title: Integrating and using speech recognition and transcription
-description: Complete this course to learn how to implement Azure Speech SDK within a mixed reality application.
+description: Complete this course to learn how to add and use Azure Speech recognition and transcription in mixed reality applications.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019

@@ -1,6 +1,6 @@
 ---
 title: Windows Mixed Reality and the new Microsoft Edge
-description: Get ready for the new Microsoft Edge in Windows Mixed Reality. Includes changes to expect, updates to look out for, and known issues.
+description: Learn about the new Microsoft Edge for Mixed Reality, including what to expect, updates to look out for, and known issues.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 08/04/2020

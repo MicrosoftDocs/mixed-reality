@@ -1,6 +1,6 @@
 ---
 title: Adding an offline mode for local speech-to-text translation
-description: Complete this course to learn to implement Azure Speech SDK within a mixed reality application.
+description: Complete this course to learn to add offline mode for local speech-to-text translation in mixed reality applications.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 06/27/2019
