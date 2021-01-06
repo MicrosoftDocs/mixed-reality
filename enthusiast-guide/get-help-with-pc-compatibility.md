@@ -22,13 +22,32 @@ Before going any further, try the most common fixes below:
 > * Check the [recommended adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) list
 > * Update your graphics driver by selecting **Start > Settings > Update & security > Check for updates** 
 
+If you want to get in contact, you can [ask the community](https://answers.microsoft.com), [contact support](https://support.microsoft.com/contactus/), or go over the [troubleshooting](troubleshooting-windows-mixed-reality.md) information.
+
 ## You're good to go
 
 Good news, if you see the **You're good to go** message, your PC can run Windows Mixed Reality! There's still variation among computer hardware and configuration, so the Mixed Reality experience might not be the same on every PC.
 
 ## Supports some features
 
-If you're seeing the **Supports some features** message, your PC can run some Windows Mixed Reality experiences, but might not provide the best possible experience. Possible downsides include lagging graphics, performance hits, and some applications and games that you can't run at all. We've listed messages you might see and what to do about them below.
+If you're seeing the **Supports some features** message, your PC can run some Windows Mixed Reality experiences, but might not provide the best possible experience. Possible downsides include lagging graphics, performance hits, and some applications and games that you can't run at all. We've listed messages you might see and what to do about them below:
+
+* [This PC has an integrated graphics card with single-channel RAM](#this-pc-has-an-integrated-graphics-card-with-single-channel-ram)
+* [This PC has a hybrid graphics configuration with an incompatible PCIe link](#this-pc-has-a-hybrid-graphics-configuration-with-an-incompatible-pcie-link)
+* [This PC's graphics driver might not work well with Windows Mixed Reality](#this-pcs-graphics-driver-might-not-work-well-with-windows-mixed-reality)
+* [This PC's processor might not work well with Windows Mixed Reality](#this-pcs-processor-might-not-work-well-with-windows-mixed-reality)
+* [This PC might not have a compatible USB configuration](#this-pc-might-not-have-a-compatible-usb-configuration)
+* [This PC doesn't have Bluetooth 4.0 for controllers](#this-pc-doesnt-have-bluetooth-40-for-controllers)
+* [Depending on your headset, you may need a Bluetooth adapter to use motion controllers](#depending-on-your-headset-you-may-need-a-bluetooth-adapter-to-use-motion-controllers)
+* [This PC doesn't have a self-powered USB port](#this-pc-doesnt-have-a-self-powered-usb-port)
+* [This PC's graphics card won't work with Windows Mixed Reality](#this-pcs-graphics-card-wont-work-with-windows-mixed-reality)
+* [This PC's graphics driver won't work with Windows Mixed Reality](#this-pcs-graphics-driver-wont-work-with-windows-mixed-reality)
+* [This PC's processor won't work with Windows Mixed Reality](#this-pcs-processor-wont-work-with-windows-mixed-reality)
+* [This PC doesn't have enough free disk space to run Windows Mixed Reality](#this-pc-doesnt-have-enough-free-disk-space-to-run-windows-mixed-reality)
+* [This PC is running an edition of Windows that doesn't support Windows Mixed Reality](#this-pc-is-running-an-edition-of-windows-that-doesnt-support-windows-mixed-reality)
+* [This PC isn't running the latest version of Windows 10](#this-pc-isnt-running-the-latest-version-of-windows-10)
+* [This PC has no USB 3.0 port](#this-pc-has-no-usb-30-port)
+* [You can't run this app via remote desktop](#you-cant-run-this-app-via-remote-desktop)
 
 ### This PC has an integrated graphics card with single-channel RAM
 
@@ -156,10 +175,11 @@ To use Windows Mixed Reality, you need a PC with a monitor connected. If you're 
 
 Some hardware configurations might cause performance problems with Windows Mixed Reality. For problems like slow loading, choppy visuals, or poor visual quality, try these common fixes:
 
-* Close any open apps running on your PC desktop.
+* Close any open apps running on your PC desktop
 * If you’re using a USB-C or DisplayPort to HDMI adapter, try a different one. See recommended adapters
-* If there are extra monitors connected to the PC’s graphics card, disconnect them.
-* Try downloading some different mixed reality apps from the Windows Store—some may work better with your computer setup.
+* If there are extra monitors connected to the PC’s graphics card, disconnect them
+* Try downloading some different mixed reality apps from the Windows Store—some may work better with your computer setup
+* Check out our [performance questions documentation](performance-questions.md)
 
 If you're still having performance issues, update the following [Windows Mixed Reality](set-up-windows-mixed-reality.md) settings for an optimal user experience:
 
@@ -173,7 +193,7 @@ If you're still having performance issues, update the following [Windows Mixed R
 
 ## Working with SteamVR
 
-Enjoying games from SteamVR is a great way to experience everything VR has to offer. However, you'll want to make sure that you're getting the best performance out of your immersive device. After you've installed [Steam](https://store.steampowered.com/about):
+Enjoying games from SteamVR is a great way to experience everything VR has to offer. However, you'll want to make sure that you're [getting the best performance](performance-questions.md) out of your immersive device. After you've installed [Steam](https://store.steampowered.com/about):
 
 * Follow the instructions for [using SteamVR with Windows Mixed Reality](using-steamvr-with-windows-mixed-reality.md)
 * Install the [SteamVR Performance Test](https://store.steampowered.com/app/323910/SteamVR_Performance_Test) apps
@@ -191,9 +211,3 @@ Or jump right into the getting started section:
 > [Setting up Windows Mixed Reality](set-up-windows-mixed-reality.md)
 
 You can always go back to the [VR journey](vr-journey.md) at any time.
-
-## See also
-
-* [Ask the community](https://answers.microsoft.com)
-* [Contact us for support](https://support.microsoft.com/contactus/)
-* [Troubleshooting](troubleshooting-windows-mixed-reality.md)
