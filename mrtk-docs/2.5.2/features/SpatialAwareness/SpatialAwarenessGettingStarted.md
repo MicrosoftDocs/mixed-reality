@@ -1,4 +1,4 @@
-# Spatial awareness
+# Spatial Awareness
 
 ![Spatial Awareness](../Images/SpatialAwareness/MRTK_SpatialAwareness_Main.png)
 

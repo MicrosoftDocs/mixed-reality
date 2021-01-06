@@ -45,7 +45,7 @@ This provider can be used in editor and on device while on the Standalone platfo
 
     - Open the **Input Data Providers** section, select **Add Data Provider** at the top, a new data provider will be added at the end of the list.  Open the new data provider and set the **Type** to **Microsoft.MixedReality.Toolkit.LeapMotion.Input > LeapMotionDeviceManager**
 
-    ![LeapAddDataProvider](../Images/CrossPlatform/LeapMotion/LeapAddDataProvider.png)
+    ![LeapAddDataProvider Image](../Images/CrossPlatform/LeapMotion/LeapAddDataProvider.png)
 
     - Select **Clone** to change the default Leap Motion settings.
 

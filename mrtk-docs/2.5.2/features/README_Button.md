@@ -28,7 +28,7 @@ Examples of the button prefabs under ``MRTK/SDK/Features/UX/Interactable/Prefabs
 | HoloLens 2's shell-style checkbox 32x96mm | HoloLens 2's shell-style switch 32x96mm | HoloLens 2's shell-style radio 32x96mm |
 |  ![Radial](Images/Button/MRTK_Button_Radial.png) **Radial** | ![Checkbox](Images/Button/MRTK_Button_Checkbox.png) **Checkbox** | ![ToggleSwitch](Images/Button/MRTK_Button_ToggleSwitch.png) **ToggleSwitch** |
 | Radial button | Checkbox  | Toggle switch |
-|  ![ButtonHoloLens1](Images/Button/MRTK_Button_HoloLens1.png) **ButtonHoloLens1** | ![PressableRoundButton](Images/Button/MRTK_Button_Round.png) **PressableRoundButton** | ![Button](Images/Button/MRTK_Button_Base.png) **Button** |
+|  ![ButtonHoloLens1](Images/Button/MRTK_Button_HoloLens1.png) **ButtonHoloLens1** | ![PressableRoundButton](Images/Button/MRTK_Button_Round.png) **PressableRoundButton** | ![Button_Base](Images/Button/MRTK_Button_Base.png) **Button** |
 | HoloLens 1st gen's shell style button | Round shape push button | Basic button |
 
 The `Button` (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/Button.prefab) is based on the [Interactable](README_Interactable.md) concept to provide easy UI controls for buttons or other types of interactive surfaces. The baseline button supports all available input methods, including articulated hand input for the near interactions as well as gaze + air-tap for the far interactions. You can also use voice command to trigger the button.
@@ -41,7 +41,7 @@ For HoloLens 2, it is recommended to use buttons with an opaque backplate. Trans
 * It is hard to understand when the event triggers
 * Holograms that are displayed through a transparent plane can be unstable with HoloLens 2's Depth LSR stabilization
 
-![Button](Images/Button/MRTK_Button_UsePlated.png)
+![Button_UsePlated](Images/Button/MRTK_Button_UsePlated.png)
 
 ## How to use pressable buttons
 
@@ -61,15 +61,15 @@ Simply drag `PressableButtonHoloLens2` (Assets/MRTK/SDK/Features/UX/Interactable
 
 The events exposed in the prefab itself as well as the [Interactable](README_Interactable.md) component can be used to trigger additional actions. The pressable buttons in the [HandInteractionExample scene](README_HandInteractionExamples.md) use Interactable's *OnClick* event to trigger a change in the color of a cube. This event gets triggered for different types of input methods such as gaze, air-tap, hand-ray, as well as physical button presses through the pressable button script.
 
-<img src="Images/Button/MRTK_Button_HowToUse_Interactable.png" width="450" alt="How to use Interactable">
+<img src="Images/Button/MRTK_Button_HowToUse_Interactable.png" width="450" alt="How to use Interactable Button Image">
 
 You can configure when the pressable button fires the *OnClick* event via the `PhysicalPressEventRouter` on the button. For example, you can set *OnClick* to fire when the button is first pressed, as opposed to being pressed and released, by setting *Interactable On Click* to *Event On Press*.
 
-<img src="Images/Button/MRTK_Button_HowTo_Events.png" width="450" alt="How to use Events">
+<img src="Images/Button/MRTK_Button_HowTo_Events.png" width="450" alt="How to use Events Button Image">
 
 To leverage specific articulated hand input state information, you can use pressable buttons events - *Touch Begin*, *Touch End*, *Button Pressed*, *Button Released*. These events will not fire in response to air-tap, hand-ray, or eye inputs, however. **To support both near and far interactions, it is recommended to use Interactable's *OnClick* event.**
 
-<img src="Images/Button/MRTK_Button_HowTo_PressableButton.png" width="450" alt="How to use pressable button">
+<img src="Images/Button/MRTK_Button_HowTo_PressableButton.png" width="450" alt="How to use pressable button Image">
 
 ## Interaction states
 
@@ -85,7 +85,7 @@ The subtle pulse effect is triggered by the pressable button, which looks for *P
 
 ## Inspector properties
 
-![Button](Images/Button/MRTK_Button_Structure.png)
+![Button_Structure](Images/Button/MRTK_Button_Structure.png)
 
 **Box Collider**
 `Box Collider` for the button's front plate.
@@ -109,13 +109,13 @@ Required to make any object touchable with articulated hand input.
 
 The *ButtonContent* object contains front plate, text label and icon. The *FrontPlate* responds to the proximity of the index fingertip using the *Button_Box* shader. It shows glowing borders, proximity light, and a pulse effect on touch. The text label is made with TextMesh Pro. *SeeItSayItLabel*'s visibility is controlled by [Interactable](README_Interactable.md)'s theme.
 
-![Button](Images/Button/MRTK_Button_Layout.png)
+![Button_Layout](Images/Button/MRTK_Button_Layout.png)
 
 ## How to change the icon and text
 
 MRTK buttons use a `ButtonConfigHelper` component to assist you in changing the button's icon, text and label. (Note that some fields may be absent if elements are not present on the selected button.)
 
-![Button](Images/Button/MRTK_Button_Config_Helper.png)
+![Button_Configure Helper](Images/Button/MRTK_Button_Config_Helper.png)
 
 ### Creating and Modifying Icon Sets
 
@@ -151,13 +151,13 @@ Next, open the TextMeshPro Font Asset Creator via **Window > TextMeshPro > Font 
 E700-E702,E706,E70D-E70E,E710-E714,E718,E71A,E71D-E71E,E720,E722,E728,E72A-E72E,E736,E738,E73F,E74A-E74B,E74D,E74F-E752,E760-E761,E765,E767-E769,E76B-E76C,E770,E772,E774,E777,E779-E77B,E782-E783,E785-E786,E799,E7A9-E7AB,E7AF-E7B1,E7B4,E7C8,E7E8-E7E9,E7FC,E80F,E821,E83F,E850-E859,E872-E874,E894-E895,E8A7,E8B2,E8B7,E8B9,E8D5,E8EC,E8FB,E909,E91B,E92C,E942,E95B,E992-E995,E9E9-E9EA,EA37,EA40,EA4A,EA55,EA96,EB51-EB52,EB65,EB9D-EBB5,EBCB-EBCC,EBCF-EBD3,EC03,EC19,EC3F,EC7A,EC8E-EC98,ECA2,ECD8-ECDA,ECE0,ECE7-ECEB,ED17,EE93,EFA9,F114-F120,F132,F181,F183-F186
 ```
 
-![Button](Images/Button/MRTK_Font_Asset_Creation_1.png)
+![Button_Creation 1](Images/Button/MRTK_Font_Asset_Creation_1.png)
 
 Once the font asset is generated, save it to your project and assign it to your Icon Set's *Char Icon Font* field. The *Available Icons* dropdown will now be populated. To make an icon available for use by a button, click it. It will be added to the *Selected Icons* dropdown and will now show up in the `ButtonConfigHelper.` You can optionally give the icon a tag. This enables setting the icon at runtime.
 
-![Button](Images/Button/MRTK_Font_Asset_Creation_3.png)
+![Button_Creation 3](Images/Button/MRTK_Font_Asset_Creation_3.png)
 
-![Button](Images/Button/MRTK_Font_Asset_Creation_2.png)
+![Button_Creation 2](Images/Button/MRTK_Font_Asset_Creation_2.png)
 
 ```c#
 public void SetButtonToAdjust()
@@ -169,7 +169,7 @@ public void SetButtonToAdjust()
 
 To use your Icon Set select a button, expand the Icons dropdown in the `ButtonConfigHelper` and assign it to the *Icon Set* field.
 
-![Button](Images/Button/MRTK_Button_Icon_Set_Assign.png)
+![Button_Icon Set Assign](Images/Button/MRTK_Button_Icon_Set_Assign.png)
 
 ## How to change the size of a button
 
@@ -182,28 +182,28 @@ HoloLens 2's shell-style button's size is 32x32mm. To customize the dimension, c
 Then, click **Fix Bounds** button in the NearInteractionTouchable script which is in the root of the button.
 
 Update the size of the FrontPlate
-![Button](Images/Button/MRTK_Button_SizeCustomization1.png)
+![Button_Size Customization 1](Images/Button/MRTK_Button_SizeCustomization1.png)
 
 Update the size of the Quad
-![Button](Images/Button/MRTK_Button_SizeCustomization2.png)
+![Button_Size Customization 2](Images/Button/MRTK_Button_SizeCustomization2.png)
 
 Update the size of the Box Collider
-![Button](Images/Button/MRTK_Button_SizeCustomization3.png)
+![Button_Size Customization 3](Images/Button/MRTK_Button_SizeCustomization3.png)
 
 Click 'Fix Bounds'
-![Button](Images/Button/MRTK_Button_SizeCustomization4.png)
+![Button_Size Customization 4](Images/Button/MRTK_Button_SizeCustomization4.png)
 
 ## Voice command ('see-it, say-it')
 
 **Speech Input Handler**
 The [Interactable](README_Interactable.md) script in Pressable Button already implements `IMixedRealitySpeechHandler`. A voice command keyword can be set here.
 
-<img src="Images/Button/MRTK_Button_Speech1.png" width="450" alt="Speech Button 1">
+<img src="Images/Button/MRTK_Button_Speech1.png" width="450" alt="Speech Button 1 Image">
 
 **Speech Input Profile**
 Additionally, you need to register the voice command keyword in the global *Speech Commands Profile*.
 
-<img src="Images/Button/MRTK_Button_Speech2.png" width="450" alt="Speech Button 2">
+<img src="Images/Button/MRTK_Button_Speech2.png" width="450" alt="Speech Button 2 Image">
 
 **See-it, Say-it label**
 The pressable button prefab has a placeholder TextMesh Pro label under the *SeeItSayItLabel* object. You can use this label to communicate the voice command keyword for the button to the user.

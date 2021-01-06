@@ -13,7 +13,7 @@ For more information, see [Bounding box and App bar](https://docs.microsoft.com/
 
 You can find examples of bounding box configurations in the `BoundingBoxExamples` scene.
 
-<img src="Images/BoundingBox/MRTK_BoundingBox_Examples.png" alt="Bounding Box">
+<img src="Images/BoundingBox/MRTK_BoundingBox_Examples.png" alt=" Example Screenshot">
 
 ## How to add and configure a bounding box using Unity Inspector
 
@@ -25,7 +25,7 @@ You can find examples of bounding box configurations in the `BoundingBoxExamples
 > [!NOTE]
 > Use *Target Object* and *Bounds Override* field in the inspector to assign specific object and collider in the object with multiple child components.
 
-![Bounding Box](Images/BoundingBox/MRTK_BoundingBox_Assign.png)
+![Assign Bounding Box](Images/BoundingBox/MRTK_BoundingBox_Assign.png)
 
 ## How to add and configure a bounding box in the code
 
@@ -149,7 +149,7 @@ Bounding box provides the following events. This example uses these events to pl
 
 By default, when you just assign the [`BoundingBox.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundingBox) script, it will show the handle of the HoloLens 1st gen style. To use HoloLens 2 style handles, you need to assign proper handle prefabs and materials.
 
-![Bounding Box](Images/BoundingBox/MRTK_BoundingBox_HandleStyles1.png)
+![Handle Styles1](Images/BoundingBox/MRTK_BoundingBox_HandleStyles1.png)
 
 Below are the prefabs, materials, and the scaling values for the HoloLens 2 style bounding box handles. You can find this example in the `BoundingBoxExamples` scene.
 
