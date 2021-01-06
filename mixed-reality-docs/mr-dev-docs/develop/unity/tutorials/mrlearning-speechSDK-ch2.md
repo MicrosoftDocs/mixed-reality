@@ -9,7 +9,7 @@ keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit,
 ms.localizationpriority: high
 ---
 
-# 2. Using speech recognition to execute commands
+# 2. Adding an offline mode for local speech-to-text translation
 
 In this tutorial, you will add the ability to execute commands using Azure speech recognition which will allow you to make something happen based on the word or phrase you define.
 
