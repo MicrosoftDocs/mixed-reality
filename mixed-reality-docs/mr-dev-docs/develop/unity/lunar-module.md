@@ -1,13 +1,12 @@
 ---
 title: Lunar Module
-description: Learn how to extend HoloLens' base gestures with two-handed tracking and Xbox controller input, create objects that are reactive to surface mapping and plane finding, and implement simple menu systems.
+description: Learn how to extend HoloLens' base gestures with two-handed tracking and Xbox controller input, create reactive objects, and implement menu systems.
 author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, Sample apps, Design, MRTK, Mixed Reality Toolkit, Unity, sample apps, example apps, open source, Microsoft Store, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 # Lunar Module
 

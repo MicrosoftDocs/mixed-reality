@@ -1,6 +1,6 @@
 ---
 title: Implement 3D app launchers (Win32 apps)
-description: Learn how to create 3D app launchers and logos for Win32 VR apps and games for the Windows Mixed Reality Start menu and home environment.
+description: Learn how to create 3D app launchers and logos for Win32 VR apps and games for the Start menu and home environment.
 author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018

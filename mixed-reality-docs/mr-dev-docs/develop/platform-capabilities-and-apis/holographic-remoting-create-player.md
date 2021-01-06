@@ -1,6 +1,6 @@
 ---
 title: Writing a custom Holographic Remoting player
-description: By creating a custom Holographic Remoting player app, you can create a custom application capable of displaying content rendered on a remote machine to your HoloLens 2. 
+description: Create a custom Hologaphic Remoting app to display content rendered on a remote machine to your HoloLens 2. 
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020

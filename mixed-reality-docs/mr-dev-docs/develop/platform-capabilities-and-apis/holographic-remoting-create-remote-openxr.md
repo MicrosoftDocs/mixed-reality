@@ -1,13 +1,12 @@
 ---
 title: Writing a Holographic Remoting remote app (OpenXR)
-description: By creating a Holographic Remoting remote app, remote content, that is rendered on a remote machine, can be streamed to HoloLens 2. 
+description: Learn how to stream remote content rendered on a remote machine to HoloLens 2 with Holographic Remoting apps with OpenXR. 
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windows mixed reality headset, virtual reality headset, NuGet
 ---
-
 
 # Writing a Holographic Remoting remote app using the OpenXR API
 
