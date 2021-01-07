@@ -8,7 +8,6 @@ ms.topic: article
 keywords: Windows Mixed Reality, Unreal, Unreal Engine 4, UE4, HoloLens 2, voice, voice input, speech recognition, mixed reality, development, features, documentation, guides, holograms, game development, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
-
 # Voice Input in Unreal
 
 Voice input in Unreal allows you to interact with a hologram without having to use hand gestures and is only supported HoloLens 2. Voice input on HoloLens 2 is powered by the same engine that supports speech in all other Universal Windows Apps, but Unreal uses a more limited engine to process voice input. This limits voice input features in Unreal to predefined speech mappings, which are covered in the following sections. 

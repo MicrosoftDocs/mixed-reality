@@ -1,6 +1,6 @@
 ---
 title: Scene understanding
-description: Introduction to scene understanding capabilities for HoloLens
+description: Learn how to develop with scene understanding for HoloLens, including the SDK, capabilities, and common usage scenarios.
 author: szymons
 ms.author: szymons
 ms.date: 07/08/2019
