@@ -1,6 +1,6 @@
 ---
 title: Typography
-description: Text is an important element for delivering information in your app experience.
+description: Learn how to design and implement text as an important element for delivering information in your mixed reality app experience.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/03/2019

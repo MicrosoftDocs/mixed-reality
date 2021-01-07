@@ -1,6 +1,6 @@
 ---
 title: Windows Mixed Reality PC compatibility guidelines
-description: Chart outlining the minimum PC system requirements for compatibility with Windows Mixed Reality.
+description: Overview chart outlining the minimum PC system requirements for compatibility with Windows Mixed Reality.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/16/2020
@@ -64,6 +64,7 @@ You'll then get an analysis of your PC against the required hardware, drivers, a
  [Get help with Mixed Reality Portal results](https://support.microsoft.com/en-us/help/4045777/windows-10-get-help-with-pc-compatibility-in-windows-mixed-reality)
 
 ## Compatibility guidelines
+
 > [!IMPORTANT]
 > We will be updating, making additions to and may be revising these Windows Mixed Reality PC Compatibility Guidelines. Please check back regularly for the latest guidelines and requirements.
 
@@ -257,6 +258,7 @@ More information on Surface compatibility with Windows Mixed Reality is availabl
 </table>
 
 ## See also
+
 * [Ask the community](https://answers.microsoft.com)
 * [Contact us for support](https://support.microsoft.com/contactus/)
 * [Recommended adapters for Windows Mixed Reality capable PCs](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)

@@ -1,13 +1,12 @@
 ---
 title: Testing your app on HoloLens
-description: Guidance and suggestions for testing your HoloLens app
+description: Learn about general guidance and suggestions for testing and performance optimization your HoloLens mixed reality applications.
 author: jonmlyons
 ms.author: jlyons
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens, testing
 ---
-
 
 # Testing your app on HoloLens
 
@@ -18,6 +17,7 @@ Testing HoloLens applications is similar to testing Windows applications. You st
 Holographic apps need to run smoothly in a diverse set of environments. They also need to maintain performance and user comfort at all times. Performance is so important to the user's experience with a Holographic app that we have an entire topic devoted to it. Make sure you read and follow the [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
 
 ## Testing 3D in 3D
+
 1. **Test your app in as many different spaces as possible.** Try in large rooms, small rooms, bathrooms, kitchens, bedrooms, offices, and so on. Also take into consideration rooms with non-standard features such as non-vertical walls, curved walls, non-horizontal ceilings. Does it work well when transitioning between rooms, floors, going through hallways or stairs?
 2. **Test your app in different lighting conditions.** Does it respond properly to different environmental conditions like lighting, black surfaces, and transparent or reflective surfaces like mirrors and glass walls.
 3. **Test your app in different motion conditions.** Put on device and try your scenarios in various states of motion. Does it respond properly to different movement or steady state?
@@ -33,11 +33,11 @@ Holographic apps need to run smoothly in a diverse set of environments. They als
 ![Environment Test Matrix for HoloLens app development](images/environment-matrix-600px.png)
 
 ## Comfort
+
 1. **Clip planes.** Be attentive to where [holograms are rendered](hologram-stability.md#hologram-render-distances).
 2. **Avoid virtual movement inconsistent with actual head movement.** Avoid moving the camera in a way that isn't representative of the user's actual motion. If your app requires moving the user through a scene, make the motion predictable, minimize acceleration, and let the user control the movement.
 3. **Follow the hologram quality guidelines.** Performant apps that implement the [hologram quality guidance](hologram-stability.md) are less likely to result in user discomfort.
 4. **Distribute holograms horizontally rather than vertically.** Forcing the user to spend extended periods of time looking up or down can lead to fatigue in the neck.
-
 
 ## Input
 
@@ -109,4 +109,5 @@ Some app developers might want to automate testing of their apps. Beyond simple 
 To give your app the best chance of being [published on the Windows Store](../../distribute/submitting-an-app-to-the-microsoft-store.md), validate and test it locally before you submit it for certification. If your app targets the Windows.Holographic device family, the [Windows App Certification Kit](https://msdn.microsoft.com/library/windows/apps/xaml/mt186449.aspx) will only run local static analysis tests on your PC. No tests will be run on your HoloLens.
 
 ## See also
+
 * [Submitting an app to the Windows Store](../../distribute/submitting-an-app-to-the-microsoft-store.md)

@@ -1,6 +1,6 @@
 ---
 title: Spatial anchors
-description: Best practices for using spatial anchors to render stable holograms.
+description: Learn about best practices for using spatial anchors to render stable holograms in mixed reality applications.
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
