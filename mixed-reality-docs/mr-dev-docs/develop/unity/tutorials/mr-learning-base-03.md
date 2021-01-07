@@ -1,6 +1,6 @@
 ---
 title: Configuring the MRTK profiles
-description: This course shows you how to configure the Mixed Reality Toolkit (MRTK) profiles.
+description: This course shows you how to configure the Mixed Reality Toolkit (MRTK) profiles for your mixed reality apps.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020

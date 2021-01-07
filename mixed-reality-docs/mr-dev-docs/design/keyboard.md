@@ -1,6 +1,6 @@
 ---
 title: Keyboard
-description: Learn how to invoke the system keyboard in MRTK.
+description: Learn how to invoke and use the system keyboard using the Mixed Reality Toolkit.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019

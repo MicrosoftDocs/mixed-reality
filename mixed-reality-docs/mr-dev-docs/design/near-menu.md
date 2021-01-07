@@ -1,6 +1,6 @@
 ---
 title: Near menu
-description: A near menu is a collection of buttons on a panel that follow you with tag-along behavior.
+description: Learn how to use near menus, which are a collection of buttons on a panel that follow you with tag-along behavior in a mixed reality environment.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019

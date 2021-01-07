@@ -1,6 +1,6 @@
 ---
 title: Hand coach
-description: 3D hands that are triggered when the system doesn't detect the user's hands to help assist them.
+description: Learn how 3D hands are triggered using hand coach when the system doesn't detect the user's hands to help assist them.
 author: grayclee
 ms.author: glee
 ms.date: 09/25/2019

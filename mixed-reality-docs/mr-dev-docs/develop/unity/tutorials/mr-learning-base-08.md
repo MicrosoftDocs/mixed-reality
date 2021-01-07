@@ -1,6 +1,6 @@
 ---
 title: Using eye-tracking
-description: This course shows you how to use eye-tracking with the Mixed Reality Toolkit (MRTK).
+description: This course shows you how to use eye-tracking in your mixed reality apps with the Mixed Reality Toolkit (MRTK).
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020

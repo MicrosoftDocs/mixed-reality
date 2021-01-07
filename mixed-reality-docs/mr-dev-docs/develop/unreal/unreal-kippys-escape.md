@@ -1,6 +1,6 @@
 ---
 title: The Making of Kippy's Escape
-description: Follow along with us as we explore the making of Kippy's Escape for HoloLens 2 in Unreal Engine.
+description: Follow along with us as we explore the making of the Kippy's Escape mixed reality application for HoloLens 2 in Unreal Engine.
 author: sw5813
 ms.author: suwu
 ms.date: 9/4/2020
