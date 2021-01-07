@@ -1,6 +1,6 @@
 ---
 title: Unity development for HoloLens
-description: Getting started building mixed reality apps in Unity and HoloLens.
+description: Get started building mixed reality apps in Unity and HoloLens with our curated checkpoint journey.
 author: hferrone
 ms.author: kurtie
 ms.date: 12/9/2020
