@@ -1,6 +1,6 @@
 ---
 title: Eye-gaze and dwell
-description: Overview of the eye-gaze and dwell input model.
+description: Get started with an overview of the eye-gaze and dwell input model, including interaction models, design guidelines, and unique challenges.
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
@@ -42,6 +42,7 @@ We recommend an onset time of 150-250 ms in a given proximity (meaning the user 
 ![Dwell states](images/eyes_dwellstate_recommendation.png)<br>
 
 ## See also
+
 * [Eye tracking](eye-tracking.md)
 * [Eye-gaze and commit](gaze-and-commit-eyes.md)
 * [Gaze and commit](gaze-and-commit.md)

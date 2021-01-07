@@ -1,6 +1,6 @@
 ---
 title: Tutorial overview and objectives
-description: This course shows you how to implement Azure Face Recognition within a mixed reality application.
+description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019

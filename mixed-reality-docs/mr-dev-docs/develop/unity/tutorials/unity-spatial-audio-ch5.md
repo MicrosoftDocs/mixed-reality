@@ -1,6 +1,6 @@
 ---
 title: Using reverb to add distance to spatial audio
-description: Add a reverb effect to enhance the sense of distance variation to spatial audio.
+description: Learn how to add a reverb effect to enhance the sense of distance variation to spatial audio in a mixed reality application.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019

@@ -1,6 +1,6 @@
 ---
 title: Head-gaze and dwell
-description: Overview of the head-gaze and dwell input model
+description: Get started with an overview of the head-gaze and dwell input model, including common scenarios and design principles.
 author:  hferrone
 ms.author: v-hferrone
 ms.date: 05/13/2019

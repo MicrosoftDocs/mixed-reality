@@ -1,6 +1,6 @@
 ---
 title: Spatializing button interaction sounds
-description: Add a button to your project, and spatialize the button interaction sounds.
+description: Learn how to add a button and spatialize the button interaction sounds in a mixed reality application.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
