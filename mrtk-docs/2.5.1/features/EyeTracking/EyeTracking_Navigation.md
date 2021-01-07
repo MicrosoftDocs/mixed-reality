@@ -1,6 +1,6 @@
 # Eye-supported navigation in MRTK
 
-![MRTK](../Images/EyeTracking/mrtk_et_navigation.png)
+![MRTK Navigation](../Images/EyeTracking/mrtk_et_navigation.png)
 
 Imagine you are reading information on a slate and when you reach the end of the displayed text, the text automatically scrolls up to reveal more content. Or you can fluently zoom in where you are looking at. The map also automatically adjusts the content to keep the things of interest within your field of view. Another interesting application is the hands-free observation of 3D holograms by automatically bringing the parts of the hologram that you are looking at to the front. These are some of the examples that are described on this page in context of eye-supported navigation.
 

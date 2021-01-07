@@ -14,7 +14,7 @@ To make the object respond to near articulated hand input, add the `NearInteract
 
 ## Inspector properties
 
-<img src="Images/ManipulationHandler/MRTK_ManipulationHandler_Structure.png" width="450">
+<img src="Images/ManipulationHandler/MRTK_ManipulationHandler_Structure.png" width="450" alt="Manupulation Handler Structure">
 
 **Host Transform**
 Transform that will be dragged. Defaults to the object of the component.

@@ -57,19 +57,19 @@ to "Controllers and Hands".
     - Otherwise follow the following:
         - Select the MixedRealityToolkit game object in the hierarchy and select **Copy and Customize** to clone the default mixed reality profile.
 
-        ![CloneProfile](../Images/CrossPlatform/CloneProfile.png)
+        ![Clone Profile View](../Images/CrossPlatform/CloneProfile.png)
 
         - Select the **Input** Configuration Profile
 
-        ![InputConfigurationProfile](../Images/CrossPlatform/InputConfigurationProfile.png)
+        ![Input Configuration Profile View](../Images/CrossPlatform/InputConfigurationProfile.png)
 
         - Select **Clone** in the input system profile to enable modification.
 
-        ![CloneInputSystemProfile](../Images/CrossPlatform/CloneInputSystemProfile.png)
+        ![Clone Input System Profile View](../Images/CrossPlatform/CloneInputSystemProfile.png)
 
         - Open the **Input Data Providers** section, select **Add Data Provider** at the top, and new data provider will be added at the end of the list.  Open the new data provider and set the **Type** to **Microsoft.MixedReality.Toolkit.XRSDK.Oculus > OculusXRSDKDeviceManager**
 
-        ![OculusAddXRSDKDataProvider](../Images/CrossPlatform/OculusQuest/OculusAddDataXRSDKProvider.png)
+        ![Oculus AddXRSDK DataProvider View](../Images/CrossPlatform/OculusQuest/OculusAddDataXRSDKProvider.png)
 
     - You can verify that the Oculus Controllers are detected by
 

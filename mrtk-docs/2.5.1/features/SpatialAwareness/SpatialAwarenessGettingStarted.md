@@ -1,4 +1,4 @@
-# Spatial awareness
+# Spatials awareness
 
 ![Spatial Awareness](../Images/SpatialAwareness/MRTK_SpatialAwareness_Main.png)
 
@@ -37,7 +37,7 @@ The Mixed Reality Toolkit ships with a few default pre-configured profiles. Some
 
 1. Select the desired Spatial Awareness system implementation type. The [`MixedRealitySpatialAwarenessSystem`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.MixedRealitySpatialAwarenessSystem) is the default provided.
 
-    ![Select the Spatial Awareness System Implementation](../../Documentation/Images/SpatialAwareness/SpatialAwarenessSelectSystemType.png)
+    ![Select the Spatial Awareness System Implementation](../Images/SpatialAwareness/SpatialAwarenessSelectSystemType.png)
 
 ### Register observers
 

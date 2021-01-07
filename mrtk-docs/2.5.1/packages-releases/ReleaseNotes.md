@@ -65,7 +65,7 @@ This error is due to the Scene Transition Service's configuration profile being 
 - If not expanded, expand `Scene Transition Service`
 - Set the value of `Configuration Profile` to **MRTKExamplesHubSceneTransitionServiceProfile**
 
-<img src="../features/Images/ReleaseNotes/FixSceneTransitionProfile.png" width="500px">
+<img src="../features/Images/ReleaseNotes/FixSceneTransitionProfile.png" width="500px" alt="Fix Scene Transition Profile">
 
 ### Oculus Quest
 
