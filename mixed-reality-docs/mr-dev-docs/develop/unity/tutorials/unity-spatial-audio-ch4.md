@@ -1,6 +1,6 @@
 ---
 title: Enabling and disabling spatial audio at run time
-description: Use a button to enable and disable spatialization of audio at run time.
+description: Learn how to write a C# script that uses a button to enable and disable audio spatialization at run time.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019

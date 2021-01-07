@@ -1,6 +1,6 @@
 ---
 title: Spatializing audio from a video
-description: Import a video asset into your Unity project, and spatialize the audio from the video.
+description: Learn how to import a video asset into your Unity mixed reality project and spatialize the audio from the video.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
