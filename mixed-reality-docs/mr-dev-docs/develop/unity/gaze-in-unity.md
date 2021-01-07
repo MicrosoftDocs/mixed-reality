@@ -1,13 +1,12 @@
 ---
 title: Gaze in Unity
-description: Gaze is a primary way for users to target the holograms your app creates in mixed reality.
+description: Learn how to use gaze input as a primary way for users to target the holograms your app creates in mixed reality.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: eye-gaze, head-gaze, unity, hologram, mixed reality, mixed reality headset, windows mixed reality headset, virtual reality headset, MRTK, Mixed Reality Toolkit
 ---
-
 
 # Head-gaze in Unity
 

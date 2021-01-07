@@ -1,6 +1,6 @@
 ---
 title: Voice Input in Unreal
-description: Tutorial on setting up and using voice input in HoloLens 2 and Unreal engine
+description: Learn how to set up and use voice input, speech mappings, and recognition in Unreal mixed reality apps for HoloLens 2 devices.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020

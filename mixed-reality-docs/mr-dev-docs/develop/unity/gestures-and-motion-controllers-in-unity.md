@@ -1,13 +1,12 @@
 ---
 title: Gestures and motion controllers in Unity
-description: Learn how to take action on your gaze in Unity with hand gestures and motion controllers.
+description: Learn how to take action on your gaze in Unity with hand gestures and motion controllers using XR and common button/axis APIs.
 author: hferrone
 ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: gestures, motion controllers, unity, gaze, input, mixed reality headset, windows mixed reality headset, virtual reality headset, MRTK, Mixed Reality Toolkit
 ---
-
 
 # Gestures and motion controllers in Unity
 

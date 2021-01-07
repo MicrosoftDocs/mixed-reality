@@ -1,12 +1,13 @@
 ---
 title: WinRT in Unreal
-description: Overview of the spatial audio plugin for Unreal engine.
+description: Learn how to write and manage custom WinRT features in Unreal mixed reality apps for HoloLens devices.
 author: hferrone
 ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remoting, mixed reality, development, getting started, features, new project, emulator, documentation, guides, features, holograms, game development, mixed reality headset, windows mixed reality headset, virtual reality headset, WinRT, DLL
 ---
+
 # WinRT in Unreal
 
 Over the course of your HoloLens development you may need to write a feature using WinRT. For example, opening a file dialogue in a HoloLens application would need the FileSavePicker in winrt/Windows.Storage.Pickers.h header file. WinRT is supported in Unreal's build system from version 4.26 onwards.
