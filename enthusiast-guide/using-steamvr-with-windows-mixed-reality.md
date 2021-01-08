@@ -13,14 +13,18 @@ Windows Mixed Reality for SteamVR allows users to run SteamVR experiences on Win
 
 * Make sure you have no pending updates: Select **Start > Settings > Update & Security > Windows Update**. If updates are available, select **Install now**. If no updates are available, select **Check for updates**, and then install any new ones.
 * PC requirements vary for the apps and content on Steam. See the minimum requirements per title. A PC with a GTX 1070 graphics card (or equivalent) and an Intel® Core™ i7 processor should offer a good experience for a broad range of titles.
+* Set up up [Windows Mixed Reality](set-up-windows-mixed-reality.md) if you haven't already. 
 
 ## Set up Windows Mixed Reality for SteamVR
 
-1. Set up up [Windows Mixed Reality](set-up-windows-mixed-reality.md) if you haven't already
-2. Install [Steam](http://store.steampowered.com/about/) and **login** or **create a new account.**
-3. Install [SteamVR](https://store.steampowered.com/app/250820/SteamVR/). With your headset plugged in, launch Steam and you should see a dialog prompting you to install SteamVR. Follow the prompts on the dialog to install it.
+1. [Download and install SteamVR.](https://steamcdn-a.akamaihd.net/client/installer/SteamWindowsMRInstaller.exe)
+2. When ready, start SteamVR. The SteamVR Tutorial should start automatically.
+
+> **Note:** For advanced troubleshooting of your SteamVR setup, make sure you have the following software components installed:
+> 1. Install [Steam](http://store.steampowered.com/about/) and **login** or **create a new account.**
+> 2. Install [SteamVR](https://store.steampowered.com/app/250820/SteamVR/). With your headset plugged in, launch Steam and you should see a dialog prompting you to install SteamVR. Follow the prompts on the dialog to install it.
     * If you don't see the popup, install SteamVR by navigating to the *Tools* section of your *library*. Locate SteamVR in the list and then right-click and select *Install Game*.
-4. Install [Windows Mixed Reality for SteamVR](https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/).
+> 3. Install [Windows Mixed Reality for SteamVR](https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/).
 
 ## Play SteamVR games
 
