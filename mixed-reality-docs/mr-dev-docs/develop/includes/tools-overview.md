@@ -64,7 +64,7 @@ Possible solutions include:
 
 ##### I can't deploy over USB
 
-If you're not able to deploy an application directly over USB, make sure you've met all the installation requirements listed above and follow our [step-by-step tutorial](../unity/tutorials/mr-learning-base-02.md#building-your-application-to-your-hololens-2).
+If you're not able to deploy an application directly over USB, make sure you've met all the installation requirements listed above and follow our [step-by-step tutorial](../unity/tutorials/mr-learning-base-02.md#building-and-deploying-to-your-hololens-2).
 
 #### Immersive (VR) headset requirements
 
@@ -122,7 +122,7 @@ If you're following the Unity for HoloLens development checkpoint journey we've 
 If you're following the Unity for VR journey, your next task is to setup your project.
 
 > [!div class="nextstepaction"]
-> [Configuring your project for WMR](configure-unity-project.md)
+> [Configuring your project for WMR](../unity/configure-unity-project.md)
 
 You can always go back to the Unity development checkpoints for [HoloLens](../unity/unity-development-overview.md#1-getting-started) and [VR](../unity/unity-development-wmr-overview.md#1-getting-started) at any time.
 
