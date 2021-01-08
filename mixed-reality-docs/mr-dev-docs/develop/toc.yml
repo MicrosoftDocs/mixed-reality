@@ -288,6 +288,14 @@
         href: unreal/unreal-azure-spatial-anchors.md
       - name: Voice input in Unreal
         href: unreal/unreal-voice-input.md
+  - name: Best practices  
+    items:
+      - name: Performance recommendations for Unreal
+        href: unreal/performance-recommendations-for-unreal.md
+      - name: Material recommendations in Unreal
+        href: unreal/unreal-materials.md
+      - name: Profiling with Unreal Insights
+        href: unreal/unreal-insights.md 
   - name: Platform capabilities and APIs
     items:
       - name: HoloLens Photo/Video Camera in Unreal
@@ -298,6 +306,8 @@
         href: unreal/unreal-umg-keyboard.md
       - name: WinRT in Unreal
         href: unreal/unreal-winrt.md
+      - name: Streaming in Unreal
+        href: unreal/unreal-streaming.md
   - name: Immersive VR
     items:
       - name: HP Reverb G2 controllers in Unreal
@@ -306,22 +316,12 @@
     items:
       - name: Kippy's Escape
         href: unreal/unreal-kippys-escape.md
-  - name: Deployment and performance
+  - name: Deployment and publishing 
     items:
       - name: Deploy to device in Unreal
         href: unreal/unreal-deploying.md
       - name: Publishing to the Microsoft Store
         href: unreal/unreal-publishing-to-store.md
-      - name: Performance recommendations for Unreal
-        href: unreal/performance-recommendations-for-unreal.md
-      - name: Material recommendations in Unreal
-        href: unreal/unreal-materials.md
-      - name: Profiling with Unreal Insights
-        href: unreal/unreal-insights.md
-      - name: Material recommendations in Unreal
-        href: unreal/unreal-materials.md
-      - name: Streaming in Unreal
-        href: unreal/unreal-streaming.md
 - name: Web
   items:
   - name: Web development overview
