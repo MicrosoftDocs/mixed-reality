@@ -32,11 +32,11 @@ You have several hardware and emulator options when building Mixed Reality apps 
 
 There are several cloud services that can be integrated into Mixed Reality projects built in Unity, specifically **Azure Remote Rendering** and **Azure Spatial Anchors**. These services can add shared holographic content and real-time 3D rendering to your applications, making them more compelling and immersive for your users.
 
-All of these services are covered over the course of the [Unity development journey](../unity/unity-development-overview.md), which is the **strongly recommended path for learning Mixed Reality with Unity**. You're already on this path, so just keep reading and follow the big blue button at the bottom of the article. However, if you're at a more advanced development stage and already know you want to jump in, check out our [cloud services overview](../mixed-reality-cloud-services.md) or go directly to the [services resources](../unity/unity-development-overview.md#5-adding-services).
+All of these services are covered over the course of the [Unity development for HoloLens journey](../unity/unity-development-overview.md), which is the **strongly recommended path for learning Mixed Reality with Unity**. You're already on this path, so just keep reading and follow the big blue button at the bottom of the article. However, if you're at a more advanced development stage and already know you want to jump in, check out our [cloud services overview](../mixed-reality-cloud-services.md) or go directly to the [services resources](../unity/unity-development-overview.md#5-adding-services).
 
 ## Dynamics 365 Guides
 
-You can use **Microsoft Dynamics 365 Guides** to visually tether holographic instructions to your apps virtual environment, giving your users important information when and where it's needed. This feature is also covered in the Unity development journey, but if you want to jump ahead you can see what's on offer by selecting the **Dynamics 365** tab [here](../unity/unity-development-overview.md#5-adding-services).
+You can use **Microsoft Dynamics 365 Guides** to visually tether holographic instructions to your apps virtual environment, giving your users important information when and where it's needed. This feature is also covered in the Unity development for HoloLens journey, but if you want to jump ahead you can see what's on offer by selecting the **Dynamics 365** tab [here](../unity/unity-development-overview.md#5-adding-services).
 
 ## Examples
 
