@@ -2,7 +2,7 @@
 title: Performance recommendations for Unreal
 description: Learn how to get the best performance out of your mixed reality apps with our recommended Unreal project settings.
 author: hferrone
-ms.author: v-hferrone
+ms.author: safarooq
 ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high

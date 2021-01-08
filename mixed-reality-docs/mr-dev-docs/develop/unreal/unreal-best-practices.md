@@ -2,7 +2,7 @@
 title: General best practices
 description: 
 author: hferrone
-ms.author: 
+ms.author: safarooq
 ms.date: 01/08/2021
 ms.topic: article
 ms.localizationpriority: high
