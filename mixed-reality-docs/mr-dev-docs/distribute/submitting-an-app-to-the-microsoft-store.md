@@ -11,11 +11,16 @@ keywords: Microsoft Store, HoloLens, immersive headsets, app, uwp, submit, submi
 # Submitting an app to the Microsoft Store
 
 > [!IMPORTANT]
-> If you're submitting an Unreal application, make sure you follow the **[publishing instructions here](../develop/unreal/unreal-publishing-to-store.md)** before continuing.
+> If you're submitting an Unreal application, make sure you follow the **[publishing instructions](../develop/unreal/unreal-publishing-to-store.md)** before continuing.
+
+## Prerequisites
 
 Both [HoloLens](../hololens-hardware-details.md) and the Windows 10 PC powering your [immersive headset](../discover/immersive-headset-hardware-details.md) run Universal Windows Platform apps. Whether you're submitting an app that supports HoloLens, PC, or both, app submission goes through the [Partner Center](https://partner.microsoft.com/dashboard).
 
-If you don't already have a Partner Center developer account, [sign up](https://developer.microsoft.com/store/register) for one before moving on.
+If you don't already have a Partner Center developer account, [sign up](https://developer.microsoft.com/store/register) for one before moving on. You can find more information about submission guidelines and checklists in this [app submissions article](https://docs.microsoft.com/windows/uwp/publish/app-submissions).
+
+> [!IMPORTANT]
+> You won't be able to submit any applications to the Microsoft Store if your Partner Center developer account fails the employment verification check. Please contact the Partner Center support team for more details.
 
 ## Packaging a Mixed Reality app
 
