@@ -20,8 +20,10 @@
     href: porting-apps/building-2d-apps.md
 - name: Unity
   items:
-  - name: Unity development overview
+  - name: Unity development for HoloLens
     href: unity/unity-development-overview.md
+  - name: Unity development for VR
+    href: unity/unity-development-wmr-overview.md
   - name: Project configurations
     items:
       - name: Introducing MRTK
@@ -30,8 +32,8 @@
         href: unity/configure-unity-project.md
       - name: Using the Mixed Reality OpenXR Plugin
         href: unity/openxr-getting-started.md
-      - name: OpenXR plugin Supported Features 
-        href: unity/openxr-supported-features.md 
+      - name: OpenXR plugin Supported Features
+        href: unity/openxr-supported-features.md
   - name: Tutorials
     items:
       - name: Overview
