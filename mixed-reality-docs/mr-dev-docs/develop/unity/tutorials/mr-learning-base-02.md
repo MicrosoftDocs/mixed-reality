@@ -1,5 +1,5 @@
 ---
-title: MRTK tutorials - 2. Initializing your project and deploying your first application
+title: Initializing your project and deploying your first application
 description: This course shows you how to configure your Unity project for the Mixed Reality Toolkit (MRTK) and how to deploy it to your HoloLens 2.
 author: jessemcculloch
 ms.author: v-vtieto
@@ -10,8 +10,6 @@ ms.localizationpriority: high
 ---
 
 # 2. Initializing your project and deploying your first application
-
-## Overview
 
 In this tutorial, you'll learn how to create a new Unity project, configure it for <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank">Mixed Reality Toolkit (MRTK)</a> development, and import MRTK. You'll also walk through configuring, building, and deploying a basic Unity scene from Visual Studio to your HoloLens 2. Once you have deployed it to your HoloLens 2, you should see a spatial mapping mesh covering the surfaces that are perceived by the HoloLens. Additionally, you should see indicators on your hands and fingers for hand tracking and a frame rate counter for keeping an eye on app performance.
 

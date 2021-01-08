@@ -1,6 +1,6 @@
 ---
 title: Motion controllers
-description: Details on the Mixed Reality motion controllers.
+description: Learn how to set up, pair, and manager input interactions using Mixed Reality motion controllers in your applications.
 author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
@@ -208,8 +208,6 @@ Apps that wish to treat positions differently based on tracking state may go fur
 </tr>
 </table>
 
-
-
 These motion controller tracking states are defined as follows:
 * **High accuracy:** While the motion controller is within the headset's field of view, it will generally provide high-accuracy positions, based on visual tracking. A moving controller that momentarily leaves the field of view or is momentarily obscured from the headset sensors (for example, by the user's other hand) will continue to return high-accuracy poses for a short time, based on inertial tracking of the controller itself.
 * **High accuracy (at risk of losing):** When the user moves the motion controller past the edge of the headset's field of view, the headset will soon be unable to visually track the controller's position. The app knows when the controller has reached this FOV boundary by seeing the **SourceLossRisk** reach 1.0. At that point, the app may choose to pause controller gestures that require a steady stream of high quality poses.
@@ -275,6 +273,7 @@ See [motion controller troubleshooting](https://docs.microsoft.com/windows/mixed
 [Give us feedback](../give-us-feedback.md) in Feedback Hub, using the "Mixed Reality -> Input" category.
 
 ## See also
+
 * [Gestures and motion controllers in Unity](../develop/unity/gestures-and-motion-controllers-in-unity.md)
 * [Hands and motion controllers in DirectX](../develop/native/hands-and-motion-controllers-in-directx.md)
 * [Gestures](gaze-and-commit.md#composite-gestures)

@@ -1,6 +1,6 @@
 ---
 title: Dialog
-description: Learn about dialog overlays and how to use them in Mixed Reality applications.
+description: Learn about dialog overlays in MRTK and how to use them in Mixed Reality applications.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020

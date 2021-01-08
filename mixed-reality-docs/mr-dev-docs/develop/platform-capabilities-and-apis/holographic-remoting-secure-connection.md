@@ -19,7 +19,7 @@ This page gives you an overview of network security for Holographic Remoting. Yo
 * recommended measures based on different use cases
 * implementing security in your Holographic Remoting solution
 
-## Overview
+## Holographic Remoting security
 
 Holographic Remoting exchanges information over a network. If no security measures are in place, adversaries on the same network may compromise the integrity of the communication or access confidential information.
 

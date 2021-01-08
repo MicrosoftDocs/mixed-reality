@@ -1,6 +1,6 @@
 ---
 title: WebVR Overview
-description: Overview of using and developing for WebVR in Windows Mixed Reality
+description: Learn the basics of using and developing for WebVR applications running on Windows Mixed Reality immersive headsets.
 author: yonet
 ms.author: ayyonet
 ms.date: 04/10/2020

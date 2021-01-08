@@ -1,6 +1,6 @@
 ---
 title: Point and commit with hands
-description: Overview of the point and commit input model
+description: Learn the basics of the point and commit input model for gesture support in mixed reality applications.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 04/05/2019

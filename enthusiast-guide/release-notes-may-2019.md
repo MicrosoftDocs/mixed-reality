@@ -1,6 +1,6 @@
 ---
 title: Release notes - May 2019
-description: Windows Mixed Reality release notes for the Windows 10 May 2019 Update (also known as 19H1).
+description: Stay up to date on the Windows Mixed Reality release notes for the Windows 10 May 2019/19H1 Update.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 07/11/2019

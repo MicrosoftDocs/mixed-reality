@@ -1,6 +1,6 @@
 ---
 title: Designing content for holographic display
-description: Learn design guidelines and best practices for holographic display.
+description: Learn about design guidelines and best practices for holographic display on HoloLens devices.
 author: yoonpark
 ms.author: dongpark
 ms.date: 06/18/2020
@@ -17,6 +17,7 @@ When designing content for holographic displays, there are several elements that
 <br>
 
 ## Challenges with bright color on a large surface 
+
 Based on our HoloLens experience research and testing, we found that using bright colors in a large area of the display can cause several issues: 
 
 **Eye fatigue** 

@@ -1,6 +1,6 @@
 ---
 title: Release notes - March 2016
-description: HoloLens release notes for the launch of HoloLens and Windows Holographic.
+description: Stay up to date on the HoloLens release notes for the launch of HoloLens and Windows Holographic.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018

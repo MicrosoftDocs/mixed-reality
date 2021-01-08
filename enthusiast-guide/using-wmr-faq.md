@@ -1,6 +1,6 @@
 ---
 title: Using Windows Mixed Reality FAQ
-description: Get answers to common questions when working with Windows Mixed Reality.
+description: Find resources to common questions when working with Windows Mixed Reality applications and hardware.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -19,7 +19,6 @@ Still need help? For advanced troubleshooting, check out this article.
 ## I see a message that says “Lost tracking” or “We don’t have a boundary for this space.”
 
 Select **Start > Mixed Reality Portal** on your desktop. Select **Menu**, then select **Run setup** to create a new boundary. Windows Mixed Reality supports multiple locations and will identify the space you are in at startup as long as the room hasn’t changed.  
-
 
 ## I can’t hear any sound, or the sound is coming from my computer instead of my headset
 
@@ -128,5 +127,6 @@ When you put on your headset, Windows Mixed Reality needs a bit of time to reloa
 Still need help? For advanced troubleshooting, check out [this article](troubleshooting-windows-mixed-reality.md).
 
 ## See also
+
 * [Ask the community](https://answers.microsoft.com)
 * [Contact us for support](https://support.microsoft.com/contactus/)

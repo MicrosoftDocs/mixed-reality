@@ -1,14 +1,12 @@
 ---
 title: Local anchor transfers in DirectX
-description: Explains how to synchronize two HoloLens devices by transferring spatial anchors.
+description: Learn how to synchronize two HoloLens devices by transferring, exporting, and serializing spatial anchors.
 author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, synchronize, spatial anchor, transfer, multiplayer, view, scenario, walkthrough, sample code, transfer, local anchor transfer, anchor export, anchor import
 ---
-
-
 
 # Local anchor transfers in DirectX
 
@@ -28,7 +26,7 @@ Note that spatial anchors are not able to transfer between different device type
 
 ## Set up your app to use the spatialPerception capability
 
-Your app must be granted permission to use the spatialPerception capability before it can use the [SpatialAnchorTransferManager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx). This is necessary because transferring a spatial anchor involves sharing sensor images gathered over time in vicinity of that anchor, which might include sensitive information.
+Your app must be granted permission to use the SpatialPerception capability before it can use the [SpatialAnchorTransferManager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx). This is necessary because transferring a spatial anchor involves sharing sensor images gathered over time in vicinity of that anchor, which might include sensitive information.
 
 Declare this capability in the package.appxmanifest file for your app. Here's an example:
 

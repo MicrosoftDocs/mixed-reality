@@ -1,13 +1,12 @@
 ---
 title: Shared experiences in Unity
-description: Share the same holograms between multiple users in a Unity application.
+description: Learn how to share the same holograms between multiple users in a Unity application with Azure Spatial Anchors.
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Sharing, Anchor, WorldAnchor, MR Sharing 250, WorldAnchorTransferBatch, SpatialPerception, Azure, Azure Spatial Anchors, ASA, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 # Shared experiences in Unity
 

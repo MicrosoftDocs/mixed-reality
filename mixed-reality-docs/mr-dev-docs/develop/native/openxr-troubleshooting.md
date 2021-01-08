@@ -1,13 +1,12 @@
 ---
 title: OpenXR troubleshooting
-description: Troubleshoot issues in your OpenXR applications.
+description: Find resources and answers to common troubleshoot issues in your Windows Mixed Reality OpenXR applications.
 author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2020
 ms.topic: article
 keywords: OpenXR, Khronos, BasicXRApp, DirectX, native, native app, custom engine, middleware, troubleshooting
 ---
-
 
 # OpenXR troubleshooting
 

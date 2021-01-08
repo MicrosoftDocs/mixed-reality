@@ -1,6 +1,6 @@
 ---
 title: Start your VR journey
-description: Checkpoints to guide new VR device users through setting up and using their immersive VR devices.
+description: Explore our curated checkpoints to guide new device users through setting up and using their immersive VR devices.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/15/2020

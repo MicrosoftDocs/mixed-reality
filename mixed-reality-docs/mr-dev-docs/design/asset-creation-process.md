@@ -1,6 +1,6 @@
 ---
 title: Asset creation process
-description: Guidance on creating assets for mixed reality experiences.
+description: Learn how to create, purchase, and port assets for mixed reality experiences.
 author: shengkait
 ms.author: shentan
 ms.date: 03/21/2018

@@ -1,6 +1,6 @@
 ---
 title: Writing a Holographic Remoting remote app (WMR)
-description: By creating a Holographic Remoting remote app remote content, that is rendered on a remote machine, can be streamed to HoloLens 2. 
+description: Learn how to stream remote content rendered on a remote machine to HoloLens 2 with Holographic Remoting apps with HolographicSpace.  
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020

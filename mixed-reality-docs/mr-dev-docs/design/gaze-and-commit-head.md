@@ -1,6 +1,6 @@
 ---
 title: Head-gaze and commit
-description: Overview of the head-gaze and commit input model.
+description: Get started with the head-gaze and commit input model, including target sizing, placement, and stabilization.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 03/31/2019

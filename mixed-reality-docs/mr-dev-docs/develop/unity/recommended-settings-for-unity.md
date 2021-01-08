@@ -1,13 +1,12 @@
 ---
 title: Recommended settings for Unity
-description: Unity offers some behaviors specific to mixed reality that can be toggled through project settings.
+description: Learn about Unity's performance and publishing behaviors specific to mixed reality apps that can be toggled through project settings.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 07/29/2020
 ms.topic: article
 keywords: unity, settings, mixed reality, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset, performance, quality settings, lighting settings, depth buffer, xr, tracking loss
 ---
-
 
 # Recommended settings for Unity
 

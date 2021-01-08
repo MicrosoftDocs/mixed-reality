@@ -1,13 +1,12 @@
 ---
 title: Head and eye gaze in DirectX
-description: Learn how to use head gaze and eye tracking in native DirectX apps.
+description: Learn how to request, use, and unpack raycasting data from head gaze and eye tracking in native DirectX apps.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: eye-gaze, head-gaze, head tracking, eye tracking, directx, input, holograms, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 # Head-gaze and eye-gaze input in DirectX
 
@@ -23,6 +22,7 @@ In Windows Mixed Reality, eye and head gaze input is used to determine what the 
 Both head and eye-gaze rays are accessible through the  [SpatialPointerPose](https://docs.microsoft.com//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) API. Call [SpatialPointerPose::TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) to receive a new SpatialPointerPose object at the specified timestamp and [coordinate system](coordinate-systems-in-directx.md). This SpatialPointerPose contains a head-gaze origin and direction. It also contains an eye-gaze origin and direction if eye tracking is available.
 
 ### Device support
+
 <table>
 <colgroup>
     <col width="25%" />

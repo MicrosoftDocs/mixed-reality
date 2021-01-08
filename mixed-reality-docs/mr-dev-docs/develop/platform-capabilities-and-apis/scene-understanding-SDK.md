@@ -1,6 +1,6 @@
 ---
 title: Scene understanding SDK 
-description: Programming guide to the Scene Understanding SDK
+description: Learn how to install and use the Scene Understanding SDK, including components, meshes, and objects in mixed reality apps.
 author: szymons
 ms.author: szymons
 ms.date: 12/14/2020

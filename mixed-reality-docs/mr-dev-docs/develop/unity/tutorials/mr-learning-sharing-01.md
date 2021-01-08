@@ -1,5 +1,5 @@
 ---
-title: Multi-user capabilities tutorials - 1. Introduction to the Multi-user capabilities tutorials 
+title: Introduction to the Multi-user capabilities tutorials 
 description: Complete this course to learn how to implement shared multi-user experiences in a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
@@ -10,8 +10,6 @@ ms.localizationpriority: high
 ---
 
 # 1. Introduction to the Multi-user capabilities tutorials
-
-## Overview
 
 Welcome to the Multi-User Capabilities tutorials! Through this tutorial series, you will learn the fundamentals of building a multi-user experience using <a href="https://www.photonengine.com/PUN" target="_blank">Photon Unity Networking</a> (PUN). PUN is one of several networking options available to mixed reality developers to create shared experiences.
 

@@ -1,6 +1,6 @@
 ---
 title: Holographic frame
-description: Users see the world of mixed reality through the holographic frame.
+description: Learn how users see the world of mixed reality through the holographic frame and how to best design the experience.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/25/2020

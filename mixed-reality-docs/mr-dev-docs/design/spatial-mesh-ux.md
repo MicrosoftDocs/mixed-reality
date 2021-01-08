@@ -1,6 +1,6 @@
 ---
 title: Spatial mesh visualization
-description: Learn about how devices understand physical environments using spatial meshes.
+description: Learn about design guidelines and physical environment understanding with spatial mesh visualization in MRTK.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020

@@ -1,5 +1,5 @@
 ---
-title: Windows Mixed Reality immersive headset health, safety, and comfort
+title: Windows Mixed Reality headset health and safety
 description: Learn how to keep yourself and your users healthy, safe, and comfortable when using Windows Mixed Reality apps.
 author: hferrone
 ms.author: v-hferrone

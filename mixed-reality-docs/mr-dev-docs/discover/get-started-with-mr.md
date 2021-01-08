@@ -1,6 +1,6 @@
 ---
 title: Get started with Mixed Reality
-description: Learn the basics of mixed reality theory, development, and common use cases.
+description: Choose your development track and learn the basics of mixed reality theory, development, and common use cases.
 author: grbury
 ms.author: grbury
 ms.date: 12/9/2020

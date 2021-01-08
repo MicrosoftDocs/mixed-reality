@@ -1,6 +1,6 @@
 ---
-title: MRTK tutorials - 8. Using eye-tracking
-description: This course shows you how to use eye-tracking with the Mixed Reality Toolkit (MRTK).
+title: Using eye-tracking
+description: This course shows you how to use eye-tracking in your mixed reality apps with the Mixed Reality Toolkit (MRTK).
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
@@ -10,8 +10,6 @@ ms.localizationpriority: high
 ---
 
 # 8. Using eye-tracking
-
-## Overview
 
 In this tutorial, you will learn how to enable eye-tracking for HoloLens 2 and add eye-tracking to objects to trigger actions when the user looks at the objects.
 
@@ -30,7 +28,7 @@ In the Unity menu, select Mixed Reality Toolkit > Utilities > **Configure Unity 
 ![Unity MRTK Project Configurator window](images/mr-learning-base/base-08-section1-step1-1.png)
 
 > [!NOTE]
-> The Gaze Input capability should have been enabled during the [Apply the MRTK Project Configurator settings](mr-learning-base-02.md#1-apply-the-mrtk-project-configurator-settings) instructions when you configured the Unity project at the beginning of this tutorial series. However, if it is not enabled, make sure you enable it now.
+> The Gaze Input capability should have been enabled during the [Apply the MRTK Project Configurator settings](mr-learning-base-02.md#selecting-mrtk-and-project-settings) instructions when you configured the Unity project at the beginning of this tutorial series. However, if it is not enabled, make sure you enable it now.
 
 ## Enabling eye based gaze in the gaze provider
 
