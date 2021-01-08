@@ -6,7 +6,7 @@ ms.author: kurtie
 ms.date: 12/11/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unity, mixed reality, development, getting started, new project, porting, capability, camera, simulation, emulation, documentation, mixed reality headset, windows mixed reality headset, virtual reality headset, what is virtual reality, what is augmented reality, MRTK, mixed reality toolkit, spatial mapping, voice input, locatable camera, emulator, Azure, tutorials
+keywords: Unity, mixed reality, development, getting started, new project, porting, capability, camera, simulation, emulation, documentation, mixed reality headset, windows mixed reality headset, virtual reality headset, what is virtual reality, what is augmented reality, MRTK, mixed reality toolkit, voice input, locatable camera, emulator, Azure, tutorials
 ---
 
 # Unity development for VR and Windows Mixed Reality
@@ -43,8 +43,6 @@ Other key features that play a role in immersive applications are available thro
 
 |  Feature  |  Capabilities  |
 | --- | --- |
-| [Locatable camera](locatable-camera-in-unity.md) | Capture photos and video content in your Mixed Reality application |
-| [Focus point](focus-point-in-unity.md) | Provide HoloLens a hint about how to best perform stabilization on the holograms currently being displayed |
 | [Tracking loss](tracking-loss-in-unity.md) | Handle scenarios where your device can't locate itself in the applications world space |
 | [Keyboard input](keyboard-input-in-unity.md) | Get input from real-world and Mixed Reality keyboards in your apps |
 
