@@ -318,8 +318,6 @@
         href: unreal/unreal-materials.md
       - name: Profiling with Unreal Insights
         href: unreal/unreal-insights.md
-      - name: Material recommendations in Unreal
-        href: unreal/unreal-materials.md
       - name: Streaming in Unreal
         href: unreal/unreal-streaming.md
 - name: Web
