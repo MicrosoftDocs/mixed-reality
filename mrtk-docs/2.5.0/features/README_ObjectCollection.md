@@ -1,6 +1,6 @@
 # Object collection
 
-![Object collection](Images/ObjectCollection/MRTK_ObjectCollection_Main.jpg)
+![Object collection Main](Images/ObjectCollection/MRTK_ObjectCollection_Main.jpg)
 
 Object collection is a script to help lay out an array of objects in predefined three-dimensional shapes. It supports various surface styles including plane, cylinder, sphere, and radial. Since it supports any object in Unity, it can be used to layout both 2D and 3D objects.
 
@@ -19,7 +19,7 @@ Object collection is a script to help lay out an array of objects in predefined 
 
 To create a collection, create an empty GameObject and assign one of the Object Collection scripts to it. Any object(s) can be added as a child of the GameObject. Once finished adding child objects, click the *Update Collection* button in the inspector panel to generate the object collection. The objects will be laid out in the scene according to the collection parameters. Update Collection can be accessed through the code too.
 
-![Object collection](Images/ObjectCollection/MRTK_ObjectCollectionScript.png)
+![Object collection Script](Images/ObjectCollection/MRTK_ObjectCollectionScript.png)
 
 ## `GridObjectCollection` content alignment
 

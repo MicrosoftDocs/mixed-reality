@@ -31,7 +31,7 @@ To avoid having the head or eye gaze pointers automatically suppressed once a ha
 PointerUtils.SetGazePointerBehavior(PointerBehavior.AlwaysOn);
 ```
 
-See [`Controllers Pointers and Focus`](../Architecture/InputSystem/ControllersPointersAndFocus.md)
+See [`Controllers Pointers and Focus`](../../architecture/InputSystem/ControllersPointersAndFocus.md)
 
 ---
 [Back to "Eye tracking in the MixedRealityToolkit"](EyeTracking_Main.md)

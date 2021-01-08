@@ -133,7 +133,7 @@ a grabbable but cannot see it. The *Visual FOV* is defined via a cone instead of
 The following table details the pointer types that are typically used for the common platforms in MRTK. NOTE:
 it's possible to add different pointer types to these platforms. For example, you could add a Poke pointer or Sphere pointer to VR. Additionally, VR devices with a gamepad could use the GGV pointer.
 
-|      Platform               | OpenVR  | Windows Mixed Reality | HoloLens 1 | HoloLens 2 |
+|      Pointers               | OpenVR  | Windows Mixed Reality | HoloLens 1 | HoloLens 2 |
 |---------------------|---------|-----------------------|------------|------------|
 | ShellHandRayPointer | Valid   | Valid                 |            | Valid      |
 | TeleportPointer     | Valid   | Valid                 |            |            |

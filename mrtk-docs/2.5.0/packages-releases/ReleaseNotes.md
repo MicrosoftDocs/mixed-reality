@@ -34,7 +34,7 @@ See [Scrolling Object Collection](../features/README_ScrollingObjectCollection.m
 
 The teleport pointer now has improved animations and audio feedback. We also improved the handling of the teleport pointer so it handles smoother when transitioning from pointing at nearby surfaces to farther away surfaces.
 
-https://streamable.com/3f222q
+[https://streamable.com/3f222q](https://streamable.com/3f222q)
 
 ### Input Simulation Cheat Sheet
 
@@ -143,7 +143,7 @@ Constraints can now be used by both, bounds control and object manipulator via t
 Additionally to the automatic behavior constraint manager also comes with a manual mode that lets users decide which constraint should be processed.
 For this reason the way we display constraints in the property inspector changed a bit.
 
-<img src="../features/Images/ConstraintManager/ManualSelection.png" width="600">
+<img src="../features/Images/ConstraintManager/ManualSelection.png" width="600" alt="Manual selection">
 
 The constraints that are applied to the component are now shown as a list in the constraint manager component whereas the component using the constraint manager (either [bounds control](../features/README_BoundsControl.md#constraint-system) or [object manipulator](../features/README_ObjectManipulator.md#constraint-manager)) will now show the selected constraint manager and mode (auto or manual).
 For more information read the [constraint manager](../features/README_ConstraintManager.md) section in our docs.
@@ -177,8 +177,8 @@ Currently the following MRTK components supporting the [elastics manager](xref:M
 - [Bounds control](../features/README_BoundsControl.md#elastics-experimental)
 - [Object manipulator](../features/README_ObjectManipulator.md#elastics-experimental)  
 
-<img src="https://user-images.githubusercontent.com/5544935/88151572-568cba00-cbaf-11ea-91c2-d6b51829b638.gif" width="38%">
-<img src="https://user-images.githubusercontent.com/5544935/88151578-58567d80-cbaf-11ea-8f96-d24f2cf0d6e9.gif" width="45.7%">
+<img src="https://user-images.githubusercontent.com/5544935/88151572-568cba00-cbaf-11ea-91c2-d6b51829b638.gif" width="38%" alt="Bounds control">
+<img src="https://user-images.githubusercontent.com/5544935/88151578-58567d80-cbaf-11ea-8f96-d24f2cf0d6e9.gif" width="45.7%" alt="Boject manupulator">
 
 ### Joystick (Experimental)
 
@@ -296,7 +296,7 @@ This error is due to the Scene Transition Service's configuration profile being 
 - If not expanded, expand `Scene Transition Service`
 - Set the value of `Configuration Profile` to **MRTKExamplesHubSceneTransitionServiceProfile**
 
-<img src="../features/Images/ReleaseNotes/FixSceneTransitionProfile.png" width="500px">
+<img src="../features/Images/ReleaseNotes/FixSceneTransitionProfile.png" width="500px" alt="Fix scene transition">
 
 ### Oculus Quest
 

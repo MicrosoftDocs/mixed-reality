@@ -102,7 +102,7 @@ Themes work a lot like materials. They are scriptable objects that contain a lis
 
 Visual themes modify various properties on a targeted GameObject, dependent on the class and type of theme engine selected. If *Reset On Destroy* is true when the Interactable component is destroyed, the component will reset all modified properties from active themes to their original values. Otherwise, when destroyed, the Interactable component will leave any modified properties as-is. In this latter case, the last state of values will persist unless altered by another external component. The default is false.
 
-<img src="Images/Interactable/Profiles_Themes.png" width="450">
+<img src="Images/Interactable/Profiles_Themes.png" width="450" alt="Profile Themes">
 
 ## Events
 
@@ -135,7 +135,7 @@ A custom receiver can be created by making a new class that extends [`ReceiverBa
 
 [`InteractableReceiverList`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableReceiverList) acts in a similar fashion but for a list of matching events.
 
-<img src="Images/Interactable/InteractableReceiver.png" width="450">
+<img src="Images/Interactable/InteractableReceiver.png" width="450" alt="Interactable receivers">
 
 ### Create custom events
 
@@ -245,7 +245,7 @@ To create a custom radial button group:
 1) Add all *Interactables* to the *ToggleList* on the *InteractableToggleCollection*
 1) Set the *InteractableToggleCollection.CurrentIndex* property to determine which button is selected by default at start
 
-<img src="Images/Interactable/InteractableToggleCollection.png" width="450">
+<img src="Images/Interactable/InteractableToggleCollection.png" width="450" alt="Interactable toggle collection">
 
 #### Multi-dimensional button
 

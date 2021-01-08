@@ -14,7 +14,7 @@ Gestures are input events based on human hands. There are two types of devices t
 
 Both of these input sources use the _Gesture Settings_ profile to translate Unity's Touch and Gesture events respectively into MRTK's [Input Actions](InputActions.md). This profile can be found under the _Input System Settings_ profile.
 
-<img src="../Images/Input/GestureProfile.png" style="max-width:100%;">
+<img src="../Images/Input/GestureProfile.png" style="max-width:100%;" alt="Gesture profile">
 
 ## Gesture events
 
@@ -37,24 +37,24 @@ There are two principal chains of events, depending on user input:
 
 - "Hold":
     1. Hold tap:
-        * start _Manipulation_
+        - start _Manipulation_
     1. Hold tap beyond [HoldStartDuration](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSimulationProfile.HoldStartDuration):
-        * start _Hold_
+        - start _Hold_
     1. Release tap:
-        * complete _Hold_
-        * complete _Manipulation_
+        - complete _Hold_
+        - complete _Manipulation_
 
 - "Move":
     1. Hold tap:
-        * start _Manipulation_
+        - start _Manipulation_
     1. Hold tap beyond [HoldStartDuration](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSimulationProfile.HoldStartDuration):
-        * start _Hold_
+        - start _Hold_
     1. Move hand beyond [NavigationStartThreshold](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSimulationProfile.NavigationStartThreshold):
-        * cancel _Hold_
-        * start _Navigation_
+        - cancel _Hold_
+        - start _Navigation_
     1. Release tap:
-        * complete _Manipulation_
-        * complete _Navigation_
+        - complete _Manipulation_
+        - complete _Navigation_
 
 ## Example scene
 

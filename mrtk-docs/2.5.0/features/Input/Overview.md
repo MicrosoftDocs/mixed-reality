@@ -6,7 +6,7 @@ The Input System in MRTK allows you to:
 - Define abstract actions, like *Select* or *Menu*, and associate them to different inputs.
 - Setup pointers attached to controllers to drive UI components via focus and pointer events.
 
-<img src="../Images/Input/MRTK_InputSystem.png" style="display:block;margin-left:auto;margin-right:auto;">
+<img src="../Images/Input/MRTK_InputSystem.png" style="display:block;margin-left:auto;margin-right:auto;" alt="Input System">
 <sup>Overview of MRTK Input System</sup>
 
 Inputs are produced by [**Input Data Providers(Device Manager)**](InputProviders.md). Each provider corresponds to a particular source of input: Open VR, Windows Mixed Reality (WMR), Unity Joystick, Windows Speech, etc. Providers are added to your project via the **Registered Service Providers Profile** in the *Mixed Reality Toolkit* component and will produce [**Input Events**](InputEvents.md) automatically when the corresponding input sources are available (e.g. when a WMR controller is detected or a gamepad connected).
@@ -17,7 +17,7 @@ Inputs are produced by [**Input Data Providers(Device Manager)**](InputProviders
 
 Controllers can have [**Pointers**](Pointers.md) attached to them that query the scene to determine the game object with focus and raise [**Pointer Events**](Pointers.md#pointer-event-interfaces) on it. As an example, our *line pointer* performs a raycast against the scene using the controller pose to compute the origin and direction of the ray. The pointers created for each controller are set up in the **Pointer Profile**, under the *Input System Profile*.
 
-<img src="../Images/Input/MRTK_Input_EventFlow.png" width="200px" style="display:block;margin-left:auto;margin-right:auto;">
+<img src="../Images/Input/MRTK_Input_EventFlow.png" width="200px" style="display:block;margin-left:auto;margin-right:auto;" alt="Event Flow">
 <sup>Event flow.</sup>
 
 While you can handle [input events directly in UI components](InputEvents.md), it is recommended to use [pointer events](pointers.md#pointer-event-interfaces) to keep the implementation device-independent.

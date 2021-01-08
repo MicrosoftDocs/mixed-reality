@@ -161,15 +161,16 @@ To test if the Leap Motion Unity Modules have integrated with MRTK:
 - Navigate to **Mixed Reality Toolkit > Utilities > Leap Motion > Check Integration Status**
   - This will display a pop up window with a message about whether or not the Leap Motion Unity Modules have integrated with MRTK.
 - If the message says that the assets have not been integrated:
-    - Make sure the Leap Motion Unity Modules are in the project
-    - Make sure that the version added is supported, see the table at the top of the page for versions supported.
-    - Try **Mixed Reality Toolkit > Utilities > Leap Motion > Integrate Leap Motion Unity Modules**
+  - Make sure the Leap Motion Unity Modules are in the project
+  - Make sure that the version added is supported, see the table at the top of the page for versions supported.
+  - Try **Mixed Reality Toolkit > Utilities > Leap Motion > Integrate Leap Motion Unity Modules**
 
 ### Copying assembly Multiplayer HLAPI failed
 
 On import of the Leap Motion Unity Core Assets this error might be logged:
 
 ```
+
 Copying assembly from 'Temp/com.unity.multiplayer-hlapi.Runtime.dll' to 'Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll' failed
 ```
 
@@ -185,5 +186,5 @@ The example scene is contained in the **Microsoft.MixedReality.Toolkit.Examples*
 
 ## See also
 
-* [Input Providers](../Input/InputProviders.md)
-* [Hand Tracking](../Input/HandTracking.md)
+- [Input Providers](../Input/InputProviders.md)
+- [Hand Tracking](../Input/HandTracking.md)

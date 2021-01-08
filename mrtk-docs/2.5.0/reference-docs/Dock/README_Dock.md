@@ -1,4 +1,5 @@
 # Dock
+
 ![Dock](../../features/Images/Dock/MRTK_UX_Dock_Main.png)
 
 This control enables moving objects in and out of predetermined positions, to create palettes, shelves and navigation bars.

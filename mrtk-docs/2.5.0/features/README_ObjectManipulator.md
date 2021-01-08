@@ -1,6 +1,6 @@
 # Object manipulator
 
-![Object manipulator](Images/ManipulationHandler/MRTK_Manipulation_Main.png)
+![Object manipulator main](Images/ManipulationHandler/MRTK_Manipulation_Main.png)
 
 The *ObjectManipulator* is the new component for manipulation behaviour, previously found in *ManipulationHandler*. The object manipulator makes a number of improvements and simplifications. This component is a replacement for the manipulation handler, which will be deprecated.
 
@@ -16,11 +16,11 @@ Physics behaviour can be enabled for the object manipulator by adding a rigidbod
 
 As well as this, manipulation can be constrained by adding [manipulation constraint components](README_ConstraintManager.md#transform-constraints) to the object. These are special components that work with manipulation and change the manipulation behaviour in some way.
 
-![Manipulation Handler](Images/ObjectManipulator/MRTK_ObjectManipulator_Howto.png)
+![Manipulation Handler How to](Images/ObjectManipulator/MRTK_ObjectManipulator_Howto.png)
 
 ## Inspector properties and fields
 
-<img src="Images/ObjectManipulator/MRTK_ObjectManipulator_Structure.png" width="450">
+<img src="Images/ObjectManipulator/MRTK_ObjectManipulator_Structure.png" width="450" alt="Object Manipulator Structure">
 
 ### General properties
 
@@ -45,15 +45,15 @@ Specifies whether manipulation can be done using far interaction with pointers.
 
 Specifies how the object will behave when it is being grabbed with one hand near. These options only work for articulated hands.
 
-* *Rotate about object center*: Object rotates using rotation of the hand, but about the object center point. The object will appear to move less as it rotates, but there may be a feeling of disconnection between the hand and the object. More useful for far interaction.
-* *Rotate about grab point*: Rotate object with the hand about the grab point between the thumb and index finger. It should feel as if the object is being held by the hand.
+- *Rotate about object center*: Object rotates using rotation of the hand, but about the object center point. The object will appear to move less as it rotates, but there may be a feeling of disconnection between the hand and the object. More useful for far interaction.
+- *Rotate about grab point*: Rotate object with the hand about the grab point between the thumb and index finger. It should feel as if the object is being held by the hand.
 
 #### One hand rotation mode far
 
 Specifies how the object will behave when it is being grabbed with one hand at distance. These options only work for articulated hands.
 
-* *Rotate about object center*: Rotate object using rotation of the hand, but about the object center point. Useful for inspecting at a distance without the object center moving as the object rotates.
-* *Rotate about grab point*: Rotate object using rotation of the hand, but about the pointer ray hit point. Useful for inspection.
+- *Rotate about object center*: Rotate object using rotation of the hand, but about the object center point. Useful for inspecting at a distance without the object center moving as the object rotates.
+- *Rotate about grab point*: Rotate object using rotation of the hand, but about the pointer ray hit point. Useful for inspection.
 
 ### Two handed manipulation properties
 
@@ -61,11 +61,11 @@ Specifies how the object will behave when it is being grabbed with one hand at d
 
 Specifies how two hand manipulation can transform an object. Because this property is a flag, any number of options can be selected.
 
-* *Move*: Moving is allowed if selected.
-* *Scale*: Scaling is allowed if selected.
-* *Rotate*: Rotation is allowed if selected.
+- *Move*: Moving is allowed if selected.
+- *Scale*: Scaling is allowed if selected.
+- *Rotate*: Rotation is allowed if selected.
 
-![Manipulation Handler](Images/ManipulationHandler/MRTK_ManipulationHandler_TwoHanded.jpg)
+![Manipulation Handler Two Handed](Images/ManipulationHandler/MRTK_ManipulationHandler_TwoHanded.jpg)
 
 ### Constraints
 
@@ -90,8 +90,8 @@ Settings in this section appear only when the object has a RigidBody component.
 
 Specify which physical properties a manipulated object should keep upon release. Because this property is a flag, both options can be selected.
 
-* *Keep Velocity*: When the object is released, if this option is selected it will keep its linear velocity.
-* *Keep Angular Velocity*: When the object is released, if this option is selected it will keep its angular velocity.
+- *Keep Velocity*: When the object is released, if this option is selected it will keep its linear velocity.
+- *Keep Angular Velocity*: When the object is released, if this option is selected it will keep its angular velocity.
 
 #### Use forces for near manipulation
 
@@ -127,10 +127,10 @@ Amount of smoothing to apply to the scale. Smoothing of 0 means no smoothing. M
 
 Manipulation handler provides the following events:
 
-* *OnManipulationStarted*: Fired when manipulation starts.
-* *OnManipulationEnded*: Fires when the manipulation ends.
-* *OnHoverStarted*: Fires when a hand / controller hovers the manipulatable, near or far.
-* *OnHoverEnded*: Fires when a hand / controller un-hovers the manipulatable, near or far.
+- *OnManipulationStarted*: Fired when manipulation starts.
+- *OnManipulationEnded*: Fires when the manipulation ends.
+- *OnHoverStarted*: Fires when a hand / controller hovers the manipulatable, near or far.
+- *OnHoverEnded*: Fires when a hand / controller un-hovers the manipulatable, near or far.
 
 The event fire order for manipulation is:
 
@@ -144,24 +144,24 @@ If there is no manipulation, you will still get hover events with the following 
 
 Physics behaviour can be enabled by adding a rigidbody component to the same object as an object manipulator. Not only does this enable configuration of [release behaviour](#release-behavior) above, it also enables collisions. Without a rigidbody component, collisions don't behave correctly during manipulation:
 
-* Collisions between a manipulated object and a static collider (i.e. an object with a collider but no rigidbody) do not work, the manipulated object passes straight through the static collider unaffected.
-* Collisions between a manipulated object and a rigidbody (i.e an object with both a collider and a rigidbody) cause the rigidbody to have a collision response, but the response is jumpy and unnatural. There is also no collision response on the manipulated object.
+- Collisions between a manipulated object and a static collider (i.e. an object with a collider but no rigidbody) do not work, the manipulated object passes straight through the static collider unaffected.
+- Collisions between a manipulated object and a rigidbody (i.e an object with both a collider and a rigidbody) cause the rigidbody to have a collision response, but the response is jumpy and unnatural. There is also no collision response on the manipulated object.
 
 When a rigidbody is added, collisions should work correctly.
 
 ### Without rigidbody
 
-<img src="Images/ObjectManipulator/MRTK_PhysicsManipulation_NoRigidbody.gif" width="500">
+<img src="Images/ObjectManipulator/MRTK_PhysicsManipulation_NoRigidbody.gif" width="500" alt="No Riged body">
 
 ### With rigidbody
 
-<img src="Images/ObjectManipulator/MRTK_PhysicsManipulation_Rigidbody.gif" width="500">
+<img src="Images/ObjectManipulator/MRTK_PhysicsManipulation_Rigidbody.gif" width="500" alt="Rigid Body">
 
 ## Elastics (Experimental)
 
 Elastics can be used when manipulating objects via object manipulator. Note that the [elastics system](Elastics/ElasticSystem.md) is still in experimental state. To enable elastics either link an existing elastics manager component or create and link a new elastics manager via the `Add Elastics Manager` button.
 
-<img src="Images/BoundsControl/MRTK_BoundsControl_Elastics.png" width="450">
+<img src="Images/BoundsControl/MRTK_BoundsControl_Elastics.png" width="450" alt="Elastics Bounds control">
 
 ## See also
 

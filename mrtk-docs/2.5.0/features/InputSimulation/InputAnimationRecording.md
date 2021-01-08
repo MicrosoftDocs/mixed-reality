@@ -20,7 +20,7 @@ Two input system services are provided to record and play back input respectivel
 
 [`InputRecordingService`](xref:Microsoft.MixedReality.Toolkit.Input.InputRecordingService) takes data from the main camera transform and active hand controllers and stores it in an internal buffer. When requested this data is then serialized into binary files for storage and later replay.
 
-<a target="_blank" href="../../Documentation/Images/InputSimulation/MRTK_InputAnimation_RecordingDiagram.png">
+<a target="_blank" href="../Images/InputSimulation/MRTK_InputAnimation_RecordingDiagram.png" alt="Recording Diagram">
   <img src="../Images/InputSimulation/MRTK_InputAnimation_RecordingDiagram.png" title="Recording input animation" width="80%" class="center" />
 </a>
 
@@ -71,9 +71,9 @@ The input recording window has two modes:
 
   The time control buttons from left to right are:
 
-  - _Reset_ the playback time to the start of the animation.
-  - _Play_ animation continuously over time.
-  - _Step_ forward one time step.
+  * _Reset_ the playback time to the start of the animation.
+  * _Play_ animation continuously over time.
+  * _Step_ forward one time step.
 
   The slider can also be used to scrub through the animation timeline.
 
