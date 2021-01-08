@@ -1,13 +1,12 @@
 ---
 title: MR and Azure 313 - IoT Hub Service
-description: Complete this course to learn how to implement Azure IoT Hub Service on a virtual machine running Ubuntu 16.4, and then visualize the message data using Microsoft HoloLens or an immersive (VR) headset.
+description: Learn how to implement Azure IoT Hub Service on a virtual machine running Ubuntu 16.4 and visualize the message data using Microsoft HoloLens or VR headset.
 author: drneil
 ms.author: jemccull
 ms.date: 07/11/2018
 ms.topic: article
 keywords: azure, mixed reality, academy, edge, iot edge, tutorial, api, notification, functions, tables, hololens, immersive, vr, iot, virtual machine, ubuntu, python, Windows 10, Visual Studio
 ---
-
 
 # MR and Azure 313: IoT Hub Service
 

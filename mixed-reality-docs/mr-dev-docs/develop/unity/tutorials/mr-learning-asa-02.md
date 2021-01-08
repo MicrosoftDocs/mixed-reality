@@ -1,5 +1,5 @@
 ---
-title: Azure Spatial Anchors tutorials - 2. Getting started with Azure Spatial Anchors
+title: Getting started with Azure Spatial Anchors
 description: Complete this course to learn how to use Azure Spatial Anchors to anchor objects in a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
@@ -10,8 +10,6 @@ ms.localizationpriority: high
 ---
 
 # 2. Getting started with Azure Spatial Anchors
-
-## Overview
 
 In this tutorial, you will explore the various steps required to start and stop an Azure Spatial Anchors session and to create, upload, and download Azure Spatial Anchors on a single device.
 
@@ -24,14 +22,14 @@ In this tutorial, you will explore the various steps required to start and stop 
 
 In this section, you will create a new Unity project and get it ready for MRTK development.
 
-For this, first follow the [Initializing your project and deploying your first application](mr-learning-base-02.md), excluding the [Build your application to your device](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions, which includes the following steps:
+First, follow the [Initializing your project and deploying your first application](mr-learning-base-02.md), excluding the [Build your application to your device](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2) instructions, which includes the following steps:
 
 1. [Creating the Unity project](mr-learning-base-02.md#creating-the-unity-project) and give it a suitable name, for example, *MRTK Tutorials*
-1. [Switching the build platform](mr-learning-base-02.md#configuring-the-unity-project)
-1. [Importing the TextMeshPro Essential Resources](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-1. [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-1. [Configuring the Unity project](mr-learning-base-02.md#configuring-the-unity-project)
-1. [Creating and configuring the scene](mr-learning-base-02.md#creating-and-configuring-the-scene) and give the scene a suitable name, for example, *AzureSpatialAnchors*
+2. [Switching the build platform](mr-learning-base-02.md#switching-the-build-platform)
+3. [Importing the TextMeshPro Essential Resources](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
+4. [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
+5. [Configuring the Unity project](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
+6. [Creating and configuring the scene](mr-learning-base-02.md#creating-and-configuring-the-scene) and give the scene a suitable name, for example, *AzureSpatialAnchors*
 
 Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) instructions to:
 
@@ -143,7 +141,7 @@ In the Hierarchy window, select the **ParentAnchor** object, then in the Inspect
 Azure Spatial Anchors can not run in Unity, so to test the Azure Spatial Anchors functionality, you need to build the project and deploy the app to your device.
 
 > [!TIP]
-> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Building your application to your HoloLens 2](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions.
+> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Building your application to your HoloLens 2]((mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions.
 
 When the app runs on your device, follow the on-screen instructions displayed on the Azure Spatial Anchor Tutorial Instructions panel:
 

@@ -1,6 +1,6 @@
 ---
-title: Spatial audio tutorials - 5. Using reverb to add distance to spatial audio
-description: Add a reverb effect to enhance the sense of distance variation to spatial audio.
+title: Using reverb to add distance to spatial audio
+description: Learn how to add a reverb effect to enhance the sense of distance variation to spatial audio in a mixed reality application.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
@@ -11,11 +11,13 @@ keywords: mixed reality, unity, tutorial, hololens2, spatial audio, MRTK, mixed 
 # Using reverb to add distance to spatial audio
 
 ## Objectives
+
 In previous chapters, we added spatialization to sounds to give them a sense of direction. In this 5th chapter, we'll add a reverb effect to give sounds a sense of distance. Our objectives are to:
 * Improve perceived distance of sound sources by adding reverb
 * Control perceived distance of the sound using the listener's distance to the hologram
 
 ## Add a mixer group and a reverb effect
+
 In [Chapter 2](unity-spatial-audio-ch2.md), we added a mixer. The mixer includes one **Group** by default called **Master**. Because we'll only want to apply a reverb effect to some sounds, let's add a second **Group** for those sounds. To add a **Group**, right click on the **Master** group in the **Audio Mixer** and choose **Add child group**:
 
 ![Add child group](images/spatial-audio/add-child-group.png)
@@ -39,6 +41,7 @@ After these changes, the **Inspector** pane of the **SFX Reverb** will look like
 The other settings control the feel of the simulated room. In particular, **Decay Time** is related to perceived room size. 
 
 ## Enable reverb on the video playback
+
 There are two steps to enable reverb on an audio source:
 * Route the **Audio Source** to the appropriate **Group**
 * Set the **Microsoft Spatializer** plugin to pass audio into the **Group** for processing

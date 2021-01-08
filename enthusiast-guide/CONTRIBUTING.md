@@ -162,7 +162,7 @@ While editing in GitHub via a web browser, you can select the **Preview** tab ne
 >[!NOTE]
 >Previewing your changes on review.docs.microsoft.com is only available to Microsoft employees
 
-Microsoft employees: once your contributions have been merged into the 'master' branch, you can review the content before it goes public at https://review.docs.microsoft.com/windows/mixed-reality?branch=master. Find your article using the table of contents in the left column.
+Microsoft employees: once your contributions have been merged into the 'master' branch, you can review the content before it goes public at https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide?branch=master. Find your article using the table of contents in the left column.
 
 ## Editing in the browser vs. editing with a desktop client
 

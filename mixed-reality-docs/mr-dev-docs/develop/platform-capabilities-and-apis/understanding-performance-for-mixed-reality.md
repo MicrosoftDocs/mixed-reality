@@ -1,13 +1,12 @@
 ---
 title: Understanding Performance for Mixed Reality
-description: Advanced information and details for optimizing Windows Mixed Reality app performance.
+description: Learn advanced information and details for analyzing and optimizing Windows Mixed Reality app performance.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 3/26/2019
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Performance, Optimization, CPU, GPU
 ---
-
 
 # Understanding performance for mixed reality
 

@@ -1,6 +1,6 @@
 ---
 title: Using the HoloLens Emulator
-description: Using the HoloLens Emulator to test mixed reality apps on your PC without a physical HoloLens.
+description: Learn how to use the HoloLens Emulator to test mixed reality apps on your PC without a physical HoloLens.
 author: hamalawi
 ms.author: moelhama
 ms.date: 10/13/2020
@@ -8,7 +8,6 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, emulator
 ---
-
 
 # Using the HoloLens Emulator
 

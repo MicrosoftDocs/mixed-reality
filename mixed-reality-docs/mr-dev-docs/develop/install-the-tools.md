@@ -1,6 +1,6 @@
 ---
 title: Install the tools
-description: Start here to prepare for mixed reality development. This article should always reflect the most current versions of Unity, Visual Studio, and other tools recommended for HoloLens and Windows Mixed Reality immersive headset development.
+description: Start here with the most current versions of Unity, Visual Studio, and tools recommended for HoloLens and VR development.
 author: thetuvix
 ms.author: alexturn
 ms.date: 12/9/2020

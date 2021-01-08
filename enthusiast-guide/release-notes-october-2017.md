@@ -1,6 +1,6 @@
 ---
 title: Release notes - October 2017
-description: Windows Mixed Reality release notes for the Windows 10 Fall Creators Update (October 2017).
+description: Stay up to date on the Windows Mixed Reality release notes for the Windows 10 Fall Creators Update (October 2017).
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018

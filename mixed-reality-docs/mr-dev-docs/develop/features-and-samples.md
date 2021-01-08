@@ -1,6 +1,6 @@
 ---
 title: Samples and feature apps
-description: Get a look at the available feature samples for HoloLens.
+description: Stay up to date with all the available Microsoft samples and mixed reality features apps for HoloLens.
 author: hferrone
 ms.author: jemccull
 ms.date: 12/3/2020

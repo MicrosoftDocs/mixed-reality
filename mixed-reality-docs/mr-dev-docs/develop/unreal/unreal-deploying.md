@@ -1,6 +1,6 @@
 ---
 title: Deploy to device in Unreal
-description: A guide to deploying to device in Unreal to HoloLens 2
+description: Learn everything you need to know about deploying your mixed reality Unreal apps to HoloLens 2 using the editor or device portal.
 author: sw5813
 ms.author: suwu
 ms.date: 12/9/2020
@@ -9,7 +9,6 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, dep
 appliesto:
 - HoloLens 2
 ---
-
 
 # Deploy to device in Unreal
 

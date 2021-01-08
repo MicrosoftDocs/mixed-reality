@@ -1,6 +1,6 @@
 ---
 title: QR codes in Unreal
-description: A guide to using QR codes in Unreal
+description: Learn how to setup, use, and track QR codes in Unreal mixed reality applications.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 12/9/2020
@@ -8,7 +8,6 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, features, documentation, guides, holograms, qr codes, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 # QR codes in Unreal
 
@@ -24,6 +23,7 @@ Pay special attention to the [environment considerations](../../environment-cons
 > QR codes are the only type of images that can be tracked by HoloLens out of the box - Unreal's **UARTrackedImage** module isn't supported on HoloLens. If you need to track custom images, you can access the device's [webcam](unreal-hololens-camera.md) and process images using a third party image recognition library. 
 
 ## Enabling QR detection
+
 Since the HoloLens 2 needs to use the webcam to see QR codes, you'll need to enable it in the project settings:
 - Open **Edit > Project Settings**, scroll to the **Platforms** section, and select **HoloLens**.
     + Expand the **Capabilities** section and check **Webcam**.  
@@ -48,6 +48,7 @@ QR codes are surfaced through Unreal’s AR tracked geometry system as a tracked
 ![Add node to On Add Tracked Geometry](images/unreal-qr-codes-tracked-geometry.png)
 
 ## Using a tracked QR code
+
 The Event Graph in the following image shows the **OnUpdateTrackedImage** event being used to render a point in the center of a QR code and print out its data.
 
 [!INCLUDE[](includes/tabs-qr-codes-2.md)]
@@ -59,6 +60,7 @@ Here's what's going on:
 You can also [get the coordinate system for a QR code](https://docs.microsoft.com/windows/mixed-reality/qr-code-tracking#getting-the-coordinate-system-for-a-qr-code) in code.
 
 ## Finding the unique ID
+
 Every QR code has a unique guid ID, which you can find by:
 - Dragging and dropping the **As ARTracked QRCode**  pin and searching for **Get Unique ID**.
 

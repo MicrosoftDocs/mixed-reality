@@ -1,6 +1,6 @@
 ---
 title: HoloLens Emulator archive
-description: List of released builds of the Microsoft HoloLens Emulator.
+description: Stay up to date on the archived list of released builds for the Microsoft HoloLens(1st gen) and HoloLens 2 Emulators.
 author: hamalawi
 ms.author: moelhama
 ms.date: 12/08/2020
@@ -53,6 +53,7 @@ HoloLens Emulator (first gen) and HoloLens 2 Emulator builds install side by sid
 |  [HoloLens Emulator build 10.0.11082.1033](https://go.microsoft.com/fwlink/?LinkID=724053) |  March 30, 2016 |
 
 ## See also
+
 * [Install the tools](../../develop/install-the-tools.md)
 * [Using the HoloLens emulator](using-the-hololens-emulator.md)
 * [Advanced HoloLens emulator and Mixed reality simulator input](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)

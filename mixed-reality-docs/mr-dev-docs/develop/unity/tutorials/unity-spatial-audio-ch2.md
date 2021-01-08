@@ -1,6 +1,6 @@
 ---
-title: Spatial audio tutorials - 2. Spatializing button interaction sounds
-description: Add a button to your project, and spatialize the button interaction sounds.
+title: Spatializing button interaction sounds
+description: Learn how to add a button and spatialize the button interaction sounds in a mixed reality application.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
@@ -11,11 +11,13 @@ keywords: mixed reality, unity, tutorial, hololens2, spatial audio, MRTK, mixed 
 # Spatializing button interaction sounds
 
 ## Objectives
+
 In this second chapter of the spatial audio module of the HoloLens 2 tutorials, you'll:
 * Add a button
 * Spatialize the button click sounds
 
 ## Add a button
+
 In the **Project** pane, select **Assets** and type "PressableButtonHoloLens2" in the search bar:
 
 ![Button prefab in Assets](images/spatial-audio/button-prefab-in-assets.png)
@@ -25,6 +27,7 @@ The button prefab is the entry represented by a blue icon, rather than a white i
 ![Button transform](images/spatial-audio/button-transform.png)
 
 ## Spatialize button feedback
+
 In this step, you'll spatialize the audio feedback for the button. For related design suggestions, see [spatial sound design](../../../design/spatial-sound-design.md). 
 
 The **Audio Mixer** pane is where you'll define destinations, called **Mixer Groups**, for audio playback from **Audio Source** components. 
@@ -55,6 +58,7 @@ After these changes, the **Audio Source** component of your **PressableButtonHol
 > If you move **Spatial Blend** to 1 (3D) without checking the **Spatialize** checkbox, Unity will use its panning spatializer, instead of the **Microsoft Spatializer** with HRTFs.
 
 ## Adjust the Volume curve
+
 By default, Unity will attenuate spatialized sounds as they get farther from the listener. When this attenuation is applied to interaction feedback sounds, the interface can become more difficult to use.
 
 To disable this attenuation, adjust the **Volume** curve. In the **Audio Source** component of the **Inspector** pane for the **PressableButtonHoloLens2**, there is a section called **3D Sound Settings**. In that section:

@@ -1,5 +1,5 @@
 ---
-title: Azure Cloud Tutorials - 2. Integrating Azure storage
+title: Integrating Azure storage
 description: Complete this course to learn how to implement Azure Table Storage and Azure Blob Storage within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull

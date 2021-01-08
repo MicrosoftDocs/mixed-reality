@@ -1,13 +1,12 @@
 ---
 title: Holographic Remoting troubleshooting and limitations
-description: Troubleshooting steps for Holographic Remoting on HoloLens 2.
+description: Find troubleshooting resources and instructions for the Holographic Remoting feature on HoloLens 2 devices.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, holographic remoting, remote rendering, network rendering, HoloLens, remote holograms, troubleshoot, help, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 # Holographic Remoting troubleshooting
 

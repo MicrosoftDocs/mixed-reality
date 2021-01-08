@@ -25,6 +25,9 @@ In the previous tutorial, you added a simple button that resets the chess piece 
 If you're going this route with the chess app, you'll need a few things:
 
 1.	Install the **Holographic Remoting Player** from the Microsoft Store on your HoloLens 2 and run the app. Note your IP address displayed in the app.
+    * Go to **Edit > Project Settings** and sure the Windows **Default RHI** is set to **Default** or **D3D11**:
+
+![Default RHI](../images/unreal/performance-recommendations-img-09.png)
 
 2.	Back in the Unreal editor, go to **Edit > Project Settings** and check **Enable Remoting** in the **Holographic Remoting** section.
 

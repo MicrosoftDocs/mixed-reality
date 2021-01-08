@@ -17,8 +17,6 @@ This page covers the basic steps and guidelines for contributing and links to Ma
 
 ## Available repos
 
-<br>
-
 | Repository name | URL |
 | --- | --- |
 | Mixed Reality | [MicrosoftDocs/mixed-reality](https://docs.microsoft.com/windows/mixed-reality) |

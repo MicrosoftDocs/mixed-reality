@@ -1,6 +1,6 @@
 ---
 title: Unity development for HoloLens
-description: Getting started building mixed reality apps in Unity and HoloLens.
+description: Get started building mixed reality apps in Unity and HoloLens with our curated checkpoint journey.
 author: hferrone
 ms.author: kurtie
 ms.date: 12/9/2020
@@ -111,6 +111,16 @@ In addition to this documentation available on docs.microsoft.com, Unity install
 
 > [!div class="nextstepaction"]
 > [Explore MRTK](mrtk-getting-started.md)
+
+## Have feedback?
+
+You can find us on the [Unity Forums](https://aka.ms/unityforums) by tagging **Microsoft** and a combination of the following tags to help us understand what plugin you're providing feedback for:
+
+* HoloLens 2 
+* Windows Mixed Reality
+* OpenXR
+* XRSDK
+* Legacy XR 
 
 ## See also
 * [Mixed Reality Toolkit v2](mrtk-getting-started.md)

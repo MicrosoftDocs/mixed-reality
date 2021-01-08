@@ -1,6 +1,6 @@
 ---
 title: Articulated Hand and Eye Tracking in Unity
-description: There are two key ways to take action on your gaze in Unity, hand gestures and motion controllers.
+description: Learn about the two key ways to take action on your gaze in Unity, hand gestures and motion controllers.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018

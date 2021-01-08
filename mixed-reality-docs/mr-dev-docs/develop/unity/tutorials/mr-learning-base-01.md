@@ -1,5 +1,5 @@
 ---
-title: MRTK tutorials - 1. Introduction to the MRTK tutorials
+title: Introduction to the MRTK tutorials
 description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to create a mixed reality application from scratch.
 author: jessemcculloch
 ms.author: jemccull
@@ -10,8 +10,6 @@ ms.localizationpriority: high
 ---
 
 # 1. Introduction to the MRTK tutorials
-
-## Overview
 
 Welcome to the Getting Started tutorial series! Over the course of these tutorials, you'll learn about the Mixed Reality Toolkit (MRTK) and some of the features it has to offer. You'll also build a mixed reality experience where the user can explore a hologram modeled after NASA's Mars Curiosity Rover. By the end of this series, you'll have a firm grasp of MRTK and how it can speed up your development process.
 

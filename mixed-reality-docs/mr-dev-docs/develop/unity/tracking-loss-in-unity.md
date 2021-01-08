@@ -1,13 +1,12 @@
 ---
 title: Tracking loss in Unity
-description: Handling tracking loss within a Unity app.
+description: Learn how to handle manual and default tracking loss within a Unity mixed reality app.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, tracking loss, tracking loss image, polling, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 # Tracking loss in Unity
 
@@ -78,4 +77,5 @@ private void WorldManager_OnPositionalLocatorStateChanged(PositionalLocatorState
 ```
 
 ## See also
+
 * [Handling tracking loss in DirectX](../native/coordinate-systems-in-directx.md#handling-tracking-loss)

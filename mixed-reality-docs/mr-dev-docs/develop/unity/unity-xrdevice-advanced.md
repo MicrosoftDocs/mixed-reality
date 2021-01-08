@@ -1,13 +1,12 @@
 ---
 title: Mixed Reality native objects in Unity
-description: Get access to underlying Holographic native objects in Unity.
+description: Learn how to get access to underlying Holographic native objects in Unity using the XR namespace.
 author: vladkol
 ms.author: vladkol
 ms.date: 05/20/2018
 ms.topic: article
 keywords: unity, mixed reality, native, xrdevice, spatialcoordinatesystem, holographicframe, holographiccamera, ispatialcoordinatesystem, iholographicframe, iholographiccamera, getnativeptr, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 # Mixed Reality native objects in Unity
 
@@ -126,6 +125,7 @@ public static bool GetCurrentFrameDateTime(out DateTime frameDateTime)
 ```
 
 ## See Also
+
 * [Using the Windows namespace with Unity apps for HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
 * <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a>
 * <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>

@@ -1,6 +1,6 @@
 ---
 title: HP Reverb G2 FAQs
-description: Commonly asked questions about using HP Reverb G2 headset
+description: Stay up to date with commonly asked questions about using HP Reverb G2 headset with Windows Mixed Reality immersive headsets.
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
