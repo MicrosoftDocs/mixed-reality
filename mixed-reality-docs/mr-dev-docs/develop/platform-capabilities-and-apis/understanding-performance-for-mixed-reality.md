@@ -46,6 +46,7 @@ Below are some common tools to help you gather deep profiling information for yo
 - [Visual Studio Graphics Debuggers](https://docs.microsoft.com/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)
 - [Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html)
 - [Unity Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html)
+- [Unreal Insights](../unreal/unreal-insights.md)
 
 ### How to profile in any environment
 
@@ -136,6 +137,8 @@ Object pooling is a popular technique to reduce the cost of continuous allocatio
 ## See also
 - [Performance recommendations for Unity](../unity/performance-recommendations-for-unity.md)
 - [Recommended settings for Unity](../unity/recommended-settings-for-unity.md)
+- [Performance recommendations for Unreal](../unreal/performance-recommendations-for-unreal.md)
+- [Material recommendations in Unreal](../unreal/unreal-materials.md)
 - [Optimize 3D models](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
 - [Best practices for converting and optimizing real-time 3D Models](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/best-practices)
 
