@@ -290,14 +290,18 @@
         href: unreal/unreal-voice-input.md
   - name: Best practices  
     items:
+      - name: General best practices 
+        href: unreal/unreal-best-practices.md
       - name: Performance recommendations for Unreal
         href: unreal/performance-recommendations-for-unreal.md
       - name: Material recommendations in Unreal
         href: unreal/unreal-materials.md
       - name: Profiling with Unreal Insights
         href: unreal/unreal-insights.md 
+      - name: Editor extensions in Unreal
+        href: unreal/unreal-editor-extensions.md
   - name: Platform capabilities and APIs
-    items:
+    items: 
       - name: HoloLens Photo/Video Camera in Unreal
         href: unreal/unreal-hololens-camera.md
       - name: QR codes in Unreal
