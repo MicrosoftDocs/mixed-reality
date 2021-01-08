@@ -1,6 +1,6 @@
 ---
 title: General best practices
-description: 
+description: Stay up to date on all the recommended best practices for developing mixed reality applications in Unreal engine.
 author: hferrone
 ms.author: safarooq
 ms.date: 01/08/2021
@@ -18,7 +18,7 @@ The following are some general best practices we recommend all developers follow
 If you need the equivalent of a "constructor" in blueprints, use Unreals' [construction script](https://docs.unrealengine.com/ProgrammingAndScripting/Blueprints/UserGuide/UserConstructionScript/index.html). The primary advantage over using "BeginPlay" events is the constructor script runs in the "editor" as well. Most of the time the values can be cached right at the start or even at compile time.
 
 > [!NOTE]
-> You can find more supporting information for Construction scripts in our [editor extensions overview](unreal-editor-extensions.md#constructor-scripts).
+> You can find more supporting information for Construction scripts in our [editor extensions overview](unreal-editor-extensions.md#construction-scripts).
 
 ## 3D buttons and textures
 

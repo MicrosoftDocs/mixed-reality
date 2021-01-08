@@ -1,6 +1,6 @@
 ---
 title: Editor extensions in Unreal
-description: 
+description: Learn how to extend the Unreal engine editor with custom scripts, scripted actions, and utility widgets.
 author: hferrone
 ms.author: safarooq
 ms.date: 01/08/2021

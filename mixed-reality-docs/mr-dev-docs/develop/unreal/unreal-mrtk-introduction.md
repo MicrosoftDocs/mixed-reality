@@ -1,6 +1,6 @@
 ---
 title: Introducing MRTK for Unreal
-description: Get started with everything the cross-platform Mixed Reality Toolkit has to offer new mixed reality developers.
+description: Get started with everything the Mixed Reality Toolkit for Unreal has to offer new mixed reality developers.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 01/08/2021
