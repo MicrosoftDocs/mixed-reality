@@ -41,7 +41,7 @@ We **strongly recommend** completing the [Getting started](mr-learning-base-01.m
 
 In this section, you will create a new Unity project and get it ready for MRTK development.
 
-For this, first follow the [Initializing your project and first application](mr-learning-base-02.md), excluding the [Build your application to your device](mr-learning-base-02.mdmr-learning-base-02.md#building-and-deploying-to-your-hololens-2) instructions, which includes the following steps:
+For this, first follow the [Initializing your project and first application](mr-learning-base-02.md), excluding the [Build your application to your device](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2) instructions, which includes the following steps:
 
 1. [Creating the Unity project](mr-learning-base-02.md#creating-the-unity-project) and give it a suitable name, for example, *MRTK Tutorials*
 
