@@ -20,7 +20,7 @@ Both [HoloLens](../hololens-hardware-details.md) and the Windows 10 PC powering 
 If you don't already have a Partner Center developer account, [sign up](https://developer.microsoft.com/store/register) for one before moving on. You can find more information about submission guidelines and checklists in this [app submissions article](https://docs.microsoft.com/windows/uwp/publish/app-submissions).
 
 > [!IMPORTANT]
-> You won't be able to submit any applications to the Microsoft Store if your Partner Center developer account fails the employment verification check. Please contact the Partner Center support team for more details.
+> You won't be able to submit any applications to the Microsoft Store if your Partner Center developer account fails the employment verification check. Please contact the Partner Center [support team](https://developer.microsoft.com/windows/support) for more details.
 
 ## Packaging a Mixed Reality app
 
