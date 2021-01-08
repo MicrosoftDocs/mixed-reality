@@ -1,6 +1,6 @@
 ---
 title: Slate
-description: A slate is a thin window style control for displaying 2D content.
+description: Lean about slates, a thin window style control for displaying 2D content using the Mixed Reality Toolkit.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019

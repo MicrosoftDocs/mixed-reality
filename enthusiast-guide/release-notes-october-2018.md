@@ -1,6 +1,6 @@
 ---
 title: Release notes - October 2018
-description: HoloLens and Windows Mixed Reality release notes for the Windows 10 October 2018 Update (also known as RS5).
+description: Stay up to date on the HoloLens and Windows Mixed Reality release notes for the Windows 10 October 2018/RS5 Update.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 10/02/2018

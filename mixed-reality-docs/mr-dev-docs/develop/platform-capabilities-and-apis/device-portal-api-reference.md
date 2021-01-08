@@ -1,13 +1,12 @@
 ---
 title: Device portal API reference
-description: API reference for the Windows Device Portal on HoloLens
+description: Stay up to date on the Windows Device Portal API for HoloLens development.
 author: hamalawi
 ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
 keywords: HoloLens, Windows Device Portal, API, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 # Device portal API reference
 

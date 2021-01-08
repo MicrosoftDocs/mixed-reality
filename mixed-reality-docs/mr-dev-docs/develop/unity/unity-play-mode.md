@@ -1,13 +1,12 @@
 ---
 title: Unity Play Mode
-description: Using Play Mode in the Unity editor to preview your changes on a device without deploying an app.
+description: Learn how to use Play Mode in the Unity editor to preview your application changes on a device without deploying an app.
 author: jonmlyons
 ms.author: jlyons
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, remoting, holographic remoting, holographic remoting player, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset, unity play mode
 ---
-
 
 # Unity Play Mode
 

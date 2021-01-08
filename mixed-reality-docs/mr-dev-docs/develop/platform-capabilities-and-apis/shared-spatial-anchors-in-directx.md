@@ -1,13 +1,12 @@
 ---
 title: Shared spatial anchors in DirectX
-description: Explains how to synchronize two HoloLens devices by sharing spatial anchors.
+description: Learn how to synchronize two HoloLens devices by sharing local and Azure spatial anchors in DirectX applications.
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: HoloLens, synchronize, spatial anchor, transfer, multiplayer, view, scenario, walkthrough, sample code, Azure, Azure Spatial Anchors, ASA
 ---
-
 
 # Shared experiences in DirectX
 
@@ -31,6 +30,7 @@ Once you're up and running with Azure Spatial Anchors, you can then <a href="htt
 In situations where you can't use Azure Spatial Anchors, [local anchor transfers](../../out-of-scope/local-anchor-transfers-in-directx.md) enable one HoloLens device to export an anchor to be imported by a second HoloLens device.  This approach provides less robust anchor recall than Azure Spatial Anchors, and iOS and Android devices are not supported by this approach.
 
 ## See also
+
 * [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * <a href="https://docs.microsoft.com/cpp/api/spatial-anchors/winrt/" target="_blank">Azure Spatial Anchors SDK for HoloLens</a>

@@ -1,13 +1,12 @@
 ---
 title: Configure your project without MRTK 
-description: Instructions on configuring a Unity project for Windows Mixed Reality
+description: Learn how to configure a new Unity project for Windows Mixed Reality without the Mixed Reality Toolkit.
 author: hferrone
 ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, mixed reality, development, getting started, new project, Windows Mixed Reality, UWP, XR, performance
 ---
-
 
 # Configuring your project without MRTK
 

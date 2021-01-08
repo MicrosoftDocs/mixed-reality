@@ -1,6 +1,6 @@
 ---
 title: Slider
-description: A slider is a UI component that allows you to set a value by moving a knob or lever on a track.
+description: Learn how to use the Slider UI component to set a value by moving a knob or lever on a track using the Mixed Reality Toolkit.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019

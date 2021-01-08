@@ -1,6 +1,6 @@
 ---
-title: Mixed Reality software overview and release history
-description: An overview of the major software components for Windows Mixed Reality, and their release history
+title: Software overview and release history
+description: An overview of the major software components for Windows Mixed Reality, immersive headsets, and their release history.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -44,9 +44,11 @@ Upgrading to the latest PC release for Windows Mixed Reality immersive (VR) head
 ### Updates for Windows Mixed Reality immersive headsets
 
 #### Introducing the new Microsoft Edge
+
 As [previously announced](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge), we've made updates to better support using the new Microsoft Edge browser in Windows Mixed Reality. The new Microsoft Edge adopts the Chromium open-source project to create better web compatibility for customers and less fragmentation of the web for all web developers. It also supports WebXR, the new standard for creating immersive web experiences for VR headsets, in place of WebVR.
 
 #### Improved Settings for WMR
+
 Thanks to your feedback, we've added and clarified settings on the Headset display page:
 
 * **Visual quality of my home** - changing these settings affects only the mixed reality home environment (Cliff House and Skyloft):
@@ -66,15 +68,18 @@ Thanks to your feedback, we've added and clarified settings on the Headset displ
 * **Input switching** - toggle the input focus switching (Win+Y) behavior to be automatic (based on presence sensor feedback) or manual.
 
 #### New Cortana app
+
 This update to Windows includes the latest version of the Cortana app, which is currently US English-only and no longer supports certain mixed-reality specific commands such as "Take a picture" and "Take a video." You' can use the new Cortana to launch apps, and it also supports new productivity focused commands like, "When's my next meeting?" or "Send an email to <name> that I'm running late."
     
 #### Additional updates in available in 19041.546 (released October 2020)
+
 This desktop monthly servicing update includes the following changes for Windows Mixed Reality devices: 
 * Reduces distortions and aberrations in Windows Mixed Reality head-mounted displays (HMD). 
 * Adds support for upcoming HP Windows Mixed Reality motion controllers. 
 * Changes the behavior of the 90-Hz refresh rate setting in Windows Mixed Reality to no longer automatically switch back to 60 Hz in certain cases when 90 Hz cannot be achieved. 
 
 #### Help us improve!
+
 We continually look to improve compatibility.  If you find your favorite classic Win32 application not behaving correctly while in Windows Mixed Reality, submit feedback via our [Feedback Hub](https://support.microsoft.com//help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub).
 
 ### Prior release notes

@@ -1,6 +1,6 @@
 ---
 title: Types of mixed reality apps
-description: Learn about the spectrum of experiences the Mixed Reality platform can support, from fully immersive environments to light information layering over a user’s current environment.
+description: Learn about the experiences supported by the Mixed Reality platform, from immersive environments to light information layering over a user’s environment.
 author: rwinj
 ms.author: willyang
 ms.date: 03/21/2018

@@ -1,6 +1,6 @@
 ---
 title: Gaze and dwell
-description: General overview of the (eye/head) gaze and dwell input model.
+description: Get a general overview of the eye and head gaze-and-dwell input model for mixed reality applications.
 author:  sostel
 ms.author: sostel
 ms.date: 10/31/2019

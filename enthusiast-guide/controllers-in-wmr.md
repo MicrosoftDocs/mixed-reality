@@ -1,6 +1,6 @@
 ---
 title: Controllers in Windows Mixed Reality
-description: Learn how to setup and use controllers in Windows Mixed Reality.
+description: Learn how to setup, pair, use, and troubleshoot common issues with controllers in Windows Mixed Reality.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020

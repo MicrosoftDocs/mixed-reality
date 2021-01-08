@@ -1,13 +1,12 @@
 ---
 title: The Making of Galaxy Explorer for HoloLens 2
-description: Welcome to the journey of how we're updating Galaxy Explorer for HoloLens 2. Just like the original Galaxy Explorer, our team will be open-sourcing the project on GitHub to ensure that the community has full access.
+description: Learn about how our team is updating the Galaxy Explorer open-source project for HoloLens 2 on GitHub.
 author: l-garrett
 ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
 keywords: galaxy explorer, case study, project, sample, MRTK, Mixed Reality Toolkit, Unity, sample apps, example apps, open source, Microsoft Store, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 # The Making of Galaxy Explorer for HoloLens 2
 

@@ -1,6 +1,6 @@
 ---
 title: Using WebXR with Windows Mixed Reality
-description: Overview of using and developing for WebXR in Windows Mixed Reality
+description: Learn the basics of using and developing for WebXR applications running on Windows Mixed Reality immersive headsets.
 author: yonet
 ms.author: ayyonet
 ms.date: 04/10/2020

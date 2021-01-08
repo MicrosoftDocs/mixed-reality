@@ -10,7 +10,6 @@ appliesto:
     - HoloLens
 ---
 
-
 # Hologram stability
 
 To achieve stable holograms, HoloLens has a built-in image stabilization pipeline. The stabilization pipeline works automatically in the background, so you don't need to take any extra steps to enable it. However, you should exercise techniques that improve hologram stability and avoid scenarios that reduce stability.

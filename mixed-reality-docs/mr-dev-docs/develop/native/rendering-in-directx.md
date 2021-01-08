@@ -1,13 +1,12 @@
 ---
 title: Rendering in DirectX
-description: Explains holographic rendering for Windows Mixed Reality.
+description: Learn how to update and render content in DirectX applications for Windows Mixed Reality.
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, rendering, 3D graphics, HolographicFrame, render loop, update loop, walkthrough, sample code, Direct3D
 ---
-
 
 # Rendering in DirectX
 

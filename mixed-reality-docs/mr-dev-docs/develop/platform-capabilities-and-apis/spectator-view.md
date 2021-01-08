@@ -14,8 +14,6 @@ keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Camera, ARKit, HoloLens, Mi
 
 ![Marker](images/SpecViewPhoneHero.jpg)
 
-## Overview
-
 When you're wearing a HoloLens, it's easy to forget a person without one can't experience the same wonders you're seeing. Spectator View lets others see what a HoloLens user sees on a 2D screen. It's also a fast and affordable approach to recording holograms in HD with mobile devices and getting great quality recordings of holograms with video cameras.
 
 ## Key Resources

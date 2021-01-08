@@ -1,6 +1,6 @@
 ---
 title: Mixed Reality Learn module overview
-description: Get a look at the available Mixed Reality Learn modules.
+description: Keep up to date with all the available Mixed Reality modules hosted on the Microsoft Learn platform.
 author: hferrone
 ms.author: jemccull
 ms.date: 11/30/2020

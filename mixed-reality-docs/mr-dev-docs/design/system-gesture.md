@@ -1,6 +1,6 @@
 ---
 title: Start gesture
-description: Start gesture to call out the Start Menu. 
+description: Learn how to use the start gesture to call out the Start Menu on HoloLens and Windows Mixed Reality immersive headsets. 
 author: shengkait
 ms.author: cmeekhof
 ms.date: 10/22/2019

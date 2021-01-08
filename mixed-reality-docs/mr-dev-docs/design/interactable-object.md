@@ -1,6 +1,6 @@
 ---
 title: Interactable object
-description: A button has long been a metaphor used for triggering an event in the 2D abstract world. In the three-dimensional mixed reality world, we don’t have to be confined to this world of abstraction anymore.
+description: Learn how to trigger events, provide visual cues, and interact with objects in your mixed reality applications.
 author: cre8ivepark
 ms.author: v-hferrone
 ms.date: 06/06/2019

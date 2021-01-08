@@ -1,6 +1,6 @@
 ---
 title: Eye tracking
-description: HoloLens 2 allows for a new level of context and human understanding within the holographic experience by providing developers with the ability to use information about what the user is looking at. 
+description: Learn about eye tracking for HoloLens 2 and the new levels of human understanding if affords in holographic experiences.
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
@@ -14,7 +14,7 @@ keywords: Eye tracking, mixed reality, input, eye-gaze, calibration, mixed reali
 
 HoloLens 2 allows for a new level of context and human understanding within the holographic experience by providing developers with the ability to use information about what the user is looking at. This page explains how developers can benefit from eye tracking for various use cases, and what to look for when designing eye-gaze-based user interactions. 
 
-Eye tracking API has been designed with a user’s privacy in mind, avoiding passing any identifiable information, particularly any biometrics. For eye-tracking capable applications, the user needs to grant app permission to use eye tracking information. 
+Eye tracking API has been designed with a user’s privacy in mind, avoiding passing any identifiable information, particularly any biometrics. For eye-tracking capable applications, the user needs to grant app permission to use eye tracking information.
 
 ### Device support
 

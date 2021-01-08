@@ -1,5 +1,5 @@
 ---
-title: Azure Spatial Anchors tutorials - 4. Displaying Azure Spatial Anchors feedback
+title: Displaying Azure Spatial Anchors feedback
 description: Complete this course to learn how to display feedback from Azure Spatial Anchors in a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull

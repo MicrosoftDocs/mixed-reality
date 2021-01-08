@@ -1,6 +1,6 @@
 ---
 title: Using Speech in Windows Mixed Reality
-description: Learn how to use speech input in your Windows Mixed Reality apps.
+description: Learn how to use speech input to control commands, 3D objects, and dictation in your Windows Mixed Reality apps.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/16/2020

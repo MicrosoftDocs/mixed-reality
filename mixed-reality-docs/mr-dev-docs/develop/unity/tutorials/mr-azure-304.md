@@ -1,6 +1,6 @@
 ---
 title: MR and Azure 304 - Face recognition
-description: Complete this course to implement Azure Face Recognition within a mixed reality application.
+description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018

@@ -1,6 +1,6 @@
 ---
 title: Displaying progress
-description: A progress control provides feedback to the user that a long-running operation is underway.
+description: Learn how progress controls provides feedback to the user that a long-running operation is underway in your mixed reality apps.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018

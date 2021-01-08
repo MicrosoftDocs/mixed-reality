@@ -1,13 +1,12 @@
 ---
 title: Add holographic remoting
-description: Explains how to use Holographic Remoting to render holograms to a HoloLens over the network.
+description: Learn how to install, configure, and use Holographic Remoting to render holograms to a HoloLens device over the network.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, holographic remoting, remote rendering, network rendering, HoloLens, remote holograms, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 # Add Holographic Remoting (HoloLens (first gen))
 

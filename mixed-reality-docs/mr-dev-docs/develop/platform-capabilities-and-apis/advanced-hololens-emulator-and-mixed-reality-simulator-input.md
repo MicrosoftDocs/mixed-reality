@@ -1,5 +1,5 @@
 ---
-title: Advanced HoloLens Emulator and Mixed Reality Simulator input
+title: Advanced HoloLens Emulator and Mixed Reality Simulator
 description: Detailed instructions for using the keyboard, mouse, and Xbox controller to simulate input for the HoloLens Emulator and Windows Mixed Reality simulator.
 author: pbarnettms
 ms.author: pbarnett

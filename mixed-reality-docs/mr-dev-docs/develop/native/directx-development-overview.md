@@ -1,13 +1,12 @@
 ---
 title: Native development overview 
-description: Build a DirectX-based mixed-reality engine by using the Windows Mixed Reality APIs directly.
+description: Learn how to build a DirectX-based mixed-reality engine using the Windows Mixed Reality APIs directly.
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: DirectX, holographic rendering, native, native app, WinRT, WinRT app, platform APIs, custom engine, middleware, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 # Native development overview
 

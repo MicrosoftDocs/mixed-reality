@@ -1,6 +1,6 @@
 ---
 title: Performance recommendations for Unreal
-description: Recommendations for optimal performance for mixed reality apps in Unreal
+description: Learn how to get the best performance out of your mixed reality apps with our recommended Unreal project settings.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 5/5/2020
@@ -9,12 +9,12 @@ ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, performance, optimization, settings, documentation
 ---
 
-
 # Performance recommendations for Unreal
 
 Unreal Engine has several features that can increase an apps performance, all based on the discussion outlined in [performance recommendations for mixed reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md). You're encouraged to read up on application bottlenecks, analyzing and profiling mixed reality apps, and general performance fixes before continuing.
 
 ## Recommended Unreal project settings
+
 You can find each of the following settings in **Edit > Project Settings**.
 
 1. Using the mobile VR renderer:
@@ -74,4 +74,5 @@ You can find each of the following settings in **Edit > Project Settings**.
 ![Mobile shader permutation reduction](images/unreal/performance-recommendations-img-08.png)
 
 ## See also
+
 * [Unreal Engine mobile performance guidelines]( https://docs.unrealengine.com/Platforms/Mobile/Performance/index.html)

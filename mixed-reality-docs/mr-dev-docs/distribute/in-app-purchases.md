@@ -1,6 +1,6 @@
 ---
 title: In-app purchases
-description: In-app purchases are supported in mixed reality apps, but there's some work to set them up.
+description: Learn how to use in-app purchases in your mixed reality apps with 2D XAML views and stock Windows OS popup.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
