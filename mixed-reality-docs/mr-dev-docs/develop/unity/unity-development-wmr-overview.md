@@ -55,21 +55,6 @@ Once you've got your holographic Unity project ready for testing, your next step
 * [Windows Mixed Reality immersive headset](../platform-capabilities-and-apis/using-visual-studio.md)
 * [Windows Mixed Reality immersive headset simulator](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
 
-### 5. Adding services
-
-At this point in your development journey you might be looking to add services or for a helping hand with commercial deployment. Integrating [Dynamics 365](https://docs.microsoft.com/dynamics365/mixed-reality) features can level up your projects in a major way.
-
-#### Dynamics 365
-
-Microsoft Dynamics 365 Guides is a mixed-reality application for Microsoft HoloLens that lets operators learn during the flow of work by providing holographic instructions when and where they are needed. These instruction cards are visually tethered to the place where the work must be done, and can include images, videos, and 3D holographic models.
-
-* [Overview](https://docs.microsoft.com/dynamics365/mixed-reality/guides/) 
-* [Get started](https://docs.microsoft.com/dynamics365/mixed-reality/guides/get-started) 
-* [I'm an Admin](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup)
-* [I'm an Author](https://docs.microsoft.com/dynamics365/mixed-reality/guides/authoring-overview) 
-* [I'm an Operator](https://docs.microsoft.com/dynamics365/mixed-reality/guides/operator-overview) 
-* [Entity reference for developers](https://docs.microsoft.com/dynamics365/mixed-reality/guides/developer-entity-reference)
-
 ## What's next?
 
 A developers job is never done, especially when learning a new tool or SDK. The following sections can take you into areas beyond the beginner level material you've already completed, along with helpful resources if you get stuck. Note that these topics and resources aren't in any sequential order, so feel free to jump around and explore!
