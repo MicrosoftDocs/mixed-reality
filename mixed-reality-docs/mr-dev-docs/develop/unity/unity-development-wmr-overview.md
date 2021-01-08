@@ -13,7 +13,7 @@ keywords: Unity, mixed reality, development, getting started, new project, porti
 
 ![Unity banner logo](../images/unity_logo_banner.png)
 
-If you're brand new to Unity, we recommend that you explore the beginner level [tutorials](https://unity3d.com/learn/tutorials) on the Unity Learn platform before continuing. It's also a good idea to visit the comprehensive [Asset Store](https://www.assetstore.unity3d.com/) and the [Unity Mixed Reality forums](https://forum.unity3d.com/forums/hololens.102/) to engage with the online community building mixed reality apps. You never know what cool assets or solutions you might find out in the wild. When you're ready to get started with MRTK head to the development checkpoints below!
+If you're brand new to Unity, we recommend that you explore the beginner level [tutorials](https://unity3d.com/learn/tutorials) on the Unity Learn platform before continuing. It's also a good idea to visit the [Unity Mixed Reality forums](https://forum.unity3d.com/forums/hololens.102/) to engage with the online community building mixed reality apps. You never know what cool assets or solutions you might find out in the wild. When you're ready to get started with MRTK head to the development checkpoints below!
 
 > [!IMPORTANT]
 > Take a look at our **[porting guides](../porting-apps/porting-overview.md)** if you have an existing Unity project that you want to bring over to a Windows Mixed Reality immersive headset. 
@@ -43,7 +43,6 @@ Other key features that play a role in immersive applications are available thro
 
 |  Feature  |  Capabilities  |
 | --- | --- |
-| [Shared experiences](shared-experiences-in-unity.md) | View and interact collectively with the same hologram at a fixed point in space using spatial anchor sharing |
 | [Locatable camera](locatable-camera-in-unity.md) | Capture photos and video content in your Mixed Reality application |
 | [Focus point](focus-point-in-unity.md) | Provide HoloLens a hint about how to best perform stabilization on the holograms currently being displayed |
 | [Tracking loss](tracking-loss-in-unity.md) | Handle scenarios where your device can't locate itself in the applications world space |
@@ -58,11 +57,18 @@ Once you've got your holographic Unity project ready for testing, your next step
 
 ### 5. Adding services
 
-At this point in your development journey you might be looking to add services or for a helping hand with commercial deployment. Integrating [Azure Cloud Services](../mixed-reality-cloud-services.md) and Dynamics 365 features can level up your projects in a major way. We've compiled a few starting points for you to explore and expand your Mixed Reality knowledge.
+At this point in your development journey you might be looking to add services or for a helping hand with commercial deployment. Integrating [Dynamics 365](https://docs.microsoft.com/dynamics365/mixed-reality) features can level up your projects in a major way.
 
-[!INCLUDE[](../includes/unity-cloud-services-d365.md)]
+#### Dynamics 365
 
-We also have a [comprehensive list of support documentation for additional Azure services](../mixed-reality-cloud-services.md#standalone-unity-services) that you can add to your Unity projects on a self-serve basis.
+Microsoft Dynamics 365 Guides is a mixed-reality application for Microsoft HoloLens that lets operators learn during the flow of work by providing holographic instructions when and where they are needed. These instruction cards are visually tethered to the place where the work must be done, and can include images, videos, and 3D holographic models.
+
+* [Overview](https://docs.microsoft.com/dynamics365/mixed-reality/guides/) 
+* [Get started](https://docs.microsoft.com/dynamics365/mixed-reality/guides/get-started) 
+* [I'm an Admin](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup)
+* [I'm an Author](https://docs.microsoft.com/dynamics365/mixed-reality/guides/authoring-overview) 
+* [I'm an Operator](https://docs.microsoft.com/dynamics365/mixed-reality/guides/operator-overview) 
+* [Entity reference for developers](https://docs.microsoft.com/dynamics365/mixed-reality/guides/developer-entity-reference)
 
 ## What's next?
 
@@ -80,6 +86,7 @@ If you have existing apps that you'd like to port over, the articles listed belo
 Before going out into the world of mixed reality on your own, we recommend taking a look at the extra documentation below. 
 
 * [VR enthusiast guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/vr-journey)
+* [Unity Asset Store](https://www.assetstore.unity3d.com)
 
 ## See also 
 
