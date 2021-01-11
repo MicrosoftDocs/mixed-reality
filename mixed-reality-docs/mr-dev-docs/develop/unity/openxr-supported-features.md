@@ -27,7 +27,7 @@ The following features are currently supported:
 * Locating photo/video (PV) camera on HoloLens 2.
 * Mixed Reality Capture using 3rd eye rendering through PV camera.
 * Supports ["Play" to HoloLens 2 with the Holographic Remoting app](#holographic-remoting-in-unity-editor-play-mode), allowing developers to debug scripts without building and deploying to the device.
-* Compatible with MRTK Unity 2.5.3 and newer through MRTK OpenXR provider support. [See the MRTK documentation](openxr-getting-started.md#using-mrtk-with-openxr-support) to get started.
+* Compatible with MRTK Unity 2.5.3 and newer through [MRTK OpenXR provider support](openxr-getting-started.md#using-mrtk-with-openxr-support).
 * Compatible with Unity [ARFoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) or later
 
 ## Holographic Remoting in Unity Editor play mode
