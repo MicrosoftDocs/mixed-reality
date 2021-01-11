@@ -15,16 +15,16 @@ These packages are released and supported by Microsoft from source code in the [
 
 The Mixed Reality Toolkit Foundation is the set of code that enables your application to leverage common functionality across Mixed Reality Platforms.
 
-<img src="../features//Images/Input/MRTK_Package_Foundation.png" width="350px" style="display:block;">  
+<img src="../features//Images/Input/MRTK_Package_Foundation.png" width="350px" alt="Pakage Foundation" style="display:block;">  
 <sup>MRTK Foundation Package</sup>
 
 The MRTK Foundation is comprised of:
 
-* **Core Package**
+- **Core Package**
 
 The Core Package contains the definitions for all of the common interfaces, classes and data types that are used by all other components. It is highly recommended that applications access MRTK components exclusively through the defined interfaces to enable the highest level of compatibility across platforms.
 
-* **Platform Providers**
+- **Platform Providers**
 
 The MRTK Platform Provider packages are the components that enable the Mixed Reality Toolkit to target Mixed Reality hardware and platform functionality.
 
@@ -34,7 +34,7 @@ Supported platforms include:
 - OpenVR
 - Windows Voice
 
-* **System Services**
+- **System Services**
 
 Core services provide the default implementations for the system service interfaces, defined in the core package.
 
@@ -46,7 +46,7 @@ The MRTK foundation includes the following system services:
 - [Spatial Awareness System](../features/SpatialAwareness/SpatialAwarenessGettingStarted.md)
 - [Teleport System](../features/TeleportSystem/Overview.md)
 
-* **Feature Assets**
+- **Feature Assets**
 
 Feature Assets are collections of related functionality delivered as Unity assets and scripts including user interface controls, Standard assets, and more.
 

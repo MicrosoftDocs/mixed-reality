@@ -103,8 +103,8 @@ The [MRTK Toolbox](../features/README_Toolbox.md) is a Unity editor window utili
 This new feature makes it easy to change the icon and text of the buttons. Icon supports quad, sprite, and TextMesh Pro's SDF font texture. See MRTK's [Button documentation](../features/README_Button.md#how-to-change-the-icon-and-text) for the details.
 
 **New HoloLens 2-style Toggle Buttons - Checkbox, Switch, Radio**
-<br/><img src="https://user-images.githubusercontent.com/13754172/75299797-df631d80-57ea-11ea-8857-8ef647df0aca.gif" width="450">
-<br/><img src="https://user-images.githubusercontent.com/13754172/75299783-d6724c00-57ea-11ea-88b1-85e4a585212f.gif" width="450">
+<br/><img src="https://user-images.githubusercontent.com/13754172/75299797-df631d80-57ea-11ea-8857-8ef647df0aca.gif" width="450" alt="Button Config Helper">
+<br/><img src="https://user-images.githubusercontent.com/13754172/75299783-d6724c00-57ea-11ea-88b1-85e4a585212f.gif" width="450" alt="Pressabe button">
 
 **Hand Menu Improvements**
 
@@ -120,12 +120,12 @@ Hand menu has been adapted in many applications. One of the biggest issue we fou
 ![0416_HandMenu_04](https://user-images.githubusercontent.com/13754172/79508227-f9043280-7fed-11ea-995f-ac3cfe42fe65.gif)
 
 **Dialog (Experimental)**
-<br/><img src="../features/Images/Dialog/MRTK_UX_Dialog_Main.png" width="450">
+<br/><img src="../features/Images/Dialog/MRTK_UX_Dialog_Main.png" width="450" alt="UX Dialog Box">
 
 Dialog UI has been ported over from HoloToolkit with new HoloLens 2 shell-style design updates.
 
 **Dock (Experimental)**
-<br/><img src="https://user-images.githubusercontent.com/621574/76669327-65e86080-6548-11ea-85a3-f84f6b367f97.gif" width="450">
+<br/><img src="https://user-images.githubusercontent.com/621574/76669327-65e86080-6548-11ea-85a3-f84f6b367f97.gif" width="450" alt="Dock">
 
 This control enables moving objects in and out of predetermined positions, to create palettes, shelves and navigation bars.
 
@@ -144,7 +144,7 @@ This version of MRTK adds three new methods to the [`WindowsApiChecker`](xref:Mi
 
 **Helpers to get text input fields working with MixedRealityKeyboard for UnityUI, TextMeshPro (Experimental)**
 
-<img src="https://user-images.githubusercontent.com/168492/77582981-86e07800-6e9d-11ea-86e5-bf2c0840296c.png" width="300" />
+<img src="https://user-images.githubusercontent.com/168492/77582981-86e07800-6e9d-11ea-86e5-bf2c0840296c.png" width="300" alt="MRTK Keyboard for unity" />
 
 We have introduced two helper components, [`UI_KeyboardInputField`](xref:Microsoft.MixedReality.Toolkit.Experimental.UI.UI_KeyboardInputField) and [`TMP_KeyboardInputField`](xref:Microsoft.MixedReality.Toolkit.Experimental.UI.TMP_KeyboardInputField) that can be added to text input fields in Unity UI to enable the HoloLens 2 and Windows Mixed Reality Keyboard to show up when the fields are clicked.
 
@@ -152,13 +152,13 @@ For more information, see - [Mixed Reality Keyboard Helpers](../reference-docs/M
 
 **Grid Object Collection Alignment Options**
 
-<img src="https://user-images.githubusercontent.com/39840334/79289136-5c228780-7e7d-11ea-82b4-07959e42c3ed.gif" width="300" />
+<img src="https://user-images.githubusercontent.com/39840334/79289136-5c228780-7e7d-11ea-82b4-07959e42c3ed.gif" width="300" alt="Alignment Options" />
 
 We have added the ability to choose how the elements in the grid are aligned, whether they are aligned in the center or along the left/right axis (top/bottom axis when doing row then column layout)
 
 **Grid Object Collection Anchor Changes**
 
-<img src="https://user-images.githubusercontent.com/39840334/79516745-17bff480-8001-11ea-8492-cfa953c451da.gif" width="300" />
+<img src="https://user-images.githubusercontent.com/39840334/79516745-17bff480-8001-11ea-8492-cfa953c451da.gif" width="300" alt="Anchor Changes" />
 
 We made changes to Grid Object Collection behavior to be more in line with Unity's layout group behaviors by aligning the anchor along an object's central axis. The old Grid Object Collection behavior can be toggled with the `AnchorAlongAxis` field.
 
@@ -168,13 +168,13 @@ Camera control speed using in-editor input simulation is slower for a smoother e
 
 **Hands-free GGV input simulation**
 
-<img src="https://user-images.githubusercontent.com/39840334/79164615-40908180-7d96-11ea-8195-6be34d4df8d6.gif" width="300"/>
+<img src="https://user-images.githubusercontent.com/39840334/79164615-40908180-7d96-11ea-8195-6be34d4df8d6.gif" width="300" alt="Hands-free GGV input"/>
 
 We've enabled the ability to interact with objects without bringing hands within the in-editor input simulation service. Rotate the camera so that the gaze cursor is over an interactable object, and click on the left mouse button to interact with it.
 
 **Button Config Helper**
 
-<img src="https://user-images.githubusercontent.com/168492/81211778-bb5d4e80-8f88-11ea-94c7-33cf265586df.png" width="300" />
+<img src="https://user-images.githubusercontent.com/168492/81211778-bb5d4e80-8f88-11ea-94c7-33cf265586df.png" width="300" alt="Button Config Helper" />
 
 The Button Config Helper is an editor feature that makes it easier to customize MRTK buttons. It's now much easier to:
 

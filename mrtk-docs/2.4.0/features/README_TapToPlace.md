@@ -92,8 +92,8 @@ The Tap to Place example scene consists of 4 placeable objects, each with a diff
 
 ## See also
 
-* [Solvers](README_Solver.md)
-* [Spatial Awareness](SpatialAwareness/SpatialAwarenessGettingStarted.md)
-* [Input Simulation](InputSimulation/InputSimulationService.md)
-* [Hand Tracking](Input/HandTracking.md)
-* [Gaze](Input/Gaze.md)
+- [Solvers](README_Solver.md)
+- [Spatial Awareness](SpatialAwareness/SpatialAwarenessGettingStarted.md)
+- [Input Simulation](InputSimulation/InputSimulationService.md)
+- [Hand Tracking](Input/HandTracking.md)
+- [Gaze](Input/Gaze.md)

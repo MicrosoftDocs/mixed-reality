@@ -10,7 +10,7 @@ This document outlines the roadmap of the Mixed Reality Toolkit.
 
 | Product | Description | Timeline | Project board |
 | --- | --- | --- | --- |
-| [MRTK V2.5](#250) | Next iteration of MRTK | TBD 2020 | https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/12 |
+| [MRTK V2.5](#250) | Next iteration of MRTK | TBD 2020 | [https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/12](https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/12) |
 
 Releases are centered around themes (ex: large feature areas) and are scheduled to occur approximately every 8 weeks.
 

@@ -1,6 +1,6 @@
 # Solvers
 
-![Solver](Images/Solver/MRTK_Solver_Main.png)
+![Solver Main](Images/Solver/MRTK_Solver_Main.png)
 
 Solvers are components that facilitate the means of calculating an object's position & orientation according to a predefine algorithm. An example may be placing an object on the surface the user's gaze raycast currently hits.  
 
@@ -46,17 +46,17 @@ The *Tracked Target Type* property of the [`SolverHandler`](xref:Microsoft.Mixed
 > [!NOTE]
 > For both *ControllerRay* and *HandJoint* types, the solver handler will attempt to provide the left controller/hand transform first and then the right if the former is not available or unless the `TrackedHandedness` property specifies otherwise.
 
-![Solver](Images/Solver/TrackedObjectType-Example.gif)  
+![Solver Trackable Object](Images/Solver/TrackedObjectType-Example.gif)  
 *Example of various properties associated with each TrackedTargetType*
 
 > [!IMPORTANT]
 > Most solvers use the forward vector of the tracked transform target supplied by the `SolverHandler`. When using a *Hand Joint* tracked target type, the forward vector of the palm joint may point through the fingers and not through the palm. This depends on the platform supplying the hand joint data. For input simulation and Windows Mixed Reality, it is the *up vector* that points up through the palm (i.e green vector is up, blue vector is forward).
 >
-> ![Solver](Images/Solver/HandJoint_ForwardUpVectors.png)
+> ![Solver Forward Up Vectors](Images/Solver/HandJoint_ForwardUpVectors.png)
 >
 > To overcome this, update the *Additional Rotation* property on the `SolverHandler` to **<90, 0, 0>**. This will ensure the forward vector supplied to solvers is pointing through the palm and outward away from the hand.
 >
-> ![Solver](Images/Solver/SolverHandler_AdditionalRotation.png)
+> ![Solver Additional Rotation](Images/Solver/SolverHandler_AdditionalRotation.png)
 >
 > Alternatively, use the *Controller Ray* tracked target type to get similar behavior for pointing with hands.
 

@@ -1,6 +1,6 @@
-<img src="../features/Images/MRTK_Logo_Rev.png">
-
 # Documentation guidelines
+
+<img src="../features/Images/MRTK_Logo_Rev.png" alt="MRTK Logo">
 
 This document outlines the documentation guidelines and standards for the Mixed Reality Toolkit (MRTK). This provides an introduction to technical aspects of documentation writing and generation, to highlight common pitfalls, and to describe the recommended writing style.
 
@@ -22,13 +22,13 @@ This section describes frequently needed features. To see how they work, look at
    1. Nested numbered lists with at least 3 leading blank spaces
    1. The actual number in code is irrelevant; parsing will take care of setting the correct item number.
 
-* Bullet point lists
-  * Nested bullet point lists
-* Text in **bold** with \*\*double asterisk\*\*
-* _italic_ *text* with \_underscore\_ or \*single asterisk\*
-* Text `highlighted as code` within a sentence \`using backquotes\`
-* Links to docs pages [MRTK documentation guidelines](Contributing/DocumentationGuide.md)
-* Links to [anchors within a page](#style); anchors are formed by replacing spaces with dashes, and converting to lowercase
+- Bullet point lists
+  - Nested bullet point lists
+- Text in **bold** with \*\*double asterisk\*\*
+- _italic_ *text* with \_underscore\_ or \*single asterisk\*
+- Text `highlighted as code` within a sentence \`using backquotes\`
+- Links to docs pages [MRTK documentation guidelines](Contributing/DocumentationGuide.md)
+- Links to [anchors within a page](#style); anchors are formed by replacing spaces with dashes, and converting to lowercase
 
 For code samples we use the blocks with three backticks \`\`\` and specify *csharp* as the language for syntax highlighting:
 
@@ -53,7 +53,7 @@ If it is absolutely necessary to add a TODO, follow these steps:
    TODO.
 2. Reference the issue URL in the todo in the docs.
 
-\<\!-- TODO(https://github.com/microsoft/MixedRealityToolkit-Unity/issues/ISSUE_NUMBER_HERE): A brief blurb on the issue --\>
+\<\!-- TODO[https://github.com/microsoft/MixedRealityToolkit-Unity/issues/ISSUE_NUMBER_HERE](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/ISSUE_NUMBER_HERE): A brief blurb on the issue --\>
 
 ### Highlighted sections
 
@@ -111,11 +111,11 @@ General rule of thumb: Try to **sound professional**. That usually means to avoi
 
 ### Capitalization
 
-* Use **Sentence case for headlines**. Ie. capitalize the first letter and names, but nothing else.
-* Use regular English for everything else. That means **do not capitalize arbitrary words**, even if they hold a special meaning in that context. Prefer *italic text* for highlighting certain words, [see below](#emphasis-and-highlighting).
-* When a link is embedded in a sentence (which is the preferred method), the standard chapter name always uses capital letters, thus breaking the rule of no arbitrary capitalization inside text. Therefore use a custom link name to fix the capitalization. As an example, here is a link to the [bounding box](../features/README_BoundingBox.md) documentation.
-* Do capitalize names, such as *Unity*.
-* Do NOT capitalize "editor" when writing *Unity editor*.
+- Use **Sentence case for headlines**. Ie. capitalize the first letter and names, but nothing else.
+- Use regular English for everything else. That means **do not capitalize arbitrary words**, even if they hold a special meaning in that context. Prefer *italic text* for highlighting certain words, [see below](#emphasis-and-highlighting).
+- When a link is embedded in a sentence (which is the preferred method), the standard chapter name always uses capital letters, thus breaking the rule of no arbitrary capitalization inside text. Therefore use a custom link name to fix the capitalization. As an example, here is a link to the [bounding box](../features/README_BoundingBox.md) documentation.
+- Do capitalize names, such as *Unity*.
+- Do NOT capitalize "editor" when writing *Unity editor*.
 
 ### Emphasis and highlighting
 
@@ -138,8 +138,8 @@ Insert as many useful links to other pages as possible, but each link only once.
 
 Prefer links embedded in a sentence:
 
-* BAD: Guidelines are useful. See [this chapter](Contributing/DocumentationGuide.md) for details.
-* GOOD: [Guidelines](Contributing/DocumentationGuide.md) are useful.
+- BAD: Guidelines are useful. See [this chapter](Contributing/DocumentationGuide.md) for details.
+- GOOD: [Guidelines](Contributing/DocumentationGuide.md) are useful.
 
 Avoid external links, they can become outdated or contain copyrighted content.
 
@@ -158,10 +158,10 @@ When adding a link, consider whether it should also be listed in the [See also](
 
 Some other aspects:
 
-* The editor UI for screenshots should use light gray theme editor as not all users have access to the dark theme and we'd like to keep things as consistent as possible.
-* Default image width is 500 pixels, as this displays well on most monitors. Try not to deviate too much from it. 800 pixels width should be the maximum.
-* Use PNGs for screenshots of UI.
-* Use PNGs or JPGs for 3D viewport screenshots. Prefer quality over compression ratio.
+- The editor UI for screenshots should use light gray theme editor as not all users have access to the dark theme and we'd like to keep things as consistent as possible.
+- Default image width is 500 pixels, as this displays well on most monitors. Try not to deviate too much from it. 800 pixels width should be the maximum.
+- Use PNGs for screenshots of UI.
+- Use PNGs or JPGs for 3D viewport screenshots. Prefer quality over compression ratio.
 
 ### List of component properties
 
