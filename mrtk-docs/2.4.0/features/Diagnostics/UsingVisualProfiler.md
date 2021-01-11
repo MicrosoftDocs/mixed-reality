@@ -48,7 +48,7 @@ GPU time is planned to be added in a future release.
 
 The frame graph provides a graphical display of the application frame rate history.
 
-![Visual Profiler Frame Graph](../Images/Diagnostics/VisualProfilerMissedFrames.png)
+![Visual Profiler Missed Frames](../Images/Diagnostics/VisualProfilerMissedFrames.png)
 
 When using the application, look for missed frames which indicate that the application is not hitting its target frame rate and may need optimization work.
 
@@ -56,7 +56,7 @@ When using the application, look for missed frames which indicate that the appli
 
 The memory utilization display allows for easy understanding of how the current view is impacting an application's memory consumption.
 
-![Visual Profiler Frame Graph](../Images/Diagnostics/VisualProfilerMemory.png)
+![Visual Profiler Frame Memory](../Images/Diagnostics/VisualProfilerMemory.png)
 
 When using the application, look for total memory usage. Key indicators include nearing the memory limit and rapid changes in usage.
 

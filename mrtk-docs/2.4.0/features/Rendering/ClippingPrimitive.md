@@ -37,6 +37,7 @@ By default only one [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Ut
 #pragma multi_compile _ _CLIPPING_SPHERE
 #pragma multi_compile _ _CLIPPING_BOX
 ```
+
 > [!NOTE]
 > The above change will incur additional shader compilation time.
 
@@ -110,4 +111,4 @@ Finally, add a [`ClippingBox`](xref:Microsoft.MixedReality.Toolkit.Utilities.Cli
 
 ## See also
 
-* [MRTK Standard Shader](../README_MRTKStandardShader.md)
+- [MRTK Standard Shader](../README_MRTKStandardShader.md)

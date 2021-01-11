@@ -71,9 +71,9 @@ The input recording window has two modes:
 
   The time control buttons from left to right are:
 
-  - _Reset_ the playback time to the start of the animation.
-  - _Play_ animation continuously over time.
-  - _Step_ forward one time step.
+  * _Reset_ the playback time to the start of the animation.
+  * _Play_ animation continuously over time.
+  * _Step_ forward one time step.
 
   The slider can also be used to scrub through the animation timeline.
 

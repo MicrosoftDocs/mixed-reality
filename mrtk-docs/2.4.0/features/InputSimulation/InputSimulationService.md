@@ -27,7 +27,6 @@ Under the Input System Data provider configuration, the Input Simulation service
 > The Input Simulation service can be used on other platform endpoints such as standalone by changing the **Supported Platform(s)** property to include the desired targets.
 > ![Input Simulation Supported Platforms](../Images/InputSimulation/InputSimulationSupportedPlatforms.gif)
 
-
 ## Input simulation tools window
 
 Enable the input simulation tools window from the  **Mixed Reality Toolkit** > **Utilities** > **Input Simulation** menu. This window provides access to the state of input simulation during play mode.
@@ -178,4 +177,4 @@ style interactions (so ensure that **Hand Simulation Mode** is set to *Articulat
 
 ## See also
 
-- [Input System profile](../Input/InputProviders.md).
+* [Input System profile](../Input/InputProviders.md).

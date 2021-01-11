@@ -201,5 +201,5 @@ The example scene is contained in the **Microsoft.MixedReality.Toolkit.Examples*
 
 ## See also
 
-* [Input Providers](../Input/InputProviders.md)
-* [Hand Tracking](../Input/HandTracking.md)
+- [Input Providers](../Input/InputProviders.md)
+- [Hand Tracking](../Input/HandTracking.md)
