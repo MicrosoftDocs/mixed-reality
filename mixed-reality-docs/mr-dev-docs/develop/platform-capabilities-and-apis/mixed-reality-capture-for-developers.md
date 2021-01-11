@@ -275,7 +275,7 @@ This shared mode functionality has certain restrictions:
 >[!NOTE]
 > The resolution and framerate of the built-in MRC camera UI might be reduced from its normal values when another app is using the photo/video camera.
 
-#### MRC access
+#### MRC access for developers
 
 With the Windows 10 April 2018 Update, there's no longer a limitation around multiple apps accessing the MRC stream (however, the access to the photo/video camera still has limitations).
 
