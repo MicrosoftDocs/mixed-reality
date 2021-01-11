@@ -279,7 +279,17 @@ This shared mode functionality has certain restrictions:
 
 With the Windows 10 April 2018 Update, there's no longer a limitation around multiple apps accessing the MRC stream (however, the access to the photo/video camera still has limitations).
 
-Previous to the Windows 10 April 2018 Update, an app's custom MRC recorder was mutually exclusive with system MRC (capturing photos, capturing videos, or streaming from the Windows Device Portal).
+If you're an app developer and want to use the MRC and media capture at the same time on your device:
+
+* Create a media capture object using the initialization settings
+* Set the [SharingMode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#Windows_Media_Capture_MediaCaptureInitializationSettings_SharingMode) property to **exclusive**
+* Set up your camera the way you want it
+* Start the app, capture video frames with the start API, then enable MRC
+
+> [!CAUTION]
+> If you start MRC before you start your app, we can't guarantee the feature will work as expected.
+
+Before the Windows 10 April 2018 Update, an app's custom MRC recorder was mutually exclusive with system MRC (capturing photos, capturing videos, or streaming from the Windows Device Portal).
 
 ## See also
 
