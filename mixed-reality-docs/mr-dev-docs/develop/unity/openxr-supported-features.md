@@ -11,14 +11,14 @@ keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Realit
 
 # Mixed Reality OpenXR supported features in Unity
 
-The **Mixed Reality OpenXR Plugin** package is an extension of Unity's **OpenXR Plugin** and supports a suite of features for HoloLens 2 and Windows Mixed Reality headsets. Before continuing, make sure that you've installed **Unity 2020.2** or later, **OpenXR Plugin version 0.1.1** or later, and your Unity project is [configured for OpenXR](openxr-getting-started.md).
+The **Mixed Reality OpenXR Plugin** package is an extension of Unity's **OpenXR Plugin** and supports a suite of features for HoloLens 2 and Windows Mixed Reality headsets. Before continuing, make sure that you've installed **Unity 2020.2** or later, **OpenXR Plugin version 0.1.2** or later, and your Unity project is [configured for OpenXR](openxr-getting-started.md).
 
 ## What's supported
 
 The following features are currently supported:
 
-* Supports both UWP applications for HoloLens 2 and Win32 VR applications for Windows Mixed Reality headsets.
-* Optimizes UWP package and CoreWindow interaction for HoloLens 2 applications.
+* Supports UWP applications for HoloLens 2, and optimize for HoloLens 2 application model.
+* Supports Win32 VR applications for Windows Mixed Reality headset with latest controller profiles and holographic app remoting.
 * World scale tracking using Anchors and Unbounded space.
 * [Anchor storage API to persist anchors](#anchors-and-anchor-persistence) to HoloLens 2 local storage.
 * [Motion controller and hand interactions](#motion-controller-and-hand-interactions), including the new HP Reverb G2 controller.
@@ -27,7 +27,7 @@ The following features are currently supported:
 * Locating photo/video (PV) camera on HoloLens 2.
 * Mixed Reality Capture using 3rd eye rendering through PV camera.
 * Supports ["Play" to HoloLens 2 with the Holographic Remoting app](#holographic-remoting-in-unity-editor-play-mode), allowing developers to debug scripts without building and deploying to the device.
-* Compatible with MRTK Unity 2.5.2 and newer through MRTK OpenXR provider support. [See the MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithMRTKAndXRSDK.html) to get started.
+* Compatible with MRTK Unity 2.5.3 and newer through MRTK OpenXR provider support. [See the MRTK documentation](openxr-getting-started.md#using-mrtk-with-openxr-support) to get started.
 * Compatible with Unity [ARFoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) or later
 
 ## Holographic Remoting in Unity Editor play mode
