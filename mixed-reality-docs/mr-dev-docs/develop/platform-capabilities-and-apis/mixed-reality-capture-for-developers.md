@@ -249,40 +249,45 @@ MRC Audio Effect (**Windows.Media.MixedRealityCapture.MixedRealityCaptureAudioEf
 
 ### Simultaneous MRC limitations
 
-There are certain limitations around multiple apps accessing MRC at the same time.
+You need to be aware of certain limitations when multiple apps are accessing MRC at the same time.
 
 #### Photo/video camera access
 
-The photo/video camera is limited to the number of processes that can access it at the same time. While a process is recording video or taking a photo, any other process will fail to acquire the photo/video camera. (this applies to both Mixed Reality Capture and standard photo/video capture)
+On HoloLens 1, MRC will fail to capture a photo or capture video while a process is recording video or taking a photo. The reverse is also true: if MRC is running, the application will fail to get access to the camera. 
 
-With HoloLens 2, an app can use the MediaCaptureInitializationSettings [SharingMode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode) property to indicate that they want to run SharedReadOnly if they don't need exclusive control over the photo/video camera. The resolution and framerate of the capture will be limited to what other apps have configured the camera to provide.
+With HoloLens 2, it's possible for you to share access to the camera. If you don't need direct control of the resolution or frame-rate, you can initialize MediaCapture using the [SharedMode property](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041) with SharedReadOnly.  
 
 ##### Built-in MRC photo/video camera access
 
 MRC functionality built into Windows 10 (via Cortana, Start Menu, hardware shortcuts, Miracast, Windows Device Portal):
+
 * Will run with ExclusiveControl by default
 
-However, support has been added to each subsystem to operate in a shared mode:
-* If an app requests ExclusiveControl access to the photo/video camera, built-in MRC will automatically stop using the photo/video camera so the app's request will succeed
-* If built in MRC is started while an app has ExclusiveControl, built-in MRC will run in SharedReadOnly mode
+However, support has been added to MRC subsystem to operate in a shared mode: 
+
+* If an app requests ExclusiveControl access to the photo/video camera, built-in MRC will automatically stop using the photo/video camera so the app's request will succeed 
+* If built in MRC is started while an app has ExclusiveControl, built-in MRC will run in SharedReadOnly mode 
 
 This shared mode functionality has certain restrictions:
+
 * Photo via Cortana, hardware shortcuts, or Start Menu: Requires the Windows 10 April 2018 Update (or later)
 * Video via Cortana, hardware shortcuts, or Start Menu: Requires the Windows 10 April 2018 Update (or later)
 * Streaming MRC over Miracast: Requires the Windows 10 October 2018 Update (or later)
 * Streaming MRC over Windows Device Portal or via the HoloLens companion app: Requires HoloLens 2
 
 >[!NOTE]
-> The resolution and framerate of the built-in MRC camera UI might be reduced from its normal values when another app is using the photo/video camera.
+> The resolution and frame-rate of the built-in MRC camera UI might be reduced from its normal values when another app is using the photo/video camera.
 
 #### MRC access for developers
 
-With the Windows 10 April 2018 Update, there's no longer a limitation around multiple apps accessing the MRC stream (however, the access to the photo/video camera still has limitations).
-
-If you're an app developer and want to use the MRC and media capture at the same time on your device:
+We recommend you always request Exclusive control for the camera when using MRC. This will ensure your application has full control of the settings for the camera as long as you're aware of the limitations listed above. 
 
 * Create a media capture object using the [initialization settings](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings?view=winrt-19041)
 * Set the [SharingMode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#Windows_Media_Capture_MediaCaptureInitializationSettings_SharingMode) property to **exclusive**
+
+> [!CAUTION]
+> Be sure to carefully read the [SharingMode remarks](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#remarks) before continuing.
+
 * Set up your camera the way you want it
 * Start the app, capture video frames with the start API, then enable MRC
 
