@@ -3,7 +3,7 @@ title: Using the Mixed Reality OpenXR Plugin for Unity
 description: Learn how to enable the Mixed Reality OpenXR plugin for Unity projects.
 author: hferrone
 ms.author: alexturn
-ms.date: 12/1/2020
+ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, augmented reality, virtual reality, mixed reality headsets, learn, tutorial, getting started
 ---
