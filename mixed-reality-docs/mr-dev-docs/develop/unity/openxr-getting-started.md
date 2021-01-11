@@ -127,7 +127,7 @@ MRTK Unity supports the Mixed Reality OpenXR plugin starting with the 2.5.3 rele
 "dependencies": {
     "com.microsoft.mixedreality.toolkit.foundation": "2.5.3",
     "com.microsoft.mixedreality.toolkit.tools": "2.5.3",
-    "com.microsoft.mixedreality.toolkit. examples": "2.5.3",
+    "com.microsoft.mixedreality.toolkit.examples": "2.5.3",
 	…
 }
 ```
