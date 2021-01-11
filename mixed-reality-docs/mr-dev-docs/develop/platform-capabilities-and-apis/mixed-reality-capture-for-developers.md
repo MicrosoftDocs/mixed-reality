@@ -291,10 +291,10 @@ We recommend you always request Exclusive control for the camera when using MRC.
 * Set up your camera the way you want it
 * Start the app, capture video frames with the start API, then enable MRC
 
-You can find a full sample of the above process in the [holographic face tracking sample](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/holographicfacetracking).
-
 > [!CAUTION]
 > If you start MRC before you start your app, we can't guarantee the feature will work as expected.
+
+You can find a full sample of the above process in the [holographic face tracking sample](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/holographicfacetracking).
 
 > [!NOTE]
 > Before the Windows 10 April 2018 Update, an app's custom MRC recorder was mutually exclusive with system MRC (capturing photos, capturing videos, or streaming from the Windows Device Portal).
