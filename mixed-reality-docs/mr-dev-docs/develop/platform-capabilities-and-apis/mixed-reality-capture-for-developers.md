@@ -281,15 +281,18 @@ With the Windows 10 April 2018 Update, there's no longer a limitation around mul
 
 If you're an app developer and want to use the MRC and media capture at the same time on your device:
 
-* Create a media capture object using the initialization settings
+* Create a media capture object using the [initialization settings](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings?view=winrt-19041)
 * Set the [SharingMode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#Windows_Media_Capture_MediaCaptureInitializationSettings_SharingMode) property to **exclusive**
 * Set up your camera the way you want it
 * Start the app, capture video frames with the start API, then enable MRC
 
+You can find a full sample of the above process in the [holographic face tracking sample](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/holographicfacetracking).
+
 > [!CAUTION]
 > If you start MRC before you start your app, we can't guarantee the feature will work as expected.
 
-Before the Windows 10 April 2018 Update, an app's custom MRC recorder was mutually exclusive with system MRC (capturing photos, capturing videos, or streaming from the Windows Device Portal).
+> [!NOTE]
+> Before the Windows 10 April 2018 Update, an app's custom MRC recorder was mutually exclusive with system MRC (capturing photos, capturing videos, or streaming from the Windows Device Portal).
 
 ## See also
 
