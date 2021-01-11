@@ -20,8 +20,10 @@
     href: porting-apps/building-2d-apps.md
 - name: Unity
   items:
-  - name: Unity development overview
+  - name: Unity development for HoloLens
     href: unity/unity-development-overview.md
+  - name: Unity development for VR
+    href: unity/unity-development-wmr-overview.md
   - name: Project configurations
     items:
       - name: Introducing MRTK
