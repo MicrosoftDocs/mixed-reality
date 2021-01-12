@@ -1,9 +1,9 @@
 ---
 title: SystemExtensionsProvider
 description: MRTK Extensions and data providers
-author: davidkl
-ms.author: davidklane-ms
-ms.date: 12/01/2021
+author: davidklane-ms
+ms.author: davidkl
+ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---

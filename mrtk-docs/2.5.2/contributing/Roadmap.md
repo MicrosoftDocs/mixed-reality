@@ -1,9 +1,9 @@
 ---
 title: Roadmap
 description: documentation for outlining the roadmap of MRTK.
-author: kesemple
-ms.author: polar-kev
-ms.date: 12/01/2021
+author: polar-kev
+ms.author: kesemple
+ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
