@@ -1,3 +1,13 @@
+---
+title: README_ObjectCollection
+description: Overview of Object collection in MRTK
+author: 
+ms.author: 
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Object collection
 
 ![Object collection](Images/ObjectCollection/MRTK_ObjectCollection_Main.jpg)

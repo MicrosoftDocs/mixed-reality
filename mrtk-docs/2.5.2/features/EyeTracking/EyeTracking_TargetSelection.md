@@ -1,3 +1,13 @@
+---
+title: EyeTracking_TargetSelection
+description: How to access eye gaze data and eye gaze specific events to select targets in MRTK
+author: 
+ms.author: 
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Eye-supported target selection
 
 ![MRTK Target Selection](../Images/EyeTracking/mrtk_et_targetselect.png)

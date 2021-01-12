@@ -1,3 +1,13 @@
+---
+title: README_TapToPlace
+description: Documentation of TapToPlace MRTK
+author: 
+ms.author: 
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Tap to Place
 
 ![TapToPlace](Images/Solver/TapToPlace/TapToPlaceIntroGif.gif)

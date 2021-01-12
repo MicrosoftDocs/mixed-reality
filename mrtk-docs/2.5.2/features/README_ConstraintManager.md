@@ -1,3 +1,13 @@
+---
+title: README_ConstraintManager
+description: Overview on Constraint Manager in MRTK
+author: 
+ms.author: 
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Constraint manager
 
 The constraint manager allows to apply a set of constraint components to a transform. Components of type [`TransformConstraint`](xref:Microsoft.MixedReality.Toolkit.UI.TransformConstraint) that are attached to the game object can be taken into consideration.

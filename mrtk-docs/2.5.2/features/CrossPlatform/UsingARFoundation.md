@@ -1,3 +1,13 @@
+---
+title: UsingARFoundation
+description: Documentation to use ARFoundation in unity
+author: davidkline-ms
+ms.author: davidkl
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # How to configure MRTK for iOS and Android [Experimental]
 
 ## Install required packages

@@ -1,3 +1,13 @@
+---
+title: README_HandInteractionExamples
+description: Hand Interaction Examples in MRTK
+author: 
+ms.author: 
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Hand interaction examples scene
 
 ![Hand Interaction Examples](Images/MRTK_Examples.png)

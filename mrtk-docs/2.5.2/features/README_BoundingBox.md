@@ -1,3 +1,13 @@
+---
+title: README_BoundingBox
+description: Overview on Bounding Box in MRTK
+author: 
+ms.author: 
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Bounding box
 
 ![Bounding box](Images/BoundingBox/MRTK_BoundingBox_Main.png)

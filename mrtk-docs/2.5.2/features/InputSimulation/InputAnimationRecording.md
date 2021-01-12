@@ -1,3 +1,13 @@
+---
+title: InputAnimationRecording
+description: Documentation on Input Animation Recording System in MRTK
+author: 
+ms.author: 
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Input animation recording
 
 MRTK features an recording system by which head movement and hand tracking data can be stored in animation files. The recorded data can then be played back using the [input simulation system](InputSimulationService.md).

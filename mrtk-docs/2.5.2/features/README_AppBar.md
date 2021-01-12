@@ -1,3 +1,13 @@
+---
+title: README_AppBar
+description: Overview on App Bar in MRTK
+author: 
+ms.author: 
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # App bar
 
 ![App bar](Images/AppBar/MRTK_AppBar_Main.png)

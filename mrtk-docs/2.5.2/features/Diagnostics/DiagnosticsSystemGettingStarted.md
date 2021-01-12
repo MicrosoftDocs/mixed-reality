@@ -1,3 +1,13 @@
+---
+title: DiagnosticsSystemGettingStarted
+description: documentation to Enable and disable diagnostics in MRTK
+author: davidkline-ms
+ms.author: davidkl
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Diagnostic system
 
 The Mixed Reality Toolkit Diagnostic System provides diagnostic tools that run within the application to enable analysis of application issues.

@@ -1,5 +1,6 @@
 ---
-title: Overview description:Architectural Overview of MRTK.
+title: Overview
+description: Architectural Overview of MRTK.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021

@@ -1,3 +1,13 @@
+---
+title: EyeTracking_EyeGazeProvider
+description: Documentation for Eye Gaze provider in MRTK
+author: 
+ms.author: 
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Accessing eye tracking data in your Unity script
 
 This article assumes one has understanding for setting up eye tracking in an MRTK scene (see [Basic MRTK setup to use eye tracking](EyeTracking_BasicSetup.md)).

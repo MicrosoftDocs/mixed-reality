@@ -1,3 +1,13 @@
+---
+title: MixedRealityServiceRegistryAndIMixedRealityServiceRegistrar
+description: Documentation on MixedRealityServiceRegistry And IMixedRealityServiceRegistrar
+author: 
+ms.author: 
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # What are the MixedRealityServiceRegistry and IMixedRealityServiceRegistrar?
 
 The Mixed Reality Toolkit has two very similarly named components that perform related tasks:

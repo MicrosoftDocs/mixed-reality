@@ -1,3 +1,13 @@
+---
+title: Gestures
+description: Docummentation on Gestures and its events in MRTK
+author: keveleigh
+ms.author: kurtie
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Gestures
 
 Gestures are input events based on human hands. There are two types of devices that raise gesture input events in MRTK:

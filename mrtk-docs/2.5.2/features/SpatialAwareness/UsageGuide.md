@@ -1,3 +1,14 @@
+---
+title: UsingGuide
+description: describes the key mechanisms and APIs to programmatically configure the Spatial Awareness system
+author: davidkline-ms
+ms.author: davidkl
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
+
 # Configuring mesh observers via code
 
 This article will discuss some of the key mechanisms and APIs to programmatically configure the [Spatial Awareness system](SpatialAwarenessGettingStarted.md) and related *Mesh Observer* data providers.

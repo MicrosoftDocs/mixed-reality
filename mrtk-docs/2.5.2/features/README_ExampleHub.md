@@ -1,3 +1,13 @@
+---
+title: README_ExampleHub
+description: Overview on Example Scenes in MRTK
+author: 
+ms.author: 
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # MRTK Examples Hub
 
 ![MRTK Examples Hub](Images/ExamplesHub/MRTK_ExamplesHub.png)

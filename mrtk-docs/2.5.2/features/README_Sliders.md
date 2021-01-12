@@ -1,3 +1,13 @@
+---
+title: README_Slider
+description: Overview of Sliders MRTK
+author: 
+ms.author: 
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Sliders
 
 ![Slider example](Images/Slider/MRTK_UX_Slider_Main.jpg)

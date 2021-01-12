@@ -1,3 +1,13 @@
+---
+title: InputSimulationServices
+description: Documentation on Input simulation service in MRTK
+author: 
+ms.author: 
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Input simulation service
 
 The Input Simulation Service emulates the behavior of devices and platforms that may not be available in the Unity editor. Examples include:
