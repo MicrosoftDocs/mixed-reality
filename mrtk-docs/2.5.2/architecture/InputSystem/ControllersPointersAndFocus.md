@@ -1,9 +1,9 @@
 ---
 title: ControllersPointersAndFocus
 description: Interacting with Controllers, pointers and focus.
-author: cadia
-ms.author: cDiaz-MS
-ms.date: 12/01/2021
+author: cDiaz-MS
+ms.author: cadia
+ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
