@@ -17,7 +17,7 @@ Mixed Reality applications are unlike anything else in the world today, and desi
 
 Take a look at our design overview video to get started:
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LhlW/player]
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LhlW]
 
 ## Design checkpoints
 
