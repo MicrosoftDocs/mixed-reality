@@ -17,33 +17,25 @@ keywords: Windows Mixed Reality, test, Mixed Reality Toolkit, MRTK version 2, MR
 
 MRTK is an amazing open-source toolkit that has been around since the HoloLens was first released. The toolkit wouldn't be where it is today without the hard work of our contributing developer community. 
 
-The Mixed Reality Toolkit for Unreal (MRTK-Unreal) is a set of components, in the form of plugins, samples and documentation, designed to help development of Mixed Reality applications using the Unreal Engine. Currently the toolkit consists of the [UX Tools for Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal), providing code, blueprints and examples to implement UX features for Hololens 2.applications.
+The Mixed Reality Toolkit for Unreal (MRTK-Unreal) is a set of components, in the form of plugins, samples and documentation, designed to help development of Mixed Reality applications using the Unreal Engine. Currently, the toolkit consists of the [UX Tools for Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal), which provides code, blueprints, and examples to implement UX features for Hololens 2 applications.
 
 <br>
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCG]
 
-Take a look at [MRTK's documentation on GitHub](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.11.x/README.md) and get started with the [installation guide](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Installation.html).
-
-### New with UX Tools v0.12
-
-
+Take a look at [MRTK's documentation on GitHub](https://microsoft.github.io/MixedReality-UXTools-Unreal/README.html) and get started with the [installation guide](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Installation.html).
 
 ### Modular
 
-We have built it in a modular way, so you don't need to take every bit of the toolkit into your project.  There are actually a few benefits to this.  It keeps your project size smaller, and makes it easier to manage.  Additionally, because it’s built with scriptable objects and is interface-driven, it’s also possible for you to replace the components that are included with your own, to support other services, systems, and platforms.
-
-### Cross-platform
-
-Speaking of other platforms, it has cross-platform support.  And while this doesn’t mean every single platform is supported, we have made sure none of the toolkit code will break when you switch your build target to other platforms.  The robustness and extensibility of the modular design sets your apps up to support multiple platforms, such as ARCore, ARKit, and OpenVR.
+We've built MRTK Unreal in a modular way, so you don't need to take every bit of the toolkit into your project. You can pick and choose the plugins you need, and add or remove them whenever you see fit. This approach keeps your project size smaller and makes it easier to manage.  
 
 ### Performant
 
-Working with mobile platforms, we constructed it with performance in mind.  This is super important, and we wanted to ensure that the tools aren't going to work against you.
+Working with mobile platforms, we constructed MRTK Unreal with performance in mind. This is super important and we wanted to ensure that the tools aren't going to work against you.
 
 ## See also
 
 * [Install the tools](../install-the-tools.md)
 * [Developing with MRTK for Unreal](unreal-development-overview.md)
 * [MRTK for Unreal - Installation guide (GitHub)](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Installation.html)
-* [MRTK for Unreal - Documentation home (GitHub)](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.11.x/README.md)
+* [MRTK for Unreal - Documentation home (GitHub)](https://microsoft.github.io/MixedReality-UXTools-Unreal/README.html)
