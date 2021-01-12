@@ -1,3 +1,13 @@
+---
+title: Terminology
+description: Diffrent Input system in MRTK.
+author: cadia
+ms.author: cDiaz-MS
+ms.date: 12/01/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Input system
 
 The input system is one of the largest systems out of all features offered by the MRTK.

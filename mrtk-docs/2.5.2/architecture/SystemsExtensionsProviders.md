@@ -1,3 +1,13 @@
+---
+title: SystemExtensionsProvider
+description: MRTK Extensions and data providers
+author: davidkl
+ms.author: davidklane-ms
+ms.date: 12/01/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Systems, extension services and data providers
 
 In the Mixed Reality Toolkit, many of the features are delivered in the form of services. Services are grouped into three

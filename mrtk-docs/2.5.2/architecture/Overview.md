@@ -1,3 +1,13 @@
+---
+title: Overview
+description:Architectural Overview of MRTK.
+author: kesemple
+ms.author: polar-kev
+ms.date: 12/01/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Architecture overview
 
 For an overall introduction to the contents of MRTK, the architecture information contained in this document will help you understand the following:

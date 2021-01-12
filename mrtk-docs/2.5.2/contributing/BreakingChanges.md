@@ -1,3 +1,13 @@
+---
+title: BreakingChanges
+description: policy regarding breaking changes in the MRTK.
+author: kesemple
+ms.author: polar-kev
+ms.date: 12/01/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Breaking changes
 
 Consumers of the MRTK depend on having a stable release-to-release API surface, so that they can take updates to the MRTK without having large breaking changes each time.

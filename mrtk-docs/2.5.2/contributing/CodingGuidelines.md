@@ -1,3 +1,13 @@
+---
+title: CodingGuidelines
+description:  coding principles and conventions to follow when contributing to MRTK.
+author: kesemple
+ms.author: polar-kev
+ms.date: 12/01/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Coding guidelines
 
 This document outlines coding principles and conventions to follow when contributing to MRTK.

@@ -1,3 +1,13 @@
+---
+title: hologram-stabilization
+description: Performance of holograms under different environment and frame rate conditions.
+author: kurtie
+ms.author: keveleigh
+ms.date: 12/01/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Hologram stabilization
 
 ## Performance

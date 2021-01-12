@@ -1,3 +1,14 @@
+---
+title: MixedRealityServices
+description: Services related to MRTK in unity.
+author: 
+ms.author: 
+ms.date: 12/01/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
+
 # What makes a mixed reality feature
 
 To avoid the performance overheads of the `MonoBehaviour` class, all *services* (systems, features, or modules that require independent operation in a mixed reality solution, e.g. input, boundary, spatial awareness) are required to be discrete plain old c# classes which implement `IMixedRealityService` and to register with the `MixedRealityToolkit`.

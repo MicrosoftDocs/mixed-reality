@@ -1,3 +1,13 @@
+---
+title: ReleaseNotes
+description: release nots of the current MRTK version
+author: 
+ms.author: 
+ms.date: 12/01/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Microsoft Mixed Reality Toolkit 2.5.1 release notes
 
 - [What's new](#whats-new)

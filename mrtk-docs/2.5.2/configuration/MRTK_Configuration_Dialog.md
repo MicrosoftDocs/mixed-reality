@@ -1,3 +1,13 @@
+---
+title: MRTK_Configuration_Dialog
+description: Configure MRTK in Unity Project
+author: kesemple
+ms.author: polar-kev
+ms.date: 12/01/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # MRTK project configuration dialog
 
 The MRTK configuration dialog is displayed when Unity loads a project and it is determined that one or more configuration options needs the attention of the developer.

@@ -1,3 +1,13 @@
+---
+title: PefGettingStarted
+description: Documentation to understand and adjust preformance in MRTK.
+author: kurtie
+ms.author: keveleigh
+ms.date: 12/01/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Performance
 
 ## Getting started

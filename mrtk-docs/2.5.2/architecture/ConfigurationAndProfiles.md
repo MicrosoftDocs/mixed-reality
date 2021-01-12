@@ -1,3 +1,13 @@
+---
+title: Configuration And Profiles
+description: Modifying Profiles in MRTK.
+author: 
+ms.author: 
+ms.date: 12/01/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Configuration and profiles
 
 Not every single consumer of the MRTK will want it to behave the same way - some will want to have the spatial

@@ -1,3 +1,13 @@
+---
+title: HTKToMRTKPortingGuide
+description: Migration from HTK to MRTK.
+author: kurtie
+ms.author: keveleigh
+ms.date: 12/01/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Porting guide
 
 ## Controller and hand input

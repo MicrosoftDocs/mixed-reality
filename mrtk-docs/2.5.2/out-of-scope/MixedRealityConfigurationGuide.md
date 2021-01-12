@@ -1,3 +1,13 @@
+---
+title: MixedRealityConfigurationGuide
+description: Documentation to configure MRTK into unity.
+author: 
+ms.author: 
+ms.date: 12/01/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Mixed Reality Toolkit profile configuration guide
 
 ![MRTK logo](../features/Images/MRTK_Logo_Rev.png)

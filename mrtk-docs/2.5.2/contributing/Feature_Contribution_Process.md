@@ -1,3 +1,13 @@
+---
+title: Feature_Contribution_Process
+description: documentation for adding features to the MRTK.
+author: 
+ms.author: 
+ms.date: 12/01/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Feature contribution process
 
 > [!WARNING]

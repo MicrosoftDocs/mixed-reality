@@ -1,3 +1,13 @@
+---
+title: MRTK_and_managed_code_stripping
+description: Code Stripping in MRTK and Unity
+author: 
+ms.author: 
+ms.date: 12/01/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # MRTK and Unity managed code stripping
 
 When using Unity's IL2CPP scripting backend (optional in Unity 2018.4, required in 2019 and newer), [managed code stripping](https://docs.unity3d.com/Manual/ManagedCodeStripping.html) occurs.

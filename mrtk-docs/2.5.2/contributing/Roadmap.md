@@ -1,3 +1,13 @@
+---
+title: Roadmap
+description: documentation for outlining the roadmap of MRTK.
+author: kesemple
+ms.author: polar-kev
+ms.date: 12/01/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Roadmap
 
 This document outlines the roadmap of the Mixed Reality Toolkit. Please note that the following reflects work that is in development and target dates reflect estimates.
