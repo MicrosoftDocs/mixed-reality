@@ -1,4 +1,4 @@
-# Hand physics extension service
+# Hand physics extension services
 
 ![Hand Physics Extension Service](../../features/Images/HandPhysics/MRTK_UX_HandPhysics_Main.jpg)
 
