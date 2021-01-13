@@ -24,6 +24,8 @@ In this tutorial, you will import the tutorial assets and position the provided 
 
 Download and import the following Unity custom package:
 
+//To Updated
+
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
 
 After you have imported the tutorial assets your Project window should look similar to this:
@@ -138,4 +140,5 @@ Then click the **Update Collection** button to update the position of the RoverP
 
 In this tutorial, you learned how to position objects in the scene relative to the user and use MRTK's Grid Object Collection feature to organize objects in a collection.
 
-[Next Tutorial: 5. Creating dynamic content using Solvers](mr-learning-base-05.md)
+> [!div class="nextstepaction"]
+>[Next Tutorial: 5. Creating dynamic content using Solvers](mr-learning-base-05.md)

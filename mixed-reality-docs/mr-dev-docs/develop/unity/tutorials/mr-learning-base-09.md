@@ -40,6 +40,16 @@ In the Hierarchy window, select the **MixedRealityToolkit** object, then in the 
 > [!TIP]
 > For a reminder on how to clone MRTK profiles, you can refer to the [Configuring the MRTK profiles](mr-learning-base-03.md) instructions.
 
+In the Hierarchy window, select the MixedRealityToolkit object, then in the Inspector window, navigate to the Input tab:
+
+* Expand the **Input Data Providers** , click the **+ Add Data Provider** button to add a new Data Provider
+
+![Adding new speech commands](images/mr-learning-base/base-09-section2-step1-1-1.png)
+
+Assign **Microsoft.MixedReality.ToolKit.Windows.Input** > **WindowsSpeechInputProvider** to the **Type** field of the new Data Provider.
+
+![Adding new speech commands](images/mr-learning-base/base-09-section2-step1-1-2.png)
+
 In the Speech > **Speech Commands** section, click the **+ Add a New Speech Command** button four times to add four new speech commands to the list of the existing speech commands, then in the **Keyword** fields enter the following phrases:
 
 * Enable Indicator
@@ -142,4 +152,3 @@ If you're following the Unity development checkpoint journey we've laid out, you
 > [Basic interactions](../mrtk-101.md)
 
 You can always go back to the [Unity development checkpoints](../unity-development-overview.md#1-getting-started) at any time.
-

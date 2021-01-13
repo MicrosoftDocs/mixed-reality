@@ -34,7 +34,7 @@ In the Unity menu, select Mixed Reality Toolkit > Utilities > **Configure Unity 
 
 In the Hierarchy window, select the **MixedRealityToolkit** object, then in the Inspector window, select the MixedRealityToolkit > **Input** tab and take the following steps:
 
-* Clone the **DefaultHoloLens2InputSystemProfile** and give it a suitable name, for example, _GettingStarted_HoloLens2InputSystemProfile_
+* Clone the **DefaultXRSDKInputSystemProfile** and give it a suitable name, for example, _GettingStarted_XRSDKInputSystemProfile_
 * Expand the **Pointers** section
 * Clone the **DefaultMixedRealityPointerProfile** and give it a suitable name, for example, _GettingStarted_MixedRealityPointerProfile_
 * Locate the **Gaze Settings** section and check the **Is Eye Tracking Enabled** checkbox
@@ -50,9 +50,9 @@ In the Hierarchy window, select the **MixedRealityToolkit** object, then in the 
 
 * Expand the **Input Data Providers** > **Input Simulation Service** section
 * Clone the **DefaultMixedRealityInputSimulationProfile** and give it a suitable name, for example, _GettingStarted_MixedRealityInputSimulationProfile_
-* Locate the **Eye Simulation** section and check the **Simulate Eye Position** checkbox
+* Locate **Eye Gaze Simulation** and set the **Default Eye Gaze Simulation Mode** to **Camera Forward Axis**
 
-![Unity MixedRealityToolkit component with newly created profile applied and eye simulation enabled](images/mr-learning-base/base-08-section3-step1-1.png)
+![Unity with TextMeshPro object selected](images/mr-learning-base/base-08-section3-step1-1.png)
 
 ## Adding eye-tracking to objects
 
