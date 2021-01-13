@@ -28,7 +28,7 @@ The main configuration profile, which is attached to the *MixedRealityToolkit* G
 All the "default" profiles for the Mixed Reality Toolkit can be found in the SDK project in the folder Assets/MRTK/SDK/Profiles.
 
 > [!IMPORTANT]
-> DefaultHoloLens2ConfigurationProfile is optimized for HoloLens 2. See [Profiles](Profiles/Profiles.md) for the details.
+> DefaultHoloLens2ConfigurationProfile is optimized for HoloLens 2. See [Profiles](../features/Profiles/Profiles.md) for the details.
 
 When you open the main Mixed Reality Toolkit Configuration Profile, you will see the following screen in the inspector:
 
@@ -103,11 +103,11 @@ Each of the individual profiles are detailed below:
 - Focus Settings
 - [Input actions settings](#input-actions-settings)
 - [Input actions rules](#input-actions-rules)
-- [Pointer configuration](#Pointer-configuration)
-- [Gestures configuration](#Gestures-configuration)
-- [Speech commands](#Speech-commands)
-- [Controller mapping configuration](#Controller-mapping-configuration)
-- [Controller visualization settings](#Controller-visualization-settings)
+- [Pointer configuration](#pointer-configuration)
+- [Gestures configuration](#gestures-configuration)
+- [Speech commands](#speech-commands)
+- [Controller mapping configuration](#controller-visualization-settings)
+- [Controller visualization settings](#controller-visualization-settings)
 
 ---
 <a name="boundary"></a>

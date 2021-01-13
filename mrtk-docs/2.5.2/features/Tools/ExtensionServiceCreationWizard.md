@@ -22,13 +22,14 @@ By default, your new script assets will be generated in the `MixedRealityToolkit
 
 Generated service scripts include some prompts similar to new MonoBehaviour scripts. They will let you know where to initialize and update your service.
 
+```csharp
     namespace Microsoft.MixedReality.Toolkit.Extensions
     {
         [MixedRealityExtensionService(SupportedPlatforms.WindowsStandalone|SupportedPlatforms.MacStandalone|SupportedPlatforms.LinuxStandalone|SupportedPlatforms.WindowsUniversal)]
         public class NewService : BaseExtensionService, INewService, IMixedRealityExtensionService
         {
             private NewServiceProfile newServiceProfile;
-    
+
             public NewService(IMixedRealityServiceRegistrar registrar,  string name,  uint priority,  BaseMixedRealityProfile profile) : base(registrar, name, priority, profile) 
             {
                 newServiceProfile = (NewServiceProfile)profile;
@@ -45,5 +46,6 @@ Generated service scripts include some prompts similar to new MonoBehaviour scri
             }
         }
     }
+```
 
 If you chose to register your service in the wizard, all you have to do is edit this script and your service will automatically be updated. Otherwise you can read about [registering your new service here](../../out-of-scope/MixedRealityConfigurationGuide.md).

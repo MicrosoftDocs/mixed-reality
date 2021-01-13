@@ -26,7 +26,7 @@ Physics behaviour can be enabled for the object manipulator by adding a rigidbod
 
 As well as this, manipulation can be constrained by adding [manipulation constraint components](README_ConstraintManager.md#transform-constraints) to the object. These are special components that work with manipulation and change the manipulation behaviour in some way.
 
-![Manipulation Handler](Images/ObjectManipulator/MRTK_ObjectManipulator_Howto.png)
+![Manipulation Handler Details](Images/ObjectManipulator/MRTK_ObjectManipulator_Howto.png)
 
 ## Inspector properties and fields
 
@@ -75,7 +75,7 @@ Specifies how two hand manipulation can transform an object. Because this proper
 - *Scale*: Scaling is allowed if selected.
 - *Rotate*: Rotation is allowed if selected.
 
-![Manipulation Handler](Images/ManipulationHandler/MRTK_ManipulationHandler_TwoHanded.jpg)
+![Manipulation Handler Two Handed](Images/ManipulationHandler/MRTK_ManipulationHandler_TwoHanded.jpg)
 
 ### Constraints
 

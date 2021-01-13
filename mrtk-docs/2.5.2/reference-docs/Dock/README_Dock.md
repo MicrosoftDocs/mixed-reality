@@ -1,3 +1,13 @@
+---
+title: README_Dock
+description: description for Dock Controls.
+author: 
+ms.author: 
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Dock
 
 ![Dock](../../features/Images/Dock/MRTK_UX_Dock_Main.png)

@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Near menu
 
-![Near Menu](Images/NearMenu/MRTK_UX_NearMenu.png)
+![Near Menu UX](Images/NearMenu/MRTK_UX_NearMenu.png)
 
 Near Menu is a UX control which provides a collection of buttons or other UI components. It is floating around the user's body and easily accessible anytime. Since it is loosely coupled with the user, it does not disturb the user's interaction with the target content. The user can use the 'Pin' button to world-lock/unlock the menu. The menu can be grabbed and placed at a specific position.
 

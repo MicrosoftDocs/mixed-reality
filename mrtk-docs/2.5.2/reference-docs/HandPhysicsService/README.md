@@ -1,3 +1,13 @@
+---
+title: README_HandPhysicsExtensionService
+description: description Hand Physics extension services.
+author: 
+ms.author: 
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Hand physics extension services
 
 ![Hand Physics Extension Service](../../features/Images/HandPhysics/MRTK_UX_HandPhysics_Main.jpg)

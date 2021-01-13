@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Input Overview
 description: Overview of Input system in MRTK
 author: keveleigh
 ms.author: kurtie

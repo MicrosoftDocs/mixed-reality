@@ -22,7 +22,7 @@ The following two items must be defined first when configuring a Spatial Mesh Ob
 > [!NOTE]
 > All observers must extend the [IMixedRealitySpatialAwarenessObserver](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver) interface.
 
-![Mesh Observer General Settings](../Images/SpatialAwareness/SpatialAwarenessMeshObserverProfile_TypesPlatforms.png)
+![Mesh Observer General Profile Settings](../Images/SpatialAwareness/SpatialAwarenessMeshObserverProfile_TypesPlatforms.png)
 
 ### General settings
 

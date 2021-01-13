@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Hand interaction examples scene
 
-![Hand Interaction Examples](Images/MRTK_Examples.png)
+![Hand Interaction Example Scene](Images/MRTK_Examples.png)
 
 The `HandInteractionExamples` (Assets/MRTK/Examples/Demos/HandTracking/Scenes/HandInteractionExamples.unity) example scene contains various types of interactions and UI controls that highlight articulated hand input.
 
@@ -26,24 +26,24 @@ If you see large text after the TextMesh Pro import, open another Unity scene an
 ## Pressable button
 
 See [button](README_Button.md) page for the details.
-![Hand Interaction Examples](Images/HandInteractionExamples/MRTK_Examples_PressTouch.png)
+![Hand Interaction Examples Press Touch](Images/HandInteractionExamples/MRTK_Examples_PressTouch.png)
 
 ## Bounds Control
 
 See [bounds control](README_BoundsControl.md) page for the details.
-![Hand Interaction Examples](Images/HandInteractionExamples/MRTK_Examples_BoundingBox.png)
+![Hand Interaction Examples Bounding Box](Images/HandInteractionExamples/MRTK_Examples_BoundingBox.png)
 
 ## Manipulation handler
 
 See [manipulation handler](README_ManipulationHandler.md) page for the details.
-![Hand Interaction Examples](Images/HandInteractionExamples/MRTK_Examples_Manipulation.png)
+![Hand Interaction Examples Manipulation](Images/HandInteractionExamples/MRTK_Examples_Manipulation.png)
 
 ## Slate
 
 See [slate](README_Slate.md) page for the details.
-![Hand Interaction Examples](Images/HandInteractionExamples/MRTK_Examples_Slate.png)
+![Hand Interaction Examples Slate](Images/HandInteractionExamples/MRTK_Examples_Slate.png)
 
 ## System keyboard
 
 See [system keyboard](README_SystemKeyboard.md) page for the details.
-![Hand Interaction Examples](Images/HandInteractionExamples/MRTK_Examples_Keyboard.png)
+![Hand Interaction Examples Keyboard](Images/HandInteractionExamples/MRTK_Examples_Keyboard.png)

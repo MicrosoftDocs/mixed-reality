@@ -1,3 +1,13 @@
+---
+title: README_Dialog
+description: Description for Dialog Controls.
+author: 
+ms.author: 
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Dialog
 
 ![Dialog](../../features/Images/Dialog/MRTK_UX_Dialog_Main.png)

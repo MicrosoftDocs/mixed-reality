@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Tap to Place
 
-![TapToPlace](Images/Solver/TapToPlace/TapToPlaceIntroGif.gif)
+![TapToPlace Intro](Images/Solver/TapToPlace/TapToPlaceIntroGif.gif)
 
 Tap to Place is a far interaction component that is used to place a game object on surface. This component is useful for placing objects on a spatial mesh. Tap to Place uses a combination of two clicks and head movement to place an object. A click to start the placement, head movement to control the position of the object and a click to place the object in the scene.
 
@@ -51,7 +51,7 @@ Tap to Place is a far interaction component that is used to place a game object 
 
     `TrackedTargetType`: Head (Default) |  `TrackedTargetType`: Controller Ray
     :-------------------------:|:-------------------------:
-    ![TapToPlaceInputSimulationHead](Images/Solver/TapToPlace/TapToPlaceInputSimulationHead.gif)  |  ![TapToPlaceInputSimulationControllerRay](Images/Solver/TapToPlace/TapToPlaceInputSimulationControllerRay.gif)
+    ![TapToPlaceInputSimulationHead Example View](Images/Solver/TapToPlace/TapToPlaceInputSimulationHead.gif)  |  ![TapToPlaceInputSimulationControllerRay Example View](Images/Solver/TapToPlace/TapToPlaceInputSimulationControllerRay.gif)
 
 ## Tap to Place Code Configurability
 
@@ -99,7 +99,7 @@ Tap to Place object selection timing can also be controlled via `StartPlacement(
 
 The Tap to Place example scene consists of 4 placeable objects, each with a different configuration. The example scene contains walls to show the surface placement behavior that are disabled by default in the hierarchy. The example scene can be found in the Microsoft.MixedReality.Toolkit.Unity.Examples unity package found on the [Release Page](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases). The scene location is: *MRTK.Examples/Demos/Solvers/Scenes/TapToPlaceExample.unity*
 
-![TapToPlaceExampleScene](Images/Solver/TapToPlace/TapToPlaceExampleScene.gif)
+![ExampleScene for Tap to place](Images/Solver/TapToPlace/TapToPlaceExampleScene.gif)
 
 ## See also
 
