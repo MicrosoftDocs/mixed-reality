@@ -5,7 +5,7 @@ author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 6dof controllers, motion controllers, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, scrolling, grip, state
+keywords: 6dof controllers, motion controllers, pairing, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, scrolling, grip, state
 ---
 
 # Motion controllers
