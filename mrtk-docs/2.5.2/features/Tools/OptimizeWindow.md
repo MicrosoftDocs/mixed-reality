@@ -36,7 +36,7 @@ A green check icon means that an optimal value has been configured in the projec
 
 ### Depth buffer sharing
 
-To improve [hologram stabilization](../hologram-Stabilization.md), developers can share the application's depth buffer which gives the platform information on where and what holograms to stabilize in the rendered scene.
+To improve [hologram stabilization](../../performance/hologram-Stabilization.md), developers can share the application's depth buffer which gives the platform information on where and what holograms to stabilize in the rendered scene.
 
 ### Depth buffer format
 
