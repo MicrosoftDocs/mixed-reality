@@ -1,3 +1,13 @@
+---
+title: README_MRTKStandardShader
+description: Documentation for MRTKStandardShader
+author: 
+ms.author: 
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # MRTK Standard Shader
 
 ![Standard shader examples](Images/MRTKStandardShader/MRTK_StandardShader.jpg)
@@ -179,7 +189,7 @@ Triplanar mapping is a technique to programmatically texture a mesh. Often used 
 
 Vertex extrusion in world space. Useful for visualizing extruded bounding volumes or transitions in/out meshes.
 
-![normal map scale](Images/MRTKStandardShader/MRTK_VertexExtrusion.gif)
+![vertex extrusion](Images/MRTKStandardShader/MRTK_VertexExtrusion.gif)
 
 ### Miscellaneous
 
