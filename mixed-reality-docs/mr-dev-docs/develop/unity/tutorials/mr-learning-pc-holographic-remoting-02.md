@@ -40,7 +40,7 @@ In the Project Settings window, expand the **Publishing Settings**, scroll down 
 * Internet Clint server
 * Private Network Client Server
 
-In the **XR Settings** section, select the **WSA Holographic Remoting Supported** checkbox and enable the Holographic Remoting.
+In the **XR Plug-in Management > Windows Mixed Reality** section, select the **Holographic Remoting** checkbox to enable the Holographic Remoting.
 
 ![Unity XR Settings window with WSA Holographic Remoting Supported enabled](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step1-1.png)
 
