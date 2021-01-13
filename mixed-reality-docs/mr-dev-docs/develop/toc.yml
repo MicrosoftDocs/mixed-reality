@@ -164,16 +164,16 @@
             href: unity/tutorials/mr-azure-312.md
           - name: MR and Azure 313 - IoT Hub Service
             href: unity/tutorials/mr-azure-301.md
-   - name: Setting up your project
+  - name: Setting up your project
     items:
-      - name: Introducing MRTK
-        href: unity/mrtk-getting-started.md
-      - name: Configuring your project without MRTK
-        href: unity/configure-unity-project.md
-      - name: Using the Mixed Reality OpenXR Plugin
-        href: unity/openxr-getting-started.md
-      - name: OpenXR plugin Supported Features
-        href: unity/openxr-supported-features.md
+    - name: Introducing MRTK
+      href: unity/mrtk-getting-started.md
+    - name: Configuring your project without MRTK
+      href: unity/configure-unity-project.md
+    - name: Using the Mixed Reality OpenXR Plugin
+      href: unity/openxr-getting-started.md
+    - name: OpenXR plugin Supported Features
+      href: unity/openxr-supported-features.md
   - name: Basic building blocks
     items:
       - name: MRTK 101 - Building core interactions using Mixed Reality Toolkit Unity
