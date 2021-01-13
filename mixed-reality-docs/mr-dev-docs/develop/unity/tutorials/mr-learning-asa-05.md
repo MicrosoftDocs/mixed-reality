@@ -22,15 +22,15 @@ In this tutorial, you will learn how to build your project to Android and iOS de
 
 In this section, you will upgrade and install the following inbuilt packages:
 
-* AR Foundation 3.1.3
-* XR Legacy Input Helpers 2.1.4
-* ARCore XR Plugin 3.1.3 for Android support
-* ARKit XR plugin 3.1.3 for iOS support
+* AR Foundation 2.1.8
+* XR Legacy Input Helpers 2.1.6
+* ARCore XR Plugin 2.1.11 for Android support
+* ARKit XR plugin 2.1.9 for iOS support
 
 > [!CAUTION]
 > Not all version are compatible with MRTK and only certain version works together, so make sure you install the exact versions listed above.
 
-In the Unity menu, select **Window** > **Package Manager** to open the Package Manager window, then select **AR Foundation** > **3.1.3** and click the **Update to 3.1.3** button to update the package:
+In the Unity menu, select **Window** > **Package Manager** to open the Package Manager window, then select **AR Foundation** > **2.1.8** and click the **Update to 2.1.8** button to update the package:
 
 ![Unity Package Manager with AR Foundation selected](images/mr-learning-asa/asa-05-section1-step1-1.png)
 
@@ -60,7 +60,7 @@ Using the **Type** dropdown, change the type to **Microsoft.MixedReality.Toolkit
 
 With the **MixedRealityToolkit** object still selected in the Hierarchy window, use the **Add Component** button in the Inspector window to add the following components:
 
-* AR Anchor Manager (Script)
+* AR Reference Point Manager (Script)
 * DisableDiagnosticsSystem (Script)
 
 ![Unity MixedRealityToolkit object with AR Anchor Manager and DisableDiagnosticsSystem components added ](images/mr-learning-asa/asa-05-section2-step1-4.png)
@@ -88,6 +88,10 @@ In the Unity menu, select **Mixed Reality Toolkit** > **Utilities** > **Configur
 In the Unity menu, select **Edit** > **Project Settings...** to open the Player Settings window, then locate the **Player** >  **Other Settings** section, select **Vulkan** and remove it by clicking the **"-"** symbol:
 
 ![Unity Other Settings with Vulcan selected](images/mr-learning-asa/asa-05-section3-step1-3.png)
+
+In the Unity menu, select **Edit** > **Project Settings...** > **XR Plug-in Management**, make sure you are in **Android** platform and in **Plug-in Providers** check the **ARCore** checkbox.
+
+![Unity MRTK Project Configurator window Android](images/mr-learning-asa/asa-05-section3-step1-2-1.png)
 
 Close the Player Settings window and open the Build Settings window again.
 
