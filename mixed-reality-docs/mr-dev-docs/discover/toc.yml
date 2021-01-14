@@ -5,9 +5,11 @@
 - name: What is a hologram?
   href: hologram.md
 - name: Mixed Reality Learning overview
-  href: mr-learning-overview.md 
+  href: mr-learning-overview.md
 - name: Expand your design process
   href: case-study-expanding-the-design-process-for-mixed-reality.md
+- name: Running the MRTK Examples Hub
+  href: running-examples-hub.md
 - name: Designing holograms
   href: designing-holograms.md
 - name: Case studies overview
