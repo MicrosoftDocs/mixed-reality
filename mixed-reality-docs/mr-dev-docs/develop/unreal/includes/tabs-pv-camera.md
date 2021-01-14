@@ -125,7 +125,7 @@ void ACamCapture::BeginPlay()
     // Create a dynamic material instance from the game's camera material.
     // Right-click on a material in the project and select "Copy Reference" to get this string.
     FString CameraMatPath("Material'/Game/Materials/CamTextureMaterial.CamTextureMaterial'");
-    UMaterial* BaseMateriall = (UMaterial*)StaticLoadObject(UMaterial::StaticClass(), nullptr, *CameraMatPath, nullptr, LOAD_None, nullptr);
+    UMaterial* BaseMaterial = (UMaterial*)StaticLoadObject(UMaterial::StaticClass(), nullptr, *CameraMatPath, nullptr, LOAD_None, nullptr);
     DynamicMaterial = UMaterialInstanceDynamic::Create(BaseMaterial, this);
 
     // Use the dynamic material instance when rendering the camera mesh.
