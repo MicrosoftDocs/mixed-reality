@@ -13,7 +13,7 @@ We recommend the [Unity LTS (Long Term Support)](https://unity3d.com/unity/qa/lt
 
 [Mixed Reality Toolkit](../unity/mrtk-getting-started.md) (MRTK) is an open-source, cross-platform development kit for mixed reality applications. MRTK provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. The toolkit is intended to accelerate the development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and the OpenVR platform.
 
-For installation, we recommend completing the [Getting Started section](../unity/unity-development-overview.md#1-getting-started) of our curated [Unity development journey](../unity/unity-development-overview.md). If you're already following the Unity development journey, finish up the rest of the setup steps listed below and continue on to the [HoloLens 2 Getting Started tutorials](../unity/tutorials/mr-learning-base-01.md).
+For installation, we recommend completing the getting started section in our curated [HoloLens](../unity/unity-development-overview.md#1-getting-started) or [VR](../unity/unity-development-wmr-overview.md#1-getting-started) development journeys. If you're already following the Unity development for HoloLens journey, finish up the rest of the setup steps listed below and continue on to the [HoloLens 2 Getting Started tutorials](../unity/tutorials/mr-learning-base-01.md).
 
 > [!IMPORTANT]
 > Note that installation instructions are targeted for the latest stable combination of MRTK and Unity releases, which are **MRTK 2.4.0** and **Unity 2019.3.15**.
@@ -64,7 +64,7 @@ Possible solutions include:
 
 ##### I can't deploy over USB
 
-If you're not able to deploy an application directly over USB, make sure you've met all the installation requirements listed above and follow our [step-by-step tutorial](../unity/tutorials/mr-learning-base-02.md#building-your-application-to-your-hololens-2).
+If you're not able to deploy an application directly over USB, make sure you've met all the installation requirements listed above and follow our [step-by-step tutorial](../unity/tutorials/mr-learning-base-02.md#building-and-deploying-to-your-hololens-2).
 
 #### Immersive (VR) headset requirements
 
@@ -107,16 +107,24 @@ There are currently [known issues](https://docs.microsoft.com/windows/mixed-real
 If you're new to MRTK development with Unity, we recommend following our curated Unity development journey:
 
 > [!div class="nextstepaction"]
-> [Start your Unity journey](../unity/unity-development-overview.md)
+> [Start your Unity for HoloLens journey](../unity/unity-development-overview.md)
+
+> [!div class="nextstepaction"]
+> [Start your Unity for VR journey](../unity/unity-development-wmr-overview.md)
 
 ## Next Development Checkpoint
 
-If you're following the Unity development checkpoint journey we've laid out, your next task is to work through our HoloLens 2 tutorial series.
+If you're following the Unity for HoloLens development checkpoint journey we've laid out, your next task is to work through our HoloLens 2 tutorial series.
 
 > [!div class="nextstepaction"]
 > [HoloLens 2 tutorial series](../unity/tutorials/mr-learning-base-01.md)
 
-You can always go back to the [Unity development checkpoints](../unity/unity-development-overview.md#1-getting-started) at any time.
+If you're following the Unity for VR journey, your next task is to setup your project.
+
+> [!div class="nextstepaction"]
+> [Configuring your project for WMR](../unity/configure-unity-project.md)
+
+You can always go back to the Unity development checkpoints for [HoloLens](../unity/unity-development-overview.md#1-getting-started) and [VR](../unity/unity-development-wmr-overview.md#1-getting-started) at any time.
 
 # [Unreal](#tab/unreal)
 
