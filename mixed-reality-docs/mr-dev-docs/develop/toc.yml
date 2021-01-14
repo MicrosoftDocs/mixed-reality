@@ -200,7 +200,7 @@
         href: unity/spatial-mapping-in-unity.md
       - name: Spatial sound 
         href: unity/spatial-sound-in-unity.md
-  - name: Advanced building blocks
+  - name: Advanced features
     items:
       - name: Shared experiences 
         href: unity/shared-experiences-in-unity.md
@@ -292,7 +292,7 @@
         href: unreal/unreal-azure-spatial-anchors.md
       - name: Voice input 
         href: unreal/unreal-voice-input.md
-  - name: Advanced building blocks
+  - name: Advanced features
     items:
       - name: HoloLens Photo/Video Camera
         href: unreal/unreal-hololens-camera.md
