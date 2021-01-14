@@ -44,7 +44,7 @@ All of the core building blocks for mixed reality applications are exposed in a 
 
 [!INCLUDE[](../includes/unity-building-blocks.md)]
 
-### 3. Platform capabilities and APIs
+### 3. Advanced features
 
 Other key features that play a role in mixed reality applications are available through Unity APIs without any extra packages or setup. These features can be added to Unity projects with or without MRTK installed. After diving into the more advanced capabilities that Unity offers, you'll be able to build deeper, complex Mixed Reality apps.
 

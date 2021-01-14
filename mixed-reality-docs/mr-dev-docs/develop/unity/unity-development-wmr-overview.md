@@ -37,7 +37,7 @@ After starting a new immersive project, you'll need some basic building blocks t
 
 [!INCLUDE[](../includes/unity-building-blocks-wmr.md)]
 
-### 3. Platform capabilities and APIs
+### 3. Advanced features
 
 Other key features that play a role in immersive applications are available through Unity APIs without any extra packages or setup. After diving into the more advanced capabilities that Unity offers, you'll be able to build deeper, complex VR apps.
 
