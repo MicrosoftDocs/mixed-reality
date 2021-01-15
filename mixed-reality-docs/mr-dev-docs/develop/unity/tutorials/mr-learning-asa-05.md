@@ -142,7 +142,7 @@ Choose a suitable location to store your Xcode project, for example, _D:\MixedRe
 
 ![Unity Build Settings window with Save prompt window iOS](images/mr-learning-asa/asa-05-section4-step1-5.png)
 
-When the build process is complete, follow the [Export the Xcode project](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project) instructions to learn to deploy your Xcode project to your iOS device.
+When the build process is complete, follow the [Export the Xcode project](/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project) instructions to learn to deploy your Xcode project to your iOS device.
 
 ## Congratulations
 

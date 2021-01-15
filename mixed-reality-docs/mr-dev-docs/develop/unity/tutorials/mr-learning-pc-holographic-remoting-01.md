@@ -62,7 +62,7 @@ Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base
 Download and **import** the [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.0/MRTK.Tutorials.PCHolographicRemoting.unitypackage).
 
 >[!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](../../../mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) instructions.
+> For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](./mr-learning-base-02.md#import-the-mixed-reality-toolkit) instructions.
 
 After importing the tutorial assets, your Project window should look similar to this:
 
@@ -187,7 +187,7 @@ In the Hierarchy window, select the ***POI-Camera*** object. In the Inspector wi
 Follow the same process and assign respective tooltip objects to their same **MarsCuriosityRover** parts
 **While Looking At Target ()** & **On Look Away ()** events.
 
-To enable eye tracking, please follow these [guidelines](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch5#5-enable-simulated-eye-tracking-for-in-editor-simulations).
+To enable eye tracking, please follow these [guidelines](/windows/mixed-reality/mrlearning-base-ch5#5-enable-simulated-eye-tracking-for-in-editor-simulations).
 
 ## Congratulations
 
