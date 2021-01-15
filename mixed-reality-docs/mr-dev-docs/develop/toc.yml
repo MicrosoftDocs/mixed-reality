@@ -191,7 +191,7 @@
       - name: Gestures 
         href: unity/gestures-in-unity.md
       - name: Hand and Eye tracking 
-        href: unity/hand-eye-in-unit.md
+        href: ./unity/hand-eye-in-unity.md
       - name: Voice input
         href: unity/voice-input-in-unity.md
       - name: Spatial mapping 
@@ -387,7 +387,7 @@
         - name: Shared experiences in Mixed Reality
           href: platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md
         - name: Azure Spatial Anchors
-          href: https://docs.microsoft.com/azure/spatial-anchors/
+          href: /azure/spatial-anchors/
         - name: Spectator view
           href: platform-capabilities-and-apis/spectator-view.md
         - name: WebRTC
@@ -423,9 +423,9 @@
         - name: Version history
           href: platform-capabilities-and-apis/holographic-remoting-version-history.md
         - name: Holographic Remoting software license terms
-          href: https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
+          href: /legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
         - name: Holographic Remoting for HoloLens (1st Gen)
-          href: https://docs.microsoft.com
+          href: 
         - name: Adding Holographic Remoting
           href: platform-capabilities-and-apis/add-holographic-remoting.md
     - name: App quality and testing

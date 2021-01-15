@@ -40,7 +40,7 @@ Additionally, Microsoft doesn't provide assurances that Research Mode or equival
 
 ## Security and performance
 
-Enabling Research Mode uses more battery power than using the HoloLens 2 under normal conditions, even if the application using the Research Mode features isn't running.  Enabling this mode can also lower the overall security of your device because applications may misuse sensor data.  You can find more information on device security in the [HoloLens security FAQ](https://docs.microsoft.com/hololens/hololens-faq-security).  
+Enabling Research Mode uses more battery power than using the HoloLens 2 under normal conditions, even if the application using the Research Mode features isn't running.  Enabling this mode can also lower the overall security of your device because applications may misuse sensor data.  You can find more information on device security in the [HoloLens security FAQ](/hololens/hololens-faq-security).  
 
 ## Device support
 <table>
@@ -51,8 +51,8 @@ Enabling Research Mode uses more battery power than using the HoloLens 2 under n
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens first Gen</strong></a></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens first Gen</strong></a></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></a></td>
     </tr>
      <tr>
         <td>Head Tracking Cameras</td>
@@ -89,7 +89,7 @@ Research Mode is an extension of Developer Mode. Before starting, the developer 
 * Select **For Developers** and enable **Developer Mode**.
 * Scroll down and enable **Device Portal**.
 
-After the developer features  are enabled, [connect to the device portal](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-hololens) to enable the Research Mode features:
+After the developer features  are enabled, [connect to the device portal](/windows/uwp/debug-test-perf/device-portal-hololens) to enable the Research Mode features:
 
 * Go to **System > Research Mode** in the **Device Portal**.
 * Select **Allow access to sensor stream**.
@@ -101,15 +101,15 @@ Once you've restarted the device, the applications loaded through the **Device P
 *Research Mode window in the HoloLens Device Portal*
 
 > [!IMPORTANT]
-> Research Mode for HoloLens 2 is available beginning with build 19041.1356. If you need access in an earlier build, sign up for our [Insider Preview](https://docs.microsoft.com/hololens/hololens-insider) program.
+> Research Mode for HoloLens 2 is available beginning with build 19041.1356. If you need access in an earlier build, sign up for our [Insider Preview](/hololens/hololens-insider) program.
 
 ### Using sensor data in your apps
 
-Applications can access the sensor stream data in the same way that [Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197) accesses photo and video camera streams. 
+Applications can access the sensor stream data in the same way that [Media Foundation](/windows/win32/medfound/microsoft-media-foundation-sdk) accesses photo and video camera streams. 
 
 All APIs that work for HoloLens development are also available in Research Mode. In particular, the application  knows precisely where HoloLens is in 6DoF space at each sensor frame capture time.
 
-We have sample applications showing Research Mode stream access, using the [intrinsics and extrinsics](https://docs.microsoft.com/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world), and recording streams:
+We have sample applications showing Research Mode stream access, using the [intrinsics and extrinsics](/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world), and recording streams:
 * [HoloLens (first gen)](https://github.com/Microsoft/HoloLensForCV)
 * [HoloLens 2](https://github.com/microsoft/HoloLens2ForCV)
 
@@ -121,7 +121,7 @@ For HoloLens 2, use the [issue tracker](https://github.com/microsoft/HoloLens2Fo
 
 ## See also
 
-* [Microsoft Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197)
+* [Microsoft Media Foundation](/windows/win32/medfound/microsoft-media-foundation-sdk)
 * [HoloLensForCV GitHub repo](https://github.com/Microsoft/HoloLensForCV)
 * [HoloLens2ForCV GitHub repo](https://github.com/microsoft/HoloLens2ForCV)
 * [Using the Windows Device Portal](using-the-windows-device-portal.md)
