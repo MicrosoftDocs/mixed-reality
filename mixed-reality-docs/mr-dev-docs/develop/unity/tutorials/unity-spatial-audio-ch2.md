@@ -79,9 +79,9 @@ navigate to  **Audio Source** > **3D Sound Settings** and Configure as follows:
 
 ## Testing the spatialize audio
 
-To test the spatialize audio in the unity you have to add an audio clip in the **Audio Source** component with **Loop** option checked in on **PressableButtonHoloLens2** object.
+To test the spatialize audio in the unity editor you have to add an audio clip in the **Audio Source** component with **Loop** option checked in on **PressableButtonHoloLens2** object.
 
-In the play mode move the **PressableButtonHoloLens2** object from left to right and compare with and without spatial audio enabled on. You can also change the Audio Source settings for testing by:
+In the play mode move the **PressableButtonHoloLens2** object from left to right and compare with and without spatial audio enabled on your workstation. You can also change the Audio Source settings for testing by:
 
 * Moving the **Spatial Blend** property between 0 - 1 (2D non-spatialized and 3D spatialized sound)
 * Checking and unchecking the **Spatialize** property

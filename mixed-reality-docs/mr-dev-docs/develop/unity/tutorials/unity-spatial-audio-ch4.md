@@ -113,7 +113,7 @@ In the Hierarchy window, select the **PressableButtonHoloLens2**. In the Inspect
 
 ## Congratulations
 
-In this tutorial, you have learned how to enable and disable spatialization at run time, test out the app on a HoloLens 2 or in the Unity editor. In the app, you can now click the button to activate and deactivate spatialization on the video.
+In this tutorial, you have learned how to enable and disable spatialization at run time, test out the app on a HoloLens 2 or in the Unity editor. In the app, you can now click the button to activate and deactivate spatialization of the audio.
 
 In the next tutorial you'll add a reverb effect to give sounds a sense of distance.
 

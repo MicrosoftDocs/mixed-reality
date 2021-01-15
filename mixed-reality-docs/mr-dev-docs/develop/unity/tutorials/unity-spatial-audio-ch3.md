@@ -106,7 +106,7 @@ To set the Video Player to route its audio to the **Audio Source**, select the *
 
 ## Congratulations
 
-In this tutorial, you have learned how to spatialize audio from an video source Try out your app on a HoloLens 2 or in the Unity editor. You'll see and hear the video, and the audio from the video will be spatialized.
+In this tutorial, you have learned how to spatialize audio from an video source Try out your app on a HoloLens 2 or in the Unity editor. You'll see and hear the video, and the audio from the video is spatialized.
 
 In the next tutorial you will learn how to Enable and disable spatialization at run time
 

@@ -8,7 +8,7 @@ ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens2, spatial audio, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head-related transfer function, reverb, Microsoft Spatializer
 ---
 
-# 1. Adding spatial audio to your Unity project
+# 1. Adding Spatial audio to your Unity project
 
 ## Overview
 
