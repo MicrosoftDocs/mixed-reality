@@ -50,7 +50,7 @@ Click the **Create** button to create an instance of this service:
 On the Create page, click the **Prediction** option and enter the following values:
 
 * For **Subscription**, select **Free Trail** if you have a trial subscription, otherwise, select one of your other subscriptions
-* For the **Resource group**, click the **Create new** link, enter a suitable name, for example, *MRKT-Tutorials*, and then click the **OK**
+* For the **Resource group**, click the **Create new** link, enter a suitable name, for example, *MRKT-Tutorials*, and then click on **OK**
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-3.png)
 
@@ -68,7 +68,7 @@ While still on the Create page, enter the following values:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-4.png)
 
-Next, go to the **Review + create** tab, review the details, and then click the **Create** button, located at the bottom of the page, to create the resource, as well as, the new resource group if you configured one to be created:
+Next, click on **Review + create** tab, review the details, and then click the **Create** button, located at the bottom of the page, to create the resource, as well as, the new resource group if you configured one to be created:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-5.png)
 
@@ -109,7 +109,7 @@ Once signed in, click **New app** and enter the following values in the **Create
 * For **Name**, enter a suitable name, for example, *MRTK Tutorials - AzureSpeechServices*
 * For **Culture**, select **English**
 * For **Description**, optionally enter a suitable description
-* For **Prediction resource**, select the prediction resource by dropdown list that had been craeted azure portal.
+* For **Prediction resource**, select the prediction resource by dropdown list that had been created azure portal.
 
 Then click the **Done** button to create the new app:
 
@@ -184,7 +184,7 @@ Once back on the the PressButton intent page, click on the word **go** and then 
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-1.png)
 
-The **go ahead** phrase is now defined as an **Action** entity value. Now you can notice the action entity value under the word go ahead: 
+The **go ahead** phrase is now defined as an **Action** entity value. Now you can notice the action entity value under the word go ahead:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-2.png)
 
@@ -215,7 +215,6 @@ The PressButton intent example utterance 'go ahead and launch the rocket' is now
 When all the example utterances have been labeled, your PressButton intent page should look similar to this:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-5.png)
-
 
 ### 6. Train, test, and publish the app
 
