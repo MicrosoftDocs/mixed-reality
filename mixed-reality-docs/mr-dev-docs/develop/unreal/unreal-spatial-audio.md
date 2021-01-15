@@ -119,6 +119,6 @@ You can always go back to the [Unreal development checkpoints](unreal-developmen
 
 
 ## See also
-* [Spatial Sound](https://docs.microsoft.com/windows/mixed-reality/spatial-sound)
-* [Spatial Sound Design](https://docs.microsoft.com/windows/mixed-reality/spatial-sound-design)
-* [MR Spatial 220: Spatial sound](https://docs.microsoft.com/windows/mixed-reality/holograms-220)
+* [Spatial Sound](/windows/mixed-reality/spatial-sound)
+* [Spatial Sound Design](/windows/mixed-reality/spatial-sound-design)
+* [MR Spatial 220: Spatial sound](/windows/mixed-reality/holograms-220)

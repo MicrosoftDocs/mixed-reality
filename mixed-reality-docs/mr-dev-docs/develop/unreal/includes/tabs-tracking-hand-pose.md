@@ -49,7 +49,7 @@ enum class EWMRHandKeypoint : uint8
 };
 ```
 
-You can find the numerical values for each enum case in the [Windows.Perception.People.HandJointKind](https://docs.microsoft.com/uwp/api/windows.perception.people.handjointkind) table.
+You can find the numerical values for each enum case in the [Windows.Perception.People.HandJointKind](/uwp/api/windows.perception.people.handjointkind) table.
 
 ### Supporting Hand Tracking
 
@@ -87,4 +87,3 @@ Here's a breakdown of GetHandJointTransform's function parameters:
 * **Transform** – coordinates and orientation of bone’s base. You can request the base of the next bone to get the transform data for the end of a bone. A special Tip bone gives end of distal.
 * **Radius—radius of the base of the bone.
 * **Return Value—true if the bone is tracked this frame, false if the bone isn't tracked.
-

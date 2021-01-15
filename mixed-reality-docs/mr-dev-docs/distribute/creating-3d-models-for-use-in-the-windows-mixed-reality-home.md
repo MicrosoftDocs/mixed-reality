@@ -96,7 +96,7 @@ Tells the shader if something is metal or not. Raw Metal = 1.0 white Non-metal =
 Windows Mixed Reality home offers a series of optimizations on top of the core glTF spec defined using custom extensions. These optimizations are required on Windows versions <= 1709 and recommended on newer versions of Windows. You can easily optimize any glTF 2.0 model using the [Windows Mixed Reality Asset Converter available on GitHub](https://github.com/Microsoft/glTF-Toolkit/releases). This tool will perform the correct texture packing and optimizations as specified below. For general usage, we recommend using the WindowsMRAssetConverter, but if you need more control over the experience and would like to build your own optimization pipeline then you can refer to the detailed specification below.  
 
 > [!NOTE]
-> For a definitive list of what the possibilities are for exact model limits, refer to the [3D model optimization](https://docs.microsoft.com/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models) article for use in Dynamics 365 applications.
+> For a definitive list of what the possibilities are for exact model limits, refer to the [3D model optimization](/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models) article for use in Dynamics 365 applications.
 
 ### Materials
 
@@ -187,7 +187,7 @@ LODs are displayed in Windows Mixed Reality based on a system driven by the scre
 ## Animation guidelines
 
 > [!NOTE]
-> This feature was added as part of [Windows 10 April 2018 Update](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018). On older versions of Windows these animations won't play back, however, they will still load if authored according to the guidance in this article.  
+> This feature was added as part of [Windows 10 April 2018 Update](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018). On older versions of Windows these animations won't play back, however, they will still load if authored according to the guidance in this article.  
 
 The mixed reality home supports animated glTF objects on HoloLens and immersive (VR) headsets. If you wish to trigger animations on your model, you'll need to use the Animation Map extension on the glTF format. This extension lets you trigger animations in the glTF model based on the user's presence in the world, for example trigger an animation when the user is close to the object or while they're looking at it. If you glTF object has animations, but doesn't define triggers the animations won't be played back. The section below describes one workflow for adding these triggers to any animated glTF object.
 
@@ -250,7 +250,7 @@ Animations can't be longer than 20 minutes and can't contain more than 36,000 ke
 
 Windows MR doesn't support flipping geometry using negative scales. Geometry with negative scales will likely result in visual artifacts.
 
-The glTF asset MUST point to the default scene using the scene attribute to be rendered by Windows MR. Additionally the Windows MR glTF loader before the [Windows 10 April 2018 update](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018) **requires** accessors:
+The glTF asset MUST point to the default scene using the scene attribute to be rendered by Windows MR. Additionally the Windows MR glTF loader before the [Windows 10 April 2018 update](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018) **requires** accessors:
 * Must have min and max values.
 * Type SCALAR must be componentType UNSIGNED_SHORT (5123) or UNSIGNED_INT (5125).
 * Type VEC2 and VEC3 must be componentType FLOAT (5126).

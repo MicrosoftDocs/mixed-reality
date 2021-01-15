@@ -28,7 +28,7 @@ HoloLens lets you create **holograms**, which are objects made of light and soun
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
@@ -125,4 +125,3 @@ If you're following the [discovery journey](get-started-with-mr.md) we've laid o
 
 > [!div class="nextstepaction"]
 > [Expand your design process](case-study-expanding-the-design-process-for-mixed-reality.md)
-

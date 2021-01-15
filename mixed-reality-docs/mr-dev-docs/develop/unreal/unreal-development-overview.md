@@ -76,7 +76,7 @@ A developer's job is never done, especially when learning a new tool or SDK. The
 
 ### Debugging
 
-If you're looking to debug the application while it's running on device with Visual Studio, follow these [instructions](https://docs.microsoft.com/visualstudio/debugger/debug-installed-app-package#remote).
+If you're looking to debug the application while it's running on device with Visual Studio, follow these [instructions](/visualstudio/debugger/debug-installed-app-package#remote).
 
 ### Performance
 
@@ -98,7 +98,7 @@ Developing for mixed reality comes with performance checkpoints that depend on t
 | Spatial audio | 4.23 | ✔️ |
 | Spectator Screen support for streaming | 4.24 |
 | Planar LSR over streaming | 4.24 |
-| [Sample apps](unreal-samples.md) | 4.24 | ✔️ |
+| [Sample apps](../features-and-samples.md) | 4.24 | ✔️ |
 | Mobile multi-View: Performance hits 60 fps | 4.25 | ✔️ |
 | 3rd camera render | 4.25 |
 | Streaming from a packaged desktop app | 4.25.1 | ✔️ |
