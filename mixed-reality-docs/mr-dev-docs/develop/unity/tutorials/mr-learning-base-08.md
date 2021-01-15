@@ -21,7 +21,7 @@ In this tutorial, you will learn how to enable eye-tracking for HoloLens 2 and a
 * Learn how to enable eye-tracking for HoleLens 2
 * Learn how to use eye-tracking to trigger action
 
-## Ensuring the Eye Gaze Input capability is enabled
+## Ensuring Eye Gaze Input capability and adding Eye Gaze Data Provider
 
 In the Unity menu, select Mixed Reality Toolkit > Utilities > **Configure Unity Project** to open the **MRTK Project Configurator** window, then in the **UWP Capabilities** section, verify that **Enable Eye Gaze Input Capability** is greyed out:
 
@@ -29,6 +29,16 @@ In the Unity menu, select Mixed Reality Toolkit > Utilities > **Configure Unity 
 
 > [!NOTE]
 > The Gaze Input capability should have been enabled during the [Apply the MRTK Project Configurator settings](mr-learning-base-02.md#selecting-mrtk-and-project-settings) instructions when you configured the Unity project at the beginning of this tutorial series. However, if it is not enabled, make sure you enable it now.
+
+In the Hierarchy window, select the MixedRealityToolkit object, then in the Inspector window, navigate to the Input tab:
+
+* Expand the **Input Data Providers** , click the **+ Add Data Provider** button to add a new Data Provider
+
+![Adding new speech commands](images/mr-learning-base/base-08-section1-step1-2.png)
+
+Assign **Microsoft.MixedReality.ToolKit.Windows.Input** > **WindowsMixedRealityEyeGazeProvider** to the **Type** field of the new Data Provider.
+
+![Adding new speech commands](images/mr-learning-base/base-08-section1-step1-3.png)
 
 ## Enabling eye based gaze in the gaze provider
 
