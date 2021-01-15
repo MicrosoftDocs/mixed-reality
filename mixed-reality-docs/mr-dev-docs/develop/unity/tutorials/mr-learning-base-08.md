@@ -36,7 +36,7 @@ In the Hierarchy window, select the MixedRealityToolkit object, then in the Insp
 
 ![Adding new speech commands](images/mr-learning-base/base-08-section1-step1-2.png)
 
-Assign **Microsoft.MixedReality.ToolKit.Windows.Input** > **WindowsMixedRealityEyeGazeProvider** to the **Type** field of the new Data Provider.
+Assign **Microsoft.MixedReality.ToolKit.WindowsMixedReality.Input** > **WindowsMixedRealityEyeGazeProvider** to the **Type** field of the new Data Provider.
 
 ![Adding new speech commands](images/mr-learning-base/base-08-section1-step1-3.png)
 
