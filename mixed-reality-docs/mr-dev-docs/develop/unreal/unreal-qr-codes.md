@@ -80,7 +80,7 @@ Or jump directly to deploying your app on a device or emulator:
 > [!div class="nextstepaction"]
 > [Deploying to device](unreal-deploying.md)
 
-You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#3-platform-capabilities-and-apis) at any time.
+You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#3-advanced-features) at any time.
 
 ## See also
 * [Spatial mapping](../../design/spatial-mapping.md)
