@@ -1,8 +1,8 @@
 ---
 title: README_SystemKeyBoard
 description: Overview of System Key Board in MRTK
-author: 
-ms.author: 
+author: maxwang-ms
+ms.author: wangmax
 ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,

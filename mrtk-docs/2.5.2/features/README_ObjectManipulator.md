@@ -1,8 +1,8 @@
 ---
 title: README_ObjectManipulator
 description: How to use Object manipulator in MRTK
-author: 
-ms.author: 
+author: thalbern
+ms.author: bethalha
 ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,

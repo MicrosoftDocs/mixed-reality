@@ -1,8 +1,8 @@
 ---
 title: README_TapToPlace
 description: Documentation of TapToPlace MRTK
-author: 
-ms.author: 
+author: CDiaz-MS
+ms.author: cadia
 ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,

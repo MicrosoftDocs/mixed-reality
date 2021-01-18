@@ -1,8 +1,8 @@
 ---
 title: EyeTracking_EyesAndHands
 description: How to use eye targeting as a primary pointer in combination with hand motions in MRTK
-author: 
-ms.author: 
+author: CDiaz-MS
+ms.author: cadia
 ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
