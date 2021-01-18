@@ -1,12 +1,12 @@
 # Material instance
 
-The [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) behavior aides in tracking instance material lifetime and automatically destroys instanced materials for the user. This utility component can be used as a replacement to [Renderer.material]("https://docs.unity3d.com/ScriptReference/Renderer-material.html") or
-[Renderer.materials]("https://docs.unity3d.com/ScriptReference/Renderer-materials.html").
+The [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) behavior aides in tracking instance material lifetime and automatically destroys instanced materials for the user. This utility component can be used as a replacement to [Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html) or
+[Renderer.materials](https://docs.unity3d.com/ScriptReference/Renderer-materials.html).
 
 > [!NOTE]
 > [MaterialPropertyBlocks](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) are preferred over material instancing but are not always available  in all scenarios.
 
-Why can using [Renderer.material]("https://docs.unity3d.com/ScriptReference/Renderer-material.html") be an issue? If you add the below code to a Unity scene and hit play memory usage will continue to climb and climb:
+Why can using [Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html) be an issue? If you add the below code to a Unity scene and hit play memory usage will continue to climb and climb:
 
 ```c#
 public class Leak : MonoBehaviour
@@ -43,7 +43,7 @@ public class NoLeak : MonoBehaviour
 
 ## Usage
 
-When invoking Unity's [Renderer.material]("https://docs.unity3d.com/ScriptReference/Renderer-material.html")(s), Unity automatically instantiates new materials. It is the caller's responsibility to destroy the materials when a material is no longer needed or the game object is destroyed. The [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) behavior helps avoid material leaks and keeps material allocation paths consistent during edit and run time.
+When invoking Unity's [Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html)(s), Unity automatically instantiates new materials. It is the caller's responsibility to destroy the materials when a material is no longer needed or the game object is destroyed. The [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) behavior helps avoid material leaks and keeps material allocation paths consistent during edit and run time.
 
 When a [MaterialPropertyBlock](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) can not be used and a material must be instanced, [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) can be used as follows:
 
