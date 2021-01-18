@@ -1,6 +1,6 @@
 ---
-title: README_NearMenu
-description: Overview Menu types MRTK
+title: NearMenu_README
+description: Overview Near Menu types in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021

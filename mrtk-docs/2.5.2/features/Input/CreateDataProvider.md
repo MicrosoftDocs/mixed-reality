@@ -1,5 +1,5 @@
 ---
-title: CreateDataProvider
+title: CreateInputDataProvider
 description: documentation to create input system and data provider in MRTK
 author: keveleigh
 ms.author: kurtie

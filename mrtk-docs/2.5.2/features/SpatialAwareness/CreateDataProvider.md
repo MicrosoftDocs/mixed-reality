@@ -1,5 +1,5 @@
 ---
-title: CreateDataProvider
+title: CreateSpatialAwarenessDataProvider
 description: describes how to create custom data providers in MRTK
 author: davidkline-ms
 ms.author: davidkl
