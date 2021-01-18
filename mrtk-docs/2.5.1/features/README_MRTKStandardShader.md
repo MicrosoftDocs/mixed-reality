@@ -195,7 +195,7 @@ Per pixel clipping textures, local edge based anti aliasing, and normal map scal
 
 ## See also
 
-- [Interactable](README_Interactable.md)
-- [Hover Light](Rendering/HoverLight.md)
-- [Proximity Light](Rendering/ProximityLight.md)
-- [Clipping Primitive](Rendering/ClippingPrimitive.md)
+* [Interactable](README_Interactable.md)
+* [Hover Light](Rendering/HoverLight.md)
+* [Proximity Light](Rendering/ProximityLight.md)
+* [Clipping Primitive](Rendering/ClippingPrimitive.md)

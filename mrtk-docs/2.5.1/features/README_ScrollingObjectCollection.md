@@ -1,4 +1,5 @@
 # Scrolling object collection
+
 ![Scrolling object collection](Images/ScrollingCollection/ScrollingCollection_Main.jpg)
 
 The MRTK scrolling object collection is an UX component that enables scrolling of 3D content through a contained viewable area. The scrolling movement can be triggered by near or far input interaction and by discrete pagination. It supports both interactive and non-interactive objects.
@@ -21,7 +22,7 @@ The MRTK scrolling object collection is an UX component that enables scrolling o
     * `Container` - All scrolling content objects must be children of the container game object.
     * `Clipping bounds` - If scrolling content masking is enabled, the clipping bounds element ensures that only the scrollable content inside its boundaries is visible. The clipping bounds game object has two components: a disabled box collider and a [clipping box](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox).
 
-![Scrolling object collection elements](Images/ScrollingCollection/ScrollingObjectCollection.png) 
+![Scrolling object collection elements](Images/ScrollingCollection/ScrollingObjectCollection.png)
 
 ### Adding content to the scrolling object
 
@@ -29,10 +30,10 @@ The scrolling object collection can be combined with a [grid object collection](
 
 1. Create an empty game object as a child of the scroll container.
 1. Add a grid object collection component to the game object.
-1. For a vertical single column scroll, in the inspector tab, configure the grid object collection as follow: 
-    - **Num columns**: 1
-    - **Layout**: column then row
-    - **Anchor**: upper left
+1. For a vertical single column scroll, in the inspector tab, configure the grid object collection as follow:
+    * **Num columns**: 1
+    * **Layout**: column then row
+    * **Anchor**: upper left
 1. Change the **cell width** and **height** according to the dimensions of the content objects.
 1. Add the content objects as children of the grid object.
 1. Press **update collection**.
@@ -41,21 +42,21 @@ The scrolling object collection can be combined with a [grid object collection](
 
 > [!IMPORTANT]
 > Any scrolling content object material must use the [MRTK standard shader](README_MRTKStandardShader.md) in order for the clipping effect on the viewable area to work properly.
-   
+
 > [!NOTE]
 > If scrolling content masking is enabled, the scrolling object collection will add a [material instance](Rendering/MaterialInstance.md) component to any content objects that have a renderer attached. This component is used to manage instanced materials lifetime and improve memory performance.
 
 ### Configuring the scrolling viewable area
 
 1. For vertical scrolling through a single column of objects, in the inspector tab, configure the scrolling object collection as follow:
-    - **Cells per tier**: 1
-    - Choose the number of **tiers per page** according to the desired number of visible rows
+    * **Cells per tier**: 1
+    * Choose the number of **tiers per page** according to the desired number of visible rows
 1. Change the **page cell width**, **height** and **depth** according to the dimensions of the content objects.
 
 Notice how the content objects lying outside the scrolling viewable area are now disabled, while objects intersecting the scroll wireframe might be partially masked by the clipping primitive.
 
 ![Viewable area](Images/ScrollingCollection/ScrollingObjectCollection_ViewableArea.png)
- 
+
 ### Testing the scrolling object collection in the editor
 
 1. Press play and hold the space bar to show an input simulation hand.
@@ -80,7 +81,7 @@ public class ScrollablePagination : MonoBehaviour
 }
 ```
 
-## Scrolling object collection properties:
+## Scrolling object collection properties
 
 | General                      |                                                                                                                                                                                                     |
 |:-----------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
