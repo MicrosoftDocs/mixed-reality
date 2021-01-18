@@ -5,7 +5,7 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 ms.localizationpriority: high
-keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK Pakages,
 ---
 
 # Mixed Reality Toolkit and Unity Package Manager

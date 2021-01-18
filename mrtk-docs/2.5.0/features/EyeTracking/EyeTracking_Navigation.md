@@ -1,3 +1,13 @@
+---
+title: EyeTracking_Navigation
+description: How to use eye targeting for Navigation in MRTK
+author: CDiaz-MS
+ms.author: cadia
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, EyeTracking,
+---
+
 # Eye-supported navigation in MRTK
 
 ![MRTK](../Images/EyeTracking/mrtk_et_navigation.png)

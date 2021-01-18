@@ -1,3 +1,13 @@
+---
+title: Updating
+description: Documentation to Migrate from lower version of MRTK.
+author: polar-kev
+ms.author: kesemple
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Updating the Microsoft Mixed Reality Toolkit
 
 - [Upgrading to a new version of MRTK](#upgrading-to-a-new-version-of-mrtk)

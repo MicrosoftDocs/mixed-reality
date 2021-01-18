@@ -1,3 +1,13 @@
+---
+title: LeapMotionMRTK
+description: Documentation to configure for Leap Motion
+author: CDiaz-ms
+ms.author: cadia
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Leap Motion,
+---
+
 # How to Configure Leap Motion (by Ultraleap) Hand Tracking in MRTK
 
 A [Leap Motion Controller](https://www.ultraleap.com/product/leap-motion-controller/) is required to use this data provider.

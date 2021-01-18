@@ -1,3 +1,13 @@
+---
+title: InputState
+description: Documentation on Input States in MRTK
+author: keveleigh
+ms.author: kurtie
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, InputState,
+---
+
 # Accessing input state in MRTK
 
 It's possible to directly query the state of all inputs in MRTK by iterating over the controllers attached to the input sources. MRTK also provides convenience methods for accessing the position and rotation of the eyes, hands, head, and motion controller.

@@ -1,3 +1,13 @@
+---
+title: README_Interactable
+description: Overview on Interactable script component in MRTK
+author: CDiaz-MS
+ms.author: cadia
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Interactable, Events,
+---
+
 # Interactable
 
 ![Interactable Examples 1](Images/Interactable/InteractableExamples.png)

@@ -5,7 +5,7 @@ author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 ms.localizationpriority: high
-keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Events
 ---
 
 # Core system

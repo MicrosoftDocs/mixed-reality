@@ -1,3 +1,13 @@
+---
+title: README_ProgressIndicator
+description: Overview of progress Indicator in MRTK
+author: CDiaz-MS
+ms.author: cadia
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Progress Indicators
 
 ![Progress Indicators](Images/ProgressIndicator/MRTK_ProgressIndicator_Main.png)

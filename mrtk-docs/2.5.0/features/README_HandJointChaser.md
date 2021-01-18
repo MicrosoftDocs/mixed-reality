@@ -1,3 +1,13 @@
+---
+title: README_HandJointChaser
+description: Hand joint chaser in MRTK
+author: CDiaz-MS
+ms.author: cadia
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Hand joint chaser example
 
 ![Hand joint chasers](Images/HandJointChaser/MRTK_HandJointChaser_Main.jpg)

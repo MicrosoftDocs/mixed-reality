@@ -1,3 +1,13 @@
+---
+title: ControllersPointersAndFocus
+description: Interacting with Controllers, pointers and focus.
+author: cDiaz-MS
+ms.author: cadia
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Pointers, Controllers
+---
+
 # Controllers, pointers, and focus
 
 Controllers, pointers, and focus are higher-level concepts that build upon the foundation established by the core input system. Together, they provide a large portion of the mechanism for interacting with objects in the scene.
