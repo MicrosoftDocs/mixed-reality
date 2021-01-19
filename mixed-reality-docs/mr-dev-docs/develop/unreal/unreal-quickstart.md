@@ -1,12 +1,12 @@
 ---
 title: Creating a HoloLens project
-description: 
+description: Learn how to correctly configure an Unreal project with scene objects and input interactions for HoloLens mixed reality development. 
 author: hferrone
 ms.author: safarooq
 ms.date: 01/19/2021
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, editor extensions, Unreal editor, UE4, HoloLens, HoloLens 2, mixed reality, development, documentation, guides, features, mixed reality headset, windows mixed reality headset, virtual reality headset, porting, upgrading
+keywords: Unreal, Unreal Engine 4, Unreal editor, UE4, HoloLens, HoloLens 2, mixed reality, development, documentation, guides, features, mixed reality headset, windows mixed reality headset, virtual reality headset, porting, upgrading
 ---
 
 # Creating a HoloLens project
@@ -41,9 +41,9 @@ You'll need to enable two plugins before you can start adding objects to the sce
 
 2. Type **OpenXR** in the search box at the top right and enable the **OpenXR** and **OpenXRMsftHandInteraction** plugins:
 
-![Plugins window with OpenXR enabled](images/unreal-quickstart-img-05.png)
+![Plugins window with OpenXR enabled](images/unreal-quickstart-img-05.jpg)
 
-![Plugins window with Open XR Msft Hand Interaction enabled](images/unreal-quickstart-img-06.png)
+![Plugins window with Open XR Msft Hand Interaction enabled](images/unreal-quickstart-img-06.jpg)
 
 3. Restart your editor
 
@@ -120,20 +120,20 @@ With that done, your next step is to make sure the AR session starts and stops w
 1. Select **Edit > Project Settings** and go to the **Engine > Input**
 2. Select the **+** icon next to **Action Mappings** and create **RightPinch** and **LeftPinch** actions:
 
-![Binding input settings with right and left pinch action mappings highlighted](images/unreal-quickstart-img-15.png)
+![Binding input settings with right and left pinch action mappings highlighted](images/unreal-quickstart-img-15.jpg)
 
 3. Map the **RightPinch** and **LeftPinch** actions the to the respective **OpenXR Msft Hand Interaction** actions:
 
-![Action mappings with Open XR Msft Hand interaction options highlighted](images/unreal-quickstart-img-16.png)
+![Action mappings with Open XR Msft Hand interaction options highlighted](images/unreal-quickstart-img-16.jpg)
 
 4. Open the **Level Blueprint** and add an **InputAction RightPinch** and **InputAction LeftPinch**
 * Connect the right pinch event to an **AddActorLocalRotation** with your **Cube** as the target and **Delta Rotation** set to **X = 0, Y = 0**, and **Z = 20**. The cube will now rotate by 20 degrees every time you pinch
 * Connect the left pinch event to **Quit Game**
 
-![Level bluprint open with input actions for right and left pinch events](images/unreal-quickstart-img-17.png)
+![Level bluprint open with input actions for right and left pinch events](images/unreal-quickstart-img-17.jpg)
 
 5. In the cube's **Transform** settings, set **Mobility** to **Movable** so it can move dynamically:
 
-![Tranform settings with mobility property highlighted](images/unreal-quickstart-img-18.png)
+![Tranform settings with mobility property highlighted](images/unreal-quickstart-img-18.jpg)
 
 At this point, you're ready to deply and test the application!
