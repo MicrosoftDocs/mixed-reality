@@ -72,7 +72,7 @@ Currently bounds control offers configuration objects options for the following 
   * [Scale handles](#scale-handles-configuration)
   * [Rotation handles](#rotation-handles-configuration)
   * [Translation handles](#translation-handles-configuration)
-* [Links / Wireframe](#Links-configuration-(wireframe))
+* [Links / Wireframe](#Links-configuration-wireframe)
 * [Box display](#box-configuration)
 * [Proximity effect](#proximity-effect-configuration)
 

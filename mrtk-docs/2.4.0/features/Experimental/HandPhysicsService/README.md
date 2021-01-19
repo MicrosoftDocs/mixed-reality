@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Hand physics extension service
 
-![Hand Physics Extension Service](../../features/Images/HandPhysics/MRTK_UX_HandPhysics_Main.jpg)
+![Hand Physics Extension Service](../../Images/HandPhysics/MRTK_UX_HandPhysics_Main.jpg)
 
 The hand physics service enables rigid body collision events and interactions with articulated hands.
 
