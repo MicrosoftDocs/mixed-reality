@@ -202,12 +202,12 @@ Congratulations, you just used your first MRTK scene. Now onto creating your own
 Here are some suggested next steps:
 
 * Check out [MRTK 101: How to use Mixed Reality Toolkit Unity for Basic Interactions](https://docs.microsoft.com/windows/mixed-reality/mrtk-101) to learn about how to achieve common spatial interactions such as grab, move, scale, and rotate.
-* Learn about the UX controls available in MRTK in [UI and interaction building blocks](reference-docs/README.md#ux-building-blocks).
+* Learn about the UX controls available in MRTK in [UI and interaction building blocks](features/Experimental/README.md#ux-building-blocks).
 * Try [MRTK Examples Hub](features/README_ExampleHub.md) (pre-built app packages are included in the release page for your convenience)
 * Learn how to work with the MRTK Configuration profile in the [mixed reality configuration guide](out-of-scope/MixedRealityConfigurationGuide.md).
 * Learn about the [MRTK's Architecture](Architecture/Overview.md)
 * Learn about the [MRTK's Input System](features/Input/Overview.md)
-* Learn about the [MRTK's Tools](reference-docs/README.md#tools) that will empower your mixed reality design and development.
+* Learn about the [MRTK's Tools](features/Experimental/README.md#tools) that will empower your mixed reality design and development.
 * Read through [input simulation guide](features/InputSimulation/InputSimulationService.md) to learn how to simulate hand input in editor.
 
 ## Getting help

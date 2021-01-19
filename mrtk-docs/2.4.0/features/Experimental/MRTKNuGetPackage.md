@@ -25,10 +25,10 @@ Follow these instructions to add the Mixed Reality Toolkit as a NuGet package to
 1. Import the package into the Unity project, [instructions](https://docs.unity3d.com/Manual/AssetPackages.html).
 1. In the Unity menu bar, click on **NuGet** > **Manage NuGet Packages**.
 
-    ![Manage NuGet Packages](../features/Images/NuGet/ManageNuGetPackages.png)
+    ![Manage NuGet Packages](../Images/NuGet/ManageNuGetPackages.png)
 1. In the Search box, enter **Microsoft.MixedReality.Toolkit**.
 
-    ![Manage NuGet Packages](../features/Images/NuGet/SearchBox.png)
+    ![Manage NuGet Packages](../Images/NuGet/SearchBox.png)
 1. Choose the MRTK core package:
     - **Microsoft.MixedReality.Toolkit.Foundation** – The core package for MRTK.
 1. (Optional) Choose the MRTK optional packages.
@@ -79,27 +79,27 @@ With the latest source from MRTK, you can build the NuGet package locally and co
 1. After the build succeeds, open the destination project with NuGet packages.
     - Click on the menu **Edit** > **Preferences...**
 
-        ![Edit Preferences Menu Item](../features/Images/NuGet/ProjectPreferences.png)
+        ![Edit Preferences Menu Item](../Images/NuGet/ProjectPreferences.png)
     - On the left, find **NuGet for Unity** tab.
 
-        ![Edit Preferences Menu Item](../features/Images/NuGet/NuGetForUnityPreferencesTab.png)
+        ![Edit Preferences Menu Item](../Images/NuGet/NuGetForUnityPreferencesTab.png)
     - Press **Add New Source** and replace **source_path** with the `<Path to your Repository>\NuGet\artifacts`
 
-        ![Edit Preferences Menu Item](../features/Images/NuGet/AddNewSource.png)
+        ![Edit Preferences Menu Item](../Images/NuGet/AddNewSource.png)
     - At the bottom, press the **Save** button.
 
-        ![Edit Preferences Menu Item](../features/Images/NuGet/SaveNewSource.png)
+        ![Edit Preferences Menu Item](../Images/NuGet/SaveNewSource.png)
 1. If this your first time building, or the version was incremented, follow the update process:
     1. In the Unity menu bar, click on **NuGet** > **Manage NuGet Packages**.
 
-        ![Manage NuGet Packages](../features/Images/NuGet/ManageNuGetPackages.png)
+        ![Manage NuGet Packages](../Images/NuGet/ManageNuGetPackages.png)
     1. Switch to the **Updates** tab.
 
-        ![Manage NuGet Packages](../features/Images/NuGet/UpdatesTab.png)
+        ![Manage NuGet Packages](../Images/NuGet/UpdatesTab.png)
     1. Update the packages to the version you just built desired.
 1. Otherwise, just delete the `Assets\Packages` folder and let NuGetForUnity restore the packages.
 
 ## See also
 
-- [Building and Deploying MRTK](../updates-deployment/BuildAndDeploy.md)
+- [Building and Deploying MRTK](../../updates-deployment/BuildAndDeploy.md)
 - [MRTK Package Contents](MRTK_PackageContents.md)

@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Dialog
 
-![Dialog](../../features/Images/Dialog/MRTK_UX_Dialog_Main.png)
+![Dialog](../../Images/Dialog/MRTK_UX_Dialog_Main.png)
 
 Dialog controls are UI overlays that provide contextual app information. They often request some kind of action from the user. Use dialogs to notify users of important information or to request confirmation or additional info before an action can be completed.
 
