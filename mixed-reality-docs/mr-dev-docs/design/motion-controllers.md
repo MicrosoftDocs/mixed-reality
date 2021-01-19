@@ -5,7 +5,7 @@ author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 6dof controllers, motion controllers, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, scrolling, grip, state
+keywords: 6dof controllers, motion controllers, pairing, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, scrolling, grip, state
 ---
 
 # Motion controllers
@@ -235,7 +235,7 @@ Both [hand gestures](gaze-and-commit.md#composite-gestures) and motion controlle
 
 We recommend rendering all renderable models at the **grip pose** of the controller, as the origin of the model is aligned with this point in the physical world. If you're rendering controller models, you may then wish to raycast into your scene from the **pointer pose**, which represents the ray along which users will naturally expect to point, given that controller's physical design.
 
-For more information about how to load controller models dynamically in Unity, see the [Rendering the motion controller model in Unity](../develop/unity/gestures-and-motion-controllers-in-unity.md#rendering-the-motion-controller-model-in-unity) section.
+For more information about how to load controller models dynamically in Unity, see the [Rendering the motion controller model in Unity](../develop/unity/gestures-in-unity.md#rendering-the-motion-controller-model-in-unity) section.
 
 **2D controller line art**
  While we recommend attaching in-app controller tips and commands to the in-app controller models themselves, some developers may want to use 2D line art representations of the motion controllers in flat "tutorial" or "how-to" UI. For those developers, we've made .png motion controller line art files available in both black and white below (right-click to save).
@@ -274,7 +274,7 @@ See [motion controller troubleshooting](https://docs.microsoft.com/windows/mixed
 
 ## See also
 
-* [Gestures and motion controllers in Unity](../develop/unity/gestures-and-motion-controllers-in-unity.md)
+* [Motion controllers in Unity](../develop/unity/motion-controllers-in-unity.md)
 * [Hands and motion controllers in DirectX](../develop/native/hands-and-motion-controllers-in-directx.md)
 * [Gestures](gaze-and-commit.md#composite-gestures)
 * [Enthusiast's Guide: Your Windows Mixed Reality home](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)

@@ -22,7 +22,7 @@ To start testing out your game or app on Windows Mixed Reality make sure to firs
 1. If your app renders controller models:
     * Use the [Windows Mixed Reality motion controller models](../../design/motion-controllers.md#rendering-the-motion-controller-model)
     * Use IVRRenderModel::GetComponentState to get local transforms to component parts (for example, Pointer pose)
-2. Experiences that have a notion of handedness should get hints from the input APIs to differentiate controllers [(Unity example)](../unity/gestures-and-motion-controllers-in-unity.md#unity-buttonaxis-mapping-table)
+2. Experiences that have a notion of handedness should get hints from the input APIs to differentiate controllers [(Unity example)](../unity/motion-controllers-in-unity.md#unity-buttonaxis-mapping-table)
 
 ## Controls
 
