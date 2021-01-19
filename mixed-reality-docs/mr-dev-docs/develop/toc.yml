@@ -176,45 +176,45 @@
       href: unity/openxr-supported-features.md
   - name: Basic building blocks
     items:
-      - name: Camera 
+      - name: Camera
         href: unity/camera-in-unity.md
-      - name: Coordinate systems 
+      - name: Coordinate systems
         href: unity/coordinate-systems-in-unity.md
-      - name: Persistence 
+      - name: Persistence
         href: unity/persistence-in-unity.md
-      - name: Head-gaze 
+      - name: Head-gaze
         href: unity/gaze-in-unity.md
-      - name: Text 
+      - name: Text
         href: unity/text-in-unity.md
       - name: Motion controllers
         href: unity/motion-controllers-in-unity.md
-      - name: Gestures 
+      - name: Gestures
         href: unity/gestures-in-unity.md
-      - name: Hand and Eye tracking 
+      - name: Hand and Eye tracking
         href: unity/hand-eye-in-unit.md
       - name: Voice input
         href: unity/voice-input-in-unity.md
-      - name: Spatial mapping 
+      - name: Spatial mapping
         href: unity/spatial-mapping-in-unity.md
-      - name: Spatial sound 
+      - name: Spatial sound
         href: unity/spatial-sound-in-unity.md
   - name: Advanced features
     items:
-      - name: Shared experiences 
+      - name: Shared experiences
         href: unity/shared-experiences-in-unity.md
       - name: Locatable camera
         href: unity/locatable-camera-in-unity.md
       - name: Focus point
         href: unity/focus-point-in-unity.md
-      - name: Tracking loss 
+      - name: Tracking loss
         href: unity/tracking-loss-in-unity.md
-      - name: Keyboard input 
+      - name: Keyboard input
         href: unity/keyboard-input-in-unity.md
       - name: Using the Windows namespace with Unity apps for HoloLens
         href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
-      - name: Mixed Reality native objects 
+      - name: Mixed Reality native objects
         href: unity/unity-xrdevice-advanced.md
-      - name: Using Vuforia 
+      - name: Using Vuforia
         href: unity/vuforia-development-overview.md
   - name: Immersive VR
     items:
@@ -256,8 +256,16 @@
   items:
   - name: Unreal development overview
     href: unreal/unreal-development-overview.md
+  - name: Introducing MRTK
+    href: unreal/unreal-mrtk-introduction.md
   - name: Upgrading projects in Unreal
     href: unreal/unreal-porting.md
+  - name: Quickstarts
+    items:
+      - name: Creating a HoloLens project
+        href: unreal/unreal-quickstart.md
+      - name: Setting up a Mixed Reality scene
+        href: unreal/unreal-scene-setup.md
   - name: Tutorials
     items:
       - name: Build a chess app with MRTK UX Tools
@@ -276,52 +284,58 @@
             href: unreal/tutorials/unreal-uxt-ch6.md
   - name: Basic building blocks
     items:
-      - name: Gaze input 
+      - name: Gaze input
         href: unreal/unreal-gaze-input.md
-      - name: Hand tracking 
+      - name: Hand tracking
         href: unreal/unreal-hand-tracking.md
-      - name: Spatial mapping 
+      - name: Spatial mapping
         href: unreal/unreal-spatial-mapping.md
-      - name: Spatial audio 
+      - name: Spatial audio
         href: unreal/unreal-spatial-audio.md
-      - name: Local spatial anchors 
+      - name: Local spatial anchors
         href: unreal/unreal-spatial-anchors.md
-      - name: Azure spatial anchors 
+      - name: Azure spatial anchors
         href: unreal/unreal-azure-spatial-anchors.md
-      - name: Voice input 
+      - name: Voice input
         href: unreal/unreal-voice-input.md
-  - name: Advanced features
+  - name: Best practices
+    items:
+      - name: General best practices
+        href: unreal/unreal-best-practices.md
+      - name: Performance recommendations for Unreal
+        href: unreal/performance-recommendations-for-unreal.md
+      - name: Material recommendations in Unreal
+        href: unreal/unreal-materials.md
+      - name: Profiling with Unreal Insights
+        href: unreal/unreal-insights.md
+      - name: Editor extensions in Unreal
+        href: unreal/unreal-editor-extensions.md
+  - name: Platform capabilities and APIs
     items:
       - name: HoloLens Photo/Video Camera
         href: unreal/unreal-hololens-camera.md
-      - name: QR codes 
+      - name: QR codes
         href: unreal/unreal-qr-codes.md
-      - name: UMG and keyboard 
+      - name: UMG and keyboard
         href: unreal/unreal-umg-keyboard.md
       - name: WinRT
         href: unreal/unreal-winrt.md
+      - name: Streaming in Unreal
+        href: unreal/unreal-streaming.md
   - name: Immersive VR
     items:
-      - name: HP Reverb G2 controllers 
+      - name: HP Reverb G2 controllers
         href: unreal/unreal-reverb-g2-controllers.md
   - name: Sample apps
     items:
       - name: Kippy's Escape
         href: unreal/unreal-kippys-escape.md
-  - name: Deployment and performance
+  - name: Deployment and publishing
     items:
-      - name: Deploy to device 
+      - name: Deploy to device
         href: unreal/unreal-deploying.md
       - name: Publishing to the Microsoft Store
         href: unreal/unreal-publishing-to-store.md
-      - name: Performance recommendations 
-        href: unreal/performance-recommendations-for-unreal.md
-      - name: Material recommendations 
-        href: unreal/unreal-materials.md
-      - name: Profiling with Unreal Insights
-        href: unreal/unreal-insights.md
-      - name: Streaming 
-        href: unreal/unreal-streaming.md
 - name: Web
   items:
   - name: Web development overview
