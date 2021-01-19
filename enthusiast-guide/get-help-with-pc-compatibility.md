@@ -111,7 +111,7 @@ If the problems persist:
 
 ### This PC doesn't have Bluetooth 4.0 for controllers
 
-2018 and newer Windows Mixed Reality headsets already have the built-in Bluetooth, but if you have older headset, bluetooth 4.0 is required for mixed reality motion controllers. You can still [use Windows Mixed Reality with an Xbox controller](motion-controller-problems.md#can-i-pair-my-xbox-controller-to-my-pc-so-i-can-use-it-in-headset), a [mouse and keyboard](https://docs.microsoft.com/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home#keyboard-and-mouse), or a [USB Bluetooth adapter to connect motion controllers](motion-controller-problems.md#how-can-i-tell-if-im-using-bluetooth-technology) to your PC. [See recommended adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+2018 and newer Windows Mixed Reality headsets already have the built-in Bluetooth, but if you have older headset, bluetooth 4.0 is required for mixed reality motion controllers. You can still [use Windows Mixed Reality with an Xbox controller](motion-controller-problems.md#can-i-pair-my-xbox-controller-to-my-pc-so-i-can-use-it-in-headset), a [mouse and keyboard](/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home#keyboard-and-mouse), or a [USB Bluetooth adapter to connect motion controllers](motion-controller-problems.md#how-can-i-tell-if-im-using-bluetooth-technology) to your PC. [See recommended adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 
 ### Depending on your headset, you may need a Bluetooth adapter to use motion controllers
 

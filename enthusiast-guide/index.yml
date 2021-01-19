@@ -119,6 +119,6 @@ additionalContent:
         # Card
         - title: Develop in Windows Mixed Reality
           summary: Development and design documentation
-          url: https://docs.microsoft.com/en-us/windows/mixed-reality/develop/development?tabs=unity
+          url: /windows/mixed-reality/develop/development?tabs=unity
   # footer (optional)
   footer: "Found a problem on our site? [Let us know!](https://forums.hololens.com/categories/using-windows-mixed-reality)"

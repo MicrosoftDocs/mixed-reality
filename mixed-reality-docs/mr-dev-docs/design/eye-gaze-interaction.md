@@ -12,7 +12,7 @@ keywords: Eye Tracking, Mixed Reality, Input, eye-gaze, mixed reality headset, w
 
 ![Eye tracking demo in MRTK](images/mrtk_et_scenemenu.jpg)
 
-One of our exciting new capabilities on HoloLens 2 is eye tracking. On our [Eye tracking on HoloLens 2](eye-tracking.md) page, we mentioned the need for each user to go through a [Calibration](https://docs.microsoft.com/hololens/hololens-calibration), provided some developer guidance, and highlighted use cases for eye tracking. Eye-gaze input is still a new type of user input and there's a lot to learn. 
+One of our exciting new capabilities on HoloLens 2 is eye tracking. On our [Eye tracking on HoloLens 2](eye-tracking.md) page, we mentioned the need for each user to go through a [Calibration](/hololens/hololens-calibration), provided some developer guidance, and highlighted use cases for eye tracking. Eye-gaze input is still a new type of user input and there's a lot to learn. 
 
 While eye-gaze input is only used subtly in our Holographic Shell experience (the user interface that you see when you start your HoloLens 2), several apps, such as the ["HoloLens Playground"](https://www.microsoft.com/p/mr-playground/9nb31lh723s2), showcase great examples on how eye-gaze input can add to the magic of your holographic experience.
 On this page, we discuss design considerations for integrating eye-gaze input to interact with your holographic applications.
@@ -30,7 +30,7 @@ You'll learn about key advantages and also unique challenges that come with eye-
 </colgroup>
 <tr>
      <td><strong>Feature</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
 </tr>
