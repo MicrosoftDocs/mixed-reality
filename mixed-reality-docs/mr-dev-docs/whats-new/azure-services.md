@@ -17,7 +17,7 @@ Unlock what every human is an expert at—the three-dimensional, physical world 
 
 Build multi-user, spatially aware mixed reality applications using Spatial Anchors. Create mixed reality apps that map, designate, and recall precise points of interest accessible across HoloLens, iOS, and Android devices. Enable wayfinding across spaces to help your users collaborate more efficiently.
 
-[Try Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
+[Try Azure Spatial Anchors](/azure/spatial-anchors)
 
 
 ## Interactive, high-quality 3D models using Remote Rendering
@@ -36,10 +36,10 @@ Azure Remote Rendering Preview brings interactive, high-quality 3D models to unt
 
 :::row:::
     :::column:::
-       [![Speech bubble icon with blank grey background](images/speech.jpg)](https://docs.microsoft.com/azure/cognitive-services/speech-service/)
+       [![Speech bubble icon with blank grey background](images/speech.jpg)](/azure/cognitive-services/speech-service/)
     :::column-end:::
     :::column span="2":::
-        ### [Speech](https://docs.microsoft.com/azure/cognitive-services/speech-service/)
+        ### [Speech](/azure/cognitive-services/speech-service/)
         Discover how Speech enables the integration of speech processing capabilities into any app or service. Convert spoken language into text or produce natural sounding speech from text using standard (or customizable) voice fonts. Try any service free—and quickly build speech-enabled apps and services with the following capabilities.
     :::column-end:::
 :::row-end:::
@@ -48,10 +48,10 @@ Azure Remote Rendering Preview brings interactive, high-quality 3D models to unt
 
 :::row:::
     :::column:::
-       [![Vision eye graphic with blank grey background](images/vision.jpg)](https://docs.microsoft.com/azure/cognitive-services/computer-vision/)
+       [![Vision eye graphic with blank grey background](images/vision.jpg)](/azure/cognitive-services/computer-vision/)
     :::column-end:::
     :::column span="2":::
-        ### [Vision](https://docs.microsoft.com/azure/cognitive-services/computer-vision/)
+        ### [Vision](/azure/cognitive-services/computer-vision/)
         Recognize, identify, caption, index, and moderate your pictures, videos, and digital ink content.Learn how Vision makes it possible for apps and services to accurately identify and analyze content within images, videos, and digital ink.
     :::column-end:::
 :::row-end:::
@@ -59,5 +59,5 @@ Azure Remote Rendering Preview brings interactive, high-quality 3D models to unt
 
 ## See also
 
-* Azure Spatial Anchor tutorials for HoloLens 2 - [1 of 3 Getting started with Azure Spatial Anchors](../mrlearning-asa-ch1.md)
+* Azure Spatial Anchor tutorials for HoloLens 2 - [1 of 3 Getting started with Azure Spatial Anchors](../develop/unity/tutorials/mr-learning-asa-02.md)
 * Azure Speech Services tutorials for HoloLens 2 - [1 of 4 Integrating and using speech recognition and transcription](../develop/unity/tutorials/mrlearning-speechSDK-ch1.md)

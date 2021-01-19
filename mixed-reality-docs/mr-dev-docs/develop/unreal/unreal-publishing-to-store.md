@@ -106,4 +106,4 @@ if(Target.Platform == UnrealTargetPlatform.Win64)
 
 * [Submitting an app to the Microsoft Store](../../distribute/submitting-an-app-to-the-microsoft-store.md)
 * [Windows App Certification Kit](https://developer.microsoft.com/windows/downloads/app-certification-kit)
-* [Create an App Installer file manually](https://docs.microsoft.com/windows/msix/app-installer/how-to-create-appinstaller-file)
+* [Create an App Installer file manually](/windows/msix/app-installer/how-to-create-appinstaller-file)

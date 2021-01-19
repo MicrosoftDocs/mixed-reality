@@ -17,7 +17,7 @@ Kippy the robot wakes up to find itself stranded on an island. It’s up to you 
 > [!IMPORTANT]
 > Make sure you're using **Unreal Engine 4.25 or later** if you're building Kippy's Escape from the GitHub repository.
 
-Kippy’s Escape is an open-source [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware) sample app built with Unreal Engine 4 and [Mixed Reality UX Tools for Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal). In this post, we’ll walk you through our process from first principles and visual design to implementing and optimizing the experience. You can find more information on developing Mixed Reality applications with MRTK UX Tools in the [Unreal development overview](unreal-development-overview.md).
+Kippy’s Escape is an open-source [HoloLens 2](/hololens/hololens2-hardware) sample app built with Unreal Engine 4 and [Mixed Reality UX Tools for Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal). In this post, we’ll walk you through our process from first principles and visual design to implementing and optimizing the experience. You can find more information on developing Mixed Reality applications with MRTK UX Tools in the [Unreal development overview](unreal-development-overview.md).
 
 ## First principles 
 
@@ -110,4 +110,4 @@ Boot up your HoloLens 2 and [download](https://www.microsoft.com/p/kippys-escape
 </tr>
 </table>
 
-Special thanks to our friends at [Framestore](https://www.framestore.com/) for helping us bring Kippy’s Escape to life. From character development, to asset design, to game programming, their collaboration on this project was pivotal.  
+Special thanks to our friends at [Framestore](https://www.framestore.com/) for helping us bring Kippy’s Escape to life. From character development, to asset design, to game programming, their collaboration on this project was pivotal.

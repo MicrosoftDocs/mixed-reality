@@ -29,7 +29,7 @@ Mixed Reality is a blend of physical and digital worlds, unlocking the links bet
 
 Over the past several decades, exploration into the relationship between human and computer input has continued, leading to the discipline known as *human computer interaction* or HCI. Human input happens through different means, including keyboards, mice, touch, ink, voice, and even Kinect skeletal tracking.
 
-Advancements in sensors and processing are creating new areas of computer input from environments. The interaction between computers and environments is environmental understanding or *perception*, which is why the API names in Windows that reveal environmental information are called the [perception APIs](https://docs.microsoft.com/uwp/api/Windows.Perception). Environmental input captures things like a person's position in the world ([head tracking](../design/coordinate-systems.md)), surfaces, and boundaries ([spatial mapping](../design/spatial-mapping.md) and [scene understanding](../design/scene-understanding.md)), ambient lighting, environmental sound, object recognition, and location.
+Advancements in sensors and processing are creating new areas of computer input from environments. The interaction between computers and environments is environmental understanding or *perception*, which is why the API names in Windows that reveal environmental information are called the [perception APIs](/uwp/api/Windows.Perception). Environmental input captures things like a person's position in the world ([head tracking](../design/coordinate-systems.md)), surfaces, and boundaries ([spatial mapping](../design/spatial-mapping.md) and [scene understanding](../design/scene-understanding.md)), ambient lighting, environmental sound, object recognition, and location.
 
 <br>
 
@@ -112,5 +112,3 @@ If you're following the [discovery journey](get-started-with-mr.md) we've laid o
 
 > [!div class="nextstepaction"]
 > [What is a hologram?](hologram.md)
-
-
