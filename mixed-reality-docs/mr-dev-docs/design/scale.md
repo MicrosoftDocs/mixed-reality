@@ -76,6 +76,6 @@ This can create a few possible artifacts in the experience however:
 ---
 
 ## See also
-* [Color, light, and materials](../color,-light-and-materials.md)
+* [Color, light, and materials](./color-light-and-materials.md)
 * [Typography](typography.md)
 * [Spatial sound design](spatial-sound-design.md)

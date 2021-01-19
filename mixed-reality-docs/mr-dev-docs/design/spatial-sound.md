@@ -38,7 +38,7 @@ See detailed [examples of design that uses audio](spatial-sound-design.md).
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (first gen)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (first gen)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
@@ -86,7 +86,7 @@ Every individual has a unique ear shape, head size, and ear position. So the bes
 
 ### Spatializer platform support
 
-Windows offers spatialization, including HRTFs, via the [ISpatialAudioClient API](https://docs.microsoft.com/windows/win32/coreaudio/spatial-sound). This API exposes the HoloLens 2 HRTF hardware acceleration to applications.
+Windows offers spatialization, including HRTFs, via the [ISpatialAudioClient API](/windows/win32/coreaudio/spatial-sound). This API exposes the HoloLens 2 HRTF hardware acceleration to applications.
 
 ### Spatializer middleware support
 
@@ -98,7 +98,7 @@ Support for Windows' HRTFs is available for the following third-party audio engi
 
 Spatial audio is about more than direction. Other dimensions include occlusion, obstruction, reverb, portaling, and source modeling. Collectively these dimensions are referred to as *acoustics*. Without acoustics, spatialized sounds lack perceived distance.
 
-Acoustics treatments range from simple to complex. You can use a reverb that's supported by any audio engine to push spatialized sounds into the environment of the listener. Acoustics systems such as [Project Acoustics](https://aka.ms/acoustics)  provide richer and more compelling acoustics treatment. Project Acoustics can model the effect of walls, doors, and other scene geometry on a sound. It's an effective option for cases where the relevant scene geometry is known at development time.
+Acoustics treatments range from simple to complex. You can use a reverb that's supported by any audio engine to push spatialized sounds into the environment of the listener. Acoustics systems such as [Project Acoustics](/gaming/acoustics/what-is-acoustics)  provide richer and more compelling acoustics treatment. Project Acoustics can model the effect of walls, doors, and other scene geometry on a sound. It's an effective option for cases where the relevant scene geometry is known at development time.
 
 ## Next steps
 
