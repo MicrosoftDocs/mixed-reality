@@ -32,8 +32,8 @@ The [install the tools](../install-the-tools.md#immersive-vr-headset-requirement
 The Windows Mixed Reality platform is still under active development. We recommend [joining the Windows Insider Program](https://insider.windows.com/) to access the "Windows Insider Fast" flight.
 1. Install the [Windows 10 Creators Update](https://www.microsoft.com/software-download/windows10)
 2. [Join](https://insider.windows.com/) the Windows Insider Program.
-3. Enable [Developer Mode](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)
-4. Switch to the [Windows Insider Fast flights](https://blogs.technet.microsoft.com/uktechnet/2016/07/01/joining-insider-preview) through **Settings > Update & Security Section**
+3. Enable [Developer Mode](/windows/uwp/get-started/enable-your-device-for-development)
+4. Switch to the [Windows Insider Fast flights](/archive/blogs/uktechnet/joining-insider-preview) through **Settings > Update & Security Section**
 
 ### 3. Upgrade to the most recent build of Visual Studio
 * If you're using Visual Studio, then upgrade to the most recent build
@@ -52,7 +52,7 @@ The Windows Mixed Reality platform is still under active development. We recomme
 > If you're using HP Reverb G2 controllers, please refer to [this article](../unreal/unreal-reverb-g2-controllers.md) for additional input mapping instructions.
 
 ## See also
-* [Windows Mixed Reality minimum PC hardware compatibility guidelines](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
+* [Windows Mixed Reality minimum PC hardware compatibility guidelines](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [Understanding Performance for Mixed Reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 * [Performance Recommendations for Unity](../unity/performance-recommendations-for-unity.md)
 * [Motion controllers](../../design/motion-controllers.md)

@@ -16,7 +16,7 @@ keywords: HoloLens, HoloLens 2, PIX, capture, mixed reality headset, windows mix
 
 1. Grab the latest PIX [release]( https://devblogs.microsoft.com/pix/download) from your host PC and connect your HoloLens 2 to your PC via a USB cable.
 
-2. If your HoloLens 2 is on a [Windows Insider build](https://insider.windows.com) or has a configuration that breaks PIX,  [reflash your device](https://docs.microsoft.com/hololens/hololens-recovery) to erase all data.
+2. If your HoloLens 2 is on a [Windows Insider build](https://insider.windows.com) or has a configuration that breaks PIX,  [reflash your device](/hololens/hololens-recovery) to erase all data.
 
 3. Enable **Developer Mode** and **Device Portal**:
 
@@ -41,7 +41,7 @@ keywords: HoloLens, HoloLens 2, PIX, capture, mixed reality headset, windows mix
 * With the device still connected, awake, and with the user logged in, launch Visual Studio.
 
 > [!IMPORTANT]
-> Make sure your device isn't in standby mode or asleep. If you're having trouble with this step, refer to the [Windows Device Portal instructions](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
+> Make sure your device isn't in standby mode or asleep. If you're having trouble with this step, refer to the [Windows Device Portal instructions](./using-the-windows-device-portal.md).
 
 ## Preparing for deployment
 

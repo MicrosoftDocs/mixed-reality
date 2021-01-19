@@ -56,6 +56,6 @@ The following table shows different Spectator View functionality and their capab
 | Runtime setup duration               |         Instant          |                     Slow                    |
 ## See also
 
-* [Mixed reality capture](../../mixed-reality-capture.md) 
+* [Mixed reality capture](/hololens/holographic-photos-and-videos) 
 * [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
 * [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)

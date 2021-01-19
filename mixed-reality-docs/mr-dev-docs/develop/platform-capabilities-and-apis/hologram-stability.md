@@ -20,11 +20,11 @@ The quality of holograms is a result of good environment and good app developmen
 
 The following terminology can help you when you're identifying problems with the environment, inconsistent or low rendering rates, or anything else.
 * **Accuracy.** Once the hologram is world-locked and placed in the real world, it should stay where it's placed relative to the surrounding environment and independent of user motion or small and sparse environment changes. If a hologram later appears in an unexpected location, it's an *accuracy* problem. Such scenarios can happen if two distinct rooms look identical.
-* **Jitter.** Users observe jitter as high frequency shaking of a hologram, which can happen when tracking of the environment degrades. For users, the solution is running [sensor tuning](../../sensor-tuning.md).
+* **Jitter.** Users observe jitter as high frequency shaking of a hologram, which can happen when tracking of the environment degrades. For users, the solution is running [sensor tuning](/hololens/hololens-updates).
 * **Judder.** Low rendering frequencies result in uneven motion and double images of holograms. Judder is especially noticeable in holograms with motion. Developers need to maintain a [constant 60 FPS](hologram-stability.md#frame-rate).
 * **Drift.** Users see drift as a hologram appears to move away from where it was originally placed. Drift happens when you place holograms far away from [spatial anchors](../../design/spatial-anchors.md), particularly in unmapped parts of the environment. Creating holograms close to spatial anchors lowers the likelihood of drift.
 * **Jumpiness.** When a hologram "pops" or "jumps" away from its location occasionally. Jumpiness can occur as tracking adjusts holograms to match updated understanding of your environment.
-* **Swim.** When a hologram appears to sway corresponding to the motion of the user's head. Swim occurs when the application hasn't fully implemented [reprojection](hologram-stability.md#reprojection), and if the HoloLens isn't [calibrated](../../calibration.md) for the current user. The user can rerun the [calibration](../../calibration.md) application to fix the issue. Developers can update the stabilization plane to further enhance stability.
+* **Swim.** When a hologram appears to sway corresponding to the motion of the user's head. Swim occurs when the application hasn't fully implemented [reprojection](hologram-stability.md#reprojection), and if the HoloLens isn't [calibrated](/hololens/hololens-calibration) for the current user. The user can rerun the [calibration](/hololens/hololens-calibration) application to fix the issue. Developers can update the stabilization plane to further enhance stability.
 * **Color separation.** The displays in HoloLens are color sequential displays, which flash color channels of red-green-blue-green at 60 Hz (individual color fields are shown at 240 Hz). Whenever a user tracks a moving hologram with their eyes, that hologram's leading and trailing edges separate in their constituent colors, producing a rainbow effect. The degree of separation is dependent upon the speed of the hologram. In some rarer cases, moving ones head rapidly while looking at a stationary hologram can also result in a rainbow effect, which is called *[color separation](hologram-stability.md#color-separation)*.
 
 ## Frame rate
@@ -42,7 +42,7 @@ By rendering at 60 FPS, you're doing three things to help make stable holograms:
 **Frame-rate consistency**
  Frame rate consistency is as important as a high frames-per-second. Occasionally dropped frames are inevitable for any content-rich application, and the HoloLens implements some sophisticated algorithms to recover from occasional glitches. However, a constantly fluctuating framerate is a lot more noticeable to a user than running consistently at lower frame rates. For example, an application that renders smoothly for five frames (60 FPS for the duration of these five frames) and then drops every other frame for the next 10 frames (30 FPS for the duration of these 10 frames) will appear more unstable than an application that consistently renders at 30 FPS.
 
-On a related note, the operating system throttles down applications to 30 FPS when [mixed reality capture](../../mixed-reality-capture.md) is running.
+On a related note, the operating system throttles down applications to 30 FPS when [mixed reality capture](/hololens/holographic-photos-and-videos) is running.
 
 **Performance analysis**
  There are different kinds of tools that can be used to benchmark your application frame rate, such as:
@@ -91,7 +91,7 @@ There are four main types of reprojection
 Applications need to take specific actions to enable the different types of reprojection
 * **Depth Reprojection:** The application submits their depth buffer to the system for every rendered frame.  On Unity, Depth Reprojection is done with the **Shared Depth Buffer** option in the **Windows Mixed Reality Settings** pane under **XR Plugin Management**.  DirectX apps call CommitDirect3D11DepthBuffer.  The application shouldn't call SetFocusPoint.
 * **Planar Reprojection:** On every frame, applications tell the system the location of a plane to stabilize.  Unity applications call SetFocusPointForFrame and should have **Shared Depth Buffer** disabled.  DirectX apps call SetFocusPoint and shouldn't call CommitDirect3D11DepthBuffer.
-* **Automatic Planar Reprojection:** To enable, the application needs to submit their depth buffer to the system as they would for Depth Reprojection. Apps using the Mixed Reality Toolkit (MRTK) can configure the [camera settings provider](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html#hololens-2-reprojection-method) to use AutoPlanar Reprojection. Native apps should set the `DepthReprojectionMode` in the [HolographicCameraRenderingParameters](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) to `AutoPlanar` each frame. For HoloLens generation 1, the application should not call SetFocusPoint.
+* **Automatic Planar Reprojection:** To enable, the application needs to submit their depth buffer to the system as they would for Depth Reprojection. Apps using the Mixed Reality Toolkit (MRTK) can configure the [camera settings provider](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html#hololens-2-reprojection-method) to use AutoPlanar Reprojection. Native apps should set the `DepthReprojectionMode` in the [HolographicCameraRenderingParameters](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) to `AutoPlanar` each frame. For HoloLens generation 1, the application should not call SetFocusPoint.
 
 ### Choosing Reprojection Technique
 
@@ -185,6 +185,6 @@ As before, rendering at 60 FPS and setting the stabilization plane are the most 
 
 ## See also
 * [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
-* [Color, light, and materials](../../color,-light-and-materials.md)
+* [Color, light, and materials](../../design/color-light-and-materials.md)
 * [Instinctual interactions](../../design/interaction-fundamentals.md)
 * [MRTK Hologram Stabilization](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/hologram-stabilization.html)

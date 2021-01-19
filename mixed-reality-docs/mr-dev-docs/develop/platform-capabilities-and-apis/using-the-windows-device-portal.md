@@ -13,7 +13,7 @@ ms.localizationpriority: high
 
 <table>
 <tr>
-<th>Feature</th><th style="width:150px"><a href="../../hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px">
+<th>Feature</th><th style="width:150px"><a href="/hololens/hololens1-hardware">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px">
 </tr><tr>
 <td> Windows Device Portal</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"></td>
 </tr>
@@ -21,19 +21,19 @@ ms.localizationpriority: high
 
 The Windows Device Portal for HoloLens lets you configure and manage your device remotely over Wi-Fi or USB. The Device Portal is a web server on your HoloLens that you can connect to from a web browser on your PC. The Device Portal includes many tools that will help you manage your HoloLens and debug and optimize your apps.
 
-This documentation is specifically about the Windows Device Portal for HoloLens. To use the Windows Device portal for desktop (including for Windows Mixed Reality), see [Windows Device Portal overview](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal)
+This documentation is specifically about the Windows Device Portal for HoloLens. To use the Windows Device portal for desktop (including for Windows Mixed Reality), see [Windows Device Portal overview](/windows/uwp/debug-test-perf/device-portal)
 
 ## Setting up HoloLens to use Windows Device Portal
 
 1. Power on your HoloLens and put on the device.
-2. Use the [Start gesture](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture) for HoloLens2 or [Bloom](https://docs.microsoft.com/hololens/hololens1-basic-usage#open-the-start-menu-with-bloom) on HoloLens (1st Gen) to launch the main menu. 
-3. Gaze at the **Settings** tile and do an [air-tap](https://docs.microsoft.com/hololens/hololens1-basic-usage#select-holograms-with-gaze-and-air-tap) gesture on HoloLens (1st Gen). You can also select it on HoloLens 2 by [touching it or using a Hand ray](https://docs.microsoft.com/hololens/hololens2-basic-usage). 
+2. Use the [Start gesture](/hololens/hololens2-basic-usage#start-gesture) for HoloLens2 or [Bloom](/hololens/hololens1-basic-usage#open-the-start-menu-with-bloom) on HoloLens (1st Gen) to launch the main menu. 
+3. Gaze at the **Settings** tile and do an [air-tap](/hololens/hololens1-basic-usage#select-holograms-with-gaze-and-air-tap) gesture on HoloLens (1st Gen). You can also select it on HoloLens 2 by [touching it or using a Hand ray](/hololens/hololens2-basic-usage). 
 4. Select the **Update** menu item.
 5. Select the **For developers** menu item.
 6. Enable **Developer Mode**.
 
 > [!IMPORTANT]
-> If you're in multi-user and not an admin, the ability to enter Developer Mode may be grayed out. Please ensure that you are an **[admin on the device](https://docs.microsoft.com/hololens/security-adminless-os)**.
+> If you're in multi-user and not an admin, the ability to enter Developer Mode may be grayed out. Please ensure that you are an **[admin on the device](/hololens/security-adminless-os)**.
 
 7. [Scroll down](../../design/gaze-and-commit.md#composite-gestures) and enable **Device Portal**.
 8. If you're setting up Windows Device Portal so you can deploy apps to this HoloLens over USB or Wi-Fi, select **Pair** to [generate a pairing PIN](using-visual-studio.md). Leave the Settings app at the PIN popup until you enter the PIN into Visual Studio during your first deployment.
@@ -42,7 +42,7 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 
 ## Connecting over Wi-Fi
 
-1. [Connect your HoloLens to Wi-Fi](../../connecting-to-wi-fi-on-hololens.md).
+1. [Connect your HoloLens to Wi-Fi](/hololens/hololens-network).
 2. Look up your device's IP address by either:
    * Going to **Settings > Network & Internet > Wi-Fi > Advanced Options**.
    * Going to **Settings > Network & Internet** and selecting **Hardware properties**.
@@ -277,13 +277,13 @@ All settings on this page apply to captures taken using Windows Device Portal. S
 ![Performance Tracing page in Windows Device Portal on Microsoft HoloLens](images/using-windows-portal-img-08.png)<br>
 *Performance Tracing page in Windows Device Portal on Microsoft HoloLens*
 
-Capture [Windows Performance Recorder](https://msdn.microsoft.com/library/windows/hardware/hh448205.aspx) (WPR) traces from your HoloLens.
+Capture [Windows Performance Recorder](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448205(v=win.10)) (WPR) traces from your HoloLens.
 * **Available profiles**: Select the WPR profile from the dropdown, and select or tap **Start** to start tracing.
 * **Custom profiles**: Select or tap **Browse** to choose a WPR profile from your PC. Select or tap **Upload and start** to start tracing.
 
 To stop the trace, select the stop link. Stay on this page until the trace file has completed downloading.
 
-Captured ETL files can be opened for analysis in [Windows Performance Analyzer](https://msdn.microsoft.com/library/windows/hardware/hh448170.aspx).
+Captured ETL files can be opened for analysis in [Windows Performance Analyzer](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448170(v=win.10)).
 
 ### Processes
 
@@ -326,7 +326,7 @@ Manages the apps that are installed on the HoloLens.
 ![App Crash Dumps page in Windows Device Portal on Microsoft HoloLens](images/using-windows-portal-img-12.png)<br>
 *App Crash Dumps page in Windows Device Portal on Microsoft HoloLens*
 
-This page allows you to collect crash dumps for your side-loaded apps. Check the **Crash Dumps Enabled** checkbox for each app for which you want to collect crash dumps. Return to this page to collect crash dumps. Dump files can be [opened in Visual Studio for debugging](https://msdn.microsoft.com/library/d5zhxt22.aspx).
+This page allows you to collect crash dumps for your side-loaded apps. Check the **Crash Dumps Enabled** checkbox for each app for which you want to collect crash dumps. Return to this page to collect crash dumps. Dump files can be [opened in Visual Studio for debugging](/previous-versions/visualstudio/visual-studio-2015/debugger/using-dump-files).
 
 ### File Explorer
 
@@ -338,11 +338,11 @@ Use the file explorer to browse, upload, and download files. You can work with f
 ### Kiosk Mode
 
 >[!NOTE]
->Kiosk mode is only available with the [Microsoft HoloLens Commercial Suite](../../commercial-features.md).
+>Kiosk mode is only available with the [Microsoft HoloLens Commercial Suite](/hololens/hololens-commercial-features).
 
 ![Kiosk mode page in Windows Device Portal on Microsoft HoloLens](images/using-windows-portal-img-14.png)
 
-Check the [Set up HoloLens in kiosk mode](https://docs.microsoft.com/hololens/hololens-kiosk#set-up-kiosk-mode-using-the-windows-device-portal-windows-10-version-1607-and-version-1803) article in Windows IT Pro Center for up-to-date instructions on enabling kiosk mode via Windows Device Portal.
+Check the [Set up HoloLens in kiosk mode](/hololens/hololens-kiosk#set-up-kiosk-mode-using-the-windows-device-portal-windows-10-version-1607-and-version-1803) article in Windows IT Pro Center for up-to-date instructions on enabling kiosk mode via Windows Device Portal.
 
 ### Logging
 

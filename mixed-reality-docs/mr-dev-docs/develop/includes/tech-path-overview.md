@@ -9,8 +9,8 @@ Build a cross-platform, full-featured mixed reality app with Unity. See the [Uni
 You have several hardware and emulator options when building Mixed Reality apps with Unity. While our developer documentation focuses on HoloLens devices, you'll find device support sections with details on immersive headset deployment when applicable.
 
 **Augmented reality devices**
-* [HoloLens (1st Gen)](https://docs.microsoft.com/hololens/hololens1-hardware)
-* [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)
+* [HoloLens (1st Gen)](/hololens/hololens1-hardware)
+* [HoloLens 2](/hololens/hololens2-hardware)
 
 **Immersive VR headsets**
 * HP Reverb and Reverb G2
@@ -40,7 +40,7 @@ You can use **Microsoft Dynamics 365 Guides** to visually tether holographic ins
 
 ## Examples
 
-We have several open source [sample apps](../unity/samples.md) for you to download and play around with to get a feel for a Mixed Reality end product in Unity. There are also MRTK example scenes available for you to test out specific features:
+We have several open source [sample apps](../features-and-samples.md) for you to download and play around with to get a feel for a Mixed Reality end product in Unity. There are also MRTK example scenes available for you to test out specific features:
 * [Hand interaction examples scene (MRTK) for Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#open-and-run-the-handinteractionexamples-scene-in-editor) -
 The HandInteractionExamples.unity example scene contains various types of interactions and UI controls that highlight articulated hand input.
 
@@ -61,8 +61,8 @@ Build a cross-platform, full-featured mixed reality app with Unreal. See the [Un
 You have several hardware, emulator, and streaming options when building Mixed Reality apps with Unreal Engine. While our developer documentation focuses on HoloLens devices, you can package your Unreal projects as x64 desktop apps and run them on immersive headsets just fine.
 
 **Augmented reality devices**
-* [HoloLens (1st Gen)](https://docs.microsoft.com/hololens/hololens1-hardware)
-* [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)
+* [HoloLens (1st Gen)](/hololens/hololens1-hardware)
+* [HoloLens 2](/hololens/hololens2-hardware)
 
 **Immersive VR headsets**
 * HP Reverb and Reverb G2
@@ -114,7 +114,7 @@ Create mixed reality apps with a direct line to the Windows Mixed Reality APIs. 
 You have several hardware, emulator, and streaming options when building Mixed Reality apps with OpenXR development. 
 
 **Augmented reality devices**
-* [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)
+* [HoloLens 2](/hololens/hololens2-hardware)
 
 **Immersive VR headsets**
 * HP Reverb and Reverb G2

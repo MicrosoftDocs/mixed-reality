@@ -7,7 +7,7 @@
 | [Gaze](../unity/gaze-in-unity.md) | Let users target holograms with by looking at them |
 | [Motion controllers](../unity/motion-controllers-in-unity.md) | Add spatial actions to your Mixed Reality apps |
 | [Gestures](../unity/gestures-in-unity.md) | Use hand gestures as input in your Mixed Reality experiences |
-| [Hand and eye tracking](../unity/hand-eye-in-unit.md) | Integrate articulated hand and eye tracking input into your user experience |
+| [Hand and eye tracking](../unity/hand-eye-in-unity.md) | Integrate articulated hand and eye tracking input into your user experience |
 | [Spatial mapping](../unity/spatial-mapping-in-unity.md) | Map your physical space with a virtual mesh overlay to mark the boundaries of your environment |
 | [Text](../unity/text-in-unity.md) | Get sharp, high-quality text that has a manageable size and quality rendering |
 | [Voice input](../unity/voice-input-in-unity.md) | Capture spoken keywords, phrases, and dictation from your users|
@@ -26,5 +26,3 @@
 | [Spatial sound](../unity/spatial-sound-in-unity.md) | Enhance your apps with immersive 3D audio |
 | [Text](../unity/text-in-unity.md) | Get sharp, high-quality text that has a manageable size and quality rendering |
 | [Voice input](../unity/voice-input-in-unity.md) | Capture spoken keywords, phrases, and dictation from your users|
-
-
