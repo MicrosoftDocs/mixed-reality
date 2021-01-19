@@ -51,7 +51,7 @@ For this, first follow the [Initializing your project and first application](mr-
 
 4. [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
 
-5. [Configuring the Unity project](mr-learning-base-02.md##configuring-the-unity-project)
+5. [Configuring the Unity project](mr-learning-base-02.md#configuring-the-unity-project)
 
 6. [Creating and setting the scene](mr-learning-base-02.md#creating-and-configuring-the-scene) and give the scene a suitable name, for example, **PC Holographic Remoting**
 
