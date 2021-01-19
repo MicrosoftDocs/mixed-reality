@@ -72,7 +72,7 @@ Currently bounds control offers configuration objects options for the following 
   * [Scale handles](#scale-handles-configuration)
   * [Rotation handles](#rotation-handles-configuration)
   * [Translation handles](#translation-handles-configuration)
-* [Links / Wireframe](#links-configuration)
+* [Links / Wireframe](#Links-configuration-(wireframe))
 * [Box display](#box-configuration)
 * [Proximity effect](#proximity-effect-configuration)
 
@@ -131,7 +131,7 @@ Allows enabling and configuring translation handles for bounds control. Note tha
 * **Show handle for Y**: controls visibility of the handle for Y axis.
 * **Show handle for Z**: controls visibility of the handle for Z axis.
 
-### <a name="links-configuration">Links configuration (wireframe)</a>
+### Links configuration (wireframe)
 
 The links configuration enables the wireframe feature of bounds control. The following properties can be configured:
 

@@ -14,7 +14,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, HTK,
 
 ### Setup and configuration
 
-|                           | HTK 2017 |  MRTK v2  |
+|            Methods               | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
 | Type                      | Specific events for buttons, with input type info when relevant. | Action / Gesture based input, passed along via events. |
 | Setup                     | Place the InputManager in the scene. | Enable the input system in the [Configuration Profile](../out-of-scope/MixedRealityConfigurationGuide.md) and specify a concrete input system type. |
@@ -63,7 +63,7 @@ Related input systems:
 
 ## Camera
 
-|                           | HTK 2017 |  MRTK v2  |
+|       Methods                    | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
 | Setup                     | Delete MainCamera, add MixedRealityCameraParent / MixedRealityCamera / HoloLensCamera prefab to scene **or** use Mixed Reality Toolkit > Configure > Apply Mixed Reality Scene Settings menu item. | MainCamera parented under MixedRealityPlayspace via Mixed Reality Toolkit > Add to Scene and Configure... |
 | Configuration             | Camera settings configuration performed on prefab instance. | Camera settings configured in the [Mixed Reality Camera Profile](xref:Microsoft.MixedReality.Toolkit.MixedRealityCameraProfile). |
@@ -72,7 +72,7 @@ Related input systems:
 
 ### Keyword recognition
 
-|                           | HTK 2017 |  MRTK v2  |
+|          Methods                 | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
 | Setup                     | Add a SpeechInputSource to your scene. | Keyword service (e.g., Windows Speech Input Manager) must be added to the input system's data providers. |
 | Configuration             | Recognized keywords are configured in the SpeechInputSource’s inspector. | Keywords are configured in the [Mixed Reality Speech Commands Profile](../features/Input/Speech.md). |
@@ -80,7 +80,7 @@ Related input systems:
 
 ### Dictation
 
-|                           | HTK 2017 |  MRTK v2  |
+|             Methods              | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
 | Setup                     | Add a DictationInputManager to your scene. | Dictation support requires service (e.g., Windows Dictation Input Manager) to be added to the Input System's data providers. |
 | Event handlers            | `IDictationHandler` | `IMixedRealityDictationHandler`[`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) |
@@ -89,41 +89,41 @@ Related input systems:
 
 ### Mesh
 
-|                           | HTK 2017 |  MRTK v2  |
+|         Methods                  | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
 | Setup                     | Add the SpatialMapping prefab to the scene. | Enable the Spatial Awareness System in the Configuration Profile and add a spatial observer (e.g., Windows Mixed Reality Spatial Mesh Observer) to the Spatial Awareness System's data providers. |
 | Configuration             | Configure the scene instance in the inspector. | Configure the settings on each spatial observer's profile. |
 
 ### Planes
 
-|                           | HTK 2017 |  MRTK v2  |
+|              Methods             | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
 | Setup                     | Use the `SurfaceMeshesToPlanes` script. | Not yet implemented. |
 
 ### Spatial understanding
 
-|                           | HTK 2017 |  MRTK v2  |
+|               Methods            | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
 | Setup                     | Add the SpatialUnderstanding prefab to the scene. | Not yet implemented. |
 | Configuration             | Configure the scene instance in the inspector. | Not yet implemented. |
 
 ## Boundary
 
-|                           | HTK 2017 |  MRTK v2  |
+|            Methods               | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
 | Setup                     | Add the `BoundaryManager` script to the scene. | Enable the Boundary System in the Configuration Profile. |
 | Configuration             | Configure the scene instance in the inspector. | Configure the settings in the Boundary Visualization profile. |
 
 ## Sharing
 
-|                           | HTK 2017 |  MRTK v2  |
+|               Methods            | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
 | Setup                     | Sharing service: Add Sharing prefab to the scene. UNet: Use SharingWithUNET example. | In-progress |
 | Configuration             | Configure the scene instances in the inspector. | In-progress |
 
 ## UX
 
-|                           | HTK 2017 |  MRTK v2  |
+|        Methods                   | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
 | Button                     | [Interactable Objects](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [Button](../features/README_Button.md) |
 | Interactable                     | [Interactable Objects](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [Interactable](../features/README_Interactable.md) |
