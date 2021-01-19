@@ -78,7 +78,8 @@ You have several hardware, emulator, and streaming options when building Mixed R
 
 |  Tool/SDK  |  Description  |
 | --- | --- |
-| [Mixed Reality Toolkit for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) | The Mixed Reality Toolkit for Unreal (MRTK-Unreal) is a set of components, in the form of plugins, samples and documentation, designed to accelerate development of mixed reality applications using the Unreal Engine. |
+| [UX Tools for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) | UX Tools is the first plugin to be released and is currently only supported on HoloLens 2. The plugin includes C++ code, Blueprints, and example assets of common UX features for input simulation, hand interactions, surface magnetism and more. |
+| [Graphics Tools for Unreal](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/) | Graphics Tools is a UE game plugin with code, blueprints and example assets created to help improve the visual fidelity of Mixed Reality applications while staying within performance budgets. |
 
 ## Cloud services
 
