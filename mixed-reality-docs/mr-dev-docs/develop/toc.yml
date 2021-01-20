@@ -264,8 +264,6 @@
     items:
       - name: Creating a HoloLens project
         href: unreal/unreal-quickstart.md
-      - name: Setting up a Mixed Reality scene
-        href: unreal/unreal-scene-setup.md
   - name: Tutorials
     items:
       - name: Build a chess app with MRTK UX Tools
