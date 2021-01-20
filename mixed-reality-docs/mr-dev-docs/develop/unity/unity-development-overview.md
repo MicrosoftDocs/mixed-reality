@@ -80,7 +80,7 @@ A developers job is never done, especially when learning a new tool or SDK. The 
 
 If you have existing apps that you'd like to port over, the articles listed below are your next stop:
 
-* [HoloToolkit/MRTK to MRTK v2](mrtk-porting-guide.md)
+* [HoloToolkit/MRTK to MRTK v2](../porting-apps/porting-hl1-hl2.md)
 * [Porting guide for immersive apps](../porting-apps/porting-guides.md)
 * [Input porting guide](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
 
