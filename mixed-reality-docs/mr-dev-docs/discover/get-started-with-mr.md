@@ -147,7 +147,7 @@ If you're curious to see how the different Mixed Reality hardware and services w
 |  Concept  |  Outcome  |
 | --- | --- |
 | [HoloLens hardware](https://www.microsoft.com//hololens/hardware) | HoloLens 2 offers the most comfortable and immersive mixed reality experience available, with industry-leading solutions that deliver value in minutes—all enhanced by the reliability, security, and scalability of cloud and AI services from Microsoft |
-| [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | Explore a range of products that can empower employees and optimize operations with Dynamics 365, including [Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview), [Layout, and [Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/). Meaningful insight comes from getting hands-on with real work, real devices, and real users |
+| [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | Explore a range of products that can empower employees and optimize operations with Dynamics 365, including [Remote Assist](/dynamics365/mixed-reality/remote-assist/ra-overview), [Layout, and [Guides](/dynamics365/mixed-reality/guides/). Meaningful insight comes from getting hands-on with real work, real devices, and real users |
 | [Azure Cloud Services](../develop/mixed-reality-cloud-services.md) | Build compelling immersive experiences on different platforms with spatial awareness, spatial anchors, and complex 3D model rendering |
 
 ## What would you like to do next?
@@ -176,5 +176,4 @@ If you're curious to see how the different Mixed Reality hardware and services w
 <br>
 
 >[!IMPORTANT]
->All mixed reality development materials are provided on this site for your reference only. Your application, its usage, and its effect on end users is your sole responsibility as the application developer, including ensuring that your app does not cause discomfort, injury, or any other harm to the end user, and including appropriate warnings and disclaimers. You need to at all times take the appropriate steps in the development and publishing of your application to ensure that your application is safe, and that you meet all obligations in your [App Developer Agreement with Microsoft](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement).
-
+>All mixed reality development materials are provided on this site for your reference only. Your application, its usage, and its effect on end users is your sole responsibility as the application developer, including ensuring that your app does not cause discomfort, injury, or any other harm to the end user, and including appropriate warnings and disclaimers. You need to at all times take the appropriate steps in the development and publishing of your application to ensure that your application is safe, and that you meet all obligations in your [App Developer Agreement with Microsoft](/legal/windows/agreements/app-developer-agreement).

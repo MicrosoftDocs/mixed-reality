@@ -16,7 +16,7 @@ HoloLens 2 can detect QR codes in the environment around the headset, establishi
 
 <table>
 <tr>
-<th>Feature</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">HoloLens (first gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Feature</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens (first gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td> QR code detection</td><td style="text-align: center;">️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">✔️</td>
 </tr>
@@ -123,7 +123,7 @@ Each detected QR code exposes a [spatial coordinate system](../../design/coordin
 
 When directly using the QR SDK, the Z-axis is pointing into the paper (not shown) - when converted into Unity coordinates, the Z-axis points out of the paper and is left-handed.
 
-A QR code's SpatialCoordinateSystem aligns as shown. You can get the coordinate system from the platform by calling <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">SpatialGraphInteropPreview::CreateCoordinateSystemForNode</a> and passing in the code's SpatialGraphNodeId.
+A QR code's SpatialCoordinateSystem aligns as shown. You can get the coordinate system from the platform by calling <a href="/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">SpatialGraphInteropPreview::CreateCoordinateSystemForNode</a> and passing in the code's SpatialGraphNodeId.
 
 The C++ code below shows how to create a rectangle and place it using the QR code's coordinate system:
 
@@ -217,7 +217,7 @@ Windows Mixed Reality devices detect QR codes at the system level in the driver.
 We recommend configuring your app to ignore QR codes older than a specific timestamp. Currently, the API doesn't support clearing QR code history.
 
 ### QR code placement in a space
-For recommendations on where and how to place QR codes, refer to [Environment considerations for HoloLens](../../environment-considerations-for-hololens.md).
+For recommendations on where and how to place QR codes, refer to [Environment considerations for HoloLens](/hololens/hololens-environment-considerations).
 
 ## QR API reference
 
@@ -455,4 +455,4 @@ namespace Microsoft.MixedReality.QR
 
 ## See also
 * [Coordinate systems](../../design/coordinate-systems.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>
+* <a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>

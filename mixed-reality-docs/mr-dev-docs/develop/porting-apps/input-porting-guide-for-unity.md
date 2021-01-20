@@ -17,13 +17,13 @@ You can port your input logic to Windows Mixed Reality using one of two approach
 
 Unity currently uses its general Input.GetButton/Input.GetAxis APIs to expose input for [the Oculus SDK](https://docs.unity3d.com/Manual/OculusControllers.html) and [the OpenVR SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html). If your apps are already using these APIs for input, the Input.GetButton/Input.GetAxis APIs are the easiest paths for supporting motion controllers in Windows Mixed Reality. You'll only need to remap buttons and axes in the Input Manager.
 
-For more information, see the [Unity button/axis mapping table](../unity/gestures-and-motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) and the [overview of the common Unity APIs](../unity/gestures-and-motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis).
+For more information, see the [Unity button/axis mapping table](../unity/motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) and the [overview of the common Unity APIs](../unity/motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis).
 
 ## Windows-specific XR.WSA.Input APIs
 
 If your app already builds custom input logic for each platform, you can use the Windows-specific spatial input APIs in the **UnityEngine.XR.WSA.Input** namespace. From there, you access additional information, such as position accuracy or the source kind, letting you tell hands and controllers apart on HoloLens.
 
-For more information, see the [overview of the UnityEngine.XR.WSA.Input APIs](../unity/gestures-and-motion-controllers-in-unity.md#windows-specific-apis-xrwsainput).
+For more information, see the [overview of the UnityEngine.XR.WSA.Input APIs](../unity/motion-controllers-in-unity.md#windows-specific-apis-xrwsainput).
 
 ## Grip pose vs. pointing pose
 
@@ -46,7 +46,7 @@ These pose coordinates are all expressed in Unity world coordinates.
 
 ## See also
 * [Motion controllers]()../../design/motion-controllers.md)
-* [Gestures and motion controllers in Unity](../unity/gestures-and-motion-controllers-in-unity.md)
+* [Motion controllers in Unity](../unity/motion-controllers-in-unity.md)
 * [UnityEngine.XR.WSA.Input](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
 * [UnityEngine.XR.InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)
 * [Porting guides](porting-guides.md)

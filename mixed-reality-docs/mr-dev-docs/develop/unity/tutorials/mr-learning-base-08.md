@@ -21,7 +21,7 @@ In this tutorial, you will learn how to enable eye-tracking for HoloLens 2 and a
 * Learn how to enable eye-tracking for HoleLens 2
 * Learn how to use eye-tracking to trigger action
 
-## Ensuring the Eye Gaze Input capability is enabled
+## Ensuring Eye Gaze Input capability and adding Eye Gaze Data Provider
 
 In the Unity menu, select Mixed Reality Toolkit > Utilities > **Configure Unity Project** to open the **MRTK Project Configurator** window, then in the **UWP Capabilities** section, verify that **Enable Eye Gaze Input Capability** is greyed out:
 
@@ -30,11 +30,21 @@ In the Unity menu, select Mixed Reality Toolkit > Utilities > **Configure Unity 
 > [!NOTE]
 > The Gaze Input capability should have been enabled during the [Apply the MRTK Project Configurator settings](mr-learning-base-02.md#selecting-mrtk-and-project-settings) instructions when you configured the Unity project at the beginning of this tutorial series. However, if it is not enabled, make sure you enable it now.
 
+In the Hierarchy window, select the MixedRealityToolkit object, then in the Inspector window, navigate to the Input tab:
+
+* Expand the **Input Data Providers** , click the **+ Add Data Provider** button to add a new Data Provider
+
+![Adding new speech commands](images/mr-learning-base/base-08-section1-step1-2.png)
+
+Assign **Microsoft.MixedReality.ToolKit.WindowsMixedReality.Input** > **WindowsMixedRealityEyeGazeProvider** to the **Type** field of the new Data Provider.
+
+![Adding new speech commands](images/mr-learning-base/base-08-section1-step1-3.png)
+
 ## Enabling eye based gaze in the gaze provider
 
 In the Hierarchy window, select the **MixedRealityToolkit** object, then in the Inspector window, select the MixedRealityToolkit > **Input** tab and take the following steps:
 
-* Clone the **DefaultHoloLens2InputSystemProfile** and give it a suitable name, for example, _GettingStarted_HoloLens2InputSystemProfile_
+* Clone the **DefaultXRSDKInputSystemProfile** and give it a suitable name, for example, _GettingStarted_XRSDKInputSystemProfile_
 * Expand the **Pointers** section
 * Clone the **DefaultMixedRealityPointerProfile** and give it a suitable name, for example, _GettingStarted_MixedRealityPointerProfile_
 * Locate the **Gaze Settings** section and check the **Is Eye Tracking Enabled** checkbox
@@ -50,9 +60,9 @@ In the Hierarchy window, select the **MixedRealityToolkit** object, then in the 
 
 * Expand the **Input Data Providers** > **Input Simulation Service** section
 * Clone the **DefaultMixedRealityInputSimulationProfile** and give it a suitable name, for example, _GettingStarted_MixedRealityInputSimulationProfile_
-* Locate the **Eye Simulation** section and check the **Simulate Eye Position** checkbox
+* Locate **Eye Gaze Simulation** and set the **Default Eye Gaze Simulation Mode** to **Camera Forward Axis**
 
-![Unity MixedRealityToolkit component with newly created profile applied and eye simulation enabled](images/mr-learning-base/base-08-section3-step1-1.png)
+![Unity with TextMeshPro object selected](images/mr-learning-base/base-08-section3-step1-1.png)
 
 ## Adding eye-tracking to objects
 

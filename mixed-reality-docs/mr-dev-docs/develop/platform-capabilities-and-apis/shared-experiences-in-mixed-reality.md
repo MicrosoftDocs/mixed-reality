@@ -90,7 +90,7 @@ Consider your sharing experiences fitting into one of these two categories:
 * **Similar**: Environments that tend to have similar furniture, ambient light and sound, physical room size. For example: Professor is in lecture hall A and students are in lecture hall B. Lecture hall A might have fewer chairs than B but they both may have a physical desk to place holograms on.
 * **Dissimilar**: Environments that are different in furniture settings, room sizes, light, and sound considerations. For example: A professor is in a focus room, but students are in a large lecture hall, filled with students and teachers.
 
-It's important to [think about the environment](../../environment-considerations-for-hololens.md), as it will influence:
+It's important to [think about the environment](/hololens/hololens-environment-considerations), as it will influence:
 
 * How people will experience these objects. For example: If your experience works best on a table and the user has no table? Or on a flat floor surface but the user has a cluttered space.
 * Scale of the objects. For example: Placing a six feet human model on a table could be challenging but a heart model would work great.
@@ -132,11 +132,11 @@ Depending on your application and scenario, there will be various requirements t
 
 The key to shared experiences is having multiple users seeing the same holograms in the world on their own device, frequently done by sharing anchors to align coordinates across devices.
 
-To share anchors, use the [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors):
+To share anchors, use the [Azure Spatial Anchors](/azure/spatial-anchors):
 
 * First the user places the hologram.
 * App creates a [spatial anchor](../../design/spatial-anchors.md), to pin that hologram precisely in the world.
-* The anchors can be shared to HoloLens, iOS, and Android devices via [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/).
+* The anchors can be shared to HoloLens, iOS, and Android devices via [Azure Spatial Anchors](/azure/spatial-anchors/).
 
 With a shared spatial anchor, the app on each device now has a [common coordinate system](../../design/coordinate-systems.md) in which they can place content. Now the app can ensure to position and orient the hologram at the same location.
 
@@ -148,7 +148,7 @@ There are various service and technology options available to help build multi-u
 
 ## Shared static holograms (no interactions)
 
-Leverage [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/) in your app.  Enabling and sharing spatial anchors across devices allows you to create an application where users see holograms in the same place at the same time.  Additional syncing across devices is needed to enable users to interact with holograms and see movements or state updates of holograms.
+Leverage [Azure Spatial Anchors](/azure/spatial-anchors/) in your app.  Enabling and sharing spatial anchors across devices allows you to create an application where users see holograms in the same place at the same time.  Additional syncing across devices is needed to enable users to interact with holograms and see movements or state updates of holograms.
 
 ## Share first person perspective
 
@@ -167,7 +167,7 @@ Leverage [MixedReality-SpectatorView](https://github.com/microsoft/MixedReality-
 
 ## Multi-user collaborative experience
 
-Start with our [multi-user learning tutorial](../../mrlearning-sharing(photon)-ch1.md), which leverages [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/) for local users and [Photon SDK](https://www.photonengine.com/PUN) for syncing the content/state in the scene. Create locally collaborative applications where each user has his/her own perspective on the holograms in the scene and can each fully interact with the holograms.  Updates are provided across all devices and interaction conflict management is handled by Photon.
+Start with our [multi-user learning tutorial](../unity/tutorials/mr-learning-sharing-02.md), which leverages [Azure Spatial Anchors](/azure/spatial-anchors/) for local users and [Photon SDK](https://www.photonengine.com/PUN) for syncing the content/state in the scene. Create locally collaborative applications where each user has his/her own perspective on the holograms in the scene and can each fully interact with the holograms.  Updates are provided across all devices and interaction conflict management is handled by Photon.
 
 > [!NOTE]
 > Please note that [Photon](https://www.photonengine.com/) is a non-Microsoft product, so a billing relationship with Photon may be required to productize and scale for higher usage.
@@ -180,7 +180,7 @@ Different scenario or desire to use a different tech/service? Provide feedback a
 
 ## See also
 
-* [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
+* [Azure Spatial Anchors](/azure/spatial-anchors)
 * [Shared spatial anchors in DirectX](shared-spatial-anchors-in-directx.md)
 * [Shared experiences in Unity](../unity/shared-experiences-in-unity.md)
 * [Spectator view](spectator-view.md)

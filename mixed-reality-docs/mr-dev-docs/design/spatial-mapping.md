@@ -27,7 +27,7 @@ Spatial mapping provides a detailed representation of real-world surfaces in the
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
@@ -73,7 +73,7 @@ For HoloLens 2, it's possible to query a static version of the spatial mapping d
 
 ## What influences spatial mapping quality?
 
-Several factors, detailed [here](../environment-considerations-for-hololens.md), can affect the frequency and severity of these errors.  However, you should design your application so that the user can achieve their goals even in the presence of errors in the spatial mapping data.
+Several factors, detailed [here](/hololens/hololens-environment-considerations), can affect the frequency and severity of these errors.  However, you should design your application so that the user can achieve their goals even in the presence of errors in the spatial mapping data.
 
 ## Common usage scenarios
 
@@ -204,13 +204,13 @@ There are three primary ways in which spatial mapping meshes tend to be used for
    * One thing to bear in mind is that spatial meshes are different to the kind of meshes that a 3D artist might create. The triangle topology won't be as 'clean' as human-created topology, and the mesh will suffer from [various errors](spatial-mapping.md#what-influences-spatial-mapping-quality).
    * To create a pleasing visual aesthetic, you may want to do some [mesh processing](spatial-mapping.md#mesh-processing), for example to fill holes or smooth surface normals. You may also wish to use a shader to project artist-designed textures onto your mesh instead of directly visualizing mesh topology and normals.
 * For occluding holograms behind real-world surfaces
-   * Spatial surfaces can be rendered in a depth-only pass, which only affects the [depth buffer](https://msdn.microsoft.com/library/windows/desktop/bb219616(v=vs.85).aspx) and doesn't affect color render targets.
+   * Spatial surfaces can be rendered in a depth-only pass, which only affects the [depth buffer](/windows/win32/direct3d9/depth-buffers) and doesn't affect color render targets.
    * This primes the depth buffer to occlude subsequently rendered holograms behind spatial surfaces. Accurate occlusion of holograms enhances the sense that holograms really exist within the user's physical space.
-   * To enable depth-only rendering, update your blend state to set the [RenderTargetWriteMask](https://msdn.microsoft.com/library/windows/desktop/hh404492(v=vs.85).aspx) to zero for all color render targets.
+   * To enable depth-only rendering, update your blend state to set the [RenderTargetWriteMask](/windows/win32/api/d3d11_1/ns-d3d11_1-d3d11_render_target_blend_desc1) to zero for all color render targets.
 * For modifying the appearance of holograms occluded by real-world surfaces
-   * Normally rendered geometry is hidden when it's occluded. This is achieved by setting the depth function in your [depth-stencil state](https://msdn.microsoft.com/library/windows/desktop/ff476110(v=vs.85).aspx) to "less than or equal", which causes geometry to be visible only where it's **closer** to the camera than all previously rendered geometry.
+   * Normally rendered geometry is hidden when it's occluded. This is achieved by setting the depth function in your [depth-stencil state](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc) to "less than or equal", which causes geometry to be visible only where it's **closer** to the camera than all previously rendered geometry.
    * However, it may be useful to keep certain geometry visible even when it's occluded, and to modify its appearance when occluded as a way of providing visual feedback to the user. For example, this allows the application to show the user the location of an object while making it clear that is behind a real-world surface.
-   * To achieve this, render the geometry a second time with a different shader that creates the desired 'occluded' appearance. Before rendering the geometry for the second time, make two changes to your [depth-stencil state](https://msdn.microsoft.com/library/windows/desktop/ff476110(v=vs.85).aspx). First, set the depth function to "greater than or equal" so that the geometry will be visible only where it's **further** from the camera than all previously rendered geometry. Second, set the DepthWriteMask to zero, so that the depth buffer won't be modified (the depth buffer should continue to represent the depth of the geometry **closest** to the camera).
+   * To achieve this, render the geometry a second time with a different shader that creates the desired 'occluded' appearance. Before rendering the geometry for the second time, make two changes to your [depth-stencil state](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc). First, set the depth function to "greater than or equal" so that the geometry will be visible only where it's **further** from the camera than all previously rendered geometry. Second, set the DepthWriteMask to zero, so that the depth buffer won't be modified (the depth buffer should continue to represent the depth of the geometry **closest** to the camera).
 
 [Performance](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) is an important concern when rendering spatial mapping meshes. Here are some rendering performance techniques specific to rendering spatial mapping meshes:
 * Adjust triangle density
@@ -222,11 +222,11 @@ There are three primary ways in which spatial mapping meshes tend to be used for
    * Since culling is performed on a per-mesh basis and spatial surfaces can be large, breaking each spatial surface mesh into smaller chunks may result in more efficient culling (in that fewer offscreen triangles are rendered). There's a tradeoff, however; the more meshes you have, the more draw calls you must make, which can increase CPU costs. In an extreme case, the frustum culling calculations themselves could even have a measurable CPU cost.
 * Adjust rendering order
    * Spatial surfaces tend to be large, because they represent the user's entire environment surrounding them. Pixel processing costs on the GPU can be high, especially in cases where there's more than one layer of visible geometry (including both spatial surfaces and other holograms). In this case, the layer nearest to the user will be occluding any layers further away, so any GPU time spent rendering those more distant layers is wasted.
-   * To reduce this redundant work on the GPU, it helps to render opaque surfaces in front-to-back order (closer ones first, more distant ones last). By 'opaque' we mean surfaces for which the DepthWriteMask is set to one in your [depth-stencil state](https://msdn.microsoft.com/library/windows/desktop/ff476110(v=vs.85).aspx). When the nearest surfaces are rendered, they'll prime the depth buffer so that more distant surfaces are efficiently skipped by the pixel processor on the GPU.
+   * To reduce this redundant work on the GPU, it helps to render opaque surfaces in front-to-back order (closer ones first, more distant ones last). By 'opaque' we mean surfaces for which the DepthWriteMask is set to one in your [depth-stencil state](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc). When the nearest surfaces are rendered, they'll prime the depth buffer so that more distant surfaces are efficiently skipped by the pixel processor on the GPU.
 
 ## Mesh Processing
 
-An application may want to do [various operations](spatial-mapping.md#mesh-processing) on spatial surface meshes to suit its needs. The index and vertex data provided with each spatial surface mesh uses the same familiar layout as the [vertex and index buffers](https://msdn.microsoft.com/library/windows/desktop/bb147325%28v=vs.85%29.aspx) that are used for rendering triangle meshes in all modern rendering APIs. However, one key fact to be aware of is that spatial mapping triangles have a **front-clockwise winding order**. Each triangle is represented by three vertex indices in the mesh's index buffer and these indices will identify the triangle's vertices in a **clockwise** order, when the triangle is viewed from the **front** side. The front side (or outside) of spatial surface meshes corresponds as you would expect to the front (visible) side of real world surfaces.
+An application may want to do [various operations](spatial-mapping.md#mesh-processing) on spatial surface meshes to suit its needs. The index and vertex data provided with each spatial surface mesh uses the same familiar layout as the [vertex and index buffers](/windows/win32/direct3d9/rendering-from-vertex-and-index-buffers) that are used for rendering triangle meshes in all modern rendering APIs. However, one key fact to be aware of is that spatial mapping triangles have a **front-clockwise winding order**. Each triangle is represented by three vertex indices in the mesh's index buffer and these indices will identify the triangle's vertices in a **clockwise** order, when the triangle is viewed from the **front** side. The front side (or outside) of spatial surface meshes corresponds as you would expect to the front (visible) side of real world surfaces.
 
 Applications should only do mesh simplification if the coarsest triangle density provided by the surface observer is still insufficiently coarse - this work is computationally expensive and already being performed by the runtime to generate the various provided levels of detail.
 
@@ -287,7 +287,7 @@ To help design the right scanning experience, consider which of the following po
    * An application may require a scan of all of the surfaces in the current room, including those behind the user.
    * For example, a game may put the user in the role of Gulliver, under siege from hundreds of tiny Lilliputians approaching from all directions.
    * In such cases, the application will need to determine how many of the surfaces in the current room have already been scanned, and direct the user's gaze to fill in significant gaps.
-   * The key to this process is providing visual feedback that makes it clear to the user which surfaces haven't yet been scanned. The application could, for example,  use [distance-based fog](https://msdn.microsoft.com/library/windows/desktop/bb173401%28v=vs.85%29.aspx) to visually highlight regions that aren't covered by spatial mapping surfaces.
+   * The key to this process is providing visual feedback that makes it clear to the user which surfaces haven't yet been scanned. The application could, for example,  use [distance-based fog](/windows/win32/direct3d9/fog-formulas) to visually highlight regions that aren't covered by spatial mapping surfaces.
 
 * **Take an initial snapshot of the environment**
    * An application may wish to ignore all changes in the environment after taking an initial 'snapshot'.

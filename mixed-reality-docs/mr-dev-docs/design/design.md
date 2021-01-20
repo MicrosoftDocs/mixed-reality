@@ -13,7 +13,11 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 ![mixed reality design abstract](images/design-hero-image.png)
 
-Mixed Reality applications are unlike anything else in the world today, and designing them is hard work. Not only do you have to account for the new combinations of real and virtual worlds you're creating, but also the new user experiences they afford. Since Mixed Reality is a big place, we've selected important points along its design spectrum and laid them out below as a series of checkpoints. These are meant to be sequential, but if you've already dipped your feet in feel free to jump to any of the following sections.
+Mixed Reality applications are unlike anything else in the world today, and designing them is hard work. Not only do you have to account for the new combinations of real and virtual worlds you're creating, but also the new user experiences they afford. Since Mixed Reality is a big place, we've selected important points along its design spectrum and laid them out below as a series of checkpoints. These are meant to be sequential, but if you've already dipped your feet in feel free to jump to any of the following sections. 
+
+Take a look at our design overview video to get started:
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LhlW]
 
 ## Design checkpoints
 

@@ -3,11 +3,10 @@ title: Using the Mixed Reality OpenXR Plugin for Unity
 description: Learn how to enable the Mixed Reality OpenXR plugin for Unity projects.
 author: hferrone
 ms.author: alexturn
-ms.date: 12/1/2020
+ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, augmented reality, virtual reality, mixed reality headsets, learn, tutorial, getting started
 ---
-
 
 # Using the Mixed Reality OpenXR Plugin for Unity
 
@@ -16,7 +15,7 @@ Starting with Unity version 2020.2, Microsoft’s Mixed Reality OpenXR Plugin pa
 ## Prerequisites
 
 * Unity 2020.2 or later
-* Unity OpenXR plugin 0.1.1 or later
+* Unity OpenXR plugin 0.1.2 or later
 * Visual Studio 2019 or later
 * Install **UWP** platform support in Unity for HoloLens 2 apps
 
@@ -58,7 +57,7 @@ To add the OpenXR package:
 
     ``` json
       "dependencies": {
-        "com.microsoft.mixedreality.openxr": "0.1.1",
+        "com.microsoft.mixedreality.openxr": "0.1.2",
       }
     ```
 
@@ -105,7 +104,7 @@ To utilize one or more of the examples, install [ARFoundation 4.0+](https://docs
 2. In the list of packages, select **Mixed Reality OpenXR Plugin**
 3. Locate the sample in the **Samples** list and select **Import**
 
-![Screenshot of Unity Package Manager open in Unity editor with Mixed Reality OpenXR Plugin selected and samples import button highlighted](images/openxr-img-10.png)
+![Screenshot of Unity Package Manager open in Unity editor with Mixed Reality OpenXR Plugin selected and samples import button highlighted](images/openxr-img-03.png)
 
 <!-- ### For all other OpenXR samples
 
@@ -117,6 +116,33 @@ To utilize one or more of the examples, install [ARFoundation 4.0+](https://docs
 
 > [!NOTE]
 > When a package is updated, Unity provides the option to update imported samples.  Updating an imported sample will overwrite any changes that have been made to the sample and associated assets.
+
+## Using MRTK with OpenXR support
+
+MRTK Unity supports the Mixed Reality OpenXR plugin starting with the 2.5.3 release.  MRTK plugins can be installed from the same scoped registries as you set up when [installing the Mixed Reality OpenXR plugin](#installing-the-mixed-reality-openxr-plugin). You can find more detailed information in the [MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/usingupm.html#registering-the-mixed-reality-component-server).
+
+1. Add following packages in your **[projectRoot]/Packages/manifest.json** file:
+
+```json
+"dependencies": {
+    "com.microsoft.mixedreality.toolkit.foundation": "2.5.3",
+    "com.microsoft.mixedreality.toolkit.tools": "2.5.3",
+    "com.microsoft.mixedreality.toolkit.examples": "2.5.3",
+	…
+}
+```
+
+2. Go to the MixedReality Toolkit component script in the Inspector and switch to the **DefaultOpenXRConfigurationProfile** profile:
+
+![Screenshot of switching the MRTK configuration in the Mixed Reality Toolkit component in the inspector](images/openxr-img-11.png)
+
+### Known issues 
+
+When using the Hand Tracking feature, add following line in the **Assets/MixedRealityToolkit.Generated/link.xml** file:
+
+```
+<assembly fullname = "Microsoft.MixedReality.Toolkit.Providers.OpenXR" preserve="all"/>
+```
 
 ## Next steps
 

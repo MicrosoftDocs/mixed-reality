@@ -3,7 +3,7 @@ title: Contributing instructions
 description: Learn how to contribute to the Mixed Reality developer docs on the docs.microsoft.com platform using GitHub-flavored Markdown. 
 author: mattwojo
 ms.author: mattwoj
-ms.date: 03/21/2018
+ms.date: 01/11/2021
 ms.topic: article
 ---
 
@@ -19,7 +19,7 @@ This page covers the basic steps and guidelines for contributing and links to Ma
 
 | Repository name | URL |
 | --- | --- |
-| Mixed Reality | [MicrosoftDocs/mixed-reality](https://docs.microsoft.com/windows/mixed-reality) |
+| Mixed Reality | [MicrosoftDocs/mixed-reality](/windows/mixed-reality) |
 | VR Enthusiasts Guide | [MicrosoftDocs/mixed-reality/enthusiast-guide](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
 | HoloLens | [MicrosoftDocs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
 
@@ -126,13 +126,13 @@ The following resources will help you learn how to edit documentation using the 
 
 - [Markdown basics](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [Markdown-at-a-glance reference poster](images/MarkdownPoster.pdf)
-- [Additional resources for writing Markdown for docs.microsoft.com](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
+- [Additional resources for writing Markdown for docs.microsoft.com](/contribute/how-to-write-use-markdown)
 
 ### Adding tables
 
 Because of the way docs.microsoft.com styles tables, they won’t have borders or custom styles, even if you try inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. [Here’s a site that makes Markdown tables easy](https://www.tablesgenerator.com/markdown_tables).
 
-The [Docs Markdown Extension for Visual Studio Code](https://docs.microsoft.com/teamblog/docs-extension) also makes table generation easy if you're using [Visual Studio Code (see below)](#using-visual-studio-code) to edit the documentation.
+The [Docs Markdown Extension for Visual Studio Code](/teamblog/docs-extension) also makes table generation easy if you're using [Visual Studio Code (see below)](#using-visual-studio-code) to edit the documentation.
 
 ### Adding images
 

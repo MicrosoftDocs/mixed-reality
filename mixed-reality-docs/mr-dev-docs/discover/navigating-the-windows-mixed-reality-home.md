@@ -23,7 +23,7 @@ The Start menu consists of:
 * Cortana (on immersive headsets, a Start tile; on HoloLens, at the top of Start)
 * Pinned apps
 * The All apps button (plus sign)
-* Photo and video buttons for [mixed reality capture](../mixed-reality-capture.md)
+* Photo and video buttons for [mixed reality capture](/hololens/holographic-photos-and-videos)
 
 Switch between the pinned apps and All apps views by selecting the plus or minus buttons. To open the Start menu on HoloLens, use the bloom gesture. On an immersive headset, press the Windows button on your controller.
 
@@ -35,7 +35,7 @@ To run the app, you’ll need to then place it in your home:
 1. Use your [gaze](../design/gaze-and-commit.md) or controller to position the app where you want it. It will automatically adjust (in size and position) to conform to the space where you place it.
 2. Place the app using air-tap (HoloLens) or the Select button (immersive headsets). To cancel and bring back the Start menu, use the bloom gesture or the Windows button.
 
-[2D apps](../develop/porting-apps/building-2d-apps.md), created for desktop, mobile, or Xbox can be modified to run as mixed reality immersive apps using the [HolographicSpace API](https://msdn.microsoft.com/library/windows/apps/windows.graphics.holographic.holographicspace.aspx). An immersive app takes the user out of the home and into an immersive experience. Users can return home with the bloom gesture (HoloLens) or by pressing the Windows button on their controller (immersive headsets).
+[2D apps](../develop/porting-apps/building-2d-apps.md), created for desktop, mobile, or Xbox can be modified to run as mixed reality immersive apps using the [HolographicSpace API](/uwp/api/Windows.Graphics.Holographic.HolographicSpace). An immersive app takes the user out of the home and into an immersive experience. Users can return home with the bloom gesture (HoloLens) or by pressing the Windows button on their controller (immersive headsets).
 
 Apps can also be launched via an app-to-app API or via Cortana.
 
@@ -117,7 +117,7 @@ You can also use voice commands to get around your home. For example, point at a
 Windows Mixed Reality has several built-in apps, such as:
 * **Microsoft Store** to get apps and games
 * **Feedback Hub** to submit feedback about the system and system apps
-* **Settings** to configure system settings ([including networking](../connecting-to-wi-fi-on-hololens.md) and system updates)
+* **Settings** to configure system settings ([including networking](/hololens/hololens-network) and system updates)
 * **Microsoft Edge** to browse websites
 * **Photos** to view and share photos and videos
 * **Calibration** (HoloLens only) for adjusting the HoloLens experience to the current user
@@ -133,6 +133,6 @@ Windows Mixed Reality has several built-in apps, such as:
 * [App views](../design/app-views.md)
 * [Motion controllers](../design/motion-controllers.md)
 * [Hardware accessories](hardware-accessories.md)
-* [Environment considerations for HoloLens](../environment-considerations-for-hololens.md)
+* [Environment considerations for HoloLens](/hololens/hololens-environment-considerations)
 * [Implementing 3D app launchers](../distribute/implementing-3d-app-launchers.md)
 * [Creating 3D models for use in the Windows Mixed Reality home](../distribute/creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)

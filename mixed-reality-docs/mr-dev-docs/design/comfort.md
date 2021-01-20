@@ -73,15 +73,15 @@ IPD refers to the distance between the pupils, or centers, of an individual’s 
 
 #### HoloLens (1st gen)
 
-For HoloLens (1st gen), IPD is estimated and set during device [calibration](https://docs.microsoft.com/hololens/hololens-calibration). For new users to an already set up device, calibration must be run or IPD must be set manually. VO depends wholly on device fit. Specifically, to minimize VO, the device needs to be resting on a user’s head such that the displays are level with the axis of his/her eyes. 
+For HoloLens (1st gen), IPD is estimated and set during device [calibration](/hololens/hololens-calibration). For new users to an already set up device, calibration must be run or IPD must be set manually. VO depends wholly on device fit. Specifically, to minimize VO, the device needs to be resting on a user’s head such that the displays are level with the axis of his/her eyes. 
 
 #### HoloLens 2
 
-For HoloLens 2, IPD is estimated and set during eye/device [calibration](https://docs.microsoft.com/hololens/hololens-calibration). For new users to an already set up device, calibration must be run to ensure IPD is set correctly. VO is accounted for automatically in HoloLens 2. 
+For HoloLens 2, IPD is estimated and set during eye/device [calibration](/hololens/hololens-calibration). For new users to an already set up device, calibration must be run to ensure IPD is set correctly. VO is accounted for automatically in HoloLens 2. 
 
 ### Guidance for immersive devices
 
-Windows Mixed Reality immersive HMDs have no automatic calibration for IPD or VO. IPD can be set manually in software (under Mixed Reality Portal settings, see [calibration](https://docs.microsoft.com/hololens/hololens-calibration)), or some HMDs have a mechanical slider that allows the user to adjust the spacing of the lenses to a comfortable position that roughly matches their IPD. 
+Windows Mixed Reality immersive HMDs have no automatic calibration for IPD or VO. IPD can be set manually in software (under Mixed Reality Portal settings, see [calibration](/hololens/hololens-calibration)), or some HMDs have a mechanical slider that allows the user to adjust the spacing of the lenses to a comfortable position that roughly matches their IPD. 
 
 ## Rendering rates
 
@@ -172,4 +172,4 @@ Muscle fatigue can accumulate when users are expected to keep a hand raised thro
 * [Hologram stability](../develop/platform-capabilities-and-apis/hologram-stability.md)
 * [Instinctual interactions](interaction-fundamentals.md)
 * [Holographic frame](holographic-frame.md)
-* [Calibration](https://docs.microsoft.com/hololens/hololens-calibration)
+* [Calibration](/hololens/hololens-calibration)

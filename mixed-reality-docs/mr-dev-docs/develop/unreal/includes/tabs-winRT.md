@@ -61,7 +61,7 @@ At the first step, you should add a packages.config (https://docs.microsoft.com/
 </packages>
 ```
 
-Now you can download the NuGet, the required packages, or refer to the NuGet [documentation](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-nuget-cli).
+Now you can download the NuGet, the required packages, or refer to the NuGet [documentation](/nuget/consume-packages/install-use-packages-nuget-cli).
 
 Open YourModule.Build.cs and add the following code:
 
@@ -525,5 +525,4 @@ When Unreal calls OpenFileDialogue, a File Dialogue opens on the HoloLens prompt
 
 ## Summary 
 
-We encourage you to use this tutorial as a starting point for consuming WinRT code in Unreal when you need to save files to the HoloLens disk using the same file dialogue as Windows.  The same process applies to exporting additional functions from the HoloLensWinrtDLL header and used in Unreal.  Pay special attention to the DLL code that waits on async WinRT code in a background MTA thread, which avoids deadlocking the Unreal game thread. 
-
+We encourage you to use this tutorial as a starting point for consuming WinRT code in Unreal when you need to save files to the HoloLens disk using the same file dialogue as Windows.  The same process applies to exporting additional functions from the HoloLensWinrtDLL header and used in Unreal.  Pay special attention to the DLL code that waits on async WinRT code in a background MTA thread, which avoids deadlocking the Unreal game thread.

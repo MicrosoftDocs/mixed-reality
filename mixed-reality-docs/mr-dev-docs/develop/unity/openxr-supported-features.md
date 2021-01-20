@@ -3,7 +3,7 @@ title: OpenXR plugin Supported Features in Unity
 description: Discover the features OpenXR supports for mixed reality development in Unity.
 author: hferrone
 ms.author: alexturn
-ms.date: 12/15/2020
+ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, augmented reality, virtual reality, mixed reality headsets, learn, tutorial, getting started
 ---
@@ -11,14 +11,14 @@ keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Realit
 
 # Mixed Reality OpenXR supported features in Unity
 
-The **Mixed Reality OpenXR Plugin** package is an extension of Unity's **OpenXR Plugin** and supports a suite of features for HoloLens 2 and Windows Mixed Reality headsets. Before continuing, make sure that you've installed **Unity 2020.2** or later, **OpenXR Plugin version 0.1.1** or later, and your Unity project is [configured for OpenXR](openxr-getting-started.md).
+The **Mixed Reality OpenXR Plugin** package is an extension of Unity's **OpenXR Plugin** and supports a suite of features for HoloLens 2 and Windows Mixed Reality headsets. Before continuing, make sure that you've installed **Unity 2020.2** or later, **OpenXR Plugin version 0.1.2** or later, and your Unity project is [configured for OpenXR](openxr-getting-started.md).
 
 ## What's supported
 
 The following features are currently supported:
 
-* Supports both UWP applications for HoloLens 2 and Win32 VR applications for Windows Mixed Reality headsets.
-* Optimizes UWP package and CoreWindow interaction for HoloLens 2 applications.
+* Supports UWP applications for HoloLens 2, and optimize for HoloLens 2 application model.
+* Supports Win32 VR applications for Windows Mixed Reality headset with latest controller profiles and holographic app remoting.
 * World scale tracking using Anchors and Unbounded space.
 * [Anchor storage API to persist anchors](#anchors-and-anchor-persistence) to HoloLens 2 local storage.
 * [Motion controller and hand interactions](#motion-controller-and-hand-interactions), including the new HP Reverb G2 controller.
@@ -27,7 +27,7 @@ The following features are currently supported:
 * Locating photo/video (PV) camera on HoloLens 2.
 * Mixed Reality Capture using 3rd eye rendering through PV camera.
 * Supports ["Play" to HoloLens 2 with the Holographic Remoting app](#holographic-remoting-in-unity-editor-play-mode), allowing developers to debug scripts without building and deploying to the device.
-* Compatible with MRTK Unity 2.5.2 and newer through MRTK OpenXR provider support. [See the MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithMRTKAndXRSDK.html) to get started.
+* Compatible with MRTK Unity 2.5.3 and newer through [MRTK OpenXR provider support](openxr-getting-started.md#using-mrtk-with-openxr-support).
 * Compatible with Unity [ARFoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) or later
 
 ## Holographic Remoting in Unity Editor play mode
@@ -49,7 +49,7 @@ Building a UWP Unity project in Visual Studio project and then packaging and dep
 
     ![Screenshot of project settings panel open in the Unity Editor with Features highlighted](images/openxr-features-img-03.png)
 
-Now you can click the “Play” button to play your Unity app into the Holographic Remoting app on your HoloLens. You can also [attach Visual Studio to Unity](https://docs.microsoft.com/visualstudio/gamedev/unity/get-started/using-visual-studio-tools-for-unity?pivots=windows) to debug C# scripts in the play mode.
+Now you can click the “Play” button to play your Unity app into the Holographic Remoting app on your HoloLens. You can also [attach Visual Studio to Unity](/visualstudio/gamedev/unity/get-started/using-visual-studio-tools-for-unity?pivots=windows) to debug C# scripts in the play mode.
 
 > [!NOTE]
 > As of version 0.1.0, the Holographic Remoting runtime doesn’t support Anchors, and ARAnchorManager functionalities will not work through remoting.  This feature is coming in future releases.

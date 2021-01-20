@@ -53,7 +53,7 @@ If you build the updated app to your HoloLens, you can now persist Azure Spatial
 8. Find Azure Anchor (positions the Rover Explorer at the location from step 3)
 
 > [!NOTE]
-> To fully restart the app, after exiting the immersive app view, the app window in the mixed reality home needs to be closed before relaunching it from the Start menu. For additional details, you can refer to the [Using apps on HoloLens](https://docs.microsoft.com/hololens/holographic-home#using-apps-on-hololens) documentation.
+> To fully restart the app, after exiting the immersive app view, the app window in the mixed reality home needs to be closed before relaunching it from the Start menu. For additional details, you can refer to the [Using apps on HoloLens](/hololens/holographic-home#using-apps-on-hololens) documentation.
 
 ## Sharing Azure Spatial Anchors between devices
 

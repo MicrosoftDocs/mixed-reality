@@ -3,7 +3,7 @@ title: Using the HoloLens Emulator
 description: Learn how to use the HoloLens Emulator to test mixed reality apps on your PC without a physical HoloLens.
 author: hamalawi
 ms.author: moelhama
-ms.date: 10/13/2020
+ms.date: 01/13/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, emulator
@@ -23,7 +23,7 @@ If you're looking to develop Windows Mixed Reality immersive (VR) headset applic
 Download the HoloLens Emulator.
 
 Versions:
-* [HoloLens 2 Emulator (Windows Holographic, version 20H2 December 2020 Update)](https://go.microsoft.com/fwlink/?linkid=2151523).
+* [HoloLens 2 Emulator (Windows Holographic, version 20H2 January 2021 Update)](https://go.microsoft.com/fwlink/?linkid=2152389).
 * [HoloLens Emulator (first Gen) and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2065980).
 
 You can find release notes and older builds of the HoloLens Emulator on the [HoloLens Emulator archive](hololens-emulator-archive.md) page.
@@ -38,7 +38,7 @@ The HoloLens Emulator uses Hyper-V with RemoteFx (first Gen Emulator) or GPU-PV 
 * 64-bit CPU
 * CPU with four cores (or multiple CPUs with a total of four cores)
 * 8 GB of RAM or more
-* In the BIOS, the following features must be [supported and enabled](https://blogs.technet.com/b/iftekhar/archive/2010/08/09/enable-hardware-settings-in-bios-to-run-hyper-v.aspx):
+* In the BIOS, the following features must be [supported and enabled](/archive/blogs/iftekhar/enable-hardware-settings-in-bios-to-run-hyper-v):
    * Hardware-assisted virtualization
    * Second Level Address Translation (SLAT)
    * Hardware-based Data Execution Prevention (DEP)
@@ -250,7 +250,7 @@ In the emulator, you'll only see holograms that you render. But you'll see the s
 * When uninstalling the HoloLens 2 Emulator, the hard disk image (Flash.vhdx) may be left on your hard drive in the Windows Kits\10\Emulation\HoloLens\<build number> folder.  It's safe to delete this file.
 * Hardware graphics acceleration may cause Holographic apps to crash on some systems with AMD or Intel graphics.  Disabling hardware graphics acceleration in the emulator Tools window works around this issue.
 * After installing the latest Windows updates as of July 2020, hardware graphics acceleration in the HoloLens Emulator (first Gen) might no longer be available.
-The RemoteFX component needed for hardware graphics acceleration has been deprecated and will be removed in a future Windows release.  To re-enable hardware graphics acceleration, use the [Enable-VMRemoteFXPhysicalVideoAdapter PowerShell cmdlet](https://docs.microsoft.com/powershell/module/hyper-v/enable-vmremotefxphysicalvideoadapter).  Refer to the [documentation on the deprecation and removal of RemoteFX support in Windows](https://support.microsoft.com/help/4570006/update-to-disable-and-remove-the-remotefx-vgpu-component) for additional information.
+The RemoteFX component needed for hardware graphics acceleration has been deprecated and will be removed in a future Windows release.  To re-enable hardware graphics acceleration, use the [Enable-VMRemoteFXPhysicalVideoAdapter PowerShell cmdlet](/powershell/module/hyper-v/enable-vmremotefxphysicalvideoadapter).  Refer to the [documentation on the deprecation and removal of RemoteFX support in Windows](https://support.microsoft.com/help/4570006/update-to-disable-and-remove-the-remotefx-vgpu-component) for additional information.
 
 ## Troubleshooting
 
