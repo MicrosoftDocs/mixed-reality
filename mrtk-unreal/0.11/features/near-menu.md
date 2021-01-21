@@ -12,7 +12,7 @@ keywords: Unreal, Unreal Engine, UE4, HoloLens, HoloLens 2, Mixed Reality, devel
 
 Near Menu is a UX control which provides a collection of buttons or other UI components. It floats around the user's body using the [follow component](follow-component.md) and is easily accessible anytime. Since it is loosely coupled with the user, it does not disturb the user's interaction with the target content. The user can use the 'Pin' button to world-lock/unlock the menu. The menu can be grabbed and placed at a specific position.
 
-![NearMenu](Images/NearMenu/NearMenu.png)
+![Near menu being used with simulated hands](Images/NearMenu/NearMenu.png)
 
 ## Interaction behavior
 
