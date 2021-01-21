@@ -28,7 +28,7 @@ First, follow the [Initializing your project and deploying your first applicatio
 2. [Switching the build platform](mr-learning-base-02.md#switching-the-build-platform)
 3. [Importing the TextMeshPro Essential Resources](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 4. [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Configuring the Unity project](mr-learning-base-02.md#configuring-the-unity-projects)
+5. [Configuring the Unity project](mr-learning-base-02.md#configuring-the-unity-project)
 6. [Creating and configuring the scene](mr-learning-base-02.md#creating-and-configuring-the-scene) and give the scene a suitable name, for example, *AzureSpatialAnchors*
 
 Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) instructions to:
