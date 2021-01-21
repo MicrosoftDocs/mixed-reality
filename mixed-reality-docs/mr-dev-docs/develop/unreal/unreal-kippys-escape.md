@@ -57,21 +57,21 @@ Beyond the character and environment design, we made a concerted effort to make 
 
 Kippy’s Escape relies heavily on Mixed Reality UX Tools components to make the game interactive - namely hand interaction actors, bounds controls, manipulators, sliders, and buttons.   
 
-The [hand interaction actor](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/HandInteraction.html) enables both direct and far manipulation of holograms. At the start of Kippy’s Escape, the user is given the opportunity to set the location of the game. Hand beams extending from the user’s palm make it easy to manipulate large holograms that are far away, as seen in the gif below.  
+The [hand interaction actor](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html) enables both direct and far manipulation of holograms. At the start of Kippy’s Escape, the user is given the opportunity to set the location of the game. Hand beams extending from the user’s palm make it easy to manipulate large holograms that are far away, as seen in the gif below.  
 
 ![Hand interaction actor gif](images/kippys-escape/kippys-escape-img-06.gif)
 
-The placeholder scene itself can be dragged and rotated using UX Tools’ [bounds control](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/BoundsControl.html) component.  
+The placeholder scene itself can be dragged and rotated using UX Tools’ [bounds control](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/BoundsControl.html) component.  
 
-On the second island, the user must pick up gems and place them in their matching slots. The gems have [manipulators](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/Manipulator.html) attached to them that allow the user to pick them up and place them down. 
+On the second island, the user must pick up gems and place them in their matching slots. The gems have [manipulators](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Manipulator.html) attached to them that allow the user to pick them up and place them down. 
 
 ![Manipulator example gif](images/kippys-escape/kippys-escape-img-07.gif)
 
-A [pressable button](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/PressableButton.html) is the key to bringing up bombs for use on the third island.  
+A [pressable button](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/PressableButton.html) is the key to bringing up bombs for use on the third island.  
 
 ![Pressable button example gif](images/kippys-escape/kippys-escape-img-08.gif)
 
-A [slider](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/PinchSlider.html) component appears on the fourth island, triggering the final bridge to be raised.  
+A [slider](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/PinchSlider.html) component appears on the fourth island, triggering the final bridge to be raised.  
 
 ![Slider component example gif](images/kippys-escape/kippys-escape-img-09.gif) 
 
