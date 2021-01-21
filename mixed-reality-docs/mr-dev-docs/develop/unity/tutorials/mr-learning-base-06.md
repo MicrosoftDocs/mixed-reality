@@ -92,17 +92,17 @@ In the Hierarchy window, rename the object to **Menu**, then expand its **Button
 
 ![Unity with Menu object selected and ButtonCollection object expanded](images/mr-learning-base/base-06-section2-step1-2.png)
 
-Rename the first button to **Indicator**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:
+Rename the first button in the ButtonCollection to Indicator, then in the Inspector window, configure the Button Config Helper (Script) component as follows:
 
 * Change the **Main Label Text** to match the name of the button
-* Assign the **Indicator** object to the **None (Object)** field
+* Assign the Indicator object that looks like a chevron, to the None (Object) field
 * From the **No Function** dropdown, select **GameObject** > **SetActive (bool)** to set this function as the action to be executed when the event is triggered
 * Verify that the argument checkbox is **checked**
 * Change the **Icon** to the 'search' icon
 
 ![Unity with Indicator button object Button Config Helper configured](images/mr-learning-base/base-06-section2-step1-3.png)
 
-In the Hierarchy window, select the **Indicator** object, then in the Inspector window:
+To disable the chevron Indicator object, in the Hierarchy window, select the Indicator object that looks like chevron, then in the Inspector window:
 
 * Uncheck the checkbox next to its name to make it inactive by default
 * Use the **Add Component** button to add the **Directional Indicator Controller (Script)** component
@@ -110,7 +110,7 @@ In the Hierarchy window, select the **Indicator** object, then in the Inspector 
 ![Unity with Indicator object selected, disabled, and DirectionalIndicatorController component added](images/mr-learning-base/base-06-section2-step1-4.png)
 
 > [!NOTE]
-> Now, when the app starts, the Indicator is disabled by default and can be enabled by pressing the Indicator button.
+> Now, when the app starts, the chevron Indicator is disabled by default and can be enabled by pressing the Indicator button.
 
 Rename the second button to **TapToPlace**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:
 
