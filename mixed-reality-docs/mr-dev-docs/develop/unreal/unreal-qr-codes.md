@@ -17,7 +17,7 @@ The HoloLens 2 can see QR codes in world space using the webcam, which renders t
 - Lighting and backdrop
 - Size, distance, and angular position
 
-Pay special attention to the [environment considerations](../../environment-considerations-for-hololens.md) when QR codes are being placed in your app. You can find more information on each of these topics and instructions on how to download the required NuGet package in the main [QR code tracking](../platform-capabilities-and-apis/qr-code-tracking.md) document.
+Pay special attention to the [environment considerations](/hololens/hololens-environment-considerations) when QR codes are being placed in your app. You can find more information on each of these topics and instructions on how to download the required NuGet package in the main [QR code tracking](../platform-capabilities-and-apis/qr-code-tracking.md) document.
 
 > [!CAUTION]
 > QR codes are the only type of images that can be tracked by HoloLens out of the box - Unreal's **UARTrackedImage** module isn't supported on HoloLens. If you need to track custom images, you can access the device's [webcam](unreal-hololens-camera.md) and process images using a third party image recognition library. 
@@ -27,7 +27,7 @@ Pay special attention to the [environment considerations](../../environment-cons
 Since the HoloLens 2 needs to use the webcam to see QR codes, you'll need to enable it in the project settings:
 - Open **Edit > Project Settings**, scroll to the **Platforms** section, and select **HoloLens**.
     + Expand the **Capabilities** section and check **Webcam**.  
-- You'll also need to opt into QR code tracking by [adding an ARSessionConfig asset](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset).
+- You'll also need to opt into QR code tracking by [adding an ARSessionConfig asset](/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset).
 
 [!INCLUDE[](includes/tabs-qr-codes-1.md)]
 
@@ -57,7 +57,7 @@ Here's what's going on:
 1. First, the tracked image is cast to an **ARTrackedQRCode** to check that the current updated image is a QR code.  
 2. The encoded data is retrieved from the **QRCode** variable. You can get the top-left of the QR code from the location of **GetLocalToWorldTransform** and the dimensions with **GetEstimateSize**.
 
-You can also [get the coordinate system for a QR code](https://docs.microsoft.com/windows/mixed-reality/qr-code-tracking#getting-the-coordinate-system-for-a-qr-code) in code.
+You can also [get the coordinate system for a QR code](/windows/mixed-reality/qr-code-tracking#getting-the-coordinate-system-for-a-qr-code) in code.
 
 ## Finding the unique ID
 

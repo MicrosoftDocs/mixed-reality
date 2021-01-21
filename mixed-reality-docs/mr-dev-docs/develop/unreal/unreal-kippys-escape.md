@@ -17,7 +17,7 @@ Kippy the robot wakes up to find itself stranded on an island. It’s up to you 
 > [!IMPORTANT]
 > Make sure you're using **Unreal Engine 4.25 or later** if you're building Kippy's Escape from the GitHub repository.
 
-Kippy’s Escape is an open-source [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware) sample app built with Unreal Engine 4 and [Mixed Reality UX Tools for Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal). In this post, we’ll walk you through our process from first principles and visual design to implementing and optimizing the experience. You can find more information on developing Mixed Reality applications with MRTK UX Tools in the [Unreal development overview](unreal-development-overview.md).
+Kippy’s Escape is an open-source [HoloLens 2](/hololens/hololens2-hardware) sample app built with Unreal Engine 4 and [Mixed Reality UX Tools for Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal). In this post, we’ll walk you through our process from first principles and visual design to implementing and optimizing the experience. You can find more information on developing Mixed Reality applications with MRTK UX Tools in the [Unreal development overview](unreal-development-overview.md).
 
 ## First principles 
 
@@ -57,21 +57,21 @@ Beyond the character and environment design, we made a concerted effort to make 
 
 Kippy’s Escape relies heavily on Mixed Reality UX Tools components to make the game interactive - namely hand interaction actors, bounds controls, manipulators, sliders, and buttons.   
 
-The [hand interaction actor](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/HandInteraction.html) enables both direct and far manipulation of holograms. At the start of Kippy’s Escape, the user is given the opportunity to set the location of the game. Hand beams extending from the user’s palm make it easy to manipulate large holograms that are far away, as seen in the gif below.  
+The [hand interaction actor](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html) enables both direct and far manipulation of holograms. At the start of Kippy’s Escape, the user is given the opportunity to set the location of the game. Hand beams extending from the user’s palm make it easy to manipulate large holograms that are far away, as seen in the gif below.  
 
 ![Hand interaction actor gif](images/kippys-escape/kippys-escape-img-06.gif)
 
-The placeholder scene itself can be dragged and rotated using UX Tools’ [bounds control](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/BoundsControl.html) component.  
+The placeholder scene itself can be dragged and rotated using UX Tools’ [bounds control](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/BoundsControl.html) component.  
 
-On the second island, the user must pick up gems and place them in their matching slots. The gems have [manipulators](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/Manipulator.html) attached to them that allow the user to pick them up and place them down. 
+On the second island, the user must pick up gems and place them in their matching slots. The gems have [manipulators](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Manipulator.html) attached to them that allow the user to pick them up and place them down. 
 
 ![Manipulator example gif](images/kippys-escape/kippys-escape-img-07.gif)
 
-A [pressable button](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/PressableButton.html) is the key to bringing up bombs for use on the third island.  
+A [pressable button](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/PressableButton.html) is the key to bringing up bombs for use on the third island.  
 
 ![Pressable button example gif](images/kippys-escape/kippys-escape-img-08.gif)
 
-A [slider](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/PinchSlider.html) component appears on the fourth island, triggering the final bridge to be raised.  
+A [slider](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/PinchSlider.html) component appears on the fourth island, triggering the final bridge to be raised.  
 
 ![Slider component example gif](images/kippys-escape/kippys-escape-img-09.gif) 
 
@@ -110,4 +110,4 @@ Boot up your HoloLens 2 and [download](https://www.microsoft.com/p/kippys-escape
 </tr>
 </table>
 
-Special thanks to our friends at [Framestore](https://www.framestore.com/) for helping us bring Kippy’s Escape to life. From character development, to asset design, to game programming, their collaboration on this project was pivotal.  
+Special thanks to our friends at [Framestore](https://www.framestore.com/) for helping us bring Kippy’s Escape to life. From character development, to asset design, to game programming, their collaboration on this project was pivotal.

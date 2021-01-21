@@ -1,6 +1,6 @@
 ---
-title: Configuring the MRTK profiles
-description: This course shows you how to configure the Mixed Reality Toolkit (MRTK) profiles for your mixed reality apps.
+title: Getting started tutorials - 3. Configuring the MRTK profiles
+description: This course shows you how to configure the Mixed Reality Toolkit (MRTK) profiles.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
@@ -10,6 +10,8 @@ ms.localizationpriority: high
 ---
 
 # 3. Configuring the MRTK profiles
+
+## Overview
 
 In this tutorial, you will learn how to customize and configure the MRTK profiles.
 
@@ -42,7 +44,7 @@ The main steps you will take to hide the spatial awareness mesh are:
 > [!NOTE]
 > The Configuration Profile is the top-level profile. Consequently, to be able to edit any other profiles, you first have to clone the Configuration Profile.
 
-In the Hierarchy window, select the **MixedRealityToolkit** object, then in the Inspector window, verify that the **MixedRealityToolkit** Configuration Profile is set to the **DefaultXRSDKConfigurationProfile**:
+In the Hierarchy window, select the **MixedRealityToolkit** object, then in the Inspector window, change the **MixedRealityToolkit** Configuration Profile to the **DefaultHoloLens2ConfigurationProfile**:
 
 ![Unity MixedRealityToolkit component with DefaultHoloLens2ConfigurationProfile selected](images/mr-learning-base/base-03-section1-step1-1.png)
 
@@ -50,7 +52,7 @@ With the **MixedRealityToolkit** object still selected, in the Inspector window,
 
 ![Unity MixedRealityToolkit component Copy & Customize button](images/mr-learning-base/base-03-section1-step1-2.png)
 
-In the Clone Profile window, enter a suitable **Profile Name**, for example, _GettingStarted_XRSDKConfigurationProfile_, then click the **Clone** button to create an editable copy of the **DefaultXRSDKConfigurationProfile**:
+In the Clone Profile window, enter a suitable **Profile Name**, for example, _GettingStarted_HoloLens2ConfigurationProfile_, then click the **Clone** button to create an editable copy of the **DefaultHololens2ConfigurationProfile**:
 
 ![Unity MixedRealityToolkit clone Configuration Profile popup window](images/mr-learning-base/base-03-section1-step1-3.png)
 
@@ -78,7 +80,7 @@ In the **Spatial Awareness** tab, click the **Clone** button to open the Clone P
 
 ![Unity MixedRealityToolkit component with Spatial Awareness tab selected](images/mr-learning-base/base-03-section1-step3-1.png)
 
-In the Clone Profile window, enter a suitable **Profile Name**, for example, _GettingStarted_XRSDKSpatialAwarenessSystemProfile_, then click the **Clone** button to create an editable copy of the **DefaultXRSDKSpatialAwarenessSystemProfile**:
+In the Clone Profile window, enter a suitable **Profile Name**, for example, _GettingStarted_MixedRealitySpatialAwarenessSystemProfile_, then click the **Clone** button to create an editable copy of the **DefaultMixedRealitySpatialAwarenessSystemProfile**:
 
 ![Unity MixedRealityToolkit clone Spatial Awareness System Profile popup window](images/mr-learning-base/base-03-section1-step3-2.png)
 
@@ -88,7 +90,7 @@ The newly created Spatial Awareness System Profile is now automatically assigned
 
 ### 4. Clone the default Spatial Awareness Mesh Observer Profile
 
-With the **Spatial Awareness** tab still selected, expand the **XR SDK Windows Mixed Reality Spatial Mesh Observer** section, then click the **Clone** button to open the Clone Profile window:
+With the **Spatial Awareness** tab still selected, expand the **Windows Mixed Reality Spatial Mesh Observer** section, then click the **Clone** button to open the Clone Profile window:
 
 ![Unity MixedRealityToolkit component with Windows Mixed Reality Spatial Mesh Observer section expanded](images/mr-learning-base/base-03-section1-step4-1.png)
 

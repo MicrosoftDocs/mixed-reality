@@ -125,7 +125,7 @@ To unpair your HoloLens from all paired computers:
 
 ## Graphics Debugger for HoloLens (1st gen)
 
-The Visual Studio Graphics Diagnostics tools are helpful when writing and optimizing a Holographic app. See [Visual Studio Graphics Diagnostics on MSDN](https://msdn.microsoft.com/library/hh315751.aspx) for full details.
+The Visual Studio Graphics Diagnostics tools are helpful when writing and optimizing a Holographic app. See [Visual Studio Graphics Diagnostics on MSDN](/previous-versions/visualstudio/visual-studio-2015/debugger/visual-studio-graphics-diagnostics) for full details.
 
 **To Start the Graphics Debugger**
 1. Follow the instructions above to target a device or emulator
@@ -134,7 +134,7 @@ The Visual Studio Graphics Diagnostics tools are helpful when writing and optimi
 
 ## Profiling
 
-The Visual Studio profiling tools allow you to analyze your app's performance and resource use. This includes tools to optimize CPU, memory, graphics, and network use. See [Run diagnostic tools without debugging on MSDN](https://msdn.microsoft.com/library/dn957936.aspx) for full details.
+The Visual Studio profiling tools allow you to analyze your app's performance and resource use. This includes tools to optimize CPU, memory, graphics, and network use. See [Run diagnostic tools without debugging on MSDN](/previous-versions/visualstudio/visual-studio-2015/profiling/profiling-tools) for full details.
 
 **To Start the Profiling Tools with HoloLens**
 1. Follow the instructions above to target a device or emulator
@@ -171,5 +171,5 @@ You can always go back to the [Unity development checkpoints](../../develop/unit
 ## See also
 * [Install the tools](../install-the-tools.md)
 * [Using the HoloLens emulator](using-the-hololens-emulator.md)
-* [Deploying and debugging Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/library/windows/apps/xaml/mt613243.aspx)
-* [Enable your device for development](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)
+* [Deploying and debugging Universal Windows Platform (UWP) apps](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps)
+* [Enable your device for development](/windows/uwp/get-started/enable-your-device-for-development)

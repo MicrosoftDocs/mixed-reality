@@ -76,7 +76,7 @@ While some of these extensions may start out as vendor-specific `MSFT` extension
 
 *Minecraft's new RenderDragon engine is building its desktop VR support using OpenXR*
 
-Microsoft has been working with Unity and Epic Games to ensure the future of mixed reality is open, not just for HoloLens 2, but across the full breadth of PC VR, including [HP’s new Reverb G2 headset](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).  For more information on developing for HoloLens (1st gen), see the [release notes](https://docs.microsoft.com/hololens/hololens1-release-notes).
+Microsoft has been working with Unity and Epic Games to ensure the future of mixed reality is open, not just for HoloLens 2, but across the full breadth of PC VR, including [HP’s new Reverb G2 headset](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).  For more information on developing for HoloLens (1st gen), see the [release notes](/hololens/hololens1-release-notes).
 
 To learn how you can get started with OpenXR in Unity, Unreal Engine or your own engine, read on!
 

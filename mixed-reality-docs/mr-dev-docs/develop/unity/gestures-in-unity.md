@@ -142,7 +142,7 @@ Step-by-step tutorials, with more detailed customization examples, are available
 - [MR Input 211: Gesture](tutorials/holograms-211.md)
 - [MR Input 213: Motion controllers](../../deprecated/mixed-reality-213.md)
 
-[![MR Input 213 - Motion controller](images/mr213-main-600px.jpg)](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-213)<br>
+[![MR Input 213 - Motion controller](images/mr213-main-600px.jpg)](/windows/mixed-reality/mixed-reality-213)<br>
 *MR Input 213 - Motion controller*
 
 ## Next Development Checkpoint
@@ -150,7 +150,7 @@ Step-by-step tutorials, with more detailed customization examples, are available
 If you're following the Unity development journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can continue to the next building block:
 
 > [!div class="nextstepaction"]
-> [Hand and eye tracking](hand-eye-in-unit.md)
+> [Hand and eye tracking](./hand-eye-in-unity.md)
 
 Or jump to Mixed Reality platform capabilities and APIs:
 

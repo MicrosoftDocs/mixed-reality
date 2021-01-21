@@ -47,7 +47,7 @@ appliesto:
 
 ## My headset display occasionally turns black after some use
 
-* Try disabling any USB suspend or power-saving features on your PC. For example, in **Settings > System > Power & Sleep > [USB selective suspend](https://docs.microsoft.com/windows-hardware/drivers/usbcon/usb-selective-suspend)**, the "Allow the computer to turn off this device to save power" setting in Device Manager, and any USB power-saving settings in your PC's firmware.
+* Try disabling any USB suspend or power-saving features on your PC. For example, in **Settings > System > Power & Sleep > [USB selective suspend](/windows-hardware/drivers/usbcon/usb-selective-suspend)**, the "Allow the computer to turn off this device to save power" setting in Device Manager, and any USB power-saving settings in your PC's firmware.
 * Temporarily disconnect any other USB devices and peripherals connected to your PC.
 * Check that your GPU driver version is recent, and check for any new performance and compatibility issues and regressions on new drivers.
 

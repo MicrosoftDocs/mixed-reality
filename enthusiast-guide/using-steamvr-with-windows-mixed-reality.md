@@ -158,6 +158,6 @@ If you have questions or comments to share, you can also reach us on our [Steam 
 
 * [Troubleshooting SteamVR with Windows Mixed Reality](steamvr-questions.md)
 * [Using games and apps in Windows Mixed Reality](using-games-and-apps-in-windows-mixed-reality.md)
-* [Using HP Controllers in Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
-* [Using HP Controllers in Unreal](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+* [Using HP Controllers in Unity](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+* [Using HP Controllers in Unreal](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 * [Filing bugs and feedback](filing-feedback.md)
