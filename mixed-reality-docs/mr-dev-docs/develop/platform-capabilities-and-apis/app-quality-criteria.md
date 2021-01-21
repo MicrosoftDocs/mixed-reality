@@ -32,7 +32,7 @@ Frame rate is the first pillar of hologram stability and user comfort. Frame rat
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
@@ -95,7 +95,7 @@ Stable holograms will increase the usability and believability of your app, and 
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
@@ -157,7 +157,7 @@ Misalignments of holograms with physical objects (if intended to be placed in re
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
@@ -220,7 +220,7 @@ App developers control where users' eyes converge by placing content and hologra
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
@@ -277,7 +277,7 @@ Regardless of viewing zone of comfort issues, demands for the user to switch fre
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
@@ -320,7 +320,7 @@ In Windows Mixed Reality, the audio engine provides the aural component of the m
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
@@ -378,7 +378,7 @@ Well-designed user experiences can create and maintain useful context of the vir
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
@@ -434,7 +434,7 @@ Holograms should react to the user position in roughly the same ways that "real"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
@@ -475,7 +475,7 @@ Holograms should react to the user position in roughly the same ways that "real"
 #### Documentation
 
 * [Interaction design](../../discover/hologram.md)
-* [Color, light, and material](../../color,-light-and-materials.md)
+* [Color, light, and material](../../design/color-light-and-materials.md)
 * [Billboarding and tag-along](../../design/billboarding-and-tag-along.md)
 * [Instinctual interactions](../../design/interaction-fundamentals.md)
 * [Self-motion and user locomotion](../../design/comfort.md#self-motion-and-user-locomotion)
@@ -493,7 +493,7 @@ Input interaction clarity is critical to an app's usability and includes input c
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
@@ -541,9 +541,10 @@ Input interaction clarity is critical to an app's usability and includes input c
 * [Input porting guide for Unity](../porting-apps/input-porting-guide-for-unity.md)
 * [Keyboard input in Unity](../unity/keyboard-input-in-unity.md)
 * [Gaze in Unity](../unity/gaze-in-unity.md)
-* [Gestures and motion controllers in Unity](../unity/gestures-and-motion-controllers-in-unity.md)
+* [Motion controllers in Unity](../unity/motion-controllers-in-unity.md)
+* [Gestures in Unity](../unity/gestures-in-unity.md)
 * [Voice input in Unity](../unity/voice-input-in-unity.md)
-* [Keyboard, mouse, and controller input in DirectX](../../keyboard,-mouse,-and-controller-input-in-directx.md)
+* [Keyboard, mouse, and controller input in DirectX](./keyboard-mouse-and-controller-input-in-directx.md)
 * [Head and eye gaze in DirectX](../native/gaze-in-directx.md)
 * [Hands and motion controllers in DirectX](../native/hands-and-motion-controllers-in-directx.md)
 * [Voice input in DirectX](../native/voice-input-in-directx.md)
@@ -568,7 +569,7 @@ A button has long been a metaphor used for triggering an event in the 2D abstrac
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
@@ -623,7 +624,7 @@ Apps that require spatial mapping data rely on the device to automatically colle
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
@@ -678,7 +679,7 @@ In a mixed reality app, content may be outside the field of view or occluded by 
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
@@ -721,7 +722,7 @@ A progress control provides feedback to the user that a long-running operation i
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>

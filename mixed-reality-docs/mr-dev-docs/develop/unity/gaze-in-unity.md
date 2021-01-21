@@ -54,7 +54,7 @@ You can access head-gaze from the [Input Manager](https://microsoft.github.io/Mi
 If you're following the Unity development journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can continue to the next building block:
 
 > [!div class="nextstepaction"]
-> [Gestures and motion controllers](gestures-and-motion-controllers-in-unity.md)
+> [Motion controllers](motion-controllers-in-unity.md)
 
 Or jump to Mixed Reality platform capabilities and APIs:
 

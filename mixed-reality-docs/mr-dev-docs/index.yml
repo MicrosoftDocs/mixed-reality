@@ -29,11 +29,11 @@ highlightedContent:
     # Card
     - title: Introducing HoloLens 2
       itemType: overview
-      url: https://docs.microsoft.com/hololens/hololens2-hardware
+      url: /hololens/hololens2-hardware
     # Card
     - title: Dynamics 365 Mixed Reality applications
       itemType: reference 
-      url: https://docs.microsoft.com/dynamics365/mixed-reality/
+      url: /dynamics365/mixed-reality/
     # Card
     - title: Azure mixed reality cloud services 
       itemType: whats-new 
@@ -45,15 +45,15 @@ highlightedContent:
     # Card
     - title: IT admins
       itemType: quickstart
-      url: https://docs.microsoft.com/hololens/hololens-requirements
+      url: /hololens/hololens-requirements
     # Card
     - title: VR enthusiasts
       itemType: how-to-guide
-      url: https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/vr-journey
+      url: /windows/mixed-reality/enthusiast-guide/vr-journey
     # Card
     - title: Mixed Reality Learn modules
       itemType: learn
-      url: develop/mr-learning-overview.md
+      url: ./discover/mr-learning-overview.md
 
 # productDirectory section (optional)
 productDirectory:
@@ -97,17 +97,17 @@ productDirectory:
     - title: Deploy
       imageSrc: images/icon-distribution.jpg
       links:
-        - url: https://docs.microsoft.com/hololens/hololens-requirements
+        - url: /hololens/hololens-requirements
           text: Prepare for commercial deployment
-        - url: https://docs.microsoft.com/hololens/hololens-identity
+        - url: /hololens/hololens-identity
           text: Manage user identity and sign-in
-        - url: https://docs.microsoft.com/hololens/hololens-enroll-mdm
+        - url: /hololens/hololens-enroll-mdm
           text: Enroll your devices 
-        - url: https://docs.microsoft.com/hololens/hololens-updates
+        - url: /hololens/hololens-updates
           text: Manage your HoloLens updates
-        - url: https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview
+        - url: /hololens/hololens2-cloud-connected-overview
           text: Cloud connected deployment with Remote Assist 
-        - url: https://docs.microsoft.com/hololens/hololens-troubleshooting
+        - url: /hololens/hololens-troubleshooting
           text: Troubleshooting & support
 
 # conceptualContent section (optional)
@@ -247,7 +247,7 @@ tools:
 #         - title: Dynamics 365 Mixed Reality
 #           links:
 #             - text: Dynamics 365 documentation
-#               url: https://docs.microsoft.com/dynamics365/mixed-reality/
+#               url: /dynamics365/mixed-reality/
 #             - text: Using Remote Assist
 #               url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens
 #             - text: User guides
@@ -285,4 +285,3 @@ tools:
 #               url: https://docs.microsoft.com/learn/modules/mixed-reality-toolkit-project-unity/
 #             - text: Create a language translator application with Unity and Azure Cognitive Services
 #               url: https://docs.microsoft.com/learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/
-

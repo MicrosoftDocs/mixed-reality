@@ -45,7 +45,7 @@ We're tracking an issue that requires a monitor to be connected to the PC in ord
 
 ## Provide feedback and report issues
 
-Use the [Feedback Hub app on your Windows 10 PC](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback) or your HoloLens device to provide feedback and report issues. Using Feedback Hub ensures that all necessary diagnostics information is included to help our engineers quickly debug and resolve the problem.
+Use the [Feedback Hub app on your Windows 10 PC](/windows/mixed-reality/give-us-feedback) or your HoloLens device to provide feedback and report issues. Using Feedback Hub ensures that all necessary diagnostics information is included to help our engineers quickly debug and resolve the problem.
 
 >[!NOTE]
 >Be sure to accept the prompt that asks whether you’d like Feedback Hub to access your Documents folder (select **Yes** when prompted).
@@ -61,8 +61,7 @@ Use the [Feedback Hub app on your Windows 10 PC](https://docs.microsoft.com/wind
 * [Release notes - March 2016](release-notes-march-2016.md)
 
 ## See also
-* [Immersive headset support (external link)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
+* [Immersive headset support (external link)](./troubleshooting-windows-mixed-reality.md)
 * [HoloLens support (external link)](https://support.microsoft.com/products/hololens)
-* [Install the tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
+* [Install the tools](/windows/mixed-reality/develop/install-the-tools)
 * [Give us feedback](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback
-

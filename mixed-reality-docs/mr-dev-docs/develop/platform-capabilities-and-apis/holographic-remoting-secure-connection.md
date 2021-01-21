@@ -92,7 +92,7 @@ A shared secret won't be enough to cover this use case. Instead, you can use tok
 * The client sends this token to the server through Holographic Remoting
 * The server validates the client's token against the identity provider
 
-One example of an identity provider is the [Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/).
+One example of an identity provider is the [Microsoft identity platform](/azure/active-directory/develop/).
 
 Like in the previous use case, make sure these tokens aren't sent through insecure channels or otherwise exposed.
 
@@ -110,7 +110,7 @@ These calls require you to provide implementations of certain interfaces for pro
 All interfaces have a function requesting you to take action, which receives a callback object as parameter. Using this object, you can easily implement asynchronous handling of the request. Keep a reference to this object, and call the completion function when the asynchronous action is complete. The completion function may be called from any thread.
 
 >[!TIP]
->Implementing WinRT interfaces can easily be done using C++/WinRT. The [Author APIs with C++/WinRT](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/author-apis) chapter describes this in detail.
+>Implementing WinRT interfaces can easily be done using C++/WinRT. The [Author APIs with C++/WinRT](//windows/uwp/cpp-and-winrt-apis/author-apis) chapter describes this in detail.
 
 >[!IMPORTANT]
 >The `build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl` inside the NuGet package contains detailed documentation for the API related to secure connections.
@@ -188,5 +188,5 @@ This API is similar to the IDL-based API described in [Implementing holographic 
 * [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md)
 * [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)
 * [Holographic Remoting troubleshooting and limitations](holographic-remoting-troubleshooting.md)
-* [Holographic Remoting software license terms](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Holographic Remoting software license terms](//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839)

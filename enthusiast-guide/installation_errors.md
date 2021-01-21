@@ -26,7 +26,7 @@ Windows Mixed Reality requires a graphics card driver that supports at least WDD
 
 ## "Before we can set up Windows Mixed Reality, your administrator will need to enable it for your organization. Learn More"
 
-You're probably on an enterprise-managed network and your organization is using Windows Server Update Services (WSUS). These and other policies that may block the download. Contact your organization's IT department or system administrator to [enable Windows Mixed Reality](https://docs.microsoft.com/windows/application-management/manage-windows-mixed-reality#enable).
+You're probably on an enterprise-managed network and your organization is using Windows Server Update Services (WSUS). These and other policies that may block the download. Contact your organization's IT department or system administrator to [enable Windows Mixed Reality](/windows/application-management/manage-windows-mixed-reality#enable).
 
 ## "We couldn't download the mixed reality software" or "Hang tight while we do some downloading"
 

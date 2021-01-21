@@ -1,6 +1,6 @@
 ---
-title: Integrating and using speech recognition and transcription
-description: Complete this course to learn how to add and use Azure Speech recognition and transcription in mixed reality applications.
+title: Azure Speech Services tutorials - 1. Integrating and using speech recognition and transcription
+description: Complete this course to learn how to implement Azure Speech SDK within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
@@ -10,6 +10,8 @@ ms.localizationpriority: high
 ---
 
 # 1. Integrating and using speech recognition and transcription
+
+## Overview
 
 In this tutorial series, you will create a Mixed Reality application that explores the use of Azure Speech Services with the HoloLens 2. When you complete this tutorial series, you will be able to use your device's microphone to transcribe speech to text in real time, translate your speech into other languages, and leverage the Intent recognition feature to understand voice commands using artificial intelligence.
 
@@ -36,16 +38,16 @@ In this tutorial series, you will create a Mixed Reality application that explor
 
 In this section, you will create a new Unity project and get it ready for MRTK development.
 
-For this, first follow the [Initializing your project and first application](mr-learning-base-02.md), excluding the [Build your application to your device](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2) instructions, which includes the following steps:
+For this, first follow the [Initializing your project and first application](mr-learning-base-02.md), excluding the [Build your application to your device](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions, which includes the following steps:
 
 1. [Creating the Unity project](mr-learning-base-02.md#creating-the-unity-project) and give it a suitable name, for example, *MRTK Tutorials*
-2. [Switching the build platform](mr-learning-base-02.md#switching-the-build-platform)
+2. [Switching the build platform](mr-learning-base-02.md#configuring-the-unity-project)
 3. [Importing the TextMeshPro Essential Resources](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 4. [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Configuring the Unity project](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
+5. [Configuring the Unity project](mr-learning-base-02.md#configuring-the-unity-project)
 6. [Creating and configuring the scene](mr-learning-base-02.md#creating-and-configuring-the-scene) and give the scene a suitable name, for example, *AzureSpeechServices*
 
-Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) instructions to change the MRTK configuration profile for your scene to the **DefaultHoloLens2ConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
+Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) instructions to ensure the MRTK configuration profile for your scene is **DefaultHoloLens2ConfigurationProfile**  and change the display options for the spatial awareness mesh to **Occlusion**.
 
 ## Configuring the speech commands start behavior
 
@@ -74,7 +76,7 @@ Download and **import** the following Unity custom packages **in the order they 
 
 * [Microsoft.CognitiveServices.Speech.N.N.N.unitypackage](https://aka.ms/csspeech/unitypackage) (latest version)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.3.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.3.0.3/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.3.unitypackage)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.3.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-speech-services-v2.3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.3.0.0.unitypackage)
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.5.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/2.5.1/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.5.1.unitypackage)
 
 > [!TIP]
 > For a reminder on how to import a Unity custom package, you can refer to the [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) instructions.
@@ -112,7 +114,7 @@ With the **Lunarcom** object still selected, expand the Buttons object to reveal
 
 ## Connecting the Unity project to the Azure resource
 
-To use Azure Speech Services, you need to create an Azure resource and obtain an API key for the Speech Service. Follow the [Try the Speech service for free](https://docs.microsoft.com/azure/cognitive-services/speech-service/get-started) instructions and make a note of your service region (also known as Location) and API key (also known as Key1 or Key2).
+To use Azure Speech Services, you need to create an Azure resource and obtain an API key for the Speech Service. Follow the [Try the Speech service for free](/azure/cognitive-services/speech-service/get-started) instructions and make a note of your service region (also known as Location) and API key (also known as Key1 or Key2).
 
 In the Hierarchy window, select the **Lunarcom** object, then in the Inspector window, locate the **Lunarcom Controller (Script)** component's **Speech SDK Credentials** section and configure it as follows:
 
@@ -137,7 +139,6 @@ If you now enter Game mode, you can test the speech recognition by first pressin
 Then, assuming your computer has a microphone, when you say something, your speech will be transcribed on the terminal panel:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial1-section7-step1-3.png)
-
 
 > [!CAUTION]
 > The application needs to connect to Azure, so make sure your computer/device is connected to the internet.

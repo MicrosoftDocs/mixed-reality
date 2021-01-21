@@ -25,7 +25,7 @@ In the Unity menu, select Mixed Reality Toolkit > Utilities > **Configure Unity 
 ![Enable microphone capability](images/mr-learning-base/base-09-section1-step1-1.png)
 
 > [!NOTE]
-> The Microphone capability should have been enabled during the [Apply the MRTK Project Configurator settings](mr-learning-base-02.md#selecting-mrtk-and-project-settings) instructions when you configured the Unity project at the beginning of this tutorial series. However, if it is not enabled, make sure you enable it now.
+> The Microphone capability should have been enabled during the [Apply the MRTK Project Configurator settings](mr-learning-base-02.md#creating-and-configuring-the-scene) instructions when you configured the Unity project at the beginning of this tutorial series. However, if it is not enabled, make sure you enable it now.
 
 ## Creating speech commands
 
@@ -142,4 +142,3 @@ If you're following the Unity development checkpoint journey we've laid out, you
 > [Basic interactions](../mrtk-101.md)
 
 You can always go back to the [Unity development checkpoints](../unity-development-overview.md#1-getting-started) at any time.
-
