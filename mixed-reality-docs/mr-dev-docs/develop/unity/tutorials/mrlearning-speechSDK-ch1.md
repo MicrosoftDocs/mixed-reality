@@ -57,7 +57,6 @@ With the **MixedRealityToolkit** object selected in the Hierarchy window, in the
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial1-section2-step1-1.png)
 
-
 > [!TIP]
 > For a reminder on how to clone and configure MRTK profiles, you can refer to the [Configuring the Mixed Reality Toolkit profiles](mr-learning-base-03.md) instructions.
 
