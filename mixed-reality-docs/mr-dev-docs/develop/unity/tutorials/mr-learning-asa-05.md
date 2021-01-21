@@ -25,7 +25,7 @@ In this section, you will upgrade and install the following inbuilt packages:
 * AR Foundation 3.1.3
 * XR Legacy Input Helpers 2.1.6
 * ARCore XR Plugin 3.1.3 for Android support
-* ARKit XR plugin 2.1.9 for iOS support
+* ARKit XR plugin 3.1.3 for iOS support
 
 > [!CAUTION]
 > Not all version are compatible with MRTK and only certain version works together, so make sure you install the exact versions listed above.
