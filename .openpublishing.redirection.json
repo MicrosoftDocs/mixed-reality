@@ -909,7 +909,7 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/gestures-and-motion-controllers-in-unity.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/unity/gestures-and-motion-controllers-in-unity",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/unity/motion-controllers-in-unity",
 			"redirect_document_id": true
 		},
 		{
@@ -944,8 +944,13 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/mrtk-101.md",
-			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/develop/unity/mrtk-101",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/out-of-scope/mrtk-101",
 			"redirect_document_id": true
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/mrtk-101.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/out-of-scope/mrtk-101",
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/mrtk-getting-started.md",

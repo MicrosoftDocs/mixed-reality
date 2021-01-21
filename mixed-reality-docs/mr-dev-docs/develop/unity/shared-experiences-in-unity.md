@@ -38,7 +38,7 @@ Or jump directly to deploying your app on a device or emulator:
 > [!div class="nextstepaction"]
 > [Deploy to HoloLens or Windows Mixed Reality immersive headsets](../platform-capabilities-and-apis/using-visual-studio.md)
 
-You can always go back to the [Unity development checkpoints](unity-development-overview.md#3-platform-capabilities-and-apis) at any time.
+You can always go back to the [Unity development checkpoints](unity-development-overview.md#3-advanced-features) at any time.
 
 ## See also
 * [Shared experiences in mixed reality](../platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)

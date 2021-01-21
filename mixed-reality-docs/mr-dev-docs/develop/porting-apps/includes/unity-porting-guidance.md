@@ -113,7 +113,7 @@ You can find more information about the [XR APIs here](https://docs.unity3d.com/
 
 Unity currently uses its general Input.GetButton/Input.GetAxis APIs to expose input for [the Oculus SDK](https://docs.unity3d.com/Manual/OculusControllers.html) and [the OpenVR SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html). If your apps are already using these APIs for input, this is the easiest path for supporting motion controllers in Windows Mixed Reality: you should just need to remap buttons and axes in the Input Manager.
 
-For more information, see the [Unity button/axis mapping table](../../unity/gestures-and-motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) and the [overview of the common Unity APIs](../../unity/gestures-and-motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis).
+For more information, see the [Unity button/axis mapping table](../../unity/motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) and the [overview of the common Unity APIs](../../unity/motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis).
 
 ## Windows-specific XR.WSA.Input APIs
 
@@ -125,7 +125,7 @@ If your app already builds custom input logic for each platform, you can choose 
 > [!NOTE]
 > If you're using HP Reverb G2 controllers, all input APIs will continue to work except for **InteractionSource.supportsTouchpad**, which will return false with no touchpad data.
 
-For more information, see the [overview of the UnityEngine.XR.WSA.Input APIs](../../unity/gestures-and-motion-controllers-in-unity.md#windows-specific-apis-xrwsainput).
+For more information, see the [overview of the UnityEngine.XR.WSA.Input APIs](../../unity/motion-controllers-in-unity.md#windows-specific-apis-xrwsainput).
 
 ## Grip pose vs. pointing pose
 

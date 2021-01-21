@@ -88,3 +88,13 @@ To do this
 
 From here, you can change your active controller binding to "Custom", which will open up the option to try community-shared game bindings.
 If no custom game bindings have been shared for this game yet (or if you aren't fully satisfied with the ones you've tried), you can also create your own custom game bindings, and even help the rest of the community by sharing them after a few game sessions.
+
+## I have all cables connected to the headset and PC but it won’t turn on
+
+Verify the cable connected to the headset is fully seated. There is a small dot on the top of the cable that will line up next to the top edge of the headset when it has been fully inserted:
+
+![Small dot on the top of the cable](images/small-dot.jpg)
+
+## How can I power down the headset while still using my PC
+
+Unplug the AC connection adapter from the link box on the headset cable to remove power to the headset.

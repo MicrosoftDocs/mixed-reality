@@ -14,6 +14,8 @@ Voice input in Unreal allows you to interact with a hologram without having to u
 
 ## Enabling Speech Recognition
 
+If you use Windows Mixed Reality Plugin, Voice input doesn’t require any special Windows Mixed Reality APIs; it's built on the existing Unreal Engine 4 [Input](https://docs.unrealengine.com/Gameplay/Input/index.html) mapping API. If you use OpenXR, you should additionally install [Microsoft OpenXR plugin](https://github.com/microsoft/Microsoft-OpenXR-Unreal). 
+
 To enable speech recognition on HoloLens:
 1. Select **Project Settings > Platform > HoloLens > Capabilities** and enable **Microphone**. 
 2. Enabled speech recognition in **Settings > Privacy > Speech** and select **English**.
@@ -24,8 +26,6 @@ To enable speech recognition on HoloLens:
 ![Windows Speech recognition settings](images/unreal/speech-recognition-settings.png)
 
 3. A dialog will show up when the application first starts to ask if you want to enable the microphone. Selecting **Yes** starts voice input in the app.
-
-Voice input doesn’t require any special Windows Mixed Reality APIs; it's built on the existing Unreal Engine 4 [Input](https://docs.unrealengine.com/Gameplay/Input/index.html) mapping API. 
 
 ## Adding Speech Mappings
 
