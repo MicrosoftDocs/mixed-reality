@@ -10,10 +10,10 @@ keywords: Unreal, Unreal Engine, UE4, HoloLens, HoloLens 2, Mixed Reality, devel
 
 # Palm-Up Constraint Component
 
-[Hand constraint](HandConstraintComponent.md) specialization that activates only when the palm is facing the player.
+[Hand constraint](hand-constraint-component.md) specialization that activates only when the palm is facing the player.
 
-![Palm facing camera](Images/HandConstraint/PalmUpFacingCamera.png)
-![Palm facing camera](Images/HandConstraint/PalmUpFacingAway.png)
+![Simulated hand with palm facing camera](Images/HandConstraint/PalmUpFacingCamera.png)
+![Simulated hand with palm facing away from camera](Images/HandConstraint/PalmUpFacingAway.png)
 
 ## Usage
 

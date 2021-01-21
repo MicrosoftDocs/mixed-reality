@@ -1,3 +1,13 @@
+---
+title: Surface magnetism
+description: Guide to surface magnetism resources and techniques in UXT.
+author: luis-valverde-ms
+ms.author: luval
+ms.date: 08/25/2020
+ms.localizationpriority: high
+keywords: Unreal, Unreal Engine, UE4, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, UXT, UX Tools, Manipulator Component, direct manipulation
+---
+
 # Surface Magnetism
 
 The surface magnetism component allows the user to interact with the component and stick the containing actor to a surface (either in game or to real world walls). Interaction is done via far interaction only.

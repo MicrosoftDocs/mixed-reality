@@ -1,8 +1,18 @@
-# Touchable Volume
+---
+title: Touchable volume
+description: Guide to touchable volume resources and techniques in UXT.
+author: luis-valverde-ms
+ms.author: luval
+ms.date: 08/25/2020
+ms.localizationpriority: high
+keywords: Unreal, Unreal Engine, UE4, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, UXT, UX Tools, Manipulator Component, direct manipulation
+---
+
+# Touchable volume
 
 The touchable volume component allows the user to interact with an object by touching it.
 
-![Example](Images/TouchableVolume/Example.gif)
+![Simulated hands interacting with touchable volume component](Images/TouchableVolume/Example.gif)
 
 ## Usage
 

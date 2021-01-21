@@ -55,11 +55,11 @@ When using the _Generic Manipulator_ with a _Procedural Mesh_, you will need to:
 
 * Disable "Use Complex as Simple Collision" on the _Procedural Mesh_.
 
-![UseComplexAsSimpleCollision](Images/Manipulator/UseComplexAsSimpleCollision.png)
+![Procedural mesh settings open with use complex as simple collision property highlighted](Images/Manipulator/UseComplexAsSimpleCollision.png)
 
 * Set "Create Collision" when creating the _Procedural Mesh_.
 
-![CreateCollision](Images/Manipulator/CreateCollision.png)
+![Event graph with copy procedural mesh from static mesh component with create collision highlighted](Images/Manipulator/CreateCollision.png)
 
 This is due to UXTools only querying for simple collision volumes when detecting interaction targets, in order to ensure correct detection in all situations. You can read more about simple vs complex collisions [here](https://docs.unrealengine.com/en-US/Engine/Physics/SimpleVsComplex/index.html).
 
@@ -67,7 +67,7 @@ This is due to UXTools only querying for simple collision volumes when detecting
 
 Sometimes you want to manipulate components that are physics-enabled, that is, components affected by gravity and collisions with other actors. If your physically simulated component (e.g. a _Static Mesh Component_ with _Simulate Physics_ enabled) is the root component of the actor, _Generic Manipulator_ will work out of the box. If the component is not the root, you'll have to set it as the target component of the manipulator:
 
-![PhysicsEnabledManipulation](Images/Manipulator/PhysicsEnabledManipulation.png)
+![Default scene root details open with physics enabled mesh highlighted](Images/Manipulator/PhysicsEnabledManipulation.png)
 
 This is necessary because:
 * By default _Generic Manipulator_ modifies the transform of the actor's root component.

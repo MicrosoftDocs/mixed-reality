@@ -1,8 +1,18 @@
+---
+title: Tap to place
+description: Guide to tap to place resources and techniques in UXT.
+author: luis-valverde-ms
+ms.author: luval
+ms.date: 08/25/2020
+ms.localizationpriority: high
+keywords: Unreal, Unreal Engine, UE4, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, UXT, UX Tools, Manipulator Component, direct manipulation
+---
+
 # Tap To Place
 
 The UXT Tap To Place component is a far interaction component used to place objects against surfaces. It is especially useful for placing objects against the spacial mesh. You can initiate the tap to place behaviour by selecting the target object with far interaction. The object will then track either the head or the hand, moving along hit surfaces until it the user ends placement by making any other far tap.
 
-![TapToPlace](Images/TapToPlace.gif)
+![Tab to place feature with simulated hands](Images/TapToPlace.gif)
 
 To enable real world collision generation, the following values should be enabled in `ARSessionConfig > ARSettings > World Mapping`:
 
@@ -31,7 +41,7 @@ Add a primitive component to your actor/actor blueprint. Also add a UxtTapToPlac
 
 **Placement Type**: This property provides options for what the target component will track during placement.
 - If _Head_ is selected, the component will be placed at the centre of the users vision and will move as the user moves their hand.
-- If _Hand_ is selected, the component will be placed at the end of the hand [Far Beam](FarBeam.md) and will move as the user moves their hand.
+- If _Hand_ is selected, the component will be placed at the end of the hand [Far Beam](far-beam.md) and will move as the user moves their hand.
 
 **Keep Orientation Vertical**: If true, the object will remain upright, even if being placed against surfaces that are not upright.
 

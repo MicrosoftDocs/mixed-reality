@@ -1,18 +1,30 @@
+---
+title: Tooltip
+description: Guide to tooltip resources and techniques in UXT.
+author: luis-valverde-ms
+ms.author: luval
+ms.date: 08/25/2020
+ms.localizationpriority: high
+keywords: Unreal, Unreal Engine, UE4, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, UXT, UX Tools, Manipulator Component, direct manipulation
+---
+
 # Tooltip
 
 Tooltips are used to convey a hint or extra information upon closer inspection of an object. They can be used to annotate objects in the physical environment.
 
-![tooltip](Images/Tooltips/TooltipExample.jpg)
+![Tooltips showing when simulated hands interact with objects](Images/Tooltips/TooltipExample.jpg)
 
 ## How to use a tooltip
 There is an AUxtTooltipActor can be dragged and dropped in the scene to instantiate a tooltip. 
-![tooltip](Images/Tooltips/TooltipStep1.jpg)
-![tooltip](Images/Tooltips/TooltipStep2.jpg)
+
+![Searching for a tooltip component in Unreal editor](Images/Tooltips/TooltipStep1.jpg)
+![Dragging and dropping tooltip into a scene](Images/Tooltips/TooltipStep2.jpg)
+
 Once instantiated, the tooltip can point to an actor/component by modifying the **Tooltip Target** property or calling the SetTarget function. It is also possible to change the tooltip content for any blueprint widget by setting the **Widget Class** property.
-![tooltip](Images/Tooltips/TooltipStep3.jpg)
+![Modifying tooltip target](Images/Tooltips/TooltipStep3.jpg)
 The spline tangents can be modified if you want to change the curve.
 
-## Public Properties
+## General public properties
 
 ### Tooltip Target
 Property to point at an actor/component. Clearing the component property to none should result in binding the tooltip to the center of the actor. The component name defaults to `DefaultSceneRoot`.
@@ -27,14 +39,14 @@ The anchor is a scene node that is used to offset the end point of the spline go
 The Margin property that can be used to add space between the text and the border of the back plate.
 
 
-# Dynamic Tooltips
+## Dynamic Tooltips
 
 Having too many tooltips can get costly. This is a component for a tooltip that can be spawned dynamically based on preset events.
 
-## How to use a dynamic tooltip
+### How to use a dynamic tooltip
 The dynamic tooltip is used by creating a TooltipSpawnerComponent and adding it to the actor that you want the tooltip to point at. The following properties will modify the tooltips behavior.
 
-## Public Properties
+## Dynamic public properties
 
 ### Appear Type
 Parameter to script what will spawn the tooltip. 

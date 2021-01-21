@@ -16,7 +16,7 @@ A button gives the user a way to trigger an immediate action. It is one of the m
 
 The first step of creating a button from scratch is adding the [`UxtPressableButtonComponent`](xref:_u_uxt_pressable_button_component) to an actor blueprint. This is a low level component that drives button logic. This is followed by creating some moving visuals. Moving visuals are essential for pressable button interaction as they're visualizing pressed and released state.
 
-![MovingVisuals](Images/PressableButton/MovingVisuals.gif)
+![Pressable button and simulated hands moving visuals](Images/PressableButton/MovingVisuals.gif)
 
 Add a [`StaticMeshComponent`](https://docs.unrealengine.com/en-US/Engine/Components/StaticMesh/index.html) (or any [`SceneComponent`](https://docs.unrealengine.com/en-US/API/Runtime/Engine/Components/USceneComponent/index.html)) to the actor and set the visuals property of the `UxtPressableButtonComponent` to reference this new mesh. Also ensure that the local positive x-axis of this mesh component points in the direction the button is expected to be pushed. Any component children of this mesh will move along with it as the button is pushed.
 
@@ -30,15 +30,15 @@ If the button is configured correctly, the button should now react to presses du
 
 A distinction is being made here between **push** and **press**. A button can be pushed without being pressed. A button will only fire OnButtonPressed once it has been pushed beyond the PressedDistance. If a button needs to respond to push, OnBeginPoke and OnEndPoke can be used.
 
-![ButtonPlanes](Images/PressableButton/ButtonPlanes.png)
+![Three button planes on simulated button](Images/PressableButton/ButtonPlanes.png)
 
 Some buttons may also have static visuals. Static visuals can be created by adding another mesh component, making sure that it is not a child of the moving visuals.
 
 Configuring the component hierarchy so that the buttons work should be simple. The only things that are essential are that the pressable button component is not a child of the moving visuals. Also ensure that only visuals that should move with press are children of the moving visuals. Here are some examples of configurations of the button hierarchy that will work:
 
-![ButtonSetup](Images/PressableButton/ButtonSetup.png)
+![Button setup in actor](Images/PressableButton/ButtonSetup.png)
 
-![ButtonWithText](Images/PressableButton/ButtonWithText.gif)
+![Button with text being pressed by simulated hands](Images/PressableButton/ButtonWithText.gif)
 
 Although this button is behaving correctly, it's not doing anything useful. The pressable button events can be used in a blueprint in order to respond to press/release. There are a few useful events that can be used:
 
@@ -55,20 +55,20 @@ Although this button is behaving correctly, it's not doing anything useful. The 
 
 Here are some examples of these events in use in the SimpleButton blueprint sample provided with UXT:
 
-![ButtonHoverEvents](Images/PressableButton/ButtonHoverEvents.png)
-![ButtonEvents](Images/PressableButton/ButtonEvents.png)
+![Event graph with on begin focus pressable button event](Images/PressableButton/ButtonHoverEvents.png)
+![Event graph with on end focus pressable button event](Images/PressableButton/ButtonEvents.png)
 
 ## Button Actors
 
 To provide HoloLens 2 style button visuals and behaviors UX Tools contains an actor named named `UxtPressableButtonActor`. The `UxtPressableButtonActor` automatically constructs a customizable button front plate, back plate, icon, and label hierarchy. The button visuals are tied to custom shaders and materials, please see the [graphics documentation](Graphics.md) for more information.
 
-![ButtonActor](Images/PressableButton/ButtonActor.png)
+![Button with bounding box and actor](Images/PressableButton/ButtonActor.png)
 
 ### Visual Configuration
 
 To aid in the time it takes to configure buttons, a handful of actor properties are exposed which react to changes made during edit time and runtime.
 
-![ButtonActorVisualConfig](Images/PressableButton/ButtonActorVisualConfig.png)
+![Button actor with visual configuration options highlighted](Images/PressableButton/ButtonActorVisualConfig.png)
 
 For example, changing the `Millimeter Size` from (16, 32, 32) to (16, 64, 32) will automatically scale the button's front and back plates to create a wide button without effecting the button icon or label.
 
@@ -80,11 +80,11 @@ Changing the `Icon` to a new unicode code point will generate the appropriate un
 
 Any blueprints which use `UxtPressableButtonActor` as a parent class (or any of its derived classes) can easily respond to button events by selecting the "Button Component" and binding to the available button events. In this case "Hello" will be printed when the button is pressed: 
 
-![ButtonActorEvents](Images/PressableButton/ButtonActorBindEvent.png)
+![Button actor events](Images/PressableButton/ButtonActorBindEvent.png)
 
 If a blueprint needs to respond to a button event externally, such as a button child actor. This can be achieved with the below graph in the case of a child actor component:
 
-![ButtonActorBindEventExternal](Images/PressableButton/ButtonActorBindEventExternal.png)
+![Event graph with button event and child actor component](Images/PressableButton/ButtonActorBindEventExternal.png)
 
  - Acquire the child actor from the "Child Button" child actor component
  - Get the "Button Component" from the child actor
@@ -97,19 +97,19 @@ A handful of derived `UxtPressableButtonActors` exist to exhibit behavior not fo
 
 - `UxtPressableToggleButton`, displays an additional back plate based on the button's `UxtToggleState` checked property.
 
-![ButtonActorToggle](Images/PressableButton/ButtonActorToggle.png)
+![Buttons with actor toggle](Images/PressableButton/ButtonActorToggle.png)
 
 - `UxtPressableCheckButton`, displays a check box icon based on the button's `UxtToggleState` checked property.
 
-![ButtonActorCheck](Images/PressableButton/ButtonActorCheck.png)
+![Buttons with actor check](Images/PressableButton/ButtonActorCheck.png)
 
 - `UxtPressableSwitchButton`, displays a switch icon based on the button's `UxtToggleState` checked property.
 
-![ButtonActorSwitch](Images/PressableButton/ButtonActorSwitch.png)
+![Buttons with actor switch](Images/PressableButton/ButtonActorSwitch.png)
 
 - `UxtPressableRadioButton`, displays a radio circle icon based on the button's `UxtToggleState` checked property. Radio buttons are intended to be used with the `UUxtToggleGroup` to ensure only one button is checked at a time.
 
-![ButtonActorRadio](Images/PressableButton/ButtonActorRadio.png)
+![Button with actor radio feature](Images/PressableButton/ButtonActorRadio.png)
 
 ## Pressable Button Component Public Properties
 

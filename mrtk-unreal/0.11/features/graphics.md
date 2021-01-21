@@ -23,7 +23,7 @@ Many mobile stereo headsets are [fill rate](https://en.wikipedia.org/wiki/Fillra
 > [!NOTE] 
 > Unreal's built in [light types](https://docs.unrealengine.com/en-US/Engine/Rendering/LightingAndShadows/LightTypes/index.html) are not included within `MF_SimpleLit` calculations.
 
-`MPC_UXSettings` contains global shader constants that are used to drive lighting effects as well as UI effects. For example, the left and right pointer positions are updated each frame within `MPC_UXSettings` to drive lighting effects emitted from the [hand interaction](HandInteraction.md) pointers.
+`MPC_UXSettings` contains global shader constants that are used to drive lighting effects as well as UI effects. For example, the left and right pointer positions are updated each frame within `MPC_UXSettings` to drive lighting effects emitted from the [hand interaction](hand-interaction.md) pointers.
 
 ## Shaders
 
@@ -38,13 +38,13 @@ A couple of shaders are described below in more detail, as well as any special c
 
 The `M_ButtonBox` material and `Bounding_Box.ush` shader generate glowing edges on a cube with optional circular blob. The blob appears only on the active face set with the Blob_Active_Face parameter. The shader must be used with the correct corresponding cube model. The special model enables the shader to render only the visible areas of the surfaces. The last two letters of the `SM_FrontPlate_xx` model name indicates which face is active. For example, SM_FrontPlate_PY indicates the positive y-axis.
 
-![GraphicsButtonBox](Images/Graphics/GraphicsButtonBox.png)
+![Graphics button box on mixed reality device](Images/Graphics/GraphicsButtonBox.png)
 
 ### Rounded Edge Thick
 
 The `M_RoundedEdgeThick` material and `Rounded_Edge_Thick.ush` shader are designed to render a quad as an outlined rounded rectangle with depth. The shader works with a special mesh that approximates the round corners using triangles and includes additional information for anti-aliased silhouette edges. UX Tools includes several models named `SM_BackPlateRoundedThick_#` where # is the number of triangles per rounded corner. Use the model with the fewest triangles that works for your scenario.
 
-![GraphicsRoundedEdgeThick](Images/Graphics/GraphicsRoundedEdgeThick.png)
+![Graphic with rounded thick edge on mixed reality device](Images/Graphics/GraphicsRoundedEdgeThick.png)
 
 > [!NOTE] 
 > Note, the `SM_BackPlateRoundedThick_#` mesh and `Rounded_Edge_Thick.ush` shader assume the local y-axis is up, and not Unreal's traditional z-axis up. These assumptions were made when the `Rounded_Edge_Thick.ush` shader was authored in a separate content creation tool. To resolve these assumptions the `UxtBackPlateComponent` and `Rounded_Edge_Thick.ush` perform an additional rotation. This rotation is transparent to the end user and should not effect anything but advanced use cases. 
@@ -64,5 +64,5 @@ The above shader uses additive blending; if alpha blending is preferred a second
 
 ## See also
 
-- [Pressable button component](PressableButton.md)
-- [Bounds Control](BoundsControl.md)
+- [Pressable button component](pressable-button.md)
+- [Bounds Control](bounds-control.md)

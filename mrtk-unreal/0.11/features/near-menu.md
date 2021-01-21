@@ -1,5 +1,16 @@
+---
+title: Near menu
+description: Guide to near menu resources and techniques in UXT.
+author: luis-valverde-ms
+ms.author: luval
+ms.date: 08/25/2020
+ms.localizationpriority: high
+keywords: Unreal, Unreal Engine, UE4, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, UXT, UX Tools, Manipulator Component, direct manipulation
+---
+
 # Near Menu
-Near Menu is a UX control which provides a collection of buttons or other UI components. It floats around the user's body using the [follow component](FollowComponent.md) and is easily accessible anytime. Since it is loosely coupled with the user, it does not disturb the user's interaction with the target content. The user can use the 'Pin' button to world-lock/unlock the menu. The menu can be grabbed and placed at a specific position.
+
+Near Menu is a UX control which provides a collection of buttons or other UI components. It floats around the user's body using the [follow component](follow-component.md) and is easily accessible anytime. Since it is loosely coupled with the user, it does not disturb the user's interaction with the target content. The user can use the 'Pin' button to world-lock/unlock the menu. The menu can be grabbed and placed at a specific position.
 
 ![NearMenu](Images/NearMenu/NearMenu.png)
 
@@ -34,17 +45,17 @@ When creating a near menu for your application it is recommended to copy the nea
 
 2. Now that we have our foundation, we can customize the menu.
     * Any button may be customized by selecting a button `ChildActorComponent` and modifying settings within the child actor template.
-    * The [UxtFollow](FollowComponent.md) and [UxtGenericManipulator](Manipulator.md) components can be altered to change follow and manipulation behavior respectively.
+    * The [UxtFollow](follow-component.md) and [UxtGenericManipulator](manipulator.md) components can be altered to change follow and manipulation behavior respectively.
     * A handful of properties exist on the near menu blueprint root to adjust the auto follow behavior.
 
     ![Customize](Images/NearMenu/NearMenuCustomize.png)
 
 3. Finally, to tie logic to buttons on the menu we need to bind to the `On Button Pressed` event. The below blueprint graph will print "Hello" when "Menu One" is pressed:
-    * The `Get Component by Class` method is looking for a [UxtPressableButton](PressableButton.md) component.
+    * The `Get Component by Class` method is looking for a [UxtPressableButton](pressable-button.md) component.
 
     ![EventGraph](Images/NearMenu/NearMenuEventGraph.png)
 
 ## More information
-* [FollowComponent](FollowComponent.md)
-* [Manipulator](Manipulator.md)
-* [PressableButton](PressableButton.md)
+* [FollowComponent](follow-component.md)
+* [Manipulator](manipulator.md)
+* [PressableButton](pressable-button.md)

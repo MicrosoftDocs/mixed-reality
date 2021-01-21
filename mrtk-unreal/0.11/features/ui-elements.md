@@ -1,3 +1,13 @@
+---
+title: UI elements
+description: Guide to UI elements resources and techniques in UXT.
+author: luis-valverde-ms
+ms.author: luval
+ms.date: 08/25/2020
+ms.localizationpriority: high
+keywords: Unreal, Unreal Engine, UE4, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, UXT, UX Tools, Manipulator Component, direct manipulation
+---
+
 # UI Elements
 
 UI elements give the user a way to show and hide groups of UI functionality. UI elements are scene components that can be attached to any actor to allow its visibility to be controlled by its parent element.

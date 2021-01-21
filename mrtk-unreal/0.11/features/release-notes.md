@@ -44,13 +44,13 @@ The pinch slider actor has gained a number of quality of life improvements. Thes
 - GetValue, SetValue and OnSliderUpdateValue exposed directly on the actor to allow easy access to the slider's value relative to the custom min / max value. (note: if using the underlying `UxtPinchSliderComponent`, it's value will still be in the range 0-1)
 - Stepped movement along the slider's tick marks.
 
-![SteppedSlider](Images/Slider/SteppedSlider.gif)
+![Stepped slider being used with simulated hands](Images/Slider/SteppedSlider.gif)
 
 ### Bounds control improvements
 
 #### Constraint support
 
-Manipulation constraints (i.e. derived from `UUxtTransformConstraint`) now also apply to manipulations performed via [bounds control](BoundsControl.md), making it easier to produce a consistent behavior when manipulating transforms.
+Manipulation constraints (i.e. derived from `UUxtTransformConstraint`) now also apply to manipulations performed via [bounds control](bounds-control.md), making it easier to produce a consistent behavior when manipulating transforms.
 
 #### Uniform scaling
 

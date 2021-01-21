@@ -1,3 +1,13 @@
+---
+title: Hand menu
+description: Guide to hand menu resources and techniques in UXT.
+author: luis-valverde-ms
+ms.author: luval
+ms.date: 08/25/2020
+ms.localizationpriority: high
+keywords: Unreal, Unreal Engine, UE4, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, UXT, UX Tools, Graphics, rendering, materials
+---
+
 # Hand Menu
 
 Hand menus allow users to quickly bring up hand-attached UI for frequently used functions. To prevent false activation while interacting with other objects, hand menu provides options such as 'Require Flat Hand'. It is recommended to use these options to prevent unwanted activation.
@@ -18,7 +28,7 @@ In this example we are going to create a basic three button hand menu, similar t
 2. Now that we have our foundation, we will add some buttons to the menu.
     * Add three `ChildActorComponent`s to the blueprint, and set their child actor class to `UxtPressableButtonActor`.
     * Move one button above and another below the center button. This will be a Z value of 3.2 and -3.2.
-    * Configure the buttons using the [button options](PressableButton.md#visual-configuration) in the child actor template.
+    * Configure the buttons using the [button options](pressable-button.md#visual-configuration) in the child actor template.
 
     ![ButtonSetup](Images/HandMenu/Example_ButtonSetup.png)
 
@@ -44,6 +54,6 @@ In this example we are going to create a basic three button hand menu, similar t
 
 ## More information
 
-* [UxtUIElementComponent](UIElements.md)
-* [UxtPalmUpConstraintComponent](PalmUpConstraintComponent.md)
-* [UxtPressableButtonComponent](PressableButton.md)
+* [UxtUIElementComponent](ui-elements.md)
+* [UxtPalmUpConstraintComponent](palm-up-constraint-component.md)
+* [UxtPressableButtonComponent](pressable-button.md)

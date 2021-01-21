@@ -1,4 +1,14 @@
-# WidgetComponent
+---
+title: Widget component
+description: Guide to Widget component resources and techniques in UXT.
+author: luis-valverde-ms
+ms.author: luval
+ms.date: 08/25/2020
+ms.localizationpriority: high
+keywords: Unreal, Unreal Engine, UE4, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, UXT, UX Tools, Manipulator Component, direct manipulation
+---
+
+# Widget component
 
 The UXT widget component is used to make UXT interaction work with Unreal Engine's own widget component.
 
@@ -12,7 +22,7 @@ Create your widget as normal:
 
 After doing this, you should be able to see your widget when you play in editor. However, you will not be able to interact with the widget using the simulated hands. Stop play in editor and add a UXT widget component to your actor:
 
-![WidgetComponent](Images/WidgetComponent.png)
+![Widget component added to actor](Images/WidgetComponent.png)
 
 This should be all the set up required. When you play in editor now, you should be able to use far interaction and poke to interact with the ui elements in your widget actor.
 

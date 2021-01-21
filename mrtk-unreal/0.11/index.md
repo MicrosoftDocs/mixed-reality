@@ -25,7 +25,7 @@ If you're new to MRTK or Mixed Reality development in Unreal, we recommend start
 
 We have complete documentation for all release versions, but we recommend using the highest numbered public release branch for stability. Versions can be selected from the dropdown at the top-right of the screen:
 
-![MRTK version reference](../Docs/Images/UXTools-Doc-Versions.png)
+![MRTK version reference](features/Images/UXTools-Doc-Versions.png)
 
 ## Getting help
 
