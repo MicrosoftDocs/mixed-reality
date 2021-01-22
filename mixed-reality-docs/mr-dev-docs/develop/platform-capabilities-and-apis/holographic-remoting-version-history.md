@@ -13,6 +13,11 @@ keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reali
 > [!IMPORTANT]
 > This guidance is specific to Holographic Remoting on HoloLens 2.
 
+## Version 2.4.1 (January 22, 2021) <a name="v2.4.1"></a>
+
+* Fixed issue with SpatialAnchorManager::RequestStoreAsync not working reliably when called while connecting.
+* Fixed issue with SpatialAnchorManager::TrySave not correctly saving an anchor if anchor in question is not locatable.
+
 ## Version 2.4.0 (December 1, 2020) <a name="v2.4.0"></a>
 
 * Holographic Remoting now support writing remote apps using the [OpenXR API](../native/openxr.md). Check out [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md) to get started.
