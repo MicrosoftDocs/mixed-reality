@@ -1,8 +1,7 @@
 - name: Welcome to UX Tools
   href: index.md
-  items:
-    - name: Installation Guide
-      href: installation.md 
+- name: Installation Guide
+  href: installation.md 
 - name: Features
   href: features/toc.yml
 - name: Contributing
