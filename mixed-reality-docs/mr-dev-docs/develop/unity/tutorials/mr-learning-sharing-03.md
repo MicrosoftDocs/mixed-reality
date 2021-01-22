@@ -58,13 +58,13 @@ In the Inspector window, use the **Add Component** button to add the **Generic N
 
 In the Inspector window, use the **Add Component** button to add the **Photon View (Script)** component to the PhotonUser object and configure it as follows:
 
-* To the **Observed Components** field, assign the **Generic Net Sync (Script)** component
+* Ensure that the **Observed Components** field is assigned with the **Generic Net Sync (Script)** component
 
 ![Unity with Photon View component added and configured](images/mr-learning-sharing/sharing-03-section2-step1-4.png)
 
 ### 2. Create the avatar
 
-In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **StandardAssets** > **Materials** folder to locate the MRTK materials.
+In the Project window, navigate to the **Assets** > **MRTK** > **StandardAssets** > **Materials** folder to locate the MRTK materials.
 
 Then, in the Hierarchy window, right-click on the **PhotonUser** object and select **3D Object** > **Sphere** to create a sphere object as a child of the PhotonUser object and configure it as follows:
 
