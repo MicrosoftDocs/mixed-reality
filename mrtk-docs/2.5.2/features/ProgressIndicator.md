@@ -1,5 +1,5 @@
 ---
-title: README_ProgressIndicator
+title: ProgressIndicator
 description: Overview of progress Indicator in MRTK
 author: CDiaz-MS
 ms.author: cadia
@@ -10,13 +10,13 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Progress Indicators
 
-![Progress Indicators](Images/ProgressIndicator/MRTK_ProgressIndicator_Main.png)
+![Progress Indicators](images/progress-indicator/MRTK_ProgressIndicator_Main.png)
 
 ## Example scene
 
 Examples of how to use progress indicators can be found in the `ProgressIndicatorExamples` scene. This scene demonstrates each of the progress indicator prefabs included in the SDK.
 
-<img src="Images/ProgressIndicator/MRTK_ProgressIndicator_Examples.png" alt="Progress Indicator">
+<img src="images/progress-indicator/MRTK_ProgressIndicator_Examples.png" alt="Progress Indicator">
 
 ## Example: Open, update & close a progress indicator
 

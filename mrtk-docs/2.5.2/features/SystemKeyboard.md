@@ -1,5 +1,5 @@
 ---
-title: README_SystemKeyBoard
+title: SystemKeyBoard
 description: Overview of System Key Board in MRTK
 author: maxwang-ms
 ms.author: wangmax
@@ -10,9 +10,9 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, System K
 
 # System keyboard
 
-![System keyboard](Images/SystemKeyboard/MRTK_SystemKeyboard_Main.png)
+![System keyboard](Images/system-keyboard/MRTK_SystemKeyboard_Main.png)
 
-A Unity application can invoke the system keyboard at any time. Note that the system keyboard will behave according to the target platform's capabilities, for example the keyboard on HoloLens 2 would support direct hand interactions, while the keyboard on HoloLens (1st gen) would support GGV (Gaze, Gesture, and Voice)<sup>[1](https://docs.microsoft.com/windows/mixed-reality/gaze)</sup>. Additionally, the system keyboard will not show up when performing [Unity Remoting](Tools/HolographicRemoting.md) from the editor to a HoloLens.
+A Unity application can invoke the system keyboard at any time. Note that the system keyboard will behave according to the target platform's capabilities, for example the keyboard on HoloLens 2 would support direct hand interactions, while the keyboard on HoloLens (1st gen) would support GGV (Gaze, Gesture, and Voice)<sup>[1](https://docs.microsoft.com/windows/mixed-reality/gaze)</sup>. Additionally, the system keyboard will not show up when performing [Unity Remoting](tools/HolographicRemoting.md) from the editor to a HoloLens.
 
 ## How to invoke the system keyboard
 
@@ -50,4 +50,4 @@ You can see a simple example of how to bring up system keyboard in `MixedReality
 
 ## See Also
 
-- [Mixed Reality Keyboard Helper Classes](Experimental/MixedRealityKeyboard/README_MixedRealityKeyboard.md)
+- [Mixed Reality Keyboard Helper Classes](experimental/mixed-reality-keyboard/MixedRealityKeyboard.md)
