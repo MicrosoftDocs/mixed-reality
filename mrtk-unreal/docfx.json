@@ -79,11 +79,11 @@
     "groups": {
       "ux-tools": {
         "dest": "ux-tools",
-        "moniker_range": "> ux-tools-0.11"
+        "moniker_range": "ux-tools-0.11"
       },
       "graphics-tools": {
         "dest": "graphics-tools",
-        "moniker_range": "> graphics-tools-0.1"
+        "moniker_range": "graphics-tools-0.1"
       }
     }
   }
