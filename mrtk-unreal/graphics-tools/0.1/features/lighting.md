@@ -114,5 +114,5 @@ To aid in understanding some of the inputs to the `MF_GTDefaultLit` material fun
 
 ## See also
 
-- [Proximity Lights](ProximityLights.md)
-- [Effects](Effects.md)
+- [Proximity Lights](proximity-lights.md)
+- [Effects](effects.md)

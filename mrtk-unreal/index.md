@@ -12,20 +12,20 @@ keywords: Unreal, Unreal Engine, UE4, HoloLens, HoloLens 2, Mixed Reality, devel
 
 ![Mixed Reality Toolkit](images/Logos/MRTK_Unreal_UXT_Banner_Rounded.png)
 
-UX Tools is the first MRTK-Unreal component to be released and is currently only supported on HoloLens 2. The component plugin includes code, blueprints, and example assets of common UX features for input simulation, hand interaction actors, press-able button components, manipulator components and follow behavior components.
+MRTK is an amazing open-source toolkit that has been around since the HoloLens was first released. The toolkit wouldn't be where it is today without the hard work of our contributing developer community.
 
 ## Development 
 
-If you're new to MRTK or Mixed Reality development in Unreal, we recommend starting at the beginning of our [Unreal development journey](https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview), which was specifically created to walk you through installation, core concepts, and usage. 
+If you're new to MRTK or Mixed Reality development, we recommend starting at the beginning of our [Unreal development journey](https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview), which was specifically created to walk you through installation, core concepts, and usage. 
 
 > [!CAUTION]
-> The Unreal development journey currently uses **UX Tools 0.11.x** and **Unreal 4.26.0 or later**. If you're working with other configurations it's still recommended that you start there, but you can also refer to the **[installation instructions](installation.md)**.
+> The Unreal development journey currently uses **UX Tools 0.11.x** and **Unreal 4.26.0 or later**. If you're working with other configurations it's still recommended that you start there, but you can also refer to the **[installation instructions](ux-tools/0.11/installation.md)**.
 
 ## Documentation Versioning
 
 We have complete documentation for all release versions, but we recommend using the highest numbered public release branch for stability. Versions can be selected from the dropdown at the top-right of the screen:
 
-![MRTK version reference](features/Images/UXTools-Doc-Versions.png)
+![MRTK version reference](features/images/UXTools-Doc-Versions.png)
 
 ## Getting help
 
