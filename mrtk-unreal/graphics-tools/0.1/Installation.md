@@ -1,14 +1,14 @@
 ---
-title: Installation Guide
-description: Guide for installating Graphics Tools in a new Unreal project.
-author: Cameron Micka
+title: Installing Graphics Tools
+description: Guide for installing Graphics Tools in a new Unreal project.
+author: Cameron-Micka
 ms.author: thmicka
 ms.date: 12/07/2020
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine, UE4, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, GT, Graphics Tools, Graphics, Rendering, Materials, Optimization
 ---
 
-# Installation Guide
+# Installing Graphics Tools
 
 ## Prerequisites
 

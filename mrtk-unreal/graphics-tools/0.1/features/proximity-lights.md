@@ -10,9 +10,9 @@ keywords: Unreal, Unreal Engine, UE4, HoloLens, HoloLens 2, Mixed Reality, devel
 
 # Proximity Lights
 
-A proximity light is a [Fluent Design System](https://www.microsoft.com/design/fluent) paradigm that mimics a [point light](https://docs.unrealengine.com/en-US/BuildingWorlds/LightingAndShadows/LightTypes/Point/index.html) projected onto a surface with a color gradient. Often used for near interactions, an app can control the location and properties of a proximity light via the `GTProximityLight` component (or actor). To utilize proximity lights on a [material](https://docs.unrealengine.com/en-US/RenderingAndGraphics/Materials/index.html), place the `MF_GTProximityLights` [material function](https://docs.unrealengine.com/en-US/RenderingAndGraphics/Materials/Functions/index.html) within a material and assign the output to the material's emissive color.
+A proximity light is a [Fluent Design System](https://www.microsoft.com/design/fluent) paradigm that mimics a [point light](https://docs.unrealengine.com/BuildingWorlds/LightingAndShadows/LightTypes/Point/index.html) projected onto a surface with a color gradient. Often used for near interactions, an app can control the location and properties of a proximity light via the `GTProximityLight` component (or actor). To utilize proximity lights on a [material](https://docs.unrealengine.com/RenderingAndGraphics/Materials/index.html), place the `MF_GTProximityLights` [material function](https://docs.unrealengine.com/RenderingAndGraphics/Materials/Functions/index.html) within a material and assign the output to the material's emissive color.
 
-![ProximityLights](Images/FeatureCards/ProximityLights.png)
+![Proximity lights example screenshot in MRTK Unreal](images/FeatureCards/ProximityLights.png)
 
 > [!NOTE] 
 > Up to three proximity lights can effect a material at once. Additional proximity lights will not be included in light calculations.
@@ -50,7 +50,7 @@ In the following steps we will create a new material that is illuminated by a pr
     * Set the node's RGB channels to 0.5, a neutral gray color. 
     * Connect this node to the `BaseColor` input of the `MF_GTDefaultLit` material function. (1)
 
-    ![Material Light](Images/ProximityLight/ProximityLightMaterialColor.png)
+    ![Material light properties](Images/ProximityLight/ProximityLightMaterialColor.png)
 
 5. It's time to preview our material interacting with a proximity light. 
     * First let's create a new level (File > New Level) and select "Empty Level." 
@@ -104,13 +104,13 @@ To add support for more than 4 lights the above changes must be made as well as 
 
 1) Within the UpdateParameterCollection method in GTProximityLightComponent.cpp change each instance of ParameterNames (6 in total) to include a new entry. 
 
-2) In the `MPC_GTSettings` [material parameter collection](https://docs.unrealengine.com/en-US/RenderingAndGraphics/Materials/ParameterCollections/index.html) add 6 new entries for all parameter names which were added above. 
+2) In the `MPC_GTSettings` [material parameter collection](https://docs.unrealengine.com/RenderingAndGraphics/Materials/ParameterCollections/index.html) add 6 new entries for all parameter names which were added above. 
 
 3) In `GraphicsToolsProject\Plugins\GraphicsTools\Shaders\GTProximityLightingUnreal.ush` add additional function parameters to the `GTContributionProximityLights` function. 
 
-4) Open `GraphicsToolsProject\Plugins\GraphicsTools\Content\Materials\MF_GTProximityLights.uasset` within the Unreal Editor and include the additional inputs in the `Contribution Proximity Lights` [custom expression](https://docs.unrealengine.com/en-US/RenderingAndGraphics/Materials/ExpressionReference/Custom/index.html). Finally, connect those inputs to the corresponding `MPC_GTSettings` parameters outputs.
+4) Open `GraphicsToolsProject\Plugins\GraphicsTools\Content\Materials\MF_GTProximityLights.uasset` within the Unreal Editor and include the additional inputs in the `Contribution Proximity Lights` [custom expression](https://docs.unrealengine.com/RenderingAndGraphics/Materials/ExpressionReference/Custom/index.html). Finally, connect those inputs to the corresponding `MPC_GTSettings` parameters outputs.
 
 ## See also
 
-- [Lighting](Lighting.md)
-- [Effects](Effects.md)
+- [Lighting](lighting.md)
+- [Effects](effects.md)
