@@ -28,13 +28,13 @@ These are some of this release's highlights. For a more comprehensive list of ch
 UX Tools example scenes have been moved to a separate plugin to make it easier to incorporate them
 as a starting point for new projects.
 
-![Examples plugin](Images/ReleaseNotes/ExamplesPlugin.png)
+![Examples plugin](features/mages/ReleaseNotes/ExamplesPlugin.png)
 
 ### Improved hand menu activation using user gaze
 
 The palm-up constraint has gained the _Require Gaze_ option to ensure the user is deliberately trying to use the constraint and help prevent false activations. This is particularly useful for world-locking hand menus as it prevents the menu from unintentionally re-attaching to the hand.
 
-![User gaze settings](Images/ReleaseNotes/PalmUpConstraintRequireGaze.png)
+![User gaze settings](features/Images/ReleaseNotes/PalmUpConstraintRequireGaze.png)
 
 ### Pinch slider improvements
 
@@ -44,7 +44,7 @@ The pinch slider actor has gained a number of quality of life improvements. Thes
 - GetValue, SetValue and OnSliderUpdateValue exposed directly on the actor to allow easy access to the slider's value relative to the custom min / max value. (note: if using the underlying `UxtPinchSliderComponent`, it's value will still be in the range 0-1)
 - Stepped movement along the slider's tick marks.
 
-![Stepped slider being used with simulated hands](Images/Slider/SteppedSlider.gif)
+![Stepped slider being used with simulated hands](features/Images/Slider/SteppedSlider.gif)
 
 ### Bounds control improvements
 
@@ -58,7 +58,7 @@ Manipulation constraints (i.e. derived from `UUxtTransformConstraint`) now also 
 
 | Before | After |
 | --- | --- |
-| ![Scaling bounds control actor before fix](Images/ReleaseNotes/bounds_control_scale_uniform_before.gif) | ![Scaling bounds control actor after fix](Images/ReleaseNotes/bounds_control_scale_uniform_after.gif) |
+| ![Scaling bounds control actor before fix](features/Images/ReleaseNotes/bounds_control_scale_uniform_before.gif) | ![Scaling bounds control actor after fix](Images/ReleaseNotes/bounds_control_scale_uniform_after.gif) |
 
 #### Improved affordance selection via hand ray
 
@@ -66,19 +66,19 @@ Previously, bounding box affordances were only revealed when hovering directly o
 
 | Before | After |
 | --- | --- |
-| ![Affordance selection before](Images/ReleaseNotes/AffordanceSelectionBefore.gif) | ![Affordance selection after](Images/ReleaseNotes/AffordanceSelectionAfter.gif) |
+| ![Affordance selection before](features/Images/ReleaseNotes/AffordanceSelectionBefore.gif) | ![Affordance selection after](Images/ReleaseNotes/AffordanceSelectionAfter.gif) |
 
 ### New scale constraint
 
 A new constraint (`UxtMinMaxScaleConstraint`) to limit how much an actor can be scaled down or up via bounds control and manipulation components.
 
-![Demo of the min/max scale constraint](Images/ReleaseNotes/min_max_scale_constraint.gif)
+![Demo of the min/max scale constraint](features/Images/ReleaseNotes/min_max_scale_constraint.gif)
 
 ### Improved editor categories
 
 We have reworked the editor categories used by UX Tools to produce a more clear, simple and consistent interface.
 
-![Categories' refactor comparison](Images/ReleaseNotes/categories_refactor_comparison.jpg)
+![Categories' refactor comparison](features/Images/ReleaseNotes/categories_refactor_comparison.jpg)
 
 ## Breaking changes
 

@@ -10,7 +10,7 @@ keywords: Unreal, Unreal Engine, UE4, HoloLens, HoloLens 2, Mixed Reality, devel
 
 # Welcome to MRTK Unreal
 
-![Mixed Reality Toolkit](images/Logos/MRTK_Unreal_UXT_Banner_Rounded.png)
+![Mixed Reality Toolkit](images/Logos/MRTK_Unreal_GT_Banner_Rounded.png)
 
 MRTK is an amazing open-source toolkit that has been around since the HoloLens was first released. The toolkit wouldn't be where it is today without the hard work of our contributing developer community.
 
@@ -25,7 +25,7 @@ If you're new to MRTK or Mixed Reality development, we recommend starting at the
 
 We have complete documentation for all release versions, but we recommend using the highest numbered public release branch for stability. Versions can be selected from the dropdown at the top-right of the screen:
 
-![MRTK version reference](features/images/UXTools-Doc-Versions.png)
+![MRTK version reference](ux-tools/0.11/features/images/UXTools-Doc-Versions.png)
 
 ## Getting help
 
