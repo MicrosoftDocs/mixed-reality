@@ -64,21 +64,21 @@ In order to utilize depth-based LSR, there are two important steps that develope
 
 ##### Transparent MRTK Standard shader
 
-For transparent materials using the [MRTK Standard shader](../features/README_MRTKStandardShader.md), select the material to view it in the *Inspector* window. Then click the *Fix Now* button to convert the material to write to depth (i.e Z-Write On).
+For transparent materials using the [MRTK Standard shader](../features/MRTKStandardShader.md), select the material to view it in the *Inspector* window. Then click the *Fix Now* button to convert the material to write to depth (i.e Z-Write On).
 
 Before
 
-![Depth Buffer Before Fix MRTK Standard Shader](../features/Images/Performance/DepthBufferFixNow_Before.PNG)
+![Depth Buffer Before Fix MRTK Standard Shader](../features/images/performance/DepthBufferFixNow_Before.PNG)
 
 After
 
-![Depth Buffer Fixed MRTK Standard Shader](../features/Images/Performance/DepthBufferFixNow_After.PNG)
+![Depth Buffer Fixed MRTK Standard Shader](../features/images/performance/DepthBufferFixNow_After.PNG)
 
 ##### Text Mesh Pro
 
 For Text Mesh Pro objects, select the TMP GameObject to view it in the inspector. Under the material component, switch the shader for the assigned material to use the MRTK TextMeshPro shader.
 
-![Text Mesh Pro Depth Buffer Fix](../features/Images/Performance/TextMeshPro-DepthBuffer-Fix.PNG)
+![Text Mesh Pro Depth Buffer Fix](../features/images/performance/TextMeshPro-DepthBuffer-Fix.PNG)
 
 ##### Custom shader
 
@@ -128,7 +128,7 @@ public void RemoveAnchor()
 
 ## See also
 
-- [Performance](../Performance/PerfGettingStarted.md)
+- [Performance](../performance/PerfGettingStarted.md)
 - [Environment Considerations for HoloLens](https://docs.microsoft.com/windows/mixed-reality/environment-considerations-for-hololens)
 - [Hologram Stability Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/hologram-stability)
 - [Focus point in Unity](https://docs.microsoft.com/windows/mixed-reality/focus-point-in-unity)

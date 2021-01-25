@@ -1,5 +1,5 @@
 ---
-title: README_ConstraintManager
+title: ConstraintManager
 description: Overview on Constraint Manager in MRTK
 author: CDiaz-MS
 ms.author: cadia
@@ -16,8 +16,8 @@ However users can opt for configuring the list of applied constraints manually a
 
 Currently the following MRTK UX elements are supporting constraint manager:
 
-- [Bounds control](README_BoundsControl.md)
-- [Object manipulator](README_ObjectManipulator.md)
+- [Bounds control](BoundsControl.md)
+- [Object manipulator](ObjectManipulator.md)
 
 ## Inspector properties and fields
 
@@ -28,7 +28,7 @@ Constraint manager can be operated in two modes:
 
 ### Auto constraint selection
 
-<img src="Images/ConstraintManager/AutoSelection.png" width="600" alt="Auto Selection View">
+<img src="images/constraint-manager/AutoSelection.png" width="600" alt="Auto Selection View">
 
 The default mode of constraint manager, auto constraint selection, will provide a list of all attached constraint components as well as [go to buttons](#go-to-component) and an [add constraint button](#add-constraint-to-game-object).
 
@@ -42,7 +42,7 @@ All constraints found on the object wil be listed here with a *Go to component* 
 
 ### Manual constraint selection
 
-<img src="Images/ConstraintManager/ManualSelection.png" width="600" alt="Manual Selection View">
+<img src="images/constraint-manager/ManualSelection.png" width="600" alt="Manual Selection View">
 
 If constraint manager is set to manual mode, only constraints that are linked in the constraint list are processed and applied to the transform. The list displayed will only show the user selected constraints as well as [go to buttons](#go-to-component) or options to remove or add entries.
 When enabling manual mode for the first time, constraint manager will populate the list will all available components as a starting point for selecting attached constraint components.
@@ -83,7 +83,7 @@ Specifies whether the constraint is used for near, far or both kinds of manipula
 
 ### FaceUserConstraint
 
-<img src="Images/ObjectManipulator/MRTK_Constraint_FaceUser.gif" width="400" alt="Face User">
+<img src="images/object-manipulator/MRTK_Constraint_FaceUser.gif" width="400" alt="Face User">
 
 When this constraint is attached to an object, rotation will be limited so that object will always face the user. This is useful for slates or panels. The properties for `FaceUserConstraint` are as follows:
 
@@ -93,7 +93,7 @@ Object faces away from the user if true.
 
 ### FixedDistanceConstraint
 
-<img src="Images/ObjectManipulator/MRTK_Constraint_FixedDistance.gif" width="400" alt="Fixed Distance">
+<img src="images/object-manipulator/MRTK_Constraint_FixedDistance.gif" width="400" alt="Fixed Distance">
 
 This constraint fixes the distance between the manipulated object and another object transform on manipulation start. This is useful for behaviour such as fixing the distance from the manipulated object to the head transform. The properties for `FixedDistanceConstraint` are as follows:
 
@@ -103,25 +103,25 @@ This is the other transform that the manipulated object will have a fixed distan
 
 ### FixedRotationToUserConstraint
 
-<img src="Images/ObjectManipulator/MRTK_Constraint_FixedRotationToUser.gif" width="400" alt="Fixed Rotation to User">
+<img src="images/object-manipulator/MRTK_Constraint_FixedRotationToUser.gif" width="400" alt="Fixed Rotation to User">
 
 This constraint fixes the relative rotation between the user and the manipulated object while it is being manipulated. This is useful for slates or panels as it ensures that the manipulated object always shows the same face to the user as it did at the start of manipulation. The `FixedRotationToUserConstraint` does not have any unique properties.
 
 ### FixedRotationToWorldConstraint
 
-<img src="Images/ObjectManipulator/MRTK_Constraint_FixedRotationToWorld.gif" width="400" alt="Fixed Rotation to world">
+<img src="images/object-manipulator/MRTK_Constraint_FixedRotationToWorld.gif" width="400" alt="Fixed Rotation to world">
 
 This constraint fixes the global rotation of the manipulated object while it is being manipulated. This can be useful in cases where no rotation should be imparted by manipulation. The `FixedRotationToWorldConstraint` does not have any unique properties:
 
 ### MaintainApparentSizeConstraint
 
-<img src="Images/ObjectManipulator/MRTK_Constraint_MaintainApparentSize.gif" width="400" alt="Maintain Apparent Size">
+<img src="images/object-manipulator/MRTK_Constraint_MaintainApparentSize.gif" width="400" alt="Maintain Apparent Size">
 
 When this constraint is attached to an object, no matter how far the object is from the user, it will maintain the same apparent size to the user (i.e. it will take up the same proportion of the user's field of view). This can be used to ensure that a slate or text panel remains readable while manipulating. The `MaintainApparentSizeConstraint` does not have any unique properties:
 
 ### MoveAxisConstraint
 
-<img src="Images/ObjectManipulator/MRTK_Constraint_MoveAxis.gif" width="400" alt="Constraint Move Axis">
+<img src="images/object-manipulator/MRTK_Constraint_MoveAxis.gif" width="400" alt="Constraint Move Axis">
 
 This constraint can be used to fix along which axes a manipulated object can be moved. This can be useful for manipulating objects over the surface of a plane, or along a line. The properties for `MoveAxisConstraint` are as follows:
 
@@ -139,7 +139,7 @@ Will constrain relative the manipulated object's local transform axes if true. F
 
 ### RotationAxisConstraint
 
-<img src="Images/ObjectManipulator/MRTK_Constraint_RotationAxis.gif" width="400" alt="Constraint Rotation Axis">
+<img src="images/object-manipulator/MRTK_Constraint_RotationAxis.gif" width="400" alt="Constraint Rotation Axis">
 
 This constraint can be used to fix about which axes a manipulated object can be rotated. This can be useful for keeping a manipulated object upright, but still allowing y-axis rotations, for example. The properties for `RotationAxisConstraint` are as follows:
 
@@ -157,7 +157,7 @@ Will constrain relative the manipulated object's local transform axes if true. F
 
 ### MinMaxScaleConstraint
 
-<img src="Images/ObjectManipulator/MRTK_Constraint_MinMaxScale.gif" width="400" alt="Constraint Min Max Scale">
+<img src="images/object-manipulator/MRTK_Constraint_MinMaxScale.gif" width="400" alt="Constraint Min Max Scale">
 
 This constraint allows minimum and maximum values to be set for the scale of the manipulated object. This is useful for preventing users from scaling an object too small or too large. The properties for `MinMaxScaleConstraint` are as follows:
 

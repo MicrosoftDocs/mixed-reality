@@ -19,7 +19,7 @@ Instructions on how to build and deploy for HoloLens 1 and HoloLens 2 (UWP) can 
 **Tip:** When building for WMR, HoloLens 1, or HoloLens 2, it is recommended that the build settings "Target SDK Version"
 and "Minimum Platform Version" look like they do in the picture below:
 
-![Build window](../features/Images/getting_started/BuildWindow.png)
+![Build window](../features/images/getting-started/BuildWindow.png)
 
 The other settings can be different (for example, Build Configuration/Architecture/Build Type and others can always
 be changed inside the Visual Studio solution).
@@ -66,16 +66,16 @@ The Windows Mixed Reality (WMR) headset can be used for Universal Windows Platfo
     - Make sure SteamVR is closed before launching the WMR Plugin. Launching the WMR plugin also launches SteamVR.
     - Make sure the WMR headset is plugged in.
 
-    ![WMR Plugin Search](../features/Images/BuildDeploy/WMR/SteamSearchWMRPlugin.png)
+    ![WMR Plugin Search](../features/images/build-deploy/wmr/SteamSearchWMRPlugin.png)
 
 1. Select **Launch** for the Windows Mixed Reality for SteamVR Plugin.
 
-    ![WMR Plugin](../features/Images/BuildDeploy/WMR/WMRPlugin.png)
+    ![WMR Plugin](../features/images/build-deploy/wmr/WMRPlugin.png)
 
     - SteamVR and the WMR plugin will launch and a new tracking status window for the WMR headset will appear.
     - For more information visit the [Windows Mixed Reality Steam Documentation](https://support.microsoft.com/help/4053622/windows-10-play-steamvr-games-in-windows-mixed-reality)
 
-        ![WMR Launch Appearance](../features/Images/BuildDeploy/WMR/WMRPluginActive.png)
+        ![WMR Launch Appearance](../features/images/build-deploy/wmr/WMRPluginActive.png)
 
 1. In Unity, with your MRTK scene open, navigate to **File > Build Settings**
 
@@ -85,14 +85,14 @@ The Windows Mixed Reality (WMR) headset can be used for Universal Windows Platfo
     - Select **Build**
     - Choose the location for the new build in File Explorer
 
-    ![Build Settings for Standalone](../features/Images/BuildDeploy/WMR/BuildSettingsStandaloneUnity.png)
+    ![Build Settings for Standalone](../features/images/build-deploy/wmr/BuildSettingsStandaloneUnity.png)
 
 1. A new Unity executable will be created, to launch your app select the Unity executable in File Explorer.
 
-    ![File Explorer Unity](../features/Images/BuildDeploy/WMR/FileExplorerUnityExe.png)
+    ![File Explorer Unity](../features/images/build-deploy/wmr/FileExplorerUnityExe.png)
 
 ## See also
 
-- [Android and iOS Support](../features/CrossPlatform/UsingARFoundation.md)
-- [Leap Motion Support](../features/CrossPlatform/LeapMotionMRTK.md)
-- [Detecting Platform Capabilities](../features/DetectingPlatformCapabilities.md)
+- [Android and iOS Support](../features/cross-platform/UsingARFoundation.md)
+- [Leap Motion Support](../features/cross-platform/LeapMotionMRTK.md)
+- [Detecting Platform Capabilities](../features/cross-platform/DetectingPlatformCapabilities.md)
