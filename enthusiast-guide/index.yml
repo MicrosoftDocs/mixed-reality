@@ -8,8 +8,6 @@ brand: windows
 metadata:
   title: Windows Mixed Reality VR documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Experience the thrill of virtual reality in gaming, travel, and streaming. Here you can learn how to get started and advance with VR in Windows Mixed Reality # Required; article description that is displayed in search results. < 160 chars.
-  services: service
-  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   ms.prod: mixed-reality
   ms.technology: enthusiast-guide
