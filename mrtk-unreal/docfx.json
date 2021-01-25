@@ -6,16 +6,16 @@
           "**/*.md",
           "**/*.yml"
         ],
-        "group": "group1",
-        "src": "folder1"
+        "group": "ux-tools",
+        "src": "ux-tools"
       },
       {
         "files": [
           "**/*.md",
           "**/*.yml"
         ],
-        "group": "group2",
-        "src": "folder2"
+        "group": "graphics-tools",
+        "src": "graphics-tools"
       },
       {
         "files": [
@@ -33,8 +33,8 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices.md",
-          "folder1",
-          "folder2"
+          "ux-tools",
+          "graphics-tools"
         ]
       }
     ],
@@ -45,8 +45,8 @@
           "**/*.jpg",
           "**/*.gif"
         ],
-        "group": "group1",
-        "src": "folder1"
+        "group": "ux-tools",
+        "src": "ux-tools-0.11"
       }
       {
         "files": [
@@ -77,11 +77,11 @@
     "markdownEngineName": "markdig",
     "dest": "mrtk-unreal",
     "groups": {
-      "group1": {
+      "ux-tools": {
         "dest": "ux-tools",
         "moniker_range": "> ux-tools-0.11"
       },
-      "group2": {
+      "graphics-tools": {
         "dest": "graphics-tools",
         "moniker_range": "> graphics-tools-0.1"
       }
