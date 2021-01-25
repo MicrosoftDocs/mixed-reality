@@ -38,24 +38,24 @@ In addition to default pawn movement there are virtual hands that can be control
 
   This disables head rotation with the mouse and moves the hand instead. Both hands can be controlled together by holding both control keys.
 
-  ![Simulated hands with shift button pressed](Images/InputSimulation/MoveLeftHand.png)
-  ![Simulated hands with alt button pressed](Images/InputSimulation/MoveRightHand.png)
+  ![Simulated hands with shift button pressed](images/InputSimulation/MoveLeftHand.png)
+  ![Simulated hands with alt button pressed](images/InputSimulation/MoveRightHand.png)
 
 * T/Y keys for toggling hand visibility.
 
   UX Tools project settings contain an option to "Start with Hands Enabled". Hands can still be enabled with the T/Y keys even if they are not initially visible.
 
-  ![Simulated hands with T button pressed](Images/InputSimulation/HideLeftHand.png)
-  ![Simulated hands with Y button pressed](Images/InputSimulation/HideRightHand.png)
+  ![Simulated hands with T button pressed](images/InputSimulation/HideLeftHand.png)
+  ![Simulated hands with Y button pressed](images/InputSimulation/HideRightHand.png)
 
 * Press the Left mouse button to perform a "Pinch" gesture. This also activates the "grasp" state of the hand controller, allowing object manipulation.
 
-  ![Simulated hands with left mouse button pressed](Images/InputSimulation/Pinch.png)
+  ![Simulated hands with left mouse button pressed](images/InputSimulation/Pinch.png)
 * Press the Middle mouse button to perform a "Poke" gesture. This can be used for poking buttons.
 
   Note that buttons can also be pressed by simply moving the hand towards the button, without performing any gestures.
 
-  ![Simulated hands with middle mouse button pressed](Images/InputSimulation/Poke.png)
+  ![Simulated hands with middle mouse button pressed](images/InputSimulation/Poke.png)
 * Holding the Right mouse button enables rotation of the controlled hands:
     * X axis changes yaw angle.
     * Y axis changes pitch angle.
@@ -63,11 +63,11 @@ In addition to default pawn movement there are virtual hands that can be control
 
   To reset the hand rotation press the visibility keys (T/Y) twice. This will reset the hand location and rotation to defaults.
 
-  ![Simulated hands with shift, alt, and right mouse buttons pressed](Images/InputSimulation/RotateHand.png)
+  ![Simulated hands with shift, alt, and right mouse buttons pressed](images/InputSimulation/RotateHand.png)
 * While holding Left Shift/Alt, press the Home key to perform a menu gesture, with a flat palm facing up.
   This is a quick way to open a hand menu without rotating the hand. Pressing the Home key again or a mouse button changes the pose back to default.
 
-  ![Simulated hands with shift, alt, right mouse button, and home key pressed](Images/InputSimulation/MenuHandPose.png)
+  ![Simulated hands with shift, alt, right mouse button, and home key pressed](images/InputSimulation/MenuHandPose.png)
 
 ## Hand Animation
 

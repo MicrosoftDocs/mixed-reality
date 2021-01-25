@@ -12,7 +12,7 @@ keywords: Unreal, Unreal Engine, UE4, HoloLens, HoloLens 2, Mixed Reality, devel
 
 The touchable volume component allows the user to interact with an object by touching it.
 
-![Simulated hands interacting with touchable volume component](Images/TouchableVolume/Example.gif)
+![Simulated hands interacting with touchable volume component](images/TouchableVolume/Example.gif)
 
 ## Usage
 

@@ -22,13 +22,13 @@ Create your widget as normal:
 
 After doing this, you should be able to see your widget when you play in editor. However, you will not be able to interact with the widget using the simulated hands. Stop play in editor and add a UXT widget component to your actor:
 
-![Widget component added to actor](Images/WidgetComponent.png)
+![Widget component added to actor](images/WidgetComponent.png)
 
 This should be all the set up required. When you play in editor now, you should be able to use far interaction and poke to interact with the ui elements in your widget actor.
 
-![FarGrab](Images/Widget/FarGrabWidget.gif)
+![FarGrab](images/Widget/FarGrabWidget.gif)
 
-![NearPoke](Images/Widget/NearPokeWidget.gif)
+![NearPoke](images/Widget/NearPokeWidget.gif)
 
 ## Behavior Details
 

@@ -16,7 +16,7 @@ UX Tools contains a handful of graphics and rendering techniques to implement [F
 
 Many mobile stereo headsets are [fill rate](https://en.wikipedia.org/wiki/Fillrate) bound, to reduce fill rate materials should be as simple, or inexpensive as possible. A handful of inexpensive [material instances](https://docs.unrealengine.com/en-US/Engine/Rendering/Materials/MaterialInstances/index.html) are included with the toolkit which derive from `M_SimpleLit_Color.`
 
-![MovingVisuals](Images/Graphics/GraphicsSimpleLit.png)
+![MovingVisuals](images/Graphics/GraphicsSimpleLit.png)
 
 `M_SimpleLit_Color` uses the Unreal [unlit lighting model](https://docs.unrealengine.com/en-US/Engine/Rendering/Materials/MaterialProperties/LightingModels/#unlit) to avoid extra computations, but uses the `MF_SimpleLit` material function to perform basic realtime [Blinn-Phong lighting](https://en.wikipedia.org/wiki/Blinn%E2%80%93Phong_reflection_model) on a single (virtual) directional light. The virtual directional light's properties are passed in via the `MPC_UXSettings` [material parameter collection](https://www.unrealengine.com/en-US/blog/material-parameter-collections).
 
@@ -38,13 +38,13 @@ A couple of shaders are described below in more detail, as well as any special c
 
 The `M_ButtonBox` material and `Bounding_Box.ush` shader generate glowing edges on a cube with optional circular blob. The blob appears only on the active face set with the Blob_Active_Face parameter. The shader must be used with the correct corresponding cube model. The special model enables the shader to render only the visible areas of the surfaces. The last two letters of the `SM_FrontPlate_xx` model name indicates which face is active. For example, SM_FrontPlate_PY indicates the positive y-axis.
 
-![Graphics button box on mixed reality device](Images/Graphics/GraphicsButtonBox.png)
+![Graphics button box on mixed reality device](images/Graphics/GraphicsButtonBox.png)
 
 ### Rounded Edge Thick
 
 The `M_RoundedEdgeThick` material and `Rounded_Edge_Thick.ush` shader are designed to render a quad as an outlined rounded rectangle with depth. The shader works with a special mesh that approximates the round corners using triangles and includes additional information for anti-aliased silhouette edges. UX Tools includes several models named `SM_BackPlateRoundedThick_#` where # is the number of triangles per rounded corner. Use the model with the fewest triangles that works for your scenario.
 
-![Graphic with rounded thick edge on mixed reality device](Images/Graphics/GraphicsRoundedEdgeThick.png)
+![Graphic with rounded thick edge on mixed reality device](images/Graphics/GraphicsRoundedEdgeThick.png)
 
 > [!NOTE] 
 > Note, the `SM_BackPlateRoundedThick_#` mesh and `Rounded_Edge_Thick.ush` shader assume the local y-axis is up, and not Unreal's traditional z-axis up. These assumptions were made when the `Rounded_Edge_Thick.ush` shader was authored in a separate content creation tool. To resolve these assumptions the `UxtBackPlateComponent` and `Rounded_Edge_Thick.ush` perform an additional rotation. This rotation is transparent to the end user and should not effect anything but advanced use cases. 

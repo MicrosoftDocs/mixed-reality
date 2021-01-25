@@ -23,21 +23,21 @@ In this example we are going to create a basic three button hand menu, similar t
     * Add a `UxtUIElementComponent` and set it as the root component for the actor.
     * Add a `UxtPalmUpConstraintComponent` and set _Require Flat Hand_ and _Require Gaze_ to true to prevent false activations.
 
-    ![CreateActor](Images/HandMenu/Example_CreateActor.png)
+    ![CreateActor](images/HandMenu/Example_CreateActor.png)
 
 2. Now that we have our foundation, we will add some buttons to the menu.
     * Add three `ChildActorComponent`s to the blueprint, and set their child actor class to `UxtPressableButtonActor`.
     * Move one button above and another below the center button. This will be a Z value of 3.2 and -3.2.
     * Configure the buttons using the [button options](pressable-button.md#visual-configuration) in the child actor template.
 
-    ![ButtonSetup](Images/HandMenu/Example_ButtonSetup.png)
+    ![ButtonSetup](images/HandMenu/Example_ButtonSetup.png)
 
 3. Next we want to give the buttons a seamless backplate.
     * Add a `UxtBackPlateComponent` and set its material to `MI_HoloLens2BackPlate`.
     * Set the back plate's scale to 9.6 on the Z axis to make it three buttons tall.
     * Un-check _Is Plated_ on the button actors to remove their default backplate.
 
-    ![SeamlessBackplate](Images/HandMenu/Example_SeamlessBackplate.png)
+    ![SeamlessBackplate](images/HandMenu/Example_SeamlessBackplate.png)
 
 4. Finally we want to show and hide the menu using the palm up constraint.
     * In the event graph, add the _On Constraint Activated_ and _On Constraint Deactivated_ events from the `UxtPalmUpConstraintComponent`
@@ -46,11 +46,11 @@ In this example we are going to create a basic three button hand menu, similar t
     * You can configure how far the menu will sit from the hand with the _Goal Margin_ property on the `UxtPalmUpConstraintComponent`, for this example it is set to 3.6.
     * Set the _UI Visibility_ property on the `UxtUIElementComponent` to _Hide_ to hide the menu by default.
 
-    ![EventGraph](Images/HandMenu/Example_EventGraph.png)
+    ![EventGraph](images/HandMenu/Example_EventGraph.png)
 
 5. To test out the menu in editor, press the _Home_ key while moving a hand to put it in the flat palm pose and move the hand towards the center of the screen to trigger the gaze requirement.
 
-    ![TestInEditor](Images/HandMenu/Example_TestInEditor.png)
+    ![TestInEditor](images/HandMenu/Example_TestInEditor.png)
 
 ## More information
 

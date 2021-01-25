@@ -18,7 +18,7 @@ To provide automatic text configuration UX Tools contains an actor named `UxtTex
 
 The `UxtTextRenderComponent` derives from the [TextRenderComponent](https://docs.unrealengine.com/API/Runtime/Engine/Components/UTextRenderComponent/index.html) and all properties can be accessed and altered via the top level `UxtTextRenderActor` component wrapper actor details panel:
 
-![Text actor render component panel](Images/Text/TextActor.png)
+![Text actor render component panel](images/Text/TextActor.png)
 
 It is recommended when adding new text to your level, or blueprint, that you begin with the `UxtTextRenderActor` or `UxtTextRenderComponent` and make adjustments where required. 
 
@@ -40,7 +40,7 @@ Normally fonts include Unreal's default character set but some fonts, such as *S
 2) Navigate to the "Import Options" in the details panel.
 3) Add any new characters needed to the "Chars" array property.
 
-![Font import details with chars property highlighted](Images/Text/FontChars.png)
+![Font import details with chars property highlighted](images/Text/FontChars.png)
 
 4) Select the font in the the content browser.
 5) Right click on the font and select "Reimport."
@@ -64,7 +64,7 @@ If you would like to use a custom font it is recommended that the font be import
 
 Once your font has reimported the font atlas should look similar to the below image. The characters should appear a little "blurred" because the font is stored as encoded signed distance field. You should now be able to use the font with the `M_DefaultFont` material.
 
-![Font atlas window in Unreal editor](Images/Text/FontAtlas.png)
+![Font atlas window in Unreal editor](images/Text/FontAtlas.png)
 
 ## Materials
 

@@ -22,7 +22,7 @@ Create a HandConstraintComponent on an Actor. Set the Hand property to select wh
 
 The Zone defines the general area around the hand that the actor is placed in. GoalMargin can be used to increase the distance from the hand for larger actors.
 
-![Zones of the hand constraint](Images/HandConstraint/Zones.png)
+![Zones of the hand constraint](images/HandConstraint/Zones.png)
 
 At runtime the component will move the actor towards the goal position and rotation. Movement can be disabled with the MoveOwningActor option. In that case the goal position and rotation will still be computed and can be used in blueprints.
 
@@ -33,14 +33,14 @@ The component will by default use smoothing to avoid jittering artifacts resulti
 Two main rotation modes are supported:
 
 1. _Look-at-Camera_: The actor X axis is oriented towards the player head, with Z in the global "up" direction.
-    ![Look-at-Camera orientation](Images/HandConstraint/LookAtCamera.png)
+    ![Look-at-Camera orientation](images/HandConstraint/LookAtCamera.png)
 
 1. _Hand Rotation_: The actor aligns with the palm. X axis is facing the inside of the palm, Z aligns with the direction of fingers.
-    ![Hand palm orientation](Images/HandConstraint/HandRotation.png)
+    ![Hand palm orientation](images/HandConstraint/HandRotation.png)
 
 The zone direction and the rotation can be configured independently. For example the zone offset can be aligned with the palm, while the rotation faces the camera:
 
-![Mixed rotation modes](Images/HandConstraint/MixedRotation.png)
+![Mixed rotation modes](images/HandConstraint/MixedRotation.png)
 
 ## Constraint Activation
 

@@ -12,7 +12,7 @@ keywords: Unreal, Unreal Engine, UE4, HoloLens, HoloLens 2, Mixed Reality, devel
 
 The UXT Tap To Place component is a far interaction component used to place objects against surfaces. It is especially useful for placing objects against the spacial mesh. You can initiate the tap to place behaviour by selecting the target object with far interaction. The object will then track either the head or the hand, moving along hit surfaces until it the user ends placement by making any other far tap.
 
-![Tab to place feature with simulated hands](Images/TapToPlace.gif)
+![Tab to place feature with simulated hands](images/TapToPlace.gif)
 
 To enable real world collision generation, the following values should be enabled in `ARSessionConfig > ARSettings > World Mapping`:
 

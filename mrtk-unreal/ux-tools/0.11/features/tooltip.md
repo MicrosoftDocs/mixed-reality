@@ -12,16 +12,16 @@ keywords: Unreal, Unreal Engine, UE4, HoloLens, HoloLens 2, Mixed Reality, devel
 
 Tooltips are used to convey a hint or extra information upon closer inspection of an object. They can be used to annotate objects in the physical environment.
 
-![Tooltips showing when simulated hands interact with objects](Images/Tooltips/TooltipExample.jpg)
+![Tooltips showing when simulated hands interact with objects](images/Tooltips/TooltipExample.jpg)
 
 ## How to use a tooltip
 There is an AUxtTooltipActor can be dragged and dropped in the scene to instantiate a tooltip. 
 
-![Searching for a tooltip component in Unreal editor](Images/Tooltips/TooltipStep1.jpg)
-![Dragging and dropping tooltip into a scene](Images/Tooltips/TooltipStep2.jpg)
+![Searching for a tooltip component in Unreal editor](images/Tooltips/TooltipStep1.jpg)
+![Dragging and dropping tooltip into a scene](images/Tooltips/TooltipStep2.jpg)
 
 Once instantiated, the tooltip can point to an actor/component by modifying the **Tooltip Target** property or calling the SetTarget function. It is also possible to change the tooltip content for any blueprint widget by setting the **Widget Class** property.
-![Modifying tooltip target](Images/Tooltips/TooltipStep3.jpg)
+![Modifying tooltip target](images/Tooltips/TooltipStep3.jpg)
 The spline tangents can be modified if you want to change the curve.
 
 ## General public properties

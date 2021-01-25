@@ -12,7 +12,7 @@ keywords: Unreal, Unreal Engine, UE4, HoloLens, HoloLens 2, Mixed Reality, devel
 
 A pinch slider component allows the user to continuously change a value by moving the slider thumb along a track.
 
-![ExampleSlider](Images/Slider/Example.gif)
+![ExampleSlider](images/Slider/Example.gif)
 
 ## Creating a pinch slider from scratch
 
@@ -26,7 +26,7 @@ A pinch slider component allows the user to continuously change a value by movin
 
 5. If the slider is configured correctly it will look like this:
 
-![Basic slide being used with simulated hands](Images/Slider/BasicSlider.gif)
+![Basic slide being used with simulated hands](images/Slider/BasicSlider.gif)
 
 ## Events
 
@@ -46,8 +46,8 @@ Although the slider created above is behaving correctly, it's not doing anything
 
 UXTools provides a ready to use HoloLens 2 style pinch slider called the `UxtPinchSliderActor`.
 
-![Pinch sliders being used with simulated hands](Images/Slider/PinchSliderActor.gif)
+![Pinch sliders being used with simulated hands](images/Slider/PinchSliderActor.gif)
 
 This slider can be configured and extended using Blueprints or C++. There is an example of this in `BP_HandMenuSlider` that can be found in the hand menu example scene.
 
-![Hand menu slider being used with simulated hands](Images/Slider/HandMenuSlider.gif)
+![Hand menu slider being used with simulated hands](images/Slider/HandMenuSlider.gif)

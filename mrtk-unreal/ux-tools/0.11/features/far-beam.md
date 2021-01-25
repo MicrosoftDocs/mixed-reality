@@ -19,7 +19,7 @@ If you wish to customise the look of the beam, you can set the beam material by 
 
 The default material for the far beam has the following parameters:
 
-![Far beam material interface window open](Images/FarBeamMatInterface.png)
+![Far beam material interface window open](images/FarBeamMatInterface.png)
 
 ## Far Beam Material Interface
 
