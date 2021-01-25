@@ -28,7 +28,7 @@ These are some of this release's highlights. For a more comprehensive list of ch
 UX Tools example scenes have been moved to a separate plugin to make it easier to incorporate them
 as a starting point for new projects.
 
-![Examples plugin](features/mages/ReleaseNotes/ExamplesPlugin.png)
+![Examples plugin](features/Images/ReleaseNotes/ExamplesPlugin.png)
 
 ### Improved hand menu activation using user gaze
 
@@ -50,7 +50,7 @@ The pinch slider actor has gained a number of quality of life improvements. Thes
 
 #### Constraint support
 
-Manipulation constraints (i.e. derived from `UUxtTransformConstraint`) now also apply to manipulations performed via [bounds control](bounds-control.md), making it easier to produce a consistent behavior when manipulating transforms.
+Manipulation constraints (i.e. derived from `UUxtTransformConstraint`) now also apply to manipulations performed via [bounds control](features/bounds-control.md), making it easier to produce a consistent behavior when manipulating transforms.
 
 #### Uniform scaling
 
@@ -58,7 +58,7 @@ Manipulation constraints (i.e. derived from `UUxtTransformConstraint`) now also 
 
 | Before | After |
 | --- | --- |
-| ![Scaling bounds control actor before fix](features/Images/ReleaseNotes/bounds_control_scale_uniform_before.gif) | ![Scaling bounds control actor after fix](Images/ReleaseNotes/bounds_control_scale_uniform_after.gif) |
+| ![Scaling bounds control actor before fix](features/Images/ReleaseNotes/bounds_control_scale_uniform_before.gif) | ![Scaling bounds control actor after fix](features/Images/ReleaseNotes/bounds_control_scale_uniform_after.gif) |
 
 #### Improved affordance selection via hand ray
 
@@ -66,7 +66,7 @@ Previously, bounding box affordances were only revealed when hovering directly o
 
 | Before | After |
 | --- | --- |
-| ![Affordance selection before](features/Images/ReleaseNotes/AffordanceSelectionBefore.gif) | ![Affordance selection after](Images/ReleaseNotes/AffordanceSelectionAfter.gif) |
+| ![Affordance selection before](features/Images/ReleaseNotes/AffordanceSelectionBefore.gif) | ![Affordance selection after](features/Images/ReleaseNotes/AffordanceSelectionAfter.gif) |
 
 ### New scale constraint
 
