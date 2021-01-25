@@ -6,6 +6,22 @@
           "**/*.md",
           "**/*.yml"
         ],
+        "group": "group1",
+        "src": "folder1"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "group": "group2",
+        "src": "folder2"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -16,11 +32,22 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
-          "ThirdPartyNotices.md"
+          "ThirdPartyNotices.md",
+          "folder1",
+          "folder2"
         ]
       }
     ],
     "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
+        ],
+        "group": "group1",
+        "src": "folder1"
+      }
       {
         "files": [
           "**/*.png",
@@ -47,7 +74,17 @@
     },
     "fileMetadata": {},
     "template": [],
+    "markdownEngineName": "markdig",
     "dest": "mrtk-unreal",
-    "markdownEngineName": "markdig"
+    "groups": {
+      "group1": {
+        "dest": "ux-tools",
+        "moniker_range": "> ux-tools-0.11"
+      },
+      "group2": {
+        "dest": "graphics-tools",
+        "moniker_range": "> graphics-tools-0.1"
+      }
+    }
   }
 }
