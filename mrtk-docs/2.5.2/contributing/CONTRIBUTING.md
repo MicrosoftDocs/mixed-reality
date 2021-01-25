@@ -19,7 +19,7 @@ If you have any questions, please reach out on the [mixed-reality-toolkit channe
 
 We provide several paths to enable developers to contribute to the Mixed Reality Toolkit, all starting with [creating a new Issue](https://github.com/Microsoft/MixedRealityToolkit-Unity/issues/new/choose).
 
-![Issue Type](../features/Images/Contributing/SelectIssueType.png)
+![Issue Type](../features/images/contributing/SelectIssueType.png)
 
 From here you file:
 
@@ -47,7 +47,7 @@ If you are new to to the Git workflow, [check out this introduction from Github]
 
 When adding a bug fix or feature, follow these steps:
 
-1. Implement the bug fix or feature. Instructions for building and deploying MRTK are at [BuildAndDeploy](../updates-deployment/BuildAndDeploy.md). Remember to follow the [Coding Guidelines](/CodingGuidelines.md).
+1. Implement the bug fix or feature. Instructions for building and deploying MRTK are at [BuildAndDeploy](../updates-deployment/BuildAndDeploy.md). Remember to follow the [Coding Guidelines](CodingGuidelines.md).
 1. If adding a feature, also add an example scene that demonstrates the feature.
 1. If adding an experimental feature, then writing tests and documentation are not necessary. Instead, follow [experimental feature guidelines](ExperimentalFeatures.md).
 1. Add tests to verify the bug fix / feature. Instructions for writing and running tests are at [UnitTests](UnitTests.md).

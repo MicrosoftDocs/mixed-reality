@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Documentation guidelines
 
-![MRTK Logo](../features/Images/MRTK_Logo_Rev.png)
+![MRTK Logo](../features/images/MRTK_Logo_Rev.png)
 
 This document outlines the documentation guidelines and standards for the Mixed Reality Toolkit (MRTK). This provides an introduction to technical aspects of documentation writing and generation, to highlight common pitfalls, and to describe the recommended writing style.
 

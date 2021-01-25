@@ -74,7 +74,7 @@ For details on the packages and their contents, please see [MRTK Packages](packa
 > Android and iOS development require additional package installations. For more information, see [How to configure MRTK for iOS and Android](features/CrossPlatform/UsingARFoundation.md).
 After importing the Foundation package, you may see a prompt similar to the following:
 
-<img src="features/Images/MRTK_UnitySetupPrompt.png" width="600" alt="MRTK Window">
+<img src="features/images/MRTK_UnitySetupPrompt.png" width="600" alt="MRTK Window">
 
 MRTK is attempting to set up your project for building Mixed Reality solutions by doing the following:
 
@@ -95,7 +95,7 @@ To create a **HoloLens application**, switch to the Universal Windows Platform:
 1. Select **Universal Windows Platform** in the **Platform** list
 1. Click the **Switch Platform** button
 
-    <img src="features/Images/getting_started/SwitchPlatform.png" width="600" alt="Platform Switching">
+    <img src="features/images/getting-started/SwitchPlatform.png" width="600" alt="Platform Switching">
 
 >[!NOTE]
 > The Mixed Reality Toolkit will prompt to apply recommended changes to the project when the platform is selected. Whenever the platform is switched, the appropriate settings will be checked and prompted, if necessary.
@@ -108,10 +108,10 @@ To create a **HoloLens application**, switch to the Universal Windows Platform:
 
 1. From the menu bar, select Mixed Reality Toolkit -> Add to Scene and Configure
 
-    <img src="features/Images/MRTK_ConfigureScene.png" width="300" alt="Configure MRTK">
+    <img src="features/images/MRTK_ConfigureScene.png" width="300" alt="Configure MRTK">
 
     The inspector will now show the currently active MRTK configuration profile and the profile selection dropdown, where the default profile is already preselected.
-    Profiles configure the behavior of MRTK core components and are described in more detail in the [profiles](features/Profiles/Profiles.md) article.
+    Profiles configure the behavior of MRTK core components and are described in more detail in the [profiles](features/profiles/Profiles.md) article.
 
     > [!NOTE]
     >
@@ -146,7 +146,7 @@ You are now ready to build and deploy to device! Follow the steps instructions a
 
 The Hand Interaction Examples scene is a great place to experience core spatial interactions and UX controls.
 
-[![HandInteractionExample scene](features/Images/MRTK_Examples.png)](features/README_HandInteractionExamples.md)
+[![HandInteractionExample scene](features/images/MRTK_Examples.png)](features/HandInteractionExamples.md)
 
 To try the scene, do the following steps.
 
@@ -156,7 +156,7 @@ To try the scene, do the following steps.
 
 1. You may get a prompt asking you to import "TMP Essentials".
 
-    <img src="features/Images/getting_started/MRTK_GettingStarted_TMPro.png" width="600" alt="TMP Getting Started">
+    <img src="features/images/getting-started/MRTK_GettingStarted_TMPro.png" width="600" alt="TMP Getting Started">
 
     If you get such a prompt, select the "Import TMP essentials" button. "TMP Essentials" refers to Text Mesh Pro plugin, which some of the MRTK examples use for improved text rendering. (See [Text in Unity](https://docs.microsoft.com/windows/mixed-reality/text-in-unity) for more detailed information)
 
@@ -170,7 +170,7 @@ To try the scene, do the following steps.
 
 ## Using the in-editor hand input simulation to test a scene
 
-The in-editor input simulation allows you to test virtual object behavior given a specific type of input such as [controllers (i.e. hands, motion controllers)](features/InputSimulation/InputSimulationService.md#controller-simulation) or [eyes](features/EyeTracking/EyeTracking_BasicSetup.md#simulating-eye-tracking-in-the-unity-editor).
+The in-editor input simulation allows you to test virtual object behavior given a specific type of input such as [controllers (i.e. hands, motion controllers)](features/input-simulation/InputSimulationService.md#controller-simulation) or [eyes](features/eye-tracking/EyeTracking_BasicSetup.md#simulating-eye-tracking-in-the-unity-editor).
 
 **You can open the keyboard shorcut reference by pressing CTRL+H key.**
 
@@ -189,7 +189,7 @@ How to simulate hand input:
 * Use **T/Y** keys to make the hand persistent in the view.
 * Hold **CTRL** key and move the mouse to rotate the hand.
 
-Have fun exploring the scene! You can learn more about the UI controls [in the hand interaction examples guide](features/README_HandInteractionExamples.md). Also, read through [input simulation docs](features/InputSimulation/InputSimulationService.md) to learn more about in-editor hand input simulation in MRTK.
+Have fun exploring the scene! You can learn more about the UI controls [in the hand interaction examples guide](features/HandInteractionExamples.md). Also, read through [input simulation docs](features/input-simulation/InputSimulationService.md) to learn more about in-editor hand input simulation in MRTK.
 
 Congratulations, you just used your first MRTK scene. Now onto creating your own experiences...
 
@@ -213,13 +213,13 @@ Here are some suggested next steps:
 
 * Check out [MRTK 101: How to use Mixed Reality Toolkit Unity for Basic Interactions](https://docs.microsoft.com/windows/mixed-reality/mrtk-101) to learn about how to achieve common spatial interactions such as grab, move, scale, and rotate.
 * Learn about the UX controls available in MRTK in [UI and interaction building blocks](features/Experimental/README.md#ux-building-blocks).
-* Try [MRTK Examples Hub](features/README_ExampleHub.md) and [Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) app which can be downloaded from Microsoft Store app in your HoloLens 2.
+* Try [MRTK Examples Hub](features/ExampleHub.md) and [Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) app which can be downloaded from Microsoft Store app in your HoloLens 2.
 
 * Learn how to work with the MRTK Configuration profile in the [mixed reality configuration guide](out-of-scope/MixedRealityConfigurationGuide.md).
 * Learn about the [MRTK's Architecture](architecture/Overview.md)
-* Learn about the [MRTK's Input System](features/Input/Overview.md)
-* Learn about the [MRTK's Tools](features/Experimental/README.md#tools) that will empower your mixed reality design and development.
-* Read through [input simulation guide](features/InputSimulation/InputSimulationService.md) to learn how to simulate hand input in editor.
+* Learn about the [MRTK's Input System](features/input/Overview.md)
+* Learn about the [MRTK's Tools](features/experimental/README.md#tools) that will empower your mixed reality design and development.
+* Read through [input simulation guide](features/input-simulation/InputSimulationService.md) to learn how to simulate hand input in editor.
 
 ## Getting help
 
