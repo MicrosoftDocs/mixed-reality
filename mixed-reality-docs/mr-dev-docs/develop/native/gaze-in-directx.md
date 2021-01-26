@@ -19,7 +19,7 @@ In Windows Mixed Reality, eye and head gaze input is used to determine what the 
 
 **Eye-gaze** represents the direction that the user's eyes are looking towards. The origin is located between the user's eyes.  It's available on Mixed Reality devices that include an eye tracking system.
 
-Both head and eye-gaze rays are accessible through the  [SpatialPointerPose](//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) API. Call [SpatialPointerPose::TryGetAtTimestamp](//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) to receive a new SpatialPointerPose object at the specified timestamp and [coordinate system](coordinate-systems-in-directx.md). This SpatialPointerPose contains a head-gaze origin and direction. It also contains an eye-gaze origin and direction if eye tracking is available.
+Both head and eye-gaze rays are accessible through the  [SpatialPointerPose](/uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) API. Call [SpatialPointerPose::TryGetAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) to receive a new SpatialPointerPose object at the specified timestamp and [coordinate system](coordinate-systems-in-directx.md). This SpatialPointerPose contains a head-gaze origin and direction. It also contains an eye-gaze origin and direction if eye tracking is available.
 
 ### Device support
 
@@ -52,9 +52,9 @@ Both head and eye-gaze rays are accessible through the  [SpatialPointerPose](//u
 
 ## Using head-gaze
 
-To access the head-gaze, start by calling  [SpatialPointerPose::TryGetAtTimestamp](//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) to receive a new SpatialPointerPose object. Pass the following parameters.
- - A [SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem) that represents the coordinate system you want for the head-gaze. This is represented by the *coordinateSystem* variable in the following code. For more information, visit our [coordinate systems](coordinate-systems-in-directx.md) developer guide.
- - A [Timestamp](//uwp/api/windows.graphics.holographic.holographicframeprediction.timestamp#Windows_Graphics_Holographic_HolographicFramePrediction_Timestamp) that represents the exact time of the head pose requested.  Typically, you'll use a timestamp that corresponds to the time when the current frame will be displayed. You can get this predicted display timestamp from a  [HolographicFramePrediction](//uwp/api/Windows.Graphics.Holographic.HolographicFramePrediction) object, which is accessible through the current [HolographicFrame](//uwp/api/windows.graphics.holographic.holographicframe).  This HolographicFramePrediction object is represented by the *prediction* variable in the following code.
+To access the head-gaze, start by calling  [SpatialPointerPose::TryGetAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) to receive a new SpatialPointerPose object. Pass the following parameters.
+ - A [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) that represents the coordinate system you want for the head-gaze. This is represented by the *coordinateSystem* variable in the following code. For more information, visit our [coordinate systems](coordinate-systems-in-directx.md) developer guide.
+ - A [Timestamp](/uwp/api/windows.graphics.holographic.holographicframeprediction.timestamp#Windows_Graphics_Holographic_HolographicFramePrediction_Timestamp) that represents the exact time of the head pose requested.  Typically, you'll use a timestamp that corresponds to the time when the current frame will be displayed. You can get this predicted display timestamp from a  [HolographicFramePrediction](/uwp/api/Windows.Graphics.Holographic.HolographicFramePrediction) object, which is accessible through the current [HolographicFrame](/uwp/api/windows.graphics.holographic.holographicframe).  This HolographicFramePrediction object is represented by the *prediction* variable in the following code.
 
  Once you have a valid SpatialPointerPose, the head position and forward direction are accessible as properties.  The following code  shows how to access them.
 
@@ -76,13 +76,13 @@ if (pointerPose)
 
 For your users to use eye-gaze input, each user has to go through an [eye tracking user calibration](/hololens/hololens-calibration) the first time they use the device. 
 The eye-gaze API is similar to head-gaze.
-It uses the same [SpatialPointerPose](//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) API, which provides a ray origin and direction that you can raycast against your scene.  The only difference is that you need to explicitly enable eye tracking before using it:
+It uses the same [SpatialPointerPose](/uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) API, which provides a ray origin and direction that you can raycast against your scene.  The only difference is that you need to explicitly enable eye tracking before using it:
 1. Request user permission to use eye tracking in your app.
 2. Enable the "Gaze Input" capability in your package manifest.
 
 ### Requesting access to eye-gaze input
 
-When your app is starting up, call [EyesPose::RequestAccessAsync](//uwp/api/windows.perception.people.eyespose.requestaccessasync#Windows_Perception_People_EyesPose_RequestAccessAsync) to request access to eye tracking. The system will prompt the user if needed, and return [GazeInputAccessStatus::Allowed](//uwp/api/windows.ui.input.gazeinputaccessstatus) once access has been granted. This is an asynchronous call, so it requires a bit of extra management. The following example spins up a detached std::thread to wait for the result, which it stores to a member variable called *m_isEyeTrackingEnabled*.
+When your app is starting up, call [EyesPose::RequestAccessAsync](/uwp/api/windows.perception.people.eyespose.requestaccessasync#Windows_Perception_People_EyesPose_RequestAccessAsync) to request access to eye tracking. The system will prompt the user if needed, and return [GazeInputAccessStatus::Allowed](/uwp/api/windows.ui.input.gazeinputaccessstatus) once access has been granted. This is an asynchronous call, so it requires a bit of extra management. The following example spins up a detached std::thread to wait for the result, which it stores to a member variable called *m_isEyeTrackingEnabled*.
 
 ```cpp
 using namespace winrt::Windows::Perception::People;
@@ -102,7 +102,7 @@ requestAccessThread.detach();
 
 ```
 Starting a detached thread is just one option for handling async calls. 
-You could also use the new [co_await](//windows/uwp/cpp-and-winrt-apis/concurrency) functionality supported by C++/WinRT.
+You could also use the new [co_await](/windows/uwp/cpp-and-winrt-apis/concurrency) functionality supported by C++/WinRT.
 Here's another example for asking for user permission:
 -	EyesPose::IsSupported() allows the application to trigger the permission dialog only if there's an eye tracker.
 - 	GazeInputAccessStatus m_gazeInputAccessStatus; // This is to prevent popping up the permission prompt over and over again.
@@ -147,7 +147,7 @@ This adds the following lines to the *Package* section in the appxmanifest file:
 ### Getting the eye-gaze ray
 
 Once you have received access to ET, you're free to grab the eye-gaze ray every frame.
-As with head-gaze, get the [SpatialPointerPose](//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) by calling [SpatialPointerPose::TryGetAtTimestamp](//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) with a desired timestamp and coordinate system. The SpatialPointerPose contains an [EyesPose](//uwp/api/windows.perception.people.eyespose) object through the [Eyes](//uwp/api/windows.ui.input.spatial.spatialpointerpose.eyes) property. This is non-null only if eye tracking is enabled. From there, you can check if the user in the device has an eye tracking calibration by calling [EyesPose::IsCalibrationValid](//uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid).  Next, use the [Gaze](//uwp/api/windows.perception.people.eyespose.gaze#Windows_Perception_People_EyesPose_Gaze) property to get the [SpatialRay](//uwp/api/windows.perception.spatial.spatialray) containing the eye-gaze position and direction. The Gaze property can sometimes be null, so be sure to check for this. This can happen is if a calibrated user temporarily closes their eyes.
+As with head-gaze, get the [SpatialPointerPose](/uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) by calling [SpatialPointerPose::TryGetAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) with a desired timestamp and coordinate system. The SpatialPointerPose contains an [EyesPose](/uwp/api/windows.perception.people.eyespose) object through the [Eyes](/uwp/api/windows.ui.input.spatial.spatialpointerpose.eyes) property. This is non-null only if eye tracking is enabled. From there, you can check if the user in the device has an eye tracking calibration by calling [EyesPose::IsCalibrationValid](/uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid).  Next, use the [Gaze](/uwp/api/windows.perception.people.eyespose.gaze#Windows_Perception_People_EyesPose_Gaze) property to get the [SpatialRay](/uwp/api/windows.perception.spatial.spatialray) containing the eye-gaze position and direction. The Gaze property can sometimes be null, so be sure to check for this. This can happen is if a calibrated user temporarily closes their eyes.
 
 The following code shows how to access the eye-gaze ray.
 
@@ -197,14 +197,14 @@ Visit our [fallback design considerations](../../design/eye-tracking.md#fallback
 
 ## Correlating gaze with other inputs
 
-Sometimes you may find that you need a [SpatialPointerPose](//uwp/api/windows.ui.input.spatial.spatialpointerpose) that corresponds with an event in the past. 
+Sometimes you may find that you need a [SpatialPointerPose](/uwp/api/windows.ui.input.spatial.spatialpointerpose) that corresponds with an event in the past. 
 For example, if the user does an Air Tap, your app might want to know what they were looking at. 
-For this purpose, simply using [SpatialPointerPose::TryGetAtTimestamp](//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) with the predicted frame time would be inaccurate because of the latency between system input processing and display time. 
+For this purpose, simply using [SpatialPointerPose::TryGetAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) with the predicted frame time would be inaccurate because of the latency between system input processing and display time. 
 Also, if using eye-gaze for targeting, our eyes tend to move on even before finishing a commit action. 
 This is less of an issue for a simple Air Tap, but becomes more critical when combining long voice commands with fast eye movements. 
-One way to handle this scenario is to make an additional call to  [SpatialPointerPose::TryGetAtTimestamp](//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp), using a historical timestamp that corresponds to the input event.  
+One way to handle this scenario is to make an additional call to  [SpatialPointerPose::TryGetAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp), using a historical timestamp that corresponds to the input event.  
 
-However, for input that routes through the SpatialInteractionManager, there's an easier method. The [SpatialInteractionSourceState](//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) has its own [TryGetAtTimestamp](//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygetpointerpose) function. Calling that will provide a perfectly correlated [SpatialPointerPose](//uwp/api/windows.ui.input.spatial.spatialpointerpose) without the guesswork. For more information on working with SpatialInteractionSourceStates, take a look at the [Hands and Motion Controllers in DirectX](hands-and-motion-controllers-in-directx.md) documentation.
+However, for input that routes through the SpatialInteractionManager, there's an easier method. The [SpatialInteractionSourceState](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) has its own [TryGetAtTimestamp](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygetpointerpose) function. Calling that will provide a perfectly correlated [SpatialPointerPose](/uwp/api/windows.ui.input.spatial.spatialpointerpose) without the guesswork. For more information on working with SpatialInteractionSourceStates, take a look at the [Hands and Motion Controllers in DirectX](hands-and-motion-controllers-in-directx.md) documentation.
 
 <br>
 
