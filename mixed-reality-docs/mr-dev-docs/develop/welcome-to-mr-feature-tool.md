@@ -1,3 +1,14 @@
+---
+title: Welcome to the Mixed Reality Feature Tool
+description: Learn the basics of the MR Feature Tool for HoloLens and VR development.
+author: davidkline-ms
+ms.author: v-hferrone
+ms.date: 01/27/2021
+ms.topic: article
+ms.localizationpriority: high
+keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit, mixed reality headset, windows mixed reality headset, virtual reality headset, installation, Windows, HoloLens, emulator, unreal, openxr
+---
+
 # Welcome to the Mixed Reality Feature Tool
 
 The Mixed Reality Feature Tool is a new tool that enables easy discovery and acquisition of Mixed Reality features for your Unity projects.
@@ -26,7 +37,7 @@ Here, the application's settings can be customized, help can be viewed and featu
 
 The ![settings](images/SettingsButton.png) button allows for configuring the behavior of the Mixed Reality Feature Tool
 
-For more information, please see [configuring the Mixed Reality Feature Tool](ConfiguringTheFeatureTool.md).
+For more information, please see [configuring the Mixed Reality Feature Tool](configuring-feature-tool.md).
 
 ### Help
 
@@ -44,7 +55,7 @@ Once discovery has begun, the feature package catalog is retrieved. For ease of 
 
 Once the desired features are selected, clicking the `Get features` button acquires all required packages from the catalog and are ready to import into the project.
 
-For more information, please see [discovering and acquiring features](DiscoveringAndAcquiringFeatures.md).
+For more information, please see [discovering and acquiring features](discovering-features.md).
 
 ## 3. Importing feature packages
 
@@ -66,7 +77,7 @@ Click the `Import` button to continue.
 > [!NOTE]
 > After clicking the `Import` button, if any issues remain a simple message will be displayed. The recommendation is to click No and to use the `Validate` button to view and resolve the issues.
 
-For more information, please see [importing features](ImportingFeatures.md).
+For more information, please see [importing features](importing-features.md).
 
 ## 4. Reviewing and approving project changes
 
@@ -78,7 +89,7 @@ The proposed changes to the manifest are displayed on the left and the files to 
 
 The Compare button allows for side-by-side viewing of the current manifest and the proposed changes.
 
-For more information, please see [reviewing and approving project modifications](ReviewingAndApprovingChanges.md).
+For more information, please see [reviewing and approving project modifications](reviewing-changes.md).
 
 ## 5. Project updated
 
@@ -92,8 +103,8 @@ Returning to Unity will load the new selected features into the specified projec
 
 ## See also
 
-- [Configuring the feature tool](ConfiguringTheFeatureTool.md)
-- [Discovery and acquisition](DiscoveringAndAquiringFeatures.md)
-- [Viewing feature package details](ViewingFeaturePackageDetails.md)
-- [Importing selected packages](ImportingFeatures.md)
-- [Reviewing and approving project modifications](ReviewingAndApprovingChanges.md)
+- [Configuring the feature tool](configuring-feature-tool.md)
+- [Discovery and acquisition](discovering-features.md)
+- [Viewing feature package details](viewing-package-details.md)
+- [Importing selected packages](importing-features.md)
+- [Reviewing and approving project modifications](reviewing-changes.md)

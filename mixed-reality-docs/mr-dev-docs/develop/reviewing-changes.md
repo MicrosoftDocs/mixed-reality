@@ -1,3 +1,14 @@
+---
+title: Authorizing project changes
+description: Learn how to authorize project changes the MR Feature Tool for HoloLens and VR development.
+author: davidkline-ms
+ms.author: v-hferrone
+ms.date: 01/27/2021
+ms.topic: article
+ms.localizationpriority: high
+keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit, mixed reality headset, windows mixed reality headset, virtual reality headset, installation, Windows, HoloLens, emulator, unreal, openxr
+---
+
 # Authorizing project changes
 
 Before modifying the Unity project, changes need to be reviewed and approved.
@@ -36,9 +47,9 @@ When the proposed changes are approved, the listed files will be copied into the
 
 ## Going back to the previous step
 
-From `Review and Approve`, the Mixed Reality Feature Tool allows for navigating back to the [import](ImportingFeatures.md) step. Click the `Go back` button to make changes to the selection of features to be imported.
+From `Review and Approve`, the Mixed Reality Feature Tool allows for navigating back to the [import](importing-features.md) step. Click the `Go back` button to make changes to the selection of features to be imported.
 
 ## See also
 
-- [Welcome to the Mixed Reality Feature Tool](WelcomeToTheMixedRealityFeatureTool.md)
-- [Importing selected packages](ImportingFeatures.md)
+- [Welcome to the Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md)
+- [Importing selected packages](importing-features.md)

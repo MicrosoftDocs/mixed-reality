@@ -1,3 +1,14 @@
+---
+title: Configuring the Mixed Reality Feature Tool
+description: Learn how to download and install Mixed Reality Unity packages from the MR Feature Tool for HoloLens and VR development.
+author: davidkline-ms
+ms.author: v-hferrone
+ms.date: 01/27/2021
+ms.topic: article
+ms.localizationpriority: high
+keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit, mixed reality headset, windows mixed reality headset, virtual reality headset, installation, Windows, HoloLens, emulator, unreal, openxr
+---
+
 # Configuring the Mixed Reality Feature Tool
 
 ![Settings](images/FeatureToolSettings.png)
@@ -8,7 +19,7 @@
 
 Enabling this setting causes package files to be downloaded every time they are acquired. To reduce network bandwidth usage, it is recommended to leave this option disabled.
 
-By default, previously acquired package files are not redownloaded.
+By default, previously acquired package files aren't re-downloaded.
 
 ### Package cache
 
@@ -41,4 +52,4 @@ The folder path, within the project, in which feature packages will be copied on
 
 ## See also
 
-- [Welcome to the Mixed Reality Feature Tool](WelcomeToTheMixedRealityFeatureTool.md)
+- [Welcome to the Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md)

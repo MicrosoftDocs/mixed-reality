@@ -1,3 +1,14 @@
+---
+title: Importing features
+description: Learn how to import and install features from the MR Feature Tool for HoloLens and VR development.
+author: davidkline-ms
+ms.author: v-hferrone
+ms.date: 01/27/2021
+ms.topic: article
+ms.localizationpriority: high
+keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit, mixed reality headset, windows mixed reality headset, virtual reality headset, installation, Windows, HoloLens, emulator, unreal, openxr
+---
+
 # Importing features
 
 Once the desired features have been downloaded, they can be reviewed and imported into the Unity project.
@@ -52,7 +63,7 @@ Selecting `Disable features` will automatically deselect any feature that depend
 
 ## Importing
 
-The next step to import the selected features is to click the `Import` button. This will move to the step where [final review and approval](ReviewingAndApprovingChanges.md) to update the project is performed.
+The next step to import the selected features is to click the `Import` button. This will move to the step where [final review and approval](reviewing-changes.md) to update the project is performed.
 
 > [!IMPORTANT]
 > If a validation issue remains when importing, a warning message will be displayed. It is recommended to select No, click `Validate` and resolve any issues presented.
@@ -65,7 +76,7 @@ From `Import features`, the Mixed Reality Feature Tool allows for navigating bac
 
 ## See also
 
-- [Welcome to the Mixed Reality Feature Tool](WelcomeToTheMixedRealityFeatureTool.md)
-- [Discovery and acquisition](DiscoveringAndAquiringFeatures.md)
-- [Viewing feature package details](ViewingFeaturePackageDetails.md)
-- [Reviewing and approving project modifications](ReviewingAndApprovingChanges.md)
+- [Welcome to the Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md)
+- [Discovery and acquisition](discovering-features.md)
+- [Viewing feature package details](viewing-package-details.md)
+- [Reviewing and approving project modifications](reviewing-changes.md)
