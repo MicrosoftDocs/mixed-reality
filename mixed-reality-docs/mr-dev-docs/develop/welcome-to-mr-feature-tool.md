@@ -11,19 +11,23 @@ keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit,
 
 # Welcome to the Mixed Reality Feature Tool
 
+![Getting started](images/feature-tool-banner.png)
+
 The Mixed Reality Feature Tool is a new tool that enables easy discovery and acquisition of Mixed Reality features for your Unity projects.
 
 ## System requirements
 
-The Mixed Reality Feature Tool requires the [.net 5.0 runtime](https://dotnet.microsoft.com/download/dotnet/5.0) and currently runs on Windows 10 (macOS coming soon).
+The Mixed Reality Feature Tool requires:
+
+* [.NET 5.0 runtime](https://dotnet.microsoft.com/download/dotnet/5.0) 
+* [Windows 10](https://www.microsoft.com/software-download/windows10ISO) 
+
+> [!NOTE]
+> MacOS support is coming soon, so check back!
 
 ## Getting the Mixed Reality Feature Tool
 
 The latest Mixed Reality Feature Tool release can be downloaded from GitHub at https://aka.ms/MRFeatureTool, using the Releases link. Once downloaded, unzip the file to a well known location. It is recommended to create a shortcut to the executable file.
-
-## Required software
-
-- [.NET 5 runtime](https://dotnet.microsoft.com/download/dotnet/5.0)
 
 ## 1. Getting started
 
