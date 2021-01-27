@@ -15,14 +15,14 @@ by the MRTK or by other parties.
 
 ## Creating an extension service
 
-The most efficient way to create an extension service is to use the [extension service creation wizard](../Tools/ExtensionServiceCreationWizard.md).
+The most efficient way to create an extension service is to use the [extension service creation wizard](../tools/ExtensionServiceCreationWizard.md).
 To start the extension service creation wizard, select **Mixed Reality Toolkit > Utilities > Create Extension Service**.
 
-![Extension service creation wizard](../Images/ExtensionWizard/ExtensionServiceCreationWizard.png)
+![Extension service creation wizard](../images/extension-wizard/ExtensionServiceCreationWizard.png)
 
 The wizard automates the creation of the service components and ensures the proper interface inheritance.
 
-![Components created by the extension service creation wizard](../Images/ExtensionWizard/ExtensionServiceComponents.png)
+![Components created by the extension service creation wizard](../images/extension-wizard/ExtensionServiceComponents.png)
 
 > [!Note]
 > In MRTK version 2.0.0, there is an issue in the extension service wizard where the service inspector
@@ -36,15 +36,15 @@ To be accessible by an application, the new extension service needs to be regist
 
 The extension service creation wizard can be used to register the service.
 
-![Extension service creation wizard registration](../Images/ExtensionWizard/ExtensionServiceWizardRegister.png)
+![Extension service creation wizard registration](../images/extension-wizard/ExtensionServiceWizardRegister.png)
 
 The service can also be manually registered using the Mixed Reality Toolkit configuration inspector.
 
-![Manual extension service registration](../Images/Profiles/RegisterExtensionService.png)
+![Manual extension service registration](../images/profiles/RegisterExtensionService.png)
 
 If the extension service uses a profile, please ensure that it is specified in the inspector.
 
-![Configured extension service](../Images/Profiles/ConfiguredExtensionService.png)
+![Configured extension service](../images/profiles/ConfiguredExtensionService.png)
 
 The component name and priority can also be adjusted.
 
@@ -64,6 +64,6 @@ if (MixedRealityServiceRegistry.TryGetService<INewService>(out service))
 ## See also
 
 - [Systems, extension services and data providers](../../architecture/SystemsExtensionsProviders.md)
-- [Extension service creation wizard](../Tools/ExtensionServiceCreationWizard.md)
+- [Extension service creation wizard](../tools/ExtensionServiceCreationWizard.md)
 - [IMixedRealityExtensionService](xref:Microsoft.MixedReality.Toolkit.IMixedRealityExtensionService)
 - [MixedRealityServiceRegistry](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry)

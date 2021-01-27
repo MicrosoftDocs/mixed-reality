@@ -1,5 +1,5 @@
 ---
-title: README_Dock
+title: Dock
 description: description for Dock Controls.
 author: CDiaz-MS
 ms.author: cadia 

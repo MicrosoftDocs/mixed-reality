@@ -28,7 +28,7 @@ However, this may not be the way you would like to interact at a distance and ra
 To disable the hand ray pointer, simply remove the _'DefaultControllerPointer'_ in your _Input -> Pointer_ MRTK configuration setting.
 To use eyes and hands as described above in your app, please also make sure that you meet all of the [requirements for using eye tracking](EyeTracking_BasicSetup.md).
 
-![How to remove the hand ray](../Images/EyeTracking/mrtk_setup_removehandray.jpg)
+![How to remove the hand ray](../images/eye-tracking/mrtk_setup_removehandray.jpg)
 
 You can also check out, how the input profile _EyeTrackingDemoPointerProfile_ from the eye tracking sample package is set up as a reference.
 
@@ -41,7 +41,7 @@ To avoid having the head or eye gaze pointers automatically suppressed once a ha
 PointerUtils.SetGazePointerBehavior(PointerBehavior.AlwaysOn);
 ```
 
-See [`Controllers Pointers and Focus`](../../architecture/InputSystem/ControllersPointersAndFocus.md)
+See [`Controllers Pointers and Focus`](../../architecture/ControllersPointersAndFocus.md)
 
 ---
 [Back to "Eye tracking in the MixedRealityToolkit"](EyeTracking_Main.md)

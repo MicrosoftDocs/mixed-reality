@@ -25,7 +25,7 @@ If your project consists of a single scene, the Scene System probably isn't nece
 By default, the Scene System utilizes a pair of scene objects (DefaultManagerScene and DefaultLighting scene). If either of these scenes cannot be located,
 a message will appear in the Scene System profile inspector.
 
-![Default resources message](../Images/SceneSystem/DefaultResourcesMessage.png)
+![Default resources message](../images/scene-system/DefaultResourcesMessage.png)
 
 >![Note]
 > If the project is using custom manager and lighting scenes, this message can be safely ignored.
@@ -43,7 +43,7 @@ To import use the following steps:
 - Select **Mixed Reality Toolkit Foundation**
 - Locate **Scene System Resources** in the **Samples** section
 
-  ![Import scene system resources](../Images/SceneSystem/UpmImportSceneSystemResources.png)
+  ![Import scene system resources](../images/scene-system/UpmImportSceneSystemResources.png)
 
 - Select **Import**
 
@@ -55,7 +55,7 @@ If the SceneSystemResources folder has been deleted, or was deselected during im
 - Open the **Microsoft.MixedReality.Toolkit.Foundation** package
 - Ensure that **Services/SceneSystem/SceneSystemResources** and all child options are selected
 
-  ![Reimport scene system resources](../Images/SceneSystem/ReimportSceneSystemResources.png)
+  ![Reimport scene system resources](../images/scene-system/ReimportSceneSystemResources.png)
 
 - Select **Import**
 
@@ -78,4 +78,4 @@ By default, the Scene System enforces several behaviors in the Unity editor. If 
 
 - `Editor Enforce Lighting Scene Types:` If true, the service will ensure that only the lighting-related components defined in `PermittedLightingSceneComponentTypes` are allowed in lighting scenes. Disable if you want total control over the content of lighting scenes.
 
-![Scene system editor settings](../Images/SceneSystem/MRTK_SceneSystemProfileEditorSettings.PNG)
+![Scene system editor settings](../images/scene-system/MRTK_SceneSystemProfileEditorSettings.PNG)

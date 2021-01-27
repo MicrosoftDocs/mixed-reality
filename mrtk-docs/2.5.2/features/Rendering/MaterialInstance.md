@@ -104,4 +104,4 @@ For more information please see the example usage demonstrated within the [`Clip
 
 ## See also
 
-* [MRTK Standard Shader](../README_MRTKStandardShader.md)
+* [MRTK Standard Shader](../MRTKStandardShader.md)

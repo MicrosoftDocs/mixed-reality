@@ -14,26 +14,26 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Hand Tra
 
 The _Hand Tracking profile_ is found under the _Input System profile_. It contains settings for customizing hand representation.
 
-<img src="../Images/Input/HandTrackingProfile.png" width="650px" style="display:block;" alt="Hand Tracking Profile view">
+<img src="../images/input/HandTrackingProfile.png" width="650px" style="display:block;" alt="Hand Tracking Profile view">
 
 ## Joint prefabs
 
 Joint prefabs are visualized using simple prefabs. The _Palm_ and _Index Finger_ joints are of special importance and have their own prefab, while all other joints share the same prefab.
 
-By default the hand joint prefabs are simple geometric primitives. These can be replaced if desired. If no prefab is specified at all, empty [GameObjects](href:https://docs.unity3d.com/ScriptReference/GameObject.html) are created instead.
+By default the hand joint prefabs are simple geometric primitives. These can be replaced if desired. If no prefab is specified at all, empty [GameObjects](https://docs.unity3d.com/ScriptReference/GameObject.html) are created instead.
 
 > [!WARNING]
 > Avoid using complex scripts or expensive rendering in joint prefabs, since joint objects are transformed on every frame and can have significant performance cost!
 
 Default Hand Joint Representation |  Joint Labels
 :-------------------------:|:-------------------------:
-<img src="../Images/InputSimulation/ArticulatedHandJoints.png" height="300px"  style="display:inline;" alt="Articulated Hand Joints">  |  <img src="../Images/InputSimulation/MRTK_Core_Input_Hands_JointNames.png" height="300px"  style="display:inline;" alt="Hand Joints Names">
+<img src="../images/input-simulation/ArticulatedHandJoints.png" height="300px"  style="display:inline;" alt="Articulated Hand Joints">  |  <img src="../images/input-simulation/MRTK_Core_Input_Hands_JointNames.png" height="300px"  style="display:inline;" alt="Hand Joints Names">
 
 ## Hand mesh prefab
 
 The hand mesh is used if fully defined mesh data is provided by the hand tracking device. The mesh renderable in the prefab is replaced by data from the device, so a dummy mesh such as a cube is sufficient. The material of the prefab is used for the hand mesh.
 
-<img src="../Images/InputSimulation/MRTK_Core_Input_Hands_ArticulatedHandMesh.png" width="350px"  style="display:block;"alt="Articulated Hand Mesh View">
+<img src="../images/input-simulation/MRTK_Core_Input_Hands_ArticulatedHandMesh.png" width="350px"  style="display:block;"alt="Articulated Hand Mesh View">
 
 Hand mesh display can have a noticeable performance impact, for this reason it can be disabled entirely by unchecking **Enable Hand Mesh Visualization** option.
 

@@ -22,11 +22,11 @@ The following two items must be defined first when configuring a Spatial Mesh Ob
 > [!NOTE]
 > All observers must extend the [IMixedRealitySpatialAwarenessObserver](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver) interface.
 
-![Mesh Observer General Profile Settings](../Images/SpatialAwareness/SpatialAwarenessMeshObserverProfile_TypesPlatforms.png)
+![Mesh Observer General Profile Settings](../images/spatial-awareness/SpatialAwarenessMeshObserverProfile_TypesPlatforms.png)
 
 ### General settings
 
-![Mesh Observer General Settings](../Images/SpatialAwareness/MeshObserverGeneralSettings.png)
+![Mesh Observer General Settings](../images/spatial-awareness/MeshObserverGeneralSettings.png)
 
 **Startup Behavior**
 
@@ -61,7 +61,7 @@ The observation extents define the distance from the observation point that mesh
 
 ### Physics settings
 
-![Mesh Observer Physics Settings](../Images/SpatialAwareness/MeshObserverPhysicsSettings.png)
+![Mesh Observer Physics Settings](../images/spatial-awareness/MeshObserverPhysicsSettings.png)
 
 **Physics Layer**
 
@@ -76,7 +76,7 @@ Specifies whether or not the mesh observer will recalculate the normals of the m
 
 ### Level of detail settings
 
-![Mesh Observer Level of Detail Settings](../Images/SpatialAwareness/MeshObserverLevelOfDetailSettings.png)
+![Mesh Observer Level of Detail Settings](../images/spatial-awareness/MeshObserverLevelOfDetailSettings.png)
 
 **Level of Detail**
 
@@ -99,7 +99,7 @@ Valid when using the *Custom* setting for the **Level of Detail** property and s
 
 ### Display settings
 
-![Mesh Observer Display Settings](../Images/SpatialAwareness/MeshObserverDisplaySettings.png)
+![Mesh Observer Display Settings](../images/spatial-awareness/MeshObserverDisplaySettings.png)
 
 **Display Option**
 
@@ -109,7 +109,7 @@ Specifies how spatial meshes are to be displayed by the observer. Supported valu
 * *Visible* - Mesh data will be visible using the *Visible Material*
 * *Occlusion* - Mesh data will be occlude items in scene using the *Occlusion Material*
 
-![Select the Spatial Awareness System Implementation](../Images/SpatialAwareness/MRTK_SpatialAwareness_DisplayOptions.jpg)
+![Select the Spatial Awareness System Implementation](../images/spatial-awareness/MRTK_SpatialAwareness_DisplayOptions.jpg)
 
 Spatial Observers can be [resumed/suspended at runtime via code.](UsageGuide.md#starting-and-stopping-mesh-observation)
 

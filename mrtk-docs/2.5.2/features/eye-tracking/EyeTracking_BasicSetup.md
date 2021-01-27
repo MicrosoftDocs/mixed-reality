@@ -31,7 +31,7 @@ The MRTK-provided build tooling (i.e. Mixed Reality Toolkit -> Utilities -> Buil
 can automatically enable the GazeInput capability for you. In order to do this,
 you need to make sure that the 'Gaze Input Capability' is checked on the 'Appx Build Options' tab:
 
-![MRTK Build Tools](../Images/EyeTracking/mrtk_et_buildsetup.png)
+![MRTK Build Tools](../images/eye-tracking/mrtk_et_buildsetup.png)
 
 This tooling will find the AppX manifest after the Unity build is completed and manually add the GazeInput capability.
 **Prior to Unity 2019, this tooling is NOT active when using Unity's built-in Build Window** (i.e. File -> Build Settings).
@@ -51,14 +51,14 @@ This means that if you had already built your Unity project and set up the appxm
 
 Set up the _MixedRealityToolkit_ by simply clicking _'Mixed Reality Toolkit -> Configure…'_ in the menu bar.
 
-![MRTK to Scene](../Images/EyeTracking/mrtk_setup_configure.jpg)
+![MRTK to Scene](../images/eye-tracking/mrtk_setup_configure.jpg)
 
 ### Setting up the MRTK profiles required for eye tracking
 
 After setting up your MRTK scene, you will be asked to choose a profile for MRTK.
 You can simply select _DefaultMixedRealityToolkitConfigurationProfile_ and then select the _'Copy & Customize'_ option.
 
-![MRTK Configure](../Images/EyeTracking/mrtk_setup_configprofile.jpg)
+![MRTK Configure](../images/eye-tracking/mrtk_setup_configprofile.jpg)
 
 ### Create an "eye gaze data provider"
 
@@ -69,7 +69,7 @@ You can simply select _DefaultMixedRealityToolkitConfigurationProfile_ and then 
   - Under **Type** select _'Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input'_ -> _'WindowsMixedRealityEyeGazeDataProvider'_
   - For **Platform(s)** select _'Windows Universal'_.
 
-![MRTK Eye Tracking Setup 1](../Images/EyeTracking/mrtk_setup_eyes_dataprovider.jpg)
+![MRTK Eye Tracking Setup 1](../images/eye-tracking/mrtk_setup_eyes_dataprovider.jpg)
 
 ### Simulating eye tracking in the Unity Editor
 
@@ -84,7 +84,7 @@ For this, it is better to ensure frequent tests of your eye-based interactions o
     - Clone the _'DefaultMixedRealityInputSimpulationProfile'_ to make changes to it.
     - Check the _'Simulate Eye Position'_ checkbox.
 
-    ![MRTK Eye Tracking Setup 2](../Images/EyeTracking/mrtk_setup_eyes_simulate.jpg)
+    ![MRTK Eye Tracking Setup 2](../images/eye-tracking/mrtk_setup_eyes_simulate.jpg)
 
 2. **Disable default head gaze cursor**:
 In general, it is recommended to avoid showing an eye gaze cursor or if absolutely required to make it _very_ subtle.

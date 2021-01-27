@@ -14,7 +14,7 @@ One of the main ways that the MRTK is configured is through the many profiles av
 
 For example, the Input system's behavior is governed by an input system profile, for example the `DefaultMixedRealityInputSystemProfile` (Assets/MRTK/SDK/Profiles). It's highly recommended to always modify the profile ScriptableObject assets via the in-editor inspector.
 
-<img src="../Images/Profiles/input_profile.png" width="650px" alt="Input Profile" style="display:block;">
+<img src="../images/profiles/input_profile.png" width="650px" alt="Input Profile" style="display:block;">
 <sup>Profile Inspector</sup>
 
 > [!NOTE]
@@ -39,14 +39,14 @@ The key differences between the HoloLens2 profile and the Default Profile are:
 
 **Disabled** Features:
 
-- [Boundary System](../Boundary/BoundarySystemGettingStarted.md)
-- [Teleport System](../TeleportSystem/Overview.md)
-- [Spatial Awareness System](../SpatialAwareness/SpatialAwarenessGettingStarted.md)
-- [Hand mesh visualization](../Input/HandTracking.md) (due to performance overhead)
+- [Boundary System](../boundary/BoundarySystemGettingStarted.md)
+- [Teleport System](../teleport-system/Overview.md)
+- [Spatial Awareness System](../spatial-awareness/SpatialAwarenessGettingStarted.md)
+- [Hand mesh visualization](../input/HandTracking.md) (due to performance overhead)
 
 **Enabled** Systems:
 
-- The [Eye Tracking provider](../EyeTracking/EyeTracking_Main.md)
+- The [Eye Tracking provider](../eye-tracking/EyeTracking_Main.md)
 - Eye input simulation
 
 Camera profile settings are set to match so that the editor quality and player quality are the same. This is different from the default camera profile where Opaque displays are set to a higher quality. This change means that in-editor quality will be lower, which will more closely match what will be rendered on the device.
@@ -54,4 +54,4 @@ Camera profile settings are set to match so that the editor quality and player q
 > [!NOTE]
 > The Spatial Awareness system is turned off by default based on client feedback - it is an interesting visualization to see
   initially but is typically turned off to avoid the visual distraction and the additional performance hit of
-  having it on. The system can be re-enabled by following the [instructions here](../SpatialAwareness/SpatialAwarenessGettingStarted.md).
+  having it on. The system can be re-enabled by following the [instructions here](../spatial-awareness/SpatialAwarenessGettingStarted.md).

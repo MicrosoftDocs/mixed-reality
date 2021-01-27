@@ -121,4 +121,4 @@ Finally, add a [`ClippingBox`](xref:Microsoft.MixedReality.Toolkit.Utilities.Cli
 
 ## See also
 
-- [MRTK Standard Shader](../README_MRTKStandardShader.md)
+- [MRTK Standard Shader](../MRTKStandardShader.md)

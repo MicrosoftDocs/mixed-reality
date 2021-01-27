@@ -27,7 +27,7 @@ Users can use a conventional keyboard and mouse combination to control simulated
 
 Input simulation is enabled by default in the profiles that ship with MRTK.
 
-Input simulation is an optional [Mixed Reality service](../../out-of-scope/MixedRealityServices.md) though and can be removed as a data provider in the [Input System profile](../Input/InputProviders.md).
+Input simulation is an optional [Mixed Reality service](../../architecture/MixedRealityServices.md) though and can be removed as a data provider in the [Input System profile](../input/InputProviders.md).
 
 Under the Input System Data provider configuration, the Input Simulation service can be configured with the following.
 
@@ -36,7 +36,7 @@ Under the Input System Data provider configuration, the Input Simulation service
 
 > [!NOTE]
 > The Input Simulation service can be used on other platform endpoints such as standalone by changing the **Supported Platform(s)** property to include the desired targets.
-> ![Input Simulation Supported Platforms](../Images/InputSimulation/InputSimulationSupportedPlatforms.gif)
+> ![Input Simulation Supported Platforms](../images/input-simulation/InputSimulationSupportedPlatforms.gif)
 
 ## Input simulation tools window
 
@@ -51,10 +51,10 @@ A prefab for in-editor buttons to control basic hand placement can be specified 
 
 Hand icons show the state of the simulated hands:
 
-* ![Untracked hand icon](../Images/InputSimulation/MRTK_InputSimulation_HandIndicator_Untracked.png) The hand is not tracking. Click to enable the hand.
-* ![Tracked hand icon](../Images/InputSimulation/MRTK_InputSimulation_HandIndicator_Tracked.png "Tracked hand icon") The hand is tracked, but not controlled by the user. Click to hide the hand.
-* ![Controlled hand icon](../Images/InputSimulation/MRTK_InputSimulation_HandIndicator_Controlled.png "Controlled hand icon") The hand is tracked and controlled by the user. Click to hide the hand.
-* ![Reset hand icon](../Images/InputSimulation/MRTK_InputSimulation_HandIndicator_Reset.png "Reset hand icon") Click to reset the hand to default position.
+* ![Untracked hand icon](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Untracked.png) The hand is not tracking. Click to enable the hand.
+* ![Tracked hand icon](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Tracked.png "Tracked hand icon") The hand is tracked, but not controlled by the user. Click to hide the hand.
+* ![Controlled hand icon](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Controlled.png "Controlled hand icon") The hand is tracked and controlled by the user. Click to hide the hand.
+* ![Reset hand icon](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Reset.png "Reset hand icon") Click to reset the hand to default position.
 
 ## In editor input simulation cheat sheet
 
@@ -197,10 +197,10 @@ The simulated motion controllers can be manipulated the same way articulated han
 
 ### Eye tracking
 
-[Eye tracking simulation](../EyeTracking/EyeTracking_BasicSetup.md#simulating-eye-tracking-in-the-unity-editor) can be enabled by checking the **Simulate Eye Position** option in the
+[Eye tracking simulation](../eye-tracking/EyeTracking_BasicSetup.md#simulating-eye-tracking-in-the-unity-editor) can be enabled by checking the **Simulate Eye Position** option in the
 [Input Simulation Profile](#enabling-the-input-simulation-service). This should not be used with GGV or motion controller
 style interactions (so ensure that **Default Controller Simulation Mode** is set to *Articulated Hand*).
 
 ## See also
 
-* [Input System profile](../Input/InputProviders.md).
+* [Input System profile](../input/InputProviders.md).
