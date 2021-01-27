@@ -11,44 +11,53 @@ keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit,
 
 # Configuring the Mixed Reality Feature Tool
 
+When using the Mixed Reality Feature Tool, you have access to three different settings categories that you can customize at will:
+
+* [Download settings](#download-settings)
+* [Feature settings](#feature-settings)
+* [Import settings](#import-settings)
+
 ![Settings](images/FeatureToolSettings.png)
 
 ## Download settings
 
 ### Overwrite existing package files
 
-Enabling this setting causes package files to be downloaded every time they are acquired. To reduce network bandwidth usage, it is recommended to leave this option disabled.
-
-By default, previously acquired package files aren't re-downloaded.
+Enabling this setting causes package files to be downloaded every time they're acquired. 
+* **We recommend leaving this option disabled to reduce network bandwidth usage**
+* By default, previously acquired package files aren't re-downloaded
 
 ### Package cache
 
-This setting indicates the location to which feature packages will be downloaded.
+Change this setting to update the location where feature packages are downloaded.
 
 > [!NOTE]
-> This setting is read-only in this release. Future releases may make this setting configurable.
+> This setting is **read-only** in this release. Future releases may make this setting configurable.
 
 ## Feature settings
 
 ### Include preview releases
 
-By default, preview releases are not shown in the Mixed Reality Feature Tool. Enable this setting to acquire preview releases.
+Enable this setting to acquire preview releases.
+* By default, preview releases are not shown in the Mixed Reality Feature Tool 
 
 > [!NOTE]
-> A preview release is defined as containing the "-preview" designation in the package version.
+> A preview release is defined as containing the **"-preview"** designation in the package version.
 
 ## Import settings
 
 ### Replace existing package files
 
-To reduce the impact of updating packages, by default, the Mixed Reality Feature Tool removes previous copies of the packages being imported. To retain all versions, uncheck this setting.
+By default, the Mixed Reality Feature Tool removes previous copies of the packages being imported to reduce the impact of updating packages. 
+* Uncheck this setting to retain all versions
 
 ### Project relative import path
 
-The folder path, within the project, in which feature packages will be copied on import. For example, if the project folder is `C:\GalaxyExplorer`, the fully qualified import path will be `C:\GalaxyExplorer\Packages\MixedReality`.
+Change this setting to update project folder path where feature packages are copied on import. 
+* For example, if the project folder is `C:\GalaxyExplorer`, the fully qualified import path will be `C:\GalaxyExplorer\Packages\MixedReality`.
 
 > [!NOTE]
-> The "Package cache" and "Project relative import path are read-only in this release.
+> The **Package cache** and **Project relative import path** are **read-only** in this release.
 
 ## See also
 

@@ -13,6 +13,9 @@ keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit,
 
 ![Getting started](images/feature-tool-banner.png)
 
+> [!IMPORTANT]
+> The Mixed Reality Feature Tool is only available in Unity at the moment. If you're developing in Unreal, refer to the [tools installation](install-the-tools.md) documentation.
+
 The Mixed Reality Feature Tool is a new way for developers to discover Mixed Reality feature packages and download them into Unity projects. You'll be able to search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing. Once you've validated the packages you want, the Mixed Reality Feature tool will download them into the project of your choice.
 
 ## System requirements
