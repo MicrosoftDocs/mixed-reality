@@ -65,7 +65,7 @@ Following acquisition, the complete set of packages is presented; those directly
 
 It is highly recommended to use the `Validate` button to ensure that the Unity project is able to successfully import and utilize the selected features. Explicitly validation will describe any identified issues.
 
-Prior to importing, the location of the Unity project needs to be specified. Please use the elipsis ![elipsis](image/ElipsisButton.png) button to browse to the folder.
+Prior to importing, the location of the Unity project needs to be specified. Please use the elipsis ![elipsis](images/ElipsisButton.png) button to browse to the folder.
 
 When navigating the file system, please open the folder containing the Unity project.
 

@@ -63,7 +63,7 @@ Once the desired features have been selected, click the `Get features` button. T
 > [!NOTE]
 > By default, previously acquired feature package files will not be redownloaded. To change this behavior please see [configuring the feature tool](configuring-feature-tool.md).
 
-Once downloading is complete, the Mixed Reality Feature Tool will move to the [importing features](ImportingFeatures.md) step.
+Once downloading is complete, the Mixed Reality Feature Tool will move to the [importing features](importing-features.md) step.
 
 ## Going back to the previous step
 

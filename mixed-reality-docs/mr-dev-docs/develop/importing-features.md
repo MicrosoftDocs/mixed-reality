@@ -72,7 +72,7 @@ The next step to import the selected features is to click the `Import` button. T
 
 ## Going back to the previous step
 
-From `Import features`, the Mixed Reality Feature Tool allows for navigating back to [discovery](DiscoveringAndAquiringFeatures.md). Click the `Go back` button to download additional feature packages.
+From `Import features`, the Mixed Reality Feature Tool allows for navigating back to [discovery](discovering-features.md). Click the `Go back` button to download additional feature packages.
 
 ## See also
 
