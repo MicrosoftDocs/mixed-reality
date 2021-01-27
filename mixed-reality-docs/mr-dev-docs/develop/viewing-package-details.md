@@ -11,7 +11,12 @@ keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit,
 
 # Feature package details
 
-The `Feature details` view provides information such as; a feature description, the package name, the author of the feature, the license, required dependencies and more.
+The **Feature details** view provides information on the features: 
+* Description
+* Package name
+* Author 
+* License
+* Required dependencies
 
 ![Package details](images/FeatureToolFeatureDetails.png)
 
