@@ -150,7 +150,7 @@ For convenience, two scrolling object collection prefabs are available to use. T
 
 ## See also
 
-* [Clipping Primitive](Rendering/ClippingPrimitive.md)
-* [Material Instance](Rendering/MaterialInstance.md)
+* [Clipping Primitive](rendering/ClippingPrimitive.md)
+* [Material Instance](rendering/MaterialInstance.md)
 * [Standard Shader](MRTKStandardShader.md)
 * [Object collection](ObjectCollection.md)
