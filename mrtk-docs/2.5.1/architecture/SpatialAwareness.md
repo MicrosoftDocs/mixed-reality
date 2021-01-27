@@ -10,4 +10,4 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Spatial awareness
 
-Read [Spatial Awareness Getting Started](../features/SpatialAwareness/SpatialAwarenessGettingStarted.md)
+Read [Spatial Awareness Getting Started](../features/spatial-awareness/SpatialAwarenessGettingStarted.md)

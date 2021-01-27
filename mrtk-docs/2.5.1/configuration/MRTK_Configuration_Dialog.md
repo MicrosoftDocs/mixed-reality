@@ -12,7 +12,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Unity
 
 The MRTK configuration dialog is displayed when Unity loads a project and it is determined that one or more configuration options needs the attention of the developer.
 
-![Apply Later Ignore](../features/Images/ConfigurationDialog/ConfigurationDialogHeader.png)
+![Apply Later Ignore](../features/images/configuration-dialog/ConfigurationDialogHeader.png)
 
 To apply the changes, click the **Apply** button. The **Later** button will defer the changes until the project is reloaded at a future time.
 
@@ -23,7 +23,7 @@ To apply the changes, click the **Apply** button. The **Later** button will defe
 
 All build targets share a collection of common options.
 
-![Common Settings](../features/Images/ConfigurationDialog/ConfigurationDialogCommonSettings.png)
+![Common Settings](../features/images/configuration-dialog/ConfigurationDialogCommonSettings.png)
 
 ### Force text asset serialization and Enable visible meta files
 
@@ -72,7 +72,7 @@ More information can be found on the [Resonance Audio documentation](https://res
 
 ## Universal Windows Platform settings
 
-![UWP Settings](../features/Images/ConfigurationDialog/ConfigurationDialogUWPSettings.png)
+![UWP Settings](../features/images/configuration-dialog/ConfigurationDialogUWPSettings.png)
 
 ### Enable MSBuild for Unity
 
@@ -114,7 +114,7 @@ the configurator will default to setting Graphics Jobs to 'false' (thus allowing
 
 Configuration settings to support AR applications on Android powered devices.
 
-![Android Settings](../features/Images/ConfigurationDialog/ConfigurationDialogAndroidSettings.png)
+![Android Settings](../features/images/configuration-dialog/ConfigurationDialogAndroidSettings.png)
 
 ### Disable Multi-Threaded Rendering
 
@@ -128,7 +128,7 @@ Sets the value of **Player Settings** > **Other Settings** > **Minimum API Level
 
 Configuration settings to support AR applications on iOS powered devices.
 
-![iOS Settings](../features/Images/ConfigurationDialog/ConfigurationDialogiOSSettings.png)
+![iOS Settings](../features/images/configuration-dialog/ConfigurationDialogiOSSettings.png)
 
 ### Set Required OS Version
 

@@ -101,7 +101,7 @@ In each `Update()` call, this will:
 
 ### Pointer configuration and lifecycle
 
-[Pointers can be configured](../../features/Input/Pointers.md) in the *Pointers* section of the input system profile.
+[Pointers can be configured](../../features/input/Pointers.md) in the *Pointers* section of the input system profile.
 
 The lifetime of a pointer is generally the following:
 

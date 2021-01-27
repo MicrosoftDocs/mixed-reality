@@ -76,4 +76,4 @@ The input system has some of its own terminology that are worth defining:
 
 The image below captures the high level build up (from bottom up) of the MRTK input stack:
 
-![Input System Diagram](../../features/Images/Input/MRTK_InputSystem.png)
+![Input System Diagram](../features/images/Input/MRTK_InputSystem.png)

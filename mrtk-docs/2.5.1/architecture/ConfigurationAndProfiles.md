@@ -47,7 +47,7 @@ MRTK version update.
 While profiles can be individually modified (by going to the serialized asset of the ScriptableObject),
 they are generally accessed through the MRTK inspector of the root MixedRealityToolkit scene object.
 
-![Profile](../features/Images/Profiles/input_profile.png)
+![Profile](../features/images/profiles/input_profile.png)
 
 The picture above shows the sheer volume of settings - note that each option on the left will show
 the configuration for its corresponding service.
@@ -60,7 +60,7 @@ settings based on the type of display that the application is run on (i.e. AR vs
 ### Input
 
 The largest profile for the most complex subsystem of the MRTK. The various subsystems of input will
-be covered in the [Input System](InputSystem/Terminology.md) documentation itself.
+be covered in the [Input System](Terminology.md) documentation itself.
 
 ### Teleport
 
