@@ -25,7 +25,7 @@ The proposed manifest changes can be viewed in the `Manifest` column (on the lef
 
 The `Files to be copied into the project` (on the right), lists the specific feature package files that will be copied into the Unity project.
 
-![Manifest preview](images/FilesToCopy.png)
+![Manifest preview with files to be copied](images/FilesToCopy.png)
 
 ## Compare manifests
 
