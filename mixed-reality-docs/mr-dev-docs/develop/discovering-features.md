@@ -11,7 +11,7 @@ keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit,
 
 # Discovering and acquiring features
 
-The sections in this article outline different ways to find the feature packages you're looking for in the Mixed Reality Feature Tool. Refer to the screenshot below if you need a reference for a given section:
+The sections in this article outline different ways of finding feature packages in the Mixed Reality Feature Tool. Refer to the screenshot below if you need a reference for a given section:
 
 ![Discovering features](images/FeatureToolDiscovery.png)
 
@@ -19,7 +19,7 @@ The sections in this article outline different ways to find the feature packages
 
 ### Category
 
-The Mixed Reality Feature Tool displays a collection of feature categories to make it easy to find the what you want. Expand any of the categories to display its collection of available features.
+The Mixed Reality Feature Tool displays a collection of feature categories to make it easy to find what you want. Expand any of the categories to display its collection of available features.
 
 > [!NOTE]
 > If the desired functionality cannot be found, it is recommended to check "Other features".
@@ -51,7 +51,7 @@ To check for new and updated features, click the refresh ![refresh button](image
 
 ## Select features
 
-Features are selected by expanding the desired categories, selecting the desired version and clicking the check box:
+Features are selected by expanding a category, selecting a version, and clicking the check box:
 
 ![Selected features](images/SelectedFeatures.png)
 
@@ -59,7 +59,7 @@ Each category with one or more selected features will update to display the coun
 
 ## Acquiring features
 
-Once the desired features have been selected, click **Get features** to start downloading the selected feature package files.
+Once you've chosen your features, select **Get features** to start downloading the selected feature package files.
 
 > [!NOTE]
 > By default, previously acquired feature package files won't be re-downloaded. To change this behavior please see [configuring the feature tool](configuring-feature-tool.md).

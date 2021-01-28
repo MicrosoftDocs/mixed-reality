@@ -11,21 +11,21 @@ keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit,
 
 # Importing features
 
-Once the desired features have been downloaded, they can be reviewed and imported into the Unity project. At this step, you're application window should look like the following image:
+Once your features have been downloaded, they can be reviewed and imported into the Unity project. At this step, your application window should look like the following image:
 
 ![Importing features](images/FeatureToolImport.png)
 
 ## Features list
 
 The **Features** list contains the collection of packages selected during discovery. 
-* Each feature can be selected or deselected prior to importing. Package details can be viewed using the **Details** link shown below
+* Each feature can be selected or deselected before importing. Package details can be viewed using the **Details** link shown below
 
 ![Features list](images/FeaturesList.png)
 
 ## Required dependencies list
 
-The **Required dependencies** list contains the packages that one or more of the selected features requires in order to function. This list will also contain dependencies of dependencies.
-* Each dependency can be selected or deselected prior to importing.Package details can be viewed using the **Details** link shown below
+The **Required dependencies** list contains the packages that one or more of the selected features requires to function. This list will also contain dependencies of dependencies.
+* Each dependency can be selected or deselected before importing. Package details can be viewed using the **Details** link shown below
 
 ![Dependencies list](images/RequiredDependencyList.png)
 
@@ -44,7 +44,7 @@ We highly recommend validating feature selections before importing. This step wi
 
 ![Validation issues](images/ValidationIssues.png)
 
-The Mixed Reality Feature Tool provides two automatic issue resolutions, described in the following sections), as well as the option to cancel and resolve issues manually.
+The Mixed Reality Feature Tool provides two automatic issue resolutions, described in the following sections), and the option to cancel and resolve issues manually.
 
 > [!IMPORTANT]
 > The Mixed Reality Feature Tool cannot automatically resolve issues related to required versions of Unity. These issues must be handled manually by upgrading the version of Unity used by the project or disabling the feature(s) requiring a newer version.
@@ -57,11 +57,11 @@ The **Enable dependencies** button will automatically reselect the missing depen
 
 ### Disable features
 
-Selecting **Disable features** will automatically deselect any feature that depends on one or more of the dependencies that have been unchecked. This is true for implicitly selected dependency packages as well as explicitly selected features.
+Selecting **Disable features** will automatically deselect any feature that depends on one or more of the dependencies that have been unchecked. This is true for implicitly selected dependency packages and explicitly selected features.
 
 ## Importing
 
-The next step to import the selected features is to click the **Import** button. This will move to the step where [final review and approval](reviewing-changes.md) to update the project is performed.
+Select **Import** to add your selected features and give [final approval](reviewing-changes.md) before updating your target project.
 
 > [!IMPORTANT]
 > If a validation issue remains when importing, a warning message will be displayed. It is recommended to select No, click **Validate** and resolve any issues presented.
@@ -70,7 +70,7 @@ The next step to import the selected features is to click the **Import** button.
 
 ## Going back to the previous step
 
-From **Import features**, the Mixed Reality Feature Tool allows for navigating back to [discovery](discovering-features.md). Click the **Go back** button to download additional feature packages.
+From **Import features**, the Mixed Reality Feature Tool allows for navigating back to [discovery](discovering-features.md). Select **Go back** to download other feature packages.
 
 ## See also
 

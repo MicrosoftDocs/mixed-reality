@@ -25,7 +25,7 @@ When using the Mixed Reality Feature Tool, you have access to three different se
 
 Enabling this setting causes package files to be downloaded every time they're acquired. 
 * **We recommend leaving this option disabled to reduce network bandwidth usage**
-* By default, previously acquired package files aren't re-downloaded
+* By default, previously acquired package files aren't redownloaded
 
 ### Package cache
 
@@ -39,7 +39,7 @@ Change this setting to update the location where feature packages are downloaded
 ### Include preview releases
 
 Enable this setting to acquire preview releases.
-* By default, preview releases are not shown in the Mixed Reality Feature Tool 
+* By default, preview releases aren't shown in the Mixed Reality Feature Tool 
 
 > [!NOTE]
 > A preview release is defined as containing the **"-preview"** designation in the package version.
@@ -48,8 +48,8 @@ Enable this setting to acquire preview releases.
 
 ### Replace existing package files
 
-By default, the Mixed Reality Feature Tool removes previous copies of the packages being imported to reduce the impact of updating packages. 
-* Uncheck this setting to retain all versions
+By default, the Mixed Reality Feature Tool removes previous copies of the packages being imported to reduce the file size and unnecessary computations. 
+* Uncheck this setting to keep all versions
 
 ### Project relative import path
 

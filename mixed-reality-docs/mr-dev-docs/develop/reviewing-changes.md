@@ -47,7 +47,7 @@ When the proposed changes are approved, the listed files will be copied into the
 
 ## Going back to the previous step
 
-From **Review and Approve**, the Mixed Reality Feature Tool allows for navigating back to the [import](importing-features.md) step. Click the **Go back** button to make changes to the selection of features to be imported.
+If you need to make changes to your feature selections, use **Go Back** to return to the [import](importing-features.md) step.
 
 ## See also
 

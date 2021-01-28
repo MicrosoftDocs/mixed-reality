@@ -16,7 +16,7 @@ keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit,
 > [!IMPORTANT]
 > The Mixed Reality Feature Tool is only available in Unity at the moment. If you're developing in Unreal, refer to the [tools installation](install-the-tools.md) documentation.
 
-The Mixed Reality Feature Tool is a new way for developers to discover Mixed Reality feature packages and download them into Unity projects. You'll be able to search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing. Once you've validated the packages you want, the Mixed Reality Feature tool will download them into the project of your choice.
+The Mixed Reality Feature Tool is a new way for developers to discover and add Mixed Reality feature packages into Unity projects. You can search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing. Once you've validated the packages you want, the Mixed Reality Feature tool will download them into the project of your choice.
 
 ## System requirements
 
@@ -52,7 +52,7 @@ The feature package catalog is retrieved as soon as you press Start. Features ar
 
 ![Discovery and acquisition](images/FeatureToolDiscovery.png)
 
-Once you've made your selections, click **Get features** to fetch all the accompanying required packages from the catalog. For more information, please see [discovering and acquiring features](discovering-features.md).
+Once you've made your choices, select **Get features** to fetch all the required packages from the catalog. For more information, please see [discovering and acquiring features](discovering-features.md).
 
 ## 3. Importing feature packages
 
@@ -60,14 +60,14 @@ Following acquisition, the complete set of packages is presented, along with a l
 
 ![Importing packages](images/FeatureToolImport.png)
 
-We highly recommend using the **Validate** button to ensure the Unity project is able to successfully import the selected features. After validation, you'll see a pop-up dialog with a success message or a list of identified issues.
+We highly recommend using the **Validate** button to ensure the Unity project can successfully import the selected features. After validation, you'll see a pop-up dialog with a success message or a list of identified issues.
 
-You also need to set the location of the target Unity project before you import. Use the **elipsis** button to the left of the project path field to browse. When you're done navigating your file system, open the folder containing the desired Unity project.
+You also need to set the location of the target Unity project before you import. Use the **ellipsis** button to the left of the project path field to browse. When you're done navigating your file system, open the folder containing your target Unity project.
 
 > [!NOTE]
 > The dialog that's displayed when browsing for the Unity project folder contains '_' as the file name. There must be a value for the file name to enable the folder to be selected.
 
-Click the **Import** button to continue.
+Select **Import** to continue.
 
 > [!NOTE]
 > After clicking the `Import` button, if any issues remain a simple message will be displayed. The recommendation is to click No and to use the `Validate` button to view and resolve the issues.
@@ -80,7 +80,7 @@ The final step is reviewing and approving the proposed changes to the manifest a
 
 * The proposed changes to the manifest are displayed on the left 
 * The files to be added to the project are listed to the right
-* The **Compare** button allows for side-by-side viewing of the current manifest and the proposed changes
+* The **Compare** button allows for side by side viewing of the current manifest and the proposed changes
 
 ![Authorization](images/FeatureToolApprovalRequest.png)
 
