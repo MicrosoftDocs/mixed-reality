@@ -21,7 +21,10 @@ Unlock what every human is an expert at—the three-dimensional, physical world 
 Mixed Reality cloud services like **Azure Remote Rendering** and **Azure Spatial Anchors** help developers build compelling immersive experiences on a variety of platforms. These services allow you to integrate spatial awareness into your projects when you're making applications for 3D training, predictive equipment maintenance, and design review, all in the context of your users’ environments.
 
 ### Azure Remote Rendering
-Azure Remote Rendering, or ARR, is a service that lets you render highly complex 3D models in real time and stream them to a device. ARR is currently in public preview and can be added to your Unity or Native C++ projects targeting HoloLens 2 or Windows desktop PC.
+
+[Azure Remote Rendering](https://docs.microsoft.com/azure/remote-rendering/), or ARR, is a service that lets you render highly complex 3D models in real time and stream them to a device. ARR is currently in public preview and can be added to your Unity or Native C++ projects targeting HoloLens 2 or Windows desktop PC.
+
+<br>
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Intro-to-Azure-Mixed-Reality-Services-Azure-Remote-Rendering/player]
 
@@ -38,7 +41,8 @@ As an added bonus, ARR doesn't restrict what kind of user interface you can use 
 ![Example of Azure Remote Rendering in Unity showcase app](images/showcase-app.png)
 
 ### Azure Spatial Anchors
-Azure Spatial Anchors, or ASA, is a cross-platform service that allows you to build spatially aware mixed reality applications. With Azure Spatial Anchors, you can map, persist, and share holographic content across multiple devices at real-world scale. 
+
+[Azure Spatial Anchors](https://docs.microsoft.com /azure/spatial-anchors/), or ASA, is a cross-platform service that allows you to build spatially aware mixed reality applications. With Azure Spatial Anchors, you can map, persist, and share holographic content across multiple devices at real-world scale. 
 
 ASA is a uniquely tailored solution for common use cases in Mixed Reality, including:
 * **Way-finding**: Where two or more spatial anchors could be connected to create a task list or points of interest a user must interact with.
