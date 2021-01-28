@@ -19,13 +19,13 @@ MRTK is an amazing open-source toolkit that has been around since the HoloLens w
 If you're new to MRTK or Mixed Reality development, we recommend starting at the beginning of our [Unreal development journey](https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview), which was specifically created to walk you through installation, core concepts, and usage. 
 
 > [!CAUTION]
-> The Unreal development journey currently uses **UX Tools 0.11.x** and **Unreal 4.26.0 or later**. If you're working with other configurations it's still recommended that you start there, but you can also refer to the **[installation instructions](ux-tools/ux-tools-0.11/installation.md)**.
+> The Unreal development journey currently uses **UX Tools 0.11.x** and **Unreal 4.26.0 or later**. If you're working with other configurations it's still recommended that you start there, but you can also refer to the **[installation instructions](ux-tools/installation.md)**.
 
 ## Documentation Versioning
 
 We have complete documentation for all release versions, but we recommend using the highest numbered public release branch for stability. Versions can be selected from the dropdown at the top-right of the screen:
 
-![MRTK version reference](ux-tools/ux-tools-0.11/features/images/UXTools-Doc-Versions.png)
+![MRTK version reference](ux-tools/features/images/UXTools-Doc-Versions.png)
 
 ## Getting help
 

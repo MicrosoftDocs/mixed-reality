@@ -10,7 +10,7 @@ keywords: Unreal, Unreal Engine, UE4, HoloLens, HoloLens 2, Mixed Reality, devel
 
 # Welcome to Graphics Tools
 
-![Mixed Reality Toolkit](../../images/Logos/MRTK_Unreal_GT_Banner_Rounded.png)
+![Mixed Reality Toolkit](../images/Logos/MRTK_Unreal_GT_Banner_Rounded.png)
 
 Graphics Tools is the second MRTK-Unreal component to be released and is currently only supported on HoloLens 2. The component plugin includes code, blueprints and example assets created to help improve the visual fidelity of Mixed Reality applications while staying within performance budgets.
 
