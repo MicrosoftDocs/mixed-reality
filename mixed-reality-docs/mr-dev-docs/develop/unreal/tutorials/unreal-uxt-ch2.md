@@ -14,7 +14,7 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, tut
 In the first tutorial, you'll start out with a new Unreal project and enable the HoloLens plugin, create and light a level, and add chess pieces. You'll be using our pre-made assets for all 3D objects and materials, so don't worry about modeling anything yourself. By the end of this tutorial, you'll have a blank canvas that's ready for mixed reality.
 
 > [!IMPORTANT]
-> Make sure you have all the prerequisites from the [Getting Started](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch1) page.
+> Make sure you have all the prerequisites from the [Getting Started](/windows/mixed-reality/unreal-uxt-ch1) page.
 
 ## Objectives
 
@@ -24,7 +24,7 @@ In the first tutorial, you'll start out with a new Unreal project and enable the
 
 ## Creating a new Unreal project
 
-The first thing you need is a project to work with. If you're a first-time Unreal developer, you'll need to [download supporting files](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/tutorials/unreal-uxt-ch6#packaging-and-deploying-the-app-via-device-portal) from the Epic Launcher.
+The first thing you need is a project to work with. If you're a first-time Unreal developer, you'll need to [download supporting files](./unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal) from the Epic Launcher.
 
 1. Launch Unreal Engine
 

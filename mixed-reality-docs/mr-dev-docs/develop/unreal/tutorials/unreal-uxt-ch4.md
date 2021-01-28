@@ -51,7 +51,7 @@ In our case, adding a Hand Interaction Actor to **MRPawn** will:
 - Provide articulated hand input events that can be manipulated through the Pawn.
 - Allow far interaction input events through hand rays extending from the palms of the virtual hands.
 
-We recommend reading through the [documentation](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/HandInteraction.html) on hand interactions before continuing.
+We recommend reading through the [documentation](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html) on hand interactions before continuing.
 
 Once you're ready, open the **MRPawn** Blueprint and go to the **Event Graph**.
 
@@ -80,7 +80,7 @@ Make sure the connections match the following screenshot, but feel free to drag 
 
 ![Complete UXT Hand Interaction Actor setup](images/unreal-uxt/4-fingerptrs.PNG)
 
-You can find more information about Hand Interaction Actors in the [UX Tools documentation](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/HandInteraction.html).
+You can find more information about Hand Interaction Actors in the [UX Tools documentation](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html).
 
 Now the virtual hands in the project have a way of selecting objects, but they still can't manipulate them. Your last task before testing the app is to add Manipulator components to the actors in the scene.
 

@@ -23,7 +23,7 @@ Try the following steps:
 * Restart your PC and try again. You may need to repeat several times or run the Windows Update troubleshooter to clear pending updates.
 
 > [!NOTE]
-> * If you're on an enterprise managed network, check with your administrator. They might need to enable Windows Mixed Reality. Looking for the IT pro instructions? See **[this article](https://docs.microsoft.com/windows/application-management/manage-windows-mixed-reality)**.
+> * If you're on an enterprise managed network, check with your administrator. They might need to enable Windows Mixed Reality. Looking for the IT pro instructions? See **[this article](/windows/application-management/manage-windows-mixed-reality)**.
 > * If your Wi-Fi network connection is set to metered, change it to unmetered. **[Learn more](https://support.microsoft.com/help/4028458)**
 
 ## I get a message that says "Something went wrong, and we couldn't start Windows Mixed Reality."

@@ -13,6 +13,11 @@ keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reali
 > [!IMPORTANT]
 > This guidance is specific to Holographic Remoting on HoloLens 2.
 
+## Version 2.4.1 (January 22, 2021) <a name="v2.4.1"></a>
+
+* Fixed issue with SpatialAnchorManager::RequestStoreAsync not working reliably when called while connecting.
+* Fixed issue with SpatialAnchorManager::TrySave not correctly saving an anchor if anchor in question is not locatable.
+
 ## Version 2.4.0 (December 1, 2020) <a name="v2.4.0"></a>
 
 * Holographic Remoting now support writing remote apps using the [OpenXR API](../native/openxr.md). Check out [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md) to get started.
@@ -34,7 +39,7 @@ keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reali
 
 ## Version 2.2.2 (July 10, 2020) <a name="v2.2.2"></a>
 
-* Fixed issue with [HolographicCamera.LeftViewportParameters](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.leftviewportparameters) and [HolographicCamera.RightViewportParameters](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.rightviewportparameters) not returning any hidden area mesh vertices when streaming from a Windows Mixed Reality headset.
+* Fixed issue with [HolographicCamera.LeftViewportParameters](/uwp/api/windows.graphics.holographic.holographiccamera.leftviewportparameters) and [HolographicCamera.RightViewportParameters](/uwp/api/windows.graphics.holographic.holographiccamera.rightviewportparameters) not returning any hidden area mesh vertices when streaming from a Windows Mixed Reality headset.
 * Fixed crash, which can happen with poor network connection.
 
 ## Version 2.2.1 (July 6, 2020) <a name="v2.2.1"></a>
@@ -47,14 +52,14 @@ lease updated to at least version 2.2.1.
 ## Version 2.2.0 (July 1, 2020) <a name="v2.2.0"></a>
 
 * The Holographic Remoting player can now be installed on PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md), making it possible to stream to immersive headsets.
-* [Motion controllers](../../design/motion-controllers.md) are now supported by Holographic Remoting and controller-specific data can be retrieved via [SpatialInteractionSource.Controller](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsource.controller#Windows_UI_Input_Spatial_SpatialInteractionSource_Controller).
-* [SpatialStageFrameOfReference](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference) is now supported and the current stage can be retrieved via [SpatialStageFrameOfReference.Current](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.current). Also, a new stage can be requested via [SpatialStageFrameOfReference.RequestNewStageAsync](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.requestnewstageasync).
+* [Motion controllers](../../design/motion-controllers.md) are now supported by Holographic Remoting and controller-specific data can be retrieved via [SpatialInteractionSource.Controller](/uwp/api/windows.ui.input.spatial.spatialinteractionsource.controller#Windows_UI_Input_Spatial_SpatialInteractionSource_Controller).
+* [SpatialStageFrameOfReference](/uwp/api/windows.perception.spatial.spatialstageframeofreference) is now supported and the current stage can be retrieved via [SpatialStageFrameOfReference.Current](/uwp/api/windows.perception.spatial.spatialstageframeofreference.current). Also, a new stage can be requested via [SpatialStageFrameOfReference.RequestNewStageAsync](/uwp/api/windows.perception.spatial.spatialstageframeofreference.requestnewstageasync).
 * In previous versions, pose prediction was handled on the player side by the Holographic Remoting player. Starting with version 2.2.0, Holographic Remoting has time synchronization, and prediction is fully done by the remote application. Users should also expect improved hologram stability under difficult network situations.
 
 ## Version 2.1.3 (May 25, 2020) <a name="v2.1.3"></a>
 
-* Changed behavior of [HolographicSpace.CameraAdded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) event. In previous versions, it was **not** guaranteed that an added [HolographicCamera](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera) also has a valid [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose) when creating the next frame via [HolographicSpace.CreateNextFrame](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.createnextframe). Starting with version 2.1.3, [HolographicSpace.CameraAdded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) is synchronized with pose data coming from the Holographic Remoting Player. Users can expect that when a camera is added there is also a valid [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose) available for that camera on the next frame.
-* Added **Disabled** to DepthBufferStreamResolution, which can be used to disable depth buffer streaming via RemoteContext.ConfigureDepthVideoStream. Note, if used [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer) will fail with *E_ILLEGAL_METHOD_CALL*.
+* Changed behavior of [HolographicSpace.CameraAdded](/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) event. In previous versions, it was **not** guaranteed that an added [HolographicCamera](/uwp/api/windows.graphics.holographic.holographiccamera) also has a valid [HolographicCameraPose](/uwp/api/windows.graphics.holographic.holographiccamerapose) when creating the next frame via [HolographicSpace.CreateNextFrame](/uwp/api/windows.graphics.holographic.holographicspace.createnextframe). Starting with version 2.1.3, [HolographicSpace.CameraAdded](/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) is synchronized with pose data coming from the Holographic Remoting Player. Users can expect that when a camera is added there is also a valid [HolographicCameraPose](/uwp/api/windows.graphics.holographic.holographiccamerapose) available for that camera on the next frame.
+* Added **Disabled** to DepthBufferStreamResolution, which can be used to disable depth buffer streaming via RemoteContext.ConfigureDepthVideoStream. Note, if used [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer) will fail with *E_ILLEGAL_METHOD_CALL*.
 * The Holographic Remoting Player's startup screen has been redesigned and now doesn't block the users view.
 * Stability improvements and bug fixes.
 
@@ -71,7 +76,7 @@ lease updated to at least version 2.2.1.
 ## Version 2.1.0 (March 11, 2020) <a name="v2.1.0"></a>
 
 * Switched network transport to use [RTP](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol) via UDP. Secure connections use [SRTP](https://en.wikipedia.org/wiki/Secure_Real-time_Transport_Protocol) now. Note, the [Holographic Remoting Player](holographic-remoting-player.md) is still compatible with all previously release Holographic Remoting versions. To benefit from the new network transport both, the Holographic Remoting Player and the remote app in question, have to use version 2.1.0.
-* Added support for [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_). 
+* Added support for [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_). 
 
 ## Version 2.0.20 (February 2, 2020) <a name="v2.0.20"></a>
 
@@ -79,7 +84,7 @@ lease updated to at least version 2.2.1.
 
 ## Version 2.0.18 (December 17, 2019) <a name="v2.0.18"></a>
 
-* Added support for [HolographicViewConfiguration](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicviewconfiguration)
+* Added support for [HolographicViewConfiguration](/uwp/api/windows.graphics.holographic.holographicviewconfiguration)
 * Fixed various bugs that lead to crashes.
 * Fixed bug where a HolographicSpace.CameraAdded callback was required for a HolographicCamera to get accepted and show up as added camera in the HolographicFrame.
 
@@ -104,7 +109,7 @@ lease updated to at least version 2.2.1.
 
 ## Version 2.0.9 (September 19, 2019) <a name="v2.0.9"></a>
 
-* Added support for [SpatialAnchorExporter](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchorexporter)
+* Added support for [SpatialAnchorExporter](/uwp/api/windows.perception.spatial.spatialanchorexporter)
 * Added new interface ```IPlayerContext2``` (implemented by ```PlayerContext```) providing the following members:
   - [BlitRemoteFrameTimeout](holographic-remoting-create-player.md#BlitRemoteFrameTimeout)  property.
 * Added ```Failed_RemoteFrameTooOld``` value to ```BlitResult```
@@ -112,7 +117,7 @@ lease updated to at least version 2.2.1.
 
 ## Version 2.0.8 (August 20, 2019) <a name="v2.0.8"></a>
 
-* Fixed crash when calling [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer) with a [IDXGISurface2](https://docs.microsoft.com/windows/win32/api/dxgi1_2/nn-dxgi1_2-idxgisurface2) as parameter.
+* Fixed crash when calling [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer) with a [IDXGISurface2](/windows/win32/api/dxgi1_2/nn-dxgi1_2-idxgisurface2) as parameter.
 * Stability and reliability improvements
 
 ## Version 2.0.7 (July 26, 2019) <a name="v2.0.7"></a>
@@ -125,5 +130,5 @@ lease updated to at least version 2.2.1.
 * [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md)
 * [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)
 * [Holographic Remoting troubleshooting and limitations](holographic-remoting-troubleshooting.md)
-* [Holographic Remoting software license terms](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Holographic Remoting software license terms](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839)

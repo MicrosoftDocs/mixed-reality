@@ -8,8 +8,6 @@ brand: windows
 metadata:
   title: Windows Mixed Reality VR documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Experience the thrill of virtual reality in gaming, travel, and streaming. Here you can learn how to get started and advance with VR in Windows Mixed Reality # Required; article description that is displayed in search results. < 160 chars.
-  services: guidance
-  ms.service: guidance #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   ms.prod: mixed-reality
   ms.technology: enthusiast-guide
@@ -119,6 +117,6 @@ additionalContent:
         # Card
         - title: Develop in Windows Mixed Reality
           summary: Development and design documentation
-          url: https://docs.microsoft.com/en-us/windows/mixed-reality/develop/development?tabs=unity
+          url: /windows/mixed-reality/develop/development?tabs=unity
   # footer (optional)
   footer: "Found a problem on our site? [Let us know!](https://forums.hololens.com/categories/using-windows-mixed-reality)"

@@ -37,7 +37,7 @@ After starting a new immersive project, you'll need some basic building blocks t
 
 [!INCLUDE[](../includes/unity-building-blocks-wmr.md)]
 
-### 3. Platform capabilities and APIs
+### 3. Advanced features
 
 Other key features that play a role in immersive applications are available through Unity APIs without any extra packages or setup. After diving into the more advanced capabilities that Unity offers, you'll be able to build deeper, complex VR apps.
 
@@ -61,14 +61,14 @@ A developers job is never done, especially when learning a new tool or SDK. The 
 
 If you have existing apps that you'd like to port over, the articles listed below are your next stop:
 
-* [Porting VR apps to Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/porting-guides?tabs=project)
-* [Updating SteamVR apps for Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/updating-your-steamvr-application-for-windows-mixed-reality)
+* [Porting VR apps to Windows Mixed Reality](../porting-apps/porting-guides.md?tabs=project)
+* [Updating SteamVR apps for Windows Mixed Reality](../porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md)
 
 ### Additional resources
 
 Before going out into the world of mixed reality on your own, we recommend taking a look at the extra documentation below. 
 
-* [VR enthusiast guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/vr-journey)
+* [VR enthusiast guide](/windows/mixed-reality/enthusiast-guide/vr-journey)
 * [Unity Asset Store](https://www.assetstore.unity3d.com)
 
 ## See also 

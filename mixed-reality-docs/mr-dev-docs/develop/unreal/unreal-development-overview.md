@@ -43,12 +43,14 @@ The [Mixed Reality Toolkit for Unreal](https://github.com/microsoft/MixedReality
 
 * [UX Tools for Unreal](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-ux-tools) is the first plugin to be released and is currently only supported on HoloLens 2. The plugin includes C++ code, Blueprints, and example assets of common UX features for input simulation, hand interactions, surface magnetism and more.
 
+* [Graphics Tools for Unreal](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/) is a UE game plugin with code, blueprints and example assets created to help improve the visual fidelity of Mixed Reality applications while staying within performance budgets.
+
 [!INCLUDE[](../includes/unreal-building-blocks.md)]
 
 > [!NOTE]
 > You can dive into the **[UX Tools for Unreal GitHub](https://github.com/microsoft/MixedReality-UXTools-Unreal)** repository for more details.
 
-### 3. Platform capabilities and APIs
+### 3. Advanced features
 
 Other key features that play a role in mixed reality applications are available without any extra packages or setup. These features can be added to Unreal projects with or without MRTK installed. After diving into these more advanced capabilities, you'll be able to build more complex Mixed Reality apps.
 
@@ -76,7 +78,7 @@ A developer's job is never done, especially when learning a new tool or SDK. The
 
 ### Debugging
 
-If you're looking to debug the application while it's running on device with Visual Studio, follow these [instructions](https://docs.microsoft.com/visualstudio/debugger/debug-installed-app-package#remote).
+If you're looking to debug the application while it's running on device with Visual Studio, follow these [instructions](/visualstudio/debugger/debug-installed-app-package#remote).
 
 ### Performance
 
@@ -98,7 +100,7 @@ Developing for mixed reality comes with performance checkpoints that depend on t
 | Spatial audio | 4.23 | ✔️ |
 | Spectator Screen support for streaming | 4.24 |
 | Planar LSR over streaming | 4.24 |
-| [Sample apps](unreal-samples.md) | 4.24 | ✔️ |
+| [Sample apps](../features-and-samples.md) | 4.24 | ✔️ |
 | Mobile multi-View: Performance hits 60 fps | 4.25 | ✔️ |
 | 3rd camera render | 4.25 |
 | Streaming from a packaged desktop app | 4.25.1 | ✔️ |

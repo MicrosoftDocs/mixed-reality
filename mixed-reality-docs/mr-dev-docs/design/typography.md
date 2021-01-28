@@ -32,9 +32,9 @@ Build contrast and hierarchy by using different type sizes and weights. Defining
 
 ### Limit your fonts
 
-Avoid using more than two different font families in a single context. Too many fonts will break the harmony and consistency of your experience and make it harder to consume information. In HoloLens, since the information is overlaid on top of the physical environment, using too many font styles will degrade the experience. Segoe UI is the font for all Microsoft digital designs. It's used consistently in the Windows Mixed Reality shell. You can download the Segoe UI font file from the [Windows design toolkit page](https://docs.microsoft.com/windows/uwp/design-downloads/).
+Avoid using more than two different font families in a single context. Too many fonts will break the harmony and consistency of your experience and make it harder to consume information. In HoloLens, since the information is overlaid on top of the physical environment, using too many font styles will degrade the experience. Segoe UI is the font for all Microsoft digital designs. It's used consistently in the Windows Mixed Reality shell. You can download the Segoe UI font file from the [Windows design toolkit page](/windows/uwp/design-downloads/).
 
-[More information about the Segoe UI typeface](https://docs.microsoft.com/windows/uwp/design/style/typography)
+[More information about the Segoe UI typeface](/windows/uwp/design/style/typography)
 
 ### Avoid thin font weights
 
@@ -127,4 +127,4 @@ Segoe UI (the default font for Windows) works well in most cases. Avoid using li
 ## See also
 
 * [Text in Unity](../develop/unity/text-in-unity.md)
-* [Color, light, and materials](../color,-light-and-materials.md)
+* [Color, light, and materials](./color-light-and-materials.md)

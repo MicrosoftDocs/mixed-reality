@@ -35,7 +35,7 @@ Below are a few examples for how you as a mixed reality developer can benefit fr
     </colgroup>
     <tr>
         <td><strong>Input model</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
@@ -136,7 +136,7 @@ This is known as the commit step of the input model.
 The following commit methods are supported:
 - Air tap hand gesture (that is, raise your hand in front of you and bring together your index finger and thumb)
 - Say _"select"_ or one of the targeted voice commands
-- Press a single button on a [HoloLens Clicker](https://docs.microsoft.com/hololens/hololens1-clicker)
+- Press a single button on a [HoloLens Clicker](/hololens/hololens1-clicker)
 - Press the 'A' button on an Xbox gamepad
 - Press the 'A' button on an Xbox adaptive controller
 
@@ -304,4 +304,3 @@ There are three things that you should consider:
 * [Hands - Point and commit](point-and-commit.md)
 * [Instinctual interactions](interaction-fundamentals.md)
 * [Voice input](voice-input.md)
-

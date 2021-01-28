@@ -136,4 +136,5 @@ In this tutorial, you learned how to use the MRTK's Directional Indicator Solver
 
 To learn more about these and other solvers included with the MRTK,  you can refer to the [Solvers](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
-[Next Tutorial: 6. Creating user interfaces](mr-learning-base-06.md)
+> [!div class="nextstepaction"]
+>[Next Tutorial: 6. Creating user interfaces](mr-learning-base-06.md)

@@ -43,7 +43,7 @@ Our current recommendation for Unreal development with Mixed Reality is **Unreal
 
 ### HoloLens (1st Gen) Unity apps to HoloLens 2
 
-If you have an existing HoloLens (1st Gen) Unity application that you'd like to port over to a HoloLens 2, follow the instructions in our [HoloLens porting article](../unity/mrtk-porting-guide.md).
+If you have an existing HoloLens (1st Gen) Unity application that you'd like to port over to a HoloLens 2, follow the instructions in our [HoloLens porting article](./porting-hl1-hl2.md).
 
 ### Windows Mixed Reality headsets
 
@@ -56,4 +56,3 @@ For any SteamVR experiences that you want to update for Windows Mixed Reality he
 ### 2D Universal Windows applications
 
 If you have an existing 2D UWP app that you'd like to port to either a Windows Mixed Reality immersive headset or HoloLens, follow our [porting 2D UWP apps for Windows Mixed Reality](building-2d-apps.md) instructions.
-

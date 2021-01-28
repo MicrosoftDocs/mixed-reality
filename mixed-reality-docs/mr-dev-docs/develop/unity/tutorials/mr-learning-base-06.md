@@ -92,17 +92,17 @@ In the Hierarchy window, rename the object to **Menu**, then expand its **Button
 
 ![Unity with Menu object selected and ButtonCollection object expanded](images/mr-learning-base/base-06-section2-step1-2.png)
 
-Rename the first button to **Indicator**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:
+Rename the first button in the ButtonCollection to Indicator, then in the Inspector window, configure the Button Config Helper (Script) component as follows:
 
 * Change the **Main Label Text** to match the name of the button
-* Assign the **Indicator** object to the **None (Object)** field
+* Assign the Indicator object that looks like a chevron, to the None (Object) field
 * From the **No Function** dropdown, select **GameObject** > **SetActive (bool)** to set this function as the action to be executed when the event is triggered
 * Verify that the argument checkbox is **checked**
 * Change the **Icon** to the 'search' icon
 
 ![Unity with Indicator button object Button Config Helper configured](images/mr-learning-base/base-06-section2-step1-3.png)
 
-In the Hierarchy window, select the **Indicator** object, then in the Inspector window:
+To disable the chevron Indicator object, in the Hierarchy window, select the Indicator object that looks like chevron, then in the Inspector window:
 
 * Uncheck the checkbox next to its name to make it inactive by default
 * Use the **Add Component** button to add the **Directional Indicator Controller (Script)** component
@@ -110,7 +110,7 @@ In the Hierarchy window, select the **Indicator** object, then in the Inspector 
 ![Unity with Indicator object selected, disabled, and DirectionalIndicatorController component added](images/mr-learning-base/base-06-section2-step1-4.png)
 
 > [!NOTE]
-> Now, when the app starts, the Indicator is disabled by default and can be enabled by pressing the Indicator button.
+> Now, when the app starts, the chevron Indicator is disabled by default and can be enabled by pressing the Indicator button.
 
 Rename the second button to **TapToPlace**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:
 
@@ -164,7 +164,7 @@ In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **Featu
 In the Hierarchy window, expand the RoverExplorer > **RoverParts** object and select all its child rover part objects, then in the Inspector window, use the **Add Component** button to add the **ToolTipSpawner** component and configure it as follows:
 
 * Ensure the **Focus Enabled** checkbox is checked to require the user to look at the part for the tooltip to appear
-* Assign the **Simple Line ToolTip** prefab from the Project window to the **Tool Tip Prefab** field
+* Assign the **Simple Line ToolTip** prefab from the Project window to the **Prefab** field
 * Change the ToolTip Override Settings > **Settings Mode** to **Override**
 * Change the ToolTip Override Settings > **Manual Pivot Local Position Y** to **1.5**
 
@@ -191,4 +191,5 @@ Press the Play button to enter Game mode, then press-and-hold the right mouse bu
 
 In this tutorial, you learned how to create a simple user interface using MRTK's provided button and menu prefabs alongside Unity's TextMeshPro component and how to configure the buttons to trigger events when they are pressed. You also learned how to add dynamic tooltip UI elements to provide the user with additional information.
 
-[Next Tutorial: 7. Interacting with 3D objects](mr-learning-base-07.md)
+> [!div class="nextstepaction"]
+>[Next Tutorial: 7. Interacting with 3D objects](mr-learning-base-07.md)

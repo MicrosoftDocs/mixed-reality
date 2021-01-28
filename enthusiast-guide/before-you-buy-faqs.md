@@ -59,7 +59,7 @@ Learn more about Mixed Reality here: <https://docs.microsoft.com/windows/mixed-r
 
 * **Outside-in tracking** Oculus, Vive and others use outside-in tracking.  With outside-in tracking, the headset is tracked by one or more external devices. Camera(s) are built into those external devices, placed around the environment and are used to determine the position of the headset based on the environment.
 
-Find out more about [inside-out tracking](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system).
+Find out more about [inside-out tracking](./tracking-system.md).
 
 ### Can inside-out tracking of motion controllers impact my game play due to camera FOV
 

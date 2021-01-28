@@ -23,12 +23,12 @@ In this tutorial, you will learn how to use **Azure Spatial Anchors**. You will 
 
  **Azure Spatial Anchors** is part of the Azure Cloud Services family and is used to save anchor locations. The saved anchor locations can be retrieved based on the *anchor ID* from the cloud. This anchor location can be shared and accessed by multi-platform devices like HoloLens, iOS, and Android devices.
 
-Learn more about [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview).
+Learn more about [Azure Spatial Anchors](/azure/spatial-anchors/overview).
 
 ## Preparing Azure Spatial Anchors
 
 Before you can start, you have to create a spatial anchor resource in your Azure portal.
-Learn how to make a [spatial anchor resource](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource).
+Learn how to make a [spatial anchor resource](/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource).
 
 ## Preparing the scene
 
