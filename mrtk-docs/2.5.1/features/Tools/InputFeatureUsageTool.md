@@ -17,7 +17,7 @@ The InputFeatureUsage tool is a runtime (on device or in the editor) tool that e
 
 This tool is very useful when developing support for a new hardware controller. It can also help to confirm a suspected control mapping issue in the support class for an existing controller.
 
-![InputFeatureUsage tool](../Images/ControllerMappingTool/InputFeatureUsages.png)
+![InputFeatureUsage tool](../images/controller-mapping-tool/InputFeatureUsages.png)
 
 ## Using the InputFeatureUsage tool
 
@@ -41,5 +41,5 @@ The smaller panel along the top lists the names of all detected sources.
 
 ## See also
 
-- [Creating an input system data provider](../Input/CreateDataProvider.md)
-- [Controller mapping tool](./ControllerMappingTool.md)
+- [Creating an input system data provider](../input/CreateDataProvider.md)
+- [Controller mapping tool](ControllerMappingTool.md)

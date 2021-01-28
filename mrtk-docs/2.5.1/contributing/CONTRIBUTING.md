@@ -19,7 +19,7 @@ If you have any questions, please reach out on the [mixed-reality-toolkit channe
 
 We provide several paths to enable developers to contribute to the Mixed Reality Toolkit, all starting with [creating a new Issue](https://github.com/Microsoft/MixedRealityToolkit-Unity/issues/new/choose).
 
-<img src="../features//Images/Contributing/SelectIssueType.png" width="600" alt="Select Issue Type Image">
+<img src="../features/images/contributing/SelectIssueType.png" width="600" alt="Select Issue Type Image">
 
 From here you file:
 

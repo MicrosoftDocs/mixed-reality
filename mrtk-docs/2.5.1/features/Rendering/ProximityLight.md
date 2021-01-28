@@ -56,4 +56,4 @@ private const int proximityLightCount = 4;
 
 ## See also
 
-* [MRTK Standard Shader](../README_MRTKStandardShader.md)
+* [MRTK Standard Shader](MRTKStandardShader.md)

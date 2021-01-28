@@ -42,7 +42,7 @@ Some versions of Unity 2019 have encountered issues when using MSBuild for Unity
     - Ensure that the **Windows XR Plugin** is not installed
 1. Open **Edit > Project Settings > Player**
 
-    ![Windows Mixed Reality SDK](../Images/Tools/Remoting/WindowsMixedRealitySDK.png)
+    ![Windows Mixed Reality SDK](../images/tools/remoting/WindowsMixedRealitySDK.png)
 
 1. Ensure that **Virtual Reality Supported** is selected and that **Windows Mixed Reality** is added to the **Virtual Reality SDKs**
 
@@ -63,13 +63,13 @@ The **Use MSBuild for Unity dependency resolution** command does not display a c
 > [!Note]
 > There is an issue that prevents MSBuild for Unity from functioning properly on some versions of Unity 2019. If issues are encountered, please refer to the [manual installation instructions](#manual-dotnetadapter-installation).
 
-![MSB4U Package Manager](../Images/Tools/Remoting/MSB4UPackageManager.png)
+![MSB4U Package Manager](../images/tools/remoting/MSB4UPackageManager.png)
 
 #### DotNetWinRT NuGet package resolution
 
 The best way to check is to search the Assets folder for DotNetWinRT.dll. If this doesn't exist, navigate to the Assets folder in the Project view and select `[ProjectName].Dependencies.msb4u.csproj`. Assuming part 1 did succeed, there should be a custom inspector with Build, Rebuild, and Clean buttons. Try clicking Build or Rebuild, and then re-search for DotNetWinRT.dll. If that DLL now exists, this step succeeded.
 
-![DotNetAdapter Inspector](../Images/Tools/Remoting/DotNetAdapterInspector.png)
+![DotNetAdapter Inspector](../images/tools/remoting/DotNetAdapterInspector.png)
 
 #### DotNetAdapter.csproj missing
 
@@ -82,7 +82,7 @@ Beginning with MRTK version 2.5.0, for performance reasons, this #define is no l
 > [!Note]
 > The Check Configuration item does not display a confirmation. To confirm that the define has been set, please navigate to the Unity Player Settings. From there, under the UWP tab, check under Other Settings for the Scripting Define Symbols. Make sure DOTNETWINRT_PRESENT is properly written in that list. If that's there, this step succeeded.
 
-![DotNetWinRT Present](../Images/Tools/Remoting/DotNetWinRTPresent.png)
+![DotNetWinRT Present](../images/tools/remoting/DotNetWinRTPresent.png)
 
 #### Failure to find dotnet.exe
 
@@ -112,11 +112,11 @@ In the event that the installation of the DotNetAdapter cannot be performed via 
 
 1. Navigate to the NuGet client UI
 
-    ![Launch NuGet UI](../Images/Tools/Remoting/LaunchNuGetForUnity.png)
+    ![Launch NuGet UI](../images/tools/remoting/LaunchNuGetForUnity.png)
 
 1. Locate the `Microsoft.Windows.MixedReality.DotNetWinRT` package
 
-    ![Locate Package](../Images/Tools/Remoting/LocateDotNetWinRT.png)
+    ![Locate Package](../images/tools/remoting/LocateDotNetWinRT.png)
 
 1. Select Install
 
@@ -145,19 +145,19 @@ Once the project has been configured, a connection can be established to the Hol
 1. On the HoloLens, launch the **Holographic Remoting** application.
 1. In Unity, select **Window > XR > Holographic Emulation (if using legacy XR) / Windows XR Plugin Remoting (if using XR SDK)**.
 
-    ![Start Holographic Emulation](../Images/Tools/Remoting/StartHolographicEmulation.png)
+    ![Start Holographic Emulation](../images/tools/remoting/StartHolographicEmulation.png)
 
 1. Set **Emulation Mode** to **Remote to Device**.
 
-    ![Set Emulation Mode](../Images/Tools/Remoting/SelectEmulationMode.png)
+    ![Set Emulation Mode](../images/tools/remoting/SelectEmulationMode.png)
 
 1. (**_Only applies to legacy XR_**) Select the **Device Version**.
 
-    ![Select Device Version](../Images/Tools/Remoting/SelectDeviceVersion.png)
+    ![Select Device Version](../images/tools/remoting/SelectDeviceVersion.png)
 
 1. Using the IP Address displayed by the Holographic Remoting Player application, set the **Remote Machine** field.
 
-    ![Enter IP Address](../Images/Tools/Remoting/EnterIPAddress.png)
+    ![Enter IP Address](../images/tools/remoting/EnterIPAddress.png)
 
 1. Click **Connect**.
 

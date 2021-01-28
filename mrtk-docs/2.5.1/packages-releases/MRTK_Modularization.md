@@ -28,7 +28,7 @@ To ensure that there are no direct links between components, MRTK v2 utilizes in
 services, data providers and application code. These interfaces are defined in and all communication is routed
 through the Mixed Reality Toolkit core component.
 
-![Using the spatial awareness system via interfaces](../features/Images/Packaging/AccessingViaInterfaces.png)
+![Using the spatial awareness system via interfaces](../features/images/packaging/AccessingViaInterfaces.png)
 
 ## Minimizing MRTK import footprint
 
@@ -60,7 +60,7 @@ When selecting an application architecture, it is important to consider design f
 
 The MRTK enables (and automatically configures) application scenes to use the default [`MixedRealityToolkit`](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit) service locator component. This component includes support for configuring MRTK systems and data providers via configuration inspectors and manages component lifespans and core behaviors (ex: when to update).
 
-All systems are represented in the core configuration inspector, regardless of whether or not they are present or enabled in the project. Please see the [Mixed Reality Configuration Guide](../out-of-scope/MixedRealityConfigurationGuide.md) for more
+All systems are represented in the core configuration inspector, regardless of whether or not they are present or enabled in the project. Please see the [Mixed Reality Configuration Guide](../configuration/MixedRealityConfigurationGuide.md) for more
 information.
 
 #### Individual service components

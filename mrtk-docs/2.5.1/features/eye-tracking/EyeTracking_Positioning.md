@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, EyeTracking,
 ---
 
-![MRTK positioning](../Images/EyeTracking/mrtk_et_positioning.png)
+![MRTK positioning](../images/eye-tracking/mrtk_et_positioning.png)
 
 # Eye-supported target positioning in MRTK
 
@@ -17,7 +17,7 @@ _We're currently restructuring and improving the MRTK documentation.
 This content will be updated soon!
 If you have any questions regarding this section please post in our MRTK slack channel._
 
-![MRTK slider](../Images/EyeTracking/mrtk_et_positioning_slider.png)
+![MRTK slider](../images/eye-tracking/mrtk_et_positioning_slider.png)
 
 ---
 [Back to "Eye tracking in the MixedRealityToolkit"](EyeTracking_Main.md)

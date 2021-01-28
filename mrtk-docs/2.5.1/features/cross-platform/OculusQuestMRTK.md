@@ -32,11 +32,11 @@ This data provider does **NOT** use Unity's **XR Pipeline** or **Legacy XR Pipel
 
 1. Ensure that the **Oculus XR Plugin** is installed under **Window --> Package Manager**
 
-    ![OculusXRPluginPackage](../Images/CrossPlatform/OculusQuest/OculusXRPluginPackage.png)
+    ![OculusXRPluginPackage](../images/cross-platform/oculus-quest/OculusXRPluginPackage.png)
 
 1. Make sure that the Oculus Plug-in Provider is included in your project by going to **Edit --> Project Settings --> XR Plug-in Management --> Plug-in Providers**
 
-    ![OculusPluginProvider](../Images/CrossPlatform/OculusQuest/OculusPluginProvider.png)
+    ![OculusPluginProvider](../images/cross-platform/oculus-quest/OculusPluginProvider.png)
 
 ## Setting up the Oculus Integration Unity package to enable handtracking
 
@@ -46,12 +46,12 @@ work is 20.0.0. Older versions can be found from this [archive](https://develope
 1. Navigate to Mixed Reality Toolkit > Utilities > Oculus > Integrate Oculus Integration Unity Modules. Doing this will update the asmdefs with definitions and references needed for the
 relevant Oculus Quest code to function. It will also update the csc file to filter out the obsolete warnings produced by the Oculus Integration assets. The MRTK repo contains a csc file that converts warnings to errors, this conversion halts the MRTK-Quest configuration process.
 
-    ![OculusIntegrationAsmdef](../Images/CrossPlatform/OculusQuest/OculusIntegrationAsmdef.png)
+    ![OculusIntegrationAsmdef](../images/cross-platform/oculus-quest/OculusIntegrationAsmdef.png)
 
 1. In the imported Oculus folder (It should be found at Assets/Oculus), there is a scriptable object called OculusProjectConfig. In that config file, you need to set HandTrackingSupport
 to "Controllers and Hands".
 
-    ![OculusIntegrationControllerAndHands](../Images/CrossPlatform/OculusQuest/OculusIntegrationControllerAndHands.png)
+    ![OculusIntegrationControllerAndHands](../images/cross-platform/oculus-quest/OculusIntegrationControllerAndHands.png)
 
 ## Setting up the scene
 
@@ -67,19 +67,19 @@ to "Controllers and Hands".
     - Otherwise follow the following:
         - Select the MixedRealityToolkit game object in the hierarchy and select **Copy and Customize** to clone the default mixed reality profile.
 
-        ![Clone Profile View](../Images/CrossPlatform/CloneProfile.png)
+        ![Clone Profile View](../images/cross-platform/CloneProfile.png)
 
         - Select the **Input** Configuration Profile
 
-        ![Input Configuration Profile View](../Images/CrossPlatform/InputConfigurationProfile.png)
+        ![Input Configuration Profile View](../images/cross-platform/InputConfigurationProfile.png)
 
         - Select **Clone** in the input system profile to enable modification.
 
-        ![Clone Input System Profile View](../Images/CrossPlatform/CloneInputSystemProfile.png)
+        ![Clone Input System Profile View](../images/cross-platform/CloneInputSystemProfile.png)
 
         - Open the **Input Data Providers** section, select **Add Data Provider** at the top, and new data provider will be added at the end of the list.  Open the new data provider and set the **Type** to **Microsoft.MixedReality.Toolkit.XRSDK.Oculus > OculusXRSDKDeviceManager**
 
-        ![Oculus AddXRSDK DataProvider View](../Images/CrossPlatform/OculusQuest/OculusAddDataXRSDKProvider.png)
+        ![Oculus AddXRSDK DataProvider View](../images/cross-platform/oculus-quest/OculusAddDataXRSDKProvider.png)
 
     - You can verify that the Oculus Controllers are detected by
 
@@ -90,12 +90,12 @@ to "Controllers and Hands".
 1. Change the deployment to **Android**
 1. Ensure that the Oculus Quest is selected as the applicable run device
 
-    ![OculusRunDevice](../Images/CrossPlatform/OculusQuest/OculusRunDevice.png)
+    ![OculusRunDevice](../images/cross-platform/oculus-quest/OculusRunDevice.png)
 
 1. Select Build and Run
     - You will likely encounter the following set of build errors when you select *Build and Run* the first time. You should be able to successfully deploy upon selecting *Build and Run* again.
 
-    ![OculusExpectedBuildErrors](../Images/CrossPlatform/OculusQuest/OculusExpectedBuildErrors.png)
+    ![OculusExpectedBuildErrors](../images/cross-platform/oculus-quest/OculusExpectedBuildErrors.png)
 
 1. Accept the _Allow USB Debugging_ prompt from inside the quest
 1. See your scene inside the Oculus Quest
@@ -103,7 +103,7 @@ to "Controllers and Hands".
 ## Removing Oculus Integration from the Project
 
 1. Navigate to the Mixed Reality Toolkit > Oculus > Separate Oculus Integration Unity Modules
-    ![OculusSeparationAsmdef](../Images/CrossPlatform/OculusQuest/OculusSeparationAsmdef.png)
+    ![OculusSeparationAsmdef](../images/cross-platform/oculus-quest/OculusSeparationAsmdef.png)
 1. Let Unity refresh as references in the Microsoft.MixedReality.Toolkit.Providers.Oculus.asmdef and other files are modified in this step
 1. Close Unity
 1. Close Visual Studio, if it's open
@@ -121,4 +121,4 @@ Make sure your Android paths are properly configured. If you continue to encount
 
 **Edit > Preferences > External Tools > Android**
 
-![AndroidToolsConfig](../Images/CrossPlatform/OculusQuest/AndroidToolsConfig.png)
+![AndroidToolsConfig](../images/cross-platform/oculus-quest/AndroidToolsConfig.png)

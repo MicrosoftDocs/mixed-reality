@@ -212,7 +212,7 @@ changes and events that come from that are interesting to log). The ongoing stat
 holding a gesture" logged every frame is not interesting and will overwhelm the logs.
 
 Note that this verbose logging is not turned on by default (it must be enabled in the
-[Diagnostic System settings](../features/Diagnostics/ConfiguringDiagnostics.md#enable-verbose-logging))
+[Diagnostic System settings](../features/diagnostics/ConfiguringDiagnostics.md#enable-verbose-logging))
 
 ### Spaces vs tabs
 
@@ -683,7 +683,7 @@ public class MyClass
 
 This chart can help you decide which `#if` to use, depending on your use cases and the build settings you expect.
 
-| | UWP IL2CPP | UWP .NET | Editor |
+|Platform | UWP IL2CPP | UWP .NET | Editor |
 | --- | --- | --- | --- |
 | `UNITY_EDITOR` | False | False | True |
 | `UNITY_WSA` | True | True | True |

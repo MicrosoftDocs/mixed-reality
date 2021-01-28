@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Speech,
 
 # Speech
 
-![Near Menu](../Images/Input/MRTK_Input_Speech.png)
+![Near Menu](../images/input/MRTK_Input_Speech.png)
 
 Speech input providers, like *Windows Speech Input*, don't create any controllers but instead allow you to define keywords that will raise speech input events when recognized. The **Speech Commands Profile** in the *Input System Profile* is where you configure the keywords to recognize. For each command you can also:
 
@@ -18,17 +18,17 @@ Speech input providers, like *Windows Speech Input*, don't create any controller
 - Specify a **key code** that will produce the same speech event when pressed.
 - Add a **localization key** that will be used in UWP apps to obtain the localized keyword from the app resources.
 
-<img src="../Images/Input/SpeechCommandsProfile.png" width="450px" alt="Speech Commands Profile">
+<img src="../images/input/SpeechCommandsProfile.png" width="450px" alt="Speech Commands Profile">
 
 ## Handling speech input
 
 The [**`Speech Input Handler`**](xref:Microsoft.MixedReality.Toolkit.Input.SpeechInputHandler) script can be added to a GameObject to handle speech commands using [**UnityEvents**](https://docs.unity3d.com/Manual/UnityEvents.html). It automatically shows the list of the defined keywords from the **Speech Commands Profile**.
 
-<img src="../Images/Input/SpeechCommands_SpeechInputHandler1.png" width="450px" alt="Speech Input Handler1">
+<img src="../images/input/SpeechCommands_SpeechInputHandler1.png" width="450px" alt="Speech Input Handler1">
 
 Assign optional **SpeechConfirmationTooltip.prefab** to display animated confirmation tooltip label on recognition.
 
-<img src="../Images/Input/SpeechCommands_SpeechInputHandler2.png" alt="Speech Input Handler 2">
+<img src="../images/input/SpeechCommands_SpeechInputHandler2.png" alt="Speech Input Handler 2">
 
 Alternatively, developers can implement the [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) interface in a custom script component to [handle speech input events](InputEvents.md#input-event-interface-example).
 
@@ -36,4 +36,4 @@ Alternatively, developers can implement the [`IMixedRealitySpeechHandler`](xref:
 
 The **SpeechInputExample** scene, in `MRTK/Examples/Demos/Input/Scenes/Speech`, shows how to use speech. You can also listen to speech command events directly in your own script by implementing [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) (see table of [event handlers](InputEvents.md)).
 
-<img src="../Images/Input/SpeechExampleScene.png" width="750px" alt="Speech Example Scene">
+<img src="../images/input/SpeechExampleScene.png" width="750px" alt="Speech Example Scene">

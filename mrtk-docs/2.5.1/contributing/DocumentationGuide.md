@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Documentation guidelines
 
-<img src="../features/Images/MRTK_Logo_Rev.png" alt="MRTK Logo">
+<img src="../features/images/MRTK_Logo_Rev.png" alt="MRTK Logo">
 
 This document outlines the documentation guidelines and standards for the Mixed Reality Toolkit (MRTK). This provides an introduction to technical aspects of documentation writing and generation, to highlight common pitfalls, and to describe the recommended writing style.
 
@@ -63,7 +63,7 @@ If it is absolutely necessary to add a TODO, follow these steps:
    TODO.
 2. Reference the issue URL in the todo in the docs.
 
-\<\!-- [TODO](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/ISSUE_NUMBER_HERE): A brief blurb on the issue --\>
+\<\!-- TODO [https://github.com/microsoft/MixedRealityToolkit-Unity/issues/ISSUE_NUMBER_HERE](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/ISSUE_NUMBER_HERE): A brief blurb on the issue --\>
 
 ### Highlighted sections
 
@@ -123,7 +123,7 @@ General rule of thumb: Try to **sound professional**. That usually means to avoi
 
 - Use **Sentence case for headlines**. Ie. capitalize the first letter and names, but nothing else.
 - Use regular English for everything else. That means **do not capitalize arbitrary words**, even if they hold a special meaning in that context. Prefer *italic text* for highlighting certain words, [see below](#emphasis-and-highlighting).
-- When a link is embedded in a sentence (which is the preferred method), the standard chapter name always uses capital letters, thus breaking the rule of no arbitrary capitalization inside text. Therefore use a custom link name to fix the capitalization. As an example, here is a link to the [bounds control](../features/README_BoundsControl.md) documentation.
+- When a link is embedded in a sentence (which is the preferred method), the standard chapter name always uses capital letters, thus breaking the rule of no arbitrary capitalization inside text. Therefore use a custom link name to fix the capitalization. As an example, here is a link to the [bounds control](../features/ux-building-blocks/BoundsControl.md) documentation.
 - Do capitalize names, such as *Unity*.
 - Do NOT capitalize "editor" when writing *Unity editor*.
 

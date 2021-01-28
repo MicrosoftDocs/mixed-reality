@@ -25,11 +25,11 @@ for more details on voice input in Unity.
 
 ## Configuration
 
-<img src="../Images/Input/DictationDataProvider.png" width="80%" class="center" alt="Dictation Data Provider">
+<img src="../images/input/DictationDataProvider.png" width="80%" class="center" alt="Dictation Data Provider">
 
 Once you have a dictation service set up, you can use the [`DictationHandler`](xref:Microsoft.MixedReality.Toolkit.Input.DictationHandler) script to start and stop recording sessions and obtain the transcription results via UnityEvents.
 
-<img src="../Images/Input/DictationHandler.png" width="80%" class="center" alt="Dictation Handler">
+<img src="../images/input/DictationHandler.png" width="80%" class="center" alt="Dictation Handler">
 
 - **Dictation Hypothesis** is raised as the user speaks with early, rough transcriptions of the audio captured so far.
 - **Dictation Result** is raised at the end of each sentence (i.e. when the user pauses) with the final transcription of the audio captured so far.
@@ -40,4 +40,4 @@ Once you have a dictation service set up, you can use the [`DictationHandler`](x
 
 **Dictation** scene in `MRTK/Examples/Demos/Input/Scenes/Dictation` shows the `DictationHandler` script in use. If you need more control, you can either extend this script or create your own implementing [`IMixedRealityDictationHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityDictationHandler) to receive dictation events directly.
 
-<img src="../Images/Input/DictationDemo.png" width="80%" class="center" alt="Dictation Demo">
+<img src="../images/input/DictationDemo.png" width="80%" class="center" alt="Dictation Demo">

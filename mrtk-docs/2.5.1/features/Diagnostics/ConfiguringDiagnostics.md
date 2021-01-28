@@ -12,7 +12,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 ## General settings
 
-![Diagnostics General Settings](../Images/Diagnostics/DiagnosticsGeneralSettings.png)
+![Diagnostics General Settings](../images/diagnostics/DiagnosticsGeneralSettings.png)
 
 ### Enable verbose logging
 
@@ -33,7 +33,7 @@ When disabled, all configured diagnostic options will be hidden.
 
 ## Profiler settings
 
-![Diagnostics Profiler Settings](../Images/Diagnostics/DiagnosticsProfilerSettings.png)
+![Diagnostics Profiler Settings](../images/diagnostics/DiagnosticsProfilerSettings.png)
 
 ### Show profiler
 

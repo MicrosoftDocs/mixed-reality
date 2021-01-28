@@ -19,7 +19,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 ## Upgrading to a new version of MRTK
 
-*It is strongly recommended to run the [migration tool](../features/Tools/MigrationWindow.md) after getting the MRTK update*
+*It is strongly recommended to run the [migration tool](../features/tools/MigrationWindow.md) after getting the MRTK update*
 to auto-fix and upgrade from deprecated components and adjust to breaking changes. The migration tool is part of
 the **Tools** package.
 
@@ -64,7 +64,7 @@ For the smoothest upgrade path, please use the following steps.
     - Select **MixedRealityToolkit -> Add to Scene and Configure**
     - Select **MixedRealityToolkit -> Utilities -> Update -> Controller Mapping Profiles** (only needs to be done once)
             - This will update any custom controller mapping profiles with updated axes and data, while leaving your custom-assigned input actions intact
-1. Run the [migration tool](../features/Tools/MigrationWindow.md) and run the tool on the *Full Project* to ensure that all of your code is updated to the latest.
+1. Run the [migration tool](../features/tools/MigrationWindow.md) and run the tool on the *Full Project* to ensure that all of your code is updated to the latest.
    The migration window contains a number of different migration handlers, which must each be run on their own. This step involves:
    - Select the first migration handler from the **Migration Handler Selection** dropdown.
    - Click the "Full Project" button.
@@ -102,13 +102,13 @@ uses hard coded paths to MRTK resources, they will need to be updated per the fo
 
 This version of MRTK modifies the steps required for eye gaze setup. The _'IsEyeTrackingEnabled'_ checkbox can be found in the gaze settings of the input pointer profile. Checking this box will enable eye based gaze, rather then the default head based gaze.
 
-For more information on these changes and complete instructions for eye tracking setup, please see the [eye tracking](../features/EyeTracking/EyeTracking_BasicSetup.md) article.
+For more information on these changes and complete instructions for eye tracking setup, please see the [eye tracking](../features/eye-tracking/EyeTracking_BasicSetup.md) article.
 
 ### Eye gaze pointer behavior in 2.4.0
 
 The eye gaze default pointer behavior have been modified to match the head gaze default pointer behavior. An eye gaze pointer will automatically be suppressed once a hand is detected. The eye gaze pointer will become visible again after saying "Select".
 
-Details about gaze and hand setups can be found in the [eyes and hands](../features/EyeTracking/EyeTracking_EyesAndHands.md#how-to-keep-gaze-pointer-always-on) article.
+Details about gaze and hand setups can be found in the [eyes and hands](../features/eye-tracking/EyeTracking_EyesAndHands.md#how-to-keep-gaze-pointer-always-on) article.
 
 ### API changes in 2.4.0
 
@@ -315,7 +315,7 @@ The `NearInteractionTouchableSurface` class has been added and now serves as the
 
 The hand mesh and joint visualizations now have a separate editor and player settings. The hand tracking profile has been updated to allow for setting these visualizations to; Nothing, Everything, Editor or Player.
 
-![Hand visualization modes](Images/ReleaseNotes/HandTrackingVisualizationModes.png)
+![Hand visualization modes](../features/images/release-notes/HandTrackingVisualizationModes.png)
 
 Custom hand tracking profiles may need to be updated to work correctly with version 2.1.0.
 
@@ -402,11 +402,11 @@ Using the new CoreSystem class will ensure that your application code will not n
 
 With the addition of the IMixedRealityRaycastProvider, the input system configuration profile was changed. If you have a custom profile, you may receive the errors in the following image when you run your application.
 
-![Selecting the Raycast provider](Images/ReleaseNotes/UnableToRegisterRaycastProvider.png)
+![Selecting the Raycast provider](../features/images/release-notes/UnableToRegisterRaycastProvider.png)
 
 To fix these, please add an IMixedRealityRaycastProvider instance to your input system profile.
 
-![Selecting the Raycast provider](Images/ReleaseNotes/SelectRaycastProvider.png)
+![Selecting the Raycast provider](../features/images/release-notes/SelectRaycastProvider.png)
 
 **Event System**
 
