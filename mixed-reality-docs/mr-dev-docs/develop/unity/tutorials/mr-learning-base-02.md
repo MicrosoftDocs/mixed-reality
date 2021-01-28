@@ -81,7 +81,13 @@ In the Import Unity Package window, click the **All** button to ensure all the a
 
 ## Importing the Mixed Reality Toolkit
 
-Download the Unity custom package:
+### Using the Mixed Reality Feature Tool
+
+To install MRTK with our new Mixed Reality Feature Tool application, follow our [installation and usage instructions](../../welcome-to-mr-feature-tool.md) and select the **Mixed Reality Toolkit Foundation** package in the Mixed Reality Toolkit category.
+
+### Using Unity Packages
+
+To install MRTK with a custom package:
 
 * [Microsoft.MixedReality.Toolkit.Unity.Foundation.2.5.1.unitypackage](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.5.1/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.5.1.unitypackage)
 
