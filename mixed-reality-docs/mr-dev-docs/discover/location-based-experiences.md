@@ -95,11 +95,11 @@ The JSON file should have the below contents with “true” set for any of the 
  
 **Q: Is there any guidance on configuring the playspace?**
 
-A: Configuring a playspace should be done as you would with a consumer setup experience. The Room Setup process will also let you define your room boundaries. More details on configuring room boundaries can be read [here](//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
+A: Configuring a playspace should be done as you would with a consumer setup experience. The Room Setup process will also let you define your room boundaries. More details on configuring room boundaries can be read [here](/windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
 
 As discussed in the above document the maximum reasonable single coordinate playspace is around 5mx5m. If you want to have a larger area, you can make use of the Spatial Anchors capability in the Windows Holographic API stack. Using this API will require custom engineering in the experiences you're producing.  
 
-More details on how to optimize your content for different space sizes can be read [here](//windows/mixed-reality/coordinate-systems).
+More details on how to optimize your content for different space sizes can be read [here](/windows/mixed-reality/coordinate-systems).
  
 
 **Q: My space is too large and I’m running into errors when I try to set up a Standing experience with boundaries. What should I do to set up my large free-roam experience work?**
@@ -110,7 +110,7 @@ You can set up “seated” mode, which won't display the boundary or configure 
 
 The application developer is responsible to display necessary safeguards so that users don’t collide with physical surroundings.  These could be digital walls within the experience or a customized game boundary visual. 
 
-Guidance on setting up the room boundary with WMR can be found [here](//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
+Guidance on setting up the room boundary with WMR can be found [here](/windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
 
 **Q: Where is the origin of the playspace?**
 
@@ -137,7 +137,7 @@ A: If you opt into the Windows 20H1 or later build via our Insider program, you 
 
 Q: How does the tracking technology in the Windows Mixed Reality headsets work?  
 
-Mixed Reality shares the same tracking technology as the HoloLens. To learn more about the inside-out tracking system, check out the documentation [here](//windows/mixed-reality/enthusiast-guide/tracking-system).
+Mixed Reality shares the same tracking technology as the HoloLens. To learn more about the inside-out tracking system, check out the documentation [here](/windows/mixed-reality/enthusiast-guide/tracking-system).
 
 For a description of how the higher-level spatial mapping system works you can read our description [here](../design/spatial-mapping.md).
 
@@ -185,13 +185,13 @@ A: Azure PlayFab is a complete backend platform for live games. You can learn mo
 
 **Q: I use SteamVR to deploy my experiences. Does Windows Mixed Reality work with SteamVR?**
 
-A: Windows Mixed Reality for SteamVR allows users to run SteamVR experiences on Windows Mixed Reality immersive headsets. Learn more about SteamVR with WMR [here](//windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality).
+A: Windows Mixed Reality for SteamVR allows users to run SteamVR experiences on Windows Mixed Reality immersive headsets. Learn more about SteamVR with WMR [here](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality).
 
 ### Support and community  
 
 We have a few helpful resources to help you engage with subject matter experts on our team, get troubleshooting support, and contribute to the broader mixed reality dev community.  
 
-If you run into issues with any publicly released features, file a bug using Feedback Hub.For guidance, refer to this [page](//windows/mixed-reality/enthusiast-guide/filing-feedback).
+If you run into issues with any publicly released features, file a bug using Feedback Hub.For guidance, refer to this [page](/windows/mixed-reality/enthusiast-guide/filing-feedback).
 
 For other troubleshooting help with WMR, file a [support request](https://support.microsoft.com//supportforbusiness/productselection?sapId=96bfb202-bc79-741b-bf7a-774d8b767782) with our customer support team.
 
