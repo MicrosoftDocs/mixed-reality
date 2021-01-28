@@ -24,7 +24,7 @@ Starting with Unity version 2020.2, Microsoft’s Mixed Reality OpenXR Plugin pa
 
 ## Installing OpenXR with the Mixed Reality Feature Tool
 
-Install the OpenXR plugin with the new Mixed Reality Feature Tool application. Follow the [installation and usage instructions](../../welcome-to-mr-feature-tool.md) and select the **Mixed Reality OpenXR Plugin** package in the Mixed Reality Toolkit category:
+Install the OpenXR plugin with the new Mixed Reality Feature Tool application. Follow the [installation and usage instructions](../welcome-to-mr-feature-tool.md) and select the **Mixed Reality OpenXR Plugin** package in the Mixed Reality Toolkit category:
 
 ![Mixed Reality Feature Tool packages window with open xr plugin highlighted](images/feature-tool-openxr.png)
 
@@ -81,7 +81,7 @@ To utilize one or more of the examples, install [ARFoundation 4.0+](https://docs
 
 MRTK Unity supports the Mixed Reality OpenXR plugin starting with the 2.5.3 release.  
 
-1. Open the [Mixed Reality Feature Tool](../../welcome-to-mr-feature-tool.md) again and select the **Mixed Reality Toolkit Foundation** package in the Mixed Reality Toolkit category
+1. Open the [Mixed Reality Feature Tool](../welcome-to-mr-feature-tool.md) again and select the **Mixed Reality Toolkit Foundation** package in the Mixed Reality Toolkit category
 
 <!-- MRTK plugins can be installed from the same scoped registries as you set up when [installing the Mixed Reality OpenXR plugin](#installing-the-mixed-reality-openxr-plugin). You can find more detailed information in the [MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/usingupm.html#registering-the-mixed-reality-component-server).
 

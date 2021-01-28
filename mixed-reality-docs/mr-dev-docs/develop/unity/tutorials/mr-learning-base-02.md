@@ -129,9 +129,9 @@ In the Unity menu, select **Edit** > **Project Settings...** to open the Project
 
 In the Project Settings window, select **XR Plug-in Management** > **Install XR Plug-in Management**, to install XR Plug-in Management:
 
-![Unity Publishing Settings with Package name configured](images/mr-learning-base/base-02-section5-step2-2.png)
+![Project settings with XR Plugin Management selected](images/mr-learning-base/base-02-section5-step2-2.png)
 
-after Unity has finished installing the XR Plug-in Management. Ensure that you are in Universal Windows Platform settings and Check the Initialize XR on Startup.
+After Unity has finished installing the XR Plug-in Management. Ensure that you are in Universal Windows Platform settings and Check the Initialize XR on Startup.
 
 ![Unity Configuring XR plugin management](images/mr-learning-base/base-02-section5-step2-3.png)
 
@@ -143,7 +143,7 @@ After Unity has finished importing the Windows Mixed Reality SDK, the MRTK Proje
 
 In the MRTK Project Configurator window, use the **Audio spatializer** dropdown to select the **MS HRTF Spatializer**, then click the **Apply** button to apply the setting:
 
-![Unity XR Settings with add Windows Mixed Reality SDK selected](images/mr-learning-base/base-02-section5-step2-5.png)
+![MRTK project configurator window with audio spatializer property highlighted](images/mr-learning-base/base-02-section5-step2-5.png)
 
 > [!TIP]
 >Setting the Audio spatializer property is optional but may improve the audio experience in your project. If you set it to MS HRTF Spatializer, this spatializer plugin will be used when Unity's AudioSource.spatialize property is enabled. To learn more about this topic, you can refer to the  <a href="https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank"> Spatial audio tutorials</a>.

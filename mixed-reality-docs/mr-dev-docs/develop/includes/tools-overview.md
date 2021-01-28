@@ -21,7 +21,7 @@ We recommend completing the getting started section in our curated [HoloLens](..
 > Note that installation instructions are targeted for the latest stable combination of MRTK and Unity releases, which are **MRTK 2.5.1** and **Unity 2019.3.15**.
 
 > [!NOTE]
-> If you don't want to use MRTK for Unity, you'll need to [script all interactions and behaviors yourself](unity/configure-unity-project.md).
+> If you don't want to use MRTK for Unity, you'll need to [script all interactions and behaviors yourself](../unity/configure-unity-project.md).
 
 :::row:::
     :::column:::
