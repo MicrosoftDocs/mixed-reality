@@ -1,5 +1,5 @@
 ---
-title: Release Notes
+title: Graphics Tools release notes
 description: Release notes for the latest GT release.
 author: cameron-micka
 ms.author: thmicka
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unreal, Unreal Engine, UE4, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, GT, Graphics Tools, release notes
 ---
 
-# Graphics Tools 0.1.0 Release Notes
+# Graphics Tools release notes
 
 - [What's New](#whats-new)
 - [Breaking Changes](#breaking-changes)
