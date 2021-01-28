@@ -1,5 +1,6 @@
 - name: Introducing UX Tools
   href: welcome.md
+  expanded: true 
 - name: Installation Guide
   href: installation.md 
 - name: Features
