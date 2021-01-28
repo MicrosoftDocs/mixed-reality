@@ -6,22 +6,6 @@
           "**/*.md",
           "**/*.yml"
         ],
-        "group": "ux-tools",
-        "src": "ux-tools"
-      },
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "group": "graphics-tools",
-        "src": "graphics-tools"
-      },
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -32,22 +16,11 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
-          "ThirdPartyNotices.md",
-          "ux-tools",
-          "graphics-tools"
+          "ThirdPartyNotices.md"
         ]
       }
     ],
     "resource": [
-      {
-        "files": [
-          "**/*.png",
-          "**/*.jpg",
-          "**/*.gif"
-        ],
-        "group": "ux-tools",
-        "src": "ux-tools-0.11"
-      },
       {
         "files": [
           "**/*.png",
@@ -72,19 +45,14 @@
       "feedback_system": "None",
       "ms.prod": "mixed-reality"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "monikerRange": {
+        "graphics-tools/**/*.md": ">= graphics-tools-0.1",
+        "ux-tools/**/*.md": ">= ux-tools-0.11"
+      }
+    },
     "template": [],
     "markdownEngineName": "markdig",
     "dest": "mrtk-unreal",
-    "groups": {
-      "ux-tools": {
-        "dest": "ux-tools",
-        "moniker_range": "ux-tools-0.11"
-      },
-      "graphics-tools": {
-        "dest": "graphics-tools",
-        "moniker_range": "graphics-tools-0.1"
-      }
-    }
   }
 }

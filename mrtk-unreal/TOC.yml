@@ -1,8 +1,8 @@
 - name: Welcome to MRTK Unreal
   href: index.md
 - name: UX Tools
-  href: ux-tools/0.11/toc.yml
+  href: ux-tools/toc.yml
 - name: Graphics Tools  
-  href: graphics-tools/0.1/toc.yml 
+  href: graphics-tools/toc.yml 
 - name: Contributing
   href: CONTRIBUTING.md
