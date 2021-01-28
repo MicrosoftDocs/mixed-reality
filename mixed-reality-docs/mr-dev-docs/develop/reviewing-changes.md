@@ -17,7 +17,7 @@ Before modifying the Unity project, changes to the manifest and project files ne
 
 ## Manifest
 
-The proposed manifest changes can be viewed in the **Manifest** column on the left. The contents are exactly what will be written to the project manifest (`Packages/manifest.json`):
+The proposed manifest changes can be viewed in the **Manifest** column on the left. The contents are exactly what will be written to the project manifest (**Packages/manifest.json**):
 
 ![Manifest preview](images/ManifestPreview.png)
 
@@ -29,7 +29,7 @@ The **Files to be copied into the project** section on the right lists the speci
 
 ## Compare manifests
 
-You can see a detailed side-by-side comparison of all proposed changes by selecting  **Compare**:
+You can see a detailed side-by-side comparison of all proposed changes by selecting **Compare**:
 
 ![Compare manifests](images/FeatureToolCompareManifest.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Discovering and acquiring features
-description: Learn and download all the Mixed Reality Feature Tool features.
+description: Learn and download Mixed Reality features.
 author: davidkline-ms
 ms.author: v-hferrone
 ms.date: 01/27/2021
@@ -11,7 +11,7 @@ keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit,
 
 # Discovering and acquiring features
 
-The sections in this article outline different ways of finding feature packages in the Mixed Reality Feature Tool. Refer to the screenshot below if you need a reference for a given section:
+The sections in this article outline how to find feature packages in the Mixed Reality Feature Tool. Refer to the screenshot below if you need a reference for a given section:
 
 ![Discovering features](images/FeatureToolDiscovery.png)
 
@@ -22,7 +22,7 @@ The sections in this article outline different ways of finding feature packages 
 The Mixed Reality Feature Tool displays a collection of feature categories to make it easy to find what you want. Expand any of the categories to display its collection of available features.
 
 > [!NOTE]
-> If the desired functionality cannot be found, it is recommended to check "Other features".
+> If you can't find the functionality you're looking for, check **Other features**.
 
 ![Feature category](images/FeatureCategory.png)
 
@@ -68,7 +68,7 @@ Once downloading is complete, the Mixed Reality Feature Tool will move to the [i
 
 ## Going back to the previous step
 
-From `Discover features`, the Mixed Reality Feature Tool allows for navigating back to the beginning. Click the `Go back` button to start again.
+From **Discover features**, the Mixed Reality Feature Tool allows for navigating back to the beginning. Select **Go back** to start again.
 
 ## See also
 

@@ -25,7 +25,7 @@ When using the Mixed Reality Feature Tool, you have access to three different se
 
 Enabling this setting causes package files to be downloaded every time they're acquired. 
 * **We recommend leaving this option disabled to reduce network bandwidth usage**
-* By default, previously acquired package files aren't redownloaded
+* By default, previously acquired package files aren't re-downloaded
 
 ### Package cache
 
@@ -54,10 +54,10 @@ By default, the Mixed Reality Feature Tool removes previous copies of the packag
 ### Project relative import path
 
 Change this setting to update project folder path where feature packages are copied on import. 
-* For example, if the project folder is `C:\GalaxyExplorer`, the fully qualified import path will be `C:\GalaxyExplorer\Packages\MixedReality`.
+* For example, if the project folder is **C:\GalaxyExplorer**, the fully qualified import path will be **C:\GalaxyExplorer\Packages\MixedReality**.
 
 > [!NOTE]
-> The **Package cache** and **Project relative import path** are **read-only** in this release.
+> This setting is **read-only** in this release. Future releases may make this setting configurable.
 
 ## See also
 

@@ -53,7 +53,7 @@ The Mixed Reality Feature Tool provides two automatic issue resolutions, describ
 
 ### Enable dependencies
 
-The **Enable dependencies** button will automatically reselect the missing dependencies. This is true for dependencies that were explicitly selected (appear in the **Features** list) and those that were implicitly selected based on the requirements of the selected features.
+The **Enable dependencies** button will automatically re-select the missing dependencies. This is true for dependencies that were explicitly selected (appear in the **Features** list) and those that were implicitly selected based on the requirements of the selected features.
 
 ### Disable features
 

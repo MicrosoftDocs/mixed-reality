@@ -70,7 +70,7 @@ You also need to set the location of the target Unity project before you import.
 Select **Import** to continue.
 
 > [!NOTE]
-> After clicking the `Import` button, if any issues remain a simple message will be displayed. The recommendation is to click No and to use the `Validate` button to view and resolve the issues.
+> After clicking the **Import** button, if any issues remain a simple message will be displayed. The recommendation is to click No and to use the **Validate** button to view and resolve the issues.
 
 For more information, please see [importing features](importing-features.md).
 
