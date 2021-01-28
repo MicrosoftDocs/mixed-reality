@@ -2,6 +2,7 @@
   href: index.md
 - name: UX Tools
   href: ux-tools/toc.yml
+  expanded: true 
 - name: Graphics Tools  
   href: graphics-tools/toc.yml 
 - name: Contributing
