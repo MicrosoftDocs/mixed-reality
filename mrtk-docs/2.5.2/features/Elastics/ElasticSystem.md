@@ -16,8 +16,8 @@ MRTK comes with an elastic simulation system that includes a wide variety of ext
 
 Currently the following MRTK components supporting the [elastics manager](xref:Microsoft.MixedReality.Toolkit.Experimental.Physics.ElasticsManager) can leverage elastics functionality:
 
-- [Bounds control](../BoundsControl.md)
-- [Object manipulator](../ObjectManipulator.md)
+- [Bounds control](../ux-building-blocks/BoundsControl.md)
+- [Object manipulator](../ux-building-blocks/ObjectManipulator.md)
 
 ## Elastics manager
 
@@ -37,7 +37,7 @@ The field `Manipulation types using elastic feedback` needs to be enabled for sp
 
 ### Elastics configurations
 
-Similar to [bounds control configurations](../BoundsControl.md#configuration-objects), elastic manager comes with a set of configuration objects that can be stored as scriptable objects and shared between different instances or prefabs. Configurations can be shared and linked either as individual scriptable asset files or nested scriptable assets inside of prefabs. Further configurations can also be defined directly on the instance without linking to an external or nested scriptable asset.
+Similar to [bounds control configurations](../ux-building-blocks/BoundsControl.md#configuration-objects), elastic manager comes with a set of configuration objects that can be stored as scriptable objects and shared between different instances or prefabs. Configurations can be shared and linked either as individual scriptable asset files or nested scriptable assets inside of prefabs. Further configurations can also be defined directly on the instance without linking to an external or nested scriptable asset.
 
 The elastics manager inspector will indicate whether a configuration is shared or inlined as part of the current instance by showing a message in the property inspector. In addition, shared instances won't be editable directly in the elastics manager property window itself, but instead the asset it's linking to has to be directly modfied to avoid any accidental changes on shared configurations.
 

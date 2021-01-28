@@ -39,7 +39,7 @@ in the *Pointer* section of the input system profile:
 ![Gaze Configuration Entrypoint](../Images/Input/GazeConfigurationEntrypoint.png)
 
 Like other sources of input, the gaze provider interacts with objects in the scene
-through use of a pointer [(see this document for information on pointers)](../../architecture/InputSystem/ControllersPointersAndFocus.md).
+through use of a pointer [(see this document for information on pointers)](../../architecture/ControllersPointersAndFocus.md).
 In the case of the gaze provider, its pointer is implemented via `InternalGazePointer`
 and is not configured through a profile.
 

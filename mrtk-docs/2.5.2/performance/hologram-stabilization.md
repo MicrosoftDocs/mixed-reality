@@ -60,11 +60,11 @@ In order to utilize depth-based LSR, there are two important steps that develope
 [Opaque GameObjects](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html) in Unity will generally write to depth automatically. However, transparent & text objects will generally not write to depth by default. If utilizing the MRTK Standard Shader or Text Mesh Pro, this can be easily remedied.
 
 > [!NOTE]
-> To quickly determine which objects in a scene do not write to the depth buffer visually, one can use the [*Render Depth Buffer* utility](../out-of-scope/MixedRealityConfigurationGuide.md#editor-utilities) under the *Editor Settings* in the MRTK Configuration profile.
+> To quickly determine which objects in a scene do not write to the depth buffer visually, one can use the [*Render Depth Buffer* utility](../configuration/MixedRealityConfigurationGuide.md#editor-utilities) under the *Editor Settings* in the MRTK Configuration profile.
 
 ##### Transparent MRTK Standard shader
 
-For transparent materials using the [MRTK Standard shader](../features/MRTKStandardShader.md), select the material to view it in the *Inspector* window. Then click the *Fix Now* button to convert the material to write to depth (i.e Z-Write On).
+For transparent materials using the [MRTK Standard shader](../features/rendering/MRTKStandardShader.md), select the material to view it in the *Inspector* window. Then click the *Fix Now* button to convert the material to write to depth (i.e Z-Write On).
 
 Before
 

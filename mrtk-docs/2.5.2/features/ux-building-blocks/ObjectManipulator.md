@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Object M
 
 # Object manipulator
 
-![Object manipulator](images/manipulation-handler/MRTK_Manipulation_Main.png)
+![Object manipulator](../images/manipulation-handler/MRTK_Manipulation_Main.png)
 
 The *ObjectManipulator* is the new component for manipulation behaviour, previously found in *ManipulationHandler*. The object manipulator makes a number of improvements and simplifications. This component is a replacement for the manipulation handler, which will be deprecated.
 
@@ -26,11 +26,11 @@ Physics behaviour can be enabled for the object manipulator by adding a rigidbod
 
 As well as this, manipulation can be constrained by adding [manipulation constraint components](ConstraintManager.md#transform-constraints) to the object. These are special components that work with manipulation and change the manipulation behaviour in some way.
 
-![Manipulation Handler Details](images/object-manipulator/MRTK_ObjectManipulator_Howto.png)
+![Manipulation Handler Details](../images/object-manipulator/MRTK_ObjectManipulator_Howto.png)
 
 ## Inspector properties and fields
 
-<img src="images/object-manipulator/MRTK_ObjectManipulator_Structure.png" width="450" alt="Object Manipulator structure">
+<img src="../images/object-manipulator/MRTK_ObjectManipulator_Structure.png" width="450" alt="Object Manipulator structure">
 
 ### General properties
 
@@ -75,7 +75,7 @@ Specifies how two hand manipulation can transform an object. Because this proper
 - *Scale*: Scaling is allowed if selected.
 - *Rotate*: Rotation is allowed if selected.
 
-![Manipulation Handler Two Handed](images/manipulation-handler/MRTK_ManipulationHandler_TwoHanded.jpg)
+![Manipulation Handler Two Handed](../images/manipulation-handler/MRTK_ManipulationHandler_TwoHanded.jpg)
 
 ### Constraints
 
@@ -161,21 +161,21 @@ When a rigidbody is added, collisions should work correctly.
 
 ### Without rigidbody
 
-<img src="images/object-manipulator/MRTK_PhysicsManipulation_NoRigidbody.gif" width="500" alt="Physics Manipulation No Rigid Body">
+<img src="../images/object-manipulator/MRTK_PhysicsManipulation_NoRigidbody.gif" width="500" alt="Physics Manipulation No Rigid Body">
 
 ### With rigidbody
 
-<img src="images/object-manipulator/MRTK_PhysicsManipulation_Rigidbody.gif" width="500" alt="Physics manipulation Rigid body">
+<img src="../images/object-manipulator/MRTK_PhysicsManipulation_Rigidbody.gif" width="500" alt="Physics manipulation Rigid body">
 
 ## Elastics (Experimental)
 
-Elastics can be used when manipulating objects via object manipulator. Note that the [elastics system](Elastics/ElasticSystem.md) is still in experimental state. To enable elastics either link an existing elastics manager component or create and link a new elastics manager via the `Add Elastics Manager` button.
+Elastics can be used when manipulating objects via object manipulator. Note that the [elastics system](../elastics/ElasticSystem.md) is still in experimental state. To enable elastics either link an existing elastics manager component or create and link a new elastics manager via the `Add Elastics Manager` button.
 
-<img src="images/bounds-control/MRTK_BoundsControl_Elastics.png" width="450" alt="Bounds Control Elastics">
+<img src="../images/bounds-control/MRTK_BoundsControl_Elastics.png" width="450" alt="Bounds Control Elastics">
 
 ## See also
 
 - [Bounds control](BoundsControl.md)
 - [Constraint manager](ConstraintManager.md)
-- [Migration window](tools/MigrationWindow.md)
-- [Elastics system (Experimental)](elastics/ElasticSystem.md)
+- [Migration window](../tools/MigrationWindow.md)
+- [Elastics system (Experimental)](../elastics/ElasticSystem.md)

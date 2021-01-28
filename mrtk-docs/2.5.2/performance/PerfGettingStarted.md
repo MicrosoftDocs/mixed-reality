@@ -64,7 +64,7 @@ It is highly recommended that developers instrument application code in a simila
 
 The default rendering configuration for XR in Unity is [Multi-pass](https://docs.unity3d.com/ScriptReference/StereoRenderingPath.MultiPass.html). This setting instructs Unity to execute the entire render pipeline twice, once for each eye. This can be optimized by selecting [Single Pass Instanced rendering](https://docs.unity3d.com/Manual/SinglePassInstancing.html) instead. This configuration leverages [render target arrays](https://en.wikipedia.org/wiki/Multiple_Render_Targets) to be able to perform a single draw call that instances into the appropriate [render target](https://en.wikipedia.org/wiki/Render_Target) for each eye. Furthermore, this mode allows all rendering to be done in a single execution of the rendering pipeline. Thus, selecting Single Pass Instanced rendering as the rendering path for a mixed reality application can [save substantial time on both the CPU & GPU](https://blogs.unity3d.com/2017/11/21/how-to-maximize-ar-and-vr-performance-with-advanced-stereo-rendering/) and is the recommended rendering configuration.
 
-However, in order to issue a single draw call for each mesh to each eye, [GPU instancing](https://docs.unity3d.com/Manual/GPUInstancing.html) must be supported by all shaders. Instancing allows the GPU to multiplex draw calls across both eyes. Unity built-in shaders as well as the [MRTK Standard shader](../features/MRTKStandardShader.md) by default contain the necessary instancing instructions in shader code. If writing custom shaders though for Unity, these shaders may need to be updated to support Single Pass Instanced rendering.
+However, in order to issue a single draw call for each mesh to each eye, [GPU instancing](https://docs.unity3d.com/Manual/GPUInstancing.html) must be supported by all shaders. Instancing allows the GPU to multiplex draw calls across both eyes. Unity built-in shaders as well as the [MRTK Standard shader](../features/rendering/MRTKStandardShader.md) by default contain the necessary instancing instructions in shader code. If writing custom shaders though for Unity, these shaders may need to be updated to support Single Pass Instanced rendering.
 
 #### [Example Code for Custom Shader](https://docs.unity3d.com/Manual/SinglePassInstancing.html)
 
@@ -153,7 +153,7 @@ Without deep diving into the complex field of computer graphics & [rendering pip
 
 In regards to performance tuning, it is usually more fruitful to focus on optimizing the operations in the pixel shader. An application may only need to draw a cube which will just be 8 vertices. However, the screen space that cube occupies is likely on the order of millions of pixels. Thus, reducing shader code by say 10 operations can save significantly more work if reduced on the pixel shader than the vertex shader.
 
-This is one of the primary reasons for leveraging the [MRTK Standard shader](../features/MRTKStandardShader.md) as this shader generally executes many less instructions per pixel & vertex than the Unity Standard shader while achieving comparable aesthetic results.
+This is one of the primary reasons for leveraging the [MRTK Standard shader](../features/rendering/MRTKStandardShader.md) as this shader generally executes many less instructions per pixel & vertex than the Unity Standard shader while achieving comparable aesthetic results.
 
 |    CPU Optimizations      |             GPU Optimizations              |
 |---------------------------|--------------------------------------------|

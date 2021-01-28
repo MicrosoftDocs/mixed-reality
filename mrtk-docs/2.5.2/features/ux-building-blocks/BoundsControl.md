@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Bounds C
 
 # Bounds control
 
-![Bounds control](images/bounds-control/MRTK_BoundsControl_Main.png)
+![Bounds control](../images/bounds-control/MRTK_BoundsControl_Main.png)
 
 *BoundsControl* is the new component for manipulation behaviour, previously found in *BoundingBox*. Bounds control makes a number of improvements and simplifications in setup and adds new features. This component is a replacement for the bounding box, which will be deprecated.
 
@@ -20,7 +20,7 @@ The [`BoundsControl.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundsControl) s
 
 You can find examples of bounds control configurations in the `BoundsControlExamples` scene.
 
-<img src="images/bounds-control/MRTK_BoundsControl_Examples.png" alt="Bounds Contol">
+<img src="../images/bounds-control/MRTK_BoundsControl_Examples.png" alt="Bounds Contol">
 
 ## Inspector properties
 
@@ -72,7 +72,7 @@ Currently bounds control offers configuration objects options for the following 
   * [Scale handles](#scale-handles-configuration)
   * [Rotation handles](#rotation-handles-configuration)
   * [Translation handles](#translation-handles-configuration)
-* [Links / Wireframe](#Links-configuration-wireframe)
+* [Links / Wireframe](#links-configuration-wireframe)
 * [Box display](#box-configuration)
 * [Proximity effect](#proximity-effect-configuration)
 
@@ -144,7 +144,7 @@ The links configuration enables the wireframe feature of bounds control. The fol
 
 Show and hide the handles with animation based on the distance to the hands. It has two-step scaling animation. Defaults are set to HoloLens 2 style behavior.
 
-<img src="images/bounds-control/MRTK_BoundsControl_Proximity.png" alt="Bounds Control Proximity" alt="Bounds Control Proximity">
+<img src="../images/bounds-control/MRTK_BoundsControl_Proximity.png" alt="Bounds Control Proximity" alt="Bounds Control Proximity">
 
 * **Proximity Effect Active**: Enable proximity-based handle activation
 * **Object Medium Proximity**: Distance for the 1st step scaling
@@ -163,7 +163,7 @@ Bounds control supports using the [constraint manager](ConstraintManager.md) to 
 
 The property inspector will show all available constraint managers attached to the same game object in a dropdown with an option to scroll and highlight the selected constraint manager.
 
-<img src="images/bounds-control/MRTK_BoundsControl_Constraints.png" width="450" alt="Bounds Control Constraints">
+<img src="../images/bounds-control/MRTK_BoundsControl_Constraints.png" width="450" alt="Bounds Control Constraints">
 
 ## Events
 
@@ -176,23 +176,23 @@ Bounds control provides the following events. This example uses these events to 
 * **Translate Started**: Fires when translation starts.
 * **Translate Stopped**: Fires when translation stops.
 
-<img src="images/bounds-control/MRTK_BoundsControl_Events.png" width="450" alt="Bounds Control Events">
+<img src="../images/bounds-control/MRTK_BoundsControl_Events.png" width="450" alt="Bounds Control Events">
 
 ## Elastics (Experimental)
 
-Elastics can be used when manipulating objects via bounds control. Note that the [elastics system](Elastics/ElasticSystem.md) is still in experimental state. To enable elastics either link an existing elastics manager component or create and link a new elastics manager via the `Add Elastics Manager` button.
+Elastics can be used when manipulating objects via bounds control. Note that the [elastics system](../Elastics/ElasticSystem.md) is still in experimental state. To enable elastics either link an existing elastics manager component or create and link a new elastics manager via the `Add Elastics Manager` button.
 
-<img src="images/bounds-control/MRTK_BoundsControl_Elastics.png" width="450" alt="Bounds Control Elastics">
+<img src="../images/bounds-control/MRTK_BoundsControl_Elastics.png" width="450" alt="Bounds Control Elastics">
 
 ## Handle styles
 
 By default, when you just assign the [`BoundsControl.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundsControl) script, it will show the handle of the HoloLens 1st gen style. To use HoloLens 2 style handles, you need to assign proper handle prefabs and materials.
 
-![Bounds Control Handdle Styles1](images/bounds-control/MRTK_BoundsControl_HandleStyles1.png)
+![Bounds Control Handdle Styles1](../images/bounds-control/MRTK_BoundsControl_HandleStyles1.png)
 
 Below are the prefabs, materials, and the scaling values for the HoloLens 2 style bounds control handles. You can find this example in the `BoundsControlExamples` scene.
 
-<img src="images/bounds-control/MRTK_BoundsControl_HandleStyles2.png" width="450" alt="Bounds Control HandleStyles ">
+<img src="../images/bounds-control/MRTK_BoundsControl_HandleStyles2.png" width="450" alt="Bounds Control HandleStyles ">
 
 ### Handles (Setup for HoloLens 2 style)
 
@@ -208,9 +208,9 @@ Below are the prefabs, materials, and the scaling values for the HoloLens 2 styl
 
 ## Transformation changes with object manipulator
 
-A bounds control can be used in combination with [`ObjectManipulator.cs`](ObjectManipulator.md) to allow for certain types of manipulation (eg. moving the object) without using handles. The manipulation handler supports both one and two-handed interactions. [Hand tracking](input/HandTracking.md) can be used to interact with an object up close.
+A bounds control can be used in combination with [`ObjectManipulator.cs`](ObjectManipulator.md) to allow for certain types of manipulation (eg. moving the object) without using handles. The manipulation handler supports both one and two-handed interactions. [Hand tracking](../input/HandTracking.md) can be used to interact with an object up close.
 
-<img src="images/bounds-control/MRTK_BoundsControl_ObjectManipulator.png" width="450" alt="Bounds Control Object Manipulator">
+<img src="../images/bounds-control/MRTK_BoundsControl_ObjectManipulator.png" width="450" alt="Bounds Control Object Manipulator">
 
 In order for the bounds control edges to behave the same way when moving it using [`ObjectManipulator`](ObjectManipulator.md)'s far interaction, it is advised to connect its events for *On Manipulation Started* / *On Manipulation Ended* to `BoundsControl.HighlightWires` / `BoundsControl.UnhighlightWires` respectively, as shown in the screenshot above.
 
@@ -224,7 +224,7 @@ In order for the bounds control edges to behave the same way when moving it usin
 > [!NOTE]
 > Use *Target Object* and *Bounds Override* field in the inspector to assign specific object and collider in the object with multiple child components.
 
-![Bounds Control Assign Image](images/bounds-control/MRTK_BoundsControl_Assign.png)
+![Bounds Control Assign Image](../images/bounds-control/MRTK_BoundsControl_Assign.png)
 
 ## How to add and configure a bounds control in the code
 
@@ -305,15 +305,15 @@ private void PutABoundsControlAroundIt(GameObject target)
 
 ## Migrating from Bounding Box
 
-Existing prefabs and instances using [bounding box](BoundingBox.md) can be upgraded to the new bounds control via the [migration window](tools/MigrationWindow.md) which is part of the MRTK tools package.
+Existing prefabs and instances using [bounding box](BoundingBox.md) can be upgraded to the new bounds control via the [migration window](../tools/MigrationWindow.md) which is part of the MRTK tools package.
 
 For upgrading individual instances of bounding box there's also an a migration option inside the property inspector of the component.
 
-<img src="images/bounds-control/MRTK_BoundsControl_Migrate.png" width="450" alt="Bounds Control Migrate">
+<img src="../images/bounds-control/MRTK_BoundsControl_Migrate.png" width="450" alt="Bounds Control Migrate">
 
 ## See also
 
 * [Object manipulator](ObjectManipulator.md)
 * [Constraint manager](ConstraintManager.md)
-* [Migration window](tools/MigrationWindow.md)
-* [Elastics system (Experimental)](elastics/ElasticSystem.md)
+* [Migration window](../tools/MigrationWindow.md)
+* [Elastics system (Experimental)](../elastics/ElasticSystem.md)

@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Manipula
 
 # Manipulation handler
 
-![Manipulation handler Main](images/manipulation-handler/MRTK_Manipulation_Main.png)
+![Manipulation handler Main](../images/manipulation-handler/MRTK_Manipulation_Main.png)
 
 The *ManipulationHandler* script allows for an object to be made movable, scalable, and rotatable using one or two hands. Manipulation can be restricted so that it only allows certain kinds of transformation. The script works with various types of inputs including HoloLens 2 articulated hand input, hand-rays, HoloLens (1st gen) gesture input, and immersive headset motion controller input.
 
@@ -20,11 +20,11 @@ Add the `ManipulationHandler` script component to a GameObject. Make sure to als
 
 To make the object respond to near articulated hand input, add the `NearInteractionGrabbable` script as well.
 
-![Manipulation Handler How to](images/manipulation-handler/MRTK_ManipulationHandler_Howto.png)
+![Manipulation Handler How to](../images/manipulation-handler/MRTK_ManipulationHandler_Howto.png)
 
 ## Inspector properties
 
-<img src="images/manipulation-handler/MRTK_ManipulationHandler_Structure.png" width="450" alt="Manupulation Handler Structure">
+<img src="../images/manipulation-handler/MRTK_ManipulationHandler_Structure.png" width="450" alt="Manupulation Handler Structure">
 
 **Host Transform**
 Transform that will be dragged. Defaults to the object of the component.
@@ -45,7 +45,7 @@ Specifies whether the object can be manipulated using one hand, two hands, or bo
 * *Rotate Scale*: Rotating and scaling is allowed.
 * *Move Rotate Scale*: Moving, rotating and scaling is allowed.
 
-![Manipulation Handler](images/manipulation-handler/MRTK_ManipulationHandler_TwoHanded.jpg)
+![Manipulation Handler](../images/manipulation-handler/MRTK_ManipulationHandler_TwoHanded.jpg)
 
 **Allow Far Manipulation**
 Specifies whether manipulation can be done using far interaction with pointers.

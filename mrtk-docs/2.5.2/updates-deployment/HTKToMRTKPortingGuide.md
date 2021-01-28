@@ -125,16 +125,16 @@ Related input systems:
 
 |        Methods                   | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| Button                     | [Interactable Objects](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/InteractableObjectExample.md) | [Button](../features/Button.md) |
-| Interactable                     | [Interactable Objects](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/InteractableObjectExample.md) | [Interactable](../features/Interactable.md) |
-| Bounding Box             | [Bounding Box](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/BoundingBoxGizmoExample.md) | [Bounding Box](../features/BoundingBox.md) |
-| App Bar             | [App Bar](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/BoundingBoxGizmoExample.md) | [App Bar](../features/AppBar.md) |
-| One Hand Manipulation (Grb and Move)   | [HandDraggable](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/Interactions/HandDraggable.cs) | [Manipulation Handler](../features/ManipulationHandler.md) |
-| Two Hand Manipulation (Grab/Move/Rotate/Scale)             | [TwoHandManipulatable](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/Interactions/TwoHandManipulatable.cs) | [Manipulation Handler](../features/ManipulationHandler.md) |
-| Keyboard             | [Keyboard prefab]() | [System Keyboard](../features/SystemKeyboard.md) |
-| Tooltip             | [Tooltip](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/TooltipExample.md) | [Tooltip](../features/Tooltip.md) |
-| Object Collection             | [Object Collection](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/ObjectCollection.md) | [Object Collection](../features/ObjectCollection.md) |
-| Solver             | [Solver](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Utilities/Readme/SolverSystem.md) | [Solver](../features/Solver.md) |
+| Button                     | [Interactable Objects](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/InteractableObjectExample.md) | [Button](../features/ux-building-blocks/Button.md) |
+| Interactable                     | [Interactable Objects](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/InteractableObjectExample.md) | [Interactable](../features/ux-building-blocks/Interactable.md) |
+| Bounding Box             | [Bounding Box](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/BoundingBoxGizmoExample.md) | [Bounding Box](../features/ux-building-blocks/BoundingBox.md) |
+| App Bar             | [App Bar](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/BoundingBoxGizmoExample.md) | [App Bar](../features/ux-building-blocks/AppBar.md) |
+| One Hand Manipulation (Grb and Move)   | [HandDraggable](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/Interactions/HandDraggable.cs) | [Manipulation Handler](../features/ux-building-blocks/ManipulationHandler.md) |
+| Two Hand Manipulation (Grab/Move/Rotate/Scale)             | [TwoHandManipulatable](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/Interactions/TwoHandManipulatable.cs) | [Manipulation Handler](../features/ux-building-blocks/ManipulationHandler.md) |
+| Keyboard             | [Keyboard prefab]() | [System Keyboard](../features/ux-building-blocks/SystemKeyboard.md) |
+| Tooltip             | [Tooltip](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/TooltipExample.md) | [Tooltip](../features/ux-building-blocks/Tooltip.md) |
+| Object Collection             | [Object Collection](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/ObjectCollection.md) | [Object Collection](../features/ux-building-blocks/ObjectCollection.md) |
+| Solver             | [Solver](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Utilities/Readme/SolverSystem.md) | [Solver](../features/ux-building-blocks/Solver.md) |
 
 ## Utilities
 
@@ -143,7 +143,7 @@ Some Utilities have been reconciled as duplicates with the Solver system. Please
 | HTK 2017 |  MRTK v2  |
 |----------|-----------|
 | Billboard | [`Billboard`](xref:Microsoft.MixedReality.Toolkit.UI.Billboard) |
-| Tagalong | [`RadialView`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.RadialView) or [`Orbital`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.Orbital) [Solver](../features/Solver.md) |
-| FixedAngularSize | [`ConstantViewSize`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.ConstantViewSize) [Solver](../features/Solver.md) |
-| FpsDisplay | [Diagnostics System](../features/Diagnostics/DiagnosticsSystemGettingStarted.md) (in Configuration Profile) |
-| NearFade | Built-in to [Mixed Reality Toolkit Standard shader](../features/MRTKStandardShader.md) |
+| Tagalong | [`RadialView`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.RadialView) or [`Orbital`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.Orbital) [Solver](../features/ux-building-blocks/solvers/Solver.md) |
+| FixedAngularSize | [`ConstantViewSize`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.ConstantViewSize) [Solver](../features/ux-building-blocks/solvers/Solver.md) |
+| FpsDisplay | [Diagnostics System](../features/diagnostics/DiagnosticsSystemGettingStarted.md) (in Configuration Profile) |
+| NearFade | Built-in to [Mixed Reality Toolkit Standard shader](../features/rendering/MRTKStandardShader.md) |

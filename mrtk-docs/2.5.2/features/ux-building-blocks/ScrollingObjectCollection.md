@@ -1,5 +1,5 @@
 ---
-title: NearMenu
+title: ScrolingObjectCollection
 description: Overview Menu types MRTK
 author: vaoliva
 ms.author: vaolivaa
@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Scrollin
 
 # Scrolling object collection
 
-![Scrolling object collection](images/scrolling-collection/ScrollingCollection_Main.jpg)
+![Scrolling object collection](../images/scrolling-collection/ScrollingCollection_Main.jpg)
 
 The MRTK scrolling object collection is an UX component that enables scrolling of 3D content through a contained viewable area. The scrolling movement can be triggered by near or far input interaction and by discrete pagination. It supports both interactive and non-interactive objects.
 
@@ -32,7 +32,7 @@ The MRTK scrolling object collection is an UX component that enables scrolling o
     * `Container` - All scrolling content objects must be children of the container game object.
     * `Clipping bounds` - If scrolling content masking is enabled, the clipping bounds element ensures that only the scrollable content inside its boundaries is visible. The clipping bounds game object has two components: a disabled box collider and a [clipping box](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox).
 
-![Scrolling object collection elements](images/scrolling-collection/ScrollingObjectCollection.png)
+![Scrolling object collection elements](../images/scrolling-collection/ScrollingObjectCollection.png)
 
 ### Adding content to the scrolling object
 
@@ -48,10 +48,10 @@ The scrolling object collection can be combined with a [grid object collection](
 1. Add the content objects as children of the grid object.
 1. Press **update collection**.
 
-![Grid layout](images/scrolling-collection/ScrollingObjectCollection_GridLayout.png)
+![Grid layout](../images/scrolling-collection/ScrollingObjectCollection_GridLayout.png)
 
 > [!IMPORTANT]
-> Any scrolling content object material must use the [MRTK standard shader](MRTKStandardShader.md) in order for the clipping effect on the viewable area to work properly.
+> Any scrolling content object material must use the [MRTK standard shader](../rendering/MRTKStandardShader.md) in order for the clipping effect on the viewable area to work properly.
 
 > [!NOTE]
 > If scrolling content masking is enabled, the scrolling object collection will add a [material instance](Rendering/MaterialInstance.md) component to any content objects that have a renderer attached. This component is used to manage instanced materials lifetime and improve memory performance.
@@ -65,7 +65,7 @@ The scrolling object collection can be combined with a [grid object collection](
 
 Notice how the content objects lying outside the scrolling viewable area are now disabled, while objects intersecting the scroll wireframe might be partially masked by the clipping primitive.
 
-![Viewable area](images/scrolling-collection/ScrollingObjectCollection_ViewableArea.png)
+![Viewable area](../images/scrolling-collection/ScrollingObjectCollection_ViewableArea.png)
 
 ### Testing the scrolling object collection in the editor
 
@@ -140,17 +140,17 @@ public class ScrollablePagination : MonoBehaviour
 
 **ScrollingObjectCollection.unity** example scene consists of 3 scrollable examples, each one with a different velocity falloff configuration. The example scene contains walls to show the surface placement behavior that are disabled by default in the hierarchy. The example scene can be found under the ``MRTK/Examples/Demos/ScrollingObjectCollection/Scenes`` folder.
 
-![Scrolling object collection example scene](images/scrolling-collection/ScrollingObjectCollection_ExampleScene.png)
+![Scrolling object collection example scene](../images/scrolling-collection/ScrollingObjectCollection_ExampleScene.png)
 
 ## Scrolling example prefabs
 
 For convenience, two scrolling object collection prefabs are available to use. The example prefabs can be found under the ``MRTK/Examples/Demos/ScrollingObjectCollection/Prefabs`` folder.
 
-![Scrolling object collection prefabs](images/scrolling-collection/ScrollingObjectCollection_Prefabs.png)
+![Scrolling object collection prefabs](../images/scrolling-collection/ScrollingObjectCollection_Prefabs.png)
 
 ## See also
 
-* [Clipping Primitive](rendering/ClippingPrimitive.md)
-* [Material Instance](rendering/MaterialInstance.md)
-* [Standard Shader](MRTKStandardShader.md)
+* [Clipping Primitive](../rendering/ClippingPrimitive.md)
+* [Material Instance](../rendering/MaterialInstance.md)
+* [Standard Shader](../rendering/MRTKStandardShader.md)
 * [Object collection](ObjectCollection.md)

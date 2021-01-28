@@ -123,7 +123,7 @@ These tools are located in the **Mixed Reality Toolkit > Utilities** menu in the
 | | [RuntimeTools/Tools/ControllerMappingTool](../features/tools/ControllerMappingTool.md) | Utility enabling developers to quickly determine Unity mappings for hardware controllers. |
 | | ScreenshotUtility | Enables capturing application images in the Unity editor. |
 | | TextureCombinerWindow | Utility to combine graphics textures. |
-| | [Toolbox](../features/Toolbox.md) | UI that makes it easy to discover and use MRTK UX components. |
+| | [Toolbox](../features/ux-building-blocks/Toolbox.md) | UI that makes it easy to discover and use MRTK UX components. |
 
 ### Test utilities package
 
@@ -136,7 +136,7 @@ The optional Microsoft.MixedRealityToolkit.TestUtilities package is a collection
 
 ### Examples package
 
-The examples package contains demos, sample scripts, and sample scenes that exercise functionality in the foundation package. This package contains the [HandInteractionExample scene](../features/HandInteractionExamples.md) (pictured below) which contains sample objects
+The examples package contains demos, sample scripts, and sample scenes that exercise functionality in the foundation package. This package contains the [HandInteractionExample scene](../features/example-scenes/HandInteractionExamples.md) (pictured below) which contains sample objects
 that respond to various types of hand input (articulated and non-articulated).
 
 ![HandInteractionExample scene](../features/Images/MRTK_Examples.png)
@@ -267,7 +267,7 @@ The optional tools package (`com.microsoft.mixedreality.toolkit.tools)` contains
 | | [RuntimeTools/Tools/ControllerMappingTool](../features/tools/ControllerMappingTool.md) | Utility enabling developers to quickly determine Unity mappings for hardware controllers. |
 | | ScreenshotUtility | Enables capturing application images in the Unity editor. |
 | | TextureCombinerWindow | Utility to combine graphics textures. |
-| | [Toolbox](../features/Toolbox.md) | UI that makes it easy to discover and use MRTK UX components. |
+| | [Toolbox](../features/ux-building-blocks/Toolbox.md) | UI that makes it easy to discover and use MRTK UX components. |
 
 Dependencies:
 
