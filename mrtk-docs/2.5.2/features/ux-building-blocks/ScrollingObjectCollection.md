@@ -54,7 +54,7 @@ The scrolling object collection can be combined with a [grid object collection](
 > Any scrolling content object material must use the [MRTK standard shader](../rendering/MRTKStandardShader.md) in order for the clipping effect on the viewable area to work properly.
 
 > [!NOTE]
-> If scrolling content masking is enabled, the scrolling object collection will add a [material instance](Rendering/MaterialInstance.md) component to any content objects that have a renderer attached. This component is used to manage instanced materials lifetime and improve memory performance.
+> If scrolling content masking is enabled, the scrolling object collection will add a [material instance](../rendering/MaterialInstance.md) component to any content objects that have a renderer attached. This component is used to manage instanced materials lifetime and improve memory performance.
 
 ### Configuring the scrolling viewable area
 

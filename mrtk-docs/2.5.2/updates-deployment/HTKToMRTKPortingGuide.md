@@ -134,7 +134,7 @@ Related input systems:
 | Keyboard             | [Keyboard prefab]() | [System Keyboard](../features/ux-building-blocks/SystemKeyboard.md) |
 | Tooltip             | [Tooltip](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/TooltipExample.md) | [Tooltip](../features/ux-building-blocks/Tooltip.md) |
 | Object Collection             | [Object Collection](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/ObjectCollection.md) | [Object Collection](../features/ux-building-blocks/ObjectCollection.md) |
-| Solver             | [Solver](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Utilities/Readme/SolverSystem.md) | [Solver](../features/ux-building-blocks/Solver.md) |
+| Solver             | [Solver](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Utilities/Readme/SolverSystem.md) | [Solver](../features/ux-building-blocks/solvers/Solver.md) |
 
 ## Utilities
 
