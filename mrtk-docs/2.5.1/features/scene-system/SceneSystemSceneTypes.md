@@ -36,7 +36,7 @@ A set of scenes which store lighting information and lighting objects. Only one 
 
 Unity's lighting settings - ambient light, skyboxes, etc - can be tricky to manage when using additive loading because they're tied to individual scenes and override behavior is not straightforward. In practice this can cause confusion when assets are authored in lighting conditions that don't obtain at runtime.
 
-![Scene system lighting settings](../images/scene-system/MRTK_SceneSystemLightingSettings.PNG)
+![Scene system lighting settings 1](../images/scene-system/MRTK_SceneSystemLightingSettings.PNG)
 
 The Scene System uses lighting scenes to ensure that these settings remain consistent regardless of what scenes are loaded or active, both in edit mode and in play mode.
 
@@ -46,7 +46,7 @@ To enable this feature, check `Use Lighting Scene` in your profile and populate 
 
 Your profile stores cached copies of the lighting settings kept in your lighting scenes. If those settings change in your lighting scenes, you will need to update your cache to ensure lighting appears as expected in play mode. Your profile will display a warning when it suspects your cached settings are out of date. Clicking `Update Cached Lighting Settings` will load each of your lighting scenes, extract their settings, then store them in your profile.
 
-![Scene system lighting settings](../images/scene-system/MRTK_SceneSystemCachedLightingSettings.PNG)
+![Scene system lighting settings 2](../images/scene-system/MRTK_SceneSystemCachedLightingSettings.PNG)
 
 ### Editor behavior
 

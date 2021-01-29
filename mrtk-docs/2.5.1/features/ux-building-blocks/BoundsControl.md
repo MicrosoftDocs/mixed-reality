@@ -181,7 +181,7 @@ Bounds control provides the following events. This example uses these events to 
 
 Elastics can be used when manipulating objects via bounds control. Note that the [elastics system](../elastics/ElasticSystem.md) is still in experimental state. To enable elastics either link an existing elastics manager component or create and link a new elastics manager via the `Add Elastics Manager` button.
 
-<img src="Images/BoundsControl/MRTK_BoundsControl_Elastics.png" width="450" alt="Bounds control Elastics">
+<img src="../images/bounds-control/MRTK_BoundsControl_Elastics.png" width="450" alt="Bounds control Elastics">
 
 ## Handle styles
 

@@ -26,7 +26,7 @@ Physics behaviour can be enabled for the object manipulator by adding a rigidbod
 
 As well as this, manipulation can be constrained by adding [manipulation constraint components](ConstraintManager.md#transform-constraints) to the object. These are special components that work with manipulation and change the manipulation behaviour in some way.
 
-![Manipulation Handler](../images/object-manipulator/MRTK_ObjectManipulator_Howto.png)
+![Manipulation Handler 1](../images/object-manipulator/MRTK_ObjectManipulator_Howto.png)
 
 ## Inspector properties and fields
 
@@ -75,7 +75,7 @@ Specifies how two hand manipulation can transform an object. Because this proper
 - *Scale*: Scaling is allowed if selected.
 - *Rotate*: Rotation is allowed if selected.
 
-![Manipulation Handler](../images/manipulation-handler/MRTK_ManipulationHandler_TwoHanded.jpg)
+![Manipulation Handler 2](../images/manipulation-handler/MRTK_ManipulationHandler_TwoHanded.jpg)
 
 ### Constraints
 
@@ -169,9 +169,9 @@ When a rigidbody is added, collisions should work correctly.
 
 ## Elastics (Experimental)
 
-Elastics can be used when manipulating objects via object manipulator. Note that the [elastics system](Elastics/ElasticSystem.md) is still in experimental state. To enable elastics either link an existing elastics manager component or create and link a new elastics manager via the `Add Elastics Manager` button.
+Elastics can be used when manipulating objects via object manipulator. Note that the [elastics system](../elastics/ElasticSystem.md) is still in experimental state. To enable elastics either link an existing elastics manager component or create and link a new elastics manager via the `Add Elastics Manager` button.
 
-<img src="Images/BoundsControl/MRTK_BoundsControl_Elastics.png" width="450" alt="Bounds Control Elastics">
+<img src="../images/bounds-control/MRTK_BoundsControl_Elastics.png" width="450" alt="Bounds Control Elastics">
 
 ## See also
 

@@ -186,7 +186,7 @@ Finally, surfaces farther than the `MaxRaycastDistance` property setting will be
 
 The [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) behavior provides a solver that constrains the tracked object to a region safe for hand constrained content (such as hand UI, menus, etc). Safe regions are considered areas that don't intersect with the hand. A derived class of [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) called [`HandConstraintPalmUp`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraintPalmUp) is also included to demonstrate a common behavior of activating the solver tracked object when the palm is facing the user.
 
-[Please see Hand Menu page](README_HandMenu.md) for the examples of using Hand Constraint solver to create hand menus.
+[Please see Hand Menu page](../HandMenu.md) for the examples of using Hand Constraint solver to create hand menus.
 
 ## Experimental solvers
 

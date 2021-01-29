@@ -136,10 +136,10 @@ The optional Microsoft.MixedRealityToolkit.TestUtilities package is a collection
 
 ### Examples package
 
-The examples package contains demos, sample scripts, and sample scenes that exercise functionality in the foundation package. This package contains the [HandInteractionExample scene](../features/ux-building-blocks/HandInteractionExamples.md) (pictured below) which contains sample objects
+The examples package contains demos, sample scripts, and sample scenes that exercise functionality in the foundation package. This package contains the [HandInteractionExample scene](../features/example-scenes/HandInteractionExamples.md) (pictured below) which contains sample objects
 that respond to various types of hand input (articulated and non-articulated).
 
-![HandInteractionExample scene](../features/Images/MRTK_Examples.png)
+![HandInteractionExample scene](../features/images/MRTK_Examples.png)
 
 This package also contains eye tracking demos, which are [documented here](../features/eye-tracking/EyeTracking_ExamplesOverview.md)
 

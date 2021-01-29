@@ -106,8 +106,8 @@ Each of the individual profiles are detailed below:
 - [Pointer configuration](#pointer-configuration)
 - [Gestures configuration](#gestures-configuration)
 - [Speech commands](#speech-commands)
-- [Controller mapping configuration](#Controller-mapping-configuration)
-- [Controller visualization settings](#Controller-visualization-settings)
+- [Controller mapping configuration](#controller-mapping-configuration)
+- [Controller visualization settings](#controller-visualization-settings)
 
 ---
 <a name="boundary"></a>

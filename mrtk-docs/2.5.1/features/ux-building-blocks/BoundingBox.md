@@ -163,7 +163,7 @@ By default, when you just assign the [`BoundingBox.cs`](xref:Microsoft.MixedReal
 
 Below are the prefabs, materials, and the scaling values for the HoloLens 2 style bounding box handles. You can find this example in the `BoundingBoxExamples` scene.
 
-<img src="../features/Images/BoundingBox/MRTK_BoundingBox_HandleStyles2.png" width="450" alt="bounding Box Handle Styles 2">
+<img src="../images/bounding-box/MRTK_BoundingBox_HandleStyles2.png" width="450" alt="bounding Box Handle Styles 2">
 
 ### Handles (Setup for HoloLens 2 style)
 
@@ -192,9 +192,9 @@ Show and hide the handles with animation based on the distance to the hands. It 
 
 ## Making an object movable with manipulation handler
 
-A bounding box can be combined with [`ManipulationHandler.cs`](ManipulationHandler.md) to make the object movable using far interaction. The manipulation handler supports both one and two-handed interactions. [Hand tracking](Input/HandTracking.md) can be used to interact with an object up close.
+A bounding box can be combined with [`ManipulationHandler.cs`](ManipulationHandler.md) to make the object movable using far interaction. The manipulation handler supports both one and two-handed interactions. [Hand tracking](../input/HandTracking.md) can be used to interact with an object up close.
 
-<img src="../features/Images/BoundingBox/MRTK_BoundingBox_ManipulationHandler.png" width="450" alt="Manpulation handler">
+<img src="../images/bounding-box/MRTK_BoundingBox_ManipulationHandler.png" width="450" alt="Manpulation handler">
 
 In order for the bounding box edges to behave the same way when moving it using [`ManipulationHandler`](ManipulationHandler.md)'s far interaction, it is advised to connect its events for *On Manipulation Started* / *On Manipulation Ended* to `BoundingBox.HighlightWires` / `BoundingBox.UnhighlightWires` respectively, as shown in the screenshot above.
 
@@ -204,4 +204,4 @@ Existing prefabs and instances using [bounding box](BoundingBox.md) can be upgra
 
 For upgrading individual instances of bounding box there's also an a migration option inside the property inspector of the component.
 
-<img src="../features/Images/BoundsControl/MRTK_BoundsControl_Migrate.png" width="450" alt="Bounds control migrate">
+<img src="../images/bounds-control/MRTK_BoundsControl_Migrate.png" width="450" alt="Bounds control migrate">

@@ -143,7 +143,7 @@ Some Utilities have been reconciled as duplicates with the Solver system. Please
 | HTK 2017 |  MRTK v2  |
 |----------|-----------|
 | Billboard | [`Billboard`](xref:Microsoft.MixedReality.Toolkit.UI.Billboard) |
-| Tagalong | [`RadialView`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.RadialView) or [`Orbital`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.Orbital) [Solver](../features/ux-building-blocks/Solver.md) |
+| Tagalong | [`RadialView`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.RadialView) or [`Orbital`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.Orbital) [Solver](../features/ux-building-blocks/solvers/Solver.md) |
 | FixedAngularSize | [`ConstantViewSize`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.ConstantViewSize) [Solver](../features/ux-building-blocks/solvers/Solver.md) |
 | FpsDisplay | [Diagnostics System](../features/diagnostics/DiagnosticsSystemGettingStarted.md) (in Configuration Profile) |
 | NearFade | Built-in to [Mixed Reality Toolkit Standard shader](../features/rendering/MRTKStandardShader.md) |

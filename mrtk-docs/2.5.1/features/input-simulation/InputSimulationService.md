@@ -27,7 +27,7 @@ Users can use a conventional keyboard and mouse combination to control simulated
 
 Input simulation is enabled by default in the profiles that ship with MRTK.
 
-Input simulation is an optional [Mixed Reality service](../../out-of-scope/MixedRealityServices.md) though and can be removed as a data provider in the [Input System profile](../Input/InputProviders.md).
+Input simulation is an optional [Mixed Reality service](../../architecture/MixedRealityServices.md) though and can be removed as a data provider in the [Input System profile](../input/InputProviders.md).
 
 Under the Input System Data provider configuration, the Input Simulation service can be configured with the following.
 
@@ -197,10 +197,10 @@ The simulated motion controllers can be manipulated the same way articulated han
 
 ### Eye tracking
 
-[Eye tracking simulation](../EyeTracking/EyeTracking_BasicSetup.md#simulating-eye-tracking-in-the-unity-editor) can be enabled by checking the **Simulate Eye Position** option in the
+[Eye tracking simulation](../eye-tracking/EyeTracking_BasicSetup.md#simulating-eye-tracking-in-the-unity-editor) can be enabled by checking the **Simulate Eye Position** option in the
 [Input Simulation Profile](#enabling-the-input-simulation-service). This should not be used with GGV or motion controller
 style interactions (so ensure that **Default Controller Simulation Mode** is set to *Articulated Hand*).
 
 ## See also
 
-* [Input System profile](../Input/InputProviders.md).
+* [Input System profile](../input/InputProviders.md).

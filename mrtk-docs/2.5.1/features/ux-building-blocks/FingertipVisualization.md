@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Fingerti
 
 # Fingertip visualization
 
-![Fingertip visualization](../images/fingertip/MRTK_FingertipVisualization_Main.png)
+![Fingertip visualization Main](../images/fingertip/MRTK_FingertipVisualization_Main.png)
 
 The fingertip affordance helps the user recognize the distance from the target object. The ring shape visual adjusts its size based on the distance from the fingertip to the object. The fingertip visualization is primarily controlled by the `FingerCursor` (Assets/MRTK/SDK/Features/UX/Prefabs/Cursors/FingerCursor.prefab) (and script) which is spawned as the cursor prefab of the *PokePointer*. Other components of the visualization include the *ProximityLight* script, and *MixedRealityStandard* shader.
 
@@ -24,9 +24,9 @@ At a high level the fingertip visualization works by using a proximity light to 
 
 ## Example scene
 
-You can find fingertip visualization examples in almost any scene that works with articulated hands, but is prominent in the [HandInteractionExample scene](HandInteractionExamples.md).
+You can find fingertip visualization examples in almost any scene that works with articulated hands, but is prominent in the [HandInteractionExample scene](../example-scenes/HandInteractionExamples.md).
 
-![Fingertip visualization](../images/fingertip/MRTK_FingertipVisualization_States.png)
+![Fingertip visualization States](../images/fingertip/MRTK_FingertipVisualization_States.png)
 
 ## Inspector properties
 

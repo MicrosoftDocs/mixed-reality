@@ -51,7 +51,7 @@ Tap to Place is a far interaction component that is used to place a game object 
 
     `TrackedTargetType`: Head (Default) |  `TrackedTargetType`: Controller Ray
     :-------------------------:|:-------------------------:
-    ![TapToPlaceInputSimulationHead](../../images/solver/tap-to-place/TapToPlaceInputSimulationHead.gif)  |  ![TapToPlaceInputSimulationControllerRay](../../images/solver/tap-to-place/TapToPlaceInputSimulationControllerRay.gif)
+    ![TapToPlace Input Simulation Head 1](../../images/solver/tap-to-place/TapToPlaceInputSimulationHead.gif)  |  ![TapToPlace InputSimulation Controller Ray](../../images/solver/tap-to-place/TapToPlaceInputSimulationControllerRay.gif)
 
 ## Tap to Place Code Configurability
 
@@ -99,7 +99,7 @@ Tap to Place object selection timing can also be controlled via `StartPlacement(
 
 The Tap to Place example scene consists of 4 placeable objects, each with a different configuration. The example scene contains walls to show the surface placement behavior that are disabled by default in the hierarchy. The example scene can be found in the Microsoft.MixedReality.Toolkit.Unity.Examples unity package found on the [Release Page](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases). The scene location is: *MRTK.Examples/Demos/Solvers/Scenes/TapToPlaceExample.unity*
 
-![TapToPlaceExampleScene](../../images/solver/tap-to-place/TapToPlaceExampleScene.gif)
+![TapToPlace Example Scene 1](../../images/solver/tap-to-place/TapToPlaceExampleScene.gif)
 
 ## See also
 

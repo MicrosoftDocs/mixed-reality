@@ -339,7 +339,7 @@ The input simulation system has been upgraded, which changes a few settings in t
 1. Keys for rotating hands have been removed, hand rotation is now controlled by the mouse as well. Holding `HandRotateButton` (Ctrl) together with the left/right hand manipulation key (LShift/Space) will enable hand rotation.
 1. A new axis "UpDown" has been introduced to the input axis list. This controls camera movement in the vertical and defaults to Q/E keys as well as the controller trigger buttons.
 
-For more information on these changes, please see the [input simulation service](../features/InputSimulation/InputSimulationService.md) article.
+For more information on these changes, please see the [input simulation service](../features/input-simulation/InputSimulationService.md) article.
 
 **Mouse data provider profile**
 
@@ -402,7 +402,7 @@ Using the new CoreSystem class will ensure that your application code will not n
 
 With the addition of the IMixedRealityRaycastProvider, the input system configuration profile was changed. If you have a custom profile, you may receive the errors in the following image when you run your application.
 
-![Selecting the Raycast provider](../features/images/release-notes/UnableToRegisterRaycastProvider.png)
+![unable to regester Raycast provider](../features/images/release-notes/UnableToRegisterRaycastProvider.png)
 
 To fix these, please add an IMixedRealityRaycastProvider instance to your input system profile.
 

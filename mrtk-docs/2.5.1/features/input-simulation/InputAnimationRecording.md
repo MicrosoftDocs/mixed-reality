@@ -30,8 +30,8 @@ Two input system services are provided to record and play back input respectivel
 
 [`InputRecordingService`](xref:Microsoft.MixedReality.Toolkit.Input.InputRecordingService) takes data from the main camera transform and active hand controllers and stores it in an internal buffer. When requested this data is then serialized into binary files for storage and later replay.
 
-<a target="_blank" href="../images/input-simulation/MRTK_InputAnimation_RecordingDiagram.png">
-  <img src="../images/input-simulation/MRTK_InputAnimation_RecordingDiagram.png" title="Recording input animation" width="80%" class="center" />
+<a target="_blank" href="../images/input-simulation/MRTK_InputAnimation_RecordingDiagram.png" alt="Input Simulation">
+  <img src="../images/input-simulation/MRTK_InputAnimation_RecordingDiagram.png" title="Recording input animation" width="80%" alt="InputAnimation" class="center" />
 </a>
 
 To start recording input call the [`StartRecording`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputRecordingService.StartRecording) function. [`StopRecording`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputRecordingService.StopRecording) will pause recording (but not discard the data recorded so far, use [`DiscardRecordedInput`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputRecordingService.DiscardRecordedInput) to do this if needed).

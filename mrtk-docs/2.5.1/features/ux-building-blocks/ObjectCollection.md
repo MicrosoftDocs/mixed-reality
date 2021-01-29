@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Object c
 
 # Object collection
 
-![Object collection](../images/object-collection/MRTK_ObjectCollection_Main.jpg)
+![Object collection Main](../images/object-collection/MRTK_ObjectCollection_Main.jpg)
 
 Object collection is a script to help lay out an array of objects in predefined three-dimensional shapes. It supports various surface styles including plane, cylinder, sphere, and radial. Since it supports any object in Unity, it can be used to layout both 2D and 3D objects.
 
@@ -29,7 +29,7 @@ Object collection is a script to help lay out an array of objects in predefined 
 
 To create a collection, create an empty GameObject and assign one of the Object Collection scripts to it. Any object(s) can be added as a child of the GameObject. Once finished adding child objects, click the *Update Collection* button in the inspector panel to generate the object collection. The objects will be laid out in the scene according to the collection parameters. Update Collection can be accessed through the code too.
 
-![Object collection](../images/object-collection/MRTK_ObjectCollectionScript.png)
+![Object collection Script](../images/object-collection/MRTK_ObjectCollectionScript.png)
 
 ## `GridObjectCollection` content alignment
 
@@ -63,10 +63,10 @@ The `ObjectCollectionExamples` (Assets/MRTK/Examples/Demos/UX/Collections/Scenes
 
 An object collection can be used to layout imported 3D objects. The example below shows the plane and cylindrical layouts of 3D chair model objects using a collection.
 
-![Object collection](../images/object-collection/MRTK_ObjectCollection_3DObjects.jpg)
+![Object collection 3D](../images/object-collection/MRTK_ObjectCollection_3DObjects.jpg)
 
 **2D Objects**
 
 An object collection can also be crated from 2D images. For example, multiple images can be placed in a grid style.
 
-![Object collection](../images/object-collection/MRTK_ObjectCollection_Layout_2DImages.jpg)
+![Object collection 2D](../images/object-collection/MRTK_ObjectCollection_Layout_2DImages.jpg)
