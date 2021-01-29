@@ -24,7 +24,8 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
@@ -41,7 +42,8 @@
     "globalMetadata": {
       "breadcrumb_path": "/mrtk/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "feedback_system": "None",
+      "ms.prod": "mixed-reality"
     },
     "fileMetadata": {},
     "template": [],
