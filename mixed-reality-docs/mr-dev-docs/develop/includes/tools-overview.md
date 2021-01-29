@@ -16,7 +16,7 @@ The Mixed Reality Feature Tool is a new way for developers to discover and add M
 
 ![MRTK](../../design/images/MRTK_UX_Hero.png)
 
-[Mixed Reality Toolkit](../unity/mrtk-getting-started.md) (MRTK) is an open-source, cross-platform development kit for mixed reality applications. Install the Mixed Reality Toolkit package by following the [installation and usage instructions](../welcome-to-mr-feature-tool.md) and selecting the **Mixed Reality Toolkit Foundation** package.
+[Mixed Reality Toolkit](../../unity/mrtk-getting-started.md) (MRTK) is an open-source, cross-platform development kit for mixed reality applications. Install the Mixed Reality Toolkit package by following the [installation and usage instructions](../welcome-to-mr-feature-tool.md) and selecting the **Mixed Reality Toolkit Foundation** package.
 
 We recommend completing the getting started section in our curated [HoloLens](../unity/unity-development-overview.md#1-getting-started) or [VR](../unity/unity-development-wmr-overview.md#1-getting-started) development journeys. If you're already following the Unity development for HoloLens journey, finish up the rest of the setup steps listed below and continue on to the [HoloLens 2 Getting Started tutorials](../unity/tutorials/mr-learning-base-01.md).
 

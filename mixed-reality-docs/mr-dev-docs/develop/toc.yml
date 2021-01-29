@@ -25,19 +25,19 @@
   - name: Unity development for VR
     href: unity/unity-development-wmr-overview.md
   - name: Mixed Reality Feature Tool
-      items: 
-        - name: Welcome to the MR Feature Tool
-          href: unity/welcome-to-mr-feature-tool.md
-        - name: Configure 
-          href: unity/configuring-feature-tool.md
-        - name: Discover
-          href: unity/discovering-features.md
-        - name: Import 
-          href: unity/importing-features.md
-        - name: Package details
-          href: unity/viewing-package-details.md
-        - name: Reviewing changes 
-          href: unity/reviewing-changes.md
+    items: 
+      - name: Welcome to the MR Feature Tool
+        href: unity/welcome-to-mr-feature-tool.md
+      - name: Configure 
+        href: unity/configuring-feature-tool.md
+      - name: Discover
+        href: unity/discovering-features.md
+      - name: Import 
+        href: unity/importing-features.md
+      - name: Package details
+        href: unity/viewing-package-details.md
+      - name: Reviewing changes 
+        href: unity/reviewing-changes.md
   - name: Tutorials
     items:
       - name: Overview
