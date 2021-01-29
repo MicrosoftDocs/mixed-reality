@@ -30,7 +30,7 @@ Before you can run the Mixed Reality Feature Tool, you'll need:
 
 Once you have your environment set up:
 
-* Download the latest version of the Mixed Reality Feature Tool from the [GitHub releases page](https://aka.ms/MRFeatureTool)
+* Download the latest version of the Mixed Reality Feature Tool from the [Microsoft Download Center](https://aka.ms/MRFeatureTool).
 * When the download completes, unzip the file and save it to your desktop
     * We recommend creating a shortcut to the executable file for faster access
 
