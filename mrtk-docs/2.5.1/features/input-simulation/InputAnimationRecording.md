@@ -47,7 +47,7 @@ For details on the binary file format see [Input Animation File Format Specifica
 [`InputPlaybackService`](xref:Microsoft.MixedReality.Toolkit.Input.InputPlaybackService) reads a binary file with input animation data and then applies this data through the [InputSimulationService](xref:Microsoft.MixedReality.Toolkit.Input.InputSimulationService) to recreate the recorded movements.
 
 <a target="_blank" href="../images/input-simulation/MRTK_InputAnimation_PlaybackDiagram.png">
-  <img src="../images/input-simulation/MRTK_InputAnimation_PlaybackDiagram.png" title="Playing back input animation" width="80%" class="center" />
+  <img src="../images/input-simulation/MRTK_InputAnimation_PlaybackDiagram.png" title="Playing back input animation" width="80%" alt="Input Simulation" class="center" />
 </a>
 
 To start playing back input animation it should be loaded from a file using the [LoadInputAnimation](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputPlaybackService.LoadInputAnimation*) function.
