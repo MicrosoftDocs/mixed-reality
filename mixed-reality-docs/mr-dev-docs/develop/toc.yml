@@ -5,23 +5,7 @@
 - name: Samples and feature apps
   href: features-and-samples.md
 - name: Install the tools 
-  items: 
-    - name: General requirements
-      href: install-the-tools.md
-    - name: Mixed Reality Feature Tool
-      items: 
-        - name: Welcome to the MR Feature Tool
-          href: welcome-to-mr-feature-tool.md
-        - name: Configure 
-          href: configuring-feature-tool.md
-        - name: Discover
-          href: discovering-features.md
-        - name: Import 
-          href: importing-features.md
-        - name: Package details
-          href: viewing-package-details.md
-        - name: Reviewing changes 
-          href: reviewing-changes.md
+  href: install-the-tools.md
 - name: Porting apps
   items:
   - name: Porting overview
@@ -40,6 +24,20 @@
     href: unity/unity-development-overview.md
   - name: Unity development for VR
     href: unity/unity-development-wmr-overview.md
+  - name: Mixed Reality Feature Tool
+      items: 
+        - name: Welcome to the MR Feature Tool
+          href: unity/welcome-to-mr-feature-tool.md
+        - name: Configure 
+          href: unity/configuring-feature-tool.md
+        - name: Discover
+          href: unity/discovering-features.md
+        - name: Import 
+          href: unity/importing-features.md
+        - name: Package details
+          href: unity/viewing-package-details.md
+        - name: Reviewing changes 
+          href: unity/reviewing-changes.md
   - name: Tutorials
     items:
       - name: Overview
