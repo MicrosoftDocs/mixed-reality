@@ -1,5 +1,5 @@
 ---
-title: README_BoundingBox
+title: BoundingBox
 description: Overview on Bounding Box in MRTK
 author: CDiaz-MS
 ms.author: cadia
@@ -10,10 +10,10 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Bounding
 
 # Bounding box
 
-![Bounding box](../features//Images/BoundingBox/MRTK_BoundingBox_Main.png)
+![Bounding box](../images/bounding-box/MRTK_BoundingBox_Main.png)
 
 > [!NOTE]
-> Bounding box is deprecated and replaced by its successor [bounds control](README_BoundsControl.md). Use [one of the migration options](#migrating-to-bounds-control) to upgrade existing game objects.
+> Bounding box is deprecated and replaced by its successor [bounds control](BoundsControl.md). Use [one of the migration options](#migrating-to-bounds-control) to upgrade existing game objects.
 
 The [`BoundingBox.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundingBox) script provides basic functionality for transforming objects in mixed reality. A bounding box will show a cube around the hologram to indicate that it can be interacted with. Handles on the corners and edges of the cube allow scaling or rotating the object. The bounding box also reacts to user input. On HoloLens 2, for example, the bounding box responds to finger proximity, providing visual feedback to help perceive the distance from the object. All interactions and visuals can be easily customized.
 
@@ -23,7 +23,7 @@ For more information, see [Bounding box and App bar](https://docs.microsoft.com/
 
 You can find examples of bounding box configurations in the `BoundingBoxExamples` scene.
 
-<img src="../features//Images/BoundingBox/MRTK_BoundingBox_Examples.png" alt="Bounding Box example scene">
+<img src="../images/bounding-box/MRTK_BoundingBox_Examples.png" alt="Bounding Box example scene">
 
 ## How to add and configure a bounding box using Unity Inspector
 
@@ -35,7 +35,7 @@ You can find examples of bounding box configurations in the `BoundingBoxExamples
 > [!NOTE]
 > Use *Target Object* and *Bounds Override* field in the inspector to assign specific object and collider in the object with multiple child components.
 
-![Bounding Box Assign](../features//Images/BoundingBox/MRTK_BoundingBox_Assign.png)
+![Bounding Box Assign](../images/bounding-box/MRTK_BoundingBox_Assign.png)
 
 ## How to add and configure a bounding box in the code
 
@@ -153,13 +153,13 @@ Bounding box provides the following events. This example uses these events to pl
 * **Scale Started**: Fires when scaling starts.
 * **Scale Ended**: Fires when scaling ends.
 
-<img src="../features//Images/BoundingBox/MRTK_BoundingBox_Events.png" width="450" alt="Bounding Box Event">
+<img src="../images/bounding-box/MRTK_BoundingBox_Events.png" width="450" alt="Bounding Box Event">
 
 ## Handle styles
 
 By default, when you just assign the [`BoundingBox.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundingBox) script, it will show the handle of the HoloLens 1st gen style. To use HoloLens 2 style handles, you need to assign proper handle prefabs and materials.
 
-![Bounding Box HandelStyles 1](../features//Images/BoundingBox/MRTK_BoundingBox_HandleStyles1.png)
+![Bounding Box HandelStyles 1](../images/bounding-box/MRTK_BoundingBox_HandleStyles1.png)
 
 Below are the prefabs, materials, and the scaling values for the HoloLens 2 style bounding box handles. You can find this example in the `BoundingBoxExamples` scene.
 
@@ -181,7 +181,7 @@ Below are the prefabs, materials, and the scaling values for the HoloLens 2 styl
 
 Show and hide the handles with animation based on the distance to the hands. It has two-step scaling animation.
 
-<img src="../features//Images/BoundingBox/MRTK_BoundingBox_Proximity.png" alt="Bounding box proximity">
+<img src="../images/bounding-box/MRTK_BoundingBox_Proximity.png" alt="Bounding box proximity">
 
 * **Proximity Effect Active**: Enable proximity-based handle activation
 * **Handle Medium Proximity**: Distance for the 1st step scaling
@@ -192,15 +192,15 @@ Show and hide the handles with animation based on the distance to the hands. It 
 
 ## Making an object movable with manipulation handler
 
-A bounding box can be combined with [`ManipulationHandler.cs`](README_ManipulationHandler.md) to make the object movable using far interaction. The manipulation handler supports both one and two-handed interactions. [Hand tracking](Input/HandTracking.md) can be used to interact with an object up close.
+A bounding box can be combined with [`ManipulationHandler.cs`](ManipulationHandler.md) to make the object movable using far interaction. The manipulation handler supports both one and two-handed interactions. [Hand tracking](Input/HandTracking.md) can be used to interact with an object up close.
 
 <img src="../features/Images/BoundingBox/MRTK_BoundingBox_ManipulationHandler.png" width="450" alt="Manpulation handler">
 
-In order for the bounding box edges to behave the same way when moving it using [`ManipulationHandler`](README_ManipulationHandler.md)'s far interaction, it is advised to connect its events for *On Manipulation Started* / *On Manipulation Ended* to `BoundingBox.HighlightWires` / `BoundingBox.UnhighlightWires` respectively, as shown in the screenshot above.
+In order for the bounding box edges to behave the same way when moving it using [`ManipulationHandler`](ManipulationHandler.md)'s far interaction, it is advised to connect its events for *On Manipulation Started* / *On Manipulation Ended* to `BoundingBox.HighlightWires` / `BoundingBox.UnhighlightWires` respectively, as shown in the screenshot above.
 
 ## Migrating to bounds control
 
-Existing prefabs and instances using [bounding box](README_BoundingBox.md) can be upgraded to the new bounds control via the [migration window](Tools/MigrationWindow.md) which is part of the MRTK tools package.
+Existing prefabs and instances using [bounding box](BoundingBox.md) can be upgraded to the new bounds control via the [migration window](../tools/MigrationWindow.md) which is part of the MRTK tools package.
 
 For upgrading individual instances of bounding box there's also an a migration option inside the property inspector of the component.
 

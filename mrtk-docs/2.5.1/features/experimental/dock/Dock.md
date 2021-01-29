@@ -1,5 +1,5 @@
 ---
-title: README_Dock
+title: Dock
 description: description for Dock Controls.
 author: CDiaz-MS
 ms.author: cadia 
@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Dock
 
-![Dock](../../Images/Dock/MRTK_UX_Dock_Main.png)
+![Dock](../../images/dock/MRTK_UX_Dock_Main.png)
 
 This control enables moving objects in and out of predetermined positions, to create palettes, shelves and navigation bars.
 

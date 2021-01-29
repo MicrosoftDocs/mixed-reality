@@ -1,5 +1,5 @@
 ---
-title: README_Dialog
+title: Dialog
 description: Description for Dialog Controls.
 author: CDiaz-MS
 ms.author: cadia
@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Dialog
 
-![Dialog](../../Images/Dialog/MRTK_UX_Dialog_Main.png)
+![Dialog](../../images/dialog/MRTK_UX_Dialog_Main.png)
 
 Dialog controls are UI overlays that provide contextual app information. They often request some kind of action from the user. Use dialogs to notify users of important information or to request confirmation or additional info before an action can be completed.
 
