@@ -11,6 +11,19 @@ keywords: Unreal, Unreal Engine 4, Unreal editor, UE4, HoloLens, HoloLens 2, mix
 
 # Creating your first HoloLens Unreal application
 
+This guide will walk you through getting your first Mixed Reality app running on the HoloLens in Unreal Engine. In the tradition of "Hello World", you'll create a simple app that displays a cube on the screen. To make it more useful, you'll also create your first gesture to rotate the cube and quit the application. 
+
+## Objectives
+
+* Start a HoloLens Project
+* Enable the correct plugins
+* Create an AR Dataset
+* Set up the inputs to enable gestures
+* Build a basic level
+* Implement a pinch gesture
+
+## Creating a new project
+
 The first thing you need is a project to work with. If you're a first-time Unreal developer, you'll need to [download supporting files](tutorials/unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal) from the Epic Launcher.
 
 1. Launch Unreal Engine
@@ -126,14 +139,18 @@ With that done, your next step is to make sure the AR session starts and stops w
 
 ![Action mappings with Open XR Msft Hand interaction options highlighted](images/unreal-quickstart-img-16.jpg)
 
-4. Open the **Level Blueprint** and add an **InputAction RightPinch** and **InputAction LeftPinch**
+## Setting up gestures
+
+Now that we have setup the inputs, we can get to the exciting part: Adding gestures! Lets rotate the cube on the right pinch and quit the application on left pinch.
+
+1. Open the **Level Blueprint** and add an **InputAction RightPinch** and **InputAction LeftPinch**
 * Connect the right pinch event to an **AddActorLocalRotation** with your **Cube** as the target and **Delta Rotation** set to **X = 0, Y = 0**, and **Z = 20**. The cube will now rotate by 20 degrees every time you pinch
 * Connect the left pinch event to **Quit Game**
 
 ![Level bluprint open with input actions for right and left pinch events](images/unreal-quickstart-img-17.jpg)
 
-5. In the cube's **Transform** settings, set **Mobility** to **Movable** so it can move dynamically:
+2. In the cube's **Transform** settings, set **Mobility** to **Movable** so it can move dynamically:
 
 ![Tranform settings with mobility property highlighted](images/unreal-quickstart-img-18.jpg)
 
-At this point, you're ready to deply and test the application!
+At this point, you're ready to deploy and test the application!
