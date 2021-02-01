@@ -26,38 +26,11 @@ Since the new inputs aren't accessible through existing Windows and Unity APIs, 
 
 You can grab MotionController instances by creating a *MotionControllerWatcher* and subscribing to its events, similar to using *InteractionManager* events to discover new *InteractionSource* instances. The MotionController’s methods and properties describe the inputs supported by the controller, including its buttons, triggers, 2D axis, and thumbstick. The MotionController class also exposes methods for accessing input states through the *MotionControllerReading* class. The MotionControllerReading class represents a snapshot of the controller’s state at a given time. 
 
-## Installing Microsoft.MixedReality.Input using the Unity Package Manager 
+## Installing Microsoft.MixedReality.Input with the Mixed Reality Feature Tool
 
-The Unity Package Manager uses a [manifest file](https://docs.unity3d.com/Manual/upm-manifestPkg.html) (manifest.json) to determine which packages to install and the registries (servers) they can be installed from. Before you can use the Microsoft.MixedReality.Input package, you'll need to register the Mixed Reality component server.
+Install the Microsoft.MixedReality.Input plugin with the new Mixed Reality Feature Tool application. Follow the [installation and usage instructions](welcome-to-mr-feature-tool.md) and select the **Mixed Reality Input** package in the Mixed Reality Toolkit category:
 
-### Registering the Mixed Reality component server 
-
-For each project that will be using the Mixed Reality Input package, the manifest.json file (in the Packages folder) needs the Mixed Reality scoped registry added. To properly modify manifest.json to support Mixed Reality: 
-    1. Open <projectRoot>/Packages/manifest.json in a text editor, such as Visual Studio Code. 
-    2. At the top of the manifest file, add the Mixed Reality server to the scoped registry section and save the file. 
-    
-<pre>
-{ 
-  "scopedRegistries": [ 
-    { 
-      "name": "Microsoft Mixed Reality", 
-      "url": "https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry/", 
-      "scopes": [ 
-        "com.microsoft.mixedreality" 
-      ] 
-    } 
-  ], 
-</pre>
-
-### Adding the Microsoft.MixedReality.Input package 
-
-Modify the dependencies section of the <projectRoot>/Packages/manifest.json file in the text editor to add com.microsoft.mixedreality.input package and save the file. 
-
-<pre>
-  "dependencies": { 
-    "com.microsoft.mixedreality.input": "0.9.2006", 
-  }
-</pre>
+![Mixed Reality Feature Tool packages window with mixed reality input  highlighted](images/feature-tool-mrinput.png)
 
 ## Using Microsoft.MixedReality.Input 
 
