@@ -276,7 +276,7 @@
     href: unreal/unreal-porting.md
   - name: Quickstarts
     items:
-      - name: Creating a HoloLens project
+      - name: Creating your first HoloLens Unreal application
         href: unreal/unreal-quickstart.md
   - name: Tutorials
     items:

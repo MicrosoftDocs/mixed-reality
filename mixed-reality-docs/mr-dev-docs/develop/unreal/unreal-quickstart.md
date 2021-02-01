@@ -1,5 +1,5 @@
 ---
-title: Creating a HoloLens project
+title: Creating your first HoloLens Unreal application
 description: Learn how to correctly configure an Unreal project with scene objects and input interactions for HoloLens mixed reality development. 
 author: hferrone
 ms.author: safarooq
@@ -9,7 +9,7 @@ ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, Unreal editor, UE4, HoloLens, HoloLens 2, mixed reality, development, documentation, guides, features, mixed reality headset, windows mixed reality headset, virtual reality headset, porting, upgrading
 ---
 
-# Creating a HoloLens project
+# Creating your first HoloLens Unreal application
 
 The first thing you need is a project to work with. If you're a first-time Unreal developer, you'll need to [download supporting files](tutorials/unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal) from the Epic Launcher.
 
