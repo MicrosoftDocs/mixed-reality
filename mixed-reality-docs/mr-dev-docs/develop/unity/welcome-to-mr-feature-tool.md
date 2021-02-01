@@ -22,8 +22,8 @@ The Mixed Reality Feature Tool is a new way for developers to discover and add M
 
 Before you can run the Mixed Reality Feature Tool, you'll need:
 
-* [.NET 5.0 runtime](https://dotnet.microsoft.com/download/dotnet/5.0) 
-* [Windows 10](https://www.microsoft.com/software-download/windows10ISO) 
+* [.NET 5.0 runtime](https://dotnet.microsoft.com/download/dotnet/5.0)
+* [Windows 10](https://www.microsoft.com/software-download/windows10ISO)
 
 > [!NOTE]
 > The Mixed Reality Feature Tool currently only runs on Windows, but MacOS support is coming soon!
@@ -42,7 +42,7 @@ Launch the Mixed Reality Feature Tool from the executable file, which displays t
 
 From the start page, you can:
 
-* [Configure](configuring-feature-tool.md) tool settings using the **gear icon** button 
+* [Configure](configuring-feature-tool.md) tool settings using the **gear icon** button
 * Use the **question mark** button to launch the default web browser and display our documentation
 * Select **Start** to begin discovering feature packages
 
@@ -78,7 +78,7 @@ For more information, please see [importing features](importing-features.md).
 
 The final step is reviewing and approving the proposed changes to the manifest and project files:
 
-* The proposed changes to the manifest are displayed on the left 
+* The proposed changes to the manifest are displayed on the left
 * The files to be added to the project are listed to the right
 * The **Compare** button allows for side by side viewing of the current manifest and the proposed changes
 
