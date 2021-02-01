@@ -1,5 +1,5 @@
 ---
-title: Creating a HoloLens project
+title: Creating your first HoloLens Unreal application
 description: Learn how to correctly configure an Unreal project with scene objects and input interactions for HoloLens mixed reality development. 
 author: hferrone
 ms.author: safarooq
@@ -9,7 +9,20 @@ ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, Unreal editor, UE4, HoloLens, HoloLens 2, mixed reality, development, documentation, guides, features, mixed reality headset, windows mixed reality headset, virtual reality headset, porting, upgrading
 ---
 
-# Creating a HoloLens project
+# Creating your first HoloLens Unreal application
+
+This guide will walk you through getting your first Mixed Reality app running on the HoloLens in Unreal Engine. In the tradition of "Hello World", you'll create a simple app that displays a cube on the screen. To make it more useful, you'll also create your first gesture to rotate the cube and quit the application. 
+
+## Objectives
+
+* Start a HoloLens Project
+* Enable the correct plugins
+* Create an ARSessionConfig Data Asset
+* Set up gesture inputs
+* Build a basic level
+* Implement a pinch gesture
+
+## Creating a new project
 
 The first thing you need is a project to work with. If you're a first-time Unreal developer, you'll need to [download supporting files](tutorials/unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal) from the Epic Launcher.
 
@@ -24,7 +37,8 @@ The first thing you need is a project to work with. If you're a first-time Unrea
 
 4. In the **Project Settings**, set **C++, Scalable 3D or 2D, Mobile/Tablet**, and **No Starter Content**, then choose a save location and click **Create Project**
 
-> [!NOTE] You're using a C++ rather than a Blueprint project in order to be ready to use the OpenXR plugin later. This QuickStart uses the default OpenXR plugin that comes with Unreal Engine. However, downloading and using the official Microsoft OpenXR plugin is recommended. That requires the project to be a C++ project.
+> [!NOTE] 
+> You're using a C++ rather than a Blueprint project in order to be ready to use the OpenXR plugin later. This QuickStart uses the default OpenXR plugin that comes with Unreal Engine. However, downloading and using the official Microsoft OpenXR plugin is recommended. That requires the project to be a C++ project.
 
 ![Project settings window with project, performance, target platform, and starter content choices highlighted](images/unreal-quickstart-img-03.png)
 
@@ -126,14 +140,18 @@ With that done, your next step is to make sure the AR session starts and stops w
 
 ![Action mappings with Open XR Msft Hand interaction options highlighted](images/unreal-quickstart-img-16.jpg)
 
-4. Open the **Level Blueprint** and add an **InputAction RightPinch** and **InputAction LeftPinch**
+## Setting up gestures
+
+Now that we have setup the inputs, we can get to the exciting part: Adding gestures! Lets rotate the cube on the right pinch and quit the application on left pinch.
+
+1. Open the **Level Blueprint** and add an **InputAction RightPinch** and **InputAction LeftPinch**
 * Connect the right pinch event to an **AddActorLocalRotation** with your **Cube** as the target and **Delta Rotation** set to **X = 0, Y = 0**, and **Z = 20**. The cube will now rotate by 20 degrees every time you pinch
 * Connect the left pinch event to **Quit Game**
 
 ![Level bluprint open with input actions for right and left pinch events](images/unreal-quickstart-img-17.jpg)
 
-5. In the cube's **Transform** settings, set **Mobility** to **Movable** so it can move dynamically:
+2. In the cube's **Transform** settings, set **Mobility** to **Movable** so it can move dynamically:
 
 ![Tranform settings with mobility property highlighted](images/unreal-quickstart-img-18.jpg)
 
-At this point, you're ready to deply and test the application!
+At this point, you're ready to deploy and test the application!
