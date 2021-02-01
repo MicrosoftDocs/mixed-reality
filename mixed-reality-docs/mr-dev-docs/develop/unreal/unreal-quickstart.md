@@ -17,8 +17,8 @@ This guide will walk you through getting your first Mixed Reality app running on
 
 * Start a HoloLens Project
 * Enable the correct plugins
-* Create an AR Dataset
-* Set up the inputs to enable gestures
+* Create an ARSessionConfig Data Asset
+* Set up gesture inputs
 * Build a basic level
 * Implement a pinch gesture
 
