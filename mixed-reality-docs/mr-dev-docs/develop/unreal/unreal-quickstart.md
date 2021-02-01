@@ -37,7 +37,8 @@ The first thing you need is a project to work with. If you're a first-time Unrea
 
 4. In the **Project Settings**, set **C++, Scalable 3D or 2D, Mobile/Tablet**, and **No Starter Content**, then choose a save location and click **Create Project**
 
-> [!NOTE] You're using a C++ rather than a Blueprint project in order to be ready to use the OpenXR plugin later. This QuickStart uses the default OpenXR plugin that comes with Unreal Engine. However, downloading and using the official Microsoft OpenXR plugin is recommended. That requires the project to be a C++ project.
+> [!NOTE] 
+> You're using a C++ rather than a Blueprint project in order to be ready to use the OpenXR plugin later. This QuickStart uses the default OpenXR plugin that comes with Unreal Engine. However, downloading and using the official Microsoft OpenXR plugin is recommended. That requires the project to be a C++ project.
 
 ![Project settings window with project, performance, target platform, and starter content choices highlighted](images/unreal-quickstart-img-03.png)
 
