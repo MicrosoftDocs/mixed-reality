@@ -135,6 +135,7 @@ In the Hierarchy window, select the **ParentAnchor** object, then in the Inspect
 
 * In the **Spatial Anchors Account ID** field, paste the **Account ID** from your Azure Spatial Anchors account
 * In the **Spatial Anchors Account Key** field, paste the primary or secondary **Access Key** from your Azure Spatial Anchors account
+* In the **Spatial Anchors Account Domain** field, paste the **Account Domain** from your Azure Spatial Anchors account
 
 ![Unity with Spatial Anchor Manager configured](images/mr-learning-asa/asa-02-section6-step1-1.png)
 
