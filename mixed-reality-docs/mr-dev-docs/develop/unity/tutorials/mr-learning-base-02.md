@@ -151,7 +151,7 @@ after Unity has finished installing the XR Plug-in Management. Ensure that you a
 
 ![Unity Configuring XR plugin management](images/mr-learning-base/base-02-section5-step2-3.png)
 
-In the Project Settings window, select **Player** > **XR Settings**, click the **+** icon, and select Windows Mixed Reality to add the Windows Mixed Reality SDK:
+In the Project Settings window, select **Player** > **XR Settings** and check the **Virual Reality Supported** checkbox then click the **+** icon, and select Windows Mixed Reality to add the Windows Mixed Reality SDK:
 
 ![Unity XR Settings with add Windows Mixed Reality SDK selected](images/mr-learning-base/base-02-section5-step2-4.png)
 
