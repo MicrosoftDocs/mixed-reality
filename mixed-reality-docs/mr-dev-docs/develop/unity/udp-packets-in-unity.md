@@ -1,11 +1,11 @@
 ---
 title: UDP packets in Unity UWP apps
-description:
+description: Learn how to setup a Unity UWP app to send and receive UDP packets over a secure network.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 02/3/2021
 ms.topic: article
-keywords: 
+keywords: UDP, UWP, Unity, UDP packets, socket, client server, endpoint, networking, remote machine, datagramsocket, sample, .net
 ---
 
 # UDP packets in Unity UWP apps
@@ -20,7 +20,7 @@ Open your projects HoloLens manifest.json file and make sure you've enabled:
 
 ## Build your socket client and server 
 
-Follow the instructions for [building a basic UDP socket client and server](https://docs.microsoft.com/windows/uwp/networking/sockets#build-a-basic-udp-socket-client-and-server). You'll be using the [DatagramSocket](https://docs.microsoft.com/uwp/api/Windows.Networking.Sockets.DatagramSocket?view=winrt-19041) class to send and receive data over UDP and form an echo client and server. We also recommend reading through the other resource sections in this article, as they apply to more customized and complex use cases. 
+Follow the instructions for [building a basic UDP socket client and server](https://docs.microsoft.com/windows/uwp/networking/sockets#build-a-basic-udp-socket-client-and-server). You'll be using the [DatagramSocket](https://docs.microsoft.com/uwp/api/Windows.Networking.Sockets.DatagramSocket) class to send and receive data over UDP and form an echo client and server. We also recommend reading through the other resource sections in this article, as they apply to more customized and complex use cases. 
 
 We also have a complete DatagramSocket UDP sample app available for download:
 
