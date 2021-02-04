@@ -3,7 +3,7 @@ title: Initializing your project and deploying your first application
 description: This course shows you how to configure your Unity project for the Mixed Reality Toolkit (MRTK) and how to deploy it to your HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 04/02/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, TextMeshPro, 
 ms.localizationpriority: high
@@ -81,21 +81,41 @@ In the Import Unity Package window, click the **All** button to ensure all the a
 
 ## Importing the Mixed Reality Toolkit
 
-Download the Unity custom package:
+To Import Mixed Reality Toolkit into the Unity Project you will have to use [Mixed Reality Feature Tool](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) which allows  developers to discover, update, and add Mixed Reality feature packages into Unity projects. You can search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing.
 
-* [Microsoft.MixedReality.Toolkit.Unity.Foundation.2.5.1.unitypackage](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.5.1/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.5.1.unitypackage)
+Download the latest version of the Mixed Reality Feature Tool from the [Microsoft Download Center](https://aka.ms/MRFeatureTool), When the download completes, unzip the file and save it to your desktop.
 
-In the Unity menu, select **Assets** > **Import Package** > **Custom Package...** to open the Import package... window:
+> [!NOTE]
+> Before you can run the Mixed Reality Feature Tool please instal [.NET 5.0 runtime](https://dotnet.microsoft.com/download/dotnet/5.0)
 
-![Unity import Custom Package... menu path](images/mr-learning-base/base-02-section4-step1-1.png)
+> [!NOTE]
+> The Mixed Reality Feature Tool currently only runs on Windows, For MacOS please follow this [procedure](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html#1-get-the-latest-mrtk-unity-packages) to download and import the Mixed Reality Toolkit into the unity project.
 
-In the Import package... window, select the **Microsoft.MixedReality.Toolkit.Unity.Foundation.2.5.1.unitypackage** you downloaded and click the **Open** button:
+Open the executable file **MixedRealityFeatureTool** from the downloaded folder to launch the Mixed Reality Feature Tool.  
 
-![Unity import Custom Package with Open prompt window](images/mr-learning-base/base-02-section4-step1-2.png)
+![Opening MixedRealityFeatureTool](images/mr-learning-base/base-02-section4-step1-1.png)
 
-In the Import Unity Package window, click the **All** button to ensure all the assets are selected, then click the **Import** button to import the assets:
+Once **MixedRealityFeatureTool** is opened click on start to get started with Mixed Reality Feature Tool and discover features.
 
-![Unity MRTK Foundation import window](images/mr-learning-base/base-02-section4-step1-3.png)
+![MixedRealityFeatureTool](images/mr-learning-base/base-02-section4-step1-2.png)
+
+Features are grouped by category to make things easier to find, in **MixedRealityFeatureTool** select the **Mixed Reality Toolkit** dropdown to find packages relating to the Mixed Reality Toolkit.
+
+![MixedRealityFeatureTool window](images/mr-learning-base/base-02-section4-step1-3.png)
+
+check the **Mixed Reality Toolkit Foundation** and click on **Get features** button to download the selected packages.
+
+![Selecting Mixed reality foundation](images/mr-learning-base/base-02-section4-step1-4.png)
+
+Selected package **Mixed Reality Toolkit Foundation** is presented, along with its dependence package **Mixed Reality Toolkit Standard Assets**. To provide the project path, click on the **Three dots** next to the **Project path** and browse to your project folder in the explorer for example _D:\MixedRealityLearning\MRTK Tutorials_.
+
+Click on the **Validate** button to validate the selected package, you will get a popup with message **No validation issues were detected** click on **OK** to close the popup and click on **Import** button.
+
+![Validating Mixed reality foundation](images/mr-learning-base/base-02-section4-step1-5.png)
+
+Click on **Approve** Button to add the **Mixed Reality Toolkit** into the project.
+
+![Approve Mixed reality foundation](images/mr-learning-base/base-02-section4-step1-6.png)
 
 ## Configuring the Unity project
 
