@@ -21,7 +21,7 @@ In this tutorial, you will explore ways to dynamically place holograms using the
 
 ## Location of Solvers in the MRTK
 
- The MRTK's Solvers are located in the MRTK SDK folder. To see the available Solvers in your project, in the Project window, navigate to **Assets** > **MRTK** > **SDK** > **Features** > **Utilities** > **Solvers**:
+ The MRTK's Solvers are located in the MRTK SDK folder. To see the available Solvers in your project, in the Project window, navigate to **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **Utilities** > **Solvers**:
 
 ![Unity Project window with SOlvers folder selected](images/mr-learning-base/base-05-section1-step1-1.png)
 
