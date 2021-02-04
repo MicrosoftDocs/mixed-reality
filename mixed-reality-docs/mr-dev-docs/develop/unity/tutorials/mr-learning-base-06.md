@@ -3,7 +3,7 @@ title: Creating user interfaces
 description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to create static and dynamic user interfaces.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 04/02/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, prefabs, holograms, tooltips
 ms.localizationpriority: high

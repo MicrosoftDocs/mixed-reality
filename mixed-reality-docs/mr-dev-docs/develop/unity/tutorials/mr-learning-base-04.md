@@ -3,7 +3,7 @@ title: MRTK tutorials - 4. Positioning objects in the scene
 description: This course shows you how to position objects in the scene and how to use the Mixed Reality Toolkit (MRTK) to organize objects in a grid.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 04/02/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, solvers, grid object collection
 ms.localizationpriority: high
