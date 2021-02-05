@@ -3,7 +3,7 @@ title: Spatial audio tutorials - 2. Spatializing button interaction sounds
 description: Add a button to your project, and spatialize the button interaction sounds.
 author: kegodin
 ms.author: v-hferrone
-ms.date: 12/01/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens2, spatial audio, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head-related transfer function, reverb, Microsoft Spatializer, prefabs, volume curve
 ---
@@ -20,7 +20,7 @@ In this tutorial, you will learn how to spatialize the button interaction sounds
 
 ## Add a button
 
-To add the Button prefab, in the **Project** window, select **Assets** and type "PressableButtonHoloLens2" in the search bar.
+To add the Button prefab, in the **Project** window, select **Packages** and type "PressableButtonHoloLens2" in the search bar.
 
 ![Button prefab in Assets](images/spatial-audio/spatial-audio-02-section1-step1-1.png)
 

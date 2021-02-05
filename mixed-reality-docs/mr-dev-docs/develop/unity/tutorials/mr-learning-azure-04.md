@@ -3,7 +3,7 @@ title: Integrating Azure Spatial Anchors
 description: Complete this course to learn how to implement Azure Spatial Anchors within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, hololens 2, Azure spatial anchors, azure cloud services, azure custom vision, Windows 10
 ms.localizationpriority: high

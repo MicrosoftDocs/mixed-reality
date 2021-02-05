@@ -3,7 +3,7 @@ title: Adding an offline mode for local speech-to-text translation
 description: Complete this course to learn how to add offline mode for local speech-to-text translation in mixed reality applications.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 06/27/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, speech recognition, Windows 10
 ms.localizationpriority: high

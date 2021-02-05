@@ -3,7 +3,7 @@ title: Creating dynamic content using Solvers
 description: This course shows you how to use the Mixed Reality Toolkit (MRTK) solvers to create dynamic content.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, solvers
 ms.localizationpriority: high
@@ -21,14 +21,14 @@ In this tutorial, you will explore ways to dynamically place holograms using the
 
 ## Location of Solvers in the MRTK
 
- The MRTK's Solvers are located in the MRTK SDK folder. To see the available Solvers in your project, in the Project window, navigate to **Assets** > **MRTK** > **SDK** > **Features** > **Utilities** > **Solvers**:
+ The MRTK's Solvers are located in the MRTK SDK folder. To see the available Solvers in your project, in the Project window, navigate to **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **Utilities** > **Solvers**:
 
 ![Unity Project window with SOlvers folder selected](images/mr-learning-base/base-05-section1-step1-1.png)
 
 In this tutorial, we will review the implementation of the Directional Indicator Solver and the Tap To Place Solver. To learn more about the full range of Solvers available in the MRTK, you can refer to the [Solvers](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
 > [!NOTE]
-> The Directional Indicator Solver is not located in the Solvers folders referenced above, but in the Assets > MRTK > SDK > Experimental > Features > Utilities folders, because it is an experimental feature.
+> The Directional Indicator Solver is not located in the Solvers folders referenced above, but in the Packages > Mixed Reality Toolkit Foundation > SDK > Experimental > Features > Utilities folders, because it is an experimental feature.
 
 ## Using the Directional Indicator Solver to direct the user to objects
 

@@ -3,7 +3,7 @@ title: Connecting multiple users
 description: Complete this course to learn how to connect multiple users in a HoloLens 2 mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, multi-user capabilities, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
 ms.localizationpriority: high
@@ -64,7 +64,7 @@ In the Inspector window, use the **Add Component** button to add the **Photon Vi
 
 ### 2. Create the avatar
 
-In the Project window, navigate to the **Assets** > **MRTK** > **StandardAssets** > **Materials** folder to locate the MRTK materials.
+In the Project window, navigate to the **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **StandardAssets** > **Materials** folder to locate the MRTK materials.
 
 Then, in the Hierarchy window, right-click on the **PhotonUser** object and select **3D Object** > **Sphere** to create a sphere object as a child of the PhotonUser object and configure it as follows:
 

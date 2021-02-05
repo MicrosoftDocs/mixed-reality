@@ -3,7 +3,7 @@ title: Using speech commands
 description: This course shows you how to setup, create, and use speech commands in your mixed reality apps with the Mixed Reality Toolkit (MRTK).
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, speech commands, voice input
 ms.localizationpriority: high
@@ -54,7 +54,7 @@ In the Speech > **Speech Commands** section, click the **+ Add a New Speech Comm
 
 ## Controlling speech commands
 
-In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** folder to locate the tooltip prefabs:
+In the Project window, navigate to the **Package** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** folder to locate the tooltip prefabs:
 
 ![Opening tooltip folder](images/mr-learning-base/base-09-section3-step1-1.png)
 

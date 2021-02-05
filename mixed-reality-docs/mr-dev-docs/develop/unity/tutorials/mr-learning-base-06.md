@@ -3,7 +3,7 @@ title: Creating user interfaces
 description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to create static and dynamic user interfaces.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, prefabs, holograms, tooltips
 ms.localizationpriority: high
@@ -81,7 +81,7 @@ and the **Explode** button to toggle the exploded view on and off:
 
 ## Creating a dynamic menu that follows the user
 
-In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **Menus** folder, click-and-drag the **NearMenu4x1** prefab into the Hierarchy window, set its Transform **Position** to X = 0, Y = -0.4, Z = 0 and configure it as follows:
+In the Project window, navigate to the **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **UX** > **Prefabs** > **Menus** folder, click-and-drag the **NearMenu4x1** prefab into the Hierarchy window, set its Transform **Position** to X = 0, Y = -0.4, Z = 0 and configure it as follows:
 
 * Verify that the **SolverHandler** component's **Tracked Target Type** is set to **Head**
 * Check the checkbox next to the **RadialView** Solver component so it is enabled by default
@@ -157,7 +157,7 @@ Then configure the **TextMeshPro - Text** component as follows::
 
 ## Adding tooltips
 
-In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** folder to locate the tooltip prefabs:
+In the Project window, navigate to the **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** folder to locate the tooltip prefabs:
 
 ![Unity Project window with ToolTips folder selected](images/mr-learning-base/base-06-section4-step1-1.png)
 

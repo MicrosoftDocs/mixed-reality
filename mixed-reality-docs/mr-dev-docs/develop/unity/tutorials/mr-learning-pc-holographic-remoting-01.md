@@ -3,7 +3,7 @@ title: Getting started with PC Holographic Remoting
 description: Complete this course to learn how to remotely stream mixed reality applications from your PC to HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/29/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, PC holographic remoting, tooltips, eye-tracking
 ms.localizationpriority: high
@@ -62,7 +62,7 @@ Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base
 Download and **import** the [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.0/MRTK.Tutorials.PCHolographicRemoting.unitypackage).
 
 >[!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](./mr-learning-base-02.md#importing-the-mixed-reality-toolkit) instructions.
+> For a reminder on how to import a Unity custom package, you can refer to the [Importing the tutorial assets](mr-learning-base-04.md#importing-the-tutorial-assets) instructions.
 
 After importing the tutorial assets, your Project window should look similar to this:
 
