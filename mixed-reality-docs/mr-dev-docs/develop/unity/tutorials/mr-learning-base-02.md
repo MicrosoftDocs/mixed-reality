@@ -103,7 +103,7 @@ Features are grouped by category to make things easier to find, click on **Mixed
 
 ![MixedRealityFeatureTool window](images/mr-learning-base/base-02-section4-step1-3.png)
 
-check the **Mixed Reality Toolkit Foundation**, and click on the dropdown next to it to select the required MRTK version, for this tutorial series please use **2.5.3**. then click on **Get features** button to download the selected packages.
+check the **Mixed Reality Toolkit Foundation**, and click on the dropdown next to it to select the required MRTK version, for this tutorial series please select **2.5.3**. then click on **Get features** button to download the selected packages.
 
 ![Selecting Mixed reality foundation](images/mr-learning-base/base-02-section4-step1-4.png)
 
