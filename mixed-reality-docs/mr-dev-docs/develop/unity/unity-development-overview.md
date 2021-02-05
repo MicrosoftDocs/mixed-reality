@@ -31,6 +31,7 @@ The easiest way to develop in Unity is with the Mixed Reality Toolkit. MRTK will
 | [What is MRTK?](mrtk-getting-started.md) | Begin your journey by getting acquainted with the Mixed Reality Toolkit and what it has to offer |
 | [Install the latest tools](../install-the-tools.md) | Download and install the latest Unity package and setup your project for mixed reality |
 | [HoloLens 2 tutorial series](tutorials/mr-learning-base-01.md) | Dive into beginner level MRTK tutorials for HoloLens 2 hardware |
+| **Optional** [Download the Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md) | A new developer tool for discovering, updating, and adding Mixed Reality feature packages to your Unity projects |
 
 > [!IMPORTANT]
 > If you'd like to create a new Unity project without importing Mixed Reality Toolkit, there are a small set of Unity settings you'll need to manually change for Windows Mixed Reality. These are broken down into two categories: per-project and per-scene. Take a look at our [configuration guide](configure-unity-project.md) for the step-by-step process.

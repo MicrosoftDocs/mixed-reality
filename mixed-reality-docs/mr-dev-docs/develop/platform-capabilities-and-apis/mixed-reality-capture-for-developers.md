@@ -79,7 +79,7 @@ A [ViewConfiguration](/uwp/api/windows.graphics.holographic.holographiccamera.vi
 ##### Enable the PhotoVideoCamera HolographicViewConfiguration in Unity
 
 > [!NOTE]
-> This requires **Unity 2018.4.13f1**, **Unity 2019.3.0f1**, or newer.
+> If you're using Unity 2018, this requires **Unity 2018.4.13f1** or newer. If you're using Unity 2019, this requires **Unity 2019.4**, or newer.
 
 To opt in to rendering from the PV Camera when using the [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html), enable the [Windows Mixed Reality Camera Settings](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html) provider and check **Render from PV Camera**.
 
