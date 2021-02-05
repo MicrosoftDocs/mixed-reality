@@ -3,7 +3,7 @@ title: Displaying Azure Spatial Anchors feedback
 description: Complete this course to learn how to display feedback from Azure Spatial Anchors in a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 05/02/2021
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, sessions, feedback elements
 ms.localizationpriority: high
