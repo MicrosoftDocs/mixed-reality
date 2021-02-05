@@ -28,9 +28,11 @@ Before you can run the Mixed Reality Feature Tool, you'll need:
 > [!NOTE]
 > The Mixed Reality Feature Tool currently only runs on Windows, but MacOS support is coming soon!
 
+## Download 
+
 Once you have your environment set up:
 
-* Download the latest version of the Mixed Reality Feature Tool from the [Microsoft Download Center](https://aka.ms/MRFeatureTool).
+* [Download the latest version of the Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool) from the Microsoft Download Center.
 * When the download completes, unzip the file and save it to your desktop
     * We recommend creating a shortcut to the executable file for faster access
 
