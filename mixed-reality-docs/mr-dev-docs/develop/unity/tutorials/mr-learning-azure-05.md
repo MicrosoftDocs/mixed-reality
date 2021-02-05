@@ -3,7 +3,7 @@ title: Integrating Azure Bot Service with LUIS
 description: Complete this course to learn how to implement Azure Bot Service and natural language understanding within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, hololens 2, azure bot service, luis, natural language, conversation bot, azure cloud services, azure custom vision, Windows 10
 ms.localizationpriority: high

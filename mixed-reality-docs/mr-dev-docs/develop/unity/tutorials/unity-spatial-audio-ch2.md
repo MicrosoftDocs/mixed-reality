@@ -3,7 +3,7 @@ title: Spatial audio tutorials - 2. Spatializing button interaction sounds
 description: Add a button to your project, and spatialize the button interaction sounds.
 author: kegodin
 ms.author: v-hferrone
-ms.date: 12/01/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens2, spatial audio, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head-related transfer function, reverb, Microsoft Spatializer, prefabs, volume curve
 ---

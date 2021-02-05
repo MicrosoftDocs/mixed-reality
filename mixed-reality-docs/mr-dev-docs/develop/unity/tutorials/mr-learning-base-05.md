@@ -3,7 +3,7 @@ title: Creating dynamic content using Solvers
 description: This course shows you how to use the Mixed Reality Toolkit (MRTK) solvers to create dynamic content.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 04/02/2021
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, solvers
 ms.localizationpriority: high

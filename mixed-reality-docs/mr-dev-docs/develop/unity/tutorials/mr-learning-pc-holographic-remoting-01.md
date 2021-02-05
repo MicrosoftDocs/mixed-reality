@@ -3,7 +3,7 @@ title: Getting started with PC Holographic Remoting
 description: Complete this course to learn how to remotely stream mixed reality applications from your PC to HoloLens 2.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/29/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, PC holographic remoting, tooltips, eye-tracking
 ms.localizationpriority: high

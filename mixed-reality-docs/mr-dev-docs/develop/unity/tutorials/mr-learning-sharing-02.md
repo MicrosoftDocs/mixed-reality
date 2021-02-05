@@ -3,7 +3,7 @@ title: Setting up Photon Unity Networking
 description: Complete this course to learn how to implement Photon Unity Network in a HoloLens 2 mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, multi-user capabilities, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, PUN
 ms.localizationpriority: high
