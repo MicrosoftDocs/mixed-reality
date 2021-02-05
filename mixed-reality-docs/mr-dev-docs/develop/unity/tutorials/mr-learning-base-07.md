@@ -5,7 +5,7 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 04/02/2021
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, object interactions, bounding boxes
+keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, object interactions, Bounds Controles
 ms.localizationpriority: high
 ---
 
@@ -71,7 +71,7 @@ With all the rover part objects and the RoverAssembly object still selected, in 
 > [!NOTE]
 > At this point, you have enabled object manipulation for all the rover part objects and the RoverAssembly object.
 
-In the Project window, navigate to the **Assets** > **MRTK** > **StandardAssets** > **Audio** folder to locate the audio clips:
+In the Project window, navigate to **Packages** > **Mixed Reality Toolkit Standard Assets** > **Audio** folder to locate the audio clips:
 
 ![Unity Project window with Audio folder selected](images/mr-learning-base/base-07-section1-step1-3.png)
 
@@ -110,15 +110,15 @@ If you now enter Game mode, you can use near or far interaction to place the rov
 
 To learn more about the Object Manipulator component and its associated properties, you can visit the [Object Manipulator](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
-## Adding bounding boxes
+## Adding Bounds Control
 
-Bounding boxes makes it easier and more intuitive to manipulate objects with one hand for both near and far interaction by providing handles that can be used for scaling and rotating.
+Bounds Control makes it easier and more intuitive to manipulate objects with one hand for both near and far interaction by providing handles that can be used for scaling and rotating.
 
-In this example, you will add a Bounding box to the RoverExplorer object so the whole experience can easily be moved, rotated, and scaled. Additionally, you will configure the Menu so you can turn the Bounding box on and off.
+In this example, you will add a BoundsControl to the RoverExplorer object so the whole experience can easily be moved, rotated, and scaled. Additionally, you will configure the Menu so you can turn the Bounds Control on and off.
 
 In the Hierarchy window, select the **RoverExplorer** object, then in the Inspector window, use the **Add Component** button to add the following components:
 
-* **BoundingBox** component
+* **BoundsControl** component
 * **Object Manipulator (Script)** component
 
 Then **uncheck** the checkbox next to all the components to make them **disabled** by default:
@@ -126,19 +126,19 @@ Then **uncheck** the checkbox next to all the components to make them **disabled
 ![Unity with RoverExplorer object selected and components added and disabled](images/mr-learning-base/base-07-section2-step1-1.png)
 
 > [!NOTE]
-> The Bounding box visualization is created at runtime and, therefore, not visible before you enter Game mode.
+> The Bounds Control visualization is created at runtime and, therefore, not visible before you enter Game mode.
 
 > [!NOTE]
->The BoundingBox component will automatically add the NearInteractionGrabbable component at runtime. Therefore, we do not need to add this component to grab the enclosed objects with tracked hands.
+>The BoundsControl component will automatically add the NearInteractionGrabbable component at runtime. Therefore, we do not need to add this component to grab the enclosed objects with tracked hands.
 
 > [!NOTE]
 >The Object Manipulator (Script) automatically adds Constraint Manager (Script)
 
-In the Hierarchy window, expand the Menu > **ButtonCollection** object to reveal the four buttons and rename the third button to **BoundingBox_Enable**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:
+In the Hierarchy window, expand the Menu > **ButtonCollection** object to reveal the four buttons and rename the third button to **BoundsControl_Enable**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:
 
 * Change the **Main Label Text** to **Enable**
 * Assign the **RoverExplorer** object to the **None (Object)** field
-* From the **No Function** dropdown, select **BoundingBox** > **bool Enabled** to update this property value when the event is triggered
+* From the **No Function** dropdown, select **BoundsControl** > **bool Enabled** to update this property value when the event is triggered
 * Verify that the argument checkbox is **checked**
 * Click the small **+** icon to add another event
 * Assign the **RoverExplorer** object to the **None (Object)** field
@@ -146,13 +146,13 @@ In the Hierarchy window, expand the Menu > **ButtonCollection** object to reveal
 * Verify that the argument checkbox is **checked**
 * Leave the **Icon** as the 'cube with bounds control' icon
 
-![Unity with BoundingBox_Enable button object selected and Button Config Helper component configured](images/mr-learning-base/base-07-section2-step1-2.png)
+![Unity with BoundsControl_Enable button object selected and Button Config Helper component configured](images/mr-learning-base/base-07-section2-step1-2.png)
 
-Rename the forth and last button to **BoundingBox_Disable**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:
+Rename the forth and last button to **BoundsControl_Disable**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:
 
 * Change the **Main Label Text** to **Disable**
 * Assign the **RoverExplorer** object to the **None (Object)** field
-* From the **No Function** dropdown, select **BoundingBox** > **bool Enabled** to update this property value when the event is triggered
+* From the **No Function** dropdown, select **BoundsControl** > **bool Enabled** to update this property value when the event is triggered
 * Verify that the argument checkbox is **unchecked**
 * Click the small **+** icon to add another event
 * Assign the **RoverExplorer** object to the **None (Object)** field
@@ -160,17 +160,17 @@ Rename the forth and last button to **BoundingBox_Disable**, then in the Inspect
 * Verify that the argument checkbox is **unchecked**
 * Change the **Icon** to the 'cube with bounds control" icon
 
-![Unity with BoundingBox_Disable button object selected and Button Config Helper component configured](images/mr-learning-base/base-07-section2-step1-3.png)
+![Unity with BoundsControl_Disable button object selected and Button Config Helper component configured](images/mr-learning-base/base-07-section2-step1-3.png)
 
-If you now enter Game mode and enable the Bounds Control by clicking the Enable button, you can use near or far interaction to move, rotate, and scale the Bounding Box, and use the Disable button to disable the Bounding Box again:
+If you now enter Game mode and enable the Bounds Control by clicking the Enable button, you can use near or far interaction to move, rotate, and scale the Bounds Control, and use the Disable button to disable the Bounds Control again:
 
-![Unity Play mode split view with Bounding Box being manipulated](images/mr-learning-base/base-07-section2-step1-4.png)
+![Unity Play mode split view with Bounds Control being manipulated](images/mr-learning-base/base-07-section2-step1-4.png)
 
-To learn more about the Bounding Box component and its associated properties, you can visit the [Bounding Box](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
+To learn more about the Bounds Control component and its associated properties, you can visit the [Bounds Control](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
 ## Congratulations
 
-In this tutorial, you learned how to enable near and far manipulation for 3D objects and how to limit the allowed types of manipulation. You also learned how to add bounding box around 3D objects to make it easier to control the object manipulation.
+In this tutorial, you learned how to enable near and far manipulation for 3D objects and how to limit the allowed types of manipulation. You also learned how to add Bounds Control around 3D objects to make it easier to control the object manipulation.
 
 > [!div class="nextstepaction"]
 > [Next Tutorial: 8. Using eye-tracking](mr-learning-base-08.md)
