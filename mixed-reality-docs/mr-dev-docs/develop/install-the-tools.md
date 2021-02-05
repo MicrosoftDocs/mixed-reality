@@ -13,9 +13,11 @@ keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit,
 
 Get the tools you need to build applications for Microsoft HoloLens and Windows Mixed Reality immersive (VR) headsets. There is no separate SDK for Windows Mixed Reality development; you'll use Visual Studio with the Windows 10 SDK.
 
-Don't have a mixed reality device? You can install the [HoloLens emulator](platform-capabilities-and-apis/using-the-hololens-emulator.md) to test some functionality of mixed reality apps without a HoloLens. You can also use the [Windows Mixed Reality simulator](platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) to test your mixed reality apps for immersive headsets. If you're using Unity, you can use [Mixed Reality Toolkit (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity)'s input simulation to test various types of input interactions such as hand-tracking and eye-tracking input.
+Don't have a mixed reality device? You can install the [HoloLens emulator](platform-capabilities-and-apis/using-the-hololens-emulator.md) to test some functionality of mixed reality apps without a HoloLens. You can also use the [Windows Mixed Reality simulator](platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) to test your mixed reality apps for immersive headsets. 
 
-We recommend installing the Unity game engine as the easiest way to get started creating mixed reality apps. However, you can also build against DirectX if you'd like to use a custom engine.
+We recommend installing either the Unity or Unreal game engine as the easiest way to get started creating mixed reality apps. However, you can also build against DirectX if you'd like to use a custom engine.
+
+If you're using Unity, you can use [Mixed Reality Toolkit for Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)'s input simulation to test various types of input interactions such as hand-tracking and eye-tracking input. For Unreal projects, use the [UX Tools plugin](https://github.com/microsoft/MixedReality-UXTools-Unreal) to test common input interactions and user experience features.
 
 >[!TIP]
 >Bookmark this page and check it regularly to keep up-to-date on the most recent version of each tool recommended for mixed reality development.
