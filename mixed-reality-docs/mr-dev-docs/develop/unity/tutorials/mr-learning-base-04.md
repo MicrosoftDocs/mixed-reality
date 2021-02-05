@@ -22,16 +22,28 @@ In this tutorial, you will import the tutorial assets and position the provided 
 
 ## Importing the tutorial assets
 
-Download and import the following Unity custom package:
+Download the following Unity custom package:
 
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
 
-After you have imported the tutorial assets your Project window should look similar to this:
+To Import a Unity custom package, In the Unity menu, select **Assets** > **Import Package** > **Custom Package...** to open the Import package... window:
 
 ![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-04-section1-step1-1.png)
 
+In the Import package... window, select the **MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage** you downloaded and click the Open button:
+
+![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-04-section1-step1-2.png)
+
+In the Import Unity Package window, click the All button to ensure all the assets are selected, then click the Import button to import the assets:
+
+![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-04-section1-step1-3.png)
+
+After you have imported the tutorial assets your Project window should look similar to this:
+
+![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-04-section1-step1-4.png)
+
 > [!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Importing the MRTK](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) instructions.
+> For a reminder on how to import a Unity custom package, you can refer to the [Importing the tutorial assets](mr-learning-base-04.md#importing-the-tutorial-assets) instructions.
 
 ## Creating the parent object
 

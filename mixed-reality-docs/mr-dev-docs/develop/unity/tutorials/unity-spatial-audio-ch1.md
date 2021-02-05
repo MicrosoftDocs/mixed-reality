@@ -66,7 +66,7 @@ Download and import the Microsoft Spatializer  <a href="https://github.com/micro
 </a>
 
 >[!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Import the Mixed Reality Toolkit](../../../mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) instructions.
+> For a reminder on how to import a Unity custom package, you can refer to the [Importing the tutorial assets](mr-learning-base-04.md#importing-the-tutorial-assets) instructions.
 
 ## Enable the Microsoft Spatializer plugin
 
