@@ -291,17 +291,11 @@ PhraseRecognitionSystem.Restart();
 
 You could also just start a KeywordRecognizer, which will restart the PhraseRecognitionSystem as well.
 
-## Using the microphone helper
-
-The Mixed Reality Toolkit on GitHub contains a microphone helper class to hint at developers if there's a usable microphone on the system. One use for it's where one would want to check if there's microphone on system before showing any speech interaction hints in the application.
-
-The microphone helper script can be found in the [Input/Scripts/Utilities folder](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/MicrophoneHelper.cs). The GitHub repo also contains a [small sample](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Input/Scripts/MicrophoneHelperSample.cs) demonstrating how to use the helper.
-
 ## Voice input in Mixed Reality Toolkit
 
-You can find the examples of the voice input in this scene.
-
-- [HoloToolkit-Examples/Input/Scenes/SpeechInputSource.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Input/Scenes/SpeechInputSource.unity)
+You can find MRTK examples for voice input in the following demo scenes:
+* [Dictation](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/Examples/Demos/Input/Scenes/Dictation)
+* [Speech](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/Examples/Demos/Input/Scenes/Speech)
 
 ## Next Development Checkpoint
 
