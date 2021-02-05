@@ -28,7 +28,7 @@ In this tutorial, you will explore ways to dynamically place holograms using the
 In this tutorial, we will review the implementation of the Directional Indicator Solver and the Tap To Place Solver. To learn more about the full range of Solvers available in the MRTK, you can refer to the [Solvers](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
 > [!NOTE]
-> The Directional Indicator Solver is not located in the Solvers folders referenced above, but in the Assets > MRTK > SDK > Experimental > Features > Utilities folders, because it is an experimental feature.
+> The Directional Indicator Solver is not located in the Solvers folders referenced above, but in the Packages > Mixed Reality Toolkit Foundation > SDK > Experimental > Features > Utilities folders, because it is an experimental feature.
 
 ## Using the Directional Indicator Solver to direct the user to objects
 

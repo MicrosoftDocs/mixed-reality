@@ -54,7 +54,7 @@ In the Speech > **Speech Commands** section, click the **+ Add a New Speech Comm
 
 ## Controlling speech commands
 
-In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** folder to locate the tooltip prefabs:
+In the Project window, navigate to the **Package** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** folder to locate the tooltip prefabs:
 
 ![Opening tooltip folder](images/mr-learning-base/base-09-section3-step1-1.png)
 
