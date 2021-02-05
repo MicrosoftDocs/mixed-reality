@@ -20,7 +20,7 @@ In this tutorial, you will learn how to spatialize the button interaction sounds
 
 ## Add a button
 
-To add the Button prefab, in the **Project** window, select **Assets** and type "PressableButtonHoloLens2" in the search bar.
+To add the Button prefab, in the **Project** window, select **Packages** and type "PressableButtonHoloLens2" in the search bar.
 
 ![Button prefab in Assets](images/spatial-audio/spatial-audio-02-section1-step1-1.png)
 
