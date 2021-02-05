@@ -27,9 +27,9 @@ At their core, mixed reality apps place [holograms](../discover/hologram.md) in 
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="https://docs.microsoft.com/windows/mixed-reality/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td><a href="coordinate-systems.md#stationary-frame-of-reference">Stationary frame of reference</a></td>
@@ -100,7 +100,7 @@ The Stage frame of reference isn't yet supported on HoloLens. A room-scale app o
 
 ## Spatial coordinate systems
 
-All 3D graphics applications use [Cartesian coordinate systems](https://docs.microsoft.com/windows/uwp/graphics-concepts/coordinate-systems) to reason about the positions and orientations of virtual objects. These coordinate systems establish 3 perpendicular axes along which to position objects: an X, Y, and Z axis.
+All 3D graphics applications use [Cartesian coordinate systems](/windows/uwp/graphics-concepts/coordinate-systems) to reason about the positions and orientations of virtual objects. These coordinate systems establish 3 perpendicular axes along which to position objects: an X, Y, and Z axis.
 
 In [mixed reality](../discover/mixed-reality.md), your apps reason about virtual and physical coordinate systems. Windows calls a coordinate system that has real meaning in the physical world a **spatial coordinate system**.
 
@@ -186,13 +186,13 @@ You can save to disk the spatial anchors your app creates, and then load them ba
 
 By persisting anchors to the store, your users can place individual holograms or place a workspace around which an app will place its various holograms, and then find those holograms later where they expect them, over many uses of your app.
 
-You can also use <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> for asynchronous hologram persistence across HoloLens, iOS, and Android devices.  By sharing a durable cloud spatial anchor, multiple devices can observe the same persisted hologram over time, even if those devices aren't present together at the same time.
+You can also use <a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> for asynchronous hologram persistence across HoloLens, iOS, and Android devices.  By sharing a durable cloud spatial anchor, multiple devices can observe the same persisted hologram over time, even if those devices aren't present together at the same time.
 
 ### Spatial anchor sharing
 
 Your app can also share a spatial anchor in real time with other devices, allowing for real-time shared experiences.
 
-By using <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>, your app can share a spatial anchor across multiple HoloLens, iOS, and Android devices. By having each device render a hologram using the same spatial anchor, all users will see the hologram appear at the same place in the real world.
+By using <a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>, your app can share a spatial anchor across multiple HoloLens, iOS, and Android devices. By having each device render a hologram using the same spatial anchor, all users will see the hologram appear at the same place in the real world.
 
 ## Avoid head-locked content
 
@@ -234,5 +234,5 @@ Sometimes, a home or other space may have two identical areas. For example, two 
 * [Coordinate systems in DirectX](../develop/native/coordinate-systems-in-directx.md)
 * [Spatial anchors](spatial-anchors.md)
 * [Shared experiences in mixed reality](../develop/platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
+* <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * [Case study - Looking through holes in your reality](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)

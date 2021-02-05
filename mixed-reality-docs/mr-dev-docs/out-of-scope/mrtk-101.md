@@ -146,20 +146,6 @@ Ready to create amazing experiences for mixed reality? Visit the pages below and
 </tr>
 </table>
 
-## Next Development Checkpoint
-
-If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can continue to the next building block: 
-
-> [!div class="nextstepaction"]
-> [Camera](camera-in-unity.md)
-
-Or jump to Mixed Reality platform capabilities and APIs:
-
-> [!div class="nextstepaction"]
-> [Shared experiences](shared-experiences-in-unity.md)
-
-You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.
-
 ## See also
 * [MRTK Installation Guide (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
 * [Mixed Reality Toolkit-Unity (MRTK) GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity)

@@ -58,13 +58,13 @@ In the Inspector window, use the **Add Component** button to add the **Generic N
 
 In the Inspector window, use the **Add Component** button to add the **Photon View (Script)** component to the PhotonUser object and configure it as follows:
 
-* To the **Observed Components** field, assign the **Generic Net Sync (Script)** component
+* Ensure that the **Observed Components** field is assigned with the **Generic Net Sync (Script)** component
 
 ![Unity with Photon View component added and configured](images/mr-learning-sharing/sharing-03-section2-step1-4.png)
 
 ### 2. Create the avatar
 
-In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **StandardAssets** > **Materials** folder to locate the MRTK materials.
+In the Project window, navigate to the **Assets** > **MRTK** > **StandardAssets** > **Materials** folder to locate the MRTK materials.
 
 Then, in the Hierarchy window, right-click on the **PhotonUser** object and select **3D Object** > **Sphere** to create a sphere object as a child of the PhotonUser object and configure it as follows:
 
@@ -107,7 +107,7 @@ If you now build and deploy the Unity project to your HoloLens, then, back in Un
 ![Animation showing Unity with networked users](images/mr-learning-sharing/sharing-03-section4-step1-1.gif)
 
 > [!TIP]
-> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Building your app to your HoloLens 2](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2) instructions.
+> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Building your app to your HoloLens 2](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions.
 
 > [!CAUTION]
 > The app needs to connect to Photon, so make sure your computer/device is connected to the internet.

@@ -21,7 +21,7 @@ The first step to bringing a 2D app to mixed reality headsets is to get your app
 
 To build a new 2D app for mixed reality, you build a standard 2D Universal Windows Platform (UWP) app. No other app changes are required for that app to then run as a slate in mixed reality.
 
-To get started building a 2D UWP app, check out the [Create your first app](https://docs.microsoft.com/windows/uwp/get-started/your-first-app) article.
+To get started building a 2D UWP app, check out the [Create your first app](/windows/uwp/get-started/your-first-app) article.
 
 ### Bringing an existing 2D Store app to UWP
 
@@ -30,10 +30,10 @@ If you already have a 2D Windows app in the Store, make sure it's targeting the 
 
 |  Starting Point  |  AppX Manifest Platform Target  |  How to make this Universal? | 
 |----------|----------|----------|
-|  Windows Phone (Silverlight)  |  Silverlight App Manifest |  [Migrate to WinRT](https://msdn.microsoft.com/library/windows/apps/dn642486(v=vs.105).aspx) | 
-|  Windows Phone 8.1 Universal  |  8.1 AppX Manifest that Doesn't Include Platform Target  |  [Migrate your app to the Universal Windows Platform](https://msdn.microsoft.com/library/mt148501.aspx) | 
-|  Windows Store 8  |  8 AppX Manifest that Doesn't Include Platform Target  |  [Migrate your app to the Universal Windows Platform](https://msdn.microsoft.com/library/mt148501.aspx) | 
-|  Windows Store 8.1 Universal  |  8.1 AppX Manifest that Doesn't Include Platform Target  |  [Migrate your app to the Universal Windows Platform](https://msdn.microsoft.com/library/mt148501.aspx) | 
+|  Windows Phone (Silverlight)  |  Silverlight App Manifest |  [Migrate to WinRT](/previous-versions/windows/apps/dn642486(v=vs.105)) | 
+|  Windows Phone 8.1 Universal  |  8.1 AppX Manifest that Doesn't Include Platform Target  |  [Migrate your app to the Universal Windows Platform](/previous-versions/visualstudio/visual-studio-2015/misc/migrate-apps-to-the-universal-windows-platform-uwp) | 
+|  Windows Store 8  |  8 AppX Manifest that Doesn't Include Platform Target  |  [Migrate your app to the Universal Windows Platform](/previous-versions/visualstudio/visual-studio-2015/misc/migrate-apps-to-the-universal-windows-platform-uwp) | 
+|  Windows Store 8.1 Universal  |  8.1 AppX Manifest that Doesn't Include Platform Target  |  [Migrate your app to the Universal Windows Platform](/previous-versions/visualstudio/visual-studio-2015/misc/migrate-apps-to-the-universal-windows-platform-uwp) | 
 
 If you have a 2D Unity app today built as a Win32 app on the **PC, Mac & Linux Standalone** build target, switch to the **Universal Windows Platform** build target for mixed reality.
 
@@ -112,7 +112,7 @@ Now that your UWP app is running on immersive headsets and HoloLens as a 2D holo
 
 ![From responsive design](images/scale-500px.png)
 
-Windows 10 moves all visual design from real screen pixels to **effective pixels**. That means, developers design their UI following the Windows 10 Human Interface Guidelines for effective pixels, and Windows scaling ensures those effective pixels are the right size for usability across devices, resolutions, DPI, and so on. See this [great read on MSDN](https://msdn.microsoft.com/library/windows/apps/Dn958435.aspx) and this [BUILD presentation](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx) for more information.
+Windows 10 moves all visual design from real screen pixels to **effective pixels**. That means, developers design their UI following the Windows 10 Human Interface Guidelines for effective pixels, and Windows scaling ensures those effective pixels are the right size for usability across devices, resolutions, DPI, and so on. See this [great read on MSDN](/windows/uwp/design/layout/screen-sizes-and-breakpoints-for-responsive-design) and this [BUILD presentation](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx) for more information.
 
 Even with the unique ability to place apps in your world at a range of distances, TV-like viewing distances are recommended to produce the best readability and interaction with gaze/gesture. Because of that, a virtual slate in the Mixed Reality Home will display your flat UWP view at:
 
@@ -127,7 +127,7 @@ This resolution has several advantages:
 
 **Do:**
 * Follow the [Windows 10 Human Interface Guidelines (HIG)](https://dev.windows.com/design) for styles, font sizes and button sizes. HoloLens will do the work to ensure your app will have compatible app patterns, readable text sizes, and appropriate hit target sizing.
-* Ensure your UI follows best practices for [responsive design](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx) to look best at HoloLens's unique resolution and DPI.
+* Ensure your UI follows best practices for [responsive design](/windows/uwp/design/layout/screen-sizes-and-breakpoints-for-responsive-design) to look best at HoloLens's unique resolution and DPI.
 * Use the "light" color theme recommendations from Windows.
 
 **Don't:**
@@ -143,7 +143,7 @@ The [app model](../../design/app-model.md) for mixed reality is designed to use 
 
 **Title:** displays the *displayname* of the Tile associated with the app instance
 
-**Back Button:** raises the *[BackRequested](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.backrequested.aspx)* event when pressed. Back Button visibility is controlled by *[SystemNavigationManager.AppViewBackButtonVisibility](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.aspx)*.
+**Back Button:** raises the *[BackRequested](/uwp/api/Windows.UI.Core.SystemNavigationManager)* event when pressed. Back Button visibility is controlled by *[SystemNavigationManager.AppViewBackButtonVisibility](/uwp/api/Windows.UI.Core.SystemNavigationManager)*.
 
 ![App bar UI in 2D app view](images/12697297-10104100857470613-1470416918759008487-o-500px.jpg)<br>
 *App bar UI in 2D app view*
@@ -158,7 +158,7 @@ HoloLens uses advanced depth sensors to see the world and see users. This enable
 
 With Desktop headsets, users can use motion controllers to point at apps and take action. They can also use a gamepad, targeting objects with their gaze.
 
-Windows takes care of all of this complexity for UWP apps, translating your [gaze](../../design/gaze-and-commit.md), gestures, voice, and motion controller input to [pointer events](https://msdn.microsoft.com/library/windows/apps/mt404610#pointer_events) that abstract away the input mechanism. For example, a user may have done an air-tap with their hand or pulled the Select trigger on a motion controller, but 2D applications don't need to know where the input came from - they just see a 2D touch press, as if on a touchscreen.
+Windows takes care of all of this complexity for UWP apps, translating your [gaze](../../design/gaze-and-commit.md), gestures, voice, and motion controller input to [pointer events](/windows/uwp/design/input/handle-pointer-input#pointer_events) that abstract away the input mechanism. For example, a user may have done an air-tap with their hand or pulled the Select trigger on a motion controller, but 2D applications don't need to know where the input came from - they just see a 2D touch press, as if on a touchscreen.
 
 Here are the high-level concepts/scenarios you should understand for input when bringing your UWP app to HoloLens:
 * [Gaze](../../design/gaze-and-commit.md) turns into hover events, which can unexpectedly trigger menus, flyouts or other user interface elements to pop up just by gazing around your app.

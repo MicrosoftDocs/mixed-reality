@@ -16,7 +16,7 @@ The performant framerate values for each target platform are listed below.
 
 | Platform | Target Frame Rate |
 |----------|-------------------|
-| [HoloLens](../../hololens-hardware-details.md) | 60 FPS |
+| [HoloLens](/hololens/hololens1-hardware) | 60 FPS |
 | [Windows Mixed Reality Ultra PCs](../../discover/immersive-headset-hardware-details.md) | 90 FPS |
 | [Windows Mixed Reality PCs](../../discover/immersive-headset-hardware-details.md) | 60 FPS |
 
@@ -43,9 +43,12 @@ There are many tools that allow you to understand the performance profile and po
 
 Below are some common tools to help you gather deep profiling information for your application:
 - [Intel Graphics Performance Analyzers](https://software.intel.com/gpa)
-- [Visual Studio Graphics Debuggers](https://docs.microsoft.com/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)
+- [Visual Studio Graphics Debuggers](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)
 - [Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html)
 - [Unity Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html)
+- [Unreal Insights](../unreal/unreal-insights.md)
+- [PIX](https://devblogs.microsoft.com/pix/)
+- [GPU Pofiling in Unreal](https://docs.unrealengine.com/en-US/TestingAndOptimization/PerformanceAndProfiling/GPU/index.html)
 
 ### How to profile in any environment
 
@@ -97,7 +100,7 @@ Fill rate is focused on reducing the number of operations that need to be comput
 
 #### Reduce polygon count
 
-Higher polygon counts result in more operations for the GPU, so [reducing the number of polygons](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets) in your scene reduces the render time. There are other factors that make shading the geometry expensive, but polygon count is the simplest metric to determine how much work it will take to render a scene.
+Higher polygon counts result in more operations for the GPU, so [reducing the number of polygons](/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets) in your scene reduces the render time. There are other factors that make shading the geometry expensive, but polygon count is the simplest metric to determine how much work it will take to render a scene.
 
 #### Limit overdraw
 
@@ -136,6 +139,9 @@ Object pooling is a popular technique to reduce the cost of continuous allocatio
 ## See also
 - [Performance recommendations for Unity](../unity/performance-recommendations-for-unity.md)
 - [Recommended settings for Unity](../unity/recommended-settings-for-unity.md)
+- [Performance recommendations for Unreal](../unreal/performance-recommendations-for-unreal.md)
+- [Material recommendations in Unreal](../unreal/unreal-materials.md)
 - [Optimize 3D models](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
 - [Best practices for converting and optimizing real-time 3D Models](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/best-practices)
-
+- [Performance guidelines for artists and designers for Unreal](https://docs.unrealengine.com/en-US/TestingAndOptimization/PerformanceAndProfiling/Guidelines/index.html)
+- [VR best practices for Unreal](https://docs.unrealengine.com/en-US/SharingAndReleasing/XRDevelopment/VR/DevelopVR/ContentSetup/index.html)

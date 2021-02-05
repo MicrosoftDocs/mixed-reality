@@ -16,13 +16,13 @@ Over the course of your HoloLens development you may need to write a feature usi
 
 ## Next Development Checkpoint
 
-If you're following the Unreal development journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs. From here, you can continue to any [topic](unreal-development-overview.md#3-platform-capabilities-and-apis) or jump directly to deploying your app on a device or emulator.
+If you're following the Unreal development journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs. From here, you can continue to any [topic](unreal-development-overview.md#3-advanced-features) or jump directly to deploying your app on a device or emulator.
 
 > [!div class="nextstepaction"]
 > [Deploying to device](unreal-deploying.md)
 
 ## See also
 
-* [C++/WinRT APIs](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/)
-* [FileSavePicker class](https://docs.microsoft.com/uwp/api/Windows.Storage.Pickers.FileSavePicker) 
-* [Unreal Third-Party Libraries](https://docs.unrealengine.com/Programming/BuildTools/UnrealBuildTool/ThirdPartyLibraries/index.html) 
+* [C++/WinRT APIs](/windows/uwp/cpp-and-winrt-apis/)
+* [FileSavePicker class](/uwp/api/Windows.Storage.Pickers.FileSavePicker) 
+* [Unreal Third-Party Libraries](https://docs.unrealengine.com/Programming/BuildTools/UnrealBuildTool/ThirdPartyLibraries/index.html)

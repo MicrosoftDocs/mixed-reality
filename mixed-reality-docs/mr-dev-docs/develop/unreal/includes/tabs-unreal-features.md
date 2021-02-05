@@ -1,7 +1,7 @@
 # [4.26](#tab/ue426)
 
 The latest Unreal Engine 4.26 release includes:
-* Support for new [cross-device XR APIs](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-porting)
+* Support for new [cross-device XR APIs](../unreal-porting.md)
 * OpenXR support + [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal) plugin 
 * HoloLens Media Player plugin for performant video playback
 * Azure Spatial Anchors for iOS and Android (beta)
@@ -23,4 +23,4 @@ Unreal Engine 4.25 includes:
 * Mixed reality capture
 * Initial support for Azure Spatial Anchors
 
-See the Unreal Engine 4.25 <a href="https://docs.unrealengine.com/Support/Builds/ReleaseNotes/4_25/index.html" target="_blank" title="Unreal Engine 4.25 release notes">release notes</a> for more. 
+See the Unreal Engine 4.25 <a href="https://docs.unrealengine.com/Support/Builds/ReleaseNotes/4_25/index.html" target="_blank" title="Unreal Engine 4.25 release notes">release notes</a> for more.

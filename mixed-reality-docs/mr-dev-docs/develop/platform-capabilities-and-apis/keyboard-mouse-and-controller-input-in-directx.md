@@ -56,7 +56,7 @@ For more information on implementing CoreTextEditContext support, see the [CoreT
 You can also use mouse input, again via the UWP CoreWindow input event handlers. Here's how to modify the Windows Holographic app template to support mouse clicks in the same way as pressed gestures. After making this modification, a mouse click while wearing an immersive headset device will reposition the cube.
 
 > [!NOTE]
-> UWP apps can also get raw XY data for the mouse by using the [MouseDevice](https://docs.microsoft.com/uwp/api/Windows.Devices.Input.MouseDevice) API.
+> UWP apps can also get raw XY data for the mouse by using the [MouseDevice](/uwp/api/Windows.Devices.Input.MouseDevice) API.
 
 Start by declaring a new OnPointerPressed handler in AppView.h:
 

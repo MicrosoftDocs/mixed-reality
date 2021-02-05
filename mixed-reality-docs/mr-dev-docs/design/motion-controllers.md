@@ -5,7 +5,7 @@ author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 6dof controllers, motion controllers, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, scrolling, grip, state
+keywords: 6dof controllers, motion controllers, pairing, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, scrolling, grip, state
 ---
 
 # Motion controllers
@@ -36,7 +36,7 @@ keywords: 6dof controllers, motion controllers, mixed reality headset, windows m
 </colgroup>
 <tr>
      <td><strong>Feature</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
 </tr>
@@ -75,14 +75,14 @@ Windows Mixed Reality motion controllers offer precise and responsive movement t
 
 **Check for Windows, Unity, and driver updates**
 * Visit [Install the tools](../develop/install-the-tools.md) for the preferred versions of Windows, Unity, and so on, for mixed reality development.
-* Make sure you have the most up-to-date [headset and motion controller drivers](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/mixed-reality-software).
+* Make sure you have the most up-to-date [headset and motion controller drivers](/windows/mixed-reality/enthusiast-guide/mixed-reality-software).
 
 ### Pairing controllers
 
 Motion controllers can be bonded with host PC using Windows settings like any other Bluetooth device.
 
 1. Insert two AA batteries into the back of the controller. Leave the battery cover off for now.
-2. If you're using an external USB Bluetooth Adapter instead of a built-in Bluetooth radio, review the [Bluetooth best practices](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) before proceeding. For desktop configuration with built-in radio, ensure antenna is connected.
+2. If you're using an external USB Bluetooth Adapter instead of a built-in Bluetooth radio, review the [Bluetooth best practices](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) before proceeding. For desktop configuration with built-in radio, ensure antenna is connected.
 3. Open **Windows Settings** -> **Devices** -> **Add Bluetooth or other device** -> **Bluetooth** and remove any earlier instances of “Motion controller – Right” and “Motion controller – Left”. Check also Other devices category at the bottom of the list.
 4. Select **Add Bluetooth or other device** and see it starting to discover Bluetooth devices.
 5. Press and hold the controller's Windows button to turn on the controller, release once it buzzes.
@@ -137,7 +137,7 @@ If the controllers are turned off after pairing, their status will show up as Pa
 
 * Verify your controllers work properly:
     1. Launch **Mixed Reality Portal** and enter your Mixed Reality Home.
-    2. Move your controllers and verify tracking, test buttons, and verify [teleportation](../discover/navigating-the-windows-mixed-reality-home.md#getting-around-your-home) works. If they don't, then check out [motion controller troubleshooting](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers).
+    2. Move your controllers and verify tracking, test buttons, and verify [teleportation](../discover/navigating-the-windows-mixed-reality-home.md#getting-around-your-home) works. If they don't, then check out [motion controller troubleshooting](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers).
 
 ## Gazing and pointing
 
@@ -235,7 +235,7 @@ Both [hand gestures](gaze-and-commit.md#composite-gestures) and motion controlle
 
 We recommend rendering all renderable models at the **grip pose** of the controller, as the origin of the model is aligned with this point in the physical world. If you're rendering controller models, you may then wish to raycast into your scene from the **pointer pose**, which represents the ray along which users will naturally expect to point, given that controller's physical design.
 
-For more information about how to load controller models dynamically in Unity, see the [Rendering the motion controller model in Unity](../develop/unity/gestures-and-motion-controllers-in-unity.md#rendering-the-motion-controller-model-in-unity) section.
+For more information about how to load controller models dynamically in Unity, see the [Rendering the motion controller model in Unity](../develop/unity/gestures-in-unity.md#rendering-the-motion-controller-model-in-unity) section.
 
 **2D controller line art**
  While we recommend attaching in-app controller tips and commands to the in-app controller models themselves, some developers may want to use 2D line art representations of the motion controllers in flat "tutorial" or "how-to" UI. For those developers, we've made .png motion controller line art files available in both black and white below (right-click to save).
@@ -254,7 +254,7 @@ Motion controllers support pairing with a single PC. Follow instructions on [mot
 
 ### How do I update motion controller firmware?
 
-Motion controller firmware is part of the headset driver and will be updated automatically on connection, if necessary. Firmware updates typically take 1-2 minutes depending on Bluetooth radio and link quality. In rare cases, controller firmware updates may take up to 10 minutes, which can indicate poor Bluetooth connectivity or radio interference. See [Bluetooth best practices in the Enthusiast Guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) to troubleshoot connectivity issues. After a firmware update, controllers will reboot and reconnect to the host PC (you may notice the LEDs go bright for tracking). If a firmware update is interrupted (for example, the controllers lose power), it will be attempted again the next time the controllers are powered on.
+Motion controller firmware is part of the headset driver and will be updated automatically on connection, if necessary. Firmware updates typically take 1-2 minutes depending on Bluetooth radio and link quality. In rare cases, controller firmware updates may take up to 10 minutes, which can indicate poor Bluetooth connectivity or radio interference. See [Bluetooth best practices in the Enthusiast Guide](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) to troubleshoot connectivity issues. After a firmware update, controllers will reboot and reconnect to the host PC (you may notice the LEDs go bright for tracking). If a firmware update is interrupted (for example, the controllers lose power), it will be attempted again the next time the controllers are powered on.
 
 ### How I can check battery level?
 
@@ -266,17 +266,17 @@ Not for Universal Windows Applications.
 
 ## Troubleshooting
 
-See [motion controller troubleshooting](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers) in the Enthusiast Guide.
+See [motion controller troubleshooting](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers) in the Enthusiast Guide.
 
 ## Filing motion controller feedback/bugs
 
-[Give us feedback](../give-us-feedback.md) in Feedback Hub, using the "Mixed Reality -> Input" category.
+[Give us feedback](/hololens/hololens-feedback) in Feedback Hub, using the "Mixed Reality -> Input" category.
 
 ## See also
 
-* [Gestures and motion controllers in Unity](../develop/unity/gestures-and-motion-controllers-in-unity.md)
+* [Motion controllers in Unity](../develop/unity/motion-controllers-in-unity.md)
 * [Hands and motion controllers in DirectX](../develop/native/hands-and-motion-controllers-in-directx.md)
 * [Gestures](gaze-and-commit.md#composite-gestures)
-* [Enthusiast's Guide: Your Windows Mixed Reality home](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
-* [Enthusiast's Guide: Using games & apps in Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)
-* [How inside-out tracking works](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system)
+* [Enthusiast's Guide: Your Windows Mixed Reality home](/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
+* [Enthusiast's Guide: Using games & apps in Windows Mixed Reality](/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)
+* [How inside-out tracking works](/windows/mixed-reality/enthusiast-guide/tracking-system)

@@ -172,7 +172,7 @@ After you're satisfied with your animation
 
 * [Interaction-fundamentals](interaction-fundamentals.md)
 * [Asset Creation Process](asset-creation-process.md)
-* [Gestures](../gestures.md)
+* [Gestures](./interaction-fundamentals.md)
 * [Install the Tools](../develop/install-the-tools.md)
 * [Configure Unity Project](../develop/unity/Configure-Unity-Project.md)
 * [Unity development overview](../develop/unity/unity-development-overview.md)

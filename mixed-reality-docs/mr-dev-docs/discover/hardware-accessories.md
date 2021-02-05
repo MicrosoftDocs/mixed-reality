@@ -12,7 +12,7 @@ keywords: how-to, accessories, bluetooth, bt, controller, gamepad, clicker, xbox
 
 Windows Mixed Reality devices support accessories. You can use Bluetooth or USB ports to pair supported accessories to an immersive headset from your PC.
 
-For information about using Bluetooth accessories with HoloLens, see [Connect to Bluetooth and USB-C devices](https://docs.microsoft.com/hololens/hololens-connect-devices).
+For information about using Bluetooth accessories with HoloLens, see [Connect to Bluetooth and USB-C devices](/hololens/hololens-connect-devices).
 
 Windows Mixed Reality immersive headsets require accessories for input beyond [gaze](../design/gaze-and-commit.md) and [voice](../design/voice-input.md). Supported accessories include **keyboard and mouse**, **gamepad**, and **[motion controllers](../design/motion-controllers.md)**.
 

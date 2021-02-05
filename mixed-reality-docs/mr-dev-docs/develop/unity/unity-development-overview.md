@@ -31,6 +31,7 @@ The easiest way to develop in Unity is with the Mixed Reality Toolkit. MRTK will
 | [What is MRTK?](mrtk-getting-started.md) | Begin your journey by getting acquainted with the Mixed Reality Toolkit and what it has to offer |
 | [Install the latest tools](../install-the-tools.md) | Download and install the latest Unity package and setup your project for mixed reality |
 | [HoloLens 2 tutorial series](tutorials/mr-learning-base-01.md) | Dive into beginner level MRTK tutorials for HoloLens 2 hardware |
+| **Optional** [Download the Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md) | A new developer tool for discovering, updating, and adding Mixed Reality feature packages to your Unity projects |
 
 > [!IMPORTANT]
 > If you'd like to create a new Unity project without importing Mixed Reality Toolkit, there are a small set of Unity settings you'll need to manually change for Windows Mixed Reality. These are broken down into two categories: per-project and per-scene. Take a look at our [configuration guide](configure-unity-project.md) for the step-by-step process.
@@ -44,7 +45,7 @@ All of the core building blocks for mixed reality applications are exposed in a 
 
 [!INCLUDE[](../includes/unity-building-blocks.md)]
 
-### 3. Platform capabilities and APIs
+### 3. Advanced features
 
 Other key features that play a role in mixed reality applications are available through Unity APIs without any extra packages or setup. These features can be added to Unity projects with or without MRTK installed. After diving into the more advanced capabilities that Unity offers, you'll be able to build deeper, complex Mixed Reality apps.
 
@@ -80,7 +81,7 @@ A developers job is never done, especially when learning a new tool or SDK. The 
 
 If you have existing apps that you'd like to port over, the articles listed below are your next stop:
 
-* [HoloToolkit/MRTK to MRTK v2](mrtk-porting-guide.md)
+* [HoloToolkit/MRTK to MRTK v2](../porting-apps/porting-hl1-hl2.md)
 * [Porting guide for immersive apps](../porting-apps/porting-guides.md)
 * [Input porting guide](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
 

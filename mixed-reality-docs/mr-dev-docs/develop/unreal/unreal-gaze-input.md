@@ -112,7 +112,7 @@ Or jump to Mixed Reality platform capabilities and APIs:
 You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#2-core-building-blocks) at any time.
 
 ## See also
-* [Calibration](../../calibration.md)
+* [Calibration](/hololens/hololens-calibration)
 * [Comfort](../../design/comfort.md)
 * [Gaze and commit](../../design/gaze-and-commit.md)
 * [Voice input](../../out-of-scope/voice-design.md)
