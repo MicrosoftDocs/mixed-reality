@@ -3,7 +3,7 @@ title: Introduction to the Azure Spatial Anchors tutorials
 description: Complete this course to learn how to implement Azure Spatial Anchors in a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 05/02/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, ios, android, Windows 10, ARCore, macOS, Android Build Support, ARKit
 ms.localizationpriority: high
