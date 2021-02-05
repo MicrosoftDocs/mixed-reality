@@ -103,13 +103,16 @@ Features are grouped by category to make things easier to find, click on **Mixed
 
 ![MixedRealityFeatureTool window](images/mr-learning-base/base-02-section4-step1-3.png)
 
-check the **Mixed Reality Toolkit Foundation** and click on **Get features** button to download the selected packages.
+check the **Mixed Reality Toolkit Foundation**, and click on the dropdown next to it to select the required MRTK version, for this tutorial series please use **2.5.3**. then click on **Get features** button to download the selected packages.
 
 ![Selecting Mixed reality foundation](images/mr-learning-base/base-02-section4-step1-4.png)
 
-Selected package **Mixed Reality Toolkit Foundation** is presented, along with its dependence package **Mixed Reality Toolkit Standard Assets** in the **Import features** window.
+Selected package **Mixed Reality Toolkit Foundation 2.5.3** is presented, along with its dependence package **Mixed Reality Toolkit Standard Assets 2.5.3** in the **Import features** window.
 
 You also need to set the location of the target unity project to provide the **Project path**, click on the **Three dots** next to the Project path and browse to your project folder in the explorer for example _D:\MixedRealityLearning\MRTK Tutorials_.
+
+> [!NOTE]
+> The dialog that's displayed when browsing for the Unity project folder contains '_' as the file name. There must be a value for the file name to enable the folder to be selected.
 
 Click on the **Validate** button to validate the selected package, you will get a popup with message **No validation issues were detected** click on **OK** to close the popup and click on **Import** button.
 
