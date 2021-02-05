@@ -42,9 +42,6 @@ After you have imported the tutorial assets your Project window should look simi
 
 ![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-04-section1-step1-4.png)
 
-> [!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Importing the tutorial assets](mr-learning-base-04.md#importing-the-tutorial-assets) instructions.
-
 ## Creating the parent object
 
 In the Hierarchy window, right-click on an empty spot, and select **Create Empty** to add an empty object to your scene:
