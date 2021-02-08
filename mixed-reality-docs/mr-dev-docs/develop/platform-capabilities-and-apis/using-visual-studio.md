@@ -45,17 +45,26 @@ If you're working with a Windows Mixed Reality headset connected to your PC, you
 
 ## Deploying an app over Wi-Fi - HoloLens 2
 
-1. Select an **ARM** or **ARM64** build configuration for your app</br>
+Configure your Visual Studio project with the following properties:
+
+1. Select either **Release** or **Master** for the apps compilation option
+2. Select an **ARM** or **ARM64** build configuration</br>
 ![ARM64 build configuration in Visual Studio](images/arm64setting.png)</br>
-2. Select **Remote Machine** in the deployment target drop-down menu</br>
+3. Select **Remote Machine** in the deployment target drop-down menu</br>
 ![Remote machine deployment target in Visual Studio](images/remotemachinesetting_arm64.png)</br>
-3. For C++ and JavaScript projects, go to **Project > Properties > Configuration Properties > Debugging**. For C# projects, a dialog will automatically appear to configure your connection.
-  a. Enter the IP address of your device in the **Address** or **Machine Name** field. Find the IP address on your HoloLens under **Settings > Network & Internet > Advanced Options**, or you can ask Cortana "What is my IP address?"
-  b. Set the Authentication Mode to **Universal (Unencrypted protocol)**</br>
+
+Next, you need to set your remote connection. For C++ and JavaScript projects, go to **Project > Properties > Configuration Properties > Debugging**. If you're working in a C# project, a dialog should automatically appear.
+
+> [!NOTE]
+> If the remote connection dialog doesn't appear in your C# project, you can open it manually from **Properties > Debug**.
+
+1. Enter the IP address of your device in the **Address** or **Machine Name** field. 
+    * You can find the IP address on your HoloLens under **Settings > Network & Internet > Advanced Options**, or you can ask Cortana "What is my IP address?"
+2. Set the **Authentication Mode** to **Universal (Unencrypted protocol)**</br>
   ![Remote connection dialog in Visual Studio](images/remotedeploy.png)</br>
-4. Select **Debug > Start debugging** to deploy your app and start debugging</br>
+3 Select **Debug > Start debugging** to deploy your app and start debugging</br>
 ![Start Without Debugging in Visual Studio](images/deploywithdebugging.png)</br>
-5. The first time you deploy an app to your HoloLens from your PC, you'll be prompted for a PIN. Follow the **Pairing your device** instructions below.
+4. The first time you deploy an app to your HoloLens from your PC, you'll be prompted for a PIN. Follow the **Pairing your device** instructions below.
 
 If your HoloLens IP address changes, you can change the IP address of the target machine by going to **Project > Properties > Configuration Properties > Debugging**
 
