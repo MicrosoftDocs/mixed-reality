@@ -11,21 +11,21 @@ As described in [Welcome to the Mixed Reality Feature Tool](https://aka.ms/MRFea
 >
 > To remove a configured scoped registry, please to to `Edit` > `Project Settings` > `Package Manager`.
 >
-> ![Removing scoped registry](Images/Packaging/RemoveScopedRegistry.png)
+> ![Removing scoped registry](../features/images/packaging/RemoveScopedRegistry.png)
 
 MRTK packages appear under the `Mixed Reality Toolkit` heading when discovering features.
 
-![Discover features](Images/Packaging/DiscoverFeatures.png)
+![Discover features](../features/images/packaging/DiscoverFeatures.png)
 
 When selecting features, there is no need to be concerned with required dependencies, the tool will automatically download and integrate them into the project.
 
-![Required dependencies](Images/Packaging/RequiredDependencies.png)
+![Required dependencies](../features/images/packaging/RequiredDependencies.png)
 
 ## Managing Mixed Reality features with the Unity Package Manager
 
 Once a Mixed Reality Toolkit package has been added to the package manifest, it can be managed using the Unity Package Manager user interface.
 
-![MRTK Foundation UPM Package](Images/Packaging/MRTK_FoundationUPM.png)
+![MRTK Foundation UPM Package](../features/images/packaging/MRTK_FoundationUPM.png)
 
 > [!NOTE]
 > If a Mixed Reality Toolkit package is removed using the Unity Package Manager, it will have to be re-added using the [previously described steps](#using-the-mixed-reality-feature-tool).
@@ -41,7 +41,7 @@ To utilize one or more of the examples, please use the following steps:
 1. Locate the desired sample(s) in the `Samples` list
 1. Click `Import into Project`
 
-![Importing samples](Images/Packaging/MRTK_ExamplesUpm.png)
+![Importing samples](../features/images/packaging/MRTK_ExamplesUpm.png)
 
 When an example package is updated, Unity provides the option to update imported samples.
 
@@ -50,4 +50,4 @@ When an example package is updated, Unity provides the option to update imported
 
 ## See Also
 
-- [Mixed Reality Toolkit packages](Packaging/MRTK_Packages.md)
+- [Mixed Reality Toolkit packages](../packages-releases/MRTK_Packages.md)
