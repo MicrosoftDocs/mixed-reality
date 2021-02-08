@@ -17,16 +17,16 @@ This guide will walk through setting up a *Spatial Object Mesh Observer*. There 
 1. Open or expand the *Spatial Awareness System* tab
 1. Click on *"Add Spatial Observer"* button
 
-    ![Add Spatial Observer](../../Documentation/Images/SpatialAwareness/AddObserver.png)
+    ![Add Spatial Observer](../images/spatial-awareness/AddObserver.png)
 
 1. Select the *SpatialObjectMeshObserver* type
 
-    ![Select Spatial Object Mesh Observer](../../Documentation/Images/SpatialAwareness/SelectObjectObserver.png)
+    ![Select Spatial Object Mesh Observer](../images/spatial-awareness/SelectObjectObserver.png)
 
 1. Select the desired *Spatial Mesh Object*. By default, the observer is configured with an example model. This model was created using a Microsoft HoloLens but it is possible to [create a new scan mesh object](#acquiring-environment-scans).
 1. [Configure rest of the Mesh Observer profile properties](ConfiguringSpatialAwarenessMeshObserver.md)
 
-    ![Select the Mesh Object](../../Documentation/Images/SpatialAwareness/ObjectObserverProfile.png)
+    ![Select the Mesh Object](../images/spatial-awareness/ObjectObserverProfile.png)
 
 ### Spatial object mesh observer profile notes
 
@@ -71,8 +71,8 @@ The [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/usi
 
 ## See also
 
-- [Profiles](../Profiles/Profiles.md)
-- [Mixed Reality Toolkit Profile configuration guide](../MixedRealityConfigurationGuide.md)
+- [Profiles](../profiles/Profiles.md)
+- [Mixed Reality Toolkit Profile configuration guide](../../configuration/MixedRealityConfigurationGuide.md)
 - [Spatial Awareness Getting started](SpatialAwarenessGettingStarted.md)
 - [Configuring Mesh Observers on Device](ConfiguringSpatialAwarenessMeshObserver.md)
 - [Configuring Mesh Observers via code](UsageGuide.md)

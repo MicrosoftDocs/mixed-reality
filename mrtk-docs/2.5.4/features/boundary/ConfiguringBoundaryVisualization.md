@@ -4,7 +4,7 @@ The *Boundary Visualization Profile* provides options for configuring the visual
 
 ## General settings
 
-![Boundary Visualization General Settings](../../Documentation/Images/Boundary/BoundaryVisualizationGeneralSettings.png)
+![Boundary Visualization General Settings](../images/boundary/BoundaryVisualizationGeneralSettings.png)
 
 ### Boundary height
 
@@ -12,7 +12,7 @@ The boundary height indicates the distance above the floor plane at which the bo
 
 ## Floor settings
 
-![Boundary Visualization Floor Settings](../../Documentation/Images/Boundary/BoundaryVisualizationFloorSettings.png)
+![Boundary Visualization Floor Settings](../images/boundary/BoundaryVisualizationFloorSettings.png)
 
 **Show**
 
@@ -32,7 +32,7 @@ The layer on which the floor plane should be set. The default value is the *Defa
 
 ## Play area settings
 
-![Boundary Visualization Play Area Settings](../../Documentation/Images/Boundary/BoundaryVisualizationPlayAreaSettings.png)
+![Boundary Visualization Play Area Settings](../images/boundary/BoundaryVisualizationPlayAreaSettings.png)
 
 **Show**
 
@@ -48,7 +48,7 @@ The layer on which the play area should be set. The default value is the *Ignore
 
 ## Tracked area settings
 
-![Boundary Visualization Tracked Area Settings](../../Documentation/Images/Boundary/BoundaryVisualizationTrackedAreaSettings.png)
+![Boundary Visualization Tracked Area Settings](../images/boundary/BoundaryVisualizationTrackedAreaSettings.png)
 
 **Show**
 
@@ -64,7 +64,7 @@ The layer on which the tracked area should be sets. The default value is the *Ig
 
 ## Boundary wall settings
 
-![Boundary Visualization Boundary Wall Settings](../../Documentation/Images/Boundary/BoundaryVisualizationWallSettings.png)
+![Boundary Visualization Boundary Wall Settings](../images/boundary/BoundaryVisualizationWallSettings.png)
 
 **Show**
 
@@ -83,7 +83,7 @@ The layer on which the boundary walls should be set. The default value is the *I
 
 ## Boundary ceiling settings
 
-![Boundary Visualization Boundary Ceiling Settings](../../Documentation/Images/Boundary/BoundaryVisualizationCeilingSettings.png)
+![Boundary Visualization Boundary Ceiling Settings](../images/boundary/BoundaryVisualizationCeilingSettings.png)
 
 **Show**
 

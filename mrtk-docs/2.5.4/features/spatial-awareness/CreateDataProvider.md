@@ -2,7 +2,7 @@
 
 The Spatial Awareness system is an extensible system for providing applications with data about real world environments. To add support for a new hardware platform or a new form of Spatial Awareness data, a custom data provider may be required.
 
-This article describes how to create [custom data providers](../Architecture/SystemsExtensionsProviders.md), also called Spatial Observers, for the Spatial Awareness system. The example code shown here is from the [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) class implementation which is [useful for loading 3D mesh data in-editor](SpatialObjectMeshObserver.md).
+This article describes how to create [custom data providers](../../architecture/SystemsExtensionsProviders.md), also called Spatial Observers, for the Spatial Awareness system. The example code shown here is from the [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) class implementation which is [useful for loading 3D mesh data in-editor](SpatialObjectMeshObserver.md).
 
 > [!NOTE]
 > The complete source code used in this example can be found in the `Assets/MRTK/Providers/ObjectMeshObserver` folder.
@@ -31,7 +31,7 @@ For example, a Spatial Awareness data provider created and shipped by the Contos
 
 It is recommended that the source code for data providers be layed out in a folder hierarchy as shown in the following image.
 
-![Example folder structure](../Images/SpatialAwareness/ExampleProviderFolderStructure.png)
+![Example folder structure](../images/spatial-awareness/ExampleProviderFolderStructure.png)
 
 Where the *ContosoSpatialAwareness* folder contains the implementation of the data provider, the *Editor* folder contains the inspector (and any other Unity editor specific code), and the *Profiles* folder contains one or more pre-made profile scriptable objects.
 
@@ -206,7 +206,7 @@ It is recommended to implement the pattern utilized by the MRTK when instrumenti
 
 ## Create the profile and inspector
 
-In the Mixed Reality Toolkit, data providers are configured using [profiles](../Profiles/Profiles.md).
+In the Mixed Reality Toolkit, data providers are configured using [profiles](../profiles/Profiles.md).
 
 ### Define the profile
 
@@ -267,7 +267,7 @@ The ContosoInputEditor assembly definition will specify the profile inspector an
 
 Once created, the data provider can be registered with the Spatial Awareness system to be used in the application.
 
-![Selecting the spatial object mesh observer](../Images/SpatialAwareness/SelectObjectObserver.png)
+![Selecting the spatial object mesh observer](../images/spatial-awareness/SelectObjectObserver.png)
 
 ## Packaging and distribution
 

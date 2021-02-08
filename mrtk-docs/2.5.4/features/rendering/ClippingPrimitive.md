@@ -2,12 +2,12 @@
 
 The [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) behaviors allow for performant [`plane`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPlane), [`sphere`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere), and [`box`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) shape clipping with the ability to specify which side of the primitive to clip against (inside or outside) when used with MRTK shaders.
 
-![primitive clipping gizmos](../Images/MRTKStandardShader/MRTK_PrimitiveClippingGizmos.gif)
+![primitive clipping gizmos](../images/mrtk-standard-shader/MRTK_PrimitiveClippingGizmos.gif)
 
 > [!NOTE]
 > [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) utilize [clip/discard](https://developer.download.nvidia.com/cg/clip.html) instructions within shaders and disable Unity's ability to batch clipped renderers. Take these performance implications in mind when utilizing clipping primitives.
 
-[`ClippingPlane.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPlane), [`ClippingSphere.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere), and [`ClippingBox.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) can be used to easily control clipping primitive properties. Use these components with the following shaders to leverage clipping scenarios. 
+[`ClippingPlane.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPlane), [`ClippingSphere.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere), and [`ClippingBox.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) can be used to easily control clipping primitive properties. Use these components with the following shaders to leverage clipping scenarios.
 
 - *Mixed Reality Toolkit/Standard*
 - *Mixed Reality Toolkit/TextMeshPro*
@@ -16,7 +16,6 @@ The [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.Clipping
 ## Examples
 
 The **ClippingExamples** and **MaterialGallery** scenes demonstrate usage of the [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) behaviors, and can be found at: MRTK/Examples/Demos/StandardShader/Scenes/
-
 
 ## Advanced Usage
 
@@ -38,6 +37,7 @@ By default only one [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Ut
 #pragma multi_compile _ _CLIPPING_SPHERE
 #pragma multi_compile _ _CLIPPING_BOX
 ```
+
 > [!NOTE]
 > The above change will incur additional shader compilation time.
 
@@ -111,4 +111,4 @@ Finally, add a [`ClippingBox`](xref:Microsoft.MixedReality.Toolkit.Utilities.Cli
 
 ## See also
 
-* [MRTK Standard Shader](../README_MRTKStandardShader.md)
+- [MRTK Standard Shader](MRTKStandardShader.md)

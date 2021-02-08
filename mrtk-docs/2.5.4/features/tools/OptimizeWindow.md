@@ -1,6 +1,6 @@
 # Optimize window
 
-The MRTK Optimize Window is a utility to help automate and inform in the process of configuring a mixed reality project for best [performance](../Performance/PerfGettingStarted.md) in Unity. This tool generally focuses on rendering configurations that when set to the correct preset can save milliseconds of processing.
+The MRTK Optimize Window is a utility to help automate and inform in the process of configuring a mixed reality project for best [performance](../../performance/PerfGettingStarted.md) in Unity. This tool generally focuses on rendering configurations that when set to the correct preset can save milliseconds of processing.
 
 The *Active Build Target* is the [build platform currently targeted](https://docs.unity3d.com/Manual/BuildSettings.html) by the project for compiling.
 
@@ -10,7 +10,7 @@ The *Performance Target* instructs the optimize tool on what kind of device endp
 - *VR Standalone* are mobile-class devices, such as the Oculus Go or Quest
 - *VR Tethered* are PC-powered devices, such as the Samsung Odyssey, Oculus Rift or HTC Vive etc.
 
-![MRTK Optimize Window Performance Target](../../Documentation/Images/Performance/OptimizeWindowPerformanceTarget.jpg)
+![MRTK Optimize Window Performance Target](../images/performance/OptimizeWindowPerformanceTarget.jpg)
 
 ## Setting optimizations
 
@@ -18,7 +18,7 @@ The settings optimization tab covers some of the important rendering configurati
 
 A green check icon means that an optimal value has been configured in the project/scene for this particular setting. A yellow warning icon indicates the current configuration can be improved. Clicking the associated button in a given section will auto-configure that setting in the Unity project/scene to a more optimal value.
 
-![MRTK Optimize Window Settings](../../Documentation/Images/Performance/OptimizeWindow_Settings.png)
+![MRTK Optimize Window Settings](../images/performance/OptimizeWindow_Settings.png)
 
 ### Single Pass Instanced rendering
 
@@ -48,7 +48,7 @@ Furthermore, for *AR Headsets*, it is recommended to utilize a 16-bit depth form
 
 The *Scene Analysis* tab is designed to inform developers on which elements currently in the scene will likely have the most impact on performance.
 
-![MRTK Optimize Window Settings](../../Documentation/Images/Performance/OptimizeWindow_SceneAnalysis.png)
+![MRTK Optimize Window Settings](../images/performance/OptimizeWindow_SceneAnalysis.png)
 
 ### Lighting analysis
 
@@ -64,13 +64,13 @@ Graphics raycast operations are performed per pointer in MRTK to determine if an
 
 ## Shader analysis
 
-The [Unity Standard shader](https://docs.unity3d.com/Manual/shader-StandardShader.html) can produce very high quality visual results for games but is not generally best suited for the performance needs of mixed reality applications, especially since such applications are generally GPU bounded. Thus, it is recommended to developers to utilize the [MRTK Standard shader](../README_MRTKStandardShader.md) to balance aesthetics & graphical features with performance.
+The [Unity Standard shader](https://docs.unity3d.com/Manual/shader-StandardShader.html) can produce very high quality visual results for games but is not generally best suited for the performance needs of mixed reality applications, especially since such applications are generally GPU bounded. Thus, it is recommended to developers to utilize the [MRTK Standard shader](../rendering/MRTKStandardShader.md) to balance aesthetics & graphical features with performance.
 
 The *Shader Analysis* tab scans the current project's Asset folder for materials using the Unity Standard shader or if desired, all materials not using Mixed Reality Toolkit provided shaders. Once discovered, developers can convert all materials or convert individually using the appropriate buttons.
 
-![MRTK Optimize Window Settings](../../Documentation/Images/Performance/OptimizeWindow_ShaderAnalysis.png)
+![MRTK Optimize Window Settings](../images/performance/OptimizeWindow_ShaderAnalysis.png)
 
 ## See also
 
-- [Performance](../Performance/PerfGettingStarted.md)
-- [Hologram Stabilization](../hologram-stabilization.md)
+- [Performance](../../performance/PerfGettingStarted.md)
+- [Hologram Stabilization](../../performance/hologram-stabilization.md)

@@ -1,6 +1,6 @@
 # Spatial awareness
 
-![Spatial Awareness](../../Documentation/Images/SpatialAwareness/MRTK_SpatialAwareness_Main.png)
+![Spatial Awareness](../images/spatial-awareness/MRTK_SpatialAwareness_Main.png)
 
 The Spatial Awareness system provides real-world environmental awareness in mixed reality applications. When introduced on Microsoft HoloLens, Spatial Awareness provided a collection of meshes, representing the geometry of the environment, which allowed for compelling interactions between holograms and the real-world.
 
@@ -33,26 +33,26 @@ The Mixed Reality Toolkit ships with a few default pre-configured profiles. Some
 
 1. Navigate to the *Spatial Awareness System* section and check *Enable Spatial Awareness System*
 
-    ![Enable Spatial Awareness](../../Documentation/Images/SpatialAwareness/MRTKConfig_SpatialAwareness.png)
+    ![Enable Spatial Awareness](../images/spatial-awareness/MRTKConfig_SpatialAwareness.png)
 
 1. Select the desired Spatial Awareness system implementation type. The [`MixedRealitySpatialAwarenessSystem`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.MixedRealitySpatialAwarenessSystem) is the default provided.
 
-    ![Select the Spatial Awareness System Implementation](../../Documentation/Images/SpatialAwareness/SpatialAwarenessSelectSystemType.png)
+    ![Select the Spatial Awareness System Implementation](../images/spatial-awareness/SpatialAwarenessSelectSystemType.png)
 
 ### Register observers
 
-Services in the Mixed Reality Toolkit can have [Data Provider services](../Architecture/SystemsExtensionsProviders.md) that supplement the main service with platform specific data and implementation controls. An example of this is the Mixed Reality Input System which has [multiple data providers](../Input/InputProviders.md) to get controller and other related input information from various platform-specific APIs.
+Services in the Mixed Reality Toolkit can have [Data Provider services](../../architecture/SystemsExtensionsProviders.md) that supplement the main service with platform specific data and implementation controls. An example of this is the Mixed Reality Input System which has [multiple data providers](../input/InputProviders.md) to get controller and other related input information from various platform-specific APIs.
 
 The Spatial Awareness system is similar in that data providers supply the system with mesh data about the real-world. The Spatial Awareness profile must have at least one Spatial Observer registered. Spatial Observers are generally platform specific components that act as the provider for surfacing various types of mesh data from a platform specific endpoint (i.e HoloLens).
 
 1. Open or expand the *Spatial Awareness System profile*
 
-    ![Spatial Awareness System Profile](../../Documentation/Images/SpatialAwareness/SpatialAwarenessProfile.png)
+    ![Spatial Awareness System Profile](../images/spatial-awareness/SpatialAwarenessProfile.png)
 
 1. Click the *"Add Spatial Observer"* button
 1. Select the desired *Spatial Observer implementation type*
 
-    ![Select the Spatial Observer Implementation](../../Documentation/Images/SpatialAwareness/SpatialAwarenessSelectObserver.png)
+    ![Select the Spatial Observer Implementation](../images/spatial-awareness/SpatialAwarenessSelectObserver.png)
 
 1. [Modify configuration properties on the observer](ConfiguringSpatialAwarenessMeshObserver.md) as necessary
 

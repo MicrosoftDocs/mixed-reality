@@ -22,12 +22,12 @@ The following steps presume use of the MixedRealityToolkit object. Steps require
 
 1. Select the MixedRealityToolkit object in the scene hierarchy.
 
-    ![MRTK Configured Scene Hierarchy](../../Documentation/Images/MRTK_ConfiguredHierarchy.png)
+    ![MRTK Configured Scene Hierarchy](../images/MRTK_ConfiguredHierarchy.png)
 
 1. Navigate the Inspector panel to the Diagnostics System section and check Enable
 1. Select the Diagnostics System implementation
 
-    ![Select the Diagnostics System Implementation](../../Documentation/Images/Diagnostics/DiagnosticsSelectSystemType.png)
+    ![Select the Diagnostics System Implementation](../images/diagnostics/DiagnosticsSelectSystemType.png)
 
 > [!NOTE]
 > Users of the default profile, `DefaultMixedRealityToolkitConfigurationProfile` (Assets/MRTK/SDK/Profiles), will have the diagnostics system pre-configured to use the [`MixedRealityDiagnosticsSystem`](xref:Microsoft.MixedReality.Toolkit.Diagnostics.MixedRealityDiagnosticsSystem) object.

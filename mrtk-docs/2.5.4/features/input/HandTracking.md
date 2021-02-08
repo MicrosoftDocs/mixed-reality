@@ -4,7 +4,7 @@
 
 The _Hand Tracking profile_ is found under the _Input System profile_. It contains settings for customizing hand representation.
 
-<img src="../../Documentation/Images/Input/HandTrackingProfile.png" width="650px" style="display:block;">
+<img src="../images/input/HandTrackingProfile.png" width="650px" alt="Hand Tracking Profile" style="display:block;">
 
 ## Joint prefabs
 
@@ -15,16 +15,15 @@ By default the hand joint prefabs are simple geometric primitives. These can be 
 > [!WARNING]
 > Avoid using complex scripts or expensive rendering in joint prefabs, since joint objects are transformed on every frame and can have significant performance cost!
 
-
-Default Hand Joint Representation |  Joint Labels 
+Default Hand Joint Representation |  Joint Labels
 :-------------------------:|:-------------------------:
-<img src="../../Documentation/Images/InputSimulation/ArticulatedHandJoints.png" height="300px"  style="display:inline;">  |  <img src="../../Documentation/Images/InputSimulation/MRTK_Core_Input_Hands_JointNames.png" height="300px"  style="display:inline;">
+<img src="../images/input-simulation/ArticulatedHandJoints.png" height="300px" alt="Articulated hand joints"  style="display:inline;">  |  <img src="../images/input-simulation/MRTK_Core_Input_Hands_JointNames.png" height="300px" alt="Input Hands"  style="display:inline;">
 
 ## Hand mesh prefab
 
 The hand mesh is used if fully defined mesh data is provided by the hand tracking device. The mesh renderable in the prefab is replaced by data from the device, so a dummy mesh such as a cube is sufficient. The material of the prefab is used for the hand mesh.
 
-<img src="../../Documentation/Images/InputSimulation/MRTK_Core_Input_Hands_ArticulatedHandMesh.png" width="350px"  style="display:block;">
+<img src="../images/input-simulation/MRTK_Core_Input_Hands_ArticulatedHandMesh.png" width="350px" alt="Input Hands"  style="display:block;">
 
 Hand mesh display can have a noticeable performance impact, for this reason it can be disabled entirely by unchecking **Enable Hand Mesh Visualization** option.
 

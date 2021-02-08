@@ -7,7 +7,7 @@ with the world based on where the user is looking. Gaze exists in two different 
 
 This type of gaze is based on the direction that the head/camera is looking at. Head gaze is active
 on systems that don't support eye gaze, or in cases where the hardware may support eye gaze, but
-the right set of [permissions and setup](../EyeTracking/EyeTracking_BasicSetup.md#eye-tracking-requirements-checklist)
+the right set of [permissions and setup](../eye-tracking/EyeTracking_BasicSetup.md#eye-tracking-requirements-checklist)
 has not been performed.
 
 Head gaze is usually associated with HoloLens 1 style interactions involving looking at object by
@@ -17,7 +17,7 @@ placing it in the center of the Holographic Frame and then performing the air ta
 
 This type of gaze is based on where the user's eyes are looking. Eye gaze is only present
 on systems that support eye tracking. See the
-[eye tracking documentation](../EyeTracking/EyeTracking_Main.md) for more details on how
+[eye tracking documentation](../eye-tracking/EyeTracking_Main.md) for more details on how
 to use eye gaze.
 
 ## GazeProvider
@@ -26,10 +26,10 @@ Gaze functionality (both head and eye) is provided by the
 [GazeProvider](xref:Microsoft.MixedReality.Toolkit.Input.GazeProvider). This provider can be configured
 in the *Pointer* section of the input system profile:
 
-![Gaze Configuration Entrypoint](../../Documentation/Images/Input/GazeConfigurationEntrypoint.png)
+![Gaze Configuration Entrypoint](../images/input/GazeConfigurationEntrypoint.png)
 
 Like other sources of input, the gaze provider interacts with objects in the scene
-through use of a pointer [(see this document for information on pointers)](../Architecture/InputSystem/ControllersPointersAndFocus.md).
+through use of a pointer [(see this document for information on pointers)](../../architecture/ControllersPointersAndFocus.md).
 In the case of the gaze provider, its pointer is implemented via `InternalGazePointer`
 and is not configured through a profile.
 

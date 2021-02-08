@@ -47,14 +47,13 @@ The XR SDK pipeline currently supports 3 platforms: Windows Mixed Reality, Oculu
 
 ![Plugin management](../features/images/xrsdk/PluginManagementOpenXR.png)
 
-> [!NOTE] 
+> [!NOTE]
 > If you have a pre-existing project that is using MRTK from UPM, make sure that the following line is in the **link.xml** file located in the MixedRealityToolkit.Generated folder.
-   
+
 `<assembly fullname = "Microsoft.MixedReality.Toolkit.Providers.OpenXR" preserve="all"/>`
 
 > [!NOTE]
 > For the initial release of MRTK and OpenXR, only the HoloLens 2 articulated hands and Windows Mixed Reality motion controllers are natively supported. Support for additional hardware will be added in upcoming releases.
-
 
 ### Configuring MRTK for the XR SDK pipeline
 

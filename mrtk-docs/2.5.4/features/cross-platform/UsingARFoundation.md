@@ -2,7 +2,7 @@
 
 ## Install required packages
 
-1. Download and import the **Microsoft.MixedReality.Toolkit.Unity.Foundation** package, from [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/tag/v2.3.0) or the [Unity Package Manager](../usingupm.md)
+1. Download and import the **Microsoft.MixedReality.Toolkit.Unity.Foundation** package, from [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/tag/v2.3.0) or the [Unity Package Manager](../../configuration/usingupm.md)
 
 1. In the Unity Package Manager (UPM), install the following packages:
 
@@ -35,33 +35,33 @@ The following steps presume use of the MixedRealityToolkit object. Steps require
 
 1. Select the MixedRealityToolkit object in the scene hierarchy.
 
-    ![MRTK Configured Scene Hierarchy](../Images/MRTK_ConfiguredHierarchy.png)
+    ![MRTK Configured Scene Hierarchy](../images/MRTK_ConfiguredHierarchy.png)
 
 1. Select **Copy and Customize** to Clone the MRTK Profile to enable custom configuration.
 
-    ![Clone MRTK Profile](../Images/CameraSystem/CloneProfileARFoundation.png)
+    ![Clone MRTK Profile](../images/camera-system/CloneProfileARFoundation.png)
 
 1. Select **Clone** next to the Camera Profile.
 
-    ![Clone MRTK Camera Profile](../Images/CameraSystem/CloneCameraProfileARFoundation.png)
+    ![Clone MRTK Camera Profile](../images/camera-system/CloneCameraProfileARFoundation.png)
 
 1. Navigate the Inspector panel to the camera system section and expand the **Camera Settings Providers** section.
 
-    ![Expand settings providers](../Images/CameraSystem/ExpandProviders.png)
+    ![Expand settings providers](../images/camera-system/ExpandProviders.png)
 
 1. Click **Add Camera Settings Provider** and expand the newly added **New camera settings** entry.
 
-    ![Expand new settings provider](../Images/CameraSystem/ExpandNewProvider.png)
+    ![Expand new settings provider](../images/camera-system/ExpandNewProvider.png)
 
 1. Select the Unity AR Camera Settings provider
 
-    ![Select Unity AR settings provider](../Images/CameraSystem/SelectUnityArSettings.png)
+    ![Select Unity AR settings provider](../images/camera-system/SelectUnityArSettings.png)
 
-    For more information about configuring the Unity AR camera settings provider: [Unity AR camera settings provider](../CameraSystem/UnityArCameraSettings.md).
+    For more information about configuring the Unity AR camera settings provider: [Unity AR camera settings provider](../camera-system/UnityArCameraSettings.md).
 
 > [!NOTE]
 > This installation checks (when the application starts) if the AR Foundation components are in the scene. If not, they are automatically added to make it work with ARCore and ARKit.
-> If you need to set a specific behaviour, you should add the components you need by yourself. 
+> If you need to set a specific behaviour, you should add the components you need by yourself.
 > For more information about AR Foundation components and installation, check this [documentation](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@2.2/manual/index.html#samples).
 
 ## Building a scene for Android and iOS devices
@@ -74,13 +74,13 @@ The following steps presume use of the MixedRealityToolkit object. Steps require
 
     iOS Project Configurator Settings
 
-    ![iOS Project Configurator](../Images/CameraSystem/MRTKProjectConfigurator.png)
+    ![iOS Project Configurator](../images/camera-system/MRTKProjectConfigurator.png)
 
 1. There are no additional steps after switching the platform for Android.
 
 1. If the platform is iOS, Edit > Project Settings > Player > Other Settings, under the Optimization header, **uncheck** Strip Engine Code
 
-    ![iOS Settings](../Images/CameraSystem/UncheckStripEngineCodeiOS.png)
+    ![iOS Settings](../images/camera-system/UncheckStripEngineCodeiOS.png)
 
     > [!NOTE]
     > Unchecking Strip Engine Code is the short term solution to an error in Xcode [#6646](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/6646).  We are working on a long term solution.
@@ -89,4 +89,4 @@ The following steps presume use of the MixedRealityToolkit object. Steps require
 
 ## See also
 
-- [Unity AR Camera Settings](../CameraSystem/UnityArCameraSettings.md)
+- [Unity AR Camera Settings](../camera-system/UnityArCameraSettings.md)

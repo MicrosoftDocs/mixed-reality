@@ -31,7 +31,7 @@ For example, an input data provider created by the Contoso company may be "Conto
 
 It is recommended that the source code for data providers be layed out in a folder hierarchy as shown in the following image.
 
-![Example folder structure](../Images/Input/ExampleProviderFolderStructure.png)
+![Example folder structure](../images/input/ExampleProviderFolderStructure.png)
 
 Where ContosoInput contains the implementation of the data provider, the Editor folder contains the inspector (and any other Unity editor specific code), the Textures folder
 contains images of the supported controllers, and Profiles contains one or more pre-made profiles.
@@ -197,9 +197,9 @@ It is recommended to implement the pattern utilized by the MRTK when instrumenti
 
 ## Create the profile and inspector
 
-In the Mixed Reality Toolkit, data providers are configured using [profiles](../Profiles/Profiles.md).
+In the Mixed Reality Toolkit, data providers are configured using [profiles](../profiles/Profiles.md).
 
-Data providers with additional configuration options (ex: [InputSimulationService](../InputSimulation/InputSimulationService.md)) should create a profile and inspector to allow
+Data providers with additional configuration options (ex: [InputSimulationService](../input-simulation/InputSimulationService.md)) should create a profile and inspector to allow
 customers to modify the behavior to best suit the needs of the application.
 
 > The complete code for the example in this section can be found in the MRTK.Services/InputSimulation folder.
@@ -257,7 +257,7 @@ the file will be located in the ContosoInput\Editor folder. This assembly defini
 
 Once created, the data provider can be registered with the input system and be used in the application.
 
-![Registered input system data providers](../Images/Input/RegisteredServiceProviders.PNG)
+![Registered input system data providers](../images/input/RegisteredServiceProviders.PNG)
 
 ## Packaging and distribution
 
@@ -275,4 +275,4 @@ If a data provider is submitted and accepted as a part of the Microsoft Mixed Re
 - [`IMixedRealityInputHandler<T>` interface](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1)
 - [`IMixedRealityDataProvider` interface](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider)
 - [`IMixedRealityCapabilityCheck` interface](xref:Microsoft.MixedReality.Toolkit.IMixedRealityCapabilityCheck)
-- [Controller Mapping Tool](../Tools/ControllerMappingTool.md)
+- [Controller Mapping Tool](../tools/ControllerMappingTool.md)

@@ -4,7 +4,7 @@ A [Leap Motion Controller](https://www.ultraleap.com/product/leap-motion-control
 
 The Leap Motion Data Provider enables articulated hand tracking for VR and could be useful for rapid prototyping in the editor.  The data provider can be configured to use the Leap Motion Controller mounted on a headset or placed on a desk face up.
 
-![LeapMotionIntroGif](../Images/CrossPlatform/LeapMotion/LeapHandsGif3.gif)
+![LeapMotionIntroGif](../images/cross-platform/leap-motion/LeapHandsGif3.gif)
 
 This provider can be used in editor and on device while on the Standalone platform.  It can also be used in editor while on the UWP platform but NOT in a UWP build.
 
@@ -26,36 +26,36 @@ This provider can be used in editor and on device while on the Standalone platfo
     > [!NOTE]
     > Integrating the Unity Modules to MRTK adds 10 assembly definitions to the project and adds references to the **Microsoft.MixedReality.Toolkit.Providers.LeapMotion** assembly definition. Make sure Visual Studio is closed.
 
-     ![LeapMotionIntegration](../Images/CrossPlatform/LeapMotion/LeapMotionIntegrateMenu.png)
+     ![LeapMotionIntegration](../images/cross-platform/leap-motion/LeapMotionIntegrateMenu.png)
 
 1. Adding the Leap Motion Data Provider
     - Create a new Unity scene
     - Add MRTK to the scene by navigating to **Mixed Reality Toolkit** > **Add to Scene and Configure**
     - Select the MixedRealityToolkit game object in the hierarchy and select **Copy and Customize** to clone the default mixed reality profile.
 
-    ![LeapMotionProfileClone](../Images/CrossPlatform/CloneProfile.png)
+    ![LeapMotionProfileClone](../images/cross-platform/CloneProfile.png)
 
     - Select the **Input** Configuration Profile
 
-    ![InputConfigurationProfile](../Images/CrossPlatform/InputConfigurationProfile.png)
+    ![InputConfigurationProfile](../images/cross-platform/InputConfigurationProfile.png)
 
     - Select **Clone** in the input system profile to enable modification.
 
-    ![LeapMotionInputProfileClone](../Images/CrossPlatform/CloneInputSystemProfile.png)
+    ![LeapMotionInputProfileClone](../images/cross-platform/CloneInputSystemProfile.png)
 
     - Open the **Input Data Providers** section, select **Add Data Provider** at the top, a new data provider will be added at the end of the list.  Open the new data provider and set the **Type** to **Microsoft.MixedReality.Toolkit.LeapMotion.Input > LeapMotionDeviceManager**
 
-    ![LeapAddDataProvider](../Images/CrossPlatform/LeapMotion/LeapAddDataProvider.png)
+    ![LeapAddDataProvider](../images/cross-platform/leap-motion/LeapAddDataProvider.png)
 
     - Select **Clone** to change the default Leap Motion settings.
 
-    ![LeapDataProviderPreClone](../Images/CrossPlatform/LeapMotion/LeapMotionDeviceManagerProfile.png)
+    ![LeapDataProviderPreClone](../images/cross-platform/leap-motion/LeapMotionDeviceManagerProfile.png)
 
     - The Leap Motion Data Provider contains the `LeapControllerOrientation` property which is the location of the Leap Motion Controller. `LeapControllerOrientation.Headset` indicates the controller is mounted on a headset. `LeapControllerOrientation.Desk` indicates the controller is placed flat on desk. The default value is set to `LeapControllerOrientation.Headset`.
-    - Each controller orientation contains offset properties: 
+    - Each controller orientation contains offset properties:
       - The **Headset** orientation offset properties mirror the offset properties in the LeapXRServiceProvider component.  The `LeapVRDeviceOffsetMode` has three options: Default, Manual Head Offset and Transform.  If the offset mode is Default, then an offset will not be applied to the Leap Motion Controller.  The Manual Head Offset mode allows for the modification of three properties: `LeapVRDeviceOffsetY`, `LeapVRDeviceOffsetZ` and `LeapVRDeviceTiltX`.  The axis offset property values are then applied to default controller placement.  The Transform offset mode contains the `LeapVRDeviceOrigin` Transform property which specifies a new origin for the Leap Motion Controller.
       - The **Desk** orientation contains the `LeapControllerOffset` property which defines the anchor position of the desk leap hands.  The offset is calculated relative to the main camera position and the default value is (0,-0.2, 0.35) to make sure the hands appear in front and in view of the camera.
-      
+
         > [!NOTE]
         > The offset properties in the profile are applied once when the application starts.  To modify the values during runtime, get the Leap Motion Service Provider from the Leap Motion Device Manager:
         >```
@@ -67,8 +67,8 @@ This provider can be used in editor and on device while on the Standalone platfo
 
     `LeapControllerOrientation`: Headset (Default) |  `LeapControllerOrientation`: Desk
     :-------------------------:|:-------------------------:
-    ![LeapHeadsetGif](../Images/CrossPlatform/LeapMotion/LeapHeadsetOrientationExampleMetacarpals.gif)  |  ![LeapDeskGif](../Images/CrossPlatform/LeapMotion/LeapDeskOrientationExampleMetacarpals.gif)
-    ![LeapHeadsetInspector](../Images/CrossPlatform/LeapMotion/LeapMotionDeviceManagerHeadset.png) |     ![LeapDeskInspector](../Images/CrossPlatform/LeapMotion/LeapMotionDeviceManagerDesk.png)
+    ![LeapHeadsetGif](../images/cross-platform/leap-motion/LeapHeadsetOrientationExampleMetacarpals.gif)  |  ![LeapDeskGif](../images/cross-platform/leap-motion/LeapDeskOrientationExampleMetacarpals.gif)
+    ![LeapHeadsetInspector](../images/cross-platform/leap-motion/LeapMotionDeviceManagerHeadset.png) |     ![LeapDeskInspector](../images/cross-platform/leap-motion/LeapMotionDeviceManagerDesk.png)
 
 1. Testing the Leap Motion Data Provider
     - After Leap Motion Data Provider has been added to the input system profile, press play, move your hand in front of the Leap Motion Controller and you should see the joint representation of the hand.
@@ -76,11 +76,11 @@ This provider can be used in editor and on device while on the Standalone platfo
 1. Building your project
     - Navigate to **File > Build Settings**
     - Only Standalone builds are supported if using the Leap Motion Data Provider.
-    - For instructions on how to use a Windows Mixed Reality headset for Standalone builds, see [Build and Deploy](../BuildAndDeploy.md#building-and-deploying-mrtk-to-a-windows-mixed-reality-headset).
+    - For instructions on how to use a Windows Mixed Reality headset for Standalone builds, see [Build and Deploy](../../updates-deployment/BuildAndDeploy.md#building-and-deploying-mrtk-to-a-windows-mixed-reality-headset).
 
 ## Getting the hand joints
 
-Getting joints using the Leap Motion Data Provider is identical to hand joint retrieval for an MRTK Articulated Hand.  For more information, see [Hand Tracking](../Input/HandTracking.md#polling-joint-pose-from-handjointutils).
+Getting joints using the Leap Motion Data Provider is identical to hand joint retrieval for an MRTK Articulated Hand.  For more information, see [Hand Tracking](../input/HandTracking.md#polling-joint-pose-from-handjointutils).
 
 With MRTK in a unity scene and the Leap Motion Data Provider added as an Input Data Provider in the Input System profile, create an empty game object and attach the following example script.
 
@@ -161,9 +161,9 @@ To test if the Leap Motion Unity Modules have integrated with MRTK:
 - Navigate to **Mixed Reality Toolkit > Utilities > Leap Motion > Check Integration Status**
   - This will display a pop up window with a message about whether or not the Leap Motion Unity Modules have integrated with MRTK.
 - If the message says that the assets have not been integrated:
-    - Make sure the Leap Motion Unity Modules are in the project
-    - Make sure that the version added is supported, see the table at the top of the page for versions supported. 
-    - Try **Mixed Reality Toolkit > Utilities > Leap Motion > Integrate Leap Motion Unity Modules**
+  - Make sure the Leap Motion Unity Modules are in the project
+  - Make sure that the version added is supported, see the table at the top of the page for versions supported. 
+  - Try **Mixed Reality Toolkit > Utilities > Leap Motion > Integrate Leap Motion Unity Modules**
 
 ### Copying assembly Multiplayer HLAPI failed
 
@@ -185,5 +185,5 @@ The example scene is contained in the **Microsoft.MixedReality.Toolkit.Examples*
 
 ## See also
 
-* [Input Providers](../Input/InputProviders.md)
-* [Hand Tracking](../Input/HandTracking.md)
+-[Input Providers](../input/InputProviders.md)
+-[Hand Tracking](../input/HandTracking.md)

@@ -2,7 +2,7 @@
 
 Holographic remoting streams holographic content from a PC to your Microsoft HoloLens in real-time, using a Wi-Fi or USB cable connection. This feature can significantly increase developer productivity when developing mixed reality applications.
 
-XR SDK as mentioned below refers to Unity's [new XR pipeline in Unity 2019.3 and beyond](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/). See [here](../GettingStartedWithMRTKAndXRSDK.md) for more information on using XR SDK with MRTK. Legacy XR refers to the existing XR pipeline that is included in Unity 2018, deprecated in Unity 2019.3 and removed in Unity 2020.
+XR SDK as mentioned below refers to Unity's [new XR pipeline in Unity 2019.3 and beyond](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/). See [here](../../configuration/GettingStartedWithMRTKAndXRSDK.md) for more information on using XR SDK with MRTK. Legacy XR refers to the existing XR pipeline that is included in Unity 2018, deprecated in Unity 2019.3 and removed in Unity 2020.
 
 ## Initial setup
 
@@ -40,11 +40,11 @@ These issues are particularly relevant when running on **Unity 2019.3** or later
 
 1. Navigate to the NuGet client UI
 
-    ![Launch NuGet UI](../Images/Tools/Remoting/LaunchNuGetForUnity.png)
+    ![Launch NuGet UI](../images/tools/remoting/LaunchNuGetForUnity.png)
 
 1. Locate the `Microsoft.Windows.MixedReality.DotNetWinRT` package
 
-    ![Locate Package](../Images/Tools/Remoting/LocateDotNetWinRT.png)
+    ![Locate Package](../images/tools/remoting/LocateDotNetWinRT.png)
 
 1. Select Install
 
@@ -55,15 +55,15 @@ Beginning with MRTK version 2.5.0, for performance reasons, this #define is no l
 > [!Note]
 > The Check Configuration item does not display a confirmation. To confirm that the define has been set, please navigate to the Unity Player Settings. From there, under the UWP tab, check under Other Settings for the Scripting Define Symbols. Make sure DOTNETWINRT_PRESENT is properly written in that list. If that's there, this step succeeded.
 
-![DotNetWinRT Present](../Images/Tools/Remoting/DotNetWinRTPresent.png)
+![DotNetWinRT Present](../images/tools/remoting/DotNetWinRTPresent.png)
 
 ### Removing HoloLens 2-specific remoting support
 
-If you're running into conflicts or other issues due to the presence of the DotNetWinRT adapter, please [reach out on one of our help resources](../WelcomeToMRTK.md#getting-help).
+If you're running into conflicts or other issues due to the presence of the DotNetWinRT adapter, please [reach out on one of our help resources](../../WelcomeToMRTK.md#getting-help).
 
 ## XR SDK setup instructions
 
-Follow the [Windows Mixed Reality setup instructions on the Getting started with MRTK and XR SDK page](../GettingStartedWithMRTKAndXRSDK.md#windows-mixed-reality) and make sure to perform the step required for in-editor HoloLens Remoting.
+Follow the [Windows Mixed Reality setup instructions on the Getting started with MRTK and XR SDK page](../../configuration/GettingStartedWithMRTKAndXRSDK.md#windows-mixed-reality) and make sure to perform the step required for in-editor HoloLens Remoting.
 
 ## Connecting to the HoloLens with Wi-Fi
 
@@ -73,19 +73,19 @@ Once the project has been configured, a connection can be established to the Hol
 1. On the HoloLens, launch the **Holographic Remoting** application.
 1. In Unity, select **Window > XR > Holographic Emulation (if using legacy XR) / Windows XR Plugin Remoting (if using XR SDK)**.
 
-    ![Start Holographic Emulation](../Images/Tools/Remoting/StartHolographicEmulation.png)
+    ![Start Holographic Emulation](../images/tools/remoting/StartHolographicEmulation.png)
 
 1. Set **Emulation Mode** to **Remote to Device**.
 
-    ![Set Emulation Mode](../Images/Tools/Remoting/SelectEmulationMode.png)
+    ![Set Emulation Mode](../images/tools/remoting/SelectEmulationMode.png)
 
 1. (**_Only applies to legacy XR_**) Select the **Device Version**.
 
-    ![Select Device Version](../Images/Tools/Remoting/SelectDeviceVersion.png)
+    ![Select Device Version](../images/tools/remoting/SelectDeviceVersion.png)
 
 1. Using the IP Address displayed by the Holographic Remoting Player application, set the **Remote Machine** field.
 
-    ![Enter IP Address](../Images/Tools/Remoting/EnterIPAddress.png)
+    ![Enter IP Address](../images/tools/remoting/EnterIPAddress.png)
 
 1. Click **Connect**.
 
@@ -94,7 +94,7 @@ Once the project has been configured, a connection can be established to the Hol
 
 ## Connecting to the HoloLens with USB cable
 
-USB cable connection gives better rendering quality and stability. To use USB cable connection, disconnect from the HoloLens from Wi-Fi in HoloLens's Settings and launch Holographic Remoting Player app. It will display an IP address that starts with 169. Use this IP address in Unity's Holographic Emulation setting to connect. Once the IP address for USB cable has been identified, it is safe to connect the HoloLens to Wi-Fi again. 
+USB cable connection gives better rendering quality and stability. To use USB cable connection, disconnect from the HoloLens from Wi-Fi in HoloLens's Settings and launch Holographic Remoting Player app. It will display an IP address that starts with 169. Use this IP address in Unity's Holographic Emulation setting to connect. Once the IP address for USB cable has been identified, it is safe to connect the HoloLens to Wi-Fi again.
 
 ## Starting a remoting session
 
