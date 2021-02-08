@@ -4,7 +4,7 @@ XR SDK is Unity's [new XR pipeline in Unity 2019.3 and beyond](https://blogs.uni
 
 ## Prerequisites
 
-To get started with the Mixed Reality Toolkit, follow [the provided steps](WelcomeToMRTK.md) to add MRTK to a project.
+To get started with the Mixed Reality Toolkit, follow [the provided steps](../../2.5.4/WelcomeToMRTK.md) to add MRTK to a project.
 
 ## Configuring Unity for the XR SDK pipeline
 
@@ -23,11 +23,11 @@ The XR SDK pipeline currently supports 3 platforms: Windows Mixed Reality, Oculu
 1. (**_Required for in-editor HoloLens Remoting, otherwise optional_**) Go to the Standalone settings and ensure Windows Mixed Reality is checked under Plug-in Providers. Also ensure that Initialize XR on Startup is checked.
 1. (**_Optional_**) Click on the Windows Mixed Reality tab under XR Plug-in Management and create a custom settings profile to change the defaults. If the list of settings are already there, no profile needs to be created.
 
-![Plugin management](Images/XRSDK/PluginManagement.png)
+![Plugin management](../features/images/xrsdk/PluginManagement.png)
 
 #### Oculus
 
-1. Follow the [How to configure Oculus Quest in MRTK using the XR SDK pipeline](CrossPlatform/OculusQuestMRTK.md) guide to the end. The guide outlines the steps needed to configure both Unity and MRTK to use the XR SDK pipeline for the Oculus Quest.
+1. Follow the [How to configure Oculus Quest in MRTK using the XR SDK pipeline](../features/cross-platform/OculusQuestMRTK.md) guide to the end. The guide outlines the steps needed to configure both Unity and MRTK to use the XR SDK pipeline for the Oculus Quest.
 
 #### OpenXR (Preview)
 
@@ -45,7 +45,7 @@ The XR SDK pipeline currently supports 3 platforms: Windows Mixed Reality, Oculu
 1. Ensure that Initialize XR on Startup is checked.
 1. (**_Optional_**) If targeting HoloLens 2, make sure you're on the UWP platform and select Microsoft HoloLens Feature Set
 
-![Plugin management](Images/XRSDK/PluginManagementOpenXR.png)
+![Plugin management](../features/images/xrsdk/PluginManagementOpenXR.png)
 
 > [!NOTE] 
 > If you have a pre-existing project that is using MRTK from UPM, make sure that the following line is in the **link.xml** file located in the MixedRealityToolkit.Generated folder.
@@ -70,7 +70,7 @@ To migrate an existing profile to XR SDK, the following services and data provid
 
 From [`WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityCameraSettings)
 
-![Legacy camera settings](Images/XRSDK/CameraSystemLegacy.png)
+![Legacy camera settings](../features/images/xrsdk/CameraSystemLegacy.png)
 
 to
 
@@ -78,13 +78,13 @@ to
 |--------|-----------------------|
 | [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings) | [`XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings) **and** [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings) |
 
-![XR SDK camera settings](Images/XRSDK/CameraSystemXRSDK.png)
+![XR SDK camera settings](../features/images/xrsdk/CameraSystemXRSDK.png)
 
 #### Input
 
 From [`WindowsMixedReality.Input.WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager)
 
-![Legacy input settings](Images/XRSDK/InputSystemWMRLegacy.png)
+![Legacy input settings](../feature/images/xrsdk/InputSystemWMRLegacy.png)
 
 to
 
@@ -94,17 +94,17 @@ to
 
 __OpenXR__:
 
-![OpenXR input settings](Images/XRSDK/InputSystemOpenXR.png)
+![OpenXR input settings](../features/images/xrsdk/InputSystemOpenXR.png)
 
 __Windows Mixed Reality__:
 
-![XR SDK input settings](Images/XRSDK/InputSystemWMRXRSDK.png)
+![XR SDK input settings](../features/images/xrsdk/InputSystemWMRXRSDK.png)
 
 #### Boundary
 
 From [`MixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.MixedRealityBoundarySystem)
 
-![Legacy boundary settings](Images/XRSDK/BoundarySystemLegacy.png)
+![Legacy boundary settings](../features/images/xrsdk/BoundarySystemLegacy.png)
 
 to
 
@@ -112,13 +112,13 @@ to
 |--------|-----------------------|
 | [`XRSDKBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.XRSDK.XRSDKBoundarySystem) | [`XRSDKBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.XRSDK.XRSDKBoundarySystem) |
 
-![XR SDK boundary settings](Images/XRSDK/BoundarySystemXRSDK.png)
+![XR SDK boundary settings](../features/images/xrsdk/BoundarySystemXRSDK.png)
 
 #### Spatial awareness
 
 From [`WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver)
 
-![Legacy spatial awareness settings](Images/XRSDK/SpatialAwarenessLegacy.png)
+![Legacy spatial awareness settings](../features/images/xrsdk/SpatialAwarenessLegacy.png)
 
 to
 
@@ -126,7 +126,7 @@ to
 |--------|-----------------------|
 | In progress | [`XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver) |
 
-![XR SDK spatial awareness settings](Images/XRSDK/SpatialAwarenessXRSDK.png)
+![XR SDK spatial awareness settings](../features/images/xrsdk/SpatialAwarenessXRSDK.png)
 
 #### Controller mappings
 

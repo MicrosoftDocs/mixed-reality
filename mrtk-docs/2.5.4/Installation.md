@@ -71,10 +71,10 @@ For details on the packages and their contents, please see [MRTK Packages](Packa
 > If you are using Unity 2018.4.12f1 or earlier, note you will experience compilation errors shown in the console. Go to `Assets\MRTK\Providers\XRSDK\Microsoft.MixedReality.Toolkit.Providers.XRSDK.asmdef` in the project window and remove the missing reference in the inspector. Repeat those steps with `Assets\MRTK\Providers\Oculus\XRSDK\Microsoft.MixedReality.Toolkit.Providers.XRSDK.Oculus.asmdef` and `Assets\MRTK\Providers\WindowsMixedReality\XRSDK\Microsoft.MixedReality.Toolkit.Providers.XRSDK.WMR.asmdef`. Note you must revert the changes by replacing those three asmdef files with original (i.e. unmodified) ones when upgrading to Unity 2019.  
 
 > [!Note]
-> Android and iOS development require additional package installations. For more information, see [How to configure MRTK for iOS and Android](CrossPlatform/UsingARFoundation.md).
+> Android and iOS development require additional package installations. For more information, see [How to configure MRTK for iOS and Android](features/cross-platform/UsingARFoundation.md).
 After importing the Foundation package, you may see a prompt similar to the following:
 
-<img src="../Documentation/Images/MRTK_UnitySetupPrompt.png" width="600">
+<img src="features/images/MRTK_UnitySetupPrompt.png" width="600">
 
 MRTK is attempting to set up your project for building Mixed Reality solutions by doing the following:
 
@@ -188,7 +188,7 @@ How to simulate hand input:
 * Use **T/Y** keys to make the hand persistent in the view.
 * Hold **CTRL** key and move the mouse to rotate the hand.
 
-Have fun exploring the scene! You can learn more about the UI controls [in the hand interaction examples guide](README_HandInteractionExamples.md). Also, read through [input simulation docs](InputSimulation/InputSimulationService.md) to learn more about in-editor hand input simulation in MRTK.
+Have fun exploring the scene! You can learn more about the UI controls [in the hand interaction examples guide](README_HandInteractionExamples.md). Also, read through [input simulation docs](input-simulation/InputSimulationService.md) to learn more about in-editor hand input simulation in MRTK.
 
 Congratulations, you just used your first MRTK scene. Now onto creating your own experiences...
 

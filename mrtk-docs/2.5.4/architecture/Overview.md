@@ -33,7 +33,7 @@ how it should be extended, and how it should be configured.
 
 At a high level, the MRTK can be broken down in the following ways:
 
-![Architecture Overview Diagram](../../Documentation/Images/Architecture/MRTK_Architecture.png)
+![Architecture Overview Diagram](../features/images/architecture/MRTK_Architecture.png)
 
 The MRTK also contains another set of grab-bag utilities that have little to no
 dependencies on the rest of the MRTK (to list a few: build tools, solvers, audio

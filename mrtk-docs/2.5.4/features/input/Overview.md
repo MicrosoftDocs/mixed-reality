@@ -6,7 +6,7 @@ The Input System in MRTK allows you to:
 - Define abstract actions, like *Select* or *Menu*, and associate them to different inputs.
 - Setup pointers attached to controllers to drive UI components via focus and pointer events.
 
-<img src="../../Documentation/Images/Input/MRTK_InputSystem.png" style="display:block;margin-left:auto;margin-right:auto;">
+<img src="../features/images/MRTK_InputSystem.png" style="display:block;margin-left:auto;margin-right:auto;">
 <sup>Overview of MRTK Input System</sup>
 
 Inputs are produced by [**Input Data Providers(Device Manager)**](InputProviders.md). Each provider corresponds to a particular source of input: Open VR, Windows Mixed Reality (WMR), Unity Joystick, Windows Speech, etc. Providers are added to your project via the **Registered Service Providers Profile** in the *Mixed Reality Toolkit* component and will produce [**Input Events**](InputEvents.md) automatically when the corresponding input sources are available (e.g. when a WMR controller is detected or a gamepad connected).
