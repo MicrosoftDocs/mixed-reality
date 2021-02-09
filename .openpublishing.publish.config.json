@@ -49,6 +49,9 @@
       "build_source_folder": "mrtk-docs/2.5.4",
       "build_output_subfolder": "mrtk-docs/2.5.4",
       "locale": "en-us",
+      "xref_query_tags": [
+        "/dotnet"
+      ],
       "monikers": [],
       "moniker_ranges": [],
       "open_to_public_contributors": true,
