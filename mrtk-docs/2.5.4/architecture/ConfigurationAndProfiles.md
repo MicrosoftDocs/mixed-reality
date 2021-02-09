@@ -16,10 +16,10 @@ assets in your project. You can view and edit a profile by selecting it in your 
 For example, the MRTK has a camera service, which will apply different properties to the main camera,
 depending on whether or not the display is transparent (like in the case of a HoloLens) or opaque
 (like in the case of a VR headset). The camera service is given
-a [camera profile](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit/Definitions/MixedRealityCameraProfile.cs),
+a [camera profile](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/Core/Definitions/CameraSystem/MixedRealityCameraProfile.cs),
 which contains those different transparent vs. opaque settings.
 
-An example of a more complex profile is the the [InputSystem](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit/Definitions/InputSystem/MixedRealityInputSystemProfile.cs).
+An example of a more complex profile is the the [InputSystem](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/Core/Definitions/InputSystem/MixedRealityInputSystemProfile.cs).
 Some of the properties on that profile (such as the MixedRealityInputDataProviderConfiguration entities)
 control the objects that will be instantiated at runtime - this is how the input system knows how to create
 OpenVR, WMR and Unity input subsystems. This profile is not just a set of properties that configures if
@@ -50,7 +50,7 @@ settings based on the type of display that the application is run on (i.e. AR vs
 ### Input
 
 The largest profile for the most complex subsystem of the MRTK. The various subsystems of input will
-be covered in the [Input System](InputSystem/Terminology.md) documentation itself.
+be covered in the [Input System](../architecture/Terminology.md) documentation itself.
 
 ### Teleport
 

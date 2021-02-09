@@ -64,7 +64,6 @@ For the smoothest upgrade path, please use the following steps.
      (See [this issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8552) which covers work that can be done
      to simplify this migration process in a future release)
 
-
 ## Updating 2.3.0 to 2.4.0
 
 [Folder renames](#folder-renames-in-240)
