@@ -1,3 +1,12 @@
+---
+title: ExtensionServiceCreationWizard
+description: Documentation on Wizard to make the transition from singletons to services MRTK
+author: keveleigh
+ms.author: kurtie
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
 
 # Extension service creation wizard
 

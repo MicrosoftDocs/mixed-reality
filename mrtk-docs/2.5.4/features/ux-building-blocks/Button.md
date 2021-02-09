@@ -1,3 +1,13 @@
+---
+title: Butons
+description: Overview on Buttons in MRTK
+author: cre8ivepark
+ms.author: dongpark
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK Buttons
+---
+
 # Button
 
 ![Button](../images/button/MRTK_Button_Main.png)

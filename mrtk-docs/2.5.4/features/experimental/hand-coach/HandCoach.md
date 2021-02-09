@@ -1,3 +1,13 @@
+---
+title: README_HandCoach
+description: description and examples for Hand coach.
+author: CDiaz-MS
+ms.author: cadia
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Hand coach
 
 ![Hand Coach Menu](../../images/hand-coach/MRTK_UX_HandCoach_Main.jpg)

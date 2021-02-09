@@ -1,3 +1,13 @@
+---
+title: FingertipVisualization
+description: Overview on FingerTip Visualization in MRTK
+author: CDiaz-MS
+ms.author: cadia
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Fingertip
+---
+
 # Fingertip visualization
 
 ![Fingertip visualization](../images/fingertip/MRTK_FingertipVisualization_Main.png)

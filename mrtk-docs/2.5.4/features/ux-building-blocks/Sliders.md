@@ -1,3 +1,13 @@
+---
+title: Slider
+description: Overview of Sliders MRTK
+author: CDiaz-MS
+ms.author: cadia
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Sliders,
+---
+
 # Sliders
 
 ![Slider example](../images/slider/MRTK_UX_Slider_Main.jpg)

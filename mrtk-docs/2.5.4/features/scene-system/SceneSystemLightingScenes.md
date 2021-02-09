@@ -1,3 +1,13 @@
+---
+title: SceneSystemLightingScenes
+description: Documentation on Lighting in the scene.
+author: polar-kev
+ms.author: kesemple
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Lighting scene operations
 
 The default lighting scene defined in your profile is loaded on startup. That lighting scene remains loaded until `SetLightingScene` is called.

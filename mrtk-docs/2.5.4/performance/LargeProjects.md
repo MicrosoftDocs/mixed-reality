@@ -1,3 +1,13 @@
+---
+title: LargeProjects
+description: Tips for consumers of MRTK with large projects.
+author: polar-kev
+ms.author: kesemple
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Using MRTK in large projects
 
 This page contains some useful tips for consumers of MRTK that are pulling it into existing

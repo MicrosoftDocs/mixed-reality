@@ -1,3 +1,13 @@
+---
+title: EyeTracking_IsUserCalibrated
+description: How to Setup User Eye Calibration in MRTK
+author: CDiaz-MS
+ms.author: cadia 
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, EyeTracking, Calibration,
+---
+
 # Eye calibration
 
 ![Screenshot from eye calibration notification](../images/eye-tracking/mrtk_et_calibration_notification_example.jpg)

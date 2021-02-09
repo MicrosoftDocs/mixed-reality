@@ -1,3 +1,13 @@
+---
+title: Gaze
+description: Docummentation on types of Gaze in MRTK
+author: keveleigh
+ms.author: kurtie
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Gaze,
+---
+
 # Gaze
 
 [Gaze](https://docs.microsoft.com/windows/mixed-reality/gaze) is a form of input that interacts

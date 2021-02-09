@@ -1,3 +1,13 @@
+---
+title: README_MixedRealityKeyboard
+description: description on How to use mixed reality keyboard
+author: CDiaz-MS
+ms.author: cadia
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+---
+
 # Mixed Reality and HoloLens Keyboard Helper Classes
 
 MRTK provides several experimental helper components to assist with launching and reading text from the [System Keyboard](../../ux-building-blocks/SystemKeyboard.md).
