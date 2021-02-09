@@ -13,7 +13,7 @@ For more information, see [Bounding box and App bar](https://docs.microsoft.com/
 
 You can find examples of bounding box configurations in the `BoundingBoxExamples` scene.
 
-<img src="../images/bounding-box/MRTK_BoundingBox_Examples.png">
+<img src="../images/bounding-box/MRTK_BoundingBox_Examples.png" alt="Bounding Box Examples">
 
 ## How to add and configure a bounding box using Unity Inspector
 
@@ -189,6 +189,7 @@ A bounding box can be combined with [`ManipulationHandler.cs`](ManipulationHandl
 In order for the bounding box edges to behave the same way when moving it using [`ManipulationHandler`](ManipulationHandler.md)'s far interaction, it is advised to connect its events for *On Manipulation Started* / *On Manipulation Ended* to `BoundingBox.HighlightWires` / `BoundingBox.UnhighlightWires` respectively, as shown in the screenshot above.
 
 ## Migrating to bounds control
+
 Existing prefabs and instances using [bounding box](BoundingBox.md) can be upgraded to the new bounds control via the [migration window](../tools/MigrationWindow.md) which is part of the MRTK tools package.
 
 For upgrading individual instances of bounding box there's also an a migration option inside the property inspector of the component.

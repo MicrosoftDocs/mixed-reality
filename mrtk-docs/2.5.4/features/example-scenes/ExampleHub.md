@@ -20,9 +20,9 @@ Open **MRTKExamplesHub.unity** which is located at `MRTK/Examples/Experimental/D
 On the bottom of the Inspector, it displays the list of the scenes defined in the Scene System Profile. You can click the scene names to load/unload them.
 
 <br/><br/><img src="../images/examples-hub/MRTK_ExamplesHub_Inspector2.png" width="550" alt="Inspector 2">
-<br/><br/><img src="../images/examples-hub/MRTK_ExamplesHub_SceneSystem3.png">Example of loading _MRTKExamplesHub_ scene by clicking the scene name in the list.
-<br/><br/><img src="../images/examples-hub/MRTK_ExamplesHub_SceneSystem4.png">Example of loading _HandInteractionExamples_ scene.
-<br/><br/><img src="../images/examples-hub/MRTK_ExamplesHub_SceneSystem5.png">
+<br/><br/><img src="../images/examples-hub/MRTK_ExamplesHub_SceneSystem3.png" alt="Scene system 3">Example of loading _MRTKExamplesHub_ scene by clicking the scene name in the list.
+<br/><br/><img src="../images/examples-hub/MRTK_ExamplesHub_SceneSystem4.png" alt="Scene system 4">Example of loading _HandInteractionExamples_ scene.
+<br/><br/><img src="../images/examples-hub/MRTK_ExamplesHub_SceneSystem5.png" alt="Scene system 5">
 Example of loading multiple scenes.
 
 ## Running the scene

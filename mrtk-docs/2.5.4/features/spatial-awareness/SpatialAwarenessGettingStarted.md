@@ -29,7 +29,7 @@ The Mixed Reality Toolkit ships with a few default pre-configured profiles. Some
 
 1. Select the MixedRealityToolkit object in the scene hierarchy to open in the Inspector Panel.
 
-    ![MRTK Configured Scene Hierarchy](../../Documentation/Images/MRTK_ConfiguredHierarchy.png)
+    ![MRTK Configured Scene Hierarchy](../images/MRTK_ConfiguredHierarchy.png)
 
 1. Navigate to the *Spatial Awareness System* section and check *Enable Spatial Awareness System*
 
