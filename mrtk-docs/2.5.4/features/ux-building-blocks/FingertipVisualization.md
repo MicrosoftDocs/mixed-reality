@@ -1,6 +1,6 @@
 # Fingertip visualization
 
-![Fingertip visualization](../Documentation/Images/Fingertip/MRTK_FingertipVisualization_Main.png)
+![Fingertip visualization](../images/fingertip/MRTK_FingertipVisualization_Main.png)
 
 The fingertip affordance helps the user recognize the distance from the target object. The ring shape visual adjusts its size based on the distance from the fingertip to the object. The fingertip visualization is primarily controlled by the `FingerCursor` (Assets/MRTK/SDK/Features/UX/Prefabs/Cursors/FingerCursor.prefab) (and script) which is spawned as the cursor prefab of the *PokePointer*. Other components of the visualization include the *ProximityLight* script, and *MixedRealityStandard* shader.
 
@@ -14,16 +14,16 @@ At a high level the fingertip visualization works by using a proximity light to 
 
 ## Example scene
 
-You can find fingertip visualization examples in almost any scene that works with articulated hands, but is prominent in the [HandInteractionExample scene](README_HandInteractionExamples.md).
+You can find fingertip visualization examples in almost any scene that works with articulated hands, but is prominent in the [HandInteractionExample scene](HandInteractionExamples.md).
 
-![Fingertip visualization](../Documentation/Images/Fingertip/MRTK_FingertipVisualization_States.png)
+![Fingertip visualization](../images/fingertip/MRTK_FingertipVisualization_States.png)
 
 ## Inspector properties
 
 **FingerCursor**
 Many of the finger cursor properties are inherited from the base cursor class. Important properties include the far / near surface margins and widths which drive the finger ring animation in the MixedRealityStandard shader. For other properties please hover over the inspector tool tips.
 
-<img src="../Documentation/Images/Fingertip/MRTK_FingertipVisualization_Finger_Cursor_Inspector.png" width="600">
+<img src="../images/fingertip/MRTK_FingertipVisualization_Finger_Cursor_Inspector.png" width="600" alt="Cursor Inspector">
 
 **ProximityLight**
 The proximity light settings control how the light looks when near and far from a surface. The center, middle, and outer colors control the gradient look of the light and can be custom tailored for the color palette of your application. Note, the colors are HDR (High Dynamic Range) to allow users to brighten the proximity light to values above one. For other properties please hover over the inspector tool tips.
@@ -31,4 +31,4 @@ The proximity light settings control how the light looks when near and far from 
 **MixedRealityStandard Shader**
 The MixedRealityStandard shader is used for many effects in the MRTK. The two settings important for fingertip visualization are "Near Fade" and "Proximity Light." Near Fade allows objects to fade in / out as a camera or light nears them. Make sure to check "Light" to allow proximity lights to drive the fade (rather than the camera). You can reverse the values of "Fade Begin" and "Fade Complete" to reverse a fade. Check "Proximity Light" for any surface you would like the proximity light to brighten. For other properties please hover over the inspector tool tips.
 
-<img src="../Documentation/Images/Fingertip/MRTK_FingertipVisualization_Mixed_Reality_Standard_Shader_Inspector.png" width="600">
+<img src="../images/fingertip/MRTK_FingertipVisualization_Mixed_Reality_Standard_Shader_Inspector.png" width="600" alt="Shader Inspector">

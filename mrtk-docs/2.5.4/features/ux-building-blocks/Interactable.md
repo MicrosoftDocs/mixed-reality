@@ -1,28 +1,28 @@
 # Interactable
 
-![Interactable](../Documentation/Images/Interactable/InteractableExamples.png)
+![Interactable](../images/interactable/InteractableExamples.png)
 
-The [`Interactable`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable) component is an all-in-one container to make any object easily *interactable* and responsive to input. Interactable acts as a catch-all for all types of input including touch, hand rays, speech etc and funnel these interactions into [events](#events) and [visual theme](visualthemes.md) responses. This component provides an easy way to make buttons, change color on objects with focus, and more.
+The [`Interactable`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable) component is an all-in-one container to make any object easily *interactable* and responsive to input. Interactable acts as a catch-all for all types of input including touch, hand rays, speech etc and funnel these interactions into [events](#events) and [visual theme](../VisualThemes.md) responses. This component provides an easy way to make buttons, change color on objects with focus, and more.
 
 ## How to configure Interactable
 
 The component allows for three primary sections of configuration:
 
 1) [General input configuration](#general-input-settings)
-1) [Visual Themes](VisualThemes.md) targeted against multiple GameObjects
+1) [Visual Themes](../VisualThemes.md) targeted against multiple GameObjects
 1) [Event handlers](#events)
 
 ### General input settings
 
-![General Interactable Settings](Images/Interactable/InputFeatures_short.png)
+![General Interactable Settings](../images/interactable/InputFeatures_short.png)
 
 **States**
 
-*States* is a [ScriptableObject](https://docs.unity3d.com/Manual/class-ScriptableObject.html) parameter that defines the interactions phases, like press or observed, for [Interactable Profiles](#interactable-profiles) and [Visual Themes](VisualThemes.md).
+*States* is a [ScriptableObject](https://docs.unity3d.com/Manual/class-ScriptableObject.html) parameter that defines the interactions phases, like press or observed, for [Interactable Profiles](#interactable-profiles) and [Visual Themes](../VisualThemes.md).
 
 The **DefaultInteractableStates** (Assets/MRTK/SDK/Features/UX/Interactable/States/DefaultInteractableStates.asset) ships with MRTK out-of-box and is the default parameter for *Interactable* components.
 
-![States ScriptableObject example in inspector](Images/Interactable/DefaultInteractableStates.png)
+![States ScriptableObject example in inspector](../images/interactable/DefaultInteractableStates.png)
 
 The *DefaultInteractableStates* asset contains four states and utilizes the [`InteractableStates`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableStates) state model implementation.
 
@@ -56,19 +56,19 @@ An *Interactable's* enabled property is different than the enabled property conf
 
 **Input Actions**
 
-Select the [input action](./Input/InputActions.md) from the input configuration or controller mapping profile that the *Interactable* component should react to.
+Select the [input action](../input/InputActions.md) from the input configuration or controller mapping profile that the *Interactable* component should react to.
 
 This property can be configured at runtime in code via [`Interactable.InputAction`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.InputAction).
 
 **IsGlobal**
 
-If true, this will mark the component as a global input listener for the selected [input action](./Input/InputActions.md). Default behavior is false which will restrict input to only this *Interactable* collider/GameObject.
+If true, this will mark the component as a global input listener for the selected [input action](../input/InputActions.md). Default behavior is false which will restrict input to only this *Interactable* collider/GameObject.
 
 This property can be configured at runtime in code via [`Interactable.IsGlobal`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.IsGlobal).
 
 **Speech Command**
 
-[Speech command](./Input/Speech.md), from the MRTK Speech Commands Profile, to trigger an OnClick event for voice interaction.
+[Speech command](../input/Speech.md), from the MRTK Speech Commands Profile, to trigger an OnClick event for voice interaction.
 
 This property can be configured at runtime in code via [`Interactable.VoiceCommand`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.VoiceCommand).
 
@@ -94,7 +94,7 @@ The current Selection Mode can be queried at runtime via [`Interactable.ButtonMo
 
 ### Interactable profiles
 
-*Profiles* are items that create a relationship between a GameObject and a [Visual Theme](VisualThemes.md). The profile defines what content will be manipulated by a theme when a [state change occurs](#general-input-settings).
+*Profiles* are items that create a relationship between a GameObject and a [Visual Theme](../VisualThemes.md). The profile defines what content will be manipulated by a theme when a [state change occurs](#general-input-settings).
 
 Themes work a lot like materials. They are scriptable objects that contain a list of properties that will be assigned to an object based on the current state. Themes are also re-usable and can be assigned across multiple *Interactable* UX objects.
 
@@ -102,7 +102,7 @@ Themes work a lot like materials. They are scriptable objects that contain a lis
 
 Visual themes modify various properties on a targeted GameObject, dependent on the class and type of theme engine selected. If *Reset On Destroy* is true when the Interactable component is destroyed, the component will reset all modified properties from active themes to their original values. Otherwise, when destroyed, the Interactable component will leave any modified properties as-is. In this latter case, the last state of values will persist unless altered by another external component. The default is false.
 
-<img src="../Documentation/Images/Interactable/Profiles_Themes.png" width="450">
+<img src="../images/interactable/Profiles_Themes.png" width="450" alt="Profile theams">
 
 ## Events
 
@@ -110,7 +110,7 @@ Every *Interactable* component has an *OnClick* event that fires when the compon
 
 Click the *Add Event* button to add a new type of Event Receiver definition. Once added, select the type of Event desired.
 
-![Events example](Images/Interactable/Events.png))
+![Events example](../images/interactable/Events.png))
 
 There are different types of event receivers to respond to different types of input. MRTK ships with the following set of receivers out-of-box.
 
@@ -125,7 +125,7 @@ There are different types of event receivers to respond to different types of in
 
 A custom receiver can be created by making a new class that extends [`ReceiverBase`](xref:Microsoft.MixedReality.Toolkit.UI.ReceiverBase).
 
-![Event Toggle Receiver Example](Images/Interactable/Event_toggle.png)
+![Event Toggle Receiver Example](../images/interactable/Event_toggle.png)
 
 *Example of a Toggle Event Receiver*
 
@@ -135,11 +135,11 @@ A custom receiver can be created by making a new class that extends [`ReceiverBa
 
 [`InteractableReceiverList`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableReceiverList) acts in a similar fashion but for a list of matching events.
 
-<img src="../Documentation/Images/Interactable/InteractableReceiver.png" width="450">
+<img src="../images/interactable/InteractableReceiver.png" width="450" alt="Interactable reciver">
 
 ### Create custom events
 
-Like [Visual Themes](VisualThemes.md#custom-theme-engines), events can be extended to detect any state pattern or to expose functionality.
+Like [Visual Themes](../VisualThemes.md#custom-theme-engines), events can be extended to detect any state pattern or to expose functionality.
 
 Custom events can be created in two main ways:
 
@@ -205,7 +205,7 @@ One can create a simple button by adding the *Interactable* component to a GameO
 Take the button one step further, by creating a new profile, assigning the GameObject itself and creating a new theme. Furthermore, use the *OnClick* event to make something happen.
 
 > [!NOTE]
-> Making a [button pressable](README_Button.md) requires the [`PressableButton`](xref:Microsoft.MixedReality.Toolkit.UI.PressableButton) component. Additionally, the [`PhysicalPressEventRouter`](xref:Microsoft.MixedReality.Toolkit.PhysicalPressEventRouter) component is needed to funnel press events to the *Interactable* component.
+> Making a [button pressable](Button.md) requires the [`PressableButton`](xref:Microsoft.MixedReality.Toolkit.UI.PressableButton) component. Additionally, the [`PhysicalPressEventRouter`](xref:Microsoft.MixedReality.Toolkit.PhysicalPressEventRouter) component is needed to funnel press events to the *Interactable* component.
 
 ### Creating toggle and multi-dimension buttons
 
@@ -217,7 +217,7 @@ While the [`SelectionMode`](xref:Microsoft.MixedReality.Toolkit.UI.SelectionMode
 
 *CanSelect* means the *Interactable* can go from *off* to *on* while the *CanDeselect* means the inverse.
 
-![Profile Toggle Visual Themes Example](Images/Interactable/Profile_toggle.png)
+![Profile Toggle Visual Themes Example](../images/interactable/Profile_toggle.png)
 
 Developers can utilize the [`SetToggled`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable) and [`IsToggled`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable) interfaces to get/set the toggle state of an *Interactable* via code.
 
@@ -245,7 +245,7 @@ To create a custom radial button group:
 1) Add all *Interactables* to the *ToggleList* on the *InteractableToggleCollection*
 1) Set the *InteractableToggleCollection.CurrentIndex* property to determine which button is selected by default at start
 
-<img src="../Documentation/Images/Interactable/InteractableToggleCollection.png" width="450">
+<img src="../images/interactable/InteractableToggleCollection.png" width="450" alt="Toggle collection">
 
 #### Multi-dimensional button
 
@@ -255,7 +255,7 @@ With dimensions being a numeric value, up to 9 themes can be added to control th
 
 Every click event will advance the `DimensionIndex` by 1 at runtime until the `Dimensions` value is reached. Then the cycle will reset to 0.
 
-![Multi-Dimensional profile example](Images/Interactable/Profile_multiDimensions.png)
+![Multi-Dimensional profile example](../images/interactable/Profile_multiDimensions.png)
 
 Developers can assess the [`DimensionIndex`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable) to determine which dimension is currently active.
 
@@ -274,7 +274,7 @@ myInteractable.IncreaseDimension();
 
 ### Create Interactable at runtime
 
-*Interactable* can be easily added to any GameObject at runtime. The following example demonstrates how to assign a profile with a [visual theme](visualthemes.md).
+*Interactable* can be easily added to any GameObject at runtime. The following example demonstrates how to assign a profile with a [visual theme](../VisualThemes.md).
 
 ```c#
 var interactableObject = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
@@ -353,8 +353,8 @@ public static void AddToggleEvents(Interactable interactable)
 
 ## See also
 
-* [Visual Themes](VisualThemes.md)
-* [Input Actions](./Input/InputActions.md)
-* [Speech Commands](./Input/Speech.md)
-* [Buttons](README_Button.md)
-* [MRTK Standard Shader](README_MRTKStandardShader.md)
+* [Visual Themes](../VisualThemes.md)
+* [Input Actions](../input/InputActions.md)
+* [Speech Commands](../input/Speech.md)
+* [Buttons](Button.md)
+* [MRTK Standard Shader](../rendering/MRTKStandardShader.md)
