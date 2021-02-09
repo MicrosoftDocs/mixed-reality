@@ -1,5 +1,5 @@
 ---
-title: SpatialAwareness
+title: Spatial. Awareness
 description: Spatial Awarness in Mixed Reality application.
 author: davidkline-ms
 ms.author: davidkl
