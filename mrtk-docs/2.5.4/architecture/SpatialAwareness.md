@@ -8,6 +8,6 @@ ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Spatial awareness
+# Spatial Awareness Getting Started
 
 Read [Spatial Awareness Getting Started](../features/spatial-awareness/SpatialAwarenessGettingStarted.md)

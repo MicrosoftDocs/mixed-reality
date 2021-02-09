@@ -28,7 +28,7 @@ Constraint manager can be operated in two modes:
 
 ### Auto constraint selection
 
-<img src="../images/constraint-manager/AutoSelection.png" width="600">
+<img src="../images/constraint-manager/AutoSelection.png" width="600" alt="Auto Selection">
 
 The default mode of constraint manager, auto constraint selection, will provide a list of all attached constraint components as well as [go to buttons](#go-to-component) and an [add constraint button](#add-constraint-to-game-object).
 
@@ -42,7 +42,7 @@ All constraints found on the object wil be listed here with a *Go to component* 
 
 ### Manual constraint selection
 
-<img src="../images/constraint-manager/ManualSelection.png" width="600">
+<img src="../images/constraint-manager/ManualSelection.png" width="600" alt="Manual Selection">
 
 If constraint manager is set to manual mode, only constraints that are linked in the constraint list are processed and applied to the transform. The list displayed will only show the user selected constraints as well as [go to buttons](#go-to-component) or options to remove or add entries.
 When enabling manual mode for the first time, constraint manager will populate the list will all available components as a starting point for selecting attached constraint components.

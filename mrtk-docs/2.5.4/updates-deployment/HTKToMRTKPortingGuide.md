@@ -75,7 +75,7 @@ Related input systems:
 |         Methods                   | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
 | Setup                     | Add a SpeechInputSource to your scene. | Keyword service (e.g., Windows Speech Input Manager) must be added to the input system's data providers. |
-| Configuration             | Recognized keywords are configured in the SpeechInputSource’s inspector. | Keywords are configured in the [Mixed Reality Speech Commands Profile](Input/Speech.md). |
+| Configuration             | Recognized keywords are configured in the SpeechInputSource’s inspector. | Keywords are configured in the [Mixed Reality Speech Commands Profile](../features/input/Speech.md). |
 | Event handlers            | `ISpeechHandler` | [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) |
 
 ### Dictation
@@ -102,7 +102,7 @@ Related input systems:
 
 ### Spatial understanding
 
-|                           | HTK 2017 |  MRTK v2  |
+|       Methods                      | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
 | Setup                     | Add the SpatialUnderstanding prefab to the scene. | Not yet implemented. |
 | Configuration             | Configure the scene instance in the inspector. | Not yet implemented. |
@@ -127,9 +127,9 @@ Related input systems:
 |---------------------------|----------|-----------|
 | Button                     | [Interactable Objects](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [Button](../features/ux-building-blocks/Button.md) |
 | Interactable                     | [Interactable Objects](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [Interactable](../features/ux-building-blocks/Interactable.md) |
-| Bounding Box             | [Bounding Box](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md) | [Bounding Box](../features/ux-building-box/BoundingBox.md) |
-| App Bar             | [App Bar](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md) | [App Bar](../features/ux-building-box/AppBar.md) |
-| One Hand Manipulation (Grb and Move)   | [HandDraggable](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/Interactions/HandDraggable.cs) | [Manipulation Handler](README_ManipulationHandler.md) |
+| Bounding Box             | [Bounding Box](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md) | [Bounding Box](../features/ux-building-blocks/BoundingBox.md) |
+| App Bar             | [App Bar](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md) | [App Bar](../features/ux-building-blocks/AppBar.md) |
+| One Hand Manipulation (Grb and Move)   | [HandDraggable](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/Interactions/HandDraggable.cs) | [Manipulation Handler](../features/ux-building-blocks/ManipulationHandler.md) |
 | Two Hand Manipulation (Grab/Move/Rotate/Scale)             | [TwoHandManipulatable](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/Interactions/TwoHandManipulatable.cs) | [Manipulation Handler](../features/ux-building-blocks/ManipulationHandler.md) |
 | Keyboard             | [Keyboard prefab]() | [System Keyboard](../features/ux-building-blocks/SystemKeyboard.md) |
 | Tooltip             | [Tooltip](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_TooltipExample.md) | [Tooltip](../features/ux-building-blocks/Tooltip.md) |
@@ -144,6 +144,6 @@ Some Utilities have been reconciled as duplicates with the Solver system. Please
 |----------|-----------|
 | Billboard | [`Billboard`](xref:Microsoft.MixedReality.Toolkit.UI.Billboard) |
 | Tagalong | [`RadialView`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.RadialView) or [`Orbital`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.Orbital) [Solver](../features/ux-building-blocks/solvers/Solver.md) |
-| FixedAngularSize | [`ConstantViewSize`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.ConstantViewSize) [Solver](README_Solver.md) |
+| FixedAngularSize | [`ConstantViewSize`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.ConstantViewSize) [Solver](../features/ux-building-blocks/solvers/Solver.md) |
 | FpsDisplay | [Diagnostics System](../features/diagnostics/DiagnosticsSystemGettingStarted.md) (in Configuration Profile) |
 | NearFade | Built-in to [Mixed Reality Toolkit Standard shader](../features/rendering/MRTKStandardShader.md) |

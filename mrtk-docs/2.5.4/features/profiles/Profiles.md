@@ -14,7 +14,7 @@ One of the main ways that the MRTK is configured is through the many profiles av
 
 For example, the Input system's behavior is governed by an input system profile, for example the `DefaultMixedRealityInputSystemProfile` (Assets/MRTK/SDK/Profiles). It's highly recommended to always modify the profile ScriptableObject assets via the in-editor inspector.
 
-<img src="../../images/profiles/input_profile.png" width="650px" alt="Input profile" style="display:block;">
+<img src="../images/profiles/input_profile.png" width="650px" alt="Input profile" style="display:block;">
 <sup>Profile Inspector</sup>
 
 > [!NOTE]

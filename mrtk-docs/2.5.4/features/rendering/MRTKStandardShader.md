@@ -86,11 +86,11 @@ For static lighting, the shader will respect lightmaps built by Unity's [Lightma
 
 ### Hover light
 
-* See [Hover Light](Rendering/HoverLight.md)
+* See [Hover Light](HoverLight.md)
 
 ### Proximity light
 
-* See [Proximity Light](Rendering/ProximityLight.md)
+* See [Proximity Light](ProximityLight.md)
 
 ## Lightweight Scriptable Render Pipeline support
 
@@ -141,7 +141,7 @@ Below are extra details on a handful of feature details available with the MRTK/
 
 ![primitive clipping](../images/mrtk-standard-shader/MRTK_PrimitiveClipping.gif)
 
-* See [Clipping Primitive](Rendering/ClippingPrimitive.md)
+* See [Clipping Primitive](ClippingPrimitive.md)
 
 ### Mesh outlines
 
@@ -188,7 +188,7 @@ Triplanar mapping is a technique to programmatically texture a mesh. Often used 
 
 Vertex extrusion in world space. Useful for visualizing extruded bounding volumes or transitions in/out meshes.
 
-![normal map scale](../images/mrtk-standard-shader/MRTK_VertexExtrusion.gif)
+![normal map scale 1](../images/mrtk-standard-shader/MRTK_VertexExtrusion.gif)
 
 ### Miscellaneous
 
@@ -200,11 +200,11 @@ Simply check this box:
 
 Per pixel clipping textures, local edge based anti aliasing, and normal map scaling are supported.
 
-![normal map scale](../images/mrtk-standard-shader/MRTK_NormalMapScale.gif)
+![normal map scale 2](../images/mrtk-standard-shader/MRTK_NormalMapScale.gif)
 
 ## See also
 
-* [Interactable](README_Interactable.md)
-* [Hover Light](Rendering/HoverLight.md)
-* [Proximity Light](Rendering/ProximityLight.md)
-* [Clipping Primitive](Rendering/ClippingPrimitive.md)
+* [Interactable](../ux-building-blocks/Interactable.md)
+* [Hover Light](HoverLight.md)
+* [Proximity Light](ProximityLight.md)
+* [Clipping Primitive](ClippingPrimitive.md)

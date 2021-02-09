@@ -17,26 +17,26 @@ Hand menus allow users to quickly bring up hand-attached UI for frequently used 
 ## Hand menu examples
 
 **HandMenuExamples.unity** scene is under ``MRTK/Examples/Demos/HandTracking/Scenes`` folder. When it is running, the scene will only activate currently selected menu type.
-<br/><img src="images/hand-menu/MRTK_HandMenu_ExampleScene.png" width="600px" alt="HandMenu_ExampleScene">
+<br/><img src="../images/hand-menu/MRTK_HandMenu_ExampleScene.png" width="600px" alt="HandMenu_ExampleScene">
 
 You can find these hand menu prefabs under ``MRTK/Examples/Demos/HandTracking/Prefabs`` folder.
 
 ### HandMenu_Small_HideOnHandDrop and HandMenu_Medium_HideOnHandDrop
 
 These two examples simply activate and deactivate the MenuContent object to show and hide menu on **OnFirstHandDetected()** and **OnLastHandLost()** event.
-<br/><img src="images/hand-menu/MRTK_HandMenu_Example1.png" width="600" alt="HandMenu_ExampleScene 1">
-<br/><img src="images/hand-menu/MRTK_HandMenu_Example2.png" width="600" alt="HandMenu_ExampleScene 2">
+<br/><img src="../images/hand-menu/MRTK_HandMenu_Example1.png" width="600" alt="HandMenu_ExampleScene 1">
+<br/><img src="../images/hand-menu/MRTK_HandMenu_Example2.png" width="600" alt="HandMenu_ExampleScene 2">
 
 ### HandMenu_Large_WorldLock_On_GrabAndPull
 
 For more complex menus that require longer interaction time, it is recommended to world-lock the menu. In this example, the user can grab and pull to world-lock the menu, in addition to activating and deactivating the MenuContent on **OnFirstHandDetected()** and **OnLastHandLost()** events.
-<br/><img src="images/hand-menu/MRTK_HandMenu_Example3.png" width="600" alt="HandMenu_ExampleScene 3">
+<br/><img src="../images/hand-menu/MRTK_HandMenu_Example3.png" width="600" alt="HandMenu_ExampleScene 3">
 
 Backplate's `ManipulationHandler` makes it grabbable and movable. **On Manipulation Started** event, **SolverHandler.UpdateSolvers** is deactivated to world-lock the menu. Additionally, it shows the **Close button** to allow the user to close the menu when the task is finished. **On Manipulation Ended** event, it calls **HandConstraintPalmUp.StartWorldLockReattachCheckCoroutine** to allow the user bring the menu back to hand by raising and looking at the palm.
-<br/><img src="images/hand-menu/MRTK_HandMenu_Example4.png" width="600" alt="HandMenu_ExampleScene 4">
+<br/><img src="../images/hand-menu/MRTK_HandMenu_Example4.png" width="600" alt="HandMenu_ExampleScene 4">
 
 **Close** button reactivates **SolverHandler.UpdateSolvers** and hide the **MenuContent**.
-<br/><img src="images/hand-menu/MRTK_HandMenu_Example5.png" alt="HandMenu_ExampleScene 5">
+<br/><img src="../images/hand-menu/MRTK_HandMenu_Example5.png" alt="HandMenu_ExampleScene 5">
 
 ### HandMenu_Large_AutoWorldLock_On_HandDrop
 

@@ -95,7 +95,7 @@ To create a **HoloLens application**, switch to the Universal Windows Platform:
 1. Select **Universal Windows Platform** in the **Platform** list
 1. Click the **Switch Platform** button
 
-    <img src="features/images/getting_started/SwitchPlatform.png" width="600" alt="Switching platfom">
+    <img src="features/images/getting-started/SwitchPlatform.png" width="600" alt="Switching platfom">
 
 >[!NOTE]
 > The Mixed Reality Toolkit will prompt to apply recommended changes to the project when the platform is selected. Whenever the platform is switched, the appropriate settings will be checked and prompted, if necessary.
@@ -120,7 +120,7 @@ To create a **HoloLens application**, switch to the Universal Windows Platform:
     > * See the [profiles](features/profiles/Profiles.md#hololens-2-profile) for more information on the differences between DefaultMixedRealityToolkitConfigurationProfile and DefaultHoloLens2ConfigurationProfile.
 
     You will then see the following in your Scene hierarchy:
-    <img src="features/images/MRTK_SceneSetup.png" width="300">
+    <img src="features/images/MRTK_SceneSetup.png" width="300" alt="Scene Setup">
 
     Which contains the following:
 
@@ -155,7 +155,7 @@ To try the scene, do the following steps.
 
 1. You may get a prompt asking you to import "TMP Essentials".
 
-    <img src="features/images/getting_started/MRTK_GettingStarted_TMPro.png" width="600" alt="Getting Started TMP">
+    <img src="features/images/getting-started/MRTK_GettingStarted_TMPro.png" width="600" alt="Getting Started TMP">
 
     If you get such a prompt, select the "Import TMP essentials" button. "TMP Essentials" refers to Text Mesh Pro plugin, which some of the MRTK examples use for improved text rendering. (See [Text in Unity](https://docs.microsoft.com/windows/mixed-reality/text-in-unity) for more detailed information)
 
@@ -214,7 +214,7 @@ Here are some suggested next steps:
 * Learn about the UX controls available in MRTK in [UI and interaction building blocks](features/experimental/README.md#ux-building-blocks).
 * Try [MRTK Examples Hub](features/example-scenes/ExampleHub.md) and [Designing Holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) app which can be downloaded from Microsoft Store app in your HoloLens 2.
 
-* Learn how to work with the MRTK Configuration profile in the [mixed reality configuration guide](MixedRealityConfigurationGuide.md).
+* Learn how to work with the MRTK Configuration profile in the [mixed reality configuration guide](configuration/MixedRealityConfigurationGuide.md).
 * Learn about the [MRTK's Architecture](architecture/Overview.md)
 * Learn about the [MRTK's Input System](features/input/Overview.md)
 * Learn about the [MRTK's Tools](features/experimental/README.md#tools) that will empower your mixed reality design and development.

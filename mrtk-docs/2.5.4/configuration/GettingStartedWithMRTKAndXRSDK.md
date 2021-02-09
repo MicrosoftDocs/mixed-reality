@@ -55,7 +55,7 @@ The XR SDK pipeline currently supports 3 platforms: Windows Mixed Reality, Oculu
 1. Ensure that Initialize XR on Startup is checked.
 1. (**_Optional_**) If targeting HoloLens 2, make sure you're on the UWP platform and select Microsoft HoloLens Feature Set
 
-![Plugin management](../features/images/xrsdk/PluginManagementOpenXR.png)
+![Plugin management Open XR](../features/images/xrsdk/PluginManagementOpenXR.png)
 
 > [!NOTE]
 > If you have a pre-existing project that is using MRTK from UPM, make sure that the following line is in the **link.xml** file located in the MixedRealityToolkit.Generated folder.
@@ -93,7 +93,7 @@ to
 
 From [`WindowsMixedReality.Input.WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager)
 
-![Legacy input settings](../feature/images/xrsdk/InputSystemWMRLegacy.png)
+![Legacy input settings](../features/images/xrsdk/InputSystemWMRLegacy.png)
 
 to
 

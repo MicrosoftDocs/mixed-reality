@@ -47,7 +47,7 @@ This provider can be used in editor and on device while on the Standalone platfo
 
     - Select the **Input** Configuration Profile
 
-    ![InputConfigurationProfile](../images/cross-platform/InputConfigurationProfile.png)
+    ![Input Configuration Profile 1](../images/cross-platform/InputConfigurationProfile.png)
 
     - Select **Clone** in the input system profile to enable modification.
 
@@ -55,7 +55,7 @@ This provider can be used in editor and on device while on the Standalone platfo
 
     - Open the **Input Data Providers** section, select **Add Data Provider** at the top, a new data provider will be added at the end of the list.  Open the new data provider and set the **Type** to **Microsoft.MixedReality.Toolkit.LeapMotion.Input > LeapMotionDeviceManager**
 
-    ![LeapAddDataProvider](../images/cross-platform/leap-motion/LeapAddDataProvider.png)
+    ![Leap Add Data Provider](../images/cross-platform/leap-motion/LeapAddDataProvider.png)
 
     - Select **Clone** to change the default Leap Motion settings.
 

@@ -72,7 +72,7 @@ Currently bounds control offers configuration objects options for the following 
   * [Scale handles](#scale-handles-configuration)
   * [Rotation handles](#rotation-handles-configuration)
   * [Translation handles](#translation-handles-configuration)
-* [Links / Wireframe](#links-configuration-(wireframe))
+* [Links / Wireframe](#links-configuration-wireframe)
 * [Box display](#box-configuration)
 * [Proximity effect](#proximity-effect-configuration)
 
@@ -187,7 +187,7 @@ Elastics can be used when manipulating objects via bounds control. Note that the
 
 By default, when you just assign the [`BoundsControl.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundsControl) script, it will show the handle of the HoloLens 1st gen style. To use HoloLens 2 style handles, you need to assign proper handle prefabs and materials.
 
-![Bounds Control](../images/bounds-control/MRTK_BoundsControl_HandleStyles1.png)
+![Bounds Control Handle Styles 2](../images/bounds-control/MRTK_BoundsControl_HandleStyles1.png)
 
 Below are the prefabs, materials, and the scaling values for the HoloLens 2 style bounds control handles. You can find this example in the `BoundsControlExamples` scene.
 

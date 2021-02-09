@@ -36,7 +36,7 @@ A green check icon means that an optimal value has been configured in the projec
 
 ### Depth buffer sharing
 
-To improve [hologram stabilization](../hologram-Stabilization.md), developers can share the application's depth buffer which gives the platform information on where and what holograms to stabilize in the rendered scene.
+To improve [hologram stabilization](../../performance/hologram-Stabilization.md), developers can share the application's depth buffer which gives the platform information on where and what holograms to stabilize in the rendered scene.
 
 ### Depth buffer format
 
@@ -58,7 +58,7 @@ Furthermore, for *AR Headsets*, it is recommended to utilize a 16-bit depth form
 
 The *Scene Analysis* tab is designed to inform developers on which elements currently in the scene will likely have the most impact on performance.
 
-![MRTK Optimize Window Settings](../images/performance/OptimizeWindow_SceneAnalysis.png)
+![MRTK Optimize Window Settings scene Analysis](../images/performance/OptimizeWindow_SceneAnalysis.png)
 
 ### Lighting analysis
 
@@ -78,7 +78,7 @@ The [Unity Standard shader](https://docs.unity3d.com/Manual/shader-StandardShade
 
 The *Shader Analysis* tab scans the current project's Asset folder for materials using the Unity Standard shader or if desired, all materials not using Mixed Reality Toolkit provided shaders. Once discovered, developers can convert all materials or convert individually using the appropriate buttons.
 
-![MRTK Optimize Window Settings](../images/performance/OptimizeWindow_ShaderAnalysis.png)
+![MRTK Optimize Window Settings shader analysis](../images/performance/OptimizeWindow_ShaderAnalysis.png)
 
 ## See also
 

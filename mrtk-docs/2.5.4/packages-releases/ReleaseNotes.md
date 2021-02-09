@@ -11,7 +11,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 # Microsoft Mixed Reality Toolkit 2.5.4 release notes
 
 - [What's new](#whats-new)
-- [Updating guidance](Updating.md#upgrading-to-a-new-version-of-mrtk)
+- [Updating guidance](../updates-deployment/Updating.md#upgrading-to-a-new-version-of-mrtk)
 - [Known issues](#known-issues)
 
 > [!IMPORTANT]
@@ -93,7 +93,7 @@ This error is due to the Scene Transition Service's configuration profile being 
 - If not expanded, expand `Scene Transition Service`
 - Set the value of `Configuration Profile` to **MRTKExamplesHubSceneTransitionServiceProfile**
 
-<img src="../features/images/release-notes/FixSceneTransitionProfile.png" width="500px">
+<img src="../features/images/release-notes/FixSceneTransitionProfile.png" width="500px" alt="Fix Scene Transition">
 
 ### Oculus Quest
 

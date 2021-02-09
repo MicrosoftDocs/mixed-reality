@@ -95,7 +95,7 @@ Bounds should be set to a non-zero-zero value).
 
     1. Click **Fix bounds** and **Fix center**
 
-    ![NearInteractionTouchable Gizmos Example](../images/input/Pointers/NearInteractionTouchableSetup.gif)
+    ![NearInteractionTouchable Setup](../images/input/Pointers/NearInteractionTouchableSetup.gif)
 
 1. On that object or one of its ancestors, add a script component that implements the
    [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler)
@@ -105,7 +105,7 @@ Bounds should be set to a non-zero-zero value).
 
 > [!NOTE]
 > In the editor scene view with the *NearInteractionTouchable* GameObject selected, notice a white outline square and arrow. The arrow points to the "front" of the touchable. The collidable will only be touchable from that direction. To make a collider touchable from all directions, see the section on [arbitrary collider touch](#arbitrary-collider-touch).
-> ![NearInteractionTouchable Gizmos Example](../images/input/Pointers/NearInteractionTouchableGizmos.png)
+> ![NearInteractionTouchable Gizmos ](../images/input/Pointers/NearInteractionTouchableGizmos.png)
 
 ### Arbitrary collider touch
 

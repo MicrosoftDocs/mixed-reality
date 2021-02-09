@@ -39,7 +39,7 @@ If using the legacy XR:
 
 If using the XR-Plugin:
 
-1. Follow the steps found in [Getting Started with XRSDK](GettingStartedWithMRTKAndXRSDK.md)
+1. Follow the steps found in [Getting Started with XRSDK](../configuration/GettingStartedWithMRTKAndXRSDK.md)
 1. Make sure the configuration profile is the **DefaultXRSDKConfigurationProfile**
 1. Navigate to **Edit > Project Settings, XR-Plugin Management** and make sure **Windows Mixed Reality** is enabled.
 1. Build and deploy in Visual Studio

@@ -507,8 +507,8 @@ public enum Handedness
 
 When generating string file paths, and in particular writing hard-coded string paths, do the following:
 
-1. Use C#'s [`Path` APIs](https://docs.microsoft.com/dotnet/api/system.io.path?view=netframework-4.8) whenever possible such as `Path.Combine` or `Path.GetFullPath`.
-1. Use / or [`Path.DirectorySeparatorChar`](https://docs.microsoft.com/dotnet/api/system.io.path.directoryseparatorchar?view=netframework-4.8) instead of \ or \\\\.
+1. Use C#'s [`Path` APIs](https://docs.microsoft.com/dotnet/api/system.io.path?view=netframework-4.8&preserve-view=true) whenever possible such as `Path.Combine` or `Path.GetFullPath`.
+1. Use / or [`Path.DirectorySeparatorChar`](https://docs.microsoft.com/dotnet/api/system.io.path.directoryseparatorchar?view=netframework-4.8&preserve-view=true) instead of \ or \\\\.
 
 These steps ensure that MRTK works on both Windows and Unix-based systems.
 
@@ -683,7 +683,7 @@ public class MyClass
 
 This chart can help you decide which `#if` to use, depending on your use cases and the build settings you expect.
 
-| | UWP IL2CPP | UWP .NET | Editor |
+|Platform | UWP IL2CPP | UWP .NET | Editor |
 | --- | --- | --- | --- |
 | `UNITY_EDITOR` | False | False | True |
 | `UNITY_WSA` | True | True | True |

@@ -143,7 +143,7 @@ For information on writing a data provider for the MRTK spatial awareness system
 
 ## See also
 
-- [What makes a mixed reality feature](../MixedRealityServices.md)
+- [What makes a mixed reality feature](MixedRealityServices.md)
 - [Extension services](../features/extensions/ExtensionServices.md)
 - [Creating an input system data provider](../features/input/CreateDataProvider.md)
 - [Creating a spatial awareness system system data provider](../features/spatial-awareness/CreateDataProvider.md)
