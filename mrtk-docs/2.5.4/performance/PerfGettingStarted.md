@@ -2,28 +2,28 @@
 
 ## Getting started
 
-The easiest way to rationalize performance is via framerate or how many times your application can render an image per second. It is important to meet the target framerate, as outlined by the platform being targeted (i.e [Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/understanding-performance-for-mixed-reality), [Oculus](https://developer.oculus.com/documentation/pcsdk/latest/concepts/dg-performance-guidelines/), etc). For example, on HoloLens, the target framerate is 60 FPS. Low framerate applications can result in deteriorated user experiences such as worsened [hologram stabilization](../hologram-Stabilization.md), world tracking, hand tracking, and more. To help developers track and achieve quality framerate, the Mixed Reality Toolkit provides a variety of tools and scripts.
+The easiest way to rationalize performance is via framerate or how many times your application can render an image per second. It is important to meet the target framerate, as outlined by the platform being targeted (i.e [Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/understanding-performance-for-mixed-reality), [Oculus](https://developer.oculus.com/documentation/pcsdk/latest/concepts/dg-performance-guidelines/), etc). For example, on HoloLens, the target framerate is 60 FPS. Low framerate applications can result in deteriorated user experiences such as worsened [hologram stabilization](../performance/hologram-Stabilization.md), world tracking, hand tracking, and more. To help developers track and achieve quality framerate, the Mixed Reality Toolkit provides a variety of tools and scripts.
 
 ### Visual profiler
 
-To continuously track performance over the lifetime of development, it is highly recommended to always show a framerate visual while running & debugging an application. The Mixed Reality Toolkit provides the [Visual Profiler](../Diagnostics/UsingVisualProfiler.md) diagnostic tool which gives real-time information about the current FPS and memory usage in application view. The Visual Profiler can be configured via the [Diagnostics System Settings](../Diagnostics/DiagnosticsSystemGettingStarted.md) under the [MRTK Profiles Inspector](../MixedRealityConfigurationGuide.md).
+To continuously track performance over the lifetime of development, it is highly recommended to always show a framerate visual while running & debugging an application. The Mixed Reality Toolkit provides the [Visual Profiler](../features/diagnostics/UsingVisualProfiler.md) diagnostic tool which gives real-time information about the current FPS and memory usage in application view. The Visual Profiler can be configured via the [Diagnostics System Settings](../features/diagnostics/DiagnosticsSystemGettingStarted.md) under the [MRTK Profiles Inspector](../configuration/MixedRealityConfigurationGuide.md).
 
 Furthermore, it is particularly important to utilize the Visual Profiler to track framerate when running on the device as opposed to running in Unity editor or an emulator. The most accurate performance results will be depicted when running on the device with [Release configuration builds](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations?view=vs-2019).
 
 > [!NOTE]
 > If building for Windows Mixed Reality, deploy with [MASTER configuration builds](https://docs.microsoft.com/windows/mixed-reality/exporting-and-building-a-unity-visual-studio-solution#building_and_deploying_a_unity_visual_studio_solution)
 
-![Visual Profiler Interface](../../Documentation/Images/Diagnostics/VisualProfiler.png)
+![Visual Profiler Interface](../features/images/Diagnostics/VisualProfiler.png)
 
 ### Optimize window
 
-The [MRTK Optimize Window](../Tools/OptimizeWindow.md) offers information and automation tools to help mixed reality developers set up their environment for the best performing results and identify potential bottlenecks in their scene & assets. Certain key configurations in Unity can help deliver substantially more optimized results for mixed reality projects.
+The [MRTK Optimize Window](../features/tools/OptimizeWindow.md) offers information and automation tools to help mixed reality developers set up their environment for the best performing results and identify potential bottlenecks in their scene & assets. Certain key configurations in Unity can help deliver substantially more optimized results for mixed reality projects.
 
 Generally, these settings involve rendering configurations that are ideal for mixed reality. Mixed reality applications are unique compared to traditional 3D graphics development in that there are two screens (i.e two eyes) to render for the entire scene.
 
 The recommended settings referenced below can be auto-configured in a Unity project by leveraging the MRTK Optimize Window.
 
-![MRTK Optimize Window Settings](../../Documentation/Images/Performance/OptimizeWindow_Settings.png)
+![MRTK Optimize Window Settings](../features/images/performance/OptimizeWindow_Settings.png)
 
 ### Unity Profiler
 
@@ -31,7 +31,7 @@ The [Unity Profiler](https://docs.unity3d.com/Manual/ProfilerWindow.html) is a u
 
 #### Time spent on the CPU
 
-![Example Unity Profiler Graph](../../Documentation/Images/Performance/UnityProfilerGraph.png)
+![Example Unity Profiler Graph](../features/images/performance/UnityProfilerGraph.png)
 
 To maintain comfortable frame rates (typically 60 frames per second), applications need to achieve a maximum frame time of 16.6 milliseconds of CPU time. To help identify the cost of MRTK functionality, the Microsoft Mixed Reality Toolkit contains a markers for inner loop (per frame) code paths. These markers use the following format, to assist in understanding the specific functionality being utilized:
 
@@ -42,7 +42,7 @@ To maintain comfortable frame rates (typically 60 frames per second), applicatio
 > [!Note]
 > There may be additional data following the method name. This is used to identify conditionally executed, potentially expensive functionality that may be avoided by small changes to application code.
 
-![Example Unity Profiler Hierarchy](../../Documentation/Images/Performance/UnityProfilerHierarchy.png)
+![Example Unity Profiler Hierarchy](../features/images/performance/UnityProfilerHierarchy.png)
 
 In this example, the hierarchy has been expanded to show that the UpdateHandData method of WindowsMixedRealityArticulatedHand class is consuming 0.44 ms of CPU time during the frame being analyzed. This data can be used to help determine if a performance issue is related to application code or from elsewhere in the system.
 
@@ -54,7 +54,7 @@ It is highly recommended that developers instrument application code in a simila
 
 The default rendering configuration for XR in Unity is [Multi-pass](https://docs.unity3d.com/ScriptReference/StereoRenderingPath.MultiPass.html). This setting instructs Unity to execute the entire render pipeline twice, once for each eye. This can be optimized by selecting [Single Pass Instanced rendering](https://docs.unity3d.com/Manual/SinglePassInstancing.html) instead. This configuration leverages [render target arrays](https://en.wikipedia.org/wiki/Multiple_Render_Targets) to be able to perform a single draw call that instances into the appropriate [render target](https://en.wikipedia.org/wiki/Render_Target) for each eye. Furthermore, this mode allows all rendering to be done in a single execution of the rendering pipeline. Thus, selecting Single Pass Instanced rendering as the rendering path for a mixed reality application can [save substantial time on both the CPU & GPU](https://blogs.unity3d.com/2017/11/21/how-to-maximize-ar-and-vr-performance-with-advanced-stereo-rendering/) and is the recommended rendering configuration.
 
-However, in order to issue a single draw call for each mesh to each eye, [GPU instancing](https://docs.unity3d.com/Manual/GPUInstancing.html) must be supported by all shaders. Instancing allows the GPU to multiplex draw calls across both eyes. Unity built-in shaders as well as the [MRTK Standard shader](../README_MRTKStandardShader.md) by default contain the necessary instancing instructions in shader code. If writing custom shaders though for Unity, these shaders may need to be updated to support Single Pass Instanced rendering.
+However, in order to issue a single draw call for each mesh to each eye, [GPU instancing](https://docs.unity3d.com/Manual/GPUInstancing.html) must be supported by all shaders. Instancing allows the GPU to multiplex draw calls across both eyes. Unity built-in shaders as well as the [MRTK Standard shader](../features/rendering/MRTKStandardShader.md) by default contain the necessary instancing instructions in shader code. If writing custom shaders though for Unity, these shaders may need to be updated to support Single Pass Instanced rendering.
 
 #### [Example Code for Custom Shader](https://docs.unity3d.com/Manual/SinglePassInstancing.html)
 
@@ -103,7 +103,7 @@ Unity provides [presets to control quality](https://docs.unity3d.com/Manual/clas
 
 ### Depth buffer sharing (HoloLens)
 
-If developing for the Windows Mixed Reality platform and in particular HoloLens, enabling *Depth Buffer Sharing* under *XR Settings* can help with [hologram stabilization](../Hologram-Stabilization.md). However, processing of the depth buffer can incur a performance cost, particularly if using [24-bit depth format](https://docs.unity3d.com/ScriptReference/PlayerSettings.VRWindowsMixedReality-depthBufferFormat.html). Thus, it is *highly recommended* to configure the depth buffer to 16-bit precision.
+If developing for the Windows Mixed Reality platform and in particular HoloLens, enabling *Depth Buffer Sharing* under *XR Settings* can help with [hologram stabilization](../performance/Hologram-Stabilization.md). However, processing of the depth buffer can incur a performance cost, particularly if using [24-bit depth format](https://docs.unity3d.com/ScriptReference/PlayerSettings.VRWindowsMixedReality-depthBufferFormat.html). Thus, it is *highly recommended* to configure the depth buffer to 16-bit precision.
 
 If [z-fighting](https://en.wikipedia.org/wiki/Z-fighting) occurs due to the lower bit format, confirm the [far clip plane](https://docs.unity3d.com/Manual/class-Camera.html) of all cameras is set to the lowest possible value for the application. Unity by default sets a far clip plane of 1000m. On HoloLens, a far clip plane of 50m is generally more than enough for most application scenarios.
 
@@ -113,7 +113,7 @@ If [z-fighting](https://en.wikipedia.org/wiki/Z-fighting) occurs due to the lowe
 > If using a [Mask component](https://docs.unity3d.com/Manual/script-Mask.html) which requires the stencil buffer, consider using [RectMask2D](https://docs.unity3d.com/Manual/script-RectMask2D.html) instead, which does not require the stencil buffer and thus can be used in conjunction with a *16-bit depth format*.
 
 > [!NOTE]
-> To quickly determine which objects in a scene do not write to the depth buffer visually, one can use the [*Render Depth Buffer* utility](../MixedRealityConfigurationGuide.md#editor-utilities) under the *Editor Settings* in the MRTK Configuration profile.
+> To quickly determine which objects in a scene do not write to the depth buffer visually, one can use the [*Render Depth Buffer* utility](../configuration/MixedRealityConfigurationGuide.md#editor-utilities) under the *Editor Settings* in the MRTK Configuration profile.
 
 ### Optimize Mesh Data
 
@@ -143,7 +143,7 @@ Without deep diving into the complex field of computer graphics & [rendering pip
 
 In regards to performance tuning, it is usually more fruitful to focus on optimizing the operations in the pixel shader. An application may only need to draw a cube which will just be 8 vertices. However, the screen space that cube occupies is likely on the order of millions of pixels. Thus, reducing shader code by say 10 operations can save significantly more work if reduced on the pixel shader than the vertex shader.
 
-This is one of the primary reasons for leveraging the [MRTK Standard shader](../README_MRTKStandardShader.md) as this shader generally executes many less instructions per pixel & vertex than the Unity Standard shader while achieving comparable aesthetic results.
+This is one of the primary reasons for leveraging the [MRTK Standard shader](../features/rendering/MRTKStandardShader.md) as this shader generally executes many less instructions per pixel & vertex than the Unity Standard shader while achieving comparable aesthetic results.
 
 |    CPU Optimizations      |             GPU Optimizations              |
 |---------------------------|--------------------------------------------|
@@ -195,11 +195,11 @@ If estimating the rough performance tradeoff between one shader and another, it 
 
 Unity Standard shader statistics example
 
-![Unity Standard Shader Statistics](../../Documentation/Images/Performance/UnityStandardShader-Stats.PNG)
+![Unity Standard Shader Statistics](../../features/images/performance/UnityStandardShader-Stats.PNG)
 
 MRTK Standard shader statistics example
 
-![MRTK Standard Shader Statistics](../../Documentation/Images/Performance/MRTKStandardShader-Stats.PNG)
+![MRTK Standard Shader Statistics](../../features/images/performance/MRTKStandardShader-Stats.PNG)
 
 ## See also
 

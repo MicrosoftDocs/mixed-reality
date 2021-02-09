@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Welcome to MRTK
 
-![MRTK Logo](../Documentation/Images/MRTK_Logo_Rev.png)
+![MRTK Logo](features/images/MRTK_Logo_Rev.png)
 
 The Mixed Reality Toolkit (MRTK) is a cross-platform toolkit for building Mixed Reality experiences for Virtual Reality (VR) and Augmented Reality (AR). 
 
@@ -25,7 +25,7 @@ If you're new to MRTK or Mixed Reality development in Unity, we recommend you st
 
 We have complete documentation for all release versions. The **mrtk_development** branch is the latest and greatest but is still in active development. We recommend using the highest numbered release branch for stability. Versions can be selected from the dropdown at the top-right of the screen:
 
-![MRTK version reference](../Documentation/Images/MRTK-Doc-Versions.png)
+![MRTK version reference](features/images/MRTK-Doc-Versions.png)
 
 ## Getting help
 

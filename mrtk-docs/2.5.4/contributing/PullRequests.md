@@ -17,13 +17,13 @@ Read the guidelines and ensure your pull request meets the guidelines.
 * Make sure to reference any Issue / Feature Request or Task the PR relates to.
 * Check the pull request contains only files / changes related to the PR.
 * Check documentation is up to date and included. Check all public fields have comments.
-* If adding a new feature, check that tests are included to validate the feature (see [UnitTests](UnitTests.md)).
+* If adding a new feature, check that tests are included to validate the feature (see [UnitTests](../contributing/UnitTests.md)).
 * If fixing a bug, write a test to verify the bug fix.
 
 The project maintainers will review your changes. We aim to review all changes within three business days. Please address any review comments, push to your topic branch, and post a comment letting us know that there's new stuff to review.
 
 > [!NOTE]
-> All PR's submitted to the project will also be vetted according to the [MRTK coding standards guide](CodingGuidelines.md), so please review these before submitting your PR to ensure a smooth process.
+> All PR's submitted to the project will also be vetted according to the [MRTK coding standards guide](../contributing/CodingGuidelines.md), so please review these before submitting your PR to ensure a smooth process.
 
 ## Pull request guidelines
 

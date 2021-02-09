@@ -1,6 +1,6 @@
 # Mixed Reality Toolkit profile configuration guide
 
-![MRTK logo](../Documentation/Images/MRTK_Logo_Rev.png)
+![MRTK logo](../features/images/MRTK_Logo_Rev.png)
 
 The Mixed Reality Toolkit centralizes as much of the configuration required to manage the toolkit as possible (except for true runtime "things").
 
@@ -13,7 +13,7 @@ The main configuration profile, which is attached to the *MixedRealityToolkit* G
 > [!NOTE]
 > The Mixed Reality Toolkit "locks" the default configuration screens to ensure you always have a common start point for your project and it is encouraged to start defining your own settings as your project evolves. The MRTK configuration is not editable during play-mode.
 
-![MRTK configuration profile](../Documentation/Images/MixedRealityToolkitConfigurationProfileScreens/MRTK_ActiveConfiguration.png)
+![MRTK configuration profile](../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_ActiveConfiguration.png)
 
 All the "default" profiles for the Mixed Reality Toolkit can be found in the SDK project in the folder Assets/MRTK/SDK/Profiles.
 
@@ -22,7 +22,7 @@ All the "default" profiles for the Mixed Reality Toolkit can be found in the SDK
 
 When you open the main Mixed Reality Toolkit Configuration Profile, you will see the following screen in the inspector:
 
-<img src="Images/MixedRealityToolkitConfigurationProfileScreens/MRTK_MixedRealityToolkitConfigurationScreen.png" width="650px" style="display:block;">
+<img src="images/mixed-reality-toolkit-configuration-profile-screens/MRTK_MixedRealityToolkitConfigurationScreen.png" width="650px" style="display:block;">
 
 If you select a MixedRealityToolkitConfigurationProfile asset without the MixedRealityToolkit in the scene, it will ask you if you want the MRTK to automatically setup the scene for you. This is optional, however, there must be an active MixedRealityToolkit object in the scene to access all the configuration screens.
 
@@ -64,7 +64,7 @@ These configuration profiles are detailed below in their relevant sections:
 
 Located on the main Mixed Reality Toolkit configuration page, this setting defines the default operation of the [Mixed Reality environment scale](https://docs.microsoft.com/en-us/windows/mixed-reality/coordinate-systems-in-unity) for your project.
 
-<img src="Images/MixedRealityToolkitConfigurationProfileScreens/MRTK_ExperienceSettings.png" width="650px" style="display:block;">
+<img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_ExperienceSettings.png" width="650px" style="display:block;">
 
 ---
 <a name="camera"></a>
@@ -73,7 +73,7 @@ Located on the main Mixed Reality Toolkit configuration page, this setting defin
 
 The camera settings define how the camera will be setup for your Mixed Reality project, defining the generic clipping, quality and transparency settings.
 
-<img src="Images/MixedRealityToolkitConfigurationProfileScreens/MRTK_CameraProfile.png" width="650px" style="display:block;">
+<img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_CameraProfile.png" width="650px" style="display:block;">
 
 ---
 <a name="inputsystem"></a>
@@ -82,11 +82,11 @@ The camera settings define how the camera will be setup for your Mixed Reality p
 
 The Mixed Reality Project provides a robust and well-trained input system for routing all the input events around the project which is selected by default.
 
-<img src="Images/MixedRealityToolkitConfigurationProfileScreens/MRTK_InputSystemSelection.png" width="650px" style="display:block;">
+<img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_InputSystemSelection.png" width="650px" style="display:block;">
 
 Behind the Input System provided by the MRTK are several other systems, these help to drive and manage the complex inter-weavings required to abstract out the complexities of a multi-platform / mixed reality framework.
 
-<img src="Images/MixedRealityToolkitConfigurationProfileScreens/MRTK_InputSystemProfile.png" width="650px" style="display:block;">
+<img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_InputSystemProfile.png" width="650px" style="display:block;">
 
 Each of the individual profiles are detailed below:
 
