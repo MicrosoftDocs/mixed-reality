@@ -73,7 +73,7 @@ If your HoloLens IP address changes, you can change the IP address of the target
 1. Select an **x86** build configuration for your app</br>
 ![x86 build configuration in Visual Studio](images/x86setting.png)</br>
 2. Select **Remote Machine** in the deployment target drop-down menu</br>
-![Remote machine deployment target in Visual Studio](images/remotemachinesetting.png)</br>
+![Remote machine deployment target in Visual Studio application](images/remotemachinesetting.png)</br>
 3. For C++ and JavaScript projects, go to **Project > Properties > Configuration Properties > Debugging**. For C# projects, a dialog will automatically appear to configure your connection.
   a. Enter the IP address of your device in the **Address** or **Machine Name** field. Find the IP address on your HoloLens under **Settings > Network & Internet > Advanced Options**, or you can ask Cortana "What is my IP address?"
   b. Set Authentication Mode to **Universal (Unencrypted protocol)**</br>
@@ -106,7 +106,7 @@ To use a Windows Mixed Reality immersive headset that connects to your PC or the
 1. Select an **x86** build configuration for your app</br>
 ![x86 build configuration in Visual Studio](images/x86setting.png)</br>
 2. Select **Device** in the deployment target drop-down menu</br>
-![Device deployment in Visual Studio](images/buildsettingsusbdeploy.png)</br>
+![Device deployment in Visual Studio application](images/buildsettingsusbdeploy.png)</br>
 3. Select **Debug > Start debugging** to deploy your app and start debugging</br>
 ![Start Without Debugging in Visual Studio](images/deploywithdebugging.png)</br>
 4. The first time you deploy an app to your HoloLens from your PC, you'll be prompted for a PIN. Follow the **Pairing your device** instructions below.
@@ -134,7 +134,7 @@ To unpair your HoloLens from all paired computers:
 2. Select an **x86** or **x64** build configuration for your app.</br>
 ![x86 build configuration in Visual Studio](images/x86setting.png)</br>
 3. Select **HoloLens 2 Emulator** in the deployment target drop-down menu</br>
-![Emulator target in Visual Studio](images/deployemulator2.png)</br>
+![Emulator target in Visual Studio application](images/deployemulator2.png)</br>
 4. Select **Debug > Start debugging** to deploy your app and start debugging</br>
 ![Start Without Debugging in Visual Studio](images/deploywithdebugging.png)</br>
 
