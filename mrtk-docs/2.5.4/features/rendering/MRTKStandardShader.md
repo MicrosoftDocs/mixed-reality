@@ -147,13 +147,13 @@ Below are extra details on a handful of feature details available with the MRTK/
 
 Many mesh outline techniques are done using a [post processing](https://docs.unity3d.com/Manual/PostProcessingOverview.html) technique. Post processing provides great quality outlines, but can be prohibitively expensive on many Mixed Reality devices. You can find a scene that demonstrates usage of mesh outlines in the  **OutlineExamples** scene under `MRTK/Examples/Demos/StandardShader/Scenes/`.
 
-<img src="../images/mrtk-standard-shader/MRTK_MeshOutline.jpg" width="900">
+<img src="../images/mrtk-standard-shader/MRTK_MeshOutline.jpg" width="900" alt="Mesh Outline">
 
 [`MeshOutline.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.MeshOutline) and [`MeshOutlineHierarchy.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.MeshOutlineHierarchy) can be used to render an outline around a mesh renderer. Enabling this component introduces an additional render pass of the object being outlined, but is designed to run performantly on mobile Mixed Reality devices and does not utilize any post processes. Limitations of this effect include it not working well on objects which are not watertight (or required to be two sided) and depth sorting issues can occur on overlapping objects.
 
 The outline behaviors are designed to be used in conjunction with the MRTK/Standard shader. Outline materials are usually a solid unlit color, but can be configured to achieve a wide array of effects. The default configuration of a outline material is as follows:
 
-<img src="../images/mrtk-standard-shader/MRTK_OutlineMaterial.jpg" width="450">
+<img src="../images/mrtk-standard-shader/MRTK_OutlineMaterial.jpg" width="450" alt="Mesh Outline Material">
 
 1. Depth Write - should be disabled for outline materials to make sure the outline does not prevent other objects from rendering.
 2. Vertex Extrusion - needs to be enabled to render the outline.
@@ -161,7 +161,7 @@ The outline behaviors are designed to be used in conjunction with the MRTK/Stand
 
 [`MeshSmoother.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.MeshSmoother) is a component which can be used to automatically generate smoothed normals on a mesh. This method groups vertices in a mesh that share the same location in space then averages the normals of those vertices. This process creates a copy of the underlying mesh and should be used only when required.
 
-<img src="../images/mrtk-standard-shader/MRTK_SmoothNormals.jpg" width="450">
+<img src="../images/mrtk-standard-shader/MRTK_SmoothNormals.jpg" width="450" alt="Smooth Normals Outline">
 
 1. Smooth normals generated via [`MeshSmoother.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.MeshSmoother).
 2. Default normals used, notice the artifacts around the cube corners.
@@ -204,7 +204,7 @@ Per pixel clipping textures, local edge based anti aliasing, and normal map scal
 
 ## See also
 
-- [Interactable](README_Interactable.md)
-- [Hover Light](Rendering/HoverLight.md)
-- [Proximity Light](Rendering/ProximityLight.md)
-- [Clipping Primitive](Rendering/ClippingPrimitive.md)
+* [Interactable](README_Interactable.md)
+* [Hover Light](Rendering/HoverLight.md)
+* [Proximity Light](Rendering/ProximityLight.md)
+* [Clipping Primitive](Rendering/ClippingPrimitive.md)
