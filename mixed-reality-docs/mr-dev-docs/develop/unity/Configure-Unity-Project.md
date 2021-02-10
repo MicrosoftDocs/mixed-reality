@@ -120,7 +120,7 @@ Now that your project is ready, you can start developing your Mixed Reality expe
 
 * Add [core building blocks](unity-development-overview.md#2-core-building-blocks)
 * Check out available [platform capabilities and APIs](unity-development-overview.md#3-advanced-features)
-* Learn how to [deploy your app](../platform-capabilities-and-apis/using-visual-studio.md#deploying-an-app-to-your-local-pc---immersive-headset)
+* Learn how to [deploy your app](../platform-capabilities-and-apis/using-visual-studio.md#)
 * Use the [Mixed Reality simulator](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
 
 ## See also
