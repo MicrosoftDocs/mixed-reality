@@ -1,2 +1,6 @@
-- name: Index
-  href: index.md
+- name: hologram-stabilization
+  href: hologram-stabilization.md
+- name: LargeProjects
+  href: LargeProjects.md
+- name: PerfGettingStarted
+  href: PerfGettingStarted.md

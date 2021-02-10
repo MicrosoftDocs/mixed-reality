@@ -1,2 +1,6 @@
-- name: Index
-  href: index.md
+- name: MRTK_Modularization
+  href: MRTK_Modularization.md
+- name: MRTK_Packages
+  href: MRTK_Packages.md
+- name: ReleaseNotes
+  href: ReleaseNotes.md

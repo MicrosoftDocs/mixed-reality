@@ -1,2 +1,8 @@
-- name: Index
-  href: index.md
+- name: GettingStartedWithMRTKAndXRSDK
+  href: GettingStartedWithMRTKAndXRSDK.md
+- name: MixedRealityConfigurationGuide
+  href: MixedRealityConfigurationGuide.md
+- name: MRTK_Configuration_Dialog
+  href: MRTK_Configuration_Dialog.md
+- name: usingupm
+  href: usingupm.md

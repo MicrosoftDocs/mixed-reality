@@ -1,2 +1,8 @@
-- name: Index
-  href: index.md
+- name: BuildAndDeploy
+  href: BuildAndDeploy.md
+- name: HTKToMRTKPortingGuide
+  href: HTKToMRTKPortingGuide.md
+- name: MRTK_and_managed_code_stripping
+  href: MRTK_and_managed_code_stripping.md
+- name: Updating
+  href: Updating.md
