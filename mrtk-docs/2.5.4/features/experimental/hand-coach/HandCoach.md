@@ -33,7 +33,7 @@ You can find examples in the **HandCoachExample** scene under:
 ## Hand 3D Assets
 
 You can find the assets under:
-[MixedRealityToolkit.SDK/Experimental/HandCoach](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/Experimental/HandCoach)
+[MixedRealityToolkit.SDK/Experimental/HandCoach](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/Examples/Demos/HandCoach)
 
 ## Quality
 
