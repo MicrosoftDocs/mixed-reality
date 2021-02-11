@@ -39,14 +39,14 @@ The key differences between the HoloLens2 profile and the Default Profile are:
 
 **Disabled** Features:
 
-- [Boundary System](../boundary/BoundarySystemGettingStarted.md)
-- [Teleport System](../teleport-system/Overview.md)
-- [Spatial Awareness System](../spatial-awareness/SpatialAwarenessGettingStarted.md)
-- [Hand mesh visualization](../input/HandTracking.md) (due to performance overhead)
+- [Boundary System](../boundary/boundary-system-getting-started.md)
+- [Teleport System](../teleport-system/overview.md)
+- [Spatial Awareness System](../spatial-awareness/spatial-awareness-getting-started.md)
+- [Hand mesh visualization](../input/hand-tracking.md) (due to performance overhead)
 
 **Enabled** Systems:
 
-- The [Eye Tracking provider](../eye-tracking/EyeTracking_Main.md)
+- The [Eye Tracking provider](../eye-tracking/eye-tracking-main.md)
 - Eye input simulation
 
 Camera profile settings are set to match so that the editor quality and player quality are the same. This is different from the default camera profile where Opaque displays are set to a higher quality. This change means that in-editor quality will be lower, which will more closely match what will be rendered on the device.
@@ -54,4 +54,4 @@ Camera profile settings are set to match so that the editor quality and player q
 > [!NOTE]
 > The Spatial Awareness system is turned off by default based on client feedback - it is an interesting visualization to see
   initially but is typically turned off to avoid the visual distraction and the additional performance hit of
-  having it on. The system can be re-enabled by following the [instructions here](../spatial-awareness/SpatialAwarenessGettingStarted.md).
+  having it on. The system can be re-enabled by following the [instructions here](../spatial-awareness/spatial-awareness-getting-started.md).

@@ -15,7 +15,7 @@ by the MRTK or by other parties.
 
 ## Creating an extension service
 
-The most efficient way to create an extension service is to use the [extension service creation wizard](../tools/ExtensionServiceCreationWizard.md).
+The most efficient way to create an extension service is to use the [extension service creation wizard](../tools/extension-service-creation-wizard.md).
 To start the extension service creation wizard, select **Mixed Reality Toolkit > Utilities > Create Extension Service**.
 
 ![Extension service creation wizard](../images/extension-wizard/ExtensionServiceCreationWizard.png)
@@ -63,7 +63,7 @@ if (MixedRealityServiceRegistry.TryGetService<INewService>(out service))
 
 ## See also
 
-- [Systems, extension services and data providers](../../architecture/SystemsExtensionsProviders.md)
-- [Extension service creation wizard](../tools/ExtensionServiceCreationWizard.md)
+- [Systems, extension services and data providers](../../architecture/systems-extensions-providers.md)
+- [Extension service creation wizard](../tools/extension-service-creation-wizard.md)
 - [IMixedRealityExtensionService](xref:Microsoft.MixedReality.Toolkit.IMixedRealityExtensionService)
 - [MixedRealityServiceRegistry](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry)

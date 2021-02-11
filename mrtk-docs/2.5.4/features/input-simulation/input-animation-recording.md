@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Input animation recording
 
-MRTK features an recording system by which head movement and hand tracking data can be stored in animation files. The recorded data can then be played back using the [input simulation system](InputSimulationService.md).
+MRTK features an recording system by which head movement and hand tracking data can be stored in animation files. The recorded data can then be played back using the [input simulation system](input-simulation-service.md).
 
 Recording input is a useful tool in a variety of situations:
 
@@ -40,7 +40,7 @@ By default the size of the recording buffer is limited to 30 seconds. This allow
 
 The data in the recording buffer can be saved in a binary file using the [SaveInputAnimation](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputRecordingService.SaveInputAnimation*) function.
 
-For details on the binary file format see [Input Animation File Format Specification](InputAnimationFileFormat.md).
+For details on the binary file format see [Input Animation File Format Specification](input-animation-file-format.md).
 
 ### Input playback service
 
@@ -61,7 +61,7 @@ The current animation time can also be controlled directly with the [LocalTime](
 
 ### Editor tools for recording and playing input animation
 
-A number of tools exist in the Unity editor for recording and examining input animation. These tools can be accessed in the [input simulation tools window](InputSimulationService.md#input-simulation-tools-window), which can be opened from the _Mixed Reality Toolkit > Utilities > Input Simulation_ menu.
+A number of tools exist in the Unity editor for recording and examining input animation. These tools can be accessed in the [input simulation tools window](input-simulation-service.md#input-simulation-tools-window), which can be opened from the _Mixed Reality Toolkit > Utilities > Input Simulation_ menu.
 
 > [!NOTE]
 > Input recording and playback only works during play mode.

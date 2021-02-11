@@ -24,7 +24,7 @@ The list below outlines all available input event interfaces to be implemented b
 | [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) | Speech Keyword Recognized | Raised on recognition of one of the keywords configured in the *Speech Commands Profile*. |
 | [`IMixedRealityDictationHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityDictationHandler) | Dictation<br/> Hypothesis <br/> Result <br/> Complete <br/> Error | Raised by dictation systems to report the results of a dictation session. |
 | [`IMixedRealityGestureHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler) | Gesture events on: <br/> Started <br/> Updated <br/> Completed <br/> Canceled | Raised on gesture detection. |
-| [`IMixedRealityGestureHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler`1) | Gesture Updated / Completed | Raised on detection of gestures containing additional data of the given type. See [**gesture events**](Gestures.md#gesture-events) for details on possible values for **T**. |
+| [`IMixedRealityGestureHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler`1) | Gesture Updated / Completed | Raised on detection of gestures containing additional data of the given type. See [**gesture events**](gestures.md#gesture-events) for details on possible values for **T**. |
 | [`IMixedRealityHandJointHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHandJointHandler) | Hand Joints Updated | Raised by articulated hand controllers when hand joints are updated. |
 | [`IMixedRealityHandMeshHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHandMeshHandler) | Hand Mesh Updated | Raised by articulated hand controllers when a hand mesh is updated. |
 | [`IMixedRealityInputActionHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputActionHandler) | Action Started / Ended | Raise to indicate action start and end for inputs mapped to actions. |
@@ -70,7 +70,7 @@ public class ShowHideSpeechHandler : MonoBehaviour, IMixedRealitySpeechHandler
 ```
 
 > [!NOTE]
-> [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) input events require that the desired keywords are pre-registered in the [MRTK Speech Commands Profile](Speech.md).
+> [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) input events require that the desired keywords are pre-registered in the [MRTK Speech Commands Profile](speech.md).
 
 ## Register for global input events
 
@@ -180,6 +180,6 @@ In order to stop an input event from propagating through its execution [as outli
 
 ## See also
 
-- [Pointers](Pointers.md)
-- [Speech](Speech.md)
-- [Input State](InputState.md)
+- [Pointers](pointers.md)
+- [Speech](speech.md)
+- [Input State](input-state.md)

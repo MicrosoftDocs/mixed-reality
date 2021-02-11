@@ -16,7 +16,7 @@ The Unity AR camera settings provider is an experimental MRTK component that ena
 
 ![Unity AR camera settings configuration](../images/camera-system/UnityArSettingsConfiguration.png)
 
-For a guide on how to add the provider to your scene: [How to configure MRTK for iOS and Android](../cross-platform/UsingARFoundation.md)
+For a guide on how to add the provider to your scene: [How to configure MRTK for iOS and Android](../cross-platform/using-ar-foundation.md)
 
 ### Tracking settings
 
@@ -70,5 +70,5 @@ The default value for tracking type is **Update And Before Render**, to enable t
 
 ## See also
 
-- [Camera System Overview](CameraSystemOverview.md)
-- [Creating a Camera Settings Provider](CreateSettingsProvider.md)
+- [Camera System Overview](camera-system-overview.md)
+- [Creating a Camera Settings Provider](create-settings-provider.md)

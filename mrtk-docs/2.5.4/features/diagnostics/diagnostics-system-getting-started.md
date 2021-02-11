@@ -12,7 +12,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 The Mixed Reality Toolkit Diagnostic System provides diagnostic tools that run within the application to enable analysis of application issues.
 
-The first release of the Diagnostic System contains the [Visual Profiler](UsingVisualProfiler.md) to allow for analyzing performance issues while using the application.
+The first release of the Diagnostic System contains the [Visual Profiler](using-visual-profiler.md) to allow for analyzing performance issues while using the application.
 
 ## Getting started
 
@@ -44,15 +44,15 @@ The following steps presume use of the MixedRealityToolkit object. Steps require
 
 ### Configure diagnostic options
 
-The diagnostics system uses a configuration profile to specify which components are to be displayed and to configure their settings. Please see [Configuring the Diagnostics System](ConfiguringDiagnostics.md) for more information pertaining to the available component settings.
+The diagnostics system uses a configuration profile to specify which components are to be displayed and to configure their settings. Please see [Configuring the Diagnostics System](configuring-diagnostics.md) for more information pertaining to the available component settings.
 
 > [!IMPORTANT]
 > While it is possible to use Unity's Play Mode while developing applications without requiring the build and deploy steps, it is important to evaluate the diagnostics system results using a compiled application running on the target hardware and platform.
 >
-> Performance diagnostics, such as the [Visual Profiler](UsingVisualProfiler.md), may not accurately reflect actual application performance when run from within the editor.
+> Performance diagnostics, such as the [Visual Profiler](using-visual-profiler.md), may not accurately reflect actual application performance when run from within the editor.
 
 ## See also
 
 - [Diagnostics API documentation](xref:Microsoft.MixedReality.Toolkit.Diagnostics)
-- [Configuring the Diagnostics System](ConfiguringDiagnostics.md)
-- [Using the Visual Profiler](UsingVisualProfiler.md)
+- [Configuring the Diagnostics System](configuring-diagnostics.md)
+- [Using the Visual Profiler](using-visual-profiler.md)

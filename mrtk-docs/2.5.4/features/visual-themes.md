@@ -29,7 +29,7 @@ Example Theme configuration assets can be found under `MRTK/SDK/Features/UX/Inte
 
 ### States
 
-When creating a new [`Theme`](xref:Microsoft.MixedReality.Toolkit.UI.Theme), the first thing to set is what states are available. The *States* property indicates how many values a Theme configuration needs to define as there will be one value per state. In the example image above, the [default states defined for the Interactable](ux-building-blocks/Interactable.md#general-input-settings) component are *Default*, *Focus*, *Pressed*, and *Disabled*. These are defined in the `DefaultInteractableStates` (Assets/MRTK/SDK/Features/UX/Interactable/States) asset file.
+When creating a new [`Theme`](xref:Microsoft.MixedReality.Toolkit.UI.Theme), the first thing to set is what states are available. The *States* property indicates how many values a Theme configuration needs to define as there will be one value per state. In the example image above, the [default states defined for the Interactable](ux-building-blocks/interactable.md#general-input-settings) component are *Default*, *Focus*, *Pressed*, and *Disabled*. These are defined in the `DefaultInteractableStates` (Assets/MRTK/SDK/Features/UX/Interactable/States) asset file.
 
 To create a new [`State`](xref:Microsoft.MixedReality.Toolkit.UI.States) asset:
 
@@ -64,7 +64,7 @@ In general, it is easier to design Theme configurations via the Unity inspector 
 
 To help expedite development, the following helper methods are useful for simplifying setup.
 
-[`Interactable.GetDefaultInteractableStates()`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable) - creates a new States ScriptableObject with the four default state values used in the [Interactable](ux-building-blocks/Interactable.md) component.
+[`Interactable.GetDefaultInteractableStates()`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable) - creates a new States ScriptableObject with the four default state values used in the [Interactable](ux-building-blocks/interactable.md) component.
 
 [`ThemeDefinition.GetDefaultThemeDefinition<T>()`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeDefinition) - Every Theme Engine defines a default configuration with the correct properties needed for that Theme runtime type. This helper creates a definition for the given Theme Engine type.
 
@@ -295,4 +295,4 @@ public class MeshVisibilityController : MonoBehaviour
 
 ## See also
 
-- [Interactable](ux-building-blocks/Interactable.md)
+- [Interactable](ux-building-blocks/interactable.md)

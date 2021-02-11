@@ -136,7 +136,7 @@ Next, apply the [`MixedRealityController`](xref:Microsoft.MixedReality.Toolkit.I
 
 #### Configure the interaction mappings
 
-The next step is to define the set of interaction mappings supported by the controller. For devices that receive their data via Unity's Input class, the [controller mapping tool](../Tools/ControllerMappingTool.md) is a helpful resource to confirm the correct axis and button mappings to assign to interactions.
+The next step is to define the set of interaction mappings supported by the controller. For devices that receive their data via Unity's Input class, the [controller mapping tool](../tools/controller-mappingTool.md) is a helpful resource to confirm the correct axis and button mappings to assign to interactions.
 
 The following example is abbreviated from the `GenericOpenVRController` class, located in the MRTK/Providers/OpenVR folder.
 
@@ -207,9 +207,9 @@ It is recommended to implement the pattern utilized by the MRTK when instrumenti
 
 ## Create the profile and inspector
 
-In the Mixed Reality Toolkit, data providers are configured using [profiles](../profiles/Profiles.md).
+In the Mixed Reality Toolkit, data providers are configured using [profiles](../profiles/profiles.md).
 
-Data providers with additional configuration options (ex: [InputSimulationService](../input-simulation/InputSimulationService.md)) should create a profile and inspector to allow
+Data providers with additional configuration options (ex: [InputSimulationService](../input-simulation/input-simulation-service.md)) should create a profile and inspector to allow
 customers to modify the behavior to best suit the needs of the application.
 
 > The complete code for the example in this section can be found in the MRTK.Services/InputSimulation folder.
@@ -278,7 +278,7 @@ If a data provider is submitted and accepted as a part of the Microsoft Mixed Re
 
 ## See also
 
-- [Input system](Overview.md)
+- [Input system](overview.md)
 - [`BaseInputDeviceManager` class](xref:Microsoft.MixedReality.Toolkit.Input.BaseInputDeviceManager)
 - [`IMixedRealityInputDeviceManager` interface](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputDeviceManager)
 - [`IMixedRealityInputHandler` interface](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler)

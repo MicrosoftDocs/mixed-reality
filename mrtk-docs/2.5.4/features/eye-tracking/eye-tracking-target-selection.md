@@ -18,7 +18,7 @@ This page discusses different options for accessing eye gaze data and eye gaze s
 - Look & Say _"Explode"_ or _"Pop"_ (custom voice commands)
 - Look & Bluetooth button
 - Look & Pinch (i.e., hold up your hand in front of you and bring your thumb and index finger together)
-  - Please note that for this to work, the [hand rays need to be disabled](EyeTracking_EyesAndHands.md#how-to-disable-the-hand-ray)
+  - Please note that for this to work, the [hand rays need to be disabled](eye-tracking-eyes-and-hands.md#how-to-disable-the-hand-ray)
 
 To select holographic content using eye gaze, there are several options:
 
@@ -40,7 +40,7 @@ As a developer, you want to provide a flexible solution that allows the user to 
 In this case, the most flexible solution is to use the primary focus handler as it will notify you whenever the currently prioritized primary focus pointer triggers an event. Please note that if hand rays are enabled, the head or eye gaze focus pointer are disabled as soon as the hands come into view.
 
 > [!IMPORTANT]
-> Please note that if hand rays are enabled, the head or eye gaze focus pointer are disabled as soon as the hands come into view. If you want to support a [_'look and pinch'_ interaction, you need to disable the hand ray](EyeTracking_EyesAndHands.md#how-to-disable-the-hand-ray). In our eye tracking sample scenes, we have disabled the hand ray to allow for showcasing richer interactions using eyes + hand motions - see for example [Eye-Supported Positioning](EyeTracking_Positioning.md).
+> Please note that if hand rays are enabled, the head or eye gaze focus pointer are disabled as soon as the hands come into view. If you want to support a [_'look and pinch'_ interaction, you need to disable the hand ray](eye-tracking-eyes-and-hands.md#how-to-disable-the-hand-ray). In our eye tracking sample scenes, we have disabled the hand ray to allow for showcasing richer interactions using eyes + hand motions - see for example [Eye-Supported Positioning](eye-tracking-positioning.md).
 
 [**2. Use both eye focus and hand rays at the same time:**](#2-independent-eye-gaze-specific-eyetrackingtarget)
 
@@ -53,7 +53,7 @@ To enable this, you need to use eye-specific EyeTrackingTarget script that is in
 
 ## 1. Use generic focus and pointer handlers
 
-If eye tracking is set up correctly (see [Basic MRTK setup to use eye tracking](EyeTracking_BasicSetup.md)), enabling users to select holograms using their eyes is the same as for any other focus input (e.g., head gaze or hand ray).This provides the great advantage of a flexible way to interact with your holograms by defining the main focus type in your MRTK Input Pointer Profile depending on your user's needs, while leaving your code untouched. This allows for switching between head or eye gaze without changing a line of code or replace hand rays with eye targeting for far interactions.
+If eye tracking is set up correctly (see [Basic MRTK setup to use eye tracking](eye-tracking-basic-setup.md)), enabling users to select holograms using their eyes is the same as for any other focus input (e.g., head gaze or hand ray).This provides the great advantage of a flexible way to interact with your holograms by defining the main focus type in your MRTK Input Pointer Profile depending on your user's needs, while leaving your code untouched. This allows for switching between head or eye gaze without changing a line of code or replace hand rays with eye targeting for far interactions.
 
 ### Focusing on a hologram
 
@@ -85,7 +85,7 @@ The _IMixedRealityPointerHandler_ interface requires implementing the following 
 _OnPointerUp_, _OnPointerDown_, and _OnPointerClicked_.
 
 In the example below, we change the color of a hologram by looking at it and pinching or saying "select".
-The required action to trigger the event is defined by `eventData.MixedRealityInputAction == selectAction` whereby we can set the type of `selectAction` in the Unity Editor - by default it's the "Select" action. The types of available [MixedRealityInputActions](../input/InputActions.md) can be configured in the MRTK Profile via _MRTK Configuration Profile_ -> _Input_ -> _Input Actions_.
+The required action to trigger the event is defined by `eventData.MixedRealityInputAction == selectAction` whereby we can set the type of `selectAction` in the Unity Editor - by default it's the "Select" action. The types of available [MixedRealityInputActions](../input/input-actions.md) can be configured in the MRTK Profile via _MRTK Configuration Profile_ -> _Input_ -> _Input Actions_.
 
 ```c#
 public class ColorTap : MonoBehaviour, IMixedRealityFocusHandler, IMixedRealityPointerHandler
@@ -119,7 +119,7 @@ public class ColorTap : MonoBehaviour, IMixedRealityFocusHandler, IMixedRealityP
 
 Given that eye gaze can be very different to other pointer inputs, you may want to make sure to only react to the focus input if it is _eye gaze_ and it is currently the primary input pointer.
 For this purpose, you would use the [`BaseEyeFocusHandler`](xref:Microsoft.MixedReality.Toolkit.Input.BaseEyeFocusHandler) which is specific to eye tracking and which derives from the [`BaseFocusHandler`](xref:Microsoft.MixedReality.Toolkit.Input.BaseFocusHandler).
-As mentioned before, it will only trigger if eye gaze targeting is currently the primary pointer input (i.e., no hand ray is active). For more information, see [How to support eye gaze + hand gestures](EyeTracking_EyesAndHands.md).
+As mentioned before, it will only trigger if eye gaze targeting is currently the primary pointer input (i.e., no hand ray is active). For more information, see [How to support eye gaze + hand gestures](eyeTracking-eyes-and-hands.md).
 
 Here is an example from `EyeTrackingDemo-03-Navigation` (Assets/MRTK/Examples/Demos/EyeTracking/Scenes).
 In this demo, there are two 3D holograms that will turn depending on which part of the object is looked at:
@@ -352,4 +352,4 @@ Now, when you start the eye tracking demo scenes, you should see a ray coming fr
 For example, in the eye tracking target selection demo, the semi-transparent circle is still following your eye gaze and the gems respond to whether they are looked at or not, while the top scene menu buttons use the primary input pointer (your hands) instead.
 
 ---
-[Back to "Eye tracking in the MixedRealityToolkit"](EyeTracking_Main.md)
+[Back to "Eye tracking in the MixedRealityToolkit"](eye-tracking-main.md)

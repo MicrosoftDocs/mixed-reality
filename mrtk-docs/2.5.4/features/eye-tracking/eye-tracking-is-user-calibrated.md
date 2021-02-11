@@ -28,7 +28,7 @@ This page covers the following:
 
 Eye tracking configuration in MRTK is configured via the [`IMixedRealityEyeGazeProvider`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityEyeGazeProvider) interface.
 
-Using [CoreServices.InputSystem.EyeGazeProvider](EyeTracking_EyeGazeProvider.md) provides the default gaze provider implementation registered in the toolkit at runtime. `IMixedRealityEyeGazeProvider.IsEyeGazeValid` returns a `bool?` which is null if no information from the eye tracker is available yet.
+Using [CoreServices.InputSystem.EyeGazeProvider](eye-tracking-eye-gaze-provider.md) provides the default gaze provider implementation registered in the toolkit at runtime. `IMixedRealityEyeGazeProvider.IsEyeGazeValid` returns a `bool?` which is null if no information from the eye tracker is available yet.
 Once data has been received, it will either return true or false to indicate that the user's eye tracking calibration is valid or invalid.
 
 ### Sample eye calibration notification - step-by-step
@@ -86,7 +86,7 @@ Once the notification is dismissed, it will slowly decrease its size and fade ou
 
 ## See also
 
-- [MRTK Eye Tracking Overview](EyeTracking_Main.md)
-- [MRTK Eye Tracking setup](EyeTracking_BasicSetup.md)
-- [MRTK Eye Tracking via Code](EyeTracking_EyeGazeProvider.md)
+- [MRTK Eye Tracking Overview](eye-tracking_Main.md)
+- [MRTK Eye Tracking setup](eye-tracking-basic-setup.md)
+- [MRTK Eye Tracking via Code](eye-tracking-eye-gaze-provider.md)
 - [HoloLens 2 Eye Tracking Documentation](https://docs.microsoft.com/windows/mixed-reality/eye-tracking)

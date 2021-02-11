@@ -61,6 +61,6 @@ foreach(var controller in CoreServices.InputSystem.DetectedControllers)
 
 ## See also
 
-- [InputEvents](InputEvents.md)
-- [Pointers](Pointers.md)
-- [HandTracking](HandTracking.md)
+- [InputEvents](input-events.md)
+- [Pointers](pointers.md)
+- [HandTracking](hand-tracking.md)

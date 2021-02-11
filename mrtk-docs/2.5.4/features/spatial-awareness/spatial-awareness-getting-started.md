@@ -22,7 +22,7 @@ The Spatial Awareness system provides real-world environmental awareness in mixe
 Adding support for Spatial Awareness requires two key components of the Mixed Reality Toolkit: the Spatial Awareness system and a supported platform provider.
 
 1. [Enable](#enable-the-spatial-awareness-system) the Spatial Awareness system
-2. [Register](#register-observers) and [configure](ConfiguringSpatialAwarenessMeshObserver.md) one or more spatial observers to provide mesh data
+2. [Register](#register-observers) and [configure](configuring-spatial-awareness-mesh-observer.md) one or more spatial observers to provide mesh data
 3. [Build and deploy](#build-and-deploy) to a platform that supports Spatial Awareness
 
 ### Enable the spatial awareness system
@@ -51,7 +51,7 @@ The Mixed Reality Toolkit ships with a few default pre-configured profiles. Some
 
 ### Register observers
 
-Services in the Mixed Reality Toolkit can have [Data Provider services](../../architecture/SystemsExtensionsProviders.md) that supplement the main service with platform specific data and implementation controls. An example of this is the Mixed Reality Input System which has [multiple data providers](../input/InputProviders.md) to get controller and other related input information from various platform-specific APIs.
+Services in the Mixed Reality Toolkit can have [Data Provider services](../../architecture/systems-extensions-providers.md) that supplement the main service with platform specific data and implementation controls. An example of this is the Mixed Reality Input System which has [multiple data providers](../input/input-providers.md) to get controller and other related input information from various platform-specific APIs.
 
 The Spatial Awareness system is similar in that data providers supply the system with mesh data about the real-world. The Spatial Awareness profile must have at least one Spatial Observer registered. Spatial Observers are generally platform specific components that act as the provider for surfacing various types of mesh data from a platform specific endpoint (i.e HoloLens).
 
@@ -64,7 +64,7 @@ The Spatial Awareness system is similar in that data providers supply the system
 
     ![Select the Spatial Observer Implementation](../images/spatial-awareness/SpatialAwarenessSelectObserver.png)
 
-1. [Modify configuration properties on the observer](ConfiguringSpatialAwarenessMeshObserver.md) as necessary
+1. [Modify configuration properties on the observer](configuring-spatial-awareness-mesh-observer.md) as necessary
 
 > [!NOTE]
 > Users of the `DefaultMixedRealityToolkitConfigurationProfile` (Assets/MRTK/SDK/Profiles) will have the Spatial Awareness system pre-configured for the Windows Mixed Reality platform which uses
@@ -86,13 +86,13 @@ After following the procedures above to enable the Spatial Awareness system, the
 
 Information for configuring observers in inspector:
 
-- [Configuring Observers for on device usage](ConfiguringSpatialAwarenessMeshObserver.md)
-- [Configuring Observers for in-editor usage](SpatialObjectMeshObserver.md)
+- [Configuring Observers for on device usage](configuring-spatial-awareness-mesh-observer.md)
+- [Configuring Observers for in-editor usage](spatial-object-mesh-observer.md)
 
 Information for controlling and extending observers via code:
 
-- [Configuring Observers via Code](UsageGuide.md)
-- [Creating a custom Observer](CreateDataProvider.md)
+- [Configuring Observers via Code](usage-guide.md)
+- [Creating a custom Observer](create-data-provider.md)
 
 ## See also
 

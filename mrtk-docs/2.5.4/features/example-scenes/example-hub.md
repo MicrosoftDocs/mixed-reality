@@ -18,7 +18,7 @@ MRTK Examples Hub is a Unity scene that makes it easy to experience multiple sce
 
 ## Prerequisite
 
-MRTK Examples Hub uses [Scene Transition Service](../extensions/scene-transition-service/SceneTransitionServiceOverview.md) and related scripts. If you are using MRTK through Unity packages, please import **Microsoft.MixedReality.Toolkit.Unity.Extensions.x.x.x.unitypackage** which is part of the [release packages](https://github.com/microsoft/MixedRealityToolkit-Unity/releases). If you are using MRTK through the repository clone, you should already have the **MRTK/Extensions** folder in your project.
+MRTK Examples Hub uses [Scene Transition Service](../extensions/scene-transition-service/scene-transition-service-overview.md) and related scripts. If you are using MRTK through Unity packages, please import **Microsoft.MixedReality.Toolkit.Unity.Extensions.x.x.x.unitypackage** which is part of the [release packages](https://github.com/microsoft/MixedRealityToolkit-Unity/releases). If you are using MRTK through the repository clone, you should already have the **MRTK/Extensions** folder in your project.
 
 ## MRTKExamplesHub scene and the scene system
 
@@ -53,7 +53,7 @@ In the **LoadContentScene** script's Inspector, you can define the scene name to
 <br/><br/><img src="../images/examples-hub/MRTK_ExamplesHub_SceneSystem7.png" width="450" alt="Scene System 7">
 
 The script uses the Scene System's LoadContent() function to load the scene.
-Please refer to the [Scene System](../scene-system/SceneSystemGettingStarted.md) page for more details.
+Please refer to the [Scene System](../scene-system/scene-system-getting-started.md) page for more details.
 
 ```c#
 MixedRealityToolkit.SceneSystem.LoadContent(contentName, loadSceneMode);
@@ -71,7 +71,7 @@ To return to the main menu scene (MRTKExamplesHubMainMenu scene), you can use th
 
 In the **CubeCollection** object, duplicate (or add) _ExampleHubButton_ prefabs and click **Update Collection** in the `GridObjectCollection`.
 This will update the cylinder layout based on the new total number of buttons.
-Please refer to the [Object Collection](../ux-building-blocks/ObjectCollection.md) page for more details.
+Please refer to the [Object Collection](../ux-building-blocks/object-collection.md) page for more details.
 
 <br/><br/><img src="../images/examples-hub/MRTK_ExamplesHub_SceneSystem9.png" alt="Scene System 9">
 <br/><br/><img src="../images/examples-hub/MRTK_ExamplesHub_SceneSystem10.png" alt="Scene System 10">

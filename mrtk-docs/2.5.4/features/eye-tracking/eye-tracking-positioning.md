@@ -20,4 +20,4 @@ If you have any questions regarding this section please post in our MRTK slack c
 ![MRTK Eye Positioning Slider](../images/eye-tracking/mrtk_et_positioning_slider.png)
 
 ---
-[Back to "Eye tracking in the MixedRealityToolkit"](EyeTracking_Main.md)
+[Back to "Eye tracking in the MixedRealityToolkit"](eye-tracking-main.md)

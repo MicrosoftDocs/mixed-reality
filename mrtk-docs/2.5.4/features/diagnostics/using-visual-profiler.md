@@ -72,9 +72,9 @@ When using the application, look for total memory usage. Key indicators include 
 
 ## Customizing the visual profiler
 
-The Visual Profiler's appearance and behavior are customizable via the diagnostics system profile. Please see [Configuring the Diagnostics System](ConfiguringDiagnostics.md) for more information.
+The Visual Profiler's appearance and behavior are customizable via the diagnostics system profile. Please see [Configuring the Diagnostics System](configuring-diagnostics.md) for more information.
 
 ## See also
 
-- [Diagnostics System](DiagnosticsSystemGettingStarted.md)
-- [Configuring the Diagnostics System](ConfiguringDiagnostics.md)
+- [Diagnostics System](diagnostics-system-getting-started.md)
+- [Configuring the Diagnostics System](configuring-diagnostics.md)

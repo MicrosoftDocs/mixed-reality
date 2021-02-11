@@ -113,4 +113,4 @@ The layer on which the boundary walls should be set. The default value is the *I
 ## See also
 
 - [Boundary API documentation](xref:Microsoft.MixedReality.Toolkit.Boundary)
-- [Boundary System](BoundarySystemGettingStarted.md)
+- [Boundary System](boundary-system-getting-started.md)

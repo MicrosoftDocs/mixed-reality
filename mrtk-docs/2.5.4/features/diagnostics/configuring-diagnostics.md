@@ -71,5 +71,5 @@ CoreServices.DiagnosticsSystem.ShowProfiler = false;
 
 ## See also
 
-- [Diagnostics System](DiagnosticsSystemGettingStarted.md)
-- [Using the Visual Profiler](UsingVisualProfiler.md)
+- [Diagnostics System](diagnostics-system-getting-started.md)
+- [Using the Visual Profiler](using-visual-profiler.md)

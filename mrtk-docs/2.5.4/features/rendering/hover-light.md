@@ -60,4 +60,4 @@ private const int hoverLightCountHigh = 12;
 
 ## See also
 
-* [MRTK Standard Shader](MRTKStandardShader.md)
+* [MRTK Standard Shader](mrtk-standard-shader.md)

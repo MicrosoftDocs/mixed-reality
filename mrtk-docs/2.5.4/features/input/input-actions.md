@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, InputAct
 
 # Input actions
 
-[**Input Actions**](InputActions.md) are abstractions over raw inputs meant to help isolating application logic from the specific input sources producing an input. It can be useful, for example, to define a *Select* action and map it to the left mouse button, a button in a gamepad and a trigger in a 6 DOF controller. You can then have your application logic listen for *Select* input action events instead of having to be aware of all the different inputs that can produce it.
+[**Input Actions**](input-actions.md) are abstractions over raw inputs meant to help isolating application logic from the specific input sources producing an input. It can be useful, for example, to define a *Select* action and map it to the left mouse button, a button in a gamepad and a trigger in a 6 DOF controller. You can then have your application logic listen for *Select* input action events instead of having to be aware of all the different inputs that can produce it.
 
 ## Creating an input action
 
@@ -64,7 +64,7 @@ The easiest way to handle input actions is to make use of the [`InputActionHandl
 
 <img src="../images/input/InputActionHandler.PNG" alt="Acton Handler" style="max-width:100%;">
 
-If you want more control, you can implement the [`IMixedRealityInputActionHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputActionHandler) interface directly in your script. See the [**Input Events**](InputEvents.md) section for more details on event handling via handler interfaces.
+If you want more control, you can implement the [`IMixedRealityInputActionHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputActionHandler) interface directly in your script. See the [**Input Events**](input-events.md) section for more details on event handling via handler interfaces.
 
 ## Examples
 

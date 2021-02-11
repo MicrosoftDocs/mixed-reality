@@ -18,17 +18,17 @@ Eye tracking enables users to quickly and effortlessly engage with holograms acr
 New to eye tracking? No problem! There are a number of videos, tutorials and samples to get you started in the [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)!
 It is recommended to start by exploring some of the existing eye tracking samples that demonstrate best practices for eye-based interactions. You can then use these samples to pull the parts that seem relevant to you into your app. Finally, we also describe how to set up a fresh scene with the core components to get eye tracking working in your app.
 
-1. [MRTK eye tracking samples](EyeTracking_ExamplesOverview.md)
+1. [MRTK eye tracking samples](eye-tracking-examples-overview.md)
 
-2. [MRTK eye tracking setup](EyeTracking_BasicSetup.md)
+2. [MRTK eye tracking setup](eye-tracking-bBasic-setup.md)
 
-3. [Accessing eye tracking data via Code](EyeTracking_EyeGazeProvider.md)
+3. [Accessing eye tracking data via Code](eye-tracking-eye-gaze-provider.md)
 
-4. [Validate eye tracking calibration on device](EyeTracking_IsUserCalibrated.md)
+4. [Validate eye tracking calibration on device](eye-tracking-is-user-calibrated.md)
 
 ## See also
 
-- [MRTK Eye Tracking setup](EyeTracking_BasicSetup.md)
-- [MRTK Eye Tracking via Code](EyeTracking_EyeGazeProvider.md)
-- [MRTK Eye Tracking Calibration](EyeTracking_IsUserCalibrated.md)
+- [MRTK Eye Tracking setup](eye-tracking-basic-setup.md)
+- [MRTK Eye Tracking via Code](eye-tracking-eye-gaze-provider.md)
+- [MRTK Eye Tracking Calibration](eye-tracking-is-user-calibrated.md)
 - [HoloLens 2 Eye Tracking Documentation](https://docs.microsoft.com/windows/mixed-reality/eye-tracking)

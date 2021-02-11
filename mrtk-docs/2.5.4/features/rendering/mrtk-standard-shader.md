@@ -86,11 +86,11 @@ For static lighting, the shader will respect lightmaps built by Unity's [Lightma
 
 ### Hover light
 
-* See [Hover Light](HoverLight.md)
+* See [Hover Light](hover-light.md)
 
 ### Proximity light
 
-* See [Proximity Light](ProximityLight.md)
+* See [Proximity Light](proximity-light.md)
 
 ## Lightweight Scriptable Render Pipeline support
 
@@ -141,7 +141,7 @@ Below are extra details on a handful of feature details available with the MRTK/
 
 ![primitive clipping](../images/mrtk-standard-shader/MRTK_PrimitiveClipping.gif)
 
-* See [Clipping Primitive](ClippingPrimitive.md)
+* See [Clipping Primitive](clipping-primitive.md)
 
 ### Mesh outlines
 
@@ -204,7 +204,7 @@ Per pixel clipping textures, local edge based anti aliasing, and normal map scal
 
 ## See also
 
-* [Interactable](../ux-building-blocks/Interactable.md)
-* [Hover Light](HoverLight.md)
-* [Proximity Light](ProximityLight.md)
-* [Clipping Primitive](ClippingPrimitive.md)
+* [Interactable](../ux-building-blocks/interactable.md)
+* [Hover Light](hover-light.md)
+* [Proximity Light](proximity-light.md)
+* [Clipping Primitive](clipping-primitive.md)

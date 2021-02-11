@@ -61,10 +61,10 @@ If the SceneSystemResources folder has been deleted, or was deselected during im
 
 ## How to use the scene system
 
-- [Scene Types](SceneSystemSceneTypes.md)
-- [Content Scene Loading](SceneSystemContentLoading.md)
-- [Monitoring Content Loading](SceneSystemLoadProgress.md)
-- [Lighting Scene Loading](SceneSystemLightingScenes.md)
+- [Scene Types](scene-system-scene-types.md)
+- [Content Scene Loading](scene-system-content-loading.md)
+- [Monitoring Content Loading](scene-system-load-progress.md)
+- [Lighting Scene Loading](scene-system-lighting-scenes.md)
 
 ## Editor settings
 

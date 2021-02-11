@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Content scene loading
 
-All content load operations are asynchronous, and by default all content loading is additive. Manager and lighting scenes are never affected by content loading operations. For information about monitoring load progress and scene activation, see [Monitoring Content Loading](SceneSystemLoadProgress.md).
+All content load operations are asynchronous, and by default all content loading is additive. Manager and lighting scenes are never affected by content loading operations. For information about monitoring load progress and scene activation, see [Monitoring Content Loading](scene-system-load-progress.md).
 
 ## Loading content
 
@@ -136,6 +136,6 @@ Trees | Vegetation | •
 
 ## Editor behavior
 
-You can perform all these operations in editor and in play mode by using the Scene System's [service inspector.](../../configuration/MixedRealityConfigurationGuide.md#editor-utilities) In edit mode scene loads will be instantaneous, while in play mode you can observe loading progress and use [activation tokens.](SceneSystemLoadProgress.md)
+You can perform all these operations in editor and in play mode by using the Scene System's [service inspector.](../../configuration/mixed-reality-configuration-guide.md#editor-utilities) In edit mode scene loads will be instantaneous, while in play mode you can observe loading progress and use [activation tokens.](scene-system-load-progress.md)
 
 ![MRTK_SceneSystemServiceInspector](../images/scene-system/MRTK_SceneSystemServiceInspector.PNG)

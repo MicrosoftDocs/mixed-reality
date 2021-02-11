@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Configuring mesh observers via code
 
-This article will discuss some of the key mechanisms and APIs to programmatically configure the [Spatial Awareness system](SpatialAwarenessGettingStarted.md) and related *Mesh Observer* data providers.
+This article will discuss some of the key mechanisms and APIs to programmatically configure the [Spatial Awareness system](spatial-awareness-getting-started.md) and related *Mesh Observer* data providers.
 
 ## Accessing mesh observers
 
@@ -154,6 +154,6 @@ public class MyMeshObservationExample : MonoBehaviour, SpatialAwarenessHandler
 
 ## See also
 
-- [Spatial Awareness Getting Started](SpatialAwarenessGettingStarted.md)
-- [Configuring the Spatial Awareness Mesh Observer](ConfiguringSpatialAwarenessMeshObserver.md)
+- [Spatial Awareness Getting Started](spatial-awareness-getting-started.md)
+- [Configuring the Spatial Awareness Mesh Observer](configuring-spatial-awareness-mesh-observer.md)
 - [Spatial Awareness API documentation](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness)

@@ -119,7 +119,7 @@ The next step is to add the logic of the settings provider by implementing [`IMi
 
 ## Create the profile and inspector
 
-In the Mixed Reality Toolkit, data providers are configured using [profiles](../profiles/Profiles.md).
+In the Mixed Reality Toolkit, data providers are configured using [profiles](../profiles/profiles.md).
 
 ### Define the profile
 
@@ -214,7 +214,7 @@ If a data provider is submitted and accepted as a part of the Microsoft Mixed Re
 
 ## See also
 
-- [Camera System Overview](CameraSystemOverview.md)
+- [Camera System Overview](camera-system-overview.md)
 - [`BaseCameraSettingsProvider` class](xref:Microsoft.MixedReality.Toolkit.CameraSystem.BaseCameraSettingsProvider)
 - [`IMixedRealityCameraSettingsProvider` interface](xref:Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider)
 - [`IMixedRealityDataProvider` interface](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider)

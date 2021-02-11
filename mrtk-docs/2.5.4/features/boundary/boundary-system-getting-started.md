@@ -45,7 +45,7 @@ The following steps presume use of the MixedRealityToolkit object. Steps require
 
 ## Configure boundary visualization
 
-The [Boundary System uses a configuration profile](ConfiguringBoundaryVisualization.md) to specify which boundary components are to be displayed and to configure their appearance.
+The [Boundary System uses a configuration profile](configuring-boundary-visualization.md) to specify which boundary components are to be displayed and to configure their appearance.
 
 ![Boundary Visualization Options](../images/boundary/BoundaryVisualizationProfile.png)
 
@@ -74,4 +74,4 @@ GameObject floorVisual = CoreServices.BoundarySystem.GetFloorVisualization();
 ## See also
 
 - [Boundary API documentation](xref:Microsoft.MixedReality.Toolkit.Boundary)
-- [Configuring the Boundary Visualization](ConfiguringBoundaryVisualization.md)
+- [Configuring the Boundary Visualization](configuring-boundary-visualization.md)

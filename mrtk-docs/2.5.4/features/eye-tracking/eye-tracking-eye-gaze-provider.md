@@ -10,12 +10,12 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, EyeTrack
 
 # Accessing eye tracking data in your Unity script
 
-This article assumes one has understanding for setting up eye tracking in an MRTK scene (see [Basic MRTK setup to use eye tracking](EyeTracking_BasicSetup.md)).
+This article assumes one has understanding for setting up eye tracking in an MRTK scene (see [Basic MRTK setup to use eye tracking](eye-tracking-basic-setup.md)).
 Accessing eye tracking data in a MonoBehaviour script is easy! Simply use *CoreServices.InputSystem.EyeGazeProvider*.
 
 ## IMixedRealityEyeGazeProvider
 
-Eye tracking configuration in MRTK is configured via the [`IMixedRealityEyeGazeProvider`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityEyeGazeProvider) interface. Using [CoreServices.InputSystem.EyeGazeProvider](EyeTracking_EyeGazeProvider.md) provides the default gaze provider implementation registered in the toolkit at runtime.
+Eye tracking configuration in MRTK is configured via the [`IMixedRealityEyeGazeProvider`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityEyeGazeProvider) interface. Using [CoreServices.InputSystem.EyeGazeProvider](eye-tracking-eye-gaze-provider.md) provides the default gaze provider implementation registered in the toolkit at runtime.
 Useful properties of the `EyeGazeProvider` is outlined below.
 
 - **IsEyeTrackingEnabled**:
@@ -32,7 +32,7 @@ Indicates whether the current eye tracking data is currently been used for gaze.
 - **IsEyeTrackingDataValid**:
 True if eye tracking data is available.
 It may be unavailable due to exceeded timeout (should be robust to the user blinking though) or lack of tracking hardware or permissions.
-Check out our [Missing eye calibration notification sample](EyeTracking_IsUserCalibrated.md) that explains how to detect whether a user is eye calibrated and to show an appropriate notification.
+Check out our [Missing eye calibration notification sample](eye-tracking-is-user-calibrated.md) that explains how to detect whether a user is eye calibrated and to show an appropriate notification.
 
 - **GazeOrigin**:
 Origin of the gaze ray.
@@ -68,7 +68,7 @@ CoreServices.InputSystem.EyeGazeProvider.GazeDirection.normalized * defaultDista
 
 ## See also
 
-- [MRTK Eye Tracking Overview](EyeTracking_Main.md)
-- [MRTK Eye Tracking setup](EyeTracking_BasicSetup.md)
-- [MRTK Eye Tracking Calibration](EyeTracking_IsUserCalibrated.md)
+- [MRTK Eye Tracking Overview](eye-tracking-main.md)
+- [MRTK Eye Tracking setup](eye-tracking-basic-setup.md)
+- [MRTK Eye Tracking Calibration](eye-tracking-is-user-calibrated.md)
 - [HoloLens 2 Eye Tracking Documentation](https://docs.microsoft.com/windows/mixed-reality/eye-tracking)

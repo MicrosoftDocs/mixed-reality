@@ -44,5 +44,5 @@ The smaller, narrow display panel shows the Unity input axed and buttons which a
 
 ## See also
 
-- [Creating an input system data provider](../input/CreateDataProvider.md)
-- [InputFeatureUsage tool](./InputFeatureUsageTool.md)
+- [Creating an input system data provider](../input/create-data-provider.md)
+- [InputFeatureUsage tool](input-feature-usage-tool.md)

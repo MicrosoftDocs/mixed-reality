@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Configuring mesh observers for the editor
 
-A convenient way to provide environment mesh data in the Unity editor is to use the [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) class. The *Spatial Object Mesh Observer* is an editor-only data provider for the [Spatial Awareness system](SpatialAwarenessGettingStarted.md) that enables importing 3D model data to represent a spatial mesh. One common use of the *Spatial Object Mesh Observer* is to import data scanned via a Microsoft HoloLens to test how an
+A convenient way to provide environment mesh data in the Unity editor is to use the [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) class. The *Spatial Object Mesh Observer* is an editor-only data provider for the [Spatial Awareness system](spatial-awareness-getting-started.md) that enables importing 3D model data to represent a spatial mesh. One common use of the *Spatial Object Mesh Observer* is to import data scanned via a Microsoft HoloLens to test how an
 experience adapts to different environments from within Unity.
 
 ## Getting started
@@ -19,7 +19,7 @@ This guide will walk through setting up a *Spatial Object Mesh Observer*. There 
 
 1. Add a *Spatial Object Mesh Observer* to the Spatial Awareness system profile
 1. Set the Environment Mesh Data object
-1. [Configure rest of the Mesh Observer profile properties](ConfiguringSpatialAwarenessMeshObserver.md)
+1. [Configure rest of the Mesh Observer profile properties](configuring-spatial-awareness-mesh-observer.md)
 
 ### Set up a *spatial object mesh observer* profile
 
@@ -34,7 +34,7 @@ This guide will walk through setting up a *Spatial Object Mesh Observer*. There 
     ![Select Spatial Object Mesh Observer](../images/spatial-awareness/SelectObjectObserver.png)
 
 1. Select the desired *Spatial Mesh Object*. By default, the observer is configured with an example model. This model was created using a Microsoft HoloLens but it is possible to [create a new scan mesh object](#acquiring-environment-scans).
-1. [Configure rest of the Mesh Observer profile properties](ConfiguringSpatialAwarenessMeshObserver.md)
+1. [Configure rest of the Mesh Observer profile properties](configuring-spatial-awareness-mesh-observer.md)
 
     ![Select the Mesh Object](../images/spatial-awareness/ObjectObserverProfile.png)
 
@@ -81,9 +81,9 @@ The [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/usi
 
 ## See also
 
-- [Profiles](../profiles/Profiles.md)
-- [Mixed Reality Toolkit Profile configuration guide](../../configuration/MixedRealityConfigurationGuide.md)
-- [Spatial Awareness Getting started](SpatialAwarenessGettingStarted.md)
-- [Configuring Mesh Observers on Device](ConfiguringSpatialAwarenessMeshObserver.md)
-- [Configuring Mesh Observers via code](UsageGuide.md)
+- [Profiles](../profiles/profiles.md)
+- [Mixed Reality Toolkit Profile configuration guide](../../configuration/mixed-reality-configuration-guide.md)
+- [Spatial Awareness Getting started](spatial-awareness-getting-started.md)
+- [Configuring Mesh Observers on Device](configuring-spatial-awareness-mesh-observer.md)
+- [Configuring Mesh Observers via code](usage-guide.md)
 - [Using the Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)

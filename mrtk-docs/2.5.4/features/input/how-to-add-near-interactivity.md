@@ -10,17 +10,17 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Near Int
 
 # How to add near interaction in MRTK
 
-Near interactions come in the form of touches and grabs. Touch and grab events are raised as pointer events by the [PokePointer](Pointers.md#pokepointer) and [SpherePointer](Pointers.md#spherepointer), respectively.
+Near interactions come in the form of touches and grabs. Touch and grab events are raised as pointer events by the [PokePointer](pointers.md#pokepointer) and [SpherePointer](pointers.md#spherepointer), respectively.
 
 Three key steps are required to listen for touch and/or grab input events on a particular GameObject.
 
-1. Ensure the relevant pointer is registered in the main [MRTK Configuration Profile](../../configuration/MixedRealityConfigurationGuide.md).
+1. Ensure the relevant pointer is registered in the main [MRTK Configuration Profile](../../configuration/mixed-reality-configurationGuide.md).
 1. Ensure the desired GameObject has the appropriate [grab](#add-grab-interactions) or [touch](#add-touch-interactions) script component and [`Unity Collider`](https://docs.unity3d.com/ScriptReference/Collider.html).
 1. Implement an input handler interface on an attached script to the desired GameObject to listen for the [grab](#grab-code-example) or [touch](#touch-code-example) events.
 
 ## Add grab interactions
 
-1. Ensure a [SpherePointer](Pointers.md#spherepointer) is registered in the *MRTK Pointer profile*.
+1. Ensure a [SpherePointer](pointers.md#spherepointer) is registered in the *MRTK Pointer profile*.
 
     The default MRTK profile and the default HoloLens 2 profile already contain a *SpherePointer*. One can confirm a SpherePointer will be created by selecting the MRTK Configuration Profile and navigating to **Input** > **Pointers** > **Pointer Options**. The default `GrabPointer` prefab (Assets/MRTK/SDK/Features/UX/Prefabs/Pointers) should be listed with a *Controller Type* of *Articulated Hand*. A custom prefab can be utilized as long as it implements the [`SpherePointer`](xref:Microsoft.MixedReality.Toolkit.Input.SpherePointer) class.
 
@@ -65,7 +65,7 @@ public class PrintPointerEvents : MonoBehaviour, IMixedRealityPointerHandler
 
 The process for adding touch interactions on UnityUI elements is different than for vanilla 3D GameObjects. You can skip to the following section, *Unity UI*, for enabling Unity UI components.
 
-For **both** types of UX elements though, ensure a [PokePointer](Pointers.md#pokepointer) is registered in the *MRTK Pointer profile*.
+For **both** types of UX elements though, ensure a [PokePointer](pointers.md#pokepointer) is registered in the *MRTK Pointer profile*.
 
 The default MRTK profile and the default HoloLens 2 profile already contain a *PokePointer*. One can confirm a PokePointer will be created by selecting the MRTK Configuration Profile and navigate to **Input** > **Pointers** > **Pointer Options**. The default `PokePointer` (Assets/MRTK/SDK/Features/UX/Prefabs/Pointers) prefab should be listed with a *Controller Type* of *Articulated Hand*. A custom prefab can be utilized as long as it implements the [`PokePointer`](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer) class.
 
@@ -217,6 +217,6 @@ public static void MakeNearDraggable(GameObject target)
 
 ## See also
 
-* [Input Overview](Overview.md)
-* [Pointers](Pointers.md)
-* [Input Events](InputEvents.md)
+* [Input Overview](overview.md)
+* [Pointers](pointers.md)
+* [Input Events](input-events.md)

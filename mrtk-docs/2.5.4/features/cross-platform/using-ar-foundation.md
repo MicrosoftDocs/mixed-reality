@@ -67,7 +67,7 @@ The following steps presume use of the MixedRealityToolkit object. Steps require
 
     ![Select Unity AR settings provider](../images/camera-system/SelectUnityArSettings.png)
 
-    For more information about configuring the Unity AR camera settings provider: [Unity AR camera settings provider](../camera-system/UnityArCameraSettings.md).
+    For more information about configuring the Unity AR camera settings provider: [Unity AR camera settings provider](../camera-system/unity-ar-camera-settings.md).
 
 > [!NOTE]
 > This installation checks (when the application starts) if the AR Foundation components are in the scene. If not, they are automatically added to make it work with ARCore and ARKit.
@@ -99,4 +99,4 @@ The following steps presume use of the MixedRealityToolkit object. Steps require
 
 ## See also
 
-- [Unity AR Camera Settings](../camera-system/UnityArCameraSettings.md)
+- [Unity AR Camera Settings](../camera-system/unity-ar-camera-settings.md)

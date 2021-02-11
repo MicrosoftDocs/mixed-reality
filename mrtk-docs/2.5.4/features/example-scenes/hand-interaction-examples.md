@@ -25,25 +25,25 @@ If you see large text after the TextMesh Pro import, open another Unity scene an
 
 ## Pressable button
 
-See [button](../ux-building-blocks/Button.md) page for the details.
+See [button](../ux-building-blocks/button.md) page for the details.
 ![Hand Interaction Examples 2](../images/hand-interaction-examples/MRTK_Examples_PressTouch.png)
 
 ## Bounds Control
 
-See [bounds control](../ux-building-blocks/BoundsControl.md) page for the details.
+See [bounds control](../ux-building-blocks/bounds-control.md) page for the details.
 ![Hand Interaction Examples 3](../images/hand-interaction-examples/MRTK_Examples_BoundingBox.png)
 
 ## Manipulation handler
 
-See [manipulation handler](../ux-building-blocks/ManipulationHandler.md) page for the details.
+See [manipulation handler](../ux-building-blocks/manipulation-handler.md) page for the details.
 ![Hand Interaction Examples](../images/hand-interaction-examples/MRTK_Examples_Manipulation.png)
 
 ## Slate
 
-See [slate](../ux-building-blocks/Slate.md) page for the details.
+See [slate](../ux-building-blocks/slate.md) page for the details.
 ![Hand Interaction Examples Slate](../images/hand-interaction-examples/MRTK_Examples_Slate.png)
 
 ## System keyboard
 
-See [system keyboard](../ux-building-blocks/SystemKeyboard.md) page for the details.
+See [system keyboard](../ux-building-blocks/system-keyboard.md) page for the details.
 ![Hand Interaction Examples Keyboard](../images/hand-interaction-examples/MRTK_Examples_Keyboard.png)

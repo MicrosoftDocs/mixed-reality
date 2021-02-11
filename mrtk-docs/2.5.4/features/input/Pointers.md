@@ -12,7 +12,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Pointers
 
 ![Pointer](../images/pointers/MRTK_Pointer_Main.png)
 
-This article explains how to configure and respond to Pointer input in practice, compared to [Pointer Architecture](../../architecture/ControllersPointersAndFocus.md)
+This article explains how to configure and respond to Pointer input in practice, compared to [Pointer Architecture](../../architecture/controllers-pointers-and-focus.md)
 
 Pointers are instanced automatically at runtime when a new controller is detected. More than one pointer can be attached to a controller. For example, with the default pointer profile, Windows Mixed Reality controllers get both a line and a parabolic pointer for normal selection and teleportation respectively.
 
@@ -23,7 +23,7 @@ Pointers are configured as part of the Input System in MRTK via a [`MixedReality
 - *Pointing Extent* - Defines the max distance for which a Pointer can interact with a GameObject.
 
 - *Pointing Raycast Layer Masks* - This is a prioritized array of LayerMasks to determine which possible GameObjects any given Pointer can interact with and the order of interaction to attempt. This may be useful to ensure Pointers interact with UI elements first before other scene objects.
-![Pointer Profile Example](../images/input/pointers/PointerProfile.PNG)
+![Pointer Profile Example](../images/input/pointers/pointer-profile.PNG)
 
 ### Pointer options configuration
 
@@ -169,13 +169,13 @@ Touch Started / Updated / Completed | Raised by touch-aware pointers like [`Poke
 
 #### Pointer input events in action
 
-Pointer input events are recognized and handled by the MRTK input system in a similar way as [regular input events](InputEvents.md#input-events-in-action). The difference being that pointer input events are handled only by the GameObject in focus by the pointer that fired the input event, as well as any global input handlers. Regular input events are handled by GameObjects in focus for all active pointers.
+Pointer input events are recognized and handled by the MRTK input system in a similar way as [regular input events](input-events.md#input-events-in-action). The difference being that pointer input events are handled only by the GameObject in focus by the pointer that fired the input event, as well as any global input handlers. Regular input events are handled by GameObjects in focus for all active pointers.
 
 1. The MRTK input system recognizes an input event has occurred
 1. The MRTK input system fires the relevant interface function for the input event to all registered global input handlers
 1. The input system determines which GameObject is in focus for the pointer that fired the event
     1. The input system utilizes the [Unity's Event System](https://docs.unity3d.com/Manual/EventSystem.html) to fire the relevant interface function for all matching components on the focused GameObject
-    1. If at any point an input event has been [marked as used](inputevents.md#how-to-stop-input-events), the process will end and no further GameObjects will receive callbacks.
+    1. If at any point an input event has been [marked as used](input-events.md#how-to-stop-input-events), the process will end and no further GameObjects will receive callbacks.
         - Example: Components implementing the interface [`IMixedRealityFocusHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) will be searched for a GameObject gains or loses focus
         - Note: The Unity Event System will bubble up to search the parent GameObject if no components matching the desired interface are found on the current GameObject..
 1. If no global input handlers are registered and no GameObject is found with a matching component/interface, then the input system will call each fallback registered input handlers
@@ -338,5 +338,5 @@ render when the pointer is not interacting with anything.
 
 ## See also
 
-- [Pointer Architecture](../../architecture/ControllersPointersAndFocus.md)
-- [Input Events](InputEvents.md)
+- [Pointer Architecture](../../architecture/controllers-pointers-and-focus.md)
+- [Input Events](input-events.md)

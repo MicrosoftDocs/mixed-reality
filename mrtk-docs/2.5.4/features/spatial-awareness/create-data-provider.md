@@ -12,7 +12,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 The Spatial Awareness system is an extensible system for providing applications with data about real world environments. To add support for a new hardware platform or a new form of Spatial Awareness data, a custom data provider may be required.
 
-This article describes how to create [custom data providers](../../architecture/SystemsExtensionsProviders.md), also called Spatial Observers, for the Spatial Awareness system. The example code shown here is from the [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) class implementation which is [useful for loading 3D mesh data in-editor](SpatialObjectMeshObserver.md).
+This article describes how to create [custom data providers](../../architecture/systems-extensions-providers.md), also called Spatial Observers, for the Spatial Awareness system. The example code shown here is from the [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) class implementation which is [useful for loading 3D mesh data in-editor](spatial-object-mesh-observer.md).
 
 > [!NOTE]
 > The complete source code used in this example can be found in the `Assets/MRTK/Providers/ObjectMeshObserver` folder.
@@ -216,7 +216,7 @@ It is recommended to implement the pattern utilized by the MRTK when instrumenti
 
 ## Create the profile and inspector
 
-In the Mixed Reality Toolkit, data providers are configured using [profiles](../profiles/Profiles.md).
+In the Mixed Reality Toolkit, data providers are configured using [profiles](../profiles/profiles.md).
 
 ### Define the profile
 
@@ -287,7 +287,7 @@ If a data provider is submitted and accepted as a part of the Microsoft Mixed Re
 
 ## See also
 
-- [Spatial awareness system](SpatialAwarenessGettingStarted.md)
+- [Spatial awareness system](spatial-awareness-getting-started.md)
 - [`IMixedRealitySpatialAwarenessObject` interface](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObject)
 - [`BaseSpatialAwarenessObject` class](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialAwarenessObject)
 - [`SpatialAwarenessMeshObject` class](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.SpatialAwarenessMeshObject)

@@ -10,11 +10,11 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Configuring mesh observers for device
 
-This guide will walk through configuring the out-of-box Spatial Mesh Observer in MRTK which supports the Windows Mixed Reality platform (i.e HoloLens). The default implementation provided by the Mixed Reality Toolkit is the [WindowsMixedRealitySpatialMeshObserver](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver) class. Many of the properties in this article though apply for other [custom Observer implementations](CreateDataProvider.md).
+This guide will walk through configuring the out-of-box Spatial Mesh Observer in MRTK which supports the Windows Mixed Reality platform (i.e HoloLens). The default implementation provided by the Mixed Reality Toolkit is the [WindowsMixedRealitySpatialMeshObserver](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver) class. Many of the properties in this article though apply for other [custom Observer implementations](create-data-provider.md).
 
 ## Profile settings
 
-The following two items must be defined first when configuring a Spatial Mesh Observer profile for the [Spatial Awareness system](SpatialAwarenessGettingStarted.md).
+The following two items must be defined first when configuring a Spatial Mesh Observer profile for the [Spatial Awareness system](spatial-awareness-getting-started.md).
 
 1. The concrete observer type implementation
 1. list of supported platform(s) to run this observer
@@ -35,7 +35,7 @@ The startup behavior specifies whether the observer will begin running when firs
 * *Auto Start* - The default value whereby the observer will begin operation after initialization
 * *Manual Start* - The Observer will wait to be directed to start
 
-If using *Manual Start*, one must [resume and suspend them at runtime via code](UsageGuide.md#starting-and-stopping-mesh-observation).
+If using *Manual Start*, one must [resume and suspend them at runtime via code](usage-guide.md#starting-and-stopping-mesh-observation).
 
 **Update Interval**
 
@@ -111,7 +111,7 @@ Specifies how spatial meshes are to be displayed by the observer. Supported valu
 
 ![Select the Spatial Awareness System Implementation](../images/spatial-awareness/MRTK_SpatialAwareness_DisplayOptions.jpg)
 
-Spatial Observers can be [resumed/suspended at runtime via code.](UsageGuide.md#starting-and-stopping-mesh-observation)
+Spatial Observers can be [resumed/suspended at runtime via code.](usage-guide.md#starting-and-stopping-mesh-observation)
 
 > [!WARNING]
 > Setting *Display Option* to *None* does **NOT** stop the observer from running. If you wish to stop all observers, applications will need to suspend all observers via [`CoreServices.SpatialAwareness.SuspendObservers()`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessSystem.SuspendObservers)
@@ -126,8 +126,8 @@ Indicates the material to be used to cause the spatial mesh to occlude holograms
 
 ## See also
 
-* [Spatial Awareness System](SpatialAwarenessGettingStarted.md)
-* [Configuring Spatial Awareness system via Code](UsageGuide.md)
+* [Spatial Awareness System](spatial-awareness-getting-started.md)
+* [Configuring Spatial Awareness system via Code](usage-guide.md)
 * [IMixedRealitySpatialAwarenessObserver API documentation](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver)
 * [IMixedRealitySpatialAwarenessMeshObserver API documentation](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver)
 * [BaseSpatialObserver API documentation](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialObserver)

@@ -1,5 +1,5 @@
 ---
-title: README_PulseShader
+title: PulseShader
 description: description on Pulse shaders in MRTK.
 author: CDiaz-MS
 ms.author: cadia

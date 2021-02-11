@@ -14,7 +14,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, EyeTrack
 
 Imagine you are reading information on a slate and when you reach the end of the displayed text, the text automatically scrolls up to reveal more content. Or you can fluently zoom in where you are looking at. The map also automatically adjusts the content to keep the things of interest within your field of view. Another interesting application is the hands-free observation of 3D holograms by automatically bringing the parts of the hologram that you are looking at to the front. These are some of the examples that are described on this page in context of eye-supported navigation.
 
-The following descriptions assume that you are already familiar with how to [set up eye tracking in your MRTK scene](EyeTracking_BasicSetup.md) and with the basics of [accessing eye tracking data](EyeTracking_TargetSelection.md) in MRTK Unity.
+The following descriptions assume that you are already familiar with how to [set up eye tracking in your MRTK scene](eye-tracking-basic-setup.md) and with the basics of [accessing eye tracking data](eye-tracking-target-selection.md) in MRTK Unity.
 The examples discussed in the following are all part of the `EyeTrackingDemo-03-Navigation` (Assets/MRTK/Examples/Demos/EyeTracking/Scenes/EyeTrackingDemo-03-Navigation)
 scene.
 
@@ -114,8 +114,8 @@ In summary, the above scripts should enable you to  get started to use eye gaze 
 
 ### See also
 
-- [Basic MRTK setup to use eye tracking](EyeTracking_BasicSetup.md)
-- [Eye-supported target selection](EyeTracking_TargetSelection.md)
+- [Basic MRTK setup to use eye tracking](eye-tracking-basic-setup.md)
+- [Eye-supported target selection](eye-tracking-target-selection.md)
 
 ---
-[Back to "Eye tracking in the MixedRealityToolkit"](EyeTracking_Main.md)
+[Back to "Eye tracking in the MixedRealityToolkit"](eye-tracking-main.md)

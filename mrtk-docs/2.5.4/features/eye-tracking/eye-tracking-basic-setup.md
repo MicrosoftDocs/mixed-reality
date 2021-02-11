@@ -12,7 +12,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Eye Trac
 
 This page covers how to set up your Unity MRTK scene to use eye tracking in your app.
 The following assumes you are starting out with a fresh new scene.
-Alternatively, you can check out our already configured [MRTK eye tracking examples](EyeTracking_ExamplesOverview.md) with tons of great examples that you can directly build on.
+Alternatively, you can check out our already configured [MRTK eye tracking examples](eye-tracking-examples-overview.md) with tons of great examples that you can directly build on.
 
 ## Eye tracking requirements checklist
 
@@ -23,7 +23,7 @@ We will go into detail on how to address each of them further below.
 1. An _'Eye Gaze Data Provider'_ must be added to the input system. This provides eye tracking data from the platform.
 2. The _'GazeInput'_ capability must be enabled in the application manifest.
    **This capability can be set in Unity 2019, but in Unity 2018 and earlier this capability is only available in Visual Studio and through the MRTK build tool**
-3. The HoloLens **must** be eye calibrated for the current user. Check out our [sample for detecting whether a user is eye calibrated or not](EyeTracking_IsUserCalibrated.md).
+3. The HoloLens **must** be eye calibrated for the current user. Check out our [sample for detecting whether a user is eye calibrated or not](eye-tracking-is-user-calibrated.md).
 
 ### A note on the GazeInput capability
 
@@ -39,7 +39,7 @@ This tooling will find the AppX manifest after the Unity build is completed and 
 Prior to Unity 2019, when using Unity's build window, the capability will need to be manually added after the Unity build, as follows:
 
 1. Open your compiled Visual Studio project and then open the _'Package.appxmanifest'_ in your solution.
-2. Make sure to tick the _'GazeInput'_ checkbox under _Capabilities_. If you don't see a _'GazeInput'_ capability, check that your system meets the [prerequisites for using MRTK](../../Installation.md#prerequisites) (in particular the Windows SDK version).
+2. Make sure to tick the _'GazeInput'_ checkbox under _Capabilities_. If you don't see a _'GazeInput'_ capability, check that your system meets the [prerequisites for using MRTK](../../installation.md#prerequisites) (in particular the Windows SDK version).
 
 _Please note:_
 You only have to do this if you build into a new build folder.
@@ -107,7 +107,7 @@ While head gaze is still available via the _GazeProvider_ in MRTK which is attac
 ### Accessing eye gaze data
 
 Now that your scene is set up to use eye tracking, let's take a look at how to access it in your scripts:
-[Accessing eye tracking data via EyeGazeProvider](EyeTracking_EyeGazeProvider.md) and [eye-supported target selections](EyeTracking_TargetSelection.md).
+[Accessing eye tracking data via EyeGazeProvider](eye-tracking-eye-gaze-provider.md) and [eye-supported target selections](eye-tracking-target-selection.md).
 
 ### Testing your Unity app on a HoloLens 2
 
@@ -132,7 +132,7 @@ If you _"denied eye tracking permission"_, you can reset this in Settings -> Pri
 ---
 
 This should get you started with using eye tracking in your MRTK Unity app.
-Don't forget to check out [our MRTK eye tracking tutorials and samples](EyeTracking_ExamplesOverview.md) demonstrating how to use eye tracking input and conveniently providing scripts that you can reuse in your projects.
+Don't forget to check out [our MRTK eye tracking tutorials and samples](eye-tracking-examples-overview.md) demonstrating how to use eye tracking input and conveniently providing scripts that you can reuse in your projects.
 
 ---
-[Back to "Eye tracking in the MixedRealityToolkit"](EyeTracking_Main.md)
+[Back to "Eye tracking in the MixedRealityToolkit"](eye-tracking-main.md)

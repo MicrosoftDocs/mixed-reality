@@ -86,11 +86,11 @@ This provider can be used in editor and on device while on the Standalone platfo
 1. Building your project
     - Navigate to **File > Build Settings**
     - Only Standalone builds are supported if using the Leap Motion Data Provider.
-    - For instructions on how to use a Windows Mixed Reality headset for Standalone builds, see [Build and Deploy](../../updates-deployment/BuildAndDeploy.md#building-and-deploying-mrtk-to-a-windows-mixed-reality-headset).
+    - For instructions on how to use a Windows Mixed Reality headset for Standalone builds, see [Build and Deploy](../../updates-deployment/build-and-deploy.md#building-and-deploying-mrtk-to-a-windows-mixed-reality-headset).
 
 ## Getting the hand joints
 
-Getting joints using the Leap Motion Data Provider is identical to hand joint retrieval for an MRTK Articulated Hand.  For more information, see [Hand Tracking](../input/HandTracking.md#polling-joint-pose-from-handjointutils).
+Getting joints using the Leap Motion Data Provider is identical to hand joint retrieval for an MRTK Articulated Hand.  For more information, see [Hand Tracking](../input/hand-tracking.md#polling-joint-pose-from-handjointutils).
 
 With MRTK in a unity scene and the Leap Motion Data Provider added as an Input Data Provider in the Input System profile, create an empty game object and attach the following example script.
 
@@ -195,5 +195,5 @@ The example scene is contained in the **Microsoft.MixedReality.Toolkit.Examples*
 
 ## See also
 
--[Input Providers](../input/InputProviders.md)
--[Hand Tracking](../input/HandTracking.md)
+-[Input Providers](../input/input-providers.md)
+-[Hand Tracking](../input/hand-tracking.md)
