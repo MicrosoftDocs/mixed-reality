@@ -285,4 +285,4 @@ If a data provider is submitted and accepted as a part of the Microsoft Mixed Re
 - [`IMixedRealityInputHandler<T>` interface](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1)
 - [`IMixedRealityDataProvider` interface](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider)
 - [`IMixedRealityCapabilityCheck` interface](xref:Microsoft.MixedReality.Toolkit.IMixedRealityCapabilityCheck)
-- [Controller Mapping Tool](../tools/controller-mappingTool.md)
+- [Controller Mapping Tool](../tools/controller-mapping-tool.md)
