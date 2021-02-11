@@ -1,0 +1,15 @@
+- name: README
+  href: readme.md
+- name: Dialog
+  href: dialog/toc.yml
+- name: Dock
+  href: dock/toc.yml
+- name: Hand Coach
+  href: hand-coach/toc.yml
+- name: Hand Physics Service
+  href: hand-physics-service/toc.yml
+- name: Mixed Reality Keyboard
+  href: mixed-reality-keyboard/toc.yml
+- name: Pulse Shader
+  href: pulse-shader/toc.yml
+

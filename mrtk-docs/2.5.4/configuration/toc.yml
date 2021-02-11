@@ -1,8 +1,8 @@
-- name: GettingStartedWithMRTKAndXRSDK
-  href: GettingStartedWithMRTKAndXRSDK.md
-- name: MixedRealityConfigurationGuide
-  href: MixedRealityConfigurationGuide.md
-- name: MRTK_Configuration_Dialog
-  href: MRTK_Configuration_Dialog.md
+- name: Getting Started With MRTK and XRSDK
+  href: getting-started-with-mrtk-and-xrsdk.md
+- name: Mixed Reality Configuration Guide
+  href: mixed-reality-configuration-guide.md
+- name: MRTK Configuration Dialog
+  href: mrtk-configuration-dialog.md
 - name: usingupm
   href: usingupm.md

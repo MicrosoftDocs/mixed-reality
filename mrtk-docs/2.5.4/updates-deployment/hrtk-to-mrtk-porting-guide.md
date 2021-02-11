@@ -144,6 +144,6 @@ Some Utilities have been reconciled as duplicates with the Solver system. Please
 |----------|-----------|
 | Billboard | [`Billboard`](xref:Microsoft.MixedReality.Toolkit.UI.Billboard) |
 | Tagalong | [`RadialView`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.RadialView) or [`Orbital`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.Orbital) [Solver](../features/ux-building-blocks/solvers/Solver.md) |
-| FixedAngularSize | [`ConstantViewSize`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.ConstantViewSize) [Solver](../features/ux-building-blocks/solvers/Solver.md) |
-| FpsDisplay | [Diagnostics System](../features/diagnostics/DiagnosticsSystemGettingStarted.md) (in Configuration Profile) |
-| NearFade | Built-in to [Mixed Reality Toolkit Standard shader](../features/rendering/MRTKStandardShader.md) |
+| FixedAngularSize | [`ConstantViewSize`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.ConstantViewSize) [Solver](../features/ux-building-blocks/solvers/solver.md) |
+| FpsDisplay | [Diagnostics System](../features/diagnostics/diagnostics-system-getting-started.md) (in Configuration Profile) |
+| NearFade | Built-in to [Mixed Reality Toolkit Standard shader](../features/rendering/mrtk-standard-shader.md) |

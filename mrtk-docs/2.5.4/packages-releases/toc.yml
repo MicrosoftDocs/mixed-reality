@@ -1,6 +1,6 @@
-- name: MRTK_Modularization
-  href: MRTK_Modularization.md
-- name: MRTK_Packages
-  href: MRTK_Packages.md
-- name: ReleaseNotes
-  href: ReleaseNotes.md
+- name: MRTK Modularization
+  href: mrtk-modularization.md
+- name: MRTK Packages
+  href: mrtk-packages.md
+- name: Release Notes
+  href: release-notes.md

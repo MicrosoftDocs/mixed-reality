@@ -1,6 +1,6 @@
-- name: hologram-stabilization
+- name: Hologram Stabilization
   href: hologram-stabilization.md
-- name: LargeProjects
-  href: LargeProjects.md
-- name: PerfGettingStarted
-  href: PerfGettingStarted.md
+- name: Large Projects
+  href: large-projects.md
+- name: Perf Getting Started
+  href: perf-getting-started.md

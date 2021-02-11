@@ -1,8 +1,8 @@
-- name: BuildAndDeploy
-  href: BuildAndDeploy.md
-- name: HTKToMRTKPortingGuide
-  href: HTKToMRTKPortingGuide.md
-- name: MRTK_and_managed_code_stripping
-  href: MRTK_and_managed_code_stripping.md
+- name: Build and Deploy
+  href: build-and-deploy.md
+- name: HRTK To MRTK Porting Guide
+  href: hrtk-to-mrtk-porting-guide.md
+- name: MRTK and Managed Code Stripping
+  href: mrtk-and-managed-code-stripping.md
 - name: Updating
-  href: Updating.md
+  href: updating.md
