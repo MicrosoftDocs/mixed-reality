@@ -15,7 +15,7 @@ Starting with Unity version 2020.2, Microsoft’s Mixed Reality OpenXR Plugin pa
 ## Prerequisites
 
 * Unity 2020.2 or later
-* Unity OpenXR plugin 0.1.2 or later
+* Unity OpenXR plugin 0.1.3 or later
 * Visual Studio 2019 or later
 * Install **UWP** platform support in Unity for HoloLens 2 apps
 
@@ -82,20 +82,6 @@ To utilize one or more of the examples, install [ARFoundation 4.0+](https://docs
 MRTK Unity supports the Mixed Reality OpenXR plugin starting with the 2.5.3 release.  
 
 1. Open the [Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md) again and select the **Mixed Reality OpenXR Plugin** package in the Platform Support category
-
-<!-- MRTK plugins can be installed from the same scoped registries as you set up when [installing the Mixed Reality OpenXR plugin](#installing-the-mixed-reality-openxr-plugin). You can find more detailed information in the [MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/usingupm.html#registering-the-mixed-reality-component-server).
-
-1. Add following packages in your **[projectRoot]/Packages/manifest.json** file:
-
-```json
-"dependencies": {
-    "com.microsoft.mixedreality.toolkit.foundation": "2.5.3",
-    "com.microsoft.mixedreality.toolkit.tools": "2.5.3",
-    "com.microsoft.mixedreality.toolkit.examples": "2.5.3",
-	…
-}
-``` -->
-
 2. Go to the MixedReality Toolkit component script in the Inspector and switch to the **DefaultOpenXRConfigurationProfile** profile:
 
 ![Screenshot of switching the MRTK configuration in the Mixed Reality Toolkit component in the inspector](images/openxr-img-11.png)
