@@ -1,5 +1,5 @@
 ---
-title: OpenXR plugin Supported Features in Unity
+title: OpenXR plugin supported features in Unity
 description: Discover the features OpenXR supports for mixed reality development in Unity.
 author: hferrone
 ms.author: alexturn
