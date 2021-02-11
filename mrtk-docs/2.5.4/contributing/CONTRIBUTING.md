@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Bug repo
 
 # Contributing
 
-The Mixed Reality Toolkit (MRTK) welcomes contributions from the community. All changes be they small or large, need to adhere to the [MRTK coding standards](CodingGuidelines.md), so please ensure you are familiar with these while developing to avoid delays when the change is being reviewed.
+The Mixed Reality Toolkit (MRTK) welcomes contributions from the community. All changes be they small or large, need to adhere to the [MRTK coding standards](coding-guidelines.md), so please ensure you are familiar with these while developing to avoid delays when the change is being reviewed.
 
 If you have any questions, please reach out on the [mixed-reality-toolkit channel on Slack](https://holodevelopers.slack.com/messages/C2H4HT858).
  You can join the Slack community via the [automatic invitation sender](https://holodevelopersslack.azurewebsites.net/).
@@ -47,10 +47,10 @@ If you are new to to the Git workflow, [check out this introduction from Github]
 
 When adding a bug fix or feature, follow these steps:
 
-1. Implement the bug fix or feature. Instructions for building and deploying MRTK are at [BuildAndDeploy](../updates-deployment/BuildAndDeploy.md). Remember to follow the [Coding Guidelines](../contributing/CodingGuidelines.md).
+1. Implement the bug fix or feature. Instructions for building and deploying MRTK are at [BuildAndDeploy](../updates-deployment/build-and-deploy.md). Remember to follow the [Coding Guidelines](../contributing/coding-guidelines.md).
 1. If adding a feature, also add an example scene that demonstrates the feature.
-1. If adding an experimental feature, then writing tests and documentation are not necessary. Instead, follow [experimental feature guidelines](../contributing/ExperimentalFeatures.md).
-1. Add tests to verify the bug fix / feature. Instructions for writing and running tests are at [UnitTests](../contributing/UnitTests.md).
-1. Ensure the code and feature(s) are documented as described in the [Documentation Guidelines](../contributing/DocumentationGuide.md).
-1. Ensure the code works as intended on all platforms. Please see [Release notes](../packages-releases/ReleaseNotes.md) for the list of supported platforms. For Windows UWP projects, code must be [WACK compliant](https://developer.microsoft.com/windows/develop/app-certification-kit). To do this, generate a Visual Studio solution, right click on project; **Store** > **Create App Packages**. Follow the prompts and run WACK tests. Make sure they all succeed.
-1. Follow the instructions at [Pull Requests](../contributing/PullRequests.md) when making a pull request.
+1. If adding an experimental feature, then writing tests and documentation are not necessary. Instead, follow [experimental feature guidelines](../contributing/experimental-features.md).
+1. Add tests to verify the bug fix / feature. Instructions for writing and running tests are at [UnitTests](../contributing/unit-tests.md).
+1. Ensure the code and feature(s) are documented as described in the [Documentation Guidelines](../contributing/documentation-guide.md).
+1. Ensure the code works as intended on all platforms. Please see [Release notes](../packages-releases/release-notes.md) for the list of supported platforms. For Windows UWP projects, code must be [WACK compliant](https://developer.microsoft.com/windows/develop/app-certification-kit). To do this, generate a Visual Studio solution, right click on project; **Store** > **Create App Packages**. Follow the prompts and run WACK tests. Make sure they all succeed.
+1. Follow the instructions at [Pull Requests](../contributing/pull-requests.md) when making a pull request.

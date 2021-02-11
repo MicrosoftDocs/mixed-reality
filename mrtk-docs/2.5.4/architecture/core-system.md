@@ -18,12 +18,12 @@ At the heart of the input system is the [InputSystem](../features/input/overview
 
 This service is responsible for:
 
-- Reading the [input system profile](../configuration/MixedRealityConfigurationGuide.md#input-system-settings)
-- Starting the configured [data providers](../features/input/InputProviders.md) (for example, `Windows Mixed Reality Device Manager` and `OpenVR Device Manager`).
+- Reading the [input system profile](../configuration/mixedReality-configuration-guide.md#input-system-settings)
+- Starting the configured [data providers](../features/input/input-providers.md) (for example, `Windows Mixed Reality Device Manager` and `OpenVR Device Manager`).
 - Instantiation of the [GazeProvider](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGazeProvider), which is a component that is responsible for providing HoloLens (1st generation) style head gaze information
   in addition to HoloLens 2 style eye gaze information.
 - Instantiation of the [FocusProvider](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusProvider), which is a component that is responsible for determining objects that have focus. This
-  is described in more depth in the [pointers and focus](ControllersPointersAndFocus.md#pointers-and-focus) section of the
+  is described in more depth in the [pointers and focus](controllers-pointers-and-focus.md#pointers-and-focus) section of the
   documentation.
 - Providing registration points for all input events (as [global listeners](#global-listeners)).
 - Providing event dispatch capabilities for those input events.
@@ -71,13 +71,13 @@ the event dispatch process stops.
 These entities are responsible for interfacing with lower-level APIs (such as Windows Mixed Reality APIs,
 or OpenVR APIs) and translating data from those systems into ones that fit the MRTK's higher
 level input abstractions. They are responsible for detecting, creating, and managing the lifetime of
-[controllers](ControllersPointersAndFocus.md#controllers).
+[controllers](controllers-pointers-and-focus.md#controllers).
 
 The basic flow of a device manager involves:
 
 1. The device manager is instantiated by the input system service.
 2. The device manager registers with its underlying system (for example, the Windows Mixed Reality
-   device manager will register for [input](../features/input/InputEvents.md) and [gesture](../features/input/Gestures.md#gesture-events) events.
+   device manager will register for [input](../features/input/input-events.md) and [gesture](../features/input/gestures.md#gesture-events) events.
 3. It creates controllers that it discovers from the underlying system (for example
    the provider could detect the presence of articulated hands)
 4. In its Update() loop, call UpdateController() to poll for the new state of the underlying system

@@ -60,7 +60,7 @@ When selecting an application architecture, it is important to consider design f
 
 The MRTK enables (and automatically configures) application scenes to use the default [`MixedRealityToolkit`](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit) service locator component. This component includes support for configuring MRTK systems and data providers via configuration inspectors and manages component lifespans and core behaviors (ex: when to update).
 
-All systems are represented in the core configuration inspector, regardless of whether or not they are present or enabled in the project. Please see the [Mixed Reality Configuration Guide](../configuration/MixedRealityConfigurationGuide.md) for more
+All systems are represented in the core configuration inspector, regardless of whether or not they are present or enabled in the project. Please see the [Mixed Reality Configuration Guide](../configuration/mixed-reality-configuration-guide.md) for more
 information.
 
 #### Individual service components

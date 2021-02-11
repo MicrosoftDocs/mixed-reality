@@ -37,7 +37,7 @@ This section describes frequently needed features. To see how they work, look at
 - Text in **bold** with \*\*double asterisk\*\*
 - _italic_ *text* with \_underscore\_ or \*single asterisk\*
 - Text `highlighted as code` within a sentence \`using backquotes\`
-- Links to docs pages [MRTK documentation guidelines](DocumentationGuide.md)
+- Links to docs pages [MRTK documentation guidelines](documentation-guide.md)
 - Links to [anchors within a page](#style); anchors are formed by replacing spaces with dashes, and converting to lowercase
 
 For code samples we use the blocks with three backticks \`\`\` and specify *csharp* as the language for syntax highlighting:
@@ -123,7 +123,7 @@ General rule of thumb: Try to **sound professional**. That usually means to avoi
 
 - Use **Sentence case for headlines**. Ie. capitalize the first letter and names, but nothing else.
 - Use regular English for everything else. That means **do not capitalize arbitrary words**, even if they hold a special meaning in that context. Prefer *italic text* for highlighting certain words, [see below](#emphasis-and-highlighting).
-- When a link is embedded in a sentence (which is the preferred method), the standard chapter name always uses capital letters, thus breaking the rule of no arbitrary capitalization inside text. Therefore use a custom link name to fix the capitalization. As an example, here is a link to the [bounds control](../features/ux-building-blocks/BoundsControl.md) documentation.
+- When a link is embedded in a sentence (which is the preferred method), the standard chapter name always uses capital letters, thus breaking the rule of no arbitrary capitalization inside text. Therefore use a custom link name to fix the capitalization. As an example, here is a link to the [bounds control](../features/ux-building-blocks/bounds-control.md) documentation.
 - Do capitalize names, such as *Unity*.
 - Do NOT capitalize "editor" when writing *Unity editor*.
 
@@ -148,8 +148,8 @@ Insert as many useful links to other pages as possible, but each link only once.
 
 Prefer links embedded in a sentence:
 
-- BAD: Guidelines are useful. See [this chapter](../contributing/DocumentationGuide.md) for details.
-- GOOD: [Guidelines](DocumentationGuide.md) are useful.
+- BAD: Guidelines are useful. See [this chapter](../contributing/documentation-guide.md) for details.
+- GOOD: [Guidelines](documentation-guide.md) are useful.
 
 Avoid external links, they can become outdated or contain copyrighted content.
 
@@ -318,9 +318,9 @@ Performance notes are recommended for CPU and/or GPU heavy components and **may*
 
 ## Breaking changes
 
-Breaking changes documentation is to consist of a top level [file](../contributing/BreakingChanges.md) which links to each feature area's individual BreakingChanges.md.
+Breaking changes documentation is to consist of a top level [file](../contributing/breaking-changes.md) which links to each feature area's individual breaking-changes.md.
 
-The feature area BreakingChanges.md files are to contain the list of all known breaking changes for a given release **as well as** the history of breaking changes from past releases.
+The feature area breaking-changes.md files are to contain the list of all known breaking changes for a given release **as well as** the history of breaking changes from past releases.
 
 For example:
 
@@ -338,7 +338,7 @@ No known breaking changes
 ...
 ```
 
-The information contained within the feature level BreakingChanges.md files will be aggregated to the release notes for each new MRTK release.
+The information contained within the feature level breaking-changes.md files will be aggregated to the release notes for each new MRTK release.
 
 Any breaking changes that are part of a change **must** be documented as part of a Pull Request.
 
@@ -356,4 +356,4 @@ Both of these come packaged in the Microsoft published Docs Authoring Pack.
 
 ## See also
 
-- [Documentation portal generation guide](../contributing/DevDocGuide.md)
+- [Documentation portal generation guide](../contributing/dev-doc-guide.md)

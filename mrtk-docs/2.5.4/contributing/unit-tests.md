@@ -322,4 +322,4 @@ of these util classes as they're extended on a regular basis while new tests get
 
 ## See also
 
-* [Documentation portal generation guide](../contributing/DevDocGuide.md)
+* [Documentation portal generation guide](../contributing/dev-doc-guide.md)

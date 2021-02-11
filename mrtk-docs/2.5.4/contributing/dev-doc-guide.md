@@ -172,6 +172,6 @@ The versioning system can also be used for showing doc versions from other dev b
 
 ## See also
 
-* [MRTK documentation guide](../contributing/DocumentationGuide.md)
+* [MRTK documentation guide](../contributing/documentation-guide.md)
 * [MRTK developer documentation on github.io](https://microsoft.github.io/MixedRealityToolkit-Unity/)
 * [DocFX](https://dotnet.github.io/docfx/index.html)

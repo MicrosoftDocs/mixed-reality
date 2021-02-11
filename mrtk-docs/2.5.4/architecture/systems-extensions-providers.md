@@ -18,27 +18,27 @@ primary categories: systems, extension services and data providers.
 Systems are services that provide the core functionality of the Mixed Reality Toolkit. All systems are implementations of the
 [`IMixedRealityService`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityService) interface.
 
-- [BoundarySystem](../features/boundary/BoundarySystemGettingStarted.md)
-- [CameraSystem](../features/camera-system/CameraSystemOverview.md)
-- [DiagnosticsSystem](../features/diagnostics/DiagnosticsSystemGettingStarted.md)
+- [BoundarySystem](../features/boundary/boundary-system-getting-started.md)
+- [CameraSystem](../features/camera-system/camera-system-overview.md)
+- [DiagnosticsSystem](../features/diagnostics/diagnostics-system-getting-started.md)
 - [InputSystem](../features/input/overview.md)
-- [SceneSystem](../features/scene-system/SceneSystemGettingStarted.md)
-- [SpatialAwarenessSystem](../features/spatial-awareness/SpatialAwarenessGettingStarted.md)
+- [SceneSystem](../features/scene-system/scene-system-getting-started.md)
+- [SpatialAwarenessSystem](../features/spatial-awareness/spatial-awareness-getting-started.md)
 - [TeleportSystem](../features/teleport-system/overview.md)
 
-Each of the listed systems are surfaced in the MixedRealityToolkit component's configuration [profile](../features/profiles/Profiles.md).
+Each of the listed systems are surfaced in the MixedRealityToolkit component's configuration [profile](../features/profiles/profiles.md).
 
 ## Extensions
 
 Extension services are components that extend the functionality of the Mixed Reality Toolkit. All extension services must specify
 that they implement the [`IMixedRealityExtensionService`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityExtensionService) interface.
 
-For information on creating extension services, please reference the [Extension services](../features/extensions/ExtensionServices.md) article.
+For information on creating extension services, please reference the [Extension services](../features/extensions/extension-services.md) article.
 
 To be accessible to the MRTK, extension services are registered and configured using the Extensions section of the MixedRealityToolkit
 component's configuration profile.
 
-![Configuring an extension service](../features/images/profiles/ConfiguredExtensionService.png)
+![Configuring an extension service](../features/images/profiles/configured-extension-service.png)
 
 ## Data providers
 
@@ -66,7 +66,7 @@ query the service instance for which they were registered (ex: input system).
 
 The MRTK input system utilizes only data providers that implement the [`IMixedRealityInputDeviceManager`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputDeviceManager).
 
-![Input system data providers](../features/images/input/RegisteredServiceProviders.PNG)
+![Input system data providers](../features/images/input/registered-service-providers.PNG)
 
 The following example demonstrates accessing the input simulation provider and toggle the SmoothEyeTracking property.
 
@@ -99,7 +99,7 @@ if (inputSimulationService != null)
 > The input system returns only data providers that are supported for the platform on which the
 application is running.
 
-For information on writing a data provider for the MRTK input system, please see [creating an input system data provider](../features/input/CreateDataProvider.md).
+For information on writing a data provider for the MRTK input system, please see [creating an input system data provider](../features/input/create-data-provider.md).
 
 ### Spatial awareness
 
@@ -139,14 +139,14 @@ if (dataProvider != null)
 > [!NOTE]
 > The spatial awareness system returns only data providers that are supported for the platform on which the application is running.
 
-For information on writing a data provider for the MRTK spatial awareness system, please see [creating a spatial awareness system data provider](../features/spatial-awareness/CreateDataProvider.md).
+For information on writing a data provider for the MRTK spatial awareness system, please see [creating a spatial awareness system data provider](../features/spatial-awareness/create-data-provider.md).
 
 ## See also
 
-- [What makes a mixed reality feature](MixedRealityServices.md)
-- [Extension services](../features/extensions/ExtensionServices.md)
-- [Creating an input system data provider](../features/input/CreateDataProvider.md)
-- [Creating a spatial awareness system system data provider](../features/spatial-awareness/CreateDataProvider.md)
+- [What makes a mixed reality feature](mixed-reality-services.md)
+- [Extension services](../features/extensions/extension-services.md)
+- [Creating an input system data provider](../features/input/create-data-provider.md)
+- [Creating a spatial awareness system system data provider](../features/spatial-awareness/create-data-provider.md)
 - [IMixedRealityService interface](xref:Microsoft.MixedReality.Toolkit.IMixedRealityService)
 - [IMixedRealityDataProvider interface](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider)
 - [IMixedRealityExtensionService interface](xref:Microsoft.MixedReality.Toolkit.IMixedRealityExtensionService)

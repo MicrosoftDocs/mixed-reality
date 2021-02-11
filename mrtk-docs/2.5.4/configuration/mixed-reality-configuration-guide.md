@@ -28,7 +28,7 @@ The main configuration profile, which is attached to the *MixedRealityToolkit* G
 All the "default" profiles for the Mixed Reality Toolkit can be found in the SDK project in the folder Assets/MRTK/SDK/Profiles.
 
 > [!IMPORTANT]
-> DefaultHoloLens2ConfigurationProfile is optimized for HoloLens 2. See [Profiles](../features/profiles/Profiles.md) for the details.
+> DefaultHoloLens2ConfigurationProfile is optimized for HoloLens 2. See [Profiles](../features/profiles/profiles.md) for the details.
 
 When you open the main Mixed Reality Toolkit Configuration Profile, you will see the following screen in the inspector:
 
@@ -133,7 +133,7 @@ The Mixed Reality Project provides a full featured Teleportation system for mana
 ## Spatial awareness settings
 
 The Mixed Reality Project provides a rebuilt spatial awareness system for working with spatial scanning systems in the project which is selected by default.
-You can view the architecture behind the [MRTK Spatial awareness system here](../architecture/SpatialAwareness.md).
+You can view the architecture behind the [MRTK Spatial awareness system here](../architecture/spatial-awareness.md).
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_SpatialAwarenessSystemSelection.png" width="650px" alt="Spatial Awareness settings 1" style="display:block;">
 
@@ -164,7 +164,7 @@ The diagnostics profile provides several simple systems to monitor whilst the pr
 
 ## Scene system settings
 
-The MRTK provides this optional service to help you manage complex additive scene loading / unloading. To decide if the Scene System would be a good fit for your project, read the [Scene System Getting Started Guide.](../features/scene-system/SceneSystemGettingStarted.md)
+The MRTK provides this optional service to help you manage complex additive scene loading / unloading. To decide if the Scene System would be a good fit for your project, read the [Scene System Getting Started Guide.](../features/scene-system/scene-system-getting-started.md)
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_SceneSystemProfile.png" width="650px" alt="Scene System settings 1" style="display:block;">
 

@@ -39,7 +39,7 @@ If using the legacy XR:
 
 If using the XR-Plugin:
 
-1. Follow the steps found in [Getting Started with XRSDK](../configuration/GettingStartedWithMRTKAndXRSDK.md)
+1. Follow the steps found in [Getting Started with XRSDK](../configuration/getting-started-with-mrtk-and-xrsdk.md)
 1. Make sure the configuration profile is the **DefaultXRSDKConfigurationProfile**
 1. Navigate to **Edit > Project Settings, XR-Plugin Management** and make sure **Windows Mixed Reality** is enabled.
 1. Build and deploy in Visual Studio
@@ -93,6 +93,6 @@ The Windows Mixed Reality (WMR) headset can be used for Universal Windows Platfo
 
 ## See also
 
-- [Android and iOS Support](../features/cross-platform/UsingARFoundation.md)
-- [Leap Motion Support](../features/cross-platform/LeapMotionMRTK.md)
-- [Detecting Platform Capabilities](../features/cross-platform/DetectingPlatformCapabilities.md)
+- [Android and iOS Support](../features/cross-platform/using-ar-foundation.md)
+- [Leap Motion Support](../features/cross-platform/leap-motion-mrtk.md)
+- [Detecting Platform Capabilities](../features/cross-platform/detecting-platform-capabilities.md)

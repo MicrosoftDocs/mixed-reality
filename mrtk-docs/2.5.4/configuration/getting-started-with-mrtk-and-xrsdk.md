@@ -14,7 +14,7 @@ XR SDK is Unity's [new XR pipeline in Unity 2019.3 and beyond](https://blogs.uni
 
 ## Prerequisites
 
-To get started with the Mixed Reality Toolkit, follow [the provided steps](../../2.5.4/WelcomeToMRTK.md) to add MRTK to a project.
+To get started with the Mixed Reality Toolkit, follow [the provided steps](../../2.5.4/welcome-to-mrtk.md) to add MRTK to a project.
 
 ## Configuring Unity for the XR SDK pipeline
 
@@ -37,7 +37,7 @@ The XR SDK pipeline currently supports 3 platforms: Windows Mixed Reality, Oculu
 
 #### Oculus
 
-1. Follow the [How to configure Oculus Quest in MRTK using the XR SDK pipeline](../features/cross-platform/OculusQuestMRTK.md) guide to the end. The guide outlines the steps needed to configure both Unity and MRTK to use the XR SDK pipeline for the Oculus Quest.
+1. Follow the [How to configure Oculus Quest in MRTK using the XR SDK pipeline](../features/cross-platform/oculus-quest-mrtk.md) guide to the end. The guide outlines the steps needed to configure both Unity and MRTK to use the XR SDK pipeline for the Oculus Quest.
 
 #### OpenXR (Preview)
 
