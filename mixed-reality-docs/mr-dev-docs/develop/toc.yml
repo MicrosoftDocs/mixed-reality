@@ -359,9 +359,9 @@
   - name: Tutorials
     items:
       - name: Overview
-        href: web/tutorials.md
+        href: web/tutorials/tutorials.md
       - name: BabylonJs and WebXR
-        href: web/tutorials/2.md
+        href: web/tutorials/babylonjs-webxr.md
       - name: BabylonNative
         href: web/tutorials/babylon-native.md
   - name: WebXR

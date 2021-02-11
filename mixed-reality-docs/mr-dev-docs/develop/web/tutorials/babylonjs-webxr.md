@@ -1,5 +1,5 @@
 ---
-title: Introduction to the Babylon Native tutorials
+title: Introduction to the BabylonJs and WebXR tutorials
 description: Complete this course to learn how to use javascript in a mixed reality application.
 author: bogenera
 ms.author: bogenera
@@ -9,6 +9,6 @@ keywords: mixed reality, javascript, tutorial, BabylonNative, hololens, mixed re
 ms.localizationpriority: high
 ---
 
-# 1. Introduction to the Babylon Native tutorials
+# 1. Introduction to the BabylonJs and WebXR tutorials
 
 TBD
