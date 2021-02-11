@@ -356,6 +356,14 @@
   items:
   - name: Web development overview
     href: web/javascript-development-overview.md
+  - name: Tutorials
+    items:
+      - name: Overview
+        href: web/tutorials.md
+      - name: BabylonJs and WebXR
+        href: web/tutorials/2.md
+      - name: BabylonNative
+        href: web/tutorials/babylon-native.md
   - name: WebXR
     href: web/webxr-overview.md
   - name: WebVR
