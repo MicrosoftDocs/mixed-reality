@@ -158,7 +158,7 @@ Show and hide the handles with animation based on the distance to the hands. It 
 
 ## Constraint System
 
-Bounds control supports using the [constraint manager](ConstraintManager.md) to limit or modify translation, rotation or scaling behavior while using bounds control handles.
+Bounds control supports using the [constraint manager](constraint-manager.md) to limit or modify translation, rotation or scaling behavior while using bounds control handles.
 
 The property inspector will show all available constraint managers attached to the same game object in a dropdown with an option to scroll and highlight the selected constraint manager.
 
@@ -179,7 +179,7 @@ Bounds control provides the following events. This example uses these events to 
 
 ## Elastics (Experimental)
 
-Elastics can be used when manipulating objects via bounds control. Note that the [elastics system](../elastics/ElasticSystem.md) is still in experimental state. To enable elastics either link an existing elastics manager component or create and link a new elastics manager via the `Add Elastics Manager` button.
+Elastics can be used when manipulating objects via bounds control. Note that the [elastics system](../elastics/elastic-system.md) is still in experimental state. To enable elastics either link an existing elastics manager component or create and link a new elastics manager via the `Add Elastics Manager` button.
 
 <img src="../images/bounds-control/MRTK_BoundsControl_Elastics.png" width="450" alt="Bounds control Elastics">
 
@@ -207,11 +207,11 @@ Below are the prefabs, materials, and the scaling values for the HoloLens 2 styl
 
 ## Transformation changes with object manipulator
 
-A bounds control can be used in combination with [`ObjectManipulator.cs`](ObjectManipulator.md) to allow for certain types of manipulation (eg. moving the object) without using handles. The manipulation handler supports both one and two-handed interactions. [Hand tracking](../input/HandTracking.md) can be used to interact with an object up close.
+A bounds control can be used in combination with [`ObjectManipulator.cs`](object-manipulator.md) to allow for certain types of manipulation (eg. moving the object) without using handles. The manipulation handler supports both one and two-handed interactions. [Hand tracking](../input/hand-tracking.md) can be used to interact with an object up close.
 
 <img src="../images/bounds-control/MRTK_BoundsControl_ObjectManipulator.png" width="450" alt="Bounds control Object Manipulator">
 
-In order for the bounds control edges to behave the same way when moving it using [`ObjectManipulator`](ObjectManipulator.md)'s far interaction, it is advised to connect its events for *On Manipulation Started* / *On Manipulation Ended* to `BoundsControl.HighlightWires` / `BoundsControl.UnhighlightWires` respectively, as shown in the screenshot above.
+In order for the bounds control edges to behave the same way when moving it using [`ObjectManipulator`](object-manipulator.md)'s far interaction, it is advised to connect its events for *On Manipulation Started* / *On Manipulation Ended* to `BoundsControl.HighlightWires` / `BoundsControl.UnhighlightWires` respectively, as shown in the screenshot above.
 
 ## How to add and configure a bounds control using Unity Inspector
 
@@ -304,7 +304,7 @@ private void PutABoundsControlAroundIt(GameObject target)
 
 ## Migrating from Bounding Box
 
-Existing prefabs and instances using [bounding box](BoundingBox.md) can be upgraded to the new bounds control via the [migration window](../tools/MigrationWindow.md) which is part of the MRTK tools package.
+Existing prefabs and instances using [bounding box](bounding-box.md) can be upgraded to the new bounds control via the [migration window](../tools/migration-window.md) which is part of the MRTK tools package.
 
 For upgrading individual instances of bounding box there's also an a migration option inside the property inspector of the component.
 
@@ -312,7 +312,7 @@ For upgrading individual instances of bounding box there's also an a migration o
 
 ## See also
 
-* [Object manipulator](ObjectManipulator.md)
-* [Constraint manager](ConstraintManager.md)
-* [Migration window](../tools/MigrationWindow.md)
-* [Elastics system (Experimental)](../elastics/ElasticSystem.md)
+* [Object manipulator](object-manipulator.md)
+* [Constraint manager](constraint-manager.md)
+* [Migration window](../tools/migration-window.md)
+* [Elastics system (Experimental)](../elastics/elastic-system.md)

@@ -13,7 +13,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Bounding
 ![Bounding box](../images/bounding-box/MRTK_BoundingBox_Main.png)
 
 > [!NOTE]
-> Bounding box is deprecated and replaced by its successor [bounds control](BoundsControl.md). Use [one of the migration options](#migrating-to-bounds-control) to upgrade existing game objects.
+> Bounding box is deprecated and replaced by its successor [bounds control](bounds-control.md). Use [one of the migration options](#migrating-to-bounds-control) to upgrade existing game objects.
 
 The [`BoundingBox.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundingBox) script provides basic functionality for transforming objects in mixed reality. A bounding box will show a cube around the hologram to indicate that it can be interacted with. Handles on the corners and edges of the cube allow scaling or rotating the object. The bounding box also reacts to user input. On HoloLens 2, for example, the bounding box responds to finger proximity, providing visual feedback to help perceive the distance from the object. All interactions and visuals can be easily customized.
 
@@ -192,15 +192,15 @@ Show and hide the handles with animation based on the distance to the hands. It 
 
 ## Making an object movable with manipulation handler
 
-A bounding box can be combined with [`ManipulationHandler.cs`](ManipulationHandler.md) to make the object movable using far interaction. The manipulation handler supports both one and two-handed interactions. [Hand tracking](../input/HandTracking.md) can be used to interact with an object up close.
+A bounding box can be combined with [`ManipulationHandler.cs`](manipulation-handler.md) to make the object movable using far interaction. The manipulation handler supports both one and two-handed interactions. [Hand tracking](../input/hand-tracking.md) can be used to interact with an object up close.
 
 <img src="../images/bounding-box/MRTK_BoundingBox_ManipulationHandler.png" width="450" alt="Manipulation Handler">
 
-In order for the bounding box edges to behave the same way when moving it using [`ManipulationHandler`](ManipulationHandler.md)'s far interaction, it is advised to connect its events for *On Manipulation Started* / *On Manipulation Ended* to `BoundingBox.HighlightWires` / `BoundingBox.UnhighlightWires` respectively, as shown in the screenshot above.
+In order for the bounding box edges to behave the same way when moving it using [`ManipulationHandler`](manipulation-handler.md)'s far interaction, it is advised to connect its events for *On Manipulation Started* / *On Manipulation Ended* to `BoundingBox.HighlightWires` / `BoundingBox.UnhighlightWires` respectively, as shown in the screenshot above.
 
 ## Migrating to bounds control
 
-Existing prefabs and instances using [bounding box](BoundingBox.md) can be upgraded to the new bounds control via the [migration window](../tools/MigrationWindow.md) which is part of the MRTK tools package.
+Existing prefabs and instances using [bounding box](bounding-box.md) can be upgraded to the new bounds control via the [migration window](../tools/migration-window.md) which is part of the MRTK tools package.
 
 For upgrading individual instances of bounding box there's also an a migration option inside the property inspector of the component.
 

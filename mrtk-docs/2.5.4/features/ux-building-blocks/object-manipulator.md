@@ -24,7 +24,7 @@ To make the object respond to near articulated hand input, add the `NearInteract
 
 Physics behaviour can be enabled for the object manipulator by adding a rigidbody component to the object. Physics behaviour enabled by adding this component is discussed in greater detail in [*Physics and collisions*](#physics-and-collisions).
 
-As well as this, manipulation can be constrained by adding [manipulation constraint components](ConstraintManager.md#transform-constraints) to the object. These are special components that work with manipulation and change the manipulation behaviour in some way.
+As well as this, manipulation can be constrained by adding [manipulation constraint components](constraint-manager.md#transform-constraints) to the object. These are special components that work with manipulation and change the manipulation behaviour in some way.
 
 ![Manipulation Handler](../images/object-manipulator/MRTK_ObjectManipulator_Howto.png)
 
@@ -81,11 +81,11 @@ Specifies how two hand manipulation can transform an object. Because this proper
 
 #### Enable constraints
 
-This setting will enable the linked [constraint manager](ConstraintManager.md). Transform changes will be processed by constraints registered to the selected [constraint manager](ConstraintManager.md).
+This setting will enable the linked [constraint manager](constraint-manager.md). Transform changes will be processed by constraints registered to the selected [constraint manager](constraint-manager.md).
 
 #### Constraint manager
 
-The dropdown allows to select any of the attached [constraint managers](ConstraintManager.md). Object manipulator ensures there's a [constraint manager](ConstraintManager.md) attached at all times.
+The dropdown allows to select any of the attached [constraint managers](constraint-manager.md). Object manipulator ensures there's a [constraint manager](constraint-manager.md) attached at all times.
 Note that multiple components of the same type will show up under the same name in unity. To make it easier to distinguish between multiple constraint managers on the same object, the available options will show a hint on the configuration of the selected constraint manager (manual or auto constraint selection).
 
 #### Go to component
@@ -169,13 +169,13 @@ When a rigidbody is added, collisions should work correctly.
 
 ## Elastics (Experimental)
 
-Elastics can be used when manipulating objects via object manipulator. Note that the [elastics system](../elastics/ElasticSystem.md) is still in experimental state. To enable elastics either link an existing elastics manager component or create and link a new elastics manager via the `Add Elastics Manager` button.
+Elastics can be used when manipulating objects via object manipulator. Note that the [elastics system](../elastics/elastic-system.md) is still in experimental state. To enable elastics either link an existing elastics manager component or create and link a new elastics manager via the `Add Elastics Manager` button.
 
 <img src="../images/bounds-control/MRTK_BoundsControl_Elastics.png" width="450" alt="Bounds Control Elastics">
 
 ## See also
 
-- [Bounds control](BoundsControl.md)
-- [Constraint manager](ConstraintManager.md)
-- [Migration window](../tools/MigrationWindow.md)
-- [Elastics system (Experimental)](../elastics/ElasticSystem.md)
+- [Bounds control](bounds-control.md)
+- [Constraint manager](constraint-manager.md)
+- [Migration window](../tools/migration-window.md)
+- [Elastics system (Experimental)](../elastics/elastic-system.md)

@@ -73,5 +73,5 @@ Please see the tool tips available for each [`HandConstraint`](xref:Microsoft.Mi
 
 ## See also
 
-* [Button](Button.md)
-* [Near Menu](NearMenu.md)
+* [Button](button.md)
+* [Near Menu](near-menu.md)

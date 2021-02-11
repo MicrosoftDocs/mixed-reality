@@ -43,10 +43,10 @@ You can find examples of Near Menu prefabs in the `NearMenuExamples` scene.
 
 Near Menu prefabs are made with following MRTK components.
 
-- [**PressableButtonHoloLens2**](Button.md) prefab
-- [**Grid Object Collection**](ObjectCollection.md): Multiple button layout in grid
-- [**Manipulation Handler**](ManipulationHandler.md): Grab and move the menu
-- [**RadialView Solver**](solvers/Solver.md): Follow Me(tag-along) behavior
+- [**PressableButtonHoloLens2**](button.md) prefab
+- [**Grid Object Collection**](object-collection.md): Multiple button layout in grid
+- [**Manipulation Handler**](manipulation-handler.md): Grab and move the menu
+- [**RadialView Solver**](solvers/solver.md): Follow Me(tag-along) behavior
 
 ![Near Menu Prefab](../images/near-menu/MRTK_UX_NearMenu_Structure.png)
 
@@ -74,9 +74,9 @@ Adjust the size of the `Quad` under `Backplate` object. The width and height of 
 
 ## See also
 
-- [**Buttons**](Button.md)
-- [**Bounds Control**](BoundsControl.md)
-- [**Slider**](Sliders.md)
-- [**Grid Object Collection**](ObjectCollection.md)
-- [**Manipulation Handler**](ManipulationHandler.md)
-- [**RadialView Solver**](solvers/Solver.md)
+- [**Buttons**](button.md)
+- [**Bounds Control**](bounds-control.md)
+- [**Slider**](sliders.md)
+- [**Grid Object Collection**](object-collection.md)
+- [**Manipulation Handler**](manipulation-handler.md)
+- [**RadialView Solver**](solvers/solver.md)

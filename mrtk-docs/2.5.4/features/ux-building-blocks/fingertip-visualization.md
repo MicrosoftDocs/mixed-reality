@@ -24,7 +24,7 @@ At a high level the fingertip visualization works by using a proximity light to 
 
 ## Example scene
 
-You can find fingertip visualization examples in almost any scene that works with articulated hands, but is prominent in the [HandInteractionExample scene](../example-scenes/HandInteractionExamples.md).
+You can find fingertip visualization examples in almost any scene that works with articulated hands, but is prominent in the [HandInteractionExample scene](../example-scenes/hand-interaction-examples.md).
 
 ![Fingertip visualization States](../images/fingertip/MRTK_FingertipVisualization_States.png)
 

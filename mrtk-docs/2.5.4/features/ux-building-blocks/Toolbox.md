@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK Too
 
 # Toolbox UI
 
-The MRTK Toolbox is a Unity editor window utility that makes it easy to discover and spawn MRTK UX prefab components into the current scene. Items can be filtered in view by using the search bar at the top of the window. The toolbox window is designed to spawn MRTK out-of-box prefabs into the current scene. There are additional "UX" components that can be added as script components such as the [bounds control](BoundsControl.md) or [object manipulator](ObjectManipulator.md) controls.
+The MRTK Toolbox is a Unity editor window utility that makes it easy to discover and spawn MRTK UX prefab components into the current scene. Items can be filtered in view by using the search bar at the top of the window. The toolbox window is designed to spawn MRTK out-of-box prefabs into the current scene. There are additional "UX" components that can be added as script components such as the [bounds control](bounds-control.md) or [object manipulator](object-manipulator.md) controls.
 
 ![MRTK Toolbox](../images/Tools/MRTKToolboxWindow.png)
 
@@ -30,9 +30,9 @@ The toolbox is distributed via the MRTK's Tools package.
 
 ## See also
 
-- [Button](Button.md)
-- [Interactable](Interactable.md)
-- [Sliders](Sliders.md)
-- [Slate](Slate.md)
-- [AppBar](AppBar.md)
-- [Tooltips](Tooltip.md)
+- [Button](button.md)
+- [Interactable](interactable.md)
+- [Sliders](sliders.md)
+- [Slate](slate.md)
+- [AppBar](app-bar.md)
+- [Tooltips](tooltip.md)

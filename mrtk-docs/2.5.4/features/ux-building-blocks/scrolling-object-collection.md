@@ -50,10 +50,10 @@ The scrolling object collection can be combined with a [grid object collection](
 ![Grid layout](../images/scrolling-collection/ScrollingObjectCollection_GridLayout.png)
 
 > [!IMPORTANT]
-> Any scrolling content object material must use the [MRTK standard shader](../rendering/MRTKStandardShader.md) in order for the clipping effect on the viewable area to work properly.
+> Any scrolling content object material must use the [MRTK standard shader](../rendering/MRTK-standard-shader.md) in order for the clipping effect on the viewable area to work properly.
 
 > [!NOTE]
-> If scrolling content masking is enabled, the scrolling object collection will add a [material instance](../rendering/MaterialInstance.md) component to any content objects that have a renderer attached. This component is used to manage instanced materials lifetime and improve memory performance.
+> If scrolling content masking is enabled, the scrolling object collection will add a [material instance](../rendering/material-instance.md) component to any content objects that have a renderer attached. This component is used to manage instanced materials lifetime and improve memory performance.
 
 ### Configuring the scrolling viewable area
 
@@ -75,7 +75,7 @@ Notice how the content objects lying outside the scrolling viewable area are now
 
 The MRTK scrolling object collection exposes a few public methods that allow moving the scrolling container by snapping its position according to the `pagination` properties configuration.
 
-An example of how to access the scrolling object collection pagination interface is available to use under the ``MRTK/Examples/Demos/ScrollingObjectCollection/Scripts`` folder. The [scrollable pagination](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.ScrollablePagination) example script can be linked to any existing scrolling object collection in the scene. The script can then be referenced by scene components exposing Unity events (e.g, [MRTK button](Button.md)).
+An example of how to access the scrolling object collection pagination interface is available to use under the ``MRTK/Examples/Demos/ScrollingObjectCollection/Scripts`` folder. The [scrollable pagination](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.ScrollablePagination) example script can be linked to any existing scrolling object collection in the scene. The script can then be referenced by scene components exposing Unity events (e.g, [MRTK button](button.md)).
 
 ```c#
 public class ScrollablePagination : MonoBehaviour
@@ -149,7 +149,7 @@ For convenience, two scrolling object collection prefabs are available to use. T
 
 ## See also
 
-* [Clipping Primitive](../rendering/ClippingPrimitive.md)
-* [Material Instance](../rendering/MaterialInstance.md)
-* [Standard Shader](../rendering/MRTKStandardShader.md)
-* [Object collection](ObjectCollection.md)
+* [Clipping Primitive](../rendering/clipping-primitive.md)
+* [Material Instance](../rendering/material-instance.md)
+* [Standard Shader](../rendering/MRTK-standard-shader.md)
+* [Object collection](object-collection.md)

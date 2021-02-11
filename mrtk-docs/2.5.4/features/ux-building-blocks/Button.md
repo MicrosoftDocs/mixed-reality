@@ -41,7 +41,7 @@ Examples of the button prefabs under ``MRTK/SDK/Features/UX/Interactable/Prefabs
 |  ![ButtonHoloLens1](../images/button/MRTK_Button_HoloLens1.png) **ButtonHoloLens1** | ![PressableRoundButton](../images/button/MRTK_Button_Round.png) **PressableRoundButton** | ![Button](../images/button/MRTK_Button_Base.png) **Button** |
 | HoloLens 1st gen's shell style button | Round shape push button | Basic button |
 
-The `Button` (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/Button.prefab) is based on the [Interactable](Interactable.md) concept to provide easy UI controls for buttons or other types of interactive surfaces. The baseline button supports all available input methods, including articulated hand input for the near interactions as well as gaze + air-tap for the far interactions. You can also use voice command to trigger the button.
+The `Button` (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/Button.prefab) is based on the [Interactable](interactable.md) concept to provide easy UI controls for buttons or other types of interactive surfaces. The baseline button supports all available input methods, including articulated hand input for the near interactions as well as gaze + air-tap for the far interactions. You can also use voice command to trigger the button.
 
 `PressableButtonHoloLens2` (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/PressableButtonHoloLens2.prefab) is HoloLens 2's shell style button that supports the precise movement of the button for the direct hand tracking input. It combines `Interactable` script with `PressableButton` script.
 
@@ -69,7 +69,7 @@ Then, drag `PressableButtonUnityUI` (Assets/MRTK/SDK/Features/UX/Interactable/Pr
 
 Simply drag `PressableButtonHoloLens2` (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/PressableButtonHoloLens2.prefab) or `PressableButtonHoloLens2Unplated` (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/PressableButtonHoloLens2Unplated.prefab) into the scene. These button prefabs are already configured to have audio-visual feedback for the various types of inputs, including articulated hand input and gaze.
 
-The events exposed in the prefab itself as well as the [Interactable](Interactable.md) component can be used to trigger additional actions. The pressable buttons in the [HandInteractionExample scene](../example-scenes/HandInteractionExamples.md) use Interactable's *OnClick* event to trigger a change in the color of a cube. This event gets triggered for different types of input methods such as gaze, air-tap, hand-ray, as well as physical button presses through the pressable button script.
+The events exposed in the prefab itself as well as the [Interactable](interactable.md) component can be used to trigger additional actions. The pressable buttons in the [HandInteractionExample scene](../example-scenes/hand-interaction-examples.md) use Interactable's *OnClick* event to trigger a change in the color of a cube. This event gets triggered for different types of input methods such as gaze, air-tap, hand-ray, as well as physical button presses through the pressable button script.
 
 <img src="../images/button/MRTK_Button_HowToUse_Interactable.png" width="450" alt="How to Use Interactable">
 
@@ -104,10 +104,10 @@ The subtle pulse effect is triggered by the pressable button, which looks for *P
 The logic for the button movement with hand press interaction.
 
 **Physical Press Event Router**
-This script sends events from hand press interaction to [Interactable](Interactable.md).
+This script sends events from hand press interaction to [Interactable](interactable.md).
 
 **Interactable**
-[Interactable](Interactable.md) handles various types of interaction states and events. HoloLens gaze, gesture, and voice input and immersive headset motion controller input are directly handled by this script.
+[Interactable](interactable.md) handles various types of interaction states and events. HoloLens gaze, gesture, and voice input and immersive headset motion controller input are directly handled by this script.
 
 **Audio Source**
 Unity audio source for the audio feedback clips.
@@ -117,7 +117,7 @@ Required to make any object touchable with articulated hand input.
 
 ## Prefab layout
 
-The *ButtonContent* object contains front plate, text label and icon. The *FrontPlate* responds to the proximity of the index fingertip using the *Button_Box* shader. It shows glowing borders, proximity light, and a pulse effect on touch. The text label is made with TextMesh Pro. *SeeItSayItLabel*'s visibility is controlled by [Interactable](Interactable.md)'s theme.
+The *ButtonContent* object contains front plate, text label and icon. The *FrontPlate* responds to the proximity of the index fingertip using the *Button_Box* shader. It shows glowing borders, proximity light, and a pulse effect on touch. The text label is made with TextMesh Pro. *SeeItSayItLabel*'s visibility is controlled by [Interactable](interactable.md)'s theme.
 
 ![Button Layout](../images/button/MRTK_Button_Layout.png)
 
@@ -206,7 +206,7 @@ Click 'Fix Bounds'
 ## Voice command ('see-it, say-it')
 
 **Speech Input Handler**
-The [Interactable](Interactable.md) script in Pressable Button already implements `IMixedRealitySpeechHandler`. A voice command keyword can be set here.
+The [Interactable](interactable.md) script in Pressable Button already implements `IMixedRealitySpeechHandler`. A voice command keyword can be set here.
 
 <img src="../images/button/MRTK_Button_Speech1.png" width="450" alt="Buttons Speech">
 
@@ -268,7 +268,7 @@ Since `PressableButton.cs` script exposes events such as TouchBegin(), TouchEnd(
 
 ### 4. Adding visual states and handle far interaction events
 
-[Interactable](Interactable.md) is a script that makes it easy to create a visual state for the various types of input interactions. It also handles far interaction events. Add `Interactable.cs` and drag and drop the cube object onto the **Target** field under **Profiles**. Then, create a new Theme with a type **ScaleOffsetColorTheme**. Under this theme, you can specify the color of the object for the specific interaction states, such as **Focus** and **Pressed**. You can also control Scale and Offset, as well. Check **Easing** and set duration to make the visual transition smooth.
+[Interactable](interactable.md) is a script that makes it easy to create a visual state for the various types of input interactions. It also handles far interaction events. Add `Interactable.cs` and drag and drop the cube object onto the **Target** field under **Profiles**. Then, create a new Theme with a type **ScaleOffsetColorTheme**. Under this theme, you can specify the color of the object for the specific interaction states, such as **Focus** and **Pressed**. You can also control Scale and Offset, as well. Check **Easing** and set duration to make the visual transition smooth.
 
 ![Select profile theme](../images/button/mrtk_button_profiles.gif)
 
@@ -279,7 +279,7 @@ You will see the object respond to both far (hand ray or gaze cursor) and near(h
 
 ## Custom button examples
 
-In the [HandInteractionExample scene](../example-scenes/HandInteractionExamples.md), see the piano and round button examples which are both using `PressableButton`.
+In the [HandInteractionExample scene](../example-scenes/hand-interaction-examples.md), see the piano and round button examples which are both using `PressableButton`.
 
 <img src="../images/button/MRTK_Button_Custom1.png" width="450" alt="Pressable Custom1">
 
@@ -291,5 +291,5 @@ Each piano key has a `PressableButton` and a `NearInteractionTouchable` script a
 
 ## See also
 
-* [Interactable](Interactable.md)
-* [Visual Themes](../VisualThemes.md)
+* [Interactable](interactable.md)
+* [Visual Themes](../visual-themes.md)

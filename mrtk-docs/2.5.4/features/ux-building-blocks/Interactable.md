@@ -12,14 +12,14 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Interact
 
 ![Interactable](../images/interactable/InteractableExamples.png)
 
-The [`Interactable`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable) component is an all-in-one container to make any object easily *interactable* and responsive to input. Interactable acts as a catch-all for all types of input including touch, hand rays, speech etc and funnel these interactions into [events](#events) and [visual theme](../VisualThemes.md) responses. This component provides an easy way to make buttons, change color on objects with focus, and more.
+The [`Interactable`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable) component is an all-in-one container to make any object easily *interactable* and responsive to input. Interactable acts as a catch-all for all types of input including touch, hand rays, speech etc and funnel these interactions into [events](#events) and [visual theme](../visual-themes.md) responses. This component provides an easy way to make buttons, change color on objects with focus, and more.
 
 ## How to configure Interactable
 
 The component allows for three primary sections of configuration:
 
 1) [General input configuration](#general-input-settings)
-1) [Visual Themes](../VisualThemes.md) targeted against multiple GameObjects
+1) [Visual Themes](../visual-themes.md) targeted against multiple GameObjects
 1) [Event handlers](#events)
 
 ### General input settings
@@ -28,7 +28,7 @@ The component allows for three primary sections of configuration:
 
 **States**
 
-*States* is a [ScriptableObject](https://docs.unity3d.com/Manual/class-ScriptableObject.html) parameter that defines the interactions phases, like press or observed, for [Interactable Profiles](#interactable-profiles) and [Visual Themes](../VisualThemes.md).
+*States* is a [ScriptableObject](https://docs.unity3d.com/Manual/class-ScriptableObject.html) parameter that defines the interactions phases, like press or observed, for [Interactable Profiles](#interactable-profiles) and [Visual Themes](../visual-themes.md).
 
 The **DefaultInteractableStates** (Assets/MRTK/SDK/Features/UX/Interactable/States/DefaultInteractableStates.asset) ships with MRTK out-of-box and is the default parameter for *Interactable* components.
 
@@ -66,19 +66,19 @@ An *Interactable's* enabled property is different than the enabled property conf
 
 **Input Actions**
 
-Select the [input action](../input/InputActions.md) from the input configuration or controller mapping profile that the *Interactable* component should react to.
+Select the [input action](../input/input-actions.md) from the input configuration or controller mapping profile that the *Interactable* component should react to.
 
 This property can be configured at runtime in code via [`Interactable.InputAction`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.InputAction).
 
 **IsGlobal**
 
-If true, this will mark the component as a global input listener for the selected [input action](../input/InputActions.md). Default behavior is false which will restrict input to only this *Interactable* collider/GameObject.
+If true, this will mark the component as a global input listener for the selected [input action](../input/input-actions.md). Default behavior is false which will restrict input to only this *Interactable* collider/GameObject.
 
 This property can be configured at runtime in code via [`Interactable.IsGlobal`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.IsGlobal).
 
 **Speech Command**
 
-[Speech command](../input/Speech.md), from the MRTK Speech Commands Profile, to trigger an OnClick event for voice interaction.
+[Speech command](../input/speech.md), from the MRTK Speech Commands Profile, to trigger an OnClick event for voice interaction.
 
 This property can be configured at runtime in code via [`Interactable.VoiceCommand`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable.VoiceCommand).
 
@@ -104,7 +104,7 @@ The current Selection Mode can be queried at runtime via [`Interactable.ButtonMo
 
 ### Interactable profiles
 
-*Profiles* are items that create a relationship between a GameObject and a [Visual Theme](../VisualThemes.md). The profile defines what content will be manipulated by a theme when a [state change occurs](#general-input-settings).
+*Profiles* are items that create a relationship between a GameObject and a [Visual Theme](../visual-themes.md). The profile defines what content will be manipulated by a theme when a [state change occurs](#general-input-settings).
 
 Themes work a lot like materials. They are scriptable objects that contain a list of properties that will be assigned to an object based on the current state. Themes are also re-usable and can be assigned across multiple *Interactable* UX objects.
 
@@ -149,7 +149,7 @@ A custom receiver can be created by making a new class that extends [`ReceiverBa
 
 ### Create custom events
 
-Like [Visual Themes](../VisualThemes.md#custom-theme-engines), events can be extended to detect any state pattern or to expose functionality.
+Like [Visual Themes](../visual-themes.md#custom-theme-engines), events can be extended to detect any state pattern or to expose functionality.
 
 Custom events can be created in two main ways:
 
@@ -215,7 +215,7 @@ One can create a simple button by adding the *Interactable* component to a GameO
 Take the button one step further, by creating a new profile, assigning the GameObject itself and creating a new theme. Furthermore, use the *OnClick* event to make something happen.
 
 > [!NOTE]
-> Making a [button pressable](Button.md) requires the [`PressableButton`](xref:Microsoft.MixedReality.Toolkit.UI.PressableButton) component. Additionally, the [`PhysicalPressEventRouter`](xref:Microsoft.MixedReality.Toolkit.PhysicalPressEventRouter) component is needed to funnel press events to the *Interactable* component.
+> Making a [button pressable](button.md) requires the [`PressableButton`](xref:Microsoft.MixedReality.Toolkit.UI.PressableButton) component. Additionally, the [`PhysicalPressEventRouter`](xref:Microsoft.MixedReality.Toolkit.PhysicalPressEventRouter) component is needed to funnel press events to the *Interactable* component.
 
 ### Creating toggle and multi-dimension buttons
 
@@ -284,7 +284,7 @@ myInteractable.IncreaseDimension();
 
 ### Create Interactable at runtime
 
-*Interactable* can be easily added to any GameObject at runtime. The following example demonstrates how to assign a profile with a [visual theme](../VisualThemes.md).
+*Interactable* can be easily added to any GameObject at runtime. The following example demonstrates how to assign a profile with a [visual theme](../visual-themes.md).
 
 ```c#
 var interactableObject = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
@@ -363,8 +363,8 @@ public static void AddToggleEvents(Interactable interactable)
 
 ## See also
 
-* [Visual Themes](../VisualThemes.md)
-* [Input Actions](../input/InputActions.md)
-* [Speech Commands](../input/Speech.md)
-* [Buttons](Button.md)
-* [MRTK Standard Shader](../rendering/MRTKStandardShader.md)
+* [Visual Themes](../visual-themes.md)
+* [Input Actions](../input/input-actions.md)
+* [Speech Commands](../input/speech.md)
+* [Buttons](button.md)
+* [MRTK Standard Shader](../rendering/MRTK-standard-shader.md)

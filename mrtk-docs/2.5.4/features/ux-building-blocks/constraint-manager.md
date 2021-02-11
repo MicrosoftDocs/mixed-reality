@@ -16,8 +16,8 @@ However users can opt for configuring the list of applied constraints manually a
 
 Currently the following MRTK UX elements are supporting constraint manager:
 
-- [Bounds control](BoundsControl.md)
-- [Object manipulator](ObjectManipulator.md)
+- [Bounds control](bounds-control.md)
+- [Object manipulator](object-manipulator.md)
 
 ## Inspector properties and fields
 
