@@ -29,7 +29,7 @@ The following features are currently supported:
 * Supports ["Play" to HoloLens 2 with the Holographic Remoting app](#holographic-remoting-in-unity-editor-play-mode), allowing developers to debug scripts without building and deploying to the device.
 * Compatible with MRTK Unity 2.5.3 and newer through [MRTK OpenXR provider support](openxr-getting-started.md#using-mrtk-with-openxr-support).
 * Compatible with Unity [ARFoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) or later.
-* (Added in 0.1.3) Supports [desktop app Holographic Remoting](#holographic-remoting-in-desktop-app) from a built and deployed PC app.
+* (Added in 0.1.3) Supports [desktop app Holographic Remoting](#holographic-remoting-in-desktop-app) from a built and deployed Windows Standalone app.
 
 ## Holographic Remoting setup
 
@@ -59,6 +59,10 @@ Now you can click the “Play” button to play your Unity app into the Holograp
 > As of version 0.1.0, the Holographic Remoting runtime doesn’t support Anchors, and ARAnchorManager functionalities will not work through remoting.  This feature is coming in future releases.
 
 ## Holographic Remoting in desktop app
+
+> [!NOTE]
+> Windows Standalone app remoting support was added in the 0.1.3 package release.
+> As of version 0.1.3, this feature doesn’t support UWP builds.
 
 1. Follow the steps in [Holographic Remoting setup](#holographic-remoting-setup)
 2. Open **Edit -> Project Settings**, navigate to **XR plug-in Management**, and check the **Windows Mixed Reality feature set** box. Also, uncheck **Initialize XR on Startup**:
