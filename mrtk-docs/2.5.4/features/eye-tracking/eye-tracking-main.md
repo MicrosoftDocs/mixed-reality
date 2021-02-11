@@ -20,7 +20,7 @@ It is recommended to start by exploring some of the existing eye tracking sample
 
 1. [MRTK eye tracking samples](eye-tracking-examples-overview.md)
 
-2. [MRTK eye tracking setup](eye-tracking-bBasic-setup.md)
+2. [MRTK eye tracking setup](eye-tracking-basic-setup.md)
 
 3. [Accessing eye tracking data via Code](eye-tracking-eye-gaze-provider.md)
 

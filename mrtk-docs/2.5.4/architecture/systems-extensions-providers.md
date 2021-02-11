@@ -38,7 +38,7 @@ For information on creating extension services, please reference the [Extension 
 To be accessible to the MRTK, extension services are registered and configured using the Extensions section of the MixedRealityToolkit
 component's configuration profile.
 
-![Configuring an extension service](../features/images/profiles/configured-extension-service.png)
+![Configuring an extension service](../features/images/profiles/ConfiguredExtensionService.png)
 
 ## Data providers
 
@@ -66,7 +66,7 @@ query the service instance for which they were registered (ex: input system).
 
 The MRTK input system utilizes only data providers that implement the [`IMixedRealityInputDeviceManager`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputDeviceManager).
 
-![Input system data providers](../features/images/input/registered-service-providers.PNG)
+![Input system data providers](../features/images/input/RegisteredServiceProviders.PNG)
 
 The following example demonstrates accessing the input simulation provider and toggle the SmoothEyeTracking property.
 

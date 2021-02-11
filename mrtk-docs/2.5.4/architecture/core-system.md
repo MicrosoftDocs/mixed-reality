@@ -18,7 +18,7 @@ At the heart of the input system is the [InputSystem](../features/input/overview
 
 This service is responsible for:
 
-- Reading the [input system profile](../configuration/mixedReality-configuration-guide.md#input-system-settings)
+- Reading the [input system profile](../configuration/mixed-reality-configuration-guide.md#input-system-settings)
 - Starting the configured [data providers](../features/input/input-providers.md) (for example, `Windows Mixed Reality Device Manager` and `OpenVR Device Manager`).
 - Instantiation of the [GazeProvider](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGazeProvider), which is a component that is responsible for providing HoloLens (1st generation) style head gaze information
   in addition to HoloLens 2 style eye gaze information.

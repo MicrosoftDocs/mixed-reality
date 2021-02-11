@@ -35,12 +35,12 @@ Platform support components (e.g., Windows Mixed Reality Device Manager) must be
 
 ### Interface and event mappings
 
-Some events no longer have unique events and now contain a [MixedRealityInputAction](../features/input/InputActions.md). These actions are specified in the Input Actions profile and mapped to specific controllers and platforms in the Controller Mapping profile. Events like `OnInputDown` should now check the MixedRealityInputAction type.
+Some events no longer have unique events and now contain a [MixedRealityInputAction](../features/input/input-actions.md). These actions are specified in the Input Actions profile and mapped to specific controllers and platforms in the Controller Mapping profile. Events like `OnInputDown` should now check the MixedRealityInputAction type.
 
 Related input systems:
 
 * [Input Overview](../features/input/overview.md)
-* [Input Events](../features/input/inputEvents.md)
+* [Input Events](../features/input/input-events.md)
 * [Input Pointers](../features/input/pointers.md)
 
 | HTK 2017 |  MRTK v2  | Action Mapping |
@@ -127,7 +127,7 @@ Related input systems:
 |---------------------------|----------|-----------|
 | Button                     | [Interactable Objects](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [Button](../features/ux-building-blocks/Button.md) |
 | Interactable                     | [Interactable Objects](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [Interactable](../features/ux-building-blocks/Interactable.md) |
-| Bounding Box             | [Bounding Box](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md) | [Bounding Box](../features/ux-building-blocks/BoundingBox.md) |
+| Bounding Box             | [Bounding Box](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md) | [Bounding Box](../features/ux-building-blocks/bounding-box.md) |
 | App Bar             | [App Bar](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md) | [App Bar](../features/ux-building-blocks/app-bar.md) |
 | One Hand Manipulation (Grb and Move)   | [HandDraggable](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/Interactions/HandDraggable.cs) | [Manipulation Handler](../features/ux-building-blocks/manipulation-handler.md) |
 | Two Hand Manipulation (Grab/Move/Rotate/Scale)             | [TwoHandManipulatable](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/Interactions/TwoHandManipulatable.cs) | [Manipulation Handler](../features/ux-building-blocks/manipulation-handler.md) |

@@ -169,7 +169,7 @@ To try the scene, do the following steps.
 
 ## Using the in-editor hand input simulation to test a scene
 
-The in-editor input simulation allows you to test virtual object behavior given a specific type of input such as [controllers (i.e. hands, motion controllers)](features/input-simulation/input-simulation-service.md#controller-simulation) or [eyes](features/eye-tracking/eye-tracking-basicSetup.md#simulating-eye-tracking-in-the-unity-editor).
+The in-editor input simulation allows you to test virtual object behavior given a specific type of input such as [controllers (i.e. hands, motion controllers)](features/input-simulation/input-simulation-service.md#controller-simulation) or [eyes](features/eye-tracking/eye-tracking-basic-setup.md#simulating-eye-tracking-in-the-unity-editor).
 
 **You can open the keyboard shorcut reference by pressing CTRL+H key.**
 

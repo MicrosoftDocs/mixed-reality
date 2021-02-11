@@ -23,7 +23,7 @@ Pointers are configured as part of the Input System in MRTK via a [`MixedReality
 - *Pointing Extent* - Defines the max distance for which a Pointer can interact with a GameObject.
 
 - *Pointing Raycast Layer Masks* - This is a prioritized array of LayerMasks to determine which possible GameObjects any given Pointer can interact with and the order of interaction to attempt. This may be useful to ensure Pointers interact with UI elements first before other scene objects.
-![Pointer Profile Example](../images/input/pointers/pointer-profile.PNG)
+![Pointer Profile Example](../images/input/pointers/PointerProfile.PNG)
 
 ### Pointer options configuration
 

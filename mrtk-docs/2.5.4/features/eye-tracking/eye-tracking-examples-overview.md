@@ -142,7 +142,7 @@ Also, when you share your project with others, the sub scenes are not automatica
 
 ---
 
-Now that you know how to get the MRTK eye tracking example scenes to work, let's continue with diving deeper into how to select holograms with your eyes: [Eye-supported target selection](eye-tracking-targetSelection.md).
+Now that you know how to get the MRTK eye tracking example scenes to work, let's continue with diving deeper into how to select holograms with your eyes: [Eye-supported target selection](eye-tracking-target-selection.md).
 
 ---
-[Back to "Eye tracking in the MixedRealityToolkit"](eye-tracking_Main.md)
+[Back to "Eye tracking in the MixedRealityToolkit"](eye-tracking-Main.md)

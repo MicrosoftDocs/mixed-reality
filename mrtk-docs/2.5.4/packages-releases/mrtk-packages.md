@@ -206,7 +206,7 @@ The foundation package (`com.microsoft.mixedreality.toolkit.foundation`) forms t
 | | StandardAssets | Common assets; models, textures, materials, etc. |
 | MRTK/Services | | |
 | | [BoundarySystem](../features/boundary/boundary-system-getting-started.md) | System implementing VR boundary support. |
-| | [CameraSystem](../features/camera-system/CameraSystemOverview.md) | System implementing camera configuration and management. |
+| | [CameraSystem](../features/camera-system/camera-system-overview.md) | System implementing camera configuration and management. |
 | | [DiagnosticsSystem](../features/diagnostics/diagnostics-system-getting-started.md) | System implementing in application diagnostics, for example a visual profiler. |
 | | [InputSystem](../features/input/overview.md) | System providing support for accessing and handling user input. |
 | | [SceneSystem](../features/scene-system/scene-system-getting-started.md) | System providing multi-scene application support. |
@@ -264,7 +264,7 @@ The optional tools package (`com.microsoft.mixedreality.toolkit.tools)` contains
 | | [MigrationWindow](../features/tools/migration-window.md) | Tool that assists in updating code that uses deprecated MRTK components.  |
 | | [OptimizeWindow](../features/tools/optimize-window.md) | Utility to help automate configuring a mixed reality project for the best performance in Unity. |
 | | ReserializeAssetsUtility | Provides support for reserializing specific Unity files. |
-| | [RuntimeTools/Tools/ControllerMappingTool](../features/tools/controller-mappingTool.md) | Utility enabling developers to quickly determine Unity mappings for hardware controllers. |
+| | [RuntimeTools/Tools/ControllerMappingTool](../features/tools/controller-mapping-tool.md) | Utility enabling developers to quickly determine Unity mappings for hardware controllers. |
 | | ScreenshotUtility | Enables capturing application images in the Unity editor. |
 | | TextureCombinerWindow | Utility to combine graphics textures. |
 | | [Toolbox](../features/ux-building-blocks/toolbox.md) | UI that makes it easy to discover and use MRTK UX components. |

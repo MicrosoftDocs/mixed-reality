@@ -136,7 +136,7 @@ Next, apply the [`MixedRealityController`](xref:Microsoft.MixedReality.Toolkit.I
 
 #### Configure the interaction mappings
 
-The next step is to define the set of interaction mappings supported by the controller. For devices that receive their data via Unity's Input class, the [controller mapping tool](../tools/controller-mappingTool.md) is a helpful resource to confirm the correct axis and button mappings to assign to interactions.
+The next step is to define the set of interaction mappings supported by the controller. For devices that receive their data via Unity's Input class, the [controller mapping tool](../tools/controller-mapping-tool.md) is a helpful resource to confirm the correct axis and button mappings to assign to interactions.
 
 The following example is abbreviated from the `GenericOpenVRController` class, located in the MRTK/Providers/OpenVR folder.
 
@@ -285,4 +285,4 @@ If a data provider is submitted and accepted as a part of the Microsoft Mixed Re
 - [`IMixedRealityInputHandler<T>` interface](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1)
 - [`IMixedRealityDataProvider` interface](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider)
 - [`IMixedRealityCapabilityCheck` interface](xref:Microsoft.MixedReality.Toolkit.IMixedRealityCapabilityCheck)
-- [Controller Mapping Tool](../tools/ControllerMappingTool.md)
+- [Controller Mapping Tool](../tools/controller-mappingTool.md)
