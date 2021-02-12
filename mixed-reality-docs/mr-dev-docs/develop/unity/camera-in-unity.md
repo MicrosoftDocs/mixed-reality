@@ -88,7 +88,7 @@ A depth buffer can improve visual quality so long as Windows can accurately map 
 
 ## Automatic Scene and Camera Setup with Mixed Reality Toolkit 
 
-Follow the [step-by-step](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) guide to add Mixed Reality Toolkit to your Unity project and it will configure your project automatically. You can also manually configure the project without MRTK with the guide in the section below.
+Follow the [step-by-step](tutorials/mr-learning-base-01.md) guide to add Mixed Reality Toolkit to your Unity project and it will configure your project automatically. You can also manually configure the project without MRTK with the guide in the section below.
 
 ## Next Development Checkpoint
 
