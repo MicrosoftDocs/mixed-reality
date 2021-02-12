@@ -28,7 +28,7 @@ MRTK provides dialog control in three sizes with one or two button options. You 
 ![Screenshot of different size dialog overlays running on HoloLens](images/MRTK_UX_Dialog_Types.jpg)
 
 
-* For more information, see [MRTK - Dialog](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/Dialog/README_Dialog.html).
+* For more information, see [MRTK - Dialog](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/experimental/dialog.md).
 
 <br>
 

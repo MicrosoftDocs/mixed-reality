@@ -20,7 +20,7 @@ Your mixed reality application can invoke the system keyboard at any time, which
 
 ## System keyboard in MRTK (Mixed Reality Toolkit) for Unity
 
-* [MRTK - System keyboard](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_SystemKeyboard.html)
+* [MRTK - System keyboard](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/system-keyboard.md)
 
 <br>
 
