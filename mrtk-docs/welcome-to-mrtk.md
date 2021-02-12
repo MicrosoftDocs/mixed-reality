@@ -160,3 +160,10 @@ You can find our planning material on [our wiki](https://github.com/Microsoft/Mi
 Learn how you can contribute to MRTK at [Contributing](contributing/contributing.md).
 
 **For details on the different branches used in the Mixed Reality Toolkit repositories, check this [Branch Guide here](https://github.com/Microsoft/MixedRealityToolkit-Unity/wiki/Branch-Guide).**
+
+## Getting help
+
+If you run into issues caused by MRTK or otherwise have questions about how to do something, there are a few resources that can help:
+
+* For bug reports, please [file an issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/new/choose) on the GitHub repo.
+* For questions, please reach out on either [StackOverflow](https://stackoverflow.com/questions/tagged/mrtk) or the [mixed-reality-toolkit channel](https://holodevelopers.slack.com/messages/C2H4HT858) on Slack. You can join the Slack community via the [automatic invitation sender](https://holodevelopersslack.azurewebsites.net/).
