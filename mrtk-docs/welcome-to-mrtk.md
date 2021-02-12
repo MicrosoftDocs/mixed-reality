@@ -62,32 +62,243 @@ If you're an experienced Mixed Reality or MRTK developer, check the links in the
 
 ## Feature areas
 
-| ![Input System](features/images/MRTK_Icon_InputSystem.png) [Input System](features/input/overview.md)<br/>&nbsp;  | ![Hand Tracking<br/> (HoloLens 2)](features/images/MRTK_Icon_HandTracking.png) [Hand Tracking<br/> (HoloLens 2)](features/input/hand-tracking.md) | ![Eye Tracking<br/> (HoloLens 2)](features/images/MRTK_Icon_EyeTracking.png) [Eye Tracking<br/> (HoloLens 2)](features/eye-tracking/eye-tracking-Main.md) | ![Profiles](features/images/MRTK_Icon_Profiles.png) [Profiles](configuration/mixed-reality-configuration-guide.md)<br/>&nbsp; | ![Hand Tracking<br/> (Ultraleap)](features/images/MRTK_Icon_HandTracking.png) [Hand Tracking (Ultraleap)](features/cross-platform/leap-motion-mrtk.md)|
-| :--- | :--- | :--- | :--- | :--- |
-| ![UI Controls 1](features/images/MRTK_Icon_UIControls.png) [UI Controls 2](welcome-to-mrtk.md#ux-building-blocks)<br/>&nbsp; | ![Solvers](features/images/MRTK_Icon_Solver.png) [Solvers 1](features/ux-building-blocks/solvers/solver.md)<br/>&nbsp; | ![Multi-Scene<br/> Manager](features/images/MRTK_Icon_SceneSystem.png) [Multi-Scene<br/> Manager](features/scene-system/scene-system-getting-started.md) | ![Spatial<br/> Awareness](features/images/MRTK_Icon_SpatialUnderstanding.png) [Spatial<br/> Awareness](features/spatial-awareness/spatial-awareness-getting-started.md) | ![Diagnostic<br/> Tool](features/images/MRTK_Icon_Diagnostics.png) [Diagnostic<br/> Tool](features/diagnostics/diagnostics-system-getting-started.md) |
-| ![MRTK Standard Shader View](features/images/MRTK_Icon_StandardShader.png) [MRTK Standard Shader Example View](features/rendering/mrtk-standard-shader.md?q=shader) | ![Speech & Dictation](features/images/MRTK_Icon_VoiceCommand.png) [Speech](features/input/speech.md)<br/> & [Dictation](features/input/dictation.md) | ![Boundary<br/>System](features/images/MRTK_Icon_Boundary.png) [Boundary<br/>System](features/boundary/boundary-system-getting-started.md)| ![In-Editor<br/>Simulation](features/images/MRTK_Icon_InputSystem.png) [In-Editor<br/>Simulation](features/input-simulation/input-simulation-service.md) | ![Experimental<br/>Features](features/images/MRTK_Icon_Experimental.png) [Experimental<br/>Features](contributing/experimental-features.md)|
+:::row:::
+    :::column:::
+       [![Input System](features/images/MRTK_Icon_InputSystem.png)](features/input/overview.md)
+        **[Input System](features/input/overview.md)**<br>
+    :::column-end:::
+    :::column:::
+        [![Hand Tracking (HoloLens 2)](features/images/MRTK_Icon_HandTracking.png)](features/input/overview.md)
+        **[Hand Tracking <br> (HoloLens 2)](features/input/hand-tracking.md)**<br>
+    :::column-end:::
+    :::column:::
+        [![Eye Tracking (HoloLens 2)](features/images/MRTK_Icon_EyeTracking.png)](features/eye-tracking/eye-tracking-Main.md)
+        **[Eye Tracking <br/> (HoloLens 2)](features/eye-tracking/eye-tracking-Main.md)**<br>
+    :::column-end:::
+    :::column:::
+        [![Profiles](features/images/MRTK_Icon_Profiles.png)](configuration/mixed-reality-configuration-guide.md)
+        **[Profiles](configuration/mixed-reality-configuration-guide.md)**<br>
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![Hand Tracking (Ultraleap)](features/images/MRTK_Icon_HandTracking.png)](features/cross-platform/leap-motion-mrtk.md)
+        **[Hand Tracking <br/> (Ultraleap)](features/cross-platform/leap-motion-mrtk.md)**<br>
+    :::column-end:::
+    :::column:::
+        [![UI Controls 1](features/images/MRTK_Icon_UIControls.png)](#ux-building-blocks)
+        **[UI Controls 1](#ux-building-blocks)**<br>
+    :::column-end:::
+    :::column:::
+        [![Solvers](features/images/MRTK_Icon_Solver.png)](features/ux-building-blocks/solvers/solver.md)
+        **[Solvers](features/ux-building-blocks/solvers/solver.md)**<br>
+    :::column-end:::
+    :::column:::
+        [![Multi-Scene Manager](features/images/MRTK_Icon_SceneSystem.png)](features/scene-system/scene-system-getting-started.md)
+        **[Multi-Scene<br/> Manager](features/scene-system/scene-system-getting-started.md)**<br>
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![Spatial Awareness](features/images/MRTK_Icon_SpatialUnderstanding.png)](features/spatial-awareness/spatial-awareness-getting-started.md)
+        **[Spatial <br/> Awareness](features/spatial-awareness/spatial-awareness-getting-started.md)**<br>
+    :::column-end:::
+    :::column:::
+        [![Diagnostic Tool](features/images/MRTK_Icon_Diagnostics.png)](features/diagnostics/diagnostics-system-getting-started.md)
+        **[Diagnostic <br/> Tool](features/diagnostics/diagnostics-system-getting-started.md)**<br>
+    :::column-end:::
+    :::column:::
+        [![MRTK Standard Shader View](features/images/MRTK_Icon_StandardShader.png)](features/rendering/mrtk-standard-shader.md?q=shader)
+        **[MRTK Standard Shader Example View](features/rendering/mrtk-standard-shader.md?q=shader)**<br>
+    :::column-end:::
+    :::column:::
+        [![Speech & Dictation](features/images/MRTK_Icon_VoiceCommand.png)](features/scene-system/scene-system-getting-started.md)
+        **[Speech](features/input/speech.md)<br/> & [Dictation](features/input/dictation.md)**<br>
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![Boundary System](features/images/MRTK_Icon_Boundary.png)](features/boundary/boundary-system-getting-started.md)
+        **[Boundary <br/>System](features/boundary/boundary-system-getting-started.md)**<br>
+    :::column-end:::
+    :::column:::
+        [![In-Editor Simulation](features/images/MRTK_Icon_InputSystem.png)](features/diagnostics/diagnostics-system-getting-started.md)
+        **[In-Editor <br/> Simulation](features/diagnostics/diagnostics-system-getting-started.md)**<br>
+    :::column-end:::
+    :::column:::
+        [![Experimental Features](features/images/MRTK_Icon_Experimental.png)](contributing/experimental-features.md)
+        **[Experimental <br/> Features](contributing/experimental-features.md)**<br>
+    :::column-end:::
+    :::column:::
+    :::column-end:::
+:::row-end:::
 
 ## UX building blocks
 
-|  [![Button](features/images/Button/MRTK_Button_Main.png)](features/ux-building-blocks/button.md) [Button](features/ux-building-blocks/button.md) | [![Bounds Control](features/images/bounds-control/MRTK_BoundsControl_Main.png)](features/ux-building-blocks/bounds-control.md) [Bounds Control](features/ux-building-blocks/bounds-control.md) | [![Object Manipulator](features/images/manipulation-handler/MRTK_Manipulation_Main.png)](features/ux-building-blocks/object-manipulator.md) [Object Manipulator](features/ux-building-blocks/object-manipulator.md) |
-|:--- | :--- | :--- |
-| A button control which supports various input methods, including HoloLens 2's articulated hand | Standard UI for manipulating objects in 3D space | Script for manipulating objects with one or two hands |
-|  [![Slate](features/images/slate/MRTK_Slate_Main.png)](features/ux-building-blocks/slate.md) [Slate](features/ux-building-blocks/slate.md) | [![System Keyboard](features/images/system-keyboard/MRTK_SystemKeyboard_Main.png)](features/ux-building-blocks/system-keyboard.md) [System Keyboard](features/ux-building-blocks/system-keyboard.md) | [![Interactable](features/images/interactable/InteractableExamples.png)](features/ux-building-blocks/interactable.md) [Interactable](features/ux-building-blocks/interactable.md) |
-| 2D style plane which supports scrolling with articulated hand input | Example script of using the system keyboard in Unity  | A script for making objects interactable with visual states and theme support |
-|  [![Solver](features/images/solver/MRTK_Solver_Main.png)](features/ux-building-blocks/solvers/solver.md) [Solver](features/ux-building-blocks/solvers/solver.md) | [![Object Collection](features/images/object-collection/MRTK_ObjectCollection_Main.jpg)](features/ux-building-blocks/object-collection.md) [Object Collection](features/ux-building-blocks/object-collection.md) | [![Tooltip](features/images/tooltip/MRTK_Tooltip_Main.png)](features/ux-building-blocks/tooltip.md) [Tooltip](features/ux-building-blocks/tooltip.md) |
-| Various object positioning behaviors such as tag-along, body-lock, constant view size and surface magnetism | Script for laying out an array of objects in a three-dimensional shape | Annotation UI with a flexible anchor/pivot system, which can be used for labeling motion controllers and objects |
-|  [![Slider](features/images/slider/MRTK_UX_Slider_Main.jpg)](features/ux-building-blocks/sliders.md) [Slider](features/ux-building-blocks/sliders.md) | [![MRTK Standard Shader View 2](features/images/mrtk-standard-shader/MRTK_StandardShader.jpg)](features/rendering/mrtk-standard-shader.md) [MRTK Standard Shader 2](features/rendering/mrtk-standard-shader.md) | [![Hand Menu 1](features/images/solver/MRTK_UX_HandMenu.png)](features/ux-building-blocks/hand-menu.md) [Hand Menu 2](features/ux-building-blocks/hand-menu.md) |
-| Slider UI for adjusting values supporting direct hand tracking interaction | MRTK's Standard shader supports various Fluent design elements with performance | Hand-locked UI for quick access, using the Hand Constraint Solver |
-|  [![App Bar](features/images/app-bar/MRTK_AppBar_Main.png)](features/ux-building-blocks/app-bar.md) [App Bar](features/ux-building-blocks/app-bar.md) | [![Pointers](features/images/Pointers/MRTK_Pointer_Main.png)](features/input/pointers.md) [Pointers](features/input/Pointers.md) | [![Fingertip Visualization](features/images/fingertip/MRTK_FingertipVisualization_Main.png)](features/ux-building-blocks/fingertip-visualization.md) [Fingertip Visualization](features/ux-building-blocks/fingertip-visualization.md) |
-| UI for Bounds Control's manual activation | Learn about various types of pointers | Visual affordance on the fingertip which improves the confidence for the direct interaction |
-|  [![Near Menu](features/images/near-menu/MRTK_UX_NearMenu.png)](features/ux-building-blocks/near-menu.md) [Near Menu](features/ux-building-blocks/near-menu.md) | [![Spatial Awareness 1](features/images/spatial-awareness/MRTK_SpatialAwareness_Main.png)](features/spatial-awareness/spatial-awareness-getting-started.md) [Spatial Awareness](features/spatial-awareness/spatial-awareness-getting-started.md) | [![Voice Command](features/images/input/MRTK_Input_Speech.png)](features/input/speech.md) [Voice Command](features/input/speech.md) / [Dictation](features/input/dictation.md) |
-| Floating menu UI for the near interactions | Make your holographic objects interact with the physical environments | Scripts and examples for integrating speech input |
-|  [![Progress Indicator](features/images/progress-indicator/MRTK_ProgressIndicator_Main.png)](features/ux-building-blocks/progress-indicator.md) [Progress Indicator](features/ux-building-blocks/progress-indicator.md) | [![Dialog](features/images/Dialog/MRTK_UX_Dialog_Main.png)](features/experimental/dialog.md) [Dialog [Experimental]](features/experimental/dialog.md) | [![Hand Coach](features/images/hand-coach/MRTK_UX_HandCoach_Main.jpg)](features/experimental/hand-coach.md) [Hand Coach [Experimental]](features/experimental/hand-coach.md) |
-| Visual indicator for communicating data process or operation | UI for asking for user's confirmation or acknowledgement  | Component that helps guide the user when the gesture has not been taught |
-|  [![Hand Physics Service](features/images/hand-physics/MRTK_UX_HandPhysics_Main.jpg)](features/experimental/hand-physics-service.md) [Hand Physics Service [Experimental]](features/experimental/hand-physics-service.md) | [![Scrolling Collection](features/images/scrolling-collection/ScrollingCollection_Main.jpg)](features/ux-building-blocks/scrolling-object-collection.md) [Scrolling Collection](features/ux-building-blocks/scrolling-object-collection.md) | [![Dock](features/images/Dock/MRTK_UX_Dock_Main.png)](features/experimental/dock.md) [Dock [Experimental]](features/experimental/dock.md) |
-| The hand physics service enables rigid body collision events and interactions with articulated hands | An Object Collection that natively scrolls 3D objects | The Dock allows objects to be moved in and out of predetermined positions |
-|  [![Eye Tracking: Target Selection](features/images/eye-tracking/mrtk_et_targetselect.png)](features/eye-tracking/eye-tracking-target-selection.md) [Eye Tracking: Target Selection](features/eye-tracking/eye-tracking-target-selection.md) | [![Eye Tracking: Navigation](features/images/eye-tracking/mrtk_et_navigation.png)](features/eye-tracking/eye-tracking-navigation.md) [Eye Tracking: Navigation](features/eye-tracking/eye-tracking-navigation.md) | [![Eye Tracking: Heat Map](features/images/eye-tracking/mrtk_et_heatmaps.png)](features/eye-tracking/eye-tracking-examples-overview.md#visualization-of-visual-attention) [Eye Tracking: Heat Map](features/eye-tracking/eye-tracking-examples-overview.md#visualization-of-visual-attention) |
-| Combine eyes, voice and hand input to quickly and effortlessly select holograms across your scene | Learn how to auto-scroll text or fluently zoom into focused content based on what you are looking at | Examples for logging, loading and visualizing what users have been looking at in your app |
+:::row:::
+    :::column:::
+       [![Button](features/images/Button/MRTK_Button_Main.png)](features/ux-building-blocks/button.md)
+        **[Button](features/ux-building-blocks/button.md)**<br>
+        A button control which supports various input methods, including HoloLens 2's articulated hand
+    :::column-end:::
+    :::column:::
+        [![Bounds Control](features/images/bounds-control/MRTK_BoundsControl_Main.png)](features/ux-building-blocks/bounds-control.md)
+        **[Bounds Control](features/ux-building-blocks/bounds-control.md)**<br>
+        Standard UI for manipulating objects in 3D space
+    :::column-end:::
+    :::column:::
+        [![Object Manipulator](features/images/manipulation-handler/MRTK_Manipulation_Main.png)](features/ux-building-blocks/object-manipulator.md)
+        **[Object Manipulator](features/ux-building-blocks/object-manipulator.md)**<br>
+        Script for manipulating objects with one or two hands
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![Slate](features/images/slate/MRTK_Slate_Main.png)](features/ux-building-blocks/slate.md)
+        **[Slate](features/ux-building-blocks/slate.md)**<br>
+        2D style plane which supports scrolling with articulated hand input
+    :::column-end:::
+    :::column:::
+        [![System Keyboard](features/images/system-keyboard/MRTK_SystemKeyboard_Main.png)](features/ux-building-blocks/system-keyboard.md)
+        **[System Keyboard](features/ux-building-blocks/system-keyboard.md)**<br>
+        Example script of using the system keyboard in Unity
+    :::column-end:::
+    :::column:::
+        [![Interactable](features/images/interactable/InteractableExamples.png)](features/ux-building-blocks/interactable.md)
+        **[Interactable](features/ux-building-blocks/interactable.md)**<br>
+        A script for making objects interactable with visual states and theme support
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![Solver](features/images/solver/MRTK_Solver_Main.png)](features/ux-building-blocks/solvers/solver.md)
+        **[Solver](features/ux-building-blocks/solvers/solver.md)**<br>
+        Various object positioning behaviors such as tag-along, body-lock, constant view size and surface magnetism
+    :::column-end:::
+    :::column:::
+        [![Object Collection](features/images/object-collection/MRTK_ObjectCollection_Main.jpg)](features/ux-building-blocks/object-collection.md)
+        **[Object Collection](features/ux-building-blocks/object-collection.md)**<br>
+        Script for laying out an array of objects in a three-dimensional shape
+    :::column-end:::
+    :::column:::
+        [![Tooltip](features/images/tooltip/MRTK_Tooltip_Main.png)](features/ux-building-blocks/tooltip.md)
+        **[Tooltip](features/ux-building-blocks/tooltip.md)**<br>
+        Annotation UI with a flexible anchor/pivot system, which can be used for labeling motion controllers and objects
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![Slider](features/images/slider/MRTK_UX_Slider_Main.jpg)](features/ux-building-blocks/sliders.md)
+        **[Slider](features/ux-building-blocks/sliders.md)**<br>
+        Slider UI for adjusting values supporting direct hand tracking interaction
+    :::column-end:::
+    :::column:::
+        [![MRTK Standard Shader](features/images/mrtk-standard-shader/MRTK_StandardShader.jpg)](features/rendering/mrtk-standard-shader.md)
+        **[MRTK Standard Shader](features/rendering/mrtk-standard-shader.md)**<br>
+        MRTK's Standard shader supports various Fluent design elements with performance
+    :::column-end:::
+    :::column:::
+        [![Hand Menu](features/images/solver/MRTK_UX_HandMenu.png)](features/ux-building-blocks/hand-menu.md)
+        **[Hand Menu](features/ux-building-blocks/hand-menu.md)**<br>
+        Hand-locked UI for quick access, using the Hand Constraint Solver
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![App Bar](features/images/app-bar/MRTK_AppBar_Main.png)](features/ux-building-blocks/app-bar.md)
+        **[App Bar](features/ux-building-blocks/app-bar.md)**<br>
+        UI for Bounds Control's manual activation
+    :::column-end:::
+    :::column:::
+        [![Pointers](features/images/Pointers/MRTK_Pointer_Main.png)](features/input/pointers.md)
+        **[Pointers](features/input/pointers.md)**<br>
+        Learn about various types of pointers
+    :::column-end:::
+    :::column:::
+        [![Fingertip Visualization](features/images/fingertip/MRTK_FingertipVisualization_Main.png)](features/ux-building-blocks/fingertip-visualization.md)
+        **[Fingertip Visualization](features/ux-building-blocks/fingertip-visualization.md)**<br>
+        Visual affordance on the fingertip which improves the confidence for the direct interaction
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![Near Menu](features/images/near-menu/MRTK_UX_NearMenu.png)](features/ux-building-blocks/near-menu.md)
+        **[Near Menu](features/ux-building-blocks/near-menu.md)**<br>
+        Floating menu UI for the near interactions
+    :::column-end:::
+    :::column:::
+        [![Spatial Awareness](features/images/spatial-awareness/MRTK_SpatialAwareness_Main.png)](features/spatial-awareness/spatial-awareness-getting-started.md)
+        **[Spatial Awareness](features/spatial-awareness/spatial-awareness-getting-started.md)**<br>
+        Make your holographic objects interact with the physical environments
+    :::column-end:::
+    :::column:::
+        [![Voice Command](features/images/input/MRTK_Input_Speech.png)](features/input/speech.md)
+        **[Voice Command](features/input/speech.md)**<br>
+        Scripts and examples for integrating speech input
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![Progress Indicator](features/images/progress-indicator/MRTK_ProgressIndicator_Main.png)](features/ux-building-blocks/progress-indicator.md)
+        **[Progress Indicator](features/ux-building-blocks/progress-indicator.md)**<br>
+        Visual indicator for communicating data process or operation
+    :::column-end:::
+    :::column:::
+        [![Dialog](features/images/Dialog/MRTK_UX_Dialog_Main.png)](features/experimental/dialog.md)
+        **[Dialog [Experimental]](features/experimental/dialog.md)**<br>
+        UI for asking for user's confirmation or acknowledgement
+    :::column-end:::
+    :::column:::
+        [![Hand Coach](features/images/hand-coach/MRTK_UX_HandCoach_Main.jpg)](features/experimental/hand-coach.md)
+        **[Hand Coach [Experimental]](features/experimental/hand-coach.md)**<br>
+        Component that helps guide the user when the gesture has not been taught
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![Hand Physics Service](features/images/hand-physics/MRTK_UX_HandPhysics_Main.jpg)](features/experimental/hand-physics-service.md)
+        **[Hand Physics Service [Experimental]](features/experimental/hand-physics-service.md)**<br>
+        The hand physics service enables rigid body collision events and interactions with articulated hands
+    :::column-end:::
+    :::column:::
+        [![Scrolling Collection](features/images/scrolling-collection/ScrollingCollection_Main.jpg)](features/ux-building-blocks/scrolling-object-collection.md)
+        **[Scrolling Collection](features/ux-building-blocks/scrolling-object-collection.md)**<br>
+        An Object Collection that natively scrolls 3D objects
+    :::column-end:::
+    :::column:::
+        [![Dock](features/images/Dock/MRTK_UX_Dock_Main.png)](features/experimental/dock.md)
+        **[Dock [Experimental]](features/experimental/dock.md)**<br>
+        The Dock allows objects to be moved in and out of predetermined positions
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![Eye Tracking: Target Selection](features/images/eye-tracking/mrtk_et_targetselect.png)](features/eye-tracking/eye-tracking-target-selection.md)
+        **[Eye Tracking: Target Selection](features/eye-tracking/eye-tracking-target-selection.md)**<br>
+        Combine eyes, voice and hand input to quickly and effortlessly select holograms across your scene
+    :::column-end:::
+    :::column:::
+        [![Eye Tracking: Navigation](features/images/eye-tracking/mrtk_et_navigation.png)](features/eye-tracking/eye-tracking-navigation.md)
+        **[Eye Tracking: Navigation](features/eye-tracking/eye-tracking-navigation.md)**<br>
+        Learn how to auto-scroll text or fluently zoom into focused content based on what you are looking at
+    :::column-end:::
+    :::column:::
+        [![Eye Tracking: Heat Map](features/images/eye-tracking/mrtk_et_heatmaps.png)](features/eye-tracking/eye-tracking-examples-overview.md#visualization-of-visual-attention)
+        **[Eye Tracking: Heat Map](features/eye-tracking/eye-tracking-examples-overview.md#visualization-of-visual-attention)**<br>
+        Examples for logging, loading and visualizing what users have been looking at in your app
+    :::column-end:::
+:::row-end:::
 
 ## Tools
 
