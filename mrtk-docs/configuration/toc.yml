@@ -4,5 +4,5 @@
   href: mixed-reality-configuration-guide.md
 - name: MRTK Configuration Dialog
   href: mrtk-configuration-dialog.md
-- name: usingupm
+- name: Using the Unity Package Manager
   href: usingupm.md

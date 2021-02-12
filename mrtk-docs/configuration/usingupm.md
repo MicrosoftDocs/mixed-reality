@@ -1,5 +1,5 @@
 ---
-title: usingupm
+title: Using the Unity Package Manager
 description: Using MRTK in Unity pakage manager
 author: davidkline-ms
 ms.author: davidkl

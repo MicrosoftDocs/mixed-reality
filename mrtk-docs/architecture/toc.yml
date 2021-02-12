@@ -1,18 +1,21 @@
-- name: Configuration and Profiles
-  href: configuration-and-profiles.md
-- name: Controllers Pointers and Focus
-  href: controllers-pointers-and-focus.md
-- name: Core System
-  href: core-system.md
-- name: Framework and Runtime
-  href: framework-and-runtime.md
-- name: Mixed Reality Services
-  href: mixed-reality-services.md
 - name: Overview
   href: overview.md
+- name: Framework and Runtime
+  href: framework-and-runtime.md
+- name: Input System
+  items:
+    - name: Terminology
+      href: terminology.md
+    - name: Core System
+      href: core-system.md
+    - name: Controllers Pointers and Focus
+      href: controllers-pointers-and-focus.md
+- name: Configuration and Profiles
+  href: configuration-and-profiles.md
+- name: Mixed Reality Services
+  href: mixed-reality-services.md
 - name: Spatial Awareness
   href: spatial-awareness.md
 - name: Systems Extensions Providers
   href: systems-extensions-providers.md
-- name: Terminology
-  href: terminology.md
+
