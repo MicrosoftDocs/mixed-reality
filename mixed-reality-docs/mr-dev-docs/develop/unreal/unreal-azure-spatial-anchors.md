@@ -40,6 +40,12 @@ Check out the [Azure Spatial Anchors authentication](/azure/spatial-anchors/conc
 > [!NOTE]
 > Azure Spatial Anchors in Unreal 4.25 does not support Azure AD authentication tokens, but support for this functionality will be coming in a later release.
 
+## Enabling Internet access
+
+Open **Project Settings > HoloLens** and enable the **Internet Client** capability:
+
+![HoloLens project settings with capabilities highlighted](images/asa-enable-wifi-connection.jpg)
+
 ## Adding Azure Spatial Anchors plugins
 
 Enable the Azure Spatial Anchors plugins in the Unreal editor by:
