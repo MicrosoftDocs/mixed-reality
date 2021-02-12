@@ -1,6 +1,6 @@
 ---
 title: Tooltip
-description: A tooltip is a short description that is linked to another control or object.
+description: Learn how to use tooltips in mixed reality applications, which are short descriptions that are linked to another control or object.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
@@ -8,12 +8,11 @@ ms.topic: article
 keywords: Mixed Reality, Controls, interaction, ui, ux, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, tooltip, MRTK, Mixed Reality Toolkit
 ---
 
-
 # Tooltip
 
 ![Tooltip](images/UX_Hero_Tooltip.jpg)
 
-A tooltip is a short description that is linked to another control or object. They are used to convey a hint or extra information upon closer inspection. Tooltips help users understand unfamiliar objects in the physical environment that aren't described directly. 
+A tooltip is a short description that is linked to another control or object. They're used to convey a hint or extra information upon closer inspection. Tooltips help users understand unfamiliar objects in the physical environment that aren't described directly. 
 
 <br>
 

@@ -1,20 +1,20 @@
 ---
 title: Performance recommendations for Unreal
-description: Recommendations for optimal performance for mixed reality apps in Unreal
+description: Learn how to get the best performance out of your mixed reality apps with our recommended Unreal project settings.
 author: hferrone
-ms.author: v-hferrone
+ms.author: safarooq
 ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, performance, optimization, settings, documentation
 ---
 
-
 # Performance recommendations for Unreal
 
 Unreal Engine has several features that can increase an apps performance, all based on the discussion outlined in [performance recommendations for mixed reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md). You're encouraged to read up on application bottlenecks, analyzing and profiling mixed reality apps, and general performance fixes before continuing.
 
 ## Recommended Unreal project settings
+
 You can find each of the following settings in **Edit > Project Settings**.
 
 1. Using the mobile VR renderer:
@@ -33,7 +33,7 @@ You can find each of the following settings in **Edit > Project Settings**.
 
 ![VR rendering settings](images/unreal/performance-recommendations-img-03.png)
 
-4. Ensure **Default** or **D3D12** is the selected **Default RHI** when using OpenXR.
+4. **[OpenXR only]** Ensure **Default** or **D3D12** is the selected **Default RHI**:
     * Selecting **D3D11** will have a negative performance impact due to the platform performing an additional render pass. **D3D12** should provide rendering performance improvements besides avoiding the additional render pass.
 
 ![Default RHI](images/unreal/performance-recommendations-img-09.png)
@@ -74,4 +74,5 @@ You can find each of the following settings in **Edit > Project Settings**.
 ![Mobile shader permutation reduction](images/unreal/performance-recommendations-img-08.png)
 
 ## See also
+
 * [Unreal Engine mobile performance guidelines]( https://docs.unrealengine.com/Platforms/Mobile/Performance/index.html)

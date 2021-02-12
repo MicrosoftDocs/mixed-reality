@@ -1,6 +1,6 @@
 ---
-title: Getting started tutorials - 1. Overview and objectives
-description: This course shows you how to implement Azure Face Recognition within a mixed reality application.
+title: Tutorial overview and objectives
+description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
@@ -22,7 +22,7 @@ ms.localizationpriority: high
     </colgroup>
     <tr>
         <td><strong>Course</strong></td>
-        <td><a href="../../../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
         <td><a href="https://www.microsoft.com//hololens/hardware"><strong>HoloLens 2</strong></a></td>
         <td><a href="../../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
@@ -47,4 +47,4 @@ ms.localizationpriority: high
 > [!IMPORTANT]
 > The recommended Unity version for this tutorial series is Unity 2019.2.X. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
 
-[Next lesson: 2. Initializing your project and first application](../../../mrlearning-base-ch1.md)
+[Next lesson: 2. Initializing your project and first application](./mr-learning-base-02.md)

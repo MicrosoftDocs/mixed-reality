@@ -9,10 +9,9 @@ ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, tutorial, getting started, mrtk, uxt, UX Tools, documentation, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
-
 # 1. Getting started
 
-Whether you're new to mixed reality or a seasoned pro, you're in the right place to start your [HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/) and [Unreal Engine](https://www.unrealengine.com/en-US/) journey. This tutorial series will give you a step-by-step guide on how to build an interactive chess app with the [UX Tools plugin](https://github.com/microsoft/MixedReality-UXTools-Unreal) - part of the [Mixed Reality Toolkit for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal). The plugin will help you add common UX features to your projects with code, blueprints, and examples. 
+Whether you're new to mixed reality or a seasoned pro, you're in the right place to start your [HoloLens 2](../../../index.yml) and [Unreal Engine](https://www.unrealengine.com/en-US/) journey. This tutorial series will give you a step-by-step guide on how to build an interactive chess app with the [UX Tools plugin](https://github.com/microsoft/MixedReality-UXTools-Unreal) - part of the [Mixed Reality Toolkit for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal). The plugin will help you add common UX features to your projects with code, blueprints, and examples. 
 
 ![End scene in viewport](images/unreal-uxt/5-endscene.PNG)
 
@@ -36,7 +35,7 @@ Make sure you've installed the following before jumping in:
 
 First, make sure your setup with all the required Visual Studio packages:
 1. Install the latest version of [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)
-1. Install the following [workloads](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-workloads):
+1. Install the following [workloads](/visualstudio/install/modify-visual-studio#modify-workloads):
     * Desktop development with C++
     * .NET desktop development
     * Universal Windows Platform development
@@ -44,7 +43,7 @@ First, make sure your setup with all the required Visual Studio packages:
     * USB Device Connectivity
     * C++ (v142) Universal Windows Platform tools
 
-1. Install the following [components](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-individual-components):
+1. Install the following [components](/visualstudio/install/modify-visual-studio#modify-individual-components):
     * Compilers, build tools, and runtimes > MSVC v142 - VS 2019 C++ ARM64 build tools (latest version)
 
 You can confirm the installation with the following picture

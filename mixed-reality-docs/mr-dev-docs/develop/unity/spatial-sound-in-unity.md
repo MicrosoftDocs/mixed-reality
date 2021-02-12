@@ -1,6 +1,6 @@
 ---
 title: Spatial sound in Unity
-description: Play spatial sound from a specific 3D point within your Unity scene.
+description: Learn how to play and attenuate spatial sounds from a specific 3D point within your Unity scene with examples.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 11/07/2019
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Unity, spatial sound, HRTF, room size, mixed reality headset, windows mixed reality headset, virtual reality headset, MRTK, Mixed Reality Toolkit, spatializer, reverb
 ---
 
-
 # Spatial sound in Unity
 
 This page links to resources for spatial sound in Unity.
 
 ## Spatializer options
+
 Spatializer options for mixed reality applications include:
 * Unity provides the *MS HRTF Spatializer* as part of the *Windows Mixed Reality* optional package.
   * Runs on CPU in a higher-cost 'single-source' architecture.
@@ -44,11 +44,13 @@ For more information, see:
 * [Unity's spatializer documentation](https://docs.unity3d.com/Manual/VRAudioSpatializer.html)
 
 ## Distance-based attenuation
+
 Unity's default distance-based decay has a minimum distance of 1 meter and a maximum distance of 500 meters, with a logarithmic rolloff. These settings may work for your scenario, or you may find that sources attenuate too quickly or too slowly. For more information, see:
 * [Sound design in mixed reality](../../design/spatial-sound-design.md) for recommended settings.
 * [Unity's audio source documentation](https://docs.unity3d.com/2019.3/Documentation/Manual/class-AudioSource.html) for instructions on setting these curves.
 
 ## Reverb
+
 The _Microsoft Spatializer_ disables post-spatializer effects by default. To enable reverb and other effects for spatialized sources:
 * Attach the **Room Effect Send Level** component to each source
 * Adjust the send level curve for each source, to control the gain on the audio sent back to the graph for effects processing
@@ -56,6 +58,7 @@ The _Microsoft Spatializer_ disables post-spatializer effects by default. To ena
 See [Chapter 5 of the spatializer tutorial](tutorials/unity-spatial-audio-ch5.md) for details.
 
 ## Unity spatial sound examples
+
 For examples of spatial sound in Unity, see:
 * [MRTK demos](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.Examples/Demos/Audio)
 * The [Microsoft Spatializer sample project](https://github.com/microsoft/spatialaudio-unity/tree/master/Samples/MicrosoftSpatializerSample)
@@ -75,5 +78,6 @@ Or jump to Mixed Reality platform capabilities and APIs:
 You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.
 
 ## See also
+
 * [Sound design in mixed reality](../../design/spatial-sound-design.md)
 * [Microsoft's spatializer tutorial](tutorials/unity-spatial-audio-ch1.md)

@@ -1,6 +1,6 @@
 ---
 title: MR Basics 100 - Getting started with Unity
-description: Learn how to create your first basic mixed reality "hello world" application.
+description: Learn how to create your first basic mixed reality "hello world" application for HoloLens and Windows Mixed Reality devices.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
@@ -19,7 +19,7 @@ This tutorial will walk you through creating a basic mixed reality app built wit
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td>MR Basics 100: Getting started with Unity</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>

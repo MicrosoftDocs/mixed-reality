@@ -1,9 +1,9 @@
 ---
-title: Getting started tutorials - 4. Positioning objects in the scene
+title: MRTK tutorials - 4. Positioning objects in the scene
 description: This course shows you how to position objects in the scene and how to use the Mixed Reality Toolkit (MRTK) to organize objects in a grid.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, solvers, grid object collection
 ms.localizationpriority: high
@@ -22,16 +22,25 @@ In this tutorial, you will import the tutorial assets and position the provided 
 
 ## Importing the tutorial assets
 
-Download and import the following Unity custom package:
+Download the following Unity custom package:
 
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
 
-After you have imported the tutorial assets your Project window should look similar to this:
+To Import a Unity custom package, In the Unity menu, select **Assets** > **Import Package** > **Custom Package...** to open the Import package... window:
 
 ![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-04-section1-step1-1.png)
 
-> [!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Importing the MRTK](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) instructions.
+In the Import package... window, select the **MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage** you downloaded and click the Open button:
+
+![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-04-section1-step1-2.png)
+
+In the Import Unity Package window, click the All button to ensure all the assets are selected, then click the Import button to import the assets:
+
+![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-04-section1-step1-3.png)
+
+After you have imported the tutorial assets your Project window should look similar to this:
+
+![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-04-section1-step1-4.png)
 
 ## Creating the parent object
 
@@ -138,4 +147,5 @@ Then click the **Update Collection** button to update the position of the RoverP
 
 In this tutorial, you learned how to position objects in the scene relative to the user and use MRTK's Grid Object Collection feature to organize objects in a collection.
 
-[Next Tutorial: 5. Creating dynamic content using Solvers](mr-learning-base-05.md)
+> [!div class="nextstepaction"]
+>[Next Tutorial: 5. Creating dynamic content using Solvers](mr-learning-base-05.md)

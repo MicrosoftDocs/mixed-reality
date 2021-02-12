@@ -1,13 +1,12 @@
 ---
 title: Spatial mapping in Unity
-description: Rendering and colliding with the real-world geometry around you in Unity.
+description: Learn how to use and manage rendering and colliding with the real-world geometry around you in Unity mixed reality apps.
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, spatial mapping, renderer, collider, mesh, scanning, component, mixed reality headset, windows mixed reality headset, virtual reality headset, MRTK, Mixed Reality Toolkit
 ---
-
 
 # Spatial mapping in Unity
 
@@ -30,7 +29,7 @@ To use spatial mapping in your app, the spatialPerception capability needs to be
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens (first gen)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (first gen)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>

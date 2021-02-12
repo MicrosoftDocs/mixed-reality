@@ -8,40 +8,41 @@ ms.topic: article
 keywords: camera, hololens, color camera, front facing, hololens 2, cv, computer vision, fiducial, markers, qr code, qr, photo, video
 ---
 
+
 # Locatable camera
 
-HoloLens includes a world-facing camera mounted on the front of the device, which enables apps to see what the user sees. Developers have access to and control of the camera, just as they would for color cameras on smartphones, portables, or desktops. The same universal windows [media capture](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.mediacapture.aspx) and windows media foundation APIs that work on mobile and desktop work on HoloLens. Unity [has also wrapped these windows APIs](../unity/locatable-camera-in-unity.md) to abstract simple usage of the camera on HoloLens for tasks such as taking regular photos and videos (with or without holograms) and locating the camera's position in and perspective on the scene.
+HoloLens includes a world-facing camera mounted on the front of the device, which enables apps to see what the user sees. Developers have access to and control of the camera, just as they would for color cameras on smartphones, portables, or desktops. The same universal windows [media capture](/uwp/api/Windows.Media.Capture.MediaCapture) and windows media foundation APIs that work on mobile and desktop work on HoloLens. Unity [has wrapped these windows APIs](../unity/locatable-camera-in-unity.md) to abstract camera usage features on HoloLens. Feature tasks include taking regular photos and videos (with or without holograms) and locating the camera's position in and perspective on the scene.
 
 ## Device camera information
 
 ### HoloLens (first-generation)
 
-* Fixed focus photo/video (PV) camera with auto white balance, auto exposure, and full image processing pipeline.
+* Fixed focus photo/video (PV) camera with auto white balance, auto exposure, and full image-processing pipeline.
 * White Privacy LED facing the world will illuminate whenever the camera is active
 * The camera supports the following modes (all modes are 16:9 aspect ratio) at 30, 24, 20, 15, and 5 fps:
 
   |  Video  |  Preview  |  Still  |  Horizontal Field of View (H-FOV) |  Suggested usage | 
   |----------|----------|----------|----------|----------|
-  |  1280x720 |  1280x720 |  1280x720 |  45deg  |  (default mode with video stabilization) | 
-  |  N/A |  N/A |  2048x1152 |  67deg |  Highest resolution still image | 
-  |  1408x792 |  1408x792 |  1408x792 |  48deg |  Overscan (padding) resolution before video stabilization | 
-  |  1344x756 |  1344x756 |  1344x756 |  67deg |  Large FOV video mode with overscan | 
-  |  896x504 |  896x504 |  896x504 |  48deg |  Low power / Low resolution mode for image processing tasks | 
+  |  1280x720 |  1280x720 |  1280x720 |  45 deg  |  (default mode with video stabilization) | 
+  |  N/A |  N/A |  2048x1152 |  67 deg |  Highest resolution still image | 
+  |  1408x792 |  1408x792 |  1408x792 |  48 deg |  Overscan (padding) resolution before video stabilization | 
+  |  1344x756 |  1344x756 |  1344x756 |  67 deg |  Large FOV video mode with overscan | 
+  |  896x504 |  896x504 |  896x504 |  48 deg |  Low power / Low-resolution mode for image-processing tasks | 
 
 ### HoloLens 2
 
-* Auto-focus photo/video (PV) camera with auto white balance, auto exposure, and full image processing pipeline.
+* Auto-focus photo/video (PV) camera with auto white balance, auto exposure, and full image-processing pipeline.
 * White Privacy LED facing the world will illuminate whenever the camera is active.
-* HoloLens 2 supports different camera profiles. Learn how to [discover and select camera capabilities](https://docs.microsoft.com//windows/uwp/audio-video-camera/camera-profiles).
+* HoloLens 2 supports different camera profiles. Learn how to [discover and select camera capabilities](/windows/uwp/audio-video-camera/camera-profiles).
 * The camera supports the following profiles and resolutions (all video modes are 16:9 aspect ratio):
   
   | Profile                                         | Video     | Preview   | Still     | Frame rates | Horizontal Field of View (H-FOV) | Suggested usage                             |
   |-------------------------------------------------|-----------|-----------|-----------|-------------|----------------------------------|---------------------------------------------|
-  | Legacy,0  BalancedVideoAndPhoto,100             | 2272x1278 | 2272x1278 |           | 15,30       | 64.69                            | High quality video recording                |
-  | Legacy,0  BalancedVideoAndPhoto,100             | 896x504   | 896x504   |           | 15,30       | 64.69                            | Preview stream for high quality photo capture |
-  | Legacy,0  BalancedVideoAndPhoto,100             |           |           | 3904x2196 |             | 64.69                            | High quality photo capture                  |
-  | BalancedVideoAndPhoto,120                       | 1952x1100 | 1952x1100 | 1952x1100 | 15,30       | 64.69                            | Long duration scenarios                     |
-  | BalancedVideoAndPhoto,120                       | 1504x846  | 1504x846  |           | 15,30       | 64.69                            | Long duration scenarios                     |
+  | Legacy,0  BalancedVideoAndPhoto,100             | 2272x1278 | 2272x1278 |           | 15.30       | 64.69                            | High-quality video recording                |
+  | Legacy,0  BalancedVideoAndPhoto,100             | 896x504   | 896x504   |           | 15.30       | 64.69                            | Preview stream for high-quality photo capture |
+  | Legacy,0  BalancedVideoAndPhoto,100             |           |           | 3904x2196 |             | 64.69                            | High-quality photo capture                  |
+  | BalancedVideoAndPhoto, 120                       | 1952x1100 | 1952x1100 | 1952x1100 | 15.30       | 64.69                            | Long duration scenarios                     |
+  | BalancedVideoAndPhoto, 120                       | 1504x846  | 1504x846  |           | 15.30       | 64.69                            | Long duration scenarios                     |
   | VideoConferencing,100                           | 1952x1100 | 1952x1100 | 1952x1100 | 15,30,60    | 64.69                            | Video conferencing, long duration scenarios |
   | Videoconferencing,100                           | 1504x846  | 1504x846  |           | 5,15,30,60  | 64.69                            | Video conferencing, long duration scenarios |
   | Videoconferencing,100 BalancedVideoAndPhoto,120 | 1920x1080 | 1920x1080 | 1920x1080 | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
@@ -54,13 +55,13 @@ HoloLens includes a world-facing camera mounted on the front of the device, whic
   | Videoconferencing,100 BalancedVideoAndPhoto,120 | 424x240   |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
 
 > [!NOTE]
-> Customers can leverage [mixed reality capture](../../mixed-reality-capture.md) to take videos or photos of your app, which include holograms and video stabilization.
+> Customers can leverage [mixed reality capture](/hololens/holographic-photos-and-videos) to take videos or photos of your app, which include holograms and video stabilization.
 >
 >As a developer, there are considerations you should take into account when creating your app if you want it to look as good as possible when a customer captures content. You can also enable (and customize) mixed reality capture from directly within your app. Learn more at [mixed reality capture for developers](mixed-reality-capture-for-developers.md).
 
 ## Locating the Device Camera in the World
 
-When HoloLens takes photos and videos, the captured frames include the location of the camera in the world, as well as the lens model of the camera. This allows applications to reason about the position of the camera in the real world for augmented imaging scenarios. Developers can creatively roll their own scenarios using their favorite image processing or custom computer vision libraries.
+When HoloLens takes photos and videos, the captured frames include the location of the camera in the world and the lens model of the camera. This allows applications to reason about the position of the camera in the real world for augmented imaging scenarios. Developers can creatively roll their own scenarios using their favorite image processing or custom computer vision libraries.
 
 "Camera" elsewhere in HoloLens documentation may refer to the "virtual game camera" (the frustum the app renders to). Unless denoted otherwise, "camera" on this page refers to the real-world RGB color camera.
 
@@ -70,18 +71,20 @@ To go from the 'CameraIntrinsics' and 'CameraCoordinateSystem' to your applicati
 
 ### Using MediaFrameReference
 
-These instructions apply if you are using the [MediaFrameReference](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference) class to read image frames from the camera.
+These instructions apply if you'r using the [MediaFrameReference](/uwp/api/windows.media.capture.frames.mediaframereference) class to read image frames from the camera.
 
-Each image frame (whether photo or video) includes a [SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) rooted at the camera at the time of capture, which can be accessed using the [CoordinateSystem](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem) property of your [MediaFrameReference](https://docs.microsoft.com//uwp/api/Windows.Media.Capture.Frames.MediaFrameReference). In addition, each frame contains a description of the camera lens model, which can be found in the [CameraIntrinsics](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) property. Together, these transforms define for each pixel a ray in 3D space representing the path taken by the photons that produced the pixel. These rays can be related to other content in the app by obtaining the transform from the frame's coordinate system to some other coordinate system (e.g. from a [stationary frame of reference](../../design/coordinate-systems.md#stationary-frame-of-reference)). To summarize, each image frame provides the following:
+Each image frame (whether photo or video) includes a [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) rooted at the camera at the time of capture, which can be accessed using the [CoordinateSystem](/uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem) property of your [MediaFrameReference](/uwp/api/Windows.Media.Capture.Frames.MediaFrameReference). Each frame contains a description of the camera lens model, which can be found in the [CameraIntrinsics](/uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) property. Together, these transforms define for each pixel a ray in 3D space representing the path taken by the photons that produced the pixel. These rays can be related to other content in the app by obtaining the transform from the frame's coordinate system to some other coordinate system (e.g. from a [stationary frame of reference](../../design/coordinate-systems.md#stationary-frame-of-reference)). 
+
+Each image frame provides the following:
 * Pixel Data (in RGB/NV12/JPEG/etc. format)
-* A [SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) from the location of capture
-* A [CameraIntrinsics](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) class containing the lens mode of the camera
+* A [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) from the location of capture
+* A [CameraIntrinsics](/uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) class containing the lens mode of the camera
 
 The [HolographicFaceTracking sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking) shows the fairly straightforward way to query for the transform between the camera's coordinate system and your own application coordinate systems.
 
 ### Using Media Foundation
 
-If you are using Media Foundation directly to read image frames from the camera, you can use each frame's [MFSampleExtension_CameraExtrinsics attribute](https://docs.microsoft.com/windows/win32/medfound/mfsampleextension-cameraextrinsics) and [MFSampleExtension_PinholeCameraIntrinsics attribute](https://docs.microsoft.com/windows/win32/medfound/mfsampleextension-pinholecameraintrinsics) to locate camera frames relative to your application's other coordinate systems, as shown in this sample code:
+If you are using Media Foundation directly to read image frames from the camera, you can use each frame's [MFSampleExtension_CameraExtrinsics attribute](/windows/win32/medfound/mfsampleextension-cameraextrinsics) and [MFSampleExtension_PinholeCameraIntrinsics attribute](/windows/win32/medfound/mfsampleextension-pinholecameraintrinsics) to locate camera frames relative to your application's other coordinate systems, as shown in this sample code:
 
 ```cpp
 #include <winrt/windows.perception.spatial.preview.h>
@@ -166,9 +169,9 @@ private:
 
 ### Distortion Error
 
-On HoloLens, the video and still image streams are undistorted in the system's image processing pipeline before the frames are made available to the application (the preview stream contains the original distorted frames). Because only the CameraIntrinsics are made available, applications must assume image frames represent a perfect pinhole camera.
+On HoloLens, the video and still image streams are undistorted in the system's image-processing pipeline before the frames are made available to the application (the preview stream contains the original distorted frames). Because only the CameraIntrinsics are made available, applications must assume image frames represent a perfect pinhole camera.
 
-On HoloLens (first-generation), the undistortion function in the image processor may still leave an error of up to 10 pixels when using the CameraIntrinsics in the frame metadata. In many use cases, this error will not matter, but if you are aligning holograms to real world posters/markers, for example, and you notice a <10px offset (roughly 11mm for holograms positioned 2 meters away), this distortion error could be the cause. 
+On HoloLens (first-generation), the undistortion function in the image processor may still leave an error of up to 10 pixels when using the CameraIntrinsics in the frame metadata. In many use cases, this error won't matter, but if you're aligning holograms to real world posters/markers, for example, and you notice a <10-px offset (roughly 11 mm for holograms positioned 2 meters away), this distortion error could be the cause. 
 
 ## Locatable Camera Usage Scenarios
 
@@ -178,15 +181,15 @@ The Device Camera frames come with a "Camera To World" transform, that can be us
 
 ### Tag / Pattern / Poster / Object Tracking
 
-Many mixed reality applications use a recognizable image or visual pattern to create a trackable point in space. This is then used to render objects relative to that point or create a known location. Some uses for HoloLens include finding a real world object tagged with fiducials (e.g. a TV monitor with a QR code), placing holograms over fiducials, and visually pairing with non-HoloLens devices like tablets that have been setup to communicate with HoloLens via Wi-Fi.
+Many mixed reality applications use a recognizable image or visual pattern to create a trackable point in space. This is then used to render objects relative to that point or create a known location. Some uses for HoloLens include finding a real world object tagged with fiducials (e.g. a TV monitor with a QR code), placing holograms over fiducials, and visually pairing with non-HoloLens devices like tablets that have been set up to communicate with HoloLens via Wi-Fi.
 
-To recognize a visual pattern, and then place that object in the applications world space, you'll need a few things:
+You'll need a few things to recognize a visual pattern and place an object in the applications world space:
 1. An image pattern recognition toolkit, such as QR code, AR tags, face finder, circle trackers, OCR etc.
 2. Collect image frames at runtime, and pass them to the recognition layer
 3. Unproject their image locations back into world positions, or likely world rays. 
 4. Position your virtual models over these world locations
 
-Some important image processing links:
+Some important image-processing links:
 * [OpenCV](https://opencv.org/)
 * [QR Tags](https://en.wikipedia.org/wiki/QR_code)
 * [FaceSDK](https://research.microsoft.com/projects/facesdk/)
@@ -200,7 +203,7 @@ Keeping an interactive application frame-rate is critical, especially when deali
 5. Main Thread: moves virtual model to match found key points
 6. Main Thread: repeat from step 2
 
-Some image marker systems only provide a single pixel location (others provide the full transform in which case this section will not be needed), which equates to a ray of possible locations. To get to a single 3d location, we can then leverage multiple rays and find the final result by their approximate intersection. To do this, you'll need to:
+Some image marker systems only provide a single pixel location (others provide the full transform in which case this section won't be needed), which equates to a ray of possible locations. To get to a single 3d location, we can then leverage multiple rays and find the final result by their approximate intersection. To do this, you'll need to:
 1. Get a loop going collecting multiple camera images
 2. Find the associated feature points, and their world rays
 3. When you have a dictionary of features, each with multiple world rays, you can use the following code to solve for the intersection of those rays:
@@ -223,11 +226,11 @@ public static Vector3 ClosestPointBetweenRays(
  }
 ```
 
-Given two or more tracked tag locations, you can position a modelled scene to fit the user's current scenario. If you can't assume gravity, then you'll need three tag locations. In many cases, we use a simple color scheme where white spheres represent real-time tracked tag locations, and blue spheres represent modelled tag locations. This allows the user to visually gauge the alignment quality. We assume the following setup in all our applications:
-* Two or more modelled tag locations
-* One 'calibration space' which in the scene is the parent of the tags
+Given two or more tracked tag locations, you can position a modeled scene to fit the user's current scenario. If you can't assume gravity, then you'll need three tag locations. In many cases, we use a color scheme where white spheres represent real-time tracked tag locations, and blue spheres represent modeled tag locations. This allows the user to visually gauge the alignment quality. We assume the following setup in all our applications:
+* Two or more modeled tag locations
+* One 'calibration space', which in the scene is the parent of the tags
 * Camera feature identifier
-* Behavior which moves the calibration space to align the modelled tags with the real-time tags (we are careful to move the parent space, not the modelled markers themselves, because other connect is positions relative to them).
+* Behavior, which moves the calibration space to align the modeled tags with the real-time tags (we're careful to move the parent space, not the modeled markers themselves, because other connect is positions relative to them).
 
 ```
 // In the two tags case:
@@ -247,12 +250,12 @@ Given two or more tracked tag locations, you can position a modelled scene to fi
 Examples:
 * Industrial robots with LEDs (or QR codes for slower moving objects)
 * Identify and recognize objects in the room
-* Identify and recognize people in the room (e.g. place holographic contact cards over faces)
+* Identify and recognize people in the room, for example placing holographic contact cards over faces
 
 ## See also
 * [Locatable camera sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)
 * [Locatable camera in Unity](../unity/locatable-camera-in-unity.md)
-* [Mixed reality capture](../../mixed-reality-capture.md)
+* [Mixed reality capture](/hololens/holographic-photos-and-videos)
 * [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
-* [Media capture introduction](https://msdn.microsoft.com/library/windows/apps/mt243896.aspx)
+* [Media capture introduction](/windows/uwp/audio-video-camera/)
 * [Holographic face tracking sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)

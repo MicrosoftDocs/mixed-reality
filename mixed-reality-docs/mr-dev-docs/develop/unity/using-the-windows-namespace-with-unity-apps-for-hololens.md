@@ -1,6 +1,6 @@
 ---
 title: WinRT APIs with Unity for HoloLens
-description: Explains how to make use of WinRT APIs (the Windows namespace) in your Unity project for HoloLens.
+description: Leanr how to make use of WinRT APIs and the Windows namespace in your Unity mixed reality projects for HoloLens.
 author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
@@ -14,7 +14,7 @@ This page describes how to make use of WinRT APIs in your Unity project for Holo
 
 ## Mixed Reality APIs
 
-A Mixed Reality focused subset of the Windows SDK has been made available in a .NET Standard 2.0 compatible projection, which you can use in your project without preprocessor directives. Most APIs in the Windows. Perception and Windows.UI.Input.Spatial namespaces are included and may expand to include additional APIs in the future. The projected APIs can be used while running in the Editor, which enables the use of [Play Mode](https://docs.microsoft.com//windows/mixed-reality/unity-play-mode). To use this projection, make the following modifications to your project:
+A Mixed Reality focused subset of the Windows SDK has been made available in a .NET Standard 2.0 compatible projection, which you can use in your project without preprocessor directives. Most APIs in the Windows. Perception and Windows.UI.Input.Spatial namespaces are included and may expand to include additional APIs in the future. The projected APIs can be used while running in the Editor, which enables the use of [Play Mode](/windows/mixed-reality/unity-play-mode). To use this projection, make the following modifications to your project:
 
 1) Add a reference to the [Microsoft.Windows.MixedReality.DotNetWinRT](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT) NuGet package using [NuGet for Unity](https://github.com/GlitchEnzo/NuGetForUnity).
 2) Prefix references to the `Windows` namespace with `Microsoft.`:

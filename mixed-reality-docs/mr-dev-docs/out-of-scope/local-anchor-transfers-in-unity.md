@@ -1,6 +1,6 @@
 ---
 title: Local anchor transfers in Unity
-description: Transfer anchors between multiple HoloLens devices in a Unity application.
+description: Learn how to transfer anchors between multiple HoloLens devices in a Unity mixed reality application.
 author: fieldsjacksong
 ms.author: jacksonf
 ms.date: 03/21/2018
@@ -8,13 +8,12 @@ ms.topic: article
 keywords: Sharing, Anchor, WorldAnchor, MR Sharing 250, WorldAnchorTransferBatch, SpatialPerception, transfer, local anchor transfer, anchor export, anchor import
 ---
 
-
 # Local anchor transfers in Unity
 
-In situations where you cannot use <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>, local anchor transfers enable one HoloLens device to export an anchor to be imported by a second HoloLens device.
+In situations where you cannot use <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>, local anchor transfers enable one HoloLens device to export an anchor to be imported by a second HoloLens device.
 
 >[!NOTE]
->Local anchor transfers provide less robust anchor recall than <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>, and iOS and Android devices are not supported by this approach.
+>Local anchor transfers provide less robust anchor recall than <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>, and iOS and Android devices are not supported by this approach.
 
 ### Setting the SpatialPerception capability
 
@@ -134,4 +133,3 @@ private void OnImportComplete(SerializationCompletionReason completionReason, Wo
 ```
 
 After a *GameObject* is locked via the *LockObject* call, it will have a *WorldAnchor* which will keep it in the same physical position in the world, but it may be at a different location in the Unity coordinate space than other users.
-

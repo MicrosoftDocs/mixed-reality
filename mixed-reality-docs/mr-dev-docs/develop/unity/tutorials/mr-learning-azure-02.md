@@ -1,9 +1,9 @@
 ---
-title: Azure Cloud Tutorials - 2. Integrating Azure storage
+title: Integrating Azure storage
 description: Complete this course to learn how to implement Azure Table Storage and Azure Blob Storage within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, hololens 2, azure storage, azure cloud services, Windows 10
 ms.localizationpriority: high
@@ -52,6 +52,7 @@ While you can see and verify all data changes from the UI inside the application
 
 > [!TIP]
 > For testing from inside the Unity editor you can use a local emulator:
+>
 > * on Windows 10 you can use [Azure Storage Emulator](https://docs.microsoft.com/azure/storage/common/storage-use-emulator)
 > * on MacOS/Linux you can use [Azurite Docker Image](https://hub.docker.com/_/microsoft-azure-storage-azurite) for Docker
 

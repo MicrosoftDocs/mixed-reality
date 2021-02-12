@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: Learn the tools and architecture
-description: Mixed reality developer documentation for HoloLens and immersive headsets.
+description: Learn about the mixed reality development tools you'll need to get started making apps for HoloLens and immersive headsets.
 author: grbury
 ms.author: grbury
 ms.date: 12/9/2020

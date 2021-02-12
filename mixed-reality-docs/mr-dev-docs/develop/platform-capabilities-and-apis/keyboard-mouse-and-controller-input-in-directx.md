@@ -47,7 +47,7 @@ From AppView.cpp:
 ```
 
 ### Virtual keyboard input
-For immersive desktop headsets, you can also support virtual keyboards rendered by Windows over your immersive view. To support this, your app can implement **CoreTextEditContext**. This lets Windows understand the state of your own app-rendered text boxes, so the virtual keyboard can correctly contribute to the text there.
+For immersive desktop headsets, you can support virtual keyboards rendered by Windows over your immersive view by implementing **CoreTextEditContext**. This lets Windows understand the state of your own app-rendered text boxes, so the virtual keyboard can correctly contribute to the text there.
 
 For more information on implementing CoreTextEditContext support, see the [CoreTextEditContext sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/CustomEditControl).
 
@@ -55,7 +55,8 @@ For more information on implementing CoreTextEditContext support, see the [CoreT
 
 You can also use mouse input, again via the UWP CoreWindow input event handlers. Here's how to modify the Windows Holographic app template to support mouse clicks in the same way as pressed gestures. After making this modification, a mouse click while wearing an immersive headset device will reposition the cube.
 
-Note that UWP apps can also get raw XY data for the mouse by using the [MouseDevice](https://docs.microsoft.com/uwp/api/Windows.Devices.Input.MouseDevice) API.
+> [!NOTE]
+> UWP apps can also get raw XY data for the mouse by using the [MouseDevice](/uwp/api/Windows.Devices.Input.MouseDevice) API.
 
 Start by declaring a new OnPointerPressed handler in AppView.h:
 
@@ -99,7 +100,7 @@ You'll need this private member variable, as well:
        bool m_pointerPressed = false;
 ```
 
-Finally, we will update the main class with new logic to support mouse clicks. Start by adding this event handler. Make sure to update the class name:
+Finally, we'll update the main class with new logic to support mouse clicks. Start by adding this event handler. Make sure to update the class name:
 
 ```
 void MyHolographicAppMain::OnPointerPressed()
@@ -124,13 +125,13 @@ SpatialInteractionSourceState^ pointerState = m_spatialInputHandler->CheckForInp
    m_pointerPressed = false;
 ```
 
-Recompile and redeploy. You should notice that the mouse click will now reposition the cube in your immersive headset - or HoloLens with bluetooth mouse attached.
+Recompile and redeploy. Notice that the mouse click will now reposition the cube in your immersive headset - or HoloLens with bluetooth mouse attached.
 
 ### Game controller support
 
 Game controllers can be a fun and convenient way of allowing the user to control an immersive Windows Mixed Reality experience.
 
-The first step in adding support for game controllers to the Windows Holographic app template, is to add the following private member declarations to the header class for your main file:
+ add the following private member declarations to the header class for your main file:
 
 ```
 // Recognize gamepads that are plugged in after the app starts.
@@ -261,7 +262,7 @@ There are some key differences in how this code can be used on Microsoft HoloLen
 * You can’t rely on keyboard or mouse input to be present. All of your app's functionality must work with gaze, gesture, and speech input.
 * When a Bluetooth keyboard is attached, it can be helpful to enable keyboard input for any text that your app might ask for. This can be a great supplement for dictation, for example.
 * When it comes to designing your app, don’t rely on (for example) WASD and mouse look controls for your game. HoloLens is designed for the user to walk around the room. In this case, the user controls the camera directly. An interface for driving the camera around the room with move/look controls won't provide the same experience.
-* Keyboard input can be an excellent way to control the debugging aspects of your app or game engine, especially since the user will not be required to use the keyboard. Wiring it up is the same as you're used to, with CoreWindow event APIs. In this scenario, you might choose to implement a way to configure your app to route keyboard events to a "debug input only" mode during your debug sessions.
+* Keyboard input is an excellent way to control your app or game engine debugging, especially since the user won't be required to use the keyboard. Wiring it up is the same as you're used to, with CoreWindow event APIs. In this scenario, you might choose to implement a way to configure your app to route keyboard events to a "debug input only" mode during your debug sessions.
 * Bluetooth controllers work as well.
 
 ## See also

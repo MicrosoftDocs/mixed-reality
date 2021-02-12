@@ -1,6 +1,6 @@
 ---
 title: WebVR Overview
-description: Overview of using and developing for WebVR in Windows Mixed Reality
+description: Learn the basics of using and developing for WebVR applications running on Windows Mixed Reality immersive headsets.
 author: yonet
 ms.author: ayyonet
 ms.date: 04/10/2020
@@ -17,19 +17,19 @@ WebVR 1.1 APIs are deprecated and removed from Chrome and the new Microsoft Edge
 
 ## Viewing WebVR content in Windows Mixed Reality immersive headsets
 
-Instructions for accessing WebVR content in your immersive headsets with **older versions of Microsoft Edge(15-18)** can be found in the [Enthusiast's Guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/webvr). You can check your edge version by typing "edge://version/" in your Edge browsers search bar.
+Instructions for accessing WebVR content in your immersive headsets with **older versions of Microsoft Edge(15-18)** can be found in the [Enthusiast's Guide](/windows/mixed-reality/enthusiast-guide/webvr). You can check your edge version by typing "edge://version/" in your Edge browsers search bar.
 
 ## See Also
 
 * [WebXR Overview](webxr-overview.md)
 * [WebXR Device API specification](https://immersive-web.github.io/webxr/)
-* [Windows Mixed Reality and the new Microsoft Edge](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge)
+* [Windows Mixed Reality and the new Microsoft Edge](/windows/mixed-reality/new-microsoft-edge)
 * [WebVR information](https://webvr.info)
 * [WebVR specification](https://w3c.github.io/webvr/)
-* [WebVR API](https://msdn.microsoft.com/library/mt806281(v=vs.85).aspx)
-* [WebGL API](https://msdn.microsoft.com/library/bg182648(v=vs.85).aspx)
+* [WebVR API](/previous-versions//mt806281(v=vs.85))
+* [WebGL API](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182648(v=vs.85))
 * [Gamepad API](https://msdn.microsoft.com/library/dn743630(v=vs.85).aspx) and [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html)
 * [Handling Lost Context in WebGL](https://www.khronos.org/webgl/wiki/HandlingContextLost)
 * [Pointerlock](https://www.w3.org/TR/pointerlock/)
 * [glTF](https://www.khronos.org/gltf)
-* [Using Babylon.js to enable WebVR](https://docs.microsoft.com/windows/uwp/get-started/adding-webvr-to-a-babylonjs-game)
+* [Using Babylon.js to enable WebVR](/windows/uwp/get-started/adding-webvr-to-a-babylonjs-game)

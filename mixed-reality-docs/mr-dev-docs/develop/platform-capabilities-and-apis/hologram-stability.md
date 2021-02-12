@@ -10,10 +10,7 @@ appliesto:
     - HoloLens
 ---
 
-
 # Hologram stability
-
-## Overview
 
 To achieve stable holograms, HoloLens has a built-in image stabilization pipeline. The stabilization pipeline works automatically in the background, so you don't need to take any extra steps to enable it. However, you should exercise techniques that improve hologram stability and avoid scenarios that reduce stability.
 
@@ -23,11 +20,11 @@ The quality of holograms is a result of good environment and good app developmen
 
 The following terminology can help you when you're identifying problems with the environment, inconsistent or low rendering rates, or anything else.
 * **Accuracy.** Once the hologram is world-locked and placed in the real world, it should stay where it's placed relative to the surrounding environment and independent of user motion or small and sparse environment changes. If a hologram later appears in an unexpected location, it's an *accuracy* problem. Such scenarios can happen if two distinct rooms look identical.
-* **Jitter.** Users observe jitter as high frequency shaking of a hologram, which can happen when tracking of the environment degrades. For users, the solution is running [sensor tuning](../../sensor-tuning.md).
+* **Jitter.** Users observe jitter as high frequency shaking of a hologram, which can happen when tracking of the environment degrades. For users, the solution is running [sensor tuning](/hololens/hololens-updates).
 * **Judder.** Low rendering frequencies result in uneven motion and double images of holograms. Judder is especially noticeable in holograms with motion. Developers need to maintain a [constant 60 FPS](hologram-stability.md#frame-rate).
-* **Drift.** Users see drift as a hologram appears to move away from where it was originally placed. Drift happens when holograms are placed far away from [spatial anchors](../../design/spatial-anchors.md), particularly in parts of the environment that aren't fully mapped. Creating holograms close to spatial anchors lowers the likelihood of drift.
+* **Drift.** Users see drift as a hologram appears to move away from where it was originally placed. Drift happens when you place holograms far away from [spatial anchors](../../design/spatial-anchors.md), particularly in unmapped parts of the environment. Creating holograms close to spatial anchors lowers the likelihood of drift.
 * **Jumpiness.** When a hologram "pops" or "jumps" away from its location occasionally. Jumpiness can occur as tracking adjusts holograms to match updated understanding of your environment.
-* **Swim.** When a hologram appears to sway corresponding to the motion of the user's head. Swim occurs when the application hasn't fully implemented [reprojection](hologram-stability.md#reprojection), and if the HoloLens isn't [calibrated](../../calibration.md) for the current user. The user can rerun the [calibration](../../calibration.md) application to fix the issue. Developers can update the stabilization plane to further enhance stability.
+* **Swim.** When a hologram appears to sway corresponding to the motion of the user's head. Swim occurs when the application hasn't fully implemented [reprojection](hologram-stability.md#reprojection), and if the HoloLens isn't [calibrated](/hololens/hololens-calibration) for the current user. The user can rerun the [calibration](/hololens/hololens-calibration) application to fix the issue. Developers can update the stabilization plane to further enhance stability.
 * **Color separation.** The displays in HoloLens are color sequential displays, which flash color channels of red-green-blue-green at 60 Hz (individual color fields are shown at 240 Hz). Whenever a user tracks a moving hologram with their eyes, that hologram's leading and trailing edges separate in their constituent colors, producing a rainbow effect. The degree of separation is dependent upon the speed of the hologram. In some rarer cases, moving ones head rapidly while looking at a stationary hologram can also result in a rainbow effect, which is called *[color separation](hologram-stability.md#color-separation)*.
 
 ## Frame rate
@@ -45,7 +42,7 @@ By rendering at 60 FPS, you're doing three things to help make stable holograms:
 **Frame-rate consistency**
  Frame rate consistency is as important as a high frames-per-second. Occasionally dropped frames are inevitable for any content-rich application, and the HoloLens implements some sophisticated algorithms to recover from occasional glitches. However, a constantly fluctuating framerate is a lot more noticeable to a user than running consistently at lower frame rates. For example, an application that renders smoothly for five frames (60 FPS for the duration of these five frames) and then drops every other frame for the next 10 frames (30 FPS for the duration of these 10 frames) will appear more unstable than an application that consistently renders at 30 FPS.
 
-On a related note, the operating system throttles down applications to 30 FPS when [mixed reality capture](../../mixed-reality-capture.md) is running.
+On a related note, the operating system throttles down applications to 30 FPS when [mixed reality capture](/hololens/holographic-photos-and-videos) is running.
 
 **Performance analysis**
  There are different kinds of tools that can be used to benchmark your application frame rate, such as:
@@ -69,7 +66,7 @@ Users wearing HoloLens will always accommodate to 2.0 m to maintain a clear imag
 
 Discomfort from the vergence-accommodation conflict can be avoided or minimized by keeping converged content as close to 2.0 m as possible (that is, in a scene with lots of depth place the areas of interest near 2.0 m, when possible). When content can't be placed near 2.0 m, discomfort from the vergence-accommodation conflict is greatest when user’s gaze back and forth between different distances. In other words, it's much more comfortable to look at a stationary hologram that stays 50 cm away than to look at a hologram 50 cm away that moves toward and away from you over time.
 
-Placing content at 2.0 m is also advantageous because the two displays are designed to fully overlap at this distance. For images placed off this plane, as they move off the side of the holographic frame they'll appear from one display while still being visible on the other. This binocular rivalry can be disruptive to the depth perception of the holorgam.
+Placing content at 2.0 m is also advantageous because the two displays are designed to fully overlap at this distance. For images placed off this plane, as they move off the side of the holographic frame they'll appear from one display while still being visible on the other. This binocular rivalry can be disruptive to the depth perception of the hologram.
 
 **Optimal distance for placing holograms from the user**
 
@@ -82,7 +79,7 @@ Placing content at 2.0 m is also advantageous because the two displays are desig
  When holograms can't be placed at 2 m and conflicts between convergence and accommodation can't be avoided, the optimal zone for hologram placement is between 1.25 m and 5 m. In every case, designers should structure content to encourage users to interact 1+ m away (for example, adjust content size and default placement parameters).
 
 ## Reprojection
-HoloLens performs a sophisticated hardware-assisted holographic stabilization technique known as reprojection. Reprojection takes into account motion and change of the point of view (CameraPose) as the scene animates and the user moves their head.  Applications need to take specific actions to best use reprojection.
+HoloLens has a sophisticated hardware-assisted holographic stabilization technique known as reprojection. Reprojection takes into account motion and change of the point of view (CameraPose) as the scene animates and the user moves their head.  Applications need to take specific actions to best use reprojection.
 
 
 There are four main types of reprojection
@@ -94,7 +91,7 @@ There are four main types of reprojection
 Applications need to take specific actions to enable the different types of reprojection
 * **Depth Reprojection:** The application submits their depth buffer to the system for every rendered frame.  On Unity, Depth Reprojection is done with the **Shared Depth Buffer** option in the **Windows Mixed Reality Settings** pane under **XR Plugin Management**.  DirectX apps call CommitDirect3D11DepthBuffer.  The application shouldn't call SetFocusPoint.
 * **Planar Reprojection:** On every frame, applications tell the system the location of a plane to stabilize.  Unity applications call SetFocusPointForFrame and should have **Shared Depth Buffer** disabled.  DirectX apps call SetFocusPoint and shouldn't call CommitDirect3D11DepthBuffer.
-* **Automatic Planar Reprojection:** To enable, the application needs to submit their depth buffer to the system as they would for Depth Reprojection.  On HoloLens 2, the application then needs to SetFocusPoint with a point of 0,0 for every frame.  For HoloLens generation 1, the application shouldn't call SetFocusPoint.
+* **Automatic Planar Reprojection:** To enable, the application needs to submit their depth buffer to the system as they would for Depth Reprojection. Apps using the Mixed Reality Toolkit (MRTK) can configure the [camera settings provider](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html#hololens-2-reprojection-method) to use AutoPlanar Reprojection. Native apps should set the `DepthReprojectionMode` in the [HolographicCameraRenderingParameters](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) to `AutoPlanar` each frame. For HoloLens generation 1, the application should not call SetFocusPoint.
 
 ### Choosing Reprojection Technique
 
@@ -106,7 +103,7 @@ Planar Reprojection |	Not Recommended |	Recommended if Automatic Planar isn't gi
 
 ### Verifying Depth is Set Correctly
 			
-When a reprojection method uses the depth buffer, it's important to verify the contents of the depth buffer represent the application's rendered scene.  A number of factors can cause problems. If there's a second camera used to render user interface overlays, for example, it's likely to overwrite all the depth information from the actual view.  Transparent objects often don't set depth.  Some text rendering won't set depth by default.  There will be visible glitches in the rendering when depth does not match the rendered holograms.
+When a reprojection method uses the depth buffer, it's important to verify the contents of the depth buffer represent the application's rendered scene.  A number of factors can cause problems. If there's a second camera used to render user interface overlays, for example, it's likely to overwrite all the depth information from the actual view.  Transparent objects often don't set depth.  Some text rendering won't set depth by default.  There will be visible glitches in the rendering when depth doesn't match the rendered holograms.
 			
 HoloLens 2 has a visualizer to show where depth is and isn't being set, which can be enabled from Device Portal.  On the **Views** > **Hologram Stability** tab, select the **Display depth visualization in headset** checkbox.  Areas that have depth set properly will be blue.  Rendered items that don't have depth set are marked in red and need to be fixed.  
 
@@ -164,7 +161,7 @@ For example:
 
 ## Color separation 
 
-Due to the nature of HoloLens displays, an artifact called "color-separation" can sometimes be perceived. It manifests as the image separating into individual base colors - red, green, and blue. The artifact can be especially visible when displaying white objects, since they have large amounts of red, green, and blue. It's most pronounced when a user visually tracks a hologram that is moving across the holographic frame at high speed. Another way the artifact can manifest is warping/deformation of objects. If an object has high contrast and/or pure colors such as red, green, blue, color-separation will be perceived as warping of different parts of the object.
+Because of the nature of HoloLens displays, an artifact called "color-separation" can sometimes be perceived. It manifests as the image separating into individual base colors - red, green, and blue. The artifact can be especially visible when displaying white objects, since they have large amounts of red, green, and blue. It's most pronounced when a user visually tracks a hologram that is moving across the holographic frame at high speed. Another way the artifact can manifest is warping/deformation of objects. If an object has high contrast and/or pure colors such as red, green, blue, color-separation will be perceived as warping of different parts of the object.
 
 **Example of what the color separation of a head-locked white round cursor could look like as a user rotates their head to the side:**
 
@@ -188,6 +185,6 @@ As before, rendering at 60 FPS and setting the stabilization plane are the most 
 
 ## See also
 * [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
-* [Color, light, and materials](../../color,-light-and-materials.md)
+* [Color, light, and materials](../../design/color-light-and-materials.md)
 * [Instinctual interactions](../../design/interaction-fundamentals.md)
 * [MRTK Hologram Stabilization](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/hologram-stabilization.html)

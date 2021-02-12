@@ -1,13 +1,12 @@
 ---
 title: Camera in Unity
-description: How to use Unity's Main Camera for Windows Mixed Reality development to do holographic rendering.
+description: Learn how to set up and use Unity's Main Camera for Windows Mixed Reality development to do holographic rendering.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, holographic rendering, holographic, immersive, focus point, depth buffer, orientation-only, positional, opaque, transparent, clip, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 # Camera in Unity
 
@@ -29,7 +28,7 @@ When you wear a mixed reality headset, it becomes the center of your holographic
 The default settings on the Unity Camera component are for traditional 3D applications, which need a skybox-like background as they don't have a real world.
 
 * When running on an **[immersive headset](../../discover/immersive-headset-hardware-details.md)**, you're rendering everything the user sees, and so you'll likely want to keep the skybox.
-* However, when running on a **holographic headset** like [HoloLens](../../hololens-hardware-details.md), the real world should appear behind everything the camera renders. Set the camera background to be transparent (in HoloLens, black renders as transparent) instead of a Skybox texture:
+* However, when running on a **holographic headset** like [HoloLens](/hololens/hololens1-hardware), the real world should appear behind everything the camera renders. Set the camera background to be transparent (in HoloLens, black renders as transparent) instead of a Skybox texture:
     1. Select the Main Camera in the Hierarchy panel
     2. In the Inspector panel, find the Camera component and change the Clear Flags dropdown from Skybox to Solid Color
     3. Select the Background color picker and change the RGBA values to (0, 0, 0, 0)
@@ -77,7 +76,7 @@ If you know that you're building an [orientation-only experience](coordinate-sys
 Sharing your app's depth buffer to Windows each frame will give your app one of two boosts in hologram stability, based on the type of headset you're rendering for:
 
 * **Immersive headsets** can take care of positional reprojection when a depth buffer is provided, adjusting your holograms for misprediction in both position and orientation.
-* **Holographic headsets** have a few different methods. HoloLens 1 will automatically select a [focus point](focus-point-in-unity.md) when a depth buffer is provided, optimizing hologram stability along the plane that intersects the most content. HoloLens 2 will stabilize content using [Depth LSR (see Remarks)](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint).
+* **Holographic headsets** have a few different methods. HoloLens 1 will automatically select a [focus point](focus-point-in-unity.md) when a depth buffer is provided, optimizing hologram stability along the plane that intersects the most content. HoloLens 2 will stabilize content using [Depth LSR (see Remarks)](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint).
 
 To set whether your Unity app will provide a depth buffer to Windows:
 

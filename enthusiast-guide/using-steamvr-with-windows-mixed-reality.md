@@ -1,10 +1,9 @@
 ---
 title: Using SteamVR with Windows Mixed Reality
-description: How to play SteamVR games on Windows Mixed Reality headsets with compatible PCs.
+description: Learn how to setup and play SteamVR games on Windows Mixed Reality headsets and controllers with compatible PCs.
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, games, SteamVR, Steam, system requirements
 ---
-
 
 # Using SteamVR with Windows Mixed Reality
 
@@ -14,14 +13,18 @@ Windows Mixed Reality for SteamVR allows users to run SteamVR experiences on Win
 
 * Make sure you have no pending updates: Select **Start > Settings > Update & Security > Windows Update**. If updates are available, select **Install now**. If no updates are available, select **Check for updates**, and then install any new ones.
 * PC requirements vary for the apps and content on Steam. See the minimum requirements per title. A PC with a GTX 1070 graphics card (or equivalent) and an Intel® Core™ i7 processor should offer a good experience for a broad range of titles.
+* Set up up [Windows Mixed Reality](set-up-windows-mixed-reality.md) if you haven't already. 
 
 ## Set up Windows Mixed Reality for SteamVR
 
-1. If you haven't already setup up [Windows Mixed Reality](set-up-windows-mixed-reality.md).
-2. Install [Steam](http://store.steampowered.com/about/) and **login** or **create a new account.**
-3. Install [SteamVR](https://store.steampowered.com/app/250820/SteamVR/). With your headset plugged in, launch Steam and you should see a dialog prompting you to install SteamVR. Follow the prompts on the dialog to install it.
-    * If you don't see the popup, install SteamVR by navigating to the *Tools* section of your *library*. Locate SteamVR in the list and then right click and select *Install Game*.
-4. Install [Windows Mixed Reality for SteamVR](https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/).
+1. [Download and install SteamVR.](https://steamcdn-a.akamaihd.net/client/installer/SteamWindowsMRInstaller.exe)
+2. When ready, start SteamVR. The SteamVR Tutorial should start automatically.
+
+> **Note:** For advanced troubleshooting of your SteamVR setup, make sure you have the following software components installed:
+> 1. Install [Steam](http://store.steampowered.com/about/) and **login** or **create a new account.**
+> 2. Install [SteamVR](https://store.steampowered.com/app/250820/SteamVR/). With your headset plugged in, launch Steam and you should see a dialog prompting you to install SteamVR. Follow the prompts on the dialog to install it.
+    * If you don't see the popup, install SteamVR by navigating to the *Tools* section of your *library*. Locate SteamVR in the list and then right-click and select *Install Game*.
+> 3. Install [Windows Mixed Reality for SteamVR](https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/).
 
 ## Play SteamVR games
 
@@ -40,11 +43,11 @@ You'll use your motion controllers differently in different games. Here are a fe
 
 ## Changing the resolution
 
-You can adjust the Application Resolution slider in the SteamVR -> Settings -> Applications window at any time if you'd like to play games at a higher resolution. **Note** that when using a higher resolution multiplier you can expect the game to put more strain on your PC. If you increase the multiplier and see degraded performance readjust this slider to the default level and restart the game to ensure that the change takes effect.![Adjust Application Resolution](images/SteamVR_Settings_Applications.png)
+You can adjust the Application Resolution slider in the SteamVR -> Settings -> Applications window at any time if you'd like to play games at a higher resolution. **When using a higher resolution multiplier you can expect the game to put more strain on your PC. If you increase the multiplier and see degraded performance, readjust the slider to the default level and restart the game to ensure that the change takes effect.![Adjust Application Resolution](images/SteamVR_Settings_Applications.png)
 
 ## Using multiple headsets
 
-If you're a VR enthusiast you might regularly use more than one VR headset on the same PC. If that's the case note that when a Windows Mixed Reality headset is plugged in, SteamVR games will always launch to the Windows Mixed Reality headset. If you'd like to launch SteamVR games on another headset make sure to first unplug the Windows Mixed Reality headset before continuing.
+If you're a VR enthusiast, you might regularly use more than one VR headset on the same PC. If that's the case note that when a Windows Mixed Reality headset is plugged in, SteamVR games will always launch to the Windows Mixed Reality headset. If you'd like to launch SteamVR games on another headset make sure to first unplug the Windows Mixed Reality headset before continuing.
 
 ## Preview programs
 
@@ -54,14 +57,14 @@ We release regular updates to improve the performance, reliability, and overall 
 
 Windows Mixed Reality for SteamVR is the component you install from the Steam Store that enables SteamVR to work with your Windows Mixed Reality headset.  We publish updates to this "bridge" regularly and Steam installs them automatically.
 
-If you want to get updates more frequently, we encourage you to join our public Beta.  Updates go to our Beta audience first, and we use their feedback to make sure the updates are high quality before publishing them to all users.  If you’re not in our Beta program, you’ll eventually get all of the same fixes and features, but after they have been tested by our Beta users.
+If you want to get updates more frequently, we encourage you to join our public Beta.  Updates go to our Beta audience first, and we use their feedback to make sure the updates are high quality before publishing them to all users.  If you’re not in our Beta program, you’ll eventually get all of the same fixes and features, but after they've been tested by our Beta users.
 
 To join:
 
-  1. In Steam, use the drop down under the **Library** menu to filter to **Software**.
+  1. In Steam, use the drop-down under the **Library** menu to filter to **Software**.
   2. In the list, right-click **Windows Mixed Reality for SteamVR** and select **Properties**.
-  3. Click the **Betas** tab.
-  4. Opt-in to **"beta - public beta"** and click **Close** to confirm. Note that the beta access code field should be left blank.
+  3. Select the **Betas** tab.
+  4. Opt in to **"beta - public beta"** and select **Close** to confirm. The beta access code field should be left blank.
   
 ### SteamVR Beta
 
@@ -69,10 +72,10 @@ SteamVR is built and released by Valve and is common across all SteamVR headsets
 
 To join:
 
-  1. In Steam, use the drop down under the **Library** menu to filter to **Tools**.
+  1. In Steam, use the drop-down under the **Library** menu to filter to **Tools**.
   2. In the list, right-click **SteamVR** and select **Properties**.
-  3. Click the **Betas** tab.
-  4. Opt-in to **"beta - public beta"** and click **Close** to confirm.  Note that the beta access code field should be left blank.![Switch to the SteamVR beta in the properties dialog for SteamVR](images/steamvr-beta.png)
+  3. Select the **Betas** tab.
+  4. Opt in to **"beta - public beta"** and select **Close** to confirm.  The beta access code field should be left blank.![Switch to the SteamVR beta in the properties dialog for SteamVR](images/steamvr-beta.png)
 
 ### Windows Insider Program
 
@@ -87,26 +90,26 @@ When motion reprojection is enabled, all Steam VR games will render nominally at
 The available motion reprojection modes are as follows:
 
 * **SteamVR per-app setting**: Allows you to control motion reprojection through the SteamVR Settings UI. You can then open SteamVR Settings, go to Video > Per-Application Video Settings, and select an option for "Motion Smoothing."
-* **Auto**: Enables motion reprojection to turn on automatically when a game is rendering too slowly to maintain 90 FPS. When a game begins to maintain 90 FPS or starts rendering at less than 45 FPS, motion reprojection will turn off. Asynchronous rotational reprojection is enabled at all times.
+* **Auto**: Enables motion reprojection to turn on automatically when a game is rendering too slowly to maintain 90 FPS. When a game begins to maintain 90 FPS or starts rendering at less than 45 FPS, motion reprojection will turn off. Asynchronous rotational reprojection is enabled always.
 * **Motion Vector**: Forces the application to always run at half-framerate with motion vector reprojection.
 * **None**: Disables motion reprojection.
 
 **Expected Visual Artifacts** 
 
-1. When using a application resolution greater than 150% you may experience blurring. When using motion reprojection we recommend using a value less than 150%.
-2. Sharp contrast edges or text, especially on in-game HUDs or menus, may look temporarily warped or distorted due to disocclusion.
-3. SteamVR Home and many other games that do not reliably hit 50-60 FPS on your PC will continue to have a poor experience with this mode.
-4. Some games have been reported to run at 50% speed or with increased latency (lag). Please report these games through the [Windows Feedback Hub](filing-feedback.md) instructions below.
+1. When using an application resolution greater than 150%, you may experience blurring. When using motion reprojection, we recommend using a value less than 150%.
+2. Sharp contrast edges or text, especially on in-game HUDs or menus, may look temporarily warped or distorted because of disocclusion.
+3. SteamVR Home and many other games that don't reliably hit 50-60 FPS on your PC will continue to have a poor experience with this mode.
+4. Some games have been reported to run at 50% speed or with increased latency (lag). Report these games through the [Windows Feedback Hub](filing-feedback.md) instructions below.
 
-Initially we have experimental support for recent generation NVidia GPUs. We are continuing to iterate on and improve our motion reprojection support on additional GPUs, and we’re eager to hear your feedback.
+Initially we have experimental support for recent generation NVidia GPUs. We're continuing to iterate and improve our motion reprojection support on more GPUs, and we’re eager to hear your feedback.
 
 **Supported GPUs:** Nvidia GeForce GTX1060, AMD RX470 or better, with Windows Mixed Reality compatible graphics drivers installed.
 
 To enable motion reprojection:
 
-1. Make sure you have opted into the **Windows Mixed Reality for SteamVR Beta** using the instructions above.
+1. Make sure you've opted into the **Windows Mixed Reality for SteamVR Beta** using the instructions above.
 2. Open the SteamVR dashboard.
-3. Open Windows Mixed Reality for SteamVR Settings by clicking the button on the left side with the Windows Mixed Reality logo.
+3. Select the button on the left side with the Windows Mixed Reality logo to open **Windows Mixed Reality for SteamVR** Settings.
 4. In the UI that pops up, select the Graphics tab.
 5. Select "Auto" for "Default SteamVR app motion reprojection mode" to enable automatic motion reprojection.
 
@@ -114,7 +117,7 @@ To enable motion reprojection:
 
 **Motion Reprojection Indicator**
 
-The motion reprojection indicator helps diagnose issues with the experimental automatic motion reprojection feature. When set to true, you will see an indicator in the top-left of your headset display during automatic motion reprojection. The color and position of this indicator corresponds to the current motion reprojection mode - see the diagram below for examples.
+The motion reprojection indicator helps diagnose issues with the experimental automatic motion reprojection feature. When set to true, you'll see an indicator in the top-left of your headset display during automatic motion reprojection. The color and position of this indicator corresponds to the current motion reprojection mode - see the diagram below for examples.
 
 ![mvLSR Indicator](images/mvLSRIndicator.png)
 
@@ -130,24 +133,24 @@ Green + Cyan + Blue = motion reprojection is in half-framerate mode or the appli
 
 ## Sharing feedback on SteamVR
 
-Your feedback is invaluable when it comes to improving the Windows Mixed Reality SteamVR experience. Please submit all feedback and bugs through the [Windows Feedback Hub](filing-feedback.md). Please follow these suggestions to help us get the most from your feedback:
+Your feedback is invaluable when it comes to improving the Windows Mixed Reality SteamVR experience. Submit all feedback and bugs through the [Windows Feedback Hub](filing-feedback.md). Follow these suggestions to help us get the most from your feedback:
 
 1. In Feedback Hub, indicate that you're reporting a new Problem in the "What kind of feedback is it?" section at the top.
 2. Select the **Mixed Reality** category and the **Apps** subcategory.
 3. Put the word "SteamVR" in the problem summary. That helps us find your feedback.
-4. Describe what SteamVR game or application you were using when you encountered the issue.
-5. Please consider attaching a SteamVR System Report to your feedback. This provides additional logs that can help us diagnose your problem.
-    1. On the SteamVR Window (the small windows that shows your controller status) click on the title to open the menu.
+4. Describe what SteamVR game or application you were using when you come across the issue.
+5. Consider attaching a SteamVR System Report to your feedback. This provides more logs that can help us diagnose your problem.
+    1. On the SteamVR Window (the small windows that shows your controller status) select on the title to open the menu.
     2. Select "Create System Report".
     3. Save to File.
     4. Attach the generated file to your Feedback Hub entry directly.
-6. If your feedback is about SteamVR performance, please collect a Mixed Reality Performance trace: 
-    1. Click the **Recreate my Problem** button.
-    2. In the drop down next to "include data about" select **Mixed Reality Performance**.
-    3. Make sure the game is running and click **Start Capture**.
-    4. Spend a few seconds playing the game to capture the trace. Please do not capture the trace for more than 10-15 seconds, or it will be too large to submit.
-    5. Click **Stop Capture**.
-7. Click **Submit** once you have completed the rest of the fields.
+6. If your feedback is about SteamVR performance, collect a Mixed Reality Performance trace: 
+    1. Select the **Recreate my Problem** button.
+    2. In the drop-down next to "include data about", select **Mixed Reality Performance**.
+    3. Make sure the game is running and select **Start Capture**.
+    4. Spend a few seconds playing the game to capture the trace. Don't capture the trace for more than 10-15 seconds, or it will be too large to submit.
+    5. Select **Stop Capture**.
+7. Select **Submit** once you've completed the rest of the fields.
 
 If you have questions or comments to share, you can also reach us on our [Steam forum](http://steamcommunity.com/app/719950/discussions/).
 
@@ -155,6 +158,6 @@ If you have questions or comments to share, you can also reach us on our [Steam 
 
 * [Troubleshooting SteamVR with Windows Mixed Reality](steamvr-questions.md)
 * [Using games and apps in Windows Mixed Reality](using-games-and-apps-in-windows-mixed-reality.md)
-* [Using HP Controllers in Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
-* [Using HP Controllers in Unreal](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+* [Using HP Controllers in Unity](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+* [Using HP Controllers in Unreal](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 * [Filing bugs and feedback](filing-feedback.md)

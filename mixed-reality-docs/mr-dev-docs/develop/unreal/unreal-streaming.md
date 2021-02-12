@@ -1,6 +1,6 @@
 ---
 title: Streaming in Unreal
-description: A guide to streaming in Unreal to HoloLens 2
+description: Learn how to stream your Unreal apps to HoloLens 2, including streaming limitations and command line options.
 author: sw5813
 ms.author: suwu
 ms.date: 12/7/2020
@@ -11,7 +11,6 @@ appliesto:
 - HoloLens 
 - HoloLens 2
 ---
-
 
 # Streaming in Unreal
 
@@ -48,7 +47,7 @@ Unreal 4.26 running on OpenXR supports streaming to versions 2.4.0+ of the Holog
     </colgroup>
     <tr>
         <td><strong>Source</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens first Gen</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens first Gen</strong></a></td>
         <td><a href="https://www.microsoft.com/hololens/hardware"><strong>HoloLens 2</strong></a></td>
         <td><strong>Immersive Headsets</strong></td>
     </tr>

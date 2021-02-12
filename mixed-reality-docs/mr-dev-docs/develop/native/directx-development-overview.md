@@ -1,6 +1,6 @@
 ---
 title: Native development overview 
-description: Build a DirectX-based mixed-reality engine by using the Windows Mixed Reality APIs directly.
+description: Learn how to build a DirectX-based mixed-reality engine using the Windows Mixed Reality APIs directly.
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
@@ -12,7 +12,7 @@ keywords: DirectX, holographic rendering, native, native app, WinRT, WinRT app, 
 
 ![Native banner logo](../images/native_logo_banner.png)
 
-3D engines like [Unity](../unity/unity-development-overview.md) or [Unreal](../unreal/unreal-development-overview.md) aren't the only Mixed Reality development paths open to you. You can also create Mixed Reality apps by directly coding to the Windows Mixed Reality APIs with DirectX 11 or DirectX 12. By leveraging the platform directly, you're essentially building your own middleware or framework. 
+3D engines like [Unity](../unity/unity-development-overview.md) or [Unreal](../unreal/unreal-development-overview.md) aren't the only Mixed Reality development paths open to you. You can also create Mixed Reality apps using the Windows Mixed Reality APIs with DirectX 11 or DirectX 12. By going to the platform source, you're essentially building your own middleware or framework. 
 
 > [!IMPORTANT]
 > If you have an existing WinRT project that you'd like to maintain, head over to our main [WinRT documentation](creating-a-holographic-directx-project.md). 
@@ -24,10 +24,10 @@ Use the following checkpoints to bring your Unity games and applications into th
 ### 1. Getting started
 
 Windows Mixed Reality supports [two kinds of apps](../../design/app-views.md):
-* **Mixed-reality applications** (UWP or Win32) that use the [HolographicSpace API](getting-a-holographicspace.md) or [OpenXR API](openxr.md) to render an [immersive view](../../design/app-views.md) to the user that fills the headset display
+* UWP or Win32 **Mixed Reality applications** that use the [HolographicSpace API](getting-a-holographicspace.md) or [OpenXR API](openxr.md) to render an [immersive view](../../design/app-views.md) that fills the headset display
 * **2D apps** (UWP) that use DirectX, XAML, or another framework to render [2D views](../../design/app-views.md#2d-views) on slates in the Windows Mixed Reality home
 
-The differences between DirectX development for [2D views and immersive views](../../design/app-views.md) primarily concern holographic rendering and spatial input. Your UWP application's [IFrameworkView](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) or your Win32 application's HWND are required and remain largely the same. The same is true for the WinRT APIs that are available to your app. But you must use a different subset of these APIs to take advantage of holographic features. For example, the swapchain and frame present is managed by the system for holographic applications in order to enable a pose-predicted frame loop.
+The differences between DirectX development for [2D views and immersive views](../../design/app-views.md) primarily concern holographic rendering and spatial input. Your UWP application's [IFrameworkView](/uwp/api/Windows.ApplicationModel.Core.IFrameworkView) or your Win32 application's HWND are required and remain largely the same. The same is true for the WinRT APIs that are available to your app. But you must use a different subset of these APIs to take advantage of holographic features. For example, the system for holographic applications manages the swapchain and frame present to enable a pose-predicted frame loop.
 
 [!INCLUDE[](../includes/native-getting-started.md)]
 
@@ -49,11 +49,11 @@ Windows Mixed Reality applications use the following APIs to build [mixed-realit
 
 ### 3. Deploying and testing
 
-You can develop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive headset on the desktop.  If you don't have access to a headset, you can use the [HoloLens 2 Emulator](../platform-capabilities-and-apis/using-the-hololens-emulator.md) or the [Windows Mixed Reality Simulator](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) instead.
+You can develop on a desktop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive headset.  If you don't have access to a headset, you can use the [HoloLens 2 Emulator](../platform-capabilities-and-apis/using-the-hololens-emulator.md) or the [Windows Mixed Reality Simulator](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) instead.
 
 ## What's next?
 
-A developers job is never done, especially when learning a new tool or SDK. The following sections can take you into areas beyond the beginner level material you've already completed, along with helpful resources if you get stuck. Note that these topics and resources are not in any sequential order, so feel free to jump around and explore!
+A developer's job is never done, especially when learning a new tool or SDK. The following sections can take you into areas beyond the beginner level material you've already completed. These topics and resources aren't in any sequential order, so feel free to jump around and explore!
 
 ### Additional resources
 

@@ -1,6 +1,6 @@
 ---
 title: Using WebXR with Windows Mixed Reality
-description: Overview of using and developing for WebXR in Windows Mixed Reality
+description: Learn the basics of using and developing for WebXR applications running on Windows Mixed Reality immersive headsets.
 author: yonet
 ms.author: ayyonet
 ms.date: 04/10/2020
@@ -14,7 +14,7 @@ keywords: WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, windows mix
 
 The **WebXR device API** is for accessing **virtual reality (VR)** and **augmented reality (AR)** devices, including **sensors** and **head-mounted displays** on the **Web**. WebXR device API is currently available on Microsoft Edge and Chrome version 79 and later versions supports WebXR as a default. You can check the latest browser support status for WebXR at [caniuse.com](https://caniuse.com/#search=webxr).
 
-Learn more about the [Windows Mixed Reality and the new Microsoft Edge](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge#introducing-the-new-microsoft-edge)in [What's new](https://docs.microsoft.com/windows/mixed-reality/mrtk-porting-guide) section.
+Learn more about the [Windows Mixed Reality and the new Microsoft Edge](/windows/mixed-reality/new-microsoft-edge#introducing-the-new-microsoft-edge)in [What's new](/windows/mixed-reality/mrtk-porting-guide) section.
 
 ## Viewing WebXR
 
@@ -31,9 +31,9 @@ To test if your browser supports WebXR, you can navigate to [WebXR Samples](http
 * [WebXR Device API documentation](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API)
 * [Immersiveweb.dev](https://immersiveweb.dev/)
 * [WebXR Samples](https://immersive-web.github.io/webxr-samples/)
-* [Windows Mixed Reality and the new Microsoft Edge](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge#introducing-the-new-microsoft-edge)
+* [Windows Mixed Reality and the new Microsoft Edge](/windows/mixed-reality/new-microsoft-edge#introducing-the-new-microsoft-edge)
 * [Immersive Web W3C Github](https://github.com/immersive-web)
-* [WebGL API](https://msdn.microsoft.com/library/bg182648(v=vs.85).aspx)
+* [WebGL API](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182648(v=vs.85))
 * [Gamepad API](https://msdn.microsoft.com/library/dn743630(v=vs.85).aspx) and [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html)
 * [Handling Lost Context in WebGL](https://www.khronos.org/webgl/wiki/HandlingContextLost)
 * [Pointerlock](https://www.w3.org/TR/pointerlock/)

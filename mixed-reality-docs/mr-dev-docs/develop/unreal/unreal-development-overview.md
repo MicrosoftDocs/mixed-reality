@@ -1,6 +1,6 @@
 ---
 title: Unreal Development Overview
-description: Overview of mixed reality development using Unreal Engine 4
+description: Get started wit mixed reality development for HoloLens and VR using Unreal Engine 4 with our curated checkpoint journey.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 12/9/2020
@@ -32,6 +32,7 @@ First, you'll need to install the tools for HoloLens 2 development. Next, go thr
 |  Checkpoint  |  Outcome  |
 | --- | --- |
 | [Install the latest tools](../install-the-tools.md) | Download and install the latest version of Unreal Engine and setup your project for mixed reality |
+| [Creating your first HoloLens Unreal application](unreal-quickstart.md) | Start off your Unreal and HoloLens development journey by building a basic Mixed Reality application |
 | [HoloLens 2 tutorial series](tutorials/unreal-uxt-ch1.md) | Get set up for mixed reality development in Unreal, build your first app with MRTK, and deploy your app to HoloLens 2 |
 | (Optional) Get started with [OpenXR](../native/openxr.md) in Unreal | If you're looking to build an OpenXR app in Unreal, you should disable the following engine plugin:<ul><li>Windows Mixed Reality</li></ul><br>Download and enable the following plugin in your project from GitHub:<ul><li> [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal)</li></ul><br>The full list of currently supported features in OpenXR is [below](#supported-features).|
 
@@ -43,12 +44,14 @@ The [Mixed Reality Toolkit for Unreal](https://github.com/microsoft/MixedReality
 
 * [UX Tools for Unreal](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-ux-tools) is the first plugin to be released and is currently only supported on HoloLens 2. The plugin includes C++ code, Blueprints, and example assets of common UX features for input simulation, hand interactions, surface magnetism and more.
 
+* [Graphics Tools for Unreal](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/) is a UE game plugin with code, blueprints and example assets created to help improve the visual fidelity of Mixed Reality applications while staying within performance budgets.
+
 [!INCLUDE[](../includes/unreal-building-blocks.md)]
 
 > [!NOTE]
 > You can dive into the **[UX Tools for Unreal GitHub](https://github.com/microsoft/MixedReality-UXTools-Unreal)** repository for more details.
 
-### 3. Platform capabilities and APIs
+### 3. Advanced features
 
 Other key features that play a role in mixed reality applications are available without any extra packages or setup. These features can be added to Unreal projects with or without MRTK installed. After diving into these more advanced capabilities, you'll be able to build more complex Mixed Reality apps.
 
@@ -76,7 +79,7 @@ A developer's job is never done, especially when learning a new tool or SDK. The
 
 ### Debugging
 
-If you're looking to debug the application while it's running on device with Visual Studio, follow these [instructions](https://docs.microsoft.com/visualstudio/debugger/debug-installed-app-package#remote).
+If you're looking to debug the application while it's running on device with Visual Studio, follow these [instructions](/visualstudio/debugger/debug-installed-app-package#remote).
 
 ### Performance
 
@@ -98,7 +101,7 @@ Developing for mixed reality comes with performance checkpoints that depend on t
 | Spatial audio | 4.23 | ✔️ |
 | Spectator Screen support for streaming | 4.24 |
 | Planar LSR over streaming | 4.24 |
-| [Sample apps](unreal-samples.md) | 4.24 | ✔️ |
+| [Sample apps](../features-and-samples.md) | 4.24 | ✔️ |
 | Mobile multi-View: Performance hits 60 fps | 4.25 | ✔️ |
 | 3rd camera render | 4.25 |
 | Streaming from a packaged desktop app | 4.25.1 | ✔️ |

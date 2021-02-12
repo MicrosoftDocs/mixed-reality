@@ -1,55 +1,9 @@
-# [4.25](#tab/425)
-
-## Render from the PV Camera for MRC
-
-> [!NOTE]
-> This requires **Unreal Engine 4.25** or newer.
-
-The system and custom MRC recorders create mixed reality captures by combining the PV Camera with holograms rendered by the app.
-
-By default, mixed reality capture uses the right eye's holographic output. If an immersive app chooses to [render from the PV Camera](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in), then that will be used instead. Rendering from the PV Camera improves the mapping between the real world and the holograms in the MRC video.
-
-To opt in to rendering from the PV Camera:
-
-1. Call **SetEnabledMixedRealityCamera** and **ResizeMixedRealityCamera**
-    * Use the **Size X** and **Size Y** values to set the video dimensions.
-
-![Camera 3rd](../../platform-capabilities-and-apis/images/unreal-camera-3rd.PNG)
-
-Unreal will then handle requests from MRC to render from the PV Camera's perspective.
-
-> [!NOTE]
-> Only when [Mixed Reality Capture](../../../mixed-reality-capture.md) is triggered will the app be asked to render from the photo/video camera's perspective.
-
-## Using the PV Camera
-
-The webcam texture can be retrieved in the game at runtime, but it needs to be enabled in the editor's **Edit > Project Settings**:
-1. Go to **Platforms > HoloLens > Capabilities** and check **Webcam**.
-    * Use the **StartCameraCapture** function to use the webcam at runtime and the **StopCameraCapture** function to stop recording.
-
-![Camera Start Stop](../images/unreal-camera-startstop.PNG)
-
-## Rendering an image
-To render the camera image:
-1. Create a dynamic material instance based on a material in the project, which is named **PVCamMat** in the screenshot below.  
-2. Set the dynamic material instance to a **Material Instance Dynamic Object Reference** variable.  
-3. Set the material of the object in the scene that will render the camera feed to this new dynamic material instance.
-    * Start a timer that will be used to bind the camera image to the material.
-
-![Camera Render](../images/unreal-camera-render.PNG)
-
-4. Create a new function for this timer, in this case **MaterialTimer**, and call **GetARCameraImage** to get the texture from the webcam.  
-5. If the texture is valid, set a texture parameter in the shader to the image.  Otherwise, start the material timer again.
-
-![Camera Texture from webcam](../images/unreal-camera-texture.PNG)
-
-5. Make sure the material has a parameter that matches the name in **SetTextureParameterValue** that's bound to a color entry. Without the parameter, the camera image can't be displayed properly.
-
-![Camera Texture](../images/unreal-camera-material.PNG)
-
 # [4.26](#tab/426) 
 
 ## PV Camera Feed Setup
+
+> [!IMPORTANT]
+> PV camera is implemented in both Windows Mixed Reality and OpenXR plugins. However OpenXR needs [Microsoft OpenXR plugin](https://github.com/microsoft/Microsoft-OpenXR-Unreal) to be installed. Also OpenXR has current limitation, camera can work with DirectX11 RHI. This limitation will be fixed in a further Unreal version. 
 
 - In **Project Settings > HoloLens**, enable the **Webcam** capability:
 
@@ -171,7 +125,7 @@ void ACamCapture::BeginPlay()
     // Create a dynamic material instance from the game's camera material.
     // Right-click on a material in the project and select "Copy Reference" to get this string.
     FString CameraMatPath("Material'/Game/Materials/CamTextureMaterial.CamTextureMaterial'");
-    UMaterial* BaseMateriall = (UMaterial*)StaticLoadObject(UMaterial::StaticClass(), nullptr, *CameraMatPath, nullptr, LOAD_None, nullptr);
+    UMaterial* BaseMaterial = (UMaterial*)StaticLoadObject(UMaterial::StaticClass(), nullptr, *CameraMatPath, nullptr, LOAD_None, nullptr);
     DynamicMaterial = UMaterialInstanceDynamic::Create(BaseMaterial, this);
 
     // Use the dynamic material instance when rendering the camera mesh.
@@ -214,3 +168,51 @@ void ACamCapture::Tick(float DeltaTime)
 }
 ```
 
+# [4.25](#tab/425)
+
+## Render from the PV Camera for MRC
+
+> [!NOTE]
+> This requires **Unreal Engine 4.25** or newer.
+
+The system and custom MRC recorders create mixed reality captures by combining the PV Camera with holograms rendered by the app.
+
+By default, mixed reality capture uses the right eye's holographic output. If an immersive app chooses to [render from the PV Camera](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in), then that will be used instead. Rendering from the PV Camera improves the mapping between the real world and the holograms in the MRC video.
+
+To opt in to rendering from the PV Camera:
+
+1. Call **SetEnabledMixedRealityCamera** and **ResizeMixedRealityCamera**
+    * Use the **Size X** and **Size Y** values to set the video dimensions.
+
+![Camera 3rd](../../platform-capabilities-and-apis/images/unreal-camera-3rd.PNG)
+
+Unreal will then handle requests from MRC to render from the PV Camera's perspective.
+
+> [!NOTE]
+> Only when [Mixed Reality Capture](/hololens/holographic-photos-and-videos) is triggered will the app be asked to render from the photo/video camera's perspective.
+
+## Using the PV Camera
+
+The webcam texture can be retrieved in the game at runtime, but it needs to be enabled in the editor's **Edit > Project Settings**:
+1. Go to **Platforms > HoloLens > Capabilities** and check **Webcam**.
+    * Use the **StartCameraCapture** function to use the webcam at runtime and the **StopCameraCapture** function to stop recording.
+
+![Camera Start Stop](../images/unreal-camera-startstop.PNG)
+
+## Rendering an image
+To render the camera image:
+1. Create a dynamic material instance based on a material in the project, which is named **PVCamMat** in the screenshot below.  
+2. Set the dynamic material instance to a **Material Instance Dynamic Object Reference** variable.  
+3. Set the material of the object in the scene that will render the camera feed to this new dynamic material instance.
+    * Start a timer that will be used to bind the camera image to the material.
+
+![Camera Render](../images/unreal-camera-render.PNG)
+
+4. Create a new function for this timer, in this case **MaterialTimer**, and call **GetARCameraImage** to get the texture from the webcam.  
+5. If the texture is valid, set a texture parameter in the shader to the image.  Otherwise, start the material timer again.
+
+![Camera Texture from webcam](../images/unreal-camera-texture.PNG)
+
+5. Make sure the material has a parameter that matches the name in **SetTextureParameterValue** that's bound to a color entry. Without the parameter, the camera image can't be displayed properly.
+
+![Camera Texture](../images/unreal-camera-material.PNG)

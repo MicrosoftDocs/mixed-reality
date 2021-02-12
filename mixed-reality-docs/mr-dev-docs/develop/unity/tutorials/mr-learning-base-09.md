@@ -1,17 +1,15 @@
 ---
-title: Getting started tutorials - 9. Using speech commands
-description: This course shows you how to use speech commands with the Mixed Reality Toolkit (MRTK).
+title: Using speech commands
+description: This course shows you how to setup, create, and use speech commands in your mixed reality apps with the Mixed Reality Toolkit (MRTK).
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, speech commands, voice input
 ms.localizationpriority: high
 ---
 
 # 9. Using speech commands
-
-## Overview
 
 In this tutorial, you will learn how to create speech commands and how to control them globally. You will also learn how to control local speech commands that require the user to look at the object that controls the speech command.
 
@@ -27,7 +25,7 @@ In the Unity menu, select Mixed Reality Toolkit > Utilities > **Configure Unity 
 ![Enable microphone capability](images/mr-learning-base/base-09-section1-step1-1.png)
 
 > [!NOTE]
-> The Microphone capability should have been enabled during the [Apply the MRTK Project Configurator settings](mr-learning-base-02.md#1-apply-the-mrtk-project-configurator-settings) instructions when you configured the Unity project at the beginning of this tutorial series. However, if it is not enabled, make sure you enable it now.
+> The Microphone capability should have been enabled during the [Apply the MRTK Project Configurator settings](mr-learning-base-02.md#creating-and-configuring-the-scene) instructions when you configured the Unity project at the beginning of this tutorial series. However, if it is not enabled, make sure you enable it now.
 
 ## Creating speech commands
 
@@ -56,7 +54,7 @@ In the Speech > **Speech Commands** section, click the **+ Add a New Speech Comm
 
 ## Controlling speech commands
 
-In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** folder to locate the tooltip prefabs:
+In the Project window, navigate to the **Package** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** folder to locate the tooltip prefabs:
 
 ![Opening tooltip folder](images/mr-learning-base/base-09-section3-step1-1.png)
 
@@ -144,4 +142,3 @@ If you're following the Unity development checkpoint journey we've laid out, you
 > [Basic interactions](../mrtk-101.md)
 
 You can always go back to the [Unity development checkpoints](../unity-development-overview.md#1-getting-started) at any time.
-

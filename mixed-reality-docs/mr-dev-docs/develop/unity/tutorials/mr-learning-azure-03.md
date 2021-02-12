@@ -1,9 +1,9 @@
 ---
-title: Azure Cloud Tutorials - 3. Integrating Azure Custom Vision
-description: Complete this course to learn how to implement Azure Custom Vision within a HoloLens 2 application.
+title: Integrating Azure Custom Vision
+description: Complete this course to learn how to implement Azure Custom Vision within a HoloLens 2 mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, hololens 2, azure custom vision, azure cognitive services, azure cloud services, Windows 10
 ms.localizationpriority: high
@@ -23,13 +23,13 @@ In this tutorial, you will learn how to use **Azure Custom Vision**.You will upl
 
 **Azure Custom Vision** is part of the **Cognitive Services** family and is used to train image classifiers. The image classifier is an AI service that uses the trained model to apply matching tags. This classification feature will be used by our application to detect *Tracked Objects*.
 
-Learn more about [Azure Custom Vision](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home).
+Learn more about [Azure Custom Vision](/azure/cognitive-services/custom-vision-service/home).
 
 ## Preparing Azure Custom Vision
 
 Before you can start, you have to create a custom vision project, the fastest way is by using the web portal.
 
-Follow this [quickstart tutorial](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier#choose-training-images) to setup your account and project until section *Upload and tag images*.
+Follow this [quickstart tutorial](/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier#choose-training-images) to setup your account and project until section *Upload and tag images*.
 
 > [!WARNING]
 > To train a model you need to have at least 2 tags and 5 images per tag. To use this application you should at least create one tag with 5 images, so that the training process later won't fail.
@@ -45,17 +45,17 @@ From there drag the prefab **ObjectDetectionManager** into the scene Hierarchy.
 ![Unity with ObjectDetectionManager script component configuration fields shown in Inspector](images/mr-learning-azure/tutorial3-section4-step1-2.png)
 
 In the Hierarchy window locate the **ObjectDetectionManager** object and select it.
-The **ObjectDetectionManager** prefab contains the **ObjectDetectionManager (script)** component and as you can see from the Inspector window it depends on several settings.
+The **ObjectDetectionManager** prefab contains the **ObjectDetectionManager (script)** component and as you can see from the Inspector window it depends on Azure settings and Project settings.
 
 ## Retrieving Azure api resource credentials
 
 The necessary credentials for the **ObjectDetectionManager (script)** settings can be retrieve from the Azure Portal and the custom vision portal.
 
-### Azure Portal
+### Retrieving Azure Settings credentials
 
-Find and locate the custom vision resource of type **Cognitive Services** you have created in the *Preparing the scene* section of this tutorial. There click on *Keys and Endpoint* to retrieve the necessary credentials.
+Find and locate the custom vision resource of type **Cognitive Services** you have created in the *Preparing the scene* section of this tutorial (select custom vision resources name followed by *-Prediction* ). There click on *Overview* or *Keys and Endpoint* to retrieve the necessary credentials.
 
-### Custom Vision Dashboard
+### Retrieving Project Settings credentials
 
 In the [custom vision](https://www.customvision.ai/projects) dashboard, open the project you have created for this tutorial and click on the top right corner of the page on the gear icon to open the settings page. Here on the right hand *Resources* section you will find the necessary credentials.
 
@@ -82,6 +82,10 @@ Once you have enough images click on the **Train** button to start the model tra
 > The **ObjectDetectionManager (script)** directly uploads taken images into the Custom Vision service. As an alternative the custom vision API accepts URLs to the images, as an exercise you can modify the **ObjectDetectionManager (script)** to upload the images to a Blob storage instead.
 
 ## Detect objects
+
+Before detecting the objects we have to change the Api key present in  **ObjectDetectionManager (script)** under project settings that already assign with custom vision key.
+
+Find and locate the custom vision resource in Azure portal.There click on *Keys and Endpoint* to retrieve the Api key and replace with old Api key under project settings.
 
 You can now put the trained model to the test, run the application and from the *main menu* click on **Search Object** and type the name of the **Tracked Object** in question. The **Object Card** will appear and click on the **Custom Vision** button. From here the **ObjectDetectionManager** will start taking image captures in the background from the camera and the progress will be indicated on the menu. Point the camera to the object you used to train the model and you will see that after a short while it will detect the object.
 

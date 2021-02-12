@@ -1,6 +1,6 @@
 ---
 title: Start gesture
-description: Start gesture to call out the Start Menu. 
+description: Learn how to use the start gesture to call out the Start Menu on HoloLens and Windows Mixed Reality immersive headsets. 
 author: shengkait
 ms.author: cmeekhof
 ms.date: 10/22/2019
@@ -8,10 +8,9 @@ ms.topic: article
 keywords: Mixed Reality, Gestures, interaction, design, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, bloom
 ---
 
-
 # Start gesture
 
-The Start gesture is a hand gesture used to invoke the Start Menu. It is the equivalent of pressing the Windows key on the keyboard, the Xbox button on an Xbox controller, or the Windows button on the immersive headset motion controller. It's important to understand which gestures are reserved for the system on each Mixed Reality device to prevent conflicts when designing your interactions.
+The Start gesture is a hand gesture used to invoke the Start Menu. It's the equivalent of pressing the Windows key on keyboards, the Xbox button on Xbox controllers, or the Windows button on immersive headset motion controllers. Pay special attention to reserved system gestures on each Mixed Reality device to prevent conflicts when you're designing interactions.
 
 ## Device support
 
@@ -24,7 +23,7 @@ The Start gesture is a hand gesture used to invoke the Start Menu. It is the equ
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
@@ -49,7 +48,8 @@ The Start gesture is a hand gesture used to invoke the Start Menu. It is the equ
 </table>
 
 ## Bloom
-To bring up the start menu in HoloLens (1st gen), we designed “Bloom”, which is a symbolic gesture mimicking the flower blossom. It's distinctive for surefooted interaction, easy to perform, and quick to recall. To do the bloom gesture on HoloLens (1st gen), hold out your hand with your palm up and fingertips together, then open your hand by spreading your fingers.
+
+We designed “Bloom” to bring up the start menu in HoloLens (1st gen), which is a symbolic gesture mimicking a flower blossom. It's distinctive for sure-footed interaction, easy of use, and quick to recall. To use the gesture, hold out your hand with your palm up and fingertips together, then open your hand by spreading your fingers.
 
 :::row:::
     :::column:::
@@ -67,7 +67,8 @@ To bring up the start menu in HoloLens (1st gen), we designed “Bloom”, which
 ---
 
 ## Start gesture
-In HoloLens 2, we replaced the Bloom gesture with a virtual wrist button that allows for more instinctual interactions that require no additional teaching. By showing users the button on the wrist, they can intuitively reach out and press it with their other hand.
+
+In HoloLens 2, we replaced the Bloom gesture with a virtual wrist button, which is more instinctual for users. By showing users the button on the wrist, they can intuitively reach out and press it with their other hand.
 
 :::row:::
     :::column:::
@@ -84,7 +85,6 @@ In HoloLens 2, we replaced the Bloom gesture with a virtual wrist button that al
 
 ---
 
-
 ## One-handed Start gesture
 
 > [!IMPORTANT]
@@ -93,7 +93,7 @@ In HoloLens 2, we replaced the Bloom gesture with a virtual wrist button that al
 > 1. You must update to the November 2019 update (build 18363.1039) or later.
 > 1. Your eyes must be calibrated on the device so that eye tracking functions correctly. If you do not see orbiting dots around the Start icon when you look at it, your eyes are not calibrated on the device.
 
-You can also perform the Start gesture with only one hand. To do this, hold out your hand with your palm facing you and look at the **Start icon** on your inner wrist. **While keeping your eye on the icon**, pinch your thumb and index finger together.<br>
+You can also use the Start gesture with only one hand. Hold out your hand with your palm facing you and look at the **Start icon** on your inner wrist. **While keeping your eye on the icon**, pinch your thumb and index finger together.<br>
 :::row:::
     :::column:::
         ![Wrist button ready](images/wrist-button-ready.png)<br>
