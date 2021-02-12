@@ -50,4 +50,4 @@ You can see a simple example of how to bring up system keyboard in `MixedReality
 
 ## See Also
 
-- [Mixed Reality Keyboard Helper Classes](../experimental/mixed-reality-keyboard/mixed-reality-keyboard.md)
+- [Mixed Reality Keyboard Helper Classes](../experimental/mixed-reality-keyboard.md)

@@ -24,7 +24,7 @@ Systems are services that provide the core functionality of the Mixed Reality To
 - [InputSystem](../features/input/overview.md)
 - [SceneSystem](../features/scene-system/scene-system-getting-started.md)
 - [SpatialAwarenessSystem](../features/spatial-awareness/spatial-awareness-getting-started.md)
-- [TeleportSystem](../features/teleport-system/overview.md)
+- [TeleportSystem](../features/teleport-system/teleport-system.md)
 
 Each of the listed systems are surfaced in the MixedRealityToolkit component's configuration [profile](../features/profiles/profiles.md).
 

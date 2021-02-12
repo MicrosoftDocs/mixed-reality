@@ -40,7 +40,7 @@ The key differences between the HoloLens2 profile and the Default Profile are:
 **Disabled** Features:
 
 - [Boundary System](../boundary/boundary-system-getting-started.md)
-- [Teleport System](../teleport-system/overview.md)
+- [Teleport System](../teleport-system/teleport-system.md)
 - [Spatial Awareness System](../spatial-awareness/spatial-awareness-getting-started.md)
 - [Hand mesh visualization](../input/hand-tracking.md) (due to performance overhead)
 

@@ -86,7 +86,7 @@ The MRTK Foundation package contains the following.
 | | [InputSystem](../features/input/overview.md) | System providing support for accessing and handling user input. |
 | | [SceneSystem](../features/scene-system/scene-system-getting-started.md) | System providing multi-scene application support. |
 | | [SpatialAwarenessSystem](../features/spatial-awareness/spatial-awareness-getting-started.md) | System providing support for awareness of the user's environment. |
-| | [TeleportSystem](../features/teleport-system/overview.md) | System providing support for teleporting (moving about the experience in jumps). |
+| | [TeleportSystem](../features/teleport-system/teleport-system.md) | System providing support for teleporting (moving about the experience in jumps). |
 | MRTK/StandardAssets | | MRTK Standard shader, basic materials and other standard assets for mixed reality experiences |
 
 ### Extensions package
@@ -99,9 +99,9 @@ The optional Microsoft.MixedRealityToolkit.Unity.Extensions package includes add
 | Folder | Component | Description |
 | --- | --- | --- |
 | MRTK/Extensions | |
-| | [HandPhysicsService](../features/extensions/hand-physics-service/hand-physics-service-overview.md) | Service that adds physics support to articulated hands. |
+| | [HandPhysicsService](../features/extensions/hand-physics-service.md) | Service that adds physics support to articulated hands. |
 | | LostTrackingService | Service that simplifies handling of tracking loss on Microsoft HoloLens devices. |
-| | [SceneTransitionService](../features/extensions/scene-transition-service/scene-transition-service-overview.md) | Service that simplifies adding smooth scene transitions. |
+| | [SceneTransitionService](../features/extensions/scene-transition-service.md) | Service that simplifies adding smooth scene transitions. |
 
 ### Tools package
 
@@ -211,7 +211,7 @@ The foundation package (`com.microsoft.mixedreality.toolkit.foundation`) forms t
 | | [InputSystem](../features/input/overview.md) | System providing support for accessing and handling user input. |
 | | [SceneSystem](../features/scene-system/scene-system-getting-started.md) | System providing multi-scene application support. |
 | | [SpatialAwarenessSystem](../features/spatial-awareness/spatial-awareness-getting-started.md) | System providing support for awareness of the user's environment. |
-| | [TeleportSystem](../features/teleport-system/overview.md) | System providing support for teleporting (moving about the experience in jumps). |
+| | [TeleportSystem](../features/teleport-system/teleport-system.md) | System providing support for teleporting (moving about the experience in jumps). |
 
 Dependencies:
 
@@ -240,9 +240,9 @@ The optional extensions package (`com.microsoft.mixedreality.toolkit.extensions)
 | Folder | Component | Description |
 | --- | --- | --- |
 | MRTK/Extensions | |
-| | [HandPhysicsService](../features/extensions/hand-physics-service/hand-physics-service-overview.md) | Service that adds physics support to articulated hands. |
+| | [HandPhysicsService](../features/extensions/hand-physics-service.md) | Service that adds physics support to articulated hands. |
 | | LostTrackingService | Service that simplifies handing of tracking loss on Microsoft HoloLens devices. |
-| | [SceneTransitionService](../features/extensions/scene-transition-service/scene-transition-service-overview.md) | Service that simplifies adding smooth scene transitions. |
+| | [SceneTransitionService](../features/extensions/scene-transition-service.md) | Service that simplifies adding smooth scene transitions. |
 | | Samples~ | A hidden (in the Unity Editor) folder that contains the sample scenes and assets. |
 
 More details on the process of using packages containing example projects can be found in the [Mixed Reality Toolkit and Unity Package Manager](../configuration/usingupm.md#using-mixed-reality-toolkit-examples) article.
