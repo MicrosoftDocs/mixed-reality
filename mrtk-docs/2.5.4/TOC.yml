@@ -1,7 +1,5 @@
 - name: Welcome to MRTK
   href: welcome-to-mrtk.md
-- name: Installation guide
-  href: installation.md
 - name: Roadmap
   href: roadmap.md
 - name: Configuration
