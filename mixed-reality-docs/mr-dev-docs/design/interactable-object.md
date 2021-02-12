@@ -36,19 +36,19 @@ For any objects that user can interact with gaze, hand ray, and motion controlle
 
 :::row:::
     :::column:::
-       ![interactibleobject-states-default](images/interactibleobject-states-default.jpg)<br>
+       ![Interactable object with default state](images/interactibleobject-states-default.jpg)<br>
        **Default (Observation) state**<br>
         Default idle state of the object.
        The cursor isn't on the object. Hand isn't detected.
     :::column-end:::
     :::column:::
-       ![interactibleobject-states-targeted](images/interactibleobject-states-targeted.jpg)<br>
+       ![Interactable object with target and hover state](images/interactibleobject-states-targeted.jpg)<br>
         **Targeted (Hover) state**<br>
         When the object is targeted with gaze cursor, finger proximity or motion controller's pointer.
         The cursor is on the object. Hand is detected, ready.
     :::column-end:::
     :::column:::
-       ![interactibleobject-states-pressed](images/interactibleobject-states-pressed.jpg)<br>
+       ![Interactable object with pressed state](images/interactibleobject-states-pressed.jpg)<br>
        **Pressed state**<br>
         When the object is pressed with an air tap gesture, finger press or motion controller's select button.
         The cursor is on the object. Hand is detected, air tapped.
@@ -65,15 +65,15 @@ Here's what these states look like on a **holographic button**:
 
 :::row:::
     :::column:::
-       ![interactibleobject-states-default](images/MRTK_InteractableState-default.jpg)<br>
+       ![Holographic button in default state](images/MRTK_InteractableState-default.jpg)<br>
        **Default (Observation) state**<br>
     :::column-end:::
     :::column:::
-       ![interactibleobject-states-targeted](images/MRTK_InteractableState-targeted.jpg)<br>
+       ![Holographic button in target and hover state](images/MRTK_InteractableState-targeted.jpg)<br>
         **Targeted (Hover) state**<br>
     :::column-end:::
     :::column:::
-       ![interactibleobject-states-pressed](images/MRTK_InteractableState-pressed.jpg)<br>
+       ![Holographic button in pressed state](images/MRTK_InteractableState-pressed.jpg)<br>
        **Pressed state**<br>
     :::column-end:::
 :::row-end:::
