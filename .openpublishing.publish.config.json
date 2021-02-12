@@ -46,9 +46,12 @@
     },
     {
       "docset_name": "mrtk-docs",
-      "build_source_folder": "mrtk-docs/2.5.2",
-      "build_output_subfolder": "mrtk-docs/2.5.2",
+      "build_source_folder": "mrtk-docs",
+      "build_output_subfolder": "mrtk-docs",
       "locale": "en-us",
+      "xref_query_tags": [
+        "/dotnet"
+      ],
       "monikers": [],
       "moniker_ranges": [],
       "open_to_public_contributors": true,
