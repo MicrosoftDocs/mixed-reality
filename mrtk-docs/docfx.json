@@ -2,6 +2,8 @@
   "build": {
     "content": [
       {
+        "group": "mrtk-unity-all-up",
+        "src": "./",
         "files": [
           "**/*.md",
           "**/*.yml"
@@ -22,10 +24,11 @@
     ],
     "resource": [
       {
+        "group": "mrtk-unity-all-up",
+        "src": "./",
         "files": [
           "**/*.png",
-          "**/*.jpg",
-          "**/*.gif"
+          "**/*.jpg"
         ],
         "exclude": [
           "**/obj/**",
@@ -42,12 +45,21 @@
     "globalMetadata": {
       "breadcrumb_path": "/mrtk/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None",
-      "ms.prod": "mixed-reality"
+      "feedback_system": "None"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "monikerRange": {
+        "./**/*.md": ">= mrtk-unity-2.5"
+      }
+    },
     "template": [],
     "dest": "mrtk",
-    "markdownEngineName": "markdig"
+    "markdownEngineName": "markdig",
+    "groups": {
+      "mrtk-unity-all-up": {
+        "dest": "temp-mrtk-unity",
+        "moniker_range": ">= mrtk-unity-2.5"
+      }
+    }
   }
 }
