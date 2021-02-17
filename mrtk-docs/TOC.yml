@@ -1,18 +1,20 @@
 - name: Welcome to MRTK
   href: welcome-to-mrtk.md
+- name: Release Notes
+  href: release-notes.md
 - name: Roadmap
   href: roadmap.md
 - name: Configuration
   href: configuration/toc.yml
-- name: Architecture
-  href: architecture/toc.yml
-- name: Features
-  href: features/toc.yml
-- name: Performance and best practices 
-  href: performance/toc.yml
 - name: Updates and Deployment
   href: updates-deployment/toc.yml
-- name: Packages and Release notes
+- name: Packages and Release Notes
   href: packages-releases/toc.yml
+- name: Performance and Best Practices 
+  href: performance/toc.yml
+- name: Architecture
+  href: architecture/toc.yml
+- name: Feature Overviews
+  href: features/toc.yml
 - name: Contributing
   href: contributing/toc.yml

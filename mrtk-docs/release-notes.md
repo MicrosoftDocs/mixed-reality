@@ -11,7 +11,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 # Microsoft Mixed Reality Toolkit 2.5.4 release notes
 
 - [What's new](#whats-new)
-- [Updating guidance](../updates-deployment/updating.md#upgrading-to-a-new-version-of-mrtk)
+- [Updating guidance](updates-deployment/updating.md#upgrading-to-a-new-version-of-mrtk)
 - [Known issues](#known-issues)
 
 > [!IMPORTANT]
@@ -37,7 +37,7 @@ Fixes an issue where the OpenXR providers weren't added to the link.xml by defau
 
 ### Add support for OpenXR
 
-Initial support for Unity's OpenXR preview package and Microsoft's Mixed Reality OpenXR package has been added. See [the MRTK/XRSDK getting started page](../configuration/getting-started-with-mrtk-and-xrsdk.md), [Unity's forum post](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/), or [Microsoft's documentation](https://aka.ms/openxr-unity-install) for more information.
+Initial support for Unity's OpenXR preview package and Microsoft's Mixed Reality OpenXR package has been added. See [the MRTK/XRSDK getting started page](configuration/getting-started-with-mrtk-and-xrsdk.md), [Unity's forum post](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/), or [Microsoft's documentation](https://aka.ms/openxr-unity-install) for more information.
 
 > [!IMPORTANT]
 > OpenXR in Unity is only supported on Unity 2020.2 and higher.
@@ -81,7 +81,7 @@ To resolve, please ensure that:
 - **Window** > **Package Manager** has one or more XR packages installed
 - **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** and make a selection for **Audio Spatializer**
 
-  ![Select Audio Apatializer](../features/images/release-notes/SpatializerSelection.png)
+  ![Select Audio Apatializer](features/images/release-notes/SpatializerSelection.png)
 
 ### NullReferenceException: Object reference not set to an instance of an object (SceneTransitionService.Initialize)
 
@@ -93,7 +93,7 @@ This error is due to the Scene Transition Service's configuration profile being 
 - If not expanded, expand `Scene Transition Service`
 - Set the value of `Configuration Profile` to **MRTKExamplesHubSceneTransitionServiceProfile**
 
-<img src="../features/images/release-notes/FixSceneTransitionProfile.png" width="500px" alt="Fix Scene Transition">
+<img src="features/images/release-notes/FixSceneTransitionProfile.png" width="500px" alt="Fix Scene Transition">
 
 ### Oculus Quest
 

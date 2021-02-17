@@ -1,18 +1,23 @@
-- name: Breaking Changes
-  href: breaking-changes.md
+- name: ContributingOverview
+  href: contributing.md
 - name: Coding Guidelines
   href: coding-guidelines.md
-- name: CONTRIBUTING
-  href: contributing.md
-- name: DevDocGuide
-  href: dev-doc-guide.md
-- name: Documentation Guide
+- name: Writing and Running tests
+  href: unit-tests.md
+- name: Writing Documentation
   href: documentation-guide.md
-- name: Experimental Features
-  href: experimental-features.md
-- name: Feature_Contribution_Process
-  href: feature-contribution-process.md
 - name: Pull Requests
   href: pull-requests.md
-- name: Unit Tests
-  href: unit-tests.md
+- name: Experimental Features
+  href: experimental-features.md
+- name: Breaking Changes
+  href: breaking-changes.md
+- name: How to use DocFX
+  href: dev-doc-guide.md
+
+
+
+
+
+
+

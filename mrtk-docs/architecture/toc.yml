@@ -10,12 +10,6 @@
       href: core-system.md
     - name: Controllers Pointers and Focus
       href: controllers-pointers-and-focus.md
-- name: Configuration and Profiles
-  href: configuration-and-profiles.md
-- name: Mixed Reality Services
-  href: mixed-reality-services.md
-- name: Spatial Awareness
-  href: spatial-awareness.md
-- name: Systems Extensions Providers
+- name: Systems, Extension Services and Data Providers
   href: systems-extensions-providers.md
 
