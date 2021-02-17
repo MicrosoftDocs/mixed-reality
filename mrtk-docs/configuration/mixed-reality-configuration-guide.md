@@ -133,7 +133,6 @@ The Mixed Reality Project provides a full featured Teleportation system for mana
 ## Spatial awareness settings
 
 The Mixed Reality Project provides a rebuilt spatial awareness system for working with spatial scanning systems in the project which is selected by default.
-You can view the architecture behind the [MRTK Spatial awareness system here](../architecture/spatial-awareness.md).
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_SpatialAwarenessSystemSelection.png" width="650px" alt="Spatial Awareness settings 1" style="display:block;">
 
