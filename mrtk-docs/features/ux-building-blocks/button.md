@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK But
 
 # Button
 
-![Button](../images/button/MRTK_Button_Main.png)
+![Button Main](../images/button/MRTK_Button_Main.png)
 
 A button gives the user a way to trigger an immediate action. It is one of the most foundational components in mixed reality. MRTK provides various types of button prefabs.
 
@@ -38,7 +38,7 @@ Examples of the button prefabs under ``MRTK/SDK/Features/UX/Interactable/Prefabs
 | HoloLens 2's shell-style checkbox 32x96mm | HoloLens 2's shell-style switch 32x96mm | HoloLens 2's shell-style radio 32x96mm |
 |  ![Radial](../images/button/MRTK_Button_Radial.png) **Radial** | ![Checkbox](../images/button/MRTK_Button_Checkbox.png) **Checkbox** | ![ToggleSwitch](../images/button/MRTK_Button_ToggleSwitch.png) **ToggleSwitch** |
 | Radial button | Checkbox  | Toggle switch |
-|  ![ButtonHoloLens1](../images/button/MRTK_Button_HoloLens1.png) **ButtonHoloLens1** | ![PressableRoundButton](../images/button/MRTK_Button_Round.png) **PressableRoundButton** | ![Button](../images/button/MRTK_Button_Base.png) **Button** |
+|  ![ButtonHoloLens1](../images/button/MRTK_Button_HoloLens1.png) **ButtonHoloLens1** | ![PressableRoundButton](../images/button/MRTK_Button_Round.png) **PressableRoundButton** | ![Button Base](../images/button/MRTK_Button_Base.png) **Button** |
 | HoloLens 1st gen's shell style button | Round shape push button | Basic button |
 
 The `Button` (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/Button.prefab) is based on the [Interactable](interactable.md) concept to provide easy UI controls for buttons or other types of interactive surfaces. The baseline button supports all available input methods, including articulated hand input for the near interactions as well as gaze + air-tap for the far interactions. You can also use voice command to trigger the button.
@@ -95,7 +95,7 @@ The subtle pulse effect is triggered by the pressable button, which looks for *P
 
 ## Inspector properties
 
-![Button](../images/button/MRTK_Button_Structure.png)
+![Button Structure](../images/button/MRTK_Button_Structure.png)
 
 **Box Collider**
 `Box Collider` for the button's front plate.
@@ -292,4 +292,4 @@ Each piano key has a `PressableButton` and a `NearInteractionTouchable` script a
 ## See also
 
 * [Interactable](interactable.md)
-* [Visual Themes](../visual-themes.md)
+* [Visual Themes](visual-themes.md)

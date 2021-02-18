@@ -12,7 +12,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Eye Trac
 
 This page covers how to set up your Unity MRTK scene to use eye tracking in your app.
 The following assumes you are starting out with a fresh new scene.
-Alternatively, you can check out our already configured [MRTK eye tracking examples](eye-tracking-examples-overview.md) with tons of great examples that you can directly build on.
+Alternatively, you can check out our already configured [MRTK eye tracking examples](../../example-scenes/eye-tracking-examples-overview.md) with tons of great examples that you can directly build on.
 
 ## Eye tracking requirements checklist
 
@@ -132,7 +132,7 @@ If you _"denied eye tracking permission"_, you can reset this in Settings -> Pri
 ---
 
 This should get you started with using eye tracking in your MRTK Unity app.
-Don't forget to check out [our MRTK eye tracking tutorials and samples](eye-tracking-examples-overview.md) demonstrating how to use eye tracking input and conveniently providing scripts that you can reuse in your projects.
+Don't forget to check out [our MRTK eye tracking tutorials and samples](../../example-scenes/eye-tracking-examples-overview.md) demonstrating how to use eye tracking input and conveniently providing scripts that you can reuse in your projects.
 
 ---
 [Back to "Eye tracking in the MixedRealityToolkit"](eye-tracking-main.md)

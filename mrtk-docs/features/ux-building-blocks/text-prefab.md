@@ -29,19 +29,19 @@ Open-source fonts (Assets/MRTK/Core/StandardAssets/Fonts) included in Mixed Real
 > [!IMPORTANT]
 > Text Prefab uses the open source font 'Selawik'. To use Text Prefab with a different font, please import the font file and follow the instructions below. Below example shows how to use 'Segoe UI' font with Text Prefab.
 
-![Importing Segoe UI font file](images/text-prefab/TextPrefabInstructions01.png)
+![Importing Segoe UI font file](../images/text-prefab/TextPrefabInstructions01.png)
 
 1. Assign font texture to 3DTextSegoeUI.mat material.
 
-    ![Assigning font texture](images/text-prefab/TextPrefabInstructions02.png)
+    ![Assigning font texture](../images/text-prefab/TextPrefabInstructions02.png)
 
 1. On 3DTextSegoeUI.mat material, select the shader Custom/3DTextShader.shader.
 
-    ![Assigning shader](images/text-prefab/TextPrefabInstructions03.png)
+    ![Assigning shader](../images/text-prefab/TextPrefabInstructions03.png)
 
 1. Assign Segoe UI font and 3DTextSegoeUI material to the text components in the prefabs.
 
-    ![Assigning font file and material](images/text-prefab/TextPrefabInstructions04.png)
+    ![Assigning font file and material](../images/text-prefab/TextPrefabInstructions04.png)
 
 ### Working with Fonts in Unity
 
@@ -61,13 +61,13 @@ When adding a UI or canvas based Text element to a scene, the size disparity is 
 
 **Disclaimer**: The default value of any font may be effected by the texture size of that font or how the font was imported into Unity. These tests were performed based on the default Arial font in Unity, as well as one other imported font.
 
-![Font size with scaling factors](images/text-prefab/TextPrefabInstructions07.png)
+![Font size with scaling factors](../images/text-prefab/TextPrefabInstructions07.png)
 
 ### [Text3DSelawik.mat](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/StandardAssets/Materials/)
 
 Material for 3DTextPrefab with occlusion support. Requires 3DTextShader.shader
 
-![Default Font material vs 3DTextSegoeUI material](images/text-prefab/TextPrefabInstructions06.png)
+![Default Font material vs 3DTextSegoeUI material](../images/text-prefab/TextPrefabInstructions06.png)
 
 ### [Text3DShader.shader](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/StandardAssets/Shaders)
 

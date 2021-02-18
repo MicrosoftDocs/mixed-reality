@@ -141,7 +141,7 @@ that respond to various types of hand input (articulated and non-articulated).
 
 ![HandInteractionExample scene](../features/images/MRTK_Examples.png)
 
-This package also contains eye tracking demos, which are [documented here](../features/eye-tracking/eye-tracking-examples-overview.md)
+This package also contains eye tracking demos, which are [documented here](../features/example-scenes/eye-tracking-examples-overview.md)
 
 More generally, any new feature in the MRTK should contain a corresponding example in the examples package, roughly following
 the same folder structure and location.

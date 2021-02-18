@@ -13,7 +13,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, EyeTrack
 ## How to support _look + hand motions_ (eye gaze & hand gestures)
 
 This page explains how to use eye targeting as a primary pointer in combination with hand motions.
-In our [MRTK eye tracking demos](eye-tracking-examples-overview.md), we describe several examples for using eyes + hands, for example:
+In our [MRTK eye tracking demos](../../example-scenes/eye-tracking-examples-overview.md), we describe several examples for using eyes + hands, for example:
 
 - [Selection](eye-tracking-target-selection.md): Looking at distant holographic button and simply performing a pinch gesture to quickly select it.
 - [Positioning](eye-tracking-positioning.md): Fluently move a hologram across your scene by simply looking at it, pinching your index finger and thumb together to grab it and then move it around using your hand.
@@ -41,7 +41,7 @@ To avoid having the head or eye gaze pointers automatically suppressed once a ha
 PointerUtils.SetGazePointerBehavior(PointerBehavior.AlwaysOn);
 ```
 
-See [`Controllers Pointers and Focus`](../../architecture/controllers-pointers-and-focus.md)
+See [`Controllers Pointers and Focus`](../../../architecture/controllers-pointers-and-focus.md)
 
 ---
 [Back to "Eye tracking in the MixedRealityToolkit"](eye-tracking-main.md)

@@ -18,7 +18,7 @@ Eye tracking enables users to quickly and effortlessly engage with holograms acr
 New to eye tracking? No problem! There are a number of videos, tutorials and samples to get you started in the [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity)!
 It is recommended to start by exploring some of the existing eye tracking samples that demonstrate best practices for eye-based interactions. You can then use these samples to pull the parts that seem relevant to you into your app. Finally, we also describe how to set up a fresh scene with the core components to get eye tracking working in your app.
 
-1. [MRTK eye tracking samples](eye-tracking-examples-overview.md)
+1. [MRTK eye tracking samples](../../example-scenes/eye-tracking-examples-overview.md)
 
 2. [MRTK eye tracking setup](eye-tracking-basic-setup.md)
 
