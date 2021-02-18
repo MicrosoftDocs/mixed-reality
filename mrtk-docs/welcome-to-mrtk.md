@@ -294,8 +294,8 @@ If you're an experienced Mixed Reality or MRTK developer, check the links in the
         Learn how to auto-scroll text or fluently zoom into focused content based on what you are looking at
     :::column-end:::
     :::column:::
-        [![Eye Tracking: Heat Map](features/images/eye-tracking/mrtk_et_heatmaps.png)](features/input/eye-tracking/eye-tracking-examples-overview.md#visualization-of-visual-attention)
-        **[Eye Tracking: Heat Map](features/input/eye-tracking/eye-tracking-examples-overview.md#visualization-of-visual-attention)**<br>
+        [![Eye Tracking: Heat Map](features/images/eye-tracking/mrtk_et_heatmaps.png)](features/example-scenes/eye-tracking-examples-overview.md#visualization-of-visual-attention)
+        **[Eye Tracking: Heat Map](features/example-scenes/eye-tracking-examples-overview.md#visualization-of-visual-attention)**<br>
         Examples for logging, loading and visualizing what users have been looking at in your app
     :::column-end:::
 :::row-end:::
