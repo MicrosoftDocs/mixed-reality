@@ -28,7 +28,7 @@ However, this may not be the way you would like to interact at a distance and ra
 To disable the hand ray pointer, simply remove the _'DefaultControllerPointer'_ in your _Input -> Pointer_ MRTK configuration setting.
 To use eyes and hands as described above in your app, please also make sure that you meet all of the [requirements for using eye tracking](eye-tracking-basic-setup.md).
 
-![How to remove the hand ray](../images/eye-tracking/mrtk_setup_removehandray.jpg)
+![How to remove the hand ray](../../images/eye-tracking/mrtk_setup_removehandray.jpg)
 
 You can also check out, how the input profile _EyeTrackingDemoPointerProfile_ from the eye tracking sample package is set up as a reference.
 

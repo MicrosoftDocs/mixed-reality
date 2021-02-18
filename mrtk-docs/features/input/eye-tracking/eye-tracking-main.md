@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, EyeTrack
 
 # Eye tracking in the Mixed Reality Toolkit
 
-![Eye tracking in MRTK](../images/eye-tracking/mrtk_et_compilation.png)
+![Eye tracking in MRTK](../../images/eye-tracking/mrtk_et_compilation.png)
 
 _HoloLens 2_ offers an exciting and powerful new input: Eye tracking!
 Eye tracking enables users to quickly and effortlessly engage with holograms across their view and can make your system smarter by better identifying a user's intention. Check out Microsoft's Mixed Reality [documentation on eye tracking on HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/eye-tracking) for more details, such as explaining powerful applications and design guidelines for eye tracking in mixed reality.

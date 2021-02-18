@@ -2,7 +2,7 @@
   href: app-bar.md
 - name: Bounding Box
   href: bounding-box.md
-- name: bounds-control
+- name: Bounds Control
   href: bounds-control.md
 - name: Button
   href: button.md
@@ -36,6 +36,10 @@
   href: toolbox.md
 - name: Tooltip
   href: tooltip.md
+- name: Text Prefab
+  href: text-prefab.md
+- name: Visual Themes
+  href: visual-themes.md
 - name: Solvers
   href: solvers/toc.yml
 

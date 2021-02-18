@@ -26,3 +26,5 @@
   href: pointers.md
 - name: Speech
   href: speech.md
+- name: Eye Tracking
+  href: eye-tracking/toc.yml
