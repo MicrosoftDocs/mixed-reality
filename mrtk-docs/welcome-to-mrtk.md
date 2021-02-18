@@ -78,8 +78,8 @@ If you're an experienced Mixed Reality or MRTK developer, check the links in the
         **[Hand Tracking <br> (HoloLens 2)](features/input/hand-tracking.md)**<br>
     :::column-end:::
     :::column:::
-        [![Eye Tracking (HoloLens 2)](features/images/MRTK_Icon_EyeTracking.png)](features/eye-tracking/eye-tracking-Main.md)
-        **[Eye Tracking <br/> (HoloLens 2)](features/eye-tracking/eye-tracking-Main.md)**<br>
+        [![Eye Tracking (HoloLens 2)](features/images/MRTK_Icon_EyeTracking.png)](features/input/eye-tracking/eye-tracking-Main.md)
+        **[Eye Tracking <br/> (HoloLens 2)](features/input/eye-tracking/eye-tracking-Main.md)**<br>
     :::column-end:::
     :::column:::
         [![Profiles](features/images/MRTK_Icon_Profiles.png)](configuration/mixed-reality-configuration-guide.md)
@@ -108,8 +108,8 @@ If you're an experienced Mixed Reality or MRTK developer, check the links in the
 
 :::row:::
     :::column:::
-       [![Spatial Awareness](features/images/MRTK_Icon_SpatialUnderstanding.png)](features/spatial-awareness/spatial-awareness-getting-started.md)
-        **[Spatial <br/> Awareness](features/spatial-awareness/spatial-awareness-getting-started.md)**<br>
+       [![Spatial Awareness 1](features/images/MRTK_Icon_SpatialUnderstanding.png)](features/spatial-awareness/spatial-awareness-getting-started.md)
+        **[Spatial <br/> Awareness 2](features/spatial-awareness/spatial-awareness-getting-started.md)**<br>
     :::column-end:::
     :::column:::
         [![Diagnostic Tool](features/images/MRTK_Icon_Diagnostics.png)](features/diagnostics/diagnostics-system-getting-started.md)
@@ -241,8 +241,8 @@ If you're an experienced Mixed Reality or MRTK developer, check the links in the
         Floating menu UI for the near interactions
     :::column-end:::
     :::column:::
-        [![Spatial Awareness](features/images/spatial-awareness/MRTK_SpatialAwareness_Main.png)](features/spatial-awareness/spatial-awareness-getting-started.md)
-        **[Spatial Awareness](features/spatial-awareness/spatial-awareness-getting-started.md)**<br>
+        [![Spatial Awareness Getting started](features/images/spatial-awareness/MRTK_SpatialAwareness_Main.png)](features/spatial-awareness/spatial-awareness-getting-started.md)
+        **[Spatial Awareness View](features/spatial-awareness/spatial-awareness-getting-started.md)**<br>
         Make your holographic objects interact with the physical environments
     :::column-end:::
     :::column:::
@@ -290,18 +290,18 @@ If you're an experienced Mixed Reality or MRTK developer, check the links in the
 
 :::row:::
     :::column:::
-       [![Eye Tracking: Target Selection](features/images/eye-tracking/mrtk_et_targetselect.png)](features/eye-tracking/eye-tracking-target-selection.md)
-        **[Eye Tracking: Target Selection](features/eye-tracking/eye-tracking-target-selection.md)**<br>
+       [![Eye Tracking: Target Selection](features/images/eye-tracking/mrtk_et_targetselect.png)](features/input/eye-tracking/eye-tracking-target-selection.md)
+        **[Eye Tracking: Target Selection](features/input/eye-tracking/eye-tracking-target-selection.md)**<br>
         Combine eyes, voice and hand input to quickly and effortlessly select holograms across your scene
     :::column-end:::
     :::column:::
-        [![Eye Tracking: Navigation](features/images/eye-tracking/mrtk_et_navigation.png)](features/eye-tracking/eye-tracking-navigation.md)
-        **[Eye Tracking: Navigation](features/eye-tracking/eye-tracking-navigation.md)**<br>
+        [![Eye Tracking: Navigation](features/images/eye-tracking/mrtk_et_navigation.png)](features/input/eye-tracking/eye-tracking-navigation.md)
+        **[Eye Tracking: Navigation](features/input/eye-tracking/eye-tracking-navigation.md)**<br>
         Learn how to auto-scroll text or fluently zoom into focused content based on what you are looking at
     :::column-end:::
     :::column:::
-        [![Eye Tracking: Heat Map](features/images/eye-tracking/mrtk_et_heatmaps.png)](features/eye-tracking/eye-tracking-examples-overview.md#visualization-of-visual-attention)
-        **[Eye Tracking: Heat Map](features/eye-tracking/eye-tracking-examples-overview.md#visualization-of-visual-attention)**<br>
+        [![Eye Tracking: Heat Map](features/images/eye-tracking/mrtk_et_heatmaps.png)](features/example-scenes/eye-tracking-examples-overview.md#visualization-of-visual-attention)
+        **[Eye Tracking: Heat Map](features/example-scenes/eye-tracking-examples-overview.md#visualization-of-visual-attention)**<br>
         Examples for logging, loading and visualizing what users have been looking at in your app
     :::column-end:::
 :::row-end:::

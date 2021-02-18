@@ -17,7 +17,7 @@ with the world based on where the user is looking. Gaze exists in two different 
 
 This type of gaze is based on the direction that the head/camera is looking at. Head gaze is active
 on systems that don't support eye gaze, or in cases where the hardware may support eye gaze, but
-the right set of [permissions and setup](../eye-tracking/eye-tracking-basic-setup.md#eye-tracking-requirements-checklist)
+the right set of [permissions and setup](eye-tracking/eye-tracking-basic-setup.md#eye-tracking-requirements-checklist)
 has not been performed.
 
 Head gaze is usually associated with HoloLens 1 style interactions involving looking at object by
@@ -27,7 +27,7 @@ placing it in the center of the Holographic Frame and then performing the air ta
 
 This type of gaze is based on where the user's eyes are looking. Eye gaze is only present
 on systems that support eye tracking. See the
-[eye tracking documentation](../eye-tracking/eye-tracking-main.md) for more details on how
+[eye tracking documentation](eye-tracking/eye-tracking-main.md) for more details on how
 to use eye gaze.
 
 ## GazeProvider

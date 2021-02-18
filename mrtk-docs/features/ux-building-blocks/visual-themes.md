@@ -25,18 +25,18 @@ To create a new [`Theme`](xref:Microsoft.MixedReality.Toolkit.UI.Theme) asset:
 
 Example Theme configuration assets can be found under `MRTK/SDK/Features/UX/Interactable/Themes`.
 
-![Theme ScriptableObject example in inspector](images/visual-themes/ThemeInspectorExample.png)
+![Theme ScriptableObject example in inspector](../images/visual-themes/ThemeInspectorExample.png)
 
 ### States
 
-When creating a new [`Theme`](xref:Microsoft.MixedReality.Toolkit.UI.Theme), the first thing to set is what states are available. The *States* property indicates how many values a Theme configuration needs to define as there will be one value per state. In the example image above, the [default states defined for the Interactable](ux-building-blocks/interactable.md#general-input-settings) component are *Default*, *Focus*, *Pressed*, and *Disabled*. These are defined in the `DefaultInteractableStates` (Assets/MRTK/SDK/Features/UX/Interactable/States) asset file.
+When creating a new [`Theme`](xref:Microsoft.MixedReality.Toolkit.UI.Theme), the first thing to set is what states are available. The *States* property indicates how many values a Theme configuration needs to define as there will be one value per state. In the example image above, the [default states defined for the Interactable](interactable.md#general-input-settings) component are *Default*, *Focus*, *Pressed*, and *Disabled*. These are defined in the `DefaultInteractableStates` (Assets/MRTK/SDK/Features/UX/Interactable/States) asset file.
 
 To create a new [`State`](xref:Microsoft.MixedReality.Toolkit.UI.States) asset:
 
 1) Right click in the *Project Window*
 1) Select **Create** > **Mixed Reality Toolkit** > **State**
 
-![States ScriptableObject example in inspector](images/interactable/DefaultInteractableStates.png)
+![States ScriptableObject example in inspector](../images/interactable/DefaultInteractableStates.png)
 
 A [`State`](xref:Microsoft.MixedReality.Toolkit.UI.States) ScriptableObject defines both the list of states as well as the type of *StateModel* to create for these states. A *StateModel* is a class that extends [`BaseStateModel`](xref:Microsoft.MixedReality.Toolkit.UI.BaseStateModel) and implements the state machine logic to generate the current state at runtime. The current state from this class is generally used by Theme Engines at runtime to dictate what values to set against material properties, GameObject transforms, and more.
 
@@ -64,7 +64,7 @@ In general, it is easier to design Theme configurations via the Unity inspector 
 
 To help expedite development, the following helper methods are useful for simplifying setup.
 
-[`Interactable.GetDefaultInteractableStates()`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable) - creates a new States ScriptableObject with the four default state values used in the [Interactable](ux-building-blocks/interactable.md) component.
+[`Interactable.GetDefaultInteractableStates()`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable) - creates a new States ScriptableObject with the four default state values used in the [Interactable](interactable.md) component.
 
 [`ThemeDefinition.GetDefaultThemeDefinition<T>()`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeDefinition) - Every Theme Engine defines a default configuration with the correct properties needed for that Theme runtime type. This helper creates a definition for the given Theme Engine type.
 
@@ -295,4 +295,4 @@ public class MeshVisibilityController : MonoBehaviour
 
 ## See also
 
-- [Interactable](ux-building-blocks/interactable.md)
+- [Interactable](interactable.md)

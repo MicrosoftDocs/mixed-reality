@@ -25,7 +25,7 @@ The MRTK eye tracking demo scenes are [loaded additively](https://docs.unity3d.c
 
 ## Overview of the eye tracking demo samples
 
-### [**Eye-Supported Target Selection**](eye-tracking-target-selection.md)
+### [**Eye-Supported Target Selection**](../input/eye-tracking/eye-tracking-target-selection.md)
 
 This tutorial showcases the ease of accessing eye gaze data to select targets.
 It includes an example for subtle yet powerful feedback to provide the user with the confidence that a target is focused without being overwhelming.
@@ -33,7 +33,7 @@ In addition, there is a simple example of smart notifications that automatically
 
 **Summary**: Fast and effortless target selections using a combination of eyes, voice and hand input.
 
-### [**Eye-Supported Navigation**](eye-tracking-navigation.md)
+### [**Eye-Supported Navigation**](../input/eye-tracking/eye-tracking-navigation.md)
 
 Imagine that you are reading some information on a distant display or your e-reader and when you reach the end of the displayed text, the text automatically scrolls up to reveal more content.
 Or how about magically zooming directly toward where you were looking at?
@@ -42,7 +42,7 @@ In addition, there is an example for hands-free rotation of 3D holograms by maki
 
 **Summary**: Scroll, pan, zoom, 3D rotation using a combination of eyes, voice and hand input.
 
-### [**Eye-Supported Positioning**](eye-tracking-positioning.md)
+### [**Eye-Supported Positioning**](../input/eye-tracking/eye-tracking-positioning.md)
 
 This tutorial shows an input scenario called [Put-That-There](https://youtu.be/CbIn8p4_4CQ) dating back to research from the MIT Media Lab in the early 1980's with eye, hand and voice input.
 The idea is simple: Benefit from your eyes for fast target selection and positioning.
@@ -68,7 +68,7 @@ and a sample app package that is built with the "Gaze Input" capability
 on the package's AppXManifest.
 
 In order to use these eye tracking samples on device, make sure to follow
-[these steps](eye-tracking-basic-setup.md#testing-your-unity-app-on-a-hololens-2)
+[these steps](../input/eye-tracking/eye-tracking-basic-setup.md#testing-your-unity-app-on-a-hololens-2)
 prior to building the app in Visual Studio.
 
 ### 1. Load EyeTrackingDemo-00-RootScene.unity
@@ -116,7 +116,7 @@ Returning to our eye tracking sample scene: The gem rotates as long as being loo
 - Saying _"select"_ into your microphone
 - While pressing _Space_ to show the simulated hand input, click the left mouse button to perform a simulated pinch
 
-We describe in more detail how you can achieve these interactions in our [**Eye-Supported Target Selection**](eye-tracking-target-selection.md) tutorial.
+We describe in more detail how you can achieve these interactions in our [**Eye-Supported Target Selection**](../input/eye-tracking/eye-tracking-target-selection.md) tutorial.
 
 When moving the cursor up to the top menu bar in the scene, you will notice that the currently hovered item will highlight subtly.
 You can select the currently highlighted item by using one of the above described commit methods (e.g., pressing _Enter_).
@@ -142,7 +142,7 @@ Also, when you share your project with others, the sub scenes are not automatica
 
 ---
 
-Now that you know how to get the MRTK eye tracking example scenes to work, let's continue with diving deeper into how to select holograms with your eyes: [Eye-supported target selection](eye-tracking-target-selection.md).
+Now that you know how to get the MRTK eye tracking example scenes to work, let's continue with diving deeper into how to select holograms with your eyes: [Eye-supported target selection](../input/eye-tracking/eye-tracking-target-selection.md).
 
 ---
-[Back to "Eye tracking in the MixedRealityToolkit"](eye-tracking-Main.md)
+[Back to "Eye tracking in the MixedRealityToolkit"](../input/eye-tracking/eye-tracking-Main.md)

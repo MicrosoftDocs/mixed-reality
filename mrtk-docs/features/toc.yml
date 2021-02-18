@@ -1,12 +1,6 @@
-- name: Hand Joint Chaser
-  href: hand-joint-chaser.md
 - name: Lost Tracking Service
   href: lost-tracking-service.md
-- name: Text Prefab
-  href: text-prefab.md
-- name: Visual Themes
-  href: visual-themes.md
-- name: Boundary
+- name: Boundary System
   href: boundary/toc.yml
 - name: Camera System
   href: camera-system/toc.yml
@@ -20,8 +14,6 @@
   href: experimental/toc.yml
 - name: Extensions
   href: extensions/toc.yml
-- name: EyeTracking
-  href: eye-tracking/toc.yml
 - name: Input
   href: input/toc.yml
 - name: Input Simulation

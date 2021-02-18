@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, EyeTrack
 
 # Eye calibration
 
-![Screenshot from eye calibration notification](../images/eye-tracking/mrtk_et_calibration_notification_example.jpg)
+![Screenshot from eye calibration notification](../../images/eye-tracking/mrtk_et_calibration_notification_example.jpg)
 
 ## Overview
 

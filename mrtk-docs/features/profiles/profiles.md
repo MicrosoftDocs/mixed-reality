@@ -46,7 +46,7 @@ The key differences between the HoloLens2 profile and the Default Profile are:
 
 **Enabled** Systems:
 
-- The [Eye Tracking provider](../eye-tracking/eye-tracking-main.md)
+- The [Eye Tracking provider](../input/eye-tracking/eye-tracking-main.md)
 - Eye input simulation
 
 Camera profile settings are set to match so that the editor quality and player quality are the same. This is different from the default camera profile where Opaque displays are set to a higher quality. This change means that in-editor quality will be lower, which will more closely match what will be rendered on the device.

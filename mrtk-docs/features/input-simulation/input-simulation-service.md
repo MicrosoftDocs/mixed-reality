@@ -195,7 +195,7 @@ The simulated motion controllers can be manipulated the same way articulated han
 
 ### Eye tracking
 
-[Eye tracking simulation](../eye-tracking/eye-tracking-basic-setup.md#simulating-eye-tracking-in-the-unity-editor) can be enabled by checking the **Simulate Eye Position** option in the
+[Eye tracking simulation](../input/eye-tracking/eye-tracking-basic-setup.md#simulating-eye-tracking-in-the-unity-editor) can be enabled by checking the **Simulate Eye Position** option in the
 [Input Simulation Profile](#enabling-the-input-simulation-service). This should not be used with GGV or motion controller
 style interactions (so ensure that **Default Controller Simulation Mode** is set to *Articulated Hand*).
 

@@ -102,13 +102,13 @@ uses hard coded paths to MRTK resources, they will need to be updated per the fo
 
 This version of MRTK modifies the steps required for eye gaze setup. The _'IsEyeTrackingEnabled'_ checkbox can be found in the gaze settings of the input pointer profile. Checking this box will enable eye based gaze, rather then the default head based gaze.
 
-For more information on these changes and complete instructions for eye tracking setup, please see the [eye tracking](../features/eye-tracking/eye-tracking-basic-setup.md) article.
+For more information on these changes and complete instructions for eye tracking setup, please see the [eye tracking](../features/input/eye-tracking/eye-tracking-basic-setup.md) article.
 
 ### Eye gaze pointer behavior in 2.4.0
 
 The eye gaze default pointer behavior have been modified to match the head gaze default pointer behavior. An eye gaze pointer will automatically be suppressed once a hand is detected. The eye gaze pointer will become visible again after saying "Select".
 
-Details about gaze and hand setups can be found in the [eyes and hands](../features/eye-tracking/eye-tracking-eyes-and-hands.md#how-to-keep-gaze-pointer-always-on) article.
+Details about gaze and hand setups can be found in the [eyes and hands](../features/input/eye-tracking/eye-tracking-eyes-and-hands.md#how-to-keep-gaze-pointer-always-on) article.
 
 ### API changes in 2.4.0
 

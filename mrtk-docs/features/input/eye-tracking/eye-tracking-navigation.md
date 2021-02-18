@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, EyeTrack
 
 # Eye-supported navigation in MRTK
 
-![MRTK](../images/eye-tracking/mrtk_et_navigation.png)
+![MRTK](../../images/eye-tracking/mrtk_et_navigation.png)
 
 Imagine you are reading information on a slate and when you reach the end of the displayed text, the text automatically scrolls up to reveal more content. Or you can fluently zoom in where you are looking at. The map also automatically adjusts the content to keep the things of interest within your field of view. Another interesting application is the hands-free observation of 3D holograms by automatically bringing the parts of the hologram that you are looking at to the front. These are some of the examples that are described on this page in context of eye-supported navigation.
 
@@ -46,13 +46,13 @@ MinDistFromCenterForAutoScroll | Normalized minimal distance in x and y from cen
 UseSkimProofing | If enabled, it prevents sudden scroll movements when quickly looking around. This may make scrolling feel less responsive though. It can be tuned with the *SkimProofUpdateSpeed* value.
 SkimProofUpdateSpeed | The lower the value, the slower the scrolling will speed up after skimming. Recommended value: 5.
 
-![Eye-supported scroll setup in Unity](../images/eye-tracking/mrtk_et_nav_scroll.jpg)
+![Eye-supported scroll setup in Unity](../../images/eye-tracking/mrtk_et_nav_scroll.jpg)
 
 ### EyeTrackingTarget
 
 Attaching the _EyeTrackingTarget_ component allows for flexibly handle eye-gaze-related events.
 The scroll sample demonstrates scrolling text that starts when the user *looks* at the panel and stops when the user is *looking away* from it.
-![Eye-supported scroll setup in Unity: EyeTrackingTarget](../images/eye-tracking/mrtk_et_nav_scroll_ettarget.jpg)
+![Eye-supported scroll setup in Unity: EyeTrackingTarget](../../images/eye-tracking/mrtk_et_nav_scroll_ettarget.jpg)
 
 ## Gaze-supported pan and zoom
 
@@ -79,7 +79,7 @@ Pan_MinDistFromCenter | Normalized minimal distance in x and y from center of th
 UseSkimProofing | If enabled, it prevents sudden scroll movements when quickly looking around. This may make scrolling feel less responsive though. It can be tuned with the *SkimProofUpdateSpeed* value.
 SkimProofUpdateSpeed | The lower the value, the slower the scrolling will speed up after skimming. Recommended value: 5.
 
-![Eye-supported pan and zoom setup in Unity](../images/eye-tracking/mrtk_et_nav_panzoom.jpg)
+![Eye-supported pan and zoom setup in Unity](../../images/eye-tracking/mrtk_et_nav_panzoom.jpg)
 
 ## Attention-based 3D rotation
 
@@ -108,7 +108,7 @@ MaxRotX | Maximum horizontal rotation angle. This is to limit the rotation in di
 MinRotY | Minimal vertical rotation angle to limit the rotation around the x axis.
 MaxRotY | Maximum vertical rotation angle to limit the rotation around the y axis.
 
-![Eye-supported 3D rotation setup in Unity](../images/eye-tracking/mrtk_et_nav_rotate.jpg)
+![Eye-supported 3D rotation setup in Unity](../../images/eye-tracking/mrtk_et_nav_rotate.jpg)
 
 In summary, the above scripts should enable you to  get started to use eye gaze for various input navigation tasks such as scrolling texts, zooming and panning textures as well as rotating investigating 3D holograms.
 
