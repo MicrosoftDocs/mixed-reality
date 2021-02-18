@@ -1,11 +1,11 @@
 ---
-title: Install the tools - Mixed Reality
+title: Install the tools
 description: MRTK Install the tools documentation page
 author: ebavliya-MS
 ms.author: ebevliya
 ms.date: 02/17/2021
 ms.localizationpriority: high
-keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Install, tools
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, mixed reality toolkit, Install, up-to-date, tools, get started, basics, unity, visual studio, toolkit, mixed reality headset, windows mixed reality headset, virtual reality headset, installation, Windows, HoloLens, emulator
 ---
 
 # Install the tools
