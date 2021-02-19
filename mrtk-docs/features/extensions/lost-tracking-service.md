@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Lost tracking visualization
 
-![Lost Tracking](images/lost-tracking/LostTrackingVisualization.jpg)
+![Lost Tracking](../images/lost-tracking/LostTrackingVisualization.jpg)
 
 Lost Tracking Extension Service provides HoloLens shell style animated visual for the lost tracking state.
 
@@ -18,4 +18,4 @@ Lost Tracking Extension Service provides HoloLens shell style animated visual fo
 
 In MRTK Profile, add **Lost Tracking Service** to the Extensions. Assign **DefaultLostTrackingServiceProfile** which includes **LostTrackingVisualPrefab**.
 
-<img src="images/lost-tracking/LostTracking_Extensions.png" width="550" alt="Lost Tracking Extension">
+<img src="../images/lost-tracking/LostTracking_Extensions.png" width="550" alt="Lost Tracking Extension">

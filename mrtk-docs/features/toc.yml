@@ -1,5 +1,3 @@
-- name: Lost Tracking Service
-  href: lost-tracking-service.md
 - name: Boundary System
   href: boundary/toc.yml
 - name: Camera System

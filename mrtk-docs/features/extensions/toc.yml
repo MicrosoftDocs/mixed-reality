@@ -4,3 +4,5 @@
   href: hand-physics-service.md
 - name: Scene Transition Service
   href: scene-transition-service.md
+- name: Lost Tracking Service
+  href: lost-tracking-service.md
