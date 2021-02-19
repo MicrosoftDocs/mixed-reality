@@ -23,81 +23,30 @@ You can use [Mixed Reality Toolkit for Unity](https://github.com/Microsoft/Mixed
 
 # Installation checklist
 
-## Installing Windows 10 
-[Manual Install Link](https://www.microsoft.com/en-us/software-download/windows10)
-
-Install the most recent version of Windows 10 so your PC's operating system matches the platform for which you're building mixed reality applications.
-
-You can install the most recent version of Windows 10 via Windows Update in Settings or by creating installation media, using the [link](https://www.microsoft.com/en-us/software-download/windows10).
-
-See [current release notes](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/mixed-reality-software) for information about the newest mixed reality features available with each release of Windows 10. Enable developer mode on your PC at Settings > Update & Security > For developers.
-
-#### Note for enterprise and corporate-managed PCs
-If your PC is managed by your organization's IT department, you might need to contact them in order to update.
-
-#### 'N' versions of Windows
-Windows Mixed Reality immersive (VR) headsets are not supported on 'N' versions of Windows.
-
-## Installing Visual Studio 2019
-[Install Link](https://visualstudio.microsoft.com/downloads/)
-
-Fully-featured integrated development environment (IDE) for Windows and more. You'll use Visual Studio to write code, debug, test, and deploy.
-
-Be sure you install the following workloads:
-
-* Desktop development with C++
-*  Universal Windows Platform (UWP) development
-
-Within the UWP workload, be sure to check the following optional component if you'll be developing for HoloLens:
-
-*  USB Device Connectivity
-
-#### Note about Unity
-Unless you're intentionally trying to install a newer (non-LTS) version of Unity for a specific purpose, we recommend not installing the Unity workload as part of Visual Studio installation, and instead install the **Unity 2019 LTS** stream as noted below.
-
-#### Known issues
-There are some known issues with debugging mixed reality apps in Visual Studio 2019 version 16.0. Please ensure that you update to **Visual Studio 2019 version 16.8 or higher**.
-
-## Installing Windows 10 SDK
-[Manual Install Link](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk/)
-
-Provides the latest headers, libraries, metadata, and tools for building Windows 10 apps on HoloLens 2.
-
-**To build HoloLens 2 apps, you must install the Windows SDK, build 18362 or later.**
-
-If you are only developing applications for desktop Windows Mixed Reality headsets or HoloLens (1st gen), you can use the Windows SDK installed by Visual Studio 2017.
-
-## Installing HoloLens Emulator
-[HoloLens 2 Emulator Install Link - Windows Holographic, version 20H2 February 2021 Update 10.0.19041.1134](https://go.microsoft.com/fwlink/?linkid=2154784)
-
-[HoloLens 1st gen  Emulator Install Link](https://go.microsoft.com/fwlink/?linkid=2065980)
-
-The emulator lets you run applications on a HoloLens virtual machine image without a physical HoloLens.
-
-See Using the [HoloLens emulator](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator) for more information on getting started with the emulator.
-
-**Your system must support Hyper-V** for the emulator installation to succeed. Reference the System Requirements section below for details.
-
-#### Note on HoloLens (1st gen) Emulator
-Visual Studio 2017 is required to successfully complete the installation. If you're installing the HoloLens (1st gen) emulator with Visual Studio 2019 you need to deselect the VS templates and [install them from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX).
+| Tool | Notes |
+|---------|---------|
+| ![Windows logo](/mixed-reality-docs/mr-dev-docs/develop/images/Windows10_logo.png)<br><br><a href="https://www.microsoft.com/software-download/windows10" target="_blank">**Windows 10** (Manual install link)</a><br><br>Install the most recent version of Windows 10 so your PC's operating system matches the platform for which you're building mixed reality applications.  | **Installing Windows 10** <br> You can install the most recent version of Windows 10 via Windows Update in Settings or by creating installation media, using the link in the left column. <br><br>See [current release notes](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/mixed-reality-software) for information about the newest mixed reality features available with each release of Windows 10. **Enable developer mode on your PC** at Settings > Update & Security > For developers. <br><br> **Note for enterprise and corporate-managed PCs**<br>If your PC is managed by an your organization's IT department, you might need to contact them in order to update. <br><br> **'N' versions of Windows**<br> Windows Mixed Reality immersive (VR) headsets are not supported on 'N' versions of Windows. |
+| ![Visual Studio logo image](/mixed-reality-docs/mr-dev-docs/develop/images/visualstudio_logo.png)<br><br><a href="https://visualstudio.microsoft.com/downloads/" target="_blank">**Visual Studio 2019 (16.8 or higher)** (Install link)</a> <br><br>Fully-featured integrated development environment (IDE) for Windows and more. You'll use Visual Studio to write code, debug, test, and deploy. | **Installing Visual Studio 2019** <br> Be sure you install the following workloads: <br><br>*● Desktop development with C++*<br>*● Universal Windows Platform (UWP) development*<br><br>Within the UWP workload, be sure to check the following optional component if you'll be developing for HoloLens:<br><br>*● USB Device Connectivity*<br><br>**Note about Unity**<br>Unless you're intentionally trying to install a newer (non-LTS) version of Unity for a specific purpose, we recommend *not* installing the Unity workload as part of Visual Studio installation, and instead install the **Unity 2019 LTS** stream as noted below.<br><br>**Known issues**<br>There are some known issues with debugging mixed reality apps in Visual Studio 2019 version 16.0.  Please ensure that you update to **Visual Studio 2019 version 16.8 or higher**. |
+| ![Windows logo](/mixed-reality-docs/mr-dev-docs/develop/images/Windows10_logo.png)<br><br><a href="https://developer.microsoft.com//windows/downloads/windows-10-sdk" target="_blank">**Windows 10 SDK (10.0.18362.0)** (Manual install link)</a> <br><br>Provides the latest headers, libraries, metadata, and tools for building Windows 10 apps on HoloLens 2. | **To build HoloLens 2 apps, you must install the Windows SDK, build 18362 or later.**<br> <br> If you are only developing applications for desktop Windows Mixed Reality headsets or HoloLens (1st gen), you can use the Windows SDK installed by Visual Studio 2017. |
+| ![Visual Studio logo](/mixed-reality-docs/mr-dev-docs/develop/images/HoloLensIcon.jpg)<br><br><a href="https://go.microsoft.com/fwlink/?linkid=2154784" target="_blank">**HoloLens 2 Emulator (Windows Holographic, version 20H2 February 2021 Update)** (Install link: 10.0.19041.1134)</a><br> <br><a href="https://go.microsoft.com/fwlink/?linkid=2065980" target="_blank">**HoloLens (1st gen) Emulator** (Install link: 10.0.17763.134)</a> <br><br>The emulator lets you run applications on a HoloLens virtual machine image without a physical HoloLens.<br> <br> | See [Using the HoloLens emulator](../develop/platform-capabilities-and-apis/using-the-hololens-emulator.md) for more information on getting started with the emulator.<br> <br> **Your system must support Hyper-V** for the emulator installation to succeed. Reference the System Requirements section below for details. <br> <br> **Note on HoloLens (1st gen) Emulator** <br>. If you're installing the HoloLens (1st gen) emulator with Visual Studio 2019 you need to deselect the VS templates and [install them from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX). |
 
 # Unity
 Now that you have your Windows 10, Visual Studio, and Windows 10 SDK ready to go, let's use Unity as an engine to build on.
 
-** 1. Download the latest version**
+**1. Download the latest version**
 
 We recommend the [Unity LTS (Long Term Support)](https://unity3d.com/unity/qa/lts-releases) stream as the best version to use when starting new projects, updating to its latest revision to pick up the latest stable fixes.
 
 * The current recommendation is to use [Unity 2019.4 LTS](https://unity3d.com/unity/qa/lts-releases?version=2019.4), which is the LTS build required for MRTK v2 below.
 * If you need to use a different version of Unity for specific reasons, Unity supports side-by-side installs of different versions.
 
-**2. Install the Mixed Reality Feature Tool
+**2. Install the Mixed Reality Feature Tool**
 
 The [Mixed Reality Feature Tool](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) is a new way for developers to discover and add Mixed Reality feature packages into Unity projects.
 
 You can search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing. Once you've validated the packages you want, the Mixed Reality Feature tool will download them into the project of your choice.
 
-### Importing the Mixed Reality Toolkit
+##### Importing the Mixed Reality Toolkit
 
 [Mixed Reality Toolkit (MRTK)](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/mrtk-getting-started) is an open-source, cross-platform development kit for mixed reality applications.
 
@@ -107,19 +56,9 @@ We recommend completing the getting started section in our curated[ HoloLens](ht
 | Important: Note that installation instructions are targeted for the latest stable combination of MRTK and Unity releases, which are MRTK 2.5.1 and Unity 2019.4 LTS.|
 |---|
 
-| Note: If you don't want to use MRTK for Unity, you'll need to script all interactions and behaviors yourself.|
-|---|
-
-
 [Mixed Reality Toolkit-Unity (GitHub)](https://github.com/Microsoft/MixedRealityToolkit-Unity)
 
-**Other tools [optional]**
-
-[Mixed Reality Companion Kit (GitHub)](https://github.com/Microsoft/MixedRealityCompanionKit) - code bits and components that might not run directly on HoloLens or immersive (VR) headsets, but instead pair with them to build experiences targeting Windows Mixed Reality.
-
-[Mixed Reality Toolkit - Common (GitHub)](https://github.com/Microsoft/MixedRealityToolkit) - a collection of shared scripts and components.
-
-** 3. Set up your PC for Mixed Reality development
+**3. Set up your PC for Mixed Reality development**
 
 The Windows 10 SDK works best on the Windows 10 operating system. This SDK is also supported on Windows 8.1, Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2. Note that not all tools are supported on older operating systems.
 
