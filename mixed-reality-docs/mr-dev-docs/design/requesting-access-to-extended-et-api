@@ -1,0 +1,21 @@
+# Requesting Access to Extended ET API
+
+Please follow the instructions to request access to Extended ET API:
+- The customer needs to reach out to Microsoft Mixed Reality teaam (mail: TDB, custom capability name TBD) to request access to Extended ET API.
+- The customer needs to povide an description (use case) of the application that would be enabled using the Extended ET API. 
+- The custimer should follow  existing public custom capability documentation to gather PFN and certificate signature hash.
+- Microsoft will review the request to decide if custom capability request will be approved. 
+- If approved, Microsoft will provide signed SCCD file. 
+
+Once custom capabilty request is approved, the customer should refer to our developer guide for using Extended ET APIs. 
+
+
+
+
+
+
+
+
+
+
+
