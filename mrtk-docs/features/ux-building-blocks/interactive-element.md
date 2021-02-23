@@ -503,7 +503,7 @@ The State Visualizer component adds animations to an object based on the states 
 
 1. Create a Cube
 1. Attach Interactive Element
-1. Attach State visualizer
+1. Attach State Visualizer
 1. Select **Generate New Animation Clips**
 
     ![GenerateAnimationClips](../images/interactive-element/StateVisualizer/GenerateAnimationClips.png)
@@ -533,22 +533,34 @@ The State Visualizer component adds animations to an object based on the states 
 
 1. Press play and observe the transitional color change
 
-    ![NearFarToggleStates](../images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
+    ![FocusColorChange](../images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
 
 
 ## Animatable Properties
 
-### Color
-
 ### Scale Offset
+
+![ScaleOffset](../images/interactive-element/InEditor/Gifs/ScaleOffset.gif)
 
 ### Position Offset
 
+![PositionOffset](../images/interactive-element/InEditor/Gifs/PositionOffset.gif)
+
+### Color
+
+![FocusColorChange](../images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
+
 ### Shader Color
+
+![ShaderColor](../images/interactive-element/InEditor/Gifs/ShaderColor.gif)
 
 ### Shader Float
 
-## Shader Vector
+![ShaderFloat](../images/interactive-element/InEditor/Gifs/ShaderFloat.gif)
+
+### Shader Vector
+
+![ShaderVector](../images/interactive-element/InEditor/Gifs/ShaderVector.gif)
 
 ## Setting Key Frames 
 
