@@ -33,6 +33,9 @@ When using a HoloLens 2, support for remoting articulated hand and eye tracking 
 
 Once imported, the next step is to select **Mixed Reality Toolkit** > **Utilities** > **Windows Mixed Reality** > **Check Configuration**. This step adds a scripting define that enables the DotNetWinRT dependency.
 
+> [!NOTE]
+> When using Unity 2019.4 and newer, it is not necessary to run the Check Configuration utility.
+
 To enable tracking of hand joints and eye tracking, follow the steps in the **Debugging HoloLens 2 remoting via Unity package import** and related sections.
 
 ### Debugging HoloLens 2 remoting via Unity package import
@@ -43,22 +46,18 @@ These issues are particularly relevant when running on **Unity 2019.3** or later
 
 #### Import DotNetWinRT into the project
 
-1. Install a NuGet client
+1. Download the [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
 
-    > [!Note]
-    > The following instructions presume use of [NuGet for Unity](https://github.com/GlitchEnzo/NuGetForUnity/releases)
+1. In the **Discover features** view, select *Mixed Reality WinRT Projections*
 
-1. Navigate to the NuGet client UI
+    ![Select DotNetWinRT package](../images/tools/remoting/SelectDotNetWinRT.png)
 
-    ![Launch NuGet UI](../images/tools/remoting/LaunchNuGetForUnity.png)
-
-1. Locate the `Microsoft.Windows.MixedReality.DotNetWinRT` package
-
-    ![Locate Package](../images/tools/remoting/LocateDotNetWinRT.png)
-
-1. Select Install
+1. Click **Get Features** and continue to [import the package](https://docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool#3-importing-feature-packages).
 
 #### DOTNETWINRT_PRESENT define written into player settings
+
+> [!NOTE]
+> When using Unity 2019.4 and newer, the DOTNETWINRT_PRESENT define is contained within the appropriate .asmdef files and not the Unity Player Settings. The Check Configuration step is not required.
 
 Beginning with MRTK version 2.5.0, for performance reasons, this #define is no longer automatically set. To enable this flag, please use the **Mixed Reality Toolkit** > **Utilities** > **Windows Mixed Reality** > **Check Configuration** menu item.
 
