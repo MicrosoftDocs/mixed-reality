@@ -495,9 +495,38 @@ The following steps walk through an existing example of creating a custom state 
 - MRTK\SDK\Experimental\InteractiveElement\InteractiveElement\Events\EventConfigurations
 - MRTK\SDK\Experimental\InteractiveElement\InteractiveElement\Events\EventReceivers
 
+## Example Scene 
+
+The example scene for Interactive Element + State Visualizer is located here: MRTK\SDK\Experimental\InteractiveElement\Examples\InteractiveElementExampleScene.unity
+
+![ExampleScene](../images/interactive-element/InEditor/ExampleScene.png)
+
+### Compressable Button
+
+The example scene contains prefabs named `CompressableButton` and `CompressableButtonToggle`, these prefabs mirror the behavior of the `PressableButtonHoloLens2` buttons, but are constructed using Interactive Element and the State Visualizer. 
+The `CompressableButton` component is currently a combination of `PressableButton` + `PressableButtonHoloLens2` with `BaseInteractiveElement`as a base class. 
+
 # State Visualizer [Experimental]
 
-The State Visualizer component adds animations to an object based on the states defined in a linked Interactive Element component. This component creates animation assets, places them in the MixedRealityToolkit.Generated folder and enables simplified animation keyframe setting through adding animatable properties to a target game object. To enable animation transitions between states, an Animator Controller asset is created and a default state machine is generated with associated parameters and transitions.  The state machine can be viewed in Unity's Animator window.
+The State Visualizer component adds animations to an object based on the states defined in a linked Interactive Element component. This component creates animation assets, places them in the MixedRealityToolkit.Generated folder and enables simplified animation keyframe setting through adding Animatable properties to a target game object. To enable animation transitions between states, an Animator Controller asset is created and a default state machine is generated with associated parameters and any state transitions.  The state machine can be viewed in Unity's Animator window.
+
+## State Visualizer and Unity Animation System
+
+The State Visualizer currently leverages the Unity Animation System. 
+
+When the **Generate New Animation Clips** button in the State Visualizer is pressed, new animation clip assets are generated based on the state names in Interactive Element and are placed in the MixedRealityToolkit.Generated folder. The Animation Clip property in each state container is set to the associated animation clip.
+
+![AnimationClips](../images/interactive-element/StateVisualizer/AnimationClips.png)
+
+An [Animator State Machine](https://docs.unity3d.com/Manual/AnimationOverview.html) is also generated to manage smooth transitions between animation clips.  By default, the state machine utilizes the [Any State](https://docs.unity3d.com/Manual/class-State.html) to allow transitions between any state in Interactive Element. 
+
+[Animation Parameters](https://docs.unity3d.com/Manual/AnimationParameters.html) are also generated for each state, the trigger parameters are used in the State Visualizer to trigger an animation.
+
+![UnityStateMachine](../images/interactive-element/StateVisualizer/UnityStateMachine.png)
+
+### Runtime Limitations 
+
+The State Visualizer must be added to an object via inspector and cannot be added via script.  The properties that modify the AnimatorStateMachine/AnimationController are contained in an editor namespace (`UnityEditor.Animations`) which get removed when the app is built.
 
 ## How to use the State Visualizer
 
@@ -518,7 +547,7 @@ The State Visualizer component adds animations to an object based on the states 
 
     ![SetTarget](../images/interactive-element/StateVisualizer/SetTarget.png)
 
-1. Open the Cube Animatable Properties fold out
+1. Open the Cube Animatable Properties foldout
 1. Select the Animatable property drop down menu and Select **Color**
 
     ![SetColor](../images/interactive-element/StateVisualizer/SetColor.png)
@@ -535,33 +564,73 @@ The State Visualizer component adds animations to an object based on the states 
 
     ![FocusColorChange](../images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
 
-
 ## Animatable Properties
 
+The primary purpose of the Animatable Properties is to simplify animation clip keyframe setting.  If a user is familiar with the Unity Animation System and would prefer to directly set keyframes on the generated animation clips, then they can simply not add Animatable properties to a target object and open the clip in Unity's Animation window (Windows > Animation > Animation). 
+
+If using the Animatable properties for animation, the curve type is set to EaseInOut.
+
+**Current Animatable Properties:**
+- [Scale Offset](#scale-offset)
+- [Position Offset](#position-offset)
+- [Color](#color)
+- [Shader Color](#shader-color)
+- [Shader Float](#shader-float)
+- [Shader Vector](#shader-vector)
+
 ### Scale Offset
+
+The Scale Offset Animatable property takes the current scale of the object and adds the defined offset.
 
 ![ScaleOffset](../images/interactive-element/InEditor/Gifs/ScaleOffset.gif)
 
 ### Position Offset
 
+The Position Offset Animatable property takes the current position of the object and adds the defined offset.
+
 ![PositionOffset](../images/interactive-element/InEditor/Gifs/PositionOffset.gif)
 
 ### Color
+
+The Color Animatable property represents the main color of a material if the material has a main color property. This property animates the `material._Color` property.
 
 ![FocusColorChange](../images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
 
 ### Shader Color
 
+The Shader Color Animatable property refers to a shader property of type color. A property name is required for all shader properties. The gif below demonstrates animating a shader color property named Fill_Color that is not the main material color.  Observe the changing values in the material inspector.
+
 ![ShaderColor](../images/interactive-element/InEditor/Gifs/ShaderColor.gif)
 
 ### Shader Float
+
+The Shader Float Animatable property refers to a shader property of type float. A property name is required for all shader properties. In the gif below, observe the changing values in the material inspector for the Metallic property. 
 
 ![ShaderFloat](../images/interactive-element/InEditor/Gifs/ShaderFloat.gif)
 
 ### Shader Vector
 
+The Shader Vector Animatable property refers to a shader property of type Vector4. A property name is required for all shader properties. In the gif below, observe the changing values in the material inspector for the Tiling (Main Tex_ST) property. 
+
 ![ShaderVector](../images/interactive-element/InEditor/Gifs/ShaderVector.gif)
 
-## Setting Key Frames 
 
-## Runtime Limitations 
+### How to Find Animatable Shader Property Names
+
+1. Navigate to Window > Window > Animation
+1. Ensure that the object with the State Visualizer is selected in the hierarchy
+1. Select any animation clip in the Animation window
+1. Select **Add Property**, open the Mesh Renderer foldout 
+
+    ![AnimationWindow](../images/interactive-element/StateVisualizer/AnimationWindow.png)
+
+1. This list contains the names of all the Animatable property names 
+
+    ![MeshRendererProperties](../images/interactive-element/StateVisualizer/MeshRendererProperties.png)
+
+## See also
+
+- [**Buttons**](button.md)
+- [**Bounds Control**](bounds-control.md)
+- [**Grid Object Collection**](object-collection.md)
+- [**RadialView Solver**](solvers/solver.md)
