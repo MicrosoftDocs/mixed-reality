@@ -51,9 +51,9 @@ highlightedContent:
       itemType: how-to-guide
       url: /windows/mixed-reality/enthusiast-guide/vr-journey
     # Card
-    - title: Mixed Reality Learn modules
-      itemType: learn
-      url: ./discover/mr-learning-overview.md
+    - title: Microsoft Mesh (Preview)
+      itemType: whats-new
+      url: /mesh/overview
 
 # productDirectory section (optional)
 productDirectory:
