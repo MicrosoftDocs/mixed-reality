@@ -27,6 +27,7 @@ You have several hardware and emulator options when building Mixed Reality apps 
 |  Tool/SDK  |  Description  |
 | --- | --- |
 | [Mixed Reality Toolkit for Unity](../unity/mrtk-getting-started.md) | The Mixed Reality Toolkit for Unity is an open source cross-platform development kit built to accelerate development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets and OpenVR platform. |
+| [Microsoft Mesh](/mesh/overview) Private Preview | Complete the [Microsoft Mesh Register Interest](https://aka.ms/meshsignup) form to stay up to date with Mesh announcements and news. With Mesh, you can enhance virtual meetings, conduct virtual design sessions, help others remotely, and host virtual meet-ups. |
 
 ## Cloud services
 
