@@ -17,13 +17,13 @@ Interactive Element is an experimental Unity 2019.3 and up feature as it utilize
 
 ### Interactive Element Inspector
 
-During play mode, the Interactive Element inspector provides visual feedback that indicates whether or not the current state is active. If a state is active, it will be highlighted with a cyan color.  If the state is not active, the color is not changed. The numbers next to the states in the inspector are the state value, if the state is active then the value is 1, if the state is not active the value is 0.
+During play mode, the Interactive Element inspector provides visual feedback that indicates whether or not the current state is active. If a state is active, it will be highlighted with a cyan color.  If the state is not active, the color is not changed. The numbers next to the states in the inspector are the state values, if the state is active then the value is 1, if the state is not active the value is 0.
 
 ![InteractiveElementAddCoreState](../images/interactive-element/InEditor/Gifs/InspectorHighlightEditor.gif)
 
 ## Core States
 
-Interactive Element contains core states and supports the addition of custom states.  A core state is one that already has the state setting logic defined in `BaseInteractiveElement`. The following is a list of the current input-driven core states: 
+Interactive Element contains core states and supports the addition of [custom states](#custom-states).  A core state is one that already has the state setting logic defined in `BaseInteractiveElement`. The following is a list of the current input-driven core states: 
 
 ### Current Core States
 
@@ -548,7 +548,7 @@ The State Visualizer must be added to an object via inspector and cannot be adde
     ![SetTarget](../images/interactive-element/StateVisualizer/SetTarget.png)
 
 1. Open the Cube Animatable Properties foldout
-1. Select the Animatable property drop down menu and Select **Color**
+1. Select the Animatable property drop down menu and select **Color**
 
     ![SetColor](../images/interactive-element/StateVisualizer/SetColor.png)
 
@@ -617,7 +617,7 @@ The Shader Vector Animatable property refers to a shader property of type Vector
 
 ### How to Find Animatable Shader Property Names
 
-1. Navigate to Window > Window > Animation
+1. Navigate to Window > Animation > Animation
 1. Ensure that the object with the State Visualizer is selected in the hierarchy
 1. Select any animation clip in the Animation window
 1. Select **Add Property**, open the Mesh Renderer foldout 
