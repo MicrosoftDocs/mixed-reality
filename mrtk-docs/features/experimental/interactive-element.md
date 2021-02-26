@@ -503,7 +503,7 @@ The example scene for Interactive Element + State Visualizer is located here: MR
 
 ### Compressable Button
 
-The example scene contains prefabs named `CompressableButton` and `CompressableButtonToggle`, these prefabs mirror the behavior of the `PressableButtonHoloLens2` buttons, but are constructed using Interactive Element and the State Visualizer. 
+The example scene contains prefabs named `CompressableButton` and `CompressableButtonToggle`, these prefabs mirror the behavior of the `PressableButtonHoloLens2` buttons, that are constructed using Interactive Element and the State Visualizer. 
 The `CompressableButton` component is currently a combination of `PressableButton` + `PressableButtonHoloLens2` with `BaseInteractiveElement`as a base class. 
 
 # State Visualizer [Experimental]
@@ -526,7 +526,7 @@ An [Animator State Machine](https://docs.unity3d.com/Manual/AnimationOverview.ht
 
 ### Runtime Limitations 
 
-The State Visualizer must be added to an object via inspector and cannot be added via script.  The properties that modify the AnimatorStateMachine/AnimationController are contained in an editor namespace (`UnityEditor.Animations`) which get removed when the app is built.
+The State Visualizer must be added to an object via the Inspector and cannot be added via script.  The properties that modify the AnimatorStateMachine/AnimationController are contained in an editor namespace (`UnityEditor.Animations`) which get removed when the app is built.
 
 ## How to use the State Visualizer
 
