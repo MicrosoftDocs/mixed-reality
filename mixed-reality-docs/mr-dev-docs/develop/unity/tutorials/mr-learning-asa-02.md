@@ -124,7 +124,7 @@ In the Hierarchy window, select the next button named **FindAzureAnchor**,then i
 
 In the Hierarchy window, select the next button named **DeleteAzureAnchor**, then in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
-* Assign the **DeleteAzureAnchor** object to the **None (Object)** field
+* Assign the **ParentAnchor** object to the **None (Object)** field
 * From the **No Function** dropdown, select **AnchorModuleScript** > **DeleteAzureAnchor ()** to set this function as the action to be executed when the event is triggered
 
 ![Unity with DeleteAzureAnchor button OnClick event configured](images/mr-learning-asa/asa-02-section5-step1-6.png)
