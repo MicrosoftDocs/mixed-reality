@@ -98,3 +98,8 @@ Verify the cable connected to the headset is fully seated. There is a small dot 
 ## How can I power down the headset while still using my PC
 
 Unplug the AC connection adapter from the link box on the headset cable to remove power to the headset.
+
+## Both of the Reverb G2 displays are in the upper left of the display or off-center and jittery
+
+If you have an AMD based PC and while your headset is connected, navigate to Settings -> Mixed Reality -> Headset -> Resolution.
+In the drop down menu select  “4320 x 2160 (best quality)” option. When “Automatic upscaling (best performance)” is selected, you may experience the issue with display.
