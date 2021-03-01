@@ -1,7 +1,7 @@
 - name: Welcome to MRTK
   href: welcome-to-mrtk.md
 - name: Release Notes
-  href: release-notes.md
+  href: release-notes/toc.yml
 - name: Roadmap
   href: roadmap.md
 - name: Configuration
