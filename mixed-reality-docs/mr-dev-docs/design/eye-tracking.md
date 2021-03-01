@@ -61,19 +61,23 @@ To learn more about the calibration and about how to ensure a smooth experience,
 
 ## Available eye tracking data
 
-Before going into detail about specific use cases for eye-gaze input, we want to briefly point out the capabilities that the HoloLens 2 [Eye Tracking API](/uwp/api/windows.perception.people.eyespose) provides. 
-Developers get access to a single eye-gaze ray (gaze origin and direction) at approximately _30 FPS (30 Hz)_.
-For more detailed information about how to access eye tracking data, refer to our developer guides for using [eye-gaze in DirectX](../develop/native/gaze-in-directx.md) and [eye-gaze in Unity](https://aka.ms/mrtk-eyes).
+Eye tracking on HoloLens 2 lets developers design natural and intuitive input and interaction scenarios. [Eye Tracking API](/uwp/api/windows.perception.people.eyespose) provides the information about what the user is looking at, as a single eye-gaze ray (gaze origin and direction) at approximately 30 FPS (30 Hz). 
+For eye tracking to work accurately, each user is required to go through an eye tracking user calibration. For more detailed information about how to access eye tracking data, refer to our developer guides for using [eye-gaze in DirectX](../develop/native/gaze-in-directx.md) and [eye-gaze in Unity](https://aka.ms/mrtk-eyes).
 
 The predicted eye-gaze is approximately within 1.5 degrees in visual angle around the actual target (see the illustration below). 
-As slight imprecisions are expected, developers should plan for some margin around this lower-bound value (for example, 2.0-3.0 degrees may result in a much more comfortable experience). 
-We'll discuss how to address the selection of small targets in more detail below. 
-For eye tracking to work accurately, each user is required to go through an eye tracking user calibration. 
+As slight imprecisions are expected, developers should plan for some margin around this lower-bound value (for example, 2.0-3.0 degrees may result in a much more comfortable experience). We'll discuss how to address the selection of small targets in more detail below. 
 
 ![Optimal target size at 2 meter distance](images/gazetargeting-size-1000px.jpg)<br>
 *Optimal target size at a 2-meter distance*
 
 <br>
+
+## Extended Eye Tracking data 
+
+Extended eye tracking APIs allow developers to unlock next level of innovative scenarios such as health assessment, monitoring and therapy by providing more fine grain information about user's eye gaze.
+
+Extended eye tracking APIs provide access to existing eye tracking values and new features such as individual (left and right) eye gaze vectors, supported frame rates and the ability to set eye tracking frame rate to 60fps. These APIs will be protected behind a custom capability and developers will need approval from Microsoft to use them. To request the access to Extended ET API, please follow the instructions in the [Requesting Access to Extended ET API](mixed-reality/mixed-reality-docs/mr-dev-docs/design/requesting-access-to-extended-et-api.md) and upon approval, refer to our developer guide for using [Extended ET APIs](../develop/native/extended-eye-tracking.md). 
+
 
 ## Use cases
 
