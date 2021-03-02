@@ -21,7 +21,7 @@ Most of the open source sample apps made by our team can be found in the Unreal 
 
 ### HoloLens 2 open source sample apps
 
-* [HoloLens2Example](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/HoloLens2Example) 
+* [HoloLens2Example](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/HoloLens2Example)
 * [HoloPipes](https://github.com/microsoft/MixedReality-Unreal-HoloPipes) - Download from the [Microsoft Store](https://www.microsoft.com/p/holopipes/9mszb3nnrxn9) in HoloLens 2
 
 ### Made with the Mixed Reality Toolkit for Unreal
@@ -33,10 +33,9 @@ A subset of the samples use interactive UX components such as buttons and slider
 
 ### Made by Epic Games
 
-Our partners at Epic Games have released an excellent HoloLens 2 sample project on the Unreal Marketplace. 
+Our partners at Epic Games have released an excellent HoloLens 2 sample project on the Unreal Marketplace.
 
-> [!NOTE] 
+> [!NOTE]
 > This experience must be streamed from a high-end PC to the headset.
 
 * [Mission AR](https://docs.unrealengine.com/Resources/Showcases/MissionAR/index.html)
-
