@@ -77,6 +77,7 @@ Press the Play button to enter Game mode, press-and-hold the right mouse button 
 In the Hierarchy window, select the RoverExplorer > **RoverAssembly** object, then in the Inspector window, use the **Add Component** button to add the **Tap To Place (Script)** component, and configure it as follows:
 
 * Verify that the **SolverHandler** component's **Tracked Target Type** is set to **Head**
+* Uncheck the **Use Default Surface Normal Offset** and ensure **Surface Normal Offset** is set to 0
 * Check the **Keep Orientation Vertical** checkbox
 * From the **Magnetic Surfaces** > **Element 0** dropdown, uncheck all options expect **Spatial Awareness**
 
