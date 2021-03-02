@@ -44,7 +44,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/mrtk/breadcrumb/toc.json",
+      "breadcrumb_path": "/windows/mixed-reality/mrtk-unity/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "feedback_system": "None",
       "ms.prod": "mixed-reality"
@@ -55,7 +55,7 @@
       }
     },
     "template": [],
-    "dest": "mrtk",
+    "dest": "mrtk-unity",
     "markdownEngineName": "markdig",
     "groups": {
       "mrtk-unity-all-up": {
