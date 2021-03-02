@@ -3,6 +3,8 @@
 1. On your HoloLens, go to the **Microsoft Store** and install the **[Holographic Remoting Player](https://www.microsoft.com/store/p/holographic-remoting-player/9nblggh4sv40)** app.
 1. On your HoloLens, start the **Holographic Remoting Player** app.
 1. In Unity, go to the **Edit** menu and select **Project Settings**.
+1. Select **XR Plug-in Management**.
+1. Ensure the **Windows Standalone** tab is selected, find **OpenXR** and **Windows Mixed Reality feature set** in the list, and check their checkboxes.
 1. Expand **XR Plug-in Management**, then **OpenXR**, and select **Features**.
 1. Ensure the **Windows Standalone** tab is selected and click **Show All**.
 1. Find **Holographic Editor Remoting** in the list, check its checkbox, and expand **Settings**.
