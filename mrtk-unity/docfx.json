@@ -51,7 +51,7 @@
     },
     "fileMetadata": {
       "monikerRange": {
-        //"./**/*.md": ">= mrtk-unity-2.5"
+        "./**/*.md": ">= mrtkunity-2021-01"
       }
     },
     "template": [],
@@ -59,8 +59,8 @@
     "markdownEngineName": "markdig",
     "groups": {
       "mrtk-unity-all-up": {
-        "dest": "temp-mrtk-unity"
-        //"moniker_range": ">= mrtk-unity-2.5"
+        "dest": "temp-mrtk-unity",
+        "moniker_range": ">= mrtkunity-2021-01"
       }
     }
   }
