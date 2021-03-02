@@ -4,6 +4,8 @@
   href: release-notes/toc.yml
 - name: Roadmap
   href: roadmap.md
+- name: Install the Tools
+  href: install-the-tools.md
 - name: Configuration
   href: configuration/toc.yml
 - name: Updates and Deployment
