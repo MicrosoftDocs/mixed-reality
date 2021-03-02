@@ -23,7 +23,7 @@ Join the Microsoft Mixed Reality Team at these upcoming events!
 | Mixed Reality Speaker Series|September 1, 2020|[Creating Entertaining Characters for AR/VR](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Creating-Entertaining-Characters-for-Mixed-Reality)|
 | Mixed Reality Speaker Series|September 3, 2020|[Tips & best practices for using Unreal](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Tips-and-Best-Practices-for-using-UE4-in-MR)|
 | HoloLens & Mixed Reality Meetup|September 8, 2020|[Human perception and Mixed Reality](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Human-Perception-and-Mixed-Reality)|
-| Mixed Reality Speaker Series|September 22, 2020|[Kippy's Escape: An intro to Unreal & MRTK for HoloLens 2]()|
+| Mixed Reality Speaker Series|September 22, 2020|[Kippy's Escape: An intro to Unreal & MRTK for HoloLens 2](../develop/unreal/unreal-kippys-escape.md)|
 | Mixed Reality Speaker Series|October 22, 2020|[Introduction to WebXR with BabylonJS](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Adding-Augmented-Reality-to-your-Typescript-Project)|
 | Mixed Reality Speaker Series|November 17, 2020|[Building the future: Whats new in MRTK](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Building-the-Future-Whats-New-in-the-Mixed-Reality-Toolkit)|
 | Mixed Reality Speaker Series|December 1, 2020|[Designing Holograms](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Making-of-Designing-Holograms)|

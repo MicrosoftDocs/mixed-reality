@@ -49,6 +49,9 @@
       "build_source_folder": "mrtk-unity",
       "build_output_subfolder": "mrtk-unity",
       "locale": "en-us",
+      "xref_query_tags": [
+        "/dotnet"
+      ],
       "monikers": [],
       "moniker_ranges": [],
       "open_to_public_contributors": true,

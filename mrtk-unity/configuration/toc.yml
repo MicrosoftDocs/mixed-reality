@@ -1,0 +1,9 @@
+- name: Using the Unity Package Manager
+  href: usingupm.md
+- name: MRTK Configuration Dialog
+  href: mrtk-configuration-dialog.md
+- name: Getting Started With MRTK and XRSDK
+  href: getting-started-with-mrtk-and-xrsdk.md
+- name: Mixed Reality Configuration Guide
+  href: mixed-reality-configuration-guide.md
+

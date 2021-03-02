@@ -2,6 +2,8 @@
   "build": {
     "content": [
       {
+        "group": "mrtk-unity-all-up",
+        "src": "./",
         "files": [
           "**/*.md",
           "**/*.yml"
@@ -22,9 +24,12 @@
     ],
     "resource": [
       {
+        "group": "mrtk-unity-all-up",
+        "src": "./",
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
@@ -41,11 +46,22 @@
     "globalMetadata": {
       "breadcrumb_path": "/windows/mixed-reality/mrtk-unity/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "feedback_system": "None",
+      "ms.prod": "mixed-reality"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "monikerRange": {
+        "./**/*.md": ">= mrtkunity-2021-01"
+      }
+    },
     "template": [],
     "dest": "mrtk-unity",
-    "markdownEngineName": "markdig"
+    "markdownEngineName": "markdig",
+    "groups": {
+      "mrtk-unity-all-up": {
+        "dest": "temp-mrtk-unity",
+        "moniker_range": ">= mrtkunity-2021-01"
+      }
+    }
   }
 }
