@@ -45,6 +45,18 @@
       "template_folder": "_themes"
     },
     {
+      "docset_name": "mrtk-unity",
+      "build_source_folder": "mrtk-unity",
+      "build_output_subfolder": "mrtk-unity",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      }
+    },
+    {
       "docset_name": "mrtk-unreal",
       "build_source_folder": "mrtk-unreal",
       "build_output_subfolder": "mrtk-unreal",
