@@ -45,7 +45,7 @@ see our updated [Input Simulation Service documentation](../features/input-simul
 
 ### Scene Understanding now available in MRTK as an experimental spatial awareness observer
 
-Experimental support of [Scene Understanding](https://docs.microsoft.com/windows/mixed-reality/scene-understanding) is introduced in MRTK 2.6. Users can incorporate the scene understanding capabilities of HoloLens 2 as a spatial awareness observer in MRTK based projects. Please read the [Scene Understanding documentation](features/spatial-awareness/scene-understanding.md) for more information.
+Experimental support of [Scene Understanding](https://docs.microsoft.com/windows/mixed-reality/scene-understanding) is introduced in MRTK 2.6. Users can incorporate the scene understanding capabilities of HoloLens 2 as a spatial awareness observer in MRTK based projects. Please read the [Scene Understanding documentation](../features/spatial-awareness/scene-understanding.md) for more information.
 
 > [!IMPORTANT]
 > Scene Understanding is only supported on HoloLens 2 and Unity 2019.4 and higher.
