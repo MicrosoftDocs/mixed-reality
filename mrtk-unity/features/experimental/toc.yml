@@ -1,5 +1,3 @@
-- name: Dialog
-  href: dialog.md
 - name: Dock
   href: dock.md
 - name: Hand Coach
@@ -10,4 +8,3 @@
   href: interactive-element.md
 - name: Mixed Reality Keyboard
   href: mixed-reality-keyboard.md
-

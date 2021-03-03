@@ -8,6 +8,8 @@
   href: button.md
 - name: Constraint Manager
   href: constraint-manager.md
+- name: Dialog
+  href: dialog.md
 - name: Fingertip Visualization
   href: fingertip-visualization.md
 - name: Hand Menu
