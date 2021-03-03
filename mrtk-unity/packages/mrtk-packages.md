@@ -1,11 +1,11 @@
 ---
-title: MRTK_Pakages
-description: Pakages in MRTK supporting Mixed reality hardware and platforms.
+title: MRTK_Packages
+description: Packages in MRTK supporting Mixed reality hardware and platforms.
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 ms.localizationpriority: high
-keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Unity Pakage Manager,
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Unity Package Manager,
 ---
 
 # Mixed Reality Toolkit packages
