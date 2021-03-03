@@ -85,5 +85,5 @@ Saved scene files can be accessed through the [device portal](https://docs.micro
 
 ## See Also
 
-* https://docs.microsoft.com/en-us/windows/mixed-reality/scene-understanding
+* https://docs.microsoft.com/windows/mixed-reality/scene-understanding
 * https://docs.microsoft.com/windows/mixed-reality/scene-understanding-sdk
