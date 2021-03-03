@@ -81,7 +81,7 @@ To resolve, please ensure that:
 - **Window** > **Package Manager** has one or more XR packages installed
 - **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** and make a selection for **Audio Spatializer**
 
-  ![Select Audio Apatializer](features/images/release-notes/SpatializerSelection.png)
+  ![Select Audio Apatializer](images/SpatializerSelection.png)
 
 ### NullReferenceException: Object reference not set to an instance of an object (SceneTransitionService.Initialize)
 
@@ -93,7 +93,7 @@ This error is due to the Scene Transition Service's configuration profile being 
 - If not expanded, expand `Scene Transition Service`
 - Set the value of `Configuration Profile` to **MRTKExamplesHubSceneTransitionServiceProfile**
 
-<img src="features/images/release-notes/FixSceneTransitionProfile.png" width="500px" alt="Fix Scene Transition">
+![Fix Scene Transition](images/FixSceneTransitionProfile.png)
 
 ### Oculus Quest
 
