@@ -41,7 +41,7 @@ Users can now use the teleport gesture to move around their play space across al
 articulated hands, make a gesture with your palm facing up with the index and thumb sticking outwards, completing the teleport by curling the index finger. To teleport with input simulation, please
 see our updated [Input Simulation Service documentation](features/input-simulation/input-simulation-service.md).
 
-  ![Teleport Gesture](release-notes/images/handteleport.gif)
+  ![Teleport Gesture](images/handteleport.gif)
 
 ### Runtime profile switching support
 
@@ -51,7 +51,7 @@ MRTK now allows profile switching both before the initialization of the MRTK ins
 
 Two new solvers are ready for use with mainline MRTK.
 
-  ![Directional Indicator Solver](release-notes/images/DirectionalIndicatorExampleScene.gif)
+  ![Directional Indicator Solver](images/DirectionalIndicatorExampleScene.gif)
 
 ### Input Recording Service improvements
 
@@ -61,13 +61,13 @@ Two new solvers are ready for use with mainline MRTK.
 
 Added support for [reading mode](https://docs.microsoft.com/hololens/hololens2-display#what-improvements-are-coming-that-will-improve-hololens-2-image-quality) on HoloLens 2. Reading mode reduces the system's field of view but eliminates a scaling of Unity's output. A pixel rendered by Unity will correspond to a projected pixel on HoloLens 2. Application authors should do tests with multiple individuals to be sure this is a tradeoff they want in their app.
 
-  ![Windows Mixed Reality reading mode](release-notes/images/WMRReadingMode.gif)
+  ![Windows Mixed Reality reading mode](images/WMRReadingMode.gif)
 
 ### Support for 3D app launchers on UWP
 
 Adds the ability to set a [3D app launcher](https://docs.microsoft.com/windows/mixed-reality/distribute/3d-app-launcher-design-guidance) for UWP. This setting is exposed both in the MRTK Build Window and the MRTK Project Settings, under Build Settings. It's automatically written into the project during the build in Unity.
 
-  ![Build settings](release-notes/images/ProjectBuildSettings.png)
+  ![Build settings](images/ProjectBuildSettings.png)
 
 ## Breaking changes
 
@@ -112,7 +112,7 @@ To resolve, please ensure that:
 - **Window** > **Package Manager** has one or more XR packages installed
 - **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** and make a selection for **Audio Spatializer**
 
-  ![Select Audio Spatializer](release-notes/images/SpatializerSelection.png)
+  ![Select Audio Spatializer](images/SpatializerSelection.png)
 
 ### NullReferenceException: Object reference not set to an instance of an object (SceneTransitionService.Initialize)
 
