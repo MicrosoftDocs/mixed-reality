@@ -1,5 +1,5 @@
 ---
-title: ReleaseNotes
+title: MRTK 2.5 Release Notes
 description: release nots of the current MRTK version
 author: polar-kev
 ms.author: kesemple
@@ -11,7 +11,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 # Microsoft Mixed Reality Toolkit 2.5.4 release notes
 
 - [What's new](#whats-new)
-- [Updating guidance](updates-deployment/updating.md#upgrading-to-a-new-version-of-mrtk)
+- [Updating guidance](../updates-deployment/updating.md#upgrading-to-a-new-version-of-mrtk)
 - [Known issues](#known-issues)
 
 > [!IMPORTANT]
@@ -37,7 +37,7 @@ Fixes an issue where the OpenXR providers weren't added to the link.xml by defau
 
 ### Add support for OpenXR
 
-Initial support for Unity's OpenXR preview package and Microsoft's Mixed Reality OpenXR package has been added. See [the MRTK/XRSDK getting started page](configuration/getting-started-with-mrtk-and-xrsdk.md), [Unity's forum post](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/), or [Microsoft's documentation](https://aka.ms/openxr-unity-install) for more information.
+Initial support for Unity's OpenXR preview package and Microsoft's Mixed Reality OpenXR package has been added. See [the MRTK/XRSDK getting started page](../configuration/getting-started-with-mrtk-and-xrsdk.md), [Unity's forum post](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/), or [Microsoft's documentation](https://aka.ms/openxr-unity-install) for more information.
 
 > [!IMPORTANT]
 > OpenXR in Unity is only supported on Unity 2020.2 and higher.

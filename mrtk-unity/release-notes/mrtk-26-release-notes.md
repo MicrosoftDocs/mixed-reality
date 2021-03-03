@@ -1,5 +1,5 @@
 ---
-title: ReleaseNotes
+title: MRTK 2.6 Release Notes
 description: release notes of the MRTK version 2.6
 author: polar-kev
 ms.author: kesemple
@@ -12,7 +12,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 - [What's new](#whats-new)
 - [Breaking changes](#breaking-changes)
-- [Updating guidance](Updating.md#upgrading-to-a-new-version-of-mrtk)
+- [Updating guidance](../updates-deployment/updating.md#upgrading-to-a-new-version-of-mrtk)
 - [Known issues](#known-issues)
 
 > [!IMPORTANT]
