@@ -50,7 +50,9 @@ Experimental support of [Scene Understanding](https://docs.microsoft.com/windows
 > [!IMPORTANT]
 > Scene Understanding is only supported on HoloLens 2 and Unity 2019.4 and higher.
 >
-> This feature requires the Scene Understanding package, which may not be available at the launch date of MRTK 2.6 but will be available soon after via the [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool). Please see [this issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9402) for updates on its availability.
+> This feature requires the Scene Understanding package, which is now available via the [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool).
+
+  ![Scene Understanding](images/SceneUnderstanding.gif)
 
 ### Runtime profile switching support
 

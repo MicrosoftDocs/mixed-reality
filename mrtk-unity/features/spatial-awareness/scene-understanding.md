@@ -27,7 +27,7 @@ When asked, the [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedRealit
 ## Setup
 
 1. Ensure the platform is set to UWP in build settings.
-1. Acquire the Scene Understanding package via [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool). Note the package may not be available at the launch date of MRTK 2.6 but will be available soon after. Please see [this issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9402) for updates on its availability.
+1. Acquire the Scene Understanding package via [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool).
 
 ## Using Scene Understanding
 
