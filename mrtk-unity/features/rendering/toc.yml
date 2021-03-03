@@ -8,3 +8,5 @@
   href: mrtk-standard-shader.md
 - name: Proximity Light
   href: proximity-light.md
+- name: Pulse Shader
+  href: pulse-shader.md
