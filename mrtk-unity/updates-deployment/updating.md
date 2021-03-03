@@ -28,9 +28,12 @@ to the changes [between versions](#updating-230-to-240) to understand the upgrad
 [release's instructions](https://microsoft.github.io/MixedRealityToolkit-Unity/version/releases/2.4.0/Documentation/Updating.html)
 to do a version-by-version upgrade.
 
+### Mixed Reality Feature Tool
+The easiest way to upgrade MRTK to a newer version MRTK is by using the [Mixed Reality Feature Tool](https://docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) to download the latest packages and load them directly to your Unity project.
+
 ### Unity asset (.unitypackage) files
 
-For the smoothest upgrade path, please use the following steps.
+Another upgrade path is to manually download MRTK Unity packages and apply them to your project. See the steps below,
 
 1. Save a copy of your current project, in case you hit any snags at any point in the upgrade steps.
 1. Close Unity
@@ -315,7 +318,7 @@ The `NearInteractionTouchableSurface` class has been added and now serves as the
 
 The hand mesh and joint visualizations now have a separate editor and player settings. The hand tracking profile has been updated to allow for setting these visualizations to; Nothing, Everything, Editor or Player.
 
-![Hand visualization modes](../features/images/release-notes/HandTrackingVisualizationModes.png)
+![Hand visualization modes](../release-notes/images/HandTrackingVisualizationModes.png)
 
 Custom hand tracking profiles may need to be updated to work correctly with version 2.1.0.
 
@@ -402,11 +405,11 @@ Using the new CoreSystem class will ensure that your application code will not n
 
 With the addition of the IMixedRealityRaycastProvider, the input system configuration profile was changed. If you have a custom profile, you may receive the errors in the following image when you run your application.
 
-![Selecting the Raycast provider 1](../features/images/release-notes/UnableToRegisterRaycastProvider.png)
+![Selecting the Raycast provider 1](../release-notes/images/UnableToRegisterRaycastProvider.png)
 
 To fix these, please add an IMixedRealityRaycastProvider instance to your input system profile.
 
-![Selecting the Raycast provider 2](../features/images/release-notes/SelectRaycastProvider.png)
+![Selecting the Raycast provider 2](../release-notes/images/SelectRaycastProvider.png)
 
 **Event System**
 
