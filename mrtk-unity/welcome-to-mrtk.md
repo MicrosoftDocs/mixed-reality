@@ -34,9 +34,6 @@ MRTK-Unity is a Microsoft-driven project that provides a set of components and f
   * Ultraleap Hand Tracking
   * Mobile devices such as iOS and Android
 
-> [!div class="nextstepaction"]
-> [Explore MRTK on GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity)
-
 ## Getting started with MRTK
 
 If you're new to MRTK or Mixed Reality development in Unity, we recommend you install the necessary tools and then follow the Unity developer journey.
@@ -45,13 +42,16 @@ If you're new to MRTK or Mixed Reality development in Unity, we recommend you in
 > [Install the Tools](install-the-tools.md)
 
 > [!div class="nextstepaction"]
-> [Unity Developer Journey](https://github.com/microsoft/MixedRealityToolkit-Unity/releases)
+> [Unity Developer Journey](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
 
+Want to see what's going on under the hood?
+> [!div class="nextstepaction"]
+> [Explore MRTK on GitHub](https://github.com/Microsoft/MixedRealityToolkit-Unity)
 
 ## Documentation
 
-| [![Release notes](features/images/MRTK_Icon_ReleaseNotes.png)](release-notes/mrtk-26-release-notes.md)<br/>[Release Notes](release-notes/mrtk-26-release-notes.md)| [![API Reference](features/images/MRTK_Icon_APIReference.png)](https://docs.microsoft.com/dotnet/api/Microsoft.MixedReality.Toolkit)<br/>[API Reference](https://docs.microsoft.com/dotnet/api/Microsoft.MixedReality.Toolkit)|
-|:---|:---|
+| [![Release notes](features/images/MRTK_Icon_ReleaseNotes.png)](release-notes/mrtk-26-release-notes.md)<br/>[Release Notes](release-notes/mrtk-26-release-notes.md)| [![MRTK Overview](features/images/MRTK_Icon_ArchitectureOverview.png)](architecture/overview.md)<br/>[MRTK Overview](architecture/overview.md)|[![API Reference](features/images/MRTK_Icon_APIReference.png)](https://docs.microsoft.com/dotnet/api/Microsoft.MixedReality.Toolkit)<br/>[API Reference](https://docs.microsoft.com/dotnet/api/Microsoft.MixedReality.Toolkit)|
+|:---|:---|:---|
 
 ## Build status
 
@@ -86,8 +86,8 @@ If you're new to MRTK or Mixed Reality development in Unity, we recommend you in
         **[Hand Tracking <br/> (Ultraleap)](features/cross-platform/leap-motion-mrtk.md)**<br>
     :::column-end:::
     :::column:::
-        [![UI Controls 1](features/images/MRTK_Icon_UIControls.png)](#ux-building-blocks)
-        **[UI Controls 1](#ux-building-blocks)**<br>
+        [![UI Controls](features/images/MRTK_Icon_UIControls.png)](#ux-building-blocks)
+        **[UI Controls](#ux-building-blocks)**<br>
     :::column-end:::
     :::column:::
         [![Solvers](features/images/MRTK_Icon_Solver.png)](features/ux-building-blocks/solvers/solver.md)
@@ -101,8 +101,8 @@ If you're new to MRTK or Mixed Reality development in Unity, we recommend you in
 
 :::row:::
     :::column:::
-       [![Spatial Awareness 1](features/images/MRTK_Icon_SpatialUnderstanding.png)](features/spatial-awareness/spatial-awareness-getting-started.md)
-        **[Spatial <br/> Awareness 2](features/spatial-awareness/spatial-awareness-getting-started.md)**<br>
+       [![Spatial Awareness](features/images/MRTK_Icon_SpatialUnderstanding.png)](features/spatial-awareness/spatial-awareness-getting-started.md)
+        **[Spatial <br/> Awareness](features/spatial-awareness/spatial-awareness-getting-started.md)**<br>
     :::column-end:::
     :::column:::
         [![Diagnostic Tool](features/images/MRTK_Icon_Diagnostics.png)](features/diagnostics/diagnostics-system-getting-started.md)
@@ -252,13 +252,13 @@ If you're new to MRTK or Mixed Reality development in Unity, we recommend you in
         Visual indicator for communicating data process or operation
     :::column-end:::
     :::column:::
-        [![Dialog](features/images/Dialog/MRTK_UX_Dialog_Main.png)](features/experimental/dialog.md)
-        **[Dialog [Experimental]](features/experimental/dialog.md)**<br>
+        [![Dialog](features/images/Dialog/MRTK_UX_Dialog_Main.png)](features/ux-building-blocks/dialog.md)
+        **[Dialog](features/ux-building-blocks/dialog.md)**<br>
         UI for asking for user's confirmation or acknowledgement
     :::column-end:::
     :::column:::
-        [![Hand Coach](features/images/hand-coach/MRTK_UX_HandCoach_Main.jpg)](features/experimental/hand-coach.md)
-        **[Hand Coach [Experimental]](features/experimental/hand-coach.md)**<br>
+        [![Hand Coach](features/images/hand-coach/MRTK_UX_HandCoach_Main.jpg)](features/ux-building-blocks/hand-coach.md)
+        **[Hand Coach](features/ux-building-blocks/hand-coach.md)**<br>
         Component that helps guide the user when the gesture has not been taught
     :::column-end:::
 :::row-end:::
