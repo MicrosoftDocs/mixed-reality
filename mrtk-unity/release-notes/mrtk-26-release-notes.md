@@ -53,6 +53,12 @@ Two new solvers are ready for use with mainline MRTK.
 
   ![Directional Indicator Solver](images/DirectionalIndicatorExampleScene.gif)
 
+### Hand Coach Graduated from Experimental
+
+The Hand Coach feature is now ready for use with mainline MRTK.
+  ![Hand Coach Example](https://docs.microsoft.com/en-us/windows/mixed-reality/design/images/handcoach/airtap.gif)
+
+
 ### Input Recording Service improvements
 
 `InputRecordingService` and `InputPlaybackService` can now record and play back eye gaze input. Recording has been optimized to ensure a consistent framerate throughout the recording period while recording file size and save time are also reduced by about 50%. Saving and loading of recording files can now be performed asynchronously. Note the file format of the recording has changed in this MRTK version, please see [here](InputSimulation/InputAnimationFileFormat.md) for more information on the new version 1.1 specifications.
