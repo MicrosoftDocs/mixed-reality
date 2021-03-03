@@ -51,8 +51,10 @@ After setting your platform, you need to let Unity know to create an [immersive 
 
 ![Screenshot of Project settings window open in unity editor with XR Plugin management highlighted](images/wmr-config-img-7.png)
 
-4. Expand the **XR Plug-in Management** section and select **Windows Mixed Reality**
-5. Check all boxes and set **Depth Submission Mode** to **Depth 16 Bit**
+4. Expand the **XR Plug-in Management** section and select **Univeral Windows Platform Settings** tab
+5. If you are using Unity 2020 or later, you will see the options to check **OpenXR (preview)** or **Windows Mixed Reality**
+6. You can choose either runtime.  If you are specifically developing for the HoloLens 2 or the HP Reverb G2 and decide to try the **OpenXR (preview)**, select the OpenXR (preview) box and review our guide to [Using the Mixed Reality OpenXR Plugin for Unity](openxr-getting-started.md) to get yourself set up correctly for these devices before returning to this tutorial
+7. If you decide to choose the **Windows Mixed Reality** plugin, check all boxes and set **Depth Submission Mode** to **Depth 16 Bit**
 
 ![Screenshot of Project settings window open in unity editor with Windows Mixed Reality section highlighted](images/wmr-config-img-8.png)
 
@@ -85,11 +87,11 @@ It's recommended that you make the manifest declarations in Unity to include the
 
 ### Quality settings
 
-HoloLens has a mobile-class GPU. If your app is targeting HoloLens, you'll want the quality settings in your app tuned for fastest performance to ensure it maintains full frame-rate:
+HoloLens has a mobile-class GPU. If your app is targeting HoloLens, you'll want to start off with the quality settings in your app tuned for fastest performance to ensure it maintains full frame-rate.  Once you have your are further along in your development you may consider upping the quality settings to find the right balance of quality and performance: 
 
-1. Select **Edit > Project Settings > Quality**
-2. Select the **dropdown** under the **Windows Store** logo and select **Very Low**. You'll know the setting is applied correctly when the box in the Windows Store column and **Very Low** row is green
-3. In the **Shadows** section, select **Disable Shadows**
+1. Select **Edit > Project Settings > Quality** 
+2. Select the **dropdown** under the **Windows Store** logo and select **Very Low**. You'll know the setting is applied correctly when the box in the Windows Store column and Very Low row is green 
+3. In the **Shadows** section, select **Disable Shadows** 
 
 ![Screenshot of Project settings window open in unity editor with quality settings section highlighted](images/wmr-config-img-10.png)<br>
 *Unity quality settings*
