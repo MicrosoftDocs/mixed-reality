@@ -10,7 +10,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Scene U
 
 # Scene Understanding
 
-[Scene Understanding](https://docs.microsoft.com/en-us/windows/mixed-reality/scene-understanding) returns a semantic representation of scene entities as well as their geometric forms on __HoloLens 2__ (HoloLens 1st Gen is not supported).
+[Scene Understanding](https://docs.microsoft.com/windows/mixed-reality/scene-understanding) returns a semantic representation of scene entities as well as their geometric forms on __HoloLens 2__ (HoloLens 1st Gen is not supported).
 
 Some expected use cases of this technology are:
 * Place objects on nearest surface of a certain kind (e.g. wall and floor)
