@@ -16,7 +16,7 @@ Don't have a mixed reality device? You can install the [HoloLens emulator](https
 
 We recommend installing Unity as the easiest way to get started creating mixed reality apps.
 
-You can use [Mixed Reality Toolkit for Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity) 's input simulation to test various types of input interactions such as hand-tracking and eye-tracking input. 
+You can use [Mixed Reality Toolkit for Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)'s input simulation to test various types of input interactions such as hand-tracking and eye-tracking input. 
 
 |TIP: Bookmark this page and check it regularly to keep up-to-date on the most recent version of each tool recommended for mixed reality development.|
 |---|
