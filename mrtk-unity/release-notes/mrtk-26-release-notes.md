@@ -56,7 +56,7 @@ Two new solvers are ready for use with mainline MRTK.
 ### Hand Coach Graduated from Experimental
 
 The Hand Coach feature is now ready for use with mainline MRTK.
-  ![Hand Coach Example](https://docs.microsoft.com/en-us/windows/mixed-reality/design/images/handcoach/airtap.gif)
+  ![Hand Coach Example](https://docs.microsoft.com/windows/mixed-reality/design/images/handcoach/airtap.gif)
 
 
 ### Input Recording Service improvements
