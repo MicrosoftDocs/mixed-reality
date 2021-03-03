@@ -10,15 +10,26 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Profiles
 
 # Profiles
 
-One of the main ways that the MRTK is configured is through the many profiles available in the foundation package. The main [`MixedRealityToolkit`](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit) object in a scene will have the active profile, which is essentially a ScriptableObject. The top level MRTK Configuration Profile contains sub-profile data for each core of the primary core systems, each of which are designed to configure the behavior of their corresponding sub-systems. Furthermore, these sub-profiles are also Scriptable Objects and thus can contain references to other profile objects one level below them. There is essentially an entire tree of connected profiles that make up the configuration information for how to initialize the MRTK sub-systems and features.
+One of the main ways that the MRTK is configured is through the profiles available in the foundation package. The main [`MixedRealityToolkit`](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit) object in a scene will have the active profile, which is a ScriptableObject. The top level MRTK Configuration Profile contains sub-profile data for each core of the primary core systems, each of which are designed to configure the behavior of their corresponding subsystems. Furthermore, these sub-profiles are also ScriptableObjects and thus can contain references to other profile objects one level below them. There is essentially an entire tree of connected profiles that make up the configuration information for how to initialize the MRTK subsystems and features.
 
-For example, the Input system's behavior is governed by an input system profile, for example the `DefaultMixedRealityInputSystemProfile` (Assets/MRTK/SDK/Profiles). It's highly recommended to always modify the profile ScriptableObject assets via the in-editor inspector.
+For example, the input system's behavior is governed by an input system profile, like the `DefaultMixedRealityInputSystemProfile` (Assets/MRTK/SDK/Profiles).
 
 <img src="../images/profiles/input_profile.png" width="650px" alt="Input profile" style="display:block;">
 <sup>Profile Inspector</sup>
 
-> [!NOTE]
-> While it is intended that profiles can be swapped out at runtime, this [currently does not work](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/4289)
+## Background
+
+Profiles are mainly intended to support specific scenarios across multiple devices, which are handled via the data providers. This way, an app can be designed as device-agnosticly as possible and let the MRTK and the profile's data providers handle cross-platform support.
+
+There are also profiles built around the input features of specific devices, such as the HoloLens 1 profile which defaults to GGV-style interactions.
+
+## XR SDK
+
+Currently, there are two profiles provided for XR SDK, `DefaultXRSDKConfigurationProfile` and `DefaultHoloLens2XRSDKConfigurationProfile`. As a result, not all samples scenes are fully supported due to scene- and scenario-specific configurations. Any samples that use `DefaultMixedRealityToolkitConfigurationProfile` and `DefaultHoloLens2ConfigurationProfile` _can_ be swapped over to their corresponding XR SDK profiles. If you're using OpenXR with XR SDK, use the `DefaultOpenXRConfigurationProfile` instead.
+
+Additional work is being undertaken to ease configuration and support all sample scenes, allowing for both legacy XR and XR SDK to be configured side-by-side. See issue [#9419](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9419) for tracking.
+
+See [Configuring MRTK for the XR SDK pipeline](../../configuration/getting-started-with-mrtk-and-xrsdk.md#configuring-mrtk-for-the-xr-sdk-pipeline) for more information on converting profiles between legacy XR and XR SDK.
 
 ## Default profile
 
@@ -37,21 +48,21 @@ of the default selected profile.
 
 The key differences between the HoloLens2 profile and the Default Profile are:
 
-**Disabled** Features:
+**Disabled** features:
 
-- [Boundary System](../boundary/boundary-system-getting-started.md)
-- [Teleport System](../teleport-system/teleport-system.md)
-- [Spatial Awareness System](../spatial-awareness/spatial-awareness-getting-started.md)
+- [Boundary system](../boundary/boundary-system-getting-started.md)
+- [Teleport system](../teleport-system/teleport-system.md)
+- [Spatial awareness system](../spatial-awareness/spatial-awareness-getting-started.md)
 - [Hand mesh visualization](../input/hand-tracking.md) (due to performance overhead)
 
-**Enabled** Systems:
+**Enabled** systems:
 
-- The [Eye Tracking provider](../input/eye-tracking/eye-tracking-main.md)
+- The [eye tracking provider](../input/eye-tracking/eye-tracking-main.md)
 - Eye input simulation
 
-Camera profile settings are set to match so that the editor quality and player quality are the same. This is different from the default camera profile where Opaque displays are set to a higher quality. This change means that in-editor quality will be lower, which will more closely match what will be rendered on the device.
-  
+Camera profile settings are set to match so that the editor quality and player quality are the same. This is different from the default camera profile where opaque displays are set to a higher quality. This change means that in-editor quality will be lower, which will more closely match what will be rendered on the device.
+
 > [!NOTE]
 > The Spatial Awareness system is turned off by default based on client feedback - it is an interesting visualization to see
-  initially but is typically turned off to avoid the visual distraction and the additional performance hit of
-  having it on. The system can be re-enabled by following the [instructions here](../spatial-awareness/spatial-awareness-getting-started.md).
+> initially but is typically turned off to avoid the visual distraction and the additional performance hit of
+> having it on. The system can be re-enabled by following the [instructions here](../spatial-awareness/spatial-awareness-getting-started.md).
