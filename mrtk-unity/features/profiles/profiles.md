@@ -17,6 +17,14 @@ For example, the input system's behavior is governed by an input system profile,
 <img src="../images/profiles/input_profile.png" width="650px" alt="Input profile" style="display:block;">
 <sup>Profile Inspector</sup>
 
+## XR SDK
+
+Currently, there are two profiles provided for XR SDK, `DefaultXRSDKConfigurationProfile` and `DefaultHoloLens2XRSDKConfigurationProfile`. As a result, not all samples scenes are fully supported due to scene- and scenario-specific configurations. Any samples that use `DefaultMixedRealityToolkitConfigurationProfile` and `DefaultHoloLens2ConfigurationProfile` _can_ be swapped over to their corresponding XR SDK profiles. If you're using OpenXR with XR SDK, use the `DefaultOpenXRConfigurationProfile` instead.
+
+Additional work is being undertaken to ease configuration and support all sample scenes, allowing for both legacy XR and XR SDK to be configured side-by-side. See issue [#9419](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9419) for tracking.
+
+See [Configuring MRTK for the XR SDK pipeline](../../configuration/getting-started-with-mrtk-and-xrsdk.md#configuring-mrtk-for-the-xr-sdk-pipeline) for more information on converting profiles between legacy XR and XR SDK.
+
 ## Default profile
 
 The MRTK provides a set of default profiles which cover most platforms and scenarios that the MRTK supports. For example, when you select the `DefaultMixedRealityToolkitConfigurationProfile` (Assets/MRTK/SDK/Profiles) you will be able to try out scenarios on VR (OpenVR, WMR) and HoloLens (1 and 2).
@@ -46,7 +54,7 @@ The key differences between the HoloLens2 profile and the Default Profile are:
 - The [eye tracking provider](../input/eye-tracking/eye-tracking-main.md)
 - Eye input simulation
 
-Camera profile settings are set to match so that the editor quality and player quality are the same. This is different from the default camera profile where Opaque displays are set to a higher quality. This change means that in-editor quality will be lower, which will more closely match what will be rendered on the device.
+Camera profile settings are set to match so that the editor quality and player quality are the same. This is different from the default camera profile where opaque displays are set to a higher quality. This change means that in-editor quality will be lower, which will more closely match what will be rendered on the device.
 
 > [!NOTE]
 > The Spatial Awareness system is turned off by default based on client feedback - it is an interesting visualization to see
