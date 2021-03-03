@@ -153,9 +153,11 @@ defaultEvents.OnStateOff.AddListener(() =>
 
 The Focus state is a near and far interaction state that can be thought of as the mixed reality equivalent to hover. The distinguishing factor between near and far interaction for the Focus state is the current active pointer type.  If the pointer type for the Focus state is the Poke Pointer, then the interaction is considered near interaction.  If the primary pointer is not the Poke Pointer, then the interaction is considered far interaction. The Focus state is present in Interactive Element by default.
 
-|Focus State Behavior| Focus State Inspector|
-|---|--|
-|![FocusStateEditor](../images/interactive-element/InEditor/Gifs/FocusStateEditor.gif)| ![FocusStateInspector](../images/interactive-element/InEditor/FocusStateInspector.png)|
+**Focus State Behavior**
+![FocusStateEditor](../images/interactive-element/InEditor/Gifs/FocusStateEditor.gif) 
+
+**Focus State Inspector**
+![FocusStateInspector](../images/interactive-element/InEditor/FocusStateInspector.png)
 
 #### Getting Focus State Events
 
@@ -183,9 +185,11 @@ focusEvents.OnFocusOff.AddListener((pointerEventData) =>
 
 The Focus Near state is set when a focus event is raised and the primary pointer is the Poke pointer, an indication of near interaction. 
 
-|Focus Near State Behavior| Focus Near State Inspector|
-|---|--|
-|![FocusNearStateEditor](../images/interactive-element/InEditor/Gifs/FocusNearStateEditor.gif)| ![FocusNearStateInspector](../images/interactive-element/InEditor/FocusNearStateInspector.png)|
+**Focus Near State Behavior**
+![FocusNearStateEditor](../images/interactive-element/InEditor/Gifs/FocusNearStateEditor.gif) 
+
+**Focus Near State Inspector**
+![FocusNearStateInspector](../images/interactive-element/InEditor/FocusNearStateInspector.png)
 
 #### Getting FocusNear State Events
 
@@ -209,10 +213,11 @@ focusNearEvents.OnFocusOff.AddListener((pointerEventData) =>
 
 The Focus Far state is set when the primary pointer is not the Poke pointer.  For example, the default controller ray pointer and the GGV (Gaze, Gesture, Voice) pointer are considered far interaction pointers.
 
-|Focus Far State Behavior| Focus Far State Inspector|
-|---|--|
-|![FocusFarStateEditor](../images/interactive-element/InEditor/Gifs/FocusFarStateEditor.gif)| ![FocusFarStateInspector](../images/interactive-element/InEditor/FocusFarStateInspector.png)|
+**Focus Far State Behavior**
+![FocusFarStateEditor](../images/interactive-element/InEditor/Gifs/FocusFarStateEditor.gif)
 
+**Focus Far State Inspector**
+![FocusFarStateInspector](../images/interactive-element/InEditor/FocusFarStateInspector.png)
 
 #### Getting Focus Far State Events
 
@@ -236,10 +241,11 @@ focusFarEvents.OnFocusOff.AddListener((pointerEventData) =>
 
 The Touch state is a near interaction state that is set when an articulated hand touches the object directly.  A direct touch means that the articulated hand's index finger is very close to the world position of the object. By default, a `NearInteractionTouchableVolume` component is attached to the object if the Touch state is added to the the state list.  The presence of a  `NearInteractionTouchableVolume` or `NearInteractionTouchable` component is required for detecting Touch events.  The difference between `NearInteractionTouchableVolume` and `NearInteractionTouchable` is that `NearInteractionTouchableVolume` detects a touch based on the collider of the object and `NearInteractionTouchable`detects touch within a defined area of a plane.
 
-|Touch State Behavior| Touch State Inspector|
-|---|--|
-|![TouchStateEditor](../images/interactive-element/InEditor/Gifs/TouchStateEditor.gif)| ![TouchStateInspector](../images/interactive-element/InEditor/TouchStateInspector.png)|
+**Touch State Behavior**
+![TouchStateEditor](../images/interactive-element/InEditor/Gifs/TouchStateEditor.gif)
 
+**Touch State Inspector**
+![TouchStateInspector](../images/interactive-element/InEditor/TouchStateInspector.png)
 
 #### Getting Touch State Events
 
@@ -268,9 +274,11 @@ touchEvents.OnTouchUpdated.AddListener((touchData) =>
 
 The Select Far state is the `IMixedRealityPointerHandler` surfaced.  This state is a far interaction state that detects far interaction click (air-tap) and holds through the use of far interaction pointers such as the default controller ray pointer or the GGV pointer.  The Select Far state has an option under the event configuration foldout named `Global`. If `Global` is true, then the `IMixedRealityPointerHandler` is registered as a global input handler.  Focus on an object is not required to trigger input system events if a handler is registered as global.  For example, if a user wants to know anytime the air-tap/select gesture is performed regardless of the object in focus, set `Global` to true. 
 
-|Select Far State Behavior| Select Far State Inspector|
-|---|--|
-|![SelectFarStateEditor](../images/interactive-element/InEditor/Gifs/SelectFarStateEditor.gif)| ![SelectFarStateInspector](../images/interactive-element/InEditor/SelectFarStateInspector.png)|
+**Select Far State Behavior**
+![SelectFarStateEditor](../images/interactive-element/InEditor/Gifs/SelectFarStateEditor.gif)
+
+**Select Far State Inspector**
+![SelectFarStateInspector](../images/interactive-element/InEditor/SelectFarStateInspector.png)
 
 #### Getting Select Far State Events
 
@@ -307,9 +315,11 @@ The Clicked state is triggered by a far interaction click (Select Far state) by 
 > [!NOTE]
 > The visual feedback in the inspector based on state activity is not present for the Clicked state because it is switched on and then off immediately. 
 
-|Clicked State Behavior| Clicked State Inspector|
-|---|--|
-|![ClickedStateEditor](../images/interactive-element/InEditor/Gifs/ClickedStateEditor.gif)| ![ClickedStateInspector](../images/interactive-element/InEditor/ClickedStateInspector.png)|
+**Clicked State Behavior**
+![ClickedStateEditor](../images/interactive-element/InEditor/Gifs/ClickedStateEditor.gif)
+
+**Clicked State Inspector**
+![ClickedStateInspector](../images/interactive-element/InEditor/ClickedStateInspector.png)
 
 **Near and Far Clicked State Example**  
 The clicked state can be triggered through additional entry points using the `interactiveElement.TriggerClickedState()` method.  For example, if a user wants a near interaction touch to trigger a click on an object as well, then they would add the `TriggerClickedState()` method as a listener in the touch state.   
@@ -333,10 +343,11 @@ clickedEvent.OnClicked.AddListener(() =>
 
 The Toggle On and Toggle Off states are a pair and both need to be present for toggle behavior.  By default, the Toggle On and Toggle Off states are triggered through a far interaction click (Select Far state).  By default, the Toggle Off state is active on start, meaning that the toggle will be initialized to off.  If a user wants the Toggle On state to be active on start, then in the Toggle On state set `IsSelectedOnStart` to true.
 
-|ToggleOn and Toggle Off State Behavior|ToggleOn and Toggle Off State Inspector|
-|---|--|
-|![ToggleOnToggleOffStateEditor](../images/interactive-element/InEditor/Gifs/ToggleOnToggleOffStateEditor.gif)| ![ToggleOnToggleOffStateInspector](../images/interactive-element/InEditor/ToggleOnToggleOffStateInspector.png)|
+**ToggleOn and Toggle Off State Behavior**
+![ToggleOnToggleOffStateEditor](../images/interactive-element/InEditor/Gifs/ToggleOnToggleOffStateEditor.gif)
 
+**ToggleOn and Toggle Off State Inspector**
+![ToggleOnToggleOffStateInspector](../images/interactive-element/InEditor/ToggleOnToggleOffStateInspector.png)
 
 **Near and Far Toggle States Example**  
 Similar to the Clicked state, toggle state setting can have multiple entry points using the `interactiveElement.SetToggleStates()` method. For example, if a user wants touch as an additional entry point to set the toggle states, then they add the `SetToggleStates()` method to one of the events in the Touch state. 
@@ -370,9 +381,11 @@ toggleOffEvent.OnToggleOff.AddListener(() =>
 
 The Speech Keyword state listens for the keywords defined in the Mixed Reality Speech Profile. Any new keyword MUST be registered in the speech command profile prior to runtime (steps below). 
 
-|Speech Keyword State Behavior|Speech Keyword State Inspector|
-|---|--|
-|![SpeechKeywordStateEditor](../images/interactive-element/InEditor/Gifs/SpeechKeywordStateEditor.gif)| ![SpeechKeywordStateInspector](../images/interactive-element/InEditor/SpeechKeywordStateInspector.png)|
+**Speech Keyword State Behavior**
+![SpeechKeywordStateEditor](../images/interactive-element/InEditor/Gifs/SpeechKeywordStateEditor.gif)
+
+**Speech Keyword State Inspector**
+![SpeechKeywordStateInspector](../images/interactive-element/InEditor/SpeechKeywordStateInspector.png)
 
 > [!NOTE]
 > The Speech Keyword state was triggered in editor by pressing the F5 key in the gif above. Setting up in editor testing for speech is outlined the steps below. 
