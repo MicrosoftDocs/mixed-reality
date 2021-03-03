@@ -10,8 +10,8 @@
   href: configuration/toc.yml
 - name: Updates and Deployment
   href: updates-deployment/toc.yml
-- name: Packages and Release Notes
-  href: packages-releases/toc.yml
+- name: Packages
+  href: packages/toc.yml
 - name: Performance and Best Practices 
   href: performance/toc.yml
 - name: Architecture
