@@ -1,7 +1,5 @@
 - name: Dock
   href: dock.md
-- name: Hand Coach
-  href: hand-coach.md
 - name: Hand Physics Service
   href: hand-physics-service.md
 - name: Interactive Element
