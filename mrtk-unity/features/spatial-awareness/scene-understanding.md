@@ -35,7 +35,7 @@ The quickest way to get started with Scene Understanding is to check out the sam
 
 ### Scene Understanding sample scene
 
-Open the scene file in `Examples/Experimental/SceneUnderstanding/Scenes/SceneUnderstandingExample.unity` and press play!
+In Unity, use the Project Explorer to open the scene file in `Examples/Experimental/SceneUnderstanding/Scenes/SceneUnderstandingExample.unity` and press play!
 
 The scene demonstrates the following:
 
