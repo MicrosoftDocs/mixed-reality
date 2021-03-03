@@ -1,5 +1,5 @@
 ---
-title: ReleaseNotes
+title: MRTK 2.6 Release Notes
 description: release notes of the MRTK version 2.6
 author: polar-kev
 ms.author: kesemple
@@ -12,7 +12,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 - [What's new](#whats-new)
 - [Breaking changes](#breaking-changes)
-- [Updating guidance](Updating.md#upgrading-to-a-new-version-of-mrtk)
+- [Updating guidance](../updates-deployment/updating.md#upgrading-to-a-new-version-of-mrtk)
 - [Known issues](#known-issues)
 
 > [!IMPORTANT]
@@ -24,7 +24,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 ### Add support for OpenXR
 
-Initial support for Unity's OpenXR preview package and Microsoft's Mixed Reality OpenXR package has been added. See [the MRTK/XRSDK getting started page](configuration/getting-started-with-mrtk-and-xrsdk.md), [Unity's forum post](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/), or [Microsoft's documentation](https://aka.ms/openxr-unity-install) for more information.
+Initial support for Unity's OpenXR preview package and Microsoft's Mixed Reality OpenXR package has been added. See [the MRTK/XRSDK getting started page](../configuration/getting-started-with-mrtk-and-xrsdk.md), [Unity's forum post](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/), or [Microsoft's documentation](https://aka.ms/openxr-unity-install) for more information.
 
 > [!IMPORTANT]
 > OpenXR in Unity is only supported on Unity 2020.2 and higher.
@@ -39,35 +39,52 @@ Controllers for the HP Reverb G2 now work natively with MRTK.
 
 Users can now use the teleport gesture to move around their play space across all platforms. To teleport with a controller on MR devices with default configurations, use the thumbstick. To teleport with
 articulated hands, make a gesture with your palm facing up with the index and thumb sticking outwards, completing the teleport by curling the index finger. To teleport with input simulation, please
-see our updated [Input Simulation Service documentation](features/input-simulation/input-simulation-service.md).
+see our updated [Input Simulation Service documentation](../features/input-simulation/input-simulation-service.md).
 
-  ![Teleport Gesture](release-notes/images/handteleport.gif)
+  ![Teleport Gesture](images/handteleport.gif)
+
+### Scene Understanding now available in MRTK as an experimental spatial awareness observer
+
+Experimental support of [Scene Understanding](https://docs.microsoft.com/windows/mixed-reality/scene-understanding) is introduced in MRTK 2.6. Users can incorporate the scene understanding capabilities of HoloLens 2 as a spatial awareness observer in MRTK based projects. Please read the [Scene Understanding documentation](features/spatial-awareness/scene-understanding.md) for more information.
+
+> [!IMPORTANT]
+> Scene Understanding is only supported on HoloLens 2 and Unity 2019.4 and higher.
+>
+> This feature requires the Scene Understanding package, which is now available via the [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool).
+
+  ![Scene Understanding](images/SceneUnderstanding.gif)
 
 ### Runtime profile switching support
 
-MRTK now allows profile switching both before the initialization of the MRTK instance (i.e. Pre MRTK initialization profile switch) and after a profile has been in active use (i.e. Active profile switch). The former switch can be used to enable select components based on capabilities of the hardware, while the latter can be used to modify experience as the user enters a subpart of the application. Please read the [documentation on profile switching](configuration/mixed-reality-configuration-guide.md#changing-profiles-at-runtime) for more information and code samples.
+MRTK now allows profile switching both before the initialization of the MRTK instance (i.e. Pre MRTK initialization profile switch) and after a profile has been in active use (i.e. Active profile switch). The former switch can be used to enable select components based on capabilities of the hardware, while the latter can be used to modify experience as the user enters a subpart of the application. Please read the [documentation on profile switching](../configuration/mixed-reality-configuration-guide.md#changing-profiles-at-runtime) for more information and code samples.
 
 ### Directional Indicator and Follow Solvers Graduated from Experimental
 
 Two new solvers are ready for use with mainline MRTK.
 
-  ![Directional Indicator Solver](release-notes/images/DirectionalIndicatorExampleScene.gif)
+  ![Directional Indicator Solver](images/DirectionalIndicatorExampleScene.gif)
+
+### Hand Coach Graduated from Experimental
+
+The Hand Coach feature is now ready for use with mainline MRTK.
+  ![Hand Coach Example](https://docs.microsoft.com/windows/mixed-reality/design/images/handcoach/airtap.gif)
+
 
 ### Input Recording Service improvements
 
-`InputRecordingService` and `InputPlaybackService` can now record and play back eye gaze input. Recording has been optimized to ensure a consistent framerate throughout the recording period while recording file size and save time are also reduced by about 50%. Saving and loading of recording files can now be performed asynchronously. Note the file format of the recording has changed in this MRTK version, please see [here](InputSimulation/InputAnimationFileFormat.md) for more information on the new version 1.1 specifications.
+`InputRecordingService` and `InputPlaybackService` can now record and play back eye gaze input. Recording has been optimized to ensure a consistent framerate throughout the recording period while recording file size and save time are also reduced by about 50%. Saving and loading of recording files can now be performed asynchronously. Note the file format of the recording has changed in this MRTK version, please see [here](../features/input-simulation/input-animation-file-format.md) for more information on the new version 1.1 specifications.
 
 ### Reading mode
 
 Added support for [reading mode](https://docs.microsoft.com/hololens/hololens2-display#what-improvements-are-coming-that-will-improve-hololens-2-image-quality) on HoloLens 2. Reading mode reduces the system's field of view but eliminates a scaling of Unity's output. A pixel rendered by Unity will correspond to a projected pixel on HoloLens 2. Application authors should do tests with multiple individuals to be sure this is a tradeoff they want in their app.
 
-  ![Windows Mixed Reality reading mode](release-notes/images/WMRReadingMode.gif)
+  ![Windows Mixed Reality reading mode](images/WMRReadingMode.gif)
 
 ### Support for 3D app launchers on UWP
 
 Adds the ability to set a [3D app launcher](https://docs.microsoft.com/windows/mixed-reality/distribute/3d-app-launcher-design-guidance) for UWP. This setting is exposed both in the MRTK Build Window and the MRTK Project Settings, under Build Settings. It's automatically written into the project during the build in Unity.
 
-  ![Build settings](release-notes/images/ProjectBuildSettings.png)
+  ![Build settings](images/ProjectBuildSettings.png)
 
 ## Breaking changes
 
@@ -77,7 +94,7 @@ Due to deserialization related issues some fields of imported GLTF objects are n
 
 ### Input animation binary file has an updated version 1.1 format
 
-Input animation binary file, used by `InputRecordingService` and `InputPlaybackService`, now has an updated file format to enable the optimizations made to those two services. Please see [here](features/input-simulation/input-animation-file-format.md) for more information on the new version 1.1 specifications.
+Input animation binary file, used by `InputRecordingService` and `InputPlaybackService`, now has an updated file format to enable the optimizations made to those two services. Please see [here](../features/input-simulation/input-animation-file-format.md) for more information on the new version 1.1 specifications.
 
 ### MSBuild for Unity support
 
@@ -112,7 +129,7 @@ To resolve, please ensure that:
 - **Window** > **Package Manager** has one or more XR packages installed
 - **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** and make a selection for **Audio Spatializer**
 
-  ![Select Audio Spatializer](release-notes/images/SpatializerSelection.png)
+  ![Select Audio Spatializer](images/SpatializerSelection.png)
 
 ### NullReferenceException: Object reference not set to an instance of an object (SceneTransitionService.Initialize)
 
@@ -124,7 +141,7 @@ This error is due to the Scene Transition Service's configuration profile being 
 - If not expanded, expand `Scene Transition Service`
 - Set the value of `Configuration Profile` to **MRTKExamplesHubSceneTransitionServiceProfile**
 
-<img src="Images/ReleaseNotes/FixSceneTransitionProfile.png" width="500px">
+![Fix Scene Transition Profile](images/FixSceneTransitionProfile.png)
 
 ### Oculus Quest
 
