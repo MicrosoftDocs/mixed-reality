@@ -1,3 +1,13 @@
+---
+title: SceneUnderstanding
+description: describes Scene Understanding in MRTK
+author: MaxWang-MS
+ms.author: wangmax
+ms.date: 03/02/2021
+ms.localizationpriority: high
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Scene Understanding
+---
+
 # Scene Understanding
 
 [Scene Understanding](https://docs.microsoft.com/en-us/windows/mixed-reality/scene-understanding) returns a semantic representation of scene entities as well as their geometric forms on __HoloLens 2__ (HoloLens 1st Gen is not supported).
@@ -8,7 +18,7 @@ Some expected use cases of this technology are:
 * Provide physics engine friendly geometry as quads
 * Accelerate development by avoiding the need to write similar algorithms
 
-Currently Scene Understanding is available as an __experimental__ feature. It is integrated into MRTK as a [spatial observer](SpatialAwarenessGettingStarted.md#register-observers) called [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver). Scene Understanding works both with the Legacy XR pipeline and the XR SDK pipeline. In both cases the `WindowsSceneUnderstandingObserver` is used.
+Scene Understanding is available as an __experimental__ feature starting from MRTK 2.6. It is integrated into MRTK as a [spatial observer](spatial-awareness-getting-started.md#register-observers) called [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver). Scene Understanding works both with the Legacy XR pipeline and the XR SDK pipeline. In both cases the `WindowsSceneUnderstandingObserver` is used.
 
 ## Observer overview
 
@@ -41,9 +51,9 @@ The scene demonstrates the following:
 
 Select the 'MixedRealityToolkit' game object and check the inspector.
 
-![scene understanding location in heirarchy](../../Documentation/Images/SceneUnderstanding/MRTKHierarchy.png)
+![scene understanding location in heirarchy](../images/spatial-awareness/MRTKHierarchy.png)
 
-![mrkt location in inspector](../../Documentation/Images/SceneUnderstanding/MRTKLocation.png)
+![mrkt location in inspector](../images/spatial-awareness/MRTKLocation.png)
 
 These options will allow one to configure the `WindowsSceneUnderstandingObserver`.
 
@@ -59,7 +69,7 @@ The toggles on the panel in the scene change the behavior of scene understanding
 
 Turning on *Instantiate Prefabs*, will demonstrate creating objects that size to fit themselves to all [SpatialAwarenessSceneObject](xref:Microsoft.MixedReality.Toolkit.Experimental.SpatialAwareness.SpatialAwarenessSceneObject), gathered neatly under a parent object.
 
-![demo controller options](../../Documentation/Images/SceneUnderstanding/Controller.png)
+![demo controller options](../images/spatial-awareness/Controller.png)
 
 ### Built app notes
 
@@ -69,9 +79,9 @@ Note, their are some pit falls in making queries to the observer. Misconfigurati
 
 Saved scene files can be accessed through the [device portal](https://docs.microsoft.com/en-us/windows/mixed-reality/using-the-windows-device-portal) at `User Folders/LocalAppData/[APP_NAME]/LocalState/PREFIX_yyyyMMdd_hhmmss.bytes`. These scene files can be used in editor by specifying them in the observer profile found in the inspector.
 
-![Device Portal location of bytes file](../../Documentation/Images/SceneUnderstanding/BytesInDevicePortal.png)
+![Device Portal location of bytes file](../images/spatial-awareness/BytesInDevicePortal.png)
 
-![Serialized scene bytes in observer](../../Documentation/Images/SceneUnderstanding/BytesLocationInObserver.png)
+![Serialized scene bytes in observer](../images/spatial-awareness/BytesLocationInObserver.png)
 
 ## See Also
 
