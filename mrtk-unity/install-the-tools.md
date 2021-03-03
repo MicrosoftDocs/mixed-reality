@@ -21,7 +21,7 @@ You can use [Mixed Reality Toolkit for Unity](https://github.com/Microsoft/Mixed
 |TIP: Bookmark this page and check it regularly to keep up-to-date on the most recent version of each tool recommended for mixed reality development.|
 |---|
 
-# Installation checklist
+## Installation checklist
 
 | Tool | Notes |
 |---------|---------|
@@ -30,7 +30,7 @@ You can use [Mixed Reality Toolkit for Unity](https://github.com/Microsoft/Mixed
 | ![Windows logo](images/Windows10_logo.png)<br><br><a href="https://developer.microsoft.com//windows/downloads/windows-10-sdk" target="_blank">**Windows 10 SDK (10.0.18362.0)** (Manual install link)</a> <br><br>Provides the latest headers, libraries, metadata, and tools for building Windows 10 apps on HoloLens 2. | **To build HoloLens 2 apps, you must install the Windows SDK, build 18362 or later.**<br> <br> If you are only developing applications for desktop Windows Mixed Reality headsets or HoloLens (1st gen), you can use the Windows SDK installed by Visual Studio 2019. |
 | ![Visual Studio logo](images/HoloLensIcon.jpg)<br><br><a href="https://go.microsoft.com/fwlink/?linkid=2154784" target="_blank">**HoloLens 2 Emulator (Windows Holographic, version 20H2 February 2021 Update)** (Install link: 10.0.19041.1134)</a><br> <br><a href="https://go.microsoft.com/fwlink/?linkid=2065980" target="_blank">**HoloLens (1st gen) Emulator** (Install link: 10.0.17763.134)</a> <br><br>The emulator lets you run applications on a HoloLens virtual machine image without a physical HoloLens.<br> <br> | See [Using the HoloLens emulator](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator) for more information on getting started with the emulator.<br> <br> **Your system must support Hyper-V** for the emulator installation to succeed. Reference the System Requirements section below for details. <br> <br> **Note on HoloLens (1st gen) Emulator** <br>. If you're installing the HoloLens (1st gen) emulator with Visual Studio 2019 you need to deselect the VS templates and [install them from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX). |
 
-# Unity
+## Unity
 Now that you have your Windows 10, Visual Studio, and Windows 10 SDK ready to go, let's use Unity as an engine to build on.
 
 **1. Download the latest version**

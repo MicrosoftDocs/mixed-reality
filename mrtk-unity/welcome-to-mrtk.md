@@ -252,13 +252,13 @@ Want to see what's going on under the hood?
         Visual indicator for communicating data process or operation
     :::column-end:::
     :::column:::
-        [![Dialog](features/images/Dialog/MRTK_UX_Dialog_Main.png)](features/experimental/dialog.md)
-        **[Dialog [Experimental]](features/experimental/dialog.md)**<br>
+        [![Dialog](features/images/Dialog/MRTK_UX_Dialog_Main.png)](features/ux-building-blocks/dialog.md)
+        **[Dialog](features/ux-building-blocks/dialog.md)**<br>
         UI for asking for user's confirmation or acknowledgement
     :::column-end:::
     :::column:::
-        [![Hand Coach](features/images/hand-coach/MRTK_UX_HandCoach_Main.jpg)](features/experimental/hand-coach.md)
-        **[Hand Coach [Experimental]](features/experimental/hand-coach.md)**<br>
+        [![Hand Coach](features/images/hand-coach/MRTK_UX_HandCoach_Main.jpg)](features/ux-building-blocks/hand-coach.md)
+        **[Hand Coach](features/ux-building-blocks/hand-coach.md)**<br>
         Component that helps guide the user when the gesture has not been taught
     :::column-end:::
 :::row-end:::
