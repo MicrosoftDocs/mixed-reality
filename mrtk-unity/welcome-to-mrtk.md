@@ -1,5 +1,5 @@
 ---
-title: MRTK-Unity Documentation
+title: MRTK-Unity Developer Documentation
 description: Learn about the Mixed Reality Toolkit for Unity.
 author: polar-kev
 ms.author: kesemple
@@ -36,13 +36,13 @@ MRTK-Unity is a Microsoft-driven project that provides a set of components and f
 
 ## Getting started with MRTK
 
-If you're new to MRTK or Mixed Reality development in Unity, we recommend you install the necessary tools and then follow the Unity developer journey.
+If you're new to MRTK or Mixed Reality development in Unity, we recommend you install the necessary tools and then follow the HoloLens 2 tutorial series.
 
 > [!div class="nextstepaction"]
 > [Install the Tools](install-the-tools.md)
 
 > [!div class="nextstepaction"]
-> [Unity Developer Journey](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
+> [HoloLens 2 Tutorial Series](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
 
 Want to see what's going on under the hood?
 > [!div class="nextstepaction"]

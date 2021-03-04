@@ -1,6 +1,6 @@
 ---
 title: Install the tools
-description: MRTK Install the tools documentation page
+description: MRTK-Unity, Install the tools documentation page
 author: polar-kev
 ms.author: kesemple
 ms.date: 03/02/2021
@@ -14,7 +14,7 @@ Get the tools you need to build applications for Microsoft HoloLens and Windows 
 
 Don't have a mixed reality device? You can install the [HoloLens emulator](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)  to test some functionality of mixed reality apps without a HoloLens. You can also use the [Windows Mixed Reality simulator](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator)  to test your mixed reality apps for immersive headsets.
 
-We recommend installing Unity as the easiest way to get started creating mixed reality apps.
+This page will guide you through installing the tools you need to use the MRTK with Unity. If you're interested in exploring other Mixed Reality development platforms, check out the [Introduction to Mixed Reality development](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity) page.
 
 You can use [Mixed Reality Toolkit for Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)'s input simulation to test various types of input interactions such as hand-tracking and eye-tracking input. 
 
@@ -48,8 +48,6 @@ The [Mixed Reality Feature Tool](https://docs.microsoft.com/windows/mixed-realit
 You can search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing. Once you've validated the packages you want, the Mixed Reality Feature tool will download them into the Unity project of your choice.
 
 ##### Importing the Mixed Reality Toolkit
-We recommend following the Getting Started section in our curated [HoloLens](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2#1-getting-started) tutorial for a step by step guide on downloading the MRTK and initializing your first project.
-
 You can download the Mixed Reality Toolkit package by following the [installation and usage instructions](https://docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool#system-requirements) and selecting the Mixed Reality Toolkit Foundation package.
 
 If you prefer to manually download MRTK packages from Github, visit the Release page at [Mixed Reality Toolkit-Unity (GitHub)](https://github.com/microsoft/MixedRealityToolkit-Unity/releases).
@@ -111,3 +109,9 @@ Memory | 8 GB of RAM or greater | 16 GB of RAM or greater
 Storage | >10 GB additional free space
 USB Ports | 1x available USB port for headset (USB 3.0 Type-A) Note: USB must supply a minimum of 900mA
 Bluetooth | Bluetooth 4.0 (for accessory connectivity)
+
+## Next Development Checkpoint
+
+Now that you've got the the tools installed, we recommend following our MRTK HoloLens 2 tutorials series.
+> [!div class="nextstepaction"]
+> [HoloLens 2 Tutorial Series](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
