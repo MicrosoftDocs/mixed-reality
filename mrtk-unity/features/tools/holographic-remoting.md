@@ -68,7 +68,7 @@ Beginning with MRTK version 2.5.0, for performance reasons, this #define is no l
 
 ### Removing HoloLens 2-specific remoting support
 
-If you're running into conflicts or other issues due to the presence of the DotNetWinRT adapter, please [reach out on one of our help resources](../../welcome-to-mrtk.md#getting-help).
+If you're running into conflicts or other issues due to the presence of the DotNetWinRT adapter, please [reach out on one of our help resources](../../index.md#getting-help).
 
 ## XR SDK setup instructions
 
