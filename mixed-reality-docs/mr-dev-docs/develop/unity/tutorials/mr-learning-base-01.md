@@ -41,7 +41,7 @@ Tutorials in this series are meant to be sequential, so please go through them i
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019 LTS installed and the Universal Windows Platform Build Support module added
 
 > [!CAUTION]
-> The recommended MRTK version for this tutorial series is MRTK 2.5.3.
+> The recommended MRTK version for this tutorial series is MRTK 2.6.
 
 > [!CAUTION]
 > The recommended Unity version for this tutorial series is Unity 2019 LTS. This supersedes any Unity version requirements stated in the prerequisites linked above.
