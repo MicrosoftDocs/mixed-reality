@@ -14,3 +14,5 @@
   href: optimize-window.md
 - name: Screenshot Utility
   href: screenshot-utility.md
+- name: Shader Update
+  href: update-mrtk-shaders.md
