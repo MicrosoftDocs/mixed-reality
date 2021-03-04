@@ -69,7 +69,7 @@ If you have existing apps that you'd like to port over, the articles listed belo
 Before going out into the world of mixed reality on your own, we recommend taking a look at the extra documentation below. 
 
 * [VR enthusiast guide](/windows/mixed-reality/enthusiast-guide/vr-journey)
-* [Unity Asset Store](https://www.assetstore.unity3d.com)
+* [Unity Asset Store](https://assetstore.unity.com)
 
 ## See also 
 
