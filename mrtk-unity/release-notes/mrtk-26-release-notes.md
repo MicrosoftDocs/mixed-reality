@@ -51,6 +51,7 @@ Experimental support of [Scene Understanding](https://docs.microsoft.com/windows
 > Scene Understanding is only supported on HoloLens 2 and Unity 2019.4 and higher.
 >
 > This feature requires the Scene Understanding package, which is now available via the [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool).
+> When using the Mixed Reality Feature Tool or otherwise importing via UPM, please import the Demos - SpatialAwareness sample before importing the Experimental - SceneUnderstanding sample due to a dependency issue.
 
   ![Scene Understanding](images/SceneUnderstanding.gif)
 

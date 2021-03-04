@@ -26,6 +26,9 @@ When asked, the [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedRealit
 
 ## Setup
 
+> [!IMPORTANT]
+> Scene Understanding is only supported on HoloLens 2 and Unity 2019.4 and higher.
+
 1. Ensure the platform is set to UWP in build settings.
 1. Acquire the Scene Understanding package via [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool).
 
@@ -36,6 +39,9 @@ The quickest way to get started with Scene Understanding is to check out the sam
 ### Scene Understanding sample scene
 
 In Unity, use the Project Explorer to open the scene file in `Examples/Experimental/SceneUnderstanding/Scenes/SceneUnderstandingExample.unity` and press play!
+
+> [!IMPORTANT]
+> When using the Mixed Reality Feature Tool or otherwise importing via UPM, please import the Demos - SpatialAwareness sample before importing the Experimental - SceneUnderstanding sample due to a dependency issue.
 
 The scene demonstrates the following:
 
