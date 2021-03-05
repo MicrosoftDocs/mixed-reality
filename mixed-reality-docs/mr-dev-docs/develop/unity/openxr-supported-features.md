@@ -1,5 +1,5 @@
 ---
-title: OpenXR plugin Supported Features in Unity
+title: OpenXR plugin supported features in Unity
 description: Discover the features OpenXR supports for mixed reality development in Unity.
 author: hferrone
 ms.author: alexturn
@@ -8,10 +8,9 @@ ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, augmented reality, virtual reality, mixed reality headsets, learn, tutorial, getting started
 ---
 
-
 # Mixed Reality OpenXR supported features in Unity
 
-The **Mixed Reality OpenXR Plugin** package is an extension of Unity's **OpenXR Plugin** and supports a suite of features for HoloLens 2 and Windows Mixed Reality headsets. Before continuing, make sure that you've installed **Unity 2020.2** or later, **OpenXR Plugin version 0.1.2** or later, and your Unity project is [configured for OpenXR](openxr-getting-started.md).
+The **Mixed Reality OpenXR Plugin** package is an extension of Unity's **OpenXR Plugin** and supports a suite of features for HoloLens 2 and Windows Mixed Reality headsets. Before continuing, make sure that you've installed **Unity 2020.2** or later, **OpenXR Plugin version 0.1.3** or later, and your Unity project is [configured for OpenXR](openxr-getting-started.md).
 
 ## What's supported
 
@@ -28,24 +27,28 @@ The following features are currently supported:
 * Mixed Reality Capture using 3rd eye rendering through PV camera.
 * Supports ["Play" to HoloLens 2 with the Holographic Remoting app](#holographic-remoting-in-unity-editor-play-mode), allowing developers to debug scripts without building and deploying to the device.
 * Compatible with MRTK Unity 2.5.3 and newer through [MRTK OpenXR provider support](openxr-getting-started.md#using-mrtk-with-openxr-support).
-* Compatible with Unity [ARFoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) or later
+* Compatible with Unity [ARFoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) or later.
+* (Added in 0.1.3) Supports [desktop app Holographic Remoting](#holographic-remoting-in-desktop-app) from a built and deployed Windows Standalone app.
 
-## Holographic Remoting in Unity Editor play mode
+## Holographic Remoting setup
 
-Building a UWP Unity project in Visual Studio project and then packaging and deploying it to a HoloLens 2 device can take some time. One solution is to enable the Holographic Editor Remoting, which lets you debug your C# script using “Play” mode directly to a HoloLens 2 device over your network. This scenario avoids the overhead of building and deploying a UWP package to remote device.
-
-1. First, you need to [install the Holographic Remoting Player app](https://www.microsoft.com/store/productId/9NBLGGH4SV40) from Store on your HoloLens 2
+1. First, you need to [install the Holographic Remoting Player app](https://www.microsoft.com/store/productId/9NBLGGH4SV40) from the Microsoft Store on your HoloLens 2
 2. Run the Holographic Remoting Player app on HoloLens 2 and you'll see the version number and IP address to connect to
     * You'll need v2.4 or later to work with the OpenXR plugin
 
     ![Screenshot of the Holographic Remoting Player running in the HoloLens](images/openxr-features-img-01.png)
 
-3. Open **Edit -> Project Settings**, navigate to **XR plug-in Management**, and check the **Windows Mixed Reality feature set** box:
+## Holographic Remoting in Unity Editor play mode
+
+Building a UWP Unity project in Visual Studio project and then packaging and deploying it to a HoloLens 2 device can take some time. One solution is to enable the Holographic Editor Remoting feature, which lets you debug your C# script using “Play” mode directly to a HoloLens 2 device over your network. This scenario avoids the overhead of building and deploying a UWP package to remote device.
+
+1. Follow the steps in [Holographic Remoting setup](#holographic-remoting-setup)
+2. Open **Edit -> Project Settings**, navigate to **XR plug-in Management**, and check the **Windows Mixed Reality feature set** box:
 
     ![Screenshot of project settings panel open in the Unity Editor with XR Plug-in management highlighted](images/openxr-features-img-02.png)
 
-4. Expand the **Features** section under **OpenXR** and select **Show All**
-5. Check the **Holographic Editor Remoting** checkbox and input the IP address you get from the Holographic Remoting app:
+3. Expand the **Features** section under **OpenXR** and select **Show All**
+4. Check the **Holographic Editor Remoting** checkbox and input the IP address you get from the Holographic Remoting app:
 
     ![Screenshot of project settings panel open in the Unity Editor with Features highlighted](images/openxr-features-img-03.png)
 
@@ -53,6 +56,56 @@ Now you can click the “Play” button to play your Unity app into the Holograp
 
 > [!NOTE]
 > As of version 0.1.0, the Holographic Remoting runtime doesn’t support Anchors, and ARAnchorManager functionalities will not work through remoting.  This feature is coming in future releases.
+
+## Holographic Remoting in desktop app
+
+> [!NOTE]
+> Windows Standalone app remoting support was added in the 0.1.3 package release.
+> As of version 0.1.3, this feature doesn’t support UWP builds.
+
+1. Follow the steps in [Holographic Remoting setup](#holographic-remoting-setup)
+2. Open **Edit -> Project Settings**, navigate to **XR plug-in Management**, and check the **Windows Mixed Reality feature set** box. Also, uncheck **Initialize XR on Startup**:
+
+    ![Screenshot of project settings panel open in the Unity Editor with Initialize XR on Startup unchecked](images/openxr-features-img-02-app.png)
+
+3. Expand the **Features** section under **OpenXR** and select **Show All**
+4. Check the **Holographic App Remoting** checkbox:
+
+    ![Screenshot of project settings panel open in the Unity Editor with app remoting enabled](images/openxr-features-img-03-app.png)
+
+5. Next, write some code to set the remoting configuration and trigger XR initialization. The sample app distributed with the [Mixed Reality OpenXR Plugin](openxr-getting-started.md#hololens-2-samples) contains AppRemoting.cs, which shows an example scenario for connecting to a specific IP address at runtime. Deploying the sample app to a local machine at this point will display an IP address input field with a connect button. Typing an IP address and clicking Connect will initialize XR and attempt to connect to the target device:
+
+    ![Screenshot of sample app displaying example app remoting UI](images/openxr-sample-app-remoting.png)
+
+6. To write custom connection code, call `Microsoft.MixedReality.OpenXR.Remoting.AppRemoting.Connect` with a filled-in `RemotingConfiguration`. The sample app exposes this in the inspector and shows how to fill in the IP address from a text field. Calling `Connect` will set the configuration and automatically initialize XR, which is why it must be called as a coroutine:
+
+    ``` cs
+    StartCoroutine(Remoting.AppRemoting.Connect(remotingConfiguration));
+    ```
+
+7. While running, you can obtain the current connection state with the `AppRemoting.TryGetConnectionState` API, and optionally disconnect and de-initialize XR using `AppRemoting.Disconnect()`. This could be used to disconnect and reconnect to a different device within the same app session. The sample app provides a tappable cube which will disconnect the remoting session if tapped.
+
+### Migration from previous APIs
+
+#### UnityEngine.XR.WSA.HolographicRemoting
+
+From the sample code on [Unity's docs](https://docs.unity3d.com/2018.4/Documentation/ScriptReference/XR.WSA.HolographicRemoting.html):
+
+| XR.WSA.HolographicRemoting | OpenXR.Remoting.AppRemoting |
+| ---- | ---- |
+| `HolographicRemoting.Connect(String)` | `AppRemoting.Connect(RemotingConfiguration)` |
+| `HolographicRemoting.ConnectionState` | `AppRemoting.TryGetConnectionState(out ConnectionState, out DisconnectReason)`|
+| `StartCoroutine(LoadDevice("WindowsMR"))`| [N/A: Automatically happens when calling `AppRemoting.Connect`]  |
+
+#### Unity​Engine.​XR.​Windows​MR.WindowsMRRemoting
+
+| XR.​Windows​MR.WindowsMRRemoting | OpenXR.Remoting.AppRemoting |
+| ---- | ---- |
+| `WindowsMRRemoting.Connect()` | `AppRemoting.Connect(RemotingConfiguration)` |
+| `WindowsMRRemoting.Disconnect()` | `AppRemoting.Disconnect()` |
+| `WindowsMRRemoting.TryGetConnectionState(out ConnectionState)` and `WindowsMRRemoting.TryGetConnectionFailureReason(out ConnectionFailureReason)`| `AppRemoting.TryGetConnectionState(out ConnectionState, out DisconnectReason)`|
+| `WindowsMRRemoting.isAudioEnabled`, `WindowsMRRemoting.maxBitRateKbps`, `WindowsMRRemoting.remoteMachineName` | Passed into `AppRemoting.Connect` via the `RemotingConfiguration` struct |
+| `WindowsMRRemoting.isConnected` | `AppRemoting.TryGetConnectionState(out ConnectionState state, out _) && state == ConnectionState.Connected`
 
 ## Anchors and Anchor Persistence
 
@@ -160,4 +213,5 @@ The following issues and missing features are known with Mixed Reality OpenXR pl
 ## Troubleshooting
 
 When you suspend and resume a Unity app on HoloLens 2, the app can't correctly resume, which leads to 4 spinning dots in the HoloLens view.
+
 * Set **Depth submission Mode** to **None** in the OpenXR project settings as a workaround

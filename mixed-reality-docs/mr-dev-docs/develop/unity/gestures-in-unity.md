@@ -128,11 +128,11 @@ You can find an example of how we recommend to implement throwing [here](https:/
 
 Throwing will continue to improve with future Windows updates, and you can expect to find more information on it here.
 
-## Gesture and Motion Controllers in MRTK v2
+## Gesture and Motion Controllers in MRTK
 
 You can access gesture and motion controller from the input Manager.
-* [Gesture in MRTK v2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Gestures.html)
-* [Motion Controller in MRTK v2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Controllers.html)
+* [Gesture in MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/gestures.md)
+* [Motion Controller in MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/controllers.md)
 
 
 ## Follow along with tutorials

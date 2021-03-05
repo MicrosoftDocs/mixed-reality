@@ -8,7 +8,6 @@ ms.topic: article
 keywords: 2D app, UWP, flat app, HoloLens, immersive headset, app model, back button, app bar, dpi, resolution, scale, porting, HoloLens 1st gen, HoloLens 2, mixed reality headset, windows mixed reality headset, migration, Windows 10
 ---
 
-
 # Updating 2D UWP apps for Windows Mixed Reality
 
 Windows Mixed Reality lets your users see holograms as if they're right around them in the physical and digital world. At its core, both HoloLens and the Desktop PCs you attach immersive headset accessories to are Windows 10 devices. You're able to run almost all Universal Windows Platform (UWP) apps in the Store as 2D apps.

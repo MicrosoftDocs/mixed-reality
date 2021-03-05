@@ -164,7 +164,7 @@ After you're satisfied with your animation
 * Hands should only be taught once. Over teaching can cause confusion and messiness
 *	Bringing it into Unity, download the latest MRTK  here: https://github.com/microsoft/MixedRealityToolkit-Unity
     *	Material: Teaching_Hand2
-    *	Scripts: Refer to MRTK guidelines for <a href= "https://github.com/MixedRealityToolkit-Unity/blob/'HandCoachUX'/Documentation/README_HandCoach.md"> MRTK hand coach </a>
+    *	Scripts: Refer to MRTK guidelines for <a href= "https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/experimental/hand-coach.md"> MRTK hand coach </a>
     *	Per- project setting
         *	Scene set to UWP: Instruction can be found on the [Configure Unity Project](../develop/unity/Configure-Unity-Project.md) for Windows Mixed Reality
 

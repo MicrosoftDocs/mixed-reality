@@ -174,7 +174,7 @@
       href: unity/configure-unity-project.md
     - name: Using the Mixed Reality OpenXR Plugin
       href: unity/openxr-getting-started.md
-    - name: OpenXR plugin Supported Features
+    - name: OpenXR plugin supported features
       href: unity/openxr-supported-features.md
     - name: Mixed Reality Feature Tool
       items: 

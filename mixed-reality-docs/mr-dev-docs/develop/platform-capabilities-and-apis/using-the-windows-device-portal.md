@@ -60,7 +60,7 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 > If you're having issues with USB connectivity double check that the USB Device Connectivity optional component is installed as part of your **[Visual Studio tool package](../install-the-tools.md#installation-checklist)**.
 
 2. Connect your HoloLens to your PC with a micro-USB cable for HoloLens (1st Gen) or USB-C for HoloLens 2.
-3. From a web browser on your PC, go to [https://127.0.0.1:10080](https://127.0.0.1:10080).
+3. From a web browser on your PC, go to [http://127.0.0.1:10080](http://127.0.0.1:10080).
 
 ### Moving files over USB
 

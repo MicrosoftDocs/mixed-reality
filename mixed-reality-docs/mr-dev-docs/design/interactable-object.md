@@ -36,19 +36,19 @@ For any objects that user can interact with gaze, hand ray, and motion controlle
 
 :::row:::
     :::column:::
-       ![interactibleobject-states-default](images/interactibleobject-states-default.jpg)<br>
+       ![Interactable object with default state](images/interactibleobject-states-default.jpg)<br>
        **Default (Observation) state**<br>
         Default idle state of the object.
        The cursor isn't on the object. Hand isn't detected.
     :::column-end:::
     :::column:::
-       ![interactibleobject-states-targeted](images/interactibleobject-states-targeted.jpg)<br>
+       ![Interactable object with target and hover state](images/interactibleobject-states-targeted.jpg)<br>
         **Targeted (Hover) state**<br>
         When the object is targeted with gaze cursor, finger proximity or motion controller's pointer.
         The cursor is on the object. Hand is detected, ready.
     :::column-end:::
     :::column:::
-       ![interactibleobject-states-pressed](images/interactibleobject-states-pressed.jpg)<br>
+       ![Interactable object with pressed state](images/interactibleobject-states-pressed.jpg)<br>
        **Pressed state**<br>
         When the object is pressed with an air tap gesture, finger press or motion controller's select button.
         The cursor is on the object. Hand is detected, air tapped.
@@ -65,15 +65,15 @@ Here's what these states look like on a **holographic button**:
 
 :::row:::
     :::column:::
-       ![interactibleobject-states-default](images/MRTK_InteractableState-default.jpg)<br>
+       ![Holographic button in default state](images/MRTK_InteractableState-default.jpg)<br>
        **Default (Observation) state**<br>
     :::column-end:::
     :::column:::
-       ![interactibleobject-states-targeted](images/MRTK_InteractableState-targeted.jpg)<br>
+       ![Holographic button in target and hover state](images/MRTK_InteractableState-targeted.jpg)<br>
         **Targeted (Hover) state**<br>
     :::column-end:::
     :::column:::
-       ![interactibleobject-states-pressed](images/MRTK_InteractableState-pressed.jpg)<br>
+       ![Holographic button in pressed state](images/MRTK_InteractableState-pressed.jpg)<br>
        **Pressed state**<br>
     :::column-end:::
 :::row-end:::
@@ -259,12 +259,12 @@ When creating buttons for direct interaction, we recommend a larger minimum size
 
 In **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can use the script [**Interactable**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) to make objects respond to various types of input interaction states. It supports various types of themes that allow you define visual states by controlling object properties such as color, size, material, and shader.
 
-* [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
-* [Button](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
+* [Interactable](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/interactable.md)
+* [Button](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/button.md)
 * [Hand interaction examples scene](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
 
 MixedRealityToolkit's Standard shader provides various options such as **proximity light** that helps you create visual and audio cues.
-* [MRTK Standard Shader](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Documentation/README_MRTKStandardShader.md)
+* [MRTK Standard Shader](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/rendering/mrtk-standard-shader.md)
 
 
 <br>
