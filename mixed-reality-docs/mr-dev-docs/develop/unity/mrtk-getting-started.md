@@ -17,7 +17,7 @@ keywords: Windows Mixed Reality, test, Mixed Reality Toolkit, MRTK version 2, MR
 
 MRTK is an amazing open-source toolkit that has been around since the HoloLens was first released. The toolkit wouldn't be where it is today without the hard work of our contributing developer community. Over the past three years, we've listened to the feedback of our developer community, and built MRTK v2 to take the biggest concerns into account.  
 
-MRTK for Unity is an open-source, cross-platform development kit for mixed reality applications. The easiest way to install the toolkit is with our new Mixed Reality Feature Tool application. Follow our [installation and usage instructions](welcome-to-mr-feature-tool.md) and select the **Mixed Reality Toolkit Foundation** package in the Mixed Reality Toolkit category. 
+MRTK for Unity is an open-source, cross-platform development kit for mixed reality applications. The easiest way to install the toolkit is with our new Mixed Reality Feature Tool application. Follow our [installation and usage instructions](welcome-to-mr-feature-tool.md) and select the **Mixed Reality Toolkit Foundation** package in the Mixed Reality Toolkit category.
 
 MRTK for Unity provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. MRTK version 2 intends to speed up application development for Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and OpenVR platform. The project is aimed at reducing barriers to entry, creating mixed reality applications, and contributing back to the community as we all grow.
 
@@ -25,11 +25,11 @@ MRTK for Unity provides a cross-platform input system, foundational components, 
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCG]
 
-Take a look at [MRTK's documentation](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/) for more feature details.
+Take a look at [MRTK's documentation](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/) for more feature details.
 
 ## New with MRTK v2
 
-We want to stress our commitment to these platform tools.  In fact, we used MRTK version 2 to develop our inbox experiences, such as the out-of-box setup experience (OOBE) and our Mixed Reality Tips application. You can also expect to see new HoloLens 2 capabilities first exposed through MRTK because we believe it’s the best way to develop on our platform. 
+We want to stress our commitment to these platform tools.  In fact, we used MRTK version 2 to develop our inbox experiences, such as the out-of-box setup experience (OOBE) and our Mixed Reality Tips application. You can also expect to see new HoloLens 2 capabilities first exposed through MRTK because we believe it’s the best way to develop on our platform.
 
 ### Modular
 
@@ -48,5 +48,5 @@ Working with mobile platforms, we constructed it with performance in mind.  This
 * [Install the tools](../install-the-tools.md)
 * [Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md)
 * [Developing with MRTK for Unity](unity-development-overview.md)
-* [MRTK - Documentation home](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/)
-* [Porting from HoloToolkit/MRTK to MRTK version 2 (GitHub)](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/updates-deployment/hrtk-to-mrtk-porting-guide.md)
+* [MRTK - Documentation home](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/)
+* [Porting from HoloToolkit/MRTK to MRTK version 2](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/updates-deployment/htk-to-mrtk-porting-guide)
