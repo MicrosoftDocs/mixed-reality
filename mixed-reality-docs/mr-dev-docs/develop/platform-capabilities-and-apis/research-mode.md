@@ -101,7 +101,7 @@ Once you've restarted the device, the applications loaded through the **Device P
 *Research Mode window in the HoloLens Device Portal*
 
 > [!IMPORTANT]
-> Research Mode for HoloLens 2 is available beginning with build 19041.1356. If you need access in an earlier build, sign up for our [Insider Preview](/hololens/hololens-insider) program.
+> Research Mode for HoloLens 2 is available beginning with build 19041.1364 . If you need access in an earlier build, sign up for our [Insider Preview](/hololens/hololens-insider) program. You can find more details in the [Research Mode GitHub repository](https://github.com/microsoft/HoloLens2ForCV).
 
 ### Using sensor data in your apps
 
