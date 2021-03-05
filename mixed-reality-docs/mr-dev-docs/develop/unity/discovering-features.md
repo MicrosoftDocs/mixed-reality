@@ -1,6 +1,6 @@
 ---
 title: Discovering and acquiring features
-description: Learn and download Mixed Reality features.
+description: Discover and download Mixed Reality features.
 author: davidkline-ms
 ms.author: v-hferrone
 ms.date: 03/04/2021
