@@ -26,6 +26,9 @@ When asked, the [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedRealit
 
 ## Setup
 
+> [!IMPORTANT]
+> Scene Understanding is only supported on HoloLens 2 and Unity 2019.4 and higher.
+
 1. Ensure the platform is set to UWP in build settings.
 1. Acquire the Scene Understanding package via [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool).
 
@@ -36,6 +39,9 @@ The quickest way to get started with Scene Understanding is to check out the sam
 ### Scene Understanding sample scene
 
 In Unity, use the Project Explorer to open the scene file in `Examples/Experimental/SceneUnderstanding/Scenes/SceneUnderstandingExample.unity` and press play!
+
+> [!IMPORTANT]
+> When using the Mixed Reality Feature Tool or otherwise importing via UPM, please import the Demos - SpatialAwareness sample before importing the Experimental - SceneUnderstanding sample due to a dependency issue. Please see [this GitHub issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431) for more information.
 
 The scene demonstrates the following:
 
@@ -51,9 +57,9 @@ The scene demonstrates the following:
 
 Select the 'MixedRealityToolkit' game object and check the inspector.
 
-![scene understanding location in heirarchy](../images/spatial-awareness/MRTKHierarchy.png)
+![scene understanding location in hierarchy](../images/spatial-awareness/MRTKHierarchy.png)
 
-![mrkt location in inspector](../images/spatial-awareness/MRTKLocation.png)
+![MRTK location in inspector](../images/spatial-awareness/MRTKLocation.png)
 
 These options will allow one to configure the `WindowsSceneUnderstandingObserver`.
 
@@ -75,7 +81,7 @@ Turning on *Instantiate Prefabs*, will demonstrate creating objects that size to
 
 Build and deploy to HoloLens in the standard way. Once running, a number of buttons should appear to play with the features.
 
-Note, their are some pit falls in making queries to the observer. Misconfiguration of a fetch request result in your event payload not containing the expected data. For example, if one dosen't request quads, then no occlusion mask textures will be present. Like wise, no world mesh will appear if the observer is not configured to request meshes. The `DemoSceneUnderstandingController` script takes care of some of these dependencies, but not all.
+Note, their are some pit falls in making queries to the observer. Misconfiguration of a fetch request result in your event payload not containing the expected data. For example, if one doesn't request quads, then no occlusion mask textures will be present. Like wise, no world mesh will appear if the observer is not configured to request meshes. The `DemoSceneUnderstandingController` script takes care of some of these dependencies, but not all.
 
 Saved scene files can be accessed through the [device portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) at `User Folders/LocalAppData/[APP_NAME]/LocalState/PREFIX_yyyyMMdd_hhmmss.bytes`. These scene files can be used in editor by specifying them in the observer profile found in the inspector.
 
