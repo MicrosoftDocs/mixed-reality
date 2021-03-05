@@ -82,7 +82,7 @@ The following use cases describe some interactions that are possible with eye tr
 These use cases aren't yet part of the Holographic Shell experience (that is, the interface that you see when you start up your HoloLens 2).
 You can try some of them in the [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html), which provides several interesting and powerful examples for using eye tracking, such as quick and effortless eye-supported target selections, and automatically scrolling through text based on what the user looks at. 
 
-### User intent	   
+### User intent
 
 Information about where and what a user looks at provides a powerful **context for other inputs**, such as voice, hands, and controllers.
 This can be used for various tasks.
@@ -108,14 +108,13 @@ Other use cases for _implicit actions_ may include:
 - **Smart notifications:** Ever get annoyed by notifications popping up right where you're looking? Taking into account what a user is paying attention to, you can make this experience better by offsetting notifications from where the user is currently gazing. This limits distractions and automatically dismisses them once the user is finished reading. 
 - **Attentive holograms:** Holograms that subtly react when being gazed upon. This can range from slightly glowing UI elements, a slowly blooming flower to a virtual dog starting to look back at the user and wagging its tail. This interaction might provide an interesting sense of connectivity and satisfaction in your application.
 
-### Attention tracking	 
+### Attention tracking
 
 Information on where or what users look at can be an immensely powerful tool. It can help assess usability of designs and identify problems in workflows to make them more efficient.
 Eye tracking visualization and analytics are a common practice in various application areas. 
 With HoloLens 2, we provide a new dimension to this understanding as 3D holograms can be placed in real-world contexts and assessed accordingly. 
 The [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html) provides basic examples for logging and loading eye tracking data and how to visualize them.
 Microsoft is dedicated to facilitating innovation while ensuring that users have an informed and transparent experience with how their eye tracking information is used.  We'll work with our developers and UX teams to provide guidance for third parties to ensure that experiences are centered around the user.  
-
 
 Other applications in this area may include: 
 -	**Remote eye-gaze visualization:** Remote eye-gaze visualizations: Visualize what remote collaborators are looking at, to be able to provide immediate feedback and facilitate more accurate information processing.
@@ -156,19 +155,19 @@ This can be because of different reasons from which the most common are listed b
 * The user skipped the [calibration](/hololens/hololens-calibration).	
 * The user is calibrated, but decided to not give permission to your app to use their eye tracking data.	
 * The user has unique eyeglasses or some eye condition that the system doesn't yet support.	
-* External factors inhibiting reliable eye tracking such as smudges on the HoloLens visor or eyeglasses, intense direct sunlight, and occlusions because of hair in front of the eyes.	
+* External factors inhibiting reliable eye tracking such as smudges on the HoloLens visor or eyeglasses, intense direct sunlight, and occlusions because of hair in front of the eyes.
 
 Developers should ensure that there's appropriate fallback support for these users. 
 On the [Eye Tracking in DirectX](../develop/native/gaze-in-directx.md#fallback-when-eye-tracking-isnt-available) page, we explain the APIs required to detect whether eye tracking data is available. 
 
 While some users may have consciously decided to revoke,  access to their eye tracking data and are ok with the trade-off of an inferior user experience to the privacy of not providing access to their eye tracking data, in some cases this may be unintentional. If your app uses eye tracking, and this is an important part of the experience, we recommend clearly communicating this to the user. 	
 
-Kindly informing the user why eye tracking is critical for your application (maybe even listing some enhanced features) to experience the full potential of your application, can help the user to better understand what they're giving up. 	
+Kindly informing the user why eye tracking is critical for your application (maybe even listing some enhanced features) to experience the full potential of your application, can help the user to better understand what they're giving up. 
 Help the user identify why eye tracking may not be working (based on the above checks) and offer some suggestions to quickly troubleshoot potential issues. 
-	
-For example, if you can detect that the system supports eye tracking, the user is calibrated and has even given their permission, yet no eye tracking data is received, then this may point to some other issues such as smudges or the eyes being occluded. 	
 
-There are rare cases of users for whom eye tracking may not work. 	
+For example, if you can detect that the system supports eye tracking, the user is calibrated and has even given their permission, yet no eye tracking data is received, then this may point to some other issues such as smudges or the eyes being occluded. 
+
+There are rare cases of users for whom eye tracking may not work. 
 Hence, please be respectful of that by allowing to dismiss or even disable reminders for enabling eye tracking in your app.
 
 ### Fall back for apps using eye-gaze as a primary input pointer

@@ -24,7 +24,7 @@ Use the following checkpoints to bring your Unity games and applications into th
 
 ### 1. Getting started
 
-There are a small set of Unity settings you'll need to manually change for Windows Mixed Reality and VR developoment. These are broken down into two categories: per-project and per-scene. By the end of this section, you'll have the tools and project settings to start creating your own apps!
+There are a small set of Unity settings you'll need to manually change for Windows Mixed Reality and VR development. These are broken down into two categories: per-project and per-scene. By the end of this section, you'll have the tools and project settings to start creating your own apps!
 
 |  Checkpoint  |  Outcome  |
 | --- | --- |
