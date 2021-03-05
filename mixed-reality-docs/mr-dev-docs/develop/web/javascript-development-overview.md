@@ -13,6 +13,8 @@ keywords: JavaScript, WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens,
 
 # JavaScript development overview
 
+JavaScript is one of the most popular programming languages in the world, it is simple and lightweight programming language used everywhere on the web. Leverage the power of your javascript and web skills to create more engaging Mixed Reality experiences.
+
 ## Mixed Reality applications on the web
 
 Mixed Reality features are available on the web by the use of [WebXR Device APIs](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API) and [deprecated WebVR APIs](webxr-overview.md). For browsers that do not support full WebXR features, you can add [WebXR Polyfills](https://github.com/immersive-web/webxr-polyfill) to your website.
