@@ -8,7 +8,6 @@ ms.topic: article
 keywords: OpenXR, Khronos, BasicXRApp, DirectX, native, native app, custom engine, middleware
 ---
 
-
 # OpenXR
 
 <img align="right" src="images/openxr.png" alt="OpenXR logo">

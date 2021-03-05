@@ -13,6 +13,18 @@ keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reali
 > [!IMPORTANT]
 > This guidance is specific to Holographic Remoting on HoloLens 2.
 
+## Version 2.5.0 (February 12, 2021) <a name="v2.5.0"></a>
+* Holographic Remoting using the [OpenXR API](../native/openxr.md) now supports:
+  * XR_MSFT_spatial_anchor extension. This extension allows an application to create spatial anchors, which are arbitrary freespace points in the user’s physical environment that will be tracked by the runtime.
+  * XR_MSFT_controller_model extension. This extension provides a mechanism to load GLTF models for controllers.
+  * Custom data channels as part of the XR_MSFT_holographic_remoting extension. An example for that is shown in the [OpenXR remote sample](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+* Improved synchronization between player and remote side. This allows dynamically changing pose and frame buffering which ensures that remote rendered content smoothly reaches the displays at the expected target frame rate.
+* Improved performance of the Holographic Remoting player available via the Microsoft Store. On HoloLens 2 the player now runs solid on 60 frames per second.
+* Optimized transmission of spatial surface meshes which can be queried via [SpatialSurfaceObserver](https://docs.microsoft.com/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) by a remote app.
+* Fixed an issue in which calling SpatialAnchorManager methods or releasing anchors caused exceptions on disconnect.
+* Fixed threading issue leading to crashes when closing PlayerContext or RemoteContext instances.
+* Lots of other bug fixes and stability improvements.
+
 ## Version 2.4.1 (January 22, 2021) <a name="v2.4.1"></a>
 
 * Fixed issue with SpatialAnchorManager::RequestStoreAsync not working reliably when called while connecting.
