@@ -43,7 +43,7 @@ Interactive Element is a simplified centralized entry point to the MRTK input sy
 
 The State Visualizer is an animation component that depends on Interactive Element.  This component creates Animation Clips, sets keyframes and generates an Animator State Machine. For more information see [State Visualizer Documentation](../features/experimental/interactive-element.md#state-visualizer-experimental)
 
-![FocusColorChange](../features/images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
+![StateVisualizerColorChangeOnFocus](../features/images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
 
 ### Teleportation with the teleport gesture now supported on all platforms
 
