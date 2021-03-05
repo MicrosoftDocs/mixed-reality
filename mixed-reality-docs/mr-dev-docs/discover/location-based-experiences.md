@@ -63,7 +63,7 @@ Skip installing apps from the Store - normal setup installs several Store apps i
 
 Show preview in full screen – Mixed Reality Portal will default to showing the headset preview in full-screen on the desktop PC while the headset is in use.  
 
-Hide New for your side panel – prevents the New for your panel from being expanded on launch of Mixed Reality Portal.  
+Hide New for you side panel – prevents the New for you panel from being expanded on launch of Mixed Reality Portal.  
 
 #### How to configure:  
 
