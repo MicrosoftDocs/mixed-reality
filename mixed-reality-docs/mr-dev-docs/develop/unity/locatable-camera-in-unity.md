@@ -22,7 +22,9 @@ Only a single operation can occur with the camera at a time. You can check with 
 
 ## Photo Capture
 
-**Namespace:** *UnityEngine.XR.WSA.WebCam*<br>
+**Namespace:**  
+*UnityEngine.XR.WSA.WebCam(Unity \~2018)  
+UnityEngine.Windows.WebCam(Unity 2019\~)*<br>
 **Type:** *PhotoCapture*
 
 The *PhotoCapture* type allows you to take still photographs with the Photo Video Camera. The general pattern for using *PhotoCapture* to take a photo is as follows:

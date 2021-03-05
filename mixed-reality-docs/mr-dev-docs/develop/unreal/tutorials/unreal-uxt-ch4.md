@@ -64,7 +64,7 @@ Your **Event Graph** should match the following screenshot:
 
 ![Spawn UXT Hand Interaction Actors](images/unreal-uxt/4-spawnactor.PNG)
 
-Both Uxt Hand Interaction Actors need owners and initial transform locations. The initial transform  doesn’t matter in this case because UX Tools will have the Hand Interaction Actors will jump to the virtual hands as soon as they're visible. However, the `SpawnActor` function requires a Transform input to avoid a compiler error, so you'll use the default values.
+Both Uxt Hand Interaction Actors need owners and initial transform locations. The initial transform doesn’t matter in this case because UX Tools will have the Hand Interaction Actors jump to the virtual hands as soon as they're visible. However, the `SpawnActor` function requires a Transform input to avoid a compiler error, so you'll use the default values.
 
 1. Drag and release the pin off one of the **Spawn Transform** pins to place a new node.
     * Search for the **Make Transform** node, then drag the **Return Value** to the other hand’s **Spawn Transform** so that both **SpawnActor** nodes are connected.
