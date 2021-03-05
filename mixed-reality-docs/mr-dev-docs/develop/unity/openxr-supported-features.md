@@ -19,7 +19,7 @@ The following features are currently supported:
 * Supports UWP applications for HoloLens 2, and optimize for HoloLens 2 application model.
 * Supports Win32 VR applications for Windows Mixed Reality headset with latest controller profiles and holographic app remoting.
 * World scale tracking using Anchors and Unbounded space.
-* [Anchor storage API to persist anchors](spatial-anchors-in-unity.md) to HoloLens 2 local storage.
+* [Anchor storage API to persist anchors](#anchors-and-anchor-persistence) to HoloLens 2 local storage.
 * [Motion controller and hand interactions](#motion-controller-and-hand-interactions), including the new HP Reverb G2 controller.
 * Articulated hand tracking using 26 joints and joint radius inputs.
 * Eye gaze interaction on HoloLens 2.
