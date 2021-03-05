@@ -29,6 +29,7 @@ The following features are currently supported:
 * Compatible with MRTK Unity 2.5.3 and newer through [MRTK OpenXR provider support](openxr-getting-started.md#using-mrtk-with-openxr-support).
 * Compatible with Unity [ARFoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) or later.
 * (Added in 0.1.3) Supports [desktop app Holographic Remoting](#holographic-remoting-in-desktop-app) from a built and deployed Windows Standalone app.
+* (Added in 0.1.4) Supports [QR code tracking](#qr-codes) on HoloLens2 through SpatialGraphNode
 
 ## Holographic Remoting setup
 
@@ -200,13 +201,19 @@ public static readonly InputFeatureUsage<Vector3> PointerPosition = new InputFea
 
 For information on using haptics in Unity’s XR Input system, documentation can be found at the [Unity Manual for Unity XR Input - Haptics](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html#Haptics).
 
+## QR codes
+
+HoloLens 2 can detect QR codes in the environment around the headset, establishing a coordinate system at each code's real-world location. You can find more details in our [QR code tracking](../platform-capabilities-and-apis/qr-code-tracking.md) documentation.  When using the OpenXR plugin, grab the [`SpatialGraphNodeId` from the QR API](../platform-capabilities-and-apis/qr-code-tracking.md#qr-api-reference) and use the `Microsoft.MixedReality.OpenXR.SpatialGraphNode` API to locate the QR code.
+
+For reference, we have a [QR tracking sample project on GitHub](https://github.com/yl-msft/QRTracking) with more a detailed usage explanation for the [`SpatialGraphNode` API](https://github.com/yl-msft/QRTracking/blob/main/SampleQRCodes/Assets/Scripts/SpatialGraphNodeTracker.cs).
+
 ## What's coming soon
 
 The following issues and missing features are known with Mixed Reality OpenXR plugin **version 0.1.0**. We're working on these and will release fixes and new features in upcoming releases.
 
 * **ARPlaneSubsystem** is not supported yet. **ARPlaneManager**, **ARRaycastManager**, and related API like **ARAnchorManager.AttachAnchor** are also not supported on HoloLens 2.
-* **Anchor** isn't supported by Holographic Remoting yet, but it's coming in the near future.
-* **Hand Mesh** tracking, **QR Codes**, and **XRMeshSubsystem** aren't supported yet.
+* **Anchor persistence** isn't supported by Holographic Remoting yet, but it's coming in the near future.
+* **Hand Mesh** tracking and **XRMeshSubsystem** aren't supported yet.
 * **Azure Spatial Anchors** support is coming in a future release.
 * **ARM64** is the only supported platform for HoloLens 2 apps. The **ARM** platform is coming in a future release.
 
