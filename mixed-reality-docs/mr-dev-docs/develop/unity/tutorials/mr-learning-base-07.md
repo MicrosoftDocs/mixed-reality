@@ -129,9 +129,6 @@ Then **uncheck** the checkbox next to all the components to make them **disabled
 > The Bounds Control visualization is created at runtime and, therefore, not visible before you enter Game mode.
 
 > [!NOTE]
->The BoundsControl component will automatically add the NearInteractionGrabbable component at runtime. Therefore, we do not need to add this component to grab the enclosed objects with tracked hands.
-
-> [!NOTE]
 >The Object Manipulator (Script) automatically adds Constraint Manager (Script)
 
 In the Hierarchy window, expand the Menu > **ButtonCollection** object to reveal the four buttons and rename the third button to **BoundsControl_Enable**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:

@@ -35,6 +35,16 @@ Initial support for Unity's OpenXR preview package and Microsoft's Mixed Reality
 
 Controllers for the HP Reverb G2 now work natively with MRTK.
 
+### Experimental Interactive Element + State Visualizer 
+
+Interactive Element is a simplified centralized entry point to the MRTK input system. It contains state management methods, event management and the state setting logic for Core Interaction States. For more information see [Interactive Element Documentation](../features/experimental/interactive-element.md).
+
+![InteractiveElementAddCoreState](../features/images/interactive-element/InEditor/Gifs/InspectorHighlightEditor.gif)
+
+The State Visualizer is an animation component that depends on Interactive Element.  This component creates Animation Clips, sets keyframes and generates an Animator State Machine. For more information see [State Visualizer Documentation](../features/experimental/interactive-element.md#state-visualizer-experimental)
+
+![StateVisualizerColorChangeOnFocus](../features/images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
+
 ### Teleportation with the teleport gesture now supported on all platforms
 
 Users can now use the teleport gesture to move around their play space across all platforms. To teleport with a controller on MR devices with default configurations, use the thumbstick. To teleport with
@@ -51,6 +61,7 @@ Experimental support of [Scene Understanding](https://docs.microsoft.com/windows
 > Scene Understanding is only supported on HoloLens 2 and Unity 2019.4 and higher.
 >
 > This feature requires the Scene Understanding package, which is now available via the [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool).
+> When using the Mixed Reality Feature Tool or otherwise importing via UPM, please import the Demos - SpatialAwareness sample before importing the Experimental - SceneUnderstanding sample due to a dependency issue. Please see [this GitHub issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431) for more information.
 
   ![Scene Understanding](images/SceneUnderstanding.gif)
 
@@ -68,6 +79,12 @@ Two new solvers are ready for use with mainline MRTK.
 
 The Hand Coach feature is now ready for use with mainline MRTK.
   ![Hand Coach Example](https://docs.microsoft.com/windows/mixed-reality/design/images/handcoach/airtap.gif)
+
+### Pulse Shader Graduated from Experimental 
+
+The Pulse Shader scripts have graduated from experimental. For more information see: [Pulse Shader Documentation](../features/rendering/pulse-shader.md)
+
+![MRTK_SpatialMesh_Pulse](https://user-images.githubusercontent.com/13754172/68261851-3489e200-fff6-11e9-9f6c-5574a7dd8db7.gif)
 
 
 ### Input Recording Service improvements

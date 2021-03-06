@@ -25,5 +25,7 @@ Join the Microsoft Mixed Reality Team at these upcoming events!
 | HoloLens & Mixed Reality Meetup|September 8, 2020|[Human perception and Mixed Reality](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Human-Perception-and-Mixed-Reality)|
 | Mixed Reality Speaker Series|September 22, 2020|[Kippy's Escape: An intro to Unreal & MRTK for HoloLens 2](../develop/unreal/unreal-kippys-escape.md)|
 | Mixed Reality Speaker Series|October 22, 2020|[Introduction to WebXR with BabylonJS](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Adding-Augmented-Reality-to-your-Typescript-Project)|
+| Mixed Reality Speaker Series|November 3, 2020|[Visual Effects in Mixed Reality](https://channel9.msdn.com/Shows/Mixed-Reality/Visual-Effects-in-Mixed-Reality)|
 | Mixed Reality Speaker Series|November 17, 2020|[Building the future: Whats new in MRTK](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Building-the-Future-Whats-New-in-the-Mixed-Reality-Toolkit)|
 | Mixed Reality Speaker Series|December 1, 2020|[Designing Holograms](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Making-of-Designing-Holograms)|
+| Mixed Reality Speaker Series|February 11, 2021|[One Day in MR: How Spatial Computing Effects Every Day Life](https://channel9.msdn.com/Shows/Mixed-Reality/One-Day-In-MR-How-Spatial-Computing-Effects-Every-Day-Life)|

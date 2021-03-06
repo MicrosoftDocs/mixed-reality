@@ -3,7 +3,7 @@ title: Welcome to the Mixed Reality Feature Tool
 description: Learn the basics of the MR Feature Tool for HoloLens and VR development.
 author: davidkline-ms
 ms.author: v-hferrone
-ms.date: 01/27/2021
+ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit, mixed reality headset, windows mixed reality headset, virtual reality headset, installation, Windows, HoloLens, emulator, unreal, openxr
@@ -28,13 +28,28 @@ Before you can run the Mixed Reality Feature Tool, you'll need:
 > [!NOTE]
 > The Mixed Reality Feature Tool currently only runs on Windows, but MacOS support is coming soon!
 
-## Download 
+## Download
 
 Once you have your environment set up:
 
 * [Download the latest version of the Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool) from the Microsoft Download Center.
 * When the download completes, unzip the file and save it to your desktop
     * We recommend creating a shortcut to the executable file for faster access
+
+## Changes in this release
+
+Version 1.0.2103 Beta includes the following fixes:
+
+* Improvements to download error detection.
+* Updates on how manifests are written to avoid failure to update correctly.
+* Escpaing has been removed from file paths in the project manifest.
+
+The following features have been added in this release:
+
+* The feature catalog is now cached. To check for new features and updates, please use the refresh button in Discovery.
+* Move project selection from the Import step to before Discovery.
+* Available packages are filtered by the project's specified Unity version.
+* The discovery view now displays currently installed packages.
 
 ## 1. Getting started
 
@@ -48,26 +63,43 @@ From the start page, you can:
 * Use the **question mark** button to launch the default web browser and display our documentation
 * Select **Start** to begin discovering feature packages
 
-## 2. Discovering and acquiring feature packages
+## 2. Selecting your Unity project
 
-The feature package catalog is retrieved as soon as you press Start. Features are grouped by category to make things easier to find. For example, the **Mixed Reality Toolkit** category has several features for you to choose from:
+To ensure that all discovered features are supported on your project's version of Unity, the fist step is to point the Mixed Reality Feature Tool to your project using the **ellipsis** button (to the left of the project path field).
+
+![Select the Unity project](images/FeatureToolSelectUnityProject.png)
+
+> [!NOTE]
+> The dialog that's displayed when browsing for the Unity project folder contains '_' as the file name. There must be a value for the file name to enable the folder to be selected.
+
+When you have located your project's folder, click the Open button to return to the Mixed Reality Feature Tool.
+
+> [!IMPORTANT]
+> The Mixed Reality Feature Tool performs validation to ensure that it has been directed to a Unity project folder. The folder must contain `Assets`, `Packages` and `Project Settings` folders.
+
+## 3. Discovering and acquiring feature packages
+
+> [!NOTE]
+> Version 1.0.2103 Beta now caches the feature catalog contents whenever the server is accessed. This change enables fast access to available features, at the expense of displaying the absolute latest data. To update the catalog, please use the **Refresh** button.
+
+Features are grouped by category to make things easier to find. For example, the **Mixed Reality Toolkit** category has several features for you to choose from:
 
 ![Discovery and acquisition](images/FeatureToolDiscovery.png)
 
+When the Mixed Reality Feature Tool recognizes previously imported feature(s), it displays a notification message by each.
+
+![Notification of imported feature](images/feature-tool-imported-note.png)
+
+
 Once you've made your choices, select **Get features** to fetch all the required packages from the catalog. For more information, please see [discovering and acquiring features](discovering-features.md).
 
-## 3. Importing feature packages
+## 4. Importing feature packages
 
 Following acquisition, the complete set of packages is presented, along with a list of required dependencies. If you need to change any feature or package selections, this is the time:
 
 ![Importing packages](images/FeatureToolImport.png)
 
 We highly recommend using the **Validate** button to ensure the Unity project can successfully import the selected features. After validation, you'll see a pop-up dialog with a success message or a list of identified issues.
-
-You also need to set the location of the target Unity project before you import. Use the **ellipsis** button to the left of the project path field to browse. When you're done navigating your file system, open the folder containing your target Unity project.
-
-> [!NOTE]
-> The dialog that's displayed when browsing for the Unity project folder contains '_' as the file name. There must be a value for the file name to enable the folder to be selected.
 
 Select **Import** to continue.
 
@@ -76,7 +108,7 @@ Select **Import** to continue.
 
 For more information, please see [importing features](importing-features.md).
 
-## 4. Reviewing and approving project changes
+## 5. Reviewing and approving project changes
 
 The final step is reviewing and approving the proposed changes to the manifest and project files:
 
@@ -88,9 +120,9 @@ The final step is reviewing and approving the proposed changes to the manifest a
 
 For more information, see [reviewing and approving project modifications](reviewing-changes.md).
 
-## 5. Project updated
+## 6. Project updated
 
-When the proposed changes are approved, your target Unity project is updated to reference the selected Mixed Reality features:
+When the proposed changes are approved, your target Unity project is updated to reference the selected Mixed Reality features.
 
 ![Project updated](images/FeatureToolProjectUpdated.png)
 

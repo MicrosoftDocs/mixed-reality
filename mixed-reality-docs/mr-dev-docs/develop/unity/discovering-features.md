@@ -1,9 +1,9 @@
 ---
 title: Discovering and acquiring features
-description: Learn and download Mixed Reality features.
+description: Discover and download Mixed Reality features.
 author: davidkline-ms
 ms.author: v-hferrone
-ms.date: 01/27/2021
+ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit, mixed reality headset, windows mixed reality headset, virtual reality headset, installation, Windows, HoloLens, emulator, unreal, openxr
@@ -46,8 +46,7 @@ Features are listed in their appropriate category. From left to right in the abo
 
 ## Refresh the feature catalog
 
-To check for new and updated features, click the refresh ![refresh button](images/RefreshButton.png) button. This will connect to the catalog site and retrieve the latest information.
-* Once the catalog has been read, the date and time of the last update will be displayed.
+To check for new and updated features, click the refresh ![refresh button](images/RefreshButton.png) button. This will connect to the catalog site and retrieve the latest information. Once the catalog has been read, the date and time of the last update will be displayed.
 
 ## Select features
 
@@ -68,7 +67,7 @@ Once downloading is complete, the Mixed Reality Feature Tool will move to the [i
 
 ## Going back to the previous step
 
-From **Discover features**, the Mixed Reality Feature Tool allows for navigating back to the beginning. Select **Go back** to start again.
+From **Discover features**, the Mixed Reality Feature Tool allows for navigating back to project selection. Select **Go back** to start again.
 
 ## See also
 
