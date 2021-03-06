@@ -25,7 +25,11 @@ A JavaScript implementation of the WebXR Device API, as well as the WebXR Gamepa
 
 ## JavaScript libraries to build Mixed Reality applications on the web
 
+The following list shows the JavaScript frameworks for building immersive experiences that currently dominate the market and are widely accepted and adopted by Mixed Reality javascript developers
+
 ## Babylon.js
+
+![BabylonJS Logo](images/babylon-js-logo.png)
 
 Babylon is a JavaScript 3D engine that makes developing 3D content and immersive applications easy. Before getting started with immersive applications, we recommend to learn the basics of Babylon.js development.
 
