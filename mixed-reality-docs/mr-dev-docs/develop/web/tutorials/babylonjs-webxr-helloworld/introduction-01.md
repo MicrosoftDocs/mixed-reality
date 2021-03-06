@@ -1,9 +1,9 @@
 ---
 title: Introduction to the BabylonJS and WebXR tutorials
-description: Complete this course to learn how to use javascript in a mixed reality application.
+description: Complete this course to learn how to use BabylonJS and create basic Mixed Reality application.
 author: bogenera
 ms.author: ayyonet
-ms.date: 10/02/2021
+ms.date: 05/03/2021
 ms.topic: article
 keywords: mixed reality, javascript, tutorial, BabylonJS, hololens, mixed reality, UWP, Windows 10
 ms.localizationpriority: high
@@ -23,7 +23,7 @@ This tutorial shows you how to create a basic Mixed Reality app using BabylonJS 
 ## Prerequisites
 
 * WebXR-supported browser
-<!-- Perhpas list the browsers explicitly? Microsoft Edge 2020 or later, Chrome 79, Firefox? -->
+<!-- Perhaps list the browsers explicitly? Microsoft Edge 2020 or later, Chrome 79, Firefox? -->
 * [BabylonJS](https://doc.babylonjs.com/divingDeeper/developWithBjs/frameworkVers) 4.2 or higher
 * [NodeJS](https://nodejs.org/)
 * [Git](https://git-scm.com/)
@@ -55,10 +55,6 @@ use any other editor of their choice, even the simplest Notepad.
 ```
 
 1. Thats' it, the hosting web page is ready. You can open it in any browser and ensure there are no errors shown, though no content as well.
-
-
-
-TBD
 
 > [!div class="nextstepaction"]
 > [Next Tutorial: 2. Setup a canvas](setup-canvas-02.md)
