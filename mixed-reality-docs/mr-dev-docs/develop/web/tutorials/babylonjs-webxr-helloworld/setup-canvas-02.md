@@ -3,7 +3,7 @@ title: Introduction to the BabylonJs and WebXR tutorials
 description: Learn how to setup BabylonJS web page.
 author: bogenera
 ms.author: ayyonet
-ms.date: 05/03/2021
+ms.date: 03/05/2021
 ms.topic: article
 keywords: mixed reality, javascript, tutorial, BabylonJS, hololens, mixed reality, UWP, Windows 10
 ms.localizationpriority: high
