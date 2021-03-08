@@ -56,11 +56,11 @@ use any other editor of their choice, even the simplest Notepad.
 
 1. Add a *canvas* html element inside the body to render contents of BabylonJS, as shown below. Note the canvas has id attribute, so that this html element can be accessed from JavaScript code later.
 
-```html
-<body>
-    <canvas id="renderCanvas"></canvas>
-</body>
-```
+    ```html
+    <body>
+        <canvas id="renderCanvas"></canvas>
+    </body>
+    ```
 
 1. That completes our hosting web page. At this point, the hosting web page is ready. You can open it in any browser and ensure there are no errors shown, though there is no immersive experience yet.
 
