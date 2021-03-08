@@ -17,7 +17,7 @@ This tutorial shows you how to create a basic Mixed Reality app using BabylonJS 
 > * Set up a development environment
 > * The API to create basic 3D elements  
 > * Create a new web page to display results
-> * Interact with 
+> * Interact with 3D elements
 > * Deploy and test the application in a HoloLens2 emulator
 
 ## Prerequisites
@@ -40,21 +40,29 @@ use any other editor of their choice, even the simplest Notepad.
 1. Create an empty file and save it as html page, for example index.html
 1. Create a basic html markup and reference the Babylon.js javascript file, as following:
 
+    ```html
+    <html>
+        <head>
+            <title>Babylon.js sample code</title>
+            <script src="https://preview.babylonjs.com/babylon.js"></script>
+            <style>
+                body { width: 100%;height: 100%;}
+            </style>
+        </head>
+    <body>
+    </body>
+    </html>
+    ```
+
+1. Add a *canvas* html element inside the body to render contents of BabylonJS, as shown below. Note the canvas has id attribute, so that this html element can be accessed from JavaScript code later.
+
 ```html
-<html>
-    <head>
-        <title>Babylon.js sample code</title>
-        <script src="https://preview.babylonjs.com/babylon.js"></script>
-        <style>
-            body { width: 100%;height: 100%;}
-        </style>
-    </head>
 <body>
+    <canvas id="renderCanvas"></canvas>
 </body>
-</html>
 ```
 
-1. Thats' it, the hosting web page is ready. You can open it in any browser and ensure there are no errors shown, though no content as well.
+1. That completes our hosting web page. At this point, the hosting web page is ready. You can open it in any browser and ensure there are no errors shown, though there is no immersive experience yet.
 
 > [!div class="nextstepaction"]
-> [Next Tutorial: 2. Setup a canvas](setup-canvas-02.md)
+> [Next Tutorial: 2. Setup a canvas](prepare-scene-02.md)

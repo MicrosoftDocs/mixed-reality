@@ -356,14 +356,20 @@
   items:
   - name: JavaScript development overview
     href: web/javascript-development-overview.md
-  - name: Tutorials
-    items:
-      - name: WebXR Hello World
-        href: web/tutorials/babylonjs-webxr-helloworld/introduction-01.md
   - name: WebXR
     href: web/webxr-overview.md
   - name: WebVR
     href: web/webvr-overview.md
+  - name: Tutorials
+    items:
+      - name: Hello World using BabylonJS
+        items:
+        - name: Introduction
+          href: web/tutorials/babylonjs-webxr-helloworld/introduction-01.md
+        - name: Create scene with basic 3D object
+          href: web/tutorials/babylonjs-webxr-helloworld/prepare-scene-02.md
+        - name: Interact with 3D object
+          href: web/tutorials/babylonjs-webxr-helloworld/interact-03.md
 - name: Native
   items:
   - name: Native development overview

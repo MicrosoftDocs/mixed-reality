@@ -17,6 +17,18 @@ TBD
 
 TBD
 
+## Test application locally
+
+TBD
+
+## Run on emulator
+
+TBD
+
+## Deploy to HoloLens2
+
+TBD: research how??
+
 ## Takeaways
 
 TBD
