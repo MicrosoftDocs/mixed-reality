@@ -144,7 +144,7 @@ In the MRTK Project Configurator window, expand the **Modify Configurations** se
 
 In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window:
 
-In the Project Settings window, select **Player** > **XR Settings** and check the **Virual Reality Supported** checkbox then click the **+** icon, and select Windows Mixed Reality to add the Windows Mixed Reality SDK:
+In the Project Settings window, select **Player** > **XR Settings** and check the **Virtual Reality Supported** checkbox then click the **+** icon, and select Windows Mixed Reality to add the Windows Mixed Reality SDK:
 
 ![Unity XR Settings with add Windows Mixed Reality SDK selected](images/mr-learning-base/base-02-section5-step2-4.png)
 
