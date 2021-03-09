@@ -44,8 +44,8 @@ In the Speech > **Speech Commands** section, click the **+ Add a New Speech Comm
 
 * Enable Indicator
 * Enable Tap to Place
-* Enable Bounding Box
-* Disable Bounding Box
+* Enable Bounds Control
+* Disable Bounds Control
 
 ![Adding new speech commands](images/mr-learning-base/base-09-section2-step1-2.png)
 
@@ -83,10 +83,10 @@ Expand **Element 0** and configure it as follows:
 
 Expand **Element 1** and configure it as follows:
 
-* In the **Keyword** field, enter **Enable Bounding Box**, to reference the Enable Bounding Box command you created in the previous section
+* In the **Keyword** field, enter **Enable Bounds Control**, to reference the Enable Bounds Control command you created in the previous section
 * Click the small **+** icon to add an event
 * From the Hierarchy window, assign the **RoverExplorer** object to the **None (Object)** field
-* From the **No Function** dropdown, select **BoundingBox** > **bool enabled** to update this property value when the event is triggered
+* From the **No Function** dropdown, select **BoundsControl** > **bool enabled** to update this property value when the event is triggered
 * Check the argument checkbox, so it is **checked**
 * Click the small **+** icon to add another event
 * From the Hierarchy window, assign the **RoverExplorer** object to the **None (Object)** field
@@ -97,10 +97,10 @@ Expand **Element 1** and configure it as follows:
 
 Expand **Element 2** and configure it as follows:
 
-* In the **Keyword** field, enter **Disable Bounding Box**, to reference the Disable Bounding Box command you created in the previous section
+* In the **Keyword** field, enter **Disable Bounds Control**, to reference the Disable Bounds Control command you created in the previous section
 * Click the small **+** icon to add an event
 * From the Hierarchy window, assign the **RoverExplorer** object to the **None (Object)** field
-* From the **No Function** dropdown, select **BoundingBox** > **bool enabled** to update this property value when the event is triggered
+* From the **No Function** dropdown, select **BoundsControl** > **bool enabled** to update this property value when the event is triggered
 * Verify that the argument checkbox is **unchecked**
 * Click the small **+** icon to add another event
 * From the Hierarchy window, assign the **RoverExplorer** object to the **None (Object)** field

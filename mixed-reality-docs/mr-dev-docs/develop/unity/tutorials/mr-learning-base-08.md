@@ -56,35 +56,34 @@ In the Hierarchy window, select the **MixedRealityToolkit** object, then in the 
 
 ## Adding eye-tracking to objects
 
-In the Hierarchy window, expand the RoverExplorer > **Buttons** object, then for each of the three child button objects, expand and select the SeeItSayItLabel > **TextMeshPro** object:
+In the Hierarchy window, expand the **RoverExplorer** > **Buttons**, then select all three of the child button objects:
 
-![Unity with TextMeshPro object selected](images/mr-learning-base/base-08-section4-step1-1.png)
+![Unity with Button object selected](images/mr-learning-base/base-08-section4-step1-1.png)
 
-With the three TextMeshPro objects still selected, in the Inspector window, use the **Add Component** button to add the following components to all the selected objects:
-
-* **Box Collider** component
-* **EyeTrackingTarget** component
+With all three Button objects still selected, in the Inspector window use the **Add Component** button to add the **EyeTrackingTarget** component to all the selected objects:
 
 ![Unity with TextMeshPro object selected and components added](images/mr-learning-base/base-08-section4-step1-2.png)
 
-In the Hierarchy window, select the **Hints** > SeeItSayItLabel > **TextMeshPro** object, then configure the **EyeTrackingTarget** component as follows:
+In the Hierarchy window, expand **RoverExplorer** > **Buttons** > **Hints** > **SeeItSayItLabel** > **TextMeshPro**
+
+Then in the Hierarchy window, select the **Hints** button object , and configure the **EyeTrackingTarget** component as follows:
 
 * In the **On Look At Start ()** event section
   * Click the small **+** icon to add another event
-  * Assign the object itself, i.e. the same **TextMeshPro** object, to the **None (Object)** field
+  * Assign the  **TextMeshPro** object from the **Hints** button to the **None (Object)** field
   * From the **No Function** dropdown, select **TextMeshPro** > **float fontSize** to update this property value when the event is triggered
   * Set the argument to **0.06** to increase the current font size of 0.04 by 50%
 * In the **On Look Away ()** event section
   * Click the small **+** icon to add another event
-  * Assign the object itself, i.e. the same **TextMeshPro** object, to the **None (Object)** field
+  * Assign the  **TextMeshPro** object from the **Hints** button to the **None (Object)** field
   * From the **No Function** dropdown, select **TextMeshPro** > **float fontSize** to update this property value when the event is triggered
   * Set the argument to **0.04** to reset the font size back to 0.04
 
 ![Unity with Hints TextMeshPro object selected and EyeTrackingTarget component configured](images/mr-learning-base/base-08-section4-step1-3.png)
 
-**Repeat** this step for the **Explode** > SeeItSayItLabel > **TextMeshPro** object and the **Reset** > SeeItSayItLabel > **TextMeshPro** object.
+**Repeat** this step for **Explode** and **Reset** button object to configure eye tracking for remaining buttons.
 
-If you now enter Game mode and then press-and-hold the right mouse button while moving your mouse until the gaze hit's one of the labels, you will see the font size increase by 50% and reset back to its original size when looking away:
+If you now enter Game mode and then press-and-hold the right mouse button while moving your mouse until the gaze hit's one of the buttons, you will see the text font size increase by 50% and reset back to its original size when looking away:
 
 ![Unity Play mode split view with gaze hitting eye tracking target Explode button label](images/mr-learning-base/base-08-section4-step1-4.png)
 
