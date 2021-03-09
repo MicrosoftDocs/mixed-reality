@@ -21,9 +21,8 @@ This tutorial shows you how to create a basic Mixed Reality app using BabylonJS 
 > * Deploy and test the application in a HoloLens2 emulator
 
 ## Prerequisites
-
-* WebXR-supported browser
 <!-- Perhaps list the browsers explicitly? Microsoft Edge 2020 or later, Chrome 79, Firefox? -->
+* WebXR-supported browser, for example [Microsoft Edge](https://docs.microsoft.com/en-us/windows/mixed-reality/whats-new/new-microsoft-edge)
 * [BabylonJS](https://doc.babylonjs.com/divingDeeper/developWithBjs/frameworkVers) 4.2 or higher
 * [NodeJS](https://nodejs.org/)
 * [Git](https://git-scm.com/)
@@ -46,7 +45,7 @@ use any other editor of their choice, even the simplest Notepad.
             <title>Babylon.js sample code</title>
             <script src="https://preview.babylonjs.com/babylon.js"></script>
             <style>
-                body { width: 100%;height: 100%;}
+                body { width: 100%; height: 100%;}
             </style>
         </head>
     <body>

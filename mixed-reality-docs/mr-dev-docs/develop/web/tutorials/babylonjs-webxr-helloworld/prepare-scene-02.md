@@ -47,20 +47,49 @@ A scene is where all the contents will be displayed. There might be multiple sce
     var  engine = new BABYLON.Engine(canvas, true);
     ```
 
-1. The scene is not rendered by default (remember there might be multiple scenes and you control which scene is displayed at the moment). To render the scene add a call to the method *render* from within the *runRenderLoop* as shown below:
+1. The scene is not rendered by default (remember there might be multiple scenes and you control which scene is displayed at the moment). To render the scene add a call to the method *render* from within the *runRenderLoop*, so that the final script will look as follows:
+
     ```javascript
-    
+        var canvas = document.getElementById("renderCanvas");
+        var  engine = new BABYLON.Engine(canvas, true);
+
+        const createScene = function() {
+            const scene = new BABYLON.Scene(engine);
+            scene.clearColor = new BABYLON.Color3.Black;
+        }
+        var scene = createScene();
+
+        engine.runRenderLoop(function () {
+            scene.render();
+        });
     ```
 
-1. TBD
+1. Check the output in the browser. The browser window shows a blank page with javascript error in development console
+'Uncaught Error: No camera defined'. Now we have to add camera to scene.
 
 ## Add camera
 
-TBD
+1. For allow user input, a camera must be attached to the canvas. Let's add a camera that allows us to look around, i.e. can be rotated around object that we will add to the scene later. Add the following code to the *createScene* function:
+
+    ```javascript
+        const createScene = function() {
+            const scene = new BABYLON.Scene(engine);
+            scene.clearColor = new BABYLON.Color3.Black;
+
+            var longitude =  -Math.PI / 2;
+            var latitude = Math.PI / 3;
+            var radius = 4;
+            var position = BABYLON.Vector3.Zero();
+            const camera = new BABYLON.ArcRotateCamera("Camera", longitude, latitude, radius, position);
+            camera.attachControl(canvas, true);
+        }
+    ```
+
+1. Now if you check the output in the browser, you will see a black canvas. We are missing the light
 
 ## Set light
 
-TBD
+1. 
 
 ## Create ground
 
