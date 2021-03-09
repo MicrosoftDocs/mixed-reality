@@ -150,7 +150,7 @@ It works similarly to the RadialView solver, with additional controls to manage 
 ![Follow properties](../../images/solver/FollowExample.png)  
 *Follow properties*
 
-![Follow example scene](../../images/solver/FollowExampleScene.gif) 
+![Follow example scene](../../images/solver/FollowExampleScene.gif)  
 *Follow Example Scene (Assets/MRTK/Examples/Demos/Solvers/Scenes/FollowSolverExample.unity)*
 
 ### InBetween
@@ -215,7 +215,7 @@ The size of the indicator will shrink the closer the user is to capturing the *D
 ![Directional Indicator properties](../../images/solver/DirectionalIndicatorExample.png)  
 *Directional Indicator properties*
 
-![Directional Indicator example scene](../../images/solver/DirectionalIndicatorExampleScene.gif)
+![Directional Indicator example scene](../../images/solver/DirectionalIndicatorExampleScene.gif)  
 *Directional Indicator Example Scene (Assets/MRTK/Examples/Demos/Solvers/Scenes/DirectionalIndicatorSolverExample.unity)*
 
 ### Hand menu with HandConstraint and HandConstraintPalmUp
