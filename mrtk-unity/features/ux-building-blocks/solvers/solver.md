@@ -150,7 +150,7 @@ It works similarly to the RadialView solver, with additional controls to manage 
 ![Follow properties](../../images/solver/FollowExample.png)  
 *Follow properties*
 
-![Follow example scene](../../images/solver/FollowExampleScene.gif)
+![Follow example scene](../../images/solver/FollowExampleScene.gif) 
 *Follow Example Scene (Assets/MRTK/Examples/Demos/Solvers/Scenes/FollowSolverExample.unity)*
 
 ### InBetween
