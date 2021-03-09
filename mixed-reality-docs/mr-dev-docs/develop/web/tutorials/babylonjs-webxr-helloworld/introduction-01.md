@@ -22,7 +22,7 @@ This tutorial shows you how to create a basic Mixed Reality app using BabylonJS 
 
 ## Prerequisites
 <!-- Perhaps list the browsers explicitly? Microsoft Edge 2020 or later, Chrome 79, Firefox? -->
-* WebXR-supported browser, for example [Microsoft Edge](https://docs.microsoft.com/en-us/windows/mixed-reality/whats-new/new-microsoft-edge)
+* WebXR-supported browser, for example [Microsoft Edge](https://docs.microsoft.com/windows/mixed-reality/whats-new/new-microsoft-edge)
 * [BabylonJS](https://doc.babylonjs.com/divingDeeper/developWithBjs/frameworkVers) 4.2 or higher
 * [NodeJS](https://nodejs.org/)
 * [Git](https://git-scm.com/)

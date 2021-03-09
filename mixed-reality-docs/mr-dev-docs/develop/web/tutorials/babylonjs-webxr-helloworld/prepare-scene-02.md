@@ -56,12 +56,30 @@ A scene is where all the contents will be displayed. There might be multiple sce
         const createScene = function() {
             const scene = new BABYLON.Scene(engine);
             scene.clearColor = new BABYLON.Color3.Black;
+
+            return scene;
         }
         var scene = createScene();
 
         engine.runRenderLoop(function () {
             scene.render();
         });
+    ```
+
+## Add basic 3D element
+
+1. To add a cube, add the following code to the function *createScene*:
+
+
+    ```javascript
+        const createScene = function() {
+            const scene = new BABYLON.Scene(engine);
+            scene.clearColor = new BABYLON.Color3.Black;
+            
+            const box = BABYLON.MeshBuilder.CreateBox("box", {wrap: true});
+            
+            return scene;
+        }
     ```
 
 1. Check the output in the browser. The browser window shows a blank page with javascript error in development console
@@ -74,7 +92,7 @@ A scene is where all the contents will be displayed. There might be multiple sce
     ```javascript
         const createScene = function() {
             const scene = new BABYLON.Scene(engine);
-            scene.clearColor = new BABYLON.Color3.Black;
+            ...
 
             var longitude =  -Math.PI / 2;
             var latitude = Math.PI / 3;
@@ -82,6 +100,8 @@ A scene is where all the contents will be displayed. There might be multiple sce
             var position = BABYLON.Vector3.Zero();
             const camera = new BABYLON.ArcRotateCamera("Camera", longitude, latitude, radius, position);
             camera.attachControl(canvas, true);
+            
+            return scene;
         }
     ```
 
@@ -89,15 +109,60 @@ A scene is where all the contents will be displayed. There might be multiple sce
 
 ## Set light
 
-1. 
+1. There are four types of lights that can be used with a range of lighting properties: Point, Directional, Spot and Hemispheric Light. Let's add the ambient light (Hemispheric), as follows:
 
-## Create ground
+    ```javascript
+        const createScene = function() {
+            const scene = new BABYLON.Scene(engine);
+            ...
+            const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0));
+            
+            return scene;
+        }
+    ```
 
-TBD
+1. The final code of the web page will look as follows:
 
-## Add basic 3D element
+    ```html
+    <html>
+    <head>
+        <script src="https://preview.babylonjs.com/babylon.js"></script>
+    </head>
+    <body>
+        <canvas id="renderCanvas"></canvas>
+        <script>
+            var canvas = document.getElementById("renderCanvas");
+            var engine = new BABYLON.Engine(canvas, true);
+            
+            var createScene = function() {
+                const scene = new BABYLON.Scene(engine);
 
-TBD
+                var longitude =  -Math.PI / 2;
+                var latitude = Math.PI / 2;
+                var radius = 4;
+                var position = BABYLON.Vector3.Zero();
+                const camera = new BABYLON.ArcRotateCamera("Camera", longitude, latitude, radius, position);
+                camera.attachControl(canvas, true);
+                const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0));
+                
+                const box = BABYLON.MeshBuilder.CreateBox("box", {wrap: true});
+                
+                return scene;
+            };
+            
+            var scene = createScene();
+            engine.runRenderLoop(function(){
+                scene.render();
+            });
+    </script>
+    </body>
+    </html>
+    ```
+
+1. Check the output in the browser. You should see the cube and using the mouse you can rotate the camera around the cube and see the different faces of the cube:
+
+![Basic scene with cube](../images/hello-world-basic-scene.png)
+
 
 > [!div class="nextstepaction"]
 > [Next Tutorial: 4. Interact with object](interact-03.md)
