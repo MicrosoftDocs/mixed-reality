@@ -31,6 +31,10 @@ Initial support for Unity's OpenXR preview package and Microsoft's Mixed Reality
 >
 > Currently, it also only supports x64 and ARM64 builds.
 
+### Asset swap utility
+
+Swap multiple assets in a Unity scene with the new [Asset Swap utility](../features/tools/asset-swap-utility.md).
+
 ### HP Motion Controllers now supported with MRTK
 
 Controllers for the HP Reverb G2 now work natively with MRTK.
