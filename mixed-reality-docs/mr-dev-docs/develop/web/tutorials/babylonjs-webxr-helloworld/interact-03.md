@@ -89,15 +89,13 @@ In this tutorial, learn how to:
         }
     ```
 
-## Test application locally
+## Enable WebXR immersive experience
 
 TBD
 
-## Run on emulator
+## Run on HoloLens2 emulator
 
 TBD
-
-## Deploy to HoloLens2
 
 TBD: research how??
 

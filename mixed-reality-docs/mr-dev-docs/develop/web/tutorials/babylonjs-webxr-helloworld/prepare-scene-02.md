@@ -160,4 +160,4 @@ A scene is where all the contents will be displayed. There might be multiple sce
 
 
 > [!div class="nextstepaction"]
-> [Next Tutorial: 4. Interact with object](interact-03.md)
+> [Next Tutorial: 3. Interact with object](interact-03.md)
