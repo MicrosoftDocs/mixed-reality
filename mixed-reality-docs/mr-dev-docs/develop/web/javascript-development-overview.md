@@ -66,7 +66,7 @@ To learn more about BabylonNative, continue to this [tutorial](/tutorials/babylo
 Learn how to get started with our tutorials.
 
 > [!div class="nextstepaction"]
-> [Create your first "Hello World!" app)](tutorials/babylonjs-webxr-helloworld/introduction-01.md)
+> [Create your first "Hello World!" app](tutorials/babylonjs-webxr-helloworld/introduction-01.md)
 
 ## See Also
 

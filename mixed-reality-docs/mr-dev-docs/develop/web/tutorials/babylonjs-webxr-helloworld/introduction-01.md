@@ -32,7 +32,7 @@ This tutorial shows you how to create a basic Mixed Reality app using BabylonJS 
 To create this project from scratch, start with a Visual Studio Code (VSCode) project.
 
 > [!NOTE]
-> It is not mandatory to use only VSCode, it is for convenience only. More experienced javascript developers can
+> It is not mandatory to use VSCode, it is for convenience only. More experienced javascript developers can
 use any other editor of their choice, even the simplest Notepad.
 
 1. Either download the [BabylonJS](https://doc.babylonjs.com/divingDeeper/developWithBjs/frameworkVers) single file or use an online version. Alternatively you can clone an entire BabylonJS project from [GitHub](https://github.com/BabylonJS/Babylon.js)
@@ -44,9 +44,6 @@ use any other editor of their choice, even the simplest Notepad.
         <head>
             <title>Babylon.js sample code</title>
             <script src="https://preview.babylonjs.com/babylon.js"></script>
-            <style>
-                body { width: 100%; height: 100%;}
-            </style>
         </head>
     <body>
     </body>

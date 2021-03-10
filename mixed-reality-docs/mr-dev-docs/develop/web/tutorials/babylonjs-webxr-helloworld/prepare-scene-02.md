@@ -29,36 +29,51 @@ A scene is where all the contents will be displayed. There might be multiple sce
 
     ```html
     <canvas id="renderCanvas"></canvas>
-        <script type="text/javascript">
-            var engine = null; // will be added later
+    <script type="text/javascript">
+        var engine = null; // will be added later
 
-            const createScene = function() {
-                const scene = new BABYLON.Scene(engine);
-                scene.clearColor = new BABYLON.Color3.Black;
-                return scene;
-            }
-            var scene = createScene();
-        </script>
+        const createScene = function() {
+            const scene = new BABYLON.Scene(engine);
+            scene.clearColor = new BABYLON.Color3.Black;
+            return scene;
+        }
+        var scene = createScene();
+    </script>
     ```
 
 1. Note that the *engine* variable is set to null. We have to create an instance of BabylonJS web rendering engine that renders a scene and hooks events on the canvas. To create an instance of the engine, add the following code before the function *createScene*:
 
-    ```javascript
-    var canvas = document.getElementById("renderCanvas");
-    var  engine = new BABYLON.Engine(canvas, true);
+    ```html
+    <script type="text/javascript">
+        var canvas = document.getElementById("renderCanvas");
+        var engine = new BABYLON.Engine(canvas, true);
+
+        const createScene = function() {
+            const scene = new BABYLON.Scene(engine);
+            scene.clearColor = new BABYLON.Color3.Black;
+            return scene;
+        }
+        var scene = createScene();
+    </script>
     ```
 
 1. The scene is not rendered by default (remember there might be multiple scenes and you control which scene is displayed at the moment). To render the scene add a call to the method *render* from within the *runRenderLoop*, so that the final script will look as follows:
 
-    ```javascript
+    ```html
+    <script type="text/javascript">
         var canvas = document.getElementById("renderCanvas");
-        var  engine = new BABYLON.Engine(canvas, true);
-        ...
-        var scene = createScene();
+        var engine = new BABYLON.Engine(canvas, true);
 
+        const createScene = function() {
+            const scene = new BABYLON.Scene(engine);
+            scene.clearColor = new BABYLON.Color3.Black;
+            return scene;
+        }
+        var scene = createScene();
         engine.runRenderLoop(function () {
             scene.render();
         });
+    </script>
     ```
 
 ## Add basic 3D element
@@ -66,53 +81,59 @@ A scene is where all the contents will be displayed. There might be multiple sce
 1. To add a cube, add the following code to the function *createScene*:
 
     ```javascript
-        const createScene = function() {
-            const scene = new BABYLON.Scene(engine);
-            scene.clearColor = new BABYLON.Color3.Black;
-            
-            const box = BABYLON.MeshBuilder.CreateBox("box", {wrap: true});
-            
-            return scene;
-        }
+    const createScene = function() {
+        //code skipped for simplicity
+        ...
+        
+        const box = BABYLON.MeshBuilder.CreateBox("box", {wrap: true});
+        box.position.x = 0.5;
+        box.position.y = 1;
+        
+        //code skipped for simplicity
+        ...
+    }
     ```
 
 1. Check the output in the browser. The browser window shows a blank page with javascript error in development console
 'Uncaught Error: No camera defined'. Now we have to add camera to scene.
 
-## Add camera
+## Add a camera
 
 1. For allow user input, a camera must be attached to the canvas. Let's add a camera that allows us to look around, i.e. can be rotated around object that we will add to the scene later. Add the following code to the *createScene* function:
 
     ```javascript
         const createScene = function() {
-            const scene = new BABYLON.Scene(engine);
+            //code skipped for simplicity
             ...
 
             var longitude =  -Math.PI / 2;
             var latitude = Math.PI / 3;
-            var radius = 4;
-            var position = BABYLON.Vector3.Zero();
+            var radius = 10;
+            var position = new BABYLON.Vector3(-0.5, 0, -0.5);
             const camera = new BABYLON.ArcRotateCamera("Camera", longitude, latitude, radius, position);
             camera.attachControl(canvas, true);
             
-            return scene;
+            //code skipped for simplicity
+            ...
         }
     ```
 
 1. Now if you check the output in the browser, you will see a black canvas. We are missing the light
 
-## Set light
+## Set the light
 
 1. There are four types of lights that can be used with a range of lighting properties: Point, Directional, Spot and Hemispheric Light. Let's add the ambient light (Hemispheric), as follows:
 
     ```javascript
-        const createScene = function() {
-            const scene = new BABYLON.Scene(engine);
-            ...
-            const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0));
-            
-            return scene;
-        }
+    const createScene = function() {
+        //code skipped for simplicity
+        ...
+
+        const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0));
+        
+        //code skipped for simplicity
+        ...
+    }
     ```
 
 1. The final code of the web page will look as follows:
@@ -130,17 +151,20 @@ A scene is where all the contents will be displayed. There might be multiple sce
             
             var createScene = function() {
                 const scene = new BABYLON.Scene(engine);
+                scene.clearColor = new BABYLON.Color3.Black;
 
-                var longitude =  -Math.PI / 2;
-                var latitude = Math.PI / 2;
-                var radius = 4;
-                var position = BABYLON.Vector3.Zero();
+                var longitude =  -Math.PI/2;
+                var latitude = Math.PI/3;
+                var radius = 10;
+                var position = new BABYLON.Vector3(-0.5, 0, -0.5);
                 const camera = new BABYLON.ArcRotateCamera("Camera", longitude, latitude, radius, position);
                 camera.attachControl(canvas, true);
                 
                 const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0));
                 
                 const box = BABYLON.MeshBuilder.CreateBox("box", {wrap: true});
+                box.position.x = 0.5;
+                box.position.y = 1;
                 
                 return scene;
             };
@@ -149,7 +173,7 @@ A scene is where all the contents will be displayed. There might be multiple sce
             engine.runRenderLoop(function(){
                 scene.render();
             });
-    </script>
+        </script>
     </body>
     </html>
     ```
@@ -157,7 +181,6 @@ A scene is where all the contents will be displayed. There might be multiple sce
 1. Check the output in the browser. You should see the cube and using the mouse you can rotate the camera around the cube and see the different faces of the cube:
 
 ![Basic scene with cube](../images/hello-world-basic-scene.png)
-
 
 > [!div class="nextstepaction"]
 > [Next Tutorial: 3. Interact with object](interact-03.md)
