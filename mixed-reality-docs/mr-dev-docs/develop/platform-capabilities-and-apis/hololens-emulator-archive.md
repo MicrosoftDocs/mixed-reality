@@ -14,6 +14,8 @@ HoloLens Emulator (first gen) and HoloLens 2 Emulator builds install side by sid
 
 |  Build |  Release Date |  Notes |
 |----------|----------|----------|
+|  [HoloLens 2 Emulator build 10.0.19041.1140](https://go.microsoft.com/fwlink/?linkid=2156684) | March 9, 2021 | Windows Holographic, version 20H2 March 2021 Update.  For general HoloLens 2 release notes, see https://docs.microsoft.com/hololens/hololens-release-notes |
+|  [HoloLens 2 Emulator build 10.0.18362.1102](https://go.microsoft.com/fwlink/?linkid=2156989) | March 9, 2021 | Windows Holographic, version 1903 March 2021 Update.  For general HoloLens 2 release notes, see https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator build 10.0.19041.1136](https://go.microsoft.com/fwlink/?linkid=2154784) | February 9, 2021 | Windows Holographic, version 20H2 February 2021 Update.  For general HoloLens 2 release notes, see https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator build 10.0.18362.1098](https://go.microsoft.com/fwlink/?linkid=2154381) | February 9, 2021 | Windows Holographic, version 1903 February 2021 Update.  For general HoloLens 2 release notes, see https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator build 10.0.19041.1134](https://go.microsoft.com/fwlink/?linkid=2152389) | January 13, 2021 | Windows Holographic, version 20H2 January 2021 Update.  For general HoloLens 2 release notes, see https://docs.microsoft.com/hololens/hololens-release-notes |
