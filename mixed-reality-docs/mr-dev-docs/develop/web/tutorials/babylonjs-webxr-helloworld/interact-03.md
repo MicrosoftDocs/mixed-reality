@@ -128,7 +128,8 @@ In this tutorial, learn how to:
     }
     ```
 
-1. TBD
+1. The above code generates the following output:
+![WebXR scene](../images/hello-world-webxr-scene.png)
 
 ## Run on HoloLens2 emulator
 
