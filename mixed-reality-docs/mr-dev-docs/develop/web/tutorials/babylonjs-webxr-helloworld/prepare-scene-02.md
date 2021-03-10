@@ -35,6 +35,7 @@ A scene is where all the contents will be displayed. There might be multiple sce
             const createScene = function() {
                 const scene = new BABYLON.Scene(engine);
                 scene.clearColor = new BABYLON.Color3.Black;
+                return scene;
             }
             var scene = createScene();
         </script>
@@ -52,13 +53,7 @@ A scene is where all the contents will be displayed. There might be multiple sce
     ```javascript
         var canvas = document.getElementById("renderCanvas");
         var  engine = new BABYLON.Engine(canvas, true);
-
-        const createScene = function() {
-            const scene = new BABYLON.Scene(engine);
-            scene.clearColor = new BABYLON.Color3.Black;
-
-            return scene;
-        }
+        ...
         var scene = createScene();
 
         engine.runRenderLoop(function () {
@@ -69,7 +64,6 @@ A scene is where all the contents will be displayed. There might be multiple sce
 ## Add basic 3D element
 
 1. To add a cube, add the following code to the function *createScene*:
-
 
     ```javascript
         const createScene = function() {
@@ -143,6 +137,7 @@ A scene is where all the contents will be displayed. There might be multiple sce
                 var position = BABYLON.Vector3.Zero();
                 const camera = new BABYLON.ArcRotateCamera("Camera", longitude, latitude, radius, position);
                 camera.attachControl(canvas, true);
+                
                 const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0));
                 
                 const box = BABYLON.MeshBuilder.CreateBox("box", {wrap: true});

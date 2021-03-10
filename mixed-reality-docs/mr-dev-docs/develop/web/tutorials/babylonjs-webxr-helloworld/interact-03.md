@@ -11,11 +11,83 @@ ms.localizationpriority: high
 
 # Tutorial: Interact with 3D object
 
-TBD
+Learn how to add some interaction, such as painting the faces of a cube with different color upon clicking on the cube.
+
+In this tutorial, learn how to:
+
+> [!div class="checklist"]
+> * How to add interactions
+> * Enable WebXR immersive mode
+> * Run the app on HoloLens2 emulator
 
 ## Add interaction
 
-TBD
+1. Let's update our code, so that the cube faces are painted with distinct colors. Update the code as follows:
+
+    ```javascript
+        const createScene = function() {
+            const scene = new BABYLON.Scene(engine);
+            ...
+
+            const faceColors = new Array(6);
+            for (let i = 0; i < 6; i++) {
+                var red = Math.floor(Math.random() * 256)/255;
+                var green = Math.floor(Math.random() * 256)/255;
+                var blue = Math.floor(Math.random() * 256)/255;
+                faceColors[i] = new BABYLON.Color4(red, blue, green, 1);
+                }
+                
+            const options = {
+                faceColors: faceColors,
+                wrap: true
+            };
+            const box = BABYLON.MeshBuilder.CreateBox("box", options);
+
+            return scene;
+        }
+    ```
+
+1. Now you will see the cube faces painted with different colors. Let's add a simple interaction, so that the face color is changing upon clicking the cube and the cube changes its position. Add the following code:
+
+    ```javascript
+        const createScene = function() {
+            const scene = new BABYLON.Scene(engine);
+            ...
+
+            const faceColors = new Array(6);
+            for (let i = 0; i < 6; i++) {
+                var red = Math.floor(Math.random() * 256)/255;
+                var green = Math.floor(Math.random() * 256)/255;
+                var blue = Math.floor(Math.random() * 256)/255;
+                faceColors[i] = new BABYLON.Color4(red, blue, green, 1);
+                }
+                
+            const options = {
+                faceColors: faceColors,
+                wrap: true
+            };
+            const box = BABYLON.MeshBuilder.CreateBox("box", options);
+
+            //upon clicking on the box, it will change the color and move upright
+            box.actionManager = new BABYLON.ActionManager(scene);
+            box.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPickTrigger, function (evt) {
+                var sourceBox = evt.meshUnderPointer;
+                
+                var red = Math.floor(Math.random() * 256)/255;
+                var green = Math.floor(Math.random() * 256)/255;
+                var blue = Math.floor(Math.random() * 256)/255;
+
+                var boxMaterial = new BABYLON.StandardMaterial("material", scene);
+                boxMaterial.emissiveColor = new BABYLON.Color3(red, green, blue);
+                sourceBox.material = boxMaterial;
+
+                sourceBox.position.x += 0.1;
+                sourceBox.position.y += 0.1;     
+            }));
+
+            return scene;
+        }
+    ```
 
 ## Test application locally
 
