@@ -11,9 +11,9 @@ ms.localizationpriority: high
 
 # Tutorial: Interact with 3D object
 
-Learn how to add some interaction, such as painting the faces of a cube with different color upon clicking on the cube.
+Learn how to add 3D object interactions to your Mixed Reality experiences with BabylonJS. In this section, you'll start with something simple, like painting the faces of a cube with different colors when you select the object.
 
-In this tutorial, learn how to:
+This tutorial covers the following topics:
 
 > [!div class="checklist"]
 > * How to add interactions
@@ -22,7 +22,7 @@ In this tutorial, learn how to:
 
 ## Add interaction
 
-1. Let's update our code, so that the cube faces are painted with distinct colors. Update the code as follows:
+1. First, let's update our code so that the cube faces are painted with distinct colors:
 
     ```javascript
     const createScene = function() {
@@ -48,7 +48,9 @@ In this tutorial, learn how to:
     }
     ```
 
-1. Now you will see the cube faces painted with different colors. Let's add a simple interaction, so that the face color is changing upon clicking the cube and the cube changes its position. Replace the creation of a cube with the following code:
+2. Now that the cube faces are painted with different colors, let's add an interaction to: 
+* Change the face color when the cube is clicked 
+* Move the cube after the color is changed
 
     ```javascript
     const createScene = function() {
@@ -82,7 +84,9 @@ In this tutorial, learn how to:
 
 ## Enable WebXR immersive experience
 
-1. We are ready to try the immersive experience. Let's update the stylesheet so that a canvas occupies the entire web page. Add the style tag into the page header as follows:
+Now that our cube is changing colors, we're ready to try the immersive experience. Your task is to update the stylesheet so the canvas occupies the entire web page. 
+
+1. Add the style tag into the page header as follows:
 
     ```html
     <head>
@@ -93,7 +97,7 @@ In this tutorial, learn how to:
     </head>
     ```
 
-1. In this step we are going to introduce the ground, so the cube will be hanging in the air and we will see a floor at the bottom. Add the ground as follows:
+2. In this step we're going to introduce the ground. The cube will be hanging in the air and we will see a floor at the bottom. Add the ground as follows:
 
     ```javascript
     const createScene = function() {
@@ -107,7 +111,7 @@ In this tutorial, learn how to:
     }
     ```
 
-1. In order to add the WebXR support, we need to call the method *createDefaultXRExperienceAsync* of a scene. The result is Promise. For simplicity, we keep using the Promise. Though for real-world application you would convert this code to use async/await pattern. Here is the updated version:
+3. In order to add WebXR support, we need to call *createDefaultXRExperienceAsync*, which has a *Promise* result. For simplicity, we'll keep using the Promise. For real-world applications, you would convert this code to use the async/await pattern. Here is the updated version:
 
     ```javascript
      const createScene = function() {
@@ -131,7 +135,7 @@ In this tutorial, learn how to:
 1. The above code generates the following output in the browser window:
 ![WebXR scene](../images/hello-world-webxr-scene.png)
 
-1. Click the Immersive-VR button on the bottom right corner:
+5. Select the Immersive-VR button on the bottom right corner:
 ![Immersive VR Button](../images/immersive-vr-button.png)
 
 1. This action will launch the Mixed Reality Portal window as shown below:
@@ -148,7 +152,7 @@ TBD: research how??
 TBD
 
 Next steps
-You have completed this series of BabylonJS tutorials. You learned how to:
+Congratulations! You've completed our series of BabylonJS tutorials and learned how to:
 > [!div class="checklist"]
 > * Set up a development environment
 > * Create a new web page to display results

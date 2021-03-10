@@ -41,7 +41,7 @@ A scene is where all the contents will be displayed. There might be multiple sce
     </script>
     ```
 
-1. Note that the *engine* variable is set to null. We have to create an instance of BabylonJS web rendering engine that renders a scene and hooks events on the canvas. To create an instance of the engine, add the following code before the function *createScene*:
+2. Note that the *engine* variable is set to null. We have to create an instance of BabylonJS web rendering engine that renders a scene and hooks events on the canvas. To create an instance of the engine, add the following code before the function *createScene*:
 
     ```html
     <script type="text/javascript">
@@ -57,7 +57,7 @@ A scene is where all the contents will be displayed. There might be multiple sce
     </script>
     ```
 
-1. The scene is not rendered by default (remember there might be multiple scenes and you control which scene is displayed at the moment). To render the scene add a call to the method *render* from within the *runRenderLoop*, so that the final script will look as follows:
+3. The scene is not rendered by default. Remember, there might be multiple scenes and you control which scene is displayed. To render the scene, add a call to *render* from inside the *runRenderLoop*:
 
     ```html
     <script type="text/javascript">
@@ -118,7 +118,7 @@ A scene is where all the contents will be displayed. There might be multiple sce
         }
     ```
 
-1. Now if you check the output in the browser, you will see a black canvas. We are missing the light
+2. If you check the output in the browser, you will see a black canvas. We are missing the light.
 
 ## Set the light
 
@@ -136,7 +136,7 @@ A scene is where all the contents will be displayed. There might be multiple sce
     }
     ```
 
-1. The final code of the web page will look as follows:
+2. The final code of the web page will look as follows:
 
     ```html
     <html>

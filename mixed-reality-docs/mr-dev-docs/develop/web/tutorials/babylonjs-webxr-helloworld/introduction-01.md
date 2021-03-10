@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 # Tutorial: Create your first WebXR application using BabylonJS
 
-This tutorial shows you how to create a basic Mixed Reality app using BabylonJS and Visual Studio Code. The app renders a cube allowing user to rotate it to bring the other faces into view and interact with it. In this tutorial, you learn how to:
+This tutorial will show you how to create a basic Mixed Reality app using BabylonJS and Visual Studio Code. The app you're going to build will render a cube, let you rotate it to bring the other faces into view, and add interactions. In this tutorial, you learn how to:
 
 > [!div class="checklist"]
 > * Set up a development environment
@@ -32,12 +32,12 @@ This tutorial shows you how to create a basic Mixed Reality app using BabylonJS 
 To create this project from scratch, start with a Visual Studio Code (VSCode) project.
 
 > [!NOTE]
-> It is not mandatory to use VSCode, it is for convenience only. More experienced javascript developers can
+> Using VSCode isn't mandatory, but we'll be using it for convenience throughout the tutorial. More experienced javascript developers can
 use any other editor of their choice, even the simplest Notepad.
 
-1. Either download the [BabylonJS](https://doc.babylonjs.com/divingDeeper/developWithBjs/frameworkVers) single file or use an online version. Alternatively you can clone an entire BabylonJS project from [GitHub](https://github.com/BabylonJS/Babylon.js)
+1. Either download the [BabylonJS](https://doc.babylonjs.com/divingDeeper/developWithBjs/frameworkVers) single file or use an online version. You can also clone an entire BabylonJS project from [GitHub](https://github.com/BabylonJS/Babylon.js)
 1. Create an empty file and save it as html page, for example index.html
-1. Create a basic html markup and reference the Babylon.js javascript file, as following:
+3. Create a basic html markup and reference the Babylon.js javascript file:
 
     ```html
     <html>
@@ -50,7 +50,7 @@ use any other editor of their choice, even the simplest Notepad.
     </html>
     ```
 
-1. Add a *canvas* html element inside the body to render contents of BabylonJS, as shown below. Note the canvas has id attribute, so that this html element can be accessed from JavaScript code later.
+4. Add a *canvas* HTML element inside the body to render the contents of BabylonJS. Note that the canvas has an id attribute, which lets you access this HTML element from JavaScript later on.
 
     ```html
     <body>
@@ -58,7 +58,7 @@ use any other editor of their choice, even the simplest Notepad.
     </body>
     ```
 
-1. That completes our hosting web page. At this point, the hosting web page is ready. You can open it in any browser and ensure there are no errors shown, though there is no immersive experience yet.
+5. That completes our hosting web page. At this point, the hosting web page is ready. You can open it in any browser and ensure there are no errors shown, though there is no immersive experience yet.
 
 > [!div class="nextstepaction"]
 > [Next Tutorial: 2. Setup a canvas](prepare-scene-02.md)
