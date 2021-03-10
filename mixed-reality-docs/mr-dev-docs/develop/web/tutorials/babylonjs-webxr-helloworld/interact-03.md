@@ -128,8 +128,14 @@ In this tutorial, learn how to:
     }
     ```
 
-1. The above code generates the following output:
+1. The above code generates the following output in the browser window:
 ![WebXR scene](../images/hello-world-webxr-scene.png)
+
+1. Click the Immersive-VR button on the bottom right corner:
+![Immersive VR Button](../images/immersive-vr-button.png)
+
+1. This action will launch the Mixed Reality Portal window as shown below:
+![Mixed Reality Portal](../images/mixed-reality-portal.png)
 
 ## Run on HoloLens2 emulator
 
