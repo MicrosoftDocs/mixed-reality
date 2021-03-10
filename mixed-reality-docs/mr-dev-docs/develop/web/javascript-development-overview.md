@@ -13,7 +13,7 @@ keywords: JavaScript, WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens,
 
 # JavaScript development overview
 
-JavaScript is one of the most popular programming languages in the world, it is simple and lightweight programming language used everywhere on the web. Leverage the power of your JavaScript and web skills to create more engaging Mixed Reality experiences.
+JavaScript is one of the most popular programming languages in the world! It's simple, lightweight, and widely used on the web. Leverage the power of your JavaScript and web skills to create more engaging Mixed Reality experiences.
 
 ## Mixed Reality applications on the web
 
