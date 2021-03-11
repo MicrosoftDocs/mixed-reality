@@ -27,7 +27,7 @@ This tutorial will show you how to create a basic Mixed Reality app using babylo
 * [Babylon.js](https://doc.babylonjs.com/divingDeeper/developWithBjs/frameworkVers) 4.2 or higher
 * [NodeJS](https://nodejs.org/)
 * [Git](https://git-scm.com/)
-* [Windows Mixed Reality simulator](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator) 
+* [Windows Mixed Reality simulator](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator)
 
 ## Getting started
 
