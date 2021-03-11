@@ -161,7 +161,7 @@ To avoid eye and neck strain, content should be designed so that excessive eye a
 * **Avoid** gaze angles more than 60 degrees below the horizon (vertical movement)
 * **Avoid** neck rotations more than 45-degrees off-center (horizontal movement)
 
-The optimal (resting) gaze angle is considered between 10-20 degrees below horizontal, as the head tends to tilt downward slightly, especially during activities.
+The optimal (resting) gaze angle is considered between 10-20 degrees below horizon, as the head tends to tilt downward slightly, especially during activities.
 
 ## Arm positions
 
