@@ -10,6 +10,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK
 
 # What is the Mixed Reality Toolkit
 <br>
+
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWyXHW]
 
 ![Mixed Reality Toolkit](features/images/Logo_MRTK_Unity_Banner.png)
