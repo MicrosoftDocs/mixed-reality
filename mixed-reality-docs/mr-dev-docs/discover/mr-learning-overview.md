@@ -64,3 +64,15 @@ By the end of this module, you'll be able to:
 * Configure a Unity project for the Speech service in Azure Cognitive Services
 * Integrate the Speech service with a Windows Mixed Reality application
 * Use speech recognition to translate text
+
+### [Render a model with Azure Remote Rendering](/learn/modules/render-model-azure-remote-rendering-unity/)
+
+Create an Azure Remote Rendering session and render a 3D model.
+
+**Learning objectives**
+
+By the end of this module, you'll be able to:
+
+* Create a Remote Rendering session
+* Load a 3D model
+* Render a 3D model

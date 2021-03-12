@@ -36,6 +36,9 @@ Once you have your environment set up:
 * When the download completes, unzip the file and save it to your desktop
     * We recommend creating a shortcut to the executable file for faster access
 
+> [!NOTE]
+> If you're new to using the Unity Package Manager, follow our [UPM instructions](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/usingupm#managing-mixed-reality-features-with-the-unity-package-manager).
+
 ## Changes in this release
 
 Version 1.0.2103 Beta includes the following fixes:

@@ -17,6 +17,20 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 - [2.0.0 to 2.1.0](#updating-200-to-210)
 - [RC2 to 2.0.0](#updating-rc2-to-200)
 
+## Finding the current version 
+
+Follow these instructions to figure out which version of the MRTK you're currently using:
+
+1. Open your MRTK project in Unity
+2. Navigate to the "MixedRealityToolkit" folder in your Project window
+3. Open the file called "Version"
+
+If the file and folder above doesn't exist, you're on a newer version of the MRTK. In that case, try the following:
+
+1. Navigate to the "Mixed Reality Toolkit Foundation" folder
+2. Click on the "package.json" to see a preview in Unity or open it with a text editor
+3. Look for the line with the word "version:" 
+
 ## Upgrading to a new version of MRTK
 
 *It is strongly recommended to run the [migration tool](../features/tools/migration-window.md) after getting the MRTK update*

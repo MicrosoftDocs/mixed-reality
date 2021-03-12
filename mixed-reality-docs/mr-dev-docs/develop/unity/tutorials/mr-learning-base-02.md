@@ -91,6 +91,10 @@ Download the latest version of the Mixed Reality Feature Tool from the [Microsof
 > [!NOTE]
 > The Mixed Reality Feature Tool currently only runs on Windows, For MacOS please follow this [procedure](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html#1-get-the-latest-mrtk-unity-packages) to download and import the Mixed Reality Toolkit into the unity project.
 
+> [!NOTE]
+> You can also manually download MRTK packages from [MRTK Github's release page](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases). Import MRTK packages using Unity's Asset -> Import Package -> Custom Package menu. 
+
+
 Open the executable file **MixedRealityFeatureTool** from the downloaded folder to launch the Mixed Reality Feature Tool.  
 
 ![Opening MixedRealityFeatureTool](images/mr-learning-base/base-02-section4-step1-1.png)
@@ -144,7 +148,7 @@ In the MRTK Project Configurator window, expand the **Modify Configurations** se
 
 In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window:
 
-In the Project Settings window, select **Player** > **XR Settings** and check the **Virual Reality Supported** checkbox then click the **+** icon, and select Windows Mixed Reality to add the Windows Mixed Reality SDK:
+In the Project Settings window, select **Player** > **XR Settings** and check the **Virtual Reality Supported** checkbox then click the **+** icon, and select Windows Mixed Reality to add the Windows Mixed Reality SDK:
 
 ![Unity XR Settings with add Windows Mixed Reality SDK selected](images/mr-learning-base/base-02-section5-step2-4.png)
 

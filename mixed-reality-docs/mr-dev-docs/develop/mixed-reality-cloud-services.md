@@ -42,7 +42,7 @@ As an added bonus, ARR doesn't restrict what kind of user interface you can use 
 
 ### Azure Spatial Anchors
 
-[Azure Spatial Anchors](https://docs.microsoft.com /azure/spatial-anchors/), is a cross-platform service that allows you to build spatially aware mixed reality applications. With Azure Spatial Anchors, you can map, persist, and share holographic content across multiple devices at real-world scale. 
+[Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/), is a cross-platform service that allows you to build spatially aware mixed reality applications. With Azure Spatial Anchors, you can map, persist, and share holographic content across multiple devices at real-world scale. 
 
 Azure Spatial Anchors is a uniquely tailored solution for common use cases in Mixed Reality, including:
 * **Way-finding**: Where two or more spatial anchors could be connected to create a task list or points of interest a user must interact with.
