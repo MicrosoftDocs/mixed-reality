@@ -17,11 +17,11 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 ## What's new in 2.6.1
 
-### OpenXR bug
+### Fixes OpenXR not running on HoloLens 2 / UWP
 
 Fixes a regression that prevented MRTK's OpenXR support from running on UWP.
 
-### Leap Motion ObjectManipulator regression
+### Fixes Leap Motion ObjectManipulator not rotating
 
 Fixes a regression where a Leap Motion hand's rotation was not taken into account by the ObjectManipulator script.
 
@@ -50,7 +50,7 @@ Swap multiple assets in a Unity scene with the new [Asset Swap utility](../featu
 
 Controllers for the HP Reverb G2 now work natively with MRTK.
 
-### Experimental Interactive Element + State Visualizer 
+### Experimental Interactive Element + State Visualizer
 
 Interactive Element is a simplified centralized entry point to the MRTK input system. It contains state management methods, event management and the state setting logic for Core Interaction States. For more information see [Interactive Element Documentation](../features/experimental/interactive-element.md).
 
@@ -84,30 +84,28 @@ Experimental support of [Scene Understanding](https://docs.microsoft.com/windows
 
 MRTK now allows profile switching both before the initialization of the MRTK instance (i.e. Pre MRTK initialization profile switch) and after a profile has been in active use (i.e. Active profile switch). The former switch can be used to enable select components based on capabilities of the hardware, while the latter can be used to modify experience as the user enters a subpart of the application. Please read the [documentation on profile switching](../configuration/mixed-reality-configuration-guide.md#changing-profiles-at-runtime) for more information and code samples.
 
-### Directional Indicator and Follow Solvers Graduated from Experimental
+### Directional indicator and follow solvers graduated from experimental
 
 Two new solvers are ready for use with mainline MRTK.
 
   ![Directional Indicator Solver](images/DirectionalIndicatorExampleScene.gif)
 
-### Hand Coach Graduated from Experimental
+### Hand Coach graduated from experimental
 
 The Hand Coach feature is now ready for use with mainline MRTK.
   ![Hand Coach Example](https://docs.microsoft.com/windows/mixed-reality/design/images/handcoach/airtap.gif)
 
-### Dialog Controls Graduated from Experimental
+### Dialog controls graduated from experimental
 
 Dialog controls are now ready for use with mainline MRTK.
 
   ![Dialog Controls](https://user-images.githubusercontent.com/13754172/101927792-3326e200-3c18-11eb-88d3-44b4b50c7f7d.png)
 
+### Pulse shader graduated from experimental
 
-### Pulse Shader Graduated from Experimental 
-
-The Pulse Shader scripts have graduated from experimental. For more information see: [Pulse Shader Documentation](../features/rendering/pulse-shader.md)
+The Pulse shader scripts have graduated from experimental. For more information see: [Pulse Shader Documentation](../features/rendering/pulse-shader.md)
 
 ![MRTK_SpatialMesh_Pulse](https://user-images.githubusercontent.com/13754172/68261851-3489e200-fff6-11e9-9f6c-5574a7dd8db7.gif)
-
 
 ### Input Recording Service improvements
 
