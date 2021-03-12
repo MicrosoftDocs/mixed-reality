@@ -27,7 +27,7 @@ Fixes a regression where a Leap Motion hand's rotation was not taken into accoun
 
 ### Sample scene updates
 
-Updates the scene understanding sample scene to correctly reflect the shipped state of the Unity plugin. Also updates the sample to no longer have a dependency on the spatial awareness sample scene being imported.
+Updates the scene understanding sample scene to correctly reflect the shipped state of the Unity plugin. Also updates the sample to no longer have a dependency on the spatial awareness sample scene being imported. Before updating to 2.6.1 you should delete the imported scene understanding and spatial awareness samples if they are present in your project to avoid possible conflicts. If you did not remove those samples and do see conflicts related to those in the console, please remove both samples (or the `Assets/Samples/Mixed Reality Toolkit Examples` folder) and then try importing again.
 
 Updates the dialog example scene to correctly describe the current dialog scenarios.
 
