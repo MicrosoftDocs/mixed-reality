@@ -274,22 +274,24 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
 
                 //upon clicking on the box, it will change the color and move upright
                 box.actionManager = new BABYLON.ActionManager(scene);
-                box.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPickTrigger, function (evt) {
-                    var sourceBox = evt.meshUnderPointer;
-                    
-                    //generate random colors
-                    var red = Math.floor(Math.random() * 256)/255;
-                    var green = Math.floor(Math.random() * 256)/255;
-                    var blue = Math.floor(Math.random() * 256)/255;
+                box.actionManager.registerAction(new BABYLON.ExecuteCodeAction(
+                    BABYLON.ActionManager.OnPickTrigger, 
+                    function (evt) {
+                        var sourceBox = evt.meshUnderPointer;
+                        
+                        //generate random colors
+                        var red = Math.floor(Math.random() * 256)/255;
+                        var green = Math.floor(Math.random() * 256)/255;
+                        var blue = Math.floor(Math.random() * 256)/255;
 
-                    //apply new material
-                    var boxMaterial = new BABYLON.StandardMaterial("material", scene);
-                    boxMaterial.emissiveColor = new BABYLON.Color3(red, green, blue);
-                    sourceBox.material = boxMaterial;
+                        //apply new material
+                        var boxMaterial = new BABYLON.StandardMaterial("material", scene);
+                        boxMaterial.emissiveColor = new BABYLON.Color3(red, green, blue);
+                        sourceBox.material = boxMaterial;
 
-                    //move the box upright
-                    sourceBox.position.x += 0.1;
-                    sourceBox.position.y += 0.1;
+                        //move the box upright
+                        sourceBox.position.x += 0.1;
+                        sourceBox.position.y += 0.1;
                 }));
                 
                 var ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 10, height: 10});
