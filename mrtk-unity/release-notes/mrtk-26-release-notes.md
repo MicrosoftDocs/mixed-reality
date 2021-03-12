@@ -84,6 +84,13 @@ Two new solvers are ready for use with mainline MRTK.
 The Hand Coach feature is now ready for use with mainline MRTK.
   ![Hand Coach Example](https://docs.microsoft.com/windows/mixed-reality/design/images/handcoach/airtap.gif)
 
+### Dialog Controls Graduated from Experimental
+
+Dialog controls are now ready for use with mainline MRTK.
+
+  ![Dialog Controls](https://user-images.githubusercontent.com/13754172/101927792-3326e200-3c18-11eb-88d3-44b4b50c7f7d.png)
+
+
 ### Pulse Shader Graduated from Experimental 
 
 The Pulse Shader scripts have graduated from experimental. For more information see: [Pulse Shader Documentation](../features/rendering/pulse-shader.md)
