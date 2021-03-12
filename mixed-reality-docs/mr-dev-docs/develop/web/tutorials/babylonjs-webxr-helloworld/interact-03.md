@@ -333,7 +333,7 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
 The following are the most important takeaways from this tutorial:
 * Babylon.js makes it easy to create immersive experiences using JavaScript
 * To create virtual scenes you don't need to write low-level code or learn a new technology
-* You can build Mixed Reality applications with Windows10 & MS Edge without need to buy a headset
+* You can build Mixed Reality applications with Windows 10 and Chromium Edge without need to buy a headset
 
 ## Next steps
 

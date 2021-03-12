@@ -1,5 +1,5 @@
 ---
-title: Babylon.js tutorial to create a scene with basic 3D objects
+title: Babylon.js tutorial to prepare a scene with basic 3D objects
 description: Learn how to use babylon.js and add basic 3D objects to a scene.
 author: bogenera
 ms.author: ayyonet
@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 # Tutorial: Prepare a scene
 
-Learn how to create a scene, and add some basic 3D elements to it.
+Learn how to prepare a scene, and add some basic 3D elements to it.
 
 In this tutorial, learn how to:
 
@@ -20,7 +20,6 @@ In this tutorial, learn how to:
 > * Add a camera
 > * Add light
 > * Add basic 3D elements
-
 
 ## Before you begin
 
@@ -157,4 +156,4 @@ A scene is where all the contents will be displayed. There might be multiple sce
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Next Tutorial: 3. Interact with object](interact-03.md)
+> [Next Tutorial: 3. Interact with 3D object](interact-03.md)

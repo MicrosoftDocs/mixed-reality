@@ -366,7 +366,7 @@
         items:
         - name: Introduction
           href: web/tutorials/babylonjs-webxr-helloworld/introduction-01.md
-        - name: Create scene with basic 3D object
+        - name: Prepare a scene with basic 3D object
           href: web/tutorials/babylonjs-webxr-helloworld/prepare-scene-02.md
         - name: Interact with 3D object
           href: web/tutorials/babylonjs-webxr-helloworld/interact-03.md

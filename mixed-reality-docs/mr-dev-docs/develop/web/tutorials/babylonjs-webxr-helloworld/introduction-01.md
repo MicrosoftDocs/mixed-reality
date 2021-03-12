@@ -70,4 +70,4 @@ To create this project from scratch, start with a Visual Studio Code (VSCode) pr
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Next Tutorial: 2. Setup a canvas](prepare-scene-02.md)
+> [Next Tutorial: 2. Prepare a scene](prepare-scene-02.md)
