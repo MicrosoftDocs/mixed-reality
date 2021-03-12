@@ -38,13 +38,13 @@ Tutorials in this series are meant to be sequential, so please go through them i
 * [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 or later
 * A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
 
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019 LTS installed and the Universal Windows Platform Build Support module added
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019 LTS (currently 2019.4.x) installed and the Universal Windows Platform Build Support module added
 
 > [!CAUTION]
 > The recommended MRTK version for this tutorial series is MRTK 2.6.
 
 > [!CAUTION]
-> The recommended Unity version for this tutorial series is Unity 2019 LTS. This supersedes any Unity version requirements stated in the prerequisites linked above.
+> The recommended Unity version for this tutorial series is Unity 2019 LTS (currently 2019.4.x) . This supersedes any Unity version requirements stated in the prerequisites linked above.
 
 > [!div class="nextstepaction"]
 > [Next Tutorial: 2. Initializing your project and deploying your first application](mr-learning-base-02.md)
