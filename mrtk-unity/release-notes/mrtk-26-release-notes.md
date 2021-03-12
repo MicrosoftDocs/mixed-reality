@@ -8,19 +8,30 @@ ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Microsoft Mixed Reality Toolkit 2.6.0 Release Notes
-
-- [What's new](#whats-new)
-- [Breaking changes](#breaking-changes)
-- [Updating guidance](../updates-deployment/updating.md#upgrading-to-a-new-version-of-mrtk)
-- [Known issues](#known-issues)
+# Microsoft Mixed Reality Toolkit 2.6.1 Release Notes
 
 > [!IMPORTANT]
 > There is a known compiler issue that impacts applications built for Microsoft HoloLens 2 using
 > ARM64. This issue is fixed by updating Visual Studio 2019 to version 16.8 or later. If you are unable to update Visual Studio,
 > please import the `com.microsoft.mixedreality.toolkit.tools` package to apply a workaround.
 
-## What's new
+## What's new in 2.6.1
+
+### OpenXR bug
+
+Fixes a regression that prevented MRTK's OpenXR support from running on UWP.
+
+### Leap Motion ObjectManipulator regression
+
+Fixes a regression where a Leap Motion hand's rotation was not taken into account by the ObjectManipulator script.
+
+### Sample scene updates
+
+Updates the scene understanding sample scene to correctly reflect the shipped state of the Unity plugin. Also updates the sample to no longer have a dependency on the spatial awareness sample scene being imported.
+
+Updates the dialog example scene to correctly describe the current dialog scenarios.
+
+## What's new in 2.6.0
 
 ### Add support for OpenXR
 
