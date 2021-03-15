@@ -18,7 +18,7 @@ This tutorial covers the following topics:
 > [!div class="checklist"]
 > * How to add interactions
 > * Enable WebXR immersive mode
-> * Run the app on HoloLens2 emulator
+> * Run the app on Windows Mixed Reality Simulator
 
 ## Before you begin
 
@@ -216,7 +216,7 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
 
     This creates a simple 10×10-meter floor.
 
-1. In order to add WebXR support, we need to call *createDefaultXRExperienceAsync*, which has a *Promise* result. For simplicity, we'll keep using the Promise. For real-world applications, you would convert this code to use the async/await pattern. Here is the updated version:
+1. In order to add WebXR support, we need to call *createDefaultXRExperienceAsync*, which has a *Promise* result. For simplicity, we'll keep using the Promise. For real-world applications, you would convert this code to use the async/await pattern. Add this code to the createScene function:
 
     ```javascript
     var xrPromise = scene.createDefaultXRExperienceAsync({
@@ -342,6 +342,6 @@ Congratulations! You've completed our series of babylon.js tutorials and learned
 > * Set up a development environment
 > * Create a new web page to display results
 > * The API to create and interact with basic 3D elements
-> * Deploy and test the application in a HoloLens2 emulator
+> * Run and test the application in a Windows Mixed Reality Simulator
 
 For more information on Mixed Reality javascript development see [JavaScript development overview](/javascript-development-overview.md).
