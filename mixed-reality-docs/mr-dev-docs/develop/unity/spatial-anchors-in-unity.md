@@ -3,7 +3,7 @@ title: Spatial Anchors in Unity
 description: Learn how to create, store, and fetch spatial anchors in Unity mixed reality applications.
 author: hferrone
 ms.author: v-hferrone
-ms.date: 01/22/2021
+ms.date: 03/16/2021
 ms.topic: article
 keywords: Unity, spatial anchors, anchor store, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
