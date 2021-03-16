@@ -92,7 +92,7 @@ public class ScrollablePagination : MonoBehaviour
 
 ## Scrolling object collection properties
 
-| General                      |                                                                                                                                                                                                     |
+| General                                                                                                                                                                                                     |
 |:-----------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Scroll direction             | The direction in which content should scroll.|
 
