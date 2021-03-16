@@ -519,11 +519,11 @@ The example scene for Interactive Element + State Visualizer is located here: MR
 The example scene contains prefabs named `CompressableButton` and `CompressableButtonToggle`, these prefabs mirror the behavior of the `PressableButtonHoloLens2` buttons, that are constructed using Interactive Element and the State Visualizer. 
 The `CompressableButton` component is currently a combination of `PressableButton` + `PressableButtonHoloLens2` with `BaseInteractiveElement`as a base class. 
 
-# State Visualizer [Experimental]
+## State Visualizer [Experimental]
 
 The State Visualizer component adds animations to an object based on the states defined in a linked Interactive Element component. This component creates animation assets, places them in the MixedRealityToolkit.Generated folder and enables simplified animation keyframe setting through adding Animatable properties to a target game object. To enable animation transitions between states, an Animator Controller asset is created and a default state machine is generated with associated parameters and any state transitions.  The state machine can be viewed in Unity's Animator window.
 
-## State Visualizer and Unity Animation System
+### State Visualizer and Unity Animation System
 
 The State Visualizer currently leverages the Unity Animation System. 
 
@@ -535,7 +535,7 @@ An [Animator State Machine](https://docs.unity3d.com/Manual/AnimationOverview.ht
 
 [State visualizers triggered in the animator](https://docs.unity3d.com/Manual/AnimationParameters.html) are also generated for each state, the trigger parameters are used in the State Visualizer to trigger an animation.
 
-![UnityStateMachine](../images/interactive-element/StateVisualizer/UnityStateMachine.png)
+![Unity state machine](../images/interactive-element/StateVisualizer/UnityStateMachine.png)
 
 ### Runtime Limitations 
 
