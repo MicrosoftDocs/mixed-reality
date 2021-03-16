@@ -4,7 +4,7 @@ description: Landing page for the MRTK-Unity documentation site.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/9/2020
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
