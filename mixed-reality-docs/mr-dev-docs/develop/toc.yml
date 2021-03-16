@@ -192,24 +192,24 @@
           href: unity/reviewing-changes.md
   - name: Basic building blocks
     items:
-      - name: Camera
+      - name: Camera setup
         href: unity/camera-in-unity.md
-      - name: Coordinate systems
-        href: unity/coordinate-systems-in-unity.md
-      - name: Persistence
-        href: unity/persistence-in-unity.md
-      - name: Head-gaze
-        href: unity/gaze-in-unity.md
+      - name: Spatial anchors
+        href: unity/spatial-anchors-in-unity.md
+      - name: Interactions 
+        items: 
+          - name: Motion controllers 
+            href: unity/motion-controllers-in-unity.md
+          - name: Gestures 
+            href: unity/gestures-in-unity.md
+          - name: Hand and Eye tracking  
+            href: unity/hand-eye-in-unity.md
+          - name: Head gaze
+            href: unity/gaze-in-unity.md
+          - name: Voice input
+            href: unity/voice-input-in-unity.md
       - name: Text
         href: unity/text-in-unity.md
-      - name: Motion controllers
-        href: unity/motion-controllers-in-unity.md
-      - name: Gestures
-        href: unity/gestures-in-unity.md
-      - name: Hand and Eye tracking
-        href: unity/hand-eye-in-unit.md
-      - name: Voice input
-        href: unity/voice-input-in-unity.md
       - name: Spatial mapping
         href: unity/spatial-mapping-in-unity.md
       - name: Spatial sound

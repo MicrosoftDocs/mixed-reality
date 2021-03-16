@@ -1,5 +1,5 @@
 ---
-title: Camera in Unity
+title: Camera setup in Unity
 description: Learn how to set up and use Unity's Main Camera for Windows Mixed Reality development to do holographic rendering.
 author: keveleigh
 ms.author: kurtie
