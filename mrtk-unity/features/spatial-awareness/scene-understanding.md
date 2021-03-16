@@ -4,7 +4,7 @@ description: describes Scene Understanding in MRTK
 author: MaxWang-MS
 ms.author: wangmax
 ms.date: 03/02/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Scene Understanding
 ---
 
