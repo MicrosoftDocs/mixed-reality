@@ -15,7 +15,13 @@ Spatial anchors save holograms in real-world space between application sessions.
 > [!IMPORTANT]
 > Local anchors are stored on device, while Azure Spatial Anchors are stored in the cloud. If you're looking to use Azure cloud services to store your anchors, we have a document that can walk you through integrating [Azure Spatial Anchors](../mixed-reality-cloud-services.md#azure-spatial-anchors). Note that you can have local and Azure anchors in the same project without conflict.
 
-[!INCLUDE[](includes/unity-spatial-anchors.md)]
+## Understanding Anchors
+
+[!INCLUDE[](includes/unity-understanding-anchors.md)]
+
+## Using the AnchorStore
+
+[!INCLUDE[](includes/unity-spatial-anchorstore.md)]
 
 ## Next Development Checkpoint
 
