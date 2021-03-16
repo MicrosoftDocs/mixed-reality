@@ -354,3 +354,6 @@ When writing documentation, installing the following two extensions is also high
 
 Both of these come packaged in the Microsoft published Docs Authoring Pack.
 
+## See also 
+
+* [Example link](https://www.google.com)

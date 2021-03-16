@@ -120,7 +120,7 @@ There are two types of tests that can be added for new code
 
 MRTK play mode tests have the ability to test how your new feature responds to different input sources such as hands or eyes.
 
-New play mode tests can inherit [BasePlayModeTests](xref:Microsoft.MixedReality.Toolkit.Tests.BasePlayModeTests) or the skeleton below can be used.
+New play mode tests can inherit [BasePlayModeTests](xref:Microsoft.MixedReality.Toolkit.Tests) or the skeleton below can be used.
 
 To create a new play mode test:
 
