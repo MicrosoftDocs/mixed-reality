@@ -1,11 +1,11 @@
 ---
 title: Holographic Remoting in desktop app
-description: Discover the features OpenXR supports for mixed reality development in Unity.
+description: Discover how to use Holographic Remoting in a desktop app with OpenXR.
 author: hferrone
 ms.author: alexturn
-ms.date: 01/11/2021
+ms.date: 03/16/2021
 ms.topic: article
-keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, augmented reality, virtual reality, mixed reality headsets, learn, tutorial, getting started
+keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, augmented reality, virtual reality, mixed reality headsets, learn, tutorial, getting started, holographic remoting, desktop
 ---
 
 # Holographic Remoting in desktop app
@@ -14,7 +14,7 @@ keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Realit
 > Windows Standalone app remoting support was added in the 0.1.3 package release.
 > As of version 0.1.3, this feature doesn’t support UWP builds.
 
-1. Follow the steps in [Holographic Remoting setup](#holographic-remoting-setup)
+1. Follow the steps in [Holographic Remoting setup](openxr-supported-features.md#holographic-remoting-setup)
 2. Open **Edit -> Project Settings**, navigate to **XR plug-in Management**, and check the **Windows Mixed Reality feature set** box. Also, uncheck **Initialize XR on Startup**:
 
     ![Screenshot of project settings panel open in the Unity Editor with Initialize XR on Startup unchecked](images/openxr-features-img-02-app.png)
