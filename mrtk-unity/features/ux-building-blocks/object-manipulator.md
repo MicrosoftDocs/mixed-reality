@@ -26,7 +26,7 @@ Physics behaviour can be enabled for the object manipulator by adding a rigidbod
 
 As well as this, manipulation can be constrained by adding [manipulation constraint components](constraint-manager.md#transform-constraints) to the object. These are special components that work with manipulation and change the manipulation behaviour in some way.
 
-![Manipulation Handler](../images/object-manipulator/MRTK_ObjectManipulator_Howto.png)
+![Using the Manipulation Handler in the Unity editor](../images/object-manipulator/MRTK_ObjectManipulator_Howto.png)
 
 ## Inspector properties and fields
 

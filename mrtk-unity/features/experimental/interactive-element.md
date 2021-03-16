@@ -19,7 +19,7 @@ Interactive Element is an experimental feature supported in Unity 2019.3 and up 
 
 During play mode, the Interactive Element inspector provides visual feedback that indicates whether or not the current state is active. If a state is active, it will be highlighted with a cyan color.  If the state is not active, the color is not changed. The numbers next to the states in the inspector are the state values, if the state is active then the value is 1, if the state is not active the value is 0.
 
-![InteractiveElementAddCoreState](../images/interactive-element/InEditor/Gifs/InspectorHighlightEditor.gif)
+![Interactive Element with virtual hand interaction](../images/interactive-element/InEditor/Gifs/InspectorHighlightEditor.gif)
 
 ## Core States
 
@@ -50,16 +50,16 @@ Other Core States:
 
 1. Navigate to **Add Core State** in the inspector for Interactive Element.
 
-    ![InteractiveElementAddCoreState](../images/interactive-element/InEditor/InteractiveElementAddCoreState.png)
+    ![Add a Core State via Inspector](../images/interactive-element/InEditor/InteractiveElementAddCoreState.png)
 
 
 1. Select the **Select State** button to choose the core state to add. The states in the menu are sorted by interaction type.
 
-    ![InteractiveElementAddCoreStateSelectState](../images/interactive-element/InEditor/InteractiveElementAddCoreStateSelectState.png)
+    ![Add a Core State via Inspector with state selected](../images/interactive-element/InEditor/InteractiveElementAddCoreStateSelectState.png)
 
 1. Open the Event Configuration foldout to view the events and properties associated with the state.
 
-    ![InteractiveElementAddCoreStateSelectStateEventConfig](../images/interactive-element/InEditor/InteractiveElementAddCoreStateSelectStateEventConfig.png)
+    ![Add a Core State via Inspector with event configuration](../images/interactive-element/InEditor/InteractiveElementAddCoreStateSelectStateEventConfig.png)
 
 
 ### How to Add a Core State via Script
@@ -154,10 +154,10 @@ defaultEvents.OnStateOff.AddListener(() =>
 The Focus state is a near and far interaction state that can be thought of as the mixed reality equivalent to hover. The distinguishing factor between near and far interaction for the Focus state is the current active pointer type.  If the pointer type for the Focus state is the Poke Pointer, then the interaction is considered near interaction.  If the primary pointer is not the Poke Pointer, then the interaction is considered far interaction. The Focus state is present in Interactive Element by default.
 
 **Focus State Behavior**
-![FocusStateEditor](../images/interactive-element/InEditor/Gifs/FocusStateEditor.gif) 
+![Focus state with virtual hand interaction](../images/interactive-element/InEditor/Gifs/FocusStateEditor.gif) 
 
 **Focus State Inspector**
-![FocusStateInspector](../images/interactive-element/InEditor/FocusStateInspector.png)
+![Focus state in the Inpsector](../images/interactive-element/InEditor/FocusStateInspector.png)
 
 #### Getting Focus State Events
 
@@ -179,17 +179,17 @@ focusEvents.OnFocusOff.AddListener((pointerEventData) =>
 
 #### Focus Near vs Focus Far Behavior 
 
-![FocusNearFocusFar](../images/interactive-element/InEditor/Gifs/FocusNearFocusFar.gif)
+![Focus near and far with virtual hand interaction](../images/interactive-element/InEditor/Gifs/FocusNearFocusFar.gif)
 
 ### Focus Near State
 
 The Focus Near state is set when a focus event is raised and the primary pointer is the Poke pointer, an indication of near interaction. 
 
 **Focus Near State Behavior**
-![FocusNearStateEditor](../images/interactive-element/InEditor/Gifs/FocusNearStateEditor.gif) 
+![Focus near state with virtual hand interaction](../images/interactive-element/InEditor/Gifs/FocusNearStateEditor.gif) 
 
 **Focus Near State Inspector**
-![FocusNearStateInspector](../images/interactive-element/InEditor/FocusNearStateInspector.png)
+![Focus near component in the Inspector](../images/interactive-element/InEditor/FocusNearStateInspector.png)
 
 #### Getting FocusNear State Events
 
@@ -214,10 +214,10 @@ focusNearEvents.OnFocusOff.AddListener((pointerEventData) =>
 The Focus Far state is set when the primary pointer is not the Poke pointer.  For example, the default controller ray pointer and the GGV (Gaze, Gesture, Voice) pointer are considered far interaction pointers.
 
 **Focus Far State Behavior**
-![FocusFarStateEditor](../images/interactive-element/InEditor/Gifs/FocusFarStateEditor.gif)
+![Focus state far with virtual hand interaction](../images/interactive-element/InEditor/Gifs/FocusFarStateEditor.gif)
 
 **Focus Far State Inspector**
-![FocusFarStateInspector](../images/interactive-element/InEditor/FocusFarStateInspector.png)
+![Focus far component in the Inspector](../images/interactive-element/InEditor/FocusFarStateInspector.png)
 
 #### Getting Focus Far State Events
 
@@ -242,10 +242,10 @@ focusFarEvents.OnFocusOff.AddListener((pointerEventData) =>
 The Touch state is a near interaction state that is set when an articulated hand touches the object directly.  A direct touch means that the articulated hand's index finger is very close to the world position of the object. By default, a `NearInteractionTouchableVolume` component is attached to the object if the Touch state is added to the the state list.  The presence of a  `NearInteractionTouchableVolume` or `NearInteractionTouchable` component is required for detecting Touch events.  The difference between `NearInteractionTouchableVolume` and `NearInteractionTouchable` is that `NearInteractionTouchableVolume` detects a touch based on the collider of the object and `NearInteractionTouchable`detects touch within a defined area of a plane.
 
 **Touch State Behavior**
-![TouchStateEditor](../images/interactive-element/InEditor/Gifs/TouchStateEditor.gif)
+![Touch state with virtual hand interaction](../images/interactive-element/InEditor/Gifs/TouchStateEditor.gif)
 
 **Touch State Inspector**
-![TouchStateInspector](../images/interactive-element/InEditor/TouchStateInspector.png)
+![Touch state component in the Inspector](../images/interactive-element/InEditor/TouchStateInspector.png)
 
 #### Getting Touch State Events
 
@@ -275,10 +275,10 @@ touchEvents.OnTouchUpdated.AddListener((touchData) =>
 The Select Far state is the `IMixedRealityPointerHandler` surfaced.  This state is a far interaction state that detects far interaction click (air-tap) and holds through the use of far interaction pointers such as the default controller ray pointer or the GGV pointer.  The Select Far state has an option under the event configuration foldout named `Global`. If `Global` is true, then the `IMixedRealityPointerHandler` is registered as a global input handler.  Focus on an object is not required to trigger input system events if a handler is registered as global.  For example, if a user wants to know anytime the air-tap/select gesture is performed regardless of the object in focus, set `Global` to true. 
 
 **Select Far State Behavior**
-![SelectFarStateEditor](../images/interactive-element/InEditor/Gifs/SelectFarStateEditor.gif)
+![Select far with virtual hand interaction](../images/interactive-element/InEditor/Gifs/SelectFarStateEditor.gif)
 
 **Select Far State Inspector**
-![SelectFarStateInspector](../images/interactive-element/InEditor/SelectFarStateInspector.png)
+![Select far component in the Inspector](../images/interactive-element/InEditor/SelectFarStateInspector.png)
 
 #### Getting Select Far State Events
 
@@ -316,15 +316,15 @@ The Clicked state is triggered by a far interaction click (Select Far state) by 
 > The visual feedback in the inspector based on state activity is not present for the Clicked state because it is switched on and then off immediately. 
 
 **Clicked State Behavior**
-![ClickedStateEditor](../images/interactive-element/InEditor/Gifs/ClickedStateEditor.gif)
+![Clicked state with virtual hand interactions](../images/interactive-element/InEditor/Gifs/ClickedStateEditor.gif)
 
 **Clicked State Inspector**
-![ClickedStateInspector](../images/interactive-element/InEditor/ClickedStateInspector.png)
+![Click state component in the Inspector](../images/interactive-element/InEditor/ClickedStateInspector.png)
 
 **Near and Far Clicked State Example**  
 The clicked state can be triggered through additional entry points using the `interactiveElement.TriggerClickedState()` method.  For example, if a user wants a near interaction touch to trigger a click on an object as well, then they would add the `TriggerClickedState()` method as a listener in the touch state.   
 
-![NearFarClickedState](../images/interactive-element/InEditor/Gifs/NearFarClickedState.gif)
+![Near and far state with virtual hand interactions](../images/interactive-element/InEditor/Gifs/NearFarClickedState.gif)
 
 #### Getting Clicked State Events
 
@@ -344,15 +344,15 @@ clickedEvent.OnClicked.AddListener(() =>
 The Toggle On and Toggle Off states are a pair and both need to be present for toggle behavior.  By default, the Toggle On and Toggle Off states are triggered through a far interaction click (Select Far state).  By default, the Toggle Off state is active on start, meaning that the toggle will be initialized to off.  If a user wants the Toggle On state to be active on start, then in the Toggle On state set `IsSelectedOnStart` to true.
 
 **ToggleOn and Toggle Off State Behavior**
-![ToggleOnToggleOffStateEditor](../images/interactive-element/InEditor/Gifs/ToggleOnToggleOffStateEditor.gif)
+![Toggle on and off with virtual hand interactions](../images/interactive-element/InEditor/Gifs/ToggleOnToggleOffStateEditor.gif)
 
 **ToggleOn and Toggle Off State Inspector**
-![ToggleOnToggleOffStateInspector](../images/interactive-element/InEditor/ToggleOnToggleOffStateInspector.png)
+![Toggle component in the Inspector](../images/interactive-element/InEditor/ToggleOnToggleOffStateInspector.png)
 
 **Near and Far Toggle States Example**  
 Similar to the Clicked state, toggle state setting can have multiple entry points using the `interactiveElement.SetToggleStates()` method. For example, if a user wants touch as an additional entry point to set the toggle states, then they add the `SetToggleStates()` method to one of the events in the Touch state. 
 
-![NearFarToggleStates](../images/interactive-element/InEditor/Gifs/NearFarToggleStates.gif)
+![Near and far toggle with virtual hand interactions](../images/interactive-element/InEditor/Gifs/NearFarToggleStates.gif)
 
 #### Getting Toggle On and Toggle Off State Events
 
@@ -382,10 +382,10 @@ toggleOffEvent.OnToggleOff.AddListener(() =>
 The Speech Keyword state listens for the keywords defined in the Mixed Reality Speech Profile. Any new keyword MUST be registered in the speech command profile prior to runtime (steps below). 
 
 **Speech Keyword State Behavior**
-![SpeechKeywordStateEditor](../images/interactive-element/InEditor/Gifs/SpeechKeywordStateEditor.gif)
+![Speech keyword with virtual interaction](../images/interactive-element/InEditor/Gifs/SpeechKeywordStateEditor.gif)
 
 **Speech Keyword State Inspector**
-![SpeechKeywordStateInspector](../images/interactive-element/InEditor/SpeechKeywordStateInspector.png)
+![Speech keyword component in the Inspector](../images/interactive-element/InEditor/SpeechKeywordStateInspector.png)
 
 > [!NOTE]
 > The Speech Keyword state was triggered in editor by pressing the F5 key in the gif above. Setting up in editor testing for speech is outlined the steps below. 
@@ -400,25 +400,25 @@ The Speech Keyword state listens for the keywords defined in the Mixed Reality S
 
 1. Scroll down to the Speech section in the Input profile and clone the Speech Profile
 
-    ![SpeechKeywordProfileClone](../images/interactive-element/InEditor/SpeechKeywordProfileClone.png) 
+    ![Speech keyword profile in the MRTK game object](../images/interactive-element/InEditor/SpeechKeywordProfileClone.png) 
 
 1. Select Add a New Speech Command
 
-    ![SpeechKeywordStateEditor](../images/interactive-element/InEditor/SpeechKeywordProfileAddKeyword.png) 
+    ![Adding a new speech keyword in the MRTK profile](../images/interactive-element/InEditor/SpeechKeywordProfileAddKeyword.png) 
 
 1. Enter the new keyword. Optional: Change the KeyCode to F5 (or another KeyCode) to allow for testing in editor. 
 
-    ![SpeechKeywordProfileAddKeywordName](../images/interactive-element/InEditor/SpeechKeywordProfileAddKeywordName.png) 
+    ![Configuring speech keyword in the MRTK profile](../images/interactive-element/InEditor/SpeechKeywordProfileAddKeywordName.png) 
 
 1. Go back to the Interactive Element Speech Keyword state inspector and select **Add Keyword** 
 
-    ![SpeechKeywordAddKeyword](../images/interactive-element/InEditor/SpeechKeywordAddKeyword.png) 
+    ![Adding keyword to interactive element component](../images/interactive-element/InEditor/SpeechKeywordAddKeyword.png) 
 
-    ![SpeechKeywordAddKeywordBlank](../images/interactive-element/InEditor/SpeechKeywordAddKeywordBlank.png) 
+    ![Keyword validation and registration](../images/interactive-element/InEditor/SpeechKeywordAddKeywordBlank.png) 
 
 1. Enter the new keyword that was just registered in the Speech Profile
 
-    ![SpeechKeywordAddKeyword](../images/interactive-element/InEditor/SpeechKeywordEnterKeyword.png) 
+    ![Entering new speech keyword](../images/interactive-element/InEditor/SpeechKeywordEnterKeyword.png) 
 
 
 To test the Speech Keyword state in editor, press the KeyCode that was defined in step 6 (F5) to simulate the speech keyword recognized event.
@@ -452,19 +452,19 @@ The custom state created via inspector will be initialized with the default stat
 
 1. Navigate to **Create Custom State** in the inspector for Interactive Element.
     
-    ![InteractiveElementCreateCustomState](../images/interactive-element/InEditor/InteractiveElementCreateCustomState.png)
+    ![Creating a custom state](../images/interactive-element/InEditor/InteractiveElementCreateCustomState.png)
 
 1. Enter the name of the new state. This name must be unique and cannot be the same as the existing core states. 
     
-    ![InteractiveElementCreateCustomStateName](../images/interactive-element/InEditor/InteractiveElementCreateCustomStateName.png)
+    ![Entering the name of a new custom state](../images/interactive-element/InEditor/InteractiveElementCreateCustomStateName.png)
 
 1. Select **Set State Name** to add to the state list.
     
-    ![InteractiveElementCreateCustomStateNameSet](../images/interactive-element/InEditor/InteractiveElementCreateCustomStateNameSet.png)
+    ![Add custom state to state list](../images/interactive-element/InEditor/InteractiveElementCreateCustomStateNameSet.png)
 
    This custom state is initialized with the default `StateEvents` event configuration which contains the `OnStateOn` and `OnStateOff` events. To create a custom event configuration for a new state see: [Creating a Custom State with a Custom Event Configuration](#creating-a-custom-state-with-a-custom-event-configuration).
     
-    ![InteractiveElementCreateCustomStateNameSet](../images/interactive-element/InEditor/InteractiveElementCreateCustomStateEventConfig.png)
+    ![New state shown in the interactive element component](../images/interactive-element/InEditor/InteractiveElementCreateCustomStateEventConfig.png)
 
 
 ### How to Create a Custom State via Script
@@ -494,14 +494,14 @@ The following steps walk through an existing example of creating a custom state 
 
 1. Create two .cs files named state name + "Receiver" and state name + "Events". The naming of these files are taken into consideration internally and must follow the state name + Event/Receiver convention. 
 
-    ![KeyboardStateFiles](../images/interactive-element/InEditor/KeyboardStateFiles.png)
+    ![Keyboard state scripts](../images/interactive-element/InEditor/KeyboardStateFiles.png)
 
 1. See the KeyboardEvents.cs and KeyboardReceiver.cs files for more details on file contents. New event configuration classes must inherit from `BaseInteractionEventConfiguration` and new event receiver classes must inherit from `BaseEventReceiver`.  Examples on state setting for the Keyboard state are located in the `CustomStateSettingExample.cs` file. 
 
 1. Add the state to Interactive Element using the state name, the state name will be recognized if event configuration and event receiver files exist.  The properties in the custom event configuration file should appear in the inspector.
 
-    ![KeyboardStateFiles](../images/interactive-element/InEditor/AddKeyboardState.png)
-    ![KeyboardStateFiles](../images/interactive-element/InEditor/SetKeyboardStateName.png)
+    ![Adding custom state to interactive element](../images/interactive-element/InEditor/AddKeyboardState.png)
+    ![Custom state recognized in the interactive element](../images/interactive-element/InEditor/SetKeyboardStateName.png)
 
 
 1. For more examples of event configuration and event receiver files see the files at these paths:    
@@ -512,7 +512,7 @@ The following steps walk through an existing example of creating a custom state 
 
 The example scene for Interactive Element + State Visualizer is located here: MRTK\SDK\Experimental\InteractiveElement\Examples\InteractiveElementExampleScene.unity
 
-![ExampleScene](../images/interactive-element/InEditor/ExampleScene.png)
+![Example scene with Interactive Element and State Visualizer](../images/interactive-element/InEditor/ExampleScene.png)
 
 ### Compressable Button
 
@@ -529,11 +529,11 @@ The State Visualizer currently leverages the Unity Animation System.
 
 When the **Generate New Animation Clips** button in the State Visualizer is pressed, new animation clip assets are generated based on the state names in Interactive Element and are placed in the MixedRealityToolkit.Generated folder. The Animation Clip property in each state container is set to the associated animation clip.
 
-![AnimationClips](../images/interactive-element/StateVisualizer/AnimationClips.png)
+![Animation clips in state visualizer component](../images/interactive-element/StateVisualizer/AnimationClips.png)
 
 An [Animator State Machine](https://docs.unity3d.com/Manual/AnimationOverview.html) is also generated to manage smooth transitions between animation clips.  By default, the state machine utilizes the [Any State](https://docs.unity3d.com/Manual/class-State.html) to allow transitions between any state in Interactive Element. 
 
-[Animation Parameters](https://docs.unity3d.com/Manual/AnimationParameters.html) are also generated for each state, the trigger parameters are used in the State Visualizer to trigger an animation.
+[State visualizers triggered in the animator](https://docs.unity3d.com/Manual/AnimationParameters.html) are also generated for each state, the trigger parameters are used in the State Visualizer to trigger an animation.
 
 ![UnityStateMachine](../images/interactive-element/StateVisualizer/UnityStateMachine.png)
 
@@ -548,34 +548,34 @@ The State Visualizer must be added to an object via the Inspector and cannot be 
 1. Attach State Visualizer
 1. Select **Generate New Animation Clips**
 
-    ![GenerateAnimationClips](../images/interactive-element/StateVisualizer/GenerateAnimationClips.png)
+    ![Generating new animation clips](../images/interactive-element/StateVisualizer/GenerateAnimationClips.png)
 
-    ![GenerateAnimationClips2](../images/interactive-element/StateVisualizer/GenerateAnimationClips2.png)
+    ![Showing generated animation clips in visualizer and interactive element components](../images/interactive-element/StateVisualizer/GenerateAnimationClips2.png)
 
 1. In the Focus state container, select **Add Target**
 
-    ![AddTarget](../images/interactive-element/StateVisualizer/AddTarget.png)
+    ![Adding state visualizer target](../images/interactive-element/StateVisualizer/AddTarget.png)
 
 1. Drag the current game object to the target field 
 
-    ![SetTarget](../images/interactive-element/StateVisualizer/SetTarget.png)
+    ![Setting state visualizer target](../images/interactive-element/StateVisualizer/SetTarget.png)
 
 1. Open the Cube Animatable Properties foldout
 1. Select the Animatable property drop down menu and select **Color**
 
-    ![SetColor](../images/interactive-element/StateVisualizer/SetColor.png)
+    ![Setting state visualizer color](../images/interactive-element/StateVisualizer/SetColor.png)
 
 1. Select **Add the Color Animatable Property**
 
-    ![SetColorProperty](../images/interactive-element/StateVisualizer/SetColorProperty.png)
+    ![Selecting the visualizer color animatable property](../images/interactive-element/StateVisualizer/SetColorProperty.png)
 
 1. Choose a Color 
 
-    ![SetBlueColorProperty](../images/interactive-element/StateVisualizer/SetBlueColor.png)
+    ![Choosing a visualizer color from color wheel](../images/interactive-element/StateVisualizer/SetBlueColor.png)
 
 1. Press play and observe the transitional color change
 
-    ![FocusColorChange](../images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
+    ![Transitional color change example with virtual hand interaction](../images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
 
 ## Animatable Properties
 
@@ -595,37 +595,37 @@ If using the Animatable properties for animation, the curve type is set to EaseI
 
 The Scale Offset Animatable property takes the current scale of the object and adds the defined offset.
 
-![ScaleOffset](../images/interactive-element/InEditor/Gifs/ScaleOffset.gif)
+![Scale offset with virtual hand interaction](../images/interactive-element/InEditor/Gifs/ScaleOffset.gif)
 
 ### Position Offset
 
 The Position Offset Animatable property takes the current position of the object and adds the defined offset.
 
-![PositionOffset](../images/interactive-element/InEditor/Gifs/PositionOffset.gif)
+![Position offset with virtual hand interaction](../images/interactive-element/InEditor/Gifs/PositionOffset.gif)
 
 ### Color
 
 The Color Animatable property represents the main color of a material if the material has a main color property. This property animates the `material._Color` property.
 
-![FocusColorChange](../images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
+![Focus color change with virtual hand interaction](../images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
 
 ### Shader Color
 
 The Shader Color Animatable property refers to a shader property of type color. A property name is required for all shader properties. The gif below demonstrates animating a shader color property named Fill_Color that is not the main material color.  Observe the changing values in the material inspector.
 
-![ShaderColor](../images/interactive-element/InEditor/Gifs/ShaderColor.gif)
+![Shade color with virtual hand interaction](../images/interactive-element/InEditor/Gifs/ShaderColor.gif)
 
 ### Shader Float
 
 The Shader Float Animatable property refers to a shader property of type float. A property name is required for all shader properties. In the gif below, observe the changing values in the material inspector for the Metallic property. 
 
-![ShaderFloat](../images/interactive-element/InEditor/Gifs/ShaderFloat.gif)
+![Shader float with virtual hand interaction](../images/interactive-element/InEditor/Gifs/ShaderFloat.gif)
 
 ### Shader Vector
 
 The Shader Vector Animatable property refers to a shader property of type Vector4. A property name is required for all shader properties. In the gif below, observe the changing values in the material inspector for the Tiling (Main Tex_ST) property. 
 
-![ShaderVector](../images/interactive-element/InEditor/Gifs/ShaderVector.gif)
+![Shader vector with virtual hand interaction](../images/interactive-element/InEditor/Gifs/ShaderVector.gif)
 
 
 ### How to Find Animatable Shader Property Names
@@ -635,11 +635,11 @@ The Shader Vector Animatable property refers to a shader property of type Vector
 1. Select any animation clip in the Animation window
 1. Select **Add Property**, open the Mesh Renderer foldout 
 
-    ![AnimationWindow](../images/interactive-element/StateVisualizer/AnimationWindow.png)
+    ![Adding animation property in the Animator window](../images/interactive-element/StateVisualizer/AnimationWindow.png)
 
 1. This list contains the names of all the Animatable property names 
 
-    ![MeshRendererProperties](../images/interactive-element/StateVisualizer/MeshRendererProperties.png)
+    ![Mesh renderer animation properties in the Animator window](../images/interactive-element/StateVisualizer/MeshRendererProperties.png)
 
 ## See also
 

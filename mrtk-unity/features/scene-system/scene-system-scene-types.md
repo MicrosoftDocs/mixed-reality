@@ -46,7 +46,7 @@ To enable this feature, check `Use Lighting Scene` in your profile and populate 
 
 Your profile stores cached copies of the lighting settings kept in your lighting scenes. If those settings change in your lighting scenes, you will need to update your cache to ensure lighting appears as expected in play mode. Your profile will display a warning when it suspects your cached settings are out of date. Clicking `Update Cached Lighting Settings` will load each of your lighting scenes, extract their settings, then store them in your profile.
 
-![Scene system lighting settings](../images/scene-system/MRTK_SceneSystemCachedLightingSettings.PNG)
+![Scene system cached lighting settings](../images/scene-system/MRTK_SceneSystemCachedLightingSettings.PNG)
 
 ### Editor behavior
 
