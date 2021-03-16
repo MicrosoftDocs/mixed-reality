@@ -320,6 +320,3 @@ Please refer to the API docs of [`TestUtilities`](xref:Microsoft.MixedReality.To
 [`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities) for further methods
 of these util classes as they're extended on a regular basis while new tests get added to MRTK.
 
-## See also
-
-* [Documentation portal generation guide](../contributing/dev-doc-guide.md)

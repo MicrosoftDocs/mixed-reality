@@ -60,4 +60,4 @@ When an example package is updated, Unity provides the option to update imported
 
 ## See Also
 
-- [Mixed Reality Toolkit packages](../packages-releases/mrtk-packages.md)
+- [Mixed Reality Toolkit packages](../packages/mrtk-packages.md)
