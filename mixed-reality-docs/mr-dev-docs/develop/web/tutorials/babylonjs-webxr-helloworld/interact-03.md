@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 # Tutorial: Interact with 3D object
 
-Learn how to add 3D object interactions to your Mixed Reality experiences with babylon.js. In this section, you'll start with something simple, like painting the faces of a cube with different colors when you select the object.
+Learn how to create 3D objects and interactions for a Mixed Reality experience using babylon.js. In this section, you'll start with something simple, like painting the faces of a cube with different colors when you select the object.
 
 This tutorial covers the following topics:
 
