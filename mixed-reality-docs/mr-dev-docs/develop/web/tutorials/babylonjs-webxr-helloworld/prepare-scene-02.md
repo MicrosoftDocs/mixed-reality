@@ -30,6 +30,9 @@ In previous tutorial step a basic web hosting page was created. Have the hosting
     <head>
         <title>Babylon.js sample code</title>
         <script src="https://preview.babylonjs.com/babylon.js"></script>
+        <style>
+            body,#renderCanvas { width: 100%; height: 100%;}
+        </style>
     </head>
 <body>
     <canvas id="renderCanvas"></canvas>
@@ -76,8 +79,8 @@ A scene is where all the contents will be displayed. There might be multiple sce
 1. Let's add our first 3D shape. In the 3D virtual world shapes are built from *meshes*, lots of triangular facets joined together, each facet made from three vertices. You can either use a predefined mesh or create your own custom mesh. Here we will be using a predefined box mesh, i.e. a cube. To create the box use [BABYLON.MeshBuilder.CreateBox](https://doc.babylonjs.com/divingDeeper/mesh/creation/set/box). The parameters are name, and options (options are different according to the type of mesh). Append the following code to the function *createScene*:
 
     ```javascript
-    const box = BABYLON.MeshBuilder.CreateBox("box", {wrap: true});
-    box.position.x = 1;
+    const box = BABYLON.MeshBuilder.CreateBox("box", {});
+    box.position.x = 0.5;
     box.position.y = 1;
     ```
 
@@ -86,14 +89,15 @@ A scene is where all the contents will be displayed. There might be multiple sce
 
 ## Add a camera
 
-1. To allow user input, a camera must be attached to the canvas. Let's add the camera of type [BABYLON.ArcRotateCamera](https://doc.babylonjs.com/divingDeeper/cameras/camera_introduction#arc-rotate-camera) that allows us to look around, i.e. can be rotated around object that we've just added to the scene. The parameters required to create an instance of the camera are name, alpha (rotation along the longitudinal axis), beta (rotation along the latitudinal axis), radius (distance from the target), and target. Add the following code to the *createScene* function:
+1. To allow user input, a camera must be attached to the canvas. Let's add the camera of type [BABYLON.ArcRotateCamera](https://doc.babylonjs.com/divingDeeper/cameras/camera_introduction#arc-rotate-camera) that allows us to look around, i.e. can be rotated around object that we've just added to the scene. The parameters required to create an instance of the camera are name, alpha (rotation along the longitudinal axis), beta (rotation along the latitudinal axis), radius (distance from the target), and target (the target the camera should look at). Add the following code to the *createScene* function:
 
     ```javascript
-    var alpha =  -Math.PI / 2;
-    var beta = Math.PI / 3;
-    var radius = 10;
-    var target = new BABYLON.Vector3(-0.5, 0, -0.5);
-    const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target);
+    var alpha =  -3*Math.PI/4;
+    var beta = Math.PI;
+    var radius = 5;
+    
+    const camera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 0);
+    camera.setPosition(new BABYLON.Vector3(alpha, beta, radius));
     camera.attachControl(canvas, true);
     ```
 
@@ -113,6 +117,9 @@ A scene is where all the contents will be displayed. There might be multiple sce
     <html>
     <head>
         <script src="https://preview.babylonjs.com/babylon.js"></script>
+        <style>
+            body,#renderCanvas { width: 100%; height: 100%;}
+        </style>
     </head>
     <body>
         <canvas id="renderCanvas"></canvas>
@@ -123,12 +130,13 @@ A scene is where all the contents will be displayed. There might be multiple sce
             var createScene = function() {
                 const scene = new BABYLON.Scene(engine);
                 scene.clearColor = new BABYLON.Color3.Black;
-
-                var longitude =  -Math.PI/2;
-                var latitude = Math.PI/3;
-                var radius = 10;
-                var position = new BABYLON.Vector3(-0.5, 0, -0.5);
-                const camera = new BABYLON.ArcRotateCamera("Camera", longitude, latitude, radius, position);
+                
+                var alpha =  -3*Math.PI/4;
+                var beta = Math.PI;
+                var radius = 5;
+                
+                const camera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 0);
+                camera.setPosition(new BABYLON.Vector3(alpha, beta, radius));
                 camera.attachControl(canvas, true);
                 
                 const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0));
