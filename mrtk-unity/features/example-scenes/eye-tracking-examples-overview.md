@@ -42,7 +42,7 @@ In addition, there is an example for hands-free rotation of 3D holograms by maki
 
 **Summary**: Scroll, pan, zoom, 3D rotation using a combination of eyes, voice and hand input.
 
-### [**Eye-Supported Positioning**](../input/eye-tracking/eye-tracking-positioning.md)
+### [**Eye-Supported Positioning**](../input/eye-tracking/eye-tracking-eyes-and-hands.md)
 
 This tutorial shows an input scenario called [Put-That-There](https://youtu.be/CbIn8p4_4CQ) dating back to research from the MIT Media Lab in the early 1980's with eye, hand and voice input.
 The idea is simple: Benefit from your eyes for fast target selection and positioning.

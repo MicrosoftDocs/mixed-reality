@@ -40,7 +40,7 @@ As a developer, you want to provide a flexible solution that allows the user to 
 In this case, the most flexible solution is to use the primary focus handler as it will notify you whenever the currently prioritized primary focus pointer triggers an event. Please note that if hand rays are enabled, the head or eye gaze focus pointer are disabled as soon as the hands come into view.
 
 > [!IMPORTANT]
-> Please note that if hand rays are enabled, the head or eye gaze focus pointer are disabled as soon as the hands come into view. If you want to support a [_'look and pinch'_ interaction, you need to disable the hand ray](eye-tracking-eyes-and-hands.md#how-to-disable-the-hand-ray). In our eye tracking sample scenes, we have disabled the hand ray to allow for showcasing richer interactions using eyes + hand motions - see for example [Eye-Supported Positioning](eye-tracking-positioning.md).
+> Please note that if hand rays are enabled, the head or eye gaze focus pointer are disabled as soon as the hands come into view. If you want to support a [_'look and pinch'_ interaction, you need to disable the hand ray](eye-tracking-eyes-and-hands.md#how-to-disable-the-hand-ray). In our eye tracking sample scenes, we have disabled the hand ray to allow for showcasing richer interactions using eyes + hand motions - see for example [Eye-Supported Positioning](eye-tracking-eyes-and-hands.md).
 
 [**2. Use both eye focus and hand rays at the same time:**](#2-independent-eye-gaze-specific-eyetrackingtarget)
 
