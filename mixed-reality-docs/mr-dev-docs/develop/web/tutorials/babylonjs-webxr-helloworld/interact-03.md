@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 # Tutorial: Interact with 3D object
 
-Learn how to create 3D objects and interactions for a Mixed Reality experience using babylon.js. In this section, you'll start with something simple, like painting the faces of a cube with different colors when you select the object.
+Learn how to create 3D objects and interactions for a Mixed Reality experience using babylon.js. In this section, you'll start with something simple, like painting the faces of a cube when you select the object.
 
 This tutorial covers the following topics:
 
@@ -24,49 +24,49 @@ This tutorial covers the following topics:
 
 In previous tutorial step a basic web page with a scene was created. Have the hosting web page open for editing.
 
-    ```html
-    <html>
-    <head>
-        <script src="https://preview.babylonjs.com/babylon.js"></script>
-        <style>
-            body,#renderCanvas { width: 100%; height: 100%;}
-        </style>
-    </head>
-    <body>
-        <canvas id="renderCanvas"></canvas>
-        <script>
-            var canvas = document.getElementById("renderCanvas");
-            var engine = new BABYLON.Engine(canvas, true);
+```html
+<html>
+<head>
+    <script src="https://preview.babylonjs.com/babylon.js"></script>
+    <style>
+        body,#renderCanvas { width: 100%; height: 100%;}
+    </style>
+</head>
+<body>
+    <canvas id="renderCanvas"></canvas>
+    <script>
+        var canvas = document.getElementById("renderCanvas");
+        var engine = new BABYLON.Engine(canvas, true);
+        
+        var createScene = function() {
+            const scene = new BABYLON.Scene(engine);
+            scene.clearColor = new BABYLON.Color3.Black;
             
-            var createScene = function() {
-                const scene = new BABYLON.Scene(engine);
-                scene.clearColor = new BABYLON.Color3.Black;
-                
-                var alpha =  -3*Math.PI/4;
-                var beta = Math.PI;
-                var radius = 5;
-                
-                const camera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 0);
-                camera.setPosition(new BABYLON.Vector3(alpha, beta, radius));
-                camera.attachControl(canvas, true);
-                
-                const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0));
-                
-                const box = BABYLON.MeshBuilder.CreateBox("box", {wrap: true});
-                box.position.x = 0.5;
-                box.position.y = 1;
-                
-                return scene;
-            };
+            var alpha =  -3*Math.PI/4;
+            var beta = Math.PI;
+            var radius = 5;
             
-            var scene = createScene();
-            engine.runRenderLoop(function(){
-                scene.render();
-            });
-        </script>
-    </body>
-    </html>
-    ```
+            const camera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 0);
+            camera.setPosition(new BABYLON.Vector3(alpha, beta, radius));
+            camera.attachControl(canvas, true);
+            
+            const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0));
+            
+            const box = BABYLON.MeshBuilder.CreateBox("box", {wrap: true});
+            box.position.x = 0.5;
+            box.position.y = 1;
+            
+            return scene;
+        };
+        
+        var scene = createScene();
+        engine.runRenderLoop(function(){
+            scene.render();
+        });
+    </script>
+</body>
+</html>
+```
 
 ## Add interaction
 
@@ -83,7 +83,7 @@ In previous tutorial step a basic web page with a scene was created. Have the ho
     * Change the face color when the cube is clicked
     * Move the cube after the color is changed
 
-To add interactions we should be using [actions](https://doc.babylonjs.com/divingDeeper/events/actions). An action is launched in response to the event trigger. For example, when the user clicks on the cube. All we need to do is instantiate BABYLON.ActionManager and register an action for certain trigger. The [BABYLON.ExecuteCodeAction](https://doc.babylonjs.com/typedoc/classes/babylon.executecodeaction) will run our JavaScript function when someone clicks on the cube:
+    To add interactions we should be using [actions](https://doc.babylonjs.com/divingDeeper/events/actions). An action is launched in response to the event trigger. For example, when the user clicks on the cube. All we need to do is instantiate BABYLON.ActionManager and register an action for certain trigger. The [BABYLON.ExecuteCodeAction](https://doc.babylonjs.com/typedoc/classes/babylon.executecodeaction) will run our JavaScript function when someone clicks on the cube:
 
     ```javascript
     box.actionManager = new BABYLON.ActionManager(scene);
@@ -129,7 +129,7 @@ To add interactions we should be using [actions](https://doc.babylonjs.com/divin
                 
                 const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0));
                 
-                const box = BABYLON.MeshBuilder.CreateBox("box", {wrap: true});
+                const box = BABYLON.MeshBuilder.CreateBox("box", {});
                 box.position.x = 0.5;
                 box.position.y = 1;
 
@@ -213,7 +213,7 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
                 
                 const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0));
                 
-                const box = BABYLON.MeshBuilder.CreateBox("box", {wrap: true});
+                const box = BABYLON.MeshBuilder.CreateBox("box", {});
                 box.position.x = 0.5;
                 box.position.y = 1;
 
@@ -265,7 +265,7 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
 1. This action will launch the Mixed Reality Portal window as shown below:
 ![Mixed Reality Portal](../images/mixed-reality-portal.png)
 
-Use the W,A,S, and D keys on your keyboard to walk forward, back left and right accordingly. Use simulated hand to target the cube and press the Enter key on your keyboard to perform the click action. The cube will change its color and move to a new position.
+1. Use the W,A,S, and D keys on your keyboard to walk forward, back left and right accordingly. Use simulated hand to target the cube and press the Enter key on your keyboard to perform the click action. The cube will change its color and move to a new position.
 
 <!-- TBD: HoloLens2 emulator does not work, investigate possible workaround -->
 
