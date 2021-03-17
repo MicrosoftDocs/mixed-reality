@@ -4,7 +4,7 @@ description: Details of different capabilities MRTK supports
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, capabilities,
 ---
 

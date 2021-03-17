@@ -4,7 +4,7 @@ description: Input system, Device managers and data providers in MRTK
 author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Events
 ---
 
@@ -46,12 +46,12 @@ This is done by using [ExecuteHierarchy](https://docs.unity3d.com/ScriptReferenc
 
 Events can be sent to global listeners. It's possible to register for all input events by using
 the input system's [`IMixedRealityEventSystem`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem)
-interface. It's recommended to use the [RegisterHandler](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem.RegisterHandler``1(IEventSystemHandler))
+interface. It's recommended to use the [RegisterHandler](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem.RegisterHandler%2A)
 method for registering for global events - the deprecated `Register` function will cause listeners
 to get notified of ALL input events, rather than just input events of a particular type
 (where type is defined by the event interface).
 
-Note that [fallback listeners](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSystem.PushFallbackInputHandler(GameObject))
+Note that [fallback listeners](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSystem.PushFallbackInputHandler%2A)
 are another type of global listeners which are also discouraged because they will receive
 every single input event that hasn't been handled elsewhere in the scene.
 

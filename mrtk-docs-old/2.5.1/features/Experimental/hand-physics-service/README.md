@@ -4,7 +4,7 @@ description: description Hand Physics extension services.
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 # Hand physics extension service

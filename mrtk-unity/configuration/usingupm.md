@@ -4,7 +4,7 @@ description: Using MRTK in Unity pakage manager
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK Pakages,
 ---
 
@@ -60,4 +60,4 @@ When an example package is updated, Unity provides the option to update imported
 
 ## See Also
 
-- [Mixed Reality Toolkit packages](../packages-releases/mrtk-packages.md)
+- [Mixed Reality Toolkit packages](../packages/mrtk-packages.md)

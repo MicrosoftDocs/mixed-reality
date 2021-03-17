@@ -4,7 +4,7 @@ description: Documentation on Manipulation Handler in MRTK
 author: CDiaz-MS
 ms.author: cadia 
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Manipulation,
 ---
 
@@ -20,7 +20,7 @@ Add the `ManipulationHandler` script component to a GameObject. Make sure to als
 
 To make the object respond to near articulated hand input, add the `NearInteractionGrabbable` script as well.
 
-![Manipulation Handler](../images/manipulation-handler/MRTK_ManipulationHandler_Howto.png)
+![Using the manipulation handler in the unity editor](../images/manipulation-handler/MRTK_ManipulationHandler_Howto.png)
 
 ## Inspector properties
 
