@@ -220,6 +220,8 @@
         href: unity/shared-experiences-in-unity.md
       - name: Locatable camera
         href: unity/locatable-camera-in-unity.md
+      - name: Holographic Remoting in desktop app
+        href: unity/holographic-remoting-desktop.md
       - name: Focus point
         href: unity/focus-point-in-unity.md
       - name: Tracking loss
