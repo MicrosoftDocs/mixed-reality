@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Teleport system,
 ---
 
-# Teleport system
+# Teleport System
 
 The teleport system is a sub-system of the MRTK that handles teleporting the user when the
 application is using an opaque display. For AR experiences (like HoloLens), the teleportation
