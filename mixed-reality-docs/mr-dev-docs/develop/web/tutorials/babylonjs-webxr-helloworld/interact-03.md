@@ -5,7 +5,7 @@ author: bogenera
 ms.author: ayyonet
 ms.date: 03/05/2021
 ms.topic: article
-keywords: mixed reality, javascript, tutorial, BabylonJS, hololens, mixed reality, UWP, Windows 10
+keywords: mixed reality, javascript, tutorial, BabylonJS, hololens, mixed reality, UWP, Windows 10, WebXR, immersive web
 ms.localizationpriority: high
 ---
 
@@ -27,7 +27,7 @@ In previous tutorial step a basic web page with a scene was created. Have the ho
 ```html
 <html>
 <head>
-    <script src="https://preview.babylonjs.com/babylon.js"></script>
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
     <style>
         body,#renderCanvas { width: 100%; height: 100%;}
     </style>
@@ -59,9 +59,9 @@ In previous tutorial step a basic web page with a scene was created. Have the ho
             return scene;
         };
         
-        var scene = createScene();
+        var sceneToRender = createScene();
         engine.runRenderLoop(function(){
-            scene.render();
+            sceneToRender.render();
         });
     </script>
 </body>
@@ -87,16 +87,18 @@ In previous tutorial step a basic web page with a scene was created. Have the ho
 
     ```javascript
     box.actionManager = new BABYLON.ActionManager(scene);
-    box.actionManager.registerAction(new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPickTrigger, function (evt) {
-        var sourceBox = evt.meshUnderPointer;
-        
-        //move the box upright
-        sourceBox.position.x += 0.1;
-        sourceBox.position.y += 0.1;
+    box.actionManager.registerAction(new BABYLON.ExecuteCodeAction(
+        BABYLON.ActionManager.OnPickTrigger, 
+        function (evt) {
+            var sourceBox = evt.meshUnderPointer;
+            
+            //move the box upright
+            sourceBox.position.x += 0.1;
+            sourceBox.position.y += 0.1;
 
-        //update the color
-        boxMaterial.diffuseColor = BABYLON.Color3.Random();
-    }));
+            //update the color
+            boxMaterial.diffuseColor = BABYLON.Color3.Random();
+        }));
     ```
 
 1. The final code of the web page will look as follows:
@@ -104,7 +106,7 @@ In previous tutorial step a basic web page with a scene was created. Have the ho
     ```html
     <html>
     <head>
-        <script src="https://preview.babylonjs.com/babylon.js"></script>
+        <script src="https://cdn.babylonjs.com/babylon.js"></script>
         <style>
             body,#renderCanvas { width: 100%; height: 100%;}
         </style>
@@ -151,9 +153,9 @@ In previous tutorial step a basic web page with a scene was created. Have the ho
                 return scene;
             };
             
-            var scene = createScene();
+            var sceneToRender = createScene();
             engine.runRenderLoop(function(){
-                scene.render();
+                sceneToRender.render();
             });
         </script>
     </body>
@@ -188,7 +190,7 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
     ```html
     <html>
     <head>
-        <script src="https://preview.babylonjs.com/babylon.js"></script>
+        <script src="https://cdn.babylonjs.com/babylon.js"></script>
         <style>
             body,#renderCanvas { width: 100%; height: 100%;}
         </style>
@@ -245,9 +247,9 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
                 return scene;
             };
             
-            var scene = createScene();
+            var sceneToRender = createScene();
             engine.runRenderLoop(function(){
-                scene.render();
+                sceneToRender.render();
             });
         </script>
     </body>

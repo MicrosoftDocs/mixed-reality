@@ -5,7 +5,7 @@ author: bogenera
 ms.author: ayyonet
 ms.date: 03/05/2021
 ms.topic: article
-keywords: mixed reality, javascript, tutorial, BabylonJS, hololens, mixed reality, UWP, Windows 10
+keywords: mixed reality, javascript, tutorial, BabylonJS, hololens, mixed reality, UWP, Windows 10, WebXR, immersive web
 ms.localizationpriority: high
 ---
 
@@ -44,7 +44,7 @@ To create this project from scratch, start with a Visual Studio Code (VSCode) pr
     <html>
         <head>
             <title>Babylon.js sample code</title>
-            <script src="https://preview.babylonjs.com/babylon.js"></script>
+            <script src="https://cdn.babylonjs.com/babylon.js"></script>
         </head>
     <body>
     </body>
@@ -57,7 +57,7 @@ To create this project from scratch, start with a Visual Studio Code (VSCode) pr
     <html>
         <head>
             <title>Babylon.js sample code</title>
-            <script src="https://preview.babylonjs.com/babylon.js"></script>
+            <script src="https://cdn.babylonjs.com/babylon.js"></script>
             <style>
                 body,#renderCanvas { width: 100%; height: 100%;}
             </style>
