@@ -4,7 +4,7 @@ description: documentation guidelines and standards for the MRTK.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
@@ -354,6 +354,6 @@ When writing documentation, installing the following two extensions is also high
 
 Both of these come packaged in the Microsoft published Docs Authoring Pack.
 
-## See also
+## See also 
 
-- [Documentation portal generation guide](../contributing/dev-doc-guide.md)
+* [Example link](https://www.google.com)

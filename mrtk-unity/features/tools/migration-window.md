@@ -4,7 +4,7 @@ description: Documentation on how to migrate to an update in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
@@ -45,5 +45,5 @@ Pressing the *Migrate* button will update the component targeted by the migratio
 ## See also
 
 - [Updating from earlier versions](../../updates-deployment/updating.md)
-- [Microsoft Mixed Reality Toolkit releases](../../release-notes.md)
+- [Microsoft Mixed Reality Toolkit releases](../../release-notes/mrtk-26-release-notes.md)
 - [MRTK roadmap](../../roadmap.md)

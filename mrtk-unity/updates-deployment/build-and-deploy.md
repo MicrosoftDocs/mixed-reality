@@ -4,7 +4,7 @@ description: Documentation to Build and Deploy Apps into various devices.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Visual Studio, Android, IOS
 ---
 
