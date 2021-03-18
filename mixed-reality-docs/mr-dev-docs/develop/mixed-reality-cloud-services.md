@@ -42,7 +42,7 @@ As an added bonus, ARR doesn't restrict what kind of user interface you can use 
 
 ### Azure Spatial Anchors
 
-[Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/), is a cross-platform service that allows you to build spatially aware mixed reality applications. With Azure Spatial Anchors, you can map, persist, and share holographic content across multiple devices at real-world scale. 
+[Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/), or ASA, is a cross-platform service that allows you to build spatially aware mixed reality applications. With Azure Spatial Anchors, you can map, persist, and share holographic content across multiple devices at real-world scale. 
 
 Azure Spatial Anchors is a uniquely tailored solution for common use cases in Mixed Reality, including:
 * **Way-finding**: Where two or more spatial anchors could be connected to create a task list or points of interest a user must interact with.
@@ -60,6 +60,17 @@ The service can be developed in a host of environments and deployed to a large g
 * C++/WinRT and DirectX for HoloLens
 * Xamarin for iOS
 * Xamarin for Android
+
+### Azure Object Anchors
+
+[Azure Object Anchors](https://docs.microsoft.com/azure/object-anchors/), or AOA, is a mixed reality service that helps you create rich, immersive experiences by automatically aligning 3D content with physical objects. Gain contextual understanding of objects without the need for markers or manual alignment. Save significant touch labor, reduce alignment errors, and improve user experiences by building mixed reality applications with Object Anchors.
+
+Azure Object Anchors are especially tailored to common Mixed Reality use cases, including:
+* **Training**: Create Mixed Reality training experiences for your workers, without the need to place markers or spend time manually adjusting hologram alignment.
+* **Task Guidance**: Walking employees through a set of tasks can be greatly simplified when using Mixed Reality.
+* **Asset Finding**: If you already have a 3D model of some object in your physical space, Azure Object Anchors can enable you to locate and track instances of that object in your physical environment.
+
+![Virtual overlay of azure object anchors on an open car engine](images/aoa-img-01.png)
 
 ## Cognitive Services
 
