@@ -195,6 +195,47 @@ In the Unity menu, select **File** > **Save As...** to open the Save Scene windo
 In the Save Scene window, navigate to your project's **Scenes** folder, give your scene a suitable name, for example, _GettingStarted_, and click the **Save** button to save the scene:
 
 ![Unity save scene Save prompt window](images/mr-learning-base/base-02-section6-step1-5.png)
+### Configuring the scene
+
+### 1.Importing the tutorial assets
+
+Download the following Unity asset
+
+
+
+
+To Import a Unity asset, In the Unity menu, select **Assets** >**Import New Asset** to open Import Asset window.
+![Unity Import Asset window](images/mr-learning-base/base-02-section6-step1-6.png)
+
+After you have imported the tutorial assets your Project window should look similar to this
+![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-02-section6-step1-7.png)
+
+From the Project window, click-and-drag the **Cube** prefab on to the Hierarchy window ,then in the Inspector window, configure the **Transform** component as follows 
+ * **Position**: X = 0, Y = 0, Z = 0.5
+*  **Rotation**: X = 0, Y = 0, Z = 0
+*  **Scale**: X = 1, Y = 1, Z = 1
+
+![Unity Hierarchy, Scene ,tutorial assets](images/mr-learning-base/base-02-section6-step1-8.png)
+
+
+With the **Cube** still selected in the Hierarchy window, in the Inspector window ,click on **Add Component** button ,and search for and select **Object Manipulator** script to add the Object Manipulator script to the cube object.
+
+![Unity Inspector,Add components](images/mr-learning-base/base-02-section6-step1-9.png)
+Repeat the same to add **Near Interaction Grabbable scripts** to the cube
+
+![Unity Hierarchy, Scene ,tutorial assets](images/mr-learning-base/base-02-section6-step1-10.png)
+
+Now enter to the gamemode,by holding the **Shift** key and left click on the mouse you can move the cube.
+
+![Unity GameMode,run scene](images/mr-learning-base/base-02-section6-step1-11.png)
+
+**Congratulations**
+
+
+
+
+
+
 
 ## Building your application to your HoloLens 2
 
@@ -214,7 +255,11 @@ Wait for Unity to finish the build process:
 
 ![Unity build process in progress](images/mr-learning-base/base-02-section7-step1-3.png)
 
+
+
+
 ### 2. Build and deploy the application
+
 
 When the build process has completed, Unity will prompt Windows File Explorer to open the location you stored the build. Navigate inside the folder, and double-click the solution file to open it in Visual Studio:
 
