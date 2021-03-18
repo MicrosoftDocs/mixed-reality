@@ -4,7 +4,6 @@ description: Hand Menu Example scene in MRTK
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 01/12/2021
-ms.localizationpriority: medium
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, HandMenu,
 ---
 
