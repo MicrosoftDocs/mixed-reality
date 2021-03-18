@@ -5,8 +5,20 @@
 ### 1. Download the latest version
 
 We recommend the [Unity LTS (Long Term Support)](https://unity3d.com/unity/qa/lts-releases) stream as the best version to use when starting new projects, updating to its latest revision to pick up the latest stable fixes.
+* Use Unity Hub to install and manage Unity.
 * The current recommendation is to use **[Unity 2019.4 LTS](https://unity3d.com/unity/qa/lts-releases?version=2019.4)**, which is the LTS build required for MRTK v2 below.
 * If you need to use a different version of Unity for specific reasons, Unity supports side-by-side installs of different versions.
+
+When installing Unity, please make sure to check following components under **'Platforms'**.
+* **Universal Windows Platform Build Support** 
+* **Windows Build Support (IL2CPP)**
+
+![MRTK](../../develop/images/Unity_Install_Option_UWP.png)
+
+If you installed Unity without these options, you can add them through **'Add Modules'** menu in Unity Hub.
+
+![MRTK](../../develop/images/Unity_Install_Option_UWP2.png)
+
 
 ### 2. Install the Mixed Reality Feature Tool
 
@@ -25,7 +37,7 @@ You can search packages by name or category, see their dependencies, and even vi
 We recommend completing the getting started section in our curated [HoloLens](../unity/unity-development-overview.md#1-getting-started) or [VR](../unity/unity-development-wmr-overview.md#1-getting-started) development journeys. If you're already following the Unity development for HoloLens journey, finish up the rest of the setup steps listed below and continue on to the [HoloLens 2 Getting Started tutorials](../unity/tutorials/mr-learning-base-01.md).
 
 > [!IMPORTANT]
-> Note that installation instructions are targeted for the latest stable combination of MRTK and Unity releases, which are **MRTK 2.5.1** and **Unity 2019.4 LTS**.
+> Note that installation instructions are targeted for the latest stable combination of MRTK and Unity releases, which are **MRTK 2.6.1** and **Unity 2019.4 LTS**.
 
 > [!NOTE]
 > If you don't want to use MRTK for Unity, you'll need to [script all interactions and behaviors yourself](../unity/configure-unity-project.md).
