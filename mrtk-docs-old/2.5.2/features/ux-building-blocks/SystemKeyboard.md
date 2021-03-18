@@ -4,7 +4,6 @@ description: Overview of System Key Board in MRTK
 author: maxwang-ms
 ms.author: wangmax
 ms.date: 01/12/2021
-ms.localizationpriority: medium
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, System Keyboard,
 ---
 

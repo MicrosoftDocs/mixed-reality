@@ -4,7 +4,6 @@ description: Overview on Enabling and disabling Teleport system in MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-ms.localizationpriority: medium
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Teleport system,
 ---
 
