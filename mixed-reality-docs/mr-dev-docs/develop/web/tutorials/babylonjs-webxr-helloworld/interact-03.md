@@ -42,7 +42,7 @@ In previous tutorial step a basic web page with a scene was created. Have the ho
             const scene = new BABYLON.Scene(engine);
             scene.clearColor = new BABYLON.Color3.Black;
             
-            var alpha =  -3*Math.PI/4;
+            var alpha =  Math.PI;
             var beta = Math.PI;
             var radius = 5;
             
@@ -121,7 +121,7 @@ In previous tutorial step a basic web page with a scene was created. Have the ho
                 const scene = new BABYLON.Scene(engine);
                 scene.clearColor = new BABYLON.Color3.Black;
                 
-                var alpha =  -3*Math.PI/4;
+                var alpha =  Math.PI;
                 var beta = Math.PI;
                 var radius = 5;
                 
@@ -174,14 +174,15 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
 
     This creates a simple 4x4-meter floor.
 
-1. In order to add WebXR support, we need to call *createDefaultXRExperienceAsync*, which has a *Promise* result. Add this code to the createScene function:
+1. In order to add WebXR support, we need to call *createDefaultXRExperienceAsync*, which has a *Promise* result. Add this code at the of *createScene* function instead of *return scene;*:
 
     ```javascript
     var xrPromise = scene.createDefaultXRExperienceAsync({
         floorMeshes: [ground]
     });
-    xrPromise.then((xrExperience) => {
+    return xrPromise.then((xrExperience) => {
         console.log("Done, WebXR is enabled.");
+        return scene;
     });
     ```
 
@@ -205,7 +206,7 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
                 const scene = new BABYLON.Scene(engine);
                 scene.clearColor = new BABYLON.Color3.Black;
                 
-                var alpha =  -3*Math.PI/4;
+                var alpha =  Math.PI;
                 var beta = Math.PI;
                 var radius = 5;
                 
@@ -240,16 +241,14 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
                     floorMeshes: [ground]
                 });
                 
-                xrPromise.then((xrExperience) => {
+                return xrPromise.then((xrExperience) => {
                     console.log("Done, WebXR is enabled.");
+                    return scene;
                 });
-
-                return scene;
             };
             
-            var sceneToRender = createScene();
-            engine.runRenderLoop(function(){
-                sceneToRender.render();
+            createScene().then(sceneToRender => {
+                engine.runRenderLoop(() => sceneToRender.render());
             });
         </script>
     </body>
@@ -268,6 +267,10 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
 ![Mixed Reality Portal](../images/mixed-reality-portal.png)
 
 1. Use the W,A,S, and D keys on your keyboard to walk forward, back left and right accordingly. Use simulated hand to target the cube and press the Enter key on your keyboard to perform the click action. The cube will change its color and move to a new position.
+
+> [!NOTE]
+> When targeting the cube, make sure that the end of hand ray (white circle) intersects with the cube as shown on the picture above. Learn more about [Point and commit with hands](https://docs.microsoft.com/en-us/windows/mixed-reality/design/point-and-commit).
+
 
 <!-- TBD: HoloLens2 emulator does not work, investigate possible workaround -->
 

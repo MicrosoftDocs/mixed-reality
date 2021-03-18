@@ -127,7 +127,7 @@ A scene is where all the contents will be displayed. There might be multiple sce
                 const scene = new BABYLON.Scene(engine);
                 scene.clearColor = new BABYLON.Color3.Black;
                 
-                var alpha =  -3*Math.PI/4;
+                var alpha =  Math.PI;
                 var beta = Math.PI;
                 var radius = 5;
                 
