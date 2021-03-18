@@ -13,11 +13,11 @@ When installing Unity, please make sure to check following components under **'P
 * **Universal Windows Platform Build Support** 
 * **Windows Build Support (IL2CPP)**
 
-![MRTK](../../develop/images/Unity_Install_Option_UWP.png)
+![Unity Universal Windows Platform Build Support option](../../develop/images/Unity_Install_Option_UWP.png)
 
 If you installed Unity without these options, you can add them through **'Add Modules'** menu in Unity Hub.
 
-![MRTK](../../develop/images/Unity_Install_Option_UWP2.png)
+![Unity Windows Build Support option](../../develop/images/Unity_Install_Option_UWP2.png)
 
 
 ### 2. Install the Mixed Reality Feature Tool
