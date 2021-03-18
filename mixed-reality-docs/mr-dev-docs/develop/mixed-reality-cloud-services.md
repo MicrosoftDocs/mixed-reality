@@ -22,7 +22,7 @@ Mixed Reality cloud services like **Azure Remote Rendering** and **Azure Spatial
 
 ### Azure Remote Rendering
 
-[Azure Remote Rendering](https://docs.microsoft.com/azure/remote-rendering/), or ARR, is a service that lets you render highly complex 3D models in real time and stream them to a device. ARR is currently in public preview and can be added to your Unity or Native C++ projects targeting HoloLens 2 or Windows desktop PC.
+[Azure Remote Rendering](https://docs.microsoft.com/azure/remote-rendering/), or ARR, is a service that lets you render highly complex 3D models in real time and stream them to a device. ARR is now generally available and can be added to your Unity or Native C++ projects targeting HoloLens 2 or Windows desktop PC.
 
 <br>
 
@@ -42,7 +42,7 @@ As an added bonus, ARR doesn't restrict what kind of user interface you can use 
 
 ### Azure Spatial Anchors
 
-[Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/), or ASA, is a cross-platform service that allows you to build spatially aware mixed reality applications. With Azure Spatial Anchors, you can map, persist, and share holographic content across multiple devices at real-world scale. 
+[Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/), or ASA, is a cross-platform service that allows you to build spatially aware mixed reality applications. With Azure Spatial Anchors, you can map, persist, and share holographic content across multiple devices at real-world scale. AOA is now in public preview for you to try out in your apps.
 
 Azure Spatial Anchors is a uniquely tailored solution for common use cases in Mixed Reality, including:
 * **Way-finding**: Where two or more spatial anchors could be connected to create a task list or points of interest a user must interact with.
