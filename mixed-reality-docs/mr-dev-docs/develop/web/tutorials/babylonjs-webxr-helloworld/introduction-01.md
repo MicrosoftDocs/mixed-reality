@@ -15,30 +15,29 @@ This tutorial will show you how to create a basic Mixed Reality app using babylo
 
 > [!div class="checklist"]
 > * Set up a development environment
-> * The API to create basic 3D elements  
-> * Create a new web page to display results
+> * The babylon.js API to create basic 3D elements  
+> * Create a new web page
 > * Interact with 3D elements
-> * Run the application in a MixedReality emulator
+> * Run the application in a Windows Mixed Reality Simulator
 
 ## Prerequisites
-<!-- Perhaps list the browsers explicitly? Microsoft Edge 2020 or later, Chrome 79, Firefox? -->
-* [Windows 10 Creator Update](https://www.microsoft.com/software-download/windows10)
+
 * WebXR-supported browser, for example [Microsoft Edge](https://docs.microsoft.com/windows/mixed-reality/whats-new/new-microsoft-edge)
 * [Babylon.js](https://doc.babylonjs.com/divingDeeper/developWithBjs/frameworkVers) 4.2 or higher
 * [NodeJS](https://nodejs.org/)
-* [Git](https://git-scm.com/)
-* [Windows Mixed Reality simulator](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator)
+* Optional: [Windows 10 Creator Update](https://www.microsoft.com/software-download/windows10) if you want to use a Windows Mixed Reality Simulator
+* Optional: [Windows Mixed Reality simulator](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator)
 
 ## Getting started
 
 To create this project from scratch, start with a Visual Studio Code (VSCode) project.
 
 > [!NOTE]
-> Using VSCode isn't mandatory, but we'll be using it for convenience throughout the tutorial. More experienced javascript developers can use any other editor of their choice, even the simplest Notepad.
+> Using VSCode isn't mandatory, but we'll be using it for convenience throughout the tutorial. More experienced JavaScript developers can use any other editor of their choice, even the simplest Notepad.
 
-1. Either download the [babylon.js](https://doc.babylonjs.com/divingDeeper/developWithBjs/frameworkVers) single file or use an online version. You can also clone an entire BabylonJS project from [GitHub](https://github.com/BabylonJS/Babylon.js)
+1. Either download the [babylon.js](https://doc.babylonjs.com/divingDeeper/developWithBjs/frameworkVers) single file or use an online version that can be found on the [official babylon.js web site](https://doc.babylonjs.com/divingDeeper/developWithBjs/frameworkVers). You can also clone the entire babylon.js project from [GitHub](https://github.com/BabylonJS/Babylon.js)
 1. Create an empty file and save it as html page, for example index.html
-1. Create a basic html markup and reference the Babylon.js javascript file. The final code is as shown below:
+1. Create a basic html markup and reference the babylon.js javascript file. The final code is as shown below:
 
     ```html
     <html>

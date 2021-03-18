@@ -81,8 +81,7 @@ A scene is where all the contents will be displayed. There might be multiple sce
     box.position.y = 1;
     ```
 
-1. Check the output in the browser. The browser window shows a blank page with javascript error in development console
-'Uncaught Error: No camera defined'. Now we have to add a camera to the scene.
+1. Open the hosting web page in the Microsoft Edge browser and check the output. The browser window shows a blank page. Open DevTools by using the keyboard and select F12 or Control+Shift+I (Windows, Linux) or Command+Option+I (macOS). After opening the *Console* tab, you can start looking for errors. There will be an error displayed: 'Uncaught Error: No camera defined'. Now we have to add a camera to the scene.
 
 ## Add a camera
 

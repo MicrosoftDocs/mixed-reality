@@ -284,7 +284,7 @@ Congratulations! You've completed our series of babylon.js tutorials and learned
 > [!div class="checklist"]
 > * Set up a development environment
 > * Create a new web page to display results
-> * The API to create and interact with basic 3D elements
+> * The babylon.js API to create and interact with basic 3D elements
 > * Run and test the application in a Windows Mixed Reality Simulator
 
 For more information on Mixed Reality javascript development see [JavaScript development overview](/javascript-development-overview.md).
