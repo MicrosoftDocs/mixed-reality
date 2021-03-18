@@ -258,12 +258,12 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
 1. The above code generates the following output in the browser window:
 ![WebXR scene](../images/hello-world-webxr-scene.png)
 
-## Run on Mixed Reality Portal emulator
+## Run on a Windows Mixed Reality Simulator
 
 1. Select the Immersive-VR button on the bottom right corner:
 ![Immersive VR Button](../images/immersive-vr-button.png)
 
-1. This action will launch the Mixed Reality Portal window as shown below:
+1. This action will launch the Windows Mixed Reality Simulator window as shown below:
 ![Mixed Reality Portal](../images/mixed-reality-portal.png)
 
 1. Use the W,A,S, and D keys on your keyboard to walk forward, back left and right accordingly. Use simulated hand to target the cube and press the Enter key on your keyboard to perform the click action. The cube will change its color and move to a new position.
@@ -290,4 +290,4 @@ Congratulations! You've completed our series of babylon.js tutorials and learned
 > * The babylon.js API to create and interact with basic 3D elements
 > * Run and test the application in a Windows Mixed Reality Simulator
 
-For more information on Mixed Reality javascript development see [JavaScript development overview](/javascript-development-overview.md).
+For more information on Mixed Reality JavaScript development see [JavaScript development overview](/javascript-development-overview.md).
