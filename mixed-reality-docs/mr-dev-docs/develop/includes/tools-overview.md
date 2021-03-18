@@ -156,7 +156,7 @@ You can always go back to the Unity development checkpoints for [HoloLens](../un
 We recommend installing [Unreal Engine version 4.25](https://docs.unrealengine.com//GettingStarted/Installation/index.html) or later to take full advantage of built-in HoloLens support.
 
 Go to the **Library** tab in the Epic Games Launcher, select the dropdown arrow next to **Launch** and click **Options**. Under **Target Platforms**, select **HoloLens 2** and click **Apply**.
-![MRTK](../../develop/images/Unreal_Install_Option_HoloLens2.png)
+![Unreal Install Option HoloLens 2](../../develop/images/Unreal_Install_Option_HoloLens2.png)
 
 ### 2. Import Mixed Reality Toolkit (MRTK)
 ![MRTK](../../design/images/MRTK_UX_Hero.png)
