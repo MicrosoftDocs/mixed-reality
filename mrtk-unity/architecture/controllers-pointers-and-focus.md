@@ -1,5 +1,5 @@
 ---
-title: ControllersPointersAndFocus
+title: Controllers, pointers, and focus
 description: Interacting with Controllers, pointers and focus.
 author: cDiaz-MS
 ms.author: cadia
