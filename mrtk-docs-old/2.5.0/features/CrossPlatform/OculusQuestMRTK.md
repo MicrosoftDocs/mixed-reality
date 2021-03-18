@@ -4,7 +4,6 @@ description: Documentation to configure for Oculus Quest in MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-ms.localizationpriority: medium
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Oculus Quest,
 ---
 
