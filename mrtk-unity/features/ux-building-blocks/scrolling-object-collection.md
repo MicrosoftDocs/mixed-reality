@@ -4,7 +4,6 @@ description: Overview Menu types MRTK
 author: vaoliva
 ms.author: vaolivaa
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Scrolling Object
 --- 
 # Scrolling object collection
@@ -92,7 +91,7 @@ public class ScrollablePagination : MonoBehaviour
 
 ## Scrolling object collection properties
 
-| General                      |                                                                                                                                                                                                     |
+| General                                                                                                                                                                                                     |
 |:-----------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Scroll direction             | The direction in which content should scroll.|
 

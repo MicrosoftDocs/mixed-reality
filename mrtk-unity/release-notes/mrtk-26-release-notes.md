@@ -4,23 +4,33 @@ description: release notes of the MRTK version 2.6
 author: polar-kev
 ms.author: kesemple
 ms.date: 02/28/2021
-ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Microsoft Mixed Reality Toolkit 2.6.0 Release Notes
-
-- [What's new](#whats-new)
-- [Breaking changes](#breaking-changes)
-- [Updating guidance](../updates-deployment/updating.md#upgrading-to-a-new-version-of-mrtk)
-- [Known issues](#known-issues)
+# Microsoft Mixed Reality Toolkit 2.6.1 Release Notes
 
 > [!IMPORTANT]
 > There is a known compiler issue that impacts applications built for Microsoft HoloLens 2 using
 > ARM64. This issue is fixed by updating Visual Studio 2019 to version 16.8 or later. If you are unable to update Visual Studio,
 > please import the `com.microsoft.mixedreality.toolkit.tools` package to apply a workaround.
 
-## What's new
+## What's new in 2.6.1
+
+### Fixes OpenXR not running on HoloLens 2 / UWP
+
+Fixes a regression that prevented MRTK's OpenXR support from running on UWP.
+
+### Fixes Leap Motion ObjectManipulator not rotating
+
+Fixes a regression where a Leap Motion hand's rotation was not taken into account by the ObjectManipulator script.
+
+### Sample scene updates
+
+Updates the scene understanding sample scene to correctly reflect the shipped state of the Unity plugin. Also updates the sample to no longer have a dependency on the spatial awareness sample scene being imported. Before updating to 2.6.1 you should delete the imported scene understanding and spatial awareness samples if they are present in your project to avoid possible conflicts. If you did not remove those samples and do see conflicts related to those in the console, please remove both samples (or the `Assets/Samples/Mixed Reality Toolkit Examples` folder) and then try importing again.
+
+Updates the dialog example scene to correctly describe the current dialog scenarios.
+
+## What's new in 2.6.0
 
 ### Add support for OpenXR
 
@@ -39,7 +49,7 @@ Swap multiple assets in a Unity scene with the new [Asset Swap utility](../featu
 
 Controllers for the HP Reverb G2 now work natively with MRTK.
 
-### Experimental Interactive Element + State Visualizer 
+### Experimental Interactive Element + State Visualizer
 
 Interactive Element is a simplified centralized entry point to the MRTK input system. It contains state management methods, event management and the state setting logic for Core Interaction States. For more information see [Interactive Element Documentation](../features/experimental/interactive-element.md).
 
@@ -73,30 +83,28 @@ Experimental support of [Scene Understanding](https://docs.microsoft.com/windows
 
 MRTK now allows profile switching both before the initialization of the MRTK instance (i.e. Pre MRTK initialization profile switch) and after a profile has been in active use (i.e. Active profile switch). The former switch can be used to enable select components based on capabilities of the hardware, while the latter can be used to modify experience as the user enters a subpart of the application. Please read the [documentation on profile switching](../configuration/mixed-reality-configuration-guide.md#changing-profiles-at-runtime) for more information and code samples.
 
-### Directional Indicator and Follow Solvers Graduated from Experimental
+### Directional indicator and follow solvers graduated from experimental
 
 Two new solvers are ready for use with mainline MRTK.
 
   ![Directional Indicator Solver](images/DirectionalIndicatorExampleScene.gif)
 
-### Hand Coach Graduated from Experimental
+### Hand Coach graduated from experimental
 
 The Hand Coach feature is now ready for use with mainline MRTK.
   ![Hand Coach Example](https://docs.microsoft.com/windows/mixed-reality/design/images/handcoach/airtap.gif)
 
-### Dialog Controls Graduated from Experimental
+### Dialog controls graduated from experimental
 
 Dialog controls are now ready for use with mainline MRTK.
 
   ![Dialog Controls](https://user-images.githubusercontent.com/13754172/101927792-3326e200-3c18-11eb-88d3-44b4b50c7f7d.png)
 
+### Pulse shader graduated from experimental
 
-### Pulse Shader Graduated from Experimental 
-
-The Pulse Shader scripts have graduated from experimental. For more information see: [Pulse Shader Documentation](../features/rendering/pulse-shader.md)
+The Pulse shader scripts have graduated from experimental. For more information see: [Pulse Shader Documentation](../features/rendering/pulse-shader.md)
 
 ![MRTK_SpatialMesh_Pulse](https://user-images.githubusercontent.com/13754172/68261851-3489e200-fff6-11e9-9f6c-5574a7dd8db7.gif)
-
 
 ### Input Recording Service improvements
 

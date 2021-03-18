@@ -4,7 +4,6 @@ description: Documentation on Wizard to make the transition from singletons to s
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
@@ -22,28 +21,30 @@ By default, your new script assets will be generated in the `MixedRealityToolkit
 
 Generated service scripts include some prompts similar to new MonoBehaviour scripts. They will let you know where to initialize and update your service.
 
-    namespace Microsoft.MixedReality.Toolkit.Extensions
+```csharp
+namespace Microsoft.MixedReality.Toolkit.Extensions
+{
+    [MixedRealityExtensionService(SupportedPlatforms.WindowsStandalone|SupportedPlatforms.MacStandalone|SupportedPlatforms.LinuxStandalone|SupportedPlatforms.WindowsUniversal)]
+    public class NewService : BaseExtensionService, INewService, IMixedRealityExtensionService
     {
-        [MixedRealityExtensionService(SupportedPlatforms.WindowsStandalone|SupportedPlatforms.MacStandalone|SupportedPlatforms.LinuxStandalone|SupportedPlatforms.WindowsUniversal)]
-        public class NewService : BaseExtensionService, INewService, IMixedRealityExtensionService
+        private NewServiceProfile newServiceProfile;
+
+        public NewService(IMixedRealityServiceRegistrar registrar,  string name,  uint priority,  BaseMixedRealityProfile profile) : base(registrar, name, priority, profile) 
         {
-            private NewServiceProfile newServiceProfile;
-    
-            public NewService(IMixedRealityServiceRegistrar registrar,  string name,  uint priority,  BaseMixedRealityProfile profile) : base(registrar, name, priority, profile) 
-            {
-                newServiceProfile = (NewServiceProfile)profile;
-            }
-    
-            public override void Initialize()
-            {
-                // Do service initialization here.
-            }
-    
-            public override void Update()
-            {
-                // Do service updates here.
-            }
+            newServiceProfile = (NewServiceProfile)profile;
+        }
+
+        public override void Initialize()
+        {
+            // Do service initialization here.
+        }
+
+        public override void Update()
+        {
+            // Do service updates here.
         }
     }
+}
+```
 
 If you chose to register your service in the wizard, all you have to do is edit this script and your service will automatically be updated. Otherwise you can read about [registering your new service here](../../configuration/mixed-reality-configuration-guide.md).

@@ -4,7 +4,6 @@ description: Modifying Profiles in MRTK.
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK Profile
 ---
 

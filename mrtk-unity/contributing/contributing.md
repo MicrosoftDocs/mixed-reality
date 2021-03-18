@@ -1,10 +1,9 @@
 ---
-title: CONTRIBUTING
-description:  Community contributing to MRTK.
+title: Contributing
+description: How to contribute to the Mixed Reality Toolkit
 author: polar-kev
 ms.author: kesemple
-ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.date: 03/17/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Bug report,
 ---
 
@@ -52,5 +51,5 @@ When adding a bug fix or feature, follow these steps:
 1. If adding an experimental feature, then writing tests and documentation are not necessary. Instead, follow [experimental feature guidelines](../contributing/experimental-features.md).
 1. Add tests to verify the bug fix / feature. Instructions for writing and running tests are at [UnitTests](../contributing/unit-tests.md).
 1. Ensure the code and feature(s) are documented as described in the [Documentation Guidelines](../contributing/documentation-guide.md).
-1. Ensure the code works as intended on all platforms. Please see [Release notes](../release-notes.md) for the list of supported platforms. For Windows UWP projects, code must be [WACK compliant](https://developer.microsoft.com/windows/develop/app-certification-kit). To do this, generate a Visual Studio solution, right click on project; **Store** > **Create App Packages**. Follow the prompts and run WACK tests. Make sure they all succeed.
+1. Ensure the code works as intended on all platforms. Please see [Release notes](../release-notes/mrtk-26-release-notes.md) for the list of supported platforms. For Windows UWP projects, code must be [WACK compliant](https://developer.microsoft.com/windows/develop/app-certification-kit). To do this, generate a Visual Studio solution, right click on project; **Store** > **Create App Packages**. Follow the prompts and run WACK tests. Make sure they all succeed.
 1. Follow the instructions at [Pull Requests](../contributing/pull-requests.md) when making a pull request.

@@ -4,7 +4,6 @@ description: Overview Menu types MRTK
 author: vaoliva
 ms.author: vaolivaa
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Scrolling Object
 --- 
 # Scrolling object collection

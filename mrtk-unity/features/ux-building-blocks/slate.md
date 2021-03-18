@@ -4,7 +4,6 @@ description: Documentation on Slate in MRTK
 author: CDiaz-MS
 ms.author: cadia 
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Slate,
 ---
 
@@ -24,7 +23,7 @@ A slate control is composed of the following elements:
 * **BackPlate**: The back side of the slate.
 * **ContentQuad**: Content is assigned as material. The example uses a sample material 'PanContent'.
 
-<img src="../images/slate/MRTK_SlateStructure.jpg" width="650" alt="Slate Structure">
+<img src="../images/slate/MRTK_SlateStructure.jpg" width="650" alt="Slate Structure in the Unity editor">
 
 ## Bounds control
 
