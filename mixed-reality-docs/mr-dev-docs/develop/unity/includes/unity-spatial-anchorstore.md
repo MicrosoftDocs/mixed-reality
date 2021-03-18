@@ -102,7 +102,7 @@ XRAnchorStore anchorStore = await arAnchorManager.subsystem.TryGetAnchorStoreAsy
 
 # [Legacy WSA](#tab/wsa)
 
-The WorldAnchorStore is the key to creating holographic experiences where holograms stay in specific real world positions across instances of the application. Users can then pin individual holograms wherever they want, and find them later in the same spot over many uses of your app.
+The **WorldAnchorStore** is the key to creating holographic experiences where holograms stay in specific real world positions across instances of the application. Users can then pin individual holograms wherever they want, and find them later in the same spot over many uses of your app.
 
 **Namespace:** *UnityEngine.XR.WSA.Persistence*<br>
 **Class:** *WorldAnchorStore*
