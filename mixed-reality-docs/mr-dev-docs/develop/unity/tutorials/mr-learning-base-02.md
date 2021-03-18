@@ -13,6 +13,9 @@ ms.localizationpriority: high
 
 In this tutorial, you'll learn how to create a new Unity project, configure it for <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank">Mixed Reality Toolkit (MRTK)</a> development, and import MRTK. You'll also walk through configuring, building, and deploying a basic Unity scene from Visual Studio to your HoloLens 2. Once you have deployed it to your HoloLens 2, you should see a spatial mapping mesh covering the surfaces that are perceived by the HoloLens. Additionally, you should see indicators on your hands and fingers for hand tracking and a frame rate counter for keeping an eye on app performance.
 
+![MRTK](../../../develop/images/Unity_MRTK_MRFT_Flow.png)
+
+
 ## Objectives
 
 * Learn how to configure Unity for HoloLens development
@@ -103,17 +106,19 @@ Once **MixedRealityFeatureTool** is opened click on start to get started with Mi
 
 ![MixedRealityFeatureTool](images/mr-learning-base/base-02-section4-step1-2.png)
 
+You need to set the location of the target unity project to provide the **Project path**, click on the **Three dots** next to the Project path and browse to your project folder in the explorer for example _D:\MixedRealityLearning\MRTK Tutorials_. Click 'Discover Features' for the next step.
+
+![MixedRealityFeatureTool project path](images/mr-learning-base/base-02-section4-step1-2b.png)
+
 Features are grouped by category to make things easier to find, click on **Mixed Reality Toolkit** dropdown to find packages relating to the Mixed Reality Toolkit.
 
 ![MixedRealityFeatureTool window](images/mr-learning-base/base-02-section4-step1-3.png)
 
-check the **Mixed Reality Toolkit Foundation**, and click on the dropdown next to it to select the required MRTK version, for this tutorial series please select **2.5.3**. then click on **Get features** button to download the selected packages.
+Check the **Mixed Reality Toolkit Foundation**, and click on the dropdown next to it to select the required MRTK version, for this tutorial series please select **2.5.3**. then click on **Get features** button to download the selected packages.
 
 ![Selecting Mixed reality foundation](images/mr-learning-base/base-02-section4-step1-4.png)
 
 Selected package **Mixed Reality Toolkit Foundation 2.5.3** is presented, along with its dependence package **Mixed Reality Toolkit Standard Assets 2.5.3** in the **Import Features** window.
-
-You also need to set the location of the target unity project to provide the **Project path**, click on the **Three dots** next to the Project path and browse to your project folder in the explorer for example _D:\MixedRealityLearning\MRTK Tutorials_.
 
 > [!NOTE]
 > The dialog that's displayed when browsing for the Unity project folder contains '_' as the file name. There must be a value for the file name to enable the folder to be selected.
@@ -125,6 +130,8 @@ Next click on the **Validate** button to validate the selected package, you will
 Click on **Approve** Button to add the **Mixed Reality Toolkit** into the project.
 
 ![Approve Mixed reality foundation](images/mr-learning-base/base-02-section4-step1-6.png)
+
+When you close Mixed Reality Feature Tool and return to Unity, new packages will be loaded.
 
 ## Configuring the Unity project
 
@@ -148,7 +155,7 @@ In the MRTK Project Configurator window, expand the **Modify Configurations** se
 
 In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window:
 
-In the Project Settings window, select **Player** > **XR Settings** and check the **Virtual Reality Supported** checkbox then click the **+** icon, and select Windows Mixed Reality to add the Windows Mixed Reality SDK:
+In the Project Settings window, select **Player** > **XR Settings** and check the **Virtual Reality Supported** checkbox. This process takes some time. Once **Virtual Reality Supported** is checked, click the **+** icon, and select **Windows Mixed Reality** to add the Windows Mixed Reality SDK:
 
 ![Unity XR Settings with add Windows Mixed Reality SDK selected](images/mr-learning-base/base-02-section5-step2-4.png)
 
