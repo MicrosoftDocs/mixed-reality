@@ -2,11 +2,11 @@
 
 ![Unity logo banner](../images/unity_logo_banner.png)<br>
 
-### 1. Download the latest version
+### 1. Download the recommended Unity version 
 
 We recommend the [Unity LTS (Long Term Support)](https://unity3d.com/unity/qa/lts-releases) stream as the best version to use when starting new projects, updating to its latest revision to pick up the latest stable fixes.
-* Use Unity Hub to install and manage Unity.
-* The current recommendation is to use **[Unity 2019.4 LTS](https://unity3d.com/unity/qa/lts-releases?version=2019.4)**, which is the LTS build required for MRTK v2 below.
+* The best way to install and manage Unity is with [Unity Hub](https://unity3d.com/get-unity/download).
+* The current recommendation is to use **[Unity 2019.4 LTS](https://unity3d.com/unity/qa/lts-releases?version=2019.4)**, which is the LTS build required for the Mixed Reality Toolkit that you'll download below.
 * If you need to use a different version of Unity for specific reasons, Unity supports side-by-side installs of different versions.
 
 When installing Unity, please make sure to check following components under **'Platforms'**.
