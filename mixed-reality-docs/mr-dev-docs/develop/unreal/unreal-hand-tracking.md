@@ -16,6 +16,7 @@ The hand tracking system uses a person’s palms and fingers as input. Data on p
 
 Hand pose lets you track and use the hands and fingers of your users as input, which can be accessed in both Blueprints and C++. The Unreal API sends the data as a coordinate system, with ticks synchronized with the Unreal Engine.
 
+![Hand skeleton image with joints overlay](images/hand-tracking-img-02.png)
 ![Hand Skeleton](images/hand-tracking-skeleton-update.png)
 
 [!INCLUDE[](includes/tabs-tracking-hand-pose.md)]
