@@ -228,19 +228,19 @@ From the Project window, click-and-drag the **Cube** prefab on to the Hierarchy 
 * **Rotation**: X = 0, Y = 0, Z = 0
 * **Scale**: X = 1, Y = 1, Z = 1
 
-![Unity Hierarchy, Scene ,tutorial assets](images/mr-learning-base/base-02-section8-step1-1.png)
+![Adding cube to the Scene](images/mr-learning-base/base-02-section8-step1-1.png)
 
 With the **Cube** still selected in the Hierarchy window, in the Inspector window ,click on **Add Component** button, then search and select **Object Manipulator** script to add the Object Manipulator script to the cube object.
 
-![Unity Inspector,Add components](images/mr-learning-base/base-02-section8-step1-2.png)
+![adding Object manupulator to the cube](images/mr-learning-base/base-02-section8-step1-2.png)
 
 Repeat the same to add **Near Interaction Grabbable scripts** to the cube
 
-![Unity Hierarchy, Scene ,tutorial assets](images/mr-learning-base/base-02-section8-step1-3.png)
+![adding Near Interaction Grabable to the cube](images/mr-learning-base/base-02-section8-step1-3.png)
 
 Now enter to the gamemode,by holding the **Shift** key and left click on the mouse you can move the cube.
 
-![Unity GameMode,run scene](images/mr-learning-base/base-02-section8-step1-4.png)
+![Game Mode](images/mr-learning-base/base-02-section8-step1-4.png)
 
 ## Building your application to your HoloLens 2
 
