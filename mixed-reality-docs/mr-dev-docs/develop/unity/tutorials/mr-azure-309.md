@@ -1,5 +1,5 @@
 ---
-title: MR and Azure 309 - Application insights
+title: HoloLens (1st gen) and Azure 309 - Application insights
 description: Complete this course to learn how to collect analytics regarding user behavior within a mixed reality application, using the Azure Application Insights Service.
 author: drneil
 ms.author: jemccull
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, application insights, hololens, immersive, vr, Windows 10, Visual Studio
 --- 
 
-# MR and Azure 309: Application insights
+# HoloLens (1st gen) and Azure 309: Application insights
 
 <br>
 

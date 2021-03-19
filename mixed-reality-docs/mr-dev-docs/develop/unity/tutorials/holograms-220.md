@@ -1,5 +1,5 @@
 ---
-title: MR Spatial 220 - Spatial sound
+title: HoloLens (1st gen) Spatial 220 - Spatial sound
 description: Follow this coding walkthrough using Unity, Visual Studio, and HoloLens to learn the details of spatial sound concepts.
 author: keveleigh
 ms.author: kurtie
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, spatial sound, HoloLens, Mixed Reality Academy, unity, mixed reality headset, windows mixed reality headset, virtual reality headset, Windows 10
 ---
 
-# MR Spatial 220: Spatial sound
+# HoloLens (1st gen) Spatial 220: Spatial sound
 
 >[!NOTE]
 >The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](./mr-learning-base-01.md) has been posted for HoloLens 2.

@@ -26,7 +26,6 @@ If you're using Unity, you can use [Mixed Reality Toolkit for Unity](https://git
 
 ## Installation checklist
 
-
 | Tool | Notes |
 |---------|---------|
 | ![Windows logo](images/Windows10_logo.png)<br><br><a href="https://www.microsoft.com/software-download/windows10" target="_blank">**Windows 10** (Manual install link)</a><br><br>Install the most recent version of Windows 10 so your PC's operating system matches the platform for which you're building mixed reality applications.  | **Installing Windows 10** <br> You can install the most recent version of Windows 10 via Windows Update in Settings or by creating installation media, using the link in the left column. <br><br>See [current release notes](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-october-2018.md) for information about the newest mixed reality features available with each release of Windows 10. **Enable developer mode on your PC** at Settings > Update & Security > For developers. <br><br> **Note for enterprise and corporate-managed PCs**<br>If your PC is managed by an your organization's IT department, you might need to contact them in order to update. <br><br> **'N' versions of Windows**<br> Windows Mixed Reality immersive (VR) headsets are not supported on 'N' versions of Windows. |
@@ -34,9 +33,11 @@ If you're using Unity, you can use [Mixed Reality Toolkit for Unity](https://git
 | ![Windows logo](images/Windows10_logo.png)<br><br><a href="https://developer.microsoft.com//windows/downloads/windows-10-sdk" target="_blank">**Windows 10 SDK (10.0.18362.0)** (Manual install link)</a> <br><br>Provides the latest headers, libraries, metadata, and tools for building Windows 10 apps on HoloLens 2. | **To build HoloLens 2 apps, you must install the Windows SDK, build 18362 or later.**<br> <br> If you are only developing applications for desktop Windows Mixed Reality headsets or HoloLens (1st gen), you can use the Windows SDK installed by Visual Studio 2017. |
 | ![Visual Studio logo](images/HoloLensIcon.jpg)<br><br><a href="https://go.microsoft.com/fwlink/?linkid=2156684" target="_blank">**HoloLens 2 Emulator (Windows Holographic, version 20H2 March 2021 Update)** (Install link: 10.0.19041.1140)</a><br> <br><a href="https://go.microsoft.com/fwlink/?linkid=2065980" target="_blank">**HoloLens (1st gen) Emulator** (Install link: 10.0.17763.134)</a> <br><br>The emulator lets you run applications on a HoloLens virtual machine image without a physical HoloLens.<br> <br> | See [Using the HoloLens emulator](../develop/platform-capabilities-and-apis/using-the-hololens-emulator.md) for more information on getting started with the emulator.<br> <br> **Your system must support Hyper-V** for the emulator installation to succeed. Reference the System Requirements section below for details. <br> <br> **Note on HoloLens (1st gen) Emulator** <br>  Visual Studio 2017 is required to successfully complete the installation. If you're installing the HoloLens (1st gen) emulator with Visual Studio 2019 you need to deselect the VS templates and [install them from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX). |
 
-## Choose your engine
+## Install your engine of choice
 
-Now that you have your Windows 10, Visual Studio, and Windows 10 SDK ready to go, let's choose an engine to build on.
+Now that you have your Windows 10, Visual Studio, and Windows 10 SDK ready to go, let's install and setup the engine of your choice. 
+
+If you still need to choose an engine, see the [Introduction to Mixed Reality development](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity#what-technology-path-are-you-interested-in). 
 
 [!INCLUDE[](includes/tools-overview.md)]
 

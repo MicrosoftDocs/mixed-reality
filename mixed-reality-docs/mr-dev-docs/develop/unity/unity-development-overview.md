@@ -22,7 +22,7 @@ The fastest path to building a HoloLens [mixed reality app](../../design/app-vie
 
 Use the following checkpoints to bring your Unity games and applications into the world of mixed reality. If you haven't already explored the [Designing Holograms sample application](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd), we recommend downloading and using it to familiarize yourself with the basics of Mixed Reality UX.
 
-### 1. Getting started
+## 1. Getting started
 
 The easiest way to develop in Unity is with the Mixed Reality Toolkit. MRTK will help you automatically setup a project for Mixed Reality and provide a set of features to accelerate your development process. By the end of this section, you'll have a basic understanding of the Mixed Reality Toolkit, a properly configured development environment for Mixed Reality apps, and a working MRTK project in Unity that you built yourself.
 
@@ -39,13 +39,13 @@ The easiest way to develop in Unity is with the Mixed Reality Toolkit. MRTK will
 > [!NOTE]
 > Once you've setup MRTK V2 in your project, standard Unity game objects like the camera will light up immediately for a seated-scale experience. You can find instructions on changing the experience scale of your application on the [coordinate systems](coordinate-systems-in-unity.md) page.
 
-### 2. Core building blocks
+## 2. Core building blocks
 
 All of the core building blocks for mixed reality applications are exposed in a manner consistent with other Unity APIs. These building blocks are available as standalone features and through the Mixed Reality Toolkit. You might not need all of them at once, but we recommend exploring early on. After diving into the core building blocks listed below, you'll have a toolbox full of features you can integrate into a Mixed Reality project by themselves or through MRTK.
 
 [!INCLUDE[](../includes/unity-building-blocks.md)]
 
-### 3. Advanced features
+## 3. Advanced features
 
 Other key features that play a role in mixed reality applications are available through Unity APIs without any extra packages or setup. These features can be added to Unity projects with or without MRTK installed. After diving into the more advanced capabilities that Unity offers, you'll be able to build deeper, complex Mixed Reality apps.
 
@@ -57,7 +57,7 @@ Other key features that play a role in mixed reality applications are available 
 | [Tracking loss](tracking-loss-in-unity.md) | Handle scenarios where your device can't locate itself in the applications world space |
 | [Keyboard input](keyboard-input-in-unity.md) | Get input from real-world and Mixed Reality keyboards in your apps |
 
-### 4. Deploying to a device or emulator
+## 4. Deploying to a device or emulator
 
 Once you've got your holographic Unity project ready for testing, your next step is to export and build a Unity Visual Studio solution. With that VS solution in hand, you can run your application in one of three ways on a real or simulated device. By the end of this section, you'll be able to deploy your application on whichever device or emulator fits your development needs.
 
@@ -65,7 +65,7 @@ Once you've got your holographic Unity project ready for testing, your next step
 * [HoloLens emulator](../platform-capabilities-and-apis/using-the-hololens-emulator.md)
 * [Windows Mixed Reality immersive headset simulator](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
 
-### 5. Adding services
+## 5. Adding services
 
 At this point in your development journey you might be looking to add services or for a helping hand with commercial deployment. Integrating [Azure Cloud Services](../mixed-reality-cloud-services.md) and Dynamics 365 features can level up your projects in a major way. We've compiled a few starting points for you to explore and expand your Mixed Reality knowledge.
 
