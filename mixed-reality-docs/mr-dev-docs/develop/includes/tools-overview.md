@@ -9,7 +9,7 @@ The current recommended version for Mixed Reality development is **Unity 2019.4 
 > [!NOTE]
 >  If you’re using Unity 2020 LTS, Mixed Reality support is available for HoloLens 2 development. However, there are currently some known issues. This will become the recommended Unity version later this year. 
 
-See [Choosing a Unity version and XR plugin](choosing-unity-version-xr.md) to learn what Mixed Reality support is available in different Unity engine and XR plugin versions. 
+<!-- See [Choosing a Unity version and XR plugin](../unity/choosing-unity-version-xr.md) to learn what Mixed Reality support is available in different Unity engine and XR plugin versions.  -->
 
 > [!div class="nextstepaction"]
 > [Download Unity Hub](https://unity3d.com/get-unity/download)
