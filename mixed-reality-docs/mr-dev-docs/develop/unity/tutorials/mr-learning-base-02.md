@@ -81,7 +81,7 @@ In the Import Unity Package window, click the **All** button to ensure all the a
 
 ## Importing the Mixed Reality Toolkit
 
-To Import Mixed Reality Toolkit into the Unity Project you will have to use [Mixed Reality Feature Tool](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) which allows  developers to discover, update, and add Mixed Reality feature packages into Unity projects. You can search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing.
+To Import Mixed Reality Toolkit into the Unity Project you will have to use [Mixed Reality Feature Tool](https://docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) which allows  developers to discover, update, and add Mixed Reality feature packages into Unity projects. You can search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing.
 
 Download the latest version of the Mixed Reality Feature Tool from the [Microsoft Download Center](https://aka.ms/MRFeatureTool), When the download is complete, unzip the file and save it to your desktop.
 
@@ -174,7 +174,7 @@ In the Project Settings window, select **Player** > **Publishing Settings**, the
 > [!TIP]
 > The 'Product Name' is the name displayed in the HoloLens Start menu. To make the app easier to locate during development, add an underscore in front of the name to sort it to the top.
 
-## Creating and configuring the scene
+## Creating the scene
 
 In the Unity menu, select **File** > **New Scene** to create a new scene:
 
@@ -195,47 +195,52 @@ In the Unity menu, select **File** > **Save As...** to open the Save Scene windo
 In the Save Scene window, navigate to your project's **Scenes** folder, give your scene a suitable name, for example, _GettingStarted_, and click the **Save** button to save the scene:
 
 ![Unity save scene Save prompt window](images/mr-learning-base/base-02-section6-step1-5.png)
-### Configuring the scene
 
-### 1.Importing the tutorial assets
+## Importing the tutorial assets
 
-Download the following Unity asset
+Download the following Unity custom package:
 
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
 
+To Import a Unity custom package, In the Unity menu, select **Assets** > **Import Package** > **Custom Package...** to open the Import package... window:
 
+![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-02-section7-step1-1.png)
 
-To Import a Unity asset, In the Unity menu, select **Assets** >**Import New Asset** to open Import Asset window.
-![Unity Import Asset window](images/mr-learning-base/base-02-section6-step1-6.png)
+In the Import package... window, select the **MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage** you downloaded and click the Open button:
 
-After you have imported the tutorial assets your Project window should look similar to this
-![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-02-section6-step1-7.png)
+![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-02-section7-step1-2.png)
 
-From the Project window, click-and-drag the **Cube** prefab on to the Hierarchy window ,then in the Inspector window, configure the **Transform** component as follows 
- * **Position**: X = 0, Y = 0, Z = 0.5
-*  **Rotation**: X = 0, Y = 0, Z = 0
-*  **Scale**: X = 1, Y = 1, Z = 1
+In the Import Unity Package window, click the All button to ensure all the assets are selected, then click the Import button to import the assets:
 
-![Unity Hierarchy, Scene ,tutorial assets](images/mr-learning-base/base-02-section6-step1-8.png)
+![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-02-section7-step1-3.png)
 
+After you have imported the tutorial assets your Project window should look similar to this:
 
-With the **Cube** still selected in the Hierarchy window, in the Inspector window ,click on **Add Component** button ,and search for and select **Object Manipulator** script to add the Object Manipulator script to the cube object.
+![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-02-section7-step1-4.png)
 
-![Unity Inspector,Add components](images/mr-learning-base/base-02-section6-step1-9.png)
+## Configuring the Scene
+
+In the Project window, navigate to the Assets > MRTK.Tutorials.GettingStarted > Prefabs folder:
+
+From the Project window, click-and-drag the **Cube** prefab on to the Hierarchy window, then in the Inspector window configure its **Transform** component as follows
+
+* **Position**: X = 0, Y = 0, Z = 0.5
+* **Rotation**: X = 0, Y = 0, Z = 0
+* **Scale**: X = 1, Y = 1, Z = 1
+
+![Unity Hierarchy, Scene ,tutorial assets](images/mr-learning-base/base-02-section8-step1-1.png)
+
+With the **Cube** still selected in the Hierarchy window, in the Inspector window ,click on **Add Component** button, then search and select **Object Manipulator** script to add the Object Manipulator script to the cube object.
+
+![Unity Inspector,Add components](images/mr-learning-base/base-02-section8-step1-2.png)
+
 Repeat the same to add **Near Interaction Grabbable scripts** to the cube
 
-![Unity Hierarchy, Scene ,tutorial assets](images/mr-learning-base/base-02-section6-step1-10.png)
+![Unity Hierarchy, Scene ,tutorial assets](images/mr-learning-base/base-02-section8-step1-3.png)
 
 Now enter to the gamemode,by holding the **Shift** key and left click on the mouse you can move the cube.
 
-![Unity GameMode,run scene](images/mr-learning-base/base-02-section6-step1-11.png)
-
-**Congratulations**
-
-
-
-
-
-
+![Unity GameMode,run scene](images/mr-learning-base/base-02-section8-step1-4.png)
 
 ## Building your application to your HoloLens 2
 
@@ -245,32 +250,28 @@ In the Unity menu, select **File** > **Build Settings...** to open the Build Set
 
 In the Build Settings window, click the **Add Open Scenes** button to add your current scene to the **Scenes In Build** list, then click the **Build** button to open the Build Universal Windows Platform window:
 
-![Unity Build Settings window with UWP selected](images/mr-learning-base/base-02-section7-step1-1.png)
+![Unity Build Settings window with UWP selected](images/mr-learning-base/base-02-section9-step1-1.png)
 
 In the Build Universal Windows Platform window, choose a suitable location to store your build, for example, _D:\MixedRealityLearning\Builds_, create a new folder and give it a suitable name, for example, _GettingStarted_, and then click the **Select Folder** button to start the build process:
 
-![Unity Build Settings window with Select Folder prompt window](images/mr-learning-base/base-02-section7-step1-2.png)
+![Unity Build Settings window with Select Folder prompt window](images/mr-learning-base/base-02-section9-step1-2.png)
 
 Wait for Unity to finish the build process:
 
-![Unity build process in progress](images/mr-learning-base/base-02-section7-step1-3.png)
-
-
-
+![Unity build process in progress](images/mr-learning-base/base-02-section9-step1-3.png)
 
 ### 2. Build and deploy the application
 
-
 When the build process has completed, Unity will prompt Windows File Explorer to open the location you stored the build. Navigate inside the folder, and double-click the solution file to open it in Visual Studio:
 
-![Windows Explorer with newly created Visual Studio solution selected](images/mr-learning-base/base-02-section8-step1-1.png)
+![Windows Explorer with newly created Visual Studio solution selected](images/mr-learning-base/base-02-section10-step1-1.png)
 
 > [!NOTE]
 > If Visual Studio asks you to install new components, take a moment to check that you have all the prerequisite components in the **[Install the Tools](../../install-the-tools.md)** documentation.
 
 Configure Visual Studio for HoloLens by selecting the **Master** or **Release** configuration, the **ARM64** architecture, and **Device** as target:
 
-![Visual Studio configured for deploy to HoloLens 2](images/mr-learning-base/base-02-section8-step1-2.png)
+![Visual Studio configured for deploy to HoloLens 2](images/mr-learning-base/base-02-section10-step1-2.png)
 
 > [!TIP]
 > If you're deploying to HoloLens (1st generation), select the **x86** architecture.
@@ -283,7 +284,7 @@ Configure Visual Studio for HoloLens by selecting the **Master** or **Release** 
 
 Connect your HoloLens to your computer, then select **Debug** > **Start Without Debugging** to build and deploy to your device:
 
-![Visual Studio Start Without Debugging menu path](images/mr-learning-base/base-02-section8-step1-3.png)
+![Visual Studio Start Without Debugging menu path](images/mr-learning-base/base-02-section10-step1-3.png)
 
 > [!IMPORTANT]
 > Before building to your device, the device must be in Developer Mode and paired with your development computer. Both of these steps can be completed by following [these instructions](../../platform-capabilities-and-apis/using-visual-studio.md).
