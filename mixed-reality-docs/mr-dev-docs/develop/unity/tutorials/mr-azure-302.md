@@ -1,5 +1,5 @@
 ---
-title: MR and Azure 302 - Computer vision
+title: HoloLens (1st gen) and Azure 302 - Computer vision
 description: Complete this course to learn how to recognize visual content within a provided image, using Azure Computer Vision in a mixed reality application.
 author: drneil
 ms.author: jemccull
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, computer vision, hololens, immersive, vr, Windows 10, Visual Studio
 ---
 
-# MR and Azure 302: Computer vision
+# HoloLens (1st gen) and Azure 302: Computer vision
 
 <br>
 
