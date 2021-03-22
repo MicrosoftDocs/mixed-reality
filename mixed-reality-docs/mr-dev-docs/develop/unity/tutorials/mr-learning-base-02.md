@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 # 2. Initializing your project and deploying your first application
 
-In this tutorial, you'll learn how to create a new Unity project, configure it for <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank">Mixed Reality Toolkit (MRTK)</a> development, and import MRTK. You'll also walk through configuring, building, and deploying a basic Unity scene from Visual Studio to your HoloLens 2. Once you have deployed it to your HoloLens 2, you should see a spatial mapping mesh covering the surfaces that are perceived by the HoloLens. Additionally, you should see indicators on your hands and fingers for hand tracking and a frame rate counter for keeping an eye on app performance.
+In this tutorial, you'll learn how to create a new Unity project, configure it for <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank">Mixed Reality Toolkit (MRTK)</a> development, and import MRTK. You'll also walk through configuring, building, and deploying a basic Unity scene from Visual Studio to your HoloLens 2. Once you have deployed it to your HoloLens 2 you should be able to see and interact with the cube and also see a spatial mapping mesh covering the surfaces that are perceived by the HoloLens. Additionally, you should see indicators on your hands and fingers for hand tracking and a frame rate counter for keeping an eye on app performance.
 
 ## Objectives
 
@@ -200,13 +200,13 @@ In the Save Scene window, navigate to your project's **Scenes** folder, give you
 
 Download the following Unity custom package:
 
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.5.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.unitypackage)
 
 To Import a Unity custom package, In the Unity menu, select **Assets** > **Import Package** > **Custom Package...** to open the Import package... window:
 
 ![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-02-section7-step1-1.png)
 
-In the Import package... window, select the **MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage** you downloaded and click the Open button:
+In the Import package... window, select the **MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.unitypackage** you downloaded and click the Open button:
 
 ![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-02-section7-step1-2.png)
 
@@ -230,15 +230,25 @@ From the Project window, click-and-drag the **Cube** prefab on to the Hierarchy 
 
 ![Adding cube to the Scene](images/mr-learning-base/base-02-section8-step1-1.png)
 
+To focus in on the objects in the scene, you can double-click on the **Cube** object, and then zoom slightly in again:
+
+To interact and grab an object with tracked hands, the object must have Collider component for example a **Box Collider**,  **Object Manipulator (Script)** component and **NearInteractionGrabbable(Script)** component.
+
 With the **Cube** still selected in the Hierarchy window, in the Inspector window ,click on **Add Component** button, then search and select **Object Manipulator** script to add the Object Manipulator script to the cube object.
 
 ![adding Object manupulator to the cube](images/mr-learning-base/base-02-section8-step1-2.png)
 
-Repeat the same to add **Near Interaction Grabbable scripts** to the cube
+Repeat the same to add **Near Interaction Grabbable script** to the cube
 
 ![adding Near Interaction Grabable to the cube](images/mr-learning-base/base-02-section8-step1-3.png)
 
-Now enter to the gamemode,by holding the **Shift** key and left click on the mouse you can move the cube.
+> [!NOTE]
+> When you add a Object Manipulator (Script), in this case, the Constraint Manager (Script) is automatically added because Object Manipulator (Script) depends on it.
+
+> [!NOTE]
+> For the purpose of this tutorial, colliders have already been added to the Cube Object. To learn more about colliders, you can visit Unity's <a href="https://docs.unity3d.com/Manual/CollidersOverview.html" target="_blank">Collider</a> documentation.
+
+To test this in the Unity editor, you can enter the play mode and hold the **LeftShift** or **Space** key to enable the controller, Mouse movement will move the controller and also it can be moved further or closer to the camera using the mouse wheel. once the pointer is on the Cube  press and hold **Right Mouse Button** to move the the Cube object.
 
 ![Game Mode](images/mr-learning-base/base-02-section8-step1-4.png)
 
@@ -301,7 +311,7 @@ Select **Build > Deploy Solution** to deploy to your device without having the a
 
 ## Congratulations
 
-You've now deployed your first HoloLens app. As you walk around, you should see a spatial mapping mesh covering the surfaces that are perceived by the HoloLens. Additionally, you should see indicators on your hands and fingers for hand tracking and a frame rate counter for keeping an eye on app performance. These features are just a few foundational pieces included with MRTK. In the upcoming tutorials, you'll add content to your scene to explore the capabilities of HoloLens and the MRTK.
+You've now deployed your first HoloLens app. Once the app is opened you should see a Cube object in front of you and should be able to interact with the cube by moving it and also as you walk around, you should see a spatial mapping mesh covering the surfaces that are perceived by the HoloLens. Additionally, you should see indicators on your hands and fingers for hand tracking and a frame rate counter for keeping an eye on app performance. These features are just a few foundational pieces included with MRTK. In the upcoming tutorials, you'll add content to your scene to explore the capabilities of HoloLens and the MRTK.
 
 > [!div class="nextstepaction"]
 > [Next Tutorial: 3. Configuring the MRTK profiles](mr-learning-base-03.md)
