@@ -17,7 +17,7 @@ JavaScript is one of the most popular programming languages in the world! It's s
 
 ## Mixed Reality applications on the web
 
-Mixed Reality features are available on the web by the use of [WebXR Device APIs](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API) and [deprecated WebVR APIs](webxr-overview.md). For browsers that do not support full WebXR features, you can add [WebXR Polyfills](https://github.com/immersive-web/webxr-polyfill) to your website.
+Mixed Reality features are available on the web by the use of [WebXR](webxr-overview.md). For browsers that do not support full WebXR features, you can add [WebXR Polyfills](https://github.com/immersive-web/webxr-polyfill) to your website.
 
 > [!NOTE]
 > **WebVR** is deprecated and is not available in current browsers, hence should not be used for any new development. It is recommended to migrate **WebVR** implementations to **WebXR**.
@@ -32,19 +32,6 @@ The following list shows the JavaScript frameworks and APIs for building immersi
 |[**A-Frame**](https://aframe.io/) <br/><br/>A-frame is a declarative JavaScript framework to get started with Virtual Reality in the web. Check out the [A-Frame documentation](https://aframe.io/docs/1.2.0/introduction/) to learn more. |![A-Frame](images/a-frame.example.png)  |
 |[**Three.js**](https://threejs.org) <br/><br/>Three.js is a popular 3D library for creating immersive experiences. Learn more about [three.js](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene) in documentation page and by exploring [examples](https://threejs.org/examples/#webgl_animation_cloth). |![Three.js](images/three.js.example.png)  |
 |[**WebGL**](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API)  <br/><br/>You can access the WebXR Device APIs directly by using WebGL APIs. WebGL (Web Graphics Library) is a JavaScript API for rendering high-performance interactive 3D and 2D graphics within any compatible web browser without the use of plug-ins. |![WebGL](images/webgl.example.png)  |
-
-## Mixed Reality native mobile applications using JavaScript
-
-With the help of few JavaScript libraries you can write your mixed reality experiences once and deploy it to web and to native platforms like Windows Mixed Reality headsets, Android and iOS devices.
-
-|  |  |
-| --- | --- |
-| [**Babylon Native**](https://www.babylonjs.com/native/)<br/><br/>Babylon Native platform allows anyone to take their Babylon.js code and build a native application with it, unlocking the power of native technologies. You can download [Babylon native on github](https://github.com/BabylonJS/BabylonNative) and read more about it on [babylon.js blog](https://medium.com/@babylonjs/babylon-native-821f1694fffc).|![Babylon Native](images/babylon.native.png)  |
-| [**React Native**](https://reactnative.dev/)<br/><br/>React Native  is another open source library that allows developers to build using JavaScript and deploy to multiple platforms. You can download [React Native on Github](https://github.com/facebook/react-native) and learn more about it in [React Native Blog](https://reactnative.dev/blog/). |![React Native](images/react.native.png)  |
-
-## What is WebXR Polyfill?
-
-A JavaScript implementation of the [WebXR Device API](https://github.com/immersive-web/webxr), as well as the [WebXR Gamepads Module](https://github.com/immersive-web/webxr-gamepads-module). This polyfill allows developers to write against the latest specification, providing support when run on browsers that implement the WebVR 1.1 spec, or on mobile devices with no WebVR/WebXR support at all.
 
 ## Next steps
 
@@ -65,4 +52,3 @@ Learn how to get started with our tutorials.
 * [Immersive Web W3C Github](https://github.com/immersive-web)
 * [WebGL API](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182648(v=vs.85))
 * [Gamepad API](https://msdn.microsoft.com/library/dn743630(v=vs.85).aspx) and [Gamepad Extensions](https://w3c.github.io/gamepad/extensions.html)
-* [WebVR Overview](webvr-overview.md)
