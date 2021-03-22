@@ -20,7 +20,7 @@ JavaScript is one of the most popular programming languages in the world! It's s
 Mixed Reality features are available on the web by the use of [WebXR](webxr-overview.md). For browsers that do not support full WebXR features, you can add [WebXR Polyfills](https://github.com/immersive-web/webxr-polyfill) to your website.
 
 > [!NOTE]
-> **WebVR** is deprecated and is not available in current browsers, hence should not be used for any new development. It is recommended to migrate **WebVR** implementations to **WebXR**.
+> **WebVR** is deprecated and is not available in current browsers, hence it should not be used for any new development. You will need to migrate any existing **WebVR** implementations forward to **WebXR**.
 
 ## What can I use to develop immersive web experience?
 
