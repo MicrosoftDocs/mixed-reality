@@ -19,6 +19,7 @@ This tutorial covers the following topics:
 > * How to add interactions
 > * Enable WebXR immersive mode
 > * Run the app on Windows Mixed Reality Simulator
+> * Run and debug the app on Android Chrome
 
 ## Before you begin
 
@@ -271,8 +272,40 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
 > [!NOTE]
 > When targeting the cube, make sure that the end of hand ray (white circle) intersects with the cube as shown on the picture above. Learn more about [Point and commit with hands](https://docs.microsoft.com/windows/mixed-reality/design/point-and-commit).
 
+## Run and debug on Android device
 
-<!-- TBD: HoloLens2 emulator does not work, investigate possible workaround -->
+Perform the following steps to enable debugging on your Android device:
+
+### Prerequisites
+
+- A web server that serves static html page in secure context (https:// or via Port forwarding on localhost) on development machine. For example leverage *serve* npm package as simple lightweight web server that serves static html files, check more [npm serve](https://github.com/vercel/serve#readme)
+- The device originally shipped with the Google Play Store and must be running Android 7.0 or newer
+- The latest version of [Google Chrome](https://support.google.com/chrome/answer/95346) on both the development workstation and on the device
+- To verify that the device is correctly configured to run WebXR, browse to a [sample WebXR page](https://immersive-web.github.io/webxr-samples/) on the device. You should see the message, such as:
+
+    > Your browser supports WebXR and can run Virtual Reality and Augmented Reality experiences if you have the appropriate hardware.
+
+
+1. Enable developer mode and USB debugging on an Android device. See how to do this for your version of Android at the official documentation page [Configure on-device developer options](https://developer.android.com/studio/debug/dev-options)
+1. Next, connect Android device to your development machine or laptop via USB cable
+1. Ensure that the web server on the development machine is running. For example, navigate to the root folder containing your web hosting page (index.html) and execute the following code (assuming you use serve npm package):
+
+    ```bash
+    serve
+    ```
+
+1. Open Google Chrome on your development machine and enter in the address bar the following text:
+    > chrome://inspect#devices
+    ![Chrome USB debugging window](../images/chrome-usb-debug.png)
+1. Ensure that the *Discover USB devices* checkbox is enabled
+1. Click the button *Port forwarding* and ensure that *Port forwarding* is enabled and contains an entry *localhost:5000* as shown below:
+    ![Chrome Port Forwarding window](../images/chrome-port-forwarding.png)
+1. In your connected Android device open a Google Chrome window and browse to *http://localhost:5000* and you should see the cube
+1. On your development machine, in Chrome, you will see your device and a list of web pages currently opened in there:
+    ![Chrome Inspect window](../images/chrome-inspect.png)
+1. Click the button *Inspect* next to an entry *http://localhost:5000*:
+    ![Chrome DevTools Debug window](../images/chrome-debug.png)
+1. Use the [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) to debug the page
 
 ## Takeaways
 
