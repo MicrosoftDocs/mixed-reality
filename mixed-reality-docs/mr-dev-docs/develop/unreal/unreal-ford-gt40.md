@@ -12,6 +12,10 @@ appliesto:
 
 # The making of the Ford GT40 experience
 
+*“Pre-MRTK, developing for HoloLens 2 using Unreal was a bit tedious because all of the spatial interactions had to be coded by hand, in C++. The MRTK for Unreal made a lot of those same tasks trivial. I’d estimate it cut the time required for the initial prototype in half.”* - Jose Rodriguez, Software Developer
+
+*“The Ford GT40 Experience is proof that a high-fidelity HoloLens 2 app can be completed in just a few months, with a modest budget, yet still deliver highly impactful results.”*  - Daniel Cheetham, Chief Innovation Officer, Happy Finish
+
 Using the Mixed Reality Toolkit (MRTK) for Unreal, creative production company Happy Finish delivered a HoloLens 2 experience that provides a fresh perspective on the Ford GT40, the legendary race car that beat Ferrari at the 24 Hours of Le Mans!
 
 Using a range of natural and intuitive spatial interactions, users can explore the GT40’s beauty, performance, and engineering—all delivered in a way that takes advantage of the high visual fidelity provided by the Unreal Engine. Software development for the entire project was completed by a single developer in less than three months, made possible by MRTK for Unreal's visual scripting and design environment.
@@ -115,14 +119,6 @@ According to Cheetham, the global pandemic has fueled immense new interest in im
 > [Download the Ford GT40 app](https://www.microsoft.com/p/ford-gt40/9p4vllktfvfp)
 
 Check out our [introduction to Mixed Reality development on HoloLens 2](../development.md) or [MRTK for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) on GitHub.
-
-## What people are saying
-
-*“Pre-MRTK, developing for HoloLens 2 using Unreal was a bit tedious because all of the spatial interactions had to be coded by hand, in C++. The MRTK for Unreal made a lot of those same tasks trivial. I’d estimate it cut the time required for the initial prototype in half.”*
-- Jose Rodriguez, Software Developer
-
-*“The Ford GT40 Experience is proof that a high-fidelity HoloLens 2 app can be completed in just a few months, with a modest budget, yet still deliver highly impactful results.”*  
-- Daniel Cheetham, Chief Innovation Officer, Happy Finish
 
 <!-- ## About the team
 
