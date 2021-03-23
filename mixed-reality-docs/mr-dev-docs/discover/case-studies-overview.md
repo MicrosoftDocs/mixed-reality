@@ -14,7 +14,7 @@ Stories, learnings, and experiences the Mixed Reality team has found and jotted 
 
 :::row:::
     :::column:::
-       [![Ford GT40 experience](images/ford-gt40-img-01.jpeg)](../develop/unreal/unreal-ford-gt40.md)
+       [![Ford GT40 experience](images/ford-gt40-img-01.jpg)](../develop/unreal/unreal-ford-gt40.md)
         **[Ford GT40 experience](../develop/unreal/unreal-ford-gt40.md)**<br>
         This case study lets you get up-close with the legendary racecar that beat Ferrari in the 1966 24 Hours of Le Mans race, as the Ford GT40 springs to life on the table in front of you.<br>
         *February 2021*
