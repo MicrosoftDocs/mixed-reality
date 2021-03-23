@@ -14,10 +14,16 @@ Stories, learnings, and experiences the Mixed Reality team has found and jotted 
 
 :::row:::
     :::column:::
-       [![3 HoloStudio UI and interaction design learnings](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)
-        **[3 HoloStudio UI and interaction design learnings](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
-        HoloStudio was one of the first apps for HoloLens. Because of this, we had to create new best practices for 3D UI and interaction design. We did this through user testing, prototyping, and trial and error.<br>
-        *July 2016*
+       [![Ford GT40 experience](images/ford-gt40-img-01.jpeg)](../develop/unreal/unreal-ford-gt40.md)
+        **[Ford GT40 experience](../develop/unreal/unreal-ford-gt40.md)**<br>
+        This case study lets you get up-close with the legendary racecar that beat Ferrari in the 1966 24 Hours of Le Mans race, as the Ford GT40 springs to life on the table in front of you.<br>
+        *February 2021*
+    :::column-end:::
+    :::column:::
+       [![Scaling Datascape across devices with different performance](images/cloud-steps-1-4-700px.jpg)](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)
+        **[Scaling Datascape across devices with different performance](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)**<br>
+        This case study offers insight on how Microsoft developers optimized the Datascape app to deliver a compelling experience across devices with a range of performance capabilities.<br>
+        *August 2017*
     :::column-end:::
     :::column:::
        [![Building HoloSketch, a spatial layout and UX sketching app for HoloLens](images/holosketch-image-01-640px.png)](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)
@@ -25,15 +31,15 @@ Stories, learnings, and experiences the Mixed Reality team has found and jotted 
         HoloSketch is an on-device spatial layout and UX sketching tool for HoloLens to help build holographic experiences.<br>
          *July 2017*
     :::column-end:::
-    :::column:::
-       [![Creating an immersive experience in Fragments](images/surfacereconstruction.jpg)](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)
-        **[Creating an immersive experience in Fragments](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)**<br>
-        Fragments are an interactive crime drama for Microsoft HoloLens, where you follow the clues to solve a mystery that takes place in your real-world space.<br>
-        *August 2016*
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+       [![Using the stabilization plane to reduce holographic turbulence](images/holotour-stabilization-plane-500px.jpg)](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)
+        **[Using the stabilization plane to reduce holographic turbulence](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)**<br>
+        Working with holograms can be tricky. The fact that you can move around your space and see your holograms from all different angles provides a level of immersion that you can’t get with a normal computer screen.<br>
+        *April 2017*
+    :::column-end:::
     :::column:::
        [![Expanding the spatial mapping capabilities of HoloLens](images/away-from-camera-position-500px.png)](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)
         **[Expanding the spatial mapping capabilities of HoloLens](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)**<br>
@@ -46,22 +52,20 @@ Stories, learnings, and experiences the Mixed Reality team has found and jotted 
         The HoloLens team wants to share some of the best practices that were derived from the Lowe's HoloLens project.<br>
         *September 2016*
     :::column-end:::
-    :::column:::
-       [![Using the stabilization plane to reduce holographic turbulence](images/holotour-stabilization-plane-500px.jpg)](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)
-        **[Using the stabilization plane to reduce holographic turbulence](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)**<br>
-        Working with holograms can be tricky. The fact that you can move around your space and see your holograms from all different angles provides a level of immersion that you can’t get with a normal computer screen.<br>
-        *April 2017*
-    :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       [![Scaling Datascape across devices with different performance](images/cloud-steps-1-4-700px.jpg)](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)
-        **[Scaling Datascape across devices with different performance](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)**<br>
-        This case study offers insight on how Microsoft developers optimized the Datascape app to deliver a compelling experience across devices with a range of performance capabilities.<br>
-        *August 2017*
+       [![Creating an immersive experience in Fragments](images/surfacereconstruction.jpg)](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)
+        **[Creating an immersive experience in Fragments](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)**<br>
+        Fragments are an interactive crime drama for Microsoft HoloLens, where you follow the clues to solve a mystery that takes place in your real-world space.<br>
+        *August 2016*
     :::column-end:::
     :::column:::
+       [![3 HoloStudio UI and interaction design learnings](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)
+        **[3 HoloStudio UI and interaction design learnings](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
+        HoloStudio was one of the first apps for HoloLens. Because of this, we had to create new best practices for 3D UI and interaction design. We did this through user testing, prototyping, and trial and error.<br>
+        *July 2016*
     :::column-end:::
     :::column:::
     :::column-end:::
