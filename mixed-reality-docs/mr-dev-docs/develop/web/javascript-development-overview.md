@@ -17,18 +17,18 @@ JavaScript is one of the most popular programming languages in the world! It's s
 
 ## Mixed Reality applications on the web
 
-Mixed Reality features are available on the web by the use of [WebXR](webxr-overview.md). For browsers that do not support full WebXR features, you can add [WebXR Polyfills](https://github.com/immersive-web/webxr-polyfill) to your website.
+Mixed Reality features are available on the web by the use of [WebXR](webxr-overview.md).
 
 > [!NOTE]
 > **WebVR** is deprecated and is not available in current browsers, hence it should not be used for any new development. You will need to migrate any existing **WebVR** implementations forward to **WebXR**.
 
-## What can I use to develop immersive web experience?
+## What can I use to develop immersive web experiences?
 
 The following list shows the JavaScript frameworks and APIs for building immersive experiences that currently dominate the market and are widely accepted and adopted by Mixed Reality JavaScript developers:
 
 |  |  |
 | --- | --- |
-|[**Babylon.js**](https://doc.babylonjs.com/)<br/><br/> Babylon is a JavaScript 3D engine that makes developing 3D content and immersive applications easy. Before getting started with immersive applications, we recommend to learn the basics of Babylon.js development.<br/><br/>- Learn how to build a mixed reality application with babylon.js [Getting started](https://doc.babylonjs.com/start).<br/>- Play with 3D examples and their source code using babylon.js [Playground](https://doc.babylonjs.com/examples/)<br/>- Dive in to get a deeper understanding of [WebXR](https://doc.babylonjs.com/divingDeeper/webXR)<br/>- Learn how to get started with our tutorials [Create your first "Hello World!" app](tutorials/babylonjs-webxr-helloworld/introduction-01.md)|![BabylonJS Logo](images/babylon.js.example.png) |
+|[**Babylon.js**](https://doc.babylonjs.com/)<br/><br/> Babylon is a JavaScript 3D engine that makes developing 3D content and immersive applications easy. Before getting started with immersive applications, we recommend to learn the basics of Babylon.js development.<br/><br/>- Learn how to build 3D applications with babylon.js [Getting started](https://doc.babylonjs.com/start).<br/>- Play with 3D examples and their source code using babylon.js [Playground](https://doc.babylonjs.com/examples/)<br/>- Dive deeper into [WebXR](https://doc.babylonjs.com/divingDeeper/webXR)<br/>- Learn how to get started with our tutorials [Create your first "Hello World!" app](tutorials/babylonjs-webxr-helloworld/introduction-01.md)|![BabylonJS Logo](images/babylon.js.example.png) |
 |[**A-Frame**](https://aframe.io/) <br/><br/>A-frame is a declarative JavaScript framework to get started with Virtual Reality in the web. Check out the [A-Frame documentation](https://aframe.io/docs/1.2.0/introduction/) to learn more. |![A-Frame](images/a-frame.example.png)  |
 |[**Three.js**](https://threejs.org) <br/><br/>Three.js is a popular 3D library for creating immersive experiences. Learn more about [three.js](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene) in documentation page and by exploring [examples](https://threejs.org/examples/#webgl_animation_cloth). |![Three.js](images/three.js.example.png)  |
 |[**WebGL**](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API)  <br/><br/>You can access the WebXR Device APIs directly by using WebGL APIs. WebGL (Web Graphics Library) is a JavaScript API for rendering high-performance interactive 3D and 2D graphics within any compatible web browser without the use of plug-ins. |![WebGL](images/webgl.example.png)  |

@@ -23,7 +23,7 @@ In this tutorial, learn how to:
 
 ## Before you begin
 
-In previous tutorial step a basic web hosting page was created. Have the hosting web page open for editing.
+In previous tutorial step a basic web page was created. Have the web page open for editing.
 
 ```html
 <html>
@@ -81,16 +81,16 @@ A scene is where all the contents will be displayed. There might be multiple sce
     box.position.y = 1;
     ```
 
-1. Open the hosting web page in the Microsoft Edge browser and check the output. The browser window shows a blank page. Open DevTools by using the keyboard and select F12 or Control+Shift+I (Windows, Linux) or Command+Option+I (macOS). After opening the *Console* tab, you can start looking for errors. There will be an error displayed: 'Uncaught Error: No camera defined'. Now we have to add a camera to the scene.
+1. Open the web page in the Microsoft Edge browser and check the output. The browser window shows a blank page. Open DevTools by using the keyboard and select F12 or Control+Shift+I (Windows, Linux) or Command+Option+I (macOS). After opening the *Console* tab, you can start looking for errors. There will be an error displayed: 'Uncaught Error: No camera defined'. Now we have to add a camera to the scene.
 
 ## Add a camera
 
 1. To allow user input, a camera must be attached to the canvas. Let's add the camera of type [BABYLON.ArcRotateCamera](https://doc.babylonjs.com/divingDeeper/cameras/camera_introduction#arc-rotate-camera) that allows us to look around, i.e. can be rotated around object that we've just added to the scene. The parameters required to create an instance of the camera are name, alpha (rotation along the longitudinal axis), beta (rotation along the latitudinal axis), radius (distance from the target), and target (the target the camera should look at). Add the following code to the *createScene* function:
 
     ```javascript
-    var alpha =  -3*Math.PI/4;
-    var beta = Math.PI;
-    var radius = 5;
+    const alpha =  Math.PI;
+    const beta = Math.PI;
+    const radius = 5;
     
     const camera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 0);
     camera.setPosition(new BABYLON.Vector3(alpha, beta, radius));
@@ -127,9 +127,9 @@ A scene is where all the contents will be displayed. There might be multiple sce
                 const scene = new BABYLON.Scene(engine);
                 scene.clearColor = new BABYLON.Color3.Black;
                 
-                var alpha =  Math.PI;
-                var beta = Math.PI;
-                var radius = 5;
+                const alpha =  Math.PI;
+                const beta = Math.PI;
+                const radius = 5;
                 
                 const camera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 0);
                 camera.setPosition(new BABYLON.Vector3(alpha, beta, radius));
@@ -137,7 +137,7 @@ A scene is where all the contents will be displayed. There might be multiple sce
                 
                 const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0));
                 
-                const box = BABYLON.MeshBuilder.CreateBox("box", {wrap: true});
+                const box = BABYLON.MeshBuilder.CreateBox("box", {});
                 box.position.x = 0.5;
                 box.position.y = 1;
                 

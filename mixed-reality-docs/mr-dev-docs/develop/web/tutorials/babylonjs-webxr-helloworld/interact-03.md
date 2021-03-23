@@ -43,9 +43,9 @@ In previous tutorial step a basic web page with a scene was created. Have the ho
             const scene = new BABYLON.Scene(engine);
             scene.clearColor = new BABYLON.Color3.Black;
             
-            var alpha =  Math.PI;
-            var beta = Math.PI;
-            var radius = 5;
+            const alpha =  Math.PI;
+            const beta = Math.PI;
+            const radius = 5;
             
             const camera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 0);
             camera.setPosition(new BABYLON.Vector3(alpha, beta, radius));
@@ -53,7 +53,7 @@ In previous tutorial step a basic web page with a scene was created. Have the ho
             
             const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0));
             
-            const box = BABYLON.MeshBuilder.CreateBox("box", {wrap: true});
+            const box = BABYLON.MeshBuilder.CreateBox("box", {});
             box.position.x = 0.5;
             box.position.y = 1;
             
@@ -81,7 +81,7 @@ In previous tutorial step a basic web page with a scene was created. Have the ho
 
 1. Now that the cube is painted with a random color, let's add an interaction to:
 
-    * Change the face color when the cube is clicked
+    * Change the color when the cube is clicked
     * Move the cube after the color is changed
 
     To add interactions we should be using [actions](https://doc.babylonjs.com/divingDeeper/events/actions). An action is launched in response to the event trigger. For example, when the user clicks on the cube. All we need to do is instantiate BABYLON.ActionManager and register an action for certain trigger. The [BABYLON.ExecuteCodeAction](https://doc.babylonjs.com/typedoc/classes/babylon.executecodeaction) will run our JavaScript function when someone clicks on the cube:
@@ -122,9 +122,9 @@ In previous tutorial step a basic web page with a scene was created. Have the ho
                 const scene = new BABYLON.Scene(engine);
                 scene.clearColor = new BABYLON.Color3.Black;
                 
-                var alpha =  Math.PI;
-                var beta = Math.PI;
-                var radius = 5;
+                const alpha =  Math.PI;
+                const beta = Math.PI;
+                const radius = 5;
                 
                 const camera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 0);
                 camera.setPosition(new BABYLON.Vector3(alpha, beta, radius));
@@ -175,7 +175,7 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
 
     This creates a simple 4x4-meter floor.
 
-1. In order to add WebXR support, we need to call *createDefaultXRExperienceAsync*, which has a *Promise* result. Add this code at the of *createScene* function instead of *return scene;*:
+1. In order to add WebXR support, we need to call *createDefaultXRExperienceAsync*, which has a *Promise* result. Add this code at the end of *createScene* function instead of *return scene;*:
 
     ```javascript
     var xrPromise = scene.createDefaultXRExperienceAsync({
@@ -207,9 +207,9 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
                 const scene = new BABYLON.Scene(engine);
                 scene.clearColor = new BABYLON.Color3.Black;
                 
-                var alpha =  Math.PI;
-                var beta = Math.PI;
-                var radius = 5;
+                const alpha =  Math.PI;
+                const beta = Math.PI;
+                const radius = 5;
                 
                 const camera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 0);
                 camera.setPosition(new BABYLON.Vector3(alpha, beta, radius));
@@ -278,13 +278,12 @@ Perform the following steps to enable debugging on your Android device:
 
 ### Prerequisites
 
-- A web server that serves static html page in secure context (https:// or via Port forwarding on localhost) on development machine. For example leverage *serve* npm package as simple lightweight web server that serves static html files, check more [npm serve](https://github.com/vercel/serve#readme)
-- The device originally shipped with the Google Play Store and must be running Android 7.0 or newer
-- The latest version of [Google Chrome](https://support.google.com/chrome/answer/95346) on both the development workstation and on the device
-- To verify that the device is correctly configured to run WebXR, browse to a [sample WebXR page](https://immersive-web.github.io/webxr-samples/) on the device. You should see the message, such as:
+* A web server that serves static html page in secure context (https:// or via Port forwarding on localhost) on development machine. For example leverage *serve* npm package as simple lightweight web server that serves static html files, check more [npm serve](https://github.com/vercel/serve#readme)
+* The device originally shipped with the Google Play Store and must be running Android 7.0 or newer
+* The latest version of [Google Chrome](https://support.google.com/chrome/answer/95346) on both the development workstation and on the device
+* To verify that the device is correctly configured to run WebXR, browse to a [sample WebXR page](https://immersive-web.github.io/webxr-samples/) on the device. You should see the message, such as:
 
     > Your browser supports WebXR and can run Virtual Reality and Augmented Reality experiences if you have the appropriate hardware.
-
 
 1. Enable developer mode and USB debugging on an Android device. See how to do this for your version of Android at the official documentation page [Configure on-device developer options](https://developer.android.com/studio/debug/dev-options)
 1. Next, connect Android device to your development machine or laptop via USB cable

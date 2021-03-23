@@ -67,7 +67,7 @@ To create this project from scratch, start with a Visual Studio Code (VSCode) pr
     </html>
     ```
 
-1. The canvas occupies the entire web page. That completes our hosting web page. At this point, the hosting web page is ready. You can open it in any browser and ensure there are no errors shown, though there is no immersive experience yet.
+1. The canvas occupies the entire web page. That completes our web page. At this point, the web page is ready. You can open it in any browser and ensure there are no errors shown, though there is no immersive experience yet.
 
 ## Next steps
 
