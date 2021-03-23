@@ -236,6 +236,9 @@ When the build process has completed, Unity will prompt Windows File Explorer to
 
 Configure Visual Studio for HoloLens by selecting the **Master** or **Release** configuration, the **ARM64** architecture, and **Device** as target:
 
+> [!NOTE]
+> Choose your target depending on your deployment method.
+
 ![Visual Studio configured for deploy to HoloLens 2](images/mr-learning-base/base-02-section8-step1-2.png)
 
 > [!TIP]
@@ -247,7 +250,7 @@ Configure Visual Studio for HoloLens by selecting the **Master** or **Release** 
 > [!NOTE]
 > If you don't see Device as a target option, you may need to change the startup project for the Visual Studio solution from the IL2CPP project to the UWP project. To do this, in the Solution Explorer, right-click on YourProjectName (Universal Windows) and select **Set as StartUp Project**.
 
-Connect your HoloLens to your computer, then select **Debug** > **Start Without Debugging** to build and deploy to your device:
+Connect your HoloLens to your computer using a USB-C cable, then select **Debug** > **Start Without Debugging** to build and deploy to your device:
 
 ![Visual Studio Start Without Debugging menu path](images/mr-learning-base/base-02-section8-step1-3.png)
 
