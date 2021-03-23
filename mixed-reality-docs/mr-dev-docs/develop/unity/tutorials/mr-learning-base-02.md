@@ -200,13 +200,13 @@ In the Save Scene window, navigate to your project's **Scenes** folder, give you
 
 Download the following Unity custom package:
 
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.5.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.unitypackage)
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.5.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage)
 
 To Import a Unity custom package, In the Unity menu, select **Assets** > **Import Package** > **Custom Package...** to open the Import package... window:
 
 ![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-02-section7-step1-1.png)
 
-In the Import package... window, select the **MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.unitypackage** you downloaded and click the Open button:
+In the Import package... window, select the **MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage** you downloaded and click the Open button:
 
 ![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-02-section7-step1-2.png)
 
