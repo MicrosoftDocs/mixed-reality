@@ -1271,6 +1271,22 @@
 			"redirect_url": "/windows/mixed-reality/develop/web/webxr-overview",
 			"redirect_document_id": true
 		},
+		// Web >> JavaScript
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/web/javascript-development-overview.md",
+			"redirect_url": "/windows/mixed-reality/develop/javascript/javascript-development-overview",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/web/webvr-overview.md",
+			"redirect_url": "/windows/mixed-reality/develop/javascript/webvr-overview",
+			"redirect_document_id": true
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/web/webxr-overview.md",
+			"redirect_url": "/windows/mixed-reality/develop/javascript/webxr-overview",
+			"redirect_document_id": true
+		},
 		// Porting-Apps
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/building-2d-apps.md",

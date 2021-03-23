@@ -101,7 +101,7 @@ You can use **Microsoft Dynamics 365 Guides** to visually tether holographic ins
 
 ![Web](../images/javascript_logo_banner.png)
 
-The WebXR Device API is an open specification that allows you to experience Mixed Reality apps in your browser on any platform. See the [JavaScript development overview](../web/javascript-development-overview.md) to get started building Mixed Reality apps for any platform.
+The WebXR Device API is an open specification that allows you to experience Mixed Reality apps in your browser on any platform. See the [JavaScript development overview](../javascript/javascript-development-overview.md) to get started building Mixed Reality apps for any platform.
 
 
 # [Native (OpenXR)](#tab/native)
