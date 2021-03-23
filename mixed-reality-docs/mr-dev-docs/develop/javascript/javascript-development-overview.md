@@ -17,7 +17,7 @@ JavaScript is one of the most popular programming languages in the world! It's s
 
 ## Mixed Reality applications on the web
 
-Mixed Reality features are available on the web by the use of [WebXR](webxr-overview.md).
+Mixed Reality features are available on the web by the use of [WebXR](webxr-overview.md). You can see virtual reality (VR) and augmented reality (AR) content in a compatible WebXR-enabled browser without installing any additional software or plugins. You can use that same browser with a physical device like the HoloLens 2. Check out our [WebXR](webxr-overview.md) documentation for more details.
 
 > [!NOTE]
 > **WebVR** is deprecated and is not available in current browsers, hence it should not be used for any new development. You will need to migrate any existing **WebVR** implementations forward to **WebXR**.
