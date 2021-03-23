@@ -24,6 +24,10 @@
     href: unity/unity-development-overview.md
   - name: Unity development for VR
     href: unity/unity-development-wmr-overview.md
+  - name: Introducing MRTK
+    href: unity/mrtk-getting-started.md
+  - name: Introducing World Locking Tools
+    href: unity/world-locking-tools.md
   - name: Tutorials
     items:
       - name: Overview
@@ -168,8 +172,6 @@
                 href: unity/tutorials/mr-azure-301.md
   - name: Setting up your project
     items:
-    - name: Introducing MRTK
-      href: unity/mrtk-getting-started.md
     - name: Configuring your project without MRTK
       href: unity/configure-unity-project.md
     - name: Using the Mixed Reality OpenXR Plugin
