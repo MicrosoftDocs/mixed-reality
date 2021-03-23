@@ -348,6 +348,8 @@
     items:
       - name: Kippy's Escape
         href: unreal/unreal-kippys-escape.md
+      - name: Ford GT40 experience
+        href: unreal/unreal-ford-gt40.md
   - name: Deployment and publishing
     items:
       - name: Deploy to device

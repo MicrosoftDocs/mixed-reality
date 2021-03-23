@@ -30,6 +30,7 @@ A subset of the samples use interactive UX components such as buttons and slider
 
 * [Chess App](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/ChessApp)
 * [Kippy's Escape](../unreal/unreal-kippys-escape.md) - Download from the [Microsoft Store](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) in HoloLens 2
+* [Ford GT40](../unreal/unreal-ford-gt40.md) - Download from the [Microsoft Store](https://www.microsoft.com/p/ford-gt40/9p4vllktfvfp)
 
 ### Made by Epic Games
 
