@@ -42,7 +42,7 @@ to the changes [between versions](#updating-230-to-240) to understand the upgrad
 to do a version-by-version upgrade.
 
 ### Mixed Reality Feature Tool
-The easiest way to upgrade MRTK to a newer version MRTK is by using the [Mixed Reality Feature Tool](https://docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) to download the latest packages and load them directly to your Unity project.
+The easiest way to upgrade MRTK to a newer version MRTK is by using the [Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) to download the latest packages and load them directly to your Unity project.
 
 ### Unity asset (.unitypackage) files
 

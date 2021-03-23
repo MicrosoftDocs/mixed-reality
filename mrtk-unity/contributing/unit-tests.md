@@ -34,7 +34,7 @@ The [Unity Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunne
 
 ### Command line
 
-Tests can also be run by a [powershell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-6&preserve-view=true) script located at `Scripts\test\run_playmode_tests.ps1`. This will run the playmode tests exactly as they are executed on github / CI (see below), and print results. Here are some examples of how to run the script
+Tests can also be run by a [powershell](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6) script located at `Scripts\test\run_playmode_tests.ps1`. This will run the playmode tests exactly as they are executed on github / CI (see below), and print results. Here are some examples of how to run the script
 
 Run the tests on the project located at H:\mrtk.dev, with Unity 2018.4 (for example Unity 2018.4.26f1)
 
@@ -75,7 +75,7 @@ For a single test that needs to be executed multiple times:
 public IEnumerator MyTest() {...}
 ```
 
-Run the following from a command line ([PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-6#powershell-core&preserve-view=true) is recommended)
+Run the following from a command line ([PowerShell](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6#powershell-core) is recommended)
 
 ```powershell
 cd scripts\tests
@@ -318,4 +318,3 @@ TestUtilities.ShutdownMixedRealityToolkit();
 Please refer to the API docs of [`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities) and
 [`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities) for further methods
 of these util classes as they're extended on a regular basis while new tests get added to MRTK.
-

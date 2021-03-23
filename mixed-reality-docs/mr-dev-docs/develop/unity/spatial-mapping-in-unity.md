@@ -475,7 +475,7 @@ The understanding dll internally stores the playspace as a grid of 8 cm sized vo
 * When tracking is lost, the next OnSurfaceChanged event will remove all meshes.
 
 ## Spatial Mapping in Mixed Reality Toolkit
-For more information on using Spatial Mapping with Mixed Reality Toolkit v2, see the <a href="https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">Spatial Awareness section</a> of the MRTK docs.
+For more information on using Spatial Mapping with Mixed Reality Toolkit v2, see the <a href="/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">Spatial Awareness section</a> of the MRTK docs.
 
 ## Next Development Checkpoint
 

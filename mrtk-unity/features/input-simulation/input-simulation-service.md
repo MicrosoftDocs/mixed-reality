@@ -99,7 +99,7 @@ In the [input simulation tools window](#input-simulation-tools-window) the **Def
 
 * *Hand Gestures*: Simulates a simplified hand model with air tap and basic gestures.
 
-   Emulates [HoloLens interaction model](https://docs.microsoft.com/windows/mixed-reality/gestures).
+   Emulates [HoloLens interaction model](/windows/mixed-reality/gestures).
 
    Focus is controlled using the Gaze pointer. The *Air Tap* gesture is used to interact with buttons.
 

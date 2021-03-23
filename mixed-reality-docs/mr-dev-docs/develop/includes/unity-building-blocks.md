@@ -2,7 +2,7 @@
 
 |  Feature  |  Capabilities  |
 | --- | --- |
-| [Basic interactions](../unity/mrtk-101.md) | Learn the basics of interacting with objects in immersive space |
+| [Basic interactions](../../out-of-scope/mrtk-101.md) | Learn the basics of interacting with objects in immersive space |
 | [Camera](../unity/camera-in-unity.md) | Fully optimize visual quality and hologram stability in your Mixed Reality apps |
 | [Gaze](../unity/gaze-in-unity.md) | Let users target holograms with by looking at them |
 | [Motion controllers](../unity/motion-controllers-in-unity.md) | Add spatial actions to your Mixed Reality apps |

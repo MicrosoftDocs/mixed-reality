@@ -139,6 +139,6 @@ In the next two tutorial series, [Azure Spatial Anchors tutorials](mr-learning-a
 If you're following the Unity development checkpoint journey we've laid out, your next task is to familiarize yourself with core building blocks of Mixed Reality apps.
 
 > [!div class="nextstepaction"]
-> [Basic interactions](../mrtk-101.md)
+> [Basic interactions](../../../out-of-scope/mrtk-101.md)
 
 You can always go back to the [Unity development checkpoints](../unity-development-overview.md#1-getting-started) at any time.

@@ -65,7 +65,7 @@ This section outlines additional information to create and gather *Spatial Mesh 
 
 ### Windows Device Portal
 
-The [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) can be used to download the spatial mesh, as a .obj file, from a Microsoft HoloLens device.
+The [Windows Device Portal](/windows/mixed-reality/using-the-windows-device-portal) can be used to download the spatial mesh, as a .obj file, from a Microsoft HoloLens device.
 
 1. Scan by simply walking and viewing the desired environment with a HoloLens
 1. Connect to the HoloLens using the Windows Device Portal
@@ -85,4 +85,4 @@ The [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/usi
 - [Spatial Awareness Getting started](spatial-awareness-getting-started.md)
 - [Configuring Mesh Observers on Device](configuring-spatial-awareness-mesh-observer.md)
 - [Configuring Mesh Observers via code](usage-guide.md)
-- [Using the Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)
+- [Using the Windows Device Portal](/windows/mixed-reality/using-the-windows-device-portal)

@@ -9,7 +9,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Gaze,
 
 # Gaze
 
-[Gaze](https://docs.microsoft.com/windows/mixed-reality/gaze) is a form of input that interacts
+[Gaze](/windows/mixed-reality/gaze) is a form of input that interacts
 with the world based on where the user is looking. Gaze exists in two different flavors
 
 ## Head gaze
