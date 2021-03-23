@@ -1,5 +1,5 @@
 ---
-title: MR and Azure 303 - Natural language understanding (LUIS)
+title: HoloLens (1st gen) and Azure 303 - Natural language understanding (LUIS)
 description: Complete this course to learn how to implement Azure Language Understanding Intelligence Service (LUIS) within a mixed reality application.
 author: drneil
 ms.author: jemccull
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, language understanding intelligence service, luis, hololens, immersive, vr, Windows 10, Visual Studio
 ---
 
-# MR and Azure 303: Natural language understanding (LUIS)
+# HoloLens (1st gen) and Azure 303: Natural language understanding (LUIS)
 
 <br>
 

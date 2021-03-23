@@ -1,5 +1,5 @@
 ---
-title: MR and Azure 305 - Functions and storage
+title: HoloLens (1st gen) and Azure 305 - Functions and storage
 description: Complete this course to learn how to implement Azure Storage and Functions within a mixed reality application.
 author: drneil
 ms.author: jemccull
@@ -8,8 +8,7 @@ ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, functions, storage, hololens, immersive, vr, Windows 10, Visual Studio
 ---
 
-
-# MR and Azure 305: Functions and storage
+# HoloLens (1st gen) and Azure 305: Functions and storage
 
 <br>
 

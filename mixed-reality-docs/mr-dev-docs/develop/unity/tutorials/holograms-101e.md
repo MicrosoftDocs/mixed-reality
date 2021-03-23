@@ -1,5 +1,5 @@
 ---
-title: MR Basics 101E - Complete project with emulator
+title: HoloLens (1st gen) Basics 101E - Complete project with emulator
 description: Follow this coding walkthrough using Unity, Visual Studio and HoloLens Emulator to learn the basics of a holographic application.
 author: keveleigh
 ms.author: kurtie
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: mixed reality, Windows Mixed Reality, hologram, academy, tutorial, emulator, HoloLens, Mixed Reality Academy, unity, mixed reality headset, windows mixed reality headset, virtual reality headset, Windows 10, gaze, gestures, voice input, spatial sound, spatial mapping
 ---
 
-# MR Basics 101E: Complete project with emulator
+# HoloLens (1st gen) Basics 101E: Complete project with emulator
 
 >[!NOTE]
 >The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](mrlearning-base.md) has been posted for HoloLens 2.

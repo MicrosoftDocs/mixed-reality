@@ -25,7 +25,10 @@ MRTK for Unity provides a cross-platform input system, foundational components, 
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCG]
 
-Take a look at [MRTK's documentation](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/) for more feature details.
+> [!div class="nextstepaction"]
+> [Try out our MRTK tutorials](tutorials/mr-learning-base-01.md)
+
+Take a look at [MRTK's documentation](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity) for more feature details.
 
 ## New with MRTK v2
 
