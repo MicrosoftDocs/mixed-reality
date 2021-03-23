@@ -1,9 +1,9 @@
 ---
-title: Introducing MRTK for Unity
-description: Get started with everything the cross-platform Mixed Reality Toolkit has to offer new mixed reality developers.
-author: cre8ivepark
-ms.author: dongpark
-ms.date: 05/15/2019
+title: Introducing World Locking Tools
+description: Get started with everything World Locking Tools has to offer new mixed reality developers.
+author: hferrone
+ms.author: v-hferrone
+ms.date: 03/23/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, test, Mixed Reality Toolkit, MRTK version 2, MRTK, tools, SDK, HoloLens, HoloLens 2, mixed reality headset, windows mixed reality headset, virtual reality headset, cross-platform
