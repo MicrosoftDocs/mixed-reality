@@ -2,12 +2,20 @@
 
 ![Unity logo banner](../images/unity_logo_banner.png)<br>
 
-### 1. Download the latest version
+### 1. Download the recommended Unity version 
 
-We recommend the [Unity LTS (Long Term Support)](https://unity3d.com/unity/qa/lts-releases) stream as the best version to use when starting new projects, updating to its latest revision to pick up the latest stable fixes.
-* Use Unity Hub to install and manage Unity.
-* The current recommendation is to use **[Unity 2019.4 LTS](https://unity3d.com/unity/qa/lts-releases?version=2019.4)**, which is the LTS build required for MRTK v2 below.
-* If you need to use a different version of Unity for specific reasons, Unity supports side-by-side installs of different versions.
+The current recommended version for Mixed Reality development is **Unity 2019.4 LTS (Long Term Support)**. The best way to install and manage Unity is through the **Unity Hub**. 
+
+> [!NOTE]
+>  If you’re using Unity 2020 LTS, Mixed Reality support is available for HoloLens 2 development. However, there are currently some known issues. This will become the recommended Unity version later this year. 
+
+<!-- See [Choosing a Unity version and XR plugin](../unity/choosing-unity-version-xr.md) to learn what Mixed Reality support is available in different Unity engine and XR plugin versions.  -->
+
+> [!div class="nextstepaction"]
+> [Download Unity Hub](https://unity3d.com/get-unity/download)
+
+> [!div class="nextstepaction"]
+> [Download Unity 2019.4 LTS](https://unity3d.com/unity/qa/lts-releases?version=2019.4)
 
 When installing Unity, please make sure to check following components under **'Platforms'**.
 * **Universal Windows Platform Build Support** 

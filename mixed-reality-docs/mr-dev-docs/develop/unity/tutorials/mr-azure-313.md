@@ -1,5 +1,5 @@
 ---
-title: MR and Azure 313 - IoT Hub Service
+title: HoloLens (1st gen) and Azure 313 - IoT Hub Service
 description: Learn how to implement Azure IoT Hub Service on a virtual machine running Ubuntu 16.4 and visualize the message data using Microsoft HoloLens or VR headset.
 author: drneil
 ms.author: jemccull
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: azure, mixed reality, academy, edge, iot edge, tutorial, api, notification, functions, tables, hololens, immersive, vr, iot, virtual machine, ubuntu, python, Windows 10, Visual Studio
 ---
 
-# MR and Azure 313: IoT Hub Service
+# HoloLens (1st gen) and Azure 313: IoT Hub Service
 
 >[!NOTE]
 >The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.

@@ -1,5 +1,5 @@
 ---
-title: MR and Azure 312 - Bot integration
+title: HoloLens (1st gen) and Azure 312 - Bot integration
 description: Complete this course to learn how to create and deploy a bot, using Microsoft Bot Framework v4, and communicate with it in a mixed reality application.
 author: drneil
 ms.author: jemccull
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, computer vision, hololens, immersive, vr, microsoft bot framework v4, web app bot, bot framework, microsoft bot, Windows 10, Visual Studio
 ---
 
-# MR and Azure 312: Bot integration
+# HoloLens (1st gen) and Azure 312: Bot integration
 
 >[!NOTE]
 >The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.

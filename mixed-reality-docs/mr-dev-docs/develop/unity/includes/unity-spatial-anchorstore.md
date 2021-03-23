@@ -1,5 +1,7 @@
 # [Unity 2020 + OpenXR](#tab/openxr)
 
+An additional API called the **XRAnchorStore** enables anchors to be persisted between sessions. The XRAnchorStore is a representation of the saved anchors on a device. Anchors can be persisted from **ARAnchors** in the Unity scene, loaded from storage into new **ARAnchors**, or deleted from storage.
+
 > [!NOTE]
 > These anchors are to be saved and loaded on the same device. Cross-device anchor storage will be supported through Azure Spatial Anchors in a future release.
 
@@ -47,6 +49,8 @@ To see a full example of persisting / unpersisting anchors, check out the Anchor
 ![Screenshot of the inspector panel open in the Unity Editor with the anchors sample script highlighted](../images/openxr-features-img-05.png)
 
 # [Unity 2019/2020 + Windows XR Plugin](#tab/winxr)
+
+An API called the **XRAnchorStore** enables anchors to be persisted between sessions. The XRAnchorStore is a representation of the saved anchors on a device. Anchors can be persisted from **ARAnchors** in the Unity scene, loaded from storage into new **ARAnchors**, or deleted from storage.
 
 > [!NOTE]
 > These anchors are to be saved and loaded on the same device. Cross-device anchor storage will be supported through Azure Spatial Anchors in a future release.
@@ -97,6 +101,8 @@ XRAnchorStore anchorStore = await arAnchorManager.subsystem.TryGetAnchorStoreAsy
 ```
 
 # [Legacy WSA](#tab/wsa)
+
+The **WorldAnchorStore** is the key to creating holographic experiences where holograms stay in specific real world positions across instances of the application. Users can then pin individual holograms wherever they want, and find them later in the same spot over many uses of your app.
 
 **Namespace:** *UnityEngine.XR.WSA.Persistence*<br>
 **Class:** *WorldAnchorStore*
@@ -178,84 +184,6 @@ for (int index = 0; index < ids.Length; index++)
 {
     Debug.Log(ids[index]);
 }
-```
-
-## Building a world-scale experience
-
-**Namespace:** *UnityEngine.XR.WSA*<br>
-**Type:** *WorldAnchor*
-
-For true **world-scale experiences** on HoloLens that let users wander beyond 5 meters, you'll need new techniques beyond those used for room-scale experiences. One key technique you'll use is to create a [spatial anchor](../../../design/coordinate-systems.md#spatial-anchors) to lock a cluster of holograms precisely in place in the physical world, no matter how far the user has roamed, and then [find those holograms again in later sessions](../../../design/coordinate-systems.md#spatial-anchor-persistence).
-
-In Unity, you create a spatial anchor by adding the **WorldAnchor** Unity component to a GameObject.
-
-### Adding a World Anchor
-
-To add a world anchor, call `AddComponent<WorldAnchor>()` on the game object with the transform you want to anchor in the real world.
-
-```cs
-WorldAnchor anchor = gameObject.AddComponent<WorldAnchor>();
-```
-
-That's it! This game object will now be anchored to its current location in the physical world - you may see its Unity world coordinates adjust slightly over time to ensure that physical alignment. Refer to [loading a world anchor](#loading-a-worldanchor) to find this anchored location again in a future app session.
-
-### Removing a World Anchor
-
-If you no longer want the GameObject locked to a physical world location and don't intend on moving it this frame, then you can just call Destroy on the World Anchor component.
-
-```cs
-Destroy(gameObject.GetComponent<WorldAnchor>());
-```
-
-If you want to move the GameObject this frame, you need to call DestroyImmediate instead.
-
-```cs
-DestroyImmediate(gameObject.GetComponent<WorldAnchor>());
-```
-
-### Moving a World Anchored GameObject
-
-GameObject's cannot be moved while a World Anchor is on it. If you need to move the GameObject this frame, you need to:
-
-1. DestroyImmediate the World Anchor component
-2. Move the GameObject
-3. Add a new World Anchor component to the GameObject.
-
-```cs
-DestroyImmediate(gameObject.GetComponent<WorldAnchor>());
-gameObject.transform.position = new Vector3(0, 0, 2);
-WorldAnchor anchor = gameObject.AddComponent<WorldAnchor>();
-```
-
-### Handling Locatability Changes
-
-A WorldAnchor may not be locatable in the physical world at a point in time. If that occurs, Unity won't be updating the transform of the anchored object. This also can change while an app is running. Failure to handle the change in locatability will cause the object to not appear in the correct physical location in the world.
-
-To be notified about locatability changes:
-
-1. Subscribe to the OnTrackingChanged event
-2. Handle the event
-
-The **OnTrackingChanged** event will be called whenever the underlying spatial anchor changes between a state of being locatable vs. not being locatable.
-
-```cs
-anchor.OnTrackingChanged += Anchor_OnTrackingChanged;
-```
-
-Then handle the event:
-
-```cs
-private void Anchor_OnTrackingChanged(WorldAnchor self, bool located)
-{
-    // This simply activates/deactivates this object and all children when tracking changes
-    self.gameObject.SetActiveRecursively(located);
-}
-```
-
-Sometimes anchors are located immediately. In this case, this isLocated property of the anchor will be set to true when AddComponent<WorldAnchor>() returns. As a result, the OnTrackingChanged event won't be triggered. A clean pattern would be to call your OnTrackingChanged handler with the initial IsLocated state after attaching an anchor.
-
-```cs
-Anchor_OnTrackingChanged(anchor, anchor.isLocated);
 ```
 
 ## Persisting holograms for multiple devices
