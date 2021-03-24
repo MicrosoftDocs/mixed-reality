@@ -1,5 +1,5 @@
 ---
-title: PefGettingStarted
+title: PerfGettingStarted
 description: Documentation to understand and adjust preformance in MRTK.
 author: keveleigh
 ms.author: kurtie
