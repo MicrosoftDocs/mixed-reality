@@ -42,10 +42,11 @@ You can use **Microsoft Dynamics 365 Guides** to visually tether holographic ins
 ## Examples
 
 We have several open source [sample apps](../features-and-samples.md) for you to download and play around with to get a feel for a Mixed Reality end product in Unity. There are also MRTK example scenes available for you to test out specific features:
-* [Hand interaction examples scene (MRTK) for Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#open-and-run-the-handinteractionexamples-scene-in-editor) -
+
+* [Hand interaction examples scene (MRTK) for Unity](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples) -
 The HandInteractionExamples.unity example scene contains various types of interactions and UI controls that highlight articulated hand input.
 
-* [Eye tracking examples (MRTK) for Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_ExamplesOverview.html) - 
+* [Eye tracking examples (MRTK) for Unity](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/example-scenes/eye-tracking-examples-overview) - 
 This page covers how to get quickly started with using eye tracking in MRTK by building on our provided MRTK eye tracking examples.
 
 >[!NOTE]
