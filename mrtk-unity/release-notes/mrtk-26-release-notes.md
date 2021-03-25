@@ -34,7 +34,7 @@ Updates the dialog example scene to correctly describe the current dialog scenar
 
 ### Add support for OpenXR
 
-Initial support for Unity's OpenXR preview package and Microsoft's Mixed Reality OpenXR package has been added. See [the MRTK/XRSDK getting started page](../configuration/getting-started-with-mrtk-and-xrsdk.md), [Unity's forum post](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/), or [Microsoft's documentation](https://aka.ms/openxr-unity-install) for more information.
+Initial support for Unity's OpenXR preview package and Microsoft's Mixed Reality OpenXR package has been added. See [the MRTK/XRSDK getting started page](../configuration/getting-started-with-mrtk-and-xrsdk.md), [Unity's forum post](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/), or [Microsoft's documentation](/windows/mixed-reality/develop/unity/openxr-getting-started) for more information.
 
 > [!IMPORTANT]
 > OpenXR in Unity is only supported on Unity 2020.2 and higher.
@@ -69,7 +69,7 @@ see our updated [Input Simulation Service documentation](../features/input-simul
 
 ### Scene Understanding now available in MRTK as an experimental spatial awareness observer
 
-Experimental support of [Scene Understanding](https://docs.microsoft.com/windows/mixed-reality/scene-understanding) is introduced in MRTK 2.6. Users can incorporate the scene understanding capabilities of HoloLens 2 as a spatial awareness observer in MRTK based projects. Please read the [Scene Understanding documentation](../features/spatial-awareness/scene-understanding.md) for more information.
+Experimental support of [Scene Understanding](/windows/mixed-reality/scene-understanding) is introduced in MRTK 2.6. Users can incorporate the scene understanding capabilities of HoloLens 2 as a spatial awareness observer in MRTK based projects. Please read the [Scene Understanding documentation](../features/spatial-awareness/scene-understanding.md) for more information.
 
 > [!IMPORTANT]
 > Scene Understanding is only supported on HoloLens 2 and Unity 2019.4 and higher.
@@ -92,7 +92,7 @@ Two new solvers are ready for use with mainline MRTK.
 ### Hand Coach graduated from experimental
 
 The Hand Coach feature is now ready for use with mainline MRTK.
-  ![Hand Coach Example](https://docs.microsoft.com/windows/mixed-reality/design/images/handcoach/airtap.gif)
+  ![Hand Coach Example](/windows/mixed-reality/design/images/handcoach/airtap.gif)
 
 ### Dialog controls graduated from experimental
 
@@ -112,13 +112,13 @@ The Pulse shader scripts have graduated from experimental. For more information 
 
 ### Reading mode
 
-Added support for [reading mode](https://docs.microsoft.com/hololens/hololens2-display#what-improvements-are-coming-that-will-improve-hololens-2-image-quality) on HoloLens 2. Reading mode reduces the system's field of view but eliminates a scaling of Unity's output. A pixel rendered by Unity will correspond to a projected pixel on HoloLens 2. Application authors should do tests with multiple individuals to be sure this is a tradeoff they want in their app.
+Added support for [reading mode](/hololens/hololens2-display#what-improvements-are-coming-that-will-improve-hololens-2-image-quality) on HoloLens 2. Reading mode reduces the system's field of view but eliminates a scaling of Unity's output. A pixel rendered by Unity will correspond to a projected pixel on HoloLens 2. Application authors should do tests with multiple individuals to be sure this is a tradeoff they want in their app.
 
   ![Windows Mixed Reality reading mode](images/WMRReadingMode.gif)
 
 ### Support for 3D app launchers on UWP
 
-Adds the ability to set a [3D app launcher](https://docs.microsoft.com/windows/mixed-reality/distribute/3d-app-launcher-design-guidance) for UWP. This setting is exposed both in the MRTK Build Window and the MRTK Project Settings, under Build Settings. It's automatically written into the project during the build in Unity.
+Adds the ability to set a [3D app launcher](/windows/mixed-reality/distribute/3d-app-launcher-design-guidance) for UWP. This setting is exposed both in the MRTK Build Window and the MRTK Project Settings, under Build Settings. It's automatically written into the project during the build in Unity.
 
   ![Build settings](images/ProjectBuildSettings.png)
 

@@ -68,11 +68,11 @@ We're listening to your feedback about MRTK and have continued plans for:
 **Developer Education**
 
 We've migrated our developer documentation from Github to a new docs platform! We want to hear your feedback so we can continue to improve our developer documentation experience.
-We currently have [MRTK tutorials](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials) that live in a different section of Mixed Reality docs. We will be migrating these tutorials to live with the rest of the MRTK documentation. 
+We currently have [MRTK tutorials](/windows/mixed-reality/develop/unity/tutorials) that live in a different section of Mixed Reality docs. We will be migrating these tutorials to live with the rest of the MRTK documentation. 
 
 **Packaging**
 
-The [Mixed Reality Feature Tool](https://docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) is a new way for developers to discover, update, and add Mixed Reality feature packages into Unity projects. You can search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing. We intend to make updates to the Mixed Reality Feature Tool as we respond to feature requests and bugs.
+The [Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) is a new way for developers to discover, update, and add Mixed Reality feature packages into Unity projects. You can search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing. We intend to make updates to the Mixed Reality Feature Tool as we respond to feature requests and bugs.
 
 ## Backlog
 

@@ -42,7 +42,7 @@ The specific platform and hardware configuration will play a significant role in
 - Windows Mixed Reality Ultra: 90
 
 > [!NOTE]
-> Due to [frame rate throttling on HoloLens when default MRC is active](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-capture-for-developers#what-to-expect-when-mrc-is-enabled-on-hololens), the visual profiler hides itself while videos and photos are captured. This setting can be overridden in the diagnostics system profile.
+> Due to [frame rate throttling on HoloLens when default MRC is active](/windows/mixed-reality/mixed-reality-capture-for-developers#what-to-expect-when-mrc-is-enabled-on-hololens), the visual profiler hides itself while videos and photos are captured. This setting can be overridden in the diagnostics system profile.
 
 ### Frame time
 

@@ -19,7 +19,7 @@ implies that this feature is only present on Windows-based platforms.
 
 Usage of the Dictation system requires both the "Internet Client" and "Microphone" application
 capabilities in the [PlayerSettings - Capabilities section](https://docs.unity3d.com/Manual/class-PlayerSettingsWSA.html#Capabilities).
-See [Windows Mixed Reality Documentation](https://docs.microsoft.com/windows/mixed-reality/voice-input-in-unity#dictation)
+See [Windows Mixed Reality Documentation](/windows/mixed-reality/voice-input-in-unity#dictation)
 for more details on voice input in Unity.
 
 ## Configuration

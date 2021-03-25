@@ -506,8 +506,8 @@ public enum Handedness
 
 When generating string file paths, and in particular writing hard-coded string paths, do the following:
 
-1. Use C#'s [`Path` APIs](https://docs.microsoft.com/dotnet/api/system.io.path?view=netframework-4.8&preserve-view=true) whenever possible such as `Path.Combine` or `Path.GetFullPath`.
-1. Use / or [`Path.DirectorySeparatorChar`](https://docs.microsoft.com/dotnet/api/system.io.path.directoryseparatorchar?view=netframework-4.8&preserve-view=true) instead of \ or \\\\.
+1. Use C#'s [`Path` APIs](/dotnet/api/system.io.path?preserve-view=true&view=netframework-4.8) whenever possible such as `Path.Combine` or `Path.GetFullPath`.
+1. Use / or [`Path.DirectorySeparatorChar`](/dotnet/api/system.io.path.directoryseparatorchar?preserve-view=true&view=netframework-4.8) instead of \ or \\\\.
 
 These steps ensure that MRTK works on both Windows and Unix-based systems.
 
@@ -703,4 +703,4 @@ A subset of the MRTK codebase uses PowerShell for pipeline infrastructure and va
 
 ## See also
 
- [C# coding conventions from MSDN](https://docs.microsoft.com/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)
+ [C# coding conventions from MSDN](/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)
