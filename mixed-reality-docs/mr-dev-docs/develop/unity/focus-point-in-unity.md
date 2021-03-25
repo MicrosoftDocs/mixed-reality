@@ -44,7 +44,7 @@ void Update()
 ```
 
 > [!NOTE]
-> The simple code above may reduce hologram stability if the focused object ends up behind the user. We generally recommend setting **[Enable Depth Buffer Sharing](camera-in-unity.md#sharing-your-depth-buffers-with-windows)** instead of manually specifying a focus point.
+> The simple code above may reduce hologram stability if the focused object ends up behind the user. We generally recommend setting **[Enable Depth Buffer Sharing](camera-in-unity.md#sharing-depth-buffers)** instead of manually specifying a focus point.
 
 ## Next Development Checkpoint
 
