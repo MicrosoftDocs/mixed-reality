@@ -65,7 +65,7 @@ Users can now use the teleport gesture to move around their play space across al
 articulated hands, make a gesture with your palm facing up with the index and thumb sticking outwards, completing the teleport by curling the index finger. To teleport with input simulation, please
 see our updated [Input Simulation Service documentation](../features/input-simulation/input-simulation-service.md).
 
-  ![Teleport Gesture](images/handteleport.gif)
+  ![Teleport Gesture](../features/images/teleport/handteleport.gif)
 
 ### Scene Understanding now available in MRTK as an experimental spatial awareness observer
 

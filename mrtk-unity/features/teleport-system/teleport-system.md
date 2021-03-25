@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Teleport system,
 ---
 
-# Teleport system
+# Teleport System
 
 The teleport system is a sub-system of the MRTK that handles teleporting the user when the
 application is using an opaque display. For AR experiences (like HoloLens), the teleportation
@@ -90,3 +90,11 @@ public class TeleportHandlerExample : MonoBehaviour, IMixedRealityTeleportHandle
     }
 }
 ```
+
+## Teleporting on MRTK
+
+To teleport with a controller on MR devices with default configurations, use the thumbstick. To teleport with
+articulated hands, make a gesture with your palm facing up with the index and thumb sticking outwards, completing the teleport by curling the index finger. To teleport with input simulation, please
+see our updated [Input Simulation Service documentation](../input-simulation/input-simulation-service.md).
+
+  ![Teleport Gesture](../images/teleport/handteleport.gif)
