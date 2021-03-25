@@ -196,7 +196,7 @@ The **Teleport Start** gesture will bring up the Teleport Pointer, while the **T
 
 The y-position of your resulting teleport is dependent on the camera's displacement along the y-axis. In editor, this is 0 by default, so use the **Q** and **E** keys to adjust it to the appropriate height.
 
-![Input Simulation Supported Platforms](../images/input-simulation/InputSimulationTeleport.gif)
+![Input Simulation Teleport Settings](../images/input-simulation/InputSimulationTeleport.gif)
 
 ### Motion controller interaction
 

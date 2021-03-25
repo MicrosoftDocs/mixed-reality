@@ -92,10 +92,10 @@ public class TeleportHandlerExample : MonoBehaviour, IMixedRealityTeleportHandle
 }
 ```
 
-# Teleporting on MRTK
+## Teleporting on MRTK
 
 To teleport with a controller on MR devices with default configurations, use the thumbstick. To teleport with
 articulated hands, make a gesture with your palm facing up with the index and thumb sticking outwards, completing the teleport by curling the index finger. To teleport with input simulation, please
-see our updated [Input Simulation Service documentation](../features/input-simulation/input-simulation-service.md).
+see our updated [Input Simulation Service documentation](../input-simulation/input-simulation-service.md).
 
-  ![Teleport Gesture](images/handteleport.gif)
+  ![Teleport Gesture](../images/handteleport.gif)
