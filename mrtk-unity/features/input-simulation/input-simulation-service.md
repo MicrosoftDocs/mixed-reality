@@ -189,6 +189,15 @@ In addition, you can use simulated hands for GGV interaction
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6841rRMdqWw" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
 
+### Raising Teleport Events
+
+To raise the teleport event in input simulation, configure the Hand Gesture Settings in the Input Simulation Profile so that one performs the **Teleport Start** Gesture while the other performs the **Teleport End** Gesture. 
+The **Teleport Start** gesture will bring up the Teleport Pointer, while the **Teleport End** gesure will complete the teleport action and move the user.
+
+The y-position of your resulting teleport is dependent on the camera's displacement along the y-axis. In editor, this is 0 by default, so use the **Q** and **E** keys to adjust it to the appropriate height.
+
+![Input Simulation Supported Platforms](../images/input-simulation/InputSimulationTeleport.gif)
+
 ### Motion controller interaction
 
 The simulated motion controllers can be manipulated the same way articulated hands are. The interaction model is similar to far interaction of articulated hand while the trigger, grab and menu keys are mapped to *left mouse button*, *G* and *M* key respectively.
