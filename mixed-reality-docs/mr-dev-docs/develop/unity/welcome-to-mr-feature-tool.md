@@ -37,7 +37,7 @@ Once you have your environment set up:
     * We recommend creating a shortcut to the executable file for faster access
 
 > [!NOTE]
-> If you're new to using the Unity Package Manager, follow our [UPM instructions](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/usingupm#managing-mixed-reality-features-with-the-unity-package-manager).
+> If you're new to using the Unity Package Manager, follow our [UPM instructions](/windows/mixed-reality/mrtk-unity/configuration/usingupm#managing-mixed-reality-features-with-the-unity-package-manager).
 
 ## Changes in this release
 
