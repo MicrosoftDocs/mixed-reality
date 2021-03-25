@@ -218,7 +218,7 @@
     items:
       - name: Shared experiences
         href: unity/shared-experiences-in-unity.md
-      - name: Locatable camera
+      - name: Photo Video camera in Unity
         href: unity/locatable-camera-in-unity.md
       - name: Holographic Remoting in desktop app
         href: unity/holographic-remoting-desktop.md
