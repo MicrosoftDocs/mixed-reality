@@ -51,7 +51,7 @@ These issues are particularly relevant when running on **Unity 2019.3** or later
 
     ![Select DotNetWinRT package](../images/tools/remoting/SelectDotNetWinRT.png)
 
-1. Click **Get Features** and continue to [import the package](https://docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool#3-importing-feature-packages).
+1. Click **Get Features** and continue to [import the package](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool#3-importing-feature-packages).
 
 #### DOTNETWINRT_PRESENT define written into player settings
 
@@ -115,5 +115,5 @@ When the session is complete, exit play mode.
 
 ## See also
 
-- [Holographic Remoting troubleshooting and limitations](https://docs.microsoft.com/windows/mixed-reality/holographic-remoting-troubleshooting)
-- [Microsoft Holographic Remoting software license terms](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+- [Holographic Remoting troubleshooting and limitations](/windows/mixed-reality/holographic-remoting-troubleshooting)
+- [Microsoft Holographic Remoting software license terms](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)

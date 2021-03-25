@@ -86,7 +86,7 @@ MRTK-Unity supports the Mixed Reality OpenXR plugin starting with the 2.5.3 rele
 
     ![Screenshot of switching the MRTK configuration in the Mixed Reality Toolkit component in the inspector](images/openxr-img-11.png)
 
-    1. See the MRTK documentation for [more in-depth information on migrating to OpenXR](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk#configuring-mrtk-for-the-xr-sdk-pipeline).
+    1. See the MRTK documentation for [more in-depth information on migrating to OpenXR](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk#configuring-mrtk-for-the-xr-sdk-pipeline).
 
 > [!NOTE]
 > When upgrading from a previous version of MRTK, ensure the following line is in the **Assets/MixedRealityToolkit.Generated/link.xml** file:

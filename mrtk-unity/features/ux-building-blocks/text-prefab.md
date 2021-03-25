@@ -9,7 +9,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, TMP,
 
 # Text prefab
 
-These prefabs are optimized for the rendering quality in Windows Mixed Reality. For more information, please read the guideline [Text in Unity](https://docs.microsoft.com/windows/mixed-reality/text-in-unity) on Microsoft Windows Dev Center.
+These prefabs are optimized for the rendering quality in Windows Mixed Reality. For more information, please read the guideline [Text in Unity](/windows/mixed-reality/text-in-unity) on Microsoft Windows Dev Center.
 
 ## Prefabs
 

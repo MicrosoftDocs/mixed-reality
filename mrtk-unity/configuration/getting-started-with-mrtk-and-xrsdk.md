@@ -45,7 +45,7 @@ The XR SDK pipeline currently supports 3 platforms: Windows Mixed Reality, Oculu
 >
 > Currently, it also only supports x64 and ARM64 builds.
 
-1. Follow the [Using the Mixed Reality OpenXR Plugin for Unity](https://aka.ms/openxr-unity-install) guide, including the steps for configuring XR Plugin Management and Optimization to install the OpenXR plug-in to your project. Ensure that the following have successfully installed:
+1. Follow the [Using the Mixed Reality OpenXR Plugin for Unity](/windows/mixed-reality/develop/unity/openxr-getting-started) guide, including the steps for configuring XR Plugin Management and Optimization to install the OpenXR plug-in to your project. Ensure that the following have successfully installed:
    1. XR Plugin Management
    1. OpenXR Plugin
    1. Mixed Reality OpenXR Plugin
