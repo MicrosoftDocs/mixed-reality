@@ -22,6 +22,15 @@ Starting with Unity version 2020.2, Microsoft’s Mixed Reality OpenXR Plugin pa
 > [!NOTE]
 > If you're building VR applications on Windows PC, the Mixed Reality OpenXR plugin is not necessarily required. However, you'll want to install the plugin if you're customizing controller mapping for HP Reverb G2 controllers or building apps that work on both HoloLens 2 and VR headsets.
 
+## Setting up your project with MRTK
+
+MRTK for Unity provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. MRTK version 2 intends to speed up application development for Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and OpenVR platform. The project is aimed at reducing barriers to entry, creating mixed reality applications, and contributing back to the community as we all grow.
+
+> [!div class="nextstepaction"]
+> [Try out our MRTK tutorials](tutorials/mr-learning-base-01.md)
+
+Take a look at [MRTK's documentation](/windows/mixed-reality/mrtk-unity) for more feature details.
+
 ## Installing OpenXR with the Mixed Reality Feature Tool
 
 Install the OpenXR plugin with the new Mixed Reality Feature Tool application. Follow the [installation and usage instructions](welcome-to-mr-feature-tool.md) and select the **Mixed Reality OpenXR Plugin** package in the Mixed Reality Toolkit category:
