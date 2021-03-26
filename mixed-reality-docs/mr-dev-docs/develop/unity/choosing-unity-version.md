@@ -73,6 +73,6 @@ Later this year, **Unity 2020.3 LTS with the OpenXR plugin** will become the rec
 
 If you are trying out early **Unity 2021.1** builds, you should move forward to the **OpenXR plugin**, as the Windows XR plugin is deprecated there.  Starting in Unity 2021.2, the OpenXR plugin will be the only path for Mixed Reality development, as the Windows XR plugin will no longer be supported.
 
-# Unity 2018.4 LTS
+## Unity 2018.4 LTS
 
 If you already have a project using Unity 2018.4 LTS, your Unity engine continues to be supported for 2 years after its release.  Unity 2018 LTS will reach end of service in the spring of 2021.
