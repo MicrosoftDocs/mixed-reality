@@ -15,7 +15,6 @@ In this tutorial, you'll learn how to create a new Unity project, configure it f
 
 ![MRTK](../../../develop/images/Unity_MRTK_MRFT_Flow.png)
 
-
 ## Objectives
 
 * Learn how to configure Unity for HoloLens development
@@ -84,7 +83,7 @@ In the Import Unity Package window, click the **All** button to ensure all the a
 
 ## Importing the Mixed Reality Toolkit
 
-To Import Mixed Reality Toolkit into the Unity Project you will have to use [Mixed Reality Feature Tool](//windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) which allows  developers to discover, update, and add Mixed Reality feature packages into Unity projects. You can search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing.
+To Import Mixed Reality Toolkit into the Unity Project you will have to use [Mixed Reality Feature Tool](../welcome-to-mr-feature-tool.md) which allows  developers to discover, update, and add Mixed Reality feature packages into Unity projects. You can search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing.
 
 Download the latest version of the Mixed Reality Feature Tool from the [Microsoft Download Center](https://aka.ms/MRFeatureTool), When the download is complete, unzip the file and save it to your desktop.
 
