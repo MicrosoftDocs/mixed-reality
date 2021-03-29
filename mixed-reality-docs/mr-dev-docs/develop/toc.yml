@@ -172,7 +172,7 @@
       href: unity/choosing-unity-version.md
     - name: Using Legacy built-in XR support
       href: unity/legacy-xr-support.md
-    - name: Using Windows XR plugin
+    - name: Using the Windows XR plugin
       href: unity/windows-xr-plugin.md
     - name: Using the Mixed Reality OpenXR Plugin
       href: unity/openxr-getting-started.md
