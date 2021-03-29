@@ -1,5 +1,5 @@
 ---
-title: Using Windows XR plugin
+title: Using the Windows XR plugin
 description: Learn how to setup your Unity projects with and without MRTK using Windows XR support.
 author: hferrone
 ms.author: alexturn

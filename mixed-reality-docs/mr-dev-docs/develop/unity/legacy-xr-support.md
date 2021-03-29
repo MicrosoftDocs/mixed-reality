@@ -1,5 +1,5 @@
 ---
-title: Using Legacy built-in XR support
+title: Using the Legacy built-in XR support
 description: Learn how to setup your Unity projects with and without MRTK using Legacy built-in XR support.
 author: hferrone
 ms.author: alexturn
