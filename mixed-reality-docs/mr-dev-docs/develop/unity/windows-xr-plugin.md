@@ -41,9 +41,7 @@ If you're targeting HoloLens 2, you need to switch to the Universal Windows Plat
 
 ![Screenshot of Build Settings window open in unity editor with Universal Windows Platform highlighted](images/wmr-config-img-4.png)
 
-After setting your platform, you need to let Unity know to create an [immersive view](../../design/app-views.md) instead of a 2D view when exported.
-
-## For XRSDK 
+After setting your platform, you need to let Unity know to create an [immersive view](../../design/app-views.md) instead of a 2D view when exported:
 
 1. In the Unity Editor, navigate to **Edit > Project settings** and select **XR Plugin Management**
 
