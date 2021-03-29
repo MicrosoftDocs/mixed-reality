@@ -16,7 +16,7 @@ While we currently **recommend installing Unity 2019.4 LTS and using Legacy Buil
 
 Microsoft’s current recommended Unity configuration for HoloLens 2 and Windows Mixed Reality development is **Unity 2019.4 LTS using Legacy Built-in XR** support.
 
-The best way to install and manage Unity is through the [Unity Hub](https://unity3d.com/get-unity/download). When it's installed, open Unity Hub:
+The best way to install and manage Unity is through the <a href="https://unity3d.com/get-unity/download" target="_blank">[Unity Hub]</a>. When it's installed, open Unity Hub:
 
 1. Select the **Installs** tab and choose **ADD**
 2. Select Unity 2019.4 LTS and click **Next**
