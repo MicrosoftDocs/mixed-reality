@@ -31,7 +31,7 @@ MRTK for Unity provides a cross-platform input system, foundational components, 
 
 Take a look at [MRTK's documentation](/windows/mixed-reality/mrtk-unity) for more feature details.
 
-## Installing OpenXR with the Mixed Reality Feature Tool
+## Manual setup without MRTK
 
 Install the OpenXR plugin with the new Mixed Reality Feature Tool application. Follow the [installation and usage instructions](welcome-to-mr-feature-tool.md) and select the **Mixed Reality OpenXR Plugin** package in the Mixed Reality Toolkit category:
 
