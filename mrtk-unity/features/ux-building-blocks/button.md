@@ -1,5 +1,5 @@
 ---
-title: Butons
+title: Buttons
 description: Overview on Buttons in MRTK
 author: cre8ivepark
 ms.author: dongpark
