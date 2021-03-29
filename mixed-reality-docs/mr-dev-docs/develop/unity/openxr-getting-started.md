@@ -24,10 +24,12 @@ Starting with Unity version 2020.2, Microsoft’s Mixed Reality OpenXR Plugin pa
 
 ## Setting up your project with MRTK
 
+![MRTK](../../design/images/MRTK_UX_Hero.png)
+
 MRTK for Unity provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. MRTK version 2 intends to speed up application development for Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and OpenVR platform. The project is aimed at reducing barriers to entry, creating mixed reality applications, and contributing back to the community as we all grow.
 
 > [!div class="nextstepaction"]
-> [Try out our MRTK tutorials](tutorials/mr-learning-base-01.md)
+> [Set up your project using MRTK](tutorials/mr-learning-base-01.md)
 
 Take a look at [MRTK's documentation](/windows/mixed-reality/mrtk-unity) for more feature details.
 
@@ -36,6 +38,26 @@ Take a look at [MRTK's documentation](/windows/mixed-reality/mrtk-unity) for mor
 Install the OpenXR plugin with the new Mixed Reality Feature Tool application. Follow the [installation and usage instructions](welcome-to-mr-feature-tool.md) and select the **Mixed Reality OpenXR Plugin** package in the Mixed Reality Toolkit category:
 
 ![Mixed Reality Feature Tool packages window with open xr plugin highlighted](images/feature-tool-openxr.png)
+
+## Setting your build target
+
+If you're targeting Desktop VR, we suggest using the PC Standalone Platform selected by default on a new Unity project:
+
+![Screenshot of Build Settings window open in the unity editor with PC, Mac & Standalone platform highlighted](images/wmr-config-img-3.png)
+
+If you're targeting HoloLens 2, you need to switch to the Universal Windows Platform:
+
+1.	Select **File > Build Settings...**
+2.	Select **Universal Windows Platform** in the Platform list and select **Switch Platform**
+3.	Set **Architecture** to **ARM 64**
+4.	Set **Target device** to **HoloLens**
+5.	Set **Build Type** to **D3D**
+6.	Set **UWP SDK** to **Latest installed**
+7.	Set **Build configuration** to **Release** because there are known performance issues with Debug
+
+![Screenshot of Build Settings window open in unity editor with Universal Windows Platform highlighted](images/wmr-config-img-4.png)
+
+After setting your platform, you need to let Unity know to create an [immersive view](../../design/app-views.md) instead of a 2D view when exported.
 
 ## Configuring XR Plugin Management for OpenXR
 

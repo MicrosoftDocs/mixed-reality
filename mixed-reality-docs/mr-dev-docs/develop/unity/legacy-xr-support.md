@@ -21,6 +21,24 @@ Take a look at [MRTK's documentation](/windows/mixed-reality/mrtk-unity) for mor
 
 ## Manual setup without MRTK
 
+If you're targeting Desktop VR, we suggest using the PC Standalone Platform selected by default on a new Unity project:
+
+![Screenshot of Build Settings window open in the unity editor with PC, Mac & Standalone platform highlighted](images/wmr-config-img-3.png)
+
+If you're targeting HoloLens 2, you need to switch to the Universal Windows Platform:
+
+1.	Select **File > Build Settings...**
+2.	Select **Universal Windows Platform** in the Platform list and select **Switch Platform**
+3.	Set **Architecture** to **ARM 64**
+4.	Set **Target device** to **HoloLens**
+5.	Set **Build Type** to **D3D**
+6.	Set **UWP SDK** to **Latest installed**
+7.	Set **Build configuration** to **Release** because there are known performance issues with Debug
+
+![Screenshot of Build Settings window open in unity editor with Universal Windows Platform highlighted](images/wmr-config-img-4.png)
+
+After setting your platform, you need to let Unity know to create an [immersive view](../../design/app-views.md) instead of a 2D view when exported.
+
 > [!CAUTION]
 > Legacy XR is deprecated in Unity 2019 and removed in Unity 2020.
 
