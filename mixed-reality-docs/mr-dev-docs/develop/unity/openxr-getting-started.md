@@ -14,8 +14,8 @@ Starting with Unity version 2020.2, Microsoft’s Mixed Reality OpenXR Plugin pa
 
 ## Prerequisites
 
-* Unity 2020.2 or later
-* Unity OpenXR plugin 0.1.4 or later
+* Unity 2020.3 LTS or later
+* Unity OpenXR plugin 1.0.3 or later
 * Visual Studio 2019 or later
 * Install **UWP** platform support in Unity for HoloLens 2 apps
 
@@ -65,10 +65,16 @@ To set OpenXR as the the runtime in Unity:
 
 1. In the Unity Editor, navigate to **Edit > Project Settings**
 2. In the list of Settings, select **XR Plugin Management**
-3. Check the **Initialize XR on Startup** and **OpenXR (Preview)** boxes
+3. Check the **Initialize XR on Startup** and **OpenXR** boxes
 4. If targeting HoloLens 2, make sure you're on the UWP platform and select **Microsoft HoloLens Feature Set**
 
 ![Screenshot of the project settings panel open in the Unity editor with XR Plug-in management highlighted](images/openxr-img-05.png)
+
+## Optimization
+
+If you're developing for HoloLens 2, navigate to **Mixed Reality> OpenXR > Apply recommended project settings for HoloLens 2** to get better app performance.
+
+![Screenshot of the mixed reality menu item open with OpenXR selected](images/openxr-img-08.png)
 
 > [!IMPORTANT]
 > If you see a red warning icon next to **OpenXR Plugin (Preview)**, click the icon and select **Fix all** before continuing. The Unity Editor may need to restart itself for the changes to take effect.
@@ -77,17 +83,7 @@ To set OpenXR as the the runtime in Unity:
 
 You're now ready to begin developing with OpenXR in Unity!  Continue on to the next section to learn how to use the OpenXR samples.
 
-## Optimization
-
-If you're developing for HoloLens 2, navigate to **Mixed Reality> OpenXR > Apply recommended project settings for HoloLens 2** to get better app performance.
-
-![Screenshot of the mixed reality menu item open with OpenXR selected](images/openxr-img-08.png)
-
 ## Try out the Unity sample scenes
-
-To utilize one or more of the examples, install [ARFoundation 4.0+](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html#installing-ar-foundation) from the **Package Manager**:
-
-![Screenshot of Unity Package Manager open in Unity editor with AR Foundation highlighted](images/openxr-img-09.png)
 
 ### HoloLens 2 samples
 
