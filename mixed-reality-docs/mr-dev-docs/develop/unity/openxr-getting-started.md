@@ -24,8 +24,6 @@ Starting with Unity version 2020.2, Microsoft’s Mixed Reality OpenXR Plugin pa
 
 ## Setting up your project with MRTK
 
-![MRTK](../../design/images/MRTK_UX_Hero.png)
-
 MRTK for Unity provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. MRTK version 2 intends to speed up application development for Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and OpenVR platform. The project is aimed at reducing barriers to entry, creating mixed reality applications, and contributing back to the community as we all grow.
 
 > [!div class="nextstepaction"]
