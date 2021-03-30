@@ -28,7 +28,7 @@ MRTK for Unity provides a cross-platform input system, foundational components, 
 > [!div class="nextstepaction"]
 > [Try out our MRTK tutorials](tutorials/mr-learning-base-01.md)
 
-Take a look at [MRTK's documentation](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity) for more feature details.
+Take a look at [MRTK's documentation](/windows/mixed-reality/mrtk-unity) for more feature details.
 
 ## New with MRTK v2
 
@@ -51,5 +51,5 @@ Working with mobile platforms, we constructed it with performance in mind.  This
 * [Install the tools](../install-the-tools.md)
 * [Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md)
 * [Developing with MRTK for Unity](unity-development-overview.md)
-* [MRTK - Documentation home](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/)
-* [Porting from HoloToolkit/MRTK to MRTK version 2](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/updates-deployment/htk-to-mrtk-porting-guide)
+* [MRTK - Documentation home](/windows/mixed-reality/mrtk-unity/)
+* [Porting from HoloToolkit/MRTK to MRTK version 2](/windows/mixed-reality/mrtk-unity/updates-deployment/htk-to-mrtk-porting-guide)

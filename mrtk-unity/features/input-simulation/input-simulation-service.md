@@ -81,7 +81,7 @@ Use the **Move Horizontal**/**Move Vertical** axes to move the camera (default: 
 
 Camera position and rotation angles can be set explicitly in the tools window, as well. The camera can be reset to its default using the **Reset** button.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Z7L4I1ET7GU" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z7L4I1ET7GU" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Controller simulation
 
@@ -99,7 +99,7 @@ In the [input simulation tools window](#input-simulation-tools-window) the **Def
 
 * *Hand Gestures*: Simulates a simplified hand model with air tap and basic gestures.
 
-   Emulates [HoloLens interaction model](https://docs.microsoft.com/windows/mixed-reality/gestures).
+   Emulates [HoloLens interaction model](/windows/mixed-reality/gestures).
 
    Focus is controlled using the Gaze pointer. The *Air Tap* gesture is used to interact with buttons.
 
@@ -127,7 +127,7 @@ All hand placement can also changed in the [input simulation tools window](#inpu
 * **Default Controller Distance** is the initial distance of controllers from the camera. Clicking the **Reset** button controllers will also place controllers at this distance.
 * **Controller Jitter Amount** adds random motion to controllers. This feature can be used to simulate inaccurate controller tracking on the device, and ensure that interactions work well with noisy input.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uRYfwuqsjBQ" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uRYfwuqsjBQ" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Hand gestures
 
@@ -150,7 +150,7 @@ Each of the mouse buttons can be mapped to transform the hand shape into a diffe
 4. Use your mouse to move the object
 5. Release the mouse button to stop interaction
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rM0xaHam6wM" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rM0xaHam6wM" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Two-hand manipulation
 
@@ -165,7 +165,7 @@ For manipulating objects with two hands at the same time, the persistent hand mo
 1. Repeat the process with the other hand, grabbing the same object in a second spot.
 1. Now that both hands are grabbing the same object, you can move either of them to perform two-handed manipulation.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Qol5OFNfN14" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Qol5OFNfN14" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### GGV (Gaze, Gesture, and Voice) interaction
 
@@ -186,7 +186,16 @@ In addition, you can use simulated hands for GGV interaction
 1. Use your mouse to move the object
 1. Release the mouse button to stop interaction
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6841rRMdqWw" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6841rRMdqWw" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Raising Teleport Events
+
+To raise the teleport event in input simulation, configure the Hand Gesture Settings in the Input Simulation Profile so that one performs the **Teleport Start** Gesture while the other performs the **Teleport End** Gesture. 
+The **Teleport Start** gesture will bring up the Teleport Pointer, while the **Teleport End** gesure will complete the teleport action and move the user.
+
+The y-position of your resulting teleport is dependent on the camera's displacement along the y-axis. In editor, this is 0 by default, so use the **Q** and **E** keys to adjust it to the appropriate height.
+
+![Input Simulation Teleport Settings](../images/input-simulation/InputSimulationTeleport.gif)
 
 ### Motion controller interaction
 

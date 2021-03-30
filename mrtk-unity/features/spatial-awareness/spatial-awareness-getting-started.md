@@ -74,7 +74,7 @@ the [`WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolk
 Once the Spatial Awareness system is configured with the desired observer(s), the project can be built and deployed to the target platform.
 
 > [!IMPORTANT]
-> If targeting the Windows Mixed Reality platform (ex: HoloLens), it is important to ensure the [Spatial Perception capability](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping-in-unity) is enabled in order to use the Spatial Awareness system on device.
+> If targeting the Windows Mixed Reality platform (ex: HoloLens), it is important to ensure the [Spatial Perception capability](/windows/mixed-reality/spatial-mapping-in-unity) is enabled in order to use the Spatial Awareness system on device.
 
 > [!WARNING]
 > Some platforms, including Microsoft HoloLens, provide support for remote execution from within Unity. This feature enables rapid development and testing without requiring the build and deploy step. Be sure to do final acceptance testing using a built and deployed version of the application, running on the target hardware and platform.
@@ -96,5 +96,5 @@ Information for controlling and extending observers via code:
 ## See also
 
 - [Spatial Awareness API documentation](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness)
-- [Spatial Mapping Overview WMR](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping)
-- [Spatial Mapping in Unity WMR](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping-in-unity)
+- [Spatial Mapping Overview WMR](/windows/mixed-reality/spatial-mapping)
+- [Spatial Mapping in Unity WMR](/windows/mixed-reality/spatial-mapping-in-unity)

@@ -20,7 +20,7 @@ keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reali
   * Custom data channels as part of the XR_MSFT_holographic_remoting extension. An example for that is shown in the [OpenXR remote sample](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 * Improved synchronization between player and remote side. This allows dynamically changing pose and frame buffering which ensures that remote rendered content smoothly reaches the displays at the expected target frame rate.
 * Improved performance of the Holographic Remoting player available via the Microsoft Store. On HoloLens 2 the player now runs solid on 60 frames per second.
-* Optimized transmission of spatial surface meshes which can be queried via [SpatialSurfaceObserver](https://docs.microsoft.com/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) by a remote app.
+* Optimized transmission of spatial surface meshes which can be queried via [SpatialSurfaceObserver](/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) by a remote app.
 * Fixed an issue in which calling SpatialAnchorManager methods or releasing anchors caused exceptions on disconnect.
 * Fixed threading issue leading to crashes when closing PlayerContext or RemoteContext instances.
 * Lots of other bug fixes and stability improvements.
