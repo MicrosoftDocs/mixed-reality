@@ -26,6 +26,8 @@ As you experienced when you deployed your project to your HoloLens 2 during the 
 * Learn how to customize and configure MRTK profiles
 * Hide the spatial awareness mesh
 
+[!INCLUDE[](includes/configuring-profile.md)]
+
 ## Changing the Spatial Awareness Display Option
 
 The main steps you will take to hide the spatial awareness mesh are:
@@ -111,9 +113,7 @@ In the **Spatial Mesh Observer Settings**, change the **Display Option** to **Oc
 > [!NOTE]
 > Although the spatial mapping mesh is not visible, it is still present and functional. For example, any holograms behind the spatial mapping mesh, such as a hologram behind a physical wall, will not be visible.
 
-You just learned how to modify a setting in the MRTK profile. As you can see, to customize the MRTK settings, you first need to create copies of the default profiles. Because the default profiles are not editable, you will always have them as references if you want to revert to the default settings. To learn more about MRTK profiles and their architecture, you can refer to the [MRTK profile configuration guide](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide.md) in the [MRTK Documentation Portal](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity).
-
-## Congratulations
+You just learned how to modify a setting in the MRTK profile. As you can see, to customize the MRTK settings, you first need to create copies of the default profiles. Because the default profiles are not editable, you will always have them as references if you want to revert to the default settings. To learn more about MRTK profiles and their architecture, you can refer to the [MRTK profile configuration guide](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide.md) in the [MRTK Documentation Portal](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity).## Congratulations
 
 In this tutorial, you learned how to clone, customize, and configure MRTK profiles and settings.
 
