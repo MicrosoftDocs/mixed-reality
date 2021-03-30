@@ -2,35 +2,35 @@
 
 In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window:
 
-![Unity Project Settings... menu path](../images/mr-learning-base/base-02-section5-step2-1.png)
+![Unity Project Settings... menu path](../../images/mr-learning-base/base-02-section5-step2-1.png)
 
 In the Project Settings window, select **XR Plug-in Management** > **Install XR Plug-in Management**, to install XR Plug-in Management:
 
-![Unity XR Settings with add Windows Mixed Reality SDK selected](../images/mr-learning-base/base-02-section5-step2-2.png)
+![Unity XR Settings](../../images/mr-learning-base/base-02-section5-step2-2.png)
 
 After Unity has finished installing the XR Plug-in Management. Ensure that you are in Universal Windows Platform settings and Check the **Initialize XR on Startup** and **Windows Mixed Reality** checkbox.
 
-![Unity XR Settings with add Windows Mixed Reality SDK selected](../images/mr-learning-base/base-02-section5-step2-2-1.png)
+![Unity XR Settings with add Windows Mixed Reality SDK selected](../../images/mr-learning-base/base-02-section5-step2-2-1.png)
 
 After Unity has finished importing the Windows Mixed Reality SDK, the MRTK Project Configurator window should appear again. If it doesn't, use the Unity menu to open it.
 
 In the MRTK Project Configurator window, use the **Audio spatializer** dropdown to select the **MS HRTF Spatializer**, then click the **Apply** button to apply the setting:
 
-![Unity XR Settings with add Windows Mixed Reality SDK selected](../images/mr-learning-base/base-02-section5-step2-2-2.png)
+![MRTK Configuration Window](../../images/mr-learning-base/base-02-section5-step2-2-2.png)
 
 > [!TIP]
 >Setting the Audio spatializer property is optional but may improve the audio experience in your project. If you set it to MS HRTF Spatializer, this spatializer plugin will be used when Unity's AudioSource.spatialize property is enabled. To learn more about this topic, you can refer to the  <a href="https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank"> Spatial audio tutorials</a>.
 
 In the Project Settings window, select **XR Plug-in Management** > **Windows Mixed Reality** > **Runtime Settings**, then use the **Depth Buffer Format** dropdown to select **16-bit depth:**
 
-![Unity Publishing Settings with Package name configured](../images/mr-learning-base/base-02-section5-step2-5-1.png)
+![Unity Publishing Settings with Package name configured](../../images/mr-learning-base/base-02-section5-step2-5-1.png)
 
 > [!TIP]
 > Reducing the Depth Format to 16-bit is optional but my help improve graphics performance in your project. To learn more about this topic, you can refer to the   <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html#depth-buffer-sharing-hololens" target="_blank">  Depth buffer sharing (HoloLens) </a> section of MRTK's  <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html" target="_blank"> Performance </a> documentation.
 
 In the Project Settings window, select **Player** > **Publishing Settings**, then in the **Package name** field, enter a suitable name, for example, _MRTKTutorials-GettingStarted_:
 
-![Unity Publishing Settings with Package name configured](../images/mr-learning-base/base-02-section5-step2-7.png)
+![Unity Publishing Settings with Package name configured](../../images/mr-learning-base/base-02-section5-step2-7.png)
 
 > [!NOTE]
 > The 'Package name' is the unique identifier for the app. You should change this identifier before deploying the app to avoid overwriting previously installed apps.
@@ -42,29 +42,29 @@ In the Project Settings window, select **Player** > **Publishing Settings**, the
 
 In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window:
 
-![Unity Project Settings... menu path](../images/mr-learning-base/base-02-section5-step2-1.png)
+![Unity Project Settings... menu path](../../images/mr-learning-base/base-02-section5-step2-1.png)
 
 In the Project Settings window, select **XR Plug-in Management** > **Install XR Plug-in Management**, to install XR Plug-in Management:
 
-![Unity XR Settings with add Windows Mixed Reality SDK selected](../images/mr-learning-base/base-02-section5-step2-2.png)
+![Unity XR Settings with Install XR plug-in management selected](../../images/mr-learning-base/base-02-section5-step2-2.png)
 
 After Unity has finished installing the XR Plug-in Management. Ensure that you are in Universal Windows Platform settings and Check the **Initialize XR on Startup**, **OpenXR** and **Microsoft HoloLens feature set** checkboxes.
 
-![Unity XR Settings with add OpenXR and Microsoft HoloLens features selectedd](../images/mr-learning-base/base-02-section5-step2-2-1-openxr.png)
+![Unity XR Settings with add OpenXR and Microsoft HoloLens features selectedd](../../images/mr-learning-base/base-02-section5-step2-2-1-openxr.png)
 
 In the menu bar at the top of the screen, navigate to **Mixed Reality> OpenXR > Apply recommended project settings for HoloLens 2** to get better app performance.
 
-![Mixed Reality menu with OpenXR and Apply recommended project settings for HoloLens 2 selected](../images/mr-learning-base/base-02-section5-step2-openxr-2.png)
+![Mixed Reality menu with OpenXR and Apply recommended project settings for HoloLens 2 selected](../../images/mr-learning-base/base-02-section5-step2-openxr-2.png)
 
 >[!Important]
 >If you see a red warning icon next to OpenXR Plugin (Preview), click the icon and select Fix all before continuing. The Unity Editor may need to restart itself for the changes to take effect.
->![OpenXR project validation menu with all issues selected to be fixed.](../images/mr-learning-base/base-02-section5-step2-openxr-3.png)
+>![OpenXR project validation menu with all issues selected to be fixed.](../../images/mr-learning-base/base-02-section5-step2-openxr-3.png)
 
 After Unity has finished importing necessary files, the MRTK Project Configurator window should appear again. If it doesn't, use the Unity menu to open it.
 
 In the MRTK Project Configurator window, use the **Audio spatializer** dropdown to select the **MS HRTF Spatializer**, then click the **Apply** button to apply the setting:
 
-![Unity XR Settings with add Windows Mixed Reality SDK selected](../images/mr-learning-base/base-02-section5-step2-2-2.png)
+![MRTK Configuration window with default options selected](../../images/mr-learning-base/base-02-section5-step2-2-2.png)
 
 > [!TIP]
 >Setting the Audio spatializer property is optional but may improve the audio experience in your project. If you set it to MS HRTF Spatializer, this spatializer plugin will be used when Unity's AudioSource.spatialize property is enabled. To learn more about this topic, you can refer to the  <a href="https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank"> Spatial audio tutorials</a>.
@@ -72,7 +72,7 @@ In the MRTK Project Configurator window, use the **Audio spatializer** dropdown 
 
 In the Project Settings window, select **Player** > **Publishing Settings**, then in the **Package name** field, enter a suitable name, for example, _MRTKTutorials-GettingStarted_:
 
-![Unity Publishing Settings with Package name configured](../images/mr-learning-base/base-02-section5-step2-7.png)
+![Unity Publishing Settings with Package name configured](../../images/mr-learning-base/base-02-section5-step2-7.png)
 
 > [!NOTE]
 > The 'Package name' is the unique identifier for the app. You should change this identifier before deploying the app to avoid overwriting previously installed apps.
@@ -86,27 +86,27 @@ In the Unity menu, select **Edit** > **Project Settings...** to open the Project
 
 In the Project Settings window, select **Player** > **XR Settings** and check the **Virual Reality Supported** checkbox then click the **+** icon, and select Windows Mixed Reality to add the Windows Mixed Reality SDK:
 
-![Unity XR Settings with add Windows Mixed Reality SDK selected](../images/mr-learning-base/base-02-section5-step2-4.png)
+![Unity XR Settings, add Windows Mixed Reality SDK selected](../../images/mr-learning-base/base-02-section5-step2-4.png)
 
 After Unity has finished importing the Windows Mixed Reality SDK, the MRTK Project Configurator window should appear again. If it doesn't, you can manually open it from the Unity menu by going to **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project**
 
 In the MRTK Project Configurator window, use the **Audio spatializer** dropdown to select the **MS HRTF Spatializer**, then click the **Apply** button to apply the setting:
 
-![Unity XR Settings with add Windows Mixed Reality SDK selected](../images/mr-learning-base/base-02-section5-step2-5.png)
+![MRTK configuration window](../../images/mr-learning-base/base-02-section5-step2-5.png)
 
 > [!TIP]
 >Setting the Audio spatializer property is optional but may improve the audio experience in your project. If you set it to MS HRTF Spatializer, this spatializer plugin will be used when Unity's AudioSource.spatialize property is enabled. To learn more about this topic, you can refer to the  <a href="//windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank"> Spatial audio tutorials</a>.
 
 In the Project Settings window, select **Player** > **XR Settings**, then use the **Depth Format** dropdown to select **16-bit depth**:
 
-![Unity Enable 16 Depth](../images/mr-learning-base/base-02-section5-step2-6.png)
+![Unity Enable 16 Depth](../../images/mr-learning-base/base-02-section5-step2-6.png)
 
 > [!TIP]
 > Reducing the Depth Format to 16-bit is optional but my help improve graphics performance in your project. To learn more about this topic, you can refer to the   <a href="/windows/mixed-reality/mrtk-docs/performance/perf-getting-started.md#single-pass-instanced-rendering" target="_blank">  Depth buffer sharing (HoloLens) </a> section of MRTK's  <a href="/windows/mixed-reality/mrtk-docs/performance/perf-getting-started.md#single-pass-instanced-rendering" target="_blank"> Performance </a> documentation.
 
 In the Project Settings window, select **Player** > **Publishing Settings**, then in the **Package name** field, enter a suitable name, for example, _MRTKTutorials-GettingStarted_:
 
-![Unity Publishing Settings with Package name configured](../images/mr-learning-base/base-02-section5-step2-7.png)
+![Unity Publishing Settings with Package name configured](../../images/mr-learning-base/base-02-section5-step2-7.png)
 
 > [!NOTE]
 > The 'Package name' is the unique identifier for the app. You should change this identifier before deploying the app to avoid overwriting previously installed apps.
