@@ -35,10 +35,6 @@ highlightedContent:
       itemType: reference 
       url: /dynamics365/mixed-reality/
     # Card
-    - title: Azure mixed reality cloud services 
-      itemType: whats-new 
-      url: develop/mixed-reality-cloud-services.md
-    # Card
     - title: Developers
       itemType: get-started 
       url: develop/development.md
@@ -54,6 +50,10 @@ highlightedContent:
     - title: Microsoft Mesh (Preview)
       itemType: whats-new
       url: /mesh/overview
+    # Card
+    - title: AltspaceVR 
+      itemType: whats-new 
+      url: https://docs.microsoft.com/windows/mixed-reality/altspace-vr/
 
 # productDirectory section (optional)
 productDirectory:
