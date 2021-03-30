@@ -10,20 +10,20 @@ In the Project Settings window, select **XR Plug-in Management** > **Install XR 
 
 After Unity has finished installing the XR Plug-in Management. Ensure that you are in Universal Windows Platform settings and Check the **Initialize XR on Startup** and **Windows Mixed Reality** checkbox.
 
-![Unity XR Settings with add Windows Mixed Reality SDK selected](../images/mr-learning-base/base-02-section5-step2-2-1.png)
+![Unity XR Settings with add Windows Mixed Reality SDK](../images/mr-learning-base/base-02-section5-step2-2-1.png)
 
 After Unity has finished importing the Windows Mixed Reality SDK, the MRTK Project Configurator window should appear again. If it doesn't, use the Unity menu to open it.
 
 In the MRTK Project Configurator window, use the **Audio spatializer** dropdown to select the **MS HRTF Spatializer**, then click the **Apply** button to apply the setting:
 
-![Unity XR Settings with add Windows Mixed Reality SDK selected](../images/mr-learning-base/base-02-section5-step2-2-2.png)
+![Unity XR Settings with Windows Mixed Reality SDK selected](../images/mr-learning-base/base-02-section5-step2-2-2.png)
 
 > [!TIP]
 >Setting the Audio spatializer property is optional but may improve the audio experience in your project. If you set it to MS HRTF Spatializer, this spatializer plugin will be used when Unity's AudioSource.spatialize property is enabled. To learn more about this topic, you can refer to the  <a href="https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank"> Spatial audio tutorials</a>.
 
 In the Project Settings window, select **XR Plug-in Management** > **Windows Mixed Reality** > **Runtime Settings**, then use the **Depth Buffer Format** dropdown to select **16-bit depth:**
 
-![Unity Publishing Settings with Package name configured](../images/mr-learning-base/base-02-section5-step2-5-1.png)
+![Unity Publishing Settings with Package name highlighted](../images/mr-learning-base/base-02-section5-step2-5-1.png)
 
 > [!TIP]
 > Reducing the Depth Format to 16-bit is optional but my help improve graphics performance in your project. To learn more about this topic, you can refer to the   <a href="https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#depth-buffer-sharing-hololens" target="_blank">  Depth buffer sharing (HoloLens) </a> section of MRTK's  <a href="https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started" target="_blank"> Performance </a> documentation.
