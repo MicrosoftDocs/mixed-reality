@@ -26,6 +26,8 @@ As you experienced when you deployed your project to your HoloLens 2 during the 
 * Learn how to customize and configure MRTK profiles
 * Hide the spatial awareness mesh
 
+[!INCLUDE[](includes/configuring-profile.md)]
+
 ## Changing the Spatial Awareness Display Option
 
 The main steps you will take to hide the spatial awareness mesh are:
