@@ -31,22 +31,21 @@ In the bottom left hand of the window, click on the gear symbol to open the sett
 
 ![MixedRealityFeatureTool](../images/mr-learning-base/base-02-section4-step1-2.png)
 
-Under **Feature Seetings**, check the box for **Include preview releases** and then click the **OK* button.
+Under **Feature Seetings**, check the **Include preview releases** box and then click the **OK** button.
+
+![MixedRealityFeatureTool Settings window](../images/mrft-settings.png)
 
 > [!NOTE]
 >If you do not see an option to include preview releases, make sure you're using the latest version of the MR Feature Tool.
-
-![MixedRealityFeatureTool Settings window](../images/mrft-settings.png)
 
 Now that your settings are configured, click on **Start** to get started with Mixed Reality Feature Tool.
 
 ![MixedRealityFeatureTool window start screen](../images/mr-learning-base/base-02-section4-step1-2.png)
 
 Features are grouped by category to make things easier to find, click on **Mixed Reality Toolkit** dropdown to find packages relating to the Mixed Reality Toolkit.
+Check the **Mixed Reality Toolkit Foundation**, and click on the dropdown next to it to select the required MRTK version, for this tutorial series please select the latest **2.7 preview package**.
 
 ![MixedRealityFeatureTool window for Unity 2020 and OpenXR](../images/mrft-mrtk.png)
-
-Check the **Mixed Reality Toolkit Foundation**, and click on the dropdown next to it to select the required MRTK version, for this tutorial series please select the latest **2.7 preview package**.
 
 Under the **Platform Support** dropdown, select **Mixed Reality OpenXR Plugin**. Make sure the latest version is selected in the dropdown.
 ![Selecting Mixed Reality OpenXR Plugin](../images/mrft-openxr.png)
