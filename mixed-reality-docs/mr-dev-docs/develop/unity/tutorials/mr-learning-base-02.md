@@ -83,9 +83,6 @@ Open the executable file **MixedRealityFeatureTool** from the downloaded folder 
 
 ![Opening MixedRealityFeatureTool](images/mr-learning-base/base-02-section4-step1-1.png)
 
-Once **MixedRealityFeatureTool** is opened click on start to get started with Mixed Reality Feature Tool.
-
-![MixedRealityFeatureTool](images/mr-learning-base/base-02-section4-step1-2.png)
 
 [!INCLUDE[](includes/importing-mrtk.md)]
 

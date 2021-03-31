@@ -34,8 +34,6 @@ In the Build Settings window, select **Universal Windows Platform** and:
 
 ![Unity Build Settings with Universal Windows Platform settings set](../images/mr-learning-base/base-02-section2-step1-2-openxr.png)
 
-Wait for Unity to finish switching the platform.
-
 When Unity has finished switching the platform, click the red **x** icon to close the Build Settings window.
 
 # [Legacy WSA](#tab/wsa)
