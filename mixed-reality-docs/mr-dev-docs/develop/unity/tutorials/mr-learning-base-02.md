@@ -140,19 +140,19 @@ Download the following Unity custom package:
 
 To Import a Unity custom package, In the Unity menu, select **Assets** > **Import Package** > **Custom Package...** to open the Import package... window:
 
-![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-02-section7-step1-1.png)
+![Importing a custom package](images/mr-learning-base/base-02-section7-step1-1.png)
 
 In the Import package... window, select the **MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage** you downloaded and click the Open button:
 
-![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-02-section7-step1-2.png)
+![Selecting an asset package](images/mr-learning-base/base-02-section7-step1-2.png)
 
 In the Import Unity Package window, click the All button to ensure all the assets are selected, then click the Import button to import the assets:
 
-![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-02-section7-step1-3.png)
+![Selecting all the assets to import](images/mr-learning-base/base-02-section7-step1-3.png)
 
 After you have imported the tutorial assets your Project window should look similar to this:
 
-![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-02-section7-step1-4.png)
+![Unity project window after importing assets](images/mr-learning-base/base-02-section7-step1-4.png)
 
 ## Configuring the Scene
 
