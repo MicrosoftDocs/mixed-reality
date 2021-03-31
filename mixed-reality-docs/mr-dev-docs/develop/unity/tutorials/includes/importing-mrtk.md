@@ -26,13 +26,12 @@ Click on **Approve** Button to add the **Mixed Reality Toolkit** into the projec
 # [Unity 2020 + OpenXR](#tab/openxr)
 Features are grouped by category to make things easier to find, click on **Mixed Reality Toolkit** dropdown to find packages relating to the Mixed Reality Toolkit.
 
-![MixedRealityFeatureTool window](../images/mr-learning-base/base-02-section4-step1-3.png)
+![MixedRealityFeatureTool window](../images/mrft-mrtk.png)
 
 Check the **Mixed Reality Toolkit Foundation**, and click on the dropdown next to it to select the required MRTK version, for this tutorial series please select the **2.7 preview package**.
 
-
 Under the **Platform Support** dropdown, select **Mixed Reality OpenXR Plugin**. Make sure the latest version is selected in the dropdown.
-![Selecting Mixed Reality OpenXR Plugin](../images/mr-learning-base/base-02-section4-step1-4-openxr.png)
+![Selecting Mixed Reality OpenXR Plugin](../images/mrft-openxr.png)
 
 Click on the **Get features** button to download the selected packages.
 
