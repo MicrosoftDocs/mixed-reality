@@ -52,21 +52,7 @@ Wait for Unity to create the project:
 
 ## Switching the build platform
 
-In the Unity menu, select **File** > **Build Settings...** to open the Build Settings window:
-
-![Unity Build Settings... menu path](images/mr-learning-base/base-02-section2-step1-1.png)
-
-In the Build Settings window, select **Universal Windows Platform** and click the **Switch Platform** button:
-
-![Unity Build Settings window with UWP selected to switch platform from Standalone](images/mr-learning-base/base-02-section2-step1-2.png)
-
-Wait for Unity to finish switching the platform:
-
-![Unity switching platform in progress](images/mr-learning-base/base-02-section2-step1-3.png)
-
-When Unity has finished switching the platform, click the red **x** icon to close the Build Settings window:
-
-![Unity Build Window with close icon highlighted](images/mr-learning-base/base-02-section2-step1-4.png)
+[!INCLUDE[](includes/switching-build-platform.md)]
 
 ## Importing the TextMeshPro Essential Resources
 
@@ -97,32 +83,8 @@ Open the executable file **MixedRealityFeatureTool** from the downloaded folder 
 
 ![Opening MixedRealityFeatureTool](images/mr-learning-base/base-02-section4-step1-1.png)
 
-Once **MixedRealityFeatureTool** is opened click on start to get started with Mixed Reality Feature Tool.
 
-![MixedRealityFeatureTool](images/mr-learning-base/base-02-section4-step1-2.png)
-
-Features are grouped by category to make things easier to find, click on **Mixed Reality Toolkit** dropdown to find packages relating to the Mixed Reality Toolkit.
-
-![MixedRealityFeatureTool window](images/mr-learning-base/base-02-section4-step1-3.png)
-
-check the **Mixed Reality Toolkit Foundation**, and click on the dropdown next to it to select the required MRTK version, for this tutorial series please select **2.5.3**. then click on **Get features** button to download the selected packages.
-
-![Selecting Mixed reality foundation](images/mr-learning-base/base-02-section4-step1-4.png)
-
-Selected package **Mixed Reality Toolkit Foundation 2.5.3** is presented, along with its dependence package **Mixed Reality Toolkit Standard Assets 2.5.3** in the **Import Features** window.
-
-You also need to set the location of the target unity project to provide the **Project path**, click on the **Three dots** next to the Project path and browse to your project folder in the explorer for example _D:\MixedRealityLearning\MRTK Tutorials_.
-
-> [!NOTE]
-> The dialog that's displayed when browsing for the Unity project folder contains '_' as the file name. There must be a value for the file name to enable the folder to be selected.
-
-Next click on the **Validate** button to validate the selected package, you will get a popup with message **No validation issues were detected** click on **OK** to close the popup and click on **Import** button.
-
-![Validating Mixed reality foundation](images/mr-learning-base/base-02-section4-step1-5.png)
-
-Click on **Approve** Button to add the **Mixed Reality Toolkit** into the project.
-
-![Approve Mixed reality foundation](images/mr-learning-base/base-02-section4-step1-6.png)
+[!INCLUDE[](includes/importing-mrtk.md)]
 
 ## Configuring the Unity project
 
@@ -175,19 +137,19 @@ Download the following Unity custom package:
 
 To Import a Unity custom package, In the Unity menu, select **Assets** > **Import Package** > **Custom Package...** to open the Import package... window:
 
-![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-02-section7-step1-1.png)
+![Importing a custom package](images/mr-learning-base/base-02-section7-step1-1.png)
 
 In the Import package... window, select the **MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage** you downloaded and click the Open button:
 
-![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-02-section7-step1-2.png)
+![Selecting an asset package](images/mr-learning-base/base-02-section7-step1-2.png)
 
 In the Import Unity Package window, click the All button to ensure all the assets are selected, then click the Import button to import the assets:
 
-![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-02-section7-step1-3.png)
+![Selecting all the assets to import](images/mr-learning-base/base-02-section7-step1-3.png)
 
 After you have imported the tutorial assets your Project window should look similar to this:
 
-![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-base/base-02-section7-step1-4.png)
+![Unity project window after importing assets](images/mr-learning-base/base-02-section7-step1-4.png)
 
 ## Configuring the Scene
 

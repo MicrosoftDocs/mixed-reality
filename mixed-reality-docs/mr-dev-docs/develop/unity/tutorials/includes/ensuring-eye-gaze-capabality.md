@@ -19,6 +19,20 @@ Assign **Microsoft.MixedReality.ToolKit.WindowsMixedReality.Input** > **WindowsM
 
 ![Adding Eye data provider 2](../images/mr-learning-base/base-08-section1-step1-3.png)
 
+# [Unity 2020 + OpenXR](#tab/openxr)
+
+## Ensuring Eye Gaze Input capability and adding Eye Gaze Data Provider
+
+In the Hierarchy window, select the MixedRealityToolkit object, then in the Inspector window, navigate to the Input tab:
+
+* Expand the **Input Data Providers** , click the **+ Add Data Provider** button to add a new Data Provider
+
+![Adding Eye data provider 1](../images/mr-learning-base/base-08-section1-step1-2openxr.png)
+
+Assign **Microsoft.MixedReality.ToolKit.XRSDK.OpenXR.Input** > **WindowsMixedRealityEyeGazeProvider** to the **Type** field of the new Data Provider.
+
+![Adding Eye data provider 2](../images/mr-learning-base/base-08-section1-step1-3openxr.png)
+
 # [Legacy WSA](#tab/wsa)
 
 ## Ensuring the Eye Gaze Input capability is enabled
