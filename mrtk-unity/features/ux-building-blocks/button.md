@@ -245,6 +245,14 @@ When you press the button, it will move and generate proper events exposed in th
 
 <img src="../images/button/MRTK_PressableButtonCubeRun1.jpg" alt="Pressable button cube run 1">
 
+#### Troubleshooting
+
+If your button is executing a double press, make sure the **Enforce Front Push** property is active and the **Start Push Distance** plane is placed in front of the **Near Interaction Touchable** plane. The **Near Interaction Touchable** plane is indicated by the blue plane placed in front of the origin of the white arrow in the gif below:
+
+![Pressable button script component with Enforce Front Push property highlighted](../images/button/MRTK_Button_Enforce_Push.png)
+
+![Animated example of moving the start push distance in front of the near interaction touchable plane](../images/button/MRTK_Button_Front_Touch.gif)
+
 ### 2. Adding visual feedback to the basic cube button
 
 MRTK Standard Shader provides various features that makes it easy to add visual feedback. Create a material and select shader `Mixed Reality Toolkit/Standard`. Or you can use or duplicate one of the existing materials under `/SDK/StandardAssets/Materials/` that uses MRTK Standard Shader.
