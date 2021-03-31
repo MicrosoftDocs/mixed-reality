@@ -17,7 +17,7 @@ In the Hierarchy window, select the MixedRealityToolkit object, then in the Insp
 
 Assign **Microsoft.MixedReality.ToolKit.Windows.Input** > **WindowsSpeechInputProvider** to the **Type** field of the new Data Provider.
 
-![Adding new speech commands](../images/mr-learning-base/base-09-section1-step1-3.png)
+![Adding new speech commands settings](../images/mr-learning-base/base-09-section1-step1-3.png)
 
 # [Unity 2020 + OpenXR](#tab/openxr)
 
