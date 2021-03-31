@@ -75,7 +75,7 @@ If you're developing for HoloLens 2, navigate to **Mixed Reality> OpenXR > Apply
 ![Screenshot of the mixed reality menu item open with OpenXR selected](images/openxr-img-08.png)
 
 > [!IMPORTANT]
-> If you see a red warning icon next to **OpenXR Plugin (Preview)**, click the icon and select **Fix all** before continuing. The Unity Editor may need to restart itself for the changes to take effect.
+> If you see a red warning icon next to **OpenXR Plugin**, click the icon and select **Fix all** before continuing. The Unity Editor may need to restart itself for the changes to take effect.
 
 ![Screenshot of the OpenXR project validation window](images/openxr-img-06.png)
 
