@@ -2,7 +2,7 @@
 
 Once **MixedRealityFeatureTool** is opened click on start to get started with Mixed Reality Feature Tool.
 
-![MixedRealityFeatureTool window for Windows XR plugin](images/mr-learning-base/base-02-section4-step1-2.png)
+![MixedRealityFeatureTool window for Windows XR plugin](../images/mr-learning-base/base-02-section4-step1-2.png)
 
 Features are grouped by category to make things easier to find, click on **Mixed Reality Toolkit** dropdown to find packages relating to the Mixed Reality Toolkit.
 
@@ -29,7 +29,7 @@ Click on **Approve** Button to add the **Mixed Reality Toolkit** into the projec
 # [Unity 2020 + OpenXR](#tab/openxr)
 In the bottom left hand of the window, click on the gear symbol to open the settings menu.
 
-![MixedRealityFeatureTool](images/mr-learning-base/base-02-section4-step1-2.png)
+![MixedRealityFeatureTool](../images/mr-learning-base/base-02-section4-step1-2.png)
 
 Under **Feature Seetings**, check the box for **Include preview releases** and then click the **OK* button.
 
@@ -40,7 +40,7 @@ Under **Feature Seetings**, check the box for **Include preview releases** and t
 
 Now that your settings are configured, click on **Start** to get started with Mixed Reality Feature Tool.
 
-![MixedRealityFeatureTool window start screen](images/mr-learning-base/base-02-section4-step1-2.png)
+![MixedRealityFeatureTool window start screen](../images/mr-learning-base/base-02-section4-step1-2.png)
 
 Features are grouped by category to make things easier to find, click on **Mixed Reality Toolkit** dropdown to find packages relating to the Mixed Reality Toolkit.
 
@@ -69,7 +69,7 @@ Click on the **Approve** button to add the **Mixed Reality Toolkit** into the pr
 # [Legacy WSA](#tab/wsa)
 Once **MixedRealityFeatureTool** is opened click on start to get started with Mixed Reality Feature Tool.
 
-![MixedRealityFeatureTool for legacy WSA](images/mr-learning-base/base-02-section4-step1-2.png)
+![MixedRealityFeatureTool for legacy WSA](../images/mr-learning-base/base-02-section4-step1-2.png)
 
 Features are grouped by category to make things easier to find, click on **Mixed Reality Toolkit** dropdown to find packages relating to the Mixed Reality Toolkit.
 
