@@ -13,7 +13,7 @@ In the Hierarchy window, select the MixedRealityToolkit object, then in the Insp
 
 * Expand the **Input Data Providers** , click the **+ Add Data Provider** button to add a new Data Provider
 
-![Adding new speech commands](../images/mr-learning-base/base-09-section1-step1-2.png)
+![Data provider for adding new speech commands](../images/mr-learning-base/base-09-section1-step1-2.png)
 
 Assign **Microsoft.MixedReality.ToolKit.Windows.Input** > **WindowsSpeechInputProvider** to the **Type** field of the new Data Provider.
 
