@@ -43,8 +43,8 @@ highlightedContent:
       url: wmr-health-safety-comfort.md
     # Card
     - title: Explore AltspaceVR
-      itemType: what's new
-      url: https://docs.microsoft.com/en-us/windows/mixed-reality/altspace-vr/journey?tabs=application
+      itemType: whats-new
+      url: https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey?tabs=application
     
 # conceptualContent section (optional)
 conceptualContent:
