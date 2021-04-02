@@ -23,9 +23,9 @@ The HoloLens 2 tutorials are designed to teach techniques and best practices for
 * Azure Spatial Anchors tutorials - [Introduction (1 of 5)](tutorials/mr-learning-asa-01.md)
 * Multi-user capabilities tutorials - [Introduction (1 of 5)](tutorials/mr-learning-sharing-01.md)
 * Azure Speech Services tutorials - [Integrating and using speech recognition and transcription (1 of 4)](tutorials/mrlearning-speechSDK-ch1.md)
-* Spatial audio tutorials - [Adding Spatial audio (1 of 5)](tutorials/unity-spatial-audio-ch1)
-* Azure Cloud Services tutorials - [Introduction (1 of 5)](tutorials/mr-learning-azure-01)
-* PC Holographic Remoting tutorials - [Getting started (1 of 2)](tutorials/mr-learning-pc-holographic-remoting-01)
+* Spatial audio tutorials - [Adding Spatial audio (1 of 5)](tutorials/unity-spatial-audio-ch1.md)
+* Azure Cloud Services tutorials - [Introduction (1 of 5)](tutorials/mr-learning-azure-01.md)
+* PC Holographic Remoting tutorials - [Getting started (1 of 2)](tutorials/mr-learning-pc-holographic-remoting-01.md)
 
 ## Mixed Reality Academy 
 
