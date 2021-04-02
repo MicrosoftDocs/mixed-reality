@@ -42,9 +42,9 @@ highlightedContent:
       itemType: concept
       url: wmr-health-safety-comfort.md
     # Card
-    - title: Mixed Reality software overview and release history
-      itemType: concept
-      url: mixed-reality-software.md
+    - title: Explore AltspaceVR
+      itemType: whats-new
+      url: https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey?tabs=application
     
 # conceptualContent section (optional)
 conceptualContent:
