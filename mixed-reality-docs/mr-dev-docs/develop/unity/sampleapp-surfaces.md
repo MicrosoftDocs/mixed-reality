@@ -26,6 +26,7 @@ Recorded with HoloLens 2 using Mixed Reality Capture
 ## About the app
 
 Surfaces demonstrates how to use Mixed Reality Toolkit(MRTK)'s input system and building blocks to create an app experience for HoloLens 2. In this project, you can find the examples of:
+
 - Use MRTK's [Input System](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview), specifically hand / joint tracking.
 - Use MRTK's [Standard Shader](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader) for performant graphics.
 
