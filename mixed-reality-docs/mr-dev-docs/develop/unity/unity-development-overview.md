@@ -44,7 +44,20 @@ The easiest way to develop in Unity is with the Mixed Reality Toolkit. MRTK will
 
 All of the core building blocks for mixed reality applications are exposed in a manner consistent with other Unity APIs. These building blocks are available as standalone features and through the Mixed Reality Toolkit. You might not need all of them at once, but we recommend exploring early on. After diving into the core building blocks listed below, you'll have a toolbox full of features you can integrate into a Mixed Reality project by themselves or through MRTK.
 
-[!INCLUDE[](../includes/unity-building-blocks.md)]
+|  Feature  |  Capabilities  |
+| --- | --- |
+| [Basic interactions](../../out-of-scope/mrtk-101.md) | Learn the basics of interacting with objects in immersive space |
+| [Camera](../unity/camera-in-unity.md) | Fully optimize visual quality and hologram stability in your Mixed Reality apps |
+| [Coordinate systems](../unity/coordinate-systems-in-unity.md) | Determine the experience scale your application targets |
+| [Gaze](../unity/gaze-in-unity.md) | Let users target holograms with by looking at them |
+| [Motion controllers](../unity/motion-controllers-in-unity.md) | Add spatial actions to your Mixed Reality apps |
+| [Gestures](../unity/gestures-in-unity.md) | Use hand gestures as input in your Mixed Reality experiences |
+| [Persistence](../unity/persistence-in-unity.md) | Persist holograms locally across different app sessions |
+| [Hand and eye tracking](../unity/hand-eye-in-unity.md) | Integrate articulated hand and eye tracking input into your user experience |
+| [Spatial mapping](../unity/spatial-mapping-in-unity.md) | Map your physical space with a virtual mesh overlay to mark the boundaries of your environment |
+| [Spatial sound](../unity/spatial-sound-in-unity.md) | Enhance your apps with immersive 3D audio |
+| [Text](../unity/text-in-unity.md) | Get sharp, high-quality text that has a manageable size and quality rendering |
+| [Voice input](../unity/voice-input-in-unity.md) | Capture spoken keywords, phrases, and dictation from your users|
 
 ## 3. Advanced features
 

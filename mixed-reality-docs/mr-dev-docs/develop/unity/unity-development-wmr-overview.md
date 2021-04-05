@@ -35,7 +35,17 @@ There are a small set of Unity settings you'll need to manually change for Windo
 
 After starting a new immersive project, you'll need some basic building blocks to develop immersive apps. All of the core building blocks for mixed reality applications are exposed in a manner consistent with other Unity APIs. You might not need all of them at once, but we recommend exploring early on. After diving into the core building blocks listed below, you'll have a toolbox full of features you can integrate into a VR project.
 
-[!INCLUDE[](../includes/unity-building-blocks-wmr.md)]
+|  Feature  |  Capabilities  |
+| --- | --- |
+| [Basic interactions](../../out-of-scope/mrtk-101.md) | Learn the basics of interacting with objects in immersive space |
+| [Camera](../unity/camera-in-unity.md) | Fully optimize visual quality and hologram stability in your Mixed Reality apps |
+| [Coordinate systems](../unity/coordinate-systems-in-unity.md) | Determine the experience scale your application targets |
+| [Motion controllers](../unity/motion-controllers-in-unity.md) | Add spatial actions to your Mixed Reality apps |
+| [Gestures](../unity/gestures-in-unity.md) | Use hand gestures as input in your Mixed Reality experiences |
+| [Persistence](../unity/persistence-in-unity.md) | Persist holograms locally across different app sessions |
+| [Spatial sound](../unity/spatial-sound-in-unity.md) | Enhance your apps with immersive 3D audio |
+| [Text](../unity/text-in-unity.md) | Get sharp, high-quality text that has a manageable size and quality rendering |
+| [Voice input](../unity/voice-input-in-unity.md) | Capture spoken keywords, phrases, and dictation from your users|
 
 ### 3. Advanced features
 
