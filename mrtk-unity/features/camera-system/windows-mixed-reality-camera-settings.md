@@ -61,5 +61,5 @@ This only needs to be updated once and the value is reused for all subsequent fr
 
 - [Camera System Overview](camera-system-overview.md)
 - [Creating a Camera Settings Provider](create-settings-provider.md)
-- [Rendering Mixed Reality Capture from the PV camera](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-capture-for-developers#render-from-the-pv-camera-opt-in)
-- [Holographic reprojection](https://docs.microsoft.com/windows/mixed-reality/hologram-stability#reprojection)
+- [Rendering Mixed Reality Capture from the PV camera](/windows/mixed-reality/mixed-reality-capture-for-developers#render-from-the-pv-camera-opt-in)
+- [Holographic reprojection](/windows/mixed-reality/hologram-stability#reprojection)

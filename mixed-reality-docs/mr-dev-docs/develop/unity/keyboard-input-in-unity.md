@@ -1,11 +1,11 @@
 ---
 title: Keyboard input in Unity
 description: Unity provides the TouchScreenKeyboard class for accepting keyboard input when there's no physical keyboard available.
-author: thetuvix
-ms.author: alexturn
-ms.date: 03/21/2018
+author: MaxWang-MS
+ms.author: wangmax
+ms.date: 03/30/2021
 ms.topic: article
-keywords: keyboard, input, unity, touchscreenkeyboard, mixed reality headset, windows mixed reality headset, virtual reality headset
+keywords: keyboard, input, unity, touchscreenkeyboard, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, HoloLens 2
 ---
 
 
@@ -20,39 +20,7 @@ Unity provides the *[TouchScreenKeyboard](https://docs.unity3d.com/ScriptReferen
 
 ## HoloLens system keyboard behavior in Unity
 
-On HoloLens, the *TouchScreenKeyboard* leverages the system's on-screen keyboard. The system's on-screen keyboard can't overlay on top of a volumetric view. Unity has to create a secondary 2D XAML view to show the keyboard then return back to the volumetric view once input has been submitted. The user flow goes like this:
-1. The user performs an action causing app code to call *TouchScreenKeyboard*
-    * The app is responsible for pausing app state before calling *TouchScreenKeyboard*
-    * The app may terminate before ever switching back to the volumetric view
-2. Unity switches to a 2D XAML view, which is autoplaced in the world
-3. The user enters text using the system keyboard and submits or cancels
-4. Unity switches back to the volumetric view
-    * The app is responsible for resuming app state when the *TouchScreenKeyboard* is done
-5. Submitted text is available in the *TouchScreenKeyboard*
-
-### Available keyboard views
-
-There are six different keyboard views available:
-* Single-line textbox
-* Single-line textbox with title
-* Multi-line textbox
-* Multi-line textbox with title
-* Single-line password box
-* Single-line password box with title
-
-## How to enable the system keyboard in Unity
-
-The HoloLens system keyboard is only available to Unity applications that are exported with the "UWP Build Type" set to "XAML". There are tradeoffs you make when you choose "XAML" as the "UWP Build Type" over "D3D". If you aren't comfortable with those tradeoffs, you may wish to explore an [alternative input solution](#alternative-keyboard-options) to the system keyboard.
-1. Open the **File** menu and select **Build Settings...**
-2. Ensure the **Platform** is set to **Windows Store**, the **SDK** is set to **Universal 10**, and set the **UWP Build Type** to **XAML**.
-3. In the **Build Settings** dialog, select the **Player Settings...** button
-4. Select the **Settings for Windows Store** tab
-5. Expand the **Other Settings** group
-6. In the **Rendering** section, check the **Virtual Reality Supported** checkbox to add a new **Virtual Reality Devices** list
-7. Ensure **Windows Holographic** appears in the list of Virtual Reality SDKs
-
->[!NOTE]
->If you don't mark the build as Virtual Reality Supported with the HoloLens device, the project will export as a 2D XAML app.
+On HoloLens, the *TouchScreenKeyboard* leverages the system's on-screen keyboard and directly overlays on top of the volumetric view of your MR application. The experience is similar to using keyboard in the built-in apps of HoloLens. Note that the system keyboard will behave according to the target platform's capabilities, for example the keyboard on HoloLens 2 would support direct hand interactions, while the keyboard on HoloLens (1st gen) would support GGV (Gaze, Gesture, and Voice). Additionally, the system keyboard will not show up when performing Unity Remoting from the editor to a HoloLens.
 
 ## Using the system keyboard in your Unity app
 
@@ -67,50 +35,25 @@ public static string keyboardText = "";
 
 ### Invoke the keyboard
 
-When an event occurs requesting keyboard input, call one of these functions depending on the type of input you want using the title in the textPlaceholder parameter.
+When an event occurs requesting keyboard input, use the following to show the keyboard.
 
 ```cs
-// Single-line textbox
-keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, false, false, false);
-
-// Single-line textbox with title
-keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, false, false, false, "Single-line title");
-
-// Multi-line textbox
-keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, true, false, false);
-
-// Multi-line textbox with title
-keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, true, false, false, "Multi-line Title");
-
-// Single-line password box
-keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, false, true, false);
-
-// Single-line password box with title
-keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, false, true, false, "Secure Single-line Title");
+keyboard = TouchScreenKeyboard.Open("text to edit");
 ```
+
+You can use additional parameters passed into the `TouchScreenKeyboard.Open` function to control the behavior of the keyboard (e.g. setting placeholder text or supporting autocorrection). For the full list of parameters please refer to [Unity's documentation](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.Open.html).
 
 ### Retrieve typed contents
 
-In the update loop, check if the keyboard received new input and store it for use elsewhere.
+The content can simply be retrieved by calling `keyboard.text`. You may want to retrieve the content per frame or only when the keyboard is closed.
 
 ```cs
-if (TouchScreenKeyboard.visible == false && keyboard != null)
-{
-       if (keyboard.status == TouchScreenKeyboard.Status.Done)
-       {
-           keyboardText = keyboard.text;
-           keyboard = null;
-       }
-}
+keyboardText = keyboard.text;
 ```
 
 ## Alternative keyboard options
 
-We understand that switching out of a volumetric view into a 2D view isn't the ideal way to get text input from the user.
-
-The current alternatives to leveraging the system keyboard through Unity include:
-* Using speech dictation for input (<b>Note:</b> this is often error prone for words not found in the dictionary and isn't suitable for password entry)
-* Create a keyboard that works in your applications exclusive view
+Besides using the *TouchScreenKeyboard* class directly, you can also get user input by using Unity's *UI Input Field* or *TextMeshPro Input Field*. Additionally, there is an implementation based on *TouchScreenKeyboard* in the [HandInteractionExamples scene](/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples) of [MRTK](/windows/mixed-reality/mrtk-unity) (there is a keyboard interaction sample on the left hand side).
 
 ## Next Development Checkpoint
 

@@ -1,5 +1,5 @@
 ---
-title: Butons
+title: Buttons
 description: Overview on Buttons in MRTK
 author: cre8ivepark
 ms.author: dongpark
@@ -244,6 +244,14 @@ When you select the cube, you will see multiple colored layers on the object. Th
 When you press the button, it will move and generate proper events exposed in the `PressableButton.cs` script such as TouchBegin(), TouchEnd(), ButtonPressed(), ButtonReleased().
 
 <img src="../images/button/MRTK_PressableButtonCubeRun1.jpg" alt="Pressable button cube run 1">
+
+#### Troubleshooting
+
+If your button is executing a double press, make sure the **Enforce Front Push** property is active and the **Start Push Distance** plane is placed in front of the **Near Interaction Touchable** plane. The **Near Interaction Touchable** plane is indicated by the blue plane placed in front of the origin of the white arrow in the gif below:
+
+![Pressable button script component with Enforce Front Push property highlighted](../images/button/MRTK_Button_Enforce_Push.png)
+
+![Animated example of moving the start push distance in front of the near interaction touchable plane](../images/button/MRTK_Button_Front_Touch.gif)
 
 ### 2. Adding visual feedback to the basic cube button
 

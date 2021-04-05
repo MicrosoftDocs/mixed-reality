@@ -102,7 +102,7 @@ For information on the specific API differences between HTK/MRTK and MRTK v2, se
     - This action eases future MRTK ingestions and updates.
 - Review and explore sample scenes provided in the MRTK, especially *HandInteractionExamples.scene*.
 - Rebuild canvas-based UI with quads, colliders, and TextMeshPro text.
-- Enable [Depth Buffer Sharing](../unity/camera-in-unity.md#sharing-your-depth-buffers-with-windows) or [set focus point](../unity/focus-point-in-unity.md); prefer to use a 16-bit depth buffer for better performance. Ensure when rendering color, to also render depth. Unity generally doesn't write depth for transparent and text gameobjects. 
+- Enable [Depth Buffer Sharing](../unity/camera-in-unity.md#sharing-depth-buffers) or [set focus point](../unity/focus-point-in-unity.md); prefer to use a 16-bit depth buffer for better performance. Ensure when rendering color, to also render depth. Unity generally doesn't write depth for transparent and text gameobjects. 
 - Set Single Pass Instanced Rendering Path.
 - Use the [HoloLens 2 configuration profile for MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/profiles/profiles.md#hololens-2-profile)
 

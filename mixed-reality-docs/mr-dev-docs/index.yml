@@ -35,10 +35,6 @@ highlightedContent:
       itemType: reference 
       url: /dynamics365/mixed-reality/
     # Card
-    - title: Azure mixed reality cloud services 
-      itemType: whats-new 
-      url: develop/mixed-reality-cloud-services.md
-    # Card
     - title: Developers
       itemType: get-started 
       url: develop/development.md
@@ -54,6 +50,10 @@ highlightedContent:
     - title: Microsoft Mesh (Preview)
       itemType: whats-new
       url: /mesh/overview
+    # Card
+    - title: AltspaceVR 
+      itemType: whats-new 
+      url: https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey
 
 # productDirectory section (optional)
 productDirectory:
@@ -129,7 +129,7 @@ conceptualContent:
         - url: develop/unity/tutorials/mr-learning-base-01.md
           itemType: tutorial
           text: HoloLens 2 tutorial series
-        - url: develop/unity/mrtk-101.md
+        - url: ./out-of-scope/mrtk-101.md
           itemType: concept
           text: Core building blocks
         - url: develop/unity/shared-experiences-in-unity.md

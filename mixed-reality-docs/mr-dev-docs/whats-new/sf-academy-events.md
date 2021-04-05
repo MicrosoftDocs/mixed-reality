@@ -16,6 +16,7 @@ Join the Microsoft Mixed Reality Team at these upcoming events!
 
 |Event|Date|Theme|
 |-------------|-------------|-----|
+| Mixed Reality Speaker Series|April 6, 2021 @10 AM PST|[Creating Mixed Reality Apps with Microsoft PowerApps](https://www.meetup.com/hololens-mr/events/277257132)|
 | Mixed Reality Speaker Series|April 23, 2020|[Augmenting the web](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Augmenting-WebXR-Standards)|
 | Mixed Reality Speaker Series|June 22, 2020|[Creating educational experiences with MR](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Educational-Experiences-in-MR)|
 | [The Microsoft Virtual Reality Event](https://www.meetup.com/hololens-mr/events/272364822/)|August 20, 2020|VR Mini Summit|

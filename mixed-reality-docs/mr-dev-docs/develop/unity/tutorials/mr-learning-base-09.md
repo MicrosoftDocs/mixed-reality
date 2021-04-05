@@ -18,14 +18,7 @@ In this tutorial, you will learn how to create speech commands and how to contro
 * Learn how to create speech commands
 * Learn how to control speech commands globally and locally
 
-## Ensuring the Microphone capability is enabled
-
-In the Unity menu, select Mixed Reality Toolkit > Utilities > **Configure Unity Project** to open the **MRTK Project Configurator** window, then in the **UWP Capabilities** section, verify that **Enable Microphone Capability** is greyed out:
-
-![Enable microphone capability](images/mr-learning-base/base-09-section1-step1-1.png)
-
-> [!NOTE]
-> The Microphone capability should have been enabled during the [Apply the MRTK Project Configurator settings](mr-learning-base-02.md#creating-and-configuring-the-scene) instructions when you configured the Unity project at the beginning of this tutorial series. However, if it is not enabled, make sure you enable it now.
+[!INCLUDE[](includes/ensuring-microphone-capabality.md)]
 
 ## Creating speech commands
 
@@ -139,6 +132,6 @@ In the next two tutorial series, [Azure Spatial Anchors tutorials](mr-learning-a
 If you're following the Unity development checkpoint journey we've laid out, your next task is to familiarize yourself with core building blocks of Mixed Reality apps.
 
 > [!div class="nextstepaction"]
-> [Basic interactions](../mrtk-101.md)
+> [Basic interactions](../../../out-of-scope/mrtk-101.md)
 
 You can always go back to the [Unity development checkpoints](../unity-development-overview.md#1-getting-started) at any time.
