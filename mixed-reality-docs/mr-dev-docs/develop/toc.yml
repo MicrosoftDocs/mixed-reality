@@ -198,10 +198,12 @@
     items:
       - name: Camera setup
         href: unity/camera-in-unity.md
-      - name: Introducing World Locking Tools
-        href: unity/world-locking-tools.md
-      - name: Spatial anchors
-        href: unity/spatial-anchors-in-unity.md
+      - name: World-locking and spatial anchors 
+        items: 
+          - name: Introducing World Locking Tools
+            href: unity/world-locking-tools.md
+          - name: Spatial anchors
+            href: unity/spatial-anchors-in-unity.md
       - name: Interactions
         items:
           - name: Motion controllers
