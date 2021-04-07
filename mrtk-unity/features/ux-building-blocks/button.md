@@ -26,19 +26,138 @@ Examples of the button prefabs under ``MRTK/SDK/Features/UX/Interactable/Prefabs
 
 ### Collider based buttons
 
-|  ![PressableButtonHoloLens2](../images/button/MRTK_Button_Prefabs_HoloLens2.png) PressableButtonHoloLens2 | ![PressableButtonHoloLens2Unplated](../images/button/MRTK_Button_Prefabs_HoloLens2Unplated.png) PressableButtonHoloLens2Unplated | ![PressableButtonHoloLens2Circular](../images/button/MRTK_Button_Prefabs_HoloLens2Circular.png) PressableButtonHoloLens2Circular |
-|:--- | :--- | :--- |
-| HoloLens 2's shell-style button with backplate which supports various visual feedback such as border light, proximity light, and compressed front plate | HoloLens 2's shell-style button without backplate  | HoloLens 2's shell-style button with circular shape  |
-|  ![PressableButtonHoloLens2_32x96](../images/button/MRTK_Button_Prefabs_HoloLens2_32x96.png) **PressableButtonHoloLens2_32x96** | ![PressableButtonHoloLens2Bar3H](../images/button/MRTK_Button_Prefabs_HoloLens2BarH.png) **PressableButtonHoloLens2Bar3H** | ![PressableButtonHoloLens2Bar3V](../images/button/MRTK_Button_Prefabs_HoloLens2BarV.png) **PressableButtonHoloLens2Bar3V** |
-| Wide HoloLens 2's shell-style button 32x96mm | Horizontal HoloLens 2 button bar with shared backplate | Vertical HoloLens 2 button bar with shared backplate |
-|  ![PressableButtonHoloLens2ToggleCheckBox_32x32](../images/button/MRTK_Button_Prefabs_HoloLens2_Checkbox.png) **PressableButtonHoloLens2ToggleCheckBox_32x32** | ![PressableButtonHoloLens2ToggleSwitch_32x32](../images/button/MRTK_Button_Prefabs_HoloLens2_Switch.png) **PressableButtonHoloLens2ToggleSwitch_32x32** | ![PressableButtonHoloLens2ToggleRadio_32x32](../images/button/MRTK_Button_Prefabs_HoloLens2_Radio.png) **PressableButtonHoloLens2ToggleRadio_32x32** |
-| HoloLens 2's shell-style checkbox 32x32mm | HoloLens 2's shell-style switch 32x32mm | HoloLens 2's shell-style radio 32x32mm |
-|  ![PressableButtonHoloLens2ToggleCheckBox_32x96](../images/button/MRTK_Button_Prefabs_HoloLens2_Checkbox_32x96.png) **PressableButtonHoloLens2ToggleCheckBox_32x96** | ![PressableButtonHoloLens2ToggleSwitch_32x96](../images/button/MRTK_Button_Prefabs_HoloLens2_Switch_32x96.png) **PressableButtonHoloLens2ToggleSwitch_32x96** | ![PressableButtonHoloLens2ToggleRadio_32x96](../images/button/MRTK_Button_Prefabs_HoloLens2_Radio_32x96.png) **PressableButtonHoloLens2ToggleRadio_32x96** |
-| HoloLens 2's shell-style checkbox 32x96mm | HoloLens 2's shell-style switch 32x96mm | HoloLens 2's shell-style radio 32x96mm |
-|  ![Radial](../images/button/MRTK_Button_Radial.png) **Radial** | ![Checkbox](../images/button/MRTK_Button_Checkbox.png) **Checkbox** | ![ToggleSwitch](../images/button/MRTK_Button_ToggleSwitch.png) **ToggleSwitch** |
-| Radial button | Checkbox  | Toggle switch |
-|  ![ButtonHoloLens1](../images/button/MRTK_Button_HoloLens1.png) **ButtonHoloLens1** | ![PressableRoundButton](../images/button/MRTK_Button_Round.png) **PressableRoundButton** | ![Button Base](../images/button/MRTK_Button_Base.png) **Button** |
-| HoloLens 1st gen's shell style button | Round shape push button | Basic button |
+:::row:::
+    :::column:::
+    ![PressableButtonHoloLens2](../images/button/MRTK_Button_Prefabs_HoloLens2.png) PressableButtonHoloLens2 
+    :::column-end:::
+    :::column:::
+    ![PressableButtonHoloLens2Unplated](../images/button/MRTK_Button_Prefabs_HoloLens2Unplated.png) PressableButtonHoloLens2Unplated 
+    :::column-end:::
+    :::column:::
+    ![PressableButtonHoloLens2Circular](../images/button/MRTK_Button_Prefabs_HoloLens2Circular.png) PressableButtonHoloLens2Circular 
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column::: 
+    HoloLens 2's shell-style button with backplate which supports various visual feedback such as border light, proximity light, and compressed front plate
+    :::column-end:::
+    :::column:::
+    HoloLens 2's shell-style button without backplate
+    :::column-end:::
+    :::column:::
+    HoloLens 2's shell-style button with circular shape
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column::: 
+    ![PressableButtonHoloLens2_32x96](../images/button/MRTK_Button_Prefabs_HoloLens2_32x96.png) **PressableButtonHoloLens2_32x96**
+    :::column-end:::
+    :::column:::
+    ![PressableButtonHoloLens2Bar3H](../images/button/MRTK_Button_Prefabs_HoloLens2BarH.png) **PressableButtonHoloLens2Bar3H**
+    :::column-end:::
+    :::column:::
+    ![PressableButtonHoloLens2Bar3V](../images/button/MRTK_Button_Prefabs_HoloLens2BarV.png) **PressableButtonHoloLens2Bar3V**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column::: 
+    Wide HoloLens 2's shell-style button 32x96mm
+    :::column-end:::
+    :::column:::
+    Horizontal HoloLens 2 button bar with shared backplate
+    :::column-end:::
+    :::column:::
+    Vertical HoloLens 2 button bar with shared backplate
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::     
+    ![PressableButtonHoloLens2ToggleCheckBox_32x32](../images/button/MRTK_Button_Prefabs_HoloLens2_Checkbox.png) **PressableButtonHoloLens2ToggleCheckBox_32x32** 
+    :::column-end:::
+    :::column:::
+    ![PressableButtonHoloLens2ToggleSwitch_32x32](../images/button/MRTK_Button_Prefabs_HoloLens2_Switch.png) **PressableButtonHoloLens2ToggleSwitch_32x32**
+    :::column-end:::
+    :::column:::
+    ![PressableButtonHoloLens2ToggleRadio_32x32](../images/button/MRTK_Button_Prefabs_HoloLens2_Radio.png) **PressableButtonHoloLens2ToggleRadio_32x32**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::     
+    HoloLens 2's shell-style checkbox 32x32mm
+    :::column-end:::
+    :::column:::
+    HoloLens 2's shell-style switch 32x32mm 
+    :::column-end:::
+    :::column:::
+    HoloLens 2's shell-style radio 32x32mm
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::     
+    ![PressableButtonHoloLens2ToggleCheckBox_32x96](../images/button/MRTK_Button_Prefabs_HoloLens2_Checkbox_32x96.png) **PressableButtonHoloLens2ToggleCheckBox_32x96**
+    :::column-end:::
+    :::column:::
+    ![PressableButtonHoloLens2ToggleSwitch_32x96](../images/button/MRTK_Button_Prefabs_HoloLens2_Switch_32x96.png) **PressableButtonHoloLens2ToggleSwitch_32x96** 
+    :::column-end:::
+    :::column:::
+    ![PressableButtonHoloLens2ToggleRadio_32x96](../images/button/MRTK_Button_Prefabs_HoloLens2_Radio_32x96.png) **PressableButtonHoloLens2ToggleRadio_32x96** 
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::  
+    HoloLens 2's shell-style checkbox 32x96mm
+    :::column-end:::
+    :::column:::
+    HoloLens 2's shell-style switch 32x96mm
+    :::column-end:::
+    :::column:::
+    HoloLens 2's shell-style radio 32x96mm
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::  
+    ![Radial](../images/button/MRTK_Button_Radial.png) **Radial**
+    :::column-end:::
+    :::column:::
+    ![Checkbox](../images/button/MRTK_Button_Checkbox.png) **Checkbox**
+    :::column-end:::
+    :::column:::
+    ![ToggleSwitch](../images/button/MRTK_Button_ToggleSwitch.png) **ToggleSwitch**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::  
+    Radial button 
+    :::column-end:::
+    :::column:::
+    Checkbox 
+    :::column-end:::
+    :::column:::
+    Toggle switch
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::  
+    ![ButtonHoloLens1](../images/button/MRTK_Button_HoloLens1.png) **ButtonHoloLens1**
+    :::column-end:::
+    :::column:::
+    ![PressableRoundButton](../images/button/MRTK_Button_Round.png) **PressableRoundButton** 
+    :::column-end:::
+    :::column:::
+    ![Button Base](../images/button/MRTK_Button_Base.png) **Button**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::  
+    HoloLens 1st gen's shell style button
+    :::column-end:::
+    :::column:::
+    Round shape push button
+    :::column-end:::
+    :::column:::
+    Basic button
+    :::column-end:::
+:::row-end:::
 
 The `Button` (Assets/MRTK/SDK/Features/UX/Interactable/Prefabs/Button.prefab) is based on the [Interactable](interactable.md) concept to provide easy UI controls for buttons or other types of interactive surfaces. The baseline button supports all available input methods, including articulated hand input for the near interactions as well as gaze + air-tap for the far interactions. You can also use voice command to trigger the button.
 
@@ -290,11 +409,11 @@ In the [HandInteractionExample scene](../example-scenes/hand-interaction-example
 
 <img src="../images/button/MRTK_Button_Custom1.png" width="450" alt="Pressable Custom1">
 
-<img src="../images/button/MRTK_Button_Custom2.png" width="450" alt="Pressable Button Custom2>
+<img src="../images/button/MRTK_Button_Custom2.png" width="450" alt="Pressable Custom2">
 
 Each piano key has a `PressableButton` and a `NearInteractionTouchable` script assigned. It is important to verify that the *Local Forward* direction of `NearInteractionTouchable` is correct. It is represented by a white arrow in the editor. Make sure the arrow points away from the button's front face:
 
-<img src="../images/button/MRTK_Button_Custom3.png" width="450" alt="Pressable Button custom3>
+<img src="../images/button/MRTK_Button_Custom3.png" width="450" alt="Pressable Custom3">
 
 ## See also
 
