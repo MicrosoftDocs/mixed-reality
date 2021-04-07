@@ -27,7 +27,7 @@ Examples of the button prefabs under ``MRTK/SDK/Features/UX/Interactable/Prefabs
 ### Collider based buttons
 
 :::row:::
-    :::column::: 
+    :::column:::
     ![PressableButtonHoloLens2](../images/button/MRTK_Button_Prefabs_HoloLens2.png) PressableButtonHoloLens2 
     :::column-end:::
     :::column:::
