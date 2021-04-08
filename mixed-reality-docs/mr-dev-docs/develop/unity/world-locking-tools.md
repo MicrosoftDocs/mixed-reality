@@ -23,18 +23,18 @@ Unity's *spatial anchors* can maintain a hologram's position in the physical wor
 
 ## What comes with World Locking Tools
 
-World Locking Tools keeps a (not-very-) secret supply of world-locked holograms it spreads throughout the virtual scene as the user moves around. The tools analyze the coordinates of the camera and those world-locked holograms every frame. World Locking Tools then detects when all of those world-locked holograms are moving over 1.5 meters to match the coordinates of the head. Instead of changing the coordinates of everything in the world to compensate for the changed coordinates of the user's head, the tools just fix the head's coordinates instead.
+World Locking Tools keeps an internal supply of of spatial anchors it spreads throughout the virtual scene as the user moves around. The tools analyze the coordinates of the camera and those spatial anchors every frame. Instead of changing the coordinates of everything in the world to compensate for the changed coordinates of the user's head, the tools just fix the head's coordinates instead.
 
 What this means for you as a developer: rather than having an anchor drag a hologram through Unity space to keep it fixed in physical space, the entire Unity world space is locked to physical space. If a hologram is motionless in Unity space, it will remain motionless relative to the physical world around it. More importantly, it will also remain fixed relative to the virtual features around it.
 
-Obviously, it's more complicated under the hood than that. For example, world-locked holograms move independently and don't always agree with each other. The underlying FrozenWorld engine arbitrates those disagreements and comes up with the most perceptually correct camera correction in every frame.
+Obviously, it's more complicated under the hood than that. For example, spatial anchors move independently and don't always agree with each other. The underlying FrozenWorld engine arbitrates those disagreements and comes up with the most perceptually correct camera correction in every frame.
 
 ## Adding World Locking Tools to your project
 
 We recommend installing World Locking Tools using the new Mixed Reality Feature Tool at the link below. When your project is ready to go, use the [basic quickstart guide](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/UsingWLT/JustWorldLock.html) to get a world-locked scene up and running. For more advanced usage, see our [other quickstart and tutorial links](#see-also).
 
 > [!div class="nextstepaction"]
-> [Instal with the MR Feature Tool](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/WLTviaMRFeatureTool.html)
+> [Install with the MR Feature Tool](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/WLTviaMRFeatureTool.html)
 
 ## See also
 
