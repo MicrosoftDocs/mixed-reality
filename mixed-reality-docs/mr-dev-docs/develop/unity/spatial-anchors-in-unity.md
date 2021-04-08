@@ -37,7 +37,15 @@ Obviously, it's more complicated under the hood than that. For example, spatial 
 We recommend installing World Locking Tools using the new Mixed Reality Feature Tool at the link below. When your project is ready to go, use the [basic quickstart guide](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/UsingWLT/JustWorldLock.html) to get a world-locked scene up and running. For more advanced usage, see our [other quickstart and tutorial links](#see-also).
 
 > [!div class="nextstepaction"]
-> [Install with the MR Feature Tool](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/WLTviaMRFeatureTool.html)
+> [Install World Locking Tools with the MR Feature Tool](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/WLTviaMRFeatureTool.html)
+
+### Persisting the coordinate system
+
+By default, World Locking Tools will restore Unity's coordinate system relative to the physical world across sessions. This means that to have a hologram appear the same place in the physical world after quitting and re-running the application, the hologram only needs to have the same Pose again.
+
+![World locking context component in Unity inspector](images/world-locking-tools-img-02.png)
+
+If the application needs finer control, **Auto-Save** and **Auto-Load** may be disabled in the inspector, and persistence managed from a script as described in the persistence section of the documentation.
 
 ## Manual spatial anchor setup
 
@@ -50,17 +58,7 @@ Spatial anchors save holograms in real-world space between application sessions.
 
 [!INCLUDE[](includes/unity-understanding-anchors.md)]
 
-## Persisting the coordinate system
-
-### With World Locking Tools
-
-By default, World Locking Tools will restore Unity's coordinate system relative to the physical world across sessions. This means that to have a hologram appear the same place in the physical world after quitting and re-running the application, the hologram only needs to have the same Pose again.
-
-![World locking context component in Unity inspector](images/world-locking-tools-img-02.png)
-
-If the application needs finer control, **Auto-Save** and **Auto-Load** may be disabled in the inspector, and persistence managed from a script as described in the persistence section of the documentation.
-
-### Manually with AnchorStore
+### Using the AnchorStore
 
 [!INCLUDE[](includes/unity-spatial-anchorstore.md)]
 
