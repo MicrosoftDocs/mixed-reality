@@ -21,31 +21,31 @@ Figma Toolkit provides the assets that can be used for sketching and laying out 
 ## How to use Figma Toolkit
 Import downloaded file (.fig) into Figma using the **Import** button on the upper right corner.
 
-<img src="images/UX_FigmaToolkit_Import.png" width="200px"><br>
+<img src="images/UX_FigmaToolkit_Import.png" width="200px" alt="Import menu"><br>
 
 You can use the **Pages** menus on the left to open different pages included in the file.
 
-<img src="images/UX_FigmaToolkit_PageMenu.png" width="200px"><br>
+<img src="images/UX_FigmaToolkit_PageMenu.png" width="200px" alt="Page menu"><br>
 
 Open **Introduction** page to learn about how to use components and states.
 
 ## UI Gallery & Components
 UI Gallery and Components page show all available components for your design.
 
-![Figma Toolkit Example - Menu UI](images/UX_FigmaToolkit_Components_Menu1.png)<br>
+![Figma Toolkit Example - Menu UI 1](images/UX_FigmaToolkit_Components_Menu1.png)<br>
 
-![Figma Toolkit Example - Menu UI](images/UX_FigmaToolkit_Components_Menu2.png)<br>
+![Figma Toolkit Example - Menu UI 2](images/UX_FigmaToolkit_Components_Menu2.png)<br>
 
 Using **Assets** tab, you can browse these components and drag into your page.
 
-<img src="images/UX_FigmaToolkit_Components_Menu3.png" width="200px"><br>
+<img src="images/UX_FigmaToolkit_Components_Menu3.png" width="200px" alt="Assets tab"><br>
 
 
 ## Examples
 
 Figma Toolkit could be useful to sketch menu UI. 
 
-![Figma Toolkit Example - Menu UI](images/UX_FigmaToolkit_Examples_Menu.png)<br>
+![Figma Toolkit Example - Menu UI 3](images/UX_FigmaToolkit_Examples_Menu.png)<br>
 
 
 Assets could be used for storyboarding.
