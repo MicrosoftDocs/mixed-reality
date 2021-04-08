@@ -50,7 +50,17 @@ Spatial anchors save holograms in real-world space between application sessions.
 
 [!INCLUDE[](includes/unity-understanding-anchors.md)]
 
-### Using the AnchorStore
+## Persisting the coordinate system
+
+### With World Locking Tools
+
+By default, World Locking Tools will restore Unity's coordinate system relative to the physical world across sessions. This means that to have a hologram appear the same place in the physical world after quitting and re-running the application, the hologram only needs to have the same Pose again.
+
+![World locking context component in Unity inspector](images/world-locking-tools-img-02.png)
+
+If the application needs finer control, **Auto-Save** and **Auto-Load** may be disabled in the inspector, and persistence managed from a script as described in the persistence section of the documentation.
+
+### Manually with AnchorStore
 
 [!INCLUDE[](includes/unity-spatial-anchorstore.md)]
 
