@@ -4,7 +4,7 @@ By default, World Locking Tools will restore Unity's coordinate system relative 
 
 ![World locking context component in Unity inspector](images/world-locking-tools-img-02.png)
 
-If the application needs finer control, **Auto-Save** and **Auto-Load** may be disabled in the inspector, and persistence managed from a script as described in the persistence section of the documentation.
+If the application needs finer control, **Auto-Save** and **Auto-Load** may be disabled in the inspector, and persistence managed from a script as described in the [persistence section of the documentation](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/Concepts/Advanced/Persistence.html).
 
 # [Unity 2020 + OpenXR](#tab/openxr)
 
