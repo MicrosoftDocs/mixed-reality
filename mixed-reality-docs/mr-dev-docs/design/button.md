@@ -47,7 +47,7 @@ A button lets your users trigger immediate actions in a mixed reality experience
 * Compressing front cage
 * Pulse effect on trigger.
 
-* Check out the [MRTK - Button](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/button.md) for more instructions and customized examples.
+* Check out the [MRTK - Button](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button) for more instructions and customized examples.
 
 <br>
 

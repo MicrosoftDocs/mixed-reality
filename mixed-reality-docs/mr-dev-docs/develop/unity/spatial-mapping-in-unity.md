@@ -13,6 +13,7 @@ keywords: Unity, spatial mapping, renderer, collider, mesh, scanning, component,
 [spatial mapping](../../design/spatial-mapping.md) lets you retrieve triangle meshes that represent the surfaces in the world around a HoloLens device. You can use surface data for placement, occlusion, and room analysis to give your Unity projects an extra dose of immersion.
 
 Unity includes full support for spatial mapping, which is exposed to developers in the following ways:
+
 1. Spatial mapping components available in the MixedRealityToolkit, which provide a convenient and rapid path for getting started with spatial mapping
 2. Lower-level spatial mapping APIs, which provide full control and enable more sophisticated application-specific customization
 
@@ -46,6 +47,7 @@ To use spatial mapping in your app, the spatialPerception capability needs to be
 In order for an app to consume spatial mapping data, the SpatialPerception capability must be enabled.
 
 How to enable the SpatialPerception capability:
+
 1. In the Unity Editor, open the **"Player Settings"** pane (Edit > Project Settings > Player)
 2. Select on the **"Windows Store"** tab
 3. Expand **"Publishing Settings"** and check the **"SpatialPerception"** capability in the **"Capabilities"** list
@@ -54,6 +56,7 @@ How to enable the SpatialPerception capability:
 > If you have already exported your Unity project to a Visual Studio solution, you will need to either export to a new folder or manually [set this capability in the AppxManifest in Visual Studio](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).
 
 Spatial mapping also requires a MaxVersionTested of at least 10.0.10586.0:
+
 1. In Visual Studio, right-click on **Package.appxmanifest** in the Solution Explorer and select **View Code**
 2. Find the line specifying **TargetDeviceFamily** and change **MaxVersionTested="10.0.10240.0"** to **MaxVersionTested="10.0.10586.0"**
 3. **Save** the Package.appxmanifest.
@@ -79,6 +82,7 @@ The Spatial Mapping Collider allows for holographic content (or character) inter
 You may add both components to your app if you'd like to both visualize and interact with physical surfaces.
 
 To use these two components in your Unity app:
+
 1. Select a GameObject at the center of the area in which you'd like to detect spatial surface meshes.
 2. In the Inspector window, **Add Component** > **XR** > **Spatial Mapping Collider** or **Spatial Mapping Renderer**.
 
@@ -87,6 +91,7 @@ You can find more details on how to use these components at the <a href="https:/
 ### Going beyond the built-in spatial mapping components
 
 These components make it drag-and-drop easy to get started with Spatial Mapping.  When you want to go further, there are two main paths to explore:
+
 * To do your own lower-level mesh processing, see the section below about the low-level Spatial Mapping script API.
 * To do higher-level mesh analysis, see the section below about the SpatialUnderstanding library in <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/SpatialUnderstanding" target="_blank">MixedRealityToolkit</a>.
 
@@ -132,6 +137,7 @@ private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bou
 ### Handling Surface Changes
 
 There are several main cases to handle - added and updated, which can use the same code path, and removed.
+
 * In the added and updated cases, we add or get the GameObject representing this mesh from the dictionary, create a SurfaceData struct with the necessary components, then call RequestMeshDataAsync to populate the GameObject with the mesh data and position in the scene.
 * In the removed case, we remove the GameObject representing this mesh from the dictionary and destroy it.
 
@@ -263,7 +269,7 @@ In the Unity sample, the cursor casts a ray each frame. First, against Unity’s
 
 ### Topology Queries
 
-Within the DLL, the topology manager handles labeling of the environment. As mentioned above, much of the data is stored within surfels, contained within a voxel volume. In addition, the “PlaySpaceInfos” structure is used to store information about the playspace, including the world alignment (more details on this below), floor, and ceiling height. Heuristics are used for determining floor, ceiling, and walls. For example, the largest and lowest horizontal surface with greater than 1-m2 surface area is considered the floor. 
+Within the DLL, the topology manager handles labeling of the environment. As mentioned above, much of the data is stored within surfels, contained within a voxel volume. In addition, the “PlaySpaceInfos” structure is used to store information about the playspace, including the world alignment (more details on this below), floor, and ceiling height. Heuristics are used for determining floor, ceiling, and walls. For example, the largest and lowest horizontal surface with greater than 1-m2 surface area is considered the floor.
 
 > [!NOTE]
 > The camera path during the scanning process is also used in this process.
@@ -465,21 +471,23 @@ The scanning flow, driven by the “SpatialUnderstanding” behavior calls InitS
 
 ### Understanding Mesh
 
-The understanding dll internally stores the playspace as a grid of 8 cm sized voxel cubes. During the initial part of scanning, a primary component analysis is completed to determine the axes of the room. Internally, it stores its voxel space aligned to these axes. A mesh is generated approximately every second by extracting the isosurface from the voxel volume. 
+The understanding dll internally stores the playspace as a grid of 8 cm sized voxel cubes. During the initial part of scanning, a primary component analysis is completed to determine the axes of the room. Internally, it stores its voxel space aligned to these axes. A mesh is generated approximately every second by extracting the isosurface from the voxel volume.
 
 ![Generated mesh produced from the voxel volume](images/su-custommesh.jpg)<br>
 *Generated mesh produced from the voxel volume*
 
 ## Troubleshooting
+
 * Ensure you have set the [SpatialPerception](#setting-the-spatialperception-capability) capability
 * When tracking is lost, the next OnSurfaceChanged event will remove all meshes.
 
 ## Spatial Mapping in Mixed Reality Toolkit
-For more information on using Spatial Mapping with Mixed Reality Toolkit v2, see the <a href="/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">Spatial Awareness section</a> of the MRTK docs.
+
+For more information on using Spatial Mapping with Mixed Reality Toolkit v2, see the <a href="/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started" target="_blank">Spatial Awareness section</a> of the MRTK docs.
 
 ## Next Development Checkpoint
 
-If you're following the Unity development journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can continue to the next building block: 
+If you're following the Unity development journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can continue to the next building block:
 
 > [!div class="nextstepaction"]
 > [Text](text-in-unity.md)
@@ -492,6 +500,7 @@ Or jump to Mixed Reality platform capabilities and APIs:
 You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.
 
 ## See also
+
 * [Coordinate systems](../../design/coordinate-systems.md)
 * [Coordinate systems in Unity](coordinate-systems-in-unity.md)
 * <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a>

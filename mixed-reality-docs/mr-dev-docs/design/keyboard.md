@@ -20,7 +20,7 @@ Your mixed reality application can invoke the system keyboard at any time, which
 
 ## System keyboard in MRTK (Mixed Reality Toolkit) for Unity
 
-* [MRTK - System keyboard](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/system-keyboard.md)
+* [MRTK - System keyboard](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/system-keyboard)
 
 <br>
 
@@ -28,7 +28,7 @@ Your mixed reality application can invoke the system keyboard at any time, which
 
 ## Next Development Checkpoint
 
-If you're following the Unity development journey we've laid out, your next task is to deploy your application to a device or emulator. 
+If you're following the Unity development journey we've laid out, your next task is to deploy your application to a device or emulator.
 
 > [!div class="nextstepaction"]
 > [Deploy to HoloLens or Windows Mixed Reality immersive headsets](../develop/platform-capabilities-and-apis/using-visual-studio.md)
