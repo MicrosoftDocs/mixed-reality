@@ -2,7 +2,7 @@
 
 By default, World Locking Tools will restore Unity's coordinate system relative to the physical world across sessions. This means that to have a hologram appear the same place in the physical world after quitting and re-running the application, the hologram only needs to have the same Pose again.
 
-![World locking context component in Unity inspector](images/world-locking-tools-img-02.png)
+![World locking context component in Unity inspector](../../images/world-locking-tools-img-02.png)
 
 If the application needs finer control, **Auto-Save** and **Auto-Load** may be disabled in the inspector, and persistence managed from a script as described in the [persistence section of the documentation](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/Concepts/Advanced/Persistence.html).
 
@@ -50,11 +50,11 @@ ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>();
 XRAnchorStore anchorStore = await arAnchorManager.subsystem.LoadAnchorStoreAsync();
 ```
 
-To see a full example of persisting / unpersisting anchors, check out the Anchors -> Anchors Sample GameObject and AnchorsSample.cs script in the [Mixed Reality OpenXR Plugin Sample Scene](../openxr-getting-started.md#hololens-2-samples):
+To see a full example of persisting / unpersisting anchors, check out the Anchors -> Anchors Sample GameObject and AnchorsSample.cs script in the [Mixed Reality OpenXR Plugin Sample Scene](../../openxr-getting-started.md#hololens-2-samples):
 
-![Screenshot of the hierarchy panel open in the Unity Editor with the anchors sample highlighted](../images/openxr-features-img-04.png)
+![Screenshot of the hierarchy panel open in the Unity Editor with the anchors sample highlighted](../../images/openxr-features-img-04.png)
 
-![Screenshot of the inspector panel open in the Unity Editor with the anchors sample script highlighted](../images/openxr-features-img-05.png)
+![Screenshot of the inspector panel open in the Unity Editor with the anchors sample script highlighted](../../images/openxr-features-img-05.png)
 
 # [Unity 2019/2020 + Windows XR Plugin](#tab/winxr)
 
