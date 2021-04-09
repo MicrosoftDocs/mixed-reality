@@ -35,6 +35,7 @@ Like all journeys, your adventure into designing Mixed Reality applications star
 | [Types of Mixed Reality apps](types-of-mixed-reality-apps.md) | Decide where your app experience will live on the Mixed Reality spectrum |
 | [Designing Holograms app](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Learn the fundamentals of Mixed Reality UX Design by experiencing with behaviors, tips, and recommendations for creating amazing HoloLens apps (available for download from Microsoft Store in HoloLens 2) |
 | [MRTK Examples Hub](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4) | Experience common spatial interactions and UX building blocks for Mixed Reality (available for download from Microsoft Store in HoloLens 2) |
+| **Optional** [Download the Figma Toolkit](figma-toolkit.md) | The Figma Toolkit provides assets for you to use for sketching and laying out UI based on the components available in MRTK |
 
 ### 2. Core concepts
 
