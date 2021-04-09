@@ -24,8 +24,6 @@
     href: unity/unity-development-overview.md
   - name: Unity development for VR
     href: unity/unity-development-wmr-overview.md
-  - name: Introducing MRTK
-    href: unity/mrtk-getting-started.md
   - name: Tutorials
     items:
       - name: Overview
@@ -200,6 +198,8 @@
         href: unity/camera-in-unity.md
       - name: World-locking and spatial anchors 
         href: unity/spatial-anchors-in-unity.md
+      - name: Shared experiences
+        href: unity/shared-experiences-in-unity.md
       - name: Interactions
         items:
           - name: Motion controllers
@@ -220,8 +220,6 @@
         href: unity/spatial-sound-in-unity.md
   - name: Advanced features
     items:
-      - name: Shared experiences
-        href: unity/shared-experiences-in-unity.md
       - name: Photo Video camera in Unity
         href: unity/locatable-camera-in-unity.md
       - name: Holographic Remoting in desktop app

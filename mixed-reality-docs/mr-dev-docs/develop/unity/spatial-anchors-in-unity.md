@@ -20,47 +20,26 @@ For perspective on the problem that World Locking Tools solves, let's take a loo
 
 Unity's *spatial anchors* can maintain a hologram's position in the physical world when the user is mobile, but at the sacrifice of self-consistency within the virtual world. Different anchors are constantly moving in relation to one another, but are also moving through the global coordinate space. In this scenario, simple tasks like layout become difficult and physics simulation problematic.
 
-## World Locking Tools (Recommended)
+## Choosing your world locking approach
 
-World Locking Tools provides a stable coordinate system and adjustable camera that minimizes the visible inconsistencies between virtual and real world markers. Put another way, it world-locks the entire scene with a shared pool of anchors, rather than locking each group of objects with the group's own individual anchor.
+[!INCLUDE[](includes/world-locking/world-locking-approach.md)]
 
-### What comes with World Locking Tools
+## Setting up world locking 
 
-World Locking Tools keeps an internal supply of of spatial anchors it spreads throughout the virtual scene as the user moves around. The tools analyze the coordinates of the camera and those spatial anchors every frame. Instead of changing the coordinates of everything in the world to compensate for the changed coordinates of the user's head, the tools just fix the head's coordinates instead.
+[!INCLUDE[](includes/world-locking/world-locking-setup.md)]
 
-What this means for you as a developer: rather than having an anchor drag a hologram through Unity space to keep it fixed in physical space, the entire Unity world space is locked to physical space. If a hologram is motionless in Unity space, it will remain motionless relative to the physical world around it. More importantly, it will also remain fixed relative to the virtual features around it.
-
-Obviously, it's more complicated under the hood than that. For example, spatial anchors move independently and don't always agree with each other. The underlying FrozenWorld engine arbitrates those disagreements and comes up with the most perceptually correct camera correction in every frame.
-
-### Adding World Locking Tools to your project
-
-We recommend installing World Locking Tools using the new Mixed Reality Feature Tool at the link below. When your project is ready to go, use the [basic quickstart guide](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/UsingWLT/JustWorldLock.html) to get a world-locked scene up and running. For more advanced usage, see our [other quickstart and tutorial links](#see-also).
-
-> [!div class="nextstepaction"]
-> [Install World Locking Tools with the MR Feature Tool](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/WLTviaMRFeatureTool.html)
-
-### Persisting the coordinate system
-
-By default, World Locking Tools will restore Unity's coordinate system relative to the physical world across sessions. This means that to have a hologram appear the same place in the physical world after quitting and re-running the application, the hologram only needs to have the same Pose again.
-
-![World locking context component in Unity inspector](images/world-locking-tools-img-02.png)
-
-If the application needs finer control, **Auto-Save** and **Auto-Load** may be disabled in the inspector, and persistence managed from a script as described in the persistence section of the documentation.
-
-## Manual spatial anchor setup
+## Persistent world locking
 
 Spatial anchors save holograms in real-world space between application sessions. Once saved in the HoloLens' anchor store, they can be found and loaded in different sessions and are an ideal fallback when there's no internet connectivity.
 
 > [!IMPORTANT]
 > Local anchors are stored on device, while Azure Spatial Anchors are stored in the cloud. If you're looking to use Azure cloud services to store your anchors, we have a document that can walk you through integrating [Azure Spatial Anchors](../mixed-reality-cloud-services.md#azure-spatial-anchors). Note that you can have local and Azure anchors in the same project without conflict.
 
-### Understanding Anchors
+[!INCLUDE[](includes/world-locking/world-locking-persistence.md)]
 
-[!INCLUDE[](includes/unity-understanding-anchors.md)]
+## Sharing coordinate spaces 
 
-### Using the AnchorStore
-
-[!INCLUDE[](includes/unity-spatial-anchorstore.md)]
+If you want to share a world locked coordinate space, check out our comprehensive [shared experience documentation](shared-experiences-in-unity.md).
 
 ## Next Development Checkpoint
 

@@ -1,3 +1,11 @@
+# [World Locking Tools (Recommended)](#tab/wlt)
+
+By default, World Locking Tools will restore Unity's coordinate system relative to the physical world across sessions. This means that to have a hologram appear the same place in the physical world after quitting and re-running the application, the hologram only needs to have the same Pose again.
+
+![World locking context component in Unity inspector](images/world-locking-tools-img-02.png)
+
+If the application needs finer control, **Auto-Save** and **Auto-Load** may be disabled in the inspector, and persistence managed from a script as described in the persistence section of the documentation.
+
 # [Unity 2020 + OpenXR](#tab/openxr)
 
 An additional API called the **XRAnchorStore** enables anchors to be persisted between sessions. The XRAnchorStore is a representation of the saved anchors on a device. Anchors can be persisted from **ARAnchors** in the Unity scene, loaded from storage into new **ARAnchors**, or deleted from storage.

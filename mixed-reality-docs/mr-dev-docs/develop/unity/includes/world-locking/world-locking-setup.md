@@ -1,3 +1,10 @@
+# [World Locking Tools (Recommended)](#tab/wlt)
+
+We recommend installing World Locking Tools using the new Mixed Reality Feature Tool at the link below. When your project is ready to go, use the [basic quickstart guide](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/UsingWLT/JustWorldLock.html) to get a world-locked scene up and running. For more advanced usage, see our [other quickstart and tutorial links](#see-also).
+
+> [!div class="nextstepaction"]
+> [Install World Locking Tools with the MR Feature Tool](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/WLTviaMRFeatureTool.html)
+
 # [Unity 2020 + OpenXR](#tab/openxr)
 
 The Mixed Reality OpenXR Plugin supplies basic anchor functionality through an implementation of Unity’s ARFoundation **ARAnchorManager**. To learn the basics on ARAnchors in ARFoundation, visit the [ARFoundation Manual for AR Anchor Manager](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/anchor-manager.html). 
