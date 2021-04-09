@@ -18,10 +18,19 @@ keywords: Figma, Sketch, Adobe XD, design, designer, design file, UX design, Hol
 Figma Toolkit provides the assets that can be used for sketching and laying out UI. All UI controls are based on the components available in MRTK. 
 
 > [!div class="nextstepaction"]
-> [Download Figma Toolkit](https://www.figma.com/file/ltLag9SxjUIyLQFsp7NNE7/Mixed-Reality-Toolkit-for-Figma?node-id=116%3A4)
+> [View Figma Toolkit](https://www.figma.com/file/ltLag9SxjUIyLQFsp7NNE7/Mixed-Reality-Toolkit-for-Figma?node-id=116%3A4)
 
 ## How to use Figma Toolkit
-Import downloaded file (.fig) into Figma using the **Import** button on the upper right corner.
+Use **Duplicate to your drafts** menu to make a copy.
+<img src="images/UX_Figma_Use1.png" width="500px" alt="Import menu"><br>
+
+Click **Back to files** to see duplicated copy. You can use this copy for your own creation.
+
+<img src="images/UX_Figma_Use2.png" width="400px" alt="Import menu"><br>
+
+<img src="images/UX_Figma_Use3.png" width="300px" alt="Import menu"><br>
+
+To download and work locally, use **File > save local copy** menu. Import downloaded file (.fig) into Figma using the **Import** button on the upper right corner.
 
 <img src="images/UX_FigmaToolkit_Import.png" width="200px" alt="Import menu"><br>
 
