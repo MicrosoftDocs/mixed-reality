@@ -29,7 +29,7 @@ The easiest way to develop in Unity is with the Mixed Reality Toolkit. MRTK will
 |  Checkpoint  |  Outcome  |
 | --- | --- |
 | [Introducing the Mixed Reality Toolkit](mrtk-getting-started.md) | Begin your journey by getting acquainted with the Mixed Reality Toolkit and what it has to offer |
-| [Understanding World Locking Tools](world-locking-tools.md) | Solve stabilization issues, camera adjustment, and integrate a stable coordinate system solution |
+| [Understanding World Locking Tools](spatial-anchors-in-unity.md) | Solve stabilization issues, camera adjustment, and integrate a stable coordinate system solution |
 | [Download the Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md) | A new developer tool for discovering, updating, and adding Mixed Reality feature packages to your Unity projects |
 | [Setup your developer environment](../install-the-tools.md) | Download and install the latest Unity package and setup your project for mixed reality |
 | [Complete the HoloLens 2 tutorial series](tutorials/mr-learning-base-01.md) | Dive into beginner level MRTK tutorials for HoloLens 2 hardware |
