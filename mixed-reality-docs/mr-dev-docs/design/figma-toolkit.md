@@ -13,8 +13,6 @@ keywords: Figma, Sketch, Adobe XD, design, designer, design file, UX design, Hol
 <iframe src="https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Figma-Toolkit-MRTK/player" width="960" height="540" allowFullScreen frameBorder="0" title="Figma Toolkit MRTK - Microsoft Channel 9 Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 
-<iframe width="940" height="530" src="https://www.youtube.com/embed/eHMkOpNUtR8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 Figma Toolkit provides the assets that can be used for sketching and laying out UI. All UI controls are based on the components available in MRTK. 
 
 > [!div class="nextstepaction"]
@@ -22,13 +20,13 @@ Figma Toolkit provides the assets that can be used for sketching and laying out 
 
 ## How to use Figma Toolkit
 Use **Duplicate to your drafts** menu to make a copy.
-<img src="images/UX_Figma_Use1.png" width="500px" alt="Import menu"><br>
+<img src="images/UX_Figma_Use1.png" width="500px" alt="Menu duplicate 1"><br>
 
 Click **Back to files** to see duplicated copy. You can use this copy for your own creation.
 
-<img src="images/UX_Figma_Use2.png" width="400px" alt="Import menu"><br>
+<img src="images/UX_Figma_Use2.png" width="400px" alt="Menu duplicate 2"><br>
 
-<img src="images/UX_Figma_Use3.png" width="300px" alt="Import menu"><br>
+<img src="images/UX_Figma_Use3.png" width="300px" alt="Menu duplicate 3"><br>
 
 To download and work locally, use **File > save local copy** menu. Import downloaded file (.fig) into Figma using the **Import** button on the upper right corner.
 
