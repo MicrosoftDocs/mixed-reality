@@ -10,8 +10,7 @@ keywords: Figma, Sketch, Adobe XD, design, designer, design file, UX design, Hol
 
 # Figma Toolkit
 
-<iframe src="https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Figma-Toolkit-MRTK/player" width="960" height="540" allowFullScreen frameBorder="0" title="Figma Toolkit MRTK - Microsoft Channel 9 Video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Figma-Toolkit-MRTK/player]
 
 Figma Toolkit provides the assets that can be used for sketching and laying out UI. All UI controls are based on the components available in MRTK. 
 
