@@ -431,7 +431,7 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 
 ## Motion Controllers in MRTK
 
-You can access [gesture and motion controller](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/controllers.md) from the input Manager.
+You can access [gesture and motion controller](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/controllers) from the input Manager.
 
 ## Follow along with tutorials
 

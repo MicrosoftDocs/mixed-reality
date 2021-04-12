@@ -26,7 +26,7 @@ In the Build Settings window, select **Universal Windows Platform** and:
 1.	Set **Target device** to **HoloLens**
 2.	Set **Architecture** to **ARM 64**
 3.	Set **Build Type** to **D3D**
-4.	Set **Minimum Platform Version** to **10.2.18362**
+4.	Set **Minimum Platform Version** to **10.0.18362**
 5.	Set **UWP SDK** to **Latest installed**
 6.	Set **Build configuration** to **Release** because there are known performance issues with Debug
 7.	Click the Switch Platform button

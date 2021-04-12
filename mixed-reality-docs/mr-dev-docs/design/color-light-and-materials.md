@@ -83,7 +83,7 @@ Light and color can help make your holograms appear more naturally in a user's e
     :::column:::
 Materials are crucial elements for making realistic holograms. By providing proper visual characteristics, you can make compelling holographic objects that can blend well with the physical environment. Materials are also important for providing visual feedback for the various types of user input interactions.  
 
-[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) provides an MRTK Standard Shader with various visual effect options that can be used for visual feedback. For example, you can use 'Proximity Light' property to provide a lighting effect when the user's finger is approaching the object's surface. Learn more about [MRTK Standard Shader](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/rendering/mrtk-standard-shader.md)
+[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) provides an MRTK Standard Shader with various visual effect options that can be used for visual feedback. For example, you can use 'Proximity Light' property to provide a lighting effect when the user's finger is approaching the object's surface. Learn more about [MRTK Standard Shader](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
     :::column-end:::
         :::column:::
     *Video loop: Example of visual feedback based on proximity to a bounding box*

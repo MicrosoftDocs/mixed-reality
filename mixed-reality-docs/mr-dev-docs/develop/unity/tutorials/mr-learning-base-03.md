@@ -15,11 +15,11 @@ ms.localizationpriority: high
 
 In this tutorial, you will learn how to customize and configure the MRTK profiles.
 
-The <a href="/windows/mixed-reality/mrtk-unity/features/profiles/profiles.md" target="_blank">MRTK profiles</a> is a tree of nested profiles that make up the configuration information for how the MRTK systems and features should be initialized. The top-level profile, the Configuration Profile, contains nested profiles for each of the primary core systems. Each nested profile is designed to configure the behavior of their corresponding system.
+The <a href="/windows/mixed-reality/mrtk-unity/features/profiles/profiles" target="_blank">MRTK profiles</a> is a tree of nested profiles that make up the configuration information for how the MRTK systems and features should be initialized. The top-level profile, the Configuration Profile, contains nested profiles for each of the primary core systems. Each nested profile is designed to configure the behavior of their corresponding system.
 
 This particular example will show you how to hide the spatial awareness mesh by changing the settings of the Spatial Mesh Observer. However, you may follow these same principles to customize any setting or value in the MRTK profiles.
 
-As you experienced when you deployed your project to your HoloLens 2 during the [previous tutorial](mr-learning-base-02.md#congratulations), the <a href="/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">Spatial Awareness</a> mesh is a collection of meshes representing the geometry of the environment. It's a helpful visualization to see initially but it's typically turned off to avoid the visual distraction and the additional performance hit of having it on.
+As you experienced when you deployed your project to your HoloLens 2 during the [previous tutorial](mr-learning-base-02.md#congratulations), the <a href="/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started" target="_blank">Spatial Awareness</a> mesh is a collection of meshes representing the geometry of the environment. It's a helpful visualization to see initially but it's typically turned off to avoid the visual distraction and the additional performance hit of having it on.
 
 ## Objectives
 
