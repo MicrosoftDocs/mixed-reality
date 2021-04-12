@@ -29,7 +29,10 @@ There are a small set of Unity settings you'll need to manually change for Windo
 |  Checkpoint  |  Outcome  |
 | --- | --- |
 | [Install the latest tools](../install-the-tools.md) | Download and install the latest Unity package and setup your project for mixed reality |
-| [Configuring your project for WMR](configure-unity-project.md) | Learn how to build applications that render digital content on holographic and VR display devices |
+| [Configuring your project for WMR](windows-xr-plugin.md) | Learn how to build applications that render digital content on holographic and VR display devices |
+
+> [!IMPORTANT]
+> Check out our Unity project [configuration guide](choosing-unity-version.md) for more information on setting up your projects.
 
 ### 2. Core building blocks
 
