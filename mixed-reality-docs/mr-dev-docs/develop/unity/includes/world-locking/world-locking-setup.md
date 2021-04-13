@@ -5,13 +5,9 @@ We recommend installing World Locking Tools using the new Mixed Reality Feature 
 > [!div class="nextstepaction"]
 > [Install World Locking Tools with the MR Feature Tool](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/WLTviaMRFeatureTool.html)
 
-# [Unity 2020 + OpenXR](#tab/openxr)
+# [Manual](#tab/manual)
 
 The Mixed Reality OpenXR Plugin supplies basic anchor functionality through an implementation of Unity’s ARFoundation **ARAnchorManager**. To learn the basics on ARAnchors in ARFoundation, visit the [ARFoundation Manual for AR Anchor Manager](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/anchor-manager.html). 
-
-# [Unity 2019/2020 + Windows XR Plugin](#tab/winxr)
-
-The Mixed Reality OpenXR Plugin supplies basic anchor functionality through an implementation of Unity’s ARFoundation **ARAnchorManager**. To learn the basics on ARAnchors in ARFoundation, visit the [ARFoundation Manual for AR Anchor Manager](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/anchor-manager.html).
 
 # [Legacy WSA](#tab/wsa)
 
