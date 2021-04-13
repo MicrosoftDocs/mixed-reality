@@ -61,7 +61,6 @@ using UnityEngine.XR.WindowsMR.XRAnchorStore
 To load the XRAnchorStore with **Unity 2020 and OpenXR**, use extension method on the XRAnchorSubsystem, the subsystem of an ARAnchorManager:
 
 ``` cs
-// Unity 2020 and OpenXR
 public static Task<XRAnchorStore> LoadAnchorStoreAsync(this XRAnchorSubsystem anchorSubsystem)
 ```
 
