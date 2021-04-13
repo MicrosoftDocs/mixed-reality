@@ -16,9 +16,11 @@ Getting your holograms to stay in place, move with you, or in some cases positio
 
 ## Explaining coordinate space and anchors
 
-For perspective on the problem that World Locking Tools solves, let's take a look at how Unity implements its own global coordinate space and spatial anchors. Unity's **coordinate space** provides a stable frame of reference, where holographic objects are fixed in relation to one another. While objects in this space behave consistently in relation to each other, consistency with the physical world isn't guaranteed or provided. This inconsistency with the real-world becomes a problem when your users are moving around during the mixed reality experience.
+For perspective on the problem that World Locking Tools solves, let's take a look at how Unity implements its own global coordinate space and spatial anchors: 
 
-Unity's **spatial anchors** can maintain a hologram's position in the physical world when the user is mobile, but at the sacrifice of self-consistency within the virtual world. Different anchors are constantly moving in relation to one another, but are also moving through the global coordinate space. In this scenario, simple tasks like layout become difficult and physics simulation problematic.
+**Coordinate space** in Unity provides a stable frame of reference, where holographic objects are fixed in relation to one another. While objects in this space behave in relation to each other, consistency with the physical world isn't guaranteed or provided. This inconsistency with the real-world becomes a problem when your users are moving around during the mixed reality experience.
+
+**Spatial anchors** in Unity can maintain a hologram's position in the physical world when the user is mobile, but at the sacrifice of self-consistency within the virtual world. Different anchors are constantly moving in relation to one another, but are also moving through the global coordinate space. In this scenario, simple tasks like layout become difficult and physics simulation problematic.
 
 **World Locking Tools** keeps an internal supply of of spatial anchors it spreads throughout the virtual scene as the user moves around. The tools analyze the coordinates of the camera and those spatial anchors every frame. Instead of changing the coordinates of everything in the world to compensate for the changed coordinates of the user's head, the tools just fix the head's coordinates instead.
 
