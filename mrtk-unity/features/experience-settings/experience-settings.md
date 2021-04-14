@@ -16,7 +16,7 @@ to behave appropriately for the target scale.
 - Mixed Reality Scene Content
 - Boundary System
 
-  ![ExperienceSettings](../../images/experience-settings/ExperienceSettings.png)
+  ![Experience Settings in the MRTK Configuration Profile](../images/experience-settings/ExperienceSettings.png)
 
 ## Target Experience Scale
 
@@ -30,5 +30,5 @@ The **Target Experience Scale** specifies the environment for which the experien
 
 ## Floor Height
 
-This parameter specifies the height above the floor that the user's camera is expected to be. Setting this value will automatically position [Mixed Reality Scene Content](../scene-content.md) to the appropriate height, given that it's 
+This parameter specifies the height above the floor that the user's camera is expected to be. Setting this value will automatically position [Mixed Reality Scene Content](scene-content.md) to the appropriate height, given that it's 
 **Alignment Type** is set to **Align with Experience Scale**
