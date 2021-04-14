@@ -18,16 +18,16 @@ Getting your holograms to stay in place, move with you, or in some cases positio
 
 For perspective on the problem that World Locking Tools solves, let's take a look at how Unity implements its own global coordinate space and spatial anchors: 
 
-**Coordinate space** in Unity provides a stable frame of reference, where holographic objects are fixed in relation to one another. While objects in this space behave in relation to each other, consistency with the physical world isn't guaranteed or provided. This inconsistency with the real-world becomes a problem when your users are moving around during the mixed reality experience.
+**Coordinate space** in Unity provides a stable frame of reference, where holographic objects are fixed in relation to one another. While objects in this space behave consistently relative to each other, consistency with the physical world isn't guaranteed or provided. 
 
-**Spatial anchors** in Unity can maintain a hologram's position in the physical world when the user is mobile, but at the sacrifice of self-consistency within the virtual world. Different anchors are constantly moving in relation to one another, but are also moving through the global coordinate space. In this scenario, simple tasks like layout become difficult and physics simulation problematic.
+**Spatial anchors** in Unity can maintain a hologram's position in the physical world when the user is mobile, but at the sacrifice of self-consistency within the virtual world. Different anchors are constantly moving in relation to one another, and are also moving through the global coordinate space. In this scenario, simple tasks like layout become difficult and physics simulation problematic.
 
-**World Locking Tools** keeps an internal supply of of spatial anchors it spreads throughout the virtual scene as the user moves around. The tools analyze the coordinates of the camera and those spatial anchors every frame. Instead of changing the coordinates of everything in the world to compensate for the changed coordinates of the user's head, the tools just fix the head's coordinates instead.
+**World Locking Tools** keeps an internal supply of of spatial anchors it spreads throughout the virtual scene as the user moves around. The tools analyze the coordinates of the camera and those spatial anchors every frame. Instead of changing the coordinates of everything in the world to compensate for the corrections in the coordinates of the user's head, the tools just fix the head's coordinates instead.
 
 ## Choosing your world locking approach
 
 * **Our recommendation** is to use World Locking Tools for all your hologram positioning needs. 
-    * World Locking Tools provides a stable coordinate system and adjustable camera that minimizes the visible inconsistencies between virtual and real world markers. Put another way, it world-locks the entire scene with a shared pool of anchors, rather than locking each group of objects with the group's own individual anchor.
+    * World Locking Tools provides a stable coordinate system that minimizes the visible inconsistencies between virtual and real world markers. Put another way, it world-locks the entire scene with a shared pool of anchors, rather than locking each group of objects with the group's own individual anchor.
 * **For manual control**, you have a choice between ARAnchorManager and WorldAnchor:
     * Use the **ARAnchorManager** for Unity 2019/2020 projects using either OpenXR or the Windows XR Plugin 
     * Use **WorldAnchor** for older Unity versions or Legacy WSA projects
