@@ -5,7 +5,7 @@ We recommend installing World Locking Tools using the new Mixed Reality Feature 
 ![Mixed Reality Feature Tool feature selection window with World Locking Tools selected](../../images/spatial-anchors-setup-img-01.png)
 
 > [!div class="nextstepaction"]
-> [Install World Locking Tools with the MR Feature Tool](welcome-to-mr-feature-tool.md)
+> [Install World Locking Tools with the MR Feature Tool](../../welcome-to-mr-feature-tool.md)
 
 ### Automated setup
 
