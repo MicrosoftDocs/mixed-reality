@@ -50,6 +50,8 @@ Spatial anchors save holograms in real-world space between application sessions.
 
 If you want to share a world locked coordinate space, check out our comprehensive [shared experience documentation](shared-experiences-in-unity.md).
 
+Note that Azure Spatial Anchors is not yet supported directly within World Locking Tools, and so shared experiences will require you to manually create spatial anchors.
+
 ## Next Development Checkpoint
 
 If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality core building blocks. From here, you can continue to the next building block:
