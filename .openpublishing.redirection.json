@@ -879,7 +879,12 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/coordinate-systems-in-unity.md",
-			"redirect_url": "/windows/mixed-reality/develop/unity/coordinate-systems-in-unity",
+			"redirect_url": "/windows/mixed-reality/develop/unity/camera-in-unity",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "/windows/mixed-reality/develop/unity/coordinate-systems-in-unity",
+			"redirect_url": "/windows/mixed-reality/develop/unity/camera-in-unity",
 			"redirect_document_id": true
 		},
 		{
