@@ -1,9 +1,24 @@
 # [World Locking Tools (Recommended)](#tab/wlt)
 
-We recommend installing World Locking Tools using the new Mixed Reality Feature Tool at the link below. When your project is ready to go, use the [basic quickstart guide](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/UsingWLT/JustWorldLock.html) to get a world-locked scene up and running. For more advanced usage, see our [other quickstart and tutorial links](#see-also).
+We recommend installing World Locking Tools using the new Mixed Reality Feature Tool. Once you've downloaded the Mixed Reality Feature Tool from the link below, select the latest version of **WLT Core** from the **World Locking Tools** section:
+
+![Mixed Reality Feature Tool feature selection window with World Locking Tools selected](../../images/spatial-anchors-setup-img-01.png)
 
 > [!div class="nextstepaction"]
-> [Install World Locking Tools with the MR Feature Tool](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/WLTviaMRFeatureTool.html)
+> [Install World Locking Tools with the MR Feature Tool](welcome-to-mr-feature-tool.md)
+
+### Automated setup
+
+When your project is ready to go, run the configure scene utility from **Mixed Reality Toolkit > Utilities > World Locking Tools**:
+
+![Unity editor with Mixed Reality Toolkit menu selected](../../images/world-locking-configuration-img-01.jpeg)
+
+> [!IMPORTANT]
+> The Configure scene utility can be rerun at any time. For example, it should be rerun if the AR target has been changed from Legacy to XR SDK. If the scene is already properly configured, running the utility has no effect.
+
+### Visualizers
+
+During early development, adding visualizers can be helpful to ensure WLT is setup and working properly. They can be removed for production performance, or if for any reason are no longer needed, using the Remove visualizers utility. More details on the visualizers can be found in the [Tools documentation](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/Tools.html#visualizers).
 
 # [Manual](#tab/manual)
 
