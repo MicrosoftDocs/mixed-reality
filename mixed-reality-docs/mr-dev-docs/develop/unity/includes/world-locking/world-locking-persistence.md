@@ -44,10 +44,6 @@ using UnityEngine.XR.WindowsMR.XRAnchorStore
 
     // Attempts to persist an existing ARAnchor with the given TrackableId to the local store. Returns true if
     // the storage is successful, false otherwise.
-    public bool TryPersistAnchor(string name, TrackableId trackableId);
-
-    // Attempts to persist an existing ARAnchor with the given TrackableId to the local store. Returns true if
-    // the storage is successful, false otherwise.
     public bool TryPersistAnchor(TrackableId id, string name);
 
     // Removes a single persisted anchor from the anchor store. This will not affect any ARAnchors in the Unity
