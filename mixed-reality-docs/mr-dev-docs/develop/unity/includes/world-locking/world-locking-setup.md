@@ -20,11 +20,11 @@ When your project is ready to go, run the configure scene utility from **Mixed R
 
 During early development, adding visualizers can be helpful to ensure WLT is setup and working properly. They can be removed for production performance, or if for any reason are no longer needed, using the Remove visualizers utility. More details on the visualizers can be found in the [Tools documentation](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/Tools.html#visualizers).
 
-# [Manual](#tab/manual)
+# [ARAnchorManager](#tab/anchorstore)
 
 The Mixed Reality OpenXR Plugin supplies basic anchor functionality through an implementation of Unity’s ARFoundation **ARAnchorManager**. To learn the basics on ARAnchors in ARFoundation, visit the [ARFoundation Manual for AR Anchor Manager](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/anchor-manager.html). 
 
-# [Legacy WSA](#tab/wsa)
+# [WorldAnchor](#tab/worldanchor)
 
 ## Building a world-scale experience
 

@@ -15,6 +15,7 @@ keywords: Unity, spatial anchors, anchor store, HoloLens, mixed reality headset,
 Getting your holograms to stay in place, move with you, or in some cases position themselves relative to other holograms is a big part of creating Mixed Reality applications. This article will take you through our recommended solution using World Locking Tools, but we'll also cover manually setting up spatial anchors in your Unity projects. Before we jump into any code, it's important to understand how Unity handles coordinate space and anchors in its own engine.
 
 ## World-scale coordinate systems
+
 Today, when writing games, data visualization apps, or virtual reality apps, the typical approach is to establish one absolute **world coordinate system** that all other coordinates can reliably map back to. In that environment, you can always find a stable transform that defines a relationship between any two objects in that world. If you didn't move those objects, their relative transforms would always remain the same. This kind of global coordinate system is easy to get right when rendering a purely virtual world where you know all of the geometry in advance. Room-scale VR apps today typically establish this kind of absolute room-scale coordinate system with its origin on the floor.
 
 In contrast, an untethered mixed reality device such as HoloLens has a dynamic sensor-driven understanding of the world, continuously adjusting its knowledge over time of the user's surroundings as they walk many meters across an entire floor of a building. In a world-scale experience, if you placed all your holograms in a naive rigid coordinate system, those holograms would end up drifting over time, either based on the world or relative to each other.
@@ -27,11 +28,10 @@ You can manually place **spatial anchors** in Unity to maintain a hologram's pos
 
 ## Choosing your world locking approach
 
-* **Our recommendation** is to use World Locking Tools for all your hologram positioning needs. 
+* **Our recommendation** is to use **World Locking Tools** for all your hologram positioning needs. 
     * World Locking Tools provides a stable coordinate system that minimizes the visible inconsistencies between virtual and real world markers. Put another way, it world-locks the entire scene with a shared pool of anchors, rather than locking each group of objects with the group's own individual anchor.
-* **For manual control**, you have a choice between ARAnchorManager and WorldAnchor:
-    * Use the **ARAnchorManager** for Unity 2019/2020 projects using either OpenXR or the Windows XR Plugin 
-    * Use **WorldAnchor** for older Unity versions or Legacy WSA projects
+* **For Unity 2019/2020 using OpenXR or the Windows XR Plugin**, you need to use **ARAnchorManager**
+* **For older Unity versions or WSA** projects, you need to use **WorldAnchor**
 
 ## Setting up world locking 
 

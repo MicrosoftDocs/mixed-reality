@@ -6,7 +6,7 @@ By default, World Locking Tools will restore Unity's coordinate system relative 
 
 If the application needs finer control, **Auto-Save** and **Auto-Load** may be disabled in the inspector, and persistence managed from a script as described in the [persistence section of the documentation](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/Concepts/Advanced/Persistence.html).
 
-# [Manual](#tab/manual)
+# [ARAnchorManager](#tab/anchorstore)
 
 An additional API called the **XRAnchorStore** enables anchors to be persisted between sessions. The XRAnchorStore is a representation of the saved anchors on a device. Anchors can be persisted from **ARAnchors** in the Unity scene, loaded from storage into new **ARAnchors**, or deleted from storage.
 
@@ -97,7 +97,7 @@ To see a full example of persisting / unpersisting anchors, check out the Anchor
 
 ![Screenshot of the inspector panel open in the Unity Editor with the anchors sample script highlighted](../../images/openxr-features-img-05.png)
 
-# [Legacy WSA](#tab/wsa)
+# [WorldAnchor](#tab/worldanchor)
 
 The **WorldAnchorStore** is the key to creating holographic experiences where holograms stay in specific real world positions across instances of the application. Users can then pin individual holograms wherever they want, and find them later in the same spot over many uses of your app.
 
