@@ -883,7 +883,7 @@
 			"redirect_document_id": false
 		},
 		{
-			"source_path": "/windows/mixed-reality/develop/unity/coordinate-systems-in-unity",
+			"source_path": "mixed-reality/develop/unity/coordinate-systems-in-unity",
 			"redirect_url": "/windows/mixed-reality/develop/unity/camera-in-unity",
 			"redirect_document_id": true
 		},
