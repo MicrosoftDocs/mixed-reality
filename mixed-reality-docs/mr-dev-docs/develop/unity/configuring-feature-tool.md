@@ -19,7 +19,7 @@ When using the Mixed Reality Feature Tool, you have access to three different se
 
 ## Download settings
 
-![Settings](images/FeatureToolSettings-Download.png)
+![Download settings](images/FeatureToolSettings-Download.png)
 
 ### Overwrite existing package files
 
@@ -37,7 +37,7 @@ Change this setting to update the location where feature packages are downloaded
 
 ## Feature settings
 
-![Settings](images/FeatureToolSettings-Feature.png)
+![Feature settings](images/FeatureToolSettings-Feature.png)
 
 ### Show preview releases
 
@@ -58,7 +58,7 @@ Enable this setting to acquire features from registered early access programs re
 
 ## Import settings
 
-![Settings](images/FeatureToolSettings-Import.png)
+![Import settings](images/FeatureToolSettings-Import.png)
 
 ### Replace existing package files
 
@@ -77,7 +77,7 @@ Change this setting to update project folder path where feature packages are cop
 
 ## Early Access settings
 
-![Settings](images/FeatureToolSettings-EarlyAccess.png)
+![Early access settings](images/FeatureToolSettings-EarlyAccess.png)
  
 ### Ask for confirmation before removing an early access program
 
@@ -89,7 +89,7 @@ The list of registered early access programs. Use the `Add`, `Edit` and `Remove`
 
 ## Diagnostic settings
 
-![Settings](images/FeatureToolSettings-Diagnostics.png)
+![Diagnostic settings](images/FeatureToolSettings-Diagnostics.png)
 
 ### Log file
 
