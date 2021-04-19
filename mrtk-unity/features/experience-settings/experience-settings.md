@@ -10,7 +10,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Experience Settings
 
-One of the challenges of creating UI for Mixed Reality is aligning across different experiences. With MRTK, you can set the `Target Experience Scale` and the `Floor Height` for your scene, will configue the following 
+One of the challenges of creating UI for Mixed Reality is aligning across different experiences. With MRTK, you can set the `Target Experience Scale` and the `Content Offset` for your scene, will configue the following 
 to behave appropriately for the target scale.
 
 - Mixed Reality Scene Content
@@ -28,7 +28,6 @@ The **Target Experience Scale** specifies the environment for which the experien
 * *Room* - An experience designed to support movement throughout a room. The coordinate system origin is at floor level.
 * *World* - An experience designed to utilize and move through the physical world. The coordinate system origin is at head level.
 
-## Floor Height
+## Content Offset
 
-This parameter specifies the height above the floor that the user's camera is expected to be. Setting this value will automatically position [Mixed Reality Scene Content](scene-content.md) to the appropriate height, given that it's 
-**Alignment Type** is set to **Align with Experience Scale**
+This parameter specifies the height above the floor to offset [Mixed Reality Scene Content](scene-content.md) when **Alignment Type** is set to **Align with Experience Scale**
