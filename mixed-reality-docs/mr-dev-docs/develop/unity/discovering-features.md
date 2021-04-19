@@ -3,7 +3,7 @@ title: Discovering and acquiring features
 description: Discover and download Mixed Reality features.
 author: davidkline-ms
 ms.author: v-hferrone
-ms.date: 03/04/2021
+ms.date: 04/19/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit, mixed reality headset, windows mixed reality headset, virtual reality headset, installation, Windows, HoloLens, emulator, unreal, openxr
@@ -32,6 +32,10 @@ The category header in the above screenshot contains the following properties, f
 - Category name (ex: Mixed Reality Toolkit)
 - Count of selected features
 - Count of available features
+- Section buttons
+
+> [!NOTE]
+> The selection buttons are context sensitive. Based on the state of feature selection within the category, one or more of the `Select All` and `Select None` buttons will be displayed.
 
 ### Feature
 
@@ -44,6 +48,9 @@ Features are listed in their appropriate category. From left to right in the abo
 - List of available versions
 - Link to the [feature package details](viewing-package-details.md)
 
+> [!NOTE]
+> If a feature is provided by an Early Access (also called private preview) program, an indicator icon ![early access](images/EarlyAccess.png) will be displayed.
+
 ## Refresh the feature catalog
 
 To check for new and updated features, click the refresh ![refresh button](images/RefreshButton.png) button. This will connect to the catalog site and retrieve the latest information. Once the catalog has been read, the date and time of the last update will be displayed.
@@ -53,6 +60,8 @@ To check for new and updated features, click the refresh ![refresh button](image
 Features are selected by expanding a category, selecting a version, and clicking the check box:
 
 ![Selected features](images/SelectedFeatures.png)
+
+To select every package within a category, a `Select All` button is provided. `Select None` will deselect all selected packages. 
 
 Each category with one or more selected features will update to display the count.
 
