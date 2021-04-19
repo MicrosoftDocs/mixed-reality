@@ -964,7 +964,12 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/mrtk-getting-started.md",
-			"redirect_url": "/windows/mixed-reality/develop/unity/mrtk-getting-started",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mrtk-unity",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/develop/unity/mrtk-getting-started.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mrtk-unity",
 			"redirect_document_id": true
 		},
 		{
