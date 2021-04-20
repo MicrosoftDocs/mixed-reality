@@ -22,7 +22,7 @@ When you run into trouble with your immersive hardware, it's important to diagno
 For issues with installation, running Windows Mixed Reality, setup errors, minimum PC requirements, or admin permissions, check out these two FAQs:
 
 - [Installation errors](installation_errors.md)
-- [Setup](wmr-setup-faq.md)
+- [Setup](wmr-setup-faq.yml)
 
 ### Hardware issues
 
