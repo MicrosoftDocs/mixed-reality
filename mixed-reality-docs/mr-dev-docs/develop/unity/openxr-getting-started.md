@@ -15,7 +15,7 @@ Starting with Unity version 2020.2, Microsoft’s Mixed Reality OpenXR Plugin pa
 ## Prerequisites
 
 * Unity 2020.3 LTS or later
-* Unity OpenXR plugin 1.0.3 or later
+* Unity OpenXR plugin 1.1.1 or later
 * Visual Studio 2019 or later
 * Install **UWP** platform support in Unity for HoloLens 2 apps
 

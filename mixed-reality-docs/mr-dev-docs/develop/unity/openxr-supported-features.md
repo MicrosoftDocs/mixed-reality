@@ -34,6 +34,8 @@ The following features are currently supported:
 * (Added in 0.2.0) Supports both **hand joints and hand mesh tracking**
 * (Added in 0.2.0) Supports **ARPlaneSubsystems** for plane detection and place hologram using **ARRaycastManager**.
 * (0.9.0) Supports **XRMeshSubsystem** and **ARMeshManager** for spatial mapping.
+* (Added in 0.9.0) Supports the Azure Spatial Anchors SDK for Windows plugin. For more information, see the [Mixed Reality + OpenXR Azure Spatial Anchors sample project on GitHub](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples/tree/main/AzureSpatialAnchorsSample).
+* (Added in 0.9.1) Supports desktop app Holographic Remoting from a built and deployed Windows UWP app.
 
 ## Holographic Remoting setup
 
@@ -109,9 +111,8 @@ For reference, we have a [QR tracking sample project on GitHub](https://github.c
 
 ## What's coming soon
 
-The following issues and missing features are known with Mixed Reality OpenXR plugin **version 0.9.0**. We're working on these and will release fixes and new features in upcoming releases.
+The following issues and missing features are known with Mixed Reality OpenXR plugin **version 0.9.2**. We're working on these and will release fixes and new features in upcoming releases.
 
-* **Azure Spatial Anchors** support is coming in a future release.
 * **ARM64** is the only supported platform for HoloLens 2 apps. The **ARM** platform is coming in a future release.
 
 ## Troubleshooting
