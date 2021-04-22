@@ -1,6 +1,6 @@
 ---
 title: Choosing an XR configuration
-description: Stay up to date on the latest Unity development pipeline recommendations for HoloLens application development.
+description: Stay up to date on the latest Unity XR configuration recommendations for HoloLens application development.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 04/22/2021
