@@ -170,14 +170,16 @@
     items:
     - name: Choosing a Unity version and XR plugin
       href: unity/choosing-unity-version.md
-    - name: Using the Legacy built-in XR support
-      href: unity/legacy-xr-support.md
-    - name: Using the Windows XR plugin
-      href: unity/windows-xr-plugin.md
-    - name: Using the OpenXR Plugin
-      href: unity/openxr-getting-started.md
-    - name: OpenXR plugin supported features
-      href: unity/openxr-supported-features.md
+    - name: Choosing your development pipeline 
+      href: unity/choosing-developer-pipeline.md
+    - name: Choosing an XR configuration 
+      href: unity/xr-project-setup.md
+    - name: OpenXR 
+      items: 
+      - name: Using the OpenXR Plugin
+        href: unity/openxr-getting-started.md
+      - name: OpenXR plugin supported features
+        href: unity/openxr-supported-features.md
     - name: Mixed Reality Feature Tool
       items:
         - name: Welcome to the MR Feature Tool
