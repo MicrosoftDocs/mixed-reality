@@ -11,7 +11,7 @@ keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Trouble
 
 ## What's new!
 
-In honor of the newly released HP Reverb G2 headset and controllers, we've compiled a [dedicated FAQ page](reverbG2-faq.md) for all things G2. This article covers everything from connection problems and image clarity to motion controllers issues and running Mixed Reality.
+In honor of the newly released HP Reverb G2 headset and controllers, we've compiled a [dedicated FAQ page](reverbG2-faq.yml) for all things G2. This article covers everything from connection problems and image clarity to motion controllers issues and running Mixed Reality.
 
 ## Troubleshooting topics
 
@@ -22,7 +22,7 @@ When you run into trouble with your immersive hardware, it's important to diagno
 For issues with installation, running Windows Mixed Reality, setup errors, minimum PC requirements, or admin permissions, check out these two FAQs:
 
 - [Installation errors](installation_errors.md)
-- [Setup](wmr-setup-faq.md)
+- [Setup](wmr-setup-faq.yml)
 
 ### Hardware issues
 

@@ -42,7 +42,7 @@ Once you have your device, you'll need to correctly set up and configure it for 
 |  Checkpoint  |  Outcome  |
 | --- | --- |
 | [Set up Windows Mixed Reality](set-up-windows-mixed-reality.md) | Get comfortable with your controllers, room boundaries, speech input, and Microsoft Edge on your new VR device |
-| [Windows Mixed Reality setup FAQs](wmr-setup-faq.md) | Get answers and troubleshooting help with known issues when setting up Windows Mixed Reality |
+| [Windows Mixed Reality setup FAQs](wmr-setup-faq.yml) | Get answers and troubleshooting help with known issues when setting up Windows Mixed Reality |
 | [Health, safety, and comfort guidelines](wmr-health-safety-comfort.md) | Recommendations to stay safe while using Windows Mixed Reality before using your headset  |
 
 ### 3. Using Windows Mixed Reality
@@ -63,7 +63,7 @@ There are different features and services available through Windows Mixed Realit
 | [Using speech input](using-speech-in-wmr.md) | Familiarize yourself with different voice commands that can interact with 3D objects, the App bar, Start menu, and Cortana |
 
 > [!NOTE]
-> If you're having trouble with any of the above features, check out the **[Using Windows Mixed Reality FAQ](using-wmr-faq.md)**.
+> If you're having trouble with any of the above features, check out the **[Using Windows Mixed Reality FAQ](using-wmr-faq.yml)**.
 
 ## 4. Discover apps and content
 
