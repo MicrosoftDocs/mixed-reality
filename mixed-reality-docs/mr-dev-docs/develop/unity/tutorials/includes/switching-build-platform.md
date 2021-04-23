@@ -25,11 +25,13 @@ In the Unity menu, select **File** > **Build Settings...** to open the Build Set
 In the Build Settings window, select **Universal Windows Platform** and:
 1.	Set **Target device** to **HoloLens**
 2.	Set **Architecture** to **ARM 64**
-3.	Set **Build Type** to **D3D**
-4.	Set **Minimum Platform Version** to **10.0.18362**
-5.	Set **UWP SDK** to **Latest installed**
-6.	Set **Build configuration** to **Release** because there are known performance issues with Debug
-7.	Click the Switch Platform button
+3.	Set **Build Type** to **D3D Project**
+4.	Set **Target SDK Version** to **Latest Installed**
+5.	Set **Minimum Platform Version** to **10.0.18362**
+6.	Set **Visual Studio Version** to **Latest installed**
+7.	Set **Build and Run on** to **Local Machine**
+8.	Set **Build configuration** to **Release** because there are known performance issues with Debug
+9.	Click the Switch Platform button
 
 
 ![Unity Build Settings with Universal Windows Platform settings set](../images/mr-learning-base/base-02-section2-step1-2-openxr.png)
