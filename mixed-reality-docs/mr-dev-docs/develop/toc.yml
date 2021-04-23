@@ -1,5 +1,5 @@
 - name: Introduction to Mixed Reality development
-- items:
+  items:
   - name: Getting started  
     href: development.md
   - name: Install the tools
