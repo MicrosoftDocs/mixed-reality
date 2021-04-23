@@ -1,6 +1,6 @@
 ---
 title: Choosing your engine
-description: 
+description: Get introduced to the engine choices available for Mixed Reality development for HoloLens and VR. 
 author: hferrone
 ms.author: v-hferrone
 ms.date: 04/22/2021
@@ -27,12 +27,12 @@ There are several development paths you can take through our documentation. The 
 
 :::row:::
     :::column:::
-       [![Unity](images/icon-unity.png)](unity/choosing-unity-version.md)<br>
+       [![Unity icon](images/icon-unity.png)](unity/choosing-unity-version.md)<br>
         **[Unity](unity/choosing-unity-version.md)**<br>
         Unity is one of the leading real-time development platforms on the market, with underlying runtime code written in C++ and all development scripting is done in C#. <br>Whether you're looking to build games, movies and animation cinematics, or even render architectural or engineering concepts in a virtual world, Unity has the infrastructure to support you.
     :::column-end:::
     :::column:::
-        [![Unreal](images/icon-unreal.png)](../design.md)<br>
+        [![Unreal icon](images/icon-unreal.png)](../design.md)<br>
          **[Unreal](../design.md)**<br>
         Unreal Engine 4 is a powerful, open source creation engine with full support for mixed reality in both C++ and Blueprints. As of Unreal Engine 4.25, HoloLens support is full-featured and production-ready. <br>With capabilities such as the flexible Blueprints Visual Scripting system, designers can virtually use the full range of concepts and tools generally only available to programmers. Creators across industries can leverage the freedom and control to deliver cutting-edge content, interactive experiences, and immersive virtual worlds.
     :::column-end:::

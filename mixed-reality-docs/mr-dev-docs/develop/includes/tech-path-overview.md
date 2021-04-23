@@ -1,6 +1,6 @@
 # [Unity](#tab/unity)
 
-![Unity](../images/unity_logo_banner.png)<br>
+![Unity banner](../images/unity_logo_banner.png)<br>
 
 Build a cross-platform, full-featured mixed reality app with Unity. See the [Unity development overview](../unity/unity-development-overview.md) to get started with Unity development for HoloLens or Windows Mixed Reality immersive headsets.
 
@@ -42,7 +42,7 @@ You can use **Microsoft Dynamics 365 Guides** to visually tether holographic ins
 
 # [Unreal](#tab/unreal)
 
-![Unreal](../images/unreal_logo_banner.png)
+![Unreal banner](../images/unreal_logo_banner.png)
 
 Build a cross-platform, full-featured mixed reality app with Unreal. See the [Unreal development overview](../unreal/unreal-development-overview.md) to get started with Unreal development for HoloLens.
 

@@ -11,7 +11,7 @@ keywords: Windows Mixed Reality, test, Mixed Reality Toolkit, MRTK version 2, MR
 
 # Introducing MRTK for Unreal
 
-![MRTK](../../design/images/MRTK_UX_Hero.png)
+![MRTK banner image](../../design/images/MRTK_UX_Hero.png)
 
 ## What is Mixed Reality Toolkit (MRTK)?
 
@@ -40,19 +40,19 @@ Working with mobile platforms, we constructed MRTK Unreal with performance in mi
 We recommend installing [Unreal Engine version 4.25](https://docs.unrealengine.com//GettingStarted/Installation/index.html) or later to take full advantage of built-in HoloLens support.
 
 Go to the **Library** tab in the Epic Games Launcher, select the dropdown arrow next to **Launch** and click **Options**. Under **Target Platforms**, select **HoloLens 2** and click **Apply**.
-![Unreal Install Option HoloLens 2](../../../develop/images/Unreal_Install_Option_HoloLens2.png)
+![Unreal Install Option HoloLens 2](../images/Unreal_Install_Option_HoloLens2.png)
 
 ## Import Mixed Reality Toolkit for Unreal
 
-![MRTK](../../../design/images/MRTK_UX_Hero.png)
+![MRTK](../../design/images/MRTK_UX_Hero.png)
 
 Mixed Reality Toolkit (MRTK) is an open-source, cross-platform development kit for mixed reality applications. MRTK provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. The toolkit is intended to accelerate the development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and the OpenVR platform.
 
-For installation, we recommend completing the [Getting Started section](../../unreal/unreal-development-overview.md#1-getting-started) of our curated [Unreal development journey](../../unreal/unreal-development-overview.md). If you're already following the Unreal development journey, finish up the rest of the setup steps listed below and continue on to the [HoloLens 2 Getting Started tutorials](../../unreal/tutorials/unreal-uxt-ch1.md).
+For installation, we recommend completing the [Getting Started section](unreal-development-overview.md#1-getting-started) of our curated [Unreal development journey](unreal-development-overview.md). If you're already following the Unreal development journey, finish up the rest of the setup steps listed below and continue on to the [HoloLens 2 Getting Started tutorials](tutorials/unreal-uxt-ch1.md).
 
 :::row:::
     :::column:::
-        <a href="https://github.com/Microsoft/MixedRealityToolkit-Unreal" target="_blank">![Unity logo image](../../images/MRTK-Unreal-Banner.png)<br>**Mixed Reality Toolkit-Unreal (GitHub)**</a><br>
+        <a href="https://github.com/Microsoft/MixedRealityToolkit-Unreal" target="_blank">![Unity logo image](../images/MRTK-Unreal-Banner.png)<br>**Mixed Reality Toolkit-Unreal (GitHub)**</a><br>
     :::column-end:::
 :::row-end:::
 
