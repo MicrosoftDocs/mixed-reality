@@ -29,7 +29,7 @@ In the Build Settings window, select **Universal Windows Platform** and:
 4.	Set **Target SDK Version** to **Latest Installed**
 5.	Set **Minimum Platform Version** to **10.0.18362**
 6.	Set **Visual Studio Version** to **Latest installed**
-7.	Set **Build and Run on** to **Local Machine**
+7.	Set **Build and Run on** to **USB Device**
 8.	Set **Build configuration** to **Release** because there are known performance issues with Debug
 9.	Click the Switch Platform button
 
