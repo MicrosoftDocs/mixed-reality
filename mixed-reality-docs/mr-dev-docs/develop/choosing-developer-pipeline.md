@@ -16,3 +16,8 @@ While we currently **recommend installing Unity 2019.4 LTS and using Legacy Buil
 
 Microsoft’s current recommended Unity configuration for HoloLens 2 is the Mixed Reality Toolkit...
 
+[!INCLUDE[](includes/pipeline/installation.md)]
+
+## Manual 
+
+TBD...

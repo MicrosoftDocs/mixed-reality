@@ -1,11 +1,15 @@
 - name: Introduction to Mixed Reality development
   href: development.md
+- name: Choosing an engine 
+  href: choosing-an-engine.md
+- name: Choosing a development pipeline 
+  href: choosing-developer-pipeline.md
+- name: Install the tools
+  href: install-the-tools.md
 - name: Azure mixed reality cloud services overview
   href: mixed-reality-cloud-services.md
 - name: Samples and feature apps
   href: features-and-samples.md
-- name: Install the tools
-  href: install-the-tools.md
 - name: Porting apps
   items:
   - name: Porting overview
@@ -170,9 +174,7 @@
     items:
     - name: Choosing a Unity version and XR plugin
       href: unity/choosing-unity-version.md
-    - name: Choosing your development pipeline 
-      href: unity/choosing-developer-pipeline.md
-    - name: Choosing an XR configuration 
+    - name: Setting up your XR configuration 
       href: unity/xr-project-setup.md
     - name: OpenXR 
       items: 
