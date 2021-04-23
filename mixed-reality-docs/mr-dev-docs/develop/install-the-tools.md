@@ -38,7 +38,7 @@ If you're using Unity, you can use [Mixed Reality Toolkit for Unity](https://git
 Now that you have your Windows 10, Visual Studio, and Windows 10 SDK ready to go, let's install and setup the engine of your choice. 
 
 > [!div class="nextstepaction"]
-> [Choosing your engine](unity/choosing-an-engine.mds) 
+> [Choosing your engine](unity/choosing-an-engine.md) 
 
 ## Troubleshooting
 
