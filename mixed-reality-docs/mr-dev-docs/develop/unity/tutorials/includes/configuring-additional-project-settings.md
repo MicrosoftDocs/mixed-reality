@@ -52,13 +52,13 @@ After Unity has finished installing the XR Plug-in Management. Ensure that you a
 
 ![Unity XR Settings with add OpenXR and Microsoft HoloLens features selectedd](../images/mr-learning-base/base-02-section5-step2-2-1-openxr.png)
 
-In the menu bar at the top of the screen, navigate to **Mixed Reality> OpenXR > Apply recommended project settings for HoloLens 2** to get better app performance.
-
-![Mixed Reality menu with OpenXR and Apply recommended project settings for HoloLens 2 selected](../images/mr-learning-base/base-02-section5-step2-openxr-2.png)
-
 >[!Important]
 >If you see a red warning icon next to OpenXR Plugin (Preview), click the icon and select Fix all before continuing. The Unity Editor may need to restart itself for the changes to take effect.
 >![OpenXR project validation menu with all issues selected to be fixed.](../images/mr-learning-base/base-02-section5-step2-openxr-3.png)
+
+In the menu bar at the top of the screen, navigate to **Mixed Reality> OpenXR > Apply recommended project settings for HoloLens 2** to get better app performance.
+
+![Mixed Reality menu with OpenXR and Apply recommended project settings for HoloLens 2 selected](../images/mr-learning-base/base-02-section5-step2-openxr-2.png)
 
 After Unity has finished importing necessary files, the MRTK Project Configurator window should appear again. If it doesn't, use the Unity menu to open it.
 

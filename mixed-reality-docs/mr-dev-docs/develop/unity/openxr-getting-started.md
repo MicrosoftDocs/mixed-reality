@@ -10,7 +10,7 @@ keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Realit
 
 # Using the Mixed Reality OpenXR Plugin for Unity
 
-Starting with Unity version 2020.2, Microsoft’s Mixed Reality OpenXR Plugin package is available using the Unity Package Manager (UPM).
+Starting with Unity version 2020.2, Microsoft’s Mixed Reality OpenXR Plugin package is available using the [Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md).
 
 ## Prerequisites
 

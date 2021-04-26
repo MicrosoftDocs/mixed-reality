@@ -31,7 +31,7 @@ Most headsets come pre-paired directly to the headset, but some early headsets r
 > * For controllers that pair directly to your PC, you’ll need to put them into pairing mode by turning them on and then pressing the pairing button inside the battery compartment until the lights start flashing.
 > * Motion controllers only support being paired to one PC at a time. If you need to use them with a different headset, you’ll need to go through the pairing process. See [Set up Windows Mixed Reality](set-up-windows-mixed-reality.md)
 
-[Get help connecting](wmr-setup-faq.md#my-motion-controllers-arent-working)
+[Get help connecting](wmr-setup-faq.yml#my-motion-controllers-aren-t-working)
 
 > [!IMPORTANT]
 > **Got an Xbox controller?**
