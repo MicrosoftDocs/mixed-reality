@@ -28,17 +28,17 @@ There are several development paths you can take through our documentation. The 
 :::row:::
     :::column:::
        [![Unity icon](images/icon-unity.png)](unity/choosing-unity-version.md)<br>
-        **[Unity](unity/choosing-unity-version.md)**<br>
+        **[Unity](unity/choosing-unity-version.md)**<br><br>
         Unity is one of the leading real-time development platforms on the market, with underlying runtime code written in C++ and all development scripting is done in C#. <br>Whether you're looking to build games, movies and animation cinematics, or even render architectural or engineering concepts in a virtual world, Unity has the infrastructure to support you.
     :::column-end:::
     :::column:::
         [![Unreal icon](images/icon-unreal.png)](../design.md)<br>
-         **[Unreal](../design.md)**<br>
+         **[Unreal](../design.md)**<br><br>
         Unreal Engine 4 is a powerful, open source creation engine with full support for mixed reality in both C++ and Blueprints. As of Unreal Engine 4.25, HoloLens support is full-featured and production-ready. <br>With capabilities such as the flexible Blueprints Visual Scripting system, designers can virtually use the full range of concepts and tools generally only available to programmers. Creators across industries can leverage the freedom and control to deliver cutting-edge content, interactive experiences, and immersive virtual worlds.
     :::column-end:::
     :::column:::
         [![Native (OpenXR)](images/icon-native.png)](native/openxr.md)<br>
-         **[Native (OpenXR)]](native/openxr.md)**<br>
+         **[Native (OpenXR)]](native/openxr.md)**<br><br>
         OpenXR is an open royalty-free API standard from Khronos that provides engines native access to a wide range of devices from vendors across the mixed reality spectrum. <br>You can develop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive headset on the desktop. If you don't have access to a headset, emulators for HoloLens 2 and Windows Mixed Reality headsets are available.
     :::column-end:::
 :::row-end:::
