@@ -85,11 +85,9 @@ First, make sure that your controller's batteries are charged. The controllers w
 If you can see your controllers in the Cliff House but not in SteamVR apps and games, the motion controller model driver may not be installed properly. To check that the motion controller model driver is correctly installed:
 
 1. Turn on both of your motion controllers. Check if your motion controllers are [paired correctly](controllers-in-wmr.md#pair-motion-controllers).
-2. Go to **Device Manager > Bluetooth** and look for "Motion controller".
-3. Select the device and then go to **View > Devices by Connection**.
-4. Go to **System settings > Devices > Bluetooth & other devices > Other devices** to see if they're visible. There will be two "Bluetooth HID Device" devices, and under each Bluetooth HID Device should be devices named "Motion Controller" (with gray icons) in the same node as the motion controller.
-5. Double-click each "Motion Controller" device and go to the "Driver" tab. Confirm that the driver version listed corresponds to one of [these versions](mixed-reality-software.md#mixed-reality-motion-controller-model-driver-release-history).
-6. If it doesn't, run Windows Update, which will automatically download and install the driver. If you're on a PC that has enterprise policies or if Windows Update is otherwise restricted, you may need to install the motion controller model driver manually. To do this, visit [this page](mixed-reality-software.md#mixed-reality-motion-controller-model-driver-release-history) and look for the driver version corresponding to your version of Windows 10. Installation instructions are available on the download page.
+2. Go to **Device Manager > Human Interface Devices** and look for "Motion controller".
+3. Double-click each "Motion Controller" device and go to the "Driver" tab. Confirm that the driver version listed corresponds to one of [these versions](mixed-reality-software.md#mixed-reality-motion-controller-model-driver-release-history).
+4. If it doesn't or you can't find a device called "Motion controller", run Windows Update, which will automatically download and install the driver. If you're on a PC that has enterprise policies or if Windows Update is otherwise restricted, you may need to install the motion controller model driver manually. To do this, visit [this page](mixed-reality-software.md#mixed-reality-motion-controller-model-driver-release-history) and look for the driver version corresponding to your controller hardware. Installation instructions are available on the download page.
 
 ## The controller firmware update takes longer than two minutes
 
