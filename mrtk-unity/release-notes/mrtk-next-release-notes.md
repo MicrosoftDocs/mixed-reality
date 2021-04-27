@@ -26,6 +26,15 @@ under **Edit -> Project Settings -> Mixed Reality Toolkit** to debug unexpected 
 ![Null data providers are now hidden by default](https://user-images.githubusercontent.com/39840334/115093658-ead24600-9ecf-11eb-91c2-486a37f69aba.png)
 ![Toggle show null data providers in the profile inspector](https://user-images.githubusercontent.com/39840334/115093670-f6257180-9ecf-11eb-96ec-ffe44a225a55.png)
 
+### Added Experience Settings and an associated Mixed Reality Scene Content behavior
+
+Users can now configure [Experience Settings](../features/experience-settings/experience-settings.md), which will allow MRTK to display [Mixed Reality Scene Content](../features/experience-settings/scene-content.md)
+appropriately based on the targeted experience.
+
+If user's previous Experience Scale settings do not match the new Experience Settings Profile, they will be prompted to correct it in the inspector
+
+![Experience Scale Migration](https://user-images.githubusercontent.com/39840334/114946863-d70bde80-9e00-11eb-9859-fa40d40d2b36.gif)
+
 ### Teleport Hotspot added
 
 A new teleport hotspot component has been graduated. You can add a teleport hotspot to your gameobject to ensure that the user is in a certain position and orientation when they teleport to that location.
