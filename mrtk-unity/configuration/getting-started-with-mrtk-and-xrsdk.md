@@ -72,15 +72,13 @@ If using other XR runtimes in the XR Plug-in Management configuration, like Wind
 
 These profiles are set up with the correct systems and providers, where needed. See [the profiles docs](../features/profiles/profiles.md#xr-sdk) for more information on profile and sample support with XR SDK.
 
-To migrate an existing profile to XR SDK, the following services and data providers should be updated:
+To migrate an existing profile to XR SDK, the following services and data providers should be added. You will be able to see the new data providers under the XR SDK tab
+
+![The XR SDK tab](../features/images/xrsdk/XrsdkTabView.png)
 
 ### Camera
 
-From [`WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityCameraSettings)
-
-![Legacy camera settings](../features/images/xrsdk/CameraSystemLegacy.png)
-
-to
+Add the following data providers 
 
 | OpenXR | Windows Mixed Reality |
 |--------|-----------------------|
@@ -90,11 +88,7 @@ to
 
 ### Input
 
-From [`WindowsMixedReality.Input.WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager)
-
-![Legacy input settings](../features/images/xrsdk/InputSystemWMRLegacy.png)
-
-to
+Add the following data providers 
 
 | OpenXR | Windows Mixed Reality |
 |--------|-----------------------|
@@ -110,11 +104,7 @@ __Windows Mixed Reality__:
 
 ### Boundary
 
-From [`MixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.MixedRealityBoundarySystem)
-
-![Legacy boundary settings](../features/images/xrsdk/BoundarySystemLegacy.png)
-
-to
+Add the following data providers 
 
 | OpenXR | Windows Mixed Reality |
 |--------|-----------------------|
@@ -124,11 +114,7 @@ to
 
 ### Spatial awareness
 
-From [`WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver)
-
-![Legacy spatial awareness settings](../features/images/xrsdk/SpatialAwarenessLegacy.png)
-
-to
+Add the following data providers 
 
 | OpenXR | Windows Mixed Reality |
 |--------|-----------------------|
