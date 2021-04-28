@@ -21,32 +21,31 @@ MRTK-Unity is a Microsoft-driven project that provides a set of components and f
 * Provides the **cross-platform input system and building blocks for spatial interactions and UI**.
 * Enables **rapid prototyping** via in-editor simulation that allows you to see changes immediately.
 * Operates as an **extensible framework** that provides developers the ability to swap out core components.
-* **Supports a wide range of platforms**, including
-  * OpenXR (Unity 2020.2 or newer)
-    * Microsoft HoloLens 2
-    * Windows Mixed Reality headsets
-  * Windows Mixed Reality
-    * Microsoft HoloLens
-    * Microsoft HoloLens 2
-    * Windows Mixed Reality headsets
-  * Oculus (Unity 2019.3 or newer)
-    * Oculus Quest
-  * OpenVR
-    * Windows Mixed Reality headsets
-    * HTC Vive
-    * Oculus Rift
-  * Ultraleap Hand Tracking
-  * Mobile devices such as iOS and Android
+* **Supports a wide range of platforms**:
+
+| Platform | Supported Devices |
+|---|---|
+| OpenXR (Unity 2020.2 or newer) | Microsoft HoloLens 2 <br> Windows Mixed Reality headsets |
+| Windows Mixed Reality | Microsoft HoloLens <br> Microsoft HoloLens 2 <br> Windows Mixed Reality headsets  |
+| Oculus (Unity 2019.3 or newer) | Oculus Quest |
+| OpenVR |  Windows Mixed Reality headsets <br> HTC Vive <br> Oculus Rift |
+| Ultraleap Hand Tracking | Ultraleap Leap Motion controller |
+| Mobile | iOS and Android |
 
 ## Getting started with MRTK
 
-If you're new to MRTK or Mixed Reality development in Unity, we recommend you install the necessary tools and then follow the HoloLens 2 tutorial series.
+If you're new to MRTK or Mixed Reality development in Unity, we recommend installing and exploring the MRTK Examples Hub sample application on your device or emulator. 
 
 > [!div class="nextstepaction"]
-> [Install the Tools](install-the-tools.md)
+> [Download the MRTK Examples Hub app](running-examples-hub.md)
+
+Once you've got the hang of what Mixed Reality and MRTK has to offer, install the necessary tools and follow our beginner level HoloLens 2 tutorial series.
 
 > [!div class="nextstepaction"]
-> [HoloLens 2 Tutorial Series](/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
+> [Install the tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
+
+> [!div class="nextstepaction"]
+> [HoloLens 2 Tutorial Series](tutorials/mr-learning-base-02.md)
 
 Want to see what's going on under the hood?
 > [!div class="nextstepaction"]
