@@ -32,6 +32,7 @@ First, you'll need to install the tools for HoloLens 2 development. Next, go thr
 |  Checkpoint  |  Outcome  |
 | --- | --- |
 | [Install the latest tools](../install-the-tools.md) | Download and install the latest version of Unreal Engine and setup your project for mixed reality |
+| [Set up your project](unreal-project-setup.md) | Get the latest version of Unreal Engine and MRTK |
 | [Creating your first HoloLens Unreal application](unreal-quickstart.md) | Start off your Unreal and HoloLens development journey by building a basic Mixed Reality application |
 | [HoloLens 2 tutorial series](tutorials/unreal-uxt-ch1.md) | Get set up for mixed reality development in Unreal, build your first app with MRTK, and deploy your app to HoloLens 2 |
 | (Optional) Get started with [OpenXR](../native/openxr.md) in Unreal | If you're looking to build an OpenXR app in Unreal, you should disable the following engine plugin:<ul><li>Windows Mixed Reality</li></ul><br>Download and enable the following plugin in your project from GitHub:<ul><li> [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal)</li></ul><br>The full list of currently supported features in OpenXR is [below](#supported-features).|

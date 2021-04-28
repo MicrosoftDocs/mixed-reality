@@ -16,10 +16,18 @@ keywords: Mixed Reality, develop, development, HoloLens, unity, unreal, directx,
 
 Mixed Reality is a big place, a nexus where real and virtual worlds collide with a bang. The possibilities are endless, and it starts with you. Choose your engine, download your tools, and dust off your keyboard. Welcome to the Mixed Reality ecosystem - it's time to create.
 
-Intro to MS Learn modules...
+## Mixed Reality Learn
+
+Microsoft Learn is where everyone comes to learn. Discover new skills, find certifications, and advance your career in minutes with interactive, hands-on learning paths.
+
+Our Learn modules help you become proficient in Mixed Reality development, offering a module-based structure to get you started with key tools like Mixed Reality Toolkit, Unity, and Azure mixed reality services. Getting to Hello World has never been clearer, as we lay out the Learning Objectives, Prerequisites, and set time to completion expectations all in one interface.
 
 > [!div class="nextstepaction"]
 > [Introduction to Mixed Reality on Microsoft Learn](https://docs.microsoft.com/learn/modules/intro-to-mixed-reality/)
+
+## Installing your developer tools
+
+If you want to jump right into Mixed Reality development, install the tools you'll need and get started!
 
 > [!div class="nextstepaction"]
 > [Install the tools](install-the-tools.md)

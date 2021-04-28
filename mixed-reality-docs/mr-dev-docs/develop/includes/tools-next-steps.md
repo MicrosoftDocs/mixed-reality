@@ -1,12 +1,7 @@
 # [Unity](#tab/unity)
 
-If you're new to MRTK development with Unity, we recommend following our curated Unity development journey:
-
 > [!div class="nextstepaction"]
-> [Start your Unity for HoloLens journey](../unity/unity-development-overview.md)
-
-> [!div class="nextstepaction"]
-> [Start your Unity for VR journey](../unity/unity-development-wmr-overview.md)
+> [Choose the right Unity version for you]((unity/choosing-unity-version.md))
 
 ### Next Development Checkpoint
 
@@ -24,10 +19,8 @@ You can always go back to the Unity development checkpoints for [HoloLens](../un
 
 # [Unreal](#tab/unreal)
 
-If you're new to MRTK development with Unreal, we recommend following our curated Unreal development journey:
-
 > [!div class="nextstepaction"]
-> [Start your Unreal journey](../unreal/unreal-development-overview.md)
+> [Setup your Unreal project](../unreal/unreal-project-setup.md)
 
 ### Next Development Checkpoint
 
@@ -38,9 +31,12 @@ If you're following the Unreal development checkpoint journey we've laid out, yo
 
 You can always go back to the [Unreal development checkpoints](../unreal/unreal-development-overview.md#1-getting-started) at any time.
 
-# [Native (OpenXR)](#tab/native)
+# [Javascript](#tab/javascript)
 
-If you're new to Native development with MRTK, we recommend following our curated Native development journey:
+> [!div class="nextstepaction"]
+> [Start your Javascript journey](../native/directx-development-overview.md)[JavaScript development overview](../javascript/javascript-development-overview.md) 
+
+# [Native (OpenXR)](#tab/native)
 
 > [!div class="nextstepaction"]
 > [Start your Native journey](../native/directx-development-overview.md)
@@ -51,5 +47,3 @@ If you're following the Native development checkpoint journey we've laid out, yo
 
 > [!div class="nextstepaction"]
 > [Setup for HoloLens 2](../native/openxr-getting-started.md#getting-started-with-openxr-for-hololens-2)
-
-You can always go back to the [Native development checkpoints](../native/directx-development-overview.md#1-getting-started) at any time.
