@@ -45,7 +45,7 @@ Once you've got the hang of what Mixed Reality and MRTK has to offer, install th
 > [Install the tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 
 > [!div class="nextstepaction"]
-> [HoloLens 2 Tutorial Series](https://docs.microsoft.com/windows/mixed-reality/develop/tutorials/mr-learning-base-02)
+> [HoloLens 2 Tutorial Series](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
 
 Want to see what's going on under the hood?
 > [!div class="nextstepaction"]
