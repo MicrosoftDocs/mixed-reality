@@ -1,5 +1,4 @@
 ---
-layout: LandingPage
 title: Learn the tools and architecture
 description: Learn about the mixed reality development tools you'll need to get started making apps for HoloLens and immersive headsets.
 author: grbury
