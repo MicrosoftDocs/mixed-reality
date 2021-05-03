@@ -13,7 +13,7 @@ keywords: vr, hardware, specs, specifications, tech, sensors, optics, display, m
 
 ![Variety of Windows Mixed Reality headsets](images/MR-headsets.png)
 
-You can purchase any of the publicly available Windows Mixed Reality immersive headsets from various global retailers. You can also find headsets at the [online Microsoft Store](https://www.microsoft.com/store/collections/VRandMixedrealityheadsets), all of which can be used for mixed reality development. These immersive headsets deliver built-in inside-out tracking, meaning you don't need to purchase or install external trackers or place sensors on the wall. There's no complicated setup, just plug and play.
+You can purchase any of the publicly available Windows Mixed Reality immersive headsets from various global retailers. You can also find headsets at the [online Microsoft Store](https://www.microsoft.com/en-us/store/collections/AR-MR-VRheadsets), all of which can be used for mixed reality development. These immersive headsets deliver built-in inside-out tracking, meaning you don't need to purchase or install external trackers or place sensors on the wall. There's no complicated setup, just plug and play.
 
 ## Device specifications
 
