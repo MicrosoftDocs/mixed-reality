@@ -1725,7 +1725,12 @@
 		// What's New
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/azure-services.md",
-			"redirect_url": "/windows/mixed-reality/whats-new/azure-services",
+			"redirect_url": "/windows/mixed-reality/develop/mixed-reality-cloud-services",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/whats-new/azure-services.md",
+			"redirect_url": "/windows/mixed-reality/develop/mixed-reality-cloud-services",
 			"redirect_document_id": true
 		},
 		{
