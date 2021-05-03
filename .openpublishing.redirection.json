@@ -567,7 +567,7 @@
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/mixed-reality-cloud-services.md",
 			"redirect_url": "/windows/mixed-reality/develop/mixed-reality-cloud-services",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		// Develop >> Unity >> Tutorials
 		{
