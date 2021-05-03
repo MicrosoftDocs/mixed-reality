@@ -963,6 +963,11 @@
 			"redirect_document_id": false
 		},
 		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/out-of-scope/mrtk-101.md",
+			"redirect_url": "/windows/mixed-reality/mrtk-unity",
+			"redirect_document_id": false
+		},
+		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/mrtk-getting-started.md",
 			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mrtk-unity",
 			"redirect_document_id": false
