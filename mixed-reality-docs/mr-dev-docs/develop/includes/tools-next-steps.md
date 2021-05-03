@@ -1,7 +1,7 @@
 # [Unity](#tab/unity)
 
 > [!div class="nextstepaction"]
-> [Choose the right Unity version for you]((../unity/choosing-unity-version.md))
+> [Choose the right Unity version for you](../unity/choosing-unity-version.md)
 
 ### Next Development Checkpoint
 
