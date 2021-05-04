@@ -19,6 +19,7 @@ Figma Toolkit provides the assets that can be used for sketching and laying out 
 
 ## How to use Figma Toolkit
 Use **Duplicate to your drafts** menu to make a copy.
+
 <img src="images/UX_Figma_Use1.png" width="500px" alt="Menu duplicate 1"><br>
 
 Click **Back to files** to see duplicated copy. You can use this copy for your own creation.
