@@ -19,9 +19,11 @@ There are several development paths you can take through our documentation. The 
 
 |  | Unity | Unreal | Javascript | Native (OpenXR) |
 |---|---|---|---|---|
-| HoloLens 2 | ✔️ | ✔️ |  | s✔️ |
+| Language | C# | C++ | JS | TBD |
+| HoloLens 2 | ✔️ | ✔️ |  | ✔️ |
 | HoloLens (1st gen) | ✔️ | ✔️ |  | ❌ |
 | [Immersive VR headsets](../discover/immersive-headset-hardware-details.md) | ✔️ | ✔️ |  | ✔ |
+| Oculus Quest | ✔️ | ✔️ |  | ✔️ |
 | Mixed Reality Toolkit (MRTK) | ✔️ | ✔️ |  | ❌ |
 | Azure Spatial Anchors (ASA) | ✔️ | ✔️ |  |  |
 | Azure Remote Rendering (ARR) | ✔️ | ❌ |  |  |
