@@ -17,6 +17,16 @@ There are several development paths you can take through our documentation. The 
 
 [!INCLUDE[](includes/tech-path-overview.md)]
 
+|  | Unity | Unreal | Javascript | Native (OpenXR) |
+|---|---|---|---|---|
+| HoloLens 2 | ✔️ | ✔️ |  | s✔️ |
+| HoloLens (1st gen) | ✔️ | ✔️ |  | ❌ |
+| [Immersive VR headsets](../discover/immersive-headset-hardware-details.md) | ✔️ | ✔️ |  | ✔ |
+| Mixed Reality Toolkit (MRTK) | ✔️ | ✔️ |  | ❌ |
+| Azure Spatial Anchors (ASA) | ✔️ | ✔️ |  |  |
+| Azure Remote Rendering (ARR) | ✔️ | ❌ |  |  |
+| Licensing | TBD | TBD |  |  |
+
 ## Next steps
 
 [!INCLUDE[](includes/tools-next-steps.md)]
