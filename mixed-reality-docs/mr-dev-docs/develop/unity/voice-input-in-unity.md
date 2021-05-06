@@ -294,8 +294,8 @@ You could also just start a KeywordRecognizer, which will restart the PhraseReco
 ## Voice input in Mixed Reality Toolkit
 
 You can find MRTK examples for voice input in the following demo scenes:
-* [Dictation](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/Examples/Demos/Input/Scenes/Dictation)
-* [Speech](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/Examples/Demos/Input/Scenes/Speech)
+* [Dictation](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/Examples/Demos/Input/Scenes/Dictation)
+* [Speech](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/Examples/Demos/Input/Scenes/Speech)
 
 ## Next Development Checkpoint
 

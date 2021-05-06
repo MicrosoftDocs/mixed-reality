@@ -16,7 +16,7 @@ Dialog controls are UI overlays that provide contextual app information. They of
 ## Example scene
 
 You can find examples in the **DialogExample** scene under:
-[MRTK/Examples/Demo/UX/Dialog](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/Examples/Demos/UX/Dialog)
+[MRTK/Examples/Demo/UX/Dialog](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/Examples/Demos/UX/Dialog)
 
 ## How to use Dialog control
 
