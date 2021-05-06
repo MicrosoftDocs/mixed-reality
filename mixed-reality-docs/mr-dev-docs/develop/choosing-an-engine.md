@@ -15,23 +15,31 @@ There are several development paths you can take through our documentation. The 
 > [!IMPORTANT]
 > Take a look at our **[porting guides overview](porting-apps/porting-overview.md)** if you have existing projects that you want to bring over to HoloLens 2 or immmersive VR headsets like the Reverb G2. We have guides for projects that are using HTK, MRTK v1, SteamVR or were developed for immersive headsets such as the Oculus Rift or HTC Vive.
 
-[!INCLUDE[](includes/tech-path-overview.md)]
+## Engine overview
 
-<br>
+* **Unity** is one of the leading real-time development platforms on the market, with underlying runtime code written in C++ and all development scripting is done in C#. Whether you're looking to build games, movies and animation cinematics, or even render architectural or engineering concepts in a virtual world, Unity has the infrastructure to support you.
 
-### You've got choices
+* Unreal
+* Babylon
+* Native (OpenXR)
 
-|  | Unity | Unreal | Javascript | Native (OpenXR) |
+## Features and devices
+
+| Features/Devices | Unity | Unreal | Babylon | Native (OpenXR) |
 |---|---|---|---|---|
-| Language | C# | C++ | JS | TBD |
-| HoloLens 2 | ✔️ | ✔️ |  | ✔️ |
-| HoloLens (1st gen) | ✔️ | ✔️ |  | ❌ |
-| [Immersive VR headsets](../discover/immersive-headset-hardware-details.md) | ✔️ | ✔️ |  | ✔ |
-| Oculus Quest | ✔️ | ✔️ |  | ✔️ |
-| Mixed Reality Toolkit | ✔️ | ✔️ |  | ❌ |
-| Azure Spatial Anchors | ✔️ | ✔️ |  |  |
-| Azure Remote Rendering | ✔️ | ❌ |  |  |
-| Licensing | TBD | TBD |  |  |
+| Language | C# | C++ | JavaScript | C/C++ |
+| Licensing | TBD | TBD | TBD | TBD |
+| HoloLens 2 | ✔️ | ✔️ | ✔️ | ✔️ |
+| HoloLens (1st gen) | ✔️ | ✔️ | ❌ | ❌ |
+| [Immersive VR headsets](../discover/immersive-headset-hardware-details.md) | ✔️ | ✔️ | ✔ | ✔ |
+| Oculus Quest | ✔️ | ✔️ | ✔️ | ✔️ |
+| Mixed Reality Toolkit | ✔️ | ✔️ | ❌ | ❌ |
+| Mesh | ✔️ | ❌ | ❌ | ❌ |
+| Azure Spatial Anchors | ✔️ | ✔️ | ❌ | ✔️ |
+| Azure Object Anchors | ✔️ | ❌ | ❌ | ✔️ |
+| Azure Remote Rendering | ✔️ | ❌ | ❌ | ❌ <!-- (End of May) --> |
+
+<!-- Dig into specific features like Speech SDK, etc... -->
 
 ## Next steps
 
