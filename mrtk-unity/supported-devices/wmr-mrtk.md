@@ -1,21 +1,21 @@
 ---
-title: BuildAndDeploy
+title: Deploying to Hololens and WMR devices
 description: Documentation to Build and Deploy Apps into various devices.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Visual Studio, Android, IOS
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Visual Studio
 ---
 
-# Building and deploying MRTK
+# Building and deploying MRTK (UWP)
 
-To run an app on device as a standalone app (for HoloLens, Android, iOS, etc.), the build and deploy step needs to be executed in the unity project. Building and deploying an app that uses MRTK is just like building and deploying any other Unity app. There are no MRTK-specific instructions. Read below for detailed steps on how to build and deploy a Unity app for HoloLens.  Learn more about building for other platforms at [Publishing Builds](https://docs.unity3d.com/Manual/PublishingBuilds.html).
+To run an app on device as a standalone app (for HoloLens, Android, iOS, etc.), the build and deploy step needs to be executed in the unity project. Building and deploying an app that uses MRTK is just like building and deploying any other Unity app. There are no MRTK-specific instructions. Read below for detailed steps on how to build and deploy a Unity app for HoloLens. Learn more about building for other platforms at [Publishing Builds](https://docs.unity3d.com/Manual/PublishingBuilds.html).
 
-## Building and deploying MRTK to HoloLens 1 and HoloLens 2 (UWP)
+## Building and deploying MRTK to HoloLens 1, HoloLens 2 and WMR headsets (UWP)
 
-Instructions on how to build and deploy for HoloLens 1 and HoloLens 2 (UWP) can be found at [building your application to device](/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device).
+Instructions on how to build and deploy for **HoloLens 1** and **HoloLens 2** (UWP) can be found at [building your application to device](/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device). These steps also allow you to deploy to **WMR headsets**.
 
-**Tip:** When building for WMR, HoloLens 1, or HoloLens 2, it is recommended that the build settings "Target SDK Version"
+**Tip:** When building for HoloLens 1, HoloLens 2, or WMR, it is recommended that the build settings "Target SDK Version"
 and "Minimum Platform Version" look like they do in the picture below:
 
 ![Build window](../features/images/getting-started/BuildWindow.png)
@@ -48,9 +48,9 @@ If using the XR-Plugin:
 >
 > If the ARM architecture is required, navigate to **Edit > Project Settings, Player**, and under the **Other Settings** menu disable **Graphics Jobs**. Disabling **Graphics Jobs** will allow the app to deploy using the ARM build architecture for Unity 2019.3.x, but ARM64 is recommended.
 
-## Building and deploying MRTK to a Windows Mixed Reality Headset
+## Building and deploying MRTK (Standalone)
 
-The Windows Mixed Reality (WMR) headset can be used for Universal Windows Platform (UWP) and Standalone builds.  A Standalone build for a WMR headset requires the following extra steps:
+Standalone builds of MRTK can be used on WMR headsets. A Standalone build for a WMR headset requires the following extra steps:
 
 > [!NOTE]
 > Unity's XR SDK also supports native WMR in Standalone builds, but does not require SteamVR or WMR plugin. These steps are required for Unity's legacy XR.
