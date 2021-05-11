@@ -67,7 +67,7 @@ In the Import Unity Package window, click the **All** button to ensure all the a
 > [!TIP]
 > The TextMeshPro Essential Resources are required by MRTK's UI elements. You can skip this step if you are not planning to use MRTK's UI elements in your project.
 
-## Importing the Mixed Reality Toolkit
+## Importing the Mixed Reality Toolkit and Configuring the Unity project
 
 To Import Mixed Reality Toolkit into the Unity Project you will have to use [Mixed Reality Feature Tool](../welcome-to-mr-feature-tool.md) which allows  developers to discover, update, and add Mixed Reality feature packages into Unity projects. You can search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing.
 
@@ -85,28 +85,6 @@ Open the executable file **MixedRealityFeatureTool** from the downloaded folder 
 
 
 [!INCLUDE[](includes/importing-mrtk.md)]
-
-## Configuring the Unity project
-
-### 1. Apply the MRTK Project Configurator settings
-
-After Unity has finished importing the package from the previous section, the MRTK Project Configurator window should appear. If it doesn't, you can manually open it by going to **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project**:
-
-![Unity Configure Unity Project menu path](images/mr-learning-base/base-02-section5-step1-1.png)
-
-In the MRTK Project Configurator window, expand the **Modify Configurations** section, ensure all options are checked, and click the **Apply** button to apply the settings:
-
-![Unity MRTK Project Configurator window](images/mr-learning-base/base-02-section5-step1-2.png)
-
-> [!TIP]
-> Applying the MRTK Default Settings is optional but strongly recommended as it will help configure some recommended Unity settings:
-
-> * Set Single Pass Instanced rendering path: Improves graphics performance by executing the render pipeline for both eyes in the same draw call. To learn more about this topic, you can refer to the [Single-Pass Instanced rendering](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering) section of MRTK's [Performance](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering) documentation.
-> * Set default Spatial Awareness layer: Creates a Unity Layer named Spatial Awareness and configures MRTK to use this layer for the spatial awareness mesh. To learn more about Unity Layers, you can refer to Unity's <a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">Customizing Your Workspace</a> documentation.
-
-### 2. Configure additional project settings
-
-[!INCLUDE[](includes/configuring-additional-project-settings.md)]
 
 ## Creating the scene and configuring MRTK
 
