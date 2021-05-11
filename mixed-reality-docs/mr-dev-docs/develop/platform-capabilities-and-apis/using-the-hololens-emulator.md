@@ -23,7 +23,7 @@ If you're looking to develop Windows Mixed Reality immersive (VR) headset applic
 Download the HoloLens Emulator.
 
 Versions:
-* [HoloLens 2 Emulator (Windows Holographic, version 20H2 May 2021 Update)](https://go.microsoft.com/fwlink/?linkid=2162581).
+* [HoloLens 2 Emulator (Windows Holographic, version 21H1 May 2021 Update)](https://go.microsoft.com/fwlink/?linkid=2162581).
 * [HoloLens Emulator (first Gen) and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2065980).
 
 You can find release notes and older builds of the HoloLens Emulator on the [HoloLens Emulator archive](hololens-emulator-archive.md) page.
