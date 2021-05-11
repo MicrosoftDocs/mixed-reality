@@ -85,7 +85,7 @@ This provider can be used in editor and on device while on the Standalone platfo
 1. Building your project
     - Navigate to **File > Build Settings**
     - Only Standalone builds are supported if using the Leap Motion Data Provider.
-    - For instructions on how to use a Windows Mixed Reality headset for Standalone builds, see [Build and Deploy](../../updates-deployment/build-and-deploy.md#building-and-deploying-mrtk-to-a-windows-mixed-reality-headset).
+    - For instructions on how to use a Windows Mixed Reality headset for Standalone builds, see [Building and deploying MRTK (Standalone)](build-and-deploy.md#Building-and-deploying-MRTK-Standalone).
 
 ## Getting the hand joints
 
