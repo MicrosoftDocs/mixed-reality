@@ -92,6 +92,6 @@ Standalone builds of MRTK can be used on WMR headsets. A Standalone build for a 
 
 ## See also
 
-- [Android and iOS Support](../features/cross-platform/using-ar-foundation.md)
-- [Leap Motion Support](../features/cross-platform/leap-motion-mrtk.md)
-- [Detecting Platform Capabilities](../features/cross-platform/detecting-platform-capabilities.md)
+- [Android and iOS Support](using-ar-foundation.md)
+- [Leap Motion Support](leap-motion-mrtk.md)
+- [Detecting Platform Capabilities](detecting-platform-capabilities.md)
