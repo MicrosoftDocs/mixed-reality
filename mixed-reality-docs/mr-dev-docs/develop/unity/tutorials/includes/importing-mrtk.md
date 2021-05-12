@@ -20,7 +20,7 @@ Features are grouped by category to make things easier to find, click on **Mixed
 
 ![MixedRealityFeatureTool Discover Features](../images/mr-learning-base/base-02-section4-step1-4.png)
 
-check the **Mixed Reality Toolkit Foundation**, and click on the dropdown next to it to select MRTK 2.7.0, then click on **Get features** button to download the selected packages.
+check the **Mixed Reality Toolkit Foundation**, and click on the dropdown next to it to select **MRTK 2.7.0**, then click on **Get features** button to download the selected packages.
 
 ![MixedRealityFeatureTool Open MixedReality](../images/mr-learning-base/base-02-section4-step1-5.png)
 
@@ -34,27 +34,27 @@ Click on **Approve** Button to add the **Mixed Reality Toolkit** into the projec
 
 ## Configuring the Unity project
 
-After Unity has finished importing the package from the previous section, the MRTK Project Configurator window should appear. If it doesn't, you can manually open it by going to **Mixed Reality** > **Toolkit** > **Utilities** > **Configure Unity Project**:
+After Unity has finished importing the package from the previous section, the MRTK Project Configurator window should appear. If it doesn't, you can manually open it by going to **Mixed Reality** > **Toolkit** > **Utilities** > **Configure Project for MRTK**:
 
-Image
+![opening MRTK configurator tool](../images/mr-learning-base/base-02-section5-step1-1xrsdk.png)
 
-Click on **Built-in Unity Plugin(non-OpenXR)** to Enable XR Plugin Management and add its required packages for into your project.
+Click on **Built-in Unity Plugin(non-OpenXR)** to Enable XR Plugin Management and add its required packages into your project.
 
-Image
+![ MRTK configurator tool](../images/mr-learning-base/base-02-section5-step1-2xrsdk.png)
 
-click on **Show Settings** to Enable to **XRSDK**, this opens **Project Settings window**
+this imports required unity packages for XR Plugin Management, once done click on **Show Settings** in MRTK project Configurator.
 
-Image
+![Player settings window](../images/mr-learning-base/base-02-section5-step1-3xrsdk.png)
 
-In the Project Settings window under **XR Plug-in Management** Ensure that you are in Universal Windows Platform settings also Ensure **Initialize XR on Startup** is checked. and check **Windows Mixed Reality** checkbox.
+This opens **Project Settings window**, In the Project Settings window under **XR Plug-in Management** Ensure that you are in Universal Windows Platform settings also Ensure **Initialize XR on Startup** is checked, and check **Windows Mixed Reality** checkbox.
 
-Image
+![Player settings window Enable Mixed Reality](../images/mr-learning-base/base-02-section5-step1-4xrsdk.png)
 
 After Unity has finished importing the Windows Mixed Reality SDK, the MRTK Project Configurator window should appear again. If it doesn't, use the Unity menu to open it.
 
 In the MRTK Project Configurator window, click on **next** then use the Audio spatializer dropdown to select the **MS HRTF Spatializer**, then click the **Apply** button to apply the setting:
 
-Image
+![Player settings window Enable Mixed Reality](../images/mr-learning-base/base-02-section5-step1-5xrsdk.png)
 
 > [!TIP]
 > Applying the MRTK Default Settings is optional but strongly recommended as it will help configure some recommended Unity settings:
@@ -62,11 +62,10 @@ Image
 > * Set Single Pass Instanced rendering path: Improves graphics performance by executing the render pipeline for both eyes in the same draw call. To learn more about this topic, you can refer to the [Single-Pass Instanced rendering](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering) section of MRTK's [Performance](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering) documentation.
 > * Set default Spatial Awareness layer: Creates a Unity Layer named Spatial Awareness and configures MRTK to use this layer for the spatial awareness mesh. To learn more about Unity Layers, you can refer to Unity's <a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">Customizing Your Workspace</a> documentation.
 
-
 > [!TIP]
 >Setting the Audio spatializer property is optional but may improve the audio experience in your project. If you set it to MS HRTF Spatializer, this spatializer plugin will be used when Unity's AudioSource.spatialize property is enabled. To learn more about this topic, you can refer to the  <a href="//windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank"> Spatial audio tutorials</a>.
 
-Click on Next and Done in the MRTK Project Configurator window to finish the Unity project configuration for XRSDK.
+Click on **Next** then click on **Done** in the MRTK Project Configurator window to finish the Unity project configuration for XRSDK.
 
 ### Configure additional project settings
 
@@ -74,14 +73,14 @@ In the Unity menu, select **Edi**t > **Project Settings...** to open the Project
 
 In the Project Settings window, select **XR Plug-in Management** > **Windows Mixed Reality** > **Runtime Settings**, then use the **Depth Buffer Format** dropdown to select **16-bit depth**:
 
-Image
+![Unity Enable 16 Depth](../images/mr-learning-base/base-02-section5-step2-1xrsdk.png)
 
 > [!TIP]
 > Reducing the Depth Format to 16-bit is optional but my help improve graphics performance in your project. To learn more about this topic, you can refer to the <a href="/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering" target="_blank">Depth buffer sharing (HoloLens)</a> section of MRTK's Performance documentation.
 
 In the Project Settings window, select **Player** > **Publishing Settings**, then in the **Package name** field, enter a suitable name, for example, _MRTKTutorials-GettingStarted_:
 
-Image
+![Unity Publishing Settings. Package name configured](../images/mr-learning-base/base-02-section5-step2-2.png)
 
 > [!NOTE]
 > The 'Package name' is the unique identifier for the app. You should change this identifier before deploying the app to avoid overwriting previously installed apps.
@@ -150,15 +149,15 @@ Next click on the **Validate** button to validate the selected package, you will
 
 ## Configuring the Unity project
 
-After Unity has finished importing the package from the previous section, the MRTK Project Configurator window should appear. If it doesn't, you can manually open it by going to **Mixed Reality** > **Toolkit** > **Utilities** > **Configure Unity Project**:
+After Unity has finished importing the package from the previous section, the MRTK Project Configurator window should appear. If it doesn't, you can manually open it by going to **Mixed Reality** > **Toolkit** > **Utilities** > **Configure Project for MRTK**:
 
 ![Unity Configure Unity Project menu path](../images/mr-learning-base/base-02-section5-step1-1.png)
 
-Click on **Legacy XR** to Enable Legecy XR and add its required packages for into your project.
+Click on **Legacy XR** to enable Legacy XR and to add its required packages  into your project.
 
-![Unity Configure Unity Project menu path](../images/mr-learning-base/base-02-section5-step1-2.png)
+![s](../images/mr-learning-base/base-02-section5-step1-2.png)
 
-Click on next button to enable XR pipeline setting.
+Click on next button to enable XR pipeline settings for Legacy XR.
 
 ![Unity Configure Unity Project menu path](../images/mr-learning-base/base-02-section5-step1-3.png)
 
@@ -176,11 +175,11 @@ In the MRTK Project Configurator window, ensure all options are checked and also
 > [!TIP]
 >Setting the Audio spatializer property is optional but may improve the audio experience in your project. If you set it to MS HRTF Spatializer, this spatializer plugin will be used when Unity's AudioSource.spatialize property is enabled. To learn more about this topic, you can refer to the  <a href="//windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank"> Spatial audio tutorials</a>.
 
-Click on Next and Done button MRTK Project Configurator window to finish the Unity project configuration for Legecy XR.
+Click on **Next** then click on**Done** button in MRTK Project Configurator window to finish the Unity project configuration for Legecy XR.
 
 ### Configure additional project settings
 
-In the Unity menu, select **Edi**t > **Project Settings...** to open the Project Settings window:
+In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window:
 
 In the Project Settings window, select **Player** > **XR Settings**, then use the **Depth Format** dropdown to select **16-bit depth**:
 
