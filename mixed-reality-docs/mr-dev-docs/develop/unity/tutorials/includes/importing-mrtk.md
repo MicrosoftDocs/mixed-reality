@@ -156,15 +156,15 @@ After Unity has finished importing the package from the previous section, the MR
 
 Click on **Legacy XR** to Enable Legecy XR and add its required packages for into your project.
 
-![Unity Configure Unity Project menu path](../images/mr-learning-base/base-02-section5-step1-1.png)
+![Unity Configure Unity Project menu path](../images/mr-learning-base/base-02-section5-step1-2.png)
 
 Click on next button to enable XR pipeline setting.
 
-![Unity Configure Unity Project menu path](../images/mr-learning-base/base-02-section5-step1-1.png)
+![Unity Configure Unity Project menu path](../images/mr-learning-base/base-02-section5-step1-3.png)
 
 In the MRTK Project Configurator window, ensure all options are checked and also use the **Audio spatializer** dropdown to select the **MS HRTF Spatializer**, then click the **Apply** button to apply the setting:
 
-![MRTK configuration window](../images/mr-learning-base/base-02-section5-step2-5.png)
+![MRTK configuration window](../images/mr-learning-base/base-02-section5-step1-4.png)
 
 > [!TIP]
 > Applying the MRTK Default Settings is optional but strongly recommended as it will help configure some recommended Unity settings:
@@ -176,7 +176,7 @@ In the MRTK Project Configurator window, ensure all options are checked and also
 > [!TIP]
 >Setting the Audio spatializer property is optional but may improve the audio experience in your project. If you set it to MS HRTF Spatializer, this spatializer plugin will be used when Unity's AudioSource.spatialize property is enabled. To learn more about this topic, you can refer to the  <a href="//windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank"> Spatial audio tutorials</a>.
 
-Click on Next and Done button MRTK Project Configurator window to finish the Unity project configuration for Legesy XR.
+Click on Next and Done button MRTK Project Configurator window to finish the Unity project configuration for Legecy XR.
 
 ### Configure additional project settings
 
@@ -184,14 +184,14 @@ In the Unity menu, select **Edi**t > **Project Settings...** to open the Project
 
 In the Project Settings window, select **Player** > **XR Settings**, then use the **Depth Format** dropdown to select **16-bit depth**:
 
-![Unity Enable 16 Depth](../images/mr-learning-base/base-02-section5-step2-6.png)
+![Unity Enable 16 Depth](../images/mr-learning-base/base-02-section5-step2-1.png)
 
 > [!TIP]
 > Reducing the Depth Format to 16-bit is optional but my help improve graphics performance in your project. To learn more about this topic, you can refer to the <a href="/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering" target="_blank">Depth buffer sharing (HoloLens)</a> section of MRTK's Performance documentation.
 
 In the Project Settings window, select **Player** > **Publishing Settings**, then in the **Package name** field, enter a suitable name, for example, _MRTKTutorials-GettingStarted_:
 
-![Unity Publishing Settings. Package name configured](../images/mr-learning-base/base-02-section5-step2-7.png)
+![Unity Publishing Settings. Package name configured](../images/mr-learning-base/base-02-section5-step2-2.png)
 
 > [!NOTE]
 > The 'Package name' is the unique identifier for the app. You should change this identifier before deploying the app to avoid overwriting previously installed apps.
