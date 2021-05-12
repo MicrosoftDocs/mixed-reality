@@ -4,8 +4,8 @@
   href: running-examples-hub.md
 - name: Configuration
   href: configuration/toc.yml
-- name: Supported Device Overviews
-  href: cross-platform/toc.yml
+- name: Supported Device Overview
+  href: supported-devices/toc.yml
 - name: Architecture
   href: architecture/toc.yml
 - name: Feature Overviews
