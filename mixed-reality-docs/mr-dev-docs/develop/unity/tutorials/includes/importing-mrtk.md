@@ -124,6 +124,8 @@ Click on Next and Done button to finish the Unity project configuration.
 
 ### Configure additional project settings
 
+In the Unity menu, select Edit > Project Settings... to open the Project Settings window:
+
 In the Project Settings window, select **Player** > **XR Settings**, then use the **Depth Format** dropdown to select **16-bit depth**:
 
 ![Unity Enable 16 Depth](../images/mr-learning-base/base-02-section5-step2-6.png)
