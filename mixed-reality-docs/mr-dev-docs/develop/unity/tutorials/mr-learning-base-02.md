@@ -96,7 +96,9 @@ In the Unity menu, select **Mixed Reality** > **Toolkit** > **Add to Scene and C
 
 ![Unity Add to Scene and Configure... menu path](images/mr-learning-base/base-02-section6-step1-2.png)
 
-[!INCLUDE[](includes/changing-profile.md)]
+With the **MixedRealityToolkit** object still selected in the Hierarchy window, in the Inspector window, verify that the **MixedRealityToolkit** configuration profile is set to **DefaultMixedRealityToolkitConfigurationProfile**:
+
+![Unity MixedRealityToolkit component with DefaultMixedRealityTookitConfigurationProfile selected](images/mr-learning-base/base-02-section6-step1-3.png)
 
 In the Unity menu, select **File** > **Save As...** to open the Save Scene window:
 
