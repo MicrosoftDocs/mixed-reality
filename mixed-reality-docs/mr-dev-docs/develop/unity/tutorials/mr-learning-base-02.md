@@ -92,7 +92,7 @@ In the Unity menu, select **File** > **New Scene** to create a new scene:
 
 ![Unity New Scene menu path](images/mr-learning-base/base-02-section6-step1-1.png)
 
-In the Unity menu, select **Mixed Reality Toolkit** > **Toolkit** > **Add to Scene and Configure...** to add the MRTK to your current scene:
+In the Unity menu, select **Mixed Reality** > **Toolkit** > **Add to Scene and Configure...** to add the MRTK to your current scene:
 
 ![Unity Add to Scene and Configure... menu path](images/mr-learning-base/base-02-section6-step1-2.png)
 
