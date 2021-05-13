@@ -11,6 +11,7 @@ keywords: event, calendar, academy, schedule, build, microsoft
 # Microsoft Mixed Reality - Build 2021 sessions
 
 Join the Microsoft Mixed Reality Team at Build 2021! Make Mixed Reality your Reality
+
 ## Important Details
 
 **Date - May 25th through May 27th, 2021**
@@ -18,7 +19,7 @@ Join the Microsoft Mixed Reality Team at Build 2021! Make Mixed Reality your Rea
 ## Registration
 
 > [!div class="nextstepaction"] 
-> [Register for Build 2021 Today!](https://register.build.microsoft.com/)
+> [Register for Microsoft Build 2021 Today!](https://register.build.microsoft.com/)
 
 <br>
 
