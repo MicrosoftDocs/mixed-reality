@@ -66,14 +66,14 @@ For answers on your developer questions from the community developer ecosystem, 
     <img alt='Reddit' src='https://docs.microsoft.com/en-gb/media/logos/logo_reddit.svg'>
 </div><br/>
 
-- [Windows Mixed Reality](https://www.reddit.com/r/WindowsMR/)
+- [Windows Mixed Reality on Reddit](https://www.reddit.com/r/WindowsMR/)
 
 #### Post a question on Stack Overflow
 <div class='icon is-large'>
     <img alt='Stack Overflow' src='https://docs.microsoft.com/media/logos/logo_stackoverflow.svg'>
 </div><br/>
 
-- [Windows Mixed Reality](https://stackoverflow.com/questions/tagged/windows-mixed-reality)
+- [Windows Mixed Reality on Stackoverflow](https://stackoverflow.com/questions/tagged/windows-mixed-reality)
 
 ## See also
 
