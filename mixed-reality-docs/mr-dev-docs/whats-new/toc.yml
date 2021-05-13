@@ -18,6 +18,8 @@
   href: new-microsoft-edge.md 
 - name: Programs and events
   items: 
+      name: Build 2021 - Mixed Reality
+      href: mr-build.md 
     - name: Mixed Reality Speaker Series
       href: sf-academy-events.md 
     - name: Mixed Reality Dev Days 
