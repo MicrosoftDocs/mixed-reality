@@ -1,5 +1,5 @@
 ---
-title: InputState
+title: Input State
 description: Documentation on Input States in MRTK
 author: keveleigh
 ms.author: kurtie

@@ -1,5 +1,5 @@
 ---
-title: SceneUnderstanding
+title: Scene Understanding
 description: describes Scene Understanding in MRTK
 author: MaxWang-MS
 ms.author: wangmax

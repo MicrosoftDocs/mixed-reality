@@ -1,5 +1,5 @@
 ---
-title: HTKToMRTKPortingGuide
+title: HTK To MRTK Porting Guide
 description: Migration from HTK to MRTK.
 author: keveleigh
 ms.author: kurtie

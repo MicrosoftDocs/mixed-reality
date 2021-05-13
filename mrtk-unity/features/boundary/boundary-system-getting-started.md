@@ -1,5 +1,5 @@
 ---
-title: BoundarySystemGettingStarted
+title: Boundary System Getting Started
 description: Landing page for Boundary system in MRTK
 author: davidkline-ms
 ms.author: davidkl

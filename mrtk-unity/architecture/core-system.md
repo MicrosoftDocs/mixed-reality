@@ -1,5 +1,5 @@
 ---
-title: CoreSystem
+title: Core System
 description: Input system, Device managers and data providers in MRTK
 author: cDiaz-MS
 ms.author: cadia

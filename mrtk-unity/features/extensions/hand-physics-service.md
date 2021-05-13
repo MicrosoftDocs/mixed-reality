@@ -1,5 +1,5 @@
 ---
-title: HandPhysicsServiceOverview
+title: Hand Physics Service Overview
 description: documentation to use Hand physics extension service in MRTK
 author: RogPodge
 ms.author: roliu

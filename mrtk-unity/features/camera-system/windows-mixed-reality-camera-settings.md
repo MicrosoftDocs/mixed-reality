@@ -1,5 +1,5 @@
 ---
-title: WindowsMixedRealityCameraSettings
+title: Windows Mixed Reality Camera Settings
 description: Documentation to use Windows Mixed Reality Camera in MRTK
 author: davidkline-ms
 ms.author: davidkl

@@ -1,5 +1,5 @@
 ---
-title: TeleportHotspot
+title: Teleport Hotspot
 description: Documentation on the Teleport Hotspot Component in MRTK
 author: RogPodge
 ms.author: roliu

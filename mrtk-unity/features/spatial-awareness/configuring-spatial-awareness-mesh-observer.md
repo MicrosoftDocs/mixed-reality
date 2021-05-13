@@ -1,5 +1,5 @@
 ---
-title: ConfiguringSpatialAwarenessMeshObserver
+title: Configuring Spatial Awareness Mesh Observer
 description: How configure the out-of-box Spatial Mesh Observer in MRTK
 author: davidkline-ms
 ms.author: davidkl

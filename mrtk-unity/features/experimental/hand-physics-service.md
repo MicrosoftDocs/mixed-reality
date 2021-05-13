@@ -1,5 +1,5 @@
 ---
-title: HandPhysicsExtensionService
+title: Hand Physics Extension Service
 description: description Hand Physics extension services.
 author: CDiaz-MS
 ms.author: cadia

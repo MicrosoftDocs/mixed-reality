@@ -1,5 +1,5 @@
 ---
-title: MRTK_Configuration_Dialog
+title: MRTK Configuration Dialog
 description: Configure MRTK in Unity Project
 author: polar-kev
 ms.author: kesemple

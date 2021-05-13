@@ -1,5 +1,5 @@
 ---
-title: MRTKStandardShader
+title: MRTK Standard Shader
 description: Documentation for MRTKStandardShader
 author: CDiaz-MS
 ms.author: cadia

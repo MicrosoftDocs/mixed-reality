@@ -1,5 +1,5 @@
 ---
-title: EyeTracking_EyesAndHands
+title: Eye Tracking Eyes And Hands
 description: How to use eye targeting as a primary pointer in combination with hand motions in MRTK
 author: CDiaz-MS
 ms.author: cadia

@@ -1,5 +1,5 @@
 ---
-title: HowToAddNearInteractivity
+title: How To Add Near Interactivity
 description: Documentation on Near interaction in MRTK
 author: keveleigh
 ms.author: kurtie
