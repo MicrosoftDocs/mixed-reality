@@ -46,7 +46,7 @@ If you are new to to the Git workflow, [check out this introduction from Github]
 
 When adding a bug fix or feature, follow these steps:
 
-1. Implement the bug fix or feature. Instructions for building and deploying MRTK are at [BuildAndDeploy](../updates-deployment/build-and-deploy.md). Remember to follow the [Coding Guidelines](../contributing/coding-guidelines.md).
+1. Implement the bug fix or feature. Instructions for building and deploying MRTK are at [Deploying to Hololens and WMR devices](../supported-devices/wmr-mrtk.md). Remember to follow the [Coding Guidelines](../contributing/coding-guidelines.md).
 1. If adding a feature, also add an example scene that demonstrates the feature.
 1. If adding an experimental feature, then writing tests and documentation are not necessary. Instead, follow [experimental feature guidelines](../contributing/experimental-features.md).
 1. Add tests to verify the bug fix / feature. Instructions for writing and running tests are at [UnitTests](../contributing/unit-tests.md).
