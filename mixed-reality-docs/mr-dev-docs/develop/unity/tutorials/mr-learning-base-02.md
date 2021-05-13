@@ -87,9 +87,13 @@ Open the executable file **MixedRealityFeatureTool** from the downloaded folder 
 
 ## Creating the scene and configuring MRTK
 
-In the Unity menu, select **File** > **New Scene** to create a new scene:
+In the Unity menu, select **File** > **New Scene**:
 
 ![Unity New Scene menu path](images/mr-learning-base/base-02-section6-step1-1.png)
+
+In the **New Scene** window select **Basic (Built-in)** and click on **create** to create a new scene:
+
+![Unity New Scene menu path](images/mr-learning-base/base-02-section6-step1-1-newscene.png)
 
 In the Unity menu, select **Mixed Reality** > **Toolkit** > **Add to Scene and Configure...** to add the MRTK to your current scene:
 
