@@ -2,6 +2,7 @@
 title: Troubleshooting Windows Mixed Reality
 description: Keep up to date with Windows Mixed Reality troubleshooting that goes beyond our standard consumer support documentation.
 ms.topic: article
+ms.author: rajhawar
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support
 ---
 
@@ -9,9 +10,12 @@ keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Trouble
 
 ![Troubleshooting header logo](images/1050px-Mixedrealityportal.png)
 
-## What's new!
+If you run into trouble with your immersive hardware, it's important to diagnose the general issue area and then refer to the following articles for more detailed help.
 
-In honor of the newly released HP Reverb G2 headset and controllers, we've compiled a [dedicated FAQ page](reverbG2-faq.yml) for all things G2. This article covers everything from connection problems and image clarity to motion controllers issues and running Mixed Reality.
+Here you will find the support options for the following options ensuring you are directed to the right information with least hassle. We also cover community resources and self-service content options for you to explore.
+
+>[!Note]
+>In honor of the newly released HP Reverb G2 headset and controllers, we've compiled a [dedicated FAQ page](reverbG2-faq.yml) for all things G2. This article covers everything from connection problems and image clarity to motion controllers issues and running Mixed Reality.
 
 ## Troubleshooting topics
 
@@ -53,5 +57,24 @@ If you're PC is running slow, getting too warm under the hood, or just experienc
 
 - [Performance](performance-questions.md)
 
+### Community help options
+
+For answers on your developer questions from the community developer ecosystem, ask your question on Stack Overflow or Reddit.
+
+#### Post a question on Reddit
+<div class='icon is-large'>
+    <img alt='Reddit' src='https://docs.microsoft.com/en-gb/media/logos/logo_reddit.svg'>
+</div><br/>
+
+- [Windows Mixed Reality](https://www.reddit.com/r/WindowsMR/)
+
+#### Post a question on Stack Overflow
+<div class='icon is-large'>
+    <img alt='Stack Overflow' src='https://docs.microsoft.com/media/logos/logo_stackoverflow.svg'>
+</div><br/>
+
+- [Windows Mixed Reality](https://stackoverflow.com/questions/tagged/windows-mixed-reality)
+
 ## See also
-- [Other questions](other-questions.md)
+
+- [Additional questions](other-questions.md)
