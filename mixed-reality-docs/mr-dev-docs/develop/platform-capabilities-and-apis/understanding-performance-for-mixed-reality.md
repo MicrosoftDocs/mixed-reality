@@ -12,6 +12,11 @@ keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Perform
 
 This article is an introduction to understanding the significance of performance for your Mixed Reality app.  User experience can be greatly degraded if your application doesn't run at optimal frame rate. Holograms will appear unstable and head tracking of the environment will be inaccurate, leading to a poor experience for the user. Performance must be considered a first class feature for mixed reality development and not a polish task.
 
+We recently released an application called Quality Fundamentals that covers common performance, design, and environment issues and solutions for HoloLens 2 apps. This app is a great visual demo for the content the follows.
+
+> [!div class="nextstepaction"]
+> [Download the Quality Fundamentals app](https://www.microsoft.com/en-us/p/quality-fundamentals/9mwz852q88fw)
+
 The performant framerate values for each target platform are listed below.
 
 | Platform | Target Frame Rate |

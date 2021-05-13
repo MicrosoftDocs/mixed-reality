@@ -52,13 +52,13 @@ After Unity has finished installing the XR Plug-in Management. Ensure that you a
 
 ![Unity XR Settings with add OpenXR and Microsoft HoloLens features selectedd](../images/mr-learning-base/base-02-section5-step2-2-1-openxr.png)
 
-In the menu bar at the top of the screen, navigate to **Mixed Reality> OpenXR > Apply recommended project settings for HoloLens 2** to get better app performance.
-
-![Mixed Reality menu with OpenXR and Apply recommended project settings for HoloLens 2 selected](../images/mr-learning-base/base-02-section5-step2-openxr-2.png)
-
 >[!Important]
 >If you see a red warning icon next to OpenXR Plugin (Preview), click the icon and select Fix all before continuing. The Unity Editor may need to restart itself for the changes to take effect.
 >![OpenXR project validation menu with all issues selected to be fixed.](../images/mr-learning-base/base-02-section5-step2-openxr-3.png)
+
+In the menu bar at the top of the screen, navigate to **Mixed Reality> OpenXR > Apply recommended project settings for HoloLens 2** to get better app performance.
+
+![Mixed Reality menu with OpenXR and Apply recommended project settings for HoloLens 2 selected](../images/mr-learning-base/base-02-section5-step2-openxr-2.png)
 
 After Unity has finished importing necessary files, the MRTK Project Configurator window should appear again. If it doesn't, use the Unity menu to open it.
 
@@ -102,7 +102,7 @@ In the Project Settings window, select **Player** > **XR Settings**, then use th
 ![Unity Enable 16 Depth](../images/mr-learning-base/base-02-section5-step2-6.png)
 
 > [!TIP]
-> Reducing the Depth Format to 16-bit is optional but my help improve graphics performance in your project. To learn more about this topic, you can refer to the   <a href="/windows/mixed-reality/mrtk-docs/performance/perf-getting-started.md#single-pass-instanced-rendering" target="_blank">  Depth buffer sharing (HoloLens) </a> section of MRTK's  <a href="/windows/mixed-reality/mrtk-docs/performance/perf-getting-started.md#single-pass-instanced-rendering" target="_blank"> Performance </a> documentation.
+> Reducing the Depth Format to 16-bit is optional but my help improve graphics performance in your project. To learn more about this topic, you can refer to the <a href="/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering" target="_blank">Depth buffer sharing (HoloLens)</a> section of MRTK's Performance documentation.
 
 In the Project Settings window, select **Player** > **Publishing Settings**, then in the **Package name** field, enter a suitable name, for example, _MRTKTutorials-GettingStarted_:
 

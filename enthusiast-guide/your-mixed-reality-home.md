@@ -79,7 +79,7 @@ The Windows Mixed Reality home includes a spatial sound simulation where sound f
 
 ## See also
 
-* [Troubleshooting the Windows Mixed Reality home](wmr-setup-faq.md#my-motion-controllers-arent-working)
+* [Troubleshooting the Windows Mixed Reality home](wmr-setup-faq.yml#my-motion-controllers-aren-t-working)
 * [Using games and apps in Windows Mixed Reality](using-games-and-apps-in-windows-mixed-reality.md)
 * [How inside-out tracking works](tracking-system.md)
 * [How motion controllers work](controllers-in-wmr.md)

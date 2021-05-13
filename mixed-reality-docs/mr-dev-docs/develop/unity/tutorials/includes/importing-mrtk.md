@@ -31,7 +31,7 @@ In the bottom left hand of the window, click on the gear symbol to open the sett
 
 ![MixedRealityFeatureTool](../images/mr-learning-base/base-02-section4-step1-2.png)
 
-Under **Feature Seetings**, check the **Include preview releases** box and then click the **OK** button.
+Under **Feature Settings**, check the **Include preview releases** box and then click the **OK** button.
 
 ![MixedRealityFeatureTool Settings window](../images/mrft-settings.png)
 

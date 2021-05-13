@@ -23,6 +23,7 @@ keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reali
 * Optimized transmission of spatial surface meshes which can be queried via [SpatialSurfaceObserver](/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) by a remote app.
 * Fixed an issue in which calling SpatialAnchorManager methods or releasing anchors caused exceptions on disconnect.
 * Fixed threading issue leading to crashes when closing PlayerContext or RemoteContext instances.
+* Holographic Remoting Player on Desktop: Display an error message when Windows Mixed Reality is not installed instead of closing silently.
 * Lots of other bug fixes and stability improvements.
 
 ## Version 2.4.1 (January 22, 2021) <a name="v2.4.1"></a>

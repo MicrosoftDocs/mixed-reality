@@ -4,7 +4,7 @@
   href: mixed-reality-cloud-services.md
 - name: Samples and feature apps
   href: features-and-samples.md
-- name: Install the tools 
+- name: Install the tools
   href: install-the-tools.md
 - name: Porting apps
   items:
@@ -116,8 +116,8 @@
                 href: unity/tutorials/mr-learning-pc-holographic-remoting-02.md
       - name: HoloLens (1st Gen) and immersive headset tutorials
         items:
-          - name: Mixed Reality features 
-            items: 
+          - name: Mixed Reality features
+            items:
               - name: HoloLens (1st gen) Basics 100 - Getting started with Unity
                 href: unity/tutorials/holograms-100.md
               - name: HoloLens (1st gen) Basics 101 - Complete project with device
@@ -179,32 +179,34 @@
     - name: OpenXR plugin supported features
       href: unity/openxr-supported-features.md
     - name: Mixed Reality Feature Tool
-      items: 
+      items:
         - name: Welcome to the MR Feature Tool
           href: unity/welcome-to-mr-feature-tool.md
-        - name: Configure 
+        - name: Configure
           href: unity/configuring-feature-tool.md
         - name: Discover
           href: unity/discovering-features.md
-        - name: Import 
+        - name: Import
           href: unity/importing-features.md
         - name: Package details
           href: unity/viewing-package-details.md
-        - name: Reviewing changes 
+        - name: Reviewing changes
           href: unity/reviewing-changes.md
   - name: Basic building blocks
     items:
       - name: Camera setup
         href: unity/camera-in-unity.md
-      - name: Spatial anchors
+      - name: World-locking and spatial anchors 
         href: unity/spatial-anchors-in-unity.md
-      - name: Interactions 
-        items: 
-          - name: Motion controllers 
+      - name: Shared experiences
+        href: unity/shared-experiences-in-unity.md
+      - name: Interactions
+        items:
+          - name: Motion controllers
             href: unity/motion-controllers-in-unity.md
-          - name: Gestures 
+          - name: Gestures
             href: unity/gestures-in-unity.md
-          - name: Hand and Eye tracking  
+          - name: Hand and Eye tracking
             href: unity/hand-eye-in-unity.md
           - name: Head gaze
             href: unity/gaze-in-unity.md
@@ -218,8 +220,6 @@
         href: unity/spatial-sound-in-unity.md
   - name: Advanced features
     items:
-      - name: Shared experiences
-        href: unity/shared-experiences-in-unity.md
       - name: Photo Video camera in Unity
         href: unity/locatable-camera-in-unity.md
       - name: Holographic Remoting in desktop app
@@ -230,7 +230,7 @@
         href: unity/tracking-loss-in-unity.md
       - name: Keyboard input
         href: unity/keyboard-input-in-unity.md
-      - name: UDP packets in UWP apps 
+      - name: UDP packets in UWP apps
         href: unity/udp-packets-in-unity.md
       - name: Using the Windows namespace with Unity apps for HoloLens
         href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
@@ -469,7 +469,7 @@
         - name: Holographic Remoting software license terms
           href: /legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
         - name: Holographic Remoting for HoloLens (1st Gen)
-          href: 
+          href:
         - name: Adding Holographic Remoting
           href: platform-capabilities-and-apis/add-holographic-remoting.md
     - name: App quality and testing

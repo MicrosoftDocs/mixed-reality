@@ -22,8 +22,8 @@ Surface magnetism lets you place holographic objects on real-world physical surf
 
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides scripts and example scenes for the surface magnetism technique. You can use surface magnetism with various types of inputs such as hand-ray, eye gaze, and motion controllers.
 
-* [MRTK - Surface magnetism solver](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/solvers/solver.md#surfacemagnetism)
-* [MRTK - Spatial awareness + Surface magnetism example scenes](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/Examples/Demos/Solvers/Scenes/SurfaceMagnetismSpatialAwarenessExample.unity)
+* [MRTK - Surface magnetism solver](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver#surfacemagnetism)
+* [MRTK - Spatial awareness + Surface magnetism example scenes](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/main/Assets/MRTK/Examples/Demos/Solvers/Scenes/SurfaceMagnetismSpatialAwarenessExample.unity)
 
 <br>
 

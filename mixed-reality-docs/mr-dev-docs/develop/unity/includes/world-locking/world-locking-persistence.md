@@ -1,62 +1,35 @@
-# [Unity 2020 + OpenXR](#tab/openxr)
+# [World Locking Tools (Recommended)](#tab/wlt)
+
+By default, World Locking Tools will restore Unity's coordinate system relative to the physical world across sessions. This means that to have a hologram appear the same place in the physical world after quitting and re-running the application, the hologram only needs to have the same Pose again.
+
+![World locking context component in Unity inspector](../../images/world-locking-tools-img-02.png)
+
+If the application needs finer control, **Auto-Save** and **Auto-Load** may be disabled in the inspector, and persistence managed from a script as described in the [persistence section of the documentation](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/Concepts/Advanced/Persistence.html).
+
+# [ARAnchorManager](#tab/anchorstore)
 
 An additional API called the **XRAnchorStore** enables anchors to be persisted between sessions. The XRAnchorStore is a representation of the saved anchors on a device. Anchors can be persisted from **ARAnchors** in the Unity scene, loaded from storage into new **ARAnchors**, or deleted from storage.
 
 > [!NOTE]
 > These anchors are to be saved and loaded on the same device. Cross-device anchor storage will be supported through Azure Spatial Anchors in a future release.
 
+### Namespaces
+
+For **Unity 2020 and OpenXR**: 
+
 ``` cs
-public class Microsoft.MixedReality.ARSubsystems.XRAnchorStore
-{
-    // A list of all persisted anchors, which can be loaded.
-    public IReadOnlyList<string> PersistedAnchorNames { get; }
-
-    // Clear all persisted anchors
-    public void Clear();
-
-    // Load a single persisted anchor by name. The ARAnchorManager will create this new anchor and report it in
-    // the ARAnchorManager.anchorsChanged event. The TrackableId returned here is the same TrackableId the
-    // ARAnchor will have when it is instantiated.
-    public TrackableId LoadAnchor(string name);
-
-    // Attempts to persist an existing ARAnchor with the given TrackableId to the local store. Returns true if
-    // the storage is successful, false otherwise.
-    public bool TryPersistAnchor(string name, TrackableId trackableId);
-
-    // Removes a single persisted anchor from the anchor store. This will not affect any ARAnchors in the Unity
-    // scene, only the anchors in storage.
-    public void UnpersistAnchor(string name);
-}
+using Microsoft.MixedReality.ARSubsystems.XRAnchorStore
 ```
 
-To load the XRAnchorStore, the plugin provides an extension method on the XRAnchorSubsystem, the subsystem of an ARAnchorManager:
+or **Unity 2019/2020 + Windows XR Plugin**: 
 
-``` cs
-public static Task<XRAnchorStore> LoadAnchorStoreAsync(this XRAnchorSubsystem anchorSubsystem)
+```cs 
+using UnityEngine.XR.WindowsMR.XRAnchorStore
 ```
 
-To use this extension method, access it from an ARAnchorManager's subsystem as follows:
+### Public methods
 
-``` cs
-ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>();
-XRAnchorStore anchorStore = await arAnchorManager.subsystem.LoadAnchorStoreAsync();
-```
-
-To see a full example of persisting / unpersisting anchors, check out the Anchors -> Anchors Sample GameObject and AnchorsSample.cs script in the [Mixed Reality OpenXR Plugin Sample Scene](../openxr-getting-started.md#hololens-2-samples):
-
-![Screenshot of the hierarchy panel open in the Unity Editor with the anchors sample highlighted](../images/openxr-features-img-04.png)
-
-![Screenshot of the inspector panel open in the Unity Editor with the anchors sample script highlighted](../images/openxr-features-img-05.png)
-
-# [Unity 2019/2020 + Windows XR Plugin](#tab/winxr)
-
-An API called the **XRAnchorStore** enables anchors to be persisted between sessions. The XRAnchorStore is a representation of the saved anchors on a device. Anchors can be persisted from **ARAnchors** in the Unity scene, loaded from storage into new **ARAnchors**, or deleted from storage.
-
-> [!NOTE]
-> These anchors are to be saved and loaded on the same device. Cross-device anchor storage will be supported through Azure Spatial Anchors in a future release.
-
-``` cs
-public class UnityEngine.XR.WindowsMR.XRAnchorStore
+```cs 
 {
     // A list of all persisted anchors, which can be loaded.
     public IReadOnlyList<string> PersistedAnchorNames { get; }
@@ -79,28 +52,52 @@ public class UnityEngine.XR.WindowsMR.XRAnchorStore
 }
 ```
 
-To load the XRAnchorStore, the plugin provides an extension method on the XRReferencePointSubsystem (Unity 2019) or XRAnchorSubsystem (Unity 2020), the subsystem of an ARReferencePointManager/ARAnchorManager:
+### Getting an anchor store reference 
+
+To load the XRAnchorStore with **Unity 2020 and OpenXR**, use extension method on the XRAnchorSubsystem, the subsystem of an ARAnchorManager:
 
 ``` cs
-public static Task<XRAnchorStore> TryGetAnchorStoreAsync(this XRReferencePointSubsystem anchorSubsystem); // Unity 2019
-public static Task<XRAnchorStore> TryGetAnchorStoreAsync(this XRAnchorSubsystem anchorSubsystem); // Unity 2020
+public static Task<XRAnchorStore> LoadAnchorStoreAsync(this XRAnchorSubsystem anchorSubsystem)
 ```
 
-To use this extension method, access it from an ARAnchorManager's subsystem as follows for Unity 2019:
+To load the XRAnchorStore with **Unity 2019/2020 and the Windows XR Plugin**, use the extension method on the XRReferencePointSubsystem (Unity 2019) or XRAnchorSubsystem (Unity 2020), the subsystem of an ARReferencePointManager/ARAnchorManager:
+
+```cs
+// Unity 2019 + Windows XR Plugin
+public static Task<XRAnchorStore> TryGetAnchorStoreAsync(this XRReferencePointSubsystem anchorSubsystem);
+
+// Unity 2020 + Windows XR Plugin
+public static Task<XRAnchorStore> TryGetAnchorStoreAsync(this XRAnchorSubsystem anchorSubsystem);
+```
+
+### Loading an anchor store
+
+To load an anchor store in **Unity 2020 and OpenXR**, access it from an ARAnchorManager's subsystem as follows:
 
 ``` cs
+ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>();
+XRAnchorStore anchorStore = await arAnchorManager.subsystem.LoadAnchorStoreAsync();
+```
+
+or with **Unity 2019/2020 and the Windows XR Plugin**:
+
+``` cs
+// Unity 2019
 ARReferencePointManager arReferencePointManager = GetComponent<ARReferencePointManager>();
 XRAnchorStore anchorStore = await arReferencePointManager.subsystem.TryGetAnchorStoreAsync();
-```
 
-or for Unity 2020:
-
-``` cs
+// Unity 2020
 ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>();
 XRAnchorStore anchorStore = await arAnchorManager.subsystem.TryGetAnchorStoreAsync();
 ```
 
-# [Legacy WSA](#tab/wsa)
+To see a full example of persisting / unpersisting anchors, check out the Anchors -> Anchors Sample GameObject and AnchorsSample.cs script in the [Mixed Reality OpenXR Plugin Sample Scene](../../openxr-getting-started.md#hololens-2-samples):
+
+![Screenshot of the hierarchy panel open in the Unity Editor with the anchors sample highlighted](../../images/openxr-features-img-04.png)
+
+![Screenshot of the inspector panel open in the Unity Editor with the anchors sample script highlighted](../../images/openxr-features-img-05.png)
+
+# [WorldAnchor](#tab/worldanchor)
 
 The **WorldAnchorStore** is the key to creating holographic experiences where holograms stay in specific real world positions across instances of the application. Users can then pin individual holograms wherever they want, and find them later in the same spot over many uses of your app.
 

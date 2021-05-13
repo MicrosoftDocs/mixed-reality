@@ -198,15 +198,16 @@ The concept of point and commit for far interaction was created and defined for 
 
 ## Hand ray in MRTK (Mixed Reality Toolkit) for Unity
 
-By default, MRTK provides a hand ray prefab ([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers)) which has the same visual state as the shell's system hand ray. It's assigned in MRTK's Input profile, under Pointers. In an immersive headset, the same rays are used for the motion controllers.
+By default, MRTK provides a hand ray prefab ([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers)) which has the same visual state as the shell's system hand ray. It's assigned in MRTK's Input profile, under Pointers. In an immersive headset, the same rays are used for the motion controllers.
 
-* [MRTK - Pointer profile](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mixed-reality-configuration-guide.md#pointer-configuration)
-* [MRTK - Input system](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md)
-* [MRTK - Pointers](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/pointers.md)
+* [MRTK - Pointer profile](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide#pointer-configuration)
+* [MRTK - Input system](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview)
+* [MRTK - Pointers](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/pointers)
 
 ---
 
 ## See also
+
 * [Direct manipulation with hands](direct-manipulation.md)
 * [Gaze and commit](gaze-and-commit.md)
 * [Hands - Direct manipulation](direct-manipulation.md)
