@@ -28,22 +28,34 @@ The easiest way to develop in Unity is with the Mixed Reality Toolkit. MRTK will
 
 |  Checkpoint  |  Outcome  |
 | --- | --- |
-| [What is MRTK?](mrtk-getting-started.md) | Begin your journey by getting acquainted with the Mixed Reality Toolkit and what it has to offer |
-| [Install the latest tools](../install-the-tools.md) | Download and install the latest Unity package and setup your project for mixed reality |
-| [HoloLens 2 tutorial series](tutorials/mr-learning-base-01.md) | Dive into beginner level MRTK tutorials for HoloLens 2 hardware |
-| **Optional** [Download the Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md) | A new developer tool for discovering, updating, and adding Mixed Reality feature packages to your Unity projects |
+| [Introducing the Mixed Reality Toolkit](mrtk-getting-started.md) | Begin your journey by getting acquainted with the Mixed Reality Toolkit and what it has to offer |
+| [Download the Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md) | A new developer tool for discovering, updating, and adding Mixed Reality feature packages to your Unity projects |
+| [Setup your developer environment](../install-the-tools.md) | Download and install the latest Unity package and setup your project for mixed reality |
+| [Complete the HoloLens 2 tutorial series](tutorials/mr-learning-base-01.md) | Dive into beginner level MRTK tutorials for HoloLens 2 hardware |
 
 > [!IMPORTANT]
-> If you'd like to create a new Unity project without importing Mixed Reality Toolkit, there are a small set of Unity settings you'll need to manually change for Windows Mixed Reality. These are broken down into two categories: per-project and per-scene. Take a look at our [configuration guide](configure-unity-project.md) for the step-by-step process.
+> If you'd like to create a new Unity project without importing Mixed Reality Toolkit, there are a small set of Unity settings you'll need to manually change for Windows Mixed Reality. Take a look at our [configuration guide](choosing-unity-version.md) for more information.
 
 > [!NOTE]
-> Once you've setup MRTK V2 in your project, standard Unity game objects like the camera will light up immediately for a seated-scale experience. You can find instructions on changing the experience scale of your application on the [coordinate systems](coordinate-systems-in-unity.md) page.
+> Once you've setup MRTK in your project, standard Unity game objects like the camera will light up immediately for a seated-scale experience. You can find instructions on changing the experience scale of your application on the [coordinate systems](coordinate-systems-in-unity.md) page.
 
 ## 2. Core building blocks
 
 All of the core building blocks for mixed reality applications are exposed in a manner consistent with other Unity APIs. These building blocks are available as standalone features and through the Mixed Reality Toolkit. You might not need all of them at once, but we recommend exploring early on. After diving into the core building blocks listed below, you'll have a toolbox full of features you can integrate into a Mixed Reality project by themselves or through MRTK.
 
-[!INCLUDE[](../includes/unity-building-blocks.md)]
+|  Feature  |  Capabilities  |
+| --- | --- |
+| [Camera](../unity/camera-in-unity.md) | Fully optimize visual quality and hologram stability in your Mixed Reality apps |
+| [World locking and spatial anchors](spatial-anchors-in-unity.md) | Solve stabilization issues, camera adjustment, and integrate a stable coordinate system solution |
+| [Shared experiences](shared-experiences-in-unity.md) | View and interact collectively with the same hologram at a fixed point in space using spatial anchor sharing |
+| [Gaze](../unity/gaze-in-unity.md) | Let users target holograms with by looking at them |
+| [Motion controllers](../unity/motion-controllers-in-unity.md) | Add spatial actions to your Mixed Reality apps |
+| [Gestures](../unity/gestures-in-unity.md) | Use hand gestures as input in your Mixed Reality experiences |
+| [Hand and eye tracking](../unity/hand-eye-in-unity.md) | Integrate articulated hand and eye tracking input into your user experience |
+| [Spatial mapping](../unity/spatial-mapping-in-unity.md) | Map your physical space with a virtual mesh overlay to mark the boundaries of your environment |
+| [Spatial sound](../unity/spatial-sound-in-unity.md) | Enhance your apps with immersive 3D audio |
+| [Text](../unity/text-in-unity.md) | Get sharp, high-quality text that has a manageable size and quality rendering |
+| [Voice input](../unity/voice-input-in-unity.md) | Capture spoken keywords, phrases, and dictation from your users|
 
 ## 3. Advanced features
 
@@ -51,8 +63,7 @@ Other key features that play a role in mixed reality applications are available 
 
 |  Feature  |  Capabilities  |
 | --- | --- |
-| [Shared experiences](shared-experiences-in-unity.md) | View and interact collectively with the same hologram at a fixed point in space using spatial anchor sharing |
-| [Locatable camera](locatable-camera-in-unity.md) | Capture photos and video content in your Mixed Reality application |
+| [Photo video camera](locatable-camera-in-unity.md) | Capture photos and video content in your Mixed Reality application |
 | [Focus point](focus-point-in-unity.md) | Provide HoloLens a hint about how to best perform stabilization on the holograms currently being displayed |
 | [Tracking loss](tracking-loss-in-unity.md) | Handle scenarios where your device can't locate itself in the applications world space |
 | [Keyboard input](keyboard-input-in-unity.md) | Get input from real-world and Mixed Reality keyboards in your apps |

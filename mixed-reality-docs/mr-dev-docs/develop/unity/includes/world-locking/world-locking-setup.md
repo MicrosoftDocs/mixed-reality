@@ -1,19 +1,37 @@
-# [Unity 2020 + OpenXR](#tab/openxr)
+# [World Locking Tools (Recommended)](#tab/wlt)
+
+We recommend installing World Locking Tools using the new Mixed Reality Feature Tool. Once you've downloaded the Mixed Reality Feature Tool from the link below, select the latest version of **WLT Core** from the **World Locking Tools** section:
+
+![Mixed Reality Feature Tool feature selection window with World Locking Tools selected](../../images/spatial-anchors-setup-img-01.png)
+
+> [!div class="nextstepaction"]
+> [Install World Locking Tools with the MR Feature Tool](../../welcome-to-mr-feature-tool.md)
+
+### Automated setup
+
+When your project is ready to go, run the configure scene utility from **Mixed Reality Toolkit > Utilities > World Locking Tools**:
+
+![Unity editor with Mixed Reality Toolkit menu selected](../../images/world-locking-configuration-img-01.jpeg)
+
+> [!IMPORTANT]
+> The Configure scene utility can be rerun at any time. For example, it should be rerun if the AR target has been changed from Legacy to XR SDK. If the scene is already properly configured, running the utility has no effect.
+
+### Visualizers
+
+During early development, adding visualizers can be helpful to ensure WLT is setup and working properly. They can be removed for production performance, or if for any reason are no longer needed, using the Remove visualizers utility. More details on the visualizers can be found in the [Tools documentation](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/Tools.html#visualizers).
+
+# [ARAnchorManager](#tab/anchorstore)
 
 The Mixed Reality OpenXR Plugin supplies basic anchor functionality through an implementation of Unity’s ARFoundation **ARAnchorManager**. To learn the basics on ARAnchors in ARFoundation, visit the [ARFoundation Manual for AR Anchor Manager](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/anchor-manager.html). 
 
-# [Unity 2019/2020 + Windows XR Plugin](#tab/winxr)
-
-The Mixed Reality OpenXR Plugin supplies basic anchor functionality through an implementation of Unity’s ARFoundation **ARAnchorManager**. To learn the basics on ARAnchors in ARFoundation, visit the [ARFoundation Manual for AR Anchor Manager](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/anchor-manager.html).
-
-# [Legacy WSA](#tab/wsa)
+# [WorldAnchor](#tab/worldanchor)
 
 ## Building a world-scale experience
 
 **Namespace:** *UnityEngine.XR.WSA*<br>
 **Type:** *WorldAnchor*
 
-For true **world-scale experiences** on HoloLens that let users wander beyond 5 meters, you'll need new techniques beyond those used for room-scale experiences. One key technique you'll use is to create a [spatial anchor](../../../design/coordinate-systems.md#spatial-anchors) to lock a cluster of holograms precisely in place in the physical world, no matter how far the user has roamed, and then [find those holograms again in later sessions](../../../design/coordinate-systems.md#spatial-anchor-persistence).
+For true **world-scale experiences** on HoloLens that let users wander beyond 5 meters, you'll need new techniques beyond those used for room-scale experiences. One key technique you'll use is to create a [spatial anchor](../../../../design/coordinate-systems.md#spatial-anchors) to lock a cluster of holograms precisely in place in the physical world, no matter how far the user has roamed, and then [find those holograms again in later sessions](../../../../design/coordinate-systems.md#spatial-anchor-persistence).
 
 In Unity, you create a spatial anchor by adding the **WorldAnchor** Unity component to a GameObject.
 

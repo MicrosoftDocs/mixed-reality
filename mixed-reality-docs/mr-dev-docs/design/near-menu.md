@@ -21,7 +21,7 @@ A near menu is a collection of buttons on a panel that follow your users with [t
 ## Near menu in MRTK (Mixed Reality Toolkit) for Unity
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides various near menu prefab examples.
 
-* [MRTK - Near menu](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/near-menu.md)
+* [MRTK - Near menu](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/near-menu)
 
 <br>
 

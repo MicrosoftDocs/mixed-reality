@@ -177,7 +177,7 @@ Entering mixed reality a second time is as easy as putting the headset back on w
 * [Ask the community](https://answers.microsoft.com)
 * [Contact us for support](https://support.microsoft.com/contactus/)
 * [Troubleshooting installation](installation_errors.md)
-* [Troubleshooting setup](wmr-setup-faq.md)
+* [Troubleshooting setup](wmr-setup-faq.yml)
 * [Learn Mixed Reality](learn-mixed-reality.md)
 * [Motion controllers](controllers-in-wmr.md)
 * [How inside-out tracking works](tracking-system.md)
