@@ -48,7 +48,7 @@ In the Hierarchy window, select the **MixedRealityToolkit** object, then in the 
 
 ![Unity MixedRealityToolkit component with DefaultHoloLens2ConfigurationProfile selected](images/mr-learning-base/base-03-section1-step1-1.png)
 
-With the **MixedRealityToolkit** object still selected, in the Inspector window, click the **Copy & Customize** button to open the Clone Profile window:
+With the **MixedRealityToolkit** object still selected, in the Inspector window, click the **Clone** button to open the Clone Profile window:
 
 ![Unity MixedRealityToolkit component Copy & Customize button](images/mr-learning-base/base-03-section1-step1-2.png)
 
@@ -88,19 +88,7 @@ The newly created Spatial Awareness System Profile is now automatically assigned
 
 ![Unity MixedRealityToolkit component with newly created custom MixedRealitySpatialAwarenessSystemProfile applied](images/mr-learning-base/base-03-section1-step3-3.png)
 
-### 4. Clone the default Spatial Awareness Mesh Observer Profile
-
-With the **Spatial Awareness** tab still selected, expand the **Windows Mixed Reality Spatial Mesh Observer** section, then click the **Clone** button to open the Clone Profile window:
-
-![Unity MixedRealityToolkit component with Windows Mixed Reality Spatial Mesh Observer section expanded](images/mr-learning-base/base-03-section1-step4-1.png)
-
-In the Clone Profile window, enter a suitable **Profile Name**, for example, _GettingStarted_MixedRealitySpatialAwarenessMeshObserverProfile_, then click the **Clone** button to create an editable copy of the **DefaultMixedRealitySpatialAwarenessMeshObserverProfile**:
-
-![Unity MixedRealityToolkit clone Spatial Mesh Observer Profile popup window](images/mr-learning-base/base-03-section1-step4-2.png)
-
-The newly created Spatial Awareness Mesh Observer Profile is now automatically assigned to your Spatial Awareness System Profile:
-
-![Unity MixedRealityToolkit component with newly created custom MixedRealitySpatialAwarenessMeshObserverProfile applied](images/mr-learning-base/base-03-section1-step4-3.png)
+[!INCLUDE[](includes/configuring-profile.md)]
 
 ### 5. Change the visibility of the spatial awareness mesh
 
