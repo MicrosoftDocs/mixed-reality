@@ -49,7 +49,6 @@ If you’re using **Unity 2020.3 LTS**, you can use the **Windows XR plugin** to
 
 However, there are known issues that affect hologram stability and other features on HoloLens 2: 
 
-* Depth buffer submission has regressed in recent Unity 2020 builds, which results in severe hologram instability.
 * Holographic app remoting applications using the Universal Windows Platform build target are not working.
 * The Unity graphics jobs system is defaulted on, even though it is not compatible with HoloLens projects.
 
@@ -64,7 +63,7 @@ Unity 2020.3 LTS also supports a public preview of the **Mixed Reality OpenXR** 
 
 The Mixed Reality OpenXR plugin fully supports AR Foundation 4.0, providing ARPlaneManager and ARRaycastManager implementations. This enables you to write hit-testing code once that then spans HoloLens 2 and ARCore/ARKit phones and tablets. 
 
-Later this year, **Unity 2020.3 LTS with the OpenXR plugin** will become the recommended Unity configuration, and future HoloLens 2 features in Unity will be exposed only through this plugin.  You can start your project here for now - however, if your project targets HoloLens 2, you will currently encounter the Unity 2020 hologram stability and other issues listed above.  Be sure to check back in the coming months for updated Unity builds and OpenXR plugin builds before shipping your app.  This will ensure that your users experience proper hologram stability. 
+Later this year, **Unity 2020.3 LTS with the OpenXR plugin** will become the recommended Unity configuration, and future HoloLens 2 features in Unity will be exposed only through this plugin.
 
 > [!div class="nextstepaction"]
 > [Using the OpenXR plugin](openxr-getting-started.md)
