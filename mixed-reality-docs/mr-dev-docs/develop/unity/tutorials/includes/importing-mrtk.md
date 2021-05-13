@@ -42,6 +42,9 @@ Click on **Built-in Unity Plugin(non-OpenXR)** to Enable XR Plugin Management an
 
 ![ MRTK configurator tool](../images/mr-learning-base/base-02-section5-step1-2xrsdk.png)
 
+> [!NOTE]
+> The above screenshot is from Unity 2020, if you using Unity 2019 please select **XR SDK/XR Management**
+
 this imports required unity packages for XR Plugin Management, once done click on **Show Settings** in MRTK project Configurator.
 
 ![Player settings window](../images/mr-learning-base/base-02-section5-step1-3xrsdk.png)
@@ -88,8 +91,8 @@ In the Project Settings window, select **Player** > **Publishing Settings**, the
 > [!TIP]
 > The 'Product Name' is the name displayed in the HoloLens Start menu. To make the app easier to locate during development, add an underscore in front of the name to sort it to the top.
 
-
 # [Unity 2020 + OpenXR](#tab/openxr)
+
 Once **MixedRealityFeatureTool** is opened click on **Start** to get started with Mixed Reality Feature Tool.
 
 ![MixedRealityFeatureTool for legacy WSA](../images/mr-learning-base/base-02-section4-step1-2.png)
@@ -162,7 +165,6 @@ Use the Unity menu to open MRTK Project Configurator, In the MRTK Project Config
 
 ![Project Settings Window](../images/mr-learning-base/base-02-section5-step1-9-openxr.png)
 
-
 Once you click on Apply, Unity will try to restart for the input system to take into effect, click on **Apply** to restart the Unity editor
 
 ![Project Settings Window](../images/mr-learning-base/base-02-section5-step1-10-openxr.png)
@@ -191,6 +193,7 @@ In the Project Settings window, select **Player** > **Publishing Settings**, the
 > The 'Product Name' is the name displayed in the HoloLens Start menu. To make the app easier to locate during development, add an underscore in front of the name to sort it to the top.
 
 # [Legacy WSA](#tab/wsa)
+
 Once **MixedRealityFeatureTool** is opened click on **Start** to get started with Mixed Reality Feature Tool.
 
 ![MixedRealityFeatureTool for legacy WSA](../images/mr-learning-base/base-02-section4-step1-2.png)
@@ -242,7 +245,6 @@ In the MRTK Project Configurator window, ensure all options are checked and also
 
 > * Set Single Pass Instanced rendering path: Improves graphics performance by executing the render pipeline for both eyes in the same draw call. To learn more about this topic, you can refer to the [Single-Pass Instanced rendering](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering) section of MRTK's [Performance](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering) documentation.
 > * Set default Spatial Awareness layer: Creates a Unity Layer named Spatial Awareness and configures MRTK to use this layer for the spatial awareness mesh. To learn more about Unity Layers, you can refer to Unity's <a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">Customizing Your Workspace</a> documentation.
-
 
 > [!TIP]
 >Setting the Audio spatializer property is optional but may improve the audio experience in your project. If you set it to MS HRTF Spatializer, this spatializer plugin will be used when Unity's AudioSource.spatialize property is enabled. To learn more about this topic, you can refer to the  <a href="//windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank"> Spatial audio tutorials</a>.

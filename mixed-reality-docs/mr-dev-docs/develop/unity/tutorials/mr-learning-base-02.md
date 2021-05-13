@@ -83,7 +83,6 @@ Open the executable file **MixedRealityFeatureTool** from the downloaded folder 
 
 ![Opening MixedRealityFeatureTool](images/mr-learning-base/base-02-section4-step1-1.png)
 
-
 [!INCLUDE[](includes/importing-mrtk.md)]
 
 ## Creating the scene and configuring MRTK
@@ -104,7 +103,7 @@ In the Unity menu, select **File** > **Save As...** to open the Save Scene windo
 
 ![Unity Save As... menu path](images/mr-learning-base/base-02-section6-step1-4.png)
 
-Save the scene under **Asset** > **Scenes**.
+Save the scene in you project under **Asset** > **Scenes**.
 
 ![Unity save scene Save prompt window](images/mr-learning-base/base-02-section6-step1-5.png)
 
