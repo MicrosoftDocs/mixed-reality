@@ -36,10 +36,10 @@ In previous tutorial step a basic web page with a scene was created. Have the ho
 <body>
     <canvas id="renderCanvas"></canvas>
     <script>
-        var canvas = document.getElementById("renderCanvas");
-        var engine = new BABYLON.Engine(canvas, true);
+        const canvas = document.getElementById("renderCanvas");
+        const engine = new BABYLON.Engine(canvas, true);
         
-        var createScene = function() {
+        const createScene = function() {
             const scene = new BABYLON.Scene(engine);
             scene.clearColor = new BABYLON.Color3.Black;
             
@@ -60,7 +60,7 @@ In previous tutorial step a basic web page with a scene was created. Have the ho
             return scene;
         };
         
-        var sceneToRender = createScene();
+        const sceneToRender = createScene();
         engine.runRenderLoop(function(){
             sceneToRender.render();
         });
@@ -74,7 +74,7 @@ In previous tutorial step a basic web page with a scene was created. Have the ho
 1. First, let's update our code that creates the cube, so that the cube is painted with a random color. To do that, we will add [material](https://doc.babylonjs.com/divingDeeper/materials/using/materials_introduction) to our cube. Material allows us to specify color and textures and can be used to cover other objects. How a material appears depends on the light or lights used in the scene and how it is set to react. For example, the diffuseColor spreads the color all over the mesh to which it is attached. Add the following code:
 
     ```javascript
-    var boxMaterial = new BABYLON.StandardMaterial("material", scene);
+    const boxMaterial = new BABYLON.StandardMaterial("material", scene);
     boxMaterial.diffuseColor = BABYLON.Color3.Random();
     box.material = boxMaterial;
     ```
@@ -170,7 +170,7 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
 1. In this step we're going to introduce a [ground](https://doc.babylonjs.com/divingDeeper/mesh/creation/set/ground). The cube will be hanging in the air and we will see a floor at the bottom. Add the ground as follows:
 
     ```javascript
-    var ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 4, height: 4});
+    const ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 4, height: 4});
     ```
 
     This creates a simple 4x4-meter floor.
@@ -178,7 +178,7 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
 1. In order to add WebXR support, we need to call *createDefaultXRExperienceAsync*, which has a *Promise* result. Add this code at the end of *createScene* function instead of *return scene;*:
 
     ```javascript
-    var xrPromise = scene.createDefaultXRExperienceAsync({
+    const xrPromise = scene.createDefaultXRExperienceAsync({
         floorMeshes: [ground]
     });
     return xrPromise.then((xrExperience) => {
@@ -200,10 +200,10 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
     <body>
         <canvas id="renderCanvas"></canvas>
         <script>
-            var canvas = document.getElementById("renderCanvas");
-            var engine = new BABYLON.Engine(canvas, true);
+            const canvas = document.getElementById("renderCanvas");
+            const engine = new BABYLON.Engine(canvas, true);
             
-            var createScene = function() {
+            const createScene = function() {
                 const scene = new BABYLON.Scene(engine);
                 scene.clearColor = new BABYLON.Color3.Black;
                 
@@ -221,7 +221,7 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
                 box.position.x = 0.5;
                 box.position.y = 1;
 
-                var boxMaterial = new BABYLON.StandardMaterial("material", scene);
+                const boxMaterial = new BABYLON.StandardMaterial("material", scene);
                 boxMaterial.diffuseColor = BABYLON.Color3.Random();
                 box.material = boxMaterial;
  
@@ -236,9 +236,9 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
                         boxMaterial.diffuseColor = BABYLON.Color3.Random();
                     }));
                     
-                var ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 4, height: 4});
+                const ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 4, height: 4});
                 
-                var xrPromise = scene.createDefaultXRExperienceAsync({
+                const xrPromise = scene.createDefaultXRExperienceAsync({
                     floorMeshes: [ground]
                 });
                 
