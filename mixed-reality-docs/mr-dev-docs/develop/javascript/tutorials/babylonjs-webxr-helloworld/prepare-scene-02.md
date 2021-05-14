@@ -48,8 +48,8 @@ A scene is where all the contents will be displayed. There might be multiple sce
 
     ```html
     <script type="text/javascript">
-        var canvas = document.getElementById("renderCanvas");
-        var engine = new BABYLON.Engine(canvas, true);
+        const canvas = document.getElementById("renderCanvas");
+        const engine = new BABYLON.Engine(canvas, true);
         
         const createScene = function() {
             const scene = new BABYLON.Scene(engine);
@@ -57,7 +57,7 @@ A scene is where all the contents will be displayed. There might be multiple sce
             return scene;
         }
 
-        var sceneToRender = createScene();
+        const sceneToRender = createScene();
     </script>
     ```
 
@@ -128,10 +128,10 @@ A scene is where all the contents will be displayed. There might be multiple sce
     <body>
         <canvas id="renderCanvas"></canvas>
         <script>
-            var canvas = document.getElementById("renderCanvas");
-            var engine = new BABYLON.Engine(canvas, true);
+            const canvas = document.getElementById("renderCanvas");
+            const engine = new BABYLON.Engine(canvas, true);
             
-            var createScene = function() {
+            const createScene = function() {
                 const scene = new BABYLON.Scene(engine);
                 scene.clearColor = new BABYLON.Color3.Black;
                 
@@ -152,7 +152,7 @@ A scene is where all the contents will be displayed. There might be multiple sce
                 return scene;
             };
             
-            var sceneToRender = createScene();
+            const sceneToRender = createScene();
             engine.runRenderLoop(function(){
                 sceneToRender.render();
             });
