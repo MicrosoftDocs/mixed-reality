@@ -187,7 +187,7 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
     });
     ```
 
-1. Since the *createScene* function is now returning a promise instead of a scene, we need to modify how *createScene* and *engine.runRenderLoop* are called. Replace the current calls of these functions, which is located right before the *\</script>* tag, with the code below:
+1. Since the *createScene* function is now returning a promise instead of a scene, we need to modify how *createScene* and *engine.runRenderLoop* are called. Replace the current calls of these functions, which are located right before the *\</script>* tag, with the code below:
 
     ```javascript
     createScene().then(sceneToRender => {
