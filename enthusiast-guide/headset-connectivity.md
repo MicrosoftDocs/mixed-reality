@@ -12,6 +12,10 @@ appliesto:
 
 # Headset connectivity FAQs
 
+## My Headset will not wake up
+
+If your headset is sleeping and clicking the wake up button does not work, restart your PC.
+
 ## My computer does not have an HDMI and/or Display Port
 
 You may need to use an adapter. Go [here](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) for a list of supported adapters.
@@ -19,6 +23,7 @@ You may need to use an adapter. Go [here](recommended-adapters-for-windows-mixed
 ## Can I use USB or HDMI and/or DisplayPort extension cables with Windows Mixed Reality headsets
 
 Windows Mixed Reality headsets don't officially support the use of USB, HDMI, or DisplayPort extension cables. If you're using these cables, the Mixed Reality experience may be affected because of variances in signal integrity and bus power between your PC's USB controller and the Mixed Reality headset. Try using your headset without extension cables if:
+
 * The headset display briefly shows a blue screen and then turns black and Mixed Reality Portal restarts or completely de-enumerates during use
 * The headset audio cuts out or becomes glitchy
 * The headset flickers between black and the correct display
@@ -33,7 +38,7 @@ Windows Mixed Reality headsets don't officially support the use of USB, HDMI, or
 * Connect a PC monitor to your PC's HDMI or DisplayPort port. Make sure your graphics drivers are up to date. Download and install the drivers directly from AMD, Nvidia, or Intel, as they'll likely be newer than what's published to Windows Update.
 * If you have an external monitor plugged into an HDMI port, try plugging it into a DisplayPort instead, and use the HDMI port for your headset.
 * Make sure that you plugged your headset's HDMI cable into an "HDMI out" port on your PC, not an "HDMI in" port.
-* Windows may be unable to detect the display cable connection. Open the Device Manager and see if the headset is listed under "Monitors". If not, select **Action > Scan for hardware changes**. 
+* Windows may be unable to detect the display cable connection. Open the Device Manager and see if the headset is listed under "Monitors". If not, select **Action > Scan for hardware changes**.
 
 ## A message says "Put on your headset" but I have my headset on
 
