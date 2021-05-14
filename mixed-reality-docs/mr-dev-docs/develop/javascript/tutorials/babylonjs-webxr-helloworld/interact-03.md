@@ -91,7 +91,7 @@ In previous tutorial step a basic web page with a scene was created. Have the ho
     box.actionManager.registerAction(new BABYLON.ExecuteCodeAction(
         BABYLON.ActionManager.OnPickTrigger, 
         function (evt) {
-            var sourceBox = evt.meshUnderPointer;
+            const sourceBox = evt.meshUnderPointer;
             
             //move the box upright
             sourceBox.position.x += 0.1;
@@ -115,10 +115,10 @@ In previous tutorial step a basic web page with a scene was created. Have the ho
     <body>
         <canvas id="renderCanvas"></canvas>
         <script>
-            var canvas = document.getElementById("renderCanvas");
-            var engine = new BABYLON.Engine(canvas, true);
+            const canvas = document.getElementById("renderCanvas");
+            const engine = new BABYLON.Engine(canvas, true);
             
-            var createScene = function() {
+            const createScene = function() {
                 const scene = new BABYLON.Scene(engine);
                 scene.clearColor = new BABYLON.Color3.Black;
                 
@@ -136,7 +136,7 @@ In previous tutorial step a basic web page with a scene was created. Have the ho
                 box.position.x = 0.5;
                 box.position.y = 1;
 
-                var boxMaterial = new BABYLON.StandardMaterial("material", scene);
+                const boxMaterial = new BABYLON.StandardMaterial("material", scene);
                 boxMaterial.diffuseColor = BABYLON.Color3.Random();
                 box.material = boxMaterial;
  
@@ -144,7 +144,7 @@ In previous tutorial step a basic web page with a scene was created. Have the ho
                 box.actionManager.registerAction(
                     new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPickTrigger, 
                     function (evt) {
-                        var sourceBox = evt.meshUnderPointer;
+                        const sourceBox = evt.meshUnderPointer;
                         sourceBox.position.x += 0.1;
                         sourceBox.position.y += 0.1;
 
@@ -154,7 +154,7 @@ In previous tutorial step a basic web page with a scene was created. Have the ho
                 return scene;
             };
             
-            var sceneToRender = createScene();
+            const sceneToRender = createScene();
             engine.runRenderLoop(function(){
                 sceneToRender.render();
             });
@@ -229,7 +229,7 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
                 box.actionManager.registerAction(
                     new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPickTrigger, 
                     function (evt) {
-                        var sourceBox = evt.meshUnderPointer;
+                        const sourceBox = evt.meshUnderPointer;
                         sourceBox.position.x += 0.1;
                         sourceBox.position.y += 0.1;
 
