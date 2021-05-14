@@ -85,7 +85,7 @@ A scene is where all the contents will be displayed. There might be multiple sce
 
 ## Add a camera
 
-1. To allow user input, a camera must be attached to the canvas. Let's add the camera of type [BABYLON.ArcRotateCamera](https://doc.babylonjs.com/divingDeeper/cameras/camera_introduction#arc-rotate-camera) which can be rotated around a certain target. The parameters required to create an instance of the camera are:
+1. To allow user input, a camera must be attached to the canvas. Let's add the camera of type [BABYLON.ArcRotateCamera](https://doc.babylonjs.com/divingDeeper/cameras/camera_introduction#arc-rotate-camera), which can be rotated around a certain target. The parameters required to create an instance of the camera are:
     1. **name**: name of the camera
     1. **alpha**: angular position along the longitudinal axis (in radians)
     1. **beta**: angular position along the latitudinal axis (in radians)
