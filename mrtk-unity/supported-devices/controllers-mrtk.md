@@ -11,13 +11,13 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Controll
 
 MRTK has support for many different controllers. Many controllers, such as HTC Vive Knuckles and HTC Vive Wands, will work natively once an application built with MRTK is launched on the compatible device. Other controllers, such as articulated hands on the Oculus Quest and the HP Reverb G2 Controllers, require additional packages before they are recognized by MRTK.
 
-This document will describe the common scenarios where extra packages need to be installed. For additional information about controllers, visit the [**features page**](../features/input/controllers). To debug issues with controllers, see the [**Controller mapping tool**](../features/tools/controller-mapping-tool)
+This document will describe the common scenarios where extra packages need to be installed. For additional information about controllers, visit the [**features page**](../features/input/controllers.md). To debug issues with controllers, see the [**Controller mapping tool**](../features/tools/controller-mapping-tool.md)
 
 ## HP Reverb G2 Controllers
 
-To detect and show the HP Reverb G2 controllers when using MRTK, follow these steps to install the [**Microsoft.MixedReality.Input**](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers#installing-microsoftmixedrealityinput-with-the-mixed-reality-feature-tool) package. Once this package is installed, no other changes to the default profiles need to be made to have the controllers show up on the HP Reverb. 
+To detect and show the HP Reverb G2 controllers when using MRTK, follow these steps to install the [**Microsoft.MixedReality.Input**](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers#installing-microsoftmixedrealityinput-with-the-mixed-reality-feature-tool){:target="_blank"} package. Once this package is installed, no other changes to the default profiles need to be made to have the controllers show up on the HP Reverb. 
 
-In order to display the controllers in editor, you need to ensure that you are using the using the [**OpenXR Plugin**](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/openxr-getting-started).
+In order to display the controllers in editor, you need to ensure that you are using the using the [**OpenXR Plugin**](/windows/mixed-reality/develop/unity/openxr-getting-started){:target="_blank"}.
 
 ## Oculus Controllers 
 
