@@ -8,18 +8,18 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, build, b
 ---
 
 # Build window
-![Build window - Unity Build Options](images/MRTK_BuildWindow0.png)
+![Build & deploy flow](images/MRTK_BuildWindow0.png)
 
 MRTK's build window make it easy to build & deploy your MRTK-Unity projects. With a single button click, you can build Unity project and generate Visual Studio solution(.SLN), UWP App package(.APPX), and install the app package on the device. 
 
 
 ## Unity Build Options
-![Build window - Unity Build Options](images/MRTK_BuildWindow1.png)
+![Build window - Unity Build Options 1](images/MRTK_BuildWindow1.png)
 
 These scenes are from the Unity Build Settings. You can change the target device type using the dropdown menu.
 
 ## Appx Build Options
-![Build window - Appx Build Options](images/MRTK_BuildWindow2.png)
+![Build window - Appx Build Options 2](images/MRTK_BuildWindow2.png)
 
 This tab shows the configuration for the Visual Studio solution. To enabled HoloLens 2's eye-tracking input capability, check **Gaze Input Capability** option. 
 
@@ -29,7 +29,7 @@ By default, **Auto Increment** is checked in the Versioning Options. AppX versio
 
 
 ## Deploy Options
-![Build window - Deploy Options](images/MRTK_BuildWindow3.png)
+![Build window - Deploy Options 3](images/MRTK_BuildWindow3.png)
 
 In this tab, you can connect to the device by entering username and password for the Device Portal. 
 
