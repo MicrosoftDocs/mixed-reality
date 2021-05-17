@@ -1,5 +1,5 @@
 ---
-title: InputFeatureUsageTool
+title: Input Feature Usage Tool
 description: Documentation InputFeatureUsage tool in MRTK
 author: keveleigh
 ms.author: kurtie

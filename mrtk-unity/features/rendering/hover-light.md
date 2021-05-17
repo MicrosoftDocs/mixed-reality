@@ -1,5 +1,5 @@
 ---
-title: HoverLight
+title: Hover Light
 description: Documentation on HoverLight with Examples in MRTK
 author: keveleigh
 ms.author: kurtie

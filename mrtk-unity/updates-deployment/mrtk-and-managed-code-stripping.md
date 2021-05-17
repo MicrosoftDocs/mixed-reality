@@ -1,5 +1,5 @@
 ---
-title: MRTK_and_managed_code_stripping
+title: MRTK and Managed Code Stripping
 description: Code Stripping in MRTK and Unity
 author: davidkline-ms
 ms.author: davidkl

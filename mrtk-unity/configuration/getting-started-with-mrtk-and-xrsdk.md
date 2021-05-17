@@ -1,5 +1,5 @@
 ---
-title: GettingStartedWithMRTKAndXRSDK
+title: Getting Started With MRTK And XRSDK
 description: Landing Page for MRTK with XRSDK
 author: keveleigh
 ms.author: kurtie

@@ -1,5 +1,5 @@
 ---
-title: SceneUnderstanding
+title: Scene Understanding
 description: describes Scene Understanding in MRTK
 author: MaxWang-MS
 ms.author: wangmax
@@ -90,5 +90,5 @@ Saved scene files can be accessed through the [device portal](/windows/mixed-rea
 
 ## See Also
 
-* https://docs.microsoft.com/windows/mixed-reality/scene-understanding
-* https://docs.microsoft.com/windows/mixed-reality/scene-understanding-sdk
+* [Spatial Mapping Overview WMR](/windows/mixed-reality/scene-understanding)
+* [Spatial Mapping Overview WMR](/windows/mixed-reality/scene-understanding-sdk)

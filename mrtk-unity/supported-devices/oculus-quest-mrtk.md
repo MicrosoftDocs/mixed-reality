@@ -1,5 +1,5 @@
 ---
-title: OculusQuestMRTK
+title: Oculus Quest MRTK
 description: Documentation to configure for Oculus Quest in MRTK
 author: RogPodge
 ms.author: roliu

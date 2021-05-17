@@ -1,5 +1,5 @@
 ---
-title: DetectingPlatformCapabilities
+title: Detecting Platform Capabilities
 description: Details of different capabilities MRTK supports
 author: polar-kev
 ms.author: kesemple
