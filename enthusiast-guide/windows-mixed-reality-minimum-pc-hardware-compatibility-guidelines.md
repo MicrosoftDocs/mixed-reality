@@ -14,9 +14,8 @@ appliesto:
 
 ## Features and experiences
 
-Windows 10 powers Windows Mixed Reality for both 60Hz and 90Hz refresh rate.
-
-With Windows Mixed Reality running at 90Hz, you get some extra capabilities and features:
+Windows 10 powers Windows Mixed Reality on variety of headsets across a diverse set of PC hardware.  The power of your PC will determine what experiences you can have.
+With higher end PCs, you get some extra capabilities and features:
 
 * Crisper visuals and a higher refresh rate.
 * More apps and experiences—including the most graphics-intensive games.
@@ -156,102 +155,12 @@ For all other HMDs, refer to the following requirements:
 
 ## Windows Mixed Reality and Surface
 
-For the best Windows Mixed Reality experience on a Surface device, we recommend the latest SurfaceBook (15”) configured with at least the NVIDIA GeForce GTX 1060 GB and 16 GB of RAM.  This configuration supports all Windows Mixed Reality features @ 90Hz and has been tested for Windows Mixed Reality 90Hz.  The latest Surface Book (13.5”), Surface Studio, Surface Laptop, and Surface Pro (2017) will all support some Windows Mixed Reality features when configured with an Intel Core i5 CPU (or better) and at least 8 GB of RAM.
+For the best Windows Mixed Reality experience on a Surface device, we recommend the latest SurfaceBook (15”) configured with at least the NVIDIA GeForce GTX 1060 GB and 16 GB of RAM.  This configuration supports all Windows Mixed Reality features and has been tested for Windows Mixed Reality.  The latest Surface Book (13.5”), Surface Studio, Surface Laptop, and Surface Pro (2017) will all support some Windows Mixed Reality features when configured with an Intel Core i5 CPU (or better) and at least 8 GB of RAM.
 
 **Requirements:**
 
 * Surface products require driver updates to be compatible with Windows Mixed Reality. These drivers can be installed on your Surface by going to **Settings > Update and Security > Check for Updates**.
 * Surface products require an [adapter](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) from the video port (Mini DisplayPort or USB-C, depending on the Surface PC) to HDMI 2.0 for Windows Mixed Reality headsets. The most recent version of the Surface Mini-DisplayPort to HDMI AV Adapter is compatible with HDMI 2.0 (the older version isn't). Similarly, the <a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">Surface USB-C to HDMI Adapter</a> is also compatible with HDMI 2.0.
-
->[!WARNING]
->Not all Mini DisplayPort or USB-C to HDMI adapters are HDMI 2.0-capable. Consider checking for explicit “HDMI 2.0” compatibility or “4K” compatibility on any adapter.
-
-More information on Surface compatibility with Windows Mixed Reality is available in the table below:
-
-<table>
-    <tr>
-        <th> Surface Device </th><th> Windows Mixed Reality Feature Support? </th><th> Recommended configuration </th><th> Notes</th>
-    </tr>
-    <tr>
-        <td style="vertical-align: middle"> Surface Pro (original)/ Surface Pro 2 </td><td style="vertical-align: middle"> None </td><td> </td><td></td>
-    </tr>
-    <tr>
-        <td style="vertical-align: middle"> Surface Pro 3 </td><td style="vertical-align: middle"> None </td><td> </td><td></td>
-    </tr>
- (with Windows 10 Pro installed) <tr>
-        <td style="vertical-align: middle"> Surface Pro 4 </td><td style="vertical-align: middle"> None </td><td> </td><td></td>
-    </tr>
-    <tr>
-        <td style="vertical-align: middle"> Surface 3 </td><td style="vertical-align: middle"> None </td><td> </td><td></td>
-    </tr>
-    <tr>
-        <td style="vertical-align: middle"> Surface Book </td><td style="vertical-align: middle"> None </td><td> </td><td></td>
-    </tr>
-    <tr>
-        <td style="vertical-align: middle"> Surface Book with Performance Base </td><td style="vertical-align: middle"> None </td><td> </td><td></td>
-    </tr>
-    <tr>
-        <td style="vertical-align: middle"> Surface Go </td><td style="vertical-align: middle"> None </td><td> </td><td></td>
-    </tr>
-<tr>
-        <td style="vertical-align: middle"> Surface Book 2 (15&quot;) </td><td style="vertical-align: middle"> Full </td><td style="vertical-align: middle"> Intel Core i7/NVIDIA GTX 1060/16GB of RAM </td>
-        <td>
-            <ul>
-                <li><b>RECOMMENDED</b>: For the best Windows Mixed Reality experience on a Surface Device, we recommend the SurfaceBook 2 15” configured with the NVIDIA GeForce GTX 1060 GB and 16 GB of RAM.  This configuration is tested and Badged as Windows Mixed Reality 90Hz so will support All Windows Mixed Reality Features and will allow you to enjoy the widest array of compatible apps and games.</li>
-                <li>The NVIDIA GeForce GTX 1060 discrete GPU will provide a Windows Mixed Reality 90Hz experience</li><br/>                <li>For best performance, use the Nvidia graphics drivers released for Surface Book 2. Newer drivers may be available on Nvidia&#39;s website, but are untested.</li><br/>                <li>Requires <a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">Surface USB-C to HDMI Adapter</a> (other adapters may work, but are untested)</li>
-                <li><b>Note on Surface Dock</b>: The use of Surface Dock with Surface Book 2 isn't officially supported with Windows Mixed Reality, because of the Surface Dock’s power supply limitations.</li><br/>                <li><b>Note on Windows 10 Version 1803</b>: If you&#39;re running Windows 10 Version 1803, make sure you&#39;re on OS build 17134.137 or newer (installed by KB4284848) to ensure that you have the latest performance fixes. For more information, please see the release notes for <a href="https://support.microsoft.com/en-us/help/4284848/windows-10-update-kb4284848">KB4284848</a>.</li>
-            </ul>
-        </td>
-    </tr>
-    <tr>
-        <td style="vertical-align: middle"> Surface Book 2 (13.5&quot;) </td><td style="vertical-align: middle"> Partial </td><td style="vertical-align: middle"> Intel Core i7/NVIDIA GTX 1050/16GB of RAM </td>
-        <td>
-            <ul>
-                <li><b>NOTE</b>: The Surface Book 2 (13”) isn't badged for Windows Mixed Reality but will support some Windows Mixed Reality Features allowing you to use a limited number of compatible apps and games.  Performance will depend on your configuration.</li>
-                <li>Configurations with an Intel Core i5 /Intel HD Graphics 620 integrated GPU will provide a Windows Mixed Reality @ 60-Hz experience</li>
-                <li>Configurations with an Intel Core i7/NVIDIA GeForce GTX 1050 discrete GPU will provide a Windows Mixed Reality @ 90-Hz experience</li>                       <li>For best performance, use the Nvidia graphics drivers released for Surface Book 2. Newer drivers may be available on Nvidia&#39;s website, but are untested.</li>
-                <li>Requires <a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">Surface USB-C to HDMI Adapter</a> (other adapters may work, but are untested)</li>
-                <li><b>Note on Surface Dock</b>: The use of Surface Dock with Surface Book 2 isn't officially supported with Windows Mixed Reality, because of the Surface Dock’s power supply limitations.</li>
-                <li><b>Note on Windows 10 Version 1803</b>: If you&#39;re running Windows 10 Version 1803, make sure you&#39;re on OS build 17134.137 or newer (installed by KB4284848) to ensure that you have the latest performance fixes. For more information, please see the release notes for <a href="https://support.microsoft.com/en-us/help/4284848/windows-10-update-kb4284848">KB4284848</a>.</li>
-            </ul>
-        </td>
-    </tr>
-    <tr>
-        <td style="vertical-align: middle"> Surface Studio </td><td style="vertical-align: middle"> Partial </td><td style="vertical-align: middle"> Intel Core i7/ NVIDIA GeForce GTX 980m/16GB of RAM </td>
-        <td>
-            <ul>
-                <li><b>NOTE</b>: The Surface Studio isn't badged for Windows Mixed Reality but will support some Windows Mixed Reality Features allowing you to use a limited number of compatible apps and games.  Performance will depend on your configuration.</li>
-                <li>Configurations with NVIDIA GeForce GTX 965 m will provide a Windows Mixed Reality  @ 60-Hz experience.</li>
-                <li>Configurations with NVIDIA GeForce GTX 980 m will provide a Windows Mixed Reality @ 90-Hz experience.</li>
-                <li>Surface Mini DisplayPort to HDMI 2.0 Adapter (other adapters may work, but are untested)</li>
-                <li>Windows Mixed Reality headset must be connected to USB port with “+” symbol</li>
-            </ul>
-        </td>
-    </tr>
-    <tr>
-        <td style="vertical-align: middle"> Surface Pro (2017) </td><td style="vertical-align: middle"> Partial </td><td style="vertical-align: middle"> Intel Core i7/ Intel® Iris™ Plus Graphics 640/16GB of RAM </td>
-        <td>
-            <ul>
-                <li><b>NOTE</b>: The Surface Pro (2017) isn't badged for Windows Mixed Reality but will support some Windows Mixed Reality Features allowing you to use a limited number of compatible apps and games.  Performance will depend on your configuration.</li>
-                <li>Configurations with an Intel Core M3/Intel HD Graphics 615 integrated GPU is <b>Not Supported</b></li>
-                <li>Configurations with an Intel Core i5 /Intel HD Graphics 620 integrated GPU will provide a Windows Mixed Reality @ 60-Hz experience</li>
-                <li>Configurations with an Intel Core i7/ Intel® Iris™ Plus Graphics 640 integrated GPU will provide a Windows Mixed Reality @ 60-Hz experience</li><br/><li>Requires Surface Mini DisplayPort to HDMI 2.0 Adapter (other adapters may work, but are untested)</li>
-                <li>Requires <a href="https://support.microsoft.com/en-us/help/4023450/surface-surface-battery-and-power">Performance Slider</a> set to “Best Performance” during usage</li>
-            </ul>
-        </td>
-    </tr><br/>    <tr>
-        <td style="vertical-align: middle"> Surface Laptop </td><td style="vertical-align: middle"> Partial </td><td style="vertical-align: middle"> Intel Core i7/ Intel® Iris™ Plus Graphics 640/16GB of RAM </td>
-        <td>
-            <ul>
-                <li><b>NOTE</b>: The Surface Laptop isn't badged for Windows Mixed Reality but will support some Windows Mixed Reality Features allowing you to use a limited number of compatible apps and games.  Performance will depend on your configuration.</li>
-                <li>Configurations with an Intel Core M3/Intel HD Graphics 615 integrated GPU is <b>Not Supported</b></li>
-                <li>Configurations with an Intel Core i5 /Intel HD Graphics 620 integrated GPU will provide a Windows Mixed Reality @ 60-Hz experience</li>
-                <li>Configurations with an Intel Core i7/ Intel® Iris™ Plus Graphics 640 integrated GPU will provide a Windows Mixed Reality @ 60-Hz experience</li><br/><li>Requires Surface Mini DisplayPort to HDMI 2.0 Adapter (other adapters may work, but are untested)</li>
-                <li>Requires <a href="https://support.microsoft.com/en-us/help/4023450/surface-surface-battery-and-power">Performance Slider</a> set to “Best Performance” during usage</li>
-            </ul>
-        </td>
-    </tr>
-</table>
 
 ## See also
 
