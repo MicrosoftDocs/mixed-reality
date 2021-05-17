@@ -37,7 +37,7 @@
 ### [SteamVR](steamvr-questions.md)
 ### [Tracking system](tracking.md)
 ### [WebVR](webvr-questions.md)
-### [Additional questions](other-questions.md)
+### [Immersive hardware FAQ](other-questions.md)
 ### [HP Reverb G2 FAQ](reverbG2-faq.yml)
 
 ## Resources
