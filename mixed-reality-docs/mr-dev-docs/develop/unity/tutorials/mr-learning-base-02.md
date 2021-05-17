@@ -95,6 +95,9 @@ In the **New Scene** window select **Basic (Built-in)** and click on **create** 
 
 ![Unity New Scene menu path](images/mr-learning-base/base-02-section6-step1-1-newscene.png)
 
+> [!NOTE]
+> Above screenshot is from Unity Version 2020, if you are using Unity 2019 when you click on **create** a new empty scene will be created.
+
 In the Unity menu, select **Mixed Reality** > **Toolkit** > **Add to Scene and Configure...** to add the MRTK to your current scene:
 
 ![Unity Add to Scene and Configure... menu path](images/mr-learning-base/base-02-section6-step1-2.png)
