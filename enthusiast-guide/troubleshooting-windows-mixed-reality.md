@@ -26,7 +26,7 @@ For answers on your developer questions from the community developer ecosystem, 
 
 ### Post a question on Reddit
 <div class='icon is-large'>
-    <img alt='Reddit' src='https://docs.microsoft.com/en-gb/media/logos/logo_reddit.svg'>
+    <img alt='Reddit' src='https://docs.microsoft.com/media/logos/logo_reddit.svg'>
 </div><br/>
 
 - [Windows Mixed Reality on Reddit](https://www.reddit.com/r/WindowsMR/)
