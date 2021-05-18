@@ -60,6 +60,10 @@ The holographic frame presents a tool for the developer to trigger interactions 
 
 Gaze can also be used to track user attention through an experience and see which objects or parts of the scene the user paid the most attention to. This can be especially use for debugging an experience, allowing for analytical tools like heatmaps to see where users are spending the most time or are missing certain objects or interaction. Gaze tracking can also provide a powerful tool for facilitators in experiences (see the [Lowe's Kitchen](holographic-frame.md#lowes-kitchen) example).
 
+If you'd like to see Head and Eye Tracking design concepts in action, check out our [Designing Holograms - Head Tracking and Eye Tracking]() video demo below:
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
 <br>
 
 ---

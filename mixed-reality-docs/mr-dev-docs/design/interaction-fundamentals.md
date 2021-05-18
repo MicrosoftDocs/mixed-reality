@@ -24,6 +24,12 @@ While we recognize that there are thousands of effective, engaging, and magical 
 * Supplemental guidance about other benefits that our platform provides.
 * General guidance to help select the appropriate interaction model for your development scenario.
 
+## Basic hand tracking and instinctual interactions demo
+
+Check out our [Designing Holograms - Head Tracking and Eye Tracking]() video demo below, then move on to more specific topics:
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Hand-Tracking-Chapter/player]
+
 ## Multimodal interaction models
 
 Based on our research and feedback from customers, we've discovered that three primary interaction models suit most mixed reality experiences. In many ways, the interaction model is the user's mental model for how to complete a workflow. Each of these interaction models is optimized for a set of customer needs and is convenient, powerful, and usable when used correctly. 

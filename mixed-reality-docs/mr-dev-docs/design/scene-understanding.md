@@ -10,7 +10,7 @@ keywords: Scene understanding, Spatial Mapping, Windows Mixed Reality, Unity, mi
 
 # Scene understanding
 
-Scene understanding provides Mixed Reality developers with a structured, high-level environment representation designed to make developing for environmentally aware applications intuitive. Scene understanding does this by combining the power of existing mixed reality runtimes, like the highly accurate but less structured [spatial mapping](spatial-mapping.md) and new AI driven runtimes. By combining these technologies, Scene understanding generates representations of 3D environments that are similar to those you may have used in frameworks such as Unity or ARKit/ARCore. The Scene understanding entry point begins with a Scene Observer, which is called by your application to compute a new scene. Today, the technology can generate 3 distinct but related object categories: 
+Scene understanding provides Mixed Reality developers with a structured, high-level environment representation designed to make developing for environmentally aware applications intuitive. Scene understanding does this by combining the power of existing mixed reality runtimes, like the highly accurate but less structured [spatial mapping](spatial-mapping.md) and new AI driven runtimes. By combining these technologies, Scene understanding generates representations of 3D environments that are similar to those you may have used in frameworks such as Unity or ARKit/ARCore. The Scene understanding entry point begins with a Scene Observer, which is called by your application to compute a new scene. Today, the technology can generate 3 distinct but related object categories:
 
 * Simplified watertight environment meshes that infer the planar room structure without clutter
 * Plane regions for placement that we call Quads
@@ -18,7 +18,9 @@ Scene understanding provides Mixed Reality developers with a structured, high-le
 
 ![Spatial mapping mesh, labeled planar surfaces, watertight mesh](images/SUScenarios.png)
 
-This document is intended to provide a scenario overview and to clarify the relationship that Scene understanding and Spatial mapping share.
+This document is intended to provide a scenario overview and to clarify the relationship that Scene understanding and Spatial mapping share. If you'd like to see Scene Understanding in action, check out our [Designing Holograms - Spatial Awareness]() video demo below:
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
 
 ## Developing with Scene Understanding
 
