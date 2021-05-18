@@ -17,7 +17,9 @@ To ensure useful spatial mapping data, applications developers have several opti
 * Ask the user to use the bloom gesture to get to the Windows Mixed Reality home and then explore the area they wish to use for the experience. They can use air-tap to confirm that all the necessary area is known to the device.
 * Build a custom exploration experience in their own application.
 
-In all these cases, the actual data gathered during the exploration is stored by the system and the application doesn't need to do this.
+In all these cases, the actual data gathered during the exploration is stored by the system and the application doesn't need to do this. If you'd like to see room scan visualization in action, check out our [Designing Holograms - Spatial Awareness]() video demo below:
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
 
 ## Device support
 
@@ -38,8 +40,6 @@ In all these cases, the actual data gathered during the exploration is stored by
         <td>❌</td>
     </tr>
 </table>
-
-
 
 ## Building a custom scanning experience
 

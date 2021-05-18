@@ -41,6 +41,12 @@ Eye tracking API has been designed with a user’s privacy in mind, avoiding pas
 
 <br>
 
+## Head and eye tracking design concepts demo
+
+If you'd like to see Head and Eye Tracking design concepts in action, check out our [Designing Holograms - Head Tracking and Eye Tracking]() video demo below. When you've finished, continue on for a more detailed dive into specific topics.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
 ## Calibration 
 
 For eye tracking to work accurately, each user is required to go through an [eye tracking user calibration](/hololens/hololens-calibration) for which the user has to look at a set of holographic targets. 

@@ -46,6 +46,12 @@ Direct manipulation is a primary input model on HoloLens 2, which uses the new a
 
 ---
 
+## Basic hand tracking and instinctual interactions demo
+
+If you'd like to see Head and Eye Tracking design concepts in action, check out our [Designing Holograms - Head Tracking and Eye Tracking]() video demo below. When you've finished, continue on for a more detailed dive into specific topics.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Hand-Tracking-Chapter/player]
+
 ## Collidable fingertip
 
 On HoloLens 2, the user's hands are recognized and interpreted as left and right-hand skeletal models. To implement the idea of touching holograms directly with hands, ideally, five colliders could be attached to the five fingertips of each hand skeletal model. However, because of the lack of tactile feedback, 10 collidable fingertips can cause unexpected and unpredictable collisions with holograms. 
