@@ -1,5 +1,5 @@
 ---
-title: EyeTracking_Main
+title: Eye Tracking
 description: Eye Tracking landing page in MRTK
 author: CDiaz-MS
 ms.author: cadia

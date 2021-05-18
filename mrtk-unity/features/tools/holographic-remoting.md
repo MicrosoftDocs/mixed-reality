@@ -1,5 +1,5 @@
 ---
-title: HolographicRemoting
+title: Holographic Remoting
 description: Documentation Holographic Remoting MRTK
 author: keveleigh
 ms.author: kurtie

@@ -1,5 +1,5 @@
 ---
-title: LeapMotionMRTK
+title: Leap Motion MRTK
 description: Documentation to configure for Leap Motion
 author: CDiaz-ms
 ms.author: cadia

@@ -1,5 +1,5 @@
 ---
-title: HandInteractionExamples
+title: Hand Interaction Examples
 description: Hand Interaction Examples in MRTK
 author: CDiaz-MS
 ms.author: cadia

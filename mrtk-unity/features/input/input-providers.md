@@ -1,5 +1,5 @@
 ---
-title: InputProviders
+title: Input Providers
 description: Documentation on diffrent types of Input Providers in MRTK
 author: keveleigh
 ms.author: kurtie

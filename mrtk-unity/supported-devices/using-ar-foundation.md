@@ -1,5 +1,5 @@
 ---
-title: UsingARFoundation
+title: Using AR Foundation
 description: Documentation to use ARFoundation in unity
 author: davidkline-ms
 ms.author: davidkl
