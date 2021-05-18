@@ -23,7 +23,7 @@ These scenes are from the Unity Build Settings. You can change the target device
 
 This tab shows the configuration for the Visual Studio solution. To enabled HoloLens 2's eye-tracking input capability, check **Gaze Input Capability** option. 
 
-You can assign .glb file in the **3D App Launcher Model** field for custom 3D app launcher icon. See [3D app launcher design guideline](https://docs.microsoft.com/windows/mixed-reality/distribute/3d-app-launcher-design-guidance) for more information.
+You can assign .glb file in the **3D App Launcher Model** field for custom 3D app launcher icon. See [3D app launcher design guideline](/windows/mixed-reality/distribute/3d-app-launcher-design-guidance) for more information.
 
 By default, **Auto Increment** is checked in the Versioning Options. AppX versions will be automatically incremented.
 
