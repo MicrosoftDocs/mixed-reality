@@ -178,32 +178,8 @@ Hope that was a good review of the concepts introduced in the previous tutorials
     }
 ```
 
-<!-- 6. Clean up resources
-Required. If resources were created during the tutorial. If no resources were created, 
-state that there are no resources to clean up in this section.
--->
-
-## Clean up resources
-
-If you're not going to continue to use this application, delete
-<resources> with the following steps:
-
-1. From the left-hand menu...
-1. ...click Delete, type...and then click Delete
-
-<!-- 7. Next steps
-Required: A single link in the blue box format. Point to the next logical tutorial 
-in a series, or, if there are no other tutorials, to some other cool thing the 
-customer can do. 
--->
 
 ## Next steps
 
-Advance to the next article to learn how to create...
 > [!div class="nextstepaction"]
-> [Next steps button](contribute-how-to-mvc-tutorial.md)
-
-<!--
-Remove all the comments in this template before you sign-off or merge to the 
-main branch.
--->
+> [Next tutorial: Build a piano keyboard model](keyboard-model.md)
