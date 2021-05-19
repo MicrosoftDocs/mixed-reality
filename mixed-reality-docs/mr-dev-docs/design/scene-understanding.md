@@ -18,9 +18,11 @@ Scene understanding provides Mixed Reality developers with a structured, high-le
 
 ![Spatial mapping mesh, labeled planar surfaces, watertight mesh](images/SUScenarios.png)
 
-This document is intended to provide a scenario overview and to clarify the relationship that Scene understanding and Spatial mapping share. If you'd like to see Scene Understanding in action, check out our [Designing Holograms - Spatial Awareness]() video demo below:
+This document is intended to provide a scenario overview and to clarify the relationship that Scene understanding and Spatial mapping share. If you'd like to see Scene Understanding in action, check out our **Designing Holograms - Spatial Awareness** video demo below:
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
+
+*This video was taken from the "Designing Holograms" HoloLens 2 app. Download and enjoy the full experience [here](https://aka.ms/dhapp).*
 
 ## Developing with Scene Understanding
 

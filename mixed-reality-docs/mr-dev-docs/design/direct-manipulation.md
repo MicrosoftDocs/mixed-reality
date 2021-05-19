@@ -48,9 +48,11 @@ Direct manipulation is a primary input model on HoloLens 2, which uses the new a
 
 ## Basic hand tracking and instinctual interactions demo
 
-If you'd like to see Head and Eye Tracking design concepts in action, check out our [Designing Holograms - Head Tracking and Eye Tracking]() video demo below. When you've finished, continue on for a more detailed dive into specific topics.
+If you'd like to see Head and Eye Tracking design concepts in action, check out our **Designing Holograms - Head Tracking and Eye Tracking** video demo below. When you've finished, continue on for a more detailed dive into specific topics.
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Hand-Tracking-Chapter/player]
+
+*This video was taken from the "Designing Holograms" HoloLens 2 app. Download and enjoy the full experience [here](https://aka.ms/dhapp).*
 
 ## Collidable fingertip
 
