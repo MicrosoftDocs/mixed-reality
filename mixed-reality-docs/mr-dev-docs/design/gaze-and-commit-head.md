@@ -37,6 +37,14 @@ _Head-gaze and commit_ is a special case of the [gaze and commit](gaze-and-commi
 
 ---
 
+## Head and eye tracking design concepts demo
+
+If you'd like to see Head and Eye Tracking design concepts in action, check out our **Designing Holograms - Head Tracking and Eye Tracking** video demo below. When you've finished, continue on for a more detailed dive into specific topics.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+*This video was taken from the "Designing Holograms" HoloLens 2 app. Download and enjoy the full experience [here](http://aka.ms/dhapp).*
+
 ## Target sizing and feedback
 
 The head gaze vector has been shown repeatedly to be usable for fine targeting, but often works best for gross targeting--acquiring larger targets. 

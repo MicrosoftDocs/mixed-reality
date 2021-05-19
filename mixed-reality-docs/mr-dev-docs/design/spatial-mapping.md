@@ -61,9 +61,11 @@ As the HoloLens gathers new data about the environment, and as changes to the en
 
 ## Spatial Awareness design concepts demo
 
-If you'd like to see Spatial Awareness design concepts in action, check out our [Designing Holograms - Spatial Awareness]() video demo below. When you've finished, continue on for a more detailed dive into specific topics.
+If you'd like to see Spatial Awareness design concepts in action, check out our **Designing Holograms - Spatial Awareness** video demo below. When you've finished, continue on for a more detailed dive into specific topics.
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
+
+*This video was taken from the "Designing Holograms" HoloLens 2 app. Download and enjoy the full experience [here](http://aka.ms/dhapp).*
 
 ## Spatial Mapping vs. Scene Understanding WorldMesh
 

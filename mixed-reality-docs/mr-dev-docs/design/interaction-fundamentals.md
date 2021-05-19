@@ -26,9 +26,11 @@ While we recognize that there are thousands of effective, engaging, and magical 
 
 ## Basic hand tracking and instinctual interactions demo
 
-Check out our [Designing Holograms - Head Tracking and Eye Tracking]() video demo below, then move on to more specific topics:
+Check out our **Designing Holograms - Head Tracking and Eye Tracking** video demo below, then move on to more specific topics:
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Hand-Tracking-Chapter/player]
+
+*This video was taken from the "Designing Holograms" HoloLens 2 app. Download and enjoy the full experience [here](http://aka.ms/dhapp).*
 
 ## Multimodal interaction models
 

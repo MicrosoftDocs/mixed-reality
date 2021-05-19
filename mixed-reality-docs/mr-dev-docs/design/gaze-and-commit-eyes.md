@@ -23,10 +23,19 @@ To extend the common [head-gaze and commit](gaze-and-commit.md) interaction mode
    - Dwelling (that is, the user simply keeps looking at the target to select)
 
 However, eye gaze behaves differently to head gaze in certain ways and comes with many unique challenges. 
+
 In the [Eye Gaze Design Guidelines](eye-tracking.md), we summarize general advantages and challenges when using eye tracking as an input in your holographic app. 
 In this section, we focus on the specific design considerations for _eye-gaze and commit_.
 First, our eyes move incredibly fast and are great at quickly targeting across the view. 
 Eye-gaze is ideal for quick gaze-and-commit actions especially when combined with fast commits such as an air tap or button press.
+
+## Head and eye tracking design concepts demo
+
+If you'd like to see Head and Eye Tracking design concepts in action, check out our **Designing Holograms - Head Tracking and Eye Tracking** video demo below. When you've finished, continue on for a more detailed dive into specific topics.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+*This video was taken from the "Designing Holograms" HoloLens 2 app. Download and enjoy the full experience [here](http://aka.ms/dhapp).*
    
 ## Design guidelines for eye-gaze and commit
 
