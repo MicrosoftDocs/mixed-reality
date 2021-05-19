@@ -17,8 +17,8 @@ The Leap Motion Data Provider enables articulated hand tracking for VR and could
 
 This provider can be used in editor and on device while on the Standalone platform.  It can also be used in editor while on the UWP platform but NOT in a UWP build.
 
-| MRTK Version | Leap Motion Unity Modules Versions Supported|
-|---| --- | 
+| MRTK Version | Leap Motion Unity Modules Versions Supported |
+| --- | --- |
 |2.6.x | 4.5.0, 4.5.1|
 |2.7.x| 4.5.0, 4.5.1, 4.6.0, 4.7.0, 4.7.1|
 
