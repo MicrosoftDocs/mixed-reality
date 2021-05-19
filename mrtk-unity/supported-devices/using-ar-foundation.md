@@ -1,5 +1,5 @@
 ---
-title: Using AR Foundation
+title: Android and iOS MRTK Configuration
 description: Documentation to use ARFoundation in unity
 author: davidkline-ms
 ms.author: davidkl
