@@ -32,13 +32,13 @@ Processing audio using HRTF-based algorithms requires a large amount of speciali
 * A Windows 10 PC configured with the correct [tools installed](../../install-the-tools.md)
 * Basic c# programming knowledge
 * A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019 LTS mounted, and the Universal Windows Platform Build Support module added
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019 or Unity 2020 LTS mounted, and the Universal Windows Platform Build Support module added
 
 We **strongly recommend** completing the [Getting started](mr-learning-base-01.md) tutorials series or having some basic prior experience with Unity and MRTK before continuing.
 
 > [!IMPORTANT]
 >
-> * The recommended Unity version for this tutorial series is Unity 2019 LTS. It supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
+> * This tutorial series supports both Unity 2019 LTS and Unity 2020 LTS. It supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
 
 ## Creating and preparing the Unity project
 
@@ -52,9 +52,7 @@ For this, first follow the [Initializing your project and first application](mr-
 
 1. [Importing the TextMeshPro Essential Resources](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 
-1. [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-
-1. [Configuring the Unity project](mr-learning-base-02.md#configuring-the-unity-project)
+1. [Importing the Mixed Reality Toolkit and Configuring the Unity project](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
 
 1. [Creating and setting the scene](mr-learning-base-02.md#creating-and-configuring-the-scene) and give the scene a suitable name, for example, *SpatialAudio*
 
@@ -70,9 +68,13 @@ Download and import the Microsoft Spatializer  <a href="https://github.com/micro
 
 ## Enable the Microsoft Spatializer plugin
 
-After importing the **Microsoft Spatializer** you need to enable it. Open **Edit -> Project Settings -> Audio**, and change **Spatializer Plugin** to "Microsoft Spatializer".
+Once you import the Microsoft Spatializer into your unity project, **MRTK Project Configurator** window will appear, use the **Audio spatializer** dropdown to select the **Microsoft Spatializer**, then click the Apply button to apply the setting:
 
 ![Project Settings showing spatializer plugin](images/spatial-audio/spatial-audio-01-section3-step1-1.png)
+
+you can also manually enable the Microsoft Spatializer: Open **Edit -> Project Settings -> Audio**, and change **Spatializer Plugin** to "Microsoft Spatializer".
+
+![Project Settings showing spatializer plugin](images/spatial-audio/spatial-audio-01-section3-step1-2.png)
 
 ## Enable spatial audio on your workstation
 
