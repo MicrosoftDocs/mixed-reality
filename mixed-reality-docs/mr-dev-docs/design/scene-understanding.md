@@ -22,7 +22,7 @@ This document is intended to provide a scenario overview and to clarify the rela
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
 
-*This video was taken from the "Designing Holograms" HoloLens 2 app. Download and enjoy the full experience [here](http://aka.ms/dhapp).*
+*This video was taken from the "Designing Holograms" HoloLens 2 app. Download and enjoy the full experience [here](https://aka.ms/dhapp).*
 
 ## Developing with Scene Understanding
 
