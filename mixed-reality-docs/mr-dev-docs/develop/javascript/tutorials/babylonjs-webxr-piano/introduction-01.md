@@ -37,7 +37,7 @@ Through this tutorial series, you will learn about using babylon.js to create a 
 Required. Use the format provided in the list below.
 -->
 
-In this tutorial, you will learn how to:
+In this tutorial series, you will learn how to:
 
 > [!div class="checklist"]
 > * Create, position, and merge meshes to build a model of a standup piano
@@ -61,7 +61,7 @@ are no prerequisites, state that no prerequisites are needed for this tutorial.
 ## Getting started
 <!-- Introduction paragraph -->
 
-1. Using your favorite code editor, create a file named index.html and insert the template below into the file:
+1. Using your favorite code editor, create a file named *index.html* and insert the template below into the file:
 
     ```html
     <html>
@@ -115,7 +115,7 @@ are no prerequisites, state that no prerequisites are needed for this tutorial.
         const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
         light.intensity = 0.6;
     ```
-    Here, we have created a camera which points almost completely downwards and targets the origin point of the space. The light we have created is a hemispheric light which points to the sky, which is very useful for simulating an ambient space. We have also dimmed the light a little by modifying its intensity.
+    Here, we have created a camera which points almost completely downwards and targets the origin point of the space. The light we have created is a hemispheric light which points to the sky, which is very useful for simulating an ambient space. We have also dimmed the light a little by lowering its intensity.
 1. Finally, since we are developing for a WebXR platform, we will need to enable the XR experience in the scene by inserting the following line before `return scene;`:
 
     ```javascript
