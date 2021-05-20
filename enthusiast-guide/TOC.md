@@ -22,7 +22,7 @@
 ### [What is WebVR](webvr.md)
 ### [Using Windows Mixed Reality FAQ](using-wmr-faq.yml)
 
-## Support and help options
+## Troubleshooting & FAQ
 ### [Troubleshoot in Windows Mixed Reality](troubleshooting-windows-mixed-reality.md)
 ### [Filing bugs and feedback](filing-feedback.md)
 ### [Error codes](error-codes.md)
