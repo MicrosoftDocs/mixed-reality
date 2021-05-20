@@ -58,12 +58,12 @@ are no prerequisites, state that no prerequisites are needed for this tutorial.
 
 Make sure that you have gone through the previous tutorial in the series and have the final code from it ready to be edited.
 
-## Making a simple piano keyboard
+## A simple piano keyboard
 Let's begin by making a simple piano keyboard that looks like this:
 
 ![Piano octave description](../images/piano-octave.jpg)
 
-In the image above, there are 7 white keys and 5 black keys, each labeled with the note's name. A full 88-key piano keyboard contains 7 full repetitions of this selection of keys (and 4 extra keys), and each section has double the frequency of the section to its left. For example, C5's pitch frequency is double of C4's, D5's pitch frequency is double of D4's, and so on. Without considering the pitch, visually each section looks exactly the same as each other, so we can start with investigating how to create this section of keys and later find a way to expand the scope to an 88-key full piano keyboard.
+In the image above, there are 7 white keys and 5 black keys, each labeled with the note's name. A full 88-key piano keyboard contains 7 full repetitions of this selection of keys (and 4 extra keys), and each section (also called an octave) has double the frequency of the section to its left. For example, C5's pitch frequency is double of C4's, D5's pitch frequency is double of D4's, and so on. Without considering the pitch, visually each section looks exactly the same as each other, so we can start with investigating how to create this section of keys and later find a way to expand the scope to an 88-key full piano keyboard.
 
 1. Before we begin to create meshes for building the keyboard, note that each black key is not perfectly aligned at the middle of the two white keys around it and that not every key has the same width, so we must create and position the mesh for each key individually.
 1. For white keys, we can make an observation that each white key is composed of two parts: (1) the part below the neighboring black key(s) and (2) the part next to the neighboring black key(s) and goes above part 1. The two parts have different dimensions but are stacked together to crete a full white key. Here is the code for creating a single white key for the note C (don't worry about adding this into *scene.js* yet):
@@ -76,22 +76,32 @@ In the image above, there are 7 white keys and 5 black keys, each labeled with t
         const whiteKeyV1 = BABYLON.Mesh.MergeMeshes([whiteKeyBottom, whiteKeyTop], true, false, null, false, false);
         whiteKeyV1.name = "C4";
     ```
+
     Here we created two box meshes, one for the bottom part and one for the top part of the white key. We then modify the position of the top part to make it stacked on top of the bottom part and to put it towards the left to leave space for the black key (C#). This is the resulting mesh that this code would produce:
     ![White Key C](../images/white-key-c.png)
 
 1. Creating a black key is simpler. Since all black keys are of the shape of a box, we can create a black key just by creating a box mesh, adding a black color material to it, and positioning it appropriately with the white keys. Here is the code to create the black key C#:
+
     ```javascript
     const blackMat = new BABYLON.StandardMaterial("black");
     blackMat.diffuseColor = new BABYLON.Color3(0, 0, 0);
 
-    var blackKey = BABYLON.MeshBuilder.CreateBox("blackKey", {width: 1.4, height: 2, depth: 5}, scene);
+    var blackKey = BABYLON.MeshBuilder.CreateBox("C#4", {width: 1.4, height: 2, depth: 5}, scene);
     blackKey.position.z += 4.75;
     blackKey.position.y += 0.25;
     blackKey.position.x += 0.95;
     blackKey.material = blackMat;
     ```
-    
-1. While each white key has a slightly different shape than each other, all of them can be created by combining a top part and a bottom part. Therefore we can create a generic function to create any white key. Add the code below to *scene.js*, outside of the `createScene()` function: 
+
+    The resulting black key produced by this code (along with the previous white key) would look like this:
+    ![Black Key C#](../images/black-key-csharp.png)
+
+1. As you can see, creating each key is pretty tedious and can result in a lot of code since we have to specify each of their dimensions and position. Let's try to make the process more efficient in the next section.
+
+## Making a simple piano keyboard efficiently
+
+1. While each white key has a slightly different shape than each other, all of them can be created by combining a top part and a bottom part. Therefore we can create a generic function to create any white key. Add the code below to *scene.js*, outside of the `createScene()` function:
+
     ```javascript
     const WhiteKey = function (note, topWidth, bottomWidth, topPositionX, wholePositionX) {
         return {
@@ -113,9 +123,6 @@ In the image above, there are 7 white keys and 5 black keys, each labeled with t
     }
     ```
 
-## [Section 2 heading]
-A full 88-key piano contains repetitions of this structure
-1. <!-- Step 1 -->
 1. <!-- Step 2 -->
 1. <!-- Step n -->
 
