@@ -33,7 +33,7 @@ Start by enabling **Developer Mode** on your device, so Visual Studio can connec
 4. Select the **Update** menu item.
 5. Select the **For developers** menu item.
 6. Enable **Use developer features** to deploy apps from Visual Studio to your HoloLens. If your device is running Windows Holographic version 21H1 or newer, also enable **Device discovery**.
-8. Optional: Scroll down and also enable **Device Portal**, which lets you connect to the [Windows Device Portal](using-the-windows-device-portal.md) on your HoloLens from a web browser.
+7. Optional: Scroll down and also enable **Device Portal**, which lets you connect to the [Windows Device Portal](using-the-windows-device-portal.md) on your HoloLens from a web browser.
 
 ### Windows PC
 
