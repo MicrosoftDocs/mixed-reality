@@ -40,7 +40,7 @@ Required. Use the format provided in the list below.
 In this tutorial series, you will learn how to:
 
 > [!div class="checklist"]
-> * Create, position, and merge meshes to build a model of a standup piano
+> * Create, position, and merge meshes to build a model of a piano
 > * Add pointer interactions to each piano key
 > * Enable key WebXR features such as teleportation and multipointer support
 > * (Optional) Enable hand tracking WebXR feature when viewing on Oculus Quest

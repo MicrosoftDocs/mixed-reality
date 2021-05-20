@@ -27,7 +27,7 @@ Required. Start with "Tutorial: ". Make the first word following "Tutorial: " a
 verb.
 -->
 
-# Tutorial: Building a piano model in the 3d space
+# Tutorial: Building a piano model in the 3D space
 
 <!-- 2. Introductory paragraph 
 Required. Lead with a light intro that describes, in customer-friendly language, 
@@ -232,30 +232,113 @@ In this section, let's expand the usage of the key-creation functions we wrote i
 
 ## Summary
 
-<!-- 6. Clean up resources
-Required. If resources were created during the tutorial. If no resources were created, 
-state that there are no resources to clean up in this section.
--->
+Great job following through so far! Here's the final code you should have for *scene.js*:
 
-## Clean up resources
+```javascript
+const scale = 65;
+const keyHeight = 80;
 
-If you're not going to continue to use this application, delete
-<resources> with the following steps:
+const WhiteKey = function (note, topWidth, bottomWidth, topPositionX, wholePositionX) {
+    return {
+        build(scene, octave, referencePositionX) {
+            var bottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: bottomWidth/scale, height: 1.5/scale, depth: 4.5/scale}, scene);
+            var top = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: topWidth/scale, height: 1.5/scale, depth: 5/scale}, scene);
+            top.position.z =  4.75/scale;
+            top.position.x += topPositionX/scale;
 
-1. From the left-hand menu...
-1. ...click Delete, type...and then click Delete
+            const key = BABYLON.Mesh.MergeMeshes([bottom, top], true, false, null, false, false);
+            key.position.x = referencePositionX/scale + wholePositionX/scale;
+            key.name = note+octave;
+            
+            key.position.y += keyHeight/scale;
 
-<!-- 7. Next steps
-Required: A single link in the blue box format. Point to the next logical tutorial 
-in a series, or, if there are no other tutorials, to some other cool thing the 
-customer can do. 
--->
+            return key;
+        }
+    }
+}
+
+const BlackKey = function (note, positionX) {
+    return {
+        build(scene, octave, referencePositionX) {
+            const blackMat = new BABYLON.StandardMaterial("black");
+            blackMat.diffuseColor = new BABYLON.Color3(0, 0, 0);
+
+            const key = BABYLON.MeshBuilder.CreateBox(note+octave, {width: 1.4/scale, height: 2/scale, depth: 5/scale}, scene);
+            key.position.z += 4.75/scale;
+            key.position.y += 0.25/scale;
+            key.position.x = referencePositionX/scale + positionX/scale;
+            key.material = blackMat;
+            
+            key.position.y += keyHeight/scale;
+
+            return key;
+        }
+    }
+}
+
+const createScene = async function (engine) {
+    const scene = new BABYLON.Scene(engine);
+
+    const alpha =  3*Math.PI/2;
+    const beta = Math.PI/50;
+    const radius = 220/scale;
+    const target = new BABYLON.Vector3(0, 0, 0);
+    
+    const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target, scene);
+    camera.attachControl(canvas, true);
+
+    // This creates a light, aiming 0,1,0 - to the sky (non-mesh)
+    const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
+
+    // Default intensity is 1. Let's dim the light a small amount
+    light.intensity = 0.6;
+
+    const keyParams = [
+        WhiteKey("C", 1.4, 2.3, -0.45, -2.4*6),
+        BlackKey("C#", -2.4*6+0.95),
+        WhiteKey("D", 1.4, 2.4, 0, -2.4*5),
+        BlackKey("D#", -2.4*6+0.95+2.85),
+        WhiteKey("E", 1.4, 2.3, 0.45, -2.4*4),
+        WhiteKey("F", 1.3, 2.4, -0.55, -2.4*3),
+        BlackKey("F#", -2.4*6+0.95+0.45 + 2.4 * 2 + 1.85),
+        WhiteKey("G", 1.3, 2.3, -0.2, -2.4*2),
+        BlackKey("G#", -2.4*6+0.95+0.45 + 2.4 * 2 + 1.85 + 2.75),
+        WhiteKey("A", 1.3, 2.3, 0.2, -2.4*1),
+        BlackKey("A#", -2.4*6+0.95+0.45 + 2.4 * 2 + 1.85 + 2.75 *2),
+        WhiteKey("B", 1.3, 2.4, 0.55, 0)
+    ]
+
+    const keys = new Set();
+
+    //Octave 0
+    keys.add(WhiteKey("A", 1.9, 2.3, -0.20, -2.4).build(scene, 0, -2.4*21))
+    keyParams.slice(10, 12).forEach(key => {
+        keys.add(key.build(scene, 0, -2.4*21))
+    })
+
+    //Octave 1-7
+    var referencePositionX = -2.4*14;
+    for (var octave=1; octave<=7; octave++) {
+        keyParams.forEach(key => {
+            keys.add(key.build(scene, octave, referencePositionX))
+        })
+        referencePositionX += 2.4*7;
+    }
+
+    //Octave 8
+    keys.add(WhiteKey("C", 2.3, 2.3, 0, -2.4*6).build(scene, 8, referencePositionX))
+
+    const xrHelper = await scene.createDefaultXRExperienceAsync();
+
+    return scene;
+};
+```
 
 ## Next steps
 
 Advance to the next article to learn how to create...
 > [!div class="nextstepaction"]
-> [Next steps button](contribute-how-to-mvc-tutorial.md)
+> [Next steps: Interact with the piano keys](keyboard-interaction.md)
 
 <!--
 Remove all the comments in this template before you sign-off or merge to the 
