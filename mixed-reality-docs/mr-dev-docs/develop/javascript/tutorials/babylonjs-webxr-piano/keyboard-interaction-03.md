@@ -127,7 +127,7 @@ Right now, the piano keyboard we have created is a static model which does not r
 
 1. Here's what the interaction would look like with the code above:
 
-(insert gif to show interaction)
+    (insert gif to show interaction)
 
 1. Now let's work on playing and stopping a sound when a key is pressed and released. To achieve this, we will be utilizing a Javascript library named **soundfont-player**, which allows us to easily play MIDI sounds of an instrument we choose. [Download the minified code of the library](https://raw.githubusercontent.com/danigb/soundfont-player/master/dist/soundfont-player.min.js), save it in the same folder as *index.html*, and include it in the `<header>` tag in *index.html* by adding the following line of code:
 
@@ -143,8 +143,44 @@ Right now, the piano keyboard we have created is a static model which does not r
         sound.stop(); // Stop note C4
     ```
 
-1. 
+1. Now let's incorporate this into the pointer events and finalize the code for this section:
 
+    ```javascript
+    const pointerToKey = new Map()
+    const piano = await Soundfont.instrument(new AudioContext(), 'acoustic_grand_piano');
+
+    scene.onPointerObservable.add((pointerInfo) => {
+        switch (pointerInfo.type) {
+            case BABYLON.PointerEventTypes.POINTERDOWN:
+                if(pointerInfo.pickInfo.hit) {
+                    const pickedMesh = pointerInfo.pickInfo.pickedMesh;
+                    const pointerId = pointerInfo.event.pointerId;
+                    if (keys.has(pickedMesh)) {
+                        pickedMesh.position.y -= 0.5/scale;
+                        pointerToKey.set(pointerId, {
+                            mesh: pickedMesh,
+                            note: piano.play(pointerInfo.pickInfo.pickedMesh.name)
+                        });
+                    }
+                }
+                break;
+            case BABYLON.PointerEventTypes.POINTERUP:
+                const pointerId = pointerInfo.event.pointerId;
+                if (pointerToKey.has(pointerId)) {
+                    pointerToKey.get(pointerId).mesh.position.y += 0.5/scale;
+                    pointerToKey.get(pointerId).note.stop();
+                    pointerToKey.delete(pointerId);
+                }
+                break;
+        }
+
+    });
+    ```
+
+    Since we named each key's mesh by the note that it represents, we can easily indicate which note to play by passing in the mesh's name to the `piano.play` function. Also note that we are storing the sound into the `pointerToKey` map so that we know what sound to stop when a key is released.
+
+1. Perfect! Now we have a playable piano:
+(video/gif showing piano)
 
 ## [Section 2 heading]
 <!-- Introduction paragraph -->
