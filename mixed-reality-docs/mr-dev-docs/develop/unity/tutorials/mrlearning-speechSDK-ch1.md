@@ -29,10 +29,10 @@ In this tutorial series, you will create a Mixed Reality application that explor
 * Windows 10 SDK 10.0.18362.0 or later
 * Some basic C# programming ability
 * A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019 LTS installed and the Universal Windows Platform Build Support module added
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019/2020 LTS installed and the Universal Windows Platform Build Support module added
 
 > [!IMPORTANT]
-> The recommended Unity version for this tutorial series is Unity 2019 LTS. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
+> * This tutorial series supports both Unity 2019 LTS and Unity 2020 LTS. It supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
 
 ## Creating and preparing the Unity project
 
@@ -43,9 +43,8 @@ For this, first follow the [Initializing your project and first application](mr-
 1. [Creating the Unity project](mr-learning-base-02.md#creating-the-unity-project) and give it a suitable name, for example, *MRTK Tutorials*
 2. [Switching the build platform](mr-learning-base-02.md#configuring-the-unity-project)
 3. [Importing the TextMeshPro Essential Resources](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-4. [Importing the Mixed Reality Toolkit](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Configuring the Unity project](mr-learning-base-02.md#configuring-the-unity-project)
-6. [Creating and configuring the scene](mr-learning-base-02.md#creating-and-configuring-the-scene) and give the scene a suitable name, for example, *AzureSpeechServices*
+4. [Importing the Mixed Reality Toolkit and Configuring the Unity project](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
+5. [Creating and configuring the scene](mr-learning-base-02.md#creating-and-configuring-the-scene) and give the scene a suitable name, for example, *AzureSpeechServices*
 
 Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) instructions to ensure the MRTK configuration profile for your scene is **DefaultHoloLens2ConfigurationProfile**  and change the display options for the spatial awareness mesh to **Occlusion**.
 
@@ -56,9 +55,6 @@ Because you will use the Speech SDK for speech recognition and transcription you
 With the **MixedRealityToolkit** object selected in the Hierarchy window, in the Inspector window, select the **Input** tab, clone the **DefaultHoloLens2InputSystemProfile** and the **DefaultMixedRealitySpeechCommandsProfile**, and then change the speech commands **Start Behavior** to **Manual Start**:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial1-section2-step1-1.png)
-
-> [!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Importing the tutorial assets](mr-learning-base-02.md#importing-the-tutorial-assets) instructions.
 
 ## Configuring the capabilities
 
