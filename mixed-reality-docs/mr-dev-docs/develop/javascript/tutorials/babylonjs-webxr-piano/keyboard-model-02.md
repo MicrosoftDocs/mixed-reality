@@ -56,7 +56,7 @@ are no prerequisites, state that no prerequisites are needed for this tutorial.
 
 ## Before you begin
 
-Make sure that you have gone through the previous tutorial in the series and have the final code from it ready to be edited.
+Make sure that you have gone through the [previous tutorial in the series](introduction-01.md) and have the final code from it ready to be edited.
 
 ## A simple piano keyboard
 Let's begin by making a simple piano keyboard that looks like this:
@@ -98,7 +98,7 @@ In the image above, there are 7 white keys and 5 black keys, each labeled with t
 
 1. As you can see, creating each key is pretty tedious and can result in a lot of similar code since we have to specify each of their dimensions and position. Let's try to make the process more efficient in the next section.
 
-## Making a simple piano keyboard efficiently
+## Making a keyboard efficiently
 
 1. While each white key has a slightly different shape than each other, all of them can be created by combining a top part and a bottom part. Therefore we can create a generic function to create any white key. Add the code below to *scene.js*, outside of the `createScene()` function:
 
