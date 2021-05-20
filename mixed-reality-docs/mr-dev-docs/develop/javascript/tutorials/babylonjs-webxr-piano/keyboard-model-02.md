@@ -96,7 +96,7 @@ In the image above, there are 7 white keys and 5 black keys, each labeled with t
     The resulting black key produced by this code (along with the previous white key) would look like this:
     ![Black Key C#](../images/black-key-csharp.png)
 
-1. As you can see, creating each key is pretty tedious and can result in a lot of code since we have to specify each of their dimensions and position. Let's try to make the process more efficient in the next section.
+1. As you can see, creating each key is pretty tedious and can result in a lot of similar code since we have to specify each of their dimensions and position. Let's try to make the process more efficient in the next section.
 
 ## Making a simple piano keyboard efficiently
 
@@ -190,10 +190,47 @@ In the image above, there are 7 white keys and 5 black keys, each labeled with t
     ![Piano Keyboard with One Register](../images/piano-one-register.png)
 
 ## Expanding to an 88-key piano
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+In this section, let's expand the usage of the key-creation functions we wrote in the last section by using them to generate a full piano keyboard.
+
+1. As mentioned earlier, an full (88-key) piano keyboard contains 7 repeated registers and 4 other notes. 3 of those extra notes are in register 0 (left end of the keyboard), and 1 is in register 8 (right end of the keyboard).
+
+(show pic of 88-key layout highlighting the extra keys)
+
+1. We will first work on building the 7 full repetitions by adding an additional loop around the `key.build()` function call we wrote earlier. Replace the previous loop for the `build()` function with the following code:
+
+    ```javascript
+    // Register 1 through 7
+    var referencePositionX = -2.4*14;
+    for (var octave=1; octave<=7; octave++) {
+        keyParams.forEach(key => {
+            keys.add(key.build(scene, octave, referencePositionX))
+        })
+        referencePositionX += 2.4*7;
+    }
+    ```
+
+    In this loop, we build the keys for register 1 through 7 and increment the reference position every time we move on to the next register.
+
+1. Next, let's create the rest of the keys. Add the following snippet to the `createScene()` function:
+
+    ```javascript
+    // Register 0
+    keys.add(WhiteKey("A", 1.9, 2.3, -0.20, -2.4).build(scene, 0, -2.4*21))
+    keyParams.slice(10, 12).forEach(key => {
+        keys.add(key.build(scene, 0, -2.4*21))
+    })
+    
+    // Register 8
+    keys.add(WhiteKey("C", 2.3, 2.3, 0, -2.4*6).build(scene, 8, referencePositionX))
+    ```
+
+    Note that the left-most key and the right-most key of the piano keyboard don't fit into the dimensions defined in `keyParams` (because they are not next to a black key at the edge), so we need to create a new `WhiteKey` object for each of them to specify their special shape.
+
+1. The keyboard produced should look like this after the changes are made:
+
+    ![Full Piano Keyboard Mesh](../images/full-keyboard-mesh.png)
+
+## Summary
 
 <!-- 6. Clean up resources
 Required. If resources were created during the tutorial. If no resources were created, 
