@@ -32,7 +32,7 @@ Processing audio using HRTF-based algorithms requires a large amount of speciali
 * A Windows 10 PC configured with the correct [tools installed](../../install-the-tools.md)
 * Basic c# programming knowledge
 * A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019 or Unity 2020 LTS mounted, and the Universal Windows Platform Build Support module added
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019/2020 LTS mounted, and the Universal Windows Platform Build Support module added
 
 We **strongly recommend** completing the [Getting started](mr-learning-base-01.md) tutorials series or having some basic prior experience with Unity and MRTK before continuing.
 
