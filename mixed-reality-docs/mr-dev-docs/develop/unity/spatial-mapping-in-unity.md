@@ -21,7 +21,7 @@ To use spatial mapping in your app, the spatialPerception capability needs to be
 
 ## Device support
 
-| Feature | [HoloLens (first gen)](https://docs.microsoft.com/hololens/hololens1-hardware) | [HoloLens 2](https://docs.microsoft.com/hololens/hololens1-hardware) | [Immersive headsets](../../discover/immersive-headset-hardware-details.md) |
+| Feature | [HoloLens (first gen)](/hololens/hololens1-hardware) | [HoloLens 2](/hololens/hololens2-hardware) | [Immersive headsets](../../discover/immersive-headset-hardware-details.md) |
 | ---- | ---- | ---- | ---- |
 | Spatial mapping | ✔️ | ✔️ | ❌ |
 
@@ -126,7 +126,7 @@ There are several main cases to handle - added and updated, which can use the sa
 * In the removed case, we remove the GameObject representing this mesh from the dictionary and destroy it.
 
 ```cs
-System.Collections.Generic.Dictionary<SurfaceId, GameObject> spatialMeshObjects = 
+System.Collections.Generic.Dictionary<SurfaceId, GameObject> spatialMeshObjects =
     new System.Collections.Generic.Dictionary<SurfaceId, GameObject>();
 
 private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bounds bounds, System.DateTime updateTime)
@@ -143,19 +143,19 @@ private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bou
             }
             GameObject target = spatialMeshObjects[surfaceId];
             SurfaceData sd = new SurfaceData(
-                //the surface id returned from the system
+                // the surface id returned from the system
                 surfaceId,
-                //the mesh filter that is populated with the spatial mapping data for this mesh
+                // the mesh filter that is populated with the spatial mapping data for this mesh
                 target.GetComponent<MeshFilter>() ?? target.AddComponent<MeshFilter>(),
-                //the world anchor used to position the spatial mapping mesh in the world
+                // the world anchor used to position the spatial mapping mesh in the world
                 target.GetComponent<WorldAnchor>() ?? target.AddComponent<WorldAnchor>(),
-                //the mesh collider that is populated with collider data for this mesh, if true is passed to bakeMeshes below
+                // the mesh collider that is populated with collider data for this mesh, if true is passed to bakeMeshes below
                 target.GetComponent<MeshCollider>() ?? target.AddComponent<MeshCollider>(),
-                //triangles per cubic meter requested for this mesh
+                // triangles per cubic meter requested for this mesh
                 1000,
-                //bakeMeshes - if true, the mesh collider is populated, if false, the mesh collider is empty.
+                // bakeMeshes - if true, the mesh collider is populated, if false, the mesh collider is empty.
                 true
-                );
+            );
 
             SurfaceObserver.RequestMeshAsync(sd, OnDataReady);
             break;
@@ -229,18 +229,18 @@ struct RaycastResult
         Invalid,    // No intersection
         Other,
         Floor,
-        FloorLike,  // Not part of the floor topology, 
+        FloorLike,  // Not part of the floor topology,
                     //  but close to the floor and looks like the floor
-        Platform,   // Horizontal platform between the ground and 
+        Platform,   // Horizontal platform between the ground and
                     //  the ceiling
         Ceiling,
         WallExternal,
-        WallLike,   // Not part of the external wall surface, 
-                    //  but vertical surface that looks like a 
+        WallLike,   // Not part of the external wall surface,
+                    //  but vertical surface that looks like a
                     //  wall structure
     };
     SurfaceTypes SurfaceType;
-    float SurfaceArea;  // Zero if unknown 
+    float SurfaceArea;  // Zero if unknown
                         //  (i.e. if not part of the topology analysis)
     DirectX::XMFLOAT3 IntersectPoint;
     DirectX::XMFLOAT3 IntersectNormal;
@@ -290,7 +290,7 @@ The “TopologyResult” contains the center position of the returned volume, th
 
 ```cpp
 struct TopologyResult
-{ 
+{
     DirectX::XMFLOAT3 position;
     DirectX::XMFLOAT3 normal;
     float width;
@@ -387,12 +387,12 @@ public static ObjectPlacementConstraint Create_NearPoint(
 The below object placement query is looking for a place to put a half meter cube on the edge of a surface, away from other previously place objects and near the center of the room.
 
 ```cs
-List<ObjectPlacementRule> rules = 
+List<ObjectPlacementRule> rules =
     new List<ObjectPlacementRule>() {
         ObjectPlacementRule.Create_AwayFromOtherObjects(1.0f),
     };
 
-List<ObjectPlacementConstraint> constraints = 
+List<ObjectPlacementConstraint> constraints =
     new List<ObjectPlacementConstraint> {
         ObjectPlacementConstraint.Create_NearCenter(),
     };
@@ -400,7 +400,7 @@ List<ObjectPlacementConstraint> constraints =
 Solver_PlaceObject(
     “MyCustomObject”,
     new ObjectPlacementDefinition.Create_OnEdge(
-        new Vector3(0.25f, 0.25f, 0.25f), 
+        new Vector3(0.25f, 0.25f, 0.25f),
         new Vector3(0.25f, 0.25f, 0.25f)),
     rules.Count,
     UnderstandingDLL.PinObject(rules.ToArray()),
@@ -423,9 +423,9 @@ While the spatial mapping solution provided by the HoloLens is designed to be ge
 ```txt
 Fixed size playspace – The user specifies the maximum playspace size in the init call.
 
-One-time scan process – 
+One-time scan process –
     The process requires a discrete scanning phase where the user walks around,
-    defining the playspace. 
+    defining the playspace.
     Query functions will not function until after the scan has been finalized.
 ```
 
@@ -436,21 +436,21 @@ SpatialUnderstanding_Init – Called once at the start.
 
 GeneratePlayspace_InitScan – Indicates that the scan phase should begin.
 
-GeneratePlayspace_UpdateScan_DynamicScan – 
-    Called each frame to update the scanning process. The camera position and 
-    orientation is passed in and is used for the playspace painting process, 
+GeneratePlayspace_UpdateScan_DynamicScan –
+    Called each frame to update the scanning process. The camera position and
+    orientation is passed in and is used for the playspace painting process,
     described above.
 
-GeneratePlayspace_RequestFinish – 
-    Called to finalize the playspace. This will use the areas “painted” during 
-    the scan phase to define and lock the playspace. The application can query 
-    statistics during the scanning phase as well as query the custom mesh for 
+GeneratePlayspace_RequestFinish –
+    Called to finalize the playspace. This will use the areas “painted” during
+    the scan phase to define and lock the playspace. The application can query
+    statistics during the scanning phase as well as query the custom mesh for
     providing user feedback.
 
-Import_UnderstandingMesh – 
-    During scanning, the “SpatialUnderstandingCustomMesh” behavior provided by 
-    the module and placed on the understanding prefab will periodically query the 
-    custom mesh generated by the process. In addition, this is done once more 
+Import_UnderstandingMesh –
+    During scanning, the “SpatialUnderstandingCustomMesh” behavior provided by
+    the module and placed on the understanding prefab will periodically query the
+    custom mesh generated by the process. In addition, this is done once more
     after scanning has been finalized.
 ```
 
