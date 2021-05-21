@@ -38,3 +38,21 @@ If user's previous Experience Scale settings do not match the new Experience Set
 ### Teleport Hotspot added
 
 A new teleport hotspot component has been graduated. You can add a teleport hotspot to your gameobject to ensure that the user is in a certain position and orientation when they teleport to that location.
+
+
+### Added support for Leap Motion Unity Modules version 4.6.0, 4.7.0 and 4.7.1
+
+Support for the latest versions of the [Leap Motion Unity Modules](https://developer.leapmotion.com/unity) is now compatible with MRTK 2.7.0.  See [How to Configure MRTK for Leap Motion](../features/cross-platform/leap-motion-mrtk.md) for more information. 
+
+
+## Known Issues
+
+### Text Mesh Pro Canvas Renderer warnings in Unity 2020
+
+The following warning is logged in most MRTK example scenes while using Unity 2020:
+
+```
+Please remove the CanvasRenderer component from the [TextMeshPro] GameObject as this component is no longer necessary.
+```
+
+The Canvas Renderer warning was added in [TextMeshPro version 3.0.3](https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0/changelog/CHANGELOG.html#changes-3).  These warning do not have an impact on MRTK's example scenes and can be cleared from the console. See [Issue 9811](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9811) for more details. 
