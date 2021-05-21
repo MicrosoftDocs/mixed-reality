@@ -182,11 +182,18 @@ Right now, the piano keyboard we have created is a static model which does not r
 1. Perfect! Now we have a playable piano:
 (video/gif showing piano)
 
-## [Section 2 heading]
+## Playing the piano in immersive VR mode
 <!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+By now, you have probably already played with the piano with your mouse (or even with a touch screen) as you added the interactive functionalities. In this section, we will be moving into the immersive VR space to play the piano.
+Enable teleportation and snap point
+Enable multi pointer
+1. In order to open the page in your immersive VR headset , you must first connect your headset to your laptop (where you are developing on) and make sure that it is [set up for use in the Windows Mixed Reality App](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality). If you're using the Windows Mixed Reality Simulator, [make sure that it is enabled](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator).
+
+1. You will now see a Immersive VR button at the bottom right of the web page. Click on it and you will be able to see the piano in the XR device you are connected to!
+
+1. Now, depending on where your starting point is, you might find it a little difficult to position yourself in front of the piano. If you are already familiar with the immersive VR environment, you might already know about *teleportation*, which is a feature that allows you to move to another spot in the space instantly by pointing at it. For babylon.js, it is enabled by default at the `createDefaultXRExperience` function call.
+
+1. The teleportation support also comes with a very useful feature called snap-to positions. In short, snap-to positions are specific positions that we want users to land at. For example, we can set a snap-to position in front of the piano so that users can easily teleport to the specific location when they point their pointers close to the piano.
 
 ## [Section n heading]
 <!-- Introduction paragraph -->
