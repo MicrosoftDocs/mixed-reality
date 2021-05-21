@@ -1,6 +1,6 @@
 ---
 title: Android and iOS MRTK Configuration (ARFoundation)
-description: Documentation to use ARFoundation in unity
+description: Documentation to configure MRTK for Android and iOS (ARFoundation) in unity
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
