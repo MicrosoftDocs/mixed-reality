@@ -24,4 +24,4 @@ For best results, make sure your app properly sets the [focus point](focus-point
 
 ## See Also
 
-* [Holographic Remoting Player](../platform-capabilities-and-apis/holographic-remoting-player.md)
+- [Holographic Remoting Player](../platform-capabilities-and-apis/holographic-remoting-player.md)

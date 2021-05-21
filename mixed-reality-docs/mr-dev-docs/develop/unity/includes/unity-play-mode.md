@@ -9,7 +9,7 @@
 1. Ensure the **Windows Standalone** tab is selected and click **Show All**.
 1. Find **Holographic Editor Remoting** in the list, check its checkbox, and expand **Settings**.
 1. For **Remote Host Name**, enter the IP address of your HoloLens.
-    1. Change other settings as needed.
+   1. Change other settings as needed.
 1. Select the **Play** button to start Play Mode and experience the app on your HoloLens.
 
 # [Unity 2019/2020 + Windows XR Plugin](#tab/winxr)
