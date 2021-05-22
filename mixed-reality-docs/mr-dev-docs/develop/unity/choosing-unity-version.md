@@ -52,7 +52,7 @@ However, there are known issues that affect hologram stability and other feature
 * Holographic app remoting applications using the Universal Windows Platform build target are not working.
 * The Unity graphics jobs system is defaulted on, even though it is not compatible with HoloLens projects.
 
-If you choose to start a new project in Unity 2020 today, be sure to follow up over the coming months for updated Unity builds and Windows XR plugin builds before shipping your app.  This will ensure that your users experience proper hologram stability.
+If you choose to use Unity 2020, be sure to upgrade to Unity 2020.3.6f1 or later versions to ensure your user experience proper hologram stability.
 
 > [!div class="nextstepaction"]
 > [Using the Windows XR plugin](windows-xr-plugin.md)
