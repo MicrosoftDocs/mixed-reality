@@ -185,34 +185,54 @@ Right now, the piano keyboard we have created is a static model which does not r
 ## Playing the piano in immersive VR mode
 <!-- Introduction paragraph -->
 By now, you have probably already played with the piano with your mouse (or even with a touch screen) as you added the interactive functionalities. In this section, we will be moving into the immersive VR space to play the piano.
-Enable teleportation and snap point
-Enable multi pointer
+
 1. In order to open the page in your immersive VR headset , you must first connect your headset to your laptop (where you are developing on) and make sure that it is [set up for use in the Windows Mixed Reality App](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality). If you're using the Windows Mixed Reality Simulator, [make sure that it is enabled](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator).
 
 1. You will now see a Immersive VR button at the bottom right of the web page. Click on it and you will be able to see the piano in the XR device you are connected to!
 
-1. Now, depending on where your starting point is, you might find it a little difficult to position yourself in front of the piano. If you are already familiar with the immersive VR environment, you might already know about *teleportation*, which is a feature that allows you to move to another spot in the space instantly by pointing at it. For babylon.js, it is enabled by default at the `createDefaultXRExperience` function call.
+1. If you are playing the piano using your two immersive VR controllers, you might have noticed that you can only use one controller at a time. Let's enable the multi-pointer support in the XR space by using babylon.js's WebXR features manager. Add the following code into the `createScene()` function, after the `xrHelper` initialization line:
 
-1. The teleportation support also comes with a very useful feature called snap-to positions. In short, snap-to positions are specific positions that we want users to land at. For example, we can set a snap-to position in front of the piano so that users can easily teleport to the specific location when they point their pointers close to the piano.
+    ```javascript
+    const featuresManager = xrHelper.baseExperience.featuresManager;
+    const pointerSelection = featuresManager.enableFeature(BABYLON.WebXRFeatureName.POINTER_SELECTION, "stable" /* or latest */, {
+        xrInput: xrHelper.input,
+        enablePointerSelectionOnAllControllers: true        
+    });
+    ```
 
-## [Section n heading]
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+1. Additionally, depending on where your starting point is, you might find it a little difficult to position yourself in front of the piano. If you are already familiar with the immersive VR environment, you might already know about *teleportation*, which is a feature that allows you to move to another spot in the space instantly by pointing at it.
 
-<!-- 6. Clean up resources
-Required. If resources were created during the tutorial. If no resources were created, 
-state that there are no resources to clean up in this section.
--->
+1. However, in order to use the teleportation feature, we first need to have a ground mesh where people can "stand on" in the VR space. Add the following code to the `createScene()` function to create a ground:
 
-## Clean up resources
+    ```javascript
+    const ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 400/scale, height: 400/scale});
+    ```
 
-If you're not going to continue to use this application, delete
-<resources> with the following steps:
+1. The teleportation support also comes with a very useful feature called snap-to positions. In short, snap-to positions are specific positions that we want users to land at. For example, we can set a snap-to position in front of the piano so that users can easily teleport to the specific location when they point their pointers close to the piano. Append the follow snippet below to enable the teleportation feature while specifying a snap-to point:
 
-1. From the left-hand menu...
-1. ...click Delete, type...and then click Delete
+    ```javascript
+    
+    const teleportation = featuresManager.enableFeature(BABYLON.WebXRFeatureName.TELEPORTATION, "stable", {
+        xrInput: xrHelper.input,
+        floorMeshes: [ground],
+        snapPositions: [new BABYLON.Vector3(2.4*3.5/scale, 0, -10/scale)],
+    });
+    ```
+
+1. Now, you should be able to easily position yourself in front of the piano by teleporting to the snap-to point in front of the piano, and you should be able to press on two keys at a time using both controllers.
+
+## Playing on the piano with your hand (only supported on Oculus Quest)
+
+Babylon.js's hand tracking support, which is currently only available on Oculus Quest 1 and 2, will allow you to play on the piano in the XR space using just your hands!
+
+You can enable this feature by adding the following block of code to `createScene()`:
+
+```javascript
+const handTracking = featuresManager.enableFeature(BABYLON.WebXRFeatureName.HAND_TRACKING, "latest", {
+    xrInput: xrHelper.input,
+});
+```
+
 
 <!-- 7. Next steps
 Required: A single link in the blue box format. Point to the next logical tutorial 
@@ -222,11 +242,11 @@ customer can do.
 
 ## Next steps
 
-Advance to the next article to learn how to create...
-> [!div class="nextstepaction"]
-> [Next steps button](contribute-how-to-mvc-tutorial.md)
+Congratulations! You've completed our series of babylon.js tutorials and learned how to:
+> [!div class="checklist"]
+> * Create, position, and merge meshes to build a model of a piano
+> * Add pointer interactions to each piano key
+> * Enable key WebXR features such as teleportation and multipointer support
+> * (Optional) Enable hand tracking WebXR feature when viewing on Oculus Quest
 
-<!--
-Remove all the comments in this template before you sign-off or merge to the 
-main branch.
--->
+For more information on Mixed Reality JavaScript development see [JavaScript development overview](/javascript-development-overview.md).
