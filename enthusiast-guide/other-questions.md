@@ -1,5 +1,5 @@
 ---
-title: Other questions
+title: Immersive hardware realted FAQ
 description: Additional Windows Mixed Reality troubleshooting tips that go beyond our standard consumer support documentation.
 ms.author: v-hferrone
 ms.date: 09/15/2020
