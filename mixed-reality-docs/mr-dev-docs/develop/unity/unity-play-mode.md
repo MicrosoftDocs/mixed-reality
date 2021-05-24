@@ -12,6 +12,10 @@ keywords: Unity, remoting, holographic remoting, holographic remoting player, Ho
 
 A fast way to work on your Unity project is to use "Play Mode", which runs your app locally in the Unity editor on your PC. Unity uses Holographic Remoting to provide a fast way to preview your content on a real HoloLens device. Play Mode can also be used with a Windows Mixed Reality headset attached to your development PC.
 
+## Available features
+
+TBD
+
 ## Holographic Remoting setup
 
 1. First, you need to [install the Holographic Remoting Player app](https://www.microsoft.com/store/productId/9NBLGGH4SV40) from the Microsoft Store on your HoloLens 2
@@ -53,5 +57,10 @@ Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more 
 
 For best results, make sure your app properly sets the [focus point](focus-point-in-unity.md). This helps Holographic Remoting to best adapt your scene to the latency of your wireless connection.
 
+## Known issues
+
+TBD
+
 ## See Also
+
 * [Holographic Remoting Player](../platform-capabilities-and-apis/holographic-remoting-player.md)
