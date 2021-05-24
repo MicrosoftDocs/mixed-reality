@@ -91,7 +91,7 @@ Let's begin by setting up the HTML web page that will contain the babylon.js sce
     ```javascript
     const alpha =  3*Math.PI/2;
     const beta = Math.PI/50;
-    const radius = 220/scale;
+    const radius = 3.3;
     const target = new BABYLON.Vector3(0, 0, 0);
     
     const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target, scene);
@@ -157,7 +157,7 @@ const createScene = async function(engine) {
 
     const alpha =  3*Math.PI/2;
     const beta = Math.PI/50;
-    const radius = 220/scale;
+    const radius = 3.3;
     const target = new BABYLON.Vector3(0, 0, 0);
     
     const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target, scene);
