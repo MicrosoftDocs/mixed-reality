@@ -3,47 +3,26 @@ title: Introduction to building a piano in WebXR using BabylonJS
 description: Complete this course to learn how to build a functioning 88-key piano keyboard in WebXR using BabylonJS
 author: JING1201
 ms.author: t-jinglow
-ms.service: #Required; service per approved list. slug assigned by ACOM.
+ms.prod: mixed-reality
 ms.topic: tutorial
 ms.date: 05/31/2021
-ms.custom: template-tutorial
+keywords: mixed reality, javascript, tutorial, BabylonJS, hololens, mixed reality, UWP, Windows 10, WebXR, immersive web
+ms.localizationpriority: high
 ---
 
 
-<!--
-This template provides the basic structure of a tutorial article.
-See the [tutorial guidance](contribute-how-to-mvc-tutorial.md) in the contributor guide.
-
-To provide feedback on this template contact 
-[the templates workgroup](mailto:templateswg@microsoft.com).
--->
-
-<!-- 1. H1 
-Required. Start with "Tutorial: ". Make the first word following "Tutorial: " a 
-verb.
--->
-
 # Tutorial: Build a piano in WebXR using babylon.js
 
-<!-- 2. Introductory paragraph 
-Required. Lead with a light intro that describes, in customer-friendly language, 
-what the customer will learn, or do, or accomplish. Answer the fundamental “why 
-would I want to do this?” question. Keep it short.
--->
-
-Through this tutorial series, you will learn about using babylon.js to create a Mixed Reality web app that contains a functioning 88-key standup piano. In the completed app, you will be able to easily teleport to the position in front of the piano and begin playing on the keys using your mixed reality controllers.
-
-<!-- 3. Tutorial outline 
-Required. Use the format provided in the list below.
--->
+Building a piano in the real world requires a lot of time, skills, and materials. What about building one for the VR/AR world? Through this tutorial series, you will learn about using babylon.js to create a Mixed Reality web app that contains a functioning 88-key standup piano in the virtual world. In the completed app, you will be able to easily teleport to the position in front of the piano and begin playing on the keys using your mixed reality controllers.
 
 In this tutorial series, you will learn how to:
 
 > [!div class="checklist"]
-> * Create, position, and merge meshes to build a model of a piano
+> * Create, position, and merge meshes to build a piano keyboard
+> * Import a babylon.js model of a standup piano frame
 > * Add pointer interactions to each piano key
-> * Enable key WebXR features such as teleportation and multipointer support
-> * (Optional) Enable hand tracking WebXR feature when viewing on Oculus Quest
+> * Enable teleportation and multipointer support in WebXR
+> * (Optional) Enable hand tracking in WebXR
 
 <!-- 4. Prerequisites 
 Required. First prerequisite is a link to a free trial account if one exists. If there 

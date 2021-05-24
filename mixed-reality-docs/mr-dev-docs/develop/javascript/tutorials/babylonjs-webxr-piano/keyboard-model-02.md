@@ -56,7 +56,7 @@ are no prerequisites, state that no prerequisites are needed for this tutorial.
 
 ## Before you begin
 
-Make sure that you have gone through the [previous tutorial in the series](introduction-01.md) and have the final code from it ready to be edited.
+Make sure that you have gone through the [previous tutorial in the series](introduction-01.md) and are ready to continue adding to the code.
 
 ## A simple piano keyboard
 Let's begin by making a simple piano keyboard that looks like this:
@@ -230,7 +230,7 @@ In this section, let's expand the usage of the key-creation functions we wrote i
 
     ![Full Piano Keyboard Mesh](../images/full-keyboard-mesh.png)
 
-## Building a piano frame
+## Adding a piano frame
 
 1. The scene looks a little odd with just a keyboard floating in the space. Let's add a piano frame around the keyboard to create the look of a standup piano.
 
