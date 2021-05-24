@@ -14,7 +14,7 @@ keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Realit
 > Windows Standalone app remoting support was added in the 0.1.3 package release.
 > As of version 0.1.3, this feature doesn’t support UWP builds.
 
-1. Follow the steps in [Holographic Remoting setup](openxr-supported-features.md#holographic-remoting-setup)
+1. Follow the steps in [Holographic Remoting setup](unity-play-mode.md#holographic-remoting-setup)
 2. Open **Edit -> Project Settings**, navigate to **XR plug-in Management**, and check the **Windows Mixed Reality feature set** box. Also, uncheck **Initialize XR on Startup**:
 
     ![Screenshot of project settings panel open in the Unity Editor with Initialize XR on Startup unchecked](images/openxr-features-img-02-app.png)
@@ -24,7 +24,7 @@ keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Realit
 
     ![Screenshot of project settings panel open in the Unity Editor with app remoting enabled](images/openxr-features-img-03-app.png)
 
-5. Next, write some code to set the remoting configuration and trigger XR initialization. The sample app distributed with the [Mixed Reality OpenXR Plugin](openxr-getting-started.md#hololens-2-samples) contains AppRemoting.cs, which shows an example scenario for connecting to a specific IP address at runtime. Deploying the sample app to a local machine at this point will display an IP address input field with a connect button. Typing an IP address and clicking Connect will initialize XR and attempt to connect to the target device:
+5. Next, write some code to set the remoting configuration and trigger XR initialization. The sample app distributed with the [Mixed Reality OpenXR Plugin](openxr-getting-started.md#unity-sample-projects-for-openxr-and-hololens-2) contains AppRemoting.cs, which shows an example scenario for connecting to a specific IP address at runtime. Deploying the sample app to a local machine at this point will display an IP address input field with a connect button. Typing an IP address and clicking Connect will initialize XR and attempt to connect to the target device:
 
     ![Screenshot of sample app displaying example app remoting UI](images/openxr-sample-app-remoting.png)
 

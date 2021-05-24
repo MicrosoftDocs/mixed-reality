@@ -1,5 +1,5 @@
 ---
-title: PerfGettingStarted
+title: Performance Getting Started
 description: Documentation to understand and adjust preformance in MRTK.
 author: keveleigh
 ms.author: kurtie

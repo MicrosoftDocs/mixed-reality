@@ -1,5 +1,5 @@
 ---
-title: InputAnimationFileFormat
+title: Input Animation File Format
 description: Documentation on Input animation binary file format specification in MRTK
 author: CDiaz-MS
 ms.author: cadia

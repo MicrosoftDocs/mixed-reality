@@ -1,5 +1,5 @@
 ---
-title: LeapMotionMRTK
+title: Leap Motion MRTK
 description: Documentation to configure for Leap Motion
 author: CDiaz-ms
 ms.author: cadia
@@ -17,15 +17,16 @@ The Leap Motion Data Provider enables articulated hand tracking for VR and could
 
 This provider can be used in editor and on device while on the Standalone platform.  It can also be used in editor while on the UWP platform but NOT in a UWP build.
 
-|Leap Motion Unity Modules Versions Supported|
-|---|
-|4.5.0|
-|4.5.1|
+| MRTK Version | Leap Motion Unity Modules Versions Supported |
+| --- | --- |
+|2.6.x | 4.5.0, 4.5.1|
+|2.7.x| 4.5.0, 4.5.1, 4.6.0, 4.7.0, 4.7.1|
+
 
 ## Using Leap Motion (by Ultraleap) hand tracking in MRTK
 
 1. Importing MRTK and the Leap Motion Unity Modules
-    - Install the [Leap Motion SDK 4.0.0](https://developer.leapmotion.com/releases/?category=orion) if it is not already installed
+    - Install the latest [Leap Motion SDK](https://developer.leapmotion.com/releases/?category=orion) if it is not already installed
     - Import the **Microsoft.MixedReality.Toolkit.Foundation** package into the Unity project.
     - Download and import the latest version of the [Leap Motion Unity Modules](https://developer.leapmotion.com/unity) into the project
         - Only import the **Core** package within the Unity Modules
@@ -85,11 +86,11 @@ This provider can be used in editor and on device while on the Standalone platfo
 1. Building your project
     - Navigate to **File > Build Settings**
     - Only Standalone builds are supported if using the Leap Motion Data Provider.
-    - For instructions on how to use a Windows Mixed Reality headset for Standalone builds, see [Build and Deploy](../../updates-deployment/build-and-deploy.md#building-and-deploying-mrtk-to-a-windows-mixed-reality-headset).
+    - For instructions on how to use a Windows Mixed Reality headset for Standalone builds, see [Building and deploying MRTK (Standalone)](wmr-mrtk.md#building-and-deploying-mrtk-standalone).
 
 ## Getting the hand joints
 
-Getting joints using the Leap Motion Data Provider is identical to hand joint retrieval for an MRTK Articulated Hand.  For more information, see [Hand Tracking](../input/hand-tracking.md#polling-joint-pose-from-handjointutils).
+Getting joints using the Leap Motion Data Provider is identical to hand joint retrieval for an MRTK Articulated Hand.  For more information, see [Hand Tracking](../features/input/hand-tracking.md#polling-joint-pose-from-handjointutils).
 
 With MRTK in a unity scene and the Leap Motion Data Provider added as an Input Data Provider in the Input System profile, create an empty game object and attach the following example script.
 
@@ -194,5 +195,5 @@ The example scene is contained in the **Microsoft.MixedReality.Toolkit.Examples*
 
 ## See also
 
--[Input Providers](../input/input-providers.md)
--[Hand Tracking](../input/hand-tracking.md)
+- [Input Providers](../features/input/input-providers.md)
+- [Hand Tracking](../features/input/hand-tracking.md)

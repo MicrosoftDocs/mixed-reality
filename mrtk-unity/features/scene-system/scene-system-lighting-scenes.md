@@ -1,5 +1,5 @@
 ---
-title: SceneSystemLightingScenes
+title: Scene System Lighting Scenes
 description: Documentation on Lighting in the scene.
 author: polar-kev
 ms.author: kesemple

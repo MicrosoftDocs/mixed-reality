@@ -55,9 +55,9 @@ Learn more about Mixed Reality here: <https://docs.microsoft.com/windows/mixed-r
 
 ### What is inside-out tracking? How is it different than outside-in tracking or lighthouse tracking
 
-* **Inside-out tracking** Windows Mixed Reality uses inside-out tracking. With inside-out tracking cameras are built into the headset and track changes in the environment to determine the headsets position based on the environment as you move around.
+* **Inside-out tracking** Windows Mixed Reality, Oculus Quest, and Vive/Index systems use inside-out tracking. With inside-out tracking cameras are built into the headset and track changes in the environment to determine the headset's position based on the environment as you move around. Some systems, such as the HTC Vive and Valve Index, use infrared sensors instead of cameras and depend on external "lighthouses" or "base stations" that project infrared light to track their environment.
 
-* **Outside-in tracking** Oculus, Vive and others use outside-in tracking.  With outside-in tracking, the headset is tracked by one or more external devices. Camera(s) are built into those external devices, placed around the environment and are used to determine the position of the headset based on the environment.
+* **Outside-in tracking** Systems such as the Oculus Rift and PlayStation VR use outside-in tracking.  With outside-in tracking, the headset is tracked by one or more external devices. Camera(s) are built into those external devices, placed around the environment and are used to determine the position of the headset based on the environment.
 
 Find out more about [inside-out tracking](./tracking-system.md).
 

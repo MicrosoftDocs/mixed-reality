@@ -1,5 +1,5 @@
 ---
-title: SceneSystemLoadProgress
+title: Scene System Load Progress
 description: Documentation on content loading of Scenes in MRTK
 author: polar-kev
 ms.author: kesemple

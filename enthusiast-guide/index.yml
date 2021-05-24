@@ -45,7 +45,7 @@ highlightedContent:
     - title: Explore AltspaceVR
       itemType: whats-new
       url: https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey?tabs=application
-    
+
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
@@ -87,7 +87,7 @@ conceptualContent:
       links:
         - url: troubleshooting-windows-mixed-reality.md
           itemType: concept
-          text: General FAQ
+          text: Support and help options
         - url: filing-feedback.md
           itemType: concept
           text: Filing bugs and feedback

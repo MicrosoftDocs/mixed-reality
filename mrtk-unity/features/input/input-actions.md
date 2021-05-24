@@ -1,5 +1,5 @@
 ---
-title: InputActions
+title: Input Actions
 description: Documentation to create input actions in MRTK
 author: keveleigh
 ms.author: kurtie

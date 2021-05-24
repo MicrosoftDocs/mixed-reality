@@ -55,6 +55,7 @@ With Unity's Text Mesh Pro, you can secure the text rendering quality. It suppor
 *Scaling values for the Unity 3D Text and UI*
 
 ## Recommended text size
+
 As you can expect, type sizes that we use on a PC or a tablet device (typically between 12–32pt) look small at a distance of 2 meters. It depends on the characteristics of each font, but in general the recommended minimum viewing angle and the font height for legibility are around 0.35°-0.4°/12.21-13.97 mm based on our user research studies. It's about 35-40 pt with the scaling factor introduced above.
 
 For the near interaction at 0.45 m (45 cm), the minimum legible font's viewing angle and the height are 0.4°-0.5° / 3.14–3.9mm. It's about 9-12 pt with the scaling factor introduced above.
@@ -63,6 +64,7 @@ For the near interaction at 0.45 m (45 cm), the minimum legible font's viewing a
 *Content at near and far interaction range*
 
 ### The minimum legible font size
+
 | Distance | Viewing angle | Text height | Font size |
 |---------|---------|---------|---------|
 | 45 cm (direct manipulation distance) | 0.4°-0.5° | 3.14–3.9mm | 8.9–11.13pt |
@@ -70,6 +72,7 @@ For the near interaction at 0.45 m (45 cm), the minimum legible font's viewing a
 
 
 ### The comfortably legible font size
+
 | Distance | Viewing angle | Text height | Font size |
 |---------|---------|---------|---------|
 | 45 cm (direct manipulation distance) | 0.65°-0.8° | 5.1-6.3 mm | 14.47-17.8 pt |
@@ -84,14 +87,14 @@ Segoe UI (the default font for Windows) works well in most cases. However, avoid
 
 ### Sharp text rendering quality with proper dimension
 
-Based on these scaling factors, we have created [text prefabs with UI Text and 3D Text Mesh](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Prefabs/Text). Developers can use these prefabs to get sharp text and consistent font size.
+Based on these scaling factors, we have created [text prefabs with UI Text and 3D Text Mesh](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Prefabs/Text). Developers can use these prefabs to get sharp text and consistent font size.
 
 ![Sharp text rendering quality with proper dimension](images/hug-text-06-1000px.png)<br>
 *Sharp text rendering quality with proper dimension*
 
 ### Shader with occlusion support
 
-Unity's default font material doesn't support occlusion. Because of this, you'll see the text behind the objects by default. We've included a simple [shader that supports the occlusion](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/StandardAssets/Shaders/Text3DShader.shader). The image below shows the text with default font material (left) and the text with proper occlusion (right).
+Unity's default font material doesn't support occlusion. Because of this, you'll see the text behind the objects by default. We've included a simple [shader that supports the occlusion](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/main/Assets/MRTK/StandardAssets/Shaders/Text3DShader.shader). The image below shows the text with default font material (left) and the text with proper occlusion (right).
 
 ![Shader with occlusion support](images/hug-text-07-1000px.png)<br>
 *Shader with occlusion support*
@@ -110,7 +113,7 @@ Or jump to Mixed Reality platform capabilities and APIs:
 
 You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.
 
-
 ## See also
-* [Text Prefab in the MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Prefabs/Text)
+
+* [Text Prefab in the MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Prefabs/Text)
 * [Typography](../../design/typography.md)

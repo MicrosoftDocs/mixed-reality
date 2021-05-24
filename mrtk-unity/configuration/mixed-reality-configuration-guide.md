@@ -1,5 +1,5 @@
 ---
-title: MixedRealityConfigurationGuide
+title: Mixed Reality Configuration Guide
 description: Documentation to configure MRTK into unity.
 author: RogPodge
 ms.author: roliu

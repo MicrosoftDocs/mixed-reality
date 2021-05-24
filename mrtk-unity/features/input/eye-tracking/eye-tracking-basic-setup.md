@@ -1,5 +1,5 @@
 ---
-title: EyeTracking_BasicSetup
+title: Eye Tracking Basic Setup
 description: How to setup Eye Tracking in MRTK
 author: CDiaz-MS
 ms.author: cadia

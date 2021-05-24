@@ -1,5 +1,5 @@
 ---
-title: SceneSystemGettingStarted
+title: Scene System Getting Started
 description: Landing page for scene system with MRTK
 author: polar-kev
 ms.author: kesemple
