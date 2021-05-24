@@ -1,6 +1,10 @@
 # [Unity 2019/2020 + Windows XR Plugin](#tab/winxr)
 
-Once **MixedRealityFeatureTool** is opened click on **Start** to get started with Mixed Reality Feature Tool.
+Once **MixedRealityFeatureTool** is opened, To access preview releases click on **Settings** and enable **Show preview releases** under **Feature** tab, then click on **ok** to save the settings.
+
+![MixedRealityFeatureTool for legacy WSA](../images/mr-learning-base/base-02-section4-step1-2-preview.png)
+
+next click on **Start** to get started with Mixed Reality Feature Tool.
 
 ![MixedRealityFeatureTool for legacy WSA](../images/mr-learning-base/base-02-section4-step1-2.png)
 
@@ -20,7 +24,7 @@ Features are grouped by category to make things easier to find, click on **Mixed
 
 ![MixedRealityFeatureTool Discover Features](../images/mr-learning-base/base-02-section4-step1-4.png)
 
-check the **Mixed Reality Toolkit Foundation**, and click on the dropdown next to it to select **MRTK 2.7.0**, then click on **Get features** button to download the selected packages.
+check the **Mixed Reality Toolkit Foundation**, and click on the dropdown next to it to select **MRTK 2.7.0-preview.4**, then click on **Get features** button to download the selected packages.
 
 ![MixedRealityFeatureTool Open MixedReality](../images/mr-learning-base/base-02-section4-step1-5.png)
 
@@ -93,7 +97,11 @@ In the Project Settings window, select **Player** > **Publishing Settings**, the
 
 # [Unity 2020 + OpenXR](#tab/openxr)
 
-Once **MixedRealityFeatureTool** is opened click on **Start** to get started with Mixed Reality Feature Tool.
+Once **MixedRealityFeatureTool** is opened, To access preview releases click on **Settings** and enable **Show preview releases** under **Feature** tab, then click on **ok** to save the settings.
+
+![MixedRealityFeatureTool for legacy WSA](../images/mr-learning-base/base-02-section4-step1-2-preview.png)
+
+next click on **Start** to get started with Mixed Reality Feature Tool.
 
 ![MixedRealityFeatureTool for legacy WSA](../images/mr-learning-base/base-02-section4-step1-2.png)
 
@@ -113,7 +121,7 @@ Features are grouped by category to make things easier to find, click on **Mixed
 
 ![MixedRealityFeatureTool Discover Features](../images/mr-learning-base/base-02-section4-step1-4-openxr.png)
 
-check the **Mixed Reality Toolkit Foundation** and click on the dropdown next to it to select **MRTK 2.7.0**, also check the **Mixed Reality OpenXR Plugin** and click on the dropdown next to it to select most recent version available, then click on **Get features** button to download the selected packages.
+check the **Mixed Reality Toolkit Foundation** and click on the dropdown next to it to select **MRTK 2.7.0-preview.4**, also check the **Mixed Reality OpenXR Plugin** and click on the dropdown next to it to select most recent version available, then click on **Get features** button to download the selected packages.
 
 ![MixedRealityFeatureTool Open MixedReality](../images/mr-learning-base/base-02-section4-step1-5-openxr.png)
 
@@ -194,7 +202,11 @@ In the Project Settings window, select **Player** > **Publishing Settings**, the
 
 # [Legacy WSA](#tab/wsa)
 
-Once **MixedRealityFeatureTool** is opened click on **Start** to get started with Mixed Reality Feature Tool.
+Once **MixedRealityFeatureTool** is opened, To access preview releases click on **Settings** and enable **Show preview releases** under **Feature** tab, then click on **ok** to save the settings.
+
+![MixedRealityFeatureTool for legacy WSA](../images/mr-learning-base/base-02-section4-step1-2-preview.png)
+
+next click on **Start** to get started with Mixed Reality Feature Tool.
 
 ![MixedRealityFeatureTool for legacy WSA](../images/mr-learning-base/base-02-section4-step1-2.png)
 
@@ -214,7 +226,7 @@ Features are grouped by category to make things easier to find, click on **Mixed
 
 ![MixedRealityFeatureTool Discover Features](../images/mr-learning-base/base-02-section4-step1-4.png)
 
-check the **Mixed Reality Toolkit Foundation**, and click on the dropdown next to it to select MRTK 2.7.0, then click on **Get features** button to download the selected packages.
+check the **Mixed Reality Toolkit Foundation**, and click on the dropdown next to it to select **MRTK 2.7.0-preview.4**, then click on **Get features** button to download the selected packages.
 
 ![MixedRealityFeatureTool Open MixedReality](../images/mr-learning-base/base-02-section4-step1-5.png)
 
