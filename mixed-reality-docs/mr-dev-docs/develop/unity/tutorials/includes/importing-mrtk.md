@@ -70,7 +70,7 @@ In the MRTK Project Configurator window, click on **next** then use the Audio sp
 > * Set default Spatial Awareness layer: Creates a Unity Layer named Spatial Awareness and configures MRTK to use this layer for the spatial awareness mesh. To learn more about Unity Layers, you can refer to Unity's <a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">Customizing Your Workspace</a> documentation.
 
 > [!TIP]
->Setting the Audio spatializer property is optional but may improve the audio experience in your project. If you set it to MS HRTF Spatializer, this spatializer plugin will be used when Unity's AudioSource.spatialize property is enabled. To learn more about this topic, you can refer to the  <a href="//windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank"> Spatial audio tutorials</a>.
+> Setting the Audio spatializer property is optional but may improve the audio experience in your project. If you set it to MS HRTF Spatializer, this spatializer plugin will be used when Unity's AudioSource.spatialize property is enabled. To learn more about this topic, you can refer to the  <a href="//windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank"> Spatial audio tutorials</a>.
 
 Click on **Next** then click on **Done** in the MRTK Project Configurator window to finish the Unity project configuration for XRSDK.
 
@@ -127,7 +127,7 @@ check the **Mixed Reality Toolkit Foundation** and click on the dropdown next to
 
 Next click on the **Validate** button to validate the selected package, you will get a popup with message **No validation issues were detected** click on **OK** to close the popup and click on **Import** button.
 
-![MixedRealityFeatureTool Select required package](../images/mr-learning-base/base-02-section4-step1-6.png)
+![MixedRealityFeatureTool Select required package](../images/mr-learning-base/base-02-section4-step1-6-OpenXR.png)
 
 Click on **Approve** Button to add the **Mixed Reality Toolkit** into the project.
 
@@ -234,6 +234,10 @@ Next click on the **Validate** button to validate the selected package, you will
 
 ![MixedRealityFeatureTool Select required package](../images/mr-learning-base/base-02-section4-step1-6.png)
 
+Click on **Approve** Button to add the **Mixed Reality Toolkit** into the project.
+
+![MixedRealityFeatureTool Validate package](../images/mr-learning-base/base-02-section4-step1-7.png)
+
 ## Configuring the Unity project
 
 After Unity has finished importing the package from the previous section, the MRTK Project Configurator window should appear. If it doesn't, you can manually open it by going to **Mixed Reality** > **Toolkit** > **Utilities** > **Configure Project for MRTK**:
@@ -259,7 +263,7 @@ In the MRTK Project Configurator window, ensure all options are checked and also
 > * Set default Spatial Awareness layer: Creates a Unity Layer named Spatial Awareness and configures MRTK to use this layer for the spatial awareness mesh. To learn more about Unity Layers, you can refer to Unity's <a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">Customizing Your Workspace</a> documentation.
 
 > [!TIP]
->Setting the Audio spatializer property is optional but may improve the audio experience in your project. If you set it to MS HRTF Spatializer, this spatializer plugin will be used when Unity's AudioSource.spatialize property is enabled. To learn more about this topic, you can refer to the  <a href="//windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank"> Spatial audio tutorials</a>.
+> Setting the Audio spatializer property is optional but may improve the audio experience in your project. If you set it to MS HRTF Spatializer, this spatializer plugin will be used when Unity's AudioSource.spatialize property is enabled. To learn more about this topic, you can refer to the  <a href="//windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank"> Spatial audio tutorials</a>.
 
 Click on **Next** then click on**Done** button in MRTK Project Configurator window to finish the Unity project configuration for Legecy XR.
 
