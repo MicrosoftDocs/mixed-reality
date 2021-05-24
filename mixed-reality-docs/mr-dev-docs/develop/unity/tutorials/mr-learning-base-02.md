@@ -138,7 +138,7 @@ After you have imported the tutorial assets your Project window should look simi
 
 ## Configuring the Scene
 
-In the Project window, navigate to the Assets > MRTK.Tutorials.GettingStarted > Prefabs folder:
+In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** folder:
 
 From the Project window, click-and-drag the **Cube** prefab on to the Hierarchy window, then in the Inspector window configure its **Transform** component as follows
 
