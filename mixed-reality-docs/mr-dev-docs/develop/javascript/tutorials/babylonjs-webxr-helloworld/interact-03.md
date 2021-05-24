@@ -261,6 +261,8 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
 
 ## Run on a Windows Mixed Reality Simulator
 
+1. [Enable the Windows Mixed Reality Simulator](../../../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) if you have not done so in the past.
+
 1. Select the Immersive-VR button on the bottom right corner:
 ![Immersive VR Button](../images/immersive-vr-button.png)
 
@@ -270,7 +272,7 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
 1. Use the W,A,S, and D keys on your keyboard to walk forward, back left and right accordingly. Use simulated hand to target the cube and press the Enter key on your keyboard to perform the click action. The cube will change its color and move to a new position.
 
 > [!NOTE]
-> When targeting the cube, make sure that the end of hand ray (white circle) intersects with the cube as shown on the picture above. Learn more about [Point and commit with hands](https://docs.microsoft.com/windows/mixed-reality/design/point-and-commit).
+> When targeting the cube, make sure that the end of hand ray (white circle) intersects with the cube as shown on the picture above. Learn more about [Point and commit with hands](../../../../design/point-and-commit.md).
 
 ## Run and debug on Android device
 
