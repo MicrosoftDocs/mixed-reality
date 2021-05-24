@@ -111,7 +111,7 @@ Let's begin by setting up the HTML web page that will contain the babylon.js sce
 
     In javascript, in order to use the `await` keyboard on an `async` function within a function, the parent function would also have to be `async`, which is why we defined `createScene` function as async earlier. Later in this tutorial series, we will be using this `xrHelper` to enable and configure different WebXR features supported by babylon.js.
 
-1. Now that we have a working `createScene()` function, let's have *index.html* load the *scene.js* file as a script so that the `createScene()` function is recognized in *index.html*. Add this line of code within the `<header>` tag of the html file:
+1. Now that we have a working `createScene()` function, let's have *index.html* load the *scene.js* file as a script so that the `createScene()` function is recognized in *index.html*. Add this line of code within the `<header>` section of the html file:
 
     ```html
     <script src="scene.js"></script>
@@ -130,6 +130,7 @@ Hope that was a good review of the concepts introduced in the previous tutorials
     <head>
         <title>Piano in BabylonJS</title>
         <script src="https://cdn.babylonjs.com/babylon.js"></script>
+        <script src="scene.js"></script>
         <style>
             body,#renderCanvas { width: 100%; height: 100%;}
         </style>
