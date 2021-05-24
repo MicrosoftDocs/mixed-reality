@@ -27,21 +27,37 @@ There are several development paths you can take through our documentation. The 
 
 ## Features and devices
 
-| Features/Devices | Unity | Unreal | Babylon | Native (OpenXR) |
+| Logistics | Unity | Unreal | Babylon | Native (OpenXR) |
 |---|---|---|---|---|
 | Language | C# | C++ | JavaScript | C/C++ |
-| Licensing | TBD | TBD | TBD | TBD |
+| Pricing | [Unity pricing](https://store.unity.com/#plans-individual) | [Unreal pricing](https://www.unrealengine.com/download) | Free | Free |
+
+| Device features | Unity | Unreal | Babylon | Native (OpenXR) |
+|---|---|---|---|---|
+| Hand, eye, voice input | ✔️ | ✔️ | ? | ✔️ |
+| Plane and mesh detection | ✔️ | ✔️ | ? | ✔️ |
+<!-- Ratify with standalone unity features table -->
+
+| Hardware | Unity | Unreal | Babylon | Native (OpenXR) |
+|---|---|---|---|---|
 | HoloLens 2 | ✔️ | ✔️ | ✔️ | ✔️ |
 | HoloLens (1st gen) | ✔️ | ✔️ | ❌ | ❌ |
-| [Immersive VR headsets](../discover/immersive-headset-hardware-details.md) | ✔️ | ✔️ | ✔ | ✔ |
+| [Immersive VR headsets](../discover/immersive-headset-hardware-details.md) | ✔️ | ✔️ | ✔️ | ✔️ |
 | Oculus Quest | ✔️ | ✔️ | ✔️ | ✔️ |
+<!-- iOS/Android/Magic Leap/SteamVR/Oculus Desktop -->
+
+| Tools and SDKs | Unity | Unreal | Babylon | Native (OpenXR) |
+|---|---|---|---|---|
 | Mixed Reality Toolkit | ✔️ | ✔️ | ❌ | ❌ |
 | Mesh | ✔️ | ❌ | ❌ | ❌ |
+
+| Cloud services | Unity | Unreal | Babylon | Native (OpenXR) |
+|---|---|---|---|---|
 | Azure Spatial Anchors | ✔️ | ✔️ | ❌ | ✔️ |
 | Azure Object Anchors | ✔️ | ❌ | ❌ | ✔️ |
 | Azure Remote Rendering | ✔️ | ❌ | ❌ | ❌ <!-- (End of May) --> |
 
-<!-- Dig into specific features like Speech SDK, etc... -->
+<!-- Other: D365, ADT, Power Apps, etc... -->
 
 ## Next steps
 
