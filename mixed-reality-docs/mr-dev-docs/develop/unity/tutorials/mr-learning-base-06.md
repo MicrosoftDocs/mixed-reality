@@ -170,7 +170,7 @@ In the Hierarchy window, expand the RoverExplorer > **RoverParts** object and se
 
 ![Unity with all rover part objects selected and ToolTipSpawner component added and configured](images/mr-learning-base/base-06-section4-step1-2.png)
 
-In the Hierarchy window, select the rover part, RoverParts > **Camera_Part**, and configure the **ToolTipSpawner** component as follows:
+In the Hierarchy window, select the Camera_Part, RoverParts > **Camera_Part**, and configure the **ToolTipSpawner** component as follows:
 
 * Change **Tool Tip Text** to reflect the name of the part, i.e., **Camera**
 
