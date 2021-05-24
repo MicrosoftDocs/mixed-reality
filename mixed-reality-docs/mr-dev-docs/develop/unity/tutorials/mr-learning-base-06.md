@@ -112,6 +112,9 @@ To disable the chevron Indicator object, in the Hierarchy window, select the Ind
 > [!NOTE]
 > Now, when the app starts, the chevron Indicator is disabled by default and can be enabled by pressing the Indicator button.
 
+> [!NOTE]
+> The Directional Indicator Controller (Script) is not part of the MRTK but was included with the tutorial assets.
+
 Rename the second button to **TapToPlace**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:
 
 * Change the **Main Label Text** to match the name of the button

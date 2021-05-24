@@ -46,9 +46,6 @@ Rename the newly added Chevron object to **Indicator**, then in the Inspector wi
 > [!NOTE]
 > When you add a Solver, in this case, the DirectionalIndicator component, the SolverHandler component is automatically added because Solvers require it.
 
-> [!NOTE]
-> The Directional Indicator Controller (Script) is not part of the MRTK but was included with the tutorial assets.
-
 Configure the DirectionalIndicator and SolverHandler components as follows:
 
 * Verify that the **SolverHandler** component's **Tracked Target Type** is set to **Head**
