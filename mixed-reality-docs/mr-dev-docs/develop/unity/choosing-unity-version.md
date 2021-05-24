@@ -12,10 +12,35 @@ keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality headset,
 
 While we currently **recommend installing Unity 2019.4 LTS and using Legacy Built-in XR** for Mixed Reality development, you can build apps with other Unity configurations as well.
 
-> [!IMPORTANT]
-> TBD: HL1/HL2 Unity version recommendations and feature availability
+## Unity 2020.3 LTS (Recommended)
 
-## Unity 2019.4 LTS (Recommended)
+If you’re using **Unity 2020.3 LTS**, you can use the **Windows XR plugin** to develop HoloLens 2 and Windows Mixed Reality applications.
+
+However, there are known issues that affect hologram stability and other features on HoloLens 2: 
+
+* Holographic app remoting applications using the Universal Windows Platform build target are not working.
+* The Unity graphics jobs system is defaulted on, even though it is not compatible with HoloLens projects.
+
+> [!NOTE]
+> If you're developing apps for HoloLens (1st gen), these headsets remain supported in Unity 2019 LTS with Legacy Built-in XR for the full lifecycle of Unity 2019 LTS through mid-2022.
+
+If you choose to use Unity 2020, be sure to upgrade to Unity 2020.3.6f1 or later versions to ensure your user experience proper hologram stability.
+
+> [!div class="nextstepaction"]
+> [Using the Windows XR plugin](windows-xr-plugin.md)
+
+### Using OpenXR
+
+Unity 2020.3 LTS also supports a public preview of the **Mixed Reality OpenXR** plugin.
+
+The Mixed Reality OpenXR plugin fully supports AR Foundation 4.0, providing ARPlaneManager and ARRaycastManager implementations. This enables you to write hit-testing code once that then spans HoloLens 2 and ARCore/ARKit phones and tablets. 
+
+Later this year, **Unity 2020.3 LTS with the OpenXR plugin** will become the recommended Unity configuration, and future HoloLens 2 features in Unity will be exposed only through this plugin.
+
+> [!div class="nextstepaction"]
+> [Using the OpenXR plugin](openxr-getting-started.md)
+
+## Unity 2019.4 LTS
 
 Microsoft’s current recommended Unity configuration for HoloLens 2 and Windows Mixed Reality development is **Unity 2019.4 LTS using Legacy Built-in XR** support.
 
@@ -45,31 +70,6 @@ To get started with Legacy Built-in XR in Unity 2019.4 LTS, click here:
 > Unity has deprecated its Legacy Built-in XR support as of Unity 2019.  While Unity 2019 does offer a new XR Plug-in framework, Microsoft is not currently recommending that path in Unity 2019 due to Azure Spatial Anchors incompatibilities with AR Foundation 2.  In Unity 2020, Azure Spatial Anchors is supported within the XR Plug-in framework.
 
 If you are developing apps for HoloLens (1st gen), these headsets remain supported in Unity 2019 LTS with Legacy Built-in XR for the full lifecycle of Unity 2019 LTS through mid-2022.
-
-## Unity 2020.3 LTS 
-
-If you’re using **Unity 2020.3 LTS**, you can use the **Windows XR plugin** to develop HoloLens 2 and Windows Mixed Reality applications.
-
-However, there are known issues that affect hologram stability and other features on HoloLens 2: 
-
-* Holographic app remoting applications using the Universal Windows Platform build target are not working.
-* The Unity graphics jobs system is defaulted on, even though it is not compatible with HoloLens projects.
-
-If you choose to use Unity 2020, be sure to upgrade to Unity 2020.3.6f1 or later versions to ensure your user experience proper hologram stability.
-
-> [!div class="nextstepaction"]
-> [Using the Windows XR plugin](windows-xr-plugin.md)
-
-### Using OpenXR
-
-Unity 2020.3 LTS also supports a public preview of the **Mixed Reality OpenXR** plugin.
-
-The Mixed Reality OpenXR plugin fully supports AR Foundation 4.0, providing ARPlaneManager and ARRaycastManager implementations. This enables you to write hit-testing code once that then spans HoloLens 2 and ARCore/ARKit phones and tablets. 
-
-Later this year, **Unity 2020.3 LTS with the OpenXR plugin** will become the recommended Unity configuration, and future HoloLens 2 features in Unity will be exposed only through this plugin.
-
-> [!div class="nextstepaction"]
-> [Using the OpenXR plugin](openxr-getting-started.md)
 
 ## Unity 2021.1
 
