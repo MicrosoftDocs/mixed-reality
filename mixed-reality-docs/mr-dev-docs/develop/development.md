@@ -15,7 +15,12 @@ keywords: Mixed Reality, develop, development, HoloLens, unity, unreal, directx,
 
 Mixed Reality is a big place, a nexus where real and virtual worlds collide with a bang. The possibilities are endless, and it starts with you. Choose your engine, download your tools, and dust off your keyboard. Welcome to the Mixed Reality ecosystem - it's time to create.
 
-## Mixed Reality Learn
+We have three possible paths for starting out in mixed reality development, each of which is described in it's own section below:
+* [Microsoft Learn](#microsoft-learn)
+* [Mixed Reality Toolkit tutorial series](#mixed-reality-toolkit-tutorials)
+* [Self-guided exploration](#self-guided-exploration)
+
+## Microsoft Learn
 
 Microsoft Learn is where everyone comes to learn. Discover new skills, find certifications, and advance your career in minutes with interactive, hands-on learning paths.
 
@@ -24,9 +29,16 @@ Our Learn modules help you become proficient in Mixed Reality development, offer
 > [!div class="nextstepaction"]
 > [Introduction to Mixed Reality on Microsoft Learn](https://docs.microsoft.com/learn/modules/intro-to-mixed-reality/)
 
-## Installing your developer tools
+## Mixed Reality Toolkit tutorials 
 
-If you want to jump right into Mixed Reality development, install the tools you'll need and get started!
+If you're more of a learn-by-doing user, check out our Mixed Reality Toolkit (MRTK) tutorial series. You'll build a mixed reality experience where the user can explore a hologram modeled after NASA's Mars Curiosity Rover and get a firm grasp of MRTK and how it can speed up your development process.
+
+> [!div class="nextstepaction"]
+> [MRTK tutorials](unity/tutorials/mr-learning-base-01.md)
+
+## Self-guided exploration
+
+If you're a seasoned developer and want to get right into our docs, start by installing the required tools. From there, choose your Unity development setup and follow our curated Unity development path with HoloLens or browse around our content library.
 
 > [!div class="nextstepaction"]
 > [Install the tools](install-the-tools.md)
