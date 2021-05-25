@@ -1,6 +1,6 @@
 ---
-title: Introduction to building a piano in WebXR using BabylonJS
-description: Complete this course to learn how to build a functioning 88-key piano keyboard in WebXR using BabylonJS
+title: Building a piano in WebXR using BabylonJS
+description: Complete this tutorial series to learn how to build a functioning 88-key piano keyboard in WebXR using BabylonJS
 author: JING1201
 ms.author: t-jinglow
 ms.prod: mixed-reality
@@ -26,12 +26,8 @@ In this tutorial series, you will learn how to:
 > * Enable teleportation and multipointer support in WebXR
 > * (Optional) Enable hand tracking in WebXR
 
-<!-- 4. Prerequisites 
-Required. First prerequisite is a link to a free trial account if one exists. If there 
-are no prerequisites, state that no prerequisites are needed for this tutorial.
--->
-
 ## Prerequisites
+
 * Basic Javascript Knowledge
 * [WebXR Javascript Hello World Tutorial](../babylonjs-webxr-helloworld/introduction-01.md)
 * WebXR-supported browser, for example [Microsoft Edge](https://docs.microsoft.com/windows/mixed-reality/whats-new/new-microsoft-edge)

@@ -1,86 +1,117 @@
 ---
-title: #Required; page title is displayed in search results. Include the brand.
-description: #Required; article description that is displayed in search results. 
-author: #Required; your GitHub user alias, with correct capitalization.
-ms.author: #Required; microsoft alias of author; optional team alias.
-ms.service: #Required; service per approved list. slug assigned by ACOM.
-ms.topic: tutorial #Required; leave this attribute/value as-is.
-ms.date: #Required; mm/dd/yyyy format.
-ms.custom: template-tutorial #Required; leave this attribute/value as-is.
+title: Building a piano model in the 3D space
+description: Learn how to create a 3D piano model by coding using babylon.js
+author: JING1201
+ms.author: t-jinglow
+ms.prod: mixed-reality
+ms.topic: tutorial
+ms.date: 05/31/2021
+keywords: mixed reality, javascript, tutorial, BabylonJS, hololens, mixed reality, UWP, Windows 10, WebXR, immersive web
+ms.localizationpriority: high
 ---
-
-<!--
-Remove all the comments in this template before you sign-off or merge to the 
-main branch.
--->
-
-<!--
-This template provides the basic structure of a tutorial article.
-See the [tutorial guidance](contribute-how-to-mvc-tutorial.md) in the contributor guide.
-
-To provide feedback on this template contact 
-[the templates workgroup](mailto:templateswg@microsoft.com).
--->
-
-<!-- 1. H1 
-Required. Start with "Tutorial: ". Make the first word following "Tutorial: " a 
-verb.
--->
 
 # Tutorial: Building a piano model in the 3D space
 
-<!-- 2. Introductory paragraph 
-Required. Lead with a light intro that describes, in customer-friendly language, 
-what the customer will learn, or do, or accomplish. Answer the fundamental “why 
-would I want to do this?” question. Keep it short.
--->
-
 In the previous tutorial in the series, we have setup a web page containing a babylon.js scene with a camera and a light. In this tutorial, we will be building and adding a piano model into the scene.
 < picture >
-
-<!-- 3. Tutorial outline 
-Required. Use the format provided in the list below.
--->
 
 In this tutorial, you will learn how to:
 
 > [!div class="checklist"]
 > * Create, position, and merge meshes
 > * Build a piano keyboard
-> * Build a piano frame
-
-<!-- 4. Prerequisites 
-Required. First prerequisite is a link to a free trial account if one exists. If there 
-are no prerequisites, state that no prerequisites are needed for this tutorial.
--->
+> * Import a 3D model of a piano frame
 
 ## Before you begin
 
 Make sure that you have gone through the [previous tutorial in the series](introduction-01.md) and are ready to continue adding to the code.
 
-## A simple piano keyboard
-Let's begin by making a simple piano keyboard that looks like this:
+### *index.html*
+
+```html
+<html>
+    <head>
+        <title>Piano in BabylonJS</title>
+        <script src="https://cdn.babylonjs.com/babylon.js"></script>
+        <script src="scene.js"></script>
+        <style>
+            body,#renderCanvas { width: 100%; height: 100%;}
+        </style>
+    </head>
+    <body>
+        <canvas id="renderCanvas"></canvas>
+        <script type="text/javascript">
+            const canvas = document.getElementById("renderCanvas");
+            const engine = new BABYLON.Engine(canvas, true);
+            
+            createScene(engine).then(sceneToRender => {
+                engine.runRenderLoop(() => sceneToRender.render());
+            });
+        </script>
+    </body>
+</html>
+```
+
+### *scene.js*
+
+```javascript
+const createScene = async function(engine) {
+    const scene = new BABYLON.Scene(engine);
+
+    const alpha =  3*Math.PI/2;
+    const beta = Math.PI/50;
+    const radius = 3.3;
+    const target = new BABYLON.Vector3(0, 0, 0);
+    
+    const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target, scene);
+    camera.attachControl(canvas, true);
+    
+    const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
+    light.intensity = 0.6;
+
+    const xrHelper = await scene.createDefaultXRExperienceAsync();
+
+    return scene;
+}
+```
+
+## Getting started
+
+Let's begin by making a simple piano keyboard which has this structure:
 
 ![Piano octave description](../images/piano-octave.jpg)
 
-In the image above, there are 7 white keys and 5 black keys, each labeled with the note's name. A full 88-key piano keyboard contains 7 full repetitions of this selection of keys (and 4 extra keys), and each section (also called an register) has double the frequency of the section to its left. For example, C5's pitch frequency is double of C4's, D5's pitch frequency is double of D4's, and so on. Without considering the pitch, visually each section looks exactly the same as each other, so we can start with investigating how to create this section of keys and later find a way to expand the scope to an 88-key full piano keyboard.
+In this image, there are 7 white keys and 5 black keys, each labeled with the note's name. A full 88-key piano keyboard contains 7 full repetitions of this selection of keys (also called an register) and 4 extra keys. Every register has double the frequency of its previous register. For example, the pitch frequency of C5 (which means the C note in the fifth register) is double of C4's, D5's pitch frequency is double of D4's, and so on.
 
-1. Before we begin to create meshes for building the keyboard, note that each black key is not perfectly aligned at the middle of the two white keys around it and that not every key has the same width, so we must create and position the mesh for each key individually.
-1. For white keys, we can make an observation that each white key is composed of two parts: (1) the part below the neighboring black key(s) and (2) the part next to the neighboring black key(s) and goes above part 1. The two parts have different dimensions but are stacked together to crete a full white key. Here is the code for creating a single white key for the note C (don't worry about adding this into *scene.js* yet):
+Visually, each register looks exactly the same as another, so we can start with investigating how to create this selection of keys and later find a way to expand the scope to an 88-key full piano keyboard.
+
+## Build a piano keyboard
+
+1. Before we begin to create meshes for building the keyboard, notice that each black key is not perfectly aligned at the middle of the two white keys around it and that not every key has the same width, so we must create and position the mesh for each key individually.
+
+    ![Black Key Alignment](../images/black-key-position.png)
+
+1. For white keys, we can make an observation that each white key is composed of two parts: (1) the part below the neighboring black key(s) and (2) the part next to the neighboring black key(s) and goes above part 1. The two parts have different dimensions but are stacked together to crete a full white key.
+
+    ![White Key Shape](../images/white-key-shape-label.png)
+
+1. This would be the code for creating a single white key for the note C (don't worry about adding this into *scene.js* yet):
 
     ```javascript
         var whiteKeyBottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: 2.3, height: 1.5, depth: 4.5}, scene);
         var whiteKeyTop = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: 1.4, height: 1.5, depth: 5}, scene);
         whiteKeyTop.position.z += 4.75;
         whiteKeyTop.position.x -= 0.45;
+
         const whiteKeyV1 = BABYLON.Mesh.MergeMeshes([whiteKeyBottom, whiteKeyTop], true, false, null, false, false);
         whiteKeyV1.name = "C4";
     ```
 
-    Here we created two box meshes, one for the bottom part and one for the top part of the white key. We then modify the position of the top part to make it stacked on top of the bottom part and to put it towards the left to leave space for the black key (C#). This is the resulting mesh that this code would produce:
+    Here we created two [Box](https://doc.babylonjs.com/divingDeeper/mesh/creation/set/box#box-mesh) meshes, one for the bottom part and one for the top part of the white key. We then modify the position of the top part to make it stacked on top of the bottom part and to put it towards the left to leave space for the black key (C#). Finally, these two parts were merged using the [MergeMeshes](https://doc.babylonjs.com/divingDeeper/mesh/mergeMeshes) function to become one complete white key. This is the resulting mesh that this code would produce:
+
     ![White Key C](../images/white-key-c.png)
 
-1. Creating a black key is simpler. Since all black keys are of the shape of a box, we can create a black key just by creating a box mesh, adding a black color material to it, and positioning it appropriately with the white keys. Here is the code to create the black key C# (don't worry about adding this to *scene.js* either):
+1. Creating a black key is simpler. Since all black keys are of the shape of a box, we can create a black key just by creating a box mesh, adding a black-colored [StandardMaterial](https://doc.babylonjs.com/divingDeeper/materials/using/materials_introduction#color) to it, and positioning it appropriately with the white keys. Here is the code to create the black key C# (don't worry about adding this to *scene.js* either):
 
     ```javascript
     const blackMat = new BABYLON.StandardMaterial("black");
@@ -94,13 +125,14 @@ In the image above, there are 7 white keys and 5 black keys, each labeled with t
     ```
 
     The resulting black key produced by this code (along with the previous white key) would look like this:
+
     ![Black Key C#](../images/black-key-csharp.png)
 
-1. As you can see, creating each key is pretty tedious and can result in a lot of similar code since we have to specify each of their dimensions and position. Let's try to make the process more efficient in the next section.
+1. As you can see, creating each key is pretty tedious and can result in a lot of similar code since we have to specify each of their dimensions and position. Let's try to make the creation process more efficient in the next section.
 
-## Making a keyboard efficiently
+## Build a piano keyboard efficiently
 
-1. While each white key has a slightly different shape than each other, all of them can be created by combining a top part and a bottom part. Therefore we can create a generic function to create any white key. Add the code below to *scene.js*, outside of the `createScene()` function:
+1. While each white key has a slightly different shape than each other, all of them can be created by combining a top part and a bottom part. Therefore, we can implement a generic function to create and position any white key. Add the code below to *scene.js*, outside of the `createScene()` function:
 
     ```javascript
     const WhiteKey = function (note, topWidth, bottomWidth, topPositionX, wholePositionX) {
