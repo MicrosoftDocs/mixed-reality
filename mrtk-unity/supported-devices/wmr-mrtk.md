@@ -1,5 +1,5 @@
 ---
-title: Deploying to Hololens and WMR devices
+title: Deploying to Hololens and WMR headsets
 description: Documentation to Build and Deploy Apps into various devices.
 author: polar-kev
 ms.author: kesemple
@@ -7,13 +7,21 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Visual Studio
 ---
 
-# Building and deploying MRTK (UWP)
+## Deploying to Hololens and WMR headsets
 
-To run an app on device as a standalone app (for HoloLens, Android, iOS, etc.), the build and deploy step needs to be executed in the unity project. Building and deploying an app that uses MRTK is just like building and deploying any other Unity app. There are no MRTK-specific instructions. Read below for detailed steps on how to build and deploy a Unity app for HoloLens. Learn more about building for other platforms at [Publishing Builds](https://docs.unity3d.com/Manual/PublishingBuilds.html).
+There are two ways to deploy applications built with MRTK to your windows device, the Univeral Windows Platform (UWP) and the Standalone Platform. Applications built for HoloLens 1 or HoloLens 2 must target UWP, while applications built for WMR headsets may target either UWP or Standalone.
 
 ## Building and deploying MRTK to HoloLens 1, HoloLens 2 and WMR headsets (UWP)
 
 Instructions on how to build and deploy for **HoloLens 1** and **HoloLens 2** (UWP) can be found at [building your application to device](/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device). These steps also allow you to deploy to **WMR headsets**.
+
+> [!NOTE]
+> When deploying your application to your device in Visual Studio, you need to configure Visual Studio slightly differently depending on the device. The configurations are as follows
+> |---| Configuration | Architecture | Target |
+|---|---|---|---|
+| HoloLens 2 | Release or Master | ARM64 | Device |
+| HoloLens 1 | Release or Master | x86 | Device |
+| WMR Headsets | Release or Master | x64 | Local Machine |
 
 **Tip:** When building for HoloLens 1, HoloLens 2, or WMR, it is recommended that the build settings "Target SDK Version"
 and "Minimum Platform Version" look like they do in the picture below:
@@ -48,7 +56,7 @@ If using the XR-Plugin:
 >
 > If the ARM architecture is required, navigate to **Edit > Project Settings, Player**, and under the **Other Settings** menu disable **Graphics Jobs**. Disabling **Graphics Jobs** will allow the app to deploy using the ARM build architecture for Unity 2019.3.x, but ARM64 is recommended.
 
-## Building and deploying MRTK (Standalone)
+## Building and deploying MRTK to WMR Headsets (Standalone)
 
 Standalone builds of MRTK can be used on WMR headsets. A Standalone build for a WMR headset requires the following extra steps:
 

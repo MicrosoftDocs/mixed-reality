@@ -219,8 +219,8 @@ Configure Visual Studio for HoloLens by selecting the **Master** or **Release** 
 > [!TIP]
 > If you're deploying to HoloLens (1st generation), select the **x86** architecture.
 
-> [!NOTE]
-> For HoloLens, you will typically build for the ARM architecture. However, there is a  <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank"><strong>known issue</strong></a> in Unity 2019.3 that causes errors when selecting ARM as the build architecture in Visual Studio. The recommended workaround is to build for ARM64. If that is not an option, go to **Edit > Project Settings > Player > Other Settings** and disable **Graphics Jobs**.
+> [!TIP]
+> If you're deploying to a WMR Headset, select the **x64** architecture and **Local Machine** as target.
 
 > [!NOTE]
 > If you don't see Device as a target option, you may need to change the startup project for the Visual Studio solution from the IL2CPP project to the UWP project. To do this, in the Solution Explorer, right-click on YourProjectName (Universal Windows) and select **Set as StartUp Project**.
