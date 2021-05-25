@@ -83,7 +83,7 @@ In the Hierarchy window, reselect all the **rover part objects**, then in the In
 
 ![Unity with all rover parts selected and Audio Source component added and configured](images/mr-learning-base/base-07-section1-step1-4.png)
 
-In the Hierarchy window, expand the RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** object to reveal all of the placement hint objects, then select the Camera_part rover part, RoverParts > **Camera_Part**, and configure the **Part Assembly Controller (Script)** component as follows:
+In the Hierarchy window, expand the RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** object to reveal all of the placement hint objects, then select the first rover part, RoverParts > **Camera_Part**, and configure the **Part Assembly Controller (Script)** component as follows:
 
 * Assign the **Camera_PlacementHint** object to the **Location To Place** field
 
@@ -129,7 +129,7 @@ Then **uncheck** the checkbox next to all the components to make them **disabled
 > The Bounds Control visualization is created at runtime and, therefore, not visible before you enter Game mode.
 
 > [!NOTE]
-> The Object Manipulator (Script) automatically adds Constraint Manager (Script)
+>The Object Manipulator (Script) automatically adds Constraint Manager (Script)
 
 In the Hierarchy window, expand the Menu > **ButtonCollection** object to reveal the four buttons and rename the third button to **BoundsControl_Enable**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:
 
