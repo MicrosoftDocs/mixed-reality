@@ -17,12 +17,12 @@ Instructions on how to build and deploy for **HoloLens 1** and **HoloLens 2** (U
 
 > [!NOTE]
 > When deploying your application to your device in Visual Studio, you need to configure Visual Studio slightly differently depending on the device. The configurations are as follows
-> |---| Configuration | Architecture | Target |
+>
+>| | Configuration | Architecture | Target |
 |---|---|---|---|
 | HoloLens 2 | Release or Master | ARM64 | Device |
 | HoloLens 1 | Release or Master | x86 | Device |
 | WMR Headsets | Release or Master | x64 | Local Machine |
-
 **Tip:** When building for HoloLens 1, HoloLens 2, or WMR, it is recommended that the build settings "Target SDK Version"
 and "Minimum Platform Version" look like they do in the picture below:
 
