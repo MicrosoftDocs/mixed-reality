@@ -7,19 +7,16 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Oculus Quest,
 ---
 
-# How to configure Oculus Quest in MRTK using the XR SDK pipeline
+# Building and deploying MRTK to Oculus Quest using the XR SDK pipeline
 
-A [Oculus Quest](https://www.oculus.com/quest/) is required.
+An [Oculus Quest](https://www.oculus.com/quest/) is required.
 
-MRTK's support for the Oculus Quest comes via two different sources, Unity's XR pipeline and the Oculus Integration Unity package. The **Oculus XRSDK Data Provider** enables the use
-of both sources and must be used to use MRTK on the Oculus Quest.
+MRTK's support for the Oculus Quest comes via two different sources, Unity's XR SDK pipeline and the Oculus Integration Unity package. The **Oculus XRSDK Data Provider** enables the use of both sources and must be used to deploy MRTK on the Oculus Quest.
 
-The [Unity's XR Pipeline](https://docs.unity3d.com/Manual/XR.html) enables the use of Oculus Touch controllers and head tracking with the Oculus Quest.
-This pipeline is the standard for developing XR applications in Unity 2019.3 and beyond. To use this pipeline, make sure that you using **Unity 2019.3 or newer**.
+The [Unity XR SDK Pipeline](https://docs.unity3d.com/Manual/XR.html) enables the use of Oculus Touch controllers and head tracking with the Oculus Quest.
+This pipeline is the standard for developing XR applications in Unity 2019.3 and beyond. To use this pipeline, make sure that you using **Unity 2019.3 or newer**. This is **required** to deploy MRTK applications to the Oculus Quest. 
 
-The [Oculus Integration Unity package](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) allows for the use of **hand tracking** with the Oculus Quest.
-This data provider does **NOT** use Unity's **XR Pipeline** or **Legacy XR Pipeline**, but because controllers and headtracking are handled by the Unity's XR Pipeline, the steps in
-**Setting up project for the Oculus Quest** must be followed to ensure that you are using the **XR Pipeline** and not the to-be-deprecated **Legacy XR Pipeline**.
+The [Oculus Integration Unity package](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) allows for the use of **hand tracking** with the Oculus Quest. This data provider does **NOT** use Unity's **XR SDK Pipeline** or **Legacy XR Pipeline**.
 
 ## Setting up project for the Oculus Quest
 
@@ -27,7 +24,7 @@ This data provider does **NOT** use Unity's **XR Pipeline** or **Legacy XR Pipel
 
 1. Ensure that [developer mode](https://developer.oculus.com/documentation/native/android/mobile-device-setup/) is enabled on your device. Installing the Oculus ADB Drivers is optional.
 
-## Setting up the XR Pipeline for Oculus Quest
+## Setting up the XR SDK Pipeline for Oculus Quest
 
 1. Ensure that the **Oculus XR Plugin** is installed under **Window --> Package Manager**
 
