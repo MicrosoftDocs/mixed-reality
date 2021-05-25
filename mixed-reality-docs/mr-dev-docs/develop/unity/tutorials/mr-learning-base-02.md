@@ -67,7 +67,7 @@ In the Import Unity Package window, click the **All** button to ensure all the a
 > [!TIP]
 > The TextMeshPro Essential Resources are required by MRTK's UI elements. You can skip this step if you are not planning to use MRTK's UI elements in your project.
 
-## Importing the Mixed Reality Toolkit and Configuring the Unity project
+## Importing the Mixed Reality Toolkit
 
 To Import Mixed Reality Toolkit into the Unity Project you will have to use [Mixed Reality Feature Tool](../welcome-to-mr-feature-tool.md) which allows  developers to discover, update, and add Mixed Reality feature packages into Unity projects. You can search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing.
 
@@ -83,34 +83,49 @@ Open the executable file **MixedRealityFeatureTool** from the downloaded folder 
 
 ![Opening MixedRealityFeatureTool](images/mr-learning-base/base-02-section4-step1-1.png)
 
+
 [!INCLUDE[](includes/importing-mrtk.md)]
+
+## Configuring the Unity project
+
+### 1. Apply the MRTK Project Configurator settings
+
+After Unity has finished importing the package from the previous section, the MRTK Project Configurator window should appear. If it doesn't, you can manually open it by going to **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project**:
+
+![Unity Configure Unity Project menu path](images/mr-learning-base/base-02-section5-step1-1.png)
+
+In the MRTK Project Configurator window, expand the **Modify Configurations** section, ensure all options are checked, and click the **Apply** button to apply the settings:
+
+![Unity MRTK Project Configurator window](images/mr-learning-base/base-02-section5-step1-2.png)
+
+> [!TIP]
+> Applying the MRTK Default Settings is optional but strongly recommended as it will help configure some recommended Unity settings:
+
+> * Set Single Pass Instanced rendering path: Improves graphics performance by executing the render pipeline for both eyes in the same draw call. To learn more about this topic, you can refer to the [Single-Pass Instanced rendering](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering) section of MRTK's [Performance](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering) documentation.
+> * Set default Spatial Awareness layer: Creates a Unity Layer named Spatial Awareness and configures MRTK to use this layer for the spatial awareness mesh. To learn more about Unity Layers, you can refer to Unity's <a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">Customizing Your Workspace</a> documentation.
+
+### 2. Configure additional project settings
+
+[!INCLUDE[](includes/configuring-additional-project-settings.md)]
 
 ## Creating the scene and configuring MRTK
 
-In the Unity menu, select **File** > **New Scene**:
+In the Unity menu, select **File** > **New Scene** to create a new scene:
 
 ![Unity New Scene menu path](images/mr-learning-base/base-02-section6-step1-1.png)
 
-In the **New Scene** window select **Basic (Built-in)** and click on **create** to create a new scene:
-
-![Unity New Scene menu path](images/mr-learning-base/base-02-section6-step1-1-newscene.png)
-
-> [!NOTE]
-> Above screenshot is from Unity Version 2020, if you are using Unity 2019 when you click on **create** a new empty scene will be created.
-
-In the Unity menu, select **Mixed Reality** > **Toolkit** > **Add to Scene and Configure...** to add the MRTK to your current scene:
+In the Unity menu, select **Mixed Reality Toolkit** > **Add to Scene and Configure...** to add the MRTK to your current scene:
 
 ![Unity Add to Scene and Configure... menu path](images/mr-learning-base/base-02-section6-step1-2.png)
 
-With the **MixedRealityToolkit** object still selected in the Hierarchy window, in the Inspector window, verify that the **MixedRealityToolkit** configuration profile is set to **DefaultMixedRealityToolkitConfigurationProfile**:
-
-![Unity MixedRealityToolkit component with DefaultMixedRealityTookitConfigurationProfile selected](images/mr-learning-base/base-02-section6-step1-3.png)
+[!INCLUDE[](includes/changing-profile.md)]
 
 In the Unity menu, select **File** > **Save As...** to open the Save Scene window:
 
 ![Unity Save As... menu path](images/mr-learning-base/base-02-section6-step1-4.png)
 
-Save the scene in you project under **Asset** > **Scenes**.
+> [!TIP]
+> Reducing the Depth Format to 16-bit is optional but may help improve graphics performance in your project. To learn more about this topic, you can refer to the   <a href="/windows/mixed-reality/mrtk-unity/performance/perf-getting-started.md#single-pass-instanced-rendering" target="_blank">  Depth buffer sharing (HoloLens) </a> section of MRTK's  <a href="/windows/mixed-reality/mrtk-unity/performance/perf-getting-started.md#single-pass-instanced-rendering" target="_blank"> Performance </a> documentation.
 
 ![Unity save scene Save prompt window](images/mr-learning-base/base-02-section6-step1-5.png)
 
@@ -138,7 +153,7 @@ After you have imported the tutorial assets your Project window should look simi
 
 ## Configuring the Scene
 
-In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** folder:
+In the Project window, navigate to the Assets > MRTK.Tutorials.GettingStarted > Prefabs folder:
 
 From the Project window, click-and-drag the **Cube** prefab on to the Hierarchy window, then in the Inspector window configure its **Transform** component as follows
 
