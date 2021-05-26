@@ -383,22 +383,26 @@ By now, you have probably already played with the piano with your mouse (or even
 
 ## Enabling WebXR features
 
-1. If you are playing the piano using your two immersive VR controllers, you might have noticed that you can only use one controller at a time. Let's enable the multi-pointer support in the XR space by using babylon.js's WebXR features manager. Add the following code into the `createScene()` function, after the `xrHelper` initialization line:
+Now that we have scaled the piano to the right size in the VR space, let's enable some cool WebXR features to improve our piano-playing experience in the space.
+
+1. If you were playing the piano using your two immersive VR controllers, you might have noticed that you can only use one controller at a time. Let's enable the [multi-pointer support](https://doc.babylonjs.com/typedoc/interfaces/babylon.iwebxrcontrollerpointerselectionoptions) in the XR space by using babylon.js's [WebXR features manager](https://doc.babylonjs.com/divingDeeper/webXR/webXRFeaturesManager). 
+
+    Add the following code into the `createScene()` function, after the `xrHelper` initialization line:
 
     ```javascript
     const featuresManager = xrHelper.baseExperience.featuresManager;
-    const pointerSelection = featuresManager.enableFeature(BABYLON.WebXRFeatureName.POINTER_SELECTION, "stable" /* or latest */, {
+    const pointerSelection = featuresManager.enableFeature(BABYLON.WebXRFeatureName.POINTER_SELECTION, "stable", {
         xrInput: xrHelper.input,
         enablePointerSelectionOnAllControllers: true        
     });
     ```
 
-1. Additionally, depending on where your starting point is, you might find it a little difficult to position yourself in front of the piano. If you are already familiar with the immersive VR environment, you might already know about *teleportation*, which is a feature that allows you to move to another spot in the space instantly by pointing at it.
+1. Additionally, depending on where your starting point is, you might find it a little difficult to position yourself in front of the piano. If you are already familiar with the immersive VR environment, you might already know about **teleportation**, which is a feature that allows you to move to another spot in the space instantly by pointing at it.
 
-1. However, in order to use the teleportation feature, we first need to have a ground mesh where people can "stand on" in the VR space. Add the following code to the `createScene()` function to create a ground:
+1. In order to use the teleportation feature, we first need to have a ground mesh where people can "stand on" in the VR space. Add the following code to the `createScene()` function to create a ground:
 
     ```javascript
-    const ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 400/scale, height: 400/scale});
+    const ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 400*scale, height: 400*scale});
     ```
 
 1. The teleportation support also comes with a very useful feature called snap-to positions. In short, snap-to positions are specific positions that we want users to land at. For example, we can set a snap-to position in front of the piano so that users can easily teleport to the specific location when they point their pointers close to the piano. Append the follow snippet below to enable the teleportation feature while specifying a snap-to point:
