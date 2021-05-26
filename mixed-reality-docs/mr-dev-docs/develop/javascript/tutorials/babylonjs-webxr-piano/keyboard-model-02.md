@@ -13,7 +13,8 @@ ms.localizationpriority: high
 # Tutorial: Building a piano model in the 3D space
 
 In the previous tutorial in the series, we have setup a web page containing a babylon.js scene with a camera and a light. In this tutorial, we will be building and adding a piano model into the scene.
-< picture >
+
+![Standup Piano Mesh](../images/standup-piano-mesh.png)
 
 In this tutorial, you will learn how to:
 
@@ -60,7 +61,7 @@ const createScene = async function(engine) {
 
     const alpha =  3*Math.PI/2;
     const beta = Math.PI/50;
-    const radius = 3.3;
+    const radius = 220;
     const target = new BABYLON.Vector3(0, 0, 0);
     
     const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target, scene);
