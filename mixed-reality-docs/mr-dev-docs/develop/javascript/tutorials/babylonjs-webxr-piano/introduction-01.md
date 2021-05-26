@@ -36,9 +36,15 @@ In this tutorial series, you will learn how to:
 * Optional: [Windows 10 Creator Update](https://www.microsoft.com/software-download/windows10) if you want to use a Windows Mixed Reality Simulator
 
 ## Getting started
+
 Let's begin by setting up the HTML web page that will contain the babylon.js scene.
 
-1. Using your favorite code editor, create a file named *index.html* and insert the template below into the file:
+1. Create a folder named *babylonjs-piano-tutorial* and open the folder in Visual Studio Code.
+
+    > [!NOTE]
+    > While you can use any code editor to follow along, we will be using Visual Studio Code throughout this tutorial for convenience.
+
+1. Within the folder, create a file named *index.html* and insert the template below into the file:
 
     ```html
     <html>
@@ -114,59 +120,6 @@ Let's begin by setting up the HTML web page that will contain the babylon.js sce
     ```
 
 1. Open *index.html* in your browser, and you will find that the error message we saw earlier is no longer present, and we have an empty babylon.js scene in the page.
-
-## Summary
-
-Hope that was a good review of the concepts introduced in the previous tutorials! Here is the code that you should have at this point.
-
-### *index.html*
-
-```html
-<html>
-    <head>
-        <title>Piano in BabylonJS</title>
-        <script src="https://cdn.babylonjs.com/babylon.js"></script>
-        <script src="scene.js"></script>
-        <style>
-            body,#renderCanvas { width: 100%; height: 100%;}
-        </style>
-    </head>
-    <body>
-        <canvas id="renderCanvas"></canvas>
-        <script type="text/javascript">
-            const canvas = document.getElementById("renderCanvas");
-            const engine = new BABYLON.Engine(canvas, true);
-            
-            createScene(engine).then(sceneToRender => {
-                engine.runRenderLoop(() => sceneToRender.render());
-            });
-        </script>
-    </body>
-</html>
-```
-
-### *scene.js*
-
-```javascript
-const createScene = async function(engine) {
-    const scene = new BABYLON.Scene(engine);
-
-    const alpha =  3*Math.PI/2;
-    const beta = Math.PI/50;
-    const radius = 220;
-    const target = new BABYLON.Vector3(0, 0, 0);
-    
-    const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target, scene);
-    camera.attachControl(canvas, true);
-    
-    const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
-    light.intensity = 0.6;
-
-    const xrHelper = await scene.createDefaultXRExperienceAsync();
-
-    return scene;
-}
-```
 
 ## Next steps
 
