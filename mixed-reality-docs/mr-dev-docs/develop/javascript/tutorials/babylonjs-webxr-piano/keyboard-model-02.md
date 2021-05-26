@@ -98,12 +98,13 @@ Visually, each register looks exactly the same as another, so we can start with 
 1. This would be the code for creating a single white key for the note C (don't worry about adding this into *scene.js* yet):
 
     ```javascript
-        var whiteKeyBottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: 2.3, height: 1.5, depth: 4.5}, scene);
-        var whiteKeyTop = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: 1.4, height: 1.5, depth: 5}, scene);
+        const whiteKeyBottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: 2.3, height: 1.5, depth: 4.5}, scene);
+        const whiteKeyTop = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: 1.4, height: 1.5, depth: 5}, scene);
         whiteKeyTop.position.z += 4.75;
         whiteKeyTop.position.x -= 0.45;
 
         const whiteKeyV1 = BABYLON.Mesh.MergeMeshes([whiteKeyBottom, whiteKeyTop], true, false, null, false, false);
+        whiteKeyV1.material = whiteMat;
         whiteKeyV1.name = "C4";
     ```
 
@@ -111,7 +112,12 @@ Visually, each register looks exactly the same as another, so we can start with 
 
     ![White Key C](../images/white-key-c.png)
 
-1. Creating a black key is simpler. Since all black keys are of the shape of a box, we can create a black key just by creating a box mesh, adding a black-colored [StandardMaterial](https://doc.babylonjs.com/divingDeeper/materials/using/materials_introduction#color) to it, and positioning it appropriately with the white keys. Here is the code to create the black key C# (don't worry about adding this to *scene.js* either):
+1. Creating a black key is simpler. Since all black keys are of the shape of a box, we can create a black key just by creating a box mesh, adding a black-colored [StandardMaterial](https://doc.babylonjs.com/divingDeeper/materials/using/materials_introduction#color) to it.
+
+    > [!NOTE]
+    > Since the default mesh color is in a light grey which resembles white, this tutorial doesn't include steps to add a white color material to the white keys. However, feel free to add the material yourself if you'd like a true, bright white color on the white keys.
+
+    Here is the code to create the black key C# (don't worry about adding this to *scene.js* either):
 
     ```javascript
     const blackMat = new BABYLON.StandardMaterial("black");
@@ -132,22 +138,24 @@ Visually, each register looks exactly the same as another, so we can start with 
 
 ## Build a piano keyboard efficiently
 
-1. While each white key has a slightly different shape than each other, all of them can be created by combining a top part and a bottom part. Therefore, we can implement a generic function to create and position any white key. Add the code below to *scene.js*, outside of the `createScene()` function:
+1. While each white key has a slightly different shape than each other, all of them can be created by combining a top part and a bottom part. Therefore, we can implement a generic function to create and position any white key. Add the function below to *scene.js*, outside of the `createScene()` function:
 
     ```javascript
     const WhiteKey = function (note, topWidth, bottomWidth, topPositionX, wholePositionX) {
         return {
-            build(scene, octave, referencePositionX) {
-                var bottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: bottomWidth/scale, height: 1.5/scale, depth: 4.5/scale}, scene);
-                var top = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: topWidth/scale, height: 1.5/scale, depth: 5/scale}, scene);
-                top.position.z =  4.75/scale;
-                top.position.x += topPositionX/scale;
+            build(scene, register, referencePositionX) {
+                // Create bottom part
+                var bottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: bottomWidth, height: 1.5, depth: 4.5}, scene);
+
+                // Create top part
+                var top = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: topWidth, height: 1.5, depth: 5}, scene);
+                top.position.z =  4.75;
+                top.position.x += topPositionX;
     
+                // Merge bottom and top parts
                 const key = BABYLON.Mesh.MergeMeshes([bottom, top], true, false, null, false, false);
-                key.position.x = referencePositionX/scale + wholePositionX/scale;
-                key.name = note+octave;
-                
-                key.position.y += keyHeight/scale;
+                key.position.x = referencePositionX + wholePositionX;
+                key.name = note + register;
     
                 return key;
             }
@@ -155,30 +163,38 @@ Visually, each register looks exactly the same as another, so we can start with 
     }
     ```
 
-    In this block of code, we create a function named `WhiteKey()` which returns an object with a `build()` function. 
+    In this block of code, we create a function named `WhiteKey()` which returns an object with a `build()` function.
 
-    The parameters of `WhiteKey()` are the name of the note that the key represents, width of the top part, width of the bottom part, position of the top part relative to the bottom part, and position of the whole key relative to the end point of the octave (the right edge of key B).
+    The parameters of `WhiteKey()` are:
+    * name: the name of the note which the key represents
+    * topWidth: width of the top part
+    * bottomWidth: width of the bottom part
+    * topPositionX: x-position of the top part relative to the bottom part
+    * wholePositionX: x-position of the whole key relative to the end point of the octave (the right edge of key B).
 
-    In the `build()` function, the parameters are the scene that the key is in, the octave that the key belongs to, and the x coordinate of the end point of the octave (used as a reference point).
+    For the `build()` function, the parameters are:
+    * scene: scene that the key is in
+    * register: register that the key belongs to (a number between 0 and 8)
+    * referencePositionX: x-coordinate of the end point of the octave (used as a reference point).
 
     By having these two layers of abstraction, we are able to initialize a `WhiteKey` object with the parameters needed to create a specific type of key within an octave, and then call `build()` function on the object multiple times to create that key in different octaves.
 
 1. Similarly, we can write a generic function to create a black key. Add the code below to *scene.js*, also outside of the `createScene()` function:
 
     ```javascript
-    const BlackKey = function (note, positionX) {
+    const BlackKey = function (note, wholePositionX) {
         return {
-            build(scene, octave, referencePositionX) {
+            build(scene, register, referencePositionX) {
+                // Create black color material
                 const blackMat = new BABYLON.StandardMaterial("black");
                 blackMat.diffuseColor = new BABYLON.Color3(0, 0, 0);
-    
-                const key = BABYLON.MeshBuilder.CreateBox(note+octave, {width: 1.4/scale, height: 2/scale, depth: 5/scale}, scene);
-                key.position.z += 4.75/scale;
-                key.position.y += 0.25/scale;
-                key.position.x = referencePositionX/scale + positionX/scale;
-                key.material = blackMat;
                 
-                key.position.y += keyHeight/scale;
+                // Create black key
+                const key = BABYLON.MeshBuilder.CreateBox(note + register, {width: 1.4, height: 2, depth: 5}, scene);
+                key.position.z += 4.75;
+                key.position.y += 0.25;
+                key.position.x = referencePositionX + wholePositionX;
+                key.material = blackMat;
     
                 return key;
             }
@@ -186,25 +202,27 @@ Visually, each register looks exactly the same as another, so we can start with 
     }
     ```
 
-    The parameters for `BlackKey()` are a lot simpler because creating a black key only involves creating a box, and every black key's width and z-position is the same. Therefore in the parameters, we are only taking the note that the key represents and the key's relative position to the end point of the octave. 
+    The parameters for `BlackKey()` are a lot simpler because creating a black key only involves creating a box, and every black key's width and z-position are the same. The parameters of `BlackKey()` are:
+    * name: the name of the note which the key represents
+    * wholePositionX: x-position of the whole key relative to the end point of the octave (the right edge of key B)
 
-    The `build()` function takes in the same parameters as the one in `WhiteKey()`, but notice that we have included the black material creation and assignment to the mesh within this function.
+    The `build()` function takes in the same parameters as the `build()` function in `WhiteKey()`.
 
-1. Now that we have a more efficient way of creating the keys, let's initialize an array that stores all of the `WhiteKey` and `BlackKey` objects and call the `build()` function on each of them. We will also store all of the key meshes created in a Set named `keys`. Append the following lines of code in the `createScene()` function:
+1. Now that we have a more efficient way of creating the keys, let's initialize an array that stores all of the `WhiteKey` and `BlackKey` objects and call the `build()` function on each of them to create a simple keyboard in the 4th register. We will also store all of the key meshes created in a [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) named `keys`. Append the following lines of code in the `createScene()` function:
 
     ```javascript
     const keyParams = [
-        WhiteKey("C", 1.4, 2.3, -0.45, -2.4*6),
-        BlackKey("C#", -2.4*6+0.95),
-        WhiteKey("D", 1.4, 2.4, 0, -2.4*5),
-        BlackKey("D#", -2.4*6+0.95+2.85),
-        WhiteKey("E", 1.4, 2.3, 0.45, -2.4*4),
-        WhiteKey("F", 1.3, 2.4, -0.55, -2.4*3),
-        BlackKey("F#", -2.4*6+0.95+0.45 + 2.4 * 2 + 1.85),
-        WhiteKey("G", 1.3, 2.3, -0.2, -2.4*2),
-        BlackKey("G#", -2.4*6+0.95+0.45 + 2.4 * 2 + 1.85 + 2.75),
-        WhiteKey("A", 1.3, 2.3, 0.2, -2.4*1),
-        BlackKey("A#", -2.4*6+0.95+0.45 + 2.4 * 2 + 1.85 + 2.75 *2),
+        WhiteKey("C", 1.4, 2.3, -0.45, -14.4),
+        BlackKey("C#", -13.45),
+        WhiteKey("D", 1.4, 2.4, 0, -12),
+        BlackKey("D#", -10.6),
+        WhiteKey("E", 1.4, 2.3, 0.45, -9.6),
+        WhiteKey("F", 1.3, 2.4, -0.55, -7.2),
+        BlackKey("F#", -6.35),
+        WhiteKey("G", 1.3, 2.3, -0.2, -4.8),
+        BlackKey("G#", -3.6),
+        WhiteKey("A", 1.3, 2.3, 0.2, -2.4),
+        BlackKey("A#", -0.85),
         WhiteKey("B", 1.3, 2.4, 0.55, 0)
     ]
     
@@ -215,25 +233,26 @@ Visually, each register looks exactly the same as another, so we can start with 
     })
     ```
 
-    As you have probably noticed, in this code block we are creating the keys for register number 4 and placing them relative to the origin of the space.
+    As you have probably noticed, in this code block we are placing all the keys relative to the origin of the space.
 
-1. This is what the resulting keyboard looks like:
+1. This is what the resulting keyboard would look like:
 
     ![Piano Keyboard with One Register](../images/piano-one-register.png)
 
 ## Expanding to an 88-key piano
-In this section, let's expand the usage of the key-creation functions we wrote in the last section by using them to generate a full piano keyboard.
 
-1. As mentioned earlier, an full (88-key) piano keyboard contains 7 repeated registers and 4 other notes. 3 of those extra notes are in register 0 (left end of the keyboard), and 1 is in register 8 (right end of the keyboard).
+In this section, let's expand the usage of the key-creation functions we wrote in the last section by using them to generate a full, 88-key piano keyboard.
 
-(show pic of 88-key layout highlighting the extra keys)
+1. As mentioned earlier, a full, 88-key piano keyboard contains 7 repeated registers and 4 other notes. 3 of those extra notes are in register 0 (left end of the keyboard), and 1 is in register 8 (right end of the keyboard).
 
-1. We will first work on building the 7 full repetitions by adding an additional loop around the `key.build()` function call we wrote earlier. Replace the previous loop for the `build()` function with the following code:
+    ![88-key piano layout](../images/88-key-piano-keyboard-layout.jpg)
+
+1. We will first work on building the 7 full repetitions by adding an additional loop around the loop we wrote earlier. Replace the previous loop for the `key.build()` function with the following code:
 
     ```javascript
     // Register 1 through 7
     var referencePositionX = -2.4*14;
-    for (var octave=1; octave<=7; octave++) {
+    for (var octave = 1; octave <= 7; octave++) {
         keyParams.forEach(key => {
             keys.add(key.build(scene, octave, referencePositionX))
         })
@@ -253,7 +272,7 @@ In this section, let's expand the usage of the key-creation functions we wrote i
     })
     
     // Register 8
-    keys.add(WhiteKey("C", 2.3, 2.3, 0, -2.4*6).build(scene, 8, referencePositionX))
+    keys.add(WhiteKey("C", 2.3, 2.3, 0, -2.4*6).build(scene, 8, 84))
     ```
 
     Note that the left-most key and the right-most key of the piano keyboard don't fit into the dimensions defined in `keyParams` (because they are not next to a black key at the edge), so we need to create a new `WhiteKey` object for each of them to specify their special shape.
@@ -266,166 +285,14 @@ In this section, let's expand the usage of the key-creation functions we wrote i
 
 1. The scene looks a little odd with just a keyboard floating in the space. Let's add a piano frame around the keyboard to create the look of a standup piano.
 
-1. Similar to how we created the keys, we can also create the frame by positioning and combining a group of box meshes. Add this function to *scene.js*:
+1. Similar to how we created the keys, we can also create the frame by positioning and combining a group of box meshes. However, we will leave that challenge for you to try on your own and use [BABYLON.SceneLoader.ImportMesh](https://doc.babylonjs.com/divingDeeper/importers/loadingFileTypes#sceneloaderimportmesh) to import a pre-made mesh of a standup piano frame here. Add this line of code to `createScene()`:
 
     ```javascript
-    const buildFrame = function(scene, leftPositionX, rightPositionX) {
-        const frameLeft = BABYLON.MeshBuilder.CreateBox("frameLeft", {width: 2.4/scale, height: (keyHeight+2)/scale, depth: 15/scale}, scene);
-        frameLeft.position = new BABYLON.Vector3(leftPositionX/scale, (keyHeight+2)/2/scale, 4/scale);
-        const frameRight = BABYLON.MeshBuilder.CreateBox("frameRight", {width: 2.4/scale, height: (keyHeight+2)/scale, depth: 15/scale}, scene);
-        frameRight.position = new BABYLON.Vector3(rightPositionX/scale, (keyHeight+2)/2/scale, 4/scale);
-        const frameBack = BABYLON.MeshBuilder.CreateBox("frameBack", {width: (2.4*52)/scale, height: (keyHeight+10)/scale, depth: 5/scale}, scene);
-        frameBack.position = new BABYLON.Vector3(2.4*3.5/scale, (keyHeight+10)/2/scale, 9/scale);
-        const wingLeft = BABYLON.MeshBuilder.CreateBox("wingLeft", {width: 2.4/scale, height: 8/scale, depth: 5/scale}, scene);
-        wingLeft.position =  new BABYLON.Vector3(leftPositionX/scale, (keyHeight+6)/scale, 9/scale);
-        const wingRight = BABYLON.MeshBuilder.CreateBox("wingRight", {width: 2.4/scale, height: 8/scale, depth: 5/scale}, scene);
-        wingRight.position =  new BABYLON.Vector3(rightPositionX/scale, (keyHeight+6)/scale, 9/scale);
-        
-        const frame = BABYLON.Mesh.MergeMeshes([frameLeft, frameRight, frameBack, wingLeft, wingRight], true, false, null, false, false);
-        const frameMat = new BABYLON.StandardMaterial("frameMat");
-        frameMat.diffuseColor = new BABYLON.Color3(0, 0, 0);
-        frame.material = frameMat;
-    
-        return frame;
-    }
-    ```
-
-    Here, we created a function which builds a black piano frame by taking in the scene, x-coordinate of the left end of the keyboard, and x-coordinate of the right end of the keyboard.
-
-1. Let's call this function in `createScene()`:
-
-    ```javascript
-    const frame = buildFrame(scene, -2.4*23, referencePositionX-2.4*5);
+    BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/JING1201/babylonjs-exploration/main/piano-keys/", "pianoFrame.babylon", scene);
     ```
 
 1. Now we should have a standup piano which looks like this:
 ![Standup Piano Mesh](../images/standup-piano-mesh.png)
-
-## Summary
-
-Great job following through so far! Here's the final code you should have for *scene.js*:
-
-```javascript
-const scale = 65;
-const keyHeight = 80;
-
-const WhiteKey = function (note, topWidth, bottomWidth, topPositionX, wholePositionX) {
-    return {
-        build(scene, octave, referencePositionX) {
-            var bottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: bottomWidth/scale, height: 1.5/scale, depth: 4.5/scale}, scene);
-            var top = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: topWidth/scale, height: 1.5/scale, depth: 5/scale}, scene);
-            top.position.z =  4.75/scale;
-            top.position.x += topPositionX/scale;
-
-            const key = BABYLON.Mesh.MergeMeshes([bottom, top], true, false, null, false, false);
-            key.position.x = referencePositionX/scale + wholePositionX/scale;
-            key.name = note+octave;
-            
-            key.position.y += keyHeight/scale;
-
-            return key;
-        }
-    }
-}
-
-const BlackKey = function (note, positionX) {
-    return {
-        build(scene, octave, referencePositionX) {
-            const blackMat = new BABYLON.StandardMaterial("black");
-            blackMat.diffuseColor = new BABYLON.Color3(0, 0, 0);
-
-            const key = BABYLON.MeshBuilder.CreateBox(note+octave, {width: 1.4/scale, height: 2/scale, depth: 5/scale}, scene);
-            key.position.z += 4.75/scale;
-            key.position.y += 0.25/scale;
-            key.position.x = referencePositionX/scale + positionX/scale;
-            key.material = blackMat;
-            
-            key.position.y += keyHeight/scale;
-
-            return key;
-        }
-    }
-}
-
-const buildFrame = function(scene, leftPositionX, rightPositionX) {
-    const frameLeft = BABYLON.MeshBuilder.CreateBox("frameLeft", {width: 2.4/scale, height: (keyHeight+2)/scale, depth: 15/scale}, scene);
-    frameLeft.position = new BABYLON.Vector3(leftPositionX/scale, (keyHeight+2)/2/scale, 4/scale);
-    const frameRight = BABYLON.MeshBuilder.CreateBox("frameRight", {width: 2.4/scale, height: (keyHeight+2)/scale, depth: 15/scale}, scene);
-    frameRight.position = new BABYLON.Vector3(rightPositionX/scale, (keyHeight+2)/2/scale, 4/scale);
-    const frameBack = BABYLON.MeshBuilder.CreateBox("frameBack", {width: (2.4*52)/scale, height: (keyHeight+10)/scale, depth: 5/scale}, scene);
-    frameBack.position = new BABYLON.Vector3(2.4*3.5/scale, (keyHeight+10)/2/scale, 9/scale);
-    const wingLeft = BABYLON.MeshBuilder.CreateBox("wingLeft", {width: 2.4/scale, height: 8/scale, depth: 5/scale}, scene);
-    wingLeft.position =  new BABYLON.Vector3(leftPositionX/scale, (keyHeight+6)/scale, 9/scale);
-    const wingRight = BABYLON.MeshBuilder.CreateBox("wingRight", {width: 2.4/scale, height: 8/scale, depth: 5/scale}, scene);
-    wingRight.position =  new BABYLON.Vector3(rightPositionX/scale, (keyHeight+6)/scale, 9/scale);
-    
-    const frame = BABYLON.Mesh.MergeMeshes([frameLeft, frameRight, frameBack, wingLeft, wingRight], true, false, null, false, false);
-    const frameMat = new BABYLON.StandardMaterial("frameMat");
-    frameMat.diffuseColor = new BABYLON.Color3(0, 0, 0);
-    frame.material = frameMat;
-
-    return frame;
-}
-
-const createScene = async function (engine) {
-    const scene = new BABYLON.Scene(engine);
-
-    const alpha =  3*Math.PI/2;
-    const beta = Math.PI/50;
-    const radius = 220/scale;
-    const target = new BABYLON.Vector3(0, 0, 0);
-    
-    const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target, scene);
-    camera.attachControl(canvas, true);
-
-    // This creates a light, aiming 0,1,0 - to the sky (non-mesh)
-    const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
-
-    // Default intensity is 1. Let's dim the light a small amount
-    light.intensity = 0.6;
-
-    const keyParams = [
-        WhiteKey("C", 1.4, 2.3, -0.45, -2.4*6),
-        BlackKey("C#", -2.4*6+0.95),
-        WhiteKey("D", 1.4, 2.4, 0, -2.4*5),
-        BlackKey("D#", -2.4*6+0.95+2.85),
-        WhiteKey("E", 1.4, 2.3, 0.45, -2.4*4),
-        WhiteKey("F", 1.3, 2.4, -0.55, -2.4*3),
-        BlackKey("F#", -2.4*6+0.95+0.45 + 2.4 * 2 + 1.85),
-        WhiteKey("G", 1.3, 2.3, -0.2, -2.4*2),
-        BlackKey("G#", -2.4*6+0.95+0.45 + 2.4 * 2 + 1.85 + 2.75),
-        WhiteKey("A", 1.3, 2.3, 0.2, -2.4*1),
-        BlackKey("A#", -2.4*6+0.95+0.45 + 2.4 * 2 + 1.85 + 2.75 *2),
-        WhiteKey("B", 1.3, 2.4, 0.55, 0)
-    ]
-
-    const keys = new Set();
-
-    //Octave 0
-    keys.add(WhiteKey("A", 1.9, 2.3, -0.20, -2.4).build(scene, 0, -2.4*21))
-    keyParams.slice(10, 12).forEach(key => {
-        keys.add(key.build(scene, 0, -2.4*21))
-    })
-
-    //Octave 1-7
-    var referencePositionX = -2.4*14;
-    for (var octave=1; octave<=7; octave++) {
-        keyParams.forEach(key => {
-            keys.add(key.build(scene, octave, referencePositionX))
-        })
-        referencePositionX += 2.4*7;
-    }
-
-    //Octave 8
-    keys.add(WhiteKey("C", 2.3, 2.3, 0, -2.4*6).build(scene, 8, referencePositionX))
-
-    const frame = buildFrame(scene, -2.4*23, referencePositionX-2.4*5)
-
-    const xrHelper = await scene.createDefaultXRExperienceAsync();
-
-    return scene;
-};
-```
 
 ## Next steps
 
