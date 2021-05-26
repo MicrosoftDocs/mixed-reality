@@ -12,8 +12,6 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, XRSDK, L
 
 ## What's new in vNext
 
-### Scene Content System
-
 ### Legacy XR and XR SDK Data Providers can now be used within the same profile
 
 Data providers will now also only be loaded when the appropriate pipeline is selected, allowing both Legacy XR and XRSDK data providers to co-exist within 
