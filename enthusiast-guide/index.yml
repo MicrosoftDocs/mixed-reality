@@ -54,7 +54,7 @@ productDirectory:
     # Card
     - title: How-to's
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: images/WMR_Docs_Landing_How-Tos's.png
+      imageSrc: images/WMR_Docs_Landing_How-To's.png
       links:
         - url: plug-in-your-headset.md
           text: Connect your headset
