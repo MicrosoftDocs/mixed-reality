@@ -253,9 +253,9 @@ In this section, let's expand the usage of the key-creation functions we wrote i
     ```javascript
     // Register 1 through 7
     var referencePositionX = -2.4*14;
-    for (var octave = 1; octave <= 7; octave++) {
+    for (var register = 1; register <= 7; register++) {
         keyParams.forEach(key => {
-            keys.add(key.build(scene, octave, referencePositionX))
+            keys.add(key.build(scene, register, referencePositionX))
         })
         referencePositionX += 2.4*7;
     }
@@ -290,6 +290,14 @@ In this section, let's expand the usage of the key-creation functions we wrote i
 
     ```javascript
     BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/JING1201/babylonjs-exploration/main/piano-keys/", "pianoFrame.babylon", scene);
+    ```
+
+1. Notice that the keyboard is lying at the bottom of the frame (since the y-coordinate of the keys are at 0 by default). Let's lift the keyboard so that it fits into the standup piano frame:
+
+    ```javascript
+    keys.forEach(key => {
+        key.position.y += 80;
+    })
     ```
 
 1. The final code of *scene.js* should look like this:
@@ -385,6 +393,10 @@ In this section, let's expand the usage of the key-creation functions we wrote i
         keys.add(WhiteKey("C", 2.3, 2.3, 0, -2.4*6).build(scene, 8, 84))
 
         BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/JING1201/babylonjs-exploration/main/piano-keys/", "pianoFrame.babylon", scene);
+
+        keys.forEach(key => {
+            key.position.y += 80;
+        })
     
         const xrHelper = await scene.createDefaultXRExperienceAsync();
     
