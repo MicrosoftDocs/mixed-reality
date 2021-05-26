@@ -20,7 +20,7 @@ This provider can be used in editor and on device while on the Standalone platfo
 | MRTK Version | Leap Motion Unity Modules Versions Supported |
 | --- | --- |
 |2.6.x | 4.5.0, 4.5.1|
-|2.7.x| 4.5.0, 4.5.1, 4.6.0, 4.7.0, 4.7.1|
+|2.7.x| 4.5.0, 4.5.1, 4.6.0, 4.7.0, 4.7.1, 4.8.0|
 
 
 ## Using Leap Motion (by Ultraleap) hand tracking in MRTK
