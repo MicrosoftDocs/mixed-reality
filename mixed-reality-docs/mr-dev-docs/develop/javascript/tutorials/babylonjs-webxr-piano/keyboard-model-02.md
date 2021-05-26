@@ -92,24 +92,24 @@ Visually, each register looks exactly the same as another, so we can start with 
 
     ![Black Key Alignment](../images/black-key-position.png)
 
-1. For white keys, we can make an observation that each white key is composed of two parts: (1) the part below the neighboring black key(s) and (2) the part next to the neighboring black key(s) and goes above part 1. The two parts have different dimensions but are stacked together to crete a full white key.
+1. For white keys, we can make an observation that each white key is composed of two parts: (1) the bottom part below the neighboring black key(s) and (2) the top part next to the neighboring black key(s). The two parts have different dimensions but are stacked together to crete a full white key.
 
     ![White Key Shape](../images/white-key-shape-label.png)
 
 1. This would be the code for creating a single white key for the note C (don't worry about adding this into *scene.js* yet):
 
     ```javascript
-        const whiteKeyBottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: 2.3, height: 1.5, depth: 4.5}, scene);
-        const whiteKeyTop = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: 1.4, height: 1.5, depth: 5}, scene);
-        whiteKeyTop.position.z += 4.75;
-        whiteKeyTop.position.x -= 0.45;
+    const whiteKeyBottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: 2.3, height: 1.5, depth: 4.5}, scene);
+    const whiteKeyTop = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: 1.4, height: 1.5, depth: 5}, scene);
+    whiteKeyTop.position.z += 4.75;
+    whiteKeyTop.position.x -= 0.45;
 
-        const whiteKeyV1 = BABYLON.Mesh.MergeMeshes([whiteKeyBottom, whiteKeyTop], true, false, null, false, false);
-        whiteKeyV1.material = whiteMat;
-        whiteKeyV1.name = "C4";
+    const whiteKeyV1 = BABYLON.Mesh.MergeMeshes([whiteKeyBottom, whiteKeyTop], true, false, null, false, false);
+    whiteKeyV1.material = whiteMat;
+    whiteKeyV1.name = "C4";
     ```
 
-    Here we created two [Box](https://doc.babylonjs.com/divingDeeper/mesh/creation/set/box#box-mesh) meshes, one for the bottom part and one for the top part of the white key. We then modify the position of the top part to make it stacked on top of the bottom part and to put it towards the left to leave space for the black key (C#). Finally, these two parts were merged using the [MergeMeshes](https://doc.babylonjs.com/divingDeeper/mesh/mergeMeshes) function to become one complete white key. This is the resulting mesh that this code would produce:
+    Here we created two [Box](https://doc.babylonjs.com/divingDeeper/mesh/creation/set/box#box-mesh) meshes, one for the bottom part and one for the top part of the white key. We then modify the position of the top part to make it stacked on top of the bottom part and to put it towards the left to leave space for the neighboring black key (C#). Finally, these two parts were merged using the [MergeMeshes](https://doc.babylonjs.com/divingDeeper/mesh/mergeMeshes) function to become one complete white key. This is the resulting mesh that this code would produce:
 
     ![White Key C](../images/white-key-c.png)
 
@@ -301,7 +301,3 @@ Advance to the next article to learn how to create...
 > [!div class="nextstepaction"]
 > [Next steps: Interact with the piano keys](keyboard-interaction.md)
 
-<!--
-Remove all the comments in this template before you sign-off or merge to the 
-main branch.
--->
