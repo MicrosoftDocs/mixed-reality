@@ -135,7 +135,7 @@ Visually, each register looks exactly the same as another, so we can start with 
 
     ![Black Key C#](../images/black-key-csharp.png)
 
-1. As you can see, creating each key is pretty tedious and can result in a lot of similar code since we have to specify each of their dimensions and position. Let's try to make the creation process more efficient in the next section.
+1. As you can see, creating each key can result in a lot of similar code since we have to specify each of their dimensions and position. Let's try to make the creation process more efficient in the next section.
 
 ## Build a piano keyboard efficiently
 
@@ -292,12 +292,110 @@ In this section, let's expand the usage of the key-creation functions we wrote i
     BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/JING1201/babylonjs-exploration/main/piano-keys/", "pianoFrame.babylon", scene);
     ```
 
+1. The final code of *scene.js* should look like this:
+
+    ```javascript
+    const WhiteKey = function (note, topWidth, bottomWidth, topPositionX, wholePositionX) {
+        return {
+            build(scene, register, referencePositionX) {
+                // Create bottom part
+                var bottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: bottomWidth, height: 1.5, depth: 4.5}, scene);
+
+                // Create top part
+                var top = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: topWidth, height: 1.5, depth: 5}, scene);
+                top.position.z =  4.75;
+                top.position.x += topPositionX;
+    
+                // Merge bottom and top parts
+                const key = BABYLON.Mesh.MergeMeshes([bottom, top], true, false, null, false, false);
+                key.position.x = referencePositionX + wholePositionX;
+                key.name = note + register;
+    
+                return key;
+            }
+        }
+    }
+
+    const BlackKey = function (note, wholePositionX) {
+        return {
+            build(scene, register, referencePositionX) {
+                // Create black color material
+                const blackMat = new BABYLON.StandardMaterial("black");
+                blackMat.diffuseColor = new BABYLON.Color3(0, 0, 0);
+                
+                // Create black key
+                const key = BABYLON.MeshBuilder.CreateBox(note + register, {width: 1.4, height: 2, depth: 5}, scene);
+                key.position.z += 4.75;
+                key.position.y += 0.25;
+                key.position.x = referencePositionX + wholePositionX;
+                key.material = blackMat;
+    
+                return key;
+            }
+        }
+    }
+
+    const createScene = async function(engine) {
+        const scene = new BABYLON.Scene(engine);
+    
+        const alpha =  3*Math.PI/2;
+        const beta = Math.PI/50;
+        const radius = 220;
+        const target = new BABYLON.Vector3(0, 0, 0);
+        
+        const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target, scene);
+        camera.attachControl(canvas, true);
+        
+        const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
+        light.intensity = 0.6;
+
+        const keyParams = [
+            WhiteKey("C", 1.4, 2.3, -0.45, -14.4),
+            BlackKey("C#", -13.45),
+            WhiteKey("D", 1.4, 2.4, 0, -12),
+            BlackKey("D#", -10.6),
+            WhiteKey("E", 1.4, 2.3, 0.45, -9.6),
+            WhiteKey("F", 1.3, 2.4, -0.55, -7.2),
+            BlackKey("F#", -6.35),
+            WhiteKey("G", 1.3, 2.3, -0.2, -4.8),
+            BlackKey("G#", -3.6),
+            WhiteKey("A", 1.3, 2.3, 0.2, -2.4),
+            BlackKey("A#", -0.85),
+            WhiteKey("B", 1.3, 2.4, 0.55, 0)
+        ]
+        
+        const keys = new Set();
+
+        // Register 1 through 7
+        var referencePositionX = -2.4*14;
+        for (var octave = 1; octave <= 7; octave++) {
+            keyParams.forEach(key => {
+                keys.add(key.build(scene, octave, referencePositionX))
+            })
+            referencePositionX += 2.4*7;
+        }
+
+        // Register 0
+        keys.add(WhiteKey("A", 1.9, 2.3, -0.20, -2.4).build(scene, 0, -2.4*21))
+        keyParams.slice(10, 12).forEach(key => {
+            keys.add(key.build(scene, 0, -2.4*21))
+        })
+        
+        // Register 8
+        keys.add(WhiteKey("C", 2.3, 2.3, 0, -2.4*6).build(scene, 8, 84))
+
+        BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/JING1201/babylonjs-exploration/main/piano-keys/", "pianoFrame.babylon", scene);
+    
+        const xrHelper = await scene.createDefaultXRExperienceAsync();
+    
+        return scene;
+    }
+    ```
+
 1. Now we should have a standup piano which looks like this:
 ![Standup Piano Mesh](../images/standup-piano-mesh.png)
 
 ## Next steps
 
-Advance to the next article to learn how to create...
 > [!div class="nextstepaction"]
 > [Next steps: Interact with the piano keys](keyboard-interaction.md)
-
