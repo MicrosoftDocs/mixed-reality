@@ -5,7 +5,7 @@ author: RogPodge
 ms.author: roliu
 ms.date: 03/25/2021
 ms.localizationpriority: medium
-keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, XRSDK, Legacy XR
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, XRSDK, Legacy XR, Leap Motion, Ultraleap
 ---
 
 # Microsoft Mixed Reality Toolkit vNext Release Notes
@@ -15,8 +15,8 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, XRSDK, L
 ### Legacy XR and XR SDK Data Providers can now be used within the same profile
 
 Data providers will now also only be loaded when the appropriate pipeline is selected, allowing both Legacy XR and XRSDK data providers to co-exist within 
-the same profile. To accomdate this, Legacy XR and XR SDK Data Providers are now organized under different tabs within the profile view, helping users 
-determine whether they have the correct profile for their targetted XR pipeline.
+the same profile. To accommodate this, Legacy XR and XR SDK Data Providers are now organized under different tabs within the profile view, helping users 
+determine whether they have the correct profile for their targeted XR pipeline.
 
 ![Legacy and XR SDK data providers can now be unified under a single profile](../features/images/xrsdk/LegacyAndXrsdkUnified.png)
 
@@ -37,7 +37,7 @@ If user's previous Experience Scale settings do not match the new Experience Set
 
 ### Teleport Hotspot added
 
-A new teleport hotspot component has been graduated. You can add a teleport hotspot to your gameobject to ensure that the user is in a certain position and orientation when they teleport to that location.
+A new teleport hotspot component has been graduated. You can add a teleport hotspot to your game object to ensure that the user is in a certain position and orientation when they teleport to that location.
 
 [Teleport Hotspot example](images/TeleportHotspot.gif)
 
@@ -45,9 +45,11 @@ A new teleport hotspot component has been graduated. You can add a teleport hots
 
 Support for the latest versions of the [Leap Motion Unity Modules](https://developer.leapmotion.com/unity) is now compatible with MRTK 2.7.0.  See [How to Configure MRTK for Leap Motion](../features/cross-platform/leap-motion-mrtk.md) for more information. 
 
-### Targetted speech events raised no longer restricted to gaze pointers.
+Big thanks to @jackyangzzh for contributing the new LeapMotionOrientationExample scene!
 
-Previously, targetted speech events could only be raised on objects which were focused on with the gaze pointer. Now, objects can recieve speech events if they are focused by any pointer.
+### Targeted speech events raised no longer restricted to gaze pointers.
+
+Previously, targeted speech events could only be raised on objects which were focused on with the gaze pointer. Now, objects can receive speech events if they are focused by any pointer.
 
 [Speech Events with Far Pointers](https://user-images.githubusercontent.com/39840334/117516612-6fa00500-af4e-11eb-94ba-d5fb2ed4e7de.gif)
 
