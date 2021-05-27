@@ -41,7 +41,7 @@ A new teleport hotspot component has been graduated. You can add a teleport hots
 
 [Teleport Hotspot example](images/TeleportHotspot.gif)
 
-### Added support for Leap Motion Unity Modules version 4.6.0, 4.7.0 and 4.7.1
+### Added support for Leap Motion Unity Modules version 4.6.0, 4.7.0, 4.7.1 and 4.8.0
 
 Support for the latest versions of the [Leap Motion Unity Modules](https://developer.leapmotion.com/unity) is now compatible with MRTK 2.7.0.  See [How to Configure MRTK for Leap Motion](../features/cross-platform/leap-motion-mrtk.md) for more information. 
 
