@@ -28,4 +28,6 @@ Take a look at [MRTK's documentation](/windows/mixed-reality/mrtk-unity) for mor
 
 ## Manual setup without MRTK
 
+While Microsoft and the community have created opensource tools such as the [Mixed Reality Toolkit (MRTK)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html) that will automatically set up the WMR environment, many developers wish to build their experiences from the ground up.
+
 [!INCLUDE[](includes/xr/manual-setup.md)]
