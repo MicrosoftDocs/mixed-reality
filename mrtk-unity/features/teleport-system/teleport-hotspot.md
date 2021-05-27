@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Teleport system, Teleport hotspot
 ---
 
-# Teleport Hotspot [Experimental]
+# Teleport Hotspot
 
 The teleport hotspot is a component you can add to your gameobject to ensure that the user is in a certain position and orientation when they teleport to that location.
 
