@@ -39,8 +39,8 @@ These prefabs are variants of the HoloLens 2 style pressable button prefabs that
 
 These prefabs have additional backplate component **QuadDwellVisual** to visualize the dwell input state. It has **HolographicBackPlateDwellVisual.mat** material assigned. **ToggleDwellPressableButton.cs** updates the **_BorderWidth** property of MRTK Standard shader to visualize the dwell input.
 
-<img src="../images/dwell/MRTK_UX_Dwell_Prefabs_Structure.png" alt="Near Menu grab" width="550px">
-<img src="../images/dwell/MRTK_UX_Dwell_Prefabs.png" alt="Near Menu grab" width="350px">
+<img src="../images/dwell/MRTK_UX_Dwell_Prefabs_Structure.png" alt="Dwell prefabs structure" width="550px">
+<img src="../images/dwell/MRTK_UX_Dwell_Prefabs.png" alt="Dwell prefabs" width="350px">
 
 ## Example scene
 
