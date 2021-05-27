@@ -69,6 +69,32 @@ Previously, targeted speech events could only be raised on objects which were fo
 
 The beloved TextToSpeech script is now finally available in MRTK to help you generate speech from text on the UWP platform using [`SpeechSynthesizer`](https://docs.microsoft.com/uwp/api/windows.media.speechsynthesis.speechsynthesizer). Also added a sample scene to demonstrate the feature.
 
+### Support for the system-provided motion controller model on OpenXR
+
+Added support, both in-editor and at runtime, for the system-provided motion controller model on OpenXR.
+
+![Editor window showing two motion controller models](https://user-images.githubusercontent.com/3580640/116493405-89a55d80-a853-11eb-95ae-d430e6fdc8b4.png)
+
+### Support for WinMR gestures (select, hold, manipulation, navigation) on OpenXR
+
+Added support for WinMR gestures (select, hold, manipulation, navigation) on OpenXR. [#9843](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9843).
+
+### Support for HoloLens 2 articulated hand mesh on OpenXR
+
+![The hand mesh running on-device in an MRTK example scene](https://user-images.githubusercontent.com/3580640/112909923-32bb3580-90a7-11eb-925d-464b135edc61.png)
+
+### Support for controller haptics across legacy WMR, Windows XR Plugin, and OpenXR
+
+Added support for controller haptics across legacy WMR, Windows XR Plugin, and OpenXR. [#9735](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9735)
+
+### Support for spatial mapping on OpenXR on HoloLens 2
+
+Added support for spatial mesh when using OpenXR on HoloLens 2. [#9567](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9567) and [#]
+
+### Support for eye tracking on Windows XR Plugin
+
+Added support for eye gaze when using Windows XR Plugin minimum versions of 2.7.0 (Unity 2019), 4.4.2 (Unity 2020), and 5.2.2 (Unity 2021). [#9609](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9609)
+
 ### Notable Bugfixes and Changes
 
 - Pinch detection made smoother. It is now harder to accidentally drop the pinch gesture. [#9576](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9576)
@@ -82,6 +108,10 @@ The beloved TextToSpeech script is now finally available in MRTK to help you gen
 - In the Scene Understanding demo script, added the `GetSceneObjectsOfType` function to retrieve all observed scene object of a certain kind. [#9524](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9524), [#9744](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9744)
 - In command line build tool, only scenes specified by the `sceneList` or `sceneListFile` flags (when any flag is present) will be included in the build. [#9695](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9695)
 - In build tool, there is a new option to specify a path to `nuget.exe` and use that to perform package restore instead of using `msbuild` (the default option). [#9556](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9556)
+- Fixed issue where using Windows XR Plugin could result in stale hand joints and doubled hand meshes. [#9890](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9890)
+- Fixed issue where using Windows XR Plugin's automatic remoting feature led to missing input and interactions. [#9868](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9868)
+- Fixed issue where the BuildDeployWindow would try to query an invalid reg key for the Windows SDK path. [#9664](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9664)
+- MRTK's glTF importers are now optional. If multiple glTF importers are present, MRTK's can be disabled by adding `MRTK_GLTF_IMPORTER_OFF` to the custom scripting define symbols. [#9658](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9658)
 
 ## Known Issues
 
