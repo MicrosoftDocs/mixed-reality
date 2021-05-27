@@ -174,8 +174,8 @@
     items:
     - name: Choosing a Unity version and XR plugin
       href: unity/choosing-unity-version.md
-    - name: Choosing a development pipeline 
-      href: unity/choosing-developer-pipeline.md
+    # - name: Choosing a development pipeline 
+    #   href: unity/choosing-developer-pipeline.md
     - name: Setting up your XR configuration 
       href: unity/xr-project-setup.md
     - name: OpenXR 
@@ -268,7 +268,7 @@
             href: unity/lunar-module.md
   - name: Debugging and performance
     items:
-      - name: Managed debugging with Unity IL2CPP
+      - name: Managed debugging with Unity
         href: unity/managed-debugging-with-unity-il2cpp.md
       - name: Recommended settings for Unity
         href: unity/recommended-settings-for-unity.md
