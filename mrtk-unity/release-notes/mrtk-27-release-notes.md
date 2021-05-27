@@ -43,7 +43,7 @@ The new MRTK configurator provides users step-by-step guidance to properly confi
 
 ### Graduated Teleport Hotspot
 
-A new teleport hotspot component has been graduated. You can add a teleport hotspot to your GameObject to ensure that the user is in a certain position and orientation when they teleport to that location.
+A new [teleport hotspot component](../features/teleport-system/teleport-hotspot.md) has been graduated. You can add a teleport hotspot to your gameobject to ensure that the user is in a certain position and orientation when they teleport to that location.
 
 ![Teleport Hotspot example](images/TeleportHotspot.gif)
 
