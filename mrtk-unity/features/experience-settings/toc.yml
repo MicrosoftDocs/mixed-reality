@@ -1,3 +1,6 @@
+---
+monikerRange: '>= mrtkunity-2021-05' 
+---
 - name: Experience Settings
   href: experience-settings.md
 - name: Mixed Reality Scene Content

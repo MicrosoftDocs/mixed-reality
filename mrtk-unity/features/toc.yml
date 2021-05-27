@@ -8,8 +8,10 @@
   href: diagnostics/toc.yml
 - name: Example Scenes
   href: example-scenes/toc.yml
+::: moniker range=">= mrtkunity-2020-05"
 - name: Experience Settings
   href: experience-settings/toc.yml
+::: moniker range=">= mrtkunity-2020-05"
 - name: Experimental
   href: experimental/toc.yml
 - name: Extensions
