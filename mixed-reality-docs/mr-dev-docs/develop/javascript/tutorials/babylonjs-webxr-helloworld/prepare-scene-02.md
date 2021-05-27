@@ -85,15 +85,27 @@ A scene is where all the contents will be displayed. There might be multiple sce
 
 ## Add a camera
 
-1. To allow user input, a camera must be attached to the canvas. Let's add the camera of type [BABYLON.ArcRotateCamera](https://doc.babylonjs.com/divingDeeper/cameras/camera_introduction#arc-rotate-camera) that allows us to look around, i.e. can be rotated around object that we've just added to the scene. The parameters required to create an instance of the camera are name, alpha (rotation along the longitudinal axis), beta (rotation along the latitudinal axis), radius (distance from the target), and target (the target the camera should look at). Add the following code to the *createScene* function:
+1. In order to view the virtual world and interact with it, a camera must be attached to the canvas. Let's add the camera of type [BABYLON.ArcRotateCamera](https://doc.babylonjs.com/divingDeeper/cameras/camera_introduction#arc-rotate-camera), which can be rotated around a target. The parameters required to create an instance of the camera are:
+    1. **name**: name of the camera
+    1. **alpha**: angular position along the longitudinal axis (in radians)
+    1. **beta**: angular position along the latitudinal axis (in radians)
+    1. **radius**: distance from the target
+    1. **target**: the point that the camera would always face towards (defined by x-y-z coordinates)
+    1. **scene**: the scene that the camera is in
+
+    Alpha, beta, radius, and target together define the camera's position in the space, as shown in the diagram below:
+
+    ![Camera Alpha Beta Radius](../images/camera-alpha-beta-radius.jpg)
+
+    Add the following code to the *createScene* function:
 
     ```javascript
-    const alpha =  Math.PI;
-    const beta = Math.PI;
-    const radius = 5;
+    const alpha =  Math.PI/4;
+    const beta = Math.PI/3;
+    const radius = 8;
+    const target = new BABYLON.Vector3(0, 0, 0);
     
-    const camera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 0);
-    camera.setPosition(new BABYLON.Vector3(alpha, beta, radius));
+    const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target, scene);
     camera.attachControl(canvas, true);
     ```
 
@@ -127,12 +139,12 @@ A scene is where all the contents will be displayed. There might be multiple sce
                 const scene = new BABYLON.Scene(engine);
                 scene.clearColor = new BABYLON.Color3.Black;
                 
-                const alpha =  Math.PI;
-                const beta = Math.PI;
-                const radius = 5;
+                const alpha =  Math.PI/4;
+                const beta = Math.PI/3;
+                const radius = 8;
+                const target = new BABYLON.Vector3(0, 0, 0);
                 
-                const camera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 0);
-                camera.setPosition(new BABYLON.Vector3(alpha, beta, radius));
+                const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target, scene);
                 camera.attachControl(canvas, true);
                 
                 const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0));
