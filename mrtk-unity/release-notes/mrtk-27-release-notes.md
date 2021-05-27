@@ -89,7 +89,7 @@ Added support for controller haptics across legacy WMR, Windows XR Plugin, and O
 
 ### Support for spatial mapping on OpenXR on HoloLens 2
 
-Added support for spatial mesh when using OpenXR on HoloLens 2. [#9567](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9567) and [#]
+Added support for spatial mesh when using OpenXR on HoloLens 2. [#9567](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9567) and [#9827](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9827)
 
 ### Support for eye tracking on Windows XR Plugin
 
@@ -112,6 +112,7 @@ Added support for eye gaze when using Windows XR Plugin minimum versions of 2.7.
 - Fixed issue where using Windows XR Plugin's automatic remoting feature led to missing input and interactions. [#9868](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9868)
 - Fixed issue where the BuildDeployWindow would try to query an invalid reg key for the Windows SDK path. [#9664](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9664)
 - MRTK's glTF importers are now optional. If multiple glTF importers are present, MRTK's can be disabled by adding `MRTK_GLTF_IMPORTER_OFF` to the custom scripting define symbols. [#9658](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9658)
+- Fixed issue where the Knuckles controllers on OpenVR weren't being detected properly. [#9881](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9881)
 
 ## Known Issues
 
