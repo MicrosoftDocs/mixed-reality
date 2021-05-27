@@ -1,10 +1,10 @@
 ---
-title: GettingStartedWithMRTKAndXRSDK
-description: Landing Page for MRTK with XRSDK
+title: Getting started with MRTK and XR SDK
+description: Landing page for MRTK with XR SDK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, XRSDK,
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, XRSDK, XR SDK
 ---
 
 # Getting started with MRTK and XR SDK

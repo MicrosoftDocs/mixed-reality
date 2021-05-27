@@ -1,5 +1,5 @@
 ---
-title: ControllerMappingTool
+title: Controller Mapping Tool
 description: Documentation on Controller Mapping Tool in MRTK
 author: keveleigh
 ms.author: kurtie

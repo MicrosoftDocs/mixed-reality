@@ -1,10 +1,10 @@
 ---
-title: UsingARFoundation
-description: Documentation to use ARFoundation in unity
+title: Android and iOS MRTK Configuration (ARFoundation)
+description: Documentation to configure MRTK for Android and iOS (ARFoundation) in unity
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, AR Core, AR Kit
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, AR Core, AR Kit, iOS, IOS, Android, AR Foundation
 ---
 
 # How to configure MRTK for iOS and Android [Experimental]
@@ -36,7 +36,10 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, AR Core,
     | AR Foundation  <br/> Version: 3.1.3 |  AR Foundation  <br/> Version: 3.1.3 |
     | ARCore XR Plugin <br/> Version: 3.1.4 | ARKit XR Plugin <br/> Version: 3.1.3 |
 
-1. Update the MRTK UnityAR scripting defines by invoking the menu item: **Mixed Reality Toolkit > Utilities > UnityAR > Update Scripting Defines**
+1. Update the MRTK UnityAR scripting defines by invoking the menu item: **Mixed Reality > Toolkit > Utilities > UnityAR > Update Scripting Defines**
+
+    ![Update Scripting Defines](../features/images/UpdateScriptingDefineUnityAR.png)
+
 
 ## Enabling the Unity AR camera settings provider
 
@@ -79,20 +82,10 @@ The following steps presume use of the MixedRealityToolkit object. Steps require
 
 1. Switch platform to either Android or iOS in the Unity Build Settings
 
-    When you switch the platform you should see the MRTK Project Configurator Window with settings for your chosen platform.  Click Apply to enable platform specific settings.
+1. Ensure the associated XR Plug-in management provider is enabled
 
-    iOS Project Configurator Settings
-
-    ![iOS Project Configurator](../features/images/camera-system/MRTKProjectConfigurator.png)
-
-1. There are no additional steps after switching the platform for Android.
-
-1. If the platform is iOS, Edit > Project Settings > Player > Other Settings, under the Optimization header, **uncheck** Strip Engine Code
-
-    ![iOS Settings](../features/images/camera-system/UncheckStripEngineCodeiOS.png)
-
-    > [!NOTE]
-    > Unchecking Strip Engine Code is the short term solution to an error in Xcode [#6646](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/6646).  We are working on a long term solution.
+    iOS XR Plug-in Management:
+    ![XR Plug-in Management iOS](../features/images/XRManagementiOS.png)
 
 1. Build and run the scene
 

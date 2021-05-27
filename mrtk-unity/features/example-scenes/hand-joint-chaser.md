@@ -1,5 +1,5 @@
 ---
-title: README_HandJointChaser
+title: Hand Joint Chaser
 description: Hand joint chaser in MRTK
 author: CDiaz-MS
 ms.author: cadia

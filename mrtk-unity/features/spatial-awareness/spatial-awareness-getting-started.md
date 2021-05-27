@@ -1,5 +1,5 @@
 ---
-title: SpatialAwareness
+title: Spatial Awareness
 description: describes Spatial awareness in MRTK
 author: davidkline-ms
 ms.author: davidkl

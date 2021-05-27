@@ -30,7 +30,7 @@ Our current recommendation for Unity development with Mixed Reality is **Unity 2
 > [!CAUTION]
 > While the XR SDK is available with this version of Unity, Azure Spatial Anchors is not currently compatible with this setup. This recommendation will be updated with a future release of the Azure Spatial Anchors package for Unity.
 > 
-> * If you don't need Azure Spatial Anchors, you can [configure your Unity project for XR](https://docs.unity3d.com/Manual/configuring-project-for-xr.html) and [get started with MRTK and XR SDK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk).
+> * If you don't need Azure Spatial Anchors, you can [configure your Unity project for XR](https://docs.unity3d.com/Manual/configuring-project-for-xr.html) and [get started with MRTK and XR SDK](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk).
 > 
 > * If you're currently using the XR SDK in your project and want to use Azure Spatial Anchors, uninstall XR SDK and reinstall the Legacy XR package to revert your project settings.
 

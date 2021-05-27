@@ -1,5 +1,5 @@
 ---
-title: UnityArCameraSettings
+title: Unity AR Camera Settings
 description: Documentation to use AR camera in MRTK
 author: davidkline-ms
 ms.author: davidkl

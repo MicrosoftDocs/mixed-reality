@@ -1,5 +1,5 @@
 ---
-title: EyeTracking_TargetSelection
+title: Eye Tracking Target Selection
 description: How to access eye gaze data and eye gaze specific events to select targets in MRTK
 author: CDiaz-MS
 ms.author: cadia

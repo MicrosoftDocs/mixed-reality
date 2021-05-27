@@ -1,5 +1,5 @@
 ---
-title: LargeProjects
+title: Large Projects
 description: Tips for consumers of MRTK with large projects.
 author: polar-kev
 ms.author: kesemple

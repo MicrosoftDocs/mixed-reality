@@ -1,5 +1,5 @@
 ---
-title: Contributing
+title: Contributing to MRTK
 description: How to contribute to the Mixed Reality Toolkit
 author: polar-kev
 ms.author: kesemple

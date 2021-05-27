@@ -1,5 +1,5 @@
 ---
-title: MRTK_Packages
+title: MRTK Packages
 description: Packages in MRTK supporting Mixed reality hardware and platforms.
 author: davidkline-ms
 ms.author: davidkl

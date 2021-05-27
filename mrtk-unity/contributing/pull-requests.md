@@ -1,5 +1,5 @@
 ---
-title: PullRequests
+title: Pull Requests
 description: Details related to Pull Requests.
 author: polar-kev
 ms.author: kesemple

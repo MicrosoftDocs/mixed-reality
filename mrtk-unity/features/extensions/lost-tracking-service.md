@@ -1,5 +1,5 @@
 ---
-title: LostTrackingService
+title: Lost Tracking Service
 description: Overview on LostTracking Service in MRTK
 author: CDiaz-MS
 ms.author: cadia
