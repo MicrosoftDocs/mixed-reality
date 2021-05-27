@@ -1,16 +1,16 @@
 ---
-title: MRTK next Release Notes
-description: release notes of the next MRTK version
+title: MRTK 2.7 Release Notes
+description: release notes of MRTK version 2.7
 author: RogPodge
 ms.author: roliu
-ms.date: 03/25/2021
+ms.date: 05/27/2021
 ms.localizationpriority: medium
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, XRSDK, Legacy XR, Leap Motion, Ultraleap
 ---
 
-# Microsoft Mixed Reality Toolkit vNext Release Notes
+# Microsoft Mixed Reality Toolkit 2.7.0 Release Notes
 
-## What's new in vNext
+## What's new in 2.7.0
 
 ### Legacy XR and XR SDK Data Providers can now be used within the same profile
 
@@ -85,6 +85,10 @@ The beloved TextToSpeech script is now finally available in MRTK to help you gen
 
 
 ## Known Issues
+
+### MRTK build window triggers indefinite "Importing assets" dialog in Unity 2020.3
+
+There is a known [issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9723) with the MRTK build window on Unity 2020.3 where after successfully performing a UWP build, the "Importing assets" dialog does not complete. This issue is being investigated in partnership with Unity. 
 
 ### Text Mesh Pro Canvas Renderer warnings in Unity 2020
 
