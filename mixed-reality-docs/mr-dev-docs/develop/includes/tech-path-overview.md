@@ -10,7 +10,7 @@ Whether you're looking to build games, movies and animation cinematics, or even 
 
 ![Unreal banner](../images/unreal_logo_banner.png)
 
-Unreal Engine 4 is a powerful, open source creation engine with full support for mixed reality in both C++ and Blueprints. As of Unreal Engine 4.25, HoloLens support is full-featured and production-ready. 
+Unreal Engine 4 is a powerful, open source creation engine with full support for mixed reality in both C++ and Blueprints. As of Unreal Engine 4.25, HoloLens support is full-featured and production-ready.
 
 With capabilities such as the flexible Blueprints Visual Scripting system, designers can virtually use the full range of concepts and tools generally only available to programmers. Creators across industries can leverage the freedom and control to deliver cutting-edge content, interactive experiences, and immersive virtual worlds.
 
@@ -18,7 +18,7 @@ With capabilities such as the flexible Blueprints Visual Scripting system, desig
 
 ![Web](../images/javascript_logo_banner.png)
 
-The WebXR Device API is an open specification that allows you to experience Mixed Reality apps in your browser on any platform. 
+The WebXR Device API is an open specification that allows you to experience Mixed Reality apps in your browser on any platform.
 
 # [Native (OpenXR)](#tab/native)
 
