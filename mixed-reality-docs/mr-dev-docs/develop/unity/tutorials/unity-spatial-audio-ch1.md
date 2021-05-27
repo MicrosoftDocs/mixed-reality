@@ -37,7 +37,8 @@ Processing audio using HRTF-based algorithms requires a large amount of speciali
 We **strongly recommend** completing the [Getting started](mr-learning-base-01.md) tutorials series or having some basic prior experience with Unity and MRTK before continuing.
 
 > [!IMPORTANT]
-> This tutorial series supports Unity 2019 LTS (currently 2019.4.x) if you are using Legacy WSA or Window XR Plugin and also Unity 2020 LTS(currently 2020.3.x) if you are using Window XR Plugin or Open XR. This supersedes any Unity version requirements stated in the prerequisites linked above.
+>
+> * This tutorial series supports both Unity 2019 LTS and Unity 2020 LTS. It supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
 
 ## Creating and preparing the Unity project
 
