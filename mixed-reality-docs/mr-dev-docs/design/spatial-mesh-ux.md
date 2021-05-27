@@ -30,7 +30,8 @@ MRTK provides several materials for the spatial mesh visualization.
 - **MRTK_SurfaceReconstruction.mat**: This material gives you an animated pulse effect on the spatial mesh. You can use this material to visualize the environment at a specific moment or on the user's air-tap input. See **PulseShaderExamples.unity** scene for the examples.
 <br>
 <img src="images/MRTK_SRMesh_Pulse.jpg" alt="Pulse spatial mesh visualization" width="640px">
-* For more information, see [MRTK - Spatial Awareness](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md) and [MRTK - Pulse Shader](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/experimental/pulse-shader.md).
+
+* For more information, see [MRTK - Spatial Awareness](/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started) and [MRTK - Pulse Shader](/windows/mixed-reality/mrtk-unity/features/experimental/pulse-shader).
 
 <br>
 

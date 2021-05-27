@@ -1,5 +1,5 @@
 ---
-title: ConfiguringDiagnostics
+title: Configuring Diagnostics
 description: documentation to configure diagnostics in MRTK
 author: davidkline-ms
 ms.author: davidkl

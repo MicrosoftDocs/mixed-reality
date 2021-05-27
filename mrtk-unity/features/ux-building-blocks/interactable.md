@@ -220,7 +220,7 @@ Take the button one step further, by creating a new profile, assigning the GameO
 
 #### Toggle button
 
-To make a button Toggle-able, change the the [`Selection Mode`](xref:Microsoft.MixedReality.Toolkit.UI.SelectionModes) field to type `Toggle`. In the *Profiles* section, a new toggled theme is added for each profile that is used when the *Interactable* is toggled on.
+To make a button Toggle-able, change the [`Selection Mode`](xref:Microsoft.MixedReality.Toolkit.UI.SelectionModes) field to type `Toggle`. In the *Profiles* section, a new toggled theme is added for each profile that is used when the *Interactable* is toggled on.
 
 While the [`SelectionMode`](xref:Microsoft.MixedReality.Toolkit.UI.SelectionModes) is set to Toggle, the *IsToggled* check box can be used to set the default value of the control at runtime initialization.
 

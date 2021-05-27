@@ -25,7 +25,7 @@ You can find examples of bounds control configurations in the `BoundsControlExam
 
 ### Target object
 
-This property specifies which object will get transformed by the bounds control manipulation. If no object is setit defaults to the owner object.
+This property specifies which object will get transformed by the bounds control manipulation. If no object is set, it defaults to the owner object.
 
 ### Activation behavior
 

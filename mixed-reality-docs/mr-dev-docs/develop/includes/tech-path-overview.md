@@ -27,6 +27,7 @@ You have several hardware and emulator options when building Mixed Reality apps 
 |  Tool/SDK  |  Description  |
 | --- | --- |
 | [Mixed Reality Toolkit for Unity](../unity/mrtk-getting-started.md) | The Mixed Reality Toolkit for Unity is an open source cross-platform development kit built to accelerate development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets and OpenVR platform. |
+| [Microsoft World Locking Tools](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/GettingStartedWithWorldLocking.html) | Provides a stable coordinate system and camera adjustment that minimizes the visible inconsistencies. |
 | [Microsoft Mesh](/mesh/overview) Private Preview | Complete the [Microsoft Mesh Register Interest](https://aka.ms/meshsignup) form to stay up to date with Mesh announcements and news. With Mesh, you can enhance virtual meetings, conduct virtual design sessions, help others remotely, and host virtual meet-ups. |
 
 ## Cloud services
@@ -43,10 +44,10 @@ You can use **Microsoft Dynamics 365 Guides** to visually tether holographic ins
 
 We have several open source [sample apps](../features-and-samples.md) for you to download and play around with to get a feel for a Mixed Reality end product in Unity. There are also MRTK example scenes available for you to test out specific features:
 
-* [Hand interaction examples scene (MRTK) for Unity](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples) -
+* [Hand interaction examples scene (MRTK) for Unity](/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples) -
 The HandInteractionExamples.unity example scene contains various types of interactions and UI controls that highlight articulated hand input.
 
-* [Eye tracking examples (MRTK) for Unity](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/example-scenes/eye-tracking-examples-overview) - 
+* [Eye tracking examples (MRTK) for Unity](/windows/mixed-reality/mrtk-unity/features/example-scenes/eye-tracking-examples-overview) - 
 This page covers how to get quickly started with using eye tracking in MRTK by building on our provided MRTK eye tracking examples.
 
 >[!NOTE]

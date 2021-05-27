@@ -112,7 +112,7 @@ If your app is targeting HoloLens specifically, you need to change a few setting
 2. In the **Inspector** panel, set the transform **position** to **0, 0, 0** so the location of the user's head starts at the Unity world origin.
 3. Change **Clear Flags** to **Solid Color**.
 4. Change the **Background** color to **RGBA 0,0,0,0**. Black renders as transparent in HoloLens.
-5. Change **Clipping Planes - Near** to the [HoloLens recommended](camera-in-unity.md#clip-planes) 0.85 (meters).
+5. Change **Clipping Planes - Near** to the [HoloLens recommended](camera-in-unity.md#using-clipping-planes) 0.85 (meters).
 
 ![Screenshot of the inspector tab open in the Unity editor](images/wmr-config-img-11.png)<br>
 *Unity camera settings*

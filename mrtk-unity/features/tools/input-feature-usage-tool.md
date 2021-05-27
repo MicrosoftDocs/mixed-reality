@@ -1,5 +1,5 @@
 ---
-title: InputFeatureUsageTool
+title: Input Feature Usage Tool
 description: Documentation InputFeatureUsage tool in MRTK
 author: keveleigh
 ms.author: kurtie
@@ -34,7 +34,7 @@ To examine Unity's mappings for a controller:
 
 ### Panels
 
-The panels display the current state of all reported InputFeatureUsages on the first two detected Unity input sources.
+The panels display the current state of all reported InputFeatureUsages on all detected Unity input sources.
 
 The smaller panel along the top lists the names of all detected sources.
 

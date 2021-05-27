@@ -11,7 +11,7 @@ keywords: mixed reality, Windows Mixed Reality, HoloLens, immersive, vr, mr, get
 # HoloLens (1st gen) Basics 100: Getting started with Unity
 
 >[!IMPORTANT]
->The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. [A new series of tutorials](mrlearning-base.md) has been posted for HoloLens 2.
+>The Mixed Reality Academy tutorials were designed with HoloLens (1st gen), Unity 2017, and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices. These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2 and may not be compatible with newer versions of Unity.  They will be maintained to continue working on the supported devices. [A new series of tutorials](mrlearning-base.md) has been posted for HoloLens 2.
 
 This tutorial will walk you through creating a basic mixed reality app built with Unity.
 
@@ -72,7 +72,7 @@ Second, the default Camera background needs some thought.
 
 Third, let us consider the near clip plane in Unity and prevent objects from being rendered too close to the users eyes as a user approaches an object or an object approaches a user.
 
-**For HoloLens applications**, the near clip plane can be set to the [HoloLens recommended](../camera-in-unity.md#clip-planes) 0.85 meters.
+**For HoloLens applications**, the near clip plane can be set to the [HoloLens recommended](../camera-in-unity.md#using-clipping-planes) 0.85 meters.
 
 1. With the **Main Camera** still selected in the **Hierarchy** panel, find the **Camera** component in the **Inspector** panel and change the **Near Clip Plane** field from the default **0.3** to the HoloLens recommended **0.85**.
 

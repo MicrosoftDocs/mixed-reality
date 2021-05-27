@@ -1,5 +1,5 @@
 ---
-title: HowToAddNearInteractivity
+title: How To Add Near Interactivity
 description: Documentation on Near interaction in MRTK
 author: keveleigh
 ms.author: kurtie
@@ -134,6 +134,9 @@ the entire collider needs to be touchable.
     1. Set **Events to Receive** to *Touch* if using the [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler) interface in your component script below.
 
 1. On that object or one of its ancestors, add a script component that implements the [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler) interface. Any ancestor of the object with the [`NearInteractionTouchableUnityUI`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchableUnityUI) will be able to receive pointer events as well.
+
+> [!IMPORTANT]
+> Objects may not behave as expected if they are located on overlapping canvas objects. To ensure consistent behavior, never overlap canvas objects in your scene.
 
 > [!IMPORTANT]
 > On the `NearInteractionTouchable` script component, for the property *Events to Receive* there are two options: *Pointer* and *Touch*. Set *Events to Receive* to *Pointer* if using the [`IMixedRealityPointerHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointerHandler) interface and set to *Touch* if using the [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler) interface in your component script that responds/handles the input events.

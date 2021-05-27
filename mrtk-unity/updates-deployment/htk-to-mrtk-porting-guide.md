@@ -1,6 +1,6 @@
 ---
-title: HTKToMRTKPortingGuide
-description: Migration from HTK to MRTK.
+title: HTK To MRTK Porting Guide
+description: Migration from HoloLens Toolkit (HTK) to Mixed Reality Toolkit (MRTK).
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
@@ -8,6 +8,8 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, HTK,
 ---
 
 # Porting guide
+
+A guide to help you with migration from HoloLens Toolkit (HTK) to Mixed Reality Toolkit (MRTK).
 
 ## Controller and hand input
 

@@ -1,5 +1,5 @@
 ---
-title: MixedRealityServiceRegistryAndIMixedRealityServiceRegistrar
+title: Mixed Reality Service Registry And IMixedRealityServiceRegistrar
 description: Documentation on MixedRealityServiceRegistry And IMixedRealityServiceRegistrar
 author: davidkline-ms
 ms.author: davidkl

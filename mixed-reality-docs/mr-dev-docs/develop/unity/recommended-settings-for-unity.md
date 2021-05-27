@@ -63,7 +63,7 @@ Further, it's recommended to select **16-bit depth** under the **Depth Format** 
 
 In order for the Windows Mixed Reality platform to optimize hologram stability, it relies on the depth buffer to be accurate and match any rendered holograms on screen. Thus, with depth buffer sharing on, it is important when rendering color, to also render depth. In Unity, most Opaque or TransparentCutout materials will render depth by default but transparent and text objects will not render depth although this is shader-dependent, etc.
 
-If using the [Mixed Reality Toolkit Standard shader](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mrtk-standard-shader.md), to render depth for transparent objects:
+If using the [Mixed Reality Toolkit Standard shader](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader), to render depth for transparent objects:
 
 1) Select the transparent material that is using the MRTK Standard shader and open the Inspector editor window
 2) Select the **Fix Now** button within the depth buffer sharing warning. This can also be performed manually by setting the **Rendering Mode** to **Custom**; then set **Mode** to **Transparent** and finally set **Depth Write** to **On**

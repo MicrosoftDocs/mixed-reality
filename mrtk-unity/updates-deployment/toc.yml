@@ -1,5 +1,3 @@
-- name: Build and Deploy
-  href: build-and-deploy.md
 - name: Upgrading from HTK
   href: htk-to-mrtk-porting-guide.md
 - name: MRTK and Managed Code Stripping

@@ -14,17 +14,13 @@ Scene understanding transforms the unstructured environment sensor data that you
 
 ## Where do I get the SDK?
 
-The SceneUnderstanding SDK is downloadable via NuGet.
-
-[SceneUnderstanding SDK](https://www.nuget.org/packages/Microsoft.MixedReality.SceneUnderstanding/)
+The SceneUnderstanding SDK is downloadable via the [Mixed Reality Feature Tool](../unity/welcome-to-mr-feature-tool.md).
 
 **Note:** the latest release depends on preview packages and you'll need to enable pre-release packages to see it.
 
 For version 0.5.2022-rc and later, Scene Understanding supports language projections for C# and C++ allowing applications to develop applications for Win32 or UWP platforms. As of this version, SceneUnderstanding supports unity in-editor support barring the SceneObserver, which is used solely for communicating with HoloLens2. 
 
 SceneUnderstanding requires Windows SDK version 18362 or higher. 
-
-If you're using the SDK in a Unity project, use [NuGet for Unity](https://github.com/GlitchEnzo/NuGetForUnity) to install the package into your project.
 
 ## Conceptual Overview
 

@@ -1,5 +1,5 @@
 ---
-title: DiagnosticsSystemGettingStarted
+title: Diagnostics System Getting Started
 description: documentation to Enable and disable diagnostics in MRTK
 author: davidkline-ms
 ms.author: davidkl

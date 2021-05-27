@@ -1,9 +1,0 @@
-- name: Detecting Platform Capabilities
-  href: detecting-platform-capabilities.md
-- name: Leap Motion MRTK
-  href: leap-motion-mrtk.md
-- name: Oculus Quest MRTK
-  href: oculus-quest-mrtk.md
-- name: Using AR Foundation
-  href: using-ar-foundation.md
-

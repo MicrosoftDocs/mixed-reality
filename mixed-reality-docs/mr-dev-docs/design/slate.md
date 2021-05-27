@@ -20,7 +20,7 @@ A slate is a thin window style control for displaying 2D content like plain text
 
 ## Slate in MRTK (Mixed Reality Toolkit) for Unity
 
-* [MRTK - Slate](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/slate.md)
+* [MRTK - Slate](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/slate)
 
 <br>
 

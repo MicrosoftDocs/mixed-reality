@@ -1,5 +1,5 @@
 ---
-title: DocumentationGuide
+title: Documentation Guide
 description: documentation guidelines and standards for the MRTK.
 author: polar-kev
 ms.author: kesemple

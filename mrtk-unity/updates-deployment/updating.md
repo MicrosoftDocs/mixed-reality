@@ -3,7 +3,7 @@ title: Updating
 description: Documentation to Migrate from lower version of MRTK.
 author: polar-kev
 ms.author: kesemple
-ms.date: 01/12/2021
+ms.date: 04/19/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
@@ -44,6 +44,8 @@ to do a version-by-version upgrade.
 ### Mixed Reality Feature Tool
 The easiest way to upgrade MRTK to a newer version MRTK is by using the [Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) to download the latest packages and load them directly to your Unity project.
 
+If the project previously used Unity asset (.unitypackage) files, please see [these instructions](#switching-from-unity-asset-files-to-mixed-reality-feature-tool). 
+
 ### Unity asset (.unitypackage) files
 
 Another upgrade path is to manually download MRTK Unity packages and apply them to your project. See the steps below,
@@ -54,11 +56,12 @@ Another upgrade path is to manually download MRTK Unity packages and apply them 
     - MRTK/Core
     - MRTK/Examples
     - MRTK/Extensions
-    > [!NOTE]
-    > If additional extensions have been installed, please make a backup prior to deleting these folders.
     - MRTK/Providers
     - MRTK/SDK
     - MRTK/Services
+    - MRTK/StandardAssets
+    > [!IMPORTANT]
+    > If modifications were made to the MRTK shaders, create a local backup before deleteing the MRTK/StandardAssets folder
     - MRTK/Tools
     > [!IMPORTANT]
     > Do NOT delete the **MixedRealityToolkit.Generated** folder, or its .meta file.
@@ -89,6 +92,38 @@ Another upgrade path is to manually download MRTK Unity packages and apply them 
    - Repeat the previous three steps for each of the migration handlers within the dropdown.
      (See [this issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8552) which covers work that can be done
      to simplify this migration process in a future release)
+
+### Switching from Unity asset files to Mixed Reality Feature Tool
+
+Switching from Unity asset files to Mixed Reality Feature Tool packages brings a number of benefits:
+
+- Easier updating
+- Faster compile times
+- Fewer projects in the Visual Studio solution
+
+Changing to using the Mixed Reality Feature Tool requires a one-time set of manual steps.
+
+1. Save a copy of your current project.
+1. Close Unity
+1. Inside the *Assets* folder, delete the following **MRTK** folders, along with their .meta files (the project may not have all listed folders)
+    - MRTK/Core
+    - MRTK/Examples
+    - MRTK/Extensions
+    - MRTK/Providers
+    - MRTK/SDK
+    - MRTK/Services
+    - MRTK/StandardAssets
+    > [!IMPORTANT]
+    > If modifications were made to the MRTK shaders, create a local backup before deleteing the MRTK/StandardAssets folder
+    - MRTK/Tools
+    > [!IMPORTANT]
+    > Do NOT delete the **MixedRealityToolkit.Generated** folder, or its .meta file.
+1. Delete the **Library** folder
+    > [!IMPORTANT]
+    > Some Unity tools, like Unity Collab, save configuration info to the Library folder. If using a tool that does this, first copy the tool's data folder from Library before deleting, then restore it after Library is regenerated.
+1. Re-open the project in Unity
+
+Once the previous steps have been performed, run the [Mixed Reality Feature Tool](#mixed-reality-feature-tool) and import the desired version of the Mixed Reality Toolkit.
 
 ## Updating 2.3.0 to 2.4.0
 
