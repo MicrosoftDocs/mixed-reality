@@ -39,19 +39,19 @@ If user's previous Experience Scale settings do not match the new Experience Set
 
 The new MRTK configurator provides users step-by-step guidance to properly configure the project for XR development and use with MRTK. It covers the selection of XR pipeline, getting the platform specific plugins, importing TextMeshPro, displaying the examples (when using UPM) and other previously included recommended settings for the project.
 
-[Configurator](images/Configurator.png)
+![Configurator](images/Configurator.png)
 
 ### Graduated Teleport Hotspot
 
 A new teleport hotspot component has been graduated. You can add a teleport hotspot to your GameObject to ensure that the user is in a certain position and orientation when they teleport to that location.
 
-[Teleport Hotspot example](images/TeleportHotspot.gif)
+![Teleport Hotspot example](images/TeleportHotspot.gif)
 
 ### Graduated Dwell
 
 The dwell feature and example is now graduated from experimental. New examples of volumetric HoloLens 2 style buttons are included in the sample scene.
 
-(use a picture from Yoon's PR)
+![Dwell hero](../features/images/dwell/MRTK_UX_Dwell.png)
 
 ### Added support for Leap Motion Unity Modules version 4.6.0, 4.7.0, 4.7.1 and 4.8.0
 
@@ -63,7 +63,7 @@ Big thanks to @jackyangzzh for contributing the new LeapMotionOrientationExample
 
 Previously, targeted speech events could only be raised on objects which were focused on with the gaze pointer. Now, objects can receive speech events if they are focused by any pointer.
 
-[Speech Events with Far Pointers](https://user-images.githubusercontent.com/39840334/117516612-6fa00500-af4e-11eb-94ba-d5fb2ed4e7de.gif)
+![Speech Events with Far Pointers](https://user-images.githubusercontent.com/39840334/117516612-6fa00500-af4e-11eb-94ba-d5fb2ed4e7de.gif)
 
 ### Ported TextToSpeech from HTK to MRTK
 
