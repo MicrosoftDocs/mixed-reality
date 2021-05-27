@@ -3,7 +3,7 @@ title: SceneUnderstanding
 description: describes Scene Understanding in MRTK
 author: MaxWang-MS
 ms.author: wangmax
-ms.date: 03/02/2021
+ms.date: 05/27/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Scene Understanding
 ---
 
@@ -17,7 +17,10 @@ Some expected use cases of this technology are:
 * Provide physics engine friendly geometry as quads
 * Accelerate development by avoiding the need to write similar algorithms
 
-Scene Understanding is available as an __experimental__ feature starting from MRTK 2.6. It is integrated into MRTK as a [spatial observer](spatial-awareness-getting-started.md#register-observers) called [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver). Scene Understanding works both with the Legacy XR pipeline and the XR SDK pipeline. In both cases the `WindowsSceneUnderstandingObserver` is used.
+Scene Understanding is introduced as an __experimental__ feature in MRTK 2.6. It is integrated into MRTK as a [spatial observer](spatial-awareness-getting-started.md#register-observers) called [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver). Scene Understanding works both with the Legacy XR pipeline and the XR SDK pipeline (both OpenXR (starting from MRTK 2.7) and Windows XR Plugin). In both cases the `WindowsSceneUnderstandingObserver` is used.
+
+> [!NOTE] 
+> Using Scene Understanding in Remoting is not supported.
 
 ## Observer overview
 
