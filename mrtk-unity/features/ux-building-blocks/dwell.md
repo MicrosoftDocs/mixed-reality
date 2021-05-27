@@ -14,7 +14,7 @@ keywords: Dwell, Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK
 Head-gaze and dwell are great in scenarios where a person's hands are busy with other tasks. The feature is also useful when voice isn't 100% reliable or available because of environmental or social constraints.
 MRTK's dwell examples demonstrate different types of UI components with configurable response time and visual feedback.
 
-Please see [Head-gaze and dwell guideline](https://docs.microsoft.com/en-us/windows/mixed-reality/design/gaze-and-dwell-head) page for the design recommendations.
+Please see [Head-gaze and dwell guideline](/windows/mixed-reality/design/gaze-and-dwell-head) page for the design recommendations.
 
 ## Dwell scripts
 
