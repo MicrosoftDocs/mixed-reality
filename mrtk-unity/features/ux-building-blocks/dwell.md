@@ -23,7 +23,7 @@ MRTK's dwell examples demonstrate different types of UI components with configur
 - **ToggleDwellPressableButton.cs** : This script modifies `_BorderWidth` property of the `dwellVisualImage` which is using MRTK Standard Shader.
 
 ## Dwell profiles
-Dwell profiles are used by dwell handler to configure the various thresholds.
+Dwell profiles are used by the **Dwell Handler** to configure the various thresholds.
 - **ButtonDwellProfile.asset**
 - **InstandDwellProfile.asset**
 - **DwellProfileWithDecay.asset**
