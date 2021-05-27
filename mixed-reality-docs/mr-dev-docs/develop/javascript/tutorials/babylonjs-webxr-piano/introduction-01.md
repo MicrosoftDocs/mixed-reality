@@ -30,7 +30,7 @@ In this tutorial series, you will learn how to:
 
 * Basic Javascript Knowledge
 * [WebXR Javascript Hello World Tutorial](../babylonjs-webxr-helloworld/introduction-01.md)
-* WebXR-supported browser, for example [Microsoft Edge](https://docs.microsoft.com/windows/mixed-reality/whats-new/new-microsoft-edge)
+* WebXR-supported browser, for example [Microsoft Edge](../../../../whats-new/new-microsoft-edge.md)
 * [Babylon.js](https://doc.babylonjs.com/divingDeeper/developWithBjs/frameworkVers) 4.2 or higher
 * Any Mixed Reality device or [Windows Mixed Reality simulator](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator)
 * Optional: [Windows 10 Creator Update](https://www.microsoft.com/software-download/windows10) if you want to use a Windows Mixed Reality Simulator
@@ -177,4 +177,4 @@ Let's begin by setting up the HTML web page that will contain the babylon.js sce
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Next tutorial: Build a piano 3D model](keyboard-model.md)
+> [Next tutorial: Build a piano 3D model](keyboard-model-02.md)
