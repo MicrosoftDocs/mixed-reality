@@ -1,3 +1,5 @@
+- name: Authors
+  href: authors.md
 - name: Contributing Overview
   href: contributing.md
 - name: Coding Guidelines
