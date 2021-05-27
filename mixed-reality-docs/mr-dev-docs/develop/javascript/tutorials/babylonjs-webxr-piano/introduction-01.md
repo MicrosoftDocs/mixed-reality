@@ -58,11 +58,16 @@ Let's begin by setting up the HTML web page that will contain the babylon.js sce
         <body>
             <canvas id="renderCanvas"></canvas>
             <script type="text/javascript">
-                const canvas = document.getElementById("renderCanvas");
-                const engine = new BABYLON.Engine(canvas, true);
-                
+                const canvas = document.getElementById("renderCanvas"); 
+                const engine = new BABYLON.Engine(canvas, true); 
+
                 createScene(engine).then(sceneToRender => {
                     engine.runRenderLoop(() => sceneToRender.render());
+                });
+        
+                // Watch for browser/canvas resize events
+                window.addEventListener("resize", function () {
+                    engine.resize();
                 });
             </script>
         </body>
@@ -118,7 +123,7 @@ Let's begin by setting up the HTML web page that will contain the babylon.js sce
     ```javascript
     const createScene = async function(engine) {
         const scene = new BABYLON.Scene(engine);
-    
+        
         const alpha =  3*Math.PI/2;
         const beta = Math.PI/50;
         const radius = 220;
@@ -152,10 +157,15 @@ Let's begin by setting up the HTML web page that will contain the babylon.js sce
             <canvas id="renderCanvas"></canvas>
             <script type="text/javascript">
                 const canvas = document.getElementById("renderCanvas");
-                const engine = new BABYLON.Engine(canvas, true);
-                
+                const engine = new BABYLON.Engine(canvas, true); 
+
                 createScene(engine).then(sceneToRender => {
                     engine.runRenderLoop(() => sceneToRender.render());
+                });
+                
+                // Watch for browser/canvas resize events
+                window.addEventListener("resize", function () {
+                    engine.resize();
                 });
             </script>
         </body>
