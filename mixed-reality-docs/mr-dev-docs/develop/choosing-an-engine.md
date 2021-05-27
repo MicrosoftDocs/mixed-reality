@@ -32,11 +32,15 @@ There are several development paths you can take through our documentation. The 
 | Language | C# | C++ | JavaScript | C/C++ |
 | Pricing | [Unity pricing](https://store.unity.com/#plans-individual) | [Unreal pricing](https://www.unrealengine.com/download) | Free | Free |
 
+<br>
+
 | Device features | Unity | Unreal | Babylon | Native (OpenXR) |
 |---|---|---|---|---|
 | Hand, eye, voice input | ✔️ | ✔️ | ? | ✔️ |
 | Plane and mesh detection | ✔️ | ✔️ | ? | ✔️ |
 <!-- Ratify with standalone unity features table -->
+
+<br>
 
 | Hardware | Unity | Unreal | Babylon | Native (OpenXR) |
 |---|---|---|---|---|
@@ -46,10 +50,14 @@ There are several development paths you can take through our documentation. The 
 | Oculus Quest | ✔️ | ✔️ | ✔️ | ✔️ |
 <!-- iOS/Android/Magic Leap/SteamVR/Oculus Desktop -->
 
+<br>
+
 | Tools and SDKs | Unity | Unreal | Babylon | Native (OpenXR) |
 |---|---|---|---|---|
 | Mixed Reality Toolkit | ✔️ | ✔️ | ❌ | ❌ |
 | Mesh | ✔️ | ❌ | ❌ | ❌ |
+
+<br>
 
 | Cloud services | Unity | Unreal | Babylon | Native (OpenXR) |
 |---|---|---|---|---|

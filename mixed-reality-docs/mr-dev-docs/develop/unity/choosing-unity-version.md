@@ -24,7 +24,7 @@ However, there are known issues that affect hologram stability and other feature
 If you choose to use Unity 2020, be sure to upgrade to Unity 2020.3.6f1 or later versions to ensure your user experience proper hologram stability.
 
 > [!div class="nextstepaction"]
-> [Using the Windows XR plugin](/windows/mixed-reality/develop/unity/xr-project-setup?tabs=windowsxr#manual-setup-without-mrtk)
+> [Using the Windows XR plugin](/windows/mixed-reality/develop/unity/xr-project-setup?tabs=windowsxr)
 
 ### Using OpenXR
 
@@ -35,7 +35,7 @@ The Mixed Reality OpenXR plugin fully supports AR Foundation 4.0, providing ARPl
 Later this year, **Unity 2020.3 LTS with the OpenXR plugin** will become the recommended Unity configuration, and future HoloLens 2 features in Unity will be exposed only through this plugin.
 
 > [!div class="nextstepaction"]
-> [Using the OpenXR plugin](/windows/mixed-reality/develop/unity/xr-project-setup?tabs=openxr#manual-setup-without-mrtk)
+> [Using the OpenXR plugin](/windows/mixed-reality/develop/unity/xr-project-setup?tabs=openxr)
 
 ## Unity 2019.4 LTS
 
@@ -61,7 +61,7 @@ The best way to install and manage Unity is through the <a href="https://unity3d
 To get started with Legacy Built-in XR in Unity 2019.4 LTS, click here:
 
 > [!div class="nextstepaction"]
-> [Set up Legacy Built-in XR](/windows/mixed-reality/develop/unity/xr-project-setup?tabs=legacy#manual-setup-without-mrtk)
+> [Set up Legacy Built-in XR](/windows/mixed-reality/develop/unity/xr-project-setup?tabs=legacy)
 
 > [!NOTE]
 > Unity has deprecated its Legacy Built-in XR support as of Unity 2019.  While Unity 2019 does offer a new XR Plug-in framework, Microsoft is not currently recommending that path in Unity 2019 due to Azure Spatial Anchors incompatibilities with AR Foundation 2.  In Unity 2020, Azure Spatial Anchors is supported within the XR Plug-in framework.
