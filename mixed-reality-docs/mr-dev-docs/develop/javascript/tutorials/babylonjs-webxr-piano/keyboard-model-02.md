@@ -14,7 +14,7 @@ ms.localizationpriority: high
 
 In the previous tutorial in the series, we have setup a web page containing a babylon.js scene with a camera and a light. In this tutorial, we will be building and adding a piano model into the scene.
 
-![Standup Piano Mesh](../images/standup-piano-mesh.png)
+![Standup Piano Mesh](./images/standup-piano-mesh.png)
 
 In this tutorial, you will learn how to:
 
@@ -80,7 +80,7 @@ const createScene = async function(engine) {
 
 Let's begin by making a simple piano keyboard which has this structure:
 
-![Piano octave description](../images/piano-octave.jpg)
+![Piano octave description](./images/piano-octave.jpg)
 
 In this image, there are 7 white keys and 5 black keys, each labeled with the note's name. A full 88-key piano keyboard contains 7 full repetitions of this selection of keys (also called an register) and 4 extra keys. Every register has double the frequency of its previous register. For example, the pitch frequency of C5 (which means the C note in the fifth register) is double of C4's, D5's pitch frequency is double of D4's, and so on.
 
@@ -90,11 +90,11 @@ Visually, each register looks exactly the same as another, so we can start with 
 
 1. Before we begin to create meshes for building the keyboard, notice that each black key is not perfectly aligned at the middle of the two white keys around it and that not every key has the same width, so we must create and position the mesh for each key individually.
 
-    ![Black Key Alignment](../images/black-key-position.png)
+    ![Black Key Alignment](./images/black-key-position.png)
 
 1. For white keys, we can make an observation that each white key is composed of two parts: (1) the bottom part below the neighboring black key(s) and (2) the top part next to the neighboring black key(s). The two parts have different dimensions but are stacked together to crete a full white key.
 
-    ![White Key Shape](../images/white-key-shape-label.png)
+    ![White Key Shape](./images/white-key-shape-label.png)
 
 1. This would be the code for creating a single white key for the note C (don't worry about adding this into *scene.js* yet):
 
@@ -111,7 +111,7 @@ Visually, each register looks exactly the same as another, so we can start with 
 
     Here we created two [Box](https://doc.babylonjs.com/divingDeeper/mesh/creation/set/box#box-mesh) meshes, one for the bottom part and one for the top part of the white key. We then modify the position of the top part to make it stacked on top of the bottom part and to put it towards the left to leave space for the neighboring black key (C#). Finally, these two parts were merged using the [MergeMeshes](https://doc.babylonjs.com/divingDeeper/mesh/mergeMeshes) function to become one complete white key. This is the resulting mesh that this code would produce:
 
-    ![White Key C](../images/white-key-c.png)
+    ![White Key C](./images/white-key-c.png)
 
 1. Creating a black key is simpler. Since all black keys are of the shape of a box, we can create a black key just by creating a box mesh, adding a black-colored [StandardMaterial](https://doc.babylonjs.com/divingDeeper/materials/using/materials_introduction#color) to it.
 
@@ -133,7 +133,7 @@ Visually, each register looks exactly the same as another, so we can start with 
 
     The resulting black key produced by this code (along with the previous white key) would look like this:
 
-    ![Black Key C#](../images/black-key-csharp.png)
+    ![Black Key C#](./images/black-key-csharp.png)
 
 1. As you can see, creating each key can result in a lot of similar code since we have to specify each of their dimensions and position. Let's try to make the creation process more efficient in the next section.
 
@@ -238,7 +238,7 @@ Visually, each register looks exactly the same as another, so we can start with 
 
 1. This is what the resulting keyboard would look like:
 
-    ![Piano Keyboard with One Register](../images/piano-one-register.png)
+    ![Piano Keyboard with One Register](./images/piano-one-register.png)
 
 ## Expanding to an 88-key piano
 
@@ -246,7 +246,7 @@ In this section, let's expand the usage of the key-creation functions we wrote i
 
 1. As mentioned earlier, a full, 88-key piano keyboard contains 7 repeated registers and 4 other notes. 3 of those extra notes are in register 0 (left end of the keyboard), and 1 is in register 8 (right end of the keyboard).
 
-    ![88-key piano layout](../images/88-key-piano-keyboard-layout.jpg)
+    ![88-key piano layout](./images/88-key-piano-keyboard-layout.jpg)
 
 1. We will first work on building the 7 full repetitions by adding an additional loop around the loop we wrote earlier. Replace the previous loop for the `key.build()` function with the following code:
 
@@ -280,7 +280,7 @@ In this section, let's expand the usage of the key-creation functions we wrote i
 
 1. The keyboard produced should look like this after the changes are made:
 
-    ![Full Piano Keyboard Mesh](../images/full-keyboard-mesh.png)
+    ![Full Piano Keyboard Mesh](./images/full-keyboard-mesh.png)
 
 ## Adding a piano frame
 
@@ -405,7 +405,7 @@ In this section, let's expand the usage of the key-creation functions we wrote i
     ```
 
 1. Now we should have a standup piano which looks like this:
-![Standup Piano Mesh](../images/standup-piano-mesh.png)
+![Standup Piano Mesh](./images/standup-piano-mesh.png)
 
 ## Next steps
 

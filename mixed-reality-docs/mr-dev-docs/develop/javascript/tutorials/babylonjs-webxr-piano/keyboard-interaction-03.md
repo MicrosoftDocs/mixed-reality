@@ -228,7 +228,7 @@ Right now, the piano keyboard we have created is a static model that does not re
 
 1. Here's what the interaction would look like with the code above:
 
-    ![Interactive Piano Keys](../images/interactive-piano-keys.gif)
+    ![Interactive Piano Keys](./images/interactive-piano-keys.gif)
 
 1. Now let's work on playing and stopping a sound when a key is pressed and released. To achieve this, we will be utilizing a Javascript library named **soundfont-player**, which allows us to easily play MIDI sounds of an instrument we choose. [Download the minified code of the library](https://github.com/JING1201/babylonjs-exploration/blob/89f60cf8fbc3a3d64afce70026cde0513ed59075/piano-keys/soundfont-player.min.js), save it in the same folder as *index.html*, and include it in the `<header>` tag in *index.html*:
 
@@ -304,7 +304,7 @@ By now, you have probably already played with the piano with your mouse (or even
 
 1. Once you are in the virtual space, you might notice that the piano we have built is extremely huge. In the VR world, we can only standing at the bottom of it and can only play it by pointing the pointer to the keys in the distant.
 
-    ![Huge piano](../images/huge-piano.jpg)
+    ![Huge piano](./images/huge-piano.jpg)
 
 1. Let's scale down the piano so that we can play it like a normal standup piano in real life. To do so, we would have to utilize [a utility function that allows us to scale a mesh relative to a point in the space](https://doc.babylonjs.com/toolsAndResources/utilities/Pivot#enlargement). Add this function to *scene.js* (outside of `createScene()`):
 
@@ -379,48 +379,52 @@ By now, you have probably already played with the piano with your mouse (or even
 
 1. Now when we enter the VR space again, the piano would be of the size of an ordinary standup piano.
 
-    ![Normal standup piano in VR](../images/normal-standup-piano.jpg)
+    ![Normal standup piano in VR](./images/normal-standup-piano.jpg)
 
 ## Enabling WebXR features
 
 Now that we have scaled the piano to the right size in the VR space, let's enable some cool WebXR features to improve our piano-playing experience in the space.
 
-1. If you were playing the piano using your two immersive VR controllers, you might have noticed that you can only use one controller at a time. Let's enable the [multi-pointer support](https://doc.babylonjs.com/typedoc/interfaces/babylon.iwebxrcontrollerpointerselectionoptions) in the XR space by using babylon.js's [WebXR features manager](https://doc.babylonjs.com/divingDeeper/webXR/webXRFeaturesManager). 
+1. If you have been playing the piano using your immersive VR controllers, you might have noticed that you can only use one controller at a time. Let's enable the [multi-pointer support](https://doc.babylonjs.com/typedoc/interfaces/babylon.iwebxrcontrollerpointerselectionoptions) in the XR space by using babylon.js's [WebXR features manager](https://doc.babylonjs.com/divingDeeper/webXR/webXRFeaturesManager). 
 
     Add the following code into the `createScene()` function, after the `xrHelper` initialization line:
 
     ```javascript
     const featuresManager = xrHelper.baseExperience.featuresManager;
+
     const pointerSelection = featuresManager.enableFeature(BABYLON.WebXRFeatureName.POINTER_SELECTION, "stable", {
         xrInput: xrHelper.input,
         enablePointerSelectionOnAllControllers: true        
     });
     ```
 
-1. Additionally, depending on where your starting point is, you might find it a little difficult to position yourself in front of the piano. If you are already familiar with the immersive VR environment, you might already know about **teleportation**, which is a feature that allows you to move to another spot in the space instantly by pointing at it.
+1. Additionally, depending on where your starting point is, you might find it a little difficult to position yourself in front of the piano. If you are familiar with the immersive VR environment, you might already know about **teleportation**, which is a feature that allows you to move to another spot in the space instantly by pointing at it.
 
-1. In order to use the teleportation feature, we first need to have a ground mesh where people can "stand on" in the VR space. Add the following code to the `createScene()` function to create a ground:
+1. In order to use babylon.js's [teleportation feature](https://doc.babylonjs.com/divingDeeper/webXR/WebXRSelectedFeatures#teleportation-module), we first need to have a ground mesh that we can "stand on" in the VR space. Add the following code to the `createScene()` function to create a ground:
 
     ```javascript
-    const ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 400*scale, height: 400*scale});
+    const ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 400, height: 400});
     ```
 
-1. The teleportation support also comes with a very useful feature called snap-to positions. In short, snap-to positions are specific positions that we want users to land at. For example, we can set a snap-to position in front of the piano so that users can easily teleport to the specific location when they point their pointers close to the piano. Append the follow snippet below to enable the teleportation feature while specifying a snap-to point:
+1. The teleportation support also comes with a very useful feature called [snap-to positions](https://doc.babylonjs.com/divingDeeper/webXR/WebXRSelectedFeatures#snap-to-hotspots). In short, snap-to positions are specific positions that we want users to land at.For example, we can set a snap-to position in front of the piano so that users can easily teleport to the specific location when they point their pointers close to the piano.
+
+    Append the code below to enable the teleportation feature and specify a snap-to point:
 
     ```javascript
-    
     const teleportation = featuresManager.enableFeature(BABYLON.WebXRFeatureName.TELEPORTATION, "stable", {
         xrInput: xrHelper.input,
         floorMeshes: [ground],
-        snapPositions: [new BABYLON.Vector3(2.4*3.5/scale, 0, -10/scale)],
+        snapPositions: [new BABYLON.Vector3(2.4*3.5*scale, 0, -10*scale)],
     });
     ```
 
-1. Now, you should be able to easily position yourself in front of the piano by teleporting to the snap-to point in front of the piano, and you should be able to press on two keys at a time using both controllers.
+1. Now, you should be able to easily position yourself in front of the piano by teleporting to the snap-to point in front of the piano, and you should be able to play two keys at a time using both controllers.
+
+    ![Teleportation to piano](./images/teleportation-piano.png)
 
 ## (Optional) Enabling hand-tracking
 
-Babylon.js's hand tracking support, which is currently only available on Oculus Quest 1 and 2, will allow you to play on the piano in the XR space using just your hands!
+If your mixed reality device supports hand-tracking, you will be able to play on the piano in the VR space using just your hands!
 
 You can enable this feature by adding the following block of code to `createScene()`:
 
@@ -434,134 +438,116 @@ const handTracking = featuresManager.enableFeature(BABYLON.WebXRFeatureName.HAND
 
 Great job following through the tutorial series. Here is the final code for *scene.js* and *index.html*:
 
-*scene.js*
-```javascript
-const scale = 65;
-const keyHeight = 80;
+### *scene.js*
 
+```javascript
 const WhiteKey = function (note, topWidth, bottomWidth, topPositionX, wholePositionX) {
     return {
-        note: note,
-        topWidth: topWidth,
-        bottomWidth: bottomWidth,
-        topPositionX: topPositionX,
-        wholePositionX: wholePositionX,
+        build(scene, register, referencePositionX) {
+            // Create bottom part
+            var bottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: bottomWidth, height: 1.5, depth: 4.5}, scene);
 
-        build(scene, octave, referencePositionX) {
-            var bottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: bottomWidth/scale, height: 1.5/scale, depth: 4.5/scale}, scene);
-            var top = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: topWidth/scale, height: 1.5/scale, depth: 5/scale}, scene);
-            top.position.z =  4.75/scale;
-            top.position.x += topPositionX/scale;
+            // Create top part
+            var top = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: topWidth, height: 1.5, depth: 5}, scene);
+            top.position.z =  4.75;
+            top.position.x += topPositionX;
 
+            // Merge bottom and top parts
             const key = BABYLON.Mesh.MergeMeshes([bottom, top], true, false, null, false, false);
-            key.position.x = referencePositionX/scale + wholePositionX/scale;
-            key.name = note+octave;
-            
-            key.position.y += keyHeight/scale;
+            key.position.x = referencePositionX + wholePositionX;
+            key.name = note + register;
 
             return key;
         }
     }
 }
 
-const BlackKey = function (note, positionX) {
+const BlackKey = function (note, wholePositionX) {
     return {
-        note: note,
-        positionX: positionX,
-
-        build(scene, octave, referencePositionX) {
+        build(scene, register, referencePositionX) {
+            // Create black color material
             const blackMat = new BABYLON.StandardMaterial("black");
             blackMat.diffuseColor = new BABYLON.Color3(0, 0, 0);
-
-            const key = BABYLON.MeshBuilder.CreateBox(note+octave, {width: 1.4/scale, height: 2/scale, depth: 5/scale}, scene);
-            key.position.z += 4.75/scale;
-            key.position.y += 0.25/scale;
-            key.position.x = referencePositionX/scale + positionX/scale;
-            key.material = blackMat;
             
-            key.position.y += keyHeight/scale;
+            // Create black key
+            const key = BABYLON.MeshBuilder.CreateBox(note + register, {width: 1.4, height: 2, depth: 5}, scene);
+            key.position.z += 4.75;
+            key.position.y += 0.25;
+            key.position.x = referencePositionX + wholePositionX;
+            key.material = blackMat;
 
             return key;
         }
     }
 }
 
-const buildFrame = function(scene, leftPositionX, rightPositionX) {
-    const frameLeft = BABYLON.MeshBuilder.CreateBox("frameLeft", {width: 2.4/scale, height: (keyHeight+2)/scale, depth: 15/scale}, scene);
-    frameLeft.position = new BABYLON.Vector3(leftPositionX/scale, (keyHeight+2)/2/scale, 4/scale);
-    const frameRight = BABYLON.MeshBuilder.CreateBox("frameRight", {width: 2.4/scale, height: (keyHeight+2)/scale, depth: 15/scale}, scene);
-    frameRight.position = new BABYLON.Vector3(rightPositionX/scale, (keyHeight+2)/2/scale, 4/scale);
-    const frameBack = BABYLON.MeshBuilder.CreateBox("frameBack", {width: (2.4*52)/scale, height: (keyHeight+10)/scale, depth: 5/scale}, scene);
-    frameBack.position = new BABYLON.Vector3(2.4*3.5/scale, (keyHeight+10)/2/scale, 9/scale);
-    const wingLeft = BABYLON.MeshBuilder.CreateBox("wingLeft", {width: 2.4/scale, height: 8/scale, depth: 5/scale}, scene);
-    wingLeft.position =  new BABYLON.Vector3(leftPositionX/scale, (keyHeight+6)/scale, 9/scale);
-    const wingRight = BABYLON.MeshBuilder.CreateBox("wingRight", {width: 2.4/scale, height: 8/scale, depth: 5/scale}, scene);
-    wingRight.position =  new BABYLON.Vector3(rightPositionX/scale, (keyHeight+6)/scale, 9/scale);
-    
-    const frame = BABYLON.Mesh.MergeMeshes([frameLeft, frameRight, frameBack, wingLeft, wingRight], true, false, null, false, false);
-    const frameMat = new BABYLON.StandardMaterial("frameMat");
-    frameMat.diffuseColor = new BABYLON.Color3(0, 0, 0);
-    frame.material = frameMat;
-
-    return frame;
+BABYLON.Mesh.prototype.scaleFromPivot = function(pivotPoint, sx, sy, sz) {
+    var _sx = sx / this.scaling.x;
+    var _sy = sy / this.scaling.y;
+    var _sz = sz / this.scaling.z;
+    this.scaling = new BABYLON.Vector3(sx, sy, sz); 
+    this.position = new BABYLON.Vector3(pivotPoint.x + _sx * (this.position.x - pivotPoint.x), pivotPoint.y + _sy * (this.position.y - pivotPoint.y), pivotPoint.z + _sz * (this.position.z - pivotPoint.z));
 }
 
-
-
-const createScene = async function (engine) {
+const createScene = async function(engine) {
     const scene = new BABYLON.Scene(engine);
+    const scale = 0.015;
 
     const alpha =  3*Math.PI/2;
     const beta = Math.PI/50;
-    const radius = 220/scale;
+    const radius = 220*scale;
     const target = new BABYLON.Vector3(0, 0, 0);
     
     const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target, scene);
     camera.attachControl(canvas, true);
-
-    // This creates a light, aiming 0,1,0 - to the sky (non-mesh)
+    
     const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
-
-    // Default intensity is 1. Let's dim the light a small amount
     light.intensity = 0.6;
 
     const keyParams = [
-        WhiteKey("C", 1.4, 2.3, -0.45, -2.4*6),
-        BlackKey("C#", -2.4*6+0.95),
-        WhiteKey("D", 1.4, 2.4, 0, -2.4*5),
-        BlackKey("D#", -2.4*6+0.95+2.85),
-        WhiteKey("E", 1.4, 2.3, 0.45, -2.4*4),
-        WhiteKey("F", 1.3, 2.4, -0.55, -2.4*3),
-        BlackKey("F#", -2.4*6+0.95+0.45 + 2.4 * 2 + 1.85),
-        WhiteKey("G", 1.3, 2.3, -0.2, -2.4*2),
-        BlackKey("G#", -2.4*6+0.95+0.45 + 2.4 * 2 + 1.85 + 2.75),
-        WhiteKey("A", 1.3, 2.3, 0.2, -2.4*1),
-        BlackKey("A#", -2.4*6+0.95+0.45 + 2.4 * 2 + 1.85 + 2.75 *2),
+        WhiteKey("C", 1.4, 2.3, -0.45, -14.4),
+        BlackKey("C#", -13.45),
+        WhiteKey("D", 1.4, 2.4, 0, -12),
+        BlackKey("D#", -10.6),
+        WhiteKey("E", 1.4, 2.3, 0.45, -9.6),
+        WhiteKey("F", 1.3, 2.4, -0.55, -7.2),
+        BlackKey("F#", -6.35),
+        WhiteKey("G", 1.3, 2.3, -0.2, -4.8),
+        BlackKey("G#", -3.6),
+        WhiteKey("A", 1.3, 2.3, 0.2, -2.4),
+        BlackKey("A#", -0.85),
         WhiteKey("B", 1.3, 2.4, 0.55, 0)
     ]
-
+    
     const keys = new Set();
 
-    //Octave 0
-    keys.add(WhiteKey("A", 1.9, 2.3, -0.20, -2.4).build(scene, 0, -2.4*21))
-    keyParams.slice(10, 12).forEach(key => {
-        keys.add(key.build(scene, 0, -2.4*21))
-    })
-
-    //Octave 1-7
+    // Register 1 through 7
     var referencePositionX = -2.4*14;
-    for (var octave=1; octave<=7; octave++) {
+    for (var octave = 1; octave <= 7; octave++) {
         keyParams.forEach(key => {
             keys.add(key.build(scene, octave, referencePositionX))
         })
         referencePositionX += 2.4*7;
     }
 
-    //Octave 8
-    keys.add(WhiteKey("C", 2.3, 2.3, 0, -2.4*6).build(scene, 8, referencePositionX))
+    // Register 0
+    keys.add(WhiteKey("A", 1.9, 2.3, -0.20, -2.4).build(scene, 0, -2.4*21))
+    keyParams.slice(10, 12).forEach(key => {
+        keys.add(key.build(scene, 0, -2.4*21))
+    })
+    
+    // Register 8
+    keys.add(WhiteKey("C", 2.3, 2.3, 0, -2.4*6).build(scene, 8, 84))
 
-    // Piano Frame
-    const frame = buildFrame(scene, -2.4*23, referencePositionX-2.4*5)
+    keys.forEach(key => {
+        key.position.y += 80;
+        key.scaleFromPivot(new BABYLON.Vector3(0, 0, 0), scale, scale, scale);
+    })
+    
+    BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/JING1201/babylonjs-exploration/main/piano-keys/", "pianoFrame.babylon", scene, function(meshes) {
+        const frame = meshes[0];
+        frame.scaleFromPivot(new BABYLON.Vector3(0, 0, 0), scale, scale, scale);
+    });
 
     const pointerToKey = new Map()
     const piano = await Soundfont.instrument(new AudioContext(), 'acoustic_grand_piano');
@@ -573,7 +559,7 @@ const createScene = async function (engine) {
                     const pickedMesh = pointerInfo.pickInfo.pickedMesh;
                     const pointerId = pointerInfo.event.pointerId;
                     if (keys.has(pickedMesh)) {
-                        pickedMesh.position.y -= 0.5/scale;
+                        pickedMesh.position.y -= 0.5*scale;
                         pointerToKey.set(pointerId, {
                             mesh: pickedMesh,
                             note: piano.play(pointerInfo.pickInfo.pickedMesh.name)
@@ -584,7 +570,7 @@ const createScene = async function (engine) {
             case BABYLON.PointerEventTypes.POINTERUP:
                 const pointerId = pointerInfo.event.pointerId;
                 if (pointerToKey.has(pointerId)) {
-                    pointerToKey.get(pointerId).mesh.position.y += 0.5/scale;
+                    pointerToKey.get(pointerId).mesh.position.y += 0.5*scale;
                     pointerToKey.get(pointerId).note.stop();
                     pointerToKey.delete(pointerId);
                 }
@@ -593,24 +579,21 @@ const createScene = async function (engine) {
 
     });
 
-    const groundMat = new BABYLON.StandardMaterial("groundMat");
-    groundMat.diffuseColor = new BABYLON.Color3(1, 1, 1);
-    const ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 400/scale, height: 400/scale});
-    ground.material = groundMat;
-
     const xrHelper = await scene.createDefaultXRExperienceAsync();
-    
+
     const featuresManager = xrHelper.baseExperience.featuresManager;
 
-    const pointerSelection = featuresManager.enableFeature(BABYLON.WebXRFeatureName.POINTER_SELECTION, "stable" /* or latest */, {
+    const pointerSelection = featuresManager.enableFeature(BABYLON.WebXRFeatureName.POINTER_SELECTION, "stable", {
         xrInput: xrHelper.input,
         enablePointerSelectionOnAllControllers: true        
     });
 
+    const ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 400, height: 400});
+
     const teleportation = featuresManager.enableFeature(BABYLON.WebXRFeatureName.TELEPORTATION, "stable", {
         xrInput: xrHelper.input,
         floorMeshes: [ground],
-        snapPositions: [new BABYLON.Vector3(2.4*3.5/scale, 0, -10/scale)],
+        snapPositions: [new BABYLON.Vector3(2.4*3.5*scale, 0, -10*scale)],
     });
 
     const handTracking = featuresManager.enableFeature(BABYLON.WebXRFeatureName.HAND_TRACKING, "latest", {
@@ -618,10 +601,11 @@ const createScene = async function (engine) {
     });
 
     return scene;
-};
+}
 ```
 
-*index.html*
+### *index.html*
+
 ```html
 <html>
     <head>
@@ -658,19 +642,16 @@ const createScene = async function (engine) {
 </html>
 ```
 
-<!-- 7. Next steps
-Required: A single link in the blue box format. Point to the next logical tutorial 
-in a series, or, if there are no other tutorials, to some other cool thing the 
-customer can do. 
--->
-
 ## Next steps
 
-Congratulations! You've completed our series of babylon.js tutorials and learned how to:
+Congratulations! You've completed our series of the babylon.js piano-building tutorial and learned how to:
+
 > [!div class="checklist"]
-> * Create, position, and merge meshes to build a model of a piano
+> * Create, position, and merge meshes to build a model of a piano keyboard
+> * Import a babylon.js model of a standup piano frame
 > * Add pointer interactions to each piano key
+> * Scale the size of meshes based on a pivot point
 > * Enable key WebXR features such as teleportation and multipointer support
-> * (Optional) Enable hand tracking WebXR feature when viewing on Oculus Quest
+> * (Optional) Enable hand tracking WebXR feature
 
 For more information on Mixed Reality JavaScript development see [JavaScript development overview](/javascript-development-overview.md).
