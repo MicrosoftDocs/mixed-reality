@@ -133,11 +133,11 @@ If the user moves the controllers out of the headset's field of view, Windows co
 
 At this point, the system will body-lock the controller to the user, tracking the user's position as they move around, while still exposing the controller's true orientation using its internal orientation sensors. Many apps that use controllers to point at and activate UI elements can operate normally while in approximate accuracy without the user noticing.
 
-The best way to get a feel for this is to try it yourself. Check out this video with examples of immersive content that works with motion controllers across various tracking states:
+<!-- The best way to get a feel for this is to try it yourself. Check out this video with examples of immersive content that works with motion controllers across various tracking states:
 
 <br>
 
- >[!VIDEO https://www.youtube.com/embed/QK_fOFDHj0g]
+ >[!VIDEO https://www.youtube.com/embed/QK_fOFDHj0g] -->
 
 ### Reasoning about tracking state explicitly
 
@@ -431,7 +431,7 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 
 ## Motion Controllers in MRTK
 
-You can access [gesture and motion controller](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/controllers.md) from the input Manager.
+You can access [gesture and motion controller](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/controllers) from the input Manager.
 
 ## Follow along with tutorials
 

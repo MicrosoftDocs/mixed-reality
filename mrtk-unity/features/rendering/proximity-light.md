@@ -1,5 +1,5 @@
 ---
-title: ProximityLight
+title: Proximity Light
 description: Documentation on Proximity Light with Examples in MRTK
 author: keveleigh
 ms.author: kurtie

@@ -1,5 +1,5 @@
 ---
-title: ScrolingObjectCollection
+title: Scrolling Object Collection
 description: Overview Menu types MRTK
 author: vaoliva
 ms.author: vaolivaa

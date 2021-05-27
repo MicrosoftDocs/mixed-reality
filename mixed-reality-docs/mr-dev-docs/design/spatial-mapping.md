@@ -59,6 +59,14 @@ These volumes may be stationary (in a fixed location based on the real world) or
 
 As the HoloLens gathers new data about the environment, and as changes to the environment occur, spatial surfaces will appear, disappear, and change.
 
+## Spatial Awareness design concepts demo
+
+If you'd like to see Spatial Awareness design concepts in action, check out our **Designing Holograms - Spatial Awareness** video demo below. When you've finished, continue on for a more detailed dive into specific topics.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
+
+*This video was taken from the "Designing Holograms" HoloLens 2 app. Download and enjoy the full experience [here](https://aka.ms/dhapp).*
+
 ## Spatial Mapping vs. Scene Understanding WorldMesh
 
 For HoloLens 2, it's possible to query a static version of the spatial mapping data using [Scene understanding SDK](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md) (EnableWorldMesh setting). Here are the differences between two ways of accessing the spatial mapping data:

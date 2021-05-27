@@ -1,5 +1,5 @@
 ---
-title: EyeTracking_IsUserCalibrated
+title: Eye Calibration
 description: How to Setup User Eye Calibration in MRTK
 author: CDiaz-MS
 ms.author: cadia 

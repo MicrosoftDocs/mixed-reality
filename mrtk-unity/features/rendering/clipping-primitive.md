@@ -1,5 +1,5 @@
 ---
-title: ClippingPrimitive
+title: Clipping Primitive
 description: Documentation on Clipping Primitives with Examples in MRTK
 author: keveleigh
 ms.author: kurtie

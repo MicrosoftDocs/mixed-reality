@@ -44,7 +44,7 @@ Just like truly head-locked content, tag-along objects can prove overwhelming or
 ## Billboarding and Tag-along in MRTK (Mixed Reality Toolkit) for Unity
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides scripts for the Billboarding and tag-along behavior. Assign the Billboard.cs script onto any object to add billboarding behavior and make the object always face you. To add tag-along behavior, use the RadialView.cs script. You can adjust various options such as lerping time, distance, and degree.
 
-* [MRTK - Radial View Solver](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/solvers/solver.md#radialview)
+* [MRTK - Radial View Solver](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver#radialview)
 * [MRTK - Billboard script](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Scripts/Utilities/Billboard.cs)
 
 

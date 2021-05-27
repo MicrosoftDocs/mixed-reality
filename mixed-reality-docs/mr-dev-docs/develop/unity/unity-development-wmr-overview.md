@@ -29,13 +29,23 @@ There are a small set of Unity settings you'll need to manually change for Windo
 |  Checkpoint  |  Outcome  |
 | --- | --- |
 | [Install the latest tools](../install-the-tools.md) | Download and install the latest Unity package and setup your project for mixed reality |
-| [Configuring your project for WMR](configure-unity-project.md) | Learn how to build applications that render digital content on holographic and VR display devices |
+| [Configuring your project for WMR](windows-xr-plugin.md) | Learn how to build applications that render digital content on holographic and VR display devices |
+
+> [!IMPORTANT]
+> Check out our Unity project [configuration guide](choosing-unity-version.md) for more information on setting up your projects.
 
 ### 2. Core building blocks
 
 After starting a new immersive project, you'll need some basic building blocks to develop immersive apps. All of the core building blocks for mixed reality applications are exposed in a manner consistent with other Unity APIs. You might not need all of them at once, but we recommend exploring early on. After diving into the core building blocks listed below, you'll have a toolbox full of features you can integrate into a VR project.
 
-[!INCLUDE[](../includes/unity-building-blocks-wmr.md)]
+|  Feature  |  Capabilities  |
+| --- | --- |
+| [Camera](../unity/camera-in-unity.md) | Fully optimize visual quality and hologram stability in your Mixed Reality apps |
+| [World locking and spatial anchors](spatial-anchors-in-unity.md) | Solve stabilization issues, camera adjustment, and integrate a stable coordinate system solution || [Motion controllers](../unity/motion-controllers-in-unity.md) | Add spatial actions to your Mixed Reality apps |
+| [Gestures](../unity/gestures-in-unity.md) | Use hand gestures as input in your Mixed Reality experiences |
+| [Spatial sound](../unity/spatial-sound-in-unity.md) | Enhance your apps with immersive 3D audio |
+| [Text](../unity/text-in-unity.md) | Get sharp, high-quality text that has a manageable size and quality rendering |
+| [Voice input](../unity/voice-input-in-unity.md) | Capture spoken keywords, phrases, and dictation from your users|
 
 ### 3. Advanced features
 

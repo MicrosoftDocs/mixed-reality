@@ -9,7 +9,7 @@
 ### [Plug in your headset](plug-in-your-headset.md)
 ### [Install Windows Mixed Reality](install-windows-mixed-reality.md)
 ### [Set up Windows Mixed Reality](set-up-windows-mixed-reality.md)
-### [Windows Mixed Reality Setup FAQ](wmr-setup-faq.md)
+### [Windows Mixed Reality Setup FAQ](wmr-setup-faq.yml)
 
 ## Using Windows Mixed Reality
 ### [Learning experience in Mixed Reality](learn-mixed-reality.md)
@@ -20,10 +20,10 @@
 ### [Using SteamVR](using-steamvr-with-windows-mixed-reality.md)
 ### [Using Microsoft Edge](using-microsoft-edge.md)
 ### [What is WebVR](webvr.md)
-### [Using Windows Mixed Reality FAQ](using-wmr-faq.md)
+### [Using Windows Mixed Reality FAQ](using-wmr-faq.yml)
 
-## Troubleshooting and FAQs
-### [FAQ overview](troubleshooting-windows-mixed-reality.md)
+## Troubleshooting & FAQ
+### [Troubleshoot in Windows Mixed Reality](troubleshooting-windows-mixed-reality.md)
 ### [Filing bugs and feedback](filing-feedback.md)
 ### [Error codes](error-codes.md)
 ### [Installation errors](installation_errors.md)
@@ -37,8 +37,8 @@
 ### [SteamVR](steamvr-questions.md)
 ### [Tracking system](tracking.md)
 ### [WebVR](webvr-questions.md)
-### [Other questions](other-questions.md)
-### [HP Reverb G2 FAQ](reverbG2-faq.md)
+### [Immersive hardware FAQ](other-questions.md)
+### [HP Reverb G2 FAQ](reverbG2-faq.yml)
 
 ## Resources
 ### [Immersive headset health, safety, and comfort](wmr-health-safety-comfort.md)

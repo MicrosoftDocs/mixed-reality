@@ -1,5 +1,5 @@
 ---
-title: HandTracking
+title: Hand Tracking
 description: Documentation on how to use HandTracking in MRTK
 author: keveleigh
 ms.author: kurtie
@@ -19,7 +19,7 @@ The _Hand Tracking profile_ is found under the _Input System profile_. It contai
 
 Joint prefabs are visualized using simple prefabs. The _Palm_ and _Index Finger_ joints are of special importance and have their own prefab, while all other joints share the same prefab.
 
-By default the hand joint prefabs are simple geometric primitives. These can be replaced if desired. If no prefab is specified at all, empty [GameObjects](href:https://docs.unity3d.com/ScriptReference/GameObject.html) are created instead.
+By default the hand joint prefabs are simple geometric primitives. These can be replaced if desired. If no prefab is specified at all, empty [GameObjects](https://docs.unity3d.com/ScriptReference/GameObject.html) are created instead.
 
 > [!WARNING]
 > Avoid using complex scripts or expensive rendering in joint prefabs, since joint objects are transformed on every frame and can have significant performance cost!
