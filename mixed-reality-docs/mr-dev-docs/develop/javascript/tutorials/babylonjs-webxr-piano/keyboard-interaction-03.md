@@ -26,7 +26,7 @@ In this tutorial, you will learn how to:
 
 Make sure that you have gone through the [previous tutorial in the series](keyboard-model-02.md) are ready to continue adding to the code.
 
-### *index.html*
+*index.html*
 
 ```html
 <html>
@@ -42,27 +42,32 @@ Make sure that you have gone through the [previous tutorial in the series](keybo
         <canvas id="renderCanvas"></canvas>
         <script type="text/javascript">
             const canvas = document.getElementById("renderCanvas");
-            const engine = new BABYLON.Engine(canvas, true);
-            
+            const engine = new BABYLON.Engine(canvas, true); 
+
             createScene(engine).then(sceneToRender => {
                 engine.runRenderLoop(() => sceneToRender.render());
+            });
+            
+            // Watch for browser/canvas resize events
+            window.addEventListener("resize", function () {
+                engine.resize();
             });
         </script>
     </body>
 </html>
 ```
 
-### *scene.js*
+*scene.js*
 
 ```javascript
 const WhiteKey = function (note, topWidth, bottomWidth, topPositionX, wholePositionX) {
     return {
         build(scene, register, referencePositionX) {
             // Create bottom part
-            var bottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: bottomWidth, height: 1.5, depth: 4.5}, scene);
+            const bottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: bottomWidth, height: 1.5, depth: 4.5}, scene);
 
             // Create top part
-            var top = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: topWidth, height: 1.5, depth: 5}, scene);
+            const top = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: topWidth, height: 1.5, depth: 5}, scene);
             top.position.z =  4.75;
             top.position.x += topPositionX;
 
@@ -128,7 +133,7 @@ const createScene = async function(engine) {
 
     // Register 1 through 7
     var referencePositionX = -2.4*14;
-    for (var octave = 1; octave <= 7; octave++) {
+    for (let octave = 1; octave <= 7; octave++) {
         keyParams.forEach(key => {
             keys.add(key.build(scene, octave, referencePositionX))
         })
@@ -144,8 +149,10 @@ const createScene = async function(engine) {
     // Register 8
     keys.add(WhiteKey("C", 2.3, 2.3, 0, -2.4*6).build(scene, 8, 84))
 
+    // Import piano frame
     BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/JING1201/babylonjs-exploration/main/piano-keys/", "pianoFrame.babylon", scene);
 
+    // Lift piano keys
     keys.forEach(key => {
         key.position.y += 80;
     })
@@ -160,7 +167,9 @@ const createScene = async function(engine) {
 
 Right now, the piano keyboard we have created is a static model that does not respond to any user interactions. In this section, we will program the keys to move downward and play a sound when someone presses on them.
 
-1. Babylon.js provides different kinds of events, or [observables](https://doc.babylonjs.com/divingDeeper/events/observables), that we can interact with. In our case, we will be dealing with the `onPointerObservable` since we want to program the keys to perform actions when someone press on them through a pointer, which can be a mouse click, touch, XR controller button click, etc. Here is the basic structure of how we can add any behavior to an `onPointerObservable`:
+1. Babylon.js provides different kinds of events, or [observables](https://doc.babylonjs.com/divingDeeper/events/observables), that we can interact with. In our case, we will be dealing with the `onPointerObservable` since we want to program the keys to perform actions when someone press on them through a pointer, which can be a mouse click, touch, XR controller button click, etc.
+
+    Here is the basic structure of how we can add any behavior to an `onPointerObservable`:
 
     ```javascript
     scene.onPointerObservable.add((pointerInfo) => {
@@ -216,7 +225,7 @@ Right now, the piano keyboard we have created is a static model that does not re
                 const pointerId = pointerInfo.event.pointerId;
                 if (pointerToKey.has(pointerId)) {
                     pointerToKey.get(pointerId).mesh.position.y += 0.5;
-                    //stop the sound of the note of the key that is released
+                    // stop the sound of the note of the key that is released
                     pointerToKey.delete(pointerId);
                 }
                 break;
@@ -230,7 +239,9 @@ Right now, the piano keyboard we have created is a static model that does not re
 
     ![Interactive Piano Keys](./images/interactive-piano-keys.gif)
 
-1. Now let's work on playing and stopping a sound when a key is pressed and released. To achieve this, we will be utilizing a Javascript library named **soundfont-player**, which allows us to easily play MIDI sounds of an instrument we choose. [Download the minified code of the library](https://github.com/JING1201/babylonjs-exploration/blob/89f60cf8fbc3a3d64afce70026cde0513ed59075/piano-keys/soundfont-player.min.js), save it in the same folder as *index.html*, and include it in the `<header>` tag in *index.html*:
+1. Now let's work on playing and stopping a sound when a key is pressed and released. To achieve this, we will be utilizing a Javascript library named **soundfont-player**, which allows us to easily play MIDI sounds of an instrument we choose. 
+
+    [Download the minified code of the library](https://github.com/JING1201/babylonjs-exploration/blob/89f60cf8fbc3a3d64afce70026cde0513ed59075/piano-keys/soundfont-player.min.js), save it in the same folder as *index.html*, and include it in the `<header>` tag in *index.html*:
 
     ```html
     <head>
@@ -251,9 +262,9 @@ Right now, the piano keyboard we have created is a static model that does not re
     Additionally, here is how we can initialize an instrument and play/stop MIDI sounds using the library:
 
     ```javascript
-        const piano = await Soundfont.instrument(new AudioContext(), 'acoustic_grand_piano');
-        const sound = piano.play("C4"); // Play note C4
-        sound.stop(); // Stop note C4
+    const piano = await Soundfont.instrument(new AudioContext(), 'acoustic_grand_piano');
+    const sound = piano.play("C4"); // Play note C4
+    sound.stop(); // Stop note C4
     ```
 
 1. Now let's incorporate this into the pointer events and finalize the code for this section:
@@ -266,27 +277,26 @@ Right now, the piano keyboard we have created is a static model that does not re
         switch (pointerInfo.type) {
             case BABYLON.PointerEventTypes.POINTERDOWN:
                 if(pointerInfo.pickInfo.hit) {
-                    const pickedMesh = pointerInfo.pickInfo.pickedMesh;
-                    const pointerId = pointerInfo.event.pointerId;
+                    let pickedMesh = pointerInfo.pickInfo.pickedMesh;
+                    let pointerId = pointerInfo.event.pointerId;
                     if (keys.has(pickedMesh)) {
-                        pickedMesh.position.y -= 0.5;
+                        pickedMesh.position.y -= 0.5; // Move the key downward
                         pointerToKey.set(pointerId, {
                             mesh: pickedMesh,
-                            note: piano.play(pointerInfo.pickInfo.pickedMesh.name)
+                            note: piano.play(pointerInfo.pickInfo.pickedMesh.name) // Play the sound of the note
                         });
                     }
                 }
                 break;
             case BABYLON.PointerEventTypes.POINTERUP:
-                const pointerId = pointerInfo.event.pointerId;
+                let pointerId = pointerInfo.event.pointerId;
                 if (pointerToKey.has(pointerId)) {
-                    pointerToKey.get(pointerId).mesh.position.y += 0.5;
-                    pointerToKey.get(pointerId).note.stop();
+                    pointerToKey.get(pointerId).mesh.position.y += 0.5; // Move the key upward
+                    pointerToKey.get(pointerId).note.stop(); // Stop the sound of the note
                     pointerToKey.delete(pointerId);
                 }
                 break;
         }
-
     });
     ```
 
@@ -298,15 +308,15 @@ By now, you have probably already played with the piano with your mouse (or even
 
 1. In order to open the page in your immersive VR headset , you must first connect your headset to your laptop (where you are developing on) and make sure that it is [set up for use in the Windows Mixed Reality App](https://docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality). If you're using the Windows Mixed Reality Simulator, [make sure that it is enabled](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator).
 
-1. You will now see a Immersive VR button at the bottom right of the web page. Click on it and you will be able to see the piano in the XR device you are connected to!
+1. You will now see a Immersive VR button at the bottom right of the web page. Click on it and you will be able to see the piano in the XR device you are connected to.
 
     ![Immersive VR Button](../images/immersive-vr-button.png)
 
-1. Once you are in the virtual space, you might notice that the piano we have built is extremely huge. In the VR world, we can only standing at the bottom of it and can only play it by pointing the pointer to the keys in the distant.
+1. Once you are in the virtual space, you might notice that the piano we have built is extremely huge. In the VR world, we can only standing at the bottom of it and play it by pointing the pointer to the keys in the distance.
 
     ![Huge piano](./images/huge-piano.jpg)
 
-1. Let's scale down the piano so that we can play it like a normal standup piano in real life. To do so, we would have to utilize [a utility function that allows us to scale a mesh relative to a point in the space](https://doc.babylonjs.com/toolsAndResources/utilities/Pivot#enlargement). Add this function to *scene.js* (outside of `createScene()`):
+1. Let's scale down the piano so that it's size is more like a normal standup piano in real life. To do so, we will need to use [a utility function that allows us to scale a mesh relative to a point in the space](https://doc.babylonjs.com/toolsAndResources/utilities/Pivot#enlargement). Add this function to *scene.js* (outside of `createScene()`):
 
     ```javascript
     BABYLON.Mesh.prototype.scaleFromPivot = function(pivotPoint, sx, sy, sz) {
@@ -318,7 +328,7 @@ By now, you have probably already played with the piano with your mouse (or even
     }
     ```
 
-1. We will use this utility function to scale the piano frame and keys by a factor of 0.015, with a pivot point at the origin. Edit the part where each key is lifted and where the piano frame is imported:
+1. We will use this function to scale the piano frame and keys by a factor of 0.015, with a pivot point at the origin. Edit the part where each key is lifted and where the piano frame is imported:
 
     ```javascript
     // Put this line at the beginning of createScene()
@@ -354,22 +364,22 @@ By now, you have probably already played with the piano with your mouse (or even
         switch (pointerInfo.type) {
             case BABYLON.PointerEventTypes.POINTERDOWN:
                 if(pointerInfo.pickInfo.hit) {
-                    const pickedMesh = pointerInfo.pickInfo.pickedMesh;
-                    const pointerId = pointerInfo.event.pointerId;
+                    let pickedMesh = pointerInfo.pickInfo.pickedMesh;
+                    let pointerId = pointerInfo.event.pointerId;
                     if (keys.has(pickedMesh)) {
-                        pickedMesh.position.y -= 0.5*scale;
+                        pickedMesh.position.y -= 0.5*scale; // Move the key downward
                         pointerToKey.set(pointerId, {
                             mesh: pickedMesh,
-                            note: piano.play(pointerInfo.pickInfo.pickedMesh.name)
+                            note: piano.play(pointerInfo.pickInfo.pickedMesh.name) // Play the sound of the note
                         });
                     }
                 }
                 break;
             case BABYLON.PointerEventTypes.POINTERUP:
-                const pointerId = pointerInfo.event.pointerId;
+                let pointerId = pointerInfo.event.pointerId;
                 if (pointerToKey.has(pointerId)) {
-                    pointerToKey.get(pointerId).mesh.position.y += 0.5*scale;
-                    pointerToKey.get(pointerId).note.stop();
+                    pointerToKey.get(pointerId).mesh.position.y += 0.5*scale; // Move the key upward
+                    pointerToKey.get(pointerId).note.stop(); // Stop the sound of the note
                     pointerToKey.delete(pointerId);
                 }
                 break;
@@ -385,7 +395,7 @@ By now, you have probably already played with the piano with your mouse (or even
 
 Now that we have scaled the piano to the right size in the VR space, let's enable some cool WebXR features to improve our piano-playing experience in the space.
 
-1. If you have been playing the piano using your immersive VR controllers, you might have noticed that you can only use one controller at a time. Let's enable the [multi-pointer support](https://doc.babylonjs.com/typedoc/interfaces/babylon.iwebxrcontrollerpointerselectionoptions) in the XR space by using babylon.js's [WebXR features manager](https://doc.babylonjs.com/divingDeeper/webXR/webXRFeaturesManager). 
+1. If you have been playing the piano using your immersive VR controllers, you might have noticed that you can only use one controller at a time. Let's enable the [multi-pointer support](https://doc.babylonjs.com/typedoc/interfaces/babylon.iwebxrcontrollerpointerselectionoptions) in the XR space by using babylon.js's [WebXR features manager](https://doc.babylonjs.com/divingDeeper/webXR/webXRFeaturesManager).
 
     Add the following code into the `createScene()` function, after the `xrHelper` initialization line:
 
@@ -406,7 +416,9 @@ Now that we have scaled the piano to the right size in the VR space, let's enabl
     const ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 400, height: 400});
     ```
 
-1. The teleportation support also comes with a very useful feature called [snap-to positions](https://doc.babylonjs.com/divingDeeper/webXR/WebXRSelectedFeatures#snap-to-hotspots). In short, snap-to positions are specific positions that we want users to land at.For example, we can set a snap-to position in front of the piano so that users can easily teleport to the specific location when they point their pointers close to the piano.
+1. The teleportation support also comes with a very useful feature called [snap-to positions](https://doc.babylonjs.com/divingDeeper/webXR/WebXRSelectedFeatures#snap-to-hotspots). In short, snap-to positions are specific positions that we want users to land at.
+
+    For example, we can set a snap-to position in front of the piano so that users can easily teleport to that location when they point their pointers close to the piano.
 
     Append the code below to enable the teleportation feature and specify a snap-to point:
 
@@ -426,7 +438,7 @@ Now that we have scaled the piano to the right size in the VR space, let's enabl
 
 If your mixed reality device supports hand-tracking, you will be able to play on the piano in the VR space using just your hands!
 
-You can enable this feature by adding the following block of code to `createScene()`:
+You can enable babylon.js's [hand-tracking feature](https://doc.babylonjs.com/divingDeeper/webXR/WebXRSelectedFeatures#hand-tracking) by adding the following block of code to `createScene()`:
 
 ```javascript
 const handTracking = featuresManager.enableFeature(BABYLON.WebXRFeatureName.HAND_TRACKING, "latest", {
@@ -438,17 +450,17 @@ const handTracking = featuresManager.enableFeature(BABYLON.WebXRFeatureName.HAND
 
 Great job following through the tutorial series. Here is the final code for *scene.js* and *index.html*:
 
-### *scene.js*
+*scene.js*
 
 ```javascript
 const WhiteKey = function (note, topWidth, bottomWidth, topPositionX, wholePositionX) {
     return {
         build(scene, register, referencePositionX) {
             // Create bottom part
-            var bottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: bottomWidth, height: 1.5, depth: 4.5}, scene);
+            const bottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: bottomWidth, height: 1.5, depth: 4.5}, scene);
 
             // Create top part
-            var top = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: topWidth, height: 1.5, depth: 5}, scene);
+            const top = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: topWidth, height: 1.5, depth: 5}, scene);
             top.position.z =  4.75;
             top.position.x += topPositionX;
 
@@ -523,7 +535,7 @@ const createScene = async function(engine) {
 
     // Register 1 through 7
     var referencePositionX = -2.4*14;
-    for (var octave = 1; octave <= 7; octave++) {
+    for (let octave = 1; octave <= 7; octave++) {
         keyParams.forEach(key => {
             keys.add(key.build(scene, octave, referencePositionX))
         })
@@ -556,27 +568,26 @@ const createScene = async function(engine) {
         switch (pointerInfo.type) {
             case BABYLON.PointerEventTypes.POINTERDOWN:
                 if(pointerInfo.pickInfo.hit) {
-                    const pickedMesh = pointerInfo.pickInfo.pickedMesh;
-                    const pointerId = pointerInfo.event.pointerId;
+                    let pickedMesh = pointerInfo.pickInfo.pickedMesh;
+                    let pointerId = pointerInfo.event.pointerId;
                     if (keys.has(pickedMesh)) {
-                        pickedMesh.position.y -= 0.5*scale;
+                        pickedMesh.position.y -= 0.5*scale; // Move the key downward
                         pointerToKey.set(pointerId, {
                             mesh: pickedMesh,
-                            note: piano.play(pointerInfo.pickInfo.pickedMesh.name)
+                            note: piano.play(pointerInfo.pickInfo.pickedMesh.name) // Play the sound of the note
                         });
                     }
                 }
                 break;
             case BABYLON.PointerEventTypes.POINTERUP:
-                const pointerId = pointerInfo.event.pointerId;
+                let pointerId = pointerInfo.event.pointerId;
                 if (pointerToKey.has(pointerId)) {
-                    pointerToKey.get(pointerId).mesh.position.y += 0.5*scale;
-                    pointerToKey.get(pointerId).note.stop();
+                    pointerToKey.get(pointerId).mesh.position.y += 0.5*scale; // Move the key upward
+                    pointerToKey.get(pointerId).note.stop(); // Stop the sound of the note
                     pointerToKey.delete(pointerId);
                 }
                 break;
         }
-
     });
 
     const xrHelper = await scene.createDefaultXRExperienceAsync();
@@ -604,7 +615,7 @@ const createScene = async function(engine) {
 }
 ```
 
-### *index.html*
+*index.html*
 
 ```html
 <html>

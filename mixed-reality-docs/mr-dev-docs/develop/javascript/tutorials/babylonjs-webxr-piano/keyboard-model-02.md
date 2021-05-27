@@ -43,10 +43,15 @@ Make sure that you have gone through the [previous tutorial in the series](intro
         <canvas id="renderCanvas"></canvas>
         <script type="text/javascript">
             const canvas = document.getElementById("renderCanvas");
-            const engine = new BABYLON.Engine(canvas, true);
-            
+            const engine = new BABYLON.Engine(canvas, true); 
+
             createScene(engine).then(sceneToRender => {
                 engine.runRenderLoop(() => sceneToRender.render());
+            });
+            
+            // Watch for browser/canvas resize events
+            window.addEventListener("resize", function () {
+                engine.resize();
             });
         </script>
     </body>
@@ -126,7 +131,7 @@ Visually, each register looks exactly the same as another, so we can start with 
     const blackMat = new BABYLON.StandardMaterial("black");
     blackMat.diffuseColor = new BABYLON.Color3(0, 0, 0);
 
-    var blackKey = BABYLON.MeshBuilder.CreateBox("C#4", {width: 1.4, height: 2, depth: 5}, scene);
+    const blackKey = BABYLON.MeshBuilder.CreateBox("C#4", {width: 1.4, height: 2, depth: 5}, scene);
     blackKey.position.z += 4.75;
     blackKey.position.y += 0.25;
     blackKey.position.x += 0.95;
@@ -150,10 +155,10 @@ Visually, each register looks exactly the same as another, so we can start with 
         return {
             build(scene, register, referencePositionX) {
                 // Create bottom part
-                var bottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: bottomWidth, height: 1.5, depth: 4.5}, scene);
+                const bottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: bottomWidth, height: 1.5, depth: 4.5}, scene);
 
                 // Create top part
-                var top = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: topWidth, height: 1.5, depth: 5}, scene);
+                const top = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: topWidth, height: 1.5, depth: 5}, scene);
                 top.position.z =  4.75;
                 top.position.x += topPositionX;
     
@@ -260,7 +265,7 @@ In this section, let's expand the usage of the key-creation functions to generat
     ```javascript
     // Register 1 through 7
     var referencePositionX = -2.4*14;
-    for (var register = 1; register <= 7; register++) {
+    for (let register = 1; register <= 7; register++) {
         keyParams.forEach(key => {
             keys.add(key.build(scene, register, referencePositionX))
         })
@@ -316,10 +321,10 @@ In this section, let's expand the usage of the key-creation functions to generat
         return {
             build(scene, register, referencePositionX) {
                 // Create bottom part
-                var bottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: bottomWidth, height: 1.5, depth: 4.5}, scene);
+                const bottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: bottomWidth, height: 1.5, depth: 4.5}, scene);
 
                 // Create top part
-                var top = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: topWidth, height: 1.5, depth: 5}, scene);
+                const top = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: topWidth, height: 1.5, depth: 5}, scene);
                 top.position.z =  4.75;
                 top.position.x += topPositionX;
     
@@ -385,7 +390,7 @@ In this section, let's expand the usage of the key-creation functions to generat
 
         // Register 1 through 7
         var referencePositionX = -2.4*14;
-        for (var octave = 1; octave <= 7; octave++) {
+        for (let octave = 1; octave <= 7; octave++) {
             keyParams.forEach(key => {
                 keys.add(key.build(scene, octave, referencePositionX))
             })
