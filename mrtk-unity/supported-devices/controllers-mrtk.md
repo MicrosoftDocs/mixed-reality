@@ -11,7 +11,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Controll
 
 MRTK has support for many different controllers. Many controllers, such as HTC Vive Knuckles and HTC Vive Wands, will work natively once an application built with MRTK is launched on the compatible device. Other controllers, such as articulated hands on the Oculus Quest and the HP Reverb G2 Controllers, require additional packages before they are recognized by MRTK.
 
-This document will describe the common scenarios where extra packages need to be installed. For additional information about controllers, visit the [**features page**](../features/input/controllers.md). To debug issues with controllers, see the [**Controller mapping tool**](../features/tools/controller-mapping-tool.md)
+This document will describe the common scenarios where extra packages need to be installed. For instructions on how to deploy to your device, see the [**Hololens/WMR**](/windows/mixed-reality/mrtk-unity/supported-devices/wmr-mrtk) or [**Oculus Quest**](/windows/mixed-reality/mrtk-unity/supported-devices/oclus-quest-mrtk) deployment pages. For additional information about controllers, visit the [**features page**](../features/input/controllers.md). To debug issues with controllers, see the [**Controller mapping tool**](../features/tools/controller-mapping-tool.md)
 
 ## HP Reverb G2 Controllers
 

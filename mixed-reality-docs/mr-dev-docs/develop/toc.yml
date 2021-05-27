@@ -202,7 +202,7 @@
     items:
       - name: Camera setup
         href: unity/camera-in-unity.md
-      - name: World-locking and spatial anchors 
+      - name: World-locking and spatial anchors
         href: unity/spatial-anchors-in-unity.md
       - name: Shared experiences
         href: unity/shared-experiences-in-unity.md
@@ -240,7 +240,7 @@
         href: unity/udp-packets-in-unity.md
       - name: Using the Windows namespace with Unity apps for HoloLens
         href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
-      - name: Mixed Reality native objects
+      - name: Mixed Reality native interop in Unity
         href: unity/unity-xrdevice-advanced.md
       - name: Using Vuforia
         href: unity/vuforia-development-overview.md
