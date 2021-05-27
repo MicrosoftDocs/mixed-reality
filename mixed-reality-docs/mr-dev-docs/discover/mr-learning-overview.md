@@ -18,7 +18,7 @@ The more tools you have when developing for Mixed Reality the better. While docu
 Our Learn modules help you become proficient in Mixed Reality development, offering a module-based structure to get you started with key tools like Mixed Reality Toolkit, Unity, and Azure mixed reality services. Getting to Hello World has never been clearer, as we lay out the Learning Objectives, Prerequisites, and set time to completion expectations all in one interface. 
 
 > [!div class="nextstepaction"]
-> [Get started with our Mixed Reality learning path](https://docs.microsoft.com/learn/browse/?terms=mixed%20reality)
+> [Get started with our Mixed Reality learning path](/learn/browse/?terms=mixed+reality)
 
 ## General modules
 
