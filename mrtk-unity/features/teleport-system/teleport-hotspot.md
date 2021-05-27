@@ -6,6 +6,7 @@ ms.author: roliu
 ms.date: 03/25/2021
 ms.localizationpriority: medium
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Teleport system, Teleport hotspot
+monikerRange: '>= mrtkunity-2021-05'
 ---
 
 # Teleport Hotspot
