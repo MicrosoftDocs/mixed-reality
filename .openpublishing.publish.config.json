@@ -53,7 +53,7 @@
         "/dotnet"
       ],
       "monikers": [],
-      "moniker_ranges": [],
+      "moniker_ranges": ["mrtkunity-2021-01","mrtkunity-2021-05"],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
