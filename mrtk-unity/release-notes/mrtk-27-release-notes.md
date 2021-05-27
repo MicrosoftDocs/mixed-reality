@@ -5,7 +5,7 @@ author: RogPodge
 ms.author: roliu
 ms.date: 05/27/2021
 ms.localizationpriority: medium
-keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, XRSDK, Legacy XR
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, XRSDK, Legacy XR, Leap Motion, Ultraleap
 ---
 
 # Microsoft Mixed Reality Toolkit 2.7.0 Release Notes
@@ -56,6 +56,8 @@ The dwell feature and example is now graduated from experimental. New examples o
 ### Added support for Leap Motion Unity Modules version 4.6.0, 4.7.0, 4.7.1 and 4.8.0
 
 Support for the latest versions of the [Leap Motion Unity Modules](https://developer.leapmotion.com/unity) is now compatible with MRTK 2.7.0.  See [How to Configure MRTK for Leap Motion](../features/cross-platform/leap-motion-mrtk.md) for more information. 
+
+Big thanks to @jackyangzzh for contributing the new LeapMotionOrientationExample scene!
 
 ### Targeted speech events raised no longer restricted to gaze pointers.
 
