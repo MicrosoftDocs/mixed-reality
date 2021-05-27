@@ -113,10 +113,53 @@ Let's begin by setting up the HTML web page that will contain the babylon.js sce
 
     In javascript, in order to use the `await` keyboard on an `async` function within a function, the parent function would also have to be `async`, which is why we defined `createScene` function as async earlier. Later in this tutorial series, we will be using this `xrHelper` to enable and configure different WebXR features supported by babylon.js.
 
+1. The completed *scene.js* should look like this:
+
+    ```javascript
+    const createScene = async function(engine) {
+        const scene = new BABYLON.Scene(engine);
+    
+        const alpha =  3*Math.PI/2;
+        const beta = Math.PI/50;
+        const radius = 220;
+        const target = new BABYLON.Vector3(0, 0, 0);
+        
+        const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target, scene);
+        camera.attachControl(canvas, true);
+        
+        const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
+        light.intensity = 0.6;
+    
+        const xrHelper = await scene.createDefaultXRExperienceAsync();
+    
+        return scene;
+    }
+    ```
+
 1. Now that we have a working `createScene()` function, let's have *index.html* load the *scene.js* file as a script so that the `createScene()` function is recognized in *index.html*. Add this line of code within the `<header>` section of the html file:
 
     ```html
-    <script src="scene.js"></script>
+    <html>
+        <head>
+            <title>Piano in BabylonJS</title>
+            <script src="https://cdn.babylonjs.com/babylon.js"></script>
+            <script src="scene.js"></script>
+            <style>
+                body,#renderCanvas { width: 100%; height: 100%;}
+            </style>
+        </head>
+        <body>
+            <canvas id="renderCanvas"></canvas>
+            <script type="text/javascript">
+                const canvas = document.getElementById("renderCanvas");
+                const engine = new BABYLON.Engine(canvas, true);
+                
+                createScene(engine).then(sceneToRender => {
+                    engine.runRenderLoop(() => sceneToRender.render());
+                });
+            </script>
+        </body>
+    </html>
     ```
 
 1. Open *index.html* in your browser, and you will find that the error message we saw earlier is no longer present, and we have an empty babylon.js scene in the page.
