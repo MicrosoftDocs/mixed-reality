@@ -347,7 +347,7 @@ By now, you have probably already played with the piano with your mouse (or even
     });
     ```
 
-1. Let's not forget to scale the piano key motion and the camera positions as well:
+1. Let's not forget to scale the piano key movements and the camera positions as well:
 
     ```javascript
     const alpha =  3*Math.PI/2;
