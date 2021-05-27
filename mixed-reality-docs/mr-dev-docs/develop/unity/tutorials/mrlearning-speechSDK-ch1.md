@@ -32,7 +32,7 @@ In this tutorial series, you will create a Mixed Reality application that explor
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019/2020 LTS installed and the Universal Windows Platform Build Support module added
 
 > [!IMPORTANT]
-> * This tutorial series supports both Unity 2019 LTS and Unity 2020 LTS. It supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
+> This tutorial series supports Unity 2019 LTS (currently 2019.4.x) if you are using Legacy WSA or Window XR Plugin and also Unity 2020 LTS(currently 2020.3.x) if you are using Window XR Plugin or Open XR. This supersedes any Unity version requirements stated in the prerequisites linked above.
 
 ## Creating and preparing the Unity project
 
