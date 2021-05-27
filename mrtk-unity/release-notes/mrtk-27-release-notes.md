@@ -67,7 +67,7 @@ Previously, targeted speech events could only be raised on objects which were fo
 
 ### Ported TextToSpeech from HTK to MRTK
 
-The beloved TextToSpeech script is now finally available in MRTK to help you generate speech from text on the UWP platform using [`SpeechSynthesizer`](https://docs.microsoft.com/uwp/api/windows.media.speechsynthesis.speechsynthesizer). Also added a sample scene to demonstrate the feature.
+The beloved TextToSpeech script is now finally available in MRTK to help you generate speech from text on the UWP platform using [`SpeechSynthesizer`](/uwp/api/windows.media.speechsynthesis.speechsynthesizer). Also added a sample scene to demonstrate the feature.
 
 ### Support for the system-provided motion controller model on OpenXR
 
