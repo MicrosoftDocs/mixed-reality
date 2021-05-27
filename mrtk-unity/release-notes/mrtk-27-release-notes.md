@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, XRSDK, Legacy XR, Leap Motion, Ultraleap
 ---
 
-# Microsoft Mixed Reality Toolkit 2.7.0 Release Notes
+# Microsoft Mixed Reality Toolkit 2.7 Release Notes
 
 ## What's new in 2.7.0
 

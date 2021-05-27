@@ -7,7 +7,7 @@ ms.date: 05/27/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Microsoft Mixed Reality Toolkit 2.6.2 Release Notes
+# Microsoft Mixed Reality Toolkit 2.6 Release Notes
 
 > [!IMPORTANT]
 > There is a known compiler issue that impacts applications built for Microsoft HoloLens 2 using
@@ -19,13 +19,6 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ### Corrects parenting of the spatial mesh
 
 Fixes the [issue](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9819) where spatial meshes were not being properly located after the Mixed Reality Playspace object was moved (ex: via a teleport).
-
-# Microsoft Mixed Reality Toolkit 2.6.1 Release Notes
-
-> [!IMPORTANT]
-> There is a known compiler issue that impacts applications built for Microsoft HoloLens 2 using
-> ARM64. This issue is fixed by updating Visual Studio 2019 to version 16.8 or later. If you are unable to update Visual Studio,
-> please import the `com.microsoft.mixedreality.toolkit.tools` package to apply a workaround.
 
 ## What's new in 2.6.1
 
