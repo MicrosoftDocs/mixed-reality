@@ -48,7 +48,7 @@ Just like with a mouse pointer on a computer, you should implement a [cursor](..
 
 ## Head-gaze in the Mixed Reality Toolkit
 
-You can access head-gaze from the [Input Manager](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview) in MRTK.
+You can access head-gaze from the [Input Manager](/windows/mixed-reality/mrtk-unity/features/input/overview) in MRTK.
 
 ## Next Development Checkpoint
 

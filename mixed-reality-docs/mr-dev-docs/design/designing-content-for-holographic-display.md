@@ -98,9 +98,9 @@ If your project must use transparent objects, try to minimize the number of pixe
 
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides many UI building block examples based on the dark color schemes.
 
-* [Near Menu](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/near-menu)
-* [Dialog](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/dialog)
-* [Hand Menu](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)
+* [Near Menu](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/near-menu)
+* [Dialog](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/dialog)
+* [Hand Menu](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)
 
 <br>
 
