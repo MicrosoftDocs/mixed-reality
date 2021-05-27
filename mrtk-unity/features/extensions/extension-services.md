@@ -1,5 +1,5 @@
 ---
-title: ExtensionServices
+title: Extension Services
 description: documentation for extended functionality in MRTK
 author: davidkline-ms
 ms.author: davidkl

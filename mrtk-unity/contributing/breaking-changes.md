@@ -1,5 +1,5 @@
 ---
-title: BreakingChanges
+title: Breaking Changes
 description: policy regarding breaking changes in the MRTK.
 author: polar-kev
 ms.author: kesemple

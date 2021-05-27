@@ -91,5 +91,5 @@ You'll see a "Getting ready to set you up" message on your screen with a spinnin
 * [Ask the community](https://answers.microsoft.com)
 * [Contact us for support](https://support.microsoft.com/contactus/)
 * [Troubleshooting Installation](installation_errors.md)
-* [Troubleshooting Setup](wmr-setup-faq.md)
+* [Troubleshooting Setup](wmr-setup-faq.yml)
 * [Set up Windows Mixed Reality](set-up-windows-mixed-reality.md)

@@ -1,5 +1,5 @@
 ---
-title: SpatialObjectMeshObserver
+title: Spatial Object Mesh Observer
 description: Documentation on Spatial Mesh Observer in MRTK
 author: davidkline-ms
 ms.author: davidkl

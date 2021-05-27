@@ -15,7 +15,10 @@ Microsoft Learn is where everyone comes to learn. Discover new skills, find cert
 
 The more tools you have when developing for Mixed Reality the better. While documentation and written tutorials are crucial, if you're more of a visual learner then our video content on Microsoft Learn is the place to be. More modules are being added all the time, so be sure to check back for more updates!
 
-Our Learn modules help you become proficient in Mixed Reality development, offering a module-based structure to get you started with key tools like Mixed Reality Toolkit, Unity, and Azure mixed reality services. Getting to Hello World has never been clearer, as we lay out the Learning Objectives, Prerequisites, and set time to completion expectations all in one interface. Get started with Mixed Reality Learn modules today or check out our Microsoft Learn introduction [video](https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Microsoft-Learn)!
+Our Learn modules help you become proficient in Mixed Reality development, offering a module-based structure to get you started with key tools like Mixed Reality Toolkit, Unity, and Azure mixed reality services. Getting to Hello World has never been clearer, as we lay out the Learning Objectives, Prerequisites, and set time to completion expectations all in one interface. 
+
+> [!div class="nextstepaction"]
+> [Get started with our Mixed Reality learning path](https://docs.microsoft.com/learn/browse/?terms=mixed%20reality)
 
 ## General modules
 
@@ -38,6 +41,22 @@ By the end of this module, you'll be able to:
 ## Unity modules
 
 Whether you're just starting or an experienced professional, our hands-on approach to Mixed Reality development in Unity helps you get to your goals faster, with more confidence, and at your own pace.
+
+### [Build mixed reality digital twins with Azure Digital Twins and Unity](https://docs.microsoft.com/learn/paths/build-mixed-reality-azure-digital-twins-unity/)
+
+Learn how to create of a mixed reality HoloLens 2 application using Azure Digital Twins and Unity, a real-time 3D platform.
+
+**Learning objectives**
+
+By the end of this learning path, you'll be able to:
+
+* Install and configure your development environment for building Mixed Reality solutions for the HoloLens 2, using Azure Digital Twins and Unity
+* Create a 3D scene in Unity using static and dynamic terrain data with Microsoft’s Maps SDK
+* Use MRTK interactions to provide a rich user experience
+* Connect to a Digital Twin data source on Azure
+* Stream telemetry data to assets in your Unity Scene, using Azure services, including ADT
+* Visualize the data on a HoloLens 2 via SignalR
+* Send data updates from the HoloLens 2 app back to Azure Digital Twin
 
 ### [Set up a mixed reality project in Unity with the Mixed Reality Toolkit](/learn/modules/mixed-reality-toolkit-project-unity/)
 

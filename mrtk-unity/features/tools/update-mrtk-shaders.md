@@ -1,5 +1,5 @@
 ---
-title: ShaderUpdateTool
+title: Shader Update Tool
 description: Documentation on how to update MRTK standard shaders
 author: davidkline-ms
 ms.author: davidkl

@@ -43,7 +43,7 @@ You can also use 2D images with Object collection. The examples below demonstrat
 
 ## Object collection in MRTK (Mixed Reality Toolkit) for Unity
 
-* [MRTK - Object collection](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/object-collection.md)
+* [MRTK - Object collection](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-collection)
 
 <br>
 

@@ -1,10 +1,10 @@
 ---
-title: GettingStartedWithMRTKAndXRSDK
-description: Landing Page for MRTK with XRSDK
+title: Getting started with MRTK and XR SDK
+description: Landing page for MRTK with XR SDK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, XRSDK,
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, XRSDK, XR SDK
 ---
 
 # Getting started with MRTK and XR SDK
@@ -21,22 +21,28 @@ The XR SDK pipeline currently supports 3 platforms: Windows Mixed Reality, Oculu
 
 ### Windows Mixed Reality
 
-1. Go into Unity's Package Manager and install the Windows XR Plugin package, which adds support for Windows Mixed Reality on XR SDK. This will pull down a few dependency packages as well. Ensure that the following all successfully installed:
-   1. XR Plugin Management
-   1. Windows XR Plugin
-   1. XR Legacy Input Helpers
-1. Go to Edit > Project Settings.
-1. Click on the XR Plug-in Management tab in the Project Settings window.
-1. Go to the Universal Windows Platform settings and ensure Windows Mixed Reality is checked under Plug-in Providers.
-1. Ensure that Initialize XR on Startup is checked.
-1. (**_Required for in-editor HoloLens Remoting, otherwise optional_**) Go to the Standalone settings and ensure Windows Mixed Reality is checked under Plug-in Providers. Also ensure that Initialize XR on Startup is checked.
-1. (**_Optional_**) Click on the Windows Mixed Reality tab under XR Plug-in Management and create a custom settings profile to change the defaults. If the list of settings are already there, no profile needs to be created.
+Go into **Unity's Package Manager** and install the Windows XR Plugin package, which adds support for Windows Mixed Reality on XR SDK. This will pull down a few dependency packages as well. 
 
-![Plugin management](../features/images/xrsdk/PluginManagement.png)
+1. Ensure that the following all successfully installed:
+   * XR Plugin Management
+   * Windows XR Plugin
+   * XR Legacy Input Helpers
+
+2. Go to **Edit > Project Settings**.
+3. Click on the XR Plug-in Management tab in the Project Settings window.
+4. Go to the Universal Windows Platform settings and ensure Windows Mixed Reality is checked under Plug-in Providers.
+5. Ensure that Initialize XR on Startup is checked.
+6. (**_Required for in-editor HoloLens Remoting, otherwise optional_**) Go to the Standalone settings and ensure Windows Mixed Reality is checked under Plug-in Providers. Also ensure that Initialize XR on Startup is checked.
+
+![XR Plugin management with Standalone tab selected](images/xr-management-img-02.png)
+
+7. (**_Optional_**) Click on the Windows Mixed Reality tab under XR Plug-in Management and create a custom settings profile to change the defaults. If the list of settings are already there, no profile needs to be created.
+
+![XR Plugin management with Windows tab selected](images/xr-management-img-01.png)
 
 ### Oculus
 
-1. Follow the [How to configure Oculus Quest in MRTK using the XR SDK pipeline](../features/cross-platform/oculus-quest-mrtk.md) guide to the end. The guide outlines the steps needed to configure both Unity and MRTK to use the XR SDK pipeline for the Oculus Quest.
+1. Follow the [How to configure Oculus Quest in MRTK using the XR SDK pipeline](../supported-devices/oculus-quest-mrtk.md) guide to the end. The guide outlines the steps needed to configure both Unity and MRTK to use the XR SDK pipeline for the Oculus Quest.
 
 ### OpenXR (Preview)
 

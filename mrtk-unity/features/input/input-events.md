@@ -1,5 +1,5 @@
 ---
-title: InputEvents
+title: Input Events
 description: Documentation for InputEvents in MRTK
 author: keveleigh
 ms.author: kurtie

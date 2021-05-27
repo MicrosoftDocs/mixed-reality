@@ -1,2 +1,2 @@
 {:allowed-branchname-matches ["master"]
- :allowed-filename-matches ["mixed-reality-docs/" "enthusiast guide/" "maquette/" "mrtk-docs/"]}
+ :allowed-filename-matches ["mixed-reality-docs/" "enthusiast guide/" "maquette/" "mrtk-unity/"]}

@@ -1,5 +1,5 @@
 ---
-title: SceneSystemSceneTypes
+title: Scene System Scene Types
 description: Documentation on different scene types in MRTK
 author: polar-kev
 ms.author: kesemple

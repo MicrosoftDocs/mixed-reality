@@ -567,7 +567,7 @@
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/mixed-reality-cloud-services.md",
 			"redirect_url": "/windows/mixed-reality/develop/mixed-reality-cloud-services",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		// Develop >> Unity >> Tutorials
 		{
@@ -874,12 +874,22 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/Configure-Unity-Project.md",
-			"redirect_url": "/windows/mixed-reality/develop/unity/Configure-Unity-Project",
+			"redirect_url": "/windows/mixed-reality/develop/unity/camera-in-unity",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality/develop/unity/Configure-Unity-Project.md",
+			"redirect_url": "/windows/mixed-reality/develop/unity/camera-in-unity",
 			"redirect_document_id": true
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/coordinate-systems-in-unity.md",
-			"redirect_url": "/windows/mixed-reality/develop/unity/coordinate-systems-in-unity",
+			"redirect_url": "/windows/mixed-reality/develop/unity/camera-in-unity",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality/develop/unity/coordinate-systems-in-unity",
+			"redirect_url": "/windows/mixed-reality/develop/unity/camera-in-unity",
 			"redirect_document_id": true
 		},
 		{
@@ -953,8 +963,18 @@
 			"redirect_document_id": false
 		},
 		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/out-of-scope/mrtk-101.md",
+			"redirect_url": "/windows/mixed-reality/mrtk-unity",
+			"redirect_document_id": false
+		},
+		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/mrtk-getting-started.md",
-			"redirect_url": "/windows/mixed-reality/develop/unity/mrtk-getting-started",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mrtk-unity",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/develop/unity/mrtk-getting-started.md",
+			"redirect_url": "https://docs.microsoft.com/windows/mixed-reality/mrtk-unity",
 			"redirect_document_id": true
 		},
 		{
@@ -1710,7 +1730,12 @@
 		// What's New
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/azure-services.md",
-			"redirect_url": "/windows/mixed-reality/whats-new/azure-services",
+			"redirect_url": "/windows/mixed-reality/develop/mixed-reality-cloud-services",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/whats-new/azure-services.md",
+			"redirect_url": "/windows/mixed-reality/develop/mixed-reality-cloud-services",
 			"redirect_document_id": true
 		},
 		{

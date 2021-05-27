@@ -62,7 +62,7 @@ In the Hierarchy window, select the **Hints** button object, then in the Inspect
 ![Unity with Hints button object OnClick event configured](images/mr-learning-base/base-06-section1-step1-5.png)
 
 > [!TIP]
-> The Interactable component is an all-in-one container to make any object easily interactable and responsive to input. Interactable acts as a catch-all for all types of input including touch, hand rays, speech, etc. and funnels these interactions into events and visual theme responses. To learn how to configure it for different input types and customize it's visual theme, you can refer to the [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) guide in the [MRTK Documentation Portal](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/).
+> The Interactable component is an all-in-one container to make any object easily interactable and responsive to input. Interactable acts as a catch-all for all types of input including touch, hand rays, speech, etc. and funnels these interactions into events and visual theme responses. To learn how to configure it for different input types and customize it's visual theme, you can refer to the [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) guide in the [MRTK Documentation Portal](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/).
 
 In the Hierarchy window, select the **Explode** button object, then in the Inspector window, configure the **Interactable.OnClick ()** event as follows:
 

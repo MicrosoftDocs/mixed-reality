@@ -39,7 +39,7 @@ When you're using voice commands, head or eye gaze is the typical targeting mech
     <tr>
         <td><strong>Feature</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
@@ -303,7 +303,7 @@ For the Windows Mixed Reality Developer Edition release 2017, the audio endpoint
 ## Voice input in MRTK (Mixed Reality Toolkit) for Unity
 With **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can easily assign voice command on any objects. Use MRTK's **Speech Input Profile** to define your keywords. By assigning **SpeechInputHandler** script, you can make any object respond to the keywords defined in the Speech Input Profile. SpeechInputHandler also provides speech confirmation label to improve the user's confidence.
 
-* [MRTK - Voice command](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/speech.md)
+* [MRTK - Voice command](/windows/mixed-reality/mrtk-unity/features/input/speech)
 
 ---
 

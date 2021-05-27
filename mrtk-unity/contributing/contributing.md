@@ -1,5 +1,5 @@
 ---
-title: Contributing
+title: Contributing to MRTK
 description: How to contribute to the Mixed Reality Toolkit
 author: polar-kev
 ms.author: kesemple
@@ -40,13 +40,13 @@ To avoid needing to rework the feature, it is generally recommended that develop
 To get started, simply follow these steps:
 
 1. Fork the repository. Click on the "Fork" button on the top right of the page and follow the flow.
-1. Create a branch in your fork (off of the [mrtk_development](https://github.com/microsoft/mixedrealitytoolkit-unity/tree/mrtk_development) branch) to make it easier for you to isolate any changes until ready for submission. For the legacy HoloToolkit use the [htk_development](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_development) branch.
+1. Create a branch in your fork (off of the [main](https://github.com/microsoft/mixedrealitytoolkit-unity/tree/main) branch) to make it easier to isolate any changes until ready for submission. For bug fixes during a release stabilization period, look for the latest `prerelease/*` branch. New features should always go into `main`.
 
 If you are new to to the Git workflow, [check out this introduction from Github](https://guides.github.com/activities/hello-world/).
 
 When adding a bug fix or feature, follow these steps:
 
-1. Implement the bug fix or feature. Instructions for building and deploying MRTK are at [BuildAndDeploy](../updates-deployment/build-and-deploy.md). Remember to follow the [Coding Guidelines](../contributing/coding-guidelines.md).
+1. Implement the bug fix or feature. Instructions for building and deploying MRTK are at [Deploying to Hololens and WMR devices](../supported-devices/wmr-mrtk.md). Remember to follow the [Coding Guidelines](../contributing/coding-guidelines.md).
 1. If adding a feature, also add an example scene that demonstrates the feature.
 1. If adding an experimental feature, then writing tests and documentation are not necessary. Instead, follow [experimental feature guidelines](../contributing/experimental-features.md).
 1. Add tests to verify the bug fix / feature. Instructions for writing and running tests are at [UnitTests](../contributing/unit-tests.md).

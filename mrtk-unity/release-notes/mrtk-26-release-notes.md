@@ -1,6 +1,6 @@
 ---
 title: MRTK 2.6 Release Notes
-description: release notes of the MRTK version 2.6
+description: Release notes of the MRTK version 2.6
 author: polar-kev
 ms.author: kesemple
 ms.date: 05/27/2021

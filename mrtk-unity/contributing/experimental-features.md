@@ -1,5 +1,5 @@
 ---
-title: ExperimentalFeatures
+title: Experimental Features
 description: Document related to Experimental Features in the MRTK.
 author: polar-kev
 ms.author: kesemple

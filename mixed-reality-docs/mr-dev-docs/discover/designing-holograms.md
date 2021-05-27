@@ -120,6 +120,18 @@ Obviously icons work a lot better than simple text does, to provide an even more
 
 ## Core concepts
 
+**Head Tracking and Eye Tracking**
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+**Hand Tracking**
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Hand-Tracking-Chapter/player]
+
+**Spatial Awareness**
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
+
 **Holographic frame**
 
 ![Animated GIF of a user looking around the dollhouse with the holographic frame highlighted](images/designing-holograms/FOVandFOI.gif)

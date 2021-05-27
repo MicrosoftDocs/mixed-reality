@@ -1,5 +1,5 @@
 ---
-title: TeleportSystemOverview
+title: Teleport System Overview
 description: Overview on Enabling and disabling Teleport system in MRTK
 author: RogPodge
 ms.author: roliu
