@@ -37,7 +37,8 @@ If user's previous Experience Scale settings do not match the new Experience Set
 
 ### Teleport Hotspot added
 
-A new teleport hotspot component has been graduated. You can add a teleport hotspot to your gameobject to ensure that the user is in a certain position and orientation when they teleport to that location.
+A new [teleport hotspot component]((../features/teleport-system/teleport-hotspot.md)) has been graduated. You can add a teleport hotspot to your gameobject to ensure that the user is in a certain position and orientation when they teleport to that location.
+
 
 
 ### Added support for Leap Motion Unity Modules version 4.6.0, 4.7.0 and 4.7.1
