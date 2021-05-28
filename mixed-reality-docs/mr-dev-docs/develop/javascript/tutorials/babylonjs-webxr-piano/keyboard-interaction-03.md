@@ -439,10 +439,19 @@ If your mixed reality device supports hand-tracking, you will be able to play on
 You can enable babylon.js's [hand-tracking feature](https://doc.babylonjs.com/divingDeeper/webXR/WebXRSelectedFeatures#hand-tracking) by adding the following block of code to `createScene()`:
 
 ```javascript
-const handTracking = featuresManager.enableFeature(BABYLON.WebXRFeatureName.HAND_TRACKING, "latest", {
-    xrInput: xrHelper.input,
-});
+try {
+    const handTracking = featuresManager.enableFeature(BABYLON.WebXRFeatureName.HAND_TRACKING, "latest", {
+        xrInput: xrHelper.input,
+    });
+} catch (error) {
+    console.log(error);
+    console.log("If your device supports hand tracking, make sure to enable the WebXR Hand Input flag in your browser.");
+}
 ```
+
+We added a try-catch block around the hand-tracking code so that the web page would not fail rendering completely if the hand-tracking feature isn't available on the device that opens the page.
+
+Also, just as the console messaged indicated, if your device supports hand-tracking but the feature doesn't work directly, you might have to enable the "WebXR Hand Input" flag in your browser (and restart the browser for the change to take effect).
 
 ## Summary
 
@@ -607,9 +616,14 @@ const createScene = async function(engine) {
         snapPositions: [new BABYLON.Vector3(2.4*3.5*scale, 0, -10*scale)],
     });
 
-    const handTracking = featuresManager.enableFeature(BABYLON.WebXRFeatureName.HAND_TRACKING, "latest", {
-        xrInput: xrHelper.input,
-    });
+    try {
+        const handTracking = featuresManager.enableFeature(BABYLON.WebXRFeatureName.HAND_TRACKING, "latest", {
+            xrInput: xrHelper.input,
+        });
+    } catch (error) {
+        console.log(error);
+        console.log("If your device supports hand tracking, make sure to enable the WebXR Hand Input flag in your browser.");
+    }
 
     return scene;
 }
