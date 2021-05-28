@@ -69,7 +69,7 @@ Download and import the Microsoft Spatializer  <a href="https://github.com/micro
 
 Once you import the Microsoft Spatializer into your unity project, **MRTK Project Configurator** window will appear, use the **Audio spatializer** dropdown to select the **Microsoft Spatializer**, then click the Apply button to apply the setting:
 
-![Project Settings showing spatializer plugin](images/spatial-audio/spatial-audio-01-section3-step1-1.PNG)
+![MRTK Project configurator](images/spatial-audio/spatial-audio-01-section3-step1-1.PNG)
 
 you can also manually enable the Microsoft Spatializer: Open **Edit -> Project Settings -> Audio**, and change **Spatializer Plugin** to "Microsoft Spatializer".
 

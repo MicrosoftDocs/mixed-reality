@@ -55,13 +55,13 @@ this imports required unity packages for XR Plugin Management, once done click o
 
 This opens **Project Settings window**, In the Project Settings window under **XR Plug-in Management** Ensure that you are in Universal Windows Platform settings also Ensure **Initialize XR on Startup** is checked, and check **Windows Mixed Reality** checkbox.
 
-![Player settings window Enable Mixed Reality](../images/mr-learning-base/base-02-section5-step1-4xrsdk.PNG)
+![Player settings window Enable Mixed Reality-xrsdk](../images/mr-learning-base/base-02-section5-step1-4xrsdk.PNG)
 
 After Unity has finished importing the Windows Mixed Reality SDK, the MRTK Project Configurator window should appear again. If it doesn't, use the Unity menu to open it.
 
 In the MRTK Project Configurator window, click on **next** then use the Audio spatializer dropdown to select the **MS HRTF Spatializer**, then click the **Apply** button to apply the setting:
 
-![Player settings window Enable Mixed Reality](../images/mr-learning-base/base-02-section5-step1-5xrsdk.PNG)
+![Player settings window Enable Mixed Reality-xrsdk](../images/mr-learning-base/base-02-section5-step1-5xrsdk.PNG)
 
 > [!TIP]
 > Applying the MRTK Default Settings is optional but strongly recommended as it will help configure some recommended Unity settings:
@@ -153,29 +153,29 @@ this imports required unity packages for XR Plugin Management, once done click o
 
 This opens **Project Settings window**,
 
-![Project Settings Window](../images/mr-learning-base/base-02-section5-step1-5-openxr.PNG)
+![Enable Open XR](../images/mr-learning-base/base-02-section5-step1-5-openxr.PNG)
 
 In the Project Settings window  under **XR Plug-in Management** Ensure that you are in Universal Windows Platform settings also Ensure **Initialize XR on Startup** is checked, then check **Open XR** checkbox and **Microsoft HoloLens feature set** checkbox to enable them.
 
-![Project Settings Window](../images/mr-learning-base/base-02-section5-step1-6-openxr.PNG)
+![Project Settings Window 1](../images/mr-learning-base/base-02-section5-step1-6-openxr.PNG)
 
 If you see a red warning icon next to **OpenXR Plugin**, click the icon and select **Fix all** before continuing. The Unity Editor may need to restart itself for the changes to take effect.
 
-![Project Settings Window](../images/mr-learning-base/base-02-section5-step1-7-openxr.PNG)
+![Project Settings Window 2](../images/mr-learning-base/base-02-section5-step1-7-openxr.PNG)
 
 once all issues are fixed close the **Project Settings** window.
 
 In the menu bar, navigate to **Mixed Reality**> **OpenXR** > **Apply recommended project settings for HoloLens 2** to get better app performance.
 
-![Project Settings Window](../images/mr-learning-base/base-02-section5-step1-8-openxr.PNG)
+![Project Settings Window 3](../images/mr-learning-base/base-02-section5-step1-8-openxr.PNG)
 
 Use the Unity menu to open MRTK Project Configurator, In the MRTK Project Configurator window, click on **next**, then click the **Apply** button to apply the settings:
 
-![Project Settings Window](../images/mr-learning-base/base-02-section5-step1-9-openxr.png)
+![Project Settings Window 4](../images/mr-learning-base/base-02-section5-step1-9-openxr.png)
 
 Once you click on Apply, Unity will try to restart for the input system to take into effect, click on **Apply** to restart the Unity editor
 
-![Project Settings Window](../images/mr-learning-base/base-02-section5-step1-10-openxr.PNG)
+![Project Settings Window 5](../images/mr-learning-base/base-02-section5-step1-10-openxr.PNG)
 
 Once the Unity restarts open MRTK Project Configurator from the unity menu and Click on **Next** then click on **Done** finish the Unity project configuration for OpenXR.
 
@@ -250,7 +250,7 @@ Click on **Legacy XR** to enable Legacy XR and to add its required packages  int
 
 Click on next button to enable XR pipeline settings for Legacy XR.
 
-![Unity Configure Unity Project menu path](../images/mr-learning-base/base-02-section5-step1-3.PNG)
+![Unity MRTK Configuration window](../images/mr-learning-base/base-02-section5-step1-3.PNG)
 
 In the MRTK Project Configurator window, ensure all options are checked and also use the **Audio spatializer** dropdown to select the **MS HRTF Spatializer**, then click the **Apply** button to apply the setting:
 

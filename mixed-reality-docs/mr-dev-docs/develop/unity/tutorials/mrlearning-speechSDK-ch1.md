@@ -54,17 +54,17 @@ Because you will use the Speech SDK for speech recognition and transcription you
 
 With the **MixedRealityToolkit** object selected in the Hierarchy window, in the Inspector window, select the **Input** tab, clone the **DefaultHoloLens2InputSystemProfile** and the **DefaultMixedRealitySpeechCommandsProfile**, and then change the speech commands **Start Behavior** to **Manual Start**:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section2-step1-1.png)
+![mrlearning-speech 1](images/mrlearning-speech/tutorial1-section2-step1-1.png)
 
 ## Configuring the capabilities
 
 In the Unity menu, select **Edit** > **Project Settings...** to open the Player Settings window, then locate the **Player** >  **Publishing Settings** section:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section3-step1-1.png)
+![mrlearning-speech 2](images/mrlearning-speech/tutorial1-section3-step1-1.png)
 
 In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, and **SpatialPerception** capabilities, which was enabled when you created the project at the beginning of the tutorial, are enabled. Then, enable the **InternetClientServer** and **PrivateNetworkClientServer** capabilities:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section3-step1-2.png)
+![mrlearning-speech 3](images/mrlearning-speech/tutorial1-section3-step1-2.png)
 
 ## Importing the tutorial assets
 
@@ -79,15 +79,15 @@ Download and **import** the following Unity custom packages **in the order they 
 
 After you have imported the tutorial assets your Project window should look similar to this:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section4-step1-1.png)
+![mrlearning-speech 4](images/mrlearning-speech/tutorial1-section4-step1-1.png)
 
 You need to setup the Unity project to publish the Azure Speech plugins for ARM64,to do this in the Project window, navigate to **Assets** > **SpeechSDK** > **Plugins** > **WSA** > **ARM64** and select **Microsoft.CognitiveServices.Speech.core** plugin.
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section4-step1-2.PNG)
+![mrlearning-speech 5](images/mrlearning-speech/tutorial1-section4-step1-2.PNG)
 
 with **Microsoft.CognitiveServices.Speech.core** plugin still selected, in the inspector window Enable **WSA Player** then under **Platform settings** select **UWP** for SDK, **ARM64** for CPU and click on Apply to apply these settings to the plugin.
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section4-step1-3.PNG)
+![mrlearning-speech 6](images/mrlearning-speech/tutorial1-section4-step1-3.PNG)
 
 Repeat this steps for each of the remaining plugins:
 
@@ -102,26 +102,26 @@ In this section, you will prepare the scene by adding the tutorial prefab and co
 
 In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureSpeechServices** > **Prefabs** folder and drag the **Lunarcom** prefab into the Hierarchy window to add it to your scene:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section5-step1-1.png)
+![mrlearning-speech 7](images/mrlearning-speech/tutorial1-section5-step1-1.png)
 
 With the **Lunarcom** object still selected in the Hierarchy window, in the Inspector window, use the **Add Component** button to add the **Lunarcom Controller (Script)** component to the Lunarcom object:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section5-step1-2.png)
+![mrlearning-speech 8](images/mrlearning-speech/tutorial1-section5-step1-2.png)
 
 > [!NOTE]
 > The Lunarcom Controller (Script) component is not part of MRTK. It was provided with this tutorial's assets.
 
 With the **Lunarcom** object still selected, expand it to reveal its child objects, then drag the **Terminal** object into the Lunarcom Controller (Script) component's **Terminal** field:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section5-step1-3.png)
+![mrlearning-speech 9](images/mrlearning-speech/tutorial1-section5-step1-3.png)
 
 With the **Lunarcom** object still selected, expand the Terminal object to reveal its child objects, then drag the **ConnectionLight** object into the Lunarcom Controller (Script) component's **Connection Light** field and the **OutputText** object into the **Output Text** field:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section5-step1-4.png)
+![mrlearning-speech 10](images/mrlearning-speech/tutorial1-section5-step1-4.png)
 
 With the **Lunarcom** object still selected, expand the Buttons object to reveal its child objects, and then in the Inspector window, expand the **Buttons** list, set its **Size** to 3, and drag the **MicButton**, **SatelliteButton**, and **RocketButton** objects into the **Element** 0, 1, and 2 fields respectively:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section5-step1-5.png)
+![mrlearning-speech 11](images/mrlearning-speech/tutorial1-section5-step1-5.png)
 
 ## Connecting the Unity project to the Azure resource
 
@@ -132,24 +132,24 @@ In the Hierarchy window, select the **Lunarcom** object, then in the Inspector w
 * In the **Speech Service API Key** field, enter your API key (Key1 or Key2)
 * In the **Speech Service Region** field, enter your service region (Location) using lowercase letters and spaces removed
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section6-step1-1.png)
+![mrlearning-speech 12](images/mrlearning-speech/tutorial1-section6-step1-1.png)
 
 ## Using speech recognition to transcribe speech
 
 In the Hierarchy window, select the **Lunarcom** object, then in the Inspector window, use the **Add Component** button to add the **Lunarcom Speech Recognizer (Script)** component to the Lunarcom object:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section7-step1-1.png)
+![mrlearning-speech 13](images/mrlearning-speech/tutorial1-section7-step1-1.png)
 
 > [!NOTE]
 > The Lunarcom Speech Recognizer (Script) component is not part of MRTK. It was provided with this tutorial's assets.
 
 If you now enter Game mode, you can test the speech recognition by first pressing the microphone button:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section7-step1-2.png)
+![mrlearning-speech 14](images/mrlearning-speech/tutorial1-section7-step1-2.png)
 
 Then, assuming your computer has a microphone, when you say something, your speech will be transcribed on the terminal panel:
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section7-step1-3.png)
+![mrlearning-speech 15](images/mrlearning-speech/tutorial1-section7-step1-3.png)
 
 > [!CAUTION]
 > The application needs to connect to Azure, so make sure your computer/device is connected to the internet.
