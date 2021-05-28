@@ -83,11 +83,11 @@ After you have imported the tutorial assets your Project window should look simi
 
 You need to setup the Unity project to publish the Azure Speech plugins for ARM64,to do this in the Project window, navigate to **Assets** > **SpeechSDK** > **Plugins** > **WSA** > **ARM64** and select **Microsoft.CognitiveServices.Speech.core** plugin.
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section4-step1-2.png)
+![mrlearning-speech](images/mrlearning-speech/tutorial1-section4-step1-2.PNG)
 
 with **Microsoft.CognitiveServices.Speech.core** plugin still selected, in the inspector window Enable **WSA Player** then under **Platform settings** select **UWP** for SDK, **ARM64** for CPU and click on Apply to apply these settings to the plugin.
 
-![mrlearning-speech](images/mrlearning-speech/tutorial1-section4-step1-3.png)
+![mrlearning-speech](images/mrlearning-speech/tutorial1-section4-step1-3.PNG)
 
 Repeat this steps for each of the remaining plugins:
 
