@@ -16,6 +16,8 @@ In this section, you will upgrade and install the following inbuilt packages:
 
 # [Unity 2020 + OpenXR](#tab/openxr)
 
+> [!NOTE]
+> Android/IOS Build for OpenXR is not supported at this time.
 
 # [Legacy WSA](#tab/wsa)
 

@@ -8,6 +8,8 @@ Close the Player Settings window and open the Build Settings window again.
 
 # [Unity 2020 + OpenXR](#tab/openxr)
 
+> [!NOTE]
+> Android/IOS Build for OpenXR is not supported at this time.
 
 # [Legacy WSA](#tab/wsa)
 

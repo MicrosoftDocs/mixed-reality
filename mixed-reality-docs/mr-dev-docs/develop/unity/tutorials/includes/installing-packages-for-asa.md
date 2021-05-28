@@ -22,6 +22,8 @@ After you have imported the tutorial assets your Project window should look simi
 
 # [Unity 2020 + OpenXR](#tab/openxr)
 
+> [!NOTE]
+> Android/IOS Build for OpenXR is not supported at this time.
 
 # [Legacy WSA](#tab/wsa)
 
