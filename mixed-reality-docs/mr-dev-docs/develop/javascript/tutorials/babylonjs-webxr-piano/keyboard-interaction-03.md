@@ -451,7 +451,7 @@ try {
 
 We added a try-catch block around the hand-tracking code so that the web page would not fail rendering completely if the hand-tracking feature isn't available on the device that opens the page.
 
-Also, just as the console messaged indicated, if your device supports hand-tracking but the feature doesn't work directly, you might have to enable the "WebXR Hand Input" flag in your browser (and restart the browser for the change to take effect).
+Also, just as the console message indicated, if your device supports hand-tracking but the feature doesn't work directly, you might have to enable the "WebXR Hand Input" flag in your browser (and restart the browser for the change to take effect).
 
 ## Summary
 
