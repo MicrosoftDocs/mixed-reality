@@ -455,7 +455,17 @@ Also, just as the console message indicated, if your device supports hand-tracki
 
 ## Summary
 
-Great job following through the tutorial series. Here is the final code for *scene.js* and *index.html*:
+Congratulations! You've completed our series of the babylon.js piano-building tutorial and learned how to:
+
+> [!div class="checklist"]
+> * Create, position, and merge meshes to build a model of a piano keyboard
+> * Import a babylon.js model of a standup piano frame
+> * Add pointer interactions to each piano key
+> * Scale the size of meshes based on a pivot point
+> * Enable key WebXR features such as teleportation and multipointer support
+> * (Optional) Enable hand tracking WebXR feature
+
+Here is the final code for *scene.js* and *index.html*:
 
 *scene.js*
 
@@ -663,15 +673,5 @@ const createScene = async function(engine) {
 ```
 
 ## Next steps
-
-Congratulations! You've completed our series of the babylon.js piano-building tutorial and learned how to:
-
-> [!div class="checklist"]
-> * Create, position, and merge meshes to build a model of a piano keyboard
-> * Import a babylon.js model of a standup piano frame
-> * Add pointer interactions to each piano key
-> * Scale the size of meshes based on a pivot point
-> * Enable key WebXR features such as teleportation and multipointer support
-> * (Optional) Enable hand tracking WebXR feature
 
 For more information on Mixed Reality JavaScript development see [JavaScript development overview](/javascript-development-overview.md).
