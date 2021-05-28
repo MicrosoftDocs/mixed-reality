@@ -55,7 +55,7 @@ If you installed Unity without these options, you can add them through **'Add Mo
 > The recommended MRTK version for this tutorial series is MRTK 2.7.
 
 > [!CAUTION]
-> This tutorial series supports Unity 2019 LTS (currently 2019.4.x) if you are using Legacy WSA or Window XR Plugin and also Unity 2020 LTS(currently 2020.3.x) if you are using Window XR Plugin or Open XR. This supersedes any Unity version requirements stated in the prerequisites linked above.
+> This tutorial series supports Unity 2019 LTS (currently 2019.4.x) if you are using Legacy WSA or Windows XR Plugin and also Unity 2020 LTS(currently 2020.3.x) if you are using Windows XR Plugin or Open XR. This supersedes any Unity version requirements stated in the prerequisites linked above.
 
 > [!div class="nextstepaction"]
 > [Next Tutorial: 2. Initializing your project and deploying your first application](mr-learning-base-02.md)
