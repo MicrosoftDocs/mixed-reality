@@ -6,11 +6,23 @@ ms.author: roliu
 ms.date: 05/27/2021
 ms.localizationpriority: medium
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, XRSDK, Legacy XR, Leap Motion, Ultraleap
+monikerRange: '>= mrtkunity-2021-05'
 ---
 
 # Microsoft Mixed Reality Toolkit 2.7 Release Notes
 
 ## What's new in 2.7.0
+
+### OpenXR is now officially supported in MRTK
+
+As the new OpenXR plugins are becoming more and more mature MRTK now officially supports OpenXR. Compared to previous releases we added the following capabilities to projects using OpenXR:
+
+- [Support for the system-provided motion controller model](#support-for-the-system-provided-motion-controller-model-on-openxr)
+- Support for WinMR gestures (select, hold, manipulation and navigation) [#9843](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9843)
+- [Support for controller haptics](#support-for-controller-haptics-across-legacy-wmr-windows-xr-plugin-and-openxr)
+- [Support for articulated hand mesh on HoloLens 2](#support-for-holoLens-2-articulated-hand-mesh-on-openxr)
+- Support for Spatial Mapping on HoloLens 2 [#9567](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9567), [#9827](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9827)
+- Support for Scene Understanding on HoloLens 2 [#9744](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9744)
 
 ### Legacy XR and XR SDK Data Providers can now be used within the same profile
 
@@ -75,10 +87,6 @@ Added support, both in-editor and at runtime, for the system-provided motion con
 
 ![Editor window showing two motion controller models](https://user-images.githubusercontent.com/3580640/116493405-89a55d80-a853-11eb-95ae-d430e6fdc8b4.png)
 
-### Support for WinMR gestures (select, hold, manipulation, navigation) on OpenXR
-
-Added support for WinMR gestures (select, hold, manipulation, navigation) on OpenXR. [#9843](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9843).
-
 ### Support for HoloLens 2 articulated hand mesh on OpenXR
 
 ![The hand mesh running on-device in an MRTK example scene](https://user-images.githubusercontent.com/3580640/112909923-32bb3580-90a7-11eb-925d-464b135edc61.png)
@@ -86,10 +94,6 @@ Added support for WinMR gestures (select, hold, manipulation, navigation) on Ope
 ### Support for controller haptics across legacy WMR, Windows XR Plugin, and OpenXR
 
 Added support for controller haptics across legacy WMR, Windows XR Plugin, and OpenXR. [#9735](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9735)
-
-### Support for spatial mapping on OpenXR on HoloLens 2
-
-Added support for spatial mesh when using OpenXR on HoloLens 2. [#9567](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9567) and [#9827](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9827)
 
 ### Support for eye tracking on Windows XR Plugin
 
