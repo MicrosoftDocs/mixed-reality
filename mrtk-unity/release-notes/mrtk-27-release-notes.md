@@ -116,6 +116,21 @@ Added support for eye gaze when using Windows XR Plugin minimum versions of 2.7.
 
 ## Known Issues
 
+### Audio demos are missing an asmdef file (UPM pacakge)
+
+When importing MRTK via the Mixed Reality Feature Tool, samples and demos are added to the project using the Unity Package Manager UI. After importing the Audio demos, the `WindowsMicrophoneStreamDemo.unity` scene will not behave properly. This is a result of a missing .asmdef file for the sample.
+
+To work around this [issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9908), please perform the following steps:
+
+- Copy Library/PackageCache/com.microsoft.mixedreality.toolkit.examples@[...]/MRTK.Examples.asmdef into your "Assets/Samples/Mixed Reality Toolkit Examples" folder
+- Rename the copied file to Examples
+- Open the Examples file
+- In the Name box, replace the contents with Examples
+- Click Apply
+- Build and deploy
+
+This issue will be fixed in an upcoming MRTK release.
+
 ### MRTK build window triggers indefinite "Importing assets" dialog in Unity 2020.3
 
 There is a known [issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9723) with the MRTK build window on Unity 2020.3 where after successfully performing a UWP build, the "Importing assets" dialog does not complete. This issue is being investigated in partnership with Unity.
