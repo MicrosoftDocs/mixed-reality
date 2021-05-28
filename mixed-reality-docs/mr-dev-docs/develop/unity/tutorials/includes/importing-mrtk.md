@@ -2,7 +2,7 @@
 
 Once **MixedRealityFeatureTool** is opened, to access preview releases click on **Settings** and enable **Show preview releases** under **Feature** tab, then click on **ok** to save the settings.
 
-![MixedRealityFeatureTool for preview](../images/mr-learning-base/base-02-section4-step1-2-preview.png)
+![MixedRealityFeatureTool for preview](../images/mr-learning-base/base-02-section4-step1-2-preview.PNG)
 
 next click on **Start** to get started with Mixed Reality Feature Tool.
 
