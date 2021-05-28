@@ -23,7 +23,7 @@ MRTK-Unity is a Microsoft-driven project that provides a set of components and f
 
 | Platform | Supported Devices |
 |---|---|
-| OpenXR (Unity 2020.2 or newer) | Microsoft HoloLens 2 <br> Windows Mixed Reality headsets |
+| OpenXR (Unity 2020.3) | Microsoft HoloLens 2 <br> Windows Mixed Reality headsets |
 | Windows Mixed Reality | Microsoft HoloLens <br> Microsoft HoloLens 2 <br> Windows Mixed Reality headsets  |
 | Oculus (Unity 2019.3 or newer) | Oculus Quest |
 | OpenVR |  Windows Mixed Reality headsets <br> HTC Vive <br> Oculus Rift |
@@ -51,7 +51,7 @@ Want to see what's going on under the hood?
 
 ## Documentation
 
-| [![Release notes](features/images/MRTK_Icon_ReleaseNotes.png)](release-notes/mrtk-26-release-notes.md)<br/>[Release Notes](release-notes/mrtk-26-release-notes.md)| [![MRTK Overview](features/images/MRTK_Icon_ArchitectureOverview.png)](architecture/overview.md)<br/>[MRTK Overview](architecture/overview.md)|[![API Reference](features/images/MRTK_Icon_APIReference.png)](/dotnet/api/Microsoft.MixedReality.Toolkit)<br/>[API Reference](/dotnet/api/Microsoft.MixedReality.Toolkit)|
+| [![Release notes](features/images/MRTK_Icon_ReleaseNotes.png)](release-notes/mrtk-27-release-notes.md)<br/>[Release Notes](release-notes/mrtk-26-release-notes.md)| [![MRTK Overview](features/images/MRTK_Icon_ArchitectureOverview.png)](architecture/overview.md)<br/>[MRTK Overview](architecture/overview.md)|[![API Reference](features/images/MRTK_Icon_APIReference.png)](/dotnet/api/Microsoft.MixedReality.Toolkit)<br/>[API Reference](/dotnet/api/Microsoft.MixedReality.Toolkit)|
 |:---|:---|:---|
 
 ## Build status
