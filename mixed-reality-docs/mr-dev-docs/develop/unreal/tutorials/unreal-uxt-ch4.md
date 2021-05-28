@@ -15,26 +15,28 @@ In the previous tutorial, you added an ARSession, Pawn, and Game Mode to complet
 
 ## Objectives
 
-* Installing the Mixed Reality UX Tools plugin from GitHub
+* Installing the Mixed Reality UX Tools plugin
 * Adding Hand Interaction Actors to your fingertips
 * Creating and adding Manipulators to objects in the scene
 * Using input simulation to validate the project
 
 ## Downloading the Mixed Reality UX Tools plugin
-Before you start working with user input, you'll need to add the plugin to the project.
+Before you start working with user input, you'll need to add the Mixed Reality UX Tools plugin to the project. To learn more about UX Tools, you can check out the project on [GitHub](https://aka.ms/uxt-unreal).
 
-1. On the Mixed Reality UX Tools [releases page](https://github.com/microsoft/MixedReality-UXTools-Unreal/releases) on GitHub, navigate to the UX Tools for Unreal v0.10.0 release and download **UXTools.0.10.0.zip**. Unzip the file.
+1. Open the Epic Games Launcher. Navigate to Unreal Engine Marketplace and search for "[Mixed Reality UX Tools](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-ux-tools)". Install the plugin to your engine.
 
-2.	Create a new folder called **Plugins** in the root folder of the project. Copy the unzipped UXTools plugin into this folder and restart the Unreal editor.
+![Unreal Marketplace](images/unreal-uxt/2-openxr-plugin.PNG)
 
-![Create a project plugins folder](images/unreal-uxt/4-plugins.PNG)
+2. Back in the Unreal editor, go to **Project Settings** > **Plugins** and search for "Mixed Reality UX Tools". Ensure the plugin is enabled and restart the editor if prompted.
 
-3.	The UXTools plugin has a Content folder with subfolders for components, including **Buttons**, **Input Simulation**, and **Pointers**, and a C++ Classes folder with additional code.  
+![Enabling Mixed Reality UX Tools plugin](images/unreal-uxt/2-enable-uxt.PNG)
+
+3.	The UXTools plugin has a Content folder with subfolders for components, including **Buttons**, **XR Simulation**, and **Pointers**, and a C++ Classes folder with additional code.  
 
 > [!NOTE]
-> If you don’t see the **UXTools Content** section in the **Content Browser**, click **View Options > Show Plugin Content**.
+> If you don’t see the **UXTools Content** section in the **Content Browser**, click **View Options > Show Engine Content**.
 
-![Show plugin content](images/unreal-uxt/4-showplugincontent.PNG)
+![Show engine content](images/unreal-uxt/4-showenginecontent.PNG)
 
 Additional plugin documentation can be found on the Mixed Reality UX Tools GitHub [repository](https://aka.ms/uxt-unreal).
 

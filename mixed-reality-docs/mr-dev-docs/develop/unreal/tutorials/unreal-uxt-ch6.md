@@ -29,7 +29,7 @@ If you're going this route with the chess app, you'll need a few things:
 
 ![Default RHI](../images/unreal/performance-recommendations-img-09.png)
 
-2.	Back in the Unreal editor, go to **Edit > Project Settings** and check **Enable Remoting** in the **Holographic Remoting** section.
+2.	Back in the Unreal editor, go to **Edit > Project Settings** and check **Enable Remoting** in the **Open XR Holographic Remoting** section.
 
 3.	Restart the editor, then enter your device's IP address (as displayed in the Holographic Remoting Player app), then click **Connect**.
 
