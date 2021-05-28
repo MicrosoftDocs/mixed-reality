@@ -38,10 +38,11 @@ Tutorials in this series are meant to be sequential, so please go through them i
 * [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 or later
 * A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
 
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019 LTS (currently 2019.4.x) installed and the Universal Windows Platform Build Support module added
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019 LTS (currently 2019.4.x) or Unity 2020 LTS(currently 2020.3.x) installed and the Universal Windows Platform Build Support module added
 
 When installing Unity, please make sure to check following components under **'Platforms'**.
-* **Universal Windows Platform Build Support** 
+
+* **Universal Windows Platform Build Support**
 * **Windows Build Support (IL2CPP)**
 
 ![Unity Universal Windows Platform Build Support option](../../../develop/images/Unity_Install_Option_UWP.png)
@@ -51,10 +52,9 @@ If you installed Unity without these options, you can add them through **'Add Mo
 ![Unity Windows Build Support option](../../../develop/images/Unity_Install_Option_UWP2.png)
 
 > [!CAUTION]
-> The recommended MRTK version for this tutorial series is MRTK 2.6.
+> The recommended MRTK version for this tutorial series is MRTK 2.7.
 
 > [!CAUTION]
-
 > This tutorial series supports Unity 2019 LTS (currently 2019.4.x) if you are using Legacy WSA or Windows XR Plugin and also Unity 2020 LTS(currently 2020.3.x) if you are using Windows XR Plugin or Open XR. This supersedes any Unity version requirements stated in the prerequisites linked above.
 
 > [!div class="nextstepaction"]
