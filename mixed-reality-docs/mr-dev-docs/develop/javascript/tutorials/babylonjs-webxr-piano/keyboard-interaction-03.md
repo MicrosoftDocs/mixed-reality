@@ -302,7 +302,7 @@ Right now, the piano keyboard we have created is a static model that does not re
 
 By now, you have probably already played with the piano with your mouse (or even with a touch screen) as you added the interactive functionalities. In this section, we will be moving into the immersive VR space.
 
-1. In order to open the page in your immersive VR headset, you must first connect your headset to your laptop (where you are developing on) and make sure that it is [set up for use in the Windows Mixed Reality App](../../../../../../enthusiast-guide/set-up-windows-mixed-reality.md). If you're using the Windows Mixed Reality Simulator, [make sure that it is enabled](../../../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md).
+1. In order to open the page in your immersive VR headset, you must first connect your headset to your developer machine and make sure that it is [set up for use in the Windows Mixed Reality App](../../../../../../enthusiast-guide/set-up-windows-mixed-reality.md). If you're using the Windows Mixed Reality Simulator, [make sure that it is enabled](../../../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md).
 
 1. You will now see a Immersive VR button at the bottom right of the web page. Click on it and you will be able to see the piano in the XR device you are connected to.
 
