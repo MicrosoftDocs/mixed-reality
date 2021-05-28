@@ -135,7 +135,7 @@ const createScene = async function(engine) {
     var referencePositionX = -2.4*14;
     for (let octave = 1; octave <= 7; octave++) {
         keyParams.forEach(key => {
-            keys.add(key.build(scene, octave, referencePositionX))
+            keys.add(key.build(scene, octave, referencePositionX));
         })
         referencePositionX += 2.4*7;
     }
@@ -143,11 +143,11 @@ const createScene = async function(engine) {
     // Register 0
     keys.add(WhiteKey("A", 1.9, 2.3, -0.20, -2.4).build(scene, 0, -2.4*21))
     keyParams.slice(10, 12).forEach(key => {
-        keys.add(key.build(scene, 0, -2.4*21))
+        keys.add(key.build(scene, 0, -2.4*21));
     })
     
     // Register 8
-    keys.add(WhiteKey("C", 2.3, 2.3, 0, -2.4*6).build(scene, 8, 84))
+    keys.add(WhiteKey("C", 2.3, 2.3, 0, -2.4*6).build(scene, 8, 84));
 
     // Import piano frame
     BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/JING1201/babylonjs-exploration/main/piano-keys/", "pianoFrame.babylon", scene);
@@ -239,7 +239,7 @@ Right now, the piano keyboard we have created is a static model that does not re
 
     ![Interactive Piano Keys](./images/interactive-piano-keys.gif)
 
-1. Now let's work on playing and stopping a sound when a key is pressed and released. To achieve this, we will be utilizing a Javascript library named **soundfont-player**, which allows us to easily play MIDI sounds of an instrument we choose. 
+1. Now let's work on playing and stopping a sound when a key is pressed and released. To achieve this, we will be utilizing a Javascript library named **soundfont-player**, which allows us to easily play MIDI sounds of an instrument we choose.
 
     [Download the minified code of the library](https://github.com/JING1201/babylonjs-exploration/blob/89f60cf8fbc3a3d64afce70026cde0513ed59075/piano-keys/soundfont-player.min.js), save it in the same folder as *index.html*, and include it in the `<header>` tag in *index.html*:
 
@@ -248,18 +248,14 @@ Right now, the piano keyboard we have created is a static model that does not re
         <title>Babylon Template</title>
         <script src="https://cdn.babylonjs.com/babylon.js"></script>
         <script src="scene.js"></script>
-        // Add the script here
         <script src="soundfont-player.min.js"></script>
         <style>
-            html, body, #renderCanvas {
-                width: 100%;
-                height: 100%;
-            }
+                body,#renderCanvas { width: 100%; height: 100%;}
         </style>
     </head>
     ```
 
-    Additionally, here is how we can initialize an instrument and play/stop MIDI sounds using the library:
+    Once the library is imported, here is how we can initialize an instrument and play/stop MIDI sounds using the library:
 
     ```javascript
     const piano = await Soundfont.instrument(new AudioContext(), 'acoustic_grand_piano');
@@ -306,7 +302,7 @@ Right now, the piano keyboard we have created is a static model that does not re
 
 By now, you have probably already played with the piano with your mouse (or even with a touch screen) as you added the interactive functionalities. In this section, we will be moving into the immersive VR space.
 
-1. In order to open the page in your immersive VR headset , you must first connect your headset to your laptop (where you are developing on) and make sure that it is [set up for use in the Windows Mixed Reality App](../../../../../../enthusiast-guide/set-up-windows-mixed-reality.md). If you're using the Windows Mixed Reality Simulator, [make sure that it is enabled](../../../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md).
+1. In order to open the page in your immersive VR headset, you must first connect your headset to your laptop (where you are developing on) and make sure that it is [set up for use in the Windows Mixed Reality App](../../../../../../enthusiast-guide/set-up-windows-mixed-reality.md). If you're using the Windows Mixed Reality Simulator, [make sure that it is enabled](../../../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md).
 
 1. You will now see a Immersive VR button at the bottom right of the web page. Click on it and you will be able to see the piano in the XR device you are connected to.
 
@@ -316,7 +312,7 @@ By now, you have probably already played with the piano with your mouse (or even
 
     ![Huge piano](./images/huge-piano.jpg)
 
-1. Let's scale down the piano so that it's size is more like a normal standup piano in real life. To do so, we will need to use [a utility function that allows us to scale a mesh relative to a point in the space](https://doc.babylonjs.com/toolsAndResources/utilities/Pivot#enlargement). Add this function to *scene.js* (outside of `createScene()`):
+1. Let's scale down the piano so that its size is more like a normal standup piano in real life. To do so, we will need to use [a utility function that allows us to scale a mesh relative to a point in the space](https://doc.babylonjs.com/toolsAndResources/utilities/Pivot#enlargement). Add this function to *scene.js* (outside of `createScene()`):
 
     ```javascript
     BABYLON.Mesh.prototype.scaleFromPivot = function(pivotPoint, sx, sy, sz) {
@@ -333,18 +329,20 @@ By now, you have probably already played with the piano with your mouse (or even
     ```javascript
     // Put this line at the beginning of createScene()
     const scale = 0.015;
+    ```
 
-    /* other code */
-
-    keys.forEach(key => {
-        key.position.y += 80;
-        key.scaleFromPivot(new BABYLON.Vector3(0, 0, 0), scale, scale, scale);
-    })
-    
+    ```javascript
+    // Import and scale piano frame
     BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/JING1201/babylonjs-exploration/main/piano-keys/", "pianoFrame.babylon", scene, function(meshes) {
         const frame = meshes[0];
         frame.scaleFromPivot(new BABYLON.Vector3(0, 0, 0), scale, scale, scale);
     });
+
+    // Lift and scale piano keyboard
+    keys.forEach(key => {
+        key.position.y += 80;
+        key.scaleFromPivot(new BABYLON.Vector3(0, 0, 0), scale, scale, scale);
+    })
     ```
 
 1. Let's not forget to scale the piano key movements and the camera positions as well:
@@ -357,9 +355,9 @@ By now, you have probably already played with the piano with your mouse (or even
     
     const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target, scene);
     camera.attachControl(canvas, true);
+    ```
 
-    /*other code*/
-
+    ```javascript
     scene.onPointerObservable.add((pointerInfo) => {
         switch (pointerInfo.type) {
             case BABYLON.PointerEventTypes.POINTERDOWN:
@@ -480,7 +478,7 @@ const BlackKey = function (note, wholePositionX) {
             // Create black color material
             const blackMat = new BABYLON.StandardMaterial("black");
             blackMat.diffuseColor = new BABYLON.Color3(0, 0, 0);
-            
+
             // Create black key
             const key = BABYLON.MeshBuilder.CreateBox(note + register, {width: 1.4, height: 2, depth: 5}, scene);
             key.position.z += 4.75;
@@ -502,17 +500,17 @@ BABYLON.Mesh.prototype.scaleFromPivot = function(pivotPoint, sx, sy, sz) {
 }
 
 const createScene = async function(engine) {
-    const scene = new BABYLON.Scene(engine);
     const scale = 0.015;
+    const scene = new BABYLON.Scene(engine);
 
     const alpha =  3*Math.PI/2;
     const beta = Math.PI/50;
     const radius = 220*scale;
     const target = new BABYLON.Vector3(0, 0, 0);
-    
+
     const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target, scene);
     camera.attachControl(canvas, true);
-    
+
     const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
     light.intensity = 0.6;
 
@@ -530,7 +528,7 @@ const createScene = async function(engine) {
         BlackKey("A#", -0.85),
         WhiteKey("B", 1.3, 2.4, 0.55, 0)
     ]
-    
+
     const keys = new Set();
 
     // Register 1 through 7
@@ -547,19 +545,21 @@ const createScene = async function(engine) {
     keyParams.slice(10, 12).forEach(key => {
         keys.add(key.build(scene, 0, -2.4*21))
     })
-    
+
     // Register 8
     keys.add(WhiteKey("C", 2.3, 2.3, 0, -2.4*6).build(scene, 8, 84))
 
-    keys.forEach(key => {
-        key.position.y += 80;
-        key.scaleFromPivot(new BABYLON.Vector3(0, 0, 0), scale, scale, scale);
-    })
-    
+    // Import and scale piano frame
     BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/JING1201/babylonjs-exploration/main/piano-keys/", "pianoFrame.babylon", scene, function(meshes) {
         const frame = meshes[0];
         frame.scaleFromPivot(new BABYLON.Vector3(0, 0, 0), scale, scale, scale);
     });
+
+    // Lift and scale piano keyboard
+    keys.forEach(key => {
+        key.position.y += 80;
+        key.scaleFromPivot(new BABYLON.Vector3(0, 0, 0), scale, scale, scale);
+    })
 
     const pointerToKey = new Map()
     const piano = await Soundfont.instrument(new AudioContext(), 'acoustic_grand_piano');
@@ -622,16 +622,11 @@ const createScene = async function(engine) {
     <head>
         <title>Babylon Template</title>
         <script src="https://cdn.babylonjs.com/babylon.js"></script>
+        <script src="scene.js"></script>
         <script src="soundfont-player.min.js"></script>
-        <script src="piano-keys/piano_keys.js"></script>
         <style>
-            html, body, #renderCanvas {
-                width: 100%;
-                height: 100%;
-            }
+            body,#renderCanvas { width: 100%; height: 100%;}
         </style>
-
-        
     </head>
    <body>
     <canvas id="renderCanvas"></canvas>

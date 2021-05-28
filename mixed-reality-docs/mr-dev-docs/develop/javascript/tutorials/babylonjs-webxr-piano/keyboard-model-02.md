@@ -120,7 +120,7 @@ Visually, each register looks exactly the same as another, so we can start with 
 
     ![White Key C](./images/white-key-c.png)
 
-1. Creating a black key is simpler. Since all black keys are of the shape of a box, we can create a black key just by creating a box mesh with a black-colored [StandardMaterial](https://doc.babylonjs.com/divingDeeper/materials/using/materials_introduction#color) to it.
+1. Creating a black key is simpler. Since all black keys are of the shape of a box, we can create a black key just by creating a box mesh with a black-colored [StandardMaterial](https://doc.babylonjs.com/divingDeeper/materials/using/materials_introduction#color).
 
     > [!NOTE]
     > Since the default mesh color is a light grey that resembles white, this tutorial doesn't include steps to add a white color material to the white keys. However, feel free to add the material yourself if you'd like a true, bright white color on the white keys.
@@ -267,7 +267,7 @@ In this section, let's expand the usage of the key-creation functions to generat
     var referencePositionX = -2.4*14;
     for (let register = 1; register <= 7; register++) {
         keyParams.forEach(key => {
-            keys.add(key.build(scene, register, referencePositionX))
+            keys.add(key.build(scene, register, referencePositionX));
         })
         referencePositionX += 2.4*7;
     }
@@ -281,11 +281,11 @@ In this section, let's expand the usage of the key-creation functions to generat
     // Register 0
     keys.add(WhiteKey("A", 1.9, 2.3, -0.20, -2.4).build(scene, 0, -2.4*21))
     keyParams.slice(10, 12).forEach(key => {
-        keys.add(key.build(scene, 0, -2.4*21))
+        keys.add(key.build(scene, 0, -2.4*21));
     })
     
     // Register 8
-    keys.add(WhiteKey("C", 2.3, 2.3, 0, -2.4*6).build(scene, 8, 84))
+    keys.add(WhiteKey("C", 2.3, 2.3, 0, -2.4*6).build(scene, 8, 84));
     ```
 
     Note that the left-most key and the right-most key of the piano keyboard don't fit into the dimensions of the objects defined in `keyParams` (because they are not next to a black key at the edge), so we need to create a new `WhiteKey` object for each of them to specify their special shape.
@@ -303,12 +303,14 @@ In this section, let's expand the usage of the key-creation functions to generat
     However, we will leave that challenge for you to try on your own and use [BABYLON.SceneLoader.ImportMesh](https://doc.babylonjs.com/divingDeeper/importers/loadingFileTypes#sceneloaderimportmesh) to import a pre-made mesh of a standup piano frame. Add this line of code to `createScene()`:
 
     ```javascript
+    // Import piano frame
     BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/JING1201/babylonjs-exploration/main/piano-keys/", "pianoFrame.babylon", scene);
     ```
 
 1. Once the frame is imported, notice that the keyboard is lying at the bottom of the frame (since the y-coordinates of the keys are at 0 by default). Let's lift the keyboard so that it fits into the standup piano frame:
 
     ```javascript
+    // Lift piano keys
     keys.forEach(key => {
         key.position.y += 80;
     })
@@ -392,7 +394,7 @@ In this section, let's expand the usage of the key-creation functions to generat
         var referencePositionX = -2.4*14;
         for (let octave = 1; octave <= 7; octave++) {
             keyParams.forEach(key => {
-                keys.add(key.build(scene, octave, referencePositionX))
+                keys.add(key.build(scene, octave, referencePositionX));
             })
             referencePositionX += 2.4*7;
         }
@@ -400,11 +402,11 @@ In this section, let's expand the usage of the key-creation functions to generat
         // Register 0
         keys.add(WhiteKey("A", 1.9, 2.3, -0.20, -2.4).build(scene, 0, -2.4*21))
         keyParams.slice(10, 12).forEach(key => {
-            keys.add(key.build(scene, 0, -2.4*21))
+            keys.add(key.build(scene, 0, -2.4*21));
         })
         
         // Register 8
-        keys.add(WhiteKey("C", 2.3, 2.3, 0, -2.4*6).build(scene, 8, 84))
+        keys.add(WhiteKey("C", 2.3, 2.3, 0, -2.4*6).build(scene, 8, 84));
 
         // Import piano frame
         BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/JING1201/babylonjs-exploration/main/piano-keys/", "pianoFrame.babylon", scene);
