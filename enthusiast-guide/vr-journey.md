@@ -77,7 +77,7 @@ Find immersive games, desktop applications, and VR content in the resources belo
 | [Using SteamVR](using-steamvr-with-windows-mixed-reality.md) | Connect your device and play SteamVR games and learn about the Windows Insider Program |
 | [Using Microsoft Edge](using-microsoft-edge.md) | Install the latest version of Microsoft Edge on your immersive device |
 | [Using WebVR](webvr.md) | Get setup to experience VR in your browser environment |
-| [Explore AltspaceVR](https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey) | Explore the expanding world of VR events with AltspaceVR |
+| [Explore AltspaceVR](/windows/mixed-reality/altspace-vr/journey) | Explore the expanding world of VR events with AltspaceVR |
 
 ## Troubleshooting, tips & resources
 

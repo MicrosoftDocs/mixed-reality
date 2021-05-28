@@ -20,7 +20,7 @@ A slider is a UI component used to set a value. It provides a visual indication 
 
 ## Slider in MRTK (Mixed Reality Toolkit) for Unity
 
-* [MRTK - Slider](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/sliders)
+* [MRTK - Slider](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/sliders)
 
 <br>
 

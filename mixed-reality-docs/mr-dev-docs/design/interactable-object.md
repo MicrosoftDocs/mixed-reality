@@ -255,13 +255,13 @@ When creating buttons for direct interaction, we recommend a larger minimum size
 
 In **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can use the script [**Interactable**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) to make objects respond to various types of input interaction states. It supports various types of themes that allow you define visual states by controlling object properties such as color, size, material, and shader.
 
-* [Interactable](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable)
-* [Button](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button)
+* [Interactable](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable)
+* [Button](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button)
 * [Hand interaction examples scene](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
 
 MixedRealityToolkit's Standard shader provides various options such as **proximity light** that helps you create visual and audio cues.
 
-* [MRTK Standard Shader](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
+* [MRTK Standard Shader](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
 
 <br>
 

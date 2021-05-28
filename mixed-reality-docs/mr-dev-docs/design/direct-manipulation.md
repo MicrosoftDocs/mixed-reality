@@ -330,7 +330,7 @@ If the user hasn't looked at a hologram for a while, yet a touch or grasp event 
 ## Manipulation in MRTK (Mixed Reality Toolkit) for Unity
 With **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can easily achieve common manipulation behavior using the script **ObjectManipulator**. With ObjectManipulator, you can grab and move objects directly with hands or with hand ray. It also supports two-handed manipulation for scaling and rotating an object.
 
-* [MRTK - Manipulation](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-manipulator)
+* [MRTK - Manipulation](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-manipulator)
 
 ---
 
