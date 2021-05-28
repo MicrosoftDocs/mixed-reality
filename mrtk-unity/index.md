@@ -51,7 +51,7 @@ Want to see what's going on under the hood?
 
 ## Documentation
 
-| [![Release notes](features/images/MRTK_Icon_ReleaseNotes.png)](release-notes/mrtk-26-release-notes.md)<br/>[Release Notes](release-notes/mrtk-26-release-notes.md)| [![MRTK Overview](features/images/MRTK_Icon_ArchitectureOverview.png)](architecture/overview.md)<br/>[MRTK Overview](architecture/overview.md)|[![API Reference](features/images/MRTK_Icon_APIReference.png)](/dotnet/api/Microsoft.MixedReality.Toolkit)<br/>[API Reference](/dotnet/api/Microsoft.MixedReality.Toolkit)|
+| [![Release notes](features/images/MRTK_Icon_ReleaseNotes.png)](release-notes/mrtk-27-release-notes.md)<br/>[Release Notes](release-notes/mrtk-26-release-notes.md)| [![MRTK Overview](features/images/MRTK_Icon_ArchitectureOverview.png)](architecture/overview.md)<br/>[MRTK Overview](architecture/overview.md)|[![API Reference](features/images/MRTK_Icon_APIReference.png)](/dotnet/api/Microsoft.MixedReality.Toolkit)<br/>[API Reference](/dotnet/api/Microsoft.MixedReality.Toolkit)|
 |:---|:---|:---|
 
 ## Build status
