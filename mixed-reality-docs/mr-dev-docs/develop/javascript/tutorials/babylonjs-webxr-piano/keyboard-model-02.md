@@ -93,6 +93,9 @@ Visually, each register looks exactly the same as another, so we can start with 
 
 ## Build a simple piano keyboard
 
+> [!NOTE]
+> While it is possible to find pre-made 3D models of piano keyboards from online sources and import them into our webpage, we will build the keyboard from scratch in this tutorial to allow maximum customizability and to showcase how 3D models can be created through babylon.js.
+
 1. Before we begin to create any meshes for building the keyboard, notice that each black key is not perfectly aligned at the middle of the two white keys around it, and not every key has the same width. This means that we must create and position the mesh for each key individually.
 
     ![Black Key Alignment](./images/black-key-position.png)
