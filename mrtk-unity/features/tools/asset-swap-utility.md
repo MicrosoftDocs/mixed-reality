@@ -1,5 +1,5 @@
 ---
-title: Asset swap utility
+title: Asset Swap Utility
 description: Documentation on using the asset swap utility in MRTK for Unity.
 author: hferrone
 ms.author: v-hferrone

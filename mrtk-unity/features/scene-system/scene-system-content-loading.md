@@ -1,5 +1,5 @@
 ---
-title: SceneSystemContentLoading
+title: Scene System Content Loading
 description: Documentation loading Scene system with MRTK
 author: polar-kev
 ms.author: kesemple

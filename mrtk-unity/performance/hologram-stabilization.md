@@ -1,5 +1,5 @@
 ---
-title: hologram-stabilization
+title: Hologram Stabilization
 description: Performance of holograms under different environment and frame rate conditions.
 author: keveleigh
 ms.author: kurtie
@@ -128,7 +128,7 @@ public void RemoveAnchor()
 If you want an alternative to manually working with Anchors, check out the Microsoft World Locking Tools. 
 
 > [!div class="nextstepaction"]
-> [Instal with the MR Feature Tool](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/WLTviaMRFeatureTool.html)
+> [Install with the MR Feature Tool](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/WLTviaMRFeatureTool.html)
 
 ## See also
 

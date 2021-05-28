@@ -1,5 +1,5 @@
 ---
-title: CodingGuidelines
+title: Coding Guidelines
 description:  coding principles and conventions to follow when contributing to MRTK.
 author: polar-kev
 ms.author: kesemple

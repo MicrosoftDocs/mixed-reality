@@ -1,5 +1,5 @@
 ---
-title: EyeTracking_EyeGazeProvider
+title: Eye Tracking Eye Gaze Provider
 description: Documentation for Eye Gaze provider in MRTK
 author: CDiaz-MS
 ms.author: cadia

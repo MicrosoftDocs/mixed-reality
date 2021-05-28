@@ -1,5 +1,5 @@
 ---
-title: UsingVisualProfiler
+title: Using Visual Profiler
 description: documentation to use Visual profiler in MRTK
 author: davidkline-ms
 ms.author: davidkl

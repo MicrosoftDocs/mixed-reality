@@ -1,5 +1,5 @@
 ---
-title: DependencyWindow
+title: Dependency Window
 description: Documentation on usage of dependency window in MRTK
 author: keveleigh
 ms.author: kurtie
@@ -15,7 +15,7 @@ The Dependency Window displays how assets reference and depend on each other. De
 
 ## Usage
 
-To open the window, select *Mixed Reality Toolkit->Utilities->Dependency Window* which will open the window and automatically begin building your project's dependency graph. Once the dependency graph is built, you can select assets in the project tab to inspect their dependencies.
+To open the window, select **Mixed Reality** > **Toolkit** > **Utilities** > **Dependency Window** which will open the window and automatically begin building your project's dependency graph. Once the dependency graph is built, you can select assets in the project tab to inspect their dependencies.
 
 ![Dependency window](../images/dependency-window/MRTK_Dependency_Window.png)
 

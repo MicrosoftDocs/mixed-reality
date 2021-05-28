@@ -44,58 +44,49 @@ highlightedContent:
     # Card
     - title: Explore AltspaceVR
       itemType: whats-new
-      url: https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey?tabs=application
-    
-# conceptualContent section (optional)
-conceptualContent:
-# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
-  title: Start with Windows Mixed Reality  # < 60 chars (optional)
+      url: /windows/mixed-reality/altspace-vr/journey?tabs=application
+
+# productDirectory section (optional)
+productDirectory:
+  title: Start with Windows Mixed Reality # < 60 chars (optional)
   summary: Find additional information about Mixed Reality software, hardware, and troubleshooting. # < 160 chars (optional)
   items:
     # Card
     - title: How-to's
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: images/WMR_Docs_Landing_How-To's.png
       links:
         - url: plug-in-your-headset.md
-          itemType: quickstart
           text: Connect your headset
         - url: install-windows-mixed-reality.md
-          itemType: quickstart
           text: Install Windows Mixed Reality software
         - url: learn-mixed-reality.md
-          itemType: quickstart
           text: Run the learning experience
         - url: using-games-and-apps-in-windows-mixed-reality.md
-          itemType: quickstart
           text: Use games and apps
     # Card
-    - title: References
+    - title: References 
+      imageSrc: images/WMR_Docs_Landing_References.png
       links:
         - url: your-mixed-reality-home.md
-          itemType: concept
           text: Your Mixed Reality home
         - url: controllers-in-wmr.md
-          itemType: concept
           text: Motion controllers in Windows Mixed Reality
         - url: using-steamvr-with-windows-mixed-reality.md
-          itemType: concept
           text: SteamVR with Windows Mixed Reality
         - url: using-speech-in-wmr.md
-          itemType: concept
           text: Speech in Windows Mixed Reality
     # Card
-    - title: Troubleshooting
+    - title: Troubleshooting 
+      imageSrc: images/WMR_Docs_Landing_TroubleShooting.png
       links:
         - url: troubleshooting-windows-mixed-reality.md
-          itemType: concept
-          text: General FAQ
+          text: Support and help options
         - url: filing-feedback.md
-          itemType: concept
           text: Filing bugs and feedback
         - url: error-codes.md
-          itemType: concept
           text: Error codes
         - url: installation_errors.md
-          itemType: concept
           text: Installation errors
 
 # additionalContent section (optional)

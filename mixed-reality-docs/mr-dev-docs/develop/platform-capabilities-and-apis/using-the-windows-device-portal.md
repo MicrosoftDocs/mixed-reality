@@ -377,6 +377,8 @@ For example, you can specify the criteria *(Task Name contains 'Foo' or 'Bar') A
 Allows you to record and play back input data for testing.
 * **Capture room**: Used to download a simulated room file that contains the spatial mapping mesh for the user's surroundings. Name the room and then click **Capture** to save the data as an .xef file on your PC. This room file can be loaded into the HoloLens emulator.
 * **Recording**: Check the streams to record, name the recording, and click or tap **Record** to start recoding. Perform actions with your HoloLens and then click **Stop** to save the data as an .xef file on your PC. This file can be loaded on the HoloLens emulator or device.
+  >[!NOTE]
+  >The Recording feature is currently only available on the HoloLens 1st gen. Recording is not yet supported on HoloLens 2, but Playback of existing recordings is supported.
 * **Playback**: Click or tap **Upload recording** to select a xef file from your PC and send the data to the HoloLens.
 * **Control mode**: Select **Default** or **Simulation** from the dropdown, and click or tap the **Set** button to select the mode on the HoloLens. Choosing "Simulation" disables the real sensors on your HoloLens and uses uploaded simulated data instead. If you switch to "Simulation", your HoloLens won't respond to the real user until you switch back to "Default".
 

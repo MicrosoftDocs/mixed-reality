@@ -132,8 +132,8 @@ Throwing will continue to improve with future Windows updates, and you can expec
 
 You can access gesture and motion controller from the input Manager.
 
-* [Gesture in MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/gestures)
-* [Motion Controller in MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/controllers)
+* [Gesture in MRTK](/windows/mixed-reality/mrtk-unity/features/input/gestures)
+* [Motion Controller in MRTK](/windows/mixed-reality/mrtk-unity/features/input/controllers)
 
 ## Follow along with tutorials
 

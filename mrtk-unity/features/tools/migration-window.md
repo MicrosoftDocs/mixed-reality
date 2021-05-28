@@ -1,5 +1,5 @@
 ---
-title: MigrationWindow
+title: Migration Window
 description: Documentation on how to migrate to an update in MRTK
 author: keveleigh
 ms.author: kurtie
@@ -16,7 +16,7 @@ The migration window is a tool that helps users to automatically migrate a subse
 
 ## Usage
 
-To open the window, select *Mixed Reality Toolkit* > *Utilities* > *Migration Window*. Once the migration window is open, the selection mode navigation tabs can be enabled by choosing the component specific implementation of the migration handler.  
+To open the window, select **Mixed Reality** > **Toolkit** > **Utilities** > **Migration Window**. Once the migration window is open, the selection mode navigation tabs can be enabled by choosing the component specific implementation of the migration handler.  
 
 ![Migration selection modes](../images/migration-window/MRTK_Migration_Modes.png)
 

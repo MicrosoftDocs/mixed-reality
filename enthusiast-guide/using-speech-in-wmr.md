@@ -36,7 +36,7 @@ Use the following speech commands throughout Windows Mixed Reality to get around
 | Select | Say “select” to bring up the gaze cursor. Then, turn your head to position the cursor on the thing you want to select, and say “select” again. |
 | Open the Start menu | Go to Start |
 | Leave an immersive app | Say "Go to Start" to bring up the quick actions menu, then say "Mixed reality home." |
-| Turn Flashlight on/off | Say "Go to Start" to bring up the quick actions menu, then say "Mixed reality home." |
+| Turn Flashlight on/off | Flashlight on / Flashlight off |
 | Teleport | Turn your head toward the place you want to go, and then say “teleport.” (For more precise targeting, first say “select” to bring up the gaze cursor, then say “teleport.”) |
 | Turn to the left or right | Turn left / turn right |
 | Turn 180 degrees | Turn around |

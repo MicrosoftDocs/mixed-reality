@@ -1,5 +1,5 @@
 ---
-title: HolographicRemoting
+title: Holographic Remoting
 description: Documentation Holographic Remoting MRTK
 author: keveleigh
 ms.author: kurtie
@@ -30,7 +30,7 @@ The instructions below only apply to remoting with HoloLens 2. If you only perfo
 
 When using a HoloLens 2, support for remoting articulated hand and eye tracking data has been added to MRTK. To enable these features, please follow the steps documented in [Import DotNetWinRT into the project](#import-dotnetwinrt-into-the-project).
 
-Once imported, the next step is to select **Mixed Reality Toolkit** > **Utilities** > **Windows Mixed Reality** > **Check Configuration**. This step adds a scripting define that enables the DotNetWinRT dependency.
+Once imported, the next step is to select **Mixed Reality** > **Toolkit** > **Utilities** > **Windows Mixed Reality** > **Check Configuration**. This step adds a scripting define that enables the DotNetWinRT dependency.
 
 > [!NOTE]
 > When using Unity 2019.4 and newer, it is not necessary to run the Check Configuration utility.

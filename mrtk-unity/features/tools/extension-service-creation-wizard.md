@@ -1,5 +1,5 @@
 ---
-title: ExtensionServiceCreationWizard
+title: Extension Service Creation Wizard
 description: Documentation on Wizard to make the transition from singletons to services MRTK
 author: keveleigh
 ms.author: kurtie

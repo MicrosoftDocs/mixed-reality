@@ -1,17 +1,17 @@
 ---
-title: UsingARFoundation
-description: Documentation to use ARFoundation in unity
+title: Android and iOS MRTK Configuration (ARFoundation)
+description: Documentation to configure MRTK for Android and iOS (ARFoundation) in unity
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, AR Core, AR Kit
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, AR Core, AR Kit, iOS, IOS, Android, AR Foundation
 ---
 
 # How to configure MRTK for iOS and Android [Experimental]
 
 ## Install required packages
 
-1. Download and import the **Microsoft.MixedReality.Toolkit.Unity.Foundation** package, from [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/tag/v2.3.0) or the [Unity Package Manager](../../configuration/usingupm.md)
+1. Download and import the **Microsoft.MixedReality.Toolkit.Unity.Foundation** package, from [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/tag/v2.3.0) or the [Unity Package Manager](../configuration/usingupm.md)
 
 1. In the Unity Package Manager (UPM), install the following packages:
 
@@ -36,7 +36,10 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, AR Core,
     | AR Foundation  <br/> Version: 3.1.3 |  AR Foundation  <br/> Version: 3.1.3 |
     | ARCore XR Plugin <br/> Version: 3.1.4 | ARKit XR Plugin <br/> Version: 3.1.3 |
 
-1. Update the MRTK UnityAR scripting defines by invoking the menu item: **Mixed Reality Toolkit > Utilities > UnityAR > Update Scripting Defines**
+1. Update the MRTK UnityAR scripting defines by invoking the menu item: **Mixed Reality > Toolkit > Utilities > UnityAR > Update Scripting Defines**
+
+    ![Update Scripting Defines](../features/images/UpdateScriptingDefineUnityAR.png)
+
 
 ## Enabling the Unity AR camera settings provider
 
@@ -44,29 +47,29 @@ The following steps presume use of the MixedRealityToolkit object. Steps require
 
 1. Select the MixedRealityToolkit object in the scene hierarchy.
 
-    ![MRTK Configured Scene Hierarchy](../images/MRTK_ConfiguredHierarchy.png)
+    ![MRTK Configured Scene Hierarchy](../features/images/MRTK_ConfiguredHierarchy.png)
 
 1. Select **Copy and Customize** to Clone the MRTK Profile to enable custom configuration.
 
-    ![Clone MRTK Profile](../images/camera-system/CloneProfileARFoundation.png)
+    ![Clone MRTK Profile](../features/images/camera-system/CloneProfileARFoundation.png)
 
 1. Select **Clone** next to the Camera Profile.
 
-    ![Clone MRTK Camera Profile](../images/camera-system/CloneCameraProfileARFoundation.png)
+    ![Clone MRTK Camera Profile](../features/images/camera-system/CloneCameraProfileARFoundation.png)
 
 1. Navigate the Inspector panel to the camera system section and expand the **Camera Settings Providers** section.
 
-    ![Expand settings providers](../images/camera-system/ExpandProviders.png)
+    ![Expand settings providers](../features/images/camera-system/ExpandProviders.png)
 
 1. Click **Add Camera Settings Provider** and expand the newly added **New camera settings** entry.
 
-    ![Expand new settings provider](../images/camera-system/ExpandNewProvider.png)
+    ![Expand new settings provider](../features/images/camera-system/ExpandNewProvider.png)
 
 1. Select the Unity AR Camera Settings provider
 
-    ![Select Unity AR settings provider](../images/camera-system/SelectUnityArSettings.png)
+    ![Select Unity AR settings provider](../features/images/camera-system/SelectUnityArSettings.png)
 
-    For more information about configuring the Unity AR camera settings provider: [Unity AR camera settings provider](../camera-system/unity-ar-camera-settings.md).
+    For more information about configuring the Unity AR camera settings provider: [Unity AR camera settings provider](../features/camera-system/unity-ar-camera-settings.md).
 
 > [!NOTE]
 > This installation checks (when the application starts) if the AR Foundation components are in the scene. If not, they are automatically added to make it work with ARCore and ARKit.
@@ -79,23 +82,13 @@ The following steps presume use of the MixedRealityToolkit object. Steps require
 
 1. Switch platform to either Android or iOS in the Unity Build Settings
 
-    When you switch the platform you should see the MRTK Project Configurator Window with settings for your chosen platform.  Click Apply to enable platform specific settings.
+1. Ensure the associated XR Plug-in management provider is enabled
 
-    iOS Project Configurator Settings
-
-    ![iOS Project Configurator](../images/camera-system/MRTKProjectConfigurator.png)
-
-1. There are no additional steps after switching the platform for Android.
-
-1. If the platform is iOS, Edit > Project Settings > Player > Other Settings, under the Optimization header, **uncheck** Strip Engine Code
-
-    ![iOS Settings](../images/camera-system/UncheckStripEngineCodeiOS.png)
-
-    > [!NOTE]
-    > Unchecking Strip Engine Code is the short term solution to an error in Xcode [#6646](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/6646).  We are working on a long term solution.
+    iOS XR Plug-in Management:
+    ![XR Plug-in Management iOS](../features/images/XRManagementiOS.png)
 
 1. Build and run the scene
 
 ## See also
 
-- [Unity AR Camera Settings](../camera-system/unity-ar-camera-settings.md)
+- [Unity AR Camera Settings](../features/camera-system/unity-ar-camera-settings.md)

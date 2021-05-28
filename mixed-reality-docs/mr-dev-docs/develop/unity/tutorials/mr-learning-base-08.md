@@ -21,9 +21,7 @@ In this tutorial, you will learn how to enable eye-tracking for HoloLens 2 and a
 * Learn how to enable eye-tracking for HoleLens 2
 * Learn how to use eye-tracking to trigger action
 
-[!INCLUDE[](includes/ensuring-eye-gaze-capabality.md)]
-
-## Enabling eye based gaze in the gaze provider
+## Enabling eye-based gaze in the gaze provider
 
 In the Hierarchy window, select the **MixedRealityToolkit** object, then in the Inspector window, select the MixedRealityToolkit > **Input** tab and take the following steps:
 
@@ -33,6 +31,8 @@ In the Hierarchy window, select the **MixedRealityToolkit** object, then in the 
 * Locate the **Gaze Settings** section and check the **Is Eye Tracking Enabled** checkbox
 
 ![Unity MixedRealityToolkit component with newly created profiles applied and eye tracking enabled](images/mr-learning-base/base-08-section2-step1-1.png)
+
+[!INCLUDE[](includes/ensuring-eye-gaze-capabality.md)]
 
 > [!TIP]
 > For a reminder on how to clone MRTK profiles, you can refer to the [Configuring the MRTK profiles](mr-learning-base-03.md) instructions.
