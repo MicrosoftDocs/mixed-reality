@@ -55,7 +55,7 @@ The new MRTK configurator provides users step-by-step guidance to properly confi
 
 ### Graduated Teleport Hotspot
 
-A new [teleport hotspot component](../features/teleport-system/teleport-hotspot.md) has been graduated. You can add a teleport hotspot to your gameobject to ensure that the user is in a certain position and orientation when they teleport to that location.
+A new [teleport hotspot component](../features/teleport-system/teleport-hotspot.md) has been graduated. You can add a teleport hotspot to your GameObject to ensure that the user is in a certain position and orientation when they teleport to that location.
 
 ![Teleport Hotspot example](images/TeleportHotspot.gif)
 
@@ -120,7 +120,7 @@ Added support for eye gaze when using Windows XR Plugin minimum versions of 2.7.
 
 ## Known Issues
 
-### Audio demos are missing an asmdef file (UPM pacakge)
+### Audio demos are missing an asmdef file (UPM package)
 
 When importing MRTK via the Mixed Reality Feature Tool, samples and demos are added to the project using the Unity Package Manager UI. After importing the Audio demos, the `WindowsMicrophoneStreamDemo.unity` scene will not behave properly. This is a result of a missing .asmdef file for the sample.
 

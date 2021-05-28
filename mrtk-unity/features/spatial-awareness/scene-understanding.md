@@ -52,8 +52,10 @@ The scene demonstrates the following:
 * Saving scene data to device for offline development
 * Loading previously saved scene data (.bytes files) to support in-editor development workflow
 
+::: moniker range="< mrtkunity-2021-05"
 > [!NOTE] 
 > The sample scene is based on the Legacy XR pipeline. If you are using the XR SDK pipeline you should modify the profiles accordingly. The provided Scene Understanding Spatial Awareness System profile (`DemoSceneUnderstandingSystemProfile`) and the Scene Understanding Observer profiles (`DefaultSceneUnderstandingObserverProfile` and `DemoSceneUnderstandingObserverProfile`) works for both pipelines.
+::: moniker-end
 
 #### Configuring the observer service
 
