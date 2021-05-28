@@ -61,7 +61,7 @@ After Unity has finished importing the Windows Mixed Reality SDK, the MRTK Proje
 
 In the MRTK Project Configurator window, click on **next** then use the Audio spatializer dropdown to select the **MS HRTF Spatializer**, then click the **Apply** button to apply the setting:
 
-![Player settings window Enable Mixed Reality-xrsdk](../images/mr-learning-base/base-02-section5-step1-5xrsdk.PNG)
+![MRTK project configurator-xrsdk](../images/mr-learning-base/base-02-section5-step1-5xrsdk.PNG)
 
 > [!TIP]
 > Applying the MRTK Default Settings is optional but strongly recommended as it will help configure some recommended Unity settings:
