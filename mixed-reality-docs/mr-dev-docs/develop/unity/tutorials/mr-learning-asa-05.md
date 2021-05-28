@@ -35,11 +35,11 @@ In the Hierarchy window, select the **MixedRealityToolkit** object. Then in the 
 
 With the **Camera** tab still selected in the Inspector window, expand the **Camera Setting Providers** and by clicking the "-" remove the **Windows Mixed Reality Camera Setting** or **XR SDK Windows Mixed Reality Camera Setting**:
 
-![Unity ARCameraProfile with new data provider added](images/mr-learning-asa/asa-05-section2-step1-2.png)
+![Unity ARCameraProfile with new data provider added ](images/mr-learning-asa/asa-05-section2-step1-2.png)
 
 and click the **+ Add Camera Setting Provider** button, then expand the newly added **New data provider**:
 
-![Unity ARCameraProfile with new data provider added](images/mr-learning-asa/asa-05-section2-step1-3.png)
+![AR camera added for Android](images/mr-learning-asa/asa-05-section2-step1-3.png)
 
 Using the **Type** dropdown, change the type to **Microsoft.MixedReality.Toolkit.Experimental.UnityAR** > **UnityARCameraSettings**:
 
