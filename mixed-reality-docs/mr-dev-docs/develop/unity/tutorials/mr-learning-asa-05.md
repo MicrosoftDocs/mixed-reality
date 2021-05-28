@@ -20,7 +20,7 @@ In this tutorial, you will learn how to build your project to Android and iOS de
 
 ## Installing inbuilt Unity packages
 
-[!INCLUDE[](includes/installing-inbuilt-unity-packages-for-asa-android-and-ios)]
+[!INCLUDE[](includes/installing-inbuilt-unity-packages-for-asa-android-and-ios.md)]
 
 ## Configure MRTK for AR Foundation Camera
 
@@ -68,7 +68,7 @@ In the Unity menu, select **Edit** > **Project Settings...** to open the Player 
 
 ![Unity Other Settings with Vulcan selected](images/mr-learning-asa/asa-05-section3-step1-3.png)
 
-[!INCLUDE[](includes/project-setting-for-asa-android)]
+[!INCLUDE[](includes/project-setting-for-asa-android.md)]
 
 In the Build Settings window, click the **Add Open Scenes** button to add your current scene to the **Scenes In Build** list. Then, use a USB cable, connect your Android device to your computer and select it from the **Run Device** dropdown:
 
@@ -105,7 +105,7 @@ In the Unity menu, select **Mixed Reality** > **Toolkit** > **Utilities** > **Co
 
 ![Unity MRTK Project Configurator window iOS](images/mr-learning-asa/asa-05-section4-step1-2.png)
 
-[!INCLUDE[](includes/project-setting-for-asa-ios)]
+[!INCLUDE[](includes/project-setting-for-asa-ios.md)]
 
 In the Unity menu, select **Edit** > **Project Settings...** to open the Player Settings window, then locate the **Player** >  **Other Settings** section, uncheck the **Strip Engine Code** checkbox to disable it:
 
