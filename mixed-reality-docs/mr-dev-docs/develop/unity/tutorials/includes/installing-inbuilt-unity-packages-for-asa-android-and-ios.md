@@ -8,8 +8,8 @@ In this section, you will upgrade and install the following inbuilt packages:
 > [!CAUTION]
 > Not all version are compatible with MRTK and only certain version works together, so make sure you install the exact versions listed above.
 
- [!TIP]
-> For a reminder on how to upgrade and install inbuilt packages, you can refer to the [Importing the tutorial assets](../mr-learning-asa-02.md#installing-the-inbuilt-packages) instructions.
+>[!TIP]
+> For a reminder on how to upgrade and install inbuilt packages, you can refer to the [Importing the tutorial assets](../mr-learning-asa-02.md#installing-inbuilt-unity-packages-and-importing-the-tutorial-assets) instructions.
 
 > [!NOTE]
 > If you are developing this project for Android, there is no need to install the ARKit XR Plugin package. Similarly, if you are developing this project for iOS, you do not need to install the ARCore XR Plugin.
@@ -30,8 +30,8 @@ In this section, you will upgrade and install the following inbuilt packages:
 > [!CAUTION]
 > Not all version are compatible with MRTK and only certain version works together, so make sure you install the exact versions listed above.
 
- [!TIP]
-> For a reminder on how to upgrade and install inbuilt packages, you can refer to the [Importing the tutorial assets](../mr-learning-asa-02.md#installing-the-inbuilt-packages) instructions.
+>[!TIP]
+> For a reminder on how to upgrade and install inbuilt packages, you can refer to the [Importing the tutorial assets](../mr-learning-asa-02.md#installing-inbuilt-unity-packages-and-importing-the-tutorial-assets) instructions.
 
 > [!NOTE]
 > If you are developing this project for Android, there is no need to install the ARKit XR Plugin package. Similarly, if you are developing this project for iOS, you do not need to install the ARCore XR Plugin.

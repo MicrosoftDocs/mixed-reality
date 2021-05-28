@@ -62,7 +62,7 @@ Close the Build Settings window.
 
 In the Unity menu, select **Mixed Reality** > **Toolkit** > **Utilities** > **Configure Project for MRTK** to open the **MRTK Project Configurator** window, ensure all options are selected, then click the **Apply** button to apply the settings:
 
-![Unity MRTK Project Configurator window Android](images/mr-learning-asa/asa-05-section3-step1-2.png)
+![Unity MRTK Project Configurator 1](images/mr-learning-asa/asa-05-section3-step1-2.png)
 
 In the Unity menu, select **Edit** > **Project Settings...** to open the Player Settings window, then locate the **Player** >  **Other Settings** section, select **Vulkan** and remove it by clicking the **"-"** symbol:
 
