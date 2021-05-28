@@ -1,17 +1,15 @@
 ---
-title: Getting started tutorials - 6. Creating user interfaces
-description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to create user interfaces.
+title: Creating user interfaces
+description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to create static and dynamic user interfaces.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, prefabs, holograms, tooltips
 ms.localizationpriority: high
 ---
 
 # 6. Creating user interfaces
-
-## Overview
 
 In this tutorial, you will learn how to create a simple user interface using MRTK's button and menu prefabs alongside Unity's TextMeshPro component. You will also learn how to configure the buttons to trigger events and add dynamic tooltip UI elements to provide the user with additional information.
 
@@ -64,7 +62,7 @@ In the Hierarchy window, select the **Hints** button object, then in the Inspect
 ![Unity with Hints button object OnClick event configured](images/mr-learning-base/base-06-section1-step1-5.png)
 
 > [!TIP]
-> The Interactable component is an all-in-one container to make any object easily interactable and responsive to input. Interactable acts as a catch-all for all types of input including touch, hand rays, speech, etc. and funnels these interactions into events and visual theme responses. To learn how to configure it for different input types and customize it's visual theme, you can refer to the [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) guide in the [MRTK Documentation Portal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
+> The Interactable component is an all-in-one container to make any object easily interactable and responsive to input. Interactable acts as a catch-all for all types of input including touch, hand rays, speech, etc. and funnels these interactions into events and visual theme responses. To learn how to configure it for different input types and customize it's visual theme, you can refer to the [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) guide in the [MRTK Documentation Portal](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/).
 
 In the Hierarchy window, select the **Explode** button object, then in the Inspector window, configure the **Interactable.OnClick ()** event as follows:
 
@@ -83,7 +81,7 @@ and the **Explode** button to toggle the exploded view on and off:
 
 ## Creating a dynamic menu that follows the user
 
-In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **Menus** folder, click-and-drag the **NearMenu4x1** prefab into the Hierarchy window, set its Transform **Position** to X = 0, Y = -0.4, Z = 0 and configure it as follows:
+In the Project window, navigate to the **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **UX** > **Prefabs** > **Menus** folder, click-and-drag the **NearMenu4x1** prefab into the Hierarchy window, set its Transform **Position** to X = 0, Y = -0.4, Z = 0 and configure it as follows:
 
 * Verify that the **SolverHandler** component's **Tracked Target Type** is set to **Head**
 * Check the checkbox next to the **RadialView** Solver component so it is enabled by default
@@ -94,17 +92,17 @@ In the Hierarchy window, rename the object to **Menu**, then expand its **Button
 
 ![Unity with Menu object selected and ButtonCollection object expanded](images/mr-learning-base/base-06-section2-step1-2.png)
 
-Rename the first button to **Indicator**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:
+Rename the first button in the ButtonCollection to Indicator, then in the Inspector window, configure the Button Config Helper (Script) component as follows:
 
 * Change the **Main Label Text** to match the name of the button
-* Assign the **Indicator** object to the **None (Object)** field
+* Assign the Indicator object that looks like a chevron, to the None (Object) field
 * From the **No Function** dropdown, select **GameObject** > **SetActive (bool)** to set this function as the action to be executed when the event is triggered
 * Verify that the argument checkbox is **checked**
 * Change the **Icon** to the 'search' icon
 
 ![Unity with Indicator button object Button Config Helper configured](images/mr-learning-base/base-06-section2-step1-3.png)
 
-In the Hierarchy window, select the **Indicator** object, then in the Inspector window:
+To disable the chevron Indicator object, in the Hierarchy window, select the Indicator object that looks like chevron, then in the Inspector window:
 
 * Uncheck the checkbox next to its name to make it inactive by default
 * Use the **Add Component** button to add the **Directional Indicator Controller (Script)** component
@@ -112,7 +110,7 @@ In the Hierarchy window, select the **Indicator** object, then in the Inspector 
 ![Unity with Indicator object selected, disabled, and DirectionalIndicatorController component added](images/mr-learning-base/base-06-section2-step1-4.png)
 
 > [!NOTE]
-> Now, when the app starts, the Indicator is disabled by default and can be enabled by pressing the Indicator button.
+> Now, when the app starts, the chevron Indicator is disabled by default and can be enabled by pressing the Indicator button.
 
 Rename the second button to **TapToPlace**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:
 
@@ -159,14 +157,14 @@ Then configure the **TextMeshPro - Text** component as follows::
 
 ## Adding tooltips
 
-In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** folder to locate the tooltip prefabs:
+In the Project window, navigate to the **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** folder to locate the tooltip prefabs:
 
 ![Unity Project window with ToolTips folder selected](images/mr-learning-base/base-06-section4-step1-1.png)
 
 In the Hierarchy window, expand the RoverExplorer > **RoverParts** object and select all its child rover part objects, then in the Inspector window, use the **Add Component** button to add the **ToolTipSpawner** component and configure it as follows:
 
 * Ensure the **Focus Enabled** checkbox is checked to require the user to look at the part for the tooltip to appear
-* Assign the **Simple Line ToolTip** prefab from the Project window to the **Tool Tip Prefab** field
+* Assign the **Simple Line ToolTip** prefab from the Project window to the **Prefab** field
 * Change the ToolTip Override Settings > **Settings Mode** to **Override**
 * Change the ToolTip Override Settings > **Manual Pivot Local Position Y** to **1.5**
 
@@ -193,4 +191,5 @@ Press the Play button to enter Game mode, then press-and-hold the right mouse bu
 
 In this tutorial, you learned how to create a simple user interface using MRTK's provided button and menu prefabs alongside Unity's TextMeshPro component and how to configure the buttons to trigger events when they are pressed. You also learned how to add dynamic tooltip UI elements to provide the user with additional information.
 
-[Next Tutorial: 7. Interacting with 3D objects](mr-learning-base-07.md)
+> [!div class="nextstepaction"]
+>[Next Tutorial: 7. Interacting with 3D objects](mr-learning-base-07.md)

@@ -1,17 +1,15 @@
 ---
-title: Getting started tutorials - 9. Using speech commands
-description: This course shows you how to use speech commands with the Mixed Reality Toolkit (MRTK).
+title: Using speech commands
+description: This course shows you how to setup, create, and use speech commands in your mixed reality apps with the Mixed Reality Toolkit (MRTK).
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, speech commands, voice input
 ms.localizationpriority: high
 ---
 
 # 9. Using speech commands
-
-## Overview
 
 In this tutorial, you will learn how to create speech commands and how to control them globally. You will also learn how to control local speech commands that require the user to look at the object that controls the speech command.
 
@@ -20,14 +18,7 @@ In this tutorial, you will learn how to create speech commands and how to contro
 * Learn how to create speech commands
 * Learn how to control speech commands globally and locally
 
-## Ensuring the Microphone capability is enabled
-
-In the Unity menu, select Mixed Reality Toolkit > Utilities > **Configure Unity Project** to open the **MRTK Project Configurator** window, then in the **UWP Capabilities** section, verify that **Enable Microphone Capability** is greyed out:
-
-![Enable microphone capability](images/mr-learning-base/base-09-section1-step1-1.png)
-
-> [!NOTE]
-> The Microphone capability should have been enabled during the [Apply the MRTK Project Configurator settings](mr-learning-base-02.md#1-apply-the-mrtk-project-configurator-settings) instructions when you configured the Unity project at the beginning of this tutorial series. However, if it is not enabled, make sure you enable it now.
+[!INCLUDE[](includes/ensuring-microphone-capabality.md)]
 
 ## Creating speech commands
 
@@ -46,8 +37,8 @@ In the Speech > **Speech Commands** section, click the **+ Add a New Speech Comm
 
 * Enable Indicator
 * Enable Tap to Place
-* Enable Bounding Box
-* Disable Bounding Box
+* Enable Bounds Control
+* Disable Bounds Control
 
 ![Adding new speech commands](images/mr-learning-base/base-09-section2-step1-2.png)
 
@@ -56,7 +47,7 @@ In the Speech > **Speech Commands** section, click the **+ Add a New Speech Comm
 
 ## Controlling speech commands
 
-In the Project window, navigate to the **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** folder to locate the tooltip prefabs:
+In the Project window, navigate to the **Package** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** folder to locate the tooltip prefabs:
 
 ![Opening tooltip folder](images/mr-learning-base/base-09-section3-step1-1.png)
 
@@ -85,10 +76,10 @@ Expand **Element 0** and configure it as follows:
 
 Expand **Element 1** and configure it as follows:
 
-* In the **Keyword** field, enter **Enable Bounding Box**, to reference the Enable Bounding Box command you created in the previous section
+* In the **Keyword** field, enter **Enable Bounds Control**, to reference the Enable Bounds Control command you created in the previous section
 * Click the small **+** icon to add an event
 * From the Hierarchy window, assign the **RoverExplorer** object to the **None (Object)** field
-* From the **No Function** dropdown, select **BoundingBox** > **bool enabled** to update this property value when the event is triggered
+* From the **No Function** dropdown, select **BoundsControl** > **bool enabled** to update this property value when the event is triggered
 * Check the argument checkbox, so it is **checked**
 * Click the small **+** icon to add another event
 * From the Hierarchy window, assign the **RoverExplorer** object to the **None (Object)** field
@@ -99,10 +90,10 @@ Expand **Element 1** and configure it as follows:
 
 Expand **Element 2** and configure it as follows:
 
-* In the **Keyword** field, enter **Disable Bounding Box**, to reference the Disable Bounding Box command you created in the previous section
+* In the **Keyword** field, enter **Disable Bounds Control**, to reference the Disable Bounds Control command you created in the previous section
 * Click the small **+** icon to add an event
 * From the Hierarchy window, assign the **RoverExplorer** object to the **None (Object)** field
-* From the **No Function** dropdown, select **BoundingBox** > **bool enabled** to update this property value when the event is triggered
+* From the **No Function** dropdown, select **BoundsControl** > **bool enabled** to update this property value when the event is triggered
 * Verify that the argument checkbox is **unchecked**
 * Click the small **+** icon to add another event
 * From the Hierarchy window, assign the **RoverExplorer** object to the **None (Object)** field
@@ -141,7 +132,6 @@ In the next two tutorial series, [Azure Spatial Anchors tutorials](mr-learning-a
 If you're following the Unity development checkpoint journey we've laid out, your next task is to familiarize yourself with core building blocks of Mixed Reality apps.
 
 > [!div class="nextstepaction"]
-> [Basic interactions](../mrtk-101.md)
+> [Basic interactions](../../../out-of-scope/mrtk-101.md)
 
 You can always go back to the [Unity development checkpoints](../unity-development-overview.md#1-getting-started) at any time.
-

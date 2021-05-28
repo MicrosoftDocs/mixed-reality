@@ -1,6 +1,6 @@
 ---
 title: Samples and feature apps
-description: Get a look at the available feature samples for HoloLens.
+description: Stay up to date with all the available Microsoft samples and mixed reality features apps for HoloLens.
 author: hferrone
 ms.author: jemccull
 ms.date: 12/3/2020
@@ -25,7 +25,7 @@ The feature samples listed below correspond to specific implementations that are
 
 ### Research Mode
 
-Research Mode was introduced in the 1st Generation HoloLens to give access to key sensors on the device, specifically for research applications that are not intended for deployment. The sample applications below are examples for accessing and recording Research Mode streams and using the [intrinsics and extrinsics](https://docs.microsoft.com/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world).
+Research Mode was introduced in the 1st Generation HoloLens to give access to key sensors on the device, specifically for research applications that are not intended for deployment. The sample applications below are examples for accessing and recording Research Mode streams and using the [intrinsics and extrinsics](/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world).
 
 <br>
 
@@ -62,7 +62,7 @@ Mixed reality capture (MRC) captures the first-person experience of mixing real 
 
 | Reference article | Sample |
 | --- | --- |
-| [Mixed Reality Capture](platform-capabilities-and-apis/mixed-reality-capture-for-developers.md) | [Mixed Reality Capture samples](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/) |
+| [Mixed Reality Capture](platform-capabilities-and-apis/mixed-reality-capture-for-developers.md) | [Mixed Reality Capture samples](/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/) |
 
 ### Holographic Remoting
 

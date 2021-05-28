@@ -8,7 +8,6 @@ ms.topic: article
 keywords: HoloLens, HoloLens 2, PIX, capture, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
-
 # Installing PIX for HoloLens 2
 
 [PIX](https://devblogs.microsoft.com/pix) is a performance tuning and debugging tool for DirectX 12 applications on Windows. 
@@ -17,11 +16,11 @@ keywords: HoloLens, HoloLens 2, PIX, capture, mixed reality headset, windows mix
 
 1. Grab the latest PIX [release]( https://devblogs.microsoft.com/pix/download) from your host PC and connect your HoloLens 2 to your PC via a USB cable.
 
-2. If your HoloLens 2 is on a [Windows Insider build](https://insider.windows.com) or has a configuration that breaks PIX,  [re-flash your device](https://docs.microsoft.com/hololens/hololens-recovery) to erase all data.
+2. If your HoloLens 2 is on a [Windows Insider build](https://insider.windows.com) or has a configuration that breaks PIX,  [reflash your device](/hololens/hololens-recovery) to erase all data.
 
 3. Enable **Developer Mode** and **Device Portal**:
 
-* Open **Settings** from Shell:
+* Open **Settings** from Mixed Reality Home:
 
 ![Screenshot of the HoloLens menu with settings button highlighted](images/pix-img-01.jpg)
 
@@ -29,7 +28,7 @@ keywords: HoloLens, HoloLens 2, PIX, capture, mixed reality headset, windows mix
 
 ![Screenshot of settings window open on HoloLens with update and security button highlighted](images/pix-img-02.jpg)
 
-* Click **For Developers**:
+* Select **For Developers**:
 
 ![Screenshot of security and updates window open with for developers button highlighted](images/pix-img-03.jpg)
 
@@ -42,7 +41,7 @@ keywords: HoloLens, HoloLens 2, PIX, capture, mixed reality headset, windows mix
 * With the device still connected, awake, and with the user logged in, launch Visual Studio.
 
 > [!IMPORTANT]
-> Make sure your device isn't in standby mode or asleep. If you're having trouble with this step, refer to the [Windows Device Portal instructions](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
+> Make sure your device isn't in standby mode or asleep. If you're having trouble with this step, refer to the [Windows Device Portal instructions](./using-the-windows-device-portal.md).
 
 ## Preparing for deployment
 
@@ -56,7 +55,7 @@ keywords: HoloLens, HoloLens 2, PIX, capture, mixed reality headset, windows mix
 
 * Select **Settings** from Shell
 * Select **Update & Security**
-* Click **For Developers** and press Pair under **Device Discovery** 
+* Select **For Developers** and press Pair under **Device Discovery** 
 
 ![Screenshot of for developers window open in settings with device discovery highlighted](images/pix-img-08.jpg)
 
@@ -68,7 +67,7 @@ keywords: HoloLens, HoloLens 2, PIX, capture, mixed reality headset, windows mix
 
 ## Launching PIX
 
-First, use Device Portal to verify the app is not running on the HoloLens 2. Then, launch PIX, connect to your device, and click **Home**:
+First, use Device Portal to verify the app isn't running on the HoloLens 2. Then, launch PIX, connect to your device, and select **Home**:
 
 ![Screenshot of PIX application home screen](images/pix-img-10.png)
 
@@ -76,18 +75,18 @@ First, use Device Portal to verify the app is not running on the HoloLens 2. The
 
 ![Screenshot of PIX application left-side menu with connect button highlighted](images/pix-img-11.png)
 
-2. From the **Computer** tab, click **Add** and enter the following credentials:
+2. From the **Computer** tab, select **Add**, and enter the following credentials:
     * Alias: Up to user’s discretion
     * Host Name or IP Address: 127.0.0.1
 
-3. Click **Connect** in the lower-right of the **Computer** tab:
+3. Select **Connect** in the lower right of the **Computer** tab:
 
 ![Screenshot of PIX application connect window with alias, host name, IP address, and add button highlighted](images/pix-img-12.png)
 
 > [!NOTE]
 > The first connection is always slower because binaries are being copied.
 
-4. When PIX has connected to the HoloLens 2, find your app in the **Select Target Process** section in the Launch UWP tab, and click **Launch**:
+4. When PIX has connected to the HoloLens 2, find your app in the **Select Target Process** section in the Launch UWP tab, and select **Launch**:
 
 ![Screenshot of PIX application with the select target process window and launch button highlighted](images/pix-img-13.png)
 
@@ -97,7 +96,7 @@ First, use Device Portal to verify the app is not running on the HoloLens 2. The
 
 ![Screenshot of the PIX application with the PC connection panel open with GPU capture highlighted](images/pix-img-14.png)
 
-2. Open the capture for analysis by clicking on the generated screen shot in the **GPU Capture** panel:
+2. Open the capture for analysis by clicking on the generated screenshot in the **GPU Capture** panel:
 
 ![Screenshot of the PIX application with the GPU capture section open with GPU capture panel highlighted](images/pix-img-15.png)
 

@@ -1,6 +1,6 @@
 ---
 title: Using Speech in Windows Mixed Reality
-description: Learn how to use speech input in your Windows Mixed Reality apps.
+description: Learn how to use speech input to control commands, 3D objects, and dictation in your Windows Mixed Reality apps.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/16/2020
@@ -12,9 +12,9 @@ appliesto:
 
 # Using Speech in Windows Mixed Reality
 
-Use your voice to get around Windows Mixed Reality faster—take a quick photo, open an app, even teleport without a controller. And for an easy way to type, try dictation mode on the mixed reality keyboard. 
+You can use your voice to get around Windows Mixed Reality faster. Taking a quick photo, opening an app, even teleporting without a controller are all a word away. For an easy way to type, try dictation mode on the mixed reality keyboard. 
 
-Having trouble with Speech? [Get help](using-wmr-faq.md#speech-commands-arent-working)
+Having trouble with Speech? [Get help](using-wmr-faq.yml#speech-commands-aren-t-working)
 
 <!-- NEED VIDEO: https://support.microsoft.com/en-us/help/4041322/windows-10-speech-in-windows-mixed-reality -->
 
@@ -25,18 +25,18 @@ Having trouble with Speech? [Get help](using-wmr-faq.md#speech-commands-arent-wo
 
 ## See it, say it
 
-In the Windows Mixed Reality home, if you see a word, you can often use it as a speech command. For instance, just say the name of a button to select it. If you don’t see a name, point your motion controller at the button (or, if you’re using an Xbox gamepad, rest your gaze on it) to find out what to say. 
+In the Windows Mixed Reality home, if you see a word, you can often use it as a speech command. For instance, just say the name of a button to select it. If you don’t see a name, point your motion controller at the button to find out what to say. For Xbox gamepads, rest your gaze on the button.
 
 ## General speech commands
 
-Use these throughout Windows Mixed Reality to get around faster. Some commands use the gaze cursor, which you’ll bring up by saying “select.”
+Use the following speech commands throughout Windows Mixed Reality to get around faster. Some commands use the gaze cursor, which you’ll bring up by saying “select.”
 
 | To do this | Say this |
 | --- | --- |
 | Select | Say “select” to bring up the gaze cursor. Then, turn your head to position the cursor on the thing you want to select, and say “select” again. |
 | Open the Start menu | Go to Start |
 | Leave an immersive app | Say "Go to Start" to bring up the quick actions menu, then say "Mixed reality home." |
-| Turn Flashlight on/off | Say "Go to Start" to bring up the quick actions menu, then say "Mixed reality home." |
+| Turn Flashlight on/off | Flashlight on / Flashlight off |
 | Teleport | Turn your head toward the place you want to go, and then say “teleport.” (For more precise targeting, first say “select” to bring up the gaze cursor, then say “teleport.”) |
 | Turn to the left or right | Turn left / turn right |
 | Turn 180 degrees | Turn around |
@@ -54,7 +54,7 @@ Gaze at a 3D object, hologram, or app window to use these commands:
 | Make it bigger | Bigger |
 | Make it smaller | Smaller |
 | Turn it to face you | Face me |
-| Get it ready to move - it'll follow your gaze | Move this |
+| Get it ready to move - it will follow your gaze | Move this |
 | Place it when you're done moving it | Place |
 
 ## App bar commands
@@ -115,7 +115,7 @@ Say "Hey Cortana,” then use one of the following commands:
 
 ## Keyboard dictation
 
-Switch to dictation mode any time the keyboard is active for an easy way to type. Select microphone  on the keyboard—or just say “start dictating”—to get started.
+Switch to dictation mode anytime the keyboard is active for an easy way to type. Select microphone  on the keyboard—or just say “start dictating”—to get started.
 
 > [!NOTE]
 > The mixed reality keyboard is only available in English, but you can use dictation in any of the supported [Windows Mixed Reality languages](other-questions.md#what-languages-are-supported-in-windows-mixed-reality).
@@ -127,7 +127,7 @@ Switch to dictation mode any time the keyboard is active for an easy way to type
 | Close the keyboard | Close |
 | Start dictation | Start dictating |
 | Stop dictation | Stop dictating |
-| Delete what you've just dictated | Delete that |
+| Delete what you've dictated | Delete that |
 | Select everything in the dictation box | Select all |
 
 ### Punctuation
@@ -143,7 +143,7 @@ Here are the punctuation keywords you can use:
 * Hashtag, smiley/smiley face, frowny, winky
 * Dollar, percent
 
-Sometimes it's helpful to spell out things like email addresses. For instance, to dictate example@outlook.com, you'd say "E X A M P L E at outlook dot com."
+Sometimes it's helpful to spell out things like email addresses. For instance, to dictate example@outlook.com, you'd say "E X A M P L E at outlook dot-com."
 
 To stop dictating, select **Done**.
 

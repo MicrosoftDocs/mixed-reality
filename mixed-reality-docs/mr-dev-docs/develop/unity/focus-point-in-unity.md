@@ -1,13 +1,12 @@
 ---
 title: Focus point in Unity
-description: Manually tuning hologram stability in Unity by setting the focus point
+description: Learn how to manually tune hologram stability in Unity by setting the focus point for HoloLens and Windows Mixed Reality immersive headsets.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, focus point, focus plane, stabilization plane, stabilization point, reprojection, LSR, depth buffer, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 # Focus point in Unity
 
@@ -45,7 +44,7 @@ void Update()
 ```
 
 > [!NOTE]
-> The simple code above may reduce hologram stability if the focused object ends up behind the user. We generally recommend setting **[Enable Depth Buffer Sharing](camera-in-unity.md#sharing-your-depth-buffers-with-windows)** instead of manually specifying a focus point.
+> The simple code above may reduce hologram stability if the focused object ends up behind the user. We generally recommend setting **[Enable Depth Buffer Sharing](camera-in-unity.md#sharing-depth-buffers)** instead of manually specifying a focus point.
 
 ## Next Development Checkpoint
 
@@ -59,7 +58,8 @@ Or jump directly to deploying your app on a device or emulator:
 > [!div class="nextstepaction"]
 > [Deploy to HoloLens or Windows Mixed Reality immersive headsets](../platform-capabilities-and-apis/using-visual-studio.md)
 
-You can always go back to the [Unity development checkpoints](unity-development-overview.md#3-platform-capabilities-and-apis) at any time.
+You can always go back to the [Unity development checkpoints](unity-development-overview.md#3-advanced-features) at any time.
 
 ### See also
+
 * [Stabilization plane](../platform-capabilities-and-apis/hologram-stability.md#reprojection)

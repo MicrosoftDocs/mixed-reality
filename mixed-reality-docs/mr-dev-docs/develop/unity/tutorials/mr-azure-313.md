@@ -1,6 +1,6 @@
 ---
-title: MR and Azure 313 - IoT Hub Service
-description: Complete this course to learn how to implement Azure IoT Hub Service on a virtual machine running Ubuntu 16.4, and then visualize the message data using Microsoft HoloLens or an immersive (VR) headset.
+title: HoloLens (1st gen) and Azure 313 - IoT Hub Service
+description: Learn how to implement Azure IoT Hub Service on a virtual machine running Ubuntu 16.4 and visualize the message data using Microsoft HoloLens or VR headset.
 author: drneil
 ms.author: jemccull
 ms.date: 07/11/2018
@@ -8,8 +8,7 @@ ms.topic: article
 keywords: azure, mixed reality, academy, edge, iot edge, tutorial, api, notification, functions, tables, hololens, immersive, vr, iot, virtual machine, ubuntu, python, Windows 10, Visual Studio
 ---
 
-
-# MR and Azure 313: IoT Hub Service
+# HoloLens (1st gen) and Azure 313: IoT Hub Service
 
 >[!NOTE]
 >The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.
@@ -35,9 +34,9 @@ The Services you will use include:
 
 - **Azure Container Registry** is a Microsoft Azure Service which allows developers to store container images, for various types of containers. For more information, visit the [**Azure Container Registry Service** page](https://azure.microsoft.com/services/container-registry/).
 
-- **Azure Function App** is a Microsoft Azure Service, which allows developers to run small pieces of code, 'functions', in Azure. This provides a way to delegate work to the cloud, rather than your local application, which can have many benefits. **Azure Functions** supports several development languages, including C\#, F\#, Node.js, Java, and PHP. For more information, visit the [**Azure Functions** page](https://docs.microsoft.com/azure/azure-functions/functions-overview).
+- **Azure Function App** is a Microsoft Azure Service, which allows developers to run small pieces of code, 'functions', in Azure. This provides a way to delegate work to the cloud, rather than your local application, which can have many benefits. **Azure Functions** supports several development languages, including C\#, F\#, Node.js, Java, and PHP. For more information, visit the [**Azure Functions** page](/azure/azure-functions/functions-overview).
 
-- **Azure Storage: Tables** is a Microsoft Azure Service, which allows developers to store structured, non-SQL, data in the cloud, making it easily accessible anywhere. The Service boasts a schema-less design, allowing for the evolution of tables as needed, and thus is very flexible. For more information, visit the [**Azure Tables** page](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview)
+- **Azure Storage: Tables** is a Microsoft Azure Service, which allows developers to store structured, non-SQL, data in the cloud, making it easily accessible anywhere. The Service boasts a schema-less design, allowing for the evolution of tables as needed, and thus is very flexible. For more information, visit the [**Azure Tables** page](/azure/cosmos-db/table-storage-overview)
 
 This course will teach you how to setup and use the IoT Hub Service, and then visualize a response provided by a device. It will be up to you to apply these concepts to a custom IoT Hub Service setup, which you might be building.
 
@@ -45,7 +44,7 @@ This course will teach you how to setup and use the IoT Hub Service, and then vi
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td> MR and Azure 313: IoT Hub Service</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -53,7 +52,7 @@ This course will teach you how to setup and use the IoT Hub Service, and then vi
 
 ## Prerequisites
 
-For the most up-to-date prerequisites for developing with mixed reality, including with the Microsoft HoloLens, visit the [Install the tools](https://docs.microsoft.com/windows/mixed-reality/install-the-tools) article.
+For the most up-to-date prerequisites for developing with mixed reality, including with the Microsoft HoloLens, visit the [Install the tools](/windows/mixed-reality/install-the-tools) article.
 
 > [!NOTE]
 > This tutorial is designed for developers who have basic experience with Python. Please also be aware that the prerequisites and written instructions within this document represent what has been tested and verified at the time of writing (July 2018). You are free to use the latest software, as listed within the [install the tools](../../install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you will find in newer software than that listed below.
@@ -77,17 +76,17 @@ The following hardware and software is required:
 
 ### Before you start
 
-1. Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](https://docs.microsoft.com/hololens/hololens-setup).
+1. Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](/hololens/hololens-setup).
 2. It is a good idea to perform **Calibration** and **Sensor Tuning** when beginning developing a new HoloLens app (sometimes it can help to perform those tasks for each user).
 
-For help on Calibration, please follow this [link to the HoloLens Calibration article](../../../calibration.md#hololens-2).
+For help on Calibration, please follow this [link to the HoloLens Calibration article](/hololens/hololens-calibration#hololens-2).
 
-For help on Sensor Tuning, please follow this [link to the HoloLens Sensor Tuning article](../../../sensor-tuning.md).
+For help on Sensor Tuning, please follow this [link to the HoloLens Sensor Tuning article](/hololens/hololens-updates).
 
 3. Set up your **Ubuntu Virtual Machine** using **Hyper-V**. The following resources will help you with the process.
     1.  First, follow this link to [download the Ubuntu 16.04.4 LTS (Xenial Xerus) ISO](https://au.releases.ubuntu.com/16.04/). Select the **64-bit PC (AMD64) desktop image**.
-    2.  Make sure **Hyper-V** is enabled on your Windows 10 machine. You can follow this link for guidance on [installing and enabling Hyper-V on Windows 10](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v).
-    3.  Start Hyper-V and create a new Ubuntu VM. You can follow this link for a [step by step guide on how to create a VM with Hyper-V](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/create-virtual-machine). When requested to **"Install an operating system from a bootable image file"**, select the **Ubuntu ISO** you have download earlier.
+    2.  Make sure **Hyper-V** is enabled on your Windows 10 machine. You can follow this link for guidance on [installing and enabling Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v).
+    3.  Start Hyper-V and create a new Ubuntu VM. You can follow this link for a [step by step guide on how to create a VM with Hyper-V](/virtualization/hyper-v-on-windows/quick-start/create-virtual-machine). When requested to **"Install an operating system from a bootable image file"**, select the **Ubuntu ISO** you have download earlier.
 
     > [!NOTE]
     > Using **Hyper-V Quick Create** is not suggested.  
@@ -182,7 +181,7 @@ Now you will begin the creation and setup of your **IoT Hub Service**.
 
     1. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure Services associated with a single project (e.g. such as these courses) under a common resource group).
 
-        > If you wish to read more about Azure Resource Groups, please follow this [link on how to manage a Resource Group](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > If you wish to read more about Azure Resource Groups, please follow this [link on how to manage a Resource Group](/azure/azure-resource-manager/resource-group-portal).
 
 
     2. Select an appropriate **Location** (Use the same location across all the Services you create in this course).
@@ -380,7 +379,7 @@ Now you can move on to setting up your device **running Ubuntu OS**. Follow the 
     >1. Restart VS Code, and/ or your computer.
     >2. It might be necessary to switch the **VS Code Terminal** to the one you have been using to install Python, i.e. **Powershell** (especially in case the Python environment was already installed on your machine). With the Terminal open, you will find the drop down menu on the right side of the Terminal.
      ![Create your container](images/AzureLabs-Lab313-24b.png) 
-    >3. Make sure the **Python** installation path is added as **Environment Variable** on your machine. Cookiecutter should be part of the same location path. Please follow this [link for more information on Environment Variables](https://msdn.microsoft.com/library/windows/desktop/ms682653(v=vs.85).aspx), 
+    >3. Make sure the **Python** installation path is added as **Environment Variable** on your machine. Cookiecutter should be part of the same location path. Please follow this [link for more information on Environment Variables](/windows/win32/procthread/environment-variables), 
 
 7. Once **Cookiecutter** has finished installing, you should restart your machine, so that **Cookiecutter** is recognized as a command, within your System's environment.
 
@@ -868,7 +867,7 @@ Navigate back to your Azure Portal, where you will create an Azure Tables Servic
 
     9. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision, and manage, billing for a collection of Azure assets. It is recommended to keep all the Azure Services associated with a single project (e.g. such as these courses) under a common resource group).
 
-        > If you wish to read more about Azure Resource Groups, please follow this [link on how to manage a Resource Group](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > If you wish to read more about Azure Resource Groups, please follow this [link on how to manage a Resource Group](/azure/azure-resource-manager/resource-group-portal).
 
     10. Leave **Virtual networks** as **Disabled**, if this is an option for you.
 
@@ -1010,7 +1009,7 @@ First, you need to create a file that will allow your Azure Function to load the
 
     4. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision, and manage, billing for a collection of Azure assets. It is recommended to keep all the Azure Services associated with a single project (e.g. such as these courses) under a common resource group).
 
-        > If you wish to read more about Azure Resource Groups, please follow this [link on how to manage a Resource Group](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > If you wish to read more about Azure Resource Groups, please follow this [link on how to manage a Resource Group](/azure/azure-resource-manager/resource-group-portal).
 
     5. For **OS**, click Windows, as that is the intended platform.
 

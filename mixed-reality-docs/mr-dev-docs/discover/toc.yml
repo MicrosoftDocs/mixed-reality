@@ -5,9 +5,11 @@
 - name: What is a hologram?
   href: hologram.md
 - name: Mixed Reality Learning overview
-  href: mr-learning-overview.md 
+  href: mr-learning-overview.md
 - name: Expand your design process
   href: case-study-expanding-the-design-process-for-mixed-reality.md
+- name: Running the MRTK Examples Hub
+  href: https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/running-examples-hub
 - name: Designing holograms
   href: designing-holograms.md
 - name: Case studies overview
@@ -15,9 +17,9 @@
 - name: HoloLens hardware
   items:
   - name: HoloLens 2 hardware details
-    href: https://docs.microsoft.com/hololens/hololens2-hardware
+    href: /hololens/hololens2-hardware
   - name: HoloLens (1st gen) hardware details
-    href: https://docs.microsoft.com/hololens/hololens1-hardware
+    href: /hololens/hololens1-hardware
 - name: Immersive headsets
   items:
   - name: Immersive headset hardware details
@@ -25,7 +27,7 @@
   - name: Navigating the Windows Mixed Reality home
     href: navigating-the-windows-mixed-reality-home.md
   - name: VR enthusiast guide
-    href: https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/
+    href: /windows/mixed-reality/enthusiast-guide/
   - name: Location based entertainment
     href: location-based-experiences.md
 - name: Community resources

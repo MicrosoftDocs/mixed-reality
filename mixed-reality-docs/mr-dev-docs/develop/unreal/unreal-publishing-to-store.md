@@ -1,6 +1,6 @@
 ---
 title: Publishing to the Microsoft Store
-description: 
+description: Learn how to package, certify, and publish your Unreal Mixed Reality applications to the Microsoft Store.
 author: hferrone
 ms.author: jacksonf
 ms.date: 12/3/2020
@@ -8,7 +8,6 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, documentation, guides, features, mixed reality headset, windows mixed reality headset, virtual reality headset, publishing, distribution, Microsoft store
 ---
-
 
 # Publishing to the Microsoft Store
 
@@ -104,6 +103,7 @@ if(Target.Platform == UnrealTargetPlatform.Win64)
 4. Close Unreal, reopen the project, and repackage for HoloLens.  Rerun WACK and the error will be gone. 
 
 ## See also
+
 * [Submitting an app to the Microsoft Store](../../distribute/submitting-an-app-to-the-microsoft-store.md)
 * [Windows App Certification Kit](https://developer.microsoft.com/windows/downloads/app-certification-kit)
-* [Create an App Installer file manually](https://docs.microsoft.com/windows/msix/app-installer/how-to-create-appinstaller-file)
+* [Create an App Installer file manually](/windows/msix/app-installer/how-to-create-appinstaller-file)

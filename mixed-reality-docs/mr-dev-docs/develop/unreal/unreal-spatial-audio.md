@@ -1,6 +1,6 @@
 ---
 title: Spatial audio in Unreal
-description: Learn the ins-and-outs of the spatial audio plugin for Unreal engine.
+description: Learn the ins-and-outs of the spatial audio plugin for Unreal mixed reality applications for HoloLens devices.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/15/2020
@@ -8,7 +8,6 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remoting, mixed reality, development, getting started, features, new project, emulator, documentation, guides, features, holograms, game development, mixed reality headset, windows mixed reality headset, virtual reality headset, spatial audio
 ---
-
 
 # Spatial Audio in Unreal
 
@@ -30,7 +29,6 @@ The first step to adding spatial sound to your project is installing the Microso
 ![Unreal spatial audio plugin](images/unreal-spatial-audio-img-01.png)
 
 Once the editor restarts, your project is all set!
-
 
 ## Setting the spatialization plugin for HoloLens 2 platform
 
@@ -121,6 +119,6 @@ You can always go back to the [Unreal development checkpoints](unreal-developmen
 
 
 ## See also
-* [Spatial Sound](https://docs.microsoft.com/windows/mixed-reality/spatial-sound)
-* [Spatial Sound Design](https://docs.microsoft.com/windows/mixed-reality/spatial-sound-design)
-* [MR Spatial 220: Spatial sound](https://docs.microsoft.com/windows/mixed-reality/holograms-220)
+* [Spatial Sound](/windows/mixed-reality/spatial-sound)
+* [Spatial Sound Design](/windows/mixed-reality/spatial-sound-design)
+* [MR Spatial 220: Spatial sound](/windows/mixed-reality/holograms-220)

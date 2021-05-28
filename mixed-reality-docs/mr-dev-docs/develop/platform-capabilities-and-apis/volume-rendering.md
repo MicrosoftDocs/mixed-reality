@@ -1,14 +1,12 @@
 ---
 title: Volume rendering
-description: Volumetric images contain rich information with opacity and color throughout the volume that cannot be easily expressed as surfaces. Learn how to efficiently render volumetric images within Windows Mixed Reality. 
+description: Learn how to efficiently render rich volumetric images with opacity and color in Windows Mixed Reality. 
 author: kevinkennedy
 ms.author: kkennedy
 ms.date: 03/21/2018
 ms.topic: article
 keywords: volumetric image, volume rendering, performance, mixed reality
 ---
-
-
 
 # Volume rendering
 
@@ -20,11 +18,11 @@ Key solutions to improve performance
 3. GOOD: Cutting Sub-Volume: Show only a few layers of the volume
 4. GOOD: Lower the resolution of the volume rendering (see 'Mixed Resolution Scene Rendering')
 
-There is only a certain amount of information that can be transferred from the application to the screen in any particular frame, which is the total memory bandwidth. Also, any processing (or 'shading') required to transform that data for presentation requires time. The primary considerations when doing volume rendering are as such:
+There's only a certain amount of information that can be transferred from the application to the screen in any particular frame, which is the total memory bandwidth. Also, any processing (or 'shading') required to transform that data for presentation requires time. The primary considerations when doing volume rendering are as such:
 * Screen-Width * Screen-Height * Screen-Count * Volume-Layers-On-That-Pixel = Total-Volume-Samples-Per-Frame
 * 1028 * 720 * 2 * 256 = 378961920 (100%) (full res volume: too many samples)
 * 1028 * 720 * 2 * 1 = 1480320 (0.3% of full) (thin slice: 1 sample per pixel, runs smoothly)
-* 1028 * 720 * 2 * 10 = 14803200 (3.9% of full) (sub-volume slice: 10 samples per pixel, runs fairly smoothly, looks 3d)
+* 1028 * 720 * 2 * 10 = 14803200 (3.9% of full) (subvolume slice: 10 samples per pixel, runs fairly smoothly, looks 3d)
 * 200 * 200 * 2 * 256 = 20480000 (5% of full) (lower res volume: fewer pixels, full volume, looks 3d but a bit blurry)
 
 ## Representing 3D Textures
@@ -95,7 +93,7 @@ float4 ShadeVol( float intensity ) {
    color.rgba = tex2d( ColorRampTexture, float2( unitIntensity, 0 ) );
 ```
 
-In many of our applications, we store in our volume both a raw intensity value and a 'segmentation index' (to segment different parts such as skin and bone; these segments are generally created by experts in dedicated tools). This can be combined with the approach above to put a different color, or even different color ramp for each segment index:
+In many of our applications, we store in our volume both a raw intensity value and a 'segmentation index' (to segment different parts such as skin and bone; these segments are created by experts in dedicated tools). This can be combined with the approach above to put a different color, or even different color ramp for each segment index:
 
 ```
 // Change color to match segment index (fade each segment towards black):
@@ -104,7 +102,7 @@ In many of our applications, we store in our volume both a raw intensity value a
 
 ## Volume Slicing in a Shader
 
-A great first step is to create a "slicing plane" that can move through the volume, 'slicing it', and how the scan values at each point. This assumes that there is a 'VolumeSpace' cube, which represents where the volume is in world space, that can be used as a reference for placing the points:
+A great first step is to create a "slicing plane" that can move through the volume, 'slicing it', and how the scan values at each point. This assumes that there's a 'VolumeSpace' cube, which represents where the volume is in world space, that can be used as a reference for placing the points:
 
 ```
 // In the vertex shader:
@@ -119,7 +117,7 @@ A great first step is to create a "slicing plane" that can move through the volu
 
 ## Volume Tracing in Shaders
 
-How to use the GPU to do sub-volume tracing (walks a few voxels deep, then layers on the data from back to front):
+How to use the GPU to do subvolume tracing (walks a few voxels deep, then layers on the data from back to front):
 
 ```
 float4 AlphaBlend(float4 dst, float4 src) {
@@ -163,7 +161,7 @@ float4 AlphaBlend(float4 dst, float4 src) {
 
 ## Whole Volume Rendering
 
-Modifying the sub-volume code above, we get:
+Modifying the subvolume code above, we get:
 
 ```
 float4 volTraceSubVolume(float3 objPosStart, float3 cameraPosVolSpace) {
@@ -178,11 +176,11 @@ float4 volTraceSubVolume(float3 objPosStart, float3 cameraPosVolSpace) {
 
 How to render a part of the scene with a low resolution and put it back in place:
 1. Setup two off-screen cameras, one to follow each eye that update each frame
-2. Setup two low-resolution render targets (i.e. 200x200 each) that the cameras render into
-3. Setup a quad that moves in front of the user
+2. Setup two low-resolution render targets (that is, 200x200 each) that the cameras render into
+3. Set up a quad that moves in front of the user
 
 Each Frame:
-1. Draw the render targets for each eye at low-resolution (volume data, expensive shaders, etc.)
-2. Draw the scene normally as full resolution (meshes, UI, etc.)
+1. Draw the render targets for each eye at low-resolution (volume data, expensive shaders, and so on)
+2. Draw the scene normally as full resolution (meshes, UI, and so on)
 3. Draw a quad in front of the user, over the scene, and project the low-res renders onto that
 4. Result: visual combination of full-resolution elements with low-resolution but high-density volume data

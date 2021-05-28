@@ -1,6 +1,6 @@
 ---
 title: Release notes - May 2016
-description: HoloLens release notes for the Windows Holographic May 2016 Update.
+description: Stay up to date on the HoloLens release notes for the Windows Holographic May 2016 Update.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
@@ -8,10 +8,9 @@ ms.topic: article
 keywords: HoloLens, release notes, os, features, build, platform
 ---
 
-
 # Release notes - May 2016
 
-The HoloLens team is committed to provide you with an update on our latest feature development and major fixes through the Windows Insider Program. Thanks to all your suggestions, we take your feedback to heart. Please continue to [give us feedback](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback) through the Feedback Hub, the [developer forums](https://forums.hololens.com) and [Twitter via @HoloLens](https://twitter.com/hololens).
+The HoloLens team is committed to providing you with the latest feature updates and major fixes through the Windows Insider Program. Thanks to all your suggestions, we take your feedback to heart. Continue to [give us feedback](/windows/mixed-reality/give-us-feedback) through the Feedback Hub, the [developer forums](https://forums.hololens.com) and [Twitter via @HoloLens](https://twitter.com/hololens).
 
 **Release version:** Windows Holographic May 2016 Update (**10.0.14342.1016**)
 
@@ -21,7 +20,7 @@ To update to the current release, open the *Settings* app, go to *Update & Secur
 
 ## New features
 
-* You can now **run up to three apps in 2D view simultaneously**. This enables endless use cases for multi-tasking in HoloLens. Have the new Feedback Hub with the list of Quests open while exploring the new features on this flight.
+* You can now **run up to three apps in 2D view simultaneously**, which enables endless use cases for multi-tasking in HoloLens. Have the new Feedback Hub with the list of Quests open while exploring the new features on this flight.
 
   ![HoloLens can run three apps at the same time](images/img-3625-400px.jpg)<br>
   Run up to three apps in 2D view simultaneously
@@ -30,10 +29,10 @@ To update to the current release, open the *Settings* app, go to *Update & Secur
    * Try looking at a hologram and rotate it by saying "face me"
    * Change its size by saying "bigger" or "smaller"
    * Move an app by saying "Hey Cortana, move *app name* here."
-* We've made **developing on HoloLens easier**. You can now browse, upload, and download files through the [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal). You can access the Documents folder, Pictures folder, and the local storage for any app you side-loaded or deployed through Visual Studio.
-* The **emulator now supports log-in with a Microsoft Account** just like you would on a real HoloLens. You can enable this from the Additional Tools menu ">>".
-* **2D Apps now hide the app bar and cursor when watching video full screen** to avoid distraction. With this, your video watching experience will be even more enjoyable on HoloLens.
-* You can also **pin photos without the app bar** in your world .
+* We've made **developing on HoloLens easier**. You can now browse, upload, and download files through the [Windows Device Portal](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal). You can access the Documents folder, Pictures folder, and the local storage for any app you side-loaded or deployed through Visual Studio.
+* The **emulator now supports log-in with a Microsoft Account** just like you would on a real HoloLens, which you can enable from the Additional Tools menu ">>".
+* **2D Apps now hide the app bar and cursor when watching video full screen** to avoid distraction. Your video watching experience will be even more enjoyable on HoloLens.
+* You can also **pin photos without the app bar** in your world.
 
   ![The app bar can be hidden for 2D apps like photos](images/img-3626-400px.jpg)<br>
   The app bar can be hidden for apps with a 2D view, like Photos
@@ -46,17 +45,17 @@ To update to the current release, open the *Settings* app, go to *Update & Secur
   ![Holograms can be rotated after you place them in the world](images/img-3627-400px.jpg)<br>
   Rotate holograms after you place them in your world
 
-* We've made a lot of **input improvement** in this flight. You can connect a regular Bluetooth mouse to HoloLens. The clicker has been fine tuned to enable resizing & moving holograms with a clicker. Keyboard is also running better than ever.
-* Now you can take **mixed reality pictures** by simply pressing down the volume up + volume down simultaneously. You can also share your mixed reality captured photos & videos to Facebook, Twitter and YouTube.
+* We've made several **input improvement** in this flight. You can connect a regular Bluetooth mouse to HoloLens. The clicker has been fine-tuned to enable resizing & moving holograms with a clicker. Keyboard is also running better than ever.
+* Now you can take **mixed reality pictures** by pressing down the volume up + volume down simultaneously. You can also share your mixed reality captured photos & videos to Facebook, Twitter, and YouTube.
 * The maximum recording length of **mixed reality videos** has been increased to five minutes.
 * **Photos app** now streams videos from OneDrive instead of having to download the entire video before playback.
-* We've improved how your **holograms will be right where you left them**. You will also be presented the option to re-connect to Wi-Fi and try again if HoloLens cannot detect where they are.
+* We've improved how your **holograms will be right where you left them**. You'll also be presented the option to reconnect to Wi-Fi and try again if HoloLens can't detect where they are.
 * The keyboard has an **improved layout for entering email address** with keys that allow you to enter the most popular email domains with a single click.
 * Faster **app registration** and **auto detection of time zone** during OOBE, giving you the best first user experience.
 * **Storage sense** allows you to view remaining and used disk space by the system and apps in the settings app.
-* We have converged Feedback App and Inside Hub into a single app **Feedback Hub** that will be the go-to tool for **giving us feedback**, which features you love, which features you could do without, or when something could be better. When you join the Insider Program, you can keep up on **get latest Insider news**, **rate builds** and go on **feedback quests** from Feedback Hub.
-* We've also [published an updated HoloLens Emulator](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools) build.
-* Your mixed reality videos now look better due to automatic **video stabilization**.
+* We've converged Feedback App and Inside Hub into a single app **Feedback Hub**, which is the go-to tool for **giving us feedback** on features you love, which ones need improvement, and which ones you could do without. When you join the Insider Program, you can keep up on **get latest Insider news**, **rate builds** and go on **feedback quests** from Feedback Hub.
+* We've also [published an updated HoloLens Emulator](/windows/mixed-reality/develop/install-the-tools) build.
+* Your mixed reality videos now look better because of automatic **video stabilization**.
 
 ## Major fixes
 
@@ -74,7 +73,7 @@ We fixed an issue
 * where windows device portal didn’t allow IPD adjustments from 50 to 80
 
 We fixed issues with Photos where
-* an image would occasionally display rotated due to ignoring the EXIF orientation property.
+* an image would occasionally display rotated because ignoring EXIF orientation property was ignored.
 * it could crash during start-up on pinned Photos.
 * videos would restart after pausing instead of continuing from where last paused.
 * replay of a shared video could be prevented if it was shared while playing.
@@ -83,7 +82,7 @@ We fixed issues with Photos where
 
 We fixed issues with settings where
 * a refresh was needed when the environment changes.
-* 'Enter' on keyboard would not behave like clicking Next in some dialogs.
+* 'Enter' on keyboard wouldn't behave like clicking Next in some dialogs.
 * it was hard to know when the clicker failed pairing.
 * it could become unresponsive with WiFi disconnect and connect.
 
@@ -94,27 +93,27 @@ We fixed issues with Cortana where
 * the queries "What network am I connected to?" and the "Am I connected?" could fail when the first network profile comes back with no connectivity.
 * the UI froze on "Listening" but upon exiting an app would immediately began doing speech recognition again.
 * where signing out of the Cortana app wouldn't let you sign back into it until a reboot.
-* it would not launch when Mixed Reality Capture UI was active.
+* it wouldn't launch when Mixed Reality Capture UI was active.
 
 We fixed issues with Visual Studio where
-* background task debugging did not work.
-* frame analysis in the graphics debugger did not work.
-* the HoloLens Emulator did not appear in the drop-down list for Visual Studio unless your project's TargetPlatformVersion was set to 10240.
+* background task debugging didn't work.
+* frame analysis in the graphics debugger didn't work.
+* the HoloLens Emulator didn't' appear in the drop-down list for Visual Studio unless your project's TargetPlatformVersion was set to 10240.
 
 ## Changes from previous release
-* The Cortana command **Hey Cortana, reboot the device** does not work. User can say **Hey Cortana, restart** or **Hey Cortana, restart the device**.
+* The Cortana command **Hey Cortana, reboot the device** doesn't work. User can say **Hey Cortana, restart** or **Hey Cortana, restart the device**.
 * Kiosk mode has been removed from the product.
 
 ## Prior release notes
 * [Release notes - March 2016](release-notes-march-2016.md)
 
 ## See also
-* [HoloLens known issues](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
-* [Install the tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
-* [Shell](https://docs.microsoft.com/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)
-* [Updating 2D UWP apps for mixed reality](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/building-2d-apps)
-* [Hardware accessories](https://docs.microsoft.com/windows/mixed-reality/discover/hardware-accessories)
-* [Mixed reality capture](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-capture)
-* [Voice input](https://docs.microsoft.com/windows/mixed-reality/design/voice-input)
-* [Submitting an app to the Windows Store](https://docs.microsoft.com/windows/mixed-reality/distribute/submitting-an-app-to-the-microsoft-store)
-* [Using the HoloLens emulator](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)
+* [HoloLens known issues](/windows/mixed-reality/hololens-known-issues)
+* [Install the tools](/windows/mixed-reality/develop/install-the-tools)
+* [Shell](/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)
+* [Updating 2D UWP apps for mixed reality](/windows/mixed-reality/develop/porting-apps/building-2d-apps)
+* [Hardware accessories](/windows/mixed-reality/discover/hardware-accessories)
+* [Mixed reality capture](/windows/mixed-reality/mixed-reality-capture)
+* [Voice input](/windows/mixed-reality/design/voice-input)
+* [Submitting an app to the Windows Store](/windows/mixed-reality/distribute/submitting-an-app-to-the-microsoft-store)
+* [Using the HoloLens emulator](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)

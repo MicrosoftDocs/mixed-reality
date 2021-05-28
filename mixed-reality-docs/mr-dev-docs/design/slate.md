@@ -1,6 +1,6 @@
 ---
 title: Slate
-description: A slate is a thin window style control for displaying 2D content.
+description: Lean about slates, a thin window style control for displaying 2D content using the Mixed Reality Toolkit.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
@@ -12,7 +12,7 @@ keywords: Mixed Reality, Controls, interaction, ui, ux, mixed reality headset, w
 
 ![Slate](images/UX_Hero_Slate.jpg)
 
-A slate is a thin window style control for displaying 2D content. For example, you can use it to display plain text, images, or documents. It offers a grabbable title bar with buttons for 'Follow me (tag-along)' and close functionality. The content within a slate can be scrolled via [direct manipulation](direct-manipulation.md#2d-slate-interaction) just like a physical touch screen. You can use gaze, air-tap and drag gesture or a motion controller's pointer as well.
+A slate is a thin window style control for displaying 2D content like plain text, images, or documents. A slate offers a grabbable title bar with buttons for 'Follow me (tag-along)' and close functionality. The content within a slate can be scrolled via [direct manipulation](direct-manipulation.md#2d-slate-interaction) just like a physical touch screen. You can use gaze, air-tap, and drag gesture or a motion controller's pointer as well.
 
 <br>
 
@@ -20,7 +20,7 @@ A slate is a thin window style control for displaying 2D content. For example, y
 
 ## Slate in MRTK (Mixed Reality Toolkit) for Unity
 
-* [MRTK - Slate](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Slate.html)
+* [MRTK - Slate](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/slate)
 
 <br>
 

@@ -29,7 +29,7 @@ Mixed Reality is a blend of physical and digital worlds, unlocking the links bet
 
 Over the past several decades, exploration into the relationship between human and computer input has continued, leading to the discipline known as *human computer interaction* or HCI. Human input happens through different means, including keyboards, mice, touch, ink, voice, and even Kinect skeletal tracking.
 
-Advancements in sensors and processing are giving rise to a new area of computer input from environments. The interaction between computers and environments is effectively environmental understanding or *perception*, which is why the API names in Windows that reveal environmental information are called the [perception APIs](https://docs.microsoft.com/uwp/api/Windows.Perception). Environmental input captures things like a person's position in the world ([head tracking](../design/coordinate-systems.md)), surfaces and boundaries ([spatial mapping](../design/spatial-mapping.md) and [scene understanding](../design/scene-understanding.md)), ambient lighting, environmental sound, object recognition, and location.
+Advancements in sensors and processing are creating new areas of computer input from environments. The interaction between computers and environments is environmental understanding or *perception*, which is why the API names in Windows that reveal environmental information are called the [perception APIs](/uwp/api/Windows.Perception). Environmental input captures things like a person's position in the world ([head tracking](../design/coordinate-systems.md)), surfaces, and boundaries ([spatial mapping](../design/spatial-mapping.md) and [scene understanding](../design/scene-understanding.md)), ambient lighting, environmental sound, object recognition, and location.
 
 <br>
 
@@ -38,7 +38,7 @@ Advancements in sensors and processing are giving rise to a new area of computer
 
 <br>
 
-The combination of all three - **computer processing, human input, and environmental input** - sets the stage for creating true Mixed Reality experiences. Movement through the physical world can translate to movement in the digital world. Boundaries in the physical world can influence application experiences, such as game play, in the digital world. Without environmental input, experiences can't blend between physical and digital realities.<br>
+The combination of all three - **computer processing, human input, and environmental input** - sets the stage for creating true Mixed Reality experiences. Movement through the physical world translates to movement in the digital world. Boundaries in the physical world influence application experiences, such as game play, in the digital world. Without environmental input, experiences can't blend between physical and digital realities.<br>
 
 <br>
 
@@ -60,8 +60,7 @@ Since Mixed Reality blends both physical and digital worlds, these two realities
 Most mobile phones on the market today have little to no environmental understanding capabilities. The experiences they offer can't mix physical and digital realities. The experiences that overlay graphics on video streams of the physical world are *augmented reality*. The experiences that occlude your view to present a digital experience are *virtual reality*. The experiences enabled between augmented and virtual reality form *Mixed Reality*:
 * Starting with the physical world, placing a digital object, such as a hologram, as if it was there.
 * Starting with the physical world, a digital representation of another person--an avatar--shows the location where they were standing when leaving notes. In other words, experiences that represent asynchronous collaboration at different points in time.
-* Starting with a digital world, physical boundaries from the physical world, such as walls and furniture, appear digitally within the experience to help users avoid physical objects.
-
+* Starting with a digital world, physical boundaries from the physical world like walls and furniture appear digitally within the experience to help users avoid physical objects.
 
 <br>
 
@@ -95,7 +94,7 @@ There are two main types of devices that deliver Windows Mixed Reality experienc
 > [!NOTE]
 > Whether a device is connected to or tethered to a separate PC (via USB cable or Wi-Fi) or self-contained (untethered) doesn't reflect whether a device is holographic or immersive. Features that improve mobility lead to better experiences, and both holographic and immersive devices could be tethered or untethered.
 
-Technological advancement is what has enabled Mixed Reality experiences. There are no devices today that can run experiences across the entire spectrum. Windows 10 provides a common Mixed Reality platform for both device manufacturers and developers. Devices today can support a specific range within the Mixed Reality spectrum, with new devices expanding that range. In the future, holographic devices will become more immersive, and immersive devices will become more holographic.
+Technological advancement enables Mixed Reality experiences, but there aren't any devices today that can run experiences across the entire spectrum. Windows 10 provides a common Mixed Reality platform for both device manufacturers and developers. Devices today can support a specific range within the Mixed Reality spectrum, with new devices expanding that range. In the future, holographic devices will be immersive, and immersive devices will be more holographic.
 
 <br>
 
@@ -109,9 +108,7 @@ It's best to think what type of experience an application or game developer want
 
 ## Next Discovery Checkpoint
 
-If you're following the [discovery journey](get-started-with-mr.md) we've laid out, you're in the midst of exploring the basics of Mixed Reality. From here, you can proceed to the next foundational topic: 
+If you're following the [discovery journey](get-started-with-mr.md) we've laid out, you're in the midst of exploring the basics of Mixed Reality. From here, you can continue to the next foundational topic: 
 
 > [!div class="nextstepaction"]
 > [What is a hologram?](hologram.md)
-
-

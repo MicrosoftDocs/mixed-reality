@@ -1,5 +1,5 @@
 ---
-title: MR and Azure 306 - Streaming video
+title: HoloLens (1st gen) and Azure 306 - Streaming video
 description: Complete this course to learn how to implement Azure Media Services within a mixed reality application.
 author: drneil
 ms.author: jemccull
@@ -8,8 +8,7 @@ ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, media services, streaming video, 360, immersive, vr, Windows 10, Visual Studio
 ---
 
-
-# MR and Azure 306: Streaming video
+# HoloLens (1st gen) and Azure 306: Streaming video
 
 <br>
 
@@ -39,7 +38,7 @@ In your application, it is up to you as to how you will integrate the results wi
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td> MR and Azure 306: Streaming video</td><td style="text-align: center;"> </td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -138,7 +137,7 @@ To use the Azure Media Service, you will need to configure an instance of the se
 
     3. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure services associated with a single project (e.g. such as these labs) under a common resource group). 
     
-    > If you wish to read more about Azure Resource Groups, please follow this [link on how to manage Azure Resource Groups](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+    > If you wish to read more about Azure Resource Groups, please follow this [link on how to manage Azure Resource Groups](/azure/azure-resource-manager/resource-group-portal).
 
     4.  Determine the **Location** for your resource group (if you are creating a new Resource Group). The location would ideally be in the region where the application would run. Some Azure assets are only available in certain regions.
 
@@ -247,7 +246,7 @@ To use the Azure Media Service, you will need to configure an instance of the se
     2.  The **date** and **time** will be set for you, from your current date, to a time in the future (one hundred years in this case). Leave as is or change it to suit.
 
     > [!NOTE]
-    > For more information about Locators, and what you can choose, visit the [Azure Media Services Documentation](https://docs.microsoft.com/azure/media-services/media-services-concepts).
+    > For more information about Locators, and what you can choose, visit the [Azure Media Services Documentation](/azure/media-services/media-services-concepts).
 
 24. At the bottom of that panel, click on the **Add** button.
 
@@ -603,7 +602,7 @@ To create this class:
     ```
 
     > [!TIP] 
-    > The **ChangeScene()** method uses a handy C\# feature called the *Conditional Operator*. This allows for conditions to be checked, and then values returned based on the outcome of the check, all within a single statement. Follow this [link to learn more about Conditional Operator](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/conditional-operator).
+    > The **ChangeScene()** method uses a handy C\# feature called the *Conditional Operator*. This allows for conditions to be checked, and then values returned based on the outcome of the check, all within a single statement. Follow this [link to learn more about Conditional Operator](/dotnet/csharp/language-reference/operators/conditional-operator).
 
 11. Save your changes in Visual Studio before returning to Unity.
 
@@ -885,5 +884,3 @@ It is entirely possible to only use a single scene to change videos within this 
 **Exercise 2**
 
 Experiment with Azure and Unity, and attempt to implement the ability for the app to automatically select a video with a different file size, depending on the strength of an Internet connection.
-
-

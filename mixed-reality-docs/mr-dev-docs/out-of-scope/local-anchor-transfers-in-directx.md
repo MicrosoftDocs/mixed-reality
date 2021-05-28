@@ -1,6 +1,6 @@
 ---
 title: Local anchor transfers in DirectX
-description: Explains how to synchronize two HoloLens devices by transferring spatial anchors.
+description: Learn how to synchronize two HoloLens devices by transferring, exporting, and serializing spatial anchors.
 author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
@@ -8,27 +8,25 @@ ms.topic: article
 keywords: HoloLens, synchronize, spatial anchor, transfer, multiplayer, view, scenario, walkthrough, sample code, transfer, local anchor transfer, anchor export, anchor import
 ---
 
-
-
 # Local anchor transfers in DirectX
 
-In situations where you cannot use <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>, local anchor transfers enable one HoloLens device to export an anchor to be imported by a second HoloLens device.
+In situations where you cannot use <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>, local anchor transfers enable one HoloLens device to export an anchor to be imported by a second HoloLens device.
 
 >[!NOTE]
->Local anchor transfers provide less robust anchor recall than <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>, and iOS and Android devices are not supported by this approach.
+>Local anchor transfers provide less robust anchor recall than <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>, and iOS and Android devices are not supported by this approach.
 
 >[!NOTE]
 >The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](../develop/native/creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, though you will need to translate the code.
 
 ## Transferring spatial anchors
 
-You can transfer spatial anchors between Windows Mixed Reality devices by using the [SpatialAnchorTransferManager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx). This API lets you bundle up an anchor with all the supporting sensor data needed to find that exact place in the world, and then import that bundle on another device. Once the app on the second device has imported that anchor, each app can render holograms using that shared spatial anchor's coordinate system, which will then appear in the same place in the real world.
+You can transfer spatial anchors between Windows Mixed Reality devices by using the [SpatialAnchorTransferManager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager). This API lets you bundle up an anchor with all the supporting sensor data needed to find that exact place in the world, and then import that bundle on another device. Once the app on the second device has imported that anchor, each app can render holograms using that shared spatial anchor's coordinate system, which will then appear in the same place in the real world.
 
 Note that spatial anchors are not able to transfer between different device types, for example a HoloLens spatial anchor may not be locatable using an immersive headset.  Transferred anchors are also not compatible with iOS or Android devices.
 
 ## Set up your app to use the spatialPerception capability
 
-Your app must be granted permission to use the spatialPerception capability before it can use the [SpatialAnchorTransferManager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx). This is necessary because transferring a spatial anchor involves sharing sensor images gathered over time in vicinity of that anchor, which might include sensitive information.
+Your app must be granted permission to use the SpatialPerception capability before it can use the [SpatialAnchorTransferManager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager). This is necessary because transferring a spatial anchor involves sharing sensor images gathered over time in vicinity of that anchor, which might include sensitive information.
 
 Declare this capability in the package.appxmanifest file for your app. Here's an example:
 
@@ -50,11 +48,11 @@ The capability comes from the **uap2** namespace. To get access to this namespac
     >
 ```
 
-**NOTE:** Your app will need to request the capability at runtime before it can access SpatialAnchor export/import APIs. See [RequestAccessAsync](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.requestaccessasync.aspx) in the examples below.
+**NOTE:** Your app will need to request the capability at runtime before it can access SpatialAnchor export/import APIs. See [RequestAccessAsync](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager) in the examples below.
 
 ## Serialize anchor data by exporting it with the SpatialAnchorTransferManager
 
-A helper function is included in the code sample to export (serialize) [SpatialAnchor](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.aspx) data. This export API serializes all anchors in a collection of key-value pairs associating strings with anchors.
+A helper function is included in the code sample to export (serialize) [SpatialAnchor](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) data. This export API serializes all anchors in a collection of key-value pairs associating strings with anchors.
 
 ```
 // ExportAnchorDataAsync: Exports a byte buffer containing all of the anchors in the given collection.
@@ -271,7 +269,7 @@ If the data is able to be imported, we get a map view of key-value pairs associa
 
 ## Special Considerations
 
-The [TryExportAnchorsAsync](https://msdn.microsoft.com/library/windows/apps/mt592763.aspx) API allows multiple [SpatialAnchors](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.aspx) to be exported into the same opaque binary blob. However, there is a subtle difference in what data the blob will include, depending on whether a single SpatialAnchor or multiple SpatialAnchors are exported in a single call.
+The [TryExportAnchorsAsync](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager) API allows multiple [SpatialAnchors](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) to be exported into the same opaque binary blob. However, there is a subtle difference in what data the blob will include, depending on whether a single SpatialAnchor or multiple SpatialAnchors are exported in a single call.
 
 ### Export of a single SpatialAnchor
 
@@ -672,6 +670,6 @@ void SampleAnchorTcpClient::HandleException(Exception^ exception)
 That's it! Now, you should have enough information to try locating the anchors received over the network. Again, note that the client must have enough visual tracking data for the space to successfully locate the anchor; if it doesn't work right away, try walking around for a while. If it still doesn't work, have the server send more anchors, and use network communications to agree on one that works for the client. You can try this out by downloading the HolographicSpatialAnchorTransferSample, configuring your client and server IPs, and deploying it to client and server HoloLens devices.
 
 ## See also
-* [Parallel Patterns Library (PPL)](https://msdn.microsoft.com/library/dd492418.aspx)
-* [Windows.Networking.StreamSocket](https://msdn.microsoft.com/library/windows/apps/windows.networking.sockets.streamsocket.aspx)
-* [Windows.Networking.StreamSocketListener](https://msdn.microsoft.com/library/windows/apps/windows.networking.sockets.streamsocketlistener.aspx)
+* [Parallel Patterns Library (PPL)](/cpp/parallel/concrt/parallel-patterns-library-ppl)
+* [Windows.Networking.StreamSocket](/uwp/api/Windows.Networking.Sockets.StreamSocket)
+* [Windows.Networking.StreamSocketListener](/uwp/api/Windows.Networking.Sockets.StreamSocketListener)

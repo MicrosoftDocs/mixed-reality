@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: Learn the tools and architecture
-description: Mixed reality developer documentation for HoloLens and immersive headsets.
+description: Learn about the mixed reality development tools you'll need to get started making apps for HoloLens and immersive headsets.
 author: grbury
 ms.author: grbury
 ms.date: 12/9/2020
@@ -39,31 +39,4 @@ Now that you have a technology path in mind, let's equip you with the tools you 
 
 > [!div class="nextstepaction"]
 > [Install the tools](install-the-tools.md)
-
-<!-- 
-## What would you like to do next?
-
-:::row:::
-    :::column:::
-       [![Understand the basics](images/icon-lightbulb.png)](get-started-with-mr.md#understand-the-basics)<br>
-        **[Understand the basics](get-started-with-mr.md#understand-the-basics)**<br>
-        Get a better understanding of what defines mixed reality and how it’s being used.
-    :::column-end:::
-    :::column:::
-        [![Become a creator](images/icon-design.jpg)](design.md)<br>
-         **[Become a creator](design.md)**<br>
-        Learn the basic concepts you need to begin designing and prototyping.
-    :::column-end:::
-    :::column:::
-        [![Install the tools](images/icon-developer.jpg)](install-the-tools.md)<br>
-         **[Install the tools](install-the-tools.md)**<br>
-        Use the installation checklist to get the tools you need to build apps for HoloLens and mixed reality.
-    :::column-end:::
-    :::column:::
-        [![Come to an event](images/icon-calendar.jpg)](sf-academy-events.md)<br>
-         **[Come to an event](sf-academy-events.md)**<br>
-        See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
-    :::column-end:::
-:::row-end:::
--->
 

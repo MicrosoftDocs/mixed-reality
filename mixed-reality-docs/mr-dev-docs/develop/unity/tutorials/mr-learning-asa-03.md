@@ -1,9 +1,9 @@
 ---
-title: Azure Spatial Anchors tutorials - 3. Saving, retrieving, and sharing Azure Spatial Anchors
+title: Saving, retrieving, and sharing Azure Spatial Anchors
 description: Complete this course to learn how to save, retrieve, and share Azure Spatial Anchors in a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, app sessions
 ms.localizationpriority: high
@@ -53,7 +53,7 @@ If you build the updated app to your HoloLens, you can now persist Azure Spatial
 8. Find Azure Anchor (positions the Rover Explorer at the location from step 3)
 
 > [!NOTE]
-> To fully restart the app, after exiting the immersive app view, the app window in the mixed reality home needs to be closed before relaunching it from the Start menu. For additional details, you can refer to the [Using apps on HoloLens](https://docs.microsoft.com/hololens/holographic-home#using-apps-on-hololens) documentation.
+> To fully restart the app, after exiting the immersive app view, the app window in the mixed reality home needs to be closed before relaunching it from the Start menu. For additional details, you can refer to the [Using apps on HoloLens](/hololens/holographic-home#using-apps-on-hololens) documentation.
 
 ## Sharing Azure Spatial Anchors between devices
 

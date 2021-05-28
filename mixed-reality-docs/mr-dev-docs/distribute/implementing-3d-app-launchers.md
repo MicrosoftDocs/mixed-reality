@@ -1,6 +1,6 @@
 ---
 title: Implement 3D app launchers (UWP apps)
-description: How to create 3D app launchers and logos for Windows Mixed Reality UWP apps and games (distributed through the Microsoft Store), both on HoloLens and immersive (VR) headsets. 
+description: Learn how to create 3D app launchers and logos for Windows Mixed Reality UWP apps and games on HoloLens and VR headsets. 
 author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
@@ -8,24 +8,23 @@ ms.topic: article
 keywords: 3D, logo, icon, modeling, launcher, 3D launcher, tile, live cube, deep link, secondarytile, secondary tile, UWP, mixed reality headset, windows mixed reality headset, virtual reality headset, XML, bounding box, unity
 ---
 
-
 # Implement 3D app launchers (UWP apps)
 
 > [!NOTE]
 > This feature was added as part of the 2017 Fall Creators Update (RS3) for immersive headsets and is supported by HoloLens with the  Windows 10 April 2018 Update. Make sure your application is targeting a version of the Windows SDK greater than or equal to 10.0.16299 on immersive Headsets and 10.0.17125 on HoloLens. You can find the latest Windows SDK [here](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
-The [Windows Mixed Reality home](../discover/navigating-the-windows-mixed-reality-home.md) is the starting point where users land before launching applications. When creating a UWP application for Windows Mixed Reality, by default, apps are launched as 2D slates with their app's logo. When developing experiences for Windows Mixed Reality, a 3D launcher can optionally be defined to override the default 2D launcher for your application. In general, 3D launchers are recommended for launching immersive applications that take users out of the Windows Mixed Reality home whereas the default 2D launcher is preferred when the app is activated in place. You can also create a [3D deep link (secondaryTile)](#3d-deep-links-secondarytiles) as a 3D launcher to content within a 2D UWP app.
+The [Windows Mixed Reality home](../discover/navigating-the-windows-mixed-reality-home.md) is the starting point where users land before launching applications. When creating a UWP application for Windows Mixed Reality, by default, apps are launched as 2D slates with their app's logo. When developing experiences for Windows Mixed Reality, a 3D launcher can optionally be defined to override the default 2D launcher for your application. In general, 3D launchers are recommended for launching immersive applications that take users out of the Windows Mixed Reality home. The default 2D launcher is preferred when the app is activated in place. You can also create a [3D deep link (secondaryTile)](#3d-deep-links-secondarytiles) as a 3D launcher to content within a 2D UWP app.
 
 >[!VIDEO https://www.youtube.com/embed/TxIslHsEXno]
 
 ## 3D app launcher creation process
 
-There are 3 steps to creating a 3D app launcher:
+There are three steps to creating a 3D app launcher:
 1. [Designing and concepting](3d-app-launcher-design-guidance.md)
 2. [Modeling and exporting](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 3. Integrating it into your application (this article)
 
-3D assets to be used as launchers for your application should be authored using the [Windows Mixed Reality authoring guidelines](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) to ensure compatibility. Assets that fail to meet this authoring specification will not be rendered in the Windows Mixed Reality home.
+3D assets to be used as launchers for your application should be authored using the [Windows Mixed Reality authoring guidelines](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) to ensure compatibility. Assets that fail to meet this authoring specification won't be rendered in the Windows Mixed Reality home.
 
 ## Configuring the 3D launcher
 
@@ -68,7 +67,7 @@ Next specify the "MixedRealityModel" in the default tile for your application:
 </Applications>
 ```
 
-The MixedRealityModel elements accepts a file path pointing to a 3D asset stored in your app package. Currently only 3D models delivered using the .glb file format and authored against the [Windows Mixed Reality 3D asset authoring instructions](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) are supported. Assets must be stored in the app package and animation is not currently supported. If the “Path” parameter is left blank Windows will show the 2D slate instead of the 3D launcher. **Note:** the .glb asset must be marked as "Content" in your build settings before building and running your app.
+The MixedRealityModel element accepts a file path pointing to a 3D asset stored in your app package. Currently only 3D models delivered using the .glb file format and authored against the [Windows Mixed Reality 3D asset authoring instructions](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) are supported. Assets must be stored in the app package and animation isn't currently supported. If the “Path” parameter is left blank Windows will show the 2D slate instead of the 3D launcher. **Note:** the .glb asset must be marked as "Content" in your build settings before building and running your app.
 
 
 ![Select the .glb in your solution explorer and use the properties section to mark it as "Content" in the build settings](images/buildsetting-content-300px.png)<br>
@@ -76,9 +75,9 @@ The MixedRealityModel elements accepts a file path pointing to a 3D asset stored
 
 ### Bounding box
 
-A bounding box can be used to optionally add an additional buffer region around the object. The bounding box is specified using a center point and extents which indicate the distance from the center of the bounding box to its edges along each axis. Units for the bounding box can be mapped to 1 unit = 1 meter. If a bounding box is not provided then one will be automatically fitted to the mesh of the object. If the provided bounding box is smaller than the model then it will be resized to fit the mesh.
+A bounding box can be used to optionally add an extra buffer region around the object. The bounding box is specified using a center point and extents, which indicate the distance from the center of the bounding box to its edges along each axis. Units for the bounding box can be mapped to 1 unit = 1 meter. If a bounding box isn't provided, then one will be automatically fitted to the mesh of the object. If the provided bounding box is smaller than the model, then it will be resized to fit the mesh.
 
-Support for the bounding box attribute will come with the Windows RS4 update as a property on the MixedRealityModel element. To define a bounding box first at the top of the app manifest add the uap6 schema and include it them as ignorable namespaces:
+Support for the bounding box attribute will come with the Windows RS4 update as a property on the MixedRealityModel element. To define a bounding box first at the top of the app manifest add the uap6 schema and include it as ignorable namespaces:
 
 ```xml
 <Package xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" 
@@ -114,7 +113,7 @@ When working with Unity the project must be built and opened in Visual Studio be
 >[!IMPORTANT]
 >3D deep links (secondaryTiles) only work with 2D UWP apps. You can, however, create a [3D app launcher](implementing-3d-app-launchers.md) to launch an exclusive app from the Windows Mixed Reality home.
 
-Your 2D applications can be enhanced for Windows Mixed Reality by adding the ability to place 3D models from your app into the [Windows Mixed Reality home](../discover/navigating-the-windows-mixed-reality-home.md) as deep links to content within your 2D app, just like [2D secondary tiles](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-secondary-tiles) on the Windows Start menu. For example, you can create 360° photospheres that link directly into a 360° photo viewer app, or let users place 3D content from a collection of assets that opens a details page about the author. These are just a couple ways to expand the functionality of your 2D application with 3D content.
+Your 2D applications can be enhanced for Windows Mixed Reality by adding the ability to place 3D models from your app into the [Windows Mixed Reality home](../discover/navigating-the-windows-mixed-reality-home.md) as deep links to content within your 2D app, just like [2D secondary tiles](/windows/uwp/controls-and-patterns/tiles-and-notifications-secondary-tiles) on the Windows Start menu. For example, you can create 360° photospheres that link directly into a 360° photo viewer app, or let users place 3D content from a collection of assets that opens a details page about the author. These are just a couple ways to expand the functionality of your 2D application with 3D content.
 
 ### Creating a 3D “secondaryTile”
 
@@ -153,7 +152,7 @@ await tile.RequestCreateAsync();
 
 ### Bounding box
 
-A bounding box can be used to add an additional buffer region around the object. The bounding box is specified using a center point and extents which indicate the distance from the center of the bounding box to its edges along each axis. Units for the bounding box can be mapped to 1 unit = 1 meter. If a bounding box is not provided then one will be automatically fitted to the mesh of the object. If the provided bounding box is smaller than the model then it will be resized to fit the mesh.
+A bounding box can be used to add an extra buffer region around the object. The bounding box is specified using a center point and extents, which indicate the distance from the center of the bounding box to its edges along each axis. Units for the bounding box can be mapped to 1 unit = 1 meter. If a bounding box isn't provided, one will be automatically fitted to the mesh of the object. If the provided bounding box is smaller than the model, it will be resized to fit the mesh.
 
 ### Activation behavior
 
@@ -162,7 +161,7 @@ A bounding box can be used to add an additional buffer region around the object.
 
 You can define the activation behavior for a 3D secondaryTile to control how it reacts when a user selects it. This can be used to place 3D objects in the Mixed Reality home that are purely informative or decorative. The following activation behavior types are supported:
 1. Default: When a user selects the 3D secondaryTile the app is activated
-2. None: When the users selects the 3D secondaryTile nothing happens and the app is not activated.
+2. None: When the user selects the 3D secondaryTile nothing happens and the app isn't activated.
 
 ### Obtaining and updating an existing “secondaryTile”
 
@@ -187,16 +186,17 @@ if (!tile.VisualElements.MixedRealityModel.Uri.Equals(updatedUri))
 
 ### Checking that the user is in Windows Mixed Reality
 
-3D deep links (secondaryTiles) can only be created while the view is being displayed in a Windows Mixed Reality headset. When your view isn't being presented in a Windows Mixed Reality headset we recommend gracefully handling this by either hiding the entry point or showing an error message. You can check this by querying [IsCurrentViewPresentedOnHolographic()](https://docs.microsoft.com/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_).
+3D deep links (secondaryTiles) can only be created while the view is being displayed in a Windows Mixed Reality headset. When your view isn't being presented in a Windows Mixed Reality headset, we recommend gracefully handling this by either hiding the entry point or showing an error message. You can check this by querying [IsCurrentViewPresentedOnHolographic()](/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_).
 
 ## Tile notifications
 
-Tile notifications do not currently support sending an update with a 3D asset. This means that developers will not be able to do the following
+Tile notifications don't currently support sending an update with a 3D asset. This means that developers can't do the following:
+
 * Push Notifications
 * Periodic Polling
 * Scheduled Notifications
 
-For more information on the other tiles features and attributes and how they are used for 2D tiles refer to the [Tiles for UWP Apps documentation](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles).
+For more information on the other tiles features and attributes and how they're used for 2D tiles, see the [Tiles for UWP Apps documentation](/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles).
 
 ## See also
 

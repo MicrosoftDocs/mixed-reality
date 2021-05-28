@@ -1,5 +1,5 @@
 ---
-title: Other questions
+title: Immersive hardware realted FAQ
 description: Additional Windows Mixed Reality troubleshooting tips that go beyond our standard consumer support documentation.
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -15,7 +15,7 @@ appliesto:
 
 Search for and run "dxdiag":
 
-1.	If the result is “Basic Renderer”, the graphics driver is not installed. To fix this:
+1.	If the result is “Basic Renderer”, the graphics driver isn't installed. To fix this:
     * Go to **Device Manager > Action > Scan for Hardware Changes**.
     * Use Windows Update to update the driver.
     * If this doesn't fix the problem, go to the manufacturer’s website and install the latest driver update. 
@@ -29,14 +29,14 @@ If Windows Mixed Reality setup says your graphics card doesn’t meet the requir
 
 ## My Samsung Odyssey or Odyssey+ headset firmware update is stuck.
 
-Samsung owns and publishes headset firmware updates delivered via their "Samsung HMD Odyssey Setup" and "Samsung HMD Odyssey+ Setup" device companion apps. For more details and for help with Samsung firmware update issues, please reach out to Samsung customer service.
+Samsung owns and publishes headset firmware updates delivered via their "Samsung HMD Odyssey Setup" and "Samsung HMD Odyssey+ Setup" device companion apps. For more details and for help with Samsung firmware update issues, contact Samsung customer service.
 
 If the firmware update process is getting stuck, and there has been no progress for more than five minutes:
 
 * Unplug all of your other USB devices temporarily and retry the firmware update.
 * Connect your Samsung headset to a different USB 3.0 port on your PC.
-* Disable and/or uninstall any software installed that may interfere with firmware updates, like Gigabyte's AORUS App Center.
-* Use a different PC to perform the Samsung headset firmware update.
+* Disable or uninstall any software installed that may interfere with firmware updates, like Gigabyte's AORUS App Center.
+* Use a different PC to update the Samsung headset firmware.
 
 ## How do I access my PC desktop in mixed reality?
 Launch the Desktop app in the headset from **Windows Button > All apps > Desktop** to access your PC desktop in mixed reality.
@@ -45,23 +45,23 @@ Launch the Desktop app in the headset from **Windows Button > All apps > Desktop
 
 By default, Desktop app automatically switches to display the monitor with focus. If you want to see all of your monitors in mixed reality:
 
-* Click the monitor icon on the top left corner of the app.
+* Select the monitor icon on the top-left corner of the app.
 * Disable "Automatically Switch Monitor".
 * Pick the monitor you want to see.
 * Launch another instance of the Desktop app.
 * Pick the monitor you want to see on that instance.
 * Repeat for all of your physical monitors.
-Note that you will have to reselect the monitor to show on each Desktop app every time you restart mixed reality.
+You'll have to reselect the monitor to show on each Desktop app every time you restart mixed reality.
 
 ## My Desktop app only shows a black screen
 
-If your PC has an Nvidia hybrid GPU, the issue may be caused by Nvidia device running the runtimebroker.exe on the discrete GPU instead of the integrated one. To fix this issue, follow these instructions under "[How do I create Optimus settings for a new program?](http://nvidia.custhelp.com/app/answers/detail/a_id/2615/~/how-do-i-customize-optimus-profiles-and-settings%3F)" to add C:\windows\system32\runtimebroker.exe and force it to run on the "Integrated graphics" processor. 
+If your PC has a Nvidia hybrid GPU, the Nvidia device running the runtimebroker.exe on the discrete GPU instead of the integrated one may be the culprit. To fix this issue, follow these instructions under "[How do I create Optimus settings for a new program?](http://nvidia.custhelp.com/app/answers/detail/a_id/2615/~/how-do-i-customize-optimus-profiles-and-settings%3F)" to add C:\windows\system32\runtimebroker.exe and force it to run on the "Integrated graphics" processor. 
 
 ## My Wi-Fi slows down when I'm using Windows Mixed Reality.
 
-If you're using a 2.4GHz Wi-Fi connection, your motion controllers might slow down your Wi-Fi. Try one of the following:
+If you're using a 2.4-GHz Wi-Fi connection, your motion controllers might slow down your Wi-Fi:
 
-* Switch to a 5GHz Wi-Fi connection, if one is available. [Learn more](https://support.microsoft.com/help/4000461).
+* Switch to a 5-GHz Wi-Fi connection, if one is available. [Learn more](https://support.microsoft.com/help/4000461).
 * Use a separate Bluetooth adapter to connect your motion controllers to your PC. See [recommended adapters](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines).
 
 ## I got a message that said to plug in and charge my PC. Why?
@@ -70,10 +70,10 @@ If you're using a laptop, Windows Mixed Reality works best when the PC is both f
 
 ## What is the Experience options setting?
 
-This setting (**Settings > Mixed reality > Headset display > Experience options**) allows you to change the Windows Mixed Reality performance settings. This enables you to choose the best experience for your hardware configuration across a range of content. These are the options:
+**Settings > Mixed reality > Headset display > Experience options** allows you to change the Windows Mixed Reality performance settings. This enables you to choose the best experience for your hardware configuration across a range of content. You have three experience options to choose from:
 * Automatic: Windows Mixed Reality will determine the best experience for your hardware configuration. For most people, this is the best choice to start with.
-* 60Hz: Sets the refresh rate to 60Hz and turns off certain features, such as video capture and preview in Mixed Reality Portal.
-* 90Hz: Sets the refresh rate to 90Hz.
+* 60 Hz: Sets the refresh rate to 60 Hz and turns off certain features, such as video capture and preview in Mixed Reality Portal.
+* 90 Hz: Sets the refresh rate to 90 Hz.
 
 ## What languages are supported in Windows Mixed Reality
 
@@ -92,7 +92,7 @@ Windows Mixed Reality is available in the following languages:
 * Spanish (Mexico)
 * Spanish (Spain)
 
-You can use Windows Mixed Reality if your PC is set to a different language, but the interface will appear in English (United States), and speech commands and dictation won't be available. The Windows Mixed Reality onscreen keyboard is English (United States) only. To enter text in another language, use a physical keyboard connected to your PC. You can also use dictation in one of the supported Windows Mixed Reality languages listed above—just select microphone on the onscreen keyboard.
+You can use Windows Mixed Reality if your PC is set to a different language. However, the interface will appear in English (United States), and speech commands and dictation won't be available. The Windows Mixed Reality onscreen keyboard is English (United States) only. To enter text in another language, use a physical keyboard connected to your PC. You can also use dictation in one of the supported Windows Mixed Reality languages listed above—just select microphone on the onscreen keyboard.
 
 Windows Mixed Reality is also available in the following languages without speech commands or dictation features:
 * Chinese Traditional (Taiwan and Hong Kong)
@@ -114,7 +114,7 @@ When you're ready to start using your headset again, plug it in, and Windows Mix
 
 ## I got a "We couldn't finish uninstalling Windows Mixed Reality" message.
 
-Some files, including information about your environment, might still be on your computer. This can cause problems if you decide to reinstall Windows Mixed Reality later. You can manually remove any remaining Windows Mixed Reality info from your PC by modifying the registry and using Windows PowerShell to run commands. _If you modify the registry incorrectly, serious problems might occur. Make sure to follow these steps carefully. For added protection, back up your registry before you modify it so you can restore it if a problem occurrs._ For more information, see [How to back up and restory the registry in Windows](https://support.microsoft.com/en-us/help/322756/how-to-back-up-and-restore-the-registry-in-windows). 
+Some files, including information about your environment, might still be on your computer. This can cause problems if you decide to reinstall Windows Mixed Reality later. You can manually remove any remaining Windows Mixed Reality info from your PC by modifying the registry and using Windows PowerShell to run commands. _If you modify the registry incorrectly, serious problems might occur. Make sure to follow these steps carefully. For added protection, back up your registry before you modify it so you can restore it if a problem occurs._ For more information, see [How to back up and restory the registry in Windows](https://support.microsoft.com/en-us/help/322756/how-to-back-up-and-restore-the-registry-in-windows). 
 
 To uninstall Windows mixed reality using these commands:
 1. Restart your PC.
@@ -139,8 +139,8 @@ To uninstall Windows mixed reality using these commands:
 9. In Windows PowerShell:
    <ul>
    <li>At the command prompt, copy and paste <b>Dism /online /Get-Capabilities</b>, then press Enter.</b></li> 
-   <li>Copy the Capability Identity that begins with Analog.Holographic.Desktop (if it isn't there, that means this item isn't installed. In that case, skip to step 10 ).</li> 
-   <li>Copy and paste the following command prompt, then press Enter: <b>Dism /online /Remove-Capability /CapabilityName:the Capability Identity copied in the last step</b></li>
+   <li>Copy the Capability Identity that begins with Analog.Holographic.Desktop. If it isn't there, the item isn't installed and you can skip to step 10).</li> 
+   <li>Copy and paste the following command prompt, then press Enter: <b>Dism /online /Remove-Capability /CapabilityName: the Capability Identity copied in the last step</b></li>
    </ul>
 10. Restart your PC.
 

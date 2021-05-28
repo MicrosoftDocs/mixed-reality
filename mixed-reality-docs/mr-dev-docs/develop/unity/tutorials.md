@@ -1,7 +1,6 @@
 ---
-layout: LandingPage
 title: Tutorials 
-description: Provides tutorials on mixed reality development.
+description: Stay up to date on the mixed reality development tutorials we offer for HoloLens and Azure services.
 author: keveleigh
 ms.author: kurtie
 ms.date: 07/30/2020
@@ -9,7 +8,6 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, mixed reality headset, windows mixed reality headset, virtual reality headset, unity, unreal, HoloLens, Azure spatial anchors, Azure speech services
 ---
-
 
 # Tutorials
 
@@ -21,12 +19,13 @@ Currently, all of our tutorials and sample apps are Unity or Unreal based. As we
 
 The HoloLens 2 tutorials are designed to teach techniques and best practices for developing mixed reality applications. The Unity tutorials are based on the [Mixed Reality Toolkit 2.0 (MRTK 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity), and the Unreal tutorial is based on the [UX Tools for Unreal Engine 0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal).
 
-* Getting started tutorials
-    * Unity - [1 of 9 Introduction](tutorials/mr-learning-base-01.md)
-    * Unreal - [1 of 6 Getting started](../unreal/tutorials/unreal-uxt-ch1.md)
-* Azure Spatial Anchors tutorials - [1 of 5 Introduction](tutorials/mr-learning-asa-01.md)
-* Multi-user capabilities tutorials - [1 of 5 Introduction](tutorials/mr-learning-sharing-01.md)
-* Azure Speech Services tutorials - [1 of 4 Integrating and using speech recognition and transcription](tutorials/mrlearning-speechSDK-ch1.md)
+* Beginner MRTK tutorials - [Introduction (1 of 9)](tutorials/mr-learning-base-01.md)
+* Azure Spatial Anchors tutorials - [Introduction (1 of 5)](tutorials/mr-learning-asa-01.md)
+* Multi-user capabilities tutorials - [Introduction (1 of 5)](tutorials/mr-learning-sharing-01.md)
+* Azure Speech Services tutorials - [Integrating and using speech recognition and transcription (1 of 4)](tutorials/mrlearning-speechSDK-ch1.md)
+* Spatial audio tutorials - [Adding Spatial audio (1 of 5)](tutorials/unity-spatial-audio-ch1.md)
+* Azure Cloud Services tutorials - [Introduction (1 of 5)](tutorials/mr-learning-azure-01.md)
+* PC Holographic Remoting tutorials - [Getting started (1 of 2)](tutorials/mr-learning-pc-holographic-remoting-01.md)
 
 ## Mixed Reality Academy 
 

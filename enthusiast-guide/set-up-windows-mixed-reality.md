@@ -5,7 +5,6 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, get started, setup, motion controller, controller, speech, audio, seated, standing, boundary, graphics drivers, Microsoft Edge, chromium
 ---
 
-
 # Set up Windows Mixed Reality
 
 ## Get ready
@@ -38,7 +37,7 @@ If your headset has a built-in radio, the controllers that come with your headse
 
 If you have a headset without a built-in radio, you'll have to set up your motion controllers by pairing them to your PC. Most headsets manufactured after 2018 have built-in radio.
 
-If you're only planning to use an Xbox gamepad or keyboard and mouse, you don’t need to pair your controllers.  If you ever plan to use controllers, you should probably pair them.
+You don’t need to pair your controllers if you're only planning to use an Xbox gamepad or keyboard and mouse.  If you ever plan to use controllers, you should pair them.
 
 **Note**: Windows Mixed Reality motion controllers require Bluetooth 4.0. If your PC doesn't have built-in Bluetooth, you'll need to plug in a USB Bluetooth adapter that supports Bluetooth 4.0 to enable your motion controllers. You don’t need a Bluetooth adapter to use the built-in radio in your headset.
 
@@ -52,7 +51,7 @@ Choose a room scale or desk scale experience:
 
 **Option 1: Set me up for all experiences (also known as room scale)** will allow you to walk around the room and is the most immersive mixed reality experience. We recommend you at clear at least five foot x seven foot (1.5 meters x 2 meters) of space for mixed reality.
 
-**Option 2: Set me up for seated and standing (also known as desk scale)** experience will work at your desk. It's a good option if your space isn't large. It also means that you'll be using your headset without a boundary. You'll need to stay in one place, as you'll have no boundary to help you avoid physical obstacles. Also, some apps and games are designed to be used with a boundary, so they might not work as intended.
+**Option 2: Set me up for seated and standing (also known as desk scale)** experience will work at your desk. It's a good option if your space isn't large. It also means that you'll be using your headset without a boundary. You'll need to stay in one place, as you'll have no boundary to help you avoid physical obstacles. Some apps and games aren't designed to be a boundary experience, so they might not work as intended.
 
 ![Choose a setup](images/1050px-chooseasetup.png)
 
@@ -82,11 +81,11 @@ Here's your boundary.
 
 ### If you choose "Set me up for seated and standing"
 
-There are no additional steps required if you choose this option.
+There are no extra steps required if you choose this option.
 
 ## What is the maximum size of the boundary?
 
-The supported maximum boundary size in Windows Mixed Reality is a 18x18ft (5.7x5.7m) or 13 ft (4 m) radius from the center.  The boundary size depends on the anchor point and how far from the anchor point you can move before you risk the stability of the boundary.  Windows Mixed Reality is built on a stage abstraction in the platform, the stage being the space you move around in. That stage depends on a single anchor, which nearly every app also assumes – it’s how Vive and Oculus work too, as they only have a single coordinate system.  This is important because with inside-out tracking, as you move further away from an anchor point the headset tracking is reliable at keeping the boundary stable.  Where the boundary is intended to help avoid physical obstacles, it becomes more and more of a problem the further out from the center you go.  Two factors went into the decision on maximum boundary size; the maximum distance at which Windows Mixed Reality headsets could provide the best room scale experience with a boundary and the length of the headset cable, which for most Windows Mixed Reality headsets is 10 ft (3 m).
+The maximum supported boundary size in Windows Mixed Reality is a 18x18ft (5.7x5.7m) or 13 ft (4 m) radius from the center. The boundary size depends on the anchor point and how far from the anchor point you can move before you risk the stability of the boundary.  Windows Mixed Reality is built on a stage abstraction, the stage being the space you move around in. That stage depends on a single anchor, which nearly every app also assumes – it’s how Vive and Oculus work too with their single coordinate system.  This is important because with inside-out tracking, as you move further away from an anchor point the headset tracking is reliable at keeping the boundary stable.  Where the boundary is intended to help avoid physical obstacles, it becomes more of a problem the further out from the center you go.  Two factors went into the decision on maximum boundary size. The maximum distance at which Windows Mixed Reality headsets could provide the best room scale experience with a boundary and the length of the headset cable, which for most Windows Mixed Reality headsets are 10 ft (3 m).
 
 ## Set up speech
 
@@ -96,7 +95,7 @@ You can enable Cortana commands in mixed reality, which lets you use speech comm
 
 ## Set up your audio headset
 
-Unless you purchased a Samsung HMD Odyssey with integrated AKG headphones and dual microphone array, you need to get an audio headset with both microphone and headphones and plug that into your headset's 3.5-mm audio jack. The 3.5-mm audio jack for your headset is - depending on the headset model - located either on the underside of the headset visor or at the end of a short audio cable attached to the headset visor.
+Unless you purchased a Samsung HMD Odyssey with integrated AKG headphones and dual microphone array, you need to get an audio headset with both microphone and headphones and plug that into your headset's 3.5-mm audio jack. The 3.5-mm audio jack for your headset is located on the underside of the headset visor or at the end of a short audio cable attached to the headset visor, depending on the headset model.
 
 ## Adjusting your headset's display settings
 
@@ -114,7 +113,9 @@ If you connect a headset with higher resolution displays to your PC, for example
 
 * This setting provides the option for the Windows Mixed Reality composition stack to render natively (for example, at 4320x2160), or to have the composition stack render at a lower resolution and upscale (for example, render at 2880x1440 and upscale to 4320x2160).
 * The default setting is to render natively (for example, the **4320 x 2160 (best quality)** option) to provide the best visual quality possible from your headset.
-* If your PC doesn't meet the minimum graphics hardware requirements for your headset with higher resolution displays, or if you're seeing graphics performance issues, try using selecting the **Automatic upscaling (best performance)** option.
+* Use the **Automatic upscaling (best performance)** option if:
+    * Your PC doesn't meet the minimum graphics hardware requirements for your headset with higher resolution displays
+    * You're seeing graphics performance issues
 
 This setting is available on Windows 10, version 1903, or newer.
 
@@ -126,7 +127,7 @@ This setting is to adjust the IPD calibration for headsets with software IPD sup
 
 This advanced setting overrides the default headset display refresh rate experience.
 
-* **Automatic (default)**: Automatically select the 60 Hz or 90 Hz experience based on your PC's hardware configuration.
+* **Automatic (default)**: Automatically select the 60 Hz or 90-Hz experience based on your PC's hardware configuration.
 * **60 Hz**
 * **90 Hz**
 
@@ -176,7 +177,7 @@ Entering mixed reality a second time is as easy as putting the headset back on w
 * [Ask the community](https://answers.microsoft.com)
 * [Contact us for support](https://support.microsoft.com/contactus/)
 * [Troubleshooting installation](installation_errors.md)
-* [Troubleshooting setup](wmr-setup-faq.md)
+* [Troubleshooting setup](wmr-setup-faq.yml)
 * [Learn Mixed Reality](learn-mixed-reality.md)
 * [Motion controllers](controllers-in-wmr.md)
 * [How inside-out tracking works](tracking-system.md)

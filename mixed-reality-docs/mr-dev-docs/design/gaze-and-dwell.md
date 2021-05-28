@@ -1,6 +1,6 @@
 ---
 title: Gaze and dwell
-description: General overview of the (eye/head) gaze and dwell input model
+description: Get a general overview of the eye and head gaze-and-dwell input model for mixed reality applications.
 author:  sostel
 ms.author: sostel
 ms.date: 10/31/2019
@@ -13,12 +13,12 @@ keywords: Mixed Reality, gaze, dwell, interaction, design, eye tracking, head tr
 When hands are occupied with tools and parts, gestures can be tedious or impossible.
 Voice commands may also be unreliable in certain contexts, for example under excessively loud conditions.
 Gaze and dwell offers a familiar and easy-to-master mechanism for working heads-up and hands-free on HoloLens.
-Additionally, gaze and dwell is a great fallback which is independent of noise interference or silence constraints in the operating environment.
+Additionally, gaze and dwell is a great fallback, which is independent of noise interference or silence constraints in the operating environment.
 We distinguish two variants of _gaze and dwell_: [Head-gaze and dwell](gaze-and-dwell-head.md) and [Eye-gaze and dwell](gaze-and-dwell-eyes.md).
 
 ## Scenarios
 
-Gaze and dwell excels in scenarios where a person's hands are busy with other tasks, and voice isn't 100% reliable or available due to environmental or social constraints.
+Gaze and dwell excels in scenarios where a person's hands are busy with other tasks, and voice isn't 100% reliable or available because of environmental or social constraints.
 A good example is a person wearing a HoloLens to overlay reference information while repairing a car engine.
 Their hands are busy with tools or supporting their body as they lean into the engine compartment.
 The garage space is loud, with the constant banging and buzzing of tools, making voice commands difficult.
@@ -35,7 +35,7 @@ Gaze and dwell allows the person using the HoloLens to confidently navigate thei
     </colgroup>
     <tr>
         <td><strong>Input model</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
@@ -59,6 +59,7 @@ Gaze and dwell allows the person using the HoloLens to confidently navigate thei
 ---
 
  ## See also
+
 * [Eye-based interaction](eye-gaze-interaction.md)
 * [Eye tracking on HoloLens 2](eye-tracking.md)
 * [Gaze and commit](gaze-and-commit.md)

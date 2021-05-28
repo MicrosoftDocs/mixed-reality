@@ -1,5 +1,5 @@
 ---
-title: Advanced HoloLens Emulator and Mixed Reality Simulator input
+title: Advanced HoloLens Emulator and Mixed Reality Simulator
 description: Detailed instructions for using the keyboard, mouse, and Xbox controller to simulate input for the HoloLens Emulator and Windows Mixed Reality simulator.
 author: pbarnettms
 ms.author: pbarnett
@@ -25,26 +25,26 @@ Motion refers to controlling and changing the position and orientation of someth
 * **Y**: Move up or down.
 * **Z**: Move forward or backward.
 
-Gesture and motion controller input are mapped closely to how they physical devices:
-* **Action**: This simulates the action of pressing the forefinger to the thumb or pulling the action button on a controller. For example, the Action input can be used to simulate the air-tap gesture, to scroll through content, and to press-and-hold.
-* **[Bloom](../../design/system-gesture.md#bloom)/System gesture or Home**: The HoloLens bloom/system gesture or a controller's Home button is used to return to the shell and to perform system actions.
+Gesture and motion controller input are mapped closely to physical devices:
+* **Action**: Simulates the action of pressing the forefinger to the thumb or pulling the action button on a controller. For example, the Action input can be used to simulate the air-tap gesture, to scroll through content, and to press-and-hold.
+* **[Bloom](../../design/system-gesture.md#bloom)/System gesture or Home**: The HoloLens bloom/system gesture or a controller's Home button is used to return to the shell and to fire system actions.
 
-Hands have a rich representation in HoloLens 2.  In addition to being tracked/not tracked, and usable for driving gestures, hands now have an articulated skeleton model fit to them and exposed to the developer.  This introduces 26 tracked points on each hand.  
-* **Joint**: One of twenty tracked positions for a given tracked hand. This will have a point is 3d space associated with it.
-* **Pose**: A complete collection of all of the Joints in a tracked hand. At this time, this is a collection of 26 Joints. 
+Hands have a rich representation in HoloLens 2.  In addition to being tracked/not tracked and usable for driving gestures, hands now have an articulated skeleton model fit to them and exposed to the developer.  The skeleton model has 26 tracked points on each hand.  
+* **Joint**: One of 20 tracked positions for a given tracked hand with an associated point in 3d space.
+* **Pose**: A complete collection of all of the Joints in a tracked hand, 26 Joints in all. 
 
-At this time, we do not expose direct control of each joint position individually through the emulator user interface, though you may set them through the simulation API. Rather, we have a set of useful representative poses that the emulator allows you to toggle between.
+We don't currently expose direct control of individual joint positions through the emulator, but you can set them through the simulation API. We have a set of useful representative poses that the emulator allows you to toggle between.
 
 You can also control the state of simulated sensor input:
-* **Reset**: This will return all simulated sensors to their default values.  Starting with the HoloLens 2 Emulator, a reset can be scoped to one or both hands by engaging the desired hand(s) using the appropriate modifier key(s) or button(s) (Left and/or Right Alt, or the left and/or right bumper on the gamepad).
-* **Tracking**: Cycles through the positional tracking modes. This includes:
+* **Reset**: Returns all simulated sensors to their default values.  Starting with the HoloLens 2 Emulator, a reset can be scoped to one or both hands. Engage the desired hand(s) using the modifier key(s) or button(s) (Left and/or Right Alt, or the left and/or right bumper on the gamepad).
+* **Tracking**: Cycles through the positional tracking modes, including:
   * **Default**: The OS chooses the best tracking mode based upon the requests made of the system.
-   * **Orientation**: Forces Orientation-only tracking, regardless of the requests made of the system.
-   * **Positional**: Forces Positional tracking, regardless of the requests made of the system.
+   * **Orientation**: Forces Orientation-only tracking, no matter the system requests.
+   * **Positional**: Forces Positional tracking, no matter the system requests.
 
 ## Types of input
 
-The following table shows how each type of input maps to the keyboard, mouse, and Xbox controller. Each type has a different mapping depending on the input control mode; more information on input control modes is provided later in this document.
+The following table shows how each type of input maps to the keyboard, mouse, and Xbox controller. Each type has a different mapping depending on the input control mode. You can find more information on input control modes later in this document.
 
 | Input |  Keyboard |  Mouse |  Xbox controller | 
 |----------|----------|----------|----------|
@@ -75,16 +75,16 @@ Note: The controller buttons can be targeted to one hand/controller or the other
 
 ## Targeting 
 
-Some of the above input concepts stand on their own.  Action, Bloom/System, Reset, and Tracking are complete concepts, do not need, and are not affected by, any additional modifiers for targeting.  However, the remaining concepts can be applied to one of multiple targets. We have introduced ways for you to specify which intended target your command should be applied to.  In all cases, it is possible to specify through the UI or through keyboard presses, which object to target.  In some cases, it is also possible to specify with the xbox controller directly. 
+Some of the above input concepts stand on their own.  Action, Bloom/System, Reset, and Tracking are complete concepts, don't need, and are not affected by, any additional modifiers for targeting.  The remaining concepts can be applied to one of multiple targets. We have introduced ways for you to specify which intended target your command should be applied to.  In all cases, it's possible to specify through the UI or through keyboard presses, which object to target.  In some cases, it's also possible to specify with the xbox controller directly. 
 
-The following table describe the options for targeting, and the way to activate each of them.
+The following table describes the options for targeting, and the way to activate each of them.
 
 | Object | Keyboard Modifier | Controller Modifier | Emulator UI Modifier |
 |----------|----------|----------|----------|
 | Body | (default) | (default) | (default) |
 | Head | Hold H | (Not available) | (Not available) |
-| Left Hand/Controller | Hold Left Alt button | Hold Left Shoulder Button | Left Hand pushpin | 
-| Right Hand/Controller | Hold Right Alt Button | Hold Right Shoulder Button | Right Hand pushpin |
+| Left Hand/Controller | Hold Left Alt button | Hold Left Shoulder Button | Left-Hand pushpin | 
+| Right Hand/Controller | Hold Right Alt Button | Hold Right Shoulder Button | Right-Hand pushpin |
 | Eyes | Hold Y | (Not available) | Eyes Pushpin |
   
 The following table shows how each target modifier maps each of the core movement input concepts
@@ -130,7 +130,8 @@ The following set of controls is suggested for day-to-day use:
 
 When using a Windows Mixed Reality immersive headset with the HoloLens 2 Emulator, movement and rotation are automatically mapped to headset movement and rotation.  Motion controller position and orientation are automatically mapped to hand position and orientation in the emulator.  The table below lists additional actions available when using a motion controller.
 
-Note that when using a headset, standard keyboard, mouse and gamepad controls are automatically ignored.
+> [!NOTE]
+> When using a headset, standard keyboard, mouse, and gamepad controls are automatically ignored.
 
 |  Operation |  Action |  Notes | 
 |----------|----------|----------|
@@ -146,7 +147,7 @@ Note that when using a headset, standard keyboard, mouse and gamepad controls ar
 
 ## Perception Simulation Control Panel keyboard shortcuts
 
-The following keyboard shortcuts are available for accessing the Perception Simulation Control panel and enabling or disabling PC input devices for use with simulation.
+You can access the Perception Simulation Control panel and enable or disable PC input devices with the following keyboard shortcuts.
 
 | Operation | Shortcut | Description/Notes |
 |-----------|----------|-------------|
@@ -154,8 +155,8 @@ The following keyboard shortcuts are available for accessing the Perception Simu
 | Toggle 'Use mouse for simulation' | F5 | When turned off, mouse input goes to the Mixed Reality environment (Windows Mixed Reality only) |
 | Toggle 'Use gamepad for simulation' | F6 | When turned off, gamepad input is ignored by simulation |
 | Show or hide the control panel | F7 | |
-| Set keyboard focus to the control panel | F8 | If the panel is not currently visible it will be shown first. |
-| Dock or undock the panel to/from the emulator or Mixed Reality Portal window | F9 | If the window is closed when undocked, it is docked and hidden. |
+| Set keyboard focus to the control panel | F8 | If the panel is not currently visible, it will be shown first. |
+| Dock or undock the panel to/from the emulator or Mixed Reality Portal window | F9 | If the window is closed when undocked, it's docked and hidden. |
 
 ## See also
 * [Install the tools](../install-the-tools.md)

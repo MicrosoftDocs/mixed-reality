@@ -1,9 +1,9 @@
 ---
-title: Azure Cloud Tutorials - 4. Integrating Azure Spatial Anchors
+title: Integrating Azure Spatial Anchors
 description: Complete this course to learn how to implement Azure Spatial Anchors within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, hololens 2, Azure spatial anchors, azure cloud services, azure custom vision, Windows 10
 ms.localizationpriority: high
@@ -23,12 +23,12 @@ In this tutorial, you will learn how to use **Azure Spatial Anchors**. You will 
 
  **Azure Spatial Anchors** is part of the Azure Cloud Services family and is used to save anchor locations. The saved anchor locations can be retrieved based on the *anchor ID* from the cloud. This anchor location can be shared and accessed by multi-platform devices like HoloLens, iOS, and Android devices.
 
-Learn more about [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview).
+Learn more about [Azure Spatial Anchors](/azure/spatial-anchors/overview).
 
 ## Preparing Azure Spatial Anchors
 
 Before you can start, you have to create a spatial anchor resource in your Azure portal.
-Learn how to make a [spatial anchor resource](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource).
+Learn how to make a [spatial anchor resource](/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource).
 
 ## Preparing the scene
 
@@ -55,7 +55,7 @@ You will observe that the **Anchor Manager** field in the **Scene Controller** c
 Azure Spatial Anchors can not run in Unity, so to test the Azure Spatial Anchors functionality, you need to deploy the project to your device.
 
 > [!TIP]
-> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Building your application to your HoloLens 2](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions.
+> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Building your application to your HoloLens 2]((mr-learning-base-02.md#building-and-deploying-to-your-hololens-2) instructions.
 
 ## Run the app on your HoloLens 2 and follow the in-app instructions
 

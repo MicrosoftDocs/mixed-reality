@@ -1,6 +1,6 @@
 ---
 title: Local Spatial Anchors in Unreal
-description: Guide to using spatial anchors in Unreal
+description: Learn how to use, save, and manage spatial anchors in Unreal mixed reality applications.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 12/9/2020
@@ -8,7 +8,6 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, features, documentation, guides, holograms, spatial anchors, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 # Local Spatial Anchors in Unreal
 
@@ -79,6 +78,7 @@ Or jump to Mixed Reality platform capabilities and APIs:
 You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#2-core-building-blocks) at any time.
 
 ## See also
+
 * [Azure Spatial Anchors](unreal-azure-spatial-anchors.md)
 * [Spatial anchors](../../design/spatial-anchors.md)
 * [Coordinate systems](../../design/coordinate-systems.md)

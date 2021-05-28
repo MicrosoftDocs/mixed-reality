@@ -19,13 +19,13 @@ This page gives you an overview of network security for Holographic Remoting. Yo
 * recommended measures based on different use cases
 * implementing security in your Holographic Remoting solution
 
-## Overview
+## Holographic Remoting security
 
 Holographic Remoting exchanges information over a network. If no security measures are in place, adversaries on the same network may compromise the integrity of the communication or access confidential information.
 
 The sample apps and the Holographic Remoting Player in the Windows Store come with security disabled. Doing so makes the samples easier to understand. It also helps you to get started more quickly with development.
 
-For field testing or production use however, we strongly recommend enabling security in your Holographic Remoting solution.
+For field testing or production, we strongly recommend enabling security in your Holographic Remoting solution.
 
 Security in Holographic Remoting, when set up correctly for your use case, gives you the following guarantees:
 
@@ -61,7 +61,7 @@ How the client validates the server certificate, and what kinds of server certif
 
 **Use case 1:** The server hostname isn't fixed, or the server isn't addressed by host name at all.
 
-In this use case, it isn't practical (or even possible) to issue a certificate for the server's host name. The recommendation here is to validate the certificate's thumbprint instead. Like a human fingerprint, the thumbprint uniquely identifies a certificate.
+In this use case, it isn't practical (or even possible) to issue a certificate for the server's host name. We recommendation you validate the certificate's thumbprint instead. Like a human fingerprint, the thumbprint uniquely identifies a certificate.
 
 It's important to communicate the thumbprint to the client out-of-band. That means, you can't send it over the same network connection that's used for remoting. Instead, you could manually enter it into the client's configuration, or to have the client scan a QR code.
 
@@ -92,7 +92,7 @@ A shared secret won't be enough to cover this use case. Instead, you can use tok
 * The client sends this token to the server through Holographic Remoting
 * The server validates the client's token against the identity provider
 
-One example of an identity provider is the [Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/).
+One example of an identity provider is the [Microsoft identity platform](/azure/active-directory/develop/).
 
 Like in the previous use case, make sure these tokens aren't sent through insecure channels or otherwise exposed.
 
@@ -110,7 +110,7 @@ These calls require you to provide implementations of certain interfaces for pro
 All interfaces have a function requesting you to take action, which receives a callback object as parameter. Using this object, you can easily implement asynchronous handling of the request. Keep a reference to this object, and call the completion function when the asynchronous action is complete. The completion function may be called from any thread.
 
 >[!TIP]
->Implementing WinRT interfaces can easily be done using C++/WinRT. The [Author APIs with C++/WinRT](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/author-apis) chapter describes this in detail.
+>Implementing WinRT interfaces can easily be done using C++/WinRT. The [Author APIs with C++/WinRT](/windows/uwp/cpp-and-winrt-apis/author-apis) chapter describes this in detail.
 
 >[!IMPORTANT]
 >The `build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl` inside the NuGet package contains detailed documentation for the API related to secure connections.
@@ -154,7 +154,7 @@ To validate certificates, you can use the validation logic of the underlying sys
 On Windows, the system validation will check for:
 
 * Integrity of the certificate chain: the certificates form a consistent chain that ends at a trusted root certificate
-* Certificate validity: the server's certificate is within its validity timespan, and is issued for the purpose of server authentication
+* Certificate validity: the server's certificate is within its validity timespan, and is issued for server authentication
 * Revocation: The certificate hasn't been revoked
 * Name match: The host name of the server matches one of the host names the certificate was issued for
 
@@ -168,25 +168,25 @@ Implement the `ICertificateValidator` interface as follows:
 
 ## Secure connection using the OpenXR API
 
-When using the the [OpenXR API](../native/openxr.md) all secure connection related API is available as part of the `XR_MSFT_holographic_remoting` OpenXR extension.
+When using the [OpenXR API](../native/openxr.md) all secure connection-related API is available as part of the `XR_MSFT_holographic_remoting` OpenXR extension.
 
 >[!IMPORTANT]
 >To learn about the Holographic Remoting OpenXR extension API, check out the [specification](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/master/remote_openxr/specification.html) which can be found in the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
 The key elements for secure connection using the `XR_MSFT_holographic_remoting` OpenXR extension are the following callbacks.
-- `xrRemotingRequestAuthenticationTokenCallbackMSFT`, generates or retrieves the authentication token to be sent.
+- `xrRemotingRequestAuthenticationTokenCallbackMSFT`, generates, or retrieves the authentication token to be sent.
 - `xrRemotingValidateServerCertificateCallbackMSFT`, validates the certificate chain.
 - `xrRemotingValidateAuthenticationTokenCallbackMSFT`, validates the client authentication token.
 - `xrRemotingRequestServerCertificateCallbackMSFT`, supply the server application with the certificate to use.
 
-These callbacks can be provided to the remoting OpenXR runtime via `xrRemotingSetSecureConnectionClientCallbacksMSFT` and `xrRemotingSetSecureConnectionServerCallbacksMSFT`. Additionally, the secure connection needs to be enabled via the secureConnection parameter on the `XrRemotingConnectInfoMSFT` structure or the `XrRemotingListenInfoMSFT` structure depending on whether you are using `xrRemotingConnectMSFT` or `xrRemotingListenMSFT`.
+These callbacks can be provided to the remoting OpenXR runtime via `xrRemotingSetSecureConnectionClientCallbacksMSFT` and `xrRemotingSetSecureConnectionServerCallbacksMSFT`. Additionally, the secure connection needs to be enabled via the secureConnection parameter on the `XrRemotingConnectInfoMSFT` structure or the `XrRemotingListenInfoMSFT` structure depending on whether you're using `xrRemotingConnectMSFT` or `xrRemotingListenMSFT`.
 
-This API is quite similar to the IDL based API described in [Implementing holographic remoting security](#implementing-holographic-remoting-security) but instead of implementing interfaces your are supposed to provide callback implementations. You can find an detailed example as part of the OpenXR sample app found in the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+This API is similar to the IDL-based API described in [Implementing holographic remoting security](#implementing-holographic-remoting-security). However, instead of implementing interfaces, you're supposed to provide callback implementations. You can find a detailed example in the [OpenXR sample app](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
 ## See Also
-* [Writing a Holographic Remoting remote app using Windows Mixed Realiy APIs](holographic-remoting-create-remote-wmr.md)
+* [Writing a Holographic Remoting remote app using Windows Mixed Reality APIs](holographic-remoting-create-remote-wmr.md)
 * [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md)
 * [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)
 * [Holographic Remoting troubleshooting and limitations](holographic-remoting-troubleshooting.md)
-* [Holographic Remoting software license terms](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Holographic Remoting software license terms](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839)

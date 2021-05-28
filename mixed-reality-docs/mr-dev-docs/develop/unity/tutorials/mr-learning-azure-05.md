@@ -1,9 +1,9 @@
 ---
-title: Azure Cloud Tutorials - 5. Integrating Azure Bot Service with LUIS
+title: Integrating Azure Bot Service with LUIS
 description: Complete this course to learn how to implement Azure Bot Service and natural language understanding within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, hololens 2, azure bot service, luis, natural language, conversation bot, azure cloud services, azure custom vision, Windows 10
 ms.localizationpriority: high
@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 # 5. Integrating Azure Bot Service
 
-In this tutorial, you will learn how to use **Azure Bot Service** in the **HoloLens 2** demo application to add Language Understanding (LUIS) and letting the Bot assist the user when searching for **Tracked Objects**. This is a two part tutorial where in the first part you create the Bot with the [Bot Composer](https://docs.microsoft.com/composer/introduction) as a code free solution and take a quick look in the Azure Function that feeds the Bot with the needed data. In the second part you use the **BotManager (script)** in the Unity project to consume the hosted Bot Service.
+In this tutorial, you will learn how to use **Azure Bot Service** in the **HoloLens 2** demo application to add Language Understanding (LUIS) and letting the Bot assist the user when searching for **Tracked Objects**. This is a two part tutorial where in the first part you create the Bot with the [Bot Composer](/composer/introduction) as a code free solution and take a quick look in the Azure Function that feeds the Bot with the needed data. In the second part you use the **BotManager (script)** in the Unity project to consume the hosted Bot Service.
 
 ## Objectives
 
@@ -28,9 +28,9 @@ In this tutorial, you will learn how to use **Azure Bot Service** in the **HoloL
 
 ## Understanding Azure Bot Service
 
-The **Azure Bot Service** empowers developers to create intelligent bots that can maintain natural conversation with users thanks to **LUIS**. A conversational Bot is a great way to expand the ways a user can interact with your application. A Bot can act as a knowledge base with a [QnA Maker](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-qna?view=azure-bot-service-4.0&tabs=cs&preserve-view=true) to maintaining sophisticated conversation with the power of [Language Understanding (LUIS)](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0&tabs=csharp&preserve-view=true).
+The **Azure Bot Service** empowers developers to create intelligent bots that can maintain natural conversation with users thanks to **LUIS**. A conversational Bot is a great way to expand the ways a user can interact with your application. A Bot can act as a knowledge base with a [QnA Maker](/azure/bot-service/bot-builder-howto-qna?preserve-view=true&tabs=cs&view=azure-bot-service-4.0) to maintaining sophisticated conversation with the power of [Language Understanding (LUIS)](/azure/bot-service/bot-builder-howto-v4-luis?preserve-view=true&tabs=csharp&view=azure-bot-service-4.0).
 
-Learn more about [Azure Bot Service](https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0&preserve-view=true).
+Learn more about [Azure Bot Service](/azure/bot-service/bot-service-overview-introduction?preserve-view=true&view=azure-bot-service-4.0).
 
 ## Part 1 - Creating the Bot
 
@@ -45,18 +45,54 @@ Download the Tracked Objects Azure Function project: [AzureFunction_TrackedObjec
 
 This Azure Function has two actions, **Count** and **Find** which can be invoked via basic *HTTP* *GET* calls. You can inspect the code in **Visual Studio**.
 
-Learn more about [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview).
+Learn more about [Azure Functions](/azure/azure-functions/functions-overview).
 
 The **Count** function queries from the **Table storage** all **TrackedObjects** from the table, very simple. On the other hand the **Find** function takes a *name* query parameter from the *GET* request and queries the **Table storage** for a matching **TrackedObject** and returns a DTO as JSON.
 
-You can deploy this **Azure Function** directly from **Visual Studio**.
-Find here all information regarding [Azure Function deployment](https://docs.microsoft.com/azure/devops/pipelines/targets/azure-functions?view=azure-devops&tabs=dotnet-core%2Cyaml&preserve-view=true).
+To deploy this **Azure Function** directly from **Visual Studio**, open the downloaded AzureFunction_TrackedObjectsService folder and open the present **.sln** file with visual studio
+![AzureFunction_TrackedObjectsService folder](images/mr-learning-azure/tutorial5-section3-step1-1.png)
 
-Once you have completed the deployment, in the **Azure Portal**, open the corresponding resource and click on **Configuration** which is under the *Settings* section. There on **Application Settings** you need to provide the *Connection string* to the **Azure Storage** where the **Tracked Objects** are stored. Click on **New Application setting** and use for name: **AzureStorageConnectionString** and for value provide the correct *Connection string*. After that click on **Save** and the **Azure Function** is ready to server the *Bot* which you will create next.
+Once file loaded in visual studio, Right click over **Tracked object sevice** in solution explorer and select publish
+![Publish Tracked object service](images/mr-learning-azure/tutorial5-section3-step1-2.png)
+
+The publish pop up will be displayed and ask for target flatform
+Select azure and click on **Next** button
+
+![Select target platform](images/mr-learning-azure/tutorial5-section3-step1-3.png)
+
+In specific target select **Azure Function App(Windows)** and click on **Next** button
+
+![Select target host](images/mr-learning-azure/tutorial5-section3-step1-4.png)
+
+If you are not logged in to azure please login through visual studio and the window look like
+
+![Select or create Azure Function](images/mr-learning-azure/tutorial5-section3-step1-5.png)
+
+Click on pulse button to create new Function App in azure account
+
+![Create new Function App](images/mr-learning-azure/tutorial5-section3-step1-6.png)
+
+* For **Name**, enter a suitable name for the service, for example, *TrackedObjectsService*
+* For **Plan Type**, choose consumption
+* For **Location**, choose a location close to your app users' physical location, for example, *(US) West US*
+* For **Resource Group** and **Storage**, choose respective azure group and storage account have been created in pervious chapters.
+
+Once Function App created click on **Finish** button 
+
+![Finish creating Function App](images/mr-learning-azure/tutorial5-section3-step1-7.png)
+
+A publish pop up will be opened after the finish process, click on **Publish** button to publish the function and wait for publish
+
+![Publish function](images/mr-learning-azure/tutorial5-section3-step1-8.png)
+
+Once completion of publish click on **Manage in Azure portal** under Actions section it is take you to specific function in azure portal and click on **Configuration** which is under the *Settings* section. There on **Application Settings** you need to provide the *Connection string* to the **Azure Storage** where the **Tracked Objects** are stored. Click on **New Application setting** and use for name: **AzureStorageConnectionString** and for value provide the correct *Connection string*. After that click on **Save** and the **Azure Function** is ready to server the *Bot* which you will create next.
+
+To get URL of count and Find , select **Functions** which is under the *Functions* section. here you can find both Count and Find function, select Count function on top side you can find the *Get Function Url* button. 
+Follow the same procedure to get Find function Url.
 
 ### Creating a conversation Bot
 
-There are several ways to develope a Bot Framework based conversational bot. In this lesson you will use the [Bot Framework Composer](https://docs.microsoft.com/composer/) desktop application which is a visual designer that is perfect for rapid development.
+There are several ways to develop a Bot Framework based conversational bot. In this lesson you will use the [Bot Framework Composer](/composer/) desktop application which is a visual designer that is perfect for rapid development.
 
 You can download the latest releases from the [Github repository](https://github.com/microsoft/BotFramework-Composer/releases). It is available for Windows, Mac, and Linux.
 
@@ -72,7 +108,7 @@ On the top bar click on **Open** and select the Bot Framework project you have d
 
 Let's focus on the left side where you can see the **Dialogs Panel**. There you have one dialog named **TrackedObjectsBot** under which you can see several **Triggers**.
 
-Learn more about [Bot Framework concepts](https://docs.microsoft.com/composer/concept-dialog).
+Learn more about [Bot Framework concepts](/composer/concept-dialog).
 
 These triggers do the following:
 
@@ -92,7 +128,7 @@ These are the trigger phrases:
 
 ![TrackedObjectsBot project dialog trigger AskForCount](images/mr-learning-azure/tutorial5-section4-step1-4.png)
 
-Thanks to [LUIS](https://docs.microsoft.com/composer/how-to-use-luis) the *user* does not have to ask the phrases in that exact way which allows a natural conversation for the *user*.
+Thanks to [LUIS](/composer/how-to-use-luis) the *user* does not have to ask the phrases in that exact way which allows a natural conversation for the *user*.
 
 In this dialog the *bot* will also talk to the **Count** Azure Function, more about that later.
 
@@ -125,7 +161,7 @@ Finally, look for the **FindEntity** trigger and locate the *Send an HTTP reques
 
 With everything set you are now ready to deploy the Bot. Since you have Bot Framework composer installed, you can publish it directly from there.
 
-Learn more about [Publish a bot from Bot Composer](https://docs.microsoft.com/composer/how-to-publish-bot).
+Learn more about [Publish a bot from Bot Composer](/composer/how-to-publish-bot).
 
 > [!TIP]
 > Feel free playing around with Bot by adding more trigger phrases, new responses or conversation branching.

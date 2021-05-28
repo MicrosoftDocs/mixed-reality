@@ -11,9 +11,9 @@ keywords: app quality criteria, mixed reality, mixed reality app, mixed reality 
 
 # App quality criteria
 
-This document describes the top factors impacting the quality of mixed reality apps. For each factor the following information is provided
-* Overview – a brief description of the quality factor and why it is important.
-* Device impact - which type of Window Mixed Reality device is impacted.
+This document describes the top factors impacting the quality of mixed reality apps. For each factor, the following information is provided
+* Overview – a brief description of the quality factor and why it's important.
+* Device impact - which type of Window Mixed Reality device is affected.
 * Quality criteria – how to evaluate the quality factor.
 * How to measure – methods to measure (or experience) the issue.
 * Recommendations – summary of approaches to provide a better user experience.
@@ -21,7 +21,7 @@ This document describes the top factors impacting the quality of mixed reality a
 
 ## Frame rate
 
-Frame rate is the first pillar of hologram stability and user comfort. Frame rate below the recommended targets can cause holograms to appear jittery, negatively impacting the believability of the experience and potentially causing eye fatigue. The target frame rate for your experience on Windows Mixed Reality immersive headsets will be either 60Hz or 90Hz depending on which Windows Mixed Reality Compatible PCs you wish to support. For HoloLens the target frame rate is 60Hz.
+Frame rate is the first pillar of hologram stability and user comfort. Frame rate below the recommended targets can cause holograms to appear jittery, negatively impacting the believability of the experience and potentially causing eye fatigue. The target frame rate for your experience on Windows Mixed Reality immersive headsets is either 60 Hz or 90 Hz depending on which Windows Mixed Reality Compatible PCs you're supporting. For HoloLens, the target frame rate is 60 Hz.
 
 ### Device impact
 
@@ -32,7 +32,7 @@ Frame rate is the first pillar of hologram stability and user comfort. Frame rat
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
@@ -47,7 +47,7 @@ Frame rate is the first pillar of hologram stability and user comfort. Frame rat
 
 |  Best  |  Meets |  Fail |
 --- | --- | ---
-| The app consistently meets frames per second (FPS) goal for target device: 60fps on HoloLens; 90fps on Ultra PCs; and 60fps on mainstream PCs. | The app has intermittent frame drops not impeding the core experience; or FPS is consistently lower than desired goal but doesn’t impede the app experience. | The app is experiencing a drop in frame rate on average every ten seconds or less. |
+| The app consistently meets frames per second (FPS) goal for target device: 60 fps on HoloLens; 90 fps on Ultra PCs; and 60 fps on mainstream PCs. | The app has intermittent frame drops not impeding the core experience, or FPS is consistently lower than desired goal but doesn’t impede the app experience. | The app is experiencing a drop in frame rate on average every 10 seconds or less. |
 
 ### How to measure
 
@@ -71,8 +71,8 @@ Frame rate is the first pillar of hologram stability and user comfort. Frame rat
 
 #### Tools and tutorials
 
-* [MRToolkit, FPS counter display](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Utilities/README.md)
-* [MRToolkit, Shaders](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Utilities/Shaders)
+* [Mixed Reality Toolkit, FPS counter display](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Utilities/README.md)
+* [Mixed Reality Toolkit, Shaders](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Utilities/Shaders)
 
 #### External references
 
@@ -95,7 +95,7 @@ Stable holograms will increase the usability and believability of your app, and 
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
@@ -110,22 +110,22 @@ Stable holograms will increase the usability and believability of your app, and 
 
 |  Best  |  Meets |  Fail |
 --- | --- | ---
-|  Holograms consistently appear stable. | Secondary content exhibits unexpected movement; or unexpected movement does not impede overall app experience. | Primary content in frame exhibits unexpected movement. |
+|  Holograms consistently appear stable. | Secondary content shows unexpected movement; or unexpected movement doesn't impede overall app experience. | Primary content in frame shows unexpected movement. |
 
 ### How to measure
 
 While wearing the device and viewing the experience:
 
-* Move your head from side to side, if the holograms show unexpected movement then low frame rate or improper alignment of the stability plane to the focal plane is the likely cause.
+* Move your head from side to side. If the holograms show unexpected movement then low frame rate or improper alignment of the stability plane to the focal plane is the likely cause.
 * Move around the holograms and environment, look for behaviors such as swim and jumpiness. This type of motion is likely caused by the device not tracking the environment, or the distance to the spatial anchor.
 * If large or multiple holograms are in the frame, observe hologram behavior at various depths while moving your head position from side to side, if shakiness appears this is likely caused by the stabilization plane.
 
 ### Recommendations
 
-* Add an frame rate counter at the beginning of the development work.
+* Add a frame rate counter at the beginning of the development work.
 * Use the stabilization plane.
 * Always render anchored holograms within 3 meters of their anchor.
-* Make sure your environment is setup for proper tracking.
+* Make sure your environment is set up for proper tracking.
 * Design your experience to avoid holograms at various focal depth levels within the frame.
 
 ### Resources
@@ -146,7 +146,7 @@ While wearing the device and viewing the experience:
 
 ## Holograms position on real surfaces
 
-Misalignments of holograms with physical objects (if intended to be placed in relation to one another) is a clear indication of the non-union of holograms and real-world. Accuracy of the placement should be relative to the needs of the scenario; for example, general surface placement can use the spatial map, but more accurate placement will require some use of markers and calibration.
+Misalignments of holograms with physical objects (if intended to be placed in relation to one another) are a clear indication of the non-union of holograms and real-world. Accuracy of the placement should be relative to the needs of the scenario; for example, general surface placement can use the spatial map, but more accurate placement will require some use of markers and calibration.
 
 ### Device impact
 
@@ -157,7 +157,7 @@ Misalignments of holograms with physical objects (if intended to be placed in re
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
@@ -172,11 +172,11 @@ Misalignments of holograms with physical objects (if intended to be placed in re
 
 |  Best  |  Meets |  Fail |
 --- | --- | ---
-| Holograms align to the surface typically in the centimeters to inches range. If more accuracy is required, the app should provide an efficient means for collaboration within the desired app spec. | NA | The holograms appear unaligned with the physical target object by either breaking the surface plane or appearing to float away from the surface. If accuracy is required, Holograms should meet the proximity spec of the scenario. | 
+| Holograms align to the surface typically in the centimeters to inches range. If you need more accuracy, the app should provide an efficient means for collaboration within the app spec. | NA | The holograms appear unaligned with the physical target object by either breaking the surface plane or appearing to float away from the surface. If accuracy is required, Holograms should meet the proximity spec of the scenario. | 
 
 ### How to measure
 
-* Holograms that are placed on spatial map should not appear to dramatically float above or below the surface.
+* Holograms that are placed on spatial map shouldn't appear to dramatically float above or below the surface.
 * Holograms that require accurate placement should have some form of marker and calibration system that is accurate to the scenario's requirement.
 
 ### Recommendations
@@ -209,7 +209,7 @@ Misalignments of holograms with physical objects (if intended to be placed in re
 
 ## Viewing zone of comfort
 
-App developers control where users' eyes converge by placing content and holograms at various depths. Users wearing HoloLens will always accommodate to 2.0m to maintain a clear image because HoloLens displays are fixed at an optical distance approximately 2.0m away from the user. Improper content depth can lead to visual discomfort or fatigue.
+App developers control where users' eyes converge by placing content and holograms at various depths. Users wearing HoloLens will always accommodate to 2.0 m to maintain a clear image because HoloLens displays are fixed at an optical distance approximately 2.0 m away from the user. Improper content depth can lead to visual discomfort or fatigue.
 
 ### Device impact
 
@@ -220,7 +220,7 @@ App developers control where users' eyes converge by placing content and hologra
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
@@ -236,26 +236,26 @@ App developers control where users' eyes converge by placing content and hologra
 <table>
 <tr>
 <td> Best </td><td><ul>
-<li>Place content at 2m.</li><li>When holograms cannot be placed at 2m and conflicts between convergence and accommodation cannot be avoided, the optimal zone for hologram placement is between 1.25m and 5m.</li><li>In every case, designers should structure content to encourage users to interact 1+ m away (e.g. adjust content size and default placement parameters).</li><li>Unless specifically not required by the scenario, a clipping plane should be implement with fadeout starting at 1m.</li><li>In cases where closer observation of a motionless hologram is required, the content should not be closer than 50cm.</li>
+<li>Place content at 2 m.</li><li>When holograms cannot be placed at 2 m and conflicts between convergence and accommodation cannot be avoided, the optimal zone for hologram placement is between 1.25 m and 5 m.</li><li>In every case, designers should structure content to encourage users to interact 1+ m away (e.g. adjust content size and default placement parameters).</li><li>Unless not required by the scenario, a clipping plane should be implement with fade out starting at 1 m.</li><li>In cases where closer observation of a motionless hologram is required, the content shouldn't be closer than 50 cm.</li>
 </ul></td>
 </tr><tr>
 <td> Meets</td><td> Content is within the viewing and motion guidance, but improper use or no use of the clipping plane.</td>
 </tr><tr>
-<td> Fail </td><td> Content is presented too close (typically &lt;1.25m, or &lt;50cm for stationary holograms requiring closer observation.)</td>
+<td> Fail </td><td> Content is presented too close (typically &lt;1.25 m, or &lt;50 cm for stationary holograms requiring closer observation.)</td>
 </tr>
 </table>
 
 ### How to measure
 
-* Content should typically be 2m away, but no closer than 1.25 or further than 5m.
-* With few exceptions, the HoloLens clipping render distance should be set to .85CM with fadeout of content starting at 1m. Approach the content and note the clipping plane effect.
-* Stationary content should not be closer than 50cm away.
+* Content should typically be 2 m away, but no closer than 1.25 or further than 5 m.
+* With few exceptions, the HoloLens clipping render distance should be set to 85CM with fade out of content starting at 1 m. Approach the content and note the clipping plane effect.
+* Stationary content should not be closer than 50 cm away.
 
 ### Recommendations
 
-* Design content for the optimal viewing distance of 2m.
-* Set the clipping render distance to 85cm with fadeout of content starting at 1m.
-* For stationary holograms that need closer viewing, the clipping plane should be no closer than 30cm and fadeout should start at least 10cm away from the clipping plane.
+* Design content for the optimal viewing distance of 2 m.
+* Set the clipping render distance to 85 cm with fade out of content starting at 1 m.
+* For stationary holograms that need closer viewing, the clipping plane should be no closer than 30 cm and fade out should start at least 10 cm away from the clipping plane.
 
 ### Resources
 
@@ -277,7 +277,7 @@ Regardless of viewing zone of comfort issues, demands for the user to switch fre
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
@@ -309,7 +309,7 @@ Regardless of viewing zone of comfort issues, demands for the user to switch fre
 
 ## Use of spatial sound
 
-In Windows Mixed Reality, the audio engine provides the aural component of the mixed reality experience by simulating 3D sound using direction, distance, and environmental simulations. Using spatial sound in an application allows developers to convincingly place sounds in a 3 dimensional space (sphere) all around the user. Those sounds will then seem as if they were coming from real physical objects or the mixed reality holograms in the user's surroundings. Spatial sound is a powerful tool for immersion, accessibility, and UX design in mixed reality applications.
+In Windows Mixed Reality, the audio engine provides the aural component of the mixed reality experience by simulating 3D sound using direction, distance, and environmental simulations. Using spatial sound in an application allows developers to convincingly place sounds in a 3-dimensional space (sphere) all around the user. Those sounds will then seem as if they were coming from real physical objects or the mixed reality holograms in the user's surroundings. Spatial sound is a powerful tool for immersion, accessibility, and UX design in mixed reality applications.
 
 ### Device impact
 
@@ -320,7 +320,7 @@ In Windows Mixed Reality, the audio engine provides the aural component of the m
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
@@ -363,7 +363,7 @@ In Windows Mixed Reality, the audio engine provides the aural component of the m
 
 #### Tools and tutorials
 
-* [MRToolkit, Spatial Audio](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/SpatialSound/README.md)
+* [Mixed Reality Toolkit - Spatial Audio](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/SpatialSound/README.md)
 
 ## Focus on holographic frame (FOV) boundaries
 
@@ -378,7 +378,7 @@ Well-designed user experiences can create and maintain useful context of the vir
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
@@ -398,7 +398,7 @@ Well-designed user experiences can create and maintain useful context of the vir
 ### How to measure
 
 * Context for a (large) hologram is lost or not understood due to being clipped at the boundaries.
-* Location of holograms are hard to find due to the lack of attention directors or content that rapidly moves in and out of the holographic frame.
+* Locations of holograms are hard to find due to the lack of attention directors or content that rapidly moves in and out of the holographic frame.
 * Scenario requires regular and repetitive up and down head motion to fully see a hologram resulting in neck fatigue.
 
 ### Recommendations
@@ -434,7 +434,7 @@ Holograms should react to the user position in roughly the same ways that "real"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
@@ -454,7 +454,7 @@ Holograms should react to the user position in roughly the same ways that "real"
 <td> Meets </td><td> UI adapts to the user position, but may impede the view of key content requiring the user to adjust their position.</td>
 </tr><tr>
 <td> Fail </td><td><ol>
-<li>UI elements are lost or locked during movement causing user to unnaturally return to (or find) controls.</li><li>UI elements limit the view of primary content.</li><li>UI movement is not optimized for viewing distance and momentum particularly with <a href="../../design/billboarding-and-tag-along.md">tag-along</a> UI elements.</li>
+<li>UI elements are lost or locked during movement causing user to unnaturally return to (or find) controls.</li><li>UI elements limit the view of primary content.</li><li>UI movement isn't optimized for viewing distance and momentum particularly with <a href="../../design/billboarding-and-tag-along.md">tag-along</a> UI elements.</li>
 </ol></td>
 </tr>
 </table>
@@ -475,14 +475,14 @@ Holograms should react to the user position in roughly the same ways that "real"
 #### Documentation
 
 * [Interaction design](../../discover/hologram.md)
-* [Color, light, and material](../../color,-light-and-materials.md)
+* [Color, light, and material](../../design/color-light-and-materials.md)
 * [Billboarding and tag-along](../../design/billboarding-and-tag-along.md)
 * [Instinctual interactions](../../design/interaction-fundamentals.md)
 * [Self-motion and user locomotion](../../design/comfort.md#self-motion-and-user-locomotion)
 
 ## Input interaction clarity
 
-Input interaction clarity is critical to an app's usability and includes input consistency, approachability, discoverability of interaction methods. User should be able to use platform-wide common interactions without relearning. If the app has custom input, it should be clearly communicated and demonstrated.
+Input interaction clarity is critical to an app's usability and includes input consistency, approachability, discoverability of interaction methods. User can use platform-wide common interactions without relearning. If the app has custom input, it should be clearly communicated and demonstrated.
 
 ### Device impact
 
@@ -493,7 +493,7 @@ Input interaction clarity is critical to an app's usability and includes input c
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
@@ -508,12 +508,12 @@ Input interaction clarity is critical to an app's usability and includes input c
 
 |  Best  |  Meets |  Fail |
 --- | --- | ---
-|  Input interaction methods are consistent with Windows Mixed Reality provided [guidance](../../design/interaction-fundamentals.md). Any custom input should not be redundant with standard input (rather use standard interaction) and must be clearly communicated and demonstrated to the user. | Similar to best, but custom inputs are redundant with standard input methods. User can still achieve the goal and progress through the app experience. | Difficult to understand input method or button mapping. Input is heavily customized, does not support standard input, no instructions, or likely to cause fatigue and comfort issues. | 
+|  Input interaction methods are consistent with Windows Mixed Reality provided [guidance](../../design/interaction-fundamentals.md). Any custom input shouldn't be redundant with standard input (rather use standard interaction) and must be clearly communicated and demonstrated to the user. | Similar to best, but custom inputs are redundant with standard input methods. User can still achieve the goal and progress through the app experience. | Difficult to understand input method or button mapping. Input is heavily customized, doesn't support standard input, no instructions, or likely to cause fatigue and comfort issues. | 
 
 ### How to measure
 
 * The app uses consistent [standard input methods.](../../design/interaction-fundamentals.md)
-* If the app has custom input, it is clearly communicated through:
+* If the app has custom input, it's clearly communicated through:
 * First-run experience
 * Introductory screens
 * Tooltips
@@ -541,9 +541,10 @@ Input interaction clarity is critical to an app's usability and includes input c
 * [Input porting guide for Unity](../porting-apps/input-porting-guide-for-unity.md)
 * [Keyboard input in Unity](../unity/keyboard-input-in-unity.md)
 * [Gaze in Unity](../unity/gaze-in-unity.md)
-* [Gestures and motion controllers in Unity](../unity/gestures-and-motion-controllers-in-unity.md)
+* [Motion controllers in Unity](../unity/motion-controllers-in-unity.md)
+* [Gestures in Unity](../unity/gestures-in-unity.md)
 * [Voice input in Unity](../unity/voice-input-in-unity.md)
-* [Keyboard, mouse, and controller input in DirectX](../../keyboard,-mouse,-and-controller-input-in-directx.md)
+* [Keyboard, mouse, and controller input in DirectX](./keyboard-mouse-and-controller-input-in-directx.md)
 * [Head and eye gaze in DirectX](../native/gaze-in-directx.md)
 * [Hands and motion controllers in DirectX](../native/hands-and-motion-controllers-in-directx.md)
 * [Voice input in DirectX](../native/voice-input-in-directx.md)
@@ -568,7 +569,7 @@ A button has long been a metaphor used for triggering an event in the 2D abstrac
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
@@ -583,11 +584,11 @@ A button has long been a metaphor used for triggering an event in the 2D abstrac
 
 |  Best  |  Meets |  Fail |
 --- | --- | ---
-|  Regardless of form, interactable objects are recognizable through visual and audio cues across three states: idle, targeted, and selected. "See it, say it" is clear and consistently used throughout the experience. Objects are scaled and distributed to allow for error free targeting. | User can recognize object as interactable through audio or visual feedback, and can target and activate the object. | Given no visual or audio cues, user cannot recognize an interactable object. Interactions are error prone due to object scale or distance between objects. | 
+|  Regardless of form, interactable objects are recognizable through visual and audio cues across three states: idle, targeted, and selected. "See it, say it" is clear and consistently used throughout the experience. Objects are scaled and distributed to allow for error free targeting. | User can recognize object as interactable through audio or visual feedback, and can target and activate the object. | Given no visual or audio cues, user can't recognize an interactable object. Interactions are error prone due to object scale or distance between objects. | 
 
 ### How to measure
 
-* Interactable objects are recognizable as 'interactable'; including buttons, menus, and app specific content. As a rule of thumb there should be a visual and audio cue when targeting interactable objects.
+* Interactable objects are recognizable as 'interactable'; including buttons, menus, and app-specific content. As a rule of thumb there should be a visual and audio cue when targeting interactable objects.
 
 ### Recommendations
 
@@ -623,7 +624,7 @@ Apps that require spatial mapping data rely on the device to automatically colle
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
@@ -642,7 +643,7 @@ Apps that require spatial mapping data rely on the device to automatically colle
 
 ### How to measure
 
-* During a required room scan, visual and audio guidance is provided indicating where to look, and when to start and stop scanning.
+* During a required room scan, visual and audio guidance are provided indicating where to look, and when to start and stop scanning.
 
 ### Recommendations
 
@@ -667,7 +668,7 @@ Apps that require spatial mapping data rely on the device to automatically colle
 
 ## Directional indicators
 
-In a mixed reality app, content may be outside the field of view or occluded by real-world objects. A well designed app will make it easier for the user to find non-visible content. Directional indicators alert a user to important content and provide guidance to the content relative to the user's position. Guidance to non-visible content can take the form of sound emitters, directional arrows, or direct visual cues.
+In a mixed reality app, content may be outside the field of view or occluded by real-world objects. A well-designed app will make it easier for the user to find non-visible content. Directional indicators alert a user to important content and provide guidance to the content relative to the user's position. Guidance to non-visible content can take the form of sound emitters, directional arrows, or direct visual cues.
 
 ### Device impact
 
@@ -678,7 +679,7 @@ In a mixed reality app, content may be outside the field of view or occluded by 
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
@@ -710,7 +711,7 @@ In a mixed reality app, content may be outside the field of view or occluded by 
 
 ## Data loading
 
-A progress control provides feedback to the user that a long-running operation is underway. It can mean that the user cannot interact with the app when the progress indicator is visible and can also indicate how long the wait time might be.
+A progress control provides feedback to the user that a long-running operation is underway. It can mean that the user can't interact with the app when the progress indicator is visible and can also indicate how long the wait time might be.
 
 ### Device impact
 
@@ -721,7 +722,7 @@ A progress control provides feedback to the user that a long-running operation i
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>

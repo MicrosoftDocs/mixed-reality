@@ -13,9 +13,7 @@ keywords: Mixed Reality, Gaze, gaze targeting, interaction, design, hands near, 
 
 ![Button](images/UX_Hero_Manipulation.jpg)
 
-Direct manipulation is an input model that involves touching holograms directly with your hands. The idea behind this concept is that objects behave just as they would in the real world. Buttons can be activated simply by pressing them, objects can be picked up by grabbing them, and 2D content behaves like a virtual touchscreen. This makes direct manipulation easy for users to learn, and fun. It's considered a "near" input model in that it's best used for interacting with content within arms reach.
-
-Direct manipulation is affordance-based, meaning it's user friendly. There are no symbolic gestures to teach users. All interactions are built around a visual element that you can touch or grab.
+Direct manipulation is an input model that involves touching holograms directly with your hands. The idea behind this concept is that objects behave just as they would in the real world. Buttons can be activated simply by pressing them, objects can be picked up by grabbing them, and 2D content behaves like a virtual touchscreen. Direct manipulation is affordance-based, meaning it's user-friendly. There are no symbolic gestures to teach users. All interactions are built around a visual element that you can touch or grab. It's considered a "near" input model in that it's best used for interacting with content within arms reach.
 
 ## Device support
 
@@ -28,9 +26,9 @@ Direct manipulation is affordance-based, meaning it's user friendly. There are n
 </colgroup>
 <tr>
      <td><strong>Input model</strong></td>
-     <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
-     <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></a></td>
-     <td><a href="https://docs.microsoft.com/windows/mixed-reality/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
+     <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></a></td>
+     <td><a href="/windows/mixed-reality/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
 </tr>
 <tr>
      <td>Direct manipulation with hands</td>
@@ -42,17 +40,25 @@ Direct manipulation is affordance-based, meaning it's user friendly. There are n
 </table>
 
 
-Direct manipulation is a primary input model on HoloLens 2, which uses the new articulated hand-tracking system. The input model is also available on immersive headsets through the use of motion controllers, but is not recommended as a primary means of interaction outside of object manipulation. Direct manipulation is not available on HoloLens (1st gen).
+Direct manipulation is a primary input model on HoloLens 2, which uses the new articulated hand-tracking system. The input model is also available on immersive headsets by using motion controllers, but isn't recommended as a primary means of interaction outside of object manipulation. Direct manipulation isn't available on HoloLens (1st gen).
 
 <br>
 
 ---
 
+## Basic hand tracking and instinctual interactions demo
+
+If you'd like to see Head and Eye Tracking design concepts in action, check out our **Designing Holograms - Head Tracking and Eye Tracking** video demo below. When you've finished, continue on for a more detailed dive into specific topics.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Hand-Tracking-Chapter/player]
+
+*This video was taken from the "Designing Holograms" HoloLens 2 app. Download and enjoy the full experience [here](https://aka.ms/dhapp).*
+
 ## Collidable fingertip
 
-On HoloLens 2, the user's hands are recognized and interpreted as left and right hand skeletal models. To implement the idea of touching holograms directly with hands, ideally, five colliders could be attached to the five fingertips of each hand skeletal model. However, due to the lack of tactile feedback, ten collidable fingertips can cause unexpected and unpredictable collisions with holograms. 
+On HoloLens 2, the user's hands are recognized and interpreted as left and right-hand skeletal models. To implement the idea of touching holograms directly with hands, ideally, five colliders could be attached to the five fingertips of each hand skeletal model. However, because of the lack of tactile feedback, 10 collidable fingertips can cause unexpected and unpredictable collisions with holograms. 
 
-Hence, we suggest only putting a collider on each index finger. The collidable index fingertips can still serve as active touch points for diverse touch gestures involving other fingers, such as One-finger press, One-finger tap, Two-finger press and Five-finger press, as shown in the image below.
+We suggest only putting a collider on each index finger. The collidable index fingertips can still serve as active touch points for diverse touch gestures involving other fingers. Touch gestures include One-finger press, One-finger tap, Two-finger press, and Five-finger press, as shown below:
 
 :::row:::
     :::column:::
@@ -83,9 +89,9 @@ Instead of using a random generic shape, we suggest you use a sphere collider. T
 
 ### Fingertip cursor
 
-In addition to rendering a collidable sphere on the index fingertip, we've created an advanced fingertip cursor to interactively achieve a better near-targeting experience. It is a donut-shaped cursor attached to the index fingertip. According to proximity, it dynamically reacts to a target in terms of orientation and size as detailed below:
+In addition to rendering a collidable sphere on the index fingertip, we've created an advanced fingertip cursor to achieve a better near-targeting experience. It's a donut-shaped cursor attached to the index fingertip. According to proximity, it dynamically reacts to a target for orientation and size as detailed below:
 
-* When an index finger moves toward a hologram, the cursor is always parallel to the hologram's surface and gradually shrinks its size accordingly.
+* When an index finger moves toward a hologram, the cursor is always parallel to the hologram's surface and gradually shrinks its size.
 * As soon as the finger touches the surface, the cursor shrinks into a dot and emits a touch event.
 
 With interactive feedback, users can achieve high precision near-targeting tasks, such as triggering a hyperlink or pressing a button as shown below. 
@@ -122,7 +128,7 @@ The hologram itself also requires the ability to provide both visual and audio f
     :::column:::
        ![Hover (near) with visual feedback](images/bounding-box-with-proximity-shader-hover-near.jpg)<br>
         **Hover (near)**<br>
-        When the fingertip gets closer to the surface, the spotlight shrinks accordingly.
+        When the fingertip gets closer to the surface, the spotlight shrinks.
     :::column-end:::
     :::column:::
        ![Contact begins](images/bounding-box-with-proximity-shader-begin-contact.jpg)<br>
@@ -142,10 +148,10 @@ The hologram itself also requires the ability to provide both visual and audio f
 
 ## Pressable button
 
-With a collidable fingertip, users are now ready to interact with a fundamental holographic UI component, such as a pressable button. A pressable button is a holographic button tailored for a direct finger press. Again, due to the lack of tactile feedback, a pressable button equips a couple mechanisms to tackle tactile feedback-related issues.
+With a collidable fingertip, users are now ready to interact with a fundamental holographic UI component, such as a pressable button. A pressable button is a holographic button tailored for a direct finger press. Again, because of the lack of tactile feedback, a pressable button equips a couple mechanisms to tackle tactile feedback-related issues.
 
 * The first mechanism is a bounding box with a proximity shader, which is detailed in the previous section. It gives users a better sense of proximity when they approach and make contact with a button.
-* The second mechanism is depression. Depression creates a sense of pressing down after a fingertip contacts a button. The mechanism ensures that the button tightly moves with the fingertip along the depth axis. The button can be triggered when it reaches a designated depth (on press) or leaves the depth (on release) after passing through it.
+* The second mechanism is depression. Depression creates a sense of pressing down after a fingertip contacts a button. The mechanism ensures that the button tightly moves with the fingertip along the depth axis. The button can be triggered when it reaches a chosen depth (on press) or leaves the depth (on release) after passing through it.
 * The sound effect should be added to enhance feedback when the button is triggered.
 
 :::row:::
@@ -173,7 +179,7 @@ With a collidable fingertip, users are now ready to interact with a fundamental 
 
 ## 2D slate interaction
 
-A 2D [slate](slate.md) is a holographic container used to host 2D app content, such as a web browser. The design concept for interacting with a 2D slate via direct manipulation is to leverage the mental model of interacting with a physical touch screen.
+A 2D [slate](slate.md) is a holographic container used to host 2D app content, such as a web browser. The design concept for interacting with a 2D slate via direct manipulation is the same as interacting with a physical touch screen.
 
 ### To interact with the slate contact
 
@@ -200,19 +206,19 @@ A 2D [slate](slate.md) is a holographic container used to host 2D app content, s
 
 :::row:::
     :::column:::
-       ![Move](images/manipulate-2d-slate-move.jpg)<br>
+       ![Graphic showing grab and drag feature](images/manipulate-2d-slate-move.jpg)<br>
        **Move**<br>
        Move your hands toward corners and edges to reveal the closest manipulation affordances. Grab the Holobar at the top of the 2D slate, which lets you move the whole slate.
     :::column-end:::
     :::column:::
-       ![Scale](images/manipulate-2d-slate-scale.jpg)<br>
+       ![Graphic showing scale feature](images/manipulate-2d-slate-scale.jpg)<br>
         **Scale**<br>
-        Grab the manipulation affordances and perform uniform scaling through the corner affordances.
+        Grab the manipulation affordances and do uniform scaling through the corner affordances.
     :::column-end:::
     :::column:::
        ![Reflow](images/manipulate-2d-slate-reflow.jpg)<br>
        **Reflow**<br>
-       Grab the manipulation affordances and perform reflow via the edge affordances.
+       Grab the manipulation affordances and do reflow via the edge affordances.
     :::column-end:::
 :::row-end:::
 
@@ -231,17 +237,17 @@ Affordance-base manipulation lets you manipulate the 3D object through a boundin
 
 :::row:::
     :::column:::
-       ![Move](images/3d-object-manipulation-move.jpg)<br>
+       ![Graphic showing an objects bounding box and move feature](images/3d-object-manipulation-move.jpg)<br>
        **Move**<br>
-       As soon as a user's hand is close to a 3D object, the bounding box and the nearest affordance are revealed. Users can grab the bounding box to move the whole object.
+       As soon as a user's hand is close to a 3D object, the bounding box, and the nearest affordance are revealed. Users can grab the bounding box to move the whole object.
     :::column-end:::
     :::column:::
-       ![Rotate](images/3d-object-manipulation-rotate.jpg)<br>
+       ![Graphic showing user grabbing an objects edge to rotate](images/3d-object-manipulation-rotate.jpg)<br>
         **Rotate**<br>
         Users can grab the edge affordances to rotate.
     :::column-end:::
     :::column:::
-       ![Scale](images/3d-object-manipulation-scale.jpg)<br>
+       ![Graphic showing user grabbing an objects corner to scale](images/3d-object-manipulation-scale.jpg)<br>
        **Scale**<br>
        Users can grab the corner affordances to scale uniformly.
     :::column-end:::
@@ -250,9 +256,9 @@ Affordance-base manipulation lets you manipulate the 3D object through a boundin
 <br>
 
 
-### Non-affordance based manipulation
+### Non-affordance-based manipulation
 
-Non-affordance-based manipulation does not attach affordance to the bounding box. Users can only reveal the bounding box, then directly interact with it. If the bounding box is grabbed with one hand, the translation and rotation of the object are associated to motion and orientation of the hand. When the object is grabbed with two hands, users can translate, scale, and rotate it according to relative motions of two hands.
+Non-affordance-based manipulation doesn't attach affordance to the bounding box. Users can only reveal the bounding box, then directly interact with it. If the bounding box is grabbed with one hand, the translation and rotation of the object are associated to motion and orientation of the hand. When the object is grabbed with two hands, users can translate, scale, and rotate it according to relative motions of two hands.
 
 Specific manipulation requires precision. We recommend that you use **affordance-based manipulation** because it provides a high level of granularity. For flexible manipulation, we recommend you use **non-affordance manipulation** as it allows for instant and playful experiences.
 
@@ -265,20 +271,20 @@ Specific manipulation requires precision. We recommend that you use **affordance
 
 With HoloLens (1st gen), we taught users a couple of predefined gestures, such as bloom and air tap. For HoloLens 2, we don't ask users to memorize any symbolic gestures. All required user gestures, where users need to interact with holograms and content, are instinctual. The way to achieve instinctual gestures is to help users perform gestures through the design of UI affordances.
 
-For example, if we encourage the user to grab an object or a control point with a two finger pinch, the object or the control point should be small. If we want the user to perform five finger grab, the object or the control point should be relatively large. Similar to buttons, a tiny button would limit users to press it with a single finger; a large button would encourage users to press it with their palms.
+For example, if we encourage the user to grab an object or a control point with a two finger pinch, the object or the control point should be small. If we want the user to do a five finger grab, the object or the control point should be relatively large. Similar to buttons, a tiny button would limit users to press it with a single finger. A large button would encourage users to press it with their palms.
 
 
 :::row:::
     :::column:::
-       ![Move](images/instinctual-gestures-smallobject.jpg)<br>
+       ![Graphic showing user grabbing small object to move](images/instinctual-gestures-smallobject.jpg)<br>
        **Small object**<br>
     :::column-end:::
     :::column:::
-       ![Rotate](images/instinctual-gestures-mediumobject.jpg)<br>
+       ![Graphic showing user grabbing medium object to move](images/instinctual-gestures-mediumobject.jpg)<br>
         **Medium object**<br>
     :::column-end:::
     :::column:::
-       ![Scale](images/instinctual-gestures-largeobject.jpg)<br>
+       ![Graphic showing user grabbing large object to move](images/instinctual-gestures-largeobject.jpg)<br>
        **Large object**<br>
     :::column-end:::
 :::row-end:::
@@ -292,7 +298,7 @@ For example, if we encourage the user to grab an object or a control point with 
 
 ## Symmetric design between hands and 6 DoF controllers
 
-You may have noticed that there are interaction parallels we can draw between hands in AR and motion controllers in VR. Both inputs can be used to trigger direct manipulations in their respective environments. In HoloLens 2, grabbing and dragging with hands at a close distance works much the same way as the grab button does on WMR motion controllers. This provides users with interaction familiarity between the two platforms, which might prove useful if you ever decide to port your application from one to the other.
+You may have noticed that there are interaction parallels we can draw between hands in AR and motion controllers in VR. Both inputs can be used to trigger direct manipulations in their respective environments. In HoloLens 2, grabbing and dragging with hands at a close distance works much the same way as the grab button does on WMR motion controllers. This provides users with interaction familiarity between the two platforms, which might prove useful if you ever decide to port your application between platforms.
 
 <br>
 
@@ -303,19 +309,19 @@ You may have noticed that there are interaction parallels we can draw between ha
 Direct manipulation can feel magical if it works as intended. But it can also become frustrating if you can’t move your hand anywhere without unintentionally triggering a hologram. Eye tracking potentially helps to better identify what the user’s intent is.
 
 * **When**: Reduce unintentionally triggering a manipulation response. Eye tracking allows for better understanding what a user is currently engaged with.
-For example, imagine you are reading through a holographic (instructional) text when reaching over to grab you real-world work tool.
+For example, imagine you're reading through a holographic (instructional) text when reaching over to grab you real-world work tool.
 
-By doing so, you accidentally move your hand across some interactive holographic buttons that you hadn't even noticed before (e.g. it  may be outside the user's field-of-view (FoV)).
+By doing so, you accidentally move your hand across some interactive holographic buttons that you hadn't even noticed before. For example, it  may be outside the user's field-of-view (FoV).
 
-  Long story short: If the user hasn't looked at a hologram for a while, yet a touch or grasp event has been detected for it, it is likely that the user wasn't actually intending to interact with that hologram.
+If the user hasn't looked at a hologram for a while, yet a touch or grasp event has been detected for it, the interaction is likely unintentional.
 
 * **Which one**:  Aside from addressing false positive activations, another example includes better identifying which holograms to grab or poke as the precise intersection point may not be clear from your perspective, especially if several holograms are positioned close to each other.
 
-  While eye tracking on HoloLens 2 has limitations based on how accurately it can determine your eye gaze, this can still be very helpful for near interactions due to depth disparity when interacting with hand input. This means that it is sometimes difficult to determine whether your hand is behind or in front of a hologram to precisely grab a manipulation widget, for example.
+  While eye tracking on HoloLens 2 has limitations based on how accurately it can determine your eye gaze, this can still be helpful for near interactions because of depth disparity when interacting with hand input. This means it's sometimes difficult to determine whether your hand is behind or in front of a hologram to precisely grab a manipulation widget, for example.
 
 * **Where to**: Use information about what a user is looking at with quick-throwing gestures. Grab a hologram and roughly toss it toward your intended destination.  
 
-    While this sometimes works, quickly performing hand gestures may result in highly inaccurate destinations. However, eye tracking could improve the accuracy of the gesture.
+    While this sometimes works, quickly doing hand gestures may result in highly inaccurate destinations. However, eye tracking could improve the accuracy of the gesture.
 
 <br>
 
@@ -324,8 +330,7 @@ By doing so, you accidentally move your hand across some interactive holographic
 ## Manipulation in MRTK (Mixed Reality Toolkit) for Unity
 With **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can easily achieve common manipulation behavior using the script **ObjectManipulator**. With ObjectManipulator, you can grab and move objects directly with hands or with hand ray. It also supports two-handed manipulation for scaling and rotating an object.
 
-* [MRTK - Manipulation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html)
-
+* [MRTK - Manipulation](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-manipulator)
 
 ---
 

@@ -9,8 +9,10 @@ keywords: Mixed Reality, hands, motion controllers, interaction, design, mixed r
 ---
 
 # Hands and motion controllers
+
 ## Scenarios
-If you choose to adopt this interaction model after reading the [interaction overview](interaction-fundamentals.md), it means that you are developing an application requiring users to use two hands to interact with the holographic world. Your application is going to achieve the goal of removing the boundary between virtual and physical.
+
+After reading the [interaction overview](interaction-fundamentals.md), you choose the hand and motion controller interaction model. This means you're developing an application requiring users to use two hands to interact with the holographic world. Your application is going to achieve the goal of removing the boundary between virtual and physical.
 
 Some specific scenarios might be:
 * Providing information workers 2D virtual screens with UI affordances to display and control content
@@ -29,7 +31,7 @@ Some specific scenarios might be:
     :::column:::
        [![Direct manipulation with hands](images/hands-and-controllers-direct-manipulation.jpg)](direct-manipulation.md)<br>
        ### [Direct manipulation with hands](direct-manipulation.md)<br>
-       This is a modality leveraging the power of hands, with which users are capable of touching and manipulating the holograms directly. By leveraging daily life experiences and providing proper visual affordances, users are able to use the same way of manipulating real world objects to interact with virtual ones.
+       Modality applying the power of hands that users can use to touch and manipulate holograms. By using daily life experiences and providing proper visual affordances, users can use the same way of manipulating real world objects to interact with virtual ones.
     :::column-end:::
     :::column:::
        [![Point and commit with hands](images/hands-and-controllers-point-and-commit.jpg)](point-and-commit.md)<br>
@@ -39,7 +41,7 @@ Some specific scenarios might be:
     :::column:::
        [![Motion controllers](images/hands-and-controllers-motion-controllers.jpg)](motion-controllers.md)<br>
        ### [Motion controllers](motion-controllers.md)<br>
-       Motion controllers are tools that extend the user's physical capabilities by providing precise interactions across a large range of distances while using one or both hands. These hardware accessories provide shortcuts to many commonly-used interactions and provide surefooted, tactile feedback for a variety of actions. Currently, motion controllers are only available for Windows Mixed Reality (WMR) scenarios. 
+       Motion controllers extend the user's physical capabilities with precise interactions across a range of distances while using one or both hands. These hardware accessories provide shortcuts to many commonly used interactions and provide sure-footed, tactile feedback for various actions. Currently, motion controllers are only available for Windows Mixed Reality (WMR) scenarios. 
     :::column-end:::
 :::row-end:::
 

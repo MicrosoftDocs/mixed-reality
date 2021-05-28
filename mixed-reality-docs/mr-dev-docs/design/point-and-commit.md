@@ -1,6 +1,6 @@
 ---
 title: Point and commit with hands
-description: Overview of the point and commit input model
+description: Learn the basics of the point and commit input model for gesture support in mixed reality applications.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 04/05/2019
@@ -13,7 +13,7 @@ keywords: Mixed Reality, interaction, design, HoloLens, hands, far, point and co
 
 ![Cursors](images/UX_Hero_HandRay.jpg)
 
-Point and commit with hands is an input model that enables users to target, select and manipulate 2D content and 3D objects that are out of reach. This "far" interaction technique is unique to mixed reality, and is not a way humans naturally interact with the real world. For example, in the super hero movie, *X-Men*, the character [Magneto](https://en.wikipedia.org/wiki/Magneto_(comics)) is capable of reaching out and manipulating a far object in the distance with his hands. This is not something humans can do in reality. In both HoloLens (AR) and Mixed Reality (MR), we equip users with this magical power, breaking the physical constraint of the real world, not only to have a fun experience with holographic content but also to make user interactions more effective and efficient.
+Point and commit with hands is an input model that lets users target, select, and manipulate out of reach 2D and 3D content. This "far" interaction technique is unique to mixed reality because humans don't naturally interact with the real world that way. For example, in the super hero movie, *X-Men*, the character [Magneto](https://en.wikipedia.org/wiki/Magneto_(comics)) can manipulate far objects in the distance with his hands. This isn't something humans can do in reality. In both HoloLens (AR) and Mixed Reality (MR), we equip users with this magical power to break the physical constraint of the real world. Not only is it a fun holographic experience, but it also makes user interactions more effective and efficient.
 
 ## Device support
 
@@ -26,8 +26,8 @@ Point and commit with hands is an input model that enables users to target, sele
 </colgroup>
 <tr>
      <td><strong>Input model</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></td>
-     <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
+     <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
 </tr>
 <tr>
@@ -39,8 +39,8 @@ Point and commit with hands is an input model that enables users to target, sele
 </table>
 
 
-_"Point and commit with hands"_ is one of the new features that utilizes the new articulated hand-tracking system. 
-This input model is also the primary input model on immersive headsets through the use of motion controllers.
+_"Point and commit with hands"_ is one of the new features that use the new articulated hand-tracking system. 
+This input model is also the primary input model on immersive headsets by using motion controllers.
 
 <br>
 
@@ -50,7 +50,7 @@ This input model is also the primary input model on immersive headsets through t
 
 On HoloLens 2, we created a hand ray that shoots out from the center of the user's palm. This ray is treated as an extension of the hand. A donut-shaped cursor is attached to the end of the ray to indicate the location where the ray intersects with a target object. The object that the cursor lands on can then receive gestural commands from the hand.
 
-This basic gestural command is triggered by using the thumb and index finger to perform the air-tap action. By using the hand ray to point and air tap to commit, users can activate a button or a hyperlink. With more composite gestures, users are capable of navigating web content and manipulating 3D objects from a distance. The visual design of the hand ray should also react to these point and commit states, as described and shown below: 
+This basic gestural command is triggered by using the thumb and index finger to do the air-tap action. By using the hand ray to point and air tap to commit, users can activate a button or a hyperlink. With more composite gestures, users can navigating web content and manipulating 3D objects from a distance. The visual design of the hand ray should also react to these point and commit states, as described and shown below: 
 
 :::row:::
     :::column:::
@@ -69,10 +69,9 @@ This basic gestural command is triggered by using the thumb and index finger to 
 
 ---
 
-
 ## Transition between near and far
 
-Instead of using specific gestures, such as "pointing with index finger" to direct the ray, we designed the ray coming out from the center of the palm, releasing and reserving the five fingers for more manipulative gestures, such as pinch and grab. With this design, we create only one mental model - the same set of hand gestures are used for both near and far interaction. You can use the same grab gesture to manipulate objects at different distances. The invocation of the rays is automatic and proximity-based as follows:
+Instead of using specific gestures like "pointing with index finger" to direct the ray, we designed the ray to comout out from the center of the users' palm. This way, we've released and reserved the Five Fingers for more manipulative gestures like pinch and grab. With this design, we create only one mental model - the same set of hand gestures are used for both near and far interaction. You can use the same grab gesture to manipulate objects at different distances. The invocation of the rays is automatic and proximity-based as follows:
 
 :::row:::
     :::column:::
@@ -95,7 +94,7 @@ Instead of using specific gestures, such as "pointing with index finger" to dire
 
 A 2D slate is a holographic container hosting 2D app contents, such as a web browser. The design concept for far interacting with a 2D slate is to use hand rays to target and air tap to select. After targeting with a hand ray, users can air tap to trigger a hyperlink or a button. They can use one hand to "air tap and drag" to scroll slate content up and down. The relative motion of using two hands to air tap and drag can zoom in and out the slate content.
 
-Targeting the hand ray at the corners and edges reveals the closest manipulation affordance. By "grab and drag" manipulation affordances, users can perform uniform scaling through the corner affordances, and can reflow the slate via the edge affordances. Grabbing and dragging the holobar at the top of the 2D slate lets users move the entire slate.
+Targeting the hand ray at the corners and edges reveals the closest manipulation affordance. By "grab and drag" manipulation affordances, users can do uniform scaling through the corner affordances, and can reflow the slate via the edge affordances. Grabbing and dragging the holobar at the top of the 2D slate lets users move the entire slate.
 
 :::row:::
     :::column:::
@@ -117,9 +116,8 @@ Targeting the hand ray at the corners and edges reveals the closest manipulation
 **For manipulating the 2D slate**<br>
 
 * Users point the hand ray at the corners or edges to reveal the closest manipulation affordance. 
-* By applying a manipulation gesture on the affordance, users can perform uniform scaling through the corner affordance, and can reflow the slate via the edge affordance. 
+* By applying a manipulation gesture on the affordance, users can do uniform scaling through the corner affordance, and can reflow the slate via the edge affordance. 
 * By applying a manipulation gesture on the holobar at the top of the 2D slate, users can move the entire slate.<br>
-
 
 <br>
 
@@ -127,9 +125,10 @@ Targeting the hand ray at the corners and edges reveals the closest manipulation
 
 ## 3D object manipulation
 
-In direct manipulation, there are two ways for users to manipulate 3D objects: affordance-based manipulation and non-affordance based manipulation. In the point and commit model, users are capable of achieving exactly the same tasks through the hand rays. No additional learning is needed.<br>
+In direct manipulation, there are two ways for users to manipulate 3D objects: affordance-based manipulation and non-affordance based manipulation. In the point and commit model, users can achieve exactly the same tasks through the hand rays. No extra learning is needed.<br>
 
 ### Affordance-based manipulation
+
 Users use hand rays to point and reveal the bounding box and manipulation affordances. Users can apply the manipulation gesture on the bounding box to move the whole object, on the edge affordances to rotate, and on the corner affordances to scale uniformly. <br>
 
 :::row:::
@@ -147,8 +146,8 @@ Users use hand rays to point and reveal the bounding box and manipulation afford
     :::column-end:::
 :::row-end:::
 
+### Non-affordance-based manipulation
 
-### Non-affordance based manipulation
 Users point with hand rays to reveal the bounding box then directly apply manipulation gestures on it. With one hand, the translation and rotation of the object are associated to motion and orientation of the hand. With two hands, users can translate, scale, and rotate it according to relative motions of two hands.<br>
 
 <br>
@@ -156,7 +155,8 @@ Users point with hand rays to reveal the bounding box then directly apply manipu
 ---
 
 ## Instinctual gestures
-The concept of instinctual gestures for point and commit is similar to that for [direct manipulation with hands](direct-manipulation.md). The gestures users perform on a 3D object are guided by the design of UI affordances. For example, a small control point might motivate users to pinch with their thumb and index finger, while a user might want to grab a larger object using all five fingers.
+
+The concept of instinctual gestures for point and commit is similar to that for [direct manipulation with hands](direct-manipulation.md). The gestures users do on a 3D object are guided by the design of UI affordances. For example, a small control point might motivate users to pinch with their thumb and index finger, while a user might want to use all Five Fingers to grab a larger object.
 
 :::row:::
     :::column:::
@@ -179,7 +179,7 @@ The concept of instinctual gestures for point and commit is similar to that for 
 
 ## Symmetric design between hands and 6 DoF controller 
 
-The concept of point and commit for far interaction was initially created and defined for the Mixed Reality Portal (MRP) where a user wears an immersive headset and interacts with 3D objects via motion controllers. The motion controllers shoot out rays for pointing and manipulating far objects. There are buttons on the controllers for further committing different actions. We leverage the interaction model of rays and attached them to both hands. With this symmetric design, users who are familiar with MRP won't need to learn another interaction model for far pointing and manipulation when they use HoloLen 2, and vice versa.    
+The concept of point and commit for far interaction was created and defined for the Mixed Reality Portal (MRP). In this scenario, a user wears an immersive headset and interacts with 3D objects via motion controllers. The motion controllers shoot out rays for pointing and manipulating far objects. There are buttons on the controllers for further committing different actions. We apply the interaction model of rays and attached them to both hands. With this symmetric design, users who are familiar with MRP won't need to learn another interaction model for far pointing and manipulation when they use HoloLens 2, and the other way around.    
 
 :::row:::
     :::column:::
@@ -194,20 +194,20 @@ The concept of point and commit for far interaction was initially created and de
 
 <br>
 
-
 ---
 
 ## Hand ray in MRTK (Mixed Reality Toolkit) for Unity
-By default, MRTK provides a hand ray prefab ([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers)) which has the same visual state as the shell's system hand ray. It is assigned in MRTK's Input profile, under Pointers. In an immersive headset, the same rays are used for the motion controllers.
 
-* [MRTK - Pointer profile](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html#pointer-configuration)
-* [MRTK - Input system](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)
-* [MRTK - Pointers](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Pointers.html)
+By default, MRTK provides a hand ray prefab ([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers)) which has the same visual state as the shell's system hand ray. It's assigned in MRTK's Input profile, under Pointers. In an immersive headset, the same rays are used for the motion controllers.
 
+* [MRTK - Pointer profile](/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide#pointer-configuration)
+* [MRTK - Input system](/windows/mixed-reality/mrtk-unity/features/input/overview)
+* [MRTK - Pointers](/windows/mixed-reality/mrtk-unity/features/input/pointers)
 
 ---
 
 ## See also
+
 * [Direct manipulation with hands](direct-manipulation.md)
 * [Gaze and commit](gaze-and-commit.md)
 * [Hands - Direct manipulation](direct-manipulation.md)

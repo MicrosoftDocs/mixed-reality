@@ -8,10 +8,9 @@ ms.topic: article
 keywords: Windows Mixed Reality, design, 3D app launcher, immersive headset, live cube, mixed reality headset, windows mixed reality headset, virtual reality headset, UWP, Win32, lighting, color
 ---
 
-
 # 3D app launcher design guidance
 
-When you put on a Windows Mixed Reality immersive (VR) headset, you enter the Windows Mixed Reality home, visualized as a house on a cliff surrounded by mountains and water (though you can [choose other environments and even create your own](../design/add-custom-home-environments.md)). Within the space of this home, a user is free to arrange and organize the 3D objects and apps that they care about any way they want. A **3D app launcher** is a “physical” object in the user’s mixed reality house that they can select to launch an app.
+When you put on a Windows Mixed Reality immersive (VR) headset, you enter the Windows Mixed Reality home. The home is visualized as a house on a cliff surrounded by mountains and water, but you can [choose other environments and even create your own](../design/add-custom-home-environments.md)). Within the home's space, a user is free to arrange and organize the 3D objects and apps that they care about any way they want. A **3D app launcher** is a “physical” object in the user’s mixed reality house that they can select to launch an app.
 
 ![Example: Floaty Bird 3D app launcher](images/20171016-151526-mixedreality1-1200px-1000px.jpg)<br>
 *Floaty Bird 3D app launcher example (fictional app)*
@@ -52,7 +51,7 @@ The app launcher should feel like an object a person would be excited to have in
 
 ### Recognizable
 
-Your 3D app launcher should instantly express “your app’s brand” to people who see it. If you have a star character or an especially identifiable object in your app, we recommend using that as a big part of your design. In a mixed reality world, an object will draw more interest from users than just a logo alone. Recognizable objects communicate brand quickly and clearly.
+Your 3D app launcher should instantly express “your app’s brand” to people who see it. If you have a star character or an especially identifiable object in your app, we recommend using that as a significant part of your design. In a mixed reality world, an object will draw more interest from users than just a logo alone. Recognizable objects communicate brand quickly and clearly.
 
 ### Volumetric
 
@@ -82,11 +81,11 @@ Your app deserves more than just putting your logo on a flat plane and calling i
 
 ## Tips for good 3D models
 
-* When planning dimensions for your app launcher, shoot for roughly a 30cm cube. So, a 1:1:1 size ratio.
+* When planning dimensions for your app launcher, shoot for roughly a 30-cm cube. So, a 1:1:1 size ratio.
 * Models must be under 10,000 polygons. [Learn more about triangle counts and levels of details (LODs)](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#triangle-counts-and-levels-of-detail-lods)
 * Test on an immersive headset.
 * Build details into your model’s geometry where possible – don’t rely on textures for detail.
-* Build “water tight” closed geometry. No holes that are not modeled in.
+* Build “water tight” closed geometry. No holes that aren't modeled in.
 * Use natural materials in your object. Imagine crafting it in the real world.
 * Make sure your model reads well at different distances and sizes.
 * When your model is ready to go, read the [exporting assets guidelines](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#asset-requirements-overview).
@@ -105,9 +104,9 @@ Your app deserves more than just putting your logo on a flat plane and calling i
 
 ## How to handle type
 
-* We recommend your type comprises about 1/3 of your app launcher (or more). Type is the main thing that gives people an idea that your launcher is, in fact, a launcher so it’s nice if it’s pretty substantial.
+* We recommend your type takes up about 1/3 of your app launcher (or more). Type is the main thing that gives people an idea that your launcher is, in fact, a launcher so it’s nice if it’s substantial.
 * Avoid making type super wide – try to keep it within the confines of the app launchers core dimensions (more or less).
-* Flat type can work, but be aware that it can be hard to view from certain angles and in certain environments. You might consider putting it a solid object or backdrop behind it to help with this.
+* Flat type can work, but it can be hard to view from certain angles and in certain environments. You might consider putting it a solid object or backdrop behind it to help with this.
 * Adding dimension to your type feels nice in 3D. Shading the sides of the type a different, darker color can help with readability.
 
 :::row:::
@@ -147,7 +146,7 @@ Type colors that cause trouble include:
 
 ## Lighting
 
-The lighting for your app launcher comes from the Cliff House environment. Be sure to test your launcher in several places throughout the house so it looks good in both light and shadows. The good news is, if you’ve followed the other design guidance in this document, your launcher should be in pretty good shape for most lighting in the Cliff House.
+The lighting for your app launcher comes from the Cliff House environment. Be sure to test your launcher in several places throughout the house so it looks good in both light and shadows. The good news is, if you’ve followed the other design guidance in this document, your launcher should be in good shape for most lighting in the Cliff House.
 
 Good places to test how your launcher looks in the various lights in the environment are the Studio, the Media Room, anywhere outside and on the Back Patio (the concrete area with the lawn). Another good test is to put it in half light and half shadow and see what it looks like.
 
@@ -171,10 +170,10 @@ We recommend using [Substance Painter](https://www.allegorithmic.com/products/su
 
 ### Best practices
 
-* If your app launcher object was authored for PBR, it should be pretty straightforward to convert it for the Cliff House environment.
+* If your app launcher object was authored for PBR, it should be straightforward to convert it for the Cliff House environment.
 * Our shader is expecting a Metal/Roughness work flow – The Unreal PBR shader is a close facsimile.
-* When exporting your textures keep the [recommended texture sizes](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#material-guidelines) in mind.
-* Make sure to build your objects for real-time lighting — this means:
+* When exporting your textures, keep the [recommended texture sizes](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#material-guidelines) in mind.
+* Make sure to build your objects for real-time lighting—this means:
   * Avoid baked shadows – or painted shadows
   * Avoid baked lighting in the textures
   * Use one of the PBR material authoring packages to get the right maps generated for our shader

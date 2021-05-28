@@ -1,6 +1,6 @@
 ---
 title: Mixed reality core concepts
-description: Before diving into the design your experience, it's helpful to understand a few core concepts. Each topic below is an underlying factor that fundamentally affects and contributes to the quality of the mixed reality experience you are creating for your user.
+description: Learn about core concepts and how they contribute to the quality of the mixed reality experiences you're creating for your users.
 author: grbury 
 ms.author: grbury
 ms.date: 10/02/2019
@@ -12,8 +12,7 @@ keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens
 
 ![Direct manipulation with hands](images/05_CoreConcepts.png)
 
-
-Before diving into the design your experience, it's helpful to understand a few core concepts. Each topic below is an underlying factor that fundamentally affects and contributes to the quality of the mixed reality experience you are creating for your user. 
+Before diving into the design your experience, it's helpful to understand a few core concepts. Each topic below is an underlying factor that affects and contributes to the quality of the mixed reality experience you're creating. 
 
 :::row:::
     :::column:::
@@ -59,9 +58,6 @@ Before diving into the design your experience, it's helpful to understand a few 
         **[Types of mixed reality apps](types-of-mixed-reality-apps.md)**
     :::column-end:::
 :::row-end:::
-
-
-<br>
 
 <br>
 

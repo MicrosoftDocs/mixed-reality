@@ -1,5 +1,5 @@
 ---
-title: MR and Azure 308 - Cross-device notifications
+title: HoloLens (1st gen) and Azure 308 - Cross-device notifications
 description: Complete this course to learn how to implement Azure Notification Hubs, Azure Functions, and Azure Storage and Tables within a mixed reality application.
 author: drneil
 ms.author: jemccull
@@ -8,8 +8,7 @@ ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, notification, functions, tables, notification hubs, hololens, immersive, vr, Windows 10, Visual Studio
 ---
 
-
-# MR and Azure 308: Cross-device notifications
+# HoloLens (1st gen) and Azure 308: Cross-device notifications
 
 <br>
 
@@ -22,11 +21,11 @@ keywords: azure, mixed reality, academy, unity, tutorial, api, notification, fun
 
 In this course, you will learn how to add Notification Hubs capabilities to a mixed reality application using Azure Notification Hubs, Azure Tables, and Azure Functions.
 
-**Azure Notification Hubs** is a Microsoft service, which allows developers to send targeted and personalized push notifications to any platform, all powered within the cloud. This can effectively allow developers to communicate with end users, or even communicate between various applications, depending on the scenario. For more information, visit the **Azure Notification Hubs** [page](https://docs.microsoft.com/azure/notification-hubs/notification-hubs-push-notification-overview).
+**Azure Notification Hubs** is a Microsoft service, which allows developers to send targeted and personalized push notifications to any platform, all powered within the cloud. This can effectively allow developers to communicate with end users, or even communicate between various applications, depending on the scenario. For more information, visit the **Azure Notification Hubs** [page](/azure/notification-hubs/notification-hubs-push-notification-overview).
 
-**Azure Functions** is a Microsoft service, which allows developers to run small pieces of code, 'functions', in Azure. This provides a way to delegate work to the cloud, rather than your local application, which can have many benefits. **Azure Functions** supports several development languages, including C\#, F\#, Node.js, Java, and PHP. For more information, visit the **Azure Functions** [page](https://docs.microsoft.com/azure/azure-functions/functions-overview).
+**Azure Functions** is a Microsoft service, which allows developers to run small pieces of code, 'functions', in Azure. This provides a way to delegate work to the cloud, rather than your local application, which can have many benefits. **Azure Functions** supports several development languages, including C\#, F\#, Node.js, Java, and PHP. For more information, visit the **Azure Functions** [page](/azure/azure-functions/functions-overview).
 
-**Azure Tables** is a Microsoft cloud service, which allows developers to store structured non-SQL data in the cloud, making it easily accessible anywhere. The service boasts a schemaless design, allowing for the evolution of tables as needed, and thus is very flexible. For more information, visit the **Azure Tables** [page](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview)
+**Azure Tables** is a Microsoft cloud service, which allows developers to store structured non-SQL data in the cloud, making it easily accessible anywhere. The service boasts a schemaless design, allowing for the evolution of tables as needed, and thus is very flexible. For more information, visit the **Azure Tables** [page](/azure/cosmos-db/table-storage-overview)
 
 Having completed this course, you will have a mixed reality immersive headset application, and a Desktop PC application, which will be able to do the following:
 
@@ -44,7 +43,7 @@ In your application, it is up to you as to how you will integrate the results wi
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td> MR and Azure 308: Cross-device notifications</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -65,7 +64,7 @@ We recommend the following hardware and software for this course:
 - [The latest Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017.4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- A [Windows Mixed Reality immersive (VR) headset](../../../discover/immersive-headset-hardware-details.md) or [Microsoft HoloLens](../../../hololens-hardware-details.md) with Developer mode enabled
+- A [Windows Mixed Reality immersive (VR) headset](../../../discover/immersive-headset-hardware-details.md) or [Microsoft HoloLens](/hololens/hololens1-hardware) with Developer mode enabled
 - Internet access for Azure setup and to access Notification Hubs
 
 ## Before you start
@@ -141,7 +140,7 @@ With your apps credentials retrieved, you will need to go to the Azure Portal, w
 
     4.  Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure services associated with a single project (e.g. such as these labs) under a common resource group).
 
-        > If you wish to read more about Azure Resource Groups, please follow this [link on how to manage a Resource Group](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal). 
+        > If you wish to read more about Azure Resource Groups, please follow this [link on how to manage a Resource Group](/azure/azure-resource-manager/resource-group-portal). 
 
     5.  Select an appropriate **Subscription**.
 
@@ -208,7 +207,7 @@ After creating your Notification Hubs Service instance, navigate back to your Az
 
     9.  Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure services associated with a single project (e.g. such as these labs) under a common resource group).
 
-        > If you wish to read more about Azure Resource Groups, please follow this [link on how to manage a Resource Group](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > If you wish to read more about Azure Resource Groups, please follow this [link on how to manage a Resource Group](/azure/azure-resource-manager/resource-group-portal).
 
     10. Leave **Virtual networks** as **Disabled** if this is an option for you.
 
@@ -362,7 +361,7 @@ First, you need to create a file that will allow your Azure Function to load the
 
     4. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure services associated with a single project (e.g. such as these labs) under a common resource group).
 
-        > If you wish to read more about Azure Resource Groups, please follow this [link on how to manage a Resource Group](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > If you wish to read more about Azure Resource Groups, please follow this [link on how to manage a Resource Group](/azure/azure-resource-manager/resource-group-portal).
 
     5. For **OS**, click Windows, as that is the intended platform.
 
@@ -722,7 +721,7 @@ Set up and test your mixed reality immersive headset.
 
 ## Chapter 8 - Importing the DLLs in Unity
 
-You will be using Azure Storage for Unity (which itself leverages the .Net SDK for Azure). For more information follow this [link about Azure Storage for Unity](https://docs.microsoft.com/sandbox/gamedev/unity/azure-storage-unity).
+You will be using Azure Storage for Unity (which itself leverages the .Net SDK for Azure). For more information follow this [link about Azure Storage for Unity](/sandbox/gamedev/unity/azure-storage-unity).
 
 There is currently a known issue in Unity which requires plugins to be reconfigured after import. These steps (4 - 7 in this section) will no longer be required after the bug has been resolved.
 
@@ -1243,7 +1242,7 @@ The following is a typical set up for developing with the mixed reality, and as 
 
 ### Chapter 13 - Importing the DLLs in the Mixed Reality Unity Project
 
-You will be using Azure Storage for Unity library (which uses the .Net SDK for Azure). Please follow this [link on how to use Azure Storage with Unity](https://docs.microsoft.com/sandbox/gamedev/unity/azure-storage-unity).
+You will be using Azure Storage for Unity library (which uses the .Net SDK for Azure). Please follow this [link on how to use Azure Storage with Unity](/sandbox/gamedev/unity/azure-storage-unity).
 There is currently a known issue in Unity which requires plugins to be reconfigured after import. These steps (4 - 7 in this section) will no longer be required after the bug has been resolved.
 
 To import the SDK into your own project, make sure you have downloaded the latest [.unitypackage](https://aka.ms/azstorage-unitysdk). Then, do the following:

@@ -1,13 +1,12 @@
 ---
 title: Gaze in Unity
-description: Gaze is a primary way for users to target the holograms your app creates in mixed reality.
+description: Learn how to use gaze input as a primary way for users to target the holograms your app creates in mixed reality.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: eye-gaze, head-gaze, unity, hologram, mixed reality, mixed reality headset, windows mixed reality headset, virtual reality headset, MRTK, Mixed Reality Toolkit
 ---
-
 
 # Head-gaze in Unity
 
@@ -47,15 +46,16 @@ While the example above fires a single raycast from the update loop to find the 
 
 Just like with a mouse pointer on a computer, you should implement a [cursor](../../design/cursors.md) that represents the user's head-gaze. Knowing what content a user is targeting increases confidence in what they're about to interact with.
 
-## Head-gaze in the Mixed Reality Toolkit 
-You can access head-gaze from the [Input Manager](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) in MRTK.
+## Head-gaze in the Mixed Reality Toolkit
+
+You can access head-gaze from the [Input Manager](/windows/mixed-reality/mrtk-unity/features/input/overview) in MRTK.
 
 ## Next Development Checkpoint
 
 If you're following the Unity development journey we've laid out, you're in the midst of exploring the MRTK core building blocks. From here, you can continue to the next building block:
 
 > [!div class="nextstepaction"]
-> [Gestures and motion controllers](gestures-and-motion-controllers-in-unity.md)
+> [Motion controllers](motion-controllers-in-unity.md)
 
 Or jump to Mixed Reality platform capabilities and APIs:
 

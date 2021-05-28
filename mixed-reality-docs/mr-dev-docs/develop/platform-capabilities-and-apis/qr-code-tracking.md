@@ -1,22 +1,22 @@
 ---
 title: QR code tracking
-description: Learn how to detect QR codes on HoloLens 2.
+description: Learn how to detect QR codes, add webcam capabilities, and manage coordinate systems in mixed reality apps on HoloLens 2.
 author: dorreneb
 ms.author: dobrown
-ms.date: 05/15/2019
+ms.date: 01/21/2021
 ms.topic: article
 keywords: vr, lbe, location based entertainment, vr arcade, arcade, immersive, qr, qr code, hololens2
 ---
 
 # QR code tracking
 
-HoloLens 2 can detect QR codes in the environment around the headset, establishing a coordinate system at each code's real-world location.
+HoloLens 2 can detect QR codes in the environment around the headset, establishing a coordinate system at each code's real-world location. Once you enable your device's webcam, you'll be able to recognize QR codes in the latest versions of your Unreal or Unity projects. Before going to production, we recommend following the [best practices](#best-practices-for-qr-code-detection) we've laid at the end of the article.
 
 ## Device support
 
 <table>
 <tr>
-<th>Feature</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">HoloLens (1st gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Feature</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens (first gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td> QR code detection</td><td style="text-align: center;">️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">✔️</td>
 </tr>
@@ -26,12 +26,14 @@ HoloLens 2 can detect QR codes in the environment around the headset, establishi
 >QR code tracking with immersive Windows Mixed Reality headsets on desktop PCs is supported on Windows 10 Version 2004 and higher. Use the Microsoft.MixedReality.QRCodeWatcher.IsSupported() API to determine whether the feature is supported on the current device.
 
 ## Getting the QR package
+
 You can download the NuGet package for QR code detection [here](https://nuget.org/Packages/Microsoft.MixedReality.QR).
 
 ## Detecting QR codes
 
 ### Adding the webcam capability
-You will need to add the capability `webcam` to your manifest to detect QR codes. This capability is required as the data within detected codes in the user's environment may contain sensitive information.
+
+You'll need to add the capability `webcam` to your manifest to detect QR codes. This capability is required as the data within detected codes in the user's environment may contain sensitive information.
 
 Permission can be requested by calling `QRCodeWatcher.RequestAccessAsync()`:
 
@@ -51,9 +53,7 @@ While QR code detection requires the `webcam` capability, the detection occurs u
 
 ### Detecting QR codes in Unity
 
-You can use the QR code detection API in Unity without taking a dependency on MRTK. To do so, you must install the NuGet package using [NuGet for Unity](https://github.com/GlitchEnzo/NuGetForUnity).
-
-There is a sample Unity app that displays a holographic square over QR codes, along with the associated data such as GUID, physical size, timestamp, and decoded data. This app can be located at https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes.
+You can use the QR code detection API in Unity without importing MRTK by installing the NuGet package using [NuGet for Unity](https://github.com/GlitchEnzo/NuGetForUnity). If you want to get a feel for how it works, download the [sample Unity app](https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes). The sample app has examples for displaying a holographic square over QR codes and associated data such as GUID, physical size, timestamp, and decoded data.
 
 ### Detecting QR codes in C++
 
@@ -117,13 +117,15 @@ private:
 
 ## Getting the coordinate system for a QR code
 
-Each detected QR code exposes a [spatial coordinate system](../../design/coordinate-systems.md) aligned with the QR code at the top left corner of the fast detection square in the top left as seen below.  When directly using the QR SDK, the Z-axis is pointing into the paper (not shown) - when converted into Unity coordinates, the Z-axis points out of the paper and is left-handed.
-
-A QR code's SpatialCoordinateSystem aligns as shown. This coordinate system can be obtained from the platform by calling <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">SpatialGraphInteropPreview::CreateCoordinateSystemForNode</a> and passing in the code's SpatialGraphNodeId.
+Each detected QR code exposes a [spatial coordinate system](../../design/coordinate-systems.md) aligned with the QR code at the top-left corner of the fast detection square in the top left:  
 
 ![QR code coordinate system](images/Qr-coordinatesystem.png) 
 
-For a QRCode object, the following C++ code shows how to create a rectangle and place it using the QR code's coordinate system:
+When directly using the QR SDK, the Z-axis is pointing into the paper (not shown) - when converted into Unity coordinates, the Z-axis points out of the paper and is left-handed.
+
+A QR code's SpatialCoordinateSystem aligns as shown. You can get the coordinate system from the platform by calling <a href="/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">SpatialGraphInteropPreview::CreateCoordinateSystemForNode</a> and passing in the code's SpatialGraphNodeId.
+
+The C++ code below shows how to create a rectangle and place it using the QR code's coordinate system:
 
 ```cpp
 // Creates a 2D rectangle in the x-y plane, with the specified properties.
@@ -188,34 +190,35 @@ The [QR spec](https://www.qrcode.com/en/howto/code.html) contains more informati
 ### Lighting and backdrop
 QR code detection quality is susceptible to varying illumination and backdrop. 
 
-In a scene with particularly bright lighting, print a code that is black on a gray background. Otherwise, print a black QR code on a white background.
+In a scene with bright lighting, print a code that is black on a gray background. Otherwise, print a black QR code on a white background.
 
-If the backdrop to the code is particularly dark, try a black on gray code if your detection rate is low. If the backdrop is relatively light, a regular code should work fine.
+If the backdrop to the code is dark, try a black on gray code if your detection rate is low. If the backdrop is relatively light, a regular code should work fine.
 
 ### Size of QR codes
-Windows Mixed Reality devices do not work with QR codes with sides smaller than 5 cm each.
+Windows Mixed Reality devices don't work with QR codes with sides smaller than 5 cm each.
 
-For QR codes between 5 and 10 cm length sides, you must be fairly close to detect the code. It will also take longer to detect codes at this size. 
+For QR codes between 5 cm and 10-cm length sides, you must be fairly close to detect the code. It will also take longer to detect codes at this size. 
 
-The exact time to detect codes depends not only on the size of the QR codes, but how far you are away from the code. Moving closer to the code will help offset issues with size.
+The exact time to detect codes depends not only on the size of the QR codes, but how far you're away from the code. Moving closer to the code will help offset issues with size.
 
 ### Distance and angular position from the QR code
-The tracking cameras can only detect a certain level of detail. For really small codes - < 10cm along the sides - you must be fairly close. For a version 1 QR code varying from 10 to 25 cm wide, the minimum detection distance ranges from 0.15 meters to 0.5 meters. 
+The tracking cameras can only detect a certain level of detail. For small codes - < 10 cm along the sides - you must be fairly close. For a version 1 QR code varying from 10 cm to 25 cm wide, the minimum detection distance ranges from 0.15 meters to 0.5 meters. 
 
-The detection distance for size increases linearly. 
+The detection distance for size increases linearly, but also depends on QR version or module size. The higher the version, the smaller the modules, which can only be detected from a closer position. You can also try micro QR codes if you want the distance of detection to be longer. QR detection works with a range of angles += 45 deg to ensure we have proper resolution to detect the code.
 
-QR detection works with a range of angles += 45deg. This is to ensure we have proper resolution to detect the code.
+> [!IMPORTANT]
+> Always make sure you have enough contrast and a proper border.
 
 ### QR codes with logos
-QR codes with logos have not been tested and are currently unsupported.
+QR codes with logos haven't been tested and are currently unsupported.
 
 ### Managing QR code data
-Windows Mixed Reality devices detect QR codes at the system level in the driver. When the device is rebooted, the detected QR codes are gone and will be re-detected as new objects next time.
+Windows Mixed Reality devices detect QR codes at the system level in the driver. When the device is rebooted, the detected QR codes are gone and will be redetected as new objects next time.
 
-It is recommended to configure your app to ignore QR codes older than a specific timestamp. Currently, the API does not support clearing QR code history.
+We recommend configuring your app to ignore QR codes older than a specific timestamp. Currently, the API doesn't support clearing QR code history.
 
 ### QR code placement in a space
-For recommendations on where and how to place QR codes, please refer to [Environment considerations for HoloLens](../../environment-considerations-for-hololens.md).
+For recommendations on where and how to place QR codes, refer to [Environment considerations for HoloLens](/hololens/hololens-environment-considerations).
 
 ## QR API reference
 
@@ -453,4 +456,4 @@ namespace Microsoft.MixedReality.QR
 
 ## See also
 * [Coordinate systems](../../design/coordinate-systems.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>
+* <a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>

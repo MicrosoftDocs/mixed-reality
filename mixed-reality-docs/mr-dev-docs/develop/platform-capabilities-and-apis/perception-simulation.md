@@ -11,14 +11,14 @@ keywords: HoloLens, simulation, testing
 
 # Perception simulation
 
-Do you want to build an automated test for your app? Do you want your tests to go beyond component-level unit testing and really exercise your app end-to-end? Perception Simulation is what you're looking for. The Perception Simulation library sends human and world input data to your app so you can automate your tests. For example, you can simulate the input of a human looking to a specific, repeatable position and then performing a gesture or using a motion controller.
+Do you want to build an automated test for your app? Do you want your tests to go beyond component-level unit testing and really exercise your app end-to-end? Perception Simulation is what you're looking for. The Perception Simulation library sends human and world input data to your app so you can automate your tests. For example, you can simulate the input of a human looking to a specific, repeatable position and then use a gesture or motion controller.
 
-Perception Simulation can send simulated input like this to a physical HoloLens, the HoloLens emulator (1st gen), the HoloLens 2 Emulator, or a PC with Mixed Reality Portal installed. Perception Simulation bypasses the live sensors on a Mixed Reality device and sends simulated input to applications running on the device. Applications receive these input events through the same APIs they always use and can't tell the difference between running with real sensors versus running with Perception Simulation. Perception Simulation is the same technology used by the HoloLens emulators to send simulated input to the HoloLens Virtual Machine.
+Perception Simulation can send simulated input like this to a physical HoloLens, the HoloLens emulator (first gen), the HoloLens 2 Emulator, or a PC with Mixed Reality Portal installed. Perception Simulation bypasses the live sensors on a Mixed Reality device and sends simulated input to applications running on the device. Applications receive these input events through the same APIs they always use and can't tell the difference between running with real sensors versus Perception Simulation. Perception Simulation is the same technology used by the HoloLens emulators to send simulated input to the HoloLens Virtual Machine.
 
-To begin using simulation in your code, start by creating an IPerceptionSimulationManager object. From that object, you can issue commands to control properties of a simulated "human", including head position, hand position, and gestures, and you can enable and manipulate motion controllers.
+To begin using simulation in your code, start by creating an IPerceptionSimulationManager object. From that object, you can issue commands to control properties of a simulated "human", including head position, hand position, and gestures. You can also enable and manipulate motion controllers.
 
 ## Setting Up a Visual Studio Project for Perception Simulation
-1. [Install the HoloLens emulator](../install-the-tools.md) on your development PC. The emulator includes the libraries you will use for Perception Simulation.
+1. [Install the HoloLens emulator](../install-the-tools.md) on your development PC. The emulator includes the libraries you' use for Perception Simulation.
 2. Create a new Visual Studio C# desktop project (a Console Project works great to get started).
 3. Add the following binaries to your project as references (Project->Add->Reference...). You can find them in %ProgramFiles(x86)%\Microsoft XDE\\(version), such as **%ProgramFiles(x86)%\Microsoft XDE\\10.0.18362.0** for the HoloLens 2 Emulator.  (Note: although the binaries are part of the HoloLens 2 Emulator, they also work for Windows Mixed Reality on the desktop.)
     a. PerceptionSimulationManager.Interop.dll - Managed C# wrapper for Perception Simulation.
@@ -26,8 +26,8 @@ To begin using simulation in your code, start by creating an IPerceptionSimulati
     c. SimulationStream.Interop.dll - Shared types for simulation.
 4. Add the implementation binary PerceptionSimulationManager.dll to your project
     a. First add it as a binary to the project (Project->Add->Existing Item...). Save it as a link so that it doesn't copy it to your project source folder. ![Add PerceptionSimulationManager.dll to the project as a link](images/saveaslink.png)
-    b. Then make sure that it get's copied to your output folder on build. This is in the property sheet for the binary . ![Mark PerceptionSimulationManager.dll to copy to the output directory](images/copyalways.png)
-5. Set your active solution platform to x64.  (Use the Configuration Manager to create a Platform entry for x64 if one does not already exist.)
+    b. Then make sure that it gets copied to your output folder on build. This is in the property sheet for the binary. ![Mark PerceptionSimulationManager.dll to copy to the output directory](images/copyalways.png)
+5. Set your active solution platform to x64.  (Use the Configuration Manager to create a Platform entry for x64 if one doesn't already exist.)
 
 ## Creating an IPerceptionSimulation Manager Object
 
@@ -35,13 +35,13 @@ To control simulation, you'll issue updates to objects retrieved from an IPercep
 
 ![Open Device Portal icon](images/emulator-deviceportal.png) **Open Device Portal**: Open the Windows Device Portal for the HoloLens OS in the emulator.  For Windows Mixed Reality, this can be retrieved in the Settings app under "Update & Security", then "For developers" in the "Connect using:" section under "Enable Device Portal."  Be sure to note both the IP address and port.
 
-First, you'll call RestSimulationStreamSink.Create to get a RestSimulationStreamSink object. This is the target device or emulator that you will control over an http connection. Your commands will be passed to and handled by the [Windows Device Portal](using-the-windows-device-portal.md) running on the device or emulator. The four parameters you'll need to create an object are:
+First, you'll call RestSimulationStreamSink.Create to get a RestSimulationStreamSink object. This is the target device or emulator that you'll control over an http connection. Your commands will be passed to and handled by the [Windows Device Portal](using-the-windows-device-portal.md) running on the device or emulator. The four parameters you'll need to create an object are:
 * Uri uri - IP address of the target device (e.g., "https://123.123.123.123" or "https://123.123.123.123:50080")
-* System.Net.NetworkCredential credentials - Username/password for connecting to the [Windows Device Portal](using-the-windows-device-portal.md) on the target device or emulator. If you are connecting to the emulator via its local address (e.g., 168.*.*.*) on the same PC, any credentials will be accepted.
-* bool normal - True for normal priority, false for low priority. You generally want to set this to *true* for test scenarios, which allows your test to take control.  The emulator and Windows Mixed Reality simulation use low priority connections.  If your test also uses a low priority connection, the most recently established connection will be in control.
+* System.Net.NetworkCredential credentials - Username/password for connecting to the [Windows Device Portal](using-the-windows-device-portal.md) on the target device or emulator. If you're connecting to the emulator via its local address (e.g., 168.*.*.*) on the same PC, any credentials will be accepted.
+* bool normal - True for normal priority, false for low priority. You generally want to set this to *true* for test scenarios, which allows your test to take control.  The emulator and Windows Mixed Reality simulation use low-priority connections.  If your test also uses a low-priority connection, the most recently established connection will be in control.
 * System.Threading.CancellationToken token - Token to cancel the async operation.
 
-Second you will create the IPerceptionSimulationManager. This is the object you use to control simulation. Note that this must also be done in an async method.
+Second, you'll create the IPerceptionSimulationManager. This is the object you use to control simulation. This must also be done in an async method.
 
 ## Control the simulated Human
 
@@ -240,11 +240,11 @@ Supported instances are:
 * 1 = the left 6-DOF controller
 * 2 = the right 6-DOF controller
 
-The exit code of the process will indicate success (a zero return value) or failure (a non-zero return value).  When using the 'q' action to query whether or not a controller is installed, the return value will be zero (0) if the controller is not already installed or one (1) if the controller is installed.
+The exit code of the process will indicate success (a zero return value) or failure (a non-zero return value).  When using the 'q' action to query whether a controller is installed, the return value will be zero (0) if the controller isn't already installed or one (1) if the controller is installed.
 
 When removing a controller on the Windows 10 October 2018 Update or earlier, set its status to Off via the API first, then call the PerceptionSimulationDevice tool.
 
-Note that this tool must be run as Administrator.
+This tool must be run as Administrator.
 
 
 
@@ -452,7 +452,7 @@ public enum SimulatedHandJointTrackingAccuracy
 
 **Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy.Unavailable**
 
-The joint is not tracked.
+The joint isn't tracked.
 
 **Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy.Approximate**
 
@@ -530,7 +530,7 @@ The recording has reached the end.
 
 ### Microsoft.PerceptionSimulation.Vector3
 
-Describes a 3 components vector, which might describe a point or a vector in 3D space.
+Describes a three components vector, which might describe a point or a vector in 3D space.
 
 ```
 public struct Vector3
@@ -565,7 +565,7 @@ Parameters
 
 ### Microsoft.PerceptionSimulation.Rotation3
 
-Describes a 3 components rotation.
+Describes a three components rotation.
 
 ```
 public struct Rotation3
@@ -693,11 +693,11 @@ The Ipd value reported by the system for purposes of stereo rendering.
 
 **Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.ApplyEyeTransforms**
 
-Whether or not the values provided for left and right eye transforms should be considered valid and applied to the running system.
+Whether the values provided for left and right eye transforms should be considered valid and applied to the running system.
 
 **Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.ApplyIpd**
 
-Whether or not the value provided for Ipd should be considered valid and applied to the running system.
+Whether the value provided for Ipd should be considered valid and applied to the running system.
 
 
 ### Microsoft.PerceptionSimulation.IPerceptionSimulationManager
@@ -727,7 +727,7 @@ Resets the simulation to its default state.
 
 ### Microsoft.PerceptionSimulation.ISimulatedDevice
 
-Interface describing the device which interprets the simulated world and the simulated human
+Interface describing the device, which interprets the simulated world and the simulated human
 
 ```
 public interface ISimulatedDevice
@@ -826,7 +826,7 @@ Retrieve and set the frustum properties used to determine if hands are visible t
 
 ### Microsoft.PerceptionSimulation.ISimulatedHuman
 
-Top level interface for controlling the simulated human.
+Top-level interface for controlling the simulated human.
 
 ```
 public interface ISimulatedHuman 
@@ -836,7 +836,7 @@ public interface ISimulatedHuman
     float Height { get; set; }
     ISimulatedHand LeftHand { get; }
     ISimulatedHand RightHand { get; }
-    ISimulatedHead Head { get; }
+    ISimulatedHead Head { get; }s
     void Move(Vector3 translation);
     void Rotate(float radians);
 }
@@ -933,7 +933,7 @@ Retrieve and set whether the hand is currently activated.
 
 **Microsoft.PerceptionSimulation.ISimulatedHand.Visible**
 
-Retrieve whether the hand is currently visible to the SimulatedDevice (ie, whether it's in a position to be detected by the HandTracker).
+Retrieve whether the hand is currently visible to the SimulatedDevice (that is, whether it's in a position to be detected by the HandTracker).
 
 **Microsoft.PerceptionSimulation.ISimulatedHand.EnsureVisible**
 
@@ -1068,7 +1068,7 @@ Retrieve the position of the node with relation to the world, in meters.
 
 **Microsoft.PerceptionSimulation.ISimulatedSixDofController.Status**
 
-Retrieve or set the current state of the controller.  The controller status must be set to a value other than Off before any calls to move, rotate or press buttons will succeed.
+Retrieve or set the current state of the controller.  The controller status must be set to a value other than Off before any calls to move, rotate, or press buttons will succeed.
 
 **Microsoft.PerceptionSimulation.ISimulatedSixDofController.Position**
 
@@ -1218,7 +1218,7 @@ Pauses the playback at its current location. If the recording is stopped, the ca
 
 **Microsoft.PerceptionSimulation.ISimulationRecording.Seek(System.UInt64)**
 
-Seeks the recording to the specified time (in 100 nanoseconds intervals from the beginning) and pauses at that location. If the time is beyond the end of the recording, it is paused at the last frame.
+Seeks the recording to the specified time (in 100-nanoseconds intervals from the beginning) and pauses at that location. If the time is beyond the end of the recording, it's paused at the last frame.
 
 Parameters
 * ticks - The time to which to seek.
@@ -1271,7 +1271,7 @@ The created Manager.
 
 **Microsoft.PerceptionSimulation.PerceptionSimulationManager.CreatePerceptionSimulationRecording(System.String)**
 
-Create a sink which stores all received packets in a file at the specified path.
+Create a sink, which stores all received packets in a file at the specified path.
 
 Parameters
 * path - The path of the file to create.
@@ -1299,7 +1299,7 @@ Load a recording from the specified file.
 Parameters
 * path - The path of the file to load.
 * factory - A factory used by the recording for creating an ISimulationStreamSink when required.
-* callback - A callback which receives updates regrading the recording's status.
+* callback - A callback, which receives updates regrading the recording's status.
 
 Return value
 
@@ -1331,35 +1331,35 @@ A sentinel value used to indicate no stream data types.
 
 **Microsoft.PerceptionSimulation.StreamDataTypes.Head**
 
-Stream of data regarding the position and orientation of the head.
+Stream of data for the position and orientation of the head.
 
 **Microsoft.PerceptionSimulation.StreamDataTypes.Hands**
 
-Stream of data regarding the position and gestures of hands.
+Stream of data for the position and gestures of hands.
 
 **Microsoft.PerceptionSimulation.StreamDataTypes.SpatialMapping**
 
-Stream of data regarding spatial mapping of the environment.
+Stream of data for spatial mapping of the environment.
 
 **Microsoft.PerceptionSimulation.StreamDataTypes.Calibration**
 
-Stream of data regarding calibration of the device. Calibration packets are only accepted by a system in Remote Mode.
+Stream of data for calibration of the device. Calibration packets are only accepted by a system in Remote Mode.
 
 **Microsoft.PerceptionSimulation.StreamDataTypes.Environment**
 
-Stream of data regarding the environment of the device.
+Stream of data for the environment of the device.
 
 **Microsoft.PerceptionSimulation.StreamDataTypes.SixDofControllers**
 
-Stream of data regarding motion controllers.
+Stream of data for motion controllers.
 
 **Microsoft.PerceptionSimulation.StreamDataTypes.Eyes**
 
-Stream of data regarding the eyes of the simulated human.
+Stream of data with the eyes of the simulated human.
 
 **Microsoft.PerceptionSimulation.StreamDataTypes.DisplayConfiguration**
 
-Stream of data regarding the display configuration of the device.
+Stream of data with the display configuration of the device.
 
 **Microsoft.PerceptionSimulation.StreamDataTypes.All**
 

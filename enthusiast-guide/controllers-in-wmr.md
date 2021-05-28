@@ -1,6 +1,6 @@
 ---
 title: Controllers in Windows Mixed Reality
-description: Learn how to setup and use controllers in Windows Mixed Reality.
+description: Learn how to setup, pair, use, and troubleshoot common issues with controllers in Windows Mixed Reality.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -12,9 +12,9 @@ appliesto:
 
 # Motion controllers in Windows Mixed Reality
 
-Motion controllers are hardware accessories that allow users to take action in mixed reality. An advantage of motion controllers over gestures is that the controllers have a precise position in space, allowing for fine-grained interaction with digital objects. For Windows Mixed Reality immersive headsets, motion controllers are the primary way that users will take action in their world.
+Motion controllers are hardware accessories that allow users to interact in mixed reality. An advantage of motion controllers over gestures is that the controllers have a precise position in space, allowing for fine-grained interaction with digital objects. For Windows Mixed Reality immersive headsets, motion controllers are the primary way that users will take action in their world.
 
-Windows Mixed Reality motion controllers offer precise and responsive tracking of movement in your field of view using the sensors in the immersive headset, meaning there is no need to install hardware on the walls in your space. These motion controllers will offer the same ease of setup and portability as Windows Mixed Reality immersive headsets.
+Windows Mixed Reality motion controllers offer precise and responsive movement tracking in your field of view through the immersive headset sensors. There's no need to install hardware on the walls in your space. These motion controllers will offer the same ease of setup and portability as Windows Mixed Reality immersive headsets.
 
 You can also use an Xbox controller, a mouse, and keyboard or get around by [using just your voice](using-speech-in-wmr.md).
 
@@ -23,15 +23,15 @@ You can also use an Xbox controller, a mouse, and keyboard or get around by [usi
 Most headsets come pre-paired directly to the headset, but some early headsets require the motion controllers to be paired to your PC with Bluetooth 4.0. When you connect your immersive headset for the first time, you'll be walked through turning on your motion controllers during setup. But if you need to re-pair them later on, here’s how:
 
 1. Launch **Mixed Reality Portal** with your headset connected.  
-2. In the lower-left corner select **… > Set up controllers**.
-3. Insert 2 AA batteries into each controller and put your controller in pairing mode (see instructions in [pair motion controllers section](controllers-in-wmr.md#pair-motion-controllers)
+2. In the lower-left corner, select **… > Set up controllers**.
+3. Insert two AA batteries into each controller and put your controller in pairing mode (see instructions in [pair motion controllers section](controllers-in-wmr.md#pair-motion-controllers)
 4. Follow the instructions provided on-screen.
 
 > [!NOTE]
 > * For controllers that pair directly to your PC, you’ll need to put them into pairing mode by turning them on and then pressing the pairing button inside the battery compartment until the lights start flashing.
 > * Motion controllers only support being paired to one PC at a time. If you need to use them with a different headset, you’ll need to go through the pairing process. See [Set up Windows Mixed Reality](set-up-windows-mixed-reality.md)
 
-[Get help connecting](wmr-setup-faq.md#my-motion-controllers-arent-working)
+[Get help connecting](wmr-setup-faq.yml#my-motion-controllers-aren-t-working)
 
 > [!IMPORTANT]
 > **Got an Xbox controller?**
@@ -44,7 +44,7 @@ Most headsets come pre-paired directly to the headset, but some early headsets r
 
 ## Pair motion controllers
 
-If you are using a headset that includes an integrated Bluetooth controller, such as the Samsung Odyssey+ or HP Reverb, your controllers should already be paired. But you can still pair your controllers using set up app (it should be already installed during the HMD set up. You can also get it from Microsoft store).
+If you're using a headset that includes an integrated Bluetooth controller, such as the Samsung Odyssey+ or HP Reverb, your controllers should already be paired. But you can still pair your controllers using setup app (it should be already installed during the HMD set up. You can also get it from Microsoft store).
 
 ### Pair motion controllers to HMD
 
@@ -54,7 +54,7 @@ Remove the battery cover from your controllers and find the small pairing button
     ![Motion controller pairing](images/connect_controller.png)
 
 Launch **Mixed Reality Portal** with your headset connected.  
-In the lower-left corner select **… > Set up controllers**.
+In the lower-left corner, select **… > Set up controllers**.
 Follow the instructions on the screen.
 
 ### Pair motion controllers to PC
@@ -72,10 +72,10 @@ Once pairing is complete, LEDs will be solid on and bright.
 
 * Verify that you have only one Bluetooth radio active on your PC. If you have more than one Bluetooth radio, you’ll need to disable the other radios in Device Manager.
 * Place your Bluetooth dongle in a port that has a clear line of sight to your controllers, and far from plugged in USB 3.0 devices. USB 3.0 is known to have RF interference with Bluetooth (read [this paper](https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/usb3-frequency-interference-paper.pdf) from Intel for more details). USB 2.0 ports may work better for your Bluetooth dongle.
-* Make sure your Bluetooth dongle is not plugged into a USB port adjacent to your HMD's USB cable. The headset cable has been known to cause interference with Bluetooth dongles as well. Plug the dongle into the front USB port on your PC for best results.
-* For notebooks, ensure WiFi is connected to 5GHz band for the best experience (select the wireless network icon bottom right tray, and select properties for the network you are using). Notebooks that are designed to share a 2.4GHz antenna for Bluetooth and WiFi connectivity are most likely to see data congestion in the form of slow network speeds or poor tracking performance for motion controllers.
-* Your motion controllers will receive new software updates from Microsoft on a regular basis. The controllers will show an alternating pattern of flashing lights when they receive these new software updates. This is normal. Wait until the software upgrade is complete before using the controllers (the controllers will vibrate and a constant light will replace the alternating flash pattern when it is done).
-* You may be told to "Put on the headset and use the thumbstick to teleport" before the controllers finish the update process. The controllers will not be visible or usable until the update is completed. Most updates occur within two minutes, but updates can take as long as 10 minutes or so. Wait for the update to complete before proceeding to the next step.
+* Make sure your Bluetooth dongle isn't plugged into a USB port next to your HMD's USB cable. The headset cable has been known to cause interference with Bluetooth dongles as well. Plug the dongle into the front USB port on your PC for best results.
+* For notebooks, ensure WiFi is connected to 5-GHz band for the best experience. Select the wireless network icon bottom-right tray and select properties for the network you're using. Notebooks that are designed to share a 2.4-GHz antenna for Bluetooth and WiFi connectivity will see data congestion from slow network speeds or poor motion controller tracking performance.
+* Your motion controllers will receive new software updates from Microsoft on a regular basis. The controllers will show an alternating pattern of flashing lights when they receive these new software updates. This is normal. Wait until the software upgrade is complete before using the controllers. The controllers will vibrate and a constant light will replace the alternating flash pattern when it's done.
+* You may be told to "Put on the headset and use the thumbstick to teleport" before the controllers finish the update process. The controllers won't be visible or usable until the update is completed. Most updates occur within two minutes, but updates can take as long as 10 minutes or so. Wait for the update to complete before proceeding to the next step.
 
 ## Using controllers
 
@@ -88,10 +88,10 @@ Here’s how to get around in mixed reality with motion controllers, an Xbox gam
 
 |  To do this  |  Motion controllers  | Gamepad | Mouse + keyboard |
 | --- | --- | --- | --- |
-| Teleport | Press the thumbstick forward, then point the controller where you want to go. Release the thumbstick. | Press the left thumbstick forward, then look where you want to go. Release the thumbstick. | Click and hold the right button, then point the mouse where you want to go. Release the button. |
-| Select | Point the controller, then pull the trigger or click the touchpad. | Gaze at the target, then press A. | Point the mouse, then left-click. |
+| Teleport | Press the thumbstick forward, then point the controller where you want to go. Release the thumbstick. | Press the left thumbstick forward, then look where you want to go. Release the thumbstick. | Select and hold the right button, then point the mouse where you want to go. Release the button. |
+| Select | Point the controller, then pull the trigger or use the touchpad. | Gaze at the target, then press A. | Point the mouse, then left-click. |
 | Open the Start menu | Press the **Windows** button. | Press the **Xbox** button. | Press the **Windows logo key**. |
-| Leave an immersive app | Press the **Windows** button. Then select **Mixed reality home** on the quick actions menu. | Press the **Xbox** button. Then select **Mixed reality home** button on the quick actions menu. | Press the **Windows logo key**.Then select the **Mixed reality home** button on the Quick Actions menu that appears. |
+| Leave an immersive app | Press the **Windows** button. Then select **Mixed reality home** on the quick actions menu. | Press the **Xbox** button. Then select **Mixed reality home** button on the quick actions menu. | Press the **Windows logo key. Then select the **Mixed reality home** button on the Quick Actions menu that appears. |
 | Rotate | Move the thumbstick left or right. | Move the right stick left or right. | Not available. |
 | Back up | Move the thumbstick backward. | Move the left stick backward. | Not available. |
 | Walk | Push the thumbstick straight down, then press it in the direction you want to walk. | Push the left stick straight down, then press it in the direction you want to walk. | Not available. |
@@ -122,7 +122,7 @@ Your controller communicates to you what it's doing by vibrating and blinking it
 ## Updating motion controllers firmware
 
 * If an immersive headset is connected to your PC, and new controller firmware is available, the firmware will be pushed to your motion controllers automatically the next time they're turned on.
-* Controller firmware updates are indicated by a pattern of illuminating LED quadrants in a circular motion, and take 1-2 minutes. Firmware updates can occasionally take longer, up to 10 minutes, which may indicate poor Bluetooth connectivity or radio interference.
+* Controller firmware updates are shown with a pattern of illuminating LED quadrants in a circular motion, and take 1-2 minutes. Firmware updates can occasionally take longer, up to 10 minutes, which may indicate poor Bluetooth connectivity or radio interference.
 * In case firmware update is interrupted (controller powered off or battery runs out) it will be tried again on next power on.
 * After the firmware update completes, the controllers will reboot and reconnect.
 * Both controllers should be connected now. Navigate to Mixed Reality Portal to check the status of your controllers.
@@ -134,7 +134,7 @@ Your controller communicates to you what it's doing by vibrating and blinking it
 
 ### How can I check battery level?
 
-*A: Battery level is on reverse side of the virtual model, there is no physical battery level indicator. After powering on controller wait few seconds to let the reading stabilize.*
+*A: Battery level is on reverse side of the virtual model, there's no physical battery level indicator. After powering on the controller, wait few seconds to let the reading stabilize.*
 
 ### Can you use these controllers without a headset? Just for the joystick/trigger/etc input?
 
@@ -146,8 +146,8 @@ Give us feedback in Feedback Hub, using the "Mixed Reality -> Input" category.
 
 ## See also
 
-- [HP Controllers in Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
-- [HP Controllers in Unreal](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+- [HP Controllers in Unity](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+- [HP Controllers in Unreal](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 - [Ask the community](https://answers.microsoft.com)
 - [Contact us for support](https://support.microsoft.com/contactus/)
 - [Troubleshooting](troubleshooting-windows-mixed-reality.md)

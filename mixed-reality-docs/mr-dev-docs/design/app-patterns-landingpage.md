@@ -1,6 +1,6 @@
 ---
 title: Mixed reality UX elements
-description: This document contains a set of topics that explain how to design for mixed reality devices.
+description: Learn how to design your apps for mixed reality devices with foundational elements, common controls, and behaviors.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
@@ -9,13 +9,15 @@ keywords: UX design, Mixed Reality UX, UX, app patterns, controls, style, HoloLe
 ---
 
 # UX elements overview
+
 ## Foundational elements
+
 Learn about the foundational elements that you need to design a great mixed reality experience.
 
 :::row:::
     :::column:::
        [![Color, light and materials](images/640px-fragments.png)](color-light-and-materials.md)
-        **[Color, light and materials](color-light-and-materials.md)**
+        **[Color, light, and materials](color-light-and-materials.md)**
     :::column-end:::
     :::column:::
        [![Scale](images/volvo-cars-microsoft-hololens-experience01-640px.png)](scale.md)
@@ -37,6 +39,7 @@ Learn about the foundational elements that you need to design a great mixed real
 <br>
 
 ## Common controls and behaviors
+
 Learn about frequently used common spatial interactions and UI building blocks for mixed reality experiences.
 
 :::row:::

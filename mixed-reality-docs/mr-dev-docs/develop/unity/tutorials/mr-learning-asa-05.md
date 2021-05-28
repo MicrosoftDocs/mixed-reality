@@ -1,9 +1,9 @@
 ---
-title: Azure Spatial Anchors tutorials - 5. Azure Spatial Anchors for Android and iOS
+title: Azure Spatial Anchors for Android and iOS
 description: Complete this course to learn how to deploy a Unity project with Mixed Reality Toolkit (MRTK) and Azure Spatial Anchors to Android and iOS.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, android, ios, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, AR Foundation, ARCore, ARKit
 ms.localizationpriority: high
@@ -23,7 +23,7 @@ In this tutorial, you will learn how to build your project to Android and iOS de
 In this section, you will upgrade and install the following inbuilt packages:
 
 * AR Foundation 3.1.3
-* XR Legacy Input Helpers 2.1.4
+* XR Legacy Input Helpers 2.1.6
 * ARCore XR Plugin 3.1.3 for Android support
 * ARKit XR plugin 3.1.3 for iOS support
 
@@ -68,6 +68,10 @@ With the **MixedRealityToolkit** object still selected in the Hierarchy window, 
 > [!NOTE]
 > When you add the AR Reference Point Manager (Script) component, the AR Session Origin (Script) component is automatically added because it is required by the AR Reference Point Manager (Script) component.
 
+
+
+Update the MRTK UnityAR scripting defines by invoking the menu item: **Mixed Reality Toolkit** > **Utilities** > **UnityAR** > Update Scripting Defines
+
 ## Building your application to your Android device
 
 In this section, you will learn how to configure your project to build and deploy it to an Android device.
@@ -88,6 +92,10 @@ In the Unity menu, select **Mixed Reality Toolkit** > **Utilities** > **Configur
 In the Unity menu, select **Edit** > **Project Settings...** to open the Player Settings window, then locate the **Player** >  **Other Settings** section, select **Vulkan** and remove it by clicking the **"-"** symbol:
 
 ![Unity Other Settings with Vulcan selected](images/mr-learning-asa/asa-05-section3-step1-3.png)
+
+In the Unity menu, select **Edit** > **Project Settings...** >**Player**> **XR Setting**, make sure you are in **Android** platform and check the **Virtual Reality Supported** checkbox then click the + icon, and select None:
+
+![Unity MRTK Project Configurator window Android](images/mr-learning-asa/asa-05-section3-step1-2-1.png)
 
 Close the Player Settings window and open the Build Settings window again.
 
@@ -142,7 +150,7 @@ Choose a suitable location to store your Xcode project, for example, _D:\MixedRe
 
 ![Unity Build Settings window with Save prompt window iOS](images/mr-learning-asa/asa-05-section4-step1-5.png)
 
-When the build process is complete, follow the [Export the Xcode project](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project) instructions to learn to deploy your Xcode project to your iOS device.
+When the build process is complete, follow the [Export the Xcode project](/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project) instructions to learn to deploy your Xcode project to your iOS device.
 
 ## Congratulations
 

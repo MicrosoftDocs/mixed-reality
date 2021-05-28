@@ -1,6 +1,6 @@
 ---
 title: Learn Mixed Reality
-description: Describes how to run the Learn Mixed Reality app, which teaches you how to use and navigate Windows Mixed Reality.
+description: Describes how to run the Learn Mixed Reality app and how to navigate Windows Mixed Reality.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -10,18 +10,17 @@ appliesto:
     - Windows 10
 ---
 
-
 # Learn Mixed Reality
 
 ## Running the learning experience for the first time
 
-After finishing setup, the Mixed Reality Portal app should launch an immersive experience in your HMD called **Learn Mixed Reality** that will teach you how to use Windows Mixed Reality. Gaze at the gem in the loading screen to get started. You should hear Cortana's voice in your headset giving you instructions on what to do next.
+After finishing setup, the Mixed Reality Portal app should launch an immersive experience in your HMD called **Learn Mixed Reality**. This immersive experience will teach you how to use Windows Mixed Reality. Gaze at the gem in the loading screen to get started. You should hear Cortana's voice in your headset giving you instructions on what to do next.
 
 ![Learn Mixed Reality](images/file-learnmixedrealitystart.png)
 
-## Re-run the learning experience
+## Rerun the learning experience
 
-Learn Mixed Reality is an app. The app can be launched from the Start menu inside of [your mixed reality home](your-mixed-reality-home.md) at any time. Using your motion controllers or keyboard:
+Learn Mixed Reality is an app. The app can be launched from the Start menu in [your mixed reality home](your-mixed-reality-home.md) at any time. Using your motion controllers or keyboard:
 
 ### Use your motion controllers
 
@@ -50,5 +49,5 @@ Just press the **Play** icon at the bottom of the Mixed Reality Portal app.
 ## See also
 
 * [Troubleshooting installation](installation_errors.md)
-* [Troubleshooting setup](wmr-setup-faq.md)
+* [Troubleshooting setup](wmr-setup-faq.yml)
 * [Your mixed reality home](your-mixed-reality-home.md)

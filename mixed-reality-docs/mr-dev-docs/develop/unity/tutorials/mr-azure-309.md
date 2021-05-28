@@ -1,5 +1,5 @@
 ---
-title: MR and Azure 309 - Application insights
+title: HoloLens (1st gen) and Azure 309 - Application insights
 description: Complete this course to learn how to collect analytics regarding user behavior within a mixed reality application, using the Azure Application Insights Service.
 author: drneil
 ms.author: jemccull
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, application insights, hololens, immersive, vr, Windows 10, Visual Studio
 --- 
 
-# MR and Azure 309: Application insights
+# HoloLens (1st gen) and Azure 309: Application insights
 
 <br>
 
@@ -35,7 +35,7 @@ This course will teach you how to get the results from the Application Insights 
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td> MR and Azure 309: Application insights</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -56,7 +56,7 @@ We recommend the following hardware and software for this course:
 - [The latest Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017.4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- A [Windows Mixed Reality immersive (VR) headset](../../../discover/immersive-headset-hardware-details.md) or [Microsoft HoloLens](../../../hololens-hardware-details.md) with Developer mode enabled
+- A [Windows Mixed Reality immersive (VR) headset](../../../discover/immersive-headset-hardware-details.md) or [Microsoft HoloLens](/hololens/hololens1-hardware) with Developer mode enabled
 - A set of headphones with a built-in microphone (if the headset does not have a built-in mic and speakers)
 - Internet access for Azure setup and Application Insights data retrieval
 
@@ -97,7 +97,7 @@ To use *Application Insights*, you will need to create and configure an *Applica
 
     4.  Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure Services associated with a single project (e.g. such as these courses) under a common resource group).
 
-        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](/azure/azure-resource-manager/resource-group-portal).
 
     5.  Select a **Location**.
 
@@ -1276,4 +1276,3 @@ Try spawning, rather than manually creating, the ObjectInScene objects and set t
 **Exercise 2**
 
 Sort your Application Insights results by time, so that you get the most relevant data, and implement that time sensitive data in your application.
-

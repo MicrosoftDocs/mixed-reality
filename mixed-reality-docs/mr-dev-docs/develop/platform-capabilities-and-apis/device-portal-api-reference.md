@@ -1,13 +1,12 @@
 ---
 title: Device portal API reference
-description: API reference for the Windows Device Portal on HoloLens
+description: Stay up to date on the Windows Device Portal API for HoloLens development.
 author: hamalawi
 ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
 keywords: HoloLens, Windows Device Portal, API, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-
 
 # Device portal API reference
 
@@ -387,6 +386,9 @@ Stops the current mixed reality recording
 
 ## Mixed Reality Streaming
 
+> [!CAUTION]
+> Because of loopback isolation, you can't connect to Mixed Reality Streaming from inside an app on a device.
+
 HoloLens supports live preview of mixed reality via chunked download of a fragmented mp4.
 
 Mixed reality streams share the same set of parameters to control what is captured:
@@ -693,4 +695,4 @@ Return data
 
 ## See also
 * [Using the Windows Device Portal](using-the-windows-device-portal.md)
-* [Device Portal core API reference (UWP)](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-api-core)
+* [Device Portal core API reference (UWP)](/windows/uwp/debug-test-perf/device-portal-api-core)

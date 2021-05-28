@@ -1,5 +1,5 @@
 ---
-title: MR and Azure 302b - Custom vision
+title: HoloLens (1st gen) and Azure 302b - Custom vision
 description: Complete this course to learn how to train a machine learning model, and then use the trained model to recognize similar objects within a mixed reality application.
 author: drneil
 ms.author: jemccull
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: azure, mixed reality, academy, unity, tutorial, api, custom vision, hololens, immersive, vr, Windows 10, Visual Studio
 ---
 
-# MR and Azure 302b: Custom vision
+# HoloLens (1st gen) and Azure 302b: Custom vision
 
 <br>
 
@@ -24,7 +24,7 @@ This service will allow you to train a machine learning model using object image
 
 ![course outcome](images/AzureLabs-Lab302b-00.png)
 
-Azure Custom Vision is a Microsoft Cognitive Service which allows developers to build custom image classifiers. These classifiers can then be used with new images to recognize, or classify, objects within that new image. The Service provides a simple, easy to use, online portal to streamline the process. For more information, visit the [Azure Custom Vision Service page](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home).
+Azure Custom Vision is a Microsoft Cognitive Service which allows developers to build custom image classifiers. These classifiers can then be used with new images to recognize, or classify, objects within that new image. The Service provides a simple, easy to use, online portal to streamline the process. For more information, visit the [Azure Custom Vision Service page](/azure/cognitive-services/custom-vision-service/home).
 
 Upon completion of this course, you will have a mixed reality application which will be able to work in two modes:
 
@@ -38,7 +38,7 @@ This course will teach you how to get the results from the Custom Vision Service
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
 </tr><tr>
 <td> MR and Azure 302b: Custom vision</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -59,7 +59,7 @@ We recommend the following hardware and software for this course:
 - [The latest Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017.4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- A [Windows Mixed Reality immersive (VR) headset](../../../discover/immersive-headset-hardware-details.md) or [Microsoft HoloLens](../../../hololens-hardware-details.md) with Developer mode enabled
+- A [Windows Mixed Reality immersive (VR) headset](../../../discover/immersive-headset-hardware-details.md) or [Microsoft HoloLens](/hololens/hololens1-hardware) with Developer mode enabled
 - A camera connected to your PC (for immersive headset development)
 - Internet access for Azure setup and Custom Vision API retrieval
 - A series of at least five (5) images (ten (10) recommended) for each object that you would like the Custom Vision Service to recognize. If you wish, you can use [the images already provided with this course (a computer mouse and a keyboard) ](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20302b%20-%20Custom%20vision/ComputerVision_Images.zip).
@@ -67,12 +67,12 @@ We recommend the following hardware and software for this course:
 ## Before you start
 
 1.	To avoid encountering issues building this project, it is strongly suggested that you create the project mentioned in this tutorial in a root or near-root folder (long folder paths can cause issues at build-time).
-2.	Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](https://docs.microsoft.com/hololens/hololens-setup). 
+2.	Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](/hololens/hololens-setup). 
 3.	It is a good idea to perform Calibration and Sensor Tuning when beginning developing a new HoloLens app (sometimes it can help to perform those tasks for each user). 
 
-For help on Calibration, please follow this [link to the HoloLens Calibration article](../../../calibration.md#hololens-2).
+For help on Calibration, please follow this [link to the HoloLens Calibration article](/hololens/hololens-calibration#hololens-2).
 
-For help on Sensor Tuning, please follow this [link to the HoloLens Sensor Tuning article](../../../sensor-tuning.md).
+For help on Sensor Tuning, please follow this [link to the HoloLens Sensor Tuning article](/hololens/hololens-updates).
 
 ## Chapter 1 - The Custom Vision Service Portal
 
@@ -113,7 +113,7 @@ To use the *Custom Vision Service* in Azure, you will need to configure an insta
 
         ![Set the domains](images/AzureLabs-Lab302b-05.png)
 
-        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > If you wish to read more about Azure Resource Groups, please [visit the resource group article](/azure/azure-resource-manager/resource-group-portal).
 
 7.  Once you are finished, click on **Create project**, you will be redirected to the Custom Vision Service, project page.
 

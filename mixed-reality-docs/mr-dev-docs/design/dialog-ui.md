@@ -1,5 +1,6 @@
 ---
 title: Dialog
+description: Learn about dialog overlays in MRTK and how to use them in Mixed Reality applications.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
@@ -9,9 +10,9 @@ keywords: Mixed Reality, HoloLens, UI Controls, interaction, ui, ux, UX Design, 
 
 # Dialog
 
-![Dialog](images/MRTK_UX_Dialog.jpg)
+![Screenshot of a dialog overlay with yes and no buttons shown on HoloLens](images/MRTK_UX_Dialog.jpg)
 
-Dialog controls are UI overlays that provide contextual app information. They often request some kind of action from the user. Use dialogs to notify users of important information or to request confirmation or additional info before an action can be completed.
+Dialog controls are UI overlays that provide contextual app information, often requesting a user action. Use dialogs to give users important information and request confirmation or extra information before an action can be completed.
 
 <br>
 
@@ -24,10 +25,10 @@ MRTK provides dialog control in three sizes with one or two button options. You 
 - DialogMedium_192x128.prefab: 192x128mm
 - DialogLarge_192x192.prefab: 192x192mm
 
-![Dialog](images/MRTK_UX_Dialog_Types.jpg)
+![Screenshot of different size dialog overlays running on HoloLens](images/MRTK_UX_Dialog_Types.jpg)
 
 
-* Please see [MRTK - Dialog](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/Dialog/README_Dialog.html) for more details.
+* For more information, see [MRTK - Dialog](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/dialog).
 
 <br>
 

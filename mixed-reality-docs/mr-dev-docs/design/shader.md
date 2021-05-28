@@ -1,6 +1,6 @@
 ---
 title: Shader
-description: The MRTK Standard shader provides various types of visual effects that can be used with holograms.
+description: Learn how the Mixed Reality Toolkit Standard shader provides various types of visual effects that can be used with holograms in your mixed reality apps.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
@@ -12,10 +12,10 @@ keywords: Mixed Reality, Controls, interaction, ui, ux, shader, mixed reality he
 
 ![Shader](images/UX_Hero_StandardShader.jpg)
 
-Since holographic objects are mixed with physical ones in the real environment, it's important to provide visual cues to the user. The MRTK Standard shader provides various types of visual effects that can be used with holograms. The MRTK Standard shading system utilizes a single, flexible shader that can achieve visuals similar to Unity's Standard Shader, implements [Fluent Design System principles](https://www.microsoft.com/design/fluent/#/), and remains performant on mixed reality devices.
+Since holographic objects are mixed with physical ones in the real environment, it's important to provide visual cues to the user. The Mixed Reality Toolkit Standard shader provides various types of visual effects for use with holograms. The shading system uses a single, flexible shader to achieve visuals similar to Unity's Standard Shader. The shader implements [Fluent Design System principles](https://www.microsoft.com/design/fluent/#/) and remains performant on mixed reality devices.
 <br>
 
-## Examples of visual effects using MRTK Standard shader 
+## Examples of visual effects using MRTK (Mixed Reality Toolkit) Standard shader 
 :::row:::
     :::column:::
        ![Move](images/UX_Button_Affordance_ProximityLight.jpg)<br>
@@ -31,10 +31,9 @@ Since holographic objects are mixed with physical ones in the real environment, 
 
 ---
 
-## MRTK Standard shader in MRTK (Mixed Reality Toolkit) for Unity
+## Standard shader in MRTK for Unity
 
-* [MRTK - Standard shader](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html)
-
+* [MRTK - Standard shader](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
 
 <br>
 

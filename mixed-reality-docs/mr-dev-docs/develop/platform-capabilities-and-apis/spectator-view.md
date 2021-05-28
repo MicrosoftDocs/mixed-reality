@@ -1,6 +1,6 @@
 ---
 title: Spectator View 
-description: Visualize holograms from an external device as a means of demonstrating a mixed reality experience on an external display or recording video of a mixed reality experience.
+description: Visualize holograms from an external device to show or record a mixed reality experience on an external display.
 author: chrisfromwork
 ms.author: chriba
 ms.date: 02/11/2019
@@ -9,14 +9,12 @@ ms.localizationpriority: high
 keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Camera, ARKit, HoloLens, Mixed Reality, MixedRealityToolkit, demo, record
 ---
 
+
 # Spectator View for HoloLens and HoloLens 2
 
 ![Marker](images/SpecViewPhoneHero.jpg)
 
-## Overview
-
-When wearing a HoloLens, we often forget that a person who does not have it on is unable to experience the wonders that we can. Spectator View allows others to see on a 2D screen what a HoloLens user sees in their world.
-Spectator View offers a fast and affordable approach to recording holograms in HD with mobile devices. It also offers a professional quality recording of holograms with video cameras.
+When you're wearing a HoloLens, it's easy to forget a person without one can't experience the same wonders you're seeing. Spectator View lets others see what a HoloLens user sees on a 2D screen. It's also a fast and affordable approach to recording holograms in HD with mobile devices and getting great quality recordings of holograms with video cameras.
 
 ## Key Resources
 
@@ -25,7 +23,8 @@ Spectator View offers a fast and affordable approach to recording holograms in H
 * [**Spectator View Samples**](https://github.com/microsoft/MixedReality-SpectatorView/tree/master/samples)
 
 ## Use Cases
-* You can record a mixed reality experience using an iPhone or Android device. Record in full HD and apply anti-aliasing to holograms and even shadows. It is a cost-effective and quick way to capture video of holograms.
+
+* You can record a mixed reality experience using an iPhone or Android device. Record in full HD and apply anti-aliasing to holograms and shadow for a cost-effective and quick way to capture video of holograms.
 * Stream live mixed reality experiences to an Apple TV directly from your iPhone or iPad, lag-free!
 * Share the experience with guests: Let non-HoloLens users experience holograms directly from their phones or tablets.
 
@@ -57,6 +56,6 @@ The following table shows different Spectator View functionality and their capab
 | Runtime setup duration               |         Instant          |                     Slow                    |
 ## See also
 
-* [Mixed reality capture](../../mixed-reality-capture.md) 
+* [Mixed reality capture](/hololens/holographic-photos-and-videos) 
 * [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
 * [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)

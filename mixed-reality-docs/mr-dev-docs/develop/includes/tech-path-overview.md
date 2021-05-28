@@ -9,8 +9,8 @@ Build a cross-platform, full-featured mixed reality app with Unity. See the [Uni
 You have several hardware and emulator options when building Mixed Reality apps with Unity. While our developer documentation focuses on HoloLens devices, you'll find device support sections with details on immersive headset deployment when applicable.
 
 **Augmented reality devices**
-* [HoloLens (1st Gen)](https://docs.microsoft.com/hololens/hololens1-hardware)
-* [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)
+* [HoloLens (1st Gen)](/hololens/hololens1-hardware)
+* [HoloLens 2](/hololens/hololens2-hardware)
 
 **Immersive VR headsets**
 * HP Reverb and Reverb G2
@@ -27,24 +27,27 @@ You have several hardware and emulator options when building Mixed Reality apps 
 |  Tool/SDK  |  Description  |
 | --- | --- |
 | [Mixed Reality Toolkit for Unity](../unity/mrtk-getting-started.md) | The Mixed Reality Toolkit for Unity is an open source cross-platform development kit built to accelerate development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets and OpenVR platform. |
+| [Microsoft World Locking Tools](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/GettingStartedWithWorldLocking.html) | Provides a stable coordinate system and camera adjustment that minimizes the visible inconsistencies. |
+| [Microsoft Mesh](/mesh/overview) Private Preview | Complete the [Microsoft Mesh Register Interest](https://aka.ms/meshsignup) form to stay up to date with Mesh announcements and news. With Mesh, you can enhance virtual meetings, conduct virtual design sessions, help others remotely, and host virtual meet-ups. |
 
 ## Cloud services
 
 There are several cloud services that can be integrated into Mixed Reality projects built in Unity, specifically **Azure Remote Rendering** and **Azure Spatial Anchors**. These services can add shared holographic content and real-time 3D rendering to your applications, making them more compelling and immersive for your users.
 
-All of these services are covered over the course of the [Unity development journey](../unity/unity-development-overview.md), which is the **strongly recommended path for learning Mixed Reality with Unity**. You're already on this path, so just keep reading and follow the big blue button at the bottom of the article. However, if you're at a more advanced development stage and already know you want to jump in, check out our [cloud services overview](../mixed-reality-cloud-services.md) or go directly to the [services resources](../unity/unity-development-overview.md#5-adding-services).
+All of these services are covered over the course of the [Unity development for HoloLens journey](../unity/unity-development-overview.md), which is the **strongly recommended path for learning Mixed Reality with Unity**. You're already on this path, so just keep reading and follow the big blue button at the bottom of the article. However, if you're at a more advanced development stage and already know you want to jump in, check out our [cloud services overview](../mixed-reality-cloud-services.md) or go directly to the [services resources](../unity/unity-development-overview.md#5-adding-services).
 
 ## Dynamics 365 Guides
 
-You can use **Microsoft Dynamics 365 Guides** to visually tether holographic instructions to your apps virtual environment, giving your users important information when and where it's needed. This feature is also covered in the Unity development journey, but if you want to jump ahead you can see what's on offer by selecting the **Dynamics 365** tab [here](../unity/unity-development-overview.md#5-adding-services).
+You can use **Microsoft Dynamics 365 Guides** to visually tether holographic instructions to your apps virtual environment, giving your users important information when and where it's needed. This feature is also covered in the Unity development for HoloLens journey, but if you want to jump ahead you can see what's on offer by selecting the **Dynamics 365** tab [here](../unity/unity-development-overview.md#5-adding-services).
 
 ## Examples
 
-We have several open source [sample apps](../unity/samples.md) for you to download and play around with to get a feel for a Mixed Reality end product in Unity. There are also MRTK example scenes available for you to test out specific features:
-* [Hand interaction examples scene (MRTK) for Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#open-and-run-the-handinteractionexamples-scene-in-editor) -
+We have several open source [sample apps](../features-and-samples.md) for you to download and play around with to get a feel for a Mixed Reality end product in Unity. There are also MRTK example scenes available for you to test out specific features:
+
+* [Hand interaction examples scene (MRTK) for Unity](/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples) -
 The HandInteractionExamples.unity example scene contains various types of interactions and UI controls that highlight articulated hand input.
 
-* [Eye tracking examples (MRTK) for Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_ExamplesOverview.html) - 
+* [Eye tracking examples (MRTK) for Unity](/windows/mixed-reality/mrtk-unity/features/example-scenes/eye-tracking-examples-overview) - 
 This page covers how to get quickly started with using eye tracking in MRTK by building on our provided MRTK eye tracking examples.
 
 >[!NOTE]
@@ -61,8 +64,8 @@ Build a cross-platform, full-featured mixed reality app with Unreal. See the [Un
 You have several hardware, emulator, and streaming options when building Mixed Reality apps with Unreal Engine. While our developer documentation focuses on HoloLens devices, you can package your Unreal projects as x64 desktop apps and run them on immersive headsets just fine.
 
 **Augmented reality devices**
-* [HoloLens (1st Gen)](https://docs.microsoft.com/hololens/hololens1-hardware)
-* [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)
+* [HoloLens (1st Gen)](/hololens/hololens1-hardware)
+* [HoloLens 2](/hololens/hololens2-hardware)
 
 **Immersive VR headsets**
 * HP Reverb and Reverb G2
@@ -78,7 +81,8 @@ You have several hardware, emulator, and streaming options when building Mixed R
 
 |  Tool/SDK  |  Description  |
 | --- | --- |
-| [Mixed Reality Toolkit for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) | The Mixed Reality Toolkit for Unreal (MRTK-Unreal) is a set of components, in the form of plugins, samples and documentation, designed to accelerate development of mixed reality applications using the Unreal Engine. |
+| [UX Tools for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) | UX Tools is the first plugin to be released and is currently only supported on HoloLens 2. The plugin includes C++ code, Blueprints, and example assets of common UX features for input simulation, hand interactions, surface magnetism and more. |
+| [Graphics Tools for Unreal](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/) | Graphics Tools is a UE game plugin with code, blueprints and example assets created to help improve the visual fidelity of Mixed Reality applications while staying within performance budgets. |
 
 ## Cloud services
 
@@ -99,7 +103,7 @@ You can use **Microsoft Dynamics 365 Guides** to visually tether holographic ins
 
 ![Web](../images/javascript_logo_banner.png)
 
-The WebXR Device API is an open specification that allows you to experience Mixed Reality apps in your browser on any platform. See the [JavaScript development overview](../web/javascript-development-overview.md) to get started building Mixed Reality apps for any platform.
+The WebXR Device API is an open specification that allows you to experience Mixed Reality apps in your browser on any platform. See the [JavaScript development overview](../javascript/javascript-development-overview.md) to get started building Mixed Reality apps for any platform.
 
 
 # [Native (OpenXR)](#tab/native)
@@ -113,7 +117,7 @@ Create mixed reality apps with a direct line to the Windows Mixed Reality APIs. 
 You have several hardware, emulator, and streaming options when building Mixed Reality apps with OpenXR development. 
 
 **Augmented reality devices**
-* [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)
+* [HoloLens 2](/hololens/hololens2-hardware)
 
 **Immersive VR headsets**
 * HP Reverb and Reverb G2

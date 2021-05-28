@@ -1,6 +1,6 @@
 ---
 title: Release notes - October 2018
-description: HoloLens and Windows Mixed Reality release notes for the Windows 10 October 2018 Update (also known as RS5).
+description: Stay up to date on the HoloLens and Windows Mixed Reality release notes for the Windows 10 October 2018/RS5 Update.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 10/02/2018
@@ -29,7 +29,7 @@ The Windows 10 October 2018 Update includes many improvements for using Windows 
     ![Mixed Reality Flashlight](images/mr-flashlight.png)
 
 * **New apps and ways to launch content in the mixed reality home**
-    * If you're using [Windows Mixed Reality for SteamVR](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality), your SteamVR titles now show up in the Start menu and app launchers for each can be placed in the mixed reality home.
+    * If you're using [Windows Mixed Reality for SteamVR](./using-steamvr-with-windows-mixed-reality.md), your SteamVR titles now show up in the Start menu and app launchers for each can be placed in the mixed reality home.
     
         ![SteamVR app launchers](images/steamvr-launchers.png)
         
@@ -46,9 +46,9 @@ The Windows 10 October 2018 Update includes many improvements for using Windows 
     
 ### For developers
 
-* **[QR code tracking](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/qr-code-tracking)** - Enable QR code tracking in your mixed reality app, allowing Windows Mixed Reality immersive (VR) headsets to scan for QR codes and report them back to interested apps.
+* **[QR code tracking](/windows/mixed-reality/develop/platform-capabilities-and-apis/qr-code-tracking)** - Enable QR code tracking in your mixed reality app, allowing Windows Mixed Reality immersive (VR) headsets to scan for QR codes and report them back to interested apps.
 * **Hardware DRM support for immersive apps** - Developers can now request hardware-protected backbuffer textures if supported by the display hardware, allowing applications to use hardware-protected content from sources like PlayReady.
-* **[Integrate mixed reality capture UI into immersive apps](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/mixed-reality-capture-for-developers#integrating-mrc-functionality-from-within-your-app)** - Developers can integrate mixed reality capture into their apps using the built-in Windows [camera capture UI](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) with just a few lines of code.
+* **[Integrate mixed reality capture UI into immersive apps](/windows/mixed-reality/develop/platform-capabilities-and-apis/mixed-reality-capture-for-developers#integrating-mrc-functionality-from-within-your-app)** - Developers can integrate mixed reality capture into their apps using the built-in Windows [camera capture UI](/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) with just a few lines of code.
 
 ## New features for HoloLens
 
@@ -68,7 +68,7 @@ The Windows 10 October 2018 Update is publicly available for all HoloLens custom
 
 ### For developers
 
-* **[Integrate mixed reality capture UI into immersive apps](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/mixed-reality-capture-for-developers#integrating-mrc-functionality-from-within-your-app)** - Developers can integrate mixed reality capture into their apps using the built-in Windows [camera capture UI](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) with just a few lines of code.
+* **[Integrate mixed reality capture UI into immersive apps](/windows/mixed-reality/develop/platform-capabilities-and-apis/mixed-reality-capture-for-developers#integrating-mrc-functionality-from-within-your-app)** - Developers can integrate mixed reality capture into their apps using the built-in Windows [camera capture UI](/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui) with just a few lines of code.
 
 ### For commercial customers
 
@@ -84,7 +84,7 @@ You can now use HoloLens with localized user interface for Simplified Chinese or
 
 ## Known issues
 
-We've worked hard to deliver a great Windows Mixed Reality experience, but we're still tracking some known issues. If you find others, please [give us feedback](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback).
+We've worked hard to deliver a great Windows Mixed Reality experience, but we're still tracking some known issues. If you find others, please [give us feedback](/windows/mixed-reality/give-us-feedback).
 
 ### HoloLens
  
@@ -95,7 +95,7 @@ You may notice the following issues when using the Windows 10 October 2018 Updat
 
 ## Provide feedback and report issues
 
-Please use the [Feedback Hub app on your HoloLens or Windows 10 PC](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback) to provide feedback and report issues. Using Feedback Hub ensures that all necessary diagnostics information is included to help our engineers quickly debug and resolve the problem.
+Please use the [Feedback Hub app on your HoloLens or Windows 10 PC](/windows/mixed-reality/give-us-feedback) to provide feedback and report issues. Using Feedback Hub ensures that all necessary diagnostics information is included to help our engineers quickly debug and resolve the problem.
 
 >[!NOTE]
 >Be sure to accept the prompt that asks whether you’d like Feedback Hub to access your Documents folder (select **Yes** when prompted).
@@ -109,8 +109,7 @@ Please use the [Feedback Hub app on your HoloLens or Windows 10 PC](https://docs
 * [Release notes - March 2016](release-notes-march-2016.md)
 
 ## See also
-* [Immersive headset support (external link)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
+* [Immersive headset support (external link)](./troubleshooting-windows-mixed-reality.md)
 * [HoloLens support (external link)](https://support.microsoft.com/products/hololens)
-* [Install the tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
-* [Give us feedback](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)
-
+* [Install the tools](/windows/mixed-reality/develop/install-the-tools)
+* [Give us feedback](/windows/mixed-reality/give-us-feedback)

@@ -1,9 +1,9 @@
 ---
-title: Azure Cloud Tutorials - 2. Integrating Azure storage
+title: Integrating Azure storage
 description: Complete this course to learn how to implement Azure Table Storage and Azure Blob Storage within a HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, hololens 2, azure storage, azure cloud services, Windows 10
 ms.localizationpriority: high
@@ -23,7 +23,7 @@ In this tutorial, you will learn how to save entity data to Azure Table storage 
 
 **Azure storage** is a Microsoft storage solution on the cloud that can cover many scenarios and requirements. It can scale massively and is easily approachable by developers. All services can be consumed under the umbrella of an **Azure storage Account**. For our use case we will use *Table storage* and *Blob storage*.
 
-Learn more about [Azure storage services](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-overview).
+Learn more about [Azure storage services](/azure/storage/blobs/storage-blobs-overview).
 
 ### Azure Table storage
 
@@ -31,18 +31,18 @@ This services allows us to store data in a NoSQL fashion, in this project we wil
 
 In context of the demo application, you need two Tables, one to store information about the project with information about the state of trained models more about that in the ([Integrating Azure Custom Vision](mr-learning-azure-03.md)) tutorial and a second table to store information about *Tracked Objects*.
 
-Learn more about [Azure Table storage](https://docs.microsoft.com/azure/storage/tables/table-storage-overview).
+Learn more about [Azure Table storage](/azure/storage/tables/table-storage-overview).
 
 ### Azure Blob storage
 
 This service allows to store large binary files, you will use this to store photos taken for *Tracked Objects* as thumbnail.
 For of the demo application you need one Blob Container to store the images.
 
-Learn more about [Azure Blob storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction).
+Learn more about [Azure Blob storage](/azure/storage/blobs/storage-blobs-introduction).
 
 ## Preparing Azure Storage
 
-To consume the Azure storage services you will need an Azure storage account. To create a storage account, see [Create a storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal). To learn more about storage accounts, see [Azure storage account overview](https://docs.microsoft.com/azure/storage/common/storage-account-overview).
+To consume the Azure storage services you will need an Azure storage account. To create a storage account, see [Create a storage account](/azure/storage/common/storage-account-create?tabs=azure-portal). To learn more about storage accounts, see [Azure storage account overview](/azure/storage/common/storage-account-overview).
 
 Once you have a storage account, you can retrieve the connection string from the **Azure Portal** which will be needed in the next section of this lesson.
 
@@ -52,7 +52,8 @@ While you can see and verify all data changes from the UI inside the application
 
 > [!TIP]
 > For testing from inside the Unity editor you can use a local emulator:
-> * on Windows 10 you can use [Azure Storage Emulator](https://docs.microsoft.com/azure/storage/common/storage-use-emulator)
+>
+> * on Windows 10 you can use [Azure Storage Emulator](/azure/storage/common/storage-use-emulator)
 > * on MacOS/Linux you can use [Azurite Docker Image](https://hub.docker.com/_/microsoft-azure-storage-azurite) for Docker
 
 ## Preparing the scene

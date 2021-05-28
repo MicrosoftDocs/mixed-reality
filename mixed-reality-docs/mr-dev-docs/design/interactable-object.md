@@ -1,6 +1,6 @@
 ---
 title: Interactable object
-description: A button has long been a metaphor used for triggering an event in the 2D abstract world. In the three-dimensional mixed reality world, we don’t have to be confined to this world of abstraction anymore.
+description: Learn how to trigger events, provide visual cues, and interact with objects in your mixed reality applications.
 author: cre8ivepark
 ms.author: v-hferrone
 ms.date: 06/06/2019
@@ -8,25 +8,23 @@ ms.topic: article
 keywords: Mixed Reality, Controls, interaction, cues, ui, ux, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, audio 
 ---
 
-
 # Interactable object
 
 ![Interactible objects](images/UX_Hero_Interactable.jpg)
 
-A button has long been a metaphor used for triggering an event in the 2D abstract world. In the three-dimensional mixed reality world, we don’t have to be confined to this world of abstraction anymore. Anything can be an **interactable object** that triggers an event. An interactable object can be represented as anything from a coffee cup on the table to a balloon floating in the air. We still do make use of traditional buttons in certain situation such as in dialog UI. The visual representation of the button depends on the context.
+A button has long been a metaphor used for triggering an event in the 2D abstract world. In the three-dimensional mixed reality world, we don’t have to be confined to this world of abstraction anymore. Anything can be an **interactable object** that triggers an event. An interactable object can be anything from a coffee cup on a table to a balloon in midair. We still do make use of traditional buttons in certain situation such as in dialog UI. The visual representation of the button depends on the context.
 
 <br>
 
 ---
 
-
 ## Important properties of the interactable object
 
 ### Visual cues
 
-Visual cues are sensory cues received by the eye in the form of light and processed by the visual system during visual perception. Since the visual system is dominant in many species, especially humans, visual cues are a large source of information in how the world is perceived.
+Visual cues are sensory cues from light, received by the eye, and processed by the visual system during visual perception. Since the visual system is dominant in many species, especially humans, visual cues are a large source of information in how the world is perceived.
 
-Since the holographic objects are blended with the real-world environment in mixed reality, it could be difficult to understand which objects you can interact with. For any interactable objects in your experience, it is important to provide differentiated visual cues for each input state. This helps the user understand which part of your experience is interactable and makes the user confident by using a consistent interaction method.
+Since the holographic objects are blended with the real-world environment in mixed reality, it could be difficult to understand which objects you can interact with. For any interactable objects in your experience, it's important to provide differentiated visual cues for each input state. This helps the user understand which part of your experience is interactable and makes the user confident by using a consistent interaction method.
 
 <br>
 
@@ -34,23 +32,23 @@ Since the holographic objects are blended with the real-world environment in mix
 
 ### Far interactions
 
-For any objects that user can interact with gaze, hand ray, and motion controller's ray, we recommend to have different visual cue for these three input states:
+For any objects that user can interact with gaze, hand ray, and motion controller's ray, we recommend having different visual cue for these three input states:
 
 :::row:::
     :::column:::
-       ![interactibleobject-states-default](images/interactibleobject-states-default.jpg)<br>
+       ![Interactable object with default state](images/interactibleobject-states-default.jpg)<br>
        **Default (Observation) state**<br>
         Default idle state of the object.
-       The cursor is not on the object. Hand is not detected.
+       The cursor isn't on the object. Hand isn't detected.
     :::column-end:::
     :::column:::
-       ![interactibleobject-states-targeted](images/interactibleobject-states-targeted.jpg)<br>
+       ![Interactable object with target and hover state](images/interactibleobject-states-targeted.jpg)<br>
         **Targeted (Hover) state**<br>
         When the object is targeted with gaze cursor, finger proximity or motion controller's pointer.
         The cursor is on the object. Hand is detected, ready.
     :::column-end:::
     :::column:::
-       ![interactibleobject-states-pressed](images/interactibleobject-states-pressed.jpg)<br>
+       ![Interactable object with pressed state](images/interactibleobject-states-pressed.jpg)<br>
        **Pressed state**<br>
         When the object is pressed with an air tap gesture, finger press or motion controller's select button.
         The cursor is on the object. Hand is detected, air tapped.
@@ -61,21 +59,21 @@ For any objects that user can interact with gaze, hand ray, and motion controlle
 
 ---
 
-You can use techniques such as highlighting or scaling to provide visual cues for the user’s input state. In mixed reality, you can find the examples of visualizing different input states on the Start menu and with app bar buttons. 
+You can use techniques such as highlighting or scaling to provide visual cues for the user’s input state. In mixed reality, you can find examples of visualizing different input states on the Start menu and with app bar buttons. 
 
-Here is what these states look like on a **holographic button**:
+Here's what these states look like on a **holographic button**:
 
 :::row:::
     :::column:::
-       ![interactibleobject-states-default](images/MRTK_InteractableState-default.jpg)<br>
+       ![Holographic button in default state](images/MRTK_InteractableState-default.jpg)<br>
        **Default (Observation) state**<br>
     :::column-end:::
     :::column:::
-       ![interactibleobject-states-targeted](images/MRTK_InteractableState-targeted.jpg)<br>
+       ![Holographic button in target and hover state](images/MRTK_InteractableState-targeted.jpg)<br>
         **Targeted (Hover) state**<br>
     :::column-end:::
     :::column:::
-       ![interactibleobject-states-pressed](images/MRTK_InteractableState-pressed.jpg)<br>
+       ![Holographic button in pressed state](images/MRTK_InteractableState-pressed.jpg)<br>
        **Pressed state**<br>
     :::column-end:::
 :::row-end:::
@@ -86,12 +84,12 @@ Here is what these states look like on a **holographic button**:
 
 ### Near interactions (direct) 
 
-HoloLens 2 supports articulated hand tracking input which allows you to interact with objects. Without haptic feedback and perfect depth perception, it can sometimes be hard to tell how far away your hand is from an object or whether you are touching it. It is important to provide enough visual cues to communicate the state of the object and in particular the state of your hands in relation to that object.
+HoloLens 2 supports articulated hand tracking input, which allows you to interact with objects. Without haptic feedback and perfect depth perception, it can be hard to tell how far away your hand is from an object or whether you're touching it. It's important to provide enough visual cues to communicate the state of the object, in particular the state of your hands based on that object.
 
-Use visual feedback to communicate the following:
+Use visual feedback to communicate the following states:
 * **Default (Observation)**: Default idle state of the object.
 * **Hover**: When a hand is near a hologram, change visuals to communicate that hand is targeting hologram. 
-* **Distance and point of interaction**: As the hand approaches a hologram, design feedback to communicate the projected point of interaction, as well as how far from the object the finger is
+* **Distance and point of interaction**: As the hand approaches a hologram, design feedback to communicate the projected point of interaction, and how far from the object the finger is
 * **Contact begins**: Change visuals (light, color) to communicate that a touch has occurred
 * **Grasped**: Change visuals (light, color) when the object is grasped
 * **Contact ends**: Change visuals (light, color) when touch has ended
@@ -166,7 +164,7 @@ A [button on HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/D
 :::row:::
     :::column:::
         ### The "ring" visual cue on HoloLens 2<br>
-        On HoloLens 2, there is an additional visual cue which can help the user's perception of depth. A ring near their fingertip shows up and scales down as the fingertip gets closer to the object. The ring eventually converges into a dot when the pressed state is reached. This visual affordance helps the user understand how far they are from the object.<br>
+        On HoloLens 2, there's an extra visual cue, which can help the user's perception of depth. A ring near their fingertip shows up and scales down as the fingertip gets closer to the object. The ring eventually converges into a dot when the pressed state is reached. This visual affordance helps the user understand how far they are from the object.<br>
         <br>
         *Video loop: Example of visual feedback based on proximity to a bounding box*
     :::column-end:::
@@ -184,7 +182,7 @@ A [button on HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/D
 
 ### Audio cues
 
-For direct hand interactions, proper audio feedback can dramatically improve the user experience. Use audio feedback to communicate the following:
+For direct hand interactions, proper audio feedback can dramatically improve the user experience. Use audio feedback to communicate the following cues:
 * **Contact begins**: Play sound when touch begins
 * **Contact ends**: Play sound on touch end
 * **Grab begins**: Play sound when grab starts
@@ -197,7 +195,7 @@ For direct hand interactions, proper audio feedback can dramatically improve the
 :::row:::
     :::column:::
         ### Voice commanding<br>
-        For any interactable objects, it is important to support alternative interaction options. By default, we recommend that [voice commanding](../out-of-scope/voice-design.md) be supported for any objects that are interactable. To improve discoverability, you can also provide a tooltip during the hover state.<br>
+        For any interactable objects, it's important to support alternative interaction options. By default, we recommend that [voice commanding](../out-of-scope/voice-design.md) be supported for any objects that are interactable. To improve discoverability, you can also provide a tooltip during the hover state.<br>
         <br>
         *Image: Tooltip for the voice command*
     :::column-end:::
@@ -211,19 +209,17 @@ For direct hand interactions, proper audio feedback can dramatically improve the
 
 ---
 
+## Sizing recommendations
 
-## Sizing recommendations 
-
-To ensure that all interactable objects can easily be touched by users, we recommend that you make sure the interactable meets a minimum size (the visual angle often measured in degrees of visual arc) based on the distance it is placed from the user. Visual angle is based on the distance between the user's eyes and the object and stays constant, while the physical size of the target may change as the distance from the user changes. To determine the necessary physical size of an object based on the distance from the user, try using a visual angle calculator such as [this one](https://elvers.us/perception/visualAngle/).
+To ensure all interactable objects can easily be touched, we recommend making sure the interactable meets a minimum size based on the distance it's placed from the user. The visual angle is often measured in degrees of visual arc. Visual angle is based on the distance between the user's eyes and the object and stays constant, while the physical size of the target may change as the distance from the user changes. To determine the necessary physical size of an object based on the distance from the user, try using a visual angle calculator such as [this one](https://elvers.us/perception/visualAngle/).
 
 Below are the recommendations for minimum sizes of interactable content.
-
 
 ### Target size for direct hand interaction
 
 | Distance | Viewing angle | Size |
 |---------|---------|---------|
-| 45cm  | no smaller than 2° | 1.6 x 1.6 cm |
+| 45 cm  | no smaller than 2° | 1.6 x 1.6 cm |
 
 ![Target size for direct hand interaction](images/TargetSizingNear.jpg)<br>
 *Target size for direct hand interaction*
@@ -232,11 +228,11 @@ Below are the recommendations for minimum sizes of interactable content.
 
 ### Target size for buttons
 
-When creating buttons for direct interaction, we recommend a larger minimum size of 3.2 x 3.2 cm to ensure that there is enough space to contain an icon and potentially some text.
+When creating buttons for direct interaction, we recommend a larger minimum size of 3.2 x 3.2 cm to ensure that there's enough space to contain an icon and potentially some text.
 
 | Distance | Minimum size |
 |---------|---------|
-| 45cm  | 3.2 x 3.2 cm |
+| 45 cm  | 3.2 x 3.2 cm |
 
 ![Target size for the buttons](images/TargetSizingButtons.png)<br>
 *Target size for the buttons*
@@ -246,33 +242,30 @@ When creating buttons for direct interaction, we recommend a larger minimum size
 ### Target size for hand ray or gaze interaction
 | Distance | Viewing angle | Size |
 |---------|---------|---------|
-| 2m  | no smaller than 1° | 3.5 x 3.5 cm |
+| 2 m  | no smaller than 1° | 3.5 x 3.5 cm |
 
 ![Target size for hand ray or gaze interaction](images/TargetSizingFar.jpg)<br>
 *Target size for hand ray or gaze interaction*
 
-
 <br>
 
 ---
-
 
 ## Interactable object in MRTK (Mixed Reality Toolkit) for Unity
 
-In **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can use the script [**Interactable**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) to make objects respond to various types of input interaction states. It supports various types of themes that allows you define visual states by controlling object properties such as color, size, material, and shader.
+In **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**, you can use the script [**Interactable**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) to make objects respond to various types of input interaction states. It supports various types of themes that allow you define visual states by controlling object properties such as color, size, material, and shader.
 
-* [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
-* [Button](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
+* [Interactable](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable)
+* [Button](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button)
 * [Hand interaction examples scene](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
 
 MixedRealityToolkit's Standard shader provides various options such as **proximity light** that helps you create visual and audio cues.
-* [MRTK Standard Shader](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Documentation/README_MRTKStandardShader.md)
 
+* [MRTK Standard Shader](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
 
 <br>
 
 ---
-
 
 ## See also
 

@@ -1,6 +1,6 @@
 ---
 title: Performance recommendations for Unity
-description: Unity-specific tips to improve performance with mixed reality apps.
+description: Learn Unity-specific tips to improve performance with project settings, profiling, memory management in your mixed reality apps.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 03/26/2019
@@ -8,7 +8,6 @@ ms.topic: article
 keywords: graphics, cpu, gpu, rendering, garbage collection, hololens
 ms.localizationpriority: high
 ---
-
 
 # Performance recommendations for Unity
 
@@ -80,7 +79,7 @@ public class ExampleClass : MonoBehaviour
 
 #### Avoid expensive operations
 
-1) **Avoid use of [LINQ](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq)**
+1) **Avoid use of [LINQ](/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq)**
 
     Although LINQ can be clean and easy to read and write, it generally requires more computation and memory than if you wrote the algorithm manually.
 
@@ -116,7 +115,7 @@ public class ExampleClass : MonoBehaviour
 
 3) **Beware of boxing**
 
-    [Boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing) is a core concept of the C# language and runtime. It's the process of wrapping value-typed variables such as `char`, `int`, `bool`, etc. into reference-typed variables. When a value-typed variable is "boxed", it's wrapped in a `System.Object`, which is stored on the managed heap. Memory is allocated and eventually when disposed must be processed by the garbage collector. These allocations and deallocations incur a performance cost and in many scenarios are unnecessary or can be easily replaced by a less expensive alternative.
+    [Boxing](/dotnet/csharp/programming-guide/types/boxing-and-unboxing) is a core concept of the C# language and runtime. It's the process of wrapping value-typed variables such as `char`, `int`, `bool`, etc. into reference-typed variables. When a value-typed variable is "boxed", it's wrapped in a `System.Object`, which is stored on the managed heap. Memory is allocated and eventually when disposed must be processed by the garbage collector. These allocations and deallocations incur a performance cost and in many scenarios are unnecessary or can be easily replaced by a less expensive alternative.
 
     To avoid boxing, be sure that the variables, fields, and properties in which you store numeric types and structs (including `Nullable<T>`) are strongly typed as specific types such as `int`, `float?` or `MyStruct`, instead of using object.  If putting these objects into a list, be sure to use a strongly typed list such as `List<int>` rather than `List<object>` or `ArrayList`.
 
@@ -176,7 +175,7 @@ Any repeating Unity callback functions (i.e Update) that are executed many times
 
 4) **Avoid passing structs by value**
 
-    Unlike classes, structs are value-types and when passed directly to a function, their contents are copied into a newly created instance. This copy adds CPU cost, as well as additional memory on the stack. For small structs, the effect is minimal and thus acceptable. However, for functions repeatedly invoked every frame as well as functions taking large structs, if possible modify the function definition to pass by reference. [Learn more here](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method)
+    Unlike classes, structs are value-types and when passed directly to a function, their contents are copied into a newly created instance. This copy adds CPU cost, as well as additional memory on the stack. For small structs, the effect is minimal and thus acceptable. However, for functions repeatedly invoked every frame as well as functions taking large structs, if possible modify the function definition to pass by reference. [Learn more here](/dotnet/csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method)
 
 #### Miscellaneous
 
@@ -297,15 +296,15 @@ An easy approximation to compare shaders in performance is to identify the avera
 
 #### Optimize pixel shaders
 
-Looking at the compiled statistic results using the method above, the [fragment shader](https://en.wikipedia.org/wiki/Shader#Pixel_shaders) will generally execute more operations than the [vertex shader](https://en.wikipedia.org/wiki/Shader#Vertex_shaders), on average. The fragment shader, also known as the pixel shader, is executed per pixel on the screen output while the vertex shader is only executed per-vertex of all meshes being drawn to the screen. 
+Looking at the compiled statistic results using the method above, the [fragment shader](https://en.wikipedia.org/wiki/Shader#Pixel_shaders) will generally execute more operations than the [vertex shader](https://en.wikipedia.org/wiki/Shader#Vertex_shaders), on average. The fragment shader, also known as the pixel shader, is executed per pixel on the screen output while the vertex shader is only executed per-vertex of all meshes being drawn to the screen.
 
-Thus, not only do fragment shaders have more instructions than vertex shaders because of all the lighting calculations, fragment shaders are almost always executed on a larger dataset. For example, if the screen output is a 2k by 2k image, then the fragment shader can get executed 2,000*2,000 = 4,000,000 times. If rendering two eyes, this number doubles since there are two screens. If a mixed reality application has multiple passes, full-screen post-processing effects, or rendering multiple meshes to the same pixel, this number will increase dramatically. 
+Thus, not only do fragment shaders have more instructions than vertex shaders because of all the lighting calculations, fragment shaders are almost always executed on a larger dataset. For example, if the screen output is a 2k by 2k image, then the fragment shader can get executed 2,000*2,000 = 4,000,000 times. If rendering two eyes, this number doubles since there are two screens. If a mixed reality application has multiple passes, full-screen post-processing effects, or rendering multiple meshes to the same pixel, this number will increase dramatically.
 
 Therefore, reducing the number of operations in the fragment shader can generally give far greater performance gains over optimizations in the vertex shader.
 
 #### Unity Standard shader alternatives
 
-Instead of using a physically based rendering (PBR) or another high-quality shader, look at utilizing a more performant and cheaper shader. The [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) provides the [MRTK standard shader](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html) that has been optimized for mixed reality projects.
+Instead of using a physically based rendering (PBR) or another high-quality shader, look at utilizing a more performant and cheaper shader. The [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) provides the [MRTK standard shader](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader) that has been optimized for mixed reality projects.
 
 Unity also provides an unlit, vertex lit, diffuse, and other simplified shader options that are faster compared to the Unity Standard shader. See [Usage and Performance of Built-in Shaders](https://docs.unity3d.com/Manual/shader-Performance.html) for more detailed information.
 
@@ -333,9 +332,9 @@ Unity has provided an excellent page that explains in detail how the garbage col
 One of the most common practices that leads to excessive garbage collection isn't caching references to components and classes in Unity development. Any references should be captured during Start() or Awake() and reused in later functions such as Update() or LateUpdate().
 
 Other quick tips:
-- Use the [StringBuilder](https://docs.microsoft.com/dotnet/api/system.text.stringbuilder) C# class to dynamically build complex strings at runtime
+- Use the [StringBuilder](/dotnet/api/system.text.stringbuilder) C# class to dynamically build complex strings at runtime
 - Remove calls to Debug.Log() when no longer needed, as they still execute in all build versions of an app
-- If your holographic app generally requires lots of memory, consider calling  [_**System.GC.Collect()**_](https://docs.microsoft.com/dotnet/api/system.gc.collect) during loading phases such as when presenting a loading or transition screen
+- If your holographic app generally requires lots of memory, consider calling  [_**System.GC.Collect()**_](/dotnet/api/system.gc.collect) during loading phases such as when presenting a loading or transition screen
 
 #### Object pooling
 

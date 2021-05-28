@@ -1,6 +1,6 @@
 ---
 title: Upgrading projects in Unreal
-description: Overview of version upgrade steps and deprecated APIs in Unreal projects.
+description: Keep up to date with version upgrade steps, API changes, and deprecations for your Unreal projects.
 author: hferrone
 ms.author: jacksonf
 ms.date: 11/23/2020
@@ -8,7 +8,6 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, documentation, guides, features, mixed reality headset, windows mixed reality headset, virtual reality headset, porting, upgrading
 ---
-
 
 # Upgrading projects in Unreal
 

@@ -32,7 +32,7 @@ Select "Switch Platform"
 > If your application has any dependencies on device-specific services, such as match making from Steam, you'll need to disable them at this step. You can hook up to the equivalent services that Windows provides later on.
 
 ### 5. Setup your Windows Mixed Reality hardware
-1. Review steps in [Immersive headset setup](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/before-you-start
+1. Review steps in [Immersive headset setup](/windows/mixed-reality/enthusiast-guide/before-you-start
 )
 2. Learn about [Using the Windows Mixed Reality simulator](../../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) and [Navigating the Windows Mixed Reality home](../../../discover/navigating-the-windows-mixed-reality-home.md)
 
@@ -88,13 +88,13 @@ Algorithm is based on a blog by Daniel Smilkov: [Largest rectangle in a polygon]
 
 Each game or application targeting an existing HMD will have a set of inputs that it handles, types of inputs that it needs for the experience, and specific APIs that it calls to get those inputs. We've invested in trying to make it as simple and straightforward as possible to take advantage of the inputs available in Windows Mixed Reality.
 
-Read through the [input porting guide for Unity](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/porting-guides?tabs=input) in the adjacent tab for details of how Windows Mixed Reality exposes input, and how that maps to what your application may do today.
+Read through the [input porting guide for Unity](../porting-guides.md?tabs=input) in the adjacent tab for details of how Windows Mixed Reality exposes input, and how that maps to what your application may do today.
 
 ### 9. Performance testing and tuning
 
-Windows Mixed Reality will be available on a broad class of devices, ranging from high end gaming PCs, down to broad market mainstream PCs. Depending on what market you're targeting, there's a significant difference in the available compute and graphics budgets for your application. During this porting exercise, you're likely leveraging a premium PC, and have had significant compute and graphics budgets available to your app. If you wish to make your app available to a broader audience, you should test and profile your app on [the representative hardware that you wish to target](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
+Windows Mixed Reality will be available on a broad class of devices, ranging from high end gaming PCs, down to broad market mainstream PCs. Depending on what market you're targeting, there's a significant difference in the available compute and graphics budgets for your application. During this porting exercise, you're likely leveraging a premium PC, and have had significant compute and graphics budgets available to your app. If you wish to make your app available to a broader audience, you should test and profile your app on [the representative hardware that you wish to target](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
 
-Both [Unity](https://docs.unity3d.com/Manual/Profiler.html) and [Visual Studio](https://docs.microsoft.com/visualstudio/profiling/index) include performance profilers, and both [Microsoft](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) and [Intel](https://software.intel.com/articles/vr-content-developer-guide) publish guidelines on performance profiling and optimization. There's an extensive discussion of performance available at [Understanding Performance for Mixed Reality](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md). Further, there are specific details for Unity under [Performance Recommendations for Unity](../../unity/performance-recommendations-for-unity.md).
+Both [Unity](https://docs.unity3d.com/Manual/Profiler.html) and [Visual Studio](/visualstudio/profiling/index) include performance profilers, and both [Microsoft](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) and [Intel](https://software.intel.com/articles/vr-content-developer-guide) publish guidelines on performance profiling and optimization. There's an extensive discussion of performance available at [Understanding Performance for Mixed Reality](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md). Further, there are specific details for Unity under [Performance Recommendations for Unity](../../unity/performance-recommendations-for-unity.md).
 
 # [Input mapping](#tab/input)
 
@@ -113,7 +113,7 @@ You can find more information about the [XR APIs here](https://docs.unity3d.com/
 
 Unity currently uses its general Input.GetButton/Input.GetAxis APIs to expose input for [the Oculus SDK](https://docs.unity3d.com/Manual/OculusControllers.html) and [the OpenVR SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html). If your apps are already using these APIs for input, this is the easiest path for supporting motion controllers in Windows Mixed Reality: you should just need to remap buttons and axes in the Input Manager.
 
-For more information, see the [Unity button/axis mapping table](../../unity/gestures-and-motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) and the [overview of the common Unity APIs](../../unity/gestures-and-motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis).
+For more information, see the [Unity button/axis mapping table](../../unity/motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) and the [overview of the common Unity APIs](../../unity/motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis).
 
 ## Windows-specific XR.WSA.Input APIs
 
@@ -125,7 +125,7 @@ If your app already builds custom input logic for each platform, you can choose 
 > [!NOTE]
 > If you're using HP Reverb G2 controllers, all input APIs will continue to work except for **InteractionSource.supportsTouchpad**, which will return false with no touchpad data.
 
-For more information, see the [overview of the UnityEngine.XR.WSA.Input APIs](../../unity/gestures-and-motion-controllers-in-unity.md#windows-specific-apis-xrwsainput).
+For more information, see the [overview of the UnityEngine.XR.WSA.Input APIs](../../unity/motion-controllers-in-unity.md#windows-specific-apis-xrwsainput).
 
 ## Grip pose vs. pointing pose
 

@@ -1,9 +1,9 @@
 ---
-title: Multi-user capabilities tutorials - 5. Integrating Azure Spatial Anchors into a shared experience
+title: Integrating Azure Spatial Anchors into a shared experience
 description: Complete this course to learn how to use Azure Spatial Anchors to anchor objects in a shared multi-user HoloLens 2 application.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, multi-user capabilities, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
 ms.localizationpriority: high

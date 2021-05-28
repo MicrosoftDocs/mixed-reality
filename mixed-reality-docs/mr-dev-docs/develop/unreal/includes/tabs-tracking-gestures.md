@@ -1,3 +1,20 @@
+# [4.26](#tab/426)
+
+### Windows Mixed Reality
+
+![Blueprint of event begin play connected to configure gestures function](../images/unreal-hand-tracking-img-09.png)
+
+Then you should add code to subscribe to the following events:
+
+![Blueprint of Windows spatial input hold, tap, and left manipulation gestures](../images/unreal/key-events.png)
+![Screenshot of Windows spatial input tap gesture options in the details panel](../images/unreal/key-events2.png)
+
+### OpenXR
+
+In OpenXR, gesture events are tracked through the input pipeline. Using hand interaction, the device can automatically recognize Tap and Hold gestures, but not the others. They are named as OpenXRMsftHandInteraction Select and Grip mappings. You don’t need to enable subscription, you should declare the events in Project Settings/Engine/Input, just like this:
+
+![Screenshot of the OpenXR action mappings](../images/unreal-hand-tracking-img-12.png)
+
 # [4.25](#tab/425)
 
 You can find the Blueprint function in under **Windows Mixed Reality Spatial Input**, and the C++ function by adding `WindowsMixedRealitySpatialInputFunctionLibrary.h` in your calling code file.
@@ -80,19 +97,3 @@ const FKey FSpatialInputKeys::RightNavigationYGesture(RightNavigationYGestureNam
 const FKey FSpatialInputKeys::RightNavigationZGesture(RightNavigationZGestureName);
 ```
 
-# [4.26](#tab/426)
-
-### Windows Mixed Reality
-
-![Blueprint of event begin play connected to configure gestures function](../images/unreal-hand-tracking-img-09.png)
-
-Then you should add code to subscribe to the following events:
-
-![Blueprint of Windows spatial input hold, tap, and left manipulation gestures](../images/unreal/key-events.png)
-![Screenshot of Windows spatial input tap gesture options in the details panel](../images/unreal/key-events2.png)
-
-### OpenXR
-
-In OpenXR, gesture events are tracked through the input pipeline. Using hand interaction, the device can automatically recognize Tap and Hold gestures, but not the others. They are named as OpenXRMsftHandInteraction Select and Grip mappings. You don’t need to enable subscription, you should declare the events in Project Settings/Engine/Input, just like this:
-
-![Screenshot of the OpenXR action mappings](../images/unreal-hand-tracking-img-12.png)

@@ -1,6 +1,6 @@
 ---
-title: Voice Input
-description: Tutorial on setting up and using voice input in HoloLens 2 and Unreal engine
+title: Voice Input in Unreal
+description: Learn how to set up and use voice input, speech mappings, and recognition in Unreal mixed reality apps for HoloLens 2 devices.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
@@ -8,12 +8,13 @@ ms.topic: article
 keywords: Windows Mixed Reality, Unreal, Unreal Engine 4, UE4, HoloLens 2, voice, voice input, speech recognition, mixed reality, development, features, documentation, guides, holograms, game development, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
-
 # Voice Input in Unreal
 
 Voice input in Unreal allows you to interact with a hologram without having to use hand gestures and is only supported HoloLens 2. Voice input on HoloLens 2 is powered by the same engine that supports speech in all other Universal Windows Apps, but Unreal uses a more limited engine to process voice input. This limits voice input features in Unreal to predefined speech mappings, which are covered in the following sections. 
 
 ## Enabling Speech Recognition
+
+If you use Windows Mixed Reality Plugin, Voice input doesn’t require any special Windows Mixed Reality APIs; it's built on the existing Unreal Engine 4 [Input](https://docs.unrealengine.com/Gameplay/Input/index.html) mapping API. If you use OpenXR, you should additionally install [Microsoft OpenXR plugin](https://github.com/microsoft/Microsoft-OpenXR-Unreal). 
 
 To enable speech recognition on HoloLens:
 1. Select **Project Settings > Platform > HoloLens > Capabilities** and enable **Microphone**. 
@@ -25,8 +26,6 @@ To enable speech recognition on HoloLens:
 ![Windows Speech recognition settings](images/unreal/speech-recognition-settings.png)
 
 3. A dialog will show up when the application first starts to ask if you want to enable the microphone. Selecting **Yes** starts voice input in the app.
-
-Voice input doesn’t require any special Windows Mixed Reality APIs; it's built on the existing Unreal Engine 4 [Input](https://docs.unrealengine.com/Gameplay/Input/index.html) mapping API. 
 
 ## Adding Speech Mappings
 

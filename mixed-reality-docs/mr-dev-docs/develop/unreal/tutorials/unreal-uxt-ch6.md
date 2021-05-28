@@ -20,11 +20,14 @@ In the previous tutorial, you added a simple button that resets the chess piece 
 
 ## [Device Only] Streaming
 
-[Holographic Remoting](https://docs.microsoft.com/windows/mixed-reality/add-holographic-remoting) means streaming data from a PC or standalone UWP device to the HoloLens 2, not switching the channel. A remoting host app receives an input data stream from a HoloLens, renders content in a virtual immersive view, and streams content frames back to HoloLens over Wi-Fi. Streaming lets you add remote immersive views into existing desktop PC software and has access to more system resources.
+[Holographic Remoting](/windows/mixed-reality/add-holographic-remoting) means streaming data from a PC or standalone UWP device to the HoloLens 2, not switching the channel. A remoting host app receives an input data stream from a HoloLens, renders content in a virtual immersive view, and streams content frames back to HoloLens over Wi-Fi. Streaming lets you add remote immersive views into existing desktop PC software and has access to more system resources.
 
 If you're going this route with the chess app, you'll need a few things:
 
 1.	Install the **Holographic Remoting Player** from the Microsoft Store on your HoloLens 2 and run the app. Note your IP address displayed in the app.
+    * Go to **Edit > Project Settings** and sure the Windows **Default RHI** is set to **Default** or **D3D11**:
+
+![Default RHI](../images/unreal/performance-recommendations-img-09.png)
 
 2.	Back in the Unreal editor, go to **Edit > Project Settings** and check **Enable Remoting** in the **Holographic Remoting** section.
 
@@ -73,7 +76,7 @@ Once you’re connected, click the drop-down arrow to the right of the **Play** 
 5. Go to **File > Package Project** and select **HoloLens**.
     * Create a new folder to save your package in and click **Select Folder**.
 
-6.	Open the [Windows Device Portal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) once the app is packaged, go to **Views > Apps** and find the **Deploy apps** section.
+6.	Open the [Windows Device Portal](/windows/mixed-reality/using-the-windows-device-portal) once the app is packaged, go to **Views > Apps** and find the **Deploy apps** section.
 
 7.	Click **Browse...**, go to your **ChessApp.appxbundle** file and click **Open**.
 
@@ -83,7 +86,7 @@ Once you’re connected, click the drop-down arrow to the right of the **Play** 
 8.	Click **Install**
     * You can now go to **All Apps** and tap the newly installed app to run it, or start the app directly from the **Windows Device Portal**. 
 
-Congratulations! Your HoloLens mixed reality application is finished and ready to go. However, you're not at the end of the road. MRTK has lots of standalone features that you can add to your projects, including spatial mapping, gaze and voice input, and even QR codes. More information on these features can be found in the [Unreal development overview](https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview).
+Congratulations! Your HoloLens mixed reality application is finished and ready to go. However, you're not at the end of the road. MRTK has lots of standalone features that you can add to your projects, including spatial mapping, gaze and voice input, and even QR codes. More information on these features can be found in the [Unreal development overview](/windows/mixed-reality/unreal-development-overview).
 
 ## Next Development Checkpoint
 
