@@ -146,7 +146,7 @@ From the Project window, click-and-drag the **Cube** prefab on to the Hierarchy 
 * **Rotation**: X = 0, Y = 0, Z = 0
 * **Scale**: X = 1, Y = 1, Z = 1
 
-![Adding cube to the Scene](images/mr-learning-base/base-02-section8-step1-1.png)
+![Adding cube to the Scene](images/mr-learning-base/base-02-section8-step1-1.PNG)
 
 To focus in on the objects in the scene, you can double-click on the **Cube** object, and then zoom slightly in again:
 
@@ -154,11 +154,11 @@ To interact and grab an object with tracked hands, the object must have Collider
 
 With the **Cube** still selected in the Hierarchy window, in the Inspector window ,click on **Add Component** button, then search and select **Object Manipulator** script to add the Object Manipulator script to the cube object.
 
-![adding Object manupulator to the cube](images/mr-learning-base/base-02-section8-step1-2.png)
+![adding Object manupulator to the cube](images/mr-learning-base/base-02-section8-step1-2.PNG)
 
 Repeat the same to add **Near Interaction Grabbable script** to the cube
 
-![adding Near Interaction Grabable to the cube](images/mr-learning-base/base-02-section8-step1-3.png)
+![adding Near Interaction Grabable to the cube](images/mr-learning-base/base-02-section8-step1-3.PNG)
 
 > [!NOTE]
 > When you add a Object Manipulator (Script), in this case, the Constraint Manager (Script) is automatically added because Object Manipulator (Script) depends on it.
@@ -168,7 +168,7 @@ Repeat the same to add **Near Interaction Grabbable script** to the cube
 
 To test this in the Unity editor, you can enter the play mode and hold the **LeftShift** or **Space** key to enable the controller, Mouse movement will move the controller and also it can be moved further or closer to the camera using the mouse wheel. Once the pointer is on the Cube  press and hold **Left Mouse Button** to move the the Cube object.
 
-![Game Mode](images/mr-learning-base/base-02-section8-step1-4.png)
+![Game Mode](images/mr-learning-base/base-02-section8-step1-4.PNG)
 
 ## Building your application to your HoloLens 2
 
