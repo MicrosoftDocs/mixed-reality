@@ -70,17 +70,17 @@ Download and import the Microsoft Spatializer  <a href="https://github.com/micro
 
 Once you import the Microsoft Spatializer into your unity project, **MRTK Project Configurator** window will appear, use the **Audio spatializer** dropdown to select the **Microsoft Spatializer**, then click the Apply button to apply the setting:
 
-![Project Settings showing spatializer plugin](images/spatial-audio/spatial-audio-01-section3-step1-1.png)
+![Project Settings showing spatializer plugin](images/spatial-audio/spatial-audio-01-section3-step1-1.PNG)
 
 you can also manually enable the Microsoft Spatializer: Open **Edit -> Project Settings -> Audio**, and change **Spatializer Plugin** to "Microsoft Spatializer".
 
-![Project Settings showing spatializer plugin](images/spatial-audio/spatial-audio-01-section3-step1-2.png)
+![Project Settings showing spatializer plugin](images/spatial-audio/spatial-audio-01-section3-step1-2.PNG)
 
 ## Enable spatial audio on your workstation
 
 On desktop versions of Windows, spatial audio is disabled by default. Enable it by right-clicking on the volume icon in the task bar. To get the best representation of what you'll hear on HoloLens 2, choose **Spatial sound -> Windows Sonic for Headphones**.
 
-![Desktop spatial audio settings](images/spatial-audio/spatial-audio-01-section4-step1-1.png)
+![Desktop spatial audio settings](images/spatial-audio/spatial-audio-01-section4-step1-1.PNG)
 
 > [!NOTE]
 > This setting is only required if you plan to test your project in the Unity editor.
