@@ -1,5 +1,5 @@
 ---
-title: EyeTracking_ExampleOverview
+title: Eye Tracking Example Overview
 description: Example to build eyetracking in MRTK
 author: CDiaz-MS
 ms.author: cadia

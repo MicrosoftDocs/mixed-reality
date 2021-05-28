@@ -1,5 +1,5 @@
 ---
-title: InteractiveElement
+title: Interactive Element
 description: Documentation of InteractiveElement MRTK
 author: CDiaz-MS
 ms.author: cadia

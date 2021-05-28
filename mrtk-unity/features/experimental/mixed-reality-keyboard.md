@@ -1,5 +1,5 @@
 ---
-title: README_MixedRealityKeyboard
+title: Mixed Reality Keyboard
 description: description on How to use mixed reality keyboard
 author: CDiaz-MS
 ms.author: cadia

@@ -16,7 +16,7 @@ The hand menu is one of the most unique UX patterns in HoloLens 2. It allows you
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4AJAg]
 
-You'll find our recommended best practices for working with hand menus in the list below. You can also find an example scene demonstrating the hand menu in [MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu).
+You'll find our recommended best practices for working with hand menus in the list below. You can also find an example scene demonstrating the hand menu in [MRTK](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu).
 
 <br>
 
@@ -166,7 +166,7 @@ We have done user research with different menus layouts and locations, the follo
 
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides scripts and example scenes for the hand menu. The HandConstraintPalmUp solver script allows you to attach any objects to the hands with various configurable options. MRTK's hand menu examples include useful options such as flat palm and gaze requirement for preventing false activation.
 
-* [Hand Menu Documentations](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)
+* [Hand Menu Documentations](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)
 * [Hand Menu Example Scene](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/main/Assets/MRTK/Examples/Demos/HandTracking/Scenes/HandMenuExamples.unity)
 
 You can try hand menu examples in HoloLens 2 with MRTK Examples Hub app.

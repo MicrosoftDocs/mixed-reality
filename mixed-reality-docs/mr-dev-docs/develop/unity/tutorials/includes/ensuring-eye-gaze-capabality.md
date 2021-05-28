@@ -2,7 +2,7 @@
 
 ## Ensuring Eye Gaze Input capability and adding Eye Gaze Data Provider
 
-In the Unity menu, select Mixed Reality > Toolkit > Utilities > **Configure Unity Project** to open the **MRTK Project Configurator** window, then in the **UWP Capabilities** section, verify that **Enable Eye Gaze Input Capability** is greyed out:
+In the Unity menu, select Mixed Reality Toolkit > Utilities > **Configure Unity Project** to open the **MRTK Project Configurator** window, then in the **UWP Capabilities** section, verify that **Enable Eye Gaze Input Capability** is greyed out:
 
 ![Unity MRTK Project Configurator window](../images/mr-learning-base/base-08-section1-step1-1.png)
 

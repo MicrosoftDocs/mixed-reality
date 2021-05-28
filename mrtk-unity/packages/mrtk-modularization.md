@@ -1,5 +1,5 @@
 ---
-title: MRTK_Modularization
+title: MRTK Modularization
 description: Describes Componentization in MRTK.
 author: davidkline-ms
 ms.author: davidkl

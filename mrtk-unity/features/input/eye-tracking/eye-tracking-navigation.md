@@ -1,5 +1,5 @@
 ---
-title: EyeTracking_Navigation
+title: Eye Tracking Navigation
 description: How to use eye targeting for Navigation in MRTK
 author: CDiaz-MS
 ms.author: cadia
