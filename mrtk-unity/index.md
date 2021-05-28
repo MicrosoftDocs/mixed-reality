@@ -21,19 +21,26 @@ MRTK-Unity is a Microsoft-driven project that provides a set of components and f
 * Operates as an **extensible framework** that provides developers the ability to swap out core components.
 * **Supports a wide range of platforms**:
 
+::: moniker range=">= mrtkunity-2021-05"
 | Platform | Supported Devices |
 |---|---|
-::: moniker range=">= mrtkunity-2021-05"
 | OpenXR (Unity 2020.3) | Microsoft HoloLens 2 <br> Windows Mixed Reality headsets |
-::: moniker-end
-::: moniker range="< mrtkunity-2021-05"
-| OpenXR (Preview in MRTK 2.6, Unity 2020.3) | Microsoft HoloLens 2 <br> Windows Mixed Reality headsets |
-::: moniker-end
 | Windows Mixed Reality | Microsoft HoloLens <br> Microsoft HoloLens 2 <br> Windows Mixed Reality headsets  |
 | Oculus (Unity 2019.3 or newer) | Oculus Quest |
 | OpenVR |  Windows Mixed Reality headsets <br> HTC Vive <br> Oculus Rift |
 | Ultraleap Hand Tracking | Ultraleap Leap Motion controller |
 | Mobile | iOS and Android |
+::: moniker-end
+::: moniker range="< mrtkunity-2021-05"
+| Platform | Supported Devices |
+|---|---|
+| OpenXR (Preview in MRTK 2.6, Unity 2020.3) | Microsoft HoloLens 2 <br> Windows Mixed Reality headsets |
+| Windows Mixed Reality | Microsoft HoloLens <br> Microsoft HoloLens 2 <br> Windows Mixed Reality headsets  |
+| Oculus (Unity 2019.3 or newer) | Oculus Quest |
+| OpenVR |  Windows Mixed Reality headsets <br> HTC Vive <br> Oculus Rift |
+| Ultraleap Hand Tracking | Ultraleap Leap Motion controller |
+| Mobile | iOS and Android |
+::: moniker-end
 
 ## Getting started with MRTK
 
