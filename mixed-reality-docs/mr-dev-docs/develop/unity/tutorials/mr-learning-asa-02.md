@@ -28,40 +28,13 @@ First, follow the [Initializing your project and deploying your first applicatio
 2. [Switching the build platform](mr-learning-base-02.md#switching-the-build-platform)
 3. [Importing the TextMeshPro Essential Resources](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 4. [Importing the Mixed Reality Toolkit and Configuring the Unity project](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
-5. [Creating and configuring the scene](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) and give the scene a suitable name, for example, *AzureSpatialAnchors*
+5. [Creating and configuring the scene](mr-learning-base-02.md#creating-and-configuring-the-scene) and give the scene a suitable name, for example, *AzureSpatialAnchors*
 
-Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) instructions to:
+Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) instructions to ensure the MRTK configuration profile for your scene is **DefaultHoloLens2ConfigurationProfile**  and change the display options for the spatial awareness mesh to **Occlusion**.
 
-1. Change the **MRTK configuration profile** for to the **DefaultHoloLens2ConfigurationProfile**
-1. Change the **spatial awareness mesh display options** to **Occlusion**.
+## Installing inbuilt Unity packages and Importing the tutorial assets
 
-## Installing inbuilt Unity packages
-
-In the Unity menu, select **Window** > **Package Manager** to open the Package Manager window, then select **AR Foundation** and click the **Install** button to install the package:
-
-![Unity Package Manager with AR Foundation selected](images/mr-learning-asa/asa-02-section2-step1-1.png)
-
-> [!NOTE]
-> You are installing the AR Foundation package because the Azure Spatial Anchors SDK requires it, which you will import in the next section.
-
-## Importing the tutorial assets
-
-Add AzurespatialAnchors SDK V2.7.1 into your unity project, to add the packages please follow this [tutorial](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)
-
-Download and **import** the following Unity custom packages **in the order they are listed**:
-
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.5.3.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.5.3/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.5.3.unitypackage)
-
-After you have imported the tutorial assets your Project window should look similar to this:
-
-![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-asa/asa-02-section3-step1-1.png)
-
-> [!NOTE]
-> If you see any CS0618 warnings regarding 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' is obsolete, you can ignore these warnings.
-
-> [!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Importing the tutorial assets](mr-learning-base-02.md#importing-the-tutorial-assets) instructions.
+[!INCLUDE[](includes/installing-packages-for-asa.md)]
 
 ## Preparing the scene
 
@@ -78,6 +51,16 @@ In the Project window, navigate to the **Assets** > **MRTK.Tutorials.AzureSpatia
 
 > [!TIP]
 > If you find the large icons in your scene, for example, the large framed 'T' icons distracting, you can hide these by <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">toggling the Gizmos</a> to the off position, as shown in the image above.
+
+Select **MixedRealityToolkit** object in the Hierarchy window, use the **Add Component** button in the Inspector window to add the following components:
+
+* AR Anchor Manager (Script)
+* DisableDiagnosticsSystem (Script)
+
+![Unity MixedRealityToolkit object with AR Anchor Manager and DisableDiagnosticsSystem components added ](images/mr-learning-asa/asa-02-section4-step1-2.PNG)
+
+> [!NOTE]
+> When you add the AR Anchor Manager (Script) component, the AR Session Origin (Script) component is automatically added because it is required by the AR Anchor Manager (Script) component.
 
 ## Configuring the buttons to operate the scene
 
@@ -147,15 +130,15 @@ Azure Spatial Anchors can not run in Unity, so to test the Azure Spatial Anchors
 When the app runs on your device, follow the on-screen instructions displayed on the Azure Spatial Anchor Tutorial Instructions panel:
 
 1. Move the cube to a different location
-1. Start Azure Session
-1. Create Azure Anchor (creates an anchor at the location of the cube).
-1. Stop Azure Session
-1. Remove Local Anchor (allows the user to move the cube)
-1. Move the cube somewhere else
-1. Start Azure Session
-1. Find Azure Anchor (positions the cube at the location from step 3)
-1. Delete Azure Anchor
-1. Stop Azure session
+2. Start Azure Session
+3. Create Azure Anchor (creates an anchor at the location of the cube).
+4. Stop Azure Session
+5. Remove Local Anchor (allows the user to move the cube)
+6. Move the cube somewhere else
+7. Start Azure Session
+8. Find Azure Anchor (positions the cube at the location from step 3)
+9. Delete Azure Anchor
+10. Stop Azure session
 
 ![Unity with Instructions object selected](images/mr-learning-asa/asa-02-section7-step1-1.png)
 
