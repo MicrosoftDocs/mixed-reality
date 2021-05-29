@@ -105,5 +105,5 @@ Saved scene files can be accessed through the [device portal](/windows/mixed-rea
 
 ## See Also
 
-* [Spatial Mapping Overview WMR](/windows/mixed-reality/scene-understanding)
-* [Spatial Mapping Overview WMR](/windows/mixed-reality/scene-understanding-sdk)
+* [Scene Understanding Overview](/windows/mixed-reality/scene-understanding)
+* [Scene Understanding SDK Overview](/windows/mixed-reality/scene-understanding-sdk)
