@@ -110,6 +110,8 @@ Let's begin by setting up the HTML web page that will contain the babylon.js sce
 
     Here, we have created an [ArcRotateCamera](https://doc.babylonjs.com/divingDeeper/cameras/camera_introduction#arc-rotate-camera) which points almost completely downwards and targets the origin point of the space. The light we have created is a [HemisphericLight](https://doc.babylonjs.com/divingDeeper/lights/lights_introduction#the-hemispheric-light) which points to the sky, which is very useful for simulating an ambient space. We have also dimmed the light a little by lowering its intensity.
 
+    If you need a refresher on how to create a camera and a light, revisit the [Prepare Scene section of the Hello World Tutorial Series](../babylonjs-webxr-helloworld/prepare-scene-02.md#add-a-camera) before proceeding to the next step.
+
 1. Finally, since we are developing for a WebXR platform, we will need to [enable the XR experience](https://doc.babylonjs.com/divingDeeper/webXR/introToWebXR) in the scene by inserting the following line before `return scene;`:
 
     ```javascript
