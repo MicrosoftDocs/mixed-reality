@@ -25,7 +25,7 @@ Before you start working with user input, you'll need to add the Mixed Reality U
 
 1. Open the Epic Games Launcher. Navigate to Unreal Engine Marketplace and search for "[Mixed Reality UX Tools](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-ux-tools)". Install the plugin to your engine.
 
-![Unreal Marketplace](images/unreal-uxt/2-openxr-plugin.PNG)
+![Unreal Marketplace](images/unreal-uxt/2-uxt-plugin.PNG)
 
 2. Back in the Unreal editor, go to **Project Settings** > **Plugins** and search for "Mixed Reality UX Tools". Ensure the plugin is enabled and restart the editor if prompted.
 
