@@ -1,3 +1,8 @@
+# [Unity 2020 + OpenXR](#tab/openxr)
+
+> [!NOTE]
+> Android/IOS Build for OpenXR is not supported at this time.
+
 # [Unity 2020 + Windows XR Plugin](#tab/winxr)
 
 In this section, you will upgrade or install the following inbuilt packages:
@@ -15,11 +20,6 @@ add the above mentioned packages from the Unity package manager.
 
 > [!NOTE]
 > If you are developing this project for Android, there is no need to install the ARKit XR Plugin package. Similarly, if you are developing this project for iOS, you do not need to install the ARCore XR Plugin.
-
-# [Unity 2020 + OpenXR](#tab/openxr)
-
-> [!NOTE]
-> Android/IOS Build for OpenXR is not supported at this time.
 
 # [Legacy WSA](#tab/wsa)
 

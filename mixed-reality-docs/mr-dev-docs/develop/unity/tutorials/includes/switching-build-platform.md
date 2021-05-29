@@ -1,21 +1,3 @@
-# [Unity 2019/2020 + Windows XR Plugin](#tab/winxr)
-
-In the Unity menu, select **File** > **Build Settings...** to open the Build Settings window:
-
-![Unity Build Settings... menu path](../images/mr-learning-base/base-02-section2-step1-1.png)
-
-In the Build Settings window, select **Universal Windows Platform** and click the **Switch Platform** button:
-
-![Unity Build Settings window with UWP selected to switch platform from Standalone](../images/mr-learning-base/base-02-section2-step1-2.png)
-
-Wait for Unity to finish switching the platform:
-
-![Unity switching platform in progress](../images/mr-learning-base/base-02-section2-step1-3.png)
-
-When Unity has finished switching the platform, click the **x** icon to close the Build Settings window:
-
-![Unity Build Window with close icon highlighted](../images/mr-learning-base/base-02-section2-step1-4.png)
-
 # [Unity 2020 + OpenXR](#tab/openxr)
 
 In the Unity menu, select **File** > **Build Settings...** to open the Build Settings window:
@@ -43,6 +25,24 @@ Wait for Unity to finish switching the platform:
 When Unity has finished switching the platform, click the  **x** icon to close the Build Settings window:
 
 ![Unity Build Window with close icon highlighted](../images/mr-learning-base/base-02-section2-step1-4-openxr.png)
+
+# [Unity 2019/2020 + Windows XR Plugin](#tab/winxr)
+
+In the Unity menu, select **File** > **Build Settings...** to open the Build Settings window:
+
+![Unity Build Settings... menu path](../images/mr-learning-base/base-02-section2-step1-1.png)
+
+In the Build Settings window, select **Universal Windows Platform** and click the **Switch Platform** button:
+
+![Unity Build Settings window with UWP selected to switch platform from Standalone](../images/mr-learning-base/base-02-section2-step1-2.png)
+
+Wait for Unity to finish switching the platform:
+
+![Unity switching platform in progress](../images/mr-learning-base/base-02-section2-step1-3.png)
+
+When Unity has finished switching the platform, click the **x** icon to close the Build Settings window:
+
+![Unity Build Window with close icon highlighted](../images/mr-learning-base/base-02-section2-step1-4.png)
 
 # [Legacy WSA](#tab/wsa)
 
