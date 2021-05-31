@@ -1,8 +1,3 @@
-# [Unity 2020 + OpenXR](#tab/openxr)
-
-> [!NOTE]
-> Android/IOS Build for OpenXR is not supported at this time.
-
 # [Unity 2020 + Windows XR Plugin](#tab/winxr)
 
 In this section, you will upgrade or install the following inbuilt packages:
