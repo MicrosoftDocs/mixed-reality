@@ -14,6 +14,8 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK
 
 <br>
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWyXHW]
+
 MRTK-Unity is a Microsoft-driven project that provides a set of components and features, used to accelerate cross-platform MR app development in Unity. Here are some of its functions:
 
 * Provides the **cross-platform input system and building blocks for spatial interactions and UI**.
