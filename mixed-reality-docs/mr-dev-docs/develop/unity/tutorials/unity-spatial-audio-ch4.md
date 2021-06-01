@@ -23,7 +23,7 @@ In this tutorial, you will learn how to Enable and disable spatialization at run
 
  Right-click in the Project window and choose **Create** > **C# Script** to create a new C# script, enter a suitable name for the script, for example, _SpatializeOnOff_:
 
-![Create script](images/spatial-audio/spatial-audio-04-section1-step1-1.png)
+![Create script](images/spatial-audio/spatial-audio-04-section1-step1-1.PNG)
 
 Double-click the script in the Project window to open it in Visual Studio. Replace the default script contents with the following:
 
@@ -93,13 +93,13 @@ public class SpatializeOnOff : MonoBehaviour
 
 Select **Quad** in the Hierarchy and in the Inspector window, use the Add Component button to add **SpatializeOnOff(Script)**
 
-![Add script to quad](images/spatial-audio/spatial-audio-04-section2-step1-1.png)
+![Add script to quad](images/spatial-audio/spatial-audio-04-section2-step1-1.PNG)
 
 In the Hierarchy locate **PressableButtonHoloLens2** > **IconAndText** > **TextMeshPro**.
 
 With the **Quad** object still selected in the Hierarchy, in the Inspector window, locate the **Spatialize On Off (Script)** component and Drag and drop **TextMeshPro** Component of the PressableButtonHoloLens2.
 
-![Find the PressableButtonHoloLens2 object in the hierarchy](images/spatial-audio/spatial-audio-04-section2-step1-2.png)
+![Find the PressableButtonHoloLens2 object in the hierarchy](images/spatial-audio/spatial-audio-04-section2-step1-2.PNG)
 
 To set the button to call the **SpatializeOnOff** script when the button is released You need to configure interactable script.
 
@@ -109,7 +109,7 @@ In the Hierarchy window, select the **PressableButtonHoloLens2**. In the Inspect
 
 * Click the **No Function** dropdown of the same event. Then select **SpatializeOnOff** > **SwapSpatialization ()** to turn on and off the Spatial audio
 
-![Button action settings](images/spatial-audio/spatial-audio-04-section2-step1-3.png)
+![Button action settings](images/spatial-audio/spatial-audio-04-section2-step1-3.PNG)
 
 ## Congratulations
 
