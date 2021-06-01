@@ -42,9 +42,11 @@ The quickest way to get started with Scene Understanding is to check out the sam
 
 In Unity, use the Project Explorer to open the scene file in `Examples/Experimental/SceneUnderstanding/Scenes/SceneUnderstandingExample.unity` and press play!
 
+::: moniker range="< mrtkunity-2021-05"
 > [!IMPORTANT]
-> When using the Mixed Reality Feature Tool or otherwise importing via UPM, please import the Demos - SpatialAwareness sample before importing the Experimental - SceneUnderstanding sample due to a dependency issue. Please see [this GitHub issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431) for more information.
+> Only applies to MRTK 2.6.0 - When using the Mixed Reality Feature Tool or otherwise importing via UPM, please import the Demos - SpatialAwareness sample before importing the Experimental - SceneUnderstanding sample due to a dependency issue. Please see [this GitHub issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431) for more information.
 
+::: moniker-end
 The scene demonstrates the following:
 
 * Visualization of observed Scene Objects with in application UI for configuring the observer
@@ -52,9 +54,17 @@ The scene demonstrates the following:
 * Saving scene data to device for offline development
 * Loading previously saved scene data (.bytes files) to support in-editor development workflow
 
+> [!IMPORTANT]
+> By default the `ShouldLoadFromFile` property of the observer is set to false. In order to see the visualization of a serialized sample room, please refer to the [configuring observer service](#configuring-the-observer-service) section below and set the property to true in the editor.
 ::: moniker range="< mrtkunity-2021-05"
+
 > [!NOTE] 
 > The sample scene is based on the Legacy XR pipeline. If you are using the XR SDK pipeline you should modify the profiles accordingly. The provided Scene Understanding Spatial Awareness System profile (`DemoSceneUnderstandingSystemProfile`) and the Scene Understanding Observer profiles (`DefaultSceneUnderstandingObserverProfile` and `DemoSceneUnderstandingObserverProfile`) works for both pipelines.
+::: moniker-end
+::: moniker range="= mrtkunity-2021-05"
+
+> [!NOTE] 
+> The sample scene logs a `There is no active AsyncCoroutineRunner when an action is posted.` warning under certain circumstance due to the initialization/thread execution order. If you can confirm the `AsyncCoroutineRunner` component is attached to the "Demo Controller" GameObject and the component/GameObject stay enabled/active in the scene (the default case), the warning can be safely ignored.
 ::: moniker-end
 
 #### Configuring the observer service
@@ -95,5 +105,5 @@ Saved scene files can be accessed through the [device portal](/windows/mixed-rea
 
 ## See Also
 
-* [Spatial Mapping Overview WMR](/windows/mixed-reality/scene-understanding)
-* [Spatial Mapping Overview WMR](/windows/mixed-reality/scene-understanding-sdk)
+* [Scene Understanding Overview](/windows/mixed-reality/scene-understanding)
+* [Scene Understanding SDK Overview](/windows/mixed-reality/scene-understanding-sdk)
