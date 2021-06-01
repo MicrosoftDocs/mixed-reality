@@ -8,29 +8,29 @@
   href: mr-learning-overview.md
 - name: Expand your design process
   href: case-study-expanding-the-design-process-for-mixed-reality.md
-- name: Running the MRTK Examples Hub
-  href: /windows/mixed-reality/mrtk-unity/running-examples-hub
 - name: Designing holograms
   href: designing-holograms.md
 - name: Case studies overview
   href: case-studies-overview.md
-- name: HoloLens hardware
+- name: Hardware
   items:
-  - name: HoloLens 2 hardware details
-    href: /hololens/hololens2-hardware
-  - name: HoloLens (1st gen) hardware details
-    href: /hololens/hololens1-hardware
-- name: Immersive headsets
-  items:
-  - name: Immersive headset hardware details
-    href: immersive-headset-hardware-details.md
-  - name: Navigating the Windows Mixed Reality home
-    href: navigating-the-windows-mixed-reality-home.md
-  - name: VR enthusiast guide
-    href: /windows/mixed-reality/enthusiast-guide/
-  - name: Location based entertainment
-    href: location-based-experiences.md
+  - name: HoloLens 
+    items: 
+    - name: HoloLens 2 hardware details
+      href: /hololens/hololens2-hardware
+    - name: HoloLens (1st gen) hardware details
+      href: /hololens/hololens1-hardware
+  - name: Immersive headsets
+    items:
+    - name: Immersive headset hardware details
+      href: immersive-headset-hardware-details.md
+    - name: Navigating the Windows Mixed Reality home
+      href: navigating-the-windows-mixed-reality-home.md
+    - name: VR enthusiast guide
+      href: /windows/mixed-reality/enthusiast-guide/
+    - name: Location based entertainment
+      href: location-based-experiences.md
+  - name: Accessories
+    href: hardware-accessories.md
 - name: Community resources
   href: community.md
-- name: Hardware accessories
-  href: hardware-accessories.md

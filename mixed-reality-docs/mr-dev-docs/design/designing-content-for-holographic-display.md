@@ -80,7 +80,7 @@ To improve holographic reprojection, or hologram stability, an application can s
 
 By default, transparent or translucent objects don't write depth to allow for proper blending. Ways to mitigate this issue include, using opaque objects, ensuring translucent objects appear close to opaque objects (such as a translucent button in front of an opaque backplate), forcing translucent objects to write depth (not applicable in all scenarios), or rendering proxy objects, which only contribute depth values at the end of the frame.
 
-Solutions within MRTK-Unity: https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/hologram-stabilization#depth-buffer-sharing-in-unity  
+Solutions within MRTK-Unity: /windows/mixed-reality/mrtk-unity/performance/hologram-stabilization#depth-buffer-sharing-in-unity  
 
 By using a solid and opaque backplate, we can secure legibility and interaction confidence.
 
@@ -98,9 +98,9 @@ If your project must use transparent objects, try to minimize the number of pixe
 
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides many UI building block examples based on the dark color schemes.
 
-* [Near Menu](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/near-menu)
-* [Dialog](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/dialog)
-* [Hand Menu](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)
+* [Near Menu](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/near-menu)
+* [Dialog](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/dialog)
+* [Hand Menu](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)
 
 <br>
 

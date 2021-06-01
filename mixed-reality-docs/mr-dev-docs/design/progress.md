@@ -87,7 +87,7 @@ It's important to provide the user information about what is happening. In mixed
 ## Progress indicator in MRTK (Mixed Reality Toolkit) for Unity
 
 * [MRTK - Progress indicator prefabs](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/Features/UX/Prefabs/ProgressIndicators)
-* [MRTK - Scene transition service](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/extensions/scene-transition-service)
+* [MRTK - Scene transition service](/windows/mixed-reality/mrtk-unity/features/extensions/scene-transition-service)
 
 
 <br>
