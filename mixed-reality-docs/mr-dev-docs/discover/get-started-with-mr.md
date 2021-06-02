@@ -146,9 +146,7 @@ If you're curious to see how the different Mixed Reality hardware and services w
         **[Come to an event](../whats-new/sf-academy-events.md)**<br>
         See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
     :::column-end:::
-:::row-end::
-
-<br>
+:::row-end:::
 
 <br>
 
