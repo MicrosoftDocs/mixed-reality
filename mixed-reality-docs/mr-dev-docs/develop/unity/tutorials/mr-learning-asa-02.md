@@ -59,6 +59,10 @@ Select **MixedRealityToolkit** object in the Hierarchy window, use the **Add Com
 
 ![Unity MixedRealityToolkit object with AR Anchor Manager and DisableDiagnosticsSystem components added ](images/mr-learning-asa/asa-02-section4-step1-2.PNG)
 
+> [!WARNING]
+> There is a known issue with ASA v2.9.0 and v2.10.0-preview.1 that requires two additional objects to be placed in the scene. Please use the **Add Component** button in the inspector window to add an AR Camera Manager (Script) and an AR Session (Script) to the **MixedRealityToolkit** object. Be sure to uncheck the checkbox for the Camera that is created automatically while adding the AR Camera Manager (Script). This issue will be addressed in the full release of ASA v2.10.0.
+> 
+
 > [!NOTE]
 > When you add the AR Anchor Manager (Script) component, the AR Session Origin (Script) component is automatically added because it is required by the AR Anchor Manager (Script) component.
 
