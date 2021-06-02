@@ -13,7 +13,12 @@ keywords: Unity, mixed reality, development, getting started, new project, porti
 
 ![Unity banner logo](../images/unity_logo_banner.png)
 
-The fastest path to building a HoloLens [mixed reality app](../../design/app-views.md) in [Unity](https://unity.com) is with the Mixed Reality Toolkit. If you're brand new to Unity, we recommend that you explore the beginner level [tutorials](https://unity3d.com/learn/tutorials) on the Unity Learn platform before continuing. It's also a good idea to visit the comprehensive [Asset Store](https://assetstore.unity.com) and the [Unity Mixed Reality forums](https://forum.unity3d.com/forums/hololens.102/) to engage with the online community building mixed reality apps. You never know what cool assets or solutions you might find out in the wild. When you're ready to get started with MRTK head to the development checkpoints below!
+The fastest path to building a HoloLens mixed reality app in Unity is with the Mixed Reality Toolkit (MRTK). If you're brand new to Unity, we recommend that you explore the beginner level [tutorials](https://unity3d.com/learn/tutorials) on the Unity Learn platform before continuing. 
+
+If you're brand new to mixed reality development in Unity and want to get a project up and running with the MRTK, check out our Microsoft Learn module. You can always come back here for more intermediate and advanced topics once you get the hang of things!
+
+> [!div class="nextstepaction"]
+> [Set up a mixed reality Unity project with MRTK](/learn/modules/mixed-reality-toolkit-project-unity)
 
 > [!IMPORTANT]
 > Take a look at our **[porting guides](../porting-apps/porting-overview.md)** if you have an existing Unity project that you want to bring over to HoloLens 2. We have guides for projects that are using HTK, MRTK v1, or SteamVR.
@@ -108,9 +113,9 @@ Before going out into the world of mixed reality on your own, we recommend takin
 
 |  Topic  |  Description  |
 | --- | --- |
-| [MRTK Architecture overview](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/architecture/overview) | Get a deeper understanding of how the MRTK SDK works in your projects |
-| [Settings and performance](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started) | Profile your app, update your Unity settings, and get the best hologram stabilization performance available |
-| [Getting started with MRTK + XR](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk) | Transfer over to the alternative XR pipeline provided by Unity |
+| [MRTK Architecture overview](/windows/mixed-reality/mrtk-unity/architecture/overview) | Get a deeper understanding of how the MRTK SDK works in your projects |
+| [Settings and performance](/windows/mixed-reality/mrtk-unity/performance/perf-getting-started) | Profile your app, update your Unity settings, and get the best hologram stabilization performance available |
+| [Getting started with MRTK + XR](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk) | Transfer over to the alternative XR pipeline provided by Unity |
 
 ### Unity resources
 

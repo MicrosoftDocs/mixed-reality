@@ -304,7 +304,7 @@ Therefore, reducing the number of operations in the fragment shader can generall
 
 #### Unity Standard shader alternatives
 
-Instead of using a physically based rendering (PBR) or another high-quality shader, look at utilizing a more performant and cheaper shader. The [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) provides the [MRTK standard shader](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader) that has been optimized for mixed reality projects.
+Instead of using a physically based rendering (PBR) or another high-quality shader, look at utilizing a more performant and cheaper shader. The [Mixed Reality Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) provides the [MRTK standard shader](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader) that has been optimized for mixed reality projects.
 
 Unity also provides an unlit, vertex lit, diffuse, and other simplified shader options that are faster compared to the Unity Standard shader. See [Usage and Performance of Built-in Shaders](https://docs.unity3d.com/Manual/shader-Performance.html) for more detailed information.
 

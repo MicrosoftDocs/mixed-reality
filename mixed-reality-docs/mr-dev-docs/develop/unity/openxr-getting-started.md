@@ -16,7 +16,7 @@ For developers targeting Unity 2020 to build HoloLens 2 or Mixed Reality applica
 
 * Latest Unity 2020.3 LTS, recommend 2020.3.6f1 or above.
 * Latest Unity OpenXR plugin, recommend 1.2 or later
-* Latest [tools for HoloLens 2 development](/windows/mixed-reality/develop/install-the-tools?tabs=unity#installation-checklist)
+* Latest [tools for HoloLens 2 development](../install-the-tools.md?tabs=unity#installation-checklist)
 * Latest MRTK (optional), recommend version 2.6 or later
 * Latest Mixed Reality OpenXR Plugin, recommend version 0.9.5 or later
 
@@ -28,7 +28,7 @@ For developers targeting Unity 2020 to build HoloLens 2 or Mixed Reality applica
 MRTK for Unity provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. MRTK version 2 intends to speed up application development for Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and OpenVR platform. The project is aimed at reducing barriers to entry, creating mixed reality applications, and contributing back to the community as we all grow.
 
 > [!div class="nextstepaction"]
-> [Set up your project using MRTK](/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02?tabs=openxr)
+> [Set up your project using MRTK](./tutorials/mr-learning-base-02.md?tabs=openxr)
 
 Take a look at [MRTK's documentation](/windows/mixed-reality/mrtk-unity) for more feature details.
 
