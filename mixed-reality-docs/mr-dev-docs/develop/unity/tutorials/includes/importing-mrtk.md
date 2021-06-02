@@ -103,7 +103,6 @@ In the Project Settings window, select **Player** > **Publishing Settings**, the
 > [!TIP]
 > The 'Product Name' is the name displayed in the HoloLens Start menu. To make the app easier to locate during development, add an underscore in front of the name to sort it to the top.
 
-
 # [Unity 2019/2020 + Windows XR Plugin](#tab/winxr)
 
 Once **MixedRealityFeatureTool** is opened, to access preview releases click on **Settings** and enable **Show preview releases** under **Feature** tab, then click on **ok** to save the settings.

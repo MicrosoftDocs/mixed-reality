@@ -20,7 +20,6 @@ After you have imported the tutorial assets your Project window should look simi
 > [!TIP]
 > For a reminder on how to import a Unity custom package, you can refer to the [Importing the tutorial assets](../mr-learning-base-02.md#importing-the-tutorial-assets) instructions.
 
-
 # [Unity 2020 + Windows XR Plugin](#tab/winxr)
 
 In the Unity menu, select **Window** > **Package Manager** to open the Package Manager window, then select **AR Foundation > 4.0.12** version and click the **Install** button to install the package:
