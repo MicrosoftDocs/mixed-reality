@@ -23,7 +23,7 @@ In Unity, use the menu Window > Package Manager > In Project > Custom and select
 <img src="../images/hand-interaction-examples/MRTK_Examples_Package_3.png" width="650" alt="Example Package 3"><br/>
 <img src="../images/hand-interaction-examples/MRTK_Examples_Package_4.png" width="650" alt="Example Package 4"><br/>
 
-- You can directly download and import **Microsoft.MixedReality.Toolkit.Unity.Examples.unitypackage** from MRTK GitHub's release page
+* If you don't use Mixed Reality Feature Tool, you can directly download and import **Microsoft.MixedReality.Toolkit.Unity.Examples.unitypackage** from [MRTK GitHub's release page](https://github.com/microsoft/MixedRealityToolkit-Unity/releases)
 
 > [!NOTE]
 > This example scene uses *TextMesh Pro*. To open the scene, click *'Import TMP Essentials'* when the respective prompt is shown during the import of the scene. Unity will then import TextMesh Pro packages.
