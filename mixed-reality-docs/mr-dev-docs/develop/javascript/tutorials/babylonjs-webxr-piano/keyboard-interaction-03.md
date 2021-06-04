@@ -430,7 +430,9 @@ Now that we have scaled the piano to the right size in the VR space, let's enabl
 
 1. Now, you should be able to easily position yourself in front of the piano by teleporting to the snap-to point in front of the piano, and you should be able to play two keys at a time using both controllers.
 
-    ![Teleportation to piano](./images/teleportation-piano.png)
+    ![Teleportation to piano](./images/teleportation-demo.gif)
+
+    ![Playing piano using controllers](./images/play-piano-controller.gif)
 
 ## (Optional) Enabling hand-tracking
 
