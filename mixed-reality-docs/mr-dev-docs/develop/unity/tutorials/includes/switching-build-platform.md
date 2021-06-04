@@ -5,11 +5,12 @@ In the Unity menu, select **File** > **Build Settings...** to open the Build Set
 ![Unity Build Settings... menu path](../images/mr-learning-base/base-02-section2-step1-1.png)
 
 In the Build Settings window, select **Universal Windows Platform** and:
+
 1. Set **Target device** to **HoloLens**
 2. Set **Architecture** to **ARM 64**
 3. Set **Build Type** to **D3D Project**
 4. Set **Target SDK Version** to **Latest Installed**
-5. Set **Minimum Platform Version** to **10.0.18362**
+5. Set **Minimum Platform Version** to **10.0.1024.0**
 6. Set **Visual Studio Version** to **Latest installed**
 7. Set **Build and Run on** to **USB Device**
 8. Set **Build configuration** to **Release** because there are known performance issues with Debug
@@ -17,7 +18,13 @@ In the Build Settings window, select **Universal Windows Platform** and:
 
 ![Unity Build Settings with Universal Windows Platform settings set](../images/mr-learning-base/base-02-section2-step1-2-openxr.png)
 
-When Unity has finished switching the platform, click the red **x** icon to close the Build Settings window.
+Wait for Unity to finish switching the platform:
+
+![Unity switching platform in progress](../images/mr-learning-base/base-02-section2-step1-3-openxr.png)
+
+When Unity has finished switching the platform, click the  **x** icon to close the Build Settings window:
+
+![Unity Build Window with close icon highlighted](../images/mr-learning-base/base-02-section2-step1-4-openxr.png)
 
 # [Unity 2019/2020 + Windows XR Plugin](#tab/winxr)
 
@@ -33,7 +40,7 @@ Wait for Unity to finish switching the platform:
 
 ![Unity switching platform in progress](../images/mr-learning-base/base-02-section2-step1-3.png)
 
-When Unity has finished switching the platform, click the red **x** icon to close the Build Settings window:
+When Unity has finished switching the platform, click the **x** icon to close the Build Settings window:
 
 ![Unity Build Window with close icon highlighted](../images/mr-learning-base/base-02-section2-step1-4.png)
 

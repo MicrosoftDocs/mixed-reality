@@ -18,10 +18,10 @@ Selecting **Yes** instructs MRTK to overwrite the contents of **Assets** > **MRT
 > [!IMPORTANT]
 > When overwriting the shader files, any custom modifications will be lost. Be sure to backup any modified shader files before upgrading.
 >
-> If the project has been configured to use the Universal Render Pipeline (URP) - formerly Lightweight Render Pipeline (LWRP), please re-run **Mixed Reality Toolkit** > **Utilities** >
+> If the project has been configured to use the Universal Render Pipeline (URP) - formerly Lightweight Render Pipeline (LWRP), please re-run **Mixed Reality** > **Toolkit** > **Utilities** >
 > **Upgrade MRTK Standard Shader for Lightweight Render Pipeline**.
 
-At is also possible to check for shader updates at any time using **Mixed Reality Toolkit** > **Utilities** > **Check for Shader Updates** on the Unity Editor's menu bar.
+At is also possible to check for shader updates at any time using **Mixed Reality** > **Toolkit** > **Utilities** > **Check for Shader Updates** on the Unity Editor's menu bar.
 
 ![Check for shader updates](../images/tools/ShaderUpdateMenu.png)
 

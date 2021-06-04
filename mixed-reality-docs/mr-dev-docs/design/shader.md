@@ -33,7 +33,7 @@ Since holographic objects are mixed with physical ones in the real environment, 
 
 ## Standard shader in MRTK for Unity
 
-* [MRTK - Standard shader](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
+* [MRTK - Standard shader](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
 
 <br>
 
