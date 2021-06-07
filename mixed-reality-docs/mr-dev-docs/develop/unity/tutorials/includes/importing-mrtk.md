@@ -50,7 +50,7 @@ Click on **Unity OpenXR Plugin** to Enable XR Plugin Management and add its requ
 
 ![Add Unity OpenXR Plugin ](../images/mr-learning-base/base-02-section5-step1-3-openxr.PNG)
 
-this imports required unity packages for XR Plugin Management, once done click on **Show XR Plug-In Management Settings** in MRTK project Configurator.
+This will import required unity packages for XR Plugin Management, once done click on **Show XR Plug-In Management Settings** in MRTK project Configurator.
 
 ![Show XR Plug-In Management Settings ](../images/mr-learning-base/base-02-section5-step1-4-openxr.PNG)
 
@@ -66,7 +66,7 @@ If you see a red warning icon next to **OpenXR Plugin**, click the icon and sele
 
 ![Project Settings Window 2](../images/mr-learning-base/base-02-section5-step1-7-openxr.PNG)
 
-once all issues are fixed close the **Project Settings** window.
+Once all issues are fixed, close the **Project Settings** window.
 
 In the menu bar, navigate to **Mixed Reality**> **OpenXR** > **Apply recommended project settings for HoloLens 2** to get better app performance.
 
@@ -109,7 +109,7 @@ Once **MixedRealityFeatureTool** is opened, to access preview releases click on 
 
 ![MixedRealityFeatureTool for preview](../images/mr-learning-base/base-02-section4-step1-2-preview.PNG)
 
-next click on **Start** to get started with Mixed Reality Feature Tool.
+Next, click on **Start** to get started with Mixed Reality Feature Tool.
 
 ![MixedRealityFeatureTool ](../images/mr-learning-base/base-02-section4-step1-2.png)
 
@@ -129,7 +129,7 @@ Features are grouped by category to make things easier to find, click on **Mixed
 
 ![MixedRealityFeatureTool Discover Features](../images/mr-learning-base/base-02-section4-step1-4.PNG)
 
-check the **Mixed Reality Toolkit Foundation**, and click on the dropdown next to it to select **MRTK 2.7.0**, then click on **Get features** button to download the selected packages.
+Check the box for **Mixed Reality Toolkit Foundation**, and click on the dropdown next to it to select **MRTK 2.7.0**, then click on **Get features** button to download the selected packages.
 
 ![MixedRealityFeatureTool Open MixedReality](../images/mr-learning-base/base-02-section4-step1-5.PNG)
 
@@ -154,7 +154,7 @@ Click on **Built-in Unity Plugin(non-OpenXR)** to Enable XR Plugin Management an
 > [!NOTE]
 > The above screenshot is from Unity 2020, if you using Unity 2019 please select **XR SDK/XR Management**
 
-this imports required unity packages for XR Plugin Management, once done click on **Show Settings** in MRTK project Configurator.
+This will import required unity packages for XR Plugin Management, once done click on **Show Settings** in MRTK project Configurator.
 
 ![Player settings window](../images/mr-learning-base/base-02-section5-step1-3xrsdk.PNG)
 
