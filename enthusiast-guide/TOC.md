@@ -41,6 +41,7 @@
 ### [HP Reverb G2 FAQ](reverbG2-faq.yml)
 
 ## Resources
+### [Get info about Windows Mixed Reality](get-wmr-info.md)
 ### [Immersive headset health, safety, and comfort](wmr-health-safety-comfort.md)
 ### [Mixed Reality software overview and release history](mixed-reality-software.md)
 ### [How inside-out tracking works](tracking-system.md)
