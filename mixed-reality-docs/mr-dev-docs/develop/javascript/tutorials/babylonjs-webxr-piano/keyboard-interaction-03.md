@@ -20,7 +20,6 @@ In this tutorial, you will learn how to:
 > * Add interactive piano features using pointer events
 > * Scale meshes to a different size
 > * Enable teleportation and multi-pointer support in XR
-> * (Optional) Enable hand tracking in XR
 
 ## Before you begin
 
@@ -434,27 +433,6 @@ Now that we have scaled the piano to the right size in the VR space, let's enabl
 
     ![Playing piano using controllers](./images/play-piano-controller.gif)
 
-## (Optional) Enabling hand-tracking
-
-If your mixed reality device supports hand-tracking, you will be able to play on the piano in the VR space using just your hands!
-
-You can enable babylon.js's [hand-tracking feature](https://doc.babylonjs.com/divingDeeper/webXR/WebXRSelectedFeatures#hand-tracking) by adding the following block of code to `createScene()`:
-
-```javascript
-try {
-    const handTracking = featuresManager.enableFeature(BABYLON.WebXRFeatureName.HAND_TRACKING, "latest", {
-        xrInput: xrHelper.input,
-    });
-} catch (error) {
-    console.log(error);
-    console.log("If your device supports hand tracking, make sure to enable the WebXR Hand Input flag in your browser.");
-}
-```
-
-We added a try-catch block around the hand-tracking code so that the web page would not fail rendering completely if the hand-tracking feature isn't available on the device that opens the page.
-
-Also, just as the console message indicated, if your device supports hand-tracking but the feature doesn't work directly, you might have to enable the "WebXR Hand Input" flag in your browser (and restart the browser for the change to take effect).
-
 ## Summary
 
 Congratulations! You've completed our series of the babylon.js piano-building tutorial and learned how to:
@@ -465,7 +443,6 @@ Congratulations! You've completed our series of the babylon.js piano-building tu
 > * Add pointer interactions to each piano key
 > * Scale the size of meshes based on a pivot point
 > * Enable key WebXR features such as teleportation and multipointer support
-> * (Optional) Enable hand tracking WebXR feature
 
 Here is the final code for *scene.js* and *index.html*:
 
@@ -627,15 +604,6 @@ const createScene = async function(engine) {
         floorMeshes: [ground],
         snapPositions: [new BABYLON.Vector3(2.4*3.5*scale, 0, -10*scale)],
     });
-
-    try {
-        const handTracking = featuresManager.enableFeature(BABYLON.WebXRFeatureName.HAND_TRACKING, "latest", {
-            xrInput: xrHelper.input,
-        });
-    } catch (error) {
-        console.log(error);
-        console.log("If your device supports hand tracking, make sure to enable the WebXR Hand Input flag in your browser.");
-    }
 
     return scene;
 }

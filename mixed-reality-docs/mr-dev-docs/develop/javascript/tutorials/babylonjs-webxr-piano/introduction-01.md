@@ -24,7 +24,6 @@ In this tutorial series, you will learn how to:
 > * Import a babylon.js model of a standup piano frame
 > * Add pointer interactions to each piano key
 > * Enable teleportation and multipointer support in WebXR
-> * (Optional) Enable hand tracking in WebXR
 
 ## Prerequisites
 
