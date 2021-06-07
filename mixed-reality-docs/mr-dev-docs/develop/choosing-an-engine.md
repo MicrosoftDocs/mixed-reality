@@ -8,7 +8,7 @@ ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality headset, windows mixed reality headset, virtual reality headset, unity
 ---
 
-# Choosing your engines
+# Choosing your engine
 
 There are several development paths you can take through our documentation. The first step is finding the technology that's right for you. If you already have one in mind, go ahead and jump right to its respective tab below. If you're on the fence or just starting out, take a look through each one and understand what they offer, the available platforms and tools, and start creating!
 
@@ -39,25 +39,30 @@ There are several development paths you can take through our documentation. The 
 | Device features | Unity | Unreal | Babylon | Native (OpenXR) |
 |---|---|---|---|---|
 | Hand, eye, voice input | ✔️ | ✔️ | ? | ✔️ |
+| Motion controllers | ✔️ | ✔️ | ? | ✔️ |
 | Plane and mesh detection | ✔️ | ✔️ | ? | ✔️ |
-<!-- Ratify with standalone unity features table -->
+| Spatial sound | ✔️ | ✔️ | ? | ✔️ |
+| QR code detection | ✔️ | ✔️ | ? | ✔️ |
 
 <br>
 
 | Hardware | Unity | Unreal | Babylon | Native (OpenXR) |
 |---|---|---|---|---|
-| HoloLens 2 | ✔️ | ✔️ | ✔️ | ✔️ |
+| HoloLens 2 | ✔️ | ✔️ | ? | ✔️ |
 | HoloLens (1st gen) | ✔️ | ✔️ | ❌ | ❌ |
-| [Immersive VR headsets](../discover/immersive-headset-hardware-details.md) | ✔️ | ✔️ | ✔️ | ✔️ |
-| Oculus Quest | ✔️ | ✔️ | ✔️ | ✔️ |
-<!-- iOS/Android/Magic Leap/SteamVR/Oculus Desktop -->
+| [Immersive VR headsets](../discover/immersive-headset-hardware-details.md) | ✔️ | ✔️ | ? | ✔️ |
+| Oculus Quest/Desktop | ✔️ | ✔️ | ? | ✔️ |
+| Mobile (ARCore/ARKit) | ✔️ | ✔️ | ? | ❌ |
+| Magic Leap | ✔️ | ✔️ | ? | ❌ |
+| SteamVR | ✔️ | ✔️ | ? | ✔️ |
 
 <br>
 
-| Tools and SDKs | Unity | Unreal | Babylon | Native (OpenXR) |
+| Tools | Unity | Unreal | Babylon | Native (OpenXR) |
 |---|---|---|---|---|
-| Mixed Reality Toolkit | ✔️ | ✔️ | ❌ | ❌ |
-| Mesh | ✔️ | ❌ | ❌ | ❌ |
+| Mixed Reality Toolkit | ✔️ | ✔️ | ? | ❌ |
+| World Locking Tools | ✔️ | ❌ | ? | ❌ |
+<!-- | Mesh | ❌ | ❌ | ❌ | ❌ | -->
 
 <br>
 
@@ -66,8 +71,6 @@ There are several development paths you can take through our documentation. The 
 | Azure Spatial Anchors | ✔️ | ✔️ | ❌ | ✔️ |
 | Azure Object Anchors | ✔️ | ❌ | ❌ | ✔️ |
 | Azure Remote Rendering | ✔️ | ❌ | ❌ | ❌ <!-- (End of May) --> |
-
-<!-- Other: D365, ADT, Power Apps, etc... -->
 
 ## Next steps
 
