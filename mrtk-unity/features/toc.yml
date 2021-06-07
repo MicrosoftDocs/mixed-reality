@@ -4,8 +4,12 @@
   href: camera-system/toc.yml
 - name: Diagnostics
   href: diagnostics/toc.yml
+- name: Elastics
+  href: elastics/toc.yml
 - name: Example Scenes
   href: example-scenes/toc.yml
+- name: Experience Settings
+  href: experience-settings/toc.yml
 - name: Experimental
   href: experimental/toc.yml
 - name: Extensions

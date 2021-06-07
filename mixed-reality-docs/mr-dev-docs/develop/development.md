@@ -29,7 +29,7 @@ Our Learn modules help you become proficient in Mixed Reality development, offer
 > [!div class="nextstepaction"]
 > [Introduction to Mixed Reality on Microsoft Learn](https://docs.microsoft.com/learn/modules/intro-to-mixed-reality/)
 
-## Mixed Reality Toolkit tutorials 
+## Mixed Reality Toolkit tutorials
 
 If you're more of a learn-by-doing user, check out our Mixed Reality Toolkit (MRTK) tutorial series. You'll build a mixed reality experience where the user can explore a hologram modeled after NASA's Mars Curiosity Rover and get a firm grasp of MRTK and how it can speed up your development process.
 

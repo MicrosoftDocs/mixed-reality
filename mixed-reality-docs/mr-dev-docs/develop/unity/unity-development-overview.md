@@ -108,9 +108,9 @@ Before going out into the world of mixed reality on your own, we recommend takin
 
 |  Topic  |  Description  |
 | --- | --- |
-| [MRTK Architecture overview](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/architecture/overview) | Get a deeper understanding of how the MRTK SDK works in your projects |
-| [Settings and performance](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started) | Profile your app, update your Unity settings, and get the best hologram stabilization performance available |
-| [Getting started with MRTK + XR](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk) | Transfer over to the alternative XR pipeline provided by Unity |
+| [MRTK Architecture overview](/windows/mixed-reality/mrtk-unity/architecture/overview) | Get a deeper understanding of how the MRTK SDK works in your projects |
+| [Settings and performance](/windows/mixed-reality/mrtk-unity/performance/perf-getting-started) | Profile your app, update your Unity settings, and get the best hologram stabilization performance available |
+| [Getting started with MRTK + XR](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk) | Transfer over to the alternative XR pipeline provided by Unity |
 
 ### Unity resources
 
@@ -132,7 +132,7 @@ You can find us on the [Unity Forums](https://aka.ms/unityforums) by tagging **M
 * Windows Mixed Reality
 * OpenXR
 * XRSDK
-* Legacy XR 
+* Legacy XR
 
 ## See also
 

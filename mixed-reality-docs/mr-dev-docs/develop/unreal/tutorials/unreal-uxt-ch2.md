@@ -47,22 +47,17 @@ The project should open up automatically in the Unreal editor, which means you'r
 
 ## Enabling required plugins
 
-You'll need to enable two plugins before you can start adding objects to the scene.
+In order to use the features available via Microsoft's mixed reality platform, you'll first need to install and enable the Microsoft OpenXR plugin. To learn more about the plugin, you can check out the project on [GitHub](https://github.com/microsoft/Microsoft-OpenXR-Unreal).
 
-1. Open **Edit > Plugins** and select **Augmented Reality** from the built-in options list. 
-    * Scroll down to **HoloLens** and check **Enabled**. 
+1. Open the Epic Games Launcher. Navigate to Unreal Engine Marketplace and search for "[Microsoft OpenXR](https://www.unrealengine.com/marketplace/product/ef8930ca860148c498b46887da196239)". Install the plugin to your engine.
 
-![Enabling HoloLens plugins](images/unreal-uxt/2-plugins.PNG)
+![Unreal Marketplace](images/unreal-uxt/2-openxr-plugin.PNG)
 
-2. Select **Virtual Reality** from the built-in options list. 
-    * Scroll down to **Microsoft Windows Mixed Reality**, check **Enabled**, and restart your editor. 
+2. Back in the Unreal editor, go to **Project Settings** > **Plugins** and search for "Microsoft OpenXR". Ensure the plugin is enabled and restart the editor if prompted.
 
-![Enabling Windows Mixed Reality plugin](images/unreal-uxt/2-virtual-reality-plugin.PNG)
+![Enabling Microsoft OpenXR plugin](images/unreal-uxt/2-enable-plugin.PNG)
 
-> [!NOTE]
-> Both plugins are required for HoloLens 2 development.
-
-With the plugins enabled, your empty level is ready for company.
+Enabling the Microsoft OpenXR plugin will automatically enable all the other plugins required for mixed reality development. Note that the "Microsoft Windows Mixed Reality" plugin must be disabled in order to use OpenXR. 
 
 ## Creating a level
 Your next task is to create a player setup with a starting point and a cube for reference and scale.

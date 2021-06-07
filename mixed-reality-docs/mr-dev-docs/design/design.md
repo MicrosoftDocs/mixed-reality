@@ -84,20 +84,20 @@ A designer's job is never done, especially when learning to create immersive exp
 
 :::row:::	
     :::column:::	
-       [![Learn Unity](images/logo-unity.png)](https://learn.unity.com/)<br>
+        [![MRTK Figma Toolkit](images/74-13.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
+        **[Figma Toolkit](figma-toolkit.md)**<br>	
+        Figma Toolkit provides the assets that can be used for sketching and laying out UI. All UI controls are based on the components available in MRTK.
+    :::column-end:::		
+    :::column:::	
+       [![Learn Unity](../images/Final_unity_logo.png)](https://learn.unity.com/)<br>
         **[Learn Unity](https://learn.unity.com/)**<br>
         Learn how to create interactive experiences with Unity. Learn by doing, from start to finish.
     :::column-end:::	
     :::column:::	
         [![Mixed Reality Toolkit (MRTK)](images/74-12.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
-        **[Mixed Reality Toolkit (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity)**<br>	
+        **[Mixed Reality Toolkit (MRTK)](/windows/mixed-reality/mrtk-unity/)**<br>	
         With spatial interaction and UI building blocks, jump-start your mixed reality design and development with Unity.	
     :::column-end:::
-    :::column:::	
-        [![Mixed Reality Design Labs](images/74-13.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
-        **[Mixed Reality Design Labs](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)**<br>	
-        Get sample apps that show you how to use MRTK's building blocks to create beautiful mixed reality experiences.
-    :::column-end:::		
     :::column:::	
         [![Microsoft Maquette](images/74-14.png)](https://www.maquette.ms/)<br>
         **[Microsoft Maquette](https://www.maquette.ms/)**<br>	

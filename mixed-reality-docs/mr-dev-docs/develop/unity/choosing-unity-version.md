@@ -29,7 +29,7 @@ The best way to install and manage Unity is through the <a href="https://unity3d
 ![Unity hub instal new version](images/unity-hub-img-01.png)
 
 3. Check following components under **'Platforms'**
-    * **Universal Windows Platform Build Support** 
+    * **Universal Windows Platform Build Support**
     * **Windows Build Support (IL2CPP)**
 
 ![Unity Universal Windows Platform Build Support option](../images/Unity_Install_Option_UWP.png)
@@ -42,7 +42,7 @@ The best way to install and manage Unity is through the <a href="https://unity3d
 > [Using the OpenXR plugin](/windows/mixed-reality/develop/unity/xr-project-setup?tabs=openxr)
 
 > [!NOTE]
-> While we recommend using OpenXR for all new projects, Unity 2020.3 LTS also supports the **[Windows XR plugin](/windows/mixed-reality/develop/unity/xr-project-setup?tabs=windowsxr)**. Known issues that affect hologram stability and other features on HoloLens 2 include: 
+> While we recommend using OpenXR for all new projects, Unity 2020.3 LTS also supports the **[Windows XR plugin](/windows/mixed-reality/develop/unity/xr-project-setup?tabs=windowsxr)**. Known issues that affect hologram stability and other features on HoloLens 2 include:
 >
 > * Holographic app remoting applications using the Universal Windows Platform build target are not working.
 > * The Unity graphics jobs system is defaulted on, even though it is not compatible with HoloLens projects.
