@@ -39,4 +39,4 @@ Follow these steps to attach a managed debugger to your Unity IL2CPP UWP build f
 
 ## See also 
 
-* [C# debugging](https://docs.microsoft.com/visualstudio/get-started/csharp/tutorial-debugger)
+* [C# debugging](/visualstudio/get-started/csharp/tutorial-debugger)

@@ -27,7 +27,7 @@ Microsoft Learn is where everyone comes to learn. Discover new skills, find cert
 Our Learn modules help you become proficient in Mixed Reality development, offering a module-based structure to get you started with key tools like Mixed Reality Toolkit, Unity, and Azure mixed reality services. Getting to Hello World has never been clearer, as we lay out the Learning Objectives, Prerequisites, and set time to completion expectations all in one interface.
 
 > [!div class="nextstepaction"]
-> [Introduction to Mixed Reality on Microsoft Learn](https://docs.microsoft.com/learn/modules/intro-to-mixed-reality/)
+> [Introduction to Mixed Reality on Microsoft Learn](/learn/modules/intro-to-mixed-reality)
 
 ## Mixed Reality Toolkit tutorials
 
