@@ -68,7 +68,7 @@ From the start page, you can:
 
 ## 2. Selecting your Unity project
 
-To ensure that all discovered features are supported on your project's version of Unity, the fist step is to point the Mixed Reality Feature Tool to your project using the **ellipsis** button (to the left of the project path field).
+To ensure that all discovered features are supported on your project's version of Unity, the fist step is to point the Mixed Reality Feature Tool to your project using the **ellipsis** button (to the right of the project path field).
 
 ![Select the Unity project](images/FeatureToolSelectUnityProject.png)
 
