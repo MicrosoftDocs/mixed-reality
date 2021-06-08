@@ -3,7 +3,7 @@ title: Samples and feature apps
 description: Stay up to date with all the available Microsoft samples and mixed reality features apps for HoloLens.
 author: hferrone
 ms.author: jemccull
-ms.date: 12/3/2020
+ms.date: 6/7/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, learn, samples, MRTK, research mode, HoloLens 2, qr codes, WebRTC, mixed reality capture, holographic remoting, UX Tools
 ms.localizationpriority: high
@@ -22,6 +22,17 @@ Every development journey starts with a look back at what other developers have 
 ## Feature samples
 
 The feature samples listed below correspond to specific implementations that are covered in our documentation and covers a range of development platforms and hardware devices.
+
+### OpenXR
+
+For developers targeting Unity 2020 to build HoloLens 2 or Mixed Reality applications, OpenXR plugin can be used instead of WindowsXR plugin for better cross platform compatibilities. The Mixed Reality OpenXR Plugin also works well with latest Mixed Reality Toolkit 2.7.
+
+<br>
+
+| Reference article | Sample |
+| --- | --- |
+| [Using the OpenXR plugin](unity/openxr-getting-started.md) | [Mixed Reality OpenXR with Unity samples](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) |
+| N/A | [OpenXR MRTK Base Unity project](https://github.com/microsoft/UnityOpenXRMRTKBase) |
 
 ### Research Mode
 
@@ -42,7 +53,17 @@ HoloLens 2 can detect QR codes in the environment around the headset, establishi
 
 | Reference article | Sample |
 | --- | --- |
-| [QR codes](platform-capabilities-and-apis/qr-code-tracking.md) | [QR code tracking in Unity](https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes) |
+| [QR codes](platform-capabilities-and-apis/qr-code-tracking.md) | [QR code tracking in Unity](https://github.com/microsoft/MixedReality-QRCode-Sample) |
+
+### Scene understanding
+
+Scene understanding provides Mixed Reality developers with a structured, high-level environment representation designed to make developing for environmentally aware applications intuitive. Scene understanding does this by combining the power of existing mixed reality runtimes, like the highly accurate but less structured spatial mapping and new AI driven runtimes.
+
+<br>
+
+| Reference article | Sample |
+| --- | --- |
+| [Scene understanding](../design/scene-understanding.md) | [Mixed Reality Scene Understanding samples](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples) |
 
 ### WebRTC
 

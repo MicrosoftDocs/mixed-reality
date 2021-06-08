@@ -78,11 +78,15 @@ Once you've got your holographic Unity project ready for testing, your next step
 
 ## 5. Adding services
 
-At this point in your development journey you might be looking to add services or for a helping hand with commercial deployment. Integrating [Azure Cloud Services](../mixed-reality-cloud-services.md) and Dynamics 365 features can level up your projects in a major way. We've compiled a few starting points for you to explore and expand your Mixed Reality knowledge.
+At this point in your development journey you might be looking to add services or for a helping hand with commercial deployment. Integrating [Azure Cloud Services](../mixed-reality-cloud-services.md) can level up your projects in a major way. We've compiled a few starting points for you to explore and expand your Mixed Reality knowledge.
 
 [!INCLUDE[](../includes/unity-cloud-services-d365.md)]
 
 We also have a [comprehensive list of support documentation for additional Azure services](../mixed-reality-cloud-services.md#standalone-unity-services) that you can add to your Unity projects on a self-serve basis.
+
+## 6. Low-code alternatives
+
+[!INCLUDE[](../includes/unity-low-code.md)]
 
 ## What's next?
 
