@@ -163,7 +163,7 @@ In Windows 10, version 1809 and newer, [Mixed Reality Portal](https://www.micros
 
    | Version            | Release Date          | Major changes                                                 |
    |--------------------|-----------------------|---------------------------------------------------------------|
-   | 2000.21051.1282.0  | June 7, 2021          | <ul><li>Adds troubleshooting links to the Get Help app for common headset errors.</li><li>Addresses an issue where the headset device companion app might be skipped during initial setup.</li><li>Updates the system requirements page with additional information for high-resolution headsets.</li><li>Updates the splash screen and landing page with new visuals.</li></ul>  |
+   | 2000.21051.1282.0  | June 8, 2021          | <ul><li>Adds troubleshooting links to the Get Help app for common headset errors.</li><li>Addresses an issue where the headset device companion app might be skipped during initial setup.</li><li>Updates the system requirements page with additional information for high-resolution headsets.</li><li>Updates the splash screen and landing page with new visuals.</li></ul>  |
    | 2000.21041.1051.0  | April 26, 2021        | <ul><li>Updates the app icon for Mixed Reality Portal.</li></ul>  |
    | 2000.20111.1381.0  | December 10, 2020     | <ul><li>Updates the landing page of Mixed Reality Portal.</li><li>Reduces headset connectivity errors during firmware updates. </li></ul>  |
    | 2000.20071.1133.0  | August 5, 2020        | <ul><li>Support for [OpenXR](/windows/mixed-reality/openxr) to pause the preview window.</li></ul>  | 
