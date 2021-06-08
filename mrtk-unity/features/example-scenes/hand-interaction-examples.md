@@ -20,7 +20,9 @@ The **HandInteractionExamples** example scene contains various types of interact
 In Unity, use the menu Window > Package Manager > In Project > Custom and select **Mixed Reality Toolkit Examples**. Click **Import into Project** button next to **Demos - HandTracking**. You will be able to find **HandInteractionExamples** scene under Assets > Samples folder.
 
 <img src="../images/hand-interaction-examples/MRTK_Examples_Package_2.png" width="300" alt="Example Package 2"><br/>
+
 <img src="../images/hand-interaction-examples/MRTK_Examples_Package_3.png" width="650" alt="Example Package 3"><br/>
+
 <img src="../images/hand-interaction-examples/MRTK_Examples_Package_4.png" width="650" alt="Example Package 4"><br/>
 
 * If you don't use Mixed Reality Feature Tool, you can directly download and import **Microsoft.MixedReality.Toolkit.Unity.Examples.unitypackage** from [MRTK GitHub's release page](https://github.com/microsoft/MixedRealityToolkit-Unity/releases)
