@@ -56,16 +56,12 @@ to "Controllers and Hands".
 
 ## Using the Oculus XR SDK Data Provider
 
+::: moniker range=">= mrtkunity-2021-05"
+
 1. Configure your profile to use the **Oculus XR SDK Data Provider**
     - If not intending to modify the configuration profiles
-::: moniker range=">= mrtkunity-2021-05"
         - Use any of the default MRTK profiles, which are all configured across Unity's XR pipelines. The previous DefaultXRSDKConfigurationProfile is now labeled obsolete.
-::: moniker-end
-::: moniker range="< mrtkunity-2021-05"
-        - Change your profile to DefaultXRSDKConfigurationProfile.
-::: moniker-end
         - Go to [Build and deploy your project to Oculus Quest](oculus-quest-mrtk.md#build-and-deploy-your-project-to-oculus-quest).
-
     - Otherwise follow the following:
         - Select the MixedRealityToolkit game object in the hierarchy and select **Copy and Customize** to clone the default mixed reality profile.
 
@@ -82,6 +78,30 @@ to "Controllers and Hands".
         - Open the **Input Data Providers** section, select **Add Data Provider** at the top, and new data provider will be added at the end of the list.  Open the new data provider and set the **Type** to **Microsoft.MixedReality.Toolkit.XRSDK.Oculus > OculusXRSDKDeviceManager**.
 
         ![Oculus Add XRSDK Data Provider](../images/cross-platform/oculus-quest/OculusAddDataXRSDKProvider.png)
+::: moniker-end
+::: moniker range="< mrtkunity-2021-05"
+
+1. Configure your profile to use the **Oculus XR SDK Data Provider**
+    - If not intending to modify the configuration profiles
+        - Change your profile to DefaultXRSDKConfigurationProfile.
+        - Go to [Build and deploy your project to Oculus Quest](oculus-quest-mrtk.md#build-and-deploy-your-project-to-oculus-quest).
+    - Otherwise follow the following:
+        - Select the MixedRealityToolkit game object in the hierarchy and select **Copy and Customize** to clone the default mixed reality profile.
+
+        ![Clone Profile](../images/cross-platform/CloneProfile.png)
+
+        - Select the **Input** Configuration Profile.
+
+        ![Input Configuration Profile](../images/cross-platform/InputConfigurationProfile.png)
+
+        - Select **Clone** in the input system profile to enable modification.
+
+        ![Clone Input System Profile](../images/cross-platform/CloneInputSystemProfile.png)
+
+        - Open the **Input Data Providers** section, select **Add Data Provider** at the top, and new data provider will be added at the end of the list.  Open the new data provider and set the **Type** to **Microsoft.MixedReality.Toolkit.XRSDK.Oculus > OculusXRSDKDeviceManager**.
+
+        ![Oculus Add XRSDK Data Provider](../images/cross-platform/oculus-quest/OculusAddDataXRSDKProvider.png)
+::: moniker-end
 
 1. The Oculus XR SDK Data Provider includes an OVR Camera Rig Prefab which automatically configures the project with an OVR Camera Rig and OVR Hands to properly route input. Manually adding an OVR Camera Rig to the scene will require manual configuration of settings and input.
 
