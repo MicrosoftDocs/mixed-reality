@@ -469,9 +469,9 @@
         - name: Holographic Remoting software license terms
           href: /legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
         - name: Holographic Remoting for HoloLens (1st Gen)
-          href:
-        - name: Adding Holographic Remoting
-          href: platform-capabilities-and-apis/add-holographic-remoting.md
+          items:
+            - name: Adding Holographic Remoting
+              href: platform-capabilities-and-apis/add-holographic-remoting.md
     - name: App quality and testing
       items:
         - name: App quality criteria
