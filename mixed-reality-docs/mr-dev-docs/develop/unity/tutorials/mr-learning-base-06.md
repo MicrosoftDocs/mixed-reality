@@ -62,7 +62,7 @@ In the Hierarchy window, select the **Hints** button object, then in the Inspect
 ![Unity with Hints button object OnClick event configured](images/mr-learning-base/base-06-section1-step1-5.png)
 
 > [!TIP]
-> The Interactable component is an all-in-one container to make any object easily interactable and responsive to input. Interactable acts as a catch-all for all types of input including touch, hand rays, speech, etc. and funnels these interactions into events and visual theme responses. To learn how to configure it for different input types and customize it's visual theme, you can refer to the [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) guide in the [MRTK Documentation Portal](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/).
+> The Interactable component is an all-in-one container to make any object easily interactable and responsive to input. Interactable acts as a catch-all for all types of input including touch, hand rays, speech, etc. and funnels these interactions into events and visual theme responses. To learn how to configure it for different input types and customize it's visual theme, you can refer to the [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) guide in the [MRTK Documentation Portal](/windows/mixed-reality/mrtk-unity/).
 
 In the Hierarchy window, select the **Explode** button object, then in the Inspector window, configure the **Interactable.OnClick ()** event as follows:
 
@@ -111,6 +111,9 @@ To disable the chevron Indicator object, in the Hierarchy window, select the Ind
 
 > [!NOTE]
 > Now, when the app starts, the chevron Indicator is disabled by default and can be enabled by pressing the Indicator button.
+
+> [!NOTE]
+> The Directional Indicator Controller (Script) is not part of the MRTK but was included with the tutorial assets.
 
 Rename the second button to **TapToPlace**, then in the Inspector window, configure the **Button Config Helper (Script)** component as follows:
 
@@ -170,7 +173,7 @@ In the Hierarchy window, expand the RoverExplorer > **RoverParts** object and se
 
 ![Unity with all rover part objects selected and ToolTipSpawner component added and configured](images/mr-learning-base/base-06-section4-step1-2.png)
 
-In the Hierarchy window, select the first rover part, RoverParts > **Camera_Part**, and configure the **ToolTipSpawner** component as follows:
+In the Hierarchy window, select the Camera_Part, RoverParts > **Camera_Part**, and configure the **ToolTipSpawner** component as follows:
 
 * Change **Tool Tip Text** to reflect the name of the part, i.e., **Camera**
 
@@ -192,4 +195,4 @@ Press the Play button to enter Game mode, then press-and-hold the right mouse bu
 In this tutorial, you learned how to create a simple user interface using MRTK's provided button and menu prefabs alongside Unity's TextMeshPro component and how to configure the buttons to trigger events when they are pressed. You also learned how to add dynamic tooltip UI elements to provide the user with additional information.
 
 > [!div class="nextstepaction"]
->[Next Tutorial: 7. Interacting with 3D objects](mr-learning-base-07.md)
+> [Next Tutorial: 7. Interacting with 3D objects](mr-learning-base-07.md)

@@ -53,7 +53,7 @@ highlightedContent:
     # Card
     - title: AltspaceVR 
       itemType: whats-new 
-      url: https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey
+      url: /windows/mixed-reality/altspace-vr/journey
 
 # productDirectory section (optional)
 productDirectory:
@@ -129,7 +129,7 @@ conceptualContent:
         - url: develop/unity/tutorials/mr-learning-base-01.md
           itemType: tutorial
           text: HoloLens 2 tutorial series
-        - url: ./out-of-scope/mrtk-101.md
+        - url: /windows/mixed-reality/mrtk-unity/
           itemType: concept
           text: Core building blocks
         - url: develop/unity/shared-experiences-in-unity.md

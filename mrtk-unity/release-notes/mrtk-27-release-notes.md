@@ -6,11 +6,23 @@ ms.author: roliu
 ms.date: 05/27/2021
 ms.localizationpriority: medium
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, XRSDK, Legacy XR, Leap Motion, Ultraleap
+monikerRange: '>= mrtkunity-2021-05'
 ---
 
 # Microsoft Mixed Reality Toolkit 2.7 Release Notes
 
 ## What's new in 2.7.0
+
+### OpenXR is now officially supported in MRTK
+
+As the new OpenXR plugins are becoming more and more mature MRTK now officially supports OpenXR. Compared to previous releases we added the following capabilities to projects using OpenXR:
+
+- [Support for the system-provided motion controller model](#support-for-the-system-provided-motion-controller-model-on-openxr)
+- Support for WinMR gestures (select, hold, manipulation and navigation) [#9843](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9843)
+- [Support for controller haptics](#support-for-controller-haptics-across-legacy-wmr-windows-xr-plugin-and-openxr)
+- [Support for articulated hand mesh on HoloLens 2](#support-for-hololens-2-articulated-hand-mesh-on-openxr)
+- Support for Spatial Mapping on HoloLens 2 [#9567](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9567), [#9827](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9827)
+- Support for Scene Understanding on HoloLens 2 [#9744](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9744)
 
 ### Legacy XR and XR SDK Data Providers can now be used within the same profile
 
@@ -43,7 +55,7 @@ The new MRTK configurator provides users step-by-step guidance to properly confi
 
 ### Graduated Teleport Hotspot
 
-A new [teleport hotspot component](../features/teleport-system/teleport-hotspot.md) has been graduated. You can add a teleport hotspot to your gameobject to ensure that the user is in a certain position and orientation when they teleport to that location.
+A new [teleport hotspot component](../features/teleport-system/teleport-hotspot.md) has been graduated. You can add a teleport hotspot to your GameObject to ensure that the user is in a certain position and orientation when they teleport to that location.
 
 ![Teleport Hotspot example](images/TeleportHotspot.gif)
 
@@ -75,10 +87,6 @@ Added support, both in-editor and at runtime, for the system-provided motion con
 
 ![Editor window showing two motion controller models](https://user-images.githubusercontent.com/3580640/116493405-89a55d80-a853-11eb-95ae-d430e6fdc8b4.png)
 
-### Support for WinMR gestures (select, hold, manipulation, navigation) on OpenXR
-
-Added support for WinMR gestures (select, hold, manipulation, navigation) on OpenXR. [#9843](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9843).
-
 ### Support for HoloLens 2 articulated hand mesh on OpenXR
 
 ![The hand mesh running on-device in an MRTK example scene](https://user-images.githubusercontent.com/3580640/112909923-32bb3580-90a7-11eb-925d-464b135edc61.png)
@@ -86,10 +94,6 @@ Added support for WinMR gestures (select, hold, manipulation, navigation) on Ope
 ### Support for controller haptics across legacy WMR, Windows XR Plugin, and OpenXR
 
 Added support for controller haptics across legacy WMR, Windows XR Plugin, and OpenXR. [#9735](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9735)
-
-### Support for spatial mapping on OpenXR on HoloLens 2
-
-Added support for spatial mesh when using OpenXR on HoloLens 2. [#9567](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9567) and [#9827](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9827)
 
 ### Support for eye tracking on Windows XR Plugin
 
@@ -113,10 +117,11 @@ Added support for eye gaze when using Windows XR Plugin minimum versions of 2.7.
 - Fixed issue where the BuildDeployWindow would try to query an invalid reg key for the Windows SDK path. [#9664](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9664)
 - MRTK's glTF importers are now optional. If multiple glTF importers are present, MRTK's can be disabled by adding `MRTK_GLTF_IMPORTER_OFF` to the custom scripting define symbols. [#9658](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9658)
 - Fixed issue where the Knuckles controllers on OpenVR weren't being detected properly. [#9881](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9881)
+- Added Build Window feature documentation: [Visit the page](/windows/mixed-reality/mrtk-unity/features/tools/build-window)
 
 ## Known Issues
 
-### Audio demos are missing an asmdef file (UPM pacakge)
+### Audio demos are missing an asmdef file (UPM package)
 
 When importing MRTK via the Mixed Reality Feature Tool, samples and demos are added to the project using the Unity Package Manager UI. After importing the Audio demos, the `WindowsMicrophoneStreamDemo.unity` scene will not behave properly. This is a result of a missing .asmdef file for the sample.
 

@@ -1,7 +1,7 @@
 # [MRTK](#tab/mrtk)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-Use the [MixedRealityPlayspace](https://docs.microsoft.com/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) class from MRTK for Unity and set the **Target Scale** to **Seated**:
+Use the [MixedRealityPlayspace](/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) class from MRTK for Unity and set the **Target Scale** to **Seated**:
 
 ![MRTK settings window](../../images/mrtk-target-scale.png)
 

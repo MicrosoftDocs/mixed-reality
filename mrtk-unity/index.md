@@ -14,6 +14,8 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK
 
 <br>
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWyXHW]
+
 MRTK-Unity is a Microsoft-driven project that provides a set of components and features, used to accelerate cross-platform MR app development in Unity. Here are some of its functions:
 
 * Provides the **cross-platform input system and building blocks for spatial interactions and UI**.
@@ -21,6 +23,7 @@ MRTK-Unity is a Microsoft-driven project that provides a set of components and f
 * Operates as an **extensible framework** that provides developers the ability to swap out core components.
 * **Supports a wide range of platforms**:
 
+::: moniker range=">= mrtkunity-2021-05"
 | Platform | Supported Devices |
 |---|---|
 | OpenXR (Unity 2020.3) | Microsoft HoloLens 2 <br> Windows Mixed Reality headsets |
@@ -29,10 +32,21 @@ MRTK-Unity is a Microsoft-driven project that provides a set of components and f
 | OpenVR |  Windows Mixed Reality headsets <br> HTC Vive <br> Oculus Rift |
 | Ultraleap Hand Tracking | Ultraleap Leap Motion controller |
 | Mobile | iOS and Android |
+::: moniker-end
+::: moniker range="< mrtkunity-2021-05"
+| Platform | Supported Devices |
+|---|---|
+| OpenXR (Preview in MRTK 2.6, Unity 2020.3) | Microsoft HoloLens 2 <br> Windows Mixed Reality headsets |
+| Windows Mixed Reality | Microsoft HoloLens <br> Microsoft HoloLens 2 <br> Windows Mixed Reality headsets  |
+| Oculus (Unity 2019.3 or newer) | Oculus Quest |
+| OpenVR |  Windows Mixed Reality headsets <br> HTC Vive <br> Oculus Rift |
+| Ultraleap Hand Tracking | Ultraleap Leap Motion controller |
+| Mobile | iOS and Android |
+::: moniker-end
 
 ## Getting started with MRTK
 
-If you're new to MRTK or Mixed Reality development in Unity, we recommend installing and exploring the MRTK Examples Hub sample application on your device or emulator. 
+If you're new to MRTK or Mixed Reality development in Unity, we recommend installing and exploring the MRTK Examples Hub sample application on your device or [emulator](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator). 
 
 > [!div class="nextstepaction"]
 > [Download the MRTK Examples Hub app](running-examples-hub.md)
@@ -302,7 +316,7 @@ Want to see what's going on under the hood?
 
 ## Tools
 
-|  [![Optimize Window](features/images/MRTK_Icon_OptimizeWindow.png)](features/tools/optimize-window.md) [Optimize Window](features/tools/optimize-window.md) | [![Dependency Window](features/images/MRTK_Icon_DependencyWindow.png)](features/tools/dependency-window.md) [Dependency Window](features/tools/dependency-window.md) | ![Build Window](features/images/MRTK_Icon_BuildWindow.png) Build Window | [![Input recording](features/images/MRTK_Icon_InputRecording.png)](features/input-simulation/input-animation-recording.md) [Input recording](features/input-simulation/input-animation-recording.md) |
+|  [![Optimize Window](features/images/MRTK_Icon_OptimizeWindow.png)](features/tools/optimize-window.md) [Optimize Window](features/tools/optimize-window.md) | [![Dependency Window](features/images/MRTK_Icon_DependencyWindow.png)](features/tools/dependency-window.md) [Dependency Window](features/tools/dependency-window.md) | [![Build Window](features/images/MRTK_Icon_BuildWindow.png)](features/tools/build-window.md) [Build Window](features/tools/build-window.md) | [![Input recording](features/images/MRTK_Icon_InputRecording.png)](features/input-simulation/input-animation-recording.md) [Input recording](features/input-simulation/input-animation-recording.md) |
 |:--- | :--- | :--- | :--- |
 | Automate configuration of Mixed Reality projects for performance optimizations | Analyze dependencies between assets and identify unused assets |  Configure and execute an end-to-end build process for Mixed Reality applications | Record and playback head movement and hand tracking data in editor |
 

@@ -115,6 +115,6 @@ Bluetooth | Bluetooth 4.0 (for accessory connectivity)
 
 ## Next Development Checkpoint
 
-Now that you've got the the tools installed, we recommend following our MRTK HoloLens 2 tutorials series.
+Now that you've got the tools installed, we recommend following our MRTK HoloLens 2 tutorials series.
 > [!div class="nextstepaction"]
 > [HoloLens 2 Tutorial Series](/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)

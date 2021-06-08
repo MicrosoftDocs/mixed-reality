@@ -15,35 +15,12 @@ keywords: Mixed Reality, discover, distribute, index, landing page, design, deve
 
 The Mixed Reality ecosystem is an emerging landscape of physical and digital interactions, limited only by your imagination. Whether you're an experienced developer or a new convert, we recommend beginning your Mixed Reality journey with the resources we've laid out below. There's a lot of new ground to cover, so let's get started! 
 
-## Choose your track
-
-If you already know which area of Mixed Reality you'd like to explore, feel free to jump right in to any of the tracks below. However, keep this page in your bookmarks so you can reference the basic conceptual content at a later time.
-
-:::row:::
-    :::column:::
-       [![I'm new to mixed reality](images/Tile-New.jpg)](#understand-the-basics)<br>
-        **[I'm new to mixed reality](#understand-the-basics)**<br>
-        Understand the basics
-    :::column-end:::
-    :::column:::
-       [![I'm a designer](images/Tile-Create.jpg)](../design/design.md)<br>
-        **[I'm a designer](../design/design.md)**<br>
-        Start designing and prototyping
-    :::column-end:::
-    :::column:::
-       [![I'm a developer](images/Tile-Develop.jpg)](../develop/development.md)<br>
-        **[I'm a developer](../develop/development.md)**<br>
-        Learn the tools and architecture
-    :::column-end:::
-:::row-end:::
-
-<br>
-
----
-
 ## Understand the basics
 
-If you're new to mixed reality, it's important you start from the bottom and work your way up through its core concepts, experiences, and capabilities. We've created a sequential journey of sorts to help you set a firm foundation for designing and developing your own ideas in Mixed Reality.
+If you're new to mixed reality, it's important you start from the bottom and work your way up through its core concepts, experiences, and capabilities. You have two options here: we have a focused module on Microsoft Learn that will get you up to speed in no time, or you can explore the an a-la-carte journey we've set up below. Both of these paths will help you set a firm foundation for designing and developing your own ideas in Mixed Reality.
+
+> [!div class="nextstepaction"]
+> [Introduction to Mixed Reality module](/learn/modules/intro-to-mixed-reality)
 
 ### What is mixed reality?
 
@@ -155,11 +132,11 @@ If you're curious to see how the different Mixed Reality hardware and services w
 
 :::row:::
     :::column:::
-        [![Become a creator](images/icon-design.png)](../design/design.md)<br>
-        **[Become a creator](../design/design.md)**<br>
+        [![Start designing](images/icon-design.png)](../design/design.md)<br>
+        **[Start designing](../design/design.md)**<br>
         Learn the basic concepts you need to begin designing and prototyping.
     :::column-end:::
-        :::column:::
+    :::column:::
         [![Start developing](images/icon-developer.png)](../develop/development.md)<br>
         **[Start developing](../develop/development.md)**<br>
         Choose a development path based on your skill level, work style, or platform interest.
@@ -170,9 +147,6 @@ If you're curious to see how the different Mixed Reality hardware and services w
         See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
     :::column-end:::
 :::row-end:::
-
-
-<br>
 
 <br>
 
