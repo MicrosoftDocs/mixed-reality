@@ -64,7 +64,7 @@ In the Inspector window, use the **Add Component** button to add the **Photon Vi
 
 ### 2. Create the avatar
 
-In the Project window, navigate to the **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **StandardAssets** > **Materials** folder to locate the MRTK materials.
+In the Project window, navigate to the **Packages** > **Mixed Reality Toolkit Standard Assets** > **Materials** folder to locate the MRTK materials.
 
 Then, in the Hierarchy window, right-click on the **PhotonUser** object and select **3D Object** > **Sphere** to create a sphere object as a child of the PhotonUser object and configure it as follows:
 
