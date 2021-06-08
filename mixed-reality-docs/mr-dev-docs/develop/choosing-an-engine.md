@@ -23,20 +23,20 @@ There are several development paths you can take through our documentation. The 
 
 * **Babylon** is a Javascript-based, open source, 3D graphics engine capable of powering 3D scenes in a web browser. Babylon.js 4.2+ includes support for WebXR to easily create compelling cross-browser AR/VR web experiences. With Babylon React Native, you can even build cross-platform native applications for PC, mobile, and mixed reality devices.
 
-* **OpenXR** is an open royalty-free API standard from Khronos that provides engines native access to a wide range of devices from vendors across the mixed reality spectrum. You can develop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive headset on the desktop. If you don't have access to a headset, emulators for HoloLens 2 and Windows Mixed Reality headsets are available.
+* **Native** developers with experience writing their own 3D renderers can build a custom engine using OpenXR. OpenXR is an open royalty-free API standard from Khronos that provides engines native access to a wide range of devices from vendors across the mixed reality spectrum. You can develop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive headset on the desktop.
 
 ## Features and devices
 
 <br>
 
-| Logistics | Unity | Unreal | Babylon | Native (OpenXR) |
+| Logistics | Unity | Unreal | Babylon | Native (custom engine) |
 |---|---|---|---|---|
 | Language | C# | C++ | JavaScript | C/C++ |
 | Pricing | [Unity pricing](https://store.unity.com/#plans-individual) | [Unreal pricing](https://www.unrealengine.com/download) | Free | Free |
 
 <br>
 
-| Device features | Unity | Unreal | Babylon | Native (OpenXR) |
+| Device features | Unity | Unreal | Babylon | Native (custom engine) |
 |---|---|---|---|---|
 | Hand, eye, voice input | ✔️ | ✔️ | ? | ✔️ |
 | Motion controllers | ✔️ | ✔️ | ? | ✔️ |
@@ -46,10 +46,10 @@ There are several development paths you can take through our documentation. The 
 
 <br>
 
-| Hardware | Unity | Unreal | Babylon | Native (OpenXR) |
+| Hardware | Unity | Unreal | Babylon | Native (custom engine) |
 |---|---|---|---|---|
 | HoloLens 2 | ✔️ | ✔️ | ? | ✔️ |
-| HoloLens (1st gen) | ✔️ | ✔️ | ❌ | ❌ |
+| HoloLens (1st gen) | ✔️ | ✔️ | ❌ | WinRT (Legacy) only |
 | [Immersive VR headsets](../discover/immersive-headset-hardware-details.md) | ✔️ | ✔️ | ? | ✔️ |
 | Oculus Quest/Desktop | ✔️ | ✔️ | ? | ✔️ |
 | Mobile (ARCore/ARKit) | ✔️ | ✔️ | ? | ❌ |
@@ -58,7 +58,7 @@ There are several development paths you can take through our documentation. The 
 
 <br>
 
-| Tools | Unity | Unreal | Babylon | Native (OpenXR) |
+| Tools | Unity | Unreal | Babylon | Native (custom engine) |
 |---|---|---|---|---|
 | Mixed Reality Toolkit | ✔️ | ✔️ | ? | ❌ |
 | World Locking Tools | ✔️ | ❌ | ? | ❌ |
@@ -66,11 +66,14 @@ There are several development paths you can take through our documentation. The 
 
 <br>
 
-| Cloud services | Unity | Unreal | Babylon | Native (OpenXR) |
+| Cloud services | Unity | Unreal | Babylon | Native (custom engine) |
 |---|---|---|---|---|
 | Azure Spatial Anchors | ✔️ | ✔️ | ❌ | ✔️ |
 | Azure Object Anchors | ✔️ | ❌ | ❌ | ✔️ |
-| Azure Remote Rendering | ✔️ | ❌ | ❌ | ❌ <!-- (End of May) --> |
+| Azure Remote Rendering | ✔️ | ❌ | ❌ | |
+
+> [!NOTE]
+> * Azure Remote Rendering is currently supported in apps using the legacy WinRT APIs (Windows XR plugin in Unity). ARR support for OpenXR apps is coming soon.
 
 ## Next steps
 
