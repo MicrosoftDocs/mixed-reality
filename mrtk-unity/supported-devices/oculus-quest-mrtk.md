@@ -58,7 +58,13 @@ to "Controllers and Hands".
 
 1. Configure your profile to use the **Oculus XR SDK Data Provider**
     - If not intending to modify the configuration profiles
-        - Change your profile to DefaultXRSDKConfigurationProfile and go to [Build and deploy your project to Oculus Quest](oculus-quest-mrtk.md#build-and-deploy-your-project-to-oculus-quest)
+::: moniker range=">= mrtkunity-2021-05"
+        - Use any of the default MRTK profiles, which are all configured across Unity's XR pipelines. The previous DefaultXRSDKConfigurationProfile is now labeled obsolete.
+::: moniker-end
+::: moniker range="< mrtkunity-2021-05"
+        - Change your profile to DefaultXRSDKConfigurationProfile.
+::: moniker-end
+        - Go to [Build and deploy your project to Oculus Quest](oculus-quest-mrtk.md#build-and-deploy-your-project-to-oculus-quest).
 
     - Otherwise follow the following:
         - Select the MixedRealityToolkit game object in the hierarchy and select **Copy and Customize** to clone the default mixed reality profile.
