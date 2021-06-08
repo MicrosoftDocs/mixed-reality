@@ -20,7 +20,7 @@ The XR SDK pipeline currently supports 3 platforms: Windows Mixed Reality, Oculu
 
 ### Windows Mixed Reality
 
-Go into **Unity's Package Manager** and install the Windows XR Plugin package, which adds support for Windows Mixed Reality on XR SDK. This will pull down a few dependency packages as well. 
+Go into **Unity's Package Manager** and install the Windows XR Plugin package, which adds support for Windows Mixed Reality on XR SDK. This will pull down a few dependency packages as well.
 
 1. Ensure that the following all successfully installed:
    * XR Plugin Management
@@ -33,11 +33,11 @@ Go into **Unity's Package Manager** and install the Windows XR Plugin package, w
 5. Ensure that Initialize XR on Startup is checked.
 6. (**_Required for in-editor HoloLens Remoting, otherwise optional_**) Go to the Standalone settings and ensure Windows Mixed Reality is checked under Plug-in Providers. Also ensure that Initialize XR on Startup is checked.
 
-![XR Plugin management with Standalone tab selected](images/xr-management-img-02.png)
+    ![XR Plugin management with Standalone tab selected](images/xr-management-img-02.png)
 
 7. (**_Optional_**) Click on the Windows Mixed Reality tab under XR Plug-in Management and create a custom settings profile to change the defaults. If the list of settings are already there, no profile needs to be created.
 
-![XR Plugin management with Windows tab selected](images/xr-management-img-01.png)
+    ![XR Plugin management with Windows tab selected](images/xr-management-img-01.png)
 
 ### Oculus
 
@@ -59,7 +59,7 @@ Go into **Unity's Package Manager** and install the Windows XR Plugin package, w
 1. Ensure that Initialize XR on Startup is checked.
 1. (**_Optional_**) If targeting HoloLens 2, make sure you're on the UWP platform and select Microsoft HoloLens Feature Set
 
-![Plugin management Open XR](../features/images/xrsdk/PluginManagementOpenXR.png)
+![Plugin management OpenXR](../features/images/xrsdk/PluginManagementOpenXR.png)
 
 > [!NOTE]
 > If you have a pre-existing project that is using MRTK from UPM, make sure that the following line is in the **link.xml** file located in the MixedRealityToolkit.Generated folder.
