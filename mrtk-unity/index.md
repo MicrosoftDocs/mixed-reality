@@ -322,7 +322,7 @@ Want to see what's going on under the hood?
 
 ## Example scenes
 
-MRTK provides example scenes that demonstrate how to use MRTK's features. You can find example scenes under Assets/MRTK/Examples/Demos folder. [Hand Interaction Examples scene](features/example-scenes/hand-interaction-examples.md) is a great place to start experiencing MRTK's building blocks for interactions and UI.
+MRTK provides example scenes that demonstrate how to use MRTK's features. You can find example scenes under Assets/MRTK/Examples/Demos folder. Read [Example scenes](running-example-scenes.md) page to learn how to acquire and run example scenes. [Hand Interaction Examples scene](features/example-scenes/hand-interaction-examples.md) is a great place to start experiencing MRTK's building blocks for interactions and UI.
 
 [![Example Scene 2](features/images/MRTK_Examples.png)](features/example-scenes/hand-interaction-examples.md)
 
