@@ -37,3 +37,8 @@ Once imported, you will be able to find them under **Assets > Samples** folder.
 
 If you don't use Mixed Reality Feature Tool, you can directly download and import **Microsoft.MixedReality.Toolkit.Unity.Examples.unitypackage** from [MRTK GitHub's release page](https://github.com/microsoft/MixedRealityToolkit-Unity/releases)
 
+Use **Assets > Import Package > Custom Package** menu to import downloaded .unitypackage. Once it is imported, you will be able to find example scenes under **Assets > MRTK > Examples > Demos**.
+
+<img src="features/images/hand-interaction-examples/MRTK_Examples_Package_Manual1.png" width="650" alt="Example Manual 1"><br/>
+
+<img src="features/images/hand-interaction-examples/MRTK_Examples_Package_Manual2.png" width="650" alt="Example Manual 2"><br/>
