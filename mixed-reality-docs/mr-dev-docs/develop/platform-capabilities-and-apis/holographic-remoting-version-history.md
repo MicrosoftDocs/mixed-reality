@@ -3,7 +3,7 @@ title: Holographic Remoting Version History
 description: Stay up to date on the version history of the Holographic Remoting feature for HoloLens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 12/01/2020
+ms.date: 06/10/2021
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
@@ -12,6 +12,25 @@ keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reali
 
 > [!IMPORTANT]
 > This guidance is specific to Holographic Remoting on HoloLens 2.
+
+## Version 2.6.0 (June 10, 2021) <a name="v2.6.0"></a>
+* Holographic Remoting using the OpenXR API now supports:
+  * The new XR_MSFT_holographic_remoting_speech extension, which allows applications to listen to custom speech commands in various languages.
+  * The XR_MSFT_scene_understanding extension, which provides applications with a structured, high-level representation of the planes, meshes, and objects in the user's environment, enabling the development of spatially-aware applications. However, with the caveat that XR_SCENE_COMPUTE_CONSISTENCY_OCCLUSION_OPTIMIZED_MSFT is the only consistency supported by xrComputeNewSceneMSFT.
+  * The XR_MSFT_spatial_graph_bridge extension, which allows applications to create XrSpace handles to track the Spatial Graph Nodes of other Windows Mixed Reality device platform libraries or APIs. However, with the caveat that XR_SPATIAL_GRAPH_NODE_TYPE_STATIC_MSFT is the only node type supported by xrCreateSpatialGraphNodeSpaceMSFT. 
+* Holographic Remoting using the Mixed Reality API now supports:
+  * The SpatialGraphInteropPreview.CreateCoordinateSystemForNode overloads, which allow applications to track static Spatial Graph Nodes so that users can reason about places and things in their environment.
+* Holographic Remoting using both the OpenXR and Mixed Reality APIs now supports:
+  * The Microsoft.MixedReality.SceneUnderstanding SDK, which allows applications to compute a description of the scene surrounding the user (such as walls, floors, and surfaces) providing quads, meshes, and content placement cues.
+  * The Microsoft.MixedReality.QR SDK, which allows applications to track the location, size, and content of detected QR codes.
+* The OpenXR remote sample has been updated to include:	
+  * An example of using the XR_MSFT_holographic_remoting_speech extension.
+* The Mixed Reality remote sample has been updated to include:	
+  * An example of using the Microsoft.MixedReality.SceneUnderstanding SDK.
+  * An example of using the Microsoft.MixedReality.QR SDK (which replaces the previous QR code detection mechanism).
+* The Holographic Remoting player now shows a loading animation while the connection is being established.
+* Fixed issues with RenderDoc compatibility in both the OpenXR API runtime and the Mixed Reality API sample.
+* Various bug fixes and stability improvements.
 
 ## Version 2.5.0 (February 12, 2021) <a name="v2.5.0"></a>
 * Holographic Remoting using the [OpenXR API](../native/openxr.md) now supports:

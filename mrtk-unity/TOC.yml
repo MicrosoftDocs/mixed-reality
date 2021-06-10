@@ -2,6 +2,8 @@
   href: index.md
 - name: Try out the Examples Hub 
   href: running-examples-hub.md
+- name: Example scenes
+  href: running-example-scenes.md
 - name: Configuration
   href: configuration/toc.yml
 - name: Supported Device Overview

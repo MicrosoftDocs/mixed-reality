@@ -8,7 +8,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, XRSDK, 
 ---
 # Getting started with MRTK and XR SDK
 
-XR SDK is Unity's [new XR pipeline in Unity 2019.3 and beyond](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/). In Unity 2019, it provides an alternative to the existing XR pipeline. In Unity 2020, it will become the only XR pipeline in Unity.
+XR SDK is Unity's [new XR pipeline in Unity 2019.3 and beyond](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/). In Unity 2019, it provides an alternative to the existing XR pipeline. In Unity 2020, it is the only XR pipeline in Unity.
 
 ## Prerequisites
 
@@ -20,7 +20,7 @@ The XR SDK pipeline currently supports 3 platforms: Windows Mixed Reality, Oculu
 
 ### Windows Mixed Reality
 
-Go into **Unity's Package Manager** and install the Windows XR Plugin package, which adds support for Windows Mixed Reality on XR SDK. This will pull down a few dependency packages as well. 
+Go into **Unity's Package Manager** and install the Windows XR Plugin package, which adds support for Windows Mixed Reality on XR SDK. This will pull down a few dependency packages as well.
 
 1. Ensure that the following all successfully installed:
    * XR Plugin Management
@@ -33,11 +33,11 @@ Go into **Unity's Package Manager** and install the Windows XR Plugin package, w
 5. Ensure that Initialize XR on Startup is checked.
 6. (**_Required for in-editor HoloLens Remoting, otherwise optional_**) Go to the Standalone settings and ensure Windows Mixed Reality is checked under Plug-in Providers. Also ensure that Initialize XR on Startup is checked.
 
-![XR Plugin management with Standalone tab selected](images/xr-management-img-02.png)
+    ![XR Plugin management with Standalone tab selected](images/xr-management-img-02.png)
 
 7. (**_Optional_**) Click on the Windows Mixed Reality tab under XR Plug-in Management and create a custom settings profile to change the defaults. If the list of settings are already there, no profile needs to be created.
 
-![XR Plugin management with Windows tab selected](images/xr-management-img-01.png)
+    ![XR Plugin management with Windows tab selected](images/xr-management-img-01.png)
 
 ### Oculus
 
@@ -47,8 +47,7 @@ Go into **Unity's Package Manager** and install the Windows XR Plugin package, w
 
 > [!IMPORTANT]
 > OpenXR in Unity is only supported on Unity 2020.2 and higher.
->
-> Currently, it also only supports x64 and ARM64 builds.
+> It also only supports x64, ARM, and ARM64 builds.
 
 1. Follow the [Using the Mixed Reality OpenXR Plugin for Unity](/windows/mixed-reality/develop/unity/openxr-getting-started) guide, including the steps for configuring XR Plugin Management and Optimization to install the OpenXR plug-in to your project. Ensure that the following have successfully installed:
    1. XR Plugin Management
@@ -59,7 +58,7 @@ Go into **Unity's Package Manager** and install the Windows XR Plugin package, w
 1. Ensure that Initialize XR on Startup is checked.
 1. (**_Optional_**) If targeting HoloLens 2, make sure you're on the UWP platform and select Microsoft HoloLens Feature Set
 
-![Plugin management Open XR](../features/images/xrsdk/PluginManagementOpenXR.png)
+![Plugin management OpenXR](../features/images/xrsdk/PluginManagementOpenXR.png)
 
 > [!NOTE]
 > If you have a pre-existing project that is using MRTK from UPM, make sure that the following line is in the **link.xml** file located in the MixedRealityToolkit.Generated folder.
@@ -70,71 +69,9 @@ Go into **Unity's Package Manager** and install the Windows XR Plugin package, w
 > For the initial release of MRTK and OpenXR, only the HoloLens 2 articulated hands and Windows Mixed Reality motion controllers are natively supported. Support for additional hardware will be added in upcoming releases.
 
 ## Configuring MRTK for the XR SDK pipeline
-::: moniker range=">= mrtkunity-2021-05" 
-If using OpenXR, choose "DefaultOpenXRConfigurationProfile" as the active profile or clone it to make customizations.
 
-If using other XR runtimes in the XR Plug-in Management configuration, like Windows Mixed Reality or Oculus, choose "DefaultXRSDKConfigurationProfile" as the active profile or clone it to make customizations.
-
-These profiles are set up with the correct systems and providers, where needed. See [the profiles docs](../features/profiles/profiles.md#xr-sdk) for more information on profile and sample support with XR SDK.
-
-To migrate an existing profile to XR SDK, the following services and data providers should be added. You will be able to see the new data providers under the XR SDK tab
-
-![The XR SDK tab](../features/images/xrsdk/XrsdkTabView.png)
-
-### Camera
-
-Add the following data providers 
-
-| OpenXR | Windows Mixed Reality |
-|--------|-----------------------|
-| [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings) | [`XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings) **and** [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings) |
-
-![XR SDK camera settings](../features/images/xrsdk/CameraSystemXRSDK.png)
-
-### Input
-
-Add the following data providers 
-
-| OpenXR | Windows Mixed Reality |
-|--------|-----------------------|
-| [`OpenXRDeviceManager`](xref:Microsoft.MixedReality.Toolkit.XRSDK.OpenXR.OpenXRDeviceManager) | [`XRSDK.WindowsMixedReality.WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityDeviceManager) |
-
-__OpenXR__:
-
-![OpenXR input settings](../features/images/xrsdk/InputSystemOpenXR.png)
-
-__Windows Mixed Reality__:
-
-![XR SDK input settings](../features/images/xrsdk/InputSystemWMRXRSDK.png)
-
-### Boundary
-
-Add the following data providers 
-
-| OpenXR | Windows Mixed Reality |
-|--------|-----------------------|
-| [`XRSDKBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.XRSDK.XRSDKBoundarySystem) | [`XRSDKBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.XRSDK.XRSDKBoundarySystem) |
-
-![XR SDK boundary settings](../features/images/xrsdk/BoundarySystemXRSDK.png)
-
-### Spatial awareness
-
-Add the following data providers 
-
-| OpenXR | Windows Mixed Reality |
-|--------|-----------------------|
-| In progress | [`XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver) |
-
-![XR SDK spatial awareness settings](../features/images/xrsdk/SpatialAwarenessXRSDK.png)
-
-### Controller mappings
-
-If using custom controller mapping profiles, open one of them and run the Mixed Reality Toolkit -> Utilities -> Update -> Controller Mapping Profiles menu item to ensure the new XR SDK controller types are defined.
-
-## See also
-
-* [Getting started with AR development in Unity](https://docs.unity3d.com/Manual/AROverview.html)
-* [Getting started with VR development in Unity](https://docs.unity3d.com/Manual/VROverview.html)
+::: moniker range=">= mrtkunity-2021-05"
+Use any of the default MRTK profiles, which are all configured across Unity's XR pipelines. The previous "DefaultOpenXRConfigurationProfile" and "DefaultXRSDKConfigurationProfile" are now labeled obsolete.
 ::: moniker-end
 ::: moniker range="< mrtkunity-2021-05"
 If using OpenXR, choose "DefaultOpenXRConfigurationProfile" as the active profile or clone it to make customizations.
@@ -142,33 +79,58 @@ If using OpenXR, choose "DefaultOpenXRConfigurationProfile" as the active profil
 If using other XR runtimes in the XR Plug-in Management configuration, like Windows Mixed Reality or Oculus, choose "DefaultXRSDKConfigurationProfile" as the active profile or clone it to make customizations.
 
 These profiles are set up with the correct systems and providers, where needed. See [the profiles docs](../features/profiles/profiles.md#xr-sdk) for more information on profile and sample support with XR SDK.
+::: moniker-end
 
-To migrate an existing profile to XR SDK, the following services and data providers should be updated:
+To migrate an existing profile to XR SDK, the following services and data providers should be updated.
+::: moniker range=">= mrtkunity-2021-05"
+You will be able to see the new data providers under the XR SDK tab in Unity 2019, or in the main/only view in Unity 2020+, where legacy XR doesn't exist.
+
+![The XR SDK tab](../features/images/xrsdk/XrsdkTabView.png)
+::: moniker-end
 
 ### Camera
 
+::: moniker range=">= mrtkunity-2021-05"
+Add the following data providers
+::: moniker-end
+::: moniker range="< mrtkunity-2021-05"
 From [`WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.WindowsMixedRealityCameraSettings)
 
 ![Legacy camera settings](../features/images/xrsdk/CameraSystemLegacy.png)
 
 to
+::: moniker-end
 
-| OpenXR | Windows Mixed Reality |
-|--------|-----------------------|
-| [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings) | [`XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings) **and** [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings) |
+::: moniker range=">= mrtkunity-2021-05"
+| OpenXR Plugin | Windows XR Plugin |
+|---------------|-------------------|
+| [`XRSDK.OpenXR.OpenXRCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.OpenXR.OpenXRCameraSettings) | [`XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings) |
+| [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings) | [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings) |
+::: moniker-end
+::: moniker range="< mrtkunity-2021-05"
+| OpenXR Plugin | Windows XR Plugin |
+|---------------|-------------------|
+| | [`XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings) |
+| [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings) | [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings) |
+::: moniker-end
 
 ![XR SDK camera settings](../features/images/xrsdk/CameraSystemXRSDK.png)
 
 ### Input
 
+::: moniker range=">= mrtkunity-2021-05"
+Add the following data providers
+::: moniker-end
+::: moniker range="< mrtkunity-2021-05"
 From [`WindowsMixedReality.Input.WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager)
 
 ![Legacy input settings](../features/images/xrsdk/InputSystemWMRLegacy.png)
 
 to
+::: moniker-end
 
-| OpenXR | Windows Mixed Reality |
-|--------|-----------------------|
+| OpenXR Plugin | Windows XR Plugin |
+|---------------|-------------------|
 | [`OpenXRDeviceManager`](xref:Microsoft.MixedReality.Toolkit.XRSDK.OpenXR.OpenXRDeviceManager) | [`XRSDK.WindowsMixedReality.WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityDeviceManager) |
 
 __OpenXR__:
@@ -181,29 +143,47 @@ __Windows Mixed Reality__:
 
 ### Boundary
 
+::: moniker range=">= mrtkunity-2021-05"
+Add the following data providers
+::: moniker-end
+::: moniker range="< mrtkunity-2021-05"
 From [`MixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.MixedRealityBoundarySystem)
 
 ![Legacy boundary settings](../features/images/xrsdk/BoundarySystemLegacy.png)
 
 to
+::: moniker-end
 
-| OpenXR | Windows Mixed Reality |
-|--------|-----------------------|
+| OpenXR Plugin | Windows XR Plugin |
+|---------------|-------------------|
 | [`XRSDKBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.XRSDK.XRSDKBoundarySystem) | [`XRSDKBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.XRSDK.XRSDKBoundarySystem) |
 
 ![XR SDK boundary settings](../features/images/xrsdk/BoundarySystemXRSDK.png)
 
 ### Spatial awareness
 
+::: moniker range=">= mrtkunity-2021-05"
+Add the following data providers
+::: moniker-end
+::: moniker range="< mrtkunity-2021-05"
 From [`WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver)
 
 ![Legacy spatial awareness settings](../features/images/xrsdk/SpatialAwarenessLegacy.png)
 
 to
+::: moniker-end
 
-| OpenXR | Windows Mixed Reality |
-|--------|-----------------------|
-| In progress | [`XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver) |
+::: moniker range=">= mrtkunity-2021-05"
+| OpenXR Plugin | Windows XR Plugin |
+|---------------|-------------------|
+| [`XRSDK.OpenXR.OpenXRSpatialAwarenessMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.OpenXR.OpenXRSpatialAwarenessMeshObserver) (for UWP) | [`XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver) (for UWP) |
+| [`XRSDK.GenericXRSDKSpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKSpatialMeshObserver) (for non-UWP) | |
+::: moniker-end
+::: moniker range="< mrtkunity-2021-05"
+| OpenXR Plugin | Windows XR Plugin |
+|---------------|-------------------|
+| [`XRSDK.GenericXRSDKSpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKSpatialMeshObserver) | [`XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver) |
+::: moniker-end
 
 ![XR SDK spatial awareness settings](../features/images/xrsdk/SpatialAwarenessXRSDK.png)
 
@@ -215,4 +195,3 @@ If using custom controller mapping profiles, open one of them and run the Mixed 
 
 * [Getting started with AR development in Unity](https://docs.unity3d.com/Manual/AROverview.html)
 * [Getting started with VR development in Unity](https://docs.unity3d.com/Manual/VROverview.html)
-::: moniker-end
