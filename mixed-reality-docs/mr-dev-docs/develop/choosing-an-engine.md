@@ -21,11 +21,14 @@ There are several development paths you can take through our documentation. The 
 
 * **Unreal Engine 4** is a powerful, open source creation engine with full support for mixed reality in both C++ and Blueprints. As of Unreal Engine 4.25, HoloLens support is full-featured and production-ready. With capabilities such as the flexible Blueprints Visual Scripting system, designers can virtually use the full range of concepts and tools generally only available to programmers. Creators across industries can leverage the freedom and control to deliver cutting-edge content, interactive experiences, and immersive virtual worlds.
 
-* **Babylon** is a Javascript-based, open source, 3D graphics engine capable of powering 3D scenes in a web browser. Babylon.js 4.2+ includes support for WebXR to easily create compelling cross-browser AR/VR web experiences. 
-
-<!-- With Babylon React Native, you can even build cross-platform native applications for PC, mobile, and mixed reality devices. -->
-
 * **Native** developers with experience writing their own 3D renderers can build a custom engine using OpenXR. OpenXR is an open royalty-free API standard from Khronos that provides engines native access to a wide range of devices from vendors across the mixed reality spectrum. You can develop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive headset on the desktop.
+
+* **Web** developers creating compelling cross-browser AR/VR web experiences can use **Babylon**. Babylon is a Javascript-based, open source, 3D graphics engine capable of powering 3D scenes in a web browser. Babylon.js 4.2+ includes support for WebXR.
+
+    > [!CAUTION]
+    > Web development for mixed reality on HoloLens devices is not currently supported for WebXR or Babylon.
+
+<!-- With Babylon React Native, you can even build cross-platform native     applications for PC, mobile, and mixed reality devices. -->
 
 ## Features and devices
 
