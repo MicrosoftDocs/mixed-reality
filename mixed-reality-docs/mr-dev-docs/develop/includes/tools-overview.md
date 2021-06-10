@@ -4,7 +4,7 @@
 
 ### 1. Download the recommended Unity version 
 
-The current recommended version for Mixed Reality development is **Unity 2019.4 LTS (Long Term Support)**. The best way to install and manage Unity is through the **Unity Hub**. 
+The current recommended version for Mixed Reality development is **Unity 2020.3 LTS (Long Term Support)**. The best way to install and manage Unity is through the **Unity Hub**. 
 
 > [!NOTE]
 >  If you’re using Unity 2020 LTS, Mixed Reality support is available for HoloLens 2 development. However, there are currently some known issues. This will become the recommended Unity version later this year. 
@@ -41,7 +41,7 @@ You can search packages by name or category, see their dependencies, and even vi
 We recommend completing the getting started section in our curated [HoloLens](../unity/unity-development-overview.md#1-getting-started) or [VR](../unity/unity-development-wmr-overview.md#1-getting-started) development journeys. If you're already following the Unity development for HoloLens journey, finish up the rest of the setup steps listed below and continue on to the [HoloLens 2 Getting Started tutorials](../unity/tutorials/mr-learning-base-01.md).
 
 > [!IMPORTANT]
-> Note that installation instructions are targeted for the latest stable combination of MRTK and Unity releases, which are **MRTK 2.6.1** and **Unity 2019.4 LTS**.
+> Note that installation instructions are targeted for the latest stable combination of MRTK and Unity releases, which are **MRTK 2.7** and **Unity 2020.3 LTS**.
 
 > [!NOTE]
 > If you don't want to use MRTK for Unity, you'll need to [script all interactions and behaviors yourself](../unity/configure-unity-project.md).
