@@ -62,7 +62,7 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 3. Find your UsbNcm IP. There are two ways to do this:
   * In the Settings app on the device (This method only works for HoloLenses running Windows Holographic version 21H1 or higher, with 'Device discovery' toggled ON.)
     1. Go into the Settings app on the device.
-    2. Go to "Update & security" > "For developers." This is the same place you enabled Device Portal.
+    2. Go to "Update & Security" > "For developers." This is the same place you enabled Device Portal.
     3. At the bottom of the page, copy your Ethernet IP address. This is your UsbNcm IP. 
   * In Device Portal 
     1. On your device, open Device Portal using your HoloLens' WiFi address. If you don't know your HoloLens' WiFi address, you can use the voice command "What's my IP address?"
