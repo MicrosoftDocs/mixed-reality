@@ -54,13 +54,21 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 
 ## Connecting over USB
 
-1. [Install the tools](../install-the-tools.md) to make sure you have Visual Studio with the Windows 10 developer tools installed on your PC to enable USB connectivity.
-
 > [!IMPORTANT]
-> If you're having issues with USB connectivity double check that the USB Device Connectivity optional component is installed as part of your **[Visual Studio tool package](../install-the-tools.md#installation-checklist)**.
+> IpOverUsb is no longer recommended per new browser standards as it requires the use of port 10080. If you still wish to use IpOverUsb, check the 'IP over USB' box during Visual Studio installation, which isn't checked by default. Instead, we recommend connecting with UsbNcm, which is supported by default.
 
-2. Connect your HoloLens to your PC with a micro-USB cable for HoloLens (1st Gen) or USB-C for HoloLens 2.
-3. From a web browser on your PC, go to [http://127.0.0.1:10080](http://127.0.0.1:10080).
+1.  Connect your HoloLens to your PC with a micro-USB cable for HoloLens (1st Gen) or USB-C for HoloLens 2.
+2. Find your UsbNcm IP. There are two ways to do this:
+  * In the Setting app on the device
+    1. Go into the Setting app on the device
+    2. Go to "Update & Security" > "For Developers." This is the same place you enabled Device Portal.
+    3. At the bottom of the page, copy your Ethernet IP address. This is your UsbNcm IP. 
+  * In Device Portal
+    1. On your device, open Device Portal using your HoloLens' WiFi address If you don't know your HoloLens' WiFi address, you can use the voice command "What's my IP address?"
+    2. Go to System > Networking
+    3. On the far right side of the page in the "IP Configuration" panel, locate the section that starts with "Description: UsbNcm Function:
+    4. Your UsbNcm IP is the "IPv4 address" line. You can copy the address or just click on the address - it is a hyperlink which will reopen Device Portal using the UsbNcm IP. 
+3. If you copied your UsbNcm IP, from a web browser on your PC go to https:// followed by your UsbNcm IP.
 
 ### Moving files over USB
 
