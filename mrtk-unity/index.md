@@ -26,7 +26,7 @@ MRTK-Unity is a Microsoft-driven project that provides a set of components and f
 ::: moniker range=">= mrtkunity-2021-05"
 | Platform | Supported Devices |
 |---|---|
-| OpenXR (Unity 2020.3) | Microsoft HoloLens 2 <br> Windows Mixed Reality headsets |
+| OpenXR (Unity 2020.3.8+) | Microsoft HoloLens 2 <br> Windows Mixed Reality headsets |
 | Windows Mixed Reality | Microsoft HoloLens <br> Microsoft HoloLens 2 <br> Windows Mixed Reality headsets  |
 | Oculus (Unity 2019.3 or newer) | Oculus Quest |
 | OpenVR |  Windows Mixed Reality headsets <br> HTC Vive <br> Oculus Rift |
@@ -36,7 +36,7 @@ MRTK-Unity is a Microsoft-driven project that provides a set of components and f
 ::: moniker range="< mrtkunity-2021-05"
 | Platform | Supported Devices |
 |---|---|
-| OpenXR (Preview in MRTK 2.6, Unity 2020.3) | Microsoft HoloLens 2 <br> Windows Mixed Reality headsets |
+| OpenXR (Preview in MRTK 2.6, Unity 2020.3.8+) | Microsoft HoloLens 2 <br> Windows Mixed Reality headsets |
 | Windows Mixed Reality | Microsoft HoloLens <br> Microsoft HoloLens 2 <br> Windows Mixed Reality headsets  |
 | Oculus (Unity 2019.3 or newer) | Oculus Quest |
 | OpenVR |  Windows Mixed Reality headsets <br> HTC Vive <br> Oculus Rift |
