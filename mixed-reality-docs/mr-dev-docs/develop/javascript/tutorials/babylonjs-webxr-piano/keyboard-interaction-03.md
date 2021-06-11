@@ -2,7 +2,7 @@
 title: Interact with piano in the 3D space
 description: Learn how to add interactions to a virtual piano using babylon.js
 author: JING1201
-ms.author: t-jinglow
+ms.author: t-jinglow, ayyonet
 ms.prod: mixed-reality
 ms.topic: tutorial
 ms.date: 05/31/2021

@@ -2,7 +2,7 @@
 title: Building a piano in WebXR using BabylonJS
 description: Complete this tutorial series to learn how to build a functioning 88-key piano keyboard in WebXR using BabylonJS
 author: JING1201
-ms.author: t-jinglow
+ms.author: t-jinglow, ayyonet
 ms.prod: mixed-reality
 ms.topic: tutorial
 ms.date: 05/31/2021
@@ -31,7 +31,7 @@ In this tutorial series, you will learn how to:
 * [WebXR Javascript Hello World Tutorial](../babylonjs-webxr-helloworld/introduction-01.md)
 * WebXR-supported browser, for example [Microsoft Edge](../../../../whats-new/new-microsoft-edge.md)
 * [Babylon.js](https://doc.babylonjs.com/divingDeeper/developWithBjs/frameworkVers) 4.2 or higher
-* Any [immersive VR headset](../../../../discover/immersive-headset-hardware-details.md) or [Windows Mixed Reality simulator](../../../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
+* Any [VR headset](../../../../discover/immersive-headset-hardware-details.md) or [Windows Mixed Reality simulator](../../../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
 * Optional: [Windows 10 Creator Update](https://www.microsoft.com/software-download/windows10) if you want to use a Windows Mixed Reality Simulator
 
 ## Getting started
@@ -92,19 +92,25 @@ Let's begin by setting up the HTML web page that will contain the babylon.js sce
 
     Note that here we are making `createScene()` an async function. Stay tuned to find out why.
 
-1. Next, we will need a light and a camera to make the scene visible to us. Append the following lines of code into the `createScene()` function:
+1. Next, we will need a light and a camera to make the scene visible to us. Update the `createScene()` function:
 
     ```javascript
-    const alpha =  3*Math.PI/2;
-    const beta = Math.PI/50;
-    const radius = 220;
-    const target = new BABYLON.Vector3(0, 0, 0);
-    
-    const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target, scene);
-    camera.attachControl(canvas, true);
-    
-    const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
-    light.intensity = 0.6;
+    const createScene = async function(engine) {
+        const scene = new BABYLON.Scene(engine);
+
+        const alpha =  3*Math.PI/2;
+        const beta = Math.PI/50;
+        const radius = 220;
+        const target = new BABYLON.Vector3(0, 0, 0);
+        
+        const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target, scene);
+        camera.attachControl(canvas, true);
+        
+        const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
+        light.intensity = 0.6;
+
+        return scene;
+    }
     ```
 
     Here, we have created an [ArcRotateCamera](https://doc.babylonjs.com/divingDeeper/cameras/camera_introduction#arc-rotate-camera) which points almost completely downwards and targets the origin point of the space. The light we have created is a [HemisphericLight](https://doc.babylonjs.com/divingDeeper/lights/lights_introduction#the-hemispheric-light) which points to the sky, which is very useful for simulating an ambient space. We have also dimmed the light a little by lowering its intensity.
