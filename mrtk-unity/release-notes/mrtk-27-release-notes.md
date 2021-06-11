@@ -5,6 +5,7 @@ author: RogPodge
 ms.author: roliu
 ms.date: 05/27/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, XRSDK, Legacy XR, Leap Motion, Ultraleap
+ms.localizationpriority: high
 monikerRange: '>= mrtkunity-2021-05'
 ---
 
