@@ -1,6 +1,6 @@
 # [Unity](#tab/unity)
 
-The open source sample apps were been created by our teams to help you get a handle on Mixed Reality development first-hand. We've provided the projects and full source code as a learning reference.
+The open source sample apps were created by our teams to help you get a handle on Mixed Reality development first-hand. We've provided the projects and full source code as a learning reference.
 
 ### HoloLens 2 open source sample apps
 
