@@ -23,7 +23,7 @@ There are several development paths you can take through our documentation. The 
 
 * **Native** developers with experience writing their own 3D renderers can build a custom engine using OpenXR. OpenXR is an open royalty-free API standard from Khronos that provides engines native access to a wide range of devices from vendors across the mixed reality spectrum. You can develop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive headset on the desktop.
 
-* **Web** developers creating compelling cross-browser AR/VR web experiences can use **Babylon**. Babylon is a Javascript-based, open source, 3D graphics engine capable of powering 3D scenes in a web browser. Babylon.js 4.2+ includes support for WebXR.
+* **Web** developers creating compelling cross-browser AR/VR web experiences can use **Babylon**. Babylon is a Javascript-based, open source, 3D graphics engine capable of powering 3D scenes in a web browser. Babylon.js 4.2+ includes support for WebXR. 
 
     > [!CAUTION]
     > Web development for mixed reality on HoloLens devices is not currently supported for WebXR or Babylon.
@@ -75,7 +75,7 @@ There are several development paths you can take through our documentation. The 
 |---|---|---|---|---|
 | Azure Spatial Anchors | ✔️ | ✔️ | ❌ | ✔️ |
 | Azure Object Anchors | ✔️ | ❌ | ❌ | ✔️ |
-| Azure Remote Rendering | ✔️ | ❌ | ❌ | |
+| Azure Remote Rendering | ✔️* | ❌ | ❌ | ✔️* |
 
 > [!NOTE]
 > * Azure Remote Rendering is currently supported in apps using the legacy WinRT APIs (Windows XR plugin in Unity). ARR support for OpenXR apps is coming soon.
