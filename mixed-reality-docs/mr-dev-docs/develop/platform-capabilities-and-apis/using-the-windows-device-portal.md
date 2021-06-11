@@ -55,20 +55,21 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 ## Connecting over USB
 
 > [!IMPORTANT]
-> IpOverUsb is no longer recommended per new browser standards as it requires the use of port 10080. If you still wish to use IpOverUsb, check the 'USB Device Connectivity' box during Visual Studio installation, which isn't checked by default. Instead, we recommend connecting with UsbNcm, which is supported by default.
+> IpOverUsb is no longer recommended per new browser standards as it requires the use of port 10080. If you still wish to use IpOverUsb, check the 'USB Device Connectivity' box during Visual Studio installation, which isn't checked by default. Instead, we recommend connecting with UsbNcm, which is supported by default on HoloLens 2. If you are using a HoloLens 1, we recommend connecting to your PC using WiFi.
 
-1.  Connect your HoloLens to your PC with a micro-USB cable for HoloLens (1st Gen) or USB-C for HoloLens 2.
-2. Find your UsbNcm IP. There are two ways to do this:
-  * In the Setting app on the device
-    1. Go into the Setting app on the device.
-    2. Go to "Update & Security" > "For Developers." This is the same place you enabled Device Portal.
+1. If your HoloLens 2 is running Windows Holographic version 21H1 or higher, go to 'For developers' in the Settings app and make sure that 'Device discovery' is toggled ON. 
+2. Connect your HoloLens 2 to your PC with a USB-C cable.
+3. Find your UsbNcm IP. There are two ways to do this:
+  * In the Settings app on the device (This method only works for HoloLenses running Windows Holographic version 21H1 or higher, with 'Device discovery' toggled ON.)
+    1. Go into the Settings app on the device.
+    2. Go to "Update & security" > "For developers." This is the same place you enabled Device Portal.
     3. At the bottom of the page, copy your Ethernet IP address. This is your UsbNcm IP. 
-  * In Device Portal (This method only works for HoloLenses running Windows Holographic, version 21H1 or newer)
+  * In Device Portal 
     1. On your device, open Device Portal using your HoloLens' WiFi address. If you don't know your HoloLens' WiFi address, you can use the voice command "What's my IP address?"
     2. Go to System > Networking
     3. On the far right side of the page in the "IP Configuration" panel, locate the section that starts with "Description: UsbNcm Function."
     4. Your UsbNcm IP is the "IPv4 address" line. You can copy the address or just click on the address - it is a hyperlink which will reopen Device Portal using the UsbNcm IP. 
-3. If you copied your UsbNcm IP, from a web browser on your PC go to https:// followed by your UsbNcm IP.
+4. If you copied your UsbNcm IP, from a web browser on your PC go to https:// followed by your UsbNcm IP.
 
 ### Moving files over USB
 
