@@ -4,8 +4,8 @@ description: release notes of MRTK version 2.7
 author: RogPodge
 ms.author: roliu
 ms.date: 05/27/2021
-ms.localizationpriority: medium
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, XRSDK, Legacy XR, Leap Motion, Ultraleap
+ms.localizationpriority: high
 monikerRange: '>= mrtkunity-2021-05'
 ---
 
@@ -23,6 +23,8 @@ As the new OpenXR plugins are becoming more and more mature MRTK now officially 
 - [Support for articulated hand mesh on HoloLens 2](#support-for-hololens-2-articulated-hand-mesh-on-openxr)
 - Support for Spatial Mapping on HoloLens 2 [#9567](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9567), [#9827](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9827)
 - Support for Scene Understanding on HoloLens 2 [#9744](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9744)
+
+If you are targeting HoloLens 2 or Windows Mixed Reality headsets via OpenXR please make sure to install/update to **Mixed Reality OpenXR plugin version 0.9.5 or later** via [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool), otherwise you might miss some of the improvements above.
 
 ### Legacy XR and XR SDK Data Providers can now be used within the same profile
 
