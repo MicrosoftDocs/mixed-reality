@@ -23,35 +23,35 @@ There are several development paths you can take through our documentation. The 
 
 * **Native** developers with experience writing their own 3D renderers can build a custom engine using OpenXR. OpenXR is an open royalty-free API standard from Khronos that provides engines native access to a wide range of devices from vendors across the mixed reality spectrum. You can develop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive headset on the desktop.
 
-* **Web** developers creating compelling cross-browser AR/VR web experiences can use **Babylon**. Babylon is a Javascript-based, open source, 3D graphics engine capable of powering 3D scenes in a web browser. Babylon.js 4.2+ includes support for WebXR. 
+* **Web** developers creating compelling cross-browser AR/VR web experiences can use **WebXR**.
 
-    > [!CAUTION]
-    > Web development for mixed reality on HoloLens devices is not currently supported for WebXR or Babylon.
+    <!-- > [!NOTE]
+    > **Babylon.js** is in progress, check out our [roadmap]() for updates! -->
 
-<!-- With Babylon React Native, you can even build cross-platform native     applications for PC, mobile, and mixed reality devices. -->
+<!-- Babylon is a Javascript-based, open source, 3D graphics engine capable of powering 3D scenes in a web browser. Babylon.js 4.2+ includes support for WebXR. With Babylon React Native, you can even build cross-platform native     applications for PC, mobile, and mixed reality devices. -->
 
 ## Features and devices
 
 <br>
 
-| Logistics | Unity | Unreal | Babylon | Native (custom engine) |
+| Logistics | Unity | Unreal | WebXR (custom engine) | Native (custom engine) |
 |---|---|---|---|---|
 | Language | C# | C++ | JavaScript | C/C++ |
 | Pricing | [Unity pricing](https://store.unity.com/#plans-individual) | [Unreal pricing](https://www.unrealengine.com/download) | Free | Free |
 
 <br>
 
-| Device features | Unity | Unreal | Babylon | Native (custom engine) |
+| Device features | Unity | Unreal | WebXR (custom engine) | Native (custom engine) |
 |---|---|---|---|---|
-| Hand, eye, voice input | ✔️ | ✔️ | ? | ✔️ |
-| Motion controllers | ✔️ | ✔️ | ? | ✔️ |
-| Plane and mesh detection | ✔️ | ✔️ | ? | ✔️ |
+| Hand, eye, voice input | ✔️ | ✔️ | ✔️ | ✔️ |
+| Motion controllers | ✔️ | ✔️ | ✔️ | ✔️ |
+| Plane and mesh detection | ✔️ | ✔️ | ✔️ (Hit test) | ✔️ |
 | Spatial sound | ✔️ | ✔️ | ? | ✔️ |
 | QR code detection | ✔️ | ✔️ | ? | ✔️ |
 
 <br>
 
-| Hardware | Unity | Unreal | Babylon | Native (custom engine) |
+| Hardware | Unity | Unreal | WebXR (custom engine) | Native (custom engine) |
 |---|---|---|---|---|
 | HoloLens 2 | ✔️ | ✔️ | ? | ✔️ |
 | HoloLens (1st gen) | ✔️ | ✔️ | ❌ | WinRT (Legacy) only |
@@ -63,7 +63,7 @@ There are several development paths you can take through our documentation. The 
 
 <br>
 
-| Tools | Unity | Unreal | Babylon | Native (custom engine) |
+| Tools | Unity | Unreal | WebXR (custom engine) | Native (custom engine) |
 |---|---|---|---|---|
 | Mixed Reality Toolkit | ✔️ | ✔️ | ? | ❌ |
 | World Locking Tools | ✔️ | ❌ | ? | ❌ |
@@ -71,7 +71,7 @@ There are several development paths you can take through our documentation. The 
 
 <br>
 
-| Cloud services | Unity | Unreal | Babylon | Native (custom engine) |
+| Cloud services | Unity | Unreal | WebXR (custom engine) | Native (custom engine) |
 |---|---|---|---|---|
 | Azure Spatial Anchors | ✔️ | ✔️ | ❌ | ✔️ |
 | Azure Object Anchors | ✔️ | ❌ | ❌ | ✔️ |
