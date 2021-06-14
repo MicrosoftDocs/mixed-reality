@@ -34,48 +34,51 @@ There are several development paths you can take through our documentation. The 
 
 <br>
 
-| Logistics | Unity | Unreal | WebXR (custom engine) | Native (custom engine) |
+| Logistics | Unity | Unreal | Custom engine (WebXR) | Custom engine (OpenXR) |
 |---|---|---|---|---|
 | Language | C# | C++ | JavaScript | C/C++ |
 | Pricing | [Unity pricing](https://store.unity.com/#plans-individual) | [Unreal pricing](https://www.unrealengine.com/download) | Free | Free |
 
 <br>
 
-| Device features | Unity | Unreal | WebXR (custom engine) | Native (custom engine) |
+| Device features | Unity | Unreal | Custom engine (WebXR) | Custom engine (OpenXR) |
 |---|---|---|---|---|
-| Hand, eye, voice input | ✔️ | ✔️ | ✔️ | ✔️ |
+| Device/display tracking | ✔️ | ✔️ | ✔️ | ✔️ |
+| Hand input | ✔️ | ✔️ | ✔️ | ✔️ |
+| Eye input | ✔️ | ✔️ | ❌ | ✔️ |
+| Voice input | ✔️ | ✔️ | ✔️ | ✔️ |
 | Motion controllers | ✔️ | ✔️ | ✔️ | ✔️ |
-| Plane and mesh detection | ✔️ | ✔️ | ✔️ (Hit test) | ✔️ |
-| Spatial sound | ✔️ | ✔️ | ? | ✔️ |
-| QR code detection | ✔️ | ✔️ | ? | ✔️ |
+| Plane/mesh hit testing | ✔️ | ✔️ | ✔️ | ✔️ |
+| Scene understanding | ✔️ | ✔️ | ❌ | ✔️ |
+| Spatial sound | ✔️ | ✔️ | ✔️ | ✔️ |
+| QR code detection | ✔️ | ✔️ | ❌ | ✔️ |
 
 <br>
 
-| Hardware | Unity | Unreal | WebXR (custom engine) | Native (custom engine) |
+| Hardware | Unity | Unreal | Custom engine (WebXR) | Custom engine (OpenXR) |
 |---|---|---|---|---|
-| HoloLens 2 | ✔️ | ✔️ | ? | ✔️ |
+| HoloLens 2 | ✔️ | ✔️ | ✔️ | ✔️ |
 | HoloLens (1st gen) | ✔️ | ✔️ | ❌ | WinRT (Legacy) only |
-| [Immersive VR headsets](../discover/immersive-headset-hardware-details.md) | ✔️ | ✔️ | ? | ✔️ |
-| Oculus Quest/Desktop | ✔️ | ✔️ | ? | ✔️ |
-| Mobile (ARCore/ARKit) | ✔️ | ✔️ | ? | ❌ |
-| Magic Leap | ✔️ | ✔️ | ? | ❌ |
-| SteamVR | ✔️ | ✔️ | ? | ✔️ |
+| [Windows Mixed Reality headsets](../discover/immersive-headset-hardware-details.md) | ✔️ | ✔️ | ✔️ | ✔️ |
+| SteamVR headsets | ✔️ | ✔️ | ✔️ | ✔️ |
+| Oculus Quest/Rift | ✔️ | ✔️ | ✔️ | ✔️ |
+| Mobile (ARCore/ARKit) | ✔️ | ✔️ | ✔️ | ❌ |
 
 <br>
 
-| Tools | Unity | Unreal | WebXR (custom engine) | Native (custom engine) |
+| Tools | Unity | Unreal | Custom engine (WebXR) | Custom engine (OpenXR) |
 |---|---|---|---|---|
-| Mixed Reality Toolkit | ✔️ | ✔️ | ? | ❌ |
-| World Locking Tools | ✔️ | ❌ | ? | ❌ |
+| Mixed Reality Toolkit | ✔️ | ✔️ | ❌  | ❌ |
+| World Locking Tools | ✔️ | ❌ | ❌  | ❌ |
 <!-- | Mesh | ❌ | ❌ | ❌ | ❌ | -->
 
 <br>
 
-| Cloud services | Unity | Unreal | WebXR (custom engine) | Native (custom engine) |
+| Cloud services | Unity | Unreal | Custom engine (WebXR) | Custom engine (OpenXR) |
 |---|---|---|---|---|
 | Azure Spatial Anchors | ✔️ | ✔️ | ❌ | ✔️ |
 | Azure Object Anchors | ✔️ | ❌ | ❌ | ✔️ |
-| Azure Remote Rendering | ✔️* | ❌ | ❌ | ✔️* |
+| Azure Remote Rendering | ✔️ * | ❌ | ❌ | ✔️ * |
 
 > [!NOTE]
 > * Azure Remote Rendering is currently supported in apps using the legacy WinRT APIs (Windows XR plugin in Unity). ARR support for OpenXR apps is coming soon.
