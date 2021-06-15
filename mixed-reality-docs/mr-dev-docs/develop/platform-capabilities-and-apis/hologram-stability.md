@@ -91,7 +91,7 @@ There are four main types of reprojection
 Applications need to take specific actions to enable the different types of reprojection
 * **Depth Reprojection:** The application submits their depth buffer to the system for every rendered frame.  On Unity, Depth Reprojection is done with the **Shared Depth Buffer** option in the **Windows Mixed Reality Settings** pane under **XR Plugin Management**.  DirectX apps call CommitDirect3D11DepthBuffer.  The application shouldn't call SetFocusPoint.
 * **Planar Reprojection:** On every frame, applications tell the system the location of a plane to stabilize.  Unity applications call SetFocusPointForFrame and should have **Shared Depth Buffer** disabled.  DirectX apps call SetFocusPoint and shouldn't call CommitDirect3D11DepthBuffer.
-* **Automatic Planar Reprojection:** To enable, the application needs to submit their depth buffer to the system as they would for Depth Reprojection. Apps using the Mixed Reality Toolkit (MRTK) can configure the [camera settings provider](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html#hololens-2-reprojection-method) to use AutoPlanar Reprojection. Native apps should set the `DepthReprojectionMode` in the [HolographicCameraRenderingParameters](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) to `AutoPlanar` each frame. For HoloLens generation 1, the application should not call SetFocusPoint.
+* **Automatic Planar Reprojection:** To enable, the application needs to submit their depth buffer to the system as they would for Depth Reprojection. Apps using the Mixed Reality Toolkit (MRTK) can configure the [camera settings provider](/windows/mixed-reality/mrtk-unity/features/camera-system/windows-mixed-reality-camera-settings#hololens-2-reprojection-method) to use AutoPlanar Reprojection. Native apps should set the `DepthReprojectionMode` in the [HolographicCameraRenderingParameters](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) to `AutoPlanar` each frame. For HoloLens generation 1, the application should not call SetFocusPoint.
 
 ### Choosing Reprojection Technique
 
@@ -187,4 +187,4 @@ As before, rendering at 60 FPS and setting the stabilization plane are the most 
 * [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
 * [Color, light, and materials](../../design/color-light-and-materials.md)
 * [Instinctual interactions](../../design/interaction-fundamentals.md)
-* [MRTK Hologram Stabilization](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/hologram-stabilization.html)
+* [MRTK Hologram Stabilization](/windows/mixed-reality/mrtk-unity/performance/hologram-stabilization)

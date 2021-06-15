@@ -108,7 +108,7 @@ If you now enter Game mode, you can use near or far interaction to place the rov
 
 ![Unity Play mode split view with Reset button being pressed](images/mr-learning-base/base-07-section1-step1-7.png)
 
-To learn more about the Object Manipulator component and its associated properties, you can visit the [Object Manipulator](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) guide in the [MRTK Documentation Portal](/windows/mixed-reality/mrtk-unity/).
+To learn more about the Object Manipulator component and its associated properties, you can visit the [Object Manipulator](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-manipulator) guide in the [MRTK Documentation Portal](/windows/mixed-reality/mrtk-unity/).
 
 ## Adding Bounds Control
 
@@ -163,7 +163,7 @@ If you now enter Game mode and enable the Bounds Control by clicking the Enable 
 
 ![Unity Play mode split view with Bounds Control being manipulated](images/mr-learning-base/base-07-section2-step1-4.png)
 
-To learn more about the Bounds Control component and its associated properties, you can visit the [Bounds Control](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html) guide in the [MRTK Documentation Portal](/windows/mixed-reality/mrtk-unity/).
+To learn more about the Bounds Control component and its associated properties, you can visit the [Bounds Control](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounds-control) guide in the [MRTK Documentation Portal](/windows/mixed-reality/mrtk-unity/).
 
 ## Congratulations
 
