@@ -366,25 +366,21 @@
         href: unreal/unreal-deploying.md
       - name: Publishing to the Microsoft Store
         href: unreal/unreal-publishing-to-store.md
-- name: JavaScript
+# - name: Babylon 
+#   items:
+#   - name: Tutorials
+#     items:
+#       - name: Hello World using BabylonJS
+#         items:
+#         - name: 1. Introduction
+#           href: javascript/tutorials/babylonjs-webxr-helloworld/introduction-01.md
+#         - name: 2. Prepare a scene with basic 3D object
+#           href: javascript/tutorials/babylonjs-webxr-helloworld/prepare-scene-02.md
+#         - name: 3. Interact with 3D object
+#           href: javascript/tutorials/babylonjs-webxr-helloworld/interact-03.md
+- name: Custom engine
   items:
-  - name: JavaScript development overview
-    href: javascript/javascript-development-overview.md
-  - name: WebXR
-    href: javascript/webxr-overview.md
-  - name: Tutorials
-    items:
-      - name: Hello World using BabylonJS
-        items:
-        - name: 1. Introduction
-          href: javascript/tutorials/babylonjs-webxr-helloworld/introduction-01.md
-        - name: 2. Prepare a scene with basic 3D object
-          href: javascript/tutorials/babylonjs-webxr-helloworld/prepare-scene-02.md
-        - name: 3. Interact with 3D object
-          href: javascript/tutorials/babylonjs-webxr-helloworld/interact-03.md
-- name: Native
-  items:
-  - name: Native development overview
+  - name: Custom engine development overview
     href: native/directx-development-overview.md
   - name: OpenXR
     items:
@@ -398,6 +394,10 @@
         href: native/openxr-performance.md
       - name: OpenXR troubleshooting
         href: native/openxr-troubleshooting.md
+  - name: WebXR 
+    items:
+      - name: WebXR overview 
+        href: javascript/webxr-overview.md
   - name: WinRT (Legacy)
     items:
       - name: Getting started
