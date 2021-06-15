@@ -12,7 +12,7 @@ keywords: Unity, mixed reality, development, getting started, new project, Windo
 
 For developers targeting Unity 2020, the Windows XR plugin enables access to mixed reality features on HoloLens 2 and Windows Mixed Reality headsets.  This plugin is also supported on Unity 2019, although there are some known incompatibilities with Azure Spatial Anchors when using this plugin on that version.
 
-While Microsoft and the community have created opensource tools such as the [Mixed Reality Toolkit (MRTK)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html) that will automatically set up the WMR environment, many developers wish to build their experiences from the ground up.  The following documentation will demonstrate how to properly set up a project for Mixed Reality development whether you are using MRTK or not.  The settings you need to change are broken down into two categories: per-project settings and per-scene settings.
+While Microsoft and the community have created opensource tools such as the [Mixed Reality Toolkit (MRTK)](/windows/mixed-reality/mrtk-unity/configuration/usingupm) that will automatically set up the WMR environment, many developers wish to build their experiences from the ground up.  The following documentation will demonstrate how to properly set up a project for Mixed Reality development whether you are using MRTK or not.  The settings you need to change are broken down into two categories: per-project settings and per-scene settings.
 
 ## Setting up your project with MRTK
 

@@ -130,7 +130,7 @@ Use visual feedback to communicate the following states:
 
 ---
 
-A [button on HoloLens 2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) is an example of how the different input interaction states are visualized:
+A [button on HoloLens 2](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button) is an example of how the different input interaction states are visualized:
 
 :::row:::
     :::column:::

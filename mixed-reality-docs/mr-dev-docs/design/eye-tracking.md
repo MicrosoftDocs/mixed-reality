@@ -88,14 +88,14 @@ For eye tracking to work accurately, each user is required to go through an eye 
 Eye tracking enables applications to track where the user is looking in real time. 
 The following use cases describe some interactions that are possible with eye tracking on HoloLens 2 in mixed reality.
 These use cases aren't yet part of the Holographic Shell experience (that is, the interface that you see when you start up your HoloLens 2).
-You can try some of them in the [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html), which provides several interesting and powerful examples for using eye tracking, such as quick and effortless eye-supported target selections, and automatically scrolling through text based on what the user looks at. 
+You can try some of them in the [Mixed Reality Toolkit](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main), which provides several interesting and powerful examples for using eye tracking, such as quick and effortless eye-supported target selections, and automatically scrolling through text based on what the user looks at. 
 
 ### User intent
 
 Information about where and what a user looks at provides a powerful **context for other inputs**, such as voice, hands, and controllers.
 This can be used for various tasks.
 For example, this can range from quickly and effortlessly **targeting** across the scene by looking at a hologram and saying *"select"* (also see [gaze and commit](gaze-and-commit.md)) or *"put this..."*, then looking over to where the user wants to place the hologram and say *"...there"*. 
-Examples for this can be found in [Mixed Reality Toolkit - Eye-supported Target Selection](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html) and [Mixed Reality Toolkit - Eye-supported Target Positioning](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Positioning.html).
+Examples for this can be found in [Mixed Reality Toolkit - Eye-supported Target Selection](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-target-selection) and [Mixed Reality Toolkit - Eye-supported Target Positioning](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-positioning).
 
 Additionally, an example for user intent might include using information about what users look at to enhance engagement with embodied virtual agents and interactive holograms. 
 For instance, virtual agents might adapt available options and their behavior, based on currently viewed content. 
@@ -110,7 +110,7 @@ Another example is **eye-supported zoom and pan** where the user can feel like d
 Triggering and controlling zoom speed can be controlled by voice or hand input, which is important for providing the user with the feeling of control while avoiding being overwhelmed. 
 We'll talk about these design considerations in more detail below. 
 Once zoomed in, the user can smoothly follow, for example, the course of a street to explore his or her neighborhood by using their eye-gaze.
-Demo examples for these types of interactions can be found in the [Mixed Reality Toolkit - Eye-supported Navigation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Navigation.html) sample.
+Demo examples for these types of interactions can be found in the [Mixed Reality Toolkit - Eye-supported Navigation](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-navigation) sample.
 
 Other use cases for _implicit actions_ may include:
 - **Smart notifications:** Ever get annoyed by notifications popping up right where you're looking? Taking into account what a user is paying attention to, you can make this experience better by offsetting notifications from where the user is currently gazing. This limits distractions and automatically dismisses them once the user is finished reading. 
@@ -121,7 +121,7 @@ Other use cases for _implicit actions_ may include:
 Information on where or what users look at can be an immensely powerful tool. It can help assess usability of designs and identify problems in workflows to make them more efficient.
 Eye tracking visualization and analytics are a common practice in various application areas. 
 With HoloLens 2, we provide a new dimension to this understanding as 3D holograms can be placed in real-world contexts and assessed accordingly. 
-The [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html) provides basic examples for logging and loading eye tracking data and how to visualize them.
+The [Mixed Reality Toolkit](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main) provides basic examples for logging and loading eye tracking data and how to visualize them.
 Microsoft is dedicated to facilitating innovation while ensuring that users have an informed and transparent experience with how their eye tracking information is used.  We'll work with our developers and UX teams to provide guidance for third parties to ensure that experiences are centered around the user.  
 
 Other applications in this area may include: 
