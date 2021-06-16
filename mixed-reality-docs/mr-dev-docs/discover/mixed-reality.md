@@ -1,5 +1,5 @@
 ---
-title: Mixed Reality?
+title: What is Mixed Reality?
 description: Discussion on Mixed Reality, demomstrating the use of AR and VR devices on the Mixed Reality spectrum.
 author: brandonbray
 ms.author: branbray
