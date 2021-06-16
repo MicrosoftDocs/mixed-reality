@@ -64,7 +64,7 @@ Press the Play button to enter Game mode, press-and-hold the right mouse button 
 > If you don't see the camera ray in your Scene window, make sure your Gizmos menu is enabled, as shown in the image above.
 
 > [!TIP]
-> To learn how to use the in-editor input simulation, you can refer to the [Using the In-Editor Hand Input Simulation to test a scene](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene) guide in the [MRTK Documentation Portal](/windows/mixed-reality/mrtk-unity).
+> To learn how to use the in-editor input simulation, you can refer to the [Using the In-Editor Hand Input Simulation to test a scene](/windows/mixed-reality/mrtk-unity/features/input-simulation/input-simulation-service) guide in the [MRTK Documentation Portal](/windows/mixed-reality/mrtk-unity).
 
 > [!TIP]
 > If your computer has a microphone, you can easily toggle the active state of the Diagnostics panel that appears in the Game window by using the speech command "toggle diagnostics." Alternatively, you can disable it in the MRTK Configuration Profile > Diagnostics > Enable Diagnostics System. However, it is generally recommended to keep the Diagnostics System active during development.
