@@ -3,13 +3,40 @@ title: MRTK 2.7 Release Notes
 description: release notes of MRTK version 2.7
 author: RogPodge
 ms.author: roliu
-ms.date: 05/27/2021
+ms.date: 06/16/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, XRSDK, Legacy XR, Leap Motion, Ultraleap
 ms.localizationpriority: high
 monikerRange: '>= mrtkunity-2021-05'
 ---
 
 # Microsoft Mixed Reality Toolkit 2.7 Release Notes
+
+## What's new in 2.7.1
+
+### Show version
+
+The `Mixed Reality` > `Toolkit` menu now contains a `Show version...` entry that examines the Mixed Reality Toolkit Foundation package to determine the version of MRTK that is being used by the project.
+
+![Show version menu](images/ShowVersionMenu.png)
+
+![MRTK version dialog](images/VersionDialog.png)
+
+> [!NOTE]
+> If MRTK was cloned from the [GitHub repository](https://aka.ms/mrtk), the version information will not have been set.
+>
+> ![Unable to determine version](images/CannotDetermineVersion.png)
+
+### Authors list
+
+Starting with MRTK 2.7.1, the authors list file is included in the Mixed Reality Toolkit Foundation package.
+
+### Notable Bugfixes and Changes
+
+- [Marked Unity Joystick Manager as supported on XR SDK pipeline](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9954)
+- [Added checks to interactable inspector code to prevent null errors](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9943)
+- [Add OpenXR mesh provider to pulse shader example scene](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9902)
+- [Restore hand physics profile to example scene](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9915)
+- [Some cleanup to the HandConstraint* scripts](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9935)
 
 ## What's new in 2.7.0
 
