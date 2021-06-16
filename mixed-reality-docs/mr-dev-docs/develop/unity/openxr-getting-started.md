@@ -10,17 +10,15 @@ keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Realit
 
 # Using the Mixed Reality OpenXR Plugin
 
-For developers targeting Unity 2020 to build HoloLens 2 or Mixed Reality applications, OpenXR plugin can be used instead of WindowsXR plugin for better cross platform compatibilities.  The Mixed Reality OpenXR Plugin also works well with latest [Mixed Reality Toolkit 2.7](/windows/mixed-reality/mrtk-unity).
+For developers targeting Unity 2020 to build HoloLens 2 or Mixed Reality applications, OpenXR plugin can be used instead of WindowsXR plugin for better cross platform compatibilities.  The Mixed Reality OpenXR Plugin also works well with latest [Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md).
 
 ## Prerequisites
 
-* Latest Unity 2020.3 LTS, (we recommend 2020.3.8f1 or above)
-* Latest Unity OpenXR plugin, (we recommend 1.2 or later)
+* Latest Unity 2020.3 LTS, recommend 2020.3.6f1 or above.
+* Latest Unity OpenXR plugin, recommend 1.2 or later
 * Latest [tools for HoloLens 2 development](/windows/mixed-reality/develop/install-the-tools?tabs=unity#installation-checklist)
-* Latest MRTK (optional), (we recommend version 2.7 or later)
-* Latest Mixed Reality OpenXR Plugin, (we recommend version 1.0.0-preview.1 or later)
-
-![Screenshot of the open xr unity basic sample running on a HoloLens](images/openxr-example.png)
+* Latest MRTK (optional), recommend version 2.6 or later
+* Latest Mixed Reality OpenXR Plugin, recommend version 0.9.5 or later
 
 > [!NOTE]
 > If you're building VR applications on Windows PC, the Mixed Reality OpenXR plugin is not necessarily required. However, you'll want to install the plugin if you're customizing controller mapping for HP Reverb G2 controllers or building apps that work on both HoloLens 2 and VR headsets.
@@ -30,7 +28,7 @@ For developers targeting Unity 2020 to build HoloLens 2 or Mixed Reality applica
 MRTK for Unity provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. MRTK version 2 intends to speed up application development for Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and OpenVR platform. The project is aimed at reducing barriers to entry, creating mixed reality applications, and contributing back to the community as we all grow.
 
 > [!div class="nextstepaction"]
-> [Set up your project using MRTK](./tutorials/mr-learning-base-02.md?tabs=openxr)
+> [Set up your project using MRTK](/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02?tabs=openxr)
 
 Take a look at [MRTK's documentation](/windows/mixed-reality/mrtk-unity) for more feature details.
 
@@ -87,11 +85,14 @@ Check out the [OpenXR Mixed Reality samples repo](https://github.com/microsoft/O
 
 ## Using MRTK with OpenXR support
 
-MRTK for Unity version 2.7 now officially supports the Mixed Reality OpenXR plugin.
+MRTK-Unity supports the Mixed Reality OpenXR plugin starting with the 2.5.3 release.
 
-Open the [Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md) again to install the Mixed Reality Toolkit, if you haven't already. OpenXR support is in the **Foundation** package.
+1. Open the [Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md) again to install the Mixed Reality Toolkit, if you haven't already. OpenXR support is in the **Foundation** package.
+2. Go to the MixedReality Toolkit component script in the Inspector and switch to the **DefaultOpenXRConfigurationProfile** profile:
 
-![Mixed reality feature tool discover features window with standard assets highlighted](images/mrft-install-openxr.png)
+    ![Screenshot of switching the MRTK configuration in the Mixed Reality Toolkit component in the inspector](images/openxr-img-11.png)
+
+    1. See the MRTK documentation for [more in-depth information on migrating to OpenXR](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk#configuring-mrtk-for-the-xr-sdk-pipeline).
 
 > [!NOTE]
 > When upgrading from a previous version of MRTK, ensure the following line is in the **Assets/MixedRealityToolkit.Generated/link.xml** file:
