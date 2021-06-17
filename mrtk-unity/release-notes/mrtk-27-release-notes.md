@@ -32,11 +32,13 @@ Starting with MRTK 2.7.1, the authors list file is included in the Mixed Reality
 
 ### Notable Bugfixes and Changes
 
-- [Marked Unity Joystick Manager as supported on XR SDK pipeline](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9954)
-- [Added checks to interactable inspector code to prevent null errors](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9943)
-- [Add OpenXR mesh provider to pulse shader example scene](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9902)
-- [Restore hand physics profile to example scene](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9915)
-- [Some cleanup to the HandConstraint* scripts](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9935)
+- Marked Unity Joystick Manager as supported on XR SDK pipeline [#9954](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9954)
+- Added checks to interactable inspector code to prevent null errors [#9943](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9943)
+- Add OpenXR mesh provider to pulse shader example scene [#9902](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9902)
+- Restore hand physics profile to example scene [#9915](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9915)
+- Some cleanup to the HandConstraint* scripts [#9935](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9935)
+- Experience Settings profile can now be set to None [#9982](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9982)
+
 
 ## What's new in 2.7.0
 
