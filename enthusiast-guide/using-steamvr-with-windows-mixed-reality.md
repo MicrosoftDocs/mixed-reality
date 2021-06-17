@@ -38,9 +38,18 @@ Windows Mixed Reality for SteamVR allows users to run SteamVR experiences on Win
 
 **Run SteamVR on the target PC**
 1. After plugging the portable storage device into the target PC, move the SteamVR, MixedRealityVRDriver, and other folders to a convenient place on the target PC.
-2. Ensuring SteamVR and MixedRealityVRDriver are in the same folder, download [steamvr-add-wmr-driver.bat](scripts/steamvr-add-wmr-driver.bat) to the containing folder, and double-click it. This will allow the runtime to find the Windows Mixed Reality for SteamVR driver in your custom installation.
 ![SteamVR and Windows Mixed Reality for SteamVR installed on target PC](images/steamvr-install-files.png)
-3. In order to run SteamVR you should double-click the file "vrstartup.exe" located at *SteamVR\bin\win64\vrstartup.exe*, or *SteamVR\bin\win32\vrstartup.exe* if the target PC is running a 32-bit version of Windows.
+
+2. Ensuring SteamVR and MixedRealityVRDriver are in the same folder, open a command prompt. For the sake of this example, we will assume the containing folder is at *C:\SteamVRInstall*. In that case, in the command prompt you should run:
+```powershell
+chdir "C:\SteamVRInstall"
+.\SteamVR\bin\win64\vrpathreg.exe adddriver "C:\SteamVRInstall\MixedRealityVRDriver"
+```
+(Note that if you're running a 32-bit version of Windows, the `win64` part of the path above should be `win32` instead.)
+
+This will allow the runtime to find the Windows Mixed Reality for SteamVR driver in your custom installation.
+
+4. In order to run SteamVR you should double-click the file "vrstartup.exe" located at *SteamVR\bin\win64\vrstartup.exe*, or *SteamVR\bin\win32\vrstartup.exe* if the target PC is running a 32-bit version of Windows.
 
 See the [Steamworks documentation page for more information and troubleshooting](https://partner.steamgames.com/doc/features/steamvr/enterprise#2).
 
