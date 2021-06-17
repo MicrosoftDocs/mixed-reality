@@ -25,8 +25,8 @@ There are several development paths you can take through our documentation. The 
 
 * **Web** developers creating compelling cross-browser AR/VR web experiences can use **WebXR**.
 
-    <!-- > [!NOTE]
-    > **Babylon.js** is in progress, check out our [roadmap]() for updates! -->
+    > [!NOTE]
+    > **Babylon.js** development is currently in progress. Check out the [latest news and engage with the community](https://doc.babylonjs.com/divingDeeper/webXR/introToWebXR)!
 
 <!-- Babylon is a Javascript-based, open source, 3D graphics engine capable of powering 3D scenes in a web browser. Babylon.js 4.2+ includes support for WebXR. With Babylon React Native, you can even build cross-platform native     applications for PC, mobile, and mixed reality devices. -->
 
