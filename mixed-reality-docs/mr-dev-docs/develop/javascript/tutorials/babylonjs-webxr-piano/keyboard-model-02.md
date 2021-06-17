@@ -466,7 +466,7 @@ In this section, let's expand the usage of the key-creation functions to generat
     });
     ```
 
-    Note that we are, again, creating a parent `TransformNode` named `piano` to group the keyboard and the frame together as a whole.
+    Note that we are, again, creating a parent `TransformNode` named `piano` to group the keyboard and the frame together as a whole. This will make moving or scaling the entire piano a lot easier if we ever need to do so.
 
 1. Once the frame is imported, notice that the keyboard is lying at the bottom of the frame (since the y-coordinates of the keys are at 0 by default). Let's lift the keyboard so that it fits into the standup piano frame:
 

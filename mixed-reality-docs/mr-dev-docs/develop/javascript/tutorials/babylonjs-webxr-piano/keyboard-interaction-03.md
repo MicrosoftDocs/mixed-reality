@@ -59,43 +59,54 @@ Make sure that you have gone through the [previous tutorial in the series](keybo
 *scene.js*
 
 ```javascript
-const WhiteKey = function (note, topWidth, bottomWidth, topPositionX, wholePositionX) {
-    return {
-        build(scene, register, referencePositionX) {
-            // Create bottom part
-            const bottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: bottomWidth, height: 1.5, depth: 4.5}, scene);
+const buildKey = function (scene, parent, props) {
+    if (props.type === "white") {
+        /*
+        Props for building a white key should contain: 
+        note, topWidth, bottomWidth, topPositionX, wholePositionX, register, referencePositionX
 
-            // Create top part
-            const top = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: topWidth, height: 1.5, depth: 5}, scene);
-            top.position.z =  4.75;
-            top.position.x += topPositionX;
+        As an example, the props for building the middle C white key would be
+        {type: "white", note: "C", topWidth: 1.4, bottomWidth: 2.3, topPositionX: -0.45, wholePositionX: -14.4, register: 4, referencePositionX: 0}
+        */
 
-            // Merge bottom and top parts
-            const key = BABYLON.Mesh.MergeMeshes([bottom, top], true, false, null, false, false);
-            key.position.x = referencePositionX + wholePositionX;
-            key.name = note + register;
+        // Create bottom part
+        const bottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: props.bottomWidth, height: 1.5, depth: 4.5}, scene);
 
-            return key;
-        }
+        // Create top part
+        const top = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: props.topWidth, height: 1.5, depth: 5}, scene);
+        top.position.z =  4.75;
+        top.position.x += props.topPositionX;
+
+        // Merge bottom and top parts
+        const key = BABYLON.Mesh.MergeMeshes([bottom, top], true, false, null, false, false);
+        key.position.x = props.referencePositionX + props.wholePositionX;
+        key.name = props.note + props.register;
+        key.parent = parent;
+
+        return key;
     }
-}
+    else if (props.type === "black") {
+        /*
+        Props for building a black key should contain: 
+        note, wholePositionX, register, referencePositionX
 
-const BlackKey = function (note, wholePositionX) {
-    return {
-        build(scene, register, referencePositionX) {
-            // Create black color material
-            const blackMat = new BABYLON.StandardMaterial("black");
-            blackMat.diffuseColor = new BABYLON.Color3(0, 0, 0);
-            
-            // Create black key
-            const key = BABYLON.MeshBuilder.CreateBox(note + register, {width: 1.4, height: 2, depth: 5}, scene);
-            key.position.z += 4.75;
-            key.position.y += 0.25;
-            key.position.x = referencePositionX + wholePositionX;
-            key.material = blackMat;
+        As an example, the props for building the C#4 black key would be
+        {type: "black", note: "C#", wholePositionX: -13.45, register: 4, referencePositionX: 0}
+        */
 
-            return key;
-        }
+        // Create black color material
+        const blackMat = new BABYLON.StandardMaterial("black");
+        blackMat.diffuseColor = new BABYLON.Color3(0, 0, 0);
+
+        // Create black key
+        const key = BABYLON.MeshBuilder.CreateBox(props.note + props.register, {width: 1.4, height: 2, depth: 5}, scene);
+        key.position.z += 4.75;
+        key.position.y += 0.25;
+        key.position.x = props.referencePositionX + props.wholePositionX;
+        key.material = blackMat;
+        key.parent = parent;
+
+        return key;
     }
 }
 
@@ -114,47 +125,53 @@ const createScene = async function(engine) {
     light.intensity = 0.6;
 
     const keyParams = [
-        WhiteKey("C", 1.4, 2.3, -0.45, -14.4),
-        BlackKey("C#", -13.45),
-        WhiteKey("D", 1.4, 2.4, 0, -12),
-        BlackKey("D#", -10.6),
-        WhiteKey("E", 1.4, 2.3, 0.45, -9.6),
-        WhiteKey("F", 1.3, 2.4, -0.55, -7.2),
-        BlackKey("F#", -6.35),
-        WhiteKey("G", 1.3, 2.3, -0.2, -4.8),
-        BlackKey("G#", -3.6),
-        WhiteKey("A", 1.3, 2.3, 0.2, -2.4),
-        BlackKey("A#", -0.85),
-        WhiteKey("B", 1.3, 2.4, 0.55, 0)
+        {type: "white", note: "C", topWidth: 1.4, bottomWidth: 2.3, topPositionX: -0.45, wholePositionX: -14.4},
+        {type: "black", note: "C#", wholePositionX: -13.45},
+        {type: "white", note: "D", topWidth: 1.4, bottomWidth: 2.4, topPositionX: 0, wholePositionX: -12},
+        {type: "black", note: "D#", wholePositionX: -10.6},
+        {type: "white", note: "E", topWidth: 1.4, bottomWidth: 2.3, topPositionX: 0.45, wholePositionX: -9.6},
+        {type: "white", note: "F", topWidth: 1.3, bottomWidth: 2.4, topPositionX: -0.55, wholePositionX: -7.2},
+        {type: "black", note: "F#", wholePositionX: -6.35},
+        {type: "white", note: "G", topWidth: 1.3, bottomWidth: 2.3, topPositionX: -0.2, wholePositionX: -4.8},
+        {type: "black", note: "G#", wholePositionX: -3.6},
+        {type: "white", note: "A", topWidth: 1.3, bottomWidth: 2.3, topPositionX: 0.2, wholePositionX: -2.4},
+        {type: "black", note: "A#", wholePositionX: -0.85},
+        {type: "white", note: "B", topWidth: 1.3, bottomWidth: 2.4, topPositionX: 0.55, wholePositionX: 0},
     ]
-    
-    const keys = new Set();
+
+    // Transform Node that acts as the parent of all piano keys
+    const keyboard = new BABYLON.TransformNode("keyboard");
 
     // Register 1 through 7
     var referencePositionX = -2.4*14;
     for (let octave = 1; octave <= 7; octave++) {
         keyParams.forEach(key => {
-            keys.add(key.build(scene, octave, referencePositionX));
+            buildKey(scene, keyboard, Object.assign({register: octave, referencePositionX: referencePositionX}, key));
         })
         referencePositionX += 2.4*7;
     }
 
     // Register 0
-    keys.add(WhiteKey("A", 1.9, 2.3, -0.20, -2.4).build(scene, 0, -2.4*21))
+    buildKey(scene, keyboard, {type: "white", note: "A", topWidth: 1.9, bottomWidth: 2.3, topPositionX: -0.20, wholePositionX: -2.4, register: 0, referencePositionX: -2.4*21});
     keyParams.slice(10, 12).forEach(key => {
-        keys.add(key.build(scene, 0, -2.4*21));
+        buildKey(scene, keyboard, Object.assign({register: 0, referencePositionX: -2.4*21}, key));
     })
-    
+
     // Register 8
-    keys.add(WhiteKey("C", 2.3, 2.3, 0, -2.4*6).build(scene, 8, 84));
+    buildKey(scene, keyboard, {type: "white", note: "C", topWidth: 2.3, bottomWidth: 2.3, topPositionX: 0, wholePositionX: -2.4*6, register: 8, referencePositionX: 84});
 
-    // Import piano frame
-    BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/JING1201/babylonjs-exploration/main/piano-keys/", "pianoFrame.babylon", scene);
+    // Transform node that acts as the parent of all piano components
+    const piano = new BABYLON.TransformNode("piano");
+    keyboard.parent = piano;
 
-    // Lift piano keys
-    keys.forEach(key => {
-        key.position.y += 80;
-    })
+    // Import and scale piano frame
+    BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/JING1201/babylonjs-exploration/main/piano-keys/", "pianoFrame.babylon", scene, function(meshes) {
+        const frame = meshes[0];
+        frame.parent = piano;
+    });
+
+    // Lift the piano keyboard
+    keyboard.position.y += 80;
 
     const xrHelper = await scene.createDefaultXRExperienceAsync();
 
@@ -211,7 +228,7 @@ Right now, the piano keyboard we have created is a static model that does not re
                 if(pointerInfo.pickInfo.hit) {
                     const pickedMesh = pointerInfo.pickInfo.pickedMesh;
                     const pointerId = pointerInfo.event.pointerId;
-                    if (keys.has(pickedMesh)) {
+                    if (pickedMesh.parent === keyboard) {
                         pickedMesh.position.y -= 0.5;
                         // play the sound of the note
                         pointerToKey.set(pointerId, {
@@ -257,9 +274,9 @@ Right now, the piano keyboard we have created is a static model that does not re
     Once the library is imported, here is how we can initialize an instrument and play/stop MIDI sounds using the library:
 
     ```javascript
-    const piano = await Soundfont.instrument(new AudioContext(), 'acoustic_grand_piano');
-    const sound = piano.play("C4"); // Play note C4
-    sound.stop(); // Stop note C4
+    const pianoSound = await Soundfont.instrument(new AudioContext(), 'acoustic_grand_piano');
+    const C4 = piano.play("C4"); // Play note C4
+    C4.stop(); // Stop note C4
     ```
 
 1. Now let's incorporate this into the pointer events and finalize the code for this section:
@@ -278,7 +295,7 @@ Right now, the piano keyboard we have created is a static model that does not re
                         pickedMesh.position.y -= 0.5; // Move the key downward
                         pointerToKey.set(pointerId, {
                             mesh: pickedMesh,
-                            note: piano.play(pointerInfo.pickInfo.pickedMesh.name) // Play the sound of the note
+                            note: pianoSound.play(pointerInfo.pickInfo.pickedMesh.name) // Play the sound of the note
                         });
                     }
                 }
@@ -295,7 +312,7 @@ Right now, the piano keyboard we have created is a static model that does not re
     });
     ```
 
-    Since we named each key's mesh by the note that it represents, we can easily indicate which note to play by passing in the mesh's name to the `piano.play()` function. Also note that we are storing the sound into the `pointerToKey` map so that we know what sound to stop when a key is released.
+    Since we named each key's mesh by the note that it represents, we can easily indicate which note to play by passing in the mesh's name to the `pianoSound.play()` function. Also note that we are storing the sound into the `pointerToKey` map so that we know what sound to stop when a key is released.
 
 ## Scaling the piano for immersive VR mode
 
@@ -311,19 +328,24 @@ By now, you have probably already played with the piano with your mouse (or even
 
     ![Huge piano](./images/huge-piano.jpg)
 
-1. Let's scale down the piano so that its size is more like a normal standup piano in real life. To do so, we will need to use [a utility function that allows us to scale a mesh relative to a point in the space](https://doc.babylonjs.com/toolsAndResources/utilities/Pivot#enlargement). Add this function to *scene.js* (outside of `createScene()`):
+1. Let's scale down the piano so that its size is more like a normal standup piano in real life. To do so, we will need to use a utility function that allows us to [scale a mesh relative to a point in the space](https://doc.babylonjs.com/toolsAndResources/utilities/Pivot#enlargement). Add this function to *scene.js* (outside of `createScene()`):
 
     ```javascript
-    BABYLON.Mesh.prototype.scaleFromPivot = function(pivotPoint, sx, sy, sz) {
-        var _sx = sx / this.scaling.x;
-        var _sy = sy / this.scaling.y;
-        var _sz = sz / this.scaling.z;
-        this.scaling = new BABYLON.Vector3(sx, sy, sz); 
-        this.position = new BABYLON.Vector3(pivotPoint.x + _sx * (this.position.x - pivotPoint.x), pivotPoint.y + _sy * (this.position.y - pivotPoint.y), pivotPoint.z + _sz * (this.position.z - pivotPoint.z));
+    const scaleFromPivot = function(transformNode, pivotPoint, scale) {
+        const _sx = scale / transformNode.scaling.x;
+        const _sy = scale / transformNode.scaling.y;
+        const _sz = scale / transformNode.scaling.z;
+        transformNode.scaling = new BABYLON.Vector3(_sx, _sy, _sz); 
+        transformNode.position = new BABYLON.Vector3(pivotPoint.x + _sx * (transformNode.position.x - pivotPoint.x), pivotPoint.y + _sy * (transformNode.position.y - pivotPoint.y), pivotPoint.z + _sz * (transformNode.position.z - pivotPoint.z));
     }
     ```
 
-1. We will use this function to scale the piano frame and keys by a factor of 0.015, with a pivot point at the origin. Edit the part where each key is lifted and where the piano frame is imported:
+    This function takes in 3 parameters:
+    * **transformNode**: the `TransformNode` to be pivoted
+    * **pivotPoint**: a `Vector3` object which indicates the point that the scaling is relative to
+    * **scale**: the scale factor
+
+1. We will use this function to scale the piano frame and keys by a factor of 0.015, with a pivot point at the origin. Append the function call to the `createScene()` function by placing after `keyboard.position.y += 80;`:
 
     ```javascript
     // Put this line at the beginning of createScene()
@@ -331,57 +353,20 @@ By now, you have probably already played with the piano with your mouse (or even
     ```
 
     ```javascript
-    // Import and scale piano frame
-    BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/JING1201/babylonjs-exploration/main/piano-keys/", "pianoFrame.babylon", scene, function(meshes) {
-        const frame = meshes[0];
-        frame.scaleFromPivot(new BABYLON.Vector3(0, 0, 0), scale, scale, scale);
-    });
-
-    // Lift and scale piano keyboard
-    keys.forEach(key => {
-        key.position.y += 80;
-        key.scaleFromPivot(new BABYLON.Vector3(0, 0, 0), scale, scale, scale);
-    })
+    // Scale the entire piano
+    scaleFromPivot(piano, new BABYLON.Vector3(0, 0, 0), scale);
     ```
 
-1. Let's not forget to scale the piano key movements and the camera positions as well:
+1. Let's not forget to scale camera position as well:
 
     ```javascript
     const alpha =  3*Math.PI/2;
     const beta = Math.PI/50;
-    const radius = 220*scale;
+    const radius = 220*scale; // scale the radius
     const target = new BABYLON.Vector3(0, 0, 0);
     
     const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target, scene);
     camera.attachControl(canvas, true);
-    ```
-
-    ```javascript
-    scene.onPointerObservable.add((pointerInfo) => {
-        switch (pointerInfo.type) {
-            case BABYLON.PointerEventTypes.POINTERDOWN:
-                if(pointerInfo.pickInfo.hit) {
-                    let pickedMesh = pointerInfo.pickInfo.pickedMesh;
-                    let pointerId = pointerInfo.event.pointerId;
-                    if (keys.has(pickedMesh)) {
-                        pickedMesh.position.y -= 0.5*scale; // Move the key downward
-                        pointerToKey.set(pointerId, {
-                            mesh: pickedMesh,
-                            note: piano.play(pointerInfo.pickInfo.pickedMesh.name) // Play the sound of the note
-                        });
-                    }
-                }
-                break;
-            case BABYLON.PointerEventTypes.POINTERUP:
-                let pointerId = pointerInfo.event.pointerId;
-                if (pointerToKey.has(pointerId)) {
-                    pointerToKey.get(pointerId).mesh.position.y += 0.5*scale; // Move the key upward
-                    pointerToKey.get(pointerId).note.stop(); // Stop the sound of the note
-                    pointerToKey.delete(pointerId);
-                }
-                break;
-        }
-    });
     ```
 
 1. Now when we enter the VR space again, the piano would be of the size of an ordinary standup piano.
@@ -449,52 +434,63 @@ Here is the final code for *scene.js* and *index.html*:
 *scene.js*
 
 ```javascript
-const WhiteKey = function (note, topWidth, bottomWidth, topPositionX, wholePositionX) {
-    return {
-        build(scene, register, referencePositionX) {
-            // Create bottom part
-            const bottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: bottomWidth, height: 1.5, depth: 4.5}, scene);
+const buildKey = function (scene, parent, props) {
+    if (props.type === "white") {
+        /*
+        Props for building a white key should contain: 
+        note, topWidth, bottomWidth, topPositionX, wholePositionX, register, referencePositionX
 
-            // Create top part
-            const top = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: topWidth, height: 1.5, depth: 5}, scene);
-            top.position.z =  4.75;
-            top.position.x += topPositionX;
+        As an example, the props for building the middle C white key would be
+        {type: "white", note: "C", topWidth: 1.4, bottomWidth: 2.3, topPositionX: -0.45, wholePositionX: -14.4, register: 4, referencePositionX: 0}
+        */
 
-            // Merge bottom and top parts
-            const key = BABYLON.Mesh.MergeMeshes([bottom, top], true, false, null, false, false);
-            key.position.x = referencePositionX + wholePositionX;
-            key.name = note + register;
+        // Create bottom part
+        const bottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: props.bottomWidth, height: 1.5, depth: 4.5}, scene);
 
-            return key;
-        }
+        // Create top part
+        const top = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: props.topWidth, height: 1.5, depth: 5}, scene);
+        top.position.z =  4.75;
+        top.position.x += props.topPositionX;
+
+        // Merge bottom and top parts
+        const key = BABYLON.Mesh.MergeMeshes([bottom, top], true, false, null, false, false);
+        key.position.x = props.referencePositionX + props.wholePositionX;
+        key.name = props.note + props.register;
+        key.parent = parent;
+
+        return key;
+    }
+    else if (props.type === "black") {
+        /*
+        Props for building a black key should contain: 
+        note, wholePositionX, register, referencePositionX
+
+        As an example, the props for building the C#4 black key would be
+        {type: "black", note: "C#", wholePositionX: -13.45, register: 4, referencePositionX: 0}
+        */
+
+        // Create black color material
+        const blackMat = new BABYLON.StandardMaterial("black");
+        blackMat.diffuseColor = new BABYLON.Color3(0, 0, 0);
+
+        // Create black key
+        const key = BABYLON.MeshBuilder.CreateBox(props.note + props.register, {width: 1.4, height: 2, depth: 5}, scene);
+        key.position.z += 4.75;
+        key.position.y += 0.25;
+        key.position.x = props.referencePositionX + props.wholePositionX;
+        key.material = blackMat;
+        key.parent = parent;
+
+        return key;
     }
 }
 
-const BlackKey = function (note, wholePositionX) {
-    return {
-        build(scene, register, referencePositionX) {
-            // Create black color material
-            const blackMat = new BABYLON.StandardMaterial("black");
-            blackMat.diffuseColor = new BABYLON.Color3(0, 0, 0);
-
-            // Create black key
-            const key = BABYLON.MeshBuilder.CreateBox(note + register, {width: 1.4, height: 2, depth: 5}, scene);
-            key.position.z += 4.75;
-            key.position.y += 0.25;
-            key.position.x = referencePositionX + wholePositionX;
-            key.material = blackMat;
-
-            return key;
-        }
-    }
-}
-
-BABYLON.Mesh.prototype.scaleFromPivot = function(pivotPoint, sx, sy, sz) {
-    var _sx = sx / this.scaling.x;
-    var _sy = sy / this.scaling.y;
-    var _sz = sz / this.scaling.z;
-    this.scaling = new BABYLON.Vector3(sx, sy, sz); 
-    this.position = new BABYLON.Vector3(pivotPoint.x + _sx * (this.position.x - pivotPoint.x), pivotPoint.y + _sy * (this.position.y - pivotPoint.y), pivotPoint.z + _sz * (this.position.z - pivotPoint.z));
+const scaleFromPivot = function(transformNode, pivotPoint, scale) {
+    const _sx = scale / transformNode.scaling.x;
+    const _sy = scale / transformNode.scaling.y;
+    const _sz = scale / transformNode.scaling.z;
+    transformNode.scaling = new BABYLON.Vector3(_sx, _sy, _sz); 
+    transformNode.position = new BABYLON.Vector3(pivotPoint.x + _sx * (transformNode.position.x - pivotPoint.x), pivotPoint.y + _sy * (transformNode.position.y - pivotPoint.y), pivotPoint.z + _sz * (transformNode.position.z - pivotPoint.z));
 }
 
 const createScene = async function(engine) {
@@ -513,74 +509,81 @@ const createScene = async function(engine) {
     light.intensity = 0.6;
 
     const keyParams = [
-        WhiteKey("C", 1.4, 2.3, -0.45, -14.4),
-        BlackKey("C#", -13.45),
-        WhiteKey("D", 1.4, 2.4, 0, -12),
-        BlackKey("D#", -10.6),
-        WhiteKey("E", 1.4, 2.3, 0.45, -9.6),
-        WhiteKey("F", 1.3, 2.4, -0.55, -7.2),
-        BlackKey("F#", -6.35),
-        WhiteKey("G", 1.3, 2.3, -0.2, -4.8),
-        BlackKey("G#", -3.6),
-        WhiteKey("A", 1.3, 2.3, 0.2, -2.4),
-        BlackKey("A#", -0.85),
-        WhiteKey("B", 1.3, 2.4, 0.55, 0)
+        {type: "white", note: "C", topWidth: 1.4, bottomWidth: 2.3, topPositionX: -0.45, wholePositionX: -14.4},
+        {type: "black", note: "C#", wholePositionX: -13.45},
+        {type: "white", note: "D", topWidth: 1.4, bottomWidth: 2.4, topPositionX: 0, wholePositionX: -12},
+        {type: "black", note: "D#", wholePositionX: -10.6},
+        {type: "white", note: "E", topWidth: 1.4, bottomWidth: 2.3, topPositionX: 0.45, wholePositionX: -9.6},
+        {type: "white", note: "F", topWidth: 1.3, bottomWidth: 2.4, topPositionX: -0.55, wholePositionX: -7.2},
+        {type: "black", note: "F#", wholePositionX: -6.35},
+        {type: "white", note: "G", topWidth: 1.3, bottomWidth: 2.3, topPositionX: -0.2, wholePositionX: -4.8},
+        {type: "black", note: "G#", wholePositionX: -3.6},
+        {type: "white", note: "A", topWidth: 1.3, bottomWidth: 2.3, topPositionX: 0.2, wholePositionX: -2.4},
+        {type: "black", note: "A#", wholePositionX: -0.85},
+        {type: "white", note: "B", topWidth: 1.3, bottomWidth: 2.4, topPositionX: 0.55, wholePositionX: 0},
     ]
 
-    const keys = new Set();
+    // Transform Node that acts as the parent of all piano keys
+    const keyboard = new BABYLON.TransformNode("keyboard");
 
     // Register 1 through 7
     var referencePositionX = -2.4*14;
     for (let octave = 1; octave <= 7; octave++) {
         keyParams.forEach(key => {
-            keys.add(key.build(scene, octave, referencePositionX))
+            buildKey(scene, keyboard, Object.assign({register: octave, referencePositionX: referencePositionX}, key));
         })
         referencePositionX += 2.4*7;
     }
 
     // Register 0
-    keys.add(WhiteKey("A", 1.9, 2.3, -0.20, -2.4).build(scene, 0, -2.4*21))
+    buildKey(scene, keyboard, {type: "white", note: "A", topWidth: 1.9, bottomWidth: 2.3, topPositionX: -0.20, wholePositionX: -2.4, register: 0, referencePositionX: -2.4*21});
     keyParams.slice(10, 12).forEach(key => {
-        keys.add(key.build(scene, 0, -2.4*21))
+        buildKey(scene, keyboard, Object.assign({register: 0, referencePositionX: -2.4*21}, key));
     })
 
     // Register 8
-    keys.add(WhiteKey("C", 2.3, 2.3, 0, -2.4*6).build(scene, 8, 84))
+    buildKey(scene, keyboard, {type: "white", note: "C", topWidth: 2.3, bottomWidth: 2.3, topPositionX: 0, wholePositionX: -2.4*6, register: 8, referencePositionX: 84});
+
+    // Transform node that acts as the parent of all piano components
+    const piano = new BABYLON.TransformNode("piano");
+    keyboard.parent = piano;
 
     // Import and scale piano frame
     BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/JING1201/babylonjs-exploration/main/piano-keys/", "pianoFrame.babylon", scene, function(meshes) {
         const frame = meshes[0];
-        frame.scaleFromPivot(new BABYLON.Vector3(0, 0, 0), scale, scale, scale);
+        frame.parent = piano;
     });
 
-    // Lift and scale piano keyboard
-    keys.forEach(key => {
-        key.position.y += 80;
-        key.scaleFromPivot(new BABYLON.Vector3(0, 0, 0), scale, scale, scale);
-    })
+    // Lift the piano keyboard
+    keyboard.position.y += 80;
+
+    // Scale the entire piano
+    scaleFromPivot(piano, new BABYLON.Vector3(0, 0, 0), scale);
 
     const pointerToKey = new Map()
-    const piano = await Soundfont.instrument(new AudioContext(), 'acoustic_grand_piano');
+    const pianoSound = await Soundfont.instrument(new AudioContext(), 'acoustic_grand_piano');
 
     scene.onPointerObservable.add((pointerInfo) => {
         switch (pointerInfo.type) {
             case BABYLON.PointerEventTypes.POINTERDOWN:
+                // Only take action if the pointer is down on a mesh
                 if(pointerInfo.pickInfo.hit) {
                     let pickedMesh = pointerInfo.pickInfo.pickedMesh;
                     let pointerId = pointerInfo.event.pointerId;
-                    if (keys.has(pickedMesh)) {
-                        pickedMesh.position.y -= 0.5*scale; // Move the key downward
+                    if (pickedMesh.parent === keyboard) {
+                        pickedMesh.position.y -= 0.5; // Move the key downward
                         pointerToKey.set(pointerId, {
                             mesh: pickedMesh,
-                            note: piano.play(pointerInfo.pickInfo.pickedMesh.name) // Play the sound of the note
+                            note: pianoSound.play(pointerInfo.pickInfo.pickedMesh.name) // Play the sound of the note
                         });
                     }
                 }
                 break;
             case BABYLON.PointerEventTypes.POINTERUP:
                 let pointerId = pointerInfo.event.pointerId;
+                // Only take action if the released pointer was recorded in pointerToKey
                 if (pointerToKey.has(pointerId)) {
-                    pointerToKey.get(pointerId).mesh.position.y += 0.5*scale; // Move the key upward
+                    pointerToKey.get(pointerId).mesh.position.y += 0.5; // Move the key upward
                     pointerToKey.get(pointerId).note.stop(); // Stop the sound of the note
                     pointerToKey.delete(pointerId);
                 }
@@ -592,14 +595,14 @@ const createScene = async function(engine) {
 
     const featuresManager = xrHelper.baseExperience.featuresManager;
 
-    const pointerSelection = featuresManager.enableFeature(BABYLON.WebXRFeatureName.POINTER_SELECTION, "stable", {
+    featuresManager.enableFeature(BABYLON.WebXRFeatureName.POINTER_SELECTION, "stable", {
         xrInput: xrHelper.input,
         enablePointerSelectionOnAllControllers: true        
     });
 
     const ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 400, height: 400});
 
-    const teleportation = featuresManager.enableFeature(BABYLON.WebXRFeatureName.TELEPORTATION, "stable", {
+    featuresManager.enableFeature(BABYLON.WebXRFeatureName.TELEPORTATION, "stable", {
         xrInput: xrHelper.input,
         floorMeshes: [ground],
         snapPositions: [new BABYLON.Vector3(2.4*3.5*scale, 0, -10*scale)],
