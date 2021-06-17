@@ -112,6 +112,8 @@ Visually, each register looks exactly the same as another, so we can start with 
     whiteKeyTop.position.z += 4.75;
     whiteKeyTop.position.x -= 0.45;
 
+    // Parameters of BABYLON.Mesh.MergeMeshes:
+    // (arrayOfMeshes, disposeSource, allow32BitsIndices, meshSubclass, subdivideWithSubMeshes, multiMultiMaterials)
     const whiteKeyV1 = BABYLON.Mesh.MergeMeshes([whiteKeyBottom, whiteKeyTop], true, false, null, false, false);
     whiteKeyV1.material = whiteMat;
     whiteKeyV1.name = "C4";
@@ -154,102 +156,249 @@ Visually, each register looks exactly the same as another, so we can start with 
     Add the function below to *scene.js*, outside the `createScene()` function:
 
     ```javascript
-    const WhiteKey = function (note, topWidth, bottomWidth, topPositionX, wholePositionX) {
-        return {
-            build(scene, register, referencePositionX) {
-                // Create bottom part
-                const bottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: bottomWidth, height: 1.5, depth: 4.5}, scene);
-
-                // Create top part
-                const top = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: topWidth, height: 1.5, depth: 5}, scene);
-                top.position.z =  4.75;
-                top.position.x += topPositionX;
+    const buildKey = function (scene, parent, props) {
+        if (props.type === "white") {
+            /*
+            Props for building a white key should contain: 
+            note, topWidth, bottomWidth, topPositionX, wholePositionX, register, referencePositionX
     
-                // Merge bottom and top parts
-                const key = BABYLON.Mesh.MergeMeshes([bottom, top], true, false, null, false, false);
-                key.position.x = referencePositionX + wholePositionX;
-                key.name = note + register;
+            As an example, the props for building the middle C white key would be
+            {type: "white", note: "C", topWidth: 1.4, bottomWidth: 2.3, topPositionX: -0.45, wholePositionX: -14.4, register: 4, referencePositionX: 0}
+            */
     
-                return key;
-            }
+            // Create bottom part
+            const bottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: props.bottomWidth, height: 1.5, depth: 4.5}, scene);
+    
+            // Create top part
+            const top = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: props.topWidth, height: 1.5, depth: 5}, scene);
+            top.position.z =  4.75;
+            top.position.x += props.topPositionX;
+    
+            // Merge bottom and top parts
+            const key = BABYLON.Mesh.MergeMeshes([bottom, top], true, false, null, false, false);
+            key.position.x = props.referencePositionX + props.wholePositionX;
+            key.name = props.note + props.register;
+            key.parent = parent;
+    
+            return key;
         }
     }
     ```
 
-    In this block of code, we created a function named `WhiteKey()` which returns an object with a `build()` function.
+    In this block of code, we created a function named `buildKey()`, which builds and returns a white key if `props.type` is `"white"`. By identifying the type of the key in the parameter `props`, we can create both black keys and white keys in the same function by branching out using an if-statement.
 
-    The parameters of `WhiteKey()` are:
+    The parameters of `buildKey()` are:
+    * **scene**: scene that the key is in
+    * **parent**: parent node of the mesh (this allows us to group all keys together to a single parent)
+    * **props**: properties of the key that will be build
+
+    The `props` for a white key will contain the following items:
+    * **type**: "white"
     * **name**: the name of the note which the key represents
     * **topWidth**: width of the top part
     * **bottomWidth**: width of the bottom part
     * **topPositionX**: x-position of the top part relative to the bottom part
     * **wholePositionX**: x-position of the whole key relative to the end point of the octave (the right edge of key B).
-
-    For the `build()` function, the parameters are:
-    * **scene**: scene that the key is in
     * **register**: register that the key belongs to (a number between 0 and 8)
     * **referencePositionX**: x-coordinate of the end point of the octave (used as a reference point).
 
-    By having these two layers of abstraction, we are able to initialize a `WhiteKey` object with the parameters needed to create a specific type of key (e.g. C) within a register, and then call `build()` function on the object multiple times to create that key in different registers (e.g. C4, C5).
+    By separating `wholePositionX` and `referencePositionX`, we are able to initialize the `props` parameters needed to create a specific type of key (e.g. C) within any register, and then add on `register` and `referencePositionX` when creating that key in a specific register (e.g. C4, C5).
 
-1. Similarly, we can also write a generic function to create a black key. Add the code below to *scene.js*, also outside of the `createScene()` function:
+1. Similarly, we can also write a generic function to create a black key. Let's expand the `buildKey()` function to include that logic:
 
     ```javascript
-    const BlackKey = function (note, wholePositionX) {
-        return {
-            build(scene, register, referencePositionX) {
-                // Create black color material
-                const blackMat = new BABYLON.StandardMaterial("black");
-                blackMat.diffuseColor = new BABYLON.Color3(0, 0, 0);
-                
-                // Create black key
-                const key = BABYLON.MeshBuilder.CreateBox(note + register, {width: 1.4, height: 2, depth: 5}, scene);
-                key.position.z += 4.75;
-                key.position.y += 0.25;
-                key.position.x = referencePositionX + wholePositionX;
-                key.material = blackMat;
+    const buildKey = function (scene, parent, props) {
+        if (props.type === "white") {
+            /*
+            Props for building a white key should contain: 
+            note, topWidth, bottomWidth, topPositionX, wholePositionX, register, referencePositionX
     
-                return key;
-            }
+            As an example, the props for building the middle C white key would be
+            {type: "white", note: "C", topWidth: 1.4, bottomWidth: 2.3, topPositionX: -0.45, wholePositionX: -14.4, register: 4, referencePositionX: 0}
+            */
+    
+            // Create bottom part
+            const bottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: props.bottomWidth, height: 1.5, depth: 4.5}, scene);
+    
+            // Create top part
+            const top = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: props.topWidth, height: 1.5, depth: 5}, scene);
+            top.position.z =  4.75;
+            top.position.x += props.topPositionX;
+    
+            // Merge bottom and top parts
+            const key = BABYLON.Mesh.MergeMeshes([bottom, top], true, false, null, false, false);
+            key.position.x = props.referencePositionX + props.wholePositionX;
+            key.name = props.note + props.register;
+            key.parent = parent;
+    
+            return key;
+        }
+        else if (props.type === "black") {
+            /*
+            Props for building a black key should contain: 
+            note, wholePositionX, register, referencePositionX
+    
+            As an example, the props for building the C#4 black key would be
+            {type: "black", note: "C#", wholePositionX: -13.45, register: 4, referencePositionX: 0}
+            */
+    
+            // Create black color material
+            const blackMat = new BABYLON.StandardMaterial("black");
+            blackMat.diffuseColor = new BABYLON.Color3(0, 0, 0);
+    
+            // Create black key
+            const key = BABYLON.MeshBuilder.CreateBox(props.note + props.register, {width: 1.4, height: 2, depth: 5}, scene);
+            key.position.z += 4.75;
+            key.position.y += 0.25;
+            key.position.x = props.referencePositionX + props.wholePositionX;
+            key.material = blackMat;
+            key.parent = parent;
+    
+            return key;
         }
     }
     ```
 
-    The parameters for `BlackKey()` are a lot simpler because creating a black key only involves creating a box, and every black key's width and z-position are the same. The parameters of `BlackKey()` are:
+    The `props` for a black key contains the following items:
 
+    * **type**: "black"
     * **name**: the name of the note which the key represents
     * **wholePositionX**: x-position of the whole key relative to the end point of the octave (the right edge of key B)
+    * **register**: register that the key belongs to (a number between 0 and 8)
+    * **referencePositionX**: x-coordinate of the end point of the octave (used as a reference point).
 
-    The `build()` function takes in the same parameters as the `build()` function in `WhiteKey()`.
+    The `props` for creating a black key is a lot simpler because creating a black key only involves creating a box, and every black key's width and z-position are the same.
 
-1. Now that we have a more efficient way of creating the keys, let's initialize an array that stores all of the `WhiteKey` and `BlackKey` objects and call the `build()` function on each of them to create a simple keyboard in the 4th register. We will also store all of the created key meshes created in a [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) named `keys`.
+1. Now that we have a more efficient way of creating the keys, let's initialize an array that stores the `props` for each key in a register, and then call the `buildKey()` function with each of them to create a simple keyboard in the 4th register. 
+
+    We will also create a [TransformNode](https://doc.babylonjs.com/divingDeeper/mesh/transforms/parent_pivot/transform_node#a-transformnode) named `keyboard` to act as the [parent](https://doc.babylonjs.com/divingDeeper/mesh/transforms/parent_pivot/parent#overview-of-a-parent) of all piano keys. Since any position or scaling change applied to the parent would also be applied to the children, grouping the keys in this way will allow us to to scale or move them as a whole.
 
     Append the following lines of code in the `createScene()` function:
 
     ```javascript
     const keyParams = [
-        WhiteKey("C", 1.4, 2.3, -0.45, -14.4),
-        BlackKey("C#", -13.45),
-        WhiteKey("D", 1.4, 2.4, 0, -12),
-        BlackKey("D#", -10.6),
-        WhiteKey("E", 1.4, 2.3, 0.45, -9.6),
-        WhiteKey("F", 1.3, 2.4, -0.55, -7.2),
-        BlackKey("F#", -6.35),
-        WhiteKey("G", 1.3, 2.3, -0.2, -4.8),
-        BlackKey("G#", -3.6),
-        WhiteKey("A", 1.3, 2.3, 0.2, -2.4),
-        BlackKey("A#", -0.85),
-        WhiteKey("B", 1.3, 2.4, 0.55, 0)
+        {type: "white", note: "C", topWidth: 1.4, bottomWidth: 2.3, topPositionX: -0.45, wholePositionX: -14.4},
+        {type: "black", note: "C#", wholePositionX: -13.45},
+        {type: "white", note: "D", topWidth: 1.4, bottomWidth: 2.4, topPositionX: 0, wholePositionX: -12},
+        {type: "black", note: "D#", wholePositionX: -10.6},
+        {type: "white", note: "E", topWidth: 1.4, bottomWidth: 2.3, topPositionX: 0.45, wholePositionX: -9.6},
+        {type: "white", note: "F", topWidth: 1.3, bottomWidth: 2.4, topPositionX: -0.55, wholePositionX: -7.2},
+        {type: "black", note: "F#", wholePositionX: -6.35},
+        {type: "white", note: "G", topWidth: 1.3, bottomWidth: 2.3, topPositionX: -0.2, wholePositionX: -4.8},
+        {type: "black", note: "G#", wholePositionX: -3.6},
+        {type: "white", note: "A", topWidth: 1.3, bottomWidth: 2.3, topPositionX: 0.2, wholePositionX: -2.4},
+        {type: "black", note: "A#", wholePositionX: -0.85},
+        {type: "white", note: "B", topWidth: 1.3, bottomWidth: 2.4, topPositionX: 0.55, wholePositionX: 0},
     ]
-    
-    const keys = new Set();
-    
+
+    // Transform Node that acts as the parent of all piano keys
+    const keyboard = new BABYLON.TransformNode("keyboard");
+
     keyParams.forEach(key => {
-        keys.add(key.build(scene, 4, 0))
+        buildKey(scene, keyboard, Object.assign({register: 4, referencePositionX: 0}, key));
     })
     ```
 
     As you have probably noticed, in this code block we are placing all the keys relative to the origin of the space.
+
+1. Here is the code that *scene.js* contains so far:
+
+    ```javascript
+    const buildKey = function (scene, parent, props) {
+        if (props.type === "white") {
+            /*
+            Props for building a white key should contain: 
+            note, topWidth, bottomWidth, topPositionX, wholePositionX, register, referencePositionX
+    
+            As an example, the props for building the middle C white key would be
+            {type: "white", note: "C", topWidth: 1.4, bottomWidth: 2.3, topPositionX: -0.45, wholePositionX: -14.4, register: 4, referencePositionX: 0}
+            */
+    
+            // Create bottom part
+            const bottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: props.bottomWidth, height: 1.5, depth: 4.5}, scene);
+    
+            // Create top part
+            const top = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: props.topWidth, height: 1.5, depth: 5}, scene);
+            top.position.z =  4.75;
+            top.position.x += props.topPositionX;
+    
+            // Merge bottom and top parts
+            const key = BABYLON.Mesh.MergeMeshes([bottom, top], true, false, null, false, false);
+            key.position.x = props.referencePositionX + props.wholePositionX;
+            key.name = props.note + props.register;
+            key.parent = parent;
+    
+            return key;
+        }
+        else if (props.type === "black") {
+            /*
+            Props for building a black key should contain: 
+            note, wholePositionX, register, referencePositionX
+    
+            As an example, the props for building the C#4 black key would be
+            {type: "black", note: "C#", wholePositionX: -13.45, register: 4, referencePositionX: 0}
+            */
+    
+            // Create black color material
+            const blackMat = new BABYLON.StandardMaterial("black");
+            blackMat.diffuseColor = new BABYLON.Color3(0, 0, 0);
+    
+            // Create black key
+            const key = BABYLON.MeshBuilder.CreateBox(props.note + props.register, {width: 1.4, height: 2, depth: 5}, scene);
+            key.position.z += 4.75;
+            key.position.y += 0.25;
+            key.position.x = props.referencePositionX + props.wholePositionX;
+            key.material = blackMat;
+            key.parent = parent;
+    
+            return key;
+        }
+    }
+
+    const createScene = async function(engine) {
+        const scene = new BABYLON.Scene(engine);
+    
+        const alpha =  3*Math.PI/2;
+        const beta = Math.PI/50;
+        const radius = 220;
+        const target = new BABYLON.Vector3(0, 0, 0);
+    
+        const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target, scene);
+        camera.attachControl(canvas, true);
+    
+        const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
+        light.intensity = 0.6;
+    
+        // Transform Node that acts as the parent of all piano keys
+        const keyboard = new BABYLON.TransformNode("keyboard");
+    
+        const keyParams = [
+            {type: "white", note: "C", topWidth: 1.4, bottomWidth: 2.3, topPositionX: -0.45, wholePositionX: -14.4},
+            {type: "black", note: "C#", wholePositionX: -13.45},
+            {type: "white", note: "D", topWidth: 1.4, bottomWidth: 2.4, topPositionX: 0, wholePositionX: -12},
+            {type: "black", note: "D#", wholePositionX: -10.6},
+            {type: "white", note: "E", topWidth: 1.4, bottomWidth: 2.3, topPositionX: 0.45, wholePositionX: -9.6},
+            {type: "white", note: "F", topWidth: 1.3, bottomWidth: 2.4, topPositionX: -0.55, wholePositionX: -7.2},
+            {type: "black", note: "F#", wholePositionX: -6.35},
+            {type: "white", note: "G", topWidth: 1.3, bottomWidth: 2.3, topPositionX: -0.2, wholePositionX: -4.8},
+            {type: "black", note: "G#", wholePositionX: -3.6},
+            {type: "white", note: "A", topWidth: 1.3, bottomWidth: 2.3, topPositionX: 0.2, wholePositionX: -2.4},
+            {type: "black", note: "A#", wholePositionX: -0.85},
+            {type: "white", note: "B", topWidth: 1.3, bottomWidth: 2.4, topPositionX: 0.55, wholePositionX: 0},
+        ]
+
+        // Transform Node that acts as the parent of all piano keys
+        const keyboard = new BABYLON.TransformNode("keyboard");
+    
+        keyParams.forEach(key => {
+            buildKey(scene, keyboard, Object.assign({register: 4, referencePositionX: 0}, key));
+        })
+
+        const xrHelper = await scene.createDefaultXRExperienceAsync();
+
+        return scene;
+    }
+    ```
 
 1. This is what the resulting keyboard would look like:
 
@@ -263,14 +412,14 @@ In this section, let's expand the usage of the key-creation functions to generat
 
     ![88-key piano layout](./images/88-key-piano-keyboard-layout.jpg)
 
-1. We will first work on building the 7 full repetitions by adding an additional loop around the loop we wrote earlier. Replace the previous loop for the `key.build()` function with the following code:
+1. We will first work on building the 7 full repetitions by adding an additional loop around the loop we wrote earlier. Replace the previous loop for the `buildKey()` function with the following code:
 
     ```javascript
     // Register 1 through 7
     var referencePositionX = -2.4*14;
-    for (let register = 1; register <= 7; register++) {
+    for (let octave = 1; octave <= 7; octave++) {
         keyParams.forEach(key => {
-            keys.add(key.build(scene, register, referencePositionX));
+            buildKey(scene, keyboard, Object.assign({register: octave, referencePositionX: referencePositionX}, key));
         })
         referencePositionX += 2.4*7;
     }
@@ -282,16 +431,16 @@ In this section, let's expand the usage of the key-creation functions to generat
 
     ```javascript
     // Register 0
-    keys.add(WhiteKey("A", 1.9, 2.3, -0.20, -2.4).build(scene, 0, -2.4*21))
+    buildKey(scene, keyboard, {type: "white", note: "A", topWidth: 1.9, bottomWidth: 2.3, topPositionX: -0.20, wholePositionX: -2.4, register: 0, referencePositionX: -2.4*21});
     keyParams.slice(10, 12).forEach(key => {
-        keys.add(key.build(scene, 0, -2.4*21));
+        buildKey(scene, keyboard, Object.assign({register: 0, referencePositionX: -2.4*21}, key));
     })
-    
+
     // Register 8
-    keys.add(WhiteKey("C", 2.3, 2.3, 0, -2.4*6).build(scene, 8, 84));
+    buildKey(scene, keyboard, {type: "white", note: "C", topWidth: 2.3, bottomWidth: 2.3, topPositionX: 0, wholePositionX: -2.4*6, register: 8, referencePositionX: 84});
     ```
 
-    Note that the left-most key and the right-most key of the piano keyboard don't fit into the dimensions of the objects defined in `keyParams` (because they are not next to a black key at the edge), so we need to create a new `WhiteKey` object for each of them to specify their special shape.
+    Note that the left-most key and the right-most key of the piano keyboard don't fit into the dimensions of the props defined in `keyParams` (because they are not next to a black key at the edge), so we need to define a new `props` object for each of them to specify their special shape.
 
 1. The keyboard produced should look like this after the changes are made:
 
@@ -301,64 +450,84 @@ In this section, let's expand the usage of the key-creation functions to generat
 
 1. The scene looks a little odd with just a keyboard floating in the space. Let's add a piano frame around the keyboard to create the look of a standup piano.
 
-1. Similar to how we created the keys, we can also create the frame by positioning and combining a group of box meshes. 
+1. Similar to how we created the keys, we can also create the frame by positioning and combining a group of box meshes.
 
-    However, we will leave that challenge for you to try on your own and use [BABYLON.SceneLoader.ImportMesh](https://doc.babylonjs.com/divingDeeper/importers/loadingFileTypes#sceneloaderimportmesh) to import a pre-made mesh of a standup piano frame. Add this line of code to `createScene()`:
+    However, we will leave that challenge for you to try on your own and use [BABYLON.SceneLoader.ImportMesh](https://doc.babylonjs.com/divingDeeper/importers/loadingFileTypes#sceneloaderimportmesh) to import a pre-made mesh of a standup piano frame. Append this piece of code to `createScene()`:
 
     ```javascript
-    // Import piano frame
-    BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/JING1201/babylonjs-exploration/main/piano-keys/", "pianoFrame.babylon", scene);
+    // Transform node that acts as the parent of all piano components
+    const piano = new BABYLON.TransformNode("piano");
+    keyboard.parent = piano;
+
+    // Import and scale piano frame
+    BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/JING1201/babylonjs-exploration/main/piano-keys/", "pianoFrame.babylon", scene, function(meshes) {
+        const frame = meshes[0];
+        frame.parent = piano;
+    });
     ```
+
+    Note that we are, again, creating a parent `TransformNode` named `piano` to group the keyboard and the frame together as a whole.
 
 1. Once the frame is imported, notice that the keyboard is lying at the bottom of the frame (since the y-coordinates of the keys are at 0 by default). Let's lift the keyboard so that it fits into the standup piano frame:
 
     ```javascript
     // Lift piano keys
-    keys.forEach(key => {
-        key.position.y += 80;
-    })
+    keyboard.position.y += 80;
     ```
+
+    Since `keyboard` is the parent of all piano keys, we can lift all of the piano keys by just changing the y-position of `keyboard`.
 
 1. The final code of *scene.js* should look like this:
 
     ```javascript
-    const WhiteKey = function (note, topWidth, bottomWidth, topPositionX, wholePositionX) {
-        return {
-            build(scene, register, referencePositionX) {
-                // Create bottom part
-                const bottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: bottomWidth, height: 1.5, depth: 4.5}, scene);
-
-                // Create top part
-                const top = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: topWidth, height: 1.5, depth: 5}, scene);
-                top.position.z =  4.75;
-                top.position.x += topPositionX;
+    const buildKey = function (scene, parent, props) {
+        if (props.type === "white") {
+            /*
+            Props for building a white key should contain: 
+            note, topWidth, bottomWidth, topPositionX, wholePositionX, register, referencePositionX
     
-                // Merge bottom and top parts
-                const key = BABYLON.Mesh.MergeMeshes([bottom, top], true, false, null, false, false);
-                key.position.x = referencePositionX + wholePositionX;
-                key.name = note + register;
+            As an example, the props for building the middle C white key would be
+            {type: "white", note: "C", topWidth: 1.4, bottomWidth: 2.3, topPositionX: -0.45, wholePositionX: -14.4, register: 4, referencePositionX: 0}
+            */
     
-                return key;
-            }
+            // Create bottom part
+            const bottom = BABYLON.MeshBuilder.CreateBox("whiteKeyBottom", {width: props.bottomWidth, height: 1.5, depth: 4.5}, scene);
+    
+            // Create top part
+            const top = BABYLON.MeshBuilder.CreateBox("whiteKeyTop", {width: props.topWidth, height: 1.5, depth: 5}, scene);
+            top.position.z =  4.75;
+            top.position.x += props.topPositionX;
+    
+            // Merge bottom and top parts
+            const key = BABYLON.Mesh.MergeMeshes([bottom, top], true, false, null, false, false);
+            key.position.x = props.referencePositionX + props.wholePositionX;
+            key.name = props.note + props.register;
+            key.parent = parent;
+    
+            return key;
         }
-    }
-
-    const BlackKey = function (note, wholePositionX) {
-        return {
-            build(scene, register, referencePositionX) {
-                // Create black color material
-                const blackMat = new BABYLON.StandardMaterial("black");
-                blackMat.diffuseColor = new BABYLON.Color3(0, 0, 0);
-                
-                // Create black key
-                const key = BABYLON.MeshBuilder.CreateBox(note + register, {width: 1.4, height: 2, depth: 5}, scene);
-                key.position.z += 4.75;
-                key.position.y += 0.25;
-                key.position.x = referencePositionX + wholePositionX;
-                key.material = blackMat;
+        else if (props.type === "black") {
+            /*
+            Props for building a black key should contain: 
+            note, wholePositionX, register, referencePositionX
     
-                return key;
-            }
+            As an example, the props for building the C#4 black key would be
+            {type: "black", note: "C#", wholePositionX: -13.45, register: 4, referencePositionX: 0}
+            */
+    
+            // Create black color material
+            const blackMat = new BABYLON.StandardMaterial("black");
+            blackMat.diffuseColor = new BABYLON.Color3(0, 0, 0);
+    
+            // Create black key
+            const key = BABYLON.MeshBuilder.CreateBox(props.note + props.register, {width: 1.4, height: 2, depth: 5}, scene);
+            key.position.z += 4.75;
+            key.position.y += 0.25;
+            key.position.x = props.referencePositionX + props.wholePositionX;
+            key.material = blackMat;
+            key.parent = parent;
+    
+            return key;
         }
     }
 
@@ -377,47 +546,53 @@ In this section, let's expand the usage of the key-creation functions to generat
         light.intensity = 0.6;
 
         const keyParams = [
-            WhiteKey("C", 1.4, 2.3, -0.45, -14.4),
-            BlackKey("C#", -13.45),
-            WhiteKey("D", 1.4, 2.4, 0, -12),
-            BlackKey("D#", -10.6),
-            WhiteKey("E", 1.4, 2.3, 0.45, -9.6),
-            WhiteKey("F", 1.3, 2.4, -0.55, -7.2),
-            BlackKey("F#", -6.35),
-            WhiteKey("G", 1.3, 2.3, -0.2, -4.8),
-            BlackKey("G#", -3.6),
-            WhiteKey("A", 1.3, 2.3, 0.2, -2.4),
-            BlackKey("A#", -0.85),
-            WhiteKey("B", 1.3, 2.4, 0.55, 0)
+            {type: "white", note: "C", topWidth: 1.4, bottomWidth: 2.3, topPositionX: -0.45, wholePositionX: -14.4},
+            {type: "black", note: "C#", wholePositionX: -13.45},
+            {type: "white", note: "D", topWidth: 1.4, bottomWidth: 2.4, topPositionX: 0, wholePositionX: -12},
+            {type: "black", note: "D#", wholePositionX: -10.6},
+            {type: "white", note: "E", topWidth: 1.4, bottomWidth: 2.3, topPositionX: 0.45, wholePositionX: -9.6},
+            {type: "white", note: "F", topWidth: 1.3, bottomWidth: 2.4, topPositionX: -0.55, wholePositionX: -7.2},
+            {type: "black", note: "F#", wholePositionX: -6.35},
+            {type: "white", note: "G", topWidth: 1.3, bottomWidth: 2.3, topPositionX: -0.2, wholePositionX: -4.8},
+            {type: "black", note: "G#", wholePositionX: -3.6},
+            {type: "white", note: "A", topWidth: 1.3, bottomWidth: 2.3, topPositionX: 0.2, wholePositionX: -2.4},
+            {type: "black", note: "A#", wholePositionX: -0.85},
+            {type: "white", note: "B", topWidth: 1.3, bottomWidth: 2.4, topPositionX: 0.55, wholePositionX: 0},
         ]
-        
-        const keys = new Set();
-
+    
+        // Transform Node that acts as the parent of all piano keys
+        const keyboard = new BABYLON.TransformNode("keyboard");
+    
         // Register 1 through 7
         var referencePositionX = -2.4*14;
         for (let octave = 1; octave <= 7; octave++) {
             keyParams.forEach(key => {
-                keys.add(key.build(scene, octave, referencePositionX));
+                buildKey(scene, keyboard, Object.assign({register: octave, referencePositionX: referencePositionX}, key));
             })
             referencePositionX += 2.4*7;
         }
-
+    
         // Register 0
-        keys.add(WhiteKey("A", 1.9, 2.3, -0.20, -2.4).build(scene, 0, -2.4*21))
+        buildKey(scene, keyboard, {type: "white", note: "A", topWidth: 1.9, bottomWidth: 2.3, topPositionX: -0.20, wholePositionX: -2.4, register: 0, referencePositionX: -2.4*21});
         keyParams.slice(10, 12).forEach(key => {
-            keys.add(key.build(scene, 0, -2.4*21));
+            buildKey(scene, keyboard, Object.assign({register: 0, referencePositionX: -2.4*21}, key));
         })
-        
+    
         // Register 8
-        keys.add(WhiteKey("C", 2.3, 2.3, 0, -2.4*6).build(scene, 8, 84));
-
-        // Import piano frame
-        BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/JING1201/babylonjs-exploration/main/piano-keys/", "pianoFrame.babylon", scene);
-
-        // Lift piano keys
-        keys.forEach(key => {
-            key.position.y += 80;
-        })
+        buildKey(scene, keyboard, {type: "white", note: "C", topWidth: 2.3, bottomWidth: 2.3, topPositionX: 0, wholePositionX: -2.4*6, register: 8, referencePositionX: 84});
+    
+        // Transform node that acts as the parent of all piano components
+        const piano = new BABYLON.TransformNode("piano");
+        keyboard.parent = piano;
+    
+        // Import and scale piano frame
+        BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/JING1201/babylonjs-exploration/main/piano-keys/", "pianoFrame.babylon", scene, function(meshes) {
+            const frame = meshes[0];
+            frame.parent = piano;
+        });
+    
+        // Lift the piano keyboard
+        keyboard.position.y += 80;
     
         const xrHelper = await scene.createDefaultXRExperienceAsync();
     
