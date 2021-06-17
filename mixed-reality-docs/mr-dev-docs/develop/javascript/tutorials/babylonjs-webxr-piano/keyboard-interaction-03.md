@@ -78,6 +78,7 @@ const buildKey = function (scene, parent, props) {
         top.position.x += props.topPositionX;
 
         // Merge bottom and top parts
+        // Parameters of BABYLON.Mesh.MergeMeshes: (arrayOfMeshes, disposeSource, allow32BitsIndices, meshSubclass, subdivideWithSubMeshes, multiMultiMaterials)
         const key = BABYLON.Mesh.MergeMeshes([bottom, top], true, false, null, false, false);
         key.position.x = props.referencePositionX + props.wholePositionX;
         key.name = props.note + props.register;
@@ -144,9 +145,9 @@ const createScene = async function(engine) {
 
     // Register 1 through 7
     var referencePositionX = -2.4*14;
-    for (let octave = 1; octave <= 7; octave++) {
+    for (let register = 1; register <= 7; register++) {
         keyParams.forEach(key => {
-            buildKey(scene, keyboard, Object.assign({register: octave, referencePositionX: referencePositionX}, key));
+            buildKey(scene, keyboard, Object.assign({register: register, referencePositionX: referencePositionX}, key));
         })
         referencePositionX += 2.4*7;
     }
@@ -341,11 +342,11 @@ By now, you have probably already played with the piano with your mouse (or even
     ```
 
     This function takes in 3 parameters:
-    * **transformNode**: the `TransformNode` to be pivoted
+    * **transformNode**: the `TransformNode` to be scaled
     * **pivotPoint**: a `Vector3` object which indicates the point that the scaling is relative to
     * **scale**: the scale factor
 
-1. We will use this function to scale the piano frame and keys by a factor of 0.015, with a pivot point at the origin. Append the function call to the `createScene()` function by placing after `keyboard.position.y += 80;`:
+1. We will use this function to scale the piano frame and keys by a factor of 0.015, with a pivot point at the origin. Append the function call to the `createScene()` function by placing it after `keyboard.position.y += 80;`:
 
     ```javascript
     // Put this line at the beginning of createScene()
@@ -353,6 +354,8 @@ By now, you have probably already played with the piano with your mouse (or even
     ```
 
     ```javascript
+    // Put this function call after keyboard.position.y += 80;
+
     // Scale the entire piano
     scaleFromPivot(piano, new BABYLON.Vector3(0, 0, 0), scale);
     ```
@@ -453,6 +456,7 @@ const buildKey = function (scene, parent, props) {
         top.position.x += props.topPositionX;
 
         // Merge bottom and top parts
+        // Parameters of BABYLON.Mesh.MergeMeshes: (arrayOfMeshes, disposeSource, allow32BitsIndices, meshSubclass, subdivideWithSubMeshes, multiMultiMaterials)
         const key = BABYLON.Mesh.MergeMeshes([bottom, top], true, false, null, false, false);
         key.position.x = props.referencePositionX + props.wholePositionX;
         key.name = props.note + props.register;
@@ -528,9 +532,9 @@ const createScene = async function(engine) {
 
     // Register 1 through 7
     var referencePositionX = -2.4*14;
-    for (let octave = 1; octave <= 7; octave++) {
+    for (let register = 1; register <= 7; register++) {
         keyParams.forEach(key => {
-            buildKey(scene, keyboard, Object.assign({register: octave, referencePositionX: referencePositionX}, key));
+            buildKey(scene, keyboard, Object.assign({register: register, referencePositionX: referencePositionX}, key));
         })
         referencePositionX += 2.4*7;
     }

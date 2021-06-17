@@ -85,7 +85,7 @@ const createScene = async function(engine) {
 
 Let's begin by making a simple piano keyboard which has this structure:
 
-![Piano octave description](./images/piano-octave.jpg)
+![Piano register description](./images/piano-register.jpg)
 
 In this image, there are 7 white keys and 5 black keys, each labeled with the note's name. A full 88-key piano keyboard contains 7 full repetitions of this selection of keys (also called a register) and 4 extra keys. Every register has double the frequency of its previous register. For example, the pitch frequency of C5 (which means the C note in the fifth register) is double of C4's, D5's pitch frequency is double of D4's, and so on.
 
@@ -175,6 +175,7 @@ Visually, each register looks exactly the same as another, so we can start with 
             top.position.x += props.topPositionX;
     
             // Merge bottom and top parts
+            // Parameters of BABYLON.Mesh.MergeMeshes: (arrayOfMeshes, disposeSource, allow32BitsIndices, meshSubclass, subdivideWithSubMeshes, multiMultiMaterials)
             const key = BABYLON.Mesh.MergeMeshes([bottom, top], true, false, null, false, false);
             key.position.x = props.referencePositionX + props.wholePositionX;
             key.name = props.note + props.register;
@@ -189,8 +190,8 @@ Visually, each register looks exactly the same as another, so we can start with 
 
     The parameters of `buildKey()` are:
     * **scene**: scene that the key is in
-    * **parent**: parent node of the mesh (this allows us to group all keys together to a single parent)
-    * **props**: properties of the key that will be build
+    * **parent**: parent of the mesh (this allows us to group all keys together to a single parent)
+    * **props**: properties of the key that will be built
 
     The `props` for a white key will contain the following items:
     * **type**: "white"
@@ -198,11 +199,11 @@ Visually, each register looks exactly the same as another, so we can start with 
     * **topWidth**: width of the top part
     * **bottomWidth**: width of the bottom part
     * **topPositionX**: x-position of the top part relative to the bottom part
-    * **wholePositionX**: x-position of the whole key relative to the end point of the octave (the right edge of key B).
+    * **wholePositionX**: x-position of the whole key relative to the end point of the register (the right edge of key B).
     * **register**: register that the key belongs to (a number between 0 and 8)
-    * **referencePositionX**: x-coordinate of the end point of the octave (used as a reference point).
+    * **referencePositionX**: x-coordinate of the end point of the register (used as a reference point).
 
-    By separating `wholePositionX` and `referencePositionX`, we are able to initialize the `props` parameters needed to create a specific type of key (e.g. C) within any register, and then add on `register` and `referencePositionX` when creating that key in a specific register (e.g. C4, C5).
+    By separating `wholePositionX` and `referencePositionX`, we are able to initialize the `props` parameters needed to create a specific type of key (e.g. C) within any register, and then add on `register` and `referencePositionX` to the `props` when creating that key in a specific register (e.g. C4, C5).
 
 1. Similarly, we can also write a generic function to create a black key. Let's expand the `buildKey()` function to include that logic:
 
@@ -226,6 +227,7 @@ Visually, each register looks exactly the same as another, so we can start with 
             top.position.x += props.topPositionX;
     
             // Merge bottom and top parts
+            // Parameters of BABYLON.Mesh.MergeMeshes: (arrayOfMeshes, disposeSource, allow32BitsIndices, meshSubclass, subdivideWithSubMeshes, multiMultiMaterials)
             const key = BABYLON.Mesh.MergeMeshes([bottom, top], true, false, null, false, false);
             key.position.x = props.referencePositionX + props.wholePositionX;
             key.name = props.note + props.register;
@@ -263,13 +265,13 @@ Visually, each register looks exactly the same as another, so we can start with 
 
     * **type**: "black"
     * **name**: the name of the note which the key represents
-    * **wholePositionX**: x-position of the whole key relative to the end point of the octave (the right edge of key B)
+    * **wholePositionX**: x-position of the whole key relative to the end point of the register (the right edge of key B)
     * **register**: register that the key belongs to (a number between 0 and 8)
-    * **referencePositionX**: x-coordinate of the end point of the octave (used as a reference point).
+    * **referencePositionX**: x-coordinate of the end point of the register (used as a reference point).
 
     The `props` for creating a black key is a lot simpler because creating a black key only involves creating a box, and every black key's width and z-position are the same.
 
-1. Now that we have a more efficient way of creating the keys, let's initialize an array that stores the `props` for each key in a register, and then call the `buildKey()` function with each of them to create a simple keyboard in the 4th register. 
+1. Now that we have a more efficient way of creating the keys, let's initialize an array that stores the `props` for each key that corresponds to a note in a register, and then call the `buildKey()` function with each of them to create a simple keyboard in the 4th register.
 
     We will also create a [TransformNode](https://doc.babylonjs.com/divingDeeper/mesh/transforms/parent_pivot/transform_node#a-transformnode) named `keyboard` to act as the [parent](https://doc.babylonjs.com/divingDeeper/mesh/transforms/parent_pivot/parent#overview-of-a-parent) of all piano keys. Since any position or scaling change applied to the parent would also be applied to the children, grouping the keys in this way will allow us to to scale or move them as a whole.
 
@@ -323,6 +325,7 @@ Visually, each register looks exactly the same as another, so we can start with 
             top.position.x += props.topPositionX;
     
             // Merge bottom and top parts
+            // Parameters of BABYLON.Mesh.MergeMeshes: (arrayOfMeshes, disposeSource, allow32BitsIndices, meshSubclass, subdivideWithSubMeshes, multiMultiMaterials)
             const key = BABYLON.Mesh.MergeMeshes([bottom, top], true, false, null, false, false);
             key.position.x = props.referencePositionX + props.wholePositionX;
             key.name = props.note + props.register;
@@ -417,9 +420,9 @@ In this section, let's expand the usage of the key-creation functions to generat
     ```javascript
     // Register 1 through 7
     var referencePositionX = -2.4*14;
-    for (let octave = 1; octave <= 7; octave++) {
+    for (let register = 1; register <= 7; register++) {
         keyParams.forEach(key => {
-            buildKey(scene, keyboard, Object.assign({register: octave, referencePositionX: referencePositionX}, key));
+            buildKey(scene, keyboard, Object.assign({register: register, referencePositionX: referencePositionX}, key));
         })
         referencePositionX += 2.4*7;
     }
@@ -499,6 +502,7 @@ In this section, let's expand the usage of the key-creation functions to generat
             top.position.x += props.topPositionX;
     
             // Merge bottom and top parts
+            // Parameters of BABYLON.Mesh.MergeMeshes: (arrayOfMeshes, disposeSource, allow32BitsIndices, meshSubclass, subdivideWithSubMeshes, multiMultiMaterials)
             const key = BABYLON.Mesh.MergeMeshes([bottom, top], true, false, null, false, false);
             key.position.x = props.referencePositionX + props.wholePositionX;
             key.name = props.note + props.register;
@@ -565,9 +569,9 @@ In this section, let's expand the usage of the key-creation functions to generat
     
         // Register 1 through 7
         var referencePositionX = -2.4*14;
-        for (let octave = 1; octave <= 7; octave++) {
+        for (let register = 1; register <= 7; register++) {
             keyParams.forEach(key => {
-                buildKey(scene, keyboard, Object.assign({register: octave, referencePositionX: referencePositionX}, key));
+                buildKey(scene, keyboard, Object.assign({register: register, referencePositionX: referencePositionX}, key));
             })
             referencePositionX += 2.4*7;
         }

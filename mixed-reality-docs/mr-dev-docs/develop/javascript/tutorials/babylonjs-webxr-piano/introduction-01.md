@@ -27,6 +27,7 @@ In this tutorial series, you will learn how to:
 
 ## Prerequisites
 
+* A computer connected to the internet
 * Basic Javascript Knowledge
 * [WebXR Javascript Hello World Tutorial](../babylonjs-webxr-helloworld/introduction-01.md)
 * WebXR-supported browser, for example [Microsoft Edge](../../../../whats-new/new-microsoft-edge.md)
