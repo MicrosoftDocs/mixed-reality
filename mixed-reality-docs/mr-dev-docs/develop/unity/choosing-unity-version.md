@@ -27,11 +27,11 @@ The best way to install and manage Unity is through the <a href="https://unity3d
     * **Universal Windows Platform Build Support** 
     * **Windows Build Support (IL2CPP)**
 
-![Unity Universal Windows Platform Build Support option](../images/Unity_Install_Option_UWP_2019.png)
+![Unity Universal Windows Platform Build Support option](images/Unity_Install_Option_UWP_2019.png)
 
 4. If you installed Unity without these options, you can add them through **'Add Modules'** menu in Unity Hub:
 
-![Unity Windows Build Support option](../images/Unity_Install_Option_UWP2_2019.png)
+![Unity Windows Build Support option](images/Unity_Install_Option_UWP2_2019.png)
 
 To get started with Legacy Built-in XR in Unity 2019.4 LTS, click here:
 
