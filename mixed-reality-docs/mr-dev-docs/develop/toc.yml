@@ -174,16 +174,8 @@
     items:
     - name: Choosing a Unity version and XR plugin
       href: unity/choosing-unity-version.md
-    # - name: Choosing a development pipeline 
-    #   href: unity/choosing-developer-pipeline.md
     - name: Setting up your XR configuration 
       href: unity/xr-project-setup.md
-    - name: OpenXR 
-      items: 
-      - name: Using the OpenXR Plugin
-        href: unity/openxr-getting-started.md
-      - name: OpenXR plugin supported features
-        href: unity/openxr-supported-features.md
     - name: Mixed Reality Feature Tool
       items:
         - name: Welcome to the MR Feature Tool
@@ -366,18 +358,20 @@
         href: unreal/unreal-deploying.md
       - name: Publishing to the Microsoft Store
         href: unreal/unreal-publishing-to-store.md
-# - name: Babylon 
-#   items:
-#   - name: Tutorials
-#     items:
-#       - name: Hello World using BabylonJS
-#         items:
-#         - name: 1. Introduction
-#           href: javascript/tutorials/babylonjs-webxr-helloworld/introduction-01.md
-#         - name: 2. Prepare a scene with basic 3D object
-#           href: javascript/tutorials/babylonjs-webxr-helloworld/prepare-scene-02.md
-#         - name: 3. Interact with 3D object
-#           href: javascript/tutorials/babylonjs-webxr-helloworld/interact-03.md
+- name: JavaScript  
+  items:
+  - name: JavaScript development overview 
+    href: javascript/webxr-overview.md
+  - name: VR Tutorials
+    items:
+      - name: Hello World using BabylonJS
+        items:
+        - name: 1. Introduction
+          href: javascript/tutorials/babylonjs-webxr-helloworld/introduction-01.md
+        - name: 2. Prepare a scene with basic 3D object
+          href: javascript/tutorials/babylonjs-webxr-helloworld/prepare-scene-02.md
+        - name: 3. Interact with 3D object
+          href: javascript/tutorials/babylonjs-webxr-helloworld/interact-03.md
 - name: Custom engine
   items:
   - name: Custom engine development overview
@@ -394,10 +388,6 @@
         href: native/openxr-performance.md
       - name: OpenXR troubleshooting
         href: native/openxr-troubleshooting.md
-  - name: WebXR 
-    items:
-      - name: WebXR overview 
-        href: javascript/webxr-overview.md
   - name: WinRT (Legacy)
     items:
       - name: Getting started

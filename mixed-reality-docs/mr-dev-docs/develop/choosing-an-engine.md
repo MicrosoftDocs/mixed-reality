@@ -26,7 +26,7 @@ There are several development paths you can take through our documentation. The 
 * **Web** developers creating compelling cross-browser AR/VR web experiences can use **WebXR**.
 
     > [!NOTE]
-    > **Babylon.js** development is currently in progress. Check out the [latest news and engage with the community](https://doc.babylonjs.com/divingDeeper/webXR/introToWebXR)!
+    > **Babylon.js** for HoloLens development is currently in progress. Check out the [latest news and engage with the community](https://doc.babylonjs.com/divingDeeper/webXR/introToWebXR)!
 
 <!-- Babylon is a Javascript-based, open source, 3D graphics engine capable of powering 3D scenes in a web browser. Babylon.js 4.2+ includes support for WebXR. With Babylon React Native, you can even build cross-platform native     applications for PC, mobile, and mixed reality devices. -->
 
@@ -34,14 +34,14 @@ There are several development paths you can take through our documentation. The 
 
 <br>
 
-| Logistics | Unity | Unreal | Custom engine (WebXR) | Custom engine (OpenXR) |
+| Logistics | Unity | Unreal | JavaScript | Custom engine <br>(using OpenXR) |
 |---|---|---|---|---|
 | Language | C# | C++ | JavaScript | C/C++ |
 | Pricing | [Unity pricing](https://store.unity.com/#plans-individual) | [Unreal pricing](https://www.unrealengine.com/download) | Free | Free |
 
 <br>
 
-| Device features | Unity | Unreal | Custom engine (WebXR) | Custom engine (OpenXR) |
+| Device features | Unity | Unreal | JavaScript | Custom engine <br>(using OpenXR) |
 |---|---|---|---|---|
 | Device/display tracking | ✔️ | ✔️ | ✔️ | ✔️ |
 | Hand input | ✔️ | ✔️ | ✔️ | ✔️ |
@@ -55,7 +55,7 @@ There are several development paths you can take through our documentation. The 
 
 <br>
 
-| Hardware | Unity | Unreal | Custom engine (WebXR) | Custom engine (OpenXR) |
+| Hardware | Unity | Unreal | JavaScript | Custom engine <br>(using OpenXR) |
 |---|---|---|---|---|
 | HoloLens 2 | ✔️ | ✔️ | ✔️ | ✔️ |
 | HoloLens (1st gen) | ✔️ | ✔️ | ❌ | WinRT (Legacy) only |
@@ -66,7 +66,7 @@ There are several development paths you can take through our documentation. The 
 
 <br>
 
-| Tools | Unity | Unreal | Custom engine (WebXR) | Custom engine (OpenXR) |
+| Tools | Unity | Unreal | JavaScript | Custom engine <br>(using OpenXR) |
 |---|---|---|---|---|
 | Mixed Reality Toolkit | ✔️ | ✔️ | ❌  | ❌ |
 | World Locking Tools | ✔️ | ❌ | ❌  | ❌ |
@@ -74,7 +74,7 @@ There are several development paths you can take through our documentation. The 
 
 <br>
 
-| Cloud services | Unity | Unreal | Custom engine (WebXR) | Custom engine (OpenXR) |
+| Cloud services | Unity | Unreal | JavaScript | Custom engine <br>(using OpenXR) |
 |---|---|---|---|---|
 | Azure Spatial Anchors | ✔️ | ✔️ | ❌ | ✔️ |
 | Azure Object Anchors | ✔️ | ❌ | ❌ | ✔️ |

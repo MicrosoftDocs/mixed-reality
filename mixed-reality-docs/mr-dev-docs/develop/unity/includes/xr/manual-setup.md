@@ -1,6 +1,53 @@
 # [OpenXR](#tab/openxr)
 
-If you're using the latest and greatest OpenXR in your Unity projects, check out our [getting started](../../openxr-getting-started.md) and [supported features](../../openxr-supported-features.md) documentation.
+Install the OpenXR plugin with the new Mixed Reality Feature Tool application. Follow the [installation and usage instructions](../../welcome-to-mr-feature-tool.md) and select the **Mixed Reality OpenXR Plugin** package in the Mixed Reality Toolkit category:
+
+![Mixed Reality Feature Tool packages window with open xr plugin highlighted](../../images/feature-tool-openxr.png)
+
+### Setting your build target
+
+If you're targeting Desktop VR, we suggest using the PC Standalone Platform selected by default on a new Unity project:
+
+![Screenshot of Build Settings window open in the unity editor with PC, Mac & Standalone platform highlighted](../../images/wmr-config-img-3.png)
+
+If you're targeting HoloLens 2, you need to switch to the Universal Windows Platform:
+
+1. Select **File > Build Settings...**
+2. Select **Universal Windows Platform** in the Platform list and select **Switch Platform**
+3. Set **Architecture** to **ARM 64**
+4. Set **Target device** to **HoloLens**
+5. Set **Build Type** to **D3D**
+6. Set **UWP SDK** to **Latest installed**
+
+![Screenshot of Build Settings window open in unity editor with Universal Windows Platform highlighted](../../images/wmr-config-img-4.png)
+
+### Configuring XR Plugin Management for OpenXR
+
+To set OpenXR as the the runtime in Unity:
+
+1. In the Unity Editor, navigate to **Edit > Project Settings**
+2. In the list of Settings, select **XR Plugin Management**
+3. Check the **Initialize XR on Startup** and **OpenXR** boxes
+4. If targeting HoloLens 2, make sure you're on the UWP platform and select **Microsoft HoloLens Feature Set**
+
+![Screenshot of the project settings panel open in the Unity editor with XR Plug-in management highlighted](../../images/openxr-img-05.png)
+
+### Optimization
+
+If you're developing for HoloLens 2, navigate to **Mixed Reality> OpenXR > Apply recommended project settings for HoloLens 2** to get better app performance.
+
+![Screenshot of the mixed reality menu item open with OpenXR selected](../../images/openxr-img-08.png)
+
+> [!IMPORTANT]
+> If you see a red warning icon next to **OpenXR Plugin**, click the icon and select **Fix all** before continuing. The Unity Editor may need to restart itself for the changes to take effect.
+
+![Screenshot of the OpenXR project validation window](../../images/openxr-img-06.png)
+
+You're now ready to begin developing with OpenXR in Unity!  Continue on to the next section to learn how to use the OpenXR samples.
+
+### Unity sample projects for OpenXR and HoloLens 2
+
+Check out the [OpenXR Mixed Reality samples repo](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) for sample unity projects showcasing how to build Unity applications for HoloLens 2 or Mixed Reality headsets using the Mixed Reality OpenXR plugin.
 
 # [Windows XR](#tab/windowsxr)
 

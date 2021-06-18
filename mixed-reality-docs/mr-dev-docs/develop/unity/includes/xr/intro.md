@@ -4,9 +4,20 @@ The Mixed Reality OpenXR plugin is **Microsoft's recommendation** for Unity 2020
 
 The Mixed Reality OpenXR plugin fully supports AR Foundation 4.0, providing ARPlaneManager and ARRaycastManager implementations. This enables you to write raycasting code once that then spans HoloLens 2 and ARCore/ARKit phones and tablets.
 
+### Prerequisites
+
+* Latest Unity 2020.3 LTS, we recommend 2020.3.6f1 or above.
+* Latest Unity OpenXR plugin, we recommend 1.2 or later
+* Latest [tools for HoloLens 2 development](/windows/mixed-reality/develop/install-the-tools?tabs=unity#installation-checklist)
+* Latest MRTK (optional), we recommend version 2.7 or later
+* Latest Mixed Reality OpenXR Plugin, we recommend version 1.0.0-preview or later
+
+> [!NOTE]
+> If you're building VR applications on Windows PC, the Mixed Reality OpenXR plugin is not necessarily required. However, you'll want to install the plugin if you're customizing controller mapping for HP Reverb G2 controllers or building apps that work on both HoloLens 2 and VR headsets.
+
 # [Windows XR](#tab/windowsxr)
 
-Microsoft don't recommend using the Windows XR plugin for any new projects in Unity 2020.
+Microsoft doesn't recommend using the Windows XR plugin for any new projects in Unity 2020.
 
 However, if you're using Unity 2019 and you need AR Foundation 2.0 for compatibility with ARCore/ARKit devices, this plugin enables that support.
 

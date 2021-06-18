@@ -1,5 +1,5 @@
 ---
-title: Choosing an XR configuration
+title: Setting up your XR configuration
 description: Stay up to date on the latest Unity XR configuration recommendations for HoloLens application development.
 author: hferrone
 ms.author: v-hferrone
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality headset, windows mixed reality headset, virtual reality headset, unity
 ---
 
-# Choosing an XR configuration
+# Setting up your XR configuration
 
 When you start a new Unity project, you have three different options for handling your XR needs: 
 * OpenXR
@@ -25,6 +25,26 @@ MRTK for Unity provides a cross-platform input system, foundational components, 
 > [Try out our MRTK tutorials](/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02?tabs=winxr)
 
 Take a look at [MRTK's documentation](/windows/mixed-reality/mrtk-unity) for more feature details.
+
+### Using MRTK with OpenXR support
+
+MRTK-Unity supports the Mixed Reality OpenXR plugin starting with the 2.5.3 release.
+
+1. Open the [Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md) again to install the Mixed Reality Toolkit, if you haven't already. OpenXR support is in the **Foundation** package.
+2. Go to the MixedReality Toolkit component script in the Inspector and switch to the **DefaultOpenXRConfigurationProfile** profile:
+
+    ![Screenshot of switching the MRTK configuration in the Mixed Reality Toolkit component in the inspector](images/openxr-img-11.png)
+
+    1. See the MRTK documentation for [more in-depth information on migrating to OpenXR](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk#configuring-mrtk-for-the-xr-sdk-pipeline).
+
+> [!NOTE]
+> When upgrading from a previous version of MRTK, ensure the following line is in the **Assets/MixedRealityToolkit.Generated/link.xml** file:
+>
+> ```xml
+> <assembly fullname = "Microsoft.MixedReality.Toolkit.Providers.OpenXR" preserve="all"/>
+> ```
+>
+> This line will be added by default if you started with MRTK 2.5.4 or newer.
 
 ## Manual setup without MRTK
 
