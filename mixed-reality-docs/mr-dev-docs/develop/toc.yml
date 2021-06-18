@@ -362,9 +362,9 @@
   items:
   - name: JavaScript development overview 
     href: javascript/webxr-overview.md
-  - name: VR Tutorials
+  - name: Tutorials
     items:
-      - name: Hello World using BabylonJS
+      - name: VR Hello World using BabylonJS
         items:
         - name: 1. Introduction
           href: javascript/tutorials/babylonjs-webxr-helloworld/introduction-01.md
