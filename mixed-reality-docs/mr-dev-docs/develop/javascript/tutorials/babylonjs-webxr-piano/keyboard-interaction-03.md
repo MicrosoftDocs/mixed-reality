@@ -166,7 +166,7 @@ const createScene = async function(engine) {
     keyboard.parent = piano;
 
     // Import and scale piano frame
-    BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/JING1201/babylonjs-exploration/main/piano-keys/", "pianoFrame.babylon", scene, function(meshes) {
+    BABYLON.SceneLoader.ImportMesh("frame", "https://docs.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-piano/files", "pianoFrame.babylon", scene, function(meshes) {
         const frame = meshes[0];
         frame.parent = piano;
     });
@@ -258,7 +258,7 @@ Right now, the piano keyboard we have created is a static model that does not re
 
 1. Now let's work on playing and stopping a sound when a key is pressed and released. To achieve this, we will be utilizing a Javascript library named **soundfont-player**, which allows us to easily play MIDI sounds of an instrument we choose.
 
-    [Download the minified code of the library](https://github.com/JING1201/babylonjs-exploration/blob/89f60cf8fbc3a3d64afce70026cde0513ed59075/piano-keys/soundfont-player.min.js), save it in the same folder as *index.html*, and include it in the `<header>` tag in *index.html*:
+    [Download the minified code of the library](./files/soundfont-player.min.js), save it in the same folder as *index.html*, and include it in the `<header>` tag in *index.html*:
 
     ```html
     <head>
@@ -553,7 +553,7 @@ const createScene = async function(engine) {
     keyboard.parent = piano;
 
     // Import and scale piano frame
-    BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/JING1201/babylonjs-exploration/main/piano-keys/", "pianoFrame.babylon", scene, function(meshes) {
+    BABYLON.SceneLoader.ImportMesh("frame", "https://docs.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-piano/files", "pianoFrame.babylon", scene, function(meshes) {
         const frame = meshes[0];
         frame.parent = piano;
     });
