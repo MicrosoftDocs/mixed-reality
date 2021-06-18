@@ -265,7 +265,7 @@ In the MRTK Project Configurator window, ensure all options are checked and also
 > [!TIP]
 > Setting the Audio spatializer property is optional but may improve the audio experience in your project. If you set it to MS HRTF Spatializer, this spatializer plugin will be used when Unity's AudioSource.spatialize property is enabled. To learn more about this topic, you can refer to the  <a href="//windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank"> Spatial audio tutorials</a>.
 
-Click on **Next** then click on**Done** button in MRTK Project Configurator window to finish the Unity project configuration for Legecy XR.
+Click on **Next** then click on**Done** button in MRTK Project Configurator window to finish the Unity project configuration for Legacy XR.
 
 ### Configure additional project settings
 
