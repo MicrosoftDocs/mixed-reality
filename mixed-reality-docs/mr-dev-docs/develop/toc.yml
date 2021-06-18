@@ -272,6 +272,10 @@
         href: unity/exporting-and-building-a-unity-visual-studio-solution.md
       - name: Best practices for working with Unity and Visual Studio
         href: unity/best-practices-for-working-with-unity-and-visual-studio.md
+  - name: Release notes
+    items:
+      - name: Mixed Reality OpenXR plugin
+        href: unity/openxr-release-notes.mds
 - name: Unreal
   items:
   - name: Unreal development overview
