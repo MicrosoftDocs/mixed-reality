@@ -6,11 +6,13 @@ The Mixed Reality OpenXR plugin fully supports AR Foundation 4.0, providing ARPl
 
 ### Prerequisites
 
-* Latest Unity 2020.3 LTS, we recommend 2020.3.6f1 or above.
-* Latest Unity OpenXR plugin, we recommend 1.2 or later
+* Latest Unity 2020.3 LTS, (we recommend 2020.3.8f1 or above)
+* Latest Unity OpenXR plugin, (we recommend 1.2 or later)
 * Latest [tools for HoloLens 2 development](/windows/mixed-reality/develop/install-the-tools?tabs=unity#installation-checklist)
-* Latest MRTK (optional), we recommend version 2.7 or later
-* Latest Mixed Reality OpenXR Plugin, we recommend version 1.0.0-preview or later
+* Latest MRTK (optional), (we recommend version 2.7 or later)
+* Latest Mixed Reality OpenXR Plugin, (we recommend version 1.0.0-preview.1 or later)
+
+![Screenshot of the open xr unity basic sample running on a HoloLens](../../images/openxr-example.png)
 
 > [!NOTE]
 > If you're building VR applications on Windows PC, the Mixed Reality OpenXR plugin is not necessarily required. However, you'll want to install the plugin if you're customizing controller mapping for HP Reverb G2 controllers or building apps that work on both HoloLens 2 and VR headsets.
