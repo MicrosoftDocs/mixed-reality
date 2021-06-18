@@ -11,9 +11,9 @@ keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality headset,
 # Setting up your XR configuration
 
 When you start a new Unity project, you have three different options for handling your XR needs: 
-* OpenXR
+* OpenXR plugin
 * Windows XR plugin
-* Legacy XR
+* Legacy XR plugin
 
 [!INCLUDE[](includes/xr/intro.md)]
 
@@ -28,10 +28,9 @@ Take a look at [MRTK's documentation](/windows/mixed-reality/mrtk-unity) for mor
 
 ### Using MRTK with OpenXR support
 
-MRTK-Unity supports the Mixed Reality OpenXR plugin starting with the 2.5.3 release.
+MRTK-Unity 2.7 release provides better supports for the Mixed Reality OpenXR plugin.
 
 1. Open the [Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md) again to install the Mixed Reality Toolkit, if you haven't already. OpenXR support is in the **Foundation** package.
-2. Go to the MixedReality Toolkit component script in the Inspector and switch to the **DefaultOpenXRConfigurationProfile** profile:
 
     ![Screenshot of switching the MRTK configuration in the Mixed Reality Toolkit component in the inspector](images/openxr-img-11.png)
 
