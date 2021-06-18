@@ -46,7 +46,7 @@ Wait for Unity to finish the build process.
 
 ![Unity build process in progress](../images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step4-8.png)
 
-double click on the Executable file to open the Application in your PC.
+double click on the Executable file to open the PC Holographic Remoting Application in your PC.
 
 > [!NOTE]
 > Due to some known issues in Holographic Remoting for PC app Built as UWP we are Building the PC App as Windows Standalone for OpenXR.
