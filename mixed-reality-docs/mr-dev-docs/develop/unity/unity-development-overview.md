@@ -13,12 +13,7 @@ keywords: Unity, mixed reality, development, getting started, new project, porti
 
 ![Unity banner logo](../images/unity_logo_banner.png)
 
-The fastest path to building a HoloLens mixed reality app in Unity is with the Mixed Reality Toolkit (MRTK). If you're brand new to Unity, we recommend that you explore the beginner level [tutorials](https://unity3d.com/learn/tutorials) on the Unity Learn platform before continuing. 
-
-If you're brand new to mixed reality development in Unity and want to get a project up and running with the MRTK, check out our Microsoft Learn module. You can always come back here for more intermediate and advanced topics once you get the hang of things!
-
-> [!div class="nextstepaction"]
-> [Set up a mixed reality Unity project with MRTK](/learn/modules/mixed-reality-toolkit-project-unity)
+Unity is one of the leading real-time development platforms on the market, with underlying runtime code written in C++ and all development scripting is done in C#. Whether you're looking to build games, movies and animation cinematics, or even render architectural or engineering concepts in a virtual world, Unity has the infrastructure to support you. When you're ready to get started, head to the development checkpoints below!
 
 > [!IMPORTANT]
 > Take a look at our **[porting guides](../porting-apps/porting-overview.md)** if you have an existing Unity project that you want to bring over to HoloLens 2. We have guides for projects that are using HTK, MRTK v1, or SteamVR.
@@ -141,7 +136,7 @@ You can find us on the [Unity Forums](https://aka.ms/unityforums) by tagging **M
 * Windows Mixed Reality
 * OpenXR
 * XRSDK
-* Legacy XR 
+* Legacy XR
 
 ## See also
 

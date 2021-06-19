@@ -1,6 +1,4 @@
 ---
-
-# Mandatory fields.
 title: JavaScript development Overview
 description: Overview of Mixed Reality development using JavaScript for web, mobile and windows immersive headsets.
 author: yonet

@@ -11,7 +11,7 @@ keywords: Windows Mixed Reality, test, Mixed Reality Toolkit, MRTK version 2, MR
 
 # Introducing MRTK for Unreal
 
-![MRTK](../../design/images/MRTK_UX_Hero.png)
+![MRTK banner image](../../design/images/MRTK_UX_Hero.png)
 
 ## What is Mixed Reality Toolkit (MRTK)?
 
@@ -30,6 +30,11 @@ We've built MRTK Unreal in a modular way, so you don't need to take every bit of
 ### Performant
 
 Working with mobile platforms, we constructed MRTK Unreal with performance in mind. This is super important and we wanted to ensure that the tools aren't going to work against you.
+
+## Project setup
+
+> [!div class="nextstepaction"]
+> [Download Unreal Engine and MRTK](unreal-project-setup.md)
 
 ## See also
 

@@ -25,7 +25,7 @@ At a high level, the following steps are involved in porting existing content:
 
 ### 1. Make sure you have the right development hardware
 
-The [install the tools](../install-the-tools.md#immersive-vr-headset-requirements) page lists the recommended development hardware.
+The [VR enthusiast guide](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines) page lists the recommended development hardware.
 
 ### 2. Upgrade to the latest flight of Windows 10
 

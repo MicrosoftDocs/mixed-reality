@@ -12,7 +12,7 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remotin
 
 ![Unreal banner logo](../images/unreal_logo_banner.png)
 
-Getting started with <a href="https://docs.microsoft.com/windows/mixed-reality" target="_blank" title="Mixed Reality Docs"> mixed reality applications</a> is a big task. New concepts, platforms, and cutting edge hardware can seem like barriers. However, if you're an Unreal developer you're in luck. Unreal Engine 4 has full support for <a href="https://www.microsoft.com/windows/windows-mixed-reality" target="_blank" title="Windows Mixed Reality Docs">Windows Mixed Reality</a> (VR) and <a href="https://www.microsoft.com/hololens/hardware" target="_blank" title="HoloLens 2 Docs">HoloLens 2</a> (AR) devices.
+Getting started with <a href="/windows/mixed-reality" target="_blank" title="Mixed Reality Docs"> mixed reality applications</a> is a big task. New concepts, platforms, and cutting edge hardware can seem like barriers. However, if you're an Unreal developer you're in luck. Unreal Engine 4 has full support for <a href="https://www.microsoft.com/windows/windows-mixed-reality" target="_blank" title="Windows Mixed Reality Docs">Windows Mixed Reality</a> (VR) and <a href="https://www.microsoft.com/hololens/hardware" target="_blank" title="HoloLens 2 Docs">HoloLens 2</a> (AR) devices.
 
 [!INCLUDE[](includes/tabs-unreal-features.md)]
 
@@ -32,6 +32,7 @@ First, you'll need to install the tools for HoloLens 2 development. Next, go thr
 |  Checkpoint  |  Outcome  |
 | --- | --- |
 | [Install the latest tools](../install-the-tools.md) | Download and install the latest version of Unreal Engine and setup your project for mixed reality |
+| [Set up your project](unreal-project-setup.md) | Get the latest version of Unreal Engine and MRTK |
 | [Creating your first HoloLens Unreal application](unreal-quickstart.md) | Start off your Unreal and HoloLens development journey by building a basic Mixed Reality application |
 | [HoloLens 2 tutorial series](tutorials/unreal-uxt-ch1.md) | Get set up for mixed reality development in Unreal, build your first app with MRTK, and deploy your app to HoloLens 2 |
 | Get started with [OpenXR](../native/openxr.md) in Unreal | Install and enable the following plugin from the Unreal Engine Marketplace:<ul><li> [Microsoft OpenXR](https://www.unrealengine.com/marketplace/en-US/product/ef8930ca860148c498b46887da196239)</li></ul>Ensure the Microsoft Windows Mixed Reality plugin is disabled.<br><br>The full list of currently supported features in OpenXR is [below](#supported-features).|

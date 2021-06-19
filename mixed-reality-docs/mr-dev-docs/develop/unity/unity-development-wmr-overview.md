@@ -20,7 +20,7 @@ If you're brand new to Unity, we recommend that you explore the beginner level [
 
 ## Development checkpoints
 
-Use the following checkpoints to bring your Unity games and applications into the world of mixed reality. 
+Use the following checkpoints to bring your Unity games and applications into the world of mixed reality.
 
 ### 1. Getting started
 
@@ -29,7 +29,7 @@ There are a small set of Unity settings you'll need to manually change for Windo
 |  Checkpoint  |  Outcome  |
 | --- | --- |
 | [Install the latest tools](../install-the-tools.md) | Download and install the latest Unity package and setup your project for mixed reality |
-| [Configuring your project for WMR](windows-xr-plugin.md) | Learn how to build applications that render digital content on holographic and VR display devices |
+| [Configuring your project for VR and Windows Mixed Reality headsets](/windows/mixed-reality/develop/unity/xr-project-setup?tabs=openxr) | Learn how to build applications that render digital content on holographic and VR display devices |
 
 > [!IMPORTANT]
 > Check out our Unity project [configuration guide](choosing-unity-version.md) for more information on setting up your projects.
