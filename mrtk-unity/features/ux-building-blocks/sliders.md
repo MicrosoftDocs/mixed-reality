@@ -1,9 +1,9 @@
 ---
 title: Slider
 description: Overview of Sliders MRTK
-author: CDiaz-MS
-ms.author: cadia
-ms.date: 01/12/2021
+author: CDiaz-MS, RogPodge
+ms.author: cadia, roliu
+ms.date: 06/18/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Sliders,
 ---
 
@@ -27,6 +27,7 @@ Drag and drop the **PinchSlider** prefab into the scene hierarchy. If you want t
 We also recommend using the following hierarchy
 
 - PinchSlider - Contains the sliderComponent
+  - TouchCollider - Collider containing the entire selectable area of the slider. Enables the Snap To Position behavior.
   - SliderThumb - Contains the movable thumb
   - TrackVisuals - Containing the track and any other visuals
   - OtherVisuals - Containing any other visuals
@@ -55,7 +56,19 @@ If you cannot use the handles, you can instead specify the start and end points 
 
 **Thumb Root** The gameobject that contains the slider thumb.
 
+**Snap To Position** Whether or not this slider snaps to the designated position on the slider
+
+**Is Touchable** Whether or not this slider is controllable via touch events
+
+**Thumb Collider** The collider that controls the slider thumb
+
+**Touchable Collider** The area of the slider that can be touched or selected when Snap To Position is true.
+
 **Slider Value** The value of the slider.
+
+**Use Slider Step Divisions** Controls whether this slider is increments in steps or continuously.
+
+**Slider Step Divisions** Number of subdivisions the slider is split into when Use Slider Step Divisions is enabled.
 
 **Track Visuals** The gameobject that contains the desired track visuals that goes along the slider.
 
@@ -73,3 +86,16 @@ When user updates the slider axis value in editor then if Track Visuals or Tick 
 Specifically, their local position is reset and their local rotation is set to match the Slider Axis orientation.
 Their scale isn't modified.
 If Tick Marks have a Grid Object Collection component then the Layout and CellWidth or CellHeight is updated accordingly to match the Slider Axis.
+
+## Example Slider Configurations
+
+Continuous Sliders with Snap To Position
+![Continuous Sliders](https://user-images.githubusercontent.com/39840334/122488212-d410a400-cf91-11eb-8d31-fc7584ddc465.gif)
+
+Step Sliders with Snap To Position
+
+![Step Sliders](https://user-images.githubusercontent.com/39840334/122488226-dc68df00-cf91-11eb-9459-89655bbb054d.gif)
+
+Touch Sliders
+
+![Touch Sliders](https://user-images.githubusercontent.com/39840334/122488221-d8d55800-cf91-11eb-91a1-bb12debe2797.gif)
