@@ -29,7 +29,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, AR Core,
     | AR Foundation  <br/> Version: 2.1.8 |  AR Foundation  <br/> Version: 2.1.8 |
     | ARCore XR Plugin <br/> Version: 2.1.11 | ARKit XR Plugin <br/> Version: 2.1.9 |
 
-    **Unity 2020.x**
+    **Unity 2020.3.x**
 
     | **Android** | **iOS** |
     | --- | --- |
