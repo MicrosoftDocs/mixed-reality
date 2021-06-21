@@ -52,7 +52,7 @@ You're now ready to begin developing with OpenXR in Unity!  Continue on to the n
 
 Check out the [OpenXR Mixed Reality samples repo](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) for sample unity projects showcasing how to build Unity applications for HoloLens 2 or Mixed Reality headsets using the Mixed Reality OpenXR plugin.
 
-Or, if you're ready to get started on your own from a blank project, proceed to the [Camera setup](camera-in-unity.md) article.
+Or, if you're ready to get started on your own from a blank project, proceed to the [Camera setup](../../camera-in-unity.md) article.
 
 # [Windows XR](#tab/windowsxr)
 
@@ -65,12 +65,12 @@ If you're targeting Desktop VR, we suggest using the PC Standalone Platform sele
 
 If you're targeting HoloLens 2, you need to switch to the Universal Windows Platform:
 
-1. Select **File > Build Settings...**
-2. Select **Universal Windows Platform** in the Platform list and select **Switch Platform**
-3. Set **Architecture** to **ARM64**
-4. Set **Target device** to **HoloLens**
-5. Set **Build Type** to **D3D Project**
-6. Set **Target SDK Version** to **Latest installed**
+1.  Select **File > Build Settings...**
+2.  Select **Universal Windows Platform** in the Platform list and select **Switch Platform**
+3.  Set **Architecture** to **ARM64**
+4.  Set **Target device** to **HoloLens**
+5.  Set **Build Type** to **D3D Project**
+6.  Set **Target SDK Version** to **Latest installed**
 7.	Set **Build configuration** to **Release** because there are known performance issues with Debug
 
 ![Screenshot of Build Settings window open in unity editor with Universal Windows Platform highlighted](../../images/wmr-config-img-4.png)
@@ -102,12 +102,12 @@ If you're targeting Desktop VR, we suggest using the PC Standalone Platform sele
 
 If you're targeting HoloLens 2, you need to switch to the Universal Windows Platform:
 
-1. Select **File > Build Settings...**
-2. Select **Universal Windows Platform** in the Platform list and select **Switch Platform**
-3. Set **Architecture** to **ARM64**
-4. Set **Target device** to **HoloLens**
-5. Set **Build Type** to **D3D Project**
-6. Set **Target SDK Version** to **Latest installed**
+1.  Select **File > Build Settings...**
+2.  Select **Universal Windows Platform** in the Platform list and select **Switch Platform**
+3.  Set **Architecture** to **ARM64**
+4.  Set **Target device** to **HoloLens**
+5.  Set **Build Type** to **D3D Project**
+6.  Set **Target SDK Version** to **Latest installed**
 7.	Set **Build configuration** to **Release** because there are known performance issues with Debug
 
 ![Screenshot of Build Settings window open in unity editor with Universal Windows Platform highlighted](../../images/wmr-config-img-4.png)
