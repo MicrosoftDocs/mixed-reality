@@ -1,5 +1,5 @@
 ---
-title: Android and iOS MRTK Configuration (ARFoundation)
+title: Building and Deploying to Android and iOS via AR Foundation
 description: Documentation to configure MRTK for Android and iOS (ARFoundation) in unity
 author: davidkline-ms
 ms.author: davidkl
@@ -7,11 +7,11 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, AR Core, AR Kit, iOS, IOS, Android, AR Foundation
 ---
 
-# How to configure MRTK for iOS and Android [Experimental]
+# Building and Deploying to Android and iOS via AR Foundation [Experimental]
 
 ## Install required packages
 
-1. Download and import the **Microsoft.MixedReality.Toolkit.Unity.Foundation** package, from [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/tag/v2.3.0) or the [Unity Package Manager](../configuration/usingupm.md)
+1. Download and import the **Microsoft.MixedReality.Toolkit.Unity.Foundation** package, from [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/) or the [Unity Package Manager](../configuration/usingupm.md)
 
 1. In the Unity Package Manager (UPM), install the following packages:
 

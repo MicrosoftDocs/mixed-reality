@@ -1,13 +1,13 @@
 ---
-title: Oculus Quest MRTK
+title: Building and deploying to Oculus Quest
 description: Documentation to configure for Oculus Quest in MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Oculus Quest,
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Oculus Quest
 ---
 
-# Building and deploying MRTK to Oculus Quest using the XR SDK pipeline
+# Building and deploying to Oculus Quest using the XR SDK pipeline
 
 An [Oculus Quest](https://www.oculus.com/quest/) is required.
 
