@@ -1,6 +1,6 @@
 ---
-title: MRTK 2.7 Release Notes
-description: release notes of MRTK version 2.7
+title: MRTK 2.7 release notes
+description: Release notes for MRTK version 2.7
 author: RogPodge
 ms.author: roliu
 ms.date: 06/16/2021
