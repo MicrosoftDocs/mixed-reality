@@ -56,7 +56,7 @@ Support for MSBuild for Unity has been removed as of the 2.5.2 release, to align
 ### OpenXR
 
 There's currently a known issue with Holographic Remoting and OpenXR, where hand joints aren't consistently available.
-Additionally, the eye tracking sample scenes aren't currently compatible, though eye tracking *does* work.
+Additionally, the eye tracking sample scenes aren't currently compatible, though eye tracking _does_ work.
 
 ### Some Mixed Reality Toolkit Standard Shader features require the Foundation package
 
@@ -96,7 +96,7 @@ This error is due to the Scene Transition Service's configuration profile being 
 
 ### Oculus Quest
 
-There is currently a known issue for using the [Oculus XR plugin with when targeting Standalone platforms](https://forum.unity.com/threads/unable-to-start-oculus-xr-plugin.913883/).  Check the Oculus bug tracker/forums/release notes for updates.
+There is currently a known issue for using the [Oculus XR plugin with when targeting Standalone platforms](https://forum.unity.com/threads/unable-to-start-oculus-xr-plugin.913883/). Check the Oculus bug tracker/forums/release notes for updates.
 
 The bug is signified with this set of 3 errors:
 

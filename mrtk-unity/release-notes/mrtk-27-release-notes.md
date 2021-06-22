@@ -111,7 +111,7 @@ The dwell feature and example is now graduated from experimental. New examples o
 
 ### Added support for Leap Motion Unity Modules version 4.6.0, 4.7.0, 4.7.1 and 4.8.0
 
-Support for the latest versions of the [Leap Motion Unity Modules](https://developer.leapmotion.com/unity) is now compatible with MRTK 2.7.0.  See [How to Configure MRTK for Leap Motion](../supported-devices/leap-motion-mrtk.md) for more information.
+Support for the latest versions of the [Leap Motion Unity Modules](https://developer.leapmotion.com/unity) is now compatible with MRTK 2.7.0. See [How to Configure MRTK for Leap Motion](../supported-devices/leap-motion-mrtk.md) for more information.
 
 Big thanks to @jackyangzzh for contributing the new LeapMotionOrientationExample scene!
 
@@ -195,4 +195,4 @@ The following warning is logged in most MRTK example scenes while using Unity 20
 Please remove the CanvasRenderer component from the [TextMeshPro] GameObject as this component is no longer necessary.
 ```
 
-The Canvas Renderer warning was added in [TextMeshPro version 3.0.3](https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0/changelog/CHANGELOG.html#changes-3).  These warning do not have an impact on MRTK's example scenes and can be cleared from the console. See [Issue 9811](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9811) for more details.
+The Canvas Renderer warning was added in [TextMeshPro version 3.0.3](https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0/changelog/CHANGELOG.html#changes-3). These warning do not have an impact on MRTK's example scenes and can be cleared from the console. See [Issue 9811](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9811) for more details.
