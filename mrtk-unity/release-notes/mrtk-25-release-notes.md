@@ -91,9 +91,6 @@ See [Scrolling Object Collection](../features/ux-building-blocks/scrolling-objec
 
 The teleport pointer now has improved animations and audio feedback. We also improved the handling of the teleport pointer so it handles smoother when transitioning from pointing at nearby surfaces to farther away surfaces.
 
-<iframe width="940" height="530" src="https://streamable.com/o/3f222q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
-
 ### Input simulation cheat sheet
 
 The HandInteractionExamples scene now has a configurable shortcut to show a help page for input simulation
@@ -202,7 +199,7 @@ Constraints can now be used by both, bounds control and object manipulator via t
 Additionally to the automatic behavior constraint manager also comes with a manual mode that lets users decide which constraint should be processed.
 For this reason the way we display constraints in the property inspector changed a bit.
 
-<img src="../features/images/constraint-manager/ManualSelection.png" width="600">
+<img src="../features/images/constraint-manager/ManualSelection.png" width="600" alt="Inspector view showing manual constraint manager selection">
 
 The constraints that are applied to the component are now shown as a list in the constraint manager component whereas the component using the constraint manager (either [bounds control](../features/ux-building-blocks/bounds-control.md#constraint-system) or [object manipulator](../features/ux-building-blocks/object-manipulator.md#constraint-manager)) will now show the selected constraint manager and mode (auto or manual).
 For more information read the [constraint manager](../features/ux-building-blocks/constraint-manager.md) section in our docs.
@@ -236,8 +233,8 @@ Currently the following MRTK components supporting the [elastics manager](xref:M
 - [Bounds control](../features/ux-building-blocks/bounds-control.md#elastics-experimental)
 - [Object manipulator](../features/ux-building-blocks/object-manipulator.md#elastics-experimental)
 
-<img src="https://user-images.githubusercontent.com/5544935/88151572-568cba00-cbaf-11ea-91c2-d6b51829b638.gif" width="38%">
-<img src="https://user-images.githubusercontent.com/5544935/88151578-58567d80-cbaf-11ea-8f96-d24f2cf0d6e9.gif" width="45.7%">
+<img src="https://user-images.githubusercontent.com/5544935/88151572-568cba00-cbaf-11ea-91c2-d6b51829b638.gif" width="38%" alt="Expanding an elastic menu">
+<img src="https://user-images.githubusercontent.com/5544935/88151578-58567d80-cbaf-11ea-8f96-d24f2cf0d6e9.gif" width="45.7%" alt="Grabbing an elastic coffee cup">
 
 ### Joystick (experimental)
 
@@ -249,9 +246,9 @@ An example of joystick interface that can control a large target object.
 
 An experimental control that makes it easy to change material colors on any object at runtime.
 
-![Color picker](https://user-images.githubusercontent.com/43013191/85468370-3b536e00-b561-11ea-812c-b3f7d43dd999.png)
+![Three different methods of color picker control](https://user-images.githubusercontent.com/43013191/85468370-3b536e00-b561-11ea-812c-b3f7d43dd999.png)
 
-![Color picker](https://user-images.githubusercontent.com/43013191/85468994-fa0f8e00-b561-11ea-89f2-0810d1998518.png)
+![Four different methods of color picker control](https://user-images.githubusercontent.com/43013191/85468994-fa0f8e00-b561-11ea-89f2-0810d1998518.png)
 
 ## Breaking changes
 
