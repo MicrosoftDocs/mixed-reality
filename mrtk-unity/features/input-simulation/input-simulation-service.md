@@ -9,6 +9,10 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Input simulation service
 
+> ![MRTK Input Simulation](../images/input-simulation/MRTK_InputSimulation_Hero.jpg)
+
+With MRTK's input simulation, you can test various types of interactions in the Unity editor without building and deploying to a device. This allows you quickly iterate your ideas in the design and development process. Use keyboard and mouse combination to control simulated inputs.
+
 The Input Simulation Service emulates the behavior of devices and platforms that may not be available in the Unity editor. Examples include:
 
 * HoloLens or VR device head tracking
@@ -17,14 +21,21 @@ The Input Simulation Service emulates the behavior of devices and platforms that
 * HoloLens 2 eye tracking
 * VR device controllers
 
-Users can use a conventional keyboard and mouse combination to control simulated devices at runtime. This approach allows testing of interactions in the Unity editor without first deploying to a device.
-
 > [!WARNING]
 > This does not work when using Unity's XR Holographic Emulation > Emulation Mode = "Simulate in Editor". Unity's in-editor simulation will take control away from MRTK's input simulation. In order to use the MRTK input simulation service, you will need to set XR Holographic Emulation to Emulation Mode = *"None"*
 
-## Enabling the input simulation service
+## How to use MRTK Input simulation 
 
-Input simulation is enabled by default in the profiles that ship with MRTK.
+Input simulation is enabled by default in the profiles that ship with MRTK. You can simply click **Play** button to run the scene with input simulation support.
+
+* Press W, A, S, D keys to move the camera.
+* Hold the right mouse button and move the mouse to look around.
+* To bring up the simulated hands, press Space bar(Right hand) or left Shift key(Left hand)
+* To keep simulated hands in the view, press T or Y key
+* To rotate simulated hands, press Q or E(horizontal) / R or F(vertical)
+
+
+## Enabling the input simulation service
 
 Under the Input System Data provider configuration, the Input Simulation service can be configured with the following.
 
@@ -33,13 +44,13 @@ Under the Input System Data provider configuration, the Input Simulation service
 
 > [!NOTE]
 > The Input Simulation service can be used on other platform endpoints such as standalone by changing the **Supported Platform(s)** property to include the desired targets.
-> ![Input Simulation Supported Platforms](../images/input-simulation/InputSimulationSupportedPlatforms.gif)
+> <br/><img src="../images/input-simulation/InputSimulationSupportedPlatforms.gif" alt="Input Simulation Supported Platforms" width="550px">
 
 ## Input simulation tools window
 
-Enable the input simulation tools window from the  **Mixed Reality Toolkit** > **Utilities** > **Input Simulation** menu. This window provides access to the state of input simulation during play mode.
+Enable the input simulation tools window from the  **Mixed Reality** > **Toolkit** > **Utilities** > **Input Simulation** menu. This window provides access to the state of input simulation during play mode.
 
-## Viewport buttons
+## Viewport buttons (optional)
 
 A prefab for in-editor buttons to control basic hand placement can be specified in the input simulation profile under **Indicators Prefab**. This is an optional utility, the same features can be accessed in the [input simulation tools window](#input-simulation-tools-window).
 
@@ -57,7 +68,8 @@ Hand icons show the state of the simulated hands:
 
 Press Left Ctrl + H in the HandInteractionExamples scene to bring up a cheat sheet with Input simulation controls.
 
-![Input Simulation Cheat Sheet](https://user-images.githubusercontent.com/39840334/86066480-13637f00-ba27-11ea-8814-d222d548f684.gif)
+> ![MRTK Input Simulation Cheat Sheet](../images/input-simulation/MRTK_InputSimulation_CheatSheet.png)
+
 
 ## Camera control
 
