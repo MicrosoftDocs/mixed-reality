@@ -14,7 +14,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK
 
 <br>
 
-<iframe width="940" height="530" src="https://www.youtube.com/embed/qfONlUCSWdg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWyXHW]
 
 MRTK-Unity is a Microsoft-driven project that provides a set of components and features, used to accelerate cross-platform MR app development in Unity. Here are some of its functions:
 
@@ -23,18 +23,30 @@ MRTK-Unity is a Microsoft-driven project that provides a set of components and f
 * Operates as an **extensible framework** that provides developers the ability to swap out core components.
 * **Supports a wide range of platforms**:
 
+::: moniker range=">= mrtkunity-2021-05"
 | Platform | Supported Devices |
 |---|---|
-| OpenXR (Unity 2020.2 or newer) | Microsoft HoloLens 2 <br> Windows Mixed Reality headsets |
+| OpenXR (Unity 2020.3.8+) | Microsoft HoloLens 2 <br> Windows Mixed Reality headsets |
 | Windows Mixed Reality | Microsoft HoloLens <br> Microsoft HoloLens 2 <br> Windows Mixed Reality headsets  |
 | Oculus (Unity 2019.3 or newer) | Oculus Quest |
 | OpenVR |  Windows Mixed Reality headsets <br> HTC Vive <br> Oculus Rift |
 | Ultraleap Hand Tracking | Ultraleap Leap Motion controller |
 | Mobile | iOS and Android |
+::: moniker-end
+::: moniker range="< mrtkunity-2021-05"
+| Platform | Supported Devices |
+|---|---|
+| OpenXR (Preview in MRTK 2.6, Unity 2020.3.8+) | Microsoft HoloLens 2 <br> Windows Mixed Reality headsets |
+| Windows Mixed Reality | Microsoft HoloLens <br> Microsoft HoloLens 2 <br> Windows Mixed Reality headsets  |
+| Oculus (Unity 2019.3 or newer) | Oculus Quest |
+| OpenVR |  Windows Mixed Reality headsets <br> HTC Vive <br> Oculus Rift |
+| Ultraleap Hand Tracking | Ultraleap Leap Motion controller |
+| Mobile | iOS and Android |
+::: moniker-end
 
 ## Getting started with MRTK
 
-If you're new to MRTK or Mixed Reality development in Unity, we recommend installing and exploring the MRTK Examples Hub sample application on your device or emulator. 
+If you're new to MRTK or Mixed Reality development in Unity, we recommend installing and exploring the MRTK Examples Hub sample application on your device or [emulator](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator). 
 
 > [!div class="nextstepaction"]
 > [Download the MRTK Examples Hub app](running-examples-hub.md)
@@ -53,7 +65,7 @@ Want to see what's going on under the hood?
 
 ## Documentation
 
-| [![Release notes](features/images/MRTK_Icon_ReleaseNotes.png)](release-notes/mrtk-26-release-notes.md)<br/>[Release Notes](release-notes/mrtk-26-release-notes.md)| [![MRTK Overview](features/images/MRTK_Icon_ArchitectureOverview.png)](architecture/overview.md)<br/>[MRTK Overview](architecture/overview.md)|[![API Reference](features/images/MRTK_Icon_APIReference.png)](/dotnet/api/Microsoft.MixedReality.Toolkit)<br/>[API Reference](/dotnet/api/Microsoft.MixedReality.Toolkit)|
+| [![Release notes](features/images/MRTK_Icon_ReleaseNotes.png)](release-notes/mrtk-27-release-notes.md)<br/>[Release Notes](release-notes/mrtk-26-release-notes.md)| [![MRTK Overview](features/images/MRTK_Icon_ArchitectureOverview.png)](architecture/overview.md)<br/>[MRTK Overview](architecture/overview.md)|[![API Reference](features/images/MRTK_Icon_APIReference.png)](/dotnet/api/Microsoft.MixedReality.Toolkit)<br/>[API Reference](/dotnet/api/Microsoft.MixedReality.Toolkit)|
 |:---|:---|:---|
 
 ## Build status
@@ -304,19 +316,19 @@ Want to see what's going on under the hood?
 
 ## Tools
 
-|  [![Optimize Window](features/images/MRTK_Icon_OptimizeWindow.png)](features/tools/optimize-window.md) [Optimize Window](features/tools/optimize-window.md) | [![Dependency Window](features/images/MRTK_Icon_DependencyWindow.png)](features/tools/dependency-window.md) [Dependency Window](features/tools/dependency-window.md) | ![Build Window](features/images/MRTK_Icon_BuildWindow.png) Build Window | [![Input recording](features/images/MRTK_Icon_InputRecording.png)](features/input-simulation/input-animation-recording.md) [Input recording](features/input-simulation/input-animation-recording.md) |
+|  [![Optimize Window](features/images/MRTK_Icon_OptimizeWindow.png)](features/tools/optimize-window.md) [Optimize Window](features/tools/optimize-window.md) | [![Dependency Window](features/images/MRTK_Icon_DependencyWindow.png)](features/tools/dependency-window.md) [Dependency Window](features/tools/dependency-window.md) | [![Build Window](features/images/MRTK_Icon_BuildWindow.png)](features/tools/build-window.md) [Build Window](features/tools/build-window.md) | [![Input recording](features/images/MRTK_Icon_InputRecording.png)](features/input-simulation/input-animation-recording.md) [Input recording](features/input-simulation/input-animation-recording.md) |
 |:--- | :--- | :--- | :--- |
 | Automate configuration of Mixed Reality projects for performance optimizations | Analyze dependencies between assets and identify unused assets |  Configure and execute an end-to-end build process for Mixed Reality applications | Record and playback head movement and hand tracking data in editor |
 
 ## Example scenes
 
-Explore MRTK's various types of interactions and UI controls in [this example scene](features/example-scenes/hand-interaction-examples.md).
+MRTK provides example scenes that demonstrate how to use MRTK's features. You can find the example scenes under Assets/MRTK/Examples/Demos folder. Read the [Example scenes](running-example-scenes.md) page to learn how to acquire and run example scenes. [Hand Interaction Examples scene](features/example-scenes/hand-interaction-examples.md) is a great place to start experiencing MRTK's building blocks for interactions and UI.
 
 [![Example Scene 2](features/images/MRTK_Examples.png)](features/example-scenes/hand-interaction-examples.md)
 
 ## MRTK examples hub
 
-With the MRTK Examples Hub, you can try various example scenes in MRTK.
+With the MRTK Examples Hub, you can try various example scenes in MRTK without building and deploying each scene.
 You can download pre-built app packages for HoloLens(x86), HoloLens 2(ARM), and Windows Mixed Reality immersive headsets(x64) by selecting the "Mixed Reality Toolkit Examples" package in the [MR Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool). Make sure to [use the Windows Device Portal to install apps on HoloLens (1st gen)](/hololens/hololens-install-apps#use-the-windows-device-portal-to-install-apps-on-hololens). On HoloLens 2, you can download and install [MRTK Examples Hub through the Microsoft Store app](https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4).
 
 See [Examples Hub README page](features/example-scenes/example-hub.md) to learn about the details on creating a multi-scene hub with MRTK's scene system and scene transition service.

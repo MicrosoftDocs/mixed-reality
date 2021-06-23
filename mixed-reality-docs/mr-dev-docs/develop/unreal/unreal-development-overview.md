@@ -12,7 +12,7 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, streaming, remotin
 
 ![Unreal banner logo](../images/unreal_logo_banner.png)
 
-Getting started with <a href="https://docs.microsoft.com/windows/mixed-reality" target="_blank" title="Mixed Reality Docs"> mixed reality applications</a> is a big task. New concepts, platforms, and cutting edge hardware can seem like barriers. However, if you're an Unreal developer you're in luck. Unreal Engine 4 has full support for <a href="https://www.microsoft.com/windows/windows-mixed-reality" target="_blank" title="Windows Mixed Reality Docs">Windows Mixed Reality</a> (VR) and <a href="https://www.microsoft.com/hololens/hardware" target="_blank" title="HoloLens 2 Docs">HoloLens 2</a> (AR) devices.
+Getting started with <a href="/windows/mixed-reality" target="_blank" title="Mixed Reality Docs"> mixed reality applications</a> is a big task. New concepts, platforms, and cutting edge hardware can seem like barriers. However, if you're an Unreal developer you're in luck. Unreal Engine 4 has full support for <a href="https://www.microsoft.com/windows/windows-mixed-reality" target="_blank" title="Windows Mixed Reality Docs">Windows Mixed Reality</a> (VR) and <a href="https://www.microsoft.com/hololens/hardware" target="_blank" title="HoloLens 2 Docs">HoloLens 2</a> (AR) devices.
 
 [!INCLUDE[](includes/tabs-unreal-features.md)]
 
@@ -32,9 +32,10 @@ First, you'll need to install the tools for HoloLens 2 development. Next, go thr
 |  Checkpoint  |  Outcome  |
 | --- | --- |
 | [Install the latest tools](../install-the-tools.md) | Download and install the latest version of Unreal Engine and setup your project for mixed reality |
+| [Set up your project](unreal-project-setup.md) | Get the latest version of Unreal Engine and MRTK |
 | [Creating your first HoloLens Unreal application](unreal-quickstart.md) | Start off your Unreal and HoloLens development journey by building a basic Mixed Reality application |
 | [HoloLens 2 tutorial series](tutorials/unreal-uxt-ch1.md) | Get set up for mixed reality development in Unreal, build your first app with MRTK, and deploy your app to HoloLens 2 |
-| (Optional) Get started with [OpenXR](../native/openxr.md) in Unreal | If you're looking to build an OpenXR app in Unreal, you should disable the following engine plugin:<ul><li>Windows Mixed Reality</li></ul><br>Download and enable the following plugin in your project from GitHub:<ul><li> [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal)</li></ul><br>The full list of currently supported features in OpenXR is [below](#supported-features).|
+| Get started with [OpenXR](../native/openxr.md) in Unreal | Install and enable the following plugin from the Unreal Engine Marketplace:<ul><li> [Microsoft OpenXR](https://www.unrealengine.com/marketplace/en-US/product/ef8930ca860148c498b46887da196239)</li></ul>Ensure the Microsoft Windows Mixed Reality plugin is disabled.<br><br>The full list of currently supported features in OpenXR is [below](#supported-features).|
 
 ### 2. Core building blocks
 
@@ -69,9 +70,13 @@ If this is your first time deploying an Unreal app to HoloLens 2, you'll need to
 
 ### 5. Adding services
 
-At this point in your development journey, you might be looking to add services or for a helping hand with commercial deployment. Integrating [Azure Cloud Services](../mixed-reality-cloud-services.md) and Dynamics 365 features can level up your projects in a major way. We've compiled a few starting points for you to explore and expand your Mixed Reality knowledge.
+At this point in your development journey, you might be looking to add services or for a helping hand with commercial deployment. Integrating [Azure Cloud Services](../mixed-reality-cloud-services.md) can level up your projects in a major way. We've compiled a few starting points for you to explore and expand your Mixed Reality knowledge.
 
 [!INCLUDE[](../includes/unreal-cloud-services-d365.md)]
+
+### 6. Low-code alternatives
+
+[!INCLUDE[](../includes/unreal-low-code.md)]
 
 ## What's next?
 
@@ -87,7 +92,7 @@ Developing for mixed reality comes with performance checkpoints that depend on t
 
 ## Supported Features
 
-| HoloLens 2 Feature | Earliest Supported Unreal Engine Version | Supported in OpenXR (4.26) |
+| HoloLens 2 Feature | Earliest Supported Unreal Engine Version | Supported in OpenXR (4.26+) |
 | ----------- | ----------- | ----------- |
 | ARM64 support | 4.23 | ✔️ |
 | Streaming from a PC | 4.23 | ✔️ |
@@ -96,21 +101,21 @@ Developing for mixed reality comes with performance checkpoints that depend on t
 | Eye tracking | 4.23 | ✔️ |
 | Voice input | 4.23 | ✔️ |
 | Spatial anchors | 4.23 | ✔️ |
-| Camera access | 4.23 |
+| Camera access | 4.23 | ✔️ |
 | QR codes | 4.23 | ✔️ |
 | Spatial audio | 4.23 | ✔️ |
 | Spectator Screen support for streaming | 4.24 |
 | Planar LSR over streaming | 4.24 |
 | [Sample apps](../features-and-samples.md) | 4.24 | ✔️ |
 | Mobile multi-View: Performance hits 60 fps | 4.25 | ✔️ |
-| 3rd camera render | 4.25 |
+| 3rd camera render | 4.25 | ✔️ |
 | Streaming from a packaged desktop app | 4.25.1 | ✔️ |
-| Azure Spatial Anchors for HoloLens 2 (beta) | 4.25 |
+| Azure Spatial Anchors for HoloLens 2 | 4.25 | ✔️ |
 | Mixed Reality UX Tools support | 4.25 | ✔️ |
 | Developer docs & tutorials | 4.25 | ✔️ |
 | System keyboard | 4.26 | ✔️ |
 | HoloLens Media Player plugin | 4.26 | ✔️ |
-| Azure Spatial Anchors for iOS and Android (beta) | 4.26 |
+| Azure Spatial Anchors for iOS and Android | 4.26 |
 | Microsoft OpenXR plugin with Microsoft vendor-specific OpenXR extensions | 4.26 | ✔️ |
 | Streaming from Azure to HoloLens 2 | 4.26 | ✔️ |
 | Windows App Certification Kit compliance for packaged apps | 4.26 | ✔️ |

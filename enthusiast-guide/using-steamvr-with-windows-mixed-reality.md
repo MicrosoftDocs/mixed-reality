@@ -26,6 +26,33 @@ Windows Mixed Reality for SteamVR allows users to run SteamVR experiences on Win
     * If you don't see the popup, install SteamVR by navigating to the *Tools* section of your *library*. Locate SteamVR in the list and then right-click and select *Install Game*.
 > 3. Install [Windows Mixed Reality for SteamVR](https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/).
 
+## Set up Windows Mixed Reality for SteamVR in an environment without internet access
+
+**Store the necessary media on a portable storage device**
+1. Install [SteamVR](https://store.steampowered.com/app/250820/SteamVR/) and [Windows Mixed Reality for SteamVR](https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/) as directed above using [Steam](http://store.steampowered.com/about/) on a PC with full internet access.
+2. In Steam, open the Library section and find the part labeled "Tools".
+3. Once SteamVR is installed, right-click the entry "SteamVR" and in the resulting popup menu, click on the entry "Properties".
+4. A new window with multiple tabs will open. Select the tab "LOCAL FILES" and click on the button labeled "BROWSE LOCAL FILES".
+5. The directory containing the SteamVR Runtime will open. Copy this entire directory (named SteamVR) onto a portable medium of your choice (e.g. a USB thumb drive).
+6. Do the same with Windows Mixed Reality for SteamVR, and any SteamVR-compatible apps you would like to install on the target PC.
+
+**Run SteamVR on the target PC**
+1. After plugging the portable storage device into the target PC, move the SteamVR, MixedRealityVRDriver, and other folders to a convenient place on the target PC.
+![SteamVR and Windows Mixed Reality for SteamVR installed on target PC](images/steamvr-install-files.png)
+
+2. Ensuring SteamVR and MixedRealityVRDriver are in the same folder, open a command prompt. For the sake of this example, we will assume the containing folder is at *C:\SteamVRInstall*. In that case, in the command prompt you should run:
+```powershell
+chdir "C:\SteamVRInstall"
+.\SteamVR\bin\win64\vrpathreg.exe adddriver "C:\SteamVRInstall\MixedRealityVRDriver"
+```
+(Note that if you're running a 32-bit version of Windows, the `win64` part of the path above should be `win32` instead.)
+
+This will allow the runtime to find the Windows Mixed Reality for SteamVR driver in your custom installation.
+
+4. In order to run SteamVR you should double-click the file "vrstartup.exe" located at *SteamVR\bin\win64\vrstartup.exe*, or *SteamVR\bin\win32\vrstartup.exe* if the target PC is running a 32-bit version of Windows.
+
+See the [Steamworks documentation page for more information and troubleshooting](https://partner.steamgames.com/doc/features/steamvr/enterprise#2).
+
 ## Play SteamVR games
 
 1. Connect your headset to your PC and turn on your motion controllers.

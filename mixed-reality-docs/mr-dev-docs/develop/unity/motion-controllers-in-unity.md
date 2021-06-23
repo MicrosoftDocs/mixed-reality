@@ -96,6 +96,23 @@ If you're using the HP Reverb G2 controllers, refer to the table below for butto
 </tr>
 </table> -->
 
+### OpenXR
+
+To learn the basics about mixed reality interactions in Unity, visit the [Unity Manual for Unity XR Input](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html). This Unity documentation covers the mappings from controller-specific inputs to more generalizable **InputFeatureUsage**s, how available XR inputs can be identified and categorized, how to read data from these inputs, and more.
+
+The Mixed Reality OpenXR Plugin provides additional input interaction profiles, mapped to standard **InputFeatureUsage**s as detailed below:
+
+| InputFeatureUsage | HP Reverb G2 Controller (OpenXR) | HoloLens Hand (OpenXR) |
+| ---- | ---- | ---- |
+| primary2DAxis | Joystick | |
+| primary2DAxisClick | Joystick - Click | |
+| trigger | Trigger  | |
+| grip | Grip | Air tap or squeeze |
+| primaryButton | [X/A] - Press | Air tap |
+| secondaryButton | [Y/B] - Press | |
+| gripButton | Grip - Press | |
+| triggerButton | Trigger - Press | |
+| menuButton | Menu | |
 
 ## Grip pose vs. pointing pose
 
@@ -124,6 +141,27 @@ The **pointer pose** represents the tip of the controller pointing forward.
 The system-provided pointer pose is best used to raycast when you're **rendering the controller model itself**. If you're rendering some other virtual object in place of the controller, such as a virtual gun, you should point with a ray that's most natural for that virtual object, such as a ray that travels along the barrel of the app-defined gun model. Because users can see the virtual object and not the physical controller, pointing with the virtual object will likely be more natural for those using your app.
 
 Currently, the pointer pose is available in Unity only through the Windows MR-specific API, *sourceState.sourcePose.TryGetPosition/Rotation*, passing in *InteractionSourceNode.Pointer* as the argument.
+
+### OpenXR 
+
+You have access to two sets of poses through OpenXR input interactions:
+
+* The grip poses for rendering objects in the hand
+* The aim poses for pointing into the world.
+
+More information on this design and the differences between the two poses can be found in the [OpenXR Specification - Input Subpaths](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#semantic-path-input).
+
+Poses supplied by the InputFeatureUsages **DevicePosition**, **DeviceRotation**, **DeviceVelocity**, and **DeviceAngularVelocity** all represent the OpenXR **grip** pose. InputFeatureUsages related to grip poses are defined in Unity’s [CommonUsages](https://docs.unity3d.com/2020.2/Documentation/ScriptReference/XR.CommonUsages.html).
+
+Poses supplied by the InputFeatureUsages **PointerPosition**, **PointerRotation**, **PointerVelocity**, and **PointerAngularVelocity** all represent the OpenXR **aim** pose. These InputFeatureUsages aren't defined in any included C# files, so you'll need to define your own InputFeatureUsages as follows:
+
+``` cs
+public static readonly InputFeatureUsage<Vector3> PointerPosition = new InputFeatureUsage<Vector3>("PointerPosition");
+```
+
+## Haptics
+
+For information on using haptics in Unity’s XR Input system, documentation can be found at the [Unity Manual for Unity XR Input - Haptics](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html#Haptics).
 
 ## Controller tracking state
 
@@ -431,7 +469,7 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 
 ## Motion Controllers in MRTK
 
-You can access [gesture and motion controller](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/controllers) from the input Manager.
+You can access [gesture and motion controller](/windows/mixed-reality/mrtk-unity/features/input/controllers) from the input Manager.
 
 ## Follow along with tutorials
 

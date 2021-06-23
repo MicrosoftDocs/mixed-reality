@@ -1,11 +1,15 @@
 - name: Introduction to Mixed Reality development
-  href: development.md
+  items:
+  - name: Getting started  
+    href: development.md
+  - name: Install the tools
+    href: install-the-tools.md
+  - name: Choosing an engine 
+    href: choosing-an-engine.md
 - name: Azure mixed reality cloud services overview
   href: mixed-reality-cloud-services.md
 - name: Samples and feature apps
   href: features-and-samples.md
-- name: Install the tools
-  href: install-the-tools.md
 - name: Porting apps
   items:
   - name: Porting overview
@@ -170,14 +174,8 @@
     items:
     - name: Choosing a Unity version and XR plugin
       href: unity/choosing-unity-version.md
-    - name: Using the Legacy built-in XR support
-      href: unity/legacy-xr-support.md
-    - name: Using the Windows XR plugin
-      href: unity/windows-xr-plugin.md
-    - name: Using the OpenXR Plugin
-      href: unity/openxr-getting-started.md
-    - name: OpenXR plugin supported features
-      href: unity/openxr-supported-features.md
+    - name: Setting up your XR configuration 
+      href: unity/xr-project-setup.md
     - name: Mixed Reality Feature Tool
       items:
         - name: Welcome to the MR Feature Tool
@@ -262,7 +260,7 @@
             href: unity/lunar-module.md
   - name: Debugging and performance
     items:
-      - name: Managed debugging with Unity IL2CPP
+      - name: Managed debugging with Unity
         href: unity/managed-debugging-with-unity-il2cpp.md
       - name: Recommended settings for Unity
         href: unity/recommended-settings-for-unity.md
@@ -274,12 +272,18 @@
         href: unity/exporting-and-building-a-unity-visual-studio-solution.md
       - name: Best practices for working with Unity and Visual Studio
         href: unity/best-practices-for-working-with-unity-and-visual-studio.md
+  - name: Release notes
+    items:
+      - name: Mixed Reality OpenXR plugin
+        href: unity/openxr-release-notes.md
 - name: Unreal
   items:
   - name: Unreal development overview
     href: unreal/unreal-development-overview.md
   - name: Introducing MRTK
     href: unreal/unreal-mrtk-introduction.md
+  - name: Setting up your project 
+    href: unreal/unreal-project-setup.md
   - name: Upgrading projects in Unreal
     href: unreal/unreal-porting.md
   - name: Quickstarts
@@ -358,15 +362,13 @@
         href: unreal/unreal-deploying.md
       - name: Publishing to the Microsoft Store
         href: unreal/unreal-publishing-to-store.md
-- name: JavaScript
+- name: JavaScript  
   items:
-  - name: JavaScript development overview
-    href: javascript/javascript-development-overview.md
-  - name: WebXR
+  - name: JavaScript development overview 
     href: javascript/webxr-overview.md
   - name: Tutorials
     items:
-      - name: Hello World using BabylonJS
+      - name: VR Hello World using BabylonJS
         items:
         - name: 1. Introduction
           href: javascript/tutorials/babylonjs-webxr-helloworld/introduction-01.md
@@ -374,9 +376,9 @@
           href: javascript/tutorials/babylonjs-webxr-helloworld/prepare-scene-02.md
         - name: 3. Interact with 3D object
           href: javascript/tutorials/babylonjs-webxr-helloworld/interact-03.md
-- name: Native
+- name: Custom engine
   items:
-  - name: Native development overview
+  - name: Custom engine development overview
     href: native/directx-development-overview.md
   - name: OpenXR
     items:
@@ -469,9 +471,9 @@
         - name: Holographic Remoting software license terms
           href: /legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
         - name: Holographic Remoting for HoloLens (1st Gen)
-          href:
-        - name: Adding Holographic Remoting
-          href: platform-capabilities-and-apis/add-holographic-remoting.md
+          items:
+            - name: Adding Holographic Remoting
+              href: platform-capabilities-and-apis/add-holographic-remoting.md
     - name: App quality and testing
       items:
         - name: App quality criteria

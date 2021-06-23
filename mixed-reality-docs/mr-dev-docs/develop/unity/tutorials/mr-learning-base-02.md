@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 # 2. Initializing your project and deploying your first application
 
-In this tutorial, you'll learn how to create a new Unity project, configure it for <a href="/windows/mixed-reality/mrtk-unity/" target="_blank">Mixed Reality Toolkit (MRTK)</a> development, and import MRTK. You'll also walk through configuring, building, and deploying a basic Unity scene from Visual Studio to your HoloLens 2. Once you have deployed it to your HoloLens 2, you should see a spatial mapping mesh covering the surfaces that are perceived by the HoloLens. Additionally, you should see indicators on your hands and fingers for hand tracking and a frame rate counter for keeping an eye on app performance.
+In this tutorial, you'll learn how to create a new Unity project, configure it for Mixed Reality Toolkit (MRTK) development, and import MRTK. You'll also walk through configuring, building, and deploying a basic Unity scene from Visual Studio to your HoloLens 2. Once you have deployed it to your HoloLens 2, you should see a spatial mapping mesh covering the surfaces that are perceived by the HoloLens. Additionally, you should see indicators on your hands and fingers for hand tracking and a frame rate counter for keeping an eye on app performance.
 
 ![MRTK](../../../develop/images/Unity_MRTK_MRFT_Flow.png)
 
@@ -67,7 +67,7 @@ In the Import Unity Package window, click the **All** button to ensure all the a
 > [!TIP]
 > The TextMeshPro Essential Resources are required by MRTK's UI elements. You can skip this step if you are not planning to use MRTK's UI elements in your project.
 
-## Importing the Mixed Reality Toolkit
+## Importing the Mixed Reality Toolkit and Configuring the Unity project
 
 To Import Mixed Reality Toolkit into the Unity Project you will have to use [Mixed Reality Feature Tool](../welcome-to-mr-feature-tool.md) which allows  developers to discover, update, and add Mixed Reality feature packages into Unity projects. You can search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing.
 
@@ -77,55 +77,40 @@ Download the latest version of the Mixed Reality Feature Tool from the [Microsof
 > Before you can run the Mixed Reality Feature Tool please install [.NET 5.0 runtime](https://dotnet.microsoft.com/download/dotnet/5.0)
 
 > [!NOTE]
-> The Mixed Reality Feature Tool currently only runs on Windows, For MacOS please follow this [procedure](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html#1-get-the-latest-mrtk-unity-packages) to download and import the Mixed Reality Toolkit into the unity project.
+> The Mixed Reality Feature Tool currently only runs on Windows, For MacOS please follow this [procedure](/windows/mixed-reality/mrtk-unity/configuration/usingupm) to download and import the Mixed Reality Toolkit into the unity project.
 
 Open the executable file **MixedRealityFeatureTool** from the downloaded folder to launch the Mixed Reality Feature Tool.  
 
 ![Opening MixedRealityFeatureTool](images/mr-learning-base/base-02-section4-step1-1.png)
 
-
 [!INCLUDE[](includes/importing-mrtk.md)]
-
-## Configuring the Unity project
-
-### 1. Apply the MRTK Project Configurator settings
-
-After Unity has finished importing the package from the previous section, the MRTK Project Configurator window should appear. If it doesn't, you can manually open it by going to **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project**:
-
-![Unity Configure Unity Project menu path](images/mr-learning-base/base-02-section5-step1-1.png)
-
-In the MRTK Project Configurator window, expand the **Modify Configurations** section, ensure all options are checked, and click the **Apply** button to apply the settings:
-
-![Unity MRTK Project Configurator window](images/mr-learning-base/base-02-section5-step1-2.png)
-
-> [!TIP]
-> Applying the MRTK Default Settings is optional but strongly recommended as it will help configure some recommended Unity settings:
-
-> * Set Single Pass Instanced rendering path: Improves graphics performance by executing the render pipeline for both eyes in the same draw call. To learn more about this topic, you can refer to the [Single-Pass Instanced rendering](/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering) section of MRTK's [Performance](/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering) documentation.
-> * Set default Spatial Awareness layer: Creates a Unity Layer named Spatial Awareness and configures MRTK to use this layer for the spatial awareness mesh. To learn more about Unity Layers, you can refer to Unity's <a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">Customizing Your Workspace</a> documentation.
-
-### 2. Configure additional project settings
-
-[!INCLUDE[](includes/configuring-additional-project-settings.md)]
 
 ## Creating the scene and configuring MRTK
 
-In the Unity menu, select **File** > **New Scene** to create a new scene:
+In the Unity menu, select **File** > **New Scene**:
 
 ![Unity New Scene menu path](images/mr-learning-base/base-02-section6-step1-1.png)
 
-In the Unity menu, select **Mixed Reality Toolkit** > **Add to Scene and Configure...** to add the MRTK to your current scene:
+In the **New Scene** window select **Basic (Built-in)** and click on **create** to create a new scene:
+
+![Unity New Scene window](images/mr-learning-base/base-02-section6-step1-1-newscene.png)
+
+> [!NOTE]
+> Above screenshot is from Unity Version 2020, if you are using Unity 2019 when you click on **create** a new empty scene will be created.
+
+In the Unity menu, select **Mixed Reality** > **Toolkit** > **Add to Scene and Configure...** to add the MRTK to your current scene:
 
 ![Unity Add to Scene and Configure... menu path](images/mr-learning-base/base-02-section6-step1-2.png)
 
-[!INCLUDE[](includes/changing-profile.md)]
+With the **MixedRealityToolkit** object still selected in the Hierarchy window, in the Inspector window, verify that the **MixedRealityToolkit** configuration profile is set to **DefaultMixedRealityToolkitConfigurationProfile**:
+
+![Unity MixedRealityToolkit component with DefaultMixedRealityTookitConfigurationProfile selected](images/mr-learning-base/base-02-section6-step1-3.png)
 
 In the Unity menu, select **File** > **Save As...** to open the Save Scene window:
 
 ![Unity Save As... menu path](images/mr-learning-base/base-02-section6-step1-4.png)
 
-> [!TIP]
-> Reducing the Depth Format to 16-bit is optional but may help improve graphics performance in your project. To learn more about this topic, you can refer to the   <a href="/windows/mixed-reality/mrtk-unity/performance/perf-getting-started.md#single-pass-instanced-rendering" target="_blank">  Depth buffer sharing (HoloLens) </a> section of MRTK's  <a href="/windows/mixed-reality/mrtk-unity/performance/perf-getting-started.md#single-pass-instanced-rendering" target="_blank"> Performance </a> documentation.
+Save the scene in you project under **Asset** > **Scenes**.
 
 ![Unity save scene Save prompt window](images/mr-learning-base/base-02-section6-step1-5.png)
 
@@ -153,7 +138,7 @@ After you have imported the tutorial assets your Project window should look simi
 
 ## Configuring the Scene
 
-In the Project window, navigate to the Assets > MRTK.Tutorials.GettingStarted > Prefabs folder:
+In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** folder:
 
 From the Project window, click-and-drag the **Cube** prefab on to the Hierarchy window, then in the Inspector window configure its **Transform** component as follows
 
@@ -161,7 +146,7 @@ From the Project window, click-and-drag the **Cube** prefab on to the Hierarchy 
 * **Rotation**: X = 0, Y = 0, Z = 0
 * **Scale**: X = 1, Y = 1, Z = 1
 
-![Adding cube to the Scene](images/mr-learning-base/base-02-section8-step1-1.png)
+![Adding cube to the Scene](images/mr-learning-base/base-02-section8-step1-1.PNG)
 
 To focus in on the objects in the scene, you can double-click on the **Cube** object, and then zoom slightly in again:
 
@@ -169,11 +154,11 @@ To interact and grab an object with tracked hands, the object must have Collider
 
 With the **Cube** still selected in the Hierarchy window, in the Inspector window ,click on **Add Component** button, then search and select **Object Manipulator** script to add the Object Manipulator script to the cube object.
 
-![adding Object manupulator to the cube](images/mr-learning-base/base-02-section8-step1-2.png)
+![adding Object manupulator to the cube](images/mr-learning-base/base-02-section8-step1-2.PNG)
 
 Repeat the same to add **Near Interaction Grabbable script** to the cube
 
-![adding Near Interaction Grabable to the cube](images/mr-learning-base/base-02-section8-step1-3.png)
+![adding Near Interaction Grabable to the cube](images/mr-learning-base/base-02-section8-step1-3.PNG)
 
 > [!NOTE]
 > When you add a Object Manipulator (Script), in this case, the Constraint Manager (Script) is automatically added because Object Manipulator (Script) depends on it.
@@ -183,7 +168,7 @@ Repeat the same to add **Near Interaction Grabbable script** to the cube
 
 To test this in the Unity editor, you can enter the play mode and hold the **LeftShift** or **Space** key to enable the controller, Mouse movement will move the controller and also it can be moved further or closer to the camera using the mouse wheel. Once the pointer is on the Cube  press and hold **Left Mouse Button** to move the the Cube object.
 
-![Game Mode](images/mr-learning-base/base-02-section8-step1-4.png)
+![Game Mode](images/mr-learning-base/base-02-section8-step1-4.PNG)
 
 ## Building your application to your HoloLens 2
 
@@ -219,8 +204,8 @@ Configure Visual Studio for HoloLens by selecting the **Master** or **Release** 
 > [!TIP]
 > If you're deploying to HoloLens (1st generation), select the **x86** architecture.
 
-> [!TIP]
-> If you're deploying to a WMR Headset, select the **x64** architecture and **Local Machine** as target.
+> [!NOTE]
+> For HoloLens, you will typically build for the ARM architecture. However, there is a  <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank"><strong>known issue</strong></a> in Unity 2019.3 that causes errors when selecting ARM as the build architecture in Visual Studio. The recommended workaround is to build for ARM64. If that is not an option, go to **Edit > Project Settings > Player > Other Settings** and disable **Graphics Jobs**.
 
 > [!NOTE]
 > If you don't see Device as a target option, you may need to change the startup project for the Visual Studio solution from the IL2CPP project to the UWP project. To do this, in the Solution Explorer, right-click on YourProjectName (Universal Windows) and select **Set as StartUp Project**.

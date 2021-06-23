@@ -1,5 +1,4 @@
 ---
-layout: LandingPage
 title: Learn the tools and architecture
 description: Learn about the mixed reality development tools you'll need to get started making apps for HoloLens and immersive headsets.
 author: grbury
@@ -16,27 +15,30 @@ keywords: Mixed Reality, develop, development, HoloLens, unity, unreal, directx,
 
 Mixed Reality is a big place, a nexus where real and virtual worlds collide with a bang. The possibilities are endless, and it starts with you. Choose your engine, download your tools, and dust off your keyboard. Welcome to the Mixed Reality ecosystem - it's time to create.
 
-## Development options
+We have three possible paths for starting out in mixed reality development, each of which is described in it's own section below:
+* [Microsoft Learn](#microsoft-learn)
+* [Mixed Reality Toolkit tutorial series](#mixed-reality-toolkit-tutorials)
+* [Self-guided exploration](#self-guided-exploration)
 
-**Unity** - Unity is one of the leading real-time development platforms on the market, with underlying runtime code written in C++ and all development scripting is done in C#. Whether you're looking to build games, movies and animation cinematics, or even render architectural or engineering concepts in a virtual world, Unity has the infrastructure to support you.
+## Microsoft Learn
 
-**Unreal** - Unreal Engine 4 is a powerful, open source creation engine with full support for mixed reality in both C++ and Blueprints. As of Unreal Engine 4.25, HoloLens support is full-featured and production-ready. With capabilities such as the flexible Blueprints Visual Scripting system, designers can virtually use the full range of concepts and tools generally only available to programmers. Creators across industries can leverage the freedom and control to deliver cutting-edge content, interactive experiences, and immersive virtual worlds.
+Microsoft Learn is where everyone comes to learn. Discover new skills, find certifications, and advance your career in minutes with interactive, hands-on learning paths.
 
-**Native (OpenXR)** - OpenXR is an open royalty-free API standard from Khronos that provides engines native access to a wide range of devices from vendors across the mixed reality spectrum. You can develop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive headset on the desktop. If you don't have access to a headset, emulators for HoloLens 2 and Windows Mixed Reality headsets are available.
+Our Learn modules help you become proficient in Mixed Reality development, offering a module-based structure to get you started with key tools like Mixed Reality Toolkit, Unity, and Azure mixed reality services. Getting to Hello World has never been clearer, as we lay out the Learning Objectives, Prerequisites, and set time to completion expectations all in one interface.
 
-## What technology path are you interested in? 
+> [!div class="nextstepaction"]
+> [Introduction to Mixed Reality on Microsoft Learn](/learn/modules/intro-to-mixed-reality)
 
-There are several development paths you can take through our documentation. The first step is finding the technology that's right for you. If you already have one in mind, go ahead and jump right to its respective tab below. If you're on the fence or just starting out, take a look through each one and understand what they offer, the available platforms and tools, and start creating!
+## Mixed Reality Toolkit tutorials
 
-> [!IMPORTANT]
-> Take a look at our **[porting guides overview](porting-apps/porting-overview.md)** if you have existing projects that you want to bring over to HoloLens 2 or immmersive VR headsets like the Reverb G2. We have guides for projects that are using HTK, MRTK v1, SteamVR or were developed for immersive headsets such as the Oculus Rift or HTC Vive.
+If you're more of a learn-by-doing user, check out our Mixed Reality Toolkit (MRTK) tutorial series. You'll build a mixed reality experience where the user can explore a hologram modeled after NASA's Mars Curiosity Rover and get a firm grasp of MRTK and how it can speed up your development process.
 
-[!INCLUDE[](includes/tech-path-overview.md)]
+> [!div class="nextstepaction"]
+> [MRTK tutorials](unity/tutorials/mr-learning-base-01.md)
 
-## What's next?
+## Self-guided exploration
 
-Now that you have a technology path in mind, let's equip you with the tools you need to start your journey.
+If you're a seasoned developer and want to get right into our docs, start by installing the required tools. From there, choose your Unity development setup and follow our curated Unity development path with HoloLens or browse around our content library.
 
 > [!div class="nextstepaction"]
 > [Install the tools](install-the-tools.md)
-

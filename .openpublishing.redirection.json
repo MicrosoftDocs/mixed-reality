@@ -908,8 +908,13 @@
 			"redirect_document_id": true
 		},
 		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/galaxy-explorer-update.md",
-			"redirect_url": "/windows/mixed-reality/develop/unity/galaxy-explorer-update",
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/openxr-supported-features.md",
+			"redirect_url": "/windows/mixed-reality/develop/unity/motion-controllers-in-unity",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/openxr-getting-started.md",
+			"redirect_url": "/windows/mixed-reality/develop/unity/xr-project-setup",
 			"redirect_document_id": true
 		},
 		{

@@ -13,7 +13,7 @@ keywords: Unity, mixed reality, development, getting started, new project, porti
 
 ![Unity banner logo](../images/unity_logo_banner.png)
 
-The fastest path to building a HoloLens [mixed reality app](../../design/app-views.md) in [Unity](https://unity.com) is with the Mixed Reality Toolkit. If you're brand new to Unity, we recommend that you explore the beginner level [tutorials](https://unity3d.com/learn/tutorials) on the Unity Learn platform before continuing. It's also a good idea to visit the comprehensive [Asset Store](https://assetstore.unity.com) and the [Unity Mixed Reality forums](https://forum.unity3d.com/forums/hololens.102/) to engage with the online community building mixed reality apps. You never know what cool assets or solutions you might find out in the wild. When you're ready to get started with MRTK head to the development checkpoints below!
+Unity is one of the leading real-time development platforms on the market, with underlying runtime code written in C++ and all development scripting is done in C#. Whether you're looking to build games, movies and animation cinematics, or even render architectural or engineering concepts in a virtual world, Unity has the infrastructure to support you. When you're ready to get started, head to the development checkpoints below!
 
 > [!IMPORTANT]
 > Take a look at our **[porting guides](../porting-apps/porting-overview.md)** if you have an existing Unity project that you want to bring over to HoloLens 2. We have guides for projects that are using HTK, MRTK v1, or SteamVR.
@@ -78,11 +78,15 @@ Once you've got your holographic Unity project ready for testing, your next step
 
 ## 5. Adding services
 
-At this point in your development journey you might be looking to add services or for a helping hand with commercial deployment. Integrating [Azure Cloud Services](../mixed-reality-cloud-services.md) and Dynamics 365 features can level up your projects in a major way. We've compiled a few starting points for you to explore and expand your Mixed Reality knowledge.
+At this point in your development journey you might be looking to add services or for a helping hand with commercial deployment. Integrating [Azure Cloud Services](../mixed-reality-cloud-services.md) can level up your projects in a major way. We've compiled a few starting points for you to explore and expand your Mixed Reality knowledge.
 
 [!INCLUDE[](../includes/unity-cloud-services-d365.md)]
 
 We also have a [comprehensive list of support documentation for additional Azure services](../mixed-reality-cloud-services.md#standalone-unity-services) that you can add to your Unity projects on a self-serve basis.
+
+## 6. Low-code alternatives
+
+[!INCLUDE[](../includes/unity-low-code.md)]
 
 ## What's next?
 
@@ -108,9 +112,9 @@ Before going out into the world of mixed reality on your own, we recommend takin
 
 |  Topic  |  Description  |
 | --- | --- |
-| [MRTK Architecture overview](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/architecture/overview) | Get a deeper understanding of how the MRTK SDK works in your projects |
-| [Settings and performance](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started) | Profile your app, update your Unity settings, and get the best hologram stabilization performance available |
-| [Getting started with MRTK + XR](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk) | Transfer over to the alternative XR pipeline provided by Unity |
+| [MRTK Architecture overview](/windows/mixed-reality/mrtk-unity/architecture/overview) | Get a deeper understanding of how the MRTK SDK works in your projects |
+| [Settings and performance](/windows/mixed-reality/mrtk-unity/performance/perf-getting-started) | Profile your app, update your Unity settings, and get the best hologram stabilization performance available |
+| [Getting started with MRTK + XR](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk) | Transfer over to the alternative XR pipeline provided by Unity |
 
 ### Unity resources
 
@@ -132,7 +136,7 @@ You can find us on the [Unity Forums](https://aka.ms/unityforums) by tagging **M
 * Windows Mixed Reality
 * OpenXR
 * XRSDK
-* Legacy XR 
+* Legacy XR
 
 ## See also
 

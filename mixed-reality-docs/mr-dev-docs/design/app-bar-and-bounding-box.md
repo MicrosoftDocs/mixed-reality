@@ -61,7 +61,7 @@ Bounding is the standard interface for object manipulation in Mixed Reality. Thi
 
 <br>
 
-**For Unity app development, see [Bounding box in the Mixed Reality Toolkit-Unity.](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)**
+**For Unity app development, see [Bounding box in the Mixed Reality Toolkit-Unity.](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounding-box)**
 
 <br>
 

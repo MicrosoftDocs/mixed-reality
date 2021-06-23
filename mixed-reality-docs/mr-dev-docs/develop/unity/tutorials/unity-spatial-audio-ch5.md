@@ -23,11 +23,11 @@ In previous tutorial, you have added spatialization for the sounds to give them 
 
 In [Spatializing button interaction sounds Tutorial](unity-spatial-audio-ch2.md), we added a mixer. The mixer includes one **Group** by default called **Master**. Because we'll only want to apply a reverb effect to some sounds, let's add a second Group for those sounds. To add a Group, right click on the Master group in the **Audio Mixer** choose **Add child group** and give suitable name for example _Room Effect_:
 
-![Add child group](images/spatial-audio/spatial-audio-05-section1-step1-1.png)
+![Add child group](images/spatial-audio/spatial-audio-05-section1-step1-1.PNG)
 
 Each **Group** has its own set of effects. Add a reverb effect to the new group by clicking **Add...** on the new group, and choosing **SFX Reverb**:
 
-![Add SFX Reverb](images/spatial-audio/spatial-audio-05-section1-step1-2.png)
+![Add SFX Reverb](images/spatial-audio/spatial-audio-05-section1-step1-2.PNG)
 
 In audio terminology, the original, unreverberated audio is called the _dry path_, and the audio after filtering with the reverb filter is called the _wet path_. Both paths are sent to the audio output, and their relative strengths in this mixture is called the _wet/dry mix_. The wet/dry mix strongly affects the sense of distance.
 
@@ -36,7 +36,7 @@ The **SFX Reverb** includes controls to adjust the wet/dry mix within the effect
 * Set the **Dry Level** property to the lowest setting (-10000 mB)
 * Set the **Room property** to the highest setting (0 mB)
 
-![SFX Reverb properties](images/spatial-audio/spatial-audio-05-section1-step1-3.png)
+![SFX Reverb properties](images/spatial-audio/spatial-audio-05-section1-step1-3.PNG)
 
 The other settings control the feel of the simulated room. In particular, **Decay Time** is related to perceived room size.
 
@@ -51,14 +51,14 @@ In the following steps, you will adjust the script to control the audio routing,
 
 With the **Quad** selected in the Hierarchy click **Add Component** On the Inspector window and add the **Room Effect Send Level(Script)**:
 
-![Add send level script](images/spatial-audio/spatial-audio-05-section2-step1-1.png)
+![Add send level script](images/spatial-audio/spatial-audio-05-section2-step1-1.PNG)
 
 > [!NOTE]
 > Unless you enable **Room Effect Send Level** feature of the **Microsoft Spatializer** plugin, it doesn't send any audio back to the Unity audio engine for effect processing.
 
 The **Room Effect Send Level** component includes a graph control that sets the level of the audio sent to the Unity audio engine for reverb processing. To open the graph control, click on the **Room Effect Send Level**.  Click and drag the green curve downwards to set the level to about -30dB:
 
-![Adjust reverb curve](images/spatial-audio/spatial-audio-05-section2-step1-2.png)
+![Adjust reverb curve](images/spatial-audio/spatial-audio-05-section2-step1-2.PNG)
 
 Next, uncomment the 4 commented lines in the **SpatializeOnOff** script. The script will now look like this:
 
@@ -124,7 +124,7 @@ With the Quad object still selected in the Hierarchy , in the Inspector window l
 * Set the **Room Effect Group** property to your new Room Effect mixer group
 * Set the **Master Group** property to the Master mixer group
 
-![Spatialize On Off Extended](images/spatial-audio/spatial-audio-05-section2-step1-3.png)
+![Spatialize On Off Extended](images/spatial-audio/spatial-audio-05-section2-step1-3.PNG)
 
 ## Congratulations
 

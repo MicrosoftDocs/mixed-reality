@@ -1,5 +1,5 @@
 ---
-title: Android and iOS MRTK Configuration (ARFoundation)
+title: Building and Deploying to Android and iOS via AR Foundation
 description: Documentation to configure MRTK for Android and iOS (ARFoundation) in unity
 author: davidkline-ms
 ms.author: davidkl
@@ -7,11 +7,11 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, AR Core, AR Kit, iOS, IOS, Android, AR Foundation
 ---
 
-# How to configure MRTK for iOS and Android [Experimental]
+# Building and Deploying to Android and iOS via AR Foundation [Experimental]
 
 ## Install required packages
 
-1. Download and import the **Microsoft.MixedReality.Toolkit.Unity.Foundation** package, from [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/tag/v2.3.0) or the [Unity Package Manager](../configuration/usingupm.md)
+1. Download and import the **Microsoft.MixedReality.Toolkit.Unity.Foundation** package, from [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/) or the [Unity Package Manager](../configuration/usingupm.md)
 
 1. In the Unity Package Manager (UPM), install the following packages:
 
@@ -29,12 +29,12 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, AR Core,
     | AR Foundation  <br/> Version: 2.1.8 |  AR Foundation  <br/> Version: 2.1.8 |
     | ARCore XR Plugin <br/> Version: 2.1.11 | ARKit XR Plugin <br/> Version: 2.1.9 |
 
-    **Unity 2020.1.x (Not currently formally supported, included for informational purposes only)**
+    **Unity 2020.3.x**
 
     | **Android** | **iOS** |
     | --- | --- |
-    | AR Foundation  <br/> Version: 3.1.3 |  AR Foundation  <br/> Version: 3.1.3 |
-    | ARCore XR Plugin <br/> Version: 3.1.4 | ARKit XR Plugin <br/> Version: 3.1.3 |
+    | AR Foundation  <br/> Version: 3.1.3 |  AR Foundation  <br/> Version: 4.0.12 |
+    | ARCore XR Plugin <br/> Version: 3.1.4 | ARKit XR Plugin <br/> Version: 4.1.7 |
 
 1. Update the MRTK UnityAR scripting defines by invoking the menu item: **Mixed Reality > Toolkit > Utilities > UnityAR > Update Scripting Defines**
 
