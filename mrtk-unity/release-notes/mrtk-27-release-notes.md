@@ -11,6 +11,13 @@ monikerRange: '>= mrtkunity-2021-05'
 
 # Microsoft Mixed Reality Toolkit 2.7 Release Notes
 
+## What's new in 2.7.2
+
+### Fixed a UPM package dependency issue
+
+There is an issue with MRTK 2.7.1 UPM packages where the dependencies were not set up correctly. The issue caused the Mixed Reality Feature Tool to fail to import MRTK 2.7.1 packages properly. The issue is now resolved in 2.7.2. There is no code change in this version compared to 2.7.1.
+
+
 ## What's new in 2.7.1
 
 ### Show version
