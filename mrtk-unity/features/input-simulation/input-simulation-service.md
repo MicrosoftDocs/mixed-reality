@@ -36,6 +36,13 @@ Input simulation is enabled by default in the profiles that ship with MRTK. You 
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4OYrm]
 
+## In editor input simulation cheat sheet
+
+Press **Left Ctrl + H** in the HandInteractionExamples scene to bring up a cheat sheet with Input simulation controls.
+
+> ![MRTK Input Simulation Cheat Sheet](../images/input-simulation/MRTK_InputSimulation_CheatSheet.png)
+
+
 ## Enabling the input simulation service
 
 Under the Input System Data provider configuration, the Input Simulation service can be configured with the following.
@@ -46,13 +53,6 @@ Under the Input System Data provider configuration, the Input Simulation service
 > [!NOTE]
 > The Input Simulation service can be used on other platform endpoints such as standalone by changing the **Supported Platform(s)** property to include the desired targets.
 > <br/><img src="../images/input-simulation/InputSimulationSupportedPlatforms.gif" alt="Input Simulation Supported Platforms" width="550px">
-
-## In editor input simulation cheat sheet
-
-Press Left Ctrl + H in the HandInteractionExamples scene to bring up a cheat sheet with Input simulation controls.
-
-> ![MRTK Input Simulation Cheat Sheet](../images/input-simulation/MRTK_InputSimulation_CheatSheet.png)
-
 
 ## Camera control
 
