@@ -11,7 +11,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 ![MRTK Input Simulation](../images/input-simulation/MRTK_InputSimulation_Hero.jpg)
 
-With MRTK's input simulation, you can test various types of interactions in the Unity editor without building and deploying to a device. This allows you quickly iterate your ideas in the design and development process. Use keyboard and mouse combination to control simulated inputs.
+With MRTK's input simulation, you can test various types of interactions in the Unity editor without building and deploying to a device. This allows you quickly iterate your ideas in the design and development process. Use keyboard and mouse combinations to control simulated inputs.
 
 The Input Simulation Service emulates the behavior of devices and platforms that may not be available in the Unity editor. Examples include:
 
