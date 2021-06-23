@@ -1,10 +1,10 @@
 ---
-title: MRTK 2.6 Release Notes
-description: Release notes of the MRTK version 2.6
+title: MRTK 2.6 release notes
+description: Release notes for MRTK version 2.6
 author: polar-kev
 ms.author: kesemple
 ms.date: 05/27/2021
-keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
 # Microsoft Mixed Reality Toolkit 2.6 Release Notes
@@ -37,6 +37,7 @@ Updates the scene understanding sample scene to correctly reflect the shipped st
 Updates the dialog example scene to correctly describe the current dialog scenarios.
 
 ## What's new in 2.6.0
+
 <iframe width="940" height="530" src="https://www.youtube.com/embed/qfONlUCSWdg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 
@@ -63,7 +64,7 @@ Interactive Element is a simplified centralized entry point to the MRTK input sy
 
 ![InteractiveElementAddCoreState](../features/images/interactive-element/InEditor/Gifs/InspectorHighlightEditor.gif)
 
-The State Visualizer is an animation component that depends on Interactive Element.  This component creates Animation Clips, sets keyframes and generates an Animator State Machine. For more information see [State Visualizer Documentation](../features/experimental/interactive-element.md#state-visualizer-experimental)
+The State Visualizer is an animation component that depends on Interactive Element. This component creates Animation Clips, sets keyframes and generates an Animator State Machine. For more information see [State Visualizer Documentation](../features/experimental/interactive-element.md#state-visualizer-experimental)
 
 ![StateVisualizerColorChangeOnFocus](../features/images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
 
@@ -73,7 +74,7 @@ Users can now use the teleport gesture to move around their play space across al
 articulated hands, make a gesture with your palm facing up with the index and thumb sticking outwards, completing the teleport by curling the index finger. To teleport with input simulation, please
 see our updated [Input Simulation Service documentation](../features/input-simulation/input-simulation-service.md).
 
-  ![Teleport Gesture](../features/images/teleport/handteleport.gif)
+![Teleport Gesture](../features/images/teleport/handteleport.gif)
 
 ### Scene Understanding now available in MRTK as an experimental spatial awareness observer
 
@@ -85,7 +86,7 @@ Experimental support of [Scene Understanding](/windows/mixed-reality/scene-under
 > This feature requires the Scene Understanding package, which is now available via the [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool).
 > When using the Mixed Reality Feature Tool or otherwise importing via UPM, please import the Demos - SpatialAwareness sample before importing the Experimental - SceneUnderstanding sample due to a dependency issue. Please see [this GitHub issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431) for more information.
 
-  ![Scene Understanding](images/SceneUnderstanding.gif)
+![Scene Understanding](images/SceneUnderstanding.gif)
 
 ### Runtime profile switching support
 
@@ -95,18 +96,19 @@ MRTK now allows profile switching both before the initialization of the MRTK ins
 
 Two new solvers are ready for use with mainline MRTK.
 
-  ![Directional Indicator Solver](images/DirectionalIndicatorExampleScene.gif)
+![Directional Indicator Solver](images/DirectionalIndicatorExampleScene.gif)
 
 ### Hand Coach graduated from experimental
 
 The Hand Coach feature is now ready for use with mainline MRTK.
-  ![Hand Coach Example](/windows/mixed-reality/design/images/handcoach/airtap.gif)
+
+![Hand Coach Example](/windows/mixed-reality/design/images/handcoach/airtap.gif)
 
 ### Dialog controls graduated from experimental
 
 Dialog controls are now ready for use with mainline MRTK.
 
-  ![Dialog Controls](https://user-images.githubusercontent.com/13754172/101927792-3326e200-3c18-11eb-88d3-44b4b50c7f7d.png)
+![Dialog Controls](https://user-images.githubusercontent.com/13754172/101927792-3326e200-3c18-11eb-88d3-44b4b50c7f7d.png)
 
 ### Pulse shader graduated from experimental
 
@@ -122,13 +124,13 @@ The Pulse shader scripts have graduated from experimental. For more information 
 
 Added support for [reading mode](/hololens/hololens2-display#what-improvements-are-coming-that-will-improve-hololens-2-image-quality) on HoloLens 2. Reading mode reduces the system's field of view but eliminates a scaling of Unity's output. A pixel rendered by Unity will correspond to a projected pixel on HoloLens 2. Application authors should do tests with multiple individuals to be sure this is a tradeoff they want in their app.
 
-  ![Windows Mixed Reality reading mode](images/WMRReadingMode.gif)
+![Windows Mixed Reality reading mode](images/WMRReadingMode.gif)
 
 ### Support for 3D app launchers on UWP
 
 Adds the ability to set a [3D app launcher](/windows/mixed-reality/distribute/3d-app-launcher-design-guidance) for UWP. This setting is exposed both in the MRTK Build Window and the MRTK Project Settings, under Build Settings. It's automatically written into the project during the build in Unity.
 
-  ![Build settings](images/ProjectBuildSettings.png)
+![Build settings](images/ProjectBuildSettings.png)
 
 ## Breaking changes
 
@@ -149,7 +151,7 @@ Support for MSBuild for Unity has been removed as of the 2.5.2 release, to align
 ### OpenXR
 
 There's currently a known issue with Holographic Remoting and OpenXR, where hand joints aren't consistently available.
-Additionally, the eye tracking sample scenes aren't currently compatible, though eye tracking *does* work.
+Additionally, the eye tracking sample scenes aren't currently compatible, though eye tracking _does_ work.
 
 ### Some Mixed Reality Toolkit Standard Shader features require the Foundation package
 
@@ -189,7 +191,7 @@ This error is due to the Scene Transition Service's configuration profile being 
 
 ### Oculus Quest
 
-There is currently a known issue for using the [Oculus XR plugin with when targeting Standalone platforms](https://forum.unity.com/threads/unable-to-start-oculus-xr-plugin.913883/).  Check the Oculus bug tracker/forums/release notes for updates.
+There is currently a known issue for using the [Oculus XR plugin with when targeting Standalone platforms](https://forum.unity.com/threads/unable-to-start-oculus-xr-plugin.913883/). Check the Oculus bug tracker/forums/release notes for updates.
 
 The bug is signified with this set of 3 errors:
 
