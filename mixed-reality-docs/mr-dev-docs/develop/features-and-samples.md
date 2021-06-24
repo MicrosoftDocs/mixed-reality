@@ -31,7 +31,7 @@ For developers targeting Unity 2020 to build HoloLens 2 or Mixed Reality applica
 
 | Reference article | Sample |
 | --- | --- |
-| [Using the OpenXR plugin](unity/openxr-getting-started.md) | [Mixed Reality OpenXR with Unity samples](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) |
+| [Using the OpenXR plugin](./unity/xr-project-setup.md) | [Mixed Reality OpenXR with Unity samples](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) |
 | N/A | [OpenXR MRTK Base Unity project](https://github.com/microsoft/UnityOpenXRMRTKBase) |
 
 ### Research Mode

@@ -163,14 +163,14 @@ We distinguish two types of imprecisions, which are noticeable to users: offset 
 
 This page provided you with a good overview to get you started understanding eye-gaze as an input in mixed reality. 
 To get started developing, check out our information on 
-[eye-gaze in Unity](https://aka.ms/mrtk-eyes) and 
+[eye-gaze in Unity](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main) and 
 [eye-gaze in DirectX](../develop/native/gaze-in-directx.md).
 
 
 ## See also
 * [Comfort](comfort.md)
 * [Eye-gaze in DirectX](../develop/native/gaze-in-directx.md)
-* [Eye-gaze in Unity (Mixed Reality Toolkit)](https://aka.ms/mrtk-eyes)
+* [Eye-gaze in Unity (Mixed Reality Toolkit)](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)
 * [Eye tracking on HoloLens 2](eye-tracking.md)
 * [Gaze and commit](gaze-and-commit.md)
 * [Gaze and dwell](gaze-and-dwell.md)
