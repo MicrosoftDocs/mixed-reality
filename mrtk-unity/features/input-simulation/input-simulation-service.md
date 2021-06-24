@@ -9,6 +9,10 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Input simulation service
 
+![MRTK Input Simulation](../images/input-simulation/MRTK_InputSimulation_Hero.jpg)
+
+With MRTK's input simulation, you can test various types of interactions in the Unity editor without building and deploying to a device. This allows you quickly iterate your ideas in the design and development process. Use keyboard and mouse combinations to control simulated inputs.
+
 The Input Simulation Service emulates the behavior of devices and platforms that may not be available in the Unity editor. Examples include:
 
 * HoloLens or VR device head tracking
@@ -17,14 +21,29 @@ The Input Simulation Service emulates the behavior of devices and platforms that
 * HoloLens 2 eye tracking
 * VR device controllers
 
-Users can use a conventional keyboard and mouse combination to control simulated devices at runtime. This approach allows testing of interactions in the Unity editor without first deploying to a device.
-
 > [!WARNING]
 > This does not work when using Unity's XR Holographic Emulation > Emulation Mode = "Simulate in Editor". Unity's in-editor simulation will take control away from MRTK's input simulation. In order to use the MRTK input simulation service, you will need to set XR Holographic Emulation to Emulation Mode = *"None"*
 
-## Enabling the input simulation service
+## How to use MRTK Input simulation 
 
-Input simulation is enabled by default in the profiles that ship with MRTK.
+Input simulation is enabled by default in the profiles that ship with MRTK. You can simply click **Play** button to run the scene with input simulation support.
+
+* Press **W, A, S, D, Q, E** keys to move the camera.
+* Hold the **Right mouse button** and move the mouse to look around.
+* To bring up the simulated hands, press **Space bar(Right hand)** or **Left Shift key(Left hand)**
+* To keep simulated hands in the view, press **T** or **Y** key
+* To rotate simulated hands, press and hold **Ctrl key** and move mouse
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4OYrm]
+
+## In editor input simulation cheat sheet
+
+Press **Left Ctrl + H** in the HandInteractionExamples scene to bring up a cheat sheet with Input simulation controls.
+
+> ![MRTK Input Simulation Cheat Sheet](../images/input-simulation/MRTK_InputSimulation_CheatSheet.png)
+
+
+## Enabling the input simulation service
 
 Under the Input System Data provider configuration, the Input Simulation service can be configured with the following.
 
@@ -33,31 +52,7 @@ Under the Input System Data provider configuration, the Input Simulation service
 
 > [!NOTE]
 > The Input Simulation service can be used on other platform endpoints such as standalone by changing the **Supported Platform(s)** property to include the desired targets.
-> ![Input Simulation Supported Platforms](../images/input-simulation/InputSimulationSupportedPlatforms.gif)
-
-## Input simulation tools window
-
-Enable the input simulation tools window from the  **Mixed Reality Toolkit** > **Utilities** > **Input Simulation** menu. This window provides access to the state of input simulation during play mode.
-
-## Viewport buttons
-
-A prefab for in-editor buttons to control basic hand placement can be specified in the input simulation profile under **Indicators Prefab**. This is an optional utility, the same features can be accessed in the [input simulation tools window](#input-simulation-tools-window).
-
-> [!NOTE]
-> The viewport indicators are disabled by default, as they currently can sometimes interfere with Unity UI interactions. See issue [#6106](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/6106). To enable, add the InputSimulationIndicators prefab to **Indicators Prefab**.
-
-Hand icons show the state of the simulated hands:
-
-* ![Untracked hand icon](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Untracked.png) The hand is not tracking. Click to enable the hand.
-* ![Tracked hand icon](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Tracked.png "Tracked hand icon") The hand is tracked, but not controlled by the user. Click to hide the hand.
-* ![Controlled hand icon](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Controlled.png "Controlled hand icon") The hand is tracked and controlled by the user. Click to hide the hand.
-* ![Reset hand icon](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Reset.png "Reset hand icon") Click to reset the hand to default position.
-
-## In editor input simulation cheat sheet
-
-Press Left Ctrl + H in the HandInteractionExamples scene to bring up a cheat sheet with Input simulation controls.
-
-![Input Simulation Cheat Sheet](https://user-images.githubusercontent.com/39840334/86066480-13637f00-ba27-11ea-8814-d222d548f684.gif)
+> <br/><img src="../images/input-simulation/InputSimulationSupportedPlatforms.gif" alt="Input Simulation Supported Platforms" width="550px">
 
 ## Camera control
 
@@ -206,6 +201,25 @@ The simulated motion controllers can be manipulated the same way articulated han
 [Eye tracking simulation](../input/eye-tracking/eye-tracking-basic-setup.md#simulating-eye-tracking-in-the-unity-editor) can be enabled by checking the **Simulate Eye Position** option in the
 [Input Simulation Profile](#enabling-the-input-simulation-service). This should not be used with GGV or motion controller
 style interactions (so ensure that **Default Controller Simulation Mode** is set to *Articulated Hand*).
+
+## Input simulation tools window
+
+Enable the input simulation tools window from the  **Mixed Reality** > **Toolkit** > **Utilities** > **Input Simulation** menu. This window provides access to the state of input simulation during play mode.
+
+## Viewport buttons (optional)
+
+A prefab for in-editor buttons to control basic hand placement can be specified in the input simulation profile under **Indicators Prefab**. This is an optional utility, the same features can be accessed in the [input simulation tools window](#input-simulation-tools-window).
+
+> [!NOTE]
+> The viewport indicators are disabled by default, as they currently can sometimes interfere with Unity UI interactions. See issue [#6106](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/6106). To enable, add the InputSimulationIndicators prefab to **Indicators Prefab**.
+
+Hand icons show the state of the simulated hands:
+
+* ![Untracked hand icon](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Untracked.png) The hand is not tracking. Click to enable the hand.
+* ![Tracked hand icon](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Tracked.png "Tracked hand icon") The hand is tracked, but not controlled by the user. Click to hide the hand.
+* ![Controlled hand icon](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Controlled.png "Controlled hand icon") The hand is tracked and controlled by the user. Click to hide the hand.
+* ![Reset hand icon](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Reset.png "Reset hand icon") Click to reset the hand to default position.
+
 
 ## See also
 
