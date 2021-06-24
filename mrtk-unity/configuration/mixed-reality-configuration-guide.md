@@ -9,8 +9,6 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Mixed Reality Toolkit profile configuration guide
 
-![MRTK logo](../features/images/MRTK_Logo_Rev.png)
-
 The Mixed Reality Toolkit centralizes as much of the configuration required to manage the toolkit as possible (except for true runtime "things").
 
 This guide is a simple walkthrough for each of the configuration profile screens currently available for the toolkit.

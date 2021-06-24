@@ -36,7 +36,7 @@ The best way to install and manage Unity is through the <a href="https://unity3d
 To get started with Legacy Built-in XR in Unity 2019.4 LTS, click here:
 
 > [!div class="nextstepaction"]
-> [Set up Legacy Built-in XR](/windows/mixed-reality/develop/unity/xr-project-setup?tabs=legacy)
+> [Set up Legacy Built-in XR](./xr-project-setup.md?tabs=legacy)
 
 > [!NOTE]
 > Unity has deprecated its Legacy Built-in XR support as of Unity 2019.  While Unity 2019 does offer a new XR Plug-in framework, Microsoft is not currently recommending that path in Unity 2019 due to Azure Spatial Anchors incompatibilities with AR Foundation 2.  In Unity 2020, Azure Spatial Anchors is supported within the XR Plug-in framework.
@@ -56,7 +56,7 @@ However, there are known issues that affect Unity 2020 LTS projects:
 If you choose to start a new project in Unity 2020 today, be sure to follow up over the coming weeks for updated Unity builds and URP packages before shipping your app.  This will ensure that your users experience proper hologram stability.
 
 > [!div class="nextstepaction"]
-> [Using the OpenXR plugin](/windows/mixed-reality/develop/unity/xr-project-setup?tabs=openxr)
+> [Using the OpenXR plugin](./xr-project-setup.md?tabs=openxr)
 
 ## Unity 2021.1
 

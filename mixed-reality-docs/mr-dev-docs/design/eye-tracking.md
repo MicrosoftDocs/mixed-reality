@@ -71,7 +71,7 @@ To learn more about the calibration and about how to ensure a smooth experience,
 
 Before going into detail about specific use cases for eye-gaze input, we want to briefly point out the capabilities that the HoloLens 2 [Eye Tracking API](/uwp/api/windows.perception.people.eyespose) provides. 
 Developers get access to a single eye-gaze ray (gaze origin and direction) at approximately _30 FPS (30 Hz)_.
-For more detailed information about how to access eye tracking data, refer to our developer guides for using [eye-gaze in DirectX](../develop/native/gaze-in-directx.md) and [eye-gaze in Unity](https://aka.ms/mrtk-eyes).
+For more detailed information about how to access eye tracking data, refer to our developer guides for using [eye-gaze in DirectX](../develop/native/gaze-in-directx.md) and [eye-gaze in Unity](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main).
 
 The predicted eye-gaze is approximately within 1.5 degrees in visual angle around the actual target (see the illustration below). 
 As slight imprecisions are expected, developers should plan for some margin around this lower-bound value (for example, 2.0-3.0 degrees may result in a much more comfortable experience). 
@@ -197,7 +197,7 @@ Again, we recommend to clearly communicate this to the user who may be unaware t
 
 This page has hopefully provided you with a good overview to get you started understanding the role of eye tracking and eye-gaze input for HoloLens 2. 
 To get started developing, check out our information on the role of [eye-gaze for interacting with holograms](eye-gaze-interaction.md),
-[eye-gaze in Unity](https://aka.ms/mrtk-eyes) and 
+[eye-gaze in Unity](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main) and 
 [eye-gaze in DirectX](../develop/native/gaze-in-directx.md).
 
 ## See also
@@ -206,6 +206,6 @@ To get started developing, check out our information on the role of [eye-gaze fo
 * [Comfort](comfort.md)
 * [Eye-gaze-based interaction](eye-gaze-interaction.md)
 * [Eye-gaze in DirectX](../develop/native/gaze-in-directx.md)
-* [Eye-gaze in Unity (Mixed Reality Toolkit)](https://aka.ms/mrtk-eyes)
+* [Eye-gaze in Unity (Mixed Reality Toolkit)](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)
 * [Gaze and commit](gaze-and-commit.md)
 * [Voice input](../out-of-scope/voice-design.md)

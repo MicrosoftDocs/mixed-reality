@@ -42,7 +42,7 @@ By the end of this module, you'll be able to:
 
 Whether you're just starting or an experienced professional, our hands-on approach to Mixed Reality development in Unity helps you get to your goals faster, with more confidence, and at your own pace.
 
-### [Build mixed reality digital twins with Azure Digital Twins and Unity](https://docs.microsoft.com/learn/paths/build-mixed-reality-azure-digital-twins-unity/)
+### [Build mixed reality digital twins with Azure Digital Twins and Unity](/learn/paths/build-mixed-reality-azure-digital-twins-unity/)
 
 Learn how to create of a mixed reality HoloLens 2 application using Azure Digital Twins and Unity, a real-time 3D platform.
 

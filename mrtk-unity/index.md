@@ -46,7 +46,7 @@ MRTK-Unity is a Microsoft-driven project that provides a set of components and f
 
 ## Getting started with MRTK
 
-If you're new to MRTK or Mixed Reality development in Unity, we recommend installing and exploring the MRTK Examples Hub sample application on your device or [emulator](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator). 
+If you're new to MRTK or Mixed Reality development in Unity, we recommend installing and exploring the MRTK Examples Hub sample application on your device or [emulator](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator). 
 
 > [!div class="nextstepaction"]
 > [Download the MRTK Examples Hub app](running-examples-hub.md)

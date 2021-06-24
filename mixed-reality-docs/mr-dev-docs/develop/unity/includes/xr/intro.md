@@ -6,7 +6,7 @@ The Mixed Reality OpenXR plugin fully supports AR Foundation 4.0, providing ARPl
 
 ### Prerequisites 
 
-* Latest [tools for HoloLens 2 development](/windows/mixed-reality/develop/install-the-tools?tabs=unity#installation-checklist)
+* Latest [tools for HoloLens 2 development](../../../install-the-tools.md?tabs=unity#installation-checklist)
 * Latest Unity 2020.3 LTS, (we recommend 2020.3.8f1 or above)
 
 ### Minimum versions
