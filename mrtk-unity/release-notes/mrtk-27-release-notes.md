@@ -164,7 +164,7 @@ Added support for eye gaze when using Windows XR Plugin minimum versions of 2.7.
 - Reduce the number of per-frame allocations when visualizing the hand mesh [#9756](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9756)
 - Added a menu item to launch the MRTK Examples package (in Unity Package Manager) to make it easier to import samples [#9798](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9798)
 - Reduced the number of load-time warnings when using Unity 2020.3.
-- Added Build Window feature documentation: [Visit the page](/windows/mixed-reality/mrtk-unity/features/tools/build-window)
+- Added Build Window feature documentation: [Visit the page](../features/tools/build-window.md)
 
 ## Known Issues
 
