@@ -45,37 +45,37 @@ Once the Unity restarts MRTK Project Configurator window should appear. If it do
 
 Click on **Unity OpenXR Plugin** to Enable XR Plugin Management and add its required packages into your project.
 
-![Add Unity OpenXR Plugin ](../images/mr-learning-base/base-02-section5-step1-3-openxr.PNG)
+![Add Unity OpenXR Plugin ](../images/mr-learning-base/base-02-section5-step1-3-openxr.png)
 
 This will import required unity packages for XR Plugin Management, once done click on **Show XR Plug-In Management Settings** in MRTK project Configurator.
 
-![Show XR Plug-In Management Settings ](../images/mr-learning-base/base-02-section5-step1-4-openxr.PNG)
+![Show XR Plug-In Management Settings ](../images/mr-learning-base/base-02-section5-step1-4-openxr.png)
 
-This opens **Project Settings window**,
+This opens **Project Settings window**. In the Project Settings window under **XR Plug-in Management** Ensure that you are in Universal Windows Platform settings (Windows logo tab). Also Ensure **Initialize XR on Startup** is checked, then click **OpenXR** checkbox and **Microsoft HoloLens feature set** checkbox to enable them.
 
-![Enable Open XR](../images/mr-learning-base/base-02-section5-step1-5-openxr.PNG)
+![Enable Open XR](../images/mr-learning-base/base-02-section5-step1-5-openxr.png)
 
-In the Project Settings window  under **XR Plug-in Management** Ensure that you are in Universal Windows Platform settings also Ensure **Initialize XR on Startup** is checked, then check **Open XR** checkbox and **Microsoft HoloLens feature set** checkbox to enable them.
+Once you check OpenXR checkbox, MRTK Project Configurator window will show updated message with **Apply Settings** button. Click **Apply Settings** button. 
 
-![Project Settings Window 1](../images/mr-learning-base/base-02-section5-step1-6-openxr.PNG)
+![Project Settings Window 1](../images/mr-learning-base/base-02-section5-step1-6-openxr.png)
 
-If you see a red warning icon next to **OpenXR Plugin**, click the icon and select **Fix all** before continuing. The Unity Editor may need to restart itself for the changes to take effect.
+To validate OpenXR configuration, click **OpenXR** under **XR Plug-in Management** and check these items:
+* Depth Submission Mode: **Depth 16 Bit**
+* Interaction Profiles: **Microsoft Hand Interaction Profile**
 
-![Project Settings Window 2](../images/mr-learning-base/base-02-section5-step1-7-openxr.PNG)
+![Project Settings Window 2](../images/mr-learning-base/base-02-section5-step1-7-openxr.png)
 
-Once all issues are fixed, close the **Project Settings** window.
+> [!TIP]
+> Reducing the Depth Format to 16-bit is optional but may help improve graphics performance in your project. To learn more about this topic, you can refer to the <a href="/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering" target="_blank">Depth buffer sharing (HoloLens)</a> section of MRTK's Performance documentation.
 
-In the menu bar, navigate to **Mixed Reality**> **OpenXR** > **Apply recommended project settings for HoloLens 2** to get better app performance.
 
-![Project Settings Window 3](../images/mr-learning-base/base-02-section5-step1-8-openxr.PNG)
+In the **MRTK Project Configurator** window, click on **Next**, then click the **Apply** button to apply the settings. (You can manually open it by going to **Mixed Reality** > **Toolkit** > **Utilities** > **Configure Project for MRTK**)
 
-Use the Unity menu to open MRTK Project Configurator, In the MRTK Project Configurator window, click on **next**, then click the **Apply** button to apply the settings:
+![Project Settings Window 3](../images/mr-learning-base/base-02-section5-step1-8-openxr.png)
 
 ![Project Settings Window 4](../images/mr-learning-base/base-02-section5-step1-9-openxr.png)
 
 Once you click on Apply, Unity will try to restart for the input system to take into effect, click on **Apply** to restart the Unity editor
-
-![Project Settings Window 5](../images/mr-learning-base/base-02-section5-step1-10-openxr.PNG)
 
 Once the Unity restarts open MRTK Project Configurator from the unity menu and Click on **Next** then click on **Done** finish the Unity project configuration for OpenXR.
 
@@ -87,8 +87,7 @@ In the Project Settings window, select **XR Plug-in Management** > **OpenXR**, t
 
 ![Unity Enable 16 Depth](../images/mr-learning-base/base-02-section5-step2-1-openxr.PNG)
 
-> [!TIP]
-> Reducing the Depth Format to 16-bit is optional but my help improve graphics performance in your project. To learn more about this topic, you can refer to the <a href="/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering" target="_blank">Depth buffer sharing (HoloLens)</a> section of MRTK's Performance documentation.
+
 
 In the Project Settings window, select **Player** > **Publishing Settings**, then in the **Package name** field, enter a suitable name, for example, _MRTKTutorials-GettingStarted_:
 

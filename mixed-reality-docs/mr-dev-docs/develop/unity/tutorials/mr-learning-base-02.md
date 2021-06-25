@@ -83,19 +83,6 @@ Wait for Unity to create the project:
 
 [!INCLUDE[](includes/switching-build-platform.md)]
 
-## Importing the TextMeshPro Essential Resources
-
-In the Unity menu, select **Window** > **TextMeshPro** > **Import TMP Essential Resources** to open the Import Unity Package window:
-
-![Unity Import TMP Essential Resources menu path](images/mr-learning-base/base-02-section3-step1-1.png)
-
-In the Import Unity Package window, click the **All** button to ensure all the assets are selected, then click the **Import** button to import the assets:
-
-![Unity TMP Essential Resources import window](images/mr-learning-base/base-02-section3-step1-2.png)
-
-> [!TIP]
-> The TextMeshPro Essential Resources are required by MRTK's UI elements. You can skip this step if you are not planning to use MRTK's UI elements in your project.
-
 ## Importing the Mixed Reality Toolkit and Configuring the Unity project
 
 To Import Mixed Reality Toolkit into the Unity Project you will have to use [Mixed Reality Feature Tool](../welcome-to-mr-feature-tool.md) which allows  developers to discover, update, and add Mixed Reality feature packages into Unity projects. You can search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing.
