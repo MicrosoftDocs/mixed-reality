@@ -44,8 +44,9 @@ This documentation is specifically about the Windows Device Portal for HoloLens.
 
 1. [Connect your HoloLens to Wi-Fi](/hololens/hololens-network).
 2. Look up your device's IP address by either:
-   * Going to **Settings > Network & Internet > Wi-Fi > Advanced Options**.
-   * Going to **Settings > Network & Internet** and selecting **Hardware properties**.
+  * Going to **Settings > Network & Internet > Wi-Fi > Advanced Options**.
+  * Going to **Settings > Network & Internet** and selecting **Hardware properties**.
+  * Using the "What's my IP address?" voice command.
 
 ![HoloLens 2 settings](images/using-windows-portal-img-02.jpg)
 
