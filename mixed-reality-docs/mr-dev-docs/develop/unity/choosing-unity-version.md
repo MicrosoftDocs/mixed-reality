@@ -3,7 +3,7 @@ title: Choosing a Unity version and XR plugin
 description: Stay up to date on the latest Unity and XR plugin recommendations for HoloLens application development.
 author: hferrone
 ms.author: v-hferrone
-ms.date: 06/11/2021
+ms.date: 06/24/2021
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality headset, windows mixed reality headset, virtual reality headset, unity
 ---
