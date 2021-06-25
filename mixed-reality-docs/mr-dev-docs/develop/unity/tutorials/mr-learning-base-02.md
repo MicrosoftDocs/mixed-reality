@@ -25,11 +25,12 @@ In this tutorial, you'll learn how to create a new Unity project, configure it f
 
 Launch **Unity Hub**, select the **Projects** tab, and click the **down arrow** next to the **New** button:
 
-![Unity Hub with New button highlighted](images/mr-learning-base/base-02-section1-step1-1.png)
+<img src="images/mr-learning-base/base-02-section1-step1-1.png" width="650px" alt="Unity Hub with New button highlighted">
 
 In the dropdown, select the Unity **version** specified in the [Prerequisites](mr-learning-base-01.md#prerequisites):
 
-![Unity Hub with NEW version selector dropdown](images/mr-learning-base/base-02-section1-step1-2.png)
+<img src="images/mr-learning-base/base-02-section1-step1-2.png" width="650px" alt="Unity Hub with NEW version selector dropdown">
+
 
 > [!TIP]
 > If the particular Unity version is not available in Unity Hub, you can initiate the installation from Unity's <a href="https://unity3d.com/get-unity/download/archive" target="_blank">Download Archive</a>.
@@ -41,14 +42,14 @@ In the Create a new project window:
 * Choose a suitable **Location** to store your project, for example, _D:\MixedRealityLearning_
 * Click the **Create** button to create and launch your new Unity project
 
-![Unity Hub with Create a new project window filled out](images/mr-learning-base/base-02-section1-step1-3.png)
+<img src="images/mr-learning-base/base-02-section1-step1-3.png" width="650px" alt="Unity Hub with Create a new project window filled out">
 
 > [!CAUTION]
 > When working on Windows, there is a MAX_PATH limit of 255 characters. Consequently, you should save the Unity project close to the root of the drive.
 
 Wait for Unity to create the project:
 
-![Unity create new project in progress](images/mr-learning-base/base-02-section1-step1-4.png)
+<img src="images/mr-learning-base/base-02-section1-step1-4.png" width="650px" alt="Unity create new project in progress">
 
 ## Switching the build platform
 
@@ -81,7 +82,8 @@ Download the latest version of the Mixed Reality Feature Tool from the [Microsof
 
 Open the executable file **MixedRealityFeatureTool** from the downloaded folder to launch the Mixed Reality Feature Tool.  
 
-![Opening MixedRealityFeatureTool](images/mr-learning-base/base-02-section4-step1-1.png)
+
+<img src="images/mr-learning-base/base-02-section4-step1-1.png" width="750px" alt="Opening MixedRealityFeatureTool">
 
 [!INCLUDE[](includes/importing-mrtk.md)]
 
