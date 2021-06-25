@@ -1,10 +1,6 @@
 # [Unity 2020 + OpenXR](#tab/openxr)
 
-Once **MixedRealityFeatureTool** is opened, to access preview releases click on **Settings** and enable **Show preview releases** under **Feature** tab, then click on **ok** to save the settings.
-
-<img src="../images/mr-learning-base/base-02-section4-step1-2-preview.PNG" width="650px" alt="MixedRealityFeatureTool preview">
-
-next click on **Start** to get started with Mixed Reality Feature Tool.
+Once **MixedRealityFeatureTool** is opened, click on **Start** to get started with Mixed Reality Feature Tool.
 
 <img src="../images/mr-learning-base/base-02-section4-step1-2.png" width="650px" alt="MixedRealityFeatureTool main screen">
 
@@ -109,6 +105,8 @@ In the Project Settings window, select **Player** > **Publishing Settings**, the
 Once **MixedRealityFeatureTool** is opened, to access preview releases click on **Settings** and enable **Show preview releases** under **Feature** tab, then click on **ok** to save the settings.
 
 ![MixedRealityFeatureTool for preview](../images/mr-learning-base/base-02-section4-step1-2-preview.PNG)
+
+<img src="../images/mr-learning-base/base-02-section4-step1-2.png" width="650px" alt="MixedRealityFeatureTool for preview">
 
 Next, click on **Start** to get started with Mixed Reality Feature Tool.
 
