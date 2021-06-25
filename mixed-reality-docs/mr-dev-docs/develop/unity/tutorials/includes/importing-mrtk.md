@@ -37,7 +37,7 @@ Click on **Approve** Button to add the **Mixed Reality Toolkit** into the projec
 
 After Unity has finished importing the package from the previous section, a warning message appears to restart the unity editor to enable to backends for new plugin system, click on **Yes**
 
-![Unity Restart Option](../images/mr-learning-base/base-02-section5-step1-1-openxr.PNG)
+<img src="../images/mr-learning-base/base-02-section5-step1-1-openxr.png" width="650px" alt="Unity Restart Option">
 
 Once the Unity restarts MRTK Project Configurator window should appear. If it doesn't, you can manually open it by going to **Mixed Reality** > **Toolkit** > **Utilities** > **Configure Project for MRTK**:
 
