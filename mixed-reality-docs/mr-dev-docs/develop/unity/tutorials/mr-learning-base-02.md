@@ -13,6 +13,12 @@ ms.localizationpriority: high
 
 In this tutorial, you'll learn how to create a new Unity project, configure it for Mixed Reality Toolkit (MRTK) development, and import MRTK. You'll also walk through configuring, building, and deploying a basic Unity scene from Visual Studio to your HoloLens 2. Once you have deployed it to your HoloLens 2, you should see a spatial mapping mesh covering the surfaces that are perceived by the HoloLens. Additionally, you should see indicators on your hands and fingers for hand tracking and a frame rate counter for keeping an eye on app performance.
 
+## Objectives
+
+* Learn how to configure Unity for HoloLens development
+* Learn how to build and deploy your app to HoloLens
+* Experience the spatial mapping mesh, hand meshes, and the framerate counter on HoloLens 2 device
+
 ## Steps overview
 :::row:::
     :::column:::
@@ -42,13 +48,6 @@ In this tutorial, you'll learn how to create a new Unity project, configure it f
         **6. Run Project on the Device**
     :::column-end:::
 :::row-end:::
-
-
-## Objectives
-
-* Learn how to configure Unity for HoloLens development
-* Learn how to build and deploy your app to HoloLens
-* Experience the spatial mapping mesh, hand meshes, and the framerate counter on HoloLens 2 device
 
 ## Creating the Unity project
 
