@@ -46,7 +46,7 @@ For this, first follow the [Initializing your project and first application](mr-
 
 2. [Switching the build platform](mr-learning-base-02.md#switching-the-build-platform)
 
-3. [Importing the TextMeshPro Essential Resources](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
+3. [Importing the TextMeshPro Essential Resources](mr-learning-base-04.md#importing-the-textmeshpro-essential-resources)
 
 4. [Importing the Mixed Reality Toolkit and Configuring the Unity project](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
 

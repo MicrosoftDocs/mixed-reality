@@ -236,25 +236,11 @@ Using Start Without Debugging automatically starts the app on your device withou
 Select **Build > Deploy Solution** to deploy to your device without having the app start automatically.
 
 > [!NOTE]
->You may notice the Diagnostics profiler in the app, which you can toggle on or off by using the speech command **Toggle Diagnostics**. It's recommended that you keep the profiler visible most of the time during development to understand when changes to the app may impact performance. For example, HoloLens apps should [continuously run at 60 FPS](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md).
+>You may notice the Diagnostics profiler in the app, which you can toggle on or off by using the speech command **"Toggle Diagnostics"**. It's recommended that you keep the profiler visible most of the time during development to understand when changes to the app may impact performance. For example, HoloLens apps should [continuously run at 60 FPS](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md).
 
 ## Congratulations
 
 You've now deployed your first HoloLens app. Once the app is opened you should see a Cube object in front of you and should be able to interact with the cube by moving it and also as you walk around, you should see a spatial mapping mesh covering the surfaces that are perceived by the HoloLens. Additionally, you should see indicators on your hands and fingers for hand tracking and a frame rate counter for keeping an eye on app performance. These features are just a few foundational pieces included with MRTK. In the upcoming tutorials, you'll add content to your scene to explore the capabilities of HoloLens and the MRTK.
-
-## Importing the TextMeshPro Essential Resources
-
-In the Unity menu, select **Window** > **TextMeshPro** > **Import TMP Essential Resources** to open the Import Unity Package window:
-
-![Unity Import TMP Essential Resources menu path](images/mr-learning-base/base-02-section3-step1-1.png)
-
-In the Import Unity Package window, click the **All** button to ensure all the assets are selected, then click the **Import** button to import the assets:
-
-![Unity TMP Essential Resources import window](images/mr-learning-base/base-02-section3-step1-2.png)
-
-> [!TIP]
-> The TextMeshPro Essential Resources are required by MRTK's UI elements. You can skip this step if you are not planning to use MRTK's UI elements in your project.
-
 
 > [!div class="nextstepaction"]
 > [Next Tutorial: 3. Configuring the MRTK profiles](mr-learning-base-03.md)

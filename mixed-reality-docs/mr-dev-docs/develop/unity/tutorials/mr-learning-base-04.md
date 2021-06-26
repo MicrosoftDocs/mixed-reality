@@ -20,6 +20,15 @@ In this tutorial, you will position the provided objects from the tutorial asset
 * Learn how to position objects in the scene
 * Learn how to use MRTK's Grid Object Collection feature
 
+## Importing the TextMeshPro Essential Resources
+The TextMeshPro Essential Resources are required by MRTK's UI elements. In the Unity menu, select **Window** > **TextMeshPro** > **Import TMP Essential Resources** to open the Import Unity Package window:
+
+![Unity Import TMP Essential Resources menu path](images/mr-learning-base/base-02-section3-step1-1.png)
+
+In the Import Unity Package window, click the **All** button to ensure all the assets are selected, then click the **Import** button to import the assets:
+
+![Unity TMP Essential Resources import window](images/mr-learning-base/base-02-section3-step1-2.png)
+
 ## Importing the tutorial assets
 
 Download the following Unity custom package. This package includes 3D assets such as Mars Rover that we are going to use in this tutorial.
