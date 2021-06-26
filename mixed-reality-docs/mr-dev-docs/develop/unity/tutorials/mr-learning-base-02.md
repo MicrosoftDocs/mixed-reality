@@ -131,43 +131,32 @@ Save the scene in you project under **Asset** > **Scenes**.
 
 ![Unity save scene Save prompt window](images/mr-learning-base/base-02-section6-step1-5.png)
 
-## Importing the tutorial assets
+## Adding hand interaction to an object
 
-Download the following Unity custom package:
+In the Unity menu, select **GameObject** > **3D Object** > **Cube** to add a cube object to the scene.
 
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.5.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage)
+![Adding cube to the Scene](images/mr-learning-base/base-02-section8-step1-1.png)
 
-To Import a Unity custom package, In the Unity menu, select **Assets** > **Import Package** > **Custom Package...** to open the Import package... window:
+Click the **Cube** object in the Hierarchy window, then in the Inspector window configure its **Transform** component as follows
 
-![Importing a custom package](images/mr-learning-base/base-02-section7-step1-1.png)
-
-In the Import package... window, select the **MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage** you downloaded and click the Open button:
-
-![Selecting an asset package](images/mr-learning-base/base-02-section7-step1-2.png)
-
-In the Import Unity Package window, click the All button to ensure all the assets are selected, then click the Import button to import the assets:
-
-![Selecting all the assets to import](images/mr-learning-base/base-02-section7-step1-3.png)
-
-After you have imported the tutorial assets your Project window should look similar to this:
-
-![Unity project window after importing assets](images/mr-learning-base/base-02-section7-step1-4.png)
-
-## Configuring the Scene
-
-In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** folder:
-
-From the Project window, click-and-drag the **Cube** prefab on to the Hierarchy window, then in the Inspector window configure its **Transform** component as follows
-
-* **Position**: X = 0, Y = 0, Z = 0.5
+* **Position**: X = 0, Y = -0.1, Z = 0.5
 * **Rotation**: X = 0, Y = 0, Z = 0
-* **Scale**: X = 1, Y = 1, Z = 1
+* **Scale**: X = 0.1, Y = 0.1, Z = 0.1
 
-![Adding cube to the Scene](images/mr-learning-base/base-02-section8-step1-1.PNG)
+1 Unity unit is 1 meter. We have updated cube's size to 10x10x10 cm, placed 50cm from the headset position (0,0,0). 10cm below the eye level for comfortable interaction. 
 
-To focus in on the objects in the scene, you can double-click on the **Cube** object, and then zoom slightly in again:
+If you use the default scale (1,1,1), the cube will be to big. If you use the default position (0,0,0), the cube will be placed at the same position as your headset and you won't be able to see it until you move backward.
 
-To interact and grab an object with tracked hands, the object must have Collider component for example a **Box Collider**,  **Object Manipulator (Script)** component and **NearInteractionGrabbable(Script)** component.
+![Adjusting transform information](images/mr-learning-base/base-02-section8-step1-1b.png)
+
+To focus in on the objects in the scene, you can double-click on the **Cube** object, and then zoom slightly in again. Or you can use F key to zoom and focus on the object.
+
+To interact and grab an object with tracked hands, the object must have:
+ * Collider component such as **Box Collider** (Unity's cube already has a Box Collider by default)
+ * **Object Manipulator (Script)** component
+ * **NearInteractionGrabbable(Script)** component
+
+MRTK's **ObjectManipulator** script makes an object movable, scalable, and rotatable using one or two hands. This script supports the direct manipulation input model as the script enables the user to touch holograms directly with their hands.
 
 With the **Cube** still selected in the Hierarchy window, in the Inspector window ,click on **Add Component** button, then search and select **Object Manipulator** script to add the Object Manipulator script to the cube object.
 
@@ -180,12 +169,20 @@ Repeat the same to add **Near Interaction Grabbable script** to the cube
 > [!NOTE]
 > When you add a Object Manipulator (Script), in this case, the Constraint Manager (Script) is automatically added because Object Manipulator (Script) depends on it.
 
-> [!NOTE]
-> For the purpose of this tutorial, colliders have already been added to the Cube Object. To learn more about colliders, you can visit Unity's <a href="https://docs.unity3d.com/Manual/CollidersOverview.html" target="_blank">Collider</a> documentation.
+## Testing your application in Unity editor with MRTK input simulation
 
-To test this in the Unity editor, you can enter the play mode and hold the **LeftShift** or **Space** key to enable the controller, Mouse movement will move the controller and also it can be moved further or closer to the camera using the mouse wheel. Once the pointer is on the Cube  press and hold **Left Mouse Button** to move the the Cube object.
+With MRTK's input simulation, you can test various types of interactions in the Unity editor without building and deploying to a device. This allows you quickly iterate your ideas in the design and development process. Use keyboard and mouse combinations to control simulated inputs.
 
-![Game Mode](images/mr-learning-base/base-02-section8-step1-4.PNG)
+Click the play button and enter the play mode. Hold the **Left Shift** or **Space** key to bring up the controller (simulated hands), Mouse movement will move the controller and also it can be moved further or closer to the camera using the mouse wheel. Once the pointer is on the Cube press and hold **Left Mouse Button** to grab the Cube object.
+
+* Press **W, A, S, D, Q, E** keys to move the camera.
+* Hold the **Right mouse button** and move the mouse to look around.
+* To bring up the simulated hands, press **Space bar(Right hand)** or **Left Shift key(Left hand)**
+* To keep simulated hands in the view, press **T** or **Y** key
+* To rotate simulated hands, press and hold **Ctrl** key and move mouse
+
+![Game Mode](images/mr-learning-base/base-02-section8-step1-4.gif)
+
 
 ## Building your application to your HoloLens 2
 
