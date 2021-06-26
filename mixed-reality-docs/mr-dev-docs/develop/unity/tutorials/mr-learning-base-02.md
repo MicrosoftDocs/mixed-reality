@@ -92,9 +92,6 @@ Download the latest version of the Mixed Reality Feature Tool from the [Microsof
 > [!NOTE]
 > Before you can run the Mixed Reality Feature Tool please install [.NET 5.0 runtime](https://dotnet.microsoft.com/download/dotnet/5.0)
 
-> [!NOTE]
-> The Mixed Reality Feature Tool currently only runs on Windows, For MacOS please follow this [procedure](/windows/mixed-reality/mrtk-unity/configuration/usingupm) to download and import the Mixed Reality Toolkit into the unity project.
-
 Open the executable file **MixedRealityFeatureTool** from the downloaded folder to launch the Mixed Reality Feature Tool.  
 
 
