@@ -22,9 +22,7 @@ Wait for Unity to finish switching the platform:
 
 ![Unity switching platform in progress](../images/mr-learning-base/base-02-section2-step1-3-openxr.png)
 
-When Unity has finished switching the platform, click the  **x** icon to close the Build Settings window:
-
-![Unity Build Window with close icon highlighted](../images/mr-learning-base/base-02-section2-step1-4-openxr.png)
+When Unity has finished switching the platform, click the  **x** icon to close the Build Settings window.
 
 # [Unity 2019/2020 + Windows XR Plugin](#tab/winxr)
 
@@ -40,9 +38,7 @@ Wait for Unity to finish switching the platform:
 
 ![Unity switching platform in progress](../images/mr-learning-base/base-02-section2-step1-3.png)
 
-When Unity has finished switching the platform, click the **x** icon to close the Build Settings window:
-
-![Unity Build Window with close icon highlighted](../images/mr-learning-base/base-02-section2-step1-4.png)
+When Unity has finished switching the platform, click the **x** icon to close the Build Settings window.
 
 # [Legacy WSA](#tab/wsa)
 
@@ -58,6 +54,4 @@ Wait for Unity to finish switching the platform:
 
 ![Unity switching platform in progress](../images/mr-learning-base/base-02-section2-step1-3.png)
 
-When Unity has finished switching the platform, click the red **x** icon to close the Build Settings window:
-
-![Unity Build Window with close icon highlighted](../images/mr-learning-base/base-02-section2-step1-4.png)
+When Unity has finished switching the platform, click the red **x** icon to close the Build Settings window.
