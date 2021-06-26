@@ -140,9 +140,9 @@ Click the **Cube** object in the Hierarchy window, then in the Inspector window 
 * **Rotation**: X = 0, Y = 0, Z = 0
 * **Scale**: X = 0.1, Y = 0.1, Z = 0.1
 
-1 Unity unit is 1 meter. We have updated cube's size to 10x10x10 cm, placed 50cm from the headset position (0,0,0). 10cm below the eye level for comfortable interaction. 
+1 Unity unit is 1 meter. We have updated cube's size to 10x10x10 cm, placed at 50cm from the headset position (0,0,0). 10cm below the eye level for comfortable interaction. 
 
-If you use the default scale (1,1,1), the cube will be to big. If you use the default position (0,0,0), the cube will be placed at the same position as your headset and you won't be able to see it until you move backward.
+If you use the default scale (1,1,1), the cube will be too big. If you use the default position (0,0,0), the cube will be placed at the same position as your headset and you won't be able to see it until you move backward.
 
 ![Adjusting transform information](images/mr-learning-base/base-02-section8-step1-1b.png)
 
