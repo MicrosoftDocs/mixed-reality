@@ -23,7 +23,7 @@ In this tutorial, you will prepare for creating a shared experience using Photon
 
 In this section, you will create a new Unity project and get it ready for MRTK development.
 
-First, follow the [Initializing your project and deploying your first application](mr-learning-base-02.md), excluding the [Configuring the Scene](mr-learning-base-02.md#configuring-the-scene) and [Build your application to your device](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions, which includes the following steps:
+First, follow the [Initializing your project and deploying your first application](mr-learning-base-02.md), excluding the [Adding hand interaction to an object](mr-learning-base-02.md#adding-hand-interaction-to-an-object) and [Build your application to your device](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions, which includes the following steps:
 
 1. [Creating the Unity project](mr-learning-base-02.md#creating-the-unity-project) and give it a suitable name, for example, *MRTK Tutorials*
 2. [Switching the build platform](mr-learning-base-02.md#switching-the-build-platform)
