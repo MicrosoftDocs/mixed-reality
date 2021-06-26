@@ -81,13 +81,7 @@ Once the Unity restarts open MRTK Project Configurator from the unity menu and C
 
 ### Configure additional project settings
 
-In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window:
-
-In the Project Settings window, select **XR Plug-in Management** > **OpenXR**, then use the **Depth Submission Mode** dropdown to select **Depth 16-bit**:
-
-![Unity Enable 16 Depth](../images/mr-learning-base/base-02-section5-step2-1-openxr.PNG)
-
-
+In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window.
 
 In the Project Settings window, select **Player** > **Publishing Settings**, then in the **Package name** field, enter a suitable name, for example, _MRTKTutorials-GettingStarted_:
 
