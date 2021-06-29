@@ -1,13 +1,13 @@
 ---
-title: Deploying to Hololens and WMR headsets
+title: Deploying to HoloLens and WMR headsets
 description: Documentation to Build and Deploy Apps into various devices.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Visual Studio
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Visual Studio
 ---
 
-# Deploying to Hololens and WMR headsets
+# Deploying to HoloLens and WMR headsets
 
 There are two ways to deploy applications built with MRTK to your windows device, the Univeral Windows Platform (UWP) and the Standalone Platform. Applications built for HoloLens 1 or HoloLens 2 must target UWP, while applications built for WMR headsets may target either UWP or Standalone.
 
@@ -35,17 +35,17 @@ be changed inside the Visual Studio solution).
 Make sure that the "Target SDK Version" dropdown includes the option "10.0.18362.0" - if this is missing,
 [the latest Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) needs to be installed.
 
-### Unity 2019.3 and HoloLens
+### Unity 2019/2020 and HoloLens
 
-If a HoloLens app appears as a 2D panel on device, make sure the following settings have been configured in Unity 2019.3.x before deploying your UWP app:
+If a HoloLens app appears as a 2D panel on device, make sure the following settings have been configured in Unity before deploying your UWP app:
 
-If using the legacy XR:
+If using the legacy built-in XR support (Unity 2019 only):
 
 1. Navigate to Edit > Project Settings, Player
 1. Under **XR Settings** in the UWP tab, make sure **Virtual Reality Supported** is enabled and the **Windows Mixed Reality** SDK has been added to SDKs.
 1. Build and deploy in Visual Studio
 
-If using the XR-Plugin:
+If using the OpenXR or Windows XR plugins:
 
 1. Follow the steps found in [Getting Started with XRSDK](../configuration/getting-started-with-mrtk-and-xrsdk.md)
 1. Make sure the configuration profile is the **DefaultXRSDKConfigurationProfile**
@@ -53,9 +53,11 @@ If using the XR-Plugin:
 1. Build and deploy in Visual Studio
 
 >[!IMPORTANT]
-> If using Unity 2019.3.x, select **ARM64** and not **ARM** as the build architecture in Visual Studio. With the default Unity settings in Unity 2019.3.x, a Unity app will not deploy to a HoloLens if ARM is selected due to a Unity bug. This can be tracked on [Unity's issue tracker](https://issuetracker.unity3d.com/issues/enabling-graphics-jobs-in-2019-dot-3-x-results-in-a-crash-or-nothing-rendering-on-hololens-2).
+> If using Unity 2019.3.x, select **ARM64** and not **ARM** as the build architecture in Visual Studio. With the default Unity settings in Unity 2019.3.x, a Unity app will not deploy to a HoloLens if ARM is selected due to a Unity bug.
 >
 > If the ARM architecture is required, navigate to **Edit > Project Settings, Player**, and under the **Other Settings** menu disable **Graphics Jobs**. Disabling **Graphics Jobs** will allow the app to deploy using the ARM build architecture for Unity 2019.3.x, but ARM64 is recommended.
+>
+> This issue was fixed in Unity 2019.4 and Unity 2020.3.
 
 ## Building and deploying MRTK to WMR Headsets (Standalone)
 

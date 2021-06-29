@@ -31,26 +31,13 @@ We **highly recommended** using source control to save a snapshot your applicati
 
 ## Migrate project to the latest version of Unity
 
-If you're using [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity), [Unity 2019 LTS](https://unity3d.com/unity/qa/lts-releases) is the best long-term support path with no breaking changes in Unity or in MRTK. Assess any [plugin dependencies](https://docs.unity3d.com/Manual/Plugins.html) that currently exist in your project, and determine whether these DLLs can be built for ARM64. For projects with a hard ARM64 dependent plugin, you may need to continue building your app for ARM.
-
-<!-- MRTK v2 always guarantees support for Unity 2018 LTS, but does not necessarily guarantee support for every iteration of Unity 2019.x.
-
-To help clarify additional differences between [Unity 2018 LTS](https://unity3d.com/unity/qa/lts-releases) and Unity 2019.x, the following table outlines the trade-offs between the two versions. The primary difference between the two is the ability to compile for ARM64 in Unity 2019.
-
-| Unity 2018 LTS | Unity 2019.x |
-|----------|-------------------|
-| ARM32 build support | ARM32 and ARM64 build support |
-| Stable LTS build release | Beta stability |
-| [.NET Scripting back-end](https://docs.unity3d.com/2018.4/Documentation/Manual/windowsstore-dotnet.html) *deprecated* | [.NET Scripting back-end](https://docs.unity3d.com/2018.4/Documentation/Manual/windowsstore-dotnet.html) *removed* |
-| UNET Networking *deprecated* | UNET Networking *deprecated* |
-
--->
+If you're using [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity), we recommend updating to MRTK 2.7 before you upgrade your project to [Unity 2020.3 LTS](../unity/choosing-unity-version.md). MRTK 2.7 supports Unity 2018, 2019 and 2020, allowing you to ensure your project is ready for Unity 2020 even before you upgrade Unity. Assess any [plugin dependencies](https://docs.unity3d.com/Manual/Plugins.html) that currently exist in your project, and determine whether these DLLs can be built for ARM64. For projects with a hard ARM64 dependent plugin, you may need to continue building your app for ARM.
 
 ## Update scene/project settings in Unity
 
-After updating to [Unity 2019 LTS](https://unity3d.com/unity/qa/lts-releases), it's recommended that you update particular settings in Unity for optimal results on the device. These settings are outlined in detail under [recommended settings for Unity](../unity/Recommended-settings-for-Unity.md).
+After updating to [Unity 2020.3 LTS](https://unity3d.com/unity/qa/lts-releases), it's recommended that you update particular settings in Unity for optimal results on the device. These settings are outlined in detail under [recommended settings for Unity](../unity/Recommended-settings-for-Unity.md).
 
-To reiterate, the [.NET scripting back-end](https://docs.unity3d.com/Manual/windowsstore-dotnet.html) is being deprecated in Unity 2018 and **removed** in Unity 2019. Developers should strongly consider switching their project to [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html).
+To reiterate, the [.NET scripting back-end](https://docs.unity3d.com/Manual/windowsstore-dotnet.html) is being deprecated in Unity 2018 and **removed** as of Unity 2019. Developers should strongly consider switching their project to [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html).
 
 > [!NOTE]
 > IL2CPP scripting back-end can cause longer build times from Unity to Visual Studio, and developers should set up their developer machine for [optimizing IL2CPP build times](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html).
@@ -60,7 +47,7 @@ After addressing any breaking changes from moving to the updated Unity version, 
 
 ## Compile dependencies/plugins for ARM processor
 
-HoloLens (1st gen) executes applications on an x86 processor while the HoloLens 2 uses an ARM processor. Existing HoloLens applications need to be ported over to support ARM. As noted earlier, Unity 2018 LTS supports compiling ARM32 apps while Unity 2019.x supports compiling ARM32 and ARM64 apps. Developing for ARM64 applications is preferred, as there's a material difference in performance. However, this requires all [plugin dependencies](https://docs.unity3d.com/Manual/Plugins.html) to also be built for ARM64.
+HoloLens (1st gen) executes applications on an x86 processor while the HoloLens 2 uses an ARM processor. Existing HoloLens applications need to be ported over to support ARM. As noted earlier, Unity 2018 LTS supports compiling ARM32 apps while Unity 2019 and later supports compiling ARM32 and ARM64 apps. Developing for ARM64 applications is preferred, as there's a material difference in performance. However, this requires all [plugin dependencies](https://docs.unity3d.com/Manual/Plugins.html) to also be built for ARM64.
 
 Review all DLL dependencies in your application. We recommend removing dependencies that are no longer needed for your project. For remaining plugins that are required, ingest the respective ARM32 or ARM64 binaries into your Unity project.
 
