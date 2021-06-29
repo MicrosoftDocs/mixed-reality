@@ -97,8 +97,8 @@ Applications need to take specific actions to enable the different types of repr
 
 Stabilization Type |	Immersive Headsets |	HoloLens generation 1 |	HoloLens 2
 --- | --- | --- | ---
-Depth Reprojection |	Recommended |	N/A |	Recommended<br/><br/>Unity applications must use Unity 2018.4.12 or later or Unity 2019.3 or later. Otherwise use Automatic Planar Reprojection.
-Automatic Planar Reprojection |	N/A |	Recommended default |	Recommended if Depth Reprojection isn't giving the best results<br/><br/>Unity applications are recommended to use Unity 2018.4.12 or later or Unity 2019.3 or later.  Previous Unity versions will work with slightly degraded reprojection results.
+Depth Reprojection |	Recommended |	N/A |	Recommended<br/><br/>Unity applications must use Unity 2018.4.12+, Unity 2019.3+ or Unity 2020.3+. Otherwise use Automatic Planar Reprojection.
+Automatic Planar Reprojection |	N/A |	Recommended default |	Recommended if Depth Reprojection isn't giving the best results<br/><br/>Unity applications are recommended to use Unity 2018.4.12+, Unity 2019.3+ or Unity 2020.3+.  Previous Unity versions will work with slightly degraded reprojection results.
 Planar Reprojection |	Not Recommended |	Recommended if Automatic Planar isn't giving the best results |	Use if neither of the depth options give desired results	
 
 ### Verifying Depth is Set Correctly

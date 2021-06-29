@@ -38,7 +38,7 @@ Tutorials in this series are meant to be sequential, so please go through them i
 * [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 or later
 * A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
 
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2020 LTS(currently 2020.3.x) or Unity 2019 LTS (currently 2019.4.x)  installed and the Universal Windows Platform Build Support module added (**OpenXR requires 2020.3.8 or later to prevent bugs**)
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2020.3 LTS or Unity 2019.4 LTS installed and the Universal Windows Platform Build Support module added
 
 When installing Unity, please make sure to check following components under **'Platforms'**.
 
