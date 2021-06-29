@@ -19,7 +19,7 @@ In this tutorial, you'll learn how to create a new Unity project, configure it f
 * Learn how to build and deploy your app to HoloLens
 * Experience the spatial mapping mesh, hand meshes, and the framerate counter on HoloLens 2 device
 
-## Steps overview
+### Steps overview
 :::row:::
     :::column:::
        ![Overview Step 1](images/mr-learning-base/base-02-overview-step1.png)
@@ -88,8 +88,7 @@ In the Unity menu, select **File** > **Build Settings...** to open the Build Set
 In the Build Settings window, select **Universal Windows Platform** and:
 
 1. Set **Target device** to **HoloLens**
-2. Set **Architecture** to **ARM 64** (HoloLens 2 + OpenXR should use ARM64. XRSDK and legacy pipeline can use ARM)
-
+2. Set **Architecture** to **ARM 64** 
 3. Set **Build Type** to **D3D Project**
 4. Set **Target SDK Version** to **Latest Installed**
 5. Set **Minimum Platform Version** to **10.0.1024.0**
