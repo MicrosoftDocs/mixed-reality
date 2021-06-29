@@ -69,7 +69,7 @@ To validate OpenXR configuration, click **OpenXR** under **XR Plug-in Management
 > Reducing the Depth Format to 16-bit is optional but may help improve graphics performance in your project. To learn more about this topic, you can refer to the <a href="/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering" target="_blank">Depth buffer sharing (HoloLens)</a> section of MRTK's Performance documentation.
 
 
-In the **MRTK Project Configurator** window, click on **Next**, then click the **Apply** button to apply the settings. (You can manually open it by going to **Mixed Reality** > **Toolkit** > **Utilities** > **Configure Project for MRTK**)
+In the **MRTK Project Configurator** window, click on **Next**, then click the **Apply** button to apply the settings. (If you closed it, you can manually open it by going to **Mixed Reality** > **Toolkit** > **Utilities** > **Configure Project for MRTK**)
 
 ![Project Settings Window 3](../images/mr-learning-base/base-02-section5-step1-8-openxr.png)
 
