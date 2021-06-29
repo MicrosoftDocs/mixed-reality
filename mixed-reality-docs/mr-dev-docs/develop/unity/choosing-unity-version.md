@@ -20,12 +20,9 @@ Microsoft’s current recommended Unity configuration for HoloLens 2 and Windows
 > Unity 2020 does not support targeting HoloLens (1st gen). These headsets remain supported in **[Unity 2019 LTS](#unity-20194-lts)** with Legacy Built-in XR for the full lifecycle of Unity 2019 LTS through mid-2022.
 >
 > [!NOTE]
-> Some packages are not yet compatible with mixed reality projects in Unity 2020 LTS:
-> 
-> * The Universal Rendering Pipeline (URP) 10.5.0 or older has a known performance issue on HoloLens 2 devices. _(fixed in the next URP release)_
-> * Azure Remote Rendering has not yet shipped an updated release supporting Unity 2020.
+> Azure Remote Rendering has not yet shipped an updated release supporting Unity 2020.
 >
-> If your Unity project uses the Universal Rendering Pipeline or Azure Remote Rendering, we recommend holding off on upgrading your project to Unity 2020 until updated packages are available.
+> If your Unity project uses Azure Remote Rendering, we recommend holding off on upgrading your project to Unity 2020 until an updated package is available.
 
 The best way to install and manage Unity is through the <a href="https://unity3d.com/get-unity/download" target="_blank">Unity Hub</a>. When it's installed, open Unity Hub:
 
