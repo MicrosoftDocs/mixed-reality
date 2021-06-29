@@ -77,8 +77,6 @@ In the **MRTK Project Configurator** window, click on **Next**, then click the *
 
 Once you click on Apply, Unity will try to restart for the input system to take into effect, click on **Apply** to restart the Unity editor
 
-Once the Unity restarts open MRTK Project Configurator from the unity menu and Click on **Next** then click on **Done** finish the Unity project configuration for OpenXR.
-
 ### Configure additional project settings
 
 In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window.
