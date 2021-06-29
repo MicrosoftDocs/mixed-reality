@@ -20,7 +20,7 @@ Features are grouped by category to make things easier to find, click on **Mixed
 
 <img src="../images/mr-learning-base/base-02-section4-step1-4-openxr.png" width="650px" alt="MixedRealityFeatureTool Discover Features">
 
-Check the **Mixed Reality Toolkit Foundation** and click on the dropdown next to it to select **MRTK 2.7.0**, also check the **Mixed Reality OpenXR Plugin** and click on the dropdown next to it to select most recent version available, then click on **Get features** button to download the selected packages.
+Check the **Mixed Reality Toolkit Foundation** and click on the dropdown next to it to select **MRTK 2.7.2**, also check the **Mixed Reality OpenXR Plugin 1.0.0** and click on the dropdown next to it to select most recent version available, then click on **Get features** button to download the selected packages.
 
 <img src="../images/mr-learning-base/base-02-section4-step1-5-openxr.png" width="650px" alt="MixedRealityFeatureTool Open MixedReality">
 
@@ -58,6 +58,10 @@ This opens **Project Settings window**. In the Project Settings window under **X
 Once you check OpenXR checkbox, MRTK Project Configurator window will show updated message with **Apply Settings** button. Click **Apply Settings** button. 
 
 ![Project Settings Window 1](../images/mr-learning-base/base-02-section5-step1-6-openxr.png)
+
+When you click Apply Settings, you might see this error message in the Console. You can proceed if this is the only error or there is no error.
+
+![OpenXR Remoting Error Message](../images/mr-learning-base/base-02-section5-step1-6-openxr-Error.png)
 
 To validate OpenXR configuration, click **OpenXR** under **XR Plug-in Management** and check these items:
 * Depth Submission Mode: **Depth 16 Bit**
