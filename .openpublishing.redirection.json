@@ -1767,6 +1767,12 @@
 			"source_path": "mixed-reality-docs/mr-dev-docs/sf-academy-events.md",
 			"redirect_url": "/windows/mixed-reality/whats-new/sf-academy-events",
 			"redirect_document_id": true
+		},
+		// MRTK-Unity
+		{
+			"source_path": "mrtk-unity/install-the-tools.md",
+			"redirect_url": "/windows/mixed-reality/develop/install-the-tools",
+			"redirect_document_id": false
 		}
 	]
 }

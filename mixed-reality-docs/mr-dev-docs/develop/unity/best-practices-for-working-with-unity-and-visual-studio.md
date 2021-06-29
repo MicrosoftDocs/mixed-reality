@@ -14,7 +14,7 @@ When you're creating a mixed reality application with Unity, you need to switch 
 
 ## Improving iteration time
 
-Support for .NET scripting back-end in Unity is being deprecated in Unity 2018 and removed in Unity 2019+. so we recommend you switch to [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html). However, you may experience longer build times from Unity to Visual Studio. To improve for faster iteration, set up your environment for best compilation results:
+Support for .NET scripting back-end in Unity was deprecated in Unity 2018 and removed as of Unity 2019+, so we recommend you switch to [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html). However, you may experience longer build times from Unity to Visual Studio. To improve for faster iteration, set up your environment for best compilation results:
 
 1) Use incremental building by building your project to the same directory every time, reusing the pre-built files there
 2) Disable anti-malware software scans for your project & build folders
