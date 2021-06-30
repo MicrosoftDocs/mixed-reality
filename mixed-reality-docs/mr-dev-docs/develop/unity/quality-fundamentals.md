@@ -12,11 +12,11 @@ keywords: quality fundamentals, case study, project, sample, MRTK, Mixed Reality
 
 Welcome to the Quality Fundamentals sample application for HoloLens 2.  This sample app is a go to place for us to learn about the Quality Fundamentals of designing mixed reality applications.  You can experience performance issues in real-time by selecting the options provided in the app.
 
-![Quality Fundamentals homepage](images\qf-homepage.jpg)
-
 To install and download the app, see the [Quality Fundamentals](https://www.microsoft.com/p/quality-fundamentals/9mwz852q88fw?activetab=pivot:overviewtab) app download page.
 
-In this sample app, you'll learn about:
+![Quality Fundamentals homepage](images\qf-homepage.jpg)
+
+In this sample app, we'll learn about:
 
 >[!div class = "checklist"]
 > * [Device I/O and environment.](#device-io-and-environment)
@@ -38,13 +38,13 @@ For more information, see [surfaces in a space](/hololens/hololens-environment-c
 
 Mixed reality uses visual light to track a user's location.  HoloLens sensors can be affected by either very low or very bright light conditions.  HoloLens sensors operate the best when the surrounding light is 500-1000 lux as measured by a luxmeter.
 
-For more information, see [lighting](/hololens/hololens-environment-considerations#surfaces-in-a-space) in [HoloLens environment considerations](/hololens/hololens-environment-considerations).
+For more information, see [lighting](/hololens/hololens-environment-considerations?branch=pr-en-us-3071#lighting) in [HoloLens environment considerations](/hololens/hololens-environment-considerations).
 
 ## Anchor fundamentals
 
 To explore how to use Spatial Anchors to align holograms to a physical space, select **Anchor Fundametals** on the app's homepage.
 
-In this part of the app, we will explore the following user scenarios:
+In this part of the app, we'll explore the following user scenarios:
 
 >[!div class = "checklist"]
 > * What happens when no anchor is being applied to an object.
@@ -52,11 +52,11 @@ In this part of the app, we will explore the following user scenarios:
 > * Sharing a Spatial Anchor between multiple collaborators by using a QR code.
 > * Anchor placement for very large objects in a space.
 
-For more information, see [Spatial Anchors](/windows/mixed-reality/design/spatial-anchors) in the [mixed reality](/windows/mixed-reality/design/spatial-anchors) documentation.
+For more information, see [Spatial Anchors](/windows/mixed-reality/design/spatial-anchors) in the [Mixed Reality](/windows/mixed-reality/design/spatial-anchors) documentation.
 
 ## Stability and fidelity
 
-On the application's homepage, select **stability and fidelity** to learn about how to improve hologram stability.
+On the application's homepage, select **Stability and Fidelity** to explore how to improve hologram stability.
 
 The following key concepts will be explored:
 
@@ -92,11 +92,11 @@ For detailed information about z-fighting, see [enable depth buffer sharing](/wi
 
 ### Anti-aliasing
 
-Anti-aliasing is a technique used to smoothing jagged edges on curved lines and diagonals in holograms.  In this part of the app, experience the affects of aliasing on displayed text and bicycle spokes.  
+Anti-aliasing is a technique used to smooth jagged edges on curved lines and diagonals in holograms.  In this part of the app, experience the affects of aliasing on displayed text and bicycle spokes.  
 
 ## 3D asset fundamentals
 
-On the application's homepage, select **3D Asset Fundamentals** to explore how to optimize 3D assets to meet frame rate while maintaining high visual fidelity.
+On the application's homepage, select **3D Asset Fundamentals** to explore how to optimize 3D assets to meet the frame rate requirement while maintaining high visual fidelity.
 
 The following key concepts will be explored:
 
