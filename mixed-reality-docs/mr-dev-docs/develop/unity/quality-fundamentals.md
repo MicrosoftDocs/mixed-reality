@@ -29,7 +29,7 @@ In this sample app, we'll learn about:
 
 ## Device I/O and environment
 
-Start the Quality Fundamentals app on HoloLens.  The app's homepage appears, and select **Device I/O and Environment**.  We will explore how the HoloLens sensors and the surrounding environment will affect spatial mapping, tracking and the placement of holograms. 
+Start the Quality Fundamentals app on HoloLens.  The app's homepage appears, and select **Device I/O and Environment**.  We will explore how the HoloLens sensors and the surrounding environment can affect spatial mapping, tracking and the placement of holograms. 
 
 ### Surfaces
 
