@@ -15,7 +15,7 @@ Welcome to the Quality Fundamentals sample application for HoloLens 2.  This sam
 To download and install the app, go to the app download page:
 
 > [!div class="nextstepaction"]
-> [Quality Fundamentals](https://www.microsoft.com/p/quality-fundamentals/9mwz852q88fw?activetab=pivot:overviewtab).  
+> [Quality Fundamentals](https://www.microsoft.com/p/quality-fundamentals/9mwz852q88fw?activetab=pivot:overviewtab)
 
 ![Quality Fundamentals homepage](images\qf-homepage.jpg)
 
