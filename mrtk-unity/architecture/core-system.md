@@ -1,6 +1,6 @@
 ---
-title: Core System
-description: Input system, Device managers and data providers in MRTK
+title: Core system
+description: Input system, device managers, and data providers in MRTK
 author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021

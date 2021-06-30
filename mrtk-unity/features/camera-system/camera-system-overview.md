@@ -1,6 +1,6 @@
 ---
-title: Camera System Overview
-description: Landing page for Camera system in MRTK
+title: Camera system overview
+description: Landing page for camera system in MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021

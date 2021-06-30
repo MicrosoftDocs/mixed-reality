@@ -1,6 +1,6 @@
 ---
 title: Controllers, pointers, and focus
-description: Interacting with Controllers, pointers and focus.
+description: Interacting with controllers, pointers and focus.
 author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021

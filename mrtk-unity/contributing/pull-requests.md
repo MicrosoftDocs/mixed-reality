@@ -1,6 +1,6 @@
 ---
-title: Pull Requests
-description: Details related to Pull Requests.
+title: Pull requests
+description: Details related to GitHub pull requests.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021

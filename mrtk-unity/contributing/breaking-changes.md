@@ -1,6 +1,6 @@
 ---
-title: Breaking Changes
-description: policy regarding breaking changes in the MRTK.
+title: Breaking changes
+description: Policy regarding breaking changes in the MRTK.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021

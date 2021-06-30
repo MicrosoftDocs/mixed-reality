@@ -1,6 +1,6 @@
 ---
-title: Elastic System
-description: documentation related to elastics simulation in MRTK
+title: Elastic system
+description: Documentation related to elastics simulation in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
