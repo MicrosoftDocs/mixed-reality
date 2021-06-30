@@ -1,6 +1,6 @@
 ---
 title: Terminology
-description: Diffrent Input system in MRTK.
+description: Different input system terms in MRTK.
 author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021

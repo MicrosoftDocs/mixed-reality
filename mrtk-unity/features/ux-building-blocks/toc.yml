@@ -1,51 +1,50 @@
-- name: App Bar
+- name: App bar
   href: app-bar.md
-- name: Bounding Box
+- name: Bounding box
   href: bounding-box.md
-- name: Bounds Control
+- name: Bounds control
   href: bounds-control.md
 - name: Button
   href: button.md
-- name: Constraint Manager
+- name: Constraint manager
   href: constraint-manager.md
 - name: Dialog
   href: dialog.md
 - name: Dwell
   href: dwell.md
-- name: Fingertip Visualization
+- name: Fingertip visualization
   href: fingertip-visualization.md
-- name: Hand Coach
+- name: Hand coach
   href: hand-coach.md
-- name: Hand Menu
+- name: Hand menu
   href: hand-menu.md
 - name: Interactable
   href: interactable.md
-- name: Manipulation Handler
+- name: Manipulation handler
   href: manipulation-handler.md
-- name: Near Menu
+- name: Near menu
   href: near-menu.md
-- name: Object Collection
+- name: Object collection
   href: object-collection.md
-- name: Object Manipulator
+- name: Object manipulator
   href: object-manipulator.md
-- name: Progress Indicator
+- name: Progress indicator
   href: progress-indicator.md
-- name: Scrolling Object Collection
+- name: Scrolling object collection
   href: scrolling-object-collection.md
 - name: Slate
   href: slate.md
 - name: Sliders
   href: sliders.md
-- name: System Keyboard
+- name: System keyboard
   href: system-keyboard.md
 - name: Toolbox
   href: toolbox.md
 - name: Tooltip
   href: tooltip.md
-- name: Text Prefab
+- name: Text prefab
   href: text-prefab.md
-- name: Visual Themes
+- name: Visual themes
   href: visual-themes.md
 - name: Solvers
   href: solvers/toc.yml
-

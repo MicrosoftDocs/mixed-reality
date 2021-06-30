@@ -1,8 +1,8 @@
-- name: Extension Services
+- name: Extension services
   href: extension-services.md
-- name: Hand Physics Service
+- name: Hand physics service
   href: hand-physics-service.md
-- name: Scene Transition Service
+- name: Scene transition service
   href: scene-transition-service.md
-- name: Lost Tracking Service
+- name: Lost tracking service
   href: lost-tracking-service.md

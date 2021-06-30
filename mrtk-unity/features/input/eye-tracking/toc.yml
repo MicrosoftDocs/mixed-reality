@@ -1,14 +1,14 @@
 - name: Overview
   href: eye-tracking-main.md
-- name: Basic Setup
+- name: Basic setup
   href: eye-tracking-basic-setup.md
-- name: Eye Gaze Provider
+- name: Eye gaze provider
   href: eye-tracking-eye-gaze-provider.md
-- name: Eyes And Hands
+- name: Eyes and hands
   href: eye-tracking-eyes-and-hands.md
-- name: Eye Calibration
+- name: Eye calibration
   href: eye-tracking-is-user-calibrated.md
 - name: Navigation
   href: eye-tracking-navigation.md
-- name: Target Selection
+- name: Target selection
   href: eye-tracking-target-selection.md

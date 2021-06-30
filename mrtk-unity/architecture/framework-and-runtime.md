@@ -1,6 +1,6 @@
 ---
 title: Framework and runtime
-description: Information related to Framework and runtime in MRTK.
+description: Information related to framework and runtime in MRTK.
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021

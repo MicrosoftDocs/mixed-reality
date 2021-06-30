@@ -6,7 +6,7 @@
   href: using-ar-foundation.md
 - name: Using Leap Motion
   href: leap-motion-mrtk.md
-- name: Detecting Controllers in MRTK
+- name: Detecting controllers in MRTK
   href: controllers-mrtk.md
-- name: Detecting Platform Capabilities
+- name: Detecting platform capabilities
   href: detecting-platform-capabilities.md

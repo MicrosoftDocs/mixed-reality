@@ -1,12 +1,12 @@
-- name: Spatial Awareness Getting Started
+- name: Spatial awareness getting started
   href: spatial-awareness-getting-started.md
-- name: Spatial Awareness Mesh Observer
+- name: Spatial awareness mesh observer
   href: configuring-spatial-awareness-mesh-observer.md
-- name: Spatial Object Mesh Observer
+- name: Spatial object mesh observer
   href: spatial-object-mesh-observer.md
-- name: Scene Understanding Observer
+- name: Scene understanding observer
   href: scene-understanding.md
-- name: Usage Guide
+- name: Usage guide
   href: usage-guide.md
-- name: Create Data Provider
+- name: Create data provider
   href: create-data-provider.md

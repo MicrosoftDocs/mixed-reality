@@ -1,5 +1,4 @@
-- name: MRTK Packages
+- name: MRTK packages
   href: mrtk-packages.md
-- name: MRTK Modularization
+- name: MRTK modularization
   href: mrtk-modularization.md
-

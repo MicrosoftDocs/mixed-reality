@@ -1,6 +1,6 @@
 ---
-title: System Extensions Provider
-description: MRTK Extensions and data providers
+title: System extensions provider
+description: MRTK extensions and data providers
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021

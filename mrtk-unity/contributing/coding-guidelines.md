@@ -1,6 +1,6 @@
 ---
-title: Coding Guidelines
-description:  coding principles and conventions to follow when contributing to MRTK.
+title: Coding guidelines
+description: Coding principles and conventions to follow when contributing to MRTK.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021

@@ -1,6 +1,6 @@
 ---
-title: Boundary System Getting Started
-description: Landing page for Boundary system in MRTK
+title: Boundary system overview
+description: Landing page for boundary system in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021

@@ -1,10 +1,10 @@
-- name: Scene System Content Loading
+- name: Scene system content loading
   href: scene-system-content-loading.md
-- name: Scene System Getting Started
+- name: Scene system getting started
   href: scene-system-getting-started.md
-- name: Scene System Lighting Scenes
+- name: Scene system lighting scenes
   href: scene-system-lighting-scenes.md
-- name: Scene System Load Progress
+- name: Scene system load progress
   href: scene-system-load-progress.md
-- name: Scene System Scene Types
+- name: Scene system scene types
   href: scene-system-scene-types.md

@@ -1,5 +1,5 @@
 ---
-title: Configuring Boundary Visualization
+title: Configuring boundary visualization
 description: Details to configure the Boundary system in MRTK
 author: davidkline-ms
 ms.author: davidkl
