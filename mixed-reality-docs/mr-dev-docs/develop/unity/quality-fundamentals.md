@@ -10,7 +10,7 @@ keywords: quality fundamentals, case study, project, sample, MRTK, Mixed Reality
 
 # Quality Fundamentals
 
-Welcome to the Quality Fundamentals sample application for HoloLens 2.  This sample app is a go to place for us to learn about the Quality Fundamentals of designing mixed reality applications.  You can experience performance issues in real-time by selecting the options provided in the app.
+Welcome to the Quality Fundamentals sample application for HoloLens 2.  This sample app is a go to place for us to learn about the Quality Fundamentals of designing mixed reality applications.  We can experience performance issues in real-time by selecting the options provided in the app.
 
 To download and install the app, go to the app download page:
 
@@ -29,11 +29,11 @@ In this sample app, we'll learn about:
 
 ## Device I/O and environment
 
-Start the Quality Fundamentals app on your HoloLens.  The app's homepage appears, and select **Device I/O and Environment**.  We will explore how the HoloLens sensors and the surrounding environment will affect spatial mapping, tracking and the placement of holograms. 
+Start the Quality Fundamentals app on HoloLens.  The app's homepage appears, and select **Device I/O and Environment**.  We will explore how the HoloLens sensors and the surrounding environment will affect spatial mapping, tracking and the placement of holograms. 
 
 ### Surfaces
 
-Mirrors or surfaces with mirrored finishes can confuse the HoloLens sensors about the shape of the object.  Objects reflected on the surface may be interpreted by the device as changing environment, which can cause the device to loose tracking.  If mirrored surfaces are causing challenges for your HoloLens, consider adding a screen or closable blinds.
+Mirrors or surfaces with mirrored finishes can confuse the HoloLens sensors about the shape of the object.  Objects reflected on the surface may be interpreted by the device as changing environment, which can cause the device to loose tracking.  If mirrored surfaces are causing challenges for HoloLens, consider adding a screen or closable blinds.
 
 For more information, see [surfaces in a space](/hololens/hololens-environment-considerations#surfaces-in-a-space) in [HoloLens environment considerations](/hololens/hololens-environment-considerations).
 
