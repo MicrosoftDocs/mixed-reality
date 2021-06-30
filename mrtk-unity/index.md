@@ -280,8 +280,8 @@ Want to see what's going on under the hood?
 
 :::row:::
     :::column:::
-       [![Hand Physics Service](features/images/hand-physics/MRTK_UX_HandPhysics_Main.jpg)](features/experimental/hand-physics-service.md)
-        **[Hand Physics Service [Experimental]](features/experimental/hand-physics-service.md)**<br>
+       [![Hand Physics Service](features/images/hand-physics/MRTK_UX_HandPhysics_Main.jpg)](features/extensions/hand-physics-service.md)
+        **[Hand Physics Service [Experimental]](features/extensions/hand-physics-service.md)**<br>
         The hand physics service enables rigid body collision events and interactions with articulated hands
     :::column-end:::
     :::column:::

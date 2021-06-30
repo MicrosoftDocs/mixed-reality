@@ -226,7 +226,7 @@ Updated pulse shader example for the spatial mesh to match HoloLens 2's shell be
 
 ![Elastic System2](../features/images/elastics/Elastics_Main.gif)
 
-MRTK now comes with an [elastic simulation system](../features/elastics/elastic-system.md) that includes a wide variety of extensible and flexible subclasses, offering bindings for 4-dimensional quaternion springs, 3-dimensional volume springs and simple linear spring systems.
+MRTK now comes with an [elastic simulation system](../features/experimental/elastic-system.md) that includes a wide variety of extensible and flexible subclasses, offering bindings for 4-dimensional quaternion springs, 3-dimensional volume springs and simple linear spring systems.
 
 Currently the following MRTK components supporting the [elastics manager](xref:Microsoft.MixedReality.Toolkit.Experimental.Physics.ElasticsManager) can leverage elastics functionality:
 
