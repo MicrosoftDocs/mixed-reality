@@ -119,7 +119,7 @@ For more information, see [asset creation process](/windows/mixed-reality/design
 
 ### Shader passes
 
-Select the number of bikes, and different shader options to experience the visual difference based on FPS.
+Select the number of bikes and different shader options to experience the visual difference based on FPS.
 
 ![Choose different shader options to see the effects on frame rate.](images\qf-3d-asset-shader-complexity.jpg)
 
