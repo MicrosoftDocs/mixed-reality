@@ -19,10 +19,10 @@ To install and download the app, see the [Quality Fundamentals](https://www.micr
 In this sample app, you'll learn about:
 
 >[!div class = "checklist"]
-> * [Device I/O and environment.](#prerequisites)
-> * [Spatial Anchors.](#set-up-your-development-environment)
-> * [Holographic stability and fidelity.](#configure-services)
-> * [3D assets](app-usage.md#arr-session-control-in-play-mode)
+> * [Device I/O and environment.](#device-io-and-environment)
+> * [Spatial Anchors.](#anchor-fundamentals)
+> * [Holographic stability and fidelity.](#stability-and-fidelity)
+> * [3D asset fundamentals](#3d-asset-fundamentals)
 
 ## Device I/O and environment
 
@@ -48,11 +48,11 @@ In this part of the app, we will explore the following user scenarios:
 
 >[!div class = "checklist"]
 > * What happens when no anchor is being applied to an object.
-> * When multiple spatial anchors are being used for a group of objects.
-> * Sharing a spatial anchor between multiple collaborators by using either a QR code.
+> * When multiple Spatial Anchors are being used for a group of objects.
+> * Sharing a Spatial Anchor between multiple collaborators by using a QR code.
 > * Anchor placement for very large objects in a space.
 
-For more information, see [spatial anchors](https://docs.microsoft.com/windows/mixed-reality/design/spatial-anchors) in the [mixed reality](https://docs.microsoft.com/windows/mixed-reality/design/spatial-anchors) documentation.
+For more information, see [Spatial Anchors](https://docs.microsoft.com/windows/mixed-reality/design/spatial-anchors) in the [mixed reality](https://docs.microsoft.com/windows/mixed-reality/design/spatial-anchors) documentation.
 
 ## Stability and fidelity
 
@@ -61,10 +61,10 @@ On the application's homepage, select **stability and fidelity** to learn about 
 The following key concepts will be explored:
 
 >[!div class = "checklist"]
-> * Frame rate.
-> * Late stage reprojection (LSR).
-> * Z-fighting.
-> * Anti-aliasing.
+> * [Frame rate](#frame-rate).
+> * [Late stage reprojection (LSR)](#late-stage-reprojection-lsr).
+> * [Z-fighting](#z-fighting).
+> * [Anti-aliasing](#anti-aliasing).
 
 ### Frame rate
 
@@ -92,7 +92,7 @@ For detailed information about z-fighting, see [enable depth buffer sharing](/wi
 
 ### Anti-aliasing
 
-In this part of the app, experience the affects of aliasing on displayed text and bicycle spokes.  
+Anti-aliasing is a technique used to smoothing jagged edges on curved lines and diagonals in holograms.  In this part of the app, experience the affects of aliasing on displayed text and bicycle spokes.  
 
 ## 3D asset fundamentals
 
@@ -101,10 +101,10 @@ On the application's homepage, select **3D Asset Fundamentals** to explore how t
 The following key concepts will be explored:
 
 >[!div class = "checklist"]
-> * Triangle count.
-> * Shader passes.
-> * Draw calls.
-> * Finale.
+> * [Triangle count](#triangle-count).
+> * [Shader passes](#shader-passes).
+> * [Draw calls](#draw-calls).
+> * [Finale](#finale).
 
 ### Triangle count
 
