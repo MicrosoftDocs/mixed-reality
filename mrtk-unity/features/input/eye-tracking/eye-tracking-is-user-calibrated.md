@@ -1,5 +1,5 @@
 ---
-title: Eye Calibration
+title: Eye calibration
 description: How to Setup User Eye Calibration in MRTK
 author: CDiaz-MS
 ms.author: cadia 

@@ -1,5 +1,5 @@
 ---
-title: Screenshot Utility
+title: Screenshot utility
 description: Documentation on hopw to use screenshot tool in MRTK
 author: keveleigh
 ms.author: kurtie

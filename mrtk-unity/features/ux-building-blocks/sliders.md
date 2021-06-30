@@ -1,5 +1,5 @@
 ---
-title: Slider
+title: Sliders
 description: Overview of Sliders MRTK
 author: RogPodge
 ms.author: roliu

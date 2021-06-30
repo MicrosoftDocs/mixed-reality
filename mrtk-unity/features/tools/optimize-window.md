@@ -1,5 +1,5 @@
 ---
-title: Optimize Window
+title: Optimize window
 description: Documentation Optimize Window in MRTK
 author: keveleigh
 ms.author: kurtie

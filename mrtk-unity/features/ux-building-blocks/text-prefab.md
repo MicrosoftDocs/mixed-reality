@@ -1,5 +1,5 @@
 ---
-title: TextPrefab
+title: Text prefab
 description: Overview of TextPrefab in MRTK
 author: CDiaz-MS
 ms.author: cadia

@@ -1,5 +1,5 @@
 ---
-title: Migration Window
+title: Migration window
 description: Documentation on how to migrate to an update in MRTK
 author: keveleigh
 ms.author: kurtie

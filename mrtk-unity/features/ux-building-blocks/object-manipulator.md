@@ -1,5 +1,5 @@
 ---
-title: ObjectManipulator
+title: Object manipulator
 description: How to use Object manipulator in MRTK
 author: thalbern
 ms.author: bethalha
