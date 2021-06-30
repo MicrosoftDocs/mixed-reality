@@ -37,7 +37,7 @@ This houses the current active runtime configuration for the project.
 
 From here you can navigate to all the configuration profiles for the MRTK, including:
 
-- [Mixed Reality Toolkit profile configuration guide](#mixed-reality-toolkit-profile-configuration-guide)
+- [Mixed Reality Toolkit profile configuration guide](#mrtk-profile-configuration-guide)
   - [The main Mixed Reality Toolkit configuration profile](#the-main-mixed-reality-toolkit-configuration-profile)
   - [Experience settings](#experience-settings)
   - [Camera settings](#camera-settings)
