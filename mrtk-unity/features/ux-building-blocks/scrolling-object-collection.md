@@ -5,7 +5,8 @@ author: vaoliva
 ms.author: vaolivaa
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Scrolling Object
---- 
+---
+
 # Scrolling object collection
 
 ![Scrolling object collection](../images/scrolling-collection/ScrollingCollection_Main.jpg)
@@ -85,54 +86,54 @@ public class ScrollablePagination : MonoBehaviour
     public void ScrollByTier(int amount)
     {
         scrollView.MoveByTiers(amount);
-    }       
+    }
 }
 ```
 
 ## Scrolling object collection properties
 
-| General                                                                                                                                                                                                     |
-|:-----------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Scroll direction             | The direction in which content should scroll.|
+| General          | Description                                   |
+| :--------------- | :-------------------------------------------- |
+| Scroll direction | The direction in which content should scroll. |
 
-| Pagination                   |               Description                                                                                                                                                                                      |
-|:-----------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cells per tier               | Number of cells in a row on up-down scroll view or number of cells in a column on left-right scroll view.                                                                                                         |
-| Tiers per page               | Number of visible tiers in the scrolling area.                                                                                                                                                                         |
-| Page cell                    | Dimensions of the pagination cell.                  |
+| Pagination     | Description                                                                                               |
+| :------------- | :-------------------------------------------------------------------------------------------------------- |
+| Cells per tier | Number of cells in a row on up-down scroll view or number of cells in a column on left-right scroll view. |
+| Tiers per page | Number of visible tiers in the scrolling area.                                                            |
+| Page cell      | Dimensions of the pagination cell.                                                                        |
 
-| Advanced settings            |                  Description                                                                                                                                                                                    |
-|:-----------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mask edit mode               | Edit modes for defining the clipping box masking boundaries. Choose 'Auto' to automatically use pagination values. Choose 'Manual' for enabling direct manipulation of the clipping box object.|
-| Collider edit mode           | Edit modes for defining the scroll interaction collider boundaries. Choose 'Auto' to automatically use pagination values. Choose 'Manual' for enabling direct manipulation of the collider.|
-| Can scroll                   | Enables/disables scrolling with near/far interaction.                  |
-| Use on pre render            | Toggles whether the scrollingObjectCollection will use the Camera OnPreRender event to manage content visibility.                  |
-| Pagination curve             | Animation curve for pagination.                  |
-| Animation length             | The amount of time (in seconds) the PaginationCurve will take to evaluate.                  |
-| Hand delta scroll threshold  | The distance, in meters, the current pointer can travel along the scroll direction before triggering a scroll drag.                  |
-| Front touch distance         | Distance, in meters, to position a local xy plane used to verify if a touch interaction started in the front of the scroll view.                  |
-| Release threshold            | Withdraw amount, in meters, from the scroll boundaries needed to transition from touch engaged to released.                  |
+| Advanced settings           | Description                                                                                                                                                                |
+| :-------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Mask edit mode              | Edit modes for defining the clipping box masking boundaries. 'Auto' automatically uses pagination values. 'Manual' enables direct manipulation of the clipping box object. |
+| Collider edit mode          | Edit modes for defining the scroll interaction collider boundaries. 'Auto' automatically uses pagination values. 'Manual' enables direct manipulation of the collider.     |
+| Can scroll                  | Enables/disables scrolling with near/far interaction.                                                                                                                      |
+| Use on pre render           | Toggles whether the scrollingObjectCollection will use the Camera OnPreRender event to manage content visibility.                                                          |
+| Pagination curve            | Animation curve for pagination.                                                                                                                                            |
+| Animation length            | The amount of time (in seconds) the PaginationCurve will take to evaluate.                                                                                                 |
+| Hand delta scroll threshold | The distance, in meters, the current pointer can travel along the scroll direction before triggering a scroll drag.                                                        |
+| Front touch distance        | Distance, in meters, to position a local xy plane used to verify if a touch interaction started in the front of the scroll view.                                           |
+| Release threshold           | Withdraw amount, in meters, from the scroll boundaries needed to transition from touch engaged to released.                                                                |
 
-| Velocity |               Description                                                                                                                                                                      |
-|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Type of velocity       | The desired type of velocity falloff for the scroller.                                                                                        |
-| Velocity multiplier     | Amount of (extra) velocity to be applied to scroller.                                                                                                                                                        |
-| Velocity dampen     | Amount of falloff applied to the velocity. |
-| Bounce multiplier     | Multiplier to add more bounce to the overscroll of a list when using falloff per frame or falloff per item. |
+| Velocity            | Description                                                                                                 |
+| ------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Type of velocity    | The desired type of velocity falloff for the scroller.                                                      |
+| Velocity multiplier | Amount of (extra) velocity to be applied to scroller.                                                       |
+| Velocity dampen     | Amount of falloff applied to the velocity.                                                                  |
+| Bounce multiplier   | Multiplier to add more bounce to the overscroll of a list when using falloff per frame or falloff per item. |
 
-| Debug options |            Description                                                                                                                                                                         |
-|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mask enabled       | Visibility mode of scroll content. Default value will mask all objects outside of the scroll viewable area.                                                                                        |
-| Show threshold planes     | If true, the editor will render the touch release threshold planes around the scroll boundaries.                                                                                                                                                        |
-| Debug pagination     | Use this section to debug the scroll pagination during runtime. |
+| Debug options         | Description                                                                                                 |
+| --------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Mask enabled          | Visibility mode of scroll content. Default value will mask all objects outside of the scroll viewable area. |
+| Show threshold planes | If true, the editor will render the touch release threshold planes around the scroll boundaries.            |
+| Debug pagination      | Use this section to debug the scroll pagination during runtime.                                             |
 
-| Events|    Description                                                                                                                                                                                 |
-|-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| On click       | Event triggered when the scroll background collider or any of its interactive content receives a click.                                                                                        |
-| On touch started     | Event triggered when the scroll background collider or any of its interactive content receives a near interaction touch.                                                                                                                                                        |
-| On touch ended     | Event triggered when an active touch interaction is terminated by having the near interaction pointer crossing one of the release threshold planes. |
-| On momentum started     | Event triggered when the scroll container starts moving by interaction, velocity fallofff or pagination. |
-| On momentum ended     | Event triggered when the scroll container stops moving by interaction, velocity fallofff or pagination. |
+| Events              | Description                                                                                                                   |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| On click            | Triggered when the scroll background collider or any of its interactive content receives a click.                             |
+| On touch started    | Triggered when the scroll background collider or any of its interactive content receives a near interaction touch.            |
+| On touch ended      | Triggered when an active touch interaction is terminated when the near interaction pointer crosses a release threshold plane. |
+| On momentum started | Triggered when the scroll container starts moving by interaction, velocity falloff, or pagination.                            |
+| On momentum ended   | Triggered when the scroll container stops moving by interaction, velocity falloff, or pagination.                             |
 
 ## Scrolling example scene
 
