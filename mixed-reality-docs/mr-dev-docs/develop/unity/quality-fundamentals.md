@@ -12,17 +12,20 @@ keywords: quality fundamentals, case study, project, sample, MRTK, Mixed Reality
 
 Welcome to the Quality Fundamentals sample application for HoloLens 2.  This sample app is a go to place for us to learn about the Quality Fundamentals of designing mixed reality applications.  You can experience performance issues in real-time by selecting the options provided in the app.
 
-To install and download the app, see the [Quality Fundamentals](https://www.microsoft.com/p/quality-fundamentals/9mwz852q88fw?activetab=pivot:overviewtab) app download page.
+To install and download the app, go to 
+
+> [!div class="nextstepaction"]
+> [Quality Fundamentals app download page.](https://www.microsoft.com/p/quality-fundamentals/9mwz852q88fw?activetab=pivot:overviewtab).  
 
 ![Quality Fundamentals homepage](images\qf-homepage.jpg)
 
 In this sample app, we'll learn about:
 
 >[!div class = "checklist"]
-> * [Device I/O and environment.](#device-io-and-environment)
-> * [Spatial Anchors.](#anchor-fundamentals)
-> * [Holographic stability and fidelity.](#stability-and-fidelity)
-> * [3D asset fundamentals](#3d-asset-fundamentals)
+> * [Device I/O and environment](#device-io-and-environment): How the enviroment can affect HoloLens' performance.
+> * [Spatial Anchors](#anchor-fundamentals): Spatial Anchors can help align holograms to a physical space.
+> * [Holographic stability and fidelity](#stability-and-fidelity): Explore techniques to help improve the stability and fidelity of Holograms.
+> * [3D asset fundamentals](#3d-asset-fundamentals): How to optimize 3D assets to maintain high visual fidelity. 
 
 ## Device I/O and environment
 
