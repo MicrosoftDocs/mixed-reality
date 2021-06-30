@@ -52,7 +52,7 @@ In this part of the app, we will explore the following user scenarios:
 > * Sharing a Spatial Anchor between multiple collaborators by using a QR code.
 > * Anchor placement for very large objects in a space.
 
-For more information, see [Spatial Anchors](https://docs.microsoft.com/windows/mixed-reality/design/spatial-anchors) in the [mixed reality](https://docs.microsoft.com/windows/mixed-reality/design/spatial-anchors) documentation.
+For more information, see [Spatial Anchors](/windows/mixed-reality/design/spatial-anchors) in the [mixed reality](/windows/mixed-reality/design/spatial-anchors) documentation.
 
 ## Stability and fidelity
 
