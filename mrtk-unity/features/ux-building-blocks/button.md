@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK Buttons
 ---
 
-# Button
+# Buttons
 
 ![Button Main](../images/button/MRTK_Button_Main.png)
 

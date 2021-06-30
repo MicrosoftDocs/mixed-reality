@@ -1,8 +1,8 @@
-- name: Deploying to HoloLens and WMR
+- name: Deploying to HoloLens and WMR headsets
   href: wmr-mrtk.md
 - name: Deploying to Oculus Quest
   href: oculus-quest-mrtk.md
-- name: Deploying to Android and iOS (AR Foundation)
+- name: Deploying to Android and iOS (AR Foundation) [Experimental]
   href: using-ar-foundation.md
 - name: Using Leap Motion
   href: leap-motion-mrtk.md

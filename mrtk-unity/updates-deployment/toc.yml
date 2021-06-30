@@ -1,4 +1,4 @@
-- name: Upgrading from HTK
+- name: Upgrading from HoloToolkit
   href: htk-to-mrtk-porting-guide.md
 - name: MRTK and managed code stripping
   href: mrtk-and-managed-code-stripping.md

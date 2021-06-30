@@ -1,5 +1,5 @@
 ---
-title: Example Hub
+title: MRTK Examples Hub
 description: Overview on Example Scenes in MRTK
 author: polar-kev
 ms.author: kesemple

@@ -1,4 +1,4 @@
-- name: Overview
+- name: Architecture overview
   href: overview.md
 - name: Framework and runtime
   href: framework-and-runtime.md

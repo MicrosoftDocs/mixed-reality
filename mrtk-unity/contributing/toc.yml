@@ -1,6 +1,6 @@
 - name: Authors
   href: authors.md
-- name: Contributing overview
+- name: Contributing to MRTK
   href: contributing.md
 - name: Coding guidelines
   href: coding-guidelines.md
