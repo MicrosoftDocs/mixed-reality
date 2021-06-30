@@ -29,7 +29,7 @@ In this sample app, we'll learn about:
 
 ## Device I/O and environment
 
-Start the Quality Fundamentals app on HoloLens.  The app's homepage appears, and select **Device I/O and Environment**.  We will explore how the HoloLens sensors and the surrounding environment can affect spatial mapping, tracking and the placement of holograms. 
+Start the Quality Fundamentals app on HoloLens.  As the app's homepage appears, select **Device I/O and Environment**.  We will explore how the HoloLens sensors and the surrounding environment can affect spatial mapping, tracking and the placement of holograms. 
 
 ### Surfaces
 
@@ -61,7 +61,7 @@ For more information, see [Spatial Anchors](/windows/mixed-reality/design/spatia
 
 On the application's homepage, select **Stability and Fidelity** to explore how to improve hologram stability.
 
-The following key concepts will be explored:
+We'll explore the following key concepts:
 
 >[!div class = "checklist"]
 > * [Frame rate](#frame-rate).
@@ -101,7 +101,7 @@ Anti-aliasing is a technique used to smooth jagged edges on curved lines and dia
 
 On the application's homepage, select **3D Asset Fundamentals** to explore how to optimize 3D assets to meet the frame rate requirement while maintaining high visual fidelity.
 
-The following key concepts will be explored:
+We'll explore the following key concepts:
 
 >[!div class = "checklist"]
 > * [Triangle count](#triangle-count).
