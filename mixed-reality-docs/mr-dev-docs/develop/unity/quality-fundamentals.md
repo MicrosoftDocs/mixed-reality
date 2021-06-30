@@ -12,10 +12,10 @@ keywords: quality fundamentals, case study, project, sample, MRTK, Mixed Reality
 
 Welcome to the Quality Fundamentals sample application for HoloLens 2.  This sample app is a go to place for us to learn about the Quality Fundamentals of designing mixed reality applications.  You can experience performance issues in real-time by selecting the options provided in the app.
 
-To install and download the app, go to 
+To download and install the app, go to the app download page:
 
 > [!div class="nextstepaction"]
-> [Quality Fundamentals app download page.](https://www.microsoft.com/p/quality-fundamentals/9mwz852q88fw?activetab=pivot:overviewtab).  
+> [Quality Fundamentals](https://www.microsoft.com/p/quality-fundamentals/9mwz852q88fw?activetab=pivot:overviewtab).  
 
 ![Quality Fundamentals homepage](images\qf-homepage.jpg)
 
