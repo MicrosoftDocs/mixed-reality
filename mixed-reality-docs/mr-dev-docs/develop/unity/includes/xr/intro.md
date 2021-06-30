@@ -15,8 +15,8 @@ The instructions in this page will set you up with the latest and greatest Unity
 
 * Latest Unity OpenXR plugin, (we recommend 1.2 or later)
 * Latest Mixed Reality OpenXR Plugin, (we recommend version 1.0.0 or later)
-* **(Optional)** Latest MRTK, (we recommend version 2.7 or later)
-* **(Optional)** Latest Universal Render Pipeline package, (we recommend version 10.5.1 or later)
+* If your project uses MRTK, we recommend version 2.7.2 or later
+* If your project uses Universal Render Pipeline (URP) package, we recommend version 10.5.1 or later
 
 <!-- ![Screenshot of the open xr unity basic sample running on a HoloLens](../../images/openxr-example.png) -->
 
