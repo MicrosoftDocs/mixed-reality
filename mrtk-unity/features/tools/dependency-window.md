@@ -1,5 +1,5 @@
 ---
-title: Dependency Window
+title: Dependency window
 description: Documentation on usage of dependency window in MRTK
 author: keveleigh
 ms.author: kurtie

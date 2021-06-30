@@ -1,5 +1,5 @@
 ---
-title: FingertipVisualization
+title: Fingertip visualization
 description: Overview on FingerTip Visualization in MRTK
 author: CDiaz-MS
 ms.author: cadia

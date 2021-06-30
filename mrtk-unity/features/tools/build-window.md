@@ -1,5 +1,5 @@
 ---
-title: MRTK Build Window
+title: Build window
 description: Documentation on using the build window in MRTK for Unity.
 author: cre8ivepark
 ms.author: dongpark

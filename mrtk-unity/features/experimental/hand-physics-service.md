@@ -1,5 +1,5 @@
 ---
-title: Hand Physics Extension Service
+title: Hand physics service
 description: description Hand Physics extension services.
 author: CDiaz-MS
 ms.author: cadia
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Hand physics extension services
+# Hand physics service
 
 The hand physics service enables rigid body collision events and interactions with articulated hands.
 

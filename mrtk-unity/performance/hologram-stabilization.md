@@ -1,5 +1,5 @@
 ---
-title: Hologram Stabilization
+title: Hologram stabilization
 description: Performance of holograms under different environment and frame rate conditions.
 author: keveleigh
 ms.author: kurtie

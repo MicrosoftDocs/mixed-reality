@@ -1,5 +1,5 @@
 ---
-title: Hand Tracking
+title: Hand tracking
 description: Documentation on how to use HandTracking in MRTK
 author: keveleigh
 ms.author: kurtie

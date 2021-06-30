@@ -1,5 +1,5 @@
 ---
-title: Clipping Primitive
+title: Clipping primitive
 description: Documentation on Clipping Primitives with Examples in MRTK
 author: keveleigh
 ms.author: kurtie
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Clipping primitive,
 ---
 
-# Clipping Primitive
+# Clipping primitive
 
 The [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) behaviors allow for performant [`plane`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPlane), [`sphere`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere), and [`box`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) shape clipping with the ability to specify which side of the primitive to clip against (inside or outside) when used with MRTK shaders.
 

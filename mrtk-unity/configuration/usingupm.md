@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK Packages,
 ---
 
-# Mixed Reality Toolkit and Unity Package Manager
+# Using the Unity Package Manager
 
 Starting with version 2.5.0, using the [Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool), the Microsoft Mixed Reality Toolkit integrates with the Unity Package Manager (UPM) when using Unity 2019.4 and newer.
 
