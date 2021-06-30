@@ -83,11 +83,11 @@ Reprojection adjusts for the motion and change of the point of view as a user mo
 
 ![Try the different reprojection options to experience the difference.](images\qf-lsr-modes.jpg)
 
-For detailed information, see [reprojection](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability#reprojection) in the [homogram stability](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability) article.
+For detailed information, see [reprojection](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability#reprojection) in the [hologram stability](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability) article.
 
 ### Z-fighting
 
-Z-fighting occurs when the mixed reality application cannot discern which object is in front of the other.  You will notice flickering of the holographic objects as they fight for the same z-depth value.  Experience the effects of z-fighting in the app by changing the placement of a holographic object, the logo on a bicycle in this case.
+Z-fighting occurs when the mixed reality application cannot discern which object is in front of the other.  We'll notice flickering of the holographic objects as they fight for the same z-depth value.  Experience the effects of z-fighting in the app by changing the placement of a holographic object, the logo on a bicycle in this case.
 
 ![Experience z-fighting with object placements.](images\qf-z-fighting.jpg)
 
