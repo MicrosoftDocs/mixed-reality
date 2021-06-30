@@ -1,15 +1,14 @@
 - name: Overview
   href: overview.md
-- name: Framework and Runtime
+- name: Framework and runtime
   href: framework-and-runtime.md
-- name: Input System
+- name: Input system
   items:
     - name: Terminology
       href: terminology.md
-    - name: Core System
+    - name: Core system
       href: core-system.md
-    - name: Controllers Pointers and Focus
+    - name: Controllers, pointers, and focus
       href: controllers-pointers-and-focus.md
-- name: Systems, Extension Services and Data Providers
+- name: Systems, extension services, and data providers
   href: systems-extensions-providers.md
-

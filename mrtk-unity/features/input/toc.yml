@@ -1,6 +1,6 @@
 - name: Controllers
   href: controllers.md
-- name: Create Data Provider
+- name: Create data provider
   href: create-data-provider.md
 - name: Dictation
   href: dictation.md
@@ -8,17 +8,17 @@
   href: gaze.md
 - name: Gestures
   href: gestures.md
-- name: Hand Tracking
+- name: Hand tracking
   href: hand-tracking.md
-- name: How To Add Near Interactivity
+- name: How to add near interactivity
   href: how-to-add-near-interactivity.md
-- name: Input Actions
+- name: Input actions
   href: input-actions.md
-- name: Input Events
+- name: Input events
   href: input-events.md
-- name: Input Providers
+- name: Input providers
   href: input-providers.md
-- name: Input State
+- name: Input state
   href: input-state.md
 - name: Overview
   href: overview.md
@@ -26,5 +26,5 @@
   href: pointers.md
 - name: Speech
   href: speech.md
-- name: Eye Tracking
+- name: Eye tracking
   href: eye-tracking/toc.yml

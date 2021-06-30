@@ -1,8 +1,8 @@
 - name: Dock
   href: dock.md
-- name: Hand Physics Service
+- name: Hand physics service
   href: hand-physics-service.md
-- name: Interactive Element
+- name: Interactive element
   href: interactive-element.md
-- name: Mixed Reality Keyboard
+- name: Mixed Reality keyboard
   href: mixed-reality-keyboard.md

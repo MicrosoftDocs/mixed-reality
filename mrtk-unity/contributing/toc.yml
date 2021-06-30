@@ -1,22 +1,16 @@
 - name: Authors
   href: authors.md
-- name: Contributing Overview
+- name: Contributing overview
   href: contributing.md
-- name: Coding Guidelines
+- name: Coding guidelines
   href: coding-guidelines.md
-- name: Writing and Running Tests
+- name: Writing and running tests
   href: unit-tests.md
-- name: Documentation Guidelines
+- name: Documentation guidelines
   href: documentation-guide.md
-- name: Pull Requests
+- name: Pull requests
   href: pull-requests.md
-- name: Experimental Features
+- name: Experimental features
   href: experimental-features.md
-- name: Breaking Changes
+- name: Breaking changes
   href: breaking-changes.md
-
-
-
-
-
-

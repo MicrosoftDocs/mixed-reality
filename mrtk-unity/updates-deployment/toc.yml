@@ -1,6 +1,6 @@
 - name: Upgrading from HTK
   href: htk-to-mrtk-porting-guide.md
-- name: MRTK and Managed Code Stripping
+- name: MRTK and managed code stripping
   href: mrtk-and-managed-code-stripping.md
-- name: Updating From Earlier Versions
+- name: Updating From earlier versions
   href: updating.md

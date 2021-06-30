@@ -1,5 +1,4 @@
-- name: Overview of Solvers
+- name: Solver overview
   href: solver.md
-- name: Tap To Place
+- name: Tap to place
   href: tap-to-place.md
-

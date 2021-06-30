@@ -1,9 +1,8 @@
-- name: Camera System Overview
+- name: Camera system overview
   href: camera-system-overview.md
-- name: Create Settings Provider
+- name: Create settings provider
   href: create-settings-provider.md
-- name: Unity AR Camera settings
+- name: Unity AR camera settings
   href: unity-ar-camera-settings.md
-- name: Windows Mixed Reality Camera Settings
+- name: Windows Mixed Reality camera settings
   href: windows-mixed-reality-camera-settings.md
-

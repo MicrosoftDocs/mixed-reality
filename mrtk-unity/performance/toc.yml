@@ -1,6 +1,6 @@
 - name: Performance
   href: perf-getting-started.md
-- name: Hologram Stabilization
+- name: Hologram stabilization
   href: hologram-stabilization.md
-- name: Using MRTK in Large Projects
+- name: Using MRTK in large projects
   href: large-projects.md

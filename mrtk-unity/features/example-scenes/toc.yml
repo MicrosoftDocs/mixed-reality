@@ -1,8 +1,8 @@
 - name: Example Hub
   href: example-hub.md
-- name: Hand Interaction Examples
+- name: Hand interaction examples
   href: hand-interaction-examples.md
-- name: Hand Joint Chaser
+- name: Hand joint chaser
   href: hand-joint-chaser.md
-- name: Eye Tracking Examples Overview
+- name: Eye tracking examples overview
   href: eye-tracking-examples-overview.md
