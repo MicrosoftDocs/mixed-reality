@@ -1,5 +1,5 @@
 ---
-title: HandMenu
+title: Hand menu
 description: Hand Menu Example scene in MRTK
 author: cre8ivepark
 ms.author: dongpark

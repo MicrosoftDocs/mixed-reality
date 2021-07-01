@@ -1,5 +1,5 @@
 ---
-title: ObjectCollection
+title: Object collection
 description: Overview of Object collection in MRTK
 author: CDiaz-MS
 ms.author: cadia

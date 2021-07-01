@@ -1,5 +1,5 @@
 ---
-title: Scene Transition Service Overview
+title: Scene transition service
 description: documentation for Scene Transition in MRTK
 author: davidkline-ms
 ms.author: davidkl

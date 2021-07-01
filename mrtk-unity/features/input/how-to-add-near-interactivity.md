@@ -1,5 +1,5 @@
 ---
-title: How To Add Near Interactivity
+title: How to add near interactivity
 description: Documentation on Near interaction in MRTK
 author: keveleigh
 ms.author: kurtie
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Near Interaction,
 ---
 
-# How to add near interaction in MRTK
+# How to add near interactivity
 
 Near interactions come in the form of touches and grabs. Touch and grab events are raised as pointer events by the [PokePointer](pointers.md#pokepointer) and [SpherePointer](pointers.md#spherepointer), respectively.
 

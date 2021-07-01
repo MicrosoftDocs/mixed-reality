@@ -1,5 +1,5 @@
 ---
-title: Documentation guide
+title: Documentation guidelines
 description: documentation guidelines and standards for the MRTK.
 author: polar-kev
 ms.author: kesemple
@@ -353,6 +353,6 @@ When writing documentation, installing the following two extensions is also high
 
 Both of these come packaged in the Microsoft published Docs Authoring Pack.
 
-## See also 
+## See also
 
-* [Example link](https://www.google.com)
+- [Example "see also" link for documentation](https://www.microsoft.com)

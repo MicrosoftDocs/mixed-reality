@@ -1,5 +1,5 @@
 ---
-title: Input Simulation Services
+title: Input simulation service
 description: Documentation on Input simulation service in MRTK
 author: CDiaz-MS
 ms.author: cadia

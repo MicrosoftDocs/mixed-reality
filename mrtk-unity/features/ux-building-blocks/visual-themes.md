@@ -1,5 +1,5 @@
 ---
-title: VisualThemes
+title: Visual themes
 description: Overview Visual Themes flexible control of UX assets in MRTK
 author: CDiaz-MS
 ms.author: cadia

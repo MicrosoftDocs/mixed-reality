@@ -1,5 +1,5 @@
 ---
-title: Teleport Hotspot
+title: Teleport hotspot
 description: Documentation on the Teleport Hotspot Component in MRTK
 author: RogPodge
 ms.author: roliu
@@ -9,7 +9,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Teleport
 monikerRange: '>= mrtkunity-2021-05'
 ---
 
-# Teleport Hotspot
+# Teleport hotspot
 
 The teleport hotspot is a component you can add to your gameobject to ensure that the user is in a certain position and orientation when they teleport to that location.
 

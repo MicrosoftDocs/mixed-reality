@@ -1,5 +1,5 @@
 ---
-title: SystemKeyBoard
+title: System keyboard
 description: Overview of System Key Board in MRTK
 author: maxwang-ms
 ms.author: wangmax

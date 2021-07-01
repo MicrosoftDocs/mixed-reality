@@ -1,5 +1,5 @@
 ---
-title: TapToPlace
+title: Tap to place
 description: Documentation of TapToPlace MRTK
 author: CDiaz-MS
 ms.author: cadia
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Tap to Place,
 ---
 
-# Tap to Place
+# Tap to place
 
 ![TapToPlace](../../images/solver/tap-to-place/TapToPlaceIntroGif.gif)
 

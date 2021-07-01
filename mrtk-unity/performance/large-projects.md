@@ -1,5 +1,5 @@
 ---
-title: Large Projects
+title: Using MRTK in large projects
 description: Tips for consumers of MRTK with large projects.
 author: polar-kev
 ms.author: kesemple

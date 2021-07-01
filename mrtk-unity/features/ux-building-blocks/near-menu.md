@@ -1,5 +1,5 @@
 ---
-title: NearMenuUI
+title: Near menu
 description: Overview Near Menu types in MRTK
 author: CDiaz-MS
 ms.author: cadia

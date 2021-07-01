@@ -1,5 +1,5 @@
 ---
-title: ManipulationHandler
+title: Manipulation handler
 description: Documentation on Manipulation Handler in MRTK
 author: CDiaz-MS
 ms.author: cadia 
