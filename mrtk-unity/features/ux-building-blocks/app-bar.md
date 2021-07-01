@@ -1,5 +1,5 @@
 ---
-title: README_AppBar
+title: App bar
 description: Overview on App Bar in MRTK
 author: CDiaz-MS
 ms.author: cadia

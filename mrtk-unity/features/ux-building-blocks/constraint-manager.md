@@ -1,5 +1,5 @@
 ---
-title: ConstraintManager
+title: Constraint manager
 description: Overview on Constraint Manager in MRTK
 author: CDiaz-MS
 ms.author: cadia

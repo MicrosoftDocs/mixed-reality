@@ -1,5 +1,5 @@
 ---
-title: Input Animation Recording
+title: Input animation recording
 description: Documentation on Input Animation Recording System in MRTK
 author: CDiaz-MS
 ms.author: cadia

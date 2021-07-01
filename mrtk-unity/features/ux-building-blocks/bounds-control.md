@@ -1,5 +1,5 @@
 ---
-title: BoundsControl
+title: Bounds control
 description: Overview on Bounds Control in MRTK
 author: thalbern
 ms.author: bethalha
@@ -178,7 +178,7 @@ Bounds control provides the following events. This example uses these events to 
 
 ## Elastics (Experimental)
 
-Elastics can be used when manipulating objects via bounds control. Note that the [elastics system](../elastics/elastic-system.md) is still in experimental state. To enable elastics either link an existing elastics manager component or create and link a new elastics manager via the `Add Elastics Manager` button.
+Elastics can be used when manipulating objects via bounds control. Note that the [elastics system](../experimental/elastic-system.md) is still in experimental state. To enable elastics either link an existing elastics manager component or create and link a new elastics manager via the `Add Elastics Manager` button.
 
 <img src="../images/bounds-control/MRTK_BoundsControl_Elastics.png" width="450" alt="Bounds control Elastics">
 
@@ -314,4 +314,4 @@ For upgrading individual instances of bounding box there's also an a migration o
 * [Object manipulator](object-manipulator.md)
 * [Constraint manager](constraint-manager.md)
 * [Migration window](../tools/migration-window.md)
-* [Elastics system (Experimental)](../elastics/elastic-system.md)
+* [Elastics system (Experimental)](../experimental/elastic-system.md)

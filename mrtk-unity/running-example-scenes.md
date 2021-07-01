@@ -1,5 +1,5 @@
 ---
-title: Running the example scenes
+title: Example scenes
 description: Learn how to acquire and use MRTK's example scenes.
 author: cre8ivepark
 ms.author: dongpark

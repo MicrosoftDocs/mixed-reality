@@ -1,5 +1,5 @@
 ---
-title: Hover Light
+title: Hover light
 description: Documentation on HoverLight with Examples in MRTK
 author: keveleigh
 ms.author: kurtie
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Hover Light,
 ---
 
-# Hover Light
+# Hover light
 
 A [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) is a [Fluent Design System](https://www.microsoft.com/design/fluent/) paradigm that mimics a [point light](https://docs.unity3d.com/Manual/Lighting.html) hovering near the surface of an object. Often used for far away interactions, the application can control the properties of a Hover Light via the [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) component.
 

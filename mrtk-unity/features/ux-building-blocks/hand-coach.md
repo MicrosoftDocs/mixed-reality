@@ -1,5 +1,5 @@
 ---
-title: README_HandCoach
+title: Hand coach
 description: description and examples for Hand coach.
 author: CDiaz-MS
 ms.author: cadia

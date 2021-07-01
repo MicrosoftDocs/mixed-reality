@@ -1,5 +1,5 @@
 ---
-title: BoundingBox
+title: Bounding box
 description: Overview on Bounding Box in MRTK
 author: CDiaz-MS
 ms.author: cadia

@@ -1,5 +1,5 @@
 ---
-title: Scene System Getting Started
+title: Scene system getting started
 description: Landing page for scene system with MRTK
 author: polar-kev
 ms.author: kesemple
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Scene system overview
+# Scene system getting started
 
 ## When to use the scene system
 

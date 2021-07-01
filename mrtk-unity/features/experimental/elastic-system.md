@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, ElasticsSystem,
 ---
 
-# Elastic system (experimental)
+# Elastic system
 
 ![Elastic System](../images/elastics/Elastics_Main1.gif)
 

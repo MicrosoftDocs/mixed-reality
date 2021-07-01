@@ -1,5 +1,5 @@
 ---
-title: Material Instance
+title: Material instance
 description: Documentation on Material Instance and its uses in MRTK
 author: keveleigh
 ms.author: kurtie
