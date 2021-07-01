@@ -1,8 +1,8 @@
 ---
 title: What is Mixed Reality?
 description: Discussion on Mixed Reality, demomstrating the use of AR and VR devices on the Mixed Reality spectrum.
-author: brandonbray
-ms.author: branbray
+author: qianw211    
+ms.author: v-qianwen
 ms.date: 07/01/2021
 ms.topic: article
 keywords: Mixed Reality, holographic, AR, VR, MR, XR, augmented reality, virtual reality, explanation, case study, mixed reality headset, windows mixed reality headset, virtual reality headset, what is virtual reality, what is augmented reality
@@ -77,7 +77,7 @@ Most mobile phones on the market today have little to no environmental perceptio
 The experiences that overlay graphics, video streams, or holograms in the physical world are called augmented reality. The experiences that occlude your view to present a fully immersive digital experience are virtual reality. The experiences that can transition between augmented and virtual realities form Mixed Reality, where you can:
 
 * Place a digital object, such as a hologram, in the physical world, as if it were physically present.
-* Be personally and digitally present in the physical world, in the form of an avatar, to asynchronous collaborate with others at different points in time.
+* Be personally and digitally present in the physical world, in the form of an avatar, to asynchronously collaborate with others at different points in time.
 * <mark> Starting with a digital world, physical boundaries from the physical world like walls and furniture appear digitally within the experience to help users avoid physical objects.</mark>
 
 <br>
