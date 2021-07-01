@@ -20,6 +20,37 @@ In this tutorial, you will position the provided objects from the tutorial asset
 * Learn how to position objects in the scene
 * Learn how to use MRTK's Grid Object Collection feature
 
+## Importing the TextMeshPro Essential Resources
+The TextMeshPro Essential Resources are required by MRTK's UI elements. In the Unity menu, select **Window** > **TextMeshPro** > **Import TMP Essential Resources** to open the Import Unity Package window:
+
+![Unity Import TMP Essential Resources menu path](images/mr-learning-base/base-02-section3-step1-1.png)
+
+In the Import Unity Package window, click the **All** button to ensure all the assets are selected, then click the **Import** button to import the assets:
+
+![Unity TMP Essential Resources import window](images/mr-learning-base/base-02-section3-step1-2.png)
+
+## Importing the tutorial assets
+
+Download the following Unity custom package. This package includes 3D assets such as Mars Rover that we are going to use in this tutorial.
+
+* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.5.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage)
+
+To Import a Unity custom package, In the Unity menu, select **Assets** > **Import Package** > **Custom Package...** to open the Import package... window:
+
+![Importing a custom package](images/mr-learning-base/base-02-section7-step1-1.png)
+
+In the Import package... window, select the **MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage** you downloaded and click the Open button:
+
+![Selecting an asset package](images/mr-learning-base/base-02-section7-step1-2.png)
+
+In the Import Unity Package window, click the All button to ensure all the assets are selected, then click the Import button to import the assets:
+
+![Selecting all the assets to import](images/mr-learning-base/base-02-section7-step1-3.png)
+
+After you have imported the tutorial assets your Project window should look similar to this:
+
+![Unity project window after importing assets](images/mr-learning-base/base-02-section7-step1-4.png)
+
 ## Creating the parent object
 
 In the Hierarchy window, right-click on an empty spot, and select **Create Empty** to add an empty object to your scene:
