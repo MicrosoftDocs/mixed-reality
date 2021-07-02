@@ -1,19 +1,16 @@
 ---
 title: What is a hologram?
 description: HoloLens lets you view and interact with three-dimensional holograms, objects made of light and sound that appear in the world around you.
-author: hferrone
-ms.author: v-hferrone
-ms.date: 03/21/2018
+author: qianw211
+ms.author: v-qianwen
+ms.date: 07/01/2021
 ms.topic: article
 keywords: Windows Mixed Reality, HoloLens, holograms, design, interaction, mixed reality headset, windows mixed reality headset, what is augmented reality
 ---
 
 # What is a hologram?
 
-<iframe width="940" height="530" src="https://www.youtube.com/embed/MVXH5V8MVQo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-HoloLens lets you create **holograms**, which are objects made of light and sound that appear in the world around you like real objects. Holograms respond to your [gaze](../design/gaze-and-commit.md), [gestures](../design/gaze-and-commit.md#composite-gestures), and [voice commands](../design/voice-input.md). They can even interact with [real-world surfaces](../design/spatial-mapping.md) around you. With holograms, you can create digital objects that are part of your world.
+HoloLens lets you view **holograms**, which are objects made of light and sound that appear in the world around you like real objects. Holograms can respond to your [gaze](../design/gaze-and-commit.md), [gestures](../design/gaze-and-commit.md#composite-gestures), and [voice commands](../design/voice-input.md). They can even interact with [real-world surfaces](../design/spatial-mapping.md) around you. Holograms are digital objects that are part of your world.
 
 <br>
 
@@ -44,7 +41,7 @@ HoloLens lets you create **holograms**, which are objects made of light and soun
 
 ---
 
-## A hologram is made of light and sound
+## A hologram is made of light and sound**
 
 The holograms that HoloLens [renders](../develop/platform-capabilities-and-apis/rendering.md) appear in the holographic frame directly in front of the user's eyes. Holograms add light to your world, which means that you see both the light from the display and the light from your surroundings. HoloLens doesn't remove light from your eyes, so holograms can't be rendered with the color black. Instead, black content appears as transparent.
 
@@ -56,7 +53,8 @@ Holograms can also make [sounds](../design/spatial-sound.md), which will appear 
 
 <br>
 
----
+<iframe width="940" height="530" src="https://www.youtube.com/embed/MVXH5V8MVQo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ## A hologram can be placed in the world or tag along with you
 
