@@ -14,6 +14,10 @@ HoloLens lets you view **holograms**, which are objects made of light and sound 
 
 <br>
 
+<iframe width="940" height="530" src="https://www.youtube.com/embed/MVXH5V8MVQo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
 ## Device support
 
 <table>
@@ -50,11 +54,6 @@ Holograms can have many different appearances and behaviors. Some are realistic 
 ![Hands manipulating a hologram](images/hologram-hands-940px.jpg)
 
 Holograms can also make [sounds](../design/spatial-sound.md), which will appear to come from a specific place in your surroundings. On HoloLens, sound comes from two speakers that are located directly above your ears, without covering them. Similar to the displays, the speakers are additive, introducing new sounds without blocking the sounds from your environment.
-
-<br>
-
-<iframe width="940" height="530" src="https://www.youtube.com/embed/MVXH5V8MVQo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 ## A hologram can be placed in the world or tag along with you
 
