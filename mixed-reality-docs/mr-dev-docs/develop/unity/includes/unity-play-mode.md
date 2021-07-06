@@ -28,7 +28,7 @@
 1. On your HoloLens, start the **Holographic Remoting Player** app.
 1. In Unity, go to the **Edit** menu and select **Project Settings**.
 1. Select **XR Plug-in Management**.
-1. Ensure the **Windows Standalone** tab is selected, find **Windows Mixed Reality** in the list, and check its checkbox.
+1. Ensure the **PC, Mac & Linux Standalone** tab is selected, find **Windows Mixed Reality** in the list, and check its checkbox.
 1. Next, go to the **Window** menu, expand the **XR** submenu, and select **Windows XR Plugin Remoting**.
 1. Set **Emulation Mode** to **Remote to Device**.
 1. For **Remote Machine**, enter the IP address of your HoloLens.
