@@ -49,7 +49,7 @@ HoloLens lets you view **holograms**, which are objects made of light and sound 
 
 ### Light
 
-The holograms that HoloLens [renders](../develop/platform-capabilities-and-apis/rendering.md) appear in the holographic frame directly in front of users' eyes. Holograms add light to your world, which means that you see both the light from the display and the light from your surrounding world. HoloLens doesn't remove light from your eyes, so holograms can't be rendered with the color black. 
+The holograms that HoloLens [renders](../develop/platform-capabilities-and-apis/rendering.md) appear in the holographic frame directly in front of users' eyes. Holograms add light to your world, which means that you see both the light from the display and the light from your surrounding world. Since HoloLens uses an additive display that adds light, the black color will be rendered transparent. 
 
 Holograms can have very different appearances and behaviors. Some are realistic and solid, and others are cartoonish and ethereal. You can use holograms to highlight features in your environment or use them as elements in your app's user interface.
 
@@ -61,7 +61,7 @@ Holograms can also produce [sounds](../design/spatial-sound.md), which appear to
 
 ## A hologram can be placed in the world or tag along with you
 
-When you have a fixed location for a hologram, you can [place](../design/coordinate-systems.md) it precisely at that point in the world. As you walk around, the hologram appears stable based on the world around you. If you use a [spatial anchor](../design/coordinate-systems.md#spatial-anchors) to pin the object, the system can even remember where you left it when you come back later.
+When you have a fixed location for a hologram, you can [place](../design/coordinate-systems.md) it precisely at that point in the world. As you walk around, the hologram appears stationary based on the world around you, just like a physical object. If you use a [spatial anchor](../design/coordinate-systems.md#spatial-anchors) to pin the object, the system can even remember where you left it when you come back later.
 
 ![Two men using Microsoft Dynamics 365 Layout in a retail space](images/HLS19_retailLayoutHologram_001-940px.jpg)
 
@@ -91,7 +91,7 @@ Holograms aren't only about light and sound; they're also an active part of your
 
 ![Group of government utility workers using Microsoft HoloLens 2 to collaborate on a wind farm development project](images/HLS19_governmentUtilitiesHologram_001-940px.jpg)
 
-Holograms enable personal interactions that aren't possible elsewhere. Because the HoloLens knows where it is in the world, a holographic character can follow you with its eyes as you walk around the room.
+Holograms enable personal interactions that aren't possible elsewhere. Because the HoloLens knows where it is in the world, a holographic character can look at you directly in the eyes and start a conversation with you.
 
 A hologram can also interact with your surroundings. For example, you can place a holographic bouncing ball above a table. Then, with an [air tap](../design/gaze-and-commit.md#composite-gestures), watch the ball bounce, and make sound as it hits the table.
 

@@ -11,11 +11,11 @@ ms.localizationpriority: high
 
 # What is Mixed Reality?
 
-Mixed reality is the fourth wave in computing followed by mainframes, PCs, and smartphones. Mixed reality is going mainstream for consumers and businesses.  It liberates us from screen-bound experiences, by offering instinctual interactions with data in our living spaces, among our things, and with our friends.  Online explorers, in hundreds of millions around the world, have experienced mixed reality through their handheld devices.
+Mixed reality is the next wave in computing followed by mainframes, PCs, and smartphones. Mixed reality is going mainstream for consumers and businesses.  It liberates us from screen-bound experiences, by offering instinctual interactions with data in our living spaces, among our things, and with our friends.  Online explorers, in hundreds of millions around the world, have experienced mixed reality through their handheld devices.  Mobile AR offers the most mainstream mixed reality solutions today on social media. People may not even realize that the AR filters they use on Instagram are Mixed Reality experiences.  Microsoft Mixed Reality is to take all these user experiences to the next level with a combination of truly stunning holographic representations of people, high fidelity holographic 3D models and the real world around them.
 
 ![Point and commit with hands on HoloLens 2](images/02_MixedRealitySlashMixedReality.png)
 
-Mixed Reality is a blend of physical and digital worlds, that makes human, computer, and environment interactions possible. This new reality is based on advancements in computer vision, graphical processing, display technologies, input systems, and cloud computing. The term Mixed Reality was introduced in a 1994 paper by Paul Milgram and Fumio Kishino, "[A Taxonomy of Mixed Reality Visual Displays](https://search.ieice.org/bin/summary.php?id=e77-d_12_1321)." Their paper explored the concept of a *virtuality continuum* and the taxonomy of visual displays. Since then, the application of Mixed Reality has gone beyond displays to include:
+Mixed Reality is a blend of physical and digital worlds, unlocking natural and intuitive 3D human, computer, and environment interactions. This new reality is based on advancements in computer vision, graphical processing, display technologies, input systems, and cloud computing. The term Mixed Reality was introduced in a 1994 paper by Paul Milgram and Fumio Kishino, "[A Taxonomy of Mixed Reality Visual Displays](https://search.ieice.org/bin/summary.php?id=e77-d_12_1321)." Their paper explored the concept of a *virtuality continuum* and the taxonomy of visual displays. Since then, the application of Mixed Reality has gone beyond displays to include:
 
 * Environmental input.
 * Spatial sound.
@@ -31,9 +31,9 @@ Mixed Reality is a blend of physical and digital worlds, that makes human, compu
 
 ## Environmental input and perception
 
-In the past decades, the relationship between human and computer has continued to evolve by the means of input methods.  A new discipline emerged, which is known as human computer interaction or HCI. Human input can now include keyboards, mice, touch, ink, voice, and Kinect skeletal tracking.
+In the past decades, the relationship between humans and computers has continued to evolve by the means of input methods.  A new discipline emerged, which is known as human-computer interaction or HCI. Human input can now include keyboards, mice, touch, ink, voice, and Kinect skeletal tracking.
 
-Advancements in sensors and processing power are creating new computer perceptions of environments based on advanced input methods. API names in Windows that reveal environmental information are called the [perception APIs](/uwp/api/Windows.Perception). Environmental inputs can capture: 
+Advancements in sensors and processing power are creating new computer perceptions of environments based on advanced input methods. This is why API names in Windows that reveal environmental information are called the [perception APIs](/uwp/api/Windows.Perception). Environmental inputs can capture: 
 
 * a person's body position in the physical world ([head tracking](../design/coordinate-systems.md)) 
 * objects, surfaces, and boundaries ([spatial mapping](../design/spatial-mapping.md) and [scene understanding](../design/scene-understanding.md)) 
@@ -50,11 +50,11 @@ Advancements in sensors and processing power are creating new computer perceptio
 
 A combination of the three essential elements sets the stage for creating true Mixed Reality experiences:
 
-* Computer processing powered by the cloud.
-* Advanced input methods.
-* Environmental perceptions.
+* Computer processing powered by the cloud
+* Advanced input methods
+* Environmental perceptions
 
-As we move through the physical world, our movements are mapped in a digital reality. <mark> Boundaries in the physical world influence application experiences, such as game play, in the digital world. </mark> With environmental input and perceptions, experiences start to blend between physical and digital realities.
+As we move through the physical world, our movements are mapped in a digital reality. <mark> Boundaries in the physical world influence application experiences, such as console-based video games or task-based guidance in a manufacturing facility, in the digital world. </mark> With environmental input and perceptions, experiences start to blend between physical and digital realities.
 
 <br>
 
