@@ -3,14 +3,14 @@ title: Quality Fundamentals
 description: Learn about the Quality Fundamentals of designing mixed reality applications.
 author: qianw211
 ms.author: v-qianwen
-ms.date: 06/30/2021
+ms.date: 07/07/2021
 ms.topic: article
 keywords: quality fundamentals, case study, project, sample, MRTK, Mixed Reality Toolkit, Unity, sample apps, example apps, open source, Microsoft Store, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 # Quality Fundamentals
 
-Welcome to the Quality Fundamentals sample application for HoloLens 2.  This sample app is a go to place for us to learn about the Quality Fundamentals of designing mixed reality applications.  We can experience performance issues in real-time by selecting the options provided in the app.
+Quality Fundamentals is a HoloLens 2 app that demonstrates the fundamentals of building a great mixed reality experience.  We can experience common evironmental, design, and performance issues and solutions in real-time by selecting the options provided in the app.
 
 To download and install the app, go to the app download page:
 
@@ -22,24 +22,24 @@ To download and install the app, go to the app download page:
 In this sample app, we'll learn about:
 
 >[!div class = "checklist"]
-> * [Device I/O and environment](#device-io-and-environment): How the enviroment can affect HoloLens' performance.
-> * [Spatial Anchors](#anchor-fundamentals): Spatial Anchors can help align holograms to a physical space.
+> * [Device I/O and environment](#device-io-and-environment): How the environmental factors can affect HoloLens' performance.
+> * [Spatial Anchors](#anchor-fundamentals): How to align holograms to a physical space by using spatial anchors.
 > * [Holographic stability and fidelity](#stability-and-fidelity): Explore techniques to help improve the stability and fidelity of Holograms.
 > * [3D asset fundamentals](#3d-asset-fundamentals): How to optimize 3D assets to maintain high visual fidelity. 
 
 ## Device I/O and environment
 
-Start the Quality Fundamentals app on HoloLens.  As the app's homepage appears, select **Device I/O and Environment**.  We will explore how the HoloLens sensors and the surrounding environment can affect spatial mapping, tracking and the placement of holograms. 
+Start the Quality Fundamentals app on HoloLens. Once the app's homepage appears, select **Device I/O and Environment**.  We'll explore how the HoloLens sensors and the surrounding environment affect spatial mapping, tracking and the placement of holograms. 
 
 ### Surfaces
 
-Mirrors or surfaces with mirrored finishes can confuse the HoloLens sensors about the shape of the object.  Objects reflected on the surface may be interpreted by the device as changing environment, which can cause the device to loose tracking.  If mirrored surfaces are causing challenges for HoloLens, consider adding a screen or closable blinds.
+Mirrors or surfaces with mirrored finishes can confuse the HoloLens sensors about the shape of the object.  Objects reflected on the surface may be interpreted by the device as changing environment, which can cause the device to lose tracking.  If mirrored surfaces are causing challenges for HoloLens, consider adding a screen or closable blinds.
 
 For more information, see [surfaces in a space](/hololens/hololens-environment-considerations#surfaces-in-a-space) in [HoloLens environment considerations](/hololens/hololens-environment-considerations).
 
 ### Lighting
 
-Mixed reality uses visual light to track a user's location.  HoloLens sensors can be affected by either very low or very bright light conditions.  HoloLens sensors operate the best when the surrounding light is 500-1000 lux as measured by a luxmeter.
+HoloLens performance can be negatively impacted by either very low or very bright light conditions.  The tracking sensors on the HoloLens need around 500-1000 lux of light to operate optimally. You can use a luxmeter or mobile app to measure the amount of light in your space.
 
 For more information, see [lighting](/hololens/hololens-environment-considerations?branch=pr-en-us-3071#lighting) in [HoloLens environment considerations](/hololens/hololens-environment-considerations).
 
@@ -79,7 +79,7 @@ For more information, see [frame rate](/windows/mixed-reality/develop/platform-c
 
 ### Late stage reprojection (LSR)
 
-Reprojection adjusts for the motion and change of the point of view as a user moves.  Try out the different reprojection options provided by this part of the app to see the difference in hologram quality.
+Reprojection is used to stabilize holograms as users move around their space.  Try out the different reprojection options provided by this part of the app to see the difference in hologram quality.
 
 ![Try the different reprojection options to experience the difference.](images\qf-lsr-modes.jpg)
 
@@ -87,7 +87,7 @@ For detailed information, see [reprojection](/windows/mixed-reality/develop/plat
 
 ### Z-fighting
 
-Z-fighting occurs when the mixed reality application cannot discern which object is in front of the other.  We'll notice flickering of the holographic objects as they fight for the same z-depth value.  Experience the effects of z-fighting in the app by changing the placement of a holographic object, the logo on a bicycle in this case.
+Z-fighting occurs when the mixed reality application cannot discern which object is in front of the other.  You'll notice flickering of the holographic objects as they fight for the same z-depth value.  Experience the effects of z-fighting in the app by changing the placement of a holographic object, the logo on a bicycle in this case.
 
 ![Experience z-fighting with object placements.](images\qf-z-fighting.jpg)
 
