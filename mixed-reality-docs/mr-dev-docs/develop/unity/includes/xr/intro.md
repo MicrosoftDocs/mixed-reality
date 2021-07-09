@@ -7,21 +7,21 @@ The Mixed Reality OpenXR plugin fully supports AR Foundation 4.0, providing ARPl
 ### Prerequisites 
 
 * Latest [tools for HoloLens 2 development](../../../install-the-tools.md?tabs=unity#installation-checklist)
-* Latest Unity 2020.3 LTS (2020.3.8f1 or later strongly recommended)
+* Latest Unity 2020.3 LTS: version 2020.3.8f1 or later
 
 ### Recommended package versions
 
-The instructions in this page will set you up with the latest and greatest Unity and OpenXR requirements listed below:
+The instructions in this page will set you up with the core Unity OpenXR packages required to deploy HoloLens 2 or Windows Mixed Reality apps:
 
-* Latest Unity OpenXR plugin: version 1.2 or later strongly recommended
-* Latest Mixed Reality OpenXR plugin: version 1.0.0 or later strongly recommended
-* MRTK: if used, version 2.7.2 or later strongly recommended
+* Unity OpenXR plugin: version 1.2 or later
+* Mixed Reality OpenXR plugin: version 1.0.0 or later
 
 If you use the following packages in your project, you will need to ensure that you use at least the minimum versions listed below:
 
-* Universal Render Pipeline (URP): if used, version 10.5.1 or later required
-* Azure Spatial Anchors: if used, version 2.10 or later required
-* Azure Remote Rendering: if used, version 1.0.15 or later required
+* MRTK: version 2.7.2 or later
+* Universal Render Pipeline (URP): version 10.5.1 or later
+* Azure Spatial Anchors: version 2.10 or later
+* Azure Remote Rendering: version 1.0.15 or later
 
 <!-- ![Screenshot of the open xr unity basic sample running on a HoloLens](../../images/openxr-example.png) -->
 
