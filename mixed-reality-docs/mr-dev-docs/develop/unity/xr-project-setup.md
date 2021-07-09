@@ -26,10 +26,6 @@ The easiest way to get your Unity project set up for mixed reality is with the M
 
 MRTK provides a cross-platform input system, foundational components, and common building blocks for spatial interactions.  With MRTK version 2, you can speed up your application development for Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and many other VR/AR devices. The project is aimed at reducing barriers to entry, enabling everyone to build mixed reality applications and contribute back to the community as we all grow.
 
-<br />
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCG]
-
 [!INCLUDE[](includes/xr/mrtk-next-step.md)]
 
 To learn more about the Mixed Reality Toolkit, check out the [MRTK documentation](/windows/mixed-reality/mrtk-unity).
