@@ -79,7 +79,7 @@ The experiences that overlay graphics, video streams, or holograms in the physic
 
 * Place a digital object, such as a hologram, in the physical world, as if it were physically present.
 * Be personally and digitally present in the physical world, in the form of an avatar, to asynchronously collaborate with others at different points in time.
-* In virtual reality, physical boundaries like walls and furniture appear digitally within the experience to help users avoid running into physical obstacles.
+* In virtual reality, physical boundaries like walls and furniture appear digitally within the experience for users to avoid running into physical obstacles.
 
 <br>
 
