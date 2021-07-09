@@ -19,14 +19,13 @@ The instructions in this page will set you up with the core Unity OpenXR package
 If you use the following packages in your project, you will need to ensure that you use at least the minimum versions listed below:
 
 * MRTK: version 2.7.2 or later
+* AR Foundation: version 4.1.1 or later
 * Universal Render Pipeline (URP): version 10.5.1 or later
 * Azure Spatial Anchors: version 2.10 or later
 * Azure Remote Rendering: version 1.0.15 or later
 
-<!-- ![Screenshot of the open xr unity basic sample running on a HoloLens](../../images/openxr-example.png) -->
-
 > [!NOTE]
-> If you're building VR applications on Windows PC, the Mixed Reality OpenXR plugin is not necessarily required. However, you'll want to install the plugin if you're customizing controller mapping for HP Reverb G2 controllers or building apps that work on both HoloLens 2 and VR headsets.
+> If you're building VR applications on Windows PC, the Mixed Reality OpenXR plugin is not strictly required. However, you'll want to install the plugin if you're setting up input bindings for HP Reverb G2 controllers or building apps that work on both HoloLens 2 and VR headsets.
 
 # [Windows XR](#tab/windowsxr)
 
