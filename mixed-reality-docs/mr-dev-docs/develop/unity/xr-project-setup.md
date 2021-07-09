@@ -10,10 +10,11 @@ keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality headset,
 
 # Setting up your XR configuration
 
-When you start a new Unity project, you have three different options for handling your XR needs: 
-* OpenXR plugin
-* Windows XR plugin
-* Legacy XR
+Once you've [chosen a Unity version](choosing-unity-version.md), the next step is to select the XR configuration you'll use to build your mixed reality app:
+
+## Choosing an XR configuration
+
+When you start a new Unity project, you have various XR configurations you can select from: the **Mixed Reality OpenXR plugin**, the **Windows XR plugin** and **Legacy Built-in XR**.
 
 [!INCLUDE[](includes/xr/intro.md)]
 
@@ -35,6 +36,6 @@ To learn more about the Mixed Reality Toolkit, check out the [MRTK documentation
 
 ## Manual setup without MRTK
 
-While Microsoft and the community have created open source tools such as the [Mixed Reality Toolkit (MRTK)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html) that will automatically set up your environment for mixed reality, some developers may wish to build their experiences from the ground up.
+While Microsoft and the community have created open source tools such as the [Mixed Reality Toolkit (MRTK)](/windows/mixed-reality/mrtk-unity) that will automatically set up your environment for mixed reality, some developers may wish to build their experiences from the ground up.
 
 [!INCLUDE[](includes/xr/manual-setup.md)]
