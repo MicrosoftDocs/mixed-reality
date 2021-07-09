@@ -1,6 +1,6 @@
 # [OpenXR](#tab/openxr)
 
-The Mixed Reality OpenXR plugin is **Microsoft's recommendation** for Unity 2020 LTS or later. As new features are developed in the future, they will only be included in the Mixed Reality OpenXR plugin going forward.
+The Mixed Reality OpenXR plugin is **Microsoft's recommendation** for **Unity 2020 LTS** or later. As new features are developed in the future, they will only be included in the Mixed Reality OpenXR plugin going forward.
 
 The Mixed Reality OpenXR plugin fully supports AR Foundation 4.0, providing ARPlaneManager and ARRaycastManager implementations. This enables you to write raycasting code once that then spans HoloLens 2 and ARCore/ARKit phones and tablets.
 
@@ -29,7 +29,7 @@ If you use the following packages in your project, you will need to ensure that 
 
 # [Windows XR](#tab/windowsxr)
 
-Microsoft doesn't recommend using the Windows XR plugin for any new projects in Unity 2020.
+Microsoft doesn't recommend using the Windows XR plugin for any new projects in Unity 2020.  Instead, you should use the Mixed Reality OpenXR plugin.
 
 However, if you're using Unity 2019 and you need AR Foundation 2.0 for compatibility with ARCore/ARKit devices, this plugin enables that support.
 
@@ -38,6 +38,8 @@ However, if you're using Unity 2019 and you need AR Foundation 2.0 for compatibi
 
 # [Legacy XR](#tab/legacy)
 
-If you're still on Unity 2019 or earlier, Microsoft recommends using the Legacy Built-in XR support.
+If you're still on **Unity 2019** or earlier, Microsoft recommends using the **Legacy Built-in XR support**.
 
 While the Windows XR plugin is functional on Unity 2019, it's not recommended because this plugin is not compatible with Azure Spatial Anchors on Unity 2019.
+
+If you're starting a new project, we recommend [installing Unity 2020 instead](choosing-unity-version.md) and using the Mixed Reality OpenXR plugin.

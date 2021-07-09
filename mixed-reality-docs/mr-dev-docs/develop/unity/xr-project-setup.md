@@ -13,7 +13,7 @@ keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality headset,
 When you start a new Unity project, you have three different options for handling your XR needs: 
 * OpenXR plugin
 * Windows XR plugin
-* Legacy XR plugin
+* Legacy XR
 
 [!INCLUDE[](includes/xr/intro.md)]
 
