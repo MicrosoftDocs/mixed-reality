@@ -17,9 +17,10 @@ Mixed reality is the next wave in computing followed by mainframes, PCs, and sma
 
 Mixed Reality is a blend of physical and digital worlds, unlocking natural and intuitive 3D human, computer, and environment interactions. This new reality is based on advancements in computer vision, graphical processing, display technologies, input systems, and cloud computing. The term Mixed Reality was introduced in a 1994 paper by Paul Milgram and Fumio Kishino, "[A Taxonomy of Mixed Reality Visual Displays](https://search.ieice.org/bin/summary.php?id=e77-d_12_1321)." Their paper explored the concept of a *virtuality continuum* and the taxonomy of visual displays. Since then, the application of Mixed Reality has gone beyond displays to include:
 
-* Environmental input.
+* Environmental understanding: spatial mapping and anchors.
+* Human understanding: hand-tracking, eye-tracking, and speech input.
 * Spatial sound.
-* Locations and positioning in both real and virtual spaces.
+* Locations and positioning in both physical and virtual spaces.
 * Collaboration on 3D assets in mixed reality spaces.
 
 ![The Mixed Reality spectrum image](images/mixedrealityspectrum-worlds.png)<br>
@@ -54,7 +55,7 @@ A combination of the three essential elements sets the stage for creating true M
 * Advanced input methods
 * Environmental perceptions
 
-As we move through the physical world, our movements are mapped in a digital reality. <mark> Boundaries in the physical world influence application experiences, such as console-based video games or task-based guidance in a manufacturing facility, in the digital world. </mark> With environmental input and perceptions, experiences start to blend between physical and digital realities.
+As we move through the physical world, our movements are mapped in a digital reality. Physical boundaries influence mixed reality experiences in the digital world, such as games or task-based guidance in a manufacturing facility. With environmental input and perceptions, experiences start to blend between physical and digital realities.
 
 <br>
 
@@ -78,7 +79,7 @@ The experiences that overlay graphics, video streams, or holograms in the physic
 
 * Place a digital object, such as a hologram, in the physical world, as if it were physically present.
 * Be personally and digitally present in the physical world, in the form of an avatar, to asynchronously collaborate with others at different points in time.
-* <mark> Starting with a digital world, physical boundaries from the physical world like walls and furniture appear digitally within the experience to help users avoid physical objects.</mark>
+* In virtual reality, physical boundaries like walls and furniture appear digitally within the experience to help users avoid running into physical obstacles.
 
 <br>
 
