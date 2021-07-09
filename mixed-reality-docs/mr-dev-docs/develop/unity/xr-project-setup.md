@@ -10,41 +10,28 @@ keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality headset,
 
 # Setting up your XR configuration
 
-When you start a new Unity project, you have three different options for handling your XR needs: 
-* OpenXR plugin
-* Windows XR plugin
-* Legacy XR plugin
+Once you've [chosen a Unity version](choosing-unity-version.md), the next step is to select the XR configuration you'll use to build your mixed reality app:
+
+## Choosing an XR configuration
+
+When you start a new Unity project, you have various XR configurations you can select from: the **Mixed Reality OpenXR plugin**, the **Windows XR plugin** and **Legacy Built-in XR**.
 
 [!INCLUDE[](includes/xr/intro.md)]
 
 ## Setting up your project with MRTK
 
-MRTK for Unity provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. MRTK version 2 intends to speed up application development for Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and OpenVR platform. The project is aimed at reducing barriers to entry, creating mixed reality applications, and contributing back to the community as we all grow.
+The easiest way to get your Unity project set up for mixed reality is with the Mixed Reality Toolkit (MRTK).  MRTK for Unity is an open-source, cross-platform development kit designed to make it easy to build amazing mixed reality applications.
 
-> [!div class="nextstepaction"]
-> [Try out our MRTK tutorials](./tutorials/mr-learning-base-02.md?tabs=winxr)
+![MRTK](../../design/images/MRTK_UX_Hero.png)
 
-Take a look at [MRTK's documentation](/windows/mixed-reality/mrtk-unity) for more feature details.
+MRTK provides a cross-platform input system, foundational components, and common building blocks for spatial interactions.  With MRTK version 2, you can speed up your application development for Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and many other VR/AR devices. The project is aimed at reducing barriers to entry, enabling everyone to build mixed reality applications and contribute back to the community as we all grow.
 
-### Using MRTK with OpenXR support
+[!INCLUDE[](includes/xr/mrtk-next-step.md)]
 
-MRTK-Unity 2.7 release provides better supports for the Mixed Reality OpenXR plugin.
-
-Open the [Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md) again to install the Mixed Reality Toolkit, if you haven't already. OpenXR support is in the **Foundation** package.
-
-See the MRTK documentation for [more in-depth information on migrating to OpenXR](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk#configuring-mrtk-for-the-xr-sdk-pipeline).
-
-> [!NOTE]
-> When upgrading from a previous version of MRTK older than **2.5.3**, ensure the following line is in the **Assets/MixedRealityToolkit.Generated/link.xml** file:
->
-> ```xml
-> <assembly fullname = "Microsoft.MixedReality.Toolkit.Providers.OpenXR" preserve="all"/>
-> ```
->
-> This line will be added by default if you started with MRTK 2.5.4 or newer.
+To learn more about the Mixed Reality Toolkit, check out the [MRTK documentation](/windows/mixed-reality/mrtk-unity).
 
 ## Manual setup without MRTK
 
-While Microsoft and the community have created opensource tools such as the [Mixed Reality Toolkit (MRTK)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html) that will automatically set up the WMR environment, many developers wish to build their experiences from the ground up.
+While Microsoft and the community have created open source tools such as the [Mixed Reality Toolkit (MRTK)](/windows/mixed-reality/mrtk-unity) that will automatically set up your environment for mixed reality, some developers may wish to build their experiences from the ground up.
 
 [!INCLUDE[](includes/xr/manual-setup.md)]

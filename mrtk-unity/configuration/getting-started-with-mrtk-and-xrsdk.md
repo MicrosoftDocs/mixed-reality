@@ -43,7 +43,7 @@ Go into **Unity's Package Manager** and install the Windows XR Plugin package, w
 
 1. Follow the [How to configure Oculus Quest in MRTK using the XR SDK pipeline](../supported-devices/oculus-quest-mrtk.md) guide to the end. The guide outlines the steps needed to configure both Unity and MRTK to use the XR SDK pipeline for the Oculus Quest.
 
-### OpenXR (Preview)
+### OpenXR
 
 > [!IMPORTANT]
 > OpenXR in Unity is only supported on Unity 2020.2 and higher.

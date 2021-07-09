@@ -26,12 +26,10 @@ If you're targeting HoloLens 2, you need to switch to the Universal Windows Plat
 To set OpenXR as the the runtime in Unity:
 
 1. In the Unity Editor, navigate to **Edit > Project Settings**
-2. In the list of Settings, select **XR Plugin Management**
-3. Select **Install XR Plugin Management** if it appears
-![Screenshot of Project Settings window open in unity editor with XR Plugin management highlighted](../../images/wmr-config-img-5.png)
-4. Check the **Initialize XR on Startup** box
-5. If targeting Desktop VR, stay on the PC Standalone tab (the monitor) and check the **OpenXR** and **Windows Mixed Reality feature set** boxes
-6. If targeting HoloLens 2, switch to the Universal Windows Platform tab (the Windows logo) and select the **OpenXR** and **Microsoft HoloLens feature set** boxes
+2. In the list of Settings, select **XR Plugin Management** (should already be installed if you installed the Mixed Reality OpenXR plugin using MRFT)
+3. Check the **Initialize XR on Startup** box
+4. If targeting Desktop VR, stay on the PC Standalone tab (the monitor) and check the **OpenXR** and **Windows Mixed Reality feature set** boxes
+5. If targeting HoloLens 2, switch to the Universal Windows Platform tab (the Windows logo) and select the **OpenXR** and **Microsoft HoloLens feature set** boxes
 
 ![Screenshot of the project settings panel open in the Unity editor with XR Plug-in management highlighted](../../images/openxr-img-05.png)
 
