@@ -42,4 +42,4 @@ If you're still on **Unity 2019** or earlier, Microsoft recommends using the **L
 
 While the Windows XR plugin is functional on Unity 2019, it's not recommended because this plugin is not compatible with Azure Spatial Anchors on Unity 2019.
 
-If you're starting a new project, we recommend [installing Unity 2020 instead](choosing-unity-version.md) and using the Mixed Reality OpenXR plugin.
+If you're starting a new project, we recommend [installing Unity 2020 instead](../../choosing-unity-version.md) and using the Mixed Reality OpenXR plugin.
