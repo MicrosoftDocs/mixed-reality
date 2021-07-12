@@ -161,4 +161,4 @@ You have implemented speech recognition powered by Azure. Run the application on
 In the next tutorial, you will learn how to execute commands using Azure speech recognition.
 
 > [!div class="nextstepaction"]
-> [Next tutorial: 2. Using speech recognition to execute commands](mrlearning-speechSDK-ch2.md)
+> [Next tutorial: 2. Execute commands using Azure speech recognition](mrlearning-speechSDK-ch2.md)

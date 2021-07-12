@@ -61,7 +61,7 @@ Select **MixedRealityToolkit** object in the Hierarchy window, use the **Add Com
 
 > [!WARNING]
 > There is a known issue with ASA v2.9.0 and v2.10.0-preview.1 that requires two additional objects to be placed in the scene. Please use the **Add Component** button in the inspector window to add an AR Camera Manager (Script) and an AR Session (Script) to the **MixedRealityToolkit** object. Be sure to disable the Camera that is created automatically while adding the AR Camera Manager (Script) by unchecking the checkbox next to the Camera object in the inspector window. This issue will be addressed in the full release of ASA v2.10.0.
-> 
+>
 
 > [!NOTE]
 > When you add the AR Anchor Manager (Script) component, the AR Session Origin (Script) component is automatically added because it is required by the AR Anchor Manager (Script) component.
@@ -72,21 +72,21 @@ In this section, you will add scripts to the scene to create a series of button 
 
 In the Hierarchy window, expand the **ButtonParent** object and select the first child object named **StartAzureSession**, in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
-* Assign the **ParentAnchor** object to the **None (Object)** field
+* Assign the **ParentAnchor** object as a listener for the On Click () event by dragging it from the Hierarchy window into the **None (Object)** field
 * From the **No Function** dropdown, select **AnchorModuleScript** > **StartAzureSession ()** to set this function as the action to be executed when the event is triggered
 
 ![Unity with StartAzureSession button OnClick event configured](images/mr-learning-asa/asa-02-section5-step1-1.png)
 
 In the Hierarchy window, select the next button named **StopAzureSession**, then in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
-* Assign the **ParentAnchor** object to the **None (Object)** field
+* Assign the **ParentAnchor** object as a listener for the On Click () event by dragging it from the Hierarchy window into the **None (Object)** field
 * From the **No Function** dropdown, select **AnchorModuleScript** > **StopAzureSession ()** to set this function as the action to be executed when the event is triggered
 
 ![Unity with StopAzureSession button OnClick event configured](images/mr-learning-asa/asa-02-section5-step1-2.png)
 
 In the Hierarchy window, select the next button named **CreateAzureAnchor**, then in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
-* Assign the **ParentAnchor** object to the **None (Object)** field
+* Assign the **ParentAnchor** object as a listener for the On Click () event by dragging it from the Hierarchy window into the **None (Object)** field
 * From the **No Function** dropdown, select **AnchorModuleScript** > **CreateAzureAnchor ()** to set this function as the action to be executed when the event is triggered
 * Assign the **ParentAnchor** object to the empty **None (Game Object)** field to make it the argument for the CreateAzureAnchor () function
 
@@ -94,7 +94,7 @@ In the Hierarchy window, select the next button named **CreateAzureAnchor**, the
 
 In the Hierarchy window, select the next button named **RemoveLocalAnchor**,then in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
-* Assign the **ParentAnchor** object to the **None (Object)** field
+* Assign the **ParentAnchor** object as a listener for the On Click () event by dragging it from the Hierarchy window into the **None (Object)** field
 * From the **No Function** dropdown, select **AnchorModuleScript** > **RemoveLocalAnchor ()** to set this function as the action to be executed when the event is triggered
 * Assign the **ParentAnchor** object to the empty **None (Game Object)** field to make it the argument for the RemoveLocalAnchor () function
 
@@ -102,14 +102,14 @@ In the Hierarchy window, select the next button named **RemoveLocalAnchor**,then
 
 In the Hierarchy window, select the next button named **FindAzureAnchor**,then in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
-* Assign the **ParentAnchor** object to the **None (Object)** field
+* Assign the **ParentAnchor** object as a listener for the On Click () event by dragging it from the Hierarchy window into the **None (Object)** field
 * From the **No Function** dropdown, select **AnchorModuleScript** > **FindAzureAnchor ()** to set this function as the action to be executed when the event is triggered
 
 ![Unity with FindAzureAnchor button OnClick event configured](images/mr-learning-asa/asa-02-section5-step1-5.png)
 
 In the Hierarchy window, select the next button named **DeleteAzureAnchor**, then in the Inspector window, configure the **Button Config Helper (Script)** component's **On Click ()** event as follows:
 
-* Assign the **ParentAnchor** object to the **None (Object)** field
+* Assign the **ParentAnchor** object as a listener for the On Click () event by dragging it from the Hierarchy window into the **None (Object)** field
 * From the **No Function** dropdown, select **AnchorModuleScript** > **DeleteAzureAnchor ()** to set this function as the action to be executed when the event is triggered
 
 ![Unity with DeleteAzureAnchor button OnClick event configured](images/mr-learning-asa/asa-02-section5-step1-6.png)
