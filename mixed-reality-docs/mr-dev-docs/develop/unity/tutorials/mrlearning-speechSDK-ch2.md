@@ -1,6 +1,6 @@
 ---
-title: Adding an offline mode for local speech-to-text translation
-description: Complete this course to learn how to add offline mode for local speech-to-text translation in mixed reality applications.
+title: Execute commands using Azure speech recognition
+description: Complete this course to learn how to execute commands using Azure speech recognition in mixed reality applications.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/05/2021
@@ -9,7 +9,7 @@ keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit,
 ms.localizationpriority: high
 ---
 
-# 2. Adding an offline mode for local speech-to-text translation
+# 2. Execute commands using Azure speech recognition
 
 In this tutorial, you will add the ability to execute commands using Azure speech recognition which will allow you to make something happen based on the word or phrase you define.
 
