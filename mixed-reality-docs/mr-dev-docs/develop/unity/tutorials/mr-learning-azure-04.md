@@ -34,9 +34,16 @@ Learn how to make a [spatial anchor resource](/azure/spatial-anchors/quickstarts
 
 In this section, you will learn how to configure the scene and make the necessary changes.
 
+Select **MixedRealityToolkit** object in the Hierarchy window and use the **Add Component** button in the Inspector window to add the **AR Anchor Manager (Script)**
+
+![Unity MixedRealityToolkit object with AR Anchor Manager components added ](images/mr-learning-azure/tutorial4-section1-step1-1.png)
+
+> [!NOTE]
+> When you add the AR Anchor Manager (Script) component, the AR Session Origin (Script) component is automatically added because it is required by the AR Anchor Manager (Script) component.
+
 In the Project window, navigate to the **Assets > MRTK.Tutorials.AzureCloudServices > Prefabs > Manager**
 
-![Unity with AnchorManager prefab selected](images/mr-learning-azure/tutorial4-section1-step1-1.png)
+![Unity with AnchorManager prefab selected](images/mr-learning-azure/tutorial4-section1-step1-2.png)
 
 From the **Manager** folder, drag and drop the prefab **Anchor Manager** into the scene Hierarchy.
 
