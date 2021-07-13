@@ -83,11 +83,11 @@ Once Function App created click on **Finish** button.
 
 To update the connection string click on **3 dots** on **hosting** tab and select **Manage Azure App Service settings**
 
-![Publish function](images/mr-learning-azure/tutorial5-section3-step1-8.png)
+![open Application settings](images/mr-learning-azure/tutorial5-section3-step1-8.png)
 
 this opens the **Application Settings** window hear replace your AzureStorageConnectionString for both **Local** and **Remote** with your AzureStorageConnectionString. once replaced click on ok.
 
-![Publish function](images/mr-learning-azure/tutorial5-section3-step1-8a.png)
+![update connection string](images/mr-learning-azure/tutorial5-section3-step1-8a.png)
 
 Now lick on **Publish** button to publish the function and wait for publish.
 
