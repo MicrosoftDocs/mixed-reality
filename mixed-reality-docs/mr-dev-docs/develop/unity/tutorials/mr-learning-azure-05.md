@@ -77,17 +77,23 @@ Click on pulse button to create new Function App in azure account
 * For **Location**, choose a location close to your app users' physical location, for example, *(US) West US*
 * For **Resource Group** and **Storage**, choose respective azure group and storage account have been created in pervious chapters.
 
-Once Function App created click on **Finish** button 
+Once Function App created click on **Finish** button.
 
 ![Finish creating Function App](images/mr-learning-azure/tutorial5-section3-step1-7.png)
 
-A publish pop up will be opened after the finish process, click on **Publish** button to publish the function and wait for publish
+To update the connection string click on **3 dots** on **hosting** tab and select **Manage Azure App Service settings**
 
-![Publish function](images/mr-learning-azure/tutorial5-section3-step1-8.png)
+![open Application settings](images/mr-learning-azure/tutorial5-section3-step1-8.png)
+
+this opens the **Application Settings** window hear replace your AzureStorageConnectionString for both **Local** and **Remote** with your AzureStorageConnectionString. once replaced click on ok.
+
+![update connection string](images/mr-learning-azure/tutorial5-section3-step1-8a.png)
+
+Now lick on **Publish** button to publish the function and wait for publish.
 
 Once completion of publish click on **Manage in Azure portal** under Actions section it is take you to specific function in azure portal and click on **Configuration** which is under the *Settings* section. There on **Application Settings** you need to provide the *Connection string* to the **Azure Storage** where the **Tracked Objects** are stored. Click on **New Application setting** and use for name: **AzureStorageConnectionString** and for value provide the correct *Connection string*. After that click on **Save** and the **Azure Function** is ready to server the *Bot* which you will create next.
 
-To get URL of count and Find , select **Functions** which is under the *Functions* section. here you can find both Count and Find function, select Count function on top side you can find the *Get Function Url* button. 
+To get URL of count and Find , select **Functions** which is under the *Functions* section. here you can find both Count and Find function, select Count function on top side you can find the *Get Function Url* button.
 Follow the same procedure to get Find function Url.
 
 ### Creating a conversation Bot

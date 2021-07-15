@@ -68,10 +68,10 @@ The application is mainly driven by traditional UI, so you use the [Azure Bot Se
 * Some basic C# programming ability
 * A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
 * A connected webcam if you like to test from Unity editor
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019 LTS installed and the Universal Windows Platform Build Support module added
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2020/2019 LTS installed and the Universal Windows Platform Build Support module added
 
-> [!CAUTION]
-> The recommended Unity version for this tutorial series is Unity 2019 LTS. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
+> [!Important]
+> This tutorial series supports Unity 2020 LTS(currently 2020.3.x) if you are using Open XR or Windows XR Plugin and also Unity 2019 LTS (currently 2019.4.x) if you are using Legacy WSA. This supersedes any Unity version requirements stated in the prerequisites linked above.
 
 ## Creating and preparing the Unity project
 
@@ -85,38 +85,13 @@ First, follow the [Initializing your project and first application](mr-learning-
 4. [Importing the Mixed Reality Toolkit and Configuring the Unity project](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
 5. [Creating and configuring the scene](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) and give the scene a suitable name, for example, *AzureCloudServices*
 
-Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) instructions to ensure the MRTK configuration profile for your scene is **DefaultXRSDKConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
+Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) instructions to ensure the MRTK configuration profile for your scene is **DefaultHololens2ConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
 
-## Installing inbuilt Unity packages
+## Installing inbuilt Unity packages and Importing the tutorial assets
 
-In the Unity menu, select **Window** > **Package Manager** to open the Package Manager window, then select **AR Foundation** and click the **Install** button to install the package:
-
-![Unity Package Manager window with AR Foundation selected](images/mr-learning-asa/asa-02-section2-step1-1.png)
-
-> [!NOTE]
-> You are installing the AR Foundation package because the Azure Spatial Anchors SDK requires it, which you will import in the next section.
-
-## Importing the tutorial assets
-
-Add AzurespatialAnchors SDK V2.7.1 into your unity project, to add the packages please follow this [tutorial](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)
-
-Download and **import** the following Unity custom packages **in the order they are listed**:
-
-* [AzureStorageForUnity.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/AzureStorageForUnity.unitypackage)
-* [MRTK.Tutorials.AzureCloudServices.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/MRTK.Tutorials.AzureCloudServices.unitypackage)
-
-> [!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Importing the tutorial assets](mr-learning-base-04.md#importing-the-tutorial-assets) instructions.
-
-After you have imported the tutorial assets your Project window should look similar to this:
-
-![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-azure/tutorial1-section4-step1-1.png)
-
-> [!NOTE]
-> If you see any CS0618 warnings regarding 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' and 'WorldAnchor.GetNativeSpatialAnchorPtr()' being obsolete, you can ignore these warnings.
+[!INCLUDE[](includes/installing-packages-for-azure-cloud-services.md)]
 
 ## Creating and preparing the scene
-<!-- TODO: Consider renaming to 'Preparing the scene' -->
 
 In this section, you will prepare the scene by adding some of the tutorial prefabs.
 
@@ -124,7 +99,7 @@ In the Project window, navigate to **Assets** > **MRTK.Tutorials.AzureCloudServi
 
 ![Unity with SceneController, RootMenu and DataManager prefabs selected](images/mr-learning-azure/tutorial1-section5-step1-1.png)
 
-The **SceneController (prefab)** contains two scripts, **SceneController (script)** and **UnityDispatcher (script)**. The **SceneController** script component contains several UX functions and facilitates the photo capture functionality while **UnityDispatcher** is a helper class to allow execute actions on the Unity main thread.
+The **SceneController (prefab)** contains two scripts, **SceneController (script)** and **AppDispatcher (script)**. The **SceneController** script component contains several UX functions and facilitates the photo capture functionality while **AppDispatcher** is a helper class to allow execute actions on the Unity main thread.
 
 The **RootMenu (prefab)** is the primary UI prefab that holds all UI windows that are connected to each other through various small script components and control the general UX flow of the application.
 
