@@ -45,7 +45,6 @@ UI Gallery and Components page show all available components for your design.
 
 ![Figma Toolkit Example - Menu UI 2](images/UX_FigmaToolkit_Components_Menu2.png)<br>
 
-![Figma Toolkit Example - Menu UI 3](images/UX_FigmaToolkit_Components_Menu3.png)<br>
 
 ![Figma Toolkit Example - Menu UI 4](images/UX_FigmaToolkit_Components_Menu3a.png)<br>
 
