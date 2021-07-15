@@ -15,7 +15,7 @@ keywords: Figma, Sketch, Adobe XD, design, designer, design file, UX design, Hol
 MRTK Figma Toolkit provides 2D versions of the HoloLens 2 style UI controls that you can find in the MRTK for Unity or MRTK for Unreal. You can use this in the design process for creating UI layouts and storyboards.
 
 > [!div class="nextstepaction"]
-> [View Figma Toolkit](https://www.figma.com/file/ltLag9SxjUIyLQFsp7NNE7/Mixed-Reality-Toolkit-for-Figma?node-id=116%3A4)
+> [View Figma Toolkit](https://www.figma.com/file/ltLag9SxjUIyLQFsp7NNE7/Figma-Toolkit-for-MRTK-%2F-HoloLens%2C-Windows-Mixed-Reality?node-id=116%3A4)
 
 ## How to use Figma Toolkit
 Use **Duplicate to your drafts** menu to make a copy.
