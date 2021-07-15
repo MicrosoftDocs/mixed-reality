@@ -10,7 +10,7 @@ keywords: quality fundamentals, case study, project, sample, MRTK, Mixed Reality
 
 # Quality Fundamentals
 
-Quality Fundamentals is a HoloLens 2 app that demonstrates the fundamentals of building a great mixed reality experience.  Instead just learning and reading about quality issues in mixed reality, we can now experience common environmental, design, and performance issues and solutions firsthand by selecting the options provided in the app.
+Quality Fundamentals is a HoloLens 2 app that demonstrates the fundamentals of building a great mixed reality experience.  Instead of just learning and reading about quality issues in mixed reality, we can now experience common environmental, design, and performance issues and solutions firsthand by selecting the options provided in the app.
 
 To download and install the app, go to the app download page:
 
