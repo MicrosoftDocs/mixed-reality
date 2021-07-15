@@ -10,7 +10,7 @@ keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR,
 
 # Start your VR journey
 
-![Stock image of VR overlaid environment](images/mr-win32-slates-pinspanel.png)
+![Stock image of VR overlaid environment](images/vr-journey-hero.png)
 
 ## Setup & usability checkpoints
 
