@@ -3,14 +3,14 @@ title: Quality Fundamentals
 description: Learn about the Quality Fundamentals of designing mixed reality applications.
 author: qianw211
 ms.author: v-qianwen
-ms.date: 07/07/2021
+ms.date: 07/15/2021
 ms.topic: article
 keywords: quality fundamentals, case study, project, sample, MRTK, Mixed Reality Toolkit, Unity, sample apps, example apps, open source, Microsoft Store, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 # Quality Fundamentals
 
-Quality Fundamentals is a HoloLens 2 app that demonstrates the fundamentals of building a great mixed reality experience.  We can experience common environmental, design, and performance issues and solutions in real-time by selecting the options provided in the app.
+Quality Fundamentals is a HoloLens 2 app that demonstrates the fundamentals of building a great mixed reality experience.  Instead just learning and reading about quality issues in mixed reality, we can now experience common environmental, design, and performance issues and solutions firsthand by selecting the options provided in the app.
 
 To download and install the app, go to the app download page:
 
@@ -138,3 +138,10 @@ See [CPU-to-GPU performance recommendations](/windows/mixed-reality/develop/unit
 Here, we can explore how many fully optimized bicycles can be displayed, and the level of fidelity possible given the optimization techniques.
 
 ![Optimization techniques used.](images\qf-3d-asset-finale.jpg)
+
+## Next steps
+
+Explore other mixed reality sample scenarios:
+
+   > [!div class="nextstepaction"]
+   > [Samples and feature apps](../features-and-samples.md)
