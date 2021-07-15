@@ -10,9 +10,9 @@ keywords: Figma, Sketch, Adobe XD, design, designer, design file, UX design, Hol
 
 # Figma Toolkit
 
-> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Figma-Toolkit-MRTK/player]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGqke]
 
-Figma Toolkit provides the assets that can be used for sketching and laying out UI. All UI controls are based on the components available in MRTK. 
+MRTK Figma Toolkit provides 2D versions of the HoloLens 2 style UI controls that you can find in the MRTK for Unity or MRTK for Unreal. You can use this in the design process for creating UI layouts and storyboards.
 
 > [!div class="nextstepaction"]
 > [View Figma Toolkit](https://www.figma.com/file/ltLag9SxjUIyLQFsp7NNE7/Mixed-Reality-Toolkit-for-Figma?node-id=116%3A4)
@@ -45,6 +45,10 @@ UI Gallery and Components page show all available components for your design.
 
 ![Figma Toolkit Example - Menu UI 2](images/UX_FigmaToolkit_Components_Menu2.png)<br>
 
+![Figma Toolkit Example - Menu UI 3](images/UX_FigmaToolkit_Components_Menu3.png)<br>
+
+![Figma Toolkit Example - Menu UI 4](images/UX_FigmaToolkit_Components_Menu3a.png)<br>
+
 Using **Assets** tab, you can browse these components and drag into your page.
 
 <img src="images/UX_FigmaToolkit_Components_Menu3.png" width="200px" alt="Assets tab"><br>
@@ -54,7 +58,7 @@ Using **Assets** tab, you can browse these components and drag into your page.
 
 Figma Toolkit could be useful to sketch menu UI. 
 
-![Figma Toolkit Example - Menu UI 3](images/UX_FigmaToolkit_Examples_Menu.png)<br>
+![Figma Toolkit Example - Menu UI 5](images/UX_FigmaToolkit_Examples_Menu.png)<br>
 
 
 Assets could be used for storyboarding.
