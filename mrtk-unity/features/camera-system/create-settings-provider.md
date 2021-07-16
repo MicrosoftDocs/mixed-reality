@@ -1,5 +1,5 @@
 ---
-title: Create setting provider
+title: Creating a camera settings provider
 description: Data provider for camera settings in MRTK
 author: davidkline-ms
 ms.author: davidkl

@@ -1,5 +1,5 @@
 ---
-title: Creating Input Data Providers
+title: Creating an input system data provider
 description: documentation to create input system and data provider in MRTK
 author: keveleigh
 ms.author: kurtie
