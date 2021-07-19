@@ -65,7 +65,7 @@ Configure your Visual Studio project with the following properties:
 Next, you need to set your remote connection. For C++ and JavaScript projects, go to **Project > Properties > Configuration Properties > Debugging**. If you're working in a C# project, a dialog should automatically appear.
 
 > [!NOTE]
-> If the remote connection dialog doesn't appear in your C# project, you can open it manually from **Properties > Debug**.
+> If the remote connection dialog doesn't appear in your C# project, you can open it manually from **Project > Properties > Configuration Properties > Debugging**.
 
 1. Enter the IP address of your device in the **Address** or **Machine Name** field. 
     * You can find the IP address on your HoloLens under **Settings > Network & Internet > Advanced Options**
