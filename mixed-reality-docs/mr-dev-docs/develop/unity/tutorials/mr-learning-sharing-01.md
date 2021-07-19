@@ -45,10 +45,10 @@ Tutorials in this series:
   * An <a href="https://developer.apple.com/documentation/arkit/verifying_device_support_and_user_permission" target="_blank">ARKit compatible</a> iOS device with USB connection to your macOS computer
   * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2020 LTS installed and the iOS Build Support module added
 
-> [!CAUTION]
+> [!IMPORTANT]
 > The recommended Mixed Reality Toolkit version for this tutorial series is MRTK 2.7.
 
-> [!CAUTION]
+> [!IMPORTANT]
 > The recommended Unity version for this tutorial series is Unity 2020 LTS. This supersedes any Unity version requirements stated in the prerequisites linked above.
 
 > [!div class="nextstepaction"]
