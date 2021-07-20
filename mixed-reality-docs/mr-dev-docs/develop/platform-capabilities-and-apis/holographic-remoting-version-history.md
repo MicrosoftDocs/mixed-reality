@@ -3,7 +3,7 @@ title: Holographic Remoting Version History
 description: Stay up to date on the version history of the Holographic Remoting feature for HoloLens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 06/10/2021
+ms.date: 07/20/2021
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
@@ -12,6 +12,11 @@ keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reali
 
 > [!IMPORTANT]
 > This guidance is specific to Holographic Remoting on HoloLens 2.
+
+## Version 2.6.1 (July 20, 2021) <a name="v2.6.1"></a>
+* The XR_MSFT_holographic_remoting_speech extension now allows re-initialization of the speech recognizer with new parameters during a running session.
+* Fixed an issue where speech recognition reliability decreased over multiple connections.
+* Various bug fixes and stability improvements.
 
 ## Version 2.6.0 (June 10, 2021) <a name="v2.6.0"></a>
 * Holographic Remoting using the OpenXR API now supports:
