@@ -1,6 +1,6 @@
 ---
 title: Introduction to the Mixed Reality Toolkit Hub for Unreal
-description: Learn the basics of using the MRTK Hub to aquire MRTK plugins for Unreal.
+description: Learn the basics of using the MRTK Hub to acquire MRTK plugins for Unreal.
 author: camccaf-msft
 ms.author: camccaf
 ms.date: 07/05/2021
@@ -12,6 +12,7 @@ keywords: up-to-date, tools, get started, basics, unreal, toolkit, hub, mixed re
 # Introduction to the Mixed Reality Toolkit Hub for Unreal
 
 The Mixed Reality Toolkit Hub is an entry point to the Mixed Reality Toolkit for Unreal. It is a new way for developers to discover, update, and add Microsoft Mixed Reality plugins into their Unreal projects. You can view plugins, see their dependencies and install them into your project all without leaving the Unreal Editor.
+
 - Discover new Microsoft Mixed Reality plugins and install them and their dependencies into your Unreal project.
 - Keep your Microsoft Mixed Reality plugins up to date.
 - Remove Microsoft Mixed Reality plugins from your project if you no longer need them.
@@ -38,11 +39,11 @@ Once the plugin is enabled for your project, you can access the hub from the too
 
 ### Installing mixed reality plugins
 
-To install a plugin using the hub, select the plugin you want to add to your project and press the _Install_ button. Verify there are no conflicts in the _Issues_ box and press _Confirm_ to download the plugin. Once the plugin is downloaded, you will be prompted to restart the editor. Unfortunately we can't auto-restart the editor for you as sometimes the new editor instace will start before the installation is complete.
+To install a plugin using the hub, select the plugin you want to add to your project and press the _Install_ button. Verify there are no conflicts in the _Issues_ box and press _Confirm_ to download the plugin. Once the plugin is downloaded, you will be prompted to restart the editor. Unfortunately we can't auto-restart the editor for you as sometimes the new editor instance will start before the installation is complete.
 
 ![Install a plugin using the MRTK Hub](images/hub-download.png)
 
-After closing the editor you will see a command prompt appear with a progress bar for unpacking the downloaded plugin. One command prompt will appear for each plugin being installed. Once unpacking is completed, you can re-open the editor and continue on your [mixed reality development journey](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unreal/unreal-quickstart).
+After closing the editor you will see a command prompt appear with a progress bar for unpacking the downloaded plugin. One command prompt will appear for each plugin being installed. Once unpacking is completed, you can re-open the editor and continue on your [mixed reality development journey](unreal-quickstart.md).
 
 ![MRTK Hub unpacking a plugin via command prompt](images/hub-unpack.png)
 
