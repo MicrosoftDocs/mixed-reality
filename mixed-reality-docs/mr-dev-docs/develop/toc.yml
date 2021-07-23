@@ -286,6 +286,8 @@
     href: unreal/unreal-mrtk-introduction.md
   - name: Setting up your project 
     href: unreal/unreal-project-setup.md
+  - name: Introducing the MRTK Hub
+    href: unreal/unreal-mrtk-hub.md
   - name: Upgrading projects in Unreal
     href: unreal/unreal-porting.md
   - name: Quickstarts
