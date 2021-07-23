@@ -28,12 +28,12 @@ This service will allow you to train a machine learning model using object image
 
 Upon completion of this course, you will have a mixed reality application which will be able to do the following:
 
-1. The user will be able to *gaze* at an object, which they have trained using the Azure Custom Vision Service, Object Detection. 
+1. The user will be able to *gaze* at an object, which they have trained using the Azure Custom Vision Service, Object Detection.
 2. The user will use the *Tap* gesture to capture an image of what they are looking at.
 3. The app will send the image to the Azure Custom Vision Service.
 4. There will be a reply from the Service which will display the result of the recognition as world-space text. This will be accomplished through utilizing the Microsoft HoloLens' Spatial Tracking, as a way of understanding the world position of the recognized object, and then using the *Tag* associated with what is detected in the image, to provide the label text.
 
-The course will also cover manually uploading images, creating tags, and training the Service, to recognize different objects (in the provided example, a cup), by setting the *Boundary Box* within the image you submit. 
+The course will also cover manually uploading images, creating tags, and training the Service, to recognize different objects (in the provided example, a cup), by setting the *Boundary Box* within the image you submit.
 
 > [!IMPORTANT]
 > Following the creation and use of the app, the developer should navigate back to the Azure Custom Vision Service, and identify the predictions made by the Service, and determine whether they were correct or not (through tagging anything the Service missed, and adjusting the *Bounding Boxes*). The Service can then be re-trained, which will increase the likelihood of it recognizing real world objects.
@@ -58,10 +58,10 @@ This course will teach you how to get the results from the Azure Custom Vision S
 We recommend the following hardware and software for this course:
 
 - A development PC
-- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- [The latest Windows 10 SDK](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- [Unity 2017.4 LTS](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- [Visual Studio 2017](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
+- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](../../install-the-tools.md#installation-checklist-for-hololens)
+- [The latest Windows 10 SDK](../../install-the-tools.md#installation-checklist-for-hololens)
+- [Unity 2017.4 LTS](../../install-the-tools.md#installation-checklist-for-hololens)
+- [Visual Studio 2017](../../install-the-tools.md#installation-checklist-for-hololens)
 - A [Microsoft HoloLens](/windows/mixed-reality/hololens-hardware-details) with Developer mode enabled
 - Internet access for Azure setup and Custom Vision Service retrieval
 -  A series of at least fifteen (15) images are required) for each object that you would like the Custom Vision to recognize. If you wish, you can use the images already provided with this course, [a series of cups](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20310%20-%20Object%20detection/Cup%20Images.zip)).
@@ -69,8 +69,8 @@ We recommend the following hardware and software for this course:
 ## Before you start
 
 1.	To avoid encountering issues building this project, it is strongly suggested that you create the project mentioned in this tutorial in a root or near-root folder (long folder paths can cause issues at build-time).
-2.	Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](/hololens/hololens-setup). 
-3.	It is a good idea to perform Calibration and Sensor Tuning when beginning developing a new HoloLens App (sometimes it can help to perform those tasks for each user). 
+2.	Set up and test your HoloLens. If you need support setting up your HoloLens, [make sure to visit the HoloLens setup article](/hololens/hololens-setup).
+3.	It is a good idea to perform Calibration and Sensor Tuning when beginning developing a new HoloLens App (sometimes it can help to perform those tasks for each user).
 
 For help on Calibration, please follow this [link to the HoloLens Calibration article](/hololens/hololens-calibration#hololens-2).
 
