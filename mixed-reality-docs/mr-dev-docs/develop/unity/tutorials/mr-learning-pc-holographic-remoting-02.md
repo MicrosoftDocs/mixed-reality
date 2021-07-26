@@ -2,8 +2,8 @@
 title: Create a Holographic Remoting PC application
 description: Complete this course to learn how to create a PC application to remote a mixed reality experience from your PC to HoloLens 2.
 author: jessemcculloch
-ms.author: jemccull
-ms.date: 02/05/2021
+ms.author: v-vtieto
+ms.date: 07/26/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, PC holographic remoting, Visual Studio
 ms.localizationpriority: high
@@ -11,13 +11,15 @@ ms.localizationpriority: high
 
 # 2. Creating a Holographic Remoting PC application
 
-In this tutorial, you will learn how to create a PC app for Holographic Remoting and connect to HoloLens 2 at any point, providing a way to visualize 3D content in mixed reality.
+In this tutorial, you'll learn how to create a PC app that uses Holographic Remoting so you can stream your in-progress work to the HoloLens and view it without the need to build it first.
+
+[Learn the basics of Holographic Remoting.](../../platform-capabilities-and-apis/holographic-remoting-overview.md)
 
 ## Objectives
 
 * Configure Unity for Holographic Remoting
 * Learn how to build and deploy the application with Visual Studio
-* Developing Holographic Remoting application and connecting to HoloLens
+* Developing a Holographic Remoting application and connect to HoloLens
 
 ## Configuring the capabilities
 

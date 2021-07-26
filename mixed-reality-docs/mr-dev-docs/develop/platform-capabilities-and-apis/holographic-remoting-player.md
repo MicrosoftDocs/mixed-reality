@@ -1,9 +1,9 @@
 ---
-title: Holographic Remoting Player
+title: Holographic Remoting Overview / Using
 description: Learn about the Holographic Remoting Player and streaming holographic content from a PC to your HoloLens in real time over Wi-Fi.
 author: florianbagarmicrosoft
 ms.author: v-vtieto
-ms.date: 07/23/2021
+ms.date: 07/26/2021
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windows mixed reality headset, virtual reality headset, diagnostics, performance
 ---

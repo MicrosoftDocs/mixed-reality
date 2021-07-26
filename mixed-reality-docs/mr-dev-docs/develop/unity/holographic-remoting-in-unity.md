@@ -1,9 +1,9 @@
 ---
-title: Holographic Remoting in desktop app
+title: Holographic Remoting in Unity
 description: Discover how to use Holographic Remoting in a desktop app and Unity Play mode with OpenXR.
 author: hferrone
-ms.author: alexturn
-ms.date: 07/16/2021
+ms.author: v-vtieto
+ms.date: 07/26/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, augmented reality, virtual reality, mixed reality headsets, learn, tutorial, getting started, holographic remoting, desktop
 ---
@@ -14,7 +14,11 @@ keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Realit
 > Windows Standalone app remoting support was added in the 0.1.3 package release.
 > As of version 0.1.3, this feature doesn’t support UWP builds.
 
-Before getting started, it's important to understand the two main options you have with Holographic Remoting: 
+[Learn the basics of Holographic Remoting.](../platform-capabilities-and-apis/holographic-remoting-overview.md)
+
+You can use Holographic Remoting to stream holographic content to your HoloLens 2 in real time. This is a great way to quickly debug your app without building and deploying a full project. 
+
+Before getting started, it's important to understand your two main options in Unity:
 * **Holographic Remoting in Unity Play mode**: Run your app locally in the Unity editor on your PC in Play Mode to provide a fast way to preview your content on a HoloLens 2. Play Mode can also be used with a Windows Mixed Reality headset attached to your development PC.
 * **Holographic Remoting from a Unity build file**: Run your app from a Unity Holographic Remoting remote application that you've exported to your desktop to your HoloLens 2. This can be helpful if your app has high-resolution assets or models; your desktop GPU handles the rendering before it gets to the HoloLens 2.
 
@@ -28,8 +32,6 @@ Once it's downloaded, run the Holographic Remoting Player app on your HoloLens 2
 
 ## Unity Play Mode with Holographic Remoting
 
-With Holographic Remoting, you can experience your app on the HoloLens 2 while it runs in the Unity editor on your PC. Gaze, gesture, voice, and spatial mapping input is sent from your HoloLens 2 to your PC. Frames are then rendered and sent back to your HoloLens. This is a great way to quickly debug your app without building and deploying a full project.
-
 [!INCLUDE[](includes/unity-play-mode.md)]
 
 Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more details in the [Holographic Remoting Player](../platform-capabilities-and-apis/holographic-remoting-player.md) documentation.
@@ -38,15 +40,12 @@ For best results, make sure your app properly sets the [focus point](focus-point
 
 ## Holographic Remoting from a Unity Holographic Remoting remote application
 
-1. Open **Edit -> Project Settings**, then navigate to **XR plug-in Management**, and then select **Windows Mixed Reality feature set**. 
+1. On the menu bar, select **Edit > Project Settings**.
+1. In the left-side column, select **XR plug-in Management**.
+1. In the **XR Plug-in Management** section, select **Microsoft HoloLens feature group** and **Holographic Remoting remote app feature group**.
 1. Unselect **Initialize XR on Startup**:
 
-    ![Screenshot of project settings panel open in the Unity Editor with Initialize XR on Startup unchecked](images/openxr-features-img-02-app.png)
-
-1. Expand the **Features** section under **OpenXR** and select **Show All**
-1. Check the **Holographic App Remoting** checkbox:
-
-    ![Screenshot of project settings panel open in the Unity Editor with app remoting enabled](images/openxr-features-img-03-app.png)
+    ![Screenshot of project settings panel open in the Unity Editor with Initialize XR on Startup unchecked](images/001-openxr-features.png)
 
 1. Write some code to set the remoting configuration and trigger XR initialization. The sample app distributed with the [Mixed Reality OpenXR Plugin](./xr-project-setup.md#unity-sample-projects-for-openxr-and-hololens-2) contains AppRemoting.cs, which shows an example scenario for connecting to a specific IP address at runtime. Deploying the sample app to a local machine at this point will display an IP address input field with a connect button. Typing an IP address and clicking Connect will initialize XR and attempt to connect to the target device:
 
@@ -85,3 +84,5 @@ From the sample code on [Unity's docs](https://docs.unity3d.com/2018.4/Documenta
 ## See also
 
 * [Holographic Remoting Player](../platform-capabilities-and-apis/holographic-remoting-player.md)
+* [Tutorial: Getting started with PC Holographic Remoting](../unity/tutorials/mr-learning-pc-holographic-remoting-01.md)
+* [Tutorial: Creating a Holographic Remoting PC application](../unity/tutorials/mr-learning-pc-holographic-remoting-02.md)
