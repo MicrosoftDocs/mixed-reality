@@ -11,6 +11,9 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 The MRTK Optimize Window is a utility to help automate and inform in the process of configuring a mixed reality project for best [performance](../../performance/perf-getting-started.md) in Unity. This tool generally focuses on rendering configurations that when set to the correct preset can save milliseconds of processing.
 
+> [!NOTE]
+> The **Optimize Window** can be opened by navigating to **Mixed Reality** > **Utilities** > **Optimize Window** from the top bar menu in the Unity Editor.
+
 The *Active Build Target* is the [build platform currently targeted](https://docs.unity3d.com/Manual/BuildSettings.html) by the project for compiling.
 
 The *Performance Target* instructs the optimize tool on what kind of device endpoints to target.
