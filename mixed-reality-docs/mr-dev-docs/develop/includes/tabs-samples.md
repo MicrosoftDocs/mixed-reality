@@ -51,8 +51,8 @@ A subset of the samples use interactive UX components such as buttons and slider
         **[Kippy's Escape](../unreal/unreal-kippys-escape.md)**
     :::column-end:::
     :::column:::
-       [![Galaxy Explorer 2.0](../unreal/images/ford-gt40-hero_1920.jpg)](../unreal/unreal-ford-gt40.md)
-        **[Galaxy Explorer 2.0](../unreal/unreal-ford-gt40.md)**
+       [![Ford GT40](../unreal/images/ford-gt40-hero_1920.jpg)](../unreal/unreal-ford-gt40.md)
+        **[Ford GT40](../unreal/unreal-ford-gt40.md)**
     :::column-end:::
 :::row-end:::
 
