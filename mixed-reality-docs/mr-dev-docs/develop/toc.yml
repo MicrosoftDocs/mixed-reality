@@ -222,8 +222,6 @@
     items:
       - name: Photo Video camera in Unity
         href: unity/locatable-camera-in-unity.md
-      - name: Holographic Remoting in desktop app
-        href: unity/holographic-remoting-desktop.md
       - name: Focus point
         href: unity/focus-point-in-unity.md
       - name: Tracking loss
@@ -268,8 +266,8 @@
         href: unity/managed-debugging-with-unity-il2cpp.md
       - name: Recommended settings for Unity
         href: unity/recommended-settings-for-unity.md
-      - name: Unity Play Mode
-        href: unity/unity-play-mode.md
+      - name: Preview your work with Holographic Remoting
+        href: unity/holographic-remoting-in-unity.md
   - name: Visual Studio solutions
     items:
       - name: Exporting and building a Unity Visual Studio solution
@@ -454,7 +452,9 @@
           href: platform-capabilities-and-apis/installing-pix-hololens.md
     - name: Holographic remoting
       items:
-        - name: Holographic Remoting Player
+        - name: Overview
+          href: platform-capabilities-and-apis/holographic-remoting-overview.md
+        - name: Holographic Remoting player
           href: platform-capabilities-and-apis/holographic-remoting-player.md
         - name: Writing a Holographic Remoting remote app
           items:
@@ -475,9 +475,7 @@
         - name: Holographic Remoting software license terms
           href: /legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
         - name: Holographic Remoting for HoloLens (1st Gen)
-          items:
-            - name: Adding Holographic Remoting
-              href: platform-capabilities-and-apis/add-holographic-remoting.md
+          href: platform-capabilities-and-apis/add-holographic-remoting.md
     - name: App quality and testing
       items:
         - name: App quality criteria

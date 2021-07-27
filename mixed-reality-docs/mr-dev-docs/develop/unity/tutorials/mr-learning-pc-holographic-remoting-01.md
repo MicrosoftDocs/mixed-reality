@@ -2,8 +2,8 @@
 title: Getting started with PC Holographic Remoting
 description: Complete this course to learn how to remotely stream mixed reality applications from your PC to HoloLens 2.
 author: jessemcculloch
-ms.author: jemccull
-ms.date: 02/05/2021
+ms.author: v-vtieto
+ms.date: 07/26/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, PC holographic remoting, tooltips, eye-tracking
 ms.localizationpriority: high
@@ -11,11 +11,13 @@ ms.localizationpriority: high
 
 # 1. Getting started with PC Holographic Remoting
 
-Welcome to the HoloLens 2 tutorials. In this two-part tutorial series, you will learn how to create a mixed reality experience demonstration and how to create a PC app for Holographic Remoting.
+Welcome to the HoloLens 2 tutorials. In this two-part tutorial series, you'll learn how to create a mixed reality experience demonstration and a PC app for Holographic Remoting.
+
+[Learn the basics of Holographic Remoting.](../../platform-capabilities-and-apis/holographic-remoting-overview.md)
 
 In this tutorial, you'll learn how to create a mixed reality experience. It will demonstrate UI elements, 3D model manipulation, model clipping, and eye-tracking features.
 
-In the second tutorial, [Create a Holographic Remoting application](mr-learning-pc-holographic-remoting-02.md), you will learn how to create a PC app for Holographic Remoting. And connect to HoloLens 2 at any point, providing a way to visualize 3D content in mixed reality.
+In the second tutorial, [Create a Holographic Remoting application](mr-learning-pc-holographic-remoting-02.md), you'll learn how to create a PC app that uses Holographic Remoting so you can stream your in-progress work to the HoloLens and view it without the need to build it first.
 
 ## Objectives
 
