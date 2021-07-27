@@ -12,7 +12,7 @@ keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Realit
 
 When you add support for Holographic Rendering to your PC app or game, it enables the app to stream holographic content to your HoloLens 2 in real time. This is a great way to quickly debug your app without building and deploying a full project. Gaze, gesture, voice, and spatial mapping input is sent from your HoloLens 2 to your PC, content is rendered in a virtual immersive view using the greater system resources of the PC, and the rendered frames are then sent back to your HoloLens 2. Holographic Remoting is also available for Windows Mixed Reality immersive headsets.
 
-You add Holographic Remoting to your desktop or UWP app via a NuGet packet, and the connection is made using standard Wi-Fi. Additional code is required that handles the connection and renders in an immersive view. A typical remoting connection will have as low as 50 ms of latency. Your device displays the streamed content using a "player" app that can report the latency in real time.
+You add Holographic Remoting to your desktop or UWP app via a NuGet package, and the connection is made using standard Wi-Fi. Additional code is required that handles the connection and renders in an immersive view. A typical remoting connection will have as low as 50 ms of latency. Your device displays the streamed content using a "player" app that can report the latency in real time.
 
 If you're a Unity developer, you can also use Holographic Remoting by running your app in the Unity Editor in Play mode.
 
