@@ -48,11 +48,6 @@ Lars Simkins, Senior designer behind the MRDL Surfaces app talks about the app's
 
 [https://github.com/microsoft/MRDL_Unity_Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces)
 
-## Download app from Microsoft Store in HoloLens 2
-
-https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0#activetab=pivot:overviewtab
-
-(The app is only available on HoloLens 2)
 
 ## About the author
 
