@@ -8,7 +8,7 @@ ms.topic: article
 keywords: galaxy explorer, case study, project, sample, MRTK, Mixed Reality Toolkit, Unity, sample apps, example apps, open source, Microsoft Store, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
-# The Making of Galaxy Explorer for HoloLens 2
+# The making of Galaxy Explorer for HoloLens 2
 
 ![New Galaxy Explorer logo](../images/GalaxyExplorer2.jpg)
 

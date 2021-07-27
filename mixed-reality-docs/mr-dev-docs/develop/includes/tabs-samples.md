@@ -45,9 +45,26 @@ Most of the open source sample apps made by our team can be found in the Unreal 
 
 A subset of the samples use interactive UX components such as buttons and sliders, which are provided by the [UX Tools plugin](https://aka.ms/uxt-unreal) as part of the [Mixed Reality Toolkit for Unreal](https://aka.ms/mrtk-unreal).
 
-* [Chess App](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/ChessApp)
-* [Kippy's Escape](../unreal/unreal-kippys-escape.md) - Download from the [Microsoft Store](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) in HoloLens 2
-* [Ford GT40](../unreal/unreal-ford-gt40.md) - Download from the [Microsoft Store](https://www.microsoft.com/p/ford-gt40/9p4vllktfvfp)
+:::row:::
+    :::column:::
+       [![Kippy's Escape](../unreal/images/KippysEscape_1920.jpg)](../unreal/unreal-kippys-escape.md)
+        **[Kippy's Escape](../unreal/unreal-kippys-escape.md)**
+    :::column-end:::
+    :::column:::
+       [![Galaxy Explorer 2.0](../unreal/images/ford-gt40-hero_1920.jpg)](../unreal/unreal-ford-gt40.md)
+        **[Galaxy Explorer 2.0](../unreal/unreal-ford-gt40.md)**
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![Chess App](../images/Unreal_ChessApp.png)](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/ChessApp)
+        **[Chess App](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/ChessApp)**
+    :::column-end:::
+    :::column:::
+
+    :::column-end:::
+:::row-end:::
 
 ### Made by Epic Games
 
