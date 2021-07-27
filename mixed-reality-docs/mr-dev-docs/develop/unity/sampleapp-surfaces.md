@@ -10,12 +10,17 @@ keywords: Windows Mixed Reality, design, sample app, controls, MRTK, Mixed Reali
 
 # Surfaces
 
+![Surfaces](images/MRDL_Surfaces_1.jpg)
+
 >[!NOTE]
 >This article discusses an exploratory sample we’ve created in the [Mixed Reality Design Labs](https://github.com/Microsoft/MRDesignLabs_Unity), a place where we share our learnings about and suggestions for mixed reality app development. Our design-related articles and code will evolve as we make new discoveries.
 
 [Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces)  is an open-source sample app from Microsoft's Mixed Reality Design Labs. It explores how we can create a tactile sensation with visual, audio, and fully articulated hand-tracking.
 
-![Surfaces](images/MRDL_Surfaces_1.jpg)
+## Download app from Microsoft Store in HoloLens 2
+If you have HoloLens 2 device, you can directly download and install the app in your device.
+
+<a href='//www.microsoft.com/store/apps/9nvkpv3sk3x0?cid=storebadge&ocid=badge'><img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png' alt='English badge' width="284px" height="104px" style='width: 284px; height: 104px;'/></a>
 
 ## Demo video 
 
@@ -42,11 +47,6 @@ Lars Simkins, Senior designer behind the MRDL Surfaces app talks about the app's
 
 [https://github.com/microsoft/MRDL_Unity_Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces)
 
-## Download app from Microsoft Store in HoloLens 2
-
-https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0#activetab=pivot:overviewtab
-
-(The app is only available on HoloLens 2)
 
 ## About the author
 
