@@ -38,7 +38,7 @@ Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more 
 
 For best results, make sure your app properly sets the [focus point](focus-point-in-unity.md). This helps Holographic Remoting to adapt your scene to the latency of your wireless connection.
 
-## Holographic Remoting from a Unity Holographic Remoting remote application
+## Holographic Remoting from a remote application
 
 1. On the menu bar, select **Edit > Project Settings**.
 1. In the left-side column, select **XR plug-in Management**.
