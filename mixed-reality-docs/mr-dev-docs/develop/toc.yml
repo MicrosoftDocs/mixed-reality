@@ -448,7 +448,7 @@
           href: platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md
         - name: Installing PIX for HoloLens 2
           href: platform-capabilities-and-apis/installing-pix-hololens.md
-    - name: Preview your work with Holographic Remoting
+    - name: Holographic remoting
       items:
         - name: Overview
           href: platform-capabilities-and-apis/holographic-remoting-overview.md
