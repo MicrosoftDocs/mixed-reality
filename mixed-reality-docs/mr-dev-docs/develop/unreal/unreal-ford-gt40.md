@@ -11,7 +11,7 @@ appliesto:
 ---
 
 # The making of the Ford GT40 experience
-![Ford GT40 hero image](images/ford-gt40-hero.jpg)
+![Ford GT40 hero image](images/ford-gt40-hero_1920.jpg)
 
 *“Pre-MRTK, developing for HoloLens 2 using Unreal was a bit tedious because all of the spatial interactions had to be coded by hand, in C++. The MRTK for Unreal made a lot of those same tasks trivial. I’d estimate it cut the time required for the initial prototype in half.”* - Jose Rodriguez, Software Developer
 
@@ -24,7 +24,7 @@ Using a range of natural and intuitive spatial interactions, users can explore t
 ## Download app from Microsoft Store in HoloLens 2
 If you have HoloLens 2 device, you can directly download and install the app in your device.
 
-<a href='//www.microsoft.com/store/apps/9p4vllktfvfp?cid=storebadge&ocid=badge'><img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png' alt='English badge' style='width: 284px; height: 104px;'/></a>
+<a href='//www.microsoft.com/store/apps/9p4vllktfvfp?cid=storebadge&ocid=badge'><img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png' alt='English badge' width="284px" height="104px" style='width: 284px; height: 104px;'/></a>
 
 
 ## The ask

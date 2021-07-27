@@ -24,7 +24,7 @@ This page will expand as we progress through the project with links to more deta
 ## Download app from Microsoft Store in HoloLens 2
 If you have HoloLens 2 device, you can directly download and install the app in your device.
 
-<a href='//www.microsoft.com/store/apps/9nblggh4q4jg?cid=storebadge&ocid=badge'><img src='https://developer.microsoft.com/store/badges/images/English_get_L.png' alt='English badge' style='width: 127px; height: 52px;'/></a>
+<a href='//www.microsoft.com/store/apps/9nblggh4q4jg?cid=storebadge&ocid=badge'><img src='https://developer.microsoft.com/store/badges/images/English_get_L.png' alt='English badge' width="284px" height="104px" style='width: 284px; height: 104px;'/></a>
 
 ## Thinking about interactions
 
