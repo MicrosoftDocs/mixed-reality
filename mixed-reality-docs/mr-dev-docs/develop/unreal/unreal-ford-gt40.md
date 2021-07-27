@@ -11,6 +11,7 @@ appliesto:
 ---
 
 # The making of the Ford GT40 experience
+![Ford GT40 hero image](images/ford-gt40-hero.jpg)
 
 *“Pre-MRTK, developing for HoloLens 2 using Unreal was a bit tedious because all of the spatial interactions had to be coded by hand, in C++. The MRTK for Unreal made a lot of those same tasks trivial. I’d estimate it cut the time required for the initial prototype in half.”* - Jose Rodriguez, Software Developer
 
@@ -20,10 +21,11 @@ Using the Mixed Reality Toolkit (MRTK) for Unreal, creative production company H
 
 Using a range of natural and intuitive spatial interactions, users can explore the GT40’s beauty, performance, and engineering—all delivered in a way that takes advantage of the high visual fidelity provided by the Unreal Engine. Software development for the entire project was completed by a single developer in less than three months, made possible by MRTK for Unreal's visual scripting and design environment.
 
-> [!div class="nextstepaction"]
-> [Download the Ford GT40 app](https://www.microsoft.com/p/ford-gt40/9p4vllktfvfp)
+## Download app from Microsoft Store in HoloLens 2
+If you have HoloLens 2 device, you can directly download and install the app in your device.
 
-![Ford GT40 hero image](images/ford-gt40-hero.jpg)
+<a href='//www.microsoft.com/store/apps/9p4vllktfvfp?cid=storebadge&ocid=badge'><img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png' alt='English badge' style='width: 284px; height: 104px;'/></a>
+
 
 ## The ask
 

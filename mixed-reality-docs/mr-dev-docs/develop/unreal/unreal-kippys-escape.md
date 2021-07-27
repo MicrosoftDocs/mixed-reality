@@ -11,6 +11,7 @@ appliesto:
 ---
 
 # The Making of Kippy's Escape
+![Kippy's Escape hero image](images/KippysEscape_1920.jpg)
 
 Kippy the robot wakes up to find itself stranded on an island. It’s up to you to put on your problem-solving hat to help it find a path back to its rocket ship! Strap on your HoloLens 2 and [download the app](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) from the Microsoft Store or clone the [repository](https://github.com/microsoft/MixedReality-Unreal-KippysEscape) from GitHub and get Kippy home safe!  
 

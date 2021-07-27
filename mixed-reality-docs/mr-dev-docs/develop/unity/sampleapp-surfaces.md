@@ -10,12 +10,13 @@ keywords: Windows Mixed Reality, design, sample app, controls, MRTK, Mixed Reali
 
 # Surfaces
 
+![Surfaces](images/MRDL_Surfaces_1.jpg)
+
 >[!NOTE]
 >This article discusses an exploratory sample we’ve created in the [Mixed Reality Design Labs](https://github.com/Microsoft/MRDesignLabs_Unity), a place where we share our learnings about and suggestions for mixed reality app development. Our design-related articles and code will evolve as we make new discoveries.
 
 [Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces)  is an open-source sample app from Microsoft's Mixed Reality Design Labs. It explores how we can create a tactile sensation with visual, audio, and fully articulated hand-tracking.
 
-![Surfaces](images/MRDL_Surfaces_1.jpg)
 
 ## Demo video 
 
