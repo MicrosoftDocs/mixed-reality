@@ -12,6 +12,8 @@ appliesto:
 
 # Windows Mixed Reality minimum PC hardware compatibility guidelines
 
+![PC compatibility hero image](images/pc-comp-hero.png)
+
 ## Features and experiences
 
 Windows 10 powers Windows Mixed Reality on variety of headsets across a diverse set of PC hardware.  The power of your PC will determine what experiences you can have.
