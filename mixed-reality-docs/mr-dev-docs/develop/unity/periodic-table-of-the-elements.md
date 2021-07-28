@@ -9,13 +9,13 @@ keywords: Windows Mixed Reality, design, sample app, controls, MRTK, Mixed Reali
 ---
 
 # Periodic Table of the Elements
+![Period Table of the Elements app](../images/MRDL_PeriodicTable_HL1.jpg)
 
 >[!NOTE]
 >This article discusses an exploratory sample we’ve created in the [Mixed Reality Design Labs](https://github.com/Microsoft/MRDesignLabs_Unity), a place where we share our learnings about and suggestions for mixed reality app development. Our design-related articles and code will evolve as we make new discoveries.
 
 [Periodic Table of the Elements](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) is an open-source sample app from Microsoft's Mixed Reality Design Labs. Learn how to lay out an array of objects in 3D space with various surface types using an **[Object collection](../../design/object-collection.md)**. Also learn how to create interactable objects that respond to standard inputs from HoloLens. You can use this project's components to create your own mixed reality app experience.
 
-![Period Table of the Elements app](images/640px-periodictable-hero.jpg)
 
 ## Demo video 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCF]
@@ -78,7 +78,7 @@ Read the story on how Periodic Table of the Elements app was updated with HoloLe
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60px"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
-<td style="border-style: none"><b>Dong Yoon Park</b><br>UX Designer @Microsoft</td>
+<td style="border-style: none"><a href="http://dongyoonpark.com" target="_blank"><b>Yoon Park</b></a><br>UX Designer @Microsoft</td>
 </tr>
 </table>
 
