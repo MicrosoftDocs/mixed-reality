@@ -11,7 +11,7 @@ keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit,
 
 # Welcome to the Mixed Reality Feature Tool
 
-![Mixed Reality Feature Tool banner image](images/feature-tool-banner.png)
+![Mixed Reality Feature Tool banner image](images/feature-tool-banner.jpg)
 
 > [!IMPORTANT]
 > The Mixed Reality Feature Tool is only available for Unity at the moment. If you're developing in Unreal, refer to the [tools installation](../install-the-tools.md) documentation.

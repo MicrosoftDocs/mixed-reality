@@ -10,13 +10,14 @@ keywords: galaxy explorer, case study, project, sample, MRTK, Mixed Reality Tool
 
 
 # Galaxy Explorer
+![Galaxy explorer](../images/HTK_GalaxyExplorer.jpg)
 
 **You shared your ideas. We’re sharing the code.**
 
 The Galaxy Explorer Project is ready. You've shared your ideas with the community, chosen an app, watched a team build it, and now you can get the source code. If you have a device, the Galaxy Explorer Project is available for download from the Windows Store for Microsoft HoloLens.
 
->[!TIP]
->[Get the code](https://github.com/Microsoft/GalaxyExplorer) on GitHub
+>[!NOTE]
+>This sample app was designed for HoloLens 1st gen. See [Galaxy Explorer 2.0](galaxy-explorer-update.md) for HoloLens 2 version.
 
 Our HoloLens [development team](galaxy-explorer.md#meet-the-team) of designers, artists, and developers built Galaxy Explorer and invited all of you to be part of this journey with them. After six weeks of core development and two weeks of refinement, this app is now ready for you! You can also follow along our whole journey through the video series below.
 
@@ -104,3 +105,4 @@ We're all a part of a larger studio here at Microsoft (think team in non-game de
 ## See also
 * [Case study - Creating a galaxy in mixed reality](../../out-of-scope/case-study-creating-a-galaxy-in-mixed-reality.md)
 * [Galaxy Explorer GitHub repo](https://github.com/Microsoft/GalaxyExplorer)
+* [Galaxy Explorer 2.0](galaxy-explorer-update.md)
