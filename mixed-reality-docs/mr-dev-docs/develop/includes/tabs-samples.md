@@ -6,8 +6,8 @@ The open source sample apps were created by our teams to help you get a handle o
 
 :::row:::
     :::column:::
-       [![Periodic Table of the Elements 2.0](../images/MRDL_PeriodicTable.jpg)](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
-        **[Periodic Table of the Elements 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)**
+       [![Periodic Table of the Elements 2.0](../images/MRDL_PeriodicTable.jpg)](../unity/periodic-table-of-the-elements-2.md)
+        **[Periodic Table of the Elements 2.0](../unity/periodic-table-of-the-elements-2.md)**
     :::column-end:::
     :::column:::
        [![MRTK Examples Hub](../images/MRTKExamplesHub.png)](/windows/mixed-reality/mrtk-unity/features/example-scenes/example-hub)
