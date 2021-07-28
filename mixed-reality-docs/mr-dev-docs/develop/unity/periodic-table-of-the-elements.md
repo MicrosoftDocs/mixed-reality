@@ -14,6 +14,9 @@ keywords: Windows Mixed Reality, design, sample app, controls, MRTK, Mixed Reali
 >[!NOTE]
 >This article discusses an exploratory sample we’ve created in the [Mixed Reality Design Labs](https://github.com/Microsoft/MRDesignLabs_Unity), a place where we share our learnings about and suggestions for mixed reality app development. Our design-related articles and code will evolve as we make new discoveries.
 
+>[!NOTE]
+>This sample app was designed for HoloLens 1st gen. See [Periodic Table of the Elements 2.0](periodic-table-of-the-elements-2.md) for HoloLens 2 version.
+
 [Periodic Table of the Elements](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) is an open-source sample app from Microsoft's Mixed Reality Design Labs. Learn how to lay out an array of objects in 3D space with various surface types using an **[Object collection](../../design/object-collection.md)**. Also learn how to create interactable objects that respond to standard inputs from HoloLens. You can use this project's components to create your own mixed reality app experience.
 
 
