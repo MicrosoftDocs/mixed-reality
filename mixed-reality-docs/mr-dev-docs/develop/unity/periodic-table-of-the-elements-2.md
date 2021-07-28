@@ -25,7 +25,7 @@ Recorded with HoloLens 2 using Mixed Reality Capture
 ## Upgrading the project for HoloLens 2 with MRTK
 You can find HoloLens 2 porting story from the article: <a href="https://dongyoonpark.medium.com/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158" target="_blank">**Bringing the Periodic Table of the Elements app to HoloLens 2 with MRTK v2 (2019)**</a>
 
-## Upgrading the project for OpenXR with MRTK 2.7 and Unity 2020
+## OpenXR 
 Read a story on updating existing MRTK 2.x + Unity 2019 project to the latest Unity 2020 + OpenXR pipeline: <a href="https://dongyoonpark.medium.com/updating-mrtk-mixed-reality-project-to-openxr-unity-2020-periodic-table-of-the-elements-4cf55b0479a4" target="_blank">**Updating MRTK Mixed Reality Project to OpenXR+Unity 2020: Periodic Table of the Elements for HoloLens 2 (2021)**</a>
 
 ## Design story 
