@@ -36,6 +36,16 @@ The open source sample apps were created by our teams to help you get a handle o
 
 Unity specific feature samples are listed below.
 
+| Scenario | Sample | Description |
+| --- | --- | ---- |
+| [Camera capture](#camera-captures) | [Scene understanding sample](#scene-understanding) | Help design environmentally aware mixed reality applications. |
+| | [Spectator view sample](#spectator-view) | Capture and render holograms at the correct size and orientation. |
+| [Contextual data overlays](#contextual-data-overlays) | [QR Codes](#qr-codes) | Detect QR Codes in the enironment. |
+| | [Poster tracker sample](#poster-tracker-sample)  | Align a hologram with a real world object. |
+| [Collaboration in mixed reality](#collabration-in-mixed-reality) | [AAD log on for HoloLens 2](#identity) | Set up your HoloLens 2 device using Azure Active Directory (AAD) credentials. |
+| | [WebRTC sample](#webrtc) | Integrate peer-to-peer audio, video, and data real-time communication into a mixed reality application. |
+
+
 #### Camera captures
 
 Unstructured environment sensor data that your Mixed Reality device captures are converted into powerful abstract or holographic representations of the physical world around us. 
@@ -100,7 +110,7 @@ This sample sets up your HoloLens 2 device using Azure Active Directory (AAD) cr
 
 ##### WebRTC
 
-The MixedReality-WebRTC project is a collection of components to help mixed reality app developers to integrate peer-to-peer audio, video, and data real-time communication into their applications WebRTC components are based on the WebRTC protocol for Real-Time Communication (RTC), which is supported by most modern web browsers.
+The MixedReality-WebRTC project is a collection of components to help mixed reality app developers to integrate peer-to-peer audio, video, and data real-time communication into their applications. WebRTC components are based on the WebRTC protocol for Real-Time Communication (RTC), which is supported by most modern web browsers.
 
 <br>
 
