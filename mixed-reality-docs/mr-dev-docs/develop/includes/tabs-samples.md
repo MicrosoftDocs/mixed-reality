@@ -38,7 +38,7 @@ Unity specific feature samples are listed below.
 
 #### Camera captures
 
-Unstructured environment sensor data that your Mixed Reality device captures are converted into a powerful abstract or holographic representations of the physical world around us. 
+Unstructured environment sensor data that your Mixed Reality device captures are converted into powerful abstract or holographic representations of the physical world around us. 
 
 ##### Scene understanding
 
