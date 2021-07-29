@@ -42,7 +42,7 @@ Unity specific feature samples are listed below.
 | | [Spectator view sample](#spectator-view) | Capture and render holograms at the correct size and orientation. |
 | [Contextual data overlays](#contextual-data-overlays) | [QR Codes](#qr-codes) | Detect QR Codes in the enironment. |
 | | [Poster tracker sample](#poster-tracker-sample)  | Align a hologram with a real world object. |
-| [Collaboration in mixed reality](#collabration-in-mixed-reality) | [AAD log on for HoloLens 2](#identity) | Set up your HoloLens 2 device using Azure Active Directory (AAD) credentials. |
+| [Collaboration in mixed reality](#collabration-in-mixed-reality) | [User identity](#identity) | Set up your HoloLens 2 device using Azure Active Directory (AAD) credentials. |
 | | [WebRTC sample](#webrtc) | Integrate peer-to-peer audio, video, and data real-time communication into a mixed reality application. |
 
 
@@ -98,7 +98,7 @@ It is often helpful to be able to align a hologram to a real world object, or be
 
 In mixed reality, people come together vitually to share experiences and collaborate.  Samples listed here demonstrate some features that make such collaboration possible.
 
-##### Identity 
+##### User identity 
 
 This sample sets up your HoloLens 2 device using Azure Active Directory (AAD) credentials, and then configures the device to use iris login.
 
