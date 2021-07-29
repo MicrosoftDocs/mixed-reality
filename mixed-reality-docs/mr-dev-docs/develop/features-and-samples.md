@@ -23,6 +23,14 @@ Every development journey starts with a look back at what other developers have 
 
 For each of the developer scenarios listed below, there're feature samples that correspond to specific implementations that are covered in our documentation and covers a range of development platforms and hardware devices.
 
+| Scenario | Sample | Description |
+| --- | --- | ---- |
+| Getting started | [OpenXR with Unity samples](#getting-started-with-cross-platform-developer-tools) |  Getting started with cross-platform developer tools. |
+| Mixed reality capture (MRC) | [Mixed reality capture sample](#holographic-mixed-reality-capture) |  Capture the first-person experience of mixing real and digital worlds as a photo or video. |
+| | [Research Mode samples](#research-mode) | Access to key censors on a HoloLens device for research applications. |
+| Spatial interaction | [Basic hologram sample](#spatial-interation---basic-hologram-sample) | Windows mixed reality sample that renders a spinning cube. |
+| Holographic Remoting | [Holographic Remoting player](#holographic-remoting) |  Holographic Remoting streams holographic content from a PC to your Microsoft HoloLens in real-time, by using a Wi-Fi connection. |
+
 ### Getting started with cross-platform developer tools
 
 If you're new to mixed reality cross-platform development, these samples will help you to getting started.
