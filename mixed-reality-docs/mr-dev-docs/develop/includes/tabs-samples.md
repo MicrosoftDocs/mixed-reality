@@ -48,7 +48,7 @@ Scene understanding provides Mixed Reality developers with a structured, high-le
 
 | Reference article | Sample |
 | --- | --- |
-| [Scene understanding](../design/scene-understanding.md) | [Mixed Reality Scene Understanding samples](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples) |
+| [Scene understanding](../../design/scene-understanding.md) | [Mixed Reality Scene Understanding samples](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples) |
 
 ##### Spectator view
 
@@ -72,7 +72,7 @@ HoloLens 2 can detect QR codes in the environment around the headset, establishi
 
 | Reference article | Sample |
 | --- | --- |
-| [QR codes](platform-capabilities-and-apis/qr-code-tracking.md) | [QR code tracking in Unity](https://github.com/microsoft/MixedReality-QRCode-Sample) |
+| [QR codes](../platform-capabilities-and-apis/qr-code-tracking.md) | [QR code tracking in Unity](https://github.com/microsoft/MixedReality-QRCode-Sample) |
 
 ##### Poster tracker sample
 
