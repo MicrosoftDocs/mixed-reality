@@ -86,6 +86,16 @@ It is often helpful to be able to align a hologram to a real world object, or be
 
 #### Collabration in mixed reality
 
+##### Identity 
+
+This sample sets up your HoloLens 2 device using Azure Active Directory (AAD) credentials, and then configures the device to use iris login.
+
+<br>
+
+| Reference article | Sample |
+| --- | --- |
+| [Overview of Microsoft identity platform](/azure/active-directory/develop/v2-overview) | [AAD Login on HoloLens 2](https://github.com/peted70/aad-hololens) |
+
 ##### WebRTC
 
 The MixedReality-WebRTC project is a collection of components to help mixed reality app developers to integrate peer-to-peer audio, video, and data real-time communication into their applications WebRTC components are based on the WebRTC protocol for Real-Time Communication (RTC), which is supported by most modern web browsers.
