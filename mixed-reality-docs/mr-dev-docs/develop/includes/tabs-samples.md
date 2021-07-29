@@ -4,6 +4,8 @@ The open source sample apps were created by our teams to help you get a handle o
 
 ### HoloLens 2 open source sample apps
 
+These samples demonstrate how to use Mixed Reality Toolkit's (MRTK) building blocks to build full end-to-end app experiences.
+
 :::row:::
     :::column:::
        [![Periodic Table of the Elements 2.0](../images/MRDL_PeriodicTable.jpg)](../unity/periodic-table-of-the-elements-2.md)
