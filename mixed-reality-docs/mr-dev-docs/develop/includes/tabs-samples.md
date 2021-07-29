@@ -88,6 +88,8 @@ It is often helpful to be able to align a hologram to a real world object, or be
 
 #### Collabration in mixed reality
 
+In mixed reality, people come together vitually to share experiences and collaborate.  Samples listed here demonstrate some features that make collaboration possible in mixed reality.
+
 ##### Identity 
 
 This sample sets up your HoloLens 2 device using Azure Active Directory (AAD) credentials, and then configures the device to use iris login.
