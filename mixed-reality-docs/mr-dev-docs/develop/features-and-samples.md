@@ -19,7 +19,7 @@ Every development journey starts with a look back at what other developers have 
 
 [!INCLUDE[](includes/tabs-samples.md)]
 
-## Feature samples
+## Other feature samples
 
 For each of the developer scenarios listed below, there're feature samples that correspond to specific implementations that are covered in our documentation and covers a range of development platforms and hardware devices.
 
