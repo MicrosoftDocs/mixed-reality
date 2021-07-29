@@ -57,6 +57,15 @@ Research Mode was introduced in the 1st Generation HoloLens to give access to ke
 | [Research Mode](platform-capabilities-and-apis/research-mode.md) | [HoloLens (1st gen)](https://github.com/microsoft/HoloLensForCV/tree/master/Samples) |
 | [Research Mode](platform-capabilities-and-apis/research-mode.md) | [HoloLens 2](https://github.com/microsoft/HoloLens2ForCV/tree/main/Samples) |
 
+### Basic hologram sample
+
+This sample runs on Windows Mixed Reality and renders a spinning cube. You can interact with the cube by placing it in a new position, and a variety of input methods are allowed. This sample works on PCs with headset devices attached, and also on Microsoft HoloLens.
+
+<br>
+
+| Reference article | Sample |
+| --- | --- |
+| N/A | [Windows Universal samples - basic hologram](https://github.com/microsoft/Windows-universal-samples/tree/main/Samples/BasicHologram) |
 
 ### Holographic Remoting
 
