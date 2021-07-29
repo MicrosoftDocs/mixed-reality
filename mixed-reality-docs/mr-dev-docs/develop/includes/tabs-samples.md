@@ -2,7 +2,7 @@
 
 The open source sample apps were created by our teams to help you get a handle on Mixed Reality development first-hand. We've provided the projects and full source code as a learning reference.
 
-### HoloLens 2 open source sample apps
+## HoloLens 2 open source sample apps
 
 :::row:::
     :::column:::
@@ -26,11 +26,75 @@ The open source sample apps were created by our teams to help you get a handle o
     :::column-end:::
 :::row-end:::
 
-### HoloLens (1st gen) open source sample apps
+## HoloLens (1st gen) open source sample apps
 
 * [Periodic Table of the Elements 1.0](../unity/periodic-table-of-the-elements.md)
 * [Galaxy Explorer 1.0](../unity/galaxy-explorer.md)
 * [Lunar Module](../unity/lunar-module.md)
+
+## Feature samples
+
+Unity specific feature samples are listed below.
+
+### Camera captures
+
+Unstructured environment sensor data that your Mixed Reality device captures are converted into a powerful abstract or holographic representations of the physical world around us. 
+
+#### Scene understanding
+
+Scene understanding provides Mixed Reality developers with a structured, high-level environment representation designed to make developing for environmentally aware applications intuitive. Scene understanding does this by combining the power of existing mixed reality runtimes, like the highly accurate but less structured spatial mapping and new AI driven runtimes.
+
+<br>
+
+| Reference article | Sample |
+| --- | --- |
+| [Scene understanding](../design/scene-understanding.md) | [Mixed Reality Scene Understanding samples](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples) |
+
+#### Spectator view
+
+Spectator view renders holograms from Unity over a color frame from a capture card. This sample uses the calibration data from the calibration app to render the holograms at the correct size and orientation.  
+
+<br>
+
+| Reference article | Sample application |
+| --- | --- |
+| N/A | [Spectator view mobile setup](https://github.com/microsoft/MixedReality-SpectatorView/blob/master/doc/SpectatorView.Setup.md#spectator-view-mobile-setup) |
+
+### Contextual data overlays
+
+Contextual data is the background information that provides a broader understanding of an event, person, or item.  With Augmented Reality (AR), this information can be displayed and precisedly aligned with physical objects to provide insights, instructions, service records, and other important data.
+
+#### QR codes
+
+HoloLens 2 can detect QR codes in the environment around the headset, establishing a coordinate system at each code's real-world location.
+
+<br>
+
+| Reference article | Sample |
+| --- | --- |
+| [QR codes](platform-capabilities-and-apis/qr-code-tracking.md) | [QR code tracking in Unity](https://github.com/microsoft/MixedReality-QRCode-Sample) |
+
+#### Poster tracker sample
+
+It is often helpful to be able to align a hologram to a real world object, or be able to align multiple HoloLens devices to a common set of world coordinates (so everyone sees the same holograms in the same place). For instance, in your Unity scene, you can add a "poster" to which you want to anchor your scene (perhaps a gameboard) – adding holograms on/around it. Then you can print out the poster, lay it on a table and run the calibration/alignment tool. This will move the holographic version of the poster to align with the physical version of the poster - moving all of the linked holograms to the correct alignment.
+
+<br>
+
+| Reference article | Sample |
+| --- | --- |
+| N/A | [Poster calibration sample](https://github.com/microsoft/MixedRealityCompanionKit/tree/master/PosterCalibrationSample) |
+
+### Collabration in mixed reality
+
+### WebRTC
+
+The MixedReality-WebRTC project is a collection of components to help mixed reality app developers to integrate peer-to-peer audio, video, and data real-time communication into their applications WebRTC components are based on the WebRTC protocol for Real-Time Communication (RTC), which is supported by most modern web browsers.
+
+<br>
+
+| Reference article | Sample |
+| --- | --- |
+| [WebRTC](https://microsoft.github.io/MixedReality-WebRTC) | [WebRTC sample apps](https://github.com/microsoft/MixedReality-WebRTC/tree/master/examples) |
 
 # [Unreal](#tab/unreal)
 
