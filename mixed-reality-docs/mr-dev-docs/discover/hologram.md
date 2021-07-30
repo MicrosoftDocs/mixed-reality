@@ -29,7 +29,7 @@ HoloLens lets you view **holograms**, which are objects made of light and sound 
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (first gen)</strong></a></td>
         <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
@@ -51,7 +51,7 @@ HoloLens lets you view **holograms**, which are objects made of light and sound 
 
 The holograms that HoloLens [renders](../develop/platform-capabilities-and-apis/rendering.md) appear in the holographic frame directly in front of users' eyes. Holograms add light to your world, which means that you see both the light from the display and the light from your surrounding world. Since HoloLens uses an additive display that adds light, the black color will be rendered transparent. 
 
-Holograms can have very different appearances and behaviors. Some are realistic and solid, and others are cartoonish and ethereal. You can use holograms to highlight features in your environment or use them as elements in your app's user interface.
+Holograms can have different appearances and behaviors. Some are realistic and solid, and others are cartoonish and ethereal. You can use holograms to highlight features in your environment or use them as elements in your app's user interface.
 
 ![Hands manipulating a hologram](images/hologram-hands-940px.jpg)
 
@@ -73,11 +73,11 @@ Some holograms follow the user instead. They position themselves based on the us
    * **Display-locked** content is locked to the display device. This type of content is tricky for several reasons, including an unnatural feeling of "clingyness" that makes many users frustrated and wanting to "shake it off." In general, designers have found it better to avoid display-locking content.
    * **Body-locked** content can be far more forgiving. Body-locking is when you tether a hologram to the user's body or gaze vector in 3D space. Many experiences have adopted a body-locking behavior where the hologram follows the user's gaze, which allows the user to rotate their body and move through space without losing the hologram. Incorporating a delay helps the hologram movements to feel more natural. For example, some core UI of the Windows Holographic OS uses a variation on body-locking that follows the user's gaze with a gentle, elastic-like delay while the user turns their head.
 * Place the hologram at a comfortable viewing distance typically about 1-2 meters away from the head.
-* Allow elements to drift if they must be continually in the holographic frame, or consider moving your content to one side of the display when the user changes their point of view. For more information, see the [billboarding and tag-along](../design/billboarding-and-tag-along.md) artilce.
+* Allow elements to drift if they must be continually in the holographic frame, or consider moving your content to one side of the display when the user changes their point of view. For more information, see the [bill boarding and tag-along](../design/billboarding-and-tag-along.md) article.
 
 **Place holograms in the optimal zone - between 1.25 m and 5 m**
 
-Two meters is the most optimal viewing distance. The experience will start to degrade as you get closer than 1 meter. At distances less than 1 meter, holograms that regularly move in depth are more likely to be problematic than stationary holograms. Consider gracefully clipping or fading out your content when it gets too close, so you don't jar the user into an unpleasant viewing experience.
+2 meters are the most optimal viewing distance. The experience will start to degrade as you get closer than 1 meter. At distances less than 1 meter, holograms that regularly move in depth are more likely to be problematic than stationary holograms. Consider gracefully clipping or fading out your content when it gets too close, so you don't jar the user into an unpleasant viewing experience.
 
 ![Optimal distance for placing holograms from the user.](images/distanceguiderendering-950px.png)
 
