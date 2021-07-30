@@ -8,7 +8,7 @@ ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windows mixed reality headset, virtual reality headset, data channels
 ---
 
-# Custom Holographic Remoting data channels
+# Custom Holographic Remoting data channels (C++)
 
 >[!NOTE]
 >This guidance is specific to Holographic Remoting on HoloLens 2.
@@ -109,6 +109,7 @@ m_customDataChannel.Close();
 ```
 
 ## See Also
+* [Holographic Remoting overview](holographic-remoting-overview.md)
 * [Writing a Holographic Remoting remote app using Windows Mixed Reality APIs](holographic-remoting-create-remote-wmr.md)
 * [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md)
 * [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)
