@@ -1,8 +1,8 @@
 # [Unity](#tab/unity)
 
-The open source sample apps were created by our teams to help you get a handle on Mixed Reality development first-hand. We've provided the projects and full source code as a learning reference.
+The open-source sample apps were created by our teams to help you get a handle on Mixed Reality development first-hand. We've provided the projects and full source code as a learning reference.
 
-### HoloLens 2 open source sample apps
+### HoloLens 2 open-source sample apps
 
 :::row:::
     :::column:::
@@ -26,7 +26,7 @@ The open source sample apps were created by our teams to help you get a handle o
     :::column-end:::
 :::row-end:::
 
-### HoloLens (1st gen) open source sample apps
+### HoloLens (first gen) open-source sample apps
 
 * [Periodic Table of the Elements 1.0](../unity/periodic-table-of-the-elements.md)
 * [Galaxy Explorer 1.0](../unity/galaxy-explorer.md)
@@ -34,13 +34,13 @@ The open source sample apps were created by our teams to help you get a handle o
 
 ### Unity feature samples
 
-Unity specific feature samples are listed below.
+Unity-specific feature samples are listed below.
 
 | Scenario | Sample | Description |
 | --- | --- | ---- |
 | [Camera capture](#camera-captures) | [Scene understanding sample](#scene-understanding) | Help design environmentally aware mixed reality applications. |
 | | [Spectator view sample](#spectator-view) | Capture and render holograms at the correct size and orientation. |
-| [Contextual data overlays](#contextual-data-overlays) | [QR Codes](#qr-codes) | Detect QR Codes in the enironment. |
+| [Contextual data overlays](#contextual-data-overlays) | [QR Codes](#qr-codes) | Detect QR Codes in the environment. |
 | | [Poster tracker sample](#poster-tracker-sample)  | Align a hologram with a real world object. |
 | [Collaboration in mixed reality](#collabration-in-mixed-reality) | [User identity](#user-identity) | Set up your HoloLens 2 device using Azure Active Directory (AAD) credentials. |
 | | [WebRTC sample](#webrtc) | Integrate peer-to-peer audio, video, and data real-time communication into a mixed reality application. |
@@ -51,7 +51,7 @@ Unstructured environment sensor data that your Mixed Reality device captures are
 
 ##### Scene understanding
 
-Scene understanding provides Mixed Reality developers with a structured, high-level environment representation designed to make developing for environmentally aware applications intuitive. Scene understanding does this by combining the power of existing mixed reality runtimes, like the highly accurate but less structured spatial mapping and new AI driven runtimes.
+Scene understanding provides Mixed Reality developers with a structured, high-level environment representation.  Scene understanding is designed for developing intuitive and environmentally aware applications, by combining the power of existing mixed reality runtimes. These runtimes are the highly accurate but less structured spatial mapping and new AI driven runtimes.
 
 <br>
 
@@ -71,7 +71,7 @@ Spectator view renders holograms from Unity over a color frame from a capture ca
 
 #### Contextual data overlays
 
-Contextual data is the background information that provides a broader understanding of an event, person, or item.  With Augmented Reality (AR), this information can be displayed and precisedly aligned with physical objects to provide insights, instructions, service records, and other important data.
+Contextual data is the background information that provides a broader understanding of an event, person, or item.  With Augmented Reality (AR), this information can be displayed and precisely aligned with physical objects to provide insights, instructions, service records, and other important data.
 
 ##### QR codes
 
@@ -85,7 +85,7 @@ HoloLens 2 can detect QR codes in the environment around the headset, establishi
 
 ##### Poster tracker sample
 
-It is often helpful to be able to align a hologram to a real world object, or be able to align multiple HoloLens devices to a common set of world coordinates (so everyone sees the same holograms in the same place). For instance, in your Unity scene, you can add a "poster" to which you want to anchor your scene (perhaps a gameboard) – adding holograms on/around it. Then you can print out the poster, lay it on a table and run the calibration/alignment tool. This will move the holographic version of the poster to align with the physical version of the poster - moving all of the linked holograms to the correct alignment.
+It is often helpful to be able to align a hologram to a real world object, or align multiple HoloLens devices to a common set of world coordinates, so everyone sees the same holograms in the same location. For instance, in your Unity scene, you can add a "poster" where you want to anchor your scene (perhaps a game board), and then add holograms on or around it. Then you can print the poster, lay it on a table and run the calibration/alignment tool, which will move the holographic version of the poster to align with the physical version of the poster. Thus moving all of the linked holograms to the correct alignment.
 
 <br>
 
@@ -93,9 +93,9 @@ It is often helpful to be able to align a hologram to a real world object, or be
 | --- | --- |
 | N/A | [Poster calibration sample](https://github.com/microsoft/MixedRealityCompanionKit/tree/master/PosterCalibrationSample) |
 
-#### Collabration in mixed reality
+#### Collaboration in mixed reality
 
-In mixed reality, people come together vitually to share experiences and collaborate.  Samples listed here demonstrate some features that make such collaboration possible.
+In mixed reality, people come together virtually to share experiences and collaborate.  Samples listed here demonstrate some features that make such collaboration possible.
 
 ##### User identity 
 
@@ -119,16 +119,16 @@ The MixedReality-WebRTC project is a collection of components to help mixed real
 
 # [Unreal](#tab/unreal)
 
-Most of the open source sample apps made by our team can be found in the Unreal Mixed Reality Samples [repository](https://github.com/microsoft/MixedReality-Unreal-Samples) on GitHub. We've provided the source code so that developers can look at, learn from, and reuse our projects.
+Most of the open-source sample apps made by our team can be found in the Unreal Mixed Reality Samples [repository](https://github.com/microsoft/MixedReality-Unreal-Samples) on GitHub. We've provided the source code so that developers can look at, learn from, and reuse our projects.
 
-### HoloLens 2 open source sample apps
+### HoloLens 2 open-source sample apps
 
 * [HoloLens2Example](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/HoloLens2Example)
 * [HoloPipes](https://github.com/microsoft/MixedReality-Unreal-HoloPipes) - Download from the [Microsoft Store](https://www.microsoft.com/p/holopipes/9mszb3nnrxn9) in HoloLens 2
 
 ### Made with the Mixed Reality Toolkit for Unreal
 
-A subset of the samples use interactive UX components such as buttons and sliders, which are provided by the [UX Tools plugin](https://aka.ms/uxt-unreal) as part of the [Mixed Reality Toolkit for Unreal](https://aka.ms/mrtk-unreal).
+A subset of the samples uses interactive UX components such as buttons and sliders, which are provided by the [UX Tools plugin](https://aka.ms/uxt-unreal) as part of the [Mixed Reality Toolkit for Unreal](https://aka.ms/mrtk-unreal).
 
 :::row:::
     :::column:::
