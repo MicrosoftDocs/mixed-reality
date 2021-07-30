@@ -21,7 +21,7 @@ Every development journey starts with a look back at what other developers have 
 
 ## Other feature samples
 
-For each of the developer scenarios listed below, there're feature samples that correspond to specific implementations that are covered in our documentation and covers a range of development platforms and hardware devices.
+For each of the developer scenarios listed below, there are feature samples that correspond to specific implementations that are covered in our documentation and covers a range of development platforms and hardware devices.
 
 | Scenario | Sample | Description |
 | --- | --- | ---- |
@@ -29,7 +29,7 @@ For each of the developer scenarios listed below, there're feature samples that 
 | Mixed reality capture (MRC) | [Mixed reality capture sample](#holographic-mixed-reality-capture) |  Capture the first-person experience of mixing real and digital worlds as a photo or video. |
 | | [Research Mode samples](#research-mode) | Access to key censors on a HoloLens device for research applications. |
 | Spatial interaction | [Basic hologram sample](#spatial-interation---basic-hologram-sample) | Windows mixed reality sample that renders a spinning cube. |
-| Holographic Remoting | [Holographic Remoting player](#holographic-remoting) |  Holographic Remoting streams holographic content from a PC to your Microsoft HoloLens in real-time, by using a Wi-Fi connection. |
+| Holographic Remoting | [Holographic Remoting player](#holographic-remoting) |  Holographic Remoting streams holographic content from a PC to your Microsoft HoloLens in real time, by using a Wi-Fi connection. |
 
 ### Getting started with cross-platform developer tools
 
@@ -46,7 +46,7 @@ For developers targeting Unity 2020 to build HoloLens 2 or Mixed Reality applica
 
 ### Holographic Mixed Reality Capture
 
-Mixed reality capture (MRC) captures the first-person experience of mixing real and digital worlds as a photo or video, sharing what you see with others in real-time.
+Mixed reality capture (MRC) captures the first-person experience of mixing real and digital worlds as a photo or video, sharing what you see with others in real time.
 
 <br>
 
@@ -56,18 +56,18 @@ Mixed reality capture (MRC) captures the first-person experience of mixing real 
 
 #### Research Mode
 
-Research Mode was introduced in the 1st Generation HoloLens to give access to key sensors on the device, specifically for research applications that are not intended for deployment. The sample applications below are examples for accessing and recording Research Mode streams and using the [intrinsics and extrinsics](/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world).
+Research Mode was introduced in the first-generation HoloLens to give access to key sensors on the device, specifically for research applications that are not intended for deployment. The sample applications below are examples for accessing and recording Research Mode streams and using the [intrinsic and extrinsic](/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world).
 
 <br>
 
 | Reference article | Sample application |
 | --- | --- |
-| [Research Mode](platform-capabilities-and-apis/research-mode.md) | [HoloLens (1st gen)](https://github.com/microsoft/HoloLensForCV/tree/master/Samples) |
+| [Research Mode](platform-capabilities-and-apis/research-mode.md) | [HoloLens (first gen)](https://github.com/microsoft/HoloLensForCV/tree/master/Samples) |
 | [Research Mode](platform-capabilities-and-apis/research-mode.md) | [HoloLens 2](https://github.com/microsoft/HoloLens2ForCV/tree/main/Samples) |
 
-### Spatial interation - basic hologram sample
+### Spatial interaction - basic hologram sample
 
-This sample runs on Windows Mixed Reality and renders a spinning cube. You can interact with the cube by placing it in a new position, and a variety of input methods are allowed. This sample works on PCs with headset devices attached, and also on Microsoft HoloLens.
+This sample runs on Windows Mixed Reality and renders a spinning cube. You can interact with the cube by placing it in a new position, and various input methods are allowed. This sample works on PCs with headset devices attached, and also on Microsoft HoloLens.
 
 <br>
 
@@ -77,7 +77,7 @@ This sample runs on Windows Mixed Reality and renders a spinning cube. You can i
 
 ### Holographic Remoting
 
-The Holographic Remoting Player is a companion app that connects to PC apps and games that support Holographic Remoting. Holographic Remoting streams holographic content from a PC to your Microsoft HoloLens in real-time, using a Wi-Fi connection, and is supported on HoloLens (1st gen) and HoloLens 2.
+The Holographic Remoting Player is a companion app that connects to PC apps and games that support Holographic Remoting. Holographic Remoting streams holographic content from a PC to your Microsoft HoloLens in real time, using a Wi-Fi connection, and is supported on HoloLens (first gen) and HoloLens 2.
 
 <br>
 
