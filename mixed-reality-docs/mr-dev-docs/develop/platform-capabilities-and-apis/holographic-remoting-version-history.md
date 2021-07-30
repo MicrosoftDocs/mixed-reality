@@ -162,7 +162,7 @@ lease updated to at least version 2.2.1.
 * First public release of Holographic Remoting for HoloLens 2.
 
 ## See Also
-* [Holographic Remoting overview](holographic-remoting-overview.md)
+
 * [Writing a Holographic Remoting remote app using Windows Mixed Reality APIs](holographic-remoting-create-remote-wmr.md)
 * [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md)
 * [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)

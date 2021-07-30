@@ -8,7 +8,7 @@ ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windows mixed reality headset, virtual reality headset, security, authentication, server-to-client
 ---
 
-# Enabling connection security for Holographic Remoting (C++)
+# Enabling connection security for Holographic Remoting
 
 >[!IMPORTANT]
 >This guidance is specific to Holographic Remoting on HoloLens 2.
@@ -184,7 +184,6 @@ These callbacks can be provided to the remoting OpenXR runtime via `xrRemotingSe
 This API is similar to the IDL-based API described in [Implementing holographic remoting security](#implementing-holographic-remoting-security). However, instead of implementing interfaces, you're supposed to provide callback implementations. You can find a detailed example in the [OpenXR sample app](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
 ## See Also
-* [Holographic Remoting overview](holographic-remoting-overview.md)
 * [Writing a Holographic Remoting remote app using Windows Mixed Reality APIs](holographic-remoting-create-remote-wmr.md)
 * [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md)
 * [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)

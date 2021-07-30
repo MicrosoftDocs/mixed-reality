@@ -236,14 +236,6 @@
         href: unity/unity-xrdevice-advanced.md
       - name: Using Vuforia
         href: unity/vuforia-development-overview.md
-  - name: Holographic Remoting
-    items:
-      - name: Preview and debug your app with Play mode
-      - href: unity/preview-and-debug-your-app.md
-      - name: Use PC resources to power your app
-      - href: unity/use-pc-resources.md
-      - name: Migrate from previous APIs
-      - href: unity/migrate-from-previous-apis.md
   - name: Immersive VR
     items:
       - name: HP Reverb G2 controllers
@@ -272,8 +264,8 @@
         href: unity/managed-debugging-with-unity-il2cpp.md
       - name: Recommended settings for Unity
         href: unity/recommended-settings-for-unity.md
-      - name: Debug your app with Holographic Remoting
-        href: unity/debug-your-app.md
+      - name: Preview your work with Holographic Remoting
+        href: unity/holographic-remoting-in-unity.md
   - name: Visual Studio solutions
     items:
       - name: Exporting and building a Unity Visual Studio solution
@@ -458,21 +450,21 @@
           href: platform-capabilities-and-apis/installing-pix-hololens.md
     - name: Holographic remoting
       items:
-        - name: Holographic Remoting Overview
+        - name: Overview
           href: platform-capabilities-and-apis/holographic-remoting-overview.md
-        - name: The Holographic Remoting player
+        - name: Holographic Remoting player
           href: platform-capabilities-and-apis/holographic-remoting-player.md
-        - name: Writing a Holographic Remoting remote app (C++)
+        - name: Writing a Holographic Remoting remote app
           items:
             - name: HolographicSpace API
               href: platform-capabilities-and-apis/holographic-remoting-create-remote-wmr.md
             - name: OpenXR API
               href: platform-capabilities-and-apis/holographic-remoting-create-remote-openxr.md
-        - name: Writing a custom Holographic Remoting Player app (C++)
+        - name: Writing a custom Holographic Remoting player app
           href: platform-capabilities-and-apis/holographic-remoting-create-player.md
-        - name: Custom Holographic Remoting data channels (C++)
+        - name: Custom Holographic Remoting data channels
           href: platform-capabilities-and-apis/holographic-remoting-custom-data-channels.md
-        - name: Secure Connection with Holographic Remoting (C++)
+        - name: Secure Connection with Holographic Remoting
           href: platform-capabilities-and-apis/holographic-remoting-secure-connection.md
         - name: Troubleshooting and limitations
           href: platform-capabilities-and-apis/holographic-remoting-troubleshooting.md

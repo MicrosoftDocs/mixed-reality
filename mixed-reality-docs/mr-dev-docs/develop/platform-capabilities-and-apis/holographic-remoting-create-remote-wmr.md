@@ -354,7 +354,6 @@ To verify if depth reprojection is correctly working on HoloLens 2, you can enab
 Custom data channels can be used to send user data over the already established remoting connection. See [custom data channels](holographic-remoting-custom-data-channels.md) for more information.
 
 ## See Also
-* [Holographic Remoting overview](holographic-remoting-overview.md)
 * [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)
 * [Custom Holographic Remoting data channels](holographic-remoting-custom-data-channels.md)
 * [Establishing a secure connection with Holographic Remoting](holographic-remoting-secure-connection.md)
