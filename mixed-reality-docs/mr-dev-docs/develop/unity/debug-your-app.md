@@ -1,8 +1,8 @@
 ---
 title: Debug your app with Holographic Remoting
 description: Debug your app with Holographic Remoting
-author: vtieto
-ms.author: v-vtieto
+author: v-vtieto
+ms.author: vtieto
 ms.date: 07/30/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, augmented reality, virtual reality, mixed reality headsets, learn, tutorial, getting started, holographic remoting, desktop, preview, debug
