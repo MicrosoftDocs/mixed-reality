@@ -15,7 +15,7 @@ ms.localizationpriority: high
 
 Every development journey starts with a look back at what other developers have successfully built - mixed reality is no different. Currently, all of our tutorials and sample apps are built in Unity or Unreal. As we develop content for other engines and platforms, you'll find them under the relevant heading in the Table of Contents.
 
-| Scenario | Sample | Engine | Description |
+| Scenario | Feature sample | Engine | Description |
 | --- | --- | ---- | --- |
 | Getting started | [OpenXR with Unity samples](#getting-started-with-cross-platform-developer-tools) | Native (OpenXR) | Getting started with cross-platform developer tools. |
 | Camera capture | [Mixed reality capture sample](#holographic-mixed-reality-capture) | Windows 10 C++ | Capture the first-person experience of mixing real and digital worlds as a photo or video. |
