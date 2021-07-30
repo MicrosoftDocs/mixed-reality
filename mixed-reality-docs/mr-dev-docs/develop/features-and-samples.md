@@ -15,6 +15,20 @@ ms.localizationpriority: high
 
 Every development journey starts with a look back at what other developers have successfully built - mixed reality is no different. Currently, all of our tutorials and sample apps are built in Unity or Unreal. As we develop content for other engines and platforms, you'll find them under the relevant heading in the Table of Contents.
 
+| Scenario | Sample | Description |
+| --- | --- | ---- |
+| Getting started | [OpenXR with Unity samples](#getting-started-with-cross-platform-developer-tools) |  Getting started with cross-platform developer tools. |
+| Camera capture | [Mixed reality capture sample](#holographic-mixed-reality-capture) |  Capture the first-person experience of mixing real and digital worlds as a photo or video. |
+|  | [Scene understanding sample](#scene-understanding) | Help design environmentally aware mixed reality applications. |
+| | [Spectator view sample](#spectator-view) | Capture and render holograms at the correct size and orientation. |
+| | [Research Mode samples](#research-mode) | Access to key censors on a HoloLens device for research applications. |
+| [Contextual data overlays](#contextual-data-overlays) | [QR Codes](#qr-codes) | Detect QR Codes in the environment. |
+| | [Poster tracker sample](#poster-tracker-sample)  | Align a hologram with a real world object. |
+| [Collaboration in mixed reality](#collaboration-in-mixed-reality) | [User identity](#user-identity) | Set up your HoloLens 2 device using Azure Active Directory (AAD) credentials. |
+| | [WebRTC sample](#webrtc) | Integrate peer-to-peer audio, video, and data real-time communication into a mixed reality application. |
+| Spatial interaction | [Basic hologram sample](#spatial-interaction---basic-hologram-sample) | Windows mixed reality sample that renders a spinning cube. |
+| Holographic Remoting | [Holographic Remoting player](#holographic-remoting) |  Holographic Remoting streams holographic content from a PC to your Microsoft HoloLens in real time, by using a Wi-Fi connection. |
+
 ## Sample apps
 
 [!INCLUDE[](includes/tabs-samples.md)]
@@ -22,14 +36,6 @@ Every development journey starts with a look back at what other developers have 
 ## Other feature samples
 
 For each of the developer scenarios listed below, there are feature samples that correspond to specific implementations that are covered in our documentation and covers a range of development platforms and hardware devices.
-
-| Scenario | Sample | Description |
-| --- | --- | ---- |
-| Getting started | [OpenXR with Unity samples](#getting-started-with-cross-platform-developer-tools) |  Getting started with cross-platform developer tools. |
-| Mixed reality capture (MRC) | [Mixed reality capture sample](#holographic-mixed-reality-capture) |  Capture the first-person experience of mixing real and digital worlds as a photo or video. |
-| | [Research Mode samples](#research-mode) | Access to key censors on a HoloLens device for research applications. |
-| Spatial interaction | [Basic hologram sample](#spatial-interaction---basic-hologram-sample) | Windows mixed reality sample that renders a spinning cube. |
-| Holographic Remoting | [Holographic Remoting player](#holographic-remoting) |  Holographic Remoting streams holographic content from a PC to your Microsoft HoloLens in real time, by using a Wi-Fi connection. |
 
 ### Getting started with cross-platform developer tools
 

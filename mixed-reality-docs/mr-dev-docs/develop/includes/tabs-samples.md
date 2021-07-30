@@ -36,15 +36,6 @@ The open-source sample apps were created by our teams to help you get a handle o
 
 Unity-specific feature samples are listed below.
 
-| Scenario | Sample | Description |
-| --- | --- | ---- |
-| [Camera capture](#camera-captures) | [Scene understanding sample](#scene-understanding) | Help design environmentally aware mixed reality applications. |
-| | [Spectator view sample](#spectator-view) | Capture and render holograms at the correct size and orientation. |
-| [Contextual data overlays](#contextual-data-overlays) | [QR Codes](#qr-codes) | Detect QR Codes in the environment. |
-| | [Poster tracker sample](#poster-tracker-sample)  | Align a hologram with a real world object. |
-| [Collaboration in mixed reality](#collaboration-in-mixed-reality) | [User identity](#user-identity) | Set up your HoloLens 2 device using Azure Active Directory (AAD) credentials. |
-| | [WebRTC sample](#webrtc) | Integrate peer-to-peer audio, video, and data real-time communication into a mixed reality application. |
-
 #### Camera captures
 
 Unstructured environment sensor data that your Mixed Reality device captures are converted into powerful abstract or holographic representations of the physical world around us. 
