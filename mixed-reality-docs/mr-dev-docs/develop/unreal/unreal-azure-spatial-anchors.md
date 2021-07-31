@@ -40,7 +40,7 @@ Check out the [Azure Spatial Anchors authentication](/azure/spatial-anchors/conc
 > [!NOTE]
 > Azure Spatial Anchors in Unreal 4.25 does not support Azure AD authentication tokens, but support for this functionality will be coming in a later release.
 
-## Enable Capabilities and Permissions {.tabset}
+## Enable Capabilities and Permissions
 ### HoloLens
 
 Open **Project Settings > HoloLens** and enable the **Internet Client** capability:
@@ -77,7 +77,7 @@ To display a permission dialogue and allow the iOS device to access location inf
 
 ![Start iOS location services](images/asa-unreal/unreal-spatial-anchors-ios-img-3.png)
 
-## Adding Azure Spatial Anchors plugins {.tabset}
+## Adding Azure Spatial Anchors plugins
 
 ### HoloLens
 Enable the Azure Spatial Anchors plugins in the Unreal editor by:
