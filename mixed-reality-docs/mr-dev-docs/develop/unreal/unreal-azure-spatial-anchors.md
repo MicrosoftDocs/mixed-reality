@@ -40,19 +40,74 @@ Check out the [Azure Spatial Anchors authentication](/azure/spatial-anchors/conc
 > [!NOTE]
 > Azure Spatial Anchors in Unreal 4.25 does not support Azure AD authentication tokens, but support for this functionality will be coming in a later release.
 
-## Enabling Internet access
+## Enable Capabilities and Permissions {.tabset}
+### HoloLens
 
 Open **Project Settings > HoloLens** and enable the **Internet Client** capability:
 
 ![HoloLens project settings with capabilities highlighted](images/asa-enable-wifi-connection.jpg)
 
-## Adding Azure Spatial Anchors plugins
+### Android
+For an Android app to display a permission dialogue and allow location capabilities, the **Request Android Permissions** function must be called before attempting to start the Azure Spatial Anchor session: 
 
+![Request Android permissions function](images/asa-unreal/unreal-spatial-anchors-android-img-1.png)
+
+Create a local variable for the input permissions, and populate with:
+- android.permission.ACCESS_WIFI_STATE
+- android.permission.CHANGE_WIFI_STATE
+- android.permission.INTERNET
+- android.permission.BLUETOOTH
+- android.permission.BLUETOOTH_ADMIN
+- android.permission.ACCESS_COARSE_LOCATION
+- android.permission.ACCESS_FINE_LOCATION
+- android.permission.CAMERA
+
+![Set Android permissions](images/asa-unreal/unreal-spatial-anchors-android-img-2.png)
+
+Finally, open **Project Settings > Android** and set the same permissions in the **Extra Permissions** field under **Advanced APK Packaging**:
+
+![Android APK project settings](images/asa-unreal/unreal-spatial-anchors-android-img-3.png)
+
+### iOS
+To build an application for iOS, you will need to use Unreal on a Mac.  To package with an Apple developer account, open **Project Settings > iOS** and scroll down to the **Build** section.  Enable the **Automatic Signing** checkbox and populate the **IOS Team ID** with your Team ID.
+
+You can find your Team ID by logging into **developer.apple.com**, navigating to the **Membership** tab and searching for **Team ID**.
+
+To display a permission dialogue and allow the iOS device to access location information, the **Init Location Services** and **Start Location Services** functions must be called before attempting to start the Azure Spatial Anchor session: 
+
+![Start iOS location services](images/asa-unreal/unreal-spatial-anchors-ios-img-3.png)
+
+## Adding Azure Spatial Anchors plugins {.tabset}
+
+### HoloLens
 Enable the Azure Spatial Anchors plugins in the Unreal editor by:
-1. Clicking **Edit > Plugins** and searching for **AzureSpatialAnchors** and **AzureSpatialAnchorsForWMR**.
+1. Clicking **Edit > Plugins** and searching for **Azure Spatial Anchors** and **Azure Spatial Anchors For WMR**.
 2. Select the **Enabled** checkbox in both plugins to allow access to the Azure Spatial Anchors blueprint libraries in your application.
 
 ![Screenshot of spatial Anchors plugins in Unreal editor](images/asa-unreal/unreal-spatial-anchors-img-01.png)
+
+Once that's done, restart the Unreal Editor for the plugin changes to take effect. The project is now ready to use Azure Spatial Anchors.
+
+### Android
+Enable the Azure Spatial Anchors plugins in the Unreal editor by:
+1. Clicking **Edit > Plugins** and searching for **Azure Spatial Anchors** and **Azure Spatial Anchors For ARCore**.
+2. Select the **Enabled** checkbox in both plugins to allow access to the Azure Spatial Anchors blueprint libraries in your application.
+
+![Android plugins in Unreal editor](images/asa-unreal/unreal-spatial-anchors-android-img-4.png)
+
+Once that's done, restart the Unreal Editor for the plugin changes to take effect. The project is now ready to use Azure Spatial Anchors.
+
+### iOS
+Enable the Azure Spatial Anchors plugins in the Unreal editor by:
+1. Clicking **Edit > Plugins** and searching for **Azure Spatial Anchors** and **Azure Spatial Anchors For ARKit**.
+2. Select the **Enabled** checkbox in both plugins to allow access to the Azure Spatial Anchors blueprint libraries in your application.
+
+![iOS ASA plugins in Unreal editor](images/asa-unreal/unreal-spatial-anchors-ios-img-1.png)
+
+3. Also search for **Mobile Location Services** and **Mobile Location Services - IOS Implementation**
+4. Select the **Enabled** checkbox in both plugins to allow the iOS device to access current location.
+
+![iOS Location plugins in Unreal editor](images/asa-unreal/unreal-spatial-anchors-ios-img-2.png)
 
 Once that's done, restart the Unreal Editor for the plugin changes to take effect. The project is now ready to use Azure Spatial Anchors.
 
@@ -72,7 +127,7 @@ Start an Azure Spatial Anchors session by:
 
 ![Blueprint of starting azure spatial anchors session custom event](images/asa-unreal/unreal-spatial-anchors-img-03.png)
 
-3. Configure the Azure Spatial Anchors session to provide the **Account ID** and **Account Key**.
+3. Configure the Azure Spatial Anchors session to provide the **Account ID**, **Account Key**, and **Course Localization Settings**.  All of the checkboxes should be enabled in the course localization settings so the azure spatial anchor service can use sensor data to locate anchors.
 
 ![Blueprint of config session function with account id and key added](images/asa-unreal/unreal-spatial-anchors-img-04.png)
 
