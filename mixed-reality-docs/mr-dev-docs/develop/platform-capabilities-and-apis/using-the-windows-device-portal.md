@@ -233,7 +233,7 @@ To access the Map Manager, log into the Device Portal and select **Mixed Reality
 
 To export maps, select **Export System Map & Anchors**. This could take a while so be prepared to wait for 30-60 seconds while the map is exported. Once it’s complete, the file will be downloaded in your browser.  
 
-To import maps and anchors, select **Upload a map file** and **Upload an anchor file** respectively and select a map or anchor file that you've already exported. The uploaded map or anchor file can come from any other HoloLens device. 
+To import maps and anchors, select **Upload a map file** and **Upload an anchor file** respectively and select a map or anchor file that you've already exported. The uploaded map or anchor file can come from any other HoloLens device.
 
 > [!NOTE]
 > On HoloLens, it's also possible to import and export the spatial mapping data base. However, this doesn't work on non-HoloLens devices.  
