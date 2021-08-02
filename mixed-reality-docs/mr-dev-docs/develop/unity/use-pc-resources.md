@@ -1,7 +1,7 @@
 ---
 title: Use PC resources to power your app with Holographic Remoting
-description: Use Holographic Remoting and Play mode to preview and debug your app
-author: v-vtieto
+description: Use PC resources, instead of relying on the on-board processing power of the HoloLens, to power your app with Holographic Remoting
+author: vtieto
 ms.author: v-vtieto
 ms.date: 07/30/2021
 ms.topic: article

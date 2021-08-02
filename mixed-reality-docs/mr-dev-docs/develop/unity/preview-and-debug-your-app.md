@@ -1,7 +1,7 @@
 ---
 title: Preview and debug your app with Holographic Remoting and Play mode
 description: Use Holographic Remoting and Play mode to preview and debug your app
-author: v-vtieto
+author: vtieto
 ms.author: v-vtieto
 ms.date: 07/29/2021
 ms.topic: article
@@ -34,5 +34,5 @@ Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more 
 * [Migrate from previous Holographic Remoting APIs](migrate-from-previous-apis.md)
 * [Write a Holographic Remoting remote app using Windows Mixed Reality APIs](../platform-capabilities-and-apis/holographic-remoting-create-remote-wmr.md)
 * [Write a Holographic Remoting remote app using OpenXR APIs](../platform-capabilities-and-apis/holographic-remoting-create-remote-openxr.md)
-* [Tutorial: Getting started with PC Holographic Remoting](../tutorials/mr-learning-pc-holographic-remoting-01.md)
-* [Tutorial: Creating a Holographic Remoting PC application](../tutorials/mr-learning-pc-holographic-remoting-02.md)
+* [Tutorial: Getting started with PC Holographic Remoting](tutorials/mr-learning-pc-holographic-remoting-01.md)
+* [Tutorial: Creating a Holographic Remoting PC application](tutorials/mr-learning-pc-holographic-remoting-02.md)

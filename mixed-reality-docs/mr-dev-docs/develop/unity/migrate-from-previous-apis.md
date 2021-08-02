@@ -1,7 +1,7 @@
 ---
 title: Migrate from previous Holographic Remoting APIs
 description: Migrate from previous Holographic Remoting APIs
-author: v-vtieto
+author: vtieto
 ms.author: v-vtieto
 ms.date: 07/30/2021
 ms.topic: article
@@ -34,7 +34,7 @@ From the sample code on [Unity's docs](https://docs.unity3d.com/2018.4/Documenta
 
 ## See Also
 
-* [Holographic Remoting Player](holographic-remoting-player.md)
+* [Holographic Remoting Player](../platform-capabilities-and-apis/holographic-remoting-player.md)
 * [Preview and debug your app with Holographic Remoting and Play mode](preview-and-debug-your-app.md)
 * [Use PC resources to power your app](use-pc-resources.md)
 * [Write a Holographic Remoting remote app using Windows Mixed Reality APIs](../platform-capabilities-and-apis/holographic-remoting-create-remote-wmr.md)
