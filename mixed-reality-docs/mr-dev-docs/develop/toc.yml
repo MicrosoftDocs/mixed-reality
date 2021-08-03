@@ -1,10 +1,10 @@
 - name: Introduction to Mixed Reality development
   items:
-  - name: Getting started
+  - name: Getting started  
     href: development.md
   - name: Install the tools
     href: install-the-tools.md
-  - name: Choosing an engine
+  - name: Choosing an engine 
     href: choosing-an-engine.md
 - name: Azure mixed reality cloud services overview
   href: mixed-reality-cloud-services.md
@@ -176,7 +176,7 @@
     items:
     - name: Choosing a Unity version and XR plugin
       href: unity/choosing-unity-version.md
-    - name: Setting up your XR configuration
+    - name: Setting up your XR configuration 
       href: unity/xr-project-setup.md
     - name: Mixed Reality Feature Tool
       items:
@@ -284,7 +284,7 @@
     href: unreal/unreal-development-overview.md
   - name: Introducing MRTK
     href: unreal/unreal-mrtk-introduction.md
-  - name: Setting up your project
+  - name: Setting up your project 
     href: unreal/unreal-project-setup.md
   - name: Upgrading projects in Unreal
     href: unreal/unreal-porting.md
@@ -364,9 +364,9 @@
         href: unreal/unreal-deploying.md
       - name: Publishing to the Microsoft Store
         href: unreal/unreal-publishing-to-store.md
-- name: JavaScript
+- name: JavaScript  
   items:
-  - name: JavaScript development overview
+  - name: JavaScript development overview 
     href: javascript/webxr-overview.md
   - name: Tutorials
     items:
