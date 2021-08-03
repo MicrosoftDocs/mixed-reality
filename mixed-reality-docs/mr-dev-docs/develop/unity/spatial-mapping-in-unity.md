@@ -10,14 +10,14 @@ keywords: Unity, spatial mapping, renderer, collider, mesh, scanning, component,
 
 # Spatial mapping in Unity
 
-[spatial mapping](../../design/spatial-mapping.md) lets you retrieve triangle meshes that represent the surfaces in the world around a HoloLens device. You can use surface data for placement, occlusion, and room analysis to give your Unity projects an extra dose of immersion.
+[Spatial mapping](../../design/spatial-mapping.md) lets you retrieve triangle meshes that represent the surfaces in the world around a HoloLens device. You can use surface data for placement, occlusion, and room analysis to give your Unity projects an extra dose of immersion.
 
 Unity includes full support for spatial mapping, which is exposed to developers in the following ways:
 
 1. Spatial mapping components available in the MixedRealityToolkit, which provide a convenient and rapid path for getting started with spatial mapping
 2. Lower-level spatial mapping APIs, which provide full control and enable more sophisticated application-specific customization
 
-To use spatial mapping in your app, the spatialPerception capability needs to be set in your AppxManifest.
+To use spatial mapping in your app, the SpatialPerception capability needs to be set in your AppxManifest.
 
 ## Device support
 
@@ -57,7 +57,7 @@ The <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_bl
 
 ### Spatial Understanding
 
-When placing holograms in the physical world, it's often desirable to go beyond spatial mapping’s mesh and surface planes. When placement is done procedurally, a higher level of environmental understanding is desirable. This usually requires making decisions about what is floor, ceiling, and walls. You also have the ability to optimize against a set of placement constraints to determine the most best physical locations for holographic objects.
+When placing holograms in the physical world, it's often desirable to go beyond spatial mapping's mesh and surface planes. When placement is done procedurally, a higher level of environmental understanding is desirable. This usually requires making decisions about what is floor, ceiling, and walls. You also have the ability to optimize against a set of placement constraints to determine the most best physical locations for holographic objects.
 
 During development of Young Conker and Fragments, Asobo Studios faced this problem head on by developing a room solver. Each of these games had game-specific needs, but they shared core spatial understanding technology. The HoloToolkit.SpatialUnderstanding library encapsulates this technology, allowing you to quickly find empty spaces on the walls, place objects on the ceiling, identify placed for character to sit, and a myriad of other spatial understanding queries.
 

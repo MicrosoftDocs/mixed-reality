@@ -38,7 +38,7 @@ These components make it drag-and-drop easy to get started with Spatial Mapping.
 * To do your own lower-level mesh processing, see the section below about the low-level Spatial Mapping script API.
 * To do higher-level mesh analysis, see the section below about the SpatialUnderstanding library in <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/SpatialUnderstanding" target="_blank">MixedRealityToolkit</a>.
 
-## Using the low-level Unity Spatial Mapping API
+## Using the low-level Unity spatial mapping API
 
 If you need more control than the Spatial Mapping Renderer and Spatial Mapping Collider components offer, use the low-level Spatial Mapping APIs.
 
@@ -78,7 +78,7 @@ private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bou
 }
 ```
 
-### Handling Surface Changes
+### Handling surface changes
 
 There are several main cases to handle - added and updated, which can use the same code path, and removed.
 
@@ -133,7 +133,7 @@ private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bou
 }
 ```
 
-### Handling Data Ready
+### Handling data ready
 
 The OnDataReady handler receives a SurfaceData object. The WorldAnchor, MeshFilter, and (optionally) MeshCollider objects it contains reflect the latest state of the associated spatial surface. Optionally, analyze and/or [process](../../../design/spatial-mapping.md#mesh-processing) the mesh data by accessing the Mesh member of the MeshFilter object. Render the spatial surface with the latest mesh and (optionally) use it for physics collisions and raycasts. It's important to confirm that the contents of the SurfaceData aren't null.
 
