@@ -175,7 +175,7 @@ Once the installation is complete, go back to the **All apps** page on your Holo
 *Windows Device Portal home page on Microsoft HoloLens*
 
 > [NOTE]
-> Settings configured in the device portal apply to the entire device and persist through reboots. Because of this it is recommended to only use device portal when developing, and not on deployed devices.
+> Settings configured in the device portal apply to the entire device and persist through reboots. It is recommended to only use device portal when developing, and not on deployed devices.
 
 Your Device Portal session starts at the Home page. Access other pages from the navigation bar along the left side of the home page.
 
@@ -245,7 +245,7 @@ To import maps and anchors, select **Upload a map file** and **Upload an anchor 
 *Mixed Reality Capture page in Windows Device Portal on Microsoft HoloLens*
 
 > [IMPORTANT]
-> Settings configured in the device portal apply to the entire device and persist through reboots. Any settings modified in the device portal will apply to mixed reality captures and apps. Because of this persistance, it is recommended to only use device portal when developing, and not on deployed devices.
+> Settings configured in the device portal apply to the entire device and persist through reboots. Any settings modified in the device portal will apply to mixed reality captures and apps. Since these settings are persistent, it is recommended to only use device portal when developing, and not on deployed devices.
 
 Use the Mixed Reality Capture page to save media streams from the HoloLens.
 * **Capture Settings**: Control the media streams that are captured by checking the following settings:
