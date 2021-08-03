@@ -1,6 +1,26 @@
 # [MRTK](#tab/mrtk)
 
+## Spatial awareness system
+
+In MRTK, look at the [Spatial awareness getting started](/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started) guide for information on setting up various spatial mesh observers.
+
+For information on on-device observers, look at the [Configuring mesh observers for device](/windows/mixed-reality/mrtk-unity/features/spatial-awareness/configuring-spatial-awareness-mesh-observer) guide.
+
+For information on scene understanding observers, look at the [Scene understanding observer](/windows/mixed-reality/mrtk-unity/features/spatial-awareness/scene-understanding) guide.
+
 # [XR SDK](#tab/xr)
+
+## ARMeshManager
+
+Unity's ARFoundation provides an ARMeshManager component for built-in visualization of spatial meshes. See [Unity's documentation](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/mesh-manager.html) for more information on usage.
+
+## XRMeshSubsystem
+
+If you'd instead rather work with Unity's [XRMeshSubsystem](https://docs.unity3d.com/ScriptReference/XR.XRMeshSubsystem.html) directly, take a look at [Unity's documentation](https://docs.unity3d.com/Manual/xrsdk-meshing.html) for more information on usage.
+
+## Windows XR Plugin
+
+Windows XR Plugin provides some additional extension methods for configuring the XRMeshSubsystem, such as setting a bounding sphere or accessing the underlying platform mesh representation. All of these additional extensions can be found [in Unity's documentation](https://docs.unity3d.com/Packages/com.unity.xr.windowsmr@5.3/api/UnityEngine.XR.WindowsMR.WindowsMRExtensions.html).
 
 # [Legacy WSA](#tab/wsa)
 
