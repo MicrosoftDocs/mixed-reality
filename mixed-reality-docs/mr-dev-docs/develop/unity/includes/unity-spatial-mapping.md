@@ -29,14 +29,14 @@ To use these two components in your Unity app:
 1. Select a GameObject at the center of the area in which you'd like to detect spatial surface meshes.
 2. In the Inspector window, **Add Component** > **XR** > **Spatial Mapping Collider** or **Spatial Mapping Renderer**.
 
-You can find more details on how to use these components at the <a href="https://docs.unity3d.com/Manual/SpatialMappingComponents.html" target="_blank">Unity documentation site</a>.
+You can find more details on how to use these components at the <a href="https://docs.unity3d.com/2018.4/Documentation/Manual/SpatialMappingComponents.html" target="_blank">Unity documentation site</a>.
 
 ### Going beyond the built-in spatial mapping components
 
 These components make it drag-and-drop easy to get started with Spatial Mapping.  When you want to go further, there are two main paths to explore:
 
 * To do your own lower-level mesh processing, see the section below about the low-level Spatial Mapping script API.
-* To do higher-level mesh analysis, see the section below about the SpatialUnderstanding library in <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/SpatialUnderstanding" target="_blank">MixedRealityToolkit</a>.
+* To do higher-level mesh analysis, see the section below about the SpatialUnderstanding library in [MixedRealityToolkit](https://github.com/microsoft/MixedRealityToolkit/tree/master/SpatialUnderstanding).
 
 ## Using the low-level Unity spatial mapping API
 
