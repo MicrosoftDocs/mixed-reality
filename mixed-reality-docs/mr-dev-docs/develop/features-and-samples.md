@@ -25,8 +25,8 @@ For each of the developer scenarios listed below, there are feature samples that
 
 | Scenario | Feature sample | Engine | Description |
 | --- | --- | ---- | --- |
-| Getting started | [OpenXR with Unity samples](#getting-started-with-cross-platform-developer-tools) | Native (OpenXR) | Getting started with cross-platform developer tools. |
-| Camera capture | [Mixed reality capture sample](#holographic-mixed-reality-capture) | Windows 10 C++ | Capture the first-person experience of mixing real and digital worlds as a photo or video. |
+| [Getting started](#getting-started-with-cross-platform-developer-tools) | [OpenXR with Unity samples](#getting-started-with-cross-platform-developer-tools) | Native (OpenXR) | Getting started with cross-platform developer tools. |
+| [Camera capture](#camera-captures) | [Mixed reality capture sample](#holographic-mixed-reality-capture) | Windows 10 C++ | Capture the first-person experience of mixing real and digital worlds as a photo or video. |
 |  | [Scene understanding sample](#scene-understanding) | Unity C# | Help design environmentally aware mixed reality applications. |
 | | [Spectator view sample](#spectator-view) | Unity C# | Capture and render holograms at the correct size and orientation. |
 | | [Research Mode samples](#research-mode) | Windows 10 C++ | Access to key censors on a HoloLens device for research applications. |
@@ -34,8 +34,8 @@ For each of the developer scenarios listed below, there are feature samples that
 | | [Poster tracker sample](#poster-tracker-sample)  | Unity C# | Align a hologram with a real world object. |
 | [Collaboration in mixed reality](#collaboration-in-mixed-reality) | [User identity](#user-identity) | Unity C#, AAD | Set up your HoloLens 2 device using Azure Active Directory (AAD) credentials. |
 | | [WebRTC sample](#webrtc) | Unity C#, NuGet | Integrate peer-to-peer audio, video, and data real-time communication into a mixed reality application. |
-| Spatial interaction | [Basic hologram sample](#spatial-interaction---basic-hologram-sample) | Windows 10 C++ |Windows mixed reality sample that renders a spinning cube. |
-| Holographic Remoting | [Holographic Remoting player](#holographic-remoting) |  Windows 10 C++ | Holographic Remoting streams holographic content from a PC to your Microsoft HoloLens in real time, by using a Wi-Fi connection. |
+| [Spatial interaction](#spatial-interaction---basic-hologram-sample) | [Basic hologram sample](#spatial-interaction---basic-hologram-sample) | Windows 10 C++ |Windows mixed reality sample that renders a spinning cube. |
+| [Holographic Remoting](#holographic-remoting) | [Holographic Remoting player](#holographic-remoting) |  Windows 10 C++ | Holographic Remoting streams holographic content from a PC to your Microsoft HoloLens in real time, by using a Wi-Fi connection. |
 
 ### Getting started with cross-platform developer tools
 
@@ -54,7 +54,7 @@ For developers targeting Unity 2020 to build HoloLens 2 or Mixed Reality applica
 
 Unstructured environment sensor data that your Mixed Reality device captures are converted into powerful abstract or holographic representations of the physical world around us. 
 
-#### Mixed Reality Capture
+#### Holographic Mixed Reality Capture
 
 Mixed reality capture (MRC) captures the first-person experience of mixing real and digital worlds as a photo or video, sharing what you see with others in real time.
 
