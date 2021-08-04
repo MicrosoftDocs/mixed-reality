@@ -3,7 +3,7 @@ title: Use PC resources to power your app with Holographic Remoting
 description: Use PC resources, instead of relying on the on-board processing power of the HoloLens, to power your app with Holographic Remoting
 author: vtieto
 ms.author: v-vtieto
-ms.date: 07/30/2021
+ms.date: 08/04/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, augmented reality, virtual reality, mixed reality headsets, learn, tutorial, getting started, holographic remoting, desktop, preview, debug
 ---
@@ -44,6 +44,30 @@ Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more 
     ```
 
 1. While running, you can obtain the current connection state with the `AppRemoting.TryGetConnectionState` API, and optionally disconnect and de-initialize XR using `AppRemoting.Disconnect()`. This could be used to disconnect and reconnect to a different device within the same app session. The sample app provides a tappable cube which will disconnect the remoting session if tapped.
+
+# Migrate from previous Holographic Remoting APIs
+
+To learn more about Holographic Remoting, see [Holographic Remoting overview](../platform-capabilities-and-apis/holographic-remoting-overview.md)
+
+#### UnityEngine.XR.WSA.HolographicRemoting
+
+From the sample code on [Unity's docs](https://docs.unity3d.com/2018.4/Documentation/ScriptReference/XR.WSA.HolographicRemoting.html):
+
+| XR.WSA.HolographicRemoting | OpenXR.Remoting.AppRemoting |
+| ---- | ---- |
+| `HolographicRemoting.Connect(String)` | `AppRemoting.Connect(RemotingConfiguration)` |
+| `HolographicRemoting.ConnectionState` | `AppRemoting.TryGetConnectionState(out ConnectionState, out DisconnectReason)`|
+| `StartCoroutine(LoadDevice("WindowsMR"))`| [N/A: Automatically happens when calling `AppRemoting.Connect`]  |
+
+#### Unity​Engine.​XR.​Windows​MR.WindowsMRRemoting
+
+| XR.​Windows​MR.WindowsMRRemoting | OpenXR.Remoting.AppRemoting |
+| ---- | ---- |
+| `WindowsMRRemoting.Connect()` | `AppRemoting.Connect(RemotingConfiguration)` |
+| `WindowsMRRemoting.Disconnect()` | `AppRemoting.Disconnect()` |
+| `WindowsMRRemoting.TryGetConnectionState(out ConnectionState)` and `WindowsMRRemoting.TryGetConnectionFailureReason(out ConnectionFailureReason)`| `AppRemoting.TryGetConnectionState(out ConnectionState, out DisconnectReason)`|
+| `WindowsMRRemoting.isAudioEnabled`, `WindowsMRRemoting.maxBitRateKbps`, `WindowsMRRemoting.remoteMachineName` | Passed into `AppRemoting.Connect` via the `RemotingConfiguration` struct |
+| `WindowsMRRemoting.isConnected` | `AppRemoting.TryGetConnectionState(out ConnectionState state, out _) && state == ConnectionState.Connected`
 
 ## See Also
 
