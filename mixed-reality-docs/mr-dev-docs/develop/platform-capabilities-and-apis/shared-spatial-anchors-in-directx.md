@@ -7,7 +7,7 @@ ms.date: 08/04/2020
 ms.topic: article
 keywords: HoloLens, synchronize, spatial anchor, transfer, multiplayer, view, scenario, walkthrough, sample code, Azure, Azure Spatial Anchors, ASA
 ---
-
+<!--Unity Note: No Unity specific content in this article. -->
 # Shared experiences in DirectX
 
 > [!NOTE]
