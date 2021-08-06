@@ -3,29 +3,32 @@ title: Samples and feature apps
 description: Stay up to date with all the available Microsoft samples and mixed reality features apps for HoloLens.
 author: qianw211
 ms.author: jemccull
-ms.date: 7/29/2021
+ms.date: 8/6/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, learn, samples, MRTK, research mode, HoloLens 2, qr codes, WebRTC, mixed reality capture, holographic remoting, UX Tools
 ms.localizationpriority: high
 ---
 
-# Samples and feature apps
+# Feature samples
 
 ![Picture of a user wearing a HoloLens and manipulating a hologram with hand movement](unreal/images/unreal-developer.jpg)
 
 Every development journey starts with a look back at what other developers have successfully built - mixed reality is no different. Currently, all of our tutorials and sample apps are built in Unity or Unreal. As we develop content for other engines and platforms, you'll find them under the relevant heading in the Table of Contents.
 
+* [Sample apps case studies](#sample-apps-case-studies)
+* [Feature samples](#list-of-feature-samples)
+
 ## Sample apps case studies
 
 [!INCLUDE[](includes/tabs-samples.md)]
 
-## Feature samples
+## List of feature samples
 
 For each of the developer scenarios listed below, there are feature samples that correspond to specific implementations that are covered in our documentation and covers a range of development platforms and hardware devices.
 
 | Scenario | Feature sample | Engine | Description |
 | --- | --- | ---- | --- |
-| [Getting started](#getting-started-with-cross-platform-developer-tools) | [OpenXR with Unity samples](#getting-started-with-cross-platform-developer-tools) | Native (OpenXR) | Getting started with cross-platform developer tools. |
+| [Getting started](#getting-started-with-cross-platform-developer-tools) | [OpenXR with Unity samples](#getting-started-with-cross-platform-developer-tools) | Unity C# | Getting started with cross-platform developer tools. |
 | [Camera capture](#camera-captures) | [Mixed reality capture sample](#holographic-mixed-reality-capture) | Windows 10 C++ | Capture the first-person experience of mixing real and digital worlds as a photo or video. |
 |  | [Scene understanding sample](#scene-understanding) | Unity C# | Help design environmentally aware mixed reality applications. |
 | | [Spectator view sample](#spectator-view) | Unity C# | Capture and render holograms at the correct size and orientation. |
