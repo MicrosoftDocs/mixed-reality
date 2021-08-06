@@ -1,5 +1,5 @@
 ---
-title: Samples
+title: Mixed reality samples
 description: Stay up to date with all the available Microsoft sample apps and mixed reality features samples for HoloLens.
 author: qianw211
 ms.author: jemccull
@@ -9,7 +9,7 @@ keywords: mixed reality, unity, tutorial, hololens, learn, samples, MRTK, resear
 ms.localizationpriority: high
 ---
 
-# Samples
+# Mixed reality samples
 
 ![Picture of a user wearing a HoloLens and manipulating a hologram with hand movement](unreal/images/unreal-developer.jpg)
 
@@ -39,8 +39,8 @@ For each of the developer scenarios listed below, there are feature samples that
 | | [WebRTC sample](#webrtc) | Unity C#, NuGet | Integrate peer-to-peer audio, video, and data real-time communication into a mixed reality application. |
 | [Spatial interaction](#spatial-interaction---basic-hologram-sample) | [Basic hologram sample](#spatial-interaction---basic-hologram-sample) | Windows 10 C++ |Windows mixed reality sample that renders a spinning cube. |
 | Task management | [Dynamics 365 Remote Assist](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview) | | Technicians can collaborate more efficiently by working together from different locations with Dynamics 365 Remote Assist on HoloLens, HoloLens 2, Android, or iOS devices. |
-| Spatial cloud services | [Azure Remote Rendering samples](https://docs.microsoft.com/azure/remote-rendering/samples/sample-model) | | Some resources for sample data that can be used for testing the Azure Remote Rendering service. |
-|    | [Azure Object Anchors samples](https://github.com/Azure/azure-object-anchors) | | [Azure Object Anchors](https://docs.microsoft.com/azure/object-anchors/overview) enables an application to detect an object in the physical world using a 3D model and estimate its 6DoF pose. |
+| Spatial cloud services | [Azure Remote Rendering samples](https://docs.microsoft.com/azure/remote-rendering/samples/sample-model) | Unity C# | Some resources for sample data that can be used for testing the Azure Remote Rendering service. |
+|    | [Azure Object Anchors samples](https://github.com/Azure/azure-object-anchors) | Unity C# | [Azure Object Anchors](https://docs.microsoft.com/azure/object-anchors/overview) enables an application to detect an object in the physical world using a 3D model and estimate its 6DoF pose. |
 |    | [Azure Spatial Anchors samples](https://github.com/Azure/azure-spatial-anchors-samples) |  | [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview) empowers developers with essential capabilities to build spatially aware mixed reality applications. |
 | Anchoring Strategies | Local anchor |  | See the [Spatial anchors](https://docs.microsoft.com/windows/mixed-reality/design/spatial-anchors) article. |
 |    | [Azure Spatial Anchors samples](https://github.com/Azure/azure-spatial-anchors-samples) |  | [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview) empowers developers with essential capabilities to build spatially aware mixed reality applications. |
