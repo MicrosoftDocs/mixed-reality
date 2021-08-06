@@ -16,7 +16,7 @@ ms.localizationpriority: high
 Every development journey starts with a look back at what other developers have successfully built - mixed reality is no different. Currently, all of our tutorials and sample apps are built in Unity or Unreal. As we develop content for other engines and platforms, you'll find them under the relevant heading in the Table of Contents.
 
 * [Sample apps case studies](#sample-apps-case-studies)
-* [Feature samples](#list-of-feature-samples)
+* [Feature samples](#feature-samples)
 
 ## Sample apps case studies
 
@@ -38,12 +38,12 @@ For each of the developer scenarios listed below, there are feature samples that
 | [Collaboration in mixed reality](#collaboration-in-mixed-reality) | [User identity](#user-identity) | Unity C#, AAD | Set up your HoloLens 2 device using Azure Active Directory (AAD) credentials. |
 | | [WebRTC sample](#webrtc) | Unity C#, NuGet | Integrate peer-to-peer audio, video, and data real-time communication into a mixed reality application. |
 | [Spatial interaction](#spatial-interaction---basic-hologram-sample) | [Basic hologram sample](#spatial-interaction---basic-hologram-sample) | Windows 10 C++ |Windows mixed reality sample that renders a spinning cube. |
-| Task management | [Dynamics 365 Remote Assist](dynamics365/mixed-reality/remote-assist/ra-overview) | | Technicians can collaborate more efficiently by working together from different locations with Dynamics 365 Remote Assist on HoloLens, HoloLens 2, Android, or iOS devices. |
-| Spatial cloud services | [Azure Remote Rendering samples](azure/remote-rendering/samples/sample-model) | | Some resources for sample data that can be used for testing the Azure Remote Rendering service. |
-|    | [Azure Object Anchors samples](https://github.com/Azure/azure-object-anchors) | | [Azure Object Anchors](azure/object-anchors/overview) enables an application to detect an object in the physical world using a 3D model and estimate its 6DoF pose. |
-|    | [Azure Spatial Anchors samples](https://github.com/Azure/azure-spatial-anchors-samples) |  | [Azure Spatial Anchors](azure/spatial-anchors/overview) empowers developers with essential capabilities to build spatially aware mixed reality applications. |
-| Anchoring Strategies | Local anchor |  | See the [Spatial anchors](windows/mixed-reality/design/spatial-anchors) article. |
-|    | [Azure Spatial Anchors samples](https://github.com/Azure/azure-spatial-anchors-samples) |  | [Azure Spatial Anchors](azure/spatial-anchors/overview) empowers developers with essential capabilities to build spatially aware mixed reality applications. |
+| Task management | [Dynamics 365 Remote Assist](/dynamics365/mixed-reality/remote-assist/ra-overview) | | Technicians can collaborate more efficiently by working together from different locations with Dynamics 365 Remote Assist on HoloLens, HoloLens 2, Android, or iOS devices. |
+| Spatial cloud services | [Azure Remote Rendering samples](/azure/remote-rendering/samples/sample-model) | | Some resources for sample data that can be used for testing the Azure Remote Rendering service. |
+|    | [Azure Object Anchors samples](https://github.com/Azure/azure-object-anchors) | | [Azure Object Anchors](/azure/object-anchors/overview) enables an application to detect an object in the physical world using a 3D model and estimate its 6DoF pose. |
+|    | [Azure Spatial Anchors samples](https://github.com/Azure/azure-spatial-anchors-samples) |  | [Azure Spatial Anchors](/azure/spatial-anchors/overview) empowers developers with essential capabilities to build spatially aware mixed reality applications. |
+| Anchoring Strategies | Local anchor |  | See the [Spatial anchors](/windows/mixed-reality/design/spatial-anchors) article. |
+|    | [Azure Spatial Anchors samples](https://github.com/Azure/azure-spatial-anchors-samples) |  | [Azure Spatial Anchors](/azure/spatial-anchors/overview) empowers developers with essential capabilities to build spatially aware mixed reality applications. |
 | | [QR Codes](#qr-codes) | Unity C# | Detect QR Codes in the environment. |
 | [Holographic Remoting](#holographic-remoting) | [Holographic Remoting player](#holographic-remoting) |  Windows 10 C++ | Holographic Remoting streams holographic content from a PC to your Microsoft HoloLens in real time, by using a Wi-Fi connection. |
 
