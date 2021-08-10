@@ -39,13 +39,13 @@ Tests can also be run by a [powershell](/powershell/scripting/install/installing
 Run the tests on the project located at H:\mrtk.dev, with Unity 2018.4 (for example Unity 2018.4.26f1)
 
 ```ps
-.\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath = "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe"
+.\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe"
 ```
 
 Run the tests on the project located at H:\mrtk.dev, with Unity 2018.4, output results to C:\playmode_test_out
 
 ```ps
-.\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath = "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe" -outFolder "C:\playmode_test_out\"
+.\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe" -outFolder "C:\playmode_test_out\"
 ```
 
 It's also possible to run the playmode tests multiple times via the `run_repeat_tests.ps1` script. All parameters used in `run_playmode_tests.ps1` may be used.
