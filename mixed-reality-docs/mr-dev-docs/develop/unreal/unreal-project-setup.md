@@ -37,7 +37,7 @@ We recommend that you use the MRTK Hub to acquire MRTK plugins. It's a new way f
 
 #### Installing the MRTK Hub
 
-Download the plugin from the Marketplace, then open your project, and then enable the plugin from the _Mixed Reality_ section of the _Plugins_ menu. When prompted, restart the editor.
+Download the plugin from the [Unreal Engine Marketplace](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-toolkit-hub), then open your project, and then enable the plugin from the _Mixed Reality_ section of the _Plugins_ menu. When prompted, restart the editor.
 
 ![Enable the MRTK Hub plugin](images/hub-enable-plugin.png)
 
