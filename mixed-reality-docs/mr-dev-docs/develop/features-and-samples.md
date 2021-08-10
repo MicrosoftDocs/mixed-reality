@@ -29,7 +29,7 @@ For each of the developer scenarios listed below, there are feature samples that
 | Scenario | Feature sample | Engine | Description |
 | --- | --- | ---- | --- |
 | [Getting started](#getting-started-with-cross-platform-developer-tools) | [OpenXR with Unity samples](#getting-started-with-cross-platform-developer-tools) | Unity C# | Getting started with cross-platform developer tools. |
-| [Camera capture](#camera-captures) | [Mixed reality capture sample](#holographic-mixed-reality-capture) | Windows 10 C++ | Capture the first-person experience of mixing real and digital worlds as a photo or video. |
+| [Data from camera and sensors](#camera-captures) | [Mixed reality capture sample](#holographic-mixed-reality-capture) | Windows 10 C++ | Capture the first-person experience of mixing real and digital worlds as a photo or video. |
 |  | [Scene understanding sample](#scene-understanding) | Unity C# | Help design environmentally aware mixed reality applications. |
 | | [Spectator view sample](#spectator-view) | Unity C# | Capture and render holograms at the correct size and orientation. |
 | | [Research Mode samples](#research-mode) | Windows 10 C++ | Access to key censors on a HoloLens device for research applications. |
