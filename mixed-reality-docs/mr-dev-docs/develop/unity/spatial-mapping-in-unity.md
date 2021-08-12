@@ -57,7 +57,7 @@ The <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_bl
 
 ### Spatial Understanding
 
-When placing holograms in the physical world, it's often desirable to go beyond spatial mapping's mesh and surface planes. When placement is done procedurally, a higher level of environmental understanding is desirable. This usually requires making decisions about what is floor, ceiling, and walls. You also have the ability to optimize against a set of placement constraints to determine the most best physical locations for holographic objects.
+When placing holograms in the physical world, it's often desirable to go beyond spatial mapping's mesh and surface planes. When placement is done procedurally, a higher level of environmental understanding is desirable. This usually requires making decisions about what is floor, ceiling, and walls. You also have the ability to optimize against a set of placement constraints to determine the best physical locations for holographic objects.
 
 During development of Young Conker and Fragments, Asobo Studios faced this problem head on by developing a room solver. Each of these games had game-specific needs, but they shared core spatial understanding technology. The HoloToolkit.SpatialUnderstanding library encapsulates this technology, allowing you to quickly find empty spaces on the walls, place objects on the ceiling, identify placed for character to sit, and a myriad of other spatial understanding queries.
 
