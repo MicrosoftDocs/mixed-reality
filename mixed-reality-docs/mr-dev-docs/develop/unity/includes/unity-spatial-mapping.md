@@ -100,9 +100,9 @@ private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bou
 
 ### Handling surface changes
 
-There are several main cases to handle - added and updated, which can use the same code path, and removed.
+There are several main cases to handle: added and updated, which can use the same code path, and removed.
 
-* In the added and updated cases, we add or get the GameObject representing this mesh from the dictionary, create a SurfaceData struct with the necessary components, then call RequestMeshDataAsync to populate the GameObject with the mesh data and position in the scene.
+* In the added and updated cases, we add or get the GameObject representing this mesh from the dictionary, create a SurfaceData struct with the necessary components, then call RequestMeshDataAsync to populate the GameObject with the mesh data and position it in the scene.
 * In the removed case, we remove the GameObject representing this mesh from the dictionary and destroy it.
 
 ```cs
