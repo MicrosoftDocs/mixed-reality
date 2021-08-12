@@ -3,16 +3,20 @@ title: Use PC resources to power your app with Holographic Remoting
 description: Use PC resources, instead of relying on the on-board processing power of the HoloLens, to power your app with Holographic Remoting
 author: vtieto
 ms.author: v-vtieto
-ms.date: 08/04/2021
+ms.date: 08/12/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, augmented reality, virtual reality, mixed reality headsets, learn, tutorial, getting started, holographic remoting, desktop, preview, debug
 ---
 
 # Use PC resources to power your app with Holographic Remoting
 
-This article explains the following use case for Holographic Remoting: 
+This article explains the following use case for Holographic Remoting:
 
-1. (Unity or C++):  **You want the resources of a PC to power your app instead of relying on the HoloLens on-board resources**: You can create and build an app that has Holographic Remoting capability. The user experiences the app on the HoloLens, but the app actually runs on a PC, which allows the app to take advantage of the PC's more powerful resources. This can be especially helpful if your app has high-resolution assets or models and you don't want the frame rate to suffer. We call this a _Holographic Remoting remote app_. Inputs from the HoloLens--gaze, gesture, voice, and spatial mapping--are sent to the PC, content is rendered in a virtual immersive view, and the rendered frames are then sent to the HoloLens. 
+1. (Unity or C++):  **You want the resources of a PC to power your app instead of relying on the HoloLens on-board resources**: You can create and build an app that has Holographic Remoting capability. The user experiences the app on the HoloLens, but the app actually runs on a PC, which allows the app to take advantage of the PC's more powerful resources. This can be especially helpful if your app has high-resolution assets or models and you don't want the frame rate to suffer. We call this a _Holographic Remoting remote app_. Inputs from the HoloLens--gaze, gesture, voice, and spatial mapping--are sent to the PC, where the content is rendered in a virtual immersive view. The rendered frames are then sent to the HoloLens.
+
+This type of Holographic Remoting is also available for Windows Mixed Reality (WMR) immersive headsets. This could be useful if, for example, your WMR headset is connected to a backpack PC and you wish to stream your app from a more powerful PC to the backpack PC.
+
+You add Holographic Remoting to your desktop or UWP app via a NuGet package, and the connection is made using standard Wi-Fi. Additional code is required that handles the connection and renders in an immersive view. A typical remoting connection will have as low as 50 ms of latency. Your device displays the streamed content using a "player" app that can report the latency in real time.
 
 To learn more about Holographic Remoting, see [Holographic Remoting overview](../platform-capabilities-and-apis/holographic-remoting-overview.md)
 
