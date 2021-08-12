@@ -16,11 +16,11 @@ Unity's ARFoundation provides an ARMeshManager component for built-in visualizat
 
 ## XRMeshSubsystem
 
-If you'd instead rather work with Unity's [XRMeshSubsystem](https://docs.unity3d.com/ScriptReference/XR.XRMeshSubsystem.html) directly, take a look at [Unity's documentation](https://docs.unity3d.com/Manual/xrsdk-meshing.html) for more information on usage.
+If you'd rather work with Unity's [XRMeshSubsystem](https://docs.unity3d.com/ScriptReference/XR.XRMeshSubsystem.html) directly, see [Unity's documentation](https://docs.unity3d.com/Manual/xrsdk-meshing.html) for more information on usage.
 
 ## Windows XR Plugin
 
-Windows XR Plugin provides some additional extension methods for configuring the XRMeshSubsystem, such as setting a bounding sphere or accessing the underlying platform mesh representation. All of these additional extensions can be found [in Unity's documentation](https://docs.unity3d.com/Packages/com.unity.xr.windowsmr@5.3/api/UnityEngine.XR.WindowsMR.WindowsMRExtensions.html).
+Windows XR Plugin provides some additional extension methods for configuring the XRMeshSubsystem, such as setting a bounding sphere or accessing the underlying platform mesh representation. All of these other extensions can be found [in Unity's documentation](https://docs.unity3d.com/Packages/com.unity.xr.windowsmr@5.3/api/UnityEngine.XR.WindowsMR.WindowsMRExtensions.html).
 
 # [Legacy WSA](#tab/wsa)
 
@@ -80,7 +80,7 @@ private void Start()
 }
 ```
 
-Specify the region of space that each SurfaceObserver object will provide data for by calling either SetVolumeAsSphere, SetVolumeAsAxisAlignedBox, SetVolumeAsOrientedBox, or SetVolumeAsFrustum. You can redefine the region of space in the future by simply calling one of these methods again.
+Specify the region of space that each SurfaceObserver object provide datas for by calling SetVolumeAsSphere, SetVolumeAsAxisAlignedBox, SetVolumeAsOrientedBox, or SetVolumeAsFrustum. You can redefine the region of space in the future by calling one of these methods again.
 
 ```cs
 private void Start()
@@ -102,7 +102,7 @@ private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bou
 
 There are several main cases to handle: added and updated, which can use the same code path, and removed.
 
-* In the added and updated cases, we add or get the GameObject representing this mesh from the dictionary, create a SurfaceData struct with the necessary components, then call RequestMeshDataAsync to populate the GameObject with the mesh data and position it in the scene.
+* In the added and updated cases, we add or get the GameObject representing this mesh from the dictionary. We create a SurfaceData struct with the necessary components, then call RequestMeshDataAsync to populate the GameObject with the mesh data, and then position it in the scene.
 * In the removed case, we remove the GameObject representing this mesh from the dictionary and destroy it.
 
 ```cs
