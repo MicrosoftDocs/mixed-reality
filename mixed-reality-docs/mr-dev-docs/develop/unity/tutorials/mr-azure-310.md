@@ -33,7 +33,7 @@ Upon completion of this course, you will have a mixed reality application which 
 3. The app will send the image to the Azure Custom Vision Service.
 4. There will be a reply from the Service which will display the result of the recognition as world-space text. This will be accomplished through utilizing the Microsoft HoloLens' Spatial Tracking, as a way of understanding the world position of the recognized object, and then using the *Tag* associated with what is detected in the image, to provide the label text.
 
-The course will also cover manually uploading images, creating tags, and training the Service, to recognize different objects (in the provided example, a cup), by setting the *Boundary Box* within the image you submit.
+The course will also cover manually uploading images, creating tags, and training the Service to recognize different objects (in the provided example, a cup) by setting the *Boundary Box* within the image you submit.
 
 > [!IMPORTANT]
 > Following the creation and use of the app, the developer should navigate back to the Azure Custom Vision Service, and identify the predictions made by the Service, and determine whether they were correct or not (through tagging anything the Service missed, and adjusting the *Bounding Boxes*). The Service can then be re-trained, which will increase the likelihood of it recognizing real world objects.
