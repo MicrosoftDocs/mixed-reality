@@ -267,7 +267,7 @@
       - name: Managed debugging with Unity
         href: unity/managed-debugging-with-unity-il2cpp.md
       - name: Recommended settings for Unity
-        href: unity/recommended-settin gs-for-unity.md
+        href: unity/recommended-settings-for-unity.md
       - name: Preview and debug your app with Holographic Remoting
         href: unity/preview-and-debug-your-app.md
   - name: Visual Studio solutions

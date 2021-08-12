@@ -49,7 +49,7 @@ Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more 
 
 1. While running, you can obtain the current connection state with the `AppRemoting.TryGetConnectionState` API, and optionally disconnect and de-initialize XR using `AppRemoting.Disconnect()`. This could be used to disconnect and reconnect to a different device within the same app session. The sample app provides a tappable cube which will disconnect the remoting session if tapped.
 
-# Migrate from previous Holographic Remoting APIs
+## Migrate from previous Holographic Remoting APIs
 
 To learn more about Holographic Remoting, see [Holographic Remoting overview](../platform-capabilities-and-apis/holographic-remoting-overview.md)
 
@@ -77,8 +77,5 @@ From the sample code on [Unity's docs](https://docs.unity3d.com/2018.4/Documenta
 
 * [Holographic Remoting Player](../platform-capabilities-and-apis/holographic-remoting-player.md)
 * [Preview and debug your app with Holographic Remoting and Play mode](preview-and-debug-your-app.md)
-* [Migrate from previous Holographic Remoting APIs](migrate-from-previous-apis.md)
-* [Write a Holographic Remoting remote app using Windows Mixed Reality APIs](../platform-capabilities-and-apis/holographic-remoting-create-remote-wmr.md)
-* [Write a Holographic Remoting remote app using OpenXR APIs](../platform-capabilities-and-apis/holographic-remoting-create-remote-openxr.md)
 * [Tutorial: Getting started with PC Holographic Remoting](../unity/tutorials/mr-learning-pc-holographic-remoting-01.md)
 * [Tutorial: Creating a Holographic Remoting PC application](../unity/tutorials/mr-learning-pc-holographic-remoting-02.md)
