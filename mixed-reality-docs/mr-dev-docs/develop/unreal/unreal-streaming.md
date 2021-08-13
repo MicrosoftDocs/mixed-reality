@@ -2,8 +2,8 @@
 title: Streaming in Unreal
 description: Learn how to stream your Unreal apps to HoloLens 2, including streaming limitations and command line options.
 author: sw5813
-ms.author: suwu
-ms.date: 12/7/2020
+ms.author: v-vtieto
+ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, streaming, PC, holographic app remoting, holographic remoting player, documentation, mixed reality headset, windows mixed reality headset, virtual reality headset
@@ -13,6 +13,8 @@ appliesto:
 ---
 
 # Streaming in Unreal
+
+"Streaming" is sometimes referred to as "Holographic Remoting." To learn more, see [Holographic Remoting overview](../platform-capabilities-and-apis/holographic-remoting-overview.md)
 
 Streaming from a PC to HoloLens provides two major advantages: 
 * It lets your mixed reality app take advantage of your PCs computational power. 

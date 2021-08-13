@@ -3,14 +3,15 @@ title: Holographic Remoting Player
 description: Learn about the Holographic Remoting Player and streaming holographic content from a PC to your HoloLens in real time over Wi-Fi.
 author: florianbagarmicrosoft
 ms.author: v-vtieto
-ms.date: 07/27/2021
+ms.date: 07/30/2021
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windows mixed reality headset, virtual reality headset, diagnostics, performance
 ---
 
 # Holographic Remoting Player
 
-[Learn the basics of Holographic Remoting.](platform-capabilities-and-apis/holographic-remoting-overview.md)
+>[!TIP]
+>[Learn the basics of Holographic Remoting.](holographic-remoting-overview.md)
 
 >[!IMPORTANT]
 >Holographic Remoting for HoloLens 2 is a major version change. [Remote applications for **HoloLens (1st gen)**](add-holographic-remoting.md) must use NuGet package version **1.x.x** and [remote applications for **HoloLens 2**](holographic-remoting-create-remote-wmr.md) must use **2.x.x**. This implies that remote applications written for HoloLens 2 are not compatible with HoloLens (1st gen) and vice versa.
@@ -74,6 +75,7 @@ While on the main screen, you can say **"disable diagnostics"** to turn off diag
 * We recommend you connect your PC to your network via ethernet to reduce the number of Wireless hops.
 
 ## See Also
+* [Holographic Remoting overview](holographic-remoting-overview.md)
 * [HoloLens (first gen): Add Holographic Remoting](add-holographic-remoting.md)
 * [Writing a Holographic Remoting remote app using Windows Mixed Reality APIs](holographic-remoting-create-remote-wmr.md)
 * [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md)

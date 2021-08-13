@@ -234,6 +234,8 @@
         href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
       - name: Mixed Reality native interop in Unity
         href: unity/unity-xrdevice-advanced.md
+      - name: Use PC resources to power your app
+        href: unity/use-pc-resources.md        
       - name: Using Vuforia
         href: unity/vuforia-development-overview.md
   - name: Immersive VR
@@ -266,8 +268,8 @@
         href: unity/managed-debugging-with-unity-il2cpp.md
       - name: Recommended settings for Unity
         href: unity/recommended-settings-for-unity.md
-      - name: Preview your work with Holographic Remoting
-        href: unity/holographic-remoting-in-unity.md
+      - name: Preview and debug your app with Holographic Remoting
+        href: unity/preview-and-debug-your-app.md
   - name: Visual Studio solutions
     items:
       - name: Exporting and building a Unity Visual Studio solution
@@ -452,21 +454,21 @@
           href: platform-capabilities-and-apis/installing-pix-hololens.md
     - name: Holographic remoting
       items:
-        - name: Overview
+        - name: Holographic Remoting Overview
           href: platform-capabilities-and-apis/holographic-remoting-overview.md
-        - name: Holographic Remoting player
+        - name: The Holographic Remoting player
           href: platform-capabilities-and-apis/holographic-remoting-player.md
-        - name: Writing a Holographic Remoting remote app
+        - name: Writing a Holographic Remoting remote app (C++)
           items:
             - name: HolographicSpace API
               href: platform-capabilities-and-apis/holographic-remoting-create-remote-wmr.md
             - name: OpenXR API
               href: platform-capabilities-and-apis/holographic-remoting-create-remote-openxr.md
-        - name: Writing a custom Holographic Remoting player app
+        - name: Writing a custom Holographic Remoting Player app (C++)
           href: platform-capabilities-and-apis/holographic-remoting-create-player.md
-        - name: Custom Holographic Remoting data channels
+        - name: Custom Holographic Remoting data channels (C++)
           href: platform-capabilities-and-apis/holographic-remoting-custom-data-channels.md
-        - name: Secure Connection with Holographic Remoting
+        - name: Secure Connection with Holographic Remoting (C++)
           href: platform-capabilities-and-apis/holographic-remoting-secure-connection.md
         - name: Troubleshooting and limitations
           href: platform-capabilities-and-apis/holographic-remoting-troubleshooting.md
