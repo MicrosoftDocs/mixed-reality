@@ -10,7 +10,8 @@ keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windo
 
 # Holographic Remoting Player
 
-[Learn the basics of Holographic Remoting.](holographic-remoting-overview.md)
+>[!TIP]
+>[Learn the basics of Holographic Remoting.](holographic-remoting-overview.md)
 
 >[!IMPORTANT]
 >Holographic Remoting for HoloLens 2 is a major version change. [Remote applications for **HoloLens (1st gen)**](add-holographic-remoting.md) must use NuGet package version **1.x.x** and [remote applications for **HoloLens 2**](holographic-remoting-create-remote-wmr.md) must use **2.x.x**. This implies that remote applications written for HoloLens 2 are not compatible with HoloLens (1st gen) and vice versa.
