@@ -16,8 +16,6 @@ This article explains the following use case for Holographic Remoting:
 
 This type of Holographic Remoting is also available for Windows Mixed Reality (WMR) immersive headsets. This could be useful if, for example, your WMR headset is connected to a backpack PC and you wish to stream your app from a more powerful PC to the backpack PC.
 
-You add Holographic Remoting to your desktop or UWP app via a NuGet package, and the connection is made using standard Wi-Fi. Additional code is required that handles the connection and renders in an immersive view. A typical remoting connection will have as low as 50 ms of latency. Your device displays the streamed content using a "player" app that can report the latency in real time.
-
 To learn more about Holographic Remoting, see [Holographic Remoting overview](../platform-capabilities-and-apis/holographic-remoting-overview.md)
 
 Note that you can also use Holographic Remoting if [you want to preview and debug your app during the development process](preview-and-debug-your-app.md).
