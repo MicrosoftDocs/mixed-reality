@@ -1,14 +1,14 @@
 ---
-title: Case study - Using the stabilization plane
+title: Using the stabilization plane to reduce holographic turbulence
 description: Explore how our development team used the stabilization plane to reduce holographic turbulence in a mixed reality application.
 author: bstrukus
-ms.author: bestruku
-ms.date: 03/21/2018
+ms.author: v-vtieto
+ms.date: 08/16/21
 ms.topic: article
-keywords: Windows Mixed Reality, holograms, stabilization, case study, mixed reality headset, windows mixed reality headset, virtual reality headset
+keywords: Windows Mixed Reality, holograms, stabilization, case study, mixed reality headset, windows mixed reality headset, virtual reality headset, stability, stabilization plane
 ---
 
-# Case study - Using the stabilization plane to reduce holographic turbulence
+# Using the stabilization plane to reduce holographic turbulence
 
 Working with holograms is often tricky. Moving around a space and looking at holograms from all different angles provides a level of immersion that isn't available on a normal computer screen. Keeping these holograms in place and looking realistic is a technical feat accomplished by both the Microsoft HoloLens hardware and the intelligent design of holographic apps.
 
@@ -58,30 +58,7 @@ Written by Asobo Studio in C++, Fragments and Young Conker take a different appr
 
 Fragments and Young Conker also design around you straying too far from the holograms by pausing the app if you move outside of what’s been previously scanned as your play space. As such, they keep you within the boundaries that are found to provide the most stable experience.
 
-## Do it yourself
-
-If you have a HoloLens and want to play around with the concepts in this article, you can download a test scene to try out the following exercises. The test scene uses Unity’s built-in gizmo API to help you visualize where your plane is being set. The code was also used to capture the screenshots in this case study.
-1. Sync the latest version of [MixedRealityToolkit-Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity).
-2. Open the [HoloToolkit-Examples/Utilities/Scenes/StabilizationPlaneSetting.unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Utilities/Scenes/StabilizationPlaneSetting.unity) scene.
-3. Build and configure the generated project.
-4. Run on your device.
-
-### Exercise 1
-
-You'll see several white dots around you at different orientations. In front of you, you’ll see three dots at different depths. Air tap to change which dot the plane is set to. For this exercise, and for the other two, move around your space while gazing at the dots. Turn your head left, right, up, and down. Move closer to and farther from the dots. See how they react when the stabilization plane is set to different targets.
-
-### Exercise 2
-
-Now, turn to your right until you see two moving dots, one oscillating on a horizontal path and one on a vertical path. Once again, air-tap to change which dot the plane is set to. Notice how color separation is lessened and appears on the dot that is connected to the plane. Tap again to use the dot’s velocity in the plane setting function. This parameter gives a hint to HoloLens about the object’s intended motion. It’s important to know when to use this, as you’ll notice when velocity is used on one dot, the other moving dot will show greater color separation. Keep this in mind when designing your apps—having a cohesive flow to the motion of your objects can help prevent artifacts from appearing.
-
-### Exercise 3
-
-Turn to your right once more until you see a new configuration of dots. In this case, there are dots in the distance and one dot spiraling in and out in front of them. Air tap to change which dot the plane is set to, alternating between the dots in the back and the dot in motion. Notice how setting the plane position and the velocity to that of the spiraling dot makes artifacts appear everywhere.
-
-**Tips**
-* Keep your plane setting logic simple. As you’ve seen, you don’t need complex plane setting algorithms to make an immersive experience. The stabilization plane is only one piece of the puzzle.
-* When at all possible, always move the plane between targets smoothly. Instantly switching distant targets can visually disrupt the scene.
-* Consider having an option in your plane setting logic to lock onto a specific target. That way, you can have the plane locked on an object, such as a logo or title screen, if needed.
+[Test the stabilization plane in Unity](../unity/test-the-stabilization-plane.md)
 
 ## About the author
 

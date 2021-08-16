@@ -2,8 +2,8 @@
 title: Understanding Performance for Mixed Reality
 description: Learn advanced information and details for analyzing and optimizing Windows Mixed Reality app performance.
 author: hferrone
-ms.author: v-hferrone
-ms.date: 3/26/2019
+ms.author: v-vtieto
+ms.date: 08/16/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Performance, Optimization, CPU, GPU
 ---
@@ -25,7 +25,7 @@ The performant framerate values for each target platform are listed below.
 | [Windows Mixed Reality Ultra PCs](../../discover/immersive-headset-hardware-details.md) | 90 FPS |
 | [Windows Mixed Reality PCs](../../discover/immersive-headset-hardware-details.md) | 60 FPS |
 
-The framework below outlines best practices for hitting target frame rates. We recommend reading the [performance recommendations for Unity article](../unity/performance-recommendations-for-unity.md) for tips on measuring and improving framerate in the Unity environment.
+The framework below outlines best practices for hitting target frame rates. For tips on measuring and improving framerate in the Unity environment, we recommend that you read the [performance recommendations for Unity article](../unity/performance-recommendations-for-unity.md) 
 
 ## Understanding performance bottlenecks
 

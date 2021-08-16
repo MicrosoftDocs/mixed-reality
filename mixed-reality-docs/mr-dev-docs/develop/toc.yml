@@ -219,7 +219,9 @@
       - name: Spatial sound
         href: unity/spatial-sound-in-unity.md
       - name: Scene understanding
-        href: platform-capabilities-and-apis/scene-understanding-sdk.md
+        href: unity/scene-understanding-sdk.md
+      - name: Test the stabilization plane
+        href: unity/test-the-stabilization-plane.md        
   - name: Advanced features
     items:
       - name: Photo Video camera in Unity
@@ -264,6 +266,8 @@
             href: unity/lunar-module.md
   - name: Debugging and performance
     items:
+      - name: Performance recommendations for Unity
+        href: unity/performance-recommendations-for-unity.md    
       - name: Managed debugging with Unity
         href: unity/managed-debugging-with-unity-il2cpp.md
       - name: Recommended settings for Unity
@@ -425,11 +429,11 @@
 
         - name: Shared spatial anchors
           href: platform-capabilities-and-apis/shared-spatial-anchors-in-directx.md
-        - name: Keyboard, mouse, and controller input
+        - name: Keyboard, mouse, and controller input (with C++ samples)
           href: platform-capabilities-and-apis/keyboard-mouse-and-controller-input-in-directx.md
         - name: Using XAML with holographic DirectX apps
           href: platform-capabilities-and-apis/using-xaml-with-holographic-directx-apps.md
-        - name: QR code tracking
+        - name: QR code tracking (with C# and C++ samples)
           href: platform-capabilities-and-apis/qr-code-tracking.md
     - name: Shared experiences in Mixed Reality
       items:
@@ -439,13 +443,13 @@
           href: /azure/spatial-anchors/
         - name: Spectator view
           href: platform-capabilities-and-apis/spectator-view.md
-        - name: WebRTC
+        - name: WebRTC (C#, C++, Unity)
           href: https://github.com/microsoft/MixedReality-WebRTC
     - name: Camera and capture
       items:
-        - name: Locatable camera
+        - name: Locatable camera (with C++ code samples)
           href: platform-capabilities-and-apis/locatable-camera.md
-        - name: Mixed Reality capture for developers
+        - name: Mixed Reality capture for developers (with C# and C++ samples)
           href: platform-capabilities-and-apis/mixed-reality-capture-for-developers.md
         - name: How it works - Mixed Reality Capture Studios
           href: platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md
@@ -483,9 +487,9 @@
           href: platform-capabilities-and-apis/app-quality-criteria.md
         - name: Holographic rendering
           href: platform-capabilities-and-apis/rendering.md
-        - name: Volume rendering
+        - name: Volume rendering (with C++ code)
           href: platform-capabilities-and-apis/volume-rendering.md
-        - name: Hologram stability
+        - name: Hologram stability (with C# code)
           href: platform-capabilities-and-apis/hologram-stability.md
         - name: Using the stabilization plane to reduce holographic turbulence
           href: platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md
@@ -505,7 +509,7 @@
           href: platform-capabilities-and-apis/advanced-hololens-emulator-and-mixed-reality-simulator-input.md
         - name: HoloLens Emulator archive
           href: platform-capabilities-and-apis/hololens-emulator-archive.md
-        - name: Perception simulation
+        - name: Perception simulation (with C# code)
           href: platform-capabilities-and-apis/perception-simulation.md
     - name: Device Portal
       items:
