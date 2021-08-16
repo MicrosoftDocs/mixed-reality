@@ -218,6 +218,8 @@
         href: unity/spatial-mapping-in-unity.md
       - name: Spatial sound
         href: unity/spatial-sound-in-unity.md
+      - name: Scene understanding
+        href: platform-capabilities-and-apis/scene-understanding-sdk.md
   - name: Advanced features
     items:
       - name: Photo Video camera in Unity
@@ -420,8 +422,7 @@
   items:
     - name: Core building blocks
       items:
-        - name: Scene understanding
-          href: platform-capabilities-and-apis/scene-understanding-sdk.md
+
         - name: Shared spatial anchors
           href: platform-capabilities-and-apis/shared-spatial-anchors-in-directx.md
         - name: Keyboard, mouse, and controller input
