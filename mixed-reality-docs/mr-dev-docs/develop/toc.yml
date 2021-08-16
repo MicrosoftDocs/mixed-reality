@@ -447,7 +447,7 @@
           href: https://github.com/microsoft/MixedReality-WebRTC
     - name: Camera and capture
       items:
-        - name: Locatable camera (with C++ code samples)
+        - name: Locatable camera (with C++ samples)
           href: platform-capabilities-and-apis/locatable-camera.md
         - name: Mixed Reality capture for developers (with C# and C++ samples)
           href: platform-capabilities-and-apis/mixed-reality-capture-for-developers.md
@@ -487,9 +487,9 @@
           href: platform-capabilities-and-apis/app-quality-criteria.md
         - name: Holographic rendering
           href: platform-capabilities-and-apis/rendering.md
-        - name: Volume rendering (with C++ code)
+        - name: Volume rendering (with C++ samples)
           href: platform-capabilities-and-apis/volume-rendering.md
-        - name: Hologram stability (with C# code)
+        - name: Hologram stability (with C# samples)
           href: platform-capabilities-and-apis/hologram-stability.md
         - name: Using the stabilization plane to reduce holographic turbulence
           href: platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md
@@ -509,13 +509,13 @@
           href: platform-capabilities-and-apis/advanced-hololens-emulator-and-mixed-reality-simulator-input.md
         - name: HoloLens Emulator archive
           href: platform-capabilities-and-apis/hololens-emulator-archive.md
-        - name: Perception simulation (with C# code)
+        - name: Perception simulation (with C# samples)
           href: platform-capabilities-and-apis/perception-simulation.md
     - name: Device Portal
       items:
         - name: Using the Windows Device Portal
           href: platform-capabilities-and-apis/using-the-windows-device-portal.md
-        - name: Device portal API reference
+        - name: Device portal API reference (REST)
           href: platform-capabilities-and-apis/device-portal-api-reference.md
     - name: Research tools
       items:
