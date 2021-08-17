@@ -220,7 +220,7 @@
         href: unity/spatial-sound-in-unity.md
   - name: Advanced features
     items:
-      - name: Photo Video camera in Unity
+      - name: Photo Video camera
         href: unity/locatable-camera-in-unity.md
       - name: Focus point
         href: unity/focus-point-in-unity.md
