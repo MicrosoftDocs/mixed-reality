@@ -256,3 +256,11 @@ internal:
 **Code sample:** A complete [Holographic Remoting code sample](https://github.com/Microsoft/HoloLensCompanionKit) is available, which includes a holographic application view that is compatible with remoting and remoting host projects for desktop Win32, UWP DirectX, and UWP with XAML. 
 
 **Debugging note:** The Holographic Remoting library can throw first-chance exceptions. These exceptions may be visible in debugging sessions, depending on the Visual Studio exception settings that are active at the time. These exceptions are caught internally by the Holographic Remoting library and can be ignored.
+
+## See Also
+* [Holographic Remoting overview](holographic-remoting-overview.md)
+* [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)
+* [Establishing a secure connection with Holographic Remoting](holographic-remoting-secure-connection.md)
+* [Holographic Remoting troubleshooting and limitations](holographic-remoting-troubleshooting.md)
+* [Holographic Remoting software license terms](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839)

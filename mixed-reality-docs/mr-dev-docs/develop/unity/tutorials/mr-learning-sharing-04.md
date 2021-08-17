@@ -22,9 +22,17 @@ In this tutorial, you will learn how to share the movements of objects so that a
 
 In this section, you will prepare the scene by adding the tutorial prefab.
 
+In the Hierarchy window, expand the **MixedRealityPlayspace** object and select the **Main Camera** child object, then in the Inspector window, use the **Add Component** button to add the **AR Camera Manager (Script)** component to the **Main Camera** object:
+
+![Unity with AR Camera Manager component partially configured](images/mr-learning-sharing/sharing-04-section1-step1-0.png)
+
 In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** folder and drag the **TableAnchor** prefab onto the **SharedPlayground** object in the Hierarchy window to add it to your scene as a child of the SharedPlayground object:
 
 ![Unity with newly added TableAnchor prefab selected](images/mr-learning-sharing/sharing-04-section1-step1-1.png)
+
+In the Hierarchy window, ensure the **MixedRealityPlayspace** object is expanded and the **TableAnchor** object is selected. Drag the **Main Camera** component into the **Camera** field of the **TableAnchor**'s **AR Session Origin** component:
+
+![Unity with the AR Session Origin Main Camera assignment configured](images/mr-learning-sharing/sharing-04-section1-step1-2.png)
 
 ## Configuring PUN to instantiate the objects
 

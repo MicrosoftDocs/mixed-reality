@@ -12,6 +12,8 @@ appliesto:
 
 # Windows Mixed Reality minimum PC hardware compatibility guidelines
 
+![PC compatibility hero image](images/pc-comp-hero.png)
+
 ## Features and experiences
 
 Windows 10 powers Windows Mixed Reality on variety of headsets across a diverse set of PC hardware.  The power of your PC will determine what experiences you can have.
@@ -68,7 +70,7 @@ You'll then get an analysis of your PC against the required hardware, drivers, a
 Because of the higher resolution, the following requirements apply to the HP Reverb G1, G2 and Omnicept product lines to ensure optimal 90 Hz, full resolution experience:
 
 <ul>
-<li> Intel Core i5, i7, Intel Xenon E3-1240 v5, equivalent or better. AMD Ryzen 5 equivalent or better. </li>
+<li> Intel Core i5, i7, Intel Xeon E3-1240 v5, equivalent or better. AMD Ryzen 5 equivalent or better. </li>
 <li> NVIDIA GeForce GTX 1080, AMD Radeon RX 5700, equivalent or better </li>
 <li> Memory: 8 GB RAM or more </li>
 <li> 1x Display Port 1.3 </li>

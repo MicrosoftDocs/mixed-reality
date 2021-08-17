@@ -13,7 +13,7 @@ public static SpatialCoordinateSystem SpatialCoordinateSystem { get; }
 public static SpatialInteractionManager SpatialInteractionManager { get; }
 ```
 
-# [XR SDK](#tab/xr)
+# [Windows XR Plugin](#tab/xr)
 
 ## WindowsMREnvironment
 

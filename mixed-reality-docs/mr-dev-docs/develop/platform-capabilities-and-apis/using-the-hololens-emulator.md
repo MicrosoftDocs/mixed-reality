@@ -23,7 +23,7 @@ If you're looking to develop Windows Mixed Reality immersive (VR) headset applic
 Download the HoloLens Emulator.
 
 Versions:
-* [HoloLens 2 Emulator (Windows Holographic, version 21H1 July 2021 Update)](https://go.microsoft.com/fwlink/?linkid=2167725).
+* [HoloLens 2 Emulator (Windows Holographic, version 21H1 August 2021 Update)](https://go.microsoft.com/fwlink/?linkid=2169418).
 * [HoloLens Emulator (first Gen) and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2065980).
 
 You can find release notes and older builds of the HoloLens Emulator on the [HoloLens Emulator archive](hololens-emulator-archive.md) page.
@@ -278,20 +278,6 @@ If your debug target list in Visual Studio is empty (for example, Start is the o
 
 If your system hangs when the emulator is starting, disable hardware acceleration for emulator graphics.
 * Create a registry DWORD value named "DisableGPU" at HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\XDE\10.0 and set its value to 1.
-
-## Next Development Checkpoint
-
-If you're following the Unity development checkpoint journey we've laid out, you're in the midst of the deployment stage. From here, you can continue to the next topic:
-
-> [!div class="nextstepaction"]
-> [Deploying to HoloLens emulator](using-the-hololens-emulator.md)
-
-Or jump directly to adding advanced services:
-
-> [!div class="nextstepaction"]
-> [Advanced services](../../develop/unity/unity-development-overview.md#5-adding-services)
-
-You can always go back to the [Unity development checkpoints](../../develop/unity/unity-development-overview.md#4-deploying-to-a-device-or-emulator) at any time.
 
 ## See also
 * [Advanced HoloLens Emulator and Mixed Reality Simulator input](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)
