@@ -50,8 +50,8 @@ In HoloLens 2 button design, based on many design iterations, prototypings, and 
 Proper audio feedback can dramatically improve the user experience. HoloLens 2's button provides audio feedback to communicate the following cues:
 * **Contact begins**: Play sound when touch begins (near interaction)
 * **Contact ends**: Play sound on touch end (near interaction)
-* **Pinch begins**: Play sound on pinch select(far interaction with gaze or rays)
-* **Pinch ends**: Play sound on pinch release(far interaction with gaze or rays)
+* **Pinch begins**: Play sound on pinch select (far interaction with gaze or rays)
+* **Pinch ends**: Play sound on pinch release (far interaction with gaze or rays)
 
 <br>
 
@@ -59,7 +59,7 @@ Proper audio feedback can dramatically improve the user experience. HoloLens 2's
 
 :::row:::
     :::column:::
-        ## Voice commanding - 'See it, Say it' model<br>
+        ## Voice commanding<br>
         For any buttons in mixed reality, it's important to support alternative interaction options. By default, we recommend that voice commanding be supported for any buttons. In HoloLens 2's button design, we provide a tooltip during the hover state to improve discoverability.
         <br>
         *Image: Tooltip for the voice command*
@@ -114,6 +114,8 @@ When creating buttons for direct interaction, we recommend a larger minimum size
 
 <br>
 
+---
+
 ## Design guidelines
 When designing menu UI with buttons, it is recommended to use opaque backplate. Transparent backplates are not recommended for the following reasons:
 * Hard to interact with because it is difficult to understand how deep the button has to be pressed to trigger event
@@ -131,13 +133,9 @@ See [Designing content for holographic display](designing-content-for-holographi
 ---
 
 ## Button in MRTK(Mixed Reality Toolkit) for Unity
-**[MRTK for Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)** provides various types of button prefabs, including shell-style buttons for HoloLens 2 and HoloLens (1st gen). The HoloLens 2 button prefab contains several detailed affordances that help improve user confidence:
+**[MRTK for Unity](/windows/mixed-reality/mrtk-unity/)** and **[MRTK for Unreal](/windows/mixed-reality/develop/unreal/unreal-mrtk-introduction)** provide various types of button prefabs, including shell-style buttons for HoloLens 2 and HoloLens (1st gen). The HoloLens 2 button prefab contains all visual and audio feedback that were introduced in this page.
 
-* Proximity-based highlight
-* Compressing front cage
-* Pulse effect on trigger.
-
-* Check out the [MRTK - Button](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button) for more instructions and customized examples.
+Check out the [MRTK - Button](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button) for more instructions and customized examples.
 
 <br>
 
