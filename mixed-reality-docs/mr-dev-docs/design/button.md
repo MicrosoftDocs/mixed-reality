@@ -65,7 +65,7 @@ Proper audio feedback can dramatically improve the user experience. HoloLens 2's
         *Image: Tooltip for the voice command*
     :::column-end:::
         :::column:::
-       ![voice commanding](images/640px-interactibleobject-voicecommand.png)<br>
+       ![Voice input](images/UX_Hero_VoiceCommand.jpg)<br>
     :::column-end:::
 :::row-end:::
 
