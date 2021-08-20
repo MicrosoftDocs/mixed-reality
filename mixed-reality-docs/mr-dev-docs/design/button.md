@@ -116,6 +116,8 @@ When creating buttons for direct interaction, we recommend a larger minimum size
 ---
 
 ## Design guidelines
+
+### Avoid transparent backplate
 When designing menu UI with buttons, it is recommended to use opaque backplate. Transparent backplates are not recommended for the following reasons:
 * Hard to interact with because it is difficult to understand how deep the button has to be pressed to trigger event
 * Legibility issue on complex physical environment
@@ -126,13 +128,24 @@ See [Designing content for holographic display](designing-content-for-holographi
 ![Transparent UI examples](images/color_transparent_examples.jpg)
 *Examples of transparent UI backplate*
 
+<br>
 
+### Use shared backplate
+For multiple buttons, it is recommended to use shared backplate instead of individual button's backplate.
 
+* Reduce the visual noise and complexity
+* Clear grouping  
+
+![Transparent UI examples](images/Button_Design_SharedBackplate.png
+)
+*Examples of shared UI backplate*
+
+<br>
 
 ---
 
-## Button in MRTK(Mixed Reality Toolkit) for Unity
-**[MRTK for Unity](/windows/mixed-reality/mrtk-unity/)** and **[MRTK for Unreal](/windows/mixed-reality/develop/unreal/unreal-mrtk-introduction)** provide various types of button prefabs, including shell-style buttons for HoloLens 2 and HoloLens (1st gen). The HoloLens 2 button prefab contains all visual and audio feedback that were introduced in this page.
+## Button in MRTK (Mixed Reality Toolkit)
+**[MRTK for Unity](/windows/mixed-reality/mrtk-unity/)** and **[MRTK for Unreal](/windows/mixed-reality/develop/unreal/unreal-mrtk-introduction)** provide various types of button prefabs, including HoloLens 2 style buttons. The HoloLens 2 button component contains all visual feedback and interaction details that were introduced in this page. By using it, you can leverage the result from many design iterations and user researches that our designers, developers, researchers had conducted.
 
 Check out the [MRTK - Button](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button) for more instructions and customized examples.
 
