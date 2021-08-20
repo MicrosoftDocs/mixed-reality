@@ -61,11 +61,10 @@ Proper audio feedback can dramatically improve the user experience. HoloLens 2's
     :::column:::
         ## Voice commanding<br>
         For any buttons in mixed reality, it's important to support alternative interaction options. By default, we recommend that voice commanding be supported for any buttons. In HoloLens 2's button design, we provide a tooltip during the hover state to improve discoverability.
-        <br>
-        *Image: Tooltip for the voice command*
     :::column-end:::
         :::column:::
        ![Voice input](images/UX_Hero_VoiceCommand.jpg)<br>
+        *Image: Tooltip for the voice command*
     :::column-end:::
 :::row-end:::
 
