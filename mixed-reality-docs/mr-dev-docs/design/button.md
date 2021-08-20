@@ -120,6 +120,13 @@ When designing menu UI with buttons, it is recommended to use opaque backplate. 
 * Legibility issue on complex physical environment
 * Holograms displayed through the transparent plate can show swimming effect issue when used with Depth LSR stabilization technology.
 
+See [Designing content for holographic display](designing-content-for-holographic-display.md) for more details on color choices and guidelines for holographic display.
+
+![Transparent UI examples](images/color_transparent_examples.jpg)
+*Examples of transparent UI backplate*
+
+
+
 
 ---
 
