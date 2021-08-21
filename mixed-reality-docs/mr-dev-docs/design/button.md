@@ -136,7 +136,7 @@ For multiple buttons, it is recommended to use shared backplate instead of indiv
 * Reduce the visual noise and complexity
 * Clear grouping  
 
-![Transparent UI examples](images/Button_Design_SharedBackplate.png
+![Shared backplate examples](images/Button_Design_SharedBackplate.png
 )
 *Examples of shared UI backplate*
 
