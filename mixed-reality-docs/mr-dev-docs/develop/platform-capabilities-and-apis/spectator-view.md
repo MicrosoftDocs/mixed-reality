@@ -13,6 +13,8 @@ keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Camera, ARKit, HoloLens, Mi
 
 > [!WARNING]
 > Microsoft will be deprecating the Spectator View sample due to incompatibilities with the version of the Azure Spatial Anchors SDK package that the sample relies on. Additionally, the sample may cease to work due to other changes in the Unity environment as customers move to supported 2019 LTS builds.
+>
+> Although Microsoft is not currently investing resources to address the above issues, it may be possible to remove the Azure Spatial Anchors functionality from the sample and rely on technology such as QR codes for alignment.   If members of the community submit PRs to address these issues, we will review and accept them for the time being.
 
 ![Marker](images/SpecViewPhoneHero.jpg)
 
