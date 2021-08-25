@@ -9,7 +9,7 @@ We recommend installing World Locking Tools using the new Mixed Reality Feature 
 
 ### Automated setup
 
-When your project is ready to go, run the configure scene utility from **Mixed Reality Toolkit > Utilities > World Locking Tools**:
+When your project is ready to go, run the configure scene utility from **Mixed Reality > World Locking Tools**:
 
 ![Unity editor with Mixed Reality Toolkit menu selected](../../images/world-locking-configuration-img-01.jpeg)
 

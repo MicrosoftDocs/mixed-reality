@@ -28,12 +28,13 @@ You can manually place **spatial anchors** in Unity to maintain a hologram's pos
 
 ## Choosing your world locking approach
 
-* **Our recommendation** is to use **World Locking Tools** for all your hologram positioning needs. 
+* **Our recommendation** is to use **World Locking Tools** for all your hologram positioning needs.
     * World Locking Tools provides a stable coordinate system that minimizes the visible inconsistencies between virtual and real world markers. Put another way, it world-locks the entire scene with a shared pool of anchors, rather than locking each group of objects with the group's own individual anchor.
+    * World Locking Tools automatically handles all creation and management of spatial anchors internally. You don't need to interact with **ARAnchorManager** or **WorldAnchor** at all to keep your holograms world locked.
 * **For Unity 2019/2020 using OpenXR or the Windows XR Plugin**, you need to use **ARAnchorManager**
 * **For older Unity versions or WSA** projects, you need to use **WorldAnchor**
 
-## Setting up world locking 
+## Setting up world locking
 
 [!INCLUDE[](includes/world-locking/world-locking-setup.md)]
 
@@ -46,11 +47,9 @@ Spatial anchors save holograms in real-world space between application sessions.
 
 [!INCLUDE[](includes/world-locking/world-locking-persistence.md)]
 
-## Sharing coordinate spaces 
+## Sharing coordinate spaces
 
 If you want to share a world locked coordinate space, check out our comprehensive [shared experience documentation](shared-experiences-in-unity.md).
-
-Note that Azure Spatial Anchors is not yet supported directly within World Locking Tools, and so shared experiences will require you to manually create spatial anchors.
 
 ## Next Development Checkpoint
 
