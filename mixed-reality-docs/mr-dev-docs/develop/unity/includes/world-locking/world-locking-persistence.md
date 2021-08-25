@@ -1,6 +1,6 @@
 # [World Locking Tools (Recommended)](#tab/wlt)
 
-By default, World Locking Tools will restore Unity's coordinate system relative to the physical world across sessions on devices which support persistence of local spatial anchors. This means that to have a hologram appear the same place in the physical world after quitting and re-running the application, the hologram only needs to have the same Pose again.
+By default, World Locking Tools will restore Unity's coordinate system relative to the physical world across sessions on devices that support persistence of local spatial anchors. In order to have a hologram appear in the same place in the physical world after quitting and re-running the application, the hologram only needs to have the same pose again.
 
 ![World locking context component in Unity inspector](../../images/world-locking-tools-img-02.png)
 
