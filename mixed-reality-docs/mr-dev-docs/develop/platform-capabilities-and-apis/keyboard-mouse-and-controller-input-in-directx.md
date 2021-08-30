@@ -17,7 +17,7 @@ keywords: Windows Mixed Reality, keyboard, mouse, game controller, xbox controll
 Keyboards, mice, and game controllers can all be useful forms of input for Windows Mixed Reality devices. Bluetooth keyboards and mice are both supported on HoloLens, for use with debugging your app or as an alternate form of input. Windows Mixed Reality also supports immersive headsets attached to PCs - where mice, keyboards, and game controllers have historically been the norm.
 
 To use keyboard input on HoloLens, pair a Bluetooth keyboard to your device or use virtual input via the Windows Device Portal. To use keyboard input while wearing a Windows Mixed Reality immersive headset, assign input focus to mixed reality by putting on the device or using the Windows Key + Y keyboard combination. Keep in mind that apps intended for HoloLens must provide functionality without these devices attached.
-
+<!--Unity Note: the paragraph below explains that the article provides C++ code snippets. -->
 >[!NOTE]
 >The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](../native/creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, though you will need to translate the code.
 
