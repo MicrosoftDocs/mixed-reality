@@ -14,7 +14,15 @@ A shared experience lets multiple users, each with their own HoloLens, iOS or An
 
 ## Azure Spatial Anchors
 
-<a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> create durable cloud-backed spatial anchors, which your app can then locate across multiple HoloLens, iOS and Android devices.  By sharing a common spatial anchor across multiple devices, each user can see content rendered relative to that anchor in the same physical location. 
+### Automated with World Locking Tools
+
+As with local anchors, World Locking Tools can use a group of Azure Spatial Anchors to lock entire coordinate spaces relative to the physical world, rather than use individual anchors to lock individual objects. World locking the entire space not only provides an environment that's more conducive to precise layout, it's also more efficient in both developer time and runtime resources.
+
+For further information and samples leveraging Azure Spatial Anchors to share coordinate systems across HoloLens, Android, and iOS devices, as well as persisting spaces across sessions, see the [World Locking Tools documentation](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/WLT_ASA.html).
+
+### Manual configuration of Azure Spatial Anchors
+
+<a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> create durable cloud-backed spatial anchors that your app can locate across multiple HoloLens, iOS and Android devices.  By sharing a common spatial anchor across multiple devices, each user can see content rendered relative to that anchor in the same physical location.
 
 You can also use <a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> for asynchronous hologram persistence across HoloLens, iOS, and Android devices.  By sharing a durable cloud spatial anchor, multiple devices can observe the same persisted hologram over time, even if those devices aren't present together at the same time.
 
