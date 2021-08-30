@@ -220,8 +220,6 @@
         href: unity/spatial-sound-in-unity.md
       - name: Scene understanding
         href: unity/scene-understanding-sdk.md
-      - name: Test the stabilization plane
-        href: unity/test-the-stabilization-plane.md        
   - name: Advanced features
     items:
       - name: Photo Video camera
@@ -493,8 +491,6 @@
           href: platform-capabilities-and-apis/volume-rendering.md
         - name: Hologram stability (with C# samples)
           href: platform-capabilities-and-apis/hologram-stability.md
-        - name: Using the stabilization plane to reduce holographic turbulence
-          href: platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md
         - name: Understanding performance for Mixed Reality
           href: platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md
         - name: Performance recommendations for Unity
