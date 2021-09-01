@@ -21,50 +21,26 @@ Object collection is a script to help lay out an array of objects in predefined 
 
 :::row:::
     :::column:::  
-    ![Grid Object Collection - Cylinder](../images/object-collection/MRTK_ObjectCollectionCylinder.png)
+    ![Grid Object Collection - Cylinder](../images/object-collection/MRTK_ObjectCollectionCylinder.png) Grid Object Collection - Cylinder
     :::column-end:::
     :::column:::
-    ![Grid Object Collection - Sphere](../images/object-collection/MRTK_ObjectCollectionSphere.png)
+    ![Grid Object Collection - Sphere](../images/object-collection/MRTK_ObjectCollectionSphere.png) Grid Object Collection - Sphere
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::  
-    Grid Object Collection - Cylinder
+    ![Grid Object Collection - Radial](../images/object-collection/MRTK_ObjectCollectionRadial.png) Grid Object Collection - Radial
     :::column-end:::
     :::column:::
-    Grid Object Collection - Sphere
+    ![Grid Object Collection - Plane](../images/object-collection/MRTK_ObjectCollectionPlane.png) Grid Object Collection - Plane
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::  
-    ![Grid Object Collection - Radial](../images/object-collection/MRTK_ObjectCollectionRadial.png)
+    ![Scattered Object Collection](../images/object-collection/MRTK_ObjectCollectionScattered.png) Scattered Object Collection
     :::column-end:::
     :::column:::
-    ![Grid Object Collection - Plane](../images/object-collection/MRTK_ObjectCollectionPlane.png) 
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::  
-    Grid Object Collection - Radial
-    :::column-end:::
-    :::column:::
-    Grid Object Collection - Plane
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::  
-    ![Scattered Object Collection](../images/object-collection/MRTK_ObjectCollectionScattered.png)
-    :::column-end:::
-    :::column:::
-    ![Tile Grid Object Collection](../images/object-collection/MRTK_ObjectCollectionTileGrid.png)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::  
-    Scattered Object Collection
-    :::column-end:::
-    :::column:::
-    Tile Grid Object Collection
+    ![Tile Grid Object Collection](../images/object-collection/MRTK_ObjectCollectionTileGrid.png) Tile Grid Object Collection
     :::column-end:::
 :::row-end:::
 
