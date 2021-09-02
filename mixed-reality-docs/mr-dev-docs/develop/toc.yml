@@ -28,13 +28,11 @@
         href: /azure/spatial-anchors/
       - name: Spectator view
         href: platform-capabilities-and-apis/spectator-view.md
-      - name: WebRTC (C#, C++, Unity)
-        href: https://github.com/microsoft/MixedReality-WebRTC
   - name: Camera and capture
     items:
-    - name: Locatable camera (with C++ samples)
+    - name: Locatable camera
       href: platform-capabilities-and-apis/locatable-camera.md
-    - name: Mixed Reality capture for developers (with C# and C++ samples)
+    - name: Mixed Reality capture for developers
       href: platform-capabilities-and-apis/mixed-reality-capture-for-developers.md
     - name: How it works - Mixed Reality Capture Studios
       href: platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md
@@ -52,11 +50,11 @@
           href: platform-capabilities-and-apis/holographic-remoting-create-remote-wmr.md
         - name: OpenXR API
           href: platform-capabilities-and-apis/holographic-remoting-create-remote-openxr.md
-    - name: Writing a custom Holographic Remoting Player app (C++)
+    - name: Writing a custom Holographic Remoting Player app
       href: platform-capabilities-and-apis/holographic-remoting-create-player.md
-    - name: Custom Holographic Remoting data channels (C++)
+    - name: Custom Holographic Remoting data channels
       href: platform-capabilities-and-apis/holographic-remoting-custom-data-channels.md
-    - name: Secure Connection with Holographic Remoting (C++)
+    - name: Secure Connection with Holographic Remoting
       href: platform-capabilities-and-apis/holographic-remoting-secure-connection.md
     - name: Troubleshooting and limitations
       href: platform-capabilities-and-apis/holographic-remoting-troubleshooting.md
@@ -72,9 +70,9 @@
       href: platform-capabilities-and-apis/app-quality-criteria.md
     - name: Holographic rendering
       href: platform-capabilities-and-apis/rendering.md
-    - name: Volume rendering (with C++ samples)
+    - name: Volume rendering
       href: platform-capabilities-and-apis/volume-rendering.md
-    - name: Hologram stability (with C# samples)
+    - name: Hologram stability
       href: platform-capabilities-and-apis/hologram-stability.md
     - name: Understanding performance for Mixed Reality
       href: platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md
@@ -482,6 +480,46 @@
   items:
   - name: Custom engine development overview
     href: native/directx-development-overview.md
+  - name: Keyboard, mouse and controller input (C++).md
+    href: native/keyboard-mouse-and-controller-input-cpp.md
+  - name: QR code tracking (C# and C++).md
+    href: native/qr-code-tracking-cs-cpp.md
+  - name: WebRTC (C#, C++, Unity)
+    href: https://github.com/microsoft/MixedReality-WebRTC
+  - name: Camera and capture
+    items:
+    - name: Locatable camera (with C++ samples)
+      href: platform-capabilities-and-apis/locatable-camera-cpp.md
+    - name: Mixed Reality capture for developers (with C# and C++ samples)
+      href: platform-capabilities-and-apis/mixed-reality-capture-for-developers-cs-cpp.md
+  - name: Holographic remoting
+    items:
+    - name: Writing a Holographic Remoting remote app (C++)
+      items:
+        - name: HolographicSpace API
+          href: native/holographic-remoting-create-remote-wmr.md
+        - name: OpenXR API
+          href: native/holographic-remoting-create-remote-openxr.md
+    - name: Writing a custom Holographic Remoting Player app (C++)
+      href: native/holographic-remoting-create-player.md
+    - name: Custom Holographic Remoting data channels (C++)
+      href: native/holographic-remoting-custom-data-channels.md
+    - name: Secure Connection with Holographic Remoting (C++)
+      href: native/holographic-remoting-secure-connection.md
+    - name: Troubleshooting and limitations
+      href: native/holographic-remoting-troubleshooting.md
+    - name: Version history
+      href: native/holographic-remoting-version-history.md
+    - name: Holographic Remoting software license terms
+      href: /legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
+    - name: Holographic Remoting for HoloLens (1st Gen)
+      href: native/add-holographic-remoting.md
+  - name: App quality and testing
+    items:
+    - name: Volume rendering (with C++ samples)
+      href: platform-capabilities-and-apis/volume-rendering.md
+    - name: Hologram stability (with C# samples)
+      href: platform-capabilities-and-apis/hologram-stability.md
   - name: OpenXR
     items:
       - name: OpenXR overview
