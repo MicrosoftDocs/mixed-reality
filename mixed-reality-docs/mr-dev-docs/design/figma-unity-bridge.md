@@ -18,8 +18,8 @@ MRTK Figma Bridge for Unity allows you to bring the layout from Figma Toolkit in
 See [MRTK Figma Toolkit](figma-toolkit.md) page to learn about Figma Toolkit which is the design file with HoloLens 2 style UI library.
 
 ## Prerequisites
-- [Unity 2019 or higher](http://aka.ms/mrtk)
-- MRTK-Unity 2.7.0 or higher
+- Unity 2019 or higher
+- [MRTK-Unity 2.7.0 or higher](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/)
 
 > [!IMPORTANT]
 > **Requires MRTK-Unity 2.7.0 or higher**
@@ -38,33 +38,35 @@ In **Discover features** page, under **Mixed Reality Toolkit** section, select *
 
 Once the import process is done, you will be able to find Figma Bridge under the menu **Mixed Reality > Toolkit > Figma Bridge**
 
-<img src="images/FigmaToolkit/FigmaBridge_Menu.png" width="500px" alt="Menu duplicate 1"><br>
+<img src="images/FigmaToolkit/FigmaBridge_Menu.png" width="500px" alt="Figma Bridge - Menu"><br>
 
 ### 3. Generate and enter your Figma Token
 
 On the Figma website, click Figma menu on the upper left corner, open Help and account > Account settings. Generate a new personal access token in the 'Personal access tokens' section.
 
-<img src="images/FigmaToolkit/FigmaToolkit_Token.png" width="500px" alt="Menu duplicate 1"><br>
+<img src="images/FigmaToolkit/FigmaToolkit_Token.png" width="500px" alt="Figma Bridge - Get Token"><br>
 
-<img src="images/FigmaToolkit/FigmaBridge_Token.png" width="500px" alt="Menu duplicate 1"><br>
+<img src="images/FigmaToolkit/FigmaBridge_Token.png" width="500px" alt="Figma Bridge - Enter Token"><br>
 
 
 ### 4. Enter ID for a Figma document
 Each Figma document has a unique ID in the URL. Copy and paste this ID into Figma Bridge.
 
-<img src="images/FigmaToolkit/FigmaToolkit_DocID.png" alt="Menu duplicate 1"><br>
+<img src="images/FigmaToolkit/FigmaToolkit_DocID.png" alt="Figma Bridge - Doc ID"><br>
 
 Click **Get File** to download Figma file. You can download other Figma files by entering a new ID.
 
 Click **Load File** to open a Figma file.
 
-<img src="images/FigmaToolkit/FigmaBridge_Files.png" width="500px" alt="Menu duplicate 1"><br>
+<img src="images/FigmaToolkit/FigmaBridge_Files.png" width="500px" alt="Figma Bridge - Files"><br>
 
 ### 5. Build a page
 
 Figma Bridge will display the list of pages in the Figma file. Check pages that you want to build in Unity. Click **Build pages** button.
 
-<img src="images/FigmaToolkit/FigmaBridge_Pages.png" width="500px" alt="Menu duplicate 1"><br>
+<img src="images/FigmaToolkit/FigmaBridge_Pages.png" width="500px" alt="Figma Bridge - Pages"><br>
+
+<img src="images/FigmaToolkit/FigmaBridge_Result.png" alt="Figma Bridge - Result"><br>
 
 ### 6. Refresh a document for changes
 
