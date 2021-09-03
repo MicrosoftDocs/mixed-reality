@@ -1,6 +1,6 @@
 ---
 title: MRTK Figma Bridge for Unity
-description: Download Figma file which contains assets for common UI building blocks.
+description: MRTK Figma Bridge for Unity allows you to bring the layout from Figma Toolkit into Unity 
 author: dongpark
 ms.author: dongpark
 ms.date: 03/29/2021
@@ -19,7 +19,7 @@ See [MRTK Figma Toolkit](figma-toolkit.md) page to learn about Figma Toolkit whi
 
 ## Prerequisites
 - Unity 2019 or higher
-- [MRTK-Unity 2.7.0 or higher](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/)
+- [MRTK-Unity 2.7.0 or higher](/windows/mixed-reality/mrtk-unity/)
 
 > [!IMPORTANT]
 > **Requires MRTK-Unity 2.7.0 or higher**
@@ -30,7 +30,7 @@ See [MRTK Figma Toolkit](figma-toolkit.md) page to learn about Figma Toolkit whi
 
 ### 1. Installation
 
-Figma Unity Bridge can be installed through [Mixed Reality Feature Tool](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool). Download and run Mixed Reality Feature Tool.
+Figma Unity Bridge can be installed through [Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool). Download and run Mixed Reality Feature Tool.
 
 In **Discover features** page, under **Mixed Reality Toolkit** section, select **MRTK Figma Unity Bridge**. Follow the steps to finish MR Feature Tool and come back to your Unity project. Unity will import the package for MRTK Figma Bridge.
 
