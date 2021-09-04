@@ -18,6 +18,7 @@ MRTK Figma Bridge for Unity allows you to bring the layout from Figma Toolkit in
 See [MRTK Figma Toolkit](figma-toolkit.md) page to learn about Figma Toolkit which is the design file with HoloLens 2 style UI library.
 
 ## Prerequisites
+- See [Install the tools](/windows/mixed-reality/develop/install-the-tools) for the required software for Mixed Reality development
 - Unity 2019 or higher
 - [MRTK-Unity 2.7.0 or higher](/windows/mixed-reality/mrtk-unity/)
 
@@ -76,3 +77,21 @@ You can modify Figma file on the web (or using the desktop editor) and click **R
 
 ## See also
 * [Figma Toolkit](figma-toolkit.md)
+* [Cursors](cursors.md)
+* [Hand ray](point-and-commit.md)
+* [Button](button.md)
+* [Interactable object](interactable-object.md)
+* [Bounding box and App bar](app-bar-and-bounding-box.md)
+* [Manipulation](direct-manipulation.md)
+* [Hand menu](hand-menu.md)
+* [Near menu](near-menu.md)
+* [Object collection](object-collection.md)
+* [Voice command](voice-input.md)
+* [Keyboard](keyboard.md)
+* [Tooltip](tooltip.md)
+* [Slate](slate.md)
+* [Slider](slider.md)
+* [Shader](shader.md)
+* [Billboarding and tag-along](billboarding-and-tag-along.md)
+* [Displaying progress](progress.md)
+* [Surface magnetism](surface-magnetism.md)
