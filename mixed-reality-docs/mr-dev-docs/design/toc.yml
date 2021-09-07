@@ -28,12 +28,16 @@
     href: spatial-sound.md
   - name: Spatial mapping
     href: spatial-mapping.md
+  - name: Spectator view
+    href: platform-capabilities-and-apis/spectator-view.md
   - name: System gesture
     href: system-gesture.md
   - name: Types of Mixed Reality apps
     href: types-of-mixed-reality-apps.md
   - name: Designing content for holographic display
     href: designing-content-for-holographic-display.md
+  - name: Shared experiences in Mixed Reality
+    href: platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md    
 - name: Interaction models
   items:
   - name: Instinctual interactions

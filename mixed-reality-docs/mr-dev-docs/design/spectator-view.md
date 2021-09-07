@@ -57,5 +57,5 @@ The following table shows different Spectator View functionality and their capab
 ## See also
 
 * [Mixed reality capture](/hololens/holographic-photos-and-videos) 
-* [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
+* [Mixed reality capture for developers](../../develop/platform-capabilities-and-apis/mixed-reality-capture-for-developers.md)
 * [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)

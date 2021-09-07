@@ -2,13 +2,15 @@
 title: Custom Holographic Remoting data channels
 description: Custom data channels can be used to send user data over the already established Holographic Remoting connection.
 author: florianbagarmicrosoft
-ms.author: flbagar
-ms.date: 12/01/2020
+ms.author: v-vtieto
+ms.date: 9/3/2021
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windows mixed reality headset, virtual reality headset, data channels
 ---
 
 # Custom Holographic Remoting data channels (C++)
+
+If you're new to Holographic Remoting, you may want to [read our overview].
 
 >[!NOTE]
 >This guidance is specific to Holographic Remoting on HoloLens 2.

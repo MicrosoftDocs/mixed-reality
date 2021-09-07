@@ -2,13 +2,15 @@
 title: Add holographic remoting
 description: Learn how to install, configure, and use Holographic Remoting to render holograms to a HoloLens device over the network.
 author: florianbagarmicrosoft
-ms.author: flbagar
-ms.date: 12/01/2020
+ms.author: v-vtieto
+ms.date: 9/3/2021
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, holographic remoting, remote rendering, network rendering, HoloLens, remote holograms, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 # Add Holographic Remoting (HoloLens (first gen))
+
+If you're new to Holographic Remoting, you may want to [read our overview].
 
 >[!IMPORTANT]
 > This document describes the creation of a host application for HoloLens 1. Host application for **HoloLens (1st gen)** must use NuGet package version **1.x.x**. This implies that host applications written for HoloLens 1 are not compatible with HoloLens 2 and vice versa.

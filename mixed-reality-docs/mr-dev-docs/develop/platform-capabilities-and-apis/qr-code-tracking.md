@@ -2,15 +2,15 @@
 title: QR code tracking
 description: Learn how to detect QR codes, add webcam capabilities, and manage coordinate systems in mixed reality apps on HoloLens 2.
 author: dorreneb
-ms.author: dobrown
-ms.date: 01/21/2021
+ms.author: v-vtieto
+ms.date: 09/03/21
 ms.topic: article
 keywords: vr, lbe, location based entertainment, vr arcade, arcade, immersive, qr, qr code, hololens2
 ---
 
 # QR code tracking
 
-HoloLens 2 can detect QR codes in the environment around the headset, establishing a coordinate system at each code's real-world location. Once you enable your device's webcam, you'll be able to recognize QR codes in the latest versions of your Unreal or Unity projects. Before going to production, we recommend following the [best practices](#best-practices-for-qr-code-detection) we've laid at the end of the article.
+HoloLens 2 can detect QR codes in the environment around the headset, establishing a coordinate system at each code's real-world location. Once you enable your device's webcam, you'll be able to recognize QR codes in the latest versions of your Unreal or Unity projects. Before going to production, we recommend following the [best practices](#best-practices-for-qr-code-detection) we've included at the end of the article.
 
 ## Device support
 

@@ -1,15 +1,16 @@
 ---
-title: Writing a Holographic Remoting remote app (WMR)
+title: Writing a Holographic Remoting remote app using the HolographicSpace API
 description: Learn how to stream remote content rendered on a remote machine to HoloLens 2 with Holographic Remoting apps with HolographicSpace.  
 author: florianbagarmicrosoft
-ms.author: flbagar
-ms.date: 12/01/2020
+ms.author: v-vtieto
+ms.date: 9/3/2021
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windows mixed reality headset, virtual reality headset, NuGet
 ---
 
-
 # Writing a Holographic Remoting remote app using the HolographicSpace API
+
+If you're new to Holographic Remoting, you may want to [read our overview].
 
 >[!IMPORTANT]
 >This document describes the creation of a remote application for HoloLens 2 using the [HolographicSpace API](../native/getting-a-holographicspace.md). Remote applications for **HoloLens (1st gen)** must use NuGet package version **1.x.x**. This implies that remote applications written for HoloLens 2 are not compatible with HoloLens 1 and vice versa. The documentation for HoloLens 1 can be found [here](add-holographic-remoting.md).
@@ -24,8 +25,6 @@ A good starting point is a working DirectX based Desktop or UWP app, which targe
 
 >[!IMPORTANT]
 >Any app using Holographic Remoting should be authored to use a [multi-threaded apartment](/windows/win32/com/multithreaded-apartments). The use of a [single-threaded apartment](/windows/win32/com/single-threaded-apartments) is supported but will lead to sub-optimal performance and possibly stuttering during playback. When using C++/WinRT [winrt::init_apartment](/windows/uwp/cpp-and-winrt-apis/get-started) a multi-threaded apartment is the default.
-
-
 
 ## Get the Holographic Remoting NuGet package
 

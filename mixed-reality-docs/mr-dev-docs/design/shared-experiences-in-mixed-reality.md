@@ -182,5 +182,5 @@ Different scenario or desire to use a different tech/service? Provide feedback a
 
 * [Azure Spatial Anchors](/azure/spatial-anchors)
 * [Shared spatial anchors in DirectX](shared-spatial-anchors-in-directx.md)
-* [Shared experiences in Unity](../unity/shared-experiences-in-unity.md)
+* [Shared experiences in Unity](../../develop/unity/shared-experiences-in-unity.md)
 * [Spectator view](spectator-view.md)

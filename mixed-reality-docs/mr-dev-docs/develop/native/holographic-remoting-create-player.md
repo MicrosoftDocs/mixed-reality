@@ -3,12 +3,14 @@ title: Writing a custom Holographic Remoting player (C++)
 description: Create a custom Hologaphic Remoting app to display content rendered on a remote machine to your HoloLens 2. 
 author: florianbagarmicrosoft
 ms.author: v-vtieto
-ms.date: 7/30/2021
+ms.date: 9/3/2021
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, NuGet, app manifest, player context, remote app, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 # Writing a custom Holographic Remoting player app (C++)
+
+If you're new to Holographic Remoting, you may want to [read our overview].
 
 >[!IMPORTANT]
 >This document describes the creation of a custom player application for HoloLens 2. Custom players written for HoloLens 2 are not compatible with remote applications written for HoloLens 1. This implies that both applications must use NuGet package version **2.x.x**.
