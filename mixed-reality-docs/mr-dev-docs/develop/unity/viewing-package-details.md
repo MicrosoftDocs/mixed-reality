@@ -11,7 +11,8 @@ keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit,
 
 # Feature package details
 
-The **Feature details** view provides information on the features: 
+The **Feature details** view enables reviewing key informatiom about a feature, including:
+
 * Description
 * Package name
 * Author 

@@ -33,6 +33,9 @@ You can see a detailed side-by-side comparison of all proposed changes by select
 
 ![Compare manifests](images/FeatureToolCompareManifest.png)
 
+> [!NOTE]
+> Starting with version 1.0.2109.0, either scroll bar will scroll **both** manifests. This helps more easily spot the differences between the two files.
+
 ## Approving changes
 
 When the proposed changes are approved, the listed files will be copied into the Unity project and the manifest will be updated with references to these files.
