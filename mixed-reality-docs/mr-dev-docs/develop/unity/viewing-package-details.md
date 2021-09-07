@@ -24,3 +24,7 @@ The **Feature details** view enables reviewing key informatiom about a feature, 
 ## See also
 
 - [Welcome to the Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md)
+- [Configuring the feature tool](configuring-feature-tool.md)
+- [Discovery and acquisition](discovering-features.md)
+- [Importing selected packages](importing-features.md)
+- [Reviewing and approving project modifications](reviewing-changes.md)

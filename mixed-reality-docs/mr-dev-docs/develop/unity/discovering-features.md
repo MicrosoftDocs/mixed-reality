@@ -84,3 +84,4 @@ From **Discover features**, the Mixed Reality Feature Tool allows for navigating
 - [Configuring the feature tool](configuring-feature-tool.md)
 - [Viewing feature package details](viewing-package-details.md)
 - [Importing selected packages](importing-features.md)
+- [Reviewing and approving project modifications](reviewing-changes.md)

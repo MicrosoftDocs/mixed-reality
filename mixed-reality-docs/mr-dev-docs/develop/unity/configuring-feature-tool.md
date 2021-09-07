@@ -41,7 +41,7 @@ Change this setting to update the location where feature packages are downloaded
 
 ### Auto-update the catalog
 
-Enalbe this setting to ensure that every time the Mixed Reality Feature Tool is started, the latest feature catalog is retrieved from the server.
+Enable this setting to ensure that every time the Mixed Reality Feature Tool is started, the latest feature catalog is retrieved from the server.
 
 ### Show preview releases
 
@@ -106,3 +106,7 @@ Clicking on the open file ![Open log file](images/OpenFileButton.png) button wil
 ## See also
 
 - [Welcome to the Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md)
+- [Discovery and acquisition](discovering-features.md)
+- [Viewing feature package details](viewing-package-details.md)
+- [Importing selected packages](importing-features.md)
+- [Reviewing and approving project modifications](reviewing-changes.md)

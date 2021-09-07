@@ -55,4 +55,7 @@ If you need to make changes to your feature selections, use **Go Back** to retur
 ## See also
 
 - [Welcome to the Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md)
+- [Configuring the feature tool](configuring-feature-tool.md)
+- [Discovery and acquisition](discovering-features.md)
+- [Viewing feature package details](viewing-package-details.md)
 - [Importing selected packages](importing-features.md)
