@@ -28,7 +28,7 @@ This document is intended to provide a scenario overview and to clarify the rela
 
 This article only serves to introduce the Scene Understanding runtime and concepts. If you're looking for documentation on how to develop with Scene Understanding, you may be interested in the following articles:
 
-[Scene Understanding SDK overview](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
+[Scene Understanding SDK overview](../develop/unity/scene-understanding-SDK.md)
 
 You can download the Scene Understanding Sample app from the sample GitHub site:
 
@@ -40,7 +40,7 @@ If you don't have a device and wish to access sample scenes to try Scene Underst
 
 ### SDK
 
-If you're looking for specific details on developing with Scene Understanding, see the [Scene Understanding SDK overview](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md) documentation.
+If you're looking for specific details on developing with Scene Understanding, see the [Scene Understanding SDK overview](../develop/unity/scene-understanding-SDK.md) documentation.
 
 ### Sample
 
@@ -96,7 +96,7 @@ Scene understanding provides new constructs designed to simplify placement scena
 <br>
 
 
-If your application intends to place 2D or 3D holograms on rigid structures of your environment, the simplicity and convenience of SceneQuads for placement is preferable to computing this information from the [spatial mapping](spatial-mapping.md) mesh. For more information on this topic, see the [Scene understanding SDK reference](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
+If your application intends to place 2D or 3D holograms on rigid structures of your environment, the simplicity and convenience of SceneQuads for placement is preferable to computing this information from the [spatial mapping](spatial-mapping.md) mesh. For more information on this topic, see the [Scene understanding SDK reference](../develop/unity/scene-understanding-SDK.md)
 
 **Note** For legacy placement code that depends on the spatial mapping mesh, the spatial mapping mesh can be computed along with SceneQuads by setting EnableWorldMesh setting. If Scene understanding API doesn't satisfy your application's latency requirements, we recommend you continue to use the [Spatial mapping API](spatial-mapping.md#placement).
 
@@ -124,5 +124,5 @@ Additionally, the total number of surfaces returned by Spatial Mapping is limite
 
 ### See Also
 
-* [Scene understanding SDK](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
+* [Scene understanding SDK](../develop/unity/scene-understanding-SDK.md)
 * [Spatial mapping](spatial-mapping.md)
