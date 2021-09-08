@@ -62,6 +62,7 @@ From **Import features**, the Mixed Reality Feature Tool allows for navigating b
 ## See also
 
 - [Welcome to the Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md)
+- [Configuring the feature tool](configuring-feature-tool.md)
 - [Discovery and acquisition](discovering-features.md)
 - [Viewing feature package details](viewing-package-details.md)
 - [Reviewing and approving project modifications](reviewing-changes.md)

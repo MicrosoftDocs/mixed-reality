@@ -39,6 +39,10 @@ Change this setting to update the location where feature packages are downloaded
 
 ![Feature settings](images/FeatureToolSettings-Feature.png)
 
+### Auto-update the catalog
+
+Enable this setting to ensure that every time the Mixed Reality Feature Tool is started, the latest feature catalog is retrieved from the server.
+
 ### Show preview releases
 
 Enable this setting to acquire preview releases.
@@ -95,6 +99,14 @@ The list of registered early access programs. Use the `Add`, `Edit` and `Remove`
 
 Displays the path to the diagnostic log file.
 
+### Open file button
+
+Clicking on the open file ![Open log file](images/OpenFileButton.png) button will open the file, using the default text editor.
+
 ## See also
 
 - [Welcome to the Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md)
+- [Discovery and acquisition](discovering-features.md)
+- [Viewing feature package details](viewing-package-details.md)
+- [Importing selected packages](importing-features.md)
+- [Reviewing and approving project modifications](reviewing-changes.md)
