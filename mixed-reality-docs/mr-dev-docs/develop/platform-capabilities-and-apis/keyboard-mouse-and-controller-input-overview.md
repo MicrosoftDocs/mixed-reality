@@ -2,8 +2,8 @@
 title: Keyboard, mouse, and controller overview
 description: Gives an overview of how to work with keyboard, mouse, and game controllers.
 author: mikeriches
-ms.author: mriches
-ms.date: 09/03/21
+ms.author: v-vtieto
+ms.date: 09/07/21
 ms.topic: article
 keywords: Windows Mixed Reality, keyboard, mouse, game controller, xbox controller, HoloLens, desktop, walkthrough, sample code
 ---
