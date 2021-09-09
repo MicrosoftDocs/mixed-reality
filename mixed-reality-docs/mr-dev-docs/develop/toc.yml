@@ -73,10 +73,10 @@
     - name: Updating 2D UWP apps for Windows Mixed Reality
       href: porting-apps/building-2d-apps.md
   - name: Device Portal
-  items:
+    items:
     - name: Using the Windows Device Portal
       href: platform-capabilities-and-apis/using-the-windows-device-portal.md
-  - name: Research tools
+    - name: Research tools
   items:
     - name: HoloLens Research Mode
       href: platform-capabilities-and-apis/research-mode.md
