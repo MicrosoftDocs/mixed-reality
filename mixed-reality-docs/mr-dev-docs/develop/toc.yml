@@ -77,7 +77,7 @@
     - name: Using the Windows Device Portal
       href: platform-capabilities-and-apis/using-the-windows-device-portal.md
     - name: Research tools
-  items:
+    items:
     - name: HoloLens Research Mode
       href: platform-capabilities-and-apis/research-mode.md
 - name: Unity
