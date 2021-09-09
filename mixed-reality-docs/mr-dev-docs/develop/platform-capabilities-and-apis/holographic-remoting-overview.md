@@ -3,7 +3,7 @@ title: Holographic Remoting Overview
 description: Learn about what Holographic Remoting is and how it can benefit your development process.
 author: hferrone
 ms.author: v-vtieto
-ms.date: 08/12/2021
+ms.date: 9/8/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, augmented reality, virtual reality, mixed reality headsets, learn, tutorial, getting started, holographic remoting, desktop, preview
 ---

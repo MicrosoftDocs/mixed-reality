@@ -12,9 +12,9 @@
     href: features-and-samples.md
 - name: General concepts
   items:
-  - name: Shared spatial anchors
+  - name: Use anchors to share holograms
     href: platform-capabilities-and-apis/shared-spatial-anchors-in-directx.md
-  - name: Keyboard, mouse, and controller input (with C++ samples)
+  - name: Keyboard, mouse, and controller input
     href: platform-capabilities-and-apis/keyboard-mouse-and-controller-input-in-directx.md
   - name: QR code tracking (with C# and C++ samples)
     href: platform-capabilities-and-apis/qr-code-tracking.md
@@ -446,9 +446,11 @@
   items:
   - name: Custom engine development overview
     href: native/directx-development-overview.md
-  - name: Keyboard, mouse and controller input (C++).md
+  - name: Shared spatial anchors
+    href: platform-capabilities-and-apis/shared-spatial-anchors-in-directx.md
+  - name: Keyboard, mouse and controller input (C++)
     href: native/keyboard-mouse-and-controller-input-cpp.md
-  - name: QR code tracking (C# and C++).md
+  - name: QR code tracking (C# and C++)
     href: native/qr-code-tracking-cs-cpp.md
   - name: Using XAML with holographic DirectX apps
     href: native/using-xaml-with-holographic-directx-apps.md
