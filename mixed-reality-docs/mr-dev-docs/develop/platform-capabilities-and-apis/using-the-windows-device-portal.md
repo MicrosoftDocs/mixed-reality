@@ -23,7 +23,7 @@ The Windows Device Portal for HoloLens lets you configure and manage your device
 
 This documentation is specifically about the Windows Device Portal for HoloLens. To use the Windows Device portal for desktop (including for Windows Mixed Reality), see [Windows Device Portal overview](/windows/uwp/debug-test-perf/device-portal)
 
-> [NOTE!]
+> [!NOTE]
 > Device Portal is a developer tool and is not to be used in applications deployed to your organization.
 
 ## Setting up HoloLens to use Windows Device Portal
@@ -244,7 +244,7 @@ To import maps and anchors, select **Upload a map file** and **Upload an anchor 
 ![Mixed Reality Capture page in Windows Device Portal on Microsoft HoloLens](images/using-windows-portal-img-07.png)<br>
 *Mixed Reality Capture page in Windows Device Portal on Microsoft HoloLens*
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > Settings configured in the Device Portal apply to the entire device and persist through reboots. Any settings modified in the Device Portal will apply to mixed reality captures and apps. Only use Device Portal when developing, and not for applications deployed to your organization.
 
 Use the Mixed Reality Capture page to save media streams from the HoloLens.
