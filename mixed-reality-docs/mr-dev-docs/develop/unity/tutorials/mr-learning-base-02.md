@@ -91,7 +91,7 @@ In the Build Settings window, select **Universal Windows Platform** and:
 2. Set **Architecture** to **ARM 64** 
 3. Set **Build Type** to **D3D Project**
 4. Set **Target SDK Version** to **Latest Installed**
-5. Set **Minimum Platform Version** to **10.0.1024.0**
+5. Set **Minimum Platform Version** to **10.0.10240.0**
 6. Set **Visual Studio Version** to **Latest installed**
 7. Set **Build and Run on** to **USB Device**
 8. Set **Build configuration** to **Release** because there are known performance issues with Debug
