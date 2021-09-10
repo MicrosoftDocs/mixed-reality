@@ -28,7 +28,7 @@ For each of the developer scenarios listed below, there are feature samples that
 
 | Scenario | Feature sample | Engine | Description |
 | --- | --- | ---- | --- |
-| [Getting started](#getting-started-with-cross-platform-developer-tools) | | | See [HoloLens (1st gen) Basics 100: Getting started with Unity](unity/tutorials/holograms-100.md) |
+| Getting started | | | See [HoloLens (1st gen) Basics 100: Getting started with Unity](unity/tutorials/holograms-100.md) |
 | [Build basic OpenXR scenarios](#build-basic-openxr-scenarios) | [OpenXR with Unity samples](#build-basic-openxr-scenarios) | Unity C# | Getting started with cross-platform developer tools. |
 | Spatial cloud services | [Azure Remote Rendering samples](/azure/remote-rendering/samples/sample-model) | Unity C# | Some resources for sample data that can be used for testing the Azure Remote Rendering service. |
 |    | [Azure Object Anchors samples](https://github.com/Azure/azure-object-anchors) | Unity C# | [Azure Object Anchors](/azure/object-anchors/overview) enable applications to detect an object in the physical world using a 3D model and estimate its 6DoF pose. |
@@ -61,7 +61,7 @@ For developers targeting Unity 2020 to build HoloLens 2 or Mixed Reality applica
 | --- | --- | --- | --- |
 | [Using the OpenXR plugin](./unity/xr-project-setup.md) | [Mixed Reality OpenXR with Unity samples](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) | Unity C# | These sample projects showcase how to build Unity applications for HoloLens 2 or Mixed Reality headsets using the Mixed Reality OpenXR plugin. |
 | N/A | [OpenXR MRTK Base Unity project](https://github.com/microsoft/UnityOpenXRMRTKBase) | Unity C# | his repo contains a Unity project that is setup with the Microsoft Mixed Reality Toolkit Foundations and Standard Assets packages as well as the Microsoft OpenXR Plugin package. |
-| [What is MRTK](/windows/mixed-reality/mrtk-unity/?view=mrtkunity-2021-05) | [Using Unity 2020.3 and MRTK 2.7.2](https://github.com/microsoft/MixedRealityToolkit-Unity#example-scenes) | Unity C# | MRTK-Unity is a Microsoft-driven project that provides a set of components and features, used to accelerate cross-platform MR app development in Unity. |
+| [What is MRTK](/windows/mixed-reality/mrtk-unity/) | [Using Unity 2020.3 and MRTK 2.7.2](https://github.com/microsoft/MixedRealityToolkit-Unity#example-scenes) | Unity C# | MRTK-Unity is a Microsoft-driven project that provides a set of components and features, used to accelerate cross-platform MR app development in Unity. |
 | N/A | [OpenXR Explorer](https://github.com/maluoi/openxr-explorer#msdynttrid=udu2MjGd1z293SGMmgAul0BalrUKvy4iwBnBrc3lEn4) | C++, Windows, Linux, OpenXR | OpenXR Explorer is a handy debug tool for OpenXR developers. It allows for easy switching between OpenXR runtimes, shows lists of the runtime's supported extensions, and allows for inspection of common properties and enumerations, with direct links to relevant parts of the OpenXR specification! |
 | [What is OpenXR](../develop/native/openxr.md#what-is-openxr) | [OpenXR Samples for Mixed Reality Developers](https://github.com/microsoft/OpenXR-MixedReality) | C++ | These OpenXR samples use C++17 and D3D11. The same source code works across UWP applications running on HoloLens 2 and Win32 applications running on Windows Desktop with Windows Mixed Reality immersive headsets. |
 
@@ -108,7 +108,7 @@ Scene understanding provides Mixed Reality developers with a structured, high-le
 | Reference article | Sample | Platform | Description |
 | --- | --- | --- | --- |
 | [Scene understanding](../design/scene-understanding.md) | [Mixed Reality Scene Understanding samples (SU SDK)](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples) | Unity C# and SU SDK | A Unity-based sample application that showcases Scene Understanding on HoloLens 2. |
-| [Scene understanding observer (MRTK)](/windows/mixed-reality/mrtk-unity/features/spatial-awareness/scene-understanding?view=mrtkunity-2021-05) | [Scene Understanding sample (MRTK + SU SDK)](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/main/Assets/MRTK/Examples/Experimental/SceneUnderstanding/Scenes/SceneUnderstandingExample.unity) |Unity C#, MRTK + SU SDK | MRTK + Scene Understanding SDK sample. |
+| [Scene understanding observer (MRTK)](/windows/mixed-reality/mrtk-unity/features/spatial-awareness/scene-understanding) | [Scene Understanding sample (MRTK + SU SDK)](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/main/Assets/MRTK/Examples/Experimental/SceneUnderstanding/Scenes/SceneUnderstandingExample.unity) |Unity C#, MRTK + SU SDK | MRTK + Scene Understanding SDK sample. |
 
 ### Contextual data overlays
 
