@@ -333,3 +333,5 @@ Congratulations! You've completed our series of babylon.js tutorials and learned
 > * Run and test the application in a Windows Mixed Reality Simulator
 
 For more information on Mixed Reality JavaScript development see [JavaScript development overview](/javascript-development-overview.md).
+
+If you're looking for another babylon.js tutorial, checkout the [Piano-building Tutorial Series](../babylonjs-webxr-piano/introduction-01.md) to learn how to build a piano in the VR space using babylon.js.
