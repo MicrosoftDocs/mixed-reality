@@ -2,26 +2,26 @@
 title: Building a piano in WebXR using BabylonJS
 description: Complete this tutorial series to learn how to build a functioning 88-key piano keyboard in WebXR using BabylonJS
 author: JING1201
-ms.author: t-jinglow, ayyonet
+ms.author: v-vtieto
 ms.prod: mixed-reality
 ms.topic: tutorial
-ms.date: 05/31/2021
+ms.date: 09/10/2021
 keywords: mixed reality, javascript, tutorial, BabylonJS, hololens, mixed reality, UWP, Windows 10, WebXR, immersive web
 ms.localizationpriority: high
 ---
 
 
-# Tutorial: Build a piano in WebXR using babylon.js
+# Tutorial: Build a piano in WebXR using Babylon.js
 
 Building a piano in the real world requires a lot of time, skills, and materials. What about building one for the VR/AR world?
 
-Through this tutorial series, you will learn about using babylon.js to create a Mixed Reality web app that contains a functioning 88-key standup piano in the virtual world. In the completed app, you will be able to easily teleport to the position in front of the piano and begin playing on the keys using your mixed reality controllers.
+Through this tutorial series, you will learn about using Babylon.js to create a Mixed Reality web app that contains a functioning 88-key standup piano in the virtual world. In the completed app, you will be able to easily teleport to the position in front of the piano and begin playing on the keys using your mixed reality controllers.
 
 In this tutorial series, you will learn how to:
 
 > [!div class="checklist"]
 > * Create, position, and merge meshes to build a piano keyboard
-> * Import a babylon.js model of a standup piano frame
+> * Import a Babylon.js model of a standup piano frame
 > * Add pointer interactions to each piano key
 > * Enable teleportation and multipointer support in WebXR
 
@@ -37,7 +37,7 @@ In this tutorial series, you will learn how to:
 
 ## Getting started
 
-Let's begin by setting up the HTML web page that will contain the babylon.js scene.
+Let's begin by setting up the HTML web page that will contain the Babylon.js scene.
 
 1. Create a folder named *babylonjs-piano-tutorial* and open the folder in Visual Studio Code.
 
@@ -124,7 +124,7 @@ Let's begin by setting up the HTML web page that will contain the babylon.js sce
     const xrHelper = await scene.createDefaultXRExperienceAsync();
     ```
 
-    In javascript, in order to use the `await` keyboard on an `async` function within a function, the parent function would also have to be `async`, which is why we defined `createScene` function as async earlier. Later in this tutorial series, we will be using this `xrHelper` to enable and configure different WebXR features supported by babylon.js.
+    In javascript, in order to use the `await` keyboard on an `async` function within a function, the parent function would also have to be `async`, which is why we defined `createScene` function as async earlier. Later in this tutorial series, we will be using this `xrHelper` to enable and configure different WebXR features supported by Babylon.js.
 
 1. The completed *scene.js* should look like this:
 
@@ -180,9 +180,9 @@ Let's begin by setting up the HTML web page that will contain the babylon.js sce
     </html>
     ```
 
-1. Open *index.html* in your browser, and you will find that the error message we saw earlier is no longer present, and we have an empty babylon.js scene in the page.
+1. Open *index.html* in your browser, and you will find that the error message we saw earlier is no longer present, and we have an empty Babylon.js scene in the page.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Next tutorial: Build a piano 3D model](keyboard-model-02.md)
+> [Next tutorial: Build a 3D piano model](keyboard-model-02.md)
