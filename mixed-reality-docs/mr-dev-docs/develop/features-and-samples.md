@@ -30,7 +30,6 @@ For each of the developer scenarios listed below, there are feature samples that
 | --- | --- | ---- | --- |
 | Getting started | | | See [HoloLens (1st gen) Basics 100: Getting started with Unity](unity/tutorials/holograms-100.md) |
 | [Build basic OpenXR scenarios](#build-basic-openxr-scenarios) | [OpenXR with Unity samples](#build-basic-openxr-scenarios) | Unity C# | Getting started with cross-platform developer tools. |
-| <mark> Spatial cloud services | [Azure Remote Rendering samples](/azure/remote-rendering/samples/sample-model) | Unity C# | Some resources for sample data that can be used for testing the Azure Remote Rendering service. |
 | Anchoring Strategies | Local anchor |  | See the [Spatial anchors](/windows/mixed-reality/design/spatial-anchors) article. |
 |    | [Azure Spatial Anchors samples](https://github.com/Azure/azure-spatial-anchors-samples) |  | [Azure Spatial Anchors](/azure/spatial-anchors/overview) empower developers with essential capabilities to build spatially aware mixed reality applications. |
 | | [QR Codes](#qr-codes) | Unity C# | Detect QR Codes in the environment. |
@@ -46,6 +45,7 @@ For each of the developer scenarios listed below, there are feature samples that
 | | [Spectator view sample](#spectator-view) | Unity C# | Capture and render holograms at the correct size and orientation. |
 | | [Research Mode samples](#research-mode) | Windows 10 C++ | Access to key censors on a HoloLens device for research applications. |
 | [Holographic Remoting](#holographic-remoting) | [Holographic Remoting player](#holographic-remoting) |  Windows 10 C++ | Holographic Remoting streams holographic content from a PC to your Microsoft HoloLens in real time, by using a Wi-Fi connection. |
+| | [Azure Remote Rendering samples](/azure/remote-rendering/samples/sample-model) | Unity C# | Some resources for sample data that can be used for testing the Azure Remote Rendering service. |
 | Task management | [Dynamics 365 Remote Assist](/dynamics365/mixed-reality/remote-assist/ra-overview) | | Technicians can collaborate more efficiently by working together from different locations with Dynamics 365 Remote Assist on HoloLens, HoloLens 2, Android, or iOS devices. |
 | World Locking holograms |  World Locking sample apps | Unity C# | See [World Locking Tools Concepts](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/Concepts.html). | 
 | | [World locked physics sample](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/Samples/WorldLockedPhysicsSample.html) | Unity C# | This Physics Beam Sample offers a few virtual physics experiences which are enabled by World Locking Tools' world locked coordinate system. |
