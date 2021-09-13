@@ -23,38 +23,15 @@ Unreal lets you to create and configure a "Custom Profile" in the HoloLens launc
 
 ![Screenshot of command line results for ipconfig command](images/unreal-insights-img-01.png)
 
-2. Go to the top of the Unreal Engine panel and open **Device Manager** under the **Launch** button:
-
-![Screenshot of launch options with device manager highlighted](images/unreal-insights-img-02.png)
-
-3. In the Device Manager, select **Add an Unlisted Device**:
-
-![Screenshot of device manager open in Unreal engine](images/unreal-insights-img-03.png)
-
-4. Click **Select a platform** and choose **HoloLens**:
-
-![Screenshot of add unlisted device dropdown with HoloLens highlighted](images/unreal-insights-img-04.png)
-
-5. If you're using IPoverUSB, enter 127.0.0.1:10080 as the Device Identifier. Enter your HoloLens user and password in their respective fields and fill **Display Name** as you wish.
-
-> [!IMPORTANT]
-> The Device Identifier is the IP address of the HoloLens, NOT of the computer running Unreal Insights you found in step 1.
-
-![Screenshot of HoloLens device details in device manager](images/unreal-insights-img-05.png)
-
-6. Select **Add** and your HoloLens should appear in the device list of the device manager:
-
-![Screenshot of HoloLens added to device list](images/unreal-insights-img-06.png)
-
-7. Open **Project Settings** from the "Edit" toolbar in the main editor window.
+2. Open **Project Settings** from the "Edit" toolbar in the main editor window.
 
 ![Screenshot of Edit dropdown with Project Settings highlighted](images/unreal-insights-img-15.png)
 
-8. Scroll down the left panel until you find the **Platforms** header and select **HoloLens**.
+3. Scroll down the left panel until you find the **Platforms** header and select **HoloLens**.
 
 ![Screenshot of the Platforms section in the Project Settings left panel with HoloLens highlighted](images/unreal-insights-img-15.png)
 
-9. Confirm that the **Capabilities** section has "Internet Client", "Internet Client Server", and "Private Network Client Server" selected.
+4. Confirm that the **Capabilities** section has "Internet Client", "Internet Client Server", and "Private Network Client Server" selected.
 
 ![Screenshot of Capabilities options with Internet Client, Internet Client Server, and Private Network Client Server selected](images/unreal-insights-img-14.png)
 
