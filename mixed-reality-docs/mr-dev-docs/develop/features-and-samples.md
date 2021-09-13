@@ -41,6 +41,7 @@ For each of the developer scenarios listed below, there are feature samples that
 |    | [Azure Object Anchors samples](https://github.com/Azure/azure-object-anchors) | Unity C# | [Azure Object Anchors](/azure/object-anchors/overview) enable applications to detect an object in the physical world using a 3D model and estimate its 6DoF pose. |
 | [Contextual data overlays](#contextual-data-overlays) | [QR Codes](#qr-codes) | Unity C# | Detect QR Codes in the environment. |
 | | [Poster tracker sample](#poster-tracker-sample)  | Unity C# | Align a hologram with a real world object. |
+| | [Build mixed reality digital twins]() | Unity C# | Learn how to create a mixed reality application using Azure Digital Twins and Unity, a real-time 3D platform. |
 | [Capturing camera data](#camera-captures) | [Mixed reality capture sample](#holographic-mixed-reality-capture) | Windows 10 C++ | Capture the first-person experience of mixing real and digital worlds as a photo or video. |
 | | [Spectator view sample](#spectator-view) | Unity C# | Capture and render holograms at the correct size and orientation. |
 | | [Research Mode samples](#research-mode) | Windows 10 C++ | Access to key censors on a HoloLens device for research applications. |
@@ -60,8 +61,6 @@ If you're new to mixed reality cross-platform development, these samples will he
 
 For developers targeting Unity 2020 to build HoloLens 2 or Mixed Reality applications, OpenXR plugin can be used instead of WindowsXR plugin for better cross platform compatibilities. The Mixed Reality OpenXR Plugin also works well with latest Mixed Reality Toolkit 2.7.
 
-<br>
-
 | Reference article | Sample | Platform | Description | 
 | --- | --- | --- | --- |
 | [Using the OpenXR plugin](./unity/xr-project-setup.md) | [Mixed Reality OpenXR with Unity samples](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) | Unity C# | These sample projects showcase how to build Unity applications for HoloLens 2 or Mixed Reality headsets using the Mixed Reality OpenXR plugin. |
@@ -78,8 +77,6 @@ In mixed reality, people come together virtually to share experiences and collab
 
 This sample sets up your HoloLens 2 device using Azure Active Directory (AAD) credentials, and then configures the device to use iris login.
 
-<br>
-
 | Reference article | Sample |
 | --- | --- |
 | [Overview of Microsoft identity platform](/azure/active-directory/develop/v2-overview) | [AAD Login on HoloLens 2](https://github.com/peted70/aad-hololens) |
@@ -87,8 +84,6 @@ This sample sets up your HoloLens 2 device using Azure Active Directory (AAD) cr
 #### WebRTC
 
 The MixedReality-WebRTC project is a collection of components to help mixed reality app developers to integrate peer-to-peer audio, video, and data real-time communication into their applications. WebRTC components are based on the WebRTC protocol for Real-Time Communication (RTC), which is supported by most modern web browsers.
-
-<br>
 
 | Reference article | Sample |
 | --- | --- |
@@ -98,8 +93,6 @@ The MixedReality-WebRTC project is a collection of components to help mixed real
 
 This sample runs on Windows Mixed Reality and renders a spinning cube. You can interact with the cube by placing it in a new position, and various input methods are allowed. This sample works on PCs with headset devices attached, and also on Microsoft HoloLens.
 
-<br>
-
 | Reference article | Sample |
 | --- | --- |
 | N/A | [Windows Universal samples - basic hologram](https://github.com/microsoft/Windows-universal-samples/tree/main/Samples/BasicHologram) |
@@ -107,8 +100,6 @@ This sample runs on Windows Mixed Reality and renders a spinning cube. You can i
 ### Scene understanding
 
 Scene understanding provides Mixed Reality developers with a structured, high-level environment representation.  Scene understanding is designed for developing intuitive and environmentally aware applications, by combining the power of existing mixed reality runtimes. These runtimes are the highly accurate but less structured spatial mapping and new AI driven runtimes.
-
-<br>
 
 | Reference article | Sample | Platform | Description |
 | --- | --- | --- | --- |
@@ -123,8 +114,6 @@ Contextual data is the background information that provides a broader understand
 
 HoloLens 2 can detect QR codes in the environment around the headset, establishing a coordinate system at each code's real-world location.
 
-<br>
-
 | Reference article | Sample |
 | --- | --- |
 | [QR codes](platform-capabilities-and-apis/qr-code-tracking.md) | [QR code tracking in Unity](https://github.com/microsoft/MixedReality-QRCode-Sample) |
@@ -133,11 +122,18 @@ HoloLens 2 can detect QR codes in the environment around the headset, establishi
 
 It is often helpful to be able to align a hologram to a real world object, or align multiple HoloLens devices to a common set of world coordinates, so everyone sees the same holograms in the same location. For instance, in your Unity scene, you can add a "poster" where you want to anchor your scene (perhaps a game board), and then add holograms on or around it. Then you can print the poster, lay it on a table and run the calibration/alignment tool, which will move the holographic version of the poster to align with the physical version of the poster. Thus moving all of the linked holograms to the correct alignment.
 
-<br>
-
 | Reference article | Sample |
 | --- | --- |
 | N/A | [Poster calibration sample](https://github.com/microsoft/MixedRealityCompanionKit/tree/master/PosterCalibrationSample) |
+
+#### Build mixed reality digital twins
+
+In this sample, you'll Learn how to create a mixed reality HoloLens 2 application using Azure Digital Twins and Unity, a real-time 3D platform. 
+
+| Reference article | Sample |
+| --- | --- |
+| [Full learning path](/learn/paths/build-mixed-reality-azure-digital-twins-unity/) | [Building mixed reality digital twins with Azure Digital Twins and Unity](https://github.com/MicrosoftDocs/mslearn-mr-adt-in-unity) |
+
 
 ### Camera captures
 
@@ -147,8 +143,6 @@ Unstructured environment sensor data that your Mixed Reality device captures are
 
 Mixed reality capture (MRC) captures the first-person experience of mixing real and digital worlds as a photo or video, sharing what you see with others in real time.
 
-<br>
-
 | Reference article | Sample |
 | --- | --- |
 | [Mixed Reality Capture](platform-capabilities-and-apis/mixed-reality-capture-for-developers.md) | [Mixed Reality Capture samples](/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/) |
@@ -157,8 +151,6 @@ Mixed reality capture (MRC) captures the first-person experience of mixing real 
 
 Spectator view renders holograms from Unity over a color frame from a capture card. This sample uses the calibration data from the calibration app to render the holograms at the correct size and orientation.  
 
-<br>
-
 | Reference article | Sample application |
 | --- | --- |
 | N/A | [Spectator view mobile setup](https://github.com/microsoft/MixedReality-SpectatorView/blob/master/doc/SpectatorView.Setup.md#spectator-view-mobile-setup) |
@@ -166,8 +158,6 @@ Spectator view renders holograms from Unity over a color frame from a capture ca
 #### Research Mode
 
 Research Mode was introduced in the first-generation HoloLens to give access to key sensors on the device, specifically for research applications that are not intended for deployment. The sample applications below are examples for accessing and recording Research Mode streams and using the [intrinsic and extrinsic](/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world).
-
-<br>
 
 | Reference article | Sample application |
 | --- | --- |
@@ -179,7 +169,6 @@ Research Mode was introduced in the first-generation HoloLens to give access to 
 
 The Holographic Remoting Player is a companion app that connects to PC apps and games that support Holographic Remoting. Holographic Remoting streams holographic content from a PC to your Microsoft HoloLens in real time, using a Wi-Fi connection, and is supported on HoloLens (first gen) and HoloLens 2.
 
-<br>
 
 | Reference article | Sample |
 | --- | --- |
