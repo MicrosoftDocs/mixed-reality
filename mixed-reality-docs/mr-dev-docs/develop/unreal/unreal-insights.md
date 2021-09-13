@@ -46,7 +46,6 @@ Unreal lets you to create and configure a "Custom Profile" in the HoloLens launc
 ![Screenshot of project launcher with custom launch profiles highlighted](images/unreal-insights-img-08.png)
 
 3. Select **edit profile** button on the HoloLens custom launch profile. In the **Build** section, check **Build UAT** and set **Additional Command Line Parameters**.
-   <!-- TODO: Need more detail on what this parameter does and where to find others. -->
    - Try these for starters: **-tracehost=IP_OF_YOUR_PC -trace=Log,Bookmark,Frame,CPU,GPU,LoadTime,File,Net**
    - You can find a complete list of available launch parameters in the [Unreal Insights reference documentation](https://docs.unrealengine.com/TestingAndOptimization/PerformanceAndProfiling/UnrealInsights/Reference/index.html).
 
