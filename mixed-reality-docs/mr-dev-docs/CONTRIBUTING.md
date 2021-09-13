@@ -19,10 +19,10 @@ This page covers the basic steps and guidelines for contributing and links to Ma
 
 | Repository name | URL |
 | --- | --- |
+| AltspaceVR | [MicrosoftDocs/altspace-vr](/windows/mixed-reality/altspace-vr/) |
 | Azure Object Anchors | [MicrosoftDocs/azure-docs/articles/object-anchors](/azure/object-anchors/)
 | Azure Remote Rendering | [MicrosoftDocs/azure-docs/articles/remote-rendering](/azure/remote-rendering/) |
 | Azure Spatial Anchors | [MicrosoftDocs/azure-docs/articles/spatial-anchors](/azure/spatial-anchors/) |
-| AltspaceVR | [MicrosoftDocs/altspace-vr](/windows/mixed-reality/altspace-vr/) |
 | HoloLens | [MicrosoftDocs/HoloLens](/hololens/) |
 | Mixed Reality | [MicrosoftDocs/mixed-reality](/windows/mixed-reality) |
 | VR Enthusiasts Guide | [MicrosoftDocs/mixed-reality/enthusiast-guide](/windows/mixed-reality/enthusiast-guide/) |
