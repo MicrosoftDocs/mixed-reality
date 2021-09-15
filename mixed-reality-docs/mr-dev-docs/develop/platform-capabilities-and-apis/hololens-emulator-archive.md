@@ -3,7 +3,7 @@ title: HoloLens Emulator archive
 description: Stay up to date on the archived list of released builds for the Microsoft HoloLens(1st gen) and HoloLens 2 Emulators.
 author: hamalawi
 ms.author: moelhama
-ms.date: 05/11/2021
+ms.date: 09/15/2021
 ms.topic: article
 keywords: HoloLens, Emulator, Builds, Versions, mixed reality headset, windows mixed reality headset, virtual reality headset, archive
 ---
@@ -14,6 +14,8 @@ HoloLens Emulator (first gen) and HoloLens 2 Emulator builds install side by sid
 
 |  Build |  Release Date |  Notes |
 |----------|----------|----------|
+|  [HoloLens 2 Emulator build 10.0.20348.1018](https://go.microsoft.com/fwlink/?linkid=2172762) | September 15, 2021 | Windows Holographic, version 21H1 September 2021 Update.  For general HoloLens 2 release notes, see https://docs.microsoft.com/hololens/hololens-release-notes |
+|  [HoloLens 2 Emulator build 10.0.19041.1165](https://go.microsoft.com/fwlink/?linkid=2172868) | September 15, 2021 | Windows Holographic, version 20H2 September 2021 Update.  For general HoloLens 2 release notes, see https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator build 10.0.20348.1014](https://go.microsoft.com/fwlink/?linkid=2169418) | August 10, 2021 | Windows Holographic, version 21H1 August 2021 Update.  For general HoloLens 2 release notes, see https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator build 10.0.19041.1161](https://go.microsoft.com/fwlink/?linkid=2169166) | August 10, 2021 | Windows Holographic, version 20H2 August 2021 Update.  For general HoloLens 2 release notes, see https://docs.microsoft.com/hololens/hololens-release-notes |
 | [HoloLens 2 Emulator build 10.0.20348.1010](https://go.microsoft.com/fwlink/?linkid=2167725) | July 13, 2021 | Windows Holographic, version 21H1 July 2021 Update. <br> When using the HoloLens 2 Emulator on a PC with both integrated and discrete graphics adapters, the emulator will, in most cases, now be able to enable hardware graphics acceleration, though it might use the less powerful integrated adapter. Previously, hardware acceleration could not be enabled, often reporting a graphics failure with Code 43. In some cases, the emulator would not boot successfully but now will. <br> For general HoloLens 2 release notes, see https://docs.microsoft.com/hololens/hololens-release-notes |
