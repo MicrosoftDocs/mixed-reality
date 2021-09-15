@@ -3,7 +3,7 @@ title: Using Visual Studio to deploy and debug
 description: Learn how to build, debug, and deploy apps for HoloLens and Windows Mixed Reality using Visual Studio.
 author: pbarnettms
 ms.author: pbarnett
-ms.date: 04/13/2020
+ms.date: 09/15/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Visual Studio, HoloLens, Mixed Reality, debug, deploy
@@ -112,21 +112,25 @@ Next, you need to set your remote connection. For C++ and JavaScript projects, g
 
 5. The first time you deploy an app to your HoloLens from your PC, you'll be prompted for a PIN. Follow the **Pairing your device** instructions below.
 
-> [!NOTE]
-> If you're seeing considerable lag time with your apps deployment over USB, we recommend using the [remote machine instructions](#deploying-a-hololens-app-over-wi-fi) in the previous section.
+## Deploying an app to the HoloLens (1st gen) Emulator
 
-## Deploying an app to the HoloLens Emulator
+1. Make sure you've **[installed the HoloLens Emulator](../install-the-tools.md)**.
+2. Select an **x86** build configuration for your app.</br>
+![x86 build configuration in Visual Studio](images/x86setting.png)</br>
+3. Select **HoloLens Emulator** in the deployment target drop-down menu</br>
+![Emulator target in Visual Studio](images/deployemulator.png)</br>
+4. Select **Debug > Start debugging** to deploy your app and start debugging</br>
+![Start Without Debugging in Visual Studio](images/deploywithdebugging.png)</br>
 
-1. Make sure you've **[installed either the HoloLens 2 or HoloLens (1st gen) Emulator](../install-the-tools.md#installation-checklist)**
-2. Select your build configuration and emulator based on your device
+## Deploying an app to the HoloLens 2 Emulator
 
-[!INCLUDE[](includes/vs-wifi-hl-include.md)]
-
-3. Build, deploy, and debug your app based on your needs
-    * Select **Debug > Start debugging** to deploy your app and start debugging
-    * Select **Build > Deploy** to build and deploy without debuggingg
-
-![Start Without Debugging in Visual Studio](images/deploywithdebugging.png)
+1. Make sure you've **[installed the HoloLens Emulator](../install-the-tools.md)**.
+2. Select an **x86** or **x64** build configuration for your app.</br>
+![x86 build configuration in Visual Studio](images/x86setting.png)</br>
+3. Select **HoloLens 2 Emulator** in the deployment target drop-down menu</br>
+![Emulator target in Visual Studio application](images/deployemulator2.png)</br>
+4. Select **Debug > Start debugging** to deploy your app and start debugging</br>
+![Start Without Debugging in Visual Studio](images/deploywithdebugging.png)</br>
 
 ## Deploying a VR app to your Local PC 
 
