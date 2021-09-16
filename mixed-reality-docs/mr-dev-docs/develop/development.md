@@ -15,10 +15,7 @@ keywords: Mixed Reality, develop, development, HoloLens, unity, unreal, directx,
 
 Mixed Reality is a big place, where real and virtual worlds collide with a bang. The possibilities are endless, and it starts with you. Choose your engine, download your tools, and dust off your keyboard. Welcome to the Mixed Reality ecosystem--it's time to create.
 
-We have three possible paths for starting out in Mixed Reality development. Each is described below:
-* [New to Mixed Reality Development? Get started here](#microsoft-learn)
-* [Mixed Reality Toolkit tutorial series](#mixed-reality-toolkit-tutorials)
-* [Self-guided exploration](#self-guided-exploration)
+You can choose a starting point below based  on where you are in your journey so far.
 
 ## New to Mixed Reality Development?
 
@@ -31,19 +28,15 @@ Start at the very beginning with an overview of what Mixed Reality is and how it
 
 ### Start building a Mixed Reality Experience
 
-### 
-Are you already an intermediate-to-advanced developer with some experience in Mixed, Augmented, or Virtual Reality? We'll help you choose the proper tools and get set up, if needed, and then we'll direct you to our curated development paths across Unity, Unreal, Native, or Web
-
-## Mixed Reality Toolkit tutorials
-
-If you're more of a learn-by-doing user, check out our Mixed Reality Toolkit (MRTK) tutorial series. You'll build a mixed reality experience where the user can explore a hologram modeled after NASA's Mars Curiosity Rover and get a firm grasp of MRTK and how it can speed up your development process.
+If you're already comfortable with the basics and want to get started building something, check out our Mixed Reality Toolkit (MRTK) tutorial series. You'll build a Mixed Reality experience where the user can explore a hologram modeled after NASA's Mars Curiosity Rover. This will give you a firm grasp of MRTK and show you how it can speed up your development process.
 
 > [!div class="nextstepaction"]
 > [MRTK tutorials](unity/tutorials/mr-learning-base-01.md)
 
-## Self-guided exploration
-
-If you're a seasoned developer and want to get right into our docs, start by installing the required tools. From there, choose your Unity development setup and follow our curated Unity development path with HoloLens or browse around our content library.
+## Choose your own development path
+Are you an intermediate-to-advanced developer with some previous experience in Mixed, Augmented, or Virtual Reality? We'll help you choose the proper tools and get set up, if needed, and then we'll direct you to our curated development paths across Unity, Unreal, Native, or Web.
 
 > [!div class="nextstepaction"]
 > [Install the tools](install-the-tools.md)
+
+
