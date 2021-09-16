@@ -37,12 +37,6 @@ The following list shows the JavaScript frameworks and APIs for building immersi
 |[**Three.js**](https://threejs.org) <br/><br/>Three.js is a popular 3D library for creating immersive experiences. Learn more about [three.js](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene) in documentation page and by exploring [examples](https://threejs.org/examples/#webgl_animation_cloth). |![Three.js](images/three.js.example.png)  |
 |[**WebGL**](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API)  <br/><br/>You can access the WebXR Device APIs directly by using WebGL APIs. WebGL (Web Graphics Library) is a JavaScript API for rendering high-performance interactive 3D and 2D graphics within any compatible web browser without the use of plug-ins. |![WebGL](images/webgl.example.png)  |
 
-## Tutorials
-
-[Create your first WebXR application using Babylon.js](/tutorials/babylonjs-webxr-helloworld/introduction-01.md)
-
-[Build a piano in WebXR using Babylon.js](/tutorials/babylonjs-webxr-piano/introduction-01.md)
-
 ## See Also
 
 * [WebXR Overview](webxr-overview.md)
@@ -59,3 +53,11 @@ The following list shows the JavaScript frameworks and APIs for building immersi
 * [glTF](https://www.khronos.org/gltf)
 * [Immersive web community group](https://www.w3.org/community/immersive-web/)
 * [Immersive Web W3C Github](https://github.com/immersive-web)
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Create your first WebXR application using Babylon.js](/tutorials/babylonjs-webxr-helloworld/introduction-01.md)
+> [!div class="nextstepaction"]
+
+> [Build a piano in WebXR using Babylon.js](/tutorials/babylonjs-webxr-piano/introduction-01.md)
