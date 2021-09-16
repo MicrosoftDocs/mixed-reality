@@ -2,15 +2,13 @@
 title: Using WebXR with Windows Mixed Reality
 description: Learn the basics of using and developing for WebXR applications running on Windows Mixed Reality immersive headsets.
 author: yonet
-ms.author: ayyonet
-ms.date: 04/10/2020
+ms.author: v-vtieto
+ms.date: 09/16/2021
 ms.topic: article
 keywords: WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, windows mixed reality, web vr, web xr, web mr, web ar, 360, 360 video, 360 videos, 360 photo, 360 photos, 360 content, immersive web, immersiveweb, IW
 ---
 
-# WebXR Overview
-
-## JavaScript development
+# JavaScript development with WebXR
 
 JavaScript is one of the most popular programming languages in the world! It's simple, lightweight, and widely used on the web. Leverage the power of your JavaScript and web skills to create more engaging Mixed Reality experiences.
 
@@ -55,3 +53,11 @@ The following list shows the JavaScript frameworks and APIs for building immersi
 * [glTF](https://www.khronos.org/gltf)
 * [Immersive web community group](https://www.w3.org/community/immersive-web/)
 * [Immersive Web W3C Github](https://github.com/immersive-web)
+
+## Next steps--Tutorials
+
+> [!div class="nextstepaction"]
+> [Create your first WebXR application using Babylon.js](tutorials/babylonjs-webxr-helloworld/introduction-01.md)
+> [!div class="nextstepaction"]
+
+> [Build a piano in WebXR using Babylon.js](tutorials/babylonjs-webxr-piano/introduction-01.md)

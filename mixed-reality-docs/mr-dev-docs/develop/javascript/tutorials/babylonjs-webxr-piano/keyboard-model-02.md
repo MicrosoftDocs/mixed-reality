@@ -1,18 +1,18 @@
 ---
-title: Building a piano model in the 3D space
-description: Learn how to create a 3D piano model by coding using babylon.js
+title: Build a 3D piano model
+description: Learn how to create a 3D piano model by coding using Babylon.js
 author: JING1201
-ms.author: t-jinglow, ayyonet
+ms.author: v-vtieto
 ms.prod: mixed-reality
 ms.topic: tutorial
-ms.date: 05/31/2021
+ms.date: 09/10/2021
 keywords: mixed reality, javascript, tutorial, BabylonJS, hololens, mixed reality, UWP, Windows 10, WebXR, immersive web
 ms.localizationpriority: high
 ---
 
-# Tutorial: Building a piano model in the 3D space
+# Tutorial: Build a 3D piano model
 
-In the previous tutorial in the series, we have setup a web page containing a babylon.js scene with a camera and a light. In this tutorial, we will be building and adding a piano model into the scene.
+In the previous tutorial in the series, we have setup a web page containing a Babylon.js scene with a camera and a light. In this tutorial, we will be building and adding a piano model into the scene.
 
 ![Standup Piano Mesh](./images/standup-piano-mesh.png)
 
@@ -94,7 +94,7 @@ Visually, each register looks exactly the same as another, so we can start with 
 ## Build a simple piano keyboard
 
 > [!NOTE]
-> While it is possible to find pre-made 3D models of piano keyboards from online sources and import them into our webpage, we will build the keyboard from scratch in this tutorial to allow maximum customizability and to showcase how 3D models can be created through babylon.js.
+> While it is possible to find pre-made 3D models of piano keyboards from online sources and import them into our webpage, we will build the keyboard from scratch in this tutorial to allow maximum customizability and to showcase how 3D models can be created through Babylon.js.
 
 1. Before we begin to create any meshes for building the keyboard, notice that each black key is not perfectly aligned at the middle of the two white keys around it, and not every key has the same width. This means that we must create and position the mesh for each key individually.
 
@@ -610,4 +610,4 @@ In this section, let's expand the usage of the key-creation functions to generat
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Next steps: Interact with the piano keys](keyboard-interaction-03.md)
+> [Next steps: [Play the 3D piano](keyboard-interaction-03.md)

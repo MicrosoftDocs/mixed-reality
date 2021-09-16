@@ -1,16 +1,16 @@
 ---
-title: Interact with piano in the 3D space
-description: Learn how to add interactions to a virtual piano using babylon.js
+title: Play the 3D piano
+description: Learn how to add interactions to a virtual piano using Babylon.js
 author: JING1201
-ms.author: t-jinglow, ayyonet
+ms.author: v-vtieto
 ms.prod: mixed-reality
 ms.topic: tutorial
-ms.date: 05/31/2021
+ms.date: 09/10/2021
 keywords: mixed reality, javascript, tutorial, BabylonJS, hololens, mixed reality, UWP, Windows 10, WebXR, immersive web
 ms.localizationpriority: high
 ---
 
-# Tutorial: Interact with piano keyboard in the 3D space
+# Tutorial: Play the 3D piano
 
 In the previous tutorial, we have successfully created a model of a full 88-key piano keyboard. Now let's make it playable in the XR space.
 
@@ -194,7 +194,7 @@ Right now, the piano keyboard we have created is a static model that does not re
     });
     ```
 
-1. While babylon.js provides [many different types of pointer events](https://doc.babylonjs.com/typedoc/classes/babylon.pointereventtypes), we will only be using the `POINTERDOWN` and `POINTERUP` events to program the behavior of the piano keys, using the structure below:
+1. While Babylon.js provides [many different types of pointer events](https://doc.babylonjs.com/typedoc/classes/babylon.pointereventtypes), we will only be using the `POINTERDOWN` and `POINTERUP` events to program the behavior of the piano keys, using the structure below:
 
     ```javascript
     scene.onPointerObservable.add((pointerInfo) => {
@@ -380,7 +380,7 @@ By now, you have probably already played with the piano with your mouse (or even
 
 Now that we have scaled the piano to the right size in the VR space, let's enable some cool WebXR features to improve our piano-playing experience in the space.
 
-1. If you have been playing the piano using your immersive VR controllers, you might have noticed that you can only use one controller at a time. Let's enable the [multi-pointer support](https://doc.babylonjs.com/typedoc/interfaces/babylon.iwebxrcontrollerpointerselectionoptions) in the XR space by using babylon.js's [WebXR features manager](https://doc.babylonjs.com/divingDeeper/webXR/webXRFeaturesManager).
+1. If you have been playing the piano using your immersive VR controllers, you might have noticed that you can only use one controller at a time. Let's enable the [multi-pointer support](https://doc.babylonjs.com/typedoc/interfaces/babylon.iwebxrcontrollerpointerselectionoptions) in the XR space by using Babylon.js's [WebXR features manager](https://doc.babylonjs.com/divingDeeper/webXR/webXRFeaturesManager).
 
     Add the following code into the `createScene()` function, after the `xrHelper` initialization line:
 
@@ -395,7 +395,7 @@ Now that we have scaled the piano to the right size in the VR space, let's enabl
 
 1. Additionally, depending on where your starting point is, you might find it a little difficult to position yourself in front of the piano. If you are familiar with the immersive VR environment, you might already know about **teleportation**, which is a feature that allows you to move to another spot in the space instantly by pointing at it.
 
-1. In order to use babylon.js's [teleportation feature](https://doc.babylonjs.com/divingDeeper/webXR/WebXRSelectedFeatures#teleportation-module), we first need to have a ground mesh that we can "stand on" in the VR space. Add the following code to the `createScene()` function to create a ground:
+1. In order to use Babylon.js's [teleportation feature](https://doc.babylonjs.com/divingDeeper/webXR/WebXRSelectedFeatures#teleportation-module), we first need to have a ground mesh that we can "stand on" in the VR space. Add the following code to the `createScene()` function to create a ground:
 
     ```javascript
     const ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 400, height: 400});
@@ -423,11 +423,11 @@ Now that we have scaled the piano to the right size in the VR space, let's enabl
 
 ## Summary
 
-Congratulations! You've completed our series of the babylon.js piano-building tutorial and learned how to:
+Congratulations! You've completed our series of the Babylon.js piano-building tutorial and learned how to:
 
 > [!div class="checklist"]
 > * Create, position, and merge meshes to build a model of a piano keyboard
-> * Import a babylon.js model of a standup piano frame
+> * Import a Babylon.js model of a standup piano frame
 > * Add pointer interactions to each piano key
 > * Scale the size of meshes based on a pivot point
 > * Enable key WebXR features such as teleportation and multipointer support
