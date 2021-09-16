@@ -57,7 +57,7 @@ The following list shows the JavaScript frameworks and APIs for building immersi
 ## Next steps--Tutorials
 
 > [!div class="nextstepaction"]
-> [Create your first WebXR application using Babylon.js](/tutorials/babylonjs-webxr-helloworld/introduction-01.md)
+> [Create your first WebXR application using Babylon.js](tutorials/babylonjs-webxr-helloworld/introduction-01.md)
 > [!div class="nextstepaction"]
 
 > [Build a piano in WebXR using Babylon.js](/tutorials/babylonjs-webxr-piano/introduction-01.md)
