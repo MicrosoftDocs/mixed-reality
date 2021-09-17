@@ -1,7 +1,7 @@
 ---
 title: Learn the tools and architecture
 description: Learn about the mixed reality development tools you'll need to get started making apps for HoloLens and immersive headsets.
-author: grbury
+author: vtieto
 ms.author: v-vtieto
 ms.date: 9/15/2021
 ms.topic: overview
