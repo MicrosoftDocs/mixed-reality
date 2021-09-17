@@ -1,12 +1,13 @@
 ---
 title: Adding the Azure Cognitive Services speech translation component
 description: In this course, you will learn how to add Azure Cognitive Services speech translation in mixed reality applications.
-author: jessemcculloch
+author: vtieto
 ms.author: jemccull
 ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, speech recognition, Windows 10, speech translation
 ms.localizationpriority: high
+ROBOTS: NOINDEX
 ---
 
 # 3. Adding the Azure Cognitive Services speech translation component

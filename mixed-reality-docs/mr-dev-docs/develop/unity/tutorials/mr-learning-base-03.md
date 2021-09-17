@@ -1,12 +1,13 @@
 ---
 title: Getting started tutorials - 3. Configuring the MRTK profiles
 description: This course shows you how to configure the Mixed Reality Toolkit (MRTK) profiles.
-author: jessemcculloch
+author: vtieto
 ms.author: jemccull
 ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, spatial awareness
 ms.localizationpriority: high
+ROBOTS: NOINDEX
 ---
 
 # 3. Configuring the MRTK profiles

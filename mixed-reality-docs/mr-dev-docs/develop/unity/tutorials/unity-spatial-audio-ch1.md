@@ -1,11 +1,12 @@
 ---
 title: Spatial audio tutorials - 1. Adding spatial audio to your project
 description: Add the Microsoft Spatializer plugin to your Unity project to access HoloLens 2 HRTF hardware offload.
-author: kegodin
+author: vtieto
 ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens2, spatial audio, MRTK, mixed reality toolkit, UWP, Windows 10, HRTF, head-related transfer function, reverb, Microsoft Spatializer
+ROBOTS: NOINDEX
 ---
 
 # 1. Adding Spatial audio to your Unity project

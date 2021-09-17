@@ -1,12 +1,13 @@
 ---
 title: Using speech commands
 description: This course shows you how to setup, create, and use speech commands in your mixed reality apps with the Mixed Reality Toolkit (MRTK).
-author: jessemcculloch
+author: vtieto
 ms.author: jemccull
 ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, UWP, speech commands, voice input
 ms.localizationpriority: high
+ROBOTS: NOINDEX
 ---
 
 # 9. Using speech commands

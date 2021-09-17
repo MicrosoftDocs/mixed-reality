@@ -1,12 +1,13 @@
 ---
 title: Integrating Azure storage
 description: Complete this course to learn how to implement Azure Table Storage and Azure Blob Storage within a HoloLens 2 application.
-author: jessemcculloch
+author: vtieto
 ms.author: jemccull
 ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, hololens 2, azure storage, azure cloud services, Windows 10
 ms.localizationpriority: high
+ROBOTS: NOINDEX
 ---
 
 # 2. Integrating Azure storage

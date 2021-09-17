@@ -1,12 +1,13 @@
 ---
 title: Introduction to the MRTK tutorials
 description: This course shows you how to use the Mixed Reality Toolkit (MRTK) to create a mixed reality application from scratch.
-author: jessemcculloch
+author: vtieto
 ms.author: jemccull
 ms.date: 02/05/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, MRTK, mixed reality toolkit, solvers, eye-tracking, voice commands
 ms.localizationpriority: high
+ROBOTS: NOINDEX
 ---
 
 # 1. Introduction to the MRTK tutorials
