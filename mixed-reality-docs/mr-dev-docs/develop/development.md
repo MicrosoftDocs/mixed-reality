@@ -31,7 +31,7 @@ Start at the very beginning with an overview of what Mixed Reality is and how it
 If you're already familiar with the basic concepts and want to get started building something, check out our Mixed Reality Toolkit (MRTK) tutorial series. You'll build a Mixed Reality experience where the user can explore a hologram modeled after NASA's Mars Curiosity Rover. This will give you a firm grasp of MRTK and show you how it can speed up your development process.
 
 > [!div class="nextstepaction"]
-> [MRTK tutorials](unity/tutorials/mr-learning-base-01.md)
+> [MRTK tutorials](______) <!-- Need a link to the Learning path. -->
 
 ## Choose your own development path
 Are you an intermediate-to-advanced developer with some previous experience in Mixed, Augmented, or Virtual Reality? We'll help you choose the proper tools and get set up, if needed, and then we'll direct you to our curated development paths across Unity, Unreal, Native, or Web.
