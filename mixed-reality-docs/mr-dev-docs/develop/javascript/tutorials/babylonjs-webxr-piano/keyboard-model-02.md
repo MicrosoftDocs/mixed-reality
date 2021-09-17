@@ -610,4 +610,4 @@ In this section, let's expand the usage of the key-creation functions to generat
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Next steps: [Play the 3D piano](keyboard-interaction-03.md)
+> [Next tutorial: Play the 3D piano](keyboard-interaction-03.md)
