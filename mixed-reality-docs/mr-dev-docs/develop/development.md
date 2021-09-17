@@ -28,7 +28,7 @@ Start at the very beginning with an overview of what Mixed Reality is and how it
 
 ### Start building a Mixed Reality Experience
 
-If you're already comfortable with the basics and want to get started building something, check out our Mixed Reality Toolkit (MRTK) tutorial series. You'll build a Mixed Reality experience where the user can explore a hologram modeled after NASA's Mars Curiosity Rover. This will give you a firm grasp of MRTK and show you how it can speed up your development process.
+If you're already familiar with the basic concepts and want to get started building something, check out our Mixed Reality Toolkit (MRTK) tutorial series. You'll build a Mixed Reality experience where the user can explore a hologram modeled after NASA's Mars Curiosity Rover. This will give you a firm grasp of MRTK and show you how it can speed up your development process.
 
 > [!div class="nextstepaction"]
 > [MRTK tutorials](unity/tutorials/mr-learning-base-01.md)
