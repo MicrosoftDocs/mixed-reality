@@ -10,7 +10,7 @@
     href: mixed-reality-cloud-services.md
   - name: Samples and feature apps
     href: features-and-samples.md
-- name: General concepts
+- name: Developer concepts
   items:
   - name: Use anchors to share holograms
     href: platform-capabilities-and-apis/shared-spatial-anchors-in-directx.md
