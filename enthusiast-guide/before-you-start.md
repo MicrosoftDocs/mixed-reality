@@ -3,7 +3,7 @@ title: Before you start
 description: Learn how to make sure your PC is compatible and ready for a variety of Windows Mixed Reality application experiences.
 author: qianw211
 ms.author: v-qianwen
-ms.date: 09/15/2020
+ms.date: 09/21/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, compatible, compatibility, get started, setup, PC, system requirements
 appliesto:
