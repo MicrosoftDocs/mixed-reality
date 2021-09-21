@@ -7,7 +7,7 @@ ms.date: 09/16/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, pre-sale, research, purchase, before you buy
 appliesto:
-    - Windows 10
+    - Windows 10 and Windows 11
 ---
 
 
@@ -45,7 +45,7 @@ Learn more about Mixed Reality here: <https://docs.microsoft.com/windows/mixed-r
 
 ### What is the difference between Windows Mixed Reality and other VR headsets
 
-**Quick Answer:** Windows Mixed Reality headsets feature inside-out tracking (tracking cameras are in the headset) and plug-and-play setup with Windows 10.
+**Quick Answer:** Windows Mixed Reality headsets feature inside-out tracking (tracking cameras are in the headset) and plug-and-play setup with Windows 10 and Windows 11.
 
 **More detail**: Windows Mixed Reality offers several features, including easy setup (no need for external sensors to track you and your controllers), your choice of headsets to meet your comfort and price-point, headsets that have competitive resolutions, and finally a unique user experience that features a spatial interface, which allows you to use thousands of apps from the Microsoft Store.
 
@@ -295,7 +295,7 @@ Technical details listed above are referenced from manufacturer specifications a
 
 ### What Windows version supports Windows Mixed Reality?
 
-**Quick Answer:** You must have Windows 10 Fall Creators Update (version 1709) or greater installed. Download and run [Mixed Reality Portal](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) to see if your PC is WMR ready.
+**Quick Answer:** You must have Windows 10 Fall Creators Update (version 1709) or greater, or Windows 11 installed. Download and run [Mixed Reality Portal](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) to see if your PC is WMR ready.
 
 ### Does the Windows Mixed Reality platform support Rift and Vive hardware?
 
@@ -376,7 +376,7 @@ Technical details listed above are referenced from manufacturer specifications a
 
 ### Can I play my Xbox One games in Windows Mixed Reality?
 
-**Quick Answer:** You can play all your favorite Xbox One games in Windows Mixed Reality using the streaming feature of the Xbox app for Windows 10. You can resize the app inside the Windows Mixed Reality home to fill the wall. To learn how to set up Xbox One game streaming, you can check out our instructions here: <http://support.xbox.com/en-US/games/game-setup/how-to-use-game-streaming>
+**Quick Answer:** You can play all your favorite Xbox One games in Windows Mixed Reality using the streaming feature of the Xbox app for Windows 10 and Windows 11. You can resize the app inside the Windows Mixed Reality home to fill the wall. To learn how to set up Xbox One game streaming, you can check out our instructions here: <http://support.xbox.com/en-US/games/game-setup/how-to-use-game-streaming>
 
 ## SteamVR
 
