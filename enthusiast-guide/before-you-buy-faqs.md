@@ -1,8 +1,8 @@
 ---
 title: Before you buy - FAQs
 description: Answers to frequently asked questions potential buyers may have before purchasing a Windows Mixed reality headset and compatible PC.
-author: hferrone
-ms.author: v-hferrone
+author: qianw211    
+ms.author: v-qianwen
 ms.date: 09/16/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, pre-sale, research, purchase, before you buy
@@ -41,7 +41,7 @@ appliesto:
 
 **Quick Answer:** Mixed Reality refers to the full spectrum of spatial computing, from augmented reality and holograms to virtual reality. Windows Mixed Reality platform supports devices across Virtual Reality (VR) and Augmented Reality (AR). We currently support two device types with similar technology on that spectrum: HoloLens (AR) and Windows Mixed Reality (VR) headsets with motion controllers.
 
-Learn more about Mixed Reality here: <https://docs.microsoft.com/windows/mixed-reality/mixed-reality>
+Learn more about Mixed Reality here: </windows/mixed-reality/mixed-reality>
 
 ### What is the difference between Windows Mixed Reality and other VR headsets
 
