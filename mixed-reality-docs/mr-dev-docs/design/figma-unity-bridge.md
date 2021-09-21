@@ -33,9 +33,9 @@ See **[MRTK Figma Toolkit](figma-toolkit.md)** page to learn about Figma Toolkit
 
 Figma Unity Bridge can be installed through [Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool). Download and run Mixed Reality Feature Tool.
 
-In **Discover features** page, under **Mixed Reality Toolkit** section, select **MRTK Figma Unity Bridge**. Follow the steps to finish MR Feature Tool and come back to your Unity project. Unity will import the package for MRTK Figma Bridge.
+In **Discover features** page, under **Mixed Reality Toolkit** section, select **MRTK Figma Bridge**. Follow the steps to finish MR Feature Tool and come back to your Unity project. Unity will import the package for MRTK Figma Bridge.
 
-<img src="images/FigmaToolkit/FigmaBridge_FeatureTools.png" width="500px" alt="Figma Bridge - Menu"><br>
+<img src="images/FigmaToolkit/FigmaBridge_FeatureTools.png" width="500px" alt="Figma Bridge - MR Feature Tool"><br>
 
 ### 2. Open Figma Bridge window
 
