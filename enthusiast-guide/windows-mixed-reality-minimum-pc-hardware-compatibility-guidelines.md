@@ -46,17 +46,11 @@ After running the app, you'll get one of the following messages:
 You'll then get an analysis of your PC against the required hardware, drivers, and operating system.
 ![Screenshot of Windows Mixed Reality PC Check](images/screenshot-mr-pc-check.jpg)
 
-<table>
-<tr>
-<th>Icon</th><th>What it means</th>
-</tr><tr>
-<td> <img alt="Succeeded" width="30" height="30" src="images/glyph-succeeded.png" /></td><td style="vertical-align: middle">Your PC passes the required item.</td>
-</tr><tr>
-<td> <img alt="Warning" width="30" height="30" src="images/glyph-warning.png" /></td><td style="vertical-align: middle">There may be issues with your PC for the given requirement. If you come across issues, you may need to troubleshoot or upgrade your PC.</td>
-</tr><tr>
-<td> <img alt="Error" width="30" height="30" src="images/glyph-error.png" /></td><td style="vertical-align: middle">Your PC doesn't meet the requirements for the specified item.</td>
-</tr>
-</table>
+| Icon | What it means |
+| --- | --- |
+| <img alt="Succeeded" width="30" height="30" src="images/glyph-succeeded.png" /> | Your PC passes the required item. |
+| <img alt="Warning" width="30" height="30" src="images/glyph-warning.png" /> | There may be issues with your PC for the given requirement. If you come across issues, you may need to troubleshoot or upgrade your PC. 
+| <img alt="Error" width="30" height="30" src="images/glyph-error.png" /> | Your PC doesn't meet the requirements for the specified item. |
 
  [Get help with Mixed Reality Portal results](get-help-with-pc-compatibility.md)
 
@@ -69,15 +63,13 @@ You'll then get an analysis of your PC against the required hardware, drivers, a
 
 Because of the higher resolution, the following requirements apply to the HP Reverb G1, G2 and Omnicept product lines to ensure optimal 90 Hz, full resolution experience:
 
-<ul>
-<li> Intel Core i5, i7, Intel Xeon E3-1240 v5, equivalent or better. AMD Ryzen 5 equivalent or better. </li>
-<li> NVIDIA GeForce GTX 1080, AMD Radeon RX 5700, equivalent or better </li>
-<li> Memory: 8 GB RAM or more </li>
-<li> 1x Display Port 1.3 </li>
-<li> 1x USB 3.0 Type-C with power delivery (or included power adapter)</li>
-<li> Windows 10 May 2019 update or later </li>
-</ul>
-
+- Intel Core i5, i7, Intel Xeon E3-1240 v5, equivalent or better. AMD Ryzen 5 equivalent or better.  
+- NVIDIA GeForce GTX 1080, AMD Radeon RX 5700, equivalent or better  
+- Memory: 8 GB RAM or more  
+- 1x Display Port 1.3  
+- 1x USB 3.0 Type-C with power delivery (or included power adapter) 
+- Windows 10 May 2019 update or later  
+ 
 **All Other WMR Compatible Headsets** <br>
 For all other HMDs, refer to the following requirements:
 
