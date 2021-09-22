@@ -1,13 +1,13 @@
 ---
 title: Get help with PC compatibility 
 description: Keep up to date with resources for solving PC compatibility issues when working with Windows Mixed Reality applications and devices.
-author: hferrone
-ms.author: v-hferrone
-ms.date: 01/07/2021
+author: qianw211
+ms.author: v-qianwen
+ms.date: 9/22/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Feedback, Feedback Hub, bugs
 appliesto:
-    - Windows 10
+    - Windows 10 and Windows 11
 ---
 
 # Get help with PC compatibility in Windows Mixed Reality
@@ -162,6 +162,10 @@ Windows Mixed Reality works on [Windows 10 Home](https://www.microsoft.com/p/win
 ### This PC isn't running the latest version of Windows 10
 
 Windows Mixed Reality requires the Windows 10 Fall Creators Update. [Update your PC](https://support.microsoft.com/help/4028685) and try again.
+
+### This PC isn't running the latest version of Windows 11
+
+Windows Mixed Reality requires the Windows 11 latest release. <mark> [Update your PC](https://support.microsoft.com/help/4028685) and try again. </mark>
 
 ### This PC has no USB 3.0 port
 

@@ -1,13 +1,13 @@
 ---
 title: Windows Mixed Reality PC compatibility guidelines
 description: Overview chart outlining the minimum PC system requirements for compatibility with Windows Mixed Reality.
-author: hferrone
-ms.author: v-hferrone
-ms.date: 09/16/2020
+author: qianw211
+ms.author: v-qianwen
+ms.date: 09/22/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Ultra, compatible, compatibility, system requirements, PC
 appliesto:
-    - Windows 10
+    - Windows 10 and Windows 11
 ---
 
 # Windows Mixed Reality minimum PC hardware compatibility guidelines
@@ -16,7 +16,7 @@ appliesto:
 
 ## Features and experiences
 
-Windows 10 powers Windows Mixed Reality on variety of headsets across a diverse set of PC hardware.  The power of your PC will determine what experiences you can have.
+Windows 10 and Windows 11 powers Windows Mixed Reality on variety of headsets across a diverse set of PC hardware.  The power of your PC will determine what experiences you can have.
 With higher end PCs, you get some extra capabilities and features:
 
 * Crisper visuals and a higher refresh rate.
@@ -81,69 +81,20 @@ Because of the higher resolution, the following requirements apply to the HP Rev
 **All Other WMR Compatible Headsets** <br>
 For all other HMDs, refer to the following requirements:
 
-<table>
-<tr>
-    <th style="width:10%"></th><th style="vertical-align: middle; text-align: center; width:30%">Windows Mixed Reality 90Hz PCs</th>
-    <th style="vertical-align: middle; text-align: center; width:30%">Windows Mixed Reality 60Hz PCs</th>
-</tr><tr>
-    <td style="vertical-align: middle">Operating System</td><td colspan="2" style="vertical-align: middle; text-align: center;">Windows 10 Fall Creators Update (RS3) or later - Home, Pro, Business, Education.<br/>    (<b>Note</b>: Not supported on N versions or Windows 10 Pro in S Mode)</td>
-</tr><tr>
-    <td style="vertical-align: middle">Processor</td>
-    <td style="vertical-align: middle; text-align: center;">Intel Core i5 4590 (4th generation), quad-core (or better) <br>AMD Ryzen 5 1400 3.4Ghz (desktop), quad-core (or better)</td>
-    <td style="vertical-align: middle; text-align: center;">Intel Core i5 7200U (7th generation mobile), dual-core with Intel Hyper-Threading Technology enabled (or better) <br>AMD Ryzen 5 1400 3.4Ghz (desktop), quad-core (or better)</td>
-</tr><tr>
-    <td style="vertical-align: middle">RAM</td>
-    <td style="vertical-align: middle; text-align: center;">8 GB DDR3 (or better)</td>
-    <td style="vertical-align: middle; text-align: center;">8 GB DDR3 dual channel (or better)</td>
-</tr><tr>
-    <td style="vertical-align: middle">Free disk space</td>
-    <td style="vertical-align: middle; text-align: center;">At least 10 GB</td>
-    <td style="vertical-align: middle; text-align: center;">At least 10 GB</td>
-</tr><tr>
-    <td style="vertical-align: middle">Graphics Card</td>
-    <td style="vertical-align: middle; text-align: middle;">
-            <ul>
-            <li>NVIDIA GTX 1060 (or greater) DX12-capable discrete GPU</li>
-            <li>AMD RX 470/570 (or greater) DX12-capable discrete GPU </li>
-            </ul>
-            <b>Note:</b> GPU must be hosted in a PCIe 3.0 x4+ Link slot
-    </td>
-    <td style="vertical-align: middle; text-align: middle;">
-            <li>Integrated Intel HD Graphics 620 (or greater) DX12-capable integrated GPU <a href="https://en.wikipedia.org/wiki/List_of_Intel_graphics_processing_units">(check if your model is greater)</a></li>
-        <li>NVIDIA MX150 (or greater) discrete GPU</li>
-        <li>Nvidia GeForce GTX 1050 discrete GPU</li>
-        <li>Nvidia 965M discrete GPU</li>
-        <li>AMD Radeon RX 460/560</li>
-        </ul>
-        <b>Note:</b> Older Intel GPUs such as HD Graphics 4xx, 5xx, 2xxx, 3xxx, 4xxx, 5xxx, and 6xxx aren't supported.
-    </td>
-</tr><tr>
-    <td style="vertical-align: middle">Graphics Driver</td>
-    <td colspan="3" td style="vertical-align: middle; text-align: center;">Windows Display Driver Model (WDDM) 2.2</td>
-</tr><tr>
-    <td style="vertical-align: middle"><a href="Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md">Graphics display port</a></td>
-    <td style="vertical-align: middle; text-align: center;">HDMI 2.0 or DisplayPort 1.2</td>
-    <td style="vertical-align: middle; text-align: center;">HDMI 1.4 or DisplayPort 1.2</td>
-</tr><tr>
-    <td style="vertical-align: middle">Display</td>
-    <td colspan="3" style="vertical-align: middle; text-align: center;">Connected external or integrated VGA (800x600) display (or better)</td>
-</tr><tr>
-    <td style="vertical-align: middle"><a href="Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md">USB connectivity</a></td>
-    <td colspan="2" style="vertical-align: middle; text-align: center;">USB 3.0 </td>
-</tr><tr>
-    <td style="vertical-align: middle">Bluetooth connectivity (for <a href="controllers-in-wmr.md">motion controllers</a>)</td>
-    <td colspan="3" style="vertical-align: middle; text-align: center;">Bluetooth 4.0</td>
-</tr><tr>
-    <td style="vertical-align: middle">Expected headset framerate</td>
-    <td style="vertical-align: middle; text-align: center;">90 Hz</td>
-    <td style="vertical-align: middle; text-align: center;">60 Hz</td>
-</tr>
-<tr>
-    <td style="vertical-align: middle">Power</td>
-    <td style="vertical-align: middle; text-align: center;">USB 3.0 ports</td>
-    <td style="vertical-align: middle; text-align: center;">USB 3.0 ports</td>
-</tr>
-</table>
+| | Windows Mixed Reality 90Hz PCs | Windows Mixed Reality 60Hz PCs |
+| --- | --- | --- |
+| Operating System | Windows 10 Fall Creators Update (RS3) or later - Home, Pro, Business, Education. <br/>    (<b>Note</b>: Not supported on N versions or Windows 10 Pro in S Mode) |
+| Processor | Intel Core i5 4590 (4th generation), quad-core (or better) <br> AMD Ryzen 5 1400 3.4Ghz (desktop), quad-core (or better) | Intel Core i5 7200U (7th generation mobile), dual-core with Intel Hyper-Threading Technology enabled (or better) <br> AMD Ryzen 5 1400 3.4Ghz (desktop), quad-core (or better) |
+| RAM | 8 GB DDR3 (or better) | 8 GB DDR3 dual channel (or better) |
+| Free disk space | At least 10 GB | At least 10 GB |
+| Graphics Card| <ul> <li>NVIDIA GTX 1060 (or greater) DX12-capable discrete GPU </li> <li>AMD RX 470/570 (or greater) DX12-capable discrete GPU </li> </ul> <br> <b>Note:</b> GPU must be hosted in a PCIe 3.0 x4+ Link slot |  <ul>  <li>Integrated Intel HD Graphics 620 (or greater) DX12-capable integrated GPU <a href="https://en.wikipedia.org/wiki/List_of_Intel_graphics_processing_units">(check if your model is greater)</a></li> <li>NVIDIA MX150 (or greater) discrete GPU</li> <li>Nvidia GeForce GTX 1050 discrete GPU</li> <li>Nvidia 965M discrete GPU</li> <li>AMD Radeon RX 460/560</li> </ul> <b>Note:</b> Older Intel GPUs such as HD Graphics 4xx, 5xx, 2xxx, 3xxx, 4xxx, 5xxx, and 6xxx aren't supported. |
+| Graphics Driver | Windows Display Driver Model (WDDM) 2.2 |  |
+| [Graphics display port](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) | HDMI 2.0 or DisplayPort 1.2 | HDMI 1.4 or DisplayPort 1.2 |
+| Display | Connected external or integrated VGA (800x600) display (or better) | 
+| [USB connectivity](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) | USB 3.0 | |
+| Bluetooth connectivity (for [motion controllers](controllers-in-wmr.md) | Bluetooth 4.0 | |
+| Expected headset framerate | 90 Hz | 60 Hz |
+| Power | USB 3.0 ports | USB 3.0 ports |
 
 **Additional information:**
 
