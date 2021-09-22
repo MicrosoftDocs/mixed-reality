@@ -104,11 +104,9 @@ Developing for mixed reality comes with performance checkpoints that depend on t
 | Camera access | 4.23 | ✔️ |
 | QR codes | 4.23 | ✔️ |
 | Spatial audio | 4.23 | ✔️ |
-| Spectator Screen support for streaming | 4.24 |
 | Planar LSR over streaming | 4.24 |
 | [Sample apps](../features-and-samples.md) | 4.24 | ✔️ |
 | Mobile multi-View: Performance hits 60 fps | 4.25 | ✔️ |
-| 3rd camera render | 4.25 | ✔️ |
 | Streaming from a packaged desktop app | 4.25.1 | ✔️ |
 | Azure Spatial Anchors for HoloLens 2 | 4.25 | ✔️ |
 | Mixed Reality UX Tools support | 4.25 | ✔️ |
