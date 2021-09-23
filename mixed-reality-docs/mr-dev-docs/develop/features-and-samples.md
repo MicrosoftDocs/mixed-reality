@@ -3,7 +3,7 @@ title: Mixed reality feature samples and apps
 description: Stay up to date with all the available Microsoft sample apps and mixed reality features samples for HoloLens.
 author: qianw211
 ms.author: v-qianwen
-ms.date: 9/20/2021
+ms.date: 9/23/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, learn, samples, MRTK, research mode, HoloLens 2, qr codes, WebRTC, mixed reality capture, holographic remoting, UX Tools
 ms.localizationpriority: high
