@@ -24,7 +24,7 @@ Every development journey starts with a look back at what other developers have 
 
 ## Feature samples
 
-For each of the developer scenarios listed below, there are feature samples that correspond to specific implementations that are covered in our documentation and covers a range of development platforms and hardware devices.
+For each of the developer scenarios listed below, there are feature samples that correspond to specific implementations that are covered in our documentation and cover a range of development platforms and hardware devices.
 
 | Scenario | Feature sample | Engine | Description |
 | --- | --- | ---- | --- |
@@ -36,7 +36,7 @@ For each of the developer scenarios listed below, there are feature samples that
 | | [WebRTC sample](#webrtc) | Unity C# | Integrate peer-to-peer audio, video, and data real-time communication into a mixed reality application. |
 | | [Azure Spatial Anchors samples](https://github.com/Azure/azure-spatial-anchors-samples) |  | Build spatially aware mixed reality applications with the essential capabilities of [Azure Spatial Anchors](/azure/spatial-anchors/overview). |
 | [**Spatial interaction**](#spatial-interaction---basic-hologram-sample) | [Basic hologram sample](#spatial-interaction---basic-hologram-sample) | Windows 10 C++ | Render a spinning cube in Windows Mixed Reality. |
-|  [**Scene/Object understanding**](#scene-understanding) | [Scene understanding samples](#scene-understanding) | Unity C# | Help design environmentally aware mixed reality applications. |
+|  [**Scene/Object understanding**](#scene-understanding) | [Scene understanding samples](#scene-understanding) | Unity C# | Help design environmentally-aware mixed reality applications. |
 |    | [Azure Object Anchors samples](https://github.com/Azure/azure-object-anchors) | Unity C# | Detect an object in the physical world using a 3D model and estimate its 6DoF pose with [Azure Object Anchors](/azure/object-anchors/overview). |
 | [**Contextual data overlays**](#contextual-data-overlays) | [QR Codes](#qr-codes) | Unity C# | Detect QR Codes in the environment. |
 | | [Poster tracker sample](#poster-tracker-sample)  | Unity C# | Align a hologram with a real world object. |
@@ -44,12 +44,12 @@ For each of the developer scenarios listed below, there are feature samples that
 | [**Capturing camera data**](#camera-captures) | [Mixed reality capture sample](#holographic-mixed-reality-capture) | Windows 10 C++ | Capture the first-person experience of mixing real and digital worlds as a photo or video. |
 | | [Spectator view sample](#spectator-view) | Unity C# | Capture and render holograms at the correct size and orientation. |
 | | [Research Mode samples](#research-mode) | Windows 10 C++ | Access to key censors on a HoloLens device for research applications. |
-| [**Holographic Remoting**](#holographic-remoting) | [Holographic Remoting player](#holographic-remoting) |  Windows 10 C++ | Stream holographic content from a PC to your Microsoft HoloLens in real time, by using a Wi-Fi connection. |
+| [**Holographic Remoting**](#holographic-remoting) | [Holographic Remoting player](#holographic-remoting) |  Windows 10 C++ | Stream holographic content from a PC to your Microsoft HoloLens in real time by using a Wi-Fi connection. |
 | | [Azure Remote Rendering samples](/azure/remote-rendering/samples/sample-model) | Unity C# | Test the Azure Remote Rendering service by using the resources for sample data listed here. |
 | **Task management and guidance** | [Dynamics 365 Remote Assist](/dynamics365/mixed-reality/remote-assist/ra-overview) | | Collaborate more efficiently by working together from different locations with Dynamics 365 Remote Assist on HoloLens, HoloLens 2, Android, or iOS devices. |
 | | [Dynamics 365 Guides](/dynamics365/mixed-reality/guides/) | | Help operators learn during the flow of work by providing holographic instructions when and where they're needed. |
-| **World Locking holograms** | [World locked physics sample](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/Samples/WorldLockedPhysicsSample.html) | Unity C# | Explore a few virtual physics experiences that are enabled by World Locking Tools' world locked coordinate system. |
-| | [Space pin sample](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/Samples/SpacePin.html) | Unity C# | Move closer to the inner workings of a real world application that needs to align a large object or objects with real world features. The Space Pin sample offers a simplified and more focused view of the Space Pin feature.  |
+| **World Locking holograms** | [World locked physics sample](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/Samples/WorldLockedPhysicsSample.html) | Unity C# | Explore a few virtual physics experiences that are enabled by World Locking Tools' world-locked coordinate system. |
+| | [Space pin sample](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/Samples/SpacePin.html) | Unity C# | Move closer to the inner workings of a real-world application that needs to align a large object or objects with real-world features. The Space Pin sample offers a simplified and more focused view of the Space Pin feature.  |
 | | [Ray pins example](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/Samples/RayPins.html) | Unity C# | Demonstrate setting up Space Pins by manually manipulating marker objects into position using MRTK affordances. |
 | | [World Locking Tools with Azure Spatial Anchors sample](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/Samples/WLT_ASA_Sample.html) | Unity C# | Provide a stable coordinate system that can be persisted across sessions and shared across devices in your application.  This is made possible when combining World Locking Tools for Unity (WLT) with Azure Spatial Anchors (ASA). |
 
@@ -63,9 +63,9 @@ For developers targeting Unity 2020 to build HoloLens 2 or Mixed Reality applica
 | --- | --- | --- | --- |
 | [Using the OpenXR plugin](./unity/xr-project-setup.md) | [Mixed Reality OpenXR with Unity samples](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) | Unity C# | These sample projects showcase how to build Unity applications for HoloLens 2 or Mixed Reality headsets using the Mixed Reality OpenXR plugin. |
 | See [sample readme](https://github.com/jessemcculloch/UnityOpenXRMRTKBase#unityopenxrmrtkbase) | [OpenXR MRTK Base Unity project](https://github.com/microsoft/UnityOpenXRMRTKBase) | Unity C# | This repo contains a Unity project that is set up with the Microsoft Mixed Reality Toolkit Foundations and Standard Assets packages and the Microsoft OpenXR Plugin package. |
-| [What is MRTK](/windows/mixed-reality/mrtk-unity/) | [Using Unity 2020.3 and MRTK 2.7.2](https://github.com/microsoft/MixedRealityToolkit-Unity#example-scenes) | Unity C# | MRTK-Unity is a Microsoft-driven project that provides a set of components and features, used to accelerate cross-platform MR app development in Unity. |
+| [What is MRTK](/windows/mixed-reality/mrtk-unity/) | [Using Unity 2020.3 and MRTK 2.7.2](https://github.com/microsoft/MixedRealityToolkit-Unity#example-scenes) | Unity C# | MRTK-Unity is a Microsoft-driven project that provides a set of components and features that are used to accelerate cross-platform MR app development in Unity. |
 | See [sample readme](https://github.com/maluoi/openxr-explorer#openxr-explorer) | [OpenXR Explorer](https://github.com/maluoi/openxr-explorer#msdynttrid=udu2MjGd1z293SGMmgAul0BalrUKvy4iwBnBrc3lEn4) | C++, Windows, Linux, OpenXR | OpenXR Explorer is a handy debug tool for OpenXR developers. It allows for easy switching between OpenXR runtimes, shows lists of the runtime's supported extensions, and allows for inspection of common properties and enumerations, with direct links to relevant parts of the OpenXR specification! |
-| [What is OpenXR](../develop/native/openxr.md#what-is-openxr) | [OpenXR Samples for Mixed Reality Developers](https://github.com/microsoft/OpenXR-MixedReality) | C++ | These OpenXR samples use C++17 and D3D11. The same source code works across UWP applications running on HoloLens 2 and Win32 applications running on Windows Desktop with Windows Mixed Reality immersive headsets. |
+| [What is OpenXR](../develop/native/openxr.md#what-is-openxr) | [OpenXR Samples for Mixed Reality Developers](https://github.com/microsoft/OpenXR-MixedReality) | C++ | These OpenXR samples use C++17 and Direct3D 11. The same source code works across UWP applications running on HoloLens 2 and Win32 applications running on Windows Desktop with Windows Mixed Reality immersive headsets. |
 
 ### Collaboration in mixed reality
 
@@ -118,7 +118,7 @@ HoloLens 2 can detect QR codes in the environment around the headset, establishi
 
 #### Poster tracker sample
 
-It is often helpful to be able to align a hologram to a real world object, or align multiple HoloLens devices to a common set of world coordinates, so everyone sees the same holograms in the same location. For instance, in your Unity scene, you can add a "poster" where you want to anchor your scene (perhaps a game board), and then add holograms on or around it. Then you can print the poster, lay it on a table and run the calibration/alignment tool, which will move the holographic version of the poster to align with the physical version of the poster. Thus moving all of the linked holograms to the correct alignment.
+It is often helpful to be able to align a hologram to a real-world object, or align multiple HoloLens devices to a common set of world coordinates, so that everyone sees the same holograms in the same location. For instance, in your Unity scene, you can add a "poster" where you want to anchor your scene (perhaps a game board), and then add holograms on or around it. Then you can print the poster, lay it on a table, and run the calibration/alignment tool, which will move the holographic version of the poster so that it aligns with the physical version of the poster. This moves all of the linked holograms to the correct alignment.
 
 | Reference article | Sample |
 | --- | --- |
@@ -126,7 +126,7 @@ It is often helpful to be able to align a hologram to a real world object, or al
 
 #### Build mixed reality digital twins
 
-In this sample, you'll Learn how to create a mixed reality HoloLens 2 application using Azure Digital Twins and Unity, a real-time 3D platform. 
+In this sample, you'll learn how to create a mixed reality HoloLens 2 application using Azure Digital Twins and Unity, a real-time 3D platform. 
 
 | Reference article | Sample |
 | --- | --- |
@@ -139,7 +139,7 @@ Unstructured environment sensor data that your Mixed Reality device captures are
 
 #### Holographic Mixed Reality Capture
 
-Mixed reality capture (MRC) captures the first-person experience of mixing real and digital worlds as a photo or video, sharing what you see with others in real time.
+Mixed reality capture (MRC) captures the first-person experience of the combined real and digital worlds as a photo or video and shares what you see with others in real time.
 
 | Reference article | Sample |
 | --- | --- |
@@ -165,7 +165,7 @@ Research Mode was introduced in the first-generation HoloLens to give access to 
 
 ### Holographic Remoting
 
-The Holographic Remoting Player is a companion app that connects to PC apps and games that support Holographic Remoting. Holographic Remoting streams holographic content from a PC to your Microsoft HoloLens in real time, using a Wi-Fi connection, and is supported on HoloLens (first gen) and HoloLens 2.
+The Holographic Remoting Player is a companion app that connects to PC apps and games that support Holographic Remoting. Holographic Remoting streams holographic content from a PC to your Microsoft HoloLens in real time using a Wi-Fi connection, and is supported on HoloLens (first gen) and HoloLens 2.
 
 
 | Reference article | Sample |

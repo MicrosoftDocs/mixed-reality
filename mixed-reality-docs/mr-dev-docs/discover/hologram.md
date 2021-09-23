@@ -77,7 +77,7 @@ Some holograms follow the user instead. They position themselves based on the us
 
 **Place holograms in the optimal zone - between 1.25 m and 5 m**
 
-2 meters are the most optimal viewing distance. The experience will start to degrade as you get closer than 1 meter. At distances less than 1 meter, holograms that regularly move in depth are more likely to be problematic than stationary holograms. Consider gracefully clipping or fading out your content when it gets too close, so you don't jar the user into an unpleasant viewing experience.
+Two meters is the most optimal viewing distance. The experience will start to degrade as you get closer than one meter. At distances less than one meter, holograms that regularly move in depth are more likely to be problematic than stationary holograms. Consider gracefully clipping or fading out your content when it gets too close so you don't jar the user into an unpleasant viewing experience.
 
 ![Optimal distance for placing holograms from the user.](images/distanceguiderendering-950px.png)
 
