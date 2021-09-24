@@ -3,7 +3,7 @@ title: Get help with PC compatibility
 description: Keep up to date with resources for solving PC compatibility issues when working with Windows Mixed Reality applications and devices.
 author: qianw211
 ms.author: v-qianwen
-ms.date: 9/22/2021
+ms.date: 9/24/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Feedback, Feedback Hub, bugs
 appliesto:
@@ -158,7 +158,7 @@ Windows Mixed Reality requires 10 GB of free disk space for setup and best perfo
 
 ### This PC is running an edition of Windows that doesn't support Windows Mixed Reality
 
-Windows Mixed Reality works on [Windows 10 Home](https://www.microsoft.com/p/windows-10-home/d76qx4bznwk4?activetab=pivot:overviewtab), [Windows 10 Pro](https://www.microsoft.com/p/windows-10-pro/DF77X4D43RKT?icid=W10Pro_upsell_071817&activetab=pivot:overviewtab), and Windows 11. You'll need to install one of those editions to use Windows Mixed Reality.
+Windows Mixed Reality works on [Windows 10 Home](https://www.microsoft.com/p/windows-10-home/d76qx4bznwk4?activetab=pivot:overviewtab), [Windows 10 Pro](https://www.microsoft.com/p/windows-10-pro/DF77X4D43RKT?icid=W10Pro_upsell_071817&activetab=pivot:overviewtab), and [Windows 11](https://www.microsoft.com/software-download/windows11). You'll need to install one of those editions to use Windows Mixed Reality.
 
 ### This PC isn't running the latest version of Windows 10
 
@@ -166,7 +166,7 @@ Windows Mixed Reality requires the Windows 10 Fall Creators Update. [Update your
 
 ### This PC isn't running the latest version of Windows 11
 
-Windows Mixed Reality requires the Windows 11 latest release. <mark> [Update your PC](https://support.microsoft.com/help/4028685) and try again. </mark>
+Windows Mixed Reality requires the Windows 11 latest release. [Update your PC](https://www.microsoft.com/software-download/windows11) and try again.
 
 ### This PC has no USB 3.0 port
 

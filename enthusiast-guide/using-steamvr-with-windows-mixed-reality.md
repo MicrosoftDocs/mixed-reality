@@ -1,6 +1,9 @@
 ---
 title: Using SteamVR with Windows Mixed Reality
 description: Learn how to setup and play SteamVR games on Windows Mixed Reality headsets and controllers with compatible PCs.
+author: qianw211
+ms.author: v-qianwen
+ms.date: 9/23/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, games, SteamVR, Steam, system requirements
 ---
@@ -106,7 +109,7 @@ To join:
 
 ### Windows Insider Program
 
-Windows Mixed Reality is a part of Windows 10.  Many fixes and features that affect SteamVR users come with the Windows OS.  If you want to try the latest Windows 10 preview builds, we encourage you to join the [Windows Insider Program](https://insider.windows.com).
+Windows Mixed Reality is a part of Windows 10 and Windows 11.  Many fixes and features that affect SteamVR users come with the Windows OS.  If you want to try the latest Windows 10 and Windows 11 preview builds, we encourage you to join the [Windows Insider Program](https://insider.windows.com).
 
 ## Enabling motion reprojection for SteamVR Apps
 

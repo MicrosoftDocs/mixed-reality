@@ -1,13 +1,13 @@
 ---
 title: Headset connectivity FAQs
 description: Headset connectivity Windows Mixed Reality headset connectivity troubleshooting that goes beyond our standard consumer support documentation.
-author: hferrone
-ms.author: v-hferrone
-ms.date: 09/15/2020
+author: qianwen
+ms.author: v-qianwen
+ms.date: 09/24/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support, Headset
 appliesto:
-    - Windows 10
+    - Windows 10 and Windows 11
 ---
 
 # Headset connectivity FAQs
@@ -89,7 +89,7 @@ Make sure you are on the 10.0.19041.2034 driver or newer.
 
 ## The headset driver did not install automatically when I plugged in the headset
 
-On new PCs, or PCs with a newly installed copy of Windows 10, the headset driver could be queued behind other Windows updates and may not install immediately.
+On new PCs, or PCs with a newly installed copy of Windows 10 or Windows 11, the headset driver could be queued behind other Windows updates and may not install immediately.
 
 1. Go to **Start > Device Manager** and look under "Mixed Reality devices" for your headset. The device status should indicate that "The device is working properly".
 2. Right-click on the device and select "Update driver".
