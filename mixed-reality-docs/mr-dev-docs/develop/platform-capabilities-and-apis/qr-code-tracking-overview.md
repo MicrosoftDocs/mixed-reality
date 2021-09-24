@@ -10,7 +10,7 @@ keywords: vr, lbe, location based entertainment, vr arcade, arcade, immersive, q
 
 # QR code tracking overview
 
-HoloLens 2 can detect QR codes in the environment around the headset, establishing a coordinate system at each code's real-world location. Once you enable your device's webcam, you'll be able to recognize QR codes in the latest versions of your Unreal or Unity projects. Before going to production, we recommend following the [best practices](#best-practices-for-qr-code-detection) we've included at the end of the article.
+HoloLens 2 can detect QR codes in the environment around the headset, establishing a coordinate system at each code's real-world location. HoloLens 2 can also render holograms in the same location on multiple devices to create a shared experience. Once you enable your device's webcam, you'll be able to recognize QR codes in the latest versions of your projects. Before going to production, we recommend that you follow the [best practices](#best-practices-for-qr-code-detection) we've included at the end of the article.
 
 ## Device support
 
