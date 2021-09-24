@@ -34,7 +34,7 @@ Managing your Windows Mixed Reality headset:
 
 8. The **Device Companion App**, developed and maintained by each of the headset manufacturers, provides a quick introduction to your Windows Mixed Reality headset. On headsets with built-in Bluetooth capability, the Device Companion app enables restoring Motion Controllers to their factory Bluetooth pairing. Some headsets (such as the Samsung Odyssey, and Samsung Odyssey+) also use the Device Companion App to deliver headset firmware updates from the headset manufacturer. This app is downloaded automatically the first time your headset is plugged in and can be found in the Windows Start Menu.
 
-## Windows 10 release notes - October 2021
+## Windows 11 release notes - October 2021
 
 ### Infinite Expanse
 
