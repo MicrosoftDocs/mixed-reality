@@ -2,8 +2,8 @@
 title: Using Microsoft Edge in Windows Mixed Reality
 description: Get ready for the new Microsoft Edge in Windows Mixed Reality. Includes changes to expect, updates to look out for, and known issues.
 author: qianw211
-ms.author: v-qianw211
-ms.date: 9/23/2021
+ms.author: v-qianwen
+ms.date: 9/24/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Home, Navigate, Get around, apps, games, Microsoft Edge, chromium, Edge, 360, 360 video, 360 viewer
 ---

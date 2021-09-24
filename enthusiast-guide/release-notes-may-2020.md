@@ -1,11 +1,11 @@
 ---
 title: Release notes - May 2020
-description: Stay up to date on the Windows Mixed Reality release notes for the Windows 10 May 2019/19H1 Update.
+description: Stay up to date on the Windows Mixed Reality release notes for the Windows 10 May 2020 update.
 author: qianw211
 ms.author: v-qianwen
 ms.date: 9/24/2021
 ms.topic: article
-keywords: release notes, version, windows 10, build, 19h1, os, may 2019
+keywords: release notes, version, windows 10, build, 19h1, os, may 2020
 ---
 
 # Windows 10 release notes - May 2020
@@ -44,7 +44,7 @@ Thanks to your feedback, we've added and clarified settings on the Headset displ
 
 ### New Cortana app
 
-This update to Windows includes the latest version of the Cortana app, which is currently US English-only and no longer supports certain mixed-reality specific commands such as "Take a picture" and "Take a video." You' can use the new Cortana to launch apps, and it also supports new productivity focused commands like, "When's my next meeting?" or "Send an email to <name> that I'm running late."
+This update to Windows includes the latest version of the Cortana app, which is currently US English-only and no longer supports certain mixed-reality specific commands such as "Take a picture" and "Take a video." You' can use the new Cortana to launch apps, and it also supports new productivity focused commands like, "When's my next meeting?" or "Send an email to \< name \> that I'm running late."
     
 ### Additional updates in available in 19041.546 (released October 2020)
 
@@ -71,4 +71,4 @@ We continually look to improve compatibility.  If you find your favorite classic
 * [Immersive headset support (external link)](./troubleshooting-windows-mixed-reality.md)
 * [HoloLens support (external link)](https://support.microsoft.com/products/hololens)
 * [Install the tools](/windows/mixed-reality/develop/install-the-tools)
-* [Give us feedback](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback
+* [Give us feedback](/windows/mixed-reality/give-us-feedback)

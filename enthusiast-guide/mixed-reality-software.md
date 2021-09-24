@@ -147,7 +147,7 @@ In Windows 10, version 1809 and newer, [Mixed Reality Portal](https://www.micros
    | 2000.19101.1211.0  | November 11, 2019     | <ul><li>Addresses an issue that prevents you from toggling room boundary visuals.</li><li>Addresses an issue that prevents you from centering a headset during room boundary setup.</li></ul>  | 
    | 2000.19081.1301.0  | September 23, 2019    | <ul><li>Addresses an issue where headsets with hardware problems were shown an incorrect error message. Users that received a 1-4 error code on previous versions may now receive a more specific error code for their device state.</li></ul>  |
    | 2000.19071.1302.0  | August 13, 2019     | <ul><li>Support for applications using [OpenXR](/windows/mixed-reality/openxr) on devices with the May 2019 Update.</li></ul>  | 
-   | 2000.19061.1011.0  | July 16, 2019         | <ul><li>Support for JSON configuration options to customize app behavior. Read more at https://docs.microsoft.com/windows/mixed-reality/location-based-experiences#setup.</li></ul>  | 
+   | 2000.19061.1011.0  | July 16, 2019         | <ul><li>Support for JSON configuration options to customize app behavior. Read more at [setup for location based entertainment with Windows Mixed Reality](/windows/mixed-reality/location-based-experiences#setup).</li></ul>  | 
 
 ### SteamVR release history ###
 
