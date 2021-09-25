@@ -24,14 +24,14 @@ You can choose a starting point below based  on where you are in your journey so
 Start at the very beginning with an overview of what mixed reality is and how it differs from Virtual and Augmented Reality. Learn about the HoloLens, immersive headsets, and holograms. Explore basic design and develop concepts and related technologies such as Azure Remote Rendering.
 
 > [!div class="nextstepaction"]
-> [Introduction to mixed reality on Microsoft Learn](/learn/modules/intro-to-mixed-reality)
+> [Introduction to mixed reality on Microsoft Learn](/learn/modules/intro-to-mixed-reality/)
 
 ### Start building a mixed reality Experience
 
-If you're already familiar with the basic concepts and want to get started building something, check out our Mixed Reality Toolkit (MRTK) tutorial series. You'll build a mixed reality experience where the user can explore a hologram modeled after NASA's Mars Curiosity Rover. This will give you a firm grasp of MRTK and show you how it can speed up your development process.
+If you're already familiar with the basic concepts and want to get started building something, check out our "HoloLens 2 Fundamentals"  tutorial series. You'll build a mixed reality experience where the user can explore a hologram modeled after NASA's Mars Curiosity Rover. This will give you a firm grasp of MRTK and show you how it can speed up your development process.
 
 > [!div class="nextstepaction"]
-> [Mixed reality developer tutorials](______) <!-- Need a link to the Learning path. -->
+> [HoloLens 2 Fundamentals tutorials](/learn/paths/beginner-hololens-2-tutorials/)
 
 ## Choose your own development path
 Are you an intermediate-to-advanced developer with some previous experience in Mixed, Augmented, or Virtual Reality? We'll help you choose the proper tools and get set up, if needed, and then we'll direct you to our curated development paths across Unity, Unreal, Native, or Web.
