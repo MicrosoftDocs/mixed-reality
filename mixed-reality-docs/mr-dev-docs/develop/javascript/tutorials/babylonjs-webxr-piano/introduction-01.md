@@ -2,26 +2,26 @@
 title: Building a piano in WebXR using BabylonJS
 description: Complete this tutorial series to learn how to build a functioning 88-key piano keyboard in WebXR using BabylonJS
 author: JING1201
-ms.author: t-jinglow, ayyonet
+ms.author: v-vtieto
 ms.prod: mixed-reality
 ms.topic: tutorial
-ms.date: 05/31/2021
+ms.date: 09/10/2021
 keywords: mixed reality, javascript, tutorial, BabylonJS, hololens, mixed reality, UWP, Windows 10, WebXR, immersive web
 ms.localizationpriority: high
 ---
 
 
-# Tutorial: Build a piano in WebXR using babylon.js
+# Tutorial: Build a piano in WebXR using Babylon.js
 
-Building a piano in the real world requires a lot of time, skills, and materials. What about building one for the VR/AR world?
+Building a piano in the real world requires much in the way of time, skills, and materials. What about building one for the VR/AR world?
 
-Through this tutorial series, you will learn about using babylon.js to create a Mixed Reality web app that contains a functioning 88-key standup piano in the virtual world. In the completed app, you will be able to easily teleport to the position in front of the piano and begin playing on the keys using your mixed reality controllers.
+In this tutorial series, you'll learn how to use Babylon.js to create a Mixed Reality web app that contains a functioning 88-key standup piano in the virtual world. In the completed app, you'll be able to teleport to the piano and play the keys using your Mixed Reality controllers.
 
-In this tutorial series, you will learn how to:
+In this tutorial series, you'll learn how to:
 
 > [!div class="checklist"]
 > * Create, position, and merge meshes to build a piano keyboard
-> * Import a babylon.js model of a standup piano frame
+> * Import a Babylon.js model of a standup piano frame
 > * Add pointer interactions to each piano key
 > * Enable teleportation and multipointer support in WebXR
 
@@ -37,12 +37,12 @@ In this tutorial series, you will learn how to:
 
 ## Getting started
 
-Let's begin by setting up the HTML web page that will contain the babylon.js scene.
+Let's begin by setting up the HTML web page that will contain the Babylon.js scene.
 
 1. Create a folder named *babylonjs-piano-tutorial* and open the folder in Visual Studio Code.
 
     > [!NOTE]
-    > While you can use any code editor to follow along, we will be using Visual Studio Code throughout this tutorial for convenience.
+    > While you can use any code editor to follow along, we'll be using Visual Studio Code throughout this tutorial for convenience.
 
 1. Within the folder, create a file named *index.html* and insert the template below into the file:
 
@@ -74,13 +74,13 @@ Let's begin by setting up the HTML web page that will contain the babylon.js sce
     </html>
     ```
 
-    If you need more explanation on the content of this template, please refer back to the [Hello World Tutorial](../babylonjs-webxr-helloworld/introduction-01.md), which is a prerequisite of this tutorial.
+    If you need more explanation on the content of this template, see the [Hello World Tutorial](../babylonjs-webxr-helloworld/introduction-01.md), which is a prerequisite of this tutorial.
 
-1. If you try to open this file in a browser, the console will show an error indicating that the `createScene()` function is not found. Let's resolve this error by implementing the function `createScene()` in the next section.
+1. If you try to open this file in a browser, the console shows an error indicating that the `createScene()` function isn't found. Let's resolve this error by implementing the function `createScene()` in the next section.
 
 ## Setup the scene
 
-1. In the same folder as *index.html*, create another file named *scene.js*. This is where we will store all of the javascript code related to setting up the scene and creating the piano.
+1. In the same folder as *index.html*, create another file named *scene.js*. We'll store all of the javascript code related to setting up the scene and creating the piano in this file.
 
 1. Let's add the `createScene()` function into *scene.js*:
 
@@ -91,9 +91,9 @@ Let's begin by setting up the HTML web page that will contain the babylon.js sce
     }
     ```
 
-    Note that here we are making `createScene()` an async function. Stay tuned to find out why.
+    Note that we're making `createScene()` an async function. Stay tuned to find out why.
 
-1. Next, we will need a light and a camera to make the scene visible to us. Update the `createScene()` function:
+1. Next, we'll need a light and a camera to make the scene visible to us. Update the `createScene()` function:
 
     ```javascript
     const createScene = async function(engine) {
@@ -114,7 +114,7 @@ Let's begin by setting up the HTML web page that will contain the babylon.js sce
     }
     ```
 
-    Here, we have created an [ArcRotateCamera](https://doc.babylonjs.com/divingDeeper/cameras/camera_introduction#arc-rotate-camera) which points almost completely downwards and targets the origin point of the space. The light we have created is a [HemisphericLight](https://doc.babylonjs.com/divingDeeper/lights/lights_introduction#the-hemispheric-light) which points to the sky, which is very useful for simulating an ambient space. We have also dimmed the light a little by lowering its intensity.
+    Here, we have created an [ArcRotateCamera](https://doc.babylonjs.com/divingDeeper/cameras/camera_introduction#arc-rotate-camera), which points almost completely downwards and targets the origin point of the space. The light we have created is a [HemisphericLight](https://doc.babylonjs.com/divingDeeper/lights/lights_introduction#the-hemispheric-light) that points to the sky and is useful for simulating an ambient space. We've also dimmed the light a little by lowering its intensity.
 
     If you need a refresher on how to create a camera and a light, revisit the [Prepare Scene section of the Hello World Tutorial Series](../babylonjs-webxr-helloworld/prepare-scene-02.md#add-a-camera) before proceeding to the next step.
 
@@ -124,7 +124,7 @@ Let's begin by setting up the HTML web page that will contain the babylon.js sce
     const xrHelper = await scene.createDefaultXRExperienceAsync();
     ```
 
-    In javascript, in order to use the `await` keyboard on an `async` function within a function, the parent function would also have to be `async`, which is why we defined `createScene` function as async earlier. Later in this tutorial series, we will be using this `xrHelper` to enable and configure different WebXR features supported by babylon.js.
+    In javascript, in order to use the `await` keyboard on an `async` function within a function, the parent function would also have to be `async`, which is why we defined `createScene` function as async earlier. Later in this tutorial series, we will be using this `xrHelper` to enable and configure different WebXR features supported by Babylon.js.
 
 1. The completed *scene.js* should look like this:
 
@@ -180,9 +180,9 @@ Let's begin by setting up the HTML web page that will contain the babylon.js sce
     </html>
     ```
 
-1. Open *index.html* in your browser, and you will find that the error message we saw earlier is no longer present, and we have an empty babylon.js scene in the page.
+1. Open *index.html* in your browser, and you will find that the error message we saw earlier is no longer present, and we have an empty Babylon.js scene in the page.
 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Next tutorial: Build a piano 3D model](keyboard-model-02.md)
+> [Next tutorial: Build a 3D piano model](keyboard-model-02.md)

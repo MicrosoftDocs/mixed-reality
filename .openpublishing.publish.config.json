@@ -49,11 +49,13 @@
       "build_source_folder": "mrtk-unity",
       "build_output_subfolder": "mrtk-unity",
       "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [
+        ">= mrtkunity-2021-01"
+      ],
       "xref_query_tags": [
         "/dotnet"
       ],
-      "monikers": [],
-      "moniker_ranges": [ ">= mrtkunity-2021-01" ],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
@@ -63,6 +65,20 @@
       "docset_name": "mrtk-unreal",
       "build_source_folder": "mrtk-unreal",
       "build_output_subfolder": "mrtk-unreal",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
+      "docset_name": "world-locking-tools",
+      "build_source_folder": "world-locking-tools",
+      "build_output_subfolder": "world-locking-tools",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],

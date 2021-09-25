@@ -17,7 +17,7 @@ appliesto:
 "Streaming" is sometimes referred to as "Holographic Remoting." To learn more, see [Holographic Remoting overview](../platform-capabilities-and-apis/holographic-remoting-overview.md)
 
 Streaming from a PC to HoloLens provides two major advantages: 
-* It lets your mixed reality app take advantage of your PCs computational power. 
+* It lets your mixed reality app take advantage of your PC's computational power. 
 * It helps speed up development iteration time. 
 
 To get started, you'll need to download the [Holographic Remoting Player](../platform-capabilities-and-apis/holographic-remoting-player.md) to your HoloLens device. The Holographic Remoting Player lets your app to stream  directly to the remoting player on your HoloLens from the following sources:
@@ -88,6 +88,9 @@ In Unreal 4.25.1 and onwards, you can stream your app to a HoloLens 2 device fro
 
 > [!NOTE]
 > The application name in your project settings should be automatically used to create the Windows package. If these are different for some reason, use the Windows executable name in the command prompt.
+
+> [!NOTE]
+> If eye tracking isn't working when streaming from a packaged executable, either disable any other plugins with PC-supported eye trackers (example: Magic Leap) or run the application from the command line with the relevant eye tracking argument (see [command line options](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unreal/unreal-streaming?tabs=wmr#command-line-options)).
 
 Hit enter and watch your application start streaming!
 
