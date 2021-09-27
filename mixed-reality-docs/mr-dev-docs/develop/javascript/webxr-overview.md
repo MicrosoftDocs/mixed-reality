@@ -23,7 +23,7 @@ The [**WebXR Device API**](https://www.w3.org/TR/webxr/) is for accessing virtua
 
 | WebXR feature | Availability |
 |---------|---------|
-|[WebXR Device API (w3.org)](https://www.w3.org/TR/webxr/) | Edge 87 on Windows Desktop <br>Edge 91 on Hololens 2|
+|[WebXR Device API (w3.org)](https://www.w3.org/TR/webxr/) | Edge 81 on Windows Desktop <br>Edge 91 on Hololens 2|
 |[WebXR Augmented Reality Module - Level 1 (w3.org)](https://www.w3.org/TR/webxr-ar-module-1/)|Edge 91. Hololens 2 only|
 |[WebXR Hand Input Module - Level 1 (w3.org)](https://www.w3.org/TR/webxr-hand-input-1/)|Edge 93. Hololens 2 only|
 |[WebXR Anchors Module (immersive-web.github.io)](https://immersive-web.github.io/anchors/)|Edge 93. Hololens 2 only|
