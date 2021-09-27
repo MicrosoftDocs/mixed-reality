@@ -26,8 +26,6 @@
       href: platform-capabilities-and-apis/mixed-reality-capture-for-developers.md
     - name: How it works - Mixed Reality Capture Studios
       href: platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md
-    - name: Installing PIX for HoloLens 2
-      href: platform-capabilities-and-apis/installing-pix-hololens.md
   - name: Real-time Audio and Video
     items:
     - name: WebRTC (C#, C++, Unity)
@@ -482,56 +480,58 @@
         items:
         - name: Using XAML with holographic DirectX apps
           href: native/using-xaml-with-holographic-directx-apps.md
-  - name: Placing holograms
-    items:
-      - name: QR code tracking (C# and C++)
-        href: native/qr-code-tracking-cs-cpp.md
-    - name: Camera and capture
-      items:
-      - name: Locatable camera (with C++ samples)
-        href: platform-capabilities-and-apis/locatable-camera-cpp.md
-      - name: Mixed Reality capture for developers (with C# and C++ samples)
-        href: platform-capabilities-and-apis/mixed-reality-capture-for-developers-cs-cpp.md
-    - name: Holographic remoting
-      items:
-      - name: Writing a Holographic Remoting remote app (C++)
+      - name: Placing holograms
         items:
-          - name: HolographicSpace API
-            href: native/holographic-remoting-create-remote-wmr.md
-          - name: OpenXR API
-            href: native/holographic-remoting-create-remote-openxr.md
-      - name: Writing a custom Holographic Remoting Player app (C++)
-        href: native/holographic-remoting-create-player.md
-      - name: Custom Holographic Remoting data channels (C++)
-        href: native/holographic-remoting-custom-data-channels.md
-      - name: Secure Connection with Holographic Remoting (C++)
-        href: native/holographic-remoting-secure-connection.md
-      - name: Troubleshooting and limitations
-        href: native/holographic-remoting-troubleshooting.md
-      - name: Version history
-        href: native/holographic-remoting-version-history.md
-      - name: Holographic Remoting software license terms
-        href: /legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
-      - name: Holographic Remoting for HoloLens (1st Gen)
-        href: native/add-holographic-remoting.md
-    - name: App quality and testing
-      items:
-      - name: Volume rendering (with C++ samples)
-        href: native/volume-rendering-cpp.md
-      - name: Hologram stability (with C# samples)
-        href: native/hologram-stability-with-cs.md
-      - name: Perception simulation (with C# samples)
-        href: platform-capabilities-and-apis/perception-simulation-cpp.md
-        - name: Core building blocks
+          - name: QR code tracking (C# and C++)
+            href: native/qr-code-tracking-cs-cpp.md
+      - name: Camera and capture
+        items:
+        - name: Locatable camera (with C++ samples)
+          href: platform-capabilities-and-apis/locatable-camera-cpp.md
+        - name: Mixed Reality capture for developers (with C# and C++ samples)
+          href: platform-capabilities-and-apis/mixed-reality-capture-for-developers-cs-cpp.md
+      - name: Holographic remoting
+        items:
+        - name: Writing a Holographic Remoting remote app (C++)
           items:
-            - name: Head and eye gaze
-              href: native/gaze-in-directx.md
-            - name: Hands and motion controllers
-              href: native/hands-and-motion-controllers-in-directx.md
-            - name: Voice input
-              href: native/voice-input-in-directx.md
-            - name: Spatial mapping
-              href: native/spatial-mapping-in-directx.md
+            - name: HolographicSpace API
+              href: native/holographic-remoting-create-remote-wmr.md
+            - name: OpenXR API
+              href: native/holographic-remoting-create-remote-openxr.md
+        - name: Writing a custom Holographic Remoting Player app (C++)
+          href: native/holographic-remoting-create-player.md
+        - name: Custom Holographic Remoting data channels (C++)
+          href: native/holographic-remoting-custom-data-channels.md
+        - name: Secure Connection with Holographic Remoting (C++)
+          href: native/holographic-remoting-secure-connection.md
+        - name: Troubleshooting and limitations
+          href: native/holographic-remoting-troubleshooting.md
+        - name: Version history
+          href: native/holographic-remoting-version-history.md
+        - name: Holographic Remoting software license terms
+          href: /legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
+        - name: Holographic Remoting for HoloLens (1st Gen)
+          href: native/add-holographic-remoting.md
+      - name: App quality and testing
+        items:
+        - name: Volume rendering (with C++ samples)
+          href: native/volume-rendering-cpp.md
+        - name: Hologram stability (with C# samples)
+          href: native/hologram-stability-with-cs.md
+        - name: Perception simulation (with C# samples)
+          href: platform-capabilities-and-apis/perception-simulation-cpp.md
+        - name: Installing PIX for HoloLens 2
+          href: platform-capabilities-and-apis/installing-pix-hololens.md
+      - name: Core building blocks
+        items:
+          - name: Head and eye gaze
+            href: native/gaze-in-directx.md
+          - name: Hands and motion controllers
+            href: native/hands-and-motion-controllers-in-directx.md
+          - name: Voice input
+            href: native/voice-input-in-directx.md
+          - name: Spatial mapping
+            href: native/spatial-mapping-in-directx.md
     - name: API References
     items:
     - name: Perception simulation
