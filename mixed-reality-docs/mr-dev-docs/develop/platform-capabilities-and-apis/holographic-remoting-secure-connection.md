@@ -10,8 +10,8 @@ keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windo
 
 # Enabling connection security for Holographic Remoting (C++)
 
->[!IMPORTANT]
->This guidance is specific to Holographic Remoting on HoloLens 2.
+>[!NOTE]
+>This guidance is specific to Holographic Remoting on HoloLens 2 and Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md.
 
 This page gives you an overview of network security for Holographic Remoting. You'll find information about
 
@@ -171,7 +171,7 @@ Implement the `ICertificateValidator` interface as follows:
 When using the [OpenXR API](../native/openxr.md) all secure connection-related API is available as part of the `XR_MSFT_holographic_remoting` OpenXR extension.
 
 >[!IMPORTANT]
->To learn about the Holographic Remoting OpenXR extension API, check out the [specification](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/master/remote_openxr/specification.html) which can be found in the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+>To learn about the Holographic Remoting OpenXR extension API, check out the [specification](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/main/remote_openxr/specification.html) which can be found in the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
 The key elements for secure connection using the `XR_MSFT_holographic_remoting` OpenXR extension are the following callbacks.
 - `xrRemotingRequestAuthenticationTokenCallbackMSFT`, generates, or retrieves the authentication token to be sent.

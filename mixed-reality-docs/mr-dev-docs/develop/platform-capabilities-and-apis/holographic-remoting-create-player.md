@@ -8,7 +8,7 @@ ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, NuGet, app manifest, player context, remote app, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
-# Writing a custom Holographic Remoting player app (C++)
+# Writing a custom Holographic Remoting player app using the Windows Mixed Reality API
 
 >[!IMPORTANT]
 >This document describes the creation of a custom player application for HoloLens 2. Custom players written for HoloLens 2 are not compatible with remote applications written for HoloLens 1. This implies that both applications must use NuGet package version **2.x.x**.
@@ -244,6 +244,33 @@ For more information, see the ```PlayerFrameStatistics``` documentation in the `
 ## Optional: Custom data channels
 
 Custom data channels can be used to send user data over the already established remoting connection. See [custom data channels](holographic-remoting-custom-data-channels.md) for more information.
+
+## Optional: Over-Rendering
+
+Holographic Remoting predicts where the user's head will be when the rendered images appear on the displays. However, this prediction is an approximation, and the predicted viewport on the remote app and the later actual viewport on the player app can differ. Stronger deviations, for example due to unpredictable motion, can cause black regions at the borders of the viewing frustrum.
+Starting with version [2.6.0](holographic-remoting-version-history.md#v2.6.0) you can use Over-Rendering to reduce the black regions by artificially increasing the viewport beyond the viewing frustum and therefore enhance the visual quality.
+
+Over-Rendering can be enabled via ```PlayerContext::ConfigureOverRendering```.
+
+The ```OverRenderingConfig``` specifies a fractional size increase to the actual viewport, so that the predicted viewport becomes larger and therefore less cutting occurs.
+With an increased viewport size the pixel density decreases therefore, the OverRenderingConfig allows to increase the resolution as well.
+If the viewport increase is equal to the resolution increase the pixel density remains the same. The ```OverRenderingConfig``` is defined as:
+
+```cpp
+struct OverRenderingConfig
+{
+    float HorizontalViewportIncrease; // The fractional horizontal viewport increase. (e.g. 10% -> 0.1).
+    float VerticalViewportIncrease; // The fractional vertical viewport increase. (e.g. 10% -> 0.1).
+                
+    float HorizontalResolutionIncrease; // The fractional horizontal resolution increase. (e.g. 10% -> 0.1).
+    float VerticalResolutionIncrease; // The fractional vertical resolution increase. (e.g. 10% -> 0.1).
+};
+```
+
+## Optional: Coordinate System Synchronization
+
+Starting with version [2.7.0](holographic-remoting-version-history.md#v2.7.0) coordinate system synchronization can be used to align spatial data between the player and remote app.
+See [Coordinate System Synchronization with Holographic Remoting Overview](holographic-remoting-coordinate-system-synchronization.md) for more information.
 
 ## See Also
 * [Holographic Remoting overview](holographic-remoting-overview.md)

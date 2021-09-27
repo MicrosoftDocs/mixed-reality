@@ -1,6 +1,6 @@
 ---
 title: Writing a Holographic Remoting remote app (WMR)
-description: Learn how to stream remote content rendered on a remote machine to HoloLens 2 with Holographic Remoting apps with HolographicSpace.  
+description: Learn how to stream remote content rendered on a remote machine to HoloLens 2 with Holographic Remoting apps with Windows Mixed Reality.  
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
@@ -8,11 +8,10 @@ ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windows mixed reality headset, virtual reality headset, NuGet
 ---
 
-
-# Writing a Holographic Remoting remote app using the HolographicSpace API
+# Writing a Holographic Remoting remote app using the Windows Mixed Reality API
 
 >[!IMPORTANT]
->This document describes the creation of a remote application for HoloLens 2 using the [HolographicSpace API](../native/getting-a-holographicspace.md). Remote applications for **HoloLens (1st gen)** must use NuGet package version **1.x.x**. This implies that remote applications written for HoloLens 2 are not compatible with HoloLens 1 and vice versa. The documentation for HoloLens 1 can be found [here](add-holographic-remoting.md).
+>This document describes the creation of a remote application for HoloLens 2 using the [Windows Mixed Reality API](../native/getting-a-holographicspace.md). Remote applications for **HoloLens (1st gen)** must use NuGet package version **1.x.x**. This implies that remote applications written for HoloLens 2 are not compatible with HoloLens 1 and vice versa. The documentation for HoloLens 1 can be found [here](add-holographic-remoting.md).
 
 Holographic Remoting apps can stream remotely rendered content to HoloLens 2 and Windows Mixed Reality immersive headsets. You can also access more system resources and integrate remote [immersive views](../../design/app-views.md) into existing desktop PC software. A remote app receives an input data stream from HoloLens 2, renders content in a virtual immersive view, and streams content frames back to HoloLens 2. The connection is made using standard Wi-Fi. Holographic Remoting is added to a desktop or UWP app via a NuGet packet. Additional code is required which handles the connection and renders in an immersive view. A typical remoting connection will have as low as 50 ms of latency. The player app can report the latency in real time.
 
@@ -20,7 +19,7 @@ All code on this page and working projects can be found in the [Holographic Remo
 
 ## Prerequisites
 
-A good starting point is a working DirectX based Desktop or UWP app, which targets the [HolographicSpace API](../native/getting-a-holographicspace.md). For details see [DirectX development overview](../native/directx-development-overview.md). The [C++ holographic project template](../native/creating-a-holographic-directx-project.md) is a good starting point.
+A good starting point is a working DirectX based Desktop or UWP app, which targets the [Windows Mixed Reality API](../native/getting-a-holographicspace.md). For details see [DirectX development overview](../native/directx-development-overview.md). The [C++ holographic project template](../native/creating-a-holographic-directx-project.md) is a good starting point.
 
 >[!IMPORTANT]
 >Any app using Holographic Remoting should be authored to use a [multi-threaded apartment](/windows/win32/com/multithreaded-apartments). The use of a [single-threaded apartment](/windows/win32/com/single-threaded-apartments) is supported but will lead to sub-optimal performance and possibly stuttering during playback. When using C++/WinRT [winrt::init_apartment](/windows/uwp/cpp-and-winrt-apis/get-started) a multi-threaded apartment is the default.
@@ -352,6 +351,11 @@ To verify if depth reprojection is correctly working on HoloLens 2, you can enab
 ## Optional: Custom data channels
 
 Custom data channels can be used to send user data over the already established remoting connection. See [custom data channels](holographic-remoting-custom-data-channels.md) for more information.
+
+## Optional: Coordinate System Synchronization
+
+Starting with version [2.7.0](holographic-remoting-version-history.md#v2.7.0) coordinate system synchronization can be used to align spatial data between the player and remote application.
+See [Coordinate System Synchronization with Holographic Remoting Overview](holographic-remoting-coordinate-system-synchronization.md) for more information.
 
 ## See Also
 * [Holographic Remoting overview](holographic-remoting-overview.md)
