@@ -2,8 +2,8 @@
 title: Windows Mixed Reality and the new Microsoft Edge
 description: Learn about the new Microsoft Edge for Mixed Reality, including what to expect, updates to look out for, and known issues.
 author: mattzmsft
-ms.author: mazeller
-ms.date: 08/04/2020
+ms.author: v-vtieto
+ms.date: 09/24/2021
 ms.topic: article
 keywords: edge, new, immersive web, microsoft edge, browser, vr, 360, 360 video, 360 viewer, webxr, webvr
 ---
@@ -76,7 +76,8 @@ Virtual monitors will now allocate when you attempt to launch a Win32 applicatio
 
 ### Other known issues
 
--	Websites open in Windows Mixed Reality will be lost when Mixed Reality Portal closes. The Microsoft Edge windows will stay in their placed positions in the mixed reality home.
-- WebXR experiences, including the 360 Viewer extension, may not launch correctly on PCs with a Hybrid GPU setup. You can work around this issue by enabling a preview feature in the new Microsoft Edge. Navigate to `edge://flags`, search for "multi gpu" and enable the flag called **WebXR Multi GPU Support**.
 -	Audio from Microsoft Edge windows isn't spatialized.
--	**Fixed in 360 Viewer extension version 2.3.8**: Opening a 360 video from YouTube in Windows Mixed Reality may result in the video being distorted in the headset. Restarting Edge should invisibly update the 360 Viewer extension to resolve this issue. You can confirm which version of the extension you have by entering `edge://system/` in the address bar and selecting the **Expand** button next to "extensions."
+
+## See Also
+
+* [WebXR Overview](../develop/javascript/webxr-overview.md)
