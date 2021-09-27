@@ -2,8 +2,8 @@
 title: Mixed Reality Learn module overview
 description: Keep up to date with all the available Mixed Reality modules hosted on the Microsoft Learn platform.
 author: hferrone
-ms.author: jemccull
-ms.date: 11/30/2020
+ms.author: v-vtieto
+ms.date: 9/27/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, learn, mixed reality headset, windows mixed reality headset, virtual reality headset, what is virtual reality, what is augmented reality, MRTK, mixed reality toolkit, language translation, Azure, Azure cognitive services, Microsoft Learn
 ms.localizationpriority: high
@@ -18,7 +18,7 @@ The more tools you have when developing for Mixed Reality the better. While docu
 Our Learn modules help you become proficient in Mixed Reality development, offering a module-based structure to get you started with key tools like Mixed Reality Toolkit, Unity, and Azure mixed reality services. Getting to Hello World has never been clearer, as we lay out the Learning Objectives, Prerequisites, and set time to completion expectations all in one interface. 
 
 > [!div class="nextstepaction"]
-> [Get started with our Mixed Reality learning path](/learn/browse/?terms=mixed+reality)
+> [Browse Mixed Reality Learn modules](/learn/browse/?terms=mixed+reality)
 
 ## General modules
 
