@@ -8,7 +8,7 @@ ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windows mixed reality headset, virtual reality headset, diagnostics, performance
 ---
 
-# Holographic Remoting Player
+# Holographic Remoting Player overview
 
 >[!TIP]
 >[Learn the basics of Holographic Remoting.](holographic-remoting-overview.md)

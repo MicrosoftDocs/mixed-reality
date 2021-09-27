@@ -14,9 +14,9 @@ You can use Holographic Remoting to stream holographic content to your HoloLens 
 
 1. (Unity or Unreal): **You want to preview and debug your app during the development process**: You can run your app locally in the Unity editor on your PC in Play Mode and stream the experience to your HoloLens. This provides a way to quickly debug your app without building and deploying a full project. We call this type of app a _Holographic Remoting Play Mode Preview app_.
 
-    - [Learn more about previewing and debugging your app in Unity](../unity/preview-and-debug-your-app.md)
+    - [Learn more about previewing and debugging your app in **Unity**](../unity/preview-and-debug-your-app.md)
 
-    - [Learn more about previewing and debugging your app in Unreal](../unreal/unreal-streaming.md)
+    - [Learn more about previewing and debugging your app in **Unreal**](../unreal/unreal-streaming.md)
 
 1. (Unity, Unreal or C++):  **You want the resources of a PC to power your app instead of relying on the HoloLens on-board resources**: You can create and build an app that has Holographic Remoting capability. The user experiences the app on the HoloLens, but the app actually runs on a PC, which allows it to take advantage of the PC's more powerful resources. This can be especially helpful if your app has high-resolution assets or models and you don't want the frame rate to suffer. We call this type of app a _Holographic Remoting remote app_.
 
