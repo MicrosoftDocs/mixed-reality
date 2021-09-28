@@ -21,7 +21,7 @@
   - name: Camera and capture
     items:
     - name: Locatable camera
-      href: platform-capabilities-and-apis/locatable-camera.md
+      href: platform-capabilities-and-apis/locatable-camera-overview.md
     - name: Mixed Reality capture for developers
       href: platform-capabilities-and-apis/mixed-reality-capture-for-developers.md
     - name: How it works - Mixed Reality Capture Studios

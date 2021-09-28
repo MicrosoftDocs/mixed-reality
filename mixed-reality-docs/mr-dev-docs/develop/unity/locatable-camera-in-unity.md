@@ -341,6 +341,11 @@ Or jump directly to deploying your app on a device or emulator:
 
 You can always go back to the [Unity development checkpoints](unity-development-overview.md#3-advanced-features) at any time.
 
-## See Also
-
-* [Locatable camera](../platform-capabilities-and-apis/locatable-camera.md)
+## See also
+* [Locatable camera sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)
+* [Locatable camera overview](../platform-capabilities-and-apis/locatable-camera-cpp.md)
+* [Locatable camera with C++ samples](../native/locatable-camera-cpp.md)
+* [Mixed reality capture](/hololens/holographic-photos-and-videos)
+* [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
+* [Media capture introduction](/windows/uwp/audio-video-camera/)
+* [Holographic face tracking sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)
