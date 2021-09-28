@@ -446,7 +446,7 @@
           href: javascript/tutorials/babylonjs-webxr-helloworld/interact-03.md
 - name: Native Development
   items:
-  - name: Custom engine development overview
+  - name: Native Development
     href: native/directx-development-overview.md
   - name: OpenXR
     items:
@@ -535,5 +535,7 @@
       - name: API References
         items:
         - name: Device portal API reference (REST)
-          href: platform-capabilities-and-apis/device-portal-api-reference.md
+          href: api-refs/device-portal-api-reference.md
+        - name: QR code tracking API reference
+          href: api-refs/qr-code-tracking-api-reference.md
 

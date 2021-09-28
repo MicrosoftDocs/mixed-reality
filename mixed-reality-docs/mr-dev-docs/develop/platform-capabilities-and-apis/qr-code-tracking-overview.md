@@ -5,7 +5,7 @@ author: dorreneb
 ms.author: v-vtieto
 ms.date: 09/27/21
 ms.topic: article
-keywords: vr, lbe, location based entertainment, vr arcade, arcade, immersive, qr, qr code, hololens2
+keywords: vr, lbe, location based entertainment, vr arcade, arcade, immersive, qr, qr code, hololens2, tracking
 ---
 
 # QR code tracking overview
@@ -68,7 +68,6 @@ For recommendations on where and how to place QR codes, refer to [Environment co
 
 ## See also
 * [QR code tracking with native C++ and C## samples](../native/qr-code-tracking-cs-cpp.md)
-* [QR code tracking with OpenXR](../native/qr-code-tracking-openxr.md)
 * [QR code tracking in Unity](../unity/qr-code-tracking-unity.md)
 * [QR code tracking API reference](../api-refs/qr-code-tracking-api-reference.md)
 * [Coordinate systems](../../design/coordinate-systems.md)
