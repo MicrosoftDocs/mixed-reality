@@ -8,12 +8,12 @@
 			"redirect_document_id": false
 		},
 		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/tutorials/mr-learning-base-02?tabs=openxr",
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/tutorials/mr-learning-base-02.md",
 			"redirect_url": "/learn/paths/beginner-hololens-2-tutorials/",
 			"redirect_document_id": false
 		},
 		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/tutorials/mr-learning-base-03?tabs=openxr",
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/tutorials/mr-learning-base-03.md",
 			"redirect_url": "/learn/paths/beginner-hololens-2-tutorials/",
 			"redirect_document_id": false
 		},
@@ -53,7 +53,7 @@
 			"redirect_document_id": false
 		},
 		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/tutorials/mr-learning-asa-02?tabs=openxr",
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/tutorials/mr-learning-asa-02.md",
 			"redirect_url": "/learn/paths/beginner-hololens-2-tutorials/",
 			"redirect_document_id": false
 		},
@@ -68,7 +68,7 @@
 			"redirect_document_id": false
 		},
 		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/tutorials/mr-learning-asa-05?tabs=winxr",
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/tutorials/mr-learning-asa-05.md",
 			"redirect_url": "/learn/paths/beginner-hololens-2-tutorials/",
 			"redirect_document_id": false
 		},
@@ -118,7 +118,7 @@
 			"redirect_document_id": false
 		},
 		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/tutorials/mr-learning-azure-01?tabs=openxr",
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/tutorials/mr-learning-azure-01.md",
 			"redirect_url": "/learn/paths/beginner-hololens-2-tutorials/",
 			"redirect_document_id": false
 		},
@@ -143,12 +143,12 @@
 			"redirect_document_id": false
 		},
 		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/tutorials/mr-learning-pc-holographic-remoting-01?tabs=openxr",
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/tutorials/mr-learning-pc-holographic-remoting-01.md",
 			"redirect_url": "/learn/paths/beginner-hololens-2-tutorials/",
 			"redirect_document_id": false
 		},
 		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/tutorials/mr-learning-pc-holographic-remoting-02?tabs=openxr",
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/tutorials/mr-learning-pc-holographic-remoting-02.md",
 			"redirect_url": "/learn/paths/beginner-hololens-2-tutorials/",
 			"redirect_document_id": false
 		},
@@ -1512,11 +1512,6 @@
 			"redirect_document_id": true
 		},
 		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md",
-			"redirect_url": "/windows/mixed-reality/develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence",
-			"redirect_document_id": true
-		},
-		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/device-portal-api-reference.md",
 			"redirect_url": "/windows/mixed-reality/develop/platform-capabilities-and-apis/device-portal-api-reference",
 			"redirect_document_id": true
@@ -1613,7 +1608,7 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/scene-understanding-SDK.md",
-			"redirect_url": "/windows/mixed-reality/develop/platform-capabilities-and-apis/scene-understanding-SDK",
+			"redirect_url": "/windows/mixed-reality/develop/unity/scene-understanding-SDK",
 			"redirect_document_id": true
 		},
 		{
