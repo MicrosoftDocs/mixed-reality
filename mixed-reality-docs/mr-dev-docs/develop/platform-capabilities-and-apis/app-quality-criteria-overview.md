@@ -9,7 +9,7 @@ keywords: app quality criteria, mixed reality, mixed reality app, mixed reality 
 ---
 
 
-# App quality criteria
+# App quality criteria overview
 
 This document describes the top factors impacting the quality of mixed reality apps. For each factor, the following information is provided
 * Overview – a brief description of the quality factor and why it's important.
