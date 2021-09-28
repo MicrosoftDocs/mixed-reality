@@ -49,7 +49,7 @@ Render from the PV camera offers the following improvements over the default MRC
 * Hologram alignment to your physical environment and hands for near interactions should be accurate at all distances. Avoid having an offset at distances other than the focus point as you might see in the default MRC.
 * The right eye in the headset won't be compromised, as it won't be used to render the holograms for the MRC output.
 
-[Learn more about rendering from the PV camera (DirectX)](../native/mixed-reality-capture-for-developers-cs-cpp.md).
+[Learn more about rendering from the PV camera (DirectX)](../native/mixed-reality-capture-for-developers-cs-cpp.md#render-from-the-pv-camera-opt-in).
 
 
 ### Best practices (HoloLens-specific)
@@ -122,7 +122,7 @@ Unity Applications should see [Locatable_camera_in_Unity](../unity/locatable-cam
 
 Other applications can do this by using the [Windows Media Capture APIs](/uwp/api/Windows.Media.Capture.MediaCapture) to control the Camera and add an MRC Video and Audio effect to include virtual holograms and application audio in stills and videos.
 
-[Learn more creating a custom MRC recorder (DirectX)](../native/mixed-reality-capture-for-developers-cs-cpp.md).
+[Learn more creating a custom MRC recorder (DirectX)](../native/mixed-reality-capture-for-developers-cs-cpp.md#creating-a-custom-mrc-recorder).
 
 ### Simultaneous MRC limitations
 
@@ -136,13 +136,13 @@ With HoloLens 2, it's possible for you to share access to the camera. If you don
 
 ##### Built-in MRC photo/video camera access
 
-[Learn about built-in MRC photo/video camera access (DirectX)](../native/mixed-reality-capture-for-developers-cs-cpp.md).
+[Learn about built-in MRC photo/video camera access (DirectX)](../native/mixed-reality-capture-for-developers-cs-cpp.md#built-in-mrc-photo-video-camera-access).
 
 #### MRC access for developers
 
 We recommend you always request Exclusive control for the camera when using MRC. This will ensure your application has full control of the settings for the camera as long as you're aware of the limitations listed above.
 
-[Learn more about MRC access for developers (DirectX)](../native/mixed-reality-capture-for-developers-cs-cpp.md).
+[Learn more about MRC access for developers (DirectX)](../native/mixed-reality-capture-for-developers-cs-cpp.md#mrc-access-for-developers).
 
 ## See also
 
