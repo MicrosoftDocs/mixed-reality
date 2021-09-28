@@ -22,8 +22,8 @@
     items:
     - name: Locatable camera
       href: platform-capabilities-and-apis/locatable-camera-overview.md
-    - name: Mixed Reality capture for developers
-      href: platform-capabilities-and-apis/mixed-reality-capture-for-developers.md
+    - name: Mixed Reality capture
+      href: platform-capabilities-and-apis/mixed-reality-overview.md
     - name: How it works - Mixed Reality Capture Studios
       href: platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md
   - name: Real-time Audio and Video
@@ -286,6 +286,8 @@
         href: unity/locatable-camera-in-unity.md
       - name: Focus point
         href: unity/focus-point-in-unity.md
+      - name: Mixed Reality Capture
+        href: unity/mixed-reality-capture-unity.md        
       - name: Tracking loss
         href: unity/tracking-loss-in-unity.md
       - name: Keyboard input
@@ -406,6 +408,8 @@
     items:
       - name: HoloLens Photo/Video Camera
         href: unreal/unreal-hololens-camera.md
+      - name: Mixed Reality Capture
+        href: unreal/mixed-reality-capture-unreal.md   
       - name: QR codes
         href: unreal/unreal-qr-codes.md
       - name: UMG and keyboard
@@ -498,8 +502,8 @@
         items:
         - name: Locatable camera (with C++ samples)
           href: platform-capabilities-and-apis/locatable-camera-cpp.md
-        - name: Mixed Reality capture for developers (with C# and C++ samples)
-          href: platform-capabilities-and-apis/mixed-reality-capture-for-developers-cs-cpp.md
+        - name: Mixed reality capture (DirectX)
+          href: native/mixed-reality-capture-directx.md
       - name: Holographic remoting
         items:
         - name: Writing a Holographic Remoting remote app (C++)
