@@ -292,6 +292,8 @@
         href: unity/tracking-loss-in-unity.md
       - name: Keyboard input
         href: unity/keyboard-input-in-unity.md
+      - name: Hologram stability
+        href: unity/hologram-stability-in-unity.md
       - name: UDP packets in UWP apps
         href: unity/udp-packets-in-unity.md
       - name: Using the Windows namespace with Unity apps for HoloLens
