@@ -23,7 +23,7 @@
     - name: Locatable camera
       href: platform-capabilities-and-apis/locatable-camera-overview.md
     - name: Mixed Reality capture
-      href: platform-capabilities-and-apis/mixed-reality-overview.md
+      href: platform-capabilities-and-apis/mixed-reality-capture-overview.md
     - name: How it works - Mixed Reality Capture Studios
       href: platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md
   - name: Real-time Audio and Video
@@ -78,7 +78,7 @@
     items:
     - name: Using the Windows Device Portal
       href: platform-capabilities-and-apis/using-the-windows-device-portal.md
-    - name: Research tools
+  - name: Research tools
     items:
     - name: HoloLens Research Mode
       href: platform-capabilities-and-apis/research-mode.md
@@ -503,7 +503,7 @@
       - name: Camera and capture
         items:
         - name: Locatable camera (with C++ samples)
-          href: platform-capabilities-and-apis/locatable-camera-cpp.md
+          href: native/locatable-camera-cpp.md
         - name: Mixed reality capture (DirectX)
           href: native/mixed-reality-capture-directx.md
       - name: Holographic remoting
