@@ -3,7 +3,7 @@ title: Before you start
 description: Learn how to make sure your PC is compatible and ready for a variety of Windows Mixed Reality application experiences.
 author: qianw211
 ms.author: v-qianwen
-ms.date: 09/21/2021
+ms.date: 09/30/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, compatible, compatibility, get started, setup, PC, system requirements
 appliesto:
@@ -41,11 +41,11 @@ To see which version of Windows 10 your device is currently running, select the 
 
 To ensure that Windows 10 is up to date on your PC, select the **Start** button, then select **Settings > Update & security > Windows Update**.  Select **Check for updates**. If updates are available, install them.
 
-## Make sure you have the Windows 11 Version <mark>****</mark> or newer installed
+## Make sure you have the Windows 11 Version 21H2 or newer installed
 
-You must be running the Windows 11 Version <mark>****</mark> or newer to use Windows Mixed Reality. Compatible versions of Windows 11 include:
+You must be running the Windows 11 Version 21H2 or newer to use Windows Mixed Reality. Compatible versions of Windows 11 include:
 
-* Windows 11 Version <mark>****</mark>
+* Windows 11 Version 21H2
 
 To see which version of Windows 11 your device is currently running, select the **Start** button, then select **Settings  > System > About**.
 

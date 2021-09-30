@@ -3,7 +3,7 @@ title: Before you buy - FAQs
 description: Answers to frequently asked questions potential buyers may have before purchasing a Windows Mixed reality headset and compatible PC.
 author: qianw211    
 ms.author: v-qianwen
-ms.date: 09/21/2021
+ms.date: 09/30/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, pre-sale, research, purchase, before you buy
 appliesto:
@@ -75,17 +75,19 @@ Find out more about [inside-out tracking](./tracking-system.md).
 
 | Headset | Resolution | Display | Refresh Rate | FOV | Audio | Bluetooth | IPD Adjustment | Release Date | More info |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Acer AH101 | 2880x1440 | LCD | Up to 90 Hz | 100˚ | 3.5-mm jack | None | Software | Fall 2017 | [Acer](https://www.acer.com/ac/en/US/content/windows-mixed-reality-home) |
-| Acer OJO 500 | 2880x1440 | LCD | Up to 90 Hz | 100˚ | Integrated + 3.5-mm jack | Built-in | Mechanical | Fall 2018 | [Acer](https://www.acer.com/ac/en/US/press/2018/427890) |
-| ASUS HC102 | 2880x1440 | LCD | Up to 90 Hz | 95˚ | 3.5-mm jack | None | Software | Fall 2017 | <mark> [ASUS](https://www.asus.com/us/Headset/ASUS-Windows-Mixed-Reality-Headset-HC102/) </mark> |
-| Dell Visor | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None | Software| Fall 2017 | <mark> [Dell](https://www.dell.com/en-us/shop/accessories/apd/536-bbbr?~ck=mn) </mark> |
+| Acer AH101 | 2880x1440 | LCD | Up to 90 Hz | 100˚ | 3.5-mm jack | None | Software | Fall 2017 | [Acer](https://www.acer.com/ac/en/US/content/model/VD.R05AP.002) |
+| Acer OJO 500 | 2880x1440 | LCD | Up to 90 Hz | 100˚ | Integrated + 3.5-mm jack | Built-in | Mechanical | Fall 2018 | [Acer](https://www.acer.com/ac/en/US/content/acerdesign-ojo-500) |
+| ASUS HC102 | 2880x1440 | LCD | Up to 90 Hz | 95˚ | 3.5-mm jack | None | Software | Fall 2017 | [ASUS](https://www.vr-compare.com/headset/asushc102) |
+| Dell Visor | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None | Software| Fall 2017 | [Dell](https://www.vr-compare.com/headset/dellvisor) |
 | Fujitsu FMV Headset | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None |Software | Fall 2017 | [Fujitsu](http://pr.fujitsu.com/jp/news/2017/10/17.html) |
-| HP Reverb | 4320x2160 | LCD | Up to 90 Hz | 114˚ | Integrated + 3.5-mm jack | Built-in |Software | Spring 2019| [HP](https://www8.hp.com/us/en/workstations/mixed-reality-headset/index.html) |
-| HP VR1000 | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None | Software | Fall 2017 | [HP](https://store.hp.com/us/en/pdp/hp-windows-mixed-reality-headset-vr1000-100) |
-| Lenovo Explorer | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None | Software | Fall 2017 | <mark> [Lenovo](https://www.lenovo.com/us/en/virtual-reality-and-smart-devices/virtual-and-augmented-reality/lenovo-explorer/Lenovo-Explorer/p/G10NREAG0A2) </mark> |
-| Medion ERAZER MR X1000 | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None | Software | Fall 2017 | [Medion](https://www.medion.com/be/shop/monitoren-medion-erazer-mr-x1000-vr-headset-controllers-30023616a1.html) |
-| Samsung HMD Odyssey | 2880x1600 | AMOLED | Up to 90 Hz | 110˚ | Integrated | None | Mechanical | Fall 2017 | <mark> [Samsung](https://www.samsung.com/us/computing/hmd/windows-mixed-reality/xe800zaa-hc1us-xe800zaa-hc1us/?redir=windows%20mixed%20reality) </mark> |
-| Samsung HMD Odyssey+ | 2880x1600 | AMOLED | Up to 90 Hz | 110˚ | Integrated | Built-in | Mechanical | Fall 2018 | <mark> [Samsung](https://www.samsung.com/us/computing/hmd/windows-mixed-reality/hmd-odyssey-windows-mixed-reality-headset-xe800zba-hc1us/) </mark> |
+| HP Reverb | 4320x2160 | LCD | Up to 90 Hz | 114˚ | Integrated + 3.5-mm jack | Built-in |Software | Spring 2019| [HP](https://www.vr-compare.com/headset/hpreverb) |
+| HP VR1000 | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None | Software | Fall 2017 | [HP](https://www.hp.com/us-en/shop/cv/mixed-reality-headset) |
+| HP Reverb G2 | 2160x2160 | LCD | Up to 90 Hz | 107° | Integrated | Built-in | Mechanical | Fall 2020 | [HP](https://www.hp.com/us-en/shop/pdp/hp-reverb-g2-virtual-reality-headset) |
+| HP Reverb G2 Omnicept | 2160x2160 | LCD | Up to 90 Hz | 107° | Integrated | Built-in | Mechanical | Spring 2021 | [HP](https://www.hp.com/us-en/shop/pdp/hp-reverb-g2-omnicept-edition-%282e5q4av%29) |
+| Lenovo Explorer | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None | Software | Fall 2017 | [Lenovo](https://support.lenovo.com/us/en/solutions/pd500067-overview-for-lenovo-explorer) |
+| Medion ERAZER MR X1000 | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None | Software | Fall 2017 | [Medion](https://www.medion.com/de/shop/p/gaming-zubehoer-medion-erazer-x1000-mr-glasses-inkl-2-motion-controller-7-34-cm-2-89--lc-display-gaming-zubehoer-bis-zu-105-sichtfeld-2-kameras-zur-bewegungserfassung-30023616A1?clear=true#specs) |
+| Samsung HMD Odyssey | 2880x1600 | AMOLED | Up to 90 Hz | 110˚ | Integrated | None | Mechanical | Fall 2017 | [Samsung](https://www.samsung.com/us/support/computing/hmd/hmd-odyssey/hmd-odyssey-mixed-reality/) |
+| Samsung HMD Odyssey+ | 2880x1600 | AMOLED | Up to 90 Hz | 110˚ | Integrated | Built-in | Mechanical | Fall 2018 | [Samsung](https://www.samsung.com/us/support/computing/hmd/hmd-odyssey/hmd-odyssey-plus-mixed-reality//hmd-odyssey-windows-mixed-reality-headset-xe800zba-hc1us/)  |
 | 3Glasses Blubur S2 | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None | Software | Fall 2017 | [3Glasses](http://3glasses.com/goods.action?gid=30) |
 
 Technical details listed above are referenced from manufacturer specifications and are subject to change.

@@ -3,7 +3,7 @@ title: Software overview and release history
 description: An overview of the major software components for Windows Mixed Reality, immersive headsets, and their release history.
 author: qianw211
 ms.author: v-qianwen
-ms.date: 09/24/2021
+ms.date: 09/30/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, software components, release history, release notes, version history
 appliesto:
@@ -19,7 +19,7 @@ Windows Mixed Reality consists of the following major software components:
 1. **Mixed Reality Portal**, which provides the main Windows Mixed Reality experience
     * In Windows 10 versions 1709 and 1803, Mixed Reality Portal is a key component of the Windows 10 operating system updated via Windows Update.
     * In Windows 10 version 1809 and newer, Mixed Reality Portal is updated via the Microsoft Store app.
-    * In Windows 11 <mark> version xxxx </mark>.
+    * In Windows 11 version 21H2.
 2. The **Mixed Reality feature-on-demand package** (FOD), automatically downloaded and installed during Mixed Reality Portal's first-run. More information about the FOD package can be found [here](/windows/application-management/manage-windows-mixed-reality)
 3. The **Mixed Reality headset and motion controller driver**, also known as the HoloLens Sensors driver, is the key driver package that enables Windows Mixed Reality headsets to work with Windows Mixed Reality. This is automatically downloaded and installed via Windows Update the first time your Mixed Reality headset is plugged in, and is regularly updated via Windows Update
 4. The **Mixed Reality motion controller model drivers contain the 3D models of the Mixed Reality motion controllers and needed for third-party Mixed Reality experiences. This is automatically downloaded and installed via Windows Update the first time your Mixed Reality motion controllers are paired to your PC, and is updated via Windows Update
@@ -38,19 +38,20 @@ Managing your Windows Mixed Reality headset:
 
 ### Infinite Expanse
 
-* New WMR home environment with a significant reduction in scope and size. <mark> Can we be more specific here regarding to what scope and size? </mark>
-* Built to address long-standing customer requests for a more streamlined and performant WMR environment. <mark> again, can we be more specific and provide screenshots if necessary? </mark>
-		
-### Steam boot on launch
+* New virtual home environment for Windows Mixed Reality devices featuring a significant reduction in scope and size, streamlined down to singular stage instead of the more feature-rich Cliffhouse. 
+* Built with performance in mind, the Infinite Expanse was designed to address long-standing customer requests for a less resource-intensive virtual home environment that allows customers to get the best performance out of their games and experiences. 
+* This new virtual home environment can be found in the **Pins Panel** within the **Places** menu. 
+
+### SteamVR boot with Mixed Reality Portal launch
 
 * New setting available to automatically launch SteamVR when WMR launches, allowing you to bypass WMR home space and jump directly into SteamVR.
-* This new setting can be found in the **Settings** app under **Mixed Reality > Startup and Desktop > Automatic Startup**.
+   * This new setting can be found in the **Settings** app under **Mixed Reality > Startup and Desktop > Automatic Startup**.
 	
-### New Startup experience settings
+### New startup experience settings
 
-* New settings available to configure your startup experience. <mark> Can we be more descriptive as to what this experience is like? How is it different from the previous experience and the benefits. </mark>
-* Built to address customer issues with headsets/systems launching MRP unintentionally.  <mark> How is this issue addressed? </mark>
-* New settings can be found in the **Settings** app under **Mixed Reality > Startup and Desktop**
+* New settings available to better configure your ideal startup experience by increasing your level of control over when Mixed Reality Portal launches.
+* You can now control whether or not Mixed Reality Portal launches when a device is connected or when the presence sensor is activated, as well as control how the virtual Desktop app opens.
+* These new settings can be found in the **Settings** app under **Mixed Reality > Startup and Desktop**
     * Toggle to start MRP on HMD plug-in.
     * Toggle to start MRP when presence is detected.
     * Toggle Open Desktop app on desktop app focus.
