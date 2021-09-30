@@ -23,8 +23,8 @@ The Windows Device Portal for HoloLens lets you configure and manage your device
 
 This documentation is specifically about the Windows Device Portal for HoloLens. To use the Windows Device portal for desktop (including for Windows Mixed Reality), see [Windows Device Portal overview](/windows/uwp/debug-test-perf/device-portal)
 
-> [NOTE!]
-> Using device portal is not recommended to be used for HoloLens devices you are deploying to your organization.
+> [!NOTE]
+> Device Portal is a developer tool and is not to be used in applications deployed to your organization.
 
 ## Setting up HoloLens to use Windows Device Portal
 
@@ -175,7 +175,7 @@ Once the installation is complete, go back to the **All apps** page on your Holo
 *Windows Device Portal home page on Microsoft HoloLens*
 
 > [NOTE]
-> Settings configured in the device portal apply to the entire device and persist through reboots. It is recommended to only use device portal when developing, and not on deployed devices.
+> Settings configured in the Device Portal apply to the entire device and persist through reboots. It is recommended to only use Device Portal when developing, and not on deployed devices.
 
 Your Device Portal session starts at the Home page. Access other pages from the navigation bar along the left side of the home page.
 
@@ -244,8 +244,8 @@ To import maps and anchors, select **Upload a map file** and **Upload an anchor 
 ![Mixed Reality Capture page in Windows Device Portal on Microsoft HoloLens](images/using-windows-portal-img-07.png)<br>
 *Mixed Reality Capture page in Windows Device Portal on Microsoft HoloLens*
 
-> [IMPORTANT]
-> Settings configured in the device portal apply to the entire device and persist through reboots. Any settings modified in the device portal will apply to mixed reality captures and apps. Since these settings are persistent, it is recommended to only use device portal when developing, and not on deployed devices.
+> [!IMPORTANT]
+> Settings configured in the Device Portal apply to the entire device and persist through reboots. Any settings modified in the Device Portal will apply to mixed reality captures and apps. Only use Device Portal when developing, and not for applications deployed to your organization.
 
 Use the Mixed Reality Capture page to save media streams from the HoloLens.
 * **Capture Settings**: Control the media streams that are captured by checking the following settings:
@@ -430,7 +430,7 @@ Click or tap the region under **Virtual keyboard** to enable sending keystrokes 
 
 ## Device Portal REST APIs
 
-Everything in the device portal is built on top of [REST APIs](device-portal-api-reference.md) that you can optionally use to access the data and control your device programmatically.
+Everything in the Device Portal is built on top of [REST APIs](device-portal-api-reference.md) that you can optionally use to access the data and control your device programmatically.
 
 ## Troubleshooting
 
@@ -443,7 +443,7 @@ Everything in the device portal is built on top of [REST APIs](device-portal-api
 
 1. Select **Reset layout** from the top-left Menu:
 
-![Selecting Reset layout from the device portal menu](images/using-windows-portal-img-20.png)
+![Selecting Reset layout from the Device Portal menu](images/using-windows-portal-img-20.png)
 
 2. Click **Reset layout** under the **Reset workspace** heading. The portal page will automatically refresh and display your content.
 

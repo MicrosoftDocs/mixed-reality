@@ -96,72 +96,72 @@
         href: unity/tutorials.md
       - name: HoloLens 2 tutorials
         items:
-        - name: Hololens 2 fundamentals tutorials
-          href: /learn/paths/beginner-hololens-2-tutorials/
-        - name: Multi-user capabilities tutorials
-          items:
-            - name: 1. Introduction
-              href: unity/tutorials/mr-learning-sharing-01.md
-            - name: 2. Setting up Photon Unity Networking
-              href: unity/tutorials/mr-learning-sharing-02.md
-            - name: 3. Connecting multiple users
-              href: unity/tutorials/mr-learning-sharing-03.md
-            - name: 4. Sharing object movements with multiple users
-              href: unity/tutorials/mr-learning-sharing-04.md
-            - name: 5. Integrating Azure Spatial Anchors into a shared experience
-              href: unity/tutorials/mr-learning-sharing-05.md
-        - name: HoloLens (1st Gen) and immersive headset tutorials
-          items:
-            - name: Mixed Reality features
-              items:
-                - name: HoloLens (1st gen) Basics 100 - Getting started with Unity
-                  href: unity/tutorials/holograms-100.md
-                - name: HoloLens (1st gen) Basics 101 - Complete project with device
-                  href: unity/tutorials/holograms-101.md
-                - name: HoloLens (1st gen) Basics 101E - Complete project with emulator
-                  href: unity/tutorials/holograms-101e.md
-                - name: HoloLens (1st gen) Input 210 - Gaze
-                  href: unity/tutorials/holograms-210.md
-                - name: HoloLens (1st gen) Input 211 - Gesture
-                  href: unity/tutorials/holograms-211.md
-                - name: HoloLens (1st gen) Input 212 - Voice
-                  href: unity/tutorials/holograms-212.md
-                - name: HoloLens (1st gen) Spatial 220 - Spatial sound
-                  href: unity/tutorials/holograms-220.md
-                - name: HoloLens (1st gen) Spatial 230 - Spatial mapping
-                  href: unity/tutorials/holograms-230.md
-                - name: HoloLens (1st gen) Sharing 240 - Multiple HoloLens devices
-                  href: unity/tutorials/holograms-240.md
-            - name: Mixed Reality and Azure Services
-              items:
-                - name: HoloLens (1st gen) and Azure 301 - Language translation
-                  href: unity/tutorials/mr-azure-301.md
-                - name: HoloLens (1st gen) and Azure 302 - Computer vision
-                  href: unity/tutorials/mr-azure-302.md
-                - name: HoloLens (1st gen) and Azure 302b - Custom vision
-                  href: unity/tutorials/mr-azure-302b.md
-                - name: HoloLens (1st gen) and Azure 303 - Natural language understanding
-                  href: unity/tutorials/mr-azure-303.md
-                - name: HoloLens (1st gen) and Azure 304 - Face recognition
-                  href: unity/tutorials/mr-azure-304.md
-                - name: HoloLens (1st gen) and Azure 305 - Functions and storage
-                  href: unity/tutorials/mr-azure-305.md
-                - name: HoloLens (1st gen) and Azure 306 - Streaming video
-                  href: unity/tutorials/mr-azure-306.md
-                - name: HoloLens (1st gen) and Azure 307 - Maching learning
-                  href: unity/tutorials/mr-azure-307.md
-                - name: HoloLens (1st gen) and Azure 308 - Cross-device notifications
-                  href: unity/tutorials/mr-azure-308.md
-                - name: HoloLens (1st gen) and Azure 309 - Application insights
-                  href: unity/tutorials/mr-azure-309.md
-                - name: HoloLens (1st gen) and Azure 310 - Object detection
-                  href: unity/tutorials/mr-azure-310.md
-                - name: HoloLens (1st gen) and Azure 311 - Microsoft Graph
-                  href: unity/tutorials/mr-azure-311.md
-                - name: HoloLens (1st gen) and Azure 312 - Bot integration
-                  href: unity/tutorials/mr-azure-312.md
-                - name: HoloLens (1st gen) and Azure 313 - IoT Hub Service
-                  href: unity/tutorials/mr-azure-301.md
+          - name: HoloLens 2 Fundamentals Tutorials
+            href: /learn/paths/beginner-hololens-2-tutorials/
+          - name: Multi-user capabilities tutorials
+            items:
+              - name: 1. Introduction
+                href: unity/tutorials/mr-learning-sharing-01.md
+              - name: 2. Setting up Photon Unity Networking
+                href: unity/tutorials/mr-learning-sharing-02.md
+              - name: 3. Connecting multiple users
+                href: unity/tutorials/mr-learning-sharing-03.md
+              - name: 4. Sharing object movements with multiple users
+                href: unity/tutorials/mr-learning-sharing-04.md
+              - name: 5. Integrating Azure Spatial Anchors into a shared experience
+                href: unity/tutorials/mr-learning-sharing-05.md
+      - name: HoloLens (1st Gen) and immersive headset tutorials
+        items:
+          - name: Mixed Reality features
+            items:
+              - name: HoloLens (1st gen) Basics 100 - Getting started with Unity
+                href: unity/tutorials/holograms-100.md
+              - name: HoloLens (1st gen) Basics 101 - Complete project with device
+                href: unity/tutorials/holograms-101.md
+              - name: HoloLens (1st gen) Basics 101E - Complete project with emulator
+                href: unity/tutorials/holograms-101e.md
+              - name: HoloLens (1st gen) Input 210 - Gaze
+                href: unity/tutorials/holograms-210.md
+              - name: HoloLens (1st gen) Input 211 - Gesture
+                href: unity/tutorials/holograms-211.md
+              - name: HoloLens (1st gen) Input 212 - Voice
+                href: unity/tutorials/holograms-212.md
+              - name: HoloLens (1st gen) Spatial 220 - Spatial sound
+                href: unity/tutorials/holograms-220.md
+              - name: HoloLens (1st gen) Spatial 230 - Spatial mapping
+                href: unity/tutorials/holograms-230.md
+              - name: HoloLens (1st gen) Sharing 240 - Multiple HoloLens devices
+                href: unity/tutorials/holograms-240.md
+          - name: Mixed Reality and Azure Services
+            items:
+              - name: HoloLens (1st gen) and Azure 301 - Language translation
+                href: unity/tutorials/mr-azure-301.md
+              - name: HoloLens (1st gen) and Azure 302 - Computer vision
+                href: unity/tutorials/mr-azure-302.md
+              - name: HoloLens (1st gen) and Azure 302b - Custom vision
+                href: unity/tutorials/mr-azure-302b.md
+              - name: HoloLens (1st gen) and Azure 303 - Natural language understanding
+                href: unity/tutorials/mr-azure-303.md
+              - name: HoloLens (1st gen) and Azure 304 - Face recognition
+                href: unity/tutorials/mr-azure-304.md
+              - name: HoloLens (1st gen) and Azure 305 - Functions and storage
+                href: unity/tutorials/mr-azure-305.md
+              - name: HoloLens (1st gen) and Azure 306 - Streaming video
+                href: unity/tutorials/mr-azure-306.md
+              - name: HoloLens (1st gen) and Azure 307 - Maching learning
+                href: unity/tutorials/mr-azure-307.md
+              - name: HoloLens (1st gen) and Azure 308 - Cross-device notifications
+                href: unity/tutorials/mr-azure-308.md
+              - name: HoloLens (1st gen) and Azure 309 - Application insights
+                href: unity/tutorials/mr-azure-309.md
+              - name: HoloLens (1st gen) and Azure 310 - Object detection
+                href: unity/tutorials/mr-azure-310.md
+              - name: HoloLens (1st gen) and Azure 311 - Microsoft Graph
+                href: unity/tutorials/mr-azure-311.md
+              - name: HoloLens (1st gen) and Azure 312 - Bot integration
+                href: unity/tutorials/mr-azure-312.md
+              - name: HoloLens (1st gen) and Azure 313 - IoT Hub Service
+                href: unity/tutorials/mr-azure-301.md
   - name: Setting up your project
     items:
     - name: Choosing a Unity version and XR plugin
@@ -368,7 +368,7 @@
         href: unreal/unreal-publishing-to-store.md
 - name: JavaScript  
   items:
-  - name: JavaScript development overview 
+  - name: JavaScript development with WebXR 
     href: javascript/webxr-overview.md
   - name: Tutorials
     items:
@@ -380,9 +380,17 @@
           href: javascript/tutorials/babylonjs-webxr-helloworld/prepare-scene-02.md
         - name: 3. Interact with 3D object
           href: javascript/tutorials/babylonjs-webxr-helloworld/interact-03.md
+      - name: Build a piano in WebXR using babylon.js
+        items: 
+        - name: 1. Introduction
+          href: javascript/tutorials/babylonjs-webxr-piano/introduction-01.md
+        - name: 2. Build a 3D piano model
+          href: javascript/tutorials/babylonjs-webxr-piano/keyboard-model-02.md
+        - name: 3. Play the 3D piano
+          href: javascript/tutorials/babylonjs-webxr-piano/keyboard-interaction-03.md
 - name: Native Development
   items:
-  - name: Native Development
+  - name: Native development overview
     href: native/directx-development-overview.md
   - name: OpenXR
     items:
