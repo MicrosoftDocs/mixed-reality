@@ -1,13 +1,13 @@
 ---
 title: Headset Display FAQs
 description: Display Windows Mixed Reality troubleshooting for headset display issues that goes beyond our standard consumer support documentation.
-author: hferrone
-ms.author: v-hferrone
-ms.date: 09/15/2020
+author: qianw211
+ms.author: v-qianwen
+ms.date: 09/30/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support
 appliesto:
-    - Windows 10
+    - Windows 10 and Windows 11
 ---
 
 # Headset display FAQs
@@ -92,7 +92,7 @@ Unplug the HDMI cable and the USB cable from the headset and then plug them back
 
 ## I'm getting a "The install class is not present or is invalid" error in Device Manager
 
-If you see "HoloLens Sensors" with a yellow exclamation mark in Device Manager, select the device for additional details. If you see a message saying "The drivers for this device aren't installed. (Code 28)--The install class isn't present or is invalid", this is typically because your PC is running [Windows 10 N](https://support.microsoft.com/en-us/help/4039813/media-feature-pack-for-windows-10-n-october-2017). N editions of Windows 10 don't support Windows Mixed Reality, and you'll need to install a non-N version of Windows 10.
+If you see "HoloLens Sensors" with a yellow exclamation mark in Device Manager, select the device for additional details. If you see a message saying "The drivers for this device aren't installed. (Code 28)--The install class isn't present or is invalid", this is typically because your PC is running [Windows 10 N](https://support.microsoft.com/en-us/help/4039813/media-feature-pack-for-windows-10-n-october-2017). N editions of Windows 10 and Windows 11 don't support Windows Mixed Reality, and you'll need to install a non-N version of Windows 10 or Windows 11.
 
 ## My WMR environment is jittery or stutters when I move my head and displays double vision
 
