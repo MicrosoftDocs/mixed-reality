@@ -38,6 +38,10 @@ Managing your Windows Mixed Reality headset:
 
 ### Infinite Expanse
 
+<img src="images\infinite-expanse-win11.png" alt="The Infinite Explanse environment">
+
+<br>
+
 * New virtual home environment for Windows Mixed Reality devices featuring a significant reduction in scope and size, streamlined down to singular stage instead of the more feature-rich Cliffhouse. 
 * Built with performance in mind, the Infinite Expanse was designed to address long-standing customer requests for a less resource-intensive virtual home environment that allows customers to get the best performance out of their games and experiences. 
 * This new virtual home environment can be found in the **Pins Panel** within the **Places** menu. 
