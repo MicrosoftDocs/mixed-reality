@@ -1,7 +1,7 @@
 ---
 title: Coordinate System Synchronization with Holographic Remoting and the OpenXR API
-description: 
-author: vimusch
+description: This page explains how Coordinate System Synchronization with Holographic Remoting and the OpenXR API works
+author: vimusc
 ms.author: vimusch
 ms.date: 09/07/2021
 ms.topic: article
@@ -10,7 +10,7 @@ keywords: HoloLens, HoloLens 2, mixed reality, MRTK, Mixed Reality Toolkit, augm
 
 # Coordinate System Synchronization with Holographic Remoting and the OpenXR API
 
-With the OpenXR API the user coordinate system is wrapped into a reference space of type ```XR_REMOTING_REFERENCE_SPACE_TYPE_USER_MSFT```.
+With the OpenXR API, the user coordinate system is wrapped into a reference space of type ```XR_REMOTING_REFERENCE_SPACE_TYPE_USER_MSFT```.
 
 >[!TIP]
 >A simple example can be found in the remote and player samples inside the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).

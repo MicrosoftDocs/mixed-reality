@@ -35,22 +35,21 @@ The following APIs are currently **not** supported when using Holographic Remoti
 
 * [HolographicCamera.ViewConfiguration](/uwp/api/windows.graphics.holographic.holographiccamera.viewconfiguration)
   - Supported starting with version [2.0.18](holographic-remoting-version-history.md#v2.0.18)
-  - On previous versions always raise an error.
+  - On previous versions, always raise an error.
 * [HolographicCamera.IsHardwareContentProtectionEnabled](/uwp/api/windows.graphics.holographic.holographiccamera.ishardwarecontentprotectionenabled#Windows_Graphics_Holographic_HolographicCamera_IsHardwareContentProtectionEnabled)
 * [HolographicViewConfiguration.RequestRenderTargetSize](/uwp/api/windows.graphics.holographic.holographicviewconfiguration.requestrendertargetsize#Windows_Graphics_Holographic_HolographicViewConfiguration_RequestRenderTargetSize_Windows_Foundation_Size_)
   - Supported starting with version [2.2.0](holographic-remoting-version-history.md#v2.2.0)
-  - On previous versions don't fail, but the render target size won't be changed.
+  - On previous versions, don't fail, but the render target size won't be changed.
 * [HolographicCameraPose.OverrideProjectionTransform](/uwp/api/windows.graphics.holographic.holographiccamerapose.overrideprojectiontransform)
 * [HolographicCameraPose.OverrideViewport](/uwp/api/windows.graphics.holographic.holographiccamerapose.overrideviewport)
 * [HolographicCameraPose.OverrideViewTransform](/uwp/api/windows.graphics.holographic.holographiccamerapose.overrideviewtransform)
   - Supported starting with version [2.2.0](holographic-remoting-version-history.md#v2.2.0)
 * [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)
-  - Doe.
   - Supported starting with version [2.1.0](holographic-remoting-version-history.md#v2.1.0)
 * [HolographicDisplay.TryGetViewConfiguration](/uwp/api/windows.graphics.holographic.holographicdisplay.trygetviewconfiguration)
   - Querying HolographicViewConfigurationKind.PhotoVideoCamera will always return a ```nullptr```.
   - Supported starting with version [2.0.18](holographic-remoting-version-history.md#v2.0.18)
-  - On previous versions always raise an error.
+  - On previous versions, always raise an error.
 * [HolographicSpace.CreateFramePresentationMonitor](/uwp/api/windows.graphics.holographic.holographicspace.createframepresentationmonitor)
 * [HolographicDisplay.GetDefault](/uwp/api/windows.graphics.holographic.holographicdisplay.getdefault#Windows_Graphics_Holographic_HolographicDisplay_GetDefault)
   - Will report an error if called before a connection was established.
@@ -66,18 +65,18 @@ The following APIs are currently **not** supported when using Holographic Remoti
 * [SpatialLocation.AbsoluteLinearVelocity](/uwp/api/windows.perception.spatial.spatiallocation.absolutelinearvelocity)
 * [SpatialStageFrameOfReference.Current](/uwp/api/windows.perception.spatial.spatialstageframeofreference.current)
   - Supported starting with version [2.2.0](holographic-remoting-version-history.md#v2.2.0)
-  - On previous versions always return ```nullptr```.
+  - On previous versions, always return ```nullptr```.
 * [SpatialStageFrameOfReference.RequestNewStageAsync](/uwp/api/windows.perception.spatial.spatialstageframeofreference.requestnewstageasync)
   - Supported starting with version [2.2.0](holographic-remoting-version-history.md#v2.2.0)
 * [SpatialAnchor.RemovedByUser](/uwp/api/windows.perception.spatial.spatialanchor.removedbyuser)
 * [SpatialAnchorExporter.GetDefault](/uwp/api/windows.perception.spatial.spatialanchorexporter.getdefault
 )
   - Supported starting with version [2.0.9](holographic-remoting-version-history.md#v2.0.9). 
-  - On previous versions always return ```nullptr```. 
+  - On previous versions, always return ```nullptr```. 
 * [SpatialAnchorExporter.RequestAccessAsync](/uwp/api/windows.perception.spatial.spatialanchorexporter.requestaccessasync
 )
   - Supported starting with version [2.0.9](holographic-remoting-version-history.md#v2.0.9). 
-  - On previous versions the async operation always completed with ```SpatialPerceptionAccessStatus.DeniedBySystem```.
+  - On previous versions, the async operation always completed with ```SpatialPerceptionAccessStatus.DeniedBySystem```.
 * [SpatialAnchorTransferManager.RequestAccessAsync](/uwp/api/windows.perception.spatial.spatialanchortransfermanager.requestaccessasync#Windows_Perception_Spatial_SpatialAnchorTransferManager_RequestAccessAsync)
   - Async operation always completes with ```SpatialPerceptionAccessStatus.DeniedBySystem```.
 * [SpatialAnchorTransferManager.TryExportAnchorsAsync](/uwp/api/windows.perception.spatial.spatialanchortransfermanager.tryexportanchorsasync#Windows_Perception_Spatial_SpatialAnchorTransferManager_TryExportAnchorsAsync_Windows_Foundation_Collections_IIterable_Windows_Foundation_Collections_IKeyValuePair_System_String_Windows_Perception_Spatial_SpatialAnchor___Windows_Storage_Streams_IOutputStream_)

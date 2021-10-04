@@ -1,7 +1,7 @@
 ---
 title: Custom Data Channels with Holographic Remoting and the OpenXR API
-description: Custom data channels can be used to send user data over the already established Holographic Remoting connection.
-author: vimusch
+description: This page explains how custom data channels can be used with the OpenXR API to send user data over the already established Holographic Remoting connection.
+author: vimusc
 ms.author: vimusch
 ms.date: 09/07/2021
 ms.topic: article

@@ -429,14 +429,14 @@
                   href: platform-capabilities-and-apis/holographic-remoting-coordinate-system-synchronization.md
                 - name : Coordinate System Synchronization with the Windows Mixed Reality API
                   href: platform-capabilities-and-apis/holographic-remoting-coordinate-system-synchronization-wmr.md
-        - name: Troubleshooting and limitations
+            - name: Holographic Remoting for HoloLens (1st Gen)
+              href: platform-capabilities-and-apis/add-holographic-remoting.md
+        - name: Troubleshooting and Limitations
           href: platform-capabilities-and-apis/holographic-remoting-troubleshooting.md
-        - name: Version history
+        - name: Version History
           href: platform-capabilities-and-apis/holographic-remoting-version-history.md
-        - name: Holographic Remoting software license terms
+        - name: Software License Terms
           href: /legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
-        - name: Holographic Remoting for HoloLens (1st Gen)
-          href: platform-capabilities-and-apis/add-holographic-remoting.md
     - name: App quality and testing
       items:
         - name: App quality criteria

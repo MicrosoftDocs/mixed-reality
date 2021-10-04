@@ -76,13 +76,13 @@ m_holographicSpace = winrt::Windows::Graphics::Holographic::HolographicSpace::Cr
 
 ## Connect to the device
 
-When the remote app is ready for rendering content a connection to the player device can be established.
+When the remote app is ready for rendering content, a connection to the player device can be established.
 
 Connection can be done in one of two ways.
 1) The remote app connects to the player running on the device.
 2) The player running on the device connects to the remote app.
 
-To establish a connection from the remote app to the player device call the ```Connect``` method on the remote context specifying the hostname and port. The port used by the Holographic Remoting Player is **8265**.
+To establish a connection from the remote app to the player device, call the ```Connect``` method on the remote context specifying the hostname and port. The port used by the Holographic Remoting Player is **8265**.
 
 ```cpp
 try
@@ -183,7 +183,7 @@ winrt::Microsoft::Holographic::AppRemoting::IRemoteSpeech::OnRecognizedSpeech_re
 
 ```
 
-First the remote speech interface needs to be retrieved.
+First, the remote speech interface must be retrieved.
 
 ```cpp
 if (auto remoteSpeech = m_remoteContext.GetRemoteSpeech())
@@ -350,12 +350,12 @@ To verify if depth reprojection is correctly working on HoloLens 2, you can enab
 
 ## Optional: Custom data channels
 
-Custom data channels can be used to send user data over the already established remoting connection. See [custom data channels](holographic-remoting-custom-data-channels.md) for more information.
+Custom data channels can be used to send user data over the already established remoting connection. For more information, see [Custom Data Channels](holographic-remoting-custom-data-channels.md).
 
 ## Optional: Coordinate System Synchronization
 
 Starting with version [2.7.0](holographic-remoting-version-history.md#v2.7.0) coordinate system synchronization can be used to align spatial data between the player and remote application.
-See [Coordinate System Synchronization with Holographic Remoting Overview](holographic-remoting-coordinate-system-synchronization.md) for more information.
+For more information, see [Coordinate System Synchronization with Holographic Remoting Overview](holographic-remoting-coordinate-system-synchronization.md).
 
 ## See Also
 * [Holographic Remoting overview](holographic-remoting-overview.md)

@@ -168,7 +168,7 @@ Implement the `ICertificateValidator` interface as follows:
 
 ## Secure connection using the OpenXR API
 
-When using the [OpenXR API](../native/openxr.md) all secure connection-related API is available as part of the `XR_MSFT_holographic_remoting` OpenXR extension.
+When using the [OpenXR API](../native/openxr.md), all secure connection-related API is available as part of the `XR_MSFT_holographic_remoting` OpenXR extension.
 
 >[!IMPORTANT]
 >To learn about the Holographic Remoting OpenXR extension API, check out the [specification](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/main/remote_openxr/specification.html) which can be found in the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).

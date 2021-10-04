@@ -1,6 +1,6 @@
 ---
 title: Writing a custom Holographic Remoting player (C++)
-description: Create a custom Hologaphic Remoting app to display content rendered on a remote machine to your HoloLens 2. 
+description: Create a custom Holographic Remoting app to display content rendered on a remote machine to your HoloLens 2. 
 author: florianbagarmicrosoft
 ms.author: v-vtieto
 ms.date: 7/30/2021
@@ -41,7 +41,7 @@ The following steps are required to add the NuGet package to a project in Visual
 
 To make the application aware of the Microsoft.Holographic.AppRemoting.dll added by the NuGet package, the following steps need to be taken on the project:
 
-1. In the Solution Explorer right-click on the **Package.appxmanifest** file and select **Open With...**
+1. In the Solution Explorer, right-click on the **Package.appxmanifest** file and select **Open With...**
 2. Select **XML (Text) Editor** and select **OK**
 3. Add the following lines to the file and save
 ```xml
@@ -97,7 +97,7 @@ m_holographicSpace = winrt::Windows::Graphics::Holographic::HolographicSpace::Cr
 
 ## Connect to the remote app
 
-Once the player app is ready for rendering content a connection to the remote app can be established.
+Once the player app is ready for rendering content, a connection to the remote app can be established.
 
 The connection can be established in one of the following ways:
 1) The player app running on HoloLens 2 connects to the remote app.
@@ -201,7 +201,7 @@ On success, ```BlitRemoteFrame``` returns ```BlitResult::Success_Color```. Other
 - The remote app has committed a depth buffer via [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_).
 - The custom player app has bound a valid depth buffer before calling ```BlitRemoteFrame```.
 
-If these conditions are met ```BlitRemoteFrame``` will blit the remote depth into the currently bound local depth buffer. You can then render additional local content, which will have depth intersection with the remote rendered content. Additionally you can commit the local depth buffer via [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_) in your custom player to have depth reprojection for remote and local rendered content. See [Depth Reprojection](hologram-stability.md#reprojection) for details.
+If these conditions are met, ```BlitRemoteFrame``` will blit the remote depth into the currently bound local depth buffer. You can then render additional local content, which will have depth intersection with the remote rendered content. Additionally you can commit the local depth buffer via [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_) in your custom player to have depth reprojection for remote and local rendered content. See [Depth Reprojection](hologram-stability.md#reprojection) for details.
 
 ### Projection Transform Mode
 
@@ -243,17 +243,17 @@ For more information, see the ```PlayerFrameStatistics``` documentation in the `
 
 ## Optional: Custom data channels
 
-Custom data channels can be used to send user data over the already established remoting connection. See [custom data channels](holographic-remoting-custom-data-channels.md) for more information.
+Custom data channels can be used to send user data over the already established remoting connection. For more information, see [custom data channels](holographic-remoting-custom-data-channels.md).
 
 ## Optional: Over-Rendering
 
-Holographic Remoting predicts where the user's head will be when the rendered images appear on the displays. However, this prediction is an approximation, and the predicted viewport on the remote app and the later actual viewport on the player app can differ. Stronger deviations, for example due to unpredictable motion, can cause black regions at the borders of the viewing frustrum.
-Starting with version [2.6.0](holographic-remoting-version-history.md#v2.6.0) you can use Over-Rendering to reduce the black regions by artificially increasing the viewport beyond the viewing frustum and therefore enhance the visual quality.
+Holographic Remoting predicts where the user's head will be when the rendered images appear on the displays. However, this prediction is an approximation, and the predicted viewport on the remote app and the later actual viewport on the player app can differ. Stronger deviations, for example due to unpredictable motion, could cause black regions at the borders of the viewing frustrum.
+Starting with version [2.6.0](holographic-remoting-version-history.md#v2.6.0) you can use Over-Rendering to reduce the black regions by artificially increasing the viewport beyond the viewing frustrum and therefore enhance the visual quality.
 
 Over-Rendering can be enabled via ```PlayerContext::ConfigureOverRendering```.
 
 The ```OverRenderingConfig``` specifies a fractional size increase to the actual viewport, so that the predicted viewport becomes larger and therefore less cutting occurs.
-With an increased viewport size the pixel density decreases therefore, the OverRenderingConfig allows to increase the resolution as well.
+With an increased viewport size, the pixel density decreases therefore, the OverRenderingConfig allows you to increase the resolution as well.
 If the viewport increase is equal to the resolution increase the pixel density remains the same. The ```OverRenderingConfig``` is defined as:
 
 ```cpp
@@ -270,7 +270,7 @@ struct OverRenderingConfig
 ## Optional: Coordinate System Synchronization
 
 Starting with version [2.7.0](holographic-remoting-version-history.md#v2.7.0) coordinate system synchronization can be used to align spatial data between the player and remote app.
-See [Coordinate System Synchronization with Holographic Remoting Overview](holographic-remoting-coordinate-system-synchronization.md) for more information.
+For more information, see [Coordinate System Synchronization with Holographic Remoting Overview](holographic-remoting-coordinate-system-synchronization.md).
 
 ## See Also
 * [Holographic Remoting overview](holographic-remoting-overview.md)

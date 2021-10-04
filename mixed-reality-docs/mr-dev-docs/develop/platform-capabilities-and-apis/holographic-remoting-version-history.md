@@ -23,14 +23,14 @@ keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reali
 * Bug fixes and stability improvements.
 
 ## Version 2.6.1 (July 20, 2021) <a name="v2.6.1"></a>
-* The XR_MSFT_holographic_remoting_speech extension now allows re-initialization of the speech recognizer with new parameters during a running session.
+* The XR_MSFT_holographic_remoting_speech extension now allows reinitialization of the speech recognizer with new parameters during a running session.
 * Fixed an issue where speech recognition reliability decreased over multiple connections.
 * Various bug fixes and stability improvements.
 
 ## Version 2.6.0 (June 10, 2021) <a name="v2.6.0"></a>
 * Holographic Remoting using the OpenXR API now supports:
   * The new XR_MSFT_holographic_remoting_speech extension, which allows applications to listen to custom speech commands in various languages.
-  * The XR_MSFT_scene_understanding extension, which provides applications with a structured, high-level representation of the planes, meshes, and objects in the user's environment, enabling the development of spatially-aware applications. However, with the caveat that XR_SCENE_COMPUTE_CONSISTENCY_OCCLUSION_OPTIMIZED_MSFT is the only consistency supported by xrComputeNewSceneMSFT.
+  * The XR_MSFT_scene_understanding extension, which provides applications with a structured, high-level representation of the planes, meshes, and objects in the user's environment, enabling the development of spatially aware applications. However, with the caveat that XR_SCENE_COMPUTE_CONSISTENCY_OCCLUSION_OPTIMIZED_MSFT is the only consistency supported by xrComputeNewSceneMSFT.
   * The XR_MSFT_spatial_graph_bridge extension, which allows applications to create XrSpace handles to track the Spatial Graph Nodes of other Windows Mixed Reality device platform libraries or APIs. However, with the caveat that XR_SPATIAL_GRAPH_NODE_TYPE_STATIC_MSFT is the only node type supported by xrCreateSpatialGraphNodeSpaceMSFT. 
 * Holographic Remoting using the Mixed Reality API now supports:
   * The SpatialGraphInteropPreview.CreateCoordinateSystemForNode overloads, which allow applications to track static Spatial Graph Nodes so that users can reason about places and things in their environment.
@@ -52,8 +52,8 @@ keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reali
   * XR_MSFT_spatial_anchor extension. This extension allows an application to create spatial anchors, which are arbitrary freespace points in the user’s physical environment that will be tracked by the runtime.
   * XR_MSFT_controller_model extension. This extension provides a mechanism to load GLTF models for controllers.
   * Custom data channels as part of the XR_MSFT_holographic_remoting extension. An example for that is shown in the [OpenXR remote sample](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
-* Improved synchronization between player and remote side. This allows dynamically changing pose and frame buffering which ensures that remote rendered content smoothly reaches the displays at the expected target frame rate.
-* Improved performance of the Holographic Remoting player available via the Microsoft Store. On HoloLens 2 the player now runs solid on 60 frames per second.
+* Improved synchronization between player and remote side. This allows dynamically changing pose and frame buffering, which ensures that remote rendered content smoothly reaches the displays at the expected target frame rate.
+* Improved performance of the Holographic Remoting player available via the Microsoft Store. On HoloLens 2, the player now runs solid on 60 frames per second.
 * Optimized transmission of spatial surface meshes which can be queried via [SpatialSurfaceObserver](/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) by a remote app.
 * Fixed an issue in which calling SpatialAnchorManager methods or releasing anchors caused exceptions on disconnect.
 * Fixed threading issue leading to crashes when closing PlayerContext or RemoteContext instances.
