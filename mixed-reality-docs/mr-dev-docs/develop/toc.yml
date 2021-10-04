@@ -393,24 +393,42 @@
           href: platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md
         - name: Installing PIX for HoloLens 2
           href: platform-capabilities-and-apis/installing-pix-hololens.md
-    - name: Holographic remoting
+    - name: Holographic Remoting
       items:
-        - name: Holographic Remoting Overview
+        - name: Overview
           href: platform-capabilities-and-apis/holographic-remoting-overview.md
-        - name: The Holographic Remoting player
+        - name: Store Player
           href: platform-capabilities-and-apis/holographic-remoting-player.md
-        - name: Writing a Holographic Remoting remote app (C++)
+        - name: OpenXR API
           items:
-            - name: HolographicSpace API
-              href: platform-capabilities-and-apis/holographic-remoting-create-remote-wmr.md
-            - name: OpenXR API
+            - name: Writing a Remote App (C++)
               href: platform-capabilities-and-apis/holographic-remoting-create-remote-openxr.md
-        - name: Writing a custom Holographic Remoting Player app (C++)
-          href: platform-capabilities-and-apis/holographic-remoting-create-player.md
-        - name: Custom Holographic Remoting data channels (C++)
-          href: platform-capabilities-and-apis/holographic-remoting-custom-data-channels.md
-        - name: Secure Connection with Holographic Remoting (C++)
-          href: platform-capabilities-and-apis/holographic-remoting-secure-connection.md
+            - name: Custom Data Channels (C++)
+              href: platform-capabilities-and-apis/holographic-remoting-custom-data-channels-openxr.md
+            - name: Secure Connection (C++)
+              href: platform-capabilities-and-apis/holographic-remoting-secure-connection.md
+            - name: Coordinate System Synchronization (C++)
+              items:
+                - name : Overview
+                  href: platform-capabilities-and-apis/holographic-remoting-coordinate-system-synchronization.md
+                - name : Coordinate System Synchronization with the OpenXR API
+                  href: platform-capabilities-and-apis/holographic-remoting-coordinate-system-synchronization-openxr.md
+        - name: Windows Mixed Reality API
+          items:
+            - name: Writing a Remote App (C++)
+              href: platform-capabilities-and-apis/holographic-remoting-create-remote-wmr.md
+            - name: Writing a Custom Player App (C++)
+              href: platform-capabilities-and-apis/holographic-remoting-create-player.md
+            - name: Custom Data Channels (C++)
+              href: platform-capabilities-and-apis/holographic-remoting-custom-data-channels.md
+            - name: Secure Connection (C++)
+              href: platform-capabilities-and-apis/holographic-remoting-secure-connection.md
+            - name: Coordinate System Synchronization (C++)
+              items:
+                - name : Overview
+                  href: platform-capabilities-and-apis/holographic-remoting-coordinate-system-synchronization.md
+                - name : Coordinate System Synchronization with the Windows Mixed Reality API
+                  href: platform-capabilities-and-apis/holographic-remoting-coordinate-system-synchronization-wmr.md
         - name: Troubleshooting and limitations
           href: platform-capabilities-and-apis/holographic-remoting-troubleshooting.md
         - name: Version history

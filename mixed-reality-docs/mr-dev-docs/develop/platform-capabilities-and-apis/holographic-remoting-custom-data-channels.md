@@ -8,10 +8,10 @@ ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windows mixed reality headset, virtual reality headset, data channels
 ---
 
-# Custom Holographic Remoting data channels (C++)
+# Custom Data Channels with Holographic Remoting and the Windows Mixed Reality API
 
 >[!NOTE]
->This guidance is specific to Holographic Remoting on HoloLens 2.
+>This guidance is specific to Holographic Remoting on HoloLens 2 and Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md.
 
 Use custom data channels to send custom data over an established remoting connection.
 
@@ -19,7 +19,7 @@ Use custom data channels to send custom data over an established remoting connec
 >Custom data channels require a custom remote app and a custom player app, as it allows for communication between the two custom apps.
 
 >[!TIP]
->A simple ping-pong example can be found in the remote and player samples inside the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples). Uncomment ```#define ENABLE_CUSTOM_DATA_CHANNEL_SAMPLE``` inside the SampleRemoteMain.h / SamplePlayerMain.h files to enable the sample code.
+>A simple ping-pong example can be found in the remote and player samples inside the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples). Uncomment ```#define ENABLE_CUSTOM_DATA_CHANNEL_SAMPLE``` inside the SampleRemoteApp.h / SamplePlayerMain.h files to enable the sample code.
 
 
 ## Create a custom data channel

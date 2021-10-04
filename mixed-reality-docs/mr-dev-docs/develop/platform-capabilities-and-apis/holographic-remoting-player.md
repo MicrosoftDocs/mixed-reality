@@ -8,7 +8,7 @@ ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windows mixed reality headset, virtual reality headset, diagnostics, performance
 ---
 
-# Holographic Remoting Player
+# Holographic Remoting Store Player
 
 >[!TIP]
 >[Learn the basics of Holographic Remoting.](holographic-remoting-overview.md)
@@ -18,7 +18,7 @@ keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windo
 
 The [Holographic Remoting Player](https://www.microsoft.com/p/holographic-remoting-player/9nblggh4sv40) is a companion app that connects to PC apps and games that support Holographic Remoting. The Player is available for both HoloLens (first gen) and HoloLens 2.  PC apps that supported Holographic Remoting with HoloLens need to be updated to support Holographic Remoting with HoloLens 2. Contact your app provider if you have questions about which versions are supported.
 
->[!TIP]
+>[!Note]
 >Starting with version [2.2.0](holographic-remoting-version-history.md#v2.2.0) the Holographic Remoting player is also available for Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md).
 
 >[!TIP]

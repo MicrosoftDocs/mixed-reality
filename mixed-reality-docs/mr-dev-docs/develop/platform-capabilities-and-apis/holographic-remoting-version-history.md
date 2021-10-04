@@ -3,15 +3,24 @@ title: Holographic Remoting Version History
 description: Stay up to date on the version history of the Holographic Remoting feature for HoloLens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 07/20/2021
+ms.date: 09/29/2021
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
 # Holographic Remoting Version History
 
-> [!IMPORTANT]
-> This guidance is specific to Holographic Remoting on HoloLens 2.
+> [!NOTE]
+> This guidance is specific to Holographic Remoting on HoloLens 2 and Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md.
+
+## Version 2.7.0 (September 29, 2021) <a name="v2.7.0"></a>
+* Added support for the OpenXR extension XR_MSFT_spatial_anchor_persistence, which allows persistence and retrieval of spatial anchors across application sessions on a device.
+* Added a new user coordinate system type that can be used to synchronize spatial locations between custom players and remote applications.
+* Fixed an issue where connected and disconnected events from PlayerContext and RemoteContext could be broadcast concurrently or even in the wrong order. The broadcast now always happens in order, but prohibits blocking in an event handler to wait for the broadcast of a subsequent event.
+* Various bug fixes and stability improvements.
+
+## Version 2.6.2 (August 20, 2021) <a name="v2.6.2"></a>
+* Bug fixes and stability improvements.
 
 ## Version 2.6.1 (July 20, 2021) <a name="v2.6.1"></a>
 * The XR_MSFT_holographic_remoting_speech extension now allows re-initialization of the speech recognizer with new parameters during a running session.
@@ -28,6 +37,7 @@ keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reali
 * Holographic Remoting using both the OpenXR and Mixed Reality APIs now supports:
   * The Microsoft.MixedReality.SceneUnderstanding SDK, which allows applications to compute a description of the scene surrounding the user (such as walls, floors, and surfaces) providing quads, meshes, and content placement cues.
   * The Microsoft.MixedReality.QR SDK, which allows applications to track the location, size, and content of detected QR codes.
+  * Over-Rendering, to reduce black regions at the sides on the HMD.
 * The OpenXR remote sample has been updated to include:	
   * An example of using the XR_MSFT_holographic_remoting_speech extension.
 * The Mixed Reality remote sample has been updated to include:	
