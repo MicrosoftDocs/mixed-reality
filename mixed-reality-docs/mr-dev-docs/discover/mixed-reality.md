@@ -1,6 +1,6 @@
 ---
 title: What is Mixed Reality?
-description: Discussion on Mixed Reality, demomstrating the use of AR and VR devices on the Mixed Reality spectrum.
+description: Discussion on Mixed Reality, demonstrating the use of AR and VR devices on the Mixed Reality spectrum.
 author: qianw211    
 ms.author: v-qianwen
 ms.date: 07/01/2021
@@ -88,7 +88,7 @@ The experiences that overlay graphics, video streams, or holograms in the physic
 
 <br>
 
-Most augmented reality and virtual reality experiences available today represent a small subsets of the larger Mixed Reality spectrum. Windows 10 is built with the entire spectrum in mind, and allows blending digital representations of people, places, and things with the real world.
+Most augmented reality and virtual reality experiences available today represent a small subset of the larger Mixed Reality spectrum. Windows 10 is built with the entire spectrum in mind, and allows blending digital representations of people, places, and things with the real world.
 
 ## Devices and experiences
 
