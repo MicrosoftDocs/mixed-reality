@@ -1,4 +1,4 @@
-- name: Getting started
+- name: Basic building blocks
   items:
   - name: Introduction to Mixed Reality development  
     href: development.md
@@ -10,78 +10,16 @@
     href: mixed-reality-cloud-services.md
   - name: Samples and feature apps
     href: features-and-samples.md
-- name: Developer concepts
-  items:
-  - name: Sharing and placing holograms
+  - name: Interactions
     items:
-    - name: Use anchors to share holograms
-      href: platform-capabilities-and-apis/shared-spatial-anchors-in-directx.md
-    - name: QR code tracking
-      href: platform-capabilities-and-apis/qr-code-tracking-overview.md
-  - name: Camera and capture
-    items:
-    - name: Locatable camera
-      href: platform-capabilities-and-apis/locatable-camera-overview.md
-    - name: Mixed Reality capture
-      href: platform-capabilities-and-apis/mixed-reality-capture-overview.md
-    - name: How it works - Mixed Reality Capture Studios
-      href: platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md
-  - name: Real-time Audio and Video
-    items:
-    - name: WebRTC (C#, C++, Unity)
-      href: https://github.com/microsoft/MixedReality-WebRTC
-  - name: Holographic remoting
-    items:
-    - name: Holographic Remoting Overview
-      href: platform-capabilities-and-apis/holographic-remoting-overview.md
-    - name: The Holographic Remoting player
-      href: platform-capabilities-and-apis/holographic-remoting-player.md
-  - name: App quality and testing
-    items:
-    - name: App quality criteria
-      href: platform-capabilities-and-apis/app-quality-criteria-overview.md
-    - name: Holographic rendering
-      href: platform-capabilities-and-apis/rendering-overview.md
-    - name: Volume rendering
-      href: platform-capabilities-and-apis/volume-rendering-overview.md
-    - name: Hologram stability
-      href: platform-capabilities-and-apis/hologram-stability-overview.md
-    - name: Understanding performance for Mixed Reality
-      href: platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md
-    - name: Using Visual Studio to deploy and debug
-      href: platform-capabilities-and-apis/using-visual-studio.md
-    - name: Testing your app on HoloLens
-      href: platform-capabilities-and-apis/testing-your-app-on-hololens.md
-    - name: Using the HoloLens Emulator
-      href: platform-capabilities-and-apis/using-the-hololens-emulator.md
-    - name: Using the Windows Mixed Reality simulator
-      href: platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md
-    - name: Advanced HoloLens Emulator and Mixed Reality Simulator input
-      href: platform-capabilities-and-apis/advanced-hololens-emulator-and-mixed-reality-simulator-input.md
-    - name: HoloLens Emulator archive
-      href: platform-capabilities-and-apis/hololens-emulator-archive.md
-    - name: Perception simulation
-      href: platform-capabilities-and-apis/perception-simulation-overview.md      
-  - name: Porting apps
-    items:
-    - name: Porting overview
-      href: porting-apps/porting-overview.md
-    - name: Porting HoloLens (1st Gen) apps to HoloLens 2
-      href: porting-apps/porting-hl1-hl2.md
-    - name: Porting VR apps to Windows Mixed Reality
-      href: porting-apps/porting-guides.md
-    - name: Updating SteamVR apps for Windows Mixed Reality
-      href: porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md
-    - name: Updating 2D UWP apps for Windows Mixed Reality
-      href: porting-apps/building-2d-apps.md
-  - name: Device Portal
-    items:
-    - name: Using the Windows Device Portal
-      href: platform-capabilities-and-apis/using-the-windows-device-portal.md
-  - name: Research tools
-    items:
-    - name: HoloLens Research Mode
-      href: platform-capabilities-and-apis/research-mode.md
+      - name: Keyboard, mouse and controller input
+        href: native/keyboard-mouse-and-controller-input-cpp.md
+      - name: Head and eye gaze
+        href: native/gaze-in-directx.md
+      - name: Hands and motion controllers
+        href: native/hands-and-motion-controllers-in-directx.md
+      - name: Voice input
+        href: native/voice-input-in-directx.md
 - name: Unity
   items:
   - name: Unity development for HoloLens
@@ -194,6 +132,8 @@
         items:
           - name: Motion controllers
             href: unity/motion-controllers-in-unity.md
+          - name: HP Reverb G2 controllers
+            href: unity/unity-reverb-g2-controllers.md
           - name: Gestures
             href: unity/gestures-in-unity.md
           - name: Hand and Eye tracking
@@ -224,6 +164,8 @@
         href: unity/keyboard-input-in-unity.md
       - name: Hologram stability
         href: unity/hologram-stability-in-unity.md
+      - name: QR code tracking API reference
+        href: unity/qr-code-tracking-unity.md
       - name: UDP packets in UWP apps
         href: unity/udp-packets-in-unity.md
       - name: Using the Windows namespace with Unity apps for HoloLens
@@ -234,10 +176,6 @@
         href: unity/use-pc-resources.md        
       - name: Using Vuforia
         href: unity/vuforia-development-overview.md
-  - name: Immersive VR
-    items:
-      - name: HP Reverb G2 controllers
-        href: unity/unity-reverb-g2-controllers.md
   - name: Sample apps
     items:
       - name: HoloLens 2
@@ -388,9 +326,9 @@
           href: javascript/tutorials/babylonjs-webxr-piano/keyboard-model-02.md
         - name: 3. Play the 3D piano
           href: javascript/tutorials/babylonjs-webxr-piano/keyboard-interaction-03.md
-- name: Native Development
+- name: Native engines
   items:
-  - name: Native development overview
+  - name: Native engines overview
     href: native/directx-development-overview.md
   - name: OpenXR
     items:
@@ -416,47 +354,33 @@
             href: native/rendering-in-directx.md
           - name: Coordinate systems
             href: native/coordinate-systems-in-directx.md
-      - name: Core building blocks
+      - name: Spatial Mapping
         items:
-          - name: Head and eye gaze
-            href: native/gaze-in-directx.md
-          - name: Hands and motion controllers (C++)
-            href: native/hands-and-motion-controllers-in-directx.md
-          - name: Voice input
-            href: native/voice-input-in-directx.md
           - name: Spatial mapping
             href: native/spatial-mapping-in-directx.md
-      - name: Inputs
-        items:
-          - name: Keyboard, mouse and controller input (C++)
-            href: native/keyboard-mouse-and-controller-input-cpp.md
       - name: App views 
         items:
         - name: Using XAML with holographic DirectX apps
           href: native/using-xaml-with-holographic-directx-apps.md
-      - name: Placing holograms
-        items:
-          - name: QR code tracking (C# and C++)
-            href: native/qr-code-tracking-cs-cpp.md
       - name: Camera and capture
         items:
-        - name: Locatable camera (with C++ samples)
+        - name: Locatable camera
           href: native/locatable-camera-cpp.md
         - name: Mixed reality capture (DirectX)
           href: native/mixed-reality-capture-directx.md
       - name: Holographic remoting
         items:
-        - name: Writing a Holographic Remoting remote app (C++)
+        - name: Writing a Holographic Remoting remote app
           items:
             - name: HolographicSpace API
               href: native/holographic-remoting-create-remote-wmr.md
             - name: OpenXR API
               href: native/holographic-remoting-create-remote-openxr.md
-        - name: Writing a custom Holographic Remoting Player app (C++)
+        - name: Writing a custom Holographic Remoting Player app
           href: native/holographic-remoting-create-player.md
-        - name: Custom Holographic Remoting data channels (C++)
+        - name: Custom Holographic Remoting data channels
           href: native/holographic-remoting-custom-data-channels.md
-        - name: Secure Connection with Holographic Remoting (C++)
+        - name: Secure Connection with Holographic Remoting
           href: native/holographic-remoting-secure-connection.md
         - name: Troubleshooting and limitations
           href: native/holographic-remoting-troubleshooting.md
@@ -468,18 +392,91 @@
           href: native/add-holographic-remoting.md
       - name: App quality and testing
         items:
-        - name: Volume rendering (with C++ samples)
+        - name: Volume rendering
           href: native/volume-rendering-cpp.md
-        - name: Hologram stability (with C# samples)
-          href: native/hologram-stability-with-cs.md
-        - name: Perception simulation (with C# samples)
-          href: native/perception-simulation-cs.md
+        - name: Hologram stability
+          href: native/hologram-stability-in-directx.md
         - name: Performance tuning and debugging
           href: platform-capabilities-and-apis/installing-pix-hololens.md
       - name: API References
         items:
-        - name: Device portal API reference (REST)
-          href: api-refs/device-portal-api-reference.md
         - name: QR code tracking API reference
           href: api-refs/qr-code-tracking-api-reference.md
-
+      - name: QR code tracking
+        items:
+        - name: QR code tracking
+          href: native/qr-code-tracking-cs-cpp.md
+- name: Advanced concepts
+  items:
+  - name: Camera and capture
+    items:
+    - name: Locatable camera
+      href: platform-capabilities-and-apis/locatable-camera-overview.md
+    - name: Mixed Reality capture
+      href: platform-capabilities-and-apis/mixed-reality-capture-overview.md
+    - name: How it works - Mixed Reality Capture Studios
+      href: platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md
+  - name: Sharing and placing holograms
+    items:
+    - name: Use anchors to share holograms
+      href: platform-capabilities-and-apis/shared-spatial-anchors-in-directx.md
+    - name: QR code tracking
+      href: platform-capabilities-and-apis/qr-code-tracking-overview.md
+  - name: Real-time Audio and Video
+    items:
+    - name: WebRTC (C#, C++, Unity)
+      href: https://github.com/microsoft/MixedReality-WebRTC
+  - name: Holographic remoting
+    items:
+    - name: Holographic Remoting Overview
+      href: platform-capabilities-and-apis/holographic-remoting-overview.md
+    - name: The Holographic Remoting player
+      href: platform-capabilities-and-apis/holographic-remoting-player.md
+  - name: App quality and testing
+    items:
+    - name: App quality criteria
+      href: platform-capabilities-and-apis/app-quality-criteria-overview.md
+    - name: Holographic rendering
+      href: platform-capabilities-and-apis/rendering-overview.md
+    - name: Volume rendering
+      href: platform-capabilities-and-apis/volume-rendering-overview.md
+    - name: Hologram stability
+      href: platform-capabilities-and-apis/hologram-stability.md
+    - name: Understanding performance for Mixed Reality
+      href: platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md
+    - name: Using Visual Studio to deploy and debug
+      href: platform-capabilities-and-apis/using-visual-studio.md
+    - name: Testing your app on HoloLens
+      href: platform-capabilities-and-apis/testing-your-app-on-hololens.md
+    - name: Using the HoloLens Emulator
+      href: platform-capabilities-and-apis/using-the-hololens-emulator.md
+    - name: Using the Windows Mixed Reality simulator
+      href: platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md
+    - name: Advanced HoloLens Emulator and Mixed Reality Simulator input
+      href: platform-capabilities-and-apis/advanced-hololens-emulator-and-mixed-reality-simulator-input.md
+    - name: HoloLens Emulator archive
+      href: platform-capabilities-and-apis/hololens-emulator-archive.md
+    - name: Perception simulation
+      href: platform-capabilities-and-apis/perception-simulation-overview.md      
+  - name: Porting apps
+    items:
+    - name: Porting overview
+      href: porting-apps/porting-overview.md
+    - name: Porting HoloLens (1st Gen) apps to HoloLens 2
+      href: porting-apps/porting-hl1-hl2.md
+    - name: Porting VR apps to Windows Mixed Reality
+      href: porting-apps/porting-guides.md
+    - name: Updating SteamVR apps for Windows Mixed Reality
+      href: porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md
+    - name: Updating 2D UWP apps for Windows Mixed Reality
+      href: porting-apps/building-2d-apps.md
+  - name: Device Portal
+    items:
+    - name: Using the Windows Device Portal
+      href: platform-capabilities-and-apis/using-the-windows-device-portal.md
+    - name: Device portal API reference (REST)
+      href: api-refs/device-portal-api-reference.md
+  - name: Research tools
+    items:
+    - name: HoloLens Research Mode
+      href: platform-capabilities-and-apis/research-mode.md

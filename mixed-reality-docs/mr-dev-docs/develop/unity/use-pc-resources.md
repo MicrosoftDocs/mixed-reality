@@ -3,7 +3,7 @@ title: Use PC resources to power your app with Holographic Remoting
 description: Use PC resources, instead of relying on the on-board processing power of the HoloLens, to power your app with Holographic Remoting
 author: vtieto
 ms.author: v-vtieto
-ms.date: 08/12/2021
+ms.date: 10/05/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, augmented reality, virtual reality, mixed reality headsets, learn, tutorial, getting started, holographic remoting, desktop, preview, debug
 ---
@@ -20,7 +20,7 @@ To learn more about Holographic Remoting, see [Holographic Remoting overview](..
 
 Note that you can also use Holographic Remoting if [you want to preview and debug your app during the development process](preview-and-debug-your-app.md).
 
-## Set up Holographic Remoting
+## Set up the Holographic Remoting Player app
 
 To use Holographic Remoting, you need to install the [Holographic Remoting Player](../platform-capabilities-and-apis/holographic-remoting-player.md) app from the Microsoft Store on your HoloLens 2. As explained below, after you download and run the app, you'll see the version number and IP address to connect to. **You'll need v2.4 or later in order to work with the OpenXR plugin**.
 
