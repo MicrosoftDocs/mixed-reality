@@ -159,7 +159,7 @@
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/mrtk-getting-started.md",
 			"redirect_url": "/windows/mixed-reality/mrtk-unity",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 
 		// HoloLens
