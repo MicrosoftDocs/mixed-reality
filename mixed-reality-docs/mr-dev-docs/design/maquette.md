@@ -59,3 +59,7 @@ The Maquette Unity Editor Add-On package ensures .FBX and .GLTF files exported f
 1. Import the Maquette Unity Editor Add-On package (See the section below for more info) into your Unity project. 
 
 1. Bring your .FBX, .GLB, or .GLTF files exported from Maquette into your Unity project. Unity will preserve the grouping hierarchy of your content, as well as the materials and images as they appear in Maquette, so long as you've imported the Microsoft Maquette Unity Editor Add-On. 
+
+## Next steps
+
+<mark> Do we have any next steps for this? </mark>
