@@ -157,8 +157,8 @@
 // vtieto, 9/21/21
 
 		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/mrtk-getting-started",
-			"redirect_url": "/windows/mixed-reality/mrtk-unity/?view=mrtkunity-2021-05",
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/mrtk-getting-started.md",
+			"redirect_url": "/windows/mixed-reality/mrtk-unity",
 			"redirect_document_id": true
 		},
 
