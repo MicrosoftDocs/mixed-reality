@@ -3,7 +3,7 @@ title: Software overview and release history
 description: An overview of the major software components for Windows Mixed Reality, immersive headsets, and their release history.
 author: qianw211
 ms.author: v-qianwen
-ms.date: 09/30/2021
+ms.date: 10/5/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, software components, release history, release notes, version history
 appliesto:
@@ -19,7 +19,7 @@ Windows Mixed Reality consists of the following major software components:
 1. **Mixed Reality Portal**, which provides the main Windows Mixed Reality experience
     * In Windows 10 versions 1709 and 1803, Mixed Reality Portal is a key component of the Windows 10 operating system updated via Windows Update.
     * In Windows 10 version 1809 and newer, Mixed Reality Portal is updated via the Microsoft Store app.
-    * In Windows 11 version 21H2.
+    * In Windows 11 version 21H2, Mixed Reality Portal is updated via the Microsoft Store app.
 2. The **Mixed Reality feature-on-demand package** (FOD), automatically downloaded and installed during Mixed Reality Portal's first-run. More information about the FOD package can be found [here](/windows/application-management/manage-windows-mixed-reality)
 3. The **Mixed Reality headset and motion controller driver**, also known as the HoloLens Sensors driver, is the key driver package that enables Windows Mixed Reality headsets to work with Windows Mixed Reality. This is automatically downloaded and installed via Windows Update the first time your Mixed Reality headset is plugged in, and is regularly updated via Windows Update
 4. The **Mixed Reality motion controller model drivers contain the 3D models of the Mixed Reality motion controllers and needed for third-party Mixed Reality experiences. This is automatically downloaded and installed via Windows Update the first time your Mixed Reality motion controllers are paired to your PC, and is updated via Windows Update
