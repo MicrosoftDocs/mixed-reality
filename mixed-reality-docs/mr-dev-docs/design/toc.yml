@@ -29,7 +29,7 @@
   - name: Spatial mapping
     href: spatial-mapping.md
   - name: Spectator view
-    href: platform-capabilities-and-apis/spectator-view.md
+    href: spectator-view.md
   - name: System gesture
     href: system-gesture.md
   - name: Types of Mixed Reality apps
