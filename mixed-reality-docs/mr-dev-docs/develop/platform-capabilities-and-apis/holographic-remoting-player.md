@@ -10,19 +10,19 @@ keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windo
 
 # Holographic Remoting Store Player
 
->[!TIP]
->[Learn the basics of Holographic Remoting.](holographic-remoting-overview.md)
+> [!TIP]
+> [Learn the basics of Holographic Remoting.](holographic-remoting-overview.md)
 
->[!IMPORTANT]
->Holographic Remoting for HoloLens 2 is a major version change. [Remote applications for **HoloLens (1st gen)**](add-holographic-remoting.md) must use NuGet package version **1.x.x** and [remote applications for **HoloLens 2**](holographic-remoting-create-remote-wmr.md) must use **2.x.x**. This implies that remote applications written for HoloLens 2 are not compatible with HoloLens (1st gen) and vice versa.
+> [!IMPORTANT]
+> Holographic Remoting for HoloLens 2 is a major version change. [Remote applications for **HoloLens (1st gen)**](add-holographic-remoting.md) must use NuGet package version **1.x.x** and [remote applications for **HoloLens 2**](holographic-remoting-create-remote-wmr.md) must use **2.x.x**. This implies that remote applications written for HoloLens 2 are not compatible with HoloLens (1st gen) and vice versa.
 
 The [Holographic Remoting Player](https://www.microsoft.com/p/holographic-remoting-player/9nblggh4sv40) is a companion app that connects to PC apps and games that support Holographic Remoting. The Player is available for both HoloLens (first gen) and HoloLens 2.  PC apps that supported Holographic Remoting with HoloLens need to be updated to support Holographic Remoting with HoloLens 2. Contact your app provider if you have questions about which versions are supported.
 
->[!Note]
->Starting with version [2.2.0](holographic-remoting-version-history.md#v2.2.0) the Holographic Remoting player is also available for Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md).
+> [!Note]
+> Starting with version [2.2.0](holographic-remoting-version-history.md#v2.2.0) the Holographic Remoting player is also available for Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md).
 
->[!TIP]
->Starting with version [2.4.0](holographic-remoting-version-history.md#v2.4.0) remote apps using the [OpenXR API](../native/openxr.md) can be created. To get started check out [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md).
+> [!TIP]
+> Starting with version [2.4.0](holographic-remoting-version-history.md#v2.4.0) remote apps using the [OpenXR API](../native/openxr.md) can be created. To get started check out [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md).
 
 ## Connecting to the Holographic Remoting Player
 
@@ -59,8 +59,8 @@ On **HoloLens 2** the app will show you:
     * ```Reused frames``` is the count of video frames used more than once over the last second. For instance, if video frames arrive late, the rendering loop of the player still renders a frame but needs to *reuse* the video frame it already used for the previous frame.
     * ```Skipped frames``` is the count of video frames, which haven't been used by the rendering loop of the player. For instance, network jitter can have the effect that video frames arriving aren't evenly distributed anymore. For example, if some are late and others arrive in time with the result that they do not have a delta of 16.66 milliseconds anymore when running on 60 Hz. It can occur that more than one frame arrives between two ticks of the render loop of the player. In this case, the player *skips* one or more frames as it's supposed to always display the most recent received video frame.
 
-    >[!NOTE]
-    >When facing network jitter, skipped and reused frames are usually about the same. In contrast, if you only see skipped frames, this is an indicator that the player does not hit its target frame rate. In this case, you should keep an eye on the maximum render delta time when diagnosing issues.
+> [!NOTE]
+> When facing network jitter, skipped and reused frames are usually about the same. In contrast, if you only see skipped frames, this is an indicator that the player does not hit its target frame rate. In this case, you should keep an eye on the maximum render delta time when diagnosing issues.
 
 * **Video frames delta** - The minimum/maximum delta between received video frames over the last second. This number usually correlates with skipped/reused frames in case of issues caused by network jitter.
 * **Latency** - The average turnaround in milliseconds over the last second. 
