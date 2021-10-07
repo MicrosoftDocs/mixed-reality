@@ -368,44 +368,40 @@
           href: native/locatable-camera-cpp.md
         - name: Mixed reality capture (DirectX)
           href: native/mixed-reality-capture-directx.md
-      - name: Holographic remoting
-        items:
-        - name: Writing a Holographic Remoting remote app
-          items:
-            - name: HolographicSpace API
-              href: native/holographic-remoting-create-remote-wmr.md
-            - name: OpenXR API
-              href: native/holographic-remoting-create-remote-openxr.md
-        - name: Writing a custom Holographic Remoting Player app
-          href: native/holographic-remoting-create-player.md
-        - name: Custom Holographic Remoting data channels
-          href: native/holographic-remoting-custom-data-channels.md
-        - name: Secure Connection with Holographic Remoting
-          href: native/holographic-remoting-secure-connection.md
-        - name: Troubleshooting and limitations
-          href: native/holographic-remoting-troubleshooting.md
-        - name: Version history
-          href: native/holographic-remoting-version-history.md
-        - name: Holographic Remoting software license terms
-          href: /legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
-        - name: Holographic Remoting for HoloLens (1st Gen)
-          href: native/add-holographic-remoting.md
-      - name: App quality and testing
-        items:
-        - name: Volume rendering
-          href: native/volume-rendering-cpp.md
-        - name: Hologram stability
-          href: native/hologram-stability-in-directx.md
-        - name: Performance tuning and debugging
-          href: platform-capabilities-and-apis/installing-pix-hololens.md
-      - name: API References
-        items:
-        - name: QR code tracking API reference
-          href: api-refs/qr-code-tracking-api-reference.md
       - name: QR code tracking
         items:
         - name: QR code tracking
           href: native/qr-code-tracking-cs-cpp.md
+  - name: App quality and testing
+    items:
+    - name: Volume rendering
+      href: native/volume-rendering-cpp.md
+    - name: Hologram stability
+      href: native/hologram-stability-in-directx.md
+    - name: Performance tuning and debugging
+      href: platform-capabilities-and-apis/installing-pix-hololens.md
+  - name: Holographic remoting
+    items:
+    - name: Writing a Holographic Remoting remote app
+      items:
+        - name: HolographicSpace API
+          href: native/holographic-remoting-create-remote-wmr.md
+        - name: OpenXR API
+          href: native/holographic-remoting-create-remote-openxr.md
+    - name: Writing a custom Holographic Remoting Player app
+      href: native/holographic-remoting-create-player.md
+    - name: Custom Holographic Remoting data channels
+      href: native/holographic-remoting-custom-data-channels.md
+    - name: Secure Connection with Holographic Remoting
+      href: native/holographic-remoting-secure-connection.md
+    - name: Troubleshooting and limitations
+      href: native/holographic-remoting-troubleshooting.md
+    - name: Version history
+      href: native/holographic-remoting-version-history.md
+    - name: Holographic Remoting software license terms
+      href: /legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
+    - name: Holographic Remoting for HoloLens (1st Gen)
+      href: native/add-holographic-remoting.md          
 - name: Advanced concepts
   items:
   - name: Camera and capture
@@ -475,7 +471,7 @@
     - name: Using the Windows Device Portal
       href: platform-capabilities-and-apis/using-the-windows-device-portal.md
     - name: Device portal API reference (REST)
-      href: api-refs/device-portal-api-reference.md
+      href: platform-capabilities-and-apis/device-portal-api-reference.md
   - name: Research tools
     items:
     - name: HoloLens Research Mode
