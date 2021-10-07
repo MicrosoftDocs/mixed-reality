@@ -10,8 +10,8 @@ keywords: HoloLens, Remoting, Holographic Remoting, NuGet, app manifest, player 
 
 # Writing a custom Holographic Remoting player app using the Windows Mixed Reality API
 
->[!IMPORTANT]
->This document describes the creation of a custom player application for HoloLens 2. Custom players written for HoloLens 2 are not compatible with remote applications written for HoloLens 1. This implies that both applications must use NuGet package version **2.x.x**.
+> [!IMPORTANT]
+> This document describes the creation of a custom player application for HoloLens 2. Custom players written for HoloLens 2 are not compatible with remote applications written for HoloLens 1. This implies that both applications must use NuGet package version **2.x.x**.
 
 By creating a custom Holographic Remoting player app, you can create a custom application capable of displaying [immersive views](../../design/app-views.md) from on a remote machine on your HoloLens 2. All code on this page and working projects can be found in the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
