@@ -10,16 +10,16 @@ keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windo
 
 # Custom Data Channels with Holographic Remoting and the Windows Mixed Reality API
 
->[!NOTE]
->This guidance is specific to Holographic Remoting on HoloLens 2 and Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md.
+> [!NOTE]
+> This guidance is specific to Holographic Remoting on HoloLens 2 and Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md.
 
 Use custom data channels to send custom data over an established remoting connection.
 
->[!IMPORTANT]
->Custom data channels require a custom remote app and a custom player app, as it allows for communication between the two custom apps.
+> [!IMPORTANT]
+> Custom data channels require a custom remote app and a custom player app, as it allows for communication between the two custom apps.
 
->[!TIP]
->A simple ping-pong example can be found in the remote and player samples inside the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples). Uncomment ```#define ENABLE_CUSTOM_DATA_CHANNEL_SAMPLE``` inside the SampleRemoteApp.h / SamplePlayerMain.h files to enable the sample code.
+> [!TIP]
+> A simple ping-pong example can be found in the remote and player samples inside the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples). Uncomment ```#define ENABLE_CUSTOM_DATA_CHANNEL_SAMPLE``` inside the SampleRemoteApp.h / SamplePlayerMain.h files to enable the sample code.
 
 
 ## Create a custom data channel
@@ -47,8 +47,8 @@ To start the creation of a data channel on the **player** side:
 m_playerContext.CreateDataChannel(64, DataChannelPriority::Low);
 ```
 
->[!NOTE]
->To create a new custom data channel, only one side (either remote or player) needs to call the ```CreateDataChannel``` method.
+> [!NOTE]
+> To create a new custom data channel, only one side (either remote or player) needs to call the ```CreateDataChannel``` method.
 
 ## Handling custom data channel events
 
@@ -92,8 +92,8 @@ m_customChannelClosedEventRevoker = m_customDataChannel.OnClosed(winrt::auto_rev
 
 To send data over a custom data channel, use the ```IDataChannel::SendData()``` method. The first parameter is a ```winrt::array_view<const uint8_t>``` to the data that should be send. The second parameter specifies where the data should be resend, until the other side acknowledge the reception. 
 
->[!IMPORTANT]
->In case of bad network conditions, the same data packet might arrive more than once. The receiving code must be able to handle this situation.
+> [!IMPORTANT]
+> In case of bad network conditions, the same data packet might arrive more than once. The receiving code must be able to handle this situation.
 
 ```cpp
 uint8_t data[] = {1};
