@@ -10,8 +10,8 @@ keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windo
 
 # Writing a Holographic Remoting remote app using the Windows Mixed Reality API
 
->[!IMPORTANT]
->This document describes the creation of a remote application for HoloLens 2 using the [Windows Mixed Reality API](../native/getting-a-holographicspace.md). Remote applications for **HoloLens (1st gen)** must use NuGet package version **1.x.x**. This implies that remote applications written for HoloLens 2 are not compatible with HoloLens 1 and vice versa. The documentation for HoloLens 1 can be found [here](add-holographic-remoting.md).
+> [!IMPORTANT]
+> This document describes the creation of a remote application for HoloLens 2 using the [Windows Mixed Reality API](../native/getting-a-holographicspace.md). Remote applications for **HoloLens (1st gen)** must use NuGet package version **1.x.x**. This implies that remote applications written for HoloLens 2 are not compatible with HoloLens 1 and vice versa. The documentation for HoloLens 1 can be found [here](add-holographic-remoting.md).
 
 Holographic Remoting apps can stream remotely rendered content to HoloLens 2 and Windows Mixed Reality immersive headsets. You can also access more system resources and integrate remote [immersive views](../../design/app-views.md) into existing desktop PC software. A remote app receives an input data stream from HoloLens 2, renders content in a virtual immersive view, and streams content frames back to HoloLens 2. The connection is made using standard Wi-Fi. Holographic Remoting is added to a desktop or UWP app via a NuGet packet. Additional code is required which handles the connection and renders in an immersive view. A typical remoting connection will have as low as 50 ms of latency. The player app can report the latency in real time.
 
@@ -21,7 +21,7 @@ All code on this page and working projects can be found in the [Holographic Remo
 
 A good starting point is a working DirectX based Desktop or UWP app, which targets the [Windows Mixed Reality API](../native/getting-a-holographicspace.md). For details see [DirectX development overview](../native/directx-development-overview.md). The [C++ holographic project template](../native/creating-a-holographic-directx-project.md) is a good starting point.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >Any app using Holographic Remoting should be authored to use a [multi-threaded apartment](/windows/win32/com/multithreaded-apartments). The use of a [single-threaded apartment](/windows/win32/com/single-threaded-apartments) is supported but will lead to sub-optimal performance and possibly stuttering during playback. When using C++/WinRT [winrt::init_apartment](/windows/uwp/cpp-and-winrt-apis/get-started) a multi-threaded apartment is the default.
 
 
@@ -36,8 +36,8 @@ The following steps are required to add the NuGet package to a project in Visual
 5. If the **Preview** dialog appears, select **OK**.
 6. Select **I Accept** when the license agreement dialog pops up.
 
->[!NOTE]
->Version **1.x.x** of the NuGet package is still available for developers who want to target HoloLens 1. For details see [Add Holographic Remoting (HoloLens (1st gen))](add-holographic-remoting.md).
+> [!NOTE]
+> Version **1.x.x** of the NuGet package is still available for developers who want to target HoloLens 1. For details see [Add Holographic Remoting (HoloLens (1st gen))](add-holographic-remoting.md).
 
 ## Create the remote context
 
@@ -65,8 +65,8 @@ CreateRemoteContext(m_remoteContext, 20000, false, PreferredVideoCodec::Default)
 
 ```
 
->[!WARNING]
->Holographic Remoting works by replacing the Windows Mixed Reality runtime which is part of Windows with a remoting specific runtime. This is done during the creation of the remote context. For that reason any call on any Windows Mixed Reality API before creating the remote context can result in unexpected behavior. The recommended approach is to create the remote context as early as possible before interaction with any Mixed Reality API. Never mix objects created or retrieved through any Windows Mixed Reality API before the call to CreateRemoteContext with objects created or retrieved afterwards.
+> [!WARNING]
+> Holographic Remoting works by replacing the Windows Mixed Reality runtime which is part of Windows with a remoting specific runtime. This is done during the creation of the remote context. For that reason any call on any Windows Mixed Reality API before creating the remote context can result in unexpected behavior. The recommended approach is to create the remote context as early as possible before interaction with any Mixed Reality API. Never mix objects created or retrieved through any Windows Mixed Reality API before the call to CreateRemoteContext with objects created or retrieved afterwards.
 
 Next the holographic space needs to be created. Specifying a CoreWindow isn't required. Desktop apps that don't have a CoreWindow can just pass a ```nullptr```.
 
@@ -95,11 +95,11 @@ catch(winrt::hresult_error& e)
 }
 ```
 
->[!IMPORTANT]
->As with any C++/WinRT API ```Connect``` might throw an winrt::hresult_error which needs to be handled.
+> [!IMPORTANT]
+> As with any C++/WinRT API ```Connect``` might throw an winrt::hresult_error which needs to be handled.
 
->[!TIP]
->To avoid using [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/) language projection the file ```build\native\include\<windows sdk version>\abi\Microsoft.Holographic.AppRemoting.h``` located inside the Holographic Remoting NuGet package can be included. It contains declarations of the underlying COM interfaces. The use of C++/WinRT is recommended though.
+> [!TIP]
+> To avoid using [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/) language projection the file ```build\native\include\<windows sdk version>\abi\Microsoft.Holographic.AppRemoting.h``` located inside the Holographic Remoting NuGet package can be included. It contains declarations of the underlying COM interfaces. The use of C++/WinRT is recommended though.
 
 Listening for incoming connections on the remote app can be done by calling the ```Listen``` method. Both the handshake port and transport port can be specified during this call. The handshake port is used for the initial handshake. The data is then sent over the transport port. By default **8265** and **8266** are used.
 
@@ -114,8 +114,8 @@ catch(winrt::hresult_error& e)
 }
 ```
 
->[!IMPORTANT]
->The ```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl``` inside the NuGet package contains detailed documentation for the API exposed by Holographic Remoting.
+> [!IMPORTANT]
+> The ```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl``` inside the NuGet package contains detailed documentation for the API exposed by Holographic Remoting.
 
 ## Handling Remoting specific events
 
