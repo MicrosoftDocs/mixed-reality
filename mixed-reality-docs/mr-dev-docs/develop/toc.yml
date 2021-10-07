@@ -404,6 +404,8 @@
       href: native/add-holographic-remoting.md          
 - name: Advanced concepts
   items:
+  - name: Overview
+    href: native/advanced-concepts-overview.md
   - name: Camera and capture
     items:
     - name: Locatable camera
