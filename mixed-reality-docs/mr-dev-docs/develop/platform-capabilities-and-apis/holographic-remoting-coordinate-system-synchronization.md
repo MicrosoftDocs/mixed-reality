@@ -15,17 +15,17 @@ Starting with version [2.7.0](holographic-remoting-version-history.md#v2.7.0), H
 Use coordinate system synchronization to synchronize spatial data between a custom player app and a custom remote app.
 With that, it's possible to express spatial data within a common space even across different player and remote runtimes.
 
-The coordinate system synchronization can be used, for example, to align content, which was rendered by the player app with the content rendered by the remote app.
-Furthermore, coordinate system synchronization allows the custom remote app to correctly align sensor data from the player device, which was retrieved for example, by [HoloLens2ForCV](https://github.com/microsoft/HoloLens2ForCV).
+The coordinate system synchronization can be used, for example, to align content that was rendered by the player app with the content rendered by the remote app.
+Furthermore, coordinate system synchronization allows the custom remote app to correctly align sensor data from the player device that was retrieved, for example, by [HoloLens2ForCV](https://github.com/microsoft/HoloLens2ForCV).
 
 In general, the coordinate system synchronization consists of two parts:
-- The player app sets and regularly updates the coordinate system (from now on referred to as user coordinate system).
+- The player app sets and regularly updates the coordinate system (from now on, we refer to this as the "user coordinate system").
 - The remote app gets the user coordinate system in a runtime-dependent way.
-With the synchronized coordinate system both the player app and remote app can transform spatial data into a common coordinate system.
+With the synchronized coordinate system, both the player app and remote app can transform spatial data into a common coordinate system.
 
 > [!NOTE]
 > Coordinate system synchronization supports only a single coordinate system.
-> To synchronize data from multiple coordinate systems you can always transform the data into the user coordinate system!
+> To synchronize data from multiple coordinate systems, you can transform the data into the user coordinate system.
 	
 ## See Also
 * [Coordinate System Synchronization with Holographic Remoting and the OpenXR API](holographic-remoting-coordinate-system-synchronization-openxr.md)

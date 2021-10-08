@@ -30,7 +30,7 @@ The following steps are required to add the NuGet package to a project in Visual
 1. Open the project in Visual Studio.
 2. Right-click the project node and select **Manage NuGet Packages...**
 3. In the panel that appears, select **Browse** and then search for "Holographic Remoting".
-4. Select **Microsoft.Holographic.Remoting.OpenXr**, ensure to pick the latest **2.x.x** version, and select **Install**.
+4. Select **Microsoft.Holographic.Remoting.OpenXr**, then ensure that the latest **2.x.x** version is selected, and then select **Install**.
 5. If the **Preview** dialog appears, select **OK**.
 6. Select **I Accept** when the license agreement dialog pops up.
 7. Repeat the steps 3 to 6 for the following NuGet Packages: OpenXR.Headers, OpenXR.Loader
@@ -63,7 +63,7 @@ bool EnableRemotingXR() {
 
 ## Create XrInstance with Holographic Remoting Extension
 
-The first step a typical OpenXR app is supposed to do, is to select OpenXR extensions and create an XrInstance. The OpenXR core specification doesn't provide any remoting specific API. For that reason, Holographic Remoting introduces its own OpenXR extension named ```XR_MSFT_holographic_remoting```. Ensure that when you call xrCreateInstance the ```XR_MSFT_HOLOGRAPHIC_REMOTING_EXTENSION_NAME``` is included in the XrInstanceCreateInfo.
+The first actions a typical OpenXR app should take are select OpenXR extensions and create an XrInstance. The OpenXR core specification doesn't provide any remoting specific API. For that reason, Holographic Remoting introduces its own OpenXR extension named ```XR_MSFT_holographic_remoting```. Ensure that ```XR_MSFT_HOLOGRAPHIC_REMOTING_EXTENSION_NAME``` is included in the XrInstanceCreateInfo of the xrCreateInstance call.
 
 > [!TIP]
 > By default the rendered content of your app is only streamed to the Holographic Remoting player either running on a HoloLens 2 or on a Windows Mixed Reality headsets. To also display the rendered content on the remote PC, via a swap-chain of a window for instance, Holographic Remoting provides a second OpenXR extension named ```XR_MSFT_holographic_remoting_frame_mirroring```. Ensure to also enable this extension using ```XR_MSFT_HOLOGRAPHIC_REMOTING_FRAME_MIRRORING_EXTENSION_NAME``` in case you want to use that functionality.
@@ -197,23 +197,23 @@ xrEndFrame(m_session.Get(), &frameEndInfo);
 m_window->PresentSwapchain();
 ```
 
-The example above uses a DX11 swap-chain texture and presents the window immediately after the call to xrEndFrame. The usage isn't restricted to swap-chain textures and no additional GPU synchronization is required. For details on usage and constraints check out the [extension specification](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/main/remote_openxr/specification.html#XR_MSFT_remoting_frame_mirroring).
+The example above uses a DX11 swap chain texture and presents the window immediately after the call to xrEndFrame. The usage isn't restricted to swap chain textures. Furthermore, no additional GPU synchronization is required. For details on usage and constraints, check out the [extension specification](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/main/remote_openxr/specification.html#XR_MSFT_remoting_frame_mirroring).
 If your remote app is using DX12, use XrRemotingFrameMirrorImageD3D12MSFT instead of XrRemotingFrameMirrorImageD3D11MSFT.
 
 
 ## Optional: Custom data channels
 
-Starting with version [2.5.0](holographic-remoting-version-history.md#v2.5.0) custom data channels can be used with the OpenXR API to send user data over the already established remoting connection. For more information, see [Custom Data Channels with the OpenXR API](holographic-remoting-custom-data-channels-openxr.md).
+Starting with version [2.5.0](holographic-remoting-version-history.md#v2.5.0), custom data channels can be used with the OpenXR API to send user data over the already-established remoting connection. For more information, see [Custom Data Channels with the OpenXR API](holographic-remoting-custom-data-channels-openxr.md).
 
 ## Optional: Speech
 
-Starting with version [2.6.0](holographic-remoting-version-history.md#v2.6.0) the ```XR_MSFT_holographic_remoting_speech extension``` allows the remote app to react to speech commands detected by the player app with the OpenXR API.
+Starting with version [2.6.0](holographic-remoting-version-history.md#v2.6.0), the ```XR_MSFT_holographic_remoting_speech``` extension allows the remote app to react to speech commands detected by the player app with the OpenXR API.
 
 >  [!IMPORTANT]
 > The detailed [specification](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/main/remote_openxr/specification.html) can be found in the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
 To initialize a speech recognizer on the player app, the remote app can call ```xrInitializeRemotingSpeechMSFT```.
-This call transmits speech initialization parameters, which is a language, a dictionary of phrases, and the contents of a grammar file, to the player app.
+This call transmits speech initialization parameters, which consists of a language, a dictionary of phrases, and the contents of a grammar file, to the player app.
 
 > [!NOTE]
 > Before version [2.6.1](holographic-remoting-version-history.md#v2.6.1) the speech recognizer must only be initialized once per ```XrSession```.
@@ -221,8 +221,8 @@ This call transmits speech initialization parameters, which is a language, a dic
 If the creation of the speech recognizer succeeded, as indicated by the ```XR_TYPE_EVENT_DATA_REMOTING_SPEECH_RECOGNIZER_STATE_CHANGED_MSFT``` event, the remote app will be notified when a speech recognition result was generated on the player app.
 The ```XrEventDataRemotingSpeechRecognizerStateChangedMSFT``` event structure is placed in the event queue when the state of the speech recognizer on the player side changes.
 
-The ```XrRemotingSpeechRecognizerStateMSFT``` defines all possible states of the speech recognizer on the player side and the ```XrEventDataRemotingSpeechRecognizedMSFT``` event structure is placed in the event queue when the speech recognizer on the player side has a recognized phrase.
-When the remote app is notified about a recognized phrase, it can: retrieve the recognized phrase by calling ```xrRetrieveRemotingSpeechRecognizedTextMSFT```.
+```XrRemotingSpeechRecognizerStateMSFT``` defines all possible states of the speech recognizer on the player side and the ```XrEventDataRemotingSpeechRecognizedMSFT``` event structure is placed in the event queue if the speech recognizer on the player side has a recognized phrase.
+After the remote app is notified about a recognized phrase, it can retrieve the recognized phrase by calling ```xrRetrieveRemotingSpeechRecognizedTextMSFT```.
 
 > [!NOTE]
 > The ```XrRemotingSpeechRecognitionConfidenceMSFT``` is a direct mapping of the [SpeechRecognitionConfidence](/uwp/api/windows.media.speechrecognition.speechrecognitionconfidence) enum returned with the speech recognition result by the Windows Speech Recognition API.
@@ -230,7 +230,7 @@ When the remote app is notified about a recognized phrase, it can: retrieve the 
 
 ## Optional: Coordinate System Synchronization
 
-Starting with version [2.7.0](holographic-remoting-version-history.md#v2.7.0) coordinate system synchronization can be used to align spatial data between the player and remote app.
+Starting with version [2.7.0](holographic-remoting-version-history.md#v2.7.0), coordinate system synchronization can be used to align spatial data between the player and remote app.
 For more information, see [Coordinate System Synchronization with Holographic Remoting Overview](holographic-remoting-coordinate-system-synchronization.md).
 
 ## See Also

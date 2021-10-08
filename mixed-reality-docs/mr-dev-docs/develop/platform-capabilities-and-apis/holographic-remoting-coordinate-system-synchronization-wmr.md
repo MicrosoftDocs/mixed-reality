@@ -10,7 +10,7 @@ keywords: HoloLens, HoloLens 2, mixed reality, MRTK, Mixed Reality Toolkit, augm
 
 # Coordinate System Synchronization with Holographic Remoting and the Windows Mixed Reality API
 
-With the Windows Mixed Reality API, the user coordinate systems is wrapped into a [SpatialStationaryFrameOfReference](/uwp/api/windows.perception.spatial.spatialstationaryframeofreference).
+With the Windows Mixed Reality API, the user coordinate system is wrapped into a [SpatialStationaryFrameOfReference](/uwp/api/windows.perception.spatial.spatialstationaryframeofreference).
 
 > [!TIP]
 > A simple example can be found in the remote and player samples inside the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).

@@ -1,6 +1,6 @@
 ---
 title: Custom Holographic Remoting data channels
-description: This page explains how custom data channels can be used with the Windows Mixed Reality API to send user data over the already established Holographic Remoting connection.
+description: This page explains how custom data channels can be used with the Windows Mixed Reality API to send user data over the already-established Holographic Remoting connection.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
@@ -33,7 +33,7 @@ winrt::Microsoft::Holographic::AppRemoting::IDataChannel::OnDataReceived_revoker
 winrt::Microsoft::Holographic::AppRemoting::IDataChannel::OnClosed_revoker m_customChannelClosedEventRevoker;
 ```
 
-After a connection is successfully established, you can create new data channels from either the remote side, the player side, or both. Both the RemoteContext and the PlayerContext provide a ```CreateDataChannel()``` method for creating data channels. The first parameter is the channel ID, which is used to identify the data channel in later operations. The second parameter is the priority, which specifies the priority with which data of this channel is transferred to the other side. On the remote side valid channel IDs are from 0 up to and including 63. On the player side valid channel IDs are from 64 up to and including 127. Valid priorities are ```Low```, ```Medium```, or ```High``` (on both sides).
+After a connection is successfully established, you can create new data channels from either the remote side, the player side, or both. Both the RemoteContext and the PlayerContext provide a ```CreateDataChannel()``` method for creating data channels. The first parameter is the channel ID, which is used to identify the data channel in later operations. The second parameter is the priority that specifies with which priority data of this channel is transferred to the other side. On the remote side, valid channel IDs range from 0 up to and including 63. On the player side, valid channel IDs are from 64 up to and including 127. Valid priorities are ```Low```, ```Medium```, or ```High```.
 
 To start the creation of a data channel on the **remote** side:
 ```cpp

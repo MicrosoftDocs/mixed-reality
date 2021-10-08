@@ -19,7 +19,7 @@ All code on this page and working projects can be found in the [Holographic Remo
 
 ## Prerequisites
 
-A good starting point is a working DirectX based Desktop or UWP app, which targets the [Windows Mixed Reality API](../native/getting-a-holographicspace.md). For details see [DirectX development overview](../native/directx-development-overview.md). The [C++ holographic project template](../native/creating-a-holographic-directx-project.md) is a good starting point.
+A good starting point is a working DirectX-based Desktop or UWP app that targets the [Windows Mixed Reality API](../native/getting-a-holographicspace.md). For details, see [DirectX development overview](../native/directx-development-overview.md). The [C++ holographic project template](../native/creating-a-holographic-directx-project.md) is a good starting point.
 
 > [!IMPORTANT]
 >Any app using Holographic Remoting should be authored to use a [multi-threaded apartment](/windows/win32/com/multithreaded-apartments). The use of a [single-threaded apartment](/windows/win32/com/single-threaded-apartments) is supported but will lead to sub-optimal performance and possibly stuttering during playback. When using C++/WinRT [winrt::init_apartment](/windows/uwp/cpp-and-winrt-apis/get-started) a multi-threaded apartment is the default.
@@ -183,7 +183,7 @@ winrt::Microsoft::Holographic::AppRemoting::IRemoteSpeech::OnRecognizedSpeech_re
 
 ```
 
-First, the remote speech interface must be retrieved.
+First, retrieve the remote speech interface.
 
 ```cpp
 if (auto remoteSpeech = m_remoteContext.GetRemoteSpeech())
@@ -350,11 +350,11 @@ To verify if depth reprojection is correctly working on HoloLens 2, you can enab
 
 ## Optional: Custom data channels
 
-Custom data channels can be used to send user data over the already established remoting connection. For more information, see [Custom Data Channels](holographic-remoting-custom-data-channels.md).
+Custom data channels can be used to send user data over the already-established remoting connection. For more information, see [Custom Data Channels](holographic-remoting-custom-data-channels.md).
 
 ## Optional: Coordinate System Synchronization
 
-Starting with version [2.7.0](holographic-remoting-version-history.md#v2.7.0) coordinate system synchronization can be used to align spatial data between the player and remote application.
+Starting with version [2.7.0](holographic-remoting-version-history.md#v2.7.0), coordinate system synchronization can be used to align spatial data between the player and remote application.
 For more information, see [Coordinate System Synchronization with Holographic Remoting Overview](holographic-remoting-coordinate-system-synchronization.md).
 
 ## See Also

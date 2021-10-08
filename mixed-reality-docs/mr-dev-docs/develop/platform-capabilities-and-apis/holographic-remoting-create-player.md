@@ -41,7 +41,7 @@ The following steps are required to add the NuGet package to a project in Visual
 
 To make the application aware of the Microsoft.Holographic.AppRemoting.dll added by the NuGet package, the following steps need to be taken on the project:
 
-1. In the Solution Explorer, right-click on the **Package.appxmanifest** file and select **Open With...**
+1. In the Solution Explorer, right-click the **Package.appxmanifest** file and select **Open With...**
 2. Select **XML (Text) Editor** and select **OK**
 3. Add the following lines to the file and save
 ```xml
@@ -243,18 +243,19 @@ For more information, see the ```PlayerFrameStatistics``` documentation in the `
 
 ## Optional: Custom data channels
 
-Custom data channels can be used to send user data over the already established remoting connection. For more information, see [custom data channels](holographic-remoting-custom-data-channels.md).
+Custom data channels can be used to send user data over the already-established remoting connection. For more information, see [custom data channels](holographic-remoting-custom-data-channels.md).
 
 ## Optional: Over-Rendering
 
-Holographic Remoting predicts where the user's head will be when the rendered images appear on the displays. However, this prediction is an approximation, and the predicted viewport on the remote app and the later actual viewport on the player app can differ. Stronger deviations, for example due to unpredictable motion, could cause black regions at the borders of the viewing frustrum.
-Starting with version [2.6.0](holographic-remoting-version-history.md#v2.6.0) you can use Over-Rendering to reduce the black regions by artificially increasing the viewport beyond the viewing frustrum and therefore enhance the visual quality.
+Holographic Remoting predicts where the user's head will be at the time the rendered images appear on the displays. However, this prediction is an approximation. Therefore, the predicted viewport on the remote app and the later actual viewport on the player app can differ. Stronger deviations (for example, due to unpredictable motion) could cause black regions at the borders of the viewing frustum.
+Starting with version [2.6.0](holographic-remoting-version-history.md#v2.6.0) you can use Over-Rendering to reduce the black regions and enhance the visual quality by artificially increasing the viewport beyond the viewing frustum.
 
 Over-Rendering can be enabled via ```PlayerContext::ConfigureOverRendering```.
 
-The ```OverRenderingConfig``` specifies a fractional size increase to the actual viewport, so that the predicted viewport becomes larger and therefore less cutting occurs.
-With an increased viewport size, the pixel density decreases therefore, the OverRenderingConfig allows you to increase the resolution as well.
-If the viewport increase is equal to the resolution increase the pixel density remains the same. The ```OverRenderingConfig``` is defined as:
+The ```OverRenderingConfig``` specifies a fractional size increase to the actual viewport, so that the predicted viewport becomes larger and less cutting occurs.
+With an increased viewport size, the pixel density decreases, so the OverRenderingConfig allows you to increase the resolution as well.
+If the viewport increase is equal to the resolution increase the pixel density remains the same.
+```OverRenderingConfig``` is defined as:
 
 ```cpp
 struct OverRenderingConfig
