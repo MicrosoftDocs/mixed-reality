@@ -11,7 +11,7 @@ keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windo
 # Writing a Holographic Remoting remote app using the OpenXR API
 
 > [!IMPORTANT]
-> This document describes the creation of a remote app for HoloLens 2 and Windows Mixed Reality headsets using the [OpenXR API](../native/openxr.md). Remote apps for **HoloLens (1st gen)** must use NuGet package version **1.x.x**. This implies that remote apps written for HoloLens 2 are not compatible with HoloLens 1 and vice versa. The documentation for HoloLens 1 can be found [here](add-holographic-remoting.md).
+> This document describes the creation of a remote app for HoloLens 2 and Windows Mixed Reality headsets using the [OpenXR API](../native/openxr.md). Remote apps for **HoloLens (1st gen)** must use NuGet package version **1.x.x**. This implies that remote apps written for HoloLens 2 are incompatible with HoloLens 1 and vice versa. The documentation for HoloLens 1 can be found [here](add-holographic-remoting.md).
 
 Holographic Remoting apps can stream remotely rendered content to HoloLens 2 and Windows Mixed Reality immersive headsets. You can also access more system resources and integrate remote [immersive views](../../design/app-views.md) into existing desktop PC software. A remote app receives an input data stream from HoloLens 2, renders content in a virtual immersive view, and streams content frames back to HoloLens 2. The connection is made using standard Wi-Fi. Holographic Remoting is added to a desktop or UWP app via a NuGet packet. Additional code is required which handles the connection and renders in an immersive view. A typical remoting connection will have as low as 50 ms of latency. The player app can report the latency in real time.
 
@@ -213,7 +213,7 @@ Starting with version [2.6.0](holographic-remoting-version-history.md#v2.6.0), t
 > The detailed [specification](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/main/remote_openxr/specification.html) can be found in the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
 To initialize a speech recognizer on the player app, the remote app can call ```xrInitializeRemotingSpeechMSFT```.
-This call transmits speech initialization parameters, which consists of a language, a dictionary of phrases, and the contents of a grammar file, to the player app.
+This call transmits speech initialization parameters, which consist of a language, a dictionary of phrases, and the contents of a grammar file, to the player app.
 
 > [!NOTE]
 > Before version [2.6.1](holographic-remoting-version-history.md#v2.6.1) the speech recognizer must only be initialized once per ```XrSession```.

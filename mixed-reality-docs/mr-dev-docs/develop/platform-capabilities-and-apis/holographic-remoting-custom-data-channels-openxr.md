@@ -16,7 +16,7 @@ keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windo
 Use custom data channels to send custom data over an established remoting connection.
 
 > [!IMPORTANT]
-> Custom data channels require a custom remote app and a custom player app, as it allows for communication between the two custom apps.
+> Custom data channels require a custom remote app and a custom player app. This allows communication between the two custom apps.
 
 > [!TIP]
 > A simple ping-pong example can be found in the remote and player samples inside the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
