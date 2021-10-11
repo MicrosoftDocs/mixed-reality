@@ -2,7 +2,7 @@
 title: Tutorials 
 description: Stay up to date on the mixed reality development tutorials we offer for HoloLens and Azure services.
 author: keveleigh
-ms.author: keveleigh
+ms.author: kurtie
 ms.date: 09/30/2021
 ms.topic: article
 ms.localizationpriority: high
