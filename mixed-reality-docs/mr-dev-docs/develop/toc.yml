@@ -10,16 +10,6 @@
     href: mixed-reality-cloud-services.md
   - name: Samples and feature apps
     href: features-and-samples.md
-  - name: Interactions
-    items:
-      - name: Keyboard, mouse and controller input
-        href: native/keyboard-mouse-and-controller-input-cpp.md
-      - name: Head and eye gaze
-        href: native/gaze-in-directx.md
-      - name: Hands and motion controllers
-        href: native/hands-and-motion-controllers-in-directx.md
-      - name: Voice input
-        href: native/voice-input-in-directx.md
 - name: Unity
   items:
   - name: Unity development for HoloLens
@@ -344,7 +334,7 @@
         href: native/openxr-troubleshooting.md
   - name: WinRT (Legacy)
     items:
-      - name: Getting started
+      - name: Basic building blocks
         items:
           - name: Creating a native holographic project
             href: native/creating-a-holographic-directx-project.md
@@ -354,6 +344,16 @@
             href: native/rendering-in-directx.md
           - name: Coordinate systems
             href: native/coordinate-systems-in-directx.md
+      - name: Interactions
+        items:
+          - name: Keyboard, mouse and controller input
+            href: native/keyboard-mouse-and-controller-input-cpp.md
+          - name: Head and eye gaze
+            href: native/gaze-in-directx.md
+          - name: Hands and motion controllers
+            href: native/hands-and-motion-controllers-in-directx.md
+          - name: Voice input
+            href: native/voice-input-in-directx.md
       - name: Spatial Mapping
         items:
           - name: Spatial mapping
