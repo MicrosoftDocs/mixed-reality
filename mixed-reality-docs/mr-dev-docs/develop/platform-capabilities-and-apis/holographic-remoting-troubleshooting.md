@@ -11,7 +11,7 @@ keywords: Windows Mixed Reality, holograms, holographic remoting, remote renderi
 # Holographic Remoting troubleshooting
 
 > [!NOTE]
-> This guidance is specific to Holographic Remoting on HoloLens 2 and Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md.
+> This guidance is specific to Holographic Remoting on HoloLens 2 and Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md).
 
 ## Spectre mitigated libraries not found.
 
