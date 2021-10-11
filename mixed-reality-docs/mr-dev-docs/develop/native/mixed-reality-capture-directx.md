@@ -178,7 +178,7 @@ This shared mode functionality has certain restrictions:
 We recommend you always request Exclusive control for the camera when using MRC. This will ensure your application has full control of the settings for the camera as long as you're aware of the limitations listed above. 
 
 * Create a media capture object using the [initialization settings](/uwp/api/windows.media.capture.mediacaptureinitializationsettings)
-* Set the [SharingMode](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#Windows_Media_Capture_MediaCaptureInitializationSettings_SharingMode) property to **exclusive**
+* Set the [SharingMode](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode#Windows_Media_Capture_MediaCaptureInitializationSettings_SharingMode) property to **exclusive**
 
 > [!CAUTION]
 > Be sure to carefully read the [SharingMode remarks](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode#remarks) before continuing.
