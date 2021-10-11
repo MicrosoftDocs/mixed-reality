@@ -11,7 +11,7 @@ keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windo
 # Enabling connection security for Holographic Remoting (C++)
 
 > [!NOTE]
-> This guidance is specific to Holographic Remoting on HoloLens 2 and Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md.
+> This guidance is specific to Holographic Remoting on HoloLens 2 and Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md).
 
 This page gives you an overview of network security for Holographic Remoting. You'll find information about
 

@@ -11,7 +11,7 @@ keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windo
 # Custom Data Channels with Holographic Remoting and the Windows Mixed Reality API
 
 > [!NOTE]
-> This guidance is specific to Holographic Remoting on HoloLens 2 and Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md.
+> This guidance is specific to Holographic Remoting on HoloLens 2 and Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md).
 
 Use custom data channels to send custom data over an established remoting connection.
 
