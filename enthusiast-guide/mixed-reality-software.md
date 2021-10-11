@@ -17,18 +17,17 @@ appliesto:
 Windows Mixed Reality consists of the following major software components:
 
 1. **Mixed Reality Portal**, which provides the main Windows Mixed Reality experience
-    * In Windows 10 versions 1709 and 1803, Mixed Reality Portal is a key component of the Windows 10 operating system updated via Windows Update.
-    * In Windows 10 version 1809 and newer, Mixed Reality Portal is updated via the Microsoft Store app.
-    * In Windows 11 version 21H2, Mixed Reality Portal is updated via the Microsoft Store app.
+    * In Windows 10, versions 1709 and 1803: Mixed Reality Portal is a key component of the Windows 10 operating system updated via Windows Update.
+    * In Windows 10, versions 1809 and newer, and Windows 11: Mixed Reality Portal is updated via the Microsoft Store app. More information can be found on the [Get Mixed Reality Portal page](https://www.microsoft.com/p/mixed-reality-portal/9ng1h8b3zc7m).
 2. The **Mixed Reality feature-on-demand package** (FOD), automatically downloaded and installed during Mixed Reality Portal's first-run. More information about the FOD package can be found [here](/windows/application-management/manage-windows-mixed-reality)
 3. The **Mixed Reality headset and motion controller driver**, also known as the HoloLens Sensors driver, is the key driver package that enables Windows Mixed Reality headsets to work with Windows Mixed Reality. This is automatically downloaded and installed via Windows Update the first time your Mixed Reality headset is plugged in, and is regularly updated via Windows Update
-4. The **Mixed Reality motion controller model drivers contain the 3D models of the Mixed Reality motion controllers and needed for third-party Mixed Reality experiences. This is automatically downloaded and installed via Windows Update the first time your Mixed Reality motion controllers are paired to your PC, and is updated via Windows Update
-5. **Windows 10, version 1709 (the Fall Creator's Update) or newer** contains key OS components and technologies that enable Windows Mixed Reality
+4. The **Mixed Reality motion controller model drivers** contain the 3D models of the Mixed Reality motion controllers and needed for third-party Mixed Reality experiences. This is automatically downloaded and installed via Windows Update the first time your Mixed Reality motion controllers are paired to your PC, and is updated via Windows Update
+5. **Windows 10, version 1709 (the Fall Creator's Update) or newer** and **Windows 11** contain key OS components and technologies that enable Windows Mixed Reality
 
 Using Windows Mixed Reality in SteamVR requires the following software:
 
 6. **SteamVR**, developed and maintained by Valve Corporation that enables virtual reality apps and games on Steam. More information can be found [here](https://go.microsoft.com/fwlink/?linkid=862788)
-7. The **Windows Mixed Reality for SteamVR** component, which bridges SteamVR with Windows Mixed Reality. More information about this component can be found [on the Windows Mixed Reality for SteamVR page](http://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/)
+7. The **Windows Mixed Reality for SteamVR** component, which bridges SteamVR with Windows Mixed Reality. More information about this component can be found on the [Windows Mixed Reality for SteamVR page](http://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/)
 
 Managing your Windows Mixed Reality headset:
 
