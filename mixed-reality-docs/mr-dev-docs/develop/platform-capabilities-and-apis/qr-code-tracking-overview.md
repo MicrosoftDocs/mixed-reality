@@ -3,7 +3,7 @@ title: QR code tracking overview
 description: Learn how to detect QR codes, add webcam capabilities, and manage coordinate systems in mixed reality apps on HoloLens 2.
 author: dorreneb
 ms.author: v-vtieto
-ms.date: 09/27/21
+ms.date: 09/27/2021
 ms.topic: article
 keywords: vr, lbe, location based entertainment, vr arcade, arcade, immersive, qr, qr code, hololens2, tracking
 ---
@@ -14,13 +14,9 @@ HoloLens 2 can detect QR codes in the environment around the headset, establishi
 
 ## Device support
 
-<table>
-<tr>
-<th>Feature</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens (first gen)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
-</tr><tr>
-<td> QR code detection</td><td style="text-align: center;">️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">✔️</td>
-</tr>
-</table>
+| Feature          | [HoloLens 1st Gen](https://docs.microsoft.com/hololens/hololens1-hardware) | [HoloLens 2](https://www.microsoft.com/hololens/hardware) | Immersive headsets         |
+|:------------:|:--------------------------------------------------------------------------:|:---------------------------------------------------------:|:------------------:|
+| QR code detection |                                                                         | :heavy_check_mark:                                        | :heavy_check_mark: |
 
 > [!NOTE]
 > QR code tracking with immersive Windows Mixed Reality headsets on desktop PCs is supported on Windows 10 Version 2004 and higher. Use the Microsoft.MixedReality.QRCodeWatcher.IsSupported() API to determine whether the feature is supported on the current device.

@@ -3,7 +3,7 @@ title: Mixed reality capture (DirectX)
 description: Learn about some of the ways to perform mixed reality capture using DirectX.
 author: mattzmsft
 ms.author: v-vtieto
-ms.date: 09/28/21
+ms.date: 09/28/2021
 ms.topic: article
 keywords: mrc, photo, video, capture, camera
 ---
@@ -150,7 +150,7 @@ You need to be aware of certain limitations when multiple apps are accessing MRC
 
 On HoloLens 1, MRC will fail to capture a photo or capture video while a process is recording video or taking a photo. The reverse is also true: if MRC is running, the application will fail to get access to the camera. 
 
-With HoloLens 2, it's possible for you to share access to the camera. If you don't need direct control of the resolution or frame-rate, you can initialize MediaCapture using the [SharedMode property](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041) with SharedReadOnly.  
+With HoloLens 2, it's possible for you to share access to the camera. If you don't need direct control of the resolution or frame-rate, you can initialize MediaCapture using the [SharedMode property](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode) with SharedReadOnly.  
 
 ##### Built-in MRC photo/video camera access
 
@@ -177,11 +177,11 @@ This shared mode functionality has certain restrictions:
 
 We recommend you always request Exclusive control for the camera when using MRC. This will ensure your application has full control of the settings for the camera as long as you're aware of the limitations listed above. 
 
-* Create a media capture object using the [initialization settings](/uwp/api/windows.media.capture.mediacaptureinitializationsettings?view=winrt-19041)
+* Create a media capture object using the [initialization settings](/uwp/api/windows.media.capture.mediacaptureinitializationsettings)
 * Set the [SharingMode](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#Windows_Media_Capture_MediaCaptureInitializationSettings_SharingMode) property to **exclusive**
 
 > [!CAUTION]
-> Be sure to carefully read the [SharingMode remarks](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#remarks) before continuing.
+> Be sure to carefully read the [SharingMode remarks](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode#remarks) before continuing.
 
 * Set up your camera the way you want it
 * Start the app, capture video frames with the start API, then enable MRC

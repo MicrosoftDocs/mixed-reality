@@ -8,7 +8,7 @@ ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, NuGet, app manifest, player context, remote app, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
-# Writing a custom Holographic Remoting player app (C++)
+# Writing a custom Holographic Remoting player app
 
 If you're new to Holographic Remoting, you may want to [read our overview].
 

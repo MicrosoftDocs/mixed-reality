@@ -1,5 +1,5 @@
 ---
-title: Locatable camera
+title: Locatable camera overview
 description: General information about the HoloLens front-facing camera, how it works, and the profiles and resolutions available to developers.
 author: cdedmonds
 ms.author: v-vtieto

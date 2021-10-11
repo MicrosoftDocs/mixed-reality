@@ -163,7 +163,7 @@
       - name: Keyboard input
         href: unity/keyboard-input-in-unity.md
       - name: Hologram stability
-        href: unity/hologram-stability-in-unity.md
+        href: unity/hologram-stability-unity.md
       - name: QR code tracking API reference
         href: unity/qr-code-tracking-unity.md
       - name: UDP packets in UWP apps
@@ -375,9 +375,7 @@
   - name: App quality and testing
     items:
     - name: Volume rendering
-      href: native/volume-rendering-cpp.md
-    - name: Hologram stability
-      href: native/hologram-stability-in-directx.md
+      href: native/volume-rendering.md
     - name: Performance tuning and debugging
       href: platform-capabilities-and-apis/installing-pix-hololens.md
   - name: Holographic remoting
@@ -455,7 +453,7 @@
     - name: HoloLens Emulator archive
       href: platform-capabilities-and-apis/hololens-emulator-archive.md
     - name: Perception simulation
-      href: platform-capabilities-and-apis/perception-simulation-overview.md      
+      href: platform-capabilities-and-apis/perception-simulation.md      
   - name: Porting apps
     items:
     - name: Porting overview

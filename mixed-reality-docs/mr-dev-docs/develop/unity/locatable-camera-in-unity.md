@@ -184,7 +184,7 @@ if (photoCaptureFrame.hasLocationData)
 
 To interact with the raw bytes of an in memory frame, follow the same setup steps as above and *OnPhotoModeStarted* as in capturing a photo to a Texture2D. The difference is in *OnCapturedPhotoToMemory* where you can get the raw bytes and interact with them.
 
-In this example, you'll create a *List<Color>* to be further processed or applied to a texture via *SetPixels()*
+In this example, you'll create a *List* to be further processed or applied to a texture via *SetPixels()*
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)

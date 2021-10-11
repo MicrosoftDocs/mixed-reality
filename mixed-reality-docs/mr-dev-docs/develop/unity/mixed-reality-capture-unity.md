@@ -3,7 +3,7 @@ title: Mixed reality capture for Unity
 description: Learn about performing mixed reality capture in Unity.
 author: mattzmsft
 ms.author: v-vtieto
-ms.date: 09/28/21
+ms.date: 09/28/2021
 ms.topic: article
 keywords: mrc, photo, video, capture, camera
 ---

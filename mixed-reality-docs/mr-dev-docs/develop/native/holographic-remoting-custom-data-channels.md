@@ -8,7 +8,7 @@ ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windows mixed reality headset, virtual reality headset, data channels
 ---
 
-# Custom Holographic Remoting data channels (C++)
+# Custom Holographic Remoting data channels
 
 If you're new to Holographic Remoting, you may want to [read our overview].
 

@@ -8,7 +8,7 @@ ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windows mixed reality headset, virtual reality headset, security, authentication, server-to-client
 ---
 
-# Enabling connection security for Holographic Remoting (C++)
+# Enabling connection security for Holographic Remoting
 
 If you're new to Holographic Remoting, you may want to [read our overview].
 

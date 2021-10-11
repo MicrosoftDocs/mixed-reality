@@ -3,7 +3,7 @@ title: Volume rendering overview
 description: Learn how to efficiently render rich volumetric images with opacity and color in Windows Mixed Reality. 
 author: kevinkennedy
 ms.author: v-vtieto
-ms.date: 09/08/21
+ms.date: 09/08/2021
 ms.topic: article
 keywords: volumetric image, volume rendering, performance, mixed reality
 ---

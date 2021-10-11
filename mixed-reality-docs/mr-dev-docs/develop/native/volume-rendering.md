@@ -1,14 +1,14 @@
 ---
-title: Volume rendering (C++)
-description: Learn how to efficiently render rich volumetric images with opacity and color in Windows Mixed Reality. 
+title: Volume rendering
+description: Code that empowers you to efficiently render rich volumetric images with opacity and color in Windows Mixed Reality. 
 author: kevinkennedy
 ms.author: v-vtieto
-ms.date: 09/02/21
+ms.date: 09/02/2021
 ms.topic: article
 keywords: volumetric image, volume rendering, performance, mixed reality
 ---
 
-# Volume rendering (C++)
+# Volume rendering
 
 If you're new to volume rendering, we recommend that you [read our overview](../platform-capabilities-and-apis/volume-rendering-overview.md).
 

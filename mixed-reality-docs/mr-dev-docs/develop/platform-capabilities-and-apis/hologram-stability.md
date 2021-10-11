@@ -1,1403 +1,190 @@
 ---
-title: Perception simulation
-description: A guide to using the Perception Simulation library to automate simulated input for immersive applications
-author: pbarnettms
-ms.author: pbarnett
-ms.date: 10/05/2021
+title: Hologram stability
+description: The HoloLens automatically stabilize holograms, but there are steps developers can take to improve hologram stability further.
+author: thetuvix
+ms.author: alexturn
+ms.date: 07/08/2020
 ms.topic: article
-keywords: HoloLens, simulation, testing
+keywords: holograms, stability, hololens, mixed reality headset, windows mixed reality headset, virtual reality headset, frame rate, rendering, reprojection, color separation
+appliesto:
+    - HoloLens
 ---
 
-# Perception simulation
+# Hologram stability
 
-Do you want to build an automated test for your app? Do you want your tests to go beyond component-level unit testing and really exercise your app end-to-end? Perception Simulation is what you're looking for. The Perception Simulation library sends human and world input data to your app so you can automate your tests. For example, you can simulate the input of a human looking to a specific, repeatable position and then use a gesture or motion controller.
+To achieve stable holograms, HoloLens has a built-in image stabilization pipeline. The stabilization pipeline works automatically in the background, so you don't need to take any extra steps to enable it. However, you should exercise techniques that improve hologram stability and avoid scenarios that reduce stability.
 
-Perception Simulation can send simulated input like this to a physical HoloLens, the HoloLens emulator (first gen), the HoloLens 2 Emulator, or a PC with Mixed Reality Portal installed. Perception Simulation bypasses the live sensors on a Mixed Reality device and sends simulated input to applications running on the device. Applications receive these input events through the same APIs they always use and can't tell the difference between running with real sensors versus Perception Simulation. Perception Simulation is the same technology used by the HoloLens emulators to send simulated input to the HoloLens Virtual Machine.
+## Hologram quality terminology
 
-To begin using simulation in your code, start by creating an IPerceptionSimulationManager object. From that object, you can issue commands to control properties of a simulated "human", including head position, hand position, and gestures. You can also enable and manipulate motion controllers.
+The quality of holograms is a result of good environment and good app development. Apps running at a constant 60 frames-per-second in an environment where HoloLens can track the surroundings ensures the hologram and the matching coordinate system are in sync. From a user's perspective, holograms that are meant to be stationary won't move relative to the environment.
 
-## Setting Up a Visual Studio Project for Perception Simulation
-1. [Install the HoloLens emulator](../install-the-tools.md) on your development PC. The emulator includes the libraries you' use for Perception Simulation.
-2. Create a new Visual Studio C# desktop project (a Console Project works great to get started).
-3. Add the following binaries to your project as references (Project->Add->Reference...). You can find them in %ProgramFiles(x86)%\Microsoft XDE\\(version), such as **%ProgramFiles(x86)%\Microsoft XDE\\10.0.18362.0** for the HoloLens 2 Emulator.  (Note: although the binaries are part of the HoloLens 2 Emulator, they also work for Windows Mixed Reality on the desktop.)
-    a. PerceptionSimulationManager.Interop.dll - Managed C# wrapper for Perception Simulation.
-    b. PerceptionSimulationRest.dll - Library for setting up a web-socket communication channel to the HoloLens or emulator.
-    c. SimulationStream.Interop.dll - Shared types for simulation.
-4. Add the implementation binary PerceptionSimulationManager.dll to your project
-    a. First add it as a binary to the project (Project->Add->Existing Item...). Save it as a link so that it doesn't copy it to your project source folder. ![Add PerceptionSimulationManager.dll to the project as a link](images/saveaslink.png)
-    b. Then make sure that it gets copied to your output folder on build. This is in the property sheet for the binary. ![Mark PerceptionSimulationManager.dll to copy to the output directory](images/copyalways.png)
-5. Set your active solution platform to x64.  (Use the Configuration Manager to create a Platform entry for x64 if one doesn't already exist.)
+The following terminology can help you when you're identifying problems with the environment, inconsistent or low rendering rates, or anything else.
+* **Accuracy.** Once the hologram is world-locked and placed in the real world, it should stay where it's placed relative to the surrounding environment and independent of user motion or small and sparse environment changes. If a hologram later appears in an unexpected location, it's an *accuracy* problem. Such scenarios can happen if two distinct rooms look identical.
+* **Jitter.** Users observe jitter as high frequency shaking of a hologram, which can happen when tracking of the environment degrades. For users, the solution is running [sensor tuning](/hololens/hololens-updates).
+* **Judder.** Low rendering frequencies result in uneven motion and double images of holograms. Judder is especially noticeable in holograms with motion. Developers need to maintain a [constant 60 FPS](hologram-stability.md#frame-rate).
+* **Drift.** Users see drift as a hologram appears to move away from where it was originally placed. Drift happens when you place holograms far away from [spatial anchors](../../design/spatial-anchors.md), particularly in unmapped parts of the environment. Creating holograms close to spatial anchors lowers the likelihood of drift.
+* **Jumpiness.** When a hologram "pops" or "jumps" away from its location occasionally. Jumpiness can occur as tracking adjusts holograms to match updated understanding of your environment.
+* **Swim.** When a hologram appears to sway corresponding to the motion of the user's head. Swim occurs when the application hasn't fully implemented [reprojection](hologram-stability.md#reprojection), and if the HoloLens isn't [calibrated](/hololens/hololens-calibration) for the current user. The user can rerun the [calibration](/hololens/hololens-calibration) application to fix the issue. Developers can update the stabilization plane to further enhance stability.
+* **Color separation.** The displays in HoloLens are color sequential displays, which flash color channels of red-green-blue-green at 60 Hz (individual color fields are shown at 240 Hz). Whenever a user tracks a moving hologram with their eyes, that hologram's leading and trailing edges separate in their constituent colors, producing a rainbow effect. The degree of separation is dependent upon the speed of the hologram. In some rarer cases, moving ones head rapidly while looking at a stationary hologram can also result in a rainbow effect, which is called *[color separation](hologram-stability.md#color-separation)*.
 
-## Creating an IPerceptionSimulation Manager Object
+## Frame rate
 
-To control simulation, you'll issue updates to objects retrieved from an IPerceptionSimulationManager object. The first step is to get that object and connect it to your target device or emulator. You can get the IP address of your emulator by clicking on the Device Portal button in the [toolbar](using-the-hololens-emulator.md)
+Frame rate is the first pillar of hologram stability. For holograms to appear stable in the world, each image presented to the user must have the holograms drawn in the correct spot. The displays on HoloLens refresh 240 times a second, showing four separate color fields for each newly rendered image, resulting in a user experience of 60 FPS (frames per second). To provide the best experience possible, application developers must maintain 60 FPS, which translates to consistently providing a new image to the operating system every 16 milliseconds.
 
-![Open Device Portal icon](images/emulator-deviceportal.png) **Open Device Portal**: Open the Windows Device Portal for the HoloLens OS in the emulator.  For Windows Mixed Reality, this can be retrieved in the Settings app under "Update & Security", then "For developers" in the "Connect using:" section under "Enable Device Portal."  Be sure to note both the IP address and port.
+**60 FPS**
+ To draw holograms to look like they're sitting in the real world, HoloLens needs to render images from the user's position. Since image rendering takes time, HoloLens predicts where a user's head will be when the images are shown in the displays. However, this prediction algorithm is an approximation. HoloLens has hardware that adjusts the rendered image to account for the discrepancy between the predicted head position and the actual head position. The adjustment makes the image the user sees appear as if it's rendered from the correct location, and holograms feel stable. The image updates work best with small changes, and it can't completely fix certain things in the rendered image like motion-parallax.
 
-First, you'll call RestSimulationStreamSink.Create to get a RestSimulationStreamSink object. This is the target device or emulator that you'll control over an http connection. Your commands will be passed to and handled by the [Windows Device Portal](using-the-windows-device-portal.md) running on the device or emulator. The four parameters you'll need to create an object are:
-* Uri uri - IP address of the target device (e.g., "https://123.123.123.123" or "https://123.123.123.123:50080")
-* System.Net.NetworkCredential credentials - Username/password for connecting to the [Windows Device Portal](using-the-windows-device-portal.md) on the target device or emulator. If you're connecting to the emulator via its local address (e.g., 168.*.*.*) on the same PC, any credentials will be accepted.
-* bool normal - True for normal priority, false for low priority. You generally want to set this to *true* for test scenarios, which allows your test to take control.  The emulator and Windows Mixed Reality simulation use low-priority connections.  If your test also uses a low-priority connection, the most recently established connection will be in control.
-* System.Threading.CancellationToken token - Token to cancel the async operation.
+By rendering at 60 FPS, you're doing three things to help make stable holograms:
+1. Minimizing the overall latency between rendering an image and that image being seen by the user. In an engine with a game and a render thread running in lockstep, running at 30FPS can add 33.3 ms of extra latency. Reducing latency decreases prediction error and increases hologram stability.
+2. Making it so every image reaching the user's eyes have a consistent amount of latency. If you render at 30 fps, the display still displays images at 60 FPS, meaning the same image will be displayed twice in a row. The second frame will have 16.6-ms more latency than the first frame and will have to correct a more pronounced amount of error. This inconsistency in error magnitude can cause unwanted 60 Hz judder.
+3. Reducing the appearance of judder, which is characterized by uneven motion and double images. Faster hologram motion and lower render rates are associated with more pronounced judder. Striving to maintain 60 FPS at all times will help avoid judder for a given moving hologram.
 
-Second, you'll create the IPerceptionSimulationManager. This is the object you use to control simulation. This must also be done in an async method.
+**Frame-rate consistency**
+ Frame rate consistency is as important as a high frames-per-second. Occasionally dropped frames are inevitable for any content-rich application, and the HoloLens implements some sophisticated algorithms to recover from occasional glitches. However, a constantly fluctuating framerate is a lot more noticeable to a user than running consistently at lower frame rates. For example, an application that renders smoothly for five frames (60 FPS for the duration of these five frames) and then drops every other frame for the next 10 frames (30 FPS for the duration of these 10 frames) will appear more unstable than an application that consistently renders at 30 FPS.
 
-## Control the simulated Human
+On a related note, the operating system throttles down applications to 30 FPS when [mixed reality capture](/hololens/holographic-photos-and-videos) is running.
 
-An IPerceptionSimulationManager has a Human property that returns an ISimulatedHuman object. To control the simulated human, perform operations on this object. For example:
+**Performance analysis**
+ There are different kinds of tools that can be used to benchmark your application frame rate, such as:
+* GPUView
+* Visual Studio Graphics Debugger
+* Profilers built into 3D engines such as Unity
 
-```
-manager.Human.Move(new Vector3(0.1f, 0.0f, 0.0f))
-```
-
-## Basic Sample C# console application
-
-```
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using Microsoft.PerceptionSimulation;
-
-namespace ConsoleApplication1
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Task.Run(async () =>
-            {
-                RestSimulationStreamSink sink = null;
-                CancellationToken token = new System.Threading.CancellationToken();
-
-                try
-                {
-                    sink = await RestSimulationStreamSink.Create(
-                        // use the IP address for your device/emulator
-                        new Uri("https://169.254.227.115"),
-                        // no credentials are needed for the emulator
-                        new System.Net.NetworkCredential("", ""),
-                        // normal priorty
-                        true,
-                        // cancel token
-                        token);
-
-                    IPerceptionSimulationManager manager = PerceptionSimulationManager.CreatePerceptionSimulationManager(sink);
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine(e);
-                }
-
-                // Always close the sink to return control to the previous application.
-                if (sink != null)
-                {
-                    await sink.Close(token);
-                }
-            });
-
-            // If main exits, the process exits.  
-            Console.WriteLine("Press any key to exit...");
-            Console.ReadLine();
-        }
-    }
-}
-```
-
-## Extended Sample C# console application
-
-```
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
-using System.Threading.Tasks;
-using Microsoft.PerceptionSimulation;
-
-namespace ConsoleApplication1
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            RestSimulationStreamSink sink = null;
-            CancellationToken token = new System.Threading.CancellationToken();
-
-            Task.Run(async () =>
-            {
-                try
-                {
-                    sink = await RestSimulationStreamSink.Create(
-                        // use the IP address for your device/emulator
-                        new Uri("https://169.254.227.115"),
-                        // no credentials are needed for the emulator
-                        new System.Net.NetworkCredential("", ""),
-                        // normal priorty
-                        true,
-                        // cancel token
-                        token);
-
-                    IPerceptionSimulationManager manager = PerceptionSimulationManager.CreatePerceptionSimulationManager(sink);
-
-                    // Now, we'll simulate a sequence of actions.
-                    // Sleeps in-between each action give time to the system
-                    // to be able to properly react.
-                    // This is just an example. A proper automated test should verify
-                    // that the app has behaved correctly
-                    // before proceeding to the next step, instead of using Sleeps.
-
-                    // Activate the right hand
-                    manager.Human.RightHand.Activated = true;
-
-                    // Simulate Bloom gesture, which should cause Shell to disappear
-                    manager.Human.RightHand.PerformGesture(SimulatedGesture.Home);
-                    Thread.Sleep(2000);
-
-                    // Simulate Bloom gesture again... this time, Shell should reappear
-                    manager.Human.RightHand.PerformGesture(SimulatedGesture.Home);
-                    Thread.Sleep(2000);
-
-                    // Simulate a Head rotation down around the X axis
-                    // This should cause gaze to aim about the center of the screen
-                    manager.Human.Head.Rotate(new Rotation3(0.04f, 0.0f, 0.0f));
-                    Thread.Sleep(300);
-
-                    // Simulate a finger press & release
-                    // Should cause a tap on the center tile, thus launching it
-                    manager.Human.RightHand.PerformGesture(SimulatedGesture.FingerPressed);
-                    Thread.Sleep(300);
-                    manager.Human.RightHand.PerformGesture(SimulatedGesture.FingerReleased);
-                    Thread.Sleep(2000);
-
-                    // Simulate a second finger press & release
-                    // Should activate the app that was launched when the center tile was clicked
-                    manager.Human.RightHand.PerformGesture(SimulatedGesture.FingerPressed);
-                    Thread.Sleep(300);
-                    manager.Human.RightHand.PerformGesture(SimulatedGesture.FingerReleased);
-                    Thread.Sleep(5000);
-
-                    // Simulate a Head rotation towards the upper right corner
-                    manager.Human.Head.Rotate(new Rotation3(-0.14f, 0.17f, 0.0f));
-                    Thread.Sleep(300);
-
-                    // Simulate a third finger press & release
-                    // Should press the Remove button on the app
-                    manager.Human.RightHand.PerformGesture(SimulatedGesture.FingerPressed);
-                    Thread.Sleep(300);
-                    manager.Human.RightHand.PerformGesture(SimulatedGesture.FingerReleased);
-                    Thread.Sleep(2000);
-
-                    // Simulate Bloom gesture again... bringing the Shell back once more
-                    manager.Human.RightHand.PerformGesture(SimulatedGesture.Home);
-                    Thread.Sleep(2000);
-                }
-                catch (Exception e)
-                {
-                    Console.WriteLine(e);
-                }
-            });
-
-            // If main exits, the process exits.  
-            Console.WriteLine("Press any key to exit...");
-            Console.ReadLine();
-
-            // Always close the sink to return control to the previous application.
-            if (sink != null)
-            {
-                sink.Close(token);
-            }
-        }
-    }
-}
-```
-
-## Note on 6-DOF controllers
-
-Before calling any properties on methods on a simulated 6-DOF controller, you must activate the controller.  Not doing so will result in an exception.  Starting with the Windows 10 May 2019 Update, simulated 6-DOF controllers can be installed and activated by setting the Status property on the ISimulatedSixDofController object to SimulatedSixDofControllerStatus.Active.
-In the Windows 10 October 2018 Update and earlier, you must separately install a simulated 6-DOF controller first by calling the PerceptionSimulationDevice tool located in the \Windows\System32 folder.  The usage of this tool is as follows:
-
-
-```
-    PerceptionSimulationDevice.exe <action> 6dof <instance>
-```
-
-For example
-
-```
-    PerceptionSimulationDevice.exe i 6dof 1
-```
-
-Supported actions are:
-* i = install
-* q = query
-* r = remove
-
-Supported instances are:
-* 1 = the left 6-DOF controller
-* 2 = the right 6-DOF controller
-
-The exit code of the process will indicate success (a zero return value) or failure (a non-zero return value).  When using the 'q' action to query whether a controller is installed, the return value will be zero (0) if the controller isn't already installed or one (1) if the controller is installed.
-
-When removing a controller on the Windows 10 October 2018 Update or earlier, set its status to Off via the API first, then call the PerceptionSimulationDevice tool.
-
-This tool must be run as Administrator.
-
-
-
-
-## API Reference
-
-### Microsoft.PerceptionSimulation.SimulatedDeviceType
-
-Describes a simulated device type
-
-```
-public enum SimulatedDeviceType
-{
-    Reference = 0
-}
-```
-
-**Microsoft.PerceptionSimulation.SimulatedDeviceType.Reference**
-
-A fictitious reference device, the default for PerceptionSimulationManager
-
-### Microsoft.PerceptionSimulation.HeadTrackerMode
-
-Describes a head tracker mode
-
-```
-public enum HeadTrackerMode
-{
-    Default = 0,
-    Orientation = 1,
-    Position = 2
-}
-```
-
-**Microsoft.PerceptionSimulation.HeadTrackerMode.Default**
-
-Default Head Tracking. This means the system may select the best head tracking mode based upon runtime conditions.
-
-**Microsoft.PerceptionSimulation.HeadTrackerMode.Orientation**
-
-Orientation Only Head Tracking. This means that the tracked position may not be reliable, and some functionality dependent on head position may not be available.
-
-**Microsoft.PerceptionSimulation.HeadTrackerMode.Position**
-
-Positional Head Tracking. This means that the tracked head position and orientation are both reliable
-
-### Microsoft.PerceptionSimulation.SimulatedGesture
-
-Describes a simulated gesture
-
-```
-public enum SimulatedGesture
-{
-    None = 0,
-    FingerPressed = 1,
-    FingerReleased = 2,
-    Home = 4,
-    Max = Home
-}
-```
-
-**Microsoft.PerceptionSimulation.SimulatedGesture.None**
-
-A sentinel value used to indicate no gestures.
-
-**Microsoft.PerceptionSimulation.SimulatedGesture.FingerPressed**
-
-A finger pressed gesture.
-
-**Microsoft.PerceptionSimulation.SimulatedGesture.FingerReleased**
-
-A finger released gesture.
-
-**Microsoft.PerceptionSimulation.SimulatedGesture.Home**
-
-The home/system gesture.
-
-**Microsoft.PerceptionSimulation.SimulatedGesture.Max**
-
-The maximum valid gesture.
-
-### Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus
-
-The possible states of a simulated 6-DOF controller.
-
-```
-public enum SimulatedSixDofControllerStatus
-{
-    Off = 0,
-    Active = 1,
-    TrackingLost = 2,
-}
-```
-
-**Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus.Off**
-
-The 6-DOF controller is turned off.
-
-**Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus.Active**
-
-The 6-DOF controller is turned on and tracked.
-
-**Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus.TrackingLost**
-
-The 6-DOF controller is turned on but cannot be tracked.
-
-### Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton
-
-The supported buttons on a simulated 6-DOF controller.
-
-```
-public enum SimulatedSixDofControllerButton
-{
-    None = 0,
-    Home = 1,
-    Menu = 2,
-    Grip = 4,
-    TouchpadPress = 8,
-    Select = 16,
-    TouchpadTouch = 32,
-    Thumbstick = 64,
-    Max = Thumbstick
-}
-```
-
-**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.None**
-
-A sentinel value used to indicate no buttons.
-
-**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Home**
-
-The Home button is pressed.
-
-**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Menu**
-
-The Menu button is pressed.
-
-**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Grip**
-
-The Grip button is pressed.
-
-**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.TouchpadPress**
-
-The TouchPad is pressed.
-
-**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Select**
-
-The Select button is pressed.
-
-**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.TouchpadTouch**
-
-The TouchPad is touched.
-
-**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Thumbstick**
-
-The Thumbstick is pressed.
-
-**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Max**
-
-The maximum valid button.
-
-
-### Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState
-
-The calibration state of the simulated eyes
-
-```
-public enum SimulatedGesture
-{
-    Unavailable = 0,
-    Ready = 1,
-    Configuring = 2,
-    UserCalibrationNeeded = 3
-}
-```
-
-**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.Unavailable**
-
-The eyes calibration is unavailable.
-
-**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.Ready**
-
-The eyes have been calibrated.  This is the default value.
-
-**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.Configuring**
-
-The eyes are being calibrated.
-
-**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.UserCalibrationNeeded**
-
-The eyes need to be calibrated.
-
-### Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy
-
-The tracking accuracy of a joint of the hand.
-
-```
-public enum SimulatedHandJointTrackingAccuracy
-{
-    Unavailable = 0,
-    Approximate = 1,
-    Visible = 2
-}
-```
-
-**Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy.Unavailable**
-
-The joint isn't tracked.
-
-**Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy.Approximate**
-
-The joint position is inferred.
-
-**Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy.Visible**
-
-The joint is fully tracked.
-
-### Microsoft.PerceptionSimulation.SimulatedHandPose
-
-The tracking accuracy of a joint of the hand.
-
-```
-public enum SimulatedHandPose
-{
-    Closed = 0,
-    Open = 1,
-    Point = 2,
-    Pinch = 3,
-    Max = Pinch
-}
-```
-
-**Microsoft.PerceptionSimulation.SimulatedHandPose.Closed**
-
-The hand's finger joints are configured to reflect a closed pose.
-
-**Microsoft.PerceptionSimulation.SimulatedHandPose.Open**
-
-The hand's finger joints are configured to reflect an open pose.
-
-**Microsoft.PerceptionSimulation.SimulatedHandPose.Point**
-
-The hand's finger joints are configured to reflect a pointing pose.
-
-**Microsoft.PerceptionSimulation.SimulatedHandPose.Pinch**
-
-The hand's finger joints are configured to reflect a pinching pose.
-
-**Microsoft.PerceptionSimulation.SimulatedHandPose.Max**
-
-The maximum valid value for SimulatedHandPose.
-
-
-### Microsoft.PerceptionSimulation.PlaybackState
-
-Describes the state of a playback.
-
-```
-public enum PlaybackState
-{
-    Stopped = 0,
-    Playing = 1,
-    Paused = 2,
-    End = 3,
-}
-```
-
-**Microsoft.PerceptionSimulation.PlaybackState.Stopped**
-
-The recording is currently stopped and ready for playback.
-
-**Microsoft.PerceptionSimulation.PlaybackState.Playing**
-
-The recording is currently playing.
-
-**Microsoft.PerceptionSimulation.PlaybackState.Paused**
-
-The recording is currently paused.
-
-**Microsoft.PerceptionSimulation.PlaybackState.End**
-
-The recording has reached the end.
-
-### Microsoft.PerceptionSimulation.Vector3
-
-Describes a three components vector, which might describe a point or a vector in 3D space.
-
-```
-public struct Vector3
-{
-    public float X;
-    public float Y;
-    public float Z;
-    public Vector3(float x, float y, float z);
-}
-```
-
-**Microsoft.PerceptionSimulation.Vector3.X**
-
-The X component of the vector.
-
-**Microsoft.PerceptionSimulation.Vector3.Y**
-
-The Y component of the vector.
-
-**Microsoft.PerceptionSimulation.Vector3.Z**
-
-The Z component of the vector.
-
-**Microsoft.PerceptionSimulation.Vector3.#ctor(System.Single,System.Single,System.Single)**
-
-Construct a new Vector3.
-
-Parameters
-* x - The x component of the vector.
-* y - The y component of the vector.
-* z - The z component of the vector.
-
-### Microsoft.PerceptionSimulation.Rotation3
-
-Describes a three components rotation.
-
-```
-public struct Rotation3
-{
-    public float Pitch;
-    public float Yaw;
-    public float Roll;
-    public Rotation3(float pitch, float yaw, float roll);
-}
-```
-
-**Microsoft.PerceptionSimulation.Rotation3.Pitch**
-
-The Pitch component of the Rotation, down around the X axis.
-
-**Microsoft.PerceptionSimulation.Rotation3.Yaw**
-
-The Yaw component of the Rotation, right around the Y axis.
-
-**Microsoft.PerceptionSimulation.Rotation3.Roll**
-
-The Roll component of the Rotation, right around the Z axis.
-
-**Microsoft.PerceptionSimulation.Rotation3.#ctor(System.Single,System.Single,System.Single)**
-
-Construct a new Rotation3.
-
-Parameters
-* pitch - The pitch component of the Rotation.
-* yaw - The yaw component of the Rotation.
-* roll - The roll component of the Rotation.
-
-### Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration
-
-Describes the configuration of a joint on a simulated hand.
-
-```
-public struct SimulatedHandJointConfiguration
-{
-    public Vector3 Position;
-    public Rotation3 Rotation;
-    public SimulatedHandJointTrackingAccuracy TrackingAccuracy;
-}
-```
-
-**Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration.Position**
-
-The position of the joint.
-
-**Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration.Rotation**
-
-The rotation of the joint.
-
-**Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration.TrackingAccuracy**
-
-The tracking accuracy of the joint.
-
-
-### Microsoft.PerceptionSimulation.Frustum
-
-Describes a view frustum, as typically used by a camera.
-
-```
-public struct Frustum
-{
-    float Near;
-    float Far;
-    float FieldOfView;
-    float AspectRatio;
-}
-```
-
-**Microsoft.PerceptionSimulation.Frustum.Near**
-
-The minimum distance that is contained in the frustum.
-
-**Microsoft.PerceptionSimulation.Frustum.Far**
-
-The maximum distance that is contained in the frustum.
-
-**Microsoft.PerceptionSimulation.Frustum.FieldOfView**
-
-The horizontal field of view of the frustum, in radians (less than PI).
-
-**Microsoft.PerceptionSimulation.Frustum.AspectRatio**
-
-The ratio of horizontal field of view to vertical field of view.
-
-### Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration
-
-Describes the configuration of the simulated headset's display.
-
-```
-public struct SimulatedDisplayConfiguration
-{
-    public Vector3 LeftEyePosition;
-    public Rotation3 LeftEyeRotation;
-    public Vector3 RightEyePosition;
-    public Rotation3 RightEyeRotation;
-    public float Ipd;
-    public bool ApplyEyeTransforms;
-    public bool ApplyIpd;
-}
-```
-
-**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.LeftEyePosition**
-
-The transform from the center of the head to the left eye for purposes of stereo rendering.
-
-**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.LeftEyeRotation**
-
-The rotation of the left eye for purposes of stereo rendering.
-
-**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.RightEyePosition**
-
-The transform from the center of the head to the right eye for purposes of stereo rendering.
-
-**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.RightEyeRotation**
-
-The rotation of the right eye for purposes of stereo rendering.
-
-**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.Ipd**
-
-The Ipd value reported by the system for purposes of stereo rendering.
-
-**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.ApplyEyeTransforms**
-
-Whether the values provided for left and right eye transforms should be considered valid and applied to the running system.
-
-**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.ApplyIpd**
-
-Whether the value provided for Ipd should be considered valid and applied to the running system.
-
-
-### Microsoft.PerceptionSimulation.IPerceptionSimulationManager
-
-Root for generating the packets used to control a device.
-
-```
-public interface IPerceptionSimulationManager
-{   
-    ISimulatedDevice Device { get; }
-    ISimulatedHuman Human { get; }
-    void Reset();
-}
-```
-
-**Microsoft.PerceptionSimulation.IPerceptionSimulationManager.Device**
-
-Retrieve the simulated device object that interprets the simulated human and the simulated world.
-
-**Microsoft.PerceptionSimulation.IPerceptionSimulationManager.Human**
-
-Retrieve the object that controls the simulated human.
-
-**Microsoft.PerceptionSimulation.IPerceptionSimulationManager.Reset**
-
-Resets the simulation to its default state.
-
-### Microsoft.PerceptionSimulation.ISimulatedDevice
-
-Interface describing the device, which interprets the simulated world and the simulated human
-
-```
-public interface ISimulatedDevice
-{
-    ISimulatedHeadTracker HeadTracker { get; }
-    ISimulatedHandTracker HandTracker { get; }
-    void SetSimulatedDeviceType(SimulatedDeviceType type);
-}
-```
-
-**Microsoft.PerceptionSimulation.ISimulatedDevice.HeadTracker**
+## Hologram render distances
 
-Retrieve the Head Tracker from the Simulated Device.
+>[!VIDEO https://www.youtube.com/embed/-606oZKLa_s]
 
-**Microsoft.PerceptionSimulation.ISimulatedDevice.HandTracker**
+The human visual system integrates multiple distance-dependent signals when it fixates and focuses on an object.
+* [Accommodation](https://en.wikipedia.org/wiki/Accommodation_%28eye%29) - The focus of an individual eye.
+* [Convergence](https://en.wikipedia.org/wiki/Convergence_(eye)) - Two eyes moving inward or outward to center on an object.
+* [Binocular vision](https://en.wikipedia.org/wiki/Stereopsis) - Disparities between the left- and right-eye images that are dependent on an object's distance away from your fixation point.
+* Shading, relative angular size, and other monocular (single eye) cues.
 
-Retrieve the Hand Tracker from the Simulated Device.
+Convergence and accommodation are unique because their extra-retinal cues related to how the eyes change to perceive objects at different distances. In natural viewing, convergence and accommodation are linked. When the eyes view something near (for example, your nose), the eyes cross and accommodate to a near point. When the eyes view something at infinity, the eyes become parallel and the eye accommodates to infinity. 
 
-**Microsoft.PerceptionSimulation.ISimulatedDevice.SetSimulatedDeviceType(Microsoft.PerceptionSimulation.SimulatedDeviceType)**
+Users wearing HoloLens will always accommodate to 2.0 m to maintain a clear image because the HoloLens displays are fixed at an optical distance approximately 2.0 m away from the user. App developers control where users' eyes converge by placing content and holograms at various depths. When users accommodate and converge to different distances, the natural link between the two cues is broken, which can lead to visual discomfort or fatigue, especially when the magnitude of the conflict is large. 
 
-Set the properties of the simulated device to match the provided device type.
+Discomfort from the vergence-accommodation conflict can be avoided or minimized by keeping converged content as close to 2.0 m as possible (that is, in a scene with lots of depth place the areas of interest near 2.0 m, when possible). When content can't be placed near 2.0 m, discomfort from the vergence-accommodation conflict is greatest when user’s gaze back and forth between different distances. In other words, it's much more comfortable to look at a stationary hologram that stays 50 cm away than to look at a hologram 50 cm away that moves toward and away from you over time.
 
-Parameters
-* type - The new type of Simulated Device
+Placing content at 2.0 m is also advantageous because the two displays are designed to fully overlap at this distance. For images placed off this plane, as they move off the side of the holographic frame they'll appear from one display while still being visible on the other. This binocular rivalry can be disruptive to the depth perception of the hologram.
 
-### Microsoft.PerceptionSimulation.ISimulatedDevice2
+**Optimal distance for placing holograms from the user**
 
-Additional properties are available by casting the ISimulatedDevice to ISimulatedDevice2
+![Optimal distance for placing holograms from the user](images/distanceguiderendering-750px.png)
 
-```
-public interface ISimulatedDevice2
-{
-    bool IsUserPresent { [return: MarshalAs(UnmanagedType.Bool)] get; [param: MarshalAs(UnmanagedType.Bool)] set; }
-    SimulatedDisplayConfiguration DisplayConfiguration { get; set; }
-
-};
-```
-
-**Microsoft.PerceptionSimulation.ISimulatedDevice2.IsUserPresent**
-
-Retrieve or set whether or not the simulated human is actively wearing the headset.
-
-**Microsoft.PerceptionSimulation.ISimulatedDevice2.DisplayConfiguration**
-
-Retrieve or set the properties of the simulated display.
-
-### Microsoft.PerceptionSimulation.ISimulatedHeadTracker
-
-Interface describing the portion of the simulated device that tracks the head of the simulated human.
-
-```
-public interface ISimulatedHeadTracker
-{
-    HeadTrackerMode HeadTrackerMode { get; set; }
-};
-```
-
-**Microsoft.PerceptionSimulation.ISimulatedHeadTracker.HeadTrackerMode**
-
-Retrieves and sets the current head tracker mode.
-
-### Microsoft.PerceptionSimulation.ISimulatedHandTracker
-
-Interface describing the portion of the simulated device that tracks the hands of the simulated human
-
-```
-public interface ISimulatedHandTracker
-{
-    Vector3 WorldPosition { get; }
-    Vector3 Position { get; set; }
-    float Pitch { get; set; }
-    bool FrustumIgnored { [return: MarshalAs(UnmanagedType.Bool)] get; [param: MarshalAs(UnmanagedType.Bool)] set; }
-    Frustum Frustum { get; set; }
-}
-```
-
-**Microsoft.PerceptionSimulation.ISimulatedHandTracker.WorldPosition**
-
-Retrieve the position of the node with relation to the world, in meters.
-
-**Microsoft.PerceptionSimulation.ISimulatedHandTracker.Position**
-
-Retrieve and set the position of the simulated hand tracker, relative to the center of the head.
-
-**Microsoft.PerceptionSimulation.ISimulatedHandTracker.Pitch**
-
-Retrieve and set the downward pitch of the simulated hand tracker.
-
-**Microsoft.PerceptionSimulation.ISimulatedHandTracker.FrustumIgnored**
-
-Retrieve and set whether the frustum of the simulated hand tracker is ignored. When ignored, both hands are always visible. When not ignored (the default) hands are only visible when they are within the frustum of the hand tracker.
-
-**Microsoft.PerceptionSimulation.ISimulatedHandTracker.Frustum**
-
-Retrieve and set the frustum properties used to determine if hands are visible to the simulated hand tracker.
-
-### Microsoft.PerceptionSimulation.ISimulatedHuman
-
-Top-level interface for controlling the simulated human.
-
-```
-public interface ISimulatedHuman 
-{
-    Vector3 WorldPosition { get; set; }
-    float Direction { get; set; }
-    float Height { get; set; }
-    ISimulatedHand LeftHand { get; }
-    ISimulatedHand RightHand { get; }
-    ISimulatedHead Head { get; }s
-    void Move(Vector3 translation);
-    void Rotate(float radians);
-}
-```
-
-**Microsoft.PerceptionSimulation.ISimulatedHuman.WorldPosition**
-
-Retrieve and set the position of the node with relation to the world, in meters. The position corresponds to a point at the center of the human's feet.
-
-**Microsoft.PerceptionSimulation.ISimulatedHuman.Direction**
-
-Retrieve and set the direction the simulated human faces in the world. 0 radians faces down the negative Z axis. Positive radians rotate clockwise about the Y axis.
-
-**Microsoft.PerceptionSimulation.ISimulatedHuman.Height**
-
-Retrieve and set the height of the simulated human, in meters.
-
-**Microsoft.PerceptionSimulation.ISimulatedHuman.LeftHand**
-
-Retrieve the left hand of the simulated human.
-
-**Microsoft.PerceptionSimulation.ISimulatedHuman.RightHand**
-
-Retrieve the right hand of the simulated human.
-
-**Microsoft.PerceptionSimulation.ISimulatedHuman.Head**
-
-Retrieve the head of the simulated human.
-
-**Microsoft.PerceptionSimulation.ISimulatedHuman.Move(Microsoft.PerceptionSimulation.Vector3)**
-
-Move the simulated human relative to its current position, in meters.
-
-Parameters
-* translation - The translation to move, relative to current position.
-
-**Microsoft.PerceptionSimulation.ISimulatedHuman.Rotate(System.Single)**
-
-Rotate the simulated human relative to its current direction, clockwise about the Y axis
-
-Parameters
-* radians - The amount to rotate around the Y axis.
-
-### Microsoft.PerceptionSimulation.ISimulatedHuman2
-
-Additional properties are available by casting the ISimulatedHuman to ISimulatedHuman2
-
-```
-public interface ISimulatedHuman2
-{
-    /* New members in addition to those available on ISimulatedHuman */
-    ISimulatedSixDofController LeftController { get; }
-    ISimulatedSixDofController RightController { get; }
-}
-```
-
-**Microsoft.PerceptionSimulation.ISimulatedHuman2.LeftController**
-
-Retrieve the left 6-DOF controller.
-
-**Microsoft.PerceptionSimulation.ISimulatedHuman2.RightController**
-
-Retrieve the right 6-DOF controller.
-
-
-### Microsoft.PerceptionSimulation.ISimulatedHand
-
-Interface describing a hand of the simulated human
-
-```
-public interface ISimulatedHand
-{
-    Vector3 WorldPosition { get; }
-    Vector3 Position { get; set; }
-    bool Activated { [return: MarshalAs(UnmanagedType.Bool)] get; [param: MarshalAs(UnmanagedType.Bool)] set; }
-    bool Visible { [return: MarshalAs(UnmanagedType.Bool)] get; }
-    void EnsureVisible();
-    void Move(Vector3 translation);
-    void PerformGesture(SimulatedGesture gesture);
-}
-```
-
-**Microsoft.PerceptionSimulation.ISimulatedHand.WorldPosition**
-
-Retrieve the position of the node with relation to the world, in meters.
-
-**Microsoft.PerceptionSimulation.ISimulatedHand.Position**
-
-Retrieve and set the position of the simulated hand relative to the human, in meters.
-
-**Microsoft.PerceptionSimulation.ISimulatedHand.Activated**
-
-Retrieve and set whether the hand is currently activated.
-
-**Microsoft.PerceptionSimulation.ISimulatedHand.Visible**
-
-Retrieve whether the hand is currently visible to the SimulatedDevice (that is, whether it's in a position to be detected by the HandTracker).
-
-**Microsoft.PerceptionSimulation.ISimulatedHand.EnsureVisible**
-
-Move the hand such that it is visible to the SimulatedDevice.
-
-**Microsoft.PerceptionSimulation.ISimulatedHand.Move(Microsoft.PerceptionSimulation.Vector3)**
-
-Move the position of the simulated hand relative to its current position, in meters.
-
-Parameters
-* translation - The amount to translate the simulated hand.
-
-**Microsoft.PerceptionSimulation.ISimulatedHand.PerformGesture(Microsoft.PerceptionSimulation.SimulatedGesture)**
-
-Perform a gesture using the simulated hand.  It will only be detected by the system if the hand is enabled.
-
-Parameters
-* gesture - The gesture to perform.
-
-### Microsoft.PerceptionSimulation.ISimulatedHand2
-
-Additional properties are available by casting an ISimulatedHand to ISimulatedHand2.
-```
-public interface ISimulatedHand2
-{
-    /* New members in addition to those available on ISimulatedHand */
-    Rotation3 Orientation { get; set; }
-}
-```
-
-**Microsoft.PerceptionSimulation.ISimulatedHand2.Orientation**
-
-Retrieve or set the rotation of the simulated hand.  Positive radians rotate clockwise when looking along the axis.
-
-### Microsoft.PerceptionSimulation.ISimulatedHand3
-
-Additional properties are available by casting an ISimulatedHand to ISimulatedHand3
-```
-public interface ISimulatedHand3
-{
-    /* New members in addition to those available on ISimulatedHand and ISimulatedHand2 */
-    GetJointConfiguration(SimulatedHandJoint joint, out SimulatedHandJointConfiguration jointConfiguration);
-    SetJointConfiguration(SimulatedHandJoint joint, SimulatedHandJointConfiguration jointConfiguration);
-    SetHandPose(SimulatedHandPose pose, bool animate);
-}
-```
-
-**Microsoft.PerceptionSimulation.ISimulatedHand3.GetJointConfiguration**
-
-Get the joint configuration for the specified joint.
-
-**Microsoft.PerceptionSimulation.ISimulatedHand3.SetJointConfiguration**
-
-Set the joint configuration for the specified joint.
-
-**Microsoft.PerceptionSimulation.ISimulatedHand3.SetHandPose**
-
-Set the hand to a known pose with an optional flag to animate.  Note: animating won't result in joints immediately reflecting their final joint configurations.
-
-
-### Microsoft.PerceptionSimulation.ISimulatedHead
-
-Interface describing the head of the simulated human.
-
-```
-public interface ISimulatedHead
-{
-    Vector3 WorldPosition { get; }
-    Rotation3 Rotation { get; set; }
-    float Diameter { get; set; }
-    void Rotate(Rotation3 rotation);
-}
-```
-
-**Microsoft.PerceptionSimulation.ISimulatedHead.WorldPosition**
-
-Retrieve the position of the node with relation to the world, in meters.
-
-**Microsoft.PerceptionSimulation.ISimulatedHead.Rotation**
-
-Retrieve the rotation of the simulated head. Positive radians rotate clockwise when looking along the axis.
-
-**Microsoft.PerceptionSimulation.ISimulatedHead.Diameter**
-
-Retrieve the simulated head's diameter. This value is used to determine the head's center (point of rotation).
-
-**Microsoft.PerceptionSimulation.ISimulatedHead.Rotate(Microsoft.PerceptionSimulation.Rotation3)**
-
-Rotate the simulated head relative to its current rotation. Positive radians rotate clockwise when looking along the axis.
-
-Parameters
-* rotation - The amount to rotate.
-
-### Microsoft.PerceptionSimulation.ISimulatedHead2
-
-Additional properties are available by casting an ISimulatedHead to ISimulatedHead2
-
-```
-public interface ISimulatedHead2
-{
-    /* New members in addition to those available on ISimulatedHead */
-    ISimulatedEyes Eyes { get; }
-}
-```
-
-**Microsoft.PerceptionSimulation.ISimulatedHead2.Eyes**
-
-Retrieve the eyes of the simulated human.
+**Clip Planes**
+ For maximum comfort, we recommend clipping render distance at 85 cm with fade out of content starting at 1 m. In applications where holograms and users are both stationary, holograms can be viewed comfortably as near as 50 cm. In those cases, applications should place a clip plane no closer than 30 cm and fade out should start at least 10 cm away from the clip plane. Whenever content is closer than 85 cm, it's important to ensure that users don't frequently move closer or farther from holograms or that holograms don't frequently move closer to or farther from the user as these situations are most likely to cause discomfort from the vergence-accommodation conflict. Content should be designed to minimize the need for interaction closer than 85 cm from the user, but when content must be rendered closer than 85 cm, a good rule of thumb for developers is to design scenarios where users and/or holograms don't move in depth more than 25% of the time.
 
-### Microsoft.PerceptionSimulation.ISimulatedSixDofController
+**Best practices**
+ When holograms can't be placed at 2 m and conflicts between convergence and accommodation can't be avoided, the optimal zone for hologram placement is between 1.25 m and 5 m. In every case, designers should structure content to encourage users to interact 1+ m away (for example, adjust content size and default placement parameters).
 
-Interface describing a 6-DOF controller associated with the simulated human.
+## Reprojection
+HoloLens has a sophisticated hardware-assisted holographic stabilization technique known as reprojection. Reprojection takes into account motion and change of the point of view (CameraPose) as the scene animates and the user moves their head.  Applications need to take specific actions to best use reprojection.
 
-```
-public interface ISimulatedSixDofController
-{
-    Vector3 WorldPosition { get; }
-    SimulatedSixDofControllerStatus Status { get; set; }
-    Vector3 Position { get; }
-    Rotation3 Orientation { get; set; }
-    void Move(Vector3 translation);
-    void PressButton(SimulatedSixDofControllerButton button);
-    void ReleaseButton(SimulatedSixDofControllerButton button);
-    void GetTouchpadPosition(out float x, out float y);
-    void SetTouchpadPosition(float x, float y);
-}
-```
-
-**Microsoft.PerceptionSimulation.ISimulatedSixDofController.WorldPosition**
-
-Retrieve the position of the node with relation to the world, in meters.
-
-**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Status**
-
-Retrieve or set the current state of the controller.  The controller status must be set to a value other than Off before any calls to move, rotate, or press buttons will succeed.
-
-**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Position**
-
-Retrieve or set the position of the simulated controller relative to the human, in meters.
-
-**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Orientation**
-
-Retrieve or set the orientation of the simulated controller.
-
-**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Move(Microsoft.PerceptionSimulation.Vector3)**
-
-Move the position of the simulated controller relative to its current position, in meters.
-
-Parameters
-* translation - The amount to translate the simulated controller.
-
-**Microsoft.PerceptionSimulation.ISimulatedSixDofController.PressButton(SimulatedSixDofControllerButton)**
-
-Press a button on the simulated controller.  It will only be detected by the system if the controller is enabled.
-
-Parameters
-* button - The button to press.
-
-**Microsoft.PerceptionSimulation.ISimulatedSixDofController.ReleaseButton(SimulatedSixDofControllerButton)**
-
-Release a button on the simulated controller.  It will only be detected by the system if the controller is enabled.
-
-Parameters
-* button - The button to release.
-
-**Microsoft.PerceptionSimulation.ISimulatedSixDofController.GetTouchpadPosition(out float, out float)**
-
-Get the position of a simulated finger on the simulated controller's touchpad.
-
-Parameters
-* x - The horizontal position of the finger.
-* y - The vertical position of the finger.
-
-**Microsoft.PerceptionSimulation.ISimulatedSixDofController.SetTouchpadPosition(float, float)**
-
-Set the position of a simulated finger on the simulated controller's touchpad.
-
-Parameters
-* x - The horizontal position of the finger.
-* y - The vertical position of the finger.
-
-### Microsoft.PerceptionSimulation.ISimulatedSixDofController2
-
-Additional properties and methods are available by casting an ISimulatedSixDofController to ISimulatedSixDofController2
-
-```
-public interface ISimulatedSixDofController2
-{
-    /* New members in addition to those available on ISimulatedSixDofController */
-    void GetThumbstickPosition(out float x, out float y);
-    void SetThumbstickPosition(float x, float y);
-    float BatteryLevel { get; set; }
-}
-```
-
-**Microsoft.PerceptionSimulation.ISimulatedSixDofController2.GetThumbstickPosition(out float, out float)**
-
-Get the position of the simulated thumbstick on the simulated controller.
-
-Parameters
-* x - The horizontal position of the thumbstick.
-* y - The vertical position of the thumbstick.
-
-**Microsoft.PerceptionSimulation.ISimulatedSixDofController2.SetThumbstickPosition(float, float)**
-
-Set the position of the simulated thumbstick on the simulated controller.
-
-Parameters
-* x - The horizontal position of the thumbstick.
-* y - The vertical position of the thumbstick.
-
-**Microsoft.PerceptionSimulation.ISimulatedSixDofController2.BatteryLevel**
-
-Retrieve or set the battery level of the simulated controller.  The value must be greater than 0.0 and less than or equal to 100.0.
-
-
-### Microsoft.PerceptionSimulation.ISimulatedEyes
-
-Interface describing the eyes of the simulated human.
-
-```
-public interface ISimulatedEyes
-{
-    Rotation3 Rotation { get; set; }
-    void Rotate(Rotation3 rotation);
-    SimulatedEyesCalibrationState CalibrationState { get; set; }
-    Vector3 WorldPosition { get; }
-}
-```
-
-**Microsoft.PerceptionSimulation.ISimulatedEyes.Rotation**
-
-Retrieve the rotation of the simulated eyes. Positive radians rotate clockwise when looking along the axis.
-
-**Microsoft.PerceptionSimulation.ISimulatedEyes.Rotate(Microsoft.PerceptionSimulation.Rotation3)**
-
-Rotate the simulated eyes relative to its current rotation. Positive radians rotate clockwise when looking along the axis.
-
-Parameters
-* rotation - The amount to rotate.
-
-**Microsoft.PerceptionSimulation.ISimulatedEyes.CalibrationState**
-
-Retrieves or sets the calibration state of the simulated eyes.
-
-**Microsoft.PerceptionSimulation.ISimulatedEyes.WorldPosition**
-
-Retrieve the position of the node with relation to the world, in meters.
-
-
-### Microsoft.PerceptionSimulation.ISimulationRecording
-
-Interface for interacting with a single recording loaded for playback.
-
-```
-public interface ISimulationRecording
-{
-    StreamDataTypes DataTypes { get; }
-    PlaybackState State { get; }
-    void Play();
-    void Pause();
-    void Seek(UInt64 ticks);
-    void Stop();
-};
-```
-
-**Microsoft.PerceptionSimulation.ISimulationRecording.DataTypes**
 
-Retrieves the list of data types in the recording.
+There are four main types of reprojection
+* **Depth Reprojection:**  Produces the best results with the least amount of effort from the application.  All parts of the rendered scene are independently stabilized based on their distance from the user.  Some rendering artifacts may be visible where there are sharp changes in depth.  This option is only available on HoloLens 2 and Immersive Headsets.
+* **Planar Reprojection:**  Allows the application precise control over stabilization.  A plane is set by the application and everything on that plane will be the most stable part of the scene.  The further a hologram is away from the plane, the less stable it will be.  This option is available on all Windows MR platforms.
+* **Automatic Planar Reprojection:**  The system sets a stabilization plane using information in the depth buffer.  This option is available on HoloLens generation 1 and HoloLens 2.
+* **None:** If the application does nothing, Planar Reprojection is used with the stabilization plane fixed at 2 meters in the direction of the user's head gaze, usually producing substandard results.
 
-**Microsoft.PerceptionSimulation.ISimulationRecording.State**
+Applications need to take specific actions to enable the different types of reprojection
+* **Depth Reprojection:** The application submits their depth buffer to the system for every rendered frame.  On Unity, Depth Reprojection is done with the **Shared Depth Buffer** option in the **Windows Mixed Reality Settings** pane under **XR Plugin Management**.  DirectX apps call CommitDirect3D11DepthBuffer.  The application shouldn't call SetFocusPoint.
+* **Planar Reprojection:** On every frame, applications tell the system the location of a plane to stabilize.  Unity applications call SetFocusPointForFrame and should have **Shared Depth Buffer** disabled.  DirectX apps call SetFocusPoint and shouldn't call CommitDirect3D11DepthBuffer.
+* **Automatic Planar Reprojection:** To enable, the application needs to submit their depth buffer to the system as they would for Depth Reprojection. Apps using the Mixed Reality Toolkit (MRTK) can configure the [camera settings provider](/windows/mixed-reality/mrtk-unity/features/camera-system/windows-mixed-reality-camera-settings#hololens-2-reprojection-method) to use AutoPlanar Reprojection. Native apps should set the `DepthReprojectionMode` in the [HolographicCameraRenderingParameters](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) to `AutoPlanar` each frame. For HoloLens generation 1, the application should not call SetFocusPoint.
 
-Retrieves the current state of the recording.
+### Choosing Reprojection Technique
 
-**Microsoft.PerceptionSimulation.ISimulationRecording.Play**
+Stabilization Type |	Immersive Headsets |	HoloLens generation 1 |	HoloLens 2
+--- | --- | --- | ---
+Depth Reprojection |	Recommended |	N/A |	Recommended<br/><br/>Unity applications must use Unity 2018.4.12+, Unity 2019.3+ or Unity 2020.3+. Otherwise use Automatic Planar Reprojection.
+Automatic Planar Reprojection |	N/A |	Recommended default |	Recommended if Depth Reprojection isn't giving the best results<br/><br/>Unity applications are recommended to use Unity 2018.4.12+, Unity 2019.3+ or Unity 2020.3+.  Previous Unity versions will work with slightly degraded reprojection results.
+Planar Reprojection |	Not Recommended |	Recommended if Automatic Planar isn't giving the best results |	Use if neither of the depth options give desired results	
 
-Start the playback. If the recording is paused, playback will resume from the paused location; if stopped, playback will start at the beginning. If already playing, this call is ignored.
+### Verifying Depth is Set Correctly
+			
+When a reprojection method uses the depth buffer, it's important to verify the contents of the depth buffer represent the application's rendered scene.  A number of factors can cause problems. If there's a second camera used to render user interface overlays, for example, it's likely to overwrite all the depth information from the actual view.  Transparent objects often don't set depth.  Some text rendering won't set depth by default.  There will be visible glitches in the rendering when depth doesn't match the rendered holograms.
+			
+HoloLens 2 has a visualizer to show where depth is and isn't being set, which can be enabled from Device Portal.  On the **Views** > **Hologram Stability** tab, select the **Display depth visualization in headset** checkbox.  Areas that have depth set properly will be blue.  Rendered items that don't have depth set are marked in red and need to be fixed.  
 
-**Microsoft.PerceptionSimulation.ISimulationRecording.Pause**
+> [!NOTE]
+> The visualization of the depth will not show up in Mixed Reality Capture.  It is only visible through the device.
+			
+Some GPU viewing tools will allow visualization of the depth buffer.  Application developers can use these tools to make sure depth is being set properly.  Consult the documentation for the application's tools.
 
-Pauses the playback at its current location. If the recording is stopped, the call is ignored.
+### Using Planar Reprojection
+> [!NOTE]
+> For desktop immersive headsets, setting a stabilization plane is usually counter-productive, as it offers less visual quality than providing your app's depth buffer to the system to enable per-pixel depth-based reprojection. Unless running on a HoloLens, you should generally avoid setting the stabilization plane.
 
-**Microsoft.PerceptionSimulation.ISimulationRecording.Seek(System.UInt64)**
+![Stabilization plane for 3D objects](images/stab-plane-500px.jpg)
 
-Seeks the recording to the specified time (in 100-nanoseconds intervals from the beginning) and pauses at that location. If the time is beyond the end of the recording, it's paused at the last frame.
+The device will automatically attempt to choose this plane, but the application should assist by selecting the focus point in the scene. Unity apps running on a HoloLens should choose the best focus point based on your scene and pass it into [SetFocusPoint()](../unity/focus-point-in-unity.md). An example of setting the focus point in DirectX is included in the default spinning cube template.
 
-Parameters
-* ticks - The time to which to seek.
+Unity will submit your depth buffer to Windows to enable per-pixel reprojection when you run your app on an immersive headset connected to a desktop PC, which provides even better image quality without explicit work by the app. You should only provide a Focus Point when your app is running on a HoloLens, or the per-pixel reprojection will be overridden.
 
-**Microsoft.PerceptionSimulation.ISimulationRecording.Stop**
 
-Stops the playback and resets the position to the beginning.
-
-### Microsoft.PerceptionSimulation.ISimulationRecordingCallback
-
-Interface for receiving state changes during playback.
-
-```
-public interface ISimulationRecordingCallback
-{
-    void PlaybackStateChanged(PlaybackState newState);
-};
-```
-
-**Microsoft.PerceptionSimulation.ISimulationRecordingCallback.PlaybackStateChanged(Microsoft.PerceptionSimulation.PlaybackState)**
-
-Called when an ISimulationRecording's playback state has changed.
-
-Parameters
-* newState - The new state of the recording.
-
-### Microsoft.PerceptionSimulation.PerceptionSimulationManager
-
-Root object for creating Perception Simulation objects.
-
-```
-public static class PerceptionSimulationManager
-{
-    public static IPerceptionSimulationManager CreatePerceptionSimulationManager(ISimulationStreamSink sink);
-    public static ISimulationStreamSink CreatePerceptionSimulationRecording(string path);
-    public static ISimulationRecording LoadPerceptionSimulationRecording(string path, ISimulationStreamSinkFactory factory);
-    public static ISimulationRecording LoadPerceptionSimulationRecording(string path, ISimulationStreamSinkFactory factory, ISimulationRecordingCallback callback);
-```
-
-**Microsoft.PerceptionSimulation.PerceptionSimulationManager.CreatePerceptionSimulationManager(Microsoft.PerceptionSimulation.ISimulationStreamSink)**
-
-Create on object for generating simulated packets and delivering them to the provided sink.
-
-Parameters
-* sink - The sink that will receive all generated packets.
-
-Return value
-
-The created Manager.
-
-**Microsoft.PerceptionSimulation.PerceptionSimulationManager.CreatePerceptionSimulationRecording(System.String)**
-
-Create a sink, which stores all received packets in a file at the specified path.
-
-Parameters
-* path - The path of the file to create.
-
-Return value
-
-The created sink.
-
-**Microsoft.PerceptionSimulation.PerceptionSimulationManager.LoadPerceptionSimulationRecording(System.String,Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory)**
-
-Load a recording from the specified file.
-
-Parameters
-* path - The path of the file to load.
-* factory - A factory used by the recording for creating an ISimulationStreamSink when required.
-
-Return value
-
-The loaded recording.
-
-**Microsoft.PerceptionSimulation.PerceptionSimulationManager.LoadPerceptionSimulationRecording(System.String,Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory,Microsoft.PerceptionSimulation.ISimulationRecordingCallback)**
-
-Load a recording from the specified file.
-
-Parameters
-* path - The path of the file to load.
-* factory - A factory used by the recording for creating an ISimulationStreamSink when required.
-* callback - A callback, which receives updates regrading the recording's status.
-
-Return value
-
-The loaded recording.
-
-### Microsoft.PerceptionSimulation.StreamDataTypes
-
-Describes the different types of stream data.
-
-```
-public enum StreamDataTypes
-{
-    None = 0x00,
-    Head = 0x01,
-    Hands = 0x02,
-    SpatialMapping = 0x08,
-    Calibration = 0x10,
-    Environment = 0x20,
-    SixDofControllers = 0x40,
-    Eyes = 0x80,
-    DisplayConfiguration = 0x100
-    All = None | Head | Hands | SpatialMapping | Calibration | Environment | SixDofControllers | Eyes | DisplayConfiguration
-}
+```cs
+// SetFocusPoint informs the system about a specific point in your scene to
+// prioritize for image stabilization. The focus point is set independently
+// for each holographic camera.
+// You should set the focus point near the content that the user is looking at.
+// In this example, we put the focus point at the center of the sample hologram,
+// since that is the only hologram available for the user to focus on.
+// You can also set the relative velocity and facing of that content; the sample
+// hologram is at a fixed point so we only need to indicate its position.
+renderingParameters.SetFocusPoint(
+    currentCoordinateSystem,
+    spinningCubeRenderer.Position
+    );
 ```
-
-**Microsoft.PerceptionSimulation.StreamDataTypes.None**
-
-A sentinel value used to indicate no stream data types.
-
-**Microsoft.PerceptionSimulation.StreamDataTypes.Head**
-
-Stream of data for the position and orientation of the head.
-
-**Microsoft.PerceptionSimulation.StreamDataTypes.Hands**
-
-Stream of data for the position and gestures of hands.
-
-**Microsoft.PerceptionSimulation.StreamDataTypes.SpatialMapping**
-
-Stream of data for spatial mapping of the environment.
 
-**Microsoft.PerceptionSimulation.StreamDataTypes.Calibration**
+Placement of the focus point largely depends on what the hologram is looking at. The app has the gaze vector for reference and the app designer knows what content they want the user to observe.
 
-Stream of data for calibration of the device. Calibration packets are only accepted by a system in Remote Mode.
+The single most important thing a developer can do to stabilize holograms is to render at 60 FPS. Dropping below 60 FPS will dramatically reduce hologram stability, whatever the stabilization plane optimization.
 
-**Microsoft.PerceptionSimulation.StreamDataTypes.Environment**
+**Best practices**
+ There's no universal way to set up the stabilization plane and it's app-specific. Our main recommendation is to experiment and see what works best for your scenario. However, try to align the stabilization plane with as much content as possible because all the content on this plane is perfectly stabilized.
 
-Stream of data for the environment of the device.
+For example:
+* If you have only planar content (reading app, video playback app), align the stabilization plane with the plane that has your content.
+* If there are three small spheres that are world-locked, make the stabilization plane "cut" though the centers of all the spheres that are currently in the user's view.
+* If your scene has content at substantially different depths, favor further objects.
+* Make sure to adjust the stabilization point every frame to coincide with the hologram the user is looking at
 
-**Microsoft.PerceptionSimulation.StreamDataTypes.SixDofControllers**
+**Things to Avoid**
+ The stabilization plane is a great tool to achieve stable holograms, but if misused it can result in severe image instability.
+* Don't "fire and forget". You can end up with the stabilization plane behind the user or attached to an object that is no longer in the user's view. Ensure the stabilization plane normal is set opposite camera-forward (for example, -camera.forward)
+* Don't rapidly change the stabilization plane back and forth between extremes
+* Don't leave the stabilization plane set to a fixed distance/orientation
+* Don't let the stabilization plane cut through the user
+* Don't set the focus point when running on a desktop PC rather than a HoloLens, and instead rely on per-pixel depth-based reprojection.
 
-Stream of data for motion controllers.
+## Color separation 
 
-**Microsoft.PerceptionSimulation.StreamDataTypes.Eyes**
+Because of the nature of HoloLens displays, an artifact called "color-separation" can sometimes be perceived. It manifests as the image separating into individual base colors - red, green, and blue. The artifact can be especially visible when displaying white objects, since they have large amounts of red, green, and blue. It's most pronounced when a user visually tracks a hologram that is moving across the holographic frame at high speed. Another way the artifact can manifest is warping/deformation of objects. If an object has high contrast and/or pure colors such as red, green, blue, color-separation will be perceived as warping of different parts of the object.
 
-Stream of data with the eyes of the simulated human.
+**Example of what the color separation of a head-locked white round cursor could look like as a user rotates their head to the side:**
 
-**Microsoft.PerceptionSimulation.StreamDataTypes.DisplayConfiguration**
+![Example of what the color separation of a head-locked white round cursor could look like as a user rotates their head to the side.](images/colorseparationofroundwhitecursor-300px.png)
 
-Stream of data with the display configuration of the device.
-
-**Microsoft.PerceptionSimulation.StreamDataTypes.All**
-
-A sentinel value used to indicate all recorded data types.
-
-### Microsoft.PerceptionSimulation.ISimulationStreamSink
-
-An object that receives data packets from a simulation stream.
-
-```
-public interface ISimulationStreamSink
-{
-    void OnPacketReceived(uint length, byte[] packet);
-}
-```
-
-**Microsoft.PerceptionSimulation.ISimulationStreamSink.OnPacketReceived(uint length, byte[] packet)**
-
-Receives a single packet, which is internally typed and versioned.
-
-Parameters
-* length - The length of the packet.
-* packet - The data of the packet.
-
-### Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory
-
-An object that creates ISimulationStreamSink.
-
-```
-public interface ISimulationStreamSinkFactory
-{
-    ISimulationStreamSink CreateSimulationStreamSink();
-}
-```
+Though it's difficult to completely avoid color separation, there are several techniques available to mitigate it.
 
-**Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory.CreateSimulationStreamSink()**
+**Color-separation can be seen on:**
+* Objects that are moving quickly, including head-locked objects such as the [cursor](../../design/cursors.md).
+* Objects that are substantially far from the [stabilization plane](hologram-stability.md#reprojection).
 
-Creates a single instance of ISimulationStreamSink.
+**To attenuate the effects of color-separation:**
+* Make the object lag the user's gaze. It should appear as if it has some inertia and is attached to the gaze "on springs". This approach slows the cursor (reducing separation distance) and puts it behind the user's likely gaze point. So long as it quickly catches up when the user stops shifting their gaze it feels natural.
+* If you do want to move a hologram, try to keep its movement speed below 5 degrees/second if you expect the user to follow it with their eyes.
+* Use *light* instead of *geometry* for the cursor. A source of virtual illumination attached to the gaze will be perceived as an interactive pointer but won't cause color-separation.
+* Adjust the stabilization plane to match the holograms the user is gazing at.
+* Make the object red, green, or blue.
+* Switch to a blurred version of the content. For example, a round white cursor could be changed to a slightly blurred line oriented in the direction of motion.
 
-Return value
+As before, rendering at 60 FPS and setting the stabilization plane are the most important techniques for hologram stability. If facing noticeable color separation, first make sure the frame rate meets expectations.
 
-The created sink.
+## See also
+* [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
+* [Color, light, and materials](../../design/color-light-and-materials.md)
+* [Instinctual interactions](../../design/interaction-fundamentals.md)
+* [MRTK Hologram Stabilization](/windows/mixed-reality/mrtk-unity/performance/hologram-stabilization)

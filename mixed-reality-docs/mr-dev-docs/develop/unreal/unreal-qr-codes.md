@@ -2,8 +2,8 @@
 title: QR codes in Unreal
 description: Learn how to setup, use, and track QR codes in Unreal mixed reality applications.
 author: hferrone
-ms.author: v-hferrone
-ms.date: 12/9/2020
+ms.author: v-vtieto
+ms.date: 12/09/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, features, documentation, guides, holograms, qr codes, mixed reality headset, windows mixed reality headset, virtual reality headset

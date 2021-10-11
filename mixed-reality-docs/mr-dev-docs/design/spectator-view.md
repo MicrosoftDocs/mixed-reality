@@ -16,7 +16,7 @@ keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Camera, ARKit, HoloLens, Mi
 >
 > Although Microsoft is not currently investing resources to address the above issues, it may be possible to remove the Azure Spatial Anchors functionality from the sample and rely on technology such as QR codes for alignment.   If members of the community submit PRs to address these issues, we will review and accept them for the time being.
 
-![Marker](images/SpecViewPhoneHero.jpg)
+![Spectator View--make high quality videos of Holograms](images/SpecViewPhoneHero.jpg)
 
 When you're wearing a HoloLens, it's easy to forget a person without one can't experience the same wonders you're seeing. Spectator View lets others see what a HoloLens user sees on a 2D screen. It's also a fast and affordable approach to recording holograms in HD with mobile devices and getting great quality recordings of holograms with video cameras.
 
@@ -40,8 +40,8 @@ Multiple iOS guests.
 Recording of video + holograms + ambient sound + hologram sound.
 Share sheet so you can save video, email it, or share with other supporting apps.
 
-![Marker](images/SpecViewPhoneDemo.jpg)
-![Marker](images/hololensspectatorview-500px.jpg) ![Marker](images/spectatorview-300px.png)
+![Viewing holograms in the HoloLens 2 and a smartphone](images/SpecViewPhoneDemo.jpg)
+![Viewing holograms in the HoloLens 2 and a laptop computer](images/hololensspectatorview-500px.jpg) ![Marker](images/spectatorview-300px.png)
 
 The following table shows different Spectator View functionality and their capabilities. Choose the option that best fits your video recording needs:
 

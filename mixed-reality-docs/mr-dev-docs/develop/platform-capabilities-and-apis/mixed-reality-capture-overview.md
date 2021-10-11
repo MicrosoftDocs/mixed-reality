@@ -3,7 +3,7 @@ title: Mixed reality capture overview
 description: Get an overview of the best practices for enabling, using, and rendering mixed reality capture for developers.
 author: mattzmsft
 ms.author: v-vtieto
-ms.date: 09/28/21
+ms.date: 09/28/2021
 ms.topic: article
 keywords: mrc, photo, video, capture, camera
 ---
@@ -132,7 +132,7 @@ You need to be aware of certain limitations when multiple apps are accessing MRC
 
 On HoloLens 1, MRC will fail to capture a photo or capture video while a process is recording video or taking a photo. The reverse is also true: if MRC is running, the application will fail to get access to the camera. 
 
-With HoloLens 2, it's possible for you to share access to the camera. If you don't need direct control of the resolution or frame-rate, you can initialize MediaCapture using the [SharedMode property](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041) with SharedReadOnly.  
+With HoloLens 2, it's possible for you to share access to the camera. If you don't need direct control of the resolution or frame-rate, you can initialize MediaCapture using the [SharedMode property](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode) with SharedReadOnly.  
 
 ##### Built-in MRC photo/video camera access
 
