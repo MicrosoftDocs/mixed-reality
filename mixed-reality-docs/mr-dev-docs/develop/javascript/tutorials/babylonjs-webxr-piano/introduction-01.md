@@ -15,7 +15,7 @@ ms.localizationpriority: high
 
 Building a piano in the real world requires much in the way of time, skills, and materials. What about building one for the VR/AR world?
 
-In this tutorial series, you'll learn how to use Babylon.js to create a Mixed Reality web app that contains a functioning 88-key standup piano in the virtual world. In the completed app, you'll be able to teleport to the piano and play the keys using your Mixed Reality controllers.
+In this tutorial series, you'll learn how to use Babylon.js to create a Mixed Reality web app that contains a functioning 88-key standup piano in the virtual world. In the completed app, you'll be able to teleport to the piano and play the keys using your mixed reality controllers.
 
 In this tutorial series, you'll learn how to:
 
