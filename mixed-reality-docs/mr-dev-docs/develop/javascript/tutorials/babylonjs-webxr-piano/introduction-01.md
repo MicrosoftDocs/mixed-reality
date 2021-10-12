@@ -1,8 +1,8 @@
 ---
 title: Building a piano in WebXR using BabylonJS
 description: Complete this tutorial series to learn how to build a functioning 88-key piano keyboard in WebXR using BabylonJS
-author: JING1201
-ms.author: v-vtieto
+author: vtieto
+ms.author: ayyonet
 ms.prod: mixed-reality
 ms.topic: tutorial
 ms.date: 09/10/2021
