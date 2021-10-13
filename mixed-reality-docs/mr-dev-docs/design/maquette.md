@@ -19,15 +19,35 @@ Microsoft Maquette makes spatial prototyping easy, quick, and immersive. Maquett
 - Design Incredible Immersive Interfaces, Spaces, & Experiences. 
 - Bring Maquette Content Into Unity With the Unity Add-on. 
 
-***\< insert Maquette video seen here: Microsoft Maquette Beta – Home \>***
+&nbsp;  
 
->[!div class="nextstepaction"] 
->[Join the Microsoft Maquette Steam Community discussion today!](https://steamcommunity.com/app/967490/discussions/)
+<iframe src="https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Teaser/player" width="960" height="540" allowFullScreen frameBorder="0" title="Maquette Teaser - Microsoft Channel 9 Video"></iframe>
+
+&nbsp;  
 
 ## Getting started with Maquette 
 
->[!div class="nextstepaction"] 
->[View Maquette Tutorials](https://www.youtube.com/watch?v=Hkr1lBgHdl0&list=PLUucYl60vaTG76sN9RG8NZNe54Bsoy2G5) 
+* [Bounding manipulation](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Bounding-Manipulation)
+* [Coloring content](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Coloring-Content)
+* [Duplicating content](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Duplicating-Content)
+* [Erasing content](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Erasing-Content)
+* [Gimbal positioning](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Gimbal)
+* [Grouping content](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Grouping-Content)
+* [Hull brush](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Hull-Brush)
+* [Interacting with UI](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Hand-UI) 
+* [Lighting](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Lighting)
+* [Lock object](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Lock-Object)
+* [Manipulating content](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Object-Manipulation)
+* [Moving around](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Swimming)
+* [Needle selection](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Needle-Selection)
+* [Orientation tool](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Orientation-Tool)
+* [Parametric objects](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Parametric-Objects)
+* [Rotational snapping](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Rotational-Snapping)
+* [Selecting content](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Selecting-Content)
+* [Surface snapping](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Surface-Snapping)
+* [Teleporting](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Teleporting)
+* [Tube brush](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Tube-Brush)
+* [Volume brush](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Volume-Brush)
 
 ### Export content from Maquette
 
@@ -60,6 +80,12 @@ The Maquette Unity Editor Add-On package ensures .FBX and .GLTF files exported f
 
 1. Bring your .FBX, .GLB, or .GLTF files exported from Maquette into your Unity project. Unity will preserve the grouping hierarchy of your content, as well as the materials and images as they appear in Maquette, so long as you've imported the Microsoft Maquette Unity Editor Add-On. 
 
-## Next steps
+## Maquette Community 
 
-<mark> Do we have any next steps for this? </mark>
+>[!div class="nextstepaction"] 
+>[Join the Microsoft Maquette Steam Community discussion today!](https://steamcommunity.com/app/967490/discussions/)
+
+* [Youtube](https://www.youtube.com/channel/UC3LL920zxSo16CmmmVCntxw)
+* [Twitter](https://twitter.com/MadeInMaquette)
+* [Instagram](https://www.instagram.com/microsoftmaquette/)
+* [Facebook](https://www.facebook.com/MicrosoftMaquette/)
