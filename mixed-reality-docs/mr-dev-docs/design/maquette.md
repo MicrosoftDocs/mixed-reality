@@ -27,7 +27,7 @@ Microsoft Maquette makes spatial prototyping easy, quick, and immersive. As a VR
 
 ## Getting started with Maquette 
 
-Here is a list of the Maquette tutorial videos in alphabetical order:
+Here is a list of Maquette tutorial videos in alphabetical order:
 
 * [Bounding manipulation](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Bounding-Manipulation)
 * [Coloring content](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Coloring-Content)
