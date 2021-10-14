@@ -2,8 +2,8 @@
 title: OpenXR
 description: Build an engine using the portable OpenXR API standard and deploy it to Windows Mixed Reality and HoloLens 2 headsets.
 author: thetuvix
-ms.author: alexturn
-ms.date: 7/29/2019
+ms.author: v-vtieto
+ms.date: 10/14/21
 ms.topic: article
 keywords: OpenXR, roadmap, extensions, Khronos, BasicXRApp, DirectX, native, native app, custom engine, middleware
 ---
@@ -70,7 +70,7 @@ The Windows Mixed Reality OpenXR Runtime supports a set of `MSFT` and `EXT` exte
 
 While some of these extensions may start out as vendor-specific `MSFT` extensions, Microsoft and other OpenXR runtime vendors are working together to design cross-vendor `EXT` or `KHR` extensions for many of these feature areas. Cross-vendor extensions will make the code you write for those features portable across runtime vendors, as with the core specification.
 
-## Getting started with OpenXR
+## Where can you use OpenXR?
 
 ![Screenshot of Minecraft being played by a user wearing a mixed reality headset](images/openxr-minecraft.jpg)
 

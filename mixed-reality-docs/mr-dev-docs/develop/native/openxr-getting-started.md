@@ -2,8 +2,8 @@
 title: Getting started with OpenXR
 description: Get started using the portable OpenXR API standard on Windows Mixed Reality and HoloLens 2 headsets.
 author: thetuvix
-ms.author: alexturn
-ms.date: 2/28/2020
+ms.author: v-vtieto
+ms.date: 10/14/21
 ms.topic: article
 keywords: OpenXR, Khronos, BasicXRApp, Windows Mixed Reality, OpenXR Developer Tools, DirectX, native, native app, custom engine, middleware, getting started, 101, preview extensions, OpenXR runtime version, system status
 ---
@@ -42,13 +42,15 @@ When using the HoloLens 2 emulator, the easiest way to install the OpenXR Develo
 
 ![OpenXR Developer Tools for Windows Mixed Reality app](images/mixed-reality-openxr-developer-tools.png)
 
-## Building a sample OpenXR app
+## Exploring the OpenXR API and sample app
 
 Be sure to [install the tools](../install-the-tools.md) you'll need for OpenXR development if you haven't already.
 
 The <a href="https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp" target="_blank">BasicXrApp</a> project shows a simple OpenXR sample with Win32 and UWP HoloLens 2 project files in Visual Studio. Because the solution contains a HoloLens UWP project, you'll need the [Universal Windows Platform development workload](../install-the-tools.md#installation-checklist) installed in Visual Studio to fully open it.
 
 While the Win32 and UWP project files are separate because of differences in packaging and deployment, the app code inside each project is almost exactly the same!
+
+## Running your OpenXR app
 
 After building an OpenXR Win32 desktop .EXE, you can use it with a VR headset on any desktop VR platform that supports OpenXR, whatever the headset type.
 
@@ -60,7 +62,7 @@ For a tour of the OpenXR API, check out this 60-minute video of the <a href="htt
 
 >[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/OpenXR-Cross-platform-native-mixed-reality/player?format=ny]
 
-## Integrate the OpenXR loader into a project
+## Using OpenXR in an existing project
 
 To get started with OpenXR in an existing project, you'll include the OpenXR loader.  The loader discovers the active OpenXR runtime on the device and provides access to the core functions and extension functions that it implements.
 
