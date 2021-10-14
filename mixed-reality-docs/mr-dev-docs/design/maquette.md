@@ -3,7 +3,7 @@ title: Microsoft Maquette
 description: Microsoft Maquette makes spatial prototyping easy, quick, and immersive. Maquette provides VR developers with various tools & assets to construct & iterate ideas in space.
 author: qianw211
 ms.author: v-qianwen
-ms.date: 10/13/2021
+ms.date: 10/14/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, get started, setup, Mixed Reality Portal, Maquette
 ---
@@ -51,9 +51,9 @@ Here is a list of Maquette tutorial videos in alphabetical order:
 * [Tube brush](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Tube-Brush)
 * [Volume brush](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Volume-Brush)
 
-### Export content from Maquette
+## Export content from Maquette
 
-## Part 1 - Export content from Maquette
+### Part 1 - Export content from Maquette
 
 1. Use the Select Tool to highlight what you want to export to Unity. 
 
@@ -63,7 +63,7 @@ Here is a list of Maquette tutorial videos in alphabetical order:
 
 1. A File Explorer window will appear on your desktop showing your exported files, and you can always find Maquette's exported files in **~Documents/Maquette/Exports/**
 
-## Part 2 - Import the Maquette Unity Add-On into Unity
+### Part 2 - Import the Maquette Unity Add-On into Unity
 
 The Maquette Unity Editor Add-On package ensures .FBX and .GLTF files exported from Maquette appear in Unity in the same way they appear in Maquette. Without importing this package, Unity will not display Maquette's materials and images. 
 
@@ -76,7 +76,7 @@ The Maquette Unity Editor Add-On package ensures .FBX and .GLTF files exported f
 >[!div class="nextstepaction"] 
 >[Download the Unity Add-on](https://www.maquette.ms/asset/MaquetteUnityEditorAddon.unitypackage) 
 
-## Part 3 - Import Maquette Content into Unity with the Unity Add-On 
+### Part 3 - Import Maquette Content into Unity with the Unity Add-On 
 
 1. Import the Maquette Unity Editor Add-On package (See the section below for more info) into your Unity project. 
 
