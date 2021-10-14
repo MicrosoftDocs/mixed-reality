@@ -1,4 +1,4 @@
-- name: Basic building blocks
+- name: Getting started
   items:
   - name: Introduction to Mixed Reality development  
     href: development.md
@@ -344,20 +344,20 @@
             href: native/rendering-in-directx.md
           - name: Coordinate systems
             href: native/coordinate-systems-in-directx.md
-      - name: Interactions
-        items:
-          - name: Keyboard, mouse and controller input
-            href: native/keyboard-mouse-and-controller-input-cpp.md
-          - name: Head and eye gaze
-            href: native/gaze-in-directx.md
-          - name: Hands and motion controllers
-            href: native/hands-and-motion-controllers-in-directx.md
-          - name: Voice input
-            href: native/voice-input-in-directx.md
-      - name: Spatial Mapping
-        items:
-          - name: Spatial mapping
-            href: native/spatial-mapping-in-directx.md
+          - name: Interactions
+            items:
+              - name: Keyboard, mouse and controller input
+                href: native/keyboard-mouse-and-controller-input-cpp.md
+              - name: Head and eye gaze
+                href: native/gaze-in-directx.md
+              - name: Hands and motion controllers
+                href: native/hands-and-motion-controllers-in-directx.md
+              - name: Voice input
+                href: native/voice-input-in-directx.md
+          - name: Spatial Mapping
+            items:
+              - name: Spatial mapping
+                href: native/spatial-mapping-in-directx.md
       - name: App views 
         items:
         - name: Using XAML with holographic DirectX apps
@@ -372,7 +372,7 @@
         items:
         - name: QR code tracking
           href: native/qr-code-tracking-cs-cpp.md
-  - name: App quality and testing
+  - name: Debugging and testing
     items:
     - name: Volume rendering
       href: native/volume-rendering.md
@@ -428,32 +428,6 @@
       href: platform-capabilities-and-apis/holographic-remoting-overview.md
     - name: The Holographic Remoting player
       href: platform-capabilities-and-apis/holographic-remoting-player.md
-  - name: App quality and testing
-    items:
-    - name: App quality criteria
-      href: platform-capabilities-and-apis/app-quality-criteria-overview.md
-    - name: Holographic rendering
-      href: platform-capabilities-and-apis/rendering-overview.md
-    - name: Volume rendering
-      href: platform-capabilities-and-apis/volume-rendering-overview.md
-    - name: Hologram stability
-      href: platform-capabilities-and-apis/hologram-stability.md
-    - name: Understanding performance for Mixed Reality
-      href: platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md
-    - name: Using Visual Studio to deploy and debug
-      href: platform-capabilities-and-apis/using-visual-studio.md
-    - name: Testing your app on HoloLens
-      href: platform-capabilities-and-apis/testing-your-app-on-hololens.md
-    - name: Using the HoloLens Emulator
-      href: platform-capabilities-and-apis/using-the-hololens-emulator.md
-    - name: Using the Windows Mixed Reality simulator
-      href: platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md
-    - name: Advanced HoloLens Emulator and Mixed Reality Simulator input
-      href: platform-capabilities-and-apis/advanced-hololens-emulator-and-mixed-reality-simulator-input.md
-    - name: HoloLens Emulator archive
-      href: platform-capabilities-and-apis/hololens-emulator-archive.md
-    - name: Perception simulation
-      href: platform-capabilities-and-apis/perception-simulation.md      
   - name: Porting apps
     items:
     - name: Porting overview
@@ -476,3 +450,29 @@
     items:
     - name: HoloLens Research Mode
       href: platform-capabilities-and-apis/research-mode.md
+- name: App quality and testing
+  items:
+  - name: App quality criteria
+    href: platform-capabilities-and-apis/app-quality-criteria-overview.md
+  - name: Holographic rendering
+    href: platform-capabilities-and-apis/rendering-overview.md
+  - name: Volume rendering
+    href: platform-capabilities-and-apis/volume-rendering-overview.md
+  - name: Hologram stability
+    href: platform-capabilities-and-apis/hologram-stability.md
+  - name: Understanding performance for Mixed Reality
+    href: platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md
+  - name: Using Visual Studio to deploy and debug
+    href: platform-capabilities-and-apis/using-visual-studio.md
+  - name: Testing your app on HoloLens
+    href: platform-capabilities-and-apis/testing-your-app-on-hololens.md
+  - name: Using the HoloLens Emulator
+    href: platform-capabilities-and-apis/using-the-hololens-emulator.md
+  - name: Using the Windows Mixed Reality simulator
+    href: platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md
+  - name: Advanced HoloLens Emulator and Mixed Reality Simulator input
+    href: platform-capabilities-and-apis/advanced-hololens-emulator-and-mixed-reality-simulator-input.md
+  - name: HoloLens Emulator archive
+    href: platform-capabilities-and-apis/hololens-emulator-archive.md
+  - name: Perception simulation
+    href: platform-capabilities-and-apis/perception-simulation.md      
