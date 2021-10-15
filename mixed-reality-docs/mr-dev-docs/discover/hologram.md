@@ -75,7 +75,7 @@ Some holograms follow the user instead. They position themselves based on the us
 * Place the hologram at a comfortable viewing distance typically about 1-2 meters away from the head.
 * Allow elements to drift if they must be continually in the holographic frame, or consider moving your content to one side of the display when the user changes their point of view. For more information, see the [bill boarding and tag-along](../design/billboarding-and-tag-along.md) article.
 
-**Place holograms in the optimal zone - between 1.25 m and 5 m**
+**Place holograms in the optimal zone--between 1.25 m and 5 m**
 
 Two meters is the optimal viewing distance. The experience will start to degrade as you get closer than one meter. At distances less than one meter, holograms that regularly move in depth are more likely to be problematic than stationary holograms. Consider gracefully clipping or fading out your content when it gets too close so you don't jar the user into an unpleasant viewing experience.
 
