@@ -10,14 +10,14 @@ keywords: camera, hololens, color camera, front facing, hololens 2, cv, computer
 
 # Locatable camera overview
 
-HoloLens includes a world-facing camera mounted on the front of the device, which enables apps to see what the user sees. Developers have access to and control of the camera, just as they would for color cameras on smartphones, portables, or desktops. The same universal windows [media capture](/uwp/api/Windows.Media.Capture.MediaCapture) and windows media foundation APIs that work on mobile and desktop work on HoloLens. Unity [has wrapped these windows APIs](../unity/locatable-camera-in-unity.md) to abstract camera usage features on HoloLens. Feature tasks include taking regular photos and videos (with or without holograms) and locating the camera's position in and perspective on the scene.
+HoloLens includes a world-facing camera mounted on the front of the device that enables apps to see what the user sees. Developers have access to and control of the camera, just as they would for color cameras on smartphones, portables, or desktops. The same universal Windows [media capture](/uwp/api/Windows.Media.Capture.MediaCapture) and Windows Media Foundation APIs that work on mobile and desktop work on HoloLens. Unity [has wrapped these windows APIs](../unity/locatable-camera-in-unity.md) to abstract camera usage features on HoloLens. Feature tasks include taking regular photos and videos (with or without holograms) and locating the camera's position in and perspective on the scene.
 
 ## Device camera information
 
 ### HoloLens (first-generation)
 
 * Fixed focus photo/video (PV) camera with auto white balance, auto exposure, and full image-processing pipeline.
-* White Privacy LED facing the world will illuminate whenever the camera is active
+* White Privacy LED facing the world will illuminate whenever the camera is active.
 * The camera supports the following modes (all modes are 16:9 aspect ratio) at 30, 24, 20, 15, and 5 fps:
 
   |  Video  |  Preview  |  Still  |  Horizontal Field of View (H-FOV) |  Suggested usage | 
@@ -56,37 +56,37 @@ HoloLens includes a world-facing camera mounted on the front of the device, whic
 > [!NOTE]
 > Customers can leverage [mixed reality capture](/hololens/holographic-photos-and-videos) to take videos or photos of your app, which include holograms and video stabilization.
 >
->As a developer, there are considerations you should take into account when creating your app if you want it to look as good as possible when a customer captures content. You can also enable (and customize) mixed reality capture from directly within your app. Learn more at [mixed reality capture for developers](../native/mixed-reality-capture-for-developers.md).
+> If you want the content your users capture to look as good as possible, there are some things you should consider. You can also enable (and customize) mixed reality capture from directly within your app. Learn more at [mixed reality capture for developers](../native/mixed-reality-capture-for-developers.md).
 
 ## Locating the Device Camera in the World
 
 When HoloLens takes photos and videos, the captured frames include the location of the camera in the world and the lens model of the camera. This allows applications to reason about the position of the camera in the real world for augmented imaging scenarios. Developers can creatively roll their own scenarios using their favorite image processing or custom computer vision libraries.
 
-"Camera" elsewhere in HoloLens documentation may refer to the "virtual game camera" (the frustum the app renders to). Unless denoted otherwise, "camera" on this page refers to the real-world RGB color camera.
+"Camera" elsewhere in HoloLens documentation may refer to the "virtual game camera" (the frustum the app renders to). Unless described otherwise, "camera" on this page refers to the real-world RGB color camera.
 
 
 ### Distortion Error
 
-On HoloLens, the video and still image streams are undistorted in the system's image-processing pipeline before the frames are made available to the application (the preview stream contains the original distorted frames). Because only the CameraIntrinsics are made available, applications must assume image frames represent a perfect pinhole camera.
+On HoloLens, the video and still image streams are undistorted in the system's image-processing pipeline before the frames are made available to the application (the preview stream contains the original distorted frames). Because only the CameraIntrinsics are made available, applications must assume that image frames represent a perfect pinhole camera.
 
-On HoloLens (first-generation), the undistortion function in the image processor may still leave an error of up to 10 pixels when using the CameraIntrinsics in the frame metadata. In many use cases, this error won't matter, but if you're aligning holograms to real world posters/markers, for example, and you notice a <10-px offset (roughly 11 mm for holograms positioned 2 meters away), this distortion error could be the cause. 
+On HoloLens (first-generation), the undistortion function in the image processor may still leave an error of up to 10 pixels when using the CameraIntrinsics in the frame metadata. In many use cases, this error won't matter, but if you're aligning holograms to real world posters/markers, for example, and you notice a < 10-px offset (roughly 11 mm for holograms positioned 2 meters away), this distortion error could be the cause. 
 
 ## Locatable Camera Usage Scenarios
 
 ### Show a photo or video in the world where it was captured
 
-The Device Camera frames come with a "Camera To World" transform, that can be used to show exactly where the device was when the image was taken. For example, you could position a small holographic icon at this location (CameraToWorld.MultiplyPoint(Vector3.zero)) and even draw a little arrow in the direction that the camera was facing (CameraToWorld.MultiplyVector(Vector3.forward)).
+The Device Camera frames come with a "Camera To World" transform that can be used to show exactly where the device was when the image was taken. For example, you could position a small holographic icon at this location (CameraToWorld.MultiplyPoint(Vector3.zero)) and even draw a little arrow in the direction that the camera was facing (CameraToWorld.MultiplyVector(Vector3.forward)).
 <!-- Add some text that explain where these functions come from. -->
 
 ### Tag / Pattern / Poster / Object Tracking
 
-Many mixed reality applications use a recognizable image or visual pattern to create a trackable point in space. This is then used to render objects relative to that point or create a known location. Some uses for HoloLens include finding a real world object tagged with fiducials (e.g. a TV monitor with a QR code), placing holograms over fiducials, and visually pairing with non-HoloLens devices like tablets that have been set up to communicate with HoloLens via Wi-Fi.
+Many mixed reality applications use a recognizable image or visual pattern to create a trackable point in space. This is then used to render objects relative to that point or create a known location. Some uses for HoloLens include finding a real world object tagged with fiducials (e.g., a TV monitor with a QR code), placing holograms over fiducials, and visually pairing with non-HoloLens devices like tablets that have been set up to communicate with HoloLens via Wi-Fi.
 
 You'll need a few things to recognize a visual pattern and place an object in the applications world space:
-1. An image pattern recognition toolkit, such as QR code, AR tags, face finder, circle trackers, OCR etc.
-2. Collect image frames at runtime, and pass them to the recognition layer
+1. An image pattern recognition toolkit, such as QR code, AR tags, face finder, circle trackers, OCR, etc.
+2. Collect image frames at runtime and pass them to the recognition layer.
 3. Unproject their image locations back into world positions, or likely world rays. 
-4. Position your virtual models over these world locations
+4. Position your virtual models over these world locations.
 
 Some important image-processing links:
 * [OpenCV](https://opencv.org/)
@@ -95,17 +95,17 @@ Some important image-processing links:
 * [Microsoft Translator](https://www.microsoft.com/translator/business)
 
 Keeping an interactive application frame-rate is critical, especially when dealing with long-running image recognition algorithms. For this reason, we commonly use the following pattern:
-1. Main Thread: manages the camera object
-2. Main Thread: requests new frames (async)
-3. Main Thread: pass new frames to tracking thread
-4. Tracking Thread: processes image to collect key points
-5. Main Thread: moves virtual model to match found key points
-6. Main Thread: repeat from step 2
+1. Main Thread: manages the camera object.
+2. Main Thread: requests new frames (async).
+3. Main Thread: pass new frames to tracking thread.
+4. Tracking Thread: processes image to collect key points.
+5. Main Thread: moves virtual model to match found key points.
+6. Main Thread: repeat from step 2.
 <!-- Not sure if we should keep this here or move to the c#/c++ doc. -->
 
-Some image marker systems only provide a single pixel location (others provide the full transform in which case this section won't be needed), which equates to a ray of possible locations. To get to a single 3d location, we can then leverage multiple rays and find the final result by their approximate intersection. To do this, you'll need to:
-1. Get a loop going collecting multiple camera images
-2. Find the associated feature points, and their world rays
+Some image marker systems only provide a single pixel location (others provide the full transform in which case this section won't be needed), which equates to a ray of possible locations. To get to a single 3D location, we can then leverage multiple rays and find the final result by their approximate intersection. To do this, you'll need to:
+1. Get a loop going that collects multiple camera images.
+2. Find the associated feature points and their world rays.
 
 Given two or more tracked tag locations, you can position a modeled scene to fit the user's current scenario. If you can't assume gravity, then you'll need three tag locations. In many cases, we use a color scheme where white spheres represent real-time tracked tag locations, and blue spheres represent modeled tag locations. This allows the user to visually gauge the alignment quality. We assume the following setup in all our applications:
 * Two or more modeled tag locations
@@ -113,12 +113,12 @@ Given two or more tracked tag locations, you can position a modeled scene to fit
 * Camera feature identifier
 * Behavior, which moves the calibration space to align the modeled tags with the real-time tags (we're careful to move the parent space, not the modeled markers themselves, because other connect is positions relative to them).
 
-### Track or Identify Tagged Stationary or Moving real-world objects/faces using LEDs or other recognizer libraries
+### Track or identify tagged stationary or moving real-world objects/faces using LEDs or other recognizer libraries
 
 Examples:
-* Industrial robots with LEDs (or QR codes for slower moving objects)
-* Identify and recognize objects in the room
-* Identify and recognize people in the room, for example placing holographic contact cards over faces
+* Industrial robots with LEDs (or QR codes for slower moving objects).
+* Identify and recognize objects in the room.
+* Identify and recognize people in the room--for example, placing holographic contact cards over faces.
 
 ## See also
 * [Locatable camera sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)
