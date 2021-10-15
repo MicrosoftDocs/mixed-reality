@@ -57,7 +57,7 @@ For each of the developer scenarios listed below, there are feature samples that
 
 If you're new to mixed reality cross-platform development, these samples will help you to getting started.
 
-For developers targeting Unity 2020 to build HoloLens 2 or Mixed Reality applications, OpenXR plugin can be used instead of WindowsXR plugin for better cross platform compatibilities. The Mixed Reality OpenXR Plugin also works well with latest Mixed Reality Toolkit 2.7.
+For developers targeting Unity 2020 to build HoloLens 2 or mixed reality applications, the OpenXR Plugin can be used instead of the Windows XR Plugin for better cross-platform compatibilities. The Mixed Reality OpenXR Plugin also works well with the latest version of the Mixed Reality Toolkit (2.7.x).
 
 | Reference article | Sample | Platform | Description | 
 | --- | --- | --- | --- |
