@@ -10,7 +10,7 @@ keywords: vr, lbe, location based entertainment, vr arcade, arcade, immersive, q
 
 # QR code tracking
 
-Before getting started here, we recommend that you take a look at our [QR code tracking overview](../platform-capabilities-and-apis/qr-code-tracking-overview.md) article which contains an overview, a device support table, and best practices.
+Before getting started here, we recommend that you take a look at our [QR code tracking overview](../advanced-concepts/qr-code-tracking-overview.md) article which contains an overview, a device support table, and best practices.
 
 ### Detecting QR codes
 
@@ -33,7 +33,7 @@ You can use the QR code detection API in Unity without importing MRTK by install
 
 ## Using OpenXR
 
-When using the OpenXR plugin, grab the [`SpatialGraphNodeId` from the QR API](../platform-capabilities-and-apis/qr-code-tracking.md#qr-api-reference) and use the `Microsoft.MixedReality.OpenXR.SpatialGraphNode` API to locate the QR code.
+When using the OpenXR plugin, grab the [`SpatialGraphNodeId` from the QR API](../native/qr-code-tracking-cs-cpp.md#qr-code-tracking-api-reference) and use the `Microsoft.MixedReality.OpenXR.SpatialGraphNode` API to locate the QR code.
 
 For reference, we have a [QR tracking sample project on GitHub](https://github.com/yl-msft/QRTracking) with more a detailed usage explanation for the [`SpatialGraphNode` API](https://github.com/yl-msft/QRTracking/blob/main/SampleQRCodes/Assets/Scripts/SpatialGraphNodeTracker.cs).
 

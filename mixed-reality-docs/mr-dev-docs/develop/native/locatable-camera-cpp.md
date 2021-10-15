@@ -10,7 +10,7 @@ keywords: camera, hololens, color camera, front facing, hololens 2, cv, computer
 
 # Locatable camera
 
-Before getting started here, we recommend that you take a look at our [Locatable camera overview](../platform-capabilities-and-apis/locatable-camera-overview.md) article which contains overview information and a table with HoloLens 1 and 2 camera details.
+Before getting started here, we recommend that you take a look at our [Locatable camera overview](../advanced-concepts/locatable-camera-overview.md) article which contains overview information and a table with HoloLens 1 and 2 camera details.
 
 ### Using MediaFrameReference
 
@@ -177,9 +177,9 @@ Examples:
 
 ## See also
 * [Locatable camera sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)
-* [Locatable camera overview](../platform-capabilities-and-apis/locatable-camera-cpp.md)
+* [Locatable camera overview](../advanced-concepts/locatable-camera-cpp.md)
 * [Locatable camera in Unity](../unity/locatable-camera-in-unity.md)
 * [Mixed reality capture](/hololens/holographic-photos-and-videos)
-* [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
+* [Mixed reality capture for developers](../advanced-concepts/mixed-reality-capture-overview.md)
 * [Media capture introduction](/windows/uwp/audio-video-camera/)
 * [Holographic face tracking sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)

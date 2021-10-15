@@ -10,7 +10,7 @@ keywords: vr, lbe, location based entertainment, vr arcade, arcade, immersive, q
 
 # QR code tracking (C# and C++)
 
-Before getting started here, we recommend that you take a look at our [QR code tracking overview](../platform-capabilities-and-apis/qr-code-tracking-overview.md) article which contains an overview, a device support table, and best practices.
+Before getting started here, we recommend that you take a look at our [QR code tracking overview](../advanced-concepts/qr-code-tracking-overview.md) article which contains an overview, a device support table, and best practices.
 
 ## Getting the QR package
 
@@ -398,6 +398,5 @@ namespace Microsoft.MixedReality.QR
 ## See also
 * [QR code tracking overview](../platforms-capabilities-and-apis/qr-code-tracking-overview.md)
 * [QR code tracking in Unity](../unity/qr-code-tracking-unity.md)
-* [QR code tracking API reference](../api-refs/qr-code-tracking-api-reference.md)
 * [Coordinate systems](../../design/coordinate-systems.md)
 * <a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>

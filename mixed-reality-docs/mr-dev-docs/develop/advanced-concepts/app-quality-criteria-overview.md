@@ -133,7 +133,6 @@ While wearing the device and viewing the experience:
 #### Documentation
 
 * [Hologram stability and framerate](hologram-stability.md#frame-rate)
-* [Case study, Using the stabilization plane](case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)
 * [Understanding Performance for Mixed Reality](understanding-performance-for-mixed-reality.md)
 * [Performance recommendations for Unity](../unity/performance-recommendations-for-unity.md)
 * [Spatial anchors](../../design/spatial-anchors.md)
@@ -544,7 +543,7 @@ Input interaction clarity is critical to an app's usability and includes input c
 * [Motion controllers in Unity](../unity/motion-controllers-in-unity.md)
 * [Gestures in Unity](../unity/gestures-in-unity.md)
 * [Voice input in Unity](../unity/voice-input-in-unity.md)
-* [Keyboard, mouse, and controller input in DirectX](./keyboard-mouse-and-controller-input-in-directx.md)
+* [Keyboard, mouse, and controller input in DirectX](../native/keyboard-mouse-and-controller-input-cpp.md)
 * [Head and eye gaze in DirectX](../native/gaze-in-directx.md)
 * [Hands and motion controllers in DirectX](../native/hands-and-motion-controllers-in-directx.md)
 * [Voice input in DirectX](../native/voice-input-in-directx.md)

@@ -186,4 +186,4 @@ Each Frame:
 4. Result: visual combination of full-resolution elements with low-resolution but high-density volume data
 
 ## See Also
-* [Volume rendering(with C++ samples)](../native/volume-rendering-cpp.md)
+* [Volume rendering(with C++ samples)](../native/volume-rendering.md)

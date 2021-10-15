@@ -276,7 +276,7 @@ Starting with version [2.7.0](holographic-remoting-version-history.md#v2.7.0) co
 For more information, see [Coordinate System Synchronization with Holographic Remoting Overview](holographic-remoting-coordinate-system-synchronization.md).
 
 ## See Also
-* [Holographic Remoting overview](holographic-remoting-overview.md)
+* [Holographic Remoting overview](../advanced-concepts/holographic-remoting-overview.md)
 * [Writing a Holographic Remoting remote app using Windows Mixed Reality APIs](holographic-remoting-create-remote-wmr.md)
 * [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md)
 * [Custom Holographic Remoting data channels](holographic-remoting-custom-data-channels.md)

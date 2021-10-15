@@ -49,14 +49,14 @@ Render from the PV camera offers the following improvements over the default MRC
 * Hologram alignment to your physical environment and hands for near interactions should be accurate at all distances. Avoid having an offset at distances other than the focus point as you might see in the default MRC.
 * The right eye in the headset won't be compromised, as it won't be used to render the holograms for the MRC output.
 
-[Learn more about rendering from the PV camera (DirectX)](../native/mixed-reality-capture-for-developers-cs-cpp.md#render-from-the-pv-camera-opt-in).
+[Learn more about rendering from the PV camera (DirectX)](../native/mixed-reality-capture-directx.md#render-from-the-pv-camera-opt-in).
 
 
 ### Best practices (HoloLens-specific)
 
 MRC is expected to work without additional development effort, but there are a few things to be aware of when providing the best mixed reality capture experience.
 
-**MRC uses the hologram’s alpha channel to blend with the [camera](locatable-camera.md) imagery**
+**MRC uses the hologram’s alpha channel to blend with the [camera](../native/locatable-camera.md) imagery**
 
 The most important step is to make sure your app is clearing to transparent black instead of clearing to opaque black. In Unity, this is done by default with the MixedRealityToolkit. If you're developing in non-Unity, you may need to make a one line change.
 
@@ -122,7 +122,7 @@ Unity Applications should see [Locatable_camera_in_Unity](../unity/locatable-cam
 
 Other applications can do this by using the [Windows Media Capture APIs](/uwp/api/Windows.Media.Capture.MediaCapture) to control the Camera and add an MRC Video and Audio effect to include virtual holograms and application audio in stills and videos.
 
-[Learn more creating a custom MRC recorder (DirectX)](../native/mixed-reality-capture-for-developers-cs-cpp.md#creating-a-custom-mrc-recorder).
+[Learn more creating a custom MRC recorder (DirectX)](../native/mixed-reality-capture-directx.md#creating-a-custom-mrc-recorder).
 
 ### Simultaneous MRC limitations
 
@@ -147,6 +147,6 @@ We recommend you always request Exclusive control for the camera when using MRC.
 ## See also
 
 * [Mixed reality capture](/hololens/holographic-photos-and-videos)
-* [Spectator view](spectator-view.md)
+* [Spectator view](../../design.spectator-view.md)
 * [Unity Development Overview](../unity/unity-development-overview.md)
 * [Unreal development overview](../unreal/unreal-development-overview.md)

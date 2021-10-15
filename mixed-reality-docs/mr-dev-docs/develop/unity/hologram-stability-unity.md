@@ -12,16 +12,16 @@ appliesto:
 
 # Hologram stability in Unity
 
-For an overview of hologram stability, including some Unity tips, we recommend that you take a look at our [hologram stability overview](../platform-capabilities-and-apis/hologram-stability-overview.md) article. The sections of the page that contain the Unity tips are linked below.
+For an overview of hologram stability, including some Unity tips, we recommend that you take a look at our [hologram stability overview](../advanced-concepts/hologram-stability-overview.md) article. The sections of the page that contain the Unity tips are linked below.
 
-[Reprojection](../platform-capabilities-and-apis/hologram-stability-overview.md#reprojection)
+[Reprojection](../advanced-concepts/hologram-stability-overview.md#reprojection)
 
-[Choosing reprojection technique](../platform-capabilities-and-apis/hologram-stability-overview.md#choosing-reprojection-technique)
+[Choosing reprojection technique](../advanced-concepts/hologram-stability-overview.md#choosing-reprojection-technique)
 
-[Using planar reprojection](../platform-capabilities-and-apis/hologram-stability-overview.md#using-planar-reprojection)
+[Using planar reprojection](../advanced-concepts/hologram-stability-overview.md#using-planar-reprojection)
 
 ## See also
-* [Understanding Performance for Mixed Reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
+* [Understanding Performance for Mixed Reality](../advanced-concepts/understanding-performance-for-mixed-reality.md)
 * [Color, light, and materials](../../design/color-light-and-materials.md)
 * [Instinctual interactions](../../design/interaction-fundamentals.md)
 * [MRTK Hologram Stabilization](/windows/mixed-reality/mrtk-unity/performance/hologram-stabilization)

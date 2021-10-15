@@ -14,18 +14,18 @@ appliesto:
 
 # Streaming in Unreal
 
-"Streaming" is sometimes referred to as "Holographic Remoting." To learn more, see [Holographic Remoting overview](../platform-capabilities-and-apis/holographic-remoting-overview.md)
+"Streaming" is sometimes referred to as "Holographic Remoting." To learn more, see [Holographic Remoting overview](../advanced-concepts/holographic-remoting-overview.md)
 
 Streaming from a PC to HoloLens provides two major advantages: 
 * It lets your mixed reality app take advantage of your PC's computational power. 
 * It helps speed up development iteration time. 
 
-To get started, you'll need to download the [Holographic Remoting Player](../platform-capabilities-and-apis/holographic-remoting-player.md) to your HoloLens device. The Holographic Remoting Player lets your app to stream  directly to the remoting player on your HoloLens from the following sources:
+To get started, you'll need to download the [Holographic Remoting Player](../advanced-concepts/holographic-remoting-player.md) to your HoloLens device. The Holographic Remoting Player lets your app to stream  directly to the remoting player on your HoloLens from the following sources:
 
 * The Unreal Engine editor
 * A packaged Windows executable 
 
-When streaming, you have access to almost all of the same HoloLens capabilities as you would when running an application on a device. This includes [hand joint tracking](unreal-hand-tracking.md) if you're on a HoloLens 2, [spatial mapping](unreal-spatial-mapping.md), and [spatial anchors](unreal-spatial-anchors.md), but leaves out the features on this [list](../platform-capabilities-and-apis/holographic-remoting-troubleshooting.md). 
+When streaming, you have access to almost all of the same HoloLens capabilities as you would when running an application on a device. This includes [hand joint tracking](unreal-hand-tracking.md) if you're on a HoloLens 2, [spatial mapping](unreal-spatial-mapping.md), and [spatial anchors](unreal-spatial-anchors.md), but leaves out the features on this [list](../advanced-concepts/holographic-remoting-troubleshooting.md). 
 
 > [!NOTE]
 > * Streaming quality is highly dependent on the strength of your wifi network.
@@ -50,7 +50,7 @@ Unreal 4.26 running on OpenXR supports streaming to versions 2.4.0+ of the Holog
     <tr>
         <td><strong>Source</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens first Gen</strong></a></td>
-        <td><a href="https://www.microsoft.com/hololens/hardware"><strong>HoloLens 2</strong></a></td>
+        <td><a href="/hololens/hardware"><strong>HoloLens 2</strong></a></td>
         <td><strong>Immersive Headsets</strong></td>
     </tr>
      <tr>
@@ -102,6 +102,6 @@ Additional command line options for streaming from each platform in Unreal Engin
 
 ## See also
 
-* [Holographic remoting version history](../platform-capabilities-and-apis/holographic-remoting-version-history.md)
-* [Writing a custom Holographic Remoting player app](../platform-capabilities-and-apis/holographic-remoting-create-player.md)
-* [Establishing a secure connection with Holographic Remoting](../platform-capabilities-and-apis/holographic-remoting-secure-connection.md)
+* [Holographic remoting version history](../advanced-concepts/holographic-remoting-version-history.md)
+* [Writing a custom Holographic Remoting player app](../advanced-concepts/holographic-remoting-create-player.md)
+* [Establishing a secure connection with Holographic Remoting](../advanced-concepts/holographic-remoting-secure-connection.md)

@@ -14,7 +14,7 @@ HoloLens 2 can detect QR codes in the environment around the headset, establishi
 
 ## Device support
 
-| Feature          | [HoloLens 1st Gen](https://docs.microsoft.com/hololens/hololens1-hardware) | [HoloLens 2](https://www.microsoft.com/hololens/hardware) | Immersive headsets         |
+| Feature          | [HoloLens 1st Gen](/hololens/hololens1-hardware) | [HoloLens 2](https://www.microsoft.com/hololens/hardware) | Immersive headsets         |
 |:------------:|:--------------------------------------------------------------------------:|:---------------------------------------------------------:|:------------------:|
 | QR code detection |                                                                         | :heavy_check_mark:                                        | :heavy_check_mark: |
 
@@ -65,6 +65,5 @@ For recommendations on where and how to place QR codes, refer to [Environment co
 ## See also
 * [QR code tracking with native C++ and C## samples](../native/qr-code-tracking-cs-cpp.md)
 * [QR code tracking in Unity](../unity/qr-code-tracking-unity.md)
-* [QR code tracking API reference](../api-refs/qr-code-tracking-api-reference.md)
 * [Coordinate systems](../../design/coordinate-systems.md)
 * <a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>

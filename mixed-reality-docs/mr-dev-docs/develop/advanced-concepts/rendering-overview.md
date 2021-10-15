@@ -74,7 +74,7 @@ In general, your application will render for a single stereo camera. A robust re
 
 ## Volume rendering
 
-When rendering medical MRIs or engineering volumes in 3D, [volume rendering](volume-rendering.md) techniques are often used. These techniques can be interesting in mixed reality, where users can naturally view such a volume from key angles, simply by moving their head.
+When rendering medical MRIs or engineering volumes in 3D, [volume rendering](../native/volume-rendering.md) techniques are often used. These techniques can be interesting in mixed reality, where users can naturally view such a volume from key angles, simply by moving their head.
 
 ## Supported resolutions on HoloLens (first gen)
 

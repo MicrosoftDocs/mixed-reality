@@ -286,7 +286,7 @@ m_onSendFrameEventRevoker = m_remoteContext.OnSendFrame(
 
 ## Depth Reprojection
 
-Starting with version [2.1.0](holographic-remoting-version-history.md#v2.1.0), Holographic Remoting supports [Depth Reprojection](hologram-stability.md#reprojection). This requires both the color buffer and depth buffer to be streamed from the Remote application to the HoloLens 2. By default depth buffer streaming is enabled and configured to use half the resolution of the color buffer. This can be changed as follows:
+Starting with version [2.1.0](holographic-remoting-version-history.md#v2.1.0), Holographic Remoting supports [Depth Reprojection](../advanced-concepts/hologram-stability.md#reprojection). This requires both the color buffer and depth buffer to be streamed from the Remote application to the HoloLens 2. By default depth buffer streaming is enabled and configured to use half the resolution of the color buffer. This can be changed as follows:
 
 ```cpp
 // class implementation
@@ -346,7 +346,7 @@ void SampleRemoteMain::Render(HolographicFrame holographicFrame)
 
 ```
 
-To verify if depth reprojection is correctly working on HoloLens 2, you can enable a depth visualizer via the Device Portal. See [Verifying Depth is Set Correctly](hologram-stability.md#verifying-depth-is-set-correctly) for details.
+To verify if depth reprojection is correctly working on HoloLens 2, you can enable a depth visualizer via the Device Portal. See [Verifying Depth is Set Correctly](../advanced-concepts/hologram-stability.md#verifying-depth-is-set-correctly) for details.
 
 ## Optional: Custom data channels
 
@@ -358,7 +358,7 @@ Starting with version [2.7.0](holographic-remoting-version-history.md#v2.7.0), c
 For more information, see [Coordinate System Synchronization with Holographic Remoting Overview](holographic-remoting-coordinate-system-synchronization.md).
 
 ## See Also
-* [Holographic Remoting overview](holographic-remoting-overview.md)
+* [Holographic Remoting overview](../advanced-concepts/holographic-remoting-overview.md)
 * [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)
 * [Custom Holographic Remoting data channels](holographic-remoting-custom-data-channels.md)
 * [Establishing a secure connection with Holographic Remoting](holographic-remoting-secure-connection.md)

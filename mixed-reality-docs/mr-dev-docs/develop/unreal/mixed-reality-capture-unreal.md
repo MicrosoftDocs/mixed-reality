@@ -13,7 +13,7 @@ keywords: mrc, photo, video, capture, camera
 > [!NOTE]
 > See [Render from the PV camera](#render-from-the-pv-camera-opt-in) below for guidance on a new MRC capability for HoloLens 2.
 
-Before getting started here, we recommend that you take a look at our [mixed reality capture overview](../platform-capabilities-and-apis/mixed-reality-capture-overview.md) article.
+Before getting started here, we recommend that you take a look at our [mixed reality capture overview](../advanced-concepts/mixed-reality-capture-overview.md) article.
 
 #### Render from the PV camera (opt-in)
 

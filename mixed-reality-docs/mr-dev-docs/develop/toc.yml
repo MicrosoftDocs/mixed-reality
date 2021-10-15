@@ -377,7 +377,7 @@
     - name: Volume rendering
       href: native/volume-rendering.md
     - name: Performance tuning and debugging
-      href: platform-capabilities-and-apis/installing-pix-hololens.md
+      href: advanced-concepts/installing-pix-hololens.md
   - name: Holographic remoting
     items:
     - name: Writing a Holographic Remoting remote app
@@ -407,17 +407,17 @@
   - name: Camera and capture
     items:
     - name: Locatable camera
-      href: platform-capabilities-and-apis/locatable-camera-overview.md
+      href: advanced-concepts/locatable-camera-overview.md
     - name: Mixed Reality capture
-      href: platform-capabilities-and-apis/mixed-reality-capture-overview.md
+      href: advanced-concepts/mixed-reality-capture-overview.md
     - name: How it works - Mixed Reality Capture Studios
-      href: platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md
+      href: advanced-concepts/how-it-works-mixed-reality-capture-studios.md
   - name: Sharing and placing holograms
     items:
     - name: Use anchors to share holograms
-      href: platform-capabilities-and-apis/shared-spatial-anchors-in-directx.md
+      href: advanced-concepts/shared-spatial-anchors-in-directx.md
     - name: QR code tracking
-      href: platform-capabilities-and-apis/qr-code-tracking-overview.md
+      href: advanced-concepts/qr-code-tracking-overview.md
   - name: Real-time Audio and Video
     items:
     - name: WebRTC (C#, C++, Unity)
@@ -425,9 +425,9 @@
   - name: Holographic remoting
     items:
     - name: Holographic Remoting Overview
-      href: platform-capabilities-and-apis/holographic-remoting-overview.md
+      href: advanced-concepts/holographic-remoting-overview.md
     - name: The Holographic Remoting player
-      href: platform-capabilities-and-apis/holographic-remoting-player.md
+      href: advanced-concepts/holographic-remoting-player.md
   - name: Porting apps
     items:
     - name: Porting overview
@@ -443,36 +443,36 @@
   - name: Device Portal
     items:
     - name: Using the Windows Device Portal
-      href: platform-capabilities-and-apis/using-the-windows-device-portal.md
+      href: advanced-concepts/using-the-windows-device-portal.md
     - name: Device portal API reference (REST)
-      href: platform-capabilities-and-apis/device-portal-api-reference.md
+      href: advanced-concepts/device-portal-api-reference.md
   - name: Research tools
     items:
     - name: HoloLens Research Mode
-      href: platform-capabilities-and-apis/research-mode.md
+      href: advanced-concepts/research-mode.md
 - name: App quality and testing
   items:
   - name: App quality criteria
-    href: platform-capabilities-and-apis/app-quality-criteria-overview.md
+    href: advanced-concepts/app-quality-criteria-overview.md
   - name: Holographic rendering
-    href: platform-capabilities-and-apis/rendering-overview.md
+    href: advanced-concepts/rendering-overview.md
   - name: Volume rendering
-    href: platform-capabilities-and-apis/volume-rendering-overview.md
+    href: advanced-concepts/volume-rendering-overview.md
   - name: Hologram stability
-    href: platform-capabilities-and-apis/hologram-stability.md
+    href: advanced-concepts/hologram-stability.md
   - name: Understanding performance for Mixed Reality
-    href: platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md
+    href: advanced-concepts/understanding-performance-for-mixed-reality.md
   - name: Using Visual Studio to deploy and debug
-    href: platform-capabilities-and-apis/using-visual-studio.md
+    href: advanced-concepts/using-visual-studio.md
   - name: Testing your app on HoloLens
-    href: platform-capabilities-and-apis/testing-your-app-on-hololens.md
+    href: advanced-concepts/testing-your-app-on-hololens.md
   - name: Using the HoloLens Emulator
-    href: platform-capabilities-and-apis/using-the-hololens-emulator.md
+    href: advanced-concepts/using-the-hololens-emulator.md
   - name: Using the Windows Mixed Reality simulator
-    href: platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md
+    href: advanced-concepts/using-the-windows-mixed-reality-simulator.md
   - name: Advanced HoloLens Emulator and Mixed Reality Simulator input
-    href: platform-capabilities-and-apis/advanced-hololens-emulator-and-mixed-reality-simulator-input.md
+    href: advanced-concepts/advanced-hololens-emulator-and-mixed-reality-simulator-input.md
   - name: HoloLens Emulator archive
-    href: platform-capabilities-and-apis/hololens-emulator-archive.md
+    href: advanced-concepts/hololens-emulator-archive.md
   - name: Perception simulation
-    href: platform-capabilities-and-apis/perception-simulation.md      
+    href: advanced-concepts/perception-simulation.md      

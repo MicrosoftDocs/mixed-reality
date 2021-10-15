@@ -13,7 +13,7 @@ keywords: mrc, photo, video, capture, camera
 > [!NOTE]
 > See [Render from the PV camera](#render-from-the-pv-camera-opt-in) below for guidance on a new MRC capability for HoloLens 2.
 
-Before getting started here, we recommend that you take a look at our [mixed reality capture overview](../platform-capabilities-and-apis/mixed-reality-capture-overview.md) article.
+Before getting started here, we recommend that you take a look at our [mixed reality capture overview](../advanced-concepts/mixed-reality-capture-overview.md) article.
 
 #### Render from the PV camera (opt-in)
 
@@ -35,8 +35,6 @@ There are three steps to enable rendering from the PV camera:
 
 To opt in to rendering from the PV Camera when using the [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html), enable the [Windows Mixed Reality Camera Settings](/windows/mixed-reality/mrtk-unity/features/camera-system/windows-mixed-reality-camera-settings) provider and check **Render from PV Camera**.
 
-If you're not using the Mixed Reality Toolkit, you can use a component to [manually opt-in](#enable-the-photovideocamera-holographicviewconfiguration-in-directx).
-
 ##### Handle the additional HolographicCamera render in Unity
 
 This is done for you automatically by Unity.
@@ -55,6 +53,6 @@ We recommend you always request Exclusive control for the camera when using MRC.
 
 ## See also
 
-* [Mixed reality capture overview](../platform-capabilities-and-apis/mixed-reality-capture-overview.md)
+* [Mixed reality capture overview](../advanced-concepts/mixed-reality-capture-overview.md)
 * [Mixed reality capture for HoloLens users](/hololens/holographic-photos-and-videos)
-* [Spectator view](spectator-view.md)
+* [Spectator view](../../design/spectator-view.md)

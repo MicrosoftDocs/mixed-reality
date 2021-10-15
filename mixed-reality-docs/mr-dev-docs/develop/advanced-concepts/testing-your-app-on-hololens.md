@@ -102,7 +102,7 @@ The [HoloLens emulator](using-the-hololens-emulator.md) is a great way to effici
 
 ## Automated testing with Perception Simulation
 
-Some app developers might want to automate testing of their apps. Beyond simple unit tests, you can use the [perception simulation](perception-simulation.md) stack in HoloLens to automate human and world input to your app. The perception simulation API can send simulated input to either the HoloLens emulator or a physical HoloLens.
+Some app developers might want to automate testing of their apps. Beyond simple unit tests, you can use the [perception simulation](perception-simulation-overview.md) stack in HoloLens to automate human and world input to your app. The perception simulation API can send simulated input to either the HoloLens emulator or a physical HoloLens.
 
 ## Windows App Certification Kit
 

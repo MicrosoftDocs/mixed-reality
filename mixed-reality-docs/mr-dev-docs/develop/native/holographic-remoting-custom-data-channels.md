@@ -111,7 +111,7 @@ m_customDataChannel.Close();
 ```
 
 ## See Also
-* [Holographic Remoting overview](holographic-remoting-overview.md)
+* [Holographic Remoting overview](../advanced-concepts/holographic-remoting-overview.md)
 * [Writing a Holographic Remoting remote app using Windows Mixed Reality APIs](holographic-remoting-create-remote-wmr.md)
 * [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md)
 * [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)

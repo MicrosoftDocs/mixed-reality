@@ -70,7 +70,7 @@ The template generates a project using <a href="/windows/uwp/cpp-and-winrt-apis/
 
 You can also create a new project using the **Visual C#** holographic project template, which is based on SharpDX.  If your holographic C# project didn't start from the Windows Holographic app template, you'll need to copy the ms.fxcompile.targets file from a Windows Mixed Reality C# template project and import it in your.csproj file to compile HLSL files that you add to your project. A Direct3D 12 template is also provided in the Windows Mixed Reality app templates extension to Visual Studio.
 
-Review [Using Visual Studio to deploy and debug](../platform-capabilities-and-apis/using-visual-studio.md) for information on how to build and deploy the sample to your HoloLens, PC with immersive device attached, or an emulator.
+Review [Using Visual Studio to deploy and debug](../advanced-concepts/using-visual-studio.md) for information on how to build and deploy the sample to your HoloLens, PC with immersive device attached, or an emulator.
 
 The rest of the instructions below will assume that you're using C++ to build your app.
 
@@ -180,6 +180,6 @@ The Windows Mixed Reality app template now supports compilation with the Spectre
 * [Getting a HolographicSpace](getting-a-holographicspace.md)
 * <a href="/uwp/api/windows.graphics.holographic.holographicspaceh" target="_blank">HolographicSpace</a>
 * [Rendering in DirectX](rendering-in-directx.md)
-* [Using Visual Studio to deploy and debug](../platform-capabilities-and-apis/using-visual-studio.md)
-* [Using the HoloLens emulator](../platform-capabilities-and-apis/using-the-hololens-emulator.md)
-* [Using XAML with holographic DirectX apps](../platform-capabilities-and-apis/using-xaml-with-holographic-directx-apps.md)
+* [Using Visual Studio to deploy and debug](../advanced-concepts/using-visual-studio.md)
+* [Using the HoloLens emulator](../advanced-concepts/using-the-hololens-emulator.md)
+* [Using XAML with holographic DirectX apps](../advanced-concepts/using-xaml-with-holographic-directx-apps.md)

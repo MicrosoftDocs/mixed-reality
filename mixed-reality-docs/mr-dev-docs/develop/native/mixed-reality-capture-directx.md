@@ -13,7 +13,7 @@ keywords: mrc, photo, video, capture, camera
 > [!NOTE]
 > See [Render from the PV camera](#render-from-the-pv-camera-opt-in) below for guidance on a new MRC capability for HoloLens 2.
 
-Before getting started here, we recommend that you take a look at our [mixed reality capture overview](../platform-capabilities-and-apis/mixed-reality-capture-overview.md) article.
+Before getting started here, we recommend that you take a look at our [mixed reality capture overview](../advanced-concepts/mixed-reality-capture-overview.md) article.
 
 #### Render from the PV camera (opt-in)
 
@@ -125,7 +125,7 @@ MRC Video Effect (**Windows.Media.MixedRealityCapture.MixedRealityCaptureVideoEf
 | PreferredHologramPerspective | UINT32 | **Render from Camera** setting in the Windows Device Portal | Enum used to indicate which holographic camera view configuration should be captured: 0 (Display) means that the app won't be asked to render from the photo/video camera, 1 (PhotoVideoCamera) will ask the app to render from the photo/video camera (if the app supports it). Only supported on HoloLens 2 |
 
 >[!NOTE]
-> You can change the default value of **PreferredHologramPerspective** in the Windows Device Portal by going to the [Mixed Reality Capture page](using-the-windows-device-portal.md#mixed-reality-capture) and unchecking **Render from Camera**. The setting defaults to **1 (PhotoVideoCamera)**, but can be unchecked to set it to **0 (Display)**.
+> You can change the default value of **PreferredHologramPerspective** in the Windows Device Portal by going to the [Mixed Reality Capture page](../advanced-concepts/using-the-windows-device-portal.md#mixed-reality-capture) and unchecking **Render from Camera**. The setting defaults to **1 (PhotoVideoCamera)**, but can be unchecked to set it to **0 (Display)**.
 >
 > The default value of **PreferredHologramPerspective** was **0 (Display)** prior to the June 2020 update (Windows Holographic, version 2004 build 19041.1106 and Windows Holographic, version 1903 build 18362.1064).
 
@@ -138,7 +138,7 @@ MRC Audio Effect (**Windows.Media.MixedRealityCapture.MixedRealityCaptureAudioEf
 | MicrophoneGain | float | **Mic Audio Gain** setting in the Windows Device Portal | Gain to apply to mic volume. Ranges from 0.0 to 5.0. Only supported on HoloLens 2 |
 
 >[!NOTE]
-> You can change the default value of **LoopbackGain** or **MicrophoneGain** in the Windows Device Portal by going to the [Mixed Reality Capture page](using-the-windows-device-portal.md#mixed-reality-capture) and adjusting the slider next to their respective settings. Both settings default to **1.0**, but can be set to any value between **0.0** and **5.0**.
+> You can change the default value of **LoopbackGain** or **MicrophoneGain** in the Windows Device Portal by going to the [Mixed Reality Capture page](../advanced-concepts/using-the-windows-device-portal.md#mixed-reality-capture) and adjusting the slider next to their respective settings. Both settings default to **1.0**, but can be set to any value between **0.0** and **5.0**.
 >
 > Using Windows Device Portal to configure the default gain values was added with the June 2020 update (Windows Holographic, version 2004 build 19041.1106 and Windows Holographic, version 1903 build 18362.1064).
 
@@ -198,5 +198,5 @@ You can find a full sample of the above process in the [holographic face trackin
 
 * [Mixed reality capture overview](../platform-capabilities-and-apis/mixed-reality-capture-overview.md)
 * [Mixed reality capture for HoloLens users](/hololens/holographic-photos-and-videos)
-* [Spectator view](spectator-view.md)
+* [Spectator view](../../design/spectator-view.md)
 

@@ -14,15 +14,15 @@ keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windo
 > [Learn the basics of Holographic Remoting.](holographic-remoting-overview.md)
 
 > [!IMPORTANT]
-> Holographic Remoting for HoloLens 2 is a major version change. [Remote applications for **HoloLens (1st gen)**](add-holographic-remoting.md) must use NuGet package version **1.x.x** and [remote applications for **HoloLens 2**](holographic-remoting-create-remote-wmr.md) must use **2.x.x**. This implies that remote applications written for HoloLens 2 are not compatible with HoloLens (1st gen) and vice versa.
+> Holographic Remoting for HoloLens 2 is a major version change. [Remote applications for **HoloLens (1st gen)**](../native/add-holographic-remoting.md) must use NuGet package version **1.x.x** and [remote applications for **HoloLens 2**](../native/holographic-remoting-create-remote-wmr.md) must use **2.x.x**. This implies that remote applications written for HoloLens 2 are not compatible with HoloLens (1st gen) and vice versa.
 
 The [Holographic Remoting Player](https://www.microsoft.com/p/holographic-remoting-player/9nblggh4sv40) is a companion app that connects to PC apps and games that support Holographic Remoting. The Player is available for both HoloLens (first gen) and HoloLens 2.  PC apps that supported Holographic Remoting with HoloLens need to be updated to support Holographic Remoting with HoloLens 2. Contact your app provider if you have questions about which versions are supported.
 
 > [!Note]
-> Starting with version [2.2.0](holographic-remoting-version-history.md#v2.2.0) the Holographic Remoting player is also available for Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md).
+> Starting with version [2.2.0](../native/holographic-remoting-version-history.md#v2.2.0) the Holographic Remoting player is also available for Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md).
 
 > [!TIP]
-> Starting with version [2.4.0](holographic-remoting-version-history.md#v2.4.0) remote apps using the [OpenXR API](../native/openxr.md) can be created. To get started check out [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md).
+> Starting with version [2.4.0](../native/holographic-remoting-version-history.md#v2.4.0) remote apps using the [OpenXR API](../native/openxr.md) can be created. To get started check out [Writing a Holographic Remoting remote app using OpenXR APIs](../native/holographic-remoting-create-remote-openxr.md).
 
 ## Connecting to the Holographic Remoting Player
 
@@ -76,8 +76,8 @@ While on the main screen, you can say **"disable diagnostics"** to turn off diag
 
 ## See Also
 * [Holographic Remoting overview](holographic-remoting-overview.md)
-* [HoloLens (first gen): Add Holographic Remoting](add-holographic-remoting.md)
-* [Writing a Holographic Remoting remote app using Windows Mixed Reality APIs](holographic-remoting-create-remote-wmr.md)
-* [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md)
+* [HoloLens (first gen): Add Holographic Remoting](../native/add-holographic-remoting.md)
+* [Writing a Holographic Remoting remote app using Windows Mixed Reality APIs](../native/holographic-remoting-create-remote-wmr.md)
+* [Writing a Holographic Remoting remote app using OpenXR APIs](../native/holographic-remoting-create-remote-openxr.md)
 * [Holographic Remoting software license terms](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839)

@@ -24,9 +24,9 @@ You can use Holographic Remoting to stream holographic content to your HoloLens 
 
     - [Learn more about using PC resources in Unreal](../unreal/unreal-streaming.md)
 
-    - [Write a Holographic Remoting remote app using Windows Mixed Reality APIs (C++)](holographic-remoting-create-remote-wmr.md)
+    - [Write a Holographic Remoting remote app using Windows Mixed Reality APIs (C++)](../native/holographic-remoting-create-remote-wmr.md)
 
-    - [Write a Holographic Remoting remote app using OpenXR APIs (C++)](holographic-remoting-create-remote-openxr.md)
+    - [Write a Holographic Remoting remote app using OpenXR APIs (C++)](../native/holographic-remoting-create-remote-openxr.md)
 
 In either case, inputs from the HoloLens--gaze, gesture, voice, and spatial mapping--are sent to the PC, content is rendered in a virtual immersive view, and the rendered frames are then sent to the HoloLens. 
 
