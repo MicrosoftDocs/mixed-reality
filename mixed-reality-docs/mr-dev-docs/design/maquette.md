@@ -1,29 +1,29 @@
 ---
-title: Microsoft Maquette 
+title: Microsoft Maquette Beta overview
 description: Microsoft Maquette makes spatial prototyping easy, quick, and immersive. Maquette provides VR developers with various tools & assets to construct & iterate ideas in space.
 author: qianw211
 ms.author: v-qianwen
-ms.date: 10/14/2021
+ms.date: 10/15/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, get started, setup, Mixed Reality Portal, Maquette
 ---
 
-# Overview
+# Microsoft Maquette Beta overview
 
 >[!Note]
->Microsoft is not actively developing Microsoft Maquette at this time. The learnings from building the application and the feedback of the community will enable Microsoft to build better tools for content creation in a Mixed Reality context in the future. There are no plans to open source any of Maquette’s source code. The access to the application through the store has to cease at some point in the future. We want to thank the community for the journey and support and hope to keep Maquette available as a download here.
-
-Microsoft Maquette makes spatial prototyping easy, quick, and immersive. As a VR developer, you can use the various tools and assets that Maquette provides to construct and iterate ideas in space. 
-
-- Import images & 3D content, and export Maquette content for use in other tools. 
-- Design Incredible Immersive Interfaces, Spaces, & Experiences. 
-- Bring Maquette Content Into Unity With the Unity Add-on. 
+>Microsoft is not actively developing Microsoft Maquette at this time. The learnings from building the application and the feedback of the community will enable Microsoft to build better tools for content creation in a Mixed Reality context in the future. There are no plans to open source any of Maquette’s source code. The access to the application through the store will cease at a point to-be-determined in the future. We want to thank the community for their support during this journey.
 
 &nbsp;  
 
 <iframe src="https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Teaser/player" width="960" height="540" allowFullScreen frameBorder="0" title="Maquette Teaser - Microsoft Channel 9 Video"></iframe>
 
 &nbsp;  
+
+Microsoft Maquette makes spatial prototyping easy, quick, and immersive. As a VR developer, you can use the various tools and assets that Maquette provides to construct and iterate ideas in space. 
+
+- Import images & 3D content, and export Maquette content for use in other tools. 
+- Design Incredible Immersive Interfaces, Spaces, & Experiences. 
+- Bring Maquette Content Into Unity With the Unity Add-on. 
 
 ## Getting started with Maquette 
 
@@ -82,7 +82,7 @@ The Maquette Unity Editor Add-On package ensures .FBX and .GLTF files exported f
 
 1. Bring your .FBX, .GLB, or .GLTF files exported from Maquette into your Unity project. Unity will preserve the grouping hierarchy of your content, and the materials and images as they appear in Maquette, with your imported the Microsoft Maquette Unity Editor Add-On. 
 
-## Maquette Community 
+## Maquette community 
 
 >[!div class="nextstepaction"] 
 >[Join the Microsoft Maquette Steam Community discussion today!](https://steamcommunity.com/app/967490/discussions/)
