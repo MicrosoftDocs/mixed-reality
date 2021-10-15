@@ -1,8 +1,8 @@
 ---
 title: Building a piano in WebXR using BabylonJS
 description: Complete this tutorial series to learn how to build a functioning 88-key piano keyboard in WebXR using BabylonJS
-author: JING1201
-ms.author: v-vtieto
+author: vtieto
+ms.author: ayyonet
 ms.prod: mixed-reality
 ms.topic: tutorial
 ms.date: 09/10/2021
@@ -15,7 +15,7 @@ ms.localizationpriority: high
 
 Building a piano in the real world requires much in the way of time, skills, and materials. What about building one for the VR/AR world?
 
-In this tutorial series, you'll learn how to use Babylon.js to create a Mixed Reality web app that contains a functioning 88-key standup piano in the virtual world. In the completed app, you'll be able to teleport to the piano and play the keys using your Mixed Reality controllers.
+In this tutorial series, you'll learn how to use Babylon.js to create a Mixed Reality web app that contains a functioning 88-key standup piano in the virtual world. In the completed app, you'll be able to teleport to the piano and play the keys using your mixed reality controllers.
 
 In this tutorial series, you'll learn how to:
 
