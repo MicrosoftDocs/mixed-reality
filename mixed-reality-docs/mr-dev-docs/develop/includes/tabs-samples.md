@@ -36,7 +36,7 @@ These sample apps are made with the Mixed Reality Toolkit for Unity.
 
 # [Unreal](#tab/unreal)
 
-Most of the open-source sample apps made by our team can be found in the Unreal Mixed Reality Samples [repository](https://github.com/microsoft/MixedReality-Unreal-Samples) on GitHub. We've provided the source code so that developers can look at, learn from, and reuse our projects.
+Most of the open-source sample apps made by our team can be found in the Unreal mixed reality samples [repository](https://github.com/microsoft/MixedReality-Unreal-Samples) on GitHub. We've provided the source code so that developers can look at, learn from, and reuse our projects.
 
 ### HoloLens 2 open-source sample apps
 
