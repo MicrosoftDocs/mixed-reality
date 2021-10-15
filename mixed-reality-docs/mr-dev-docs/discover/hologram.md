@@ -73,7 +73,7 @@ Some holograms follow the user instead. They position themselves based on the us
    * **Display-locked** content is locked to the display device. This type of content is tricky for several reasons, including an unnatural feeling of "clingyness" that makes many users frustrated and wanting to "shake it off." In general, designers have found it better to avoid display-locking content.
    * **Body-locked** content can be far more forgiving. Body-locking is when you tether a hologram to the user's body or gaze vector in 3D space. Many experiences have adopted a body-locking behavior where the hologram follows the user's gaze, which allows the user to rotate their body and move through space without losing the hologram. Incorporating a delay helps the hologram movements to feel more natural. For example, some core UI of the Windows Holographic OS uses a variation on body-locking that follows the user's gaze with a gentle, elastic-like delay while the user turns their head.
 * Place the hologram at a comfortable viewing distance typically about 1-2 meters away from the head.
-* Allow elements to drift if they must be continually in the holographic frame, or consider moving your content to one side of the display when the user changes their point of view. For more information, see the [bill boarding and tag-along](../design/billboarding-and-tag-along.md) article.
+* Allow elements to drift if they must be continually in the holographic frame, or consider moving your content to one side of the display when the user changes their point of view. For more information, see the [billboarding and tag-along](../design/billboarding-and-tag-along.md) article.
 
 **Place holograms in the optimal zone--between 1.25 m and 5 m**
 
