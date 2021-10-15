@@ -132,12 +132,14 @@
         href: unity/shared-experiences-in-unity.md
       - name: Interactions
         items:
-          - name: Motion controllers
-            href: unity/motion-controllers-in-unity.md
-          - name: Gestures
-            href: unity/gestures-in-unity.md
           - name: Hand and Eye tracking
             href: unity/hand-eye-in-unity.md
+          - name: Motion controllers
+            href: unity/motion-controllers-in-unity.md
+          - name: HP Reverb G2 controllers
+            href: unity/unity-reverb-g2-controllers.md
+          - name: Gestures
+            href: unity/gestures-in-unity.md
           - name: Head gaze
             href: unity/gaze-in-unity.md
           - name: Voice input
@@ -166,14 +168,10 @@
         href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
       - name: Mixed Reality native interop in Unity
         href: unity/unity-xrdevice-advanced.md
-      - name: Use PC resources to power your app
+      - name: Holographic Remoting remote app
         href: unity/use-pc-resources.md        
       - name: Using Vuforia
         href: unity/vuforia-development-overview.md
-  - name: Immersive VR
-    items:
-      - name: HP Reverb G2 controllers
-        href: unity/unity-reverb-g2-controllers.md
   - name: Sample apps
     items:
       - name: HoloLens 2
@@ -202,7 +200,7 @@
         href: unity/managed-debugging-with-unity-il2cpp.md
       - name: Recommended settings for Unity
         href: unity/recommended-settings-for-unity.md
-      - name: Preview and debug your app with Holographic Remoting
+      - name: Holographic Remoting for Play Mode
         href: unity/preview-and-debug-your-app.md
   - name: Visual Studio solutions
     items:

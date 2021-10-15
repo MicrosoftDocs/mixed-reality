@@ -11,10 +11,48 @@ keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit,
 
 # Mixed Reality OpenXR plugin release notes
 
-## 1.0.0 - Current release
+## 1.1.1 - 2021-10-15
 
-* Fixed a bug where a the XRAnchorSubsystem was always started on app start regardless ARAnchorManager’s present.
-* Fixed a bug where the reprojection mode didn’t work properly.
+* Fixed a bug where projects would fail to build if the project also referenced DotNetWinRT package.
+
+## 1.1.0 - 2021-10-07
+
+* Added new APIs for spatial anchor transfer batch: Microsoft.MixedReality.OpenXR.XRAnchorTransferBatch
+* Supports the XRMeshSubsystem through OpenXR scene understanding extensions.
+* Supports OpenXR remoting runtime 2.7, with Spatial Anchor Store and Surface mapping in Holographic Remoting apps.
+* Removed direct package dependency to ARSubsystem package.  It's now implicit through ARFoundation package.
+* Fixed a bug where Unity's UI froze briefly when Holographic Remoting failed to connect to remote player app.
+* Fixed a bug where persisted anchor may lead to error saying "An item with the same key has already been added."
+* Supports the ratified "XR_MSFT_scene_understanding" extension instead of "_preview3" version.
+* Fixed a bug where projects would fail to build with Windows XR Plugin installed and app remoting enabled.
+
+## 1.0.3 - 2021-09-07
+
+* Supports the OpenXR spatial anchor persistence MSFT extension.
+* Fixed a bug where Editor Remoting settings are present in PackageSettings instead of UserSettings.
+* Fixed a bug where some anchors could fail to be persisted after clearing the XRAnchorStore.
+* Fixed a bug where extra anchors were created when switching between Unity scenes.
+
+## 1.0.2 - 2021-08-05
+
+* Depends on Unity's 1.2.8 OpenXR plugin.
+* Fixed a bug where ARAnchors were occasionally not removed properly.
+* Fixed a bug where invalid ARAnchor changes were occasionally reported after restarting Holographic Remoting for Play Mode.
+* Fixed a bug where view configurations were not properly reported when using Holographic Remoting for Play Mode.
+* Added more specific settings validation with more precise messages when using Holographic Remoting for Play Mode.
+* Added validation for "Initialize XR on Startup" setting when using Holographic Remoting for Play Mode.
+
+## 1.0.1 - 2021-07-13
+
+* Depends on Unity's 1.2.3 OpenXR plugin.
+* Updated Holographic Remoting runtime to 2.6.0
+* Removed the "Holographic Remoting for Play Mode" feature group from Unity settings UX and kept the feature independent.
+* Fixed a bug where build process cannot find the app.cpp when building a XAML type unity project.
+
+## 1.0.0 - 2021-06-18
+
+* Fixed a bug where a the XRAnchorSubsystem was always started on app start regardless ARAnchorManager's present.
+* Fixed a bug where the reprojection mode didn't work properly.
 
 ## 1.0.0-preview.2 - 2021-06-14
 
