@@ -92,7 +92,7 @@ Getting your apps into the hands of your users or out into the world is the most
 
 * If you need to install a HoloLens 2 application while you're offline, refer to the [offline secure HoloLens 2](/hololens/hololens-common-scenarios-offline-secure) instructions or install the app through a Provisioning Package without enabling developer mode.
 
-* You can also deploy builds to your device and share them with other developers who have Developer Mode enabled by [deploying and debugging with Visual Studio](../develop/platform-capabilities-and-apis/using-visual-studio.md) or [installing an application package with the Device Portal](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#sideloading-applications).
+* You can also deploy builds to your device and share them with other developers who have Developer Mode enabled by [deploying and debugging with Visual Studio](../develop/advanced-concepts/using-visual-studio.md) or [installing an application package with the Device Portal](../develop/advanced-concepts/using-the-windows-device-portal.md#sideloading-applications).
 
 ## See also
 * [Finding, installing, and uninstalling applications from the Microsoft Store](/hololens/holographic-store-apps)

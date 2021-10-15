@@ -11,7 +11,7 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, per
 
 # Performance recommendations for Unreal
 
-Unreal Engine has several features that can increase an apps performance, all based on the discussion outlined in [performance recommendations for mixed reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md). You're encouraged to read up on application bottlenecks, analyzing and profiling mixed reality apps, and general performance fixes before continuing.
+Unreal Engine has several features that can increase an apps performance, all based on the discussion outlined in [performance recommendations for mixed reality](../advanced-concepts/understanding-performance-for-mixed-reality.md). You're encouraged to read up on application bottlenecks, analyzing and profiling mixed reality apps, and general performance fixes before continuing.
 
 ## Recommended Unreal project settings
 

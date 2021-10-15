@@ -75,7 +75,7 @@ To provide the best hologram experience possible, application developers must ma
 
 ![Triangle count optimization](images\qf-triangle-count-optimization.png)
 
-For more information, see [frame rate](../platform-capabilities-and-apis/hologram-stability.md#frame-rate) in the [hologram stability](../platform-capabilities-and-apis/hologram-stability.md) article.
+For more information, see [frame rate](../advanced-concepts/hologram-stability.md#frame-rate) in the [hologram stability](../advanced-concepts/hologram-stability.md) article.
 
 ### Late stage reprojection (LSR)
 
@@ -83,7 +83,7 @@ Reprojection is used to stabilize holograms as users move around their space.  T
 
 ![Try the different reprojection options to experience the difference.](images\qf-lsr-modes.jpg)
 
-For detailed information, see [reprojection](../platform-capabilities-and-apis/hologram-stability.md#reprojection) in the [hologram stability](../platform-capabilities-and-apis/hologram-stability.md) article.
+For detailed information, see [reprojection](../advanced-concepts/hologram-stability.md#reprojection) in the [hologram stability](../advanced-concepts/hologram-stability.md) article.
 
 ### Z-fighting
 

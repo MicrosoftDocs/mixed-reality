@@ -53,7 +53,7 @@ The Windows Mixed Reality platform is still under active development. We recomme
 
 ## See also
 * [Windows Mixed Reality minimum PC hardware compatibility guidelines](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
-* [Understanding Performance for Mixed Reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
+* [Understanding Performance for Mixed Reality](../advanced-concepts/understanding-performance-for-mixed-reality.md)
 * [Performance Recommendations for Unity](../unity/performance-recommendations-for-unity.md)
 * [Motion controllers](../../design/motion-controllers.md)
 * [Motion controllers in Unity](../unity/motion-controllers-in-unity.md)

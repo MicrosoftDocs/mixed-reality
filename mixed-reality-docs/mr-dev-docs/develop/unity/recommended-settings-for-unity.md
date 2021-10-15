@@ -165,5 +165,5 @@ The applicable capabilities for enabling the commonly used APIs for Holographic 
 ## See also
 
 * [Unity development overview](unity-development-overview.md)
-* [Understanding performance for Mixed Reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
+* [Understanding performance for Mixed Reality](../advanced-concepts/understanding-performance-for-mixed-reality.md)
 * [Performance recommendations for Unity](performance-recommendations-for-unity.md)

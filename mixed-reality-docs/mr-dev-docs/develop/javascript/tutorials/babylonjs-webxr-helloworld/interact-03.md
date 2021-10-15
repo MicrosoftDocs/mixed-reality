@@ -269,7 +269,7 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
 
 ## Run on a Windows Mixed Reality Simulator
 
-1. [Enable the Windows Mixed Reality Simulator](../../../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) if you have not done so in the past.
+1. [Enable the Windows Mixed Reality Simulator](../../../advanced-concepts/using-the-windows-mixed-reality-simulator.md) if you have not done so in the past.
 
 1. Select the Immersive-VR button on the bottom right corner:
 ![Immersive VR Button](../images/immersive-vr-button.png)

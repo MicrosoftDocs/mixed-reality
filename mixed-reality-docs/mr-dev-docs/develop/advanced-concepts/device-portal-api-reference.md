@@ -12,21 +12,21 @@ keywords: HoloLens, Windows Device Portal, API, mixed reality headset, windows m
 
 Everything in the [Windows Device Portal](using-the-windows-device-portal.md) is built on top of REST API's that you can use to access the data and control your device programmatically.
 
-## App deloyment
+## App deployment
 
 **/api/app/packagemanager/package (DELETE)**
 
 Uninstalls an app.
 
 Parameters
-* package : File name of the package to be uninstalled.
+* package: File name of the package to be uninstalled.
 
 **/api/app/packagemanager/package (POST)**
 
 Installs an App.
 
 Parameters
-* package : File name of the package to be installed.
+* package: File name of the package to be installed.
 
 Payload
 * multi-part conforming http body
@@ -49,37 +49,37 @@ Gets the status of in-progress app installation.
 Disables crash dump collection for a sideloaded app.
 
 Parameters
-* packageFullname : package name
+* packageFullname: package name
 
 **/api/debug/dump/usermode/crashcontrol (GET)**
 
 Gets settings for sideloaded apps crash dump collection.
 
 Parameters
-* packageFullname : package name
+* packageFullname: package name
 
 **/api/debug/dump/usermode/crashcontrol (POST)**
 
 Enables and sets dump control settings for a sideloaded app.
 
 Parameters
-* packageFullname : package name
+* packageFullname: package name
 
 **/api/debug/dump/usermode/crashdump (DELETE)**
 
 Deletes a crash dump for a sideloaded app.
 
 Parameters
-* packageFullname : package name
-* fileName : dump file name
+* packageFullname: package name
+* fileName: dump file name
 
 **/api/debug/dump/usermode/crashdump (GET)**
 
 Retrieves a crash dump for a sideloaded app.
 
 Parameters
-* packageFullname : package name
-* fileName : dump file name
+* packageFullname: package name
+* fileName: dump file name
 
 Return data
 * Dump file. Inspect with WinDbg or Visual Studio.
@@ -126,7 +126,7 @@ Gets the stored IPD (Interpupillary distance) in millimeters.
 Sets the IPD.
 
 Parameters
-* ipd : New IPD value to be set in millimeters
+* ipd: New IPD value to be set in millimeters
 
 **/api/holographic/os/webmanagement/settings/https (GET)**
 
@@ -137,7 +137,7 @@ Gets HTTPS requirements for the Device Portal.
 Sets HTTPS requirements for the Device Portal.
 
 Parameters
-* required : yes, no or default
+* required: yes, no or default
 
 ## Holographic Perception
 
@@ -317,15 +317,15 @@ Gets the status of the system, including which map, anchors, and spatial reconst
 Downloads a mixed reality file from the device. Use the op=stream query parameter for streaming.
 
 Parameters
-* filename : Name, hex64 encoded, of the video file to get
-* op : stream
+* filename: Name, hex64 encoded, of the video file to get
+* op: stream
 
 **/api/holographic/mrc/file (DELETE)**
 
 Deletes a mixed reality recording from the device.
 
 Parameters
-* filename : Name, hex64 encoded, of the file to delete
+* filename: Name, hex64 encoded, of the file to delete
 
 **/api/holographic/mrc/files (GET)**
 
@@ -336,9 +336,9 @@ Returns the list of mixed reality files stored on the device.
 Takes a mixed reality photo and creates a file on the device.
 
 Parameters
-* holo : capture holograms: true or false (defaults to false)
-* pv : capture PV camera: true or false (defaults to false)
-* RenderFromCamera : (HoloLens 2 only) render from perspective of photo/video camera: true or false (defaults to true)
+* holo: capture holograms: true or false (defaults to false)
+* pv: capture PV camera: true or false (defaults to false)
+* RenderFromCamera: (HoloLens 2 only) render from perspective of photo/video camera: true or false (defaults to true)
 
 **/api/holographic/mrc/settings (GET)**
 
@@ -357,7 +357,7 @@ Gets the state of mixed reality capture within the Windows Device Portal.
 The response contains a JSON property that indicates if Windows Device Portal is recording video or not.
 
 ``` javascript
-{"IsRecording" : boolean}
+{"IsRecording": boolean}
 ```
 
 **/api/holographic/mrc/thumbnail (GET)**
@@ -372,12 +372,12 @@ Parameters
 Starts a mixed reality recording.
 
 Parameters
-* holo : capture holograms: true or false (defaults to false)
-* pv : capture PV camera: true or false (defaults to false)
-* mic : capture microphone: true or false (defaults to false)
-* loopback : capture app audio: true or false (defaults to false)
-* RenderFromCamera : (HoloLens 2 only) render from perspective of photo/video camera: true or false (defaults to true)
-* vstab : (HoloLens 2 only) enable video stabilization: true or false (defaults to true)
+* holo: capture holograms: true or false (defaults to false)
+* pv: capture PV camera: true or false (defaults to false)
+* mic: capture microphone: true or false (defaults to false)
+* loopback: capture app audio: true or false (defaults to false)
+* RenderFromCamera: (HoloLens 2 only) render from perspective of photo/video camera: true or false (defaults to true)
+* vstab: (HoloLens 2 only) enable video stabilization: true or false (defaults to true)
 * vstabbuffer: (HoloLens 2 only) video stabilization buffer latency: 0 to 30 frames (defaults to 15 frames)
 
 **/api/holographic/mrc/video/control/stop (POST)**
@@ -392,18 +392,18 @@ Stops the current mixed reality recording.
 HoloLens supports live preview of mixed reality via chunked download of a fragmented mp4.
 
 Mixed reality streams share the same set of parameters to control what's captured:
-* holo : capture holograms: true or false
-* pv : capture PV camera: true or false
-* mic : capture microphone: true or false
-* loopback : capture app audio: true or false
+* holo: capture holograms: true or false
+* pv: capture PV camera: true or false
+* mic: capture microphone: true or false
+* loopback: capture app audio: true or false
 
 If none of these are specified, then holograms, photo/video camera, and app audio will be captured.
 
 If any are specified, the unspecified parameters will default to false
 
 Optional parameters (HoloLens 2 only)
-* RenderFromCamera : render from perspective of photo/video camera: true or false (defaults to true)
-* vstab : enable video stabilization: true or false (defaults to false)
+* RenderFromCamera: render from perspective of photo/video camera: true or false (defaults to true)
+* vstab: enable video stabilization: true or false (defaults to false)
 * vstabbuffer: video stabilization buffer latency: 0 to 30 frames (defaults to 15 frames)
 
 **/api/holographic/stream/live.mp4 (GET)**
@@ -443,7 +443,7 @@ Gets the machine name.
 Sets the machine name.
 
 Parameters
-* name : New machine name, hex64 encoded, to set to
+* name: New machine name, hex64 encoded, to set to
 
 ## Perception Simulation Control
 
@@ -456,7 +456,7 @@ Gets the simulation mode.
 Sets the simulation mode.
 
 Parameters
-* mode : simulation mode: default, simulation, remote, legacy
+* mode: simulation mode: default, simulation, remote, legacy
 
 **/api/holographic/simulation/control/stream (DELETE)**
 
@@ -481,7 +481,7 @@ Request a simulation video stream containing the content rendered to the system 
 Delete a recording.
 
 Parameters
-* recording : Name of recording to delete.
+* recording: Name of recording to delete.
 
 **/api/holographic/simulation/playback/file (POST)**
 
@@ -496,21 +496,21 @@ Get all recordings.
 Get the current playback state of a recording.
 
 Parameters
-* recording : Name of recording.
+* recording: Name of recording.
 
 **/api/holographic/simulation/playback/session/file (DELETE)**
 
 Unload a recording.
 
 Parameters
-* recording : Name of recording to unload.
+* recording: Name of recording to unload.
 
 **/api/holographic/simulation/playback/session/file (POST)**
 
 Load a recording.
 
 Parameters
-* recording : Name of recording to load.
+* recording: Name of recording to load.
 
 **/api/holographic/simulation/playback/session/files (GET)**
 
@@ -521,28 +521,28 @@ Get all loaded recordings.
 Pause a recording.
 
 Parameters
-* recording : Name of recording.
+* recording: Name of recording.
 
 **/api/holographic/simulation/playback/session/play (POST)**
 
 Play a recording.
 
 Parameters
-* recording : Name of recording.
+* recording: Name of recording.
 
 **/api/holographic/simulation/playback/session/stop (POST)**
 
 Stop a recording.
 
 Parameters
-* recording : Name of recording.
+* recording: Name of recording.
 
 **/api/holographic/simulation/playback/session/types (GET)**
 
 Get the types of data in a loaded recording.
 
 Parameters
-* recording : Name of recording.
+* recording: Name of recording.
 
 ## Perception Simulation Recording
 
@@ -551,12 +551,12 @@ Parameters
 Start a recording. Only a single recording can be active at once. One of these must be set: head, hands, spatialMapping or environment.
 
 Parameters
-* head : Set to 1 to record head data.
-* hands : Set to 1 to record hand data.
-* spatialMapping : Set to 1 to record spatial mapping.
-* environment : Set to 1 to record environment data.
-* name : Name of the recording.
-* singleSpatialMappingFrame : Set to 1 to record only a single spatial mapping frame.
+* head: Set to 1 to record head data.
+* hands: Set to 1 to record hand data.
+* spatialMapping: Set to 1 to record spatial mapping.
+* environment: Set to 1 to record environment data.
+* name: Name of the recording.
+* singleSpatialMappingFrame: Set to 1 to record only a single spatial mapping frame.
 
 **/api/holographic/simulation/recording/status (GET)**
 
@@ -609,16 +609,16 @@ Shuts down the target device.
 Stops a modern app.
 
 Parameters
-* package : Full name of the app package, hex64 encoded
-* forcestop : Force all processes to stop (=yes)
+* package: Full name of the app package, hex64 encoded
+* forcestop: Force all processes to stop (=yes)
 
 **/api/taskmanager/app (POST)**
 
 Starts a modern app
 
 Parameters
-* appid : PRAID of app to start, hex64 encoded
-* package : Full name of the app package, hex64 encoded
+* appid: PRAID of app to start, hex64 encoded
+* package: Full name of the app package, hex64 encoded
 
 ## WiFi Management
 
@@ -634,15 +634,15 @@ Return data
 Deletes a profile associated with a network on a specified interface.
 
 Parameters
-* interface : network interface guid
-* profile : profile name
+* interface: network interface guid
+* profile: profile name
 
 **/api/wifi/networks (GET)**
 
 Enumerates wireless networks on the specified network interface.
 
 Parameters
-* interface : network interface guid
+* interface: network interface guid
 
 Return data
 * List of wireless networks found on the network interface with details
@@ -652,11 +652,11 @@ Return data
 Connects or disconnects to a network on the specified interface.
 
 Parameters
-* interface : network interface guid
-* ssid : ssid, hex64 encoded, to connect to
-* op : connect or disconnect
-* createprofile : yes or no
-* key : shared key, hex64 encoded
+* interface: network interface guid
+* ssid: ssid, hex64 encoded, to connect to
+* op: connect or disconnect
+* createprofile: yes or no
+* key: shared key, hex64 encoded
 
 ## Windows Performance Recorder
 
@@ -689,7 +689,7 @@ Return data
 Starts a WPR (performance) tracing session.
 
 Parameters
-* profile : Profile name. Available profiles are stored in perfprofiles/profiles.json
+* profile: Profile name. Available profiles are stored in perfprofiles/profiles.json
 
 Return data
 * On start, returns the WPR session status.

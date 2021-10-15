@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 # Performance recommendations for Unity
 
-This article builds on the [performance recommendations for mixed reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md), but focuses on Unity-specific improvements.
+This article builds on the [performance recommendations for mixed reality](../advanced-concepts/understanding-performance-for-mixed-reality.md), but focuses on Unity-specific improvements.
 
 ## Use recommended Unity project settings
 
@@ -248,7 +248,7 @@ Learn more about [optimizing graphics rendering in Unity](https://unity3d.com/le
 
 ### Optimize depth buffer sharing
 
-It's recommended to enable **Depth buffer sharing** under **Player XR Settings** to optimize for [hologram stability](../platform-capabilities-and-apis/Hologram-stability.md). When enabling depth-based late-stage reprojection with this setting however, it's recommended to select **16-bit depth format** instead of **24-bit depth format**. The 16-bit depth buffers will drastically reduce the bandwidth (and thus power) associated with depth buffer traffic. This can be a big win both in power reduction and performance improvement. However, there are two possible negative outcomes by using *16-bit depth format*.
+It's recommended to enable **Depth buffer sharing** under **Player XR Settings** to optimize for [hologram stability](../advanced-concepts/Hologram-stability.md). When enabling depth-based late-stage reprojection with this setting however, it's recommended to select **16-bit depth format** instead of **24-bit depth format**. The 16-bit depth buffers will drastically reduce the bandwidth (and thus power) associated with depth buffer traffic. This can be a big win both in power reduction and performance improvement. However, there are two possible negative outcomes by using *16-bit depth format*.
 
 **Z-Fighting**
 

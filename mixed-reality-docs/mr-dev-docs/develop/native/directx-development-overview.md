@@ -39,7 +39,7 @@ Windows Mixed Reality applications use the following APIs to build [mixed-realit
 | --- | --- |
 | [Gaze](../../design/gaze-and-commit.md) | Let users target holograms with by looking at them |
 | [Gesture](../../design/gaze-and-commit.md#composite-gestures) | Add spatial actions to your apps |
-| [Holographic rendering](../advanced-concepts/rendering.md) | Draw a hologram at a precise location in the world around your users |
+| [Holographic rendering](../advanced-concepts/rendering-overview.md) | Draw a hologram at a precise location in the world around your users |
 | [Motion controller](../../design/motion-controllers.md) | Let your users take action in your Mixed Reality environments |
 | [Spatial mapping](../../design/spatial-mapping.md) | Map your physical space with a virtual mesh overlay to mark the boundaries of your environment |
 | [Voice](../../design/voice-input.md) | Capture spoken keywords, phrases, and dictation from your users |

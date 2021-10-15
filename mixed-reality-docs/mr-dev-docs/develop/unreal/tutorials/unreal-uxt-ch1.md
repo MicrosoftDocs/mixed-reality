@@ -28,7 +28,7 @@ Make sure you've installed the following before jumping in:
 * Windows 10 1809 or later
 * Windows 10 SDK 10.0.18362.0 or later
 * [Unreal Engine](https://www.unrealengine.com/en-US/get-now) 4.26 or later
-* Microsoft HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode) or [Emulator](../../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-2-emulator-overview)
+* Microsoft HoloLens 2 device [configured for development](../../advanced-concepts/using-visual-studio.md#enabling-developer-mode) or [Emulator](../../advanced-concepts/using-the-hololens-emulator.md#hololens-2-emulator-overview)
 * Visual Studio 2019 with the workloads below
 
 ### Installing Visual Studio 2019

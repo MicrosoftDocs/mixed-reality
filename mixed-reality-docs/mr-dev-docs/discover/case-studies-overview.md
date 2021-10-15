@@ -35,8 +35,8 @@ Stories, learnings, and experiences the Mixed Reality team has found and jotted 
 
 :::row:::
     :::column:::
-       [![Using the stabilization plane to reduce holographic turbulence](images/holotour-stabilization-plane-500px.jpg)](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)
-        **[Using the stabilization plane to reduce holographic turbulence](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)**<br>
+       [![Using the stabilization plane to reduce holographic turbulence](images/holotour-stabilization-plane-500px.jpg)](../develop/advanced-concepts/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)
+        **[Using the stabilization plane to reduce holographic turbulence](../develop/advanced-concepts/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)**<br>
         Working with holograms can be tricky. The fact that you can move around your space and see your holograms from all different angles provides a level of immersion that you can’t get with a normal computer screen.<br>
         *April 2017*
     :::column-end:::
