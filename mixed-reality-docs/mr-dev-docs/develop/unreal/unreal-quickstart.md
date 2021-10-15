@@ -62,7 +62,7 @@ You'll need to enable two plugins before you can start adding objects to the sce
 3. Restart your editor
 
 > [!NOTE]
-> This tutorial uses OpenXR, but the two plugins you've installed above don't currently provide the full feature set for HoloLens development. The HandInteraction plugin will suffice for the "Pinch" gesture you'll use later, but if you want to go beyond the basics you'll need to [download the OpenXR plugin](https://github.com/microsoft/Microsoft-OpenXR-Unreal).
+> This tutorial uses OpenXR, but the two plugins you've installed above don't currently provide the full feature set for HoloLens development. The HandInteraction plugin will suffice for the "Pinch" gesture you'll use later, but if you want to go beyond the basics you'll need to [download the Microsoft OpenXR plugin](https://github.com/microsoft/Microsoft-OpenXR-Unreal).
 
 With the plugins enabled, you can focus on filling it with content.
 

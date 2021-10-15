@@ -8,7 +8,7 @@ ms.topic: article
 keywords: WebXR, WinMR, WebAR, WebVR, WindowsMixedReality, HoloLens, windows mixed reality, web vr, web xr, web mr, web ar, 360, 360 video, 360 videos, 360 photo, 360 photos, 360 content, immersive web, immersiveweb, IW
 ---
 
-# JavaScript development with WebXR
+# WebXR development with Javascript
 
 JavaScript is one of the most popular programming languages in the world! It's simple, lightweight, and widely used on the Web. Leverage the power of your JavaScript and Web skills to create more engaging Mixed Reality experiences.
 

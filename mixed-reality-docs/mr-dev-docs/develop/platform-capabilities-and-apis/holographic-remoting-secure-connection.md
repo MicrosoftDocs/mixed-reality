@@ -10,8 +10,8 @@ keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windo
 
 # Enabling connection security for Holographic Remoting (C++)
 
->[!IMPORTANT]
->This guidance is specific to Holographic Remoting on HoloLens 2.
+> [!NOTE]
+> This guidance is specific to Holographic Remoting on HoloLens 2 and Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md).
 
 This page gives you an overview of network security for Holographic Remoting. You'll find information about
 
@@ -33,10 +33,10 @@ Security in Holographic Remoting, when set up correctly for your use case, gives
 * **Confidentiality:** no third party can read the information exchanged between player and remote app
 * **Integrity:** player and remote can detect any in-transit changes to their communication
 
->[!IMPORTANT]
->To be able to use security features, you will need to implement both a [custom player](holographic-remoting-create-player.md) and a custom remote app using either [Windows Mixed Reality](holographic-remoting-create-remote-wmr.md) or [OpenXR](holographic-remoting-create-remote-openxr.md) APIs.
+> [!IMPORTANT]
+> To be able to use security features, you will need to implement both a [custom player](holographic-remoting-create-player.md) and a custom remote app using either [Windows Mixed Reality](holographic-remoting-create-remote-wmr.md) or [OpenXR](holographic-remoting-create-remote-openxr.md) APIs.
 
->[!NOTE]
+> [!NOTE]
 > Starting with version [2.4.0](holographic-remoting-version-history.md#v2.4.0) remote apps using the [OpenXR API](../native/openxr.md) can be created. An overview on how to establish a secure connection in an OpenXR environment can be found [below](#secure-connection-using-the-openxr-api).
 
 ## Planning the security implementation
@@ -45,12 +45,12 @@ When you enable security in Holographic Remoting, the remoting library will auto
 
 Ensuring proper authentication requires some extra work though. What exactly you need to do depends on your use case, and the rest of this section is about figuring out the necessary steps.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > This article can only provide general guidance. If you feel unsure, consider consulting a security expert that can give you guidance specific to your use case.
 
 First some terminology: when describing network connections, the terms _client_ and _server_ will be used. The server is the side listening for incoming connections on a known endpoint address, and the client is the one connecting to the server's endpoint.
 
->[!NOTE]
+> [!NOTE]
 > The client and and server roles are not tied to whether an app is acting as a player or as a remote. While the samples have the player in the server role, it's easy to reverse the roles if it better fits your use case.
 
 ### Planning the server-to-client authentication
@@ -109,11 +109,11 @@ These calls require you to provide implementations of certain interfaces for pro
 
 All interfaces have a function requesting you to take action, which receives a callback object as parameter. Using this object, you can easily implement asynchronous handling of the request. Keep a reference to this object, and call the completion function when the asynchronous action is complete. The completion function may be called from any thread.
 
->[!TIP]
->Implementing WinRT interfaces can easily be done using C++/WinRT. The [Author APIs with C++/WinRT](/windows/uwp/cpp-and-winrt-apis/author-apis) chapter describes this in detail.
+> [!TIP]
+> Implementing WinRT interfaces can easily be done using C++/WinRT. The [Author APIs with C++/WinRT](/windows/uwp/cpp-and-winrt-apis/author-apis) chapter describes this in detail.
 
->[!IMPORTANT]
->The `build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl` inside the NuGet package contains detailed documentation for the API related to secure connections.
+> [!IMPORTANT]
+> The `build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl` inside the NuGet package contains detailed documentation for the API related to secure connections.
 
 ### Implementing a certificate provider
 
@@ -163,15 +163,15 @@ Implement the `ICertificateValidator` interface as follows:
  * `PerformSystemValidation()` should return `true` if a system validation as described above should be performed. In this case, the system validation result is passed as an input to the `ValidateCertificate()` method.
 * `ValidateCertificate()` should validate the certificate chain and then call `CertificateValidated()` on the passed callback with the final validation result. This method accepts the certificate chain, the name of the server the connection is being established with, and whether a revocation check should be forced. If the certificate chain contains multiple certificates, the first one is the subject certificate.
 
->[!NOTE]
->If your use case requires a different form of validation (see certificate use case #1 above), bypass system validation entirely. Instead, use any API or library that can handle DER-encoded X.509 certificates to decode the certificate chain and perform the checks needed for your use case.
+> [!NOTE]
+> If your use case requires a different form of validation (see certificate use case #1 above), bypass system validation entirely. Instead, use any API or library that can handle DER-encoded X.509 certificates to decode the certificate chain and perform the checks needed for your use case.
 
 ## Secure connection using the OpenXR API
 
-When using the [OpenXR API](../native/openxr.md) all secure connection-related API is available as part of the `XR_MSFT_holographic_remoting` OpenXR extension.
+When using the [OpenXR API](../native/openxr.md), all secure connection-related API is available as part of the `XR_MSFT_holographic_remoting` OpenXR extension.
 
->[!IMPORTANT]
->To learn about the Holographic Remoting OpenXR extension API, check out the [specification](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/master/remote_openxr/specification.html) which can be found in the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+> [!IMPORTANT]
+> To learn about the Holographic Remoting OpenXR extension API, check out the [specification](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/main/remote_openxr/specification.html) which can be found in the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
 The key elements for secure connection using the `XR_MSFT_holographic_remoting` OpenXR extension are the following callbacks.
 - `xrRemotingRequestAuthenticationTokenCallbackMSFT`, generates, or retrieves the authentication token to be sent.
