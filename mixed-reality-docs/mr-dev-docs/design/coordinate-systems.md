@@ -112,7 +112,7 @@ In both kinds of coordinate systems, the positive X-axis points to the right and
 
 ## Building an orientation-only or seated-scale experience
 
-The key to holographic [rendering](../develop/advanced-concepts/rendering.md) is changing your app's view of its holograms each frame as the user moves around, to match their predicted head motion. You can build **seated-scale experiences** that respect changes to the user's head position and head orientation using a **stationary frame of reference**.
+The key to holographic [rendering](../develop/advanced-concepts/rendering-overview.md) is changing your app's view of its holograms each frame as the user moves around, to match their predicted head motion. You can build **seated-scale experiences** that respect changes to the user's head position and head orientation using a **stationary frame of reference**.
 
 Some content must ignore head position updates, staying fixed at a chosen heading and distance from the user always. The primary example is 360-degree video: because the video is captured from a single fixed perspective, it would ruin the illusion for the view position to move based on the content, even though the view orientation changes as the user looks around. You can build such **orientation-only experiences** using an **attached frame of reference**.
 
@@ -233,6 +233,6 @@ Sometimes, a home or other space may have two identical areas. For example, two 
 * [Coordinate systems in Unity](../develop/unity/coordinate-systems-in-unity.md)
 * [Coordinate systems in DirectX](../develop/native/coordinate-systems-in-directx.md)
 * [Spatial anchors](spatial-anchors.md)
-* [Shared experiences in mixed reality](../develop/advanced-concepts/shared-experiences-in-mixed-reality.md)
+* [Shared experiences in mixed reality](shared-experiences-in-mixed-reality.md)
 * <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * [Case study - Looking through holes in your reality](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)

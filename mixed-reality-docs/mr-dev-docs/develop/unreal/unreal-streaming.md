@@ -25,7 +25,7 @@ To get started, you'll need to download the [Holographic Remoting Player](../adv
 * The Unreal Engine editor
 * A packaged Windows executable 
 
-When streaming, you have access to almost all of the same HoloLens capabilities as you would when running an application on a device. This includes [hand joint tracking](unreal-hand-tracking.md) if you're on a HoloLens 2, [spatial mapping](unreal-spatial-mapping.md), and [spatial anchors](unreal-spatial-anchors.md), but leaves out the features on this [list](../advanced-concepts/holographic-remoting-troubleshooting.md). 
+When streaming, you have access to almost all of the same HoloLens capabilities as you would when running an application on a device. This includes [hand joint tracking](unreal-hand-tracking.md) if you're on a HoloLens 2, [spatial mapping](unreal-spatial-mapping.md), and [spatial anchors](unreal-spatial-anchors.md), but leaves out the features on this [list](../native/holographic-remoting-troubleshooting.md). 
 
 > [!NOTE]
 > * Streaming quality is highly dependent on the strength of your wifi network.
@@ -90,7 +90,7 @@ In Unreal 4.25.1 and onwards, you can stream your app to a HoloLens 2 device fro
 > The application name in your project settings should be automatically used to create the Windows package. If these are different for some reason, use the Windows executable name in the command prompt.
 
 > [!NOTE]
-> If eye tracking isn't working when streaming from a packaged executable, either disable any other plugins with PC-supported eye trackers (example: Magic Leap) or run the application from the command line with the relevant eye tracking argument (see [command line options](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-streaming?tabs=wmr#command-line-options)).
+> If eye tracking isn't working when streaming from a packaged executable, either disable any other plugins with PC-supported eye trackers (example: Magic Leap) or run the application from the command line with the relevant eye tracking argument (see [command line options](/mixed-reality/develop/unreal/unreal-streaming?tabs=wmr#command-line-options)).
 
 Hit enter and watch your application start streaming!
 
@@ -102,6 +102,6 @@ Additional command line options for streaming from each platform in Unreal Engin
 
 ## See also
 
-* [Holographic remoting version history](../advanced-concepts/holographic-remoting-version-history.md)
-* [Writing a custom Holographic Remoting player app](../advanced-concepts/holographic-remoting-create-player.md)
-* [Establishing a secure connection with Holographic Remoting](../advanced-concepts/holographic-remoting-secure-connection.md)
+* [Holographic remoting version history](../native/holographic-remoting-version-history.md)
+* [Writing a custom Holographic Remoting player app](../native/holographic-remoting-create-player.md)
+* [Establishing a secure connection with Holographic Remoting](../native/holographic-remoting-secure-connection.md)

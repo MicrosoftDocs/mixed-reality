@@ -17,7 +17,7 @@ If you're new to Holographic Remoting, you may want to [read our overview].
 
 By creating a custom Holographic Remoting player app, you can create a custom application capable of displaying [immersive views](../../design/app-views.md) from on a remote machine on your HoloLens 2. All code on this page and working projects can be found in the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
-A Holographic Remoting player lets your app display holographic content [rendered](rendering.md) on a desktop PC or UWP device like the Xbox One with access to more system resources. A Holographic Remoting player app streams input data to a Holographic Remoting remote application and receives back an immersive view as video and audio stream. The connection is made using standard Wi-Fi. To create a player app, use a NuGet package to add Holographic Remoting to your UWP app. Then write code to handle the connection and to display an immersive view. 
+A Holographic Remoting player lets your app display holographic content [rendered](rendering-overview.md) on a desktop PC or UWP device like the Xbox One with access to more system resources. A Holographic Remoting player app streams input data to a Holographic Remoting remote application and receives back an immersive view as video and audio stream. The connection is made using standard Wi-Fi. To create a player app, use a NuGet package to add Holographic Remoting to your UWP app. Then write code to handle the connection and to display an immersive view. 
 
 ## Prerequisites
 
@@ -196,14 +196,14 @@ On success, ```BlitRemoteFrame``` returns ```BlitResult::Success_Color```. Other
 - ```BlitResult::Failed_RemoteFrameTooOld```: Failed because remote frame is too old (see PlayerContext::BlitRemoteFrameTimeout property).
 
 >[!IMPORTANT]
-> Starting with version [2.1.0](holographic-remoting-version-history.md#v2.1.0) it is possible with a custom player to use depth reprojection via Holographic Remoting.
+> Starting with version [2.1.0](holographic-remoting-version-history.md#v2.1.0) it's possible with a custom player to use depth reprojection via Holographic Remoting.
 
 ```BlitResult``` can also return ```BlitResult::Success_Color_Depth``` under the following conditions:
 
 - The remote app has committed a depth buffer via [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_).
 - The custom player app has bound a valid depth buffer before calling ```BlitRemoteFrame```.
 
-If these conditions are met, ```BlitRemoteFrame``` will blit the remote depth into the currently bound local depth buffer. You can then render additional local content, which will have depth intersection with the remote rendered content. Additionally you can commit the local depth buffer via [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_) in your custom player to have depth reprojection for remote and local rendered content. See [Depth Reprojection](hologram-stability.md#reprojection) for details.
+If these conditions are met, ```BlitRemoteFrame``` will blit the remote depth into the currently bound local depth buffer. You can then render additional local content, which will have depth intersection with the remote rendered content. Additionally you can commit the local depth buffer via [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_) in your custom player to have depth reprojection for remote and local rendered content.
 
 ### Projection Transform Mode
 
@@ -273,7 +273,7 @@ struct OverRenderingConfig
 ## Optional: Coordinate System Synchronization
 
 Starting with version [2.7.0](holographic-remoting-version-history.md#v2.7.0) coordinate system synchronization can be used to align spatial data between the player and remote app.
-For more information, see [Coordinate System Synchronization with Holographic Remoting Overview](holographic-remoting-coordinate-system-synchronization.md).
+For more information, see [Coordinate System Synchronization with Holographic Remoting Overview](../advanced-concepts/holographic-remoting-coordinate-system-synchronization.md).
 
 ## See Also
 * [Holographic Remoting overview](../advanced-concepts/holographic-remoting-overview.md)

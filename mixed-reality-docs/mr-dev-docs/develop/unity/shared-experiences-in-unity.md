@@ -49,6 +49,6 @@ Or jump directly to deploying your app on a device or emulator:
 You can always go back to the [Unity development checkpoints](unity-development-overview.md#3-advanced-features) at any time.
 
 ## See also
-* [Shared experiences in mixed reality](../advanced-concepts/shared-experiences-in-mixed-reality.md)
+* [Shared experiences in mixed reality](../advanced-concepts/shared-experiences-in-directx.md)
 * <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * <a href="/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Azure Spatial Anchors SDK for Unity</a>

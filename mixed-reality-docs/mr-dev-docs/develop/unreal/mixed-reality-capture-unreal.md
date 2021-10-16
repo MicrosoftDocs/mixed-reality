@@ -56,4 +56,4 @@ We recommend you always request Exclusive control for the camera when using MRC.
 
 * [Mixed reality capture overview](../advanced-concepts/mixed-reality-capture-overview.md)
 * [Mixed reality capture for HoloLens users](/hololens/holographic-photos-and-videos)
-* [Spectator view](spectator-view.md)
+* [Spectator view](../design/spectator-view.md)

@@ -12,8 +12,6 @@ keywords: Windows Mixed Reality, keyboard, mouse, game controller, xbox controll
 
 This article relates to the legacy WinRT native APIs.  For new native app projects, we recommend using the **[OpenXR API](../native/openxr-getting-started.md)**.
 
-> [!NOTE]
-> If you're new to working with keyboard, mouse and controller input, we recommend that you [read this overview](../advanced-concepts/keyboard-mouse-and-controller-input-overview.md) first.
 > The code snippets in this article currently demonstrate use of C++/CX rather than C++17-compliant C++/WinRT as used in the [C++ holographic project template](../native/creating-a-holographic-directx-project.md).  The concepts are equivalent for a C++/WinRT project, though you will need to translate the code.
 
 ## Subscribe for CoreWindow input events
@@ -253,4 +251,3 @@ Recompile, and redeploy. You can now attach, or pair, a game controller and use 
 
 ## See also
 * [Hardware accessories](../../discover/hardware-accessories.md)
-* [Keyboard, mouse and controller input overview](../advanced-concepts/keyboard-mouse-and-controller-input-overview.md)

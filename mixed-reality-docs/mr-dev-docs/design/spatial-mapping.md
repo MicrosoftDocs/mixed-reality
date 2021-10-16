@@ -28,7 +28,7 @@ Spatial mapping provides a detailed representation of real-world surfaces in the
     <tr>
         <td><strong>Feature</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
@@ -69,7 +69,7 @@ If you'd like to see Spatial Awareness design concepts in action, check out our 
 
 ## Spatial Mapping vs. Scene Understanding WorldMesh
 
-For HoloLens 2, it's possible to query a static version of the spatial mapping data using [Scene understanding SDK](../develop/advanced-concepts/scene-understanding-SDK.md) (EnableWorldMesh setting). Here are the differences between two ways of accessing the spatial mapping data:
+For HoloLens 2, it's possible to query a static version of the spatial mapping data using [Scene understanding SDK](../unity/scene-understanding-SDK.md) (EnableWorldMesh setting). Here are the differences between two ways of accessing the spatial mapping data:
 * Spatial Mapping API:
    * Limited range: the spatial mapping data available to applications in a limited size cached 'bubble' around the user.
    * Provides low latency updates of changed mesh regions through SurfacesChanged events.

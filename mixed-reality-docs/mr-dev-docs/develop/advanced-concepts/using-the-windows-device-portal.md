@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 # Using the Windows Device Portal
 
-| Feature          | [HoloLens 1st Gen](https://docs.microsoft.com/hololens/hololens1-hardware) | [HoloLens 2](https://www.microsoft.com/hololens/hardware) | 
+| Feature          | [HoloLens 1st Gen](https://docs.microsoft.com/hololens/hololens1-hardware) | [HoloLens 2](/hololens/hardware) | 
 |:------------:|:--------------------------------------------------------------------------:|:---------------------------------------------------------:|
 | Windows Device Portal | :heavy_check_mark:               | :heavy_check_mark: |
 
@@ -249,7 +249,7 @@ Use the Mixed Reality Capture page to save media streams from the HoloLens.
   * **PV camera**: Captures the video stream from the photo/video camera.
   * **Mic Audio**: Captures audio from the microphone array.
   * **App Audio**: Captures audio from the currently running app.
-  * **Render from Camera**: Aligns the capture to be from the perspective of the photo/video camera, if [supported by the running app](../advanced-concepts/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in) (HoloLens 2 only).
+  * **Render from Camera**: Aligns the capture to be from the perspective of the photo/video camera, if [supported by the running app](../advanced-concepts/mixed-reality-capture-overview).md#render-from-the-pv-camera-opt-in) (HoloLens 2 only).
   * **Live preview quality**: Select the screen resolution, frame rate, and streaming rate for the live preview.
 * **Audio Settings** (HoloLens 2 only):
   * **Audio Media Category**: Select the category is used when processing the microphone. **Default**  will include some of the environment, while **Communications** applies background noise cancellation.
@@ -285,7 +285,7 @@ All settings on this page apply to captures taken using Windows Device Portal. S
 |  Video Stabilization Buffer  |  Yes  |  Yes (can be overridden) |
 
 > [!NOTE]
-> There are [limitations to simultaneous MRC](../advanced-concepts/mixed-reality-capture-for-developers.md#simultaneous-mrc-limitations):
+> There are [limitations to simultaneous MRC](../advanced-concepts/mixed-reality-capture-overview.md#simultaneous-mrc-limitations):
 > * If an app tries to access the photo/video camera while Windows Device Portal is recording a video, the video recording will stop.
 >   * HoloLens 2 will not stop recording video if the app accesses the photo/video camera with SharedReadOnly mode.
 > * If an app is actively using the photo/video camera, Windows Device Portal is able to take a photo or record a video.

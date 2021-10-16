@@ -177,7 +177,7 @@ Examples:
 
 ## See also
 * [Locatable camera sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)
-* [Locatable camera overview](../advanced-concepts/locatable-camera-cpp.md)
+* [Locatable camera overview](../advanced-concepts/locatable-camera-overview.md)
 * [Locatable camera in Unity](../unity/locatable-camera-in-unity.md)
 * [Mixed reality capture](/hololens/holographic-photos-and-videos)
 * [Mixed reality capture for developers](../advanced-concepts/mixed-reality-capture-overview.md)

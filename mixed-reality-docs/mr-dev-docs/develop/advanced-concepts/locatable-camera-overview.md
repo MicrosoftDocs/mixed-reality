@@ -56,7 +56,7 @@ HoloLens includes a world-facing camera mounted on the front of the device that 
 > [!NOTE]
 > Customers can leverage [mixed reality capture](/hololens/holographic-photos-and-videos) to take videos or photos of your app, which include holograms and video stabilization.
 >
-> If you want the content your users capture to look as good as possible, there are some things you should consider. You can also enable (and customize) mixed reality capture from directly within your app. Learn more at [mixed reality capture for developers](../native/mixed-reality-capture-for-developers.md).
+> If you want the content your users capture to look as good as possible, there are some things you should consider. You can also enable (and customize) mixed reality capture from directly within your app. Learn more at [mixed reality capture for developers](mixed-reality-capture-for-developers.md).
 
 ## Locating the Device Camera in the World
 
@@ -124,6 +124,6 @@ Examples:
 * [Locatable camera sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)
 * [Locatable camera with C++ samples](../native/locatable-camera-cpp.md)
 * [Mixed reality capture](/hololens/holographic-photos-and-videos)
-* [Mixed reality capture for developers](../native/mixed-reality-capture-for-developers.md)
+* [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
 * [Media capture introduction](/windows/uwp/audio-video-camera/)
 * [Holographic face tracking sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)

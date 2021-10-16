@@ -17,7 +17,7 @@ The HoloLens 2 can see QR codes in world space using the webcam, which renders t
 - Lighting and backdrop
 - Size, distance, and angular position
 
-Pay special attention to the [environment considerations](/hololens/hololens-environment-considerations) when QR codes are being placed in your app. <!-- This sentence might need to be changed.-->You can find more information on each of these topics and instructions on how to download the required NuGet package in the main [QR code tracking](../advanced-concepts/qr-code-tracking.md) document.
+Pay special attention to the [environment considerations](/hololens/hololens-environment-considerations) when QR codes are being placed in your app. <!-- This sentence might need to be changed.-->You can find more information on each of these topics and instructions on how to download the required NuGet package in the main [QR code tracking](../advanced-concepts/qr-code-tracking-overview.md) document.
 <!-- end of overview section -->
 > [!CAUTION]
 > QR codes are the only type of images that can be tracked by HoloLens out of the box - Unreal's **UARTrackedImage** module isn't supported on HoloLens. If you need to track custom images, you can access the device's [webcam](unreal-hololens-camera.md) and process images using a third party image recognition library. 

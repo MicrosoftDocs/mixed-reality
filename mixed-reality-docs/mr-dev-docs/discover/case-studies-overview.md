@@ -35,12 +35,6 @@ Stories, learnings, and experiences the Mixed Reality team has found and jotted 
 
 :::row:::
     :::column:::
-       [![Using the stabilization plane to reduce holographic turbulence](images/holotour-stabilization-plane-500px.jpg)](../develop/advanced-concepts/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)
-        **[Using the stabilization plane to reduce holographic turbulence](../develop/advanced-concepts/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)**<br>
-        Working with holograms can be tricky. The fact that you can move around your space and see your holograms from all different angles provides a level of immersion that you can’t get with a normal computer screen.<br>
-        *April 2017*
-    :::column-end:::
-    :::column:::
        [![Expanding the spatial mapping capabilities of HoloLens](images/away-from-camera-position-500px.png)](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)
         **[Expanding the spatial mapping capabilities of HoloLens](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)**<br>
         When creating our first apps for Microsoft HoloLens, we were eager to see just how far we could push the boundaries of spatial mapping on the device.<br>

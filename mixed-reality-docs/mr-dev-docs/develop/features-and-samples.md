@@ -53,7 +53,7 @@ HoloLens 2 can detect QR codes in the environment around the headset, establishi
 
 | Reference article | Sample |
 | --- | --- |
-| [QR codes](advanced-concepts/qr-code-tracking.md) | [QR code tracking in Unity](https://github.com/microsoft/MixedReality-QRCode-Sample) |
+| [QR codes](advanced-concepts/qr-code-tracking-overview.md) | [QR code tracking in Unity](https://github.com/microsoft/MixedReality-QRCode-Sample) |
 
 ### Scene understanding
 
@@ -83,7 +83,7 @@ Mixed reality capture (MRC) captures the first-person experience of mixing real 
 
 | Reference article | Sample |
 | --- | --- |
-| [Mixed Reality Capture](advanced-concepts/mixed-reality-capture-for-developers.md) | [Mixed Reality Capture samples](/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/) |
+| [Mixed Reality Capture](advanced-concepts/mixed-reality-capture-overview.md) | [Mixed Reality Capture samples](/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/) |
 
 ### Holographic Remoting
 

@@ -2,7 +2,7 @@
 title: Performance recommendations for Unity
 description: Learn Unity-specific tips to improve performance with project settings, profiling, memory management in your mixed reality apps.
 author: hferrone
-ms.author: v-hferrone
+ms.author: v-vtieto
 ms.date: 03/26/2019
 ms.topic: article
 keywords: graphics, cpu, gpu, rendering, garbage collection, hololens

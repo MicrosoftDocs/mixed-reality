@@ -260,7 +260,7 @@ internal:
 **Debugging note:** The Holographic Remoting library can throw first-chance exceptions. These exceptions may be visible in debugging sessions, depending on the Visual Studio exception settings that are active at the time. These exceptions are caught internally by the Holographic Remoting library and can be ignored.
 
 ## See Also
-* [Holographic Remoting overview](../develop/advanced-concepts/holographic-remoting-overview.md)
+* [Holographic Remoting overview](../advanced-concepts/holographic-remoting-overview.md)
 * [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)
 * [Establishing a secure connection with Holographic Remoting](holographic-remoting-secure-connection.md)
 * [Holographic Remoting troubleshooting and limitations](holographic-remoting-troubleshooting.md)

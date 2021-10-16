@@ -10,7 +10,7 @@ keywords: volumetric image, volume rendering, performance, mixed reality
 
 # Volume rendering
 
-If you're new to volume rendering, we recommend that you [read our overview](../platform-capabilities-and-apis/volume-rendering-overview.md).
+If you're new to volume rendering, we recommend that you [read our overview](../advanced-concepts/volume-rendering-overview.md).
 
 ## Representing 3D Textures
 

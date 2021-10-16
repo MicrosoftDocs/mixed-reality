@@ -10,7 +10,7 @@ keywords: HoloLens, HoloLens 2, mixed reality, MRTK, Mixed Reality Toolkit, augm
 
 # Coordinate System Synchronization with Holographic Remoting Overview
 
-Starting with version [2.7.0](holographic-remoting-version-history.md#v2.7.0), Holographic Remoting supports coordinate system synchronization.
+Starting with version [2.7.0](../native/holographic-remoting-version-history.md#v2.7.0), Holographic Remoting supports coordinate system synchronization.
 
 Use coordinate system synchronization to synchronize spatial data between a custom player app and a custom remote app.
 With that, it's possible to express spatial data within a common space even across different player and remote runtimes.

@@ -12,7 +12,7 @@ keywords: photo, video, hololens, camera, unity, locatable, PVC, photo video cam
 
 ## Enabling the capability for camera access
 
-The "WebCam" capability must be declared for an app to use the [camera](../advanced-concepts/locatable-camera.md).
+The "WebCam" capability must be declared for an app to use the [camera](../advanced-concepts/locatable-camera-overview.md).
 
 1. In the Unity Editor, go to the player settings by navigating to the "Edit > Project Settings > Player" page
 2. Select the "Windows Store" tab
@@ -343,9 +343,9 @@ You can always go back to the [Unity development checkpoints](unity-development-
 
 ## See also
 * [Locatable camera sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)
-* [Locatable camera overview](../advanced-concepts/locatable-camera-cpp.md)
+* [Locatable camera overview](../advanced-concepts/locatable-camera-overview.md)
 * [Locatable camera with C++ samples](../native/locatable-camera-cpp.md)
 * [Mixed reality capture](/hololens/holographic-photos-and-videos)
-* [Mixed reality capture for developers](mixed-reality-capture-for-developers.md)
+* [Mixed reality capture for developers](mixed-reality-capture-overview.md)
 * [Media capture introduction](/windows/uwp/audio-video-camera/)
 * [Holographic face tracking sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)

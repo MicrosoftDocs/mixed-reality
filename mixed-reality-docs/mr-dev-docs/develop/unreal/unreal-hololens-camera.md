@@ -34,5 +34,5 @@ You can always go back to the [Unreal development checkpoints](unreal-developmen
 
 ## See also
 
-* [Locatable camera](../advanced-concepts/locatable-camera.md)
-* [Mixed reality capture for developers](../advanced-concepts/mixed-reality-capture-for-developers.md)
+* [Locatable camera](../advanced-concepts/locatable-camera-overview.md)
+* [Mixed reality capture for developers](../advanced-concepts/mixed-reality-capture-overview.md)

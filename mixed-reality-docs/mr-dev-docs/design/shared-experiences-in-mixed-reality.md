@@ -167,7 +167,7 @@ Leverage [MixedReality-SpectatorView](https://github.com/microsoft/MixedReality-
 
 ## Multi-user collaborative experience
 <!--Unity Note-->
-Start with our [multi-user learning tutorial](unity/tutorials/mr-learning-sharing-01.md), which leverages [Azure Spatial Anchors](/azure/spatial-anchors/) for local users and [Photon SDK](https://www.photonengine.com/PUN) for syncing the content/state in the scene. Create locally collaborative applications where each user has his/her own perspective on the holograms in the scene and can each fully interact with the holograms.  Updates are provided across all devices and interaction conflict management is handled by Photon.
+Start with our [multi-user learning tutorial](unity/tutorials/mr-learning-sharing-02.md), which leverages [Azure Spatial Anchors](/azure/spatial-anchors/) for local users and [Photon SDK](https://www.photonengine.com/PUN) for syncing the content/state in the scene. Create locally collaborative applications where each user has his/her own perspective on the holograms in the scene and can each fully interact with the holograms.  Updates are provided across all devices and interaction conflict management is handled by Photon.
 
 > [!NOTE]
 > Please note that [Photon](https://www.photonengine.com/) is a non-Microsoft product, so a billing relationship with Photon may be required to productize and scale for higher usage.

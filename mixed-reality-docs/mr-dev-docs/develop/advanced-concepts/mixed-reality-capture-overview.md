@@ -56,7 +56,7 @@ Render from the PV camera offers the following improvements over the default MRC
 
 MRC is expected to work without additional development effort, but there are a few things to be aware of when providing the best mixed reality capture experience.
 
-**MRC uses the hologram’s alpha channel to blend with the [camera](../native/locatable-camera.md) imagery**
+**MRC uses the hologram’s alpha channel to blend with the [camera](locatable-camera-overview.md) imagery**
 
 The most important step is to make sure your app is clearing to transparent black instead of clearing to opaque black. In Unity, this is done by default with the MixedRealityToolkit. If you're developing in non-Unity, you may need to make a one line change.
 
@@ -136,17 +136,17 @@ With HoloLens 2, it's possible for you to share access to the camera. If you don
 
 ##### Built-in MRC photo/video camera access
 
-[Learn about built-in MRC photo/video camera access (DirectX)](../native/mixed-reality-capture-for-developers-cs-cpp.md#built-in-mrc-photo-video-camera-access).
+[Learn about built-in MRC photo/video camera access (DirectX)](../native/mixed-reality-capture-directx.md#built-in-mrc-photo-video-camera-access).
 
 #### MRC access for developers
 
 We recommend you always request Exclusive control for the camera when using MRC. This will ensure your application has full control of the settings for the camera as long as you're aware of the limitations listed above.
 
-[Learn more about MRC access for developers (DirectX)](../native/mixed-reality-capture-for-developers-cs-cpp.md#mrc-access-for-developers).
+[Learn more about MRC access for developers (DirectX)](../native/mixed-reality-capture-for-directx.md#mrc-access-for-developers).
 
 ## See also
 
 * [Mixed reality capture](/hololens/holographic-photos-and-videos)
-* [Spectator view](../../design.spectator-view.md)
+* [Spectator view](../../design/spectator-view.md)
 * [Unity Development Overview](../unity/unity-development-overview.md)
 * [Unreal development overview](../unreal/unreal-development-overview.md)

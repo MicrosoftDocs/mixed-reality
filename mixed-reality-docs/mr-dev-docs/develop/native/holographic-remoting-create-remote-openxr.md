@@ -205,7 +205,7 @@ If your remote app is using DX12, use XrRemotingFrameMirrorImageD3D12MSFT instea
 
 ## Optional: Custom data channels
 
-Starting with version [2.5.0](holographic-remoting-version-history.md#v2.5.0), custom data channels can be used with the OpenXR API to send user data over the already-established remoting connection. For more information, see [Custom Data Channels with the OpenXR API](holographic-remoting-custom-data-channels-openxr.md).
+Starting with version [2.5.0](holographic-remoting-version-history.md#v2.5.0), custom data channels can be used with the OpenXR API to send user data over the already-established remoting connection. For more information, see [Custom Data Channels with the OpenXR API](../advanced-concepts/holographic-remoting-custom-data-channels-openxr.md).
 
 ## Optional: Speech
 
@@ -233,10 +233,10 @@ After the remote app is notified about a recognized phrase, it can retrieve the 
 ## Optional: Coordinate System Synchronization
 
 Starting with version [2.7.0](holographic-remoting-version-history.md#v2.7.0), coordinate system synchronization can be used to align spatial data between the player and remote app.
-For more information, see [Coordinate System Synchronization with Holographic Remoting Overview](holographic-remoting-coordinate-system-synchronization.md).
+For more information, see [Coordinate System Synchronization with Holographic Remoting Overview](../advanced-concepts/holographic-remoting-coordinate-system-synchronization.md).
 
 ## See Also
-* [Holographic Remoting overview](holographic-remoting-overview.md)
+* [Holographic Remoting overview](../advanced-concepts/holographic-remoting-overview.md)
 * [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)
 * [Establishing a secure connection with Holographic Remoting](holographic-remoting-secure-connection.md)
 * [Holographic Remoting troubleshooting and limitations](holographic-remoting-troubleshooting.md)

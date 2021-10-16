@@ -60,4 +60,4 @@ For a closed data channel, the ```XrRemotingDataChannelMSFT``` handle remains va
 
 ## See Also
 * [Holographic Remoting Overview](holographic-remoting-overview.md)
-* [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md)
+* [Writing a Holographic Remoting remote app using OpenXR APIs](../native/holographic-remoting-create-remote-openxr.md)

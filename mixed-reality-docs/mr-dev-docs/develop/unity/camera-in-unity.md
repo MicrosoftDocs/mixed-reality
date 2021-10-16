@@ -50,7 +50,7 @@ Your first step in building a mixed reality experience in Unity is to determine 
 #### Room-scale or standing experiences
 
 > [!NOTE]
-> If you're building for HL2, we recommend creating an eye-level experience, or consider using [Scene Understanding](../advanced-concepts/scene-understanding-sdk.md) to reason about the floor of your scene.
+> If you're building for HL2, we recommend creating an eye-level experience, or consider using [Scene Understanding](scene-understanding-sdk.md) to reason about the floor of your scene.
 
 [!INCLUDE[](includes/camera/vr-setup-standing-include.md)]
 

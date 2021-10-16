@@ -182,4 +182,4 @@ The Windows Mixed Reality app template now supports compilation with the Spectre
 * [Rendering in DirectX](rendering-in-directx.md)
 * [Using Visual Studio to deploy and debug](../advanced-concepts/using-visual-studio.md)
 * [Using the HoloLens emulator](../advanced-concepts/using-the-hololens-emulator.md)
-* [Using XAML with holographic DirectX apps](../advanced-concepts/using-xaml-with-holographic-directx-apps.md)
+* [Using XAML with holographic DirectX apps](using-xaml-with-holographic-directx-apps.md)
