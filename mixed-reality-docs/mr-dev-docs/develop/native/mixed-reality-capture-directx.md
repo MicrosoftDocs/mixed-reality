@@ -152,7 +152,7 @@ On HoloLens 1, MRC will fail to capture a photo or capture video while a process
 
 With HoloLens 2, it's possible for you to share access to the camera. If you don't need direct control of the resolution or frame-rate, you can initialize MediaCapture using the [SharedMode property](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode) with SharedReadOnly.  
 
-##### Built-in MRC photo/video camera access
+##### Built-in MRC photo and video camera access
 
 MRC functionality built into Windows 10 (via Cortana, Start Menu, hardware shortcuts, Miracast, Windows Device Portal):
 

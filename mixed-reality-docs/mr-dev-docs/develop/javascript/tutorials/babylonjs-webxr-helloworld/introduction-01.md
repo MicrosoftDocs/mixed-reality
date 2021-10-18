@@ -1,7 +1,7 @@
 ---
 title: Introduction to the babylon.js and WebXR tutorials
 description: Complete this course to learn how to use babylon.js and create basic Mixed Reality application.
-author: bogenera
+author: vtieto
 ms.author: ayyonet
 ms.date: 03/05/2021
 ms.topic: article

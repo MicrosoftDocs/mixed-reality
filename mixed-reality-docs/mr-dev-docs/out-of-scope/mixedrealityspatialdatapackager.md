@@ -2,7 +2,7 @@
 title: Mixed Reality Spatial Data Packager Documentation
 description: The Mixed Reality Spatial Data Packager tool is now deprecated and no longer functions on any platform. The Map Manager tool is recommended instead. 
 author: hferrone 
-ms.author: v-hferrone
+ms.author: v-vtieto
 ms.date: 08/03/2020
 ms.topic: article
 keywords: lbe, MixedRealitySpatialDataPackager.exe, MixedRealitySpatialDataPackager
@@ -32,7 +32,7 @@ keywords: lbe, MixedRealitySpatialDataPackager.exe, MixedRealitySpatialDataPacka
     <tr>
         <td><strong>Feature</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>

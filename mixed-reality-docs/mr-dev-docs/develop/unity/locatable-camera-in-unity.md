@@ -346,6 +346,6 @@ You can always go back to the [Unity development checkpoints](unity-development-
 * [Locatable camera overview](../advanced-concepts/locatable-camera-overview.md)
 * [Locatable camera with C++ samples](../native/locatable-camera-cpp.md)
 * [Mixed reality capture](/hololens/holographic-photos-and-videos)
-* [Mixed reality capture for developers](mixed-reality-capture-overview.md)
+* [Mixed reality capture for developers](../advanced-concepts/mixed-reality-capture-overview.md)
 * [Media capture introduction](/windows/uwp/audio-video-camera/)
 * [Holographic face tracking sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)

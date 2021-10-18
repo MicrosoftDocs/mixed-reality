@@ -158,7 +158,7 @@ lease updated to at least version 2.2.1.
 
 * Added support for [SpatialAnchorExporter](/uwp/api/windows.perception.spatial.spatialanchorexporter)
 * Added new interface ```IPlayerContext2``` (implemented by ```PlayerContext```) providing the following members:
-  - [BlitRemoteFrameTimeout](holographic-remoting-create-player.md#BlitRemoteFrameTimeout)  property.
+  - [BlitRemoteFrameTimeout](holographic-remoting-create-player.md#blitremoterrametimeout)  property.
 * Added ```Failed_RemoteFrameTooOld``` value to ```BlitResult```
 * Stability and reliability improvements
 

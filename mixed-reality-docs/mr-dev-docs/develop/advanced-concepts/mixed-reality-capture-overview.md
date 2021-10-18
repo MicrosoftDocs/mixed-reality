@@ -136,13 +136,13 @@ With HoloLens 2, it's possible for you to share access to the camera. If you don
 
 ##### Built-in MRC photo/video camera access
 
-[Learn about built-in MRC photo/video camera access (DirectX)](../native/mixed-reality-capture-directx.md#built-in-mrc-photo-video-camera-access).
+[Learn about built-in MRC photo/video camera access (DirectX)](../native/mixed-reality-capture-directx.md#built-in-mrc-photo-and-video-camera-access).
 
 #### MRC access for developers
 
 We recommend you always request Exclusive control for the camera when using MRC. This will ensure your application has full control of the settings for the camera as long as you're aware of the limitations listed above.
 
-[Learn more about MRC access for developers (DirectX)](../native/mixed-reality-capture-for-directx.md#mrc-access-for-developers).
+[Learn more about MRC access for developers (DirectX)](../native/mixed-reality-capture-directx.md#mrc-access-for-developers).
 
 ## See also
 

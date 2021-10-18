@@ -46,8 +46,8 @@ Each detected QR code exposes a [spatial coordinate system](../../design/coordin
 When converted into Unity coordinates, the Z-axis points out of the paper and is left-handed.
 
 ## See also
-* [QR code tracking overview](../platforms-capabilities-and-apis/qr-code-tracking-overview.md)
+* [QR code tracking overview](../advanced-concepts/qr-code-tracking-overview.md)
 * [QR code tracking with native C++ and C## samples](../native/qr-code-tracking-cs-cpp.md)
-* [QR code tracking API reference](../api-refs/qr-code-tracking-api-reference.md)
+* [QR code tracking API reference](../native/qr-code-tracking-cs-cpp.md)
 * [Coordinate systems](../../design/coordinate-systems.md)
 * <a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>

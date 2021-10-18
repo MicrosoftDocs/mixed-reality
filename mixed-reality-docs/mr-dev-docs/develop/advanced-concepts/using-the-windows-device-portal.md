@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 # Using the Windows Device Portal
 
-| Feature          | [HoloLens 1st Gen](https://docs.microsoft.com/hololens/hololens1-hardware) | [HoloLens 2](/hololens/hardware) | 
+| Feature          | [HoloLens 1st Gen](/hololens/hololens1-hardware) | [HoloLens 2](/hololens/hardware) | 
 |:------------:|:--------------------------------------------------------------------------:|:---------------------------------------------------------:|
 | Windows Device Portal | :heavy_check_mark:               | :heavy_check_mark: |
 
@@ -249,7 +249,7 @@ Use the Mixed Reality Capture page to save media streams from the HoloLens.
   * **PV camera**: Captures the video stream from the photo/video camera.
   * **Mic Audio**: Captures audio from the microphone array.
   * **App Audio**: Captures audio from the currently running app.
-  * **Render from Camera**: Aligns the capture to be from the perspective of the photo/video camera, if [supported by the running app](../advanced-concepts/mixed-reality-capture-overview).md#render-from-the-pv-camera-opt-in) (HoloLens 2 only).
+  * **Render from Camera**: Aligns the capture to be from the perspective of the photo/video camera, if [supported by the running app](mixed-reality-capture-overview).md#render-from-the-pv-camera-opt-in) (HoloLens 2 only).
   * **Live preview quality**: Select the screen resolution, frame rate, and streaming rate for the live preview.
 * **Audio Settings** (HoloLens 2 only):
   * **Audio Media Category**: Select the category is used when processing the microphone. **Default**  will include some of the environment, while **Communications** applies background noise cancellation.

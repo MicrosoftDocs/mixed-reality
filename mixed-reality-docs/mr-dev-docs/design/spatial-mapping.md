@@ -69,7 +69,7 @@ If you'd like to see Spatial Awareness design concepts in action, check out our 
 
 ## Spatial Mapping vs. Scene Understanding WorldMesh
 
-For HoloLens 2, it's possible to query a static version of the spatial mapping data using [Scene understanding SDK](../unity/scene-understanding-SDK.md) (EnableWorldMesh setting). Here are the differences between two ways of accessing the spatial mapping data:
+For HoloLens 2, it's possible to query a static version of the spatial mapping data using [Scene understanding SDK](../develop/unity/scene-understanding-SDK.md) (EnableWorldMesh setting). Here are the differences between two ways of accessing the spatial mapping data:
 * Spatial Mapping API:
    * Limited range: the spatial mapping data available to applications in a limited size cached 'bubble' around the user.
    * Provides low latency updates of changed mesh regions through SurfacesChanged events.
