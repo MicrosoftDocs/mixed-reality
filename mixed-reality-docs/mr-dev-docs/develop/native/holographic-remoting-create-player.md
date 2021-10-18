@@ -10,7 +10,7 @@ keywords: HoloLens, Remoting, Holographic Remoting, NuGet, app manifest, player 
 
 # Writing a custom Holographic Remoting player app
 
-If you're new to Holographic Remoting, you may want to [read our overview].
+If you're new to Holographic Remoting, you may want to [read our overview](../advanced-concepts/holographic-remoting-overview.md).
 
 > [!IMPORTANT]
 > This document describes the creation of a custom player application for HoloLens 2. Custom players written for HoloLens 2 are not compatible with remote applications written for HoloLens 1. This implies that both applications must use NuGet package version **2.x.x**.

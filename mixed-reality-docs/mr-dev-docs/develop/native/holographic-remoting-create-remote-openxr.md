@@ -10,7 +10,7 @@ keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windo
 
 # Writing a Holographic Remoting remote app using the OpenXR API
 
-If you're new to Holographic Remoting, you may want to [read our overview].
+If you're new to Holographic Remoting, you may want to [read our overview](../advanced-concepts/holographic-remoting-overview.md).
 
 >[!IMPORTANT]
 >This document describes the creation of a remote application for HoloLens 2 and Windows Mixed Reality headsets using the [OpenXR API](../native/openxr.md). Remote applications for **HoloLens (1st gen)** must use NuGet package version **1.x.x**. This implies that remote applications written for HoloLens 2 are not compatible with HoloLens 1 and vice versa. The documentation for HoloLens 1 can be found [here](add-holographic-remoting.md).
