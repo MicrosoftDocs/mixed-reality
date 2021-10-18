@@ -17,7 +17,7 @@ If you're new to Holographic Remoting, you may want to [read our overview](../ad
 
 By creating a custom Holographic Remoting player app, you can create a custom application capable of displaying [immersive views](../../design/app-views.md) from on a remote machine on your HoloLens 2. All code on this page and working projects can be found in the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 
-A Holographic Remoting player lets your app display holographic content [rendered](rendering-overview.md) on a desktop PC or UWP device like the Xbox One with access to more system resources. A Holographic Remoting player app streams input data to a Holographic Remoting remote application and receives back an immersive view as video and audio stream. The connection is made using standard Wi-Fi. To create a player app, use a NuGet package to add Holographic Remoting to your UWP app. Then write code to handle the connection and to display an immersive view. 
+A Holographic Remoting player lets your app display holographic content [rendered](../advanced-concepts/rendering-overview.md) on a desktop PC or UWP device like the Xbox One with access to more system resources. A Holographic Remoting player app streams input data to a Holographic Remoting remote application and receives back an immersive view as video and audio stream. The connection is made using standard Wi-Fi. To create a player app, use a NuGet package to add Holographic Remoting to your UWP app. Then write code to handle the connection and to display an immersive view. 
 
 ## Prerequisites
 
