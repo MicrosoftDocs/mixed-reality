@@ -1,9 +1,9 @@
 ---
 title: Mixed Reality OpenXR plugin release notes
 description: Stay up-to-date on the latest release notes and upgrades to the Mixed Reality OpenXR plugin.
-author: hferrone
-ms.author: v-hferrone
-ms.date: 06/18/2021
+author: keveleigh
+ms.author: kurtie
+ms.date: 10/18/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit, mixed reality headset, windows mixed reality headset, virtual reality headset, installation, Windows, HoloLens, emulator, unreal, openxr
