@@ -16,8 +16,8 @@ Welcome to the Mixed Reality Dev Days, tailored to a digital experience in 2D an
 
 ## Session details and recordings
 
-|**Session Title**|**Speaker**|**Description**|
-|---------|---------|---------|
+| **Session Title** | **Speaker** | **Description** |
+| --------- | --------- | --------- |
 |[Opening Keynote](https://aka.ms/MRDDKeynote)|Alex Kipman|Alex Kipman starts our first ever virtual Mixed Reality Dev Days event.|
 |[Intro to Azure Mixed Reality Services: Azure Remote Rendering](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Intro-to-Azure-Mixed-Reality-Services-Azure-Remote-Rendering)|Jonathan Lyons, Christopher Manthei, and Marc Appelsmeier|Azure Remote Rendering just entered public preview.  Learn how ARR renders and streams interactive 3D models with hundreds of millions of polygons to devices like HoloLens 2 in real time.|
 |[Intro to Unreal + MRTK for HoloLens 2](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Intro-to-Unreal--MRTK-for-HoloLens-2)|Summer Wu & Luis Valverde|Unreal Engine support for HoloLens 2 reached production-ready status with the release of UE 4.25 in May! Alongside UE 4.25, in response to the top ask we've been hearing from developers since Unreal's HoloLens support first shipped in preview, our team released the first component of the Mixed Reality Toolkit for Unreal: UX Tools 0.8. In this talk, we'll provide an overview of the features provided in Unreal Engine 4 and MRTK for Unreal, and how to use them to build epic experiences for HoloLens 2.|
