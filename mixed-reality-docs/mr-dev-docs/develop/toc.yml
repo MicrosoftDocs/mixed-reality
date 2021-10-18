@@ -134,12 +134,12 @@
             href: unity/voice-input-in-unity.md
       - name: Text
         href: unity/text-in-unity.md
+      - name: Scene understanding
+        href: unity/scene-understanding-sdk.md        
       - name: Spatial mapping
         href: unity/spatial-mapping-in-unity.md
       - name: Spatial sound
         href: unity/spatial-sound-in-unity.md
-      - name: Scene understanding
-        href: unity/scene-understanding-sdk.md
   - name: Advanced features
     items:
       - name: Photo Video camera
@@ -354,10 +354,8 @@
                 href: native/hands-and-motion-controllers-in-directx.md
               - name: Voice input
                 href: native/voice-input-in-directx.md
-          - name: Spatial Mapping
-            items:
-              - name: Spatial mapping
-                href: native/spatial-mapping-in-directx.md
+          - name: Spatial mapping
+            href: native/spatial-mapping-in-directx.md
       - name: App views 
         items:
         - name: Using XAML with holographic DirectX apps
@@ -372,7 +370,7 @@
         items:
         - name: QR code tracking
           href: native/qr-code-tracking-cs-cpp.md
-  - name: Debugging and testing
+  - name: Debugging and performance
     items:
     - name: Volume rendering
       href: native/volume-rendering.md
