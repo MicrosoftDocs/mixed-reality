@@ -5,7 +5,7 @@ author: qianw211
 ms.author: v-qianwen
 ms.date: 10/18/2021
 ms.topic: article
-keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Kinect
+keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Kinect, MRTK, Azure Object Anchors, Azure Remote Rendering, Azure Spatial Anchors
 ---
 
 # Mixed Reality Dev Days Japan
@@ -49,7 +49,7 @@ This section will be updated frequently as we get more questions from you!
 
 **Q** - Who should attend Mixed Reality Dev Day
 
-**A** - This event is inclusive of everyone who works or plays in the Mixed Reality space. While most of the content being presented is developer-focused, we also know that there's interesting content for a wide variety of roles. Remember to check the schedule for updates to see the kind of content we'll be providing.  
+**A** - This event is inclusive of everyone who works or plays in the Mixed Reality space. While most of the content being presented is developer-focused, we also know there's interesting content for a wide variety of roles. Remember to check the schedule for updates to see the kind of content we'll be providing.  
 
 **Q** - I can't find the event in Teams Live Events
 
@@ -65,8 +65,8 @@ If for some reason you're unable to log in to Teams, check the YouTube channel w
 
 ### Code of Conduct 
 
-Microsoft's mission is to empower every person and every organization on the planet to achieve more. This includes all Microsoft events and gatherings, including on digital platforms, where we seek to create a respectful, friendly, fun, and inclusive experience for all participants.
+Microsoft's mission is to empower every person and every organization on the planet to achieve more. For all Microsoft events and gatherings on digital platforms, we seek to create a respectful, friendly, fun, and inclusive experience for all participants.
 
 We expect all digital event participants to uphold the principles of this Code of Conduct, which covers the main digital event and all related activities. We don't tolerate disruptive or disrespectful behavior, messages, images, or interactions by any party participant, in any form, at any aspect of the program including business and social activities, regardless of location. Microsoft won't tolerate harassment or discrimination based on age, ancestry, color, gender identity or expression, national origin, physical or mental disability, religion, sexual orientation, or any other characteristic protected by applicable local laws, regulations, and ordinances.  
 
-Photography, video, or recording of session content or presentations in any format shared in social channels is prohibited. We encourage everyone to assist in creating a welcoming and safe environment. Please report any concerns, harassing behavior, suspicious, or disruptive activity to Business Conduct Hotline (1-877-320-MSFT or [buscond@microsoft.com](mailto:buscond@microsoft.com)). Microsoft reserves the right to refuse admittance to or remove any person from Mixed Reality Dev Days at any time at its sole discretion. 
+Photography, video, or recording of session content or presentations in any format shared in social channels is prohibited. We encourage everyone to help creating a welcoming and safe environment. Report any concerns, harassing behavior, suspicious, or disruptive activity to Business Conduct Hotline (1-877-320-MSFT or [buscond@microsoft.com](mailto:buscond@microsoft.com)). Microsoft reserves the right to refuse admittance to or remove any person from Mixed Reality Dev Days at any time at its sole discretion. 
