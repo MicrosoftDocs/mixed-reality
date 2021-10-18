@@ -1,9 +1,9 @@
 ---
 title: Mixed Reality Dev Days Japan
 description: Event page for Mixed Reality Dev Days Japan
-author: jessemcculloch 
-ms.author: jemccull
-ms.date: 10/30/2020
+author: qianw211     
+ms.author: v-qianwen
+ms.date: 10/18/2021
 ms.topic: article
 keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Kinect
 ---
@@ -12,51 +12,33 @@ keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Ki
 
 ![Mixed Reality Dev Days](images/MRDD/MRDevDaysJapanBanner.png)
 
-We look forward to having you join us at Mixed Reality Dev Day! Get ready to hear from Microsoft leaders, learn from experts, and connect with the mixed reality developer community. Register for the digital experience today, at no cost to you!
-
-## Important Details
-
-**Date - December 16, 2020**
-
-**Location - Microsoft Teams Live Events**
-
-**Registration - FREE**
-
-**Primary Language - Japanese**
+For Mixed Reality Dev Day, hear from Microsoft leaders, learn from experts, and connect with the mixed reality developer community. 
 
 ## Session Recordings
 
 [Watch all videos - YouTube playlist](https://www.youtube.com/playlist?list=PLQEKit6tfVVIZaQWKTuNMONjPiIKMuJRH)
 
-Thank you for joining Mixed Reality Dev Days Japan. All videos are archived on our YouTube Channel. Looking forward to seeing you again!
+All videos are archived on our YouTube Channel. Looking forward to seeing you again!
 
-## Schedule - Subject to change
-
-**All times are Japan Standard Time (UTC+9)** 
-
-### December 16
-
-**We've been delayed an hour from our original schedule.**
-
-|**Time**|**Session Title**|**Speaker**|**Language**|**Level**|
-|---------|---------|---------|---------|---------|
-|11:00am - 11:50am|[Opening Keynote with special welcome from Alex Kipman](https://youtu.be/MamMO11TnzY)|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA/EN|N/A|
-|11:50am - 12:00pm|**Break (10 min)**||||
-|12:00pm - 12:25pm|*Session 1* [Intro to Mixed Reality](https://youtu.be/HqJy91y8Of0)|Atsushi Suzuki|JA|100|
-|12:30pm - 12:55pm|*Session 2* [Mixed Reality business momentum](https://youtu.be/fJJ9I8UGbio)|Tetsu Muranaka|JA|200|
-|1:00pm - 1:50pm|*Lunch Session* Panel: Interactive free discussion, Q and A, MRTK + Oculus Quest 2 *update later|Madoka Chiyoda + Microsoft MVPs|JA|200|
-|1:50pm - 2:00pm|**Break (10 min)**||||
-|2:00pm - 2:25pm|*Session 3* [Overview of HoloLens 2 development](https://youtu.be/_z0CwAVkbiQ)|Madoka Chiyoda|JA|200|
-|2:30pm - 2:55pm|*Session 4* [MRTK UX components v2.5.0](https://youtu.be/If5R9diyF50)|Yoon Park|JA|300|
-|3:00pm - 3:25pm|*Session 5* [Getting started with the HoloLens 2 and Unreal Engine (MRTK-Unreal)](https://youtu.be/AsAuPx0iz3o)|Cameron Micka|EN|300|
-|3:30pm - 3:55pm|*Session 6* [Making Designing Holograms](https://youtu.be/jHn9yydiRTw)|Daniel Escudero|EN|300|
-|3:55pm - 4:15pm|**Break (20 min)**||||
-|4:15pm - 4:40pm|*Session 7* [Azure Object Anchors](https://youtu.be/dZCb6VJlaaU)|Jesse McCulloch|EN|300|
-|4:45pm - 5:10pm|*Session 8* [Azure Remote Rendering](https://youtu.be/MEhL12WGOW0)|Atsushi Suzuki|JA|300|
-|5:15pm - 5:40pm|*Session 9* [Aligning Hologram and Real World through Azure Spatial Anchors](https://youtu.be/ApBd_jSHg9Q)|Yingguang Mei|EN|300|
-|5:45pm - 6:10pm|*Session 10* [Unity + PiXYZ](https://youtu.be/ggRZRRN36VI)|Shinobu Takahashi (Unity Technologies Japan)|JA|200|
-|6:15pm - 6:40pm|*Session 11* [Azure Kinect DK Deep Dive, Case Study](https://youtu.be/C6gg2jBL3Tw)|Shinji Chiba|JA|400|
-|6:45pm - 7:00pm|Closing|Madoka Chiyoda|JA|N/A|
+| **Session Title**|**Speaker**|**Language**|**Level**|
+|---------|---------|---------|---------|
+|[Keynote speech](https://youtu.be/MamMO11TnzY)|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|JA/EN|N/A|
+|**Break (10 min)**||||
+|*Session 1* [Intro to Mixed Reality](https://youtu.be/HqJy91y8Of0)|Atsushi Suzuki|JA|100|
+|*Session 2* [Mixed Reality business momentum](https://youtu.be/fJJ9I8UGbio)|Tetsu Muranaka|JA|200|
+|*Lunch Session* Panel: Interactive free discussion, Q and A, MRTK + Oculus Quest 2 *update later|Madoka Chiyoda + Microsoft MVPs|JA|200|
+|**Break (10 min)**||||
+|*Session 3* [Overview of HoloLens 2 development](https://youtu.be/_z0CwAVkbiQ)|Madoka Chiyoda|JA|200|
+|*Session 4* [MRTK UX components v2.5.0](https://youtu.be/If5R9diyF50)|Yoon Park|JA|300|
+|*Session 5* [Getting started with the HoloLens 2 and Unreal Engine (MRTK-Unreal)](https://youtu.be/AsAuPx0iz3o)|Cameron Micka|EN|300|
+|*Session 6* [Making Designing Holograms](https://youtu.be/jHn9yydiRTw)|Daniel Escudero|EN|300|
+|**Break (20 min)**||||
+|*Session 7* [Azure Object Anchors](https://youtu.be/dZCb6VJlaaU)|Jesse McCulloch|EN|300|
+|*Session 8* [Azure Remote Rendering](https://youtu.be/MEhL12WGOW0)|Atsushi Suzuki|JA|300|
+|*Session 9* [Aligning Hologram and Real World through Azure Spatial Anchors](https://youtu.be/ApBd_jSHg9Q)|Yingguang Mei|EN|300|
+|*Session 10* [Unity + PiXYZ](https://youtu.be/ggRZRRN36VI)|Shinobu Takahashi (Unity Technologies Japan)|JA|200|
+|*Session 11* [Azure Kinect DK Deep Dive, Case Study](https://youtu.be/C6gg2jBL3Tw)|Shinji Chiba|JA|400|
+|Closing|Madoka Chiyoda|JA|N/A|
 
 #### Contributors (Technical reviewers for the subtitles)
 
@@ -78,17 +60,6 @@ If for some reason you're unable to log in to Teams, check the YouTube channel w
 **Q** - Will the presentation materials and session videos be available after the event?
 
 **A** - We'll be releasing each video session, but because of the time involved, consider joining us live if you can!
-
-<!--  
-**Q** -  
-**A** -  
-  
-**Q** -  
-**A** -  
-  
-**Q** -  
-**A** -  
--->
 
 ## Code of Conduct and Microsoft Standard Event Guidelines
 
