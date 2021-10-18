@@ -21,4 +21,4 @@ To learn more about the technology behind the studio, and how it's brought to li
 
 **Whitepaper:**<br>
 ![Preview of whitepaper](images/siggraph-whitepaper-thumb-200px.png)<br>
-[Download "High-Quality Streamable Free-Viewpoint Video" whitepaper](images/high-quality-streamable-free-viewpoint-video.pdf)
+<!--[Download "High-Quality Streamable Free-Viewpoint Video" whitepaper](images/high-quality-streamable-free-viewpoint-video.pdf) -->
