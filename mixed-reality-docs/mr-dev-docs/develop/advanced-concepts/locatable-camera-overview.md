@@ -30,7 +30,7 @@ HoloLens includes a world-facing camera mounted on the front of the device that 
 
 ### HoloLens 2
 
-* Auto-focus photo/video (PV) camera with auto white balance, auto exposure, and full image-processing pipeline.
+* Autofocus photo/video (PV) camera with auto white balance, auto exposure, and full image-processing pipeline.
 * White Privacy LED facing the world that illuminates whenever the camera is active.
 * HoloLens 2 supports different camera profiles. Learn how to [discover and select camera capabilities](/windows/uwp/audio-video-camera/camera-profiles).
 * The camera supports the following profiles and resolutions (all video modes are 16:9 aspect ratio):
@@ -60,27 +60,27 @@ HoloLens includes a world-facing camera mounted on the front of the device that 
 
 ## Locating the Device Camera in the World
 
-When HoloLens takes photos and videos, the captured frames include the location of the camera in the world and the lens model of the camera. This allows applications to reason about the position of the camera in the real world for augmented imaging scenarios. Developers can creatively roll their own scenarios using their favorite image processing or custom computer vision libraries.
+When HoloLens takes photos and videos, the captured frames include the location of the camera in the world and the lens model of the camera. This information allows applications to reason about the position of the camera in the real world for augmented imaging scenarios. Developers can creatively roll their own scenarios using their favorite image processing or custom computer vision libraries.
 
 "Camera" elsewhere in HoloLens documentation may refer to the "virtual game camera" (the frustum the app renders to). Unless described otherwise, "camera" on this page refers to the real-world RGB color camera.
 
 
 ### Distortion Error
 
-On HoloLens, the video and still image streams are undistorted in the system's image-processing pipeline before the frames are made available to the application (the preview stream contains the original distorted frames). Because only the CameraIntrinsics are made available, applications must assume that image frames represent a perfect pinhole camera.
+On HoloLens, the video and still image streams are undistorted in the system's image-processing pipeline before the frames are made available to the application. The preview stream contains the original distorted frames. Because only the CameraIntrinsics are made available, applications must assume that image frames represent a perfect pinhole camera.
 
-On HoloLens (first-generation), the undistortion function in the image processor may still leave an error of up to 10 pixels when using the CameraIntrinsics in the frame metadata. In many use cases, this error won't matter, but if you're aligning holograms to real-world posters or markers, for example, and you notice a < 10-px offset (roughly 11 mm for holograms positioned two meters away), this distortion error could be the cause.
+On HoloLens (first-generation), the undistortion function in the image processor may still leave an error of up to 10 pixels when using the CameraIntrinsics in the frame metadata. In many use cases, this error won't matter. However, if, for example, you're aligning holograms to real-world posters or markers and you notice a < 10-px offset (roughly 11 mm for holograms positioned two meters away), this distortion error could be the cause.
 
 ## Locatable Camera Usage Scenarios
 
 ### Show a photo or video in the world where it was captured
 
-The Device Camera frames come with a "Camera To World" transform that can be used to show exactly where the device was when the image was taken. For example, you could position a small holographic icon at this location (CameraToWorld.MultiplyPoint(Vector3.zero)) and even draw a little arrow in the direction that the camera was facing (CameraToWorld.MultiplyVector(Vector3.forward)).
+The Device Camera frames come with a "Camera To World" transform that can be used to show exactly where the device was when it captured the image. For example, you could position a small holographic icon at this location (CameraToWorld.MultiplyPoint(Vector3.zero)) and even draw a little arrow in the direction that the camera was facing (CameraToWorld.MultiplyVector(Vector3.forward)).
 <!-- Add some text that explain where these functions come from. -->
 
 ### Tag / Pattern / Poster / Object Tracking
 
-Many mixed reality applications use a recognizable image or visual pattern to create a trackable point in space. This is used to render objects relative to that point or create a known location. Some uses for HoloLens include finding a real-world object tagged with fiducials (for example, devices like tablets that have been set up to communicate with HoloLens via Wifi).
+Many mixed reality applications use a recognizable image or visual pattern to create a trackable point in space. An application can render objects relative to that point or create a known location. A typical use for HoloLens is finding a real-world object that's tagged with fiducials. This might occur, for example, on tablets that have been set up to communicate with HoloLens via Wifi.
 
 You'll need a few things to recognize a visual pattern and place an object in the application's world space:
 1. An image pattern recognition toolkit, such as QR code, AR tags, face finder, circle trackers, OCR, and so on.
@@ -103,7 +103,7 @@ Keeping an interactive application frame-rate is critical, especially when deali
 6. Main Thread: repeat from step 2.
 <!-- Not sure if we should keep this here or move to the c#/c++ doc. -->
 
-Some image marker systems only provide a single-pixel location which equates to a ray of possible locations. (Others provide the full transform, in which case this section isn't needed.) To get to a single 3D location, we can leverage multiple rays and find the final result by their approximate intersection. To do this, you'll need to:
+Some image marker systems only provide a single-pixel location which equates to a ray of possible locations. (Others provide the full transform, in which case this section isn't needed.) To get to a single 3D location, we can calculate multiple rays and find the final result by their approximate intersection. To get this result, you'll need to:
 1. Create a loop that collects multiple camera images.
 2. Find the associated feature points and their world rays.
 
