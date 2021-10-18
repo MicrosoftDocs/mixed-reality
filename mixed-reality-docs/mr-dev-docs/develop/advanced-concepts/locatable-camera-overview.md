@@ -5,7 +5,7 @@ author: cdedmonds
 ms.author: v-vtieto
 ms.date: 09/28/2021
 ms.topic: article
-keywords: camera, hololens, color camera, front facing, hololens 2, cv, computer vision, fiducial, markers, qr code, qr, photo, video, locatable
+keywords: camera, hololens, HoloLens, color camera, front facing, hololens 2, HoloLens 2, cv, computer vision, fiducial, markers, qr code, qr, photo, video, locatable
 ---
 
 # Locatable camera overview
@@ -17,7 +17,7 @@ HoloLens includes a world-facing camera mounted on the front of the device that 
 ### HoloLens (first-generation)
 
 * Fixed focus photo/video (PV) camera with auto white balance, auto exposure, and full image-processing pipeline.
-* White Privacy LED facing the world will illuminate whenever the camera is active.
+* White Privacy LED facing the world that illuminates whenever the camera is active.
 * The camera supports the following modes (all modes are 16:9 aspect ratio) at 30, 24, 20, 15, and 5 fps:
 
   |  Video  |  Preview  |  Still  |  Horizontal Field of View (H-FOV) |  Suggested usage | 
@@ -31,7 +31,7 @@ HoloLens includes a world-facing camera mounted on the front of the device that 
 ### HoloLens 2
 
 * Auto-focus photo/video (PV) camera with auto white balance, auto exposure, and full image-processing pipeline.
-* White Privacy LED facing the world will illuminate whenever the camera is active.
+* White Privacy LED facing the world that illuminates whenever the camera is active.
 * HoloLens 2 supports different camera profiles. Learn how to [discover and select camera capabilities](/windows/uwp/audio-video-camera/camera-profiles).
 * The camera supports the following profiles and resolutions (all video modes are 16:9 aspect ratio):
   
@@ -54,9 +54,9 @@ HoloLens includes a world-facing camera mounted on the front of the device that 
   | Videoconferencing,100 BalancedVideoAndPhoto,120 | 424x240   |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
 
 > [!NOTE]
-> Customers can leverage [mixed reality capture](/hololens/holographic-photos-and-videos) to take videos or photos of your app, which include holograms and video stabilization.
+> Customers can leverage [mixed reality capture](/hololens/holographic-photos-and-videos) to take videos or photos of your app that include holograms and employ video stabilization.
 >
-> If you want the content your users capture to look as good as possible, there are some things you should consider. You can also enable (and customize) mixed reality capture from directly within your app. Learn more at [mixed reality capture for developers](mixed-reality-capture-overview.md).
+> If you want the content of your user's capture to look as good as possible, there are some things you should consider. You can also enable (and customize) mixed reality capture from directly within your app. Learn more at [mixed reality capture for developers](mixed-reality-capture-overview.md).
 
 ## Locating the Device Camera in the World
 
@@ -69,7 +69,7 @@ When HoloLens takes photos and videos, the captured frames include the location 
 
 On HoloLens, the video and still image streams are undistorted in the system's image-processing pipeline before the frames are made available to the application (the preview stream contains the original distorted frames). Because only the CameraIntrinsics are made available, applications must assume that image frames represent a perfect pinhole camera.
 
-On HoloLens (first-generation), the undistortion function in the image processor may still leave an error of up to 10 pixels when using the CameraIntrinsics in the frame metadata. In many use cases, this error won't matter, but if you're aligning holograms to real world posters/markers, for example, and you notice a < 10-px offset (roughly 11 mm for holograms positioned 2 meters away), this distortion error could be the cause. 
+On HoloLens (first-generation), the undistortion function in the image processor may still leave an error of up to 10 pixels when using the CameraIntrinsics in the frame metadata. In many use cases, this error won't matter, but if you're aligning holograms to real-world posters or markers, for example, and you notice a < 10-px offset (roughly 11 mm for holograms positioned two meters away), this distortion error could be the cause.
 
 ## Locatable Camera Usage Scenarios
 
@@ -80,12 +80,12 @@ The Device Camera frames come with a "Camera To World" transform that can be use
 
 ### Tag / Pattern / Poster / Object Tracking
 
-Many mixed reality applications use a recognizable image or visual pattern to create a trackable point in space. This is then used to render objects relative to that point or create a known location. Some uses for HoloLens include finding a real world object tagged with fiducials (e.g., a TV monitor with a QR code), placing holograms over fiducials, and visually pairing with non-HoloLens devices like tablets that have been set up to communicate with HoloLens via Wi-Fi.
+Many mixed reality applications use a recognizable image or visual pattern to create a trackable point in space. This is used to render objects relative to that point or create a known location. Some uses for HoloLens include finding a real-world object tagged with fiducials (for example, devices like tablets that have been set up to communicate with HoloLens via Wifi).
 
-You'll need a few things to recognize a visual pattern and place an object in the applications world space:
-1. An image pattern recognition toolkit, such as QR code, AR tags, face finder, circle trackers, OCR, etc.
+You'll need a few things to recognize a visual pattern and place an object in the application's world space:
+1. An image pattern recognition toolkit, such as QR code, AR tags, face finder, circle trackers, OCR, and so on.
 2. Collect image frames at runtime and pass them to the recognition layer.
-3. Unproject their image locations back into world positions, or likely world rays. 
+3. Unproject their image locations back into world positions or likely world rays. 
 4. Position your virtual models over these world locations.
 
 Some important image-processing links:
@@ -103,14 +103,14 @@ Keeping an interactive application frame-rate is critical, especially when deali
 6. Main Thread: repeat from step 2.
 <!-- Not sure if we should keep this here or move to the c#/c++ doc. -->
 
-Some image marker systems only provide a single pixel location (others provide the full transform in which case this section won't be needed), which equates to a ray of possible locations. To get to a single 3D location, we can then leverage multiple rays and find the final result by their approximate intersection. To do this, you'll need to:
-1. Get a loop going that collects multiple camera images.
+Some image marker systems only provide a single-pixel location which equates to a ray of possible locations. (Others provide the full transform, in which case this section isn't needed.) To get to a single 3D location, we can leverage multiple rays and find the final result by their approximate intersection. To do this, you'll need to:
+1. Create a loop that collects multiple camera images.
 2. Find the associated feature points and their world rays.
 
 Given two or more tracked tag locations, you can position a modeled scene to fit the user's current scenario. If you can't assume gravity, then you'll need three tag locations. In many cases, we use a color scheme where white spheres represent real-time tracked tag locations, and blue spheres represent modeled tag locations. This allows the user to visually gauge the alignment quality. We assume the following setup in all our applications:
-* Two or more modeled tag locations
-* One 'calibration space', which in the scene is the parent of the tags
-* Camera feature identifier
+* Two or more modeled tag locations.
+* One 'calibration space', which in the scene is the parent of the tags.
+* Camera feature identifier.
 * Behavior, which moves the calibration space to align the modeled tags with the real-time tags (we're careful to move the parent space, not the modeled markers themselves, because other connect is positions relative to them).
 
 ### Track or identify tagged stationary or moving real-world objects/faces using LEDs or other recognizer libraries
