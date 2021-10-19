@@ -47,11 +47,11 @@ keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit,
 * Depends on Unity's 1.2.3 OpenXR plugin.
 * Updated Holographic Remoting runtime to 2.6.0
 * Removed the "Holographic Remoting for Play Mode" feature group from Unity settings UX and kept the feature independent.
-* Fixed a bug where build process cannot find the app.cpp when building a XAML type unity project.
+* Fixed a bug where build process cannot find the app.cpp when building a XAML-type Unity project.
 
 ## 1.0.0 - 2021-06-18
 
-* Fixed a bug where a the XRAnchorSubsystem was always started on app start regardless ARAnchorManager's present.
+* Fixed a bug where the XRAnchorSubsystem was always started on app start regardless ARAnchorManager's present.
 * Fixed a bug where the reprojection mode didn't work properly.
 
 ## 1.0.0-preview.2 - 2021-06-14
@@ -116,4 +116,4 @@ keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit,
 * Fixed a bug where hand tracking was not located correctly when the scene origin was at floor level.
 * Fixed a bug where hand mesh tracking disappear after leaving and loading a new scene.
 * Fixed a bug where locatable camera provider didn’t properly clean up.
-* Revised the namespace of XRAnchorStore API into Microsoft.MixedReality.OpenXR.
+* Changed the namespace of XRAnchorStore API to Microsoft.MixedReality.OpenXR.
