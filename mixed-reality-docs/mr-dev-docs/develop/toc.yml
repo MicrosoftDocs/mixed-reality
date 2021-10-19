@@ -162,7 +162,7 @@
         href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
       - name: Mixed Reality native interop in Unity
         href: unity/unity-xrdevice-advanced.md
-      - name: Holographic Remoting remote app
+      - name: Use PC resources to power your app
         href: unity/use-pc-resources.md        
       - name: Using Vuforia
         href: unity/vuforia-development-overview.md
@@ -194,7 +194,7 @@
         href: unity/managed-debugging-with-unity-il2cpp.md
       - name: Recommended settings for Unity
         href: unity/recommended-settings-for-unity.md
-      - name: Holographic Remoting for Play Mode
+      - name: Preview and debug your app with Holographic Remoting
         href: unity/preview-and-debug-your-app.md
   - name: Visual Studio solutions
     items:
