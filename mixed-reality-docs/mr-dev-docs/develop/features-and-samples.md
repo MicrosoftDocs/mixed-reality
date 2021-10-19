@@ -3,7 +3,7 @@ title: Mixed reality feature samples and apps
 description: Stay up to date with all the available Microsoft sample apps and mixed reality features samples for HoloLens.
 author: qianw211
 ms.author: v-qianwen
-ms.date: 9/23/2021
+ms.date: 10/19/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, learn, samples, MRTK, research mode, HoloLens 2, qr codes, WebRTC, mixed reality capture, holographic remoting, UX Tools
 ms.localizationpriority: high
@@ -28,7 +28,7 @@ For each of the developer scenarios listed below, there are feature samples that
 
 | Scenario | Feature sample | Engine | Description |
 | --- | --- | ---- | --- |
-| [**Build basic OpenXR scenarios**](#build-basic-openxr-scenarios) | [OpenXR with Unity samples](#build-basic-openxr-scenarios) | Unity C# | Get started with cross-platform developer tools. |
+| [**Build basic unity mixed reality scenarios**](#build-basic-openxr-scenarios) | [OpenXR with Unity samples](#build-basic-openxr-scenarios) | Unity C# | Get started with cross-platform developer tools using latest Unity 2020.LTS and OpenXR plugin. |
 | **Anchoring Strategies** | Local anchor |  | Persist and share spatial anchors across application sessions and across devices. See the [Spatial anchors](/windows/mixed-reality/design/spatial-anchors) article. |
 |    | [Azure Spatial Anchors samples](https://github.com/Azure/azure-spatial-anchors-samples) |  | Build spatially aware mixed reality applications with the essential capabilities of [Azure Spatial Anchors](/azure/spatial-anchors/overview). |
 | | [QR Codes](#qr-codes) | Unity C# | Detect QR Codes in the environment. |
@@ -55,13 +55,13 @@ For each of the developer scenarios listed below, there are feature samples that
 
 ### Build basic OpenXR scenarios
 
-If you're new to mixed reality cross-platform development, these samples will help you to getting started.
+If you're new to building basic mixed reality scenarios, these samples will help you to getting started.
 
 For developers targeting Unity 2020 to build HoloLens 2 or mixed reality applications, the OpenXR Plugin can be used instead of the Windows XR Plugin for better cross-platform compatibilities. The Mixed Reality OpenXR Plugin also works well with the latest version of the Mixed Reality Toolkit (2.7.x).
 
 | Reference article | Sample | Platform | Description | 
 | --- | --- | --- | --- |
-| [Using the OpenXR plugin](./unity/xr-project-setup.md) | [Mixed Reality OpenXR with Unity samples](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) | Unity C# | These sample projects showcase how to build Unity applications for HoloLens 2 or Mixed Reality headsets using the Mixed Reality OpenXR plugin. |
+| [Using the OpenXR plugin](./unity/xr-project-setup.md) | [Mixed Reality OpenXR with Unity samples](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) | Unity C# | These sample projects showcase how to build Unity applications for HoloLens 2 or Mixed Reality headsets using the Mixed Reality OpenXR plugin. <br> <br> The following sample scenarios are covered: <br> <br> <ul> <li> [Using hand tracking joints and mesh inputs in Unity](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples#sample-for-hand-tracking) </li> <li> [Using anchor and anchor persistence](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples#sample-for-anchors-and-anchor-persistence) </li> <li> [Using ARPlaneManager on HoloLens2](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples#sample-for-arfoundation-compatibility) </li> <li> [Using ARRaycastManager on HoloLens2](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples#sample-for-arfoundation-compatibility) </li> <li> [Using eye tracking on HoloLens2](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples#sample-for-eye-tracking) </li> <li> [Using locatable camera in unity](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples#sample-for-locatable-camera)  </li> |
 | See [sample readme](https://github.com/jessemcculloch/UnityOpenXRMRTKBase#unityopenxrmrtkbase) | [OpenXR MRTK Base Unity project](https://github.com/microsoft/UnityOpenXRMRTKBase) | Unity C# | This repo contains a Unity project that is set up with the Microsoft Mixed Reality Toolkit Foundations and Standard Assets packages and the Microsoft OpenXR Plugin package. |
 | [What is MRTK](/windows/mixed-reality/mrtk-unity/) | [Using Unity 2020.3 and MRTK 2.7.2](https://github.com/microsoft/MixedRealityToolkit-Unity#example-scenes) | Unity C# | MRTK-Unity is a Microsoft-driven project that provides a set of components and features that are used to accelerate cross-platform MR app development in Unity. |
 | See [sample readme](https://github.com/maluoi/openxr-explorer#openxr-explorer) | [OpenXR Explorer](https://github.com/maluoi/openxr-explorer#msdynttrid=udu2MjGd1z293SGMmgAul0BalrUKvy4iwBnBrc3lEn4) | C++, Windows, Linux, OpenXR | OpenXR Explorer is a handy debug tool for OpenXR developers. It allows for easy switching between OpenXR runtimes, shows lists of the runtime's supported extensions, and allows for inspection of common properties and enumerations, with direct links to relevant parts of the OpenXR specification! |
@@ -114,7 +114,7 @@ HoloLens 2 can detect QR codes in the environment around the headset, establishi
 
 | Reference article | Sample |
 | --- | --- |
-| [QR codes](platform-capabilities-and-apis/qr-code-tracking.md) | [QR code tracking in Unity](https://github.com/microsoft/MixedReality-QRCode-Sample) |
+| [QR codes](advanced-concepts/qr-code-tracking-overview.md) | [QR code tracking in Unity](https://github.com/microsoft/MixedReality-QRCode-Sample) |
 
 #### Poster tracker sample
 
@@ -159,8 +159,8 @@ Research Mode was introduced in the first-generation HoloLens to give access to 
 
 | Reference article | Sample application |
 | --- | --- |
-| [Research Mode](platform-capabilities-and-apis/research-mode.md) | [HoloLens (first gen)](https://github.com/microsoft/HoloLensForCV/tree/master/Samples) |
-| [Research Mode](platform-capabilities-and-apis/research-mode.md) | [HoloLens 2](https://github.com/microsoft/HoloLens2ForCV/tree/main/Samples) |
+| [Research Mode](advanced-concepts/research-mode.md) | [HoloLens (first gen)](https://github.com/microsoft/HoloLensForCV/tree/master/Samples) |
+| [Research Mode](advanced-concepts/research-mode.md) | [HoloLens 2](https://github.com/microsoft/HoloLens2ForCV/tree/main/Samples) |
 
 
 ### Holographic Remoting
