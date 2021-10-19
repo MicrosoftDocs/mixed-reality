@@ -28,7 +28,7 @@ For each of the developer scenarios listed below, there are feature samples that
 
 | Scenario | Feature sample | Engine | Description |
 | --- | --- | ---- | --- |
-| [**Build basic unity mixed reality scenarios**](#build-basic-openxr-scenarios) | [OpenXR with Unity samples](#build-basic-openxr-scenarios) | Unity C# | Get started with cross-platform developer tools using latest Unity 2020.LTS and OpenXR plugin. |
+| [**Build basic unity mixed reality scenarios**](#build-basic-openxr-scenarios) | [OpenXR with Unity samples](#build-basic-openxr-scenarios) | Unity C# | Get started with cross-platform developer tools using the latest Unity 2020.LTS and OpenXR plugin. |
 | **Anchoring Strategies** | Local anchor |  | Persist and share spatial anchors across application sessions and across devices. See the [Spatial anchors](/windows/mixed-reality/design/spatial-anchors) article. |
 |    | [Azure Spatial Anchors samples](https://github.com/Azure/azure-spatial-anchors-samples) |  | Build spatially aware mixed reality applications with the essential capabilities of [Azure Spatial Anchors](/azure/spatial-anchors/overview). |
 | | [QR Codes](#qr-codes) | Unity C# | Detect QR Codes in the environment. |
