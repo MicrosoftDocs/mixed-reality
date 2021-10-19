@@ -101,7 +101,7 @@ keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit,
 ## 0.9.1 - 2021-04-20
 
 * Depends on Unity's 1.1.1 OpenXR Plugin.
-* Added support for Holographic Remoting application(https://aka.ms/openxr-unity-app-remoting) for UWP platform.
+* Added support for Holographic Remoting application (https://aka.ms/openxr-unity-app-remoting) for UWP platform.
 * Fix UnityException where XRAnchorStore was trying to get a settings instance outside the main thread.
 
 ## 0.9.0 - 2021-03-29
