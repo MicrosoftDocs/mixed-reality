@@ -163,7 +163,8 @@
       - name: Mixed Reality native interop in Unity
         href: unity/unity-xrdevice-advanced.md
       - name: Use PC resources to power your app
-        href: unity/use-pc-resources.md        
+        href: unity/use-pc-resources.md 
+        displayname: Holographic Remoting       
       - name: Using Vuforia
         href: unity/vuforia-development-overview.md
   - name: Sample apps
@@ -196,6 +197,7 @@
         href: unity/recommended-settings-for-unity.md
       - name: Preview and debug your app with Holographic Remoting
         href: unity/preview-and-debug-your-app.md
+        displayname: Holographic Remoting       
   - name: Visual Studio solutions
     items:
       - name: Exporting and building a Unity Visual Studio solution
