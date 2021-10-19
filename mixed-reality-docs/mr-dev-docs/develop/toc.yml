@@ -132,7 +132,7 @@
         href: unity/shared-experiences-in-unity.md
       - name: Interactions
         items:
-          - name: Hand and Eye tracking
+          - name: Hand and eye tracking
             href: unity/hand-eye-in-unity.md
           - name: Motion controllers
             href: unity/motion-controllers-in-unity.md
