@@ -68,11 +68,11 @@ If you don't use Visual Studio for your development environment, you can open **
 
 ### Run in the HoloLens Emulator
 
-Now that your UWP app targets "Windows.Universal", let's build your app and run it in the [HoloLens Emulator](../platform-capabilities-and-apis/using-the-hololens-emulator.md).
+Now that your UWP app targets "Windows.Universal", let's build your app and run it in the [HoloLens Emulator](../advanced-concepts/using-the-hololens-emulator.md).
 * Make sure you're [installed the HoloLens Emulator](../install-the-tools.md).
 * In Visual Studio, select the **x86** build configuration for your app
 
-  ![x86 build configuration in Visual Studio](../platform-capabilities-and-apis/images/x86setting.png)<br>
+  ![x86 build configuration in Visual Studio](../advanced-concepts/images/x86setting.png)<br>
 * Select **HoloLens Emulator** in the deployment target drop-down menu
 
   ![HoloLens Emulator in deployment target list](images/deployemulator-500px.png)<br>
@@ -149,7 +149,7 @@ The [app model](../../design/app-model.md) for mixed reality is designed to use 
 
 ### Test your 2D app's design
 
-It's important to test your app to make sure the text is readable, the buttons are targetable, and the overall app looks correct. You can [test](../platform-capabilities-and-apis/testing-your-app-on-hololens.md) on a desktop headset, a HoloLens, an emulator, or a touch device with resolution set to 1280x720 @150%.
+It's important to test your app to make sure the text is readable, the buttons are targetable, and the overall app looks correct. You can [test](../advanced-concepts/testing-your-app-on-hololens.md) on a desktop headset, a HoloLens, an emulator, or a touch device with resolution set to 1280x720 @150%.
 
 ## New input possibilities
 
@@ -176,4 +176,4 @@ Once your app is up and running, package your app to [submit it to the Microsoft
 * [Motion controllers](../../design/motion-controllers.md)
 * [Voice input](../../design/voice-input.md)
 * [Submitting an app to the Microsoft Store](../../distribute/submitting-an-app-to-the-microsoft-store.md)
-* [Using the HoloLens emulator](../platform-capabilities-and-apis/using-the-hololens-emulator.md)
+* [Using the HoloLens emulator](../advanced-concepts/using-the-hololens-emulator.md)

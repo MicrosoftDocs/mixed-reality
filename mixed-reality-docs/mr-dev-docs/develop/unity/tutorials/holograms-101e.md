@@ -111,7 +111,7 @@ In this chapter, we'll setup our first Unity project and step through the build 
 * Using the top toolbar in Visual Studio, change the target from Debug to **Release** and from ARM to **X86**.
   * Click on the arrow next to the Device button, and select **HoloLens Emulator**.
   * Click **Debug -> Start Without debugging** or press **Ctrl + F5**.
-  * After some time the emulator will start with the Origami project. When first launching the [emulator](../../platform-capabilities-and-apis/using-the-hololens-emulator.md), it can take as long as 15 minutes for the emulator to start up. Once it starts, do not close it.
+  * After some time the emulator will start with the Origami project. When first launching the [emulator](../../advanced-concepts/using-the-hololens-emulator.md), it can take as long as 15 minutes for the emulator to start up. Once it starts, do not close it.
 
 ## Chapter 2 - Gaze
 

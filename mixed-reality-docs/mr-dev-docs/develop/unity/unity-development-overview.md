@@ -72,9 +72,9 @@ Other key features that play a role in mixed reality applications are available 
 
 Once you've got your holographic Unity project ready for testing, your next step is to export and build a Unity Visual Studio solution. With that VS solution in hand, you can run your application in one of three ways on a real or simulated device. By the end of this section, you'll be able to deploy your application on whichever device or emulator fits your development needs.
 
-* [HoloLens or Windows Mixed Reality immersive headset](../platform-capabilities-and-apis/using-visual-studio.md)
-* [HoloLens emulator](../platform-capabilities-and-apis/using-the-hololens-emulator.md)
-* [Windows Mixed Reality immersive headset simulator](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
+* [HoloLens or Windows Mixed Reality immersive headset](../advanced-concepts/using-visual-studio.md)
+* [HoloLens emulator](../advanced-concepts/using-the-hololens-emulator.md)
+* [Windows Mixed Reality immersive headset simulator](../advanced-concepts/using-the-windows-mixed-reality-simulator.md)
 
 ## 5. Adding services
 
@@ -98,7 +98,7 @@ If you have existing apps that you'd like to port over, the articles listed belo
 
 * [HoloToolkit/MRTK to MRTK v2](../porting-apps/porting-hl1-hl2.md)
 * [Porting guide for immersive apps](../porting-apps/porting-guides.md)
-* [Input porting guide](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
+* [Input porting guide](../advanced-concepts/using-the-windows-mixed-reality-simulator.md)
 
 ### Tutorials
 

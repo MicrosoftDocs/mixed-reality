@@ -2,7 +2,7 @@
 title: Recommended settings for Unity
 description: Learn about Unity's performance and publishing behaviors specific to mixed reality apps that can be toggled through project settings.
 author: hferrone
-ms.author: v-hferrone
+ms.author: v-vtieto
 ms.date: 07/29/2020
 ms.topic: article
 keywords: unity, settings, mixed reality, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset, performance, quality settings, lighting settings, depth buffer, xr, tracking loss
@@ -165,5 +165,5 @@ The applicable capabilities for enabling the commonly used APIs for Holographic 
 ## See also
 
 * [Unity development overview](unity-development-overview.md)
-* [Understanding performance for Mixed Reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
+* [Understanding performance for Mixed Reality](../advanced-concepts/understanding-performance-for-mixed-reality.md)
 * [Performance recommendations for Unity](performance-recommendations-for-unity.md)

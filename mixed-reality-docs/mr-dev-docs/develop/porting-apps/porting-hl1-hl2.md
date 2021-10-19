@@ -138,4 +138,4 @@ Every application and scenario are different, and we’ll continue to refine and
 * [MRTK - Documentation home](/windows/mixed-reality/mrtk-unity)
 * [Porting from HoloToolkit/MRTK to MRTK version 2](/windows/mixed-reality/mrtk-unity/updates-deployment/htk-to-mrtk-porting-guide)
 * [Recommended settings for Unity](../unity/recommended-settings-for-unity.md)
-* [Understanding performance for Mixed Reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
+* [Understanding performance for Mixed Reality](../advanced-concepts/understanding-performance-for-mixed-reality.md)

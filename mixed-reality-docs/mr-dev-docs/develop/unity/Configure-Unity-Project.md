@@ -104,7 +104,7 @@ HoloLens has a mobile-class GPU. If your app is targeting HoloLens, you'll want 
 
 ### Unity camera settings
 
-With **Virtual Reality Supported** checked, the [Unity Camera](camera-in-unity.md) component handles [head tracking and stereoscopic rendering](../platform-capabilities-and-apis/rendering.md). That means there's no need for you to replace the Main Camera object with a custom camera.
+With **Virtual Reality Supported** checked, the [Unity Camera](camera-in-unity.md) component handles [head tracking and stereoscopic rendering](../advanced-concepts/rendering-overview.md). That means there's no need for you to replace the Main Camera object with a custom camera.
 
 If your app is targeting HoloLens specifically, you need to change a few settings to optimize for the device's transparent displays. These settings allow your holographic content to show through to the physical world:
 
@@ -126,8 +126,8 @@ Now that your project is ready, you can start developing your Mixed Reality expe
 
 * Add [core building blocks](unity-development-overview.md#2-core-building-blocks)
 * Check out available [platform capabilities and APIs](unity-development-overview.md#3-advanced-features)
-* Learn how to [deploy your app](../platform-capabilities-and-apis/using-visual-studio.md#)
-* Use the [Mixed Reality simulator](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
+* Learn how to [deploy your app](../advanced-concepts/using-visual-studio.md#)
+* Use the [Mixed Reality simulator](../advanced-concepts/using-the-windows-mixed-reality-simulator.md)
 
 ## See also
 * [Install the tools](../install-the-tools.md)

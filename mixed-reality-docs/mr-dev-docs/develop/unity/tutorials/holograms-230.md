@@ -40,7 +40,7 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 * A Windows 10 PC configured with the correct [tools installed](../../../develop/install-the-tools.md).
 * Some basic C# programming ability.
 * You should have completed [MR Basics 101](../../../develop/unity/tutorials/holograms-101.md).
-* A HoloLens device [configured for development](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).
+* A HoloLens device [configured for development](../../../develop/advanced-concepts/using-visual-studio.md#enabling-developer-mode).
 
 ### Project files
 

@@ -120,7 +120,7 @@ A: The origin of the playspace is determined by the Room Setup experience, more 
 
 **Q: I’m deploying a multi-player experience in at my venue. Is that supported on Windows Mixed Reality?**
 
-A: If you opt into the Windows 20H1 or later build via our Insider program, you can access a new interface for map sharing. This new functionality is available via the [Map Manager](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#map-manager) interface of the Windows Device portal. To use this tool, follow the steps below:
+A: If you opt into the Windows 20H1 or later build via our Insider program, you can access a new interface for map sharing. This new functionality is available via the [Map Manager](../develop/advanced-concepts/using-the-windows-device-portal.md#map-manager) interface of the Windows Device portal. To use this tool, follow the steps below:
 * Make sure you're opted into 20H1 or later - after September 2019, this means using our Insider program
 * Enable the Windows Device Portal (WDP) using these [instructions](/windows/uwp/debug-test-perf/device-portal-desktop)
 * Plug in a Windows Mixed Reality HMD that you wish to either download an existing map from or import a new map
@@ -131,7 +131,7 @@ A: If you opt into the Windows 20H1 or later build via our Insider program, you 
     * You can use "Import" to enable the system to use that map for this HMD on this machine.
 
 > [!NOTE] 
-> Previously, it was possible to use the Spatial Data Packager Tool, however, that tool was originally released as unsupported and is now officially deprecated and no longer functional on 20H1. Instead, please use the inbox [Map Manager](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#map-manager) tool as described above. 
+> Previously, it was possible to use the Spatial Data Packager Tool, however, that tool was originally released as unsupported and is now officially deprecated and no longer functional on 20H1. Instead, please use the inbox [Map Manager](../develop/advanced-concepts/using-the-windows-device-portal.md#map-manager) tool as described above. 
 
 ### TRACKING
 

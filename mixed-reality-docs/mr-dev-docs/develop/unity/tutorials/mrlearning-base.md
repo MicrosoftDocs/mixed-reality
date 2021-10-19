@@ -1,6 +1,6 @@
 ---
 title: Tutorial overview and objectives
-description: Complete this course to learn how to implement Azure Face Recognition within a mixed reality application.
+description: Overview for course that teaches you how to implement Azure Face Recognition within a mixed reality application.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
@@ -41,7 +41,7 @@ ms.localizationpriority: high
 * A Windows 10 PC configured with the correct [tools installed](../../install-the-tools.md)
 * Windows 10 SDK 10.0.18362.0 or later
 * Some basic C# programming ability
-* A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
+* A HoloLens 2 device [configured for development](../../advanced-concepts/using-visual-studio.md#enabling-developer-mode)
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2019.2.X installed and the Universal Windows Platform Build Support module added
 
 > [!IMPORTANT]
