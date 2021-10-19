@@ -38,7 +38,7 @@ The tutorial will take approximately 1 hour to complete.
 ### Prerequisites
 
 * A Windows 10 PC configured with the correct [tools installed](../../install-the-tools.md).
-* A HoloLens device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).
+* A HoloLens device [configured for development](../../advanced-concepts/using-visual-studio.md#enabling-developer-mode).
 
 ### Project files
 
@@ -117,7 +117,7 @@ In this chapter, we'll setup our first Unity project and step through the build 
   * Leave the **Authentication Mode** set to **Universal**.
   * Click **Select**
 
-* Click **Debug > Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](../../platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
+* Click **Debug > Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](../../advanced-concepts/using-visual-studio.md#pairing-your-device).
 
 * The Origami project will now build, deploy to your HoloLens, and then run.
 * Put on your HoloLens and look around to see your new holograms.

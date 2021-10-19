@@ -3,7 +3,7 @@ title: Use PC resources to power your app with Holographic Remoting
 description: Use PC resources, instead of relying on the on-board processing power of the HoloLens, to power your app with Holographic Remoting
 author: vtieto
 ms.author: v-vtieto
-ms.date: 08/12/2021
+ms.date: 10/05/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, augmented reality, virtual reality, mixed reality headsets, learn, tutorial, getting started, holographic remoting, desktop, preview, debug
 ---
@@ -16,13 +16,13 @@ This article explains the following use case for Holographic Remoting:
 
 This type of Holographic Remoting is also available for Windows Mixed Reality (WMR) immersive headsets. This could be useful if, for example, your WMR headset is connected to a backpack PC and you wish to stream your app from a more powerful PC to the backpack PC.
 
-To learn more about Holographic Remoting, see [Holographic Remoting overview](../platform-capabilities-and-apis/holographic-remoting-overview.md)
+To learn more about Holographic Remoting, see [Holographic Remoting overview](../advanced-concepts/holographic-remoting-overview.md)
 
 Note that you can also use Holographic Remoting if [you want to preview and debug your app during the development process](preview-and-debug-your-app.md).
 
-## Set up Holographic Remoting
+## Set up the Holographic Remoting Player app
 
-To use Holographic Remoting, you need to install the [Holographic Remoting Player](../platform-capabilities-and-apis/holographic-remoting-player.md) app from the Microsoft Store on your HoloLens 2. As explained below, after you download and run the app, you'll see the version number and IP address to connect to. **You'll need v2.4 or later in order to work with the OpenXR plugin**.
+To use Holographic Remoting, you need to install the [Holographic Remoting Player](../advanced-concepts/holographic-remoting-player.md) app from the Microsoft Store on your HoloLens 2. As explained below, after you download and run the app, you'll see the version number and IP address to connect to. **You'll need v2.4 or later in order to work with the OpenXR plugin**.
 
 Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more details in the Holographic Remoting Player article linked above.
 
@@ -49,7 +49,7 @@ Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more 
 
 ## Migrate from previous Holographic Remoting APIs
 
-To learn more about Holographic Remoting, see [Holographic Remoting overview](../platform-capabilities-and-apis/holographic-remoting-overview.md)
+To learn more about Holographic Remoting, see [Holographic Remoting overview](../advanced-concepts/holographic-remoting-overview.md)
 
 #### UnityEngine.XR.WSA.HolographicRemoting
 
@@ -73,7 +73,7 @@ From the sample code on [Unity's docs](https://docs.unity3d.com/2018.4/Documenta
 
 ## See Also
 
-* [Holographic Remoting Player](../platform-capabilities-and-apis/holographic-remoting-player.md)
+* [Holographic Remoting Player](../advanced-concepts/holographic-remoting-player.md)
 * [Preview and debug your app with Holographic Remoting and Play mode](preview-and-debug-your-app.md)
 * [Tutorial: Getting started with PC Holographic Remoting](../unity/tutorials/mr-learning-pc-holographic-remoting-01.md)
 * [Tutorial: Creating a Holographic Remoting PC application](../unity/tutorials/mr-learning-pc-holographic-remoting-02.md)

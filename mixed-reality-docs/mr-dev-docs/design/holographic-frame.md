@@ -72,9 +72,7 @@ If you'd like to see Head and Eye Tracking design concepts in action, check out 
 
 ## Performance
 
-Proper use of the holographic frame is fundamental to the [performance quality](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) experiences. A common technical (and usability) challenge is overloading the user's frame with digital content, causing rendering performance to degrade. Consider instead using the full space around the user to arrange digital content, using the techniques described above, to lessen the burden of rendering and ensure an optimal display quality.
-
-Digital content within the holographic frame of the HoloLens can also be paired with the [stabilization plane](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md) for optimal performance and [hologram stability](../develop/platform-capabilities-and-apis/hologram-stability.md).
+Proper use of the holographic frame is fundamental to the [performance quality](../develop/advanced-concepts/understanding-performance-for-mixed-reality.md) experiences. A common technical (and usability) challenge is overloading the user's frame with digital content, causing rendering performance to degrade. Consider instead using the full space around the user to arrange digital content, using the techniques described above, to lessen the burden of rendering and ensure an optimal display quality.
 
 <br>
 
@@ -145,4 +143,4 @@ The realistic representation of Buzz provided a powerful focal point, complete w
 * [Comfort](comfort.md)
 * [Scale](scale.md)
 * [Head-gaze and dwell](gaze-and-dwell.md)
-* [Hologram stability](../develop/platform-capabilities-and-apis/hologram-stability.md)
+* [Hologram stability](../develop/advanced-concepts/hologram-stability.md)
