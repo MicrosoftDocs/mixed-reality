@@ -37,7 +37,7 @@ In this tutorial, we will:
 ### Prerequisites
 
 * A Windows 10 PC configured with the correct [tools installed](../../../develop/install-the-tools.md) with Internet access.
-* At least two HoloLens devices [configured for development](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).
+* At least two HoloLens devices [configured for development](../../../develop/advanced-concepts/using-visual-studio.md#enabling-developer-mode).
 
 ### Project files
 
@@ -102,7 +102,7 @@ In this chapter, we'll setup our first Unity project and step through the build 
     * Set the **Address** to the name or IP address of your HoloLens. If you do not know your device IP address, look in **Settings > Network & Internet > Advanced Options** or ask Cortana **"Hey Cortana, What's my IP address?"**
     * Leave the **Authentication Mode** set to **Universal**.
     * Click **Select**
-* Click **Debug > Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
+* Click **Debug > Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](../../../develop/advanced-concepts/using-visual-studio.md#pairing-your-device).
 * Put on your HoloLens and find the EnergyHub hologram.
 
 ## Chapter 2 - Interaction

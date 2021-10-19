@@ -49,7 +49,7 @@ HoloLens lets you view **holograms**, which are objects made of light and sound 
 
 ### Light
 
-The holograms that HoloLens [renders](../develop/platform-capabilities-and-apis/rendering.md) appear in the holographic frame directly in front of users' eyes. Holograms add light to your world, which means that you see both the light from the display and the light from your surrounding world. Since HoloLens uses an additive display that adds light, the black color will be rendered transparent. 
+The holograms that HoloLens [renders](../develop/advanced-concepts/rendering-overview.md) appear in the holographic frame directly in front of users' eyes. Holograms add light to your world, which means that you see both the light from the display and the light from your surrounding world. Since HoloLens uses an additive display that adds light, the black color will be rendered transparent. 
 
 Holograms can have very different appearances and behaviors. Some are realistic and solid, and others are cartoonish and ethereal. You can use holograms to highlight features in your environment or use them as elements in your app's user interface.
 

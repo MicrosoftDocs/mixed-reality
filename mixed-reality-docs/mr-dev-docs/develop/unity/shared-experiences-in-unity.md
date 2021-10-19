@@ -44,11 +44,11 @@ If you're following the Unity development journey we've laid out, you're in the 
 Or jump directly to deploying your app on a device or emulator:
 
 > [!div class="nextstepaction"]
-> [Deploy to HoloLens or Windows Mixed Reality immersive headsets](../platform-capabilities-and-apis/using-visual-studio.md)
+> [Deploy to HoloLens or Windows Mixed Reality immersive headsets](../advanced-concepts/using-visual-studio.md)
 
 You can always go back to the [Unity development checkpoints](unity-development-overview.md#3-advanced-features) at any time.
 
 ## See also
-* [Shared experiences in mixed reality](../platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)
+* [Shared experiences in mixed reality](../../design/shared-experiences-in-mixed-reality.md)
 * <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * <a href="/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Azure Spatial Anchors SDK for Unity</a>
