@@ -7,6 +7,7 @@
 | `-HoloLensRemotingListen` | (optional) Start a listen server |
 | `-HoloLensRemotingListenPort=<port>` | (optional) Takes the port to listen on. Used for connecting to a PC or VM from a HoloLens device. |
 | `-HoloLens1Remoting=<IP address>` | (deprecated in 4.26) Takes the IP address of the HoloLens 1 device to connect to |
+| `-eyetracking=WindowsMixedRealityEyeTracker` | (optional) Use the Windows Mixed Reality eye tracker |
 
 # [OpenXR](#tab/openxr)
 
@@ -17,3 +18,4 @@
 | `-Listen` | (optional) Start a listen server |
 | `-RemotingBitrate=<bitrate>` | (optional) Default 8000. Max network transfer rate (kb/s). |
 | `-RemotingCodec=<codec>` | (optional) Connection codec  |
+| `-eyetracking=OpenXREyeTracker` | (optional) Use the OpenXR eye tracker |

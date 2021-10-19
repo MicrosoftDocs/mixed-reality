@@ -2,7 +2,7 @@
 title: Case study - My first year on the HoloLens design team
 description: My journey from a 2D flatland to the 3D world started when I joined the HoloLens design team in January, 2016.
 author: designnomad
-ms.author: v-hferrone
+ms.author: v-vtieto
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, HoloLens, design, editorial, personal
@@ -14,7 +14,7 @@ keywords: Windows Mixed Reality, HoloLens, design, editorial, personal
 
 My journey from a 2D flatland to the 3D world started when I joined the HoloLens design team in January, 2016. Before joining the team, I had very little experience in 3D design. It was like the Chinese proverb about a journey of a thousand miles beginning with a single step, except in my case that first step was a leap!
 
-![Taking the Leap from 2D to 3D](../develop/platform-capabilities-and-apis/images/2D_to_3D-800px.gif)<br>
+![Taking the Leap from 2D to 3D](../develop/advanced-concepts/images/2D_to_3D-800px.gif)<br>
 *Taking the leap from 2D to 3D*
 
 > *“I felt as though I had jumped into the driver’s seat without knowing how to drive the car. I was overwhelmed and scared, yet very focused.”*<br>
@@ -28,19 +28,19 @@ Whenever I designed posters, magazines, websites, or app screens, a defined fram
 
 I understood this conceptually, but in the beginning I made the mistake of simply transferring 2D thinking into 3D space. That obviously didn’t work well because 3D space has its own unique properties such as a view change (based on user’s head movement) and [different requirement for user comfort](https://www.youtube.com/watch?v=-606oZKLa_s/) (based on the properties of the devices and the humans using them). For example, in a 2D UI design space, locking UI elements into the corner of a screen is a very common pattern, but this HUD (Head Up Display) style UI does not feel natural in MR/VR experiences; it hinders user’s immersion into the space and causes user discomfort. It’s like having an annoying dust particle on your glasses that you are dying to get rid of. Over time, I learned that it feels more natural to position content in 3D space and add body-locked behavior that makes the content follow the user at a relative fixed distance.
 
-![Body-locked](../develop/platform-capabilities-and-apis/images/bodylockedtagalong.gif)<br>
+![Body-locked](../develop/advanced-concepts/images/bodylockedtagalong.gif)<br>
 *Body-locked*
 
 <br>
 
-![World-locked](../develop/platform-capabilities-and-apis/images/worldlocked.gif)<br>
+![World-locked](../develop/advanced-concepts/images/worldlocked.gif)<br>
 *World-locked*
 
 ### Fragments: An example of great Diegetic UI
 
 [Fragments](https://www.microsoft.com/p/fragments/9nblggh5ggm8), a first-person crime thriller developed by [Asobo Studio](https://www.asobostudio.com/) for HoloLens demonstrates a great Diegetic UI. In this game, the user becomes a main character, a detective who tries to solve a mystery. The pivotal clues to solve this mystery get sprinkled in the user’s physical room and are often times embedded inside a fictional object rather than existing on their own. This diegetic UI tends to be less discoverable than body-locked UI, so the Asobo team cleverly used many cues including virtual characters’ gaze direction, sound, light, and guides (e.g., arrow pointing the location of the clue) to grab user’s attention.
 
-![Fragments - Diegetic UI examples](../develop/platform-capabilities-and-apis/images/fragments-game-example-1.jpg)<br>
+![Fragments - Diegetic UI examples](../develop/advanced-concepts/images/fragments-game-example-1.jpg)<br>
 *Fragments - Diegetic UI examples*
 
 ### Observations about diegetic UI
@@ -57,14 +57,14 @@ Skeuomorphism, a digital interface that mimics the shape of real world objects h
 
 The benefit of Skeuomorphism is clear. Familiar environments and objects within this game help new VR users feel more comfortable and present in virtual space. It also makes them feel like they are in control by associating familiar knowledge and behaviors with objects and their corresponding physical reactions. For example, to drink a cup of coffee, people simply need to walk to the coffee machine, press a button, grab the cup handle and tilt it towards their mouth as they would do in the real world.
 
-![Job Simulator](../develop/platform-capabilities-and-apis/images/job-simulator.gif)<br>
+![Job Simulator](../develop/advanced-concepts/images/job-simulator.gif)<br>
 *Job Simulator*
 
 Because MR/VR is still a developing medium, using a certain degree of skeuomorphism is necessary to demystify MR/VR technology and to introduce it to larger audiences around the world. Additionally, using skeuomorphism or realistic representation could be beneficial for specific types of applications like surgery or flight simulation. Since the goal of these apps is to develop and refine specific skills that can be directly applied in the real world, the closer the simulation is to the real world, the more transferable the knowledge is.
 
 Remember that skeuomorphism is only one approach. The potential of the MR/VR world is far greater than that, and designers should strive to create magical hyper-natural interactions — new affordances that are uniquely possible in MR/VR world. As a start, consider adding magical powers to ordinary objects to enable users to fulfill their fundamental desires—including teleportation and omniscience.
 
-![Doraemon’s magical door (left) and Ruby slippers(right)](../develop/platform-capabilities-and-apis/images/doraemons-magical-door-and-ruby-slippers.jpg)<br>
+![Doraemon’s magical door (left) and Ruby slippers(right)](../develop/advanced-concepts/images/doraemons-magical-door-and-ruby-slippers.jpg)<br>
 *Doraemon’s magical door (left) and ruby slippers(right)*
 
 ### Observations about skeuomorphism in VR
@@ -75,7 +75,7 @@ From “Anywhere door” in Doraemon, “Ruby Slippers” in The Wizard of Oz to
 
 When I designed for the 2D medium, I had to focus on touch, mouse, and keyboard interactions for inputs. In the MR/VR design space, our body becomes the interface and users are able to use a broader selection of input methods: including speech, gaze, gesture, [6-dof controllers](https://en.wikipedia.org/wiki/Six_degrees_of_freedom), and gloves that afford more intuitive and direct connection with virtual objects.
 
-![Available inputs in HoloLens](../develop/platform-capabilities-and-apis/images/inputs.jpg)<br>
+![Available inputs in HoloLens](../develop/advanced-concepts/images/inputs.jpg)<br>
 *Available inputs in HoloLens*
 
 > *“Everything is best for something, and worst for something else.”*<br>
@@ -87,7 +87,7 @@ Speech input is good at traversing complex tasks because it allows users to cut 
 
 Besides gesture and speech, hand-held tracked controllers (e.g., Oculus touch, Vive, etc.) are very popular input methods because they are easy to use, accurate, leverage people’s [proprioception](https://en.wikipedia.org/wiki/Proprioception), and provide passive haptic cues. However, these benefits come at the cost of not being able to be bare-hands and use full finger tracking.
 
-![Senso (Left) and Manus VR(Right)](../develop/platform-capabilities-and-apis/images/senso-and-manus-vr.jpg)<br>
+![Senso (Left) and Manus VR(Right)](../develop/advanced-concepts/images/senso-and-manus-vr.jpg)<br>
 *Senso (Left) and Manus VR (Right)*
 
 While not as popular as controllers, gloves are gaining momentum again thanks to the MR/VR wave. Most recently, brain/mind input have started to gain traction as an interface for virtual environments by integrating EEG or EMG sensor to headset (e.g., [MindMaze VR](https://www.mindmaze.com/)).
@@ -122,7 +122,7 @@ A year ago, I felt like all of this was a bit overwhelming. Now I can tell you t
 
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
-<td style="border-style: none" width="60"><img alt="Picture of Hae Jin Lee" width="60" height="60" src="../develop/platform-capabilities-and-apis/images/haejinlee.jpg"></td>
+<td style="border-style: none" width="60"><img alt="Picture of Hae Jin Lee" width="60" height="60" src="../develop/advanced-concepts/images/haejinlee.jpg"></td>
 <td style="border-style: none"><b>Hae Jin Lee</b><br>UX Designer @Microsoft</td>
 </tr>
 </table>

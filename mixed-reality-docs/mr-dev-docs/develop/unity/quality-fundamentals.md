@@ -55,7 +55,7 @@ In this part of the app, we'll explore the following user scenarios:
 > * Sharing a Spatial Anchor between multiple collaborators by using a QR code.
 > * Anchor placement for very large objects in a space.
 
-For more information, see [Spatial Anchors](/windows/mixed-reality/design/spatial-anchors) in the [Mixed Reality](/windows/mixed-reality/design/spatial-anchors) documentation.
+For more information, see [Spatial Anchors](../../design/spatial-anchors.md) in the [Mixed Reality](../../design/spatial-anchors.md) documentation.
 
 ## Stability and fidelity
 
@@ -75,7 +75,7 @@ To provide the best hologram experience possible, application developers must ma
 
 ![Triangle count optimization](images\qf-triangle-count-optimization.png)
 
-For more information, see [frame rate](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability#frame-rate) in the [hologram stability](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability) article.
+For more information, see [frame rate](../advanced-concepts/hologram-stability.md#frame-rate) in the [hologram stability](../advanced-concepts/hologram-stability.md) article.
 
 ### Late stage reprojection (LSR)
 
@@ -83,7 +83,7 @@ Reprojection is used to stabilize holograms as users move around their space.  T
 
 ![Try the different reprojection options to experience the difference.](images\qf-lsr-modes.jpg)
 
-For detailed information, see [reprojection](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability#reprojection) in the [hologram stability](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability) article.
+For detailed information, see [reprojection](../advanced-concepts/hologram-stability.md#reprojection) in the [hologram stability](../advanced-concepts/hologram-stability.md) article.
 
 ### Z-fighting
 
@@ -91,7 +91,7 @@ Z-fighting occurs when the mixed reality application cannot discern which object
 
 ![Experience z-fighting with object placements.](images\qf-z-fighting.jpg)
 
-For detailed information about z-fighting, see [enable depth buffer sharing](/windows/mixed-reality/develop/unity/recommended-settings-for-unity#enable-depth-buffer-sharing) in the [recommended settings for Unity](/windows/mixed-reality/develop/unity/recommended-settings-for-unity) article.
+For detailed information about z-fighting, see [enable depth buffer sharing](./recommended-settings-for-unity.md#enable-depth-buffer-sharing) in the [recommended settings for Unity](./recommended-settings-for-unity.md) article.
 
 ### Anti-aliasing
 
@@ -115,7 +115,7 @@ Select the number and complexity of bicycle models to experience the visual diff
 
 ![Choose different triangle count options to see the effects on frame rate.](images\qf-3d-asset-visible-triangles.jpg)
 
-For more information, see [asset creation process](/windows/mixed-reality/design/asset-creation-process).
+For more information, see [asset creation process](../../design/asset-creation-process.md).
 
 ### Shader passes
 
@@ -131,7 +131,7 @@ Draw calls are resource-intensive calls to the graphics card.  In this part of t
 
 ![Draw calls should be optimized to boost performance.](images\qf-3d-asset-draw-calls.jpg)
 
-See [CPU-to-GPU performance recommendations](/windows/mixed-reality/develop/unity/performance-recommendations-for-unity#cpu-to-gpu-performance-recommendations).
+See [CPU-to-GPU performance recommendations](./performance-recommendations-for-unity.md#cpu-to-gpu-performance-recommendations).
 
 ### Finale
 

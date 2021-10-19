@@ -143,7 +143,7 @@ Mixed reality capture (MRC) captures the first-person experience of mixing real 
 
 | Reference article | Sample |
 | --- | --- |
-| [Mixed Reality Capture](platform-capabilities-and-apis/mixed-reality-capture-for-developers.md) | [Mixed Reality Capture samples](/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/) |
+| [Mixed Reality Capture](advanced-concepts/mixed-reality-capture-overview.md) | [Mixed Reality Capture samples](/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/) |
 
 #### Spectator view
 
@@ -170,4 +170,4 @@ The Holographic Remoting Player is a companion app that connects to PC apps and 
 
 | Reference article | Sample |
 | --- | --- |
-| [Holographic Remoting](platform-capabilities-and-apis/holographic-remoting-player.md) | [Holographic Remoting samples](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples) |
+| [Holographic Remoting](advanced-concepts/holographic-remoting-player.md) | [Holographic Remoting samples](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples) |

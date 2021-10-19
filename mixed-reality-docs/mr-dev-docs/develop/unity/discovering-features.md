@@ -35,7 +35,7 @@ The category header in the above screenshot contains the following properties, f
 - Section buttons
 
 > [!NOTE]
-> The selection buttons are context sensitive. Based on the state of feature selection within the category, one or more of the `Select All` and `Select None` buttons will be displayed.
+> The selection buttons are context sensitive. Based on the state of feature selection within the category, one of the `Select All` and `Select None` buttons will be displayed.
 
 ### Feature
 
@@ -84,3 +84,4 @@ From **Discover features**, the Mixed Reality Feature Tool allows for navigating
 - [Configuring the feature tool](configuring-feature-tool.md)
 - [Viewing feature package details](viewing-package-details.md)
 - [Importing selected packages](importing-features.md)
+- [Reviewing and approving project modifications](reviewing-changes.md)

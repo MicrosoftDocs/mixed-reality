@@ -28,12 +28,16 @@
     href: spatial-sound.md
   - name: Spatial mapping
     href: spatial-mapping.md
+  - name: Spectator view
+    href: spectator-view.md
   - name: System gesture
     href: system-gesture.md
   - name: Types of Mixed Reality apps
     href: types-of-mixed-reality-apps.md
   - name: Designing content for holographic display
     href: designing-content-for-holographic-display.md
+  - name: Shared experiences in Mixed Reality
+    href: ../design/shared-experiences-in-mixed-reality.md    
 - name: Interaction models
   items:
   - name: Instinctual interactions
@@ -150,5 +154,7 @@
     href: asset-creation-process.md
   - name: Design your own immersive environments
     href: add-custom-home-environments.md
-  - name: Figma Toolkit
+  - name: MRTK Figma Toolkit
     href: figma-toolkit.md
+  - name: Figma Bridge for Unity
+    href: figma-unity-bridge.md

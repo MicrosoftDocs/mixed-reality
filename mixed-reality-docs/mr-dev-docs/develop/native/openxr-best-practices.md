@@ -8,8 +8,6 @@ ms.topic: article
 keywords: OpenXR, Khronos, BasicXRApp, DirectX, native, native app, custom engine, middleware, best practices, performance, quality, stability
 ---
 
-
-
 # OpenXR app best practices
 
 You can see an example of the best practices below in <a href="https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp" target="_blank">BasicXrApp</a>'s OpenXRProgram.cpp file. The Run() function at the beginning captures a typical OpenXR app code flow from initialization to the event and rendering loop.
@@ -56,7 +54,7 @@ For hologram users place at a discrete location in the world, [create a spatial 
 
 ### Support mixed reality capture
 
-Although HoloLens 2's primary display uses additive environment blending, when the user starts [mixed reality capture](../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md), the app's rendering content will be alpha-blended with the environment video stream.
+Although HoloLens 2's primary display uses additive environment blending, when the user starts [mixed reality capture](../advanced-concepts/mixed-reality-capture-overview.md), the app's rendering content will be alpha-blended with the environment video stream.
 To achieve the best visual quality in mixed reality capture videos, it's best to set the `XR_COMPOSITION_LAYER_BLEND_TEXTURE_SOURCE_ALPHA_BIT` in your projection layer's `layerFlags`.
 
 ## Best practices for performance on HoloLens 2

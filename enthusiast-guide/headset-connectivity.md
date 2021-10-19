@@ -1,13 +1,13 @@
 ---
 title: Headset connectivity FAQs
 description: Headset connectivity Windows Mixed Reality headset connectivity troubleshooting that goes beyond our standard consumer support documentation.
-author: hferrone
-ms.author: v-hferrone
-ms.date: 09/15/2020
+author: qianwen
+ms.author: v-qianwen
+ms.date: 09/30/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support, Headset
 appliesto:
-    - Windows 10
+    - Windows 10 and Windows 11
 ---
 
 # Headset connectivity FAQs
@@ -59,7 +59,7 @@ When you put on your headset, Windows Mixed Reality may need a few seconds to re
 > [!NOTE]
 > For Surface users: Earlier versions of the Surface Dock and Surface Book USB Hub firmware update software are incompatible with Mixed Reality headsets. If you get a "Connect your headset" message on a Surface PC, check if any devices are reporting a "Code 10: The device can't start" error in Device Manager. If so, [remove the conflicting driver](https://support.microsoft.com/en-us/help/4032123/kinect-sensor-is-not-recognized-on-a-surface-book). You should only need to do this once.
 
-Note for Windows 10-N users: If your PC is running Windows 10 N, you'll see a "Code 28: The install class isn't present or is invalid" error in Device Manager after plugging in your Mixed Reality headset. N editions of Windows 10 are not supported by Windows Mixed Reality. Follow these [instructions](headset-display.md#im-getting-a-the-install-class-is-not-present-or-is-invalid-error-in-device-manager) for more information.
+Note for Windows 10-N and Windows 11-N users: If your PC is running Windows 10-N or Windows 11-N, you'll see a "Code 28: The install class isn't present or is invalid" error in Device Manager after plugging in your Mixed Reality headset. N editions of Windows 10 and Windows 11 are not supported by Windows Mixed Reality. Follow these [instructions](headset-display.md#im-getting-a-the-install-class-is-not-present-or-is-invalid-error-in-device-manager) for more information.
 
 ## A message says "Check your USB cable" or "Insufficient USB speed"
 
@@ -89,7 +89,7 @@ Make sure you are on the 10.0.19041.2034 driver or newer.
 
 ## The headset driver did not install automatically when I plugged in the headset
 
-On new PCs, or PCs with a newly installed copy of Windows 10, the headset driver could be queued behind other Windows updates and may not install immediately.
+On new PCs, or PCs with a newly installed copy of Windows 10 or Windows 11, the headset driver could be queued behind other Windows updates and may not install immediately.
 
 1. Go to **Start > Device Manager** and look under "Mixed Reality devices" for your headset. The device status should indicate that "The device is working properly".
 2. Right-click on the device and select "Update driver".
@@ -101,4 +101,4 @@ If that didn't work, try to uninstall the driver:
 3. In the new popup that appears, select the check box "Delete the driver software for this device" and then select "Uninstall".
 4. When that completes, unplug the headset from your PC, and plug it back in. Windows Update will now download and install a new driver.
 
-Note:  If you have an N edition of Windows, you'll need to switch to a regular edition of Windows 10 to use Windows Mixed Reality.
+Note:  If you have an N edition of Windows, you'll need to switch to a regular edition of Windows 10 or Windows 11 to use Windows Mixed Reality.

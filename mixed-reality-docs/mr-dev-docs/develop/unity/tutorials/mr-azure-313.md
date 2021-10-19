@@ -52,7 +52,7 @@ This course will teach you how to setup and use the IoT Hub Service, and then vi
 
 ## Prerequisites
 
-For the most up-to-date prerequisites for developing with mixed reality, including with the Microsoft HoloLens, visit the [Install the tools](/windows/mixed-reality/install-the-tools) article.
+For the most up-to-date prerequisites for developing with Mixed Reality, including with the Microsoft HoloLens, visit the [Install the tools](../../install-the-tools.md) article.
 
 > [!NOTE]
 > This tutorial is designed for developers who have basic experience with Python. Please also be aware that the prerequisites and written instructions within this document represent what has been tested and verified at the time of writing (July 2018). You are free to use the latest software, as listed within the [install the tools](../../install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you will find in newer software than that listed below.

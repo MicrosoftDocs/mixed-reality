@@ -115,7 +115,7 @@ If you would like to customize the cursor feedback behaviors and appearances, he
 
 * A donut or torus shaped cursor works for many applications.
 * Pick a color and shape that best represents the experience you're creating.
-* Cursors are especially prone to [color separation](../develop/platform-capabilities-and-apis/hologram-stability.md#color-separation).
+* Cursors are especially prone to [color separation](../develop/advanced-concepts/hologram-stability.md#color-separation).
 * A small cursor with balanced opacity keeps it informative without dominating the visual hierarchy.
 * Be cognizant of using shadows or highlights behind your cursor as they might obstruct content and distract from the task at hand.
 * Cursors should align to and hug the surfaces in your app. Users will have a feeling that the system can see where they're looking, but also that the system is aware of their surroundings. For example, the cursor in the Mixed Reality OS aligns to the surfaces of the user's world, creating a feeling of awareness of the world even when the user isn't looking directly at a hologram.

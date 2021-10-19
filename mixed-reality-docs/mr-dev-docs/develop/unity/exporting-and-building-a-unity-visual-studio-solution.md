@@ -52,7 +52,7 @@ Checking the **C# Projects** checkbox when exporting your app from Unity creates
 
 ## Building and deploying a Unity Visual Studio solution
 
-The remainder of building and deploying apps happens in [Visual Studio](../platform-capabilities-and-apis/using-visual-studio.md). You will need to specify a Unity build configuration. Unity's naming conventions may differ from what you're used to in Visual Studio:
+The remainder of building and deploying apps happens in [Visual Studio](../advanced-concepts/using-visual-studio.md). You will need to specify a Unity build configuration. Unity's naming conventions may differ from what you're used to in Visual Studio:
 
 |  Configuration  |  Explanation | 
 |----------|----------|

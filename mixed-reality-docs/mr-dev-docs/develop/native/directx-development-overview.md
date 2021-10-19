@@ -39,7 +39,7 @@ Windows Mixed Reality applications use the following APIs to build [mixed-realit
 | --- | --- |
 | [Gaze](../../design/gaze-and-commit.md) | Let users target holograms with by looking at them |
 | [Gesture](../../design/gaze-and-commit.md#composite-gestures) | Add spatial actions to your apps |
-| [Holographic rendering](../platform-capabilities-and-apis/rendering.md) | Draw a hologram at a precise location in the world around your users |
+| [Holographic rendering](../advanced-concepts/rendering-overview.md) | Draw a hologram at a precise location in the world around your users |
 | [Motion controller](../../design/motion-controllers.md) | Let your users take action in your Mixed Reality environments |
 | [Spatial mapping](../../design/spatial-mapping.md) | Map your physical space with a virtual mesh overlay to mark the boundaries of your environment |
 | [Voice](../../design/voice-input.md) | Capture spoken keywords, phrases, and dictation from your users |
@@ -49,7 +49,7 @@ Windows Mixed Reality applications use the following APIs to build [mixed-realit
 
 ### 3. Deploying and testing
 
-You can develop on a desktop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive headset.  If you don't have access to a headset, you can use the [HoloLens 2 Emulator](../platform-capabilities-and-apis/using-the-hololens-emulator.md) or the [Windows Mixed Reality Simulator](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) instead.
+You can develop on a desktop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive headset.  If you don't have access to a headset, you can use the [HoloLens 2 Emulator](../advanced-concepts/using-the-hololens-emulator.md) or the [Windows Mixed Reality Simulator](../advanced-concepts/using-the-windows-mixed-reality-simulator.md) instead.
 
 ## What's next?
 
@@ -66,3 +66,4 @@ If you're looking to level up your OpenXR game, check out the links below:
 ## See also
 * [App model](../../design/app-model.md)
 * [App views](../../design/app-views.md)
+test

@@ -21,6 +21,8 @@ keywords: Windows Mixed Reality, design, sample app, controls, MRTK, Mixed Reali
 
 Recorded with HoloLens 2 using Mixed Reality Capture
 
+## Download the app package from GitHub
+Checkout the <a href="https://github.com/microsoft/MRDL_Unity_PeriodicTable/releases" target="_blank">**Release**</a>page on GitHub.
 
 ## Upgrading the project for HoloLens 2 with MRTK
 You can find HoloLens 2 porting story from the article: <a href="https://dongyoonpark.medium.com/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158" target="_blank">**Bringing the Periodic Table of the Elements app to HoloLens 2 with MRTK v2 (2019)**</a>

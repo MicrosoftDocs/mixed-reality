@@ -14,7 +14,7 @@ Windows apps can contain two kinds of views: **immersive views** and **2D views*
 
 ## Immersive views
 
-An immersive view gives your app the ability to create holograms in the world around you or immerse the user in a virtual environment. When an app is drawing in the immersive view, no other app is drawing at the same time&mdash;holograms from multiple apps aren't composited together. By continually adjusting the perspective from which your [app renders](../develop/platform-capabilities-and-apis/rendering.md) its scene to match the user's head movements, your app can render [world-locked](coordinate-systems.md) holograms. World-locked holograms stay at a fixed point in the real world or can render a virtual world that holds its position as a user moves.
+An immersive view gives your app the ability to create holograms in the world around you or immerse the user in a virtual environment. When an app is drawing in the immersive view, no other app is drawing at the same time&mdash;holograms from multiple apps aren't composited together. By continually adjusting the perspective from which your [app renders](../develop/advanced-concepts/rendering-overview.md) its scene to match the user's head movements, your app can render [world-locked](coordinate-systems.md) holograms. World-locked holograms stay at a fixed point in the real world or can render a virtual world that holds its position as a user moves.
 
 ![When in an immersive view, holograms can be placed in the world around you.](images/designoverview-940px.jpg)<br>
 *When in an immersive view, holograms can be placed in the world around you*

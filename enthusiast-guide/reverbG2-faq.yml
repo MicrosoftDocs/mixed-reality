@@ -2,8 +2,9 @@
 metadata:
   title: HP Reverb G2 FAQs
   description: Stay up to date with commonly asked questions about using HP Reverb G2 headset with Windows Mixed Reality immersive headsets.
-  ms.author: v-hferrone
-  ms.date: 09/15/2020
+  author: qianwen
+  ms.author: v-qianwen
+  ms.date: 09/24/2021
   ms.topic: article
   keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support, Performance
   appliesto:
@@ -64,7 +65,7 @@ sections:
       - question: |
           Others state I am loud or that my audio is clipping while I am using the microphone with some applications
         answer: |
-          The input volume levels are automatically set to 100% when the HP Reverb G2 microphone is first recognized by a Windows PC. Because of the Reverb G2's high-quality microphones, input sensitivity is much higher than the default Windows 10 settings expect. We recommend setting the Reverb G2 microphone input level starting at 50% and scale up from there. An optimal setting is specific to the user, especially when using applications that don't have an “auto-gain” microphone setting. Examples of applications that have “auto-gain” are Skype, Zoom, Teams, and Cisco WebEx, but not all VR social or broadcasting applications have this feature.
+          The input volume levels are automatically set to 100% when the HP Reverb G2 microphone is first recognized by a Windows PC. Because of the Reverb G2's high-quality microphones, input sensitivity is much higher than the default Windows 10 and Windows 11 settings expect. We recommend setting the Reverb G2 microphone input level starting at 50% and scale up from there. An optimal setting is specific to the user, especially when using applications that don't have an “auto-gain” microphone setting. Examples of applications that have “auto-gain” are Skype, Zoom, Teams, and Cisco WebEx, but not all VR social or broadcasting applications have this feature.
 
       - question: |
           The Mixed Reality Portal says “Can't run mixed reality on this headset” but this worked fine with my previous WMR headset
