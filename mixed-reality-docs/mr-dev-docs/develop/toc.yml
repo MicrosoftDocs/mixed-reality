@@ -120,14 +120,14 @@
         href: unity/shared-experiences-in-unity.md
       - name: Interactions
         items:
+          - name: Hand and eye tracking
+            href: unity/hand-eye-in-unity.md
           - name: Motion controllers
             href: unity/motion-controllers-in-unity.md
           - name: HP Reverb G2 controllers
             href: unity/unity-reverb-g2-controllers.md
           - name: Gestures
             href: unity/gestures-in-unity.md
-          - name: Hand and Eye tracking
-            href: unity/hand-eye-in-unity.md
           - name: Head gaze
             href: unity/gaze-in-unity.md
           - name: Voice input

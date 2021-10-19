@@ -1,6 +1,6 @@
 ---
-title: Preview and debug your app with Holographic Remoting and Play mode
-description: Use Holographic Remoting and Play mode to preview and debug your app
+title: Preview and debug your app with Holographic Remoting for Play mode
+description: Use Holographic Remoting for Play mode to preview and debug your app
 author: vtieto
 ms.author: v-vtieto
 ms.date: 08/12/2021
