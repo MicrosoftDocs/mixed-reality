@@ -1519,7 +1519,7 @@
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/hologram-stability.md",
 			"redirect_url": "/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/holographic-remoting-create-remote-wmr.md",
