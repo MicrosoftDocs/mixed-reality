@@ -2034,7 +2034,7 @@
 
 			"redirect_document_id": false
 		},
-		{		{
+		{		
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/installing-pix-hololens.md",
 			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/installing-pix-hololens.md",
 			"redirect_document_id": false
