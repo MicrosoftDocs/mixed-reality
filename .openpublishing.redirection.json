@@ -1519,7 +1519,7 @@
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/hologram-stability.md",
 			"redirect_url": "/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/holographic-remoting-create-remote-wmr.md",
@@ -1930,6 +1930,233 @@
 			"source_path": "mrtk-unity/install-the-tools.md",
 			"redirect_url": "/windows/mixed-reality/develop/install-the-tools",
 			"redirect_document_id": false
+		},
+
+// redirects after merge of platform caps and apis reorg 9/2/21
+// Section 1: platform-caps-and-apis md files to advanced-concepts
+
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/add-holographic-remoting.md",
+			"redirect_url": "/windows/mixed-reality/develop/native/add-holographic-remoting.md",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/advanced-hololens-emulator-and-mixed-reality-simulator-input.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/advanced-hololens-emulator-and-mixed-reality-simulator-input.md",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/app-quality-criteria.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/app-quality-criteria-overview.md ",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/hologram-stability.md",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/device-portal-api-reference.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/device-portal-api-reference.md",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-stability.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/holographic-stability.md",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-create-player.md",
+			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-create-player.md",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-create-remote-openxr.md",
+			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-create-remote-openxr.md",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-create-remote-wmr.md",
+			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-create-remote-wmr.md",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-custom-data-channels.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/holographic-remoting-custom-data-channels.md",
+ 
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-overview.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/holographic-remoting-overview.md",
+
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-player.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/holographic-remoting-player.md",
+
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-secure-connection.md",
+			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-secure-connection.md",
+
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-troubleshooting.md",
+			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-troubleshooting.md",
+
+			"redirect_document_id": false
+		},
+
+
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-version-history.md",
+			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-version-history.md",
+
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/hololens-emulator-archive.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/hololens-emulator-archive.md",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/how-it-works-mixed-reality-capture-studios.md",
+
+			"redirect_document_id": false
+		},
+		{		
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/installing-pix-hololens.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/installing-pix-hololens.md",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/keyboard-mouse-and-controller-input-in-directx.md",
+			"redirect_url": "/windows/mixed-reality/develop/native/keyboard-mouse-and-controller-input-cpp.md",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/locatable-camera.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/locatable-camera-overview.md",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/mixed-reality-capture-for-developers.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/mixed-reality-capture-overview.md",
+
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/perception-simulation.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/perception-simulation-overview.md",
+
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/qr-code-tracking.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/qr-code-tracking-overview.md",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/rendering.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/rendering-overview.md",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/research-mode.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/research-mode.md",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/scene-understanding-SDK.md",
+			"redirect_url": "/windows/mixed-reality/develop/unity/scene-understanding-SDK.md",
+
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md",
+			"redirect_url": "/windows/mixed-reality/design/shared-experiences-in-mixed-reality.md",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/shared-spatial-anchors-in-directx.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/shared-spatial-anchors-in-directx.md",
+
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/spectator-view.md",
+			"redirect_url": "/windows/mixed-reality/design/spectator-view.md",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/testing-your-app-on-hololens.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/testing-your-app-on-hololens.md",
+
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/understanding-performance-for-mixed-reality.md",
+
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/using-the-hololens-emulator.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator.md",
+
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/using-the-windows-device-portal.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/using-the-windows-device-portal.md",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/using-the-windows-mixed-reality-simulator.md",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/using-visual-studio.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/using-visual-studio.md",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/using-xaml-with-holographic-directx-apps.md",
+			"redirect_url": "/windows/mixed-reality/develop/native/using-xaml-with-holographic-directx-apps.md",
+
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/volume-rendering.md",
+			"redirect_url": "/windows/mixed-reality/develop/native/volume-rendering.md",
+			"redirect_document_id": false
+
 		}
+
+// Platform reorg changes 10/20/21
+// Section 2
+
+
+
 	]
 }
