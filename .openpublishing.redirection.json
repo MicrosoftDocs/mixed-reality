@@ -1930,7 +1930,7 @@
 			"source_path": "mrtk-unity/install-the-tools.md",
 			"redirect_url": "/windows/mixed-reality/develop/install-the-tools",
 			"redirect_document_id": false
-		}
+		},
 
 // redirects after merge of platform caps and apis reorg 9/2/21
 // Section 1: platform-caps-and-apis md files to advanced-concepts
