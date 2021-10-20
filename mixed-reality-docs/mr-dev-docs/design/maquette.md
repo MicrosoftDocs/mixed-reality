@@ -87,8 +87,3 @@ The Maquette Unity Editor Add-On package ensures .FBX and .GLTF files exported f
 
 >[!div class="nextstepaction"] 
 >[Join the Microsoft Maquette Steam Community discussion today!](https://aka.ms/maquette-community)
-
-* [Youtube](https://www.youtube.com/channel/UC3LL920zxSo16CmmmVCntxw)
-* [Twitter](https://twitter.com/MadeInMaquette)
-* [Instagram](https://www.instagram.com/microsoftmaquette/)
-* [Facebook](https://www.facebook.com/MicrosoftMaquette/)
