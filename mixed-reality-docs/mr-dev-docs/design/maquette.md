@@ -3,7 +3,7 @@ title: Microsoft Maquette Beta overview
 description: Microsoft Maquette makes spatial prototyping easy, quick, and immersive. Maquette provides VR developers with various tools & assets to construct & iterate ideas in space.
 author: qianw211
 ms.author: v-qianwen
-ms.date: 10/15/2021
+ms.date: 10/20/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, get started, setup, Mixed Reality Portal, Maquette
 ---
@@ -11,7 +11,13 @@ keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, get sta
 # Microsoft Maquette Beta overview
 
 >[!Note]
->Microsoft is not actively developing Microsoft Maquette at this time. The learnings from building the application and the feedback of the community will enable Microsoft to build better tools for content creation in a Mixed Reality context in the future. There are no plans to open source any of Maquette’s source code. The access to the application through the store will cease at a point to-be-determined in the future. We want to thank the community for their support during this journey.
+>Microsoft is not actively developing Microsoft Maquette at this time, and the access to the application in the store will be discontinued. Microsoft will apply the learnings from building the application and the feedback from the community to enable better tools for Mixed Reality content creation in the future. While there are no plans to open source any of Maquette's source code, we will continue to offer the application as a download here. We want to thank the community for the journey and support.
+
+   > [!div class="nextstepaction"]
+   > [Download the Maquette app package](https://aka.ms/MaquetteDownloadAppPackage)
+
+   > [!div class="nextstepaction"]
+   > [Download the Mquette add-on](https://aka.ms/MaquetteDownloadAddOn)
 
 &nbsp;  
 
@@ -29,27 +35,27 @@ Microsoft Maquette makes spatial prototyping easy, quick, and immersive. As a VR
 
 Here is a list of Maquette tutorial videos in alphabetical order:
 
-* [Bounding manipulation](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Bounding-Manipulation)
-* [Coloring content](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Coloring-Content)
+* [Interacting with UI](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Hand-UI) 
+* [Moving around](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Swimming)
+* [Teleporting](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Teleporting)
+* [Manipulating content](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Object-Manipulation)
+* [Rotational snapping](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Rotational-Snapping)
+* [Surface snapping](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Surface-Snapping)
 * [Duplicating content](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Duplicating-Content)
 * [Erasing content](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Erasing-Content)
-* [Gimbal positioning](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Gimbal)
-* [Grouping content](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Grouping-Content)
-* [Hull brush](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Hull-Brush)
-* [Interacting with UI](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Hand-UI) 
-* [Lighting](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Lighting)
-* [Lock object](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Lock-Object)
-* [Manipulating content](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Object-Manipulation)
-* [Moving around](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Swimming)
-* [Needle selection](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Needle-Selection)
-* [Orientation tool](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Orientation-Tool)
-* [Parametric objects](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Parametric-Objects)
-* [Rotational snapping](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Rotational-Snapping)
 * [Selecting content](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Selecting-Content)
-* [Surface snapping](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Surface-Snapping)
-* [Teleporting](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Teleporting)
-* [Tube brush](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Tube-Brush)
+* [Needle selection](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Needle-Selection)
+* [Grouping content](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Grouping-Content)
+* [Gimbal positioning](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Gimbal)
+* [Bounding manipulation](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Bounding-Manipulation)
+* [Orientation tool](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Orientation-Tool)
+* [Coloring content](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Coloring-Content)
+* [Lighting](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Lighting)
+* [Hull brush](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Hull-Brush)
 * [Volume brush](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Volume-Brush)
+* [Tube brush](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Tube-Brush)
+* [Parametric objects](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Parametric-Objects)
+* [Lock object](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Lock-Object)
 
 ## Export content from Maquette
 
@@ -85,7 +91,7 @@ The Maquette Unity Editor Add-On package ensures .FBX and .GLTF files exported f
 ## Maquette community 
 
 >[!div class="nextstepaction"] 
->[Join the Microsoft Maquette Steam Community discussion today!](https://steamcommunity.com/app/967490/discussions/)
+>[Join the Microsoft Maquette Steam Community discussion today!](https://aka.ms/maquette-community)
 
 * [Youtube](https://www.youtube.com/channel/UC3LL920zxSo16CmmmVCntxw)
 * [Twitter](https://twitter.com/MadeInMaquette)
