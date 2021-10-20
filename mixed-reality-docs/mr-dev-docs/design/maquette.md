@@ -16,9 +16,6 @@ keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, get sta
    > [!div class="nextstepaction"]
    > [Download the Maquette app package](https://aka.ms/MaquetteDownloadAppPackage)
 
-   > [!div class="nextstepaction"]
-   > [Download the Mquette add-on](https://aka.ms/MaquetteDownloadAddOn)
-
 &nbsp;  
 
 <iframe src="https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Teaser/player" width="960" height="540" allowFullScreen frameBorder="0" title="Maquette Teaser - Microsoft Channel 9 Video"></iframe>
@@ -80,7 +77,7 @@ The Maquette Unity Editor Add-On package ensures .FBX and .GLTF files exported f
 1. Select **Import** at the bottom right of the window that appears. 
 
 >[!div class="nextstepaction"] 
->[Download the Unity Add-on](https://www.maquette.ms/asset/MaquetteUnityEditorAddon.unitypackage) 
+>[Download the Unity Add-on](https://aka.ms/MaquetteDownloadAddOn) 
 
 ### Part 3 - Import Maquette Content into Unity with the Unity Add-On 
 
