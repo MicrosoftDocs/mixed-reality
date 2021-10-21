@@ -11,3 +11,12 @@ keywords: Windows Mixed Reality, design, introduction, guidance, mixed reality h
 # Advanced concepts overview
 
 The articles in this section present overviews of some of the more advanced mixed reality concepts. For a review of core concepts, see the [Core concepts overview](../../design/core-concepts-landingpage.md), which is located in the [Design](../../design/design.md) section of the documentation.
+
+Advanced concepts include:
+
+- [Mixed Reality Capture](mixed-reality-capture-overview)
+- [Use anchors to share holograms](shared-spatial-anchors-in-directx)
+- [Holographic Remoting](holographic-remoting-overview)
+- [Porting apps](porting-overview)
+- [Using the Windows device portal](advanced-concepts/using-the-windows-device-portal)
+- [HoloLens research mode](research-mode)
