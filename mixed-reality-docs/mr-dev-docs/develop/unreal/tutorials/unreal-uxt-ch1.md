@@ -11,7 +11,7 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, tut
 
 # 1. Getting started
 
-Whether you're new to mixed reality or a seasoned pro, you're in the right place to start your [HoloLens 2](../../../index.yml) and [Unreal Engine](https://www.unrealengine.com/en-US/) journey. This tutorial series will give you a step-by-step guide on how to build an interactive chess app with the [UX Tools plugin](https://github.com/microsoft/MixedReality-UXTools-Unreal) - part of the [Mixed Reality Toolkit for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal). The plugin will help you add common UX features to your projects with code, blueprints, and examples. 
+Whether you're new to mixed reality or a seasoned pro, you're in the right place to start your [HoloLens 2](../../../index.yml) and [Unreal Engine](https://www.unrealengine.com/en-US/) journey. This tutorial series will give you a step-by-step guide on how to build an interactive chess app with the [UX Tools plugin](https://github.com/microsoft/MixedReality-UXTools-Unreal) - part of the [Mixed Reality Toolkit for Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal). The plugin will help you add common UX features to your projects with code, blueprints, and examples.
 
 ![End scene in viewport](images/unreal-uxt/5-endscene.PNG)
 
@@ -39,7 +39,7 @@ First, make sure your setup with all the required Visual Studio packages:
     * Desktop development with C++
     * .NET desktop development
     * Universal Windows Platform development
-1. Expand Universal Windows Platform development and select: 
+1. Expand Universal Windows Platform development and select:
     * USB Device Connectivity
     * C++ (v142) Universal Windows Platform tools
 
@@ -51,5 +51,7 @@ You can confirm the installation with the following picture
 ![Important Ticks in VS installer](images/unreal-uxt/1-install-the-tools.png)
 
 That's it! You're all set to move on to starting the chess project.
+
+If you prefer video guides, we have a talk that covers a lot of the same information as this tutorial. The talk also covers the use of GraphicsTools to further improve the the game's performance: [Intro to HoloLens 2 development using the Unreal Engine and MRTK-Unreal](https://www.youtube.com/watch?v=avTjzrv1jmc).
 
 [Next section: 2. Initializing your project and first application](unreal-uxt-ch2.md)
