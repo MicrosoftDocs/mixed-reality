@@ -404,7 +404,7 @@
 - name: Advanced concepts
   items:
   - name: Overview
-    href: native/advanced-concepts-overview.md
+    href: advanced-concepts/advanced-concepts-overview.md
   - name: Camera and capture
     items:
     - name: Locatable camera
