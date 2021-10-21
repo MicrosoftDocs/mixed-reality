@@ -14,9 +14,9 @@ The articles in this section present overviews of some of the more advanced mixe
 
 Advanced concepts include:
 
-- [Mixed Reality Capture](mixed-reality-capture-overview)
-- [Use anchors to share holograms](shared-spatial-anchors-in-directx)
-- [Holographic Remoting](holographic-remoting-overview)
-- [Porting apps](porting-overview)
-- [Using the Windows device portal](advanced-concepts/using-the-windows-device-portal)
-- [HoloLens research mode](research-mode)
+- [Mixed Reality Capture](mixed-reality-capture-overview.md)
+- [Use anchors to share holograms](shared-spatial-anchors-in-directx.md)
+- [Holographic Remoting](holographic-remoting-overview.md)
+- [Porting apps](porting-overview.md)
+- [Using the Windows device portal](advanced-concepts/using-the-windows-device-portal.md)
+- [HoloLens research mode](research-mode.md)
