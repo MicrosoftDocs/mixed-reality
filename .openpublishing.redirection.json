@@ -1643,7 +1643,7 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/using-the-windows-device-portal.md",
-			"redirect_url": "/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/using-the-windows-device-portal",
 			"redirect_document_id": true
 		},
 		{
