@@ -3,7 +3,7 @@ title: Mixed reality feature samples and apps
 description: Stay up to date with all the available Microsoft sample apps and mixed reality features samples for HoloLens.
 author: qianw211
 ms.author: v-qianwen
-ms.date: 10/19/2021
+ms.date: 10/22/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, learn, samples, MRTK, research mode, HoloLens 2, qr codes, WebRTC, mixed reality capture, holographic remoting, UX Tools
 ms.localizationpriority: high
@@ -29,7 +29,7 @@ For each of the developer scenarios listed below, there are feature samples that
 | Scenario | Feature sample | Engine | Description |
 | --- | --- | ---- | --- |
 | [**Build basic unity mixed reality scenarios**](#build-basic-openxr-scenarios) | [OpenXR with Unity samples](#build-basic-openxr-scenarios) | Unity C# | Get started with cross-platform developer tools using the latest Unity 2020.LTS and OpenXR plugin. |
-| **Anchoring Strategies** | Local anchor |  | Persist and share spatial anchors across application sessions and across devices. See the [Spatial anchors](/windows/mixed-reality/design/spatial-anchors) article. |
+| **Anchoring Strategies** | [Local anchor](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples#sample-for-anchors-and-anchor-persistence) |  | Persist and share spatial anchors across application sessions and across devices. See the [Spatial anchors](/windows/mixed-reality/design/spatial-anchors) article. |
 |    | [Azure Spatial Anchors samples](https://github.com/Azure/azure-spatial-anchors-samples) |  | Build spatially aware mixed reality applications with the essential capabilities of [Azure Spatial Anchors](/azure/spatial-anchors/overview). |
 | | [QR Codes](#qr-codes) | Unity C# | Detect QR Codes in the environment. |
 | [**Collaboration in mixed reality**](#collaboration-in-mixed-reality) | [User identity](#user-identity) | Unity C# | Set up your HoloLens 2 device using Azure Active Directory (AAD) credentials. |
