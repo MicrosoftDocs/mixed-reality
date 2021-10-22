@@ -379,28 +379,67 @@
       href: native/volume-rendering.md
     - name: Performance tuning and debugging
       href: advanced-concepts/installing-pix-hololens.md
-  - name: Holographic remoting
-    items:
-    - name: Writing a Holographic Remoting remote app
+- name: Holographic Remoting
+  items:
+    - name: Overview
+      href: advanced-concepts/holographic-remoting-overview.md
+      displayname: Holographic Remoting       
+    - name: Store player
+      href: advanced-concepts/holographic-remoting-player.md
+      displayname: Holographic Remoting
+    - name: OpenXR API
       items:
-        - name: HolographicSpace API
-          href: native/holographic-remoting-create-remote-wmr.md
-        - name: OpenXR API
+        - name: Writing a remote app (C++)
           href: native/holographic-remoting-create-remote-openxr.md
-    - name: Writing a custom Holographic Remoting Player app
-      href: native/holographic-remoting-create-player.md
-    - name: Custom Holographic Remoting data channels
-      href: native/holographic-remoting-custom-data-channels.md
-    - name: Secure Connection with Holographic Remoting
-      href: native/holographic-remoting-secure-connection.md
+          displayname: Holographic Remoting
+        - name: Custom data channels (C++)
+          href: native/holographic-remoting-custom-data-channels-openxr.md
+          displayname: Holographic Remoting
+        - name: Secure connection (C++)
+          href: native/holographic-remoting-secure-connection.md
+          displayname: Holographic Remoting
+        - name: Coordinate system synchronization (C++)
+          items:
+            - name : Overview
+              href: advanced-concepts/holographic-remoting-coordinate-system-synchronization.md
+              displayname: Holographic Remoting
+            - name : Coordinate system synchronization with the OpenXR API
+              href: native/holographic-remoting-coordinate-system-synchronization-openxr.md
+              displayname: Holographic Remoting
+    - name: Windows Mixed Reality API
+      items:
+        - name: Writing a remote app (C++)
+          href: native/holographic-remoting-create-remote-wmr.md
+          displayname: Holographic Remoting
+        - name: Writing a custom player app (C++)
+          href: native/holographic-remoting-create-player.md
+          displayname: Holographic Remoting
+        - name: Custom data channels (C++)
+          href: native/holographic-remoting-custom-data-channels.md
+          displayname: Holographic Remoting
+        - name: Secure connection (C++)
+          href: native/holographic-remoting-secure-connection.md
+          displayname: Holographic Remoting
+        - name: Coordinate system synchronization (C++)
+          items:
+            - name : Overview
+              href: advanced-concepts/holographic-remoting-coordinate-system-synchronization.md
+              displayname: Holographic Remoting
+            - name : Coordinate system synchronization with the Windows Mixed Reality API
+              href: native/holographic-remoting-coordinate-system-synchronization-wmr.md
+              displayname: Holographic Remoting
+        - name: Holographic Remoting for HoloLens (1st Gen)
+          href: native/add-holographic-remoting.md
+          displayname: Holographic Remoting
     - name: Troubleshooting and limitations
       href: native/holographic-remoting-troubleshooting.md
+      displayname: Holographic Remoting
     - name: Version history
       href: native/holographic-remoting-version-history.md
-    - name: Holographic Remoting software license terms
+      displayname: Holographic Remoting
+    - name: Software license terms
       href: /legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
-    - name: Holographic Remoting for HoloLens (1st Gen)
-      href: native/add-holographic-remoting.md          
+      displayname: Holographic Remoting     
 - name: Advanced concepts
   items:
   - name: Overview
@@ -423,12 +462,6 @@
     items:
     - name: WebRTC (C#, C++, Unity)
       href: https://github.com/microsoft/MixedReality-WebRTC
-  - name: Holographic remoting
-    items:
-    - name: Holographic Remoting Overview
-      href: advanced-concepts/holographic-remoting-overview.md
-    - name: The Holographic Remoting player
-      href: advanced-concepts/holographic-remoting-player.md
   - name: Porting apps
     items:
     - name: Porting overview

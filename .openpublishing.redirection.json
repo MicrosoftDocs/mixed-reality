@@ -1538,8 +1538,8 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/holographic-remoting-custom-data-channels.md",
-			"redirect_url": "/windows/mixed-reality/develop/platform-capabilities-and-apis/holographic-remoting-custom-data-channels",
-			"redirect_document_id": true
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/holographic-remoting-custom-data-channels",
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/holographic-remoting-player.md",
@@ -1985,13 +1985,6 @@
 			"redirect_document_id": false
 		},
 		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-custom-data-channels.md",
-			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/holographic-remoting-custom-data-channels",
- 
-			"redirect_document_id": false
-		},
-
-		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-overview.md",
 			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/holographic-remoting-overview",
 
@@ -2151,6 +2144,29 @@
 			"redirect_url": "/windows/mixed-reality/develop/native/volume-rendering",
 			"redirect_document_id": false
 
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-coordinate-system-synchronization-openxr.md",
+			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-coordinate-system-synchronization-openxr",
+			"redirect_document_id": false
+
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-coordinate-system-synchronization-wmr.md",
+			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-coordinate-system-synchronization-wmr",
+			"redirect_document_id": false
+
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-coordinate-system-synchronization.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/holographic-remoting-coordinate-system-synchronization",
+			"redirect_document_id": false
+
+		},
+		{
+		"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-custom-data-channels-openxr.md",
+		"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-custom-data-channels-openxr",
+		 "redirect_document_id": false
 		}
 
 // Platform reorg changes 10/20/21
