@@ -29,4 +29,4 @@ With the synchronized coordinate system, both the player app and remote app can 
 	
 ## See Also
 * [Coordinate System Synchronization with Holographic Remoting and the OpenXR API](../native/holographic-remoting-coordinate-system-synchronization-openxr.md)
-* [Coordinate System Synchronization with Holographic Remoting and the Windows Mixed Reality API](../advanced/concepts/holographic-remoting-coordinate-system-synchronization-wmr.md)
+* [Coordinate System Synchronization with Holographic Remoting and the Windows Mixed Reality API](../native/holographic-remoting-coordinate-system-synchronization-wmr.md)
