@@ -59,5 +59,5 @@ The data channel state switches to ```XR_REMOTING_DATA_CHANNEL_STATUS_CLOSED_MSF
 For a closed data channel, the ```XrRemotingDataChannelMSFT``` handle remains valid.
 
 ## See Also
-* [Holographic Remoting Overview](holographic-remoting-overview.md)
+* [Holographic Remoting Overview](../advanced-concepts/holographic-remoting-overview.md)
 * [Writing a Holographic Remoting remote app using OpenXR APIs](../native/holographic-remoting-create-remote-openxr.md)
