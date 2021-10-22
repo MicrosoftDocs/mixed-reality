@@ -7,7 +7,7 @@ ms.date: 10/22/2021
 ms.topic: article
 keywords: Unity, power, performance, thermal, mitigation, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
-git
+
 # Power Thermal Notifications in Unity
 
 When the device is running in warm environments or with heavy performance requirements (CPU/GPU usage, peripheral usage, etc.), the device may take actions to keep itself from overheating.
@@ -50,8 +50,10 @@ this is as sample()
 
 Talk here about suppressing actions the device might take as mentioned earlier.  Have a 
 Also include a nice code snippet:
+
 ```cs
 Oh wow this code is great()
 ```
-> [!NOTE] 
+
+> [!NOTE]
 > <!--Foreground Note-->The suppression APIs will only work if the process using the PowerThermalNotification class is in the foreground.  Background processes can still subscribe to events but they may not disable device actions
