@@ -163,7 +163,7 @@
       - name: Mixed Reality native interop in Unity
         href: unity/unity-xrdevice-advanced.md
       - name: Using Power Thermal notifications in Unity
-        href: unity/power-thermal-notifications-in-unity.mdgit 
+        href: unity/power-thermal-notifications-in-unity.md
       - name: Use PC resources to power your app
         href: unity/use-pc-resources.md 
         displayname: Holographic Remoting       
