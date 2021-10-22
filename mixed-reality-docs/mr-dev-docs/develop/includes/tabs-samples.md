@@ -1,8 +1,10 @@
 # [Unity](#tab/unity)
 
-The open source sample apps were created by our teams to help you get a handle on Mixed Reality development first-hand. We've provided the projects and full source code as a learning reference.
+The open-source sample apps were created by our teams to help you get a handle on Mixed Reality development first-hand. We've provided the projects and full source code as a learning reference.
 
-### HoloLens 2 open source sample apps
+### HoloLens 2 open-source sample apps
+
+These sample apps are made with the Mixed Reality Toolkit for Unity.
 
 :::row:::
     :::column:::
@@ -26,7 +28,7 @@ The open source sample apps were created by our teams to help you get a handle o
     :::column-end:::
 :::row-end:::
 
-### HoloLens (1st gen) open source sample apps
+### HoloLens (first gen) open-source sample apps
 
 * [Periodic Table of the Elements 1.0](../unity/periodic-table-of-the-elements.md)
 * [Galaxy Explorer 1.0](../unity/galaxy-explorer.md)
@@ -34,16 +36,16 @@ The open source sample apps were created by our teams to help you get a handle o
 
 # [Unreal](#tab/unreal)
 
-Most of the open source sample apps made by our team can be found in the Unreal Mixed Reality Samples [repository](https://github.com/microsoft/MixedReality-Unreal-Samples) on GitHub. We've provided the source code so that developers can look at, learn from, and reuse our projects.
+Most of the open-source sample apps made by our team can be found in the Unreal mixed reality samples [repository](https://github.com/microsoft/MixedReality-Unreal-Samples) on GitHub. We've provided the source code so that developers can look at, learn from, and reuse our projects.
 
-### HoloLens 2 open source sample apps
+### HoloLens 2 open-source sample apps
 
 * [HoloLens2Example](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/HoloLens2Example)
 * [HoloPipes](https://github.com/microsoft/MixedReality-Unreal-HoloPipes) - Download from the [Microsoft Store](https://www.microsoft.com/p/holopipes/9mszb3nnrxn9) in HoloLens 2
 
 ### Made with the Mixed Reality Toolkit for Unreal
 
-A subset of the samples use interactive UX components such as buttons and sliders, which are provided by the [UX Tools plugin](https://aka.ms/uxt-unreal) as part of the [Mixed Reality Toolkit for Unreal](https://aka.ms/mrtk-unreal).
+A subset of the samples uses interactive UX components such as buttons and sliders, which are provided by the [UX Tools plugin](https://aka.ms/uxt-unreal) as part of the [Mixed Reality Toolkit for Unreal](https://aka.ms/mrtk-unreal).
 
 :::row:::
     :::column:::
