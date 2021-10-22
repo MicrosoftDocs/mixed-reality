@@ -2151,7 +2151,7 @@
 			"redirect_url": "/windows/mixed-reality/develop/native/volume-rendering",
 			"redirect_document_id": false
 
-		}
+		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-coordinate-system-synchronization-openxr.md",
 			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-coordinate-system-synchronization-openxr",
