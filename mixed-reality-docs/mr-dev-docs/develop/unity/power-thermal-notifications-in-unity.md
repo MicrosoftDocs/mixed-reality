@@ -31,7 +31,7 @@ This article describes the PowerThermalNotification SDK and its basic usage to g
 
 The PowerThermalNotification SDK is downloadable via the [Mixed Reality Feature Tool](../unity/welcome-to-mr-feature-tool.md).
 
-PowerThermalNotification SDK supports language projections for C# and C++ allowing applications to develop applications for Win32 or UWP platforms.
+PowerThermalNotification SDK supports language projections for C# and C++, allowing developers to develop applications for Win32 or UWP platforms.
 
 ## Conceptual Overview
 
