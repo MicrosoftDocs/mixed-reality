@@ -14,7 +14,7 @@ When the device is running in warm environments or with heavy performance requir
 
 These actions would include things like:
 
-* Adjusting framerate(s)
+* Adjusting frame rate(s)
 * Adjusting charging performance
 * Providing user feedback
 * Terminating applications
