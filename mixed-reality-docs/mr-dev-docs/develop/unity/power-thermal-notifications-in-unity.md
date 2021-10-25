@@ -39,7 +39,7 @@ Talk here about temperature sensors and those being associated with one or more 
 
 ## Platform Response
 
-The following table is a breakdown of system actions, by peripheral.  These actions column can be suppressed using the SDK.  See [Suppressing Default Device Actions](#suppressing-default-device-actions)
+The following table is a breakdown of system actions by peripheral.  These actions column can be suppressed using the SDK.  See [Suppressing Default Device Actions](#suppressing-default-device-actions)
 
 |                           |                                               |                  |                   |                                                          |
 |---------------------------|-----------------------------------------------|------------------|-------------------|----------------------------------------------------------|
