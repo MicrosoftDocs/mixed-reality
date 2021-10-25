@@ -2,6 +2,8 @@
   "build": {
     "content": [
       {
+        "group": "mrtk-unreal-all-up",
+        "src": "./",
         "files": [
           "**/*.md",
           "**/*.yml"
@@ -16,15 +18,20 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
-          "ThirdPartyNotices.md"
+          "ThirdPartyNotices.md",
+          //"ux-tools",
+          //"graphics-tools"
         ]
       }
     ],
     "resource": [
       {
+        "group": "mrtk-unreal-all-up",
+        "src": "./",
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
@@ -41,11 +48,23 @@
     "globalMetadata": {
       "breadcrumb_path": "/windows/mixed-reality/mrtk-unreal/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "feedback_system": "None",
+      "ms.prod": "mixed-reality"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "monikerRange": {
+        "graphics-tools/**/*.md": ">= graphics-tools-0.1",
+        "ux-tools/**/*.md": ">= ux-tools-0.11"
+      }
+    },
     "template": [],
+    "markdownEngineName": "markdig",
     "dest": "mrtk-unreal",
-    "markdownEngineName": "markdig"
+    "groups": {
+      "mrtk-unreal-all-up": {
+        "dest": "temp-mrtk-unreal",
+        "moniker_range": ">= ux-tools-0.11 || >= graphics-tools-0.1"
+      }
+    }
   }
 }

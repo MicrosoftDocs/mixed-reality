@@ -73,7 +73,8 @@
         "Conceptual": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "moniker_ranges": [">= ux-tools-0.11 || >= graphics-tools-0.1"] 
     }
   ],
   "notification_subscribers": [],
