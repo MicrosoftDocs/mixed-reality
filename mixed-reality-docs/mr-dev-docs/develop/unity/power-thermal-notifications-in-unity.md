@@ -68,4 +68,4 @@ Oh wow this code is great()
 ```
 
 > [!NOTE]
-> <!--Foreground Note-->The suppression APIs will only work if the process using the PowerThermalNotification class is in the foreground.  Background processes can still subscribe to events but they may not disable device actions
+> <!--Foreground Note-->The suppression APIs will only work if the process using the PowerThermalNotification class is in the foreground.  Background processes can still subscribe to events but may not disable device actions.
