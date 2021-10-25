@@ -12,7 +12,7 @@ keywords: Unity, power, performance, thermal, mitigation, mixed reality headset,
 
 When the device is running in warm environments or with heavy performance requirements (CPU/GPU usage, peripheral usage, etc.), the device may take actions to keep itself from overheating.
 
-These actions include but are not limited to:
+These actions would include things like:
 
 * Adjusting framerate(s)
 * Adjusting charging performance
@@ -23,7 +23,7 @@ and in worst case scenarios:
 
 * Shutting down the device
 
-Applications that may require a heavier performance profile may use the PowerThermalNotification SDK to subscribe to notification events to implement their own actions in addition to/ or in place of these.  Doing so can allow the device to operate longer in situations when otherwise an application may be terminated by the system.
+If your application demands high peripheral performance, consider using the PowerThermalNotification SDK to subscribe to notification events and implement your own custom actions.  Doing so can allow the device to operate longer in situations when otherwise an application may be terminated by the system.
 
 This article describes the PowerThermalNotification SDK and its basic usage to get you started.
 
@@ -37,6 +37,18 @@ PowerThermalNotification SDK supports language projections for C# and C++ allowi
 
 Talk here about temperature sensors and those being associated with one or more peripherals.  Maybe a pretty picture.
 
+## Platform Response
+
+The following table is a breakdown of system actions, by peripheral.  These actions column can be suppressed using the SDK.  See [Suppressing Default Device Actions](#suppressing-default-device-actions)
+
+|                           |                                               |                  |                   |                                                          |
+|---------------------------|-----------------------------------------------|------------------|-------------------|----------------------------------------------------------|
+| **Peripheral**                | **MinimumUserImpact**                             | **MediumUserImpact** | **MaximumUserImpact** | **Last Resort**                      |
+| ISLAND_PERIPHERAL_GPU     | Throttle MRC Quality </br> Adjust VSYNC Interval |                  |                   |                                                    |
+| ISLAND_PERIPHERAL_DISPLAY | Depth FPS Reduction                        |                  |                   |                                                    |
+| Any Peripheral            | n/a                                        | n/a              | n/a               | Display Warning </br> Close Application </br> Stop MRC Capture |
+> [!NOTE]
+> <!--Last Resort Note-->Actions in the "Last Resort" column cannot be suppressed
 
 ## Registering for Events
 
@@ -48,7 +60,7 @@ this is as sample()
 
 ## Suppressing Default Device Actions
 
-Talk here about suppressing actions the device might take as mentioned earlier.  Have a 
+Talk here about suppressing actions the device might take as mentioned earlier.
 Also include a nice code snippet:
 
 ```cs
