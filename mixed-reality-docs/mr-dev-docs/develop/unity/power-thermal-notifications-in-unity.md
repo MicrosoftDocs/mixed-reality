@@ -19,7 +19,7 @@ These actions would include things like:
 * Providing user feedback
 * Terminating applications
 
-and in worst case scenarios:
+... and in worst case scenarios:
 
 * Shutting down the device
 
