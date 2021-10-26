@@ -47,7 +47,7 @@ A simple example would be an application that is using CPU to process a large am
 
 ## Platform Response
 
-The following table is a breakdown of system actions by peripheral.  Actions described below can be suppressed using the SDK.  See [Suppressing Default Device Actions](#suppressing-default-device-actions)
+The following table is a breakdown of system actions by peripheral.  Actions described below can be suppressed using the SDK.  See [Suppressing Default System Mitigations](#suppressing-default-system-mitigations)
 
 | **Peripheral**    |  **MinimumUserImpact**  |   **MediumUserImpact** |    **MaximumUserImpact** |**Last Resort**  |
 |-------------------|-------------------------|------------------------|--------------------------|---------------- |
@@ -129,7 +129,7 @@ private void NotificationHandler(object sender, PowerThermalEventArgs args)
 > [!NOTE]
 > <!--Hysteresis Note-->Mitigation levels for peripherals have hysteresis.  Once the level increases, it does not decrease until it releases.  The release is an event with args.MitigationLevel set to PowerThermalMitigationLevel.NoUserImpact.
 
-## Suppressing Default System Device Actions
+## Suppressing Default System Mitigations
 
 If you don't want the system to attempt to mitigate certain peripherals, you can suppress them.  To do this, just update the **SuppressedPlatformMitigationForPeripherals** property, or call the **SuppressPlatformMitigation** function.
 
