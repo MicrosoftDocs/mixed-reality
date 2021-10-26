@@ -101,7 +101,7 @@ When an event is received, the event handler should inspect **args.ImpactedPerip
 
 Here's an example handler:
 
-```css
+```cs
 bool doCpuThrottle = false;
 
 private void NotificationHandler(object sender, PowerThermalEventArgs args)
@@ -213,7 +213,7 @@ public class NotificationManager
 
 Here is the NotificationComponent class:
 
-```css
+```cs
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
