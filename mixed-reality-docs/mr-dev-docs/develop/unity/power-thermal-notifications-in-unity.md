@@ -35,15 +35,15 @@ PowerThermalNotification SDK supports language projections for C# and C++, allow
 
 ## Conceptual Overview
 
-The power consumed by our devices is dissipated in heat.  A traditional PC device would have a fan to address this, but a wearable device must be lightweight.  Because of this the cooling solution is more complex.  HoloLens 2 has built in hardware and software safety features to ensure the headset does not get too hot for the user, but these features must be balanced with customer experience as well.
+The power consumed by our devices is dissipated in heat.  A traditional PC device would have a fan to address this, but a wearable device must be lightweight.  Because of this the cooling solution is more complex.  HoloLens 2 has built-in hardware and software safety features to ensure the headset does not get too hot for the user, but these features must be balanced with customer experience as well.
 
-For example, if we know which part of the device is heating up, we can choose to throttle the peripherals responsible for this heat.  As a last resort, we might close an application thought to be responsible for the power that led to this heat.
+For example, if we know which part of the device is heating up, we can choose to throttle the peripherals responsible for this heat.  As a last resort, we might close an application that's thought to be responsible for the power that led to this heat.
 
-HoloLens 2 does just this.  It has several temperature sensors on the device that feed into a thermal framework.  The framework ties groups of sensors to different peripherals on the device.  They are grouped because it may be impossible to differentiate the exact peripheral in a physical area responsible for the power draw that heats up the device.
+HoloLens 2 does this using temperature sensors. A thermal framework ties groups of sensors to different peripherals on the device.  The sensors are grouped because it may be impossible to determine which peripheral in a physical area is responsible for the power draw that heats up the device.
 
 The PowerThermalNotification SDK exposes the APIs necessary to monitor these groups of sensors.  SDK events fire when a peripheral being used by the application is showing signs that a mitigation may be required.  The application can then adapt its customer experience to reduce the thermal impact.  Reducing impact means less risk of system action such as application or device shutdown.
 
-A simple example would be an application that is using CPU to process a large amount of video data.  The application could subscribe to a performance notification for the CPU component.  When it receives a notification, the application can reduce the CPU workload.  If another event is received indicating no further mitigation is necessary, the CPU workload can be restored.
+A simple example would be an application that's using the CPU to process a large amount of video data.  The application could subscribe to a performance notification for the CPU component.  When the application receives a notification, it can reduce the CPU workload.  If another event is received that indicates no further mitigation is necessary, the CPU workload can be restored.
 
 ## Platform Response
 
@@ -67,7 +67,7 @@ To get notifications, there are three requirements:
 
 You won't receive events if your application doesn't meet these requirements.
 
-The first item can be checked using the **IsSupported()** function.  If the system supports notifications for at least one of the peripherals in the mask, the function will return true.  You may choose not to check support using this function as long as your application doesn't explicitly depend on PowerThermalNotification SDK events.
+The first item can be checked using the **IsSupported()** function.  If the system supports notifications for at least one of the peripherals in the mask, the function will return true.  You can choose not to check support using this function as long as your application doesn't explicitly depend on PowerThermalNotification SDK events.
 
 Here's a code snippet for grabbing the **PowerThermalNotification** class instance and configuring it for notifications for both the **PeripheralFlags.Cpu** and **PeripheralFlags.PhotoVideoCamera**:
 
@@ -114,7 +114,7 @@ private void NotificationHandler(object sender, PowerThermalEventArgs args)
         }
         else if(args.MitigationLevel >= PowerThermalMitigationLevel.MinimumUserImpact)
         {
-            // Note that this only kicks in at MinimumUserImpact and does not get released until 
+            // Note that this only kicks in at MinimumUserImpact and does not get released until NoUserImpact
             doCpuThrottle = true;
         }
     }
@@ -127,7 +127,7 @@ private void NotificationHandler(object sender, PowerThermalEventArgs args)
 ```
 
 > [!NOTE]
-> <!--Hysteresis Note-->Mitigation levels for peripherals have hysteresis.  Once the level increases, it does not decrease until it releases.  The release is an event with args.MitigationLevel set to PowerThermalMitigationLevel.NoUserImpact.
+> <!--Hysteresis Note-->Mitigation levels for peripherals have hysteresis.  Once the level increases, it doesn't decrease until it releases.  The release is an event with args.MitigationLevel set to PowerThermalMitigationLevel.NoUserImpact.
 
 ## Suppressing Default System Mitigations
 
@@ -152,7 +152,7 @@ p.SuppressPlatformMitigation(PeripheralFlags.Cpu, false);
 
 ## Putting it Together
 
-Here's a simple example of a set of scripts that can be used in unity to enable this functionality.  The NotificationComponent class can be added to any game object and that game object can track the mitigation level of the assigned peripheral.  The NotificationManager class deals with the SDK managing subscriptions through the single instance of the **PowerThermalNotification** class
+Here's a simple example of a set of scripts that can be used in Unity to enable this functionality.  The NotificationComponent class can be added to any game object and that game object can track the mitigation level of the assigned peripheral.  The NotificationManager class deals with the SDK managing subscriptions through the single instance of the **PowerThermalNotification** class
 
 Here's the NotificationManager class:
 
