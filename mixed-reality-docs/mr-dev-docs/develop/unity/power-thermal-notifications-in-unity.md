@@ -129,7 +129,7 @@ private void NotificationHandler(object sender, PowerThermalEventArgs args)
 > [!NOTE]
 > <!--Hysteresis Note-->Mitigation levels for peripherals have hysteresis.  Once the level increases, it does not decrease until it releases.  The release is an event with args.MitigationLevel set to PowerThermalMitigationLevel.NoUserImpact.
 
-## Suppressing System Device Actions
+## Suppressing Default System Device Actions
 
 If you don't want the system to attempt to mitigate certain peripherals, you can suppress them.  To do this, just update the **SuppressedPlatformMitigationForPeripherals** property, or call the **SuppressPlatformMitigation** function.
 
