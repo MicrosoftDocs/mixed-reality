@@ -205,7 +205,7 @@ If your remote app is using DX12, use XrRemotingFrameMirrorImageD3D12MSFT instea
 
 ## Optional: Custom data channels
 
-Starting with version [2.5.0](holographic-remoting-version-history.md#v2.5.0), custom data channels can be used with the OpenXR API to send user data over the already-established remoting connection. For more information, see [Custom Data Channels with the OpenXR API](../advanced-concepts/holographic-remoting-custom-data-channels-openxr.md).
+Starting with version [2.5.0](holographic-remoting-version-history.md#v2.5.0), custom data channels can be used with the OpenXR API to send user data over the already-established remoting connection. For more information, see [Custom Data Channels with the OpenXR API](holographic-remoting-custom-data-channels-openxr.md).
 
 ## Optional: Speech
 
