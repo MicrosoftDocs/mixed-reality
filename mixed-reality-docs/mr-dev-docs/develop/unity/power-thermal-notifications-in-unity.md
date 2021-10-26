@@ -156,7 +156,7 @@ Here's a simple example of a set of scripts that can be used in unity to enable 
 
 Here's the NotificationManager class:
 
-```css
+```cs
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
