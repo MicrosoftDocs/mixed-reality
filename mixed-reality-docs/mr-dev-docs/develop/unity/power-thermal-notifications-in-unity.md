@@ -35,7 +35,15 @@ PowerThermalNotification SDK supports language projections for C# and C++, allow
 
 ## Conceptual Overview
 
-Talk here about temperature sensors and those being associated with one or more peripherals.  Maybe a pretty picture.
+The power consumed by our devices is dissipated in heat.  A traditional PC device would have a fan to address this, but a wearable device must be lightweight.  Because of this the cooling solution is more complex.  HoloLens 2 has built in hardware and software safety features to ensure the headset does not get too hot for the user, but these features must be balanced with customer experience as well.
+
+For example, if we know which part of the device is heating up, we can choose to throttle the peripherals responsible for this heat.  As a last resort, we might close an application thought to be responsible for the power that led to this heat.
+
+HoloLens 2 does just this.  It has several temperature sensors on the device that feed into a thermal framework.  The framework ties groups of sensors to different peripherals on the device.  They are grouped because it may be impossible to differentiate the exact peripheral in a physical area responsible for the power draw that heats up the device.
+
+The PowerThermalNotification SDK exposes the APIs necessary to monitor these groups of sensors.  SDK events fire when a peripheral being used by the application is showing signs that a mitigation may be required.  The application can then adapt its customer experience to reduce the thermal impact.  Reducing impact means less risk of system action such as application or device shutdown.
+
+A simple example of this would be an application that is using CPU to process a large amount of video data.  The application could subscribe to a performance notification for the CPU component and when it receives a notification, the application can reduce the CPU workload.  When another event is received indicating no further mitigation is necessary, the CPU workload can be restored.
 
 ## Platform Response
 
