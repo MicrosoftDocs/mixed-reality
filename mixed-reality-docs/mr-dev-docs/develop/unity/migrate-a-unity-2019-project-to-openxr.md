@@ -1,6 +1,6 @@
 ---
 title: Migrate a Unity 2019 project to Unity 2020 + OpenXR
-description: Learn how to setup your Unity projects with and without MRTK using Legacy built-in XR support.
+description: Learn how to Migrate a Unity 2019 project to Unity 2020 + OpenXR.
 author: vtieto
 ms.author: v-vtieto
 ms.date: 10/27/2021
@@ -45,15 +45,10 @@ We're not quite ready to install OpenXR yet, but this next set of steps helps yo
 Ensure that you're in the Universal Windows Platform tab (it's the second tab and displays the Windows logo) and then, under **Plug-in-Providers**, select **Windows Mixed Reality.**
 - **If you're targeting Desktop VR:**  
 Ensure that you're in the Desktop tab (it's the first tab and displays an image of a monitor), and then, under **Plug-in-Providers**, select **Windows Mixed Reality.**
-
-<!-- You'll see an **Importing** dialog, and then, in the left-side column, **Windows Mixed Reality** is displayed under **XR Plug-in Management.** NOTE: I don't see "windows mixed reality" in the left-side column. -->
-
 1. The **MRTK Project Configurator** window appears again. Click the **Next** button, and then click **Next** again. (You may want to take a moment to read the explanations on these pages before moving on.) <!-- Is this the right thing to do? Find out.>
 1. Select **Import TMP Essentials**.
 1. Select **Done**. This closes the Configurator.
 1. Close the **Project Settings** window, save your project, and then exit Unity.
-
-<!-- pic of dialog is at 31:37 -->
 
 > [!NOTE]
 > When you use XR Plug-in Management in Unity 2019, Azure Spatial Anchors (ASA) isn't supported. If your project has ASA code, you won’t be able to test it until after you've installed Unity 2020. Otherwise, you should be able to validate your app at this stage.
