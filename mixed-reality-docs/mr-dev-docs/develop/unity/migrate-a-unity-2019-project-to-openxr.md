@@ -34,7 +34,7 @@ As this point, you might see a button labeled **Install XR Plugin Management** b
 1. Click the **Install XR Plugin Management** button.
 1. A dialog named **Built in VR Detected** appears and asks if you want to remove the built-in VR package. Click **Ok**.
 
-    :::image type="content" source="images/002-built-in-vr" alt-text="Message about Build-in VR being detected.":::
+    :::image type="content" source="images/002-built-in-vr.png" alt-text="Message about Built-in VR being detected.":::
 
 1. The **Built in VR Enabled** dialog box appears. Click **Ok**. This disables built-in VR.
 1. The **MRTK Project Configurator** window appears and requests that you enable an XR pipeline. Select the second option, **XR SDK/SR Management**.
@@ -133,7 +133,7 @@ Your project is now fully migrated.
 ## See also
 
 * [OpenXR overview](../native/openxr.md)
-* [Getting started with OpenXR](../native/openxr-getting-started)
+* [Getting started with OpenXR](../native/openxr-getting-started.md)
 * <a href="https://www.khronos.org/openxr/" target="_blank">More information on OpenXR</a>
 * <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html" target="_blank">OpenXR 1.0 specification</a>
 * <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html" target="_blank">OpenXR 1.0 API reference</a>
