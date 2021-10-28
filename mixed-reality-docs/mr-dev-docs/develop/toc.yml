@@ -319,22 +319,24 @@
           href: javascript/tutorials/babylonjs-webxr-piano/keyboard-model-02.md
         - name: 3. Play the 3D piano
           href: javascript/tutorials/babylonjs-webxr-piano/keyboard-interaction-03.md
+- name: OpenXR
+  items:
+    - name: OpenXR overview
+      href: native/openxr.md
+    - name: Getting started with OpenXR
+      href: native/openxr-getting-started.md
+    - name: Migrate a Unity 2019 project to Unity 2020 + OpenXR
+      href: unity/migrate-a-unity-2019-project-to-openxr.md
+    - name: OpenXR best practices
+      href: native/openxr-best-practices.md
+    - name: OpenXR performance
+      href: native/openxr-performance.md
+    - name: OpenXR troubleshooting
+      href: native/openxr-troubleshooting.md
 - name: Native engines
   items:
   - name: Native engines overview
     href: native/directx-development-overview.md
-  - name: OpenXR
-    items:
-      - name: OpenXR overview
-        href: native/openxr.md
-      - name: Getting started with OpenXR
-        href: native/openxr-getting-started.md
-      - name: OpenXR best practices
-        href: native/openxr-best-practices.md
-      - name: OpenXR performance
-        href: native/openxr-performance.md
-      - name: OpenXR troubleshooting
-        href: native/openxr-troubleshooting.md
   - name: WinRT (Legacy)
     items:
       - name: Basic building blocks
