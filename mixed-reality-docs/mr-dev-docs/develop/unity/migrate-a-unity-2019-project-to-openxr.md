@@ -12,7 +12,7 @@ keywords: Unity, mixed reality, development, getting started, new project, Windo
 
 ## Update MRTK to the latest stable version
 
-If you’re already using MRTK, we suggest that the first step in your migration should be to run the Mixed Reality Feature Tool and update to the latest stable version of MRTK. If you're not already familiar with the Tool, [our instructions will guide you](link). Those instructions are general; you'll need to know which package to select for importing in the Tool's UI. For our purposes here, once you're in the Tool, open the **Mixed Reality Toolkit** drop-down and select the latest version of **Mixed Reality Toolkit Foundation**.
+If you’re already using MRTK, we suggest that the first step in your migration should be to run the Mixed Reality Feature Tool and update to the latest stable version of MRTK. If you're not already familiar with the Tool, [our instructions will guide you](mrft-basics-short-version.md). Those instructions are general; you'll need to know which package to select for importing in the Tool's UI. For our purposes here, once you're in the Tool, open the **Mixed Reality Toolkit** drop-down and select the latest version of **Mixed Reality Toolkit Foundation**.
 
 By doing this upgrade while still using Unity 2019, you can view the MRTK Project Configurator and see any "deprecated API" warnings about how to get current. The warnings will tell you what to change. If you don't do this MRTK upgrade first, the old API might be gone and you won’t have those warnings.
 
@@ -78,7 +78,7 @@ If you were previously using AR Foundation 2.0, the project will move you forwar
 
 ## Use the Mixed Reality Feature Tool to install more packages
 
-As mentioned earlier, our [Mixed Reality Feature Tool instructions page](link) gives you general information on how to use the Tool to import packages. You need to know which specific packages to select for importing. Once you're in the Tool, select the packages below.
+As mentioned earlier, our [Mixed Reality Feature Tool instructions page](mrft-basics-short-version.md) gives you general information on how to use the Tool to import packages. You need to know which specific packages to select for importing. Once you're in the Tool, select the packages below.
 
 1. If you’re using ASA, open the **Azure Mixed Reality Services** drop-down and select the latest version of **Azure Spatial Anchors SDK Core** and **Azure Spatial Anchors SDK for Windows**.
 1. Open the **Platform Support** drop-down and select the latest version of **Mixed Reality OpenXR Plugin.**
