@@ -10,13 +10,15 @@ keywords: Unity, mixed reality, development, getting started, new project, Windo
 
 # Migrate a Unity 2019 project to Unity 2020 + OpenXR
 
+> [!IMPORTANT]
+> For your migration to be successful, you must complete all the steps in this article in the order presented.
+
 ## Update MRTK to the latest stable version
 
 If you’re already using MRTK, we suggest that the first step in your migration should be to run the Mixed Reality Feature Tool and update to the latest stable version of MRTK. [Our brief guide](mrft-basics-short-version.md) walks you through the basic steps; if you're new to using the Tool and want more detailed instructions, see [Welcome to the Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md).
 
-The instructions in the brief guide are general; you'll need to know which package(s) to select for importing in the Tool's UI.
-
-- Open the Mixed Reality Feature Tool and follow the steps in our brief guide. Inside the Tool, open the **Mixed Reality Toolkit** drop-down and select the latest version of **Mixed Reality Toolkit Foundation**.
+The instructions in the brief guide are general; you'll need to know which package(s) to select in the Tool's UI for importing.
+- Open the Mixed Reality Feature Tool and follow the steps in our brief guide. Inside the Tool, open the **Mixed Reality Toolkit** drop-down and select the latest version of **Mixed Reality Toolkit Foundation** for importing.
 
 By doing this upgrade while still using Unity 2019, you can view the MRTK Project Configurator and see any "deprecated API" warnings about how to get current. The warnings will tell you what to change. If you don't do this MRTK upgrade first, the old API might be gone and you won’t have those warnings.
 
@@ -30,11 +32,10 @@ After you've updated MRTK, you can instruct Unity 2019 to use XR Plug-in Managem
 As this point, you might see a button labeled **Install XR Plugin Management** button. If so, continue on with the steps below. If you already have the XR management system installed, you can skip the rest of the steps in this section and continue on to the next section, "Choose 'Windows Mixed Reality'."
 
 1. Click the **Install XR Plugin Management** button.
-1. A dialog named **Built in VR Detected** appears and asks if you want to remove the built-in VR package.
+1. A dialog named **Built in VR Detected** appears and asks if you want to remove the built-in VR package. Click **Ok**.
 
-002-built-in-vr
+    :::image type="content" source="images/002-built-in-vr" alt-text="Message about Build-in VR being detected.":::
 
-Click **Ok**.
 1. The **Built in VR Enabled** dialog box appears. Click **Ok**. This disables built-in VR.
 1. The **MRTK Project Configurator** window appears and requests that you enable an XR pipeline. Select the second option, **XR SDK/SR Management**.
 1. On the next page in the Configurator, click **Show Settings**.
@@ -45,10 +46,10 @@ We're not quite ready to install OpenXR yet, but this next set of steps helps yo
 
 1. In the Unity Editor **Project Settings** window, ensure that you're on the **XR Plug-in Management** page.
 1. Do one of the following:
-- **If you're targeting the HoloLens 2:**  
-Ensure that you're in the Universal Windows Platform tab (it's the second tab and displays the Windows logo) and then, under **Plug-in-Providers**, select **Windows Mixed Reality.**
-- **If you're targeting Desktop VR:**  
-Ensure that you're in the Desktop tab (it's the first tab and displays an image of a monitor), and then, under **Plug-in-Providers**, select **Windows Mixed Reality.**
+    - **If you're targeting the HoloLens 2:**  
+    Ensure that you're in the Universal Windows Platform tab (it's the second tab and displays the Windows logo) and then, under **Plug-in-Providers**, select **Windows Mixed Reality.**
+    - **If you're targeting Desktop VR:**  
+    Ensure that you're in the Desktop tab (it's the first tab and displays an image of a monitor), and then, under **Plug-in-Providers**, select **Windows Mixed Reality.**
 1. The **MRTK Project Configurator** window appears again. Click the **Next** button, and then click **Next** again. (You may want to take a moment to read the explanations on these pages before moving on.) <!-- Is this the right thing to do? Find out.>
 1. Select **Import TMP Essentials**.
 1. Select **Done**. This closes the Configurator.
@@ -128,3 +129,12 @@ Look in the left-side column and ensure that you're on the **XR Plug-in Manageme
 1. Close the **Project Settings** window and any other windows that are still open.
 
 Your project is now fully migrated.
+
+## See also
+
+* [OpenXR overview](../native/openxr.md)
+* [Getting started with OpenXR](../native/openxr-getting-started)
+* <a href="https://www.khronos.org/openxr/" target="_blank">More information on OpenXR</a>
+* <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html" target="_blank">OpenXR 1.0 specification</a>
+* <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html" target="_blank">OpenXR 1.0 API reference</a>
+* <a href="https://www.khronos.org/files/openxr-10-reference-guide.pdf" target="_blank">OpenXR 1.0 quick reference guide</a>
