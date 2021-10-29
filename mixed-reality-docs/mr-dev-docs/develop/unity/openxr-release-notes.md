@@ -6,7 +6,7 @@ ms.author: kurtie
 ms.date: 10/18/2021
 ms.topic: article
 ms.localizationpriority: high
-keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit, mixed reality headset, windows mixed reality headset, virtual reality headset, installation, Windows, HoloLens, emulator, unreal, openxr
+keywords: up-to-date, tools, get started, basics, unity, mixed reality headset, windows mixed reality headset, virtual reality headset, installation, HoloLens, openxr, unity release notes, openxr release notes, mixed reality release notes
 ---
 
 # Mixed Reality OpenXR plugin release notes
