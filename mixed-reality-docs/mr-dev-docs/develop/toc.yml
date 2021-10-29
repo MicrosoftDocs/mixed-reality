@@ -10,6 +10,21 @@
     href: mixed-reality-cloud-services.md
   - name: Samples and feature apps
     href: features-and-samples.md
+- name: Porting apps
+  items:
+  - name: Porting overview
+    href: porting-apps/porting-overview.md
+  - name: Migrate a Unity 2019 project to Unity 2020 + OpenXR
+    href: porting-apps/migrate-a-unity-2019-project-to-openxr.md
+    displayname: openxr, migrate, port, unity    
+  - name: Porting HoloLens (1st Gen) apps to HoloLens 2
+    href: porting-apps/porting-hl1-hl2.md
+  - name: Porting VR apps to Windows Mixed Reality
+    href: porting-apps/porting-guides.md
+  - name: Updating SteamVR apps for Windows Mixed Reality
+    href: porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md
+  - name: Updating 2D UWP apps for Windows Mixed Reality
+    href: porting-apps/building-2d-apps.md
 - name: Unity
   items:
   - name: Unity development for HoloLens
@@ -319,20 +334,6 @@
           href: javascript/tutorials/babylonjs-webxr-piano/keyboard-model-02.md
         - name: 3. Play the 3D piano
           href: javascript/tutorials/babylonjs-webxr-piano/keyboard-interaction-03.md
-- name: OpenXR
-  items:
-    - name: OpenXR overview
-      href: native/openxr.md
-    - name: Getting started with OpenXR
-      href: native/openxr-getting-started.md
-    - name: Migrate a Unity 2019 project to Unity 2020 + OpenXR
-      href: unity/migrate-a-unity-2019-project-to-openxr.md
-    - name: OpenXR best practices
-      href: native/openxr-best-practices.md
-    - name: OpenXR performance
-      href: native/openxr-performance.md
-    - name: OpenXR troubleshooting
-      href: native/openxr-troubleshooting.md
 - name: Native engines
   items:
   - name: Native engines overview
@@ -375,6 +376,18 @@
         items:
         - name: QR code tracking
           href: native/qr-code-tracking-cs-cpp.md
+  - name: OpenXR
+    items:
+      - name: OpenXR overview
+        href: native/openxr.md
+      - name: Getting started with OpenXR
+        href: native/openxr-getting-started.md
+      - name: OpenXR best practices
+        href: native/openxr-best-practices.md
+      - name: OpenXR performance
+        href: native/openxr-performance.md
+      - name: OpenXR troubleshooting
+        href: native/openxr-troubleshooting.md          
   - name: Debugging and performance
     items:
     - name: Volume rendering
@@ -464,18 +477,6 @@
     items:
     - name: WebRTC (C#, C++, Unity)
       href: https://github.com/microsoft/MixedReality-WebRTC
-  - name: Porting apps
-    items:
-    - name: Porting overview
-      href: porting-apps/porting-overview.md
-    - name: Porting HoloLens (1st Gen) apps to HoloLens 2
-      href: porting-apps/porting-hl1-hl2.md
-    - name: Porting VR apps to Windows Mixed Reality
-      href: porting-apps/porting-guides.md
-    - name: Updating SteamVR apps for Windows Mixed Reality
-      href: porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md
-    - name: Updating 2D UWP apps for Windows Mixed Reality
-      href: porting-apps/building-2d-apps.md
   - name: Device Portal
     items:
     - name: Using the Windows Device Portal

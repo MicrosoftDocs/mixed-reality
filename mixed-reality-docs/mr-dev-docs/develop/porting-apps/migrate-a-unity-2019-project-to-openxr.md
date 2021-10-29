@@ -3,17 +3,23 @@ title: Migrate a Unity 2019 project to Unity 2020 + OpenXR
 description: Learn how to Migrate a Unity 2019 project to Unity 2020 + OpenXR.
 author: vtieto
 ms.author: v-vtieto
-ms.date: 10/27/2021
+ms.date: 10/29/2021
 ms.topic: article
 keywords: Unity, mixed reality, development, getting started, new project, Windows Mixed Reality, XR, mrtk, Unity 2020, Unity 2019, OpenXR, migrate
 ---
 
 # Migrate a Unity 2019 project to Unity 2020 + OpenXR
 
-> [!IMPORTANT]
-> For your migration to be successful, you must complete all the steps in this article in the order presented.
+For the smoothest migration, we recommend that you complete all the steps in this article in the order presented. Here's an overview of the major steps:
 
-## Update MRTK to the latest stable version
+1. Update MRTK to the latest stable version.
+1. Move your project to Unity 2019 XR Plug-in Management.
+1. Choose "Windows Mixed Reality."
+1. Upgrade to Unity 2020.3 LTS.
+1. Use the Mixed Reality Feature Tool to install more packages.
+1. Configure XR Plugin Management for OpenXR.
+
+## 1. Update MRTK to the latest stable version
 
 If you’re already using MRTK, we suggest that the first step in your migration should be to run the Mixed Reality Feature Tool and update to the latest stable version of MRTK. [Our brief guide](mrft-basics-short-version.md) walks you through the basic steps; if you're new to using the Tool and want more detailed instructions, see [Welcome to the Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md).
 
@@ -22,7 +28,7 @@ The instructions in the brief guide are general; you'll need to know which packa
 
 By doing this upgrade while still using Unity 2019, you can view the MRTK Project Configurator and see any "deprecated API" warnings about how to get current. The warnings will tell you what to change. If you don't do this MRTK upgrade first, the old API might be gone and you won’t have those warnings.
 
-## Move your project to Unity 2019 XR Plug-in Management
+## 2. Move your project to Unity 2019 XR Plug-in Management
 
 After you've updated MRTK, you can instruct Unity 2019 to use XR Plug-in Management.
 
@@ -40,7 +46,7 @@ As this point, you might see a button labeled **Install XR Plugin Management** b
 1. The **MRTK Project Configurator** window appears and requests that you enable an XR pipeline. Select the second option, **XR SDK/SR Management**.
 1. On the next page in the Configurator, click **Show Settings**.
 
-## Choose "Windows Mixed Reality"
+## 3. Choose "Windows Mixed Reality"
 
 We're not quite ready to install OpenXR yet, but this next set of steps helps you to get clean on any APIs that were only available and supported on the “Built-in XR” path. (If you’re using MRTK, most of this is abstracted for you.)
 
@@ -58,7 +64,7 @@ We're not quite ready to install OpenXR yet, but this next set of steps helps yo
 > [!NOTE]
 > When you use XR Plug-in Management in Unity 2019, Azure Spatial Anchors (ASA) isn't supported. If your project has ASA code, you won’t be able to test it until after you've installed Unity 2020. Otherwise, you should be able to validate your app at this stage.
 
-## Upgrade to Unity 2020.3 LTS
+## 4. Upgrade to Unity 2020.3 LTS
 
 1. Install the [latest LTS patch release](choosing-unity-version.md) of Unity 2020.3.
 1. Open your Unity 2019 project in Unity 2020.3.
@@ -67,7 +73,7 @@ You’ll see a dialog asking if you want to upgrade your project to a newer vers
 
 If you were previously using AR Foundation 2.0, the project will move you forward automatically to AR Foundation 4.0.
 
-## Use the Mixed Reality Feature Tool to install more packages
+## 5. Use the Mixed Reality Feature Tool to install more packages
 
 As mentioned earlier, our [Mixed Reality Feature Tool brief guide](mrft-basics-short-version.md) gives you basic, general information on how to use the Tool to import packages. Once you're in the Tool, select the packages below.
 
@@ -77,7 +83,7 @@ As mentioned earlier, our [Mixed Reality Feature Tool brief guide](mrft-basics-s
 1. When Unity reopens, the **MRTK Project Configurator** appears. Take a moment to read the explanations in the window, and then select **Apply**.
 1. A dialog appears stating that Unity must be restarted for the input system to take effect. Select **Apply**.
 
-## Configuring XR Plugin Management for OpenXR
+## 6. Configure XR Plugin Management for OpenXR
 
 After Unity reopens again, you can set OpenXR as the runtime:
 
