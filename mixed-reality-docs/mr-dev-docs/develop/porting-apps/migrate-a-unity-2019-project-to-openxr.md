@@ -21,12 +21,15 @@ For the smoothest migration, we recommend that you complete all the steps in thi
 
 ## 1. Update MRTK to the latest stable version
 
-If you’re already using MRTK, we suggest that the first step in your migration should be to run the Mixed Reality Feature Tool and update to the latest stable version of MRTK. [Our brief guide](mrft-basics-short-version.md) walks you through the basic steps; if you're new to using the Tool and want more detailed instructions, see [Welcome to the Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md).
+If you’re already using MRTK, we suggest that the first step in your migration should be to run the Mixed Reality Feature Tool and update to the latest stable version of MRTK.
 
-The instructions in the brief guide are general; you'll need to know which package(s) to select in the Tool's UI for importing.
-- Open the Mixed Reality Feature Tool and follow the steps in our brief guide. Inside the Tool, open the **Mixed Reality Toolkit** drop-down and select the latest version of **Mixed Reality Toolkit Foundation** for importing.
+[!INCLUDE [mrft-steps-part-1.md](../../includes)]
+1. Click the "+" button to the left of **Mixed Reality Toolkit** and then select the latest version of **Mixed Reality Toolkit Foundation**.
+[!INCLUDE [mrft-steps-part-2.md](../../includes)]
 
 By doing this upgrade while still using Unity 2019, you can view the MRTK Project Configurator and see any "deprecated API" warnings about how to get current. The warnings will tell you what to change. If you don't do this MRTK upgrade first, the old API might be gone and you won’t have those warnings.
+
+[Learn more about the Mixed Reality Feature Tool](../unity/welcome-to-mr-feature-tool.md).
 
 ## 2. Move your project to Unity 2019 XR Plug-in Management
 
