@@ -2,7 +2,7 @@
 title: Porting overview
 description: An overview of the various porting options for bringing your existing applications to Mixed Reality for HoloLens and VR.
 author: hferrone
-ms.author: v-hferrone
+ms.author: v-vtieto
 ms.date: 10/29/2021
 ms.topic: article
 keywords: porting, unity, middleware, engine, UWP, Win32
@@ -26,7 +26,7 @@ It's important to keep your projects up-to-date. Refer to the engine-based resou
 
 For up-to-date guidance on the recommended Unity and MRTK version, see [Choosing a Unity version](../unity/choosing-unity-version.md).
 
-We recommend OpenXR as the path forward in Mixed Reality development, so be sure to visit our [OpenXR overview](../../native/openxr.md) and our [guide for migrating a Unity 2019 project to Unity 2020 + OpenXR](migrate-a-unity-2019-project-to-openxr.md)
+We recommend OpenXR as the path forward in Mixed Reality development, so be sure to visit our [OpenXR overview](../native/openxr.md) and our [guide for migrating a Unity 2019 project to Unity 2020 + OpenXR](migrate-a-unity-2019-project-to-openxr.md)
 
 ### Unreal
 
