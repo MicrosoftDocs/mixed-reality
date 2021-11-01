@@ -23,9 +23,9 @@ For the smoothest migration, we recommend that you complete all the steps in thi
 
 If you’re already using MRTK, we suggest that the first step in your migration should be to run the Mixed Reality Feature Tool and update to the latest stable version of MRTK.
 
-[!INCLUDE [mrft-steps-part-1.md](../../includes/)]
+[!INCLUDE [mrft-steps-part-1.md](../../includes)]
 1. Click the "+" button to the left of **Mixed Reality Toolkit** and then select the latest version of **Mixed Reality Toolkit Foundation**.
-[!INCLUDE [mrft-steps-part-2.md](../../includes/)]
+[!INCLUDE [mrft-steps-part-2.md](../../includes)]
 
 By doing this upgrade while still using Unity 2019, you can view the MRTK Project Configurator and see any "deprecated API" warnings about how to get current. The warnings will tell you what to change. If you don't do this MRTK upgrade first, the old API might be gone and you won’t have those warnings.
 
@@ -78,7 +78,7 @@ If you were previously using AR Foundation 2.0, the project will move you forwar
 
 ## 5. Use the Mixed Reality Feature Tool to install more packages
 
-As mentioned earlier, our [Mixed Reality Feature Tool brief guide](mrft-basics-short-version.md) gives you basic, general information on how to use the Tool to import packages. Once you're in the Tool, select the packages below.
+Use the Mixed Reality Feature Tool to import the packages below.
 
 1. If you’re using ASA, open the **Azure Mixed Reality Services** drop-down and select the latest version of **Azure Spatial Anchors SDK Core** and **Azure Spatial Anchors SDK for Windows**.
 1. Open the **Platform Support** drop-down and select the latest version of **Mixed Reality OpenXR Plugin.**
