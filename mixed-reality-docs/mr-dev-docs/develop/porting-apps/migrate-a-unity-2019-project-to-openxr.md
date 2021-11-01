@@ -23,7 +23,7 @@ For the smoothest migration, we recommend that you complete all the steps in thi
 
 If you’re already using MRTK, we suggest that the first step in your migration should be to run the Mixed Reality Feature Tool and update to the latest stable version of MRTK.
 
-[!INCLUDE [mrft-steps-part-1.md](../../includes.mrft-steps-part-1.md)]
+[!INCLUDE [mrft-steps-part-1.md](../../includes/mrft-steps-part-1.md)]
 1. Click the "+" button to the left of **Mixed Reality Toolkit** and then select the latest version of **Mixed Reality Toolkit Foundation**.
 [!INCLUDE [mrft-steps-part-2.md](../../includes/mrft-steps-part-2.md)]
 
