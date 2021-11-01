@@ -223,7 +223,7 @@
     items:
       - name: Mixed Reality OpenXR plugin
         href: unity/openxr-release-notes.md
-        displayname: release notes    
+        displayname: release notes, Unity, OpenXR, plugin    
 - name: Unreal
   items:
   - name: Unreal development overview

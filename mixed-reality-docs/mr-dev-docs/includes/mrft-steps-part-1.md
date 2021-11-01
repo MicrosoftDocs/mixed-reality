@@ -15,4 +15,4 @@
 
 1. On the **Discover Features** page, note that there is a list of six package groups.
 
-    :::image type="content" source="media/002-mrft-groups.png" alt-text="The main groups of packages in the Mixed Reality Feature Tool":::
+    :::image type="content" source="media/003-mrft-groups.png" alt-text="The main groups of packages in the Mixed Reality Feature Tool":::
