@@ -23,9 +23,9 @@ For the smoothest migration, we recommend that you complete all the steps in thi
 
 If you’re already using MRTK, we suggest that the first step in your migration should be to run the Mixed Reality Feature Tool and update to the latest stable version of MRTK.
 
-[!INCLUDE [mrft-steps-part-1.md](../../includes)]
+[!INCLUDE [mrft-steps-part-1.md](../../includes/)]
 1. Click the "+" button to the left of **Mixed Reality Toolkit** and then select the latest version of **Mixed Reality Toolkit Foundation**.
-[!INCLUDE [mrft-steps-part-2.md](../../includes)]
+[!INCLUDE [mrft-steps-part-2.md](../../includes/)]
 
 By doing this upgrade while still using Unity 2019, you can view the MRTK Project Configurator and see any "deprecated API" warnings about how to get current. The warnings will tell you what to change. If you don't do this MRTK upgrade first, the old API might be gone and you won’t have those warnings.
 
@@ -69,7 +69,7 @@ We're not quite ready to install OpenXR yet, but this next set of steps helps yo
 
 ## 4. Upgrade to Unity 2020.3 LTS
 
-1. Install the [latest LTS patch release](choosing-unity-version.md) of Unity 2020.3.
+1. Install the [latest LTS patch release](../unity/choosing-unity-version.md) of Unity 2020.3.
 1. Open your Unity 2019 project in Unity 2020.3.
 
 You’ll see a dialog asking if you want to upgrade your project to a newer version of Unity. Click **CONFIRM**.
