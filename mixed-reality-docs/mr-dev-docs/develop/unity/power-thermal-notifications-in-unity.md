@@ -49,13 +49,13 @@ A simple example would be an application that's using the CPU to process a large
 
 The following table is a breakdown of system actions by peripheral.  Actions described below can be suppressed using the SDK.  See [Suppressing Default System Mitigations](#suppressing-default-system-mitigations)
 
-| **Peripheral**    |  **MinimumUserImpact**  |   **MediumUserImpact** |    **MaximumUserImpact** |**Last Resort**  |
-|-------------------|-------------------------|------------------------|--------------------------|-----------------|
-| ISLAND_PERIPHERAL_GPU     | Throttle MRC Quality </br> Adjust VSYNC Interval |  |               |                 |
-| ISLAND_PERIPHERAL_DISPLAY | Depth FPS Reduction                              |  |               |                 |
-| Any Peripheral            |                                                  |  |               | Display Warning </br> Close Application </br> Stop MRC Capture |
+| **Peripheral**    |  **MinimumUserImpact**  |   **MediumUserImpact** |    **MaximumUserImpact** |**Last Resort**  |**Software Shutdown**| **Failsafe**|
+|-------------------|-------------------------|------------------------|--------------------------|-----------------|-----------------|-----------------|
+| ISLAND_PERIPHERAL_GPU     | Throttle MRC Quality </br> Adjust VSYNC Interval |  |               |                 |                 |                 |
+| ISLAND_PERIPHERAL_DISPLAY | Depth FPS Reduction                              |  |               |                 |                 |                 |
+| Any Peripheral            |                                                  |  |               | Display Warning </br> Close Application </br> Stop MRC Capture | OS Shutdown | Hardware Shutdown |
 > [!NOTE]
-> <!--Last Resort Note-->Actions in the "Last Resort" column cannot be suppressed
+> <!--Last Resort Note-->Actions in the "Last Resort", "Software Shutdown", and "Failsafe" columns cannot be suppressed
 
 ## Registering for Events
 
