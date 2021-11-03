@@ -97,11 +97,11 @@ If you’re willing to pay, check out some of the popular video tutorial sites s
 
 | Scenario | Max vertices | Supports animations | Model orientation | LOD | Triangle count | Node/submesh limits | Screen coverage |
 |---|---|---|---|---|---|---|---|
-| [D365 Guides & Microsoft Power Apps](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models) | ❌ | ✔️ |  |  |  |  |  |
+| [D365 Guides & Microsoft Power Apps](/dynamics365/mixed-reality/import-tool/optimize-models) | ❌ | ✔️ |  |  |  |  |  |
 | [Mixed Reality Home](../distribute/creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) | ❌ | ✔️ |  |  |  |  |  |
 | [HoloLens](#using-3d-viewer-on-hololens-2-and-hololens-1st) | ❌ | ✔️ |  |  |  |  |  |
 | [3D app launcher](../distribute/implementing-3d-app-launchers.md) | ❌ | ✔️ |  |  |  |  |  |
-| [Azure Remote Rendering](https://docs.microsoft.com/azure/remote-rendering/) | ❌ | ✔️ |  |  |  |  |  |
+| [Azure Remote Rendering](/azure/remote-rendering/) | ❌ | ✔️ |  |  |  |  |  |
 
 ## Using 3D Viewer on HoloLens 2 and HoloLens (1st)
 
@@ -109,20 +109,20 @@ HoloLens 2 and HoloLens (1st gen) both ship with a version of the 3D Viewer appl
 
 ### HoloLens (1st gen) Beta version 
 
-The 3D Viewer Beta application is only available on HoloLens (1st gen) devices. The beta version can handle showing higher complexity models, while the original 3D Viewer doesn't. However, if you're working with lots of complex models, you might find [Azure Remote Rendering](https://docs.microsoft.com/azure/remote-rendering/) to be a better long-term option. 
+The 3D Viewer Beta application is only available on HoloLens (1st gen) devices. The beta version can handle showing higher complexity models, while the original 3D Viewer doesn't. However, if you're working with lots of complex models, you might find [Azure Remote Rendering](/azure/remote-rendering/) to be a better long-term option. 
 
-Check out our [3D Viewer Beta on HoloLens (1st gen)](https://docs.microsoft.com/hololens/holographic-3d-viewer-beta) documentation for a list of supported files, features, use-cases, and troubleshooting details.
+Check out our [3D Viewer Beta on HoloLens (1st gen)](/hololens/holographic-3d-viewer-beta) documentation for a list of supported files, features, use-cases, and troubleshooting details.
 
 > [!CAUTION]
 > The 3D Viewer Beta applications only runs on x86 and x64 architecture, and won't work with ARM for HoloLens 2 devices.
 
 ## Optimize and convert 3D models
 
-We recommend that you use the [Dynamics 365 optimizing guide](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models).
+We recommend that you use the [Dynamics 365 optimizing guide](/dynamics365/mixed-reality/import-tool/optimize-models).
 
 If you're looking for other tools to post-process 3D models, you can optimize any glTF 2.0 model using the [Windows Mixed Reality Asset Converter](https://github.com/microsoft/glTF-Toolkit) available on GitHub. This toolkit includes a command line tool that uses these steps in sequence in order to convert a glTF 2.0 core asset for use in the Windows Mixed Reality home.
 
-For general best practices, see our [real-time 3D model conversion and optimization guide](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/best-practices).
+For general best practices, see our [real-time 3D model conversion and optimization guide](/dynamics365/mixed-reality/import-tool/best-practices).
 
 ## Check your 3D models
 
