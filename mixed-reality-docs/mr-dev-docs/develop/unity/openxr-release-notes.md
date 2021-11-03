@@ -11,6 +11,11 @@ keywords: up-to-date, tools, get started, basics, unity, mixed reality headset, 
 
 # Mixed Reality OpenXR plugin release notes
 
+## 1.1.2 - 2021-10-27
+
+* Fixed a bug where Unity Editor sometimes cannot quit after an unsuccessful connection to Holographic Remoting player in Play Mode.
+* Update the OpenXR remoting runtime 2.7.1 release.
+
 ## 1.1.1 - 2021-10-15
 
 * Fixed a bug where projects would fail to build if the project also referenced DotNetWinRT package.
