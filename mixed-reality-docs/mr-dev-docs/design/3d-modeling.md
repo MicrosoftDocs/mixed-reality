@@ -10,19 +10,19 @@ keywords: HoloLens, HoloLens 2, 3D, 3D models, modeling, exporting, importing, a
 
 # Working with 3D models
 
-If you’re developing for the HoloLens or immersive headsets such as the [HP Reverb 2](https://www.hp.com/vr/reverb-g2-vr-headset.html), there’s a good chance that you’ll need to have 3D models in your app. Thankfully, you don’t have to be a 3D artist, or have one on your team, to assemble the assets you need to realize your vision. There are a number of ways to obtain pre-made models at a reasonable cost or even for free. We’ll take a look at some of these below. We’ll also discuss how you can get started if you're interested in creating your own 3D models.
+If you’re developing for the HoloLens or immersive headsets such as the [HP Reverb 2](https://www.hp.com/us-en/vr/reverb-g2-vr-headset.html), there’s a good chance that you’ll need to have 3D models in your app. Thankfully, you don’t have to be a 3D artist, or have one on your team, to assemble the assets you need to realize your vision. There are a number of ways to obtain pre-made models at a reasonable cost or even for free. We’ll take a look at some of these below. We’ll also discuss how you can get started if you're interested in creating your own 3D models.
 
-## For Unity Developers: Mixed Reality Toolkit and Asset Store**
+## For Unity Developers: Mixed Reality Toolkit and Asset Store
 
 If you’re a Unity developer and need objects that you can use for spatial interaction and UI, you don’t have to go far. If you're using our Mixed Reality Toolkit (MRTK) in your project, you already have a wide range of built-in objects including bounding boxes, pressable buttons, hand menus, slates, sliders and more.
 
 ![Mixed reality toolkit 3D objects](images/mrtk-ui-objects.png)
 
-If you’re new to MRTK, [download the MRTK Examples Hub app](/p/mrtk-examples-hub/9mv8c39l2sj4?activetab=pivot:overviewtab) and have a look around.
+If you’re new to MRTK, [download the MRTK Examples Hub app](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4?activetab=pivot:overviewtab) and have a look around.
 
 The [Unity Asset Store](https://assetstore.unity.com/3d) is a great place to find assets that you can quickly integrate into your project. Their inventory is massive and they claim to have over 11,000 five-star assets so there’s a good chance you can find what you need or something close. It’s worth taking a look, especially when you consider that many of the assets are free.
 
-## Pre-made Assets**
+## Pre-made Assets
 
 There are numerous Web sites that offer pre-made 3D and CAD (Computer-Aided Design) models and animations at reasonable or no cost. Some of the more popular ones are:
 
