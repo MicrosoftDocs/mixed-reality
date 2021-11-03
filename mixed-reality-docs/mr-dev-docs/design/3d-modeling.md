@@ -98,14 +98,14 @@ If you’re willing to pay, check out some of the popular video tutorial sites s
 | Scenario | Max vertices | Supports animations | Model orientation | LOD | Triangle count | Node/submesh limits | Screen coverage |
 |---|---|---|---|---|---|---|---|
 | [D365 Guides & Microsoft Power Apps](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models) | ❌ | ✔️ |  |  |  |  |  |
-| [Mixed Reality Home](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) | ❌ | ✔️ |  |  |  |  |  |
+| [Mixed Reality Home](../distribute/creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) | ❌ | ✔️ |  |  |  |  |  |
 | [HoloLens](#using-3d-viewer-on-hololens-2-and-hololens-1st) | ❌ | ✔️ |  |  |  |  |  |
-| [3D app launcher](implementing-3d-app-launchers.md) | ❌ | ✔️ |  |  |  |  |  |
+| [3D app launcher](../distribute/implementing-3d-app-launchers.md) | ❌ | ✔️ |  |  |  |  |  |
 | [Azure Remote Rendering](https://docs.microsoft.com/azure/remote-rendering/) | ❌ | ✔️ |  |  |  |  |  |
 
 ## Using 3D Viewer on HoloLens 2 and HoloLens (1st)
 
-HoloLens 2 and HoloLens (1st gen) both ship with a version of the 3D Viewer application. The 3D Viewer on HoloLens 2 is designed to serve a very different purpose than 3D Viewer for the desktop or Model Viewer from HoloLens (1st gen). 3D Viewer for HoloLens 2 is more of a "Decorate your space" app. You'll notice that holograms persist in place and remain visible even while other 2D apps are running. This means that models loaded into 3D Viewer for HoloLens 2 must closely align to the requirements for [3D App Launchers](implementing-3d-app-launchers.md).
+HoloLens 2 and HoloLens (1st gen) both ship with a version of the 3D Viewer application. The 3D Viewer on HoloLens 2 is designed to serve a very different purpose than 3D Viewer for the desktop or Model Viewer from HoloLens (1st gen). 3D Viewer for HoloLens 2 is more of a "Decorate your space" app. You'll notice that holograms persist in place and remain visible even while other 2D apps are running. This means that models loaded into 3D Viewer for HoloLens 2 must closely align to the requirements for [3D App Launchers](../distribute/implementing-3d-app-launchers.md).
 
 ### HoloLens (1st gen) Beta version 
 
