@@ -13,6 +13,9 @@ keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reali
 > [!NOTE]
 > This guidance is specific to Holographic Remoting on HoloLens 2 and Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md).
 
+## Version 2.7.1 (October 26, 2021) <a name="v2.7.1"></a>
+* Various bug fixes and stability improvements.
+
 ## Version 2.7.0 (September 29, 2021) <a name="v2.7.0"></a>
 * Added support for the OpenXR extension XR_MSFT_spatial_anchor_persistence, which allows persistence and retrieval of spatial anchors across application sessions on a device.
 * Added a new user coordinate system type that can be used to synchronize spatial locations between custom players and remote applications.
