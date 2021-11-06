@@ -34,7 +34,7 @@ Select "Switch Platform"
 ### 5. Setup your Windows Mixed Reality hardware
 1. Review steps in [Immersive headset setup](/windows/mixed-reality/enthusiast-guide/before-you-start
 )
-2. Learn about [Using the Windows Mixed Reality simulator](../../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) and [Navigating the Windows Mixed Reality home](../../../discover/navigating-the-windows-mixed-reality-home.md)
+2. Learn about [Using the Windows Mixed Reality simulator](../../advanced-concepts/using-the-windows-mixed-reality-simulator.md) and [Navigating the Windows Mixed Reality home](../../../discover/navigating-the-windows-mixed-reality-home.md)
 
 ### 6. Target your application to run on Windows Mixed Reality
 1. First, you must remove or conditionally compile out any other library support specific to a particular VR SDK. Those assets frequently change settings and properties on your project in ways that are incompatible with other VR SDKs, such as Windows Mixed Reality.
@@ -94,7 +94,7 @@ Read through the [input porting guide for Unity](../porting-guides.md?tabs=input
 
 Windows Mixed Reality will be available on a broad class of devices, ranging from high end gaming PCs, down to broad market mainstream PCs. Depending on what market you're targeting, there's a significant difference in the available compute and graphics budgets for your application. During this porting exercise, you're likely leveraging a premium PC, and have had significant compute and graphics budgets available to your app. If you wish to make your app available to a broader audience, you should test and profile your app on [the representative hardware that you wish to target](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
 
-Both [Unity](https://docs.unity3d.com/Manual/Profiler.html) and [Visual Studio](/visualstudio/profiling/index) include performance profilers, and both [Microsoft](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) and [Intel](https://software.intel.com/articles/vr-content-developer-guide) publish guidelines on performance profiling and optimization. There's an extensive discussion of performance available at [Understanding Performance for Mixed Reality](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md). Further, there are specific details for Unity under [Performance Recommendations for Unity](../../unity/performance-recommendations-for-unity.md).
+Both [Unity](https://docs.unity3d.com/Manual/Profiler.html) and [Visual Studio](/visualstudio/profiling/index) include performance profilers, and both [Microsoft](../../advanced-concepts/understanding-performance-for-mixed-reality.md) and [Intel](https://software.intel.com/articles/vr-content-developer-guide) publish guidelines on performance profiling and optimization. There's an extensive discussion of performance available at [Understanding Performance for Mixed Reality](../../advanced-concepts/understanding-performance-for-mixed-reality.md). Further, there are specific details for Unity under [Performance Recommendations for Unity](../../unity/performance-recommendations-for-unity.md).
 
 # [Input mapping](#tab/input)
 

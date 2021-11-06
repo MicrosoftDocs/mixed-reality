@@ -19,10 +19,32 @@ Object collection is a script to help lay out an array of objects in predefined 
 - [`ScatterObjectCollection`](xref:Microsoft.MixedReality.Toolkit.Utilities.ScatterObjectCollection) supports scattered style collection  
 - [`TileGridObjectCollection`](xref:Microsoft.MixedReality.Toolkit.Utilities.TileGridObjectCollection) provides some additional options to GridObjectCollection. **Note:** TileGridObjectCollection does not extend [`GridObjectCollection`](xref:Microsoft.MixedReality.Toolkit.Utilities.GridObjectCollection), and has several bugs (see [issue 6237](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/6237)). Therefore, it is recommended to use [`GridObjectCollection`](xref:Microsoft.MixedReality.Toolkit.Utilities.GridObjectCollection).
 
-|![Grid Object Collection - Cylinder](../images/object-collection/MRTK_ObjectCollectionCylinder.png) Grid Object Collection - Cylinder | ![Grid Object Collection - Sphere](../images/object-collection/MRTK_ObjectCollectionSphere.png) Grid Object Collection - Sphere |
-|:--- | :--- |
-|![Grid Object Collection - Radial](../images/object-collection/MRTK_ObjectCollectionRadial.png) Grid Object Collection - Radial | ![Grid Object Collection - Plane](../images/object-collection/MRTK_ObjectCollectionPlane.png) Grid Object Collection - Plane |
-|![Scattered Object Collection](../images/object-collection/MRTK_ObjectCollectionScattered.png) Scattered Object Collection | ![Tile Grid Object Collection](../images/object-collection/MRTK_ObjectCollectionTileGrid.png) Tile Grid Object Collection |
+:::row:::
+    :::column:::  
+    ![Grid Object Collection - Cylinder](../images/object-collection/MRTK_ObjectCollectionCylinder.png) Grid Object Collection - Cylinder
+    :::column-end:::
+    :::column:::
+    ![Grid Object Collection - Sphere](../images/object-collection/MRTK_ObjectCollectionSphere.png) Grid Object Collection - Sphere
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::  
+    ![Grid Object Collection - Radial](../images/object-collection/MRTK_ObjectCollectionRadial.png) Grid Object Collection - Radial
+    :::column-end:::
+    :::column:::
+    ![Grid Object Collection - Plane](../images/object-collection/MRTK_ObjectCollectionPlane.png) Grid Object Collection - Plane
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::  
+    ![Scattered Object Collection](../images/object-collection/MRTK_ObjectCollectionScattered.png) Scattered Object Collection
+    :::column-end:::
+    :::column:::
+    ![Tile Grid Object Collection](../images/object-collection/MRTK_ObjectCollectionTileGrid.png) Tile Grid Object Collection
+    :::column-end:::
+:::row-end:::
+
+
 
 ## How to use an object collection
 

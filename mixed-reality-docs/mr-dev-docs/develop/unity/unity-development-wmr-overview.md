@@ -60,8 +60,8 @@ Other key features that play a role in immersive applications are available thro
 
 Once you've got your holographic Unity project ready for testing, your next step is to export and build a Unity Visual Studio solution. With that VS solution in hand, you can run your application on real or simulated devices. By the end of this section, you'll be able to deploy your application on a device or emulator that fits your development needs.
 
-* [Windows Mixed Reality immersive headset](../platform-capabilities-and-apis/using-visual-studio.md)
-* [Windows Mixed Reality immersive headset simulator](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
+* [Windows Mixed Reality immersive headset](../advanced-concepts/using-visual-studio.md)
+* [Windows Mixed Reality immersive headset simulator](../advanced-concepts/using-the-windows-mixed-reality-simulator.md)
 
 ## What's next?
 

@@ -1,6 +1,6 @@
 ---
 title: What is Mixed Reality?
-description: Discussion on Mixed Reality, demomstrating the use of AR and VR devices on the Mixed Reality spectrum.
+description: Discussion on mixed reality, demonstrating the use of AR and VR devices on the mixed reality spectrum.
 author: qianw211    
 ms.author: v-qianwen
 ms.date: 07/01/2021

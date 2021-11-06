@@ -1,9 +1,9 @@
 ---
 title: QR codes in Unreal
 description: Learn how to setup, use, and track QR codes in Unreal mixed reality applications.
-author: hferrone
-ms.author: v-hferrone
-ms.date: 12/9/2020
+author: vtieto
+ms.author: v-vtieto
+ms.date: 11/03/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, features, documentation, guides, holograms, qr codes, mixed reality headset, windows mixed reality headset, virtual reality headset
@@ -11,13 +11,15 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, dev
 
 # QR codes in Unreal
 
+If you're new to working with QR codes, you may want to review our [QR code tracking overview](../advanced-concepts/qr-code-tracking-overview.md).
+
 The HoloLens 2 can see QR codes in world space using the webcam, which renders them as holograms at each code's real-world position. HoloLens 2 can also render holograms in the same location on multiple devices to create a shared experience. Make sure you're following the best practices for adding QR codes to your applications:
 
 - Quiet zones
 - Lighting and backdrop
 - Size, distance, and angular position
 
-Pay special attention to the [environment considerations](/hololens/hololens-environment-considerations) when QR codes are being placed in your app. You can find more information on each of these topics and instructions on how to download the required NuGet package in the main [QR code tracking](../platform-capabilities-and-apis/qr-code-tracking.md) document.
+Pay special attention to the [environment considerations](/hololens/hololens-environment-considerations) when QR codes are being placed in your app. You can find more information on each of these topics and instructions on how to download the required NuGet package in our [QR code tracking overview](../advanced-concepts/qr-code-tracking-overview.md) document.
 
 > [!CAUTION]
 > QR codes are the only type of images that can be tracked by HoloLens out of the box - Unreal's **UARTrackedImage** module isn't supported on HoloLens. If you need to track custom images, you can access the device's [webcam](unreal-hololens-camera.md) and process images using a third party image recognition library. 
@@ -66,11 +68,9 @@ Every QR code has a unique guid ID, which you can find by:
 
 ![QR Guid](images/unreal-qr-guid.PNG)
 
-There's a lot going on behind the scenes with QR codes, so you're not at the end of the road. Be sure to check out the following links for more details on what's under the hood.
-
 ## Next Development Checkpoint
 
-If you're following the Unreal development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs. From here, you can proceed to the next topic:
+If you're following the [Unreal development checkpoint journey](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=ue426%2Cmrtk%2Casa%2CD365#3-advanced-features) we've laid out, you can proceed to the next topic:
 
 > [!div class="nextstepaction"]
 > [WinRT](unreal-winRT.md)
@@ -83,6 +83,7 @@ Or jump directly to deploying your app on a device or emulator:
 You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#3-advanced-features) at any time.
 
 ## See also
+* [QR code tracking overview](../advanced-concepts/qr-code-tracking-overview.md)
 * [Spatial mapping](../../design/spatial-mapping.md)
 * [Holograms](../../discover/hologram.md)
 * [Coordinate systems](../../design/coordinate-systems.md)
