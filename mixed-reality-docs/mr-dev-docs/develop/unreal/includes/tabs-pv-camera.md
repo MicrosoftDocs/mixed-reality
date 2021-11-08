@@ -3,7 +3,7 @@
 ## PV Camera Feed Setup
 
 > [!IMPORTANT]
-> PV camera is implemented in both Windows Mixed Reality and OpenXR plugins. However OpenXR needs [Microsoft OpenXR plugin](https://github.com/microsoft/Microsoft-OpenXR-Unreal) to be installed. Also OpenXR has current limitation, camera can work with DirectX11 RHI. This limitation will be fixed in a further Unreal version. 
+> PV camera is implemented in both Windows Mixed Reality and OpenXR plugins. However OpenXR needs [Microsoft OpenXR plugin](https://github.com/microsoft/Microsoft-OpenXR-Unreal) to be installed. Also OpenXR for Unreal 4.26 has current limitation, camera can work with DirectX11 RHI. This limitation is fixed in Unreal 4.27.1 or later. 
 
 - In **Project Settings > HoloLens**, enable the **Webcam** capability:
 
