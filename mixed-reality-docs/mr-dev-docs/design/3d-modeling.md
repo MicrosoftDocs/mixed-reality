@@ -30,7 +30,7 @@ To check your 3D models, we recommend that you use the [Babylon.js](https://www.
 |---|---|---|---|---|---|---|---|
 | [D365 Guides & Microsoft Power Apps](/dynamics365/mixed-reality/import-tool/optimize-models) | ❌ | ✔️ |  |  |  |  |  |
 | [Mixed Reality Home](../distribute/creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) | ❌ | ✔️ |  |  |  |  |  |
-| [HoloLens](#using-3d-viewer-on-hololens-2-and-hololens-1st) | ❌ | ✔️ |  |  |  |  |  |
+| [HoloLens](/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) | ❌ | ✔️ |  |  |  |  |  |
 | [3D app launcher](../distribute/implementing-3d-app-launchers.md) | ❌ | ✔️ |  |  |  |  |  |
 | [Azure Remote Rendering](/azure/remote-rendering/) | ❌ | ✔️ |  |  |  |  |  |
 
