@@ -55,7 +55,7 @@ The detection distance for size increases linearly, but also depends on QR versi
 QR codes with logos haven't been tested and are currently unsupported.
 
 ### Managing QR code data
-Windows Mixed Reality devices detect QR codes at the system level in the driver. When the device is rebooted, the detected QR codes are gone and will be redetected as new objects next time.
+Windows Mixed Reality devices detect QR codes at the system level in the driver. When the device is rebooted, the detected QR codes are gone and will be re-detected as new objects next time.
 
 We recommend configuring your app to ignore QR codes older than a specific timestamp. Currently, the API doesn't support clearing QR code history.
 
@@ -82,7 +82,7 @@ This registry setting is only temporary until the driver has the capability to c
 
 ### What capabilities are needed?
 
-You will need the **capability t "webcam"** added to your manifest (checkbox in unity). Request access by calling the following function:
+You will need the <mark> **capability t "webcam"** </mark> added to your manifest (checkbox in unity). Request access by calling the following function:
 
 ```
 #if WINDOWS_UWP
