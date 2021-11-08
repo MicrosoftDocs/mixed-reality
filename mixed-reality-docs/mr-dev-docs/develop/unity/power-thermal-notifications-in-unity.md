@@ -69,6 +69,8 @@ You won't receive events if your application doesn't meet these requirements.
 
 The first item can be checked using the **IsSupported()** function.  If the system supports notifications for at least one of the peripherals in the mask, the function will return true.  You can choose not to check support using this function as long as your application doesn't explicitly depend on PowerThermalNotification SDK events.
 
+Once you meet the 3 requirements above, you will receive initial notifications for all supported **PeripheralsOfInterest**.  If you later change **PeripheralsOfInterest** or **PowerThermalMitigationLevelChanged**, you will receive another set of notifications based on current status.
+
 Here's a code snippet for grabbing the **PowerThermalNotification** class instance and configuring it for notifications for both the **PeripheralFlags.Cpu** and **PeripheralFlags.PhotoVideoCamera**:
 
 ```cs
@@ -97,7 +99,7 @@ private void InitializeThermalNotifications()
 
 When the **PowerThermalMitigationLevelChanged** event fires, it comes with **PowerThermalEventArgs**.  These should be used to understand the event.  
 
-When an event is received, the event handler should inspect **args.ImpactedPeripherals** which identifies which peripheral(s) are impacted.  The **args.MitigationLevel** indicates how severe of a mitigation is recommended for the specified peripherals.  If the mitigation level is **PowerThermalMitigationLevel.NoUserImpact** then any mitigations associated with the specified peripherals should be removed.
+When an event is received, the event handler should inspect **args.ImpactedPeripherals** which identifies which peripheral(s) are impacted (there may be more than one).  The **args.MitigationLevel** indicates how severe of a mitigation is recommended for the specified peripherals.  If the mitigation level is **PowerThermalMitigationLevel.NoUserImpact** then any mitigations associated with the specified peripherals should be removed.
 
 Here's an example handler:
 
@@ -125,6 +127,9 @@ private void NotificationHandler(object sender, PowerThermalEventArgs args)
     }
 }
 ```
+
+> [!NOTE]
+> <!--Hysteresis Note-->The ImpactedPeripherals parameter of args only identifies those peripherals that were both impacted AND part of PeripheralsOfInterest.  Other impacted peripherals that were not included in PeripheralsOfInterest will not be identified.
 
 > [!NOTE]
 > <!--Hysteresis Note-->Mitigation levels for peripherals have hysteresis.  Once the level increases, it doesn't decrease until it releases.  The release is an event with args.MitigationLevel set to PowerThermalMitigationLevel.NoUserImpact.
@@ -260,18 +265,12 @@ public class NotificationComponent : MonoBehaviour
         }
     }
 
-
-    // Start is called before the first frame update
     void Start()
     {
         NotificationManager.AddNotification(this, monitoredPeripheral);
         NotificationManager.ChangeSuppression(monitoredPeripheral, isSuppressed);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
 }
 
 ```
