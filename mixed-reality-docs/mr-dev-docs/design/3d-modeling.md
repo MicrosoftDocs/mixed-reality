@@ -10,7 +10,7 @@ keywords: HoloLens, HoloLens 2, 3D, 3D models, modeling, exporting, importing, a
 
 # Working with 3D models
 
-If you’re developing for the HoloLens or immersive headsets such as the [HP Reverb 2](https://www.hp.com/us-en/vr/reverb-g2-vr-headset.html), there’s a good chance that you’ll need to have 3D models in your app. Thankfully, you don’t have to be a 3D artist, or have one on your team, to assemble the assets you need to realize your vision. There are a number of ways to obtain pre-made models free, or at a reasonable cost. We’ll take a look at some of these below. We’ll also discuss how you can get started if you're interested in creating your own 3D models.
+If you’re developing for the [HoloLens](https://www.microsoft.com/en-us/hololens) or immersive headsets such as the [HP Reverb 2](https://www.hp.com/us-en/vr/reverb-g2-vr-headset.html), there’s a good chance that you’ll need to have 3D models in your app. Thankfully, you don’t have to be a 3D artist, or have one on your team, to assemble the assets you need to realize your vision. There are a number of ways to obtain pre-made models free, or at a reasonable cost. We’ll take a look at some of these below. We’ll also discuss how you can get started if you're interested in creating your own 3D models.
 
 ## For Unity Developers: Mixed Reality Toolkit and Asset Store
 
