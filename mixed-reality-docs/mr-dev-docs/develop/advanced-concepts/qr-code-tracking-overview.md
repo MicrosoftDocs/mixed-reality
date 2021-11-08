@@ -1,9 +1,9 @@
 ---
 title: QR code tracking overview
 description: Learn how to detect QR codes, add webcam capabilities, and manage coordinate systems in mixed reality apps on HoloLens 2.
-author: dorreneb
-ms.author: v-vtieto
-ms.date: 09/27/2021
+author: qianw211
+ms.author: v-qianwen
+ms.date: 11/8/2021
 ms.topic: article
 keywords: vr, lbe, location based entertainment, vr arcade, arcade, immersive, qr, qr code, hololens2, tracking
 ---
@@ -61,6 +61,160 @@ We recommend configuring your app to ignore QR codes older than a specific times
 
 ### QR code placement in a space
 For recommendations on where and how to place QR codes, refer to [Environment considerations for HoloLens](/hololens/hololens-environment-considerations).
+
+## Troubleshooting and FAQ
+
+### How do I enable or disable the QR Tracking Feature in the driver For Windows Mixed Reality devices (Supported min version 19h1 builds)
+
+In order to turn **ON** QR tracking, run the following script in cmd and then replug in your headset.
+
+```
+reg add "HKLM\SOFTWARE\Microsoft\HoloLensSensors" /v  EnableQRTrackerDefault /t REG_DWORD /d 1 /F
+```
+
+In order to turn **OFF** QR Tracking, run the following script in cmd and then replug in your headset. This will make any currently found QR codes Non-locatable.
+
+```
+reg add "HKLM\SOFTWARE\Microsoft\HoloLensSensors" /v  EnableQRTrackerDefault /t REG_DWORD /d 0 /F
+```
+
+This registry setting is only temporary until the driver has the capability to check for APP capabilities.
+
+### What capabilities are needed?
+
+You will need the **capability t "webcam"** added to your manifest (checkbox in unity). You will need to request access by calling the following function:
+
+```
+#if WINDOWS_UWP
+
+async QRCodeWatcher.RequestAccessAsync();
+
+#endif
+```
+
+if the access status should be `(status == QRCodeWatcherAccessStatus::Allowed)`.
+
+If the user denies then the feature will return the access denied when you start the QRTracking.
+
+This api should be called before you construct the `QRCodeWatcher` object.
+
+### How to make QR Tracking Feature work on HoloLens 2 devices (Supported min version 19h1 builds)
+
+For this to work on HoloLens 2, you need to be on builds 19H1 or later.
+
+QR tracking is automatic on HoloLens 2, and you will need the "webcam" capability added to you app.
+
+### Where do I find the API plugin files?
+
+All the required files and documentation can be found here.
+
+<https://www.nuget.org/packages/Microsoft.MixedReality.QR/0.5.2032-rc>
+
+### How do I prepare a UWP to use Microsoft.MixedReality.QR.QRCodeWatcher?
+
+Use the nuget pack to unpack the required files.
+
+Add a reference to the `Microsoft.MixedReality.QR.winmd` in your project and start using the API.
+
+Add the correct architecture versions of the plugins and use them accordingly in the build.
+
+### How do I prepare Unity with the Microsoft.MixedReality.QR.QRCodeWatcher?
+
+Use Nuget for unity and point to the nuget pack above.
+
+### How can I make QR codes?
+
+* From any QR code generator, see <https://www.the-qrcode-generator.com/>
+
+### If it doesn't work on your Oasis device:
+
+* Do you have a build 19h1or later?
+* Did you add the reg key?
+
+### If it doesn't work on your HoloLens device:
+
+* Do you have 19h1 or later build?
+
+### If it doesn't work in general:
+
+* If RS5, have you set the reg key? Restarted the device afterwards? Are you using the plugin from MRTK?
+* If RS6/19H1 are you using the RS6/19H1plugin? Are you using latest plugin from RS6/19H1 builds. If oasis, did you set the reg key?
+* Is the QR Code version a supported version? We don't support the really high density versions like version 40. Nothing above version 10 is guaranteed, versions above 20 are not supported.
+* Are you close enough to the QR code?
+* How is the lighting? There is a known issue where detection becomes difficult when the QR code is on a dark background.
+
+### What's the accuracy?
+
+When detected in a single frame, the size is expected to have at most a 1% error from the actual size, for example: a 10cm code might be up to +/- 1mm off in measured size. Under continuous detection, a code's position might drift around by up to +/- 2.5mm. Once you have moved out of detection range, a previous detection's position is up to the mercy of the map error.
+
+### How close do I need to be to the QR code to detect it?
+
+This obviously depends on the size of the QR code, and also what version it is.
+
+* On Baraboo, for a version 1 QR code varying from 5cm sides to 25 cm sides, the minimum detection distance ranges from 0.25 metres to 0.5 metres. The furthest these can be detected from goes from about 0.5m for the smallest code to 2 metres for the bigger.
+* On Oasis, these distances for the sizes are approximately halved.
+* For any codes bigger, extrapolate - the detection distance for size increases linearly. For any code smaller, detection simply will not occur - 4-5cm is the smallest we can detect.
+
+### Why can't I read QR codes with logos?
+
+Currently, we don't support QR codes with logos.
+
+### Are MicroQR Codes supported?
+
+Micro QR Codes support is coming soon.
+
+### QR codes detected, but why am I getting no data?
+
+* In RS5 version of the plugin, not all encodings are supported. If the platform cannot decode the qrcode, there will be no data.  You can use the stream and intrepret the data using opensource code. In RS6 more encodings are supported.
+* Some features such as structure append and micro QR codes are not supported.
+
+### How to clear the codes from my app? It seems once you find a code, they tend to persist.
+
+QR codes only persist in the boot session. Once you reboot your device (or restart the driver), QR codes will be detected as new objects. QR codes are unique and persist within the driver session.
+
+#### How does that work with the underlying platform?  Where do they persist? 
+
+They only persist in memory (asic/soc).
+
+#### How do I clear them during testing, when it's most useful to clear them? 
+
+You can ignore the QR codes older than a timestamp if you want. Currently the API does not have a way to clear them as multiple apps might be interested in them. At the app level you can ignore QR codes not updated recently and a logic can be added to ignore the ones not updated since for example time `t`.  It is app specific, and its up to the app to decide on what to do.
+
+#### How do I get the time stamp from the qpc ticks?
+
+```
+long EndingTime = System.Diagnostics.Stopwatch.GetTimestamp();
+long ElapsedTime = EndingTime - (long)qrCode.LastDetectedQPCTicks;
+double ElapsedSecs = ElapsedTime * (1.0f / System.Diagnostics.Stopwatch.Frequency);
+
+QRTimeStamp.text = "Time:" + System.DateTime.Now.AddSeconds(-ElapsedSecs).ToString("MM/dd/yyyy HH:mm:ss.fff");
+```
+
+#### Are QR Codes saved at the ‘space’ level or app level?  It seems to me it is beyond app? 
+
+QR Codes are saved at the system level in driver session, or boot session on hololens.
+
+### From a plugin standpoint, what should I do. My plugin right now is configured for x64. Is the DLL OK to just reconfigure in Unity as x86?
+
+* See the <mark> preparing unity section </mark>.
+
+### Is the `rs_analog_runtime_undock` the only branch that works for QR tracking API in Baraboo?
+
+* All the branches with builds RS6 and later should work.
+
+### Do I need the registry entry in Hololens? If so, how do I add it?  <mark> [not familiar w/ editing registry in HoloLens] </mark>
+
+If using RS5 builds and RS5 plugin, see the first section at the top of the page for more details: <https://www.qrcode.com/en/howto/code.html>
+
+### How wide is the PV Camera field of view? 
+
+Horizontal field of view for the HoloLens 2 PV camera is ~65 degrees.
+
+### What is the PV Camera focus range? If it has auto focus how far before it is ineffective? 
+
+The HoloLens 2 PV camera has auto-focus. The auto-focus system can adjust object distance from 30cm to infinity.
+
+The effective focal length for the HoloLens 2 PV camera lens is 4.87mm +/- 5%.  In addition to the 5% variation due to manufacturing tolerance, the focal length will change dynamically due to the auto-focus system. The AF travel (stroke) is up to 0.2mm.
 
 ## See also
 * [QR code tracking with native C++ and C## samples](../native/qr-code-tracking-cs-cpp.md)
