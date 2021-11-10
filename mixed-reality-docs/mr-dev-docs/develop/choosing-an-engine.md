@@ -1,9 +1,9 @@
 ---
 title: Choosing your engine
 description: Get introduced to the engine choices available for Mixed Reality development for HoloLens and VR. 
-author: hferrone
-ms.author: v-hferrone
-ms.date: 04/22/2021
+author: qianw211
+ms.author: v-qianwen
+ms.date: 11/10/2021
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality headset, windows mixed reality headset, virtual reality headset, unity
 ---
@@ -18,6 +18,9 @@ There are several development paths you can take through our documentation. The 
 ## Engine overview
 
 * **Unity** is one of the leading real-time development platforms on the market, with underlying runtime code written in C++ and all development scripting is done in C#. Whether you're looking to build games, movies and animation cinematics, or even render architectural or engineering concepts in a virtual world, Unity has the infrastructure to support you.
+
+>[!Note]
+>Please avoid Unity 2020.3.21f and 2020.3.22f, which cause flashing and strobing effect on HoloLens 2. For more information, see [here](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/10288). 
 
 * **Unreal Engine 4** is a powerful, open source creation engine with full support for mixed reality in both C++ and Blueprints. As of Unreal Engine 4.25, HoloLens support is full-featured and production-ready. With capabilities such as the flexible Blueprints Visual Scripting system, designers can virtually use the full range of concepts and tools generally only available to programmers. Creators across industries can leverage the freedom and control to deliver cutting-edge content, interactive experiences, and immersive virtual worlds.
 
