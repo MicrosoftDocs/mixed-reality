@@ -44,6 +44,9 @@ MRTK-Unity is a Microsoft-driven project that provides a set of components and f
 | Mobile | iOS and Android |
 ::: moniker-end
 
+>[!Note]
+>Please avoid Unity 2020.3.21f and 2020.3.22f, which cause flashing and strobing effect on HoloLens 2. For more information, see [here](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/10288). 
+
 ## Getting started with MRTK
 
 If you're new to MRTK or Mixed Reality development in Unity, we recommend installing and exploring the MRTK Examples Hub sample application on your device or [emulator](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator). 
