@@ -119,7 +119,7 @@ If you’re willing to pay, here are some of the more popular video tutorial sit
 
 [Udacity](https://www.udacity.com/)
 
-[Coursera[(https://www.coursera.org/)
+[Coursera](https://www.coursera.org/)
 
 [edX](https://www.edx.org/)
 
@@ -129,7 +129,7 @@ HoloLens 2 and HoloLens (1st gen) both ship with a version of the 3D Viewer appl
 
 ### HoloLens (1st gen) Beta version 
 
-The 3D Viewer Beta application is only available on HoloLens (1st gen) devices. The beta version can handle showing higher complexity models, while the original 3D Viewer doesn't. However, if you're working with lots of complex models, you might find [Azure Remote Rendering](/azure/remote-rendering/) to be a better long-term option. 
+The 3D Viewer Beta application is only available on HoloLens (1st gen) devices. The beta version can handle showing higher-complexity models, while the original 3D Viewer doesn't. However, if you're working with lots of complex models, you might find [Azure Remote Rendering](/azure/remote-rendering/) to be a better long-term option. 
 
 Check out our [3D Viewer Beta on HoloLens (1st gen)](/hololens/holographic-3d-viewer-beta) documentation for a list of supported files, features, use-cases, and troubleshooting details.
 
