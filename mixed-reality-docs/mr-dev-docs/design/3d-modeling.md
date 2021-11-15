@@ -24,16 +24,6 @@ For general best practices, see our [real-time 3D model conversion and optimizat
 
 To check your 3D models, we recommend that you use the [Babylon.js](https://www.babylonjs.com) 3D viewer tool in the scene explorer.
 
-## Object modeling options
-
-| Scenario | Max vertices | Supports animations | Model orientation | LOD | Triangle count | Node/submesh limits | Screen coverage |
-|---|---|---|---|---|---|---|---|
-| [D365 Guides & Microsoft Power Apps](/dynamics365/mixed-reality/import-tool/optimize-models) | ❌ | ✔️ |  |  |  |  |  |
-| [Mixed Reality Home](../distribute/creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) | ❌ | ✔️ |  |  |  |  |  |
-| [HoloLens](/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) | ❌ | ✔️ |  |  |  |  |  |
-| [3D app launcher](../distribute/implementing-3d-app-launchers.md) | ❌ | ✔️ |  |  |  |  |  |
-| [Azure Remote Rendering](/azure/remote-rendering/) | ❌ | ✔️ |  |  |  |  |  |
-
 ## For Unity Developers: Mixed Reality Toolkit and Asset Store
 
 If you’re a Unity developer and need objects that you can use for spatial interaction and UI, you don’t have to go far. If you're using our Mixed Reality Toolkit (MRTK) in your project, you already have a wide range of built-in objects including bounding boxes, pressable buttons, hand menus, slates, sliders and more.
