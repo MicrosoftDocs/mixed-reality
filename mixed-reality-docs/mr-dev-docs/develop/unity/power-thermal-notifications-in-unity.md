@@ -274,3 +274,9 @@ public class NotificationComponent : MonoBehaviour
 }
 
 ```
+
+## Testing
+
+Once you have integrated the SDK into your application, you will want to test it.  For HoloLens 2 software that supports the SDK, a developer page will be available in [Device Portal](../advanced-concepts/using-the-windows-device-portal#powerthermalsdk)
+
+Inside the page you may control the mitigation levels for each peripheral as well as monitor which peripherals have mitigations being actively suppressed.
