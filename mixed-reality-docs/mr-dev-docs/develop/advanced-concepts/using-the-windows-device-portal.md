@@ -424,6 +424,10 @@ For use with the [PowerThermalNotification SDK](..\unity\power-thermal-notificat
 
 Use this page to monitor and control the mitigation levels used with the SDK.  The page also provides details on which peripherals are having their mitigations suppressed by active applications.
 
+> [!NOTE]
+> This page is only available in OS builds that support the PowerThermalNotification SDK
+
+
 ### Virtual Input
 
 ![Virtual Input page in Windows Device Portal on Microsoft HoloLens](images/using-windows-portal-img-18.png)<br>
