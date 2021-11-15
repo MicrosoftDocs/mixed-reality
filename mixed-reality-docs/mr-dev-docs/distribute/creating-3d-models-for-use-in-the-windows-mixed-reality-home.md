@@ -95,7 +95,6 @@ Value scale map showing areas of occluded light, which blocks reflections
 Tells the shader if something is metal or not. Raw Metal = 1.0 white Non-metal = 0.0 black. There can be transitional gray values that indicate something covering the raw metal such as dirt, but in general this map should be black and white only.
 
 ## Optimizations
-<!-- Who's supporting this and is there current contributions? -->
 Windows Mixed Reality home offers a series of optimizations on top of the core glTF spec defined using custom extensions. These optimizations are required on Windows versions <= 1709 and recommended on newer versions of Windows. You can easily optimize any glTF 2.0 model using the [Windows Mixed Reality Asset Converter available on GitHub](https://github.com/Microsoft/glTF-Toolkit/releases). This tool will perform the correct texture packing and optimizations as specified below. For general usage, we recommend using the WindowsMRAssetConverter, but if you need more control over the experience and would like to build your own optimization pipeline then you can refer to the detailed specification below.  
 
 > [!NOTE]
