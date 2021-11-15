@@ -10,6 +10,8 @@
     href: app-model.md
   - name: App views
     href: app-views.md
+  - name: 3D models
+    href: 3d-modeling.md
   - name: Comfort
     href: comfort.md
   - name: Coordinate systems
@@ -37,7 +39,7 @@
   - name: Designing content for holographic display
     href: designing-content-for-holographic-display.md
   - name: Shared experiences in Mixed Reality
-    href: ../design/shared-experiences-in-mixed-reality.md    
+    href: shared-experiences-in-mixed-reality.md    
 - name: Interaction models
   items:
   - name: Instinctual interactions
