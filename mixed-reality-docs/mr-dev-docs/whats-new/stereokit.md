@@ -1,5 +1,5 @@
 ---
-title: Mixed Reality challenge: StereoKit hackathon
+title: Mixed Reality challenge - StereoKit hackathon
 description: Learn to build mixed reality applications.
 author: qianw211
 ms.author: v-qianwen
