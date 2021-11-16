@@ -12,7 +12,7 @@ keywords: event, calendar, academy, schedule, build, microsoft, StereoKit
 
 ![Mixed Reality challenge: StereoKit hackathon](images/stereokit-hackathon-dev-post-banner.png)
 
-Learn to build mixed reality applications for HoloLens 2 or any OpenXR compliant device using C#, Visual Studio or Visual Studio Code, and StereoKit. Join the [Mixed Reality challenge](https://techcommunity.microsoft.com/t5/mixed-reality-blog/mixedrealitychallenge-stereokit/ba-p/2898397) to find out, get access to support, and enter for a chance to win. 
+Learn to build mixed reality applications for HoloLens 2 or any OpenXR-compliant device using C#, Visual Studio or Visual Studio Code, and StereoKit. Join the [Mixed Reality challenge](https://techcommunity.microsoft.com/t5/mixed-reality-blog/mixedrealitychallenge-stereokit/ba-p/2898397) to find out, get access to support, and enter for a chance to win. 
 
 ## What is StereoKit?
 
@@ -20,7 +20,7 @@ Learn to build mixed reality applications for HoloLens 2 or any OpenXR compliant
 
 ## How do I participate in the hackathon?
 
-Build a new open source HoloLens 2 or VR application, game, or experience prototype using StereoKit. You can participate as an individual or as part of a team\*. 
+Build a new open-source HoloLens 2 or VR application, game, or experience prototype using StereoKit. You can participate as an individual or as part of a team\*. 
 
 The submitted project must be capable of being successfully installed and running consistently on the platform, HoloLens 2 Emulator, or the Windows Mixed Reality Simulator for which it is intended. The project must function as depicted in your submission description and demo video. 
 
@@ -33,4 +33,4 @@ For more information about the hackathon, see [rules for full details on project
 * [StereoKit overview](https://stereokit.net/)
 * [StereoKit getting started guide](https://stereokit.net/Pages/Guides/Getting-Started.html)
 * Watch the [getting started video series](https://www.youtube.com/playlist?list=PLlrxD0HtieHjrKH44ZUatzfM8fXt2CmWv)
-* In GitHub you can [ask a question](https://github.com/maluoi/StereoKit/discussions) or [submit a bug](https://github.com/maluoi/StereoKit/issues).
+* In GitHub, you can [ask a question](https://github.com/maluoi/StereoKit/discussions) or [submit a bug](https://github.com/maluoi/StereoKit/issues).
