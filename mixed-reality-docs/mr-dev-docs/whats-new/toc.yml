@@ -1,5 +1,7 @@
 - name: Programs and events
   items: 
+    - name: StereoKit hackathon
+      href: stereokit.md
     - name: Mixed Reality Speaker Series
       href: sf-academy-events.md 
     - name: Build 2021 - Mixed Reality
