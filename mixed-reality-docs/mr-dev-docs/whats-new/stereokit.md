@@ -1,6 +1,6 @@
 ---
 title: Mixed Reality challenge: StereoKit hackathon
-description: Learn to build mixed reality applications for HoloLens 2 or any OpenXR compliant device using C#, Visual Studio or Visual Studio Code, and StereoKit 
+description: Learn to build mixed reality applications.
 author: qianw211
 ms.author: v-qianwen
 ms.date: 11/16/2021
