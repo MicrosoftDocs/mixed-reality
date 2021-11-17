@@ -1,71 +1,70 @@
 ---
 title: Location Based Entertainment with Windows Mixed Reality
 description: Learn about Windows Mixed Reality for Location Based Entertainment—hardware, backpack PCs, tracking, configuration, and support.
-author: jessemcculloch
-ms.author: ishitak
-ms.date: 08/03/2020
+author: qianw211
+ms.author: v-qianwen
+ms.date: 11/17/2021
 ms.topic: article
-keywords: mixed reality, vr, lbe, location, mixed reality headset, windows mixed reality headset, virtual reality headset, hardware, HoloLens, multi-player, cloud services, azure
+keywords: mixed reality, vr, lbe, location, mixed reality headset, windows mixed reality headset, virtual reality headset, hardware, HoloLens, multiplayer, cloud services, azure
 ---
 
 # Location Based Entertainment with Windows Mixed Reality
 
-In the last couple of years, we've seen an incredible amount of growth and innovation in the Location Based Entertainment category. Traditional venues like theme parks and theaters have started offering immersive, multi-player experiences as complimentary experiences to existing rides and installations. New operators and venues are bringing unique multi-sensorial, multi-player experiences at an attractive price to the masses. All of these experiences are pushing the envelope for what’s possible with mixed reality.
+In the last couple of years, we've seen an incredible amount of growth and innovation in the Location Based Entertainment (LBE) category. Traditional venues like theme parks and theaters have started offering immersive, multiplayer experiences as complementary experiences to existing rides and installations. New operators and venues are bringing unique multi-sensorial, multiplayer experiences at an attractive price to the masses. All of these experiences are pushing the envelope for what’s possible with mixed reality.
 
-This document is a guide to get started with Windows Mixed Reality in the Location Based Entertainment category. The guidance below may additionally be applicable to location-based experiences beyond entertainment such as training, product design, and other use cases.
+This document is a guide to get started with Windows Mixed Reality in the Location Based Entertainment category. The guidance below may additionally be applicable to location-based experiences beyond entertainment-- for example,  training and product design.
 
 ## Engineering FAQ
 
 ### Hardware
 
-**Q: What hardware is available from Microsoft and its partners that I can use in my setup?**
+**Q: What hardware is available from Microsoft and its partners that I can use in my LBE location or business?**
 
-A: Microsoft and its OEM partners offer a compelling portfolio of devices to choose from depending on your needs.  
+A: Windows Mixed Reality supports a compelling portfolio of devices to choose from depending on your needs.  
 
-If the experiences you’re providing to your customers requires a virtual reality headset, in-market headsets from HP, Samsung, and Acer are a great fit. Each headset has their own differentiated attributes. More details on each below.
+Currently available headsets from our partners at HP are a great fit, as each headset has their own differentiated attributes tailored to your specific business needs. More details on each below. 
 
-HP Reverb: [Details](https://hp.com/go/Reverbpro)
-
-Samsung Odyssey+: [Details](https://www.samsung.com/us/computing/hmd/windows-mixed-reality/hmd-odyssey-windows-mixed-reality-headset-xe800zba-hc1us/)
-
-Acer: [Details](https://www.acer.com/ac/en/US/content/model/VD.R05AP.002)
+1. [HP Reverb G2](https://www.hp.com/us-en/vr/reverb-vr-headset-gaming.html)
+1. [HP Reverb G2 Omnicept Edition](https://www.hp.com/us-en/vr/reverb-g2-vr-headset-omnicept-edition.html)
+1. [HP Reverb G1](https://h20195.www2.hp.com/V2/getpdf.aspx/c06227520.pdf)
 
 If your location specializes in mixed or augmented reality experiences with see-through headsets, check out the Microsoft HoloLens 2.  
 
-HoloLens 2: [Pre-order interest](https://www.microsoft.com//hololens/buy)
+HoloLens 2: [Shop HoloLens 2 offerings](https://www.microsoft.com//hololens/buy).
 
 If you’re experimenting with experiences that use advanced computer vision, speech, and body tracking, the Azure Kinect DK is a good fit.  
 
 Azure Kinect: [Details](https://azure.microsoft.com//services/kinect-dk/)
 
-**Q: What is the portfolio of backpack PCs I can use to run my PC-tethered VR experiences?**
+**Q: What backpack PCs can I use to support untethered VR experiences in my LBE location or business?**
 
-For PC-tethered VR experiences, our OEMs offer an incredible selection of backpack PCs built exactly for that need.
+For PC-tethered VR experiences, we recommend that you use the HP Z VR Backpack G2. It's the world’s most powerful wearable PC and is optimized for free-roam experiences. The system now offers 30% more power with an RTX 2080 GPU inside. See [details](https://www.hp.com/us-en/shop/mdp/hp-z-vr-backpack-g1-workstation--1?jumpid=cp_r11260_us/en/psg/vr_ready_workstations/zvrbackpack-shop-32gb#!&tab=vao).
 
-HP just launched their HP VR backpack G2, the world’s most powerful wearable PC – optimized for free-roam experiences, now with 30% more power with an RTX 2080 GPU inside. [Details](https://www8.hp.com/us/en/vr/vr-backpack.html)
-
-### Setup
+### How to setup
 
 **Q: How can I more easily configure setup and customize the Mixed Reality Portal for LBE?**
 
 >[!NOTE]
->This feature requires version 2000.19061.1011.0 or greater.  
+>This feature requires the [Mixed Reality Portal](/windows/mixed-reality/enthusiast-guide/install-windows-mixed-reality#launch-mixed-reality-portal) version 2000.19061.1011.0 or greater.  
 
-You may find that you need more customization of Mixed Reality Portal than is normally available through the app for deploying apps to kiosks or customized experiences. The latest July update of Mixed Reality Portal supports several advanced settings, which you can set via a configuration file:  
+You may find that you need more customization of Mixed Reality Portal than is normally available through the app for deploying apps to kiosks or customized experiences. [Mixed Reality Portal](/windows/mixed-reality/enthusiast-guide/install-windows-mixed-reality#launch-mixed-reality-portal) supports several advanced settings, which you can set via a configuration file:  
 
-Allow failed system checks – normally the setup process checks the PC for compatibility with Windows Mixed Reality before completing setup. Bypassing compatibility checks may cause issues when trying to run Windows Mixed Reality if there are compatibility issues.  
+* **Allow failed system checks** – normally the setup process checks the PC for compatibility with Windows Mixed Reality before completing setup. Bypassing compatibility checks may result in a degraded experience when attempting to run Windows Mixed Reality on an incompatible host PC. 
 
-Skip Device Companion App – the DCA provides headset-specific setup steps provided by the manufacturer and allows for updating the headset’s firmware.  
+* **Skip Device Companion App** – the DCA provides headset-specific setup steps provided by the manufacturer and allows for updating the headset’s firmware.
 
-Skip room setup – instead of being prompted to create a room boundary, you can continue directly into the headset in Seated/Standing mode.  
+* **Skip room setup** – instead of being prompted to create a room boundary, you can continue directly into the headset in Seated/Standing mode.  
 
-Skip installing apps from the Store - normal setup installs several Store apps including 3D Viewer and the Edge 360 Viewer add-on. This will skip the install of these apps, but you may be missing device functionality.  
+  >[!Caution]
+  >Failure to set up, use, and properly care for your device can increase the risk of serious injury, death, property damage, or damage to the product or related accessories. See [details](/windows/mixed-reality/enthusiast-guide/wmr-health-safety-comfort).
 
-Show preview in full screen – Mixed Reality Portal will default to showing the headset preview in full-screen on the desktop PC while the headset is in use.  
+* **Skip installing apps from the Store** - normal setup installs several Store apps including [3D Viewer](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) and the [Edge 360 Viewer add-on](/windows/mixed-reality/enthusiast-guide/webvr). When you choose this option, you skip installing these apps, but this may result in missing device functionality.  
 
-Hide New for you side panel – prevents the New for you panel from being expanded on launch of Mixed Reality Portal.  
+* **Show preview in full screen** – [Mixed Reality Portal](/windows/mixed-reality/enthusiast-guide/install-windows-mixed-reality#launch-mixed-reality-portal) will default to showing the headset preview in full-screen on the desktop PC while the headset is in use.  
 
-#### How to configure:  
+* **Hide New for you side panel** – prevents the **New for you** panel from being expanded on launch of Mixed Reality Portal.  
+
+#### How to configure
 
 To set any of these configurations, you need to create a file called _UserConfig.json_ under this directory: 
 _$env:LOCALAPPDATA\Packages\Microsoft.MixedReality.Portal_8wekyb3d8bbwe\LocalState\\_
@@ -116,14 +115,15 @@ Guidance on setting up the room boundary with WMR can be found [here](/windows/m
 
 A: The origin of the playspace is determined by the Room Setup experience, more specifically the HMD position when the Center button is pressed during setup. 
 
-### MULTI-PLAYER SETUP
+### Multiplayer setup
 
-**Q: I’m deploying a multi-player experience in at my venue. Is that supported on Windows Mixed Reality?**
+**Q: Is deployment of a multiplayer experience at my venue supported in Windows Mixed Reality**
 
-A: If you opt into the Windows 20H1 or later build via our Insider program, you can access a new interface for map sharing. This new functionality is available via the [Map Manager](../develop/advanced-concepts/using-the-windows-device-portal.md#map-manager) interface of the Windows Device portal. To use this tool, follow the steps below:
-* Make sure you're opted into 20H1 or later - after September 2019, this means using our Insider program
+A: If you opt in to the Windows 20H1 or later build via our [Windows Insider program](https://insider.windows.com/), you can access an interface for map sharing. This new functionality is available via the [Map Manager](/windows/mixed-reality/develop/advanced-concepts/using-the-windows-device-portal#map-manager) interface of the Windows Device portal. To use this tool, follow the steps below:
+
+* Make sure you're opted into 20H1 or later - the [Windows Insider program](https://insider.windows.com/)
 * Enable the Windows Device Portal (WDP) using these [instructions](/windows/uwp/debug-test-perf/device-portal-desktop)
-* Plug in a Windows Mixed Reality HMD that you wish to either download an existing map from or import a new map
+* Connect the Windows Mixed Reality headset that you wish to either download an existing map from or import a new map
 * Navigate to the WDP in your browser of choice using the URL provided in the settings screen.
     * Once there Navigate to the "Mixed Reality" section and select "Map Manager".
     * You can now use the "Download" button to export an existing map from the machine.
@@ -131,19 +131,19 @@ A: If you opt into the Windows 20H1 or later build via our Insider program, you 
     * You can use "Import" to enable the system to use that map for this HMD on this machine.
 
 > [!NOTE] 
-> Previously, it was possible to use the Spatial Data Packager Tool, however, that tool was originally released as unsupported and is now officially deprecated and no longer functional on 20H1. Instead, please use the inbox [Map Manager](../develop/advanced-concepts/using-the-windows-device-portal.md#map-manager) tool as described above. 
+> Previously, it was possible to use the Spatial Data Packager Tool, however, that tool was originally released as unsupported and is now officially deprecated and no longer functional on 20H1. Instead, please use the inbox [Map Manager](/windows/mixed-reality/develop/advanced-concepts/using-the-windows-device-portal#map-manager) tool as described above. 
 
-### TRACKING
+### Tracking
 
 Q: How does the tracking technology in the Windows Mixed Reality headsets work?  
 
-Mixed Reality shares the same tracking technology as the HoloLens. To learn more about the inside-out tracking system, check out the documentation [here](/windows/mixed-reality/enthusiast-guide/tracking-system).
+Mixed Reality shares the same tracking technology as the HoloLens. For more information, see [inside-out tracking system](/windows/mixed-reality/enthusiast-guide/tracking-system).
 
-For a description of how the higher-level spatial mapping system works you can read our description [here](../design/spatial-mapping.md).
+For a description of how the higher-level spatial mapping system works, see [Spatial mapping](/windows/mixed-reality/design/spatial-mapping).
 
 **Q: Are there any best practices for getting a reliable tracking volume?**
 
-To best configure the environment for tracking success, you can read best practices in this [post](/hololens/hololens-environment-considerations).
+To best configure the environment for tracking success, you can find best practices in [HoloLens environment considerations](/hololens/hololens-environment-considerations).
 
 **Q: Are there any specific nuances with tracking in warehouse-scale spaces or optimizations to consider?**
 
@@ -155,37 +155,37 @@ Minimize the dynamic range of lighting in your area where possible. The tracking
 
 Spotlights in a room (even overhead) that are in view if tracking cameras can sometimes be culprits, which confuse the AEC/AGC of the tracking cameras. Flat/diffused lighting helps.  
 
-### MIXED REALITY CLOUD SERVICES AND AZURE 
+### Mixed Reality Cloud Services and Azure
 
-**Q: How can Microsoft Azure help my business scale?**
+**Q: How can [Microsoft Azure](https://azure.microsoft.com/) help my business scale?**
 
-A: Azure based onsite and remote management can help your business be data-driven, reduce operational costs and scale deployment across existing and new locations. Azure cloud services such as Azure Storage, Azure Functions, App Service, Azure Networking, and IOT Hub can help with the following use cases:  
+A: Azure based onsite and remote management can help your business be data-driven, reduce operational costs and scale deployment across existing and new locations. Azure cloud services such as [Azure Storage](/azure/storage/common/storage-introduction), [Azure Functions](/azure/azure-functions/functions-overview), [App Service](/azure/app-service/overview), [Azure Networking](https://azure.microsoft.com/product-categories/networking/), and [IOT Hub](https://azure.microsoft.com/services/iot-hub/) can help with the following use cases:  
 
-Remote Device Deployment & Management 
+* Remote Device Deployment & Management 
 
-Real-Time Onsite Analytics 
+* Real-Time Onsite Analytics 
 
-Intelligent Adaptable LBE Gameplay 
+* Intelligent Adaptable LBE Gameplay 
 
-LBE Content Streaming and Deployment 
+* LBE Content Streaming and Deployment 
 
-LBE Player Preference Heatmap 
+* LBE Player Preference Heatmap 
 
-LBE Reservation and Booking System 
+* LBE Reservation and Booking System 
 
 **Q: I’m developing a spatial MMOG to deploy over a massive footprint. Any services that help me manage my content and object persistence?**
 
-A: Azure Spatial Anchors is a new Mixed Reality service that enables multi-user, spatially aware mixed reality experiences across HoloLens, iOS, and Android devices. You can learn more about Azure Spatial Anchors [here](https://azure.microsoft.com//services/spatial-anchors/).
+A: Azure Spatial Anchors is a new Mixed Reality service that enables multi-user, spatially aware mixed reality experiences across HoloLens, iOS, and Android devices. You can learn more about [Azure Spatial Anchors](https://azure.microsoft.com//services/spatial-anchors/).
 
-**Q. Our venue specializes in multi-player experiences and I’d like to focus our development time on content and front-end development. Are there offerings that can help me bootstrap or offload backend development?**
+**Q. Our venue specializes in multiplayer experiences, and I’d like to focus our development time on content and front-end development. Are there offerings that can help me bootstrap or offload backend development?**
 
-A: Azure PlayFab is a complete backend platform for live games. You can learn more about it [here](https://playfab.com/).
+A: Azure PlayFab is a complete backend platform for live games. You can learn more at <https://playfab.com/>.
 
-### Misc
+### Using SteamVR for in Location Based Entertainment
 
 **Q: I use SteamVR to deploy my experiences. Does Windows Mixed Reality work with SteamVR?**
 
-A: Windows Mixed Reality for SteamVR allows users to run SteamVR experiences on Windows Mixed Reality immersive headsets. Learn more about SteamVR with WMR [here](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality).
+A: Windows Mixed Reality for SteamVR allows users to run SteamVR experiences on Windows Mixed Reality immersive headsets. Learn more about [using SteamVR with WMR](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality).
 
 ### Support and community  
 
@@ -199,4 +199,4 @@ Join our HoloDevelopers Slack channel to engage with the mixed reality developer
 
 Twitter: Follow our Mixed Reality Developer Relations team for news, events, and updates @MxdRealityDev 
 
-If you happen to be in or around San Francisco, there’s always something going on at the Microsoft Reactor. You can see our calendar of events [here](https://developer.microsoft.com//reactor/Location/San%20Francisco).
+If you happen to be in or around San Francisco, there’s always something going on at the Microsoft Reactor. Check out our [calendar of events](https://developer.microsoft.com//reactor/Location/San%20Francisco).
