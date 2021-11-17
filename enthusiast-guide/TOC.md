@@ -9,7 +9,7 @@
 ### Immersive headsets
 #### [Plug in your headset](plug-in-your-headset.md)
 #### [Immersive headset hardware details](/windows/mixed-reality/discover/immersive-headset-hardware-details)
-#### [Location based entertainment](/windows/mixed-reality/discover/location-based-experiences)
+#### [Location based entertainment](location-based-experiences.md)
 ### [Install Windows Mixed Reality](install-windows-mixed-reality.md)
 ### [Set up Windows Mixed Reality](set-up-windows-mixed-reality.md)
 ### [Windows Mixed Reality Setup FAQ](wmr-setup-faq.yml)
