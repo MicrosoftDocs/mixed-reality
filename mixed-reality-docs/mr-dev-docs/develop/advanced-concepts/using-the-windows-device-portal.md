@@ -417,7 +417,7 @@ Manages Wi-Fi connections on the HoloLens.
 
 ### PowerThermalSDK Test
 
-![PowerThermalSDK Test page in Windows Device Portal on Microsoft HoloLens](images/PowerThermalSdkTestPageMaxed.png)<br>
+![PowerThermalSDK Test page in Windows Device Portal on Microsoft HoloLens](images/windows-device-portal-power-thermal-sdk-test-page.png)<br>
 *PowerThermalSDK Test page in Windows Device Portal on Microsoft HoloLens*
 
 For use with the [PowerThermalNotification SDK](..\unity\power-thermal-notifications-in-unity.md)
