@@ -33,7 +33,7 @@ Release details, including backlog items, can be found on the [GitHub milestone 
 ## Mixed Reality Toolkit (MRTK) roadmap
 
 ### **2.7.3**
-In December 2021, MRTK 2.7.3 will be released to address important bugs that have been reported on github.
+In December 2021, MRTK 2.7.3 will release to address important bugs that have been reported on github. While we do not officially support non LTS releases of Unity, this minor release will include fixes to unblock developers on Unity 2021.
 
 Status: In Development
 
