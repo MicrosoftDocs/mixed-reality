@@ -1,8 +1,8 @@
 ---
 title: Filing bugs and feedback
 description: Help us make Windows Mixed Reality better by filing feedback using the correct categories in the Feedback Hub app.
-author: hferrone
-ms.author: v-hferrone
+author: qianw211
+ms.author: v-qianwen
 ms.date: 09/15/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Feedback, Feedback Hub, bugs
@@ -16,15 +16,8 @@ appliesto:
 
 The engineering team uses the same mechanism for tracking and fixing internal bugs, so please use Feedback Hub to report anything odd that you're seeing - we're listening!
 
-## Before you file feedback
-
-Make sure your PC is set to provide us with full data for feedback and diagnostics. Here's how to double check the setting on your PC before filing feedback:
-
-1. Open the Windows **Settings** app.
-2. Select on **Privacy**.
-3. Go to **Feedback & diagnostics** on the left pane, which has been renamed to **Diagnostics & feedback** in recent Windows Insider builds of Windows.
-4. Under **Select how much data you send to Microsoft**, select **Full** if it isn't already selected.
-5. Be sure to restart your PC and repeat the steps to reproduce your issue before filing feedback.
+>[!Note]
+>Before you file feedback, make sure your PC is set to provide us with full data for feedback and diagnostics. Here's how to double check the setting on your PC before you start: <ol> <li> Open the Windows **Settings** app. </li> <li> Select on **Privacy**. </li> <li> Go to **Feedback & diagnostics** on the left pane, which has been renamed to **Diagnostics & feedback** in recent Windows Insider builds of Windows. </li> <li> Under **Select how much data you send to Microsoft**, select **Full** if it isn't already selected. </li> <li> Be sure to restart your PC and repeat the steps to reproduce your issue before filing feedback. </li> <ol>
 
 ## How to file feedback for Windows Mixed Reality immersive headsets on PC
 
