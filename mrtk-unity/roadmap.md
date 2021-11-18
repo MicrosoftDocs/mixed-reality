@@ -19,10 +19,9 @@ Microsoft Mixed Reality Toolkit v2.7.2
 
 | Product | Description | Timeline | Project board |
 | --- | --- | --- | --- |
-
-| [MRTK v2.7.3](#273) | A minor release with targeted bug fixes | Dec 2021 2021 | https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/25 |
-| [MRTK v3.0.0 Public Preview](#300) | A new major release of the MRTK on an all new architecture | Spring 2022 | https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/18 |
-| [MRTK v2.8.0](#280) | Next iteration of MRTK with bug fixes and minor improvements | Spring 2022 | https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/22 |
+| [MRTK v2.7.3](#273) | A minor release with targeted bug fixes | Dec 2021 | [MRTK v2.7.3 Milestones](https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/25) |
+| [MRTK v3.0.0 Public Preview](#300) | A new major release of the MRTK on an all new architecture | Spring 2022 |[MRTK v3.0.0 Milestones](https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/18) |
+| [MRTK v2.8.0](#280) | Next iteration of MRTK with bug fixes and minor improvements | Spring 2022 | [MRTK v2.8.0 Milestones](https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/22) |
 
 The MRTK team is currently focused on developing MRTK v3 which introduces a new architecture to address several painpoints that have been vocalized by the community. Since we are a lean team, we are moving away from our typical 8-12 week release cadence in order to focus our attention on building up the core of MRTK v3 so we can share it with the public and start accepting contributions from the community.
 
@@ -32,6 +31,9 @@ Release details, including backlog items, can be found on the [GitHub milestone 
 > When Unity releases an LTS (Long Term Support) product, the Mixed Reality Toolkit will update to the LTS release. Although the Mixed Reality Toolkit runs on the latest non-beta (ex: 2021.2) tech branch version of Unity, it is not officially supported.
 
 ## Mixed Reality Toolkit (MRTK) roadmap
+
+### **2.7.3**
+In December 2021, MRTK 2.7.3 will be released to address important bugs that have been reported on github.
 
 ### **3.0.0**
 In the spring of 2022, a preview of MRTK v3 will release featuring an all new architecture for developing rich MR experiences. MRTK v3 will have new minimum requirements which include: 
