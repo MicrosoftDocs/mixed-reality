@@ -35,6 +35,10 @@ Release details, including backlog items, can be found on the [GitHub milestone 
 ### **2.7.3**
 In December 2021, MRTK 2.7.3 will be released to address important bugs that have been reported on github.
 
+Status: In Development
+
+Target Time: Early December 2021
+
 ### **3.0.0**
 In the spring of 2022, a preview of MRTK v3 will release featuring an all new architecture for developing rich MR experiences. MRTK v3 will have new minimum requirements which include: 
 - Unity 2020.3 LTS 
