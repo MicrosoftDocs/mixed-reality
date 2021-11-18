@@ -1,87 +1,72 @@
 ---
 title: Roadmap
-description: documentation for outlining the roadmap of MRTK.
+description: Documentation for outlining the roadmap of MRTK.
 author: polar-kev
 ms.author: kesemple
-ms.date: 03/03/2021
-keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK
+ms.date: 11/18/2021
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, roadmap, v3
 ---
 
 # Roadmap
 
-This document outlines the roadmap of the Mixed Reality Toolkit. Please note that the following reflects work that is in development and target dates reflect estimates.
+This document outlines our vision for major work in the Mixed Reality Toolkit for calendar year 2021 and 2022. Please note that the following reflects work that is in development and target dates reflect estimates.
 
 ## Current release
 
-Microsoft Mixed Reality Toolkit v2.6
+Microsoft Mixed Reality Toolkit v2.7.2
 
 ## Upcoming releases
 
 | Product | Description | Timeline | Project board |
 | --- | --- | --- | --- |
-| [MRTK V2.7](#270) | Next iteration of MRTK | May 2021 | https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/14 |
 
-Releases are centered around themes (ex: large feature areas) and are scheduled to occur approximately every 8-12 weeks.
+| [MRTK v2.7.3](#273) | A minor release with targeted bug fixes | Dec 2021 2021 | https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/25 |
+| [MRTK v3.0.0 Public Preview](#300) | A new major release of the MRTK on an all new architecture | Spring 2022 | https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/18 |
+| [MRTK v2.8.0](#280) | Next iteration of MRTK with bug fixes and minor improvements | Spring 2022 | https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/22 |
+
+The MRTK team is currently focused on developing MRTK v3 which introduces a new architecture to address several painpoints that have been vocalized by the community. Since we are a lean team, we are moving away from our typical 8-12 week release cadence in order to focus our attention on building up the core of MRTK v3 so we can share it with the public and start accepting contributions from the community.
 
 Release details, including backlog items, can be found on the [GitHub milestone pages](https://github.com/Microsoft/MixedRealityToolkit-Unity/milestones). The complete set of open issues can also be found on [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/issues).
 
+
+> When Unity releases an LTS (Long Term Support) product, the Mixed Reality Toolkit will update to the LTS release. Although the Mixed Reality Toolkit runs on the latest non-beta (ex: 2021.2) tech branch version of Unity, it is not officially supported.
+
 ## Mixed Reality Toolkit (MRTK) roadmap
 
-The Mixed Reality Toolkit is built to be cross MR/AR/VR/XR platform by design. The toolkit currently supports Unity 2019.4.x and Unity 2018.4.x.
+### **3.0.0**
+In the spring of 2022, a preview of MRTK v3 will release featuring an all new architecture for developing rich MR experiences. MRTK v3 will have new minimum requirements which include: 
+- Unity 2020.3 LTS 
+- Unity's XR Interaction Toolkit (XRI)
+- OpenXR
 
-> When Unity releases an LTS (Long Term Support) product, the Mixed Reality Toolkit will update to the LTS release. Although the Mixed Reality Toolkit runs on the latest non-beta (ex: 2020.1) tech branch version of Unity, it is not officially supported.
+Status: In Development
 
-### 2.7.0
+Target Time: Public Preview Spring 2022
 
-We are currently planning the 2.7.0 release and will have more updates for you soon!
-For the latest status of the release, please visit the [milestone page](https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/14).
+Our focuses for MRTK v3 include the following:
+- Independent subsystems that can easily be integrated with non-MRTK code
+- Performance Improvements
+- Components ready for enterprise scale
+- Cross-platform device support
+- Flexible and Scalable Layout Tools
+- Data Driven UI
+- Themeing System to Quickly Apply Your Brand to UI
+- Accessibility Options
 
-Status: Planning
 
-Target Timeline: May 2021
+### **2.8.0**
+
+As we transition to MRTK v3, MRTK v2 will go into maintenance mode. This means the MRTK team will prioritize bug fixes and stability over new feature development in MRTK 2.8 and later. We continue to encourage the developer community to take advantage of the open source nature of MRTK and submit PR's for new features you would like to you. We also encourage you to comment in the [MRTK github repo](https://github.com/microsoft/MixedRealityToolkit-Unity/issues) on issues you want to see fixed first.
+
+For the latest status of the release, please visit the [milestone page](https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/22).
+
+Status: Gathering Feedback
+
+Target Timeline: Spring 2022
 
 Themes:
 
+- Unity 2021 Support
+- Bug Fixes
 - Stability 
-- Platform Expansion: OpenXR
-- User Experience
-- Developer Education
-- Packaging
 
-**Stability**
-
-Quality and stability are the top priority for this and all Microsoft Mixed Reality Toolkit releases. We will continue to prioritize customer and partner issues that impact the stability of MRTK components.
-
-**Platform Expansion: OpenXR**
-
-The MRTK team supports the open future of mixed reality through [OpenXR](https://techcommunity.microsoft.com/t5/mixed-reality-blog/moving-forward-to-openxr/ba-p/1825672). Support for OpenXR is currently under development, with initial preview support released in MRTK 2.5.2.
-
-**User Experience**
-
-We're listening to your feedback about MRTK and have continued plans for:
-
-- Bug fixes
-- Making MRTK UX controls easier to understand
-- HoloLens Shell parity
-- Tests to ensure features do not regress
-
-**Developer Education**
-
-We've migrated our developer documentation from Github to a new docs platform! We want to hear your feedback so we can continue to improve our developer documentation experience.
-We currently have [MRTK tutorials](/windows/mixed-reality/develop/unity/tutorials) that live in a different section of Mixed Reality docs. We will be migrating these tutorials to live with the rest of the MRTK documentation. 
-
-**Packaging**
-
-The [Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) is a new way for developers to discover, update, and add Mixed Reality feature packages into Unity projects. You can search packages by name or category, see their dependencies, and even view proposed changes to your projects manifest file before importing. We intend to make updates to the Mixed Reality Feature Tool as we respond to feature requests and bugs.
-
-## Backlog
-
-The following list highlights some of the key investments the MRTK team intends to pursue.
-
-- Platform expansion
-- Extensibility
-- Modularity
-- Accessibility features
-- Globalization enhancements
-- Cloud service support
-- Tools
