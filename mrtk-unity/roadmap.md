@@ -42,7 +42,7 @@ Target Time: early December 2021
 
 ### **2.8.0**
 
-As we transition to MRTK v3, MRTK v2 will prioritize bug fixes and stability over new feature development in MRTK 2.8 and later. We continue to encourage the developer community to take advantage of the open source nature of MRTK, and submit PR's for new features you would like to have?. We also encourage the community to comment in the [MRTK Github repo](https://github.com/microsoft/MixedRealityToolkit-Unity/issues) on issues you want to see fixed.
+As we transition to MRTK v3, MRTK v2 will prioritize bug fixes and stability over new feature development in MRTK 2.8 and later. We continue to encourage the developer community to take advantage of the open source nature of MRTK, and submit PR's for new features you would like to have. We also encourage the community to comment in the [MRTK Github repo](https://github.com/microsoft/MixedRealityToolkit-Unity/issues) on issues you want to see fixed.
 
 For the latest status of the release, please visit the [milestone page](https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/22).
 
