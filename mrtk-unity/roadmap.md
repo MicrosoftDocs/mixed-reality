@@ -69,7 +69,7 @@ For the latest status of the release, please visit the [milestone page](https://
 
 Status: gathering feedback
 
-Target Timeline: Spring 2022
+Target time: Spring 2022
 
 Themes:
 
