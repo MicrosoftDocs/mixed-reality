@@ -20,8 +20,8 @@ Microsoft Mixed Reality Toolkit v2.7.2
 | Product | Description | Timeline | Project board |
 | --- | --- | --- | --- |
 | [MRTK v2.7.3](#273) | A minor release with targeted bug fixes | Dec 2021 | [MRTK v2.7.3 Milestones](https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/25) |
-| [MRTK v3.0.0 Public Preview](#300) | A new major release of the MRTK with an all new architecture | Spring 2022 |[MRTK v3.0.0 Milestones](https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/18) |
 | [MRTK v2.8.0](#280) | Next iteration of MRTK with bug fixes and minor improvements | Spring 2022 | [MRTK v2.8.0 Milestones](https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/22) |
+| [MRTK v3.0.0 Public Preview](#300) | A new major release of the MRTK with an all new architecture | Spring 2022 |[MRTK v3.0.0 Milestones](https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/18) |
 
 The MRTK team is currently focusing on the development MRTK v3, which introduces a new architecture. The architecture addresses several pain points being vocalized by the community. We are a lean team, and we need to move away from our typical 8-12 week release cadence in order to focus our attention on building up the core of MRTK v3. We would like to share it with the public and start accepting contributions from the community soon.
 
@@ -38,6 +38,24 @@ MRTK 2.7.3 will be released in December 2021. This release will address importan
 Status: in development
 
 Target Time: early December 2021
+
+
+### **2.8.0**
+
+As we transition to MRTK v3, MRTK v2 will go into maintenance mode. From then on, the MRTK team will prioritize bug fixes and stability over new feature development in MRTK 2.8 and later. We continue to encourage the developer community to take advantage of the open source nature of MRTK, and submit PR's for new features you would like to have?. We also encourage the community to comment in the [MRTK Github repo](https://github.com/microsoft/MixedRealityToolkit-Unity/issues) on issues you want to see fixed.
+
+For the latest status of the release, please visit the [milestone page](https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/22).
+
+Status: gathering feedback
+
+Target time: Spring 2022
+
+Themes:
+
+- Unity 2021 support
+- Bug fixes
+- Stability 
+
 
 ### **3.0.0**
 A preview of MRTK v3 will be released in the spring of 2022, featuring an all new architecture for developing rich MR experiences. MRTK v3 will have the following minimum requirements:
@@ -59,21 +77,4 @@ Our focuses for MRTK v3 include the following:
 - Data-driven UI
 - Theming system to quickly apply your brand to UI
 - Accessibility options
-
-
-### **2.8.0**
-
-As we transition to MRTK v3, MRTK v2 will go into maintenance mode. From then on, the MRTK team will prioritize bug fixes and stability over new feature development in MRTK 2.8 and later. We continue to encourage the developer community to take advantage of the open source nature of MRTK, and submit PR's for new features you would like to have?. We also encourage the community to comment in the [MRTK Github repo](https://github.com/microsoft/MixedRealityToolkit-Unity/issues) on issues you want to see fixed.
-
-For the latest status of the release, please visit the [milestone page](https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/22).
-
-Status: gathering feedback
-
-Target time: late Spring/early Summer 2022
-
-Themes:
-
-- Unity 2021 support
-- Bug fixes
-- Stability 
 
