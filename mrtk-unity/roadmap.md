@@ -58,10 +58,7 @@ Themes:
 
 
 ### **3.0.0**
-A preview of MRTK v3 will be released in the spring/summer of 2022, featuring an all new architecture for developing rich MR experiences. MRTK v3 will have the following minimum requirements:
-- Unity 2020.3 LTS 
-- Unity's XR Interaction Toolkit (XRI)
-- OpenXR
+A preview of MRTK v3 will be released in the spring/summer of 2022, featuring an all new architecture for developing rich MR experiences. MRTK v3 will have a minimum requirement of Unity 2020.3 LTS.
 
 Status: in development
 
@@ -69,6 +66,7 @@ Target time: Public Preview Spring/Summer 2022
 
 Our focuses for MRTK v3 include the following:
 
+- Build on top of OpenXR and Unity's XR Interaction Toolkit (XRI)
 - Independent subsystems that can easily be integrated with non-MRTK code
 - Performance improvements
 - Components ready for enterprise scale
