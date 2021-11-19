@@ -181,7 +181,7 @@ A: Azure Spatial Anchors is a new Mixed Reality service that enables multi-user,
 
 A: Azure PlayFab is a complete backend platform for live games. You can learn more at <https://playfab.com/>.
 
-### Using SteamVR for in Location Based Entertainment
+### Using SteamVR for Location Based Entertainment
 
 **Q: I use SteamVR to deploy my experiences. Does Windows Mixed Reality work with SteamVR?**
 
