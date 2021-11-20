@@ -51,8 +51,8 @@ The following table is a breakdown of system actions by peripheral.  Actions des
 
 | **Peripheral**    |  **MinimumUserImpact**  |   **MediumUserImpact** |    **MaximumUserImpact** |**Last Resort**  |**Software Shutdown**| **Failsafe**|
 |-------------------|-------------------------|------------------------|--------------------------|-----------------|-----------------|-----------------|
-| ISLAND_PERIPHERAL_GPU     | Throttle MRC Quality </br> Adjust VSYNC Interval |  |               |                 |                 |                 |
-| ISLAND_PERIPHERAL_DISPLAY | Depth FPS Reduction                              |  |               |                 |                 |                 |
+| Gpu     |  |Throttle MRC Quality </br> Adjust VSYNC Interval  |               |                 |                 |                 |
+| Display | | Depth FPS Reduction |               |                 |                 |                 |
 | Any Peripheral            |                                                  |  |               | Display Warning </br> Close Application </br> Stop MRC Capture | OS Shutdown | Hardware Shutdown |
 > [!NOTE]
 > <!--Last Resort Note-->Actions in the "Last Resort", "Software Shutdown", and "Failsafe" columns cannot be suppressed
