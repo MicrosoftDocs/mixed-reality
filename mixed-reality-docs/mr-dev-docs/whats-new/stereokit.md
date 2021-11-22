@@ -33,4 +33,6 @@ For more information about the hackathon, see [rules for full details on project
 * [StereoKit overview](https://stereokit.net/)
 * [StereoKit getting started guide](https://stereokit.net/Pages/Guides/Getting-Started.html)
 * Watch the [getting started video series](https://www.youtube.com/playlist?list=PLlrxD0HtieHjrKH44ZUatzfM8fXt2CmWv)
-* In GitHub, you can [ask a question](https://github.com/maluoi/StereoKit/discussions) or [submit a bug](https://github.com/maluoi/StereoKit/issues).
+* In GitHub, you can [ask a question](https://github.com/maluoi/StereoKit/discussions) or [submit a bug](https://github.com/maluoi/StereoKit/issues)
+
+To get updates on mixed reality developer tools, events, and early access offers, sign up for [Microsoft's Mixed Reality Developer Program](https://mixedreality.microsoftcrmportals.com/signup/?Place=StereoKitHack).
