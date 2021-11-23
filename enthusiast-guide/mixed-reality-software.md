@@ -3,7 +3,7 @@ title: Software overview and release history
 description: An overview of the major software components for Windows Mixed Reality, immersive headsets, and their release history.
 author: qianw211
 ms.author: v-qianwen
-ms.date: 10/5/2021
+ms.date: 11/19/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, software components, release history, release notes, version history
 appliesto:
@@ -58,6 +58,9 @@ Managing your Windows Mixed Reality headset:
     * Toggle to start MRP on HMD plug-in.
     * Toggle to start MRP when presence is detected.
     * Toggle Open Desktop app on desktop app focus.
+
+>[!Note]
+>Starting on November 22 2021, Windows 10 version 2004 and newer will enable Infinite Expanse, SteamVR boot with Mixed Reality Portal launch, and new startup experience settings currently available for Windows 11.
 
 ### Prior release notes
 

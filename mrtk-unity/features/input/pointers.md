@@ -4,7 +4,7 @@ description: Documentation on pointers in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Pointers,
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Pointers, cursor
 ---
 
 # Pointers
