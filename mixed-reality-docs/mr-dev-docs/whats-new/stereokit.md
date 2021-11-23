@@ -1,5 +1,5 @@
 ---
-title: Mixed Reality challenge - StereoKit hackathon
+title: Mixed Reality Challenge - StereoKit hackathon
 description: Learn to build mixed reality applications.
 author: qianw211
 ms.author: v-qianwen
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: event, calendar, academy, schedule, build, microsoft, StereoKit
 ---
 
-# Mixed Reality challenge: StereoKit hackathon
+# Mixed Reality Challenge: StereoKit hackathon
 
 ![Mixed Reality challenge: StereoKit hackathon](images/stereokit-hackathon-dev-post-banner.png)
 
