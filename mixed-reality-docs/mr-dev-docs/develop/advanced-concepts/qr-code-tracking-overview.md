@@ -3,7 +3,7 @@ title: QR code tracking overview
 description: Learn how to detect QR codes, add webcam capabilities, and manage coordinate systems in mixed reality apps on HoloLens 2.
 author: qianw211
 ms.author: v-qianwen
-ms.date: 11/8/2021
+ms.date: 11/24/2021
 ms.topic: article
 keywords: vr, lbe, location based entertainment, vr arcade, arcade, immersive, qr, qr code, hololens2, tracking
 ---
@@ -64,22 +64,6 @@ For recommendations on where and how to place QR codes, refer to [Environment co
 
 ## Troubleshooting and FAQ
 
-### How do I enable or disable the QR Tracking Feature in the driver For Windows Mixed Reality devices (Supported min version 19h1 builds)
-
-In order to turn **ON** QR tracking, run the following script in cmd and then replug in your headset.
-
-```
-reg add "HKLM\SOFTWARE\Microsoft\HoloLensSensors" /v  EnableQRTrackerDefault /t REG_DWORD /d 1 /F
-```
-
-In order to turn **OFF** QR Tracking, run the following script in cmd and then re-plug in your headset. Any currently found QR codes will become non-locatable.
-
-```
-reg add "HKLM\SOFTWARE\Microsoft\HoloLensSensors" /v  EnableQRTrackerDefault /t REG_DWORD /d 0 /F
-```
-
-This registry setting is only temporary until the driver has the capability to check for APP capabilities.
-
 ### What capabilities are needed?
 
 You'll need the <mark> **capability t "webcam"** </mark> added to your manifest (checkbox in Unity). Request access by calling the following function:
@@ -126,21 +110,10 @@ Use NuGet for unity and point to the NuGet pack above.
 
 * From any QR code generator, see <https://www.the-qrcode-generator.com/>
 
-### If it doesn't work on your Oasis device:
-
-* Do you have a build 19h1or later?
-* Did you add the reg key?
-
-### If it doesn't work on your HoloLens device:
-
-* Do you have 19h1 or later build?
-
 ### If it doesn't work in general:
 
-* If RS5, have you set the reg key? Restarted the device afterwards? Are you using the plugin from MRTK?
-* If RS6/19H1 are you using the RS6/19H1plugin? Are you using latest plugin from RS6/19H1 builds. If oasis, did you set the reg key?
 * Is the QR Code version a supported version? We don't support the high density versions like version 40. Nothing above version 10 is guaranteed, versions above 20 are not supported.
-* Are you close enough to the QR code?
+* Are you <mark> close enough </mark> to the QR code?
 * How is the lighting? There is a known issue where detection becomes difficult when the QR code is on a dark background.
 
 ### What's the accuracy?
@@ -151,8 +124,8 @@ When detected in a single frame, the size is expected to have at most a 1% error
 
 The distance obviously depends on the size of the QR code, and also what version it is.
 
-* On Baraboo, for a version 1 QR code varying from 5 cm sides to 25-cm sides, the minimum detection distance ranges from 0.25 meters to 0.5 meters. The furthest QR Codes can be detected goes from about 0.5 m for the smallest code to 2 meters for the bigger ones.
-* On Oasis, these distances for the sizes are halved.
+* On HoloLens 2, for a version 1 QR code varying from 5cm sides to 25 cm sides, the minimum detection distance ranges from 0.25 metres to 0.5 metres. The furthest these can be detected from goes from about 0.5m for the smallest code to 2 metres for the bigger.
+* On Windows Mixed Reality, these distances for the sizes are approximately halved.
 * For any codes bigger, extrapolate - the detection distance for size increases linearly. For any code smaller, detection simply will not occur - 4-5 cm is the smallest we can detect.
 
 ### Why can't I read QR codes with logos?
@@ -161,11 +134,11 @@ Currently, we don't support QR codes with logos.
 
 ### Are MicroQR Codes supported?
 
-Micro QR Codes support is coming soon.
+Yes, Micro QR Codes are supported.
 
 ### QR codes detected, but why am I getting no data?
 
-* In RS5 version of the plugin, not all encodings are supported. If the platform cannot decode the qrcode, there will be no data.  You can use the stream and interpret the data using open source code. In RS6, more encodings are supported.
+* If the platform cannot decode the qrcode, there will be no data.  You can use the stream and interpret the data using open source code. In RS6, more encodings are supported.
 * Some features such as structure append and micro QR codes are not supported.
 
 ### How to clear the codes from my app? It seems once you find a code, they tend to persist.
@@ -201,10 +174,6 @@ QR Codes are saved at the system level in driver session, or boot session on Hol
 ### Is the `rs_analog_runtime_undock` the only branch that works for QR tracking API in Baraboo?
 
 * All the branches with builds RS6 and later should work.
-
-### Do I need the registry entry in HoloLens? If so, how do I add it?  <mark> [Not familiar w/ editing registry in HoloLens] </mark>
-
-If using RS5 builds and RS5 plugin, see the first section at the top of the page for more details: <https://www.qrcode.com/en/howto/code.html>
 
 ### How wide is the PV Camera field of view? 
 
