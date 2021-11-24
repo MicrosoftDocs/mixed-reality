@@ -24,7 +24,7 @@ The Start gesture is a hand gesture used to invoke the Start Menu. It's the equi
     <tr>
         <td><strong>Feature</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
