@@ -96,7 +96,7 @@ If the access status should be `(status == QRCodeWatcherAccessStatus::Allowed)`.
 
 If the user denies, then the feature will return the access denied when you start the QRTracking.
 
-This api should be called before you construct the `QRCodeWatcher` object.
+This API should be called before you construct the `QRCodeWatcher` object.
 
 ### How to make QR Code Tracking Feature work on HoloLens 2 devices (Supported min version 19h1 builds)
 
