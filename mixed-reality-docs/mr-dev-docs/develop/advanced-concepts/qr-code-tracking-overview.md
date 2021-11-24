@@ -102,7 +102,7 @@ This API should be called before you construct the `QRCodeWatcher` object.
 
 For QR Code tracking to work on HoloLens 2, you need to be on build 19H1 or later.
 
-QR tracking is automatic on HoloLens 2, and you will need the "webcam" capability added to your app.
+QR tracking is automatic on HoloLens 2, and you'll need the "webcam" capability added to your app.
 
 ### Where do I find the API plugin files?
 
