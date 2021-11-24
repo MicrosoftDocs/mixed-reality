@@ -82,7 +82,7 @@ This registry setting is only temporary until the driver has the capability to c
 
 ### What capabilities are needed?
 
-You will need the <mark> **capability t "webcam"** </mark> added to your manifest (checkbox in unity). Request access by calling the following function:
+You'll need the <mark> **capability t "webcam"** </mark> added to your manifest (checkbox in Unity). Request access by calling the following function:
 
 ```
 #if WINDOWS_UWP
