@@ -196,7 +196,7 @@ QR Codes are saved at the system level in driver session, or boot session on Hol
 
 ### From a plugin standpoint, what should I do? My plugin right now is configured for x64. Is the DLL OK to just reconfigure in Unity as x86?
 
-* See the <mark> preparing unity section </mark>.
+* See the <mark> preparing Unity section </mark>.
 
 ### Is the `rs_analog_runtime_undock` the only branch that works for QR tracking API in Baraboo?
 
