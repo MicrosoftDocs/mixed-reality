@@ -194,7 +194,7 @@ QRTimeStamp.text = "Time:" + System.DateTime.Now.AddSeconds(-ElapsedSecs).ToStri
 
 QR Codes are saved at the system level in driver session, or boot session on HoloLens.
 
-### From a plugin standpoint, what should I do. My plugin right now is configured for x64. Is the DLL OK to just reconfigure in Unity as x86?
+### From a plugin standpoint, what should I do? My plugin right now is configured for x64. Is the DLL OK to just reconfigure in Unity as x86?
 
 * See the <mark> preparing unity section </mark>.
 
