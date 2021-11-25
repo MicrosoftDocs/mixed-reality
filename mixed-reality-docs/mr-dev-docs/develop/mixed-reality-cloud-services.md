@@ -149,7 +149,7 @@ The standalone services listed below don't apply to Mixed Reality, but can be he
         <td>✔️</td>
     </tr>
     <tr>
-        <td><a href="unity/tutorials/mr-azure-308.md"mr-azure-308.md">Functions and storage</a></td>
+        <td><a href="unity/tutorials/mr-azure-308.md">Functions and storage</a></td>
         <td>✔️</td>
         <td>✔️</td>
     </tr>
