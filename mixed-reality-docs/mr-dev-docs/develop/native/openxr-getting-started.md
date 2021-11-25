@@ -60,7 +60,7 @@ After building an OpenXR UWP app package, you can [deploy that package](../advan
 
 For a tour of the OpenXR API, check out this 60-minute video of the <a href="https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp" target="_blank">BasicXrApp</a> sample in Visual Studio.  The video shows how each of the major components of the OpenXR API can be used in your own engine, and also demonstrates some of the applications built on OpenXR today:
 
->[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/OpenXR-Cross-platform-native-mixed-reality/player?format=ny]
+>[!VIDEO https://docs.microsoft.com/en-us/shows/Mixed-Reality/OpenXR-Cross-platform-native-mixed-reality/player?format=ny]
 
 ## Using OpenXR in an existing project
 

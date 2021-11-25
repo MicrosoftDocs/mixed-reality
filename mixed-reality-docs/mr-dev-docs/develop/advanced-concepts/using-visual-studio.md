@@ -87,7 +87,7 @@ Next, you need to set your remote connection. For C++ and JavaScript projects, g
 
 <br>
 
->[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Deploying-your-HoloLens-2-application/player?format=ny]
+>[!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Deploying-your-HoloLens-2-application/player?format=ny]
 
 1. Select your apps compilation options
     * For Unity projects, choose either **Release** or **Master** 

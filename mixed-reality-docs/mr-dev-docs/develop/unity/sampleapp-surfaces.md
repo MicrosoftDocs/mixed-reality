@@ -39,7 +39,7 @@ You can use this project's components to create your own mixed reality app exper
 
 ## MR Dev Days 2020 - Learnings from the MR Surfaces App
 
-[Learnings from the MR Surfaces App](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Learnings-from-the-MR-Surfaces-App)
+[Learnings from the MR Surfaces App](/shows/Mixed-Reality/Learnings-from-the-MR-Surfaces-App)
 
 Lars Simkins, Senior designer behind the MRDL Surfaces app talks about the app's design story and technical highlights.
 
