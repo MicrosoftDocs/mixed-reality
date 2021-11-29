@@ -19,7 +19,7 @@ To ensure useful spatial mapping data, applications developers have several opti
 
 In all these cases, the actual data gathered during the exploration is stored by the system and the application doesn't need to do this. If you'd like to see room scan visualization in action, check out our **Designing Holograms - Spatial Awareness** video demo below:
 
-> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
+> [!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
 
 *This video was taken from the "Designing Holograms" HoloLens 2 app. Download and enjoy the full experience [here](https://aka.ms/dhapp).*
 

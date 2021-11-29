@@ -4,7 +4,6 @@ description: Documentation on the different experience settings for MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 04/13/2021
-ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK
 monikerRange: '>= mrtkunity-2021-05'
 ---

@@ -100,7 +100,7 @@ To start developing OpenXR applications for HoloLens 2 or Windows Mixed Reality 
 
 For a tour through all the major components of the OpenXR API, along with examples of the real-world applications using OpenXR today, check out this 60-minute walkthrough video:
 
->[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/OpenXR-Cross-platform-native-mixed-reality/player?format=ny]
+>[!VIDEO https://docs.microsoft.com/en-us/shows/Mixed-Reality/OpenXR-Cross-platform-native-mixed-reality/player?format=ny]
 
 ## See also
 
