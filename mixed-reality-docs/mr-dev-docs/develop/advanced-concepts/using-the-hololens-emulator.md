@@ -17,7 +17,7 @@ If you're looking to develop Windows Mixed Reality immersive (VR) headset applic
 
 ## HoloLens 2 Emulator Overview
 
->[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Emulator-Overview/player?format=ny]
+>[!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/HoloLens-2-Emulator-Overview/player?format=ny]
 
 ## Installing the HoloLens Emulator
 
