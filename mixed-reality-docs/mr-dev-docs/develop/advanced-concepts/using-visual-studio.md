@@ -87,7 +87,7 @@ Next, you need to set your remote connection. For C++ and JavaScript projects, g
 
 <br>
 
->[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Deploying-your-HoloLens-2-application/player?format=ny]
+>[!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Deploying-your-HoloLens-2-application/player?format=ny]
 
 1. Select your apps compilation options
     * For Unity projects, choose either **Release** or **Master** 
@@ -126,7 +126,7 @@ Next, you need to set your remote connection. For C++ and JavaScript projects, g
 
 1. Make sure you've **[installed the HoloLens Emulator](../install-the-tools.md)**.
 2. Select an **x86** or **x64** build configuration for your app.</br>
-![x86 build configuration in Visual Studio](images/x86setting.png)</br>
+![x86 build setting configuration in Visual Studio](images/x86setting.png)</br>
 3. Select **HoloLens 2 Emulator** in the deployment target drop-down menu</br>
 ![Emulator target in Visual Studio application](images/deployemulator2.png)</br>
 4. Select **Debug > Start debugging** to deploy your app and start debugging</br>
