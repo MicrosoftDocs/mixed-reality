@@ -47,26 +47,24 @@ Once the plugin is enabled for your project, you can access the Hub from the too
 
 #### Installing mixed reality plugins
 
-To install a plugin using the Hub, select the plugin you want to add to your project and then press the _Install_ button. To download the plugin, verify that there are no conflicts in the _Issues_ box and press _Confirm_. Once the plugin is downloaded, you'll be prompted to restart the editor. Unfortunately we can't auto-restart the editor for you; sometimes the new editor instance will start before the installation is complete.
+To install a plugin using the Hub, select the plugin you want to add to your project and then press the _Install_ button. To download the plugin, verify that there are no conflicts in the _Issues_ box and press _Confirm_. Once the plugin is downloaded, you'll be prompted to restart the editor.
 
 ![Install a plugin using the MRTK Hub](images/hub-download.png)
 
-After closing the editor you'll see a command prompt appear with a progress bar for unpacking the downloaded plugin. One command prompt will appear for each plugin being installed. Once unpacking is completed, you can re-open the editor and continue on your [mixed reality development journey](unreal-quickstart.md).
-
-![MRTK Hub unpacking a plugin via command prompt](images/hub-unpack.png)
+Once the editor has restarted, your can continue on your [mixed reality development journey](unreal-quickstart.md).
 
 > [!IMPORTANT]
 > Once the plugin is installed, it must be checked into source control like any other project-level plugin.
 
 #### Updating mixed reality plugins
 
-To update a plugin using the Hub, select the plugin you want to update from the list and press the _Install_ button. To download the updated plugin, verify that there are no conflicts in the _Issues_ box and press _Confirm_. You'll be prompted to restart the editor to complete the update. Plugin updates are done during editor startup so there's no need to wait for any unpacking to complete before you re-open the editor.
+To update a plugin using the Hub, select the plugin you want to update from the list and press the _Install_ button. To download the updated plugin, verify that there are no conflicts in the _Issues_ box and press _Confirm_. You'll be prompted to restart the editor to complete the update. Note that this restart may take some time as the plugins are updated.
 
 ![Updating a plugin through the MRTK Hub](images/hub-update.png)
 
 #### Removing mixed reality plugins
 
-To uninstall a plugin using the Hub, select the plugin you want to remove, and then select the version you have installed from the dropdown. To remove the plugin, verify that there are no conflicts in the _Issues_ box and press _Confirm_. You'll be prompted to restart the editor to complete the removal.
+To uninstall a plugin using the Hub, select the plugin you want to remove, and then select the version you have installed from the dropdown. To remove the plugin, verify that there are no conflicts in the _Issues_ box and press _Confirm_. You'll be prompted to restart the editor to complete the removal. Note that this restart may take some time as the plugins are removed.
 
 ![Removing a plugin through the MRTK Hub](images/hub-remove.png)
 

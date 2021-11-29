@@ -3,7 +3,7 @@ title: MRTK-Unity Developer Documentation
 description: Learn about the Mixed Reality Toolkit for Unity.
 author: polar-kev
 ms.author: kesemple
-ms.date: 03/03/2021
+ms.date: 11/10/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK
 ---
@@ -43,6 +43,9 @@ MRTK-Unity is a Microsoft-driven project that provides a set of components and f
 | Ultraleap Hand Tracking | Ultraleap Leap Motion controller |
 | Mobile | iOS and Android |
 ::: moniker-end
+
+>[!Note]
+>Please avoid Unity 2020.3.21f and 2020.3.22f, which cause flashing and strobing effect on HoloLens 2. For more information, see [here](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/10288). 
 
 ## Getting started with MRTK
 
