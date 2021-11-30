@@ -71,7 +71,7 @@ Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more 
 
 - If the HAR player app is already installed from the store on the Hololens 2, skip the three steps below and run the app.
 
-- Open the Holographic Remoting Sample Player app using VS 2019 with the following configuration to run on the Hololens 2 attached to the PC using USB cable.
+- Open the Holographic Remoting Sample Player app using VS 2019. In order to run on a Hololens 2 that's attached to your PC using a USB cable, configure as follows:
 ![har-sample-player-run-sol](images/har-sample-player-run-sol.png)
 
 - Give in the command line argument as "-listen" to the SamplePlayer app. Right click on Sample Player solution → Properties→ Configuration Properties → Debugging → Command Line Arguments
