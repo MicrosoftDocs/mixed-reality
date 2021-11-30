@@ -3,7 +3,7 @@ title: Contributing instructions
 description: Learn how to contribute to the Mixed Reality developer docs on the docs.microsoft.com platform using GitHub-flavored Markdown. 
 author: qianw211
 ms.author: v-qianwen
-ms.date: 9/13/2021
+ms.date: 11/30/2021
 ms.topic: article
 ---
 
@@ -11,7 +11,7 @@ ms.topic: article
 
 Welcome to the [public repo for Mixed Reality developer documentation](https://github.com/MicrosoftDocs/mixed-reality/tree/master/mixed-reality-docs)! Any articles you create or edit in this repo **will be visible to the public.** 
 
-The Mixed Reality docs are now on the docs.microsoft.com platform, which uses GitHub-flavored Markdown with Markdig features. The content you edit in this repo gets formatted into stylized pages that show up at https://docs.microsoft.com/windows/mixed-reality. 
+The Mixed Reality docs are now on the docs.microsoft.com platform, which uses GitHub-flavored Markdown with Markdig features. The content you edit in this repo gets formatted into stylized pages that show up at </windows/mixed-reality>. 
 
 This page covers the basic steps and guidelines for contributing and links to Markdown basics. Thank you for your contribution!
 
@@ -93,7 +93,7 @@ Use the following workflow to *create new articles* in the documentation repo vi
 
 1. Create a fork off the MicrosoftDocs/mixed-reality 'master' branch (using the **Fork** button in the top right).
 
-   ![Fork the master branch.](images/forkbranch.png)
+   ![Creating a fork.](images/forkbranch.png)
 2. In the "mixed-reality-docs" folder, select **Create new file** in the top right.
 3. Create a page name for the article (use hyphens instead of spaces and don't use punctuation or apostrophes) and append ".md"
 
@@ -159,7 +159,7 @@ While editing in GitHub via a web browser, you can select the **Preview** tab ne
 >[!NOTE]
 >Previewing your changes on review.docs.microsoft.com is only available to Microsoft employees
 
-Microsoft employees: once your contributions have been merged into the 'master' branch, you can review the content before it goes public at https://review.docs.microsoft.com/windows/mixed-reality?branch=master. Find your article using the table of contents in the left column.
+Microsoft employees: once your contributions have been merged into the 'main' branch, you can review the content before it goes public at https://review.docs.microsoft.com/windows/mixed-reality?branch=main. Find your article using the table of contents in the left column.
 
 ## Editing in the browser vs. editing with a desktop client
 
