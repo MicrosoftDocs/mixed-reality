@@ -97,9 +97,11 @@ This API should be called before you construct the `QRCodeWatcher` object.
 
 If you're running the project from Unity, you also need to ensure that you're calling from the UI thread.  Otherwise, the API will always return denied. For more information, see [AppCallbacks class](https://docs.unity3d.com/Manual/windowsstore-appcallbacks.html) in the Unity Manual.
 
+For more information on setting up your project for Unity, see [configure Unity for Windows Mixed Reality](/learn/modules/learn-mrtk-tutorials/1-3-exercise-configure-unity-for-windows-mixed-reality?ns-enrollment-type=LearningPath&ns-enrollment-id=learn.azure.beginner-hololens-2-tutorials&tabs=openxr).
+
 ### How to make QR Code Tracking Feature work on HoloLens 2 devices? 
 
-QR tracking is automatic on HoloLens 2, and you'll need the "webcam" capability added to your app.
+QR tracking is automatic on HoloLens 2, and you'll need the "webcam" capability added to your app. 
 
 ### Where do I find the API plugin files?
 
@@ -117,7 +119,7 @@ Add the correct architecture versions of the plugins and use them accordingly in
 
 ### How do I prepare Unity with the Microsoft.MixedReality.QR.QRCodeWatcher?
 
-Use NuGet for unity and point to the NuGet pack above.
+Use NuGet for Unity and point to the NuGet pack above.
 
 ### How can I make QR codes?
 
@@ -151,10 +153,10 @@ Yes, Micro QR Codes are supported.
 
 ### QR codes detected, but why am I getting no data?
 
-* If the platform cannot decode the qrcode, there will be no data.  You can use the stream and interpret the data using open-source code. In RS6, more encodings are supported.
+* If the platform cannot decode the QR code, there will be no data.  You can use the stream and interpret the data using open-source code. In RS6, more encodings are supported.
 * Some features such as structure append and micro-QR codes are not supported.
 
-### How to clear the codes from my app? It seems once you find a code, they tend to persist.
+### How to clear the codes from my app? It seems once you find a code, they tend to persist?
 
 QR codes only persist in the boot session. Once you reboot your device (or restart the driver), QR codes will be detected as new objects. QR codes are unique and persist within the driver session.
 
@@ -170,17 +172,13 @@ double ElapsedSecs = ElapsedTime * (1.0f / System.Diagnostics.Stopwatch.Frequenc
 QRTimeStamp.text = "Time:" + System.DateTime.Now.AddSeconds(-ElapsedSecs).ToString("MM/dd/yyyy HH:mm:ss.fff");
 ```
 
+#### Are QR codes saved at the ‘space’ level or app level?  It seems to me it is beyond app? 
+
+QR codes are saved at the system level in driver session, or boot session on HoloLens. For more information, see [managing QR code data](#managing-qr-code-data).
+
 #### How does that work with the underlying platform?  Where do they persist? 
 
 They only persist in memory (ASIC/SOC).
-
-#### Are QR codes saved at the ‘space’ level or app level?  It seems to me it is beyond app? 
-
-QR codes are saved at the system level in driver session, or boot session on HoloLens.
-
-### From a plugin standpoint, what should I do? My plugin right now is configured for x64. Is the DLL OK to just reconfigure in Unity as x86?
-
-For more information, see [Configure Unity for Windows Mixed Reality](/learn/modules/learn-mrtk-tutorials/1-3-exercise-configure-unity-for-windows-mixed-reality?ns-enrollment-type=LearningPath&ns-enrollment-id=learn.azure.beginner-hololens-2-tutorials&tabs=openxr).
 
 ## See also
 * [QR code tracking with native C++ and C## samples](../native/qr-code-tracking-cs-cpp.md)
