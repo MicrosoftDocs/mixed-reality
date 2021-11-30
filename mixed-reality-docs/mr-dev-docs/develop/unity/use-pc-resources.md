@@ -65,7 +65,7 @@ Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more 
 1. While running, you can obtain the current connection state with the `AppRemoting.TryGetConnectionState` API, and optionally disconnect and de-initialize XR using `AppRemoting.Disconnect()`. This could be used to disconnect and reconnect to a different device within the same app session. The sample app provides a tappable cube which will disconnect the remoting session if tapped.
 
 
-## Running the Sample app distributed and Holographic Remoting Player app in the modes described above
+## Running the sample app and Holographic Remoting Player app in the modes described above
 
 ### Mode 1: Run Sample app on PC in Connect Mode and Holographic Remoting player app in Listen Mode:
 
