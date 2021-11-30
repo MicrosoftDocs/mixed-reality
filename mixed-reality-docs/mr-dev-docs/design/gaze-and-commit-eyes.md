@@ -66,8 +66,8 @@ Either make your users aware they may need to keep looking at a target until the
 
 ## See also
 
-* [Eye-based interaction] (eye-gaze-interaction.md)
-* [Eye tracking on HoloLens 2] (eye-tracking.md)
+* [Eye-based interaction](eye-gaze-interaction.md)
+* [Eye tracking on HoloLens 2](eye-tracking.md)
 * [Gaze and commit](gaze-and-commit.md)
 * [Gaze and dwell](gaze-and-dwell.md)
 * [Hands - Direct manipulation](direct-manipulation.md)
