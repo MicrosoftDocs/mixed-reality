@@ -47,7 +47,7 @@ The exact time to detect codes depends not only on the size of the QR codes, but
 
 ### Distance and angular position from the QR code
 
-The tracking cameras can only detect a certain level of detail. For small codes - < 10 cm along the sides - you must be <mark> fairly close </mark>. For a version 1 QR code varying from 10 cm to 25 cm wide, the minimum detection distance ranges from 0.15 meters to 0.5 meter. 
+The tracking cameras can only detect a certain level of detail. For small codes - < 10 cm along the sides - you must be <mark> fairly close </mark>. For a version 1 QR code varying from 10 cm to 25 cm wide, the minimum detection distance ranges from 0.15 meters to 0.5 meters. 
 
 The detection distance for size increases linearly, but also depends on QR version or module size. The higher the version, the smaller the modules, which can only be detected from a closer position. You can also try micro-QR codes if you want the distance of detection to be longer. QR detection works with a range of angles += 45 deg to ensure we have proper resolution to detect the code.
 
