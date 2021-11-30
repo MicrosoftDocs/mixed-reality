@@ -77,7 +77,7 @@ Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more 
 - Open the **Properties** page for your project, navigate to **Configuration Properties** > **Debugging** > **Remote Machine**, and then, in the **Command Line Arguments** field, add "-listen".
 ![har-sample-player-app-listening](images/har-sample-player-app-listening.png)
 
-- Deploy the SamplePlayer solution on Hololens 2 by hitting the play button in VS solution. You will be able to see the HAR Sample player running on Hololens 2, displaying that it is "waiting for a connection on IP address of Hololens 2"
+- To deploy the SamplePlayer solution on Hololens 2, press the play button in the VS solution. You'll be able to see the HAR Sample player running on Hololens 2, displaying that it is "waiting for a connection on IP address of Hololens 2."
 
 - Now on Sample app that is running on the host PC  give in the IP address of Hololens 2 displayed above and hit "connect"
 ![app-remoting-flat-ui](images/app-remoting-flat-ui.png)
