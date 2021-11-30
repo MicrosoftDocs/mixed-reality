@@ -124,7 +124,7 @@ Let's begin by setting up the HTML web page that will contain the Babylon.js sce
     const xrHelper = await scene.createDefaultXRExperienceAsync();
     ```
 
-    In javascript, in order to use the `await` keyboard on an `async` function within a function, the parent function would also have to be `async`, which is why we defined `createScene` function as async earlier. Later in this tutorial series, we will be using this `xrHelper` to enable and configure different WebXR features supported by Babylon.js.
+    In javascript, in order to use the `await` keyword on an `async` function within a function, the parent function would also have to be `async`, which is why we defined `createScene` function as async earlier. Later in this tutorial series, we will be using this `xrHelper` to enable and configure different WebXR features supported by Babylon.js.
 
 1. The completed *scene.js* should look like this:
 

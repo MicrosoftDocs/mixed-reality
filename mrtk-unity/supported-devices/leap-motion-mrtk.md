@@ -20,13 +20,16 @@ This provider can be used in editor and on device while on the Standalone platfo
 | MRTK Version | Leap Motion Unity Modules Versions Supported |
 | --- | --- |
 |2.6.x | 4.5.0, 4.5.1|
-|2.7.x| 4.5.0, 4.5.1, 4.6.0, 4.7.0, 4.7.1, 4.8.0|
+|2.7.x| 4.5.0, 4.5.1, 4.6.0, 4.7.0, 4.7.1, 4.8.0, 4.9.1|
+
+> [!NOTE]
+> UnityModules 4.9.1 and higher require the Gemini V5.2 or higher tracking service. See [release notes for 4.9.1](https://github.com/leapmotion/UnityModules/releases/tag/UM-4.9.1).
 
 
 ## Using Leap Motion (by Ultraleap) hand tracking in MRTK
 
 1. Importing MRTK and the Leap Motion Unity Modules
-    - Install the latest [Leap Motion SDK](https://developer.leapmotion.com/releases/?category=orion) if it is not already installed
+    - Install the latest [Leap Motion Tracking Software](https://developer.leapmotion.com/tracking-software-download) to get the Tracking Service if it is not already installed
     - Import the **Microsoft.MixedReality.Toolkit.Foundation** package into the Unity project.
     - Download and import the latest version of the [Leap Motion Unity Modules](https://developer.leapmotion.com/unity) into the project
         - Only import the **Core** package within the Unity Modules
