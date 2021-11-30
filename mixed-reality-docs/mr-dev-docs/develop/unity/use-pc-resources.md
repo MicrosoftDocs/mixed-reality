@@ -75,7 +75,7 @@ To use Holographic Remoting in both modes specified above, you need to clone [Ho
 ![running-har-sample-player-sol](images/har-sample-player-run-sol.png)
 
 - Open the **Properties** page for your project, navigate to **Configuration Properties** > **Debugging** > **Remote Machine**, and then, in the **Command Line Arguments** field, add "-listen".
-![har-sample-player-app-listenmode-configuration](images/har-sample-player-app-listening.png)
+![har-sample-player-app-listenmode-configuration](images/har-sample-player-listening.png)
 
 - To deploy the SamplePlayer solution on Hololens 2, press the play button in the VS solution. You'll be able to see the HAR Sample player running on Hololens 2, displaying that it is "waiting for a connection on IP address of Hololens 2."
 
@@ -93,7 +93,7 @@ To use Holographic Remoting in both modes specified above, you need to clone [Ho
 ![running-har-sample-player-sol](images/har-sample-player-run-sol.png)
 
 - Give in the IP address of the host PC as command line argument to the SamplePlayer app. Right click on SamplePlayer project → Properties→ Configuration Properties → Debugging → Command Line Arguments
-![har-sample-player-app-connectmode-configuration](images/har-sample-player-app-connecting.png)
+![har-sample-player-app-connectmode-configuration](images/har-sample-player-connecting.png)
 
 - To deploy the SamplePlayer solution on Hololens 2, press the play button in the VS solution. You'll be able to see the HAR Sample player running on Hololens 2, displaying that it is "waiting for a connection on IP address of Hololens 2."
 
