@@ -77,7 +77,7 @@ For recommendations on where and how to place QR codes, refer to [Environment co
 
 ### What capabilities are needed?
 
-You'll need the **webcam** capability added to your manifest (checkbox in [Unity Capabilities](/windows/mixed-reality/develop/unity/recommended-settings-for-unity)). If you're building as a standard UWP project, it is also in the `package.appxmanifest` in the solution project.
+You'll need the **webcam** capability added to your manifest (checkbox in [Unity Capabilities](/windows/mixed-reality/develop/unity/recommended-settings-for-unity#capabilities)). If you're building as a standard UWP project, it is also in the `package.appxmanifest` in the solution project.
 
 Request access by calling the following function:
 
