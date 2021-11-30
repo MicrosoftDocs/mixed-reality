@@ -153,7 +153,7 @@ Yes, Micro QR Codes are supported.
 
 ### QR codes detected, but why am I getting no data?
 
-* If the platform cannot decode the QR code, there will be no data.  You can use the stream and interpret the data using open-source code. In RS6, more encodings are supported.
+* If the platform cannot decode the QR code, there will be no data.  You can use the stream and interpret the data using open-source code. 
 * Some features such as structure append and micro-QR codes are not supported.
 
 ### How to clear the codes from my app? It seems once you find a code, they tend to persist?
