@@ -30,7 +30,7 @@ HoloLens includes a world-facing camera mounted on the front of the device that 
 
 ### HoloLens 2
 
-* Autofocus photo/video (PV) camera with auto white balance, auto exposure, and full image-processing pipeline.
+* Autofocus photo/video (PV) camera with auto white balance, auto exposure, and full image-processing pipeline. The autofocus system can adjust object distance from 30 cm to infinity. The effective focal length for the HoloLens 2 PV camera lens is 4.87 mm +/- 5%.  In addition to the 5% variation due to manufacturing tolerance, the focal length will change dynamically due to the autofocus system. The AF travel (stroke) is up to 0.2 mm.
 * White Privacy LED facing the world that illuminates whenever the camera is active.
 * HoloLens 2 supports different camera profiles. Learn how to [discover and select camera capabilities](/windows/uwp/audio-video-camera/camera-profiles).
 * The camera supports the following profiles and resolutions (all video modes are 16:9 aspect ratio):
