@@ -82,7 +82,7 @@ Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more 
 - In the Sample app running on the host PC, add the IP address of Hololens 2 displayed above and then select **Connect**.
 ![app-remoting-flat-ui](images/app-remoting-flat-ui.png)
 
-- Once the connection is established, the HAR sample player app running on Hololens 2 will start "Receiving".
+- After the connection is established, the HAR sample player app running on Hololens 2 will start "Receiving".
 
 ### Mode 2: Run Sample app on PC in Listen Mode and HAR player app in Connect Mode:
 
