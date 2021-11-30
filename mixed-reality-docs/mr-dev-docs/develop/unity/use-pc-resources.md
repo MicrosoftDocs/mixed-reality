@@ -67,7 +67,7 @@ Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more 
 
 ## Running the sample app and Holographic Remoting Player app in the modes described above
 
-### Mode 1: Run Sample app on PC in Connect Mode and Holographic Remoting player app in Listen Mode:
+### Mode 1: Run the sample app on PC in Connect Mode and the Holographic Remoting player app in Listen Mode:
 
 - Skip the below three steps and run the HAR player app if it is already installed on the Hololens 2 from store.
 
