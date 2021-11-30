@@ -69,7 +69,7 @@ Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more 
 
 ### Mode 1: Run the sample app on PC in Connect Mode and the Holographic Remoting player app in Listen Mode:
 
-- Skip the below three steps and run the HAR player app if it is already installed on the Hololens 2 from store.
+- If the HAR player app is already installed from the store on the Hololens 2, skip the three steps below and run the app.
 
 - Open the Holographic Remoting Sample Player app using VS 2019 with the following configuration to run on the Hololens 2 attached to the PC using USB cable.
 ![har-sample-player-run-sol](images/har-sample-player-run-sol.png)
