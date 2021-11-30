@@ -23,13 +23,14 @@ HoloLens 2 and immersive headsets can detect QR codes in the environment around 
 
 ## Best practices for QR code detection
 
-### Quiet zones around QR Codes
+### Quiet zones around QR codes
 
 To be read correctly, QR codes require a margin around all sides of the code. This margin must not contain any printed content and should be four modules (a single black square in the code) wide. 
 
 The [QR spec](https://www.qrcode.com/en/howto/code.html) contains more information about quiet zones.
 
 ### Lighting and backdrop
+
 QR code detection quality is susceptible to varying illumination and backdrop. 
 
 In a scene with bright lighting, print a code that is black on a gray background. Otherwise, print a black QR code on a white background.
@@ -46,9 +47,9 @@ The exact time to detect codes depends not only on the size of the QR codes, but
 
 ### Distance and angular position from the QR code
 
-The tracking cameras can only detect a certain level of detail. For small codes - < 10 cm along the sides - you must be <mark> fairly close </mark>. For a version 1 QR code varying from 10 cm to 25 cm wide, the minimum detection distance ranges from 0.15 meter to 0.5 meters. 
+The tracking cameras can only detect a certain level of detail. For small codes - < 10 cm along the sides - you must be <mark> fairly close </mark>. For a version 1 QR code varying from 10 cm to 25 cm wide, the minimum detection distance ranges from 0.15 meters to 0.5 meter. 
 
-The detection distance for size increases linearly, but also depends on QR version or module size. The higher the version, the smaller the modules, which can only be detected from a closer position. You can also try micro QR codes if you want the distance of detection to be longer. QR detection works with a range of angles += 45 deg to ensure we have proper resolution to detect the code.
+The detection distance for size increases linearly, but also depends on QR version or module size. The higher the version, the smaller the modules, which can only be detected from a closer position. You can also try micro-QR codes if you want the distance of detection to be longer. QR detection works with a range of angles += 45 deg to ensure we have proper resolution to detect the code.
 
 <mark> table needed to show QR code size and detection distance (min vs. max).  What's supported and what's not supported QR codes. </mark>
 
@@ -56,17 +57,18 @@ The detection distance for size increases linearly, but also depends on QR versi
 > Always make sure you have enough contrast and a proper border.
 
 ### QR codes with logos
+
 QR codes with logos haven't been tested and are currently unsupported.
 
 ### Managing QR code data
 
-Windows Mixed Reality devices detect QR codes at the system level in the driver. When the device is rebooted or the driver restarts, the detected QR codes history are cleared and will be redetected as new objects next time.
+Windows Mixed Reality devices detect QR codes at the system level in the driver. When the device is rebooted or the driver restarts, the detected QR codes history is cleared and will be redetected as new objects next time.
 
-We recommend configuring your app to ignore QR codes older than a specific timestamp, which can be specified within the App. The QR Code API specifies the time last detection happened. Most app developers will use the system time when the app is launched to determine when a QR Code is detected. 
+We recommend configuring your app to ignore QR codes older than a specific timestamp, which can be specified within the App. The QR Code API specifies the time last detection happened. Most app developers will use the system time when the app is launched to determine when a QR code is detected. 
 
-QR Code data are not app specific. Upon app launch, there will be a list of available QR Codes being provided.  The app developer will determine which QR Codes are relevant to this app.
+QR Code data are not app-specific. Upon app launch, there will be a list of available QR codes being provided.  The app developer will determine which QR codes are relevant to this app.
 
-For more information, see [How to clear the codes from my app?](??)
+For more information, see [How to clear the codes from my app?](#how-to-clear-the-codes-from-my-app-it-seems-once-you-find-a-code-they-tend-to-persist)
 
 ### QR code placement in a space
 For recommendations on where and how to place QR codes, refer to [Environment considerations for HoloLens](/hololens/hololens-environment-considerations).
@@ -123,20 +125,20 @@ Use NuGet for unity and point to the NuGet pack above.
 
 ### If it doesn't work in general:
 
-* Is the QR Code version a supported version? We don't support the high density versions like version 40. Nothing above version 10 is guaranteed, versions above 20 are not supported.
+* Is the QR Code version a supported version? We don't support the high-density versions like version 40. Nothing above version 10 is guaranteed, versions above 20 are not supported.
 * Are you <mark> close enough </mark> to the QR code?
-* How is the lighting? There is a known issue where detection becomes difficult when the QR code is on a dark environmental background. When there's a dark background, the QR Code will appear washed out to the camera due to high contrast.
+* How is the lighting? There is a known issue where detection becomes difficult when the QR code is on a dark environmental background. When there's a dark background, the QR Code will appear washed out to the camera due to high contrast. For more information, see [lighting and backdrop](#lighting-and-backdrop).
 
 ### What's the accuracy?
 
-When detected in a single frame, the size is expected to have at most a 1% error from the actual size, for example: a 10-cm code might be up to +/- 1mm off in measured size. Under continuous detection, a code's position might drift around by up to +/- 2.5 mm. Once you have moved out of detection range, a previous detection's position is up to the mercy of the map error.
+When detected in a single frame, the size is expected to have at most a 1% error from the actual size, for example: a 10-cm code might be up to +/- 1 mm off in measured size. Under continuous detection, a code's position might drift around by up to +/- 2.5 mm. Once you have moved out of detection range, a previous detection's position is up to the mercy of the map error.
 
 ### How close do I need to be to the QR code to detect it?
 
 The distance obviously depends on the size of the QR code, and also what version it is.
 
-* On HoloLens 2, for a version 1 QR code varying from 5cm sides to 25 cm sides, the minimum detection distance ranges from 0.25 metres to 0.5 metres. The furthest these can be detected from goes from about 0.5m for the smallest code to 2 metres for the bigger.
-* On Windows Mixed Reality, these distances for the sizes are approximately halved.
+* On HoloLens 2, for a version 1 QR code varying from 5 cm sides to 25-cm sides, the minimum detection distance ranges from 0.25 meters to 0.5 meters. The furthest these can be detected from goes from about 0.5 m for the smallest code to 2 meters for the bigger.
+* On Windows Mixed Reality, these distances for the sizes are halved.
 * For any codes bigger, extrapolate - the detection distance for size increases linearly. For any code smaller, detection simply will not occur - 4-5 cm is the smallest we can detect.
 
 ### Why can't I read QR codes with logos?
@@ -149,8 +151,8 @@ Yes, Micro QR Codes are supported.
 
 ### QR codes detected, but why am I getting no data?
 
-* If the platform cannot decode the qrcode, there will be no data.  You can use the stream and interpret the data using open source code. In RS6, more encodings are supported.
-* Some features such as structure append and micro QR codes are not supported.
+* If the platform cannot decode the qrcode, there will be no data.  You can use the stream and interpret the data using open-source code. In RS6, more encodings are supported.
+* Some features such as structure append and micro-QR codes are not supported.
 
 ### How to clear the codes from my app? It seems once you find a code, they tend to persist.
 
@@ -158,7 +160,7 @@ QR codes only persist in the boot session. Once you reboot your device (or resta
 
 You can ignore the QR codes older than a timestamp if you want. Currently the API does not have a way to clear them as multiple apps might be interested in them. At the app level, you can ignore QR codes not updated recently. A logic can be added to ignore the ones not updated, for example time `t`.  It's app-specific, and up to the app developer to decide on what to do.
 
-#### How do I get the time stamp from the qpc ticks?
+#### How do I get the time stamp from the `QueryPerformanceCounter` QPC ticks?
 
 ```
 long EndingTime = System.Diagnostics.Stopwatch.GetTimestamp();
@@ -170,11 +172,11 @@ QRTimeStamp.text = "Time:" + System.DateTime.Now.AddSeconds(-ElapsedSecs).ToStri
 
 #### How does that work with the underlying platform?  Where do they persist? 
 
-They only persist in memory (asic/soc).
+They only persist in memory (ASIC/SOC).
 
-#### Are QR Codes saved at the ‘space’ level or app level?  It seems to me it is beyond app? 
+#### Are QR codes saved at the ‘space’ level or app level?  It seems to me it is beyond app? 
 
-QR Codes are saved at the system level in driver session, or boot session on HoloLens.
+QR codes are saved at the system level in driver session, or boot session on HoloLens.
 
 ### From a plugin standpoint, what should I do? My plugin right now is configured for x64. Is the DLL OK to just reconfigure in Unity as x86?
 
