@@ -57,7 +57,7 @@ Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more 
     ``` cs
     StartCoroutine(Remoting.AppRemoting.Connect(remotingConfiguration));
     ```
-1. To write custom listen code, call `Microsoft.MixedReality.OpenXR.Remoting.AppRemoting.Listen` with a filled-in `RemotingListenConfiguration`. The sample app exposes this in the inspector. Calling `Listen` will set the configuration and wait for connection from Holographic Remoting sample player, which is why it must be called as a coroutine:
+1. To write custom listen code, call `Microsoft.MixedReality.OpenXR.Remoting.AppRemoting.Listen` with a filled-in `RemotingListenConfiguration`. The sample app exposes this in the **Inspector**. Calling `Listen` will set the configuration and wait for a connection from the Holographic Remoting sample player, which is why it must be called as a coroutine:
 
     ``` cs
     StartCoroutine(Remoting.AppRemoting.Listen(remotingListenConfiguration));
