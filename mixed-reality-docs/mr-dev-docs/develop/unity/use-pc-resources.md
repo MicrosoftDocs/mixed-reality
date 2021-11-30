@@ -39,7 +39,7 @@ Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more 
 
 To use Holographic Remoting in both modes specified above, you need to clone [Holographic Remoting Sample player](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/main/player/sample/SamplePlayer.sln) and deploy it to Hololens 2 using Visual Studio.
 
-## Build remote app running on PC for Holographic Remoting using Unity
+## Build a remote app running on PC for Holographic Remoting using Unity
 
 1. On the menu bar, select **Edit > Project Settings**.
 1. In the left-side column, select **XR plug-in Management**.
@@ -48,16 +48,16 @@ To use Holographic Remoting in both modes specified above, you need to clone [Ho
 
     ![Screenshot of project settings panel open in the Unity Editor with Initialize XR on Startup unchecked](images/001-openxr-features.png)
 
-1. Write some code to set the remoting configuration and trigger XR initialization. The sample app distributed with the [Mixed Reality OpenXR Plugin](./xr-project-setup.md#unity-sample-projects-for-openxr-and-hololens-2) contains AppRemoting.cs, which shows an example scenario for connecting to a specific IP address at runtime or listening to a connection from the Holographic Remoting Sample Player. Deploying the sample app to a local machine at this point will display an IP address input field with a **Connect** button and a **Listen** button. To initialize XR and attempt to connect to the target device in Mode 1, type an IP address and then click **Connect**. To start listening to the incoming connection, click **Listen**.
+1. Write some code to set the remoting configuration and trigger XR initialization. The app can either call into **Connect** function for Mode 1, or call into **Listen** function for Mode 2. Refer to the sample app distributed with the [Mixed Reality OpenXR Plugin](./xr-project-setup.md#unity-sample-projects-for-openxr-and-hololens-2) containing AppRemoting.cs. This shows an example scenario for connecting to a specific IP address at runtime or listening to a connection from the Holographic Remoting Player app. Deploying the sample app to a local machine at this point will display an IP address input field with a **Connect** button and a **Listen** button. To initialize XR and attempt to connect to the target device in Mode 1, type an IP address and then click **Connect**. To start listening to the incoming connection, click **Listen**.
 
     ![Screenshot of sample app displaying example app remoting UI](images/openxr-sample-app-remoting.png)
 
-1. To write custom connection code, call `Microsoft.MixedReality.OpenXR.Remoting.AppRemoting.Connect` with a filled-in `RemotingConfiguration`. The sample app exposes this in the inspector and shows how to fill in the IP address from a text field. Calling `Connect` will set the configuration and automatically initialize XR, which is why it must be called as a coroutine:
+1. For Mode 1, the **Connect** mode, call `Microsoft.MixedReality.OpenXR.Remoting.AppRemoting.Connect` with a filled-in `RemotingConfiguration`. The sample app exposes this in the inspector and shows how to fill in the IP address from a text field. Calling `Connect` will set the configuration and automatically initialize XR, which is why it must be called as a coroutine:
 
     ``` cs
     StartCoroutine(Remoting.AppRemoting.Connect(remotingConfiguration));
     ```
-1. To write custom listen code, call `Microsoft.MixedReality.OpenXR.Remoting.AppRemoting.Listen` with a filled-in `RemotingListenConfiguration`. The sample app exposes this in the **Inspector**. Calling `Listen` will set the configuration and wait for a connection from the Holographic Remoting sample player, which is why it must be called as a coroutine:
+1. For Mode 2, the **Listen** mode, call `Microsoft.MixedReality.OpenXR.Remoting.AppRemoting.Listen` with a filled-in `RemotingListenConfiguration`. The sample app exposes this in the **Inspector**. Calling `Listen` will set the configuration and wait for a connection from the Holographic Remoting sample player, which is why it must be called as a coroutine:
 
     ``` cs
     StartCoroutine(Remoting.AppRemoting.Listen(remotingListenConfiguration));
@@ -65,7 +65,7 @@ To use Holographic Remoting in both modes specified above, you need to clone [Ho
 1. While running, you can obtain the current connection state with the `AppRemoting.TryGetConnectionState` API, and optionally disconnect and de-initialize XR using `AppRemoting.Disconnect()`. This could be used to disconnect and reconnect to a different device within the same app session. The sample app provides a tappable cube which will disconnect the remoting session if tapped.
 
 
-## Running the sample app and Holographic Remoting Player app in the modes described above
+## Run the remote app and Holographic Remoting Player app in the modes described above
 
 ### Mode 1: Run the remote app on PC in Connect Mode and the Holographic Remoting player app in Listen Mode:
 
