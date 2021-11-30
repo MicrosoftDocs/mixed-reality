@@ -31,9 +31,9 @@ Note that you can also use Holographic Remoting if [you want to preview and debu
 
 ## Set up the Holographic Remoting Player app
 
-To use Holographic Remoting in Mode 1 alone, install the [Holographic Remoting Player](../advanced-concepts/holographic-remoting-player.md) app from the Microsoft Store on your HoloLens 2. As explained below, after you download and run the app, you'll see the version number and IP address to connect to. **You'll need v2.4 or later in order to work with the OpenXR plugin**.
+To use Holographic Remoting in Mode 1 alone, install the [Holographic Remoting Player](../advanced-concepts/holographic-remoting-player.md) app from the Microsoft Store on your HoloLens 2. As explained below, after you download and run the app, you'll see the version number and IP address to connect to. **We recommend using the latest version of Holographic Remoting Player available**.
 
-Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more details in the Holographic Remoting Player article linked above. We recommend using the latest version of Holographic Remoting Player available.
+Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more details in the Holographic Remoting Player article linked above.
 
 ![Screenshot of the Holographic Remoting Player running in the HoloLens](images/openxr-features-img-01.png)
 
