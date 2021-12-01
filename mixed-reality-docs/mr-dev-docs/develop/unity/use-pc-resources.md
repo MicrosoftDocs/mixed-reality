@@ -106,19 +106,20 @@ To learn more about Holographic Remoting, see [Holographic Remoting overview](..
 
 #### UnityEngine.XR.WSA.HolographicRemoting
 
-From the sample code on [Unity's docs](https://docs.unity3d.com/2018.4/Documentation/ScriptReference/XR.WSA.HolographicRemoting.html):
+From the sample code on [Unity's docs](https://docs.unity3d.com/2020.1/Documentation/ScriptReference/XR.WSA.HolographicRemoting.html):
 
 | XR.WSA.HolographicRemoting | OpenXR.Remoting.AppRemoting |
 | ---- | ---- |
-| `HolographicRemoting.Connect(String)` | `AppRemoting.Connect(RemotingConfiguration)` |
+| `HolographicRemoting.ConnectRemotingSession()` | `AppRemoting.Connect(RemotingConfiguration)` |
+| `HolographicRemoting.DisconnectRemotingSession() | `AppRemoting.Disconnect()` |
 | `HolographicRemoting.ConnectionState` | `AppRemoting.TryGetConnectionState(out ConnectionState, out DisconnectReason)`|
-| `StartCoroutine(LoadDevice("WindowsMR"))`| [N/A: Automatically happens when calling `AppRemoting.Connect`]  |
 
 #### Unity​Engine.​XR.​Windows​MR.WindowsMRRemoting
 
 | XR.​Windows​MR.WindowsMRRemoting | OpenXR.Remoting.AppRemoting |
 | ---- | ---- |
 | `WindowsMRRemoting.Connect()` | `AppRemoting.Connect(RemotingConfiguration)` |
+| `WindowsMRRemoting.Listen()`  | `AppRemoting.Listen(RemotingListenConfiguration)` |
 | `WindowsMRRemoting.Disconnect()` | `AppRemoting.Disconnect()` |
 | `WindowsMRRemoting.TryGetConnectionState(out ConnectionState)` and `WindowsMRRemoting.TryGetConnectionFailureReason(out ConnectionFailureReason)`| `AppRemoting.TryGetConnectionState(out ConnectionState, out DisconnectReason)`|
 | `WindowsMRRemoting.isAudioEnabled`, `WindowsMRRemoting.maxBitRateKbps`, `WindowsMRRemoting.remoteMachineName` | Passed into `AppRemoting.Connect` via the `RemotingConfiguration` struct |
