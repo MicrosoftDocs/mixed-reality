@@ -111,7 +111,7 @@ From the sample code on [Unity's docs](https://docs.unity3d.com/2020.1/Documenta
 | XR.WSA.HolographicRemoting | OpenXR.Remoting.AppRemoting |
 | ---- | ---- |
 | `HolographicRemoting.ConnectRemotingSession()` | `AppRemoting.Connect(RemotingConfiguration)` |
-| `HolographicRemoting.DisconnectRemotingSession() | `AppRemoting.Disconnect()` |
+| `HolographicRemoting.DisconnectRemotingSession()` | `AppRemoting.Disconnect()` |
 | `HolographicRemoting.ConnectionState` | `AppRemoting.TryGetConnectionState(out ConnectionState, out DisconnectReason)`|
 
 #### Unity​Engine.​XR.​Windows​MR.WindowsMRRemoting
