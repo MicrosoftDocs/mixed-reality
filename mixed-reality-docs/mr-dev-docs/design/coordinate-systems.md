@@ -229,7 +229,7 @@ When you start using a headset in an environment where furniture, wall hangings,
 Sometimes, a home or other space may have two identical areas. For example, two identical conference rooms, two identical corner areas, two large identical posters that cover the device's field of view. In such scenarios, the device may, at times, get confused between the identical parts and mark them as the same in its internal representation. This may cause the holograms from some areas to appear in other locations. The device may start to lose tracking often since its internal representation of the environment has been corrupted. In this case, it's advised to reset the system's environmental understanding. Resetting the map leads to loss of all spatial anchor placements. This will cause the headset to track well in the unique areas of the environment. However, the problem may reoccur if the device gets confused between the identical areas again.
 
 ## See also
-* [GDC 2017 presentation on spatial coordinate systems and holographic rendering](https://channel9.msdn.com/events/GDC/GDC-2017/GDC2017-008)
+* GDC 2017 presentation on spatial coordinate systems and holographic rendering
 * [Coordinate systems in Unity](../develop/unity/coordinate-systems-in-unity.md)
 * [Coordinate systems in DirectX](../develop/native/coordinate-systems-in-directx.md)
 * [Spatial anchors](spatial-anchors.md)

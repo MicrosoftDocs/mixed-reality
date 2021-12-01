@@ -170,7 +170,7 @@ The Windows Universal Platform allows you to create a single application that ru
 
 ## Submitting your Mixed Reality app to the Store
 
-If you're submitting a Mixed Reality app that is based on a Unity project, see this [video](https://channel9.msdn.com/Blogs/One-Dev-Minute/How-to-publish-your-Unity-game-as-a-UWP-app) first.
+If you're submitting a Mixed Reality app that is based on a Unity project, see this video first.
 
 In general, submitting a Windows Mixed Reality app that works on HoloLens or immersive headsets is just like submitting any UWP app to the Microsoft Store. Once you've [created your app by reserving its name](/windows/uwp/publish/create-your-app-by-reserving-a-name), follow the [UWP submission checklist](/windows/uwp/publish/app-submissions).
 
