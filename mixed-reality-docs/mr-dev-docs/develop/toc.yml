@@ -240,6 +240,8 @@
         href: unreal/unreal-quickstart.md
   - name: Tutorials
     items:
+      - name: HoloLens 2 Mixed Reality Production
+        href: https://www.unrealengine.com/onlinelearning-courses/hololens-2-mixed-reality-production-for-unreal-engine
       - name: Build a chess app with MRTK UX Tools
         items:
           - name: Getting started
