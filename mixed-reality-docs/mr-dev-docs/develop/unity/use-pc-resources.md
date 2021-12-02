@@ -80,14 +80,12 @@ To use Holographic Remoting in both modes specified above, you need to clone [Ho
 - To deploy the SamplePlayer solution on Hololens 2, press the play button in the VS solution. You'll be able to see the HAR Sample player running on Hololens 2, displaying that it is "waiting for a connection on IP address of Hololens 2."
 
 - In the remote app running on the host PC, add the IP address of Hololens 2 displayed above and then select **Connect**.
-![remote-app-flat-ui](images/app-remoting-flat-ui.png)
 
 - After the connection is established, the Holographic Remoting Player app running on Hololens 2 will start "Receiving".
 
 ### Mode 2: Run the remote app on your PC in Listen Mode and the HAR player app in Connect Mode:
 
 - On the 2D UI screen in the remote app running on PC, click **Listen**.
-![remote-app-flat-ui](images/app-remoting-flat-ui.png)
 
 - Open the Holographic Remoting Sample Player app using VS 2019. In order to run on a Hololens 2 that's attached to your PC using a USB cable, configure as follows:
 ![running-har-sample-player-sol](images/har-sample-player-run-sol.png)
