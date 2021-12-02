@@ -48,9 +48,7 @@ To use Holographic Remoting in both modes specified above, you need to clone [Ho
 
     ![Screenshot of project settings panel open in the Unity Editor with Initialize XR on Startup unchecked](images/001-openxr-features.png)
 
-1. Write some code to set the remoting configuration and trigger XR initialization. The app can either call into **Connect** function for Mode 1, or call into **Listen** function for Mode 2. Refer to the sample app distributed with the [Mixed Reality OpenXR Plugin](./xr-project-setup.md#unity-sample-projects-for-openxr-and-hololens-2) containing AppRemoting.cs. This shows an example scenario for connecting to a specific IP address at runtime or listening to a connection from the Holographic Remoting Player app. Deploying the sample app to a local machine at this point will display an IP address input field with a **Connect** button and a **Listen** button. To initialize XR and attempt to connect to the target device in Mode 1, type an IP address and then click **Connect**. To start listening to the incoming connection, click **Listen**.
-
-    ![Screenshot of sample app displaying example app remoting UI](images/openxr-sample-app-remoting.png)
+1. Write some code to set the remoting configuration and trigger XR initialization. The app can either call into **Connect** function for Mode 1, or call into **Listen** function for Mode 2. Refer to the sample app distributed with the [Mixed Reality OpenXR Plugin](./xr-project-setup.md#unity-sample-projects-for-openxr-and-hololens-2) containing AppRemoting.cs for more details.
 
 1. For Mode 1, the **Connect** mode, call `Microsoft.MixedReality.OpenXR.Remoting.AppRemoting.Connect` with a filled-in `RemotingConfiguration`. The sample app exposes this in the inspector and shows how to fill in the IP address from a text field. Calling `Connect` will set the configuration and automatically initialize XR, which is why it must be called as a coroutine:
 
