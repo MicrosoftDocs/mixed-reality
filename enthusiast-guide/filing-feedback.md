@@ -3,7 +3,7 @@ title: Filing bugs and feedback
 description: Help us make Windows Mixed Reality better by filing feedback using the correct categories in the Feedback Hub app.
 author: qianw211
 ms.author: v-qianwen
-ms.date: 11/18/2021
+ms.date: 12/2/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Feedback, Feedback Hub, bugs
 appliesto:
@@ -22,7 +22,7 @@ The engineering team uses the same mechanism for tracking and fixing internal bu
 ## How to file feedback for Windows Mixed Reality immersive headsets on PC
 
 1. Ensure you have the immersive headset connected to your PC.
-2. Launch **Feedback Hub** on desktop with the HMD connected.
+2. Launch **Feedback Hub** on desktop with the HMD connected. If you don't already have **Feedback Hub** installed, you can download and install the latest [**Feedback Hub**](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?rtc=1&activetab=pivot:overviewtab) app from Microsoft Store.
 3. Go to **Feedback Tab** on the left pane. ![Feedback Tab](images/feedback1.png) 
 4. Select **Add new feedback** button to enter the feedback. ![Add new feedback](images/feedback2.png)
 5. Select **Problem** in **What kind of feedback is this?** to make the feedback actionable. ![Details and repro steps](images/feedback3.png)
