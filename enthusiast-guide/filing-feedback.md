@@ -26,7 +26,7 @@ The engineering team uses the same mechanism for tracking and fixing internal bu
 3. Go to **Home** on the left pane. ![Feedback Tab](images/feedback1.png) 
 4. Select **Report a problem**. ![Add new feedback](images/feedback2.png)
 5. Provide a meaningful feedback title in the **Summarize your feedback** box.
-6. Provide details and steps to reproduce the issue in the **Explain in more detail** (optional) box, then click the **Next** button.
+6. Provide details and steps to reproduce the issue in the **Explain in more detail** (optional) box, then select the **Next** button.
 7. Select **Problem** under **Select a category that best matches your feedback** to make the feedback actionable.
 8. Select **Mixed Reality** as the main category, pick an applicable subcategory, then click the **Next** button:
 
@@ -35,12 +35,12 @@ The engineering team uses the same mechanism for tracking and fixing internal bu
    | Desktop Experience | Issues with the Mixed Reality Portal or Windows OS integration |
    | Developer Experience | Issues with authoring / running an application for Windows Mixed Reality |
    | Enterprise & LBE | Issues setting up or using Windows Mixed Reality in an LBE or Enterprise environment |
-   | Headset Functionality | Issues related to various components of a Windows Mixed Reality headset (display, audio, connectivity, drivers, etc.)  |
-   | Motion Controllers | Issues related to various components of a Windows Mixed Reality motion controller (buttons, Bluetooth, batteries, etc.) |
-   | Positional Tracking | Issues related to positional tracking while using Windows Mixed Reality (I.e., head tracking and controller tracking) |
+   | Headset Functionality | Issues related to various components of a Windows Mixed Reality headset (display, audio, connectivity, drivers, and etc.)  |
+   | Motion Controllers | Issues related to various components of a Windows Mixed Reality motion controller (buttons, Bluetooth, batteries, and etc.) |
+   | Positional Tracking | Issues related to positional tracking while using Windows Mixed Reality. (such as head tracking and controller tracking) |
    | Setup & Updates | Issues related to set up, installation, or updates for Windows Mixed Reality products |
    | SteamVR  | Issues related to the “Windows Mixed Reality for SteamVR” Steam integration |
-   | VR Accessories | Issues related to third party VR accessories intended for use with Windows Mixed Reality products |
+   | VR Accessories | Issues related to third-party VR accessories intended for use with Windows Mixed Reality products |
    | VR Games & Apps | Issues related to games and apps intended for use with Windows Mixed Reality products |
    | WebVR in Edge  | Issues related to using WebVR in Edge with Windows Mixed Reality products |
    | All other issues  | All other issues related to Windows Mixed Reality products and experiences |
