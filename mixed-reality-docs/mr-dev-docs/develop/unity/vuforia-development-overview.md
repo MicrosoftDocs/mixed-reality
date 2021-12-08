@@ -102,7 +102,7 @@ To change the performance mode in Unity, navigate to Vuforia Configuration (Ctrl
 * [Coordinate systems](../../design/coordinate-systems.md)
 * [Spatial mapping](../../design/spatial-mapping.md)
 * [Camera in Unity](camera-in-unity.md)
-* [Exporting and building a Unity Visual Studio solution](exporting-and-building-a-unity-visual-studio-solution.md)
+* [Build and deploy a Unity Visual Studio solution to the Hololens](build-and-deploy-to-hololens.md)
 * [Vuforia documentation: Getting Started with Vuforia Engine for Windows 10 Development](https://library.vuforia.com/articles/Training/Getting-Started-with-Vuforia-for-Windows-10-Development.html)
 * [Vuforia documentation: Getting Started with Vuforia Engine in Unity](https://library.vuforia.com/articles/Training/getting-started-with-vuforia-in-unity.html)
 * [Vuforia documentation: Working with the HoloLens sample in Unity](https://library.vuforia.com/articles/Solution/Working-with-the-HoloLens-sample-in-Unity.html)

@@ -19,7 +19,7 @@ Whether you're using DirectX or Unity to develop your mixed reality app, Visual 
 ## Prerequisites
 
 1. See [Install the Tools](../../develop/install-the-tools.md#installation-checklist) for installation instructions.
-2. Create a new mixed reality project in [Unity](unity-development-overview.md) or [Visual Studio](../../develop/native/directx-development-overview.md).
+2. Create a new mixed reality project in [Unity](../unity/unity-development-overview.md) or [Visual Studio](../../develop/native/directx-development-overview.md).
 
 ## Enabling Developer Mode
 
@@ -57,13 +57,13 @@ If you're working with a Windows Mixed Reality headset connected to your PC, you
 
 ![Screen shot showing compilation options in Visual Studio](images/024-vs-compilation-options-release.png)
 
-    Here are definitions for the compilation options:
-    
-    |  Configuration  |  Explanation | 
-    |----------|----------|
-    |  Debug  |  All optimizations off and the profiler is enabled. Used to debug scripts. | 
-    |  Master  |  All optimizations are turned on and the profiler is disabled. Used to submit apps to the Store. | 
-    |  Release  |  All optimizations are turned on and the profiler is enabled. Used to evaluate app performance. | 
+    Here are definitions for the compilation options
+
+|  Configuration  |  Explanation | 
+|----------|----------|
+|  Debug  |  All optimizations off and the profiler is enabled. Used to debug scripts. | 
+|  Master  |  All optimizations are turned on and the profiler is disabled. Used to submit apps to the Store. | 
+|  Release  |  All optimizations are turned on and the profiler is enabled. Used to evaluate app performance. | 
 
 ### Build configuration
 
@@ -71,7 +71,7 @@ If you're working with a Windows Mixed Reality headset connected to your PC, you
 
 [!INCLUDE[](includes/vs-wifi-hl-include.md)]
 
-To learn more about the build configurations, see the "Types of build configurations" table in the [Unity documentation](https://docs.unity3d.com/Manual/VisualStudioprojectgenerationWindows.html).
+    To learn more about the build configurations, see the "Types of build configurations" table in the [Unity documentation](https://docs.unity3d.com/Manual/VisualStudioprojectgenerationWindows.html).
 
     > [!NOTES]
     > -For HoloLens, you'll typically build for the ARM architecture. However, there's a known issue in Unity 2019.3 that causes errors when selecting ARM as the build architecture in Visual Studio. The recommended workaround is to build for ARM64. If that isn't an option, for a Unity project, follow this step before you generate your Unity build: go to **Edit** > **Project Settings** > **Player** > **Other Settings** and then disable **Graphics Jobs**.
@@ -101,8 +101,8 @@ To set your remote connection:
 
   ![Remote connection dialog in Visual Studio](images/027-vs-machine-name.png)
 
-    * You can find the IP address on your HoloLens under **Settings > Network & Internet > Advanced Options**.
-    * We recommend that you manually enter your IP address rather than depend on the "Auto Detected" feature.
+    -You can find the IP address on your HoloLens under **Settings > Network & Internet > Advanced Options**.
+    -We recommend that you manually enter your IP address rather than depend on the "Auto Detected" feature.
 
 1. Set the **Authentication Mode** to **Universal (Unencrypted protocol)**.
 1. Build, deploy, and debug your app based on your needs:

@@ -144,7 +144,7 @@ You can find us on the [Unity Forums](https://aka.ms/unityforums) by tagging **M
 * [MR Basics 100: Getting started with Unity](tutorials/holograms-100.md)
 * [Recommended settings for Unity](recommended-settings-for-unity.md)
 * [Performance recommendations for Unity](performance-recommendations-for-unity.md)
-* [Exporting and building a Unity Visual Studio solution](exporting-and-building-a-unity-visual-studio-solution.md)
+* [Build and deploy a Unity Visual Studio solution to the Hololens](build-and-deploy-to-hololens.md)
 * [Using the Windows namespace with Unity apps for HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
 * [Best practices for working with Unity and Visual Studio](best-practices-for-working-with-unity-and-visual-studio.md)
 * [Unity Play Mode](unity-play-mode.md)

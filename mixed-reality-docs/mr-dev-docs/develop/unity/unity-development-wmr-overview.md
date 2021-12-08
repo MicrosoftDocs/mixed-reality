@@ -85,5 +85,5 @@ Before going out into the world of mixed reality on your own, we recommend takin
 
 * [Recommended settings for Unity](recommended-settings-for-unity.md)
 * [Performance recommendations for Unity](performance-recommendations-for-unity.md)
-* [Exporting and building a Unity Visual Studio solution](exporting-and-building-a-unity-visual-studio-solution.md)
+* [Build and deploy a Unity Visual Studio solution to the Hololens](build-and-deploy-to-hololens.md)
 * [Best practices for working with Unity and Visual Studio](best-practices-for-working-with-unity-and-visual-studio.md)
