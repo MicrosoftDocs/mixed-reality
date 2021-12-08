@@ -215,8 +215,8 @@
         displayname: Holographic Remoting       
   - name: Visual Studio solutions
     items:
-      - name: Exporting and building a Unity Visual Studio solution
-        href: unity/exporting-and-building-a-unity-visual-studio-solution.md
+      - name: Build and deploy to the HoloLens
+        href: unity/build-and-deploy-to-hololens.md
       - name: Best practices for working with Unity and Visual Studio
         href: unity/best-practices-for-working-with-unity-and-visual-studio.md
   - name: Release notes

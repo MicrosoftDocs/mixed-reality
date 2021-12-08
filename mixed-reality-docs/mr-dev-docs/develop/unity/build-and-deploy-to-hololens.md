@@ -3,7 +3,7 @@ title: Build and deploy to the HoloLens
 description: This article outlines building your mixed reality project with Unity and Visual Studio so you can deploy it to the HoloLens.
 author: mattzmsft
 ms.author: v-vtieto
-ms.date: 03/21/2021
+ms.date: 12/07/2021
 ms.topic: article
 keywords: unity, visual studio, export, build, deploy, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset, UWP, deploying
 ---
@@ -11,8 +11,6 @@ keywords: unity, visual studio, export, build, deploy, HoloLens, mixed reality h
 # Build and deploy to the HoloLens
 
 Before you build and deploy your project, make sure that you have already [set up your XR configuration and switched to the Universal Windows Platform](xr-project-setup.md).
-
-
 
 ## Build the Unity project
 
@@ -38,6 +36,15 @@ Before you build and deploy your project, make sure that you have already [set u
 1. Click the **Build** button.
 1. In the **Build Universal Windows Platform** dialog, choose the folder you want to store your build in. (To keep things organized, you may want to create a folder named **Builds**, or something similar, and then save your build there.) 
 1. Select the folder you chose and then click **Select Folder** to start the build process.
+
+## Rebuilding your project
+
+If you make changes to your project, you'll need to do another build from Unity. Some examples of changes are:
+* You change a script.
+* You add or remove assets in the Project tab.
+* You change any value in the Inspector tab.
+* You add or remove objects from the Hierarchy tab.
+* You change any Unity project settings.
 
 ## Building and deploying a Unity Visual Studio solution
 
