@@ -3,7 +3,7 @@ title: What is mixed reality?
 description: Discussion on mixed reality, demonstrating the use of AR and VR devices on the mixed reality spectrum.
 author: qianw211    
 ms.author: v-qianwen
-ms.date: 12/05/21
+ms.date: 12/05/2021
 ms.topic: article
 keywords: mixed reality, holographic, AR, VR, MR, XR, augmented reality, virtual reality, explanation, case study, mixed reality headset, windows mixed reality headset, virtual reality headset, what is virtual reality, what is augmented reality
 ms.localizationpriority: high
