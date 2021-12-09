@@ -1,18 +1,18 @@
 ---
-title: Mixed reality core concepts
+title: Mixed reality structural elements
 description: Learn about core concepts and how they contribute to the quality of the mixed reality experiences you're creating for your users.
 author: grbury 
-ms.author: grbury
-ms.date: 10/02/2019
+ms.author: v-vtieto
+ms.date: 12/09/2021
 ms.topic: overview
 keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens, interaction, UX elements, behaviors, building blocks, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, comfort, app model, coordinate, holographic frame
 ---
 
-# Core concepts overview
+# Mixed reality structural elements
 
 ![Direct manipulation with hands](images/05_CoreConcepts.png)
 
-Before diving into the design your experience, it's helpful to understand a few core concepts. Each topic below is an underlying factor that affects and contributes to the quality of the mixed reality experience you're creating. 
+Before diving into the design of your experience, it's helpful to understand a few core concepts. Each topic below describes an underlying structural element that affects and contributes to the quality of the mixed reality experience you're creating.
 
 :::row:::
     :::column:::

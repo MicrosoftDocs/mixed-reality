@@ -2,7 +2,7 @@
   href: design.md
 - name: About this design guidance
   href: about-this-design-guidance.md
-- name: Core concepts
+- name: Structural Elements
   items:
   - name: Overview
     href: core-concepts-landingpage.md
@@ -10,18 +10,18 @@
     href: app-model.md
   - name: Coordinate systems
     href: coordinate-systems.md
-  - name: Comfort
-    href: comfort.md    
   - name: Room scan visualization
     href: room-scan-visualization.md
+  - name: Spatial mapping
+    href: spatial-mapping.md    
   - name: Scene understanding
     href: scene-understanding.md
-  - name: Spatial mapping
-    href: spatial-mapping.md
-  - name: System gesture
-    href: system-gesture.md
-- name: Interaction models
+  - name: Spatial anchors
+    href: spatial-anchors.md    
+- name: Interactions
   items:
+  - name: System gesture
+    href: system-gesture.md  
   - name: Instinctual interactions
     href: interaction-fundamentals.md
   - name: Hands and motion controllers model
@@ -57,7 +57,6 @@
       href: gaze-and-commit-eyes.md
     - name: Head-gaze and commit 
       href: gaze-and-commit-head.md
-
 - name: UX elements
   items:
   - name: Overview
@@ -69,23 +68,25 @@
       - name: Designing content for holographic display
         href: designing-content-for-holographic-display.md
       - name: App views
-        href: app-views.md             
+        href: app-views.md
+      - name: Comfort
+        href: comfort.md                     
       - name: Color, light, and materials
         href: color-light-and-materials.md
       - name: Scale
         href: scale.md
       - name: Typography
         href: typography.md
-      - name: Spatial Sound
-        items:
-          - name: Spatial sound overview
-          - href: spatial-sound.md
-          - name: Spatial sound best practices 
-            href: spatial-sound-design.md
-          - name: Case study - Holotour
-            href: case-study-spatial-sound-design-for-holotour.md
-          - name: Case study - Roboraid
-            href: case-study-using-spatial-sound-in-roboraid.md
+  - name: Spatial Sound
+    items:
+      - name: Spatial sound overview
+      - href: spatial-sound.md
+      - name: Spatial sound best practices 
+        href: spatial-sound-design.md
+      - name: Case study - Holotour
+        href: case-study-spatial-sound-design-for-holotour.md
+      - name: Case study - Roboraid
+        href: case-study-using-spatial-sound-in-roboraid.md
   - name: Controls and behaviors
     items: 
       - name: Cursors
@@ -156,5 +157,3 @@
     href: spectator-view.md
   - name: Shared experiences
     href: shared-experiences-in-mixed-reality.md
-  - name: Spatial anchors
-    href: spatial-anchors.md
