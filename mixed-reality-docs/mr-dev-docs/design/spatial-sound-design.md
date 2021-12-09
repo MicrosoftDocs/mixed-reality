@@ -1,6 +1,6 @@
 ---
-title: Use spatial sound in mixed-reality applications
-description: Spatial sound is a powerful tool for immersion, accessibility, and UX design in mixed-reality applications.
+title: Spatial audio best practices
+description: Spatial audio is a powerful tool for immersion, accessibility, and UX design in mixed-reality applications.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 11/02/2019
@@ -8,16 +8,17 @@ ms.topic: article
 keywords: Windows Mixed Reality, spatial sound, design, style, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, gestures, interactions, attenuation
 ---
 
-# How to use sound in mixed-reality applications
+# Spatial sound best practices
+
+If you're new to working with spatial sound, see our [Spatial sound overview](spatial-sound.md).
 
 You can use sound to inform and reinforce the user's mental model of application state. Use spatialization, when appropriate, to place sounds in the mixed-reality world. When you connect the auditory and the visual in this way, you deepen the intuitive nature of interactions and increase user confidence.
-<br><br>
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/aB3TDjYklmo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## When to add sounds
 
-Mixed-reality applications often have a greater need for sound than 2D apps, because of their lack of a tactile interface. Add sounds when they inform the user or reinforce interactions.
+Mixed-reality applications often have a greater need for sound than 2D apps because of their lack of a tactile interface. Add sounds when they inform the user or reinforce interactions.
 
 ### Inform and reinforce
 
