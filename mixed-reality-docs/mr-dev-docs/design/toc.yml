@@ -77,7 +77,7 @@
         href: scale.md
       - name: Typography
         href: typography.md
-  - name: Spatial Sound
+  - name: Spatial sound
     items:
       - name: Spatial sound overview
       - href: spatial-sound.md
