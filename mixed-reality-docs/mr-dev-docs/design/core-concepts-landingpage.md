@@ -31,8 +31,8 @@ Before diving into the design your experience, it's helpful to understand a few 
 
 :::row:::
     :::column:::
-        [![Holographic frame](images/destinationmars-750px.png)](holographic-frame.md)
-        **[Holographic frame](holographic-frame.md)**
+        [![Spatial mapping](images/surfacereconstruction.jpg)](spatial-mapping.md)
+        **[Spatial mapping](spatial-mapping.md)**
     :::column-end:::
     :::column:::
         [![Room scan visualization](images/sr-mixedworld-140429-8pm-00068-1000px.png)](room-scan-visualization.md)
@@ -41,21 +41,6 @@ Before diving into the design your experience, it's helpful to understand a few 
     :::column:::
         [![Scene understanding](images/scene-understanding.png)](scene-understanding.md)
         **[Scene understanding](scene-understanding.md)**
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        [![Spatial anchors](images/azurespatialanchors.jpg)](spatial-anchors.md)
-        **[Spatial anchors](spatial-anchors.md)**
-    :::column-end:::
-    :::column:::
-        [![Spatial mapping](images/surfacereconstruction.jpg)](spatial-mapping.md)
-        **[Spatial mapping](spatial-mapping.md)**
-    :::column-end:::
-    :::column:::
-        [![Types of mixed reality apps](images/enhancedenvironmentapps-640px.jpg)](types-of-mixed-reality-apps.md)
-        **[Types of mixed reality apps](types-of-mixed-reality-apps.md)**
     :::column-end:::
 :::row-end:::
 

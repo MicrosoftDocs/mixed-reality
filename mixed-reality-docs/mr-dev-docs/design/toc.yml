@@ -76,12 +76,12 @@
         href: scale.md
       - name: Typography
         href: typography.md
-      - name: Sound
-        items: 
-          - name: Using sound in MR apps 
-            href: spatial-sound-design.md
-          - name: How spatial sound works
+      - name: Spatial Sound
+        items:
+          - name: Spatial sound overview
           - href: spatial-sound.md
+          - name: Spatial sound best practices 
+            href: spatial-sound-design.md
           - name: Case study - Holotour
             href: case-study-spatial-sound-design-for-holotour.md
           - name: Case study - Roboraid
