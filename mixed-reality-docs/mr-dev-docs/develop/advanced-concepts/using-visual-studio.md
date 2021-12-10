@@ -55,7 +55,7 @@ If you're working with a Windows Mixed Reality headset connected to your PC, you
     * For Unity projects, choose either **Release** or **Master** 
     * For all other projects, choose **Release**
 
-![Screen shot showing compilation options in Visual Studio](images/024-vs-compilation-options-release.png)
+    ![Screen shot showing compilation options in Visual Studio](images/024-vs-compilation-options-release.png)
 
     Here are definitions for the compilation options
 
@@ -69,7 +69,7 @@ If you're working with a Windows Mixed Reality headset connected to your PC, you
 
 1. Select your build configuration based on your device.
 
-[!INCLUDE[](includes/vs-wifi-hl-include.md)]
+    [!INCLUDE[](includes/vs-wifi-hl-include.md)]
 
     To learn more about the build configurations, see the "Types of build configurations" table in the [Unity documentation](https://docs.unity3d.com/Manual/VisualStudioprojectgenerationWindows.html).
 
@@ -79,11 +79,11 @@ If you're working with a Windows Mixed Reality headset connected to your PC, you
 
 1. Click the deployment target drop-down and then do one of the following:
 
-    -If you're building and deploying via Wi-Fi, select **Remote Machine**.
+    * If you're building and deploying via Wi-Fi, select **Remote Machine**.
 
     ![Select "Remote Machine" as deployment target in Visual Studio](images/026-vs-deployment-target-remote-machine.png)
 
-    -If you're building and deploying via USB, select **Device**.
+    * If you're building and deploying via USB, select **Device**.
 
     ![Select "Device" as deployment target in Visual Studio](images/025-vs-deployment-target-device.png)
 
@@ -94,15 +94,15 @@ To set your remote connection:
 1. On the menu bar, select **Project > Properties > Configuration Properties > Debugging**.
 
     > [!NOTE]
-    > For a C# project**, a dialog should automatically appear.
+    > For a C# project, a dialog should automatically appear.
 
 1. Click the **Debugger to launch** drop down and then select **Remote Machine.**
 1. In the **Machine Name** field, enter the IP address of your device.
 
   ![Remote connection dialog in Visual Studio](images/027-vs-machine-name.png)
 
-    -You can find the IP address on your HoloLens under **Settings > Network & Internet > Advanced Options**.
-    -We recommend that you manually enter your IP address rather than depend on the "Auto Detected" feature.
+    * You can find the IP address on your HoloLens under **Settings > Network & Internet > Advanced Options**.
+    * We recommend that you manually enter your IP address rather than depend on the "Auto Detected" feature.
 
 1. Set the **Authentication Mode** to **Universal (Unencrypted protocol)**.
 1. Build, deploy, and debug your app based on your needs:
@@ -114,7 +114,7 @@ To set your remote connection:
 ## Deploying an app to the HoloLens (1st gen) Emulator
 
 1. Make sure you've **[installed the HoloLens Emulator](../install-the-tools.md)**.
-2. Select an **x86** build configuration for your app.</br>
+2. Select an **x86** build configuration for your app.
 ![Select an x86 build configuration in Visual Studio](images/x86setting.png)</br>
 3. Select **HoloLens Emulator** in the deployment target drop-down menu</br>
 ![Emulator target in Visual Studio](images/deployemulator.png)</br>
