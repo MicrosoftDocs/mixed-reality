@@ -2,7 +2,7 @@
 title: Spatial audio best practices
 description: Spatial audio is a powerful tool for immersion, accessibility, and UX design in mixed-reality applications.
 author: kegodin
-ms.author: v-hferrone
+ms.author: v-vtieto
 ms.date: 11/02/2019
 ms.topic: article
 keywords: Windows Mixed Reality, spatial sound, design, style, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, gestures, interactions, attenuation

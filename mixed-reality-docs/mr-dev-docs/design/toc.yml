@@ -81,7 +81,7 @@
   - name: Spatial sound
     items:
       - name: Spatial sound overview
-      - href: spatial-sound.md
+        href: spatial-sound.md
       - name: Spatial sound best practices 
         href: spatial-sound-design.md
       - name: Case study - Holotour

@@ -2,7 +2,7 @@
 title: App views
 description: Learn how to use the two kinds of views in Windows Mixed Reality apps - immersive views and 2D views.
 author: thetuvix
-ms.author: v-tieto
+ms.author: v-vtieto
 ms.date: 12/09/2021
 ms.topic: article
 keywords: immersive view, 2D view, slate, app, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit
@@ -236,4 +236,4 @@ With Windows 10, you no longer target an operating system but instead [target yo
 * [Updating 2D UWP apps for mixed reality](../develop/porting-apps/building-2d-apps.md)
 * [Getting a HolographicSpace](../develop/native/getting-a-holographicspace.md)
 * [Navigating the Windows Mixed Reality home](../discover/navigating-the-windows-mixed-reality-home.md)
-* [Types of mixed reality apps](types-of-mixed-reality-apps.md)
+* [Types of mixed reality apps](../discover/types-of-mixed-reality-apps.md)

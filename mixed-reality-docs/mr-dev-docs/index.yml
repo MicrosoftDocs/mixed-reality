@@ -67,7 +67,7 @@ productDirectory:
       links:
         - url: design/design.md
           text: Design and prototype
-        - url: design/types-of-mixed-reality-apps.md
+        - url: discover/types-of-mixed-reality-apps.md
           text: Choose your type of Mixed Reality app
         - url: discover/case-study-expanding-the-design-process-for-mixed-reality.md
           text: Expand your design process

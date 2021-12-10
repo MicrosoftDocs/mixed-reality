@@ -26,7 +26,7 @@ Every app starts in mixed reality by placing an app tile (just a [Windows second
 ![Placement puts a secondary tile in the world](images/slide1-600px.png)<br>
 *Placement puts a secondary tile in the world*
 
-As soon as placement completes (unless the placement was started by an [app to app](app-model.md#protocols) launch), the app starts launching. Windows Mixed Reality can run a limited number of apps at one time. As soon as you place and launch an app, other active apps may suspend. Suspended apps leave a screenshot of the app's last state on its app tile wherever you placed it. For more information on handling resume and other lifecycle events, see [Windows 10 UWP app lifecycle](/windows/uwp/launch-resume/app-lifecycle).
+As soon as placement completes (unless the placement was started by an [app to app](app-views.md#protocols) launch), the app starts launching. Windows Mixed Reality can run a limited number of apps at one time. As soon as you place and launch an app, other active apps may suspend. Suspended apps leave a screenshot of the app's last state on its app tile wherever you placed it. For more information on handling resume and other lifecycle events, see [Windows 10 UWP app lifecycle](/windows/uwp/launch-resume/app-lifecycle).
 
 ![After placing a tile, the app starts running](images/slide2-500px.png) ![State diagram for app running, suspended or not running](images/ic576232-500px.png)<br>
 *Left: after placing a tile, the app starts running. Right: state diagram for app running, suspended, or not running.*
