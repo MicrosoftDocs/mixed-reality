@@ -48,6 +48,14 @@ the articulated hand controller is associated with the *PokePointer*, *GrabPoint
 > [!NOTE]
 > MRTK provides a set of pointer prefabs in *Assets/MRTK/SDK/Features/UX/Prefabs/Pointers*. A new custom prefab can be built as long as it contains one of the pointer scripts in *Assets/MRTK/SDK/Features/UX/Scripts/Pointers* or any other script implementing [`IMixedRealityPointer`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointer).
 
+### Cursor configuration
+
+The Gaze cursor is directly configurable via the the `GazeCursorPrefab` property on the `MixedRealityInputSystemProfile` within the Editor. To configure the cursor used for other pointers, you need to change prefab used in the `CursorPrefab` field of the corresponding `BaseControllerPointer`. To change the cursor programatically, modify the `BaseCursor` property on the corresponding `IMixedRealityPointer` behavior. 
+
+![Cursor Prefab Property](../images/input/pointers/PointerCursorPrefab.png)
+
+See our cursor prefabs in *Assets/MRTK/SDK/Features/UX/Prefabs/Cursors* for example implementations of cursor behavior. In particular, the *DefaultGazeCursor* gives a robust implementation of changing the cursor's graphic based on contextual state.
+
 ### Default pointer classes
 
 The following classes are the out-of-box MRTK pointers available and defined in the default *MRTK Pointer Profile* outlined above. Each pointer prefab provided under *Assets/MRTK/SDK/Features/UX/Prefabs/Pointers* contains one of the pointer components attached.
