@@ -16,7 +16,7 @@ MRTK's support for the Oculus Quest comes via two different sources, Unity's XR 
 The [Unity XR SDK Pipeline](https://docs.unity3d.com/Manual/XR.html) enables the use of Oculus Touch controllers and head tracking with the Oculus Quest.
 This pipeline is the standard for developing XR applications in Unity 2019.3 and beyond. To use this pipeline, make sure that you using **Unity 2019.3 or newer**. This is **required** to deploy MRTK applications to the Oculus Quest.
 
-The [Oculus Integration Unity package](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) allows for the use of **hand tracking** with the Oculus Quest. This data provider does **NOT** use Unity's **XR SDK Pipeline** or **Legacy XR Pipeline**.
+The [Oculus Integration Unity package](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) allows for the use of **hand tracking** and controller models with the Oculus Quest. 
 
 ## Setting up project for the Oculus Quest
 
@@ -33,6 +33,12 @@ The [Oculus Integration Unity package](https://assetstore.unity.com/packages/too
 1. Make sure that the Oculus Plug-in Provider is included in your project by going to **Edit --> Project Settings --> XR Plug-in Management --> Plug-in Providers**
 
     ![Oculus Plugin Provider](../images/cross-platform/oculus-quest/OculusPluginProvider.png)
+
+> [!IMPORTANT]
+> You are able to use the [OpenXR Plugin](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk.md#openxr) to deploy MRTK applications to the Oculus Quest, 
+> however, [**controller visualization and hand tracking**](https://developer.oculus.com/documentation/unity/unity-openxr/) are not currently supported on OpenXR.
+> 
+> It is recommended to use the Oculus XR Plugin until full support is made available by the Oculus Integration package.
 
 ## Setting up the Oculus Integration Unity package to enable handtracking
 
