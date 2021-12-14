@@ -24,7 +24,7 @@ This provider can be used in editor and on device while on the Standalone platfo
 |2.7.3| 4.5.0, 4.5.1, 4.6.0, 4.7.0, 4.7.1, 4.8.0, 4.9.1 (see note below) |
 
 > [!NOTE]
-> Unity Modules 4.9.1 require the [Gemini 5.2](https://developer.leapmotion.com/tracking-software-download) tracking service or higher and are only officially supported on Unity 2019.  See [release notes for 4.9.1](https://github.com/leapmotion/UnityModules/releases/tag/UM-4.9.1).
+> Unity Modules 4.9.1 require the [Gemini 5.2](https://developer.leapmotion.com/tracking-software-download) tracking service or higher, and are only officially supported on Unity 2019.  See [release notes for 4.9.1](https://github.com/leapmotion/UnityModules/releases/tag/UM-4.9.1).
 
 
 ## Using Leap Motion (by Ultraleap) hand tracking in MRTK
