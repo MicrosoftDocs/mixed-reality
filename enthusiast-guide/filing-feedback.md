@@ -48,7 +48,7 @@ The engineering team uses the same mechanism for tracking and fixing internal bu
 10. Add more details to your feedback, such as considering your issue a blocking issue or selecting one of the available options to help better describe the issue you are encountering.
 11. To help us identify and fix the bug faster, consider capturing traces and video of the issue before submitting. To start collecting traces, select **Recreate my problem**, and then select **Start recording** when you're ready. This will begin collecting traces and a video capture of your mixed reality scenario. You can also consider attaching screenshots and files that might be helpful. 
 ![Start Capture](images/feedback4.png)
-12. Leave the Feedback app and running in the background and attempt to reproduce the broken scenario. 
+12. Leave the Feedback app running in the background and attempt to reproduce the broken scenario. 
 13. After you're done reproducing the broken scenario, go back to the **Feedback Hub** app and select **Stop Recording**. Once you've completed that, you should see that a file containing the traces has been added to your feedback.
 14. Select **Submit**.![Submit](images/feedback5.png)
 
