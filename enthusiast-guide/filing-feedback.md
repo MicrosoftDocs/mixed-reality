@@ -7,7 +7,7 @@ ms.date: 12/6/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Feedback, Feedback Hub, bugs
 appliesto:
-    - Windows 10
+    - Windows 10 and Windows 11
 ---
 
 # Filing bugs and feedback
@@ -22,7 +22,7 @@ The engineering team uses the same mechanism for tracking and fixing internal bu
 ## How to file feedback for Windows Mixed Reality immersive headsets on PC
 
 1. Ensure you have the immersive headset connected to your PC.
-2. Launch **Feedback Hub** on desktop with the HMD connected. If you don't already have **Feedback Hub** installed, you can download and install the latest [**Feedback Hub**](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?rtc=1&activetab=pivot:overviewtab) app from Microsoft Store.
+2. Launch **Feedback Hub** on desktop with the immersive headset connected. If you don't already have **Feedback Hub** installed, you can download and install the latest [**Feedback Hub**](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?rtc=1&activetab=pivot:overviewtab) app from Microsoft Store.
 3. Go to **Home** on the left pane. ![Feedback Tab](images/step-003.png) 
 4. Select **Report a problem**. ![Add new feedback](images/step-004.png)
 5. Provide a meaningful feedback title in the **Summarize your feedback** box. ![Summarize your feedback](images/step-005.png)
@@ -37,8 +37,8 @@ The engineering team uses the same mechanism for tracking and fixing internal bu
    | Desktop Experience | Issues with the Mixed Reality Portal or Windows OS integration |
    | Developer Experience | Issues with authoring / running an application for Windows Mixed Reality |
    | Enterprise & LBE | Issues setting up or using Windows Mixed Reality in an LBE or Enterprise environment |
-   | Headset Functionality | Issues related to various components of a Windows Mixed Reality headset (display, audio, connectivity, drivers, and etc.)  |
-   | Motion Controllers | Issues related to various components of a Windows Mixed Reality motion controller (buttons, Bluetooth, batteries, and etc.) |
+   | Headset Functionality | Issues related to various components of a Windows Mixed Reality headset (display, audio, connectivity, drivers, etc.)  |
+   | Motion Controllers | Issues related to various components of a Windows Mixed Reality motion controller (buttons, Bluetooth, batteries, etc.) |
    | Positional Tracking | Issues related to positional tracking while using Windows Mixed Reality. (such as head tracking and controller tracking) |
    | Setup & Updates | Issues related to set up, installation, or updates for Windows Mixed Reality products |
    | SteamVR  | Issues related to the "Windows Mixed Reality for SteamVR" Steam integration |
