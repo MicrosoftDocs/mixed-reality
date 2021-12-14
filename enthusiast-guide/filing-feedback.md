@@ -23,15 +23,17 @@ The engineering team uses the same mechanism for tracking and fixing internal bu
 
 1. Ensure you have the immersive headset connected to your PC.
 2. Launch **Feedback Hub** on desktop with the HMD connected. If you don't already have **Feedback Hub** installed, you can download and install the latest [**Feedback Hub**](https://www.microsoft.com/p/feedback-hub/9nblggh4r32n?rtc=1&activetab=pivot:overviewtab) app from Microsoft Store.
-3. Go to **Home** on the left pane. ![Feedback Tab](images/feedback1.png) 
-4. Select **Report a problem**. ![Add new feedback](images/feedback2.png)
-5. Provide a meaningful feedback title in the **Summarize your feedback** box.
-6. Provide details and steps to reproduce the issue in the **Explain in more detail** (optional) box, then select the **Next** button.
-7. Select **Problem** under **Select a category that best matches your feedback** to make the feedback actionable.
+3. Go to **Home** on the left pane. ![Feedback Tab](images/step-003.png) 
+4. Select **Report a problem**. ![Add new feedback](images/step-004.png)
+5. Provide a meaningful feedback title in the **Summarize your feedback** box. ![Summarize your feedback](images/step-005.png)
+6. Provide details and steps to reproduce the issue in the **Explain in more detail** (optional) box, then select the **Next** button. ![Explain in more detail](images/step-006.png)
+7. Select **Problem** under **Select a category that best matches your feedback** to make the feedback actionable. ![Choose a category](images/step-007.png)
 8. Select **Mixed Reality** as the main category, pick an applicable subcategory, then click the **Next** button:
 
+    ![Subcategories under Mixed Reality](images/step-008.png)
+
    | Subcategory | Description |
-   |-------------|-------------|
+   |:-------------|:-------------|
    | Desktop Experience | Issues with the Mixed Reality Portal or Windows OS integration |
    | Developer Experience | Issues with authoring / running an application for Windows Mixed Reality |
    | Enterprise & LBE | Issues setting up or using Windows Mixed Reality in an LBE or Enterprise environment |
@@ -39,18 +41,19 @@ The engineering team uses the same mechanism for tracking and fixing internal bu
    | Motion Controllers | Issues related to various components of a Windows Mixed Reality motion controller (buttons, Bluetooth, batteries, and etc.) |
    | Positional Tracking | Issues related to positional tracking while using Windows Mixed Reality. (such as head tracking and controller tracking) |
    | Setup & Updates | Issues related to set up, installation, or updates for Windows Mixed Reality products |
-   | SteamVR  | Issues related to the “Windows Mixed Reality for SteamVR” Steam integration |
+   | SteamVR  | Issues related to the "Windows Mixed Reality for SteamVR" Steam integration |
    | VR Accessories | Issues related to third-party VR accessories intended for use with Windows Mixed Reality products |
    | VR Games & Apps | Issues related to games and apps intended for use with Windows Mixed Reality products |
    | WebVR in Edge  | Issues related to using WebVR in Edge with Windows Mixed Reality products |
    | All other issues  | All other issues related to Windows Mixed Reality products and experiences |
-9. Browse through similar feedback and select one if it matches yours (adding your experience to existing feedback can help us understand it better). Once you’re done, click the **Next** button. 
-10. Add more details to your feedback, such as considering your issue a blocking issue or selecting one of the available options to help better describe the issue you are encountering.
+
+9. Browse through similar feedback and select one if it matches yours (adding your experience to existing feedback can help us understand it better). Once you're done, click the **Next** button. ![Browse through similar feedback](images/step-009.png)
+10. Add more details to your feedback, such as considering your issue a blocking issue or selecting one of the available options to help better describe the issue you are encountering. ![Add more details](images/step-010.png)
 11. To help us identify and fix the bug faster, consider capturing traces and video of the issue before submitting. To start collecting traces, select **Recreate my problem**, and then select **Start recording** when you're ready. This will begin collecting traces and a video capture of your mixed reality scenario. You can also consider attaching screenshots and files that might be helpful. 
-![Start Capture](images/feedback4.png)
+![Start recording](images/step-011.png)
 12. Leave the Feedback app and running in the background and attempt to reproduce the broken scenario. 
-13. After you're done reproducing the broken scenario, go back to the **Feedback Hub** app and select **Stop Recording**. Once you've completed that, you should see that a file containing the traces has been added to your feedback.
-14. Select **Submit**.![Submit](images/feedback5.png)
+13. After you're done reproducing the broken scenario, go back to the **Feedback Hub** app and select **Stop Recording**. Once you've completed that, you should see that a file containing the traces has been added to your feedback. ![Stop recording](images/step-013.png)
+14. Select **Submit**. ![Submit your feedback](images/step-014.png)
 
 This will lead you to the "Thank You" page. At this point, your feedback has been successfully submitted.
 
