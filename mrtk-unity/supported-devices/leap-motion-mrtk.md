@@ -37,7 +37,8 @@ This provider can be used in editor and on device while on the Standalone platfo
 
     > [!IMPORTANT]
     > Unity deprecated SelectionMode.OnlyUserModifiable after Unity 2019.4.19 which results in the following error coming from the Ultraleap Hotkeys.cs script:
-    > Assets\Plugins\LeapMotion\Core\Editor\Hotkeys.cs(24,91): error CS0619: 'SelectionMode.OnlyUserModifiable' is obsolete: ''OnlyUserModifiable' is obsolete. Use 'Editable' instead. (UnityUpgradeable) -> Editable'.  
+    > Assets\Plugins\LeapMotion\Core\Editor\Hotkeys.cs(24,91): error CS0619: 'SelectionMode.OnlyUserModifiable' is obsolete: ''OnlyUserModifiable' is obsolete. Use 'Editable' instead. (UnityUpgradeable) -> Editable'.
+      
     > To resolve the issues, change the SelectionMode.OnlyUserModifiable to SelectionMode.Editable in the Hotkeys.cs script located in Plugins/LeapMotion/Core/Editor/Hotkeys.cs.
 
 1. Integrate the Leap Motion Unity Modules with MRTK
