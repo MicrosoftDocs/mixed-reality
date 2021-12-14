@@ -60,7 +60,7 @@ This will lead you to the "Thank You" page. At this point, your feedback has bee
 It's easy to direct other people to your feedback after submission by going to **Feedback > My Feedback**, selecting the issue, and using the **Share** icon to get a shortened URL. You can give the URL to coworkers, Microsoft staff, [forum](https://forums.hololens.com/) readers, and so on, to upvote or escalate.
 
 > [!IMPORTANT]
-> Before filing a bug, please ensure you meet the following constraints so that the logs are successfully uploaded with the feedback.
+> Before filing a bug, make sure you meet the following constraints so that the logs are successfully uploaded with the feedback.
 >    * Have a minimum of 3GB free disk space available on the main drive of the device.
 >    * Ensure that a non-metered network is available in order to upload cabs.
 
