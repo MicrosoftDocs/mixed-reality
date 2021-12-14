@@ -74,8 +74,9 @@ If you're working with a Windows Mixed Reality headset connected to your PC, you
     To learn more about the build configurations, see the "Types of build configurations" table in the [Unity documentation](https://docs.unity3d.com/Manual/VisualStudioprojectgenerationWindows.html).
 
     > [!NOTE]
-    > -For HoloLens, you'll typically build for the ARM architecture. However, there's a known issue in Unity 2019.3 that causes errors when selecting ARM as the build architecture in Visual Studio. The recommended workaround is to build for ARM64. If that isn't an option, for a Unity project, follow this step before you generate your Unity build: go to **Edit** > **Project Settings** > **Player** > **Other Settings** and then disable **Graphics Jobs**.
-    -If you don't see Device as a target option, you may need to change the startup project for the Visual Studio solution from the IL2CPP project to the UWP project. To do this, in the **Solution Explorer**, right-click your project, and then select **Set as StartUp Project**.
+    > For HoloLens, you'll typically build for the ARM architecture. However, there's a known issue in Unity 2019.3 that causes errors when selecting ARM as the build architecture in Visual Studio. The recommended workaround is to build for ARM64. If that isn't an option, for a Unity project, follow this step before you generate your Unity build: go to **Edit** > **Project Settings** > **Player** > **Other Settings** and then disable **Graphics Jobs**.
+    >
+    > If you don't see Device as a target option, you may need to change the startup project for the Visual Studio solution from the IL2CPP project to the UWP project. To do this, in the **Solution Explorer**, right-click your project, and then select **Set as StartUp Project**.
 
 1. Click the deployment target drop-down and then do one of the following:
 
@@ -99,14 +100,17 @@ To set your remote connection:
 1. Click the **Debugger to launch** drop down and then select **Remote Machine.**
 1. In the **Machine Name** field, enter the IP address of your device.
 
-  ![Remote connection dialog in Visual Studio](images/027-vs-machine-name.png)
+    ![Remote connection dialog in Visual Studio](images/027-vs-machine-name.png)
 
     * You can find the IP address on your HoloLens under **Settings > Network & Internet > Advanced Options**.
+
     * We recommend that you manually enter your IP address rather than depend on the "Auto Detected" feature.
 
 1. Set the **Authentication Mode** to **Universal (Unencrypted protocol)**.
 1. Build, deploy, and debug your app based on your needs:
+
     * To build, deploy and start debugging, select **Debug > Start debugging** 
+
     * To build and deploy without debugging, select **Build > Deploy Solution**.
 
 1. The first time you deploy an app to your HoloLens from your PC, you'll be prompted for a PIN. Follow the **Pairing your device** instructions below.
