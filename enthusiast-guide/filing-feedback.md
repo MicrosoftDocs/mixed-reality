@@ -52,7 +52,7 @@ The engineering team uses the same mechanism for tracking and fixing internal bu
 11. To help us identify and fix the bug faster, consider capturing traces and video of the issue before submitting. To start collecting traces, select **Recreate my problem**, and then select **Start recording** when you're ready. This will begin collecting traces and a video capture of your mixed reality scenario. You can also consider attaching screenshots and files that might be helpful. 
 ![Start recording](images/step-011.png)
 12. Leave the Feedback app and running in the background and attempt to reproduce the broken scenario. 
-13. After you're done reproducing the broken scenario, go back to the **Feedback Hub** app and select **Stop Recording**. Once you've completed that, you should see that a file containing the traces has been added to your feedback. ![Stop recording](images/step-013.png)
+13. After you're done reproducing the broken scenario, go back to the **Feedback Hub** app and select **Stop Recording**. Once this has been completed, you should see that a file containing the traces has been added to your feedback. ![Stop recording](images/step-013.png)
 14. Select **Submit**. ![Submit your feedback](images/step-014.png)
 
 This will lead you to the "Thank You" page. At this point, your feedback has been successfully submitted.
