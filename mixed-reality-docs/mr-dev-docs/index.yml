@@ -135,7 +135,7 @@ conceptualContent:
         - url: develop/unity/shared-experiences-in-unity.md
           itemType: concept
           text: Platform capabilities and APIs
-        - url: develop/unity/exporting-and-building-a-unity-visual-studio-solution.md
+        - url: develop/unity/build-and-deploy-to-hololens.md
           itemType: deploy
           text: Deploying to device or emulator
       # footerLink (optional)
