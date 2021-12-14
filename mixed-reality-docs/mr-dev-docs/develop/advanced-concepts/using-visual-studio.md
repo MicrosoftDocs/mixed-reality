@@ -109,7 +109,7 @@ To set your remote connection:
 1. Set the **Authentication Mode** to **Universal (Unencrypted protocol)**.
 1. Build, deploy, and debug your app based on your needs:
 
-    * To build, deploy and start debugging, select **Debug > Start debugging** 
+    * To build, deploy and start debugging, select **Debug > Start debugging**.
 
     * To build and deploy without debugging, select **Build > Deploy Solution**.
 
