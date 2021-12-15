@@ -35,10 +35,10 @@ The [Oculus Integration Unity package](https://assetstore.unity.com/packages/too
     ![Oculus Plugin Provider](../images/cross-platform/oculus-quest/OculusPluginProvider.png)
 
 > [!IMPORTANT]
-> You can use the [OpenXR Plugin](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk.md#openxr) to deploy MRTK applications to the Oculus Quest, 
-> however, [**controller visualization and hand tracking**](https://developer.oculus.com/documentation/unity/unity-openxr/) are not currently supported on OpenXR.
+> You can use the [OpenXR Plugin](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk.md#openxr) to deploy MRTK applications to the Oculus Quest. 
+> However, [**controller visualization and hand tracking**](https://developer.oculus.com/documentation/unity/unity-openxr/) are not currently supported in OpenXR.
 > 
-> It is recommended to use the Oculus XR Plugin until full support is made available by the Oculus Integration package.
+> It is recommended that you use the Oculus XR Plugin until full support is available with the Oculus Integration package.
 
 ## Setting up the Oculus Integration Unity package to enable handtracking
 
