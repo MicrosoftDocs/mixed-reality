@@ -16,7 +16,7 @@ MRTK's support for the Oculus Quest comes via two different sources, Unity's XR 
 The [Unity XR SDK Pipeline](https://docs.unity3d.com/Manual/XR.html) enables the use of Oculus Touch controllers and head tracking with the Oculus Quest.
 This pipeline is the standard for developing XR applications in Unity 2019.3 and beyond. To use this pipeline, make sure that you using **Unity 2019.3 or newer**. This is **required** to deploy MRTK applications to the Oculus Quest.
 
-The [Oculus Integration Unity package](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) allows for the use of **hand tracking** with the Oculus Quest. This data provider does **NOT** use Unity's **XR SDK Pipeline** or **Legacy XR Pipeline**.
+The [Oculus Integration Unity package](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) allows for the use of **hand tracking** and controller models with the Oculus Quest. 
 
 ## Setting up project for the Oculus Quest
 
@@ -34,10 +34,16 @@ The [Oculus Integration Unity package](https://assetstore.unity.com/packages/too
 
     ![Oculus Plugin Provider](../images/cross-platform/oculus-quest/OculusPluginProvider.png)
 
+> [!IMPORTANT]
+> You can use the [OpenXR Plugin](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk.md#openxr) to deploy MRTK applications to the Oculus Quest. 
+> However, [**controller visualization and hand tracking**](https://developer.oculus.com/documentation/unity/unity-openxr/) are not currently supported in OpenXR.
+> 
+> It is recommended that you use the Oculus XR Plugin until full support is available with the Oculus Integration package.
+
 ## Setting up the Oculus Integration Unity package to enable handtracking
 
 1. Download and import [Oculus Integration](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) from the Unity Asset Store. The latest version tested to
-work is 20.0.0. Older versions can be found from this [archive](https://developer.oculus.com/downloads/package/unity-integration-archive/).
+work is 35.0.0. Older versions can be found from this [archive](https://developer.oculus.com/downloads/package/unity-integration-archive/).
 
 1. Navigate to Mixed Reality Toolkit > Utilities > Oculus > Integrate Oculus Integration Unity Modules. Doing this will update the asmdefs with definitions and references needed for the
 relevant Oculus Quest code to function. It will also update the csc file to filter out the obsolete warnings produced by the Oculus Integration assets. The MRTK repo contains a csc file that converts warnings to errors, this conversion halts the MRTK-Quest configuration process.
