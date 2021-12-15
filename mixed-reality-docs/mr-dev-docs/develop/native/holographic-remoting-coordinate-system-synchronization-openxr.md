@@ -24,4 +24,5 @@ With the OpenXR API, the user coordinate system is wrapped into a reference spac
 To create the user coordinate system in the remote app call ```xrCreateReferenceSpace``` with the ```XR_REMOTING_REFERENCE_SPACE_TYPE_USER_MSFT``` argument.
 
 ## See Also
-* [Coordinate System Synchronization with Holographic Remoting Overview](../advanced-concepts/holographic-remoting-coordinate-system-synchronization.md)
+
+* [Coordinate System Synchronization with Holographic Remoting Overview](holographic-remoting-coordinate-system-synchronization.md)

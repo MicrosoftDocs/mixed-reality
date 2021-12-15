@@ -19,6 +19,7 @@ The coordinate system synchronization can be used, for example, to align content
 Furthermore, coordinate system synchronization allows the custom remote app to correctly align sensor data from the player device that was retrieved, for example, by [HoloLens2ForCV](https://github.com/microsoft/HoloLens2ForCV).
 
 In general, the coordinate system synchronization consists of two parts:
+
 - The player app sets and regularly updates the coordinate system (from now on, we refer to this as the "user coordinate system").
 - The remote app gets the user coordinate system in a runtime-dependent way.
 With the synchronized coordinate system, both the player app and remote app can transform spatial data into a common coordinate system.
@@ -26,7 +27,8 @@ With the synchronized coordinate system, both the player app and remote app can 
 > [!NOTE]
 > Coordinate system synchronization supports only a single coordinate system.
 > To synchronize data from multiple coordinate systems, you can transform the data into the user coordinate system.
-	
+
 ## See Also
-* [Coordinate System Synchronization with Holographic Remoting and the OpenXR API](../native/holographic-remoting-coordinate-system-synchronization-openxr.md)
-* [Coordinate System Synchronization with Holographic Remoting and the Windows Mixed Reality API](../native/holographic-remoting-coordinate-system-synchronization-wmr.md)
+
+* [Coordinate System Synchronization with Holographic Remoting and the OpenXR API](holographic-remoting-coordinate-system-synchronization-openxr.md)
+* [Coordinate System Synchronization with Holographic Remoting and the Windows Mixed Reality API](holographic-remoting-coordinate-system-synchronization-wmr.md)

@@ -28,10 +28,10 @@ With Holographic Remoting, you can experience your app on the HoloLens while it 
 
 [!INCLUDE[](includes/unity-play-mode.md)]
 
-Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more details in the [Holographic Remoting Player](../advanced-concepts/holographic-remoting-player.md) documentation.
+Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more details in the [Holographic Remoting Overview](../native/holographic-remoting-overview.md) documentation.
 
 For best results, make sure your app properly sets the [focus point](focus-point-in-unity.md). This helps Holographic Remoting to best adapt your scene to the latency of your wireless connection.
 
 ## See Also
 
-* [Holographic Remoting Player](../advanced-concepts/holographic-remoting-player.md)
+* [Holographic Remoting Overview](../native/holographic-remoting-overview.md)

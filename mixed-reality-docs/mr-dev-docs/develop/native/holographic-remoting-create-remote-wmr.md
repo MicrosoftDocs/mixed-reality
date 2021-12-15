@@ -10,7 +10,7 @@ keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windo
 
 # Writing a Holographic Remoting remote app using the HolographicSpace API
 
-If you're new to Holographic Remoting, you may want to [read our overview](../advanced-concepts/holographic-remoting-overview.md).
+If you're new to Holographic Remoting, you may want to [read our overview](holographic-remoting-overview.md).
 
 >[!IMPORTANT]
 >This document describes the creation of a remote application for HoloLens 2 using the [HolographicSpace API](../native/getting-a-holographicspace.md). Remote applications for **HoloLens (1st gen)** must use NuGet package version **1.x.x**. This implies that remote applications written for HoloLens 2 are not compatible with HoloLens 1 and vice versa. The documentation for HoloLens 1 can be found [here](add-holographic-remoting.md).
@@ -29,6 +29,7 @@ A good starting point is a working DirectX-based Desktop or UWP app that targets
 ## Get the Holographic Remoting NuGet package
 
 The following steps are required to add the NuGet package to a project in Visual Studio.
+
 1. Open the project in Visual Studio.
 2. Right-click the project node and select **Manage NuGet Packages...**
 3. In the panel that appears, select **Browse** and then search for "Holographic Remoting".
@@ -79,6 +80,7 @@ m_holographicSpace = winrt::Windows::Graphics::Holographic::HolographicSpace::Cr
 When the remote app is ready for rendering content, a connection to the player device can be established.
 
 Connection can be done in one of two ways.
+
 1) The remote app connects to the player running on the device.
 2) The player running on the device connects to the remote app.
 
@@ -120,7 +122,9 @@ catch(winrt::hresult_error& e)
 ## Handling Remoting specific events
 
 The remote context exposes three events, which are important to monitor the state of a connection.
+
 1) OnConnected: Triggered when a connection to the device has been successfully established.
+
 ```cpp
 winrt::weak_ref<winrt::Microsoft::Holographic::AppRemoting::IRemoteContext> remoteContextWeakRef = m_remoteContext;
 
@@ -131,7 +135,9 @@ m_onConnectedEventRevoker = m_remoteContext.OnConnected(winrt::auto_revoke, [thi
     }
 });
 ```
+
 2) OnDisconnected: Triggered if an established connection is closed or a connection couldn't be established.
+
 ```cpp
 m_onDisconnectedEventRevoker =
     m_remoteContext.OnDisconnected(winrt::auto_revoke, [this, remoteContextWeakRef](ConnectionFailureReason failureReason) {
@@ -157,7 +163,9 @@ m_onDisconnectedEventRevoker =
         }
     });
 ```
+
 3) OnListening: When listening for incoming connections starts.
+
 ```cpp
 m_onListeningEventRevoker = m_remoteContext.OnListening(winrt::auto_revoke, [this, remoteContextWeakRef]() {
     if (auto remoteContext = remoteContextWeakRef.get())
@@ -168,6 +176,7 @@ m_onListeningEventRevoker = m_remoteContext.OnListening(winrt::auto_revoke, [thi
 ```
 
 Additionally the connection state can be queried using the ```ConnectionState``` property on the remote context.
+
 ```cpp
 auto connectionState = m_remoteContext.ConnectionState();
 ```
@@ -229,6 +238,7 @@ winrt::fire_and_forget InitializeSpeechAsync(
 ```
 
 There are two ways of specifying phrases to be recognized.
+
 1) Specification inside a speech grammar xml file. See [How to create a basic XML Grammar](/previous-versions/office/developer/speech-technologies/hh361658(v=office.14)) for details.
 2) Specify by passing them inside the dictionary vector to ```ApplyParameters```.
 
@@ -320,7 +330,7 @@ void SampleRemoteMain::Render(HolographicFrame holographicFrame)
 
     m_deviceResources->UseHolographicCameraResources([this, holographicFrame](auto& cameraResourceMap) {
         
-		...
+        ...
 
         for (auto cameraPose : prediction.CameraPoses())
         {
@@ -355,10 +365,11 @@ Custom data channels can be used to send user data over the already-established 
 ## Optional: Coordinate System Synchronization
 
 Starting with version [2.7.0](holographic-remoting-version-history.md#v2.7.0), coordinate system synchronization can be used to align spatial data between the player and remote application.
-For more information, see [Coordinate System Synchronization with Holographic Remoting Overview](../advanced-concepts/holographic-remoting-coordinate-system-synchronization.md).
+For more information, see [Coordinate System Synchronization with Holographic Remoting Overview](holographic-remoting-coordinate-system-synchronization.md).
 
 ## See Also
-* [Holographic Remoting overview](../advanced-concepts/holographic-remoting-overview.md)
+
+* [Holographic Remoting Overview](holographic-remoting-overview.md)
 * [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)
 * [Custom Holographic Remoting data channels](holographic-remoting-custom-data-channels.md)
 * [Establishing a secure connection with Holographic Remoting](holographic-remoting-secure-connection.md)

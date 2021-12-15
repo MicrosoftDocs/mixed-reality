@@ -14,13 +14,13 @@ appliesto:
 
 # Streaming in Unreal
 
-"Streaming" is sometimes referred to as "Holographic Remoting." To learn more, see [Holographic Remoting overview](../advanced-concepts/holographic-remoting-overview.md)
+"Streaming" is sometimes referred to as "Holographic Remoting." To learn more, see [Holographic Remoting Overview](../native/holographic-remoting-overview.md)
 
 Streaming from a PC to HoloLens provides two major advantages: 
 * It lets your mixed reality app take advantage of your PC's computational power. 
 * It helps speed up development iteration time. 
 
-To get started, you'll need to download the [Holographic Remoting Player](../advanced-concepts/holographic-remoting-player.md) to your HoloLens device. The Holographic Remoting Player lets your app to stream  directly to the remoting player on your HoloLens from the following sources:
+To get started, you'll need to download the [Holographic Remoting Player](../native/holographic-remoting-player.md) to your HoloLens device. The Holographic Remoting Player lets your app to stream  directly to the remoting player on your HoloLens from the following sources:
 
 * The Unreal Engine editor
 * A packaged Windows executable 

@@ -16,7 +16,7 @@ This article explains the following use case for Holographic Remoting:
 
 This type of Holographic Remoting is also available for Windows Mixed Reality (WMR) immersive headsets. This could be useful if, for example, your WMR headset is connected to a backpack PC and you wish to stream your app from a more powerful PC to the backpack PC.
 
-To learn more about Holographic Remoting, see [Holographic Remoting overview](../advanced-concepts/holographic-remoting-overview.md)
+To learn more about Holographic Remoting, see [Holographic Remoting Overview](../native/holographic-remoting-overview.md)
 
 Note that you can also use Holographic Remoting if [you want to preview and debug your app during the development process](preview-and-debug-your-app.md).
 
@@ -31,7 +31,7 @@ Note that you can also use Holographic Remoting if [you want to preview and debu
 
 ## Set up the Holographic Remoting Player app
 
-To use Holographic Remoting in Mode 1 alone, install the [Holographic Remoting Player](../advanced-concepts/holographic-remoting-player.md) app from the Microsoft Store on your HoloLens 2. As explained below, after you download and run the app, you'll see the version number and IP address to connect to. **We recommend using the latest version of Holographic Remoting Player available**.
+To use Holographic Remoting in Mode 1 alone, install the [Holographic Remoting Player](../native/holographic-remoting-player.md) app from the Microsoft Store on your HoloLens 2. As explained below, after you download and run the app, you'll see the version number and IP address to connect to. **We recommend using the latest version of Holographic Remoting Player available**.
 
 Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more details in the Holographic Remoting Player article linked above.
 
@@ -98,7 +98,7 @@ To use Holographic Remoting in both modes specified above, you need to clone [Ho
 
 ## Migrate from previous Holographic Remoting APIs
 
-To learn more about Holographic Remoting, see [Holographic Remoting overview](../advanced-concepts/holographic-remoting-overview.md)
+To learn more about Holographic Remoting, see [Holographic Remoting Overview](../native/holographic-remoting-overview.md)
 
 #### UnityEngine.XR.WSA.HolographicRemoting
 
@@ -123,7 +123,7 @@ From the sample code on [Unity's docs](https://docs.unity3d.com/2020.1/Documenta
 
 ## See Also
 
-* [Holographic Remoting Player](../advanced-concepts/holographic-remoting-player.md)
+* [Holographic Remoting Overview](../native/holographic-remoting-overview.md)
 * [Preview and debug your app with Holographic Remoting and Play mode](preview-and-debug-your-app.md)
 * [Tutorial: Getting started with PC Holographic Remoting](../unity/tutorials/mr-learning-pc-holographic-remoting-01.md)
 * [Tutorial: Creating a Holographic Remoting PC application](../unity/tutorials/mr-learning-pc-holographic-remoting-02.md)

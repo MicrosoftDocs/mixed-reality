@@ -1347,11 +1347,6 @@
 		},
 		// Platform Capabilities and APIs
 		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/add-holographic-remoting.md",
-			"redirect_url": "/windows/mixed-reality/develop/platform-capabilities-and-apis/add-holographic-remoting",
-			"redirect_document_id": true
-		},
-		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/advanced-hololens-emulator-and-mixed-reality-simulator-input.md",
 			"redirect_url": "/windows/mixed-reality/develop/platform-capabilities-and-apis/advanced-hololens-emulator-and-mixed-reality-simulator-input",
 			"redirect_document_id": true
@@ -1370,6 +1365,13 @@
 			"source_path": "mixed-reality-docs/mr-dev-docs/hologram-stability.md",
 			"redirect_url": "/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability",
 			"redirect_document_id": false
+		},
+		
+		// Holographic Remoting start
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/add-holographic-remoting.md",
+			"redirect_url": "/windows/mixed-reality/develop/platform-capabilities-and-apis/add-holographic-remoting",
+			"redirect_document_id": true
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/holographic-remoting-create-remote-wmr.md",
@@ -1411,6 +1413,8 @@
 			"redirect_url": "/windows/mixed-reality/develop/platform-capabilities-and-apis/holographic-remoting-version-history",
 			"redirect_document_id": true
 		},
+		// Holographic Remoting end
+
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/hololens-emulator-archive.md",
 			"redirect_url": "/windows/mixed-reality/develop/platform-capabilities-and-apis/hololens-emulator-archive",
@@ -1789,12 +1793,6 @@
 
 // redirects after merge of platform caps and apis reorg 9/2/21
 // Section 1: platform-caps-and-apis md files to advanced-concepts
-
-		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/add-holographic-remoting.md",
-			"redirect_url": "/windows/mixed-reality/develop/native/add-holographic-remoting",
-			"redirect_document_id": false
-		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/advanced-hololens-emulator-and-mixed-reality-simulator-input.md",
 			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/advanced-hololens-emulator-and-mixed-reality-simulator-input",
@@ -1823,6 +1821,12 @@
 			"redirect_document_id": false
 		},
 
+		// Holographic Remoting start
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/add-holographic-remoting.md",
+			"redirect_url": "/windows/mixed-reality/develop/native/add-holographic-remoting",
+			"redirect_document_id": false
+		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-create-player.md",
 			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-create-player",
@@ -1833,44 +1837,81 @@
 			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-create-remote-openxr",
 			"redirect_document_id": false
 		},
-
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-create-remote-wmr.md",
 			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-create-remote-wmr",
 			"redirect_document_id": false
 		},
+
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-overview.md",
 			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/holographic-remoting-overview",
-
 			"redirect_document_id": false
 		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/advanced-concepts/holographic-remoting-overview.md",
+			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-overview",
+			"redirect_document_id": false
+		},
+
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-player.md",
 			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/holographic-remoting-player",
-
 			"redirect_document_id": false
 		},
 		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/advanced-concepts/holographic-remoting-player.md",
+			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-player",
+			"redirect_document_id": false
+		},
+
+		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-secure-connection.md",
 			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-secure-connection",
-
 			"redirect_document_id": false
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-troubleshooting.md",
 			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-troubleshooting",
-
 			"redirect_document_id": false
 		},
-
-
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-version-history.md",
 			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-version-history",
-
 			"redirect_document_id": false
 		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-coordinate-system-synchronization-openxr.md",
+			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-coordinate-system-synchronization-openxr",
+			"redirect_document_id": false
+
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-coordinate-system-synchronization-wmr.md",
+			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-coordinate-system-synchronization-wmr",
+			"redirect_document_id": false
+
+		},
+
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-coordinate-system-synchronization.md",
+			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/holographic-remoting-coordinate-system-synchronization",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/advanced-concepts/holographic-remoting-coordinate-system-synchronization.md",
+			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-coordinate-system-synchronization",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-custom-data-channels-openxr.md",
+			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-custom-data-channels-openxr",
+			"redirect_document_id": false
+		},
+		// Holographic Remoting end
+
+
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/hololens-emulator-archive.md",
 			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/hololens-emulator-archive",
@@ -2000,29 +2041,7 @@
 			"redirect_document_id": false
 
 		},
-		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-coordinate-system-synchronization-openxr.md",
-			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-coordinate-system-synchronization-openxr",
-			"redirect_document_id": false
 
-		},
-		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-coordinate-system-synchronization-wmr.md",
-			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-coordinate-system-synchronization-wmr",
-			"redirect_document_id": false
-
-		},
-		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-coordinate-system-synchronization.md",
-			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/holographic-remoting-coordinate-system-synchronization",
-			"redirect_document_id": false
-
-		},
-		{
-		"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/holographic-remoting-custom-data-channels-openxr.md",
-		"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-custom-data-channels-openxr",
-		 "redirect_document_id": false
-		},
 
 		// Unity Tutorials--Deprecated on 9/17/21 by Vinnie Tieto
 		{

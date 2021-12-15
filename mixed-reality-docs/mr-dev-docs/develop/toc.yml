@@ -399,10 +399,13 @@
 - name: Holographic Remoting
   items:
     - name: Overview
-      href: advanced-concepts/holographic-remoting-overview.md
-      displayname: Holographic Remoting       
+      href: native/holographic-remoting-overview.md
+      displayname: Holographic Remoting
+    - name: Terminology
+      href: native/holographic-remoting-terminology.md
+      displayname: Holographic Remoting              
     - name: Store player
-      href: advanced-concepts/holographic-remoting-player.md
+      href: native/holographic-remoting-player.md
       displayname: Holographic Remoting
     - name: OpenXR API
       items:
@@ -413,14 +416,19 @@
           href: native/holographic-remoting-custom-data-channels-openxr.md
           displayname: Holographic Remoting
         - name: Secure connection (C++)
-          href: native/holographic-remoting-secure-connection.md
-          displayname: Holographic Remoting
+          items:
+            - name: Overview
+              href: native/holographic-remoting-secure-connection.md
+              displayname: Holographic Remoting
+            - name: Secure connection with the OpenXR API
+              href: native/holographic-remoting-secure-connection-openxr.md
+              displayname: Holographic Remoting
         - name: Coordinate system synchronization (C++)
           items:
-            - name : Overview
-              href: advanced-concepts/holographic-remoting-coordinate-system-synchronization.md
+            - name: Overview
+              href: native/holographic-remoting-coordinate-system-synchronization.md
               displayname: Holographic Remoting
-            - name : Coordinate system synchronization with the OpenXR API
+            - name: Coordinate system synchronization with the OpenXR API
               href: native/holographic-remoting-coordinate-system-synchronization-openxr.md
               displayname: Holographic Remoting
     - name: Windows Mixed Reality API
@@ -435,14 +443,20 @@
           href: native/holographic-remoting-custom-data-channels.md
           displayname: Holographic Remoting
         - name: Secure connection (C++)
-          href: native/holographic-remoting-secure-connection.md
+          items:
+            - name: Overview
+              href: native/holographic-remoting-secure-connection.md
+              displayname: Holographic Remoting
+            - name: Secure connection with the Windows Mixed Reality API
+              href: native/holographic-remoting-secure-connection-wmr.md
+              displayname: Holographic Remoting
           displayname: Holographic Remoting
         - name: Coordinate system synchronization (C++)
           items:
-            - name : Overview
-              href: advanced-concepts/holographic-remoting-coordinate-system-synchronization.md
+            - name: Overview
+              href: native/holographic-remoting-coordinate-system-synchronization.md
               displayname: Holographic Remoting
-            - name : Coordinate system synchronization with the Windows Mixed Reality API
+            - name: Coordinate system synchronization with the Windows Mixed Reality API
               href: native/holographic-remoting-coordinate-system-synchronization-wmr.md
               displayname: Holographic Remoting
         - name: Holographic Remoting for HoloLens (1st Gen)

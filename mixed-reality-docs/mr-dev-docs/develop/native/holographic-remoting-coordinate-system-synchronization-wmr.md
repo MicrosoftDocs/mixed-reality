@@ -30,4 +30,5 @@ To access the user coordinate system, call ```GetUserSpatialFrameOfReference``` 
 ```GetUserSpatialFrameOfReference``` returns a [SpatialStationaryFrameOfReference](/uwp/api/windows.perception.spatial.spatialstationaryframeofreference), which represents the user coordinate system.
 
 ## See Also
-* [Coordinate System Synchronization with Holographic Remoting Overview](../advanced-concepts/holographic-remoting-coordinate-system-synchronization.md)
+
+* [Coordinate System Synchronization with Holographic Remoting Overview](holographic-remoting-coordinate-system-synchronization.md)

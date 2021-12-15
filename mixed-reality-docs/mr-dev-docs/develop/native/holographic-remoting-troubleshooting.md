@@ -98,7 +98,8 @@ The following APIs are currently **not** supported when using Holographic Remoti
 * [SpatialGraphInteropPreview.TryCreateFrameOfReference](/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.trycreateframeofreference)
 
 ## See Also
-* [Holographic Remoting overview](../advanced-concepts/holographic-remoting-overview.md)
+
+* [Holographic Remoting Overview](holographic-remoting-overview.md)
 * [Holographic Remoting Version History](holographic-remoting-version-history.md)
 * [Writing a Holographic Remoting remote app using Windows Mixed Reality APIs](holographic-remoting-create-remote-wmr.md)
 * [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md)

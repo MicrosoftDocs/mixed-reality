@@ -10,7 +10,7 @@ keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windo
 
 # Writing a Holographic Remoting remote app using the OpenXR API
 
-If you're new to Holographic Remoting, you may want to [read our overview](../advanced-concepts/holographic-remoting-overview.md).
+If you're new to Holographic Remoting, you may want to [read our overview](holographic-remoting-overview.md).
 
 >[!IMPORTANT]
 >This document describes the creation of a remote application for HoloLens 2 and Windows Mixed Reality headsets using the [OpenXR API](../native/openxr.md). Remote applications for **HoloLens (1st gen)** must use NuGet package version **1.x.x**. This implies that remote applications written for HoloLens 2 are not compatible with HoloLens 1 and vice versa. The documentation for HoloLens 1 can be found [here](add-holographic-remoting.md).
@@ -29,6 +29,7 @@ A good starting point is a working OpenXR based Desktop or UWP app. For details 
 ## Get the Holographic Remoting NuGet package
 
 The following steps are required to add the NuGet package to a project in Visual Studio.
+
 1. Open the project in Visual Studio.
 2. Right-click the project node and select **Manage NuGet Packages...**
 3. In the panel that appears, select **Browse** and then search for "Holographic Remoting".
@@ -94,6 +95,7 @@ xrRemotingSetContextPropertiesMSFT(m_instance.Get(), m_systemId, &contextPropert
 ```
 
 The connection can be done in one of two ways.
+
 1) The remote app connects to the player running on the device.
 2) The player running on the device connects to the remote app.
 
@@ -126,6 +128,7 @@ xrRemotingGetConnectionStateMSFT(m_instance.Get(), m_systemId, &connectionState,
 ```
 
 Available connection states are:
+
 - XR_REMOTING_CONNECTION_STATE_DISCONNECTED_MSFT
 - XR_REMOTING_CONNECTION_STATE_CONNECTING_MSFT
 - XR_REMOTING_CONNECTION_STATE_CONNECTED_MSFT
@@ -140,6 +143,7 @@ In general, the connection state is couple with the XrSession state. Any change 
 ## Handling Remoting specific events
 
 The Holographic Remoting OpenXR runtime exposes three events, which are important to monitor the state of a connection.
+
 1) ```XR_TYPE_REMOTING_EVENT_DATA_CONNECTED_MSFT```: Triggered when a connection to the device has been successfully established.
 2) ```XR_TYPE_REMOTING_EVENT_DATA_DISCONNECTED_MSFT```: Triggered if an established connection is closed or a connection couldn't be established.
 3) ```XR_TYPE_REMOTING_EVENT_DATA_LISTENING_MSFT```: When listening for incoming connections starts.
@@ -233,10 +237,11 @@ After the remote app is notified about a recognized phrase, it can retrieve the 
 ## Optional: Coordinate System Synchronization
 
 Starting with version [2.7.0](holographic-remoting-version-history.md#v2.7.0), coordinate system synchronization can be used to align spatial data between the player and remote app.
-For more information, see [Coordinate System Synchronization with Holographic Remoting Overview](../advanced-concepts/holographic-remoting-coordinate-system-synchronization.md).
+For more information, see [Coordinate System Synchronization with Holographic Remoting Overview](holographic-remoting-coordinate-system-synchronization.md).
 
 ## See Also
-* [Holographic Remoting overview](../advanced-concepts/holographic-remoting-overview.md)
+
+* [Holographic Remoting overview](holographic-remoting-overview.md)
 * [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)
 * [Establishing a secure connection with Holographic Remoting](holographic-remoting-secure-connection.md)
 * [Holographic Remoting troubleshooting and limitations](holographic-remoting-troubleshooting.md)

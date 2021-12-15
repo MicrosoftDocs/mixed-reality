@@ -10,7 +10,7 @@ keywords: HoloLens, Remoting, Holographic Remoting, NuGet, app manifest, player 
 
 # Writing a custom Holographic Remoting player app
 
-If you're new to Holographic Remoting, you may want to [read our overview](../advanced-concepts/holographic-remoting-overview.md).
+If you're new to Holographic Remoting, you may want to [read our overview](holographic-remoting-overview.md).
 
 > [!IMPORTANT]
 > This document describes the creation of a custom player application for HoloLens 2. Custom players written for HoloLens 2 are not compatible with remote applications written for HoloLens 1. This implies that both applications must use NuGet package version **2.x.x**.
@@ -273,10 +273,11 @@ struct OverRenderingConfig
 ## Optional: Coordinate System Synchronization
 
 Starting with version [2.7.0](holographic-remoting-version-history.md#v2.7.0) coordinate system synchronization can be used to align spatial data between the player and remote app.
-For more information, see [Coordinate System Synchronization with Holographic Remoting Overview](../advanced-concepts/holographic-remoting-coordinate-system-synchronization.md).
+For more information, see [Coordinate System Synchronization with Holographic Remoting Overview](holographic-remoting-coordinate-system-synchronization.md).
 
 ## See Also
-* [Holographic Remoting overview](../advanced-concepts/holographic-remoting-overview.md)
+
+* [Holographic Remoting Overview](holographic-remoting-overview.md)
 * [Writing a Holographic Remoting remote app using Windows Mixed Reality APIs](holographic-remoting-create-remote-wmr.md)
 * [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md)
 * [Custom Holographic Remoting data channels](holographic-remoting-custom-data-channels.md)
