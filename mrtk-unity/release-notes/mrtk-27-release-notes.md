@@ -11,6 +11,23 @@ monikerRange: '>= mrtkunity-2021-05'
 
 # Microsoft Mixed Reality Toolkit 2.7 Release Notes
 
+## What's new in 2.7.3
+
+### Unity 2021 support
+
+MRTK now officially supports Unity 2021 with the release of 2.7.3! If you find any issues while using MRTK with Unity 2021, please [file an issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/) on our GitHub repository and add the Unity 2021 tag.
+
+### Notable Bugfixes and Changes
+
+- Previous MRTK versions would generate invalid shader bytecode errors in the Unity console for the MRTK Standard Shader, when compiling for Android or iOS. [#10041](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10041).
+- Add ClearProgressBar call to fix Build Window freeze on Unity 2020 [#10046](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10046)
+- Remove support for preview Microsoft OpenXR plug-in versions [#10119](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10119)
+- Add support for Leap UnityModules 4.9.1 [#10282](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10282)
+- Reduced Hand Constraint debug log spam [#10331](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10331) [#10326](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10326)
+- This is not an exhaustive list of the fixes that were made for MRTK 2.7.3! You can find the fixes that were made, on the [MRTK 2.7.3 milestone](https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/25?closed=1)
+
+
+
 ## What's new in 2.7.2
 
 ### Fixed a UPM package dependency issue
