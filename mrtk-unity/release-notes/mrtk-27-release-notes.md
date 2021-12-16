@@ -122,7 +122,7 @@ We've made it easier to build on Unity 2021 with the release of 2.7.3! If you fi
 - Fixed MRTK console errors projects were imported in latest versions of Unity 2021.2 [#10182](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/10182)
 - Fixed dropdown bug for right hand [#10304](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/10304)
 - Added missing documentation on how to change cursors [#4934](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/4934)
-- Improved Instructions on the MRTK unitypackage release page to make them more clear [#9575](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9575)
+- Improved Instructions on the MRTK Unity package release page to make them more clear [#9575](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9575)
 - Fixed issue where *MicStream* selection demo scene did not process voice (UPM package) [#9908](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9908)
 - Fixed issue where samples could not be individually imported in MRTK Examples package [#10216](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/10216)
 - Added *BoundsControl* missing documentation for some properties [#10346](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/10346)
