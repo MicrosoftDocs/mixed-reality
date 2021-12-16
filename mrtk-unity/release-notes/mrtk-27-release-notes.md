@@ -17,6 +17,7 @@ monikerRange: '>= mrtkunity-2021-05'
 
 The MRTK team would like to extend a warm thanks to you, the MRTK community. Your contributions, feedback, and votes have helped MRTK win the [2021 Auggie Award for Best Developer Tool](https://www.awexr.com/usa-2021/auggie-winners)! Without your support, we would not be where we are today. Whether it's adding new platform support, new features, bug fixes, suggestions, questions, or any of the other numerous ways you might have contributed: Thank you!
 
+We'd also like to thank our dear friend Lachlan Ford for accepting the Auggie Award on our behalf and for making sure that we received the award safe and sound. 
 ![2021 Auggie Awards Best Developer Tool](images/2021AuggieAward.png)
 
 ### Unity 2021 support
