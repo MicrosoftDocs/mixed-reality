@@ -17,8 +17,6 @@ monikerRange: '>= mrtkunity-2021-05'
 
 The MRTK team would like to extend a warm thanks to you, the MRTK community. Your contributions, feedback, and votes have helped MRTK win the [2021 Auggie Award for Best Developer Tool](https://www.awexr.com/usa-2021/auggie-winners)! Without your support, we would not be where we are today. Whether it's adding new platform support, new features, bug fixes, suggestions, questions, or any of the other numerous ways you might have contributed: Thank you!
 
-We'd also like to thank our dear friend Lachlan Ford for accepting the Auggie Award on our behalf. Thank you for being there when we were unable to, and for making sure that we received the award safe and sound. 
-
 ![2021 Auggie Awards Best Developer Tool](images/2021AuggieAward.png)
 
 ### Unity 2021 support
@@ -121,7 +119,14 @@ We've made it easier to build on Unity 2021 with the release of 2.7.3! If you fi
 - Fixed Hand Joint Chaser prefab [#10377](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10377)
 - Fixed deployment errors for Oculus Quest [10374](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10374)
 - Fixed issue with Scene Understanding example scene profile [#10368](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10368)
-
+- Fixed MRTK console errors projects were imported in latest versions of Unity 2021.2 [#10182](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/10182)
+- Fixed dropdown bug for right hand [#10304](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/10304)
+- Added missing documentation on how to change cursors [#4934](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/4934)
+- Improved Instructions on the MRTK unitypackage release page to make them more clear [#9575](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9575)
+- Fixed issue where *MicStream* selection demo scene did not process voice (UPM package) [#9908](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9908)
+- Fixed issue where samples could not be individually imported in MRTK Examples package [#10216](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/10216)
+- Added *BoundsControl* missing documentation for some properties [#10346](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/10346)
+- Fixed a bug where *InteractableOnClickReceiver* could not be added to a game object with an interactable component [#10341](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/10341)
 
 ## What's new in 2.7.2
 
