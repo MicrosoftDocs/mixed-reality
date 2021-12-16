@@ -22,7 +22,7 @@ We'd also like to thank our dear friend Lachlan Ford for accepting the Auggie Aw
 
 ### Unity 2021 support
 
-We've made it easier to build on Unity 2021 with the release of 2.7.3! If you find any issues while using MRTK with Unity 2021, please [file an issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/) on our GitHub repository and add the Unity 2021 tag.
+We've made it easier to build on Unity 2021 with the release of 2.7.3! If you find any issues while using MRTK with Unity 2021, please [file an issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/) on our GitHub repository.
 
 ### Scene Understanding via Remoting support (OpenXR Only)
 
@@ -32,7 +32,6 @@ Scene Understanding is now available during remoting on the HoloLens 2 with Open
 
 - Stopped the creation of a `CustomProfiles` folder unless a profile has been cloned to that folder [#9916](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9916)
 - Removed calls to `.gameObject` on GameObjects [#9939](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9939)
-- Updated the Unity development journey versions in README.md [Update README.md](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/e6014622407dfe97af15eb0094d5175c2f2692e9)
 - Fixed a bug where objects with disabled components could cause pointers to become focus locked [#9945](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9945)
 - Updated deprecated methods and fixed compiler errors for Unity 2021 [#9938](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9938)
 - Fixed `link.xml` for Unity 2021 [#9942](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9942)
@@ -42,7 +41,7 @@ Scene Understanding is now available during remoting on the HoloLens 2 with Open
 - Fixed *BoundsControl* collider issues and inconsistency [#9973](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9973)
 - Fixed the button iconset inspectors [#9999](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9999)
 - Fixed *BoundsControl* scale handle collider alignment [#10007](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10007)
-- Fixed SDF font texture cateforizing [#10006](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10006)
+- Fixed SDF font texture categorizing [#10006](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10006)
 - Fixed *BoundsControl* auto-flatten and scale handle orientation [#10013](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10013)
 - Added feedback for *BoundsControl* flattening fix [#10016](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10016)
 - Fixed strange deformations with hand mesh during animation playback [#10024](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10024)
@@ -53,7 +52,7 @@ Scene Understanding is now available during remoting on the HoloLens 2 with Open
 - Added `ClearProgressBar` call to fix Build Window freeze on Unity 2020 [#10046](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10046)
 - Updated serialization for font assets [#10047](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10047)
 - Fixed hand interaction scene to have proper pinch slider colliders [#10060](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10060)
-- Fixed Surface Magnetism quanterion math [#10074](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10074)
+- Fixed Surface Magnetism quaternion math [#10074](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10074)
 - Improved PV camera version messages [#10077](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10077)
 - Fixed `BoundingBoxHelper.GetRawBoundsCorners` protection level [#10093](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10093)
 - Updated gLTF import logs to be one log instead of multiple [#10090](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10090)
@@ -63,7 +62,7 @@ Scene Understanding is now available during remoting on the HoloLens 2 with Open
 - Fixed apps freezing when receiving data [#10033](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10033)
 - Fixed `EyeTrackingTarget` not triggering OnLookAway when passing from collider with `EyeTrackingTarget` to collider without [#10127](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10127)
 - Changed default pointer extent to make mouse pointer behavior more intuitive [#10075](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10075)
-- Updated summary to clarify when Intialize runs [#10177](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10177)
+- Updated summary to clarify when Initialize runs [#10177](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10177)
 - Fixed a `NullReferenceException` issue in `LinePointer` [#10190](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10190)
 - Fixed *BoundsControl* with non-uniform scale issues [#10133](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10133)
 - Fixed handling of `IOSMinOSVersion` in different cultures [#10178](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10178)
@@ -74,7 +73,6 @@ Scene Understanding is now available during remoting on the HoloLens 2 with Open
 - Fixed`UnityTouchDeviceManager` updating itself when the `IsEnabled` property is false [#10203](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10203)
 - Updated a property name in the button config helper [#10221](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10221)
 - Fixed coordinate space, winding order, and culture formatting in object exporter [#10208](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10208)
-- Fixed some cases of hardcoded paths [#10240](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10240)
 - Added option to move grasp point to fingertip [#10206](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10206)
 - Added support for Leap UnityModules 4.9.1 [#10282](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10282)
 - Backported some minor changes to `ReserializeAssetsUtility.cs` [#10280](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10280)
@@ -85,49 +83,25 @@ Scene Understanding is now available during remoting on the HoloLens 2 with Open
 - Added check to see if anything is hooked into events before determining to fire those events [#10330](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10330)
 - Changed an assortment of minor things [#10316](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10316)
 - Introduced an alternative to .HasFlag [#10319](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10319)
-- Backport of a v3 update to reduce `HandConstraint` solver debug log spam [#10331](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10331)
+- Reduce `HandConstraint` solver debug log spam [#10331](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10331)
 - Fixed log spam that is coming from `HandConstraintPalmUp.cs` [#10326](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10326)
-- Added missing inspector change from #10206 [#10329](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10329)
 - Enabled Scene Understanding for Holographic Remoting via OpenXR [#10338](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10338)
-- Added a parameterless constructor to `InteractableOnClickReceiver` [#10353](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10353)
-- Moved the *FingerChaser* prefav to the Common folder in the Examples package [#10358](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10358)
-- Fixed documentation and removed dead code [Commit: 28c5833](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/28c5833fb9e2ea208a173b311a1409bd89d2dfe7)
-- Added `asmdef` for audio demo and removed mic stream reference from examples `asmdef` [Commit: 6550e3a](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/6550e3ae0ba8879f8792ff1e313b7d40748eddcf)
-- Added new audio demos asmdef to code validation [Commit: d241e0d](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/d241e0d6a4e3108e236e129993e8f0c01562788b)
-- Deprecated obsolete *BoundsControl* code [Commit: 48c9722](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/48c972233e06f0ce8409ef190ad0debad43cea21)
+- Added a parameter-less constructor to InteractableOnClickReceiver [#10353](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10353)
+- Moved the *FingerChaser* prefab to the Common folder in the Examples package [#10358](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10358)
 - Added fallback case for articulated hand select on OpenXR [#10359](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10359)
-- Renamed `OpenXRCameraProfile` [Commit: d4784a7](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/d4784a7e6b9b7202d40a3535a14dcf8066649d92)
-- Updated path to `gLTF asmdef` [Commit: 27dd5fe](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/27dd5feabb4686ff6abd1c5d2b879c265ffdc24b)
 - Fixed a Windows Mic Stream demo UPM import issue [#10362](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10362)
 - Renamed OpenXR profiles [#10363](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10363)
-- Unchecked the Scene system in the profile [Commit: 67d503e](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/67d503ef21e24c6f96adce144cbf05fdfc7c34d0)
-- Updated strings to const and cache type to reduce allocs [Commit: 74b398e](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/74b398ed2fc43fc9299cc697e906b3112589e10a)
-- Updated `InputSystem` to only read texture coordinates when they exist [Commit: e316e74](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/e316e74bea512b6216b7f6250afeedf6b8e00c47)
-- Separated the null case from the `isReadable` case [Commit: 174e1ba](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/174e1ba61dddf2170fb6463d2c05d54c3d1be7ad)
-- Added code comment to `MixedRealityRaycastHit.cs` [Commit: 5827127](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/5827127208d738dc1930c3a54a102a5f97b01d73)
-- Changed `MixedRealityRaycastHit.cs` to only call `sharedMesh` once [Commit: ](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/f70b0e7cecc3e36bb0ea2948e13eeaf7ad671fe7)
-- Fixed the missing world anchor error message in MRTK Examples Hub scene [Commit: d7e7e44](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/d7e7e448183fcedc478f1e2500d8b164ad7b034d)
-- Improved raycast hit log output with Unity 2021 and fixed a crash when using AssetBundle [#10370](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10370)
-- Enabled observers on Windows Standalone for Holographic Remoting [Commit: d9edda3](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/d9edda3cd5dc48f921aab801f09de85bbe9e8cbb)
-- Added missing property to `BaseSpatialMeshObserver.cs` [Commit: 593c52f](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/593c52f5b5a1a0dcf2b8db09ffee3817681dbeb1)
-- Fixed a bug with marking Initialized too early [Commit: 7a44abd](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/7a44abd1afba0ea41a8ce7bff4d04b35597b8553)
-- Removed unused private variable [Commit: 995bc06](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/995bc06de89041b0c8acf89aaf5de1e3dec5d7f7)
-- Fixed a bug in `BaseSpatialObserver.cs` [Commit: 8c7df53](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/8c7df53d6d5db4151ae7fcf94ec2d2337311b363)
-- Added mark not initialized explicitly [Commit: 35ed161](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/35ed1617ccd97ea49dc4cd6d15ff2c4f2ff29020)
-- Updated `XRMeshSubsystem` getter to refresh at runtime instead of just Initialize [Commit: 284754f](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/284754fa28c5972465f0c694b48c50c7b8b90d96)
-- Added a gate on this base observer being the only active observer [Commit: e52a113](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/e52a113450d586538f9e240d3d685f21dad2081b)
+- Improved raycast hit log output with Unity 2021 and fixed a crash when using AssetBundles [#10370](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10370)
 - Updated strings to const and cache type to reduce allocs [#10369](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10369)
 - Fixed XRSDK based mesh observers when using app-based Holographic Remoting [#10366](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10366)
 - Integrated Oculus Visualization [#10067](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10067)
-- Added last few remaining inheritdocs/doccomments [Commit: 054ea03](https://github.com/microsoft/MixedRealityToolkit-Unity/commit/054ea0315b7d5bcfbe1d01afeb48b6356ca5e5dc)
 - Added documentation for *BoundsControl* properties [#10361](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10361)
 - Fixed Hand Joint Chaser prefab [#10377](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10377)
 - Fixed deployment errors for Oculus Quest [10374](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10374)
 - Fixed issue with Scene Understanding example scene profile [#10368](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10368)
-- Fixed MRTK console errors projects were imported in latest versions of Unity 2021.2 [#10182](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/10182)
-- Fixed dropdown bug for right hand [#10304](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/10304)
+- Fixed MRTK console errors when imported in latest versions of Unity 2021.2 [#10182](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/10182)
 - Added missing documentation on how to change cursors [#4934](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/4934)
-- Improved Instructions on the MRTK Unity package release page to make them more clear [#9575](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9575)
+- Improved instructions on the MRTK Unity package release page to make them more clear [#9575](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9575)
 - Fixed issue where *MicStream* selection demo scene did not process voice (UPM package) [#9908](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9908)
 - Fixed issue where samples could not be individually imported in MRTK Examples package [#10216](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/10216)
 - Added *BoundsControl* missing documentation for some properties [#10346](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/10346)
@@ -138,7 +112,6 @@ Scene Understanding is now available during remoting on the HoloLens 2 with Open
 ### Fixed a UPM package dependency issue
 
 There has been an issue with MRTK 2.7.1 UPM packages where the dependencies aren't set up correctly. The issue causes the Mixed Reality Feature Tool to fail to import MRTK 2.7.1 packages properly. The issue is now resolved in 2.7.2. There is no code change in this version compared to 2.7.1.
-
 
 ## What's new in 2.7.1
 
