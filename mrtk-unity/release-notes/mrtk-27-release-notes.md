@@ -24,6 +24,10 @@ We'd also like to thank our dear friend Lachlan Ford for accepting the Auggie Aw
 
 We've made it easier to build on Unity 2021 with the release of 2.7.3! If you find any issues while using MRTK with Unity 2021, please [file an issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/) on our GitHub repository and add the Unity 2021 tag.
 
+### Scene Understanding via Remoting support (OpenXR Only)
+
+Scene Understanding is now available during remoting on the HoloLens 2 with OpenXR platform.
+
 ### MRTK 2.7.3 Bugfixes and Changes
 
 - Stopped the creation of a `CustomProfiles` folder unless a profile has been cloned to that folder [#9916](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9916)
