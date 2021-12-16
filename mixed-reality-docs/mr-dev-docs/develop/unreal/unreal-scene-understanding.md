@@ -1,7 +1,7 @@
 ---
 title: Scene Understanding in Unreal
 description: Learn how to use scene understanding in Unreal mixed reality applications for HoloLens devices.
-author: jacksonf
+author: fieldsJacksonG
 ms.author: jacksonf
 ms.date: 12/15/2021
 ms.topic: article
