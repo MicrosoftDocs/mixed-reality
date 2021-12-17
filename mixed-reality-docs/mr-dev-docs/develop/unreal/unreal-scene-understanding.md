@@ -50,7 +50,7 @@ You can modify the following parameters to update the spatial mapping runtime be
 
 - Open **Edit > Project Settings**, scroll down to the **Platforms** section, and select **HoloLens > Spatial Mapping**: 
 
-![Spatial Anchors Project Settings](images/unreal-spatialmapping-projectsettings.PNG)
+![Scene Understanding Project Settings](images/unreal-spatialmapping-projectsettings.PNG)
 
 - **Spatial Meshing Volume Size** is the diameter of a sphere around the player to render and update scene understanding data.
     + If the application runtime environment is expected to be large, this value may need to be large to match the real-world space. The value can be smaller if the application only needs to place holograms on surfaces immediately around the user. As the user walks around the world, the spatial mapping volume will move with them.
@@ -83,22 +83,22 @@ In this example, we check the **CanDetectPlanes** function to check if we should
 To get access to the **MRMesh** at runtime:
 1. Add an **ARTrackableNotify** Component to a Blueprint actor. 
 
-![Spatial Anchors AR Trackable Notify](images/unreal-spatialmapping-artrackablenotify.PNG)
+![Scene understanding AR Trackable Notify](images/unreal-spatialmapping-artrackablenotify.PNG)
 
 2. Select the **ARTrackableNotify** component and expand the **Events** section in the **Details** panel. 
     - Select the **+** button on the events you want to monitor. 
 
-![Spatial Anchors Events](images/unreal-spatialmapping-events.PNG)
+![Scene understanding Events](images/unreal-spatialmapping-events.PNG)
 
 You can find the full list of events in the [UARTrackableNotify](https://docs.unrealengine.com/4.27/API/Runtime/AugmentedReality/UARTrackableNotifyComponent/index.html) component API.
 
 In this example as MRMeshes are identified, their object classification is queried and a different material is set based on what type of surface it is.
 
-![Spatial Anchors AR Trackable Notify](images/unreal-sceneunderstanding-setmaterial.png)
+![Scene understanding add tracked geometry](images/unreal-sceneunderstanding-setmaterial.png)
 
 To perform collision tests against scene understanding meshes, LineTraceTrackedObjects3D can be used:
 
-![Spatial Anchors AR Trackable Notify](images/unreal-sceneunderstanding-linetrace.png)
+![Scene understanding line trace collision detection](images/unreal-sceneunderstanding-linetrace.png)
 
 Disable **Test Plane Extents** to perform hit tests against only scene understanding meshes, otherwise both meshes and planes will be used.  Planes do not always cover real-world geometry so they could cause a false collision if used.  For example, open doorways will be covered by the plane from the wall around it.  
 
