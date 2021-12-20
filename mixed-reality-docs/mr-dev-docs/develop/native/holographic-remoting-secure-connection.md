@@ -15,10 +15,10 @@ If you're new to Holographic Remoting, you may want to [read our overview](holog
 > [!NOTE]
 > This guidance is specific to Holographic Remoting on HoloLens 2 and Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md).
 
-This page gives you an overview of network security for Holographic Remoting. You'll find information about
+This page gives you an overview of network security for Holographic Remoting. You'll find information about:
 
-* security in the context of Holographic Remoting and why you might need it
-* recommended measures based on different use cases
+* Security in the context of Holographic Remoting and why you might need it
+* Recommended measures based on different use cases
 
 ## Holographic Remoting security
 

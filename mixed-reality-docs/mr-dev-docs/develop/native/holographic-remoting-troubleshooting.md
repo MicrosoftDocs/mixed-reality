@@ -25,7 +25,7 @@ The Holographic Remoting Player supports a diagnostics overlay, which can be ena
 
 ## H265 video codec not available
 
-Install the [HEVC Video Extensions](https://www.microsoft.com/p/hevc-video-extensions/9nmzlz57r3t7) when using H265 video codec in your remote app. If you run into issues where the codec is installed but can't be used, check out [troubleshooting](/azure/remote-rendering/resources/troubleshoot#h265-codec-not-available) guide.
+Install the [HEVC Video Extensions](https://www.microsoft.com/p/hevc-video-extensions/9nmzlz57r3t7) when you want to use the H265 video codec in your remote app. If you run into issues where the codec is installed but can't be used, check out [troubleshooting](/azure/remote-rendering/resources/troubleshoot#h265-codec-not-available) guide.
 
 ## Limitations
 

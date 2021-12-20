@@ -26,11 +26,12 @@ Follow your app's instructions to connect to the Holographic Remoting Player. Yo
 
 Whenever you see the main screen, you'll know that you don't have an app connected.
 
-The holographic remoting connection is **not encrypted**. You should always use Holographic Remoting over a secure Wi-Fi connection that you trust.
+The holographic remoting connection is **not encrypted**. Always use Holographic Remoting over a secure Wi-Fi connection that you trust.
 
 ## Quality and Performance
 
 The quality and performance of your experience will vary based on three factors:
+
 * **The holographic experience you're running** - Apps that render high-resolution or highly detailed content may require a faster PC or faster wireless connection.
 * **Your PC's hardware** - Your PC needs to be able to run and encode your holographic experience at 60 frames per second. For a graphics card, we generally recommend a GeForce GTX 970 or AMD Radeon R9 290 or better. Again, your particular experience may require a higher or lower-end card.
 * **Your Wi-Fi connection** - Your holographic experience is streamed over Wi-Fi. Use a fast network with low congestion to maximize quality. Using a PC that is connected over an Ethernet cable, rather than Wi-Fi, may also improve quality.
@@ -40,7 +41,7 @@ The quality and performance of your experience will vary based on three factors:
 To measure the quality of your connection, say **"enable diagnostics"** while on the main screen of the Holographic Remoting Player. When diagnostics are enabled, on **HoloLens (first gen)** the app will show you:
 
 * **FPS** - The average number of rendered frames the Remoting player is receiving and rendering per second. The ideal is 60 FPS.
-* **Latency** - The average amount of time it takes for a frame to go from your PC to the HoloLens. The lower the better. This is largely dependent on your Wi-Fi network.
+* **Latency** - The average amount of time it takes for a frame to go from your PC to the HoloLens. The lower the better. The latency is largely dependent on your Wi-Fi network.
 
 On **HoloLens 2** the app will show you:
 
@@ -49,9 +50,9 @@ On **HoloLens 2** the app will show you:
 * **Render** - The number of frames the Remoting player rendered during the last second. Note, this is independent from the number of frames, which arrived via the network (see **Video frames**). The average/maximum render delta time in milliseconds over the last second between rendered frames is displayed.
 
 * **Video frames** - The first number displayed is skipped video frames, the second is reused video frames, and the third is received video frames. All numbers represent the count over the last second.
-    * ```Received frames``` is the number of video frames, which arrived over the last second. Under normal conditions this should be 60 but if it's not this is an indicator that either frames are dropped because of network issues or the remote/remote side doesn't produce frames with the expected rate.
-    * ```Reused frames``` is the count of video frames used more than once over the last second. For instance, if video frames arrive late, the rendering loop of the player still renders a frame but needs to *reuse* the video frame it already used for the previous frame.
-    * ```Skipped frames``` is the count of video frames, which haven't been used by the rendering loop of the player. For instance, network jitter can have the effect that video frames arriving aren't evenly distributed anymore. For example, if some are late and others arrive in time with the result that they do not have a delta of 16.66 milliseconds anymore when running on 60 Hz. It can occur that more than one frame arrives between two ticks of the render loop of the player. In this case, the player *skips* one or more frames as it's supposed to always display the most recent received video frame.
+* ```Received frames``` is the number of video frames, which arrived over the last second. Under normal conditions, this should be 60 but if it's not this is an indicator that either frames are dropped because of network issues or the remote/remote side doesn't produce frames with the expected rate.
+* ```Reused frames``` is the count of video frames used more than once over the last second. For instance, if video frames arrive late, the rendering loop of the player still renders a frame but needs to *reuse* the video frame it already used for the previous frame.
+* ```Skipped frames``` is the count of video frames, which haven't been used by the rendering loop of the player. For instance, network jitter can have the effect that video frames arriving aren't evenly distributed anymore. For example, if some are late and others arrive in time with the result that they do not have a delta of 16.66 milliseconds anymore when running on 60 Hz. It can occur that more than one frame arrives between two ticks of the render loop of the player. In this case, the player *skips* one or more frames as it's supposed to always display the most recent received video frame.
 
 > [!NOTE]
 > When facing network jitter, skipped and reused frames are usually about the same. In contrast, if you only see skipped frames, this is an indicator that the player does not hit its target frame rate. In this case, you should keep an eye on the maximum render delta time when diagnosing issues.

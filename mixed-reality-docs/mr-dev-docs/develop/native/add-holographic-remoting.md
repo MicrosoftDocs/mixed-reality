@@ -17,7 +17,7 @@ If you're new to Holographic Remoting, you may want to [read our overview](holog
 
 ## HoloLens 2
 
-HoloLens developers using Holographic Remoting will need to update their apps to make them compatible with HoloLens 2. This requires a new version of the Holographic Remoting NuGet package. Be sure to use version 2.0.0.0 or above of the Holographic Remoting NuGet package when connecting to the Holographic Remoting Player on HoloLens 2 or the connection will fail.
+HoloLens developers using Holographic Remoting will need to update their apps to make them compatible with HoloLens 2. This requires a new version of the Holographic Remoting NuGet package. Be sure to use version 2.0.0.0 or above of the Holographic Remoting NuGet package when connecting to the Holographic Remoting Player on HoloLens 2. Otherwise the connection will fail.
 
 >[!NOTE]
 > Guidance specific to HoloLens 2 can be found [here](holographic-remoting-create-remote-wmr.md).
@@ -39,8 +39,8 @@ Follow these steps to get the NuGet package for holographic remoting, and add a 
 
 1. Go to your project in Visual Studio.
 2. Right-click on the project node and select **Manage NuGet Packages...**
-3. In the panel that appears, selecct **Browse** and then search for "Holographic Remoting".
-4. Select **Microsoft.Holographic.Remoting** and selecct **Install**.
+3. In the panel that appears, select **Browse** and then search for "Holographic Remoting".
+4. Select **Microsoft.Holographic.Remoting** and select **Install**.
 5. If the **Preview** dialog appears, select **OK**.
 6. Select **I Accept** when the license agreement dialog appears.
 

@@ -1,5 +1,5 @@
 ---
-title: Writing a Holographic Remoting remote app uing the OpenXR API
+title: Writing a Holographic Remoting remote app using the OpenXR API
 description: Learn how to stream remote content rendered on a remote machine to HoloLens 2 with Holographic Remoting apps with OpenXR. 
 author: florianbagarmicrosoft
 ms.author: v-vtieto
@@ -76,7 +76,7 @@ The first actions a typical OpenXR app should take are select OpenXR extensions 
 
 ## Connect to the device
 
-After your remote app has created the XrInstance and queried the XrSystemId via xrGetSystem a connection to the player device can be established.
+After your remote app has created the XrInstance and queried the XrSystemId via xrGetSystem, a connection to the player device can be established.
 
 > [!WARNING]
 > The Holographic Remoting OpenXR runtime is only able to provide device specific data such as view configurations or environment blend modes after a connection has been established. ```xrEnumerateViewConfigurations```, ```xrEnumerateViewConfigurationViews```, ```xrGetViewConfigurationProperties```, ```xrEnumerateEnvironmentBlendModes```, and ```xrGetSystemProperties``` will give you default values, matching what you would typically get if you connect to a player running on a HoloLens 2, before being fully connected.
@@ -136,7 +136,7 @@ Available connection states are:
 > [!IMPORTANT]
 > ```xrRemotingConnectMSFT``` or ```xrRemotingListenMSFT``` must be called before trying to create a XrSession via xrCreateSession. If you try to create a XrSession while the connection state is ```XR_REMOTING_CONNECTION_STATE_DISCONNECTED_MSFT``` the session creation will succeed but the session state will immediately transition to XR_SESSION_STATE_LOSS_PENDING.
 
-Holographic Remoting's implementation of ```xrCreateSession``` supports waiting for a connection to be established. You can call ```xrRemotingConnectMSFT``` or ```xrRemotingListenMSFT``` immediately followed by a call to, which will block and wait for a connection to be established. The timeout is fixed to 10 seconds. If a connection can be established within this time the XrSession creation will succeed and the session state will transition to XR_SESSION_STATE_READY. In case no connection can be established the session creation also succeeds but immediately transitions to XR_SESSION_STATE_LOSS_PENDING.
+Holographic Remoting's implementation of ```xrCreateSession``` supports waiting for a connection to be established. You can call ```xrRemotingConnectMSFT``` or ```xrRemotingListenMSFT``` immediately followed by a call to, which will block and wait for a connection to be established. The timeout is fixed to 10 seconds. If a connection can be established within this time, the XrSession creation will succeed and the session state will transition to XR_SESSION_STATE_READY. In case no connection can be established the session creation also succeeds but immediately transitions to XR_SESSION_STATE_LOSS_PENDING.
 
 In general, the connection state is couple with the XrSession state. Any change to the connection state also affects the session state. For instance, if the connection state switches from `XR_REMOTING_CONNECTION_STATE_CONNECTED_MSFT` to ```XR_REMOTING_CONNECTION_STATE_DISCONNECTED_MSFT``` the session state will transition to XR_SESSION_STATE_LOSS_PENDING as well.
 

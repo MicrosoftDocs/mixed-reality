@@ -52,12 +52,12 @@ keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reali
 
 ## Version 2.5.0 (February 12, 2021) <a name="v2.5.0"></a>
 * Holographic Remoting using the [OpenXR API](../native/openxr.md) now supports:
-  * XR_MSFT_spatial_anchor extension. This extension allows an application to create spatial anchors, which are arbitrary freespace points in the user’s physical environment that will be tracked by the runtime.
+  * XR_MSFT_spatial_anchor extension. This extension allows an application to create spatial anchors, which are arbitrary free space points in the user’s physical environment that will be tracked by the runtime.
   * XR_MSFT_controller_model extension. This extension provides a mechanism to load GLTF models for controllers.
   * Custom data channels as part of the XR_MSFT_holographic_remoting extension. An example for that is shown in the [OpenXR remote sample](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
 * Improved synchronization between player and remote side. This allows dynamically changing pose and frame buffering, which ensures that remote-rendered content smoothly reaches the displays at the expected target frame rate.
 * Improved performance of the Holographic Remoting player available via the Microsoft Store. On HoloLens 2, the player now consistently runs at 60 frames per second.
-* Optimized transmission of spatial surface meshes which can be queried via [SpatialSurfaceObserver](/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) by a remote app.
+* Optimized transmission of spatial surface meshes, which can be queried via [SpatialSurfaceObserver](/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) by a remote app.
 * Fixed an issue in which calling SpatialAnchorManager methods or releasing anchors caused exceptions on disconnect.
 * Fixed threading issue leading to crashes when closing PlayerContext or RemoteContext instances.
 * Holographic Remoting Player on Desktop: Display an error message when Windows Mixed Reality is not installed instead of closing silently.
@@ -120,7 +120,7 @@ lease updated to at least version 2.2.1.
 
 ## Version 2.1.1 (March 20, 2020) <a name="v2.1.1"></a>
 
-* Fixed video encoding issue with remote apps when using AMD GPUs.
+* Fixed video-encoding issue with remote apps when using AMD GPUs.
 * Holographic Remoting Player performance improvements.
 
 ## Version 2.1.0 (March 11, 2020) <a name="v2.1.0"></a>
@@ -141,7 +141,7 @@ lease updated to at least version 2.2.1.
 ## Version 2.0.16 (November 11, 2019) <a name="2.0.16"></a>
 
 * Fixed deadlock in QR code tracking.
-* Fixed unhandeled exception because of a blocking wait in main thread.
+* Fixed unhandled exception because of a blocking wait in main thread.
 
 ## Version 2.0.14 (October 26, 2019) <a name="v2.0.14"></a>
 

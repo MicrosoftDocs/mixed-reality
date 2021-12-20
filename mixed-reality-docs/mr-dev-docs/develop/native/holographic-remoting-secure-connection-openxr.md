@@ -1,7 +1,7 @@
 ---
 title: Secure Connection with Holographic Remoting and the OpenXR API
 description: This page explains how to configure Holographic Remoting to use encrypted and authenticated connections between player and remote apps with the OpenXR API.
-author: vimusch
+author: vimusc
 ms.author: vimusch
 ms.date: 12/15/2021
 ms.topic: article
@@ -19,7 +19,7 @@ Remember that you need to implement custom remote and player apps if you want to
 * A certificate provider and an authentication validator if the app runs as the server.
 * An authentication provider and a certificate validator if the app runs as the client.
 
-The OpenXR API is similar to the Windows Mixed Reality API described in [Secure Connection with Holographic Remoting and the Windows Mixed Reality API](holographic-remoting-secure-connection-wmr.md).
+The OpenXR API is similar to the Windows Mixed Reality API described [here](holographic-remoting-secure-connection-wmr.md).
 However, instead of implementing interfaces, the key elements for secure connection using the `XR_MSFT_holographic_remoting` OpenXR extension are the following callbacks:
 
 * `xrRemotingRequestAuthenticationTokenCallbackMSFT`, generates, or retrieves the authentication token to be sent.
@@ -28,10 +28,10 @@ However, instead of implementing interfaces, the key elements for secure connect
 * `xrRemotingRequestServerCertificateCallbackMSFT`, supply the server application with the certificate to use.
 
 > [!NOTE]
-> With Holographic Remoting it is possible that either the Player or the Remote is the server depending on your needs (see [Holographic Remoting Terminology](holographic-remoting-terminology.md) for more information). If your custom remote or custom player application can run as client and server the app has to provide all four callbacks.
+> With Holographic Remoting it is possible that either the Player or the Remote is the server depending on your needs (For more information, see [Holographic Remoting Terminology](holographic-remoting-terminology.md)). If your custom remote or custom player application can run as client and server the app has to provide all four callbacks.
 
 The callbacks can be provided to the remoting OpenXR runtime via `xrRemotingSetSecureConnectionClientCallbacksMSFT` and `xrRemotingSetSecureConnectionServerCallbacksMSFT`.
-In order to do so you can create static functions for the callbacks:
+In order to do so, you can create static functions for the callbacks:
 
 ```cpp
 class SecureConnectionCallbacks {
@@ -77,7 +77,7 @@ public:
 }
 ```
 
-The static callback functions all look similar and in the example above they just call a function on the context object which is set in `xrRemotingSetSecureConnectionClientCallbacksMSFT` or `xrRemotingSetSecureConnectionServerCallbacksMSFT`. The actual implementation of the callbacks is then done inside the member functions of the context object:
+The static callback functions all look similar and in the example above they just call a function on the context object, which is set in `xrRemotingSetSecureConnectionClientCallbacksMSFT` or `xrRemotingSetSecureConnectionServerCallbacksMSFT`. The actual implementation of the callbacks is then done inside the member functions of the context object:
 
 ```cpp
 class SecureConnectionCallbacks {   
