@@ -113,7 +113,7 @@ SecureConnectionCallbacks callbackObject;
 
 if (client) 
 {
-    XrRemotingSecureConnectionClientCallbacksMSFT clientCallbacks;
+    XrRemotingSecureConnectionClientCallbacksMSFT clientCallbacks{static_cast<XrStructureType>(XR_TYPE_REMOTING_SECURE_CONNECTION_CLIENT_CALLBACKS_MSFT);
     clientCallbacks.context = &callbackObject;
     clientCallbacks.requestAuthenticationTokenCallback = SecureConnectionCallbacks::RequestAuthenticationTokenStaticCallback;
     clientCallbacks.validateServerCertificateCallback = SecureConnectionCallbacks::ValidateServerCertificateStaticCallback;
@@ -128,7 +128,7 @@ if (client)
 
 if (server) 
 {
-    XrRemotingSecureConnectionServerCallbacksMSFT serverCallbacks;
+    XrRemotingSecureConnectionServerCallbacksMSFT serverCallbacks{static_cast<XrStructureType>(XR_TYPE_REMOTING_SECURE_CONNECTION_SERVER_CALLBACKS_MSFT);
     serverCallbacks.context = &callbackObject;
     serverCallbacks.requestServerCertificateCallback = SecureConnectionCallbacks::RequestServerCertificateStaticCallback;
     serverCallbacks.validateAuthenticationTokenCallback = SecureConnectionCallbacks::ValidateAuthenticationTokenStaticCallback;
