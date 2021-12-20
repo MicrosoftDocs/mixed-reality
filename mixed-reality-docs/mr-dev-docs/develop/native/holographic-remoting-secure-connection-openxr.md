@@ -147,4 +147,4 @@ if (server)
 
 ## See Also
 
-*[Secure Connection with Holographic Remoting Overview](holographic-remoting-secure-connection.md)
+* [Secure Connection with Holographic Remoting Overview](holographic-remoting-secure-connection.md)

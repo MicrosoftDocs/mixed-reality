@@ -8,7 +8,7 @@ ms.topic: article
 keywords: Windows Mixed Reality, holograms, holographic remoting, remote rendering, network rendering, HoloLens, remote holograms, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
-# Add Holographic Remoting (HoloLens (first gen))
+# Add Holographic Remoting (HoloLens 1st gen)
 
 If you're new to Holographic Remoting, you may want to [read our overview](holographic-remoting-overview.md).
 

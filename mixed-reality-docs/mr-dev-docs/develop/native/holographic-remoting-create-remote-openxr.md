@@ -8,7 +8,7 @@ ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windows mixed reality headset, virtual reality headset, NuGet
 ---
 
-# Writing a Holographic Remoting remote app using the OpenXR API
+# Writing a Holographic Remoting Remote app using the OpenXR API
 
 If you're new to Holographic Remoting, you may want to [read our overview](holographic-remoting-overview.md).
 

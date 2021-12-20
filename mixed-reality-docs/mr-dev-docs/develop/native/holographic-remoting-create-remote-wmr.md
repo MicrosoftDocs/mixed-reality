@@ -8,7 +8,7 @@ ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windows mixed reality headset, virtual reality headset, NuGet
 ---
 
-# Writing a Holographic Remoting remote app using the HolographicSpace API
+# Writing a Holographic Remoting Remote app using the HolographicSpace API
 
 If you're new to Holographic Remoting, you may want to [read our overview](holographic-remoting-overview.md).
 
@@ -185,7 +185,7 @@ auto connectionState = m_remoteContext.ConnectionState();
 
 Using the remote speech interface it's possible to register speech triggers with HoloLens 2 and have them remoted to the remote application.
 
-This additional member is required to track the state of the remote speech.
+The following extra member is required to track the state of the remote speech:
 
 ```cpp
 winrt::Microsoft::Holographic::AppRemoting::IRemoteSpeech::OnRecognizedSpeech_revoker m_onRecognizedSpeechRevoker;
