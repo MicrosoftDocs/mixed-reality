@@ -907,7 +907,7 @@
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/exporting-and-building-a-unity-visual-studio-solution.md",
 			"redirect_url": "/windows/mixed-reality/develop/unity/exporting-and-building-a-unity-visual-studio-solution",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/focus-point-in-unity.md",
