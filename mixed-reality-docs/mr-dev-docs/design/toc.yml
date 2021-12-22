@@ -42,7 +42,7 @@
         href: voice-input.md
   - name: Eye-based interactions
     items:  
-    - name: Eye tracking
+    - name: Eye tracking overview
       href: eye-tracking.md
     - name: Eye-gaze-based interaction
       href: eye-gaze-interaction.md        
