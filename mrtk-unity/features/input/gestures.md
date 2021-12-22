@@ -37,6 +37,11 @@ When implementing the generic version, the *OnGestureCompleted* and *OnGestureUp
 - `Vector3` - 3D position gesture. Produced by HoloLens to inform of:
   - [`cumulativeDelta`](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.ManipulationUpdatedEventArgs-cumulativeDelta.html) of a manipulation event
   - [`normalizedOffset`](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.NavigationUpdatedEventArgs-normalizedOffset.html) of a navigation event
+
+<!---
+  the above two links are not found.
+-->
+
 - `Quaternion` - 3D rotation gesture. Available to custom input sources but not currently produced by any of the existing ones.
 - `MixedRealityPose` - Combined 3D position/rotation gesture. Available to custom input sources but not currently produced by any of the existing ones.
 
