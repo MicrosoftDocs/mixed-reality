@@ -1,6 +1,6 @@
 ---
 title: FrozenWorldEngine
-description: Low level information about the Frozen World Engine.
+description: Low-level information about the Frozen World Engine.
 author: fast-slow-still
 ms.author: mafinc
 ms.date: 10/06/2021
@@ -205,7 +205,7 @@ Alignment is based on the previously initialized SPONGY snapshot and the previou
 
 After this function has run, the FROZEN snapshot can be inspected to find the updated head (i.e. camera) transform (or the alignment transform of the most recently used spongy coordinate frame relative to the frozen coordinate frame) or to visualize frozen anchors and edges.
 
-In addition, after running this function all alignment metrics are also updated and can be queried to find out if a fragment merge or refreeze is indicated (based on configurable thresholds).
+In addition, after running this function all alignment metrics are also updated and can be queried to find out if a fragment merge or re-freeze is indicated (based on configurable thresholds).
 
 See [Accessing snapshots](#accessing-snapshots) and [Querying metrics](#querying-metrics) below.
 
@@ -268,7 +268,7 @@ void FrozenWorld_SetSupports(
 Anchor and edge data is organized in different snapshots. Each snapshot contains (at least) any number of anchors along with their poses, fragment associations, and connecting edges. In addition, the SPONGY and FROZEN snapshots contain information about the current head pose and most significant anchor.
 
   * The SPONGY snapshot must be populated (by you) frame-to-frame with input data to be used for [alignment](#alignment-frame-to-frame).
-  * The FROZEN snapshot is maintained and kept up to date as a matter of course during alignment and will also be updated when the results of a [refit operation](#understanding-refit-operations-fragment-merge-and-refreeze) are applied.
+  * The FROZEN snapshot is maintained and kept up to date as a matter of course during alignment and will also be updated when the results of a [refit operation](#understanding-refit-operations-fragment-merge-and-re-freeze) are applied.
 
 Use these enum constants to indicate which snapshot's information you want to access:
 
@@ -473,16 +473,16 @@ int FrozenWorld_GuessMissingEdges(  // -> number of elements copied to the buffe
 
 Identifies edges that are missing in the given snapshot to guarantee that all anchors in every fragment are fully connected through edges.
 
-The 'guessing' aspect of this function that's suggested by the function name is that while an edge between two anchors should signify that there's traversable free space between these two anchors, this function (obviously) can't know that and therefore makes a guess based on the geometric proximity of anchors. The result of this is a graph that more or less represents the path a user might have taken while creating these anchors.
+The 'guessing' aspect of this function that's suggested by the function name is that while an edge between two anchors should signify that there's traversable-free space between these two anchors, this function (obviously) can't know that and therefore makes a guess based on the geometric proximity of anchors. The result of this is a graph that more or less represents the path a user might have taken while creating these anchors.
 
-This function attempts (on a best-effort basis) to avoid very short edges between anchors that are very close to each other. Since the 'edge deviation' metric used internally to identify fractures in the graph (which are caused by SPONGY anchor relations deviating too much from FROZEN anchor relations) is relative to edge length, a very short edge will exhibit a huge 'edge deviation' metric (and cause undesired fracturing or refreeze) if its two anchors change their relation even just a little bit. For this reason, this function will suggest a detour over a slightly more distant anchor to avoid a very short edge as long as full graph connectivity can still be guaranteed.
+This function attempts (on a best-effort basis) to avoid very short edges between anchors that are very close to each other. Since the 'edge deviation' metric used internally to identify fractures in the graph (which are caused by SPONGY anchor relations deviating too much from FROZEN anchor relations) is relative to edge length, a very short edge will exhibit a huge 'edge deviation' metric (and cause undesired fracturing or re-freeze) if its two anchors change their relation even just a little bit. For this reason, this function will suggest a detour over a slightly more distant anchor to avoid a very short edge as long as full graph connectivity can still be guaranteed.
 
 If the return value of this function indicates that the entire `guessedEdgesOut` buffer was filled with data, there may be more missing edges than can be returned given the buffer size specified by `guessedEdgesBufferSize`. In this case, you can add the guessed edges to the snapshot using the `FrozenWorld_AddEdges()` function and call `FrozenWorld_GuessMissingEdges()` again to identify more missing edges.
 
 
 ### Inspecting metrics and indicators
 
-Query Frozen World alignment metrics to get a standardized high-level view on the current alignment quality. Metrics include indicator flags you can use to determine if a fragment merge is currently possible or if a refreeze is indicated (based on thresholds you configured in your Frozen World alignment and metric configuration settings).
+Query Frozen World alignment metrics to get a standardized high-level view on the current alignment quality. Metrics include indicator flags you can use to determine if a fragment merge is currently possible or if a re-freeze is indicated (based on thresholds you configured in your Frozen World alignment and metric configuration settings).
 
 Visual deviation, which is caused by trade-offs made while aligning the Frozen World to the SPONGY snapshot, is measured by these metrics:
 
@@ -528,11 +528,11 @@ void FrozenWorld_GetMetrics(
 Metrics are calculated for the support points in the SPONGY snapshot, so if you use `FrozenWorld_Step_GatherSupports()` instead of your own code to gather supports, metrics are affected by these alignment configuration settings (see [Configuring Frozen World alignment](#configuring-frozen-world-alignment) above):
 
   * The relevanceDropoffRadius setting controls the maximum distance of a support point from the head.
-  * The edgeDeviationThreshold setting may cause some supports to be ignored for visual alignment, which is a refreeze indicator in and of itself and also excludes the ignored supports from all visual deviation metrics.
+  * The edgeDeviationThreshold setting may cause some supports to be ignored for visual alignment, which is a re-freeze indicator in and of itself and also excludes the ignored supports from all visual deviation metrics.
 
 Some metrics are also affected by metrics configuration settings (see [Configuring metrics](#configuring-metrics) below):
 
-  * The refitRefreezeIndicated flag is controlled by the refreeze… thresholds.
+  * The refitRefreezeIndicated flag is controlled by the `refreeze…` thresholds.
   * The angular deviation metrics (maxAngularDeviation and …InFrustum) are limited by the angularDeviationNearDistance setting.
   * The max…DeviationInFrustum metrics are controlled by the frustum… settings.
 
@@ -566,24 +566,24 @@ void FrozenWorld_SetMetricsConfig(
     FrozenWorld_MetricsConfig* config);
 ```
 
-## Understanding refit operations (fragment merge and refreeze)
+## Understanding refit operations (fragment merge and re-freeze)
 
 In general, you can simply work with locations, distances, and scene object transforms in your scene graph as in any big, rigid coordinate system. Allowing you to do this is at the core of what Frozen World wants to provide to you.
 
-However, as the device's tracking doesn't supply an absolute position in the real world, sometimes two parts of the coordinate system that were originally thought to be separate are discovered to be actually connected to each other, necessitating a fragment merge; or tracking errors accumulate to a degree that makes it necessary to rearrange things in the scene graph to improve alignment quality from there on out, necessitating a refreeze.
+However, as the device's tracking doesn't supply an absolute position in the real world, sometimes two parts of the coordinate system that were originally thought to be separate are discovered to be actually connected to each other, necessitating a fragment merge; or tracking errors accumulate to a degree that makes it necessary to rearrange things in the scene graph to improve alignment quality from there on out, necessitating a re-freeze.
 
-These refit operations (i.e. fragment merge and refreeze) occur relatively rarely. Usually, they happen somewhat more frequently as long as the device is still exploring unknown spaces, and they become more infrequent (or even stop happening at all) as the device continues learning about its environment. (In fact, if your device has sufficiently learned about the environment you are using it in, you may never have to deal with refit operations at all.)
+These refit operations (i.e. fragment merge and re-freeze) occur relatively rarely. Usually, they happen somewhat more frequently as long as the device is still exploring unknown spaces, and they become more infrequent (or even stop happening at all) as the device continues learning about its environment. (In fact, if your device has sufficiently learned about the environment you are using it in, you may never have to deal with refit operations at all.)
 
 Refit operations do not happen automatically: You must actively initiate them when they are indicated. This gives you the opportunity to postpone them until your scene is in a state that makes it easier for you to deal with the refit. You can even rate-limit refit operations yourself.
 
 A refit operation becomes indicated (see [Inspecting metrics and indicators](#inspecting-metrics-and-indicators) above) as deviations between the generally immutable Frozen World and the always-changing, always-evolving SPONGY snapshots supplied during alignment become too great. Whatever counts as 'too great' is a subjective and application-dependent quality trade-off you must make based on your particular scenario. (You can use the default configuration and indicators as a starting point.)
 
-As the last step of doing a refit operation, some or all of your scene objects must change their actual transform in the scene coordinate system so they stay visually aligned with the real world. Since you are yourself in control of initiating refit operations, there is no need for this 'scene refit' to be done in realtime on a per-frame budget: Your code can take however much time it needs to get it right.
+As the last step of doing a refit operation, some or all of your scene objects must change their actual transform in the scene coordinate system so they stay visually aligned with the real world. Since you are yourself in control of initiating refit operations, there is no need for this 'scene refit' to be done in real-time on a per-frame budget: Your code can take however much time it needs to get it right.
 
 
 ### Creating and tracking scene object attachment points
 
-Unfortunately, as device tracking errors accumulate, the result can be that things are close to each other (or even overlap) in Frozen World coordinate space that are nowhere near each other in the real world. For that reason, Frozen World coordinates alone aren't sufficient to fullly describe which ways two nearby scene objects should move, respectively, as the result of a refit operation.
+Unfortunately, as device tracking errors accumulate, the result can be that things are close to each other (or even overlap) in Frozen World coordinate space that are nowhere near each other in the real world. For that reason, Frozen World coordinates alone aren't sufficient to fully describe which ways two nearby scene objects should move, respectively, as the result of a refit operation.
 
 __Attachment points__ are small data structures (see [Typedefs, structs, and constants used throughout this page](#typedefs-structs-and-constants-used-throughout-this-documentation) above) that describe the logical attachment of something to a certain part of the Frozen World.
 
@@ -626,7 +626,7 @@ void FrozenWorld_Tracking_Move(
     FrozenWorld_AttachmentPoint* attachmentPointInOut);
 ```
 
-It is not necessary to move a scene object's attachment point every frame during continuous movement: You can wait until it has moved into a distance of at least a half-unit away from where you updated its attachment point before until you need to move the attachment point along with it. However, if you do so, you should, after preparing a refreeze, make sure to do one final update of the attachment point just prior to invoking `FrozenWorld_RefitRefreeze_CalcAdjustment()` to ensure that the calculated adjustment is based on the scene object's latest position.
+It is not necessary to move a scene object's attachment point every frame during continuous movement: You can wait until it has moved into a distance of at least a half-unit away from where you updated its attachment point before until you need to move the attachment point along with it. However, if you do so, you should, after preparing a re-freeze, make sure to do one final update of the attachment point just prior to invoking `FrozenWorld_RefitRefreeze_CalcAdjustment()` to ensure that the calculated adjustment is based on the scene object's latest position.
 
 Note that if you teleport a scene object through the scene (instead of continuously moving it through the scene), you should forget its prior attachment point data and initialize a new one from scratch based on the same considerations as for a newly placed scene object.
 
@@ -660,7 +660,7 @@ void FrozenWorld_RefitMerge_Prepare();
 
 Preparing the fragment merge is done based on information gathered by `FrozenWorld_RefitMerge_Init()` and is independent from ongoing changes to the state of the SPONGY snapshot or the overall Frozen World (including the FROZEN snapshot and Frozen World configuration).
 
-Normally, this step executes quickly, but if guaranteed realtime performance is a concern, it is safe to execute `FrozenWorld_RefitMerge_Prepare()` asynchronously in a background worker thread even across several frames while the SPONGY snapshot continues to evolve and the Frozen World alignment continues to be done. However, you must take care to not initialize another refit operation while this one is being prepared in the background.
+Normally, this step executes quickly, but if guaranteed real-time performance is a concern, it is safe to execute `FrozenWorld_RefitMerge_Prepare()` asynchronously in a background worker thread even across several frames while the SPONGY snapshot continues to evolve and the Frozen World alignment continues to be done. However, you must take care to not initialize another refit operation while this one is being prepared in the background.
 
 
 #### 3. Inspect fragment merge results and refit the scene
@@ -712,28 +712,26 @@ void FrozenWorld_RefitMerge_Apply();
 
 You can only call `FrozenWorld_RefitMerge_Apply()` only once for a fragment merge operation. After `FrozenWorld_RefitMerge_Apply()` has been called, the function calls required to refit your scene's objects (see [3. Inspect fragment merge results and refit the scene](#3-inspect-fragment-merge-results-and-refit-the-scene) above) cannot be called any longer until the next fragment merge has been prepared.
 
+### Initiating and executing a re-freeze
 
-### Initiating and executing a refreeze
+Re-freeze is due when anchor relations in the SPONGY snapshot have become so different from their Frozen World counterparts that the visual trade-offs made to align the Frozen World to the SPONGY snapshot are too significant to simply ignore. There is no clear-cut, objective threshold for this: Whether a re-freeze is advisable depends on the quality trade-offs you are willing to make in your particular scenario. (Built-in Frozen World metrics use configurable thresholds and take only support anchors into consideration for the refitRefreezeIndicated flag.)
 
-Refreeze is due when anchor relations in the SPONGY snapshot have become so different from their Frozen World counterparts that the visual trade-offs made to align the Frozen World to the SPONGY snapshot are too significant to simply ignore. There is no clear-cut, objective threshold for this: Whether a refreeze is advisable depends on the quality trade-offs you are willing to make in your particular scenario. (Built-in Frozen World metrics use configurable thresholds and take only support anchors into consideration for the refitRefreezeIndicated flag.)
+If a re-freeze is executed when there are multiple simultaneously trackable fragments in the SPONGY snapshot, it will implicitly merge all anchors in those fragments into a single fragment during the re-freeze.
 
-If a refreeze is executed when there are multiple simultaneously trackable fragments in the SPONGY snapshot, it will implicitly merge all anchors in those fragments into a single fragment during the refreeze.
-
-#### 1. Initialize the refreeze
+#### 1. Initialize the re-freeze
 
 ```cpp
 // Step 1 of 4:
 bool FrozenWorld_RefitRefreeze_Init();
 ```
 
-The refreeze operation is initialized with the current version of the SPONGY snapshot set up after `FrozenWorld_Step_Init()`. After the refreeze has been initialized, it is safe to change the SPONGY and FROZEN snapshot without affecting the results of the refreeze.
+The re-freeze operation is initialized with the current version of the SPONGY snapshot set up after `FrozenWorld_Step_Init()`. After the re-freeze has been initialized, it is safe to change the SPONGY and FROZEN snapshot without affecting the results of the re-freeze.
 
-`FrozenWorld_RefitRefreeze_Init()` returns true if the necessary preconditions for performing a refreeze are given (i.e. there's more than one trackable anchor represented in the SPONGY snapshot within relevance distance from the head that's graph-connected to the current most significant anchor). If this is not the case, the function returns false, and the refreeze operation is not initialized.
+`FrozenWorld_RefitRefreeze_Init()` returns true if the necessary preconditions for performing a re-freeze are given (i.e. there's more than one trackable anchor represented in the SPONGY snapshot within relevance distance from the head that's graph-connected to the current most significant anchor). If this is not the case, the function returns false, and the re-freeze operation is not initialized.
 
-Initializing a refreeze operation while any other refit operation is running silently cancels the previous refit operation and discards its results. If initializing the refreeze operation is not successful, the other refit operation (if any) remains unaffected.
+Initializing a re-freeze operation while any other refit operation is running silently cancels the previous refit operation and discards its results. If initializing the re-freeze operation is not successful, the other refit operation (if any) remains unaffected.
 
-
-#### 2. Prepare the refreeze
+#### 2. Prepare the re-freeze
 
 ```cpp
 // Step 2 of 4:
@@ -741,14 +739,14 @@ Initializing a refreeze operation while any other refit operation is running sil
 void FrozenWorld_RefitRefreeze_Prepare();
 ```
 
-Preparing the refreeze is done based on information gathered by `FrozenWorld_RefitRefreeze_Init()` and is independent from changes to the ongoing state of the SPONGY snapshot or the overall Frozen World (including the FROZEN snapshot and Frozen World configuration).
+Preparing the re-freeze is done based on information gathered by `FrozenWorld_RefitRefreeze_Init()` and is independent from changes to the ongoing state of the SPONGY snapshot or the overall Frozen World (including the FROZEN snapshot and Frozen World configuration).
 
-Normally, this step executes quickly, but if guaranteed realtime performance is a concern, it is safe to execute `FrozenWorld_RefitRefreeze_Prepare()` asynchronously in a background worker thread even across several frames while the SPONGY snapshot continues to evolve and the Frozen World alignment continues to be done. However, you must take care to not initialize another refit operation while this one is being prepared in the background.
+Normally, this step executes quickly, but if guaranteed real-time performance is a concern, it is safe to execute `FrozenWorld_RefitRefreeze_Prepare()` asynchronously in a background worker thread even across several frames while the SPONGY snapshot continues to evolve and the Frozen World alignment continues to be done. However, you must take care to not initialize another refit operation while this one is being prepared in the background.
 
 
-#### 3. Inspect refreeze results and refit the scene
+#### 3. Inspect re-freeze results and refit the scene
 
-When `FrozenWorld_RefitRefreeze_Prepare()` has finished executing, you must change the transforms of some or all of your scene objects to accommodate the pending refreeze. The scene objects affected by this are identified by the anchorId stored in the attachment point you created and maintained for that scene object (see Creating and tracking scene object attachment points above).
+When `FrozenWorld_RefitRefreeze_Prepare()` has finished executing, you must change the transforms of some or all of your scene objects to accommodate the pending re-freeze. The scene objects affected by this are identified by the anchorId stored in the attachment point you created and maintained for that scene object (see Creating and tracking scene object attachment points above).
 
 ```cpp
 // Step 3.1 of 4:
@@ -781,16 +779,16 @@ All scene objects that are attached to one of the anchors reported by `FrozenWor
 It's possible for an anchor (or fragment) to be reported by `FrozenWorld_RefitRefreeze_GetAdjustedAnchorIds()` or `…_GetAdjustedFragmentIds()` but for `FrozenWorld_RefitRefreeze_CalcAdjustment()` still to return false when it is called with an attachment point attached to that anchor. This can happen when the more in-depth calculations performed by `FrozenWorld_RefitRefreeze_CalcAdjustment()` come to the conclusion that, despite this anchor being within the refrozen area, it doesn't actually require any adjustment. In this case you're free to simply skip any follow-on processing you might otherwise want to do on your side after an adjustment.
 
 
-#### 4. Apply the refreeze results to the Frozen World itself
+#### 4. Apply the re-freeze results to the Frozen World itself
 
-Finally, after you have taken care of adjusting your own scene objects, corresponding adjustments must be applied to the Frozen World itself to finalize the refreeze operation.
+Finally, after you have taken care of adjusting your own scene objects, corresponding adjustments must be applied to the Frozen World itself to finalize the re-freeze operation.
 
 ```cpp
 // Step 4 of 4:
 void FrozenWorld_RefitRefreeze_Apply();
 ```
 
-You can only call `FrozenWorld_RefitRefreeze_Apply()` only once for a refreeze operation. After `FrozenWorld_RefitRefreeze_Apply()` has been called, the function calls required to refit your scene's objects (see [3. Inspect refreeze results and refit the scene](#3-inspect-refreeze-results-and-refit-the-scene) above) cannot be called any longer until the next refreeze has been prepared.
+You can only call `FrozenWorld_RefitRefreeze_Apply()` only once for a re-freeze operation. After `FrozenWorld_RefitRefreeze_Apply()` has been called, the function calls required to refit your scene's objects (see [3. Inspect re-freeze results and refit the scene](#3-inspect-refreeze-results-and-refit-the-scene) above) cannot be called any longer until the next re-freeze has been prepared.
 
 
 ## Persistence
