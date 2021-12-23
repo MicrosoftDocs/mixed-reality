@@ -17,7 +17,7 @@ But the attachment point interface is extremely small. It gives opportunity for 
 
 * Create
 * Release
-* Move 
+* Move
 * Teleport
 
 ### CreateAttachmentPoint
@@ -40,19 +40,19 @@ As an attachment point moves, its owner should notify the system of its new posi
 
 ### TeleportAttachmentPoint
 
-Confusingly, teleporting is more closely related to creation than movement. Rather than thinking of teleport as moving to a new location, it's helpful to think of it as ceasing to exist, and then beginning existence again in a (possibly) new location.
+Confusingly, teleport is more closely related to creation than movement. Rather than thinking of teleport as moving to a new location, it's helpful to think of it as ceasing to exist, and then beginning existence again in a (possibly) new location.
 
 The general rule is, if the object moved continuously from old location to new location, use MoveAttachmentPoint. If it popped into existence in the new location, use TeleportAttachmentPoint.
 
-## Contexts for creation and teleporting
+## Contexts for creation and teleport
 
-Creation and the conceptually similar teleport take an optional (may be null) parameter of a creation context. The context is an already existing attachment point that gives the system several hints about where in the anchor graph (which may not be fully connected in the case of multiple fragments) to find the best anchor to base this attachment point on.
+Creation and the conceptually similar teleport take an optional (may be null) parameter of a creation context. The context is an already-existing attachment point that gives the system several hints about where in the anchor graph (which may not be fully connected if there are multiple fragments) to find the best anchor to base this attachment point on.
 
 The current implementation of IAttachmentPointManager is in Assets/WorldLocking.Core/Scripts/FragmentManager.cs, which also implements the IFragmentManager interface.
 
 ## Move and teleport via manager or attachment point APIs
 
-It may be noticed that, in addition to the move and teleport interfaces described here, there are corresponding methods on the IAttachmentPoint interface. These are equivalent, and whichever is more convenient to the caller may be used.
+It may be noticed that, in addition to the move and teleport interfaces described here, there are corresponding methods on the IAttachmentPoint interface. These techniques are equivalent, and whichever is more convenient to the caller may be used.
 
 ## See also
 

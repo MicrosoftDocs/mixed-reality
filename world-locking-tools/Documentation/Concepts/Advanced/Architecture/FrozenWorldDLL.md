@@ -76,7 +76,7 @@ Parameters may have an implied contract based on their name if it matches any of
 
 | Naming pattern	| Implied contract
 |---|---|
-| fooBufferSize, fooOut	| <ul><li>The fooOut pointer points to a writable memory buffer that has room for (at least) fooBufferSize elements of fooOut's pointed-to data type.</li><li>fooBufferSize must be zero or positive.</li><li>fooBufferSize is counted in elements of fooOut's pointed-to data type (not e.g. bytes).</li><li>fooOut must not be null. It must always point to a valid address, even if fooBufferSize is zero.</li><li>The called function will write no more than fooBufferSize elements to the memory pointed to by fooOut even if more data would be available.</li></ul> |
+| fooBufferSize, fooOut	| <ul><li>The fooOut pointer points to a writable memory buffer that has room for (at least) fooBufferSize elements of fooOut's pointed-to data type.</li><li>fooBufferSize must be zero or positive.</li><li>fooBufferSize is counted in elements of fooOut's pointed-to data type (not bytes).</li><li>fooOut must not be null. It must always point to a valid address, even if fooBufferSize is zero.</li><li>The called function will write no more than fooBufferSize elements to the memory pointed to by fooOut even if more data would be available.</li></ul> |
 | fooOut	| <ul><li>The memory pointed to by fooOut must be safe to be written to.</li><li>Existing data in the pointed-to memory location is ignored.</li><li>The function will not change the pointed-to memory except by writing a valid update to it; if fooOut points to a buffer intended to receive multiple elements of the same type, only some of the elements may have been written if an error occurs, but each of the written elements will have been written completely.</li></ul> |
 | fooInOut	| <ul><li>The memory pointed to by fooInOut may be read and must be safe to be written to.</li><li>The information at the memory location pointed to by fooInOut must be valid (per the function's description).</li><li>The function will not change the pointed-to memory except by writing a valid update to it; if fooInOut points to a buffer containing multiple elements of the same type, only some of the elements may have been updated if an error occurs, but each of the actually updated elements will have been updated completely.</li></ul> |
 
@@ -108,9 +108,9 @@ Returns a representation of the DLL's version. This is useful to know when inves
 
 If the detail flag is false, the returned version information is a short, single-line string contains a number – this representation is suitable for being displayed on screen or in an info dialog box. If the detail flag is true, the version information is a multi-line string that specifies exactly which source files were compiled to build the DLL.
 
-Under extraordinary circumstances, e.g. if you received a bleeding-edge test build of the DLL directly from a Frozen World developer, both the compact and the detailed version information may describe several distinct version numbers or contain a more detailed listing of different source files and their respective revisions.
+Under extraordinary circumstances, for example if you received a bleeding-edge test build of the DLL directly from a Frozen World developer, both the compact and the detailed version information may describe several distinct version numbers or contain a more detailed listing of different source files and their respective revisions.
 
-This function can be called safely regardless of the library's state (i.e. even before startup and after teardown) and the thread they're called from.
+This function can be called safely regardless of the library's state, even before startup and after teardown, and regardless of the thread it's called from.
 
 
 ### Error flag and diagnostic error messages
@@ -128,7 +128,7 @@ Every function validates parameters and preconditions. If anything is amiss, the
 
 Call `FrozenWorld_GetErrorMessage()` to get further detailed diagnostic information about the cause of the error to help you debug the problem. If the error flag isn't set, the returned error message is empty.
 
-These functions can be called safely regardless of the library's state (i.e. even before startup and after teardown). The error information returned by these functions always relates to the most recent (other) function call executed on the same thread.
+These functions can be called safely regardless of the library's state (even before startup and after teardown). The error information returned by these functions always relates to the most recent (other) function call executed on the same thread.
 
 
 ### Diagnostic data recordings
@@ -173,7 +173,7 @@ This clears the SPONGY snapshot. After you've called `FrozenWorld_Step_Init()`, 
     
   * Edges between those anchors to signify which pairs of anchors are directly spatially related to each other. For example, two anchors next to each other in the same room should be connected by an edge; but two anchors separated by a wall shouldn't be.
     
-  * The current most significant anchor among those you've added to the SPONGY snapshot. This is the anchor whose relation to the head is presumably (or likely) most accurately represented in the SPONGY snapshot. This information is used in various ways, e.g. as a starting point when walking though the anchor graph to gather supports (see next step) or when placing scene objects (see [Creating and tracking scene object attachment points](#creating-and-tracking-scene-object-attachment-points) below).
+  * The current most significant anchor among those you've added to the SPONGY snapshot. This is the anchor whose relation to the head is presumably (or likely) most accurately represented in the SPONGY snapshot. This information is used in various ways, for example as a starting point when walking though the anchor graph to gather supports (see next step) or when placing scene objects (see [Creating and tracking scene object attachment points](#creating-and-tracking-scene-object-attachment-points) below).
 
 See [Accessing snapshots](#accessing-snapshots) below (also for an introduction on the different kinds of snapshots).
 
@@ -185,7 +185,7 @@ See [Accessing snapshots](#accessing-snapshots) below (also for an introduction 
 int FrozenWorld_Step_GatherSupports();  // -> number of gathered supports
 ```
 
-After this function has run, alignment supports can be inspected or tweaked (e.g. to extend or filter the set gathered by default, change the specific location used for alignment, change the relevance and tightness metrics used to weigh supports against each other, or just to visualize the gathered supports).
+After this function has run, alignment supports can be inspected or tweaked (for example, to extend or filter the set gathered by default, change the specific location used for alignment, change the relevance and tightness metrics used to weigh supports against each other, or just to visualize the gathered supports).
 
 This function uses the Frozen World alignment configuration to select which anchors from the SPONGY snapshot to gather for supports and how their relevance and tightness metrics are calculated.
 
@@ -203,7 +203,7 @@ void FrozenWorld_Step_AlignSupports();
 
 Alignment is based on the previously initialized SPONGY snapshot and the previously gathered supports.
 
-After this function has run, the FROZEN snapshot can be inspected to find the updated head (i.e. camera) transform (or the alignment transform of the most recently used spongy coordinate frame relative to the frozen coordinate frame) or to visualize frozen anchors and edges.
+After this function has run, the FROZEN snapshot can be inspected to find the updated head (camera) transform (or the alignment transform of the most recently used spongy coordinate frame relative to the frozen coordinate frame) or to visualize frozen anchors and edges.
 
 In addition, after running this function all alignment metrics are also updated and can be queried to find out if a fragment merge or re-freeze is indicated (based on configurable thresholds).
 
@@ -212,7 +212,7 @@ See [Accessing snapshots](#accessing-snapshots) and [Querying metrics](#querying
 
 ### Configuring Frozen World alignment
 
-Modify the Frozen World alignment configuration to tweak the results of `FrozenWorld_Step_GatherSupports()`, which affect alignment quality, to the requirements of the implemented scenario. There is a default Frozen World alignment configuration, so doing this is optional.
+Modify the Frozen World alignment configuration to tweak the results of `FrozenWorld_Step_GatherSupports()`, which affect alignment quality, to the requirements of the implemented scenario. There is a default Frozen World alignment configuration, so doing this customization is optional.
 
 ```cpp
 struct FrozenWorld_AlignConfig
@@ -265,10 +265,10 @@ void FrozenWorld_SetSupports(
 
 ### Accessing snapshots
 
-Anchor and edge data is organized in different snapshots. Each snapshot contains (at least) any number of anchors along with their poses, fragment associations, and connecting edges. In addition, the SPONGY and FROZEN snapshots contain information about the current head pose and most significant anchor.
+Anchor and edge data is organized in different snapshots. Each snapshot contains, at the minimum, any number of anchors (along with their poses), fragment associations, and connecting edges. In addition, the SPONGY and FROZEN snapshots contain information about the current head pose and most significant anchor.
 
   * The SPONGY snapshot must be populated (by you) frame-to-frame with input data to be used for [alignment](#alignment-frame-to-frame).
-  * The FROZEN snapshot is maintained and kept up to date as a matter of course during alignment and will also be updated when the results of a [refit operation](#understanding-refit-operations-fragment-merge-and-re-freeze) are applied.
+  * The FROZEN snapshot is maintained and kept up to date as a matter of course during alignment and will also be updated when the results of a [re-fit operation](#understanding-re-fit-operations-fragment-merge-and-re-freeze) are applied.
 
 Use these enum constants to indicate which snapshot's information you want to access:
 
@@ -280,12 +280,12 @@ enum FrozenWorld_Snapshot
 };
 ```
 
-It is safe to read and modify different snapshots concurrently from different threads. It is unsafe to access the same snapshot (read or modify) concurrently from different threads, including through the use of functions that are documented to require access to these snapshots (e.g. all alignment functions, which require access to the SPONGY and FROZEN snapshots).
+It is safe to read and modify different snapshots concurrently from different threads. It is unsafe to access the same snapshot (read or modify) concurrently from different threads, including by using functions that are documented to require access to these snapshots (for example, all alignment functions, which require access to the SPONGY and FROZEN snapshots).
 
 
 ### Accessing the head pose and alignment
 
-Get or set the head (i.e. camera) location and directions (only SPONGY and FROZEN snapshots):
+Get or set the head (camera) location and directions (only SPONGY and FROZEN snapshots):
 
 ```cpp
 void FrozenWorld_GetHead(
@@ -316,7 +316,7 @@ The alignment transform together with the most recent spongy head transform is w
 
 ### Accessing the most significant anchor
 
-Get or set the most significant anchor, i.e. the anchor whose pose relative to the head is currently known best (only SPONGY and FROZEN snapshots):
+Get or set the most significant anchor, that is, the anchor whose pose relative to the head is currently known best (only SPONGY and FROZEN snapshots):
 
 ```cpp
 void FrozenWorld_GetMostSignificantAnchorId(
@@ -453,7 +453,7 @@ Copies all anchors and edges that exist in sourceSnapshot but don't exist in tar
 
 While doing that, this function adapts fragment associations and anchor poses of the source anchors that are copied over:
 
-  * If there is an overlap of anchors between a source and a target fragment, all non-overlapping anchors in that source fragment are added to the corresponding target fragment (i.e. have their fragmentId reassigned to match the target fragment) and have their poses adapted to become consistent with the poses of previously existing target anchors in the target fragment.
+  * If there is an overlap of anchors between a source and a target fragment, all non-overlapping anchors in that source fragment are added to the corresponding target fragment (that is, have their fragmentId reassigned to match the target fragment). They then have their poses adapted to become consistent with the poses of previously existing target anchors in the target fragment.
 
   * If one source fragment __overlaps several target fragments__, the source fragment is split and all non-overlapping source anchors are added to the single target fragment that has the greatest overlap with the source fragment (in number of overlapping anchors).
 
@@ -488,9 +488,9 @@ Visual deviation, which is caused by trade-offs made while aligning the Frozen W
 
   * __Linear deviation__ is simply the distance between a support point in the most recent SPONGY snapshot and its aligned counterpart in the Frozen World. If alignment is perfect, linear deviation is zero.
 
-  * __Lateral deviation__ shoots two imaginary rays, a 'spongy ray' and a 'frozen ray', from the head (i.e. camera) position to a support point in the most recent SPONGY snapshot and to its aligned counterpart in the Frozen World. The spongy ray is then intersected with the frozen support point's view plane (i.e. a plane that is orthogonal to the frozen ray and goes through the frozen support point). The lateral deviation metric is the distance between this intersection point of the spongy ray and the frozen support point. If alignment is perfect, lateral deviation is zero.
+  * __Lateral deviation__ shoots two imaginary rays, a 'spongy ray' and a 'frozen ray', from the head (camera) position to a support point in the most recent SPONGY snapshot and to its aligned counterpart in the Frozen World. The spongy ray is then intersected with the frozen support point's view plane (a plane that is orthogonal to the frozen ray and goes through the frozen support point). The lateral deviation metric is the distance between this intersection point of the spongy ray and the frozen support point. If alignment is perfect, lateral deviation is zero.
 
-  * __Angular deviation__ is the angle (expressed in radians) between the spongy ray and the frozen ray described for lateral deviation above. If alignment is perfect, angular deviation is zero; the maximum possible angular deviation is pi (i.e. 180°). Angular deviation is capped to a configurable minimum distance between the head and the spongy and frozen support point, i.e. limited to the angle as if the head was moved to the center of a circle whose radius is the configured 'near distance' and that goes through the spongy and frozen support point.
+  * __Angular deviation__ is the angle (expressed in radians) between the spongy ray and the frozen ray described for lateral deviation above. If alignment is perfect, angular deviation is zero; the maximum possible angular deviation is pi (or 180°). Angular deviation is capped to a configurable minimum distance between the head and the spongy and frozen support point, that is, limited to the angle as if the head was moved to the center of a circle whose radius is the configured 'near distance' and that goes through the spongy and frozen support point.
 
 Other than being convenient, using these functions is optional: All metrics calculated by the built-in function could just as well be calculated in user code.
 
@@ -566,24 +566,24 @@ void FrozenWorld_SetMetricsConfig(
     FrozenWorld_MetricsConfig* config);
 ```
 
-## Understanding refit operations (fragment merge and re-freeze)
+## Understanding re-fit operations (fragment merge and re-freeze)
 
 In general, you can simply work with locations, distances, and scene object transforms in your scene graph as in any big, rigid coordinate system. Allowing you to do this is at the core of what Frozen World wants to provide to you.
 
 However, as the device's tracking doesn't supply an absolute position in the real world, sometimes two parts of the coordinate system that were originally thought to be separate are discovered to be actually connected to each other, necessitating a fragment merge; or tracking errors accumulate to a degree that makes it necessary to rearrange things in the scene graph to improve alignment quality from there on out, necessitating a re-freeze.
 
-These refit operations (i.e. fragment merge and re-freeze) occur relatively rarely. Usually, they happen somewhat more frequently as long as the device is still exploring unknown spaces, and they become more infrequent (or even stop happening at all) as the device continues learning about its environment. (In fact, if your device has sufficiently learned about the environment you are using it in, you may never have to deal with refit operations at all.)
+These re-fit operations (fragment merge and re-freeze) occur relatively rarely. Usually, they happen somewhat more frequently as long as the device is still exploring unknown spaces, and they become more infrequent (or even stop happening at all) as the device continues learning about its environment. (In fact, if your device has sufficiently learned about the environment you are using it in, you may never have to deal with re-fit operations at all.)
 
-Refit operations do not happen automatically: You must actively initiate them when they are indicated. This gives you the opportunity to postpone them until your scene is in a state that makes it easier for you to deal with the refit. You can even rate-limit refit operations yourself.
+Re-fit operations do not happen automatically: You must actively initiate them when they are indicated. This gives you the opportunity to postpone them until your scene is in a state that makes it easier for you to deal with the re-fit. You can even rate-limit re-fit operations yourself.
 
-A refit operation becomes indicated (see [Inspecting metrics and indicators](#inspecting-metrics-and-indicators) above) as deviations between the generally immutable Frozen World and the always-changing, always-evolving SPONGY snapshots supplied during alignment become too great. Whatever counts as 'too great' is a subjective and application-dependent quality trade-off you must make based on your particular scenario. (You can use the default configuration and indicators as a starting point.)
+A re-fit operation becomes indicated (see [Inspecting metrics and indicators](#inspecting-metrics-and-indicators) above) as deviations between the generally immutable Frozen World and the always-changing, always-evolving SPONGY snapshots supplied during alignment become too great. Whatever counts as 'too great' is a subjective and application-dependent quality trade-off you must make based on your particular scenario. (You can use the default configuration and indicators as a starting point.)
 
-As the last step of doing a refit operation, some or all of your scene objects must change their actual transform in the scene coordinate system so they stay visually aligned with the real world. Since you are yourself in control of initiating refit operations, there is no need for this 'scene refit' to be done in real-time on a per-frame budget: Your code can take however much time it needs to get it right.
+As the last step of doing a re-fit operation, some or all of your scene objects must change their actual transform in the scene coordinate system so they stay visually aligned with the real world. Since you are yourself in control of initiating re-fit operations, there is no need for this 'scene re-fit' to be done in real-time on a per-frame budget: Your code can take however much time it needs to get it right.
 
 
 ### Creating and tracking scene object attachment points
 
-Unfortunately, as device tracking errors accumulate, the result can be that things are close to each other (or even overlap) in Frozen World coordinate space that are nowhere near each other in the real world. For that reason, Frozen World coordinates alone aren't sufficient to fully describe which ways two nearby scene objects should move, respectively, as the result of a refit operation.
+Unfortunately, as device tracking errors accumulate, the result can be that things are close to each other (or even overlap) in Frozen World coordinate space that are nowhere near each other in the real world. For that reason, Frozen World coordinates alone aren't sufficient to fully describe which ways two nearby scene objects should move, respectively, as the result of a re-fit operation.
 
 __Attachment points__ are small data structures (see [Typedefs, structs, and constants used throughout this page](#typedefs-structs-and-constants-used-throughout-this-documentation) above) that describe the logical attachment of something to a certain part of the Frozen World.
 
@@ -591,9 +591,9 @@ In essence, an attachment point captures which anchor is that scene object's own
 
 You should create and maintain an attachment point for every top-level scene object that can move independently.
 
-__Attachment points aren't anchors__. Even though they technically refer to _one_ anchor in the frozen graph and encode a point in that anchor's coordinate system, they are not interpreted by Frozen World in a way that relates them to just _that one_ anchor. Instead, an attachment point logically encodes 'a point in the graph between its anchors' for future reference when applying a refit operation, and to a significant degree any given attachment point could be referencing any of the anchors close to it without affecting its behavior at all.
+__Attachment points aren't anchors__. Even though they technically refer to _one_ anchor in the frozen graph and encode a point in that anchor's coordinate system, they are not interpreted by Frozen World in a way that relates them to just _that one_ anchor. Instead, an attachment point logically encodes 'a point in the graph between its anchors' for future reference when applying a re-fit operation, and to a significant degree any given attachment point could be referencing any of the anchors close to it without affecting its behavior at all.
 
-This seems not so different from attaching a scene object directly to an anchor (e.g. an individual SpatialAnchor or Unity WorldAnchor) without Frozen World. However, there are two significant differences: Firstly, Frozen World attachment points never change position on their own; and secondly, unlike anchors, attachment points can (and should) be purposely transitioned through the scene to tag along with the scene object they're attaching to the Frozen World.
+This seems not so different from attaching a scene object directly to an anchor (for example, an individual SpatialAnchor or Unity WorldAnchor) without Frozen World. However, there are two significant differences: Firstly, Frozen World attachment points never change position on their own; and secondly, unlike anchors, attachment points can (and should) be purposely transitioned through the scene to tag along with the scene object they're attaching to the Frozen World.
 
 __Attachment points are lightweight__. Creating or using an attachment point leaves no footprint inside the Frozen World library. None of the library functions that accept FrozenWorld_AttachmentPoint parameters alter the state of the Frozen World in any way (though they _do_ inspect it). There is no library-side overhead involved in creating or maintaining a great number of attachment points (aside from, obviously, the compute involved in calling library functions with them).
 
@@ -618,7 +618,7 @@ If you are placing a scene object without an initial relation to any existing sc
 
 #### Track an attachment point when its scene object moves
 
-When your scene object continuously moves through the scene (because it is animated or simulated; this does not apply to scene objects being relocated because of a refit operation!), you should move its attachment point along with it.
+When your scene object continuously moves through the scene (because it is animated or simulated; this does not apply to scene objects being relocated because of a re-fit operation!), you should move its attachment point along with it.
 
 ```cpp
 void FrozenWorld_Tracking_Move(
@@ -645,9 +645,9 @@ bool FrozenWorld_RefitMerge_Init();
 
 The fragment merge operation is initialized with the current version of the SPONGY snapshot set up after `FrozenWorld_Step_Init()`. After the fragment merge has been initialized, it is safe to change the SPONGY and FROZEN snapshots without affecting the results of the fragment merge.
 
-`FrozenWorld_RefitMerge_Init()` returns true if the necessary preconditions for performing a fragment merge are given (i.e. there's more than one simultaneously trackable fragment represented in the SPONGY snapshot). If this is not the case, the function returns false, and the fragment merge operation is not initialized.
+`FrozenWorld_RefitMerge_Init()` returns true if the necessary preconditions for performing a fragment merge are given (that is, there's more than one simultaneously trackable fragment represented in the SPONGY snapshot). If this is not the case, the function returns false, and the fragment merge operation is not initialized.
 
-Successfully initializing a fragment merge operation while any other refit operation is running silently cancels the previous refit operation and discards its results. If initializing the fragment merge operation is not successful, the other refit operation (if any) remains unaffected.
+Successfully initializing a fragment merge operation while any other re-fit operation is running silently cancels the previous re-fit operation and discards its results. If initializing the fragment merge operation is not successful, the other re-fit operation (if any) remains unaffected.
 
 
 #### 2. Prepare the fragment merge
@@ -660,10 +660,10 @@ void FrozenWorld_RefitMerge_Prepare();
 
 Preparing the fragment merge is done based on information gathered by `FrozenWorld_RefitMerge_Init()` and is independent from ongoing changes to the state of the SPONGY snapshot or the overall Frozen World (including the FROZEN snapshot and Frozen World configuration).
 
-Normally, this step executes quickly, but if guaranteed real-time performance is a concern, it is safe to execute `FrozenWorld_RefitMerge_Prepare()` asynchronously in a background worker thread even across several frames while the SPONGY snapshot continues to evolve and the Frozen World alignment continues to be done. However, you must take care to not initialize another refit operation while this one is being prepared in the background.
+Normally, this step executes quickly, but if guaranteed real-time performance is a concern, it is safe to execute `FrozenWorld_RefitMerge_Prepare()` asynchronously in a background worker thread even across several frames while the SPONGY snapshot continues to evolve and the Frozen World alignment continues to be done. However, you must take care to not initialize another re-fit operation while this one is being prepared in the background.
 
 
-#### 3. Inspect fragment merge results and refit the scene
+#### 3. Inspect fragment merge results and re-fit the scene
 
 When `FrozenWorld_RefitMerge_Prepare()` has finished executing, you must change the transforms of some or all of your scene objects to accommodate the pending fragment merge. The scene objects affected by this are identified by the `anchorId` (or more precisely: the `fragmentId` of that anchor) stored in the attachment point you created and maintained for that scene object (see [Creating and tracking scene object attachment points](#creating-and-tracking-scene-object-attachment-points) above).
 
@@ -696,7 +696,7 @@ void FrozenWorld_RefitMerge_GetMergedFragmentId(
     FrozenWorld_FragmentId* mergedFragmentIdOut);
 ```
 
-All scene objects that are in the same Frozen World fragment (i.e. attached to anchors that have the same fragmentId) must have their transforms adjusted by a single common adjustment transform, so you can rely on scene objects in the same fragment keeping relative position and orientation to each other. Keep in mind that orientations may change, too, so don't forget to adjust any directional vectors (e.g. velocities and accelerations) as well.
+All scene objects that are in the same Frozen World fragment (that is, attached to anchors that have the same fragmentId) must have their transforms adjusted by a single common adjustment transform, so you can rely on scene objects in the same fragment keeping relative position and orientation to each other. Keep in mind that orientations may change, too, so don't forget to adjust any directional vectors (for example, velocities and accelerations) as well.
 
 Note that the fragment itself that everything else is merged into is kept stationary. (Among all fragments that need to be merged, the one whose axis-aligned bounding box has the greatest volume in the Frozen World is chosen to remain stationary and be merged into.) Scene objects in the stationary fragment don't require adjustment, so this fragment isn't reported as an adjusted fragment.
 
@@ -710,7 +710,7 @@ Finally, after you have taken care of adjusting your own scene objects, correspo
 void FrozenWorld_RefitMerge_Apply();
 ```
 
-You can only call `FrozenWorld_RefitMerge_Apply()` only once for a fragment merge operation. After `FrozenWorld_RefitMerge_Apply()` has been called, the function calls required to refit your scene's objects (see [3. Inspect fragment merge results and refit the scene](#3-inspect-fragment-merge-results-and-refit-the-scene) above) cannot be called any longer until the next fragment merge has been prepared.
+You can only call `FrozenWorld_RefitMerge_Apply()` only once for a fragment merge operation. After `FrozenWorld_RefitMerge_Apply()` has been called, the function calls required to re-fit your scene's objects (see [3. Inspect fragment merge results and re-fit the scene](#3-inspect-fragment-merge-results-and-re-fit-the-scene) above) cannot be called any longer until the next fragment merge has been prepared.
 
 ### Initiating and executing a re-freeze
 
@@ -727,9 +727,9 @@ bool FrozenWorld_RefitRefreeze_Init();
 
 The re-freeze operation is initialized with the current version of the SPONGY snapshot set up after `FrozenWorld_Step_Init()`. After the re-freeze has been initialized, it is safe to change the SPONGY and FROZEN snapshot without affecting the results of the re-freeze.
 
-`FrozenWorld_RefitRefreeze_Init()` returns true if the necessary preconditions for performing a re-freeze are given (i.e. there's more than one trackable anchor represented in the SPONGY snapshot within relevance distance from the head that's graph-connected to the current most significant anchor). If this is not the case, the function returns false, and the re-freeze operation is not initialized.
+`FrozenWorld_RefitRefreeze_Init()` returns true if the necessary preconditions for performing a re-freeze are given (that is, there's more than one trackable anchor represented in the SPONGY snapshot within relevance distance from the head that's graph-connected to the current most significant anchor). If this is not the case, the function returns false, and the re-freeze operation is not initialized.
 
-Initializing a re-freeze operation while any other refit operation is running silently cancels the previous refit operation and discards its results. If initializing the re-freeze operation is not successful, the other refit operation (if any) remains unaffected.
+Initializing a re-freeze operation while any other re-fit operation is running silently cancels the previous re-fit operation and discards its results. If initializing the re-freeze operation is not successful, the other re-fit operation (if any) remains unaffected.
 
 #### 2. Prepare the re-freeze
 
@@ -741,10 +741,10 @@ void FrozenWorld_RefitRefreeze_Prepare();
 
 Preparing the re-freeze is done based on information gathered by `FrozenWorld_RefitRefreeze_Init()` and is independent from changes to the ongoing state of the SPONGY snapshot or the overall Frozen World (including the FROZEN snapshot and Frozen World configuration).
 
-Normally, this step executes quickly, but if guaranteed real-time performance is a concern, it is safe to execute `FrozenWorld_RefitRefreeze_Prepare()` asynchronously in a background worker thread even across several frames while the SPONGY snapshot continues to evolve and the Frozen World alignment continues to be done. However, you must take care to not initialize another refit operation while this one is being prepared in the background.
+Normally, this step executes quickly, but if guaranteed real-time performance is a concern, it is safe to execute `FrozenWorld_RefitRefreeze_Prepare()` asynchronously in a background worker thread even across several frames while the SPONGY snapshot continues to evolve and the Frozen World alignment continues to be done. However, you must take care to not initialize another re-fit operation while this one is being prepared in the background.
 
 
-#### 3. Inspect re-freeze results and refit the scene
+#### 3. Inspect re-freeze results and re-fit the scene
 
 When `FrozenWorld_RefitRefreeze_Prepare()` has finished executing, you must change the transforms of some or all of your scene objects to accommodate the pending re-freeze. The scene objects affected by this are identified by the anchorId stored in the attachment point you created and maintained for that scene object (see Creating and tracking scene object attachment points above).
 
@@ -788,7 +788,7 @@ Finally, after you have taken care of adjusting your own scene objects, correspo
 void FrozenWorld_RefitRefreeze_Apply();
 ```
 
-You can only call `FrozenWorld_RefitRefreeze_Apply()` only once for a re-freeze operation. After `FrozenWorld_RefitRefreeze_Apply()` has been called, the function calls required to refit your scene's objects (see [3. Inspect re-freeze results and refit the scene](#3-inspect-refreeze-results-and-refit-the-scene) above) cannot be called any longer until the next re-freeze has been prepared.
+You can only call `FrozenWorld_RefitRefreeze_Apply()` only once for a re-freeze operation. After `FrozenWorld_RefitRefreeze_Apply()` has been called, the function calls required to re-fit your scene's objects (see [3. Inspect re-freeze results and re-fit the scene](#3-inspect-refreeze-results-and-re-fit-the-scene) above) cannot be called any longer until the next re-freeze has been prepared.
 
 
 ## Persistence
@@ -799,11 +799,11 @@ Instead of using the functions described in this section, you can also implement
 
 The canonical Frozen World binary format is organized as a series (or: stream) of records and can be used for…
 
-  * __Persistence__ – i.e. saving essential Frozen World data with the intention of restoring its state later to continue a session.
+  * __Persistence__ – saving essential Frozen World data with the intention of restoring its state later to continue a session.
 
-  * __Diagnostics__ – i.e. saving all Frozen World data, including transient data like the SPONGY snapshot, with the intention of using it later to investigate why Frozen World behaved in a certain way in a certain situation (e.g. to debug your scene, or Frozen World's integration into your scene, or Frozen World itself) or to implement automated offline testing based on real recordings and interactions.
+  * __Diagnostics__ – saving all Frozen World data, including transient data like the SPONGY snapshot, with the intention of using it later to investigate why Frozen World behaved in a certain way in a certain situation (for example, to debug your scene, or Frozen World's integration into your scene, or Frozen World itself) or to implement automated offline testing based on real recordings and interactions.
 
-Each stream of records is self-contained, i.e. can be usefully stored, transmitted, and read on its own.
+Each stream of records is self-contained, and can be usefully stored, transmitted, and read on its own.
 
 However, the records in a given stream are not necessarily all self-contained: The recording format includes the possibility of encoding some data as updates relative to the previous record in the same stream in order to save space, so you need all records from the very start of that stream to guarantee that you can fully restore the recorded Frozen World state up to that point.
 
@@ -852,9 +852,9 @@ Frozen World recordings are an unbounded sequence of records. Each record encode
 
 The granularity of updates is entirely up to you:
 
-  * For recordings intended for persistence, you might write just a single record and then close the stream again – or keep a stream open and infrequently (e.g. once every few seconds) append regular updates as a good trade-off between storage space consumption and the timeliness and completeness of the saved data in case your scene quits unexpectedly (e.g. because it crashed).
+  * For recordings intended for persistence, you might write just a single record and then close the stream again – or keep a stream open and infrequently (for example, once every few seconds) append regular updates as a good trade-off between storage space consumption and the timeliness and completeness of the saved data in case your scene quits unexpectedly (for example, because it crashed).
 
-  * For recordings intended for diagnostics and replay, keep the stream open and frequently (i.e. once every step, just after doing Frozen World alignment) append updates to your recording file. The recording format is designed to be space-efficient and doesn't write a lot of data if nothing much changed since the last record.
+  * For recordings intended for diagnostics and replay, keep the stream open and frequently (for example, once every step, just after doing Frozen World alignment) append updates to your recording file. The recording format is designed to be space-efficient and doesn't write a lot of data if nothing much changed since the last record.
 
 
 #### 1. Opening the stream
@@ -893,9 +893,9 @@ Calling `FrozenWorld_Serialize_Gather()` quickly gathers all information needed 
 
 The stream's time property when `FrozenWorld_Serialize_Gather()` is called directly controls what relative time (since last record) is encoded in the new record – it's best to keep the stream's time property always set to your scene's absolute runtime.
 
-After gathering data, repeatedly call `FrozenWorld_Serialize_Read()` to copy the serialized binary data of the record into a buffer provided by you, which you can then in turn output/write to wherever you want the recording stream to be physically stored (e.g. a file on disk or a network stream). While you're reading data you can check the stream's numBytesBuffered property to get an indication of how much more data there is at least left to be serialized for this record, which may be useful if you want to e.g. implement rotating size-limited recording files on your side.
+After gathering data, repeatedly call `FrozenWorld_Serialize_Read()` to copy the serialized binary data of the record into a buffer provided by you, which you can then in turn output/write to wherever you want the recording stream to be physically stored (for example, a file on disk or a network stream). While you're reading data you can check the stream's numBytesBuffered property to get an indication of how much more data there is at least left to be serialized for this record, which may be useful if you want to, for example, implement rotating size-limited recording files on your side.
 
-Reading serialized binary data by calling `FrozenWorld_Serialize_Read()` can be safely done in a background thread. Doing this can be very useful because it decouples your main thread that runs your scene from unpredictable I/O latencies that are hard to completely avoid when writing data to disk or over network.
+Reading serialized binary data by calling `FrozenWorld_Serialize_Read()` can be safely done in a background thread. Asynchronous loading can be very useful because it decouples your main thread that runs your scene from unpredictable I/O latencies that are hard to completely avoid when writing data to disk or over network.
 
 You mustn't call `FrozenWorld_Serialize_Gather()` again before all data from the previous record has been read (it will signal an error if you do), but it is safe to simply skip a call to `FrozenWorld_Serialize_Gather()` if writing the previous record's data is still in progress in your background thread. This won't cause your saved recording to become inconsistent or lose data – it will only reduce the granularity of the recording in that instance.
 
@@ -941,7 +941,7 @@ When reading a Frozen World recording, you must read and apply all updates begin
 
 However, there is no requirement to do this in real time, and you can read and apply even large streams (in the order of hundreds of megabytes and tens of thousands of records) fairly quickly from start to end in order to arrive at a certain recorded point in time.
 
-You can choose to read just a subset of the data contained in the stream by setting the stream's `includePersistent` and `includeTransient` flags. Of course, enabling `includePersistent` won't do anything if the stream doesn't contain such data (i.e. wasn't created with the `includePersistent` flag set during serialization), and the same goes for `includeTransient`.
+You can choose to read just a subset of the data contained in the stream by setting the stream's `includePersistent` and `includeTransient` flags. Of course, enabling `includePersistent` won't do anything if the stream doesn't contain such data (that is, wasn't created with the `includePersistent` flag set during serialization), and the same goes for `includeTransient`.
 
 
 #### 1. Opening the stream
@@ -976,7 +976,7 @@ void FrozenWorld_Deserialize_Apply(
     FrozenWorld_Deserialize_Stream* streamInOut);
 ```
 
-Repeatedly call `FrozenWorld_Deserialize_Write()` with more data read from your data source (e.g. a file on disk or a network stream you've opened) until it returns zero, indicating that the record is complete and no more data needs to be consumed for this record. While you're doing this, you can check the stream's `numBytesRequired` to get an indication of how much more data must be read at least for this record, which is useful if you want to make sure you read no more than the exact required amount of data from your data source.
+Repeatedly call `FrozenWorld_Deserialize_Write()` with more data read from your data source (for example, a file on disk or a network stream you've opened) until it returns zero, indicating that the record is complete and no more data needs to be consumed for this record. While you're doing this, you can check the stream's `numBytesRequired` to get an indication of how much more data must be read at least for this record, which is useful if you want to make sure you read no more than the exact required amount of data from your data source.
 
 Feeding serialized binary data by calling `FrozenWorld_Deserialize_Write()` can be safely done in a background thread. Doing this can be very useful because it decouples your main thread that runs your scene from unpredictable I/O latencies (or blocking I/O calls while a network stream is waiting for more data to arrive) that are hard to avoid when reading data from disk or from a network.
 
