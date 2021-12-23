@@ -31,7 +31,4 @@ The post load callback is useful for suggesting an appropriate time to check wit
 
 * [IAlignmentManager](xref:Microsoft.MixedReality.WorldLocking.Core.IAlignmentManager)
 * [SpacePin](xref:Microsoft.MixedReality.WorldLocking.Core.SpacePin)
-* [SpacePinManipulation](xref:Microsoft.MixedReality.WorldLocking.Examples.SpacePinManipulation)
 * [SpacePinOrientable](xref:Microsoft.MixedReality.WorldLocking.Core.SpacePinOrientable)
-* [SpacePinOrientableManipulation](xref:Microsoft.MixedReality.WorldLocking.Examples.SpacePinOrientableManipulation)
-* [PinManipulator](xref:Microsoft.MixedReality.WorldLocking.Examples.PinManipulator)

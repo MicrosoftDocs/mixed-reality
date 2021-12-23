@@ -81,7 +81,7 @@ The spatial anchors which WLT creates and uses internally are created at the cam
 
 ### Additional output
 
-The [World Locking Examples](xref:Microsoft.MixedReality.WorldLocking.Examples) includes text diagnostics. Most of these are relevant only to developers of the World Locking Tools, rather than clients of its abilities. However, they are available for read and, as shown in the [StatusToText](xref:Microsoft.MixedReality.WorldLocking.Tools.StatusToText) script, for real-time display.
+The [World Locking Examples](SampleApplications.md) includes text diagnostics. Most of these are relevant only to developers of the World Locking Tools, rather than clients of its abilities. However, they are available for read and, as shown in the [StatusToText](xref:Microsoft.MixedReality.WorldLocking.Tools.StatusToText) script, for real-time display.
 
 ![Typical diagnostics display](~/Images/Screens/DiagStats.jpg)
 

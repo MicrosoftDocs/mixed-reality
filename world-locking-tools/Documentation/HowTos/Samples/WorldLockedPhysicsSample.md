@@ -72,7 +72,3 @@ At any given time, the sample can be in any one of the following modes:
    Beams are "removable".
 
 * Remove Objects - On select, if the ray cast object is "removable", then it's removed from the scene. Any objects being supported by the removed object will then fall.
-
-### See also
-
-[class PhysicsBeamSample](xref:Microsoft.MixedReality.WorldLocking.Examples.PhysicsBeamSample).
