@@ -23,7 +23,7 @@ Unity's *global coordinate space* and *spatial anchors* each address different a
 
 Unity's global coordinate space provides a stable frame of reference in which holographic objects remain fixed relative to one another.  While objects in this space will behave consistently relative to each other, consistency with the physical world is not guaranteed nor generally provided. Inconsistencies will develop especially when the user is moving around.
 
-Unity's spatial anchors can maintain a hologram's position in the physical world when the user is mobile, but at the sacrifice of self consistency within the virtual world. Different anchors are constantly moving relative to one another. They are also moving through the global coordinate space, making simple tasks like layout difficult, and physics simulation problematic.
+Unity's spatial anchors can maintain a hologram's position in the physical world when the user is mobile, but at the sacrifice of self-consistency within the virtual world. Different anchors are constantly moving relative to one another. They are also moving through the global coordinate space, making simple tasks like layout difficult, and physics simulation problematic.
 
 ## The source of the problem
 
@@ -39,17 +39,17 @@ Here's a simplistic scenario for context.
 
 ### Illustration
 
-The user is at point A. Looking around, there are a number of good visible reference features, so the head tracking quality is excellent, and any holograms placed will stay put.
+The user is at point A. Looking around, there are many good visible reference features, so the head tracking quality is excellent, and any holograms placed will stay put.
 
-The user then walks 10 meters in physical space to point B. But tracking in transit has lower fidelity, so as a result, after the user reaches point B, the device registers that it has traveled only nine meters. This is a large even amount for illustration, but it's consistent with the device specifications which allow a +-10% distance error in such a case.
+The user then walks 10 meters in physical space to point B. But tracking in transit has lower fidelity, so as a result, after the user reaches point B, the device registers that it has traveled only 9 meters. This is a large even amount for illustration, but it's consistent with the device specifications, which allow a +-10% distance error in such a case.
 
 As the device looks around at point B, good visible features are recorded. Tracking and stability of holograms at point B is excellent, too.
 
 While the user is at a particular point, things around that point look great. But there's an inconsistency. The 10 meters between points A and B in physical space are only 9 meters in virtual space. That's often referred to as "the scale problem", although "the distance problem" might be more accurate. We'll look into that problem soon.
 
-Back to our scenario: for the next action, the user walks back to point A. This time the tracking errors make the 10 meter walk from B to A in physical space add up to 10.5 meters in virtual space. That means that the full walk from A to B to A adds up to a net distance of 1.5 meters, when it should be 0.0 meters. This is an obvious problem. A hologram placed at point A before the walk will now appear 1.5 meters away from point A.
+Back to our scenario: for the next action, the user walks back to point A. This time the tracking errors make the 10-meter walk from B to A in physical space add up to 10.5 meters in virtual space. That means that the full walk from A to B to A adds up to a net distance of 1.5 meters, when it should be 0.0 meters. This is an obvious problem. A hologram placed at point A before the walk will now appear 1.5 meters away from point A.
 
-This is where spatial anchors can help. After walking to B and back, the system recognizes that it's back at point A, yet the head's Unity coordinates have changed by 1.5 meters. But if the hologram at point A has a spatial anchor attached, the spatial anchor can think "I'm at point A, the head is at point A, but my coordinates differ from the head's coordinates by 1.5 meters. I'll just change my coordinates by 1.5 meters so that we're in agreement again." And a spatial anchor at point C, a meter to the left of the user, is going through the same process. In essence, the spatial anchor constantly redefines where point A is in Unity space so that the head's coordinates are always right. And each spatial anchor does this independently for its place in the physical world.  
+This is where spatial anchors can help. After walking to B and back, the system recognizes that it's back at point A, yet the head's Unity coordinates have changed by 1.5 meters. But if the hologram at point A has a spatial anchor attached, the spatial anchor can think "I'm at point A, the head is at point A, but my coordinates differ from the head's coordinates by 1.5 meters. I'll just change my coordinates by 1.5 meters so that we're in agreement again." And a spatial anchor at point C, a meter to the left of the user, is going through the same process. In essence, the spatial anchor constantly redefines where point A is in Unity space so that the head's coordinates are always right. And each spatial anchor does this adjustment independently for its place in the physical world.  
 
 ## World Locking Tools for Unity
 
@@ -63,7 +63,7 @@ Obviously it's more complicated under the hood than that. For example, remember 
 
 If the user walks from point A to point B and back to point A, the system has enough information to fix the drift that occurred in transit. It may not know where point B is (and generally doesn't know exactly where any point B is relative to point A), but it knows whether it is at point A or not. When it gets back to point A, it expects things to be pretty much as it left them. If they aren't, the system can make it so.
 
-But what about at point B? It thought the 10 meter walk was only 9 meters. And it has no way of knowing whether that 9 meters is correct, and if it isn't, how much it's off. Spatial anchors don't help here. Spatial anchors have the same problem the head tracker does; each knows where it is in the physical world (relative to visible features), but one spatial anchor doesn't know anything about another spatial anchor. Specifically, spatial anchors don't know how far apart they are.
+But what about at point B? It thought the 10-meter walk was only 9 meters. And it has no way of knowing whether that 9 meters is correct, and if it isn't, how much it's off. Spatial anchors don't help here. Spatial anchors have the same problem the head tracker does; each knows where it is in the physical world (relative to visible features), but one spatial anchor doesn't know anything about another spatial anchor. Specifically, spatial anchors don't know how far apart they are.
 
 This can be inconvenient in many forms, but it becomes a blocking issue when objects, or systems of objects, are larger in size than a meter or so. Consider a model of a room, or a building, or a set of desks, or even a car. While a spatial anchor can keep one end of the model registered with a physical world feature, by the time the other end of the model is reached, significant error might have accumulated. The other end won't be lined up correctly. And the error will be different from device to device, and possibly even between runs on the same device.
 

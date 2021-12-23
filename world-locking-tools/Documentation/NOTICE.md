@@ -9,7 +9,8 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Augmented Reality, Mixed Reality, ARCore, ARKit, development, MRTK
 ---
 
-NOTICES AND INFORMATION
+# NOTICES AND INFORMATION
+
 Do Not Translate or Localize
 
 This software incorporates material from third parties. Microsoft makes certain
