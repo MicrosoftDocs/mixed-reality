@@ -265,7 +265,7 @@ void FrozenWorld_SetSupports(
 
 ### Accessing snapshots
 
-Anchor and edge data is organized in different snapshots. Each snapshot contains, at the minimum, any number of anchors (along with their poses), fragment associations, and connecting edges. In addition, the SPONGY and FROZEN snapshots contain information about the current head pose and most significant anchor.
+Anchor and edge data is organized in different snapshots. Each snapshot contains, at the minimum, any number of anchors (along with corresponding poses), fragment associations, and connecting edges. In addition, the SPONGY and FROZEN snapshots contain information about the current head pose and most significant anchor.
 
   * The SPONGY snapshot must be populated (by you) frame-to-frame with input data to be used for [alignment](#alignment-frame-to-frame).
   * The FROZEN snapshot is maintained and kept up to date as a matter of course during alignment and will also be updated when the results of a [re-fit operation](#understanding-re-fit-operations-fragment-merge-and-re-freeze) are applied.
@@ -416,7 +416,7 @@ int FrozenWorld_GetEdges(  // -> number of elements copied to the buffer
     FrozenWorld_Edge* edgesOut);
 ```
 
-Note that querying the number of edges is not a constant-time operation because edges are stored in a sparse array, so all edges must be enumerated in order to find out how many edges there are. If this is a performance concern, consider saving the number of edges from frame to frame and change your edge buffer size based on the number of edges stored indicated by the return value of `FrozenWorld_GetEdges()`.
+Querying the number of edges is not a constant-time operation because edges are stored in a sparse array, so all edges must be enumerated in order to find out how many edges there are. If this is a performance concern, consider saving the number of edges from frame to frame and change your edge buffer size based on the number of edges stored indicated by the return value of `FrozenWorld_GetEdges()`.
 
 Add edges between anchors to the snapshot:
 
@@ -568,7 +568,7 @@ void FrozenWorld_SetMetricsConfig(
 
 ## Understanding re-fit operations (fragment merge and re-freeze)
 
-In general, you can simply work with locations, distances, and scene object transforms in your scene graph as in any big, rigid coordinate system. Allowing you to do this is at the core of what Frozen World wants to provide to you.
+In general, you can simply work with locations, distances, and scene object transforms in your scene graph as in any big, rigid coordinate system. Allowing you to work this way is at the core of what Frozen World wants to provide to you.
 
 However, as the device's tracking doesn't supply an absolute position in the real world, sometimes two parts of the coordinate system that were originally thought to be separate are discovered to be actually connected to each other, necessitating a fragment merge; or tracking errors accumulate to a degree that makes it necessary to rearrange things in the scene graph to improve alignment quality from there on out, necessitating a re-freeze.
 
@@ -583,11 +583,11 @@ As the last step of doing a re-fit operation, some or all of your scene objects 
 
 ### Creating and tracking scene object attachment points
 
-Unfortunately, as device tracking errors accumulate, the result can be that things are close to each other (or even overlap) in Frozen World coordinate space that are nowhere near each other in the real world. For that reason, Frozen World coordinates alone aren't sufficient to fully describe which ways two nearby scene objects should move, respectively, as the result of a re-fit operation.
+Unfortunately, as device tracking errors accumulate, the result can be that things are close to each other (or even overlap) in Frozen World coordinate space, that are nowhere near each other in the real world. For that reason, Frozen World coordinates alone aren't sufficient to fully describe which ways two nearby scene objects should move, respectively, as the result of a re-fit operation.
 
 __Attachment points__ are small data structures (see [Typedefs, structs, and constants used throughout this page](#typedefs-structs-and-constants-used-throughout-this-documentation) above) that describe the logical attachment of something to a certain part of the Frozen World.
 
-In essence, an attachment point captures which anchor is that scene object's own 'most significant' one (like the most significant anchor supplied for the device itself in a SPONGY snapshot). In addition to the anchor identifier, an attachment point also contains a location in that anchor's own frame of reference. This location normally coincides with the scene object's location if the scene object is sufficiently close to its anchor, but this is not a general rule you should rely on.
+In essence, an attachment point captures which anchor is that scene object's own 'most significant' one (like the most significant anchor supplied for the device itself in a SPONGY snapshot). In addition to the anchor identifier, an attachment point also contains a location in that anchor's own frame of reference. This location normally coincides with the scene object's location if the scene object is sufficiently near its anchor, but this is not a general rule you should rely on.
 
 You should create and maintain an attachment point for every top-level scene object that can move independently.
 
@@ -628,7 +628,7 @@ void FrozenWorld_Tracking_Move(
 
 It is not necessary to move a scene object's attachment point every frame during continuous movement: You can wait until it has moved into a distance of at least a half-unit away from where you updated its attachment point before until you need to move the attachment point along with it. However, if you do so, you should, after preparing a re-freeze, make sure to do one final update of the attachment point just prior to invoking `FrozenWorld_RefitRefreeze_CalcAdjustment()` to ensure that the calculated adjustment is based on the scene object's latest position.
 
-Note that if you teleport a scene object through the scene (instead of continuously moving it through the scene), you should forget its prior attachment point data and initialize a new one from scratch based on the same considerations as for a newly placed scene object.
+If you teleport a scene object through the scene (instead of continuously moving it through the scene), you should forget its prior attachment point data and initialize a new one from scratch based on the same considerations as for a newly placed scene object.
 
 
 ### Initiating and executing a fragment merge
@@ -698,7 +698,7 @@ void FrozenWorld_RefitMerge_GetMergedFragmentId(
 
 All scene objects that are in the same Frozen World fragment (that is, attached to anchors that have the same fragmentId) must have their transforms adjusted by a single common adjustment transform, so you can rely on scene objects in the same fragment keeping relative position and orientation to each other. Keep in mind that orientations may change, too, so don't forget to adjust any directional vectors (for example, velocities and accelerations) as well.
 
-Note that the fragment itself that everything else is merged into is kept stationary. (Among all fragments that need to be merged, the one whose axis-aligned bounding box has the greatest volume in the Frozen World is chosen to remain stationary and be merged into.) Scene objects in the stationary fragment don't require adjustment, so this fragment isn't reported as an adjusted fragment.
+The fragment itself that everything else is merged into is kept stationary. (Among all fragments that need to be merged, the one whose axis-aligned bounding box has the greatest volume in the Frozen World is chosen to remain stationary and be merged into.) Scene objects in the stationary fragment don't require adjustment, so this fragment isn't reported as an adjusted fragment.
 
 
 #### 4. Apply the fragment merge results to the Frozen World itself
@@ -774,7 +774,7 @@ void FrozenWorld_RefitRefreeze_GetMergedFragmentId(
     FrozenWorld_FragmentId* mergedFragmentIdOut);
 ```
 
-All scene objects that are attached to one of the anchors reported by `FrozenWorld_RefitRefreeze_GetAdjustedAnchorIds()` must have their transforms adjusted by the attachment-point-specific adjustment transform supplied by `FrozenWorld_RefitRefreeze_CalcAdjustment()`. The scene object's attachment point itself must also adjusted, which happens automatically to the attachment point passed to this function.
+All scene objects that are attached to one of the anchors reported by `FrozenWorld_RefitRefreeze_GetAdjustedAnchorIds()` must have their transforms adjusted by the attachment-point-specific adjustment transform supplied by `FrozenWorld_RefitRefreeze_CalcAdjustment()`. The scene object's attachment point itself must also be adjusted, which happens automatically to the attachment point passed to this function.
 
 It's possible for an anchor (or fragment) to be reported by `FrozenWorld_RefitRefreeze_GetAdjustedAnchorIds()` or `…_GetAdjustedFragmentIds()` but for `FrozenWorld_RefitRefreeze_CalcAdjustment()` still to return false when it is called with an attachment point attached to that anchor. This can happen when the more in-depth calculations performed by `FrozenWorld_RefitRefreeze_CalcAdjustment()` come to the conclusion that, despite this anchor being within the refrozen area, it doesn't actually require any adjustment. In this case you're free to simply skip any follow-on processing you might otherwise want to do on your side after an adjustment.
 
@@ -788,8 +788,7 @@ Finally, after you have taken care of adjusting your own scene objects, correspo
 void FrozenWorld_RefitRefreeze_Apply();
 ```
 
-You can only call `FrozenWorld_RefitRefreeze_Apply()` only once for a re-freeze operation. After `FrozenWorld_RefitRefreeze_Apply()` has been called, the function calls required to re-fit your scene's objects (see [3. Inspect re-freeze results and re-fit the scene](#3-inspect-refreeze-results-and-re-fit-the-scene) above) cannot be called any longer until the next re-freeze has been prepared.
-
+You can only call `FrozenWorld_RefitRefreeze_Apply()` only once for a re-freeze operation. After `FrozenWorld_RefitRefreeze_Apply()` has been called, the function calls required to re-fit your scene's objects (see [3. Inspect re-freeze results and re-fit the scene](#3-inspect-re-freeze-results-and-re-fit-the-scene) above) cannot be called any longer until the next re-freeze has been prepared.
 
 ## Persistence
 
@@ -823,7 +822,7 @@ For any given stream you create using these functions, you can select what data 
     * `FrozenWorld_GetEdges(SPONGY, …)`
     * `FrozenWorld_GetSupports()`
 
-Note that you should enable both flags to get useful diagnostic recordings. Enabling just the includeTransient flag by itself only really makes sense if your only intention is to replay SPONGY snapshot data for offline scene testing.
+You should enable both flags to get useful diagnostic recordings. Enabling just the includeTransient flag by itself only really makes sense if your only intention is to replay SPONGY snapshot data for offline scene testing.
 
 
 ### Serializing (saving) Frozen World state
@@ -1012,6 +1011,7 @@ A recording stream is an unbounded sequence of records. Each record is a sequenc
 
 #### Field types
 
+```txt
 | Symbol | Storage | Description |
 |---|---|---|
 | uint16 | 2 bytes, little-endian | Unsigned 16-bit integer |
@@ -1019,7 +1019,7 @@ A recording stream is an unbounded sequence of records. Each record is a sequenc
 | uint64 | 8 bytes, little-endian | Unsigned 64-bit integer |
 | float | 4 bytes, little-endian | IEEE single-precision floating point |
 | *type*[N] | N times the size of *type* | Sequence of N instances of *type* |
-
+```
 
 #### Field padding and alignment
 
