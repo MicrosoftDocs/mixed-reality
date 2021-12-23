@@ -583,7 +583,7 @@ As the last step of doing a re-fit operation, some or all of your scene objects 
 
 ### Creating and tracking scene object attachment points
 
-Unfortunately, as device tracking errors accumulate, the result can be that things are close to each other (or even overlap) in Frozen World coordinate space, that are nowhere near each other in the real world. For that reason, Frozen World coordinates alone aren't sufficient to fully describe which ways two nearby scene objects should move, respectively, as the result of a re-fit operation.
+Unfortunately, as device tracking errors accumulate, the result can be that things are close to each other (or even overlap) in Frozen World coordinate space, which are nowhere near each other in the real world. For that reason, Frozen World coordinates alone aren't sufficient to fully describe which ways two nearby scene objects should move, respectively, as the result of a re-fit operation.
 
 __Attachment points__ are small data structures (see [Typedefs, structs, and constants used throughout this page](#typedefs-structs-and-constants-used-throughout-this-documentation) above) that describe the logical attachment of something to a certain part of the Frozen World.
 
@@ -1037,12 +1037,14 @@ While records may contain any number of chunks, each chunk tag (see [General chu
 
 Each chunk has the following structure:
 
+```txt
 | Type | Content | Additional information |
 |---|---|---|
 | uint16 | tag | Defines the kind of the chunk. |
 | uint16 | version | Defines the specific format of the chunk payload (together with the tag). <br/>Version numbers start with 1. Version number 0 is reserved and not used. |
 | uint32 | payload size | Number of chunk payload bytes (not including the general chunk header bytes). |
 | (…) | (…) | Chunk payload. |
+```
 
 The presence of the payload size in the chunk header is designed to allow readers to load entire chunks without having to parse them to find the end of the chunk or to skip chunks they cannot read.
 
@@ -1051,27 +1053,30 @@ The presence of the payload size in the chunk header is designed to allow reader
 
 #### Record header chunk
 
+```txt
 | Type | Content | Additional information
 |---|---|---|
 | uint16 | tag | 0x0000
 | uint16 | version | 1
 | uint32 | payload size | 4
 | float | relative time since last record | Number of (usually fractional) seconds that have passed since the last record in the stream. The value in the first record of the stream is ignored by readers.
-
+```
 
 #### Record footer chunk
 
+```txt
 | Type | Content | Additional information
 |---|---|---|
 | uint16 | tag | 0xFFFF
 | uint16 | version | 1
 | uint32 | payload size | 0
-
+```
 
 ### Data chunks
 
 #### Alignment configuration chunk
 
+```txt
 | Type | Content | Additional information
 |---|---|---|
 | uint16 | tag | 0x0101
@@ -1082,10 +1087,11 @@ The presence of the payload size in the chunk header is designed to allow reader
 | float | relevance drop-off radius | Greater than relevance saturation radius.
 | float | tightness saturation radius | > 0.0
 | float | tightness drop-off radius | Greater than tightness saturation radius.
-
+```
 
 #### Alignment supports chunk
 
+```txt
 | Type | Content | Additional information |
 |---|---|---|
 | uint16 | tag | 0x0401 |
@@ -1093,15 +1099,18 @@ The presence of the payload size in the chunk header is designed to allow reader
 | uint32 | payload size | 4 + 28 * number of supports |
 | uint32 | number of supports | |	
 | […] | [Support definitions](#support-definition) | One definition per support, in no particular order. |
+```
 
 #### Support definition
 
+```txt
 | Type | Content | Additional information
 |---|---|---|
 | uint64 | support anchor identifier | |
 | float[3] | support position from anchor | X, Y, Z (meters) |
 | float | support relevance | 0.0 … 1.0 |
 | float | support tightness | 0.0 … 1.0 |
+```
 
 ### Spongy snapshot chunks
 
@@ -1120,6 +1129,7 @@ Readers assume that the spongy graph is initially empty when a recording stream 
 
 #### Spongy snapshot header chunk
 
+```txt
 | Type | Content | Additional information |
 |---|---|---|
 | uint16 | tag | 0x0201 |
@@ -1128,19 +1138,20 @@ Readers assume that the spongy graph is initially empty when a recording stream 
 | float[3] | head position | X,Y,Z (meters) |
 | float[4] | head orientation | X,Y,Z,W (quaternion) |
 | uint64 | most significant anchor identifier | |	
-
+```
 
 #### Spongy graph chunk
 
 See [Graph chunk alternatives](#graph-chunk-alternatives) below for version, payload size, and payload.
 
+```txt
 | Type | Content | Additional information |
 |---|---|---|
 | uint16 | tag | 0x0202 – Complete graph definition<br/>0x0203 – Graph update |
 | uint16 | version | |	
 | uint32 | payload size | |	
 | (…) | (…) | |
-
+```
 
 ### Frozen snapshot chunks
 
@@ -1159,6 +1170,7 @@ Readers assume that the spongy graph is initially empty when a recording stream 
 
 #### Frozen snapshot header chunk
 
+```txt
 | Type | Content | Additional information |
 |---|---|---|
 | uint16 | tag | 0x0301 |
@@ -1169,19 +1181,20 @@ Readers assume that the spongy graph is initially empty when a recording stream 
 | float[3] | head position | X,Y,Z (meters) |
 | float[4] | head orientation | X,Y,Z,W (quaternion) |
 | uint64 | most significant anchor identifier | |
-
+```
 
 #### Frozen graph chunk
 
 See [Graph chunk alternatives](#graph-chunk-alternatives) below for version, payload size, and payload.
 
+```txt
 | Type | Content | Additional information |
 |---|---|---|
 | uint16 | tag | 0x0302 – [Complete graph definition](#complete-graph-definition)<br/>0x0303 – [Graph update](#graph-update) |
 | uint16 | version	|
 | uint32 | payload size |	
 | (…) | (…)	|
-
+```
 
 ### Graph chunk alternatives
 
@@ -1192,6 +1205,7 @@ Readers are required to support any graph chunk representation at any time.
 
 #### Complete graph definition
 
+```txt
 | Type | Content | Additional information |
 |---|---|---|
 | uint16 | tag | See specific uses above |
@@ -1201,9 +1215,11 @@ Readers are required to support any graph chunk representation at any time.
 | uint32 | number of edges | |
 | […] | [Anchor definitions](#anchor-definition) | One definition per anchor, in no particular order.<br/>Each anchor identifier can appear only once in this chunk. |
 | […] | [Edge definitions](#edge-definition) | One definition per edge, in no particular order.<br/>Each pair of edge anchor identifiers (1/2 or 2/1) can appear only once in this chunk. |
+```
 
 #### Graph update
 
+```txt
 | Type | Content | Additional information |
 |---|---|---|
 | uint16 | tag | See specific uses above. |
@@ -1217,33 +1233,42 @@ Readers are required to support any graph chunk representation at any time.
 | […] | Added or changed [edge definitions](#edge-definition) | One definition per added or changed edge, in no particular order. |
 | […] | Removed [anchor identifiers](#anchor-identifier-definition) | One identifier per removed anchor, in no particular order.<br/>Each anchor identifier can appear only once in this chunk. |	
 | […] | Removed [edge anchor identifiers](#edge-anchor-identifier-definition) | One definition per removed edge, in no particular order.<br/>Each pair of edge anchor identifiers (1/2 or 2/1) can appear only once in this chunk. |
+```
 
 #### Anchor definition
 
+```txt
 | Type | Content | Additional information |
 |---|---|---|
 | uint64 | anchor identifier | |
 | uint64 | anchor fragment identifier | |
 | float[3]| anchor position | X,Y,Z (meters) |
 | float[4] | anchor orientation | X,Y,Z,W (quaternion) |
+```
 
 #### Edge definition
 
+```txt
 | Type | Content | Additional information |
 |---|---|---|
 | uint64 | edge anchor identifier 1 | Edge anchor identifiers are stored in slots 1/2 in no particular order. |
 | uint64 | edge anchor identifier 2 | |
 | float | edge confidence | 0.0 … 1.0 |
+```
 
 #### Anchor identifier definition
 
+```txt
 | Type | Content | Additional information |
 |---|---|---|
 | uint64 | anchor identifier | |
+```
 
 #### Edge anchor identifier definition
 
+```txt
 | Type | Content | Additional information |
 |---|---|---|
 | uint64 | edge anchor identifier 1 | Edge anchor identifiers are stored in slots 1/2 in no particular order. |
 | uint64 | edge anchor identifier 2 | |
+```
