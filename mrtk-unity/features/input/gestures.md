@@ -35,8 +35,8 @@ When implementing the generic version, the *OnGestureCompleted* and *OnGestureUp
 
 - `Vector2` - 2D position gesture. Produced by touch screens to inform of their [`deltaPosition`](https://docs.unity3d.com/ScriptReference/Touch-deltaPosition.html).
 - `Vector3` - 3D position gesture. Produced by HoloLens to inform of:
-  - [`cumulativeDelta`](https://docs.unity3d.com/2017.2/Documentation/ScriptReference/XR.WSA.Input.ManipulationUpdatedEventArgs-cumulativeDelta.html) of a manipulation event
-  - [`normalizedOffset`](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.NavigationUpdatedEventArgs-normalizedOffset.html) of a navigation event
+  - [`cumulativeDelta`](https://docs.unity3d.com/2020.1/Documentation/ScriptReference/XR.WSA.Input.ManipulationUpdatedEventArgs-cumulativeDelta.html) of a manipulation event
+  - [`normalizedOffset`](https://docs.unity3d.com/2020.1/Documentation/ScriptReference/XR.WSA.Input.NavigationUpdatedEventArgs-normalizedOffset.html) of a navigation event
 
 <!---
   the above two links are not found.
