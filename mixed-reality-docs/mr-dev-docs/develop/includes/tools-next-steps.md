@@ -34,7 +34,8 @@ You can always go back to the [Unreal development checkpoints](../unreal/unreal-
 # [Javascript](#tab/javascript)
 
 > [!div class="nextstepaction"]
-> [Start your Javascript journey](../native/directx-development-overview.md)[JavaScript development overview](../javascript/javascript-development-overview.md) 
+> [Start your Javascript journey](..//javascript/tutorials/babylonjs-webxr-helloworld/introduction-01
+.md)[JavaScript development overview](../javascript/javascript-development-overview.md) 
 
 # [Native (OpenXR)](#tab/native)
 
