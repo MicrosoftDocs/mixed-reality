@@ -7,6 +7,8 @@
 ### [Recommended adapters](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 ### [Get help with PC compatibility](get-help-with-pc-compatibility.md)
 ### [Plug in your headset](plug-in-your-headset.md)
+### [Immersive headset hardware details](immersive-headset-hardware-details.md)
+### [Location based entertainment](location-based-experiences.md)
 ### [Install Windows Mixed Reality](install-windows-mixed-reality.md)
 ### [Set up Windows Mixed Reality](set-up-windows-mixed-reality.md)
 ### [Windows Mixed Reality Setup FAQ](wmr-setup-faq.yml)
@@ -48,4 +50,4 @@
 ### [HP Reverb G2 Controllers in Unity](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
 ### [HP Reverb G2 Controllers in Unreal](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 
-## [Contributing guide](contributing.md)
+## [Contributing guide](/windows/mixed-reality/contributing)

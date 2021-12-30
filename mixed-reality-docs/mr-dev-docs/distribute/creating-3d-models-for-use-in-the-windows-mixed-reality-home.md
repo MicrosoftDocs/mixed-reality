@@ -2,8 +2,8 @@
 title: Create 3D models for use in the home
 description: Asset requirements and authoring guidance for 3D models to be used in the Windows Mixed Reality home on both HoloLens and immersive (VR) headsets.
 author: thmignon
-ms.author: thmignon
-ms.date: 03/21/2018
+ms.author: v-vtieto
+ms.date: 11/02/2021
 ms.topic: article
 keywords: 3D, modeling, modeling guidance, asset requirements, authoring guidelines, launcher, 3D launcher, texture, materials, complexity, triangles, mesh, polygons, polycount, limits, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
@@ -15,11 +15,14 @@ The [Windows Mixed Reality home](../discover/navigating-the-windows-mixed-realit
 ## Asset requirements overview
 
 When creating 3D models for Windows Mixed Reality, there are some requirements that all assets must meet: 
-1. [Exporting](#exporting-models) - Assets must be delivered in the .glb file format (binary glTF)
+1. [Exporting](#exporting-models) - Assets must be delivered in the .glb (binary glTF), .obj, or .fbx file format
 2. [Modeling](#modeling-guidelines) - Assets must be less than 10k triangles, have no more than 64 nodes and 32 submeshes per LOD
 3. [Materials](#material-guidelines) - Textures can't be larger than 4096 x 4096 and the smallest mip map should be no larger than 4 on either dimension
 4. [Animation](#animation-guidelines) - Animations can't be longer than 20 minutes at 30 FPS (36,000 keyframes) and must contain <= 8192 morph target vertices
 5. [Optimizing](#optimizations) - Assets should be optimized using the [WindowsMRAssetConverter](https://github.com/Microsoft/glTF-Toolkit/releases). *Required on Windows OS Versions <= 1709** and recommended on Windows OS versions >= 1803
+
+> [!NOTE]
+> The 3D Viewer app supports different formats and resolutions, but ultimately converts models to .glb/glTF before displaying them in the Mixed Reality home.
 
 The rest of this article includes a detailed overview of these requirements and extra guidelines to ensure your models work well with the Windows Mixed Reality home. 
 
@@ -92,7 +95,6 @@ Value scale map showing areas of occluded light, which blocks reflections
 Tells the shader if something is metal or not. Raw Metal = 1.0 white Non-metal = 0.0 black. There can be transitional gray values that indicate something covering the raw metal such as dirt, but in general this map should be black and white only.
 
 ## Optimizations
-
 Windows Mixed Reality home offers a series of optimizations on top of the core glTF spec defined using custom extensions. These optimizations are required on Windows versions <= 1709 and recommended on newer versions of Windows. You can easily optimize any glTF 2.0 model using the [Windows Mixed Reality Asset Converter available on GitHub](https://github.com/Microsoft/glTF-Toolkit/releases). This tool will perform the correct texture packing and optimizations as specified below. For general usage, we recommend using the WindowsMRAssetConverter, but if you need more control over the experience and would like to build your own optimization pipeline then you can refer to the detailed specification below.  
 
 > [!NOTE]
