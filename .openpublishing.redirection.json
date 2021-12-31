@@ -1756,7 +1756,7 @@
 			"redirect_document_id": true
 		},
 		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/whats-new/contributing.md",
+			"source_path": "mixed-reality-docs/enthusiast-guide/contributing.md",
 			"redirect_url": "/windows/mixed-reality/contributing",
 			"redirect_document_id": true
 		},
