@@ -15,9 +15,9 @@ keywords: up-to-date, tools, get started, basics, unity, mixed reality headset, 
 
 * Depends on version 1.3.1 of Unity's OpenXR plugin.
   * Fixed a bug where UWP remoting app won't render desktop view after XR session is started.
-  * Fixed a bug where a restart of XR session prevent future restart to happen.
+  * Fixed a bug where a restart of XR session prevents future restart to happen.
   * Fixed incorrect negative values on controller linear velocities.
-* Fixed a bug that prevent UWP app to resume after suspend to background.
+* Fixed a bug that prevents UWP app to resume after suspend to background.
 
 ## 1.2.0 - 2021-11-18
 
@@ -25,10 +25,10 @@ keywords: up-to-date, tools, get started, basics, unity, mixed reality headset, 
   * Supports better HoloLens hand interaction action binding
   * Fixed a crash during app suspend/resume when taking MRC video
 * Depends on version 4.2.0 of XR management package.
-* Fixed a bug where sometimes the the project settings assets are not created before being used.
+* Fixed a bug where sometimes the project settings assets are not created before being used.
 * Added Microsoft.MixedReality.OpenXR.Remoting.AppRemoting.Listen function to support listen mode for a Holographic Remoting remote app.
 * Added new enum value HandshakePermissionDenied to enum type RemotingDisconnectReason.
-* Fixed a bug where after a failed remoting connection the XR session automatically restarted and repeat the failure.
+* Fixed a bug where after a failed remoting connection the XR session automatically restarted and repeated the failure.
 * When hand tracking becomes untracked or out of view, the corresponding InputDevice for hand joints will remain valid and report `isTracked = false`, instead of invalidating the InputDevice.
 
 ## 1.1.2 - 2021-10-27
