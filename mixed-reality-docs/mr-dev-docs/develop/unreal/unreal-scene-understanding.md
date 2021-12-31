@@ -15,11 +15,13 @@ Scene understanding provides the MRMesh with planes that are classified with the
 
 You can find more information in the [Scene Understanding](../../design/scene-understanding.md) document.
 
-[!NOTE] Using Scene Understanding in Remoting is not supported.  Spatial Mapping must be used instead.
+> [!NOTE]
+> Using Scene Understanding in Remoting is not supported.  Spatial Mapping must be used instead.
 
 
 ## Prerequisites
-[!IMPORTANT] Scene Understanding requires OpenXR and Unreal 4.27.1 or newer.
+> [!IMPORTANT] 
+> Scene Understanding requires OpenXR and Unreal 4.27.1 or newer.
 
 The Microsoft OpenXR plugin must be used from the [Unreal Marketplace](https://www.unrealengine.com/marketplace/en-US/product/ef8930ca860148c498b46887da196239) or [GitHub](https://github.com/microsoft/Microsoft-OpenXR-Unreal/releases).
 
@@ -28,8 +30,8 @@ Alternatively, start with the [OpenXR sample application](https://github.com/mic
 
 ## Setup
 To enable scene understanding on HoloLens:
-- Open **Edit > Project Settings** and scroll down to the **Platforms** section.    
-    + Select **HoloLens** and check **Spatial Perception**.
+1. Open **Edit > Project Settings** and scroll down to the **Platforms** section.    
+1. Select **HoloLens** and then select **Spatial Perception**.
 
 ![Screenshot of the HoloLens project settings capabilities with spatial perception highlighted](images/unreal-spatial-mapping-img-01.png)
 
@@ -40,7 +42,7 @@ To opt into scene understanding and use the **MRMesh** in a HoloLens game:
 
 ![Scene Understanding ARSettings](images/unreal-spatialmapping-arsettings.PNG)
 
-4. In the second **ARSettings** dropdown, find the **Horizontal Plane Detection** and **Vertical Plane Detection** checkboxes.  These can be selectively disabled if your experience only requires horizontal or vertical planes.  By default both horizontal and vertical planes will be used.
+4. In the second **ARSettings** dropdown, find the **Horizontal Plane Detection** and **Vertical Plane Detection** checkboxes.  These can be selectively disabled if your experience only requires horizontal or vertical planes.  By default, both horizontal and vertical planes will be used.
 
 ![Scene Understanding plane detection](images/unreal-sceneunderstanding-arsettings-planes.png)
 
@@ -48,16 +50,16 @@ To opt into scene understanding and use the **MRMesh** in a HoloLens game:
 ## Optional ini Settings
 You can modify the following parameters to update the spatial mapping runtime behavior:
 
-- Open **Edit > Project Settings**, scroll down to the **Platforms** section, and select **HoloLens > Spatial Mapping**: 
+- Open **Edit > Project Settings**, then scroll down to the **Platforms** section, and then select **HoloLens > Spatial Mapping**: 
 
 ![Scene Understanding Project Settings](images/unreal-spatialmapping-projectsettings.PNG)
 
 - **Spatial Meshing Volume Size** is the diameter of a sphere around the player to render and update scene understanding data.
-    + If the application runtime environment is expected to be large, this value may need to be large to match the real-world space. The value can be smaller if the application only needs to place holograms on surfaces immediately around the user. As the user walks around the world, the spatial mapping volume will move with them.
+- If the application runtime environment is expected to be large, this value may need to be large to match the real-world space. The value can be smaller if the application only needs to place holograms on surfaces immediately around the user. As the user walks around the world, the spatial mapping volume will move with them.
     
-When using scene understanding, large scanning volumes can hurt performance, since many more meshes are being generated than spatial mapping.  To keep draw calls lower, an additional ini setting can be used to restrict the volume height:
+When using scene understanding, large scanning volumes can hurt performance since many more meshes are being generated than spatial mapping.  To keep draw calls lower, an additional ini setting can be used to restrict the volume height:
 
-In the game's [Config/DefaultGame.ini](https://github.com/microsoft/Microsoft-OpenXR-Unreal/blob/076a5defe01e08360f382b2498d17708c00b85bf/MsftOpenXRGame/Config/DefaultGame.ini#L13) file, add a section [/Script/HoloLensSettings.SceneUnderstanding] with optional settings:
+- In the game's [Config/DefaultGame.ini](https://github.com/microsoft/Microsoft-OpenXR-Unreal/blob/076a5defe01e08360f382b2498d17708c00b85bf/MsftOpenXRGame/Config/DefaultGame.ini#L13) file, add a section [/Script/HoloLensSettings.SceneUnderstanding] with optional settings:
 
 ```
 [/Script/HoloLensSettings.SceneUnderstanding]
@@ -66,7 +68,7 @@ ShouldDoSceneUnderstandingMeshDetection=true
 ```
 - **SceneUnderstandingVolumeHeight** will restrict the scene understanding scan volume to a rectangular prism with this height and sides of length **Spatial Meshing Volume Size**.
 
-- **ShouldDoSceneUnderstandingMeshDetection** will add meshes to each of the identified planes.  Meshes will overlap some surfaces like tables more accurately than planes, but will incur additional draw and compute calls.  By default, only planes will be detected.
+- **ShouldDoSceneUnderstandingMeshDetection** will add meshes to each of the identified planes.  Meshes will overlap some surfaces, such as tables, more accurately than planes, but will incur additional draw and compute calls.  By default, only planes will be detected.
 
 
 ## Working with the MRMesh
@@ -81,18 +83,18 @@ Then you need to start scene understanding:
 In this example, we check the **CanDetectPlanes** function to check if we should toggle scene understanding or spatial mapping.  This will allow the code to work in both remoting and on a HoloLens device.  Otherwise, toggling scene understanding when remoting will not return any planes.
 
 To get access to the **MRMesh** at runtime:
-1. Add an **ARTrackableNotify** Component to a Blueprint actor. 
+1. Add an **ARTrackableNotify** component to a Blueprint actor. 
 
 ![Scene understanding AR Trackable Notify](images/unreal-spatialmapping-artrackablenotify.PNG)
 
-2. Select the **ARTrackableNotify** component and expand the **Events** section in the **Details** panel. 
-    - Select the **+** button on the events you want to monitor. 
+1. Select the **ARTrackableNotify** component and expand the **Events** section in the **Details** panel. 
+1. Select the **+** button on the events you want to monitor. 
 
 ![Scene understanding Events](images/unreal-spatialmapping-events.PNG)
 
 You can find the full list of events in the [UARTrackableNotify](https://docs.unrealengine.com/4.27/API/Runtime/AugmentedReality/UARTrackableNotifyComponent/index.html) component API.
 
-In this example as MRMeshes are identified, their object classification is queried and a different material is set based on what type of surface it is.
+In this example, as MRMeshes are identified, their object classification is queried and a different material is set based on what type of surface it is.
 
 ![Scene understanding add tracked geometry](images/unreal-sceneunderstanding-setmaterial.png)
 
@@ -100,9 +102,9 @@ To perform collision tests against scene understanding meshes, LineTraceTrackedO
 
 ![Scene understanding line trace collision detection](images/unreal-sceneunderstanding-linetrace.png)
 
-Disable **Test Plane Extents** to perform hit tests against only scene understanding meshes, otherwise both meshes and planes will be used.  Planes do not always cover real-world geometry so they could cause a false collision if used.  For example, open doorways will be covered by the plane from the wall around it.  
+Disable **Test Plane Extents** to perform hit tests against only scene understanding meshes, otherwise both meshes and planes will be used.  Planes don't always cover real-world geometry, so they could cause a false collision if used.  For example, open doorways will be covered by the plane from the wall around it.  
 
-The tracked geometry and object classification can be queried from the trace result, so you can perform different functions based on whether you hit a wall or a table for example.
+The tracked geometry and object classification can be queried from the trace result, so you can perform different functions based on whether you hit a wall or a table, for example.
 
 In this example, a debug coordinate system is drawn at the collision point on the closest scene understanding mesh that was hit.
 
