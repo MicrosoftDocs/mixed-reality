@@ -2,7 +2,7 @@
 title: Mixed Reality Dev Days
 description: Event page for Mixed Reality Dev Days
 author: qianw211 
-ms.author: v-qianwen
+ms.author: quianwen
 ms.date: 10/18/2021
 ms.topic: article
 keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Kinect, AltspaceVR, Azure Remote Rendering, MRTK and Unreal, Azure Spatial Anchors, MRTK and Unity, MRTK Building Blocks, MRTK Performance Tools, StereoKit, Microsoft Maquette, Immersive MR Experiences, Holographic remoting, OpenXR on Hololens 2
