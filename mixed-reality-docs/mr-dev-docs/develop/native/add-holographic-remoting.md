@@ -17,7 +17,7 @@ If you're new to Holographic Remoting, you may want to [read our overview](../ad
 
 ## HoloLens 2
 
-HoloLens developers using Holographic Remoting will need to update their apps to make them compatible with HoloLens 2. This requires a new version of the Holographic Remoting NuGet package. Be sure to use version 2.0.0.0 or above of the Holographic Remoting NuGet package when connecting to the Holographic Remoting Player on HoloLens 2. Otherwise the connection will fail.
+HoloLens developers using Holographic Remoting will need to update their apps to make them compatible with HoloLens 2. This requires a new version of the Holographic Remoting NuGet package. Be sure to use version 2.0.0.0 or above of the Holographic Remoting NuGet package when connecting to the Holographic Remoting Player on HoloLens 2. Otherwise, the connection will fail.
 
 >[!NOTE]
 > Guidance specific to HoloLens 2 can be found [here](holographic-remoting-create-remote-wmr.md).
