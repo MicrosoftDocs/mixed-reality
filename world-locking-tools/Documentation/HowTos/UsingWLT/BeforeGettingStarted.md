@@ -48,6 +48,6 @@ First, read and understand this conceptual documentation. At appropriate places 
 
 ## API Documentation
 
-* [WLT Core](/dotnet/api/microsoft.mixedReality.worldLocking.core)
+* [WLT Core](xref:Microsoft.MixedReality.WorldLocking.Core)
 * [WLT Tools](xref:Microsoft.MixedReality.WorldLocking.Tools)
 * [WLT with ASA](xref:Microsoft.MixedReality.WorldLocking.ASA)
