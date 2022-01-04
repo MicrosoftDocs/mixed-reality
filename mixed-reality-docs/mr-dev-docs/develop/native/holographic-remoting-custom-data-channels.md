@@ -2,7 +2,7 @@
 title: Custom Holographic Remoting data channels
 description: This page explains how custom data channels can be used with the Windows Mixed Reality API to send user data over the already-established Holographic Remoting connection.
 author: florianbagarmicrosoft
-ms.author: v-vtieto
+ms.author: vinnietieto
 ms.date: 9/3/2021
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windows mixed reality headset, virtual reality headset, data channels
