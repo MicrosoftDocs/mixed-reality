@@ -73,7 +73,7 @@ World Locking Tools addresses that problem with the [Space Pins](Concepts/Advanc
 
 ## Next
 
-These advanced mechanisms will be covered in later sections, but it<span class="x x-first x-last">'s </span>useful to first look in detail at World Locking Tools' baseline operation. Understanding what services the baseline operation does and doesn't supply will help <span class="x x-first x-last">you to determine</span> the proper use of advanced concepts later, and whether those advanced techniques are even required for a specific application.
+These advanced mechanisms will be covered in later sections, but it's useful to first look in detail at World Locking Tools' baseline operation. Understanding what services the baseline operation does and doesn't supply will help you to determine the proper use of advanced concepts later, and whether those advanced techniques are even required for a specific application.
 
 ## See also
 
