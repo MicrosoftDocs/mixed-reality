@@ -31,7 +31,7 @@ If a cloud anchor's ID is known, the cloud anchor may be retrieved by its ID. Th
 
 However, there are interesting scenarios in which the IDs for the cloud anchors within an area aren't known by a device, but if they cloud anchors could be retrieved, their spatial data and properties would combine to provide enough information to make them useful.
 
-[Find](xref:Microsoft.MixedReality.WorldLocking.ASA.IPublisher.Find*) searches the area around a device for cloud anchors, and returns any that it was able to identify. This process is known as [coarse relocation](https://docs.microsoft.com/azure/spatial-anchors/how-tos/set-up-coarse-reloc-unity).
+[Find](xref:Microsoft.MixedReality.WorldLocking.ASA.IPublisher.Find*) searches the area around a device for cloud anchors, and returns any that it was able to identify. This process is known as [coarse relocation](/azure/spatial-anchors/how-tos/set-up-coarse-reloc-unity).
 
 ## IBindingOracle - sharing cloud anchor IDs
 

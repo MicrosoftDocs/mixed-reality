@@ -30,7 +30,7 @@ Use of ASA v2.9+ imposes these additional restrictions:
 
 * Unity 2020.3 or later
 * XR SDK or OpenXR
-* At the time of this writing, ASA only targets ARM64 (not ARM32) on HoloLens2. Check the latest [ASA documentation](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens?tabs=azure-portal).
+* At the time of this writing, ASA only targets ARM64 (not ARM32) on HoloLens2. Check the latest [ASA documentation](/azure/spatial-anchors/quickstarts/get-started-unity-hololens?tabs=azure-portal).
 
 ## Setup for using ASA with WLT
 
@@ -42,5 +42,5 @@ Additionally, [notes on the software bridging the two systems](Samples/WLT_ASA_S
 
 * [WLT+ASA software overview](Samples/WLT_ASA_Software.md)
 * [WLT_ASA Samples Walkthrough](Samples/WLT_ASA_Sample.md)
-* [Azure Spatial Anchors Quick Start](https://docs.microsoft.com/azure/spatial-anchors/unity-overview)
-* [World Locking Tools for Unity](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/README.html)
+* [Azure Spatial Anchors Quick Start](/azure/spatial-anchors/unity-overview)
+* [World Locking Tools for Unity](~/Overview.md)
