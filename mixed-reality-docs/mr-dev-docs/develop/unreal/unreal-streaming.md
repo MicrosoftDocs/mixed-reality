@@ -2,7 +2,7 @@
 title: Streaming in Unreal
 description: Learn how to stream your Unreal apps to HoloLens 2, including streaming limitations and command line options.
 author: sw5813
-ms.author: v-vtieto
+ms.author: vinnietieto
 ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
