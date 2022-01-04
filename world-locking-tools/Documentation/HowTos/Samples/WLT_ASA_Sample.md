@@ -51,13 +51,13 @@ The first step is to install the Frozen World Engine DLL, v1.1.1. [Instructions 
 
 #### Creating spatial anchor resources
 
-This [Quick Start Guide](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens?tabs=azure-portal) goes through the steps to create an Azure account and the necessary spatial anchors resources. The Account ID, Account Domain, and Account Key will be necessary to run the sample. You will add them into the proper fields on the "Spatial Anchor Manager" script, on the SpacePinBinder object in the scene. Other authentication methods are supported, but the Account ID/Domain/Key is the easiest when getting started.
+This [Quick Start Guide](/azure/spatial-anchors/quickstarts/get-started-unity-hololens?tabs=azure-portal) goes through the steps to create an Azure account and the necessary spatial anchors resources. The Account ID, Account Domain, and Account Key will be necessary to run the sample. You will add them into the proper fields on the "Spatial Anchor Manager" script, on the SpacePinBinder object in the scene. Other authentication methods are supported, but the Account ID/Domain/Key is the easiest when getting started.
 
 ![Credentials fields](~/Images/ASA/InspectorAccount.jpg)
 
 #### Install the SDK
 
-Next, install Azure Spatial Anchors v2.9.0 using one of the methods described in [these instructions](https://docs.microsoft.com/azure/spatial-anchors/how-tos/setup-unity-project?tabs=unity-package-web-ui). I used the MR Feature Tool method.
+Next, install Azure Spatial Anchors v2.9.0 using one of the methods described in [these instructions](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=unity-package-web-ui). I used the MR Feature Tool method.
 
 ### Additional setup for Coarse Relocation
 
@@ -65,7 +65,7 @@ When using Coarse Relocation, additional setup is required when deploying to And
 
 #### What is Coarse Relocation?
 
-Coarse Relocation is a technology that allows you to search for previously created cloud anchors within your current vicinity. Details on Course Relocation can be found in the [Course Relocation section of the Azure Spatial Anchors documentation](https://docs.microsoft.com/azure/spatial-anchors/concepts/coarse-reloc).
+Coarse Relocation is a technology that allows you to search for previously created cloud anchors within your current vicinity. Details on Course Relocation can be found in the [Course Relocation section of the Azure Spatial Anchors documentation](/azure/spatial-anchors/concepts/coarse-reloc).
 
 This sample demonstrates finding cloud anchors either by Coarse Relocation, or explicitly by cloud anchor ID (GUID). If Coarse Relocation is enabled, the following additional setup steps are required. If you aren't interested in Coarse Relocation, you can disable it in the "Publisher ASA" component on the SpacePinBinder object.
 
@@ -93,7 +93,7 @@ The MRTK profile `XAmple XRSDK ToolkitConfigurationProfile` in XAmpleApp/CustomP
 
 #### Additional setup steps for Android
 
-To enable Coarse Relocation on Android, follow [these instructions](https://docs.microsoft.com/azure/spatial-anchors/how-tos/setup-unity-project?tabs=unity-package-web-ui#android-only-configure-the-maintemplategradle-file) to configure the Assets/Plugins/Android/mainTemplate.gradle file.
+To enable Coarse Relocation on Android, follow [these instructions](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=unity-package-web-ui#android-only-configure-the-maintemplategradle-file) to configure the Assets/Plugins/Android/mainTemplate.gradle file.
 
 Also, in the Assets/Plugins/Android/AndroidManifest.xml, a lot of permissions must be enabled in order to allow access to Wi-Fi on Android. Again, if incorporating elements of this project into your own project, you need to follow these steps as well in order to use Coarse Relocation. More details on required permissions to access Wi-Fi on Android are in [this post](https://answers.unity.com/questions/1543095/cant-enable-wifi-in-unity-on-android-device-duplic.html), and the post it links to.
 
@@ -176,5 +176,5 @@ Android: Internal shared storage/Android/data/com.WorldLockingTools.WLTASA/files
 ## See also
 
 * [WLT+ASA software overview](WLT_ASA_Software.md)
-* [Azure Spatial Anchors Quick Start](https://docs.microsoft.com/azure/spatial-anchors/unity-overview)
-* [World Locking Tools for Unity](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/README.html)
+* [Azure Spatial Anchors Quick Start](/azure/spatial-anchors/unity-overview)
+* [World Locking Tools for Unity](~/Overview.md)

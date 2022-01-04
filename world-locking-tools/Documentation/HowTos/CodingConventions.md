@@ -11,7 +11,7 @@ keywords: Unity, HoloLens, HoloLens 2, Augmented Reality, Mixed Reality, ARCore,
 
 # Coding guidelines
 
-This document outlines the recommended coding guidelines for World Locking Tools for Unity.  Most of these suggestions follow the [recommended standards from MSDN](https://docs.microsoft.com/dotnet/csharp/programming-guide/inside-a-program/coding-conventions).
+This document outlines the recommended coding guidelines for World Locking Tools for Unity.  Most of these suggestions follow the [recommended standards from MSDN](/dotnet/csharp/programming-guide/inside-a-program/coding-conventions).
 
 ---
 
