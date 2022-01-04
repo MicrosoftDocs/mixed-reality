@@ -29,7 +29,7 @@ To some degree, all names are somewhat arbitrary. Here are the names of the inte
 
 As a convenience, the WorldLockingManager supplies transformations between all of these spaces. For example, the most useful of these is [FrozenFromSpongy](xref:Microsoft.MixedReality.WorldLocking.Core.WorldLockingManager.FrozenFromSpongy), a [Pose](https://docs.unity3d.com/ScriptReference/Pose.html) which transforms from Spongy Space to Frozen Space. This is useful when converting coordinates returned by native APIs, which have no notion of WLT and so operate in Spongy Space, into Frozen Space. 
 
-Note that when using [MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html), no such translations are needed. Its coordinate space is already Frozen Space.
+Note that when using [MRTK](/windows/mixed-reality/mrtk-unity), no such translations are needed. Its coordinate space is already Frozen Space.
 
 Other conversions between the various spaces are available on the [WorldLockingManager](xref:Microsoft.MixedReality.WorldLocking.Core.WorldLockingManager), but are not generally needed.
 
