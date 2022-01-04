@@ -1,6 +1,6 @@
 ---
 title: Attachment points
-description: Pinning the virtual and physical worlds together at discrete points.
+description: Discrete points at which to pin the virtual and physical worlds together.
 author: fast-slow-still
 ms.author: mafinc
 ms.date: 10/06/2021

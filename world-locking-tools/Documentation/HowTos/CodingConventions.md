@@ -576,7 +576,7 @@ public class MyClass
 
 This chart can help you decide which `#if` to use, depending on your use cases and the build settings you expect.
 
-| | UWP IL2CPP | UWP .NET | Editor |
+| Define | UWP IL2CPP | UWP .NET | Editor |
 | --- | --- | --- | --- |
 | `UNITY_EDITOR` | False | False | True |
 | `UNITY_WSA` | True | True | True |
