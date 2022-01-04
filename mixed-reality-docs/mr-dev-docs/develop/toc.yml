@@ -397,7 +397,7 @@
     - name: Volume rendering
       href: native/volume-rendering.md
     - name: Performance tuning and debugging
-      href: advanced-concepts/installing-pix-hololen
+      href: advanced-concepts/installing-pix-hololens.md
 - name: Holographic Remoting
   items:
     - name: Overview
