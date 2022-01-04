@@ -49,7 +49,7 @@ If your project and scene are setup to use `AR Foundation`, then select the `AR 
 
 ## Using MRTK with WLT on XR SDK
 
-[MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html), in addition to the incredible value it provides for abstracting user interactions in VR and AR, simplifies targeting devices via the XR SDK greatly. The following are notes that might prove helpful when setting up MRTK to target specific devices.
+[MRTK](/windows/mixed-reality/mrtk-unity), in addition to the incredible value it provides for abstracting user interactions in VR and AR, simplifies targeting devices via the XR SDK greatly. The following are notes that might prove helpful when setting up MRTK to target specific devices.
 
 These all assume that the WLT Anchor Management Anchor Subsystem has been set appropriately as described in the previous section.
 
@@ -57,7 +57,7 @@ Be sure to run the `Mixed Reality Toolkit => Utilities => UnityAR => Update Scri
 
 ### Setup for Windows XR Plugin (HoloLens)
 
-See full instructions at [Getting started with MRTK and XR SDK](https://microsoft.github.io/MixedRealityToolkit-Unity/version/releases/2.5.1/Documentation/GettingStartedWithMRTKAndXRSDK.html?q=2020).
+See full instructions at [Getting started with MRTK and XR SDK](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk).
 
 If working in the WLT project, you can use the WLT provided “WLT HL2 MRTKProfile” on HoloLens2, or the "WLT AR MRTKProfile" on mobile devices, to start.
 
@@ -71,7 +71,7 @@ You only need one of either the `Windows MR Plugin` or the `Mixed Reality OpenXR
 
 ### Setup for ARCore XR Plugin (Android)
 
-To get an Android XR Plugin driving an MRTK AR application, follow the instructions at [How to configure MRTK for iOS and Android](https://microsoft.github.io/MixedRealityToolkit-Unity/version/releases/2.5.1/Documentation/CrossPlatform/UsingARFoundation.html?q=2020)
+To get an Android XR Plugin driving an MRTK AR application, follow the instructions at [How to configure MRTK for iOS and Android](/windows/mixed-reality/mrtk-unity/supported-devices/using-ar-foundation)
 
 > NOTE: You need ALL of:
 >

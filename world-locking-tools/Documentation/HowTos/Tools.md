@@ -39,7 +39,7 @@ In contrast, the AdjusterMoving component assumes that its target is mobile thro
 
 The Adapter components are intended for illustration only. If you find yourself using one of the Adapters, you should probably rethink how you are trying to use World Locking Tools.
 
-In particular, [MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html) already has built-in adapters, so no further coordinate system transform is required on the part of the application.
+In particular, [MRTK](/windows/mixed-reality/mrtk-unity) already has built-in adapters, so no further coordinate system transform is required on the part of the application.
 
 There may be times, especially if not using MRTK, when conversion from native resources, which will report in Spongy Space coordinates, to Frozen Space. In those cases, the application developer may find one of the Adapters included here to be a good reference.
 
@@ -47,7 +47,7 @@ There may be times, especially if not using MRTK, when conversion from native re
 
 * [ToggleWorldAnchor](xref:Microsoft.MixedReality.WorldLocking.Tools.ToggleWorldAnchor) - Similar to the WorldAnchorAdapter, but can be toggled. Also automatically converts to regular WorldAnchor behavior when the WorldLockingManager is disabled. Useful only for diagnostics.
 
-* [FrozenSpatialMapping](xref:Microsoft.MixedReality.WorldLocking.Tools.FrozenSpatialMapping) - An adapter manage and correctly render the results from a [SurfaceObserver](/windows/mixed-reality/spatial-mapping). The [MRTK Spatial Awareness](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html?q=spatial) system provides all of this functionality and more, and requires no adapter to work with World Locking Tools.
+* [FrozenSpatialMapping](xref:Microsoft.MixedReality.WorldLocking.Tools.FrozenSpatialMapping) - An adapter manage and correctly render the results from a [SurfaceObserver](/windows/mixed-reality/spatial-mapping). The [MRTK Spatial Awareness](/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started) system provides all of this functionality and more, and requires no adapter to work with World Locking Tools.
 
 * [FrozenTapToAdd](xref:Microsoft.MixedReality.WorldLocking.Tools.FrozenTapToAdd) - Directly interfacing with Unity's Input system requires conversion of incoming coordinate data as shown here. This is unnecessary with MRTK's input system.
 

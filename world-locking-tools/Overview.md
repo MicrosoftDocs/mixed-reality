@@ -21,7 +21,7 @@ World Locking Tools scale naturally with both the size and complexity of the sce
 
 ## Published documentation
 
-For the most up-to-date documentation, see the [World Locking Tools for Unity documentation portal](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/README.html).
+For the most up-to-date documentation, see the [World Locking Tools for Unity documentation portal](~/Overview.md).
 
 ## Getting started
 

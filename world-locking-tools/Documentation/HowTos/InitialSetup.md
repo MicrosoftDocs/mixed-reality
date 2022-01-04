@@ -41,7 +41,7 @@ World Locking Tools is broken into four layers. With the arrows pointing toward 
 
 The dashed lines indicate optional dependencies.
 
-While the Examples layer uses the [MixedRealityToolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html) (MRTK), none of the other layers have any external dependencies, and the full functionality is available compatible with but independent of MRTK.
+While the Examples layer uses the [MixedRealityToolkit](/windows/mixed-reality/mrtk-unity) (MRTK), none of the other layers have any external dependencies, and the full functionality is available compatible with but independent of MRTK.
 
 Further notes on the Applications dependencies follow below.
 
