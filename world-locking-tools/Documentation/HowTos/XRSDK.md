@@ -23,7 +23,7 @@ WLT currently supports **AR Subsystems versioned 2.X.Y for Unity 2019.4 (LTS)** 
 
 Targeting WLT for XR SDK is exceedingly simple. First, configure your project to use the XR Plugin system.
 
-If using `MRTK`, follow [these instructions](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk). There are additional tips and notes later in this article.
+If using `MRTK`, follow [these instructions](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk). There are additional tips and notes later in this article.
 
 If not using `MRTK`, then follow [these slightly more complicated instructions](https://docs.unity3d.com/Manual/configuring-project-for-xr.html).
 

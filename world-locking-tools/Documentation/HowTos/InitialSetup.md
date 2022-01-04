@@ -102,7 +102,7 @@ This path limit is generally not an issue with the World Locking Tools themselve
 
 > [!NOTE]
 >
-> The following describes manual installation of World Locking Tools and dependencies. A much more streamlined installation process is available via the [Mixed Reality Feature Tool](https://docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool). Installation via the Feature Tool is described [here](WLTviaMRFeatureTool.md). If the Feature Tool installs WLT, you can skip the following and proceed to [adding WLT to your scene](#adding-world-locking-tools-to-a-unity-scene)
+> The following describes manual installation of World Locking Tools and dependencies. A much more streamlined installation process is available via the [Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool). Installation via the Feature Tool is described [here](WLTviaMRFeatureTool.md). If the Feature Tool installs WLT, you can skip the following and proceed to [adding WLT to your scene](#adding-world-locking-tools-to-a-unity-scene)
 
 World Locking Tools relies on NuGet for Unity for distribution.
 
@@ -265,15 +265,15 @@ The [RayPins](Samples/RayPins.md) expands on the capabilities introduced by the 
 
 If unfamiliar with the basics of creating, building, and deploying AR apps to the HoloLens family of devices, here are some references that might help get your started.
 
-> [Unity Development Overview](https://docs.microsoft.com/windows/mixed-reality/unity-development-overview) - Unity for MR/AR development.
+> [Unity Development Overview](/windows/mixed-reality/unity-development-overview) - Unity for MR/AR development.
 >
-> [MR Basics 100](https://docs.microsoft.com/windows/mixed-reality/holograms-100) - Walk through getting started developing for HoloLens
+> [MR Basics 100](/windows/mixed-reality/holograms-100) - Walk through getting started developing for HoloLens
 >
-> [HoloLens 2 Tutorials](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base) - Walk through getting started developing for HoloLens 2.  
+> [HoloLens 2 Tutorials](/windows/mixed-reality/mrlearning-base) - Walk through getting started developing for HoloLens 2.  
 >
-> [Coordinate Systems](https://docs.microsoft.com/windows/mixed-reality/coordinate-systems) Coordinate space implications in AR development.
+> [Coordinate Systems](/windows/mixed-reality/coordinate-systems) Coordinate space implications in AR development.
 >
-> * Note that World Locking Tools solve the issues discussed [here](https://docs.microsoft.com/windows/mixed-reality/coordinate-systems#why-a-single-rigid-coordinate-system-cannot-be-used-beyond-5-meters).
+> * Note that World Locking Tools solve the issues discussed [here](/windows/mixed-reality/coordinate-systems#why-a-single-rigid-coordinate-system-cannot-be-used-beyond-5-meters).
 
 ## Having trouble?
 

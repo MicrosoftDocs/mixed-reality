@@ -47,7 +47,7 @@ There may be times, especially if not using MRTK, when conversion from native re
 
 * [ToggleWorldAnchor](xref:Microsoft.MixedReality.WorldLocking.Tools.ToggleWorldAnchor) - Similar to the WorldAnchorAdapter, but can be toggled. Also automatically converts to regular WorldAnchor behavior when the WorldLockingManager is disabled. Useful only for diagnostics.
 
-* [FrozenSpatialMapping](xref:Microsoft.MixedReality.WorldLocking.Tools.FrozenSpatialMapping) - An adapter manage and correctly render the results from a [SurfaceObserver](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping). The [MRTK Spatial Awareness](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html?q=spatial) system provides all of this functionality and more, and requires no adapter to work with World Locking Tools.
+* [FrozenSpatialMapping](xref:Microsoft.MixedReality.WorldLocking.Tools.FrozenSpatialMapping) - An adapter manage and correctly render the results from a [SurfaceObserver](/windows/mixed-reality/spatial-mapping). The [MRTK Spatial Awareness](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html?q=spatial) system provides all of this functionality and more, and requires no adapter to work with World Locking Tools.
 
 * [FrozenTapToAdd](xref:Microsoft.MixedReality.WorldLocking.Tools.FrozenTapToAdd) - Directly interfacing with Unity's Input system requires conversion of incoming coordinate data as shown here. This is unnecessary with MRTK's input system.
 

@@ -15,7 +15,7 @@ keywords: Unity, HoloLens, HoloLens 2, Augmented Reality, Mixed Reality, ARCore,
 
 The Mixed Reality Feature Tool can be an extremely useful way to get the World Locking Tools, as well as other valuable Mixed Reality packages for Unity.
 
-More information on the MR Feature Tool can be found in its [online documentation](https://docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool), but it is extremely easy to use.
+More information on the MR Feature Tool can be found in its [online documentation](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool), but it is extremely easy to use.
 
 ![Mixed Reality Feature Tool screenshot](~/Images/Screens/UPMSamples/MRFeatureTool.JPG)
 
@@ -91,7 +91,7 @@ To get the source matching a release, find the [appropriate branch](https://gith
 
 ### When installing from Mixed Reality Feature Tool
 
-Windows imposes a [maximum path length of 260 characters](https://docs.microsoft.com/windows/win32/fileio/maximum-file-path-limitation?tabs=cmd). The Frozen World Engine package has some very long internal paths. The Mixed Reality Feature Tool (or Unity's UPM, depending whom you want to blame), adds some very long strings in the middle.
+Windows imposes a [maximum path length of 260 characters](/windows/win32/fileio/maximum-file-path-limitation?tabs=cmd). The Frozen World Engine package has some very long internal paths. The Mixed Reality Feature Tool (or Unity's UPM, depending whom you want to blame), adds some very long strings in the middle.
 
 You will know if you have passed the MAX_PATH limit if you see errors in the Unity Console complaining about not being able to find part of a path.
 
