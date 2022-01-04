@@ -2,7 +2,7 @@
 title: Preview your work with Holographic Remoting
 description: Use Holographic Remoting in Play Mode to preview your application changes on a device without deploying an app.
 author: keveleigh
-ms.author: v-vtieto
+ms.author: vinnietieto
 ms.date: 07/26/2021
 ms.topic: article
 keywords: Unity, remoting, holographic remoting, holographic remoting player, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset, unity play mode
