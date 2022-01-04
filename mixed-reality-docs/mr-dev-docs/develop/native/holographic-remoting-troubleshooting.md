@@ -99,7 +99,7 @@ The following APIs are currently **not** supported when using Holographic Remoti
 
 ## See Also
 
-* [Holographic Remoting Overview](holographic-remoting-overview.md)
+* [Holographic Remoting Overview](../advanced-concepts/holographic-remoting-overview.md)
 * [Holographic Remoting Version History](holographic-remoting-version-history.md)
 * [Writing a Holographic Remoting remote app using Windows Mixed Reality APIs](holographic-remoting-create-remote-wmr.md)
 * [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md)
