@@ -2,7 +2,7 @@
 title: Use PC resources to power your app with Holographic Remoting remote app
 description: Use PC resources, instead of relying on the on-board processing power of the HoloLens, to power your app with Holographic Remoting
 author: vtieto
-ms.author: v-vtieto
+ms.author: vinnietieto
 ms.date: 10/05/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, augmented reality, virtual reality, mixed reality headsets, learn, tutorial, getting started, holographic remoting, desktop, preview, debug
