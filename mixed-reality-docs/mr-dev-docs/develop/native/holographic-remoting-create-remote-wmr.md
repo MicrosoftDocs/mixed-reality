@@ -2,7 +2,7 @@
 title: Writing a Holographic Remoting remote app using the Windows Mixed Reality API
 description: Learn how to stream content rendered on a remote machine to HoloLens 2 with Holographic Remoting using the Windows Mixed Reality API.  
 author: florianbagarmicrosoft
-ms.author: v-vtieto
+ms.author: vinnietieto
 ms.date: 9/3/2021
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windows mixed reality headset, virtual reality headset, NuGet
