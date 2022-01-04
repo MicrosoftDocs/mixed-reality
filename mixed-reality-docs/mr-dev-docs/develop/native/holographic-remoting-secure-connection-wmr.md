@@ -2,7 +2,7 @@
 title: Secure Connection with Holographic Remoting and the Windows Mixed Reality API
 description: This page explains how to configure Holographic Remoting to use encrypted and authenticated connections between player and remote apps with the Windows Mixed Reality API.
 author: florianbagarmicrosoft
-ms.author: v-vtieto
+ms.author: vinnietieto
 ms.date: 9/3/2021
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windows mixed reality headset, virtual reality headset, security, authentication, server-to-client
