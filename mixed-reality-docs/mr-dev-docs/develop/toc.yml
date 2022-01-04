@@ -264,6 +264,8 @@
         href: unreal/unreal-hand-tracking.md
       - name: Spatial mapping
         href: unreal/unreal-spatial-mapping.md
+      - name: Scene Understanding
+        href: unreal/unreal-scene-understanding.md
       - name: Spatial audio
         href: unreal/unreal-spatial-audio.md
       - name: Local spatial anchors
