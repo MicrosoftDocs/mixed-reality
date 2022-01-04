@@ -2,7 +2,7 @@
 title: Preview and debug your app with Holographic Remoting for Play mode
 description: Use Holographic Remoting for Play mode to preview and debug your app
 author: vtieto
-ms.author: v-vtieto
+ms.author: vinnietieto
 ms.date: 08/12/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, augmented reality, virtual reality, mixed reality headsets, learn, tutorial, getting started, holographic remoting, desktop, preview, debug
