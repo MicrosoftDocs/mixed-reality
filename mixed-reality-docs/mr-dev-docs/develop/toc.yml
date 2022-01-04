@@ -395,17 +395,17 @@
     - name: Volume rendering
       href: native/volume-rendering.md
     - name: Performance tuning and debugging
-      href: advanced-concepts/installing-pix-hololens.md
+      href: advanced-concepts/installing-pix-hololen
 - name: Holographic Remoting
   items:
     - name: Overview
-      href: native/holographic-remoting-overview.md
+      href: advanced-concepts/holographic-remoting-overview.md
       displayname: Holographic Remoting
     - name: Terminology
       href: native/holographic-remoting-terminology.md
       displayname: Holographic Remoting              
     - name: Store player
-      href: native/holographic-remoting-player.md
+      href: advanced-concepts/holographic-remoting-player.md
       displayname: Holographic Remoting
     - name: OpenXR API
       items:
