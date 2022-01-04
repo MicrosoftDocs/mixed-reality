@@ -3,7 +3,7 @@ title: Holographic Remoting Version History
 description: Stay up to date on the version history of the Holographic Remoting feature for HoloLens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 09/29/2021
+ms.date: 01/04/2022
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
@@ -12,6 +12,9 @@ keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reali
 
 > [!NOTE]
 > This guidance is specific to Holographic Remoting on HoloLens 2 and Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md).
+
+## Version 2.7.2 (December 15, 2021) <a name="v2.7.2"></a>
+* Various bug fixes and stability improvements.
 
 ## Version 2.7.1 (October 26, 2021) <a name="v2.7.1"></a>
 * Various bug fixes and stability improvements.
@@ -27,18 +30,18 @@ keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reali
 
 ## Version 2.6.1 (July 20, 2021) <a name="v2.6.1"></a>
 * The XR_MSFT_holographic_remoting_speech extension now allows reinitialization of the speech recognizer with new parameters during a running session.
-* Fixed an issue where speech recognition reliability decreased over multiple connections.
+* Fixed an issue where speech recognition reliability lessened over multiple connections.
 * Various bug fixes and stability improvements.
 
 ## Version 2.6.0 (June 10, 2021) <a name="v2.6.0"></a>
 * Holographic Remoting using the OpenXR API now supports:
   * The new XR_MSFT_holographic_remoting_speech extension, which allows applications to listen to custom speech commands in various languages.
-  * The XR_MSFT_scene_understanding extension, which provides applications with a structured, high-level representation of the planes, meshes, and objects in the user's environment. This enables the development of spatially aware applications; however, you should keep in mind that XR_SCENE_COMPUTE_CONSISTENCY_OCCLUSION_OPTIMIZED_MSFT is the only consistency supported by xrComputeNewSceneMSFT.
-  * The XR_MSFT_spatial_graph_bridge extension, which allows applications to create XrSpace handles to track the Spatial Graph Nodes of other Windows Mixed Reality device platform libraries or APIs. However, you should keep in mind that XR_SPATIAL_GRAPH_NODE_TYPE_STATIC_MSFT is the only node type supported by xrCreateSpatialGraphNodeSpaceMSFT. 
+  * The XR_MSFT_scene_understanding extension. It provides applications with a high-level representation of the planes, meshes, and objects in the user's environment. The extension enables development of spatially aware applications. Note, XR_SCENE_COMPUTE_CONSISTENCY_OCCLUSION_OPTIMIZED_MSFT is the only consistency supported by xrComputeNewSceneMSFT in this version.
+  * The XR_MSFT_spatial_graph_bridge extension, which allows applications to create XrSpace handles to track the Spatial Graph Nodes of other Windows Mixed Reality device platform libraries or APIs. Note, with XR_SPATIAL_GRAPH_NODE_TYPE_STATIC_MSFT is the only node type supported by xrCreateSpatialGraphNodeSpaceMSFT in this version. 
 * Holographic Remoting using the Mixed Reality API now supports:
   * The SpatialGraphInteropPreview.CreateCoordinateSystemForNode overloads, which allow applications to track static Spatial Graph Nodes so that users can reason about places and things in their environment.
 * Holographic Remoting using both the OpenXR and Mixed Reality APIs now supports:
-  * The Microsoft.MixedReality.SceneUnderstanding SDK, which allows applications to compute a description of the scene surrounding the user (such as walls, floors, and surfaces) providing quads, meshes, and content placement cues.
+ * The Microsoft.MixedReality.SceneUnderstanding SDK. It allows applications to compute a description of the scene surrounding the user (such as walls, floors, and surfaces) providing quads, meshes, and content placement cues.
   * The Microsoft.MixedReality.QR SDK, which allows applications to track the location, size, and content of detected QR codes.
   * Over-Rendering, which reduces black regions at the sides on the HMD.
 * The OpenXR remote sample has been updated to include:	
@@ -52,21 +55,21 @@ keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reali
 
 ## Version 2.5.0 (February 12, 2021) <a name="v2.5.0"></a>
 * Holographic Remoting using the [OpenXR API](../native/openxr.md) now supports:
-  * XR_MSFT_spatial_anchor extension. This extension allows an application to create spatial anchors, which are arbitrary free space points in the user’s physical environment that will be tracked by the runtime.
+* XR_MSFT_spatial_anchor extension. This extension allows an application to create spatial anchors. Spatial anchors are arbitrary points in the user’s physical environment that will be tracked by the runtime.
   * XR_MSFT_controller_model extension. This extension provides a mechanism to load GLTF models for controllers.
   * Custom data channels as part of the XR_MSFT_holographic_remoting extension. An example for that is shown in the [OpenXR remote sample](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
-* Improved synchronization between player and remote side. This allows dynamically changing pose and frame buffering, which ensures that remote-rendered content smoothly reaches the displays at the expected target frame rate.
-* Improved performance of the Holographic Remoting player available via the Microsoft Store. On HoloLens 2, the player now consistently runs at 60 frames per second.
+* Improved synchronization between player and remote side. The improvement allows dynamically changing pose and frame buffering, which ensures that remote rendered content smoothly reaches the displays at the expected target frame rate.
+* Improved performance of the Holographic Remoting player available via the Microsoft Store.
 * Optimized transmission of spatial surface meshes, which can be queried via [SpatialSurfaceObserver](/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) by a remote app.
 * Fixed an issue in which calling SpatialAnchorManager methods or releasing anchors caused exceptions on disconnect.
 * Fixed threading issue leading to crashes when closing PlayerContext or RemoteContext instances.
-* Holographic Remoting Player on Desktop: Display an error message when Windows Mixed Reality is not installed instead of closing silently.
+* Holographic Remoting Player on Desktop: Display an error message when Windows Mixed Reality is missing instead of closing silently.
 * Lots of other bug fixes and stability improvements.
 
 ## Version 2.4.1 (January 22, 2021) <a name="v2.4.1"></a>
 
 * Fixed issue with SpatialAnchorManager::RequestStoreAsync not working reliably when called while connecting.
-* Fixed issue with SpatialAnchorManager::TrySave not correctly saving an anchor if anchor in question is not locatable.
+* Fixed issue with SpatialAnchorManager::TrySave not correctly saving an anchor if the anchor in question can't be located.
 
 ## Version 2.4.0 (December 1, 2020) <a name="v2.4.0"></a>
 
@@ -108,9 +111,9 @@ lease updated to at least version 2.2.1.
 
 ## Version 2.1.3 (May 25, 2020) <a name="v2.1.3"></a>
 
-* Changed behavior of [HolographicSpace.CameraAdded](/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) event. In previous versions, it was **not** guaranteed that an added [HolographicCamera](/uwp/api/windows.graphics.holographic.holographiccamera) also has a valid [HolographicCameraPose](/uwp/api/windows.graphics.holographic.holographiccamerapose) when creating the next frame via [HolographicSpace.CreateNextFrame](/uwp/api/windows.graphics.holographic.holographicspace.createnextframe). Starting with version 2.1.3, [HolographicSpace.CameraAdded](/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) is synchronized with pose data coming from the Holographic Remoting Player. Users can expect that when a camera is added there is also a valid [HolographicCameraPose](/uwp/api/windows.graphics.holographic.holographiccamerapose) available for that camera on the next frame.
+* Changed behavior of [HolographicSpace.CameraAdded](/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) event. In previous versions, it was **not** guaranteed that a newly added [HolographicCamera](/uwp/api/windows.graphics.holographic.holographiccamera) also has a valid [HolographicCameraPose](/uwp/api/windows.graphics.holographic.holographiccamerapose) when creating the next frame via [HolographicSpace.CreateNextFrame](/uwp/api/windows.graphics.holographic.holographicspace.createnextframe). Starting with version 2.1.3, [HolographicSpace.CameraAdded](/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) is synchronized with pose data coming from the Holographic Remoting Player. Users can expect that when a camera is newly added it also has a valid [HolographicCameraPose](/uwp/api/windows.graphics.holographic.holographiccamerapose) available for that camera on the next frame.
 * Added **Disabled** to DepthBufferStreamResolution, which can be used to disable depth buffer streaming via RemoteContext.ConfigureDepthVideoStream. Note, if used [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer) will fail with *E_ILLEGAL_METHOD_CALL*.
-* The Holographic Remoting Player's startup screen has been redesigned and now doesn't block the users view.
+* The Holographic Remoting Player's startup screen has been redesigned and now doesn't block the user's view.
 * Stability improvements and bug fixes.
 
 ## Version 2.1.2 (April 5, 2020) <a name="v2.1.2"></a>
@@ -146,7 +149,7 @@ lease updated to at least version 2.2.1.
 ## Version 2.0.14 (October 26, 2019) <a name="v2.0.14"></a>
 
 * Support for new PerceptionDevice APIs (Windows 10 November 2019 Update).
-* Fixed issue, which prevent hold gesture events being triggered by SpatialGestureRecognizer.
+* Fixed issue, which prevents hold gesture events being triggered by SpatialGestureRecognizer.
 * Fixed threading issue when using SpatialSurfaceObserver.SetBoundingVolume.
 
 ## Version 2.0.12 (October 18, 2019) <a name="v2.0.12"></a>

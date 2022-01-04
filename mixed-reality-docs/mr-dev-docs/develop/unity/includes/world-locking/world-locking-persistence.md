@@ -13,25 +13,25 @@ Local anchor persistence is currently only supported on the HoloLens family of d
 An additional API called the **XRAnchorStore** enables anchors to be persisted between sessions. The XRAnchorStore is a representation of the saved anchors on a device. Anchors can be persisted from **ARAnchors** in the Unity scene, loaded from storage into new **ARAnchors**, or deleted from storage.
 
 > [!NOTE]
-> These anchors are to be saved and loaded on the same device. Cross-device anchor storage will be supported through Azure Spatial Anchors in a future release.
+> These anchors are to be saved and loaded on the same device. Cross-device anchors are supported through [Azure Spatial Anchors](/windows/mixed-reality/develop/unity/shared-experiences-in-unity#azure-spatial-anchors).
 
 ### Namespaces
 
-For **Unity 2020 and OpenXR**: 
+For **Unity 2020 and OpenXR**:
 
-``` cs
+```cs
 using Microsoft.MixedReality.ARSubsystems.XRAnchorStore
 ```
 
-or **Unity 2019/2020 + Windows XR Plugin**: 
+or **Unity 2019/2020 + Windows XR Plugin**:
 
-```cs 
+```cs
 using UnityEngine.XR.WindowsMR.XRAnchorStore
 ```
 
 ### Public methods
 
-```cs 
+```cs
 {
     // A list of all persisted anchors, which can be loaded.
     public IReadOnlyList<string> PersistedAnchorNames { get; }
@@ -54,7 +54,7 @@ using UnityEngine.XR.WindowsMR.XRAnchorStore
 }
 ```
 
-### Getting an anchor store reference 
+### Getting an anchor store reference
 
 To load the XRAnchorStore with **Unity 2020 and OpenXR**, use extension method on the XRAnchorSubsystem, the subsystem of an ARAnchorManager:
 
@@ -149,8 +149,8 @@ private void SaveGame()
     // Save data about holograms positioned by this world anchor
     if (!this.savedRoot) // Only Save the root once
     {
-           this.savedRoot = this.store.Save("rootGameObject", anchor);
-           Assert(this.savedRoot);
+        this.savedRoot = this.store.Save("rootGameObject", anchor);
+        Assert(this.savedRoot);
     }
 }
 ```
