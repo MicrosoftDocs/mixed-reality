@@ -120,12 +120,12 @@ lease updated to at least version 2.2.1.
 
 ## Version 2.1.1 (March 20, 2020) <a name="v2.1.1"></a>
 
-* Fixed video-encoding issue with remote apps when using AMD GPUs.
+* Fixed video encoding issue with remote apps when using AMD GPUs.
 * Holographic Remoting Player performance improvements.
 
 ## Version 2.1.0 (March 11, 2020) <a name="v2.1.0"></a>
 
-* Switched network transport to use [RTP](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol) via UDP. Secure connections use [SRTP](https://en.wikipedia.org/wiki/Secure_Real-time_Transport_Protocol) now. Note, the [Holographic Remoting Player](holographic-remoting-player.md) is still compatible with all previously release Holographic Remoting versions. To benefit from the new network transport both, the Holographic Remoting Player and the remote app in question, have to use version 2.1.0.
+* Switched network transport to use [RTP](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol) via UDP. Secure connections use [SRTP](https://en.wikipedia.org/wiki/Secure_Real-time_Transport_Protocol) now. Note, the [Holographic Remoting Player](holographic-remoting-player.md) is still compatible with all previously released Holographic Remoting versions. To benefit from the new network transport, both the Holographic Remoting Player and the remote app in question have to use version 2.1.0.
 * Added support for [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_). 
 
 ## Version 2.0.20 (February 2, 2020) <a name="v2.0.20"></a>
@@ -176,7 +176,7 @@ lease updated to at least version 2.2.1.
 
 ## See Also
 
-* [Holographic Remoting Overview](holographic-remoting-overview.md)
+* [Holographic Remoting Overview](../advanced-concepts/holographic-remoting-overview.md)
 * [Writing a Holographic Remoting remote app using Windows Mixed Reality APIs](holographic-remoting-create-remote-wmr.md)
 * [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md)
 * [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)
