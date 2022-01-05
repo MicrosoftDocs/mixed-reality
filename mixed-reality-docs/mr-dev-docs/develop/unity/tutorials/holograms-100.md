@@ -145,7 +145,7 @@ Now that we have created our cube, it is time to do a quick check in device. You
 
 ### For HoloLens use Unity Remoting
 
-1. On your HoloLens, install and run the [Holographic Remoting Player](../../advanced-concepts/holographic-remoting-player.md), available from the Windows Store. Launch the application on the device, and it will enter a waiting state and show the IP address of the device. Note down the IP.
+1. On your HoloLens, install and run the [Holographic Remoting Player](../../native/holographic-remoting-player.md), available from the Windows Store. Launch the application on the device, and it will enter a waiting state and show the IP address of the device. Note down the IP.
 2. Open **Window > XR > Holographic Emulation**.
 3. Change **Emulation Mode** from **None** to **Remote to Device**.
 4. In **Remote Machine**, enter the IP address of your HoloLens noted earlier.
