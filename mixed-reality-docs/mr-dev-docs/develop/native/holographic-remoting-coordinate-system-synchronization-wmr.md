@@ -21,6 +21,31 @@ With the Windows Mixed Reality API, the user coordinate system is wrapped into a
 To set and update the user coordinate system, call ```UpdateUserSpatialFrameOfReference``` on the player context and pass a [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialCoordinateSystem) into it.
 A [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialCoordinateSystem) can, for example, be a [SpatialStationaryFrameOfReference](/uwp/api/windows.perception.spatial.spatialstationaryframeofreference), [SpatialLocatorAttachedFrameOfReference](/uwp/api/windows.perception.spatial.SpatialLocatorAttachedFrameOfReference), or a [SpatialAnchor](/uwp/api/windows.perception.spatial.SpatialAnchor).
 
+```cpp
+// In the Player app:
+
+// Create a stationary frame of reference
+winrt::Windows::Perception::Spatial::SpatialStationaryFrameOfReference spatialFrameOfReference = nullptr;
+winrt::Windows::Perception::Spatial::SpatialLocator spatialLocator = winrt::Windows::Perception::Spatial::SpatialLocator::GetDefault();
+if (spatialLocator != nullptr)
+{
+    spatialFrameOfReference = spatialLocator.CreateStationaryFrameOfReferenceAtCurrentLocation(float3(0.0f, 0.0f, 0.0f), quaternion(0, 0, 0, 1), 0.0);
+}
+
+...
+
+// Update the user coordinate system with the coordinate system of the spatial frame of reference
+try
+{
+    SpatialCoordinateSystem userCoordinateSystem = spatialFrameOfReference.CoordinateSystem();
+    m_playerContext.UpdateUserSpatialFrameOfReference(userCoordinateSystem);
+}
+catch (...)
+{
+}
+
+```
+
 > [!NOTE]
 > With the sample [SpatialStationaryFrameOfReference](/uwp/api/windows.perception.spatial.spatialstationaryframeofreference), ```UpdateUserSpatialFrameOfReference``` has to be called in a regular interval to avoid drifting after loss of device tracking, even if the user coordinate system has not changed!
 
@@ -29,5 +54,12 @@ A [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialCoordinat
 To access the user coordinate system, call ```GetUserSpatialFrameOfReference``` on the remote context.
 ```GetUserSpatialFrameOfReference``` returns a [SpatialStationaryFrameOfReference](/uwp/api/windows.perception.spatial.spatialstationaryframeofreference), which represents the user coordinate system.
 
+```cpp
+// In the Remote app:
+winrt::Windows::Perception::Spatial::SpatialStationaryFrameOfReference spatialUserFrameOfReference = m_remoteContext.GetUserSpatialFrameOfReference();
+```
+
 ## See Also
-* [Coordinate System Synchronization with Holographic Remoting Overview](../advanced-concepts/holographic-remoting-coordinate-system-synchronization.md)
+
+* [Coordinate System Synchronization with Holographic Remoting Overview](holographic-remoting-coordinate-system-synchronization.md)
+* [Coordinate System Synchronization with Holographic Remoting and the OpenXR API](holographic-remoting-coordinate-system-synchronization-openxr.md)
