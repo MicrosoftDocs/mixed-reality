@@ -2,7 +2,7 @@
 title: Getting started with OpenXR
 description: Get started using the portable OpenXR API standard on Windows Mixed Reality and HoloLens 2 headsets.
 author: thetuvix
-ms.author: v-vtieto
+ms.author: vinnietieto
 ms.date: 10/14/2021
 ms.topic: article
 keywords: OpenXR, Khronos, BasicXRApp, Windows Mixed Reality, OpenXR Developer Tools, DirectX, native, native app, custom engine, middleware, getting started, 101, preview extensions, OpenXR runtime version, system status
