@@ -2,7 +2,7 @@
 title: OpenXR
 description: Build an engine using the portable OpenXR API standard and deploy it to Windows Mixed Reality and HoloLens 2 headsets.
 author: thetuvix
-ms.author: v-vtieto
+ms.author: vinnietieto
 ms.date: 10/14/2021
 ms.topic: article
 keywords: OpenXR, roadmap, extensions, Khronos, BasicXRApp, DirectX, native, native app, custom engine, middleware
