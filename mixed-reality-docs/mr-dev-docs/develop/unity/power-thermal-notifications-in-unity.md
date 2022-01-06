@@ -57,6 +57,57 @@ The following table is a breakdown of system actions by peripheral.  Actions des
 > [!NOTE]
 > <!--Last Resort Note-->Actions in the "Last Resort", "Software Shutdown", and "Failsafe" columns cannot be suppressed
 
+## Suggestions for Application Response
+
+The following is a breakdown of suggested mitigations an application can take based on which peripheral(s) need mitigation.  It is up to the application developer to determine which of these actions may have a more significant effect on each peripheral given every application is different.  Developers should prioritize actions they take based on the impact to the end user.
+
+### Suggested Mitigations by Peripheral
+
+#### CPU
+
+* Reduce framerate
+* Adjust per frame workload
+  * Physics operations
+  * Minimize background CPU cycles
+
+#### GPU
+
+* Reduce framerate
+* Reduce resolution
+* Reduce scene complexity (number of triangles and texture)
+* Reduce field of view (FOV)
+* Foveation
+* Reduce PhotoVideoCamera frame processing
+
+#### Dram
+
+* Texture complexity
+* Reduce framerate
+* Reduce resolution
+* Foveation
+
+#### Network
+
+* Reduce bandwidth
+* Reduce video call framerate
+* Stop background network activity (ex: application telemetry)
+
+#### Battery
+
+* Move to a cooler environment
+* Use device without a charger
+
+#### Display
+
+* Increase the number of black pixels in the scene
+* Use low-power colors (ex: green)
+
+#### PhotoVideoCamera
+
+* Reduce framerate
+* Reduce resolution
+* Stop using the PhotoVideoCamera
+
 ## Registering for Events
 
 To get notifications, there are three requirements:
@@ -69,7 +120,7 @@ You won't receive events if your application doesn't meet these requirements.
 
 The first item can be checked using the [IsSupported](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.issupported) function.  If the system supports notifications for at least one of the peripherals in the mask, the function will return true.  You can choose not to check support using this function as long as your application doesn't explicitly depend on PowerThermalNotification SDK events.
 
-Once you meet the 3 requirements above, you will receive initial notifications for all supported [PeripheralsOfInterest](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.peripheralsofinterest).  If you later change [PeripheralsOfInterest](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.peripheralsofinterest) or [PowerThermalMitigationLevelChanged](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.powerthermalmitigationlevelchanged), you will receive another set of notifications based on current status.
+Once you meet the three requirements above, you will receive initial notifications for all supported [PeripheralsOfInterest](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.peripheralsofinterest).  If you later change [PeripheralsOfInterest](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.peripheralsofinterest) or [PowerThermalMitigationLevelChanged](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.powerthermalmitigationlevelchanged), you will receive another set of notifications based on current status.
 
 Here's a code snippet for grabbing the [PowerThermalNotification](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification) class instance and configuring it for notifications for both [PeripheralFlags.Cpu](/dotnet/api/microsoft.mixedreality.powerthermalnotification.peripheralflags) and [PeripheralFlags.PhotoVideoCamera](/dotnet/api//microsoft.mixedreality.powerthermalnotification.peripheralflags):
 
