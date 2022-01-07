@@ -5,7 +5,7 @@
 
 ### Next Development Checkpoint
 
-If you're following the Unity for HoloLens development checkpoint journey we've laid out, your next task is to work through our HoloLens 2-tutorial series.
+If you're following the Unity for HoloLens development checkpoint journey we've laid out, your next task is to work through our HoloLens 2 tutorial series.
 
 > [!div class="nextstepaction"]
 > [HoloLens 2 tutorial series](../unity/tutorials/mr-learning-base-01.md)
