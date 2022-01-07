@@ -34,7 +34,7 @@ You can always go back to the [Unreal development checkpoints](../unreal/unreal-
 # [JavaScript](#tab/javascript)
 
 > [!div class="nextstepaction"]
-> [Start your Javascript journey](..//javascript/tutorials/babylonjs-webxr-helloworld/introduction-01.md)
+> [Start your JavaScript journey](..//javascript/tutorials/babylonjs-webxr-helloworld/introduction-01.md)
 
 > [!div class="nextstepaction"]
 > [JavaScript development overview](../javascript/javascript-development-overview.md) 
