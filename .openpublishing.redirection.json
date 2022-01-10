@@ -2,9 +2,15 @@
 	"redirections": [
 
 
-
-// redirect of main MRTK page.
-// vtieto, 9/21/21
+		{
+			"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "The content of the following section is:",
+			"//b": "redirect of main MRTK page.",
+			"//c": "vtieto, 9/21/21" 
+		},
 
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/mrtk-getting-started.md",
@@ -12,7 +18,14 @@
 			"redirect_document_id": false
 		},
 
-		// HoloLens
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "The content of the following section is:",
+			"//b": "Hololens"
+		},
+
 		{
             "source_path": "mixed-reality-docs/mr-dev-docs/accounts-on-hololens.md",
             "redirect_url": "/hololens/hololens-identity",
@@ -258,7 +271,15 @@
 			"redirect_url": "/windows/mixed-reality/mrlearning-sharing(photon)-ch4",
 			"redirect_document_id": false
 		},
-		// Deprecated
+
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "The content of the following section is:",
+			"//b": "Deprecated"
+		},
+		
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/article-template.md",
 			"redirect_url": "/windows/mixed-reality/deprecated/article-template",
@@ -274,7 +295,14 @@
 			"redirect_url": "/windows/mixed-reality/deprecated/mixed-reality-250",
 			"redirect_document_id": true
 		},
-		// Design
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "The content of the following section is:",
+			"//b": "Design"
+		},
+		
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/about-this-design-guidance.md",
 			"redirect_url": "/windows/mixed-reality/design/about-this-design-guidance",
@@ -565,7 +593,15 @@
 			"redirect_url": "/windows/mixed-reality/design/voice-input",
 			"redirect_document_id": true
 		},
-		// Develop
+
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "The content of the following section is:",
+			"//b": "Develop"
+		},
+
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/development.md",
 			"redirect_url": "/windows/mixed-reality/develop/development",
@@ -581,7 +617,15 @@
 			"redirect_url": "/windows/mixed-reality/develop/mixed-reality-cloud-services",
 			"redirect_document_id": false
 		},
-		// Develop >> Unity >> Tutorials
+
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "The content of the following section is:",
+			"//b": "Develop >> Unity >> Tutorials"
+		},
+
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/holograms-100.md",
 			"redirect_url": "/windows/mixed-reality/develop/unity/tutorials/holograms-100",
@@ -873,7 +917,15 @@
 			"redirect_url": "/windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch5",
 			"redirect_document_id": true
 		},
-		// Develop >> Unity
+
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "The content of the following section is:",
+			"//b": "Develop >> Unity"
+		},
+
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/best-practices-for-working-with-unity-and-visual-studio.md",
 			"redirect_url": "/windows/mixed-reality/develop/unity/best-practices-for-working-with-unity-and-visual-studio",
@@ -1104,7 +1156,15 @@
 			"redirect_url": "/windows/mixed-reality/develop/unity/vuforia-development-overview",
 			"redirect_document_id": true
 		},
-		// Develop >> Unreal >> tutorials
+
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "The content of the following section is:",
+			"//b": "Develop >> Unreal >> Tutorials"
+		},
+
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/unreal-uxt-ch1.md",
 			"redirect_url": "/windows/mixed-reality/develop/unreal/tutorials/unreal-uxt-ch1",
@@ -1130,7 +1190,15 @@
 			"redirect_url": "/windows/mixed-reality/develop/unreal/tutorials/unreal-uxt-ch5",
 			"redirect_document_id": true
 		},
-		// Develop >> Unreal
+
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "The content of the following section is:",
+			"//b": "Develop >> Unreal"
+		},
+
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/performance-recommendations-for-unreal.md",
 			"redirect_url": "/windows/mixed-reality/develop/unreal/performance-recommendations-for-unreal",
@@ -1221,7 +1289,15 @@
 			"redirect_url": "/windows/mixed-reality/develop/unreal/",
 			"redirect_document_id": true
 		},
-		// Native
+
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "The content of the following section is:",
+			"//b": "Native"
+		},
+
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/coordinate-systems-in-directx.md",
 			"redirect_url": "/windows/mixed-reality/develop/native/coordinate-systems-in-directx",
@@ -1292,7 +1368,15 @@
 			"redirect_url": "/windows/mixed-reality/develop/native/voice-input-in-directx",
 			"redirect_document_id": true
 		},
-		// Develop >> Web
+
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "The content of the following section is:",
+			"//b": "Develop >> Web"
+		},
+
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/javascript-development-overview.md",
 			"redirect_url": "/windows/mixed-reality/develop/web/javascript-development-overview",
@@ -1308,7 +1392,15 @@
 			"redirect_url": "/windows/mixed-reality/develop/web/webxr-overview",
 			"redirect_document_id": true
 		},
-		// Web >> JavaScript
+
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "The content of the following section is:",
+			"//b": "Javascript"
+		},
+
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/web/javascript-development-overview.md",
 			"redirect_url": "/windows/mixed-reality/develop/javascript/javascript-development-overview",
@@ -1324,7 +1416,15 @@
 			"redirect_url": "/windows/mixed-reality/develop/javascript/webxr-overview",
 			"redirect_document_id": true
 		},
-		// Porting-Apps
+
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "The content of the following section is:",
+			"//b": "Porting-Apps"
+		},
+
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/building-2d-apps.md",
 			"redirect_url": "/windows/mixed-reality/develop/porting-apps/building-2d-apps",
@@ -1345,7 +1445,15 @@
 			"redirect_url": "/windows/mixed-reality/develop/porting-apps/updating-your-steamvr-application-for-windows-mixed-reality",
 			"redirect_document_id": true
 		},
-		// Platform Capabilities and APIs
+
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "The content of the following section is:",
+			"//b": "Platform capabilities and APIs"
+		},
+
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/advanced-hololens-emulator-and-mixed-reality-simulator-input.md",
 			"redirect_url": "/windows/mixed-reality/develop/platform-capabilities-and-apis/advanced-hololens-emulator-and-mixed-reality-simulator-input",
@@ -1367,7 +1475,14 @@
 			"redirect_document_id": false
 		},
 		
-		// Holographic Remoting start
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "The content of the following section is:",
+			"//b": "Holographic Remoting start"
+		},
+
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/add-holographic-remoting.md",
 			"redirect_url": "/windows/mixed-reality/develop/platform-capabilities-and-apis/add-holographic-remoting",
@@ -1413,7 +1528,13 @@
 			"redirect_url": "/windows/mixed-reality/develop/platform-capabilities-and-apis/holographic-remoting-version-history",
 			"redirect_document_id": true
 		},
-		// Holographic Remoting end
+
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "This marks the end of Holographic Remoting"
+		},
 
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/hololens-emulator-archive.md",
@@ -1520,7 +1641,15 @@
 			"redirect_url": "/windows/mixed-reality/develop/platform-capabilities-and-apis/volume-rendering",
 			"redirect_document_id": true
 		},
-		// Discover
+
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "The content of the following section is:",
+			"//b": "Discover"
+		},
+
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/case-studies-overview.md",
 			"redirect_url": "/windows/mixed-reality/discover/case-studies-overview",
@@ -1581,7 +1710,15 @@
 			"redirect_url": "/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home",
 			"redirect_document_id": false
 		},
-		// Distribute
+
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "The content of the following section is:",
+			"//b": "Distribute"
+		},
+
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/3d-app-launcher-design-guidance.md",
 			"redirect_url": "/windows/mixed-reality/distribute/3d-app-launcher-design-guidance",
@@ -1617,7 +1754,15 @@
 			"redirect_url": "/windows/mixed-reality/distribute/submitting-an-app-to-the-microsoft-store",
 			"redirect_document_id": true
 		},
-		// Out of Scope
+
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "The content of the following section is:",
+			"//b": "Out of scope"
+		},
+
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/babylonjs-overview.md",
 			"redirect_url": "/windows/mixed-reality/out-of-scope/babylonjs-overview",
@@ -1748,7 +1893,15 @@
 			"redirect_url": "/windows/mixed-reality/out-of-scope/voice-design",
 			"redirect_document_id": true
 		},
-		// What's New
+
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "The content of the following section is:",
+			"//b": "What's New"
+		},
+
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/azure-services.md",
 			"redirect_url": "/windows/mixed-reality/develop/mixed-reality-cloud-services",
@@ -1784,15 +1937,30 @@
 			"redirect_url": "/windows/mixed-reality/whats-new/sf-academy-events",
 			"redirect_document_id": true
 		},
-		// MRTK-Unity
+
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "The content of the following section is:",
+			"//b": "MRTK-Unity"
+		},
+
 		{
 			"source_path": "mrtk-unity/install-the-tools.md",
 			"redirect_url": "/windows/mixed-reality/develop/install-the-tools",
 			"redirect_document_id": false
 		},
 
-// redirects after merge of platform caps and apis reorg 9/2/21
-// Section 1: platform-caps-and-apis md files to advanced-concepts
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "The content of the following section is:",
+			"//b": "redirects after merge of platform caps and apis reorg 9/2/21",
+			"//c": "Section 1: platform-caps-and-apis md files to advanced-concepts"
+		},
+
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/advanced-hololens-emulator-and-mixed-reality-simulator-input.md",
 			"redirect_url": "/windows/mixed-reality/develop/advanced-concepts/advanced-hololens-emulator-and-mixed-reality-simulator-input",
@@ -1821,7 +1989,14 @@
 			"redirect_document_id": false
 		},
 
-		// Holographic Remoting start
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "The content of the following section is:",
+			"//b": "Holographic Remoting start"
+		},
+
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/add-holographic-remoting.md",
 			"redirect_url": "/windows/mixed-reality/develop/native/add-holographic-remoting",
@@ -1909,8 +2084,14 @@
 			"redirect_url": "/windows/mixed-reality/develop/native/holographic-remoting-custom-data-channels-openxr",
 			"redirect_document_id": false
 		},
-		// Holographic Remoting end
 
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "This marks:",
+			"//b": "Holographic Remoting end"
+		},
 
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/platform-capabilities-and-apis/hololens-emulator-archive.md",
@@ -2042,8 +2223,14 @@
 
 		},
 
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
+			"//a": "The content of the following section is:",
+			"//b": "Unity Tutorials--Deprecated on 9/17/21 by Vinnie Tieto"
+		},
 
-		// Unity Tutorials--Deprecated on 9/17/21 by Vinnie Tieto
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/tutorials/mr-learning-base-01.md",
 			"redirect_url": "/learn/paths/beginner-hololens-2-tutorials/",
@@ -2194,10 +2381,6 @@
 			"redirect_url": "/learn/modules/pc-holographic-remoting-tutorials/4-create-holographic-remoting-pc-application",
 			"redirect_document_id": false
 		}
-
-// Platform reorg changes 10/20/21
-// Section 2
-
 
 
 	]
