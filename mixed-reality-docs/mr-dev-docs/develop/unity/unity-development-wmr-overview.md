@@ -1,9 +1,9 @@
 ---
 title: Unity development for VR
 description: Getting started building mixed reality apps in Unity for VR and Windows Mixed Reality immersive headsets.
-author: hferrone
-ms.author: kurtie
-ms.date: 12/11/2020
+author: qianw211
+ms.author: qianwen
+ms.date: 1/10/2022
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, mixed reality, development, getting started, new project, porting, capability, camera, simulation, emulation, documentation, mixed reality headset, windows mixed reality headset, virtual reality headset, what is virtual reality, what is augmented reality, MRTK, mixed reality toolkit, voice input, locatable camera, emulator, Azure, tutorials
@@ -80,10 +80,3 @@ Before going out into the world of mixed reality on your own, we recommend takin
 
 * [VR enthusiast guide](/windows/mixed-reality/enthusiast-guide/vr-journey)
 * [Unity Asset Store](https://assetstore.unity.com)
-
-## See also 
-
-* [Recommended settings for Unity](recommended-settings-for-unity.md)
-* [Performance recommendations for Unity](performance-recommendations-for-unity.md)
-* [Build and deploy a Unity Visual Studio solution to the Hololens](build-and-deploy-to-hololens.md)
-* [Best practices for working with Unity and Visual Studio](best-practices-for-working-with-unity-and-visual-studio.md)

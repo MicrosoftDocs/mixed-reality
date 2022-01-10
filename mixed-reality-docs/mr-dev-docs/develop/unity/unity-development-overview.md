@@ -1,9 +1,9 @@
 ---
 title: Unity development for HoloLens
 description: Get started building mixed reality apps in Unity and HoloLens with our curated checkpoint journey.
-author: hferrone
-ms.author: kurtie
-ms.date: 12/9/2020
+author: qianw211
+ms.author: qianwen
+ms.date: 1/10/2022
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, mixed reality, development, getting started, new project, porting, capability, camera, simulation, emulation, documentation, mixed reality headset, windows mixed reality headset, virtual reality headset, what is virtual reality, what is augmented reality, MRTK, mixed reality toolkit, spatial mapping, voice input, locatable camera, emulator, Azure, tutorials
@@ -125,9 +125,6 @@ In addition to this documentation available on docs.microsoft.com, Unity install
 | [Scripting reference](https://docs.unity3d.com/ScriptReference/) | This section of the documentation contains details of the scripting API that Unity provides and is accessible online from the Unity Editor by clicking **Help > Scripting Reference** |
 | [Manual](https://docs.unity3d.com/Manual/index.html) | This manual is designed to help you learn how to use Unity, from basic to advanced techniques, and is accessible online or from the Unity Editor by clicking **Help > Manual** |
 
-> [!div class="nextstepaction"]
-> [Explore MRTK](mrtk-getting-started.md)
-
 ## Have feedback?
 
 You can find us on the [Unity Forums](https://aka.ms/unityforums) by tagging **Microsoft** and a combination of the following tags to help us understand what plugin you're providing feedback for:
@@ -138,14 +135,3 @@ You can find us on the [Unity Forums](https://aka.ms/unityforums) by tagging **M
 * XRSDK
 * Legacy XR
 
-## See also
-
-* [Mixed Reality Toolkit v2](mrtk-getting-started.md)
-* [MR Basics 100: Getting started with Unity](tutorials/holograms-100.md)
-* [Recommended settings for Unity](recommended-settings-for-unity.md)
-* [Performance recommendations for Unity](performance-recommendations-for-unity.md)
-* [Build and deploy a Unity Visual Studio solution to the Hololens](build-and-deploy-to-hololens.md)
-* [Using the Windows namespace with Unity apps for HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
-* [Best practices for working with Unity and Visual Studio](best-practices-for-working-with-unity-and-visual-studio.md)
-* [Unity Play Mode](unity-play-mode.md)
-* [Porting guides](../porting-apps/porting-guides.md)
