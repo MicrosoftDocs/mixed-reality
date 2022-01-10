@@ -3,6 +3,10 @@
 
 
 		{
+			"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
 			"//a": "The content of the following section is:",
 			"//b": "redirect of main MRTK page.",
 			"//c": "vtieto, 9/21/21" 
@@ -14,7 +18,10 @@
 			"redirect_document_id": false
 		},
 
-		{
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
 			"//a": "The content of the following section is:",
 			"//b": "Hololens"
 		},
@@ -265,7 +272,10 @@
 			"redirect_document_id": false
 		},
 
-		{
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
 			"//a": "The content of the following section is:",
 			"//b": "Deprecated"
 		},
@@ -285,7 +295,10 @@
 			"redirect_url": "/windows/mixed-reality/deprecated/mixed-reality-250",
 			"redirect_document_id": true
 		},
-		{
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
 			"//a": "The content of the following section is:",
 			"//b": "Design"
 		},
@@ -581,7 +594,10 @@
 			"redirect_document_id": true
 		},
 
-		{
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
 			"//a": "The content of the following section is:",
 			"//b": "Develop"
 		},
@@ -602,7 +618,10 @@
 			"redirect_document_id": false
 		},
 
-		{
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
 			"//a": "The content of the following section is:",
 			"//b": "Develop >> Unity >> Tutorials"
 		},
@@ -899,7 +918,10 @@
 			"redirect_document_id": true
 		},
 
-		{
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
 			"//a": "The content of the following section is:",
 			"//b": "Develop >> Unity"
 		},
@@ -1135,7 +1157,10 @@
 			"redirect_document_id": true
 		},
 
-		{
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
 			"//a": "The content of the following section is:",
 			"//b": "Develop >> Unreal >> Tutorials"
 		},
@@ -1166,7 +1191,10 @@
 			"redirect_document_id": true
 		},
 
-		{
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
 			"//a": "The content of the following section is:",
 			"//b": "Develop >> Unreal"
 		},
@@ -1262,7 +1290,10 @@
 			"redirect_document_id": true
 		},
 
-		{
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
 			"//a": "The content of the following section is:",
 			"//b": "Native"
 		},
@@ -1338,7 +1369,10 @@
 			"redirect_document_id": true
 		},
 
-		{
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
 			"//a": "The content of the following section is:",
 			"//b": "Develop >> Web"
 		},
@@ -1359,7 +1393,10 @@
 			"redirect_document_id": true
 		},
 
-		{
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
 			"//a": "The content of the following section is:",
 			"//b": "Javascript"
 		},
@@ -1380,7 +1417,10 @@
 			"redirect_document_id": true
 		},
 
-		{
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
 			"//a": "The content of the following section is:",
 			"//b": "Porting-Apps"
 		},
@@ -1406,7 +1446,10 @@
 			"redirect_document_id": true
 		},
 
-		{
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
 			"//a": "The content of the following section is:",
 			"//b": "Platform capabilities and APIs"
 		},
@@ -1432,7 +1475,10 @@
 			"redirect_document_id": false
 		},
 		
-		{
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
 			"//a": "The content of the following section is:",
 			"//b": "Holographic Remoting start"
 		},
@@ -1483,7 +1529,10 @@
 			"redirect_document_id": true
 		},
 
-		{
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
 			"//a": "This marks the end of Holographic Remoting"
 		},
 
@@ -1593,7 +1642,10 @@
 			"redirect_document_id": true
 		},
 
-		{
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
 			"//a": "The content of the following section is:",
 			"//b": "Discover"
 		},
@@ -1659,7 +1711,10 @@
 			"redirect_document_id": false
 		},
 
-		{
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
 			"//a": "The content of the following section is:",
 			"//b": "Distribute"
 		},
@@ -1700,7 +1755,10 @@
 			"redirect_document_id": true
 		},
 
-		{
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
 			"//a": "The content of the following section is:",
 			"//b": "Out of scope"
 		},
@@ -1836,7 +1894,10 @@
 			"redirect_document_id": true
 		},
 
-		{
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
 			"//a": "The content of the following section is:",
 			"//b": "What's New"
 		},
@@ -1877,7 +1938,10 @@
 			"redirect_document_id": true
 		},
 
-		{
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
 			"//a": "The content of the following section is:",
 			"//b": "MRTK-Unity"
 		},
@@ -1888,7 +1952,10 @@
 			"redirect_document_id": false
 		},
 
-		{
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
 			"//a": "The content of the following section is:",
 			"//b": "redirects after merge of platform caps and apis reorg 9/2/21",
 			"//c": "Section 1: platform-caps-and-apis md files to advanced-concepts"
@@ -1922,7 +1989,10 @@
 			"redirect_document_id": false
 		},
 
-		{
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
 			"//a": "The content of the following section is:",
 			"//b": "Holographic Remoting start"
 		},
@@ -2015,7 +2085,10 @@
 			"redirect_document_id": false
 		},
 
-		{
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
 			"//a": "This marks:",
 			"//b": "Holographic Remoting end"
 		},
@@ -2150,7 +2223,10 @@
 
 		},
 
-		{
+		{	"source_path": "ignore",
+			"redirect_url": "ignore",
+			"redirect_document_id": false,
+			"//": "COMMENT:",
 			"//a": "The content of the following section is:",
 			"//b": "Unity Tutorials--Deprecated on 9/17/21 by Vinnie Tieto"
 		},
