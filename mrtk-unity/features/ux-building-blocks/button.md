@@ -256,7 +256,7 @@ An **Icon Set** is a shared set of icon assets used by the `ButtonConfigHelper` 
 To change which style your button uses, expand the *Icons* dropdown in the ButtonConfigHelper and select from the *Icon Style* dropdown.
 
 To create a new button icon:
-1. In the **Project** window, right click **Assets** to open the context menu. (You can also right-click any blank space inside the **Assets** folder or one of its subfolders.)
+1. In the **Project** window, right-click **Assets** to open the context menu. (You can also right-click any blank space inside the **Assets** folder or one of its subfolders.)
 1. Select **Create > Mixed Reality > Toolkit > Icon Set.**
    
     ![Screenshot of the Icon Set menu item.](../images/button/001-icon-set.png)
