@@ -154,7 +154,7 @@ When detected in a single frame, the size is expected to have at most a 1% error
 
 ### How close do I need to be to the QR code to detect it?
 
-The distance obviously depends on the size of the QR code, and also what version it is.
+The distance obviously depends on the size of the QR code, and also what version it is. For more information, see [distance and angular position from the QR code](#distance-and-angular-position-from-the-qr-code).
 
 * On HoloLens 2, for a version 1 QR code varying from 5 cm sides to 25-cm sides, the minimum detection distance ranges from 0.25 meters to 0.5 meters. The furthest these can be detected from goes from about 0.5 m for the smallest code to 2 meters for the bigger.
 * On Windows Mixed Reality, these distances for the sizes are halved.
