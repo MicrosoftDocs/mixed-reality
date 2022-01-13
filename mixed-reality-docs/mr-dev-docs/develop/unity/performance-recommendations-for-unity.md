@@ -13,7 +13,7 @@ ms.localizationpriority: high
 
 This article builds on the [performance recommendations for mixed reality](../advanced-concepts/understanding-performance-for-mixed-reality.md), but focuses on Unity-specific improvements.
 
-We recently released an application called Quality Fundamentals that covers common performance, design, and environment issues and solutions for HoloLens 2 apps. This app is a great visual demo for the content the follows.
+We recently released an application called Quality Fundamentals that covers common performance, design, and environment issues and solutions for HoloLens 2 apps. This app is a great visual demo for the content that follows.
 
 > [!div class="nextstepaction"]
 > [Download the Quality Fundamentals app](https://www.microsoft.com/p/quality-fundamentals/9mwz852q88fw)
