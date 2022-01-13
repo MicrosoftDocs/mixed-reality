@@ -19,14 +19,15 @@ Windows Mixed Reality uses the app model provided by the [Universal Windows Plat
 
 The lifecycle of a mixed reality app involves standard app concepts such as placement, launch, termination, and removal.
 
-## Placement is launch
+## Placement and launch
 
-Every app starts in mixed reality by placing an app tile (just a [Windows secondary tile](/uwp/api/Windows.UI.StartScreen.SecondaryTile)) in the [Windows Mixed Reality home](../discover/navigating-the-windows-mixed-reality-home.md). These app tiles, on placement, will start running the app. These app tiles persist and stay at their placed location, acting like launchers for anytime you want to get back to the app.
+Every app starts in mixed reality by placing an app tile (just a [Windows secondary tile](/uwp/api/Windows.UI.StartScreen.SecondaryTile)) in the [Windows Mixed Reality home](../discover/navigating-the-windows-mixed-reality-home.md). These app tiles, on placement, will start running the app. The tiles persist and stay at their placed location, acting like launchers for any time you want to get back to the app.
 
 ![Placement puts a secondary tile in the world](images/slide1-600px.png)<br>
 *Placement puts a secondary tile in the world*
 
-As soon as placement completes (unless the placement was started by an [app to app](app-views.md#protocols) launch), the app starts launching. Windows Mixed Reality can run a limited number of apps at one time. As soon as you place and launch an app, other active apps may suspend. Suspended apps leave a screenshot of the app's last state on its app tile wherever you placed it. For more information on handling resume and other lifecycle events, see [Windows 10 UWP app lifecycle](/windows/uwp/launch-resume/app-lifecycle).
+As soon as placement completes (unless the placement was started by an [app to app](app-views.md#protocols) launch), the app starts launching. Windows Mixed Reality can run a limited number of apps at one time. 
+you place and launch an app, other active apps may suspend. Suspended apps leave a screenshot of the app's last state on its app tile wherever you placed it. For more information on handling resume and other lifecycle events, see [Windows 10 UWP app lifecycle](/windows/uwp/launch-resume/app-lifecycle).
 
 ![After placing a tile, the app starts running](images/slide2-500px.png) ![State diagram for app running, suspended or not running](images/ic576232-500px.png)<br>
 *Left: after placing a tile, the app starts running. Right: state diagram for app running, suspended, or not running.*
