@@ -64,7 +64,7 @@ Stories, learnings, and experiences the Mixed Reality team has found and jotted 
     :::column:::
         [![How it works - Mixed Reality Capture Studios](images/mr-capture-studio-hero.png)](../develop/platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md)
         **[How it works - Mixed Reality Capture Studios](../develop/platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md)**<br>
-        Microsoft Mixed Reality Capture Studios enable content creators to create 360-degree holograms from real life subjects that can be use in applications across augmented reality, virtual reality, and 2D screens.<br>
+        Microsoft Mixed Reality Capture Studios enables content creators to create 360-degree holograms from real life subjects that can be used in applications across augmented reality, virtual reality, and 2D screens.<br>
         *July 2016*    
     :::column-end:::
 :::row-end:::
