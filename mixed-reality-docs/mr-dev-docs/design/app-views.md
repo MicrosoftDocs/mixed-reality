@@ -2,7 +2,7 @@
 title: App views
 description: Learn how to use the two kinds of views in Windows Mixed Reality apps - immersive views and 2D views.
 author: thetuvix
-ms.author: v-vtieto
+ms.author: vinnietieto
 ms.date: 12/09/2021
 ms.topic: article
 keywords: immersive view, 2D view, slate, app, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit
