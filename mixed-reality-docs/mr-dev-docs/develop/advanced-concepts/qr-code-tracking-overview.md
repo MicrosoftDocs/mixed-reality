@@ -66,14 +66,12 @@ Other detection considerations:
 * In-plane orientation is supported. Out of plane should be <= +-45 looking straight on to have better detection.
 * The Physical size of the QR code should have modules of at least 2/3 pixels. Note: Higher versions of qr codes will have smaller modules.
 
-The distance/size of QR code is a trade off，see the following graph:
+For the tradeoff relationship between distance and size of the QR code for optimal detection，see the following graph:
 
 <img src="images\qr-code-size-distance.png" alt="QR code size distance chart">
 
 > [!IMPORTANT]
 > Always make sure you have enough contrast and a proper border.
-
-For more information, see [distance and angular position from the QR code](/windows/mixed-reality/develop/advanced-concepts/qr-code-tracking-overview#distance-and-angular-position-from-the-qr-code).
 
 ### QR codes with logos
 
@@ -147,7 +145,7 @@ Use NuGet for Unity and point to the NuGet pack above.
 ### If it doesn't work in general:
 
 * Is the QR Code version a supported version? We don't support the high-density versions like version 40. Nothing above version 10 is guaranteed, versions above 20 are not supported.
-* Are you <mark> close enough </mark> to the QR code?
+* Are you close enough to the QR code? See [distance and angular position from the QR code](#distance-and-angular-position-from-the-qr-code).
 * How is the lighting? There is a known issue where detection becomes difficult when the QR code is on a dark environmental background. When there's a dark background, the QR Code will appear washed out to the camera due to high contrast. For more information, see [lighting and backdrop](#lighting-and-backdrop).
 
 ### What's the accuracy?
