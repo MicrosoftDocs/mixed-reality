@@ -17,7 +17,7 @@ The [tutorial here](https://microsoft.github.io/MixedReality-WorldLockingTools-S
 
 ## Quick start guide
 
-A less conceptually detailed and more pragmatic approach to integrating WLT into a project can be found here. Where appropriate, it references back into these more thorough pages. While it's really a matter of personal preference which approach is more appropriate, a quick read of the [Before getting started](UsingWLT/BeforeGettingStarted.md) page can be a time saver on where to devote energies in this documentation.
+A less conceptually detailed and [more pragmatic approach](QuickStart.md) to integrating WLT into a project can be found here. Where appropriate, it references back into these more thorough pages. While it's really a matter of personal preference which approach is more appropriate, a quick read of the [Before getting started](UsingWLT/BeforeGettingStarted.md) page can be a time saver on where to devote energies in this documentation.
 
 ## Supported environments
 
@@ -104,13 +104,9 @@ This path limit is generally not an issue with the World Locking Tools themselve
 >
 > The following describes manual installation of World Locking Tools and dependencies. A much more streamlined installation process is available via the [Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool). Installation via the Feature Tool is described [here](WLTviaMRFeatureTool.md). If the Feature Tool installs WLT, you can skip the following and proceed to [adding WLT to your scene](#adding-world-locking-tools-to-a-unity-scene)
 
-World Locking Tools relies on NuGet for Unity for distribution.
+World Locking Tools relies nuget to install the underlying Frozen World Engine.
 
-To begin, make sure NuGet for Unity is installed into the Unity project. It is available from the [NuGet for Unity github releases](https://github.com/GlitchEnzo/NuGetForUnity/releases).
-
-If the target Unity project is the World Locking Tools project (or a derivative of it), then all necessary and optional resources are already included.
-
-If adding World Locking Tools to an existing project, it is advisable to start with a project that has been verified to build and deploy to a HoloLens device. This will help separate issues with getting an app to run on HoloLens in the first place, which can be complicated, from issues with the World Locking Tools. Then proceed to the *NuGet setup* and *World Locking Tools Assets* sections below.
+If adding World Locking Tools to an existing project, it is advisable to start with a project that has been verified to build and deploy to a HoloLens device. This will help separate issues with getting an app to run on HoloLens in the first place, which can be complicated, from issues with the World Locking Tools. Then proceed to the *FrozenWorld Engine installation* and *World Locking Tools Assets* sections below.
 
 ### FrozenWorld Engine installation
 

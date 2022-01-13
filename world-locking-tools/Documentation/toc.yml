@@ -10,6 +10,20 @@
   - name: Advanced Topics
     href: Concepts/AdvancedConcepts.md
     items: 
+    - name: Coordinate Spaces
+      href: Concepts/Advanced/CoordinateSpaces.md
+    - name: SessionOrigin
+      href: Concepts/Advanced/SessionOrigin.md
+    - name: Persistence
+      href: Concepts/Advanced/Persistence.md
+    - name: Space Pins
+      href: Concepts/Advanced/SpacePins.md
+    - name: Attachment Points
+      href: Concepts/Advanced/AttachmentPoints.md
+    - name: Fragments
+      href: Concepts/Advanced/Fragments.md
+    - name: Refit Operations
+      href: Concepts/Advanced/RefitOperations.md
     - name: Architecture
       href: Concepts/Advanced/Architecture/Architecture.md
       items: 
@@ -25,20 +39,6 @@
         href: Concepts/Advanced/Architecture/Managers/IAlignmentManager.md
       - name: Frozen World Engine DLL
         href: Concepts/Advanced/Architecture/FrozenWorldDLL.md
-    - name: Coordinate Spaces
-      href: Concepts/Advanced/CoordinateSpaces.md
-    - name: SessionOrigin
-      href: Concepts/Advanced/SessionOrigin.md
-    - name: Persistence
-      href: Concepts/Advanced/Persistence.md
-    - name: Space Pins
-      href: Concepts/Advanced/SpacePins.md
-    - name: Attachment Points
-      href: Concepts/Advanced/AttachmentPoints.md
-    - name: Fragments
-      href: Concepts/Advanced/Fragments.md
-    - name: Refit Operations
-      href: Concepts/Advanced/RefitOperations.md
 - name: How-tos
   href: HowTos.md
   items:
