@@ -2,7 +2,7 @@
 title: Spatial sound overview
 description: Spatial sound in mixed reality can increase user confidence in UI interactions and immerse users in the experience.
 author: kegodin
-ms.author: v-vtieto
+ms.author: vinnietieto
 ms.date: 12/08/2021
 ms.topic: article
 keywords: spatial sound, surround sound, 3d audio, 3d sound, spatial audio, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, case studies, acoustics
