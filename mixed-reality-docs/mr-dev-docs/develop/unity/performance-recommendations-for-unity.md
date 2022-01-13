@@ -30,7 +30,7 @@ Unity provides the **[Unity Profiler](https://docs.unity3d.com/Manual/Profiler.h
 >Unity provides the ability to easily modify the render target resolution of your application at runtime through the *[XRSettings.renderViewportScale](https://docs.unity3d.com/ScriptReference/XR.XRSettings-renderViewportScale.html)* property. The final image presented on device has a fixed resolution. The platform will sample the lower resolution output to build a higher resolution image for rendering on displays. 
 >
 >```CS
->UnityEngine.XR.XRSettings.renderScale = 0.7f;
+>UnityEngine.XR.XRSettings.renderViewportScale = 0.7f;
 >```
 
 Unity provides great documentation for:
