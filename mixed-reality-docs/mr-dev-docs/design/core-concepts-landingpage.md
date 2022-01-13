@@ -2,7 +2,7 @@
 title: Mixed reality structural elements
 description: Learn about core concepts and how they contribute to the quality of the mixed reality experiences you're creating for your users.
 author: grbury 
-ms.author: v-vtieto
+ms.author: vinnietieto
 ms.date: 12/09/2021
 ms.topic: overview
 keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens, interaction, UX elements, behaviors, building blocks, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, comfort, app model, coordinate, holographic frame
