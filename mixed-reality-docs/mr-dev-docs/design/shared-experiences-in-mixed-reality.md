@@ -156,11 +156,6 @@ Leverage [Azure Spatial Anchors](/azure/spatial-anchors/) in your app.  Enabling
 
 Leverage built-in Miracast support, for local users when you have a supported Miracast receiver, such as a PC or TV – no additional app code is needed.
 
-Leverage [MixedReality-WebRTC](https://github.com/microsoft/mixedreality-webrtc) in your app, for remote users or when you have non-Miracast devices that you’d like to share to.  Enabling a WebRTC connection enables 1:1 audio/video streams between users, with a data channel for messaging across devices, as well.  The mixed reality implementation optimizes for HoloLens, by providing mixed reality capture video stream of the view of the HoloLens user to others.  If you desire to scale up video streaming to multiple remote clients, an [MCU service provider](https://webrtcglossary.com/mcu/) (Multipoint Conferencing Unit) is typically used, such as [SignalWire](https://signalwire.com/).  A one-click SignalWire deployment to Azure is available via [Freeswitch](https://github.com/andywolk/azure-freeswitch-gpu-windows).
-
-> [!NOTE]
-> Please note that SignalWire is a paid service and is not owned/affiliated with Microsoft.
-
 ## Presenter-Spectator applications and Demos
 
 Leverage [MixedReality-SpectatorView](https://github.com/microsoft/MixedReality-SpectatorView) to bring [spectator view functionality](spectator-view.md) into your app.  Enable other devices (HL, Android, iOS, and video cameras) to see what the HoloLens sees from a different perspective in the same location, and receive updates on interactions of the host HoloLens user interacting with the holograms.  Watch, take pictures, and record video of what the host does with the holograms in the application from your own spatial perspective with the spectator companion of the same app.
