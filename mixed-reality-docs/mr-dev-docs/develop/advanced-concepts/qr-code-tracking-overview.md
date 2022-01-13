@@ -41,20 +41,39 @@ If the backdrop to the code is dark, try a black on gray code if your detection 
 
 Windows Mixed Reality devices don't work with QR codes with sides smaller than 5 cm each.
 
-For QR codes between 5 cm and 10-cm length sides, you must be <mark> fairly close </mark> to detect the code. It will also take longer to detect codes at this size. 
+For QR codes between 5 cm and 10-cm length sides, you must be fairly close to detect the code. It will also take longer to detect codes at this size. 
 
 The exact time to detect codes depends not only on the size of the QR codes, but how far you're away from the code. Moving closer to the code will help offset issues with size.
 
 ### Distance and angular position from the QR code
 
-The tracking cameras can only detect a certain level of detail. For small codes - < 10 cm along the sides - you must be <mark> fairly close </mark>. For a version 1 QR code varying from 10 cm to 25 cm wide, the minimum detection distance ranges from 0.15 meters to 0.5 meters. 
+The tracking cameras can only detect a certain level of detail. For small codes - < 10 cm along the sides - you must be fairly close. For a version 1 QR code varying from 10 cm to 25 cm wide, the minimum detection distance ranges from 0.15 meters to 0.5 meters. 
 
 The detection distance for size increases linearly, but also depends on QR version or module size. The higher the version, the smaller the modules, which can only be detected from a closer position. You can also try micro-QR codes if you want the distance of detection to be longer. QR detection works with a range of angles += 45 deg to ensure we have proper resolution to detect the code.
 
-<mark> table needed to show QR code size and detection distance (min vs. max).  What's supported and what's not supported QR codes. </mark>
+We support the following QR code versions:
+
+* QR versions 1 - 10 are supported. We cannot guarantee nor support higher version QR codes, but it is possible to detect versions 10 through 20. Versions above 20 are definitely not supported.
+* Micro QR codes M1-M4 are supported.
+* We do not support logos.
+* We do not support tweaked modules, for example: circular modules, reflections, inverted (black/white).
+* All encoding are supported.
+* Structure append is not supported.
+
+Other detection considerations:
+
+* QR codes on curved surfaces are not supported.
+* In-plane orientation is supported. Out of plane should be <= +-45 looking straight on to have better detection.
+* The Physical size of the QR code should have modules of at least 2/3 pixels. Note: Higher versions of qr codes will have smaller modules.
+
+The distance/size of QR code is a trade off，see the following graph:
+
+<img src="images\qr-code-size-distance.png" alt="QR code size distance chart">
 
 > [!IMPORTANT]
 > Always make sure you have enough contrast and a proper border.
+
+For more information, see [distance and angular position from the QR code](/windows/mixed-reality/develop/advanced-concepts/qr-code-tracking-overview#distance-and-angular-position-from-the-qr-code).
 
 ### QR codes with logos
 
