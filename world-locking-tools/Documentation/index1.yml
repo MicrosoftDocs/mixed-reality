@@ -24,7 +24,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Welcome!
-            url: welcome.md        
+            url: Overview.md        
           - text: Basic Concepts
             url: Concepts/BasicConcepts.md
           - text: FAQ
@@ -106,6 +106,6 @@ landingContent:
           - text: Tools and visualizers
             url: HowTos/Tools.md  
           - text: Reporting a bug
-            url: HowTos/Contributing.html#reporting-a-bug
+            url: HowTos/Contributing.md#reporting-a-bug
           - text: Troubleshooting
             url: HowTos/Troubleshooting.md
