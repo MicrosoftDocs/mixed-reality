@@ -1,0 +1,111 @@
+### YamlMime:Landing
+
+title: World Locking Tools documentation # < 60 chars
+summary: World Locking Tools world-locks an entire scene with a shared pool of anchors rather than locking each group of objects with the group's anchor. This minimizes inconsistencies between virtual and real world markers. # < 160 chars
+
+metadata:
+  title: World Locking Tools documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Landing page for World Locking Tools # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: service #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice # Optional; Remove if no subservice is used.
+  ms.topic: landing-page # Required
+  author: vtieto #Required; your GitHub user alias, with correct capitalization.
+  ms.author: vinnietieto #Required; microsoft alias of author; optional team alias.
+  ms.date: 01/05/2022 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: About World Locking Tools
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Welcome!
+            url: welcome.md        
+          - text: Basic Concepts
+            url: Concepts/BasicConcepts.md
+          - text: FAQ
+            url: IntroFAQ.md
+
+  # Card (optional)
+  - title: Get started
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Quickstart guide
+            url: HowTos/quickstart.md
+          - text: Before you start
+            url: HowTos/UsingWLT/BeforeGettingStarted.md
+          - text: Most basic setup
+            url: HowTos/UsingWLT/JustWorldLock.md
+          - text: Initial setup
+            url: HowTos/InitialSetup.md
+          - text: Install from MR Feature Tool
+            url: HowTos/WLTviaMRFeatureTool.md
+
+  # Card
+  - title: World-locking in depth
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Advanced topics
+            url: Concepts/AdvancedConcepts.md        
+          - text: Coordinate spaces
+            url: Concepts/Advanced/CoordinateSpaces.md
+          - text: SessionOrigin
+            url: Concepts/Advanced/SessionOrigin.md
+          - text: Persistence
+            url: Concepts/Advanced/Persistence.md
+          - text: Space pins
+            url: Concepts/Advanced/SpacePins.md
+          - text: Attachment points
+            url: Concepts/Advanced/AttachmentPoints.md
+          - text: Fragments
+            url: Concepts/Advanced/Fragments.md
+          - text: Refit operations
+            url: Concepts/Advanced/RefitOperations.md            
+
+  # Card (optional)
+  - title: Architecture
+    linkLists:
+      - linkListType: architecture
+        links:
+          - text: Architecture
+            url: Concepts/Advanced/Architecture/Architecture.md
+          - text: World Locking Manager
+            url: Concepts/Advanced/Architecture/Managers/WorldLockingManager.md
+          - text: Anchor management
+            url: Concepts/Advanced/Architecture/Managers/IAnchorManager.md
+          - text: Fragment management
+            url: Concepts/Advanced/Architecture/Managers/IFragmentManager.md
+          - text: Attachment point management
+            url: Concepts/Advanced/Architecture/Managers/IAttachmentPointManager.md
+
+  # Card
+  - title: Sample applications
+    linkLists:
+      - linkListType: sample
+        links:
+          - text: Sample applications
+            url: HowTos/SampleApplications.md        
+          - text: World locked physics sample
+            url: HowTos/Samples/WorldLockedPhysicsSample.md
+          - text: Space pin sample
+            url: HowTos/Samples/SpacePin.md
+          - text: Spatial anchors sample
+            url: HowTos/Samples/WLT_ASA_Sample.md
+
+  # Card
+  - title: Troubleshooting
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Tools and visualizers
+            url: HowTos/Tools.md  
+          - text: Reporting a bug
+            url: HowTos/Contributing.html#reporting-a-bug
+          - text: Troubleshooting
+            url: HowTos/Troubleshooting.md

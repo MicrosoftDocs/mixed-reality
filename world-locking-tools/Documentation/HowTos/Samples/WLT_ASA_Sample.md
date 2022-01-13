@@ -177,4 +177,4 @@ Android: Internal shared storage/Android/data/com.WorldLockingTools.WLTASA/files
 
 * [WLT+ASA software overview](WLT_ASA_Software.md)
 * [Azure Spatial Anchors Quick Start](/azure/spatial-anchors/unity-overview)
-* [World Locking Tools for Unity](~/Overview.md)
+* [World Locking Tools for Unity](~/Documentation/Overview.md)

@@ -1,0 +1,84 @@
+### YamlMime:Landing
+
+title: World Locking Tools documentation # < 60 chars
+summary: World Locking Tools world-locks an entire scene with a shared pool of anchors rather than locking each group of objects with the group's anchor. This minimizes inconsistencies between virtual and real world markers. # < 160 chars
+
+metadata:
+  title: World Locking Tools documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Landing page for World Locking Tools # Required; article description that is displayed in search results. < 160 chars.
+  ms.prod: mixed-reality
+  ms.localizationpriority: high
+  keywords: Unity, HoloLens, HoloLens 2, Augmented Reality, Mixed Reality, ARCore, ARKit, development, MRTK
+  ms.topic: landing-page # Required
+  author: vtieto #Required; your GitHub user alias, with correct capitalization.
+  ms.author: vinnietieto #Required; microsoft alias of author; optional team alias.
+  ms.date: 01/05/2022 #Required; mm/dd/yyyy format.
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Welcome
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview
+            url: Overview.md        
+          - text: FAQ
+            url: IntroFAQ.md
+
+  # Card (optional)
+  - title: Setup
+    linkLists:
+      - linkListType: quickstart
+        links:
+          - text: Quickstart guide
+            url: HowTos/quickstart.md
+
+      - linkListType: reference
+        links:
+          - text: Initial setup
+            url: HowTos/InitialSetup.md
+
+  # Card
+  - title: World-locking in depth
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Basic concepts
+            url: Concepts.md
+
+      - linkListType: learn
+        links:
+          - text: Advanced concepts
+            url: Concepts/AdvancedConcepts.md
+
+  # Card (optional)
+  - title: Architecture
+    linkLists:
+      - linkListType: architecture
+        links:
+          - text: Architecture
+            url: Concepts/Advanced/Architecture/Architecture.md
+
+  # Card
+  - title: Sample applications
+    linkLists:
+      - linkListType: sample
+        links:
+          - text: Sample applications
+            url: HowTos/SampleApplications.md        
+
+  # Card
+  - title: Development
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Troubleshooting
+            url: HowTos/Troubleshooting.md
+          - text: Tools and visualizers
+            url: HowTos/Tools.md  
+          - text: Reporting a bug
+            url: HowTos/Contributing.md#reporting-a-bug

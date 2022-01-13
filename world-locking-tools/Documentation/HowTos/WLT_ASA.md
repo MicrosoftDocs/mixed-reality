@@ -43,4 +43,4 @@ Additionally, [notes on the software bridging the two systems](Samples/WLT_ASA_S
 * [WLT+ASA software overview](Samples/WLT_ASA_Software.md)
 * [WLT_ASA Samples Walkthrough](Samples/WLT_ASA_Sample.md)
 * [Azure Spatial Anchors Quick Start](/azure/spatial-anchors/unity-overview)
-* [World Locking Tools for Unity](~/Overview.md)
+* [World Locking Tools for Unity](~/Documentation/Overview.md)
