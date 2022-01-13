@@ -47,7 +47,7 @@ The exact time to detect codes depends not only on the size of the QR codes, but
 
 ### Distance and angular position from the QR code
 
-The tracking cameras can only detect a certain level of detail. For small codes - < 10 cm along the sides - you must be fairly close. For a version 1 QR code varying from 10 cm to 25 cm wide, the minimum detection distance ranges from 0.15 meters to 0.5 meters. 
+The tracking cameras can only detect a certain level of detail. For small codes - < 10 cm along the sides - you must be fairly close. For a version 1 QR code varying from 10 cm to 25 cm wide, the minimum detection distance ranges from 0.15 meter to 0.5 meter. 
 
 The detection distance for size increases linearly, but also depends on QR version or module size. The higher the version, the smaller the modules, which can only be detected from a closer position. You can also try micro-QR codes if you want the distance of detection to be longer. QR detection works with a range of angles += 45 deg to ensure we have proper resolution to detect the code.
 
@@ -57,7 +57,7 @@ We support the following QR code versions:
 * Micro QR codes M1-M4 are supported.
 * We do not support logos.
 * We do not support tweaked modules, for example: circular modules, reflections, inverted (black/white).
-* All encoding are supported.
+* All encodings are supported.
 * Structure append is not supported.
 
 Other detection considerations:
@@ -156,7 +156,7 @@ When detected in a single frame, the size is expected to have at most a 1% error
 
 The distance obviously depends on the size of the QR code, and also what version it is. For more information, see [distance and angular position from the QR code](#distance-and-angular-position-from-the-qr-code).
 
-* On HoloLens 2, for a version 1 QR code varying from 5 cm sides to 25-cm sides, the minimum detection distance ranges from 0.25 meters to 0.5 meters. The furthest these can be detected from goes from about 0.5 m for the smallest code to 2 meters for the bigger.
+* On HoloLens 2, for a version 1 QR code varying from 5-cm sides to 25-cm sides, the minimum detection distance ranges from 0.25 meter to 0.5 meter. The furthest these can be detected from goes from about 0.5 m for the smallest code to 2 meters for the bigger.
 * On Windows Mixed Reality, these distances for the sizes are halved.
 * For any codes bigger, extrapolate - the detection distance for size increases linearly. For any code smaller, detection simply will not occur - 4-5 cm is the smallest we can detect.
 
@@ -164,9 +164,9 @@ The distance obviously depends on the size of the QR code, and also what version
 
 Currently, we don't support QR codes with logos.
 
-### Are MicroQR Codes supported?
+### Are Micro QR codes supported?
 
-Yes, Micro QR Codes are supported.
+Yes, Micro QR codes are supported.
 
 ### QR codes detected, but why am I getting no data?
 
