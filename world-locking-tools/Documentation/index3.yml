@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: World Locking Tools documentation # < 60 chars
-summary: World Locking Tools world-locks an entire scene with a shared pool of anchors rather than locking each group of objects with the group's anchor. This minimizes inconsistencies between virtual and real world markers. # < 160 chars
+summary: World-lock entire scenes, rather than objects with individual anchors, minimizing inconsistencies between real world features and virtual models. # < 160 chars
 
 metadata:
   title: World Locking Tools documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
