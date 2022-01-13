@@ -5,7 +5,7 @@ author: qianw211
 ms.author: qianwen
 ms.date: 1/13/2022
 ms.topic: article
-keywords: vr, lbe, location based entertainment, vr arcade, arcade, immersive, qr, qr code, hololens2, tracking
+keywords: VR, LBE, location based entertainment, vr arcade, arcade, immersive, QR, QR code, QR code detection, HoloLens 2, QR code tracking
 ---
 
 # QR code tracking overview
@@ -64,9 +64,9 @@ Other detection considerations:
 
 * QR codes on curved surfaces are not supported.
 * In-plane orientation is supported. Out of plane should be <= +-45 looking straight on to have better detection.
-* The Physical size of the QR code should have modules of at least 2/3 pixels. Note: Higher versions of qr codes will have smaller modules.
+* The Physical size of the QR code should have modules of at least 2/3 pixels. Note: Higher versions of QR codes will have smaller modules.
 
-For the tradeoff relationship between distance and size of the QR code for optimal detection，see the following graph:
+For the tradeoff relationship between distance and size of the QR code for optimal detection, see the following graph:
 
 <img src="images\qr-code-size-distance.png" alt="QR code size distance chart">
 
