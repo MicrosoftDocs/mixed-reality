@@ -68,7 +68,7 @@ Other detection considerations:
 
 For the tradeoff relationship between distance and size of the QR code for optimal detection, see the following graph:
 
-<img src="images\qr-code-size-distance.png" alt="QR code size distance chart">
+<img src="images\module-size-vs-detection-range-chart.png" alt="QR code size distance chart">
 
 > [!IMPORTANT]
 > Always make sure you have enough contrast and a proper border.
