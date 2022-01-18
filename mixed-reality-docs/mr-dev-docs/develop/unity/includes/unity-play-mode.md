@@ -2,21 +2,25 @@
 
 1. On your HoloLens, go to the **Microsoft Store** and install the **[Holographic Remoting Player](https://www.microsoft.com/store/p/holographic-remoting-player/9nblggh4sv40)** app.
 1. On your HoloLens, start the **Holographic Remoting Player** app.
-1. In Unity, go to the **Edit** menu and select **Project Settings**.
-1. Select **XR Plug-in Management**.
-1. Ensure the **Windows Standalone** tab is selected, find **OpenXR** and **Windows Mixed Reality feature set** in the list, and check their checkboxes.
-1. Next, go to the **Window** menu, expand the **XR** submenu, and select **OpenXR Editor Remoting**.
+1. In Unity, on the menu bar, select **Edit** > **Project Settings**.
+1. In the left-side column, select **XR Plug-in Management**.
+1. Ensure the **PC, Mac & Linux Standalone settings** tab is selected, and then select **OpenXR**, **Windows Mixed Reality feature group**, and **Holographic Remoting remote app feature group**.
+1. In the left-side column under **XR Plug-in Management**, select **OpenXR**.
+1. Ensure the **PC, Mac & Linux Standalone settings** tab is selected, and then, under **OpenXR Feature Groups**, make sure **All Features** is selected.
+1. To the right of **All Features**, select **Holographic Remoting for Play Mode**.
+1. Close the **Project Settings** window.
+1. On the menu bar, select **Window** > **XR** **Holographic remoting for play mode**.
 
     ![Screenshot of project settings panel open in the Unity Editor with XR Plug-in management highlighted](../images/openxr-features-img-02.png)
 
-1. Click **Enable Editor Remoting**.
+1. Click **Enable Holographic Remoting for Play Mode**.
 
     ![Screenshot of project settings panel open in the Unity Editor with Features highlighted](../images/openxr-features-img-03.png)
 
-1. If the **Enable Missing Dependencies** button appears, click that as well. The error box above the button describes the features it's enabling and why.
+1. If errors appear, click the **Fix** button.
 1. For **Remote Host Name**, enter the IP address of your HoloLens.
-   1. Change other settings as needed.
-   1. The editor will attempt to connect once Play Mode is started.
+1. Change other settings as needed. The editor will attempt to connect once Play Mode is started.
+1. Close the **Holographic Remoting for Play Mode** window.
 1. Select the **Play** button to start Play Mode and experience the app on your HoloLens. To debug C# scripts in play mode, [attach Visual Studio to Unity](/visualstudio/gamedev/unity/get-started/using-visual-studio-tools-for-unity?pivots=windows).
 
 # [Unity 2019/2020 + Windows XR Plugin](#tab/winxr)
