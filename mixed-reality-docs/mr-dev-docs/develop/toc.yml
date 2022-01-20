@@ -405,6 +405,9 @@
       displayname: Holographic Remoting
     - name: Terminology
       href: native/holographic-remoting-terminology.md
+      displayname: Holographic Remoting
+    - name: System Requirements
+      href: native/holographic-remoting-system-requirements.md
       displayname: Holographic Remoting              
     - name: Store player
       href: advanced-concepts/holographic-remoting-player.md
