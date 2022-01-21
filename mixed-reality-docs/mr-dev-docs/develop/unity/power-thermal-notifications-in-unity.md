@@ -337,7 +337,7 @@ The returned **PowerThermalPeripheralState** contains latest values for Thermal 
 > [!NOTE]
 > It is possible that in future platforms given peripherals may not be supported.  In these cases the API will return a Thermal Score of 100 and a Mitigation Level of NoUserImpact.  The application may check the **IsSupportedPeripheral** field of the structure to check whether or not this is the case for a given peripheral.
 
-See [Handling Events](#handling-Events) for details on handling of the Thermal Score and Mitigation Levels returned by **PowerThermalPeripheralState**.
+See [Handling Events](#handling-events) for details on handling of the Thermal Score and Mitigation Levels returned by **PowerThermalPeripheralState**.
 
 Here's a small snippet showing polling:
 
