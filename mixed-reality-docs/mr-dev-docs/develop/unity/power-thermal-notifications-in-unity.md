@@ -115,7 +115,7 @@ The SDK is designed to support two standard use cases to get information:
 * Event based
 * Polling based
 
-Event based notification will provide the quickest feedback path to the application in case it needs to take action, but in some cases it may be more convenient for the developer to use a polling methodology.
+Event based notification will provide the quickest feedback path to the application in case it needs to take action.  However in some cases it may be more convenient for the developer to use a polling methodology.
 
 > [!NOTE]
 > <!--Polling Note--> State information is update at most every few seconds for each peripheral, so polling any faster than that may waste CPU cycles.
@@ -323,7 +323,7 @@ public class NotificationComponent : MonoBehaviour
 
 ### Updating Peripherals Of Interest
 
-Similarly to the event based usage, setting the [PeripheralsOfInterest](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.peripheralsofinterest) property is required to poll a given peripheral.
+Similar to the event based usage, setting the [PeripheralsOfInterest](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.peripheralsofinterest) property is required to poll a given peripheral.
 
 >[!WARNING]
 >If you attempt to call **GetLatestPeripheralState** for a given peripheral without first setting that flag in  [PeripheralsOfInterest](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.peripheralsofinterest) an exception will be thrown. Similarly, attempts to use **GetLatestPeripheralState** with an invalid value (multiple flag bits set, or an unsupported bit) an exception will be thrown.
@@ -337,7 +337,7 @@ The returned **PowerThermalPeripheralState** contains latest values for Thermal 
 > [!NOTE]
 > It is possible that in future platforms given peripherals may not be supported.  In these cases the API will return a Thermal Score of 100 and a Mitigation Level of NoUserImpact.  The application may check the **IsSupportedPeripheral** field of the structure to check whether or not this is the case for a given peripheral.
 
-See [Handling Events](#Handling-Events) for details on handling of the Thermal Score and Mitigation Levels returned by **PowerThermalPeripheralState**.
+See [Handling Events](#handling-Events) for details on handling of the Thermal Score and Mitigation Levels returned by **PowerThermalPeripheralState**.
 
 Here's a small snippet showing polling:
 
@@ -376,8 +376,29 @@ private void InitializeThermalNotifications()
 }
 ```
 
+## Suppressing Default System Mitigations
+
+If you don't want the system to attempt to mitigate certain peripherals, you can suppress them.  To do this, just update the [SuppressedPlatformMitigationForPeripherals](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.suppressedplatformmitigationforperipherals) property, or call the [SuppressPlatformMitigation](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.suppressplatformmitigation) function.
+
+Here's a small snippet:
+
+```cs
+PowerThermalNotification p = PowerThermalNotification.GetForCurrentProcess();
+PeripheralFlags requestedFlags = PeripheralFlags.Cpu | PeripheralFlags.PhotoVideoCamera;
+
+//You can do this to set the property explicitly
+p.SuppressedPlatformMitigationForPeripherals = requestedFlags;
+
+//Or you can do this to manipulate the property mask. 
+//This specific example clears the CPU, leaving the PhotoVideoCamera suppressed
+p.SuppressPlatformMitigation(PeripheralFlags.Cpu, false);
+```
+
+> [!NOTE]
+> <!--Foreground Note-->The suppression APIs will only work if the process using the PowerThermalNotification class is in the foreground.  Background processes can still subscribe to events but may not disable device actions.
+
 ## Testing
 
 Once you have integrated the SDK into your application, you will want to test it.  For HoloLens 2 operating systems that supports the SDK, a developer page will be available in [Device Portal](../advanced-concepts/using-the-windows-device-portal.md#powerthermalsdk-test)
 
-Inside the page you may control the mitigation levels and thermal scores for each peripheral as well as monitor which peripherals have mitigations being actively suppressed.
+From this page you may control the mitigation levels and thermal scores for each peripheral.  You may also monitor which peripherals have mitigations being actively suppressed.
