@@ -105,7 +105,7 @@ We recommend configuring your app to ignore QR codes older than a specific times
 
 QR Code data are not app-specific. Upon app launch, there will be a list of available QR codes being provided.  The app developer will determine which QR codes are relevant to this app.
 
-See also [How to clear the codes from my app?](#how-to-clear-the-codes-from-my-app-it-seems-once-you-find-a-code-they-tend-to-persist)
+See also [How to clear the codes from my app?](#managing-qr-code-data)
 
 ### QR code placement in a space
 For recommendations on where and how to place QR codes, refer to [Environment considerations for HoloLens](/hololens/hololens-environment-considerations).
