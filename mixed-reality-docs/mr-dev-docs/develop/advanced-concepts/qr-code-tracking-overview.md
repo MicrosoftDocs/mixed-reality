@@ -25,7 +25,27 @@ In this article, you'll learn about:
   * [Lighting and backdrop](#lighting-and-backdrop)
   * [Size of QR codes](#size-of-qr-codes)
   * [Distance and angular position from the QR code](#distance-and-angular-position-from-the-qr-code) 
+  * [Managing QR code data](#managing-qr-code-data)
+  * [QR code placement in a space](#qr-code-placement-in-a-space)
 * [Troubleshooting and FAQ](#troubleshooting-and-faq)
+  * [What QR code versions are supported?](#what-qr-code-versions-are-supported)
+  * [What capabilities are needed?](#what-capabilities-are-needed)
+  * [How to make QR Code Tracking Feature work on HoloLens 2 devices?](#how-to-make-qr-code-tracking-feature-work-on-hololens-2-devices)
+  * [Where do I find the API plugin files?](#where-do-i-find-the-api-plugin-files)
+  * [How do I prepare a UWP to use Microsoft.MixedReality.QR.QRCodeWatcher?](#how-do-i-prepare-a-uwp-to-use-microsoftmixedrealityqrqrcodewatcher)
+  * [How do I prepare Unity with the Microsoft.MixedReality.QR.QRCodeWatcher?](#how-do-i-prepare-unity-with-the-microsoftmixedrealityqrqrcodewatcher)
+  * [How can I make QR codes?](#how-can-i-make-qr-codes)
+  * [If it doesn't work in general:](#if-it-doesnt-work-in-general)
+  * [What's the accuracy?](#whats-the-accuracy)
+  * [How close do I need to be to the QR code to detect it?](#how-close-do-i-need-to-be-to-the-qr-code-to-detect-it)
+  * [Why can't I read QR codes with logos?](#why-cant-i-read-qr-codes-with-logos)
+  * [Are Micro QR codes supported?](#are-micro-qr-codes-supported)
+  * [QR codes detected, but why am I getting no data?](#qr-codes-detected-but-why-am-i-getting-no-data)
+  * [How to clear the codes from my app? It seems once you find a code, they tend to persist?](#how-to-clear-the-codes-from-my-app-it-seems-once-you-find-a-code-they-tend-to-persist)
+  * [How do I get the time stamp from the QueryPerformanceCounter QPC ticks?](#how-do-i-get-the-time-stamp-from-the-queryperformancecounter-qpc-ticks)
+  * [Are QR codes saved at the ‘space’ level or app level? It seems to me it is beyond app?](#are-qr-codes-saved-at-the-space-level-or-app-level--it-seems-to-me-it-is-beyond-app)
+  * [How does that work with the underlying platform? Where do they persist?](#how-does-that-work-with-the-underlying-platform--where-do-they-persist)
+
 
 ## Device support
 
@@ -64,7 +84,7 @@ The exact time to detect codes depends not only on the size of the QR codes, but
 
 The tracking cameras can only detect a certain level of detail. For small codes - < 10 cm along the sides - you must be fairly close. For a version 1 QR code varying from 10 cm to 25 cm wide, the minimum detection distance ranges from 0.15 meter to 0.5 meter. 
 
-The detection distance for size increases linearly, but also depends on QR version or module size. The higher the version, the smaller the modules, which can only be detected from a closer position. You can also try micro-QR codes if you want the distance of detection to be longer. QR detection works with a range of angles += 45 deg to ensure we have proper resolution to detect the code.
+The detection distance for size increases linearly, but also depends on [supported QR version](#what-qr-code-versions-are-supported) or module size. The higher the version, the smaller the modules, which can only be detected from a closer position. You can also try micro-QR codes if you want the distance of detection to be longer. QR detection works with a range of angles += 45 deg to ensure we have proper resolution to detect the code.
 
 Other detection considerations:
 
@@ -192,7 +212,7 @@ QR codes only persist in the boot session. Once you reboot your device (or resta
 
 You can ignore the QR codes older than a timestamp if you want. Currently the API does not have a way to clear them as multiple apps might be interested in them. At the app level, you can ignore QR codes not updated recently. A logic can be added to ignore the ones not updated, for example time `t`.  It's app-specific, and up to the app developer to decide on what to do.
 
-#### How do I get the time stamp from the `QueryPerformanceCounter` QPC ticks?
+### How do I get the time stamp from the `QueryPerformanceCounter` QPC ticks?
 
 ```
 long EndingTime = System.Diagnostics.Stopwatch.GetTimestamp();
@@ -202,11 +222,11 @@ double ElapsedSecs = ElapsedTime * (1.0f / System.Diagnostics.Stopwatch.Frequenc
 QRTimeStamp.text = "Time:" + System.DateTime.Now.AddSeconds(-ElapsedSecs).ToString("MM/dd/yyyy HH:mm:ss.fff");
 ```
 
-#### Are QR codes saved at the ‘space’ level or app level?  It seems to me it is beyond app? 
+### Are QR codes saved at the ‘space’ level or app level?  It seems to me it is beyond app? 
 
 QR codes are saved at the system level in driver session, or boot session on HoloLens. For more information, see [managing QR code data](#managing-qr-code-data).
 
-#### How does that work with the underlying platform?  Where do they persist? 
+### How does that work with the underlying platform?  Where do they persist? 
 
 They only persist in memory (ASIC/SOC).
 
