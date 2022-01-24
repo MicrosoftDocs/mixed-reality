@@ -39,9 +39,7 @@ In this article, you'll learn about:
   * [What's the accuracy?](#whats-the-accuracy)
   * [How close do I need to be to the QR code to detect it?](#how-close-do-i-need-to-be-to-the-qr-code-to-detect-it)
   * [Why can't I read QR codes with logos?](#why-cant-i-read-qr-codes-with-logos)
-  * [Are Micro QR codes supported?](#are-micro-qr-codes-supported)
   * [QR codes detected, but why am I getting no data?](#qr-codes-detected-but-why-am-i-getting-no-data)
-  * [How to clear the codes from my app? It seems once you find a code, they tend to persist?](#how-to-clear-the-codes-from-my-app-it-seems-once-you-find-a-code-they-tend-to-persist)
   * [How do I get the time stamp from the QueryPerformanceCounter QPC ticks?](#how-do-i-get-the-time-stamp-from-the-queryperformancecounter-qpc-ticks)
   * [Are QR codes saved at the ‘space’ level or app level? It seems to me it is beyond app?](#are-qr-codes-saved-at-the-space-level-or-app-level--it-seems-to-me-it-is-beyond-app)
   * [How does that work with the underlying platform? Where do they persist?](#how-does-that-work-with-the-underlying-platform--where-do-they-persist)
@@ -70,13 +68,13 @@ QR code detection quality is susceptible to varying illumination and backdrop.
 
 In a scene with bright lighting, print a code that is black on a gray background. Otherwise, print a black QR code on a white background.
 
-If the backdrop to the code is dark, try a black on gray code if your detection rate is low. If the backdrop is relatively light, a regular code works fine.
+If the code is displayed against a dark backdrop, the detection rate of the code may be lower than expected. Printing a black code on a gray background may help increase the detection rate.
 
 ### Size of QR codes
 
 Windows Mixed Reality devices don't work with QR codes with sides smaller than 5 cm each.
 
-For QR codes between 5 cm and 10-cm length sides, you must be fairly close to detect the code. It will also take longer to detect codes at this size. 
+For QR codes with sides between 5 cm and 10 cm in length, the device must be fairly close to detect the code, and it may take longer to detect the code.
 
 The exact time to detect codes depends not only on the size of the QR codes, but how far you're away from the code. Moving closer to the code will help offset issues with size.
 
@@ -197,20 +195,10 @@ The distance obviously depends on the size of the QR code, and also what version
 
 Currently, we don't support QR codes with logos.
 
-### Are Micro QR codes supported?
-
-Yes, Micro QR codes are supported.
-
 ### QR codes detected, but why am I getting no data?
 
 * If the platform cannot decode the QR code, there will be no data.  You can use the stream and interpret the data using open-source code. 
 * Some features such as structure append and micro-QR codes are not supported.
-
-### How to clear the codes from my app? It seems once you find a code, they tend to persist?
-
-QR codes only persist in the boot session. Once you reboot your device (or restart the driver), QR codes will be detected as new objects. QR codes are unique and persist within the driver session.
-
-You can ignore the QR codes older than a timestamp if you want. Currently the API does not have a way to clear them as multiple apps might be interested in them. At the app level, you can ignore QR codes not updated recently. A logic can be added to ignore the ones not updated, for example time `t`.  It's app-specific, and up to the app developer to decide on what to do.
 
 ### How do I get the time stamp from the `QueryPerformanceCounter` QPC ticks?
 
@@ -228,7 +216,7 @@ QR codes are saved at the system level in driver session, or boot session on Hol
 
 ### How does that work with the underlying platform?  Where do they persist? 
 
-They only persist in memory (ASIC/SOC).
+Detected QR codes are persisted in memory by the driver.
 
 ## See also
 * [QR code tracking with native C++ and C## samples](../native/qr-code-tracking-cs-cpp.md)
