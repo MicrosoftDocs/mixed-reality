@@ -3,14 +3,29 @@ title: QR code tracking overview
 description: Learn how to detect QR codes, add webcam capabilities, and manage coordinate systems in mixed reality apps on HoloLens 2.
 author: qianw211
 ms.author: qianwen
-ms.date: 1/13/2022
+ms.date: 1/24/2022
 ms.topic: article
 keywords: VR, LBE, location based entertainment, vr arcade, arcade, immersive, QR, QR code, QR code detection, HoloLens 2, QR code tracking
 ---
 
 # QR code tracking overview
 
-HoloLens 2 and immersive headsets can detect QR codes in the environment around the headset, establishing a coordinate system at each code's real-world location. HoloLens 2 and immersive headsets can also render holograms in the same location on multiple devices to create a shared experience. Once you enable your device's webcam, you'll recognize QR codes in the latest versions of your projects. Before going to production, we recommend that you review the [best practices](#best-practices-for-qr-code-detection) section at the end of the article.
+To access the GitHub repo for the QR code sample:
+
+> [!div class="nextstepaction"]
+> [QR code tracking in Unity](https://github.com/microsoft/MixedReality-QRCode-Sample)
+
+HoloLens 2 and immersive headsets can detect QR codes in the environment around the headset, establishing a coordinate system at each code's real-world location. HoloLens 2 and immersive headsets can also render holograms in the same location on multiple devices to create a shared experience. Once you enable your device's webcam, you'll recognize QR codes in the latest versions of your projects. For best results going into production, we recommend that you review the [best practices](#best-practices-for-qr-code-detection) section.
+
+In this article, you'll learn about:
+
+* [Supported devices for QR code tracking](#device-support)
+* [Best practices for QR code detection](#best-practices-for-qr-code-detection)
+  * [Quiet zones around QR codes](#quiet-zones-around-qr-codes)
+  * [Lighting and backdrop](#lighting-and-backdrop)
+  * [Size of QR codes](#size-of-qr-codes)
+  * [Distance and angular position from the QR code](#distance-and-angular-position-from-the-qr-code) 
+* [Troubleshooting and FAQ](#troubleshooting-and-faq)
 
 ## Device support
 
@@ -51,15 +66,6 @@ The tracking cameras can only detect a certain level of detail. For small codes 
 
 The detection distance for size increases linearly, but also depends on QR version or module size. The higher the version, the smaller the modules, which can only be detected from a closer position. You can also try micro-QR codes if you want the distance of detection to be longer. QR detection works with a range of angles += 45 deg to ensure we have proper resolution to detect the code.
 
-We support the following QR code versions:
-
-* QR versions 1 - 10 are supported. We cannot guarantee nor support higher version QR codes, but it is possible to detect versions 10 through 20. Versions above 20 are definitely not supported.
-* Micro QR codes M1-M4 are supported.
-* We do not support logos.
-* We do not support tweaked modules, for example: circular modules, reflections, inverted (black/white).
-* All encodings are supported.
-* Structure append is not supported.
-
 Other detection considerations:
 
 * QR codes on curved surfaces are not supported.
@@ -72,10 +78,6 @@ For the tradeoff relationship between distance and size of the QR code for optim
 
 > [!IMPORTANT]
 > Always make sure you have enough contrast and a proper border.
-
-### QR codes with logos
-
-QR codes with logos haven't been tested and are currently unsupported.
 
 ### Managing QR code data
 
@@ -91,6 +93,17 @@ See also [How to clear the codes from my app?](#how-to-clear-the-codes-from-my-a
 For recommendations on where and how to place QR codes, refer to [Environment considerations for HoloLens](/hololens/hololens-environment-considerations).
 
 ## Troubleshooting and FAQ
+
+### What QR code versions are supported?
+
+We support the following QR code versions:
+
+* QR versions 1 - 10 are supported. We cannot guarantee nor support higher version QR codes, but it is possible to detect versions 10 through 20. Versions above 20 are definitely not supported.
+* Micro QR codes M1-M4 are supported.
+* We do not support logos.
+* We do not support tweaked modules, for example: circular modules, reflections, inverted (black/white).
+* All encodings are supported.
+* Structure append is not supported.
 
 ### What capabilities are needed?
 
