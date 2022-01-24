@@ -27,6 +27,7 @@ In this article, you'll learn about:
   * [Distance and angular position from the QR code](#distance-and-angular-position-from-the-qr-code) 
   * [Managing QR code data](#managing-qr-code-data)
   * [QR code placement in a space](#qr-code-placement-in-a-space)
+  * [Getting the time stamp from the QueryPerformanceCounter QPC ticks?](#getting-the-time-stamp-from-the-queryperformancecounter-qpc-ticks)
 * [Troubleshooting and FAQ](#troubleshooting-and-faq)
   * [What QR code versions are supported?](#what-qr-code-versions-are-supported)
   * [What capabilities are needed?](#what-capabilities-are-needed)
@@ -35,12 +36,11 @@ In this article, you'll learn about:
   * [How do I prepare a UWP to use Microsoft.MixedReality.QR.QRCodeWatcher?](#how-do-i-prepare-a-uwp-to-use-microsoftmixedrealityqrqrcodewatcher)
   * [How do I prepare Unity with the Microsoft.MixedReality.QR.QRCodeWatcher?](#how-do-i-prepare-unity-with-the-microsoftmixedrealityqrqrcodewatcher)
   * [How can I make QR codes?](#how-can-i-make-qr-codes)
-  * [If it doesn't work in general:](#if-it-doesnt-work-in-general)
+  * [If QR code tracking doesn't work in general, what do I do?](#if-it-doesnt-work-in-general)
   * [What's the accuracy?](#whats-the-accuracy)
   * [How close do I need to be to the QR code to detect it?](#how-close-do-i-need-to-be-to-the-qr-code-to-detect-it)
   * [Why can't I read QR codes with logos?](#why-cant-i-read-qr-codes-with-logos)
   * [QR codes detected, but why am I getting no data?](#qr-codes-detected-but-why-am-i-getting-no-data)
-  * [How do I get the time stamp from the QueryPerformanceCounter QPC ticks?](#how-do-i-get-the-time-stamp-from-the-queryperformancecounter-qpc-ticks)
   * [Are QR codes saved at the ‘space’ level or app level? It seems to me it is beyond app?](#are-qr-codes-saved-at-the-space-level-or-app-level--it-seems-to-me-it-is-beyond-app)
   * [How does that work with the underlying platform? Where do they persist?](#how-does-that-work-with-the-underlying-platform--where-do-they-persist)
 
@@ -72,7 +72,7 @@ If the code is displayed against a dark backdrop, the detection rate of the code
 
 ### Size of QR codes
 
-Windows Mixed Reality devices don't work with QR codes with sides smaller than 5 cm each.
+Windows Mixed Reality devices don't work with QR codes with sides smaller than 5 cm.
 
 For QR codes with sides between 5 cm and 10 cm in length, the device must be fairly close to detect the code, and it may take longer to detect the code.
 
@@ -109,6 +109,17 @@ See also [How to clear the codes from my app?](#managing-qr-code-data)
 
 ### QR code placement in a space
 For recommendations on where and how to place QR codes, refer to [Environment considerations for HoloLens](/hololens/hololens-environment-considerations).
+
+### Getting the time stamp from the `QueryPerformanceCounter` QPC ticks
+
+```
+long EndingTime = System.Diagnostics.Stopwatch.GetTimestamp();
+long ElapsedTime = EndingTime - (long)qrCode.LastDetectedQPCTicks;
+double ElapsedSecs = ElapsedTime * (1.0f / System.Diagnostics.Stopwatch.Frequency);
+
+QRTimeStamp.text = "Time:" + System.DateTime.Now.AddSeconds(-ElapsedSecs).ToString("MM/dd/yyyy HH:mm:ss.fff");
+```
+
 
 ## Troubleshooting and FAQ
 
@@ -173,7 +184,7 @@ Use NuGet for Unity and point to the NuGet pack above.
 
 * From any QR code generator, see <https://www.the-qrcode-generator.com/>
 
-### If it doesn't work in general:
+### If QR code tracking doesn't work in general, what do I do?
 
 * Is the QR Code version a supported version? We don't support the high-density versions like version 40. Nothing above version 10 is guaranteed, versions above 20 are not supported.
 * Are you close enough to the QR code? See [distance and angular position from the QR code](#distance-and-angular-position-from-the-qr-code).
@@ -200,15 +211,7 @@ Currently, we don't support QR codes with logos.
 * If the platform cannot decode the QR code, there will be no data.  You can use the stream and interpret the data using open-source code. 
 * Some features such as structure append and micro-QR codes are not supported.
 
-### How do I get the time stamp from the `QueryPerformanceCounter` QPC ticks?
-
-```
-long EndingTime = System.Diagnostics.Stopwatch.GetTimestamp();
-long ElapsedTime = EndingTime - (long)qrCode.LastDetectedQPCTicks;
-double ElapsedSecs = ElapsedTime * (1.0f / System.Diagnostics.Stopwatch.Frequency);
-
-QRTimeStamp.text = "Time:" + System.DateTime.Now.AddSeconds(-ElapsedSecs).ToString("MM/dd/yyyy HH:mm:ss.fff");
-```
+For more information, see [what QR code versions are supported?](#what-qr-code-versions-are-supported).
 
 ### Are QR codes saved at the ‘space’ level or app level?  It seems to me it is beyond app? 
 
