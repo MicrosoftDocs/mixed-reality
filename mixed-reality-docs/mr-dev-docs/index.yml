@@ -123,10 +123,10 @@ conceptualContent:
         - url: develop/unity/unity-development-overview.md
           itemType: overview
           text: Unity development overview
-        - url: develop/unity/mrtk-getting-started.md
+        - url: /windows/mixed-reality/mrtk-unity/
           itemType: overview
           text: What is MRTK?
-        - url: develop/unity/tutorials/mr-learning-base-01.md
+        - url: /learn/paths/beginner-hololens-2-tutorials/
           itemType: tutorial
           text: HoloLens 2 tutorial series
         - url: /windows/mixed-reality/mrtk-unity/

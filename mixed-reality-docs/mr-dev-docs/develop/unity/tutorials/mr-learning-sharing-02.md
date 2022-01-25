@@ -23,15 +23,15 @@ In this tutorial, you will prepare for creating a shared experience using Photon
 
 In this section, you will create a new Unity project and get it ready for MRTK development.
 
-First, follow the [Initializing your project and deploying your first application](mr-learning-base-02.md), excluding the [Adding hand interaction to an object](mr-learning-base-02.md#adding-hand-interaction-to-an-object) and [Build your application to your device](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions, which includes the following steps:
+First, follow the [Initializing your project and deploying your first application](/learn/paths/beginner-hololens-2-tutorials/), excluding the [Adding hand interaction to an object](/learn/paths/beginner-hololens-2-tutorials/#adding-hand-interaction-to-an-object) and [Build your application to your device](/learn/paths/beginner-hololens-2-tutorials/#building-your-application-to-your-hololens-2) instructions, which includes the following steps:
 
-1. [Creating the Unity project](mr-learning-base-02.md#creating-the-unity-project) and give it a suitable name, for example, *MRTK Tutorials*
-2. [Switching the build platform](mr-learning-base-02.md#switching-the-build-platform)
-3. [Importing the TextMeshPro Essential Resources](mr-learning-base-04.md#importing-the-textmeshpro-essential-resources)
-4. [Importing the Mixed Reality Toolkit and Configuring the Unity project](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
-5. [Creating the scene and configuring MRTK](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) and give the scene a suitable name, for example, *MultiUserCapabilities*
+1. [Creating the Unity project](/learn/paths/beginner-hololens-2-tutorials/#creating-the-unity-project) and give it a suitable name, for example, *MRTK Tutorials*
+2. [Switching the build platform](/learn/paths/beginner-hololens-2-tutorials/#switching-the-build-platform)
+3. [Importing the TextMeshPro Essential Resources](/learn/paths/beginner-hololens-2-tutorials/#importing-the-textmeshpro-essential-resources)
+4. [Importing the Mixed Reality Toolkit and Configuring the Unity project](/learn/paths/beginner-hololens-2-tutorials/#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
+5. [Creating the scene and configuring MRTK](/learn/paths/beginner-hololens-2-tutorials/#creating-the-scene-and-configuring-mrtk) and give the scene a suitable name, for example, *MultiUserCapabilities*
 
-Then follow the [Changing the Spatial Awareness Display Option](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) instructions to:
+Then follow the [Changing the Spatial Awareness Display Option](/learn/paths/beginner-hololens-2-tutorials/#changing-the-spatial-awareness-display-option) instructions to:
 
 1. Change the **MRTK configuration profile** for to the **DefaultHoloLens2ConfigurationProfile**
 1. Change the **spatial awareness mesh display options** to **Occlusion**.
@@ -42,7 +42,7 @@ In the Unity menu, select **Edit** > **Project Settings...** to open the Player 
 
 ![Unity Player settings](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
 
-In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, **SpatialPerception**, and **GazeInput** capabilities, which you enabled during the [Configuring the Unity project](mr-learning-base-02.md#configuring-the-unity-project) step above, are enabled.
+In the  **Publishing Settings**, scroll down to the **Capabilities** section and double-check that the **InternetClient**, **Microphone**, **SpatialPerception**, and **GazeInput** capabilities, which you enabled during the [Configuring the Unity project](/learn/paths/beginner-hololens-2-tutorials/#configuring-the-unity-project) step above, are enabled.
 
 Then enable the following additional capabilities:
 
@@ -67,7 +67,7 @@ After you have imported the tutorial assets your Project window should look simi
 ![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-sharing/sharing-02-section4-step1-1.png)
 
 > [!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Importing the tutorial assets](mr-learning-base-04.md#importing-the-tutorial-assets) instructions.
+> For a reminder on how to import a Unity custom package, you can refer to the [Importing the tutorial assets](/learn/paths/beginner-hololens-2-tutorials/#importing-the-tutorial-assets) instructions.
 
 > [!NOTE]
 > After importing the MultiUserCapabilities tutorial assets package, you will see several [CS0246](/dotnet/csharp/language-reference/compiler-messages/cs0246) errors in the Console window stating that the type or namespace is missing. This is expected and will be resolved in the next section when you import the PUN assets.
