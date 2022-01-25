@@ -43,6 +43,7 @@ In this article, you'll learn about:
   * [QR codes detected, but why am I getting no data?](#qr-codes-detected-but-why-am-i-getting-no-data)
   * [Are QR codes saved at the ‘space’ level or app level? It seems to me it is beyond app?](#are-qr-codes-saved-at-the-space-level-or-app-level--it-seems-to-me-it-is-beyond-app)
   * [How does that work with the underlying platform? Where do they persist?](#how-does-that-work-with-the-underlying-platform--where-do-they-persist)
+  * [How do I debug the app in Visutal studio when I receive the "`Microsoft.MixedReality.QR.pdb` not found" error message?]()
 
 
 ## Device support
@@ -221,11 +222,9 @@ QR codes are saved at the system level in driver session, or boot session on Hol
 
 Detected QR codes are persisted in memory by the driver.
 
-### What to do when I received the "Microsoft.MixedReality.QR.pdb not found" error message, and cannot debug in Visual Studio?
+### How do I debug the app in Visutal studio when I receive the "`Microsoft.MixedReality.QR.pdb` not found" error message?
 
-#### Describe the bug
-
-Symbol loading for Microsoft.MixedReality.QR.dll was skipped because it is not specified in the included modules list
+Symbol loading for `Microsoft.MixedReality.QR.dll` was skipped because it is not specified in the included modules list.  
 
 #### To reproduce
 
@@ -234,13 +233,9 @@ Follow the steps to reproduce this behavior:
 1. Install Microsoft.MixedReality.QR (NuGet) and MRTK
 2. Try to debug
 
-#### Expected behavior
-
-We should be able to debug app with Microsoft.MixedReality.QR.dll
-
+We should be able to debug the app with Microsoft.MixedReality.QR.dll, but the dll is not found:
 
 <img src="images\mr-qr-pdb-not-included.png" alt="Microsoft.MixedReality.QR.pdb not found error message">
-
 
 #### Recommended solution
 
