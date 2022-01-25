@@ -169,4 +169,4 @@ The Holographic Remoting Player is a companion app that connects to PC apps and 
 
 | Sample | Reference article | 
 | --- | --- |
-| [Holographic Remoting samples](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples) | [Holographic Remoting Overview](advanced-concepts/holographic-remoting-overview.md) |
+| [Holographic Remoting samples](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples) | [Holographic Remoting Overview](/windows/mixed-reality/develop/native/holographic-remoting-overview) |

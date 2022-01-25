@@ -8,7 +8,7 @@
 If you're following the Unity for HoloLens development checkpoint journey we've laid out, your next task is to work through our HoloLens 2 tutorial series.
 
 > [!div class="nextstepaction"]
-> [HoloLens 2 tutorial series](../unity/tutorials/mr-learning-base-01.md)
+> [HoloLens 2 tutorial series](/learn/paths/beginner-hololens-2-tutorials/)
 
 If you're following the Unity for VR journey, your next task is to set up your project.
 

@@ -3,7 +3,7 @@
 To get started with a **new Unity project** using MRTK, start from step 2 in the MRTK tutorial:
 
 > [!div class="nextstepaction"]
-> [Set up a new OpenXR project with MRTK](../../tutorials/mr-learning-base-02.md?tabs=openxr)
+> [Set up a new OpenXR project with MRTK](/learn/paths/beginner-hololens-2-tutorials/?tabs=openxr)
 
 If you're upgrading an **existing MRTK project to OpenXR**, you'll first want to upgrade MRTK-Unity to the latest version (version 2.7.2 or later) to get key fixes for compatibility with the Mixed Reality OpenXR plugin.  Use the [Mixed Reality Feature Tool](../../welcome-to-mr-feature-tool.md) to upgrade to the latest version of MRTK and then follow the [manual OpenXR setup steps below](#manual-setup-without-mrtk). See the MRTK documentation for [more in-depth information on migrating an existing MRTK project to OpenXR](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk#configuring-mrtk-for-the-xr-sdk-pipeline).
 
@@ -21,11 +21,11 @@ If you're upgrading an **existing MRTK project to OpenXR**, you'll first want to
 To get started with a **new Unity project** using MRTK, start from step 2 in the MRTK tutorial:
 
 > [!div class="nextstepaction"]
-> [Set up a new Windows XR project with MRTK](../../tutorials/mr-learning-base-02.md?tabs=winxr)
+> [Set up a new Windows XR project with MRTK](/learn/paths/beginner-hololens-2-tutorials/?tabs=winxr)
 
 # [Legacy XR](#tab/legacy)
 
 To get started with a **new Unity project** using MRTK, start from step 2 in the MRTK tutorial:
 
 > [!div class="nextstepaction"]
-> [Set up a new Legacy XR project with MRTK](../../tutorials/mr-learning-base-02.md?tabs=wsa)
+> [Set up a new Legacy XR project with MRTK](/learn/paths/beginner-hololens-2-tutorials/?tabs=wsa)

@@ -59,7 +59,7 @@ For a tour of the OpenXR API, check out this 60-minute video of the <a href="htt
 
 After building an OpenXR Win32 desktop .EXE, you can use it with a VR headset on any desktop VR platform that supports OpenXR, whatever the headset type.
 
-After building an OpenXR UWP app package, you can [deploy that package](../platform-capabilities-and-apis/using-visual-studio.md) to either a HoloLens 2 device or the HoloLens 2 Emulator.
+After building an OpenXR UWP app package, you can [deploy that package](/windows/mixed-reality/develop/advanced-concepts/using-visual-studio) to either a HoloLens 2 device or the HoloLens 2 Emulator.
 
 ## Using OpenXR in an existing project
 

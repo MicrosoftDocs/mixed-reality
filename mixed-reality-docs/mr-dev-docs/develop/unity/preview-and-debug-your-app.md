@@ -30,5 +30,5 @@ Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more 
 
 ## See Also
 * [Holographic Remoting Player](../native/holographic-remoting-player.md)
-* [Tutorial: Getting started with PC Holographic Remoting](tutorials/mr-learning-pc-holographic-remoting-01.md)
-* [Tutorial: Creating a Holographic Remoting PC application](tutorials/mr-learning-pc-holographic-remoting-02.md)
+* [Tutorial: Getting started with PC Holographic Remoting](/learn/modules/pc-holographic-remoting-tutorials/)
+* [Tutorial: Creating a Holographic Remoting PC application](/learn/modules/pc-holographic-remoting-tutorials/4-create-holographic-remoting-pc-application)

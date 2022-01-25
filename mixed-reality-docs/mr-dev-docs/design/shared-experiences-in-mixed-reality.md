@@ -97,7 +97,7 @@ It's important to [think about the environment](/hololens/hololens-environment-c
 
 ### 6. What devices are they using?
 
-Today you’re often likely to see shared experiences between two [**immersive devices**](../discover/immersive-headset-hardware-details.md) (those devices might differ slightly For buttons and relative capability, but not greatly) or two **holographic devices** given the solutions being targeted at these devices. But consider if **2D devices** (a mobile/desktop participant or observer) will be a necessary consideration, especially in situations of **mixed 2D and 3D devices**. Understanding the types of devices your participants will be using is important, not only because they come with different fidelity and data constraints and opportunities, but because users have unique expectations for each platform.
+Today you’re often likely to see shared experiences between two [**immersive devices**](/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details) (those devices might differ slightly For buttons and relative capability, but not greatly) or two **holographic devices** given the solutions being targeted at these devices. But consider if **2D devices** (a mobile/desktop participant or observer) will be a necessary consideration, especially in situations of **mixed 2D and 3D devices**. Understanding the types of devices your participants will be using is important, not only because they come with different fidelity and data constraints and opportunities, but because users have unique expectations for each platform.
 
 ## Exploring the potential of shared experiences
 
