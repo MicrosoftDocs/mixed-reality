@@ -222,7 +222,7 @@ QR codes are saved at the system level in driver session, or boot session on Hol
 
 Detected QR codes are persisted in memory by the driver.
 
-### How do I debug the app in Visual studio when I receive the "`Microsoft.MixedReality.QR.pdb` not found" error message?
+### How do I debug the app in Visual Studio when I receive the "`Microsoft.MixedReality.QR.pdb` not found" error message?
 
 Symbol loading for `Microsoft.MixedReality.QR.dll` was skipped because it isn’t specified in the included modules list.  
 
