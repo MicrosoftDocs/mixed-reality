@@ -43,7 +43,7 @@ In this article, you'll learn about:
   * [QR codes detected, but why am I getting no data?](#qr-codes-detected-but-why-am-i-getting-no-data)
   * [Are QR codes saved at the 'space' level or app level? It seems to me it is beyond app?](#are-qr-codes-saved-at-the-space-level-or-app-level--it-seems-to-me-it-is-beyond-app)
   * [How does that work with the underlying platform? Where do they persist?](#how-does-that-work-with-the-underlying-platform--where-do-they-persist)
-  * [How do I debug the app in Visual studio when I receive the "`Microsoft.MixedReality.QR.pdb` not found" error message?]()
+  * [How do I debug the app in Visual studio when I receive the "`Microsoft.MixedReality.QR.pdb` not found" error message?](#how-do-i-debug-the-app-in-visual-studio-when-i-receive-the-microsoftmixedrealityqrpdb-not-found-error-message)
 
 
 ## Device support

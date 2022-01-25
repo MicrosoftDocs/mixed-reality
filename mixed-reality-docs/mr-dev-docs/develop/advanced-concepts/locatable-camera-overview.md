@@ -37,21 +37,21 @@ HoloLens includes a world-facing camera mounted on the front of the device that 
   
   | Profile                                         | Video     | Preview   | Still     | Frame rates | Horizontal Field of View (H-FOV) | Suggested usage                             |
   |-------------------------------------------------|-----------|-----------|-----------|-------------|----------------------------------|---------------------------------------------|
-  | Legacy, 0  BalancedVideoAndPhoto,100             | 2272x1278 | 2272x1278 |           | 15.30       | 64.69                            | High-quality video recording                |
-  | Legacy,0  BalancedVideoAndPhoto,100             | 896x504   | 896x504   |           | 15.30       | 64.69                            | Preview stream for high-quality photo capture |
-  | Legacy, 0  BalancedVideoAndPhoto,100             |           |           | 3904x2196 |             | 64.69                            | High-quality photo capture                  |
+  | Legacy, 0  BalancedVideoAndPhoto, 100             | 2272x1278 | 2272x1278 |           | 15.30       | 64.69                            | High-quality video recording                |
+  | Legacy, 0  BalancedVideoAndPhoto,100             | 896x504   | 896x504   |           | 15.30       | 64.69                            | Preview stream for high-quality photo capture |
+  | Legacy, 0  BalancedVideoAndPhoto, 100             |           |           | 3904x2196 |             | 64.69                            | High-quality photo capture                  |
   | BalancedVideoAndPhoto, 120                       | 1952x1100 | 1952x1100 | 1952x1100 | 15.30       | 64.69                            | Long duration scenarios                     |
   | BalancedVideoAndPhoto, 120                       | 1504x846  | 1504x846  |           | 15.30       | 64.69                            | Long duration scenarios                     |
-  | VideoConferencing, 100                           | 1952x1100 | 1952x1100 | 1952x1100 | 15,30,60    | 64.69                            | Video conferencing, long duration scenarios |
-  | Videoconferencing, 100                           | 1504x846  | 1504x846  |           | 5,15,30,60  | 64.69                            | Video conferencing, long duration scenarios |
-  | Videoconferencing, 100 BalancedVideoAndPhoto,120 | 1920x1080 | 1920x1080 | 1920x1080 | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
-  | Videoconferencing, 100 BalancedVideoAndPhoto,120 | 1280x720  | 1280x720  | 1280x720  | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
-  | Videoconferencing, 100 BalancedVideoAndPhoto,120 | 1128x636  |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
-  | Videoconferencing, 100 BalancedVideoAndPhoto,120 | 960x540   |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
-  | Videoconferencing, 100 BalancedVideoAndPhoto,120 | 760x428   |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
-  | Videoconferencing, 100 BalancedVideoAndPhoto,120 | 640x360   |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
-  | Videoconferencing, 100 BalancedVideoAndPhoto,120 | 500x282   |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
-  | Videoconferencing, 100 BalancedVideoAndPhoto,120 | 424x240   |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
+  | VideoConferencing, 100                           | 1952x1100 | 1952x1100 | 1952x1100 | 15, 30,60    | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing, 100                           | 1504x846  | 1504x846  |           | 5, 15, 30,60  | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing, 100 BalancedVideoAndPhoto, 120 | 1920x1080 | 1920x1080 | 1920x1080 | 15, 30       | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing, 100 BalancedVideoAndPhoto, 120 | 1280x720  | 1280x720  | 1280x720  | 15, 30       | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing, 100 BalancedVideoAndPhoto,120 | 1128x636  |           |           | 15, 30       | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing, 100 BalancedVideoAndPhoto, 120 | 960x540   |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing, 100 BalancedVideoAndPhoto, 120 | 760x428   |           |           | 15, 30       | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing, 100 BalancedVideoAndPhoto, 120 | 640x360   |           |           | 15, 30       | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing, 100 BalancedVideoAndPhoto, 120 | 500x282   |           |           | 15, 30       | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing, 100 BalancedVideoAndPhoto, 120 | 424x240   |           |           | 15, 30       | 64.69                            | Video conferencing, long duration scenarios |
 
 > [!NOTE]
 > Customers can leverage [mixed reality capture](/hololens/holographic-photos-and-videos) to take videos or photos of your app that include holograms and employ video stabilization.
@@ -69,7 +69,7 @@ When HoloLens takes photos and videos, the captured frames include the location 
 
 On HoloLens, the video and still image streams are undistorted in the system's image-processing pipeline before the frames are made available to the application. The preview stream contains the original distorted frames. Because only the CameraIntrinsics are made available, applications must assume that image frames represent a perfect pinhole camera.
 
-On HoloLens (first-generation), the undistortion function in the image processor may still leave an error of up to 10 pixels when using the CameraIntrinsics in the frame metadata. In many use cases, this error won't matter. However, if, for example, you're aligning holograms to real-world posters or markers and you notice a < 10 px offset (roughly 11 mm for holograms positioned 2 meters away), this distortion error could be the cause.
+On HoloLens (first-generation), the undistortion function in the image processor may still leave an error of up to 10 pixels when using the CameraIntrinsics in the frame metadata. In many use cases, this error won't matter. However, if, for example, you're aligning holograms to real-world posters or markers and you notice a < 10-px offset (roughly 11 mm for holograms positioned 2 meters away), this distortion error could be the cause.
 
 ## Locatable Camera Usage Scenarios
 
