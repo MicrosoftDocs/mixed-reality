@@ -3,7 +3,7 @@ title: QR code tracking overview
 description: Learn how to detect QR codes, add webcam capabilities, and manage coordinate systems in mixed reality apps on HoloLens 2.
 author: qianw211
 ms.author: qianwen
-ms.date: 1/24/2022
+ms.date: 1/25/2022
 ms.topic: article
 keywords: VR, LBE, location based entertainment, vr arcade, arcade, immersive, QR, QR code, QR code detection, HoloLens 2, QR code tracking
 ---
@@ -220,6 +220,35 @@ QR codes are saved at the system level in driver session, or boot session on Hol
 ### How does that work with the underlying platform?  Where do they persist? 
 
 Detected QR codes are persisted in memory by the driver.
+
+### What to do when I received the "Microsoft.MixedReality.QR.pdb not found" error message, and cannot debug in Visual Studio?
+
+#### Describe the bug
+
+Symbol loading for Microsoft.MixedReality.QR.dll was skipped because it is not specified in the included modules list
+
+#### To reproduce
+
+Follow the steps to reproduce this behavior:
+
+1. Install Microsoft.MixedReality.QR (NuGet) and MRTK
+2. Try to debug
+
+#### Expected behavior
+
+We should be able to debug app with Microsoft.MixedReality.QR.dll
+
+
+<img src="images\mr-qr-pdb-not-included.png" alt="Microsoft.MixedReality.QR.pdb not found error message">
+
+
+#### Recommended solution
+
+We're working on adding symbols to the next release. In the meantime, you should still be able to debug your app by excluding the dll in the Visual Studio options: 
+
+<img src="images\exclude-dll.png" alt="excluding the dll in Visual Studio options">
+
+For more information, see [Configuring Visual Studio’s settings](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/#configuring-visual-studios-settings).
 
 ## See also
 * [QR code tracking with native C++ and C## samples](../native/qr-code-tracking-cs-cpp.md)
