@@ -336,7 +336,7 @@ Similar to the event-based usage, setting the [PeripheralsOfInterest](/dotnet/ap
 
 ### Calling the Polling APIs
 
-Once [PeripheralsOfInterest](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.peripheralsofinterest) has the peripheral bit set that you wish to poll, you may call into [GetLastPeripheralState](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.getlatestperipheralstate).
+Once [PeripheralsOfInterest](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.peripheralsofinterest) has the peripheral bit(s) set that you wish to poll, you may call into [GetLastPeripheralState](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.getlatestperipheralstate).
 
 The returned [PowerThermalPeripheralState](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalperipheralstate) contains the latest values for Thermal Score and Mitigation Level for the given peripheral.
 
