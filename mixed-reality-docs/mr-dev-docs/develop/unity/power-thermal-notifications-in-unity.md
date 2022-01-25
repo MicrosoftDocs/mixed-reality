@@ -23,7 +23,7 @@ These actions would include things like:
 
 * Shutting down the device
 
-If your application demands high peripheral performance, consider using the PowerThermalNotification SDK to subscribe to notification events and implement your own custom actions.  Doing so can allow the device to operate longer in situations when otherwise an application may be terminated by the system.
+If your application demands high peripheral performance, consider using the PowerThermalNotification Software Development Kit (SDK) to subscribe to notification events and implement your own custom actions.  Doing so can allow the device to operate longer in situations when otherwise an application may be terminated by the system.
 
 This article describes the PowerThermalNotification SDK and its basic usage to get you started.
 
@@ -108,19 +108,19 @@ The following is a breakdown of suggested mitigations an application can take ba
 * Reduce resolution
 * Stop using the PhotoVideoCamera
 
-## Implementation use Cases
+## Implementation Use Cases
 
 The SDK is designed to support two standard use cases to get information:
 
-* Event based
-* Polling based
+* Event-based
+* Polling-based
 
-Event based notification will provide the quickest feedback path to the application in case it needs to take action.  However in some cases it may be more convenient for the developer to use a polling methodology.
+Event-based notification will provide the quickest feedback path to the application in case it needs to take action.  However, in some cases it may be more convenient for the developer to use a polling methodology.
 
 > [!NOTE]
 > <!--Polling Note--> State information is update at most every few seconds for each peripheral, so polling any faster than that may waste CPU cycles.
 
-## Event Based API Usage
+## Event-Based API Usage
 
 ### Registering for Events
 
@@ -128,13 +128,13 @@ To get notifications, there are three requirements:
 
 * System support for the API including the specified peripheral
 * A non-empty [PeripheralsOfInterest](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.peripheralsofinterest) property
-* A non-empty [PowerThermalMitigationLevelChanged](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.powerthermalmitigationlevelchanged) notification handler
+* A non-empty [PowerThermalMitigationLevelChanged](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.powerthermalmitigationlevelchanged) event handler or a non-empty [PowerThermalThermalScoreChanged](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.powerthermalthermalscorechanged) event handler
 
 You won't receive events if your application doesn't meet these requirements.
 
 The first item can be checked using the [IsSupported](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.issupported) function.  If the system supports notifications for at least one of the peripherals in the mask, the function will return true.  You can choose not to check support using this function as long as your application doesn't explicitly depend on PowerThermalNotification SDK events.
 
-Once you meet the three requirements above, you will receive initial notifications for all supported [PeripheralsOfInterest](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.peripheralsofinterest).  If you later change [PeripheralsOfInterest](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.peripheralsofinterest) or [PowerThermalMitigationLevelChanged](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.powerthermalmitigationlevelchanged), you will receive another set of notifications based on current status.
+Once you meet the three requirements above, you will receive initial notifications for all supported [PeripheralsOfInterest](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.peripheralsofinterest).  If you later change [PeripheralsOfInterest](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.peripheralsofinterest) or either of the event handlers, you will receive another set of notifications based on current status.
 
 Here's a code snippet for grabbing the [PowerThermalNotification](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification) class instance and configuring it for notifications for both [PowerThermalPeripheralFlags.Cpu](/dotnet/api/microsoft.mixedreality.powerthermalnotification.PowerThermalPeripheralFlags) and [PowerThermalPeripheralFlags.PhotoVideoCamera](/dotnet/api//microsoft.mixedreality.powerthermalnotification.PowerThermalPeripheralFlags):
 
@@ -162,9 +162,15 @@ private void InitializeThermalNotifications()
 
 ### Handling Events
 
-When the [PowerThermalMitigationLevelChanged](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.powerthermalmitigationlevelchanged) event fires, it comes with [PowerThermalEventArgs](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermaleventargs).  These should be used to understand the event.  
+When the [PowerThermalMitigationLevelChanged](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.powerthermalmitigationlevelchanged) event fires, it comes with [PowerThermalEventArgs](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermaleventargs).  These should be used to understand the event.
 
-When an event is received, the event handler should inspect [args.ImpactedPeripherals](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermaleventargs.impactedperipherals) which identifies which peripheral(s) are impacted (there may be more than one).  The [args.MitigationLevel](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermaleventargs.mitigationlevel) indicates how severe of a mitigation is recommended for the specified peripherals.  If the mitigation level is [PowerThermalMitigationLevel.NoUserImpact](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalmitigationlevel) then any mitigations associated with the specified peripherals should be removed.  The **args.ThermalScore** indicates a score from 100 to 0 reflecting a linear scale approaching an application shutdown event (zero).  The Thermal Score range begins outside of the mitigation reporting range to allow earlier notification to the application when approaching the need for mitigations.
+Similarly, when the [PowerThermalThermalScoreChanged](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.powerthermalthermalscorechanged) event fires, it comes with [PowerThermalScoreArgs](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalscoreargs).
+
+When an event is received, the event handler should inspect [args.ImpactedPeripherals](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermaleventargs.impactedperipherals), which identifies which peripheral(s) are impacted (there may be more than one).  
+
+For [PowerThermalMitigationLevelChanged](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.powerthermalmitigationlevelchanged) events, the [args.MitigationLevel](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermaleventargs.mitigationlevel) indicates how severe of a mitigation is recommended for the specified peripherals.  If the [args.MitigationLevel](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermaleventargs.mitigationlevel) is [PowerThermalMitigationLevel.NoUserImpact](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalmitigationlevel) then any mitigations associated with the specified peripherals should be removed.  
+
+For [PowerThermalThermalScoreChanged](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.powerthermalthermalscorechanged) events, the [args.ThermalScore](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalscoreargs.thermalscore) indicates a score from 100 to 0 reflecting a linear scale approaching an application shutdown event (zero).  The Thermal Score range begins outside of the mitigation reporting range to allow earlier notification to the application when approaching the need for mitigations.
 
 Here's an example handler:
 
@@ -199,7 +205,7 @@ private void NotificationHandler(object sender, PowerThermalEventArgs args)
 > [!NOTE]
 > <!--Hysteresis Note-->Mitigation levels for peripherals have hysteresis.  Once the level increases, it doesn't decrease until it releases.  The release is an event with args.MitigationLevel set to PowerThermalMitigationLevel.NoUserImpact.
 
-### Putting it Together (Event Based Model)
+### Putting it Together (Event-Based Model)
 
 Here's a simple example of a set of scripts that can be used in Unity to enable this functionality.  The NotificationComponent class can be added to any game object and that game object can track the mitigation level of the assigned peripheral.  The NotificationManager class deals with the SDK managing subscriptions through the single [instance](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.getforcurrentprocess) of the [PowerThermalNotification](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification) class
 
@@ -319,25 +325,25 @@ public class NotificationComponent : MonoBehaviour
 
 ```
 
-## Polling Based API Usage
+## Polling-Based API Usage
 
 ### Updating Peripherals Of Interest
 
-Similar to the event based usage, setting the [PeripheralsOfInterest](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.peripheralsofinterest) property is required to poll a given peripheral.
+Similar to the event-based usage, setting the [PeripheralsOfInterest](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.peripheralsofinterest) property is required to poll a given peripheral.
 
 >[!WARNING]
->If you attempt to call **GetLatestPeripheralState** for a given peripheral without first setting that flag in  [PeripheralsOfInterest](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.peripheralsofinterest) an exception will be thrown. Similarly, attempts to use **GetLatestPeripheralState** with an invalid value (multiple flag bits set, or an unsupported bit) an exception will be thrown.
+>If you attempt to call [GetLastPeripheralState](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.getlatestperipheralstate) for a given peripheral without first setting that flag in  [PeripheralsOfInterest](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.peripheralsofinterest), an exception will be thrown. Similarly, attempts to use [GetLastPeripheralState](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.getlatestperipheralstate) with an invalid value (multiple flag bits set, or an unsupported bit) an exception will be thrown.
 
 ### Calling the Polling APIs
 
-Once [PeripheralsOfInterest](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.peripheralsofinterest) has the peripheral bits set that you wish to poll, you may call into **GetLatestPeripheralState**.
+Once [PeripheralsOfInterest](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.peripheralsofinterest) has the peripheral bit set that you wish to poll, you may call into [GetLastPeripheralState](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalnotification.getlatestperipheralstate).
 
-The returned **PowerThermalPeripheralState** contains latest values for Thermal Score and Mitigation Level.
+The returned [PowerThermalPeripheralState](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalperipheralstate) contains the latest values for Thermal Score and Mitigation Level for the given peripheral.
 
 > [!NOTE]
-> It is possible that in future platforms given peripherals may not be supported.  In these cases the API will return a Thermal Score of 100 and a Mitigation Level of NoUserImpact.  The application may check the **IsSupportedPeripheral** field of the structure to check whether or not this is the case for a given peripheral.
+> It is possible that in future platforms given peripherals may not be supported.  In these cases the API will return a Thermal Score of 100 and a Mitigation Level of NoUserImpact.  The application may check the [IsSupportedPeripheral](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalperipheralstate.issupportedperipheral) field of the structure to check whether or not this is the case for a given peripheral.
 
-See [Handling Events](#handling-events) for details on handling of the Thermal Score and Mitigation Levels returned by **PowerThermalPeripheralState**.
+See [Handling Events](#handling-events) for details on handling of the [Thermal Score](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalperipheralstate.thermalscore) and [MitigationLevel](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalperipheralstate.mitigationlevel) returned by [PowerThermalPeripheralState](/dotnet/api/microsoft.mixedreality.powerthermalnotification.powerthermalperipheralstate).
 
 Here's a small snippet showing polling:
 
@@ -401,4 +407,4 @@ p.SuppressPlatformMitigation(PeripheralFlags.Cpu, false);
 
 Once you have integrated the SDK into your application, you will want to test it.  For HoloLens 2 operating systems that supports the SDK, a developer page will be available in [Device Portal](../advanced-concepts/using-the-windows-device-portal.md#powerthermalsdk-test)
 
-From this page you may control the mitigation levels and thermal scores for each peripheral.  You may also monitor which peripherals have mitigations being actively suppressed.
+From this page, you may control the mitigation levels and thermal scores for each peripheral.  You may also monitor which peripherals have mitigations being actively suppressed.
