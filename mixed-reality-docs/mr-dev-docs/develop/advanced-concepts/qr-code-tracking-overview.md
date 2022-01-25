@@ -233,7 +233,7 @@ Follow the steps to reproduce this behavior:
 1. Install Microsoft.MixedReality.QR (NuGet) and MRTK
 2. Try to debug
 
-We should be able to debug the app with Microsoft.MixedReality.QR.dll, but the dll isn’t found:
+You should be able to debug the app with Microsoft.MixedReality.QR.dll, but the dll isn’t found:
 
 <img src="images\mr-qr-pdb-not-included.png" alt="Microsoft.MixedReality.QR.pdb not found error message">
 
