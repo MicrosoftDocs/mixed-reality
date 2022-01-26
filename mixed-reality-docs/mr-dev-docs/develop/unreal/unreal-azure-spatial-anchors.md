@@ -127,7 +127,7 @@ Start an Azure Spatial Anchors session by:
 
 ![Blueprint of starting azure spatial anchors session custom event](images/asa-unreal/unreal-spatial-anchors-img-03.png)
 
-3. Configure the Azure Spatial Anchors session to provide the **Account ID**, **Account Key**, and **Course Localization Settings**.  All of the checkboxes should be enabled in the course localization settings so the azure spatial anchor service can use sensor data to locate anchors.
+3. Configure the Azure Spatial Anchors session to provide the **Account ID**, **Account Key**, **Account Domain**, and **Course Localization Settings**.  All of the checkboxes should be enabled in the course localization settings so the azure spatial anchor service can use sensor data to locate anchors.
 
 ![Blueprint of config session function with account id and key added](images/asa-unreal/unreal-spatial-anchors-img-04.png)
 
