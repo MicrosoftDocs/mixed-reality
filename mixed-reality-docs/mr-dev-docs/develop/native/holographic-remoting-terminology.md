@@ -36,4 +36,4 @@ Holographic Remoting combines advanced technologies and uses many terms, which c
 
 ## See Also
 
-* [Holographic Remoting Overview](/windows/mixed-reality/develop/native/holographic-remoting-overview)
+* [Holographic Remoting Overview](holographic-remoting-overview.md)
