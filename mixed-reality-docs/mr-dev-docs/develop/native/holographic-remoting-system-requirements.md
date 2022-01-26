@@ -27,7 +27,7 @@ This chapter lists the minimum system requirements to work with Holographic Remo
 - Optional: GPU with H265 video **decode** support.
 
 > [!NOTE]
-> The player pc requirements are only relevant if your player application runs on a Windows PC with Windows Mixed Reality instead of the HoloLens 2.
+> The player PC requirements are only relevant if your player application runs on a Windows PC with Windows Mixed Reality instead of the HoloLens 2.
 
 The table below helps to find which GPUs support hardware video encoding and decoding:
 
@@ -40,7 +40,7 @@ The table below helps to find which GPUs support hardware video encoding and dec
 Even though the correct H265 codec might be installed, security properties on the codec DLLs may cause codec initialization failures. The [troubleshooting](holographic-remoting-troubleshooting.md) section describes steps how to solve this problem.
 
 > [!Important]
-> Windows update doesn't always deliver the very latest GPU drivers, check your GPU manufacturer's website for latest drivers:
+> Windows update doesn't always deliver the very latest GPU drivers. Check your GPU manufacturer's website for latest drivers:
 > - [**AMD drivers**](https://www.amd.com/en/support)
 > - [**Intel drivers**](https://www.intel.com/content/www/us/en/support/detect.html)
 > - [**NVIDIA drivers**](https://www.nvidia.com/Download/index.aspx)
@@ -51,7 +51,7 @@ A stable, low-latency network connection between the player and remote is critic
 
 ## Software
 
-The following software must be installed on a developer pc:
+The following software must be installed on a developer PC:
 
 - The latest version of Visual Studio 2019 [download](https://visualstudio.microsoft.com/vs/older-downloads/)
   - Workloads:
