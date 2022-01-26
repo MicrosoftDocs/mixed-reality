@@ -3,7 +3,7 @@ title: QR code tracking overview
 description: Learn how to detect QR codes, add webcam capabilities, and manage coordinate systems in Mixed Reality apps on HoloLens 2.
 author: qianw211
 ms.author: qianwen
-ms.date: 1/25/2022
+ms.date: 1/26/2022
 ms.topic: article
 keywords: VR, LBE, location based entertainment, vr arcade, arcade, immersive, QR, QR code, QR code detection, HoloLens 2, QR code tracking
 ---
@@ -27,7 +27,6 @@ In this article, you'll learn about:
   * [Distance and angular position from the QR code](#distance-and-angular-position-from-the-qr-code) 
   * [Managing QR code data](#managing-qr-code-data)
   * [QR code placement in a space](#qr-code-placement-in-a-space)
-  * [Getting the time stamp from the `QueryPerformanceCounter` QPC ticks?](#getting-the-time-stamp-from-the-queryperformancecounter-qpc-ticks)
 * [Troubleshooting and FAQ](#troubleshooting-and-faq)
   * [What QR code versions are supported?](#what-qr-code-versions-are-supported)
   * [What capabilities are needed?](#what-capabilities-are-needed)
@@ -65,11 +64,11 @@ The [QR spec](https://www.qrcode.com/en/howto/code.html) contains more informati
 
 ### Lighting and backdrop
 
-QR code detection quality is susceptible to varying illumination and backdrop. 
+QR code detection quality is susceptible to varying illumination and backdrop. In general, provide enough contrast for the black/white modules for better performance, we recommend 0/255.
 
-In a scene with bright lighting, print a code that is black on a gray background. Otherwise, print a black QR code on a white background.
+In a scene with bright lighting, print a code that is black on a gray 128 background. Otherwise, print a black QR code on a white background.
 
-If the code is displayed against a dark backdrop, the detection rate of the code may be lower than expected. Printing a black code on a gray background may help increase the detection rate.
+If the code is displayed against a dark backdrop, the detection rate of the code may be lower than expected. Printing a black code on a gray 128 background may help increase the detection rate.
 
 ### Size of QR codes
 
@@ -110,17 +109,6 @@ See also [How to clear the codes from my app?](#managing-qr-code-data)
 
 ### QR code placement in a space
 For recommendations on where and how to place QR codes, refer to [Environment considerations for HoloLens](/hololens/hololens-environment-considerations).
-
-### Getting the time stamp from the `QueryPerformanceCounter` QPC ticks
-
-```
-long EndingTime = System.Diagnostics.Stopwatch.GetTimestamp();
-long ElapsedTime = EndingTime - (long)qrCode.LastDetectedQPCTicks;
-double ElapsedSecs = ElapsedTime * (1.0f / System.Diagnostics.Stopwatch.Frequency);
-
-QRTimeStamp.text = "Time:" + System.DateTime.Now.AddSeconds(-ElapsedSecs).ToString("MM/dd/yyyy HH:mm:ss.fff");
-```
-
 
 ## Troubleshooting and FAQ
 
@@ -167,7 +155,7 @@ QR tracking is automatic on HoloLens 2, and you'll need the "webcam" capability 
 
 All the required files and documentation can be found here.
 
-<https://www.nuget.org/packages/Microsoft.MixedReality.QR/0.5.2032-rc>
+<https://www.nuget.org/packages/Microsoft.MixedReality.QR>
 
 ### How do I prepare a UWP to use Microsoft.MixedReality.QR.QRCodeWatcher?
 
@@ -210,7 +198,7 @@ Currently, we don't support QR codes with logos.
 ### QR codes detected, but why am I getting no data?
 
 * If the platform can’t decode the QR code, there will be no data.  You can use the stream and interpret the data using open-source code. 
-* Some features such as structure append and micro-QR codes aren’t supported.
+* Some features such as structure append aren’t supported.
 
 For more information, see [what QR code versions are supported?](#what-qr-code-versions-are-supported).
 
