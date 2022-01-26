@@ -37,7 +37,7 @@ The table below helps to find which GPUs support hardware video encoding and dec
 |AMD|Check the support matrix [on this page](https://en.wikipedia.org/wiki/Unified_Video_Decoder#UVD_6)|
 |Intel|Skylake and newer CPUs|
 
-Even though the correct H265 codec might be installed, security properties on the codec DLLs may cause codec initialization failures. The [troubleshooting](holographic-remoting-troubleshooting.md) section describes steps how to solve this problem.
+Even though the correct H265 codec might be installed, security properties on the codec DLLs may cause codec initialization failures. The [troubleshooting](holographic-remoting-troubleshooting.md) section describes steps on how to solve this problem.
 
 > [!Important]
 > Windows update doesn't always deliver the very latest GPU drivers. Check your GPU manufacturer's website for latest drivers:
