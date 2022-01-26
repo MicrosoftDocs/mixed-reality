@@ -58,5 +58,5 @@ Immersive environment apps are centered around an environment that completely ch
 ## See also
 
 * [Development overview](../develop/development.md)
-* [App model](app-model.md)
-* [App views](app-views.md)
+* [App model](../design/app-model.md)
+* [App views](../design/app-views.md)

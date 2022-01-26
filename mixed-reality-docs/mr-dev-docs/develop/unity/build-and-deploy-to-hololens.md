@@ -2,8 +2,8 @@
 title: Build and deploy to the HoloLens
 description: This article outlines building your mixed reality project with Unity and Visual Studio so you can deploy it to the HoloLens.
 author: mattzmsft
-ms.author: v-vtieto
-ms.date: 12/07/2021
+ms.author: vinnietieto
+ms.date: 12/22/2021
 ms.topic: article
 keywords: unity, visual studio, export, build, deploy, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset, UWP, deploying
 ---
@@ -24,10 +24,6 @@ Before you build and deploy your project, make sure that you have already [set u
     -Set **Target device** to *HoloLens*  
     -Set **Architecture** to *ARM 64*  
     -Set **Build Type** to *D3D Project*  
-
-    > [!NOTE]
-    > If your app doesn't need the system keyboard, our recommendation is to use *D3D* so that your app uses slightly less memory and a faster launch time. However, if you're using the system keyboard through the TouchScreenKeyboard API, you need to export the project as *XAML*.
-
     -Set **Target SDK Version** to *Latest   Installed*  
     -Set **Minimum Platform Version** to *10.0.10240.0*  
     -Set **Visual Studio Version** to *Latest installed*  

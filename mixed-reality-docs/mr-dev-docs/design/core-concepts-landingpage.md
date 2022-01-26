@@ -1,18 +1,18 @@
 ---
-title: Mixed reality core concepts
+title: Mixed reality structural elements
 description: Learn about core concepts and how they contribute to the quality of the mixed reality experiences you're creating for your users.
 author: grbury 
-ms.author: grbury
-ms.date: 10/02/2019
+ms.author: vinnietieto
+ms.date: 12/09/2021
 ms.topic: overview
 keywords: Windows Mixed Reality, design, app patterns, controls, style, HoloLens, interaction, UX elements, behaviors, building blocks, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, comfort, app model, coordinate, holographic frame
 ---
 
-# Core concepts overview
+# Mixed reality structural elements
 
 ![Direct manipulation with hands](images/05_CoreConcepts.png)
 
-Before diving into the design your experience, it's helpful to understand a few core concepts. Each topic below is an underlying factor that affects and contributes to the quality of the mixed reality experience you're creating. 
+Before diving into the design of your experience, it's helpful to understand a few core concepts. Each topic below describes an underlying structural element that affects and contributes to the quality of the mixed reality experience you're creating.
 
 :::row:::
     :::column:::
@@ -31,8 +31,8 @@ Before diving into the design your experience, it's helpful to understand a few 
 
 :::row:::
     :::column:::
-        [![Holographic frame](images/destinationmars-750px.png)](holographic-frame.md)
-        **[Holographic frame](holographic-frame.md)**
+        [![Spatial mapping](images/surfacereconstruction.jpg)](spatial-mapping.md)
+        **[Spatial mapping](spatial-mapping.md)**
     :::column-end:::
     :::column:::
         [![Room scan visualization](images/sr-mixedworld-140429-8pm-00068-1000px.png)](room-scan-visualization.md)
@@ -41,21 +41,6 @@ Before diving into the design your experience, it's helpful to understand a few 
     :::column:::
         [![Scene understanding](images/scene-understanding.png)](scene-understanding.md)
         **[Scene understanding](scene-understanding.md)**
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-        [![Spatial anchors](images/azurespatialanchors.jpg)](spatial-anchors.md)
-        **[Spatial anchors](spatial-anchors.md)**
-    :::column-end:::
-    :::column:::
-        [![Spatial mapping](images/surfacereconstruction.jpg)](spatial-mapping.md)
-        **[Spatial mapping](spatial-mapping.md)**
-    :::column-end:::
-    :::column:::
-        [![Types of mixed reality apps](images/enhancedenvironmentapps-640px.jpg)](types-of-mixed-reality-apps.md)
-        **[Types of mixed reality apps](types-of-mixed-reality-apps.md)**
     :::column-end:::
 :::row-end:::
 
