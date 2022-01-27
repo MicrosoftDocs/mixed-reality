@@ -131,8 +131,7 @@ Call `FrozenWorld_GetErrorMessage()` to get further detailed diagnostic informat
 These functions can be called safely regardless of the library's state (even before startup and after teardown). The error information returned by these functions always relates to the most recent (other) function call executed on the same thread.
 
 
-### 
-data recordings
+### Data recordings
 
 Frozen World's serialization facility can be used to create a continuous recording of all state necessary to investigate Frozen World's runtime behavior after the fact. Diagnostic recordings can be invaluable assets for offline debugging and testing. They're sufficiently compact and unobtrusive to allow them to be created by default.
 
