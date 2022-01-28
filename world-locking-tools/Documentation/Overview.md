@@ -41,7 +41,7 @@ These ideas are further explored in the conceptual guide. To complement the theo
 * [How-to articles](~/Documentation/HowTos.md)
 * [Samples](~/Documentation/HowTos/SampleApplications.md)
 
-Further, reference materials for interfacing through script with World Locking Tools is included in the [API Documentation](~/Documentation/Concepts/Advanced/Architecture/Architecture.md).
+Further, reference materials for interfacing through script with World Locking Tools is included in the [API Documentation](xref:Microsoft.MixedReality.WorldLocking.Core).
 
 ## Build Status
 
