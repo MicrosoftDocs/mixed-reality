@@ -21,4 +21,4 @@ Join April Speight, leader of the Spatial Computing Cloud Advocacy team at Micro
 | Episode 3: Low-code/no-code platforms for AR | Thursday, Febuary 10 from 9am - 10am PST | Did you know that coding isn't a requirement to create augmented reality apps? The number of low-code/no-code platforms for AR development has grown over the past few years - enabling creators of all backgrounds to develop their own AR experiences. Join us to explore various low-code/no-code platforms for AR development, including a demo for Microsoft Power Apps. [**Register here**](https://www.meetup.com/hololens-mr/events/283487520/) |
 | Episode 4: Interactions for AR & VR development | Tuesday, February 22 from 10am - 11pm PST  | There're many ways to interact with virtual objects that go beyond using our hands and or motion controllers. Learn various input models that can enable you to interact with XR apps, including a demo for the Mixed Reality Toolkit. [**Register here**](https://www.meetup.com/hololens-mr/events/283487582/) |
 
-More episodes are coming soon. 
+New episodes will be posted every other week through May 2022.
