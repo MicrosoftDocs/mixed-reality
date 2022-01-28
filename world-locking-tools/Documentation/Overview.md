@@ -19,10 +19,6 @@ World Locking Tools locks the entire holograph space of your application to the 
 
 World Locking Tools scale naturally with both the size and complexity of the scene. Large models, large collections of models, and multi-room environments are all handled gracefully.
 
-## Published documentation
-
-For the most up-to-date documentation, see the [World Locking Tools for Unity documentation portal](~/Documentation/Overview.md).
-
 ## Getting started
 
 Dive into the full documentation, beginning with the organization of the documentation itself, from the [Guides section](~/Documentation/GettingStartedWithWorldLocking.md).
