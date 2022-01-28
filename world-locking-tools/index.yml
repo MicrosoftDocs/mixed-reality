@@ -25,9 +25,9 @@ landingContent:
       - linkListType: overview
         links:
           - text: Overview
-            url: Overview.md        
+            url: Documentation/Overview.md        
           - text: FAQ
-            url: IntroFAQ.md
+            url: Documentation/IntroFAQ.md
 
   # Card (optional)
   - title: Setup
@@ -35,12 +35,12 @@ landingContent:
       - linkListType: quickstart
         links:
           - text: Quickstart guide
-            url: HowTos/quickstart.md
+            url: Documentation/HowTos/quickstart.md
 
       - linkListType: reference
         links:
           - text: Initial setup
-            url: HowTos/InitialSetup.md
+            url: Documentation/HowTos/InitialSetup.md
 
   # Card
   - title: World-locking in depth
@@ -48,12 +48,12 @@ landingContent:
       - linkListType: concept
         links:
           - text: Basic concepts
-            url: Concepts.md
+            url: Documentation/Concepts.md
 
       - linkListType: learn
         links:
           - text: Advanced concepts
-            url: Concepts/AdvancedConcepts.md
+            url: Documentation/Concepts/AdvancedConcepts.md
 
   # Card (optional)
   - title: Architecture
@@ -61,7 +61,7 @@ landingContent:
       - linkListType: architecture
         links:
           - text: Architecture
-            url: Concepts/Advanced/Architecture/Architecture.md
+            url: Documentation/Concepts/Advanced/Architecture/Architecture.md
 
   # Card
   - title: Sample applications
@@ -69,7 +69,7 @@ landingContent:
       - linkListType: sample
         links:
           - text: Sample applications
-            url: HowTos/SampleApplications.md        
+            url: Documentation/HowTos/SampleApplications.md        
 
   # Card
   - title: Development
@@ -77,8 +77,8 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Troubleshooting
-            url: HowTos/Troubleshooting.md
+            url: Documentation/HowTos/Troubleshooting.md
           - text: Tools and visualizers
-            url: HowTos/Tools.md  
+            url: Documentation/HowTos/Tools.md  
           - text: Reporting a bug
-            url: HowTos/Contributing.md#reporting-a-bug
+            url: Documentation/HowTos/Contributing.md#reporting-a-bug
