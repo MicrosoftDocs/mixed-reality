@@ -63,7 +63,7 @@ static const FrozenWorld_FragmentId FrozenWorld_FragmentId_INVALID = 0;
 static const FrozenWorld_FragmentId FrozenWorld_FragmentId_UNKNOWN = 0xFFFFFFFFFFFFFFFF;
 ```
 
-The most significant practical distinction between the INVALID and UNKNOWN anchor or fragment identifiers is that INVALID identifiers can never be stored in a snapshot (and attempting to do so anyway will lead to an error being reported) but UNKNOWN identifiers can. Semantically, use INVALID to express 'the anchor or fragment does not exist' and UNKNOWN to express 'the anchor or fragment exists, but it is ambiguous, not known, or not relevant at this point'.
+INVALID identifiers can never be stored in a snapshot, and attempting to do so will lead to an error being reported. UNKNOWN identifiers _can_ be stored in a snapshot. Semantically, use INVALID to express 'the anchor or fragment does not exist'. Use UNKNOWN to express 'the anchor or fragment exists, but it's ambiguous, not known, or not relevant at this point'.
 
 You can use `FrozenWorld_FragmentId_UNKNOWN` as the fragment association of all anchors you add to a SPONGY snapshot, for example, as Frozen World ignores them anyway and automatically assigns unique fragment identifiers to all anchors when they are added to the FROZEN snapshot during alignment.
 
@@ -72,17 +72,17 @@ You can use `FrozenWorld_FragmentId_UNKNOWN` as the fragment association of all 
 
 ### Parameter naming conventions
 
-Parameters may have an implied contract based on their name if it matches any of the following patterns (with foo in the following description being a generic placeholder that's substituted by any valid symbol name):
+Parameters may have an implied contract that's based on their name if it matches any of the patterns below. In the following description, _foo_ is a generic placeholder for any valid symbol name:
 
 | Naming pattern	| Implied contract
 |---|---|
 | fooBufferSize, fooOut	| <ul><li>The fooOut pointer points to a writable memory buffer that has room for (at least) fooBufferSize elements of fooOut's pointed-to data type.</li><li>fooBufferSize must be zero or positive.</li><li>fooBufferSize is counted in elements of fooOut's pointed-to data type (not bytes).</li><li>fooOut must not be null. It must always point to a valid address, even if fooBufferSize is zero.</li><li>The called function will write no more than fooBufferSize elements to the memory pointed to by fooOut even if more data would be available.</li></ul> |
-| fooOut	| <ul><li>The memory pointed to by fooOut must be safe to be written to.</li><li>Existing data in the pointed-to memory location is ignored.</li><li>The function will not change the pointed-to memory except by writing a valid update to it; if fooOut points to a buffer intended to receive multiple elements of the same type, only some of the elements may have been written if an error occurs, but each of the written elements will have been written completely.</li></ul> |
-| fooInOut	| <ul><li>The memory pointed to by fooInOut may be read and must be safe to be written to.</li><li>The information at the memory location pointed to by fooInOut must be valid (per the function's description).</li><li>The function will not change the pointed-to memory except by writing a valid update to it; if fooInOut points to a buffer containing multiple elements of the same type, only some of the elements may have been updated if an error occurs, but each of the actually updated elements will have been updated completely.</li></ul> |
+| fooOut	| <ul><li>The memory pointed to by fooOut must be safe to be written to.</li><li>Existing data in the pointed-to memory location is ignored.</li><li>The function will not change the pointed-to memory except by writing a valid update to it. If fooOut points to a buffer set up to receive multiple elements of the same type, only some of the elements may have been written if an error occurs, but each of the written elements will have been written completely.</li></ul> |
+| fooInOut	| <ul><li>The memory pointed to by fooInOut may be read and must be safe to be written to.</li><li>The information at the memory location pointed to by fooInOut must be valid (per the function's description).</li><li>The function will not change the pointed-to memory except by writing a valid update to it. If fooInOut points to a buffer that contains multiple elements of the same type, only some of the elements may have been updated if an error occurs, but each of the actually updated elements will have been updated completely.</li></ul> |
 
 ### Thread safety
 
-This library is thread-aware, but functions in this library that change its state are not generally re-entrant or safe for being called concurrently unless explicitly noted otherwise. Read or query operations can be called safely from different threads in parallel as long as there are no concurrent calls to any functions that change the internal state of the library.
+This library is thread-aware, but functions in it that change its state are not generally re-entrant or safe for being called concurrently unless noted otherwise. Read or query operations can be called safely from different threads in parallel as long as there are no concurrent calls to any functions that change the internal state of the library.
 
   * __Version information__ can be queried at any time in any thread.
   * __Error information__ can be queried at any time in any thread and always return error information for the last function called in the same thread.
@@ -104,11 +104,11 @@ int FrozenWorld_GetVersion(
     char* versionOut);
 ```
 
-Returns a representation of the DLL's version. This is useful to know when investigating suspected bugs and weird phenomena because it allows us to relate what you're seeing with a specific version of the Frozen World source code.
+Returns a representation of the DLL's version. This is useful to know when investigating suspected bugs and weird phenomena. It allows us to relate what you're seeing with a specific version of the Frozen World source code.
 
 If the detail flag is false, the returned version information is a short, single-line string contains a number – this representation is suitable for being displayed on screen or in an info dialog box. If the detail flag is true, the version information is a multi-line string that specifies exactly which source files were compiled to build the DLL.
 
-Under extraordinary circumstances, for example if you received a bleeding-edge test build of the DLL directly from a Frozen World developer, both the compact and the detailed version information may describe several distinct version numbers or contain a more detailed listing of different source files and their respective revisions.
+There may be certain extraordinary circumstances--for example, you received a bleeding-edge test build of the DLL directly from a Frozen World developer. In these cases, both the compact and the detailed version information may describe several distinct version numbers or contain a more detailed listing of different source files and their respective revisions.
 
 This function can be called safely regardless of the library's state, even before startup and after teardown, and regardless of the thread it's called from.
 
@@ -131,9 +131,9 @@ Call `FrozenWorld_GetErrorMessage()` to get further detailed diagnostic informat
 These functions can be called safely regardless of the library's state (even before startup and after teardown). The error information returned by these functions always relates to the most recent (other) function call executed on the same thread.
 
 
-### Diagnostic data recordings
+### Data recordings
 
-Frozen World's serialization facility can be used to create a continuous recording of all state necessary to investigate Frozen World's runtime behavior after the fact. Diagnostic recordings can be invaluable assets for offline debugging and testing and are designed to be sufficiently compact and unobtrusive to allow them to be created by default.
+Frozen World's serialization facility can be used to create a continuous recording of all state necessary to investigate Frozen World's runtime behavior after the fact. Diagnostic recordings can be invaluable assets for offline debugging and testing. They're sufficiently compact and unobtrusive to allow them to be created by default.
 
 See [Persistence](#persistence) below.
 
@@ -171,9 +171,9 @@ This clears the SPONGY snapshot. After you've called `FrozenWorld_Step_Init()`, 
 
   * All anchors you know the current transform (in relation to the head) of. The fragment association of anchors in the SPONGY snapshot is ignored (fragments are created during the alignment step automatically based on whether Frozen World can automatically deduce a spatial relationship between them), so you can use `FrozenWorld_FragmentId_UNKNOWN` for them.
     
-  * Edges between those anchors to signify which pairs of anchors are directly spatially related to each other. For example, two anchors next to each other in the same room should be connected by an edge; but two anchors separated by a wall shouldn't be.
+  * Edges between those anchors to signify which pairs of anchors are directly spatially related to each other. For example, two anchors next to each other in the same room should be connected by an edge. Two anchors that are separated by a wall shouldn't be.
     
-  * The current most significant anchor among those you've added to the SPONGY snapshot. This is the anchor whose relation to the head is presumably (or likely) most accurately represented in the SPONGY snapshot. This information is used in various ways, for example as a starting point when walking though the anchor graph to gather supports (see next step) or when placing scene objects (see [Creating and tracking scene object attachment points](#creating-and-tracking-scene-object-attachment-points) below).
+  * The current most significant anchor among those you've added to the SPONGY snapshot. This is the anchor whose relation to the head is presumably (or likely) most accurately represented in the SPONGY snapshot. This information is used in various ways. For example, it can indicate a starting point when walking through the anchor graph to gather supports (see next step) or when placing scene objects (see [Creating and tracking scene object attachment points](#creating-and-tracking-scene-object-attachment-points) below).
 
 See [Accessing snapshots](#accessing-snapshots) below (also for an introduction on the different kinds of snapshots).
 
