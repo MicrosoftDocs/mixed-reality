@@ -1,5 +1,7 @@
 - name: Programs and events
   items: 
+    - name: Mixed Reality development series
+      href: journey-to-mr-series.md
     - name: StereoKit hackathon
       href: stereokit.md
     - name: Mixed Reality Speaker Series
