@@ -42,7 +42,7 @@ The Unity Modules were renamed the The Unity Plugin in V5.0.0.
     - Import the **Microsoft.MixedReality.Toolkit.Foundation** package into the Unity project.
     - Download and import the latest version of the [Leap Motion Unity Modules / Unity Plugin](https://developer.leapmotion.com/unity) into the project
         - For Unity Modules: only import the **Core** package within the project
-		- For Unity Plugin: only import the **Tracking** package within the project. Only .unitypackages are supported for now.
+        - For Unity Plugin: only import the **Tracking** package within the project. Only .unitypackages are supported for now.
 
     > [!IMPORTANT]
     > Unity deprecated SelectionMode.OnlyUserModifiable after Unity 2019.4.19 which results in the following error coming from the Ultraleap Hotkeys.cs script:
