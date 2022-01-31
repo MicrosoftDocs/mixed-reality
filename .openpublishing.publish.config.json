@@ -56,6 +56,9 @@
       "moniker_ranges": [
         ">= ux-tools-0.11 || >= graphics-tools-0.1"
       ],
+      "xref_query_tags": [
+        "/dotnet"
+      ],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content"
