@@ -1,2 +1,7 @@
 - name: Index
-  href: index.md
+  href: index.yml
+- name: Home
+  href: Documentation/Overview.md
+- name: Guides
+  href: Documentation/
+  homepage: Documentation/GettingStartedWithWorldLocking.md
