@@ -18,7 +18,7 @@ When your project is ready to go, run the configure scene utility from **Mixed R
 
 ### Visualizers
 
-During early development, adding visualizers can be helpful to ensure WLT is setup and working properly. They can be removed for production performance, or if for any reason are no longer needed, using the Remove visualizers utility. More details on the visualizers can be found in the [Tools documentation](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/Tools.html#visualizers).
+During early development, adding visualizers can be helpful to ensure WLT is setup and working properly. They can be removed for production performance, or if for any reason are no longer needed, using the Remove visualizers utility. More details on the visualizers can be found in the [Tools documentation](/windows/mixed-reality/world-locking-tools/Documentation/HowTos/Tools.html#visualizers).
 
 # [ARAnchorManager](#tab/anchorstore)
 
