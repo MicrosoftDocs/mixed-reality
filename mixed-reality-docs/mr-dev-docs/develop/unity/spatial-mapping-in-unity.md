@@ -21,7 +21,7 @@ To use spatial mapping in your app, the SpatialPerception capability needs to be
 
 ## Device support
 
-| Feature | [HoloLens (first gen)](/hololens/hololens1-hardware) | [HoloLens 2](/hololens/hololens2-hardware) | [Immersive headsets](../../discover/immersive-headset-hardware-details.md) |
+| Feature | [HoloLens (first gen)](/hololens/hololens1-hardware) | [HoloLens 2](/hololens/hololens2-hardware) | [Immersive headsets](/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details) |
 | ---- | ---- | ---- | ---- |
 | Spatial mapping | ✔️ | ✔️ | ❌ |
 

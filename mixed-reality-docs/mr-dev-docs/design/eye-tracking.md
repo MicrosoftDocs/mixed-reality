@@ -29,7 +29,7 @@ Eye tracking API has been designed with a user’s privacy in mind, avoiding pas
      <td><strong>Feature</strong></td>
      <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
      <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-     <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+     <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
 </tr>
 <tr>
      <td>Eye-gaze</td>

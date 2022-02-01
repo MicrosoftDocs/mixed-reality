@@ -33,7 +33,7 @@ Frame rate is the first pillar of hologram stability and user comfort. Frame rat
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -96,7 +96,7 @@ Stable holograms will increase the usability and believability of your app, and 
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -157,7 +157,7 @@ Misalignments of holograms with physical objects (if intended to be placed in re
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -220,7 +220,7 @@ App developers control where users' eyes converge by placing content and hologra
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -277,7 +277,7 @@ Regardless of viewing zone of comfort issues, demands for the user to switch fre
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -320,7 +320,7 @@ In Windows Mixed Reality, the audio engine provides the aural component of the m
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -378,7 +378,7 @@ Well-designed user experiences can create and maintain useful context of the vir
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -434,7 +434,7 @@ Holograms should react to the user position in roughly the same ways that "real"
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -493,7 +493,7 @@ Input interaction clarity is critical to an app's usability and includes input c
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -569,7 +569,7 @@ A button has long been a metaphor used for triggering an event in the 2D abstrac
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -624,7 +624,7 @@ Apps that require spatial mapping data rely on the device to automatically colle
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -679,7 +679,7 @@ In a mixed reality app, content may be outside the field of view or occluded by 
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -722,7 +722,7 @@ A progress control provides feedback to the user that a long-running operation i
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>

@@ -57,7 +57,7 @@ There are several development paths you can take through our documentation. The 
 |---|---|---|---|---|
 | HoloLens 2 | ✔️ | ✔️ | ✔️ | ✔️ |
 | HoloLens (1st gen) | ✔️ | ✔️ | ❌ | WinRT (Legacy) only |
-| [Windows Mixed Reality headsets](../discover/immersive-headset-hardware-details.md) | ✔️ | ✔️ | ✔️ | ✔️ |
+| [Windows Mixed Reality headsets](/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details) | ✔️ | ✔️ | ✔️ | ✔️ |
 | SteamVR headsets | ✔️ | ✔️ | ✔️ | ✔️ |
 | Oculus Quest/Rift | ✔️ | ✔️ | ✔️ | ✔️ |
 | Mobile (ARCore/ARKit) | ✔️ | ✔️ | ✔️ | ❌ |
