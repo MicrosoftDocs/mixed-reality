@@ -3,7 +3,7 @@ title: QR code tracking overview
 description: Learn how to detect QR codes, add webcam capabilities, and manage coordinate systems in Mixed Reality apps on HoloLens 2.
 author: qianw211
 ms.author: qianwen
-ms.date: 1/26/2022
+ms.date: 2/1/2022
 ms.topic: article
 keywords: VR, LBE, location based entertainment, vr arcade, arcade, immersive, QR, QR code, QR code detection, HoloLens 2, QR code tracking
 ---
@@ -64,11 +64,11 @@ The [QR spec](https://www.qrcode.com/en/howto/code.html) contains more informati
 
 ### Lighting and backdrop
 
-QR code detection quality is susceptible to varying illumination and backdrop. In general, provide enough contrast for the black/white modules for better performance, we recommend 0/255.
+QR code detection quality is susceptible to varying illumination and backdrop.
+ 
+* Under normal lighting conditions, provide enough contrast for the black/white modules for better performance.
 
-In a scene with bright lighting, print a code that is black on a gray 128 background. Otherwise, print a black QR code on a white background.
-
-If the code is displayed against a dark backdrop, the detection rate of the code may be lower than expected. Printing a black code on a gray 128 background may help increase the detection rate.
+* In extreme lighting conditions with bright lighting or dark backdrop, you can try to reduce and adjust contrast which could improve QR code detection rate. The white background within the QR code can be reduced from 255 downwards.
 
 ### Size of QR codes
 
