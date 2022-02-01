@@ -2,7 +2,7 @@
 title: World locking and spatial anchors in Unity
 description: Learn how to use World Locking Tools and spatial anchors in Unity mixed reality applications.
 author: hferrone
-ms.author: v-hferrone
+ms.author: vinnietieto
 ms.date: 04/7/2021
 ms.topic: article
 keywords: Unity, spatial anchors, anchor store, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset, world locking tools, holograms
