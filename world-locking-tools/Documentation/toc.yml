@@ -1,4 +1,6 @@
-﻿- name: About this documentation
+﻿- name: Welcome to World Locking Tools
+  href: index.yml
+- name: About this documentation
   href: GettingStartedWithWorldLocking.md
 - name: World Locking Tools Concepts
   href: Concepts.md
