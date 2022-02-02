@@ -128,7 +128,7 @@ public void RemoveAnchor()
 If you want an alternative to manually working with Anchors, check out the Microsoft World Locking Tools. 
 
 > [!div class="nextstepaction"]
-> [Install with the MR Feature Tool](/windows/mixed-reality/world-locking-tools/Documentation/HowTos/WLTviaMRFeatureTool.html)
+> [Install with the MR Feature Tool](https://docs.microsoft.com/en-us/mixed-reality/world-locking-tools/documentation/howtos/wltviamrfeaturetool.md)
 
 ## See also
 
