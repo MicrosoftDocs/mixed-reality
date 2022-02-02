@@ -66,10 +66,10 @@ Or jump to Mixed Reality platform capabilities and APIs:
 You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.
 
 ## See Also
-* [World Locking Tools introduction](https://docs.microsoft.com/mixed-reality/world-locking-tools/documentation/introfaq.md)
-* [Quickstart guides](https://docs.microsoft.com/mixed-reality/world-locking-tools/documentation/howtos/quickstart.md)
+* [World Locking Tools introduction](/world-locking-tools/documentation/introfaq.md)
+* [Quickstart guides](/world-locking-tools/documentation/howtos/quickstart.md)
 * [Tutorials](https://microsoft.github.io/MixedReality-WorldLockingTools-Samples/Tutorial/01_Minimal/01_Minimal.html)
-* [Samples](https://docs.microsoft.com/mixed-reality/world-locking-tools/documentation/howtos/sampleapplications.md)
+* [Samples](/world-locking-tools/documentation/howtos/sampleapplications.md)
 * [Spatial anchor persistence](../../design/coordinate-systems.md#spatial-anchor-persistence)
 * <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * <a href="/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Azure Spatial Anchors SDK for Unity</a>
