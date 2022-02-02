@@ -71,7 +71,7 @@ And so far in this discussion, the minimum information required to fix the probl
 
 World Locking Tools addresses that problem with the [Space Pins](Concepts/Advanced/SpacePins.md) API, which allows the application to supply enough information relating to the physical world and holographic world to correct for the errors in distance traveled. This allows large holograms to appear aligned with the physical world all over.
 
-## Next
+## Start with the basic system
 
 Now that we've had an overview of World Locking Tools concepts, let's step back and take a look at the basic system. Understanding what services the baseline operation does and doesn't supply will help you to determine the proper use of advanced concepts later, and whether those advanced techniques are even required for a specific application.
 
