@@ -18,7 +18,7 @@ A shared experience lets multiple users, each with their own HoloLens, iOS or An
 
 As with local anchors, World Locking Tools can use a group of Azure Spatial Anchors to lock entire coordinate spaces relative to the physical world, rather than use individual anchors to lock individual objects. World locking the entire space not only provides an environment that's more conducive to precise layout, it's also more efficient in both developer time and runtime resources.
 
-For further information and samples leveraging Azure Spatial Anchors to share coordinate systems across HoloLens, Android, and iOS devices, as well as persisting spaces across sessions, see the [World Locking Tools documentation](/world-locking-tools/documentation/howtos/wlt_asa.md).
+For further information and samples leveraging Azure Spatial Anchors to share coordinate systems across HoloLens, Android, and iOS devices, as well as persisting spaces across sessions, see the [World Locking Tools documentation](/world-locking-tools/documentation/howtos/wlt_asa).
 
 ### Manual configuration of Azure Spatial Anchors
 
