@@ -73,10 +73,11 @@ World Locking Tools addresses that problem with the [Space Pins](Concepts/Advanc
 
 ## Next
 
-These advanced mechanisms will be covered in later sections, but it's useful to first look in detail at World Locking Tools' baseline operation. Understanding what services the baseline operation does and doesn't supply will help you to determine the proper use of advanced concepts later, and whether those advanced techniques are even required for a specific application.
+Now that we've had an overview of World Locking Tools concepts, let's step back and take a look at the basic system. Understanding what services the baseline operation does and doesn't supply will help you to determine the proper use of advanced concepts later, and whether those advanced techniques are even required for a specific application.
+
+> [!div class="nextstepaction"]
+> [World Locking Tools basic system](Concepts/BasicConcepts.md)
 
 ## See also
 
 * [FAQ](IntroFAQ.md)
-* [The basic system](Concepts/BasicConcepts.md)
-* [Advanced topics](Concepts/AdvancedConcepts.md)
