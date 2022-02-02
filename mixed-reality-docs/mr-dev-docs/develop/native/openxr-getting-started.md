@@ -53,7 +53,7 @@ While the Win32 and UWP project files are separate because of differences in pac
 
 For a tour of the OpenXR API, check out this 60-minute video of the <a href="https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp" target="_blank">BasicXrApp</a> sample in Visual Studio.  The video shows how each of the major components of the OpenXR API can be used in your own engine, and also demonstrates some of the applications built on OpenXR today:
 
->[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/OpenXR-Cross-platform-native-mixed-reality/player?format=ny]
+>[!VIDEO https://aka.ms/docs/player?show=mixed-reality&ep=openxr-cross-platform-native-mixed-reality]
 
 ## Running your OpenXR app
 
