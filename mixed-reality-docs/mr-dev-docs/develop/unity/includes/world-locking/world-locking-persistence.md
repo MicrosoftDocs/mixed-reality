@@ -4,9 +4,9 @@ By default, World Locking Tools will restore Unity's coordinate system relative 
 
 ![World locking context component in Unity inspector](../../images/world-locking-tools-img-02.png)
 
-If the application needs finer control, **Auto-Save** and **Auto-Load** may be disabled in the inspector, and persistence managed from a script as described in the [persistence section of the documentation](https://docs.microsoft.com/en-us/mixed-reality/world-locking-tools/documentation/concepts/advanced/persistence.md).
+If the application needs finer control, **Auto-Save** and **Auto-Load** may be disabled in the inspector, and persistence managed from a script as described in the [persistence section of the documentation](https://docs.microsoft.com/mixed-reality/world-locking-tools/documentation/concepts/advanced/persistence.md).
 
-Local anchor persistence is currently only supported on the HoloLens family of devices. However, on Android and iOS, as well as HoloLens, persistence of coordinate spaces across sessions, as well as sharing coordinate spaces across devices, is supported via an integration with Azure Spatial Anchors. There is an abundance of [further information and samples](https://docs.microsoft.com/en-us/mixed-reality/world-locking-tools/documentation/howtos/wlt_asa.md) of using World Locking Tools in tandem with Azure Spatial Anchors.
+Local anchor persistence is currently only supported on the HoloLens family of devices. However, on Android and iOS, as well as HoloLens, persistence of coordinate spaces across sessions, as well as sharing coordinate spaces across devices, is supported via an integration with Azure Spatial Anchors. There is an abundance of [further information and samples](https://docs.microsoft.com/mixed-reality/world-locking-tools/documentation/howtos/wlt_asa.md) of using World Locking Tools in tandem with Azure Spatial Anchors.
 
 # [ARAnchorManager](#tab/anchorstore)
 
