@@ -11,7 +11,7 @@ add the above mentioned packages from the Unity package manager.
 > Not all version are compatible with MRTK and only certain version works together, so make sure you install the exact versions listed above.
 
 >[!TIP]
-> For a reminder on how to upgrade and install inbuilt packages, you can refer to the [Installing inbuilt Unity packages](../mr-learning-asa-02.md#installing-inbuilt-unity-packages-and-importing-the-tutorial-assets) instructions.
+> For a reminder on how to upgrade and install inbuilt packages, you can refer to the [Installing inbuilt Unity packages](/learn/modules/azure-spatial-anchors-tutorials/2-get-started-with-azure-spatial-anchors#installing-inbuilt-unity-packages-and-importing-the-tutorial-assets) instructions.
 
 > [!NOTE]
 > If you are developing this project for Android, there is no need to install the ARKit XR Plugin package. Similarly, if you are developing this project for iOS, you do not need to install the ARCore XR Plugin.
@@ -30,7 +30,7 @@ add the above mentioned packages from the Unity package manager.
 > Not all version are compatible with MRTK and only certain version works together, so make sure you install the exact versions listed above.
 
 >[!TIP]
-> For a reminder on how to upgrade and install inbuilt packages, you can refer to the [Installing inbuilt Unity packages](../mr-learning-asa-02.md#installing-inbuilt-unity-packages-and-importing-the-tutorial-assets) instructions.
+> For a reminder on how to upgrade and install inbuilt packages, you can refer to the [Installing inbuilt Unity packages](/learn/modules/azure-spatial-anchors-tutorials/2-get-started-with-azure-spatial-anchors#installing-inbuilt-unity-packages-and-importing-the-tutorial-assets) instructions.
 
 > [!NOTE]
 > If you are developing this project for Android, there is no need to install the ARKit XR Plugin package. Similarly, if you are developing this project for iOS, you do not need to install the ARCore XR Plugin.

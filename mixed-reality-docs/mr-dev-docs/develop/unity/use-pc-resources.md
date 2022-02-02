@@ -125,5 +125,5 @@ From the sample code on [Unity's docs](https://docs.unity3d.com/2020.1/Documenta
 
 * [Holographic Remoting Overview](../native/holographic-remoting-overview.md)
 * [Preview and debug your app with Holographic Remoting and Play mode](preview-and-debug-your-app.md)
-* [Tutorial: Getting started with PC Holographic Remoting](../unity/tutorials/mr-learning-pc-holographic-remoting-01.md)
-* [Tutorial: Creating a Holographic Remoting PC application](../unity/tutorials/mr-learning-pc-holographic-remoting-02.md)
+* [Tutorial: Getting started with PC Holographic Remoting](/learn/modules/pc-holographic-remoting-tutorials/)
+* [Tutorial: Creating a Holographic Remoting PC application](/learn/modules/pc-holographic-remoting-tutorials/4-create-holographic-remoting-pc-application)

@@ -179,7 +179,7 @@ lease updated to at least version 2.2.1.
 
 ## See Also
 
-* [Holographic Remoting Overview](../advanced-concepts/holographic-remoting-overview.md)
+* [Holographic Remoting Overview](/windows/mixed-reality/develop/native/holographic-remoting-overview)
 * [Writing a Holographic Remoting remote app using Windows Mixed Reality APIs](holographic-remoting-create-remote-wmr.md)
 * [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md)
 * [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)

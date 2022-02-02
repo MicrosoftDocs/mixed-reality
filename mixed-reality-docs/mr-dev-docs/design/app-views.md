@@ -21,7 +21,7 @@ An immersive view gives your app the ability to create holograms in the world ar
 ![When in an immersive view, holograms can be placed in the world around you.](images/designoverview-940px.jpg)<br>
 *When in an immersive view, holograms can be placed in the world around you*
 
-On [HoloLens](/hololens/hololens1-hardware), your app renders its holograms on top of the user's real-world surroundings. On a [Windows Mixed Reality immersive headset](../discover/immersive-headset-hardware-details.md), the user can't see the real world, and so your app must render everything the user will see.
+On [HoloLens](/hololens/hololens1-hardware), your app renders its holograms on top of the user's real-world surroundings. On a [Windows Mixed Reality immersive headset](/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details), the user can't see the real world, and so your app must render everything the user will see.
 
 The [Windows Mixed Reality home](../discover/navigating-the-windows-mixed-reality-home.md) (including the Start menu and holograms you've placed around the environment) doesn't render while in an immersive view either. On HoloLens, Cortana relays any system notifications that occur while an immersive view is showing, to which the user can respond with voice input.
 

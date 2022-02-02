@@ -48,10 +48,10 @@ For each of the developer scenarios listed below, there are feature samples that
 | | [Azure Remote Rendering samples](/azure/remote-rendering/samples/sample-model) | Unity C# | Test the Azure Remote Rendering service by using the resources for sample data listed here. |
 | **Task management and guidance** | [Dynamics 365 Remote Assist](/dynamics365/mixed-reality/remote-assist/ra-overview) | | Collaborate more efficiently by working together from different locations with Dynamics 365 Remote Assist on HoloLens, HoloLens 2, Android, or iOS devices. |
 | | [Dynamics 365 Guides](/dynamics365/mixed-reality/guides/) | | Help operators learn during the flow of work by providing holographic instructions when and where they're needed. |
-| **World Locking holograms** | [World locked physics sample](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/Samples/WorldLockedPhysicsSample.html) | Unity C# | Explore a few virtual physics experiences that are enabled by World Locking Tools' world-locked coordinate system. |
-| | [Space pin sample](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/Samples/SpacePin.html) | Unity C# | Move closer to the inner workings of a real-world application that needs to align a large object or objects with real-world features. The Space Pin sample offers a simplified and more focused view of the Space Pin feature.  |
-| | [Ray pins example](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/Samples/RayPins.html) | Unity C# | Demonstrate how to set up Space Pins by manually manipulating marker objects into position using MRTK affordances. |
-| | [World Locking Tools with Azure Spatial Anchors sample](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/Samples/WLT_ASA_Sample.html) | Unity C# | Provide a stable coordinate system that can be persisted across sessions and shared across devices in your application.  This is made possible when combining World Locking Tools for Unity (WLT) with Azure Spatial Anchors (ASA). |
+| **World Locking holograms** | [World locked physics sample](/windows/mixed-reality/mrtk-unity/DocGen/Documentation/HowTos/Samples/WorldLockedPhysicsSample.html) | Unity C# | Explore a few virtual physics experiences that are enabled by World Locking Tools' world-locked coordinate system. |
+| | [Space pin sample](/windows/mixed-reality/world-locking-tools/Documentation/HowTos/Samples/SpacePin.html) | Unity C# | Move closer to the inner workings of a real-world application that needs to align a large object or objects with real-world features. The Space Pin sample offers a simplified and more focused view of the Space Pin feature.  |
+| | [Ray pins example](/windows/mixed-reality/world-locking-tools/Documentation/HowTos/Samples/RayPins.html) | Unity C# | Demonstrate how to set up Space Pins by manually manipulating marker objects into position using MRTK affordances. |
+| | [World Locking Tools with Azure Spatial Anchors sample](/windows/mixed-reality/world-locking-tools/Documentation/HowTos/Samples/WLT_ASA_Sample.html) | Unity C# | Provide a stable coordinate system that can be persisted across sessions and shared across devices in your application.  This is made possible when combining World Locking Tools for Unity (WLT) with Azure Spatial Anchors (ASA). |
 
 ### Build basic OpenXR scenarios
 
@@ -169,4 +169,4 @@ The Holographic Remoting Player is a companion app that connects to PC apps and 
 
 | Sample | Reference article | 
 | --- | --- |
-| [Holographic Remoting samples](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples) | [Holographic Remoting Overview](advanced-concepts/holographic-remoting-overview.md) |
+| [Holographic Remoting samples](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples) | [Holographic Remoting Overview](/windows/mixed-reality/develop/native/holographic-remoting-overview) |

@@ -15,7 +15,7 @@ keywords: Microsoft Store, HoloLens, immersive headsets, app, uwp, submit, submi
 
 ## Prerequisites
 
-Both [HoloLens](/hololens/hololens1-hardware) and the Windows 10 PC powering your [immersive headset](../discover/immersive-headset-hardware-details.md) run Universal Windows Platform apps. Whether you're submitting an app that supports HoloLens, PC, or both, app submission goes through the [Partner Center](https://partner.microsoft.com/dashboard).
+Both [HoloLens](/hololens/hololens1-hardware) and the Windows 10 PC powering your [immersive headset](/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details) run Universal Windows Platform apps. Whether you're submitting an app that supports HoloLens, PC, or both, app submission goes through the [Partner Center](https://partner.microsoft.com/dashboard).
 
 If you don't already have a Partner Center developer account, [sign up](https://developer.microsoft.com/store/register) for one before moving on. You can find more information about submission guidelines and checklists in this [app submissions article](/windows/uwp/publish/app-submissions).
 
@@ -61,7 +61,7 @@ The Start menu on HoloLens will use the largest included square tile image by de
 
 If your Mixed Reality app includes features that are specific to a Windows version, it's important to specify the supported target and minimum platform versions.
 
-**Pay special attention for apps targeting [Windows Mixed Reality immersive headsets](../discover/immersive-headset-hardware-details.md), which require at least the Windows 10 Fall Creators Update (10.0; Build 16299) to function properly.**
+**Pay special attention for apps targeting [Windows Mixed Reality immersive headsets](/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details), which require at least the Windows 10 Fall Creators Update (10.0; Build 16299) to function properly.**
 
 You'll be prompted to set the target and minimum version of Windows when you create a new Universal Windows Project in Visual Studio. For existing projects, you can change this setting in the **Project** menu by selecting the **<Your app name's> Properties** at the bottom of the drop-down menu.
 
@@ -70,7 +70,7 @@ You'll be prompted to set the target and minimum version of Windows when you cre
 
 ### Specifying target device families
 
-Windows Mixed Reality applications (for both [HoloLens](/hololens/hololens1-hardware) and [immersive headsets](../discover/immersive-headset-hardware-details.md)) are part of the Universal Windows Platform, so any app package with a **Windows.Universal** [target device family](/uwp/schemas/appxpackage/uapmanifestschema/element-targetdevicefamily) can run on HoloLens or Windows 10 PCs with immersive headsets. If you don't specify a target device family in your app manifest, you may inadvertently open your app up to unintended Windows 10 devices. Follow the steps below to specify the intended Windows 10 device family, then [double-check you've set the correct device families when you upload your app package in Partner Center for Microsoft Store submission.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
+Windows Mixed Reality applications (for both [HoloLens](/hololens/hololens1-hardware) and [immersive headsets](/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details)) are part of the Universal Windows Platform, so any app package with a **Windows.Universal** [target device family](/uwp/schemas/appxpackage/uapmanifestschema/element-targetdevicefamily) can run on HoloLens or Windows 10 PCs with immersive headsets. If you don't specify a target device family in your app manifest, you may inadvertently open your app up to unintended Windows 10 devices. Follow the steps below to specify the intended Windows 10 device family, then [double-check you've set the correct device families when you upload your app package in Partner Center for Microsoft Store submission.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
 
 * To set this field in Visual Studio, right-click on the **Package.appxmanifest** and select **View Code**, then find the **TargetDeviceFamily Name** field. By default, it should look like the following entry:
 

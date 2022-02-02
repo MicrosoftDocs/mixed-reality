@@ -27,7 +27,7 @@ But for an application is in the minority and having special requirements, World
 
 It will be shown that a good deal of customization is available, even without modifying code. Understanding what World Locking Tools is doing, and the customizable properties, is helpful for fine-tuning World Locking Tools for a specific application.
 
-Finally, an understanding of World Locking Tools can be helpful when things go wrong, in narrowing which system is faulty, providing useful bug reports, and establishing workarounds.
+Finally, an understanding of World Locking Tools can be helpful, when things go wrong, in determining which system is faulty, providing useful bug reports, and establishing workarounds.
 
 ## Guide structure
 

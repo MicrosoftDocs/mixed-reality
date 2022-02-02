@@ -34,8 +34,8 @@ Tutorials in this series:
 * A HoloLens 2 device [configured for development](../../advanced-concepts/using-visual-studio.md#enabling-developer-mode)
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2020 LTS installed and the Universal Windows Platform Build Support module added
 * Completed the [Create a Spatial Anchors resource](/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) section of the [Quickstart: Create a Unity HoloLens app that uses Azure Spatial Anchors](/azure/spatial-anchors/quickstarts/get-started-unity-hololens) tutorial
-* Completed the [Getting started tutorials](mr-learning-base-01.md) series or some basic prior experience with Unity and MRTK
-* Completed the [Azure Spatial Anchors tutorials](mr-learning-asa-01.md) series or prior experience creating an Azure Spatial Anchors Account
+* Completed the [Getting started tutorials](/learn/paths/beginner-hololens-2-tutorials/) series or some basic prior experience with Unity and MRTK
+* Completed the [Azure Spatial Anchors tutorials](/learn/modules/azure-spatial-anchors-tutorials/) series or prior experience creating an Azure Spatial Anchors Account
 * If you intend to deploy to Android as well as HoloLens
   * A <a href="https://developer.android.com/studio/debug/dev-options" target="_blank">developer enabled</a> and <a href="https://developers.google.com/ar/discover/supported-devices" target="_blank">ARCore capable</a>
  Android device with USB connection to your Windows or macOS computer
