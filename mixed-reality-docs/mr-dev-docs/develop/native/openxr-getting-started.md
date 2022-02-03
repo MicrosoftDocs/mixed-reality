@@ -39,7 +39,7 @@ If you've been using multiple VR headsets on your PC, sometimes the active OpenX
 
 ## Getting the OpenXR Developer Tools for Windows Mixed Reality
 
-When you are developing OpenXR applications for HoloLens 2 or PC VR, you might find this <a href="https://www.microsoft.com/store/productId/9n5cvvl23qbt" target="_blank">OpenXR Developer Tools for Windows Mixed Reality app</a> app handy for you.  This app provides a demo of various OpenXR features, along with a System Status page with key information about the active runtime and current headset.
+When you are developing OpenXR applications for HoloLens 2 or PC VR, you might find this <a href="https://www.microsoft.com/store/productId/9n5cvvl23qbt" target="_blank">OpenXR Developer Tools for Windows Mixed Reality</a> app handy for you.  This app provides a demo of various OpenXR features, along with a System Status page with key information about the active runtime and current headset.
 
 On HoloLens 2, you can simply go to the Store app and search for "OpenXR" to find this app to install.
 
