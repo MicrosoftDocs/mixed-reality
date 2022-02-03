@@ -30,7 +30,7 @@ To make sure you've got the latest OpenXR runtime with all [extensions](openxr.m
 
 To start developing OpenXR applications for immersive Windows Mixed Reality headsets:
 
-1. Be sure you're running at least the Windows 10 October 2020 Update (20H2), which is the minimum requirement for Windows Mixed Reality end users to run OpenXR applications.  If you're on an earlier version of Windows 10, you can upgrade by using the <a href="https://www.microsoft.com/software-download/windows10" target="_blank">Windows 10 Update Assistant</a>.
+1. Be sure you're running at least the Windows 10 October 2020 Update (20H2), which is the minimum supported OS release for Windows Mixed Reality end users to run OpenXR applications.  If you're on an earlier version of Windows 10, you can upgrade by using the <a href="https://www.microsoft.com/software-download/windows10" target="_blank">Windows 10 Update Assistant</a>.
 2. [Set up a Windows Mixed Reality headset](../../../enthusiast-guide/set-up-windows-mixed-reality) or [enable the Windows Mixed Reality simulator](../advanced-concepts/using-the-windows-mixed-reality-simulator.md).
 
 That's it!  The Windows Mixed Reality OpenXR runtime is installed and made active automatically for all Windows Mixed Reality users.  The Microsoft Store then keeps the runtime up to date.
