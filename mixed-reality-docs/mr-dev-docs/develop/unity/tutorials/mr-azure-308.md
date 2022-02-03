@@ -227,7 +227,7 @@ After creating your Notification Hubs Service instance, navigate back to your Az
 
 9. From the overview page, to the right-hand side, click **Tables**.
     
-    ![](images/AzureLabs-Lab8-18.PNG)
+    ![Screenshot that shows where to select Tables.](images/AzureLabs-Lab8-18.PNG)
 
 10. The panel on the right will change to show the **Table service** information, wherein you need to add a new table. Do this by clicking the **+** **Table** button to the top-left corner.
 

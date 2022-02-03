@@ -15,7 +15,7 @@ keywords: azure, mixed reality, academy, unity, tutorial, api, computer vision, 
 
 In this course, you will learn how to create and deploy a bot using the Microsoft Bot Framework V4 and communicate with it through a Windows Mixed Reality application. 
 
-![](images/AzureLabs-Lab312-00.png)
+![Screenshot that shows communication through a Windows Mixed Reality application.](images/AzureLabs-Lab312-00.png)
 
 The **Microsoft Bot Framework V4** is a set of APIs designed to provide developers with the tools to build an extensible and scalable bot application. For more information, visit the [Microsoft Bot Framework page](https://dev.botframework.com/) or the [V4 Git Repository](https://github.com/Microsoft/botbuilder-dotnet/wiki).
 
@@ -444,11 +444,11 @@ To import the Newtonsoft library into your project, use the Unity Package which 
 
 4.  Go to the **Newtonsoft** folder under **Plugins** in the project view and select the Newtonsoft plugin.
 
-    ![](images/AzureLabs-Lab312-35b.png)
+    ![Screenshot that shows the Newtonsoft folder in the project view.](images/AzureLabs-Lab312-35b.png)
 
 5.  With the Newtonsoft plugin selected, ensure that **Any Platform** is **unchecked**, then ensure that **WSAPlayer** is also **unchecked**, then click **Apply**. This is just to confirm that the files are configured correctly.
 
-    ![](images/AzureLabs-Lab312-35c.png)
+    ![Screenshot that shows the correct selections for the Newtonsoft plugin.](images/AzureLabs-Lab312-35c.png)
 
     > [!NOTE]
     > Marking these plugins configures them to only be used in the Unity Editor. There are a different set of them in the WSA folder which will be used after the project is exported from Unity.
@@ -458,7 +458,7 @@ To import the Newtonsoft library into your project, use the Unity Package which 
     -   **only** **WSAPlayer** is **checked**
     -   **Dont process** is **checked**
 
-    ![](images/AzureLabs-Lab312-35d.png)
+    ![Screenshot that shows the correct selections for the Newtonsoft plugin in the WSA folder.](images/AzureLabs-Lab312-35d.png)
 
 ## Chapter 7 – Create the BotTag
 
