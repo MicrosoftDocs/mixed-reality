@@ -118,9 +118,9 @@ A designer's job is never done, especially when learning to create immersive exp
         Get a better understanding of what defines mixed reality and how it’s being used.
     :::column-end:::
     :::column:::
-        [![Come to an event](images/74-16.png)](../whats-new/sf-academy-events.md)<br>
-         **[Come to an event](../whats-new/sf-academy-events.md)**<br>
-        See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
+        [![Come to an event](images/74-16.png)](../whats-new/journey-to-mr-series.md)<br>
+         **[Come to an event](../whats-new/journey-to-mr-series.md)**<br>
+        Get started with your Mixed Reality development journey.
     :::column-end:::
     :::column:::
         [![Install the tools](images/74-17.png)](../develop/install-the-tools.md)<br>
