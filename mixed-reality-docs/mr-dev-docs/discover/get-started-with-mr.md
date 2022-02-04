@@ -142,9 +142,9 @@ If you're curious to see how the different mixed reality hardware and services w
         Choose a development path based on your skill level, work style, or platform interest.
     :::column-end:::
     :::column:::
-        [![Come to an event](images/icon-calendar.jpg)](../whats-new/sf-academy-events.md)<br>
-        **[Come to an event](../whats-new/sf-academy-events.md)**<br>
-        See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
+        [![Come to an event](images/icon-calendar.jpg)](../whats-new/journey-to-mr-series.md)<br>
+        **[Come to an event](../whats-new/journey-to-mr-series.md)**<br>
+        Get started with your Mixed Reality development journey.
     :::column-end:::
 :::row-end:::
 
