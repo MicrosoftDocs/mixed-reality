@@ -20,6 +20,7 @@ With HoloLens 2 and immersive headsets, you can detect QR codes in the environme
 In this article, you'll learn about:
 
 * [Supported devices for QR code tracking](#device-support)
+* [Supported QR code versions](#supported-qr-code-versions)
 * [Best practices for QR code detection](#best-practices-for-qr-code-detection)
   * [Quiet zones around QR codes](#quiet-zones-around-qr-codes)
   * [Lighting and backdrop](#lighting-and-backdrop)
@@ -28,7 +29,6 @@ In this article, you'll learn about:
   * [Managing QR code data](#managing-qr-code-data)
   * [QR code placement in a space](#qr-code-placement-in-a-space)
 * [Troubleshooting and FAQ](#troubleshooting-and-faq)
-  * [What QR code versions are supported?](#what-qr-code-versions-are-supported)
   * [What capabilities are needed?](#what-capabilities-are-needed)
   * [How to make QR Code Tracking Feature work on HoloLens 2 devices?](#how-to-make-qr-code-tracking-feature-work-on-hololens-2-devices)
   * [Where do I find the API plugin files?](#where-do-i-find-the-api-plugin-files)
@@ -53,6 +53,17 @@ In this article, you'll learn about:
 
 > [!NOTE]
 > QR code tracking with immersive Windows Mixed Reality headsets on desktop PCs is supported on Windows 10 Version 2004 and higher. Use the `Microsoft.MixedReality.QRCodeWatcher.IsSupported()` API to determine whether the feature is supported on the current device.
+
+## Supported QR code versions
+
+We support the following QR code versions:
+
+* QR versions 1 - 10 are supported. We can’t guarantee nor support higher version QR codes, but it’s possible to detect versions 10 through 20. Versions above 20 are definitely not supported.
+* Micro QR codes M1-M4 are supported.
+* We don’t support logos.
+* We don’t support tweaked modules, for example: circular modules, reflections, inverted (black/white).
+* All encodings are supported.
+* Structure append isn’t supported.
 
 ## Best practices for QR code detection
 
@@ -82,7 +93,7 @@ The exact time to detect codes depends not only on the size of the QR codes, but
 
 The tracking cameras can only detect a certain level of detail. For small codes - < 10 cm along the sides - you must be fairly close. For a version 1 QR code varying from 10 cm to 25 cm in size, the minimum detection distance is between 0.15 meters to 0.5 meters. 
 
-The detection distance for size increases linearly, but also depends on [supported QR version](#what-qr-code-versions-are-supported) or module size. The higher the version, the smaller the modules, which can only be detected from a closer position. You can also try micro-QR codes if you want the distance of detection to be longer. QR detection works with a range of angles += 45 deg to ensure we have proper resolution to detect the code.
+The detection distance for size increases linearly, but also depends on [supported QR version](#supported-qr-code-versions) or module size. The higher the version, the smaller the modules, which can only be detected from a closer position. You can also try micro-QR codes if you want the distance of detection to be longer. QR detection works with a range of angles += 45 deg to ensure we have proper resolution to detect the code.
 
 Other detection considerations:
 
@@ -112,17 +123,6 @@ See also [How to clear the codes from my app?](#managing-qr-code-data)
 For recommendations on where and how to place QR codes, refer to [Environment considerations for HoloLens](/hololens/hololens-environment-considerations).
 
 ## Troubleshooting and FAQ
-
-### What QR code versions are supported?
-
-We support the following QR code versions:
-
-* QR versions 1 - 10 are supported. We can’t guarantee nor support higher version QR codes, but it’s possible to detect versions 10 through 20. Versions above 20 are definitely not supported.
-* Micro QR codes M1-M4 are supported.
-* We don’t support logos.
-* We don’t support tweaked modules, for example: circular modules, reflections, inverted (black/white).
-* All encodings are supported.
-* Structure append isn’t supported.
 
 ### What capabilities are needed?
 
@@ -160,11 +160,11 @@ All the required files and documentation can be found here.
 
 ### How do I prepare a UWP to use Microsoft.MixedReality.QR.QRCodeWatcher?
 
-Use the NuGet pack to unpack the required files.
+* Use the NuGet pack to unpack the required files.
 
-Add a reference to the `Microsoft.MixedReality.QR.winmd` in your project and start using the API.
+* Add a reference to the `Microsoft.MixedReality.QR.winmd` in your project and start using the API.
 
-Add the correct architecture versions of the plugins and use them accordingly in the build.
+* Add the correct architecture versions of the plugins and use them accordingly in the build.
 
 ### How do I prepare Unity with the Microsoft.MixedReality.QR.QRCodeWatcher?
 
@@ -172,7 +172,7 @@ Use NuGet for Unity and point to the NuGet pack above.
 
 ### How can I make QR codes?
 
-* From any QR code generator, see <https://www.the-qrcode-generator.com/>
+Yes, checkout any QR code generator, see <https://www.the-qrcode-generator.com/>
 
 ### If QR code tracking doesn't work in general, what do I do?
 
@@ -201,7 +201,7 @@ Currently, we don't support QR codes with logos.
 * If the platform can’t decode the QR code, there will be no data.  You can use the stream and interpret the data using open-source code. 
 * Some features such as structure append aren’t supported.
 
-For more information, see [what QR code versions are supported?](#what-qr-code-versions-are-supported).
+For more information, see [what QR code versions are supported?](#supported-qr-code-versions).
 
 ### Are QR codes saved at the ‘space’ level or app level?  It seems to me it is beyond app? 
 
