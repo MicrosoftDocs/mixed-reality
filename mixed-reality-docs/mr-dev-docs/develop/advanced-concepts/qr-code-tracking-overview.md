@@ -61,7 +61,7 @@ The following table lists the supported and unsupported QR code versions:
 |   | QR Code versions  |
 | :--- | :--- |
 | Supported: |  <ul> <li> QR versions 1 - 10 </li>  <li> Micro QR codes M1-M4 </li> <li> All encodings </li> |
-| Not supported: | <ul> <li> QR Codes 10 - 20 (these may work, but not guaranteed) </li> <li> QR Codes 20+ </li> <li> Logos </li> <li> Structured appends </li> <ul> |
+| Not supported: | <ul> <li> QR Codes 10 - 20 (these may work, but not guaranteed) </li> <li> QR Codes 20+ </li> <li> Tweaked modules, for example: circular modules, reflections, inverted (black/white). </li> <li> Logos </li> <li> Structured appends </li> <ul> |
 
 ## Best practices for QR code detection
 
