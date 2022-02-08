@@ -174,7 +174,7 @@ Yes, checkout any QR code generator, see <https://www.the-qrcode-generator.com/>
 
 ### If QR code tracking doesn't work in general, what do I do?
 
-* Is the QR Code version a supported version? We don't support the high-density versions like version 40. Nothing above version 10 is guaranteed, versions above 20 aren’t supported.
+* Is the QR Code version a supported version? We don't support the high-density versions like version 40. Nothing above version 10 is guaranteed; versions above 20 aren’t supported.
 * Are you close enough to the QR code? See [distance and angular position from the QR code](#distance-and-angular-position-from-the-qr-code).
 * How is the lighting? There’s a known issue where detection becomes difficult when the QR code is on a dark environmental background. When there's a dark background, the QR code will appear washed out to the camera due to high contrast. For more information, see [lighting and backdrop](#lighting-and-backdrop).
 
