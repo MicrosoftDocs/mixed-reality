@@ -1,11 +1,9 @@
 # [World Locking Tools (Recommended)](#tab/wlt)
 
-We recommend installing World Locking Tools using the new Mixed Reality Feature Tool. Once you've downloaded the Mixed Reality Feature Tool from the link below, select the latest version of **WLT Core** from the **World Locking Tools** section:
-
-![Mixed Reality Feature Tool feature selection window with World Locking Tools selected](../../images/spatial-anchors-setup-img-01.png)
+If you're ready to get started using the World Locking Tools, we recommend that you [download the Mixed Reality Feature Tool](../../welcome-to-mr-feature-tool.md). If you'd like to learn more about the basics, visit the main World Locking Tools documentation page. It contains links to our Overview and Quickstart and other topics that are useful for getting you started.
 
 > [!div class="nextstepaction"]
-> [Install World Locking Tools with the MR Feature Tool](../../welcome-to-mr-feature-tool.md)
+> [Go to main World Locking Tools Documentation page](/mixed-reality/world-locking-tools/)
 
 ### Automated setup
 
