@@ -3,7 +3,20 @@
 If you're ready to get started using the World Locking Tools, we recommend that you [download the Mixed Reality Feature Tool](../../welcome-to-mr-feature-tool.md). If you'd like to learn more about the basics, visit the main World Locking Tools documentation page. It contains links to our Overview and Quickstart and other topics that are useful for getting you started.
 
 > [!div class="nextstepaction"]
-> [Go to main World Locking Tools Documentation page](/world-locking-tools/)
+> [Go to main World Locking Tools Documentation page](/mixed-reality/world-locking-tools/)
+
+### Automated setup
+
+When your project is ready to go, run the configure scene utility from **Mixed Reality > World Locking Tools**:
+
+![Unity editor with Mixed Reality Toolkit menu selected](../../images/world-locking-configuration-img-01.jpeg)
+
+> [!IMPORTANT]
+> The Configure scene utility can be rerun at any time. For example, it should be rerun if the AR target has been changed from Legacy to XR SDK. If the scene is already properly configured, running the utility has no effect.
+
+### Visualizers
+
+During early development, adding visualizers can be helpful to ensure WLT is setup and working properly. They can be removed for production performance, or if for any reason are no longer needed, using the Remove visualizers utility. More details on the visualizers can be found in the [Tools documentation](/world-locking-tools/documentation/howtos/tools#visualizers).
 
 # [ARAnchorManager](#tab/anchorstore)
 
