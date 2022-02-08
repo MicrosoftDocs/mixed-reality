@@ -97,7 +97,7 @@ Other detection considerations:
 
 * QR codes on curved surfaces aren’t supported.
 * In-plane orientation is supported. Out of plane should be <= +-45 looking straight on to have better detection.
-* The Physical size of the QR code should have modules of at least 2/3 pixels. Note: Higher versions of QR codes will have smaller modules.
+* The physical size of the QR code should have modules of at least 2/3 pixels. Note: Higher versions of QR codes will have smaller modules.
 
 For the tradeoff relationship between distance and size of the QR code for optimal detection, see the following graph:
 
@@ -111,9 +111,9 @@ For the tradeoff relationship between distance and size of the QR code for optim
 
 Windows Mixed Reality devices detect QR codes at the system level in the driver. When the device is rebooted or the driver restarts, the detected QR codes history is cleared. QR codes redetected are treated as new objects.
 
-We recommend configuring your app to ignore QR codes older than a specific timestamp, which can be specified within the App. The QR Code API specifies the time last detection happened. Most app developers will use the system time when the app is launched to determine the time a QR code is detected. 
+We recommend configuring your app to ignore QR codes older than a specific timestamp, which can be specified within the app. The QR Code API specifies the time last detection happened. Most app developers will use the system time when the app is launched to determine the time a QR code is detected. 
 
-QR Code data aren’t app-specific. Upon app launch, there will be a list of available QR codes being provided.  The app developer will determine which QR codes are relevant to this app.
+QR code data aren’t app-specific. Upon app launch, there will be a list of available QR codes being provided.  The app developer will determine which QR codes are relevant to this app.
 
 See also [How to clear the codes from my app?](#managing-qr-code-data)
 
@@ -174,13 +174,13 @@ Yes, checkout any QR code generator, see <https://www.the-qrcode-generator.com/>
 
 ### If QR code tracking doesn't work in general, what do I do?
 
-* Is the QR Code version a supported version? We don't support the high-density versions like version 40. Nothing above version 10 is guaranteed, versions above 20 aren’t supported.
+* Is the QR Code version a supported version? We don't support the high-density versions like version 40. Nothing above version 10 is guaranteed; versions above 20 aren’t supported.
 * Are you close enough to the QR code? See [distance and angular position from the QR code](#distance-and-angular-position-from-the-qr-code).
 * How is the lighting? There’s a known issue where detection becomes difficult when the QR code is on a dark environmental background. When there's a dark background, the QR code will appear washed out to the camera due to high contrast. For more information, see [lighting and backdrop](#lighting-and-backdrop).
 
 ### What's the accuracy?
 
-When detected in a single frame, the size is expected to have at most a 1% error from the actual size, for example: a 10-cm code might be up to +/- 1 mm off in measured size. Under continuous detection, a code's position might drift around by up to +/- 2.5 mm. Once you’ve moved out of detection range, a previous detection's position is up to the mercy of the map error.
+When detected in a single frame, the size is expected to have at most a 1% error from the actual size. For example, a 10-cm code might be up to +/- 1 mm off in measured size. Under continuous detection, a code's position might drift around by up to +/- 2.5 mm. Once you’ve moved out of detection range, a previous detection's position is up to the mercy of the map error.
 
 ### How close do I need to be to the QR code to detect it?
 
@@ -197,7 +197,7 @@ Currently, we don't support QR codes with logos.
 ### QR codes detected, but why am I getting no data?
 
 * If the platform can’t decode the QR code, there will be no data.  You can use the stream and interpret the data using open-source code. 
-* Some features such as structure append aren’t supported.
+* Some features, such as structure append, aren’t supported.
 
 For more information, see [what QR code versions are supported?](#supported-qr-code-versions).
 
@@ -220,7 +220,7 @@ Follow the steps to reproduce this behavior:
 1. Install Microsoft.MixedReality.QR (NuGet) and MRTK
 2. Try to debug
 
-You should be able to debug the app with Microsoft.MixedReality.QR.dll, but the dll isn’t found:
+You should be able to debug the app with Microsoft.MixedReality.QR.dll, but the DLL isn’t found:
 
 <img src="images\mr-qr-pdb-not-included.png" alt="Microsoft.MixedReality.QR.pdb not found error message">
 
@@ -228,7 +228,7 @@ You should be able to debug the app with Microsoft.MixedReality.QR.dll, but the 
 
 We're working on adding symbols to the next release. In the meantime, you should still be able to debug your app by excluding the dll in the Visual Studio options: 
 
-<img src="images\exclude-dll.png" alt="excluding the dll in Visual Studio options">
+<img src="images\exclude-dll.png" alt="excluding the DLL in Visual Studio options">
 
 For more information, see [Configuring Visual Studio’s settings](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/#configuring-visual-studios-settings).
 
