@@ -111,7 +111,7 @@ For the tradeoff relationship between distance and size of the QR code for optim
 
 Windows Mixed Reality devices detect QR codes at the system level in the driver. When the device is rebooted or the driver restarts, the detected QR codes history is cleared. QR codes redetected are treated as new objects.
 
-We recommend configuring your app to ignore QR codes older than a specific timestamp, which can be specified within the App. The QR Code API specifies the time last detection happened. Most app developers will use the system time when the app is launched to determine the time a QR code is detected. 
+We recommend configuring your app to ignore QR codes older than a specific timestamp, which can be specified within the app. The QR Code API specifies the time last detection happened. Most app developers will use the system time when the app is launched to determine the time a QR code is detected. 
 
 QR Code data aren’t app-specific. Upon app launch, there will be a list of available QR codes being provided.  The app developer will determine which QR codes are relevant to this app.
 
