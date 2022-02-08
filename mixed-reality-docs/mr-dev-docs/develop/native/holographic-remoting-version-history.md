@@ -13,6 +13,9 @@ keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reali
 > [!NOTE]
 > This guidance is specific to Holographic Remoting on HoloLens 2 and Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md).
 
+## Version 2.7.3 (February 7, 2022) <a name="v2.7.3"></a>
+* Fixed HEVC video decoding latency regression.
+
 ## Version 2.7.2 (December 15, 2021) <a name="v2.7.2"></a>
 * Various bug fixes and stability improvements.
 

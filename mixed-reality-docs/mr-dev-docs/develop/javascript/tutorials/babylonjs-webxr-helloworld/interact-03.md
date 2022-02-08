@@ -1,7 +1,7 @@
 ---
 title: Babylon.js tutorial to interact with 3D objects
 description: Learn how to use babylon.js and interact with 3D objects.
-author: bogenera
+author: bgener
 ms.author: ayyonet
 ms.date: 03/05/2021
 ms.topic: article
