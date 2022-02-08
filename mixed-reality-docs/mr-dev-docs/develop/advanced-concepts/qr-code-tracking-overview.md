@@ -197,7 +197,7 @@ Currently, we don't support QR codes with logos.
 ### QR codes detected, but why am I getting no data?
 
 * If the platform can’t decode the QR code, there will be no data.  You can use the stream and interpret the data using open-source code. 
-* Some features such as structure append aren’t supported.
+* Some features, such as structure append, aren’t supported.
 
 For more information, see [what QR code versions are supported?](#supported-qr-code-versions).
 
