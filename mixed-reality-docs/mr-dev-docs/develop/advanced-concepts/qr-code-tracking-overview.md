@@ -180,7 +180,7 @@ Yes, checkout any QR code generator, see <https://www.the-qrcode-generator.com/>
 
 ### What's the accuracy?
 
-When detected in a single frame, the size is expected to have at most a 1% error from the actual size, for example: a 10-cm code might be up to +/- 1 mm off in measured size. Under continuous detection, a code's position might drift around by up to +/- 2.5 mm. Once you’ve moved out of detection range, a previous detection's position is up to the mercy of the map error.
+When detected in a single frame, the size is expected to have at most a 1% error from the actual size. For example, a 10-cm code might be up to +/- 1 mm off in measured size. Under continuous detection, a code's position might drift around by up to +/- 2.5 mm. Once you’ve moved out of detection range, a previous detection's position is up to the mercy of the map error.
 
 ### How close do I need to be to the QR code to detect it?
 
