@@ -97,7 +97,7 @@ Other detection considerations:
 
 * QR codes on curved surfaces aren’t supported.
 * In-plane orientation is supported. Out of plane should be <= +-45 looking straight on to have better detection.
-* The Physical size of the QR code should have modules of at least 2/3 pixels. Note: Higher versions of QR codes will have smaller modules.
+* The physical size of the QR code should have modules of at least 2/3 pixels. Note: Higher versions of QR codes will have smaller modules.
 
 For the tradeoff relationship between distance and size of the QR code for optimal detection, see the following graph:
 
