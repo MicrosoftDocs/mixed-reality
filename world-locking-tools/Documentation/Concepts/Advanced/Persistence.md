@@ -1,8 +1,8 @@
- ---
+---
 title: Persisting spatial coordinate systems
 description: Persisting local spatial tracking state across sessions.
 author: fast-slow-still
-ms.author: mafinc
+ms.author: vinnietieto
 ms.date: 10/06/2021
 ms.prod: mixed-reality
 ms.localizationpriority: high
