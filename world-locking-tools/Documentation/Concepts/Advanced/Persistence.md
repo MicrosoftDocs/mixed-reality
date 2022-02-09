@@ -1,4 +1,4 @@
----
+ ---
 title: Persisting spatial coordinate systems
 description: Persisting local spatial tracking state across sessions.
 author: fast-slow-still
@@ -69,17 +69,19 @@ Like with the Save, the Load is performed asynchronously. Any subsequent calls t
 
 ## What is saved?
 
-The data required to reconstruct the World Locking Tools mapping--that is, the alignment of the virtual world to the real world--can be broken into three groups.
+The data required to reconstruct the World Locking Tools mapping--that is, the alignment of the virtual world to the real world--can be broken into four groups.
 
-* **Spatial Anchors** - The underlying network of spatial anchors created and maintained internally by World Locking Tools' [Anchor Manager](xref:Microsoft.MixedReality.WorldLocking.Core.IAnchorManager) supplies the requisite binding to the real world. Those anchors are persisted via the platform's underlying storage mechanism.
+* **Spatial Anchors**: The underlying network of spatial anchors created and maintained internally by World Locking Tools' [Anchor Manager](xref:Microsoft.MixedReality.WorldLocking.Core.IAnchorManager) supplies the requisite binding to the real world. Those anchors are persisted via the platform's underlying storage mechanism.
 
-* **Engine State** - Engine state is persisted to allow the engine to resume its current mapping. Restoring this state removes such indeterminacies as the initial pose of the head in the previous session(s).
+* **Engine State**: Engine state is persisted to allow the engine to resume its current mapping. Restoring this state removes such indeterminacies as the initial pose of the head in the previous session(s).
 
-* **Space Pinning** - If the application has applied any further Space Pins to force alignment of modeling coordinates to the real world at a discrete set of points, that mapping is also persisted.
+* **Space Pinning**: If the application has applied any further Space Pins to force alignment of modeling coordinates to the real world at a discrete set of points, that mapping is also persisted.
+
+* **Coordinate Space**: World Locking Tools persists the coordinate space relative to the physical world by saving an internal graph of local spatial anchors.
 
 ## What is not saved?
 
-Only state is saved. In particular, settings are not saved. Any configuration changes by the application--for example, changes made through the WorldLockingManager API--are reset to their values as set in the Unity Inspector each time the application starts up. Or, if they aren't set in the Inspector, then they're set to their default values in code.
+Settings are not saved, and World Locking Tools does not save or restore individual application objects. Only state is saved. Any configuration changes by the application--for example, changes made through the WorldLockingManager API--are reset to their values as set in the Unity Inspector each time the application starts up. Or, if they aren't set in the Inspector, then they're set to their default values in code.
 
 For example, say the application wants to present the user with the option to AutoSave World Locking state, and have the user's preference persist across sessions until changed. Then the application must:
 
