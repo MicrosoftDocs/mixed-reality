@@ -90,7 +90,7 @@ Use the following workflow to *create new articles* in the documentation repo vi
 
 1. Create a fork off the MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide 'master' branch (using the **Fork** button in the top right).
 
-   ![Fork the master branch.](images/forkbranch.png)
+   ![Fork the main branch.](images/forkbranch.png)
 2. In the "mixed-reality/enthusiast-guide" folder, select **Create new file** in the top right.
 3. Create a page name for the article (use hyphens instead of spaces and don't use punctuation or apostrophes) and append ".md"
 
@@ -125,7 +125,7 @@ Use the following workflow to *create new articles* in the documentation repo vi
 
 The [Mixed Reality Enthusiast Guide GitHub repository](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide) utilizes two main parent branches: [Master](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/master), this content can be reviewed on the [staging site](/windows/mixed-reality/enthusiast-guide), and [Live](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/live), for content appearing on the [live site](/windows/mixed-reality/enthusiast-guide).
 
-When making contributions, please submit your Pull Request (PR) to the **Master** branch. This branch can be viewed on the staging site and should only contain contributions that are ready to be published live. You may also create and submit a branch with your own unique branch name which can be selected and viewed in the staging site. (The **Live** branch is only allowed for use by the content administrators.)
+When making contributions, please submit your Pull Request (PR) to the **Main** branch. This branch can be viewed on the staging site and should only contain contributions that are ready to be published live. You may also create and submit a branch with your own unique branch name which can be selected and viewed in the staging site. (The **Live** branch is only allowed for use by the content administrators.)
 
 ## Markdown basics
 
