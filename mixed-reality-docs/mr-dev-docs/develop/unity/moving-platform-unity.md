@@ -84,7 +84,7 @@ TrySetMode will return true if the device mode now matches the requested mode. I
 
 ### Callback on mode change
 
-Sometimes it could be useful to know if another app, or the user, has changed the Moving Platform Mode value. This can be done as follows.
+At times, it could be useful to know if another app, or the user, has changed the Moving Platform Mode value. You can do this as follows.
 ```cs
 // Code Body
 m_movingPlatformManager.ModeChanged += CallbackOnMPMChanged;
