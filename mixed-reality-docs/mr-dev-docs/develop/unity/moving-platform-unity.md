@@ -27,7 +27,7 @@ Note that when the environment isn't in the inertial frame of reference, the nor
 
 ## How should I activate Moving Platform Mode?
 
-In order to enable a range of use cases, a range of methods have been provided to activate moving platform mode. It is important that you consider which to choose carefully based on the use case that you are developing for. A key question to ask is: Who knows whether the Hololens 2 is currently within a moving platform? See the following table for an example:
+In order to enable a range of use cases, various methods have been provided to activate Moving Platform Mode. It's important that you carefully consider which method to choose based on the use case that you're developing for. A key question to ask is: Who knows whether the Hololens 2 is currently within a moving platform? See the following table for an example:
 
 | Who knows if HL2 is in a Moving Platform | Best method of setting Moving Platform Mode | Benefits | Costs |
 |--------------|------------------------|-----|---- |
