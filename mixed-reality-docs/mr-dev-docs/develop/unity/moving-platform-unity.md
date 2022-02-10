@@ -29,7 +29,7 @@ Note that when the environment isn't in the inertial frame of reference, the nor
 
 In order to enable a range of use cases, various methods have been provided to activate Moving Platform Mode. It's important that you carefully consider which method to choose based on the use case that you're developing for. A key question to ask is: Who knows whether the Hololens 2 is currently within a moving platform? See the following table for an example:
 
-| Who knows if HL2 is in a Moving Platform | Best method of setting Moving Platform Mode | Benefits | Costs |
+| Who knows if HL2 is in a moving platform | Best method of setting Moving Platform Mode | Benefits | Costs |
 |--------------|------------------------|-----|---- |
 |System Administrator| [Mobile Device Management](link)|  The user does not need to be involved. Any app will work without modification. Device can be protected from entering the incorrect mode.| User and Apps cannot change the mode. |
 |End User            | [The Settings App](link)| The user is often the most knowledgeable about when and where they are using the device. Any app will work without modification.| The user may not know the mode exists. |
