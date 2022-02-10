@@ -10,7 +10,7 @@ keywords: Unity, power, performance, thermal, mitigation, mixed reality headset,
 
 # Power thermal notifications in Unity
 
-When the device is running in warm environments or with heavy performance requirements (CPU/GPU usage, peripheral usage, etc.), the device may take actions to keep itself from overheating.
+When the HoloLens 2 is running in warm environments or with heavy performance requirements (CPU/GPU usage, peripheral usage, etc.), it may take actions to keep itself from overheating.
 
 These actions would include things like:
 
@@ -21,7 +21,7 @@ These actions would include things like:
 
 ... and in worst case scenarios:
 
-* Shutting down the device
+* Shutting down the HoloLens 2
 
 If your application demands high peripheral performance, consider using the PowerThermalNotification Software Development Kit (SDK) to subscribe to notification events and implement your own custom actions.  Doing so can allow the device to operate longer in situations when otherwise an application may be terminated by the system.
 
@@ -35,9 +35,9 @@ PowerThermalNotification SDK supports language projections for C# and C++, allow
 
 ## Conceptual overview
 
-The power consumed by our devices is dissipated in heat. A traditional PC device would have a fan to address this, but a wearable device must be lightweight. Because of this, the cooling solution is more complex.  HoloLens 2 has built-in hardware and software safety features to ensure that the headset doesn't get too hot for the user, but these features must be balanced with user experience as well. For example, if we know which part of the device is heating up, we can choose to throttle the peripherals responsible for this heat.  As a last resort, we might close an application that's thought to be responsible for the power that led to this heat.
+The power consumed by the HoloLens 2 is dissipated in heat. A traditional PC device would have a fan to address this, but a wearable device must be lightweight. Because of this, the cooling solution is more complex.  HoloLens 2 has built-in hardware and software safety features to ensure that the headset doesn't get too hot for the user, but these features must be balanced with user experience as well. For example, if we know which part of the HoloLens 2 is heating up, we can choose to throttle the peripherals responsible for this heat.  As a last resort, we might close an application that's thought to be responsible for the power that led to this heat.
 
-HoloLens 2 handles heat issues by using temperature sensors. A thermal framework ties groups of sensors to different peripherals on the device.  The sensors are grouped because it may be impossible to determine which peripheral in a physical area is responsible for the power draw that heats up the device.
+HoloLens 2 handles heat issues by using temperature sensors. A thermal framework ties groups of sensors to different peripherals on the device.  The sensors are grouped because it may be impossible to determine which peripheral in a physical area is responsible for the power draw that heats up the HoloLens 2.
 
 The PowerThermalNotification SDK exposes the APIs necessary to monitor these groups of sensors.  SDK events fire when a peripheral being used by the application is showing signs that a mitigation may be required.  The application can then adapt its customer experience to reduce the thermal impact.  Reducing impact means less risk of system action such as application or device shutdown.
 
@@ -98,11 +98,11 @@ The following is a breakdown of suggested mitigations an application can take ba
 #### Display
 
 * Increase the number of black pixels in the scene
-* Use low-power colors (ex: green)
+* Use low-power colors (for example, green)
 
 #### PhotoVideoCamera
 
-* Reduce framerate
+* Reduce frame rate
 * Reduce resolution
 * Stop using the PhotoVideoCamera
 
@@ -399,10 +399,8 @@ p.SuppressPlatformMitigation(PeripheralFlags.Cpu, false);
 ```
 
 > [!NOTE]
-> The suppression APIs will only work if the process using the PowerThermalNotification class is in the foreground.  Background processes can still subscribe to events but may not disable device actions.
+> The suppression APIs will only work if the process using the PowerThermalNotification class is in the foreground.  Background processes can still subscribe to events but may not disable HoloLens 2 actions.
 
 ## Testing
 
-Once you've integrated the SDK into your application, you'll want to test it.  For HoloLens 2 operating systems that support the SDK, a developer page will be available in [Device Portal](../advanced-concepts/using-the-windows-device-portal.md#powerthermalsdk-test).
-
-From this page, you can control the mitigation levels and thermal scores for each peripheral.  You can also monitor which peripherals have mitigations being actively suppressed.
+Once you've integrated the SDK into your application, you'll want to test it.  For HoloLens 2 operating systems that support the SDK, a developer page will be available in [Device Portal](../advanced-concepts/using-the-windows-device-portal.md#powerthermalsdk-test). From this page, you can control the mitigation levels and thermal scores for each peripheral.  You can also monitor which peripherals have mitigations being actively suppressed.
