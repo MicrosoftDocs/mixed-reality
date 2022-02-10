@@ -3,7 +3,7 @@ title: Moving Platform Mode in Unity
 description: Learn about how to interact with Moving Platform Mode from unity.
 author: joelsdon
 ms.author: alexturn
-ms.date: 02/08/2022
+ms.date: 02/15/2022
 ms.topic: article
 keywords: Moving, Platform, Mode, Tracking, Vehicles, Cars, Ships, Stability
 ---
