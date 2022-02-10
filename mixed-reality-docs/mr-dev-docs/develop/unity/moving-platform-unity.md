@@ -10,7 +10,7 @@ keywords: Moving, Platform, Mode, Tracking, Vehicles, Cars, Ships, Stability
 
 # Moving Platform Mode in Unity
 
-Moving Platform Mode is a feature available for Hololens 2 that allows the device to work correctly on moving platforms, such as ships, oil platforms etc.
+Moving Platform Mode is a feature that's available for Hololens 2 and allows the device to work correctly on moving platforms such as ships, oil platforms, etc.
 
 [Learn more about Moving Platform Mode](https://docs.microsoft.com/hololens/hololens2-moving-platform)
 
