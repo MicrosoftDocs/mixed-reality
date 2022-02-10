@@ -80,7 +80,7 @@ You can set the Moving Platform Mode value as follows:
 ```cs
 bool success = m_movingPlatformManager.TrySetMode(MovingPlatformMode.MovingPlatformOptimized);
 ```
-TrySetMode will return true if the device mode now matches the requested mode. If the mode is already in the desired state, nothing will be done, and the device will not lose tracking.
+TrySetMode will return true if the device mode now matches the requested mode. If the mode is already in the desired state, nothing will be done and the device won't lose tracking.
 
 ### Callback on mode change
 
