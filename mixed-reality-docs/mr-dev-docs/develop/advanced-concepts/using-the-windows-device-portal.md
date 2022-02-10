@@ -3,7 +3,7 @@ title: Using the Windows Device Portal
 description: Learn how to configure and manage your device remotely over Wi-Fi or USB using the Windows Device Portal.
 author: hamalawi
 ms.author: moelhama
-ms.date: 02/10/2020
+ms.date: 02/10/2022
 ms.topic: article
 keywords: Windows Device Portal, HoloLens
 ms.localizationpriority: high
