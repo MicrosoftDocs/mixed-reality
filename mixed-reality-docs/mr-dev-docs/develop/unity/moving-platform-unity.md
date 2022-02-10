@@ -116,7 +116,7 @@ This function will return true if the device can change modes, and false if that
 
 ## A demo script
 
-This script shows all of the important elements of the SDK in one place. The example does not follow the best practices shown above. 
+This script shows all of the important elements of the SDK in one place. The example doesn't follow the best practices shown above. 
 ```cs
 using System.Collections;
 using System.Collections.Generic;
