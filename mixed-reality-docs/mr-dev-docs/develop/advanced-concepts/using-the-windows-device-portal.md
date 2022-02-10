@@ -3,7 +3,7 @@ title: Using the Windows Device Portal
 description: Learn how to configure and manage your device remotely over Wi-Fi or USB using the Windows Device Portal.
 author: hamalawi
 ms.author: moelhama
-ms.date: 08/03/2020
+ms.date: 02/10/2020
 ms.topic: article
 keywords: Windows Device Portal, HoloLens
 ms.localizationpriority: high
@@ -171,7 +171,7 @@ Once the installation is complete, go back to the **All apps** page on your Holo
 *Windows Device Portal home page on Microsoft HoloLens*
 
 > [NOTE]
-> Settings configured in the Device Portal apply to the entire device and persist through reboots. It is recommended to only use Device Portal when developing, and not on deployed devices.
+> Settings configured in the Device Portal apply to the entire device and persist through reboots. Device Portal is for use by developers, not in deployed applications.
 
 Your Device Portal session starts at the Home page. Access other pages from the navigation bar along the left side of the home page.
 
@@ -241,7 +241,7 @@ To import maps and anchors, select **Upload a map file** and **Upload an anchor 
 *Mixed Reality Capture page in Windows Device Portal on Microsoft HoloLens*
 
 > [!IMPORTANT]
-> Settings configured in the Device Portal apply to the entire device and persist through reboots. Any settings modified in the Device Portal will apply to mixed reality captures and apps. Only use Device Portal when developing, and not for applications deployed to your organization.
+> Device Portal is for use by developers, not in deployed applications. Settings configured in the Device Portal apply to the entire device and persist through reboots. Any settings modified in the Device Portal will apply to mixed reality captures and apps.
 
 Use the Mixed Reality Capture page to save media streams from the HoloLens.
 * **Capture Settings**: Control the media streams that are captured by checking the following settings:
