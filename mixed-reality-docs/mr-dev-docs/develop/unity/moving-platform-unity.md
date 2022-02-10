@@ -12,7 +12,7 @@ keywords: Moving, Platform, Mode, Tracking, Vehicles, Cars, Ships, Stability
 
 Moving Platform Mode is a feature available for Hololens 2 that allows the device to work correctly on moving platforms, such as ships, oil platforms etc.
 
-[Learn more about Moving Platform Mode](https://docs.microsoft.com/en-us/hololens/hololens2-moving-platform)
+[Learn more about Moving Platform Mode](https://docs.microsoft.com/hololens/hololens2-moving-platform)
 
 ## Where do I get the SDK?
 
@@ -48,7 +48,7 @@ In order to enable a range of use cases, a range of methods have been provided t
 
 ## How do I use this SDK
 
-First, install the SDK plugin from the [Mixed Reality Feature Tool](https://review.docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool). You can then set up your script to use MovingPlatformManger as follows:
+First, install the SDK plugin from the [Mixed Reality Feature Tool](https://review.docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool). You can then set up your script to use MovingPlatformManger as follows:
 
 ```cs
 // Top of file
