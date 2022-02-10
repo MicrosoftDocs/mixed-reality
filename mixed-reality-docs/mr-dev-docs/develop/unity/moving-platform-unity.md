@@ -108,7 +108,7 @@ void Update()
 
 ### Checking if mode is settable
 
-Sometimes it is useful to know whether the mode is settable before attempting to change it, for example if you would like to know if there is any value in asking the user their preference. This can be achieved with the IsSetModeSupported function:
+Sometimes it's useful to know whether the mode is settable before attempting to change it--for example, if you'd like to know if there is any value in asking the user their preference. You can achieve this with the IsSetModeSupported function:
 ```cs
 bool supported = m_movingPlatformManager.IsSetModeSupported();
 ```
