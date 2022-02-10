@@ -90,7 +90,7 @@ Use the following workflow to *create new articles* in the documentation repo vi
 
 1. Create a fork off the MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide 'master' branch (using the **Fork** button in the top right).
 
-   ![Fork the main branch.](images/forkbranch.png)
+   ![Fork the Main branch.](images/forkbranch.png)
 2. In the "mixed-reality/enthusiast-guide" folder, select **Create new file** in the top right.
 3. Create a page name for the article (use hyphens instead of spaces and don't use punctuation or apostrophes) and append ".md"
 
