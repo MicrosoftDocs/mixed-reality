@@ -21,7 +21,7 @@ The Moving Platform SDK supports language projections for C# and C++, allowing d
 
 ## Conceptual Overview
 
-For Mixed Reality systems to work correctly the headset must be tracked relative to the environment, allowing the graphics to be rendered such that they appear solidly locked in the environment to the user of the headset. Usually this is done by combining poses calculated by outward looking cameras on the headset and measurements from the IMU (Inertial Measurement Unit). This works well when the environment is in the inertial frame of reference (neglecting small effects like platnetary motion.).
+For mixed reality systems to work correctly, the headset must be tracked relative to the environment. This allows the graphics to be rendered such that they appear to the user of the headset to be solidly locked in the environment. This is usually done by combining poses that are calculated through outward-looking cameras on the headset and measurements from the IMU (Inertial Measurement Unit). This works well when the environment is in the inertial frame of reference (neglecting small effects like planetary motion.).
 
 However, when the environment is not in the inertial frame of reference, the normal head tracking system will fail. The Moving Platform Mode feature solves this problem by accounting for the motion of the environment relative to the inertial frame. Thus, when in Moving Platform Mode, Hololens 2 can render holograms that appear fixed to the environment, even if the environment is a lurching ship!
 
