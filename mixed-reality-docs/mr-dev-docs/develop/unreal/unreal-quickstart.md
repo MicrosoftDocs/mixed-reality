@@ -55,9 +55,9 @@ You'll need to enable two plugins before you can start adding objects to the sce
 
 2. Type **OpenXR** in the search box at the top right and enable the **OpenXR** and **OpenXRMsftHandInteraction** plugins:
 
-![Plugins window with OpenXR enabled](images/unreal-quickstart-img-05.jpg)
+![Plugins window with OpenXR enabled](images/unreal-quickstart-img-05.JPG)
 
-![Plugins window with Open XR Msft Hand Interaction enabled](images/unreal-quickstart-img-06.jpg)
+![Plugins window with Open XR Msft Hand Interaction enabled](images/unreal-quickstart-img-06.JPG)
 
 3. Restart your editor
 
