@@ -112,7 +112,7 @@ Sometimes it's useful to know whether the mode is settable before attempting to 
 ```cs
 bool supported = m_movingPlatformManager.IsSetModeSupported();
 ```
-This function will return true if the device can change modes, and false if that is not possible. This function does account for Mobile Device Management (MDM) policies. For example if MDM forces the MovingPlatformMode to "On", then this function will return false.
+This function will return true if the device can change modes, and false if that's not possible. This function does account for Mobile Device Management (MDM) policies. For example, if MDM forces the MovingPlatformMode to "On", then this function will return false.
 
 ## A demo script
 
