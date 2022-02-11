@@ -77,7 +77,7 @@ The following is a breakdown of suggested mitigations an application can take ba
 * [Reduce scene complexity](https://docs.unity3d.com/ScriptReference/QualitySettings.SetQualityLevel.html)(number of triangles and texture)
 * Reduce field of view (FOV)
 * Foveation<under construction--possibly remove?>
-* [Reduce PhotoVideoCamera frame processing](../advanced-concepts/locatable-camera-overview)
+* [Reduce PhotoVideoCamera frame processing](../advanced-concepts/locatable-camera-overview.md#hololens-2)
 
 #### DRAM
 
@@ -89,7 +89,7 @@ The following is a breakdown of suggested mitigations an application can take ba
 #### Network
 
 * [Reduce bandwidth](https://doc.photonengine.com/en-us/realtime/current/reference/performance-tips)
-* [Reduce video call frame rate](../advanced-concepts/locatable-camera-overview)
+* [Reduce video call frame rate](../advanced-concepts/locatable-camera-overview.md#hololens-2)
 * Stop background network activity (for example, application telemetry)
 
 #### Battery
@@ -104,7 +104,7 @@ The following is a breakdown of suggested mitigations an application can take ba
 * [Dim the display](/uwp/api/windows.graphics.display.brightnessoverride)
 
 #### PhotoVideoCamera
-* [Overview](../advanced-concepts/locatable-camera-overview)
+* [Overview](../advanced-concepts/locatable-camera-overview.md#hololens-2)
 * Reduce frame rate
 * Reduce resolution
 * Stop using the PhotoVideoCamera
