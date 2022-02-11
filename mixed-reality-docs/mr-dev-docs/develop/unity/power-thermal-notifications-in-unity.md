@@ -77,7 +77,7 @@ The following is a breakdown of suggested mitigations an application can take ba
 * [Reduce scene complexity](https://docs.unity3d.com/ScriptReference/QualitySettings.SetQualityLevel.html)(number of triangles and texture)
 * Reduce field of view (FOV)
 * Foveation<under construction--possibly remove?>
-* [Reduce PhotoVideoCamera frame processing](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/locatable-camera-overview#hololens-2
+* [Reduce PhotoVideoCamera frame processing](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/locatable-camera-overview#hololens-2)
 
 #### DRAM
 
