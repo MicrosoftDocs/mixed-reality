@@ -77,7 +77,7 @@ The following is a breakdown of suggested mitigations an application can take ba
 * [Reduce scene complexity](https://docs.unity3d.com/ScriptReference/QualitySettings.SetQualityLevel.html)(number of triangles and texture)
 * Reduce field of view (FOV)
 * Foveation<under construction--possibly remove?>
-* [Reduce PhotoVideoCamera frame processing](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/locatable-camera-overview#hololens-2)
+* [Reduce PhotoVideoCamera frame processing](../advanced-concepts/locatable-camera-overview#hololens-2)
 
 #### DRAM
 
@@ -89,7 +89,7 @@ The following is a breakdown of suggested mitigations an application can take ba
 #### Network
 
 * [Reduce bandwidth](https://doc.photonengine.com/en-us/realtime/current/reference/performance-tips)
-* [Reduce video call frame rate](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/locatable-camera-overview#hololens-2)
+* [Reduce video call frame rate](../advanced-concepts/locatable-camera-overview#hololens-2)
 * Stop background network activity (for example, application telemetry)
 
 #### Battery
@@ -101,10 +101,10 @@ The following is a breakdown of suggested mitigations an application can take ba
 
 * Increase the number of black pixels in the scene
 * Use low-power colors (for example, green)
-* [Dim the display](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.display.brightnessoverride?view=winrt-22000)
+* [Dim the display](/uwp/api/windows.graphics.display.brightnessoverride)
 
 #### PhotoVideoCamera
-* [Overview](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/locatable-camera-overview#hololens-2)
+* [Overview](../advanced-concepts/locatable-camera-overview#hololens-2)
 * Reduce frame rate
 * Reduce resolution
 * Stop using the PhotoVideoCamera
