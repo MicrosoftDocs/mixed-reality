@@ -257,8 +257,8 @@ public class NotificationManager
             {
                 component.SetMitigationLevel(peripheralsOfInterest, (PowerThermalMitigationLevel)0);
                 components.Add(component);
-                p.PeripheralsOfInterest |= peripheralsOfInterest;
             }
+            p.PeripheralsOfInterest |= peripheralsOfInterest;
         }
     }
 }
