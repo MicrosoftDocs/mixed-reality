@@ -63,31 +63,33 @@ The following is a breakdown of suggested mitigations an application can take ba
 
 #### CPU
 
-* Reduce frame rate
+* [Reduce frame rate](https://docs.unity3d.com/ScriptReference/Application-targetFrameRate.html)
 * Adjust per-frame workload
-  * Physics operations
-  * Minimize background CPU cycles
+  * [Physics operations](https://docs.unity3d.com/ScriptReference/MonoBehaviour.FixedUpdate.html)
+  * [Minimize background CPU cycles](https://docs.unity3d.com/2018.4/Documentation/Manual/OptimizingGraphicsPerformance.html)
 
 #### GPU
 
-* Reduce frame rate
+* [Reduce frame rate](https://docs.unity3d.com/ScriptReference/Application-targetFrameRate.html)
 * Reduce resolution
-* Reduce scene complexity (number of triangles and texture)
+  * [For rendering](https://docs.unity3d.com/ScriptReference/XR.XRSettings-renderViewportScale.html)
+  * [For PV camera](<under construction>)
+* [Reduce scene complexity](https://docs.unity3d.com/ScriptReference/QualitySettings.SetQualityLevel.html)(number of triangles and texture)
 * Reduce field of view (FOV)
-* Foveation
-* Reduce PhotoVideoCamera frame processing
+* Foveation<under construction--possibly remove?>
+* [Reduce PhotoVideoCamera frame processing](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/locatable-camera-overview#hololens-2
 
 #### DRAM
 
-* Texture complexity
+* [Texture complexity](https://docs.unity3d.com/ScriptReference/QualitySettings.SetQualityLevel.html)
 * Reduce frame rate
-* Reduce resolution
-* Foveation
+* [Reduce resolution](https://docs.unity3d.com/ScriptReference/XR.XRSettings-renderViewportScale.html)
+
 
 #### Network
 
-* Reduce bandwidth
-* Reduce video call frame rate
+* [Reduce bandwidth](https://doc.photonengine.com/en-us/realtime/current/reference/performance-tips)
+* [Reduce video call frame rate](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/locatable-camera-overview#hololens-2)
 * Stop background network activity (for example, application telemetry)
 
 #### Battery
@@ -99,9 +101,10 @@ The following is a breakdown of suggested mitigations an application can take ba
 
 * Increase the number of black pixels in the scene
 * Use low-power colors (for example, green)
+* [Dim the display](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.display.brightnessoverride?view=winrt-22000)
 
 #### PhotoVideoCamera
-
+* [Overview](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/locatable-camera-overview#hololens-2)
 * Reduce frame rate
 * Reduce resolution
 * Stop using the PhotoVideoCamera
