@@ -14,11 +14,6 @@ Moving Platform Mode allows HoloLens 2 to work correctly on moving platforms suc
 
 [Learn more about Moving Platform Mode](/hololens/hololens2-moving-platform)
 
-## Where do I get the SDK?
-
-The Moving Platform SDK is downloadable via the [Mixed Reality Feature Tool](/mixed-reality-docs/mr-dev-docs/develop/unity/welcome-to-mr-feature-tool.md).
-The Moving Platform SDK supports language projections for C# and C++, allowing developers to develop applications for Win32 or UWP platforms.
-
 ## Conceptual Overview
 
 For mixed reality systems to work correctly, the headset must be tracked relative to the environment. This relative tracking allows the graphics to be rendered such that they appear to the user of the headset to be solidly locked in the environment. Tracking is usually achieved by combining poses that are calculated using outward-looking cameras and measurements from the Inertial Measurement Unit (IMU). This method works well when the environment is in the inertial frame of reference. Small effects, like planetary motion, are usually neglected.
@@ -45,6 +40,11 @@ In order to enable a range of use cases, various methods have been provided to a
 |If uncertain about environment, use Moving Platform Mode | Moving Platform Mode can work in both stationary environments and moving ones, the regular tracking algorithms will only work in stationary environments. Hence if you are uncertain about whether the environment is moving, choosing Moving Platform Mode can be the safer choice. |
 |Don't use Moving Platform Mode in known stationary environments| Moving Platform Mode performs less well than the standard mode in stationary environments. This is a small degradation, though will be noticeable to most users.|
 |Consider what mode to leave the device in | This SDK allows developers to design experiences that are robust across boot of the device. Consider if the device will be on a moving platform next time it boots, and leave the device in the appropriate mode.|
+
+## Where do I get the SDK?
+
+The Moving Platform SDK is downloadable via the [Mixed Reality Feature Tool](/mixed-reality-docs/mr-dev-docs/develop/unity/welcome-to-mr-feature-tool.md).
+The Moving Platform SDK supports language projections for C# and C++, allowing developers to develop applications for Win32 or UWP platforms.
 
 ## How do I use this SDK
 
