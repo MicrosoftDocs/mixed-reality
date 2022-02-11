@@ -12,11 +12,11 @@ keywords: Moving, Platform, Mode, Tracking, Vehicles, Cars, Ships, Stability
 
 Moving Platform Mode is a feature that's available for Hololens 2 and allows the device to work correctly on moving platforms such as ships, oil platforms, etc.
 
-[Learn more about Moving Platform Mode](https://docs.microsoft.com/hololens/hololens2-moving-platform)
+[Learn more about Moving Platform Mode](/hololens/hololens2-moving-platform)
 
 ## Where do I get the SDK?
 
-The Moving Platform SDK is downloadable via the [Mixed Reality Feature Tool](https://review.docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool).
+The Moving Platform SDK is downloadable via the [Mixed Reality Feature Tool](/mixed-reality-docs/mr-dev-docs/develop/unity/welcome-to-mr-feature-tool.md).
 The Moving Platform SDK supports language projections for C# and C++, allowing developers to develop applications for Win32 or UWP platforms.
 
 ## Conceptual Overview
@@ -31,7 +31,7 @@ In order to enable a range of use cases, various methods have been provided to a
 
 | Who knows if HL2 is in a moving platform | Best method of setting Moving Platform Mode | Benefits | Costs |
 |--------------|------------------------|-----|---- |
-|System Administrator| [Mobile Device Management](/hololens/hololens2-moving-platform#via-mobile-device-management-mdm)|  The user does not need to be involved. Any app will work without modification. Device can be protected from entering the incorrect mode.| User and Apps cannot change the mode. |
+|System Administrator| [Mobile Device Management](/hololens/hololens2-moving-platform#via-mobile-device-management-mdm)|  The user doesn't need to be involved. Any app will work without modification. Device can be protected from entering the incorrect mode.| User and Apps cannot change the mode. |
 |End User            | [The Settings App](/hololens/hololens2-moving-platform#on-device-settings)| The user is often the most knowledgeable about when and where they are using the device. Any app will work without modification.| The user may not know the mode exists. |
 |The Application     | Use the SDK described in this article.| Use case specific cues can be used to swap the mode when this cannot be known ahead of time. Removes the requirement that a user has to make this decision and change the mode in settings.| A poorly designed app can give a very bad experience, and leave the device in an unexpected mode. |
 
@@ -43,12 +43,12 @@ In order to enable a range of use cases, various methods have been provided to a
 |Provide a warning to the user| Avoid changing mode immediately on start/resume of the app, this presents a poor user experience, as the user may not know why the device is losing tracking.|
 |Minimize changing mode | When changing the Moving Platform Mode settings the device will lose tracking, causing a negative user experience. It is therefore recommended that you minimize the frequency with which you change the mode. Ideally the mode would only be changed if the device is transitioning from a stationary environment to a moving one, or vice versa.|
 |If uncertain about environment, use Moving Platform Mode | Moving Platform Mode can work in both stationary environments and moving ones, the regular tracking algorithms will only work in stationary environments. Hence if you are uncertain about whether the environment is moving, choosing Moving Platform Mode can be the safer choice. |
-|Do not use Moving Platform Mode in known stationary environments| Moving Platform Mode performs less well than the standard mode in stationary environments. This is a small degradation, though will be noticeable to most users.|
+|Don't use Moving Platform Mode in known stationary environments| Moving Platform Mode performs less well than the standard mode in stationary environments. This is a small degradation, though will be noticeable to most users.|
 |Consider what mode to leave the device in | This SDK is unusual in that it allows a system wide setting to be set by an application, this is so that developers can design experiences that are robust accros boot of the device. Consider if the device will be on a moving platform next time it is booted, and leave the device in the appropriate mode.|
 
 ## How do I use this SDK
 
-First, install the SDK plugin from the [Mixed Reality Feature Tool](https://review.docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool). You can then set up your script to use MovingPlatformManger as follows:
+First, install the SDK plugin from the [Mixed Reality Feature Tool](/mixed-reality-docs/mr-dev-docs/develop/unity/welcome-to-mr-feature-tool.md). You can then set up your script to use MovingPlatformManger as follows:
 
 ```cs
 // Top of file
@@ -72,7 +72,7 @@ public enum MovingPlatformMode
 }
 ```
 
-Devices that do not have Moving Platform Mode available, like VR devices and Hololens 1, will always return 'Standard'.
+Devices that don't have Moving Platform Mode available, like VR devices and Hololens 1, will always return 'Standard'.
 
 ### Setting the mode
 
@@ -196,4 +196,4 @@ public class MovingPlatformDemo : MonoBehaviour
 
 ## See also
 
-* [Moving Platform Mode](https://docs.microsoft.com/en-us/hololens/hololens2-moving-platform)
+* [Moving Platform Mode](/hololens/hololens2-moving-platform)
