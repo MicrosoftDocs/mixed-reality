@@ -58,10 +58,10 @@ This course will teach you how to get the results from the Azure Custom Vision S
 We recommend the following hardware and software for this course:
 
 - A development PC
-- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](../../install-the-tools.md#installation-checklist-for-hololens)
-- [The latest Windows 10 SDK](../../install-the-tools.md#installation-checklist-for-hololens)
-- [Unity 2017.4 LTS](../../install-the-tools.md#installation-checklist-for-hololens)
-- [Visual Studio 2017](../../install-the-tools.md#installation-checklist-for-hololens)
+- [Windows 10 Fall Creators Update (or later) with Developer mode enabled](../../install-the-tools.md#installation-checklist)
+- [The latest Windows 10 SDK](../../install-the-tools.md#installation-checklist)
+- [Unity 2017.4 LTS](../../install-the-tools.md#installation-checklist)
+- [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
 - A [Microsoft HoloLens](/windows/mixed-reality/hololens-hardware-details) with Developer mode enabled
 - Internet access for Azure setup and Custom Vision Service retrieval
 -  A series of at least fifteen (15) images are required) for each object that you would like the Custom Vision to recognize. If you wish, you can use the images already provided with this course, [a series of cups](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20310%20-%20Object%20detection/Cup%20Images.zip)).
