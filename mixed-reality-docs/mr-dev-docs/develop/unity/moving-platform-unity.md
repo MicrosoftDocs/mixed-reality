@@ -10,7 +10,7 @@ keywords: Moving, Platform, Mode, Tracking, Vehicles, Cars, Ships, Stability
 
 # Moving Platform Mode in Unity
 
-Moving Platform Mode is a feature that's available for Hololens 2 and allows the device to work correctly on moving platforms such as ships, oil platforms, etc.
+Moving Platform Mode allows HoloLens 2 to work correctly on moving platforms such as ships, oil platforms, and other vehicles.
 
 [Learn more about Moving Platform Mode](/hololens/hololens2-moving-platform)
 
@@ -21,19 +21,19 @@ The Moving Platform SDK supports language projections for C# and C++, allowing d
 
 ## Conceptual Overview
 
-For mixed reality systems to work correctly, the headset must be tracked relative to the environment. This allows the graphics to be rendered such that they appear to the user of the headset to be solidly locked in the environment. This is usually done by combining poses that are calculated through outward-looking cameras on the headset and measurements from the IMU (Inertial Measurement Unit). This works well when the environment is in the inertial frame of reference (neglecting small effects like planetary motion.).
+For mixed reality systems to work correctly, the headset must be tracked relative to the environment. This relative tracking allows the graphics to be rendered such that they appear to the user of the headset to be solidly locked in the environment. Tracking is usually achieved by combining poses that are calculated using outward-looking cameras and measurements from the Inertial Measurement Unit (IMU). This method works well when the environment is in the inertial frame of reference. Small effects, like planetary motion, are usually neglected.
 
-Note that when the environment isn't in the inertial frame of reference, the normal head tracking system will fail. The Moving Platform Mode feature solves this problem by accounting for the motion of the environment relative to the inertial frame. Thus, when in Moving Platform Mode, Hololens 2 can render holograms that appear fixed to the environment, even if the environment is a lurching ship!
+When the environment isn't in the inertial frame of reference, the normal head tracking system will fail. The Moving Platform Mode feature solves this problem by accounting for the motion of the environment relative to the inertial frame. Thus, when in Moving Platform Mode, HoloLens 2 can render holograms that appear fixed to the environment, even if the environment is a lurching ship!
 
 ## How should I activate Moving Platform Mode?
 
-In order to enable a range of use cases, various methods have been provided to activate Moving Platform Mode. It's important that you carefully consider which method to choose based on the use case that you're developing for. A key question to ask is: Who knows whether the Hololens 2 is currently within a moving platform? See the following table for an example:
+In order to enable a range of use cases, various methods have been provided to activate Moving Platform Mode. It's important that you carefully consider which method to choose. A key question to ask is: Who knows whether the HoloLens 2 is currently within a moving platform? See the following table for an example:
 
 | Who knows if HL2 is in a moving platform | Best method of setting Moving Platform Mode | Benefits | Costs |
 |--------------|------------------------|-----|---- |
-|System Administrator| [Mobile Device Management](/hololens/hololens2-moving-platform#via-mobile-device-management-mdm)|  The user doesn't need to be involved. Any app will work without modification. Device can be protected from entering the incorrect mode.| User and Apps cannot change the mode. |
-|End User            | [The Settings App](/hololens/hololens2-moving-platform#on-device-settings)| The user is often the most knowledgeable about when and where they are using the device. Any app will work without modification.| The user may not know the mode exists. |
-|The Application     | Use the SDK described in this article.| Use case specific cues can be used to swap the mode when this cannot be known ahead of time. Removes the requirement that a user has to make this decision and change the mode in settings.| A poorly designed app can give a very bad experience, and leave the device in an unexpected mode. |
+|System Administrator| [Mobile Device Management](/hololens/hololens2-moving-platform#via-mobile-device-management-mdm)|  The user doesn't need to be involved. Any app will work without modification. Device can be protected from entering the incorrect mode.| User and Apps can't change the mode. |
+|End User            | [The Settings App](/hololens/hololens2-moving-platform#on-device-settings)| The user is often the most knowledgeable about when and where they're using the device. Any app will work without modification.| The user may not know the mode exists. |
+|The Application     | Use the SDK described in this article.| Use case specific cues can be used to swap the mode when the environment can't be known ahead of time. Removes the requirement that a user has to make this decision and change the mode in settings.| A poorly designed app can give a very bad experience, and leave the device in an unexpected mode. |
 
 ## Best practices for Moving Platform Mode
 
@@ -41,10 +41,10 @@ In order to enable a range of use cases, various methods have been provided to a
 |-----------|------------|
 |Respect user choice | You should offer the user the choice before changing the mode for them, and you should continue to respect that choice for the runtime of the app|
 |Provide a warning to the user| Avoid changing mode immediately on start/resume of the app, this presents a poor user experience, as the user may not know why the device is losing tracking.|
-|Minimize changing mode | When changing the Moving Platform Mode settings the device will lose tracking, causing a negative user experience. It is therefore recommended that you minimize the frequency with which you change the mode. Ideally the mode would only be changed if the device is transitioning from a stationary environment to a moving one, or vice versa.|
+|Minimize changing mode | When changing the Moving Platform Mode settings the device will lose tracking, causing a negative user experience. It's therefore recommended that you minimize the frequency with which you change the mode. Ideally the mode would only be changed if the device is transitioning from a stationary environment to a moving one, or vice versa.|
 |If uncertain about environment, use Moving Platform Mode | Moving Platform Mode can work in both stationary environments and moving ones, the regular tracking algorithms will only work in stationary environments. Hence if you are uncertain about whether the environment is moving, choosing Moving Platform Mode can be the safer choice. |
 |Don't use Moving Platform Mode in known stationary environments| Moving Platform Mode performs less well than the standard mode in stationary environments. This is a small degradation, though will be noticeable to most users.|
-|Consider what mode to leave the device in | This SDK is unusual in that it allows a system wide setting to be set by an application, this is so that developers can design experiences that are robust accros boot of the device. Consider if the device will be on a moving platform next time it is booted, and leave the device in the appropriate mode.|
+|Consider what mode to leave the device in | This SDK allows developers to design experiences that are robust across boot of the device. Consider if the device will be on a moving platform next time it boots, and leave the device in the appropriate mode.|
 
 ## How do I use this SDK
 
@@ -72,7 +72,7 @@ public enum MovingPlatformMode
 }
 ```
 
-Devices that don't have Moving Platform Mode available, like VR devices and Hololens 1, will always return 'Standard'.
+Devices that don't have Moving Platform Mode available, like VR devices and HoloLens 1, will always return 'Standard'.
 
 ### Setting the mode
 
@@ -97,7 +97,7 @@ void CallbackOnMPMChanged(object sender, MovingPlatformEventArgs args)
 ...
 void Update()
 {
-    // It is not reccomended to do work in the callback.
+    // It's not reccomended to do work in the callback.
     if (movingPlatformModeChanged)
     {
         movingPlatformModeChanged = false;
@@ -108,7 +108,7 @@ void Update()
 
 ### Checking if mode is settable
 
-Sometimes it's useful to know whether the mode is settable before attempting to change it, for example, if you'd like to know if there is any value in asking the user their preference. You can achieve this with the IsSetModeSupported function:
+Sometimes it's useful to know whether the mode is settable before attempting to change it. For example, if you'd like to know if there's any value in asking the user their preference. You can find if moving platform mode is settable with the IsSetModeSupported function:
 ```cs
 bool supported = m_movingPlatformManager.IsSetModeSupported();
 ```
@@ -142,7 +142,7 @@ public class MovingPlatformDemo : MonoBehaviour
         // Just this mechanism would be adequate if a one time check is acceptable. 
         MovingPlatformMode initialMovingPlatformMode = m_movingPlatformManager.Mode;
 
-        // Find if it is possible to change the mode. 
+        // Find if It's possible to change the mode. 
         bool isSettable = m_movingPlatformManager.IsSetModeSupported();
 
         // Here you would add some use case specific logic using initialMovingPlatformMode and isSettable
@@ -154,7 +154,7 @@ public class MovingPlatformDemo : MonoBehaviour
         // Visual indicator of current state: Green = Moving Platform Optimized, Red = Regular.
         SetColourFromState(m_movingPlatformManager.Mode, cubeRenderer);
 
-        // We set a callback to be notified if there is a change in mode. This is typically optional.
+        // We set a callback to be notified if there's a change in mode. This is typically optional.
         m_movingPlatformManager.ModeChanged += CallbackOnMPMChanged;
         movingPlatformModeChanged = false;
     }
