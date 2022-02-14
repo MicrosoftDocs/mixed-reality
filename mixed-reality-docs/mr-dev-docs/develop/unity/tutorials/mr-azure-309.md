@@ -349,7 +349,7 @@ You will now create some basic shapes for your scene, with which the user can in
 
 11. When your application is running, it needs to be able to identify the objects within the scene, to achieve this, they need to be tagged. Select one of the objects, and in the *Inspector* panel, click **Add Tag...**, which will swap the *Inspector* with the **Tags & Layers** panel.
 
-    ![Set up the objects in the Unity Scene](images/AzureLabs-Lab309-41.png) ![](images/AzureLabs-Lab309-42.png)
+    ![Set up the objects in the Unity Scene](images/AzureLabs-Lab309-41.png) ![Screenshot that shows the Tag & Layers panel.](images/AzureLabs-Lab309-42.png)
 
 12. Click the **+ (plus)** symbol, then type the tag name as **ObjectInScene**.
 
@@ -360,7 +360,7 @@ You will now create some basic shapes for your scene, with which the user can in
 
 13. With the tag created, you now need to apply it to all three of your objects. From the *Hierarchy*, hold the **Shift** key, then click the **Capsule**, **Cube**, and **Sphere**, objects, then in the *Inspector*, click the dropdown menu alongside **Tag**, then click the *ObjectInScene* tag you created.
 
-    ![Set up the objects in the Unity Scene](images/AzureLabs-Lab309-44.png) ![](images/AzureLabs-Lab309-45.png)
+    ![Set up the objects in the Unity Scene](images/AzureLabs-Lab309-44.png) ![Screenshot that shows the menu options.](images/AzureLabs-Lab309-45.png)
 
 ## Chapter 6 - Create the ApplicationInsightsTracker class
 
