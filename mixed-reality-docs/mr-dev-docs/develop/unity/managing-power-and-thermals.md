@@ -10,9 +10,7 @@ keywords: Unity, power, performance, thermal, mitigation, mixed reality headset,
 
 # Managing power and thermals
 
-When the HoloLens 2 is running in warm environments or with heavy performance requirements (CPU/GPU usage, peripheral usage, etc.), it may take actions to keep itself from overheating.
-
-These actions would include things like:
+When the HoloLens 2 is running in warm environments or with heavy performance requirements (CPU/GPU usage, peripheral usage, etc.), it might get hot enough that it takes actions automatically to keep itself from overheating. These actions would include things like:
 
 * Adjusting charging performance
 * Providing user feedback
