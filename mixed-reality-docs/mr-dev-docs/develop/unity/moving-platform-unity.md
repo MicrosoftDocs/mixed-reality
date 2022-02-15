@@ -35,7 +35,7 @@ In order to enable a range of use cases, various methods have been provided to a
 | Principal | Description|
 |-----------|------------|
 |Respect user choice | You should offer the user the choice before changing the mode for them, and you should continue to respect that choice for the runtime of the app|
-|Provide a warning to the user| Avoid changing mode immediately on start/resume of the app, this presents a poor user experience, as the user may not know why the device is losing tracking.|
+|Provide a warning to the user| Avoid changing mode immediately on start/resume of the app. This presents a poor user experience, since the user may not know why the device is losing tracking.|
 |Minimize changing mode | When changing the Moving Platform Mode settings the device will lose tracking, causing a negative user experience. It's therefore recommended that you minimize the frequency with which you change the mode. Ideally the mode would only be changed if the device is transitioning from a stationary environment to a moving one, or vice versa.|
 |If uncertain about environment, use Moving Platform Mode | Moving Platform Mode can work in both stationary environments and moving ones, the regular tracking algorithms will only work in stationary environments. Hence if you are uncertain about whether the environment is moving, choosing Moving Platform Mode can be the safer choice. |
 |Don't use Moving Platform Mode in known stationary environments| Moving Platform Mode performs less well than the standard mode in stationary environments. This is a small degradation, though will be noticeable to most users.|
