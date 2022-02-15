@@ -89,7 +89,7 @@ The following is a breakdown of suggested mitigations an application can take ba
 #### Battery
 
 * Move to a cooler environment
-* Use device without a charger. 
+* Use device without a charger
 * [Avoid running on a charger with a below-50% charge](https://docs.unity3d.com/ScriptReference/SystemInfo-batteryStatus.html)
 
 #### Display
