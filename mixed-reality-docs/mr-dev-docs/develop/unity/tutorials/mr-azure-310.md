@@ -84,21 +84,21 @@ To use the **Azure Custom Vision Service**, you will need to configure an instan
 
 2.  Click on **Getting Started**.
 
-    ![](images/AzureLabs-Lab310-01.png)
+    ![Screenshot that highlights the Getting Started button.](images/AzureLabs-Lab310-01.png)
 
 3.  Sign in to the Custom Vision Portal.
 
-    ![](images/AzureLabs-Lab310-02.png)
+    ![Screenshot that shows the Sign In button.](images/AzureLabs-Lab310-02.png)
 
 4.  If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
 
 5.  Once you are logged in for the first time, you will be prompted with the *Terms of Service* panel. Click the checkbox to *agree to the terms*. Then click **I agree**.
 
-    ![](images/AzureLabs-Lab310-03.png)
+    ![Screenshot that shows the Terms of Service panel.](images/AzureLabs-Lab310-03.png)
 
 6.  Having agreed to the terms, you are now in the *My Projects* section. Click on **New Project**.
 
-    ![](images/AzureLabs-Lab310-04.png)
+    ![Screenshot that shows where to select New Project.](images/AzureLabs-Lab310-04.png)
 
 7.  A tab will appear on the right-hand side, which will prompt you to specify some fields for the project.
 
@@ -108,7 +108,7 @@ To use the **Azure Custom Vision Service**, you will need to configure an instan
 
     3.  Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure services associated with a single project (e.g. such as these courses) under a common resource group).
 
-        ![](images/AzureLabs-Lab310-05.png)
+        ![Screenshot that shows where to add details for the new project.](images/AzureLabs-Lab310-05.png)
 
         > [!NOTE]
         > If you wish to [read more about Azure Resource Groups, navigate to the associated Docs](/azure/azure-resource-manager/resource-group-portal)
@@ -128,70 +128,70 @@ To train your Custom Vision project:
 
 1.  Click on the **+** button next to **Tags**.
 
-    ![](images/AzureLabs-Lab310-06.png)
+    ![Screenshot that shows the + button next to Tags.](images/AzureLabs-Lab310-06.png)
 
 2.  Add a **name** for the tag that will be used to associate your images with. In this example we are using images of cups for recognition, so have named the tag for this, **Cup**. Click **Save** once finished.
 
-    ![](images/AzureLabs-Lab310-07.png)
+    ![Screenshot that shows where to add a name for the tag.](images/AzureLabs-Lab310-07.png)
 
 3.  You will notice your **Tag** has been added (you may need to reload your page for it to appear). 
 
-    ![](images/AzureLabs-Lab310-08.png)
+    ![Screenshot that shows where your tag is added.](images/AzureLabs-Lab310-08.png)
 
 4.  Click on **Add images** in the center of the page.
 
-    ![](images/AzureLabs-Lab310-09.png)
+    ![Screenshot that shows where to add images.](images/AzureLabs-Lab310-09.png)
 
 5.  Click on **Browse local files**, and browse to the images you would like to upload for one object, with the minimum being fifteen (15).
 
     > [!TIP]
     >  You can select several images at a time, to upload.
 
-    ![](images/AzureLabs-Lab310-10.png)
+    ![Screenshot that shows the images you can upload.](images/AzureLabs-Lab310-10.png)
 
 6.  Press **Upload files** once you have selected all the images you would like to train the project with. The files will begin uploading. Once you have confirmation of the upload, click **Done**.
 
-    ![](images/AzureLabs-Lab310-11.png)
+    ![Screenshot that shows the progress of the uploaded images.](images/AzureLabs-Lab310-11.png)
 
 7.  At this point your images are uploaded, but not tagged.
 
-    ![](images/AzureLabs-Lab310-12.png)
+    ![Screenshot that shows an untagged image.](images/AzureLabs-Lab310-12.png)
 
 8.  To tag your images, use your mouse. As you hover over your image, a selection highlight will aid you by automatically drawing a selection around your object. If it is not accurate, you can draw your own. This is accomplished by holding left-click on the mouse, and dragging the selection region to encompass your object. 
 
-    ![](images/AzureLabs-Lab310-13.png) 
+    ![Screenshot that shows how to tag an image.](images/AzureLabs-Lab310-13.png) 
 
 9. Following the selection of your object within the image, a small prompt will ask for you to *Add Region Tag*. Select your previously created tag ('Cup', in the above example), or if you are adding more tags, type that in and click the **+ (plus)** button.
 
-    ![](images/AzureLabs-Lab310-14.png) 
+    ![Screenshot that shows the tag that you added to the image.](images/AzureLabs-Lab310-14.png) 
 
 10. To tag the next image, you can click the arrow to the right of the blade, or close the tag blade (by clicking the **X** in the top-right corner of the blade) and then click the next image. Once you have the next image ready, repeat the same procedure. Do this for all the images you have uploaded, until they are all tagged. 
 
     > [!NOTE]
     >  You can select several objects in the same image, like the image below: 
     > 
-    > ![](images/AzureLabs-Lab310-15.png)
+    > ![Screenshot that shows multiple objects in an image.](images/AzureLabs-Lab310-15.png)
 
 11. Once you have tagged them all, click on the **tagged** button, on the left of the screen, to reveal the tagged images. 
 
-    ![](images/AzureLabs-Lab310-16.png)
+    ![Screenshot that highlights the Tagged button.](images/AzureLabs-Lab310-16.png)
 
 12. You are now ready to train your Service. Click the **Train** button, and the first training iteration will begin.
 
-    ![](images/AzureLabs-Lab310-17.png)
+    ![Screenshot that highlights the Train button.](images/AzureLabs-Lab310-17.png)
 
-    ![](images/AzureLabs-Lab310-18.png)
+    ![Screenshot that shows the first training iteration.](images/AzureLabs-Lab310-18.png)
 
 13. Once it is built, you will be able to see two buttons called **Make default** and **Prediction URL**. Click on **Make default** first, then click on **Prediction URL**.
 
-    ![](images/AzureLabs-Lab310-19.png)
+    ![Screenshot that highlights the Make default button.](images/AzureLabs-Lab310-19.png)
 
     > [!NOTE] 
     > The endpoint which is provided from this, is set to whichever *Iteration* has been marked as default. As such, if you later make a new *Iteration* and update it as default, you will not need to change your code.
 
 14. Once you have clicked on **Prediction URL**, open *Notepad*, and copy and paste the **URL** (also called your **Prediction-Endpoint**) and the **Service Prediction-Key**, so that you can retrieve it when you need it later in the code.
 
-    ![](images/AzureLabs-Lab310-20.png)
+    ![Screenshot that shows the prediction endpoint and the predition key.](images/AzureLabs-Lab310-20.png)
 
 ## Chapter 3 - Set up the Unity project
 
@@ -199,19 +199,19 @@ The following is a typical set up for developing with mixed reality, and as such
 
 1.  Open **Unity** and click **New**.
 
-    ![](images/AzureLabs-Lab310-21.png)
+    ![Screenshot that highlights the New button.](images/AzureLabs-Lab310-21.png)
 
 2.  You will now need to provide a Unity project name. Insert **CustomVisionObjDetection**. Make sure the project type is set to **3D**, and set the **Location** to somewhere appropriate for you (remember, closer to root directories is better). Then, click **Create project**.
 
-    ![](images/AzureLabs-Lab310-22.png)
+    ![Screenshot that shows the project details and where to select Create project.](images/AzureLabs-Lab310-22.png)
 
 3.  With Unity open, it is worth checking the default **Script Editor** is set to **Visual Studio**. Go to **Edit* > *Preferences** and then from the new window, navigate to **External Tools**. Change **External Script Editor** to **Visual Studio**. Close the **Preferences** window.
 
-    ![](images/AzureLabs-Lab310-23.png)
+    ![Screenshot that shows where to change the External Script Editor to Visual Studio.](images/AzureLabs-Lab310-23.png)
 
 4.  Next, go to **File > Build Settings** and switch the **Platform** to *Universal Windows Platform*, and then clicking on the **Switch Platform** button.
 
-    ![](images/AzureLabs-Lab310-24.png)
+    ![Screenshot that highlights the Switch Platform button.](images/AzureLabs-Lab310-24.png)
 
 5.  In the same **Build Settings** window, ensure the following are set:
 
@@ -222,7 +222,7 @@ The following is a typical set up for developing with mixed reality, and as such
     5.  **Build and Run** is set to **Local Machine**            
     6.  The remaining settings, in **Build Settings**, should be left as default for now.
 
-        ![](images/AzureLabs-Lab310-25.png)
+        ![Screenshot that shows the Build Setting configuration options.](images/AzureLabs-Lab310-25.png)
 
 6.  In the same **Build Settings** window, click on the **Player Settings** button, this will open the related panel in the space where the **Inspector** is located.
 
@@ -236,7 +236,7 @@ The following is a typical set up for developing with mixed reality, and as such
 
         3. **API Compatibility Level** should be **.NET 4.6**.
 
-            ![](images/AzureLabs-Lab310-26.png)
+            ![Screenshot that shows the API Compatibility Level option set to .NET 4.6.](images/AzureLabs-Lab310-26.png)
 
     2.  Within the **Publishing Settings** tab, under **Capabilities**, check:
 
@@ -246,12 +246,12 @@ The following is a typical set up for developing with mixed reality, and as such
 
         3. **SpatialPerception**
 
-            ![](images/AzureLabs-Lab310-27.png)
-            ![](images/AzureLabs-Lab310-28.png)
+            ![Screenshot that shows the top half of the Capabilities configuration options.](images/AzureLabs-Lab310-27.png)
+            ![Screenshot that shows the lower half of the Capabilities configuration options.](images/AzureLabs-Lab310-28.png)
 
     3.  Further down the panel, in **XR Settings** (found below **Publish Settings**), tick **Virtual Reality Supported**, then make sure the **Windows Mixed Reality SDK** is added.
 
-        ![](images/AzureLabs-Lab310-29.png)
+        ![Screenshot that shows that the Windows Mixed Reality SDK is added.](images/AzureLabs-Lab310-29.png)
 
 8.  Back in **Build Settings**, *Unity C\# Projects* is no longer greyed out: tick the checkbox next to this.
 
@@ -259,15 +259,15 @@ The following is a typical set up for developing with mixed reality, and as such
 
 10. In the **Editor**, click on **Edit** > **Project Settings** > **Graphics**.
 
-    ![](images/AzureLabs-Lab310-30.png)
+    ![Screenshot that shows the Graphics menu option selected.](images/AzureLabs-Lab310-30.png)
 
 11. In the **Inspector Panel** the *Graphics Settings* will be open. Scroll down until you see an array called **Always Include Shaders**. Add a slot by increasing the **Size** variable by one (in this example, it was 8 so we made it 9). A new slot will appear, in the last position of the array, as shown below:
 
-    ![](images/AzureLabs-Lab310-31.png)
+    ![Screenshot that highlights the Always Included Shaders array.](images/AzureLabs-Lab310-31.png)
 
 12. In the slot, click on the small target circle next to the slot to open a list of shaders. Look for the **Legacy Shaders/Transparent/Diffuse** shader and double-click it. 
 
-    ![](images/AzureLabs-Lab310-32.png)
+    ![Screenshot that highlights the Legacy Shaders/Transparent/Diffuse shader.](images/AzureLabs-Lab310-32.png)
 
 ## Chapter 4 - Importing the CustomVisionObjDetection Unity package
 
@@ -280,15 +280,15 @@ You can find the [Azure-MR-310 package that you need to download here](https://g
 
 1.  With the Unity dashboard in front of you, click on **Assets** in the menu at the top of the screen, then click on **Import Package > Custom Package**.
 
-    ![](images/AzureLabs-Lab310-33.png)
+    ![Screenshot that highlights the Custom Package menu option.](images/AzureLabs-Lab310-33.png)
 
 2.  Use the file picker to select the **Azure-MR-310.unitypackage** package and click **Open**. A list of components for this asset will be displayed to you. Confirm the import by clicking the **Import** button.
 
-    ![](images/AzureLabs-Lab310-34.png)
+    ![Screenshot that shows the list of asset components that you want to import.](images/AzureLabs-Lab310-34.png)
 
 3.  Once it has finished importing, you will notice that folders from the package have now been added to your **Assets** folder. This kind of folder structure is typical for a Unity project.
 
-    ![](images/AzureLabs-Lab310-35.png)
+    ![Screenshot that shows the contents of the Assets folder.](images/AzureLabs-Lab310-35.png)
 
     1.  The **Materials** folder contains the material used by the **Gaze Cursor**. 
 
@@ -304,7 +304,7 @@ You can find the [Azure-MR-310 package that you need to download here](https://g
 
 4.  Open the **Scenes** folder, in the **Project Panel**, and double-click on the **ObjDetectionScene**, to load the scene that you will use for this course.
 
-    ![](images/AzureLabs-Lab310-36.png)
+    ![Screenshot that shows the ObjDetectionScene in the Scenes folder.](images/AzureLabs-Lab310-36.png)
 
     > [!NOTE] 
     >  **No code is included**, you will write the code by following this course.
@@ -330,7 +330,7 @@ To create this class:
 
 1.  Right-click in the **Asset Folder**, located in the **Project Panel**, then click **Create** > **Folder**. Call the folder **Scripts**.
 
-    ![](images/AzureLabs-Lab310-37.png)
+    ![Screenshot that shows how to create the Scripts folder.](images/AzureLabs-Lab310-37.png)
 
 2.  Double-click on the newly created folder, to open it.
 
@@ -1234,21 +1234,21 @@ Now that you have written all of the code necessary for this project, is time to
 1.  Within the **Unity Editor**, in the **Hierarchy Panel**, select the **Main Camera**.
 2.  In the **Inspector Panel**, with the **Main Camera** selected, click on **Add Component**, then search for **SceneOrganiser** script and double-click, to add it.
 
-    ![](images/AzureLabs-Lab310-38.png)
+    ![Screenshot that shows the SceneOrganizer script.](images/AzureLabs-Lab310-38.png)
 
 3.  In the **Project Panel**, open the **Prefabs folder**, drag the **Label** prefab into the *Label* empty reference target input area, in the **SceneOrganiser** script that you have just added to the *Main Camera*, as shown in the image below:
 
-    ![](images/AzureLabs-Lab310-39.png)
+    ![Screenshot that shows the script that you added to the Main Camera.](images/AzureLabs-Lab310-39.png)
 
 4.  In the **Hierarchy Panel**, select the **GazeCursor** child of the **Main Camera**.
 5.  In the **Inspector Panel**, with the **GazeCursor** selected, click on **Add Component**, then search for **GazeCursor** script and double-click, to add it.
 
-    ![](images/AzureLabs-Lab310-40.png)
+    ![Screenshot that shows where you add the GazeCursor script.](images/AzureLabs-Lab310-40.png)
 
 6.  Again, in the **Hierarchy Panel**, select the **SpatialMapping** child of the **Main Camera**.
 7.  In the **Inspector Panel**, with the **SpatialMapping** selected, click on **Add Component**, then search for **SpatialMapping** script and double-click, to add it.
 
-    ![](images/AzureLabs-Lab310-41.png)
+    ![Screenshot that shows where you add the SpatialMapping script.](images/AzureLabs-Lab310-41.png)
 
 The remaining scripts thats you have not set will be added by the code in the **SceneOrganiser** script, during runtime.
 
@@ -1277,7 +1277,7 @@ You are now ready to build you application as a UWP Solution that you will be ab
 
 3.  Click on **Add Open Scenes**. This will add the currently open scene to the build.
 
-    ![](images/AzureLabs-Lab310-42.png)
+    ![Screenshot that highlights the Add Open Scenes button.](images/AzureLabs-Lab310-42.png)
 
 4.  Click **Build**. Unity will launch a *File Explorer* window, where you need to create and then select a folder to build the app into. Create that folder now, and name it **App**. Then with the **App** folder selected, click **Select Folder**.
 
@@ -1303,7 +1303,7 @@ You are now ready to build you application as a UWP Solution that you will be ab
 
 10. In the Solution Platform, select **x86, Remote Machine**. You will be prompted to insert the **IP address** of a remote device (the Microsoft HoloLens, in this case, which you noted).
 
-    ![](images/AzureLabs-Lab310-43.png)
+    ![Screenshot that shows where to insert the IP address.](images/AzureLabs-Lab310-43.png)
 
 11. Go to the **Build** menu and click on **Deploy Solution** to sideload the application to your HoloLens.
 
@@ -1324,7 +1324,7 @@ You are now ready to build you application as a UWP Solution that you will be ab
 
 Congratulations, you built a mixed reality app that leverages the Azure Custom Vision, Object Detection API, which can recognize an object from an image, and then provide an approximate position for that object in 3D space.
 
-![](images/AzureLabs-Lab310-00.png)
+![Screenshot that shows a mixed reality app that leverages the Azure Custom Vision, Object Detection API.](images/AzureLabs-Lab310-00.png)
 
 ## Bonus exercises
 
