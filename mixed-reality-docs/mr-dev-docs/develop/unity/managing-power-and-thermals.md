@@ -1,5 +1,5 @@
 ---
-title: Preventing the HoloLens 2 from overheating
+title: Managing power and thermals
 description: Learn how to subscribe and handle Power Thermal events within a Unity mixed reality app.
 author: chorkin
 ms.author: vinnietieto
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: Unity, power, performance, thermal, mitigation, mixed reality headset, windows mixed reality headset, virtual reality headset, overheating, heat, hot
 ---
 
-# Preventing the HoloLens 2 from overheating
+# Managing power and thermals
 
 When the HoloLens 2 is running in warm environments or with heavy performance requirements (CPU/GPU usage, peripheral usage, etc.), it may take actions to keep itself from overheating.
 
