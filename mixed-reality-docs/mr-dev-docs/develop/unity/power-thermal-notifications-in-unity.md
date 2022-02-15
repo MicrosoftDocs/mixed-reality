@@ -1,20 +1,19 @@
 ---
-title: Power Thermal Notifications in Unity
+title: Preventing the HoloLens 2 from overheating
 description: Learn how to subscribe and handle Power Thermal events within a Unity mixed reality app.
 author: chorkin
-ms.author: chorkin
-ms.date: 1/20/2022
+ms.author: vinnietieto
+ms.date: 2/14/2022
 ms.topic: article
-keywords: Unity, power, performance, thermal, mitigation, mixed reality headset, windows mixed reality headset, virtual reality headset
+keywords: Unity, power, performance, thermal, mitigation, mixed reality headset, windows mixed reality headset, virtual reality headset, overheating, heat, hot
 ---
 
-# Power thermal notifications in Unity
+# Preventing the HoloLens 2 from overheating
 
 When the HoloLens 2 is running in warm environments or with heavy performance requirements (CPU/GPU usage, peripheral usage, etc.), it may take actions to keep itself from overheating.
 
 These actions would include things like:
 
-* Adjusting frame rate(s)
 * Adjusting charging performance
 * Providing user feedback
 * Closing applications
@@ -63,28 +62,23 @@ The following is a breakdown of suggested mitigations an application can take ba
 
 #### CPU
 
-* [Reduce frame rate](https://docs.unity3d.com/ScriptReference/Application-targetFrameRate.html)
 * Adjust per-frame workload
   * [Physics operations](https://docs.unity3d.com/ScriptReference/MonoBehaviour.FixedUpdate.html)
-  * [Minimize background CPU cycles](https://docs.unity3d.com/2018.4/Documentation/Manual/OptimizingGraphicsPerformance.html)
+  * [Minimize background CPU cycles](https://docs.unity3d.com/Manual/OptimizingGraphicsPerformance.html)
 
 #### GPU
 
-* [Reduce frame rate](https://docs.unity3d.com/ScriptReference/Application-targetFrameRate.html)
 * Reduce resolution
   * [For rendering](https://docs.unity3d.com/ScriptReference/XR.XRSettings-renderViewportScale.html)
-  * [For PV camera](<under construction>)
+  * For PV camera (The link here is "under construction")
 * [Reduce scene complexity](https://docs.unity3d.com/ScriptReference/QualitySettings.SetQualityLevel.html)(number of triangles and texture)
-* Reduce field of view (FOV)
-* Foveation<under construction--possibly remove?>
+* App can reduce FOV to offset content blurriness
 * [Reduce PhotoVideoCamera frame processing](../advanced-concepts/locatable-camera-overview.md#hololens-2)
 
 #### DRAM
 
 * [Texture complexity](https://docs.unity3d.com/ScriptReference/QualitySettings.SetQualityLevel.html)
-* Reduce frame rate
 * [Reduce resolution](https://docs.unity3d.com/ScriptReference/XR.XRSettings-renderViewportScale.html)
-
 
 #### Network
 
@@ -95,7 +89,8 @@ The following is a breakdown of suggested mitigations an application can take ba
 #### Battery
 
 * Move to a cooler environment
-* Use device without a charger
+* Use device without a charger. 
+* [Avoid running on a charger with a below-50% charge](https://docs.unity3d.com/ScriptReference/SystemInfo-batteryStatus.html)
 
 #### Display
 
@@ -105,8 +100,8 @@ The following is a breakdown of suggested mitigations an application can take ba
 
 #### PhotoVideoCamera
 * [Overview](../advanced-concepts/locatable-camera-overview.md#hololens-2)
-* Reduce frame rate
 * Reduce resolution
+* Reduce app post-processing
 * Stop using the PhotoVideoCamera
 
 ## Implementation use cases
