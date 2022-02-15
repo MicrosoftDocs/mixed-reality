@@ -420,7 +420,7 @@ Manages Wi-Fi connections on the HoloLens.
 ![PowerThermalSDK Test page in Windows Device Portal on Microsoft HoloLens](images/windows-device-portal-power-thermal-sdk-test-page.png)<br>
 *PowerThermalSDK Test page in Windows Device Portal on Microsoft HoloLens*
 
-For use with the [PowerThermalNotification SDK](..\unity\power-thermal-notifications-in-unity.md)
+For use with the PowerThermalNotification SDK. See [Managing power and thermals](..\unity\managing-power-and-thermals.md).
 
 Use this page to monitor and control the mitigation levels and thermal scores used with the SDK.  The page also provides details on which peripherals are having their mitigations suppressed by active applications.
 
