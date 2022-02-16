@@ -384,7 +384,7 @@ Here's a small snippet:
 
 ```cs
 PowerThermalNotification p = PowerThermalNotification.GetForCurrentProcess();
-PowerThermalPeripheralFlags requestedFlags = PeripheralFlags.Cpu | PeripheralFlags.PhotoVideoCamera;
+PowerThermalPeripheralFlags requestedFlags = PowerThermalPeripheralFlags.Cpu | PowerThermalPeripheralFlags.PhotoVideoCamera;
 
 //You can do this to set the property explicitly
 p.SuppressedPlatformMitigationForPeripherals = requestedFlags;
