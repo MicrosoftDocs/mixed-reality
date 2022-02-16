@@ -66,17 +66,19 @@ The following is a breakdown of suggested mitigations an application can take ba
 
 #### GPU
 
-* Reduce resolution
-  * [For rendering](https://docs.unity3d.com/ScriptReference/XR.XRSettings-renderViewportScale.html)
-  * For PV camera (The link here is "under construction")
+* [Reduce render resolution](https://docs.unity3d.com/ScriptReference/XR.XRSettings-renderViewportScale.html)
+  * App can then reduce Field of View (FOV) to offset content blurriness
 * [Reduce scene complexity](https://docs.unity3d.com/ScriptReference/QualitySettings.SetQualityLevel.html)(number of triangles and texture)
-* App can reduce FOV to offset content blurriness
-* [Reduce PhotoVideoCamera frame processing](../advanced-concepts/locatable-camera-overview.md#hololens-2)
+* [Reduce photo/video camera processing](../advanced-concepts/locatable-camera-overview.md#hololens-2)
+  * Reduce camera resolution
+  * Reduce camera frame rate
+  * Reduce app post-processing of camera images
+* Stop using the photo/video camera
 
 #### DRAM
 
 * [Texture complexity](https://docs.unity3d.com/ScriptReference/QualitySettings.SetQualityLevel.html)
-* [Reduce resolution](https://docs.unity3d.com/ScriptReference/XR.XRSettings-renderViewportScale.html)
+* [Reduce render resolution](https://docs.unity3d.com/ScriptReference/XR.XRSettings-renderViewportScale.html)
 
 #### Network
 
@@ -96,11 +98,11 @@ The following is a breakdown of suggested mitigations an application can take ba
 * Use low-power colors (for example, green)
 * [Dim the display](/uwp/api/windows.graphics.display.brightnessoverride)
 
-#### PhotoVideoCamera
+#### Photo/video camera
 * [Overview](../advanced-concepts/locatable-camera-overview.md#hololens-2)
-* Reduce resolution
-* Reduce app post-processing
-* Stop using the PhotoVideoCamera
+* Reduce camera resolution
+* Reduce camera frame rate
+* Reduce app post-processing of camera images
 
 ## Implementation use cases
 
