@@ -384,14 +384,14 @@ Here's a small snippet:
 
 ```cs
 PowerThermalNotification p = PowerThermalNotification.GetForCurrentProcess();
-PeripheralFlags requestedFlags = PeripheralFlags.Cpu | PeripheralFlags.PhotoVideoCamera;
+PowerThermalPeripheralFlags requestedFlags = PeripheralFlags.Cpu | PeripheralFlags.PhotoVideoCamera;
 
 //You can do this to set the property explicitly
 p.SuppressedPlatformMitigationForPeripherals = requestedFlags;
 
 //Or you can do this to manipulate the property mask. 
 //This specific example clears the CPU, leaving the PhotoVideoCamera suppressed
-p.SuppressPlatformMitigation(PeripheralFlags.Cpu, false);
+p.SuppressPlatformMitigation(PowerThermalPeripheralFlags.Cpu, false);
 ```
 
 > [!NOTE]
