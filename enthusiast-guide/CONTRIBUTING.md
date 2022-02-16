@@ -50,7 +50,7 @@ The publishing system is tied to GitHub, so these steps are important. You'll be
 
 After you submit changes (via a pull request), they will be reviewed by a member of the documentation team. If your request is accepted, updates are published to [https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide](/windows/mixed-reality/enthusiast-guide).
 
-*For internal review only, you can see your changes at [https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide](https://review.docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/?branch=master).
+*For internal review only, you can see your changes at [https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide](/windows/mixed-reality/enthusiast-guide/?branch=main).
 
 ### Updating Metadata
 
@@ -88,9 +88,9 @@ If you add a redirect, be sure to delete the old file as well.
 
 Use the following workflow to *create new articles* in the documentation repo via GitHub in a web browser:
 
-1. Create a fork off the MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide 'master' branch (using the **Fork** button in the top right).
+1. Create a fork off the MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide 'main' branch (using the **Fork** button in the top right).
 
-   ![Fork the master branch.](images/forkbranch.png)
+   ![Fork the Main branch.](images/forkbranch.png)
 2. In the "mixed-reality/enthusiast-guide" folder, select **Create new file** in the top right.
 3. Create a page name for the article (use hyphens instead of spaces and don't use punctuation or apostrophes) and append ".md"
 
@@ -117,15 +117,15 @@ Use the following workflow to *create new articles* in the documentation repo vi
 6. Write article content using [Markdown basics](#markdown-basics).
 7. Add a `## See also` section at the bottom of the article with links to other relevant articles.
 8. When finished, select **Commit new file**.
-9. Select **New pull request** and merge your fork's 'master' branch into MicrosoftDocs/mixed-reality/enthusiast-guide 'master' (make sure the arrow is pointing the correct way).
+9. Select **New pull request** and merge your fork's 'main' branch into MicrosoftDocs/mixed-reality/enthusiast-guide 'main' (make sure the arrow is pointing the correct way).
 
    ![Create pull request from your fork into MicrosoftDocs/mixed-reality/enthusiast-guide](images/pr_to_master.PNG)
 
 ## Working with Branches
 
-The [Mixed Reality Enthusiast Guide GitHub repository](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide) utilizes two main parent branches: [Master](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/master), this content can be reviewed on the [staging site](https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide), and [Live](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/live), for content appearing on the [live site](/windows/mixed-reality/enthusiast-guide).
+The [Mixed Reality Enthusiast Guide GitHub repository](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide) utilizes two main parent branches: [Main](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/main), this content can be reviewed on the [staging site](/windows/mixed-reality/enthusiast-guide), and [Live](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/live), for content appearing on the [live site](/windows/mixed-reality/enthusiast-guide).
 
-When making contributions, please submit your Pull Request (PR) to the **Master** branch. This branch can be viewed on the staging site and should only contain contributions that are ready to be published live. You may also create and submit a branch with your own unique branch name which can be selected and viewed in the staging site. (The **Live** branch is only allowed for use by the content administrators.)
+When making contributions, please submit your Pull Request (PR) to the **Main** branch. This branch can be viewed on the staging site and should only contain contributions that are ready to be published live. You may also create and submit a branch with your own unique branch name which can be selected and viewed in the staging site. (The **Live** branch is only allowed for use by the content administrators.)
 
 ## Markdown basics
 
@@ -151,7 +151,7 @@ You’ll need to upload your images to the "mixed-reality-docs/images" folder in
 >1. Forked the MicrosoftDocs/mixed-reality repo.
 >2. Edited the article in your fork.
 >3. Uploaded the images you're referencing in your article to the "mixed-reality-docs/images" folder in your fork.
->4. Created a **pull request** to merge your fork into the MicrosoftDocs/mixed-reality 'master' branch.
+>4. Created a **pull request** to merge your fork into the MicrosoftDocs/mixed-reality 'main' branch.
 >
 >To learn how to set up your own forked repo, follow the instructions for [creating a new article](#creating-a-new-article).
 
@@ -162,7 +162,7 @@ While editing in GitHub via a web browser, you can select the **Preview** tab ne
 >[!NOTE]
 >Previewing your changes on review.docs.microsoft.com is only available to Microsoft employees
 
-Microsoft employees: once your contributions have been merged into the 'master' branch, you can review the content before it goes public at https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide?branch=master. Find your article using the table of contents in the left column.
+Microsoft employees: once your contributions have been merged into the 'main' branch, you can review the content before it goes public at `https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide?branch=main`. Find your article using the table of contents in the left column.
 
 ## Editing in the browser vs. editing with a desktop client
 
@@ -202,7 +202,7 @@ Use the following workflow to make changes to the documentation with Visual Stud
 >All the guidance for [editing](#how-to-make-a-change) and [creating](#creating-a-new-article) articles, and the [basics of editing Markdown](#markdown-basics), from above applies when using Visual Studio Code as well.
 
 1. Make sure your cloned fork is up to date with the official repo.
-   1. In a web browser, create a pull request to sync recent changes from other contributors in MicrosoftDocs/mixed-reality 'master' to your fork (make sure the arrow is pointing the right way).
+   1. In a web browser, create a pull request to sync recent changes from other contributors in MicrosoftDocs/mixed-reality 'main' to your fork (make sure the arrow is pointing the right way).
       
       ![Sync changes from MicrosoftDocs/mixed-reality to your fork](images/sync_repos.PNG)
    2. In Visual Studio Code, select the sync button to sync your freshly updated fork to the local clone.
@@ -219,7 +219,7 @@ Use the following workflow to make changes to the documentation with Visual Stud
    4. Select the **sync** button to sync your changes back to origin (your fork on GitHub).
       
       ![Click the sync button](images/sync_back.png)
-3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/mixed-reality 'master' (make sure the arrow is pointing the correct way).
+3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/mixed-reality 'main' (make sure the arrow is pointing the correct way).
 
    ![Create pull request from your fork into MicrosoftDocs/mixed-reality](images/pr_to_master.PNG)
 

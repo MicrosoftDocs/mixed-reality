@@ -1,16 +1,16 @@
 ---
-title: Writing a Holographic Remoting remote app uing the OpenXR API
+title: Writing a Holographic Remoting remote app using the OpenXR API
 description: Learn how to stream remote content rendered on a remote machine to HoloLens 2 with Holographic Remoting apps with OpenXR. 
 author: florianbagarmicrosoft
-ms.author: v-vtieto
+ms.author: vinnietieto
 ms.date: 9/3/2021
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windows mixed reality headset, virtual reality headset, NuGet
 ---
 
-# Writing a Holographic Remoting remote app using the OpenXR API
+# Writing a Holographic Remoting Remote app using the OpenXR API
 
-If you're new to Holographic Remoting, you may want to [read our overview](../advanced-concepts/holographic-remoting-overview.md).
+If you're new to Holographic Remoting, you may want to [read our overview](holographic-remoting-overview.md).
 
 >[!IMPORTANT]
 >This document describes the creation of a remote application for HoloLens 2 and Windows Mixed Reality headsets using the [OpenXR API](../native/openxr.md). Remote applications for **HoloLens (1st gen)** must use NuGet package version **1.x.x**. This implies that remote applications written for HoloLens 2 are not compatible with HoloLens 1 and vice versa. The documentation for HoloLens 1 can be found [here](add-holographic-remoting.md).
@@ -29,6 +29,7 @@ A good starting point is a working OpenXR based Desktop or UWP app. For details 
 ## Get the Holographic Remoting NuGet package
 
 The following steps are required to add the NuGet package to a project in Visual Studio.
+
 1. Open the project in Visual Studio.
 2. Right-click the project node and select **Manage NuGet Packages...**
 3. In the panel that appears, select **Browse** and then search for "Holographic Remoting".
@@ -75,7 +76,7 @@ The first actions a typical OpenXR app should take are select OpenXR extensions 
 
 ## Connect to the device
 
-After your remote app has created the XrInstance and queried the XrSystemId via xrGetSystem a connection to the player device can be established.
+After your remote app has created the XrInstance and queried the XrSystemId via xrGetSystem, a connection to the player device can be established.
 
 > [!WARNING]
 > The Holographic Remoting OpenXR runtime is only able to provide device specific data such as view configurations or environment blend modes after a connection has been established. ```xrEnumerateViewConfigurations```, ```xrEnumerateViewConfigurationViews```, ```xrGetViewConfigurationProperties```, ```xrEnumerateEnvironmentBlendModes```, and ```xrGetSystemProperties``` will give you default values, matching what you would typically get if you connect to a player running on a HoloLens 2, before being fully connected.
@@ -94,6 +95,7 @@ xrRemotingSetContextPropertiesMSFT(m_instance.Get(), m_systemId, &contextPropert
 ```
 
 The connection can be done in one of two ways.
+
 1) The remote app connects to the player running on the device.
 2) The player running on the device connects to the remote app.
 
@@ -126,6 +128,7 @@ xrRemotingGetConnectionStateMSFT(m_instance.Get(), m_systemId, &connectionState,
 ```
 
 Available connection states are:
+
 - XR_REMOTING_CONNECTION_STATE_DISCONNECTED_MSFT
 - XR_REMOTING_CONNECTION_STATE_CONNECTING_MSFT
 - XR_REMOTING_CONNECTION_STATE_CONNECTED_MSFT
@@ -133,13 +136,14 @@ Available connection states are:
 > [!IMPORTANT]
 > ```xrRemotingConnectMSFT``` or ```xrRemotingListenMSFT``` must be called before trying to create a XrSession via xrCreateSession. If you try to create a XrSession while the connection state is ```XR_REMOTING_CONNECTION_STATE_DISCONNECTED_MSFT``` the session creation will succeed but the session state will immediately transition to XR_SESSION_STATE_LOSS_PENDING.
 
-Holographic Remoting's implementation of ```xrCreateSession``` supports waiting for a connection to be established. You can call ```xrRemotingConnectMSFT``` or ```xrRemotingListenMSFT``` immediately followed by a call to, which will block and wait for a connection to be established. The timeout is fixed to 10 seconds. If a connection can be established within this time the XrSession creation will succeed and the session state will transition to XR_SESSION_STATE_READY. In case no connection can be established the session creation also succeeds but immediately transitions to XR_SESSION_STATE_LOSS_PENDING.
+Holographic Remoting's implementation of ```xrCreateSession``` supports waiting for a connection to be established. You can call ```xrRemotingConnectMSFT``` or ```xrRemotingListenMSFT``` immediately followed by a call to, which will block and wait for a connection to be established. The timeout is fixed to 10 seconds. If a connection can be established within this time, the XrSession creation will succeed and the session state will transition to XR_SESSION_STATE_READY. In case no connection can be established the session creation also succeeds but immediately transitions to XR_SESSION_STATE_LOSS_PENDING.
 
 In general, the connection state is couple with the XrSession state. Any change to the connection state also affects the session state. For instance, if the connection state switches from `XR_REMOTING_CONNECTION_STATE_CONNECTED_MSFT` to ```XR_REMOTING_CONNECTION_STATE_DISCONNECTED_MSFT``` the session state will transition to XR_SESSION_STATE_LOSS_PENDING as well.
 
 ## Handling Remoting specific events
 
 The Holographic Remoting OpenXR runtime exposes three events, which are important to monitor the state of a connection.
+
 1) ```XR_TYPE_REMOTING_EVENT_DATA_CONNECTED_MSFT```: Triggered when a connection to the device has been successfully established.
 2) ```XR_TYPE_REMOTING_EVENT_DATA_DISCONNECTED_MSFT```: Triggered if an established connection is closed or a connection couldn't be established.
 3) ```XR_TYPE_REMOTING_EVENT_DATA_LISTENING_MSFT```: When listening for incoming connections starts.
@@ -233,10 +237,11 @@ After the remote app is notified about a recognized phrase, it can retrieve the 
 ## Optional: Coordinate System Synchronization
 
 Starting with version [2.7.0](holographic-remoting-version-history.md#v2.7.0), coordinate system synchronization can be used to align spatial data between the player and remote app.
-For more information, see [Coordinate System Synchronization with Holographic Remoting Overview](../advanced-concepts/holographic-remoting-coordinate-system-synchronization.md).
+For more information, see [Coordinate System Synchronization with Holographic Remoting Overview](holographic-remoting-coordinate-system-synchronization.md).
 
 ## See Also
-* [Holographic Remoting overview](../advanced-concepts/holographic-remoting-overview.md)
+
+* [Holographic Remoting overview](holographic-remoting-overview.md)
 * [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)
 * [Establishing a secure connection with Holographic Remoting](holographic-remoting-secure-connection.md)
 * [Holographic Remoting troubleshooting and limitations](holographic-remoting-troubleshooting.md)

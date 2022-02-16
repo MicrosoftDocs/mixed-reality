@@ -22,8 +22,8 @@ The performant framerate values for each target platform are listed below.
 | Platform | Target Frame Rate |
 |----------|-------------------|
 | [HoloLens](/hololens/hololens1-hardware) | 60 FPS |
-| [Windows Mixed Reality Ultra PCs](../../discover/immersive-headset-hardware-details.md) | 90 FPS |
-| [Windows Mixed Reality PCs](../../discover/immersive-headset-hardware-details.md) | 60 FPS |
+| [Windows Mixed Reality Ultra PCs](/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details) | 90 FPS |
+| [Windows Mixed Reality PCs](/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details) | 60 FPS |
 
 The framework below outlines best practices for hitting target frame rates. For tips on measuring and improving framerate in the Unity environment, we recommend that you read the [performance recommendations for Unity article](../unity/performance-recommendations-for-unity.md) 
 

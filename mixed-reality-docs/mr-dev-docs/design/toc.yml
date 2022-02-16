@@ -2,44 +2,26 @@
   href: design.md
 - name: About this design guidance
   href: about-this-design-guidance.md
-- name: Core concepts
+- name: Structural Elements
   items:
   - name: Overview
     href: core-concepts-landingpage.md
   - name: App model
     href: app-model.md
-  - name: App views
-    href: app-views.md
-  - name: Comfort
-    href: comfort.md
   - name: Coordinate systems
     href: coordinate-systems.md
-  - name: Eye tracking
-    href: eye-tracking.md
-  - name: Holographic frame
-    href: holographic-frame.md
   - name: Room scan visualization
     href: room-scan-visualization.md
+  - name: Spatial mapping
+    href: spatial-mapping.md    
   - name: Scene understanding
     href: scene-understanding.md
   - name: Spatial anchors
-    href: spatial-anchors.md
-  - name: Sound
-    href: spatial-sound.md
-  - name: Spatial mapping
-    href: spatial-mapping.md
-  - name: Spectator view
-    href: spectator-view.md
-  - name: System gesture
-    href: system-gesture.md
-  - name: Types of Mixed Reality apps
-    href: types-of-mixed-reality-apps.md
-  - name: Designing content for holographic display
-    href: designing-content-for-holographic-display.md
-  - name: Shared experiences in Mixed Reality
-    href: ../design/shared-experiences-in-mixed-reality.md    
-- name: Interaction models
+    href: spatial-anchors.md    
+- name: Interactions
   items:
+  - name: System gesture
+    href: system-gesture.md  
   - name: Instinctual interactions
     href: interaction-fundamentals.md
   - name: Hands and motion controllers model
@@ -58,44 +40,54 @@
         href: hands-free.md
       - name: Voice input
         href: voice-input.md
-      - name: Gaze and dwell
-        items: 
-          - name: Gaze and dwell
-            href: gaze-and-dwell.md
-          - name: Eye-gaze and dwell
-            href: gaze-and-dwell-eyes.md
-          - name: Head-gaze and dwell
-            href: gaze-and-dwell-head.md
-  - name: Gaze and commit
-    items:
-      - name: Gaze and commit
-        href: gaze-and-commit.md
-      - name: Eye-gaze and commit
-        href: gaze-and-commit-eyes.md
-      - name: Head-gaze and commit 
-        href: gaze-and-commit-head.md
-  - name: Eye-gaze-based interaction
-    href: eye-gaze-interaction.md
+  - name: Eye-based interactions
+    items:  
+    - name: Eye tracking overview
+      href: eye-tracking.md
+    - name: Eye-gaze-based interaction
+      href: eye-gaze-interaction.md        
+    - name: Gaze and dwell
+      href: gaze-and-dwell.md
+    - name: Eye-gaze and dwell
+      href: gaze-and-dwell-eyes.md
+    - name: Head-gaze and dwell
+      href: gaze-and-dwell-head.md
+    - name: Gaze and commit
+      href: gaze-and-commit.md
+    - name: Eye-gaze and commit
+      href: gaze-and-commit-eyes.md
+    - name: Head-gaze and commit 
+      href: gaze-and-commit-head.md
 - name: UX elements
   items:
   - name: Overview
     href: app-patterns-landingpage.md
-  - name: Foundational elements
+  - name: Visuals
     items: 
+      - name: Holographic frame
+        href: holographic-frame.md
+      - name: Designing content for holographic display
+        href: designing-content-for-holographic-display.md
+      - name: App views
+        href: app-views.md
+      - name: Comfort
+        href: comfort.md                     
       - name: Color, light, and materials
         href: color-light-and-materials.md
       - name: Scale
         href: scale.md
       - name: Typography
         href: typography.md
-      - name: Sound
-        items: 
-          - name: Sound 
-            href: spatial-sound-design.md
-          - name: Case study - Holotour
-            href: case-study-spatial-sound-design-for-holotour.md
-          - name: Case study - Roboraid
-            href: case-study-using-spatial-sound-in-roboraid.md
+  - name: Spatial sound
+    items:
+      - name: Spatial sound overview
+        href: spatial-sound.md
+      - name: Spatial sound best practices 
+        href: spatial-sound-design.md
+      - name: Case study - Holotour
+        href: case-study-spatial-sound-design-for-holotour.md
+      - name: Case study - Roboraid
+        href: case-study-using-spatial-sound-in-roboraid.md
   - name: Controls and behaviors
     items: 
       - name: Cursors
@@ -150,6 +142,8 @@
     href: https://github.com/microsoft/MixedRealityDesignLabs_Unity
   - name: Microsoft Maquette
     href: maquette.md
+  - name: 3D models
+    href: 3d-modeling.md    
   - name: Asset creation process
     href: asset-creation-process.md
   - name: Design your own immersive environments
@@ -158,3 +152,9 @@
     href: figma-toolkit.md
   - name: Figma Bridge for Unity
     href: figma-unity-bridge.md
+- name: Sharing
+  items:
+  - name: Spectator View
+    href: spectator-view.md
+  - name: Shared experiences
+    href: shared-experiences-in-mixed-reality.md

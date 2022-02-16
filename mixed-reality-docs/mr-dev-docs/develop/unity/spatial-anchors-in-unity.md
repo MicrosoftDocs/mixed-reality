@@ -1,9 +1,9 @@
 ---
 title: World locking and spatial anchors in Unity
 description: Learn how to use World Locking Tools and spatial anchors in Unity mixed reality applications.
-author: hferrone
-ms.author: v-hferrone
-ms.date: 04/7/2021
+author: fast-slow-still
+ms.author: vinnietieto
+ms.date: 02/09/2022
 ms.topic: article
 keywords: Unity, spatial anchors, anchor store, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset, world locking tools, holograms
 ---
@@ -22,9 +22,9 @@ In contrast, an untethered mixed reality device such as HoloLens has a dynamic s
 
 For example, the headset may currently believe two locations in the world to be 4 meters apart, and then later refine that understanding, learning that the locations are in fact 3.9 meters apart. If those holograms had initially been placed 4 meters apart in a single rigid coordinate system, one of them would then always appear 0.1 meters off from the real world.
 
-You can manually place **spatial anchors** in Unity to maintain a hologram's position in the physical world when the user is mobile - however, this sacrifices the self-consistency within the virtual world. Different anchors are constantly moving in relation to one another, and are also moving through the global coordinate space. In this scenario, simple tasks like layout become difficult and physics simulation problematic.
+You can manually place **spatial anchors** in Unity to maintain a hologram's position in the physical world when the user is mobile. However, this sacrifices the self-consistency within the virtual world. Different anchors are constantly moving in relation to one another, and are also moving through the global coordinate space. In this scenario, simple tasks like layout become difficult. Physics simulation can also be problematic.
 
-**World Locking Tools** gets you the best of both worlds, stabilizing a single rigid coordinate system using an internal supply of spatial anchors spread throughout the virtual scene as the user moves around. The tools analyze the coordinates of the camera and those spatial anchors every frame. Instead of changing the coordinates of everything in the world to compensate for the corrections in the coordinates of the user's head, the tools just fix the head's coordinates instead.
+**World Locking Tools** (WLT) gets you the best of both worlds, stabilizing a single rigid coordinate system using an internal supply of spatial anchors spread throughout the virtual scene as the user moves around. WLT analyzes the coordinates of the camera and those spatial anchors every frame. Instead of changing the coordinates of everything in the world to compensate for the corrections in the coordinates of the user's head, WLT just fixes the head's coordinates instead.
 
 ## Choosing your world locking approach
 
@@ -66,10 +66,10 @@ Or jump to Mixed Reality platform capabilities and APIs:
 You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.
 
 ## See Also
-* [World Locking Tools introduction](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/IntroFAQ.html)
-* [Quickstart guides](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/QuickStart.html)
+* [World Locking Tools introduction](/mixed-reality/world-locking-tools/documentation/introfaq)
+* [Quickstart guides](/world-locking-tools/documentation/howtos/quickstart.md)
 * [Tutorials](https://microsoft.github.io/MixedReality-WorldLockingTools-Samples/Tutorial/01_Minimal/01_Minimal.html)
-* [Samples](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/SampleApplications.html)
+* [Samples](/mixed-reality/world-locking-tools/documentation/howtos/sampleapplications)
 * [Spatial anchor persistence](../../design/coordinate-systems.md#spatial-anchor-persistence)
 * <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * <a href="/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Azure Spatial Anchors SDK for Unity</a>

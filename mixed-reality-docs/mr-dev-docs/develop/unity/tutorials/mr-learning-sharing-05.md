@@ -109,7 +109,7 @@ If you now build and deploy the Unity project to two devices, you can achieve sp
 7. On device 2: Press the **Get Azure Anchor** button (connects to the Azure resource to retrieve the anchor information for the shared anchor ID, then moves the TableAnchor object to the location where the anchor was created with the device 1)
 
 > [!TIP]
-> If you don't have access to two HoloLens devices, you may follow the [Building Azure Spatial Anchors for mobile devices](mr-learning-asa-05.md) to deploy the project to your mobile device.
+> If you don't have access to two HoloLens devices, you may follow the [Building Azure Spatial Anchors for mobile devices](/learn/modules/azure-spatial-anchors-tutorials/8-azure-spatial-anchors-for-android-ios) to deploy the project to your mobile device.
 
 ## Congratulations
 
