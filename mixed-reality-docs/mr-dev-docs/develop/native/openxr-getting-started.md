@@ -35,7 +35,7 @@ To start developing OpenXR applications for immersive Windows Mixed Reality head
 
 That's it!  The Windows Mixed Reality OpenXR runtime is installed and made active automatically for all Windows Mixed Reality users.  The Microsoft Store then keeps the runtime up to date.
 
-If you've been using multiple VR headsets on your PC, keep in mind that the active OpenXR runtime may periodically change.  To reactivate the Windows Mixed Reality OpenXR Runtime, on the **Start** menu, launch "Mixed Reality Portal" and then select "Fix it" at the top of the window.  If that button is missing, the OpenXR runtime is already active.<br>
+If you've been using multiple VR headsets on your PC, keep in mind that the active OpenXR runtime may be changed by another vendor's system software.  To reactivate the Windows Mixed Reality OpenXR Runtime, on the **Start** menu, launch "Mixed Reality Portal" and then select "Fix it" at the top of the window.  If that button is missing, the OpenXR runtime is already active.<br>
 
 ## Getting the OpenXR Developer Tools for Windows Mixed Reality
 
