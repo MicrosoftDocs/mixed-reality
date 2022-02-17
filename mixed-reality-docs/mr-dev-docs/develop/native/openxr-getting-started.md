@@ -5,7 +5,7 @@ author: thetuvix
 ms.author: vinnietieto
 ms.date: 10/14/2021
 ms.topic: article
-keywords: OpenXR, Khronos, BasicXRApp, Windows Mixed Reality, OpenXR Tools, DirectX, native, native app, custom engine, middleware, getting started, 101, preview extensions, OpenXR runtime version, OpenXR runtime
+keywords: OpenXR, Khronos, BasicXRApp, Windows Mixed Reality, OpenXR Developer Tools, OpenXR Tools, DirectX, native, native app, custom engine, middleware, getting started, 101, preview extensions, OpenXR runtime version, OpenXR runtime
 ---
 
 # Getting started with OpenXR
