@@ -177,6 +177,8 @@
         href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
       - name: Mixed Reality native interop in Unity
         href: unity/unity-xrdevice-advanced.md
+      - name: Managing power and thermals
+        href: unity/managing-power-and-thermals.md
       - name: Moving Platforms in Unity
         href: unity/moving-platform-unity.md
       - name: Use PC resources to power your app
