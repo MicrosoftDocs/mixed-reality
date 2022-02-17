@@ -90,7 +90,7 @@ The following is a breakdown of suggested mitigations an application can take ba
 
 * Move to a cooler environment
 * Use device without a charger
-* [Avoid running on a charger with a below-50% charge](https://docs.unity3d.com/ScriptReference/SystemInfo-batteryStatus.html)
+* Avoid [running on a charger](https://docs.unity3d.com/ScriptReference/SystemInfo-batteryStatus.html) with a [below-50% charge](https://docs.unity3d.com/ScriptReference/SystemInfo-batteryLevel.html)
 
 #### Display
 
@@ -103,6 +103,7 @@ The following is a breakdown of suggested mitigations an application can take ba
 * Reduce camera resolution
 * Reduce camera frame rate
 * Reduce app post-processing of camera images
+* Stop using the photo/video camera
 
 ## Implementation use cases
 
