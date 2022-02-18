@@ -5,7 +5,7 @@ author: thetuvix
 ms.author: vinnietieto
 ms.date: 10/14/2021
 ms.topic: article
-keywords: OpenXR, Khronos, BasicXRApp, Windows Mixed Reality, OpenXR Developer Tools, DirectX, native, native app, custom engine, middleware, getting started, 101, preview extensions, OpenXR runtime version, system status
+keywords: OpenXR, Khronos, BasicXRApp, Windows Mixed Reality, OpenXR Developer Tools, OpenXR Tools, DirectX, native, native app, custom engine, middleware, getting started, 101, preview extensions, OpenXR runtime version, OpenXR runtime
 ---
 
 # Getting started with OpenXR
@@ -21,7 +21,7 @@ To start developing OpenXR applications for HoloLens 2:
 
 That's it! The OpenXR API runtime is preinstalled on HoloLens 2 devices, and you'll receive automatic updates through the Store.
 
-To make sure you've got the latest OpenXR runtime with all [extensions](openxr.md#roadmap) present, you can launch the **Store** app from the HoloLens device or emulator.  Open the menu in the upper-right of the Store app, select **Downloads and updates**, and choose **Get updates**.  
+To make sure you've got the latest OpenXR runtime with all [extensions](openxr.md#roadmap) present, you can launch the **Store** app from the HoloLens device or emulator.  Open the menu in the upper-right of the Store app, select **Downloads and updates**, and choose **Get updates**.
 
 > [!NOTE]
 > If you're using the emulator, the emulator image will reset each time you start it, and so your best bet is to just make sure that you have [the latest version of the HoloLens 2 emulator image](../advanced-concepts/using-the-hololens-emulator.md).
@@ -37,15 +37,15 @@ That's it!  The Windows Mixed Reality OpenXR runtime is installed and made activ
 
 If you've been using multiple VR headsets on your PC, keep in mind that the active OpenXR runtime may be changed by another vendor's system software.  To reactivate the Windows Mixed Reality OpenXR Runtime, on the **Start** menu, launch "Mixed Reality Portal" and then select "Fix it" at the top of the window.  If that button is missing, the OpenXR runtime is already active.<br>
 
-## Getting the OpenXR Developer Tools for Windows Mixed Reality
+## Getting the OpenXR Tools for Windows Mixed Reality
 
-If you're developing OpenXR applications for HoloLens 2 or PC VR, you might find this <a href="https://www.microsoft.com/store/productId/9n5cvvl23qbt" target="_blank">OpenXR Developer Tools for Windows Mixed Reality</a> app useful.   It provides a demo of various OpenXR features and a System Status page that contains key information about the active runtime and current headset.
+If you're developing OpenXR applications for HoloLens 2 or PC VR, you might find this <a href="https://www.microsoft.com/store/productId/9n5cvvl23qbt" target="_blank">OpenXR Tools for Windows Mixed Reality</a> app useful.   It provides a demo of various OpenXR features and an OpenXR Runtime page that contains key information about the active runtime and current headset.
 
-To find and install the Developer Tools app, on your HoloLens 2, go to the Store app and search for "OpenXR."
+To find and install the OpenXR Tools app, on your HoloLens 2, go to the Store app and search for "OpenXR."
 
-When using the HoloLens 2 emulator, the easiest way to install the OpenXR Developer Tools for Windows Mixed Reality is through the [Windows Device Portal](../advanced-concepts/using-the-windows-device-portal.md). In the Portal, navigate to the "OpenXR" page and then, under **Developer Features**, select the **Install** button. This also works on physical HoloLens 2 devices.
+When using the HoloLens 2 emulator, the easiest way to install the OpenXR Tools for Windows Mixed Reality is through the [Windows Device Portal](../advanced-concepts/using-the-windows-device-portal.md). In the Portal, navigate to the "OpenXR" page and then, under **Developer Features**, select the **Install** button. This also works on physical HoloLens 2 devices.
 
-![OpenXR Developer Tools for Windows Mixed Reality app](images/mixed-reality-openxr-developer-tools.png)
+![OpenXR Tools for Windows Mixed Reality app](images/mixed-reality-openxr-tools.png)
 
 ## Exploring the OpenXR API and sample app
 
@@ -103,11 +103,11 @@ If you're interested to try out the available `MSFT_preview` extensions, go thro
 
 To then activate preview extension support on your target HoloLens 2 or desktop PC:
   1. To make sure you've got the latest OpenXR runtime with all [extensions](openxr.md#roadmap) present, launch the **Store** app from within the target device or emulator, open the menu in the upper-right, select **Downloads and updates** and choose **Get updates**.
-  2. Install the <a href="https://www.microsoft.com/store/productId/9n5cvvl23qbt" target="_blank">OpenXR Developer Tools for Windows Mixed Reality app</a> from the Microsoft Store onto the target device and run it.
-  3. Navigate to the **Developer Settings** tab and enable **Use latest preview OpenXR runtime**.  This enables the preview runtime on your device, which has preview extensions activated.
-     ![OpenXR Developer Tools for Windows Mixed Reality app Developer Settings tab](images/mixed-reality-openxr-developer-tools-settings.png)
-  4. Confirm the **Runtime version** shown on the **System Status** tab of the [OpenXR Developer Tools for Windows Mixed Reality](openxr-getting-started.md#getting-the-openxr-developer-tools-for-windows-mixed-reality) matches the required version of the preview extensions you plan to try.  If so, you should see the extension in the **Extensions** list.  Once a stable extension is available, its preview extension will be removed.<br />
-     ![OpenXR Developer Tools for Windows Mixed Reality app System Status tab](images/mixed-reality-openxr-developer-tools-status.png)
+  2. Install the <a href="https://www.microsoft.com/store/productId/9n5cvvl23qbt" target="_blank">OpenXR Tools for Windows Mixed Reality app</a> from the Microsoft Store onto the target device and run it.
+  3. Navigate to the **Settings** tab and enable **Use latest preview OpenXR runtime**.  This enables the preview runtime on your device, which has preview extensions activated.
+     ![OpenXR Tools for Windows Mixed Reality app Settings tab](images/mixed-reality-openxr-tools-settings.png)
+  4. Confirm the **Runtime version** shown on the **OpenXR Runtime** tab of the [OpenXR Tools for Windows Mixed Reality](openxr-getting-started.md#getting-the-openxr-tools-for-windows-mixed-reality) matches the required version of the preview extensions you plan to try.  If so, you should see the extension in the **Extensions** list.  Once a stable extension is available, its preview extension will be removed.<br />
+     ![OpenXR Tools for Windows Mixed Reality app OpenXR Runtime tab](images/mixed-reality-openxr-tools-status.png)
 
 See the <a href="https://github.com/microsoft/OpenXR-MixedReality#openxr-preview-extensions" target="_blank">Mixed Reality OpenXR repo</a> for documentation of these preview extensions and samples of how to use them.
 
