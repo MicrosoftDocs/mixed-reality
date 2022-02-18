@@ -150,7 +150,7 @@ Parameters
 
 ## Holographic Thermal
 
-When using these thermal APIs reference [managing power and thermals](..\unity\managing-power-and-thermals)
+When using these thermal APIs reference [managing power and thermals](../unity/managing-power-and-thermals.md)
 
 **/api/holographic/thermal/stage (GET)**
 
