@@ -167,44 +167,23 @@ Open a websocket (or do a single query) providing a list of objects containing
 
 Objects are named by peripheral name (Example: Battery)
 
-**/api/holographic/thermal/setMitigationLevel (SET)**
+**/api/holographic/thermal/setMitigationLevel (POST)**
 
 Change the mitigation level being reported for a given peripheral
 
 Parameters
+
 * mask: bitmask with single bit set for the peripheral of interest
 * level: new level to use (0-3)
 
-Example:
-
-```
-var params = {
-    mask: newPeripheralMask,
-    level: newLevel
-};
-
-return this.httpPostExpect200("/api/holographic/thermal/setMitigationLevel?" + $.param(params));
-
-```
-
-**/api/holographic/thermal/setThermalScore (SET)**
+**/api/holographic/thermal/setThermalScore (POST)**
 
 Change the thermal score being reported for a given peripheral
 
 Parameters
+
 * mask: bitmask with single bit set for the peripheral of interest
 * thermalScore: new thermal score to use (100-0)
-
-Example:
-
-```
-var params = {
-    mask: newPeripheralMask,
-    thermalScore: newThermalScore
-};
-
-return this.httpPostExpect200("/api/holographic/thermal/setThermalScore?" + $.param(params));
-```
 
 ## Map Manager
 
