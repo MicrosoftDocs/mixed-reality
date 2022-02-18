@@ -150,9 +150,61 @@ Parameters
 
 ## Holographic Thermal
 
+When using these thermal APIs reference [managing power and thermals](..\unity\managing-power-and-thermals)
+
 **/api/holographic/thermal/stage (GET)**
 
 Get the thermal stage of the device (0 normal, 1 warm, 2 critical).
+
+**/api/holographic/thermal/getMitigationLevels (GET/websocket)**
+
+Open a websocket (or do a single query) providing a list of objects containing
+
+* IsSuppressed - Identifying if a given peripheral has mitigations suppressed
+* Level - Latest thermal mitigation level for this peripheral
+* Mask - Mask of this peripheral
+* ThermalScore - Latest thermal score for this peripheral
+
+Objects are named by peripheral name (Example: Battery)
+
+**/api/holographic/thermal/setMitigationLevel (SET)**
+
+Change the mitigation level being reported for a given peripheral
+
+Parameters
+* mask: bitmask with single bit set for the peripheral of interest
+* level: new level to use (0-3)
+
+Example:
+
+```
+var params = {
+    mask: newPeripheralMask,
+    level: newLevel
+};
+
+return this.httpPostExpect200("/api/holographic/thermal/setMitigationLevel?" + $.param(params));
+
+```
+
+**/api/holographic/thermal/setThermalScore (SET)**
+
+Change the thermal score being reported for a given peripheral
+
+Parameters
+* mask: bitmask with single bit set for the peripheral of interest
+* thermalScore: new thermal score to use (100-0)
+
+Example:
+
+```
+var params = {
+    mask: newPeripheralMask,
+    thermalScore: newThermalScore
+};
+
+return this.httpPostExpect200("/api/holographic/thermal/setThermalScore?" + $.param(params));
+```
 
 ## Map Manager
 
