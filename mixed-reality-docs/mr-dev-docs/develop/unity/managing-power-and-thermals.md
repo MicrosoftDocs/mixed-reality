@@ -3,7 +3,7 @@ title: Managing power and thermals
 description: Learn how to subscribe and handle Power Thermal events within a Unity mixed reality app.
 author: chorkin
 ms.author: vinnietieto
-ms.date: 2/14/2022
+ms.date: 2/22/2022
 ms.topic: article
 keywords: Unity, power, performance, thermal, mitigation, mixed reality headset, windows mixed reality headset, virtual reality headset, overheating, heat, hot
 ---
@@ -21,6 +21,9 @@ When the HoloLens 2 is running in warm environments or with heavy performance re
 * Shutting down the HoloLens 2
 
 If your application demands high peripheral performance, consider using the PowerThermalNotification Software Development Kit (SDK) to subscribe to notification events and implement your own custom actions.  Doing so can allow the device to operate longer in situations when otherwise an application may be terminated by the system.
+
+> [!IMPORTANT]
+> Support for the Microsoft.MixedReality.PowerThermalNotification SDK is included in the latest [HoloLens Insider Builds](/hololens/hololens-insider) (20348.1479+) and is expected to be released in the 22H1 Spring Update.
 
 This article describes the PowerThermalNotification SDK and its basic usage to get you started.
 
