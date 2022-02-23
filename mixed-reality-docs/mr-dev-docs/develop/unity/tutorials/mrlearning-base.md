@@ -24,7 +24,7 @@ ms.localizationpriority: high
         <td><strong>Course</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
         <td><a href="https://www.microsoft.com//hololens/hardware"><strong>HoloLens 2</strong></a></td>
-        <td><a href="../../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td></td>
@@ -47,4 +47,4 @@ ms.localizationpriority: high
 > [!IMPORTANT]
 > The recommended Unity version for this tutorial series is Unity 2019.2.X. This supersedes any Unity version requirements or recommendations stated in the prerequisites linked above.
 
-[Next lesson: 2. Initializing your project and first application](./mr-learning-base-02.md)
+[Next lesson: 2. Initializing your project and first application](/learn/paths/beginner-hololens-2-tutorials/)

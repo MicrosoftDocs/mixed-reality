@@ -28,7 +28,7 @@ For example, if you're developing an application that surfaces a catalog of 3D f
     <tr>
         <td><strong>Feature</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td>Add model protocol</td>

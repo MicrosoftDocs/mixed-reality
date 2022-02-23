@@ -20,16 +20,26 @@ This provider can be used in editor and on device while on the Standalone platfo
 | MRTK Version | Leap Motion Unity Modules Versions Supported |
 | --- | --- |
 |2.6.x | 4.5.0, 4.5.1|
-|2.7.x| 4.5.0, 4.5.1, 4.6.0, 4.7.0, 4.7.1, 4.8.0|
+|2.7.0 - 2.7.2| 4.5.0, 4.5.1, 4.6.0, 4.7.0, 4.7.1, 4.8.0|
+|2.7.3| 4.5.0, 4.5.1, 4.6.0, 4.7.0, 4.7.1, 4.8.0, 4.9.1 (see note below) |
+
+> [!NOTE]
+> Unity Modules 4.9.1 require the [Gemini 5.2](https://developer.leapmotion.com/tracking-software-download) tracking service or higher, and are only officially supported on Unity 2019.  See [release notes for 4.9.1](https://github.com/leapmotion/UnityModules/releases/tag/UM-4.9.1).
 
 
 ## Using Leap Motion (by Ultraleap) hand tracking in MRTK
 
 1. Importing MRTK and the Leap Motion Unity Modules
-    - Install the latest [Leap Motion SDK](https://developer.leapmotion.com/releases/?category=orion) if it is not already installed
+    - Install the latest [Leap Motion Tracking Software](https://developer.leapmotion.com/tracking-software-download) to get the Tracking Service if it is not already installed
     - Import the **Microsoft.MixedReality.Toolkit.Foundation** package into the Unity project.
     - Download and import the latest version of the [Leap Motion Unity Modules](https://developer.leapmotion.com/unity) into the project
         - Only import the **Core** package within the Unity Modules
+
+    > [!IMPORTANT]
+    > Unity deprecated SelectionMode.OnlyUserModifiable after Unity 2019.4.19 which results in the following error coming from the Ultraleap Hotkeys.cs script:
+    > Assets\Plugins\LeapMotion\Core\Editor\Hotkeys.cs(24,91): error CS0619: 'SelectionMode.OnlyUserModifiable' is obsolete: ''OnlyUserModifiable' is obsolete. Use 'Editable' instead. (UnityUpgradeable) -> Editable'.
+      
+    > To resolve the issues, change the SelectionMode.OnlyUserModifiable to SelectionMode.Editable in the Hotkeys.cs script located in Plugins/LeapMotion/Core/Editor/Hotkeys.cs.
 
 1. Integrate the Leap Motion Unity Modules with MRTK
     - After the Unity Modules are in the project, navigate to **Mixed Reality Toolkit** > **Leap Motion** > **Integrate Leap Motion Unity Modules**

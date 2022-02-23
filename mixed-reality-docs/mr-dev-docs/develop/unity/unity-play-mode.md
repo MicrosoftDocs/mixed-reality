@@ -2,7 +2,7 @@
 title: Preview your work with Holographic Remoting
 description: Use Holographic Remoting in Play Mode to preview your application changes on a device without deploying an app.
 author: keveleigh
-ms.author: v-vtieto
+ms.author: vinnietieto
 ms.date: 07/26/2021
 ms.topic: article
 keywords: Unity, remoting, holographic remoting, holographic remoting player, HoloLens, mixed reality headset, windows mixed reality headset, virtual reality headset, unity play mode
@@ -28,10 +28,10 @@ With Holographic Remoting, you can experience your app on the HoloLens while it 
 
 [!INCLUDE[](includes/unity-play-mode.md)]
 
-Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more details in the [Holographic Remoting Player](../advanced-concepts/holographic-remoting-player.md) documentation.
+Holographic Remoting requires a fast PC and Wi-Fi connection. You can find more details in the [Holographic Remoting Overview](../native/holographic-remoting-overview.md) documentation.
 
 For best results, make sure your app properly sets the [focus point](focus-point-in-unity.md). This helps Holographic Remoting to best adapt your scene to the latency of your wireless connection.
 
 ## See Also
 
-* [Holographic Remoting Player](../advanced-concepts/holographic-remoting-player.md)
+* [Holographic Remoting Overview](../native/holographic-remoting-overview.md)

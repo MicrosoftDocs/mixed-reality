@@ -255,7 +255,13 @@ An **Icon Set** is a shared set of icon assets used by the `ButtonConfigHelper` 
 
 To change which style your button uses, expand the *Icons* dropdown in the ButtonConfigHelper and select from the *Icon Style* dropdown.
 
-You can create a new button icon set with the asset menu: **Create > Mixed Reality Toolkit > Icon Set.** To add quad and sprite icons, simply drag them into their respective arrays. To add Char icons, you must first create and assign a font asset.
+To create a new button icon:
+1. In the **Project** window, right-click **Assets** to open the context menu. (You can also right-click any blank space inside the **Assets** folder or one of its subfolders.)
+1. Select **Create > Mixed Reality > Toolkit > Icon Set.**
+   
+    ![Screenshot of the Icon Set menu item.](../images/button/001-icon-set.png)
+   
+To add quad and sprite icons, simply drag them into their respective arrays. To add Char icons, you must first create and assign a font asset.
 
 In MRTK 2.4 and beyond, we recommend custom icon textures be moved into an IconSet.
 To upgrade the assets on all buttons in a project to the new recommended format, use the ButtonConfigHelperMigrationHandler.

@@ -50,4 +50,4 @@
 ### [HP Reverb G2 Controllers in Unity](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
 ### [HP Reverb G2 Controllers in Unreal](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 
-## [Contributing guide](contributing.md)
+## [Contributing guide](/windows/mixed-reality/contributing)

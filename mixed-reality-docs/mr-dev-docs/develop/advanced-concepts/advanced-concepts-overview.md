@@ -16,7 +16,7 @@ Advanced concepts include:
 
 - [Mixed Reality Capture](mixed-reality-capture-overview.md)
 - [Use anchors to share holograms](shared-spatial-anchors-in-directx.md)
-- [Holographic Remoting](holographic-remoting-overview.md)
+- [Holographic Remoting](/windows/mixed-reality/develop/native/holographic-remoting-overview)
 - [Porting apps](../porting-apps/porting-overview.md)
 - [Using the Windows device portal](using-the-windows-device-portal.md)
 - [HoloLens research mode](research-mode.md)

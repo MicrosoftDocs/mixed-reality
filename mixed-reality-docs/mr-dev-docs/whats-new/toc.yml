@@ -1,19 +1,9 @@
 - name: Programs and events
   items: 
-    - name: StereoKit hackathon
-      href: stereokit.md
-    - name: Mixed Reality Speaker Series
-      href: sf-academy-events.md 
+    - name: Mixed Reality development series
+      href: journey-to-mr-series.md
     - name: Build 2021 - Mixed Reality
       href: mr-build.md 
-    - name: Mixed Reality Dev Days 
-      items: 
-        - name: Mixed Reality Dev Days 
-          href: mr-dev-days.md 
-        - name: Session recordings 
-          href: mr-dev-days-sessions.md 
-    - name: Mixed Reality Dev Days Japan
-      href: mr-dev-days-japan.md 
 - name: Explore the Designing Holograms app
   href: ../discover/designing-holograms.md
 - name: New Mixed Reality Learn modules

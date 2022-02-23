@@ -1,9 +1,9 @@
 ---
-title: Eye tracking
+title: Eye tracking overview
 description: Learn about eye tracking for HoloLens 2 and the new levels of human understanding if affords in holographic experiences.
 author: sostel
-ms.author: sostel
-ms.date: 10/29/2019
+ms.author: vinnietieto
+ms.date: 12/22/2021
 ms.topic: article
 keywords: Eye tracking, mixed reality, input, eye-gaze, calibration, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, intent, actions
 ---
@@ -29,7 +29,7 @@ Eye tracking API has been designed with a user’s privacy in mind, avoiding pas
      <td><strong>Feature</strong></td>
      <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
      <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-     <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+     <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
 </tr>
 <tr>
      <td>Eye-gaze</td>

@@ -8,9 +8,9 @@
 If you're following the Unity for HoloLens development checkpoint journey we've laid out, your next task is to work through our HoloLens 2 tutorial series.
 
 > [!div class="nextstepaction"]
-> [HoloLens 2 tutorial series](../unity/tutorials/mr-learning-base-01.md)
+> [HoloLens 2 tutorial series](/learn/paths/beginner-hololens-2-tutorials/)
 
-If you're following the Unity for VR journey, your next task is to setup your project.
+If you're following the Unity for VR journey, your next task is to set up your project.
 
 > [!div class="nextstepaction"]
 > [Configuring your project for WMR](../unity/configure-unity-project.md)
@@ -31,10 +31,13 @@ If you're following the Unreal development checkpoint journey we've laid out, yo
 
 You can always go back to the [Unreal development checkpoints](../unreal/unreal-development-overview.md#1-getting-started) at any time.
 
-# [Javascript](#tab/javascript)
+# [JavaScript](#tab/javascript)
 
 > [!div class="nextstepaction"]
-> [Start your Javascript journey](../native/directx-development-overview.md)[JavaScript development overview](../javascript/javascript-development-overview.md) 
+> [Start your JavaScript journey](..//javascript/tutorials/babylonjs-webxr-helloworld/introduction-01.md)
+
+> [!div class="nextstepaction"]
+> [JavaScript development overview](../javascript/javascript-development-overview.md) 
 
 # [Native (OpenXR)](#tab/native)
 

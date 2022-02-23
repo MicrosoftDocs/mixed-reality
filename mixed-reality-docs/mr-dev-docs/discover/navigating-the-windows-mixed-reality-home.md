@@ -78,7 +78,7 @@ With **immersive headsets**, you can get up and walk around in your playspace to
 
 ## Immersive headset input support
 
-[Windows Mixed Reality immersive headsets](immersive-headset-hardware-details.md) support multiple input types for navigating the Windows Mixed Reality home. HoloLens doesn't support accessory inputs for navigation, because you physically walk around and see your environment. However, HoloLens does [support inputs](hardware-accessories.md) for interacting with apps.
+[Windows Mixed Reality immersive headsets](/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details) support multiple input types for navigating the Windows Mixed Reality home. HoloLens doesn't support accessory inputs for navigation, because you physically walk around and see your environment. However, HoloLens does [support inputs](hardware-accessories.md) for interacting with apps.
 
 ### Motion controllers
 

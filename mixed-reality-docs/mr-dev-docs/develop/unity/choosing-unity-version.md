@@ -1,9 +1,9 @@
 ---
 title: Choosing a Unity version and XR plugin
 description: Stay up to date on the latest Unity and XR plugin recommendations for HoloLens application development.
-author: hferrone
-ms.author: v-hferrone
-ms.date: 06/24/2021
+author: qianw211
+ms.author: qianwen
+ms.date: 01/10/2022
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality headset, windows mixed reality headset, virtual reality headset, unity
 ---
@@ -66,3 +66,8 @@ If you are trying out early **Unity 2021.2** builds, get started with the [**Mix
 Unity 2018.4 LTS has reached the end of Unity's two-year Long-Term Support window and is no longer receiving updates from Unity, although your projects will continue to run.
 
 If you have a Unity 2018 project, you should consider planning for a migration forward to Unity 2020.3 LTS and the Mixed Reality OpenXR plugin.
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Set up your XR configuration](/windows/mixed-reality/develop/unity/xr-project-setup?tabs=openxr)

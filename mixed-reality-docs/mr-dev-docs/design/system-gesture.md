@@ -10,7 +10,7 @@ keywords: Mixed Reality, Gestures, interaction, design, mixed reality headset, w
 
 # Start gesture
 
-The Start gesture is a hand gesture used to invoke the Start Menu. It's the equivalent of pressing the Windows key on keyboards, the Xbox button on Xbox controllers, or the Windows button on immersive headset motion controllers. Pay special attention to reserved system gestures on each Mixed Reality device to prevent conflicts when you're designing interactions.
+The Start gesture is a hand gesture used to invoke the Start Menu. It's the equivalent of pressing the Windows key on keyboards, the Xbox icon on Xbox controllers, or the Windows icon on immersive headset motion controllers. Pay special attention to reserved system gestures on each Mixed Reality device to prevent conflicts when you're designing interactions.
 
 ## Device support
 
@@ -24,8 +24,8 @@ The Start gesture is a hand gesture used to invoke the Start Menu. It's the equi
     <tr>
         <td><strong>Feature</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td>Bloom</td>
@@ -34,7 +34,7 @@ The Start gesture is a hand gesture used to invoke the Start Menu. It's the equi
         <td>❌</td>
     </tr>
      <tr>
-        <td>Wrist button</td>
+        <td>Wrist icon</td>
         <td>❌</td>
         <td>✔️</td>
         <td>❌</td>
@@ -68,16 +68,16 @@ We designed “Bloom” to bring up the start menu in HoloLens (1st gen), which 
 
 ## Start gesture
 
-In HoloLens 2, we replaced the Bloom gesture with a virtual wrist button, which is more instinctual for users. By showing users the button on the wrist, they can intuitively reach out and press it with their other hand.
+In HoloLens 2, we replaced the Bloom gesture with a virtual wrist icon, which is more instinctual for users. By showing users the icon on the wrist, they can intuitively reach out and press it with their other hand.
 
 :::row:::
     :::column:::
-        ![Wrist button ready](images/wrist-button-ready.png)<br>
-        **Step 1: Palm up to show the wrist button**<br>
+        ![Wrist icon ready](images/wrist-button-ready.png)<br>
+        **Step 1: Palm up to show the wrist icon**<br>
     :::column-end:::
     :::column:::
-        ![Wrist button press](images/wrist-button-press.png)<br>
-        **Step 2: Press the wrist button**<br>
+        ![Wrist icon press](images/wrist-button-press.png)<br>
+        **Step 2: Press the wrist icon**<br>
     :::column-end:::
 :::row-end:::
 
@@ -96,12 +96,12 @@ In HoloLens 2, we replaced the Bloom gesture with a virtual wrist button, which 
 You can also use the Start gesture with only one hand. Hold out your hand with your palm facing you and look at the **Start icon** on your inner wrist. **While keeping your eye on the icon**, pinch your thumb and index finger together.<br>
 :::row:::
     :::column:::
-        ![Wrist button ready](images/wrist-button-ready.png)<br>
-        **Step 1: Palm up to show the wrist button**<br>
+        ![Wrist icon ready](images/wrist-button-ready.png)<br>
+        **Step 1: Palm up to show the wrist icon**<br>
     :::column-end:::
     :::column:::
-        ![Wrist button pinch](images/wrist-button-pinch.png)<br>
-        **Step 2: Eye gaze at the button then pinch**<br>
+        ![Wrist icon pinch](images/wrist-button-pinch.png)<br>
+        **Step 2: Eye gaze at the icon then pinch**<br>
     :::column-end:::
 :::row-end:::
 
