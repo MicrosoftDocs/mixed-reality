@@ -11,7 +11,13 @@ keywords: up-to-date, tools, get started, basics, unity, mixed reality headset, 
 
 # Mixed Reality OpenXR plugin release notes
 
-## 1.2.1 - 2021-12-3
+## 1.3.0 - Current release
+
+* Fixed a bug where input system sometimes reports identity rotation for controller pose when the Hand Tracking feature was enabled.
+* Enabled the "Hand Tracking feature" when it's used together with Unity's Oculus Quest feature.
+* Fixed a crash on app resume when using plane finding.
+
+## 1.2.1 - 2021-12-03
 
 * Depends on version 1.3.1 of Unity's OpenXR plugin.
   * Fixed a bug where UWP remoting app won't render desktop view after XR session is started.
