@@ -67,7 +67,7 @@ When HoloLens takes photos and videos, the captured frames include the location 
 
 ### Distortion Error
 
-On HoloLens, the video and still image streams are undistorted in the system's image-processing pipeline before the frames are made available to the application. The preview stream contains the original distorted frames. Because only the CameraIntrinsics are made available, applications must assume that image frames represent a perfect pinhole camera.
+On HoloLens 2, the video and still image streams are undistorted in the system's image-processing pipeline before the frames are made available to the application. The preview stream contains the original distorted frames. Because only the CameraIntrinsics are made available, applications must assume that image frames represent a perfect pinhole camera.
 
 On HoloLens (first-generation), the undistortion function in the image processor may still leave an error of up to 10 pixels when using the CameraIntrinsics in the frame metadata. In many use cases, this error won't matter. However, if, for example, you're aligning holograms to real-world posters or markers and you notice a < 10-px offset (roughly 11 mm for holograms positioned 2 meters away), this distortion error could be the cause.
 
