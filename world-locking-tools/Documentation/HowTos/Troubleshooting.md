@@ -11,7 +11,7 @@ keywords: Unity, HoloLens, HoloLens 2, Augmented Reality, Mixed Reality, ARCore,
 
 # Trouble shooting
 
-Annoying issues will be noted here. Also, here is a [recommended strategy](TroubleshootingAdvanced.md) for narrowing world-locking problems.
+Annoying issues will be noted here. Also, here's a [recommended strategy](TroubleshootingAdvanced.md) for narrowing world-locking problems.
 
 ## World Locking issues
 
@@ -23,11 +23,11 @@ If you see a framerate drop after adding World Locking Tools to your application
 
 ### Missing dll's etc.
 
-This has been seen from the Frozen World Engine dll. Go to NuGet for Unity:
+This error is usually from the Frozen World Engine dll. Go to NuGet for Unity:
 
 > `NuGet > Manage NuGet Packages > Installed`
 
-uninstall and re-install the latest FrozenWorld.Engine package. See [NuGet Setup](InitialSetup.md#frozenworld-engine-installation).
+uninstall and reinstall the latest FrozenWorld.Engine package. See [NuGet Setup](InitialSetup.md#frozenworld-engine-installation).
 
 Alternately, [install using the MR Feature Tool](WLTviaMRFeatureTool.md) and have dependencies installation handled for you.
 
@@ -37,7 +37,7 @@ Errors like the following (usually a lot):
 
 > Assets\WorldLocking.Engine\Plugin.cs(10,37): error CS0234: The type or namespace name 'FrozenWorld' does not exist in the namespace 'Microsoft.MixedReality' (are you missing an assembly reference?)
 
-It is missing the FrozenWorld.Engine DLL. See [NuGet Setup](InitialSetup.md#frozenworld-engine-installation).
+It's missing the FrozenWorld.Engine DLL. See [NuGet Setup](InitialSetup.md#frozenworld-engine-installation).
 
 Alternately, [install using the MR Feature Tool](WLTviaMRFeatureTool.md) and have dependencies installation handled for you.
 
@@ -45,7 +45,7 @@ Alternately, [install using the MR Feature Tool](WLTviaMRFeatureTool.md) and hav
 
 Check the Unity logs for errors and exceptions.
 
-Check that your scene camera is attached to at least one other object. See the setup in WorldLocking.Examples.WorldLockingPhysicsSample for example. If you are doing dynamic camera manipulation, you may need to keep the WorldLockingManager informed of the current camera. See [WorldLockingManager.AdjustmentFrame](xref:Microsoft.MixedReality.WorldLocking.Core.WorldLockingManager.AdjustmentFrame) and [WorldLockingManager.CameraParent](xref:Microsoft.MixedReality.WorldLocking.Core.WorldLockingManager.CameraParent).
+Check that your scene camera is attached to at least one other object. See the setup in WorldLocking.Examples.WorldLockingPhysicsSample for example. If you're doing dynamic camera manipulation, you may need to keep the WorldLockingManager informed of the current camera. See [WorldLockingManager.AdjustmentFrame](xref:Microsoft.MixedReality.WorldLocking.Core.WorldLockingManager.AdjustmentFrame) and [WorldLockingManager.CameraParent](xref:Microsoft.MixedReality.WorldLocking.Core.WorldLockingManager.CameraParent).
 
 ## More general Unity/AR problems
 
@@ -55,7 +55,7 @@ The path has grown too long. See fuller [explanation here](InitialSetup.md#a-war
 
 ### "A remote operation is taking longer than expected" message box then failure to deploy
 
-Check your USB connection. A bad cable, a bad port, missing IPOverUSB, can all cause this. But it's probably somewhere on the communication path from your PC to your device.
+Check your USB connection. A bad cable, a bad port, missing IPOverUSB, can all cause this problem. But it's probably somewhere on the communication path from your PC to your device.
 
 ### Missing Windows SDK components
 
@@ -73,9 +73,9 @@ If targeting the Unity's built-in VR support, also known as Legacy XR, then chec
 
 You must have Virtual Reality Supported checked, and the Windows Mixed Reality in Virtual Reality SDKs.
 
-If using Unity's AR Subsystems / XR SDK, then check that you've followed all the steps [here](XRSDK.md). Likely culprits are missing one of the required packages, or if using MRTK, that the appropriate profile has not been setup on the MixedRealityToolkit object.
+If using Unity's AR Subsystems / XR SDK, then check that you've followed all the steps [here](XRSDK.md). Likely culprits are missing one of the required packages, or if using MRTK, that the appropriate profile hasn't been setup on the MixedRealityToolkit object.
 
-### When building for ARM on HoloLens2, app stops at startup. ARM64 works fine
+### When the app is built for ARM on HoloLens2, app stops at startup. ARM64 works fine
 
 [Known issue](https://issuetracker.unity3d.com/issues/enabling-graphics-jobs-in-2019-dot-3-x-results-in-a-crash-or-nothing-rendering-on-hololens-2).
 
