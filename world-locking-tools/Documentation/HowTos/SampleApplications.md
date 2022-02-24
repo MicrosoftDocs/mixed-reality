@@ -26,3 +26,5 @@ Supplementary samples can be found in the [World Locking Tools Samples](https://
 [Ray Pin Sample](Samples/RayPins.md)
 
 [World Locking Tools with Azure Spatial Anchors Sample](Samples/WLT_ASA_Sample.md)
+
+[In a Vehicle Moving Through Virtual Space Sample](Samples/Vehicle.md)

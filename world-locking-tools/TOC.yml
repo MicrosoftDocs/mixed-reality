@@ -69,6 +69,8 @@
     href: Documentation/HowTos/Tools.md
   - name: Trouble Shooting
     href: Documentation/HowTos/Troubleshooting.md
+  - name: Trouble Shooting Strategy
+    href: Documentation/HowTos/TroubleshootingAdvanced.md
   - name: World Locking Tools Contexts
     href: Documentation/HowTos/WorldLockingContext.md
   - name: Sample Applications
@@ -82,6 +84,8 @@
         href: Documentation/HowTos/Samples/RayPins.md
       - name: World Locking Tools with Azure Spatial Anchors Sample
         href: Documentation/HowTos/Samples/WLT_ASA_Sample.md
+      - name: In a Vehicle Moving Through Virtual Space Sample
+        href: Documentation/HowTos/Samples/Vehicle.md
   - name: Contributing
     href: Documentation/HowTos/Contributing.md
   - name: Coding Conventions

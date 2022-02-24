@@ -11,7 +11,7 @@ keywords: Unity, HoloLens, HoloLens 2, Augmented Reality, Mixed Reality, ARCore,
 
 # Trouble shooting
 
-Annoying issues will be noted here.
+Annoying issues will be noted here. Also, here is a [recommended strategy](TroubleshootingAdvanced.md) for narrowing world-locking problems.
 
 ## World Locking issues
 
@@ -84,3 +84,7 @@ The fix is either disable Graphics Jobs under
 > `Project Settings > Player > Other Settings > Graphics Jobs`
 
 or just build for ARM64.
+
+## See also
+
+* [WLT troubleshooting strategy](TroubleshootingAdvanced.md)
