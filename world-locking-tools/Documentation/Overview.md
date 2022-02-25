@@ -13,9 +13,9 @@ keywords: Unity, HoloLens, HoloLens 2, Augmented Reality, Mixed Reality, ARCore,
 
 World Locking Tools for Unity provides a stable and reliable world-locked coordinate system, binding the virtual/holographic world to the physical world.
 
-World Locking Tools take the burden of world-locking holograms off of the developer, as well as enabling scenarios that were previously unreachable. It currently supports the **HoloLens family of devices** via Unity's built-in VR support. Support for HoloLens and **other platforms [via Unity's new XR SDK plugin system](~/Documentation/HowTos/XRSDK.md)** is also available.
+World Locking Tools take the burden of world-locking holograms off of the developer, and enable scenarios that were previously unreachable. It currently supports the **HoloLens family of devices** via Unity's built-in VR support. Support for HoloLens and **other platforms [via Unity's new XR SDK plugin system](~/Documentation/HowTos/XRSDK.md)** is also available.
 
-World Locking Tools locks the entire holograph space of your application to the physical world. A hologram put in position relative to physical world features will stay fixed relative to those features, as well as remaining fixed relative to other holograms.
+World Locking Tools locks the entire holograph space of your application to the physical world. A hologram put in position relative to physical world features will stay fixed relative to those features, and remain fixed relative to other holograms.
 
 World Locking Tools scale naturally with both the size and complexity of the scene. Large models, large collections of models, and multi-room environments are all handled gracefully.
 
@@ -27,7 +27,7 @@ Or a quick overview of key concepts behind World Locking Tools is contained in t
 
 Or skip straight into introduction of key concepts, leading to further details of concepts and solutions, beginning in the [Concepts section](~/Documentation/Concepts.md).
 
-A number of samples are contained in a sibling repo, [World Locking Tools Samples](https://microsoft.github.io/MixedReality-WorldLockingTools-Samples/README.html). Be sure to have a look there for an instructive example. And if you don't find what you are looking for there, you are [encouraged to submit](https://microsoft.github.io/MixedReality-WorldLockingTools-Samples/CONTRIBUTING.html) a suggestion or even your own sample.
+Samples are also contained in a sibling repo, [World Locking Tools Samples](https://microsoft.github.io/MixedReality-WorldLockingTools-Samples/README.html). Be sure to have a look there for an instructive example. And if you don't find what you're looking for there, [submit](https://microsoft.github.io/MixedReality-WorldLockingTools-Samples/CONTRIBUTING.html) a suggestion or even your own sample.
 
 ## Easy and efficient
 
@@ -51,7 +51,7 @@ Further, reference materials for interfacing through script with World Locking T
 
 ## Useful resources on Microsoft Windows Dev Center
 
-| ![Academy](~/External/ReadMeImages/icon_academy.png) [Academy](https://developer.microsoft.com/en-us/windows/mixed-reality/academy)| ![Design](~/External/ReadMeImages/icon_design.png) [Design](https://developer.microsoft.com/en-us/windows/mixed-reality/design)| ![Development](~/External/ReadMeImages/icon_development.png) [Development](https://developer.microsoft.com/en-us/windows/mixed-reality/development)| ![Community)](~/External/ReadMeImages/icon_community.png) [Community](https://developer.microsoft.com/en-us/windows/mixed-reality/community)|
+| ![Academy](~/External/ReadMeImages/icon_academy.png) [Academy](https://developer.microsoft.com/windows/mixed-reality/academy)| ![Design](~/External/ReadMeImages/icon_design.png) [Design](https://developer.microsoft.com/windows/mixed-reality/design)| ![Development](~/External/ReadMeImages/icon_development.png) [Development](https://developer.microsoft.com/windows/mixed-reality/development)| ![Community)](~/External/ReadMeImages/icon_community.png) [Community](https://developer.microsoft.com/windows/mixed-reality/community)|
 | :--------------------- | :----------------- | :------------------ | :------------------------ |
 | See code examples. Do a coding tutorial. Watch guest lectures.          | Get design guides. Build user interface. Learn interactions and input.     | Get development guides. Learn the technology. Understand the science.       | Join open source projects. Ask questions on forums. Attend events and meetups. |
 
@@ -59,9 +59,9 @@ Further, reference materials for interfacing through script with World Locking T
 
 This project welcomes contributions and suggestions. Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit https://cla.microsoft.com.
 
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions provided by the bot. You will only need to do this once across all repos using our CLA.
+When you submit a pull request, a CLA-bot will automatically determine whether you need to provide a CLA and decorate the PR appropriately. Follow the instructions provided by the bot. You'll only need to do fulfill the CLA bot process once across all repos using our CLA.
 
-View the [**How To Contribute**](~/Documentation/HowTos/Contributing.md) page for the most up to date instructions on contributing to World Locking Tools for Unity.
+View the [**How To Contribute**](~/Documentation/HowTos/Contributing.md) page for the most up-to-date instructions on contributing to World Locking Tools for Unity.
 
 ## Microsoft Open Source Code of Conduct
 
