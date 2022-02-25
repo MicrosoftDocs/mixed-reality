@@ -404,4 +404,4 @@ p.SuppressPlatformMitigation(PowerThermalPeripheralFlags.Cpu, false);
 
 Once you've integrated the SDK into your application, you'll want to test it.  For HoloLens 2 operating systems that support the SDK, a developer page will be available in [Device Portal](../advanced-concepts/using-the-windows-device-portal.md#powerthermalsdk-test). From this page, you can control the mitigation levels and thermal scores for each peripheral.  You can also monitor which peripherals have mitigations being actively suppressed.
 
-You can also leverage the REST APIs to monitor and test mitigation levels and thermal scores.  More information can be found on the [Device Portal API Reference](../advanced-concepts/device-portal-api-reference.md#holographic-thermal)
+You can also leverage the REST APIs to monitor/test mitigation levels and thermal scores from another device.  More information can be found on the [Device Portal API Reference](../advanced-concepts/device-portal-api-reference.md#holographic-thermal)
