@@ -74,7 +74,7 @@ If using Unity's AR Subsystems / XR SDK, then check that you've followed all the
 If you're using Unity's AR Subsystems / XR SDK, confirm that you've followed all the steps in our [Cross Platform using Unity's XR SDK Plugin system](XRSDK.md) article. Likely culprits are:
 
 * Missing one of the required packages.
-* The appropriate profile hasn't been set up on the MixedRealityToolkit object (if using MRTK).
+* The appropriate profile hasn't been set on the MixedRealityToolkit object (if using MRTK).
 
 ### When the app is built for ARM on HoloLens2, the app stops at startup, ARM64 works fine
 

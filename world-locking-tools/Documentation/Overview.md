@@ -59,7 +59,7 @@ Further, reference materials for interfacing through script with World Locking T
 
 This project welcomes contributions and suggestions. Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit https://cla.microsoft.com.
 
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide a CLA and decorate the PR appropriately. Follow the instructions provided by the bot. You'll only need to do fulfil the CLA bot process once across all repos using our CLA.
+When you submit a pull request, a CLA-bot will automatically determine whether you need to provide a CLA and decorate the PR appropriately. Follow the instructions provided by the bot. You'll only need to do fulfill the CLA bot process once across all repos using our CLA.
 
 View the [**How To Contribute**](~/Documentation/HowTos/Contributing.md) page for the most up-to-date instructions on contributing to World Locking Tools for Unity.
 
