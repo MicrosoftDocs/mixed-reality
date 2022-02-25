@@ -158,7 +158,7 @@ Get the thermal stage of the device (0 normal, 1 warm, 2 critical).
 
 **/api/holographic/thermal/getMitigationLevels (GET/websocket)**
 
-Open a websocket (or do a single query) providing a list of objects containing
+Open a websocket (or do a single HTTP GET query), returning a list of objects containing the following:
 
 * IsSuppressed - Identifying if a given peripheral has mitigations suppressed
 * Level - Latest thermal mitigation level for this peripheral
