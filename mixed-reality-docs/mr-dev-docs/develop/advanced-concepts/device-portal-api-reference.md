@@ -173,7 +173,7 @@ Change the mitigation level being reported for a given peripheral
 
 Parameters
 
-* mask: bitmask with single bit set for the peripheral of interest
+* mask: bitmask with single bit set for the peripheral of interest (See [PowerThermalPeripheralFlags](/dotnet/api/microsoft.mixedreality.powerthermalnotification.PowerThermalPeripheralFlags) for details)
 * level: new level to use (0-3)
 
 **/api/holographic/thermal/setThermalScore (POST)**
@@ -182,7 +182,7 @@ Change the thermal score being reported for a given peripheral
 
 Parameters
 
-* mask: bitmask with single bit set for the peripheral of interest
+* mask: bitmask with single bit set for the peripheral of interest (See [PowerThermalPeripheralFlags](/dotnet/api/microsoft.mixedreality.powerthermalnotification.PowerThermalPeripheralFlags) for details)
 * thermalScore: new thermal score to use (100-0)
 
 ## Map Manager
