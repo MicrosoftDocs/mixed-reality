@@ -21,11 +21,11 @@ World Locking Tools should have no discernable impact on your framerate. (An exc
 
 If you see a framerate drop after adding World Locking Tools to your application, check your Unity logs. That usually means an exception is being repeatedly generated.
 
-### Missing DLL errors
+### "Missing DLL" errors
 
-This error is usually from the Frozen World Engine DLL. To resolve them, follow the instructions in the setup documentation to [upgrade the FrozenWorld engine to a later version](~/documentation/howtos/initialsetup.md#manual-frozen-world-engine-dll-installation).
+These errors are usually from the Frozen World Engine DLL. To resolve them, follow the instructions in the setup documentation to [upgrade the FrozenWorld engine to a later version](~/documentation/howtos/initialsetup.md#manual-frozen-world-engine-dll-installation). Following those instructions without changing the version number will repair the installation.
 
-Alternately, you can [install using the MR Feature Tool](WLTviaMRFeatureTool.md). The tool handles the installation of dependencies for you.
+Alternately, you can [install using the MR Feature Tool](WLTviaMRFeatureTool.md). The Tool handles the installation of dependencies for you.
 
 ### Missing 'FrozenWorld' namespace
 
@@ -41,7 +41,7 @@ Alternately, [install using the MR Feature Tool](WLTviaMRFeatureTool.md) and hav
 
 Check the Unity logs for errors and exceptions.
 
-Confirm that your scene camera is attached to at least one other object. See the setup in [WorldLocking.Examples.WorldLockingPhysicsSample](~/documentation/howtos/samples/worldlockedphysicssample.md) for an example. If you're doing dynamic camera manipulation, you may need to keep the WorldLockingManager informed of the current camera. See [WorldLockingManager.AdjustmentFrame](xref:Microsoft.MixedReality.WorldLocking.Core.WorldLockingManager.AdjustmentFrame) and [WorldLockingManager.CameraParent](xref:Microsoft.MixedReality.WorldLocking.Core.WorldLockingManager.CameraParent).
+Confirm that your scene camera is attached to at least one other object. See the setup in [WorldLocking.Examples.WorldLockingPhysicsSample](~/documentation/howtos/samples/worldlockedphysicssample.md) for an example. If you're doing dynamic camera manipulation, you may need to keep `WorldLockingManager` informed of the current camera. See [WorldLockingManager.AdjustmentFrame](xref:Microsoft.MixedReality.WorldLocking.Core.WorldLockingManager.AdjustmentFrame) and [WorldLockingManager.CameraParent](xref:Microsoft.MixedReality.WorldLocking.Core.WorldLockingManager.CameraParent).
 
 ## More general Unity/AR problems
 
