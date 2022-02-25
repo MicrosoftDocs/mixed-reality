@@ -49,7 +49,7 @@ The cubes in the sample are stationary in global space and represent the environ
 
 In the sample, the camera is flying in a circular path around the origin, always looking inward at the origin. When first running the sample, it will appear that the cubes are spinning as a unit around a point a few meters away. It's more accurate to say that it's the camera orbiting the cubes.
 
-A [short companion video](https://youtu.be/-jos5tk9V5U) shows the sample on a HoloLens 2, with explanatory commentary on what's seen and what's expected. To keep it short, it lacks context. Reading this article first will help make sense of what you see in the video.
+A [short companion video](https://youtu.be/cUgvwOcfJfU) shows the sample on a HoloLens 2, with explanatory commentary on what's seen and what's expected. To keep it short, it lacks context. Reading this article first will help make sense of what you see in the video.
 
 ## See also
 
