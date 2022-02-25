@@ -11,23 +11,23 @@ keywords: Unity, HoloLens, HoloLens 2, Augmented Reality, Mixed Reality, ARCore,
 
 # Vehicle Example
 
-The Vehicle sample scene is a stripped down version of attaching a camera to a vehicle or platform, that is moving in virtual space.
+The Vehicle sample scene is a stripped down version of attaching a camera to a vehicle or platform, that's moving in virtual space.
 
 ## Terminology
 
-Clearing up terminology might be helpful now. This sample, and the feature it demonstrates, are NOT related to using an AR device in a moving vehicle, such as a car or train. Then what is it showing?
+Clearing up terminology might be helpful now. This sample, and the feature it demonstrates, are NOT related to using an augmented reality (AR) device in a moving vehicle, such as a car or train. That scenario is covered by the [Moving Platform Mode feature of HoloLens](/hololens/hololens2-moving-platform).
 
-We're interested in a camera attached to a moving frame of reference. The physical camera itself isn't moving, except to track the user's device. But the camera's pose in virtual space is changing, as the camera is dragged through the virtual world.
+This sample demonstrates a camera attached to a moving frame of reference. The physical camera itself isn't moving, except to track the user's device. But the camera's pose in virtual space changes as the camera is dragged through the virtual world.
 
 ## Illustration by example
 
-Let's say you have a physical mockup of a vehicle, for example a city bus. This mockup is simple, rough partitions for the walls, possibly the driver's seat, and maybe even props for control panels. In general, it's the barest scaffolding for an actual city bus. It's like a movie set. It isn't going to move anywhere.
+Let's say you have a physical mock-up of a vehicle, for example a city bus. This mock-up is simple, rough partitions for the walls, possibly the driver's seat, and maybe even props for control panels. In general, it's the barest scaffolding for an actual city bus. It's like a movie set. It isn't going to move anywhere.
 
-Next, you want to use AR to superimpose finer detail onto your basic set. You might project display readouts onto virtual display panels. You might project pipes, rails, and other obstacles. You want to project whatever details are important to your application. You have a virtual bus interior overlaid onto your physical mockup.
+Next, you want to use augmented reality to superimpose finer detail onto your basic bus scaffolding. You might project display readouts onto virtual display panels. You might project pipes, rails, and other obstacles. You want to project whatever details are important to your application. You have a virtual bus interior overlaid onto your physical mock-up.
 
-Obviously, it's important that your virtual bus details are properly aligned to your physical mockup. Fortunately, World Locking Tools (WLT) will do exactly that for you, through the `SpacePin` feature. Basic use of `SpacePins` is described in more detail in the [Concepts section](~/Documentation/Concepts/Advanced/SpacePins.md) of this documentation, along with [several simpler examples](~/Documentation/HowTos/SampleApplications.md).
+Obviously, it's important that your virtual bus details are properly aligned to your physical mock-up. Fortunately, World Locking Tools (WLT) will do exactly that for you, through the `SpacePin` feature. Basic use of `SpacePins` is described in more detail in the [Concepts section](~/Documentation/Concepts/Advanced/SpacePins.md) of this documentation, along with [several simpler examples](~/Documentation/HowTos/SampleApplications.md).
 
-With the virtual details of the interior locked to your physical mockup, you're ready to take your virtual bus for a tour through a virtual city.
+With the virtual details of the interior locked to your physical mock-up, you're ready to take your virtual bus for a tour through a virtual city.
 
 Some might say that the correct approach would be to move your virtual city around the bus, giving the appearance of the bus moving through the city. After all, the physical camera isn't moving, so why should its coordinates change?
 

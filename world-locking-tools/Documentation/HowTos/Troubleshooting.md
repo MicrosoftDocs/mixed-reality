@@ -1,5 +1,5 @@
 ---
-title: Trouble shooting
+title: Troubleshooting
 description: Notes on things that have gone wrong and what was done to fix them.
 author: fast-slow-still
 ms.author: mafinc
@@ -9,7 +9,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Augmented Reality, Mixed Reality, ARCore, ARKit, development, MRTK
 ---
 
-# Trouble shooting
+# Troubleshooting World Locking Tools
 
 Annoying issues will be noted here. Also, here's a [recommended strategy](TroubleshootingAdvanced.md) for narrowing world-locking problems.
 
@@ -21,13 +21,9 @@ World Locking Tools should have no discernable impact on your framerate. (An exc
 
 If you see a framerate drop after adding World Locking Tools to your application, check your Unity logs. That usually means an exception is being repeatedly generated.
 
-### Missing dll's etc.
+### Missing dll errors
 
-This error is usually from the Frozen World Engine dll. Go to NuGet for Unity:
-
-> `NuGet > Manage NuGet Packages > Installed`
-
-uninstall and reinstall the latest FrozenWorld.Engine package. See [NuGet Setup](InitialSetup.md#frozenworld-engine-installation).
+This error is usually from the Frozen World Engine dll. To resolve them, follow the instructions in the setup documentation to [upgrade the FrozenWorld engine to a later version](~/documentation/howtos/initialsetup.md#manual-frozen-world-engine-dll-installation).
 
 Alternately, [install using the MR Feature Tool](WLTviaMRFeatureTool.md) and have dependencies installation handled for you.
 
@@ -45,7 +41,7 @@ Alternately, [install using the MR Feature Tool](WLTviaMRFeatureTool.md) and hav
 
 Check the Unity logs for errors and exceptions.
 
-Check that your scene camera is attached to at least one other object. See the setup in WorldLocking.Examples.WorldLockingPhysicsSample for example. If you're doing dynamic camera manipulation, you may need to keep the WorldLockingManager informed of the current camera. See [WorldLockingManager.AdjustmentFrame](xref:Microsoft.MixedReality.WorldLocking.Core.WorldLockingManager.AdjustmentFrame) and [WorldLockingManager.CameraParent](xref:Microsoft.MixedReality.WorldLocking.Core.WorldLockingManager.CameraParent).
+Check that your scene camera is attached to at least one other object. See the setup in [WorldLocking.Examples.WorldLockingPhysicsSample](~/documentation/howtos/samples/worldlockedphysicssample.md) for example. If you're doing dynamic camera manipulation, you may need to keep the WorldLockingManager informed of the current camera. See [WorldLockingManager.AdjustmentFrame](xref:Microsoft.MixedReality.WorldLocking.Core.WorldLockingManager.AdjustmentFrame) and [WorldLockingManager.CameraParent](xref:Microsoft.MixedReality.WorldLocking.Core.WorldLockingManager.CameraParent).
 
 ## More general Unity/AR problems
 
@@ -75,7 +71,7 @@ You must have Virtual Reality Supported checked, and the Windows Mixed Reality i
 
 If using Unity's AR Subsystems / XR SDK, then check that you've followed all the steps [here](XRSDK.md). Likely culprits are missing one of the required packages, or if using MRTK, that the appropriate profile hasn't been setup on the MixedRealityToolkit object.
 
-### When the app is built for ARM on HoloLens2, app stops at startup. ARM64 works fine
+### When the app is built for ARM on HoloLens2, app stops at startup, ARM64 works fine
 
 [Known issue](https://issuetracker.unity3d.com/issues/enabling-graphics-jobs-in-2019-dot-3-x-results-in-a-crash-or-nothing-rendering-on-hololens-2).
 

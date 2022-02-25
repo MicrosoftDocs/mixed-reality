@@ -1,5 +1,5 @@
 ---
-title: Advanced trouble shooting
+title: Advanced troubleshooting
 description: A strategy for finding where world-locking has gone wrong.
 author: fast-slow-still
 ms.author: mafinc
@@ -23,12 +23,12 @@ The FWE assumes there will be some tracking error in the spatial anchors, and co
 
 Then, FWE might get something wrong. For example, it relies on some heuristics to weight some spatial anchors in favor of others. If those heuristics are invalid in your case, then it might be favoring inaccurate anchors over accurate ones.
 
-Finally, the Space Pin layer is doing a complex analysis and interpolation at the best of times. With poor tracking causing refit events, it has to do even more adjustment. There are many opportunities for error there as well.
+The Space Pin layer is doing a complex analysis and interpolation. With poor tracking causing refit events, it has to do even more adjustment. There are many opportunities for error there as well.
 
 The best approach is to verify from the bottom up. Without using FWE or SpacePins, are your anchors stable in physical space? Or do they drift or otherwise shift in physical space? (Their virtual coordinates are expected to change, but their physical locations aren't.)
 
 If you’ve verified that your spatial anchors are behaving correctly, then try FWE without SpacePins. Things won’t be where you want them, but they should be staying where they are in physical space. Can you verify that that is the case?
 
-Then finally, if you have established that the lower two layers are operating as expected, then the Space Pin layer would be suspect for any anomalies.
+Finally, if you have established that the lower two layers are operating as expected, then the Space Pin layer would be suspect for any anomalies.
 
-Identifying the lowest layer that is producing unexpected results is a huge first step in finding and fixing any problems.
+Identifying the lowest layer that's producing unexpected results is a huge first step in finding and fixing any problems.

@@ -67,9 +67,9 @@
     href: Documentation/HowTos/WLT_ASA.md
   - name: Tools and Visualizers
     href: Documentation/HowTos/Tools.md
-  - name: Trouble Shooting
+  - name: Troubleshooting
     href: Documentation/HowTos/Troubleshooting.md
-  - name: Trouble Shooting Strategy
+  - name: Troubleshooting Strategy
     href: Documentation/HowTos/TroubleshootingAdvanced.md
   - name: World Locking Tools Contexts
     href: Documentation/HowTos/WorldLockingContext.md
