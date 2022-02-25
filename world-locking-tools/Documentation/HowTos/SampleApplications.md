@@ -11,7 +11,7 @@ keywords: Unity, HoloLens, HoloLens 2, Augmented Reality, Mixed Reality, ARCore,
 
 # Example applications
 
-This project ships with several sample applications. These are working apps demonstrating World Locking Tools' capabilities, and scenarios which World Locking Tools enables.
+This project ships with several sample applications. These working applications demonstrate World Locking Tools' capabilities, and scenarios which World Locking Tools enables.
 
 They also attempt to show best practices in coding against the World Locking Tools APIs.
 
@@ -26,3 +26,5 @@ Supplementary samples can be found in the [World Locking Tools Samples](https://
 [Ray Pin Sample](Samples/RayPins.md)
 
 [World Locking Tools with Azure Spatial Anchors Sample](Samples/WLT_ASA_Sample.md)
+
+[In a Vehicle Moving Through Virtual Space Sample](Samples/Vehicle.md)
