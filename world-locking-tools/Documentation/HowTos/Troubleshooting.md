@@ -69,8 +69,6 @@ If targeting the Unity's built-in VR support, also known as Legacy XR, then chec
 
 You must have **Virtual Reality Supported** selected, and the **Windows Mixed Reality** selected in **Virtual Reality SDKs**.
 
-If using Unity's AR Subsystems / XR SDK, then check that you've followed all the steps [here](XRSDK.md). Likely culprits are missing one of the required packages, or if using MRTK, that the appropriate profile hasn't been setup on the MixedRealityToolkit object.
-
 If you're using Unity's AR Subsystems / XR SDK, confirm that you've followed all the steps in our [Cross Platform using Unity's XR SDK Plugin system](XRSDK.md) article. Likely culprits are:
 
 * Missing one of the required packages.
