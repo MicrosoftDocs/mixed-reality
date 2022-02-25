@@ -11,7 +11,7 @@ keywords: Unity, HoloLens, HoloLens 2, Augmented Reality, Mixed Reality, ARCore,
 
 # Example applications
 
-This project ships with several sample applications. These are working apps demonstrating World Locking Tools' capabilities, and scenarios which World Locking Tools enables.
+This project ships with several sample applications. These working applications demonstrate World Locking Tools' capabilities, and scenarios which World Locking Tools enables.
 
 They also attempt to show best practices in coding against the World Locking Tools APIs.
 
