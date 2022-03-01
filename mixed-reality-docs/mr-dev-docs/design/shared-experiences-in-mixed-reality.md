@@ -12,7 +12,7 @@ keywords: shared experience, mixed reality, hologram, spatial anchor, multi-user
 
 Holograms don't need to stay private to just one user. Holographic apps may share [spatial anchors](spatial-anchors.md) from one HoloLens, iOS, or Android device to another, enabling users to render a hologram at the same place in the real world across multiple devices.
 
-Check out [Microsoft Mesh (Preview)](https://docs.microsoft.com/en-us/mesh/overview), our latest shared experience offering in Mixed Reality.
+Check out [Microsoft Mesh (Preview)](https://docs.microsoft.com/mesh/overview), our latest shared experience offering in Mixed Reality.
 
 ## Six questions to define shared scenarios
 
