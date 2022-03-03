@@ -1,7 +1,7 @@
 # [OpenXR](#tab/openxr)
 
 To get started with a **new Unity project** using MRTK:
-1. Click the link below to go to the HoloLens Fundamentals learning path.
+1. Click the blue button below to go to the HoloLens Fundamentals learning path.
 1. Click the link to the second module in the learning path, "Set up a mixed reality project in Unity with the Mixed Reality Toolkit."
 
 ![Screen shot of the link to instructions for setting up a mixed reality project.](../../images/024-set-up-openxr-link.png)
