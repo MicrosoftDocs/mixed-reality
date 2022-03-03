@@ -92,7 +92,7 @@ If you can see your controllers in the Mixed Reality home environment but not in
 
 Check the [Bluetooth questions section](motion-controller-problems.md#how-can-i-tell-if-im-using-bluetooth-technology). Poor Bluetooth link quality usually causes these problems.
 
-## I inserted fully charged batteries but the controller virtual battery level does not indicate that the controllers are fully charged or reports low battery levels.
+## I inserted fully charged batteries but the controller virtual battery level does not indicate that the controllers are fully charged or reports low battery levels
 
 * Motion controller battery level is tuned for AA batteries that are rated for 1.5V. Some low voltage batteries may not report as full although they're fully charged.
 * Make sure your AA batteries are rated correctly and that the copper contacts are not obstructed and have access to the batteries. 
