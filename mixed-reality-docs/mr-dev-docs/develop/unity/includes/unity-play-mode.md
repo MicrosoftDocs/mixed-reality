@@ -3,8 +3,19 @@
 1. On your HoloLens, go to the **Microsoft Store** and install the **[Holographic Remoting Player](https://www.microsoft.com/store/p/holographic-remoting-player/9nblggh4sv40)** app.
 1. On your HoloLens, start the **Holographic Remoting Player** app.
 1. In Unity, on the menu bar, select **Edit** > **Project Settings**.
-1. In the left-side column, select **XR Plug-in Management**.
-1. Ensure the **PC, Mac & Linux Standalone settings** tab is selected, and then select **OpenXR**, **Windows Mixed Reality feature group**, and **Holographic Remoting remote app feature group**.
+1. In the left-side column, select **XR Plug-in Management**. You might end up on the **Toolchain Management** page. If so, return to the **XR Plug-in Management** page.
+1. Ensure the **PC, Mac & Linux Standalone settings** tab is selected (you can hover the cursor over a tab to see its name), and then select **OpenXR**.
+1. A **Warning** dialog appears asking if you want to enable the backends by restarting Unity. Click **Yes**.
+1. When Unity reopens, **OpenXR** is selected. You see the yellow symbol.
+1. In the **Validation** dialog, click **Edit**.
+1. Click the symbol, and then **Fix All**.
+1. You see the **OpenXR** panel. It shows **OpenXR Feature Groups**.
+
+At this point, I'm stuck. None of the options are clickable.
+
+Analysis: It looks like you installed the (Unity) OpenXR plugin and XR Plugin Management plugin but not the (MS) Mixed Reality OpenXR Plugin.
+
+--------Old instructions:
 1. In the left-side column under **XR Plug-in Management**, select **OpenXR**.
 1. Ensure the **PC, Mac & Linux Standalone settings** tab is selected, and then, under **OpenXR Feature Groups**, make sure **All Features** is selected.
 1. To the right of **All Features**, select **Holographic Remoting for Play Mode**.
