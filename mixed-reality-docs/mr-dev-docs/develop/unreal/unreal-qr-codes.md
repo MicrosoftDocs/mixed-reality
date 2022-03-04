@@ -2,7 +2,7 @@
 title: QR codes in Unreal
 description: Learn how to setup, use, and track QR codes in Unreal mixed reality applications.
 author: vtieto
-ms.author: v-vtieto
+ms.author: vinnietieto
 ms.date: 11/03/2021
 ms.topic: article
 ms.localizationpriority: high
