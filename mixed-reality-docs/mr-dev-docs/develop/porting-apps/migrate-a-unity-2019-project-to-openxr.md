@@ -2,7 +2,7 @@
 title: Migrate a Unity 2019 project to Unity 2020 + OpenXR
 description: Learn how to Migrate a Unity 2019 project to Unity 2020 + OpenXR.
 author: vtieto
-ms.author: v-vtieto
+ms.author: vinnietieto
 ms.date: 10/29/2021
 ms.topic: article
 keywords: Unity, mixed reality, development, getting started, new project, Windows Mixed Reality, XR, mrtk, Unity 2020, Unity 2019, OpenXR, migrate
