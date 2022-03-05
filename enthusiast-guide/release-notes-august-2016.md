@@ -79,7 +79,7 @@ Contact your local Microsoft account manager to purchase the Microsoft HoloLens 
 </tr><tr>
 <td><a href="/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#kiosk-mode">Kiosk mode</a></td><td></td><td>✔️</td>
 </tr><tr>
-<th colspan="3" style="text-align: left;"> Management and deployment</th>
+<th colspan="3"> Management and deployment</th>
 </tr><tr>
 <td>Mobile Device Management (MDM)</td><td></td><td>✔️</td>
 </tr><tr>
@@ -91,7 +91,7 @@ Contact your local Microsoft account manager to purchase the Microsoft HoloLens 
 </tr><tr>
 <td><a href="/microsoft-store/working-with-line-of-business-apps">Business Store Portal</a></td><td></td><td>✔️</td>
 </tr><tr>
-<th colspan="3" style="text-align: left;"> Security and Identity</th>
+<th colspan="3"> Security and Identity</th>
 </tr><tr>
 <td>Log in with Azure Active Directory (AAD)</td><td>✔️</td><td>✔️</td>
 </tr><tr>
@@ -101,7 +101,7 @@ Contact your local Microsoft account manager to purchase the Microsoft HoloLens 
 </tr><tr>
 <td><a href="/windows-hardware/design/device-experiences/oem-secure-boot">Secure boot</a></td><td>✔️</td><td>✔️</td>
 </tr><tr>
-<th colspan="3" style="text-align: left;"> Servicing and Support</th>
+<th colspan="3"> Servicing and Support</th>
 </tr><tr>
 <td>Automatic system updates as they arrive</td><td>✔️</td><td>✔️</td>
 </tr><tr>

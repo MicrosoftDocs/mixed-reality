@@ -33,7 +33,7 @@ Your [Windows Mixed Reality compatible PC](windows-mixed-reality-minimum-pc-hard
 </tr><tr>
 <td>Surface Mini DisplayPort to HDMI 2.0 Adapter</td><td>✔️</td><td>✔️</td>
 </tr><tr>
-<td>Pluggable Mini DisplayPort to Active HDMI 2.0 </td><td">✔️</td><td>✔️</td>
+<td>Pluggable Mini DisplayPort to Active HDMI 2.0 </td><td>✔️</td><td>✔️</td>
 </tr><tr>
 <td>Cable Matters Active Mini DisplayPort to HDMI Adapter Supporting 4K 60 Hz</td><td>✔️</td><td>✔️</td>
 </tr><tr>
