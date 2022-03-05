@@ -62,10 +62,10 @@ Users need to be able to easily access UI controls even if they've been blocked,
 
 ## About the author
 
-<table style="border-collapse:collapse">
+<table>
 <tr>
-<td style="border-style: none" width="60"><img alt="Picture of Marcus Ghaly" width="60" height="60" src="images/marcus-ghaly-200px.jpg"></td>
-<td style="border-style: none"><b>Marcus Ghaly</b><br>Sr. Holographic Designer @Microsoft</td>
+<td width="60"><img alt="Picture of Marcus Ghaly" width="60" height="60" src="images/marcus-ghaly-200px.jpg"></td>
+<td><b>Marcus Ghaly</b><br>Sr. Holographic Designer @Microsoft</td>
 </tr>
 </table>
 

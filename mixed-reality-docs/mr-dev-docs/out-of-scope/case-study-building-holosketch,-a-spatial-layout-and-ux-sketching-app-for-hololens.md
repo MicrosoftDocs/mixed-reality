@@ -162,11 +162,11 @@ Move, Rotate, Scale, Save, and Load Scene are available from the Tool Belt Menu.
 
 ## Download the app
 
-<table style="border-collapse:collapse">
+<table>
 <tr>
-<td style="border-style: none" width="60px"><img alt="HoloSketch app icon" width="60" height="60" src="images/holosketch-app-icon.png">
+<td width="60px"><img alt="HoloSketch app icon" width="60" height="60" src="images/holosketch-app-icon.png">
 </td>
-<td style="border-style: none"><a href="https://www.microsoft.com/store/p/holosketch/9p3br4t5m4tv">Download and install the HoloSketch app for free from the Microsoft Store</a>
+<td><a href="https://www.microsoft.com/store/p/holosketch/9p3br4t5m4tv">Download and install the HoloSketch app for free from the Microsoft Store</a>
 </td>
 </tr>
 </table>
@@ -184,13 +184,13 @@ You can use the video recording feature in HoloLens by saying 'Hey Cortana, Star
 
 ## About the authors
 
-<table style="border-collapse:collapse">
+<table>
 <tr>
-<td style="border-style: none" width="60px"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
-<td style="border-style: none"><a href="http://dongyoonpark.com" target="_blank"><b>Yoon Park</b></a><br>UX Designer @Microsoft</td>
+<td width="60px"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
+<td><a href="http://dongyoonpark.com" target="_blank"><b>Yoon Park</b></a><br>UX Designer @Microsoft</td>
 </tr>
 <tr>
-<td style="border-style: none" width="60px"><img alt="Picture of Patrick Sebring" width="60" height="60" src="images/paseb-60px.jpg"></td>
-<td style="border-style: none"><b>Patrick Sebring</b><br>Developer @Microsoft</td>
+<tdwidth="60px"><img alt="Picture of Patrick Sebring" width="60" height="60" src="images/paseb-60px.jpg"></td>
+<td><b>Patrick Sebring</b><br>Developer @Microsoft</td>
 </tr>
 </table> 

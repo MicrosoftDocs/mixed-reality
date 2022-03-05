@@ -68,6 +68,7 @@ Contact your local Microsoft account manager to purchase the Microsoft HoloLens 
 
 ### Development Edition vs. Commercial Suite
 
+
 <table>
 <tr>
 <th>Features</th><th>Development Edition</th><th>Commercial Suite</th>
