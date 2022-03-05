@@ -23,27 +23,27 @@ Your [Windows Mixed Reality compatible PC](windows-mixed-reality-minimum-pc-hard
 
 <table>
 <tr>
-<th style="width:30%">Type</th><th style="width:40%">Adapter</th><th style="width:15%">60 Hz capable</th><th style="width:15%">90 Hz capable</th>
+<th>Type</th><th>Adapter</th><th>60 Hz capable</th><th>90 Hz capable</th>
 </tr><tr>
-<td rowspan="2" style="vertical-align: middle;">DisplayPort (full-size) to HDMI 2.0</td><td>Club3D DisplayPort 1.2 to HDMI 2.0 Active Adapter</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td rowspan="2">DisplayPort (full-size) to HDMI 2.0</td><td>Club3D DisplayPort 1.2 to HDMI 2.0 Active Adapter</td><td>✔️</td><td>✔️</td>
 </tr><tr>
-<td>Cable Matters Active DisplayPort to HDMI Adapter Supporting 4K 60 Hz</td><td style="text-align: center; vertical-align: middle;">✔️</td><td style="text-align: center; vertical-align: middle;">✔️</td>
+<td>Cable Matters Active DisplayPort to HDMI Adapter Supporting 4K 60 Hz</td><td>✔️</td><td>✔️</td>
 </tr><tr>
-<td rowspan="4" style="vertical-align: middle;">Mini DisplayPort (MiniDP) to HDMI 2.0</td><td>Club3D Mini DisplayPort 1.2 to HDMI 2.0 Active Adapter</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td rowspan="4">Mini DisplayPort (MiniDP) to HDMI 2.0</td><td>Club3D Mini DisplayPort 1.2 to HDMI 2.0 Active Adapter</td><td>✔️</td><td>✔️</td>
 </tr><tr>
-<td>Surface Mini DisplayPort to HDMI 2.0 Adapter</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td>Surface Mini DisplayPort to HDMI 2.0 Adapter</td><td>✔️</td><td>✔️</td>
 </tr><tr>
-<td>Pluggable Mini DisplayPort to Active HDMI 2.0 </td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td>Pluggable Mini DisplayPort to Active HDMI 2.0 </td><td">✔️</td><td>✔️</td>
 </tr><tr>
-<td>Cable Matters Active Mini DisplayPort to HDMI Adapter Supporting 4K 60 Hz</td><td style="text-align: center; vertical-align: middle;">✔️</td><td style="text-align: center; vertical-align: middle;">✔️</td>
+<td>Cable Matters Active Mini DisplayPort to HDMI Adapter Supporting 4K 60 Hz</td><td>✔️</td><td>✔️</td>
 </tr><tr>
-<td style="vertical-align: middle;">USB 3.0 Type-C (for use with Microsoft Surface Book 2)</td><td>Surface USB-C to HDMI Adapter (supports HDMI 2.0)</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td>USB 3.0 Type-C (for use with Microsoft Surface Book 2)</td><td>Surface USB-C to HDMI Adapter (supports HDMI 2.0)</td><td>✔️</td><td>✔️</td>
 </tr><tr>
-<td rowspan="3" style="vertical-align: middle;">USB 3.0 Type-C (with Thunderbolt 3 support)</td><td>Surface USB-C to HDMI Adapter (supports HDMI 2.0)</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td rowspan="3">USB 3.0 Type-C (with Thunderbolt 3 support)</td><td>Surface USB-C to HDMI Adapter (supports HDMI 2.0)</td><td>✔️</td><td>✔️</td>
 </tr><tr>
-<td>Pluggable USB-C to HDMI 2.0 (not compatible with Microsoft Surface Book 2)</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td>Pluggable USB-C to HDMI 2.0 (not compatible with Microsoft Surface Book 2)</td><td>✔️</td><td>✔️</td>
 </tr><tr>
-<td>Accell USB-C to HDMI 2.0</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td>Accell USB-C to HDMI 2.0</td><td>✔️</td><td>✔️</td>
 </tr>
 </table>
 
@@ -54,83 +54,83 @@ These tables will help you determine if you'll need display or USB adapters for 
 ### [Windows Mixed Reality Ultra PC Badge (90 Hz)](Windows-Mixed-Reality-minimum-PC-hardware-compatibility-guidelines.md)
 
 <table>
-  <tr style="border: 1px solid black">
-    <th colspan="4" style="border: 1px solid black; background-color: lightgrey">Computer display output</th>
-    <th colspan="3" style="border: 1px solid black; background-color: lightgrey">Computer USB port</th>
-    <th rowspan="2" style=" vertical-align: middle; border: 1px solid black; background-color: lightgrey">Required adapter(s)</th>
+  <tr>
+    <th colspan="4">Computer display output</th>
+    <th colspan="3">Computer USB port</th>
+    <th rowspan="2">Required adapter(s)</th>
   </tr>
-  <tr style="border: 1px solid black; background-color: lightgrey">
-    <th style="border: 1px solid black; background-color: lightgrey">HDMI 1.4</th>
-    <th style="border: 1px solid black; background-color: lightgrey">HDMI 2.0</th>
-    <th style="border: 1px solid black; background-color: lightgrey">DisplayPort 1.2</th>
-    <th style="border: 1px solid black; background-color: lightgrey">Mini DisplayPort 1.2</th>
-    <th style="border: 1px solid black; background-color: lightgrey">USB 3.0 Type-C</th>
-    <th style="border: 1px solid black; background-color: lightgrey">USB 3.0 Type-A</th>
-    <th style="border: 1px solid black; background-color: lightgrey">USB 3.0 Type-C</th>
+  <tr>
+    <th>HDMI 1.4</th>
+    <th>HDMI 2.0</th>
+    <th>DisplayPort 1.2</th>
+    <th>Mini DisplayPort 1.2</th>
+    <th>USB 3.0 Type-C</th>
+    <th>USB 3.0 Type-A</th>
+    <th>USB 3.0 Type-C</th>
   </tr>
-  <tr style="border: 1px solid black">
-    <td rowspan="8" style="text-align: center;  vertical-align: middle; border: 1px solid black">Not supported</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black">✔️</td><td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td><td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black">✔️</td><td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="border: 1px solid black">None</td>
+  <tr>
+    <td rowspan="8">Not supported</td>
+    <td>✔️</td><td> -</td>
+    <td> -</td><td> -</td>
+    <td>✔️</td><td> -</td>
+    <td>None</td>
   </tr>
-  <tr style="border: 1px solid black">
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black">✔️</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black">✔️</td>
-    <td style="border: 1px solid black">USB 3.0 Type-C to USB 3.0 Type-A</td>
+  <tr>
+    <td>✔️</td>
+    <td> -</td>
+    <td> -</td>
+    <td> -</td>
+    <td> -</td>
+    <td>✔️</td>
+    <td>USB 3.0 Type-C to USB 3.0 Type-A</td>
   </tr>
-  <tr style="border: 1px solid black">
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black">✔️</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black">✔️</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="border: 1px solid black">DisplayPort 1.x to HDMI 2.0</td>
+  <tr>
+    <td> -</td>
+    <td>✔️</td>
+    <td> -</td>
+    <td> -</td>
+    <td>✔️</td>
+    <td> -</td>
+    <td>DisplayPort 1.x to HDMI 2.0</td>
   </tr>
-  <tr style="border: 1px solid black">
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black">✔️</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black">✔️</td>
-    <td style="border: 1px solid black">DisplayPort 1.x to HDMI 2.0 USB 3.0 Type-C to USB 3.0 Type-A</td>
+  <tr>
+    <td> -</td>
+    <td>✔️</td>
+    <td> -</td>
+    <td> -</td>
+    <td> -</td>
+    <td>✔️</td>
+    <td>DisplayPort 1.x to HDMI 2.0 USB 3.0 Type-C to USB 3.0 Type-A</td>
   </tr>
-  <tr style="border: 1px solid black">
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black">✔️</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black">✔️</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="border: 1px solid black">Mini DisplayPort 1.x to HDMI 2.0</td>
+  <tr>
+    <td> -</td>
+    <td> -</td>
+    <td>✔️</td>
+    <td> -</td>
+    <td>✔️</td>
+    <td> -</td>
+    <td>Mini DisplayPort 1.x to HDMI 2.0</td>
   </tr>
-  <tr style="border: 1px solid black">
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black">✔️</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black">✔️</td>
-    <td style="border: 1px solid black">Mini DisplayPort 1.x to HDMI 2.0 USB 3.0 Type-C to USB 3.0 Type-A</td>
+  <tr>
+    <td> -</td>
+    <td> -</td>
+    <td>✔️</td>
+    <td> -</td>
+    <td> -</td>
+    <td>✔️</td>
+    <td>Mini DisplayPort 1.x to HDMI 2.0 USB 3.0 Type-C to USB 3.0 Type-A</td>
   </tr>
-  <tr style="border: 1px solid black">
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td><td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td><td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td><td style="text-align: center;  vertical-align: middle; border: 1px solid black">✔️</td><td style="text-align: center;  vertical-align: middle; border: 1px solid black">✔️</td><td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td><td style="border: 1px solid black">USB 3.0 Type-C to HDMI 2.0</td>
+  <tr>
+    <td> -</td><td> -</td><td> -</td><td>✔️</td><td>✔️</td><td> -</td><td>USB 3.0 Type-C to HDMI 2.0</td>
   </tr>
-  <tr style="border: 1px solid black">
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black">✔️</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center;  vertical-align: middle; border: 1px solid black">✔️</td>
-    <td style="border: 1px solid black">USB 3.0 Type-C to HDMI 2.0 USB 3.0 Type-C to USB 3.0 Type-A</td>
+  <tr>
+    <td> -</td>
+    <td> -</td>
+    <td> -</td>
+    <td>✔️</td>
+    <td> -</td>
+    <td>✔️</td>
+    <td>USB 3.0 Type-C to HDMI 2.0 USB 3.0 Type-C to USB 3.0 Type-A</td>
   </tr>
 </table>
 
@@ -138,119 +138,119 @@ These tables will help you determine if you'll need display or USB adapters for 
 ### [Windows Mixed Reality PC (60 Hz)](Windows-Mixed-Reality-minimum-PC-hardware-compatibility-guidelines.md)
 
 <table>
-  <tr style="border: 1px solid black">
-    <th colspan="4" style="border: 1px solid black; background-color: lightgrey">Computer display output</th>
-    <th colspan="3" style="border: 1px solid black; background-color: lightgrey">Computer USB port</th>
-    <th rowspan="2" style=" vertical-align: middle; border: 1px solid black; background-color: lightgrey">Required adapter(s)</th>
+  <tr>
+    <th colspan="4">Computer display output</th>
+    <th colspan="3">Computer USB port</th>
+    <th rowspan="2">Required adapter(s)</th>
   </tr>
-  <tr style="border: 1px solid black; background-color: lightgrey">
-    <th style="border: 1px solid black; background-color: lightgrey">HDMI 1.4</th>
-    <th style="border: 1px solid black; background-color: lightgrey">HDMI 2.0</th>
-    <th style="border: 1px solid black; background-color: lightgrey">DisplayPort 1.2</th>
-    <th style="border: 1px solid black; background-color: lightgrey">Mini DisplayPort 1.2</th>
-    <th style="border: 1px solid black; background-color: lightgrey">USB 3.0 Type-C</th>
-    <th style="border: 1px solid black; background-color: lightgrey">USB 3.0 Type-A</th>
-    <th style="border: 1px solid black; background-color: lightgrey">USB 3.0 Type-C</th>
+  <tr>
+    <th>HDMI 1.4</th>
+    <th>HDMI 2.0</th>
+    <th>DisplayPort 1.2</th>
+    <th>Mini DisplayPort 1.2</th>
+    <th>USB 3.0 Type-C</th>
+    <th>USB 3.0 Type-A</th>
+    <th>USB 3.0 Type-C</th>
   </tr>
-  <tr style="border: 1px solid black;">
-	<td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
-	<td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-	<td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-	<td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-	<td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-	<td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
-	<td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-	<td style="border: 1px solid black;">None</td>
+  <tr>
+	<td>✔️</td>
+	<td> -</td>
+	<td> -</td>
+	<td> -</td>
+	<td> -</td>
+	<td>✔️</td>
+	<td> -</td>
+	<td>None</td>
 </tr>
-  <tr style="border: 1px solid black;">
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
-    <td style="border: 1px solid black;">USB 3.0 Type-C to USB 3.0 Type-A</td>
+  <tr>
+    <td>✔️</td>
+    <td> -</td>
+    <td> -</td>
+    <td> -</td>
+    <td> -</td>
+    <td> -</td>
+    <td>✔️</td>
+    <td>USB 3.0 Type-C to USB 3.0 Type-A</td>
   </tr>
-  <tr style="border: 1px solid black;">
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="border: 1px solid black;">None</td>
+  <tr>
+    <td> -</td>
+    <td>✔️</td>
+    <td> -</td>
+    <td> -</td>
+    <td> -</td>
+    <td>✔️</td>
+    <td> -</td>
+    <td>None</td>
   </tr>
-  <tr style="border: 1px solid black;">
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
-    <td style="border: 1px solid black;">USB 3.0 Type-C to USB 3.0 Type-A</td>
+  <tr>
+    <td> -</td>
+    <td>✔️</td>
+    <td> -</td>
+    <td> -</td>
+    <td> -</td>
+    <td> -</td>
+    <td>✔️</td>
+    <td>USB 3.0 Type-C to USB 3.0 Type-A</td>
   </tr>
-  <tr style="border: 1px solid black;">
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="border: 1px solid black;">DisplayPort 1.x to HDMI 2.0</td>
+  <tr>
+    <td> -</td>
+    <td> -</td>
+    <td>✔️</td>
+    <td> -</td>
+    <td> -</td>
+    <td>✔️</td>
+    <td> -</td>
+    <td>DisplayPort 1.x to HDMI 2.0</td>
   </tr>
-  <tr style="border: 1px solid black;">
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
-    <td style="border: 1px solid black;">DisplayPort 1.x to HDMI 2.0 USB 3.0 Type-C to USB 3.0 Type-A</td>
+  <tr>
+    <td> -</td>
+    <td> -</td>
+    <td>✔️</td>
+    <td> -</td>
+    <td> -</td>
+    <td> -</td>
+    <td>✔️</td>
+    <td>DisplayPort 1.x to HDMI 2.0 USB 3.0 Type-C to USB 3.0 Type-A</td>
   </tr>
-  <tr style="border: 1px solid black;">
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
-    <td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-    <td style="border: 1px solid black;">Mini DisplayPort 1.x to HDMI 2.0</td>
+  <tr>
+    <td> -</td>
+    <td> -</td>
+    <td> -</td>
+    <td>✔️</td>
+    <td> -</td>
+    <td>✔️</td>
+    <td> -</td>
+    <td>Mini DisplayPort 1.x to HDMI 2.0</td>
   </tr>
-  <tr style="border: 1px solid black;">
-	<td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-	<td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-	<td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-	<td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
-	<td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-	<td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-	<td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
-	<td style="border: 1px solid black;">Mini DisplayPort 1.x to HDMI 2.0 USB 3.0 Type-C to USB 3.0 Type-A</td>
+  <tr>
+	<td> -</td>
+	<td> -</td>
+	<td> -</td>
+	<td>✔️</td>
+	<td> -</td>
+	<td> -</td>
+	<td>✔️</td>
+	<td>Mini DisplayPort 1.x to HDMI 2.0 USB 3.0 Type-C to USB 3.0 Type-A</td>
   </tr>
-  <tr style="border: 1px solid black;">
-  	<td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-  	<td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-  	<td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-  	<td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-  	<td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
-  	<td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
-  	<td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-  	<td style="border: 1px solid black;">USB 3.0 Type-C to HDMI 2.0</td>
+  <tr>
+  	<td> -</td>
+  	<td> -</td>
+  	<td> -</td>
+  	<td> -</td>
+  	<td>✔️</td>
+  	<td>✔️</td>
+  	<td> -</td>
+  	<td>USB 3.0 Type-C to HDMI 2.0</td>
   </tr>
-  <tr style="border: 1px solid black;">
-	<td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-	<td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-	<td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-	<td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-	<td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
-	<td style="text-align: center; vertical-align: middle; border: 1px solid black"> -</td>
-	<td style="text-align: center; vertical-align: middle; border: 1px solid black">✔️</td>
-	<td style="border: 1px solid black;">USB 3.0 Type-C to HDMI 2.0 USB 3.0 Type-C to USB 3.0 Type-A</td>
+  <tr>
+	<td> -</td>
+	<td> -</td>
+	<td> -</td>
+	<td> -</td>
+	<td>✔️</td>
+	<td> -</td>
+	<td>✔️</td>
+	<td>USB 3.0 Type-C to HDMI 2.0 USB 3.0 Type-C to USB 3.0 Type-A</td>
   </tr>
 </table>
 
