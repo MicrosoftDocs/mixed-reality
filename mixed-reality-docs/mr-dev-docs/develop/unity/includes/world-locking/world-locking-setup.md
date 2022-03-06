@@ -96,7 +96,7 @@ private void Anchor_OnTrackingChanged(WorldAnchor self, bool located)
 }
 ```
 
-Sometimes anchors are located immediately. In this case, this isLocated property of the anchor will be set to true when AddComponent<WorldAnchor>() returns. As a result, the OnTrackingChanged event won't be triggered. A clean pattern would be to call your OnTrackingChanged handler with the initial IsLocated state after attaching an anchor.
+Sometimes anchors are located immediately. In this case, this isLocated property of the anchor will be set to true when AddComponent\<WorldAnchor\>() returns. As a result, the OnTrackingChanged event won't be triggered. A clean pattern would be to call your OnTrackingChanged handler with the initial IsLocated state after attaching an anchor.
 
 ```cs
 Anchor_OnTrackingChanged(anchor, anchor.isLocated);

@@ -50,7 +50,7 @@ These packages are released and supported by Microsoft from source code in the [
 
 The Mixed Reality Toolkit Foundation is the set of code that enables your application to leverage common functionality across Mixed Reality Platforms.
 
-<img src="../features/images/input/MRTK_Package_Foundation.png" width="350px" alt="Pakage foundation" style="display:block;">  
+<img src="../features/images/input/MRTK_Package_Foundation.png" width="350px" alt="Pakage foundation">  
 <sup>MRTK Foundation Package</sup>
 
 The MRTK Foundation package contains the following.
