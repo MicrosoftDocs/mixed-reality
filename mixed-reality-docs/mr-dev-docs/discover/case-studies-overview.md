@@ -2,8 +2,8 @@
 title: Case study overview
 description: Stories, learnings, and experiences the Mixed Reality team has found and jotted down along the way.
 author: grbury 
-ms.author: grbury
-ms.date: 08/24/2019
+ms.author: vinnietieto
+ms.date: 12/30/2021
 ms.topic: overview
 keywords: Windows Mixed Reality, HoloLens, case study, vision, scenarios, case studies, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
@@ -62,6 +62,10 @@ Stories, learnings, and experiences the Mixed Reality team has found and jotted 
         *July 2016*
     :::column-end:::
     :::column:::
+        [![How it works - Mixed Reality Capture Studios](images/mr-capture-studio-hero.png)](../develop/advanced-concepts/how-it-works-mixed-reality-capture-studios.md)
+        **[How it works - Mixed Reality Capture Studios](../develop/advanced-concepts/how-it-works-mixed-reality-capture-studios.md)**<br>
+        Microsoft Mixed Reality Capture Studios enables content creators to create 360-degree holograms from real life subjects that can be used in applications across augmented reality, virtual reality, and 2D screens.<br>
+        *July 2016*    
     :::column-end:::
 :::row-end:::
 

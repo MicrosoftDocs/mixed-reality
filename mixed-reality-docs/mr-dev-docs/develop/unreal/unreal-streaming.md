@@ -90,7 +90,7 @@ In Unreal 4.25.1 and onwards, you can stream your app to a HoloLens 2 device fro
 > The application name in your project settings should be automatically used to create the Windows package. If these are different for some reason, use the Windows executable name in the command prompt.
 
 > [!NOTE]
-> If eye tracking isn't working when streaming from a packaged executable, either disable any other plugins with PC-supported eye trackers (example: Magic Leap) or run the application from the command line with the relevant eye tracking argument (see [command line options](/mixed-reality/develop/unreal/unreal-streaming?tabs=wmr#command-line-options)).
+> If eye tracking isn't working when streaming from a packaged executable, either disable any other plugins with PC-supported eye trackers (example: Magic Leap) or run the application from the command line with the relevant eye tracking argument (see [command line options](?tabs=wmr#command-line-options)).
 
 Hit enter and watch your application start streaming!
 

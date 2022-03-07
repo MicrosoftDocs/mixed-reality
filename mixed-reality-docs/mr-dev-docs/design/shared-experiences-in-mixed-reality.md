@@ -2,8 +2,8 @@
 title: Shared experiences in mixed reality
 description: Holographic apps may share spatial anchors from one HoloLens to another, enabling users to render a hologram at the same place in the real world, across multiple devices.
 author: thetuvix
-ms.author: grbury
-ms.date: 02/10/2019
+ms.author: vinnietieto
+ms.date: 12/30/2021
 ms.topic: article
 keywords: shared experience, mixed reality, hologram, spatial anchor, multi-user, multi
 ---
@@ -11,6 +11,8 @@ keywords: shared experience, mixed reality, hologram, spatial anchor, multi-user
 # Shared experiences in mixed reality
 
 Holograms don't need to stay private to just one user. Holographic apps may share [spatial anchors](spatial-anchors.md) from one HoloLens, iOS, or Android device to another, enabling users to render a hologram at the same place in the real world across multiple devices.
+
+Check out [Microsoft Mesh (Preview)](https://docs.microsoft.com/mesh/overview), our latest shared experience offering in Mixed Reality.
 
 ## Six questions to define shared scenarios
 
@@ -153,11 +155,6 @@ Leverage [Azure Spatial Anchors](/azure/spatial-anchors/) in your app.  Enabling
 ## Share first person perspective
 
 Leverage built-in Miracast support, for local users when you have a supported Miracast receiver, such as a PC or TV – no additional app code is needed.
-
-Leverage [MixedReality-WebRTC](https://github.com/microsoft/mixedreality-webrtc) in your app, for remote users or when you have non-Miracast devices that you’d like to share to.  Enabling a WebRTC connection enables 1:1 audio/video streams between users, with a data channel for messaging across devices, as well.  The mixed reality implementation optimizes for HoloLens, by providing mixed reality capture video stream of the view of the HoloLens user to others.  If you desire to scale up video streaming to multiple remote clients, an [MCU service provider](https://webrtcglossary.com/mcu/) (Multipoint Conferencing Unit) is typically used, such as [SignalWire](https://signalwire.com/).  A one-click SignalWire deployment to Azure is available via [Freeswitch](https://github.com/andywolk/azure-freeswitch-gpu-windows).
-
-> [!NOTE]
-> Please note that SignalWire is a paid service and is not owned/affiliated with Microsoft.
 
 ## Presenter-Spectator applications and Demos
 

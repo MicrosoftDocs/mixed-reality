@@ -2,7 +2,7 @@
 title: Case study - My first year on the HoloLens design team
 description: My journey from a 2D flatland to the 3D world started when I joined the HoloLens design team in January, 2016.
 author: designnomad
-ms.author: v-vtieto
+ms.author: vinnietieto
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, HoloLens, design, editorial, personal
@@ -120,10 +120,10 @@ A year ago, I felt like all of this was a bit overwhelming. Now I can tell you t
 
 ## About the author
 
-<table style="border-collapse:collapse" padding-left="0px">
+<table>
 <tr>
-<td style="border-style: none" width="60"><img alt="Picture of Hae Jin Lee" width="60" height="60" src="../develop/advanced-concepts/images/haejinlee.jpg"></td>
-<td style="border-style: none"><b>Hae Jin Lee</b><br>UX Designer @Microsoft</td>
+<tD width="60"><img alt="Picture of Hae Jin Lee" width="60" height="60" src="../develop/advanced-concepts/images/haejinlee.jpg"></td>
+<td><b>Hae Jin Lee</b><br>UX Designer @Microsoft</td>
 </tr>
 </table>
 
