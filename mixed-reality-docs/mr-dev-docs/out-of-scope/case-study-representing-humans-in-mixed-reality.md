@@ -71,7 +71,7 @@ Just as the abstract art of James Turrell and the critical realism of Ai Weiwei 
 
 ## About the author
 
-<tablE>
+<table>
 <tr>
 <td width="60"><img alt="Picture of Mark Vitazko" width="60" height="60" src="images/mark-vitazko.jpg"></td>
 <td><b>Mark Vitazko</b><br>UX Designer @Microsoft</td>
