@@ -2,7 +2,7 @@
 title: Case study - 3 HoloStudio UI and interaction design learnings
 description: HoloStudio UI and interaction design learnings
 author: rwinj
-ms.author: marcghal
+ms.author: randyw
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens, HoloStudio, Windows Mixed Reality
