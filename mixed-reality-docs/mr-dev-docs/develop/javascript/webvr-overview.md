@@ -7,6 +7,8 @@ ms.date: 04/10/2020
 ms.topic: article
 keywords: WebVR, WebXR, WinMR, WebAR, web vr, web xr, web mr, web ar, 360, 360 video, 360 videos, 360 photo, 360 photos, 360 content, immersive web, immersiveweb, IW
 ROBOTS: NOINDEX
+ms.custom: team=cloud_advocates
+ms.contributors: ayyonet-03232021
 ---
 
 # WebVR Overview
