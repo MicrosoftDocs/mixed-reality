@@ -1,8 +1,8 @@
 ---
 title: Spatial sound in Unity
 description: Learn how to play and attenuate spatial sounds from a specific 3D point within your Unity scene with examples.
-author: kegodin
-ms.author: v-hferrone
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 11/07/2019
 ms.topic: article
 keywords: Unity, spatial sound, HRTF, room size, mixed reality headset, windows mixed reality headset, virtual reality headset, MRTK, Mixed Reality Toolkit, spatializer, reverb
