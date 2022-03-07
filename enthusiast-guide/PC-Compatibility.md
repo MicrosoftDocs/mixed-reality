@@ -1,8 +1,8 @@
 ---
 title: Windows Mixed Reality PC Check app
 description: How to find and use the Windows Mixed Reality PC Check app to test your PC's compatibility before purchasing a Windows Mixed Reality headset.
-author: hferrone
-ms.author: v-hferrone
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 09/16/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, compatible, compatibility, PC, system requirements
