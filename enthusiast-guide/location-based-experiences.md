@@ -2,7 +2,7 @@
 title: Location Based Entertainment with Windows Mixed Reality
 description: Learn about Windows Mixed Reality for Location Based Entertainment—hardware, backpack PCs, tracking, configuration, and support.
 author: qianw211
-ms.author: v-qianwen
+ms.author: qianwen
 ms.date: 11/17/2021
 ms.topic: article
 keywords: mixed reality, vr, lbe, location, mixed reality headset, windows mixed reality headset, virtual reality headset, hardware, HoloLens, multiplayer, cloud services, azure
