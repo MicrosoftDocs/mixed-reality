@@ -11,7 +11,7 @@
 
 1. Select **Discover Features.**
 
-**Note**: You may need to wait a few seconds while the Tool refreshes the packages from the feeds.
+    **Note**: You may need to wait a few seconds while the Tool refreshes the packages from the feeds.
 
 1. On the **Discover Features** page, note that there is a list of six package groups.
 
