@@ -109,4 +109,3 @@ To learn more about WPA, see the [WPA documentation](/windows-hardware/test/wpt/
 Dive deeper into WPA or learn more about performance tracing
 - [Step-by-step guide to use Windows Performance Analyzer](/windows-hardware/test/wpt/wpa-step-by-step-guide.md)
 - [Authoring Recording Profiles](/windows-hardware/test/wpt/authoring-recording-profiles)
-- 
