@@ -2,7 +2,7 @@
 title: Contributing instructions
 description: Learn how to contribute to the Mixed Reality developer docs on the docs.microsoft.com platform using GitHub-flavored Markdown. 
 author: qianw211
-ms.author: v-qianwen
+ms.author: qianwen
 ms.date: 11/30/2021
 ms.topic: article
 ---
