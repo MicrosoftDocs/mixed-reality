@@ -1,8 +1,8 @@
 ---
 title: Voice commanding
 description: Gaze, gesture and voice (GGV) are the primary means of interaction on HoloLens. This article provides thoughtful guidance on voice design.
-author: shengkait
-ms.author: shentan
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 04/21/2019
 ms.topic: article
 keywords: Windows Mixed Reality, design, interaction, voice

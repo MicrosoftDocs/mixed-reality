@@ -1,8 +1,8 @@
 ---
 title: Case study - The pursuit of more personal computing
 description: Tomorrow’s opportunities are uncovered by building products today. The solutions these products provide reveal what’s necessary to advance the future.
-author: danielescudero
-ms.author: daescu
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, HoloLens, case study, vision, scenarios

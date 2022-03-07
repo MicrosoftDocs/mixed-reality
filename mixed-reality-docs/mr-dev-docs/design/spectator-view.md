@@ -1,8 +1,8 @@
 ---
 title: Spectator View 
 description: Visualize holograms from an external device to show or record a mixed reality experience on an external display.
-author: chrisfromwork
-ms.author: chriba
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 02/11/2019
 ms.topic: article
 ms.localizationpriority: high
