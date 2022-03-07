@@ -29,11 +29,11 @@ You'll then get an analysis of your PC against the required hardware, drivers, a
 <tr>
 <th>Icon</th><th>What it means</th>
 </tr><tr>
-<td> <img alt="Succeeded" width="30" height="30" src="images/glyph-succeeded.png" /></td><td style="vertical-align: middle">Your PC passes the required item.</td>
+<td> <img alt="Succeeded" width="30" height="30" src="images/glyph-succeeded.png" /></td><td>Your PC passes the required item.</td>
 </tr><tr>
-<td> <img alt="Warning" width="30" height="30" src="images/glyph-warning.png" /></td><td style="vertical-align: middle">There may be issues with your PC for the given requirement. If you run into any issues, you may need to troubleshoot or upgrade your PC.</td>
+<td> <img alt="Warning" width="30" height="30" src="images/glyph-warning.png" /></td><td>There may be issues with your PC for the given requirement. If you run into any issues, you may need to troubleshoot or upgrade your PC.</td>
 </tr><tr>
-<td> <img alt="Error" width="30" height="30" src="images/glyph-error.png" /></td><td style="vertical-align: middle">Your PC doesn't meet the requirements for the specified item.</td>
+<td> <img alt="Error" width="30" height="30" src="images/glyph-error.png" /></td><td>Your PC doesn't meet the requirements for the specified item.</td>
 </tr>
 </table>
 
