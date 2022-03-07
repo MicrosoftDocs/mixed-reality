@@ -9,7 +9,7 @@ keywords: HoloLens, testing, performance tracing, WPA, WPR, device portal
 ---
 ### Performance Tracing
 
-![Performance Tracing page in Windows Device Portal on Microsoft HoloLens](images/using-windows-portal-img-08.png)<br>
+![Performance Tracing page in Windows Device Portal on Microsoft HoloLens](images/WPA-show-graphs-in-analysis-tab.PNG)<br>
 *Performance Tracing page in Windows Device Portal on Microsoft HoloLens*
 
 To get a detailed understanding of system and application behavior and resource usage for HoloLens, you can use the performance tracing feature.
@@ -106,6 +106,6 @@ There are several files you'll need to analyze your trace file in WPA. We've inc
 To learn more about WPA, see the [WPA documentation](/windows-hardware/test/wpt/windows-performance-analyzer).
 
 ## Next steps
-Dive deeper into WPA or learn more about performance tracing
+Dive deeper into WPA or learn more about performance tracing.
 - [Step-by-step guide to use Windows Performance Analyzer](/windows-hardware/test/wpt/wpa-step-by-step-guide.md)
 - [Authoring Recording Profiles](/windows-hardware/test/wpt/authoring-recording-profiles)
