@@ -506,6 +506,8 @@
     items:
     - name: Using the Windows Device Portal
       href: advanced-concepts/using-the-windows-device-portal.md
+    - name: Performance tracing for HoloLens 2
+      href: advanced-concepts/hololens-performance-tracing-howto.md
     - name: Device portal API reference (REST)
       href: advanced-concepts/device-portal-api-reference.md
   - name: Research tools
