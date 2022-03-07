@@ -1,8 +1,8 @@
 ---
 title: Ford GT40 experience
 description: Follow along as we explore the making of the Ford GT40 mixed reality application with MRTK for HoloLens 2 in Unreal.
-author: hferrone
-ms.author: v-hferrone
+author: vtieto
+ms.author: vinnietieto
 ms.date: 3/23/2021
 ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, deploy to device, PC, documentation, mixed reality headset, windows mixed reality headset, virtual reality headset
