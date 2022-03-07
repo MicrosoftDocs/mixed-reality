@@ -11,7 +11,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 Input providers are registered in the **Registered Service Providers Profile**, found in the Mixed Reality Toolkit component:
 
-<img src="../images/input/RegisteredServiceProviders.PNG" width="650px" style="display:block;" alt="Service providers">
+<img src="../images/input/RegisteredServiceProviders.PNG" width="650px" alt="Service providers">
 
 These are the input providers available out of the box, together with their corresponding controllers:
 

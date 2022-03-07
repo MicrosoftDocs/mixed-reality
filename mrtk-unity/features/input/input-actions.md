@@ -15,7 +15,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, InputAct
 
 Input actions are configured in the **Input Actions Profile**, inside the *Input System Profile* in the Mixed Reality Toolkit component, specifying a name for the action and the type of inputs (*Axis Constraint*) it can be mapped to:
 
-<img src="../images/input/InputActions.png" alt="Input Action" style="max-width:100%;">
+<img src="../images/input/InputActions.png" alt="Input Action">
 
 These are the most mostly commonly used values for **Axis Constraint**:
 
@@ -36,23 +36,23 @@ The way you map an input to and action depends on the type of the input source:
 
 Go to the **Controller Input Mapping Profile**, under the *Input System Profile*. There you will find a list of all supported controllers:
 
-<img src="../images/input/ControllerInputMappingProfile.PNG" alt="Input maping profile" style="max-width:100%;">
+<img src="../images/input/ControllerInputMappingProfile.PNG" alt="Input maping profile">
 
 Select the one you want to configure and a dialog window will appear with all the controller inputs, allowing you to set an action for each of them:
 
-<img src="../images/input/InputActionAssignment.PNG" alt="Input Action Assignment" style="max-width:100%;">
+<img src="../images/input/InputActionAssignment.PNG" alt="Input Action Assignment">
 
 ### Speech input
 
 In the **Speech Command Profile**, under the *Input System Profile*, you'll find the list of currently defined speech commands. To map one of them to an action, just select it in the *Action* drop down.
 
-<img src="../images/input/SpeechCommandsProfile.png" alt="Speech Commands profile" style="max-width:100%;">
+<img src="../images/input/SpeechCommandsProfile.png" alt="Speech Commands profile">
 
 ### Gesture input
 
 The **Gestures Profile**, under the *Input System Profile*, contains all defined gestures. You can map each of them to an action by selecting it in the *Action* drop down.
 
-<img src="../images/input/GestureProfile.png" alt="Gesture profile" style="max-width:100%;">
+<img src="../images/input/GestureProfile.png" alt="Gesture profile">
 
 ## Handling input actions
 
@@ -61,7 +61,7 @@ The **Gestures Profile**, under the *Input System Profile*, contains all defined
 
 The easiest way to handle input actions is to make use of the [`InputActionHandler`](xref:Microsoft.MixedReality.Toolkit.Input.InputActionHandler) script. This allows you to define the action you want to listen to and react to action started and ended events using Unity Events.
 
-<img src="../images/input/InputActionHandler.PNG" alt="Acton Handler" style="max-width:100%;">
+<img src="../images/input/InputActionHandler.PNG" alt="Acton Handler">
 
 If you want more control, you can implement the [`IMixedRealityInputActionHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputActionHandler) interface directly in your script. See the [**Input Events**](input-events.md) section for more details on event handling via handler interfaces.
 
@@ -69,4 +69,4 @@ If you want more control, you can implement the [`IMixedRealityInputActionHandle
 
 See `MRTK/Examples/Demos/Input/Scenes/InputActions` for an example scene showing how to create an action, map it to controller, speech and gesture inputs and use it to rotate an object on command.
 
-<img src="../images/input/InputActionsExample.PNG" alt="Input action example" style="max-width:100%;">
+<img src="../images/input/InputActionsExample.PNG" alt="Input action example">

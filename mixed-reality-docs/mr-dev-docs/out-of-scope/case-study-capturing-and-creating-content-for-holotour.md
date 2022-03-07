@@ -130,18 +130,18 @@ We hope that sharing solutions to some of the bigger challenges we had during pr
 
 ## About the authors
 
-<table style="border:0">
+<table>
 <tr>
-<td style="border:0" width="60px"> <img alt="David Haley" width="60" height="60" src="images/haley.png" /></td>
-<td style="border:0" width="408"> <b>David Haley</b> is a Senior Developer who learned more about camera rigs and video playback than he thought possible from working on HoloTour.</td>
-<td style="border:0" width="60px"> <img alt="Danny Askew" width="60" height="60" src="images/askew.png" /></td>
-<td style="border:0" width="408"> <b>Danny Askew</b> is a Video Artist who made sure your journey through Rome was as flawless as possible.</td>
+<td width="60px"> <img alt="David Haley" width="60" height="60" src="images/haley.png" /></td>
+<td width="408"> <b>David Haley</b> is a Senior Developer who learned more about camera rigs and video playback than he thought possible from working on HoloTour.</td>
+<td width="60px"> <img alt="Danny Askew" width="60" height="60" src="images/askew.png" /></td>
+<td width="408"> <b>Danny Askew</b> is a Video Artist who made sure your journey through Rome was as flawless as possible.</td>
 </tr>
 <tr>
-<td style="border:0" width="60px"> <img alt="Jason Syltebo" width="60" height="60" src="images/syltebo.png" /></td>
-<td style="border:0" width="408"> <b>Jason Syltebo</b> is an Audio Designer who made sure you could experience the soundscape of every destination you visit, even when you go back in time.</td>
-<td style="border:0" width="60px"> <img alt="Travis Steiner" width="60" height="60" src="images/steiner.png" /></td>
-<td style="border:0" width="408"> <b>Travis Steiner</b> is a Design Director who researched and scouted locations, created trip plans, and directed filming on site.</td>
+<td width="60px"> <img alt="Jason Syltebo" width="60" height="60" src="images/syltebo.png" /></td>
+<td width="408"> <b>Jason Syltebo</b> is an Audio Designer who made sure you could experience the soundscape of every destination you visit, even when you go back in time.</td>
+<td width="60px"> <img alt="Travis Steiner" width="60" height="60" src="images/steiner.png" /></td>
+<td width="408"> <b>Travis Steiner</b> is a Design Director who researched and scouted locations, created trip plans, and directed filming on site.</td>
 </tr>
 </table>
 
