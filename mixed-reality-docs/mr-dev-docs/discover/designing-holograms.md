@@ -1,8 +1,8 @@
 ---
 title: Designing holograms
 description: Learn about Mixed Reality through Microsoft's new Designing Holograms application.
-author: hferrone
-ms.author: daescu
+author: vtieto
+ms.author: vinnietieto
 ms.date: 11/24/2020
 ms.topic: article
 keywords: MRTK, Mixed Reality Toolkit, holograms, Designing Holograms, learning, sample app, mixed reality headset, virtual reality headset, what is virtual reality
