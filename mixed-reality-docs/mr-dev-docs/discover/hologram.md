@@ -2,7 +2,7 @@
 title: What is a hologram?
 description: HoloLens lets you view and interact with three-dimensional holograms, objects made of light and sound that appear in the world around you.
 author: qianw211
-ms.author: v-qianwen
+ms.author: qianwen
 ms.date: 07/09/2021
 ms.topic: article
 keywords: Windows Mixed Reality, HoloLens, holograms, design, interaction, mixed reality headset, windows mixed reality headset, what is augmented reality
