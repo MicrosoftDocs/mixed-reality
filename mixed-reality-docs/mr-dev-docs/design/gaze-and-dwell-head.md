@@ -1,8 +1,8 @@
 ---
 title: Head-gaze and dwell
 description: Get started with an overview of the head-gaze and dwell input model, including common scenarios and design principles.
-author:  hferrone
-ms.author: v-hferrone
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 05/13/2019
 ms.topic: article
 keywords: Mixed Reality, gaze, dwell, interaction, design, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, ux, guidelines, list view
