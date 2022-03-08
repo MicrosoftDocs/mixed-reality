@@ -6,7 +6,7 @@ ms.author: moelhama
 ms.date: 02/10/2022
 ms.topic: article
 keywords: Windows Device Portal, HoloLens
-ms.localizationpriority: high
+ms.localizationpriority: higha
 ---
 
 # Using the Windows Device Portal
@@ -307,6 +307,8 @@ Capture [Windows Performance Recorder](/previous-versions/windows/it-pro/windows
 To stop the trace, select the stop link. Stay on this page until the trace file has completed downloading.
 
 Captured ETL files can be opened for analysis in [Windows Performance Analyzer](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448170(v=win.10)).
+
+For a more in-depth look at performance tracing, see the [HoloLens performance tracing how to](../advanced-concepts/hololens-performance-tracing-howto.md).
 
 ### Processes
 
