@@ -78,6 +78,16 @@ There are several files you'll need to analyze your trace file in WPA. We've inc
 
 ### Analyze HoloLens trace file
 
+**Files you need for analysis**
+
+There are several files you'll need to analyze your trace file in WPA. We've included an example WPA profile to help get started.
+
+* HoloLens trace file `(*.elt)`
+* Symbol file `(*.pdb)`. Make sure it's extracted (not zipped).
+* WPA profile `(*.wpaProfile)`. Use this [example WPA Profile for CPU analysis](https://aka.ms/CPUProfileforWPA).
+
+**Analyze trace file in WPA**
+
 1. Set up your files in a folder for WPA to access them.
 
     **Example**
