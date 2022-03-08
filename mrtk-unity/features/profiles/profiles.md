@@ -15,7 +15,7 @@ One of the main ways that the MRTK is configured is through the profiles availab
 
 For example, the input system's behavior is governed by an input system profile, like the `DefaultMixedRealityInputSystemProfile` (Assets/MRTK/SDK/Profiles).
 
-<img src="../images/profiles/input_profile.png" width="650px" alt="Input profile" style="display:block;">
+<img src="../images/profiles/input_profile.png" width="650px" alt="Input profile">
 <sup>Profile Inspector</sup>
 
 ## Background

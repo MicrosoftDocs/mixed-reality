@@ -84,8 +84,8 @@ You can say "Hey Cortana" to bring up Cortana at any time. You don't have to wai
 **HoloLens-specific commands**
 * "What can I say?"
 * "Go to Start" - instead of [bloom](system-gesture.md#bloom) to get to [Start Menu](../discover/navigating-the-windows-mixed-reality-home.md#start-menu)
-* "Launch <app>"
-* "Move <app> here"
+* "Launch \<app\>"
+* "Move \<app\> here"
 * "Take a picture"
 * "Start recording"
 * "Stop recording"

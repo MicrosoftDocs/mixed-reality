@@ -309,9 +309,9 @@ The open-source code is available in [MixedRealityToolkit](https://github.com/Mi
 
 ## About the author
 
-<table style="border:0;width:800px">
+<table>
 <tr>
-<td style="border:0"> <img alt="Jeff Evertt, Software Engineering Lead at Microsoft" width="200" height="205" src="images/jeff-evertt-200px.jpg" /></td><td style="border:0"> <b>Jeff Evertt</b> is a software engineering lead who has worked on HoloLens since the early days, from incubation to experience development. Before HoloLens, he worked on the Xbox Kinect and in the games industry on a wide variety of platforms and games. Jeff is passionate about robotics, graphics, and things with flashy lights that go beep. He enjoys learning new things and working on software, hardware, and particularly in the space where the two intersect.</td>
+<td> <img alt="Jeff Evertt, Software Engineering Lead at Microsoft" width="200" height="205" src="images/jeff-evertt-200px.jpg" /></td><td> <b>Jeff Evertt</b> is a software engineering lead who has worked on HoloLens since the early days, from incubation to experience development. Before HoloLens, he worked on the Xbox Kinect and in the games industry on a wide variety of platforms and games. Jeff is passionate about robotics, graphics, and things with flashy lights that go beep. He enjoys learning new things and working on software, hardware, and particularly in the space where the two intersect.</td>
 </tr>
 </table>
 
