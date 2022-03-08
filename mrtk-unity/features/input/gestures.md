@@ -23,7 +23,7 @@ Gestures are input events based on human hands. There are two types of devices t
 
 Both of these input sources use the _Gesture Settings_ profile to translate Unity's Touch and Gesture events respectively into MRTK's [Input Actions](input-actions.md). This profile can be found under the _Input System Settings_ profile.
 
-<img src="../images/input/GestureProfile.png" alt="Gesture Profile" style="max-width:100%;">
+<img src="../images/input/GestureProfile.png" alt="Gesture Profile">
 
 ## Gesture events
 
