@@ -68,7 +68,7 @@ To learn more about WPA, have a look at these resources:
 * Learn about the [WPA User Interface](/windows-hardware/test/wpt/introduction-to-the-wpa-user-interface).
 * There is excellent information on this website, however, not all of it is relevant for bgiteginners.
 
-**Files you need for WPA trace analysis
+**Files you need for WPA trace analysis**
 
 There are several files you'll need to analyze your trace file in WPA. We've included an example WPA profile to help get started.
 
