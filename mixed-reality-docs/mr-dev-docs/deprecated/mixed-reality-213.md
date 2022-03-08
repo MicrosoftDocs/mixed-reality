@@ -28,9 +28,9 @@ In MR Input 213, we will explore the motion controller's input events by creatin
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details">Immersive headsets</a></th>
+<th>Course</th><th> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th> <a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details">Immersive headsets</a></th>
 </tr><tr>
-<td>MR Input 213: Motion controllers</td><td style="text-align: center;"> </td><td style="text-align: center;"> ✔️</td>
+<td>MR Input 213: Motion controllers</td><td> </td><td> ✔️</td>
 </tr>
 </table>
 

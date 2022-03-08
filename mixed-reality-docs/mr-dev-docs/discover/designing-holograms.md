@@ -1,8 +1,8 @@
 ---
 title: Designing holograms
 description: Learn about Mixed Reality through Microsoft's new Designing Holograms application.
-author: hferrone
-ms.author: daescu
+author: vtieto
+ms.author: vinnietieto
 ms.date: 11/24/2020
 ms.topic: article
 keywords: MRTK, Mixed Reality Toolkit, holograms, Designing Holograms, learning, sample app, mixed reality headset, virtual reality headset, what is virtual reality
@@ -174,17 +174,17 @@ Designing Holograms teaches mixed reality concepts, but it also allows you to tr
 
 ## About the team
 
-<table style="border-collapse:collapse" padding-left="0px">
+<table>
 <tr>
-<td style="border-style: none" width="60"><img alt="Picture of Daniel Escudero" width="60" height="60" src="images/designing-holograms/daniel-escudero.jpeg"></td>
-<td style="border-style: none"><b>Daniel Escudero</b><br><i>Lead Technical Designer</i><br>Dan is the Creative Director on Designing Holograms and currently works as Design Lead for the Microsoft’s Mixed Reality Academy in San Francisco, and was previously a Designer in one of Microsoft’s Mixed Reality Studios in London.</td>
+<td width="60"><img alt="Picture of Daniel Escudero" width="60" height="60" src="images/designing-holograms/daniel-escudero.jpeg"></td>
+<td><b>Daniel Escudero</b><br><i>Lead Technical Designer</i><br>Dan is the Creative Director on Designing Holograms and currently works as Design Lead for the Microsoft’s Mixed Reality Academy in San Francisco, and was previously a Designer in one of Microsoft’s Mixed Reality Studios in London.</td>
 </tr>
 </table>
 
-<table style="border-collapse:collapse" padding-left="0px">
+<table>
 <tr>
-<td style="border-style: none" width="60"><img alt="Picture of Martin Wettig​" width="60" height="60" src="images/designing-holograms/martin-wettig.jpeg"></td>
-<td style="border-style: none"><b>Martin Wettig​</b><br><i>Senior 3D Artist</i><br>Martin leads 3D Art and UI Design on Designing Holograms and was previously a Senior 3D Artist at one of Microsoft’s Mixed Reality Studios in Berlin.​</td>
+<td width="60"><img alt="Picture of Martin Wettig​" width="60" height="60" src="images/designing-holograms/martin-wettig.jpeg"></td>
+<td><b>Martin Wettig​</b><br><i>Senior 3D Artist</i><br>Martin leads 3D Art and UI Design on Designing Holograms and was previously a Senior 3D Artist at one of Microsoft’s Mixed Reality Studios in Berlin.​</td>
 </tr>
 </table>
 

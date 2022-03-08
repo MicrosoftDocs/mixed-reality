@@ -2,7 +2,7 @@
 title: Windows Mixed Reality PC compatibility guidelines
 description: Overview chart outlining the minimum PC system requirements for compatibility with Windows Mixed Reality.
 author: qianw211
-ms.author: v-qianwen
+ms.author: qianwen
 ms.date: 09/22/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Ultra, compatible, compatibility, system requirements, PC

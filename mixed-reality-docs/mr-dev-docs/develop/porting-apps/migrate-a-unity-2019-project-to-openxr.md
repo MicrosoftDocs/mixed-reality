@@ -3,7 +3,7 @@ title: Migrate a Unity 2019 project to Unity 2020 + OpenXR
 description: Learn how to Migrate a Unity 2019 project to Unity 2020 + OpenXR.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 10/29/2021
+ms.date: 03/07/2022
 ms.topic: article
 keywords: Unity, mixed reality, development, getting started, new project, Windows Mixed Reality, XR, mrtk, Unity 2020, Unity 2019, OpenXR, migrate
 ---
@@ -26,7 +26,7 @@ If you’re already using MRTK, we suggest that the first step in your migration
 ### Select the features you want
 
 [!INCLUDE [MRFT initial steps](../../includes/mrft-steps-part-1.md)]
-Click the "+" button to the left of **Mixed Reality Toolkit** and then select the latest version of **Mixed Reality Toolkit Foundation**.
+    Click the "+" button to the left of **Mixed Reality Toolkit** and then select the latest version of **Mixed Reality Toolkit Foundation**.
 
 ### Import the features
 [!INCLUDE [MRFT final steps](../../includes/mrft-steps-part-2.md)]
@@ -63,7 +63,7 @@ We're not quite ready to install OpenXR yet, but this next set of steps helps yo
     Ensure that you're in the Universal Windows Platform tab (it's the second tab and displays the Windows logo) and then, under **Plug-in-Providers**, select **Windows Mixed Reality.**
     - **If you're targeting Desktop VR:**  
     Ensure that you're in the Desktop tab (it's the first tab and displays an image of a monitor), and then, under **Plug-in-Providers**, select **Windows Mixed Reality.**
-1. The **MRTK Project Configurator** window appears again. Click the **Next** button, and then click **Next** again. (You may want to take a moment to read the explanations on these pages before moving on.) <!-- Is this the right thing to do? Find out.>
+1. The **MRTK Project Configurator** window appears again. Click the **Next** button, and then click **Next** again. (You may want to take a moment to read the explanations on these pages before moving on.)
 1. Select **Import TMP Essentials**.
 1. Select **Done**. This closes the Configurator.
 1. Close the **Project Settings** window, save your project, and then exit Unity.
@@ -96,7 +96,7 @@ After Unity reopens again, you can set OpenXR as the runtime:
 
 1. On the menu bar, select **Edit** > **Project Settings**.
 
-Look in the left-side column and ensure that you're on the **XR Plug-in Management** page and in the Universal Windows Platform tab (there's an image of the Windows logo on the tab).
+    Look in the left-side column and ensure that you're on the **XR Plug-in Management** page and in the Universal Windows Platform tab (there's an image of the Windows logo on the tab).
 
 1. In the **Plug-in Providers** list, select **OpenXR**.
 

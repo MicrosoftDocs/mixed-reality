@@ -8,6 +8,8 @@ ms.topic: tutorial
 ms.date: 09/10/2021
 keywords: mixed reality, javascript, tutorial, BabylonJS, hololens, mixed reality, UWP, Windows 10, WebXR, immersive web
 ms.localizationpriority: high
+ms.custom: team=cloud_advocates
+ms.contributors: ayyonet-12302021
 ---
 
 
