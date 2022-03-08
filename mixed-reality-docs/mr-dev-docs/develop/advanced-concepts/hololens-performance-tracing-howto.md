@@ -7,7 +7,9 @@ ms.date: 03/07/2022
 ms.topic: article
 keywords: HoloLens, testing, performance tracing, WPA, WPR, device portal
 ---
-### Performance Tracing
+# Performance tracing with HoloLens
+
+## Use WPA to analyze performance traces
 
 ![Performance Trace analysis in WPA](images/WPA-show-graphs-in-analysis-tab.PNG)<br>
 *Performance Trace Analysis in WPA*
@@ -15,13 +17,13 @@ keywords: HoloLens, testing, performance tracing, WPA, WPR, device portal
 To get a detailed understanding of system and application behavior and resource usage for HoloLens, you can use the performance tracing feature.
 This feature captures [Windows Performance Recorder](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448205(v=win.10)) traces in the form an event trace log (ETL) file for use in the [Windows Performance Analyzer](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448170(v=win.10)) (WPA).
 
-#### Installation
+### Installation
 
 To analyze a trace file, download [WPA from the Microsoft Store](https://www.microsoft.com/en-us/p/windows-performance-analyzer/9n0w1b2bxgnz).
 
 For more general purpose debugging tools, you can also use the [Windows Performance Toolkit](https://docs.microsoft.com/en-us/windows-hardware/test/wpt/). To get this toolkit, download the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install).
 
-**Terminology**
+### Terminology
 
 When searching for information about performance traces, you will inevitably come across a range of terms. The most important ones are:
 
@@ -33,14 +35,14 @@ When searching for information about performance traces, you will inevitably com
 |**WPR**    | [Windows Performance Recorder](/windows-hardware/test/wpt/windows-performance-recorder) is the name of the application that starts and stops the recording of event traces. WPR takes a profile file `(*.wprp)` that configures which exact events to log. Below, you’ll learn how to do a trace for HoloLens through the Windows Device Portal.        |
 |**WPA**    |  [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer) is the name of the GUI application that is used to open `*.etl` files and sift through the data to identify performance issues. WPA allows you to sort data by various criteria, display the data in several ways, dig down into details, and correlate information.       |
 
-#### Recording a trace on HoloLens
+## Recording a trace on HoloLens
 
 Generate an ETL file using the Device Portal in your HoloLens.
 
 ![Performance tracing page in Device Portal for HoloLens 2](images/using-windows-device-portal-performance-tracing.png)<br>
 *Performance tracing page in Device Portal for HoloLens 2*
 
-**Perform a trace**
+### Perform a trace
 
 1. On the left, navigate to **Performance** > **Performance Tracing**.
 2. Select **Custom profiles**
@@ -52,7 +54,7 @@ Generate an ETL file using the Device Portal in your HoloLens.
 
 You now have an ETL file that you can either open directly in WPA or send to someone else.
 
-#### Analyzing traces with WPA
+## Analyzing traces with WPA
 
 Windows Performance Analyzer is the standard tool to visualize traces as graphs and tables to allow you to analyze system and application performance. An explanation of how WPA works is out of scope for this article. For more detail, use the [Step-by-step guide to use Windows Performance Analyzer](/windows-hardware/test/wpt/wpa-step-by-step-guide).
 
@@ -72,7 +74,7 @@ There are several files you'll need to analyze your trace file in WPA. We've inc
 * Symbol file `(*.pdb)`. Make sure it's extracted (not zipped).
 * WPA profile `(*.wpaProfile)`. Use this [example WPA Profile for CPU analysis](https://aka.ms/CPUProfileforWPA).
 
-**Analyze HoloLens trace file**
+### Analyze HoloLens trace file
 
 1. Set up your files in a folder for WPA to access them.
 
