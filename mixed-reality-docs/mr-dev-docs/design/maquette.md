@@ -2,7 +2,7 @@
 title: Microsoft Maquette Beta overview
 description: Microsoft Maquette makes spatial prototyping easy, quick, and immersive. Maquette provides VR developers with various tools & assets to construct & iterate ideas in space.
 author: qianw211
-ms.author: v-qianwen
+ms.author: qianwen
 ms.date: 10/20/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, get started, setup, Mixed Reality Portal, Maquette

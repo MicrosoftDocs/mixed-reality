@@ -2,7 +2,7 @@
 title: Before you buy - FAQs
 description: Answers to frequently asked questions potential buyers may have before purchasing a Windows Mixed reality headset and compatible PC.
 author: qianw211    
-ms.author: v-qianwen
+ms.author: qianwen
 ms.date: 09/30/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, pre-sale, research, purchase, before you buy
