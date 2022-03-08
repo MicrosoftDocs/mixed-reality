@@ -26,6 +26,7 @@ If you’re already using MRTK, we suggest that the first step in your migration
 ### Select the features you want
 
 [!INCLUDE [MRFT initial steps](../../includes/mrft-steps-part-1.md)]
+
     Click the "+" button to the left of **Mixed Reality Toolkit** and then select the latest version of **Mixed Reality Toolkit Foundation**.
 
 ### Import the features
