@@ -58,10 +58,10 @@ You now have an ETL file that you can either open directly in WPA or send to som
 
 ## Analyzing traces with WPA
 
-Windows Performance Analyzer is the standard tool to visualize traces as graphs and tables to allow you to analyze system and application performance. An explanation of how WPA works is out of scope for this article. For more detail, use the [Step-by-step guide to use Windows Performance Analyzer](/windows-hardware/test/wpt/wpa-step-by-step-guide).
+Windows Performance Analyzer is the standard tool to visualize traces as graphs and tables to allow you to analyze system and application performance. WPA is a powerful, multifaceted tool, so we won't explain it in detail here. For more detail, use the [Step-by-step guide to use Windows Performance Analyzer](/windows-hardware/test/wpt/wpa-step-by-step-guide).
 
 
-To get started, have a look at these resources:
+To learn more about WPA, have a look at these resources:
 
 * Watch the [introductory videos](/windows-hardware/test/wpt/windows-performance-analyzer) for a first overview.
 * WPA itself has a [Getting Started](/windows-hardware/test/wpt/wpa-in-product-getting-started-help) tab, which explains common steps.
