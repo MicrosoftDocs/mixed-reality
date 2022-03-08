@@ -16,7 +16,7 @@ When the HoloLens 2 is running in warm environments or with heavy performance re
 * Providing user feedback
 * Closing applications
 
-... and in worst case scenarios:
+... and in worst-case scenarios:
 
 * Shutting down the HoloLens 2
 
