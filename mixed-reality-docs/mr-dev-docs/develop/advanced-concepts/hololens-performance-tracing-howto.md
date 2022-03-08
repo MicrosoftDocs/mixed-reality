@@ -68,7 +68,7 @@ To learn more about WPA, have a look at these resources:
 * Learn about the [WPA User Interface](/windows-hardware/test/wpt/introduction-to-the-wpa-user-interface).
 * There is excellent information on this website, however, not all of it is relevant for bgiteginners.
 
-**Files you need for analysis**
+**Files you need for WPA trace analysis
 
 There are several files you'll need to analyze your trace file in WPA. We've included an example WPA profile to help get started.
 
@@ -76,17 +76,8 @@ There are several files you'll need to analyze your trace file in WPA. We've inc
 * Symbol file `(*.pdb)`. Make sure it's extracted (not zipped).
 * WPA profile `(*.wpaProfile)`. Use this [example WPA Profile for CPU analysis](https://aka.ms/CPUProfileforWPA).
 
-### Analyze HoloLens trace file
 
-**Files you need for analysis**
-
-There are several files you'll need to analyze your trace file in WPA. We've included an example WPA profile to help get started.
-
-* HoloLens trace file `(*.elt)`
-* Symbol file `(*.pdb)`. Make sure it's extracted (not zipped).
-* WPA profile `(*.wpaProfile)`. Use this [example WPA Profile for CPU analysis](https://aka.ms/CPUProfileforWPA).
-
-**Analyze trace file in WPA**
+### Perform analysis of trace file
 
 1. Set up your files in a folder for WPA to access them.
 
