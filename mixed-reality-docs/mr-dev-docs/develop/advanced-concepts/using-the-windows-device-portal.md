@@ -6,7 +6,7 @@ ms.author: moelhama
 ms.date: 02/10/2022
 ms.topic: article
 keywords: Windows Device Portal, HoloLens
-ms.localizationpriority: higha
+ms.localizationpriority: high
 ---
 
 # Using the Windows Device Portal
