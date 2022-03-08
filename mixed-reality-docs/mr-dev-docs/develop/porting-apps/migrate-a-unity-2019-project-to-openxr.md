@@ -25,12 +25,34 @@ If you’re already using MRTK, we suggest that the first step in your migration
 
 ### Select the features you want
 
-[!INCLUDE [MRFT initial steps](../../includes/mrft-steps-part-1.md)]
+> [!NOTE]
+> The descriptions and images in this section are based on the most recent version of the Tool. If the instructions don't match what you're seeing, check to ensure that you're not using an older version of the Tool.
 
-    Click the "+" button to the left of **Mixed Reality Toolkit** and then select the latest version of **Mixed Reality Toolkit Foundation**.
+1. Open the Microsoft Mixed Reality Feature Tool and then click the **Start** button.
+
+    :::image type="content" source="../images/001-mr-feature-tool.png" alt-text="Mixed Reality Feature Tool":::
+
+1. Select the Browse button (it's the "three-dot" button in the image below), then navigate to your project, and then open it.
+
+    :::image type="content" source="../images/002-open-your-project.png" alt-text="Open your project":::
+
+1. Select **Discover Features.**
+
+    **Note**: You may need to wait a few seconds while the Tool refreshes the packages from the feeds.
+
+1. On the **Discover Features** page, note that there is a list of six package groups.
+
+    :::image type="content" source="../images/003-mrft-groups.png" alt-text="The main groups of packages in the Mixed Reality Feature Tool":::
+
+1. Click the "+" button to the left of **Mixed Reality Toolkit** and then select the latest version of **Mixed Reality Toolkit Foundation**.
 
 ### Import the features
-[!INCLUDE [MRFT final steps](../../includes/mrft-steps-part-2.md)]
+
+1. After you've made your selection(s), click **Get Features**. 
+1. On the **Import Features** page, the left-side column, **Features**, displays the packages you just selected. The right-side column, **Required dependencies**, displays any dependencies. You can click the **Details** link for any of these items to learn more about them.
+1. When you're ready to move on, select **Import.** On the **Review and Approve** page, you can review information about the packages.
+1. Select **Approve.** The Feature Tool displays a message that says your project has been updated.
+1. Return to the Unity Editor and click a blank area in the UI. You'll see a message telling you that your packages are being imported.
 
 By doing this upgrade while still using Unity 2019, you can view the MRTK Project Configurator and see any "deprecated API" warnings about how to get current. The warnings will tell you what to change. If you don't do this MRTK upgrade first, the old API might be gone and you won’t have those warnings.
 
