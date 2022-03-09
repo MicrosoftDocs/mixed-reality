@@ -72,7 +72,7 @@ To learn more about WPA, have a look at these resources:
 
 There are several files you'll need to analyze your trace file in WPA. We've included an example WPA profile to help get started.
 
-* HoloLens trace file `(*.elt)`
+* HoloLens trace file `(*.etl)`
 * Symbol file `(*.pdb)`. Make sure it's extracted (not zipped).
 * WPA profile `(*.wpaProfile)`. Use this [example WPA Profile for CPU analysis](https://aka.ms/CPUProfileforWPA).
 
@@ -85,7 +85,7 @@ There are several files you'll need to analyze your trace file in WPA. We've inc
 
     ```text
     Folder_for_WPA_files
-      ├─ HoloLens_trace_file.elt - # HoloLens trace file (*.elt)
+      ├─ HoloLens_trace_file.elt - # HoloLens trace file (*.etl)
       ├─ CPU_analysis.wpaProfile - # WPA Profile (*.wpaProfile)
       └─ Symbols - # Make sure it's extracted (not zipped).
         ├─ *.pdb
