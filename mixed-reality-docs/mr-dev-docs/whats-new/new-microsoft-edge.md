@@ -1,8 +1,8 @@
 ---
 title: Windows Mixed Reality and the new Microsoft Edge
 description: Learn about the new Microsoft Edge for Mixed Reality, including what to expect, updates to look out for, and known issues.
-author: mattzmsft
-ms.author: v-vtieto
+author: vtieto
+ms.author: vinnietieto
 ms.date: 09/24/2021
 ms.topic: article
 keywords: edge, new, immersive web, microsoft edge, browser, vr, 360, 360 video, 360 viewer, webxr, webvr

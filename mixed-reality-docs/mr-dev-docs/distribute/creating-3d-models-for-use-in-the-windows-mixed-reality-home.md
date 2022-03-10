@@ -1,8 +1,8 @@
 ---
 title: Create 3D models for use in the home
 description: Asset requirements and authoring guidance for 3D models to be used in the Windows Mixed Reality home on both HoloLens and immersive (VR) headsets.
-author: thmignon
-ms.author: v-vtieto
+author: vtieto
+ms.author: vinnietieto
 ms.date: 11/02/2021
 ms.topic: article
 keywords: 3D, modeling, modeling guidance, asset requirements, authoring guidelines, launcher, 3D launcher, texture, materials, complexity, triangles, mesh, polygons, polycount, limits, mixed reality headset, windows mixed reality headset, virtual reality headset

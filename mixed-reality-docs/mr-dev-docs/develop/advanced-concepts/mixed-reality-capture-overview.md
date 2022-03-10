@@ -1,8 +1,8 @@
 ---
 title: Mixed reality capture overview
 description: Get an overview of the best practices for enabling, using, and rendering mixed reality capture for developers.
-author: mattzmsft
-ms.author: v-vtieto
+author: vtieto
+ms.author: vinnietieto
 ms.date: 09/28/2021
 ms.topic: article
 keywords: mrc, photo, video, capture, camera
