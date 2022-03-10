@@ -3,7 +3,7 @@ title: Mixed reality feature samples and apps
 description: Stay up to date with all the available Microsoft sample apps and mixed reality features samples for HoloLens.
 author: qianw211
 ms.author: vinnietieto
-ms.date: 02/28/2022
+ms.date: 03/10/2022
 ms.topic: article
 
 keywords: mixed reality, unity, tutorial, hololens, learn, samples, MRTK, research mode, HoloLens 2, qr codes, mixed reality capture, holographic remoting, UX Tools
@@ -42,7 +42,6 @@ For each of the developer scenarios listed below, there are feature samples that
 | | [Poster tracker sample](#poster-tracker-sample)  | Unity C# | Align a hologram with a real world object. |
 | | [Build mixed reality digital twins](#build-mixed-reality-digital-twins) | Unity C# | Learn how to create a mixed reality application using Azure Digital Twins and Unity, a real-time 3D platform. |
 | [**Capturing camera data**](#camera-captures) | [Mixed reality capture sample](#holographic-mixed-reality-capture) | Windows 10 C++ | Capture the first-person experience of mixing real and digital worlds as a photo or video. |
-| | [Spectator view sample](#spectator-view) | Unity C# | Capture and render holograms at the correct size and orientation. |
 | | [Research Mode samples](#research-mode) | Windows 10 C++ | Access to key sensors on a HoloLens device for research applications. |
 | [**Holographic Remoting**](#holographic-remoting) | [Holographic Remoting player](#holographic-remoting) |  Windows 10 C++ | Stream holographic content from a PC to your Microsoft HoloLens in real time by using a Wi-Fi connection. |
 | | [Azure Remote Rendering samples](/azure/remote-rendering/samples/sample-model) | Unity C# | Test the Azure Remote Rendering service by using the resources for sample data listed here. |
@@ -136,14 +135,6 @@ Mixed reality capture (MRC) captures the first-person experience of the combined
 | Sample | Reference article | 
 | --- | --- |
 | [Mixed Reality Capture samples](/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/) | [Mixed Reality Capture](advanced-concepts/mixed-reality-capture-overview.md) | 
-
-#### Spectator view
-
-Spectator view renders holograms from Unity over a color frame from a capture card. This sample uses the calibration data from the calibration app to render the holograms at the correct size and orientation.  
-
-| Sample application | Reference article | 
-| --- | --- |
-| [Spectator view mobile setup](https://github.com/microsoft/MixedReality-SpectatorView/blob/master/doc/SpectatorView.Setup.md#spectator-view-mobile-setup) | See [sample setup](https://github.com/microsoft/MixedReality-SpectatorView/blob/master/doc/SpectatorView.Setup.md#spectator-view-mobile-setup) | 
 
 #### Research Mode
 

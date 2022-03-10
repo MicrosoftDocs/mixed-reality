@@ -3,7 +3,7 @@ title: Mixed reality capture (DirectX)
 description: Learn about some of the ways to perform mixed reality capture using DirectX.
 author: mattzmsft
 ms.author: v-vtieto
-ms.date: 09/28/2021
+ms.date: 03/10/2022
 ms.topic: article
 keywords: mrc, photo, video, capture, camera
 ---
@@ -198,5 +198,3 @@ You can find a full sample of the above process in the [holographic face trackin
 
 * [Mixed reality capture overview](../advanced-concepts/mixed-reality-capture-overview.md)
 * [Mixed reality capture for HoloLens users](/hololens/holographic-photos-and-videos)
-* [Spectator view](../../design/spectator-view.md)
-

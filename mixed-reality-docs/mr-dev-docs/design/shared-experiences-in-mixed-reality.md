@@ -3,7 +3,7 @@ title: Shared experiences in mixed reality
 description: Holographic apps may share spatial anchors from one HoloLens to another, enabling users to render a hologram at the same place in the real world, across multiple devices.
 author: thetuvix
 ms.author: vinnietieto
-ms.date: 02/28/2022
+ms.date: 03/10/2022
 ms.topic: article
 keywords: shared experience, mixed reality, hologram, spatial anchor, multi-user, multi
 ---
@@ -154,12 +154,6 @@ Leverage [Azure Spatial Anchors](/azure/spatial-anchors/) in your app.  Enabling
 
 Leverage built-in Miracast support for local users when you have a supported Miracast receiver such as a PC or TV. No additional app code is needed.
 
-## Presenter-Spectator applications and Demos
-
-Leverage [MixedReality-SpectatorView](https://github.com/microsoft/MixedReality-SpectatorView) to bring [spectator view functionality](spectator-view.md) into your app.  Enable other devices (HL, Android, iOS, and video cameras) to see what the HoloLens sees from a different perspective in the same location, and receive updates on interactions of the host HoloLens user interacting with the holograms.  Watch, take pictures, and record video of what the host does with the holograms in the application from your own spatial perspective with the spectator companion of the same app.
-
-**Note:** Pictures are taken via screenshot on iOS/Android devices.
-
 ## Multi-user collaborative experience
 <!--Unity Note-->
 Start with our [multi-user learning tutorial](../develop/unity/tutorials/mr-learning-sharing-01.md), which leverages [Azure Spatial Anchors](/azure/spatial-anchors/) for local users and [Photon SDK](https://www.photonengine.com/PUN) for syncing the content/state in the scene. Create locally collaborative applications where each user has his/her own perspective on the holograms in the scene and can each fully interact with the holograms.  Updates are provided across all devices and interaction conflict management is handled by Photon.
@@ -178,4 +172,3 @@ Different scenario or desire to use a different tech/service? Provide feedback a
 * [Azure Spatial Anchors](/azure/spatial-anchors)
 * [Shared spatial anchors in DirectX](../develop/advanced-concepts/shared-spatial-anchors-in-directx.md)
 * [Shared experiences in Unity](../develop/unity/shared-experiences-in-unity.md)
-* [Spectator view](spectator-view.md)
