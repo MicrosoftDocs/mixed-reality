@@ -1,8 +1,8 @@
 ---
 title: Mixed reality capture (DirectX)
 description: Learn about some of the ways to perform mixed reality capture using DirectX.
-author: mattzmsft
-ms.author: v-vtieto
+author: vtieto
+ms.author: vinnietieto
 ms.date: 09/28/2021
 ms.topic: article
 keywords: mrc, photo, video, capture, camera

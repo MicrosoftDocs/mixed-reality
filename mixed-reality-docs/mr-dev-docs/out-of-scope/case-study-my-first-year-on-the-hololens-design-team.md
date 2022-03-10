@@ -1,7 +1,7 @@
 ---
 title: Case study - My first year on the HoloLens design team
 description: My journey from a 2D flatland to the 3D world started when I joined the HoloLens design team in January, 2016.
-author: designnomad
+author: vtieto
 ms.author: vinnietieto
 ms.date: 03/21/2018
 ms.topic: article
