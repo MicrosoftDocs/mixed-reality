@@ -1,8 +1,8 @@
 ---
 title: Feature package details
 description: Learn about the feature package details in the MR Feature Tool for HoloLens and VR development.
-author: davidkline-ms
-ms.author: v-hferrone
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 01/27/2021
 ms.topic: article
 ms.localizationpriority: high

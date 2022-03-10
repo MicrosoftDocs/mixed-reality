@@ -1,8 +1,8 @@
 ---
 title: Motion controller FAQs
 description: Controllers Windows Mixed Reality troubleshooting that goes beyond our standard consumer support documentation.
-author: hferrone
-ms.author: v-hferrone
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 09/15/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support, Motion controllers

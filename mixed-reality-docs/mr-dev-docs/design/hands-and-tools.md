@@ -1,8 +1,8 @@
 ---
 title: Hands and motion controllers
 description: Learn about hands and motion controllers interaction models, which can remove the boundary between the virtual and the physical.
-author: shengkait
-ms.author: shentan
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 04/26/2019
 ms.topic: article
 keywords: Mixed Reality, hands, motion controllers, interaction, design, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit

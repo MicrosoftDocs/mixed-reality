@@ -1,8 +1,8 @@
 ---
 title: Spatial audio in Unreal
 description: Learn the ins-and-outs of the spatial audio plugin for Unreal mixed reality applications for HoloLens devices.
-author: hferrone
-ms.author: v-hferrone
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 06/15/2020
 ms.topic: article
 ms.localizationpriority: high

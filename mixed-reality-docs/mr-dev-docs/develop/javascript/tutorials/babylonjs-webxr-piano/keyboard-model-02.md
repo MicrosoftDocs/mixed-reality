@@ -1,8 +1,8 @@
 ---
 title: Build a 3D piano model
 description: Learn how to create a 3D piano model by coding using Babylon.js
-author: JING1201
-ms.author: v-vtieto
+author: vtieto
+ms.author: vinnietieto
 ms.prod: mixed-reality
 ms.topic: tutorial
 ms.date: 09/10/2021

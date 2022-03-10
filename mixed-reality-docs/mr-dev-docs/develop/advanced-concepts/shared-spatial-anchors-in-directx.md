@@ -1,8 +1,8 @@
 ---
 title: Use anchors to share holograms
 description: Learn how to synchronize two HoloLens devices by sharing local and Azure spatial anchors in DirectX applications.
-author: thetuvix
-ms.author: v-vtieto
+author: vtieto
+ms.author: vinnietieto
 ms.date: 9/8/2021
 ms.topic: article
 keywords: HoloLens, synchronize, spatial anchor, transfer, multiplayer, view, scenario, walkthrough, sample code, Azure, Azure Spatial Anchors, ASA

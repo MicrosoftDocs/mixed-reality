@@ -1,8 +1,8 @@
 ---
 title: Photo Video camera in Unity
 description: Learn how to capture a photo to a file or to a Texture2D, how to capture a photo and interact with the raw bytes, and how to capture a video.
-author: keveleigh
-ms.author: v-vtieto
+author: vtieto
+ms.author: vinnietieto
 ms.date: 03/21/2021
 ms.topic: article
 keywords: photo, video, hololens, camera, unity, locatable, PVC, photo video camera, mixed reality headset, windows mixed reality headset, virtual reality headset, webcam, photo capture, video capture
