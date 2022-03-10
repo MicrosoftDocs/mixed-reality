@@ -1,8 +1,8 @@
 ---
 title: Local Spatial Anchors in Unreal
 description: Learn how to use, save, and manage spatial anchors in Unreal mixed reality applications.
-author: hferrone
-ms.author: v-hferrone
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
