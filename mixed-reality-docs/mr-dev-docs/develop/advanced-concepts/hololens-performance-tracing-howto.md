@@ -40,7 +40,7 @@ When searching for information about performance traces, you'll inevitably come 
 
 Generate an ETL file using the Device Portal in your HoloLens.
 
-![Performance tracing page in Device Portal for HoloLens 2](images/using-windows-device-portal-performance-tracing.png)<br>
+![Performance tracing page in Device Portal for HoloLens 2](images/using-windows-portal-img-08.png)<br>
 *Performance tracing page in Device Portal for HoloLens 2*
 
 ### Perform a trace
