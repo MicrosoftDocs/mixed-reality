@@ -8,7 +8,7 @@ ms.topic: article
 keywords: HoloLens, testing, performance tracing, WPA, WPR, device portal
 ---
 # Performance tracing with HoloLens
-Performance tracing with HoloLens is a powerful way to find and resolve computational or hardware bottlenecks. When traces are analyzed with the Windows Performance Analyzer, you're able to visualize what's causing a HoloLens to overheat or which CPU processes are the most taxing on the system, for example.
+Performance tracing with HoloLens is a powerful way to find and resolve computational or hardware bottlenecks. When traces are analyzed with the Windows Performance Analyzer, you're able to visualize and explore hardware or software bottlenecks. For example, what's causing a HoloLens to overheat or which CPU processes are the most taxing on the system.
 
 ## Use WPA to analyze performance traces
 
@@ -66,7 +66,7 @@ To learn more about WPA, have a look at these resources:
 * Watch the [introductory videos](/windows-hardware/test/wpt/windows-performance-analyzer) for a first overview.
 * WPA itself has a [Getting Started](/windows-hardware/test/wpt/wpa-in-product-getting-started-help) tab, which explains common steps.
 * Learn about the [WPA User Interface](/windows-hardware/test/wpt/introduction-to-the-wpa-user-interface).
-* There is excellent information on this website, however, not all of it's relevant for beginners.
+* There's excellent information on this website, however, not all of it's relevant for beginners.
 
 **Files you need for WPA trace analysis**
 
@@ -103,7 +103,7 @@ There are several files you'll need to analyze your trace file in WPA. We've inc
       :::image type="content" source="images/configure-symbols-extra-symbols.jpg" alt-text="Configure symbols for WPA analysis.":::
 5. Apply WPA profile to generate graphs for analysis. In your WPA folder, select **Profiles** > **Apply** > **Browse** > choose the `*.wpaProfile` file > **Apply**.
 6. Once graphs are selected, WPA will display them in the Analysis tab.
-    :::image type="content" source="images/WPA-show-graphs-in-analysis-tab.PNG" alt-text="Image of WPA with graphs visible for Analsysis.":::
+    :::image type="content" source="images/WPA-show-graphs-in-analysis-tab.PNG" alt-text="Image of WPA with graphs visible for Analysis.":::
 
 **Dive Deeper**
 
