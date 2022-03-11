@@ -95,13 +95,13 @@ There are several files you'll need to analyze your trace file in WPA. We've inc
 
 2. Launch the [Windows Performance Analyzer](https://www.microsoft.com/store/productId/9N0W1B2BXGNZ) (WPA).
 3. Open the ETL trace file by selecting **File** > **Open** > select the `.etl` in your file browser.
-:::image type="content" source="images/WPA-open-trace-ETL-file-red-highlight.png" alt-text="no":::
+:::image type="content" source="images/WPA-open-trace-ETL-file-red-highlight.png" alt-text="Image of WPA with File menu expanded and Open action selected.":::
 4. Load symbol file into WPA by selecting **Trace** > **Load Symbols**.
     :::image type="content" source="images/WPA-load-symbols-better-folder.png" alt-text="no":::
     > [!TIP]
     > Configure extra symbol paths by selecting **Trace** > **Configure Symbol Paths**.
 
-    :::image type="content" source="images/WPA-configure-symbols-extra-symbols.jpg" alt-text="no":::
+    :::image type="content" source="images/configure-symbols-extra-symbols.jpg" alt-text="Configure symbols for WPA analysis.":::
 5. Apply WPA profile to generate graphs for analysis. In your WPA folder, select **Profiles** > **Apply** > **Browse** > choose the `*.wpaProfile` file > **Apply**.
 6. Once graphs are selected, WPA will display them in the Analysis tab.
     :::image type="content" source="images/WPA-show-graphs-in-analysis-tab.PNG" alt-text="no":::
