@@ -100,8 +100,7 @@ There are several files you'll need to analyze your trace file in WPA. We've inc
     :::image type="content" source="images/WPA-load-symbols-better-folder.png" alt-text="Trace menu is expanded and Load Symbols action is highlighted.":::
     > [!TIP]
     > Configure extra symbol paths by selecting **Trace** > **Configure Symbol Paths**.
-
-    :::image type="content" source="images/configure-symbols-extra-symbols.jpg" alt-text="Configure symbols for WPA analysis.":::
+      :::image type="content" source="images/configure-symbols-extra-symbols.jpg" alt-text="Configure symbols for WPA analysis.":::
 5. Apply WPA profile to generate graphs for analysis. In your WPA folder, select **Profiles** > **Apply** > **Browse** > choose the `*.wpaProfile` file > **Apply**.
 6. Once graphs are selected, WPA will display them in the Analysis tab.
     :::image type="content" source="images/WPA-show-graphs-in-analysis-tab.PNG" alt-text="Image of WPA with graphs visible for Analsysis.":::
