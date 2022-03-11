@@ -2,13 +2,13 @@
 title: Performance tracing and analysis with WPA
 description: Learn how to perform a trace with HoloLens and analyze the trace in WPA.
 author: typride
-ms.author: tmilligan@microsoft.com
+ms.author: tmilligan
 ms.date: 03/07/2022
 ms.topic: article
 keywords: HoloLens, testing, performance tracing, WPA, WPR, device portal
 ---
 # Performance tracing with HoloLens
-Performance tracing with HoloLens is a powerful way to find and resolve computational or hardware bottlenecks. When traces are analyzed with the Windows Performance Analyzer, you are able to visualize what's causing a HoloLens to overheat or which CPU processes are the most taxing on the system, for example.
+Performance tracing with HoloLens is a powerful way to find and resolve computational or hardware bottlenecks. When traces are analyzed with the Windows Performance Analyzer, you're able to visualize what's causing a HoloLens to overheat or which CPU processes are the most taxing on the system, for example.
 
 ## Use WPA to analyze performance traces
 
@@ -26,15 +26,15 @@ For more general purpose debugging tools, you can also use the [Windows Performa
 
 ### Terminology
 
-When searching for information about performance traces, you will inevitably come across a range of terms. The most important ones are:
+When searching for information about performance traces, you'll inevitably come across a range of terms. The most important ones are:
 
 
 |Term  |Definition  |
 |---------|---------|
-|**ETW**     |  [Event Tracing for Windows](/windows/win32/etw/about-event-tracing) is an overarching name for kernel-level tracing facility that is built into Windows.       |
-|**ETL**    |  [Event Trace Log](/windows-hardware/drivers/devtest/trace-log) is a file extension for files that store the tracing data. Thus, when you do a trace, you typically will have an `*.etl` file afterwards.       |
-|**WPR**    | [Windows Performance Recorder](/windows-hardware/test/wpt/windows-performance-recorder) is the name of the application that starts and stops the recording of event traces. WPR takes a profile file `(*.wprp)` that configures which exact events to log. Below, you’ll learn how to do a trace for HoloLens through the Windows Device Portal.        |
-|**WPA**    |  [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer) is the name of the GUI application that is used to open `*.etl` files and sift through the data to identify performance issues. WPA allows you to sort data by various criteria, display the data in several ways, dig down into details, and correlate information.       |
+|**ETW**     |  [Event Tracing for Windows](/windows/win32/etw/about-event-tracing): The overarching name for kernel-level tracing facility that's built into Windows.       |
+|**ETL**    |  [Event Trace Log](/windows-hardware/drivers/devtest/trace-log): The file extension for files that store the tracing data. Thus, when you do a trace, you typically will have an `*.etl` file afterwards.       |
+|**WPR**    | [Windows Performance Recorder](/windows-hardware/test/wpt/windows-performance-recorder): The application that starts and stops the recording of event traces. WPR takes a profile file `(*.wprp)` that configures which exact events to log. Below, you’ll learn how to do a trace for HoloLens through the Windows Device Portal.        |
+|**WPA**    |  [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer): A GUI application that's used to open `*.etl` files and sift through data to identify performance issues. WPA allows you to sort data by various criteria, display the data in several ways, dig down into details, and correlate information.       |
 
 ## Recording a trace on HoloLens
 
@@ -66,7 +66,7 @@ To learn more about WPA, have a look at these resources:
 * Watch the [introductory videos](/windows-hardware/test/wpt/windows-performance-analyzer) for a first overview.
 * WPA itself has a [Getting Started](/windows-hardware/test/wpt/wpa-in-product-getting-started-help) tab, which explains common steps.
 * Learn about the [WPA User Interface](/windows-hardware/test/wpt/introduction-to-the-wpa-user-interface).
-* There is excellent information on this website, however, not all of it is relevant for bgiteginners.
+* There is excellent information on this website, however, not all of it's relevant for beginners.
 
 **Files you need for WPA trace analysis**
 
