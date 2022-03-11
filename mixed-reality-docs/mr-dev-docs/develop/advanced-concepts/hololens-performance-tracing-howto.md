@@ -22,7 +22,7 @@ This feature captures [Windows Performance Recorder](/previous-versions/windows/
 
 To analyze a trace file, download [WPA from the Microsoft Store](https://www.microsoft.com/en-us/p/windows-performance-analyzer/9n0w1b2bxgnz).
 
-For more general purpose debugging tools, you can also use the [Windows Performance Toolkit](https://docs.microsoft.com/en-us/windows-hardware/test/wpt/). To get this toolkit, download the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install).
+For more general purpose debugging tools, you can also use the [Windows Performance Toolkit](https://docs.microsoft.com/windows-hardware/test/wpt/). To get this toolkit, download the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install).
 
 ### Terminology
 
