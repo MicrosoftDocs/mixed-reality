@@ -17,7 +17,7 @@ appliesto:
 The engineering team uses the same mechanism for tracking and fixing internal bugs, so please use Feedback Hub to report anything odd that you're seeing - we're listening!
 
 >[!Note]
->In order to provide us with full data for feedback and diagnostics, double check the settings on your PC before filing feedback: <ol> <li> Open the Windows **Settings** app. </li> <li> Select **Privacy**. </li> <li> Go to **Feedback & diagnostics** on the left pane, which has been renamed to **Diagnostics & feedback** in recent Windows Insider builds of Windows. </li> <li> Under **Select how much data you send to Microsoft**, select **Full** if it isn't already selected. </li> <li> Be sure to restart your PC and repeat the steps to reproduce your issue before filing feedback. </li> <ol>
+>In order to provide us with full data for feedback and diagnostics, double check the settings on your PC before filing feedback: <ol> <li> Open the Windows **Settings** app. </li> <li> Select **Privacy**. </li> <li> Go to **Feedback & diagnostics** on the left pane, which has been renamed to **Diagnostics & feedback** in recent Windows versions. </li> <li> Under **Select how much data you send to Microsoft**, select **Full** if it isn't already selected. </li> <li> Be sure to restart your PC and repeat the steps to reproduce your issue before filing feedback. </li> <ol>
 
 ## How to file feedback for Windows Mixed Reality immersive headsets on PC
 
