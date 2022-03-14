@@ -8,7 +8,7 @@ ms.topic: article
 keywords: HoloLens, testing, performance tracing, WPA, WPR, device portal
 ---
 # Performance tracing with HoloLens
-Performance tracing with HoloLens is a powerful way to find and resolve computational or hardware bottlenecks. When traces are analyzed with the Windows Performance Analyzer, you're able to visualize and explore hardware or software bottlenecks. For example, what's causing a HoloLens to overheat or which CPU processes are the most taxing on the system.
+Performance tracing with HoloLens is a powerful way to find and resolve computational or hardware bottlenecks. When traces are analyzed with the Windows Performance Analyzer, you're able to visualize and explore hardware or software bottlenecks. Examples of this might be something that's causing a HoloLens to overheat or CPU processes that are especially taxing on the system.
 
 ## Use WPA to analyze performance traces
 
