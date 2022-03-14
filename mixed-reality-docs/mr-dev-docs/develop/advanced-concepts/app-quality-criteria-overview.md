@@ -235,7 +235,7 @@ App developers control where users' eyes converge by placing content and hologra
 <table>
 <tr>
 <td> Best </td><td><ul>
-<li>Place content at 2 m.</li><li>When holograms cannot be placed at 2 m and conflicts between convergence and accommodation cannot be avoided, the optimal zone for hologram placement is between 1.25 m and 5 m.</li><li>In every case, designers should structure content to encourage users to interact 1+ m away (e.g. adjust content size and default placement parameters).</li><li>Unless not required by the scenario, a clipping plane should be implement with fade out starting at 1 m.</li><li>In cases where closer observation of a motionless hologram is required, the content shouldn't be closer than 50 cm.</li>
+<li>Place content at 2 m.</li><li>When holograms cannot be placed at 2 m and conflicts between convergence and accommodation cannot be avoided, the optimal zone for hologram placement is between 1.25 m and 5 m.</li><li>In every case, designers should structure content to encourage users to interact 1+ m away (e.g. adjust content size and default placement parameters).</li><li>Unless not required by the scenario, a clipping plane should be implement with fade out starting at 1 m.</li><li>In cases where closer observation of a motionless hologram is required, the content shouldn't be closer than 50 cm.</li><li>For buttons, the distance should be 45 cm with a viewing angle no smaller than 2° and sized 1.6 x 1.6 cm.</li>
 </ul></td>
 </tr><tr>
 <td> Meets</td><td> Content is within the viewing and motion guidance, but improper use or no use of the clipping plane.</td>
@@ -258,6 +258,7 @@ App developers control where users' eyes converge by placing content and hologra
 
 ### Resources
 
+* [Comfort with HoloLens](../../design/comfort.md)
 * [Render distance](hologram-stability.md#hologram-render-distances)
 * [Focus point in Unity](../unity/focus-point-in-unity.md)
 * [Experimenting with scale](../../design/scale.md#experimenting-with-scale)
