@@ -1,8 +1,8 @@
 ---
 title: Porting overview
 description: An overview of the various porting options for bringing your existing applications to Mixed Reality for HoloLens and VR.
-author: hferrone
-ms.author: v-vtieto
+author: vtieto
+ms.author: vinnietieto
 ms.date: 10/29/2021
 ms.topic: article
 keywords: porting, unity, middleware, engine, UWP, Win32

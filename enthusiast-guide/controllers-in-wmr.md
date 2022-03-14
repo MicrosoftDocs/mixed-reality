@@ -1,8 +1,8 @@
 ---
 title: Controllers in Windows Mixed Reality
 description: Learn how to setup, pair, use, and troubleshoot common issues with controllers in Windows Mixed Reality.
-author: hferrone
-ms.author: v-hferrone
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 09/15/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Feedback, Feedback Hub, bugs

@@ -1,8 +1,8 @@
 ---
 title: Hologram stability in Unity
 description: The HoloLens automatically stabilizes holograms, but there are steps developers can take to improve hologram stability further.
-author: thetuvix
-ms.author: v-vtieto
+author: vtieto
+ms.author: vinnietieto
 ms.date: 09/29/2021
 ms.topic: article
 keywords: holograms, stability, hololens, mixed reality headset, windows mixed reality headset, virtual reality headset, frame rate, rendering, reprojection, color separation, Unity

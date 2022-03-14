@@ -2,7 +2,7 @@
 title: Working with 3D models
 description: Get a comprehensive overview of 3D modeling options, testing applications, and usage scenarios for HoloLens (1st gen), HoloLens 2, and immersive headsets.
 author: vtieto
-ms.author: v-vtieto
+ms.author: vinnietieto
 ms.date: 11/02/2021
 ms.topic: article
 keywords: HoloLens, HoloLens 2, 3D, 3D models, modeling, exporting, importing, assets mixed reality headset, windows mixed reality headset, virtual reality headset

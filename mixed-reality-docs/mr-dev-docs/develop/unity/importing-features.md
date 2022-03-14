@@ -1,8 +1,8 @@
 ---
 title: Importing features
 description: Learn how to import and install features from the MR Feature Tool for HoloLens and VR development.
-author: davidkline-ms
-ms.author: v-hferrone
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high

@@ -1,8 +1,8 @@
 ---
 title: Release notes
 description: Windows Mixed Reality release notes for the Windows 10 May 2020 Update (also known as 2004).
-author: tmlyon
-ms.author: toddly
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 05/27/2020
 ms.topic: article
 keywords: release notes, version, windows 10, build, 20H1, os, may 2020, 2004

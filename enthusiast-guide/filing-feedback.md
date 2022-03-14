@@ -2,7 +2,7 @@
 title: Filing bugs and feedback
 description: Help us make Windows Mixed Reality better by filing feedback using the correct categories in the Feedback Hub app.
 author: qianw211
-ms.author: v-qianwen
+ms.author: qianwen
 ms.date: 12/6/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Feedback, Feedback Hub, bugs

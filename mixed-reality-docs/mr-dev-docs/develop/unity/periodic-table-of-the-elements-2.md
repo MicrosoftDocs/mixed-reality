@@ -35,10 +35,10 @@ Check out the design story on the Periodic Table of the Elements app: [**Periodi
 
 ## About the author
 
-<table style="border-collapse:collapse" padding-left="0px">
+<table>
 <tr>
-<td style="border-style: none" width="60px"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
-<td style="border-style: none"><a href="http://dongyoonpark.com" target="_blank"><b>Yoon Park</b></a><br>UX Designer @Microsoft</td>
+<td width="60px"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
+<td><a href="http://dongyoonpark.com" target="_blank"><b>Yoon Park</b></a><br>UX Designer @Microsoft</td>
 </tr>
 </table>
 
