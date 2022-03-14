@@ -198,5 +198,3 @@ You can find a full sample of the above process in the [holographic face trackin
 
 * [Mixed reality capture overview](../advanced-concepts/mixed-reality-capture-overview.md)
 * [Mixed reality capture for HoloLens users](/hololens/holographic-photos-and-videos)
-* [Spectator view](../../design/spectator-view.md)
-

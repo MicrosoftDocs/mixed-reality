@@ -3,10 +3,10 @@ title: Mixed reality feature samples and apps
 description: Stay up to date with all the available Microsoft sample apps and mixed reality features samples for HoloLens.
 author: qianw211
 ms.author: vinnietieto
-ms.date: 02/01/2022
+ms.date: 03/10/2022
 ms.topic: article
 
-keywords: mixed reality, unity, tutorial, hololens, learn, samples, MRTK, research mode, HoloLens 2, qr codes, WebRTC, mixed reality capture, holographic remoting, UX Tools
+keywords: mixed reality, unity, tutorial, hololens, learn, samples, MRTK, research mode, HoloLens 2, qr codes, mixed reality capture, holographic remoting, UX Tools
 ms.localizationpriority: high
 ---
 
@@ -34,7 +34,6 @@ For each of the developer scenarios listed below, there are feature samples that
 |    | [Azure Spatial Anchors samples](https://github.com/Azure/azure-spatial-anchors-samples) |  | Build spatially aware mixed reality applications with the essential capabilities of [Azure Spatial Anchors](/azure/spatial-anchors/overview). |
 | | [QR Codes](#qr-codes) | Unity C# | Detect QR Codes in the environment. |
 | [**Collaboration in mixed reality**](#collaboration-in-mixed-reality) | [User identity](#user-identity) | Unity C# | Set up your HoloLens 2 device using Azure Active Directory (AAD) credentials. |
-| | [WebRTC sample](#webrtc) | Unity C# | Integrate peer-to-peer audio, video, and data real-time communication into a mixed reality application. |
 | | [Azure Spatial Anchors samples](https://github.com/Azure/azure-spatial-anchors-samples) |  | Build spatially aware mixed reality applications with the essential capabilities of [Azure Spatial Anchors](/azure/spatial-anchors/overview). |
 | [**Spatial interaction**](#spatial-interaction---basic-hologram-sample) | [Basic hologram sample](#spatial-interaction---basic-hologram-sample) | Windows 10 C++ | Render a spinning cube in Windows Mixed Reality. |
 |  [**Scene/Object understanding**](#scene-understanding) | [Scene understanding samples](#scene-understanding) | Unity C# | Help design environmentally-aware mixed reality applications. |
@@ -43,7 +42,6 @@ For each of the developer scenarios listed below, there are feature samples that
 | | [Poster tracker sample](#poster-tracker-sample)  | Unity C# | Align a hologram with a real world object. |
 | | [Build mixed reality digital twins](#build-mixed-reality-digital-twins) | Unity C# | Learn how to create a mixed reality application using Azure Digital Twins and Unity, a real-time 3D platform. |
 | [**Capturing camera data**](#camera-captures) | [Mixed reality capture sample](#holographic-mixed-reality-capture) | Windows 10 C++ | Capture the first-person experience of mixing real and digital worlds as a photo or video. |
-| | [Spectator view sample](#spectator-view) | Unity C# | Capture and render holograms at the correct size and orientation. |
 | | [Research Mode samples](#research-mode) | Windows 10 C++ | Access to key sensors on a HoloLens device for research applications. |
 | [**Holographic Remoting**](#holographic-remoting) | [Holographic Remoting player](#holographic-remoting) |  Windows 10 C++ | Stream holographic content from a PC to your Microsoft HoloLens in real time by using a Wi-Fi connection. |
 | | [Azure Remote Rendering samples](/azure/remote-rendering/samples/sample-model) | Unity C# | Test the Azure Remote Rendering service by using the resources for sample data listed here. |
@@ -79,14 +77,6 @@ This sample sets up your HoloLens 2 device using Azure Active Directory (AAD) cr
 | Sample | Reference article | 
 | --- | --- |
 | [AAD Login on HoloLens 2](https://github.com/peted70/aad-hololens) | [Overview of Microsoft identity platform](/azure/active-directory/develop/v2-overview) | 
-
-#### WebRTC
-
-The MixedReality-WebRTC project is a collection of components to help mixed reality app developers to integrate peer-to-peer audio, video, and data real-time communication into their applications. WebRTC components are based on the WebRTC protocol for Real-Time Communication (RTC), which is supported by most modern web browsers.
-
-| Sample | Reference article | 
-| --- | --- |
-| [WebRTC sample apps](https://github.com/microsoft/MixedReality-WebRTC/tree/master/examples) | [WebRTC](https://microsoft.github.io/MixedReality-WebRTC) | 
 
 ### Spatial interaction - basic hologram sample
 
@@ -145,14 +135,6 @@ Mixed reality capture (MRC) captures the first-person experience of the combined
 | Sample | Reference article | 
 | --- | --- |
 | [Mixed Reality Capture samples](/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/) | [Mixed Reality Capture](advanced-concepts/mixed-reality-capture-overview.md) | 
-
-#### Spectator view
-
-Spectator view renders holograms from Unity over a color frame from a capture card. This sample uses the calibration data from the calibration app to render the holograms at the correct size and orientation.  
-
-| Sample application | Reference article | 
-| --- | --- |
-| [Spectator view mobile setup](https://github.com/microsoft/MixedReality-SpectatorView/blob/master/doc/SpectatorView.Setup.md#spectator-view-mobile-setup) | See [sample setup](https://github.com/microsoft/MixedReality-SpectatorView/blob/master/doc/SpectatorView.Setup.md#spectator-view-mobile-setup) | 
 
 #### Research Mode
 
