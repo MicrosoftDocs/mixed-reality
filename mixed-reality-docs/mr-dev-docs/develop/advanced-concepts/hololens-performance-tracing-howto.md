@@ -16,7 +16,7 @@ Performance tracing with HoloLens is a powerful way to find and resolve computat
 *Performance Trace Analysis in WPA*
 
 To get a detailed understanding of system and application behavior and resource usage for HoloLens, you can use the performance tracing feature.
-This feature captures [Windows Performance Recorder](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448205(v=win.10)) traces in the form an event trace log (ETL) file for use in the [Windows Performance Analyzer](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448170(v=win.10)) (WPA).
+This feature captures [Windows Performance Recorder](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448205(v=win.10)) traces in the form of an event trace log (ETL) file for use in the [Windows Performance Analyzer](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448170(v=win.10)) (WPA).
 
 ### Installation
 
