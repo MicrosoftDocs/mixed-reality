@@ -66,7 +66,7 @@ To learn more about WPA, have a look at these resources:
 * Watch the [introductory videos](/windows-hardware/test/wpt/windows-performance-analyzer) for a first overview.
 * WPA itself has a [Getting Started](/windows-hardware/test/wpt/wpa-in-product-getting-started-help) tab, which explains common steps.
 * Learn about the [WPA User Interface](/windows-hardware/test/wpt/introduction-to-the-wpa-user-interface).
-* There's excellent information on this website, however, not all of it's relevant for beginners.
+* There's excellent information on this website--however, not all of it's relevant for beginners.
 
 **Files you need for WPA trace analysis**
 
