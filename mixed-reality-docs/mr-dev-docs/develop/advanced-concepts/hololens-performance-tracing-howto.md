@@ -46,13 +46,13 @@ Generate an ETL file using the Device Portal in your HoloLens.
 ### Perform a trace
 
 1. On the left, navigate to **Performance** > **Performance Tracing**.
-2. Choose an available profile or select **Custom profiles** > **Browse**:
-   - Use your own profile
-   - [Use an example profile to analyze CPU performance](https://aka.ms/CPUProfileforDevicePortal)
+1. Choose an available profile or select **Custom profiles** > **Browse** then do one of the following:
+   - Use your own custom profile
+   - [Use this example profile to analyze CPU performance](https://aka.ms/CPUProfileforDevicePortal)
    - [Create your own custom profile](/windows-hardware/test/wpt/authoring-recording-profiles/)
-6. Click **Start Trace**.
-7. The HoloLens is now recording a trace. Make sure to trigger the performance issues that you want to investigate, and then select **Stop Trace**.
-8. The trace will be listed at the bottom of the webpage. Select the disk icon at the right-hand side to download the ETL file.
+1. Click **Start Trace**.
+1. The HoloLens is now recording a trace. Make sure to trigger the performance issues that you want to investigate, and then select **Stop Trace**.
+1. The trace will be listed at the bottom of the webpage. Select the disk icon at the right-hand side to download the ETL file.
 
 You now have an ETL file that you can either open directly in WPA or send to someone else.
 
