@@ -229,6 +229,6 @@ Technical details listed above are referenced from manufacturer specifications a
 
 **Quick Answer:** You can run SteamVR with the Ultra PC requirements for Windows Mixed Reality. However, we recommend running the SteamVR Preview on a PC with a GTX 1070 video card (or better) and an Intel Core i7 processor. We're continuing to review feedback and optimize the performance to support additional system configurations in future updates. Your PC won't be blocked from running Windows Mixed Reality SteamVR if you don't meet these higher specs, however, this will impact the performance and quality of the overall experience.
 
-### Are all Steam VR games be supported?
+### Are all Steam VR games supported?
 
 **Quick Answer:** Our intent is to support as wide a range of Steam games as possible, but keep in mind that Steam games can take dependencies on specific hardware and controller configurations based on the game developer's decisions during development.
