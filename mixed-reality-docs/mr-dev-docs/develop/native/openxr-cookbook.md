@@ -1,9 +1,9 @@
 ---
 title: OpenXR cookbook
-description: Find resources and answers to common troubleshoot issues in your Windows Mixed Reality OpenXR applications.
+description: Find answers to common OpenXR how-to questions.
 author: thetuvix
 ms.author: alexturn
-ms.date: 2/28/2020
+ms.date: 3/17/2022
 ms.topic: article
 keywords: OpenXR, Khronos, BasicXRApp, DirectX, native, native app, custom engine, middleware, cookbook, how to, how-to, tips, tricks, FAQ
 ---
