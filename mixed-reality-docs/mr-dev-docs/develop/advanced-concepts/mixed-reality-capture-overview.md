@@ -147,6 +147,5 @@ We recommend you always request Exclusive control for the camera when using MRC.
 ## See also
 
 * [Mixed reality capture](/hololens/holographic-photos-and-videos)
-* [Spectator view](../../design/spectator-view.md)
 * [Unity Development Overview](../unity/unity-development-overview.md)
 * [Unreal development overview](../unreal/unreal-development-overview.md)
