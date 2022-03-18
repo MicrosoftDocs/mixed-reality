@@ -154,7 +154,5 @@
     href: figma-unity-bridge.md
 - name: Sharing
   items:
-  - name: Spectator View
-    href: spectator-view.md
   - name: Shared experiences
     href: shared-experiences-in-mixed-reality.md
