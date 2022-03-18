@@ -48,7 +48,7 @@ Below are some common tools to help you gather deep profiling information for yo
 - [Unity Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html)
 - [Unreal Insights](../unreal/unreal-insights.md)
 - [PIX](https://devblogs.microsoft.com/pix/)
-- [GPU Pofiling in Unreal](https://docs.unrealengine.com/en-US/TestingAndOptimization/PerformanceAndProfiling/GPU/index.html)
+- [GPU Profiling in Unreal](https://docs.unrealengine.com/en-US/TestingAndOptimization/PerformanceAndProfiling/GPU/index.html)
 
 ### How to profile in any environment
 
