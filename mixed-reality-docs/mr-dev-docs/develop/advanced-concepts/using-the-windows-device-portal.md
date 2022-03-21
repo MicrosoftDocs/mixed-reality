@@ -308,6 +308,8 @@ To stop the trace, select the stop link. Stay on this page until the trace file 
 
 Captured ETL files can be opened for analysis in [Windows Performance Analyzer](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448170(v=win.10)).
 
+For a more in-depth look at performance tracing, see the [HoloLens performance tracing how to](../advanced-concepts/hololens-performance-tracing-howto.md).
+
 ### Processes
 
 ![Processes page in Windows Device Portal on Microsoft HoloLens](images/using-windows-portal-img-09.png)<br>

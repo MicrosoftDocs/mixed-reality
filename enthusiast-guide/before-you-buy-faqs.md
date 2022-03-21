@@ -82,8 +82,8 @@ Find out more about [inside-out tracking](./tracking-system.md).
 | Fujitsu FMV Headset | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None |Software | Fall 2017 | [Fujitsu](http://pr.fujitsu.com/jp/news/2017/10/17.html) |
 | HP Reverb | 4320x2160 | LCD | Up to 90 Hz | 114˚ | Integrated + 3.5-mm jack | Built-in |Software | Spring 2019| [HP](https://www.vr-compare.com/headset/hpreverb) |
 | HP VR1000 | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None | Software | Fall 2017 | [HP](https://www.hp.com/us-en/shop/cv/mixed-reality-headset) |
-| HP Reverb G2 | 2160x2160 | LCD | Up to 90 Hz | 107° | Integrated | Built-in | Mechanical | Fall 2020 | [HP](https://www.hp.com/us-en/shop/pdp/hp-reverb-g2-virtual-reality-headset) |
-| HP Reverb G2 Omnicept | 2160x2160 | LCD | Up to 90 Hz | 107° | Integrated | Built-in | Mechanical | Spring 2021 | [HP](https://www.hp.com/us-en/shop/pdp/hp-reverb-g2-omnicept-edition-%282e5q4av%29) |
+| HP Reverb G2 | 2x 2160x2160 | LCD | Up to 90 Hz | 107° | Integrated | Built-in | Mechanical | Fall 2020 | [HP](https://www.hp.com/us-en/shop/pdp/hp-reverb-g2-virtual-reality-headset) |
+| HP Reverb G2 Omnicept | 2x 2160x2160 | LCD | Up to 90 Hz | 107° | Integrated | Built-in | Mechanical | Spring 2021 | [HP](https://www.hp.com/us-en/shop/pdp/hp-reverb-g2-omnicept-edition-%282e5q4av%29) |
 | Lenovo Explorer | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None | Software | Fall 2017 | [Lenovo](https://support.lenovo.com/us/en/solutions/pd500067-overview-for-lenovo-explorer) |
 | Medion ERAZER MR X1000 | 2880x1440 | LCD | Up to 90 Hz | 105˚ | 3.5-mm jack | None | Software | Fall 2017 | [Medion](https://www.medion.com/de/shop/p/gaming-zubehoer-medion-erazer-x1000-mr-glasses-inkl-2-motion-controller-7-34-cm-2-89--lc-display-gaming-zubehoer-bis-zu-105-sichtfeld-2-kameras-zur-bewegungserfassung-30023616A1?clear=true#specs) |
 | Samsung HMD Odyssey | 2880x1600 | AMOLED | Up to 90 Hz | 110˚ | Integrated | None | Mechanical | Fall 2017 | [Samsung](https://www.samsung.com/us/support/computing/hmd/hmd-odyssey/hmd-odyssey-mixed-reality/) |
@@ -229,6 +229,6 @@ Technical details listed above are referenced from manufacturer specifications a
 
 **Quick Answer:** You can run SteamVR with the Ultra PC requirements for Windows Mixed Reality. However, we recommend running the SteamVR Preview on a PC with a GTX 1070 video card (or better) and an Intel Core i7 processor. We're continuing to review feedback and optimize the performance to support additional system configurations in future updates. Your PC won't be blocked from running Windows Mixed Reality SteamVR if you don't meet these higher specs, however, this will impact the performance and quality of the overall experience.
 
-### Are all Steam VR games be supported?
+### Are all Steam VR games supported?
 
 **Quick Answer:** Our intent is to support as wide a range of Steam games as possible, but keep in mind that Steam games can take dependencies on specific hardware and controller configurations based on the game developer's decisions during development.
