@@ -1,7 +1,7 @@
 # [Unity 2020 + OpenXR](#tab/openxr)
 <!-- This is inserted into "preview and debug -->
 1. On your HoloLens, go to the **Microsoft Store** and install the **[Holographic Remoting Player](https://www.microsoft.com/store/p/holographic-remoting-player/9nblggh4sv40)** app.
-1. On your HoloLens, start the **Holographic Remoting Player** app.
+1. On your HoloLens, start the Holographic Remoting Player app. Note that on the Start menu, the tile for the app says **Holographic Remoting**. After launching the app, make sure to press the "Play" button on the app's interface. 
 1. In Unity, on the menu bar, select **Mixed Reality** > **Remoting** > **Holographic remoting for play mode**.
 
     ![Screenshot of project settings panel open in the Unity Editor with XR Plug-in management highlighted.](../images/openxr-features-img-02.png)
