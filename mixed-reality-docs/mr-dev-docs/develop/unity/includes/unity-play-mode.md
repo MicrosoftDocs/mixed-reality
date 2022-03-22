@@ -1,7 +1,7 @@
 # [Unity 2020 + OpenXR](#tab/openxr)
 <!-- This is inserted into "preview and debug -->
 1. On your HoloLens, go to the **Microsoft Store** and install the **[Holographic Remoting Player](https://www.microsoft.com/store/p/holographic-remoting-player/9nblggh4sv40)** app.
-1. On your HoloLens, start the Holographic Remoting Player app. Note that on the Start menu, the tile for the app says **Holographic Remoting**. After launching the app, make sure to press the "Play" button on the app's interface. 
+1. On your HoloLens, launch and play the Holographic Remoting Player app. Note that on the Start menu, the tile for the app says **Holographic Remoting**. After launching the app, make sure to press the "Play" button on the app's interface. 
 1. In Unity, on the menu bar, select **Mixed Reality** > **Remoting** > **Holographic remoting for play mode**.
 
     ![Screenshot of project settings panel open in the Unity Editor with XR Plug-in management highlighted.](../images/openxr-features-img-02.png)
@@ -17,17 +17,19 @@
 1. On the menu bar, select **Edit** > **Project Settings**.
 1. In the left-side column, under **XR Plug-in Management**, select **OpenXR**.
 1. In the **OpenXR** panel, ensure that you're in the **PC, Mac & Linux Standalone settings** tab.
-   
+
     ![Screenshot of the PC, Mac & Linus Standalone tab in the OpenXR plugin window of Project Settings.](../images/025-standalone-tab.png)
-   
+
 1. Under **OpenXR Feature Groups**, the three items in the left-side column are selectable. Make sure **All Features** is selected.
 
     ![Screenshot of the OpenXR Feature Groups section with All Features selected.](../images/026-all-features.png)
 
 1. To the right of **All Features**, select **Holographic Remoting for Play Mode** if it's not already selected.
 1. Close the **Project Settings** window.
-1. Select the **Play** button to start Play Mode.
-1. On your Hololens, click the start button for the Holographic Remoting Player app. To debug C# scripts in play mode, [attach Visual Studio to Unity](/visualstudio/gamedev/unity/get-started/using-visual-studio-tools-for-unity?pivots=windows).
+1. Select the Play button to enter Play Mode, and then view the app in your HoloLens.
+
+    > [!TIP]
+    > To debug C# scripts in play mode, [attach Visual Studio to Unity](/visualstudio/gamedev/unity/get-started/using-visual-studio-tools-for-unity?pivots=windows).
 
 # [Unity 2019/2020 + Windows XR Plugin](#tab/winxr)
 
