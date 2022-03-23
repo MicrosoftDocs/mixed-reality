@@ -39,11 +39,11 @@ In order to enable a range of use cases, various methods have been provided to a
 |Minimize changing mode | When changing the Moving Platform Mode settings the device will lose tracking, causing a negative user experience. It's therefore recommended that you minimize the frequency with which you change the mode. Ideally the mode would only be changed if the device is transitioning from a stationary environment to a moving one, or vice versa.|
 |If uncertain about environment, use Moving Platform Mode | Moving Platform Mode can work in both stationary environments and moving ones. The regular tracking algorithms only work in stationary environments, so if you're uncertain about whether the environment is moving, choosing Moving Platform Mode can be the safer choice. |
 |Don't use Moving Platform Mode in known stationary environments| Moving Platform Mode performs less well than the standard mode in stationary environments. This is a small degradation, though will be noticeable to most users.|
-|Consider what mode to leave the device in | This SDK allows developers to design experiences that are robust across boot of the device. Consider if the device will be on a moving platform next time it boots, and leave the device in the appropriate mode.|
+|Consider what mode to leave the device in | This SDK allows developers to design experiences that are robust across boot of the device. Consider if the device will be on a moving platform next time it boots, and leave the device in the appropriate mode.
 
 ## Where do I get the SDK?
 
-The Moving Platform SDK is downloadable via the [Mixed Reality Feature Tool](/mixed-reality-docs/mr-dev-docs/develop/unity/welcome-to-mr-feature-tool.md).
+The Moving Platform SDK is downloadable via the [Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md).
 The Moving Platform SDK supports language projections for C# and C++, allowing developers to develop applications for Win32 or UWP platforms.
 
 ## How do I use this SDK
