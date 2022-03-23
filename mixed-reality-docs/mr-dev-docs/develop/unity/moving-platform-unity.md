@@ -43,12 +43,11 @@ In order to enable a range of use cases, various methods have been provided to a
 
 ## Where do I get the SDK?
 
-The Moving Platform SDK is downloadable via the [Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md).
-The Moving Platform SDK supports language projections for C# and C++, allowing developers to develop applications for Win32 or UWP platforms.
+The Moving Platform SDK supports language projections for C# and C++, allowing developers to develop applications for Win32 or UWP platforms. Download and install the SDK with the [Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md).
 
 ## How do I use this SDK
 
-First, install the SDK plugin from the [Mixed Reality Feature Tool](/mixed-reality-docs/mr-dev-docs/develop/unity/welcome-to-mr-feature-tool.md). You can then set up your script to use MovingPlatformManger as follows:
+After installing the SDK, you can set up your script to use MovingPlatformManger as follows:
 
 ```cs
 // Top of file
