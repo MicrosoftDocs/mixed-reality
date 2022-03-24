@@ -3,7 +3,7 @@ title: Sharing object movements with multiple users
 description: Complete this course to learn how to share object movements with multiple users in a HoloLens 2 application.
 author: jessemcculloch
 ms.author: vinnietieto
-ms.date: 03/24/22
+ms.date: 03/24/2022
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, multi-user capabilities, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
 ms.localizationpriority: high
