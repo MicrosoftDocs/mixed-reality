@@ -13,6 +13,9 @@ keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reali
 > [!NOTE]
 > This guidance is specific to Holographic Remoting on HoloLens 2 and Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md).
 
+## Version 2.7.5 (March 23, 2022) <a name="v2.7.5"></a>
+* Various bug fixes and stability improvements.
+
 ## Version 2.7.4 (February 8, 2022) <a name="v2.7.4"></a>
 * Fixed issue preventing the Holographic Remoting player, available via the Microsoft Store, from launching correctly.
 
@@ -185,7 +188,7 @@ lease updated to at least version 2.2.1.
 
 ## See Also
 
-* [Holographic Remoting Overview](/windows/mixed-reality/develop/native/holographic-remoting-overview)
+* [Holographic Remoting Overview](./holographic-remoting-overview.md)
 * [Writing a Holographic Remoting remote app using Windows Mixed Reality APIs](holographic-remoting-create-remote-wmr.md)
 * [Writing a Holographic Remoting remote app using OpenXR APIs](holographic-remoting-create-remote-openxr.md)
 * [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)

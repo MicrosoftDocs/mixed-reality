@@ -51,8 +51,6 @@
                 href: unity/tutorials/mr-learning-sharing-03.md
               - name: 4. Sharing object movements with multiple users
                 href: unity/tutorials/mr-learning-sharing-04.md
-              - name: 5. Integrating Azure Spatial Anchors into a shared experience
-                href: unity/tutorials/mr-learning-sharing-05.md
       - name: HoloLens (1st Gen) and immersive headset tutorials
         items:
           - name: Mixed Reality features
@@ -405,7 +403,7 @@
 - name: Holographic Remoting
   items:
     - name: Overview
-      href: /windows/mixed-reality/develop/native/holographic-remoting-overview
+      href: ./native/holographic-remoting-overview.md
       displayname: Holographic Remoting
     - name: Terminology
       href: native/holographic-remoting-terminology.md
@@ -414,7 +412,7 @@
       href: native/holographic-remoting-system-requirements.md
       displayname: Holographic Remoting              
     - name: Store player
-      href: /windows/mixed-reality/develop/native/holographic-remoting-player
+      href: ./native/holographic-remoting-player.md
       displayname: Holographic Remoting
     - name: OpenXR API
       items:

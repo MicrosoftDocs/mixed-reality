@@ -30,7 +30,7 @@ For each of the developer scenarios listed below, there are feature samples that
 | Scenario | Feature sample | Engine | Description |
 | --- | --- | ---- | --- |
 | [**Build basic Unity mixed reality scenarios**](#build-basic-openxr-scenarios) | [OpenXR with Unity samples](#build-basic-openxr-scenarios) | Unity C# | Get started with cross-platform developer tools using the latest Unity 2020.LTS and OpenXR plugin. |
-| [**Anchoring Strategies**](/windows/mixed-reality/design/spatial-anchors) | [Local anchor](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples#sample-for-anchors-and-anchor-persistence) |  | Persist and share spatial anchors across application sessions and across devices. See the [Spatial anchors](/windows/mixed-reality/design/spatial-anchors) article. |
+| [**Anchoring Strategies**](../design/spatial-anchors.md) | [Local anchor](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples#sample-for-anchors-and-anchor-persistence) |  | Persist and share spatial anchors across application sessions and across devices. See the [Spatial anchors](../design/spatial-anchors.md) article. |
 |    | [Azure Spatial Anchors samples](https://github.com/Azure/azure-spatial-anchors-samples) |  | Build spatially aware mixed reality applications with the essential capabilities of [Azure Spatial Anchors](/azure/spatial-anchors/overview). |
 | | [QR Codes](#qr-codes) | Unity C# | Detect QR Codes in the environment. |
 | [**Collaboration in mixed reality**](#collaboration-in-mixed-reality) | [User identity](#user-identity) | Unity C# | Set up your HoloLens 2 device using Azure Active Directory (AAD) credentials. |
@@ -153,4 +153,4 @@ The Holographic Remoting Player is a companion app that connects to PC apps and 
 
 | Sample | Reference article | 
 | --- | --- |
-| [Holographic Remoting samples](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples) | [Holographic Remoting Overview](/windows/mixed-reality/develop/native/holographic-remoting-overview) |
+| [Holographic Remoting samples](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples) | [Holographic Remoting Overview](./native/holographic-remoting-overview.md) |

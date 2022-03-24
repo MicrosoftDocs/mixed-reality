@@ -2404,8 +2404,12 @@
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/tutorials/mr-learning-pc-holographic-remoting-02.md",
 			"redirect_url": "/learn/modules/pc-holographic-remoting-tutorials/4-create-holographic-remoting-pc-application",
 			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/tutorials/mr-learning-sharing-05.md",
+			"redirect_url": "/learn/modules/azure-spatial-anchors-tutorials/",
+			"redirect_document_id": false
 		}
-
 
 	]
 }

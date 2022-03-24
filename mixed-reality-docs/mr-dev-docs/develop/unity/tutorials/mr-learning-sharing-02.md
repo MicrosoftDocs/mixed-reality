@@ -2,10 +2,10 @@
 title: Setting up Photon Unity Networking
 description: Complete this course to learn how to implement Photon Unity Network in a HoloLens 2 mixed reality application.
 author: jessemcculloch
-ms.author: jemccull
-ms.date: 02/05/2021
+ms.author: vinnietieto
+ms.date: 03/22/2022
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens, multi-user capabilities, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors, PUN
+keywords: mixed reality, unity, tutorial, hololens, multi-user capabilities, Photon, MRTK, mixed reality toolkit, UWP, PUN
 ms.localizationpriority: high
 ---
 
@@ -53,18 +53,10 @@ Then enable the following additional capabilities:
 
 ## Importing the tutorial assets
 
-Add AzurespatialAnchors SDK V2.7.1 into your unity project, to add the packages please follow this [tutorial](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)
-
-
 Download and **import** the following Unity custom packages **in the order they are listed**:
  
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.7.2.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.7.2/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.7.2.unitypackage)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.7.2.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.7.2/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.7.2.unitypackage)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.7.2.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/multi-user-capabilities-v2.7.2/MRTK.HoloLens2.Unity.Tutorials.Assets.MultiUserCapabilities.2.7.2.unitypackage)
-
-After you have imported the tutorial assets your Project window should look similar to this:
-
-![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](images/mr-learning-sharing/sharing-02-section4-step1-1.png)
 
 > [!TIP]
 > For a reminder on how to import a Unity custom package, you can refer to the [Importing the tutorial assets](/learn/paths/beginner-hololens-2-tutorials/#importing-the-tutorial-assets) instructions.
