@@ -405,7 +405,7 @@
 - name: Holographic Remoting
   items:
     - name: Overview
-      href: /windows/mixed-reality/develop/native/holographic-remoting-overview
+      href: ./native/holographic-remoting-overview.md
       displayname: Holographic Remoting
     - name: Terminology
       href: native/holographic-remoting-terminology.md
@@ -414,7 +414,7 @@
       href: native/holographic-remoting-system-requirements.md
       displayname: Holographic Remoting              
     - name: Store player
-      href: /windows/mixed-reality/develop/native/holographic-remoting-player
+      href: ./native/holographic-remoting-player.md
       displayname: Holographic Remoting
     - name: OpenXR API
       items:

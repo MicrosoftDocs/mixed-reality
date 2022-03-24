@@ -70,4 +70,4 @@ If you have a Unity 2018 project, you should consider planning for a migration f
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Set up your XR configuration](/windows/mixed-reality/develop/unity/xr-project-setup?tabs=openxr)
+> [Set up your XR configuration](./xr-project-setup.md?tabs=openxr)

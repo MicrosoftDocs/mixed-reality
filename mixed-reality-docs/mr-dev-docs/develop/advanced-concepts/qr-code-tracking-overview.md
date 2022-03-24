@@ -124,7 +124,7 @@ For recommendations on where and how to place QR codes, refer to [Environment co
 
 ### What capabilities are needed?
 
-You'll need the **webcam** capability added to your manifest (checkbox in [Unity Capabilities](/windows/mixed-reality/develop/unity/recommended-settings-for-unity#capabilities)). If you're building as a standard UWP project, it’s also in the `package.appxmanifest` in the solution project.
+You'll need the **webcam** capability added to your manifest (checkbox in [Unity Capabilities](../unity/recommended-settings-for-unity.md#capabilities)). If you're building as a standard UWP project, it’s also in the `package.appxmanifest` in the solution project.
 
 Request access by calling the following function:
 
@@ -237,4 +237,4 @@ For more information, see [Configuring Visual Studio’s settings](https://devbl
 * [QR code tracking in Unity](../unity/qr-code-tracking-unity.md)
 * [Coordinate systems](../../design/coordinate-systems.md)
 * [Azure Spatial Anchors](/azure/spatial-anchors/overview)
-* [HoloLens 2 Locatable camera overview](/windows/mixed-reality/develop/advanced-concepts/locatable-camera-overview#hololens-2)
+* [HoloLens 2 Locatable camera overview](./locatable-camera-overview.md#hololens-2)

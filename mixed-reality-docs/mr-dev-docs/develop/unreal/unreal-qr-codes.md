@@ -70,7 +70,7 @@ Every QR code has a unique guid ID, which you can find by:
 
 ## Next Development Checkpoint
 
-If you're following the [Unreal development checkpoint journey](/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=ue426%2cmrtk%2casa%2cD365#3-advanced-features) we've laid out, you can proceed to the next topic:
+If you're following the [Unreal development checkpoint journey](./unreal-development-overview.md?tabs=ue426%2cmrtk%2casa%2cD365#3-advanced-features) we've laid out, you can proceed to the next topic:
 
 > [!div class="nextstepaction"]
 > [WinRT](unreal-winRT.md)
