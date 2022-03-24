@@ -51,8 +51,6 @@
                 href: unity/tutorials/mr-learning-sharing-03.md
               - name: 4. Sharing object movements with multiple users
                 href: unity/tutorials/mr-learning-sharing-04.md
-              - name: 5. Integrating Azure Spatial Anchors into a shared experience
-                href: unity/tutorials/mr-learning-sharing-05.md
       - name: HoloLens (1st Gen) and immersive headset tutorials
         items:
           - name: Mixed Reality features
