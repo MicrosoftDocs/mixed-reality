@@ -18,7 +18,7 @@ MRTK Figma Bridge for Unity allows you to bring the layout from Figma Toolkit in
 See **[MRTK Figma Toolkit](figma-toolkit.md)** page to learn about Figma Toolkit which is the design file with HoloLens 2 style UI library.
 
 ## Prerequisites
-- See [Install the tools](/windows/mixed-reality/develop/install-the-tools) for the required software for Mixed Reality development
+- See [Install the tools](../develop/install-the-tools.md) for the required software for Mixed Reality development
 - Unity 2019 or higher
 - [MRTK-Unity 2.7.0 or higher](/windows/mixed-reality/mrtk-unity/)
 
@@ -31,7 +31,7 @@ See **[MRTK Figma Toolkit](figma-toolkit.md)** page to learn about Figma Toolkit
 
 ### 1. Installation
 
-Figma Unity Bridge can be installed through [Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool). Download and run Mixed Reality Feature Tool.
+Figma Unity Bridge can be installed through [Mixed Reality Feature Tool](../develop/unity/welcome-to-mr-feature-tool.md). Download and run Mixed Reality Feature Tool.
 
 In **Discover features** page, under **Mixed Reality Toolkit** section, select **MRTK Figma Bridge**. Follow the steps to finish MR Feature Tool and come back to your Unity project. Unity will import the package for MRTK Figma Bridge.
 

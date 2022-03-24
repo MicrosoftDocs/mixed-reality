@@ -13,7 +13,7 @@ Local anchor persistence is currently only supported on the HoloLens family of d
 An additional API called the **XRAnchorStore** enables anchors to be persisted between sessions. The XRAnchorStore is a representation of the saved anchors on a device. Anchors can be persisted from **ARAnchors** in the Unity scene, loaded from storage into new **ARAnchors**, or deleted from storage.
 
 > [!NOTE]
-> These anchors are to be saved and loaded on the same device. Cross-device anchors are supported through [Azure Spatial Anchors](/windows/mixed-reality/develop/unity/shared-experiences-in-unity#azure-spatial-anchors).
+> These anchors are to be saved and loaded on the same device. Cross-device anchors are supported through [Azure Spatial Anchors](../../shared-experiences-in-unity.md#azure-spatial-anchors).
 
 ### Namespaces
 
