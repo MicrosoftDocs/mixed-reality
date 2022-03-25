@@ -15,7 +15,10 @@ If you're developing apps for Windows Mixed Reality using OpenXR, we recommend t
 **To determine if your project has the Mixed Reality OpenXR plugin installed**:
 
 1. In Unity, select **Edit** > **Project Settings**.
-1. In the left-side column, select **XR Plug-in Management**.
+1. Ensure that you're on the **XR Plug-in Management** page with the Universal Windows Platform settings (Windows logo tab) displayed.
+1. If **Microsoft Hololens feature group"** is grayed out, the Mixed Reality OpenXR plugin isn't installed.
+
+    :::image type="content" source="../media/028-ms-hololens-feature-group.png" alt-text="Screenshot of XR Plug-in Management window.":::
 
 ## Download and install the Mixed Reality Feature Tool
 
@@ -67,25 +70,11 @@ To import the Mixed Reality OpenXR plugin into your project we'll use the Mixed 
 1. Select **Approve.**
 1. Return to the Unity Editor and click a blank area in the UI. You'll see a progress bar showing you that your packages are being imported.
 
-## Configure the Unity project
+## Configure the OpenXR Plugin
 
-1. After Unity has imported the packages, a warning appears asking if you want to enable the backends by restarting the editor. Select **Yes**.
+1. There are now two feature groups underneath **OpenXR**. Select the first one, **Microsoft HoloLens feature group**.
 
-    :::image type="content" source="../../media/unity-restart-option.png" alt-text="Screenshot of Unity Restart Option.":::
-
-
-
-1. On the **Welcome to MRTK!** screen, select **Show XR Plug-In Management Settings**.
-
-    :::image type="content" source="../../media/011-show-xr-plugin-management.png" alt-text="Screenshot of the Show XR Plug-In Management Settings button.":::
-
-1. Go to **Edit** > **Project Settings**. Ensure that you're on the **XR Plug-in Management** page with the Universal Windows Platform settings (Windows logo tab) displayed.
-
-    :::image type="content" source="../../media/012-xr-plugin-mgmt-page.png" alt-text="Screenshot of the Project Settings Window open to the XR Plugin Management Page and Universal Windows Platform tab.":::
-
-1. Two feature groups appear underneath **OpenXR**. Select the first one, **Microsoft HoloLens feature group**.
-
-1. Note that there's now a yellow warning triangle next to **OpenXR**. Hover your cursor over the triangle, then read the message in the popup, and then select the triangle.
+1. Note that there's a yellow warning triangle next to **OpenXR**. Hover your cursor over the triangle, then read the message in the popup, and then select the triangle.
 
     :::image type="content" source="../../media/014-yellow-triangle-warning.png" alt-text="Screenshot of warning about incompatible settings.":::
 
@@ -136,9 +125,3 @@ To import the Mixed Reality OpenXR plugin into your project we'll use the Mixed 
     > The **Render Mode** setting, located just above **Depth Submission Mode**, is set by default to **Single Pass Instanced**. In mixed reality apps, the scene is rendered twice: once for each eye. The result is "stereoscopic vision." This doubles the amount of necessary computing, so it's important to select the most efficient rendering path in Unity to save on both CPU and GPU time. Single pass instanced rendering is the best choice here--we recommend that you enable it by default for every project. To learn more about this, [see the Unity documentation](https://docs.unity3d.com/Manual/SinglePassInstancing.html).
 
 1.  Close the **Project Settings** window.
-1.  In the **MRTK Project Configurator** window, select **Apply Settings**.
-
-    :::image type="content" source="../../media/022-configurator-apply-settings.png" alt-text="Screenshot of MRTK Project Configurator with the Apply Settings button.":::
-
-1.  Select **Next** and then **Apply**. 
-1.  Unity must restart in order for the configuration to take effect. When prompted, select **Apply** to restart the Unity editor.
