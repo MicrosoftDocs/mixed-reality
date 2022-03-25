@@ -18,7 +18,7 @@ If you're developing apps for Windows Mixed Reality using OpenXR, we recommend t
 1. Ensure that you're on the **XR Plug-in Management** page with the Universal Windows Platform settings (Windows logo tab) displayed.
 1. If **Microsoft Hololens feature group"** is grayed out, the Mixed Reality OpenXR plugin isn't installed.
 
-    :::image type="content" source="../media/028-ms-hololens-feature-group.png" alt-text="Screenshot of XR Plug-in Management window.":::
+    :::image type="content" source="images/028-ms-hololens-feature-group.png" alt-text="Screenshot of XR Plug-in Management window.":::
 
 ## Download and install the Mixed Reality Feature Tool
 
@@ -32,24 +32,24 @@ To import the Mixed Reality OpenXR plugin into your project we'll use the Mixed 
 
 1. In the unzipped folder, navigate to the executable file **MixedRealityFeatureTool.exe** and then use it to launch the Mixed Reality Feature Tool.
 
-    :::image type="content" source="../media/open-mixed-reality-feature-tool.png" alt-text="Screenshot of Opening MixedRealityFeatureTool.":::
+    :::image type="content" source="images/open-mixed-reality-feature-tool.png" alt-text="Screenshot of Opening MixedRealityFeatureTool.":::
 
 ## Import the Mixed Reality OpenXR Plugin
 
 1. In the Mixed Reality Feature Tool, select **Start**.
 
-    :::image type="content" source="../../media/mixed-reality-feature-tool.png" alt-text="Screenshot of the Mixed Reality Feature Tool opening screen.":::
+    :::image type="content" source="images/mixed-reality-feature-tool.png" alt-text="Screenshot of the Mixed Reality Feature Tool opening screen.":::
 
 1. Select the Browse button (it's the "three-dot" button in the image below), then navigate to your project, and then open it.
 
-    :::image type="content" source="../../media/002-open-your-project.png" alt-text="Open your project":::
+    :::image type="content" source="images/002-open-your-project.png" alt-text="Open your project":::
      
     > [!NOTE]
     > The **Project Path** box in the Tool must contain some value, so it inserts a backslash ("\_") by default.
 
     After you select a folder, the Tool checks to ensure that it's a valid Unity project folder.
 
-    :::image type="content" source="../../media/007-project-path.png" alt-text="Screenshot of the Mixed Reality feature Tool Project Path screen.":::
+    :::image type="content" source="images/007-project-path.png" alt-text="Screenshot of the Mixed Reality feature Tool Project Path screen.":::
   
 1. Select **Discover Features**.
 
@@ -57,11 +57,11 @@ To import the Mixed Reality OpenXR plugin into your project we'll use the Mixed 
 
 1. On the **Discover Features** page, note that there is a list of six package groups.
 
-    :::image type="content" source="../../media/003-mrft-groups.png" alt-text="The main groups of packages in the Mixed Reality Feature Tool":::
+    :::image type="content" source="images/003-mrft-groups.png" alt-text="The main groups of packages in the Mixed Reality Feature Tool":::
 
 1. Click the "+" button to the left of **Platform Support (0 of 5)** and then select the latest version of **Mixed Reality OpenXR Plugin**.
  
-     :::image type="content" source="../../media/027-select-mr-openxr-plugin.png" alt-text="Screenshot of package selections in the Mixed Reality Feature Tool.":::
+     :::image type="content" source="images/027-select-mr-openxr-plugin.png" alt-text="Screenshot of package selections in the Mixed Reality Feature Tool.":::
 
 1. After you've made your selection(s), click **Get Features**.
 1. Select **Validate** to validate the packages you selected. You should see a dialog that says **No validation issues were detected**. When you do, click **OK**.
@@ -76,19 +76,19 @@ To import the Mixed Reality OpenXR plugin into your project we'll use the Mixed 
 
 1. Note that there's a yellow warning triangle next to **OpenXR**. Hover your cursor over the triangle, then read the message in the popup, and then select the triangle.
 
-    :::image type="content" source="../../media/014-yellow-triangle-warning.png" alt-text="Screenshot of warning about incompatible settings.":::
+    :::image type="content" source="images/014-yellow-triangle-warning.png" alt-text="Screenshot of warning about incompatible settings.":::
 
 1. In the **OpenXR Project Validation** window, there are several issues listed. Select the **Fix All** button.
 
-    :::image type="content" source="../../media/015-fix-all-button.png" alt-text="Screenshot of the Fix All button in the OpenXR Project Validation window.":::
+    :::image type="content" source="images/015-fix-all-button.png" alt-text="Screenshot of the Fix All button in the OpenXR Project Validation window.":::
 
 1. One issue remains and tells you that you must add at least one interaction profile. To do so, click **Edit**. This takes you to the settings for the **OpenXR** plugin in the **Project Settings** window.
 
-    :::image type="content" source="../../media/016-openxr-screen.png" alt-text="Screenshot of the Project Settings window with the OpenXR settings displayed.":::
+    :::image type="content" source="images/016-openxr-screen.png" alt-text="Screenshot of the Project Settings window with the OpenXR settings displayed.":::
 
 1. Underneath **Interaction Profiles**, note the plus sign (+) button.
 
-    :::image type="content" source="../../media/017-add-profile-button.png" alt-text="Screenshot of the Add Interaction Profile button.":::
+    :::image type="content" source="images/017-add-profile-button.png" alt-text="Screenshot of the Add Interaction Profile button.":::
 
 1. Click the button three times, each time choosing a different profile:
 
@@ -98,11 +98,11 @@ To import the Mixed Reality OpenXR plugin into your project we'll use the Mixed 
 
     **Microsoft Motion Controller Profile**
 
-    :::image type="content" source="../../media/018-interaction-profiles.png" alt-text="Screenshot of interaction profiles that should be added.":::
+    :::image type="content" source="images/018-interaction-profiles.png" alt-text="Screenshot of interaction profiles that should be added.":::
 
     If the **Eye Gaze Interaction Profile**, or any other profile, appears with a yellow triangle next to it, select the triangle, and then in the **OpenXR Project Validation** window, click the **Fix** button. When you're finished, close the **OpenXR Project Validation** window.
 
-    :::image type="content" source="../../media/019-fix-eye-gaze.png" alt-text="Screenshot of the Fix button for the Eye Gaze interaction profile.":::
+    :::image type="content" source="images/019-fix-eye-gaze.png" alt-text="Screenshot of the Fix button for the Eye Gaze interaction profile.":::
 
 1. In the **Project Settings** window under **OpenXR Feature Groups**, ensure that the following are selected:
    
@@ -112,11 +112,11 @@ To import the Mixed Reality OpenXR plugin into your project we'll use the Mixed 
 
    **Motion Controller Model**
 
-    :::image type="content" source="../../media/020-selected-features.png" alt-text="Screenshot of selected features for OpenXR.":::
+    :::image type="content" source="images/020-selected-features.png" alt-text="Screenshot of selected features for OpenXR.":::
 
 1. Click the **Depth Submission Mode** drop down and then select **Depth 16 Bit**.
 
-    :::image type="content" source="../../media/021-depth-submission-mode.png" alt-text="Screenshot of Depth 16 Bit selected for Depth Submission Mode.":::
+    :::image type="content" source="images/021-depth-submission-mode.png" alt-text="Screenshot of Depth 16 Bit selected for Depth Submission Mode.":::
 
     > [!TIP]
     > Reducing the Depth Format to 16-bit is optional, but it may improve graphics performance in your project. To learn more, see [Depth buffer sharing (HoloLens)](/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering).
