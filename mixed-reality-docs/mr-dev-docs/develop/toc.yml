@@ -214,7 +214,10 @@
         href: unity/recommended-settings-for-unity.md
       - name: Preview and debug your app with Holographic Remoting
         href: unity/preview-and-debug-your-app.md
-        displayname: Holographic Remoting       
+        displayname: Holographic Remoting
+      - name: Known issues in versions and packages
+        href: unity/known-issues.md    
+        displayname: bugs
   - name: Visual Studio solutions
     items:
       - name: Build and deploy to the HoloLens
