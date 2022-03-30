@@ -1,0 +1,20 @@
+---
+title: Known issues in Unity versions and packages
+description: Stay up to date on the known issues in Unity versions and packages.
+author: vtieto
+ms.author: vinnietieto
+ms.date: 03/30/2022
+ms.topic: article
+
+keywords: mixed reality, unity, versions, issues, bugs, packages
+ms.localizationpriority: high
+---
+
+# Known issues in Unity versions and packages
+
+The following table contains all known serious issues facing HoloLens 2 development.
+
+| Known Issues | Status | Version/Package found in | Version/Package fixed in |
+| --- | --- | ---- | --- |
+| Application with default Splashscreen will show 4 spinning dots when launching on HL2. |In progress Last Update 3/25/2022 | 2021.2.17f1  2020.3.32f1  | TBD |
+| HL2 application shows severer jittery image | Fixed on 12/03/2022 | 2020.3.21f1, 2020.3.22f1 or 2020.3.23f1 | 2020.3.24f1 and later. |
