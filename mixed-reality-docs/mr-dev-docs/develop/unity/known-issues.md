@@ -16,5 +16,5 @@ The following table contains all known serious issues that may affect HoloLens 2
 
 | Known Issues | Status | Version/Package found in | Version/Package fixed in |
 | :------------ | :------ | :------------------------: | :--------------: |
-| Application with default Splashscreen will show four spinning dots when launching on HL2. |In progress<br> Last update:<br> 3/25/2022 | 2021.2.17f1<br>  2020.3.32f1  | TBD |
+| Application with default splash screen will show four spinning dots when launching on HL2. |In progress<br> Last update:<br> 3/25/2022 | 2021.2.17f1<br>  2020.3.32f1  | TBD |
 | HL2 application shows severely jittery image. | Fixed on 12/03/2022 | 2020.3.21f1, 2020.3.22f1<br> or 2020.3.23f1 | 2020.3.24f1<br> and later. |
