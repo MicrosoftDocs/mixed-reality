@@ -166,7 +166,7 @@ After you're satisfied with your animation
   * Material: Teaching_Hand2
   * Scripts: Refer to MRTK guidelines for <a href= "/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-coach"> MRTK hand coach </a>
   * Per- project setting
-    * Scene set to UWP: Instruction can be found on the [Configure Unity Project](../develop/unity/Configure-Unity-Project.md) for Windows Mixed Reality
+    * Scene set to UWP: Instruction can be found on the [Setting up your XR configuration page](../develop/unity/xr-project-setup.md?tabs=openxr#manual-setup-without-mrtk)
 
 ## See also
 
@@ -174,6 +174,6 @@ After you're satisfied with your animation
 * [Asset Creation Process](asset-creation-process.md)
 * [Gestures](./interaction-fundamentals.md)
 * [Install the Tools](../develop/install-the-tools.md)
-> [Choose the right Unity version for you](../unity/choosing-unity-version.md)
+> [Setting up your XR configuration](../develop/unity/xr-project-setup.md?tabs=openxr#manual-setup-without-mrtk)
 * [Unity development overview](../develop/unity/unity-development-overview.md)
 * [MRTK 101](/windows/mixed-reality/mrtk-unity/)
