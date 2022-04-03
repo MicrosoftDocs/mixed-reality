@@ -16,6 +16,8 @@ The instructions in this page will set you up with the core Unity OpenXR package
 * Unity OpenXR plugin: version 1.2 or later
 * Mixed Reality OpenXR plugin: version 1.0.0 or later
 
+[!INCLUDE[](includes/xr/recommended-version.md)]
+
 If you use the following packages in your project, you will need to ensure that you use at least the minimum versions listed below:
 
 * MRTK: version 2.7.2 or later

@@ -10,11 +10,13 @@ keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality headset,
 
 # Choosing a Unity version and XR plugin
 
-While we currently **recommend installing Unity 2020.3 LTS with the latest Mixed Reality OpenXR plugin** for Mixed Reality development, you can build apps with other Unity configurations as well.
+While we currently **recommend installing Unity 2020.3 LTS with the Mixed Reality OpenXR plugin** for Mixed Reality development, you can build apps with other Unity configurations as well.
 
 ## Unity 2020.3 LTS (Recommended)
 
-Microsoft’s current recommended Unity configuration for HoloLens 2 and Windows Mixed Reality development is **Unity 2020.3 LTS with the latest Mixed Reality OpenXR plugin**. You **must** use Unity patch release 2020.3.8f1 or later to avoid known performance issues with earlier 2020.3 builds.
+Microsoft’s current recommended Unity configuration for HoloLens 2 and Windows Mixed Reality development is **Unity 2020.3 LTS with the Mixed Reality OpenXR plugin**.
+
+[!INCLUDE[](includes/xr/recommended-version.md)]
 
 > [!IMPORTANT]
 > Unity 2020 does not support targeting HoloLens (1st gen). These headsets remain supported in **[Unity 2019 LTS](#unity-20194-lts)** with Legacy Built-in XR for the full lifecycle of Unity 2019 LTS through mid-2022.
@@ -60,6 +62,8 @@ If you are developing apps for HoloLens (1st gen), these headsets remain support
 ## Unity 2021.2
 
 If you are trying out early **Unity 2021.2** builds, get started with the [**Mixed Reality OpenXR plugin**](xr-project-setup.md?tabs=openxr). The OpenXR plugin is the only path for mixed reality development in Unity 2021.2 and later, as the final Unity version to support the Windows XR plugin was Unity 2021.1.
+
+[!INCLUDE[](includes/xr/recommended-version.md)]
 
 ## Unity 2018.4 LTS
 
