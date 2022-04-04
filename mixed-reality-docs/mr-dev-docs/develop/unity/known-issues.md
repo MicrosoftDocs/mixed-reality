@@ -16,7 +16,7 @@ Some versions of Unity or Unity plugins have known incompatibilities blocking ap
 
 [!INCLUDE[](includes/xr/recommended-version.md)]
 
-# Blocking issues table
+## Blocking issues table
 
 | Blocking issues | Status | &nbsp;&nbsp;Versions&nbsp;with&nbsp;issue&nbsp;&nbsp; | &nbsp;&nbsp;Version&nbsp;with&nbsp;fix&nbsp;&nbsp; |
 | :----------- | :----- | :--------------: | :--------------: |
