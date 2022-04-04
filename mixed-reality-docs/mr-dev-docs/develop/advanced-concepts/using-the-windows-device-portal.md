@@ -3,7 +3,7 @@ title: Using the Windows Device Portal
 description: Learn how to configure and manage your device remotely over Wi-Fi or USB using the Windows Device Portal.
 author: hamalawi
 ms.author: moelhama
-ms.date: 08/03/2020
+ms.date: 02/10/2022
 ms.topic: article
 keywords: Windows Device Portal, HoloLens
 ms.localizationpriority: high
@@ -171,7 +171,7 @@ Once the installation is complete, go back to the **All apps** page on your Holo
 *Windows Device Portal home page on Microsoft HoloLens*
 
 > [NOTE]
-> Settings configured in the Device Portal apply to the entire device and persist through reboots. It is recommended to only use Device Portal when developing, and not on deployed devices.
+> Settings configured in the Device Portal apply to the entire device and persist through reboots. Device Portal is for use by developers, not in deployed applications.
 
 Your Device Portal session starts at the Home page. Access other pages from the navigation bar along the left side of the home page.
 
@@ -241,7 +241,7 @@ To import maps and anchors, select **Upload a map file** and **Upload an anchor 
 *Mixed Reality Capture page in Windows Device Portal on Microsoft HoloLens*
 
 > [!IMPORTANT]
-> Settings configured in the Device Portal apply to the entire device and persist through reboots. Any settings modified in the Device Portal will apply to mixed reality captures and apps. Only use Device Portal when developing, and not for applications deployed to your organization.
+> Device Portal is for use by developers, not in deployed applications. Settings configured in the Device Portal apply to the entire device and persist through reboots. Any settings modified in the Device Portal will apply to mixed reality captures and apps.
 
 Use the Mixed Reality Capture page to save media streams from the HoloLens.
 * **Capture Settings**: Control the media streams that are captured by checking the following settings:
@@ -307,6 +307,8 @@ Capture [Windows Performance Recorder](/previous-versions/windows/it-pro/windows
 To stop the trace, select the stop link. Stay on this page until the trace file has completed downloading.
 
 Captured ETL files can be opened for analysis in [Windows Performance Analyzer](/previous-versions/windows/it-pro/windows-8.1-and-8/hh448170(v=win.10)).
+
+For a more in-depth look at performance tracing, see the [HoloLens performance tracing how to](../advanced-concepts/hololens-performance-tracing-howto.md).
 
 ### Processes
 
@@ -414,6 +416,19 @@ Manages Wi-Fi connections on the HoloLens.
 * **WiFi adapters**: Select a Wi-Fi adapter and profile by using the dropdown controls. Click or tap **Connect** to use the selected adapter.
 * **Available networks**: Lists the Wi-Fi networks that the HoloLens can connect to. Click or tap **Refresh** to update the list.
 * **IP configuration**: Shows the IP address and other details of the network connection.
+
+### PowerThermalSDK Test
+
+![PowerThermalSDK Test page in Windows Device Portal on Microsoft HoloLens](images/windows-device-portal-power-thermal-sdk-test-page.png)<br>
+*PowerThermalSDK Test page in Windows Device Portal on Microsoft HoloLens*
+
+For use with the PowerThermalNotification SDK. See [Managing power and thermals](..\unity\managing-power-and-thermals.md).
+
+Use this page to monitor and control the mitigation levels and thermal scores used with the SDK.  The page also provides details on which peripherals are having their mitigations suppressed by active applications.
+
+> [!NOTE]
+> This page is only available in OS builds that support the PowerThermalNotification SDK
+
 
 ### Virtual Input
 

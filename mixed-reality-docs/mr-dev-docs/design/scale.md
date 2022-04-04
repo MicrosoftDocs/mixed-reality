@@ -1,8 +1,8 @@
 ---
 title: Scale
 description: A key to displaying content that looks realistic in holographic form is to mimic the visual statistics of the real world as closely as possible.
-author: shengkait
-ms.author: shentan
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, Style, design, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, scale, holograms

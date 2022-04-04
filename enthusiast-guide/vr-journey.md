@@ -1,8 +1,8 @@
 ---
 title: Start your VR journey
 description: Explore our curated checkpoints to guide new device users through setting up and using their immersive VR devices.
-author: hferrone
-ms.author: v-hferrone
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR,

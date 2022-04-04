@@ -53,7 +53,7 @@ highlightedContent:
     # Card
     - title: AltspaceVR 
       itemType: whats-new 
-      url: /windows/mixed-reality/altspace-vr/journey
+      url: /windows/mixed-reality/altspace-vr/overview
 
 # productDirectory section (optional)
 productDirectory:
@@ -67,7 +67,7 @@ productDirectory:
       links:
         - url: design/design.md
           text: Design and prototype
-        - url: design/types-of-mixed-reality-apps.md
+        - url: discover/types-of-mixed-reality-apps.md
           text: Choose your type of Mixed Reality app
         - url: discover/case-study-expanding-the-design-process-for-mixed-reality.md
           text: Expand your design process
@@ -123,10 +123,10 @@ conceptualContent:
         - url: develop/unity/unity-development-overview.md
           itemType: overview
           text: Unity development overview
-        - url: develop/unity/mrtk-getting-started.md
+        - url: /windows/mixed-reality/mrtk-unity/
           itemType: overview
           text: What is MRTK?
-        - url: develop/unity/tutorials/mr-learning-base-01.md
+        - url: /learn/paths/beginner-hololens-2-tutorials/
           itemType: tutorial
           text: HoloLens 2 tutorial series
         - url: /windows/mixed-reality/mrtk-unity/
@@ -135,7 +135,7 @@ conceptualContent:
         - url: develop/unity/shared-experiences-in-unity.md
           itemType: concept
           text: Platform capabilities and APIs
-        - url: develop/unity/exporting-and-building-a-unity-visual-studio-solution.md
+        - url: develop/unity/build-and-deploy-to-hololens.md
           itemType: deploy
           text: Deploying to device or emulator
       # footerLink (optional)

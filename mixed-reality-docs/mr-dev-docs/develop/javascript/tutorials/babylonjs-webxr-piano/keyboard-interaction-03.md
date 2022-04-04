@@ -1,8 +1,8 @@
 ---
 title: Play the 3D piano
 description: Learn how to add interactions to a virtual piano using Babylon.js
-author: JING1201
-ms.author: v-vtieto
+author: vtieto
+ms.author: vinnietieto
 ms.prod: mixed-reality
 ms.topic: tutorial
 ms.date: 09/10/2021

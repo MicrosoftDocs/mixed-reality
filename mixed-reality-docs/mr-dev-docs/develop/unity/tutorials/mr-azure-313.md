@@ -44,9 +44,9 @@ This course will teach you how to setup and use the IoT Hub Service, and then vi
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th> <a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details">Immersive headsets</a></th>
 </tr><tr>
-<td> MR and Azure 313: IoT Hub Service</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+<td> MR and Azure 313: IoT Hub Service</td><td> ✔️</td><td> ✔️</td>
 </tr>
 </table>
 
@@ -132,7 +132,7 @@ The **IoT Hub Service** that you will build and use in this course, refers to **
 
 3. Click on **Create**.
 
-    ![](images/AzureLabs-Lab313-06.png)
+    ![Screenshot that shows where to select Create.](images/AzureLabs-Lab313-06.png)
 
 4. Set the Service setup parameters:
 
@@ -146,13 +146,13 @@ The **IoT Hub Service** that you will build and use in this course, refers to **
 
     5. Set **SKU** to **Basic**. 
 
-    ![](images/AzureLabs-Lab313-07.png)
+    ![Screenshot that shows where so set SKU to Basic.](images/AzureLabs-Lab313-07.png)
 
 5. Click **Create** and wait for the Services to be created. 
 
 6. Once the notification pops up informing you of the successful creation of the *Container Registry*, click on **Go to resource** to be redirected to your Service page.
 
-    ![](images/AzureLabs-Lab313-08.png)
+    ![Screenshot that shows where to select Go to resource.](images/AzureLabs-Lab313-08.png)
 
 7. In the *Container Registry* Service page, click on **Access keys**.
 
@@ -161,7 +161,7 @@ The **IoT Hub Service** that you will build and use in this course, refers to **
     2. **Username**
     3. **Password**
 
-    ![](images/AzureLabs-Lab313-09.png)
+    ![Screenshot that shows where to view the Login Server, Username, and Password parameters.](images/AzureLabs-Lab313-09.png)
 
 ## Chapter 3 - The IoT Hub Service
 

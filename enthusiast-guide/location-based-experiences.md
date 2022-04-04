@@ -2,7 +2,7 @@
 title: Location Based Entertainment with Windows Mixed Reality
 description: Learn about Windows Mixed Reality for Location Based Entertainment—hardware, backpack PCs, tracking, configuration, and support.
 author: qianw211
-ms.author: v-qianwen
+ms.author: qianwen
 ms.date: 11/17/2021
 ms.topic: article
 keywords: mixed reality, vr, lbe, location, mixed reality headset, windows mixed reality headset, virtual reality headset, hardware, HoloLens, multiplayer, cloud services, azure
@@ -45,9 +45,9 @@ For PC-tethered VR experiences, we recommend that you use the HP Z VR Backpack G
 **Q: How can I more easily configure setup and customize the Mixed Reality Portal for LBE?**
 
 >[!NOTE]
->This feature requires the [Mixed Reality Portal](/windows/mixed-reality/enthusiast-guide/install-windows-mixed-reality#launch-mixed-reality-portal) version 2000.19061.1011.0 or greater.  
+>This feature requires the [Mixed Reality Portal](./install-windows-mixed-reality.md#launch-mixed-reality-portal) version 2000.19061.1011.0 or greater.  
 
-You may find that you need more customization of Mixed Reality Portal than is normally available through the app for deploying apps to kiosks or customized experiences. [Mixed Reality Portal](/windows/mixed-reality/enthusiast-guide/install-windows-mixed-reality#launch-mixed-reality-portal) supports several advanced settings, which you can set via a configuration file:  
+You may find that you need more customization of Mixed Reality Portal than is normally available through the app for deploying apps to kiosks or customized experiences. [Mixed Reality Portal](./install-windows-mixed-reality.md#launch-mixed-reality-portal) supports several advanced settings, which you can set via a configuration file:  
 
 * **Allow failed system checks** – normally the setup process checks the PC for compatibility with Windows Mixed Reality before completing setup. Bypassing compatibility checks may result in a degraded experience when attempting to run Windows Mixed Reality on an incompatible host PC. 
 
@@ -56,11 +56,11 @@ You may find that you need more customization of Mixed Reality Portal than is no
 * **Skip room setup** – instead of being prompted to create a room boundary, you can continue directly into the headset in Seated/Standing mode.  
 
   >[!Caution]
-  >Failure to set up, use, and properly care for your device can increase the risk of serious injury, death, property damage, or damage to the product or related accessories. See [details](/windows/mixed-reality/enthusiast-guide/wmr-health-safety-comfort).
+  >Failure to set up, use, and properly care for your device can increase the risk of serious injury, death, property damage, or damage to the product or related accessories. See [details](./wmr-health-safety-comfort.md).
 
-* **Skip installing apps from the Store** - normal setup installs several Store apps including [3D Viewer](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) and the [Edge 360 Viewer add-on](/windows/mixed-reality/enthusiast-guide/webvr). When you choose this option, you skip installing these apps, but this may result in missing device functionality.  
+* **Skip installing apps from the Store** - normal setup installs several Store apps including [3D Viewer](https://www.microsoft.com/p/3d-viewer/9nblggh42ths?activetab=pivot:overviewtab) and the [Edge 360 Viewer add-on](./webvr.md). When you choose this option, you skip installing these apps, but this may result in missing device functionality.  
 
-* **Show preview in full screen** – [Mixed Reality Portal](/windows/mixed-reality/enthusiast-guide/install-windows-mixed-reality#launch-mixed-reality-portal) will default to showing the headset preview in full-screen on the desktop PC while the headset is in use.  
+* **Show preview in full screen** – [Mixed Reality Portal](./install-windows-mixed-reality.md#launch-mixed-reality-portal) will default to showing the headset preview in full-screen on the desktop PC while the headset is in use.  
 
 * **Hide New for you side panel** – prevents the **New for you** panel from being expanded on launch of Mixed Reality Portal.  
 
@@ -94,7 +94,7 @@ The JSON file should have the below contents with “true” set for any of the 
  
 **Q: Is there any guidance on configuring the playspace?**
 
-A: Configuring a playspace should be done as you would with a consumer setup experience. The Room Setup process will also let you define your room boundaries. More details on configuring room boundaries can be read [here](/windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
+A: Configuring a playspace should be done as you would with a consumer setup experience. The Room Setup process will also let you define your room boundaries. More details on configuring room boundaries can be read [here](./set-up-windows-mixed-reality.md#set-up-your-room-boundary).
 
 As discussed in the above document the maximum reasonable single coordinate playspace is around 5mx5m. If you want to have a larger area, you can make use of the Spatial Anchors capability in the Windows Holographic API stack. Using this API will require custom engineering in the experiences you're producing.  
 
@@ -109,7 +109,7 @@ You can set up “seated” mode, which won't display the boundary or configure 
 
 The application developer is responsible to display necessary safeguards so that users don’t collide with physical surroundings.  These could be digital walls within the experience or a customized game boundary visual. 
 
-Guidance on setting up the room boundary with WMR can be found [here](/windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
+Guidance on setting up the room boundary with WMR can be found [here](./set-up-windows-mixed-reality.md#set-up-your-room-boundary).
 
 **Q: Where is the origin of the playspace?**
 
@@ -137,7 +137,7 @@ A: If you opt in to the Windows 20H1 or later build via our [Windows Insider pro
 
 Q: How does the tracking technology in the Windows Mixed Reality headsets work?  
 
-Mixed Reality shares the same tracking technology as the HoloLens. For more information, see [inside-out tracking system](/windows/mixed-reality/enthusiast-guide/tracking-system).
+Mixed Reality shares the same tracking technology as the HoloLens. For more information, see [inside-out tracking system](./tracking-system.md).
 
 For a description of how the higher-level spatial mapping system works, see [Spatial mapping](/windows/mixed-reality/design/spatial-mapping).
 
@@ -185,13 +185,13 @@ A: Azure PlayFab is a complete backend platform for live games. You can learn mo
 
 **Q: I use SteamVR to deploy my experiences. Does Windows Mixed Reality work with SteamVR?**
 
-A: Windows Mixed Reality for SteamVR allows users to run SteamVR experiences on Windows Mixed Reality immersive headsets. Learn more about [using SteamVR with WMR](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality).
+A: Windows Mixed Reality for SteamVR allows users to run SteamVR experiences on Windows Mixed Reality immersive headsets. Learn more about [using SteamVR with WMR](./using-steamvr-with-windows-mixed-reality.md).
 
 ### Support and community  
 
 We have a few helpful resources to help you engage with subject matter experts on our team, get troubleshooting support, and contribute to the broader mixed reality dev community.  
 
-If you run into issues with any publicly released features, file a bug using Feedback Hub.For guidance, refer to this [page](/windows/mixed-reality/enthusiast-guide/filing-feedback).
+If you run into issues with any publicly released features, file a bug using Feedback Hub.For guidance, refer to this [page](./filing-feedback.md).
 
 For other troubleshooting help with WMR, file a [support request](https://support.microsoft.com//supportforbusiness/productselection?sapId=96bfb202-bc79-741b-bf7a-774d8b767782) with our customer support team.
 

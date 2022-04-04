@@ -2,8 +2,8 @@
 title: Sharing object movements with multiple users
 description: Complete this course to learn how to share object movements with multiple users in a HoloLens 2 application.
 author: jessemcculloch
-ms.author: jemccull
-ms.date: 02/05/2021
+ms.author: vinnietieto
+ms.date: 03/24/2022
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, multi-user capabilities, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
 ms.localizationpriority: high
@@ -36,7 +36,7 @@ In the Hierarchy window, ensure the **MixedRealityPlayspace** object is expanded
 
 ## Configuring PUN to instantiate the objects
 
-In this section, you will configure the project to use the Rover Explorer experience created during the [Getting started tutorials](mr-learning-base-01.md) and define where it will be instantiated.
+In this section, you will configure the project to use the Rover Explorer experience created during the [Getting started tutorials](/learn/paths/beginner-hololens-2-tutorials/) and define where it will be instantiated.
 
 In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources** folder.
 
@@ -60,7 +60,6 @@ If you now build and deploy the Unity project to your HoloLens, and then, back i
 
 ## Congratulations
 
-You have successfully configured your project to synchronize object movements so users can see the objects move when other users move them. In the next tutorial, you will implement functionality to align the experience in the physical world. This will ensure the users see each other in their actual physical location, and so the objects appear in the same physical position and rotation for all users.
+You have successfully configured your project to synchronize object movements so users can see the objects move when other users move them. This will ensure that the users see each other in their actual physical locations. It will also ensure that objects appear in the same physical position and rotation for all users. If you want to learn how to physically align the now-synchronized movements, see our ["Create a new HoloLens Unity app using Azure Spatial Anchors"](/azure/spatial-anchors/tutorials/tutorial-new-unity-hololens-app) tutorial.
 
-> [!div class="nextstepaction"]
-> [Next Tutorial: 5. Integrating Azure Spatial Anchors into a shared experience](mr-learning-sharing-05.md)
+In this multi-user capabilities tutorial series you learned how to set up a Photon account, create a PUN app, integrate PUN into the Unity project, and configure user avatars and shared objects. This tutorial concludes the series.

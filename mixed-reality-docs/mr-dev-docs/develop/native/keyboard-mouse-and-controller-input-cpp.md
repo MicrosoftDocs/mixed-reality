@@ -1,8 +1,8 @@
 ---
 title: Keyboard, mouse, and controller input (C++)
 description: Explains how to create an app for Windows Mixed Reality that uses keyboard, mouse, and game controllers.
-author: mikeriches
-ms.author: v-vtieto
+author: vtieto
+ms.author: vinnietieto
 ms.date: 09/02/2021
 ms.topic: article
 keywords: Windows Mixed Reality, keyboard, mouse, game controller, xbox controller, HoloLens, desktop, walkthrough, sample code

@@ -2,8 +2,8 @@
 title: Migrate a Unity 2019 project to Unity 2020 + OpenXR
 description: Learn how to Migrate a Unity 2019 project to Unity 2020 + OpenXR.
 author: vtieto
-ms.author: v-vtieto
-ms.date: 10/29/2021
+ms.author: vinnietieto
+ms.date: 03/07/2022
 ms.topic: article
 keywords: Unity, mixed reality, development, getting started, new project, Windows Mixed Reality, XR, mrtk, Unity 2020, Unity 2019, OpenXR, migrate
 ---
@@ -23,9 +23,36 @@ For the smoothest migration, we recommend that you complete all the steps in thi
 
 If you’re already using MRTK, we suggest that the first step in your migration should be to run the Mixed Reality Feature Tool and update to the latest stable version of MRTK.
 
-[!INCLUDE [MRFT initial steps](../../includes/mrft-steps-part-1.md)]
+### Select the features you want
+
+> [!NOTE]
+> The descriptions and images in this section are based on the most recent version of the Tool. If the instructions don't match what you're seeing, check to ensure that you're not using an older version of the Tool.
+
+1. Open the Microsoft Mixed Reality Feature Tool and then click the **Start** button.
+
+    :::image type="content" source="images/001-mr-feature-tool.png" alt-text="Mixed Reality Feature Tool":::
+
+1. Select the Browse button (it's the "three-dot" button in the image below), then navigate to your project, and then open it.
+
+    :::image type="content" source="images/002-open-your-project.png" alt-text="Open your project":::
+
+1. Select **Discover Features.**
+
+    **Note**: You may need to wait a few seconds while the Tool refreshes the packages from the feeds.
+
+1. On the **Discover Features** page, note that there is a list of six package groups.
+
+    :::image type="content" source="images/003-mrft-groups.png" alt-text="The main groups of packages in the Mixed Reality Feature Tool":::
+
 1. Click the "+" button to the left of **Mixed Reality Toolkit** and then select the latest version of **Mixed Reality Toolkit Foundation**.
-[!INCLUDE [MRFT final steps](../../includes/mrft-steps-part-2.md)]
+
+### Import the features
+
+1. After you've made your selection(s), click **Get Features**. 
+1. On the **Import Features** page, the left-side column, **Features**, displays the packages you just selected. The right-side column, **Required dependencies**, displays any dependencies. You can click the **Details** link for any of these items to learn more about them.
+1. When you're ready to move on, select **Import.** On the **Review and Approve** page, you can review information about the packages.
+1. Select **Approve.** The Feature Tool displays a message that says your project has been updated.
+1. Return to the Unity Editor and click a blank area in the UI. You'll see a message telling you that your packages are being imported.
 
 By doing this upgrade while still using Unity 2019, you can view the MRTK Project Configurator and see any "deprecated API" warnings about how to get current. The warnings will tell you what to change. If you don't do this MRTK upgrade first, the old API might be gone and you won’t have those warnings.
 
@@ -59,7 +86,7 @@ We're not quite ready to install OpenXR yet, but this next set of steps helps yo
     Ensure that you're in the Universal Windows Platform tab (it's the second tab and displays the Windows logo) and then, under **Plug-in-Providers**, select **Windows Mixed Reality.**
     - **If you're targeting Desktop VR:**  
     Ensure that you're in the Desktop tab (it's the first tab and displays an image of a monitor), and then, under **Plug-in-Providers**, select **Windows Mixed Reality.**
-1. The **MRTK Project Configurator** window appears again. Click the **Next** button, and then click **Next** again. (You may want to take a moment to read the explanations on these pages before moving on.) <!-- Is this the right thing to do? Find out.>
+1. The **MRTK Project Configurator** window appears again. Click the **Next** button, and then click **Next** again. (You may want to take a moment to read the explanations on these pages before moving on.)
 1. Select **Import TMP Essentials**.
 1. Select **Done**. This closes the Configurator.
 1. Close the **Project Settings** window, save your project, and then exit Unity.
@@ -92,7 +119,7 @@ After Unity reopens again, you can set OpenXR as the runtime:
 
 1. On the menu bar, select **Edit** > **Project Settings**.
 
-Look in the left-side column and ensure that you're on the **XR Plug-in Management** page and in the Universal Windows Platform tab (there's an image of the Windows logo on the tab).
+    Look in the left-side column and ensure that you're on the **XR Plug-in Management** page and in the Universal Windows Platform tab (there's an image of the Windows logo on the tab).
 
 1. In the **Plug-in Providers** list, select **OpenXR**.
 

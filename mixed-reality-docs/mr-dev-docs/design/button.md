@@ -145,7 +145,7 @@ For multiple buttons, it is recommended to use shared backplate instead of indiv
 ---
 
 ## Button in MRTK (Mixed Reality Toolkit)
-**[MRTK for Unity](/windows/mixed-reality/mrtk-unity/)** and **[MRTK for Unreal](/windows/mixed-reality/develop/unreal/unreal-mrtk-introduction)** provide various types of button prefabs, including HoloLens 2 style buttons. The HoloLens 2 button component contains all visual feedback and interaction details that were introduced in this page. By using it, you can leverage the result from many design iterations and user researches that our designers, developers, researchers had conducted.
+**[MRTK for Unity](/windows/mixed-reality/mrtk-unity/)** and **[MRTK for Unreal](../develop/unreal/unreal-mrtk-introduction.md)** provide various types of button prefabs, including HoloLens 2 style buttons. The HoloLens 2 button component contains all visual feedback and interaction details that were introduced in this page. By using it, you can leverage the result from many design iterations and user researches that our designers, developers, researchers had conducted.
 
 Check out the [MRTK - Button](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button) for more instructions and customized examples.
 

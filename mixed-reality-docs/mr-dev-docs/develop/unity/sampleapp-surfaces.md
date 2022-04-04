@@ -20,7 +20,7 @@ keywords: Windows Mixed Reality, design, sample app, controls, MRTK, Mixed Reali
 ## Download app from Microsoft Store in HoloLens 2
 If you have HoloLens 2 device, you can directly download and install the app in your device.
 
-<a href='//www.microsoft.com/store/apps/9nvkpv3sk3x0?cid=storebadge&ocid=badge'><img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png' alt='English badge' width="284px" height="104px" style='width: 284px; height: 104px;'/></a>
+<a href='//www.microsoft.com/store/apps/9nvkpv3sk3x0?cid=storebadge&ocid=badge'><img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png' alt='English badge' width="284px" height="104px"/></a>
 
 ## Demo video 
 
@@ -39,7 +39,7 @@ You can use this project's components to create your own mixed reality app exper
 
 ## MR Dev Days 2020 - Learnings from the MR Surfaces App
 
-[Learnings from the MR Surfaces App](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Learnings-from-the-MR-Surfaces-App)
+[Learnings from the MR Surfaces App](/shows/Mixed-Reality/Learnings-from-the-MR-Surfaces-App)
 
 Lars Simkins, Senior designer behind the MRDL Surfaces app talks about the app's design story and technical highlights.
 
@@ -50,10 +50,10 @@ Lars Simkins, Senior designer behind the MRDL Surfaces app talks about the app's
 
 ## About the author
 
-<table style="border-collapse:collapse" padding-left="0px">
+<table>
 <tr>
-<td style="border-style: none" width="60px"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
-<td style="border-style: none"><a href="http://dongyoonpark.com" target="_blank"><b>Yoon Park</b></a><br>UX Designer @Microsoft</td>
+<td width="60px"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
+<td><a href="http://dongyoonpark.com" target="_blank"><b>Yoon Park</b></a><br>UX Designer @Microsoft</td>
 </tr>
 </table>
 

@@ -2,8 +2,8 @@
 title: Performance recommendations for Unity
 description: Learn Unity-specific tips to improve performance with project settings, profiling, memory management in your mixed reality apps.
 author: hferrone
-ms.author: v-vtieto
-ms.date: 03/26/2019
+ms.author: vinnietieto
+ms.date: 12/30/2021
 ms.topic: article
 keywords: graphics, cpu, gpu, rendering, garbage collection, hololens
 ms.localizationpriority: high
@@ -13,6 +13,11 @@ ms.localizationpriority: high
 
 This article builds on the [performance recommendations for mixed reality](../advanced-concepts/understanding-performance-for-mixed-reality.md), but focuses on Unity-specific improvements.
 
+We recently released an application called Quality Fundamentals that covers common performance, design, and environment issues and solutions for HoloLens 2 apps. This app is a great visual demo for the content that follows.
+
+> [!div class="nextstepaction"]
+> [Download the Quality Fundamentals app](https://www.microsoft.com/p/quality-fundamentals/9mwz852q88fw)
+
 ## Use recommended Unity project settings
 
 The most important first step when optimizing performance of mixed reality apps in Unity is to be sure you're using the [recommended environment settings for Unity](recommended-settings-for-unity.md). That article contains content with some of the most important scene configurations for building performant Mixed Reality apps. Some of these recommended settings are highlighted below, as well.
@@ -20,6 +25,13 @@ The most important first step when optimizing performance of mixed reality apps 
 ## How to profile with Unity
 
 Unity provides the **[Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html)** built-in, which is a great resource to gather valuable performance insights for your particular app. Although you can run the profiler in-editor, these metrics don't represent the true runtime environment so results should be used cautiously. We recommended remotely profiling your application while running on device for most accurate and actionable insights. Further, Unity's [Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html) is also a powerful and insight tool to use.
+
+>[!NOTE]
+>Unity provides the ability to easily modify the render target resolution of your application at runtime through the *[XRSettings.renderViewportScale](https://docs.unity3d.com/ScriptReference/XR.XRSettings-renderViewportScale.html)* property. The final image presented on device has a fixed resolution. The platform will sample the lower resolution output to build a higher resolution image for rendering on displays. 
+>
+>```CS
+>UnityEngine.XR.XRSettings.renderViewportScale = 0.7f;
+>```
 
 Unity provides great documentation for:
 1) How to connect the [Unity profiler to UWP applications remotely](https://docs.unity3d.com/Manual/windowsstore-profiler.html)
@@ -246,6 +258,15 @@ Furthermore, it's preferable to combine meshes into one GameObject where possibl
 
 Learn more about [optimizing graphics rendering in Unity](https://unity3d.com/learn/tutorials/temas/performance-optimization/optimizing-graphics-rendering-unity-games)
 
+### Bandwidth and fill rates
+
+When rendering a frame on the GPU, an application is either bound by memory bandwidth or fill rate.
+
+- **Memory bandwidth** is the rate of reads and writes the GPU can do from memory
+    - In Unity, change **Texture Quality** in **Edit** > **Project Settings** > **[Quality Settings](https://docs.unity3d.com/Manual/class-QualitySettings.html)**.
+- **Fill rate** refers to the pixels that can be drawn per second by the GPU.
+    - In Unity, use the  *[XRSettings.renderViewportScale](https://docs.unity3d.com/ScriptReference/XR.XRSettings-renderViewportScale.html)* property.
+
 ### Optimize depth buffer sharing
 
 It's recommended to enable **Depth buffer sharing** under **Player XR Settings** to optimize for [hologram stability](../advanced-concepts/Hologram-stability.md). When enabling depth-based late-stage reprojection with this setting however, it's recommended to select **16-bit depth format** instead of **24-bit depth format**. The 16-bit depth buffers will drastically reduce the bandwidth (and thus power) associated with depth buffer traffic. This can be a big win both in power reduction and performance improvement. However, there are two possible negative outcomes by using *16-bit depth format*.
@@ -344,7 +365,7 @@ Object pooling is a popular technique for reducing the cost of continuous object
 
 ## Startup performance
 
-Consider starting your app with a smaller scene, then using *[SceneManager.LoadSceneAsync](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadSceneAsync.html)* to load the rest of the scene. This allows your app to get to an interactive state as fast as possible. There may be a large CPU spike while the new scene is being activated and that any rendered content might stutter or hitch. One way to work around this is to set the AsyncOperation.allowSceneActivation property to "false" on the scene being loaded, wait for the scene to load, clear the screen too black, and then set it back to "true" to complete the scene activation.
+Consider starting your app with a smaller scene, then using *[SceneManager.LoadSceneAsync](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadSceneAsync.html)* to load the rest of the scene. This allows your app to get to an interactive state as fast as possible. There may be a large CPU spike while the new scene is being activated and that any rendered content might stutter or hitch. One way to work around this is to set the AsyncOperation.allowSceneActivation property to "false" on the scene being loaded, wait for the scene to load, clear the screen to black, and then set it back to "true" to complete the scene activation.
 
 Remember that while the startup scene is loading, the holographic splash screen will be displayed to the user.
 

@@ -2,7 +2,7 @@
 title: Microsoft Maquette Beta overview
 description: Microsoft Maquette makes spatial prototyping easy, quick, and immersive. Maquette provides VR developers with various tools & assets to construct & iterate ideas in space.
 author: qianw211
-ms.author: v-qianwen
+ms.author: qianwen
 ms.date: 10/20/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, get started, setup, Mixed Reality Portal, Maquette
@@ -18,7 +18,7 @@ keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, get sta
 
 &nbsp;
 
-> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Teaser/player]
+> [!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Maquette-Teaser/player]
 
 Microsoft Maquette makes spatial prototyping easy, quick, and immersive. As a VR developer, you can use the various tools and assets that Maquette provides to construct and iterate ideas in space. 
 
@@ -30,27 +30,27 @@ Microsoft Maquette makes spatial prototyping easy, quick, and immersive. As a VR
 
 Here is a list of Maquette tutorial videos in alphabetical order:
 
-* [Interacting with UI](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Hand-UI) 
-* [Moving around](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Swimming)
-* [Teleporting](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Teleporting)
-* [Manipulating content](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Object-Manipulation)
-* [Rotational snapping](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Rotational-Snapping)
-* [Surface snapping](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Surface-Snapping)
-* [Duplicating content](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Duplicating-Content)
-* [Erasing content](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Erasing-Content)
-* [Selecting content](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Selecting-Content)
-* [Needle selection](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Needle-Selection)
-* [Grouping content](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Grouping-Content)
-* [Gimbal positioning](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Gimbal)
-* [Bounding manipulation](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Bounding-Manipulation)
-* [Orientation tool](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Orientation-Tool)
-* [Coloring content](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Coloring-Content)
-* [Lighting](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Lighting)
-* [Hull brush](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Hull-Brush)
-* [Volume brush](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Volume-Brush)
-* [Tube brush](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Tube-Brush)
-* [Parametric objects](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Parametric-Objects)
-* [Lock object](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Maquette-Lock-Object)
+* [Interacting with UI](/shows/Docs-Mixed-Reality/Maquette-Hand-UI) 
+* [Moving around](/shows/Docs-Mixed-Reality/Maquette-Swimming)
+* [Teleporting](/shows/Docs-Mixed-Reality/Maquette-Teleporting)
+* [Manipulating content](/shows/Docs-Mixed-Reality/Maquette-Object-Manipulation)
+* [Rotational snapping](/shows/Docs-Mixed-Reality/Maquette-Rotational-Snapping)
+* [Surface snapping](/shows/Docs-Mixed-Reality/Maquette-Surface-Snapping)
+* [Duplicating content](/shows/Docs-Mixed-Reality/Maquette-Duplicating-Content)
+* [Erasing content](/shows/Docs-Mixed-Reality/Maquette-Erasing-Content)
+* [Selecting content](/shows/Docs-Mixed-Reality/Maquette-Selecting-Content)
+* [Needle selection](/shows/Docs-Mixed-Reality/Maquette-Needle-Selection)
+* [Grouping content](/shows/Docs-Mixed-Reality/Maquette-Grouping-Content)
+* [Gimbal positioning](/shows/Docs-Mixed-Reality/Maquette-Gimbal)
+* [Bounding manipulation](/shows/Docs-Mixed-Reality/Maquette-Bounding-Manipulation)
+* [Orientation tool](/shows/Docs-Mixed-Reality/Maquette-Orientation-Tool)
+* [Coloring content](/shows/Docs-Mixed-Reality/Maquette-Coloring-Content)
+* [Lighting](/shows/Docs-Mixed-Reality/Maquette-Lighting)
+* [Hull brush](/shows/Docs-Mixed-Reality/Maquette-Hull-Brush)
+* [Volume brush](/shows/Docs-Mixed-Reality/Maquette-Volume-Brush)
+* [Tube brush](/shows/Docs-Mixed-Reality/Maquette-Tube-Brush)
+* [Parametric objects](/shows/Docs-Mixed-Reality/Maquette-Parametric-Objects)
+* [Lock object](/shows/Docs-Mixed-Reality/Maquette-Lock-Object)
 
 ## Export content from Maquette
 

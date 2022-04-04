@@ -1,8 +1,8 @@
 ---
 title: UDP packets in Unity UWP apps
 description: Learn how to setup a Unity UWP app to send and receive UDP packets over a secure network.
-author: hferrone
-ms.author: v-hferrone
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 02/3/2021
 ms.topic: article
 keywords: UDP, UWP, Unity, UDP packets, socket, client server, endpoint, networking, remote machine, datagramsocket, sample, .net

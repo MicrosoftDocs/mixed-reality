@@ -1,8 +1,8 @@
 ---
 title: Learn Mixed Reality
 description: Describes how to run the Learn Mixed Reality app and how to navigate Windows Mixed Reality.
-author: hferrone
-ms.author: v-hferrone
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 09/15/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Tutorial, Get started
