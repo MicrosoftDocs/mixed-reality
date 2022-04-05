@@ -11,7 +11,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Pointers
 
 ![Pointer](../images/pointers/MRTK_Pointer_Main.png)
 
-This article explains how to configure and respond to Pointer input in practice, compared to [Pointer Architecture](../../architecture/controllers-pointers-and-focus.md)
+This article explains how to configure and respond to Pointer input in practice. To better understand how to control multiple pointers at a high-level, see  [Pointer Architecture](../../architecture/controllers-pointers-and-focus.md).
 
 Pointers are instanced automatically at runtime when a new controller is detected. More than one pointer can be attached to a controller. For example, with the default pointer profile, Windows Mixed Reality controllers get both a line and a parabolic pointer for normal selection and teleportation respectively.
 
