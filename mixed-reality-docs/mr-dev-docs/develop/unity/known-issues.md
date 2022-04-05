@@ -18,6 +18,8 @@ Some versions of Unity or Unity plugins have known incompatibilities blocking ap
 
 ## Blocking issues table
 
+<!-- When updating this table, BE SURE TO ALSO UPDATE /develop/unity/includes/xr/recommended-version.md! -->
+
 | Blocking issues | Status | &nbsp;&nbsp;Versions&nbsp;with&nbsp;issue&nbsp;&nbsp; | &nbsp;&nbsp;Version&nbsp;with&nbsp;fix&nbsp;&nbsp; |
 | :----------- | :----- | :--------------: | :--------------: |
 | Application with default splash screen will show four spinning dots when launching on HL2. | **Investigating:**<br />2022/03/25 | <p>Unity 2020.3.32f1</p>Unity 2021.2.17f1 | TBD |
