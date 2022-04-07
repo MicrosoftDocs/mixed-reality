@@ -68,7 +68,7 @@ Azure Kinect DK is a good fit if you're experimenting with experiences that use 
  
 ### What backpack PCs can I use to support untethered VR experiences in my LBE location or business?
 
-For PC-tethered VR experiences, we recommend that you use the HP Z VR Backpack G2, which is optimized for free-roam experiences. [See details](https://valuehub.hp.com/workstations/virtual-reality/hp-z-vr-backpack-pc/).
+For PC-tethered VR experiences, we recommend that you use the HP Z VR Backpack G2, which is optimized for free-roam experiences. See [details](https://valuehub.hp.com/workstations/virtual-reality/hp-z-vr-backpack-pc/).
 
 ### Where can I find the latest device and software updates to support the Windows Mixed Reality platform?
 
