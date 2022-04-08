@@ -3,7 +3,7 @@ title: Free-Roam VR Multiplayer Experiences - LBE
 description: Location-Based Experiences - Free-Roam VR Multiplayer Experiences
 author: qianw211
 ms.author: qianwen
-ms.date: 3/15/2022
+ms.date: 4/7/2022
 ms.topic: article
 keywords: mixed reality, vr, lbe, location, mixed reality headset, windows mixed reality headset, virtual reality headset, hardware, HoloLens, multiplayer, cloud services, azure, prototyping, manufacturing
 ---
@@ -12,7 +12,7 @@ keywords: mixed reality, vr, lbe, location, mixed reality headset, windows mixed
 
 One of the biggest challenges in the modern virtual reality landscape is creating easily accessible, intuitive, and ultimately entertaining immersive experiences that customers can experience together with family and friends. Businesses that work to solve the challenge have been finding high degrees of success. They build free-roam VR multiplayer experiences that use large-scale established play spaces designated to run specific virtual reality experiences within them. Customers can gather and experience the world of virtual reality together, in the same virtual space simultaneously.  
 
-## Free-roam VR multiplayer experiences: What they're and how they work
+## Free-roam VR multiplayer experiences: What they are and how they work
 
 VR enthusiasts commonly still encounter several obstacles that prevent them from easily playing many multiplayer-style virtual realities experiences together. Many people still face multiple challenges such as network conditions, platform incompatibilities, play space limitations, device tethering, etc., that still exist for many people. Businesses have seen excellent success in creating established VR spaces built to solve these challenges.
 

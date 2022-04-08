@@ -3,7 +3,7 @@ title: Virtual Reality Arcades - LBE
 description: Location-Based Experiences - Virtual Reality Arcades
 author: qianw211
 ms.author: qianwen
-ms.date: 3/15/2022
+ms.date: 4/7/2022
 ms.topic: article
 keywords: mixed reality, vr, lbe, location, mixed reality headset, windows mixed reality headset, virtual reality headset, hardware, HoloLens, multiplayer, cloud services, azure, prototyping, manufacturing
 ---
@@ -12,7 +12,7 @@ keywords: mixed reality, vr, lbe, location, mixed reality headset, windows mixed
 
 More retail customers are progressively adopting Virtual Reality, even though virtual reality is still cost-prohibitive for some people to consider purchasing their own at-home VR devices. Businesses have found great success by tapping into this trend and providing the service of low-barrier access to VR. People can come and rent out SteamVR-capable kiosks or booths through arcade-style spaces to try out the latest and greatest virtual reality games and experiences available today.  
 
-## Virtual reality arcades: What they're and how they work
+## Virtual reality arcades: What they are and how they work
 
 Virtual reality arcade businesses succeed by providing customers low-barrier access to higher-end virtual reality technology, devices, and experiences without the upfront cost of purchasing these components to own at home.
 
