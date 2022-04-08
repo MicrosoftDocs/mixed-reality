@@ -129,9 +129,6 @@ conceptualContent:
         - url: /learn/paths/beginner-hololens-2-tutorials/
           itemType: tutorial
           text: HoloLens 2 tutorial series
-        - url: /windows/mixed-reality/mrtk-unity/
-          itemType: concept
-          text: Core building blocks
         - url: develop/unity/shared-experiences-in-unity.md
           itemType: concept
           text: Platform capabilities and APIs
@@ -153,9 +150,6 @@ conceptualContent:
         - url: develop/unreal/tutorials/unreal-uxt-ch1.md
           itemType: tutorial
           text: Build a chess app tutorial series
-        - url: develop/unreal/unreal-gaze-input.md
-          itemType: concept
-          text: Core building blocks
         - url: develop/unreal/unreal-hololens-camera.md
           itemType: concept
           text: Platform capabilities and APIs
@@ -203,7 +197,7 @@ tools:
     - title: MRTK for Unity
       # imageSrc should be square in ratio with no whitespace
       imageSrc: images/Final_mrtk-small_logo.png
-      url: https://github.com/microsoft/MixedRealityToolkit-Unity
+      url: https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-unity
     # Card
     - title: MRTK for Unreal 
       imageSrc: images/Final_mrtk-small_logo.png
