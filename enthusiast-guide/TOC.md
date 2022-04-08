@@ -8,7 +8,6 @@
 ### [Get help with PC compatibility](get-help-with-pc-compatibility.md)
 ### [Plug in your headset](plug-in-your-headset.md)
 ### [Immersive headset hardware details](immersive-headset-hardware-details.md)
-### [Location based entertainment](location-based-experiences.md)
 ### [Install Windows Mixed Reality](install-windows-mixed-reality.md)
 ### [Set up Windows Mixed Reality](set-up-windows-mixed-reality.md)
 ### [Windows Mixed Reality Setup FAQ](wmr-setup-faq.yml)
@@ -23,6 +22,19 @@
 ### [Using Microsoft Edge](using-microsoft-edge.md)
 ### [What is WebVR](webvr.md)
 ### [Using Windows Mixed Reality FAQ](using-wmr-faq.yml)
+
+## [Enterprise scenarios](enterprise-scenarios.md)
+### [Training and simulation](training-simulation.md)
+### [Prototyping and manufacturing](prototyping-manufacturing.md)
+### [Marketing and advertisement](marketing-advertisement.md)
+### [Immersive shopping experiences](immersive-shopping.md)
+
+## [Location-Based Entertainment](location-based-experiences.md)
+### [Theme Parks and Family Entertainment Centers](theme-parks-family-entertainment.md)
+### [Free-roam VR multiplayer experiences](free-roam-vr-multiplayer-experiences.md)
+### [Virtual Reality Arcades](virtual-reality-arcades.md)
+### [Immersive education](immersive-education.md)
+### [Virtual museums, exhibits, and tourism](virtual-museums.md)
 
 ## Troubleshooting & FAQ
 ### [Troubleshoot in Windows Mixed Reality](troubleshooting-windows-mixed-reality.md)
@@ -41,6 +53,7 @@
 ### [WebVR](webvr-questions.md)
 ### [Immersive hardware FAQ](other-questions.md)
 ### [HP Reverb G2 FAQ](reverbG2-faq.yml)
+### [Enterprise & LBE FAQ](enterprise-lbe-faq.md)
 
 ## Resources
 ### [Get info about Windows Mixed Reality](get-wmr-info.md)
