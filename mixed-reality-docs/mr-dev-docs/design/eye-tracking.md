@@ -110,7 +110,7 @@ Another example is **eye-supported zoom and pan** where the user can feel like d
 Triggering and controlling zoom speed can be controlled by voice or hand input, which is important for providing the user with the feeling of control while avoiding being overwhelmed. 
 We'll talk about these design considerations in more detail below. 
 Once zoomed in, the user can smoothly follow, for example, the course of a street to explore his or her neighborhood by using their eye-gaze.
-Demo examples for these types of interactions can be found in the [Mixed Reality Toolkit - Eye-supported Navigation](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-navigation) sample.
+Demo examples for these types of interactions can be found in the [Mixed Reality Toolkit - Eye-supported Navigation](https://github.com/MicrosoftDocs/mixed-reality-pr/blob/main/mrtk-docs-old/2.5.4/features/eye-tracking/eye-tracking-positioning.md) sample.
 
 Other use cases for _implicit actions_ may include:
 - **Smart notifications:** Ever get annoyed by notifications popping up right where you're looking? Taking into account what a user is paying attention to, you can make this experience better by offsetting notifications from where the user is currently gazing. This limits distractions and automatically dismisses them once the user is finished reading. 
