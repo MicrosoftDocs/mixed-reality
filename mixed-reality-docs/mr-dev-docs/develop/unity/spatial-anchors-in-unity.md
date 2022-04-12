@@ -67,7 +67,7 @@ You can always go back to the [Unity development checkpoints](unity-development-
 
 ## See Also
 * [World Locking Tools introduction](/mixed-reality/world-locking-tools/documentation/introfaq)
-* [Quickstart guides](/world-locking-tools/documentation/howtos/quickstart.md)
+* [Quickstart guides](/mixed-reality/world-locking-tools/documentation/howtos/quickstart)
 * [Tutorials](https://microsoft.github.io/MixedReality-WorldLockingTools-Samples/Tutorial/01_Minimal/01_Minimal.html)
 * [Samples](/mixed-reality/world-locking-tools/documentation/howtos/sampleapplications)
 * [Spatial anchor persistence](../../design/coordinate-systems.md#spatial-anchor-persistence)
