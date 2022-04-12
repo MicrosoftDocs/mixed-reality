@@ -23,7 +23,7 @@ When the HoloLens 2 is running in warm environments or with heavy performance re
 If your application demands high peripheral performance, consider using the PowerThermalNotification Software Development Kit (SDK) to subscribe to notification events and implement your own custom actions.  Doing so can allow the device to operate longer in situations when otherwise an application may be terminated by the system.
 
 > [!NOTE]
-> Support for the Microsoft.MixedReality.PowerThermalNotification SDK is included in the 22H1 Spring Update.
+> Support for the Microsoft.MixedReality.PowerThermalNotification SDK is included in the 22H1 release.
 
 This article describes the PowerThermalNotification SDK and its basic usage to get you started.
 
