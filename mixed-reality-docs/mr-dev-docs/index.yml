@@ -122,13 +122,10 @@ conceptualContent:
       links:
         - url: develop/unity/unity-development-overview.md
           itemType: overview
-          text: Unity development overview
+          text: Unity docs - Overview
         - url: /windows/mixed-reality/mrtk-unity/
           itemType: overview
-          text: What is MRTK?
-        - url: /learn/paths/beginner-hololens-2-tutorials/
-          itemType: tutorial
-          text: HoloLens 2 tutorial series
+          text: MRTK for Unity
         - url: develop/unity/shared-experiences-in-unity.md
           itemType: concept
           text: Platform capabilities and APIs
@@ -146,16 +143,13 @@ conceptualContent:
       links:
         - url: develop/unreal/unreal-development-overview.md
           itemType: overview
-          text: Unreal development overview
-        - url: develop/unreal/tutorials/unreal-uxt-ch1.md
-          itemType: tutorial
-          text: Build a chess app tutorial series
+          text: Unreal docs - Overview
+        - url: /develop/unreal/unreal-mrtk-introduction.md
+          itemType: overview
+          text: MRTK for Unreal
         - url: develop/unreal/unreal-hololens-camera.md
           itemType: concept
           text: Platform capabilities and APIs
-        - url: develop/unreal/performance-recommendations-for-unreal.md
-          itemType: concept
-          text: Performance recommendations
         - url: develop/unreal/unreal-deploying.md
           itemType: deploy
           text: Deploying to device or emulator
@@ -170,7 +164,7 @@ conceptualContent:
       links:
         - url: develop/native/directx-development-overview.md
           itemType: overview
-          text: Native development overview
+          text: Native docs - Overview
         - url: develop/native/openxr.md
           itemType: overview
           text: What is OpenXR?
@@ -180,9 +174,6 @@ conceptualContent:
         - url: develop/native/openxr-best-practices.md
           itemType: concept
           text: OpenXR best practices
-        - url: develop/native/openxr-troubleshooting.md
-          itemType: reference
-          text: OpenXR troubleshooting
       # footerLink (optional)
       footerLink:
         url: develop/native/directx-development-overview.md
