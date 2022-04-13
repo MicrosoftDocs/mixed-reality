@@ -3,7 +3,7 @@ title: Setting up your XR configuration
 description: Stay up to date on the latest Unity XR configuration recommendations for HoloLens application development.
 author: sean-kerawala
 ms.author: sekerawa
-ms.date: 04/12/2022
+ms.date: 04/22/2021
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality headset, windows mixed reality headset, virtual reality headset, unity
 ---
