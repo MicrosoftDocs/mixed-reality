@@ -6,7 +6,7 @@ To get started with a **new Unity project** using MRTK:
 1. Click the link to the second unit in the learn module, which is named **Exercise--Configure Unity for Windows Mixed Reality.**.
 1. Complete that unit and the two units that follow,**Import and configure resources** and **Exercise--Import and configure resources**.
 
-    ![Screen shot of the three learn module units containing the setup instructions.](../../images/035-openxr-learn-module.png)
+    ![Screen shot of the three learn module units containing the setup instructions.](../../images/035-openxr-learn-modules.png)
 
     In the third unit, stop after this step: "5. Close the project settings window." The instructions that follow to create the scene and configure MRTK are not necessary for OpenXR setup.
 
