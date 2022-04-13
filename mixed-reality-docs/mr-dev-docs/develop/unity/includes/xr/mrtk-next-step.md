@@ -3,12 +3,12 @@
 To get started with a **new Unity project** using MRTK:
 1. [Go to the HoloLens Fundamentals learning path.](/learn/paths/beginner-hololens-2-tutorials/?tabs=openxr) 
 1. Scroll down to the first module in the learning path, "Introduction to the Mixed Reality Toolkit--Set Up Your Project and Use Hand Interaction."
-1. Click the link to the unit named **Set up a mixed reality project in Unity with the Mixed Reality Toolkit.**.
-1. Complete that unit and the two units that follow: 
+1. Click the link to the second unit in the learn module, which is named **Exercise--Configure Unity for Windows Mixed Reality.**.
+1. Complete that unit and the two units that follow,**Import and configure resources** and **Exercise--Import and configure resources**.
 
-![Screen shot of the three learn module units containing the setup instructions.](images/035-openxr-learn-module.png)
+    ![Screen shot of the three learn module units containing the setup instructions.](images/035-openxr-learn-module.png)
 
-In the third unit, **Exercise--Import and configure resources**, stop after the instruction "5. Close the project settings window." The instructions that follow to create the scene and configure MRTK are part of the learn module and not necessary for OpenXR setup.
+    In the third unit, stop after this step: "5. Close the project settings window." The instructions that follow to create the scene and configure MRTK are not necessary for OpenXR setup.
 
 ![Screen shot of stopping point for the setup instructions.](images/036-stopping-point.png)
 
