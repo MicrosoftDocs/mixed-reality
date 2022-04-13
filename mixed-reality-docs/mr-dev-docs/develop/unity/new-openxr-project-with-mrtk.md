@@ -55,7 +55,7 @@ MRTK supports a wide range of platforms, including:
 To target Windows Mixed Reality, your Unity project must be set to export as a Universal Windows Platform app. By default, the build settings for the Universal Windows Platform target any device, including immersive headsets. However, you can select a specific device using the **Target Device** drop down.
 
 1. In the menu bar, select **File** > **Build Settings...**.
-1. In the **Build Settings** window, select **Universal Windows Platform**.
+1. In the **Build Settings** window under **Platform**, select **Universal Windows Platform**.
 1. Make sure the following settings are active:
 
     **Target device**: HoloLens
