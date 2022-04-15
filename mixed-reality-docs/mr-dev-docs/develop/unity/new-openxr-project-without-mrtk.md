@@ -68,7 +68,7 @@ To build an app for Windows Mixed Reality, you must choose a build target. The b
 
     **Build configuration**: Release (there are known performance issues with Debug)
 
-        ![Screenshot of Build Settings window open in the unity editor with Universal Windows Platform highlighted.](../../images/030-build-settings-uwp.png)
+    ![Screenshot of Build Settings window open in the unity editor with Universal Windows Platform highlighted.](../../images/030-build-settings-uwp.png)
 
 1. Click the **Switch Platform** button. Unity displays a progress bar while it switches platforms.
 1. After the switch platform process is finished, close the **Build Settings** window.
@@ -130,7 +130,7 @@ If you're developing for the HoloLens2, skip this section and go to the next one
 1. On the menu bar, select **Edit** > **Project Settings**.
 1. In the **Project Settings** window, ensure that you're on the **XR Plug-in Management** page and in the **PC, Mac & Linux Standalone** tab.
 
-    :::image type="content" source="images/028-xr-plugin-mgmt-only.png" alt-text="Screenshot of the Project Settings Window open to the XR Plugin Management Page and Universal Windows Platform tab.":::
+    :::image type="content" source="images/028-xr-plugin-mgmt-only.png" alt-text="Screenshot of the Project Settings Window open to the XR Plugin Management Page and PC, Mac & Linux Standalone tab.":::
 
  1. Ensure that **Initialize XR on Startup** is selected, and then, under **Plugin Providers**, click **Open XR**.
 
@@ -140,7 +140,30 @@ If you're developing for the HoloLens2, skip this section and go to the next one
 
         :::image type="content" source="images/032-wmr-feature-group.png" alt-text="Screenshot of Project Settings Window with Initialize XR on Startup selected and the OpenXR Plugin highlighted.":::
 
-1. Note that there's now a yellow warning triangle next to **OpenXR**. Hover your cursor over the triangle, then read the message in the popup, and then select the triangle.
+Note that there's now a yellow warning triangle next to **OpenXR**. This indicates that you have incompatible settings that need to be resolved. To find out how to address this, skip the next section about configuring the HoloLens 2 and continue on with the following section, Resolving incompatible settings.
+
+## Configure the project for the HoloLens 2
+
+1. On the menu bar, select **Edit** > **Project Settings**.
+1. In the **Project Settings** window, ensure that you're on the **XR Plug-in Management** page and in the **Universal Windows Platform** tab.
+
+    :::image type="content" source="images/012-xr-plugin-mgmt-page.png" alt-text="Screenshot of the Project Settings Window open to the XR Plugin Management Page and Universal Windows Platform tab.":::
+
+ 1. Ensure that **Initialize XR on Startup** is selected, and then, under **Plugin Providers**, click **Open XR**.
+
+    :::image type="content" source="images/013-init-xr-on-startup.png" alt-text="Screenshot of Project Settings Window with Initialize XR on Startup selected and the OpenXR Plugin highlighted.":::
+
+1. The OpenXR Plugin loads, and then two items appear underneath **OpenXR**. Select the first one, **Windows Mixed Reality feature group**.
+
+        :::image type="content" source="images/033-microsoft-hololens-feature-group.png" alt-text="Screenshot of Project Settings Window with Initialize XR on Startup selected and the Microsoft HoloLens Feature Group highlighted.":::
+
+Note that there's now a yellow warning triangle next to **OpenXR**. This indicates that you have incompatible settings that need to be resolved.
+
+## Resolving incompatible settings
+
+The images in this section show the options in the Universal Windows Platform tab. However, the instructions are the same for the Desktop VR tab, except where noted.
+
+1. Hover your cursor over the yellow warning triangle next to **OpenXR**, then read the message in the popup, and then select the triangle.
 
     :::image type="content" source="images/014-yellow-triangle-warning.png" alt-text="Screenshot of warning about incompatible settings.":::
 
@@ -172,6 +195,18 @@ If you're developing for the HoloLens2, skip this section and go to the next one
 
 1. In the **Project Settings** window under **OpenXR Feature Groups**, ensure that the following are selected:
    
+    If you're in the Desktop VR tab:
+
+    **Windows Mixed Reality**
+
+    **Hand Tracking**
+
+    **Motion Controller Model**
+
+    :::image type="content" source="images/034-selected-features-standalone.png" alt-text="Screenshot of the OpenXR Feature Groups for the Desktop VR tab.":::
+
+    If you're in the Universal Windows Platform tab:
+
    **Microsoft HoloLens**
 
    **Hand Tracking**
