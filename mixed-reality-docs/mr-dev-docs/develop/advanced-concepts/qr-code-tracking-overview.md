@@ -40,7 +40,7 @@ In this article, you'll learn about:
   * [How close do I need to be to the QR code to detect it?](#how-close-do-i-need-to-be-to-the-qr-code-to-detect-it)
   * [Why can't I read QR codes with logos?](#why-cant-i-read-qr-codes-with-logos)
   * [The QR codes are detected, so why am I getting no data?](#the-qr-codes-are-detected-so-why-am-i-getting-no-data)
-  * [Are QR codes saved at the 'space' level or app level? It seems to me it is beyond app?](#are-qr-codes-saved-at-the-space-level-or-app-level-it-seems-to-me-it-is-beyond-app)
+  * [Are QR codes saved at the 'space' level or app level? It seems to me it is beyond app?](#are-qr-codes-saved-at-the-space-level-or-app-level--it-seems-to-me-it-is-beyond-app)
   * [How does that work with the underlying platform? Where do they persist?](#how-does-that-work-with-the-underlying-platform--where-do-they-persist)
   * [How do I debug the app in Visual studio when I receive the "`Microsoft.MixedReality.QR.pdb` not found" error message?](#how-do-i-debug-the-app-in-visual-studio-when-i-receive-the-microsoftmixedrealityqrpdb-not-found-error-message)
 
