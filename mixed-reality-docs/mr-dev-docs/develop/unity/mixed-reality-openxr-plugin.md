@@ -10,7 +10,7 @@ keywords: Unity, mixed reality, development, getting started, new project, Windo
 
 # Add the Mixed Reality OpenXR Plugin to your Unity project
 
-If you're developing apps for Windows Mixed Reality using OpenXR, we recommend that you use Unity 2020 LTS or later with the Mixed Reality OpenXR plugin installed and configured. As new features are developed in the future, they will only be included in the Mixed Reality OpenXR plugin.
+If you have a project that's already set up for OpenXR (you have the Unity OpenXR plugin installed) and you want to add the capability to target your app for the HoloLens 2, follow the instructions below.
 
 **To determine if your project has the Mixed Reality OpenXR plugin installed**:
 
@@ -22,7 +22,7 @@ If you're developing apps for Windows Mixed Reality using OpenXR, we recommend t
 
 ## Download and install the Mixed Reality Feature Tool
 
-To import the Mixed Reality OpenXR plugin into your project we'll use the Mixed Reality Feature Tool, which allows developers to discover, update, and import feature packages. You can search packages by name or category, see their dependencies, and view proposed changes to your project's manifest file before importing.
+The Mixed Reality OpenXR Plugin comes in the form of a package for Unity. The best way to discover, update, and import feature packages is with the Mixed Reality Feature Tool. You can search packages by name or category, see their dependencies, and view proposed changes to your project's manifest file before importing.
 
 1. Download the latest version of the Mixed Reality Feature Tool from the [Microsoft Download Center](https://aka.ms/MRFeatureTool).
 1. After the download finishes, unzip the file and save it to your desktop.
@@ -70,11 +70,17 @@ To import the Mixed Reality OpenXR plugin into your project we'll use the Mixed 
 1. Select **Approve.**
 1. Return to the Unity Editor and click a blank area in the UI. You'll see a progress bar showing you that your packages are being imported.
 
-## Configure the OpenXR Plugin
+## Configure the project for the HoloLens 2
+
+1. In Unity, ensure that you're in the **Project Settings** window, on the **XR Plug-in Management** page, and in the **Universal Windows Platform** tab.
 
 1. There are now two feature groups underneath **OpenXR**. Select the first one, **Microsoft HoloLens feature group**.
 
-1. Note that there's a yellow warning triangle next to **OpenXR**. Hover your cursor over the triangle, then read the message in the popup, and then select the triangle.
+1. Note that there's a yellow warning triangle next to **OpenXR**.  This indicates that you have incompatible settings that need to be resolved.
+
+## Resolving incompatible settings
+
+Hover your cursor over the triangle, then read the message in the popup, and then select the triangle.
 
     :::image type="content" source="images/014-yellow-triangle-warning.png" alt-text="Screenshot of warning about incompatible settings.":::
 
