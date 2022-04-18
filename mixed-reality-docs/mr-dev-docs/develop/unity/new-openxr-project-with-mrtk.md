@@ -24,6 +24,19 @@ MRTK supports a wide range of platforms, including:
     - Ultraleap Hand Tracking
     - Android and iOS devices
 
+## Other non-OpenXR configuration options
+
+**Windows XR**: Microsoft doesn't recommend using the Windows XR plugin for any new projects in Unity 2020. Instead, you should use the Mixed Reality OpenXR plugin. However, if you're using Unity 2019 and you need AR Foundation 2.0 for compatibility with ARCore/ARKit devices, this plugin enables that support.
+
+   > [!IMPORTANT]
+   > Using this plugin in Unity 2019 is not compatible with Azure Spatial Anchors.
+
+**Legacy XR**:
+
+If you're still on Unity 2019 or earlier, Microsoft recommends using the Legacy Built-in XR support. While the Windows XR plugin is functional on Unity 2019, we don't recommend it  because it's not compatible with Azure Spatial Anchors on Unity 2019.
+
+If you're starting a new project, we recommend that you install Unity 2020 instead and use the Mixed Reality OpenXR plugin.
+
 ## Create a new Unity project
 
 1. Launch the **Unity Hub**.
@@ -79,7 +92,7 @@ To target Windows Mixed Reality, your Unity project must be set to export as a U
 
 ## Import the MRTK Foundation package
 
-The Mixed Reality Feature Tool allows developers to discover, update, and import feature packages. You can search packages by name or category, see their dependencies, and view proposed changes to your project's manifest file before importing.
+ The best way to discover, update, and import feature packages is with the Mixed Reality Feature Tool. You can search packages by name or category, see their dependencies, and view proposed changes to your project's manifest file before importing.
 
 1. Download the latest version of the Mixed Reality Feature Tool from the [Microsoft Download Center](https://aka.ms/MRFeatureTool).
 1. After the download finishes, unzip the file and save it to your desktop.

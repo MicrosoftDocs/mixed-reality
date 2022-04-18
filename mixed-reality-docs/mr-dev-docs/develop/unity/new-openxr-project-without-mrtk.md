@@ -12,6 +12,19 @@ keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality headset,
 
 While Microsoft and the community have created open source tools such as the [Mixed Reality Toolkit (MRTK)](/windows/mixed-reality/mrtk-unity) that will automatically set up your environment for mixed reality, some developers may wish to build their experiences from the ground up.
 
+## Other non-OpenXR configuration options
+
+**Windows XR**: Microsoft doesn't recommend using the Windows XR plugin for any new projects in Unity 2020. Instead, you should use the Mixed Reality OpenXR plugin. However, if you're using Unity 2019 and you need AR Foundation 2.0 for compatibility with ARCore/ARKit devices, this plugin enables that support.
+
+   > [!IMPORTANT]
+   > Using this plugin in Unity 2019 is not compatible with Azure Spatial Anchors.
+
+**Legacy XR**:
+
+If you're still on Unity 2019 or earlier, Microsoft recommends using the Legacy Built-in XR support. While the Windows XR plugin is functional on Unity 2019, we don't recommend it  because it's not compatible with Azure Spatial Anchors on Unity 2019.
+
+If you're starting a new project, we recommend that you install Unity 2020 instead and use the Mixed Reality OpenXR plugin.
+
 ## Create a new Unity project
 
 1. Launch the **Unity Hub**.
@@ -75,7 +88,7 @@ To build an app for Windows Mixed Reality, you must choose a build target. The b
 
 ![Screenshot of Build Settings window open in unity editor with Universal Windows Platform highlighted](../../images/030-build-settings-uwp.png)
 
-## Import the Mixed Reality OpenXR plugin
+## Download and install the Mixed Reality Feature Tool
 
 The Mixed Reality OpenXR Plugin comes in the form of a package for Unity. The best way to discover, update, and import feature packages is with the Mixed Reality Feature Tool. You can search packages by name or category, see their dependencies, and view proposed changes to your project's manifest file before importing.
 
@@ -88,6 +101,8 @@ The Mixed Reality OpenXR Plugin comes in the form of a package for Unity. The be
 1. In the unzipped folder, navigate to the executable file **MixedRealityFeatureTool.exe** and then use it to launch the Mixed Reality Feature Tool.
 
     :::image type="content" source="images/open-mixed-reality-feature-tool.png" alt-text="Screenshot of Opening MixedRealityFeatureTool.":::
+
+## Import the Mixed Reality OpenXR plugin
 
 1. In the Mixed Reality Feature Tool, select **Start**.
 
@@ -153,11 +168,11 @@ Note that there's now a yellow warning triangle next to **OpenXR**. This indicat
 
     :::image type="content" source="images/013-init-xr-on-startup.png" alt-text="Screenshot of Project Settings Window with Initialize XR on Startup selected and the OpenXR Plugin highlighted.":::
 
-1. The OpenXR Plugin loads, and then two items appear underneath **OpenXR**. Select the first one, **Windows Mixed Reality feature group**.
+1. The OpenXR Plugin loads, and then two items appear underneath **OpenXR**. Select the first one, **Microsoft HoloLens feature group**.
 
         :::image type="content" source="images/033-microsoft-hololens-feature-group.png" alt-text="Screenshot of Project Settings Window with Initialize XR on Startup selected and the Microsoft HoloLens Feature Group highlighted.":::
 
-Note that there's now a yellow warning triangle next to **OpenXR**. This indicates that you have incompatible settings that need to be resolved.
+Note that there's a yellow warning triangle next to **OpenXR**. This indicates that you have incompatible settings that need to be resolved.
 
 ## Resolving incompatible settings
 

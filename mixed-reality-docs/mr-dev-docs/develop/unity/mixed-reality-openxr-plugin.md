@@ -131,3 +131,8 @@ Hover your cursor over the triangle, then read the message in the popup, and the
     > The **Render Mode** setting, located just above **Depth Submission Mode**, is set by default to **Single Pass Instanced**. In mixed reality apps, the scene is rendered twice: once for each eye. The result is "stereoscopic vision." This doubles the amount of necessary computing, so it's important to select the most efficient rendering path in Unity to save on both CPU and GPU time. Single pass instanced rendering is the best choice here--we recommend that you enable it by default for every project. To learn more about this, [see the Unity documentation](https://docs.unity3d.com/Manual/SinglePassInstancing.html).
 
 1.  Close the **Project Settings** window.
+
+## See also
+
+- [Set up a new OpenXR project with MRTK](new-openxr-project-with-mrtk.md)
+- [Set up a new OpenXR project without MRTK](new-openxr-project-without-mrtk.md)
