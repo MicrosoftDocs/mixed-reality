@@ -16,7 +16,7 @@ If you have a project that's already set up for OpenXR (you have the Unity OpenX
 
 1. In Unity, select **Edit** > **Project Settings**.
 1. Ensure that you're on the **XR Plug-in Management** page with the Universal Windows Platform settings (Windows logo tab) displayed.
-1. If **Microsoft Hololens feature group"** is grayed out, the Mixed Reality OpenXR plugin isn't installed.
+1. If **Microsoft Hololens feature group"** is grayed out or doesn't exist, the Mixed Reality OpenXR plugin isn't installed.
 
     :::image type="content" source="images/028-ms-hololens-feature-group.png" alt-text="Screenshot of XR Plug-in Management window.":::
 
