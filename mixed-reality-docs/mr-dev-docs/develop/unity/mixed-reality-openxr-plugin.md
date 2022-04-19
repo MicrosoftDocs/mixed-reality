@@ -8,7 +8,7 @@ ms.topic: article
 keywords: Unity, mixed reality, development, getting started, new project, Windows Mixed Reality, XR, Unity 2020, Unity 2019, OpenXR
 ---
 
-# Add the Mixed Reality OpenXR Plugin to your Unity project
+# Add the Mixed Reality OpenXR Plugin to your existing Unity project
 
 If you have a project that's already set up for OpenXR (you have the Unity OpenXR plugin installed) and you want to add the capability to target your app for the HoloLens 2, follow the instructions below.
 
@@ -24,7 +24,7 @@ If you have a project that's already set up for OpenXR (you have the Unity OpenX
 
 The Mixed Reality OpenXR Plugin comes in the form of a package for Unity. The best way to discover, update, and import feature packages is with the Mixed Reality Feature Tool. You can search packages by name or category, see their dependencies, and view proposed changes to your project's manifest file before importing.
 
-1. Download the latest version of the Mixed Reality Feature Tool from the [Microsoft Download Center](https://aka.ms/MRFeatureTool).
+1. Download the latest version of the [Mixed Reality Feature Tool from the Microsoft Download Center](https://aka.ms/MRFeatureToolDownload).
 1. After the download finishes, unzip the file and save it to your desktop.
 
     > [!NOTE]
@@ -40,7 +40,7 @@ The Mixed Reality OpenXR Plugin comes in the form of a package for Unity. The be
 
     :::image type="content" source="images/mixed-reality-feature-tool.png" alt-text="Screenshot of the Mixed Reality Feature Tool opening screen.":::
 
-1. Select the Browse button (it's the "three-dot" button in the image below), then navigate to your project, and then open it.
+1. Select the Browse button (it's the "three-dot" button in the image below), then navigate to the folder containing your Unity project, and then open it.
 
     :::image type="content" source="images/002-open-your-project.png" alt-text="Open your project":::
      
@@ -80,7 +80,7 @@ The Mixed Reality OpenXR Plugin comes in the form of a package for Unity. The be
 
 ## Resolving incompatible settings
 
-Hover your cursor over the triangle, then read the message in the popup, and then select the triangle.
+1. Hover your cursor over the triangle, then read the message in the popup, and then select the triangle.
 
     :::image type="content" source="images/014-yellow-triangle-warning.png" alt-text="Screenshot of warning about incompatible settings.":::
 

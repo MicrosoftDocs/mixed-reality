@@ -2,7 +2,7 @@
 title: Set up a new OpenXR project without MRTK
 description: How to set up a new OpenXR project without MRTK.
 author: sean-kerawala
-ms.author: vtieto
+ms.author: vinnietieto
 ms.date: 04/12/2022
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality headset, windows mixed reality headset, virtual reality headset, unity, MRTK, unity
@@ -60,7 +60,7 @@ To build an app for Windows Mixed Reality, you must choose a build target. The b
     **If you're targeting Desktop VR**:
     - Keep the **PC, Mac & Linux Standalone** platform selected by default on a new Unity project:
 
-    ![Screenshot of Build Settings window open in the unity editor with PC, Mac & Standalone platform highlighted](../../images/wmr-config-img-3.png)
+    ![Screenshot of Build Settings window open in the unity editor with PC, Mac & Standalone platform highlighted](images/wmr-config-img-3.png)
 
     **If you're targeting the HoloLens 2**:
     - Under **Platform**, select **Universal Windows Platform**. Make sure the following settings are active:
@@ -81,12 +81,12 @@ To build an app for Windows Mixed Reality, you must choose a build target. The b
 
     **Build configuration**: Release (there are known performance issues with Debug)
 
-    ![Screenshot of Build Settings window open in the unity editor with Universal Windows Platform highlighted.](../../images/030-build-settings-uwp.png)
+    ![Screenshot of Build Settings window open in the unity editor with Universal Windows Platform highlighted.](images/030-build-settings-uwp.png)
 
 1. Click the **Switch Platform** button. Unity displays a progress bar while it switches platforms.
 1. After the switch platform process is finished, close the **Build Settings** window.
 
-![Screenshot of Build Settings window open in unity editor with Universal Windows Platform highlighted](../../images/030-build-settings-uwp.png)
+![Screenshot of Build Settings window open in unity editor with Universal Windows Platform highlighted](images/030-build-settings-uwp.png)
 
 ## Download and install the Mixed Reality Feature Tool
 
@@ -153,7 +153,7 @@ If you're developing for the HoloLens2, skip this section and go to the next one
 
 1. The OpenXR Plugin loads, and then two items appear underneath **OpenXR**. Select the first one, **Windows Mixed Reality feature group**.
 
-        :::image type="content" source="images/032-wmr-feature-group.png" alt-text="Screenshot of Project Settings Window with Initialize XR on Startup selected and the OpenXR Plugin highlighted.":::
+    :::image type="content" source="images/032-wmr-feature-group.png" alt-text="Screenshot of Project Settings Window the OpenXR Plugin  and Windows Mixed Reality feature group highlighted.":::
 
 Note that there's now a yellow warning triangle next to **OpenXR**. This indicates that you have incompatible settings that need to be resolved. To find out how to address this, skip the next section about configuring the HoloLens 2 and continue on with the following section, Resolving incompatible settings.
 
@@ -170,7 +170,7 @@ Note that there's now a yellow warning triangle next to **OpenXR**. This indicat
 
 1. The OpenXR Plugin loads, and then two items appear underneath **OpenXR**. Select the first one, **Microsoft HoloLens feature group**.
 
-        :::image type="content" source="images/033-microsoft-hololens-feature-group.png" alt-text="Screenshot of Project Settings Window with Initialize XR on Startup selected and the Microsoft HoloLens Feature Group highlighted.":::
+    :::image type="content" source="images/033-microsoft-hololens-feature-group.png" alt-text="Screenshot of Project Settings Window with with the OpenXR plugin and the Microsoft HoloLens Feature Group highlighted.":::
 
 Note that there's a yellow warning triangle next to **OpenXR**. This indicates that you have incompatible settings that need to be resolved.
 
@@ -241,3 +241,21 @@ The images in this section show the options in the Universal Windows Platform ta
     > The **Render Mode** setting, located just above **Depth Submission Mode**, is set by default to **Single Pass Instanced**. In mixed reality apps, the scene is rendered twice: once for each eye. The result is "stereoscopic vision." This doubles the amount of necessary computing, so it's important to select the most efficient rendering path in Unity to save on both CPU and GPU time. Single pass instanced rendering is the best choice here--we recommend that you enable it by default for every project. To learn more about this, [see the Unity documentation](https://docs.unity3d.com/Manual/SinglePassInstancing.html).
 
 1. Close the **Project Settings** window.
+
+### Optimization
+
+If you're developing for HoloLens 2, select the **Mixed Reality > Project > Apply recommended project settings for HoloLens 2** menu item to get better app performance.
+
+![Screenshot of the mixed reality menu item open with OpenXR selected](images/openxr-img-08.png)
+
+You're now ready to begin developing with OpenXR in Unity!
+
+### Unity sample projects for OpenXR and HoloLens 2
+
+Check out the [OpenXR Mixed Reality samples repo](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) for sample unity projects showcasing how to build Unity applications for HoloLens 2 or Mixed Reality headsets using the Mixed Reality OpenXR plugin.
+
+## See also
+
+- [Set up a new OpenXR project with MRTK](new-openxr-project-with-mrtk.md)
+- [Add the Mixed Reality OpenXR Plugin to your existing Unity project](mixed-reality-openxr-plugin.md)
+

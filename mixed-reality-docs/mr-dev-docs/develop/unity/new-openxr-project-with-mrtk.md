@@ -2,7 +2,7 @@
 title: Set up a new OpenXR project with MRTK
 description: How to set up a new OpenXR project with MRTK.
 author: sean-kerawala
-ms.author: vtieto
+ms.author: vinnietieto
 ms.date: 04/12/2022
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality headset, windows mixed reality headset, virtual reality headset, unity, MRTK, unity
@@ -249,3 +249,20 @@ To target Windows Mixed Reality, your Unity project must be set to export as a U
     > The package name is the unique identifier for the app. If you want to avoid overwriting previously installed versions of the app with the same name, you should change this identifier before deploying the app.
 
 1. Close the **Project Settings** window.
+
+### Optimization
+
+If you're developing for HoloLens 2, select the **Mixed Reality > Project > Apply recommended project settings for HoloLens 2** menu item to get better app performance.
+
+![Screenshot of the mixed reality menu item open with OpenXR selected](images/openxr-img-08.png)
+
+You're now ready to begin developing with OpenXR in Unity!
+
+### Unity sample projects for OpenXR and HoloLens 2
+
+Check out the [OpenXR Mixed Reality samples repo](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) for sample unity projects showcasing how to build Unity applications for HoloLens 2 or Mixed Reality headsets using the Mixed Reality OpenXR plugin.
+
+## See also
+
+- [Set up a new OpenXR project without MRTK](new-openxr-project-without-mrtk.md)
+- [Add the Mixed Reality OpenXR Plugin to your existing Unity project](mixed-reality-openxr-plugin.md)
