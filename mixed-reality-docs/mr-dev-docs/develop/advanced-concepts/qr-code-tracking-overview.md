@@ -3,7 +3,7 @@ title: QR code tracking overview
 description: Learn how to detect QR codes, add webcam capabilities, and manage coordinate systems in Mixed Reality apps on HoloLens 2.
 author: qianw211
 ms.author: qianwen
-ms.date: 2/1/2022
+ms.date: 4/14/2022
 ms.topic: article
 keywords: VR, LBE, location based entertainment, vr arcade, arcade, immersive, QR, QR code, QR code detection, HoloLens 2, QR code tracking
 ---
@@ -30,7 +30,7 @@ In this article, you'll learn about:
   * [QR code placement in a space](#qr-code-placement-in-a-space)
 * [Troubleshooting and FAQ](#troubleshooting-and-faq)
   * [What capabilities are needed?](#what-capabilities-are-needed)
-  * [How to make QR Code Tracking Feature work on HoloLens 2 devices?](#how-to-make-qr-code-tracking-feature-work-on-hololens-2-devices)
+  * [How do I make the QR Code Tracking Feature work on HoloLens 2 devices?](#how-do-i-make-the-qr-code-tracking-feature-work-on-hololens-2-devices)
   * [Where do I find the API plugin files?](#where-do-i-find-the-api-plugin-files)
   * [How do I prepare a UWP to use Microsoft.MixedReality.QR.QRCodeWatcher?](#how-do-i-prepare-a-uwp-to-use-microsoftmixedrealityqrqrcodewatcher)
   * [How do I prepare Unity with the Microsoft.MixedReality.QR.QRCodeWatcher?](#how-do-i-prepare-unity-with-the-microsoftmixedrealityqrqrcodewatcher)
@@ -39,8 +39,8 @@ In this article, you'll learn about:
   * [What's the accuracy?](#whats-the-accuracy)
   * [How close do I need to be to the QR code to detect it?](#how-close-do-i-need-to-be-to-the-qr-code-to-detect-it)
   * [Why can't I read QR codes with logos?](#why-cant-i-read-qr-codes-with-logos)
-  * [QR codes detected, but why am I getting no data?](#qr-codes-detected-but-why-am-i-getting-no-data)
-  * [Are QR codes saved at the 'space' level or app level? It seems to me it is beyond app?](#are-qr-codes-saved-at-the-space-level-or-app-level--it-seems-to-me-it-is-beyond-app)
+  * [The QR codes are detected, so why am I getting no data?](#the-qr-codes-are-detected-so-why-am-i-getting-no-data)
+  * [Are QR codes saved at the 'space' level or app level?](#are-qr-codes-saved-at-the-space-level-or-app-level)
   * [How does that work with the underlying platform? Where do they persist?](#how-does-that-work-with-the-underlying-platform--where-do-they-persist)
   * [How do I debug the app in Visual studio when I receive the "`Microsoft.MixedReality.QR.pdb` not found" error message?](#how-do-i-debug-the-app-in-visual-studio-when-i-receive-the-microsoftmixedrealityqrpdb-not-found-error-message)
 
@@ -85,11 +85,11 @@ Windows Mixed Reality devices don't work with QR codes with sides smaller than 5
 
 For QR codes with sides ranging from 5 cm to 10 cm, the device must be fairly close to detect the code. It may take longer to detect the code.
 
-The exact time to detect codes depends not only on the size of the QR codes, but how far you're away from the code. Moving closer to the code will help offset issues with size.
+The exact time to detect codes depends not only on the size of the QR codes, but how far away you are from the code. Moving closer to the code will help offset issues with size.
 
 ### Distance and angular position from the QR code
 
-The tracking cameras can only detect a certain level of detail. For small codes - < 10 cm along the sides - you must be fairly close. For a version 1 QR code varying from 10 cm to 25 cm in size, the minimum detection distance is between 0.15 meters to 0.5 meters. 
+The tracking cameras can only detect a certain level of detail. For small codes (less than 10 cm along the sides) you must be fairly close. For a version 1 QR code varying from 10 cm to 25 cm in size, the minimum detection distance is between 0.15 meters and 0.5 meters. 
 
 The detection distance for size increases linearly, but also depends on [supported QR version](#supported-qr-code-versions) or module size. The higher the version, the smaller the modules, which can only be detected from a closer position. You can also try micro-QR codes if you want the distance of detection to be longer. QR detection works with a range of angles += 45 deg to ensure we have proper resolution to detect the code.
 
@@ -101,8 +101,7 @@ Other detection considerations:
 
 For the tradeoff relationship between distance and size of the QR code for optimal detection, see the following graph:
 
-<img src="images\module-size-vs-detection-range-chart.png
-" alt="QR code size distance chart">
+<img src="images\module-size-vs-detection-range-chart.png " alt="QR code size distance chart">
 
 > [!IMPORTANT]
 > Always make sure you have enough contrast and a proper border.
@@ -111,9 +110,9 @@ For the tradeoff relationship between distance and size of the QR code for optim
 
 Windows Mixed Reality devices detect QR codes at the system level in the driver. When the device is rebooted or the driver restarts, the detected QR codes history is cleared. QR codes redetected are treated as new objects.
 
-We recommend configuring your app to ignore QR codes older than a specific timestamp, which can be specified within the app. The QR Code API specifies the time last detection happened. Most app developers will use the system time when the app is launched to determine the time a QR code is detected. 
+We recommend configuring your app to ignore QR codes older than a specific timestamp, which can be specified within the app. The QR Code API specifies the time that last detection happened. Most app developers will use the system time when the app is launched to determine the time a QR code is detected. 
 
-QR code data aren’t app-specific. Upon app launch, there will be a list of available QR codes being provided.  The app developer will determine which QR codes are relevant to this app.
+QR code data aren’t app-specific. Upon app launch, there will be a list of available QR codes being provided. The app developer will determine which QR codes are relevant to this app.
 
 See also [How to clear the codes from my app?](#managing-qr-code-data)
 
@@ -146,7 +145,7 @@ If you're running the project from Unity, you also need to ensure that you're ca
 
 For more information on setting up your project for Unity, see [configure Unity for Windows Mixed Reality](/learn/modules/learn-mrtk-tutorials/1-3-exercise-configure-unity-for-windows-mixed-reality?ns-enrollment-type=LearningPath&ns-enrollment-id=learn.azure.beginner-hololens-2-tutorials&tabs=openxr).
 
-### How to make QR Code Tracking Feature work on HoloLens 2 devices? 
+### How do I make the QR Code Tracking Feature work on HoloLens 2 devices? 
 
 QR tracking is automatic on HoloLens 2, and you'll need the "webcam" capability added to your app. 
 
@@ -170,38 +169,38 @@ Use NuGet for Unity and point to the NuGet pack above.
 
 ### How can I make QR codes?
 
-Yes, checkout any QR code generator, see <https://www.the-qrcode-generator.com/>
+Check out any QR code generator--[here's one example](https://www.the-qrcode-generator.com/).
 
 ### If QR code tracking doesn't work in general, what do I do?
 
 * Is the QR Code version a supported version? We don't support the high-density versions like version 40. Nothing above version 10 is guaranteed; versions above 20 aren’t supported.
 * Are you close enough to the QR code? See [distance and angular position from the QR code](#distance-and-angular-position-from-the-qr-code).
-* How is the lighting? There’s a known issue where detection becomes difficult when the QR code is on a dark environmental background. When there's a dark background, the QR code will appear washed out to the camera due to high contrast. For more information, see [lighting and backdrop](#lighting-and-backdrop).
+* How is the lighting? There’s a known issue where detection becomes difficult when the QR code is on a dark environmental background--the QR code will appear washed out to the camera due to high contrast. For more information, see [lighting and backdrop](#lighting-and-backdrop).
 
 ### What's the accuracy?
 
-When detected in a single frame, the size is expected to have at most a 1% error from the actual size. For example, a 10-cm code might be up to +/- 1 mm off in measured size. Under continuous detection, a code's position might drift around by up to +/- 2.5 mm. Once you’ve moved out of detection range, a previous detection's position is up to the mercy of the map error.
+When detected in a single frame, the size is expected to have at most a 1% error from the actual size. For example, a 10 cm code might be up to +/- 1 mm off in measured size. Under continuous detection, a code's position might drift around by up to +/- 2.5 mm. Once you’ve moved out of detection range, a previous detection's position is up to the mercy of the map error.
 
 ### How close do I need to be to the QR code to detect it?
 
 The distance obviously depends on the size of the QR code, and also what version it is. For more information, see [distance and angular position from the QR code](#distance-and-angular-position-from-the-qr-code).
 
-* On HoloLens 2, for a version 1 QR code varying from 5-cm sides to 25-cm sides, the minimum detection distance ranges from 0.25 meters to 0.5 meters. The furthest these can be detected from goes from about 0.5 m for the smallest code to 2 meters for the bigger.
+* On HoloLens 2, for a version 1 QR code varying from 5 cm sides to 25 cm sides, the minimum detection distance ranges from 0.25 meters to 0.5 meters. The furthest these can be detected from goes from about 0.5 m for the smallest code to two meters for the bigger.
 * On Windows Mixed Reality, these distances for the sizes are halved.
-* For any codes bigger, extrapolate - the detection distance for size increases linearly. For any code smaller, detection simply won’t occur - 4-5 cm is the smallest we can detect.
+* For any codes bigger, extrapolate--the detection distance for size increases linearly. For any code smaller, detection simply won’t occur--4-5 cm is the smallest we can detect.
 
 ### Why can't I read QR codes with logos?
 
 Currently, we don't support QR codes with logos.
 
-### QR codes detected, but why am I getting no data?
+### The QR codes are detected, so why am I getting no data?
 
 * If the platform can’t decode the QR code, there will be no data.  You can use the stream and interpret the data using open-source code. 
 * Some features, such as structure append, aren’t supported.
 
 For more information, see [what QR code versions are supported?](#supported-qr-code-versions).
 
-### Are QR codes saved at the ‘space’ level or app level?  It seems to me it is beyond app? 
+### Are QR codes saved at the ‘space’ level or app level? 
 
 QR codes are saved at the system level in driver session, or boot session on HoloLens. For more information, see [managing QR code data](#managing-qr-code-data).
 
@@ -226,7 +225,7 @@ You should be able to debug the app with Microsoft.MixedReality.QR.dll, but the 
 
 #### Recommended solution
 
-We're working on adding symbols to the next release. In the meantime, you should still be able to debug your app by excluding the dll in the Visual Studio options: 
+We're working on adding symbols to the next release. In the meantime, you should still be able to debug your app by excluding the DLL in the Visual Studio options: 
 
 <img src="images\exclude-dll.png" alt="excluding the DLL in Visual Studio options">
 

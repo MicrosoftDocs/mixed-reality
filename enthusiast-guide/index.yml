@@ -44,7 +44,7 @@ highlightedContent:
     # Card
     - title: Explore AltspaceVR
       itemType: whats-new
-      url: /windows/mixed-reality/altspace-vr/journey?tabs=application
+      url: /windows/mixed-reality/altspace-vr/explore/beginners-guide
 
 # productDirectory section (optional)
 productDirectory:
