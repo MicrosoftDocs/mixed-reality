@@ -121,7 +121,7 @@ To build an app for Windows Mixed Reality, you must choose a build target. The b
 
     :::image type="content" source="images/open-mixed-reality-feature-tool.png" alt-text="Screenshot of Opening MixedRealityFeatureTool.":::
 
-## Import the Mixed Reality OpenXR plugin
+## Import the Mixed Reality Toolkit and OpenXR packages
 
 1. In the Mixed Reality Feature Tool, select **Start**.
 
@@ -162,7 +162,7 @@ To build an app for Windows Mixed Reality, you must choose a build target. The b
 1. Select **Approve.**
 1. Return to the Unity Editor and click a blank area in the UI. You'll see a progress bar showing you that your packages are being imported.
  
-## Configure the Unity project
+## Configure OpenXR settings
 
 1. After Unity has imported the packages, a warning appears asking if you want to enable the backends by restarting the editor. Select **Yes**.
 
