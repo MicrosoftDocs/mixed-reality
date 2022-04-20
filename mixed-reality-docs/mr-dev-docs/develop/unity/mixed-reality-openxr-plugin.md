@@ -10,7 +10,7 @@ keywords: Unity, mixed reality, development, getting started, new project, Windo
 
 # Add the Mixed Reality OpenXR Plugin to your existing Unity project
 
-If you have a project that's already set up for OpenXR (you have the Unity OpenXR plugin installed) and you want to add the capability to target your app for the HoloLens 2, follow the instructions below.
+If you have a project that's already set up for OpenXR (you have the Unity OpenXR plugin installed and configured) and you want to add the capability to target your app for the HoloLens 2, follow the instructions below.
 
 **To determine if your project has the Mixed Reality OpenXR plugin installed**:
 
