@@ -53,12 +53,12 @@ If you're starting a new project, we recommend that you install Unity 2020 inste
 
 1. On the menu bar, select **File** > **Build Settings...**.
 
-To build an app for Windows Mixed Reality, you must choose a build target. The build settings for Universal Windows Platform (UWP) target any device, including immersive headsets. This is the best choice if you're building for the HoloLens 2; however, if you're targeting desktop VR, we recommend that you use the **PC, Mac & Linux Standalone** platform.
+To build an app for Windows Mixed Reality, you must choose a build target. The build settings for Universal Windows Platform (UWP) target any device, including immersive headsets like the [HP Reverb G2](d/hp-reverb-g2-vr-headset/93qb262d0514?activetab=pivot:overviewtab). This is the best choice if you're building for the HoloLens 2; however, if you're targeting desktop VR, we recommend that you use the **PC, Mac & Linux Standalone** platform.
 
 1. Do one of the following:
 
     **If you're targeting Desktop VR**:
-    - Keep the **PC, Mac & Linux Standalone** platform selected by default on a new Unity project:
+    - Keep the **PC, Mac & Linux Standalone** platform which is selected by default on a new Unity project:
 
     ![Screenshot of Build Settings window open in the unity editor with PC, Mac & Standalone platform highlighted](images/wmr-config-img-3.png)
 
@@ -86,7 +86,7 @@ To build an app for Windows Mixed Reality, you must choose a build target. The b
 1. Click the **Switch Platform** button. Unity displays a progress bar while it switches platforms.
 1. After the switch platform process is finished, close the **Build Settings** window.
 
-![Screenshot of Build Settings window open in unity editor with Universal Windows Platform highlighted](images/030-build-settings-uwp.png)
+![Screenshot of Build Settings window open in the Unity editor with Universal Windows Platform highlighted.](images/030-build-settings-uwp.png)
 
 ## Download and install the Mixed Reality Feature Tool
 
@@ -137,10 +137,13 @@ The Mixed Reality OpenXR Plugin comes in the form of a package for Unity. The be
 1. When you're ready to move on, select **Import.** On the **Review and Approve** page, you can review information about the package.
 1. Select **Approve.**
 1. Return to the Unity Editor and click a blank area in the UI. You'll see a progress bar showing you that your package is being imported.
+1. After Unity has imported the package, a warning appears asking if you want to enable the backends by restarting the editor. Select **Yes**.
+
+    :::image type="content" source="images/unity-restart-option.png" alt-text="Screenshot of Unity Restart Option.":::
 
 ## Configure the project for desktop VR
 
-If you're developing for the HoloLens2, skip this section and go to the next one, Configure the project for the HoloLens 2.
+If you're developing for the HoloLens2, skip this section and go to the next one, [Configure the project for the HoloLens 2](#configure-the-project-for-the-hololens-2).
 
 1. On the menu bar, select **Edit** > **Project Settings**.
 1. In the **Project Settings** window, ensure that you're on the **XR Plug-in Management** page and in the **PC, Mac & Linux Standalone** tab.
@@ -240,17 +243,34 @@ The images in this section show the options in the Universal Windows Platform ta
     > [!NOTE]
     > The **Render Mode** setting, located just above **Depth Submission Mode**, is set by default to **Single Pass Instanced**. In mixed reality apps, the scene is rendered twice: once for each eye. The result is "stereoscopic vision." This doubles the amount of necessary computing, so it's important to select the most efficient rendering path in Unity to save on both CPU and GPU time. Single pass instanced rendering is the best choice here--we recommend that you enable it by default for every project. To learn more about this, [see the Unity documentation](https://docs.unity3d.com/Manual/SinglePassInstancing.html).
 
+## Configure Player settings
+
+1. In the **Project Settings** window's left-side column, select **Player**.
+1. Note that in the **Player** window, the **Product Name** box is already filled. This is taken from your project name and will be the name displayed in the HoloLens Start menu.
+
+    :::image type="content" source="images/025-product-name.png" alt-text="Screenshot of Unity Publishing Settings with the Project Name box filled in.":::
+
+    > [!TIP]
+    > To make the app easier to locate during development, add an underscore in front of the name to sort it to the top of any list.
+
+1. Click the **Publishing Settings** drop down, and then in the **Package name** field, enter a suitable name.
+
+    :::image type="content" source="images/026-package-name.png" alt-text="Screenshot of Unity Publishing Settings with the package name box filled in.":::
+
+    > [!NOTE]
+    > The package name is the unique identifier for the app. If you want to avoid overwriting previously installed versions of the app with the same name, you should change this identifier before deploying the app.
+
 1. Close the **Project Settings** window.
 
 ### Optimization
 
-If you're developing for HoloLens 2, select the **Mixed Reality > Project > Apply recommended project settings for HoloLens 2** menu item to get better app performance.
+If you're developing for HoloLens 2, on the menu bar, **Mixed Reality > Project > Apply recommended project settings for HoloLens 2** to get better app performance.
 
 ![Screenshot of the mixed reality menu item open with OpenXR selected](images/openxr-img-08.png)
 
 You're now ready to begin developing with OpenXR in Unity!
 
-### Unity sample projects for OpenXR and HoloLens 2
+### Unity sample projects
 
 Check out the [OpenXR Mixed Reality samples repo](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) for sample unity projects showcasing how to build Unity applications for HoloLens 2 or Mixed Reality headsets using the Mixed Reality OpenXR plugin.
 
