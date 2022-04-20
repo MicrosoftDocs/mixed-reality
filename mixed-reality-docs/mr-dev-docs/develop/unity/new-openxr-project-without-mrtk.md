@@ -149,11 +149,11 @@ If you're developing for the HoloLens2, skip this section and go to the next one
 
  1. Ensure that **Initialize XR on Startup** is selected, and then, under **Plugin Providers**, click **Open XR**.
 
-    :::image type="content" source="images/031-init-xr-on-startup.png" alt-text="Screenshot of Project Settings Window with Initialize XR on Startup selected and the OpenXR Plugin highlighted.":::
+    :::image type="content" source="images/031-init-xr-on-startup.png" alt-text="Screenshot of the Project Settings Window, inside the PC, Mac & Linux Standalone tab, with Initialize XR on Startup selected and the OpenXR Plugin highlighted.":::
 
 1. The OpenXR Plugin loads, and then two items appear underneath **OpenXR**. Select the first one, **Windows Mixed Reality feature group**.
 
-    :::image type="content" source="images/032-wmr-feature-group.png" alt-text="Screenshot of Project Settings Window the OpenXR Plugin  and Windows Mixed Reality feature group highlighted.":::
+    :::image type="content" source="images/032-wmr-feature-group.png" alt-text="Screenshot of Project Settings Window the OpenXR Plugin and Windows Mixed Reality feature group highlighted.":::
 
 Note that there's now a yellow warning triangle next to **OpenXR**. This indicates that you have incompatible settings that need to be resolved. To find out how to address this, skip the next section about configuring the HoloLens 2 and continue on with the following section, Resolving incompatible settings.
 
@@ -166,11 +166,11 @@ Note that there's now a yellow warning triangle next to **OpenXR**. This indicat
 
  1. Ensure that **Initialize XR on Startup** is selected, and then, under **Plugin Providers**, click **Open XR**.
 
-    :::image type="content" source="images/013-init-xr-on-startup.png" alt-text="Screenshot of Project Settings Window with Initialize XR on Startup selected and the OpenXR Plugin highlighted.":::
+    :::image type="content" source="images/013-init-xr-on-startup.png" alt-text="Screenshot of Project Settings Window, inside the Universal Windows Platform, with Initialize XR on Startup selected and the OpenXR Plugin highlighted.":::
 
 1. The OpenXR Plugin loads, and then two items appear underneath **OpenXR**. Select the first one, **Microsoft HoloLens feature group**.
 
-    :::image type="content" source="images/033-microsoft-hololens-feature-group.png" alt-text="Screenshot of Project Settings Window with with the OpenXR plugin and the Microsoft HoloLens Feature Group highlighted.":::
+    :::image type="content" source="images/033-ms-hololens-feature-group.png" alt-text="Screenshot of Project Settings Window with with the OpenXR plugin and the Microsoft HoloLens Feature Group highlighted.":::
 
 Note that there's a yellow warning triangle next to **OpenXR**. This indicates that you have incompatible settings that need to be resolved.
 

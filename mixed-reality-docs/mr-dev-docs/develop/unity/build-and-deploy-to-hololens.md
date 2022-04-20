@@ -10,7 +10,7 @@ keywords: unity, visual studio, export, build, deploy, HoloLens, mixed reality h
 
 # Build and deploy to the HoloLens
 
-Before you build and deploy your project, make sure that you have already [set up your XR configuration and switched to the Universal Windows Platform](choose-unity-version.md).
+Before you build and deploy your project, make sure that you have already [set up your XR configuration and switched to the Universal Windows Platform](choosing-unity-version.md).
 
 ## Build the Unity project
 
