@@ -14,7 +14,7 @@ You can use Holographic Remoting to stream holographic content to your HoloLens 
 
 A fast way to work on your Unity project is to use "Play Mode", which runs your app locally in the Unity editor on your PC. Unity uses Holographic Remoting to provide a fast way to preview your content on a real HoloLens device. Play Mode can also be used with a Windows Mixed Reality headset attached to your development PC.
 
-## Holographic Remoting setup
+## Run Holographic Remoting Player on HoloLens 2
 
 1. First, you need to [install the Holographic Remoting Player app](https://www.microsoft.com/store/productId/9NBLGGH4SV40) from the Microsoft Store on your HoloLens 2
 2. Run the Holographic Remoting Player app on the HoloLens 2 and you'll see the version number and IP address to connect to
