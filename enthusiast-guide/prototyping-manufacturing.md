@@ -5,7 +5,7 @@ author: qianw211
 ms.author: qianwen
 ms.date: 3/15/2022
 ms.topic: article
-keywords: mixed reality, vr, lbe, location, mixed reality headset, windows mixed reality headset, virtual reality headset, hardware, HoloLens, multiplayer, cloud services, azure, prototyping, manufacturing
+keywords: mixed reality, vr, lbe, location, mixed reality headset, windows mixed reality headset, virtual reality headset, hardware, HoloLens, multiuser, cloud services, azure, prototyping, manufacturing
 ---
 
 # Prototyping and manufacturing for enterprises
@@ -32,7 +32,7 @@ The Mixed Reality Docs hub contains several pages covering different components 
 
 ### What resources does the Windows Mixed Reality platform have to assist with building immersive prototyping and manufacturing experiences that are capable of hosting multiple users in one session?
 
-The Mixed Reality Docs hub contains several pages covering the information needed for building immersive prototyping and manufacturing experiences capable of hosting multiple users at once. Visit the [Multiplayer FAQ](enterprise-lbe-faq.md#multiplayer-faq) to learn more.
+The Mixed Reality Docs hub contains several pages covering the information needed for building immersive prototyping and manufacturing experiences capable of hosting multiple users at once. Visit the [Multiuser FAQ](enterprise-lbe-faq.md#multiuser-faq) to learn more.
  
 ## Setting up, deploying, and managing immersive prototyping and manufacturing experiences.
 

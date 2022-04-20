@@ -5,7 +5,7 @@ author: qianw211
 ms.author: qianwen
 ms.date: 4/7/2022
 ms.topic: article
-keywords: mixed reality, vr, lbe, location, mixed reality headset, windows mixed reality headset, virtual reality headset, hardware, HoloLens, multiplayer, cloud services, azure, prototyping, manufacturing
+keywords: mixed reality, vr, lbe, location, mixed reality headset, windows mixed reality headset, virtual reality headset, hardware, HoloLens, multiuser, cloud services, azure, prototyping, manufacturing
 ---
 
 # Enterprise and Location-Based Entertainment support FAQ
@@ -15,7 +15,7 @@ Here is a list of Enterprise and Location-Based Entertainment Support FAQ topics
 * [Design and development FAQ](#design-and-development-faq)
 * [Hardware and updates FAQ](#hardware--updates-faq)
 * [Mixed Reality Portal FAQ](#mixed-reality-portal-faq)
-* [Multiplayer FAQ](#multiplayer-faq)
+* [Multiuser FAQ](#multiuser-faq)
 * [Tracking FAQ](#tracking-faq)
 * [Cloud Services and Azure FAQ](#cloud-services--azure-faq)
 * [Support and community](#support-and-community)
@@ -38,7 +38,7 @@ Begin your native development journey by getting acquainted with [OpenXR](/windo
 
 OpenXR lets you write code once that's portable across a wide range of hardware platforms. The OpenXR API uses a loader to connect your application directly to your headset's native platform support. End users get maximum performance and minimum latency, whether they're using a Windows Mixed Reality device or any other headset.
 
-### Our venue specializes in multiplayer experiences, and I'd like to focus our development time on content and front-end development. Are there offerings that can help me bootstrap or offload backend development?
+### Our venue specializes in multiuser experiences, and I'd like to focus our development time on content and front-end development. Are there offerings that can help me bootstrap or offload backend development?
 
 Azure PlayFab is a complete backend platform for live games. Learn more about [Azure PlayFab](https://azure.microsoft.com/services/playfab/#overview).
 
@@ -167,9 +167,9 @@ The application developer is responsible for displaying necessary safeguards so 
 
 See [here](set-up-windows-mixed-reality.md#set-up-your-room-boundary) for guidance on setting up the room boundary with WMR.
 
-## Multiplayer FAQ
+## Multiuser FAQ
 
-### What type of support does the Windows Mixed Reality platform provide for deploying a multiplayer experience at my venue?
+### What type of support does the Windows Mixed Reality platform provide for deploying a multiuser experience at my venue?
 
 If you opt in to the Windows 20H1 or later build via our Windows Insider program, you can access an interface for map sharing. This new functionality is available via the Map Manager interface of the Windows Device portal. To use this tool, follow the steps below: 
 

@@ -31,7 +31,7 @@
 
 ## [Location-Based Entertainment](location-based-experiences.md)
 ### [Theme Parks and Family Entertainment Centers](theme-parks-family-entertainment.md)
-### [Free-roam VR multiplayer experiences](free-roam-vr-multiplayer-experiences.md)
+### [Free-roam VR multiuser experiences](free-roam-vr-multiuser-experiences.md)
 ### [Virtual Reality Arcades](virtual-reality-arcades.md)
 ### [Immersive education](immersive-education.md)
 ### [Virtual museums, exhibits, and tourism](virtual-museums.md)

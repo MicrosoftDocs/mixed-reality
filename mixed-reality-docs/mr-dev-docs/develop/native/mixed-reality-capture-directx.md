@@ -92,6 +92,10 @@ Developers can use the *[Camera Capture UI API](/windows/uwp/audio-video-camera/
 
 This API launches the built-in MRC camera UI where users can take a photo or video and returns the resulting capture to your app. You can create a custom Mixed Reality Capture recorder if you need to add your own camera UI or lower-level access to capture streams.
 
+### MRC with screen capture
+
+With the HoloLens 2 May 2021 update (Windows Holographic, version 21H1 build 20346.1002), developers can use the *[Screen capture API](/windows/uwp/audio-video-camera/screen-capture)* to request a stream of mixed reality video frames.
+
 ### Creating a custom MRC recorder
 
 While the user can always trigger a photo or video using the system MRC capture service, an application may want to build a custom camera app that include holograms in the camera stream just like MRC. This allows the application to kick off captures from user input, build custom recording UI, or customize MRC settings to name a few examples.
@@ -122,12 +126,15 @@ MRC Video Effect (**Windows.Media.MixedRealityCapture.MixedRealityCaptureVideoEf
 |  BlankOnProtectedContent  |  boolean  |  FALSE  |  Flag to enable or disable returning an empty frame if there's a 2d UWP app showing protected content. If this flag is false and a 2d UWP app is showing protected content, the 2d UWP app will be replaced by a protected content texture in both the headset and in the mixed reality capture. |
 |  ShowHiddenMesh  |  boolean  |  FALSE  |  Flag to enable or disable showing the holographic camera's hidden area mesh and neighboring content. |
 | OutputSize | Size | 0, 0 | Set the desired output size after cropping for video stabilization. A default crop size is chosen if 0 or an invalid output size is specified. |
+| OutputSubtype | String | Nv12 | Set the desired output subtype after hologram composition and/or video stabilization. Supports [Nv12](/uwp/api/Windows.Media.MediaProperties.MediaEncodingSubtypes.Nv12) and [Argb32](/uwp/api/Windows.Media.MediaProperties.MediaEncodingSubtypes.Argb32) [MediaEncodingSubtypes](/uwp/api/Windows.Media.MediaProperties.MediaEncodingSubtypes). |
 | PreferredHologramPerspective | UINT32 | **Render from Camera** setting in the Windows Device Portal | Enum used to indicate which holographic camera view configuration should be captured: 0 (Display) means that the app won't be asked to render from the photo/video camera, 1 (PhotoVideoCamera) will ask the app to render from the photo/video camera (if the app supports it). Only supported on HoloLens 2 |
 
 >[!NOTE]
 > You can change the default value of **PreferredHologramPerspective** in the Windows Device Portal by going to the [Mixed Reality Capture page](../advanced-concepts/using-the-windows-device-portal.md#mixed-reality-capture) and unchecking **Render from Camera**. The setting defaults to **1 (PhotoVideoCamera)**, but can be unchecked to set it to **0 (Display)**.
 >
 > The default value of **PreferredHologramPerspective** was **0 (Display)** prior to the June 2020 update (Windows Holographic, version 2004 build 19041.1106 and Windows Holographic, version 1903 build 18362.1064).
+>
+> Support for **OutputSubtype** was added with the May 2021 update (Windows Holographic, version 21H1 build 20346.1002).
 
 MRC Audio Effect (**Windows.Media.MixedRealityCapture.MixedRealityCaptureAudioEffect**)
 
