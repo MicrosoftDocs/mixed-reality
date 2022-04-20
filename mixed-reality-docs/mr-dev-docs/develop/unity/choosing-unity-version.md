@@ -72,3 +72,4 @@ If you have a Unity 2018 project, you should consider planning for a migration f
 
 > [!div class="nextstepaction"]
 > [Set up a new OpenXR project with MRTK](new-openxr-project-with-mrtk.md)
+> [Set up a new OpenXR project without MRTK](new-openxr-project-without-mrtk.md)
