@@ -5,7 +5,7 @@ author: qianw211
 ms.author: qianwen
 ms.date: 3/16/2022
 ms.topic: article
-keywords: mixed reality, vr, lbe, location, mixed reality headset, windows mixed reality headset, virtual reality headset, hardware, HoloLens, multiplayer, cloud services, azure
+keywords: mixed reality, vr, lbe, location, mixed reality headset, windows mixed reality headset, virtual reality headset, hardware, HoloLens, multiuser, cloud services, azure
 ---
 
 # Enterprise use cases with Windows Mixed Reality
@@ -28,6 +28,6 @@ This document serves as a guide to using Windows Mixed Reality for enterprise sc
 * [Design and development FAQ](enterprise-lbe-faq.md#design-and-development-faq)
 * [Hardware and updates FAQ](enterprise-lbe-faq.md#hardware--updates-faq)
 * [Mixed Reality Portal FAQ](enterprise-lbe-faq.md#mixed-reality-portal-faq)
-* [Multiplayer FAQ](enterprise-lbe-faq.md#multiplayer-faq)
+* [Multiuser FAQ](enterprise-lbe-faq.md#multiuser-faq)
 * [Tracking FAQ](enterprise-lbe-faq.md#tracking-faq)
 * [Cloud Services and Azure FAQ](enterprise-lbe-faq.md#cloud-services--azure-faq)
