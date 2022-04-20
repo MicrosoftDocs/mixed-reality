@@ -18,17 +18,17 @@ MRTK provides a cross-platform input system, foundational components, and common
 
 MRTK supports a wide range of platforms, including:
 
-    - Microsoft HoloLens
+- Microsoft HoloLens
 
-    - Microsoft HoloLens 2
+- Microsoft HoloLens 2
 
-    - Windows Mixed Reality headsets
+- Windows Mixed Reality headsets
 
-    - OpenVR headsets (HTC Vive / Oculus Rift)
+- OpenVR headsets (HTC Vive / Oculus Rift)
 
-    - Ultraleap Hand Tracking
+- Ultraleap Hand Tracking
 
-    - Android and iOS devices
+- Android and iOS devices
 
 > [!NOTE]
 > You can also [set up a new OpenXR project without MRTK](new-openxr-project-without-mrtk.md).
