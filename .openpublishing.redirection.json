@@ -19,6 +19,12 @@
 		},
 
 		{
+			"source_path": "mixed-reality-docs/enthusiast-guide/free-roam-vr-multiplayer-experiences.md",
+			"redirect_url": "/windows/mixed-reality/enthusiast-guide/free-roam-vr-multiuser-experiences",
+			"redirect_document_id": false
+		},
+
+		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/whats-new/sf-academy-events.md",
 			"redirect_url": "/windows/mixed-reality/whats-new/journey-to-mr-series",
 			"redirect_document_id": false
