@@ -105,8 +105,6 @@ To build an app for Windows Mixed Reality, you must choose a build target. The b
 1. Click the **Switch Platform** button. Unity displays a progress bar while it switches platforms.
 1. After the switch platform process is finished, close the **Build Settings** window.
 
-![Screenshot of Build Settings window open in unity editor with Universal Windows Platform highlighted](images/030-build-settings-uwp.png)
-
 ## Download and install the Mixed Reality Feature Tool
 
  The best way to discover, update, and import feature packages is with the Mixed Reality Feature Tool. You can search packages by name or category, see their dependencies, and view proposed changes to your project's manifest file before importing.
@@ -176,15 +174,18 @@ To build an app for Windows Mixed Reality, you must choose a build target. The b
 
     :::image type="content" source="images/010-configurator-select-openxr.png" alt-text="Screenshot of MRTK project configurator window with OpenXR selected.":::
 
+1. The **OpenXR Project Validation** opens. You can ignore this for now.
+
 1. On the **Welcome to MRTK!** screen, select **Show XR Plug-In Management Settings**.
 
     :::image type="content" source="images/011-show-xr-plugin-management.png" alt-text="Screenshot of the Show XR Plug-In Management Settings button.":::
+
+    This opens the **Project Settings** window.
 
 ## Configure the project for desktop VR
 
 If you're developing for the HoloLens2, skip this section and go to the next one, [Configure the project for the HoloLens 2](#configure-the-project-for-the-hololens-2).
 
-1. On the menu bar, select **Edit** > **Project Settings**.
 1. In the **Project Settings** window, ensure that you're on the **XR Plug-in Management** page and in the **PC, Mac & Linux Standalone** tab.
 
     :::image type="content" source="images/028-xr-plugin-mgmt-only.png" alt-text="Screenshot of the Project Settings Window open to the XR Plugin Management Page and PC, Mac & Linux Standalone tab.":::
@@ -221,7 +222,7 @@ The images in this section show the options in the Universal Windows Platform ta
 
     :::image type="content" source="images/014-yellow-triangle-warning.png" alt-text="Screenshot of warning about incompatible settings.":::
 
-1. In the **OpenXR Project Validation** window, there are several issues listed. Select the **Fix All** button.
+1. In the **OpenXR Project Validation** window, there are several issues listed. Select the **Fix All** button. **NOTE**: This list may look different depending on which tab you're in.
 
     :::image type="content" source="images/015-fix-all-button.png" alt-text="Screenshot of the Fix All button in the OpenXR Project Validation window.":::
 

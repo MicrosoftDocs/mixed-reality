@@ -10,13 +10,13 @@ keywords: Unity, mixed reality, development, getting started, new project, Windo
 
 # Add the Mixed Reality OpenXR Plugin to your existing Unity project
 
-If you have a project that's already set up for OpenXR (you have the Unity OpenXR plugin installed and configured) and you want to add the capability to target your app for the HoloLens 2, follow the instructions below.
+If you have a Unity project that's already set up for OpenXR (you have the Unity OpenXR plugin installed and configured) and you want to add the capability to target your app for the HoloLens 2, follow the instructions below.
 
 **To determine if your project has the Mixed Reality OpenXR plugin installed**:
 
-1. In Unity, select **Edit** > **Project Settings**.
+1. In Unity, on the menu bar, select **Edit** > **Project Settings**.
 1. Ensure that you're on the **XR Plug-in Management** page with the Universal Windows Platform settings (Windows logo tab) displayed.
-1. If **Microsoft Hololens feature group"** is grayed out or doesn't exist, the Mixed Reality OpenXR plugin isn't installed.
+1. If **Microsoft Hololens feature group** is grayed out or doesn't exist, the Mixed Reality OpenXR plugin isn't installed.
 
     :::image type="content" source="images/028-ms-hololens-feature-group.png" alt-text="Screenshot of XR Plug-in Management window.":::
 
@@ -68,68 +68,9 @@ The Mixed Reality OpenXR Plugin comes in the form of a package for Unity. The be
 1. On the **Import Features** page, the left-side column, **Features**, displays the packages you just selected. The right-side column, **Required dependencies**, displays any dependencies. You can click the **Details** link for any of these items to learn more about them.
 1. When you're ready to move on, select **Import.** On the **Review and Approve** page, you can review information about the packages.
 1. Select **Approve.**
-1. Return to the Unity Editor and click a blank area in the UI. You'll see a progress bar showing you that your packages are being imported.
-
-## Configure the project for the HoloLens 2
-
+1. Return to the Unity Editor and click a blank area in the UI. You'll see a progress bar showing you that the package is being imported.
 1. In Unity, ensure that you're in the **Project Settings** window, on the **XR Plug-in Management** page, and in the **Universal Windows Platform** tab.
-
 1. There are now two feature groups underneath **OpenXR**. Select the first one, **Microsoft HoloLens feature group**.
-
-1. Note that there's a yellow warning triangle next to **OpenXR**.  This indicates that you have incompatible settings that need to be resolved.
-
-## Resolving incompatible settings
-
-1. Hover your cursor over the triangle, then read the message in the popup, and then select the triangle.
-
-    :::image type="content" source="images/014-yellow-triangle-warning.png" alt-text="Screenshot of warning about incompatible settings.":::
-
-1. In the **OpenXR Project Validation** window, there are several issues listed. Select the **Fix All** button.
-
-    :::image type="content" source="images/015-fix-all-button.png" alt-text="Screenshot of the Fix All button in the OpenXR Project Validation window.":::
-
-1. One issue remains and tells you that you must add at least one interaction profile. To do so, click **Edit**. This takes you to the settings for the **OpenXR** plugin in the **Project Settings** window.
-
-    :::image type="content" source="images/016-openxr-screen.png" alt-text="Screenshot of the Project Settings window with the OpenXR settings displayed.":::
-
-1. Underneath **Interaction Profiles**, note the plus sign (+) button.
-
-    :::image type="content" source="images/017-add-profile-button.png" alt-text="Screenshot of the Add Interaction Profile button.":::
-
-1. Click the button three times, each time choosing a different profile:
-
-    **Eye Gaze Interaction Profile**
-
-    **Microsoft Hand Interaction Profile**
-
-    **Microsoft Motion Controller Profile**
-
-    :::image type="content" source="images/018-interaction-profiles.png" alt-text="Screenshot of interaction profiles that should be added.":::
-
-    If the **Eye Gaze Interaction Profile**, or any other profile, appears with a yellow triangle next to it, select the triangle, and then in the **OpenXR Project Validation** window, click the **Fix** button. When you're finished, close the **OpenXR Project Validation** window.
-
-    :::image type="content" source="images/019-fix-eye-gaze.png" alt-text="Screenshot of the Fix button for the Eye Gaze interaction profile.":::
-
-1. In the **Project Settings** window under **OpenXR Feature Groups**, ensure that the following are selected:
-   
-   **Microsoft HoloLens**
-
-   **Hand Tracking**
-
-   **Motion Controller Model**
-
-    :::image type="content" source="images/020-selected-features.png" alt-text="Screenshot of selected features for OpenXR.":::
-
-1. Click the **Depth Submission Mode** drop down and then select **Depth 16 Bit**.
-
-    :::image type="content" source="images/021-depth-submission-mode.png" alt-text="Screenshot of Depth 16 Bit selected for Depth Submission Mode.":::
-
-    > [!TIP]
-    > Reducing the Depth Format to 16-bit is optional, but it may improve graphics performance in your project. To learn more, see [Depth buffer sharing (HoloLens)](/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering).
-
-    > [!NOTE]
-    > The **Render Mode** setting, located just above **Depth Submission Mode**, is set by default to **Single Pass Instanced**. In mixed reality apps, the scene is rendered twice: once for each eye. The result is "stereoscopic vision." This doubles the amount of necessary computing, so it's important to select the most efficient rendering path in Unity to save on both CPU and GPU time. Single pass instanced rendering is the best choice here--we recommend that you enable it by default for every project. To learn more about this, [see the Unity documentation](https://docs.unity3d.com/Manual/SinglePassInstancing.html).
-
 1.  Close the **Project Settings** window.
 
 ## See also
