@@ -86,8 +86,6 @@ To build an app for Windows Mixed Reality, you must choose a build target. The b
 1. Click the **Switch Platform** button. Unity displays a progress bar while it switches platforms.
 1. After the switch platform process is finished, close the **Build Settings** window.
 
-![Screenshot of Build Settings window open in the Unity editor with Universal Windows Platform highlighted.](images/030-build-settings-uwp.png)
-
 ## Download and install the Mixed Reality Feature Tool
 
 The Mixed Reality OpenXR Plugin comes in the form of a package for Unity. The best way to discover, update, and import feature packages is with the Mixed Reality Feature Tool. You can search packages by name or category, see their dependencies, and view proposed changes to your project's manifest file before importing.
