@@ -24,23 +24,45 @@ The most important first step when optimizing performance of mixed reality apps 
 
 ## How to profile with Unity
 
-Unity provides the **[Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html)** built-in, which is a great resource to gather valuable performance insights for your particular app. Although you can run the profiler in-editor, these metrics don't represent the true runtime environment so results should be used cautiously. We recommended remotely profiling your application while running on device for most accurate and actionable insights. Further, Unity's [Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html) is also a powerful and insight tool to use.
+Unity provides the **[Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html)** built-in, which is a great resource to gather valuable performance insights for your particular app. Although you can run the profiler in-editor, these metrics don't represent the true runtime environment so results should be used cautiously. We recommended remotely profiling your application while running on device for most accurate and actionable insights.
+
+Unity provides great documentation for:
+
+1) How to connect the [Unity profiler to UWP applications remotely](https://docs.unity3d.com/Manual/windowsstore-profiler.html)
+2) How to effectively [diagnose performance problems with the Unity Profiler](https://learn.unity.com/tutorial/diagnosing-performance-problems-2019-3)
+
+### GPU profiling
+
+#### Unity profiler
+
+With the Unity Profiler connected and after adding the GPU profiler (see *Add Profiler* in top right corner), one can see how much time is being spent on the CPU & GPU respectively in the middle of the profiler. This allows the developer to get a quick approximation if their application is CPU or GPU bounded.
+
+![Unity CPU vs GPU](images/unity-profiler-cpu-gpu.png)
 
 >[!NOTE]
->Unity provides the ability to easily modify the render target resolution of your application at runtime through the *[XRSettings.renderViewportScale](https://docs.unity3d.com/ScriptReference/XR.XRSettings-renderViewportScale.html)* property. The final image presented on device has a fixed resolution. The platform will sample the lower resolution output to build a higher resolution image for rendering on displays. 
+> To use GPU profiling, you need to disable **Graphics Jobs** in the Unity **Player Settings**. See Unity's **[GPU Usage Profiler module](https://docs.unity3d.com/Manual/Profiler.html)** for more details.
+
+#### Unity frame debugger
+
+Unity's [Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html) is also a powerful and insightful tool to use. It will give you a good overview of what the GPU is doing each frame. Things to look out for are additional rendering targets and blit commands to copy between them as these are very expensive on HoloLens. Ideally, no off-screen render targets should be used on HoloLens. These are usually added when enabling expensive rendering features like full screen effects, MSAA, HDR etc which should be avoided.
+
+#### HoloLens frame rate overlay
+
+The Device Portal [System Performance](../advanced-concepts/using-the-windows-device-portal.md#system-performance) page has a good summary of CPU and GPU performance of the device.
+You can enable **Display frame rate counter in headset** and **Display frame rate graph in headset**. These options will enable an FPS counter and graph respectively that will give you immediate feedback in any running application on your device.
+
+#### PIX
+
+[PIX](https://devblogs.microsoft.com/pix/download/) can be used to profile Unity applications as well. There are also detailed
+instructions how to use and install [PIX for HoloLens 2](../advanced-concepts/installing-pix-hololens.md).
+In a development build, the same scopes that you see in Unity's [Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html) will be shown in PIX as well and can be inspected and profiled in more detail.
+
+>[!NOTE]
+>Unity provides the ability to easily modify the render target resolution of your application at runtime through the *[XRSettings.renderViewportScale](https://docs.unity3d.com/ScriptReference/XR.XRSettings-renderViewportScale.html)* property. The final image presented on device has a fixed resolution. The platform will sample the lower resolution output to build a higher resolution image for rendering on displays.
 >
 >```CS
 >UnityEngine.XR.XRSettings.renderViewportScale = 0.7f;
 >```
-
-Unity provides great documentation for:
-1) How to connect the [Unity profiler to UWP applications remotely](https://docs.unity3d.com/Manual/windowsstore-profiler.html)
-2) How to effectively [diagnose performance problems with the Unity Profiler](https://unity3d.com/learn/tutorials/temas/performance-optimization/diagnosing-performance-problems-using-profiler-window)
-
->[!NOTE]
-> With the Unity Profiler connected and after adding the GPU profiler (see *Add Profiler* in top right corner), one can see how much time is being spent on the CPU & GPU respectively in the middle of the profiler. This allows the developer to get a quick approximation if their application is CPU or GPU bounded.
->
-> ![Unity CPU vs GPU](images/unity-profiler-cpu-gpu.png)
 
 ## CPU performance recommendations
 
