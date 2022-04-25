@@ -49,7 +49,7 @@ Unity's [Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html) is 
 #### HoloLens frame rate overlay
 
 The Device Portal [System Performance](../advanced-concepts/using-the-windows-device-portal.md#system-performance) page has a good summary of CPU and GPU performance of the device.
-You can enable **Display frame rate counter in headset** and **Display frame rate graph in headset**. These options will enable an FPS counter and graph respectively that will give you immediate feedback in any running application on your device.
+You can enable **Display frame rate counter in headset** and **Display frame rate graph in headset**. These options will enable an FPS counter and graph, respectively, that will give you immediate feedback in any running application on your device.
 
 #### PIX
 
