@@ -44,7 +44,7 @@ With the Unity Profiler connected and after adding the GPU profiler (see *Add Pr
 
 #### Unity frame debugger
 
-Unity's [Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html) is also a powerful and insightful tool to use. It will give you a good overview of what the GPU is doing each frame. Things to look out for are additional rendering targets and blit commands to copy between them as these are very expensive on HoloLens. Ideally, no off-screen render targets should be used on HoloLens. These are usually added when enabling expensive rendering features like full screen effects, MSAA, HDR etc which should be avoided.
+Unity's [Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html) is also a powerful and insightful tool to use. It will give you a good overview of what the GPU is doing each frame. Things to look out for are additional rendering targets and blit commands to copy between them as these are very expensive on HoloLens. Ideally, no off-screen render targets should be used on HoloLens. These are usually added when enabling expensive rendering features (for example MSAA, HDR or full-screen effects like bloom) which should be avoided.
 
 #### HoloLens frame rate overlay
 
