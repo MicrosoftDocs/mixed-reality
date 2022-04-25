@@ -53,7 +53,7 @@ You can enable **Display frame rate counter in headset** and **Display frame rat
 
 #### PIX
 
-[PIX](https://devblogs.microsoft.com/pix/download/) can be used to profile Unity applications as well. There are also detailed
+[PIX](https://devblogs.microsoft.com/pix/download/) can be used to profile Unity applications as well. There are also detailed instructions on how to use and install [PIX for HoloLens 2](../advanced-concepts/installing-pix-hololens.md).
 instructions how to use and install [PIX for HoloLens 2](../advanced-concepts/installing-pix-hololens.md).
 In a development build, the same scopes that you see in Unity's [Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html) will be shown in PIX as well and can be inspected and profiled in more detail.
 
