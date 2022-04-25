@@ -117,7 +117,7 @@ First, use Device Portal to verify the app isn't running on the HoloLens 2. Then
 > [!IMPORTANT]
 > If you collect timing data after taking a GPU capture, you'll be required to reboot the headset. This is a one-time restart of the device and is required for timing data collection.
 
-PIX is now ready for use! For an introduction how to use PIX, please refer to [PIX GPU captures](https://devblogs.microsoft.com/pix/gpu-captures/).
+PIX is now ready for use! For an introduction on how to use PIX, please refer to [PIX GPU captures](https://devblogs.microsoft.com/pix/gpu-captures/).
 
 
 ## See also
