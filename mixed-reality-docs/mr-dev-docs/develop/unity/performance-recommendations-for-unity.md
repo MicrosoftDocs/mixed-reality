@@ -58,7 +58,7 @@ instructions how to use and install [PIX for HoloLens 2](../advanced-concepts/in
 In a development build, the same scopes that you see in Unity's [Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html) will be shown in PIX as well and can be inspected and profiled in more detail.
 
 >[!NOTE]
->Unity provides the ability to easily modify the render target resolution of your application at runtime through the *[XRSettings.renderViewportScale](https://docs.unity3d.com/ScriptReference/XR.XRSettings-renderViewportScale.html)* property. The final image presented on device has a fixed resolution. The platform will sample the lower resolution output to build a higher resolution image for rendering on displays.
+>Unity provides the ability to easily modify the render target resolution of your application at runtime through the *[XRSettings.renderViewportScale](https://docs.unity3d.com/ScriptReference/XR.XRSettings-renderViewportScale.html)* property. The final image presented on-device has a fixed resolution. The platform will sample the lower resolution output to build a higher resolution image for rendering on displays.
 >
 >```CS
 >UnityEngine.XR.XRSettings.renderViewportScale = 0.7f;
