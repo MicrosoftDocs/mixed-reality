@@ -92,7 +92,11 @@ First, use Device Portal to verify the app isn't running on the HoloLens 2. Then
 > [!NOTE]
 > The first connection is always slower because binaries are being copied.
 
-4. When PIX has connected to the HoloLens 2, find your app in the **Select Target Process** section in the Launch UWP tab. Make sure **Launch for GPU Capture** is active. If your application is running on DX11, also make sure that **Force D3D11On12** is selected. Finally click **Launch**:
+1. When PIX has connected to the HoloLens 2, find your app in the **Select Target Process** section in the Launch UWP tab, and then make sure **Launch for GPU Capture** is active. 
+
+1. If your application is running on DX11, make sure that **Force D3D11On12** is selected. 
+
+1. Click **Launch**:
 
 ![Screenshot of PIX application with the select target process window and launch button highlighted](images/pix-img-13.png)
 
