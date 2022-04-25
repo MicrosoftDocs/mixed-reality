@@ -24,7 +24,7 @@ The most important first step when optimizing performance of mixed reality apps 
 
 ## How to profile with Unity
 
-Unity provides the **[Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html)** built-in, which is a great resource to gather valuable performance insights for your particular app. Although you can run the profiler in-editor, these metrics don't represent the true runtime environment so results should be used cautiously. We recommended remotely profiling your application while running on device for most accurate and actionable insights.
+Unity provides the **[Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html)** built-in, which is a great resource to gather valuable performance insights for your particular app. Although you can run the profiler in-editor, these metrics don't represent the true runtime environment so results should be used cautiously. We recommend that you remotely profile your application while running on-device for the most accurate and actionable insights.
 
 Unity provides great documentation for:
 
