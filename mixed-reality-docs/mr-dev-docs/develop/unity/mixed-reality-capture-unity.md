@@ -1,8 +1,8 @@
 ---
 title: Mixed reality capture for Unity
 description: Learn about performing mixed reality capture in Unity.
-author: mattzmsft
-ms.author: v-vtieto
+author: vtieto
+ms.author: vinnietieto
 ms.date: 09/28/2021
 ms.topic: article
 keywords: mrc, photo, video, capture, camera
@@ -55,4 +55,3 @@ We recommend you always request Exclusive control for the camera when using MRC.
 
 * [Mixed reality capture overview](../advanced-concepts/mixed-reality-capture-overview.md)
 * [Mixed reality capture for HoloLens users](/hololens/holographic-photos-and-videos)
-* [Spectator view](../../design/spectator-view.md)

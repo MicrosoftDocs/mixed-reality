@@ -3,7 +3,7 @@ title: Using the HoloLens Emulator
 description: Learn how to use the HoloLens Emulator to test mixed reality apps on your PC without a physical HoloLens.
 author: hamalawi
 ms.author: moelhama
-ms.date: 10/12/2021
+ms.date: 4/12/2022
 ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, emulator
@@ -17,7 +17,7 @@ If you're looking to develop Windows Mixed Reality immersive (VR) headset applic
 
 ## HoloLens 2 Emulator Overview
 
->[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/HoloLens-2-Emulator-Overview/player?format=ny]
+>[!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/HoloLens-2-Emulator-Overview/player?format=ny]
 
 ## Installing the HoloLens Emulator
 
@@ -25,7 +25,7 @@ Download the HoloLens Emulator.
 
 Versions:
 
-* [HoloLens 2 Emulator (Windows Holographic, version 21H1 October 2021 Update)](https://go.microsoft.com/fwlink/?linkid=2172762).
+* [HoloLens 2 Emulator (Windows Holographic, version 22H1)](https://go.microsoft.com/fwlink/?linkid=2193111).
 * [HoloLens Emulator (first Gen) and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2065980).
 
 You can find release notes and older builds of the HoloLens Emulator on the [HoloLens Emulator archive](hololens-emulator-archive.md) page.

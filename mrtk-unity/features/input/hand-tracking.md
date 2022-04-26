@@ -13,7 +13,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Hand Tra
 
 The _Hand Tracking profile_ is found under the _Input System profile_. It contains settings for customizing hand representation.
 
-<img src="../images/input/HandTrackingProfile.png" width="650px" alt="Hand Tracking Profile" style="display:block;">
+<img src="../images/input/HandTrackingProfile.png" width="650px" alt="Hand Tracking Profile">
 
 ## Joint prefabs
 
@@ -26,13 +26,13 @@ By default the hand joint prefabs are simple geometric primitives. These can be 
 
 Default Hand Joint Representation |  Joint Labels
 :-------------------------:|:-------------------------:
-<img src="../images/input-simulation/ArticulatedHandJoints.png" height="300px" alt="Articulated hand joints"  style="display:inline;">  |  <img src="../images/input-simulation/MRTK_Core_Input_Hands_JointNames.png" height="300px" alt="Input Hand joints"  style="display:inline;">
+<img src="../images/input-simulation/ArticulatedHandJoints.png" height="300px" alt="Articulated hand joints">  |  <img src="../images/input-simulation/MRTK_Core_Input_Hands_JointNames.png" height="300px" alt="Input Hand joints">
 
 ## Hand mesh prefab
 
 The hand mesh is used if fully defined mesh data is provided by the hand tracking device. The mesh renderable in the prefab is replaced by data from the device, so a dummy mesh such as a cube is sufficient. The material of the prefab is used for the hand mesh.
 
-<img src="../images/input-simulation/MRTK_Core_Input_Hands_ArticulatedHandMesh.png" width="350px" alt="Input Hand Mesh"  style="display:block;">
+<img src="../images/input-simulation/MRTK_Core_Input_Hands_ArticulatedHandMesh.png" width="350px" alt="Input Hand Mesh">
 
 Hand mesh display can have a noticeable performance impact, for this reason it can be disabled entirely by unchecking **Enable Hand Mesh Visualization** option.
 

@@ -25,7 +25,7 @@ Holographic rendering enables your application to draw a hologram at a precise l
         <td><strong>Feature</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (first gen)</strong></a></td>
         <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td>Rendering</td>
@@ -41,7 +41,7 @@ Key to holographic rendering is knowing what kind of device is being used. Devic
 
 While stereoscopic rendering provides one depth cue for your holograms, adding [grounding effects](../../design/interaction-fundamentals.md) can help users see more easily what surface a hologram is near. One grounding technique is to add a glow around a hologram on the nearby surface, and then render a shadow against this glow. In this way, your shadow appears to subtract light from the environment. [Spatial sound](../../design/spatial-sound.md) is another important depth cue, letting users reason about the distance and relative location of a hologram.
 
-Devices with **opaque displays**, like [Windows Mixed Reality immersive headsets](../../discover/immersive-headset-hardware-details.md), block out the world. Black pixels are solid black, and any other color appears as that color to the user. Your application is responsible for rendering everything the user sees. This makes it even more important to maintain a constant refresh rate so that users have a comfortable experience.
+Devices with **opaque displays**, like [Windows Mixed Reality immersive headsets](/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details), block out the world. Black pixels are solid black, and any other color appears as that color to the user. Your application is responsible for rendering everything the user sees. This makes it even more important to maintain a constant refresh rate so that users have a comfortable experience.
 
 ## Predicted rendering parameters
 

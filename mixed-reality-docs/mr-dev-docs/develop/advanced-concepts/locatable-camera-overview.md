@@ -1,9 +1,9 @@
 ---
 title: Locatable camera overview
 description: General information about the HoloLens front-facing camera, how it works, and the profiles and resolutions available to developers.
-author: cdedmonds
-ms.author: v-vtieto
-ms.date: 09/28/2021
+author: vtieto
+ms.author: vinnietieto
+ms.date: 11/30/2021
 ms.topic: article
 keywords: camera, hololens, HoloLens, color camera, front facing, hololens 2, HoloLens 2, cv, computer vision, fiducial, markers, qr code, qr, photo, video, locatable
 ---
@@ -30,28 +30,28 @@ HoloLens includes a world-facing camera mounted on the front of the device that 
 
 ### HoloLens 2
 
-* Autofocus photo/video (PV) camera with auto white balance, auto exposure, and full image-processing pipeline.
+* Autofocus photo/video (PV) camera with auto white balance, auto exposure, and full image-processing pipeline. The autofocus system can adjust object distance from 30 cm to infinity. The effective focal length for the HoloLens 2 PV camera lens is 4.87 mm +/- 5%.  In addition to the 5% variation due to manufacturing tolerance, the focal length will change dynamically due to the autofocus system. The AF travel (stroke) is up to 0.2 mm.
 * White Privacy LED facing the world that illuminates whenever the camera is active.
 * HoloLens 2 supports different camera profiles. Learn how to [discover and select camera capabilities](/windows/uwp/audio-video-camera/camera-profiles).
 * The camera supports the following profiles and resolutions (all video modes are 16:9 aspect ratio):
   
   | Profile                                         | Video     | Preview   | Still     | Frame rates | Horizontal Field of View (H-FOV) | Suggested usage                             |
   |-------------------------------------------------|-----------|-----------|-----------|-------------|----------------------------------|---------------------------------------------|
-  | Legacy,0  BalancedVideoAndPhoto,100             | 2272x1278 | 2272x1278 |           | 15.30       | 64.69                            | High-quality video recording                |
-  | Legacy,0  BalancedVideoAndPhoto,100             | 896x504   | 896x504   |           | 15.30       | 64.69                            | Preview stream for high-quality photo capture |
-  | Legacy,0  BalancedVideoAndPhoto,100             |           |           | 3904x2196 |             | 64.69                            | High-quality photo capture                  |
+  | Legacy, 0  BalancedVideoAndPhoto, 100             | 2272x1278 | 2272x1278 |           | 15.30       | 64.69                            | High-quality video recording                |
+  | Legacy, 0  BalancedVideoAndPhoto,100             | 896x504   | 896x504   |           | 15.30       | 64.69                            | Preview stream for high-quality photo capture |
+  | Legacy, 0  BalancedVideoAndPhoto, 100             |           |           | 3904x2196 |             | 64.69                            | High-quality photo capture                  |
   | BalancedVideoAndPhoto, 120                       | 1952x1100 | 1952x1100 | 1952x1100 | 15.30       | 64.69                            | Long duration scenarios                     |
   | BalancedVideoAndPhoto, 120                       | 1504x846  | 1504x846  |           | 15.30       | 64.69                            | Long duration scenarios                     |
-  | VideoConferencing,100                           | 1952x1100 | 1952x1100 | 1952x1100 | 15,30,60    | 64.69                            | Video conferencing, long duration scenarios |
-  | Videoconferencing,100                           | 1504x846  | 1504x846  |           | 5,15,30,60  | 64.69                            | Video conferencing, long duration scenarios |
-  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 1920x1080 | 1920x1080 | 1920x1080 | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
-  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 1280x720  | 1280x720  | 1280x720  | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
-  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 1128x636  |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
-  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 960x540   |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
-  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 760x428   |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
-  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 640x360   |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
-  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 500x282   |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
-  | Videoconferencing,100 BalancedVideoAndPhoto,120 | 424x240   |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
+  | VideoConferencing, 100                           | 1952x1100 | 1952x1100 | 1952x1100 | 15, 30,60    | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing, 100                           | 1504x846  | 1504x846  |           | 5, 15, 30,60  | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing, 100 BalancedVideoAndPhoto, 120 | 1920x1080 | 1920x1080 | 1920x1080 | 15, 30       | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing, 100 BalancedVideoAndPhoto, 120 | 1280x720  | 1280x720  | 1280x720  | 15, 30       | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing, 100 BalancedVideoAndPhoto,120 | 1128x636  |           |           | 15, 30       | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing, 100 BalancedVideoAndPhoto, 120 | 960x540   |           |           | 15,30       | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing, 100 BalancedVideoAndPhoto, 120 | 760x428   |           |           | 15, 30       | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing, 100 BalancedVideoAndPhoto, 120 | 640x360   |           |           | 15, 30       | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing, 100 BalancedVideoAndPhoto, 120 | 500x282   |           |           | 15, 30       | 64.69                            | Video conferencing, long duration scenarios |
+  | Videoconferencing, 100 BalancedVideoAndPhoto, 120 | 424x240   |           |           | 15, 30       | 64.69                            | Video conferencing, long duration scenarios |
 
 > [!NOTE]
 > Customers can leverage [mixed reality capture](/hololens/holographic-photos-and-videos) to take videos or photos of your app that include holograms and employ video stabilization.
@@ -67,9 +67,9 @@ When HoloLens takes photos and videos, the captured frames include the location 
 
 ### Distortion Error
 
-On HoloLens, the video and still image streams are undistorted in the system's image-processing pipeline before the frames are made available to the application. The preview stream contains the original distorted frames. Because only the CameraIntrinsics are made available, applications must assume that image frames represent a perfect pinhole camera.
+On HoloLens 2, the video and still image streams are undistorted in the system's image-processing pipeline before the frames are made available to the application. The preview stream contains the original distorted frames. Because only the CameraIntrinsics are made available, applications must assume that image frames represent a perfect pinhole camera.
 
-On HoloLens (first-generation), the undistortion function in the image processor may still leave an error of up to 10 pixels when using the CameraIntrinsics in the frame metadata. In many use cases, this error won't matter. However, if, for example, you're aligning holograms to real-world posters or markers and you notice a < 10-px offset (roughly 11 mm for holograms positioned two meters away), this distortion error could be the cause.
+On HoloLens (first-generation), the undistortion function in the image processor may still leave an error of up to 10 pixels when using the CameraIntrinsics in the frame metadata. In many use cases, this error won't matter. However, if, for example, you're aligning holograms to real-world posters or markers and you notice a < 10-px offset (roughly 11 mm for holograms positioned 2 meters away), this distortion error could be the cause.
 
 ## Locatable Camera Usage Scenarios
 
@@ -80,7 +80,7 @@ The Device Camera frames come with a "Camera To World" transform that can be use
 
 ### Tag / Pattern / Poster / Object Tracking
 
-Many mixed reality applications use a recognizable image or visual pattern to create a trackable point in space. An application can render objects relative to that point or create a known location. A typical use for HoloLens is finding a real-world object that's tagged with fiducials. This might occur, for example, on tablets that have been set up to communicate with HoloLens via Wifi.
+Many mixed reality applications use a recognizable image or visual pattern to create a trackable point in space. An application can render objects relative to that point or create a known location. A typical use for HoloLens is finding a real-world object that's tagged with fiducials. This might occur, for example, on tablets that have been set up to communicate with HoloLens via Wi-Fi.
 
 You'll need a few things to recognize a visual pattern and place an object in the application's world space:
 1. An image pattern recognition toolkit, such as QR code, AR tags, face finder, circle trackers, OCR, and so on.
@@ -103,7 +103,7 @@ Keeping an interactive application frame-rate is critical, especially when deali
 6. Main Thread: repeat from step 2.
 <!-- Not sure if we should keep this here or move to the c#/c++ doc. -->
 
-Some image marker systems only provide a single-pixel location which equates to a ray of possible locations. (Others provide the full transform, in which case this section isn't needed.) To get to a single 3D location, we can calculate multiple rays and find the final result by their approximate intersection. To get this result, you'll need to:
+Some image marker systems only provide a single-pixel location, which equates to a ray of possible locations. (Others provide the full transform, in which case this section isn't needed.) To get to a single 3D location, we can calculate multiple rays and find the final result by their approximate intersection. To get this result, you'll need to:
 1. Create a loop that collects multiple camera images.
 2. Find the associated feature points and their world rays.
 

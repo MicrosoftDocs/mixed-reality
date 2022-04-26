@@ -11,7 +11,7 @@ keywords: app quality criteria, mixed reality, mixed reality app, mixed reality 
 
 # App quality criteria overview
 
-This document describes the top factors impacting the quality of mixed reality apps. For each factor, the following information is provided
+This document describes the top factors impacting the quality of mixed reality apps. For each factor, the following information is provided:
 * Overview – a brief description of the quality factor and why it's important.
 * Device impact - which type of Window Mixed Reality device is affected.
 * Quality criteria – how to evaluate the quality factor.
@@ -21,7 +21,7 @@ This document describes the top factors impacting the quality of mixed reality a
 
 ## Frame rate
 
-Frame rate is the first pillar of hologram stability and user comfort. Frame rate below the recommended targets can cause holograms to appear jittery, negatively impacting the believability of the experience and potentially causing eye fatigue. The target frame rate for your experience on Windows Mixed Reality immersive headsets is either 60 Hz or 90 Hz depending on which Windows Mixed Reality Compatible PCs you're supporting. For HoloLens, the target frame rate is 60 Hz.
+Frame rate is the first pillar of hologram stability and user comfort. Frame rate below the recommended targets can cause holograms to appear jittery, negatively impacting the believability of the experience and potentially causing eye fatigue. The target frame rate for your experience on Windows Mixed Reality immersive headsets is either 60 Hz or 90 Hz depending on which Windows Mixed Reality-compatible PCs you're supporting. For HoloLens, the target frame rate is 60 Hz.
 
 ### Device impact
 
@@ -33,7 +33,7 @@ Frame rate is the first pillar of hologram stability and user comfort. Frame rat
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -51,7 +51,7 @@ Frame rate is the first pillar of hologram stability and user comfort. Frame rat
 
 ### How to measure
 
-* A real-time frame rate graph is provided through by the [Windows Device Portal](using-the-windows-device-portal.md#system-performance) under "System Performance".
+* A real-time frame rate graph is provided by the [Windows Device Portal](using-the-windows-device-portal.md#system-performance) under "System Performance."
 * For development debugging, add a frame rate diagnostic counter into the app. See Resources for a sample counter.
 * Frame rate drops can be experienced in device while the app is running by moving your head from side to side. If the hologram shows unexpected jittery movement, then low frame rate or the stability plane is likely the cause.
 
@@ -80,7 +80,7 @@ Frame rate is the first pillar of hologram stability and user comfort. Frame rat
 
 ## Hologram stability
 
-Stable holograms will increase the usability and believability of your app, and create a more comfortable viewing experience for the user. The quality of hologram stability is a result of good app development and the device's ability to understand (track) its environment. While frame rate is the first pillar of stability, other factors can impact stability including:
+Stable holograms will increase the usability and believability of your app and create a more comfortable viewing experience for the user. The quality of hologram stability is a result of good app development and the device's ability to understand (track) its environment. While frame rate is the first pillar of stability, other factors can impact stability, including:
 
 * Use of the stabilization plane
 * Distance to spatial anchors
@@ -96,7 +96,7 @@ Stable holograms will increase the usability and believability of your app, and 
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -116,15 +116,15 @@ Stable holograms will increase the usability and believability of your app, and 
 
 While wearing the device and viewing the experience:
 
-* Move your head from side to side. If the holograms show unexpected movement then low frame rate or improper alignment of the stability plane to the focal plane is the likely cause.
-* Move around the holograms and environment, look for behaviors such as swim and jumpiness. This type of motion is likely caused by the device not tracking the environment, or the distance to the spatial anchor.
-* If large or multiple holograms are in the frame, observe hologram behavior at various depths while moving your head position from side to side, if shakiness appears this is likely caused by the stabilization plane.
+* Move your head from side to side. If the holograms show unexpected movement, then low frame rate or improper alignment of the stability plane to the focal plane is the likely cause.
+* Move around the holograms and environment and look for behaviors such as swim and jumpiness. This type of motion is likely caused by the device not tracking the environment, or the distance to the spatial anchor.
+* If large or multiple holograms are in the frame, observe hologram behavior at various depths while moving your head position from side to side. If shakiness appears, it's likely caused by the stabilization plane.
 
 ### Recommendations
 
 * Add a frame rate counter at the beginning of the development work.
 * Use the stabilization plane.
-* Always render anchored holograms within 3 meters of their anchor.
+* Always render anchored holograms within three meters of their anchor.
 * Make sure your environment is set up for proper tracking.
 * Design your experience to avoid holograms at various focal depth levels within the frame.
 
@@ -157,7 +157,7 @@ Misalignments of holograms with physical objects (if intended to be placed in re
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -220,7 +220,7 @@ App developers control where users' eyes converge by placing content and hologra
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -235,7 +235,7 @@ App developers control where users' eyes converge by placing content and hologra
 <table>
 <tr>
 <td> Best </td><td><ul>
-<li>Place content at 2 m.</li><li>When holograms cannot be placed at 2 m and conflicts between convergence and accommodation cannot be avoided, the optimal zone for hologram placement is between 1.25 m and 5 m.</li><li>In every case, designers should structure content to encourage users to interact 1+ m away (e.g. adjust content size and default placement parameters).</li><li>Unless not required by the scenario, a clipping plane should be implement with fade out starting at 1 m.</li><li>In cases where closer observation of a motionless hologram is required, the content shouldn't be closer than 50 cm.</li>
+<li>Place content at 2 m.</li><li>When holograms cannot be placed at 2 m and conflicts between convergence and accommodation cannot be avoided, the optimal zone for hologram placement is between 1.25 m and 5 m.</li><li>In every case, designers should structure content to encourage users to interact 1+ m away (e.g. adjust content size and default placement parameters).</li><li>Unless not required by the scenario, a clipping plane should be implemented with fade-out starting at 1 m.</li><li>In cases where closer observation of a motionless hologram is required, the content shouldn't be closer than 50 cm.</li><li>For buttons, the distance should be 45 cm with a viewing angle no smaller than 2° and sized 1.6 x 1.6 cm.</li>
 </ul></td>
 </tr><tr>
 <td> Meets</td><td> Content is within the viewing and motion guidance, but improper use or no use of the clipping plane.</td>
@@ -258,6 +258,7 @@ App developers control where users' eyes converge by placing content and hologra
 
 ### Resources
 
+* [Comfort with HoloLens](../../design/comfort.md)
 * [Render distance](hologram-stability.md#hologram-render-distances)
 * [Focus point in Unity](../unity/focus-point-in-unity.md)
 * [Experimenting with scale](../../design/scale.md#experimenting-with-scale)
@@ -277,7 +278,7 @@ Regardless of viewing zone of comfort issues, demands for the user to switch fre
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -320,7 +321,7 @@ In Windows Mixed Reality, the audio engine provides the aural component of the m
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -378,7 +379,7 @@ Well-designed user experiences can create and maintain useful context of the vir
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -434,7 +435,7 @@ Holograms should react to the user position in roughly the same ways that "real"
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -493,7 +494,7 @@ Input interaction clarity is critical to an app's usability and includes input c
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -569,7 +570,7 @@ A button has long been a metaphor used for triggering an event in the 2D abstrac
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -624,7 +625,7 @@ Apps that require spatial mapping data rely on the device to automatically colle
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -679,7 +680,7 @@ In a mixed reality app, content may be outside the field of view or occluded by 
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>
@@ -722,7 +723,7 @@ A progress control provides feedback to the user that a long-running operation i
     </colgroup>
     <tr>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
         <td></td>
     </tr>
      <tr>

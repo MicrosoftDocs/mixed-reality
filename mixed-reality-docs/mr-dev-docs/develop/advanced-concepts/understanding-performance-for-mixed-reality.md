@@ -2,8 +2,8 @@
 title: Understanding Performance for Mixed Reality
 description: Learn advanced information and details for analyzing and optimizing Windows Mixed Reality app performance.
 author: hferrone
-ms.author: v-vtieto
-ms.date: 08/16/2021
+ms.author: vinnietieto
+ms.date: 12/30/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Performance, Optimization, CPU, GPU
 ---
@@ -12,18 +12,13 @@ keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Perform
 
 This article is an introduction to understanding the significance of performance for your Mixed Reality app.  User experience can be greatly degraded if your application doesn't run at optimal frame rate. Holograms will appear unstable and head tracking of the environment will be inaccurate, leading to a poor experience for the user. Performance must be considered a first class feature for mixed reality development and not a polish task.
 
-We recently released an application called Quality Fundamentals that covers common performance, design, and environment issues and solutions for HoloLens 2 apps. This app is a great visual demo for the content the follows.
-
-> [!div class="nextstepaction"]
-> [Download the Quality Fundamentals app](https://www.microsoft.com/en-us/p/quality-fundamentals/9mwz852q88fw)
-
 The performant framerate values for each target platform are listed below.
 
 | Platform | Target Frame Rate |
 |----------|-------------------|
 | [HoloLens](/hololens/hololens1-hardware) | 60 FPS |
-| [Windows Mixed Reality Ultra PCs](../../discover/immersive-headset-hardware-details.md) | 90 FPS |
-| [Windows Mixed Reality PCs](../../discover/immersive-headset-hardware-details.md) | 60 FPS |
+| [Windows Mixed Reality Ultra PCs](/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details) | 90 FPS |
+| [Windows Mixed Reality PCs](/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details) | 60 FPS |
 
 The framework below outlines best practices for hitting target frame rates. For tips on measuring and improving framerate in the Unity environment, we recommend that you read the [performance recommendations for Unity article](../unity/performance-recommendations-for-unity.md) 
 
@@ -53,7 +48,7 @@ Below are some common tools to help you gather deep profiling information for yo
 - [Unity Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html)
 - [Unreal Insights](../unreal/unreal-insights.md)
 - [PIX](https://devblogs.microsoft.com/pix/)
-- [GPU Pofiling in Unreal](https://docs.unrealengine.com/en-US/TestingAndOptimization/PerformanceAndProfiling/GPU/index.html)
+- [GPU Profiling in Unreal](https://docs.unrealengine.com/en-US/TestingAndOptimization/PerformanceAndProfiling/GPU/index.html)
 
 ### How to profile in any environment
 
@@ -88,9 +83,10 @@ When rendering a frame on the GPU, an application is either bound by memory band
 
 - **Memory bandwidth** is the rate of reads and writes the GPU can do from memory
     - To identify bandwidth limitations, reduce texture quality and check if the framerate has improved.
-    - In Unity, change **Texture Quality** in **Edit** > **Project Settings** > **[Quality Settings](https://docs.unity3d.com/Manual/class-QualitySettings.html)**.
-- **Fill rate** refers to the pixels that can be drawn per second by the GPU.
-    - To identify fill rate limitations, lower the display resolution and check if framerate improved. 
+    - To identify fill rate limitations, lower the display resolution and see if framerate improves.
+
+> [!NOTE]
+> If you're working with Unity, check out our [Unity-specific GPU performance recommendations](../unity/performance-recommendations-for-unity.md#bandwidth-and-fill-rates).
     - In Unity, use the  *[XRSettings.renderViewportScale](https://docs.unity3d.com/ScriptReference/XR.XRSettings-renderViewportScale.html)* property
 
 Memory bandwidth generally involves optimizations to either:

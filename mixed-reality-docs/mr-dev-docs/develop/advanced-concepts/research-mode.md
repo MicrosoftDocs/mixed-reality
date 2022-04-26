@@ -1,8 +1,8 @@
 ---
 title: HoloLens Research Mode
 description: Using Research Mode on HoloLens, an application can access key device sensor streams (depth, environment tracking, and IR-reflectivity).
-author: hferrone
-ms.author: v-vtieto
+author: vtieto
+ms.author: vinnietieto
 ms.date: 07/31/2020
 ms.topic: article
 keywords: Research Mode, cv, rs4, computer vision, research, HoloLens, HoloLens 2
@@ -40,7 +40,7 @@ Additionally, Microsoft doesn't provide assurances that Research Mode or equival
 
 ## Security and performance
 
-Enabling Research Mode uses more battery power than using the HoloLens 2 under normal conditions, even if the application using the Research Mode features isn't running.  Enabling this mode can also lower the overall security of your device because applications may misuse sensor data.  You can find more information on device security in the [HoloLens security FAQ](/hololens/hololens-faq-security).  
+Enabling Research Mode uses more battery power than using the HoloLens 2 under normal conditions, even if the application using the Research Mode features isn't running.  Enabling this mode can also lower the overall security of your device because applications may misuse sensor data.  You can find more information on device security in the [HoloLens security FAQ](/hololens/hololens1-faq-security).  
 
 ## Device support
 <table>

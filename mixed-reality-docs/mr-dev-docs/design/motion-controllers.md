@@ -38,7 +38,7 @@ keywords: 6dof controllers, motion controllers, pairing, mixed reality headset, 
      <td><strong>Feature</strong></td>
      <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-     <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+     <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
 </tr>
 <tr>
      <td>Motion controllers</td>
@@ -198,11 +198,11 @@ Apps that wish to treat positions differently based on tracking state may go fur
 <tr>
 <th> Tracking state </th><th> SourceLossRisk </th><th> PositionAccuracy </th><th> TryGetPosition</th>
 </tr><tr>
-<td> <b>High accuracy</b> </td><td style="background-color: green; color: white"> &lt; 1.0 </td><td style="background-color: green; color: white"> High </td><td style="background-color: green; color: white"> true</td>
+<td> <b>High accuracy</b> </td><td> &lt; 1.0 </td><td> High </td><td> true</td>
 </tr><tr>
-<td> <b>High accuracy (at risk of losing)</b> </td><td style="background-color: orange"> == 1.0 </td><td style="background-color: green; color: white"> High </td><td style="background-color: green; color: white"> true</td>
+<td> <b>High accuracy (at risk of losing)</b> </td><td style="background-color: orange"> == 1.0 </td><td> High </td><td> true</td>
 </tr><tr>
-<td> <b>Approximate accuracy</b> </td><td style="background-color: orange"> == 1.0 </td><td style="background-color: orange"> Approximate </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Approximate accuracy</b> </td><td style="background-color: orange"> == 1.0 </td><td style="background-color: orange"> Approximate </td><td> true</td>
 </tr><tr>
 <td> <b>No position</b> </td><td style="background-color: orange"> == 1.0 </td><td style="background-color: orange"> Approximate </td><td style="background-color: orange"> false</td>
 </tr>

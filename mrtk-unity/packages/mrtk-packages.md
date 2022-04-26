@@ -44,13 +44,13 @@ The available packages are:
 - [Test utilities](#test-utilities-package)
 - [Examples](#examples-package)
 
-These packages are released and supported by Microsoft from source code in the [mrtk_release](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/mrtk_release) branch on GitHub.
+These packages are released and supported by Microsoft from source code on [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases).
 
 ### Foundation package
 
 The Mixed Reality Toolkit Foundation is the set of code that enables your application to leverage common functionality across Mixed Reality Platforms.
 
-<img src="../features/images/input/MRTK_Package_Foundation.png" width="350px" alt="Pakage foundation" style="display:block;">  
+<img src="../features/images/input/MRTK_Package_Foundation.png" width="350px" alt="Pakage foundation">  
 <sup>MRTK Foundation Package</sup>
 
 The MRTK Foundation package contains the following.

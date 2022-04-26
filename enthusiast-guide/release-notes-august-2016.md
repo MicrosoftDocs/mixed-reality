@@ -68,45 +68,46 @@ Contact your local Microsoft account manager to purchase the Microsoft HoloLens 
 
 ### Development Edition vs. Commercial Suite
 
+
 <table>
 <tr>
 <th>Features</th><th>Development Edition</th><th>Commercial Suite</th>
 </tr><tr>
-<td>Device Encryption (Bitlocker)</td><td></td><td style="text-align: center;">✔️</td>
+<td>Device Encryption (Bitlocker)</td><td></td><td>✔️</td>
 </tr><tr>
-<td>Virtual Private Network (VPN)</td><td></td><td style="text-align: center;">✔️</td>
+<td>Virtual Private Network (VPN)</td><td></td><td>✔️</td>
 </tr><tr>
-<td><a href="/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#kiosk-mode">Kiosk mode</a></td><td></td><td style="text-align: center;">✔️</td>
+<td><a href="/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#kiosk-mode">Kiosk mode</a></td><td></td><td>✔️</td>
 </tr><tr>
-<th colspan="3" style="text-align: left;"> Management and deployment</th>
+<th colspan="3"> Management and deployment</th>
 </tr><tr>
-<td>Mobile Device Management (MDM)</td><td style="text-align: center;"></td><td style="text-align: center;">✔️</td>
+<td>Mobile Device Management (MDM)</td><td></td><td>✔️</td>
 </tr><tr>
-<td>Ability to block unenrollment</td><td></td><td style="text-align: center;">✔️</td>
+<td>Ability to block unenrollment</td><td></td><td>✔️</td>
 </tr><tr>
-<td>Cert Based Corporate Wi-Fi Access</td><td></td><td style="text-align: center;">✔️</td>
+<td>Cert Based Corporate Wi-Fi Access</td><td></td><td>✔️</td>
 </tr><tr>
-<td>Microsoft Store (Consumer)</td><td style="text-align: center;">Consumer</td><td style="text-align: center;">Filtering via MDM</td>
+<td>Microsoft Store (Consumer)</td><td>Consumer</td><td>Filtering via MDM</td>
 </tr><tr>
-<td><a href="/microsoft-store/working-with-line-of-business-apps">Business Store Portal</a></td><td></td><td style="text-align: center;">✔️</td>
+<td><a href="/microsoft-store/working-with-line-of-business-apps">Business Store Portal</a></td><td></td><td>✔️</td>
 </tr><tr>
-<th colspan="3" style="text-align: left;"> Security and Identity</th>
+<th colspan="3"> Security and Identity</th>
 </tr><tr>
-<td>Log in with Azure Active Directory (AAD)</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td>Log in with Azure Active Directory (AAD)</td><td>✔️</td><td>✔️</td>
 </tr><tr>
-<td>Log in with Microsoft Account (MSA)</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td>Log in with Microsoft Account (MSA)</td><td>✔️</td><td>✔️</td>
 </tr><tr>
-<td>Next Generation Credentials with PIN unlock</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td>Next Generation Credentials with PIN unlock</td><td>✔️</td><td>✔️</td>
 </tr><tr>
-<td><a href="/windows-hardware/design/device-experiences/oem-secure-boot">Secure boot</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td><a href="/windows-hardware/design/device-experiences/oem-secure-boot">Secure boot</a></td><td>✔️</td><td>✔️</td>
 </tr><tr>
-<th colspan="3" style="text-align: left;"> Servicing and Support</th>
+<th colspan="3"> Servicing and Support</th>
 </tr><tr>
-<td>Automatic system updates as they arrive</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td>Automatic system updates as they arrive</td><td>✔️</td><td>✔️</td>
 </tr><tr>
-<td><a href="/windows/deployment/update/waas-manage-updates-wufb">Windows Update for Business</a></td><td></td><td style="text-align: center;">✔️</td>
+<td><a href="/windows/deployment/update/waas-manage-updates-wufb">Windows Update for Business</a></td><td></td><td>✔️</td>
 </tr><tr>
-<td>Long-term servicing branch</td><td></td><td style="text-align: center;">✔️</td>
+<td>Long-term servicing branch</td><td></td><td>✔️</td>
 </tr>
 </table>
 
