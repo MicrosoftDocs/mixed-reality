@@ -651,4 +651,4 @@ const createScene = async function(engine) {
 
 ## Next steps
 
-For more information on Mixed Reality JavaScript development see [JavaScript development overview](/windows/mixed-reality/develop/javascript/javascript-development-overview).
+For more information on Mixed Reality JavaScript development see [JavaScript development overview](../../javascript-development-overview.md).
