@@ -32,7 +32,7 @@ Mixed reality is a blend of physical and digital worlds, unlocking natural and i
 
 ## Environmental input and perception
 
-In recent decades, the relationship between humans and computers has continued to evolve by means of input methods.  A new discipline has emerged that's known as human-computer interaction or HCI. Human input can now include keyboards, mice, touch, ink, voice, and Kinect skeletal tracking.
+In recent decades, the relationship between humans and computers has continued to evolve by means of input methods. A new discipline has emerged that's known as human-computer interaction or "HCI". Human input can now include keyboards, mice, touch, ink, voice, and [Kinect](https://docs.microsoft.com/en-us/azure/kinect-dk/about-azure-kinect-dk) skeletal tracking.
 
 Advancements in sensors and processing power are creating new computer perceptions of environments based on advanced input methods. This is why API names in Windows that reveal environmental information are called the [perception APIs](/uwp/api/Windows.Perception). Environmental inputs can capture: 
 
