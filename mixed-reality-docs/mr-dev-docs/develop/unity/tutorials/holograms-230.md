@@ -27,9 +27,9 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th> <a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details">Immersive headsets</a></th>
 </tr><tr>
-<td>MR Spatial 230: Spatial mapping</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
+<td>MR Spatial 230: Spatial mapping</td><td> ✔️</td><td> </td>
 </tr>
 </table>
 
@@ -40,7 +40,7 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, 
 * A Windows 10 PC configured with the correct [tools installed](../../../develop/install-the-tools.md).
 * Some basic C# programming ability.
 * You should have completed [MR Basics 101](../../../develop/unity/tutorials/holograms-101.md).
-* A HoloLens device [configured for development](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).
+* A HoloLens device [configured for development](../../../develop/advanced-concepts/using-visual-studio.md#enabling-developer-mode).
 
 ### Project files
 
@@ -141,7 +141,7 @@ Now let's explore how Spatial Mapping can affect performance.
 
 * In Unity, select **Window > Profiler**.
 * Click **Add Profiler > GPU**.
-* Click **Active Profiler > <Enter IP>**.
+* Click **Active Profiler > \<Enter IP\>**.
 * Enter the **IP address** of your HoloLens.
 * Click **Connect**.
 * Observe the number of milliseconds it takes for the GPU to render a frame.

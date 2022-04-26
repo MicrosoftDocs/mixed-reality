@@ -26,7 +26,7 @@ Mixed Reality cloud services like **Azure Remote Rendering** and **Azure Spatial
 
 <br>
 
-> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Intro-to-Azure-Mixed-Reality-Services-Azure-Remote-Rendering/player]
+> [!VIDEO https://docs.microsoft.com/en-us/shows/Mixed-Reality/Intro-to-Azure-Mixed-Reality-Services-Azure-Remote-Rendering/player]
 
 ARR is an essential component of any Mixed Reality application that runs on an untethered device, as they have less computational rendering power. Take the following side-by-side engine model comparison as an example: the high-fidelity model on the left has over 18 million triangles, while the reduced model on the right has only around 200,000. In scenarios where every detail matters—industrial plant management, design review for assets like truck engines, pre-operative surgery planning, and more—3D visualization brings that detail to life. It's what helps designers, engineers, doctors, and students better understand complex information and make the right call. But this simplification can result in a loss of important detail that's needed in key business and design decisions.
 
@@ -106,7 +106,7 @@ The standalone services listed below don't apply to Mixed Reality, but can be he
     <tr>
         <td><strong>Azure Cloud Service</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens 1st Gen</strong></a></td>
-        <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td><a href="unity/tutorials/mr-azure-301.md">Language translation</a></td>
@@ -149,7 +149,7 @@ The standalone services listed below don't apply to Mixed Reality, but can be he
         <td>✔️</td>
     </tr>
     <tr>
-        <td><a href="unity/tutorials/mr-azure-308.md"mr-azure-308.md">Functions and storage</a></td>
+        <td><a href="unity/tutorials/mr-azure-308.md">Functions and storage</a></td>
         <td>✔️</td>
         <td>✔️</td>
     </tr>
@@ -177,5 +177,5 @@ The standalone services listed below don't apply to Mixed Reality, but can be he
 
 ## See also
 
-* Azure Spatial Anchor tutorials for HoloLens 2 - [1 of 3 Getting started with Azure Spatial Anchors](./unity/tutorials/mr-learning-asa-02.md)
-* Azure Speech Services tutorials for HoloLens 2 - [1 of 4 Integrating and using speech recognition and transcription](../develop/unity/tutorials/mrlearning-speechSDK-ch1.md)
+* Azure Spatial Anchor tutorials for HoloLens 2 - [1 of 3 Getting started with Azure Spatial Anchors](/learn/modules/azure-spatial-anchors-tutorials/2-get-started-with-azure-spatial-anchors)
+* Azure Speech Services tutorials for HoloLens 2 - [1 of 4 Integrating and using speech recognition and transcription](/learn/modules/azure-speech-services-tutorials-mrtk/)

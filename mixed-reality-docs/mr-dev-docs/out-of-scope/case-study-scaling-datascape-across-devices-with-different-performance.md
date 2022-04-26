@@ -300,20 +300,20 @@ Design for worst case scenarios, and maybe consider using adaptive rendering for
 
 ## About the authors
 
-<table style="border:0">
+<table>
 <tr>
-<td style="border:0" width="60px"><img alt="Picture of Robert Ferrese" width="60" height="60" src="images/robert-ferrese-60px.jpg"></td>
-<td style="border:0"><b>Robert Ferrese</b><br>Software engineer @Microsoft</td>
+<td width="60px"><img alt="Picture of Robert Ferrese" width="60" height="60" src="images/robert-ferrese-60px.jpg"></td>
+<td><b>Robert Ferrese</b><br>Software engineer @Microsoft</td>
 </tr>
 <tr>
-<td style="border:0" width="60px"><img alt="Picture of Dan Andersson" width="60" height="60" src="images/dan-andersson-60px.jpg"></td>
-<td style="border:0"><b>Dan Andersson</b><br>Software engineer @Microsoft</td>
+<td width="60px"><img alt="Picture of Dan Andersson" width="60" height="60" src="images/dan-andersson-60px.jpg"></td>
+<td><b>Dan Andersson</b><br>Software engineer @Microsoft</td>
 </tr>
 </table>
 
 
 ## See also
-* [Understanding Performance for Mixed Reality](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
+* [Understanding Performance for Mixed Reality](../develop/advanced-concepts/understanding-performance-for-mixed-reality.md)
 * [Performance Recommendations for Unity](../develop/unity/performance-recommendations-for-unity.md)
 
  

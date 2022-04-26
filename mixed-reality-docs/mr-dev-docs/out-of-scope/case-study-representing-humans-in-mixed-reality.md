@@ -13,7 +13,7 @@ keywords: Windows Mixed Reality, humans, avatar, mixed reality capture, volumetr
 
 James Turrell designs with light. Stepping into his work blurs one’s sense of depth and focus. Walls seem both close and infinite, brightness gives way to shadows. Unfamiliar perceptions designed by carefully balancing the light’s color and diffusion. [Turrell describes these sensations](https://www.sculpture.org/documents/scmag02/nov02/turrell/turrell.shtml) as *‘feeling with your eyes’*, a way of extending one’s understanding of reality. Fantastic worlds, like the ones Turrell imagines, are powerful tools to exploit our senses, not unlike the immersive environments of mixed reality today.
 
-![Wide Out - James Turrell (1998)](../develop/platform-capabilities-and-apis/images/wide-out-james-turrell.jpg)
+![Wide Out - James Turrell (1998)](../develop/advanced-concepts/images/wide-out-james-turrell.jpg)
 
 ## How do you represent complex real-world environments in mixed reality?
 
@@ -21,7 +21,7 @@ Representing Turrell’s work in an immersive experience makes for a compelling 
 
 Turrell’s stark, surreal minimalism is the hallmark of his work, but what if we wanted to represent an exhibit with more complex materials in mixed reality?
 
-![Bang - Ai Weiwei (2013)](../develop/platform-capabilities-and-apis/images/bang-ai-weiwie.jpg)
+![Bang - Ai Weiwei (2013)](../develop/advanced-concepts/images/bang-ai-weiwie.jpg)
 
 In 2013, the artist Ai Weiwei unveiled [a tangling work of art](https://www.designboom.com/art/ai-weiwei-bang-installation-at-venice-art-biennale-2013/) featuring 886 antique stools at the Venice Biennale. Each wooden stool came from an era where Chinese craftsmanship was highly valued, where these stools would have been passed down between generations. The stools themselves — the intricacies of the wood, the precision of the pieces, their careful placement — are critical to Ai’s commentary on modern culture.
 
@@ -33,7 +33,7 @@ The alternative to creating something from scratch is capturing the real thing. 
 
 The broad categories range from well-established 2D video to the newest forms of volumetric video. In the case of Ai Weiwei’s exhibit, scanning (often referred to by its fundamental technique, photogrammetry) could be employed during the creation of the exhibit, scanning each of the stools themselves. 360° photo and video capture is another method for virtualizing the experience utilizing a high-quality omni-directional camera positioned throughout the exhibit. With these techniques, one begins to understand the sense of scale, ideally with enough detail to see each piece’s craftsmanship. All this while existing in a digital form that allows for new vistas and perspectives not possible in reality.
 
-![2D to Volumetric Video](../develop/platform-capabilities-and-apis/images/2d-to-volumetric-video.png)
+![2D to Volumetric Video](../develop/advanced-concepts/images/2d-to-volumetric-video.png)
 
 What kind of opportunities emerge when we cannot only create fantastic elements, but utilize the most realistic captures of environments, objects, and people in mixed reality? Exploring the overlap between these methods help illuminate where the medium is headed.
 
@@ -45,13 +45,13 @@ For people, new methods are emerging that combine and extend motion capture and 
 
 Humans are central to storytelling — in the most literal sense: a human speaking, performing, or as the story’s subject. Some of the most immersive and eye-opening moments of today’s early immersive experiences are social. From sharing a mixed reality experience together in your living room, to seeing your friends in unbelievable new environments. The human element makes even the most fantastic reality, a reality.
 
-![Mindshow in VR](../develop/platform-capabilities-and-apis/images/mindshow-in-vr-640px.jpg)
+![Mindshow in VR](../develop/advanced-concepts/images/mindshow-in-vr-640px.jpg)
 
 Avatars in immersive experiences enable a new kind of embodiment in storytelling. The latest apps are rethinking the concept of virtual body ownership and setting up a generational leap in eliminating the distance between people. Companies like [Mindshow](https://mindshow.com/) are developing creative tools that leverage avatars, letting users take on entirely new personas and characters. Others are exploring [methods of artistic expression](https://en.wikipedia.org/wiki/Uncanny_valley), a potentially limitless creative opportunity to explore the nature (and necessity) of human-like attributes. Today, this absence of realism helps avoid the [uncanny valley of human likeness](https://en.wikipedia.org/wiki/Uncanny_valley) along with a host of technical issues for everyday developers. For these reasons (and more) it is very likely that non-realistic avatars will become the default for the foreseeable future. And yet, while realism poses an enormous challenge for mixed reality, *there are key scenarios that require authentic representation of humans in 3D space*.
 
 At Microsoft, a small team borne out of Microsoft Research has spent the past several years developing a method for capturing humans through a form of volumetric video. The process today is similar to video production: rather than applying movement to a sculpted asset it is a full, 3D recording. The performance and the image are captured in real-time — it’s not the work of an artist, it’s an authentic representation. And while the technology is just beginning to expand into commercial applications, the implications of volumetric video are critical to [Microsoft’s vision of More Personal Computing](https://www.youtube.com/watch?v=tcyj-_IEWt8).
 
-![Volumetric video SIGGRAPH 2015](../develop/platform-capabilities-and-apis/images/volumetric-video-siggraph-2015.gif)
+![Volumetric video SIGGRAPH 2015](../develop/advanced-concepts/images/volumetric-video-siggraph-2015.gif)
 
 Authentic human capture unlocks new unique categories of experiences in mixed reality. Seeing someone you recognize, whether it’s a celebrity, a colleague, or a loved one, creates a depth of intimacy never before possible in a digital medium. Their face, their expressions, the nuance in their movements are all part of who they are. What opportunities unlock when we can capture these human qualities in 3D space?
 
@@ -63,7 +63,7 @@ Designing ways to make these videos seem natural poses a challenge but one in wh
 
 [Holoportation](https://www.microsoft.com/research/project/holoportation-3/) is a research effort that builds upon the same fundamental technology, authentically capturing visual and depth information, and rendering the result in real-time. The team is exploring what the power of realistic human representation means for the future of conversations and shared experiences. What happens when a three-dimensional capture of someone, from anywhere in the world, can be added into your environment?
 
-![Future of conversation](../develop/platform-capabilities-and-apis/images/girl-with-dress.jpg)
+![Future of conversation](../develop/advanced-concepts/images/girl-with-dress.jpg)
 
 From layering a new level of immersion onto everyday apps like Skype, to radically reshaping the concept of digital meetings and business travel — volumetric video opens unique scenarios: A specialist virtually training doctors on a far-away continent or digital friends sitting on the couches and chairs in your living room. Adding authentic human representations to mixed reality experiences will radically reshape the concept of digital meetings and business travel.
 
@@ -71,9 +71,9 @@ Just as the abstract art of James Turrell and the critical realism of Ai Weiwei 
 
 ## About the author
 
-<table style="border-collapse:collapse" padding-left="0px">
+<table>
 <tr>
-<td style="border-style: none" width="60"><img alt="Picture of Mark Vitazko" width="60" height="60" src="images/mark-vitazko.jpg"></td>
-<td style="border-style: none"><b>Mark Vitazko</b><br>UX Designer @Microsoft</td>
+<td width="60"><img alt="Picture of Mark Vitazko" width="60" height="60" src="images/mark-vitazko.jpg"></td>
+<td><b>Mark Vitazko</b><br>UX Designer @Microsoft</td>
 </tr>
 </table>

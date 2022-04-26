@@ -1,8 +1,8 @@
 ---
 title: Deploy to device in Unreal
 description: Learn everything you need to know about deploying your mixed reality Unreal apps to HoloLens 2 using the editor or device portal.
-author: sw5813
-ms.author: suwu
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, deploy to device, PC, documentation, mixed reality headset, windows mixed reality headset, virtual reality headset
@@ -16,7 +16,7 @@ There are two ways to deploy an Unreal application to HoloLens 2:
 * Directly from the Unreal editor
 * As a package uploaded via the device portal
 
-Both options require you to set up your HoloLens to use the [device portal](../platform-capabilities-and-apis/using-the-windows-device-portal.md) for development.
+Both options require you to set up your HoloLens to use the [device portal](../advanced-concepts/using-the-windows-device-portal.md) for development.
 
 ## Deploying to device from the Unreal editor
 

@@ -2,8 +2,8 @@
 title: What is mixed reality?
 description: Discussion on mixed reality, demonstrating the use of AR and VR devices on the mixed reality spectrum.
 author: qianw211    
-ms.author: v-qianwen
-ms.date: 07/01/2021
+ms.author: qianwen
+ms.date: 12/05/2021
 ms.topic: article
 keywords: mixed reality, holographic, AR, VR, MR, XR, augmented reality, virtual reality, explanation, case study, mixed reality headset, windows mixed reality headset, virtual reality headset, what is virtual reality, what is augmented reality
 ms.localizationpriority: high
@@ -32,7 +32,7 @@ Mixed reality is a blend of physical and digital worlds, unlocking natural and i
 
 ## Environmental input and perception
 
-In the past decades, the relationship between humans and computers has continued to evolve by means of input methods.  A new discipline has emerged that's known as human-computer interaction or HCI. Human input can now include keyboards, mice, touch, ink, voice, and Kinect skeletal tracking.
+In recent decades, the relationship between humans and computers has continued to evolve by means of input methods.  A new discipline has emerged that's known as human-computer interaction or HCI. Human input can now include keyboards, mice, touch, ink, voice, and Kinect skeletal tracking.
 
 Advancements in sensors and processing power are creating new computer perceptions of environments based on advanced input methods. This is why API names in Windows that reveal environmental information are called the [perception APIs](/uwp/api/Windows.Perception). Environmental inputs can capture: 
 
@@ -77,9 +77,10 @@ Most mobile phones on the market today have little to no environmental perceptio
 
 The experiences that overlay graphics, video streams, or holograms in the physical world are called augmented reality. The experiences that occlude your view to present a fully immersive digital experience are virtual reality. The experiences that can transition between augmented and virtual realities form mixed reality, where you can:
 
-* Place a digital object, such as a hologram, in the physical world, as if it were physically present.
+* Place a digital object, such as a hologram, in the physical world as if it were physically present.
 * Be personally and digitally present in the physical world, in the form of an avatar, to asynchronously collaborate with others at different points in time.
-* In virtual reality, physical boundaries like walls and furniture appear digitally within the experience for users to avoid running into physical obstacles.
+
+When a user is in virtual reality, the physical obstacles in their immediate surroundings, such as walls and furniture, are represented digitally within the experience so that the user can avoid colliding with those physical obstacles.
 
 <br>
 
@@ -93,7 +94,7 @@ Most augmented reality and virtual reality experiences available today represent
 ## Devices and experiences
 
 There are two main types of devices that deliver Windows Mixed Reality experiences:
-1. **Holographic devices** are characterized by the device's ability to place digital content in the real world as if it were there.
+1. **Holographic devices** are characterized by the device's ability to display digital objects as if they existed in the real world.
 2. **Immersive VR devices** are characterized by the device's ability to create a sense of presence by blocking out the physical world and replacing it with a fully immersive digital experience.
 
 <table>
@@ -118,7 +119,7 @@ Mixed reality experiences are the result of technological advancements. There ar
 ![Device types in the mixed reality spectrum](images/Final_WhatIsMixedReality07.png)<br>
 *Image: Where devices exist on the mixed reality spectrum*
 
-As an application or game developer, what type of experiences do you want to create? The experiences will typically target a specific point or part on the spectrum. You will need to consider the capabilities of devices to target. Experiences that rely on the physical world will run best on HoloLens.
+As an application or game developer, what type of experiences do you want to create? The experiences will typically target a specific point or part on the spectrum. You'll need to consider the capabilities of devices you wish to target. Experiences that rely on the physical world will run best on HoloLens.
 
 * **Towards the left (near physical reality).** Users remain present in their physical reality, and aren't made to believe they have left that reality.
 * **In the middle (fully mixed reality).** These experiences blend the real world and the digital world. For example, in the movie [Jumanji](https://en.wikipedia.org/wiki/Jumanji), the physical structure of the house where the story took place was blended with a jungle environment.

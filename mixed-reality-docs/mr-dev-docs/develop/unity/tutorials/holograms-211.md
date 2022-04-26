@@ -33,9 +33,9 @@ In this course, we'll revisit the Unity project **Model Explorer**, which we bui
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th> <a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details">Immersive headsets</a></th>
 </tr><tr>
-<td>MR Input 211: Gesture</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+<td>MR Input 211: Gesture</td><td> ✔️</td><td> ✔️</td>
 </tr>
 </table>
 
@@ -47,7 +47,7 @@ In this course, we'll revisit the Unity project **Model Explorer**, which we bui
 * Some basic C# programming ability.
 * You should have completed [MR Basics 101](../../../develop/unity/tutorials/holograms-101.md).
 * You should have completed [MR Input 210](holograms-210.md).
-* A HoloLens device [configured for development](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).
+* A HoloLens device [configured for development](../../../develop/advanced-concepts/using-visual-studio.md#enabling-developer-mode).
 
 ### Project files
 
@@ -94,7 +94,7 @@ If deploying to HoloLens:
 1. Using the top toolbar in Visual Studio, change the target from Debug to **Release** and from ARM to **x86**.
 2. Click on the drop down arrow next to the Local Machine button, and select **Remote Machine**.
 3. Enter **your HoloLens device IP address** and set Authentication Mode to **Universal (Unencrypted Protocol)**. Click **Select**. If you do not know your device IP address, look in **Settings > Network & Internet > Advanced Options**.
-4. In the top menu bar, click **Debug -> Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
+4. In the top menu bar, click **Debug -> Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](../../../develop/advanced-concepts/using-visual-studio.md#pairing-your-device).
 5. When the app has deployed, dismiss the **Fitbox** with a **select gesture**.
 
 If deploying to an immersive headset:

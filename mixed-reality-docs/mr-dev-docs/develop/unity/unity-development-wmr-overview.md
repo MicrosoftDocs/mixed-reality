@@ -1,9 +1,9 @@
 ---
 title: Unity development for VR
 description: Getting started building mixed reality apps in Unity for VR and Windows Mixed Reality immersive headsets.
-author: hferrone
-ms.author: kurtie
-ms.date: 12/11/2020
+author: qianw211
+ms.author: qianwen
+ms.date: 1/10/2022
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, mixed reality, development, getting started, new project, porting, capability, camera, simulation, emulation, documentation, mixed reality headset, windows mixed reality headset, virtual reality headset, what is virtual reality, what is augmented reality, MRTK, mixed reality toolkit, voice input, locatable camera, emulator, Azure, tutorials
@@ -41,7 +41,8 @@ After starting a new immersive project, you'll need some basic building blocks t
 |  Feature  |  Capabilities  |
 | --- | --- |
 | [Camera](../unity/camera-in-unity.md) | Fully optimize visual quality and hologram stability in your Mixed Reality apps |
-| [World locking and spatial anchors](spatial-anchors-in-unity.md) | Solve stabilization issues, camera adjustment, and integrate a stable coordinate system solution || [Motion controllers](../unity/motion-controllers-in-unity.md) | Add spatial actions to your Mixed Reality apps |
+| [World locking and spatial anchors](spatial-anchors-in-unity.md) | Solve stabilization issues, camera adjustment, and integrate a stable coordinate system solution |
+| [Motion controllers](../unity/motion-controllers-in-unity.md) | Add spatial actions to your Mixed Reality apps |
 | [Gestures](../unity/gestures-in-unity.md) | Use hand gestures as input in your Mixed Reality experiences |
 | [Spatial sound](../unity/spatial-sound-in-unity.md) | Enhance your apps with immersive 3D audio |
 | [Text](../unity/text-in-unity.md) | Get sharp, high-quality text that has a manageable size and quality rendering |
@@ -60,8 +61,8 @@ Other key features that play a role in immersive applications are available thro
 
 Once you've got your holographic Unity project ready for testing, your next step is to export and build a Unity Visual Studio solution. With that VS solution in hand, you can run your application on real or simulated devices. By the end of this section, you'll be able to deploy your application on a device or emulator that fits your development needs.
 
-* [Windows Mixed Reality immersive headset](../platform-capabilities-and-apis/using-visual-studio.md)
-* [Windows Mixed Reality immersive headset simulator](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
+* [Windows Mixed Reality immersive headset](../advanced-concepts/using-visual-studio.md)
+* [Windows Mixed Reality immersive headset simulator](../advanced-concepts/using-the-windows-mixed-reality-simulator.md)
 
 ## What's next?
 
@@ -80,10 +81,3 @@ Before going out into the world of mixed reality on your own, we recommend takin
 
 * [VR enthusiast guide](/windows/mixed-reality/enthusiast-guide/vr-journey)
 * [Unity Asset Store](https://assetstore.unity.com)
-
-## See also 
-
-* [Recommended settings for Unity](recommended-settings-for-unity.md)
-* [Performance recommendations for Unity](performance-recommendations-for-unity.md)
-* [Exporting and building a Unity Visual Studio solution](exporting-and-building-a-unity-visual-studio-solution.md)
-* [Best practices for working with Unity and Visual Studio](best-practices-for-working-with-unity-and-visual-studio.md)

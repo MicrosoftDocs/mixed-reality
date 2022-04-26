@@ -1,9 +1,9 @@
 ---
 title: Choosing your engine
 description: Get introduced to the engine choices available for Mixed Reality development for HoloLens and VR. 
-author: hferrone
-ms.author: v-hferrone
-ms.date: 04/22/2021
+author: qianw211
+ms.author: qianwen
+ms.date: 11/10/2021
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality headset, windows mixed reality headset, virtual reality headset, unity
 ---
@@ -19,16 +19,14 @@ There are several development paths you can take through our documentation. The 
 
 * **Unity** is one of the leading real-time development platforms on the market, with underlying runtime code written in C++ and all development scripting is done in C#. Whether you're looking to build games, movies and animation cinematics, or even render architectural or engineering concepts in a virtual world, Unity has the infrastructure to support you.
 
+    >[!Note]
+    >Please avoid Unity 2020.3.21f, 2020.3.22f, and 2020.3.23f, which cause flashing and strobing effect on HoloLens 2. For more information, see [here](https://forum.unity.com/threads/flickering-issue-affecting-hololens-2-projects-in-2020-3-21-and-later.1200199/). 
+
 * **Unreal Engine 4** is a powerful, open source creation engine with full support for mixed reality in both C++ and Blueprints. As of Unreal Engine 4.25, HoloLens support is full-featured and production-ready. With capabilities such as the flexible Blueprints Visual Scripting system, designers can virtually use the full range of concepts and tools generally only available to programmers. Creators across industries can leverage the freedom and control to deliver cutting-edge content, interactive experiences, and immersive virtual worlds.
 
 * **Native** developers with experience writing their own 3D renderers can build a custom engine using OpenXR. OpenXR is an open royalty-free API standard from Khronos that provides engines native access to a wide range of devices from vendors across the mixed reality spectrum. You can develop using OpenXR on a HoloLens 2 or Windows Mixed Reality immersive headset on the desktop.
 
 * **Web** developers creating compelling cross-browser AR/VR web experiences can use **WebXR**.
-
-    > [!NOTE]
-    > **Babylon.js** for HoloLens development is currently in progress. Check out the [latest news and engage with the community](https://doc.babylonjs.com/divingDeeper/webXR/introToWebXR)!
-
-<!-- Babylon is a Javascript-based, open source, 3D graphics engine capable of powering 3D scenes in a web browser. Babylon.js 4.2+ includes support for WebXR. With Babylon React Native, you can even build cross-platform native     applications for PC, mobile, and mixed reality devices. -->
 
 ## Features and devices
 
@@ -59,7 +57,7 @@ There are several development paths you can take through our documentation. The 
 |---|---|---|---|---|
 | HoloLens 2 | ✔️ | ✔️ | ✔️ | ✔️ |
 | HoloLens (1st gen) | ✔️ | ✔️ | ❌ | WinRT (Legacy) only |
-| [Windows Mixed Reality headsets](../discover/immersive-headset-hardware-details.md) | ✔️ | ✔️ | ✔️ | ✔️ |
+| [Windows Mixed Reality headsets](/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details) | ✔️ | ✔️ | ✔️ | ✔️ |
 | SteamVR headsets | ✔️ | ✔️ | ✔️ | ✔️ |
 | Oculus Quest/Rift | ✔️ | ✔️ | ✔️ | ✔️ |
 | Mobile (ARCore/ARKit) | ✔️ | ✔️ | ✔️ | ❌ |

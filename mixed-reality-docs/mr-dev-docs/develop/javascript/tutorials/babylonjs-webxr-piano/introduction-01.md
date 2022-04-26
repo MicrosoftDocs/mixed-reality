@@ -1,13 +1,15 @@
 ---
 title: Building a piano in WebXR using BabylonJS
 description: Complete this tutorial series to learn how to build a functioning 88-key piano keyboard in WebXR using BabylonJS
-author: JING1201
-ms.author: v-vtieto
+author: vtieto
+ms.author: ayyonet
 ms.prod: mixed-reality
 ms.topic: tutorial
 ms.date: 09/10/2021
 keywords: mixed reality, javascript, tutorial, BabylonJS, hololens, mixed reality, UWP, Windows 10, WebXR, immersive web
 ms.localizationpriority: high
+ms.custom: team=cloud_advocates
+ms.contributors: ayyonet-12302021
 ---
 
 
@@ -15,7 +17,7 @@ ms.localizationpriority: high
 
 Building a piano in the real world requires much in the way of time, skills, and materials. What about building one for the VR/AR world?
 
-In this tutorial series, you'll learn how to use Babylon.js to create a Mixed Reality web app that contains a functioning 88-key standup piano in the virtual world. In the completed app, you'll be able to teleport to the piano and play the keys using your Mixed Reality controllers.
+In this tutorial series, you'll learn how to use Babylon.js to create a Mixed Reality web app that contains a functioning 88-key standup piano in the virtual world. In the completed app, you'll be able to teleport to the piano and play the keys using your mixed reality controllers.
 
 In this tutorial series, you'll learn how to:
 
@@ -32,7 +34,7 @@ In this tutorial series, you'll learn how to:
 * [WebXR Javascript Hello World Tutorial](../babylonjs-webxr-helloworld/introduction-01.md)
 * WebXR-supported browser, for example [Microsoft Edge](../../../../whats-new/new-microsoft-edge.md)
 * [Babylon.js](https://doc.babylonjs.com/divingDeeper/developWithBjs/frameworkVers) 4.2 or higher
-* Any [VR headset](../../../../discover/immersive-headset-hardware-details.md) or [Windows Mixed Reality simulator](../../../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
+* Any [VR headset](/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details) or [Windows Mixed Reality simulator](../../../advanced-concepts/using-the-windows-mixed-reality-simulator.md)
 * Optional: [Windows 10 Creator Update](https://www.microsoft.com/software-download/windows10) if you want to use a Windows Mixed Reality Simulator
 
 ## Getting started
@@ -124,7 +126,7 @@ Let's begin by setting up the HTML web page that will contain the Babylon.js sce
     const xrHelper = await scene.createDefaultXRExperienceAsync();
     ```
 
-    In javascript, in order to use the `await` keyboard on an `async` function within a function, the parent function would also have to be `async`, which is why we defined `createScene` function as async earlier. Later in this tutorial series, we will be using this `xrHelper` to enable and configure different WebXR features supported by Babylon.js.
+    In javascript, in order to use the `await` keyword on an `async` function within a function, the parent function would also have to be `async`, which is why we defined `createScene` function as async earlier. Later in this tutorial series, we will be using this `xrHelper` to enable and configure different WebXR features supported by Babylon.js.
 
 1. The completed *scene.js* should look like this:
 

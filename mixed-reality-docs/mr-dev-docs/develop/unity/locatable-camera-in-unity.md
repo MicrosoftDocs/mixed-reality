@@ -1,8 +1,8 @@
 ---
 title: Photo Video camera in Unity
 description: Learn how to capture a photo to a file or to a Texture2D, how to capture a photo and interact with the raw bytes, and how to capture a video.
-author: keveleigh
-ms.author: v-hferrone
+author: vtieto
+ms.author: vinnietieto
 ms.date: 03/21/2021
 ms.topic: article
 keywords: photo, video, hololens, camera, unity, locatable, PVC, photo video camera, mixed reality headset, windows mixed reality headset, virtual reality headset, webcam, photo capture, video capture
@@ -12,7 +12,7 @@ keywords: photo, video, hololens, camera, unity, locatable, PVC, photo video cam
 
 ## Enabling the capability for camera access
 
-The "WebCam" capability must be declared for an app to use the [camera](../platform-capabilities-and-apis/locatable-camera.md).
+The "WebCam" capability must be declared for an app to use the [camera](../advanced-concepts/locatable-camera-overview.md).
 
 1. In the Unity Editor, go to the player settings by navigating to the "Edit > Project Settings > Player" page
 2. Select the "Windows Store" tab
@@ -184,7 +184,7 @@ if (photoCaptureFrame.hasLocationData)
 
 To interact with the raw bytes of an in memory frame, follow the same setup steps as above and *OnPhotoModeStarted* as in capturing a photo to a Texture2D. The difference is in *OnCapturedPhotoToMemory* where you can get the raw bytes and interact with them.
 
-In this example, you'll create a *List<Color>* to be further processed or applied to a texture via *SetPixels()*
+In this example, you'll create a *List* to be further processed or applied to a texture via *SetPixels()*
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
@@ -337,10 +337,15 @@ If you're following the Unity development checkpoint journey we've laid out, you
 Or jump directly to deploying your app on a device or emulator:
 
 > [!div class="nextstepaction"]
-> [Deploy to HoloLens or Windows Mixed Reality immersive headsets](../platform-capabilities-and-apis/using-visual-studio.md)
+> [Deploy to HoloLens or Windows Mixed Reality immersive headsets](../advanced-concepts/using-visual-studio.md)
 
 You can always go back to the [Unity development checkpoints](unity-development-overview.md#3-advanced-features) at any time.
 
-## See Also
-
-* [Locatable camera](../platform-capabilities-and-apis/locatable-camera.md)
+## See also
+* [Locatable camera sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)
+* [Locatable camera overview](../advanced-concepts/locatable-camera-overview.md)
+* [Locatable camera with C++ samples](../native/locatable-camera-cpp.md)
+* [Mixed reality capture](/hololens/holographic-photos-and-videos)
+* [Mixed reality capture for developers](../advanced-concepts/mixed-reality-capture-overview.md)
+* [Media capture introduction](/windows/uwp/audio-video-camera/)
+* [Holographic face tracking sample](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)

@@ -33,7 +33,7 @@ Eye-gaze is ideal for quick gaze-and-commit actions especially when combined wit
 
 If you'd like to see Head and Eye Tracking design concepts in action, check out our **Designing Holograms - Head Tracking and Eye Tracking** video demo below. When you've finished, continue on for a more detailed dive into specific topics.
 
-> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+> [!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
 
 *This video was taken from the "Designing Holograms" HoloLens 2 app. Download and enjoy the full experience [here](https://aka.ms/dhapp).*
    
@@ -66,8 +66,8 @@ Either make your users aware they may need to keep looking at a target until the
 
 ## See also
 
-* [Eye-based interaction] (eye-gaze-interaction.md)
-* [Eye tracking on HoloLens 2] (eye-tracking.md)
+* [Eye-based interaction](eye-gaze-interaction.md)
+* [Eye tracking on HoloLens 2](eye-tracking.md)
 * [Gaze and commit](gaze-and-commit.md)
 * [Gaze and dwell](gaze-and-dwell.md)
 * [Hands - Direct manipulation](direct-manipulation.md)

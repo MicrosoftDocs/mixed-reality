@@ -27,9 +27,9 @@ The tutorial will take approximately 1 hour to complete.
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th> <a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details">Immersive headsets</a></th>
 </tr><tr>
-<td>MR Basics 101: Complete project with device</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
+<td>MR Basics 101: Complete project with device</td><td> ✔️</td><td> </td>
 </tr>
 </table>
 
@@ -38,7 +38,7 @@ The tutorial will take approximately 1 hour to complete.
 ### Prerequisites
 
 * A Windows 10 PC configured with the correct [tools installed](../../install-the-tools.md).
-* A HoloLens device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).
+* A HoloLens device [configured for development](../../advanced-concepts/using-visual-studio.md#enabling-developer-mode).
 
 ### Project files
 
@@ -117,7 +117,7 @@ In this chapter, we'll setup our first Unity project and step through the build 
   * Leave the **Authentication Mode** set to **Universal**.
   * Click **Select**
 
-* Click **Debug > Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](../../platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).
+* Click **Debug > Start Without debugging** or press **Ctrl + F5**. If this is the first time deploying to your device, you will need to [pair it with Visual Studio](../../advanced-concepts/using-visual-studio.md#pairing-your-device).
 
 * The Origami project will now build, deploy to your HoloLens, and then run.
 * Put on your HoloLens and look around to see your new holograms.

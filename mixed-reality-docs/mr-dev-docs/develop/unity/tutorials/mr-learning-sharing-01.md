@@ -2,10 +2,10 @@
 title: Introduction to the Multi-user capabilities tutorials 
 description: Complete this course to learn how to implement shared multi-user experiences in a HoloLens 2 application.
 author: jessemcculloch
-ms.author: jemccull
-ms.date: 02/05/2021
+ms.author: vinnietieto
+ms.date: 03/22/2022
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens, multi-user capabilities, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
+keywords: mixed reality, unity, tutorial, hololens, multi-user capabilities, Photon, MRTK, mixed reality toolkit, UWP
 ms.localizationpriority: high
 ---
 
@@ -18,24 +18,20 @@ Tutorials in this series:
 * [Setting up Photon Unity Networking](mr-learning-sharing-02.md)
 * [Connecting multiple users](mr-learning-sharing-03.md)
 * [Sharing object movements with multiple users](mr-learning-sharing-04.md)
-* [Integrating Azure Spatial Anchors into a shared experience](mr-learning-sharing-05.md)
 
 ## Objectives
 
 * Learn how to create a PUN app and connect your Unity project to it
 * Learn how to connect multiple users in a shared experience
 * Learn how to share the object movements with other users
-* Learn how to achieve spatial alignment between multiple devices
 
 ## Prerequisites
 
 * A Windows 10 computer configured with the correct [tools installed](../../install-the-tools.md)
 * Windows 10 SDK 10.0.18362.0 or later
-* A HoloLens 2 device [configured for development](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
+* A HoloLens 2 device [configured for development](../../advanced-concepts/using-visual-studio.md#enabling-developer-mode)
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> with Unity 2020 LTS installed and the Universal Windows Platform Build Support module added
-* Completed the [Create a Spatial Anchors resource](/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource) section of the [Quickstart: Create a Unity HoloLens app that uses Azure Spatial Anchors](/azure/spatial-anchors/quickstarts/get-started-unity-hololens) tutorial
-* Completed the [Getting started tutorials](mr-learning-base-01.md) series or some basic prior experience with Unity and MRTK
-* Completed the [Azure Spatial Anchors tutorials](mr-learning-asa-01.md) series or prior experience creating an Azure Spatial Anchors Account
+* Completed the [Getting started tutorials](/learn/paths/beginner-hololens-2-tutorials/) series or some basic prior experience with Unity and MRTK
 * If you intend to deploy to Android as well as HoloLens
   * A <a href="https://developer.android.com/studio/debug/dev-options" target="_blank">developer enabled</a> and <a href="https://developers.google.com/ar/discover/supported-devices" target="_blank">ARCore capable</a>
  Android device with USB connection to your Windows or macOS computer

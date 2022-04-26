@@ -2,8 +2,8 @@
 title: Case study overview
 description: Stories, learnings, and experiences the Mixed Reality team has found and jotted down along the way.
 author: grbury 
-ms.author: grbury
-ms.date: 08/24/2019
+ms.author: vinnietieto
+ms.date: 12/30/2021
 ms.topic: overview
 keywords: Windows Mixed Reality, HoloLens, case study, vision, scenarios, case studies, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
@@ -35,12 +35,6 @@ Stories, learnings, and experiences the Mixed Reality team has found and jotted 
 
 :::row:::
     :::column:::
-       [![Using the stabilization plane to reduce holographic turbulence](images/holotour-stabilization-plane-500px.jpg)](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)
-        **[Using the stabilization plane to reduce holographic turbulence](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)**<br>
-        Working with holograms can be tricky. The fact that you can move around your space and see your holograms from all different angles provides a level of immersion that you can’t get with a normal computer screen.<br>
-        *April 2017*
-    :::column-end:::
-    :::column:::
        [![Expanding the spatial mapping capabilities of HoloLens](images/away-from-camera-position-500px.png)](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)
         **[Expanding the spatial mapping capabilities of HoloLens](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)**<br>
         When creating our first apps for Microsoft HoloLens, we were eager to see just how far we could push the boundaries of spatial mapping on the device.<br>
@@ -68,6 +62,10 @@ Stories, learnings, and experiences the Mixed Reality team has found and jotted 
         *July 2016*
     :::column-end:::
     :::column:::
+        [![How it works - Mixed Reality Capture Studios](images/mr-capture-studio-hero.png)](../develop/advanced-concepts/how-it-works-mixed-reality-capture-studios.md)
+        **[How it works - Mixed Reality Capture Studios](../develop/advanced-concepts/how-it-works-mixed-reality-capture-studios.md)**<br>
+        Microsoft Mixed Reality Capture Studios enables content creators to create 360-degree holograms from real life subjects that can be used in applications across augmented reality, virtual reality, and 2D screens.<br>
+        *July 2016*    
     :::column-end:::
 :::row-end:::
 

@@ -38,9 +38,9 @@ In your application, it is up to you as to how you will integrate the results wi
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th> <a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details">Immersive headsets</a></th>
 </tr><tr>
-<td> MR and Azure 306: Streaming video</td><td style="text-align: center;"> </td><td style="text-align: center;"> ✔️</td>
+<td> MR and Azure 306: Streaming video</td><td> </td><td> ✔️</td>
 </tr>
 </table>
 
@@ -56,7 +56,7 @@ We recommend the following hardware and software for this course:
 - [The latest Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017.4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- A [Windows Mixed Reality immersive (VR) headset](../../../discover/immersive-headset-hardware-details.md)
+- A [Windows Mixed Reality immersive (VR) headset](/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details)
 - Internet access for Azure setup and data retrieval
 - Two 360-degree videos in mp4 format (you can find some royalty-free videos [at this download page](https://www.mettle.com/360vr-master-series-free-360-downloads-page))
 

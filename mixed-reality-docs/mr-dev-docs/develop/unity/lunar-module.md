@@ -97,10 +97,10 @@ You can find scripts and prefabs for the Lunar Module sample app on the [Mixed R
 
 ## About the author
 
-<table style="border-collapse:collapse" padding-left="0px">
+<table>
 <tr>
-<td style="border-style: none" width="60"><img alt="Picture of Addison Linville" width="60" height="60" src="images/addisonlinville-tile-60px.jpg"></td>
-<td style="border-style: none"><b>Addison Linville</b><br>UX Designer @Microsoft</td>
+<td width="60"><img alt="Picture of Addison Linville" width="60" height="60" src="images/addisonlinville-tile-60px.jpg"></td>
+<td><b>Addison Linville</b><br>UX Designer @Microsoft</td>
 </tr>
 </table>
 

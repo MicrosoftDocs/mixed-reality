@@ -79,7 +79,7 @@ Once the project has been configured, a connection can be established to the Hol
 
 1. In **File > Build Settings**, ensure that the project build type is set to **Universal Windows Platform**
 1. On the HoloLens, launch the **Holographic Remoting** application.
-1. In Unity, select **Window > XR > Holographic Emulation (if using legacy XR) / Windows XR Plugin Remoting (if using XR SDK)**.
+1. In Unity, select **Mixed Reality > Remoting > Holographic Remoting for Play Mode**.
 
     ![Start Holographic Emulation](../images/tools/remoting/StartHolographicEmulation.png)
 

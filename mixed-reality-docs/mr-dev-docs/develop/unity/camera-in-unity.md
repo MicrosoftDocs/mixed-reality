@@ -10,13 +10,13 @@ keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, holograph
 
 # Camera setup in Unity
 
-When you wear a mixed reality headset, it becomes the center of your holographic world. The Unity [Camera](https://docs.unity3d.com/Manual/class-Camera.html) component will automatically handle stereoscopic rendering and follow your head movement and rotation. However, to fully optimize visual quality and [hologram stability](../platform-capabilities-and-apis/hologram-stability.md), you should set the camera settings described below.
+When you wear a mixed reality headset, it becomes the center of your holographic world. The Unity [Camera](https://docs.unity3d.com/Manual/class-Camera.html) component will automatically handle stereoscopic rendering and follow your head movement and rotation. However, to fully optimize visual quality and [hologram stability](../advanced-concepts/hologram-stability.md), you should set the camera settings described below.
 
 ## HoloLens vs VR immersive headsets
 
 The default settings on the Unity Camera component are for traditional 3D applications, which need a skybox-like background as they don't have a real world.
 
-* When running on an **[immersive headset](../../discover/immersive-headset-hardware-details.md)**, you're rendering everything the user sees, and so you'll likely want to keep the skybox.
+* When running on an **[immersive headset](/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details)**, you're rendering everything the user sees, and so you'll likely want to keep the skybox.
 * However, when running on a **holographic headset** like [HoloLens](/hololens/hololens2-hardware), the real world should appear behind everything the camera renders. Set the camera background to be transparent (in HoloLens, black renders as transparent) instead of a Skybox texture:
     1. Select the Main Camera in the Hierarchy panel
     2. In the Inspector panel, find the Camera component and change the Clear Flags dropdown from Skybox to Solid Color
@@ -50,7 +50,7 @@ Your first step in building a mixed reality experience in Unity is to determine 
 #### Room-scale or standing experiences
 
 > [!NOTE]
-> If you're building for HL2, we recommend creating an eye-level experience, or consider using [Scene Understanding](../platform-capabilities-and-apis/scene-understanding-sdk.md) to reason about the floor of your scene.
+> If you're building for HL2, we recommend creating an eye-level experience, or consider using [Scene Understanding](scene-understanding-sdk.md) to reason about the floor of your scene.
 
 [!INCLUDE[](includes/camera/vr-setup-standing-include.md)]
 
@@ -77,10 +77,10 @@ Sharing your app's depth buffer to Windows each frame will give your app one of 
 
 ## Using clipping planes
 
-Rendering content too close to the user can be uncomfortable in mixed reality. You can adjust the [near and far clip planes](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances) on the Camera component.
+Rendering content too close to the user can be uncomfortable in mixed reality. You can adjust the [near and far clip planes](../advanced-concepts/hologram-stability.md#hologram-render-distances) on the Camera component.
 
 1. Select the **Main Camera** in the **Hierarchy** panel
-2. In the **Inspector** panel, find the **Camera** component **Clipping Planes** and change the **Near** textbox from **0.3** to **0.85**. Content rendered even closer can lead to user discomfort and should be avoided per the [render distance guidelines](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances).
+2. In the **Inspector** panel, find the **Camera** component **Clipping Planes** and change the **Near** textbox from **0.3** to **0.85**. Content rendered even closer can lead to user discomfort and should be avoided per the [render distance guidelines](../advanced-concepts/hologram-stability.md#hologram-render-distances).
 
 ## Recentering the camera
 
@@ -119,7 +119,7 @@ You can always go back to the [Unity development checkpoints](unity-development-
 
 ## See also
 
-* [Hologram stability](../platform-capabilities-and-apis/hologram-stability.md)
+* [Hologram stability](../advanced-concepts/hologram-stability.md)
 * [Experience scales](../../design/coordinate-systems.md#mixed-reality-experience-scales)
 * [Spatial stage](../../design/coordinate-systems.md#stage-frame-of-reference)
 * [Tracking loss in Unity](tracking-loss-in-unity.md)

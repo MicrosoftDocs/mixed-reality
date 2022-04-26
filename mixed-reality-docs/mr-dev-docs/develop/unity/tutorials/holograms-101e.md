@@ -23,9 +23,9 @@ This tutorial will walk you through a complete project, built in Unity, that dem
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th> <a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details">Immersive headsets</a></th>
 </tr><tr>
-<td>MR Basics 101E: Complete project with emulator</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
+<td>MR Basics 101E: Complete project with emulator</td><td> ✔️</td><td> </td>
 </tr>
 </table>
 
@@ -111,7 +111,7 @@ In this chapter, we'll setup our first Unity project and step through the build 
 * Using the top toolbar in Visual Studio, change the target from Debug to **Release** and from ARM to **X86**.
   * Click on the arrow next to the Device button, and select **HoloLens Emulator**.
   * Click **Debug -> Start Without debugging** or press **Ctrl + F5**.
-  * After some time the emulator will start with the Origami project. When first launching the [emulator](../../platform-capabilities-and-apis/using-the-hololens-emulator.md), it can take as long as 15 minutes for the emulator to start up. Once it starts, do not close it.
+  * After some time the emulator will start with the Origami project. When first launching the [emulator](../../advanced-concepts/using-the-hololens-emulator.md), it can take as long as 15 minutes for the emulator to start up. Once it starts, do not close it.
 
 ## Chapter 2 - Gaze
 

@@ -1,8 +1,8 @@
 ---
 title: Mixed Reality Spatial Data Packager Documentation
 description: The Mixed Reality Spatial Data Packager tool is now deprecated and no longer functions on any platform. The Map Manager tool is recommended instead. 
-author: hferrone 
-ms.author: v-hferrone
+author: vtieto 
+ms.author: vinnietieto
 ms.date: 08/03/2020
 ms.topic: article
 keywords: lbe, MixedRealitySpatialDataPackager.exe, MixedRealitySpatialDataPackager
@@ -12,7 +12,7 @@ keywords: lbe, MixedRealitySpatialDataPackager.exe, MixedRealitySpatialDataPacka
 >[!NOTE]
 > DEPRECATED 
 > 
-> As of 8/1/2020 this tool is now deprecated and no longer functions on any platform. We recommend using the [Map Manager](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#map-manager) tool in the Device Portal instead. 
+> As of 8/1/2020 this tool is now deprecated and no longer functions on any platform. We recommend using the [Map Manager](../develop/advanced-concepts/using-the-windows-device-portal.md#map-manager) tool in the Device Portal instead. 
 > 
 > This tool and its operation are offered as-is. It is subject to change without any notice and may not be compatible with future Windows or Windows Mixed Reality HMD releases. 
 
@@ -32,8 +32,8 @@ keywords: lbe, MixedRealitySpatialDataPackager.exe, MixedRealitySpatialDataPacka
     <tr>
         <td><strong>Feature</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td>Mixed Reality Spatial Data Packager</td>

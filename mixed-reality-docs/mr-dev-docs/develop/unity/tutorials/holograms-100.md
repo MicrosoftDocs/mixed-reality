@@ -19,9 +19,9 @@ This tutorial will walk you through creating a basic mixed reality app built wit
 
 <table>
 <tr>
-<th>Course</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></th>
+<th>Course</th><th> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th> <a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details">Immersive headsets</a></th>
 </tr><tr>
-<td>MR Basics 100: Getting started with Unity</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+<td>MR Basics 100: Getting started with Unity</td><td> ✔️</td><td> ✔️</td>
 </tr>
 </table>
 
@@ -145,7 +145,7 @@ Now that we have created our cube, it is time to do a quick check in device. You
 
 ### For HoloLens use Unity Remoting
 
-1. On your HoloLens, install and run the [Holographic Remoting Player](../../platform-capabilities-and-apis/holographic-remoting-player.md), available from the Windows Store. Launch the application on the device, and it will enter a waiting state and show the IP address of the device. Note down the IP.
+1. On your HoloLens, install and run the [Holographic Remoting Player](../../native/holographic-remoting-player.md), available from the Windows Store. Launch the application on the device, and it will enter a waiting state and show the IP address of the device. Note down the IP.
 2. Open **Window > XR > Holographic Emulation**.
 3. Change **Emulation Mode** from **None** to **Remote to Device**.
 4. In **Remote Machine**, enter the IP address of your HoloLens noted earlier.
@@ -199,7 +199,7 @@ The instructions differ for deploying to a device versus the emulator. Follow th
 2. Enter the IP address of your mixed reality device and change **Authentication Mode** to Universal (Unencrypted Protocol) for HoloLens and **Windows** for other devices.
 3. Click **Debug > Start without debugging**.
 
-**For HoloLens**, If this is the first time deploying to your device, you will need to pair [using Visual Studio](../../platform-capabilities-and-apis/using-visual-studio.md).
+**For HoloLens**, If this is the first time deploying to your device, you will need to pair [using Visual Studio](../../advanced-concepts/using-visual-studio.md).
 
 ### Deploy to mixed reality device over USB
 

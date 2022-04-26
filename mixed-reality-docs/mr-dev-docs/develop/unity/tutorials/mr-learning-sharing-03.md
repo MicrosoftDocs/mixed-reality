@@ -2,10 +2,10 @@
 title: Connecting multiple users
 description: Complete this course to learn how to connect multiple users in a HoloLens 2 mixed reality application.
 author: jessemcculloch
-ms.author: jemccull
-ms.date: 02/05/2021
+ms.author: vinnietieto
+ms.date: 03/22/2022
 ms.topic: article
-keywords: mixed reality, unity, tutorial, hololens, multi-user capabilities, Photon, MRTK, mixed reality toolkit, UWP, Azure spatial anchors
+keywords: mixed reality, unity, tutorial, hololens, multi-user capabilities, Photon, MRTK, mixed reality toolkit, UWP
 ms.localizationpriority: high
 ---
 
@@ -28,12 +28,6 @@ In the Project window, navigate to the **Assets** > **MRTK.Tutorials.MultiUserCa
 
 ![Unity with newly added NetworkLobby and SharedPlayground prefabs selected](images/mr-learning-sharing/sharing-03-section1-step1-1.png)
 
-In the Project window, navigate to the **Assets** > **MRTK.Tutorials.AzureSpatialAnchors** > **Prefabs** folder, then click-and-drag the following prefab into the Hierarchy window to add it to your scene:
-
-* **DebugWindow** prefab
-
-![Unity with newly added DebugWindow prefab selected](images/mr-learning-sharing/sharing-03-section1-step1-2.png)
-
 ## Configuring PUN to instantiate the user prefab
 
 In this section, you will configure the project to use the PhotonUser prefab.
@@ -53,7 +47,7 @@ If you now build and deploy the Unity project to your HoloLens, then, back in Un
 ![Animation showing Unity with networked users](images/mr-learning-sharing/sharing-03-section4-step1-1.gif)
 
 > [!TIP]
-> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Building your app to your HoloLens 2](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions.
+> For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Building your app to your HoloLens 2](/learn/paths/beginner-hololens-2-tutorials/#building-your-application-to-your-hololens-2) instructions.
 
 > [!CAUTION]
 > The app needs to connect to Photon, so make sure your computer/device is connected to the internet.

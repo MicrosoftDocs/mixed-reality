@@ -1,8 +1,8 @@
 ---
 title: Distributing your apps
 description: An overview of the different distribution options for various supported platforms and publishing stores. 
-author: hferrone
-ms.author: v-hferrone
+author: vtieto
+ms.author: vinnietieto
 ms.date: 12/9/2020
 ms.topic: article
 keywords: HoloLens, Mixed Reality, immersive headsets, app, uwp, submit, submission, filters, metadata, system requirements, keywords, wack, certification, package, appx, merchandising
@@ -40,7 +40,7 @@ Getting your apps into the hands of your users or out into the world is the most
     <td><strong>Share with an organization</strong></td>
 </tr>
 <tr>
-    <td><a href="https://docs.microsoft.com/hololens/app-deploy-app-installer"><strong>App Installer</strong></td>
+    <td><a href="/hololens/app-deploy-app-installer"><strong>App Installer</strong></td>
     <td>✔️</td>
     <td>✔️</td>
     <td>❌</td>
@@ -92,7 +92,7 @@ Getting your apps into the hands of your users or out into the world is the most
 
 * If you need to install a HoloLens 2 application while you're offline, refer to the [offline secure HoloLens 2](/hololens/hololens-common-scenarios-offline-secure) instructions or install the app through a Provisioning Package without enabling developer mode.
 
-* You can also deploy builds to your device and share them with other developers who have Developer Mode enabled by [deploying and debugging with Visual Studio](../develop/platform-capabilities-and-apis/using-visual-studio.md) or [installing an application package with the Device Portal](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#sideloading-applications).
+* You can also deploy builds to your device and share them with other developers who have Developer Mode enabled by [deploying and debugging with Visual Studio](../develop/advanced-concepts/using-visual-studio.md) or [installing an application package with the Device Portal](../develop/advanced-concepts/using-the-windows-device-portal.md#sideloading-applications).
 
 ## See also
 * [Finding, installing, and uninstalling applications from the Microsoft Store](/hololens/holographic-store-apps)

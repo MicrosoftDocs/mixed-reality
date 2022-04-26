@@ -1,8 +1,8 @@
 ---
 title: Start your VR journey
 description: Explore our curated checkpoints to guide new device users through setting up and using their immersive VR devices.
-author: hferrone
-ms.author: v-hferrone
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR,
@@ -77,7 +77,7 @@ Find immersive games, desktop applications, and VR content in the resources belo
 | [Using SteamVR](using-steamvr-with-windows-mixed-reality.md) | Connect your device and play SteamVR games and learn about the Windows Insider Program |
 | [Using Microsoft Edge](using-microsoft-edge.md) | Install the latest version of Microsoft Edge on your immersive device |
 | [Using WebVR](webvr.md) | Get setup to experience VR in your browser environment |
-| [Explore AltspaceVR](/windows/mixed-reality/altspace-vr/journey) | Explore the expanding world of VR events with AltspaceVR |
+| [Explore AltspaceVR](/windows/mixed-reality/altspace-vr/explore/beginners-guide) | Explore the expanding world of VR events with AltspaceVR |
 
 ## Troubleshooting, tips & resources
 

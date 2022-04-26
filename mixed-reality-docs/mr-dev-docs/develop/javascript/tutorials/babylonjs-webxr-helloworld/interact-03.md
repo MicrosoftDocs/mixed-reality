@@ -1,12 +1,14 @@
 ---
 title: Babylon.js tutorial to interact with 3D objects
 description: Learn how to use babylon.js and interact with 3D objects.
-author: bogenera
+author: bgener
 ms.author: ayyonet
 ms.date: 03/05/2021
 ms.topic: article
 keywords: mixed reality, javascript, tutorial, BabylonJS, hololens, mixed reality, UWP, Windows 10, WebXR, immersive web
 ms.localizationpriority: high
+ms.custom: team=cloud_advocates
+ms.contributors: ayyonet-03232021
 ---
 
 # Tutorial: Interact with 3D object
@@ -269,7 +271,7 @@ Now that our cube is changing colors, we're ready to try the immersive experienc
 
 ## Run on a Windows Mixed Reality Simulator
 
-1. [Enable the Windows Mixed Reality Simulator](../../../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) if you have not done so in the past.
+1. [Enable the Windows Mixed Reality Simulator](../../../advanced-concepts/using-the-windows-mixed-reality-simulator.md) if you have not done so in the past.
 
 1. Select the Immersive-VR button on the bottom right corner:
 ![Immersive VR Button](../images/immersive-vr-button.png)

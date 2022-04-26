@@ -1,8 +1,8 @@
 ---
 title: Unreal Development Overview
 description: Get started wit mixed reality development for HoloLens and VR using Unreal Engine 4 with our curated checkpoint journey.
-author: hferrone
-ms.author: v-hferrone
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high

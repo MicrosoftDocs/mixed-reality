@@ -1,8 +1,8 @@
 ---
 title: Hands-free
 description: Learn about the difficulties that users may face with a hands-and-controllers interface, and about various hands-free alternatives.
-author: hferrone
-ms.author: v-hferrone
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 04/20/2019
 ms.topic: article
 keywords: Mixed Reality, hands-free, gaze, gaze targeting, interaction, design, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, voice input, usability
