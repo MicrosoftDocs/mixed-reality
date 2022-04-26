@@ -62,7 +62,7 @@ For problems with your physical headset device, cable connections, connection er
 If you're experiencing issues with creating boundaries, hearing or not hearing sound, Bluetooth audio, or headset tracking, check out the following FAQs:
 
 - [Help with boundaries](boundary-questions.md)
-- [Suppprt for most common speech and audio issues](speech-and-audio.md)
+- [Support for most common speech and audio issues](speech-and-audio.md)
 - [Tracking system](tracking.md)
 
 ### VR experience issues
