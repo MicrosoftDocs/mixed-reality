@@ -1,19 +1,19 @@
 # [World Locking Tools (Recommended)](#tab/wlt)
 
-By default, World Locking Tools will restore Unity's coordinate system relative to the physical world across sessions on devices that support persistence of local spatial anchors. In order to have a hologram appear in the same place in the physical world after quitting and re-running the application, the hologram only needs to have the same pose again.
+By default, World Locking Tools will restore Unity's coordinate system relative to the physical world across sessions on devices that support persistence of local spatial anchors. In order to have a hologram appear in the same place in the physical world after quitting and re-running the application, the application only needs to restore the same pose to the hologram.
 
 ![World locking context component in Unity inspector](../../images/world-locking-tools-img-02.png)
 
-If the application needs finer control, **Auto-Save** and **Auto-Load** may be disabled in the inspector, and persistence managed from a script as described in the [persistence section of the documentation](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/Concepts/Advanced/Persistence.html).
+If the application needs finer control, **Auto-Save** and **Auto-Load** may be disabled in the inspector, and persistence managed from a script as described in the [persistence section of the documentation](/mixed-reality/world-locking-tools/documentation/concepts/advanced/persistence).
 
-Local anchor persistence is currently only supported on the HoloLens family of devices. However, on Android and iOS, as well as HoloLens, persistence of coordinate spaces across sessions, as well as sharing coordinate spaces across devices, is supported via an integration with Azure Spatial Anchors. There is an abundance of [further information and samples](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/WLT_ASA.html) of using World Locking Tools in tandem with Azure Spatial Anchors.
+Local anchor persistence is currently only supported on the HoloLens family of devices. However, on Android and iOS, as well as HoloLens, persistence of coordinate spaces across sessions, as well as sharing coordinate spaces across devices, is supported via an integration with Azure Spatial Anchors. There is an abundance of [further information and samples](/mixed-reality/world-locking-tools/documentation/howtos/wlt_asa) of using World Locking Tools in tandem with Azure Spatial Anchors.
 
 # [ARAnchorManager](#tab/anchorstore)
 
 An additional API called the **XRAnchorStore** enables anchors to be persisted between sessions. The XRAnchorStore is a representation of the saved anchors on a device. Anchors can be persisted from **ARAnchors** in the Unity scene, loaded from storage into new **ARAnchors**, or deleted from storage.
 
 > [!NOTE]
-> These anchors are to be saved and loaded on the same device. Cross-device anchors are supported through [Azure Spatial Anchors](/windows/mixed-reality/develop/unity/shared-experiences-in-unity#azure-spatial-anchors).
+> These anchors are to be saved and loaded on the same device. Cross-device anchors are supported through [Azure Spatial Anchors](../../shared-experiences-in-unity.md#azure-spatial-anchors).
 
 ### Namespaces
 

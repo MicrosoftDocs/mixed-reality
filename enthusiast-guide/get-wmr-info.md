@@ -1,8 +1,8 @@
 ---
 title: Get info about Windows Mixed Reality
 description: Find resources and helpful information about Windows Mixed Reality.
-author: hferrone
-ms.author: v-hferrone
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 6/7/2021
 ms.topic: overview
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR,

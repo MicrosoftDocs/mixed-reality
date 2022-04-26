@@ -22,7 +22,7 @@ As promised, we are excited to share more mixed reality goodness with you! We’
 
 <table>
 <tr>
-<th style="width: 400px; text-align:left;">Content</th><th style="width: 125px; text-align:left;">Delivery</th><th style="width: 125px; text-align:left;">NOW LIVE!</th>
+<th>Content</th><th>Delivery</th><th>NOW LIVE!</th>
 </tr> 
 <tr>
 <td><b>Porting Guides</b> <br>1. HoloToolKit (HTK)/Mixed Reality Toolkit (MRTK) to MRTK Version 2

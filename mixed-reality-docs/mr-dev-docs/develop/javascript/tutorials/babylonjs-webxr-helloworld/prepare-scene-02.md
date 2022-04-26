@@ -1,12 +1,14 @@
 ---
 title: Babylon.js tutorial to prepare a scene with basic 3D objects
 description: Learn how to use babylon.js and add basic 3D objects to a scene.
-author: bogenera
+author: bgener
 ms.author: ayyonet
 ms.date: 03/05/2021
 ms.topic: article
 keywords: mixed reality, javascript, tutorial, BabylonJS, hololens, mixed reality, UWP, Windows 10, WebXR, immersive web
 ms.localizationpriority: high
+ms.custom: team=cloud_advocates
+ms.contributors: ayyonet-03232021
 ---
 
 # Tutorial: Prepare a scene

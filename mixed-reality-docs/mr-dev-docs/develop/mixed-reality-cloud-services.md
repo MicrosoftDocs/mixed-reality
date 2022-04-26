@@ -106,7 +106,7 @@ The standalone services listed below don't apply to Mixed Reality, but can be he
     <tr>
         <td><strong>Azure Cloud Service</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens 1st Gen</strong></a></td>
-        <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td><a href="unity/tutorials/mr-azure-301.md">Language translation</a></td>
@@ -177,5 +177,5 @@ The standalone services listed below don't apply to Mixed Reality, but can be he
 
 ## See also
 
-* Azure Spatial Anchor tutorials for HoloLens 2 - [1 of 3 Getting started with Azure Spatial Anchors](./unity/tutorials/mr-learning-asa-02.md)
-* Azure Speech Services tutorials for HoloLens 2 - [1 of 4 Integrating and using speech recognition and transcription](../develop/unity/tutorials/mrlearning-speechSDK-ch1.md)
+* Azure Spatial Anchor tutorials for HoloLens 2 - [1 of 3 Getting started with Azure Spatial Anchors](/learn/modules/azure-spatial-anchors-tutorials/2-get-started-with-azure-spatial-anchors)
+* Azure Speech Services tutorials for HoloLens 2 - [1 of 4 Integrating and using speech recognition and transcription](/learn/modules/azure-speech-services-tutorials-mrtk/)

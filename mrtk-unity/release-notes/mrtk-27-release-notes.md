@@ -124,7 +124,7 @@ The **Mixed Reality > Toolkit** menu now contains a **Show version...** entry th
 ![MRTK version dialog](images/VersionDialog.png)
 
 > [!NOTE]
-> If MRTK is cloned from the [GitHub repository](https://aka.ms/mrtk), the version information won't be set.
+> If MRTK is cloned from the [GitHub repository](../index.md), the version information won't be set.
 >
 > ![Unable to determine version](images/CannotDetermineVersion.png)
 

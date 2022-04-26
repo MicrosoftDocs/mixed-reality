@@ -1,9 +1,9 @@
 ---
-title: Eye tracking
+title: Eye tracking overview
 description: Learn about eye tracking for HoloLens 2 and the new levels of human understanding if affords in holographic experiences.
 author: sostel
-ms.author: sostel
-ms.date: 10/29/2019
+ms.author: vinnietieto
+ms.date: 12/22/2021
 ms.topic: article
 keywords: Eye tracking, mixed reality, input, eye-gaze, calibration, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit, intent, actions
 ---
@@ -29,7 +29,7 @@ Eye tracking API has been designed with a user’s privacy in mind, avoiding pas
      <td><strong>Feature</strong></td>
      <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
      <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-     <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+     <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
 </tr>
 <tr>
      <td>Eye-gaze</td>
@@ -110,7 +110,7 @@ Another example is **eye-supported zoom and pan** where the user can feel like d
 Triggering and controlling zoom speed can be controlled by voice or hand input, which is important for providing the user with the feeling of control while avoiding being overwhelmed. 
 We'll talk about these design considerations in more detail below. 
 Once zoomed in, the user can smoothly follow, for example, the course of a street to explore his or her neighborhood by using their eye-gaze.
-Demo examples for these types of interactions can be found in the [Mixed Reality Toolkit - Eye-supported Navigation](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-navigation) sample.
+More information about these types of interactions can be found on the [Mixed Reality Toolkit - Eye-supported Navigation](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-navigation) page.
 
 Other use cases for _implicit actions_ may include:
 - **Smart notifications:** Ever get annoyed by notifications popping up right where you're looking? Taking into account what a user is paying attention to, you can make this experience better by offsetting notifications from where the user is currently gazing. This limits distractions and automatically dismisses them once the user is finished reading. 

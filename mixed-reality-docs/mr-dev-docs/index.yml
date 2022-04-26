@@ -67,7 +67,7 @@ productDirectory:
       links:
         - url: design/design.md
           text: Design and prototype
-        - url: design/types-of-mixed-reality-apps.md
+        - url: discover/types-of-mixed-reality-apps.md
           text: Choose your type of Mixed Reality app
         - url: discover/case-study-expanding-the-design-process-for-mixed-reality.md
           text: Expand your design process
@@ -122,16 +122,10 @@ conceptualContent:
       links:
         - url: develop/unity/unity-development-overview.md
           itemType: overview
-          text: Unity development overview
-        - url: develop/unity/mrtk-getting-started.md
-          itemType: overview
-          text: What is MRTK?
-        - url: develop/unity/tutorials/mr-learning-base-01.md
-          itemType: tutorial
-          text: HoloLens 2 tutorial series
+          text: Unity docs - Overview
         - url: /windows/mixed-reality/mrtk-unity/
-          itemType: concept
-          text: Core building blocks
+          itemType: overview
+          text: MRTK for Unity
         - url: develop/unity/shared-experiences-in-unity.md
           itemType: concept
           text: Platform capabilities and APIs
@@ -149,19 +143,13 @@ conceptualContent:
       links:
         - url: develop/unreal/unreal-development-overview.md
           itemType: overview
-          text: Unreal development overview
-        - url: develop/unreal/tutorials/unreal-uxt-ch1.md
-          itemType: tutorial
-          text: Build a chess app tutorial series
-        - url: develop/unreal/unreal-gaze-input.md
-          itemType: concept
-          text: Core building blocks
+          text: Unreal docs - Overview
+        - url: /develop/unreal/unreal-mrtk-introduction.md
+          itemType: overview
+          text: MRTK for Unreal
         - url: develop/unreal/unreal-hololens-camera.md
           itemType: concept
           text: Platform capabilities and APIs
-        - url: develop/unreal/performance-recommendations-for-unreal.md
-          itemType: concept
-          text: Performance recommendations
         - url: develop/unreal/unreal-deploying.md
           itemType: deploy
           text: Deploying to device or emulator
@@ -176,7 +164,7 @@ conceptualContent:
       links:
         - url: develop/native/directx-development-overview.md
           itemType: overview
-          text: Native development overview
+          text: Native docs - Overview
         - url: develop/native/openxr.md
           itemType: overview
           text: What is OpenXR?
@@ -186,9 +174,6 @@ conceptualContent:
         - url: develop/native/openxr-best-practices.md
           itemType: concept
           text: OpenXR best practices
-        - url: develop/native/openxr-troubleshooting.md
-          itemType: reference
-          text: OpenXR troubleshooting
       # footerLink (optional)
       footerLink:
         url: develop/native/directx-development-overview.md
@@ -203,7 +188,7 @@ tools:
     - title: MRTK for Unity
       # imageSrc should be square in ratio with no whitespace
       imageSrc: images/Final_mrtk-small_logo.png
-      url: https://github.com/microsoft/MixedRealityToolkit-Unity
+      url: https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-unity
     # Card
     - title: MRTK for Unreal 
       imageSrc: images/Final_mrtk-small_logo.png

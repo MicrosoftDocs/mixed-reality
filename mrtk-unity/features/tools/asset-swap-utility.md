@@ -1,8 +1,8 @@
 ---
 title: Asset swap utility
 description: Documentation on using the asset swap utility in MRTK for Unity.
-author: hferrone
-ms.author: v-hferrone
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 03/9/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK
 ---

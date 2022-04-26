@@ -2,7 +2,7 @@
 title: Error codes
 description: Advanced Windows Mixed Reality error code troubleshooting that goes beyond our standard consumer support documentation.
 author: qianw211    
-ms.author: v-qianwen
+ms.author: qianwen
 ms.date: 09/23/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support, Error Codes

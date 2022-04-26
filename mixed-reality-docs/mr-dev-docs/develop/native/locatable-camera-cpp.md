@@ -1,8 +1,8 @@
 ---
 title: Locatable camera
 description: Code samples that address the HoloLens front-facing camera, how it works, and the profiles and resolutions available to developers.
-author: cdedmonds
-ms.author: v-vtieto
+author: vtieto
+ms.author: vinnietieto
 ms.date: 09/28/2021
 ms.topic: article
 keywords: camera, hololens, color camera, front facing, hololens 2, cv, computer vision, fiducial, markers, qr code, qr, photo, video, locatable

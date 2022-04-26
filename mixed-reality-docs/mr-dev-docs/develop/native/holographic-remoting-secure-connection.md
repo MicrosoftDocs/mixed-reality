@@ -10,7 +10,7 @@ keywords: HoloLens, Remoting, Holographic Remoting, mixed reality headset, windo
 
 # Secure Connection with Holographic Remoting Overview
 
-If you're new to Holographic Remoting, you may want to [read our overview](../advanced-concepts/holographic-remoting-overview.md).
+If you're new to Holographic Remoting, you may want to [read our overview](./holographic-remoting-overview.md).
 
 > [!NOTE]
 > This guidance is specific to Holographic Remoting on HoloLens 2 and Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md).

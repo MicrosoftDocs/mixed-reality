@@ -13,6 +13,36 @@
 		},
 
 		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/whats-new/mr-dev-days-japan.md",
+			"redirect_url": "/windows/mixed-reality/whats-new/journey-to-mr-series",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mixed-reality-docs/enthusiast-guide/free-roam-vr-multiplayer-experiences.md",
+			"redirect_url": "/windows/mixed-reality/enthusiast-guide/free-roam-vr-multiuser-experiences",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/whats-new/sf-academy-events.md",
+			"redirect_url": "/windows/mixed-reality/whats-new/journey-to-mr-series",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/whats-new/stereokit.md",
+			"redirect_url": "/windows/mixed-reality/whats-new/journey-to-mr-series",
+			"redirect_document_id": false
+		},
+
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/whats-new/mr-dev-days.md",
+			"redirect_url": "/windows/mixed-reality/whats-new/journey-to-mr-series",
+			"redirect_document_id": false
+		},
+
+		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/mrtk-getting-started.md",
 			"redirect_url": "/windows/mixed-reality/mrtk-unity",
 			"redirect_document_id": false
@@ -580,7 +610,7 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/types-of-mixed-reality-apps.md",
-			"redirect_url": "/windows/mixed-reality/design/types-of-mixed-reality-apps",
+			"redirect_url": "/windows/mixed-reality/discover/types-of-mixed-reality-apps",
 			"redirect_document_id": true
 		},
 		{
@@ -2380,8 +2410,12 @@
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/tutorials/mr-learning-pc-holographic-remoting-02.md",
 			"redirect_url": "/learn/modules/pc-holographic-remoting-tutorials/4-create-holographic-remoting-pc-application",
 			"redirect_document_id": false
+		},
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/tutorials/mr-learning-sharing-05.md",
+			"redirect_url": "/learn/modules/azure-spatial-anchors-tutorials/",
+			"redirect_document_id": false
 		}
-
 
 	]
 }

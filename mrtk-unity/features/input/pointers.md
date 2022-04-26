@@ -11,7 +11,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Pointers
 
 ![Pointer](../images/pointers/MRTK_Pointer_Main.png)
 
-This article explains how to configure and respond to Pointer input in practice, compared to [Pointer Architecture](../../architecture/controllers-pointers-and-focus.md)
+This article explains how to configure and respond to Pointer input in practice. To better understand how to control multiple pointers at a high-level, see  [Pointer Architecture](../../architecture/controllers-pointers-and-focus.md).
 
 Pointers are instanced automatically at runtime when a new controller is detected. More than one pointer can be attached to a controller. For example, with the default pointer profile, Windows Mixed Reality controllers get both a line and a parabolic pointer for normal selection and teleportation respectively.
 
@@ -275,7 +275,7 @@ private void OnDisable()
 
 The `PrimaryPointerExample` (Assets/MRTK/Examples/Demos/Input/Scenes/PrimaryPointer) scene shows how to use the [`PrimaryPointerChangedHandler`](xref:Microsoft.MixedReality.Toolkit.Input.PrimaryPointerChangedHandler) for events to respond to a new primary pointer.
 
-<img src="../images/pointers/PrimaryPointerExample.png" style="max-width:100%;" alt="Primary Pointer Example">
+<img src="../images/pointers/PrimaryPointerExample.png" alt="Primary Pointer Example">
 
 ### Pointer result
 
@@ -293,7 +293,7 @@ private void IMixedRealityPointerHandler.OnPointerClicked(MixedRealityPointerEve
 
 The `PointerResultExample` scene (Assets/MRTK/Examples/Demos/Input/Scenes/PointerResult/PointerResultExample.unity) shows how to use the pointer [`Result`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointer.Result) to spawn an object at the hit location.
 
-<img src="../images/input/PointerResultExample.png" style="max-width:100%;" alt="Pointer Result">
+<img src="../images/input/PointerResultExample.png" alt="Pointer Result">
 
 ### Disable pointers
 
@@ -326,7 +326,7 @@ See [`PointerUtils`](xref:Microsoft.MixedReality.Toolkit.Input.PointerUtils) and
 
 For pointer events handled by [`IMixedRealityPointerHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointerHandler), MRTK provides further convenience in the form of the [`PointerHandler`](xref:Microsoft.MixedReality.Toolkit.Input.PointerHandler) component, which allows pointer events to be handled directly via Unity Events.
 
-<img src="../images/pointers/PointerHandler.png" style="max-width:100%;" alt="Pointer Handler">
+<img src="../images/pointers/PointerHandler.png" alt="Pointer Handler">
 
 ## Pointer extent
 

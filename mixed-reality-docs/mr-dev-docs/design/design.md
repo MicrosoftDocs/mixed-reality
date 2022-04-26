@@ -32,7 +32,7 @@ Like all journeys, your adventure into designing Mixed Reality applications star
 |  Checkpoint  |  Outcome  |
 | --- | --- |
 | [Expand your design process](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Get a first-hand look at design process for Mixed Reality, gathered from designers inside and outside of Microsoft |
-| [Types of Mixed Reality apps](types-of-mixed-reality-apps.md) | Decide where your app experience will live on the Mixed Reality spectrum |
+| [Types of Mixed Reality apps](../discover/types-of-mixed-reality-apps.md) | Decide where your app experience will live on the Mixed Reality spectrum |
 | [Designing Holograms app](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Learn the fundamentals of Mixed Reality UX Design by experiencing with behaviors, tips, and recommendations for creating amazing HoloLens apps (available for download from Microsoft Store in HoloLens 2) |
 | [MRTK Examples Hub](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4) | Experience common spatial interactions and UX building blocks for Mixed Reality (available for download from Microsoft Store in HoloLens 2) |
 | **Optional** [Download the Figma Toolkit](figma-toolkit.md) | The Figma Toolkit provides assets for you to use for sketching and laying out UI based on the components available in MRTK |
@@ -118,9 +118,9 @@ A designer's job is never done, especially when learning to create immersive exp
         Get a better understanding of what defines mixed reality and how it’s being used.
     :::column-end:::
     :::column:::
-        [![Come to an event](images/74-16.png)](../whats-new/sf-academy-events.md)<br>
-         **[Come to an event](../whats-new/sf-academy-events.md)**<br>
-        See the hardware and get a hands-on tutorial to make your first HoloLens 2 application.
+        [![Come to an event](images/74-16.png)](../whats-new/journey-to-mr-series.md)<br>
+         **[Come to an event](../whats-new/journey-to-mr-series.md)**<br>
+        Get started with your Mixed Reality development journey.
     :::column-end:::
     :::column:::
         [![Install the tools](images/74-17.png)](../develop/install-the-tools.md)<br>

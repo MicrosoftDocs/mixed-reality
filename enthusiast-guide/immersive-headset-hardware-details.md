@@ -28,5 +28,5 @@ You can purchase any of the publicly available Windows Mixed Reality immersive h
 * [Motion controllers](/windows/mixed-reality//design/motion-controllers)
 * [Gamepads supported by UWP](/windows/mixed-reality/discover/hardware-accessories)
 * [Mouse and keyboard](/windows/mixed-reality/discover/hardware-accessories)
-* [Voice](/windows/mixed-reality/design/voice-input.md) (via connected headset or microphone)
+* [Voice](/windows/mixed-reality/design/voice-input) (via connected headset or microphone)
 

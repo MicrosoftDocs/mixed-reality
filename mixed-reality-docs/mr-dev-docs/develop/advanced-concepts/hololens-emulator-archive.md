@@ -3,7 +3,7 @@ title: HoloLens Emulator archive
 description: Stay up to date on the archived list of released builds for the Microsoft HoloLens(1st gen) and HoloLens 2 Emulators.
 author: hamalawi
 ms.author: moelhama
-ms.date: 1/12/2022
+ms.date: 4/12/2022
 ms.topic: article
 keywords: HoloLens, Emulator, Builds, Versions, mixed reality headset, windows mixed reality headset, virtual reality headset, archive
 ---
@@ -14,6 +14,12 @@ HoloLens Emulator (first gen) and HoloLens 2 Emulator builds install side by sid
 
 |  Build |  Release Date |  Notes |
 |----------|----------|----------|
+|  [HoloLens 2 Emulator build 10.0.20348.1501](https://go.microsoft.com/fwlink/?linkid=2193111) | April 12, 2022 | Windows Holographic, version 22H1. For general HoloLens 2 release notes, see [HoloLens Release Notes](/hololens/hololens-release-notes) |
+|  [HoloLens 2 Emulator build 10.0.19041.1183](https://go.microsoft.com/fwlink/?linkid=2193110) | April 12, 2022 | Windows Holographic, version 20H2 March 2022 Update. For general HoloLens 2 release notes, see [HoloLens Release Notes](/hololens/hololens-release-notes) |
+|  [HoloLens 2 Emulator build 10.0.20348.1450](https://go.microsoft.com/fwlink/?linkid=2189132) | March 8, 2022 | Windows Holographic, version 21H2 March 2022 Update.  For general HoloLens 2 release notes, see [HoloLens Release Notes](/hololens/hololens-release-notes) |
+|  [HoloLens 2 Emulator build 10.0.19041.1178](https://go.microsoft.com/fwlink/?linkid=2189204) | March 8, 2022 | Windows Holographic, version 20H2 March 2022 Update.  For general HoloLens 2 release notes, see [HoloLens Release Notes](/hololens/hololens-release-notes) |
+|  [HoloLens 2 Emulator build 10.0.20348.1447](https://go.microsoft.com/fwlink/?linkid=2186711) | February 8, 2022 | Windows Holographic, version 21H2 February 2022 Update.  For general HoloLens 2 release notes, see [HoloLens Release Notes](/hololens/hololens-release-notes) |
+|  [HoloLens 2 Emulator build 10.0.19041.1176](https://go.microsoft.com/fwlink/?linkid=2186603) | February 8, 2022 | Windows Holographic, version 20H2 February 2022 Update.  For general HoloLens 2 release notes, see [HoloLens Release Notes](/hololens/hololens-release-notes) |
 |  [HoloLens 2 Emulator build 10.0.20348.1442](https://go.microsoft.com/fwlink/?linkid=2185208) | January 11, 2022 | Windows Holographic, version 21H2 January 2022 Update.  For general HoloLens 2 release notes, see [HoloLens Release Notes](/hololens/hololens-release-notes) |
 |  [HoloLens 2 Emulator build 10.0.19041.1174](https://go.microsoft.com/fwlink/?linkid=2185051) | January 11, 2022 | Windows Holographic, version 20H2 January 2022 Update.  For general HoloLens 2 release notes, see [HoloLens Release Notes](/hololens/hololens-release-notes) |
 |  [HoloLens 2 Emulator build 10.0.20348.1440](https://go.microsoft.com/fwlink/?linkid=2183248) | December 14, 2021 | Windows Holographic, version 21H2 December 2021 Update.  For general HoloLens 2 release notes, see [HoloLens Release Notes](/hololens/hololens-release-notes) |

@@ -1,19 +1,17 @@
 # [Unity](#tab/unity)
 
-> [!div class="nextstepaction"]
-> [Choose the right Unity version for you](../unity/choosing-unity-version.md)
 
 ### Next Development Checkpoint
 
 If you're following the Unity for HoloLens development checkpoint journey we've laid out, your next task is to work through our HoloLens 2 tutorial series.
 
 > [!div class="nextstepaction"]
-> [HoloLens 2 tutorial series](../unity/tutorials/mr-learning-base-01.md)
+> [HoloLens 2 tutorial series](/learn/paths/beginner-hololens-2-tutorials/)
 
-If you're following the Unity for VR journey, your next task is to set up your project.
+Otherwise, continue on to install the right version of Unity and get set up with your first mixed reality Unity project: 
 
 > [!div class="nextstepaction"]
-> [Configuring your project for WMR](../unity/configure-unity-project.md)
+> [Choose the right Unity version for you](../unity/choosing-unity-version.md)
 
 You can always go back to the Unity development checkpoints for [HoloLens](../unity/unity-development-overview.md#1-getting-started) and [VR](../unity/unity-development-wmr-overview.md#1-getting-started) at any time.
 

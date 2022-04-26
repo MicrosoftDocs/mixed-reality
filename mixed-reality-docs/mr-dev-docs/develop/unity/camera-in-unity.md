@@ -16,7 +16,7 @@ When you wear a mixed reality headset, it becomes the center of your holographic
 
 The default settings on the Unity Camera component are for traditional 3D applications, which need a skybox-like background as they don't have a real world.
 
-* When running on an **[immersive headset](../../discover/immersive-headset-hardware-details.md)**, you're rendering everything the user sees, and so you'll likely want to keep the skybox.
+* When running on an **[immersive headset](/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details)**, you're rendering everything the user sees, and so you'll likely want to keep the skybox.
 * However, when running on a **holographic headset** like [HoloLens](/hololens/hololens2-hardware), the real world should appear behind everything the camera renders. Set the camera background to be transparent (in HoloLens, black renders as transparent) instead of a Skybox texture:
     1. Select the Main Camera in the Hierarchy panel
     2. In the Inspector panel, find the Camera component and change the Clear Flags dropdown from Skybox to Solid Color
