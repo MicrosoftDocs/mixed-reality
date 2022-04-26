@@ -11,7 +11,7 @@ ms.localizationpriority: high
 
 # Using the Windows Device Portal
 
-| Feature          | [HoloLens 1st Gen](/hololens/hololens1-hardware) | [HoloLens 2](/hololens/hardware) | 
+| Feature          | [HoloLens 1st Gen](/hololens/hololens1-hardware) | [HoloLens 2](/hololens/hololens2-hardware) | 
 |:------------:|:--------------------------------------------------------------------------:|:---------------------------------------------------------:|
 | Windows Device Portal | :heavy_check_mark:               | :heavy_check_mark: |
 

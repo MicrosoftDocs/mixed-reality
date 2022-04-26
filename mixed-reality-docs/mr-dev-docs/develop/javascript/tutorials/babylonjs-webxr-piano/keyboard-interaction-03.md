@@ -166,7 +166,7 @@ const createScene = async function(engine) {
     keyboard.parent = piano;
 
     // Import and scale piano frame
-    BABYLON.SceneLoader.ImportMesh("frame", "https://docs.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-piano/files", "pianoFrame.babylon", scene, function(meshes) {
+    BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/MicrosoftDocs/mixed-reality/docs/mixed-reality-docs/mr-dev-docs/develop/javascript/tutorials/babylonjs-webxr-piano/files/", "pianoFrame.babylon", scene, function(meshes) {
         const frame = meshes[0];
         frame.parent = piano;
     });
@@ -319,7 +319,7 @@ Right now, the piano keyboard we have created is a static model that does not re
 
 By now, you have probably already played with the piano with your mouse (or even with a touch screen) as you added the interactive functionalities. In this section, we will be moving into the immersive VR space.
 
-1. In order to open the page in your immersive VR headset, you must first connect your headset to your developer machine and make sure that it is [set up for use in the Windows Mixed Reality App](/enthusiast-guide/set-up-windows-mixed-reality). If you're using the Windows Mixed Reality Simulator, [make sure that it is enabled](../../../advanced-concepts/using-the-windows-mixed-reality-simulator.md).
+1. In order to open the page in your immersive VR headset, you must first connect your headset to your developer machine and make sure that it is [set up for use in the Windows Mixed Reality App](/windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality). If you're using the Windows Mixed Reality Simulator, [make sure that it is enabled](../../../advanced-concepts/using-the-windows-mixed-reality-simulator.md).
 
 1. You will now see a Immersive VR button at the bottom right of the web page. Click on it and you will be able to see the piano in the XR device you are connected to.
 
@@ -553,7 +553,7 @@ const createScene = async function(engine) {
     keyboard.parent = piano;
 
     // Import and scale piano frame
-    BABYLON.SceneLoader.ImportMesh("frame", "https://docs.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-piano/files", "pianoFrame.babylon", scene, function(meshes) {
+    BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/MicrosoftDocs/mixed-reality/docs/mixed-reality-docs/mr-dev-docs/develop/javascript/tutorials/babylonjs-webxr-piano/files/", "pianoFrame.babylon", scene, function(meshes) {
         const frame = meshes[0];
         frame.parent = piano;
     });
@@ -651,4 +651,4 @@ const createScene = async function(engine) {
 
 ## Next steps
 
-For more information on Mixed Reality JavaScript development see [JavaScript development overview](/javascript-development-overview.md).
+For more information on Mixed Reality JavaScript development see [JavaScript development overview](/windows/mixed-reality/develop/javascript/javascript-development-overview).

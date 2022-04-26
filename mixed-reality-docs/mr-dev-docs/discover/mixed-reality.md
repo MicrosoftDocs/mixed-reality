@@ -11,11 +11,11 @@ ms.localizationpriority: high
 
 # What is mixed reality?
 
-Mixed reality is the next wave in computing following mainframes, PCs, and smartphones. Mixed reality is going mainstream for consumers and businesses. It liberates us from screen-bound experiences by offering instinctual interactions with data in our living spaces and with our friends.  Online explorers, numbering in the hundreds of millions around the world, have experienced mixed reality through their handheld devices.  Mobile AR offers the most mainstream mixed reality solutions today on social media. People may not even realize that the AR filters they use on Instagram are mixed reality experiences. Windows Mixed Reality takes all these user experiences to the next level with a combination of truly stunning holographic representations of people and high fidelity holographic 3D models and the real world around them.
+Mixed reality is the next wave in computing followed by mainframes, PCs, and smartphones. Mixed reality is going mainstream for consumers and businesses.  It liberates us from screen-bound experiences by offering instinctual interactions with data in our living spaces and with our friends.  Online explorers, in hundreds of millions around the world, have experienced mixed reality through their handheld devices.  Mobile AR offers the most mainstream mixed reality solutions today on social media. People may not even realize that the AR filters they use on Instagram are mixed reality experiences. Windows Mixed Reality takes all these user experiences to the next level with stunning holographic representations of people, high fidelity holographic 3D models, and the real world around them.
 
 ![Point and commit with hands on HoloLens 2](images/02_MixedRealitySlashMixedReality.png)
 
-Mixed reality is a blend of physical and digital worlds, unlocking natural and intuitive 3D human, computer, and environmental interactions. This new reality is based on advancements in computer vision, graphical processing, display technologies, input systems, and cloud computing. The term "mixed reality" was introduced in a 1994 paper by Paul Milgram and Fumio Kishino, "[A Taxonomy of mixed reality Visual Displays](https://search.ieice.org/bin/summary.php?id=e77-d_12_1321)." Their paper explored the concept of a *virtuality continuum* and the taxonomy of visual displays. Since then, the application of mixed reality has gone beyond displays to include:
+Mixed reality is a blend of physical and digital worlds, unlocking natural and intuitive 3D human, computer, and environmental interactions. This new reality is based on advancements in computer vision, graphical processing, display technologies, input systems, and cloud computing. The term "mixed reality" was introduced in a 1994 paper by Paul Milgram and Fumio Kishino, "[A Taxonomy of Mixed reality Visual Displays](https://search.ieice.org/bin/summary.php?id=e77-d_12_1321)." Their paper explored the concept of a *virtuality continuum* and the taxonomy of visual displays. Since then, the application of mixed reality has gone beyond displays to include:
 
 * Environmental understanding: spatial mapping and anchors.
 * Human understanding: hand-tracking, eye-tracking, and speech input.
@@ -55,7 +55,7 @@ A combination of three essential elements sets the stage for creating true mixed
 * Advanced input methods
 * Environmental perceptions
 
-As we move through the physical world, our movements are mapped in a digital reality. Physical boundaries influence mixed reality experiences, such as games or task-based guidance in a manufacturing facility, in the digital world. With environmental input and perceptions, experiences start to blend between physical and digital realities.
+As we move through the physical world, our movements are mapped in a digital reality. Physical boundaries influence mixed reality experiences such as games or task-based guidance in a manufacturing facility. With environmental input and perceptions, experiences start to blend between physical and digital realities.
 
 <br>
 
@@ -63,7 +63,7 @@ As we move through the physical world, our movements are mapped in a digital rea
 
 ## The mixed reality spectrum
 
-Mixed reality blends both physical and digital worlds.  These two realities mark the polar ends of a spectrum known as the *virtuality continuum*. We refer to this spectrum of realities as the *mixed reality spectrum*.  On one end of the spectrum, we have the physical reality that we humans exist in. On the other end of the spectrum, we have the corresponding digital reality.
+Mixed reality blends both physical and digital worlds.  These two realities mark the polar ends of a spectrum known as the *virtuality continuum*. We refer to this spectrum of realities as the *mixed reality spectrum*.  On one end of the spectrum, we have the physical reality that we as humans exist. On the other end of the spectrum, we have the corresponding digital reality.
 
 <br>
 
@@ -89,7 +89,7 @@ When a user is in virtual reality, the physical obstacles in their immediate sur
 
 <br>
 
-Most augmented reality and virtual reality experiences available today represent a small subsets of the larger mixed reality spectrum. Windows 10 is built with the entire spectrum in mind, and allows the blending of digital representations of people, places, and things with the real world.
+Most augmented reality and virtual reality experiences available today represent a small subset of the larger mixed reality spectrum. Windows 10 is built with the entire spectrum in mind, and allows blending digital representations of people, places, and things with the real world.
 
 ## Devices and experiences
 
