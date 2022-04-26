@@ -372,9 +372,6 @@ Visually, each register looks exactly the same as another, so we can start with 
         const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
         light.intensity = 0.6;
     
-        // Transform Node that acts as the parent of all piano keys
-        const keyboard = new BABYLON.TransformNode("keyboard");
-    
         const keyParams = [
             {type: "white", note: "C", topWidth: 1.4, bottomWidth: 2.3, topPositionX: -0.45, wholePositionX: -14.4},
             {type: "black", note: "C#", wholePositionX: -13.45},
