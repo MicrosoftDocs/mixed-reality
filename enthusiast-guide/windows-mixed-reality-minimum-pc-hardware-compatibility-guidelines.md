@@ -2,7 +2,7 @@
 title: Windows Mixed Reality PC compatibility guidelines
 description: Overview chart outlining the minimum PC system requirements for compatibility with Windows Mixed Reality.
 author: qianw211
-ms.author: v-qianwen
+ms.author: qianwen
 ms.date: 09/22/2021
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Ultra, compatible, compatibility, system requirements, PC
@@ -73,7 +73,7 @@ Because of the higher resolution, the following requirements apply to the HP Rev
 **All Other WMR Compatible Headsets** <br>
 For all other HMDs, refer to the following requirements:
 
-| | Windows Mixed Reality 90Hz PCs | Windows Mixed Reality 60Hz PCs |
+|Component| Windows Mixed Reality 90Hz PCs | Windows Mixed Reality 60Hz PCs |
 | --- | --- | --- |
 | Operating System | Windows 10 Fall Creators Update (RS3) or later - Home, Pro, Business, Education. <br/>    (<b>Note</b>: Not supported on N versions or Windows 10 Pro in S Mode) |
 | Processor | Intel Core i5 4590 (4th generation), quad-core (or better) <br> AMD Ryzen 5 1400 3.4Ghz (desktop), quad-core (or better) | Intel Core i5 7200U (7th generation mobile), dual-core with Intel Hyper-Threading Technology enabled (or better) <br> AMD Ryzen 5 1400 3.4Ghz (desktop), quad-core (or better) |

@@ -2,7 +2,7 @@
 title: Developer concepts overview 
 description: Learn about basic and advanced concepts related to mixed reality development.
 author: vtieto
-ms.author: v-vtieto
+ms.author: vinnietieto
 ms.date: 10/21/2021
 ms.topic: article
 keywords: Windows Mixed Reality, design, introduction, guidance, mixed reality headset, windows mixed reality headset, virtual reality headset, ux, resources
@@ -16,7 +16,7 @@ Advanced concepts include:
 
 - [Mixed Reality Capture](mixed-reality-capture-overview.md)
 - [Use anchors to share holograms](shared-spatial-anchors-in-directx.md)
-- [Holographic Remoting](holographic-remoting-overview.md)
+- [Holographic Remoting](../native/holographic-remoting-overview.md)
 - [Porting apps](../porting-apps/porting-overview.md)
 - [Using the Windows device portal](using-the-windows-device-portal.md)
 - [HoloLens research mode](research-mode.md)

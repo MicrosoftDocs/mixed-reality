@@ -1,8 +1,8 @@
 ---
 title: Mixed Reality Learn module overview
 description: Keep up to date with all the available Mixed Reality modules hosted on the Microsoft Learn platform.
-author: hferrone
-ms.author: v-vtieto
+author: vtieto
+ms.author: vinnietieto
 ms.date: 9/27/2021
 ms.topic: article
 keywords: mixed reality, unity, tutorial, hololens, learn, mixed reality headset, windows mixed reality headset, virtual reality headset, what is virtual reality, what is augmented reality, MRTK, mixed reality toolkit, language translation, Azure, Azure cognitive services, Microsoft Learn

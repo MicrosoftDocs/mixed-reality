@@ -2,8 +2,8 @@
 title: Shared experiences in mixed reality
 description: Holographic apps may share spatial anchors from one HoloLens to another, enabling users to render a hologram at the same place in the real world, across multiple devices.
 author: thetuvix
-ms.author: grbury
-ms.date: 02/10/2019
+ms.author: vinnietieto
+ms.date: 03/10/2022
 ms.topic: article
 keywords: shared experience, mixed reality, hologram, spatial anchor, multi-user, multi
 ---
@@ -97,7 +97,7 @@ It's important to [think about the environment](/hololens/hololens-environment-c
 
 ### 6. What devices are they using?
 
-Today you’re often likely to see shared experiences between two [**immersive devices**](../discover/immersive-headset-hardware-details.md) (those devices might differ slightly For buttons and relative capability, but not greatly) or two **holographic devices** given the solutions being targeted at these devices. But consider if **2D devices** (a mobile/desktop participant or observer) will be a necessary consideration, especially in situations of **mixed 2D and 3D devices**. Understanding the types of devices your participants will be using is important, not only because they come with different fidelity and data constraints and opportunities, but because users have unique expectations for each platform.
+Today you’re often likely to see shared experiences between two [**immersive devices**](/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details) (those devices might differ slightly For buttons and relative capability, but not greatly) or two **holographic devices** given the solutions being targeted at these devices. But consider if **2D devices** (a mobile/desktop participant or observer) will be a necessary consideration, especially in situations of **mixed 2D and 3D devices**. Understanding the types of devices your participants will be using is important, not only because they come with different fidelity and data constraints and opportunities, but because users have unique expectations for each platform.
 
 ## Exploring the potential of shared experiences
 
@@ -152,18 +152,7 @@ Leverage [Azure Spatial Anchors](/azure/spatial-anchors/) in your app.  Enabling
 
 ## Share first person perspective
 
-Leverage built-in Miracast support, for local users when you have a supported Miracast receiver, such as a PC or TV – no additional app code is needed.
-
-Leverage [MixedReality-WebRTC](https://github.com/microsoft/mixedreality-webrtc) in your app, for remote users or when you have non-Miracast devices that you’d like to share to.  Enabling a WebRTC connection enables 1:1 audio/video streams between users, with a data channel for messaging across devices, as well.  The mixed reality implementation optimizes for HoloLens, by providing mixed reality capture video stream of the view of the HoloLens user to others.  If you desire to scale up video streaming to multiple remote clients, an [MCU service provider](https://webrtcglossary.com/mcu/) (Multipoint Conferencing Unit) is typically used, such as [SignalWire](https://signalwire.com/).  A one-click SignalWire deployment to Azure is available via [Freeswitch](https://github.com/andywolk/azure-freeswitch-gpu-windows).
-
-> [!NOTE]
-> Please note that SignalWire is a paid service and is not owned/affiliated with Microsoft.
-
-## Presenter-Spectator applications and Demos
-
-Leverage [MixedReality-SpectatorView](https://github.com/microsoft/MixedReality-SpectatorView) to bring [spectator view functionality](spectator-view.md) into your app.  Enable other devices (HL, Android, iOS, and video cameras) to see what the HoloLens sees from a different perspective in the same location, and receive updates on interactions of the host HoloLens user interacting with the holograms.  Watch, take pictures, and record video of what the host does with the holograms in the application from your own spatial perspective with the spectator companion of the same app.
-
-**Note:** Pictures are taken via screenshot on iOS/Android devices.
+Leverage built-in Miracast support for local users when you have a supported Miracast receiver such as a PC or TV. No additional app code is needed.
 
 ## Multi-user collaborative experience
 <!--Unity Note-->
@@ -183,4 +172,3 @@ Different scenario or desire to use a different tech/service? Provide feedback a
 * [Azure Spatial Anchors](/azure/spatial-anchors)
 * [Shared spatial anchors in DirectX](../develop/advanced-concepts/shared-spatial-anchors-in-directx.md)
 * [Shared experiences in Unity](../develop/unity/shared-experiences-in-unity.md)
-* [Spectator view](spectator-view.md)

@@ -2,7 +2,7 @@
 title: Streaming in Unreal
 description: Learn how to stream your Unreal apps to HoloLens 2, including streaming limitations and command line options.
 author: sw5813
-ms.author: v-vtieto
+ms.author: vinnietieto
 ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
@@ -14,13 +14,13 @@ appliesto:
 
 # Streaming in Unreal
 
-"Streaming" is sometimes referred to as "Holographic Remoting." To learn more, see [Holographic Remoting overview](../advanced-concepts/holographic-remoting-overview.md)
+"Streaming" is sometimes referred to as "Holographic Remoting." To learn more, see [Holographic Remoting Overview](../native/holographic-remoting-overview.md)
 
 Streaming from a PC to HoloLens provides two major advantages: 
 * It lets your mixed reality app take advantage of your PC's computational power. 
 * It helps speed up development iteration time. 
 
-To get started, you'll need to download the [Holographic Remoting Player](../advanced-concepts/holographic-remoting-player.md) to your HoloLens device. The Holographic Remoting Player lets your app to stream  directly to the remoting player on your HoloLens from the following sources:
+To get started, you'll need to download the [Holographic Remoting Player](../native/holographic-remoting-player.md) to your HoloLens device. The Holographic Remoting Player lets your app to stream  directly to the remoting player on your HoloLens from the following sources:
 
 * The Unreal Engine editor
 * A packaged Windows executable 
@@ -90,7 +90,7 @@ In Unreal 4.25.1 and onwards, you can stream your app to a HoloLens 2 device fro
 > The application name in your project settings should be automatically used to create the Windows package. If these are different for some reason, use the Windows executable name in the command prompt.
 
 > [!NOTE]
-> If eye tracking isn't working when streaming from a packaged executable, either disable any other plugins with PC-supported eye trackers (example: Magic Leap) or run the application from the command line with the relevant eye tracking argument (see [command line options](/mixed-reality/develop/unreal/unreal-streaming?tabs=wmr#command-line-options)).
+> If eye tracking isn't working when streaming from a packaged executable, either disable any other plugins with PC-supported eye trackers (example: Magic Leap) or run the application from the command line with the relevant eye tracking argument (see [command line options](?tabs=wmr#command-line-options)).
 
 Hit enter and watch your application start streaming!
 

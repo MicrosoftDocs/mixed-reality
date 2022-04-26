@@ -21,7 +21,7 @@ After you have imported the tutorial assets your Project window should look simi
 ![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](../images/mr-learning-azure/tutorial1-section4-step1-1-OpenXR.png)
 
 > [!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Importing the Mixed Reality Toolkit](../mr-learning-base-04.md#importing-the-tutorial-assets) instructions.
+> For a reminder on how to import a Unity custom package, you can refer to the [Importing the Mixed Reality Toolkit](/learn/paths/beginner-hololens-2-tutorials/#importing-the-tutorial-assets) instructions.
 
 # [Unity 2020 + Windows XR Plugin](#tab/winxr)
 
@@ -46,7 +46,7 @@ After you have imported the tutorial assets your Project window should look simi
 ![Unity Hierarchy, Scene, and Project windows after importing the tutorial assets](../images/mr-learning-azure/tutorial1-section4-step1-1-XRSDK.png)
 
 > [!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Importing the Mixed Reality Toolkit](../mr-learning-base-04.md#importing-the-tutorial-assets) instructions.
+> For a reminder on how to import a Unity custom package, you can refer to the [Importing the Mixed Reality Toolkit](/learn/paths/beginner-hololens-2-tutorials/#importing-the-tutorial-assets) instructions.
 
 # [Legacy WSA](#tab/wsa)
 
@@ -74,4 +74,4 @@ After you have imported the tutorial assets your Project window should look simi
 > If you see any CS0618 warnings regarding 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' and 'WorldAnchor.GetNativeSpatialAnchorPtr()' being obsolete, you can ignore these warnings.
 
 > [!TIP]
-> For a reminder on how to import a Unity custom package, you can refer to the [Importing the Mixed Reality Toolkit](../mr-learning-base-04.md#importing-the-tutorial-assets) instructions.
+> For a reminder on how to import a Unity custom package, you can refer to the [Importing the Mixed Reality Toolkit](/learn/paths/beginner-hololens-2-tutorials/#importing-the-tutorial-assets) instructions.

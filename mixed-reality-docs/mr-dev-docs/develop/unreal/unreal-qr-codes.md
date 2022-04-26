@@ -2,7 +2,7 @@
 title: QR codes in Unreal
 description: Learn how to setup, use, and track QR codes in Unreal mixed reality applications.
 author: vtieto
-ms.author: v-vtieto
+ms.author: vinnietieto
 ms.date: 11/03/2021
 ms.topic: article
 ms.localizationpriority: high
@@ -70,7 +70,7 @@ Every QR code has a unique guid ID, which you can find by:
 
 ## Next Development Checkpoint
 
-If you're following the [Unreal development checkpoint journey](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unreal/unreal-development-overview?tabs=ue426%2Cmrtk%2Casa%2CD365#3-advanced-features) we've laid out, you can proceed to the next topic:
+If you're following the [Unreal development checkpoint journey](./unreal-development-overview.md?tabs=ue426%2cmrtk%2casa%2cD365#3-advanced-features) we've laid out, you can proceed to the next topic:
 
 > [!div class="nextstepaction"]
 > [WinRT](unreal-winRT.md)

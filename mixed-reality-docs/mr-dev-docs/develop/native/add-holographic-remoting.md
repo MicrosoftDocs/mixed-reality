@@ -2,26 +2,25 @@
 title: Add holographic remoting
 description: Learn how to install, configure, and use Holographic Remoting to render holograms to a HoloLens device over the network.
 author: florianbagarmicrosoft
-ms.author: v-vtieto
+ms.author: vinnietieto
 ms.date: 9/3/2021
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, holographic remoting, remote rendering, network rendering, HoloLens, remote holograms, mixed reality headset, windows mixed reality headset, virtual reality headset
 ---
 
-# Add Holographic Remoting (HoloLens (first gen))
+# Add Holographic Remoting (HoloLens 1st gen)
 
-If you're new to Holographic Remoting, you may want to [read our overview](../advanced-concepts/holographic-remoting-overview.md).
+If you're new to Holographic Remoting, you may want to [read our overview](./holographic-remoting-overview.md).
 
 >[!IMPORTANT]
 > This document describes the creation of a host application for HoloLens 1. Host application for **HoloLens (1st gen)** must use NuGet package version **1.x.x**. This implies that host applications written for HoloLens 1 are not compatible with HoloLens 2 and vice versa.
 
 ## HoloLens 2
 
-HoloLens developers using Holographic Remoting will need to update their apps to make them compatible with HoloLens 2. This requires a new version of the Holographic Remoting NuGet package. Be sure to use version 2.0.0.0 or above of the Holographic Remoting NuGet package when connecting to the Holographic Remoting Player on HoloLens 2 or the connection will fail.
+HoloLens developers using Holographic Remoting will need to update their apps to make them compatible with HoloLens 2. This requires a new version of the Holographic Remoting NuGet package. Be sure to use version 2.0.0.0 or above of the Holographic Remoting NuGet package when connecting to the Holographic Remoting Player on HoloLens 2. Otherwise, the connection will fail.
 
 >[!NOTE]
 > Guidance specific to HoloLens 2 can be found [here](holographic-remoting-create-remote-wmr.md).
-
 
 ## Add holographic remoting to your desktop or UWP app
 
@@ -37,10 +36,11 @@ A typical remoting connection will have as low as 50 ms of latency. The player a
 ### Get the remoting NuGet packages
 
 Follow these steps to get the NuGet package for holographic remoting, and add a reference from your project:
+
 1. Go to your project in Visual Studio.
 2. Right-click on the project node and select **Manage NuGet Packages...**
-3. In the panel that appears, selecct **Browse** and then search for "Holographic Remoting".
-4. Select **Microsoft.Holographic.Remoting** and selecct **Install**.
+3. In the panel that appears, select **Browse** and then search for "Holographic Remoting".
+4. Select **Microsoft.Holographic.Remoting** and select **Install**.
 5. If the **Preview** dialog appears, select **OK**.
 6. Select **I Accept** when the license agreement dialog appears.
 
@@ -255,12 +255,13 @@ internal:
        }
 ```
 
-**Code sample:** A complete [Holographic Remoting code sample](https://github.com/Microsoft/HoloLensCompanionKit) is available, which includes a holographic application view that is compatible with remoting and remoting host projects for desktop Win32, UWP DirectX, and UWP with XAML. 
+**Code sample:** A complete [Holographic Remoting code sample](https://github.com/Microsoft/HoloLensCompanionKit) is available, which includes a holographic application view that is compatible with remoting and remoting host projects for desktop Win32, UWP DirectX, and UWP with XAML.
 
 **Debugging note:** The Holographic Remoting library can throw first-chance exceptions. These exceptions may be visible in debugging sessions, depending on the Visual Studio exception settings that are active at the time. These exceptions are caught internally by the Holographic Remoting library and can be ignored.
 
 ## See Also
-* [Holographic Remoting overview](../advanced-concepts/holographic-remoting-overview.md)
+
+* [Holographic Remoting Overview](holographic-remoting-overview.md)
 * [Writing a custom Holographic Remoting player app](holographic-remoting-create-player.md)
 * [Establishing a secure connection with Holographic Remoting](holographic-remoting-secure-connection.md)
 * [Holographic Remoting troubleshooting and limitations](holographic-remoting-troubleshooting.md)

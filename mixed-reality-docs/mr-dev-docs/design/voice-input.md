@@ -40,7 +40,7 @@ When you're using voice commands, head or eye gaze is the typical targeting mech
         <td><strong>Feature</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
         <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
     </tr>
      <tr>
         <td>Voice input</td>
@@ -84,8 +84,8 @@ You can say "Hey Cortana" to bring up Cortana at any time. You don't have to wai
 **HoloLens-specific commands**
 * "What can I say?"
 * "Go to Start" - instead of [bloom](system-gesture.md#bloom) to get to [Start Menu](../discover/navigating-the-windows-mixed-reality-home.md#start-menu)
-* "Launch <app>"
-* "Move <app> here"
+* "Launch \<app\>"
+* "Move \<app\> here"
 * "Take a picture"
 * "Start recording"
 * "Stop recording"

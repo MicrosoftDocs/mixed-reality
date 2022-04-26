@@ -55,9 +55,9 @@ You'll need to enable two plugins before you can start adding objects to the sce
 
 2. Type **OpenXR** in the search box at the top right and enable the **OpenXR** and **OpenXRMsftHandInteraction** plugins:
 
-![Plugins window with OpenXR enabled](images/unreal-quickstart-img-05.jpg)
+![Plugins window with OpenXR enabled](images/unreal-quickstart-img-05.JPG)
 
-![Plugins window with Open XR Msft Hand Interaction enabled](images/unreal-quickstart-img-06.jpg)
+![Plugins window with Open XR Msft Hand Interaction enabled](images/unreal-quickstart-img-06.JPG)
 
 3. Restart your editor
 
@@ -134,11 +134,11 @@ With that done, your next step is to make sure the AR session starts and stops w
 1. Select **Edit > Project Settings** and go to the **Engine > Input**
 2. Select the **+** icon next to **Action Mappings** and create **RightPinch** and **LeftPinch** actions:
 
-![Binding input settings with right and left pinch action mappings highlighted](images/unreal-quickstart-img-15.jpg)
+![Binding input settings with right and left pinch action mappings highlighted](images/unreal-quickstart-img-15.JPG)
 
 3. Map the **RightPinch** and **LeftPinch** actions the to the respective **OpenXR Msft Hand Interaction** actions:
 
-![Action mappings with Open XR Msft Hand interaction options highlighted](images/unreal-quickstart-img-16.jpg)
+![Action mappings with Open XR Msft Hand interaction options highlighted](images/unreal-quickstart-img-16.JPG)
 
 ## Setting up gestures
 
@@ -148,10 +148,10 @@ Now that we have setup the inputs, we can get to the exciting part: Adding gestu
 * Connect the right pinch event to an **AddActorLocalRotation** with your **Cube** as the target and **Delta Rotation** set to **X = 0, Y = 0**, and **Z = 20**. The cube will now rotate by 20 degrees every time you pinch
 * Connect the left pinch event to **Quit Game**
 
-![Level bluprint open with input actions for right and left pinch events](images/unreal-quickstart-img-17.jpg)
+![Level bluprint open with input actions for right and left pinch events](images/unreal-quickstart-img-17.JPG)
 
 2. In the cube's **Transform** settings, set **Mobility** to **Movable** so it can move dynamically:
 
-![Tranform settings with mobility property highlighted](images/unreal-quickstart-img-18.jpg)
+![Tranform settings with mobility property highlighted](images/unreal-quickstart-img-18.JPG)
 
 At this point, you're ready to deploy and test the application!

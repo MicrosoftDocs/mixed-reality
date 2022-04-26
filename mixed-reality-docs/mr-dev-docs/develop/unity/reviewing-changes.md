@@ -1,8 +1,8 @@
 ---
 title: Authorizing project changes
 description: Learn how to authorize project changes the MR Feature Tool for HoloLens and VR development.
-author: davidkline-ms
-ms.author: v-hferrone
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high

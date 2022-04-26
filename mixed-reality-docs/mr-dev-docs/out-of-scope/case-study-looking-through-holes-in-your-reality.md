@@ -96,10 +96,10 @@ Here are some ideas of where you can take this idea next:
 
 ## About the author
 
-<table style="border-collapse:collapse">
+<table>
 <tr>
-<td style="border-style: none" width="60px"><img alt="Picture of Eric Rehmeyer" width="60" height="60" src="images/genericusertile.jpg"></td>
-<td style="border-style: none"><b>Eric Rehmeyer</b><br>Senior Software Engineer @Microsoft</td>
+<td width="60px"><img alt="Picture of Eric Rehmeyer" width="60" height="60" src="images/genericusertile.jpg"></td>
+<td><b>Eric Rehmeyer</b><br>Senior Software Engineer @Microsoft</td>
 </tr>
 </table>
 

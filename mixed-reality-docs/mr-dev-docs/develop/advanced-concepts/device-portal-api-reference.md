@@ -150,9 +150,40 @@ Parameters
 
 ## Holographic Thermal
 
+When using these thermal APIs, reference the [managing power and thermals](../unity/managing-power-and-thermals.md) article.
+
 **/api/holographic/thermal/stage (GET)**
 
 Get the thermal stage of the device (0 normal, 1 warm, 2 critical).
+
+**/api/holographic/thermal/getMitigationLevels (GET/websocket)**
+
+Open a websocket (or do a single HTTP GET query), returning a list of objects containing the following:
+
+* IsSuppressed - Identifying if a given peripheral has mitigations suppressed
+* Level - Latest thermal mitigation level for this peripheral
+* Mask - Mask of this peripheral
+* ThermalScore - Latest thermal score for this peripheral
+
+Objects are named by peripheral name (Example: Battery)
+
+**/api/holographic/thermal/setMitigationLevel (POST)**
+
+Change the mitigation level being reported for a given peripheral
+
+Parameters
+
+* mask: bitmask with single bit set for the peripheral of interest (See [PowerThermalPeripheralFlags](/dotnet/api/microsoft.mixedreality.powerthermalnotification.PowerThermalPeripheralFlags) for details)
+* level: new level to use (0-3)
+
+**/api/holographic/thermal/setThermalScore (POST)**
+
+Change the thermal score being reported for a given peripheral
+
+Parameters
+
+* mask: bitmask with single bit set for the peripheral of interest (See [PowerThermalPeripheralFlags](/dotnet/api/microsoft.mixedreality.powerthermalnotification.PowerThermalPeripheralFlags) for details)
+* thermalScore: new thermal score to use (100-0)
 
 ## Map Manager
 

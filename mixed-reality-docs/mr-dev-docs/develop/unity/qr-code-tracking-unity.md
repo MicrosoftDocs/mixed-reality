@@ -1,9 +1,9 @@
 ---
 title: QR code tracking
 description: Learn how to detect QR codes, add webcam capabilities, and manage coordinate systems in Unity mixed reality apps on HoloLens 2.
-author: dorreneb
-ms.author: v-vtieto
-ms.date: 09/28/2021
+author: vtieto
+ms.author: vinnietieto
+ms.date: 04/13/2022
 ms.topic: article
 keywords: vr, lbe, location based entertainment, vr arcade, arcade, immersive, qr, qr code, hololens2, tracking
 ---
@@ -35,7 +35,7 @@ You can use the QR code detection API in Unity without importing MRTK by install
 
 When using the OpenXR plugin, grab the [`SpatialGraphNodeId` from the QR API](../native/qr-code-tracking-cs-cpp.md#qr-code-tracking-api-reference) and use the `Microsoft.MixedReality.OpenXR.SpatialGraphNode` API to locate the QR code.
 
-For reference, we have a [QR tracking sample project on GitHub](https://github.com/yl-msft/QRTracking) with more a detailed usage explanation for the [`SpatialGraphNode` API](https://github.com/yl-msft/QRTracking/blob/main/SampleQRCodes/Assets/Scripts/SpatialGraphNodeTracker.cs).
+For reference, we have a [QR tracking sample project on GitHub](https://github.com/microsoft/MixedReality-QRCode-Sample) with more a detailed usage explanation for the [`SpatialGraphNode` API](https://github.com/yl-msft/QRTracking/blob/main/SampleQRCodes/Assets/Scripts/SpatialGraphNodeTracker.cs).
 
 ## Getting the coordinate system for a QR code
 

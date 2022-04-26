@@ -1,8 +1,8 @@
 ---
 title: Hand tracking in Unreal
 description: Learn how to use hand tracking input, pose, hand meshes, and live link animations in Unreal mixed reality apps.
-author: hferrone
-ms.author: v-hferrone
+author: sean-kerawala
+ms.author: sekerawa
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality, hand tracking, Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, mixed reality, development, features, documentation, guides, holograms, game development, mixed reality headset, windows mixed reality headset, virtual reality headset

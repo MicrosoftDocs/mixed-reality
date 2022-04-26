@@ -20,7 +20,7 @@ Some expected use cases of this technology are:
 Scene Understanding is introduced as an __experimental__ feature in MRTK 2.6. It is integrated into MRTK as a [spatial observer](spatial-awareness-getting-started.md#register-observers) called [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver). Scene Understanding works both with the Legacy XR pipeline and the XR SDK pipeline (both OpenXR (starting from MRTK 2.7) and Windows XR Plugin). In both cases the `WindowsSceneUnderstandingObserver` is used.
 
 > [!NOTE] 
-> Using Scene Understanding in Remoting is not supported.
+> Using Scene Understanding in Remoting is only supported in MRTK 2.7.3 and above. Only projects using OpenXR are supported. Projects using the Legacy XR pipeline or Windows XR Plugin are __not__ supported.
 
 ## Observer overview
 
