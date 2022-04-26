@@ -23,7 +23,7 @@ The LED constellation ring and haptics indicate the state of the motion controll
 | **Sleeping**               | LEDs turn off and blink every three seconds while in sleeping state. | The controller enters the sleeping state automatically when it’s motionless for 30 seconds. The controller wakes when it detects motion, except if the device isn't paired with the host PC. Press the button to wake it in that case. |
 | **Pairing**                | LEDs slowly pulse while in pairing mode, and go solid when exiting pairing mode. The controller vibrates once if pairing was successful or three times if pairing is unsuccessful and then times out. | Press and hold the pairing button inside battery case for three seconds. 
 | **Controller connects/disconnects from PC** | The controller vibrates once on PC connection or disconnection. | Happens when the controller successfully connects to the PC after you turn it on, or if the controller disconnects from the PC during use. |
-| **Low Battery Level**      | Haptics are disabled and LEDs dimly lit on connected controllers when the battery is low. The battery indicator icon on the controller handle in the Mixed Reality home environment will show 1/4 full when the battery is low. | Replace your batteries or recharge them if they are rechargeable. If this still happens, refer to [low battery level reported with charged batteries](motion-controller-problems.md#i-inserted-fully-charged-batteries-but-the-controller-virtual-battery-level-does-not-indicate-that-the-batteries-are-fully-charged-or-reports-low-battery-levels). |
+| **Low Battery Level**      | Haptics are disabled and LEDs dimly lit on connected controllers when the battery is low. The battery indicator icon on the controller handle in the mixed reality home environment will show 1/4 full when the battery is low. | Replace your batteries or recharge them if they are rechargeable. If this still happens, refer to [low battery level reported with charged batteries](motion-controller-problems.md#i-inserted-fully-charged-batteries-but-the-controller-virtual-battery-level-does-not-indicate-that-the-batteries-are-fully-charged-or-reports-low-battery-levels). |
 | **Critical Battery Level** | The controller vibrates three times when you turn it on and then automatically turns off. The battery indicator icon will turn red. | Replace the batteries. If the problem persists, [restore the device to its factory settings](motion-controller-problems.md#how-can-i-restore-the-controllers-to-factory-settings). | 
 
 ## My Motion controllers aren't working properly
@@ -31,7 +31,7 @@ The LED constellation ring and haptics indicate the state of the motion controll
 If your [motion controllers](controllers-in-wmr.md) aren’t working, connecting, or showing an image of the controllers when you’re wearing your headset:
 
 1. Make sure your controllers are turned on. To turn them on, press and hold the Windows button for two seconds.
-2. Make sure the batteries inside the controllers are fully charged, if not, replace the batteries or recharge them if they are rechargeable.
+2. Make sure the batteries inside the controllers are fully charged. If not, replace the batteries or recharge them if they are rechargeable.
 3. Turn the controllers off and on again while holding them in front of you. Press and hold the Windows button for four seconds to turn off a controller. Press and hold it again for two seconds to turn it on.
 4. Check if your motion controllers are [paired correctly](controllers-in-wmr.md#pair-motion-controllers).
 5. Check the motion controllers LEDs: Brightly lit controllers are paired and connected, dimly lit controllers aren't connected.
@@ -42,7 +42,7 @@ If your [motion controllers](controllers-in-wmr.md) aren’t working, connecting
 7. If you're using an external USB Bluetooth Adapter, make sure it’s plugged into a USB 2.0 port (they're often but not always black). It should also be plugged in as far as possible from any other wireless transmitters or USB flash drives, including the USB connector for your headset. 
 8. Go to **Device Manager > Bluetooth** and look for one adapter to check that there’s only one Bluetooth radio in the PC. If you're using the desktop PC configuration with built-in radio, check if an external antenna is connected. If there's no external antenna connected, it can cause tracking issues. Or use an external Bluetooth dongle (USB), disable the internal Bluetooth capability, and retry pairing and connecting.
 9. If the Bluetooth settings window is open in the background, many extra calls are made to the Bluetooth protocol. Close it.
-10. Check the virtual battery level on the motion controller by looking at the battery icon on the bottom rear of the controller inside your Mixed Reality home environment. Wait about 15 seconds before reading the level, since the reported level is likely higher than the actual level shortly after connecting a controller. If the icon shows red, replace the batteries or recharge them if they are rechargeable. If the virtual battery level stays low, see [low battery level reported with charged batteries](motion-controller-problems.md#i-inserted-fully-charged-batteries-but-the-controller-virtual-battery-level-does-not-indicate-that-the-batteries-are-fully-charged-or-reports-low-battery-levels).
+10. Check the virtual battery level on the motion controller by looking at the battery icon on the bottom rear of the controller inside your mixed reality home environment. Wait about 15 seconds before reading the level, since the reported level is likely higher than the actual level shortly after connecting a controller. If the icon shows red, replace the batteries or recharge them if they are rechargeable. If the virtual battery level stays low, see [low battery level reported with charged batteries](motion-controller-problems.md#i-inserted-fully-charged-batteries-but-the-controller-virtual-battery-level-does-not-indicate-that-the-batteries-are-fully-charged-or-reports-low-battery-levels).
 11. Remove Bluetooth headphones and speakers in **Settings > Devices > Bluetooth & other devices**, and turn off the devices. Use the headphone jack or built-in speakers on your Mixed Reality headset for the best audio experience.
 12. Remove other Bluetooth devices that may be paired with your PC, such as headphones or gamepads. Go to **Settings > Devices > Bluetooth & other devices**, select the devices, and then "Remove device".
 13. Unplug the USB cable on your headset and plug it back into the PC to restart Windows Mixed Reality.
@@ -51,7 +51,7 @@ If your [motion controllers](controllers-in-wmr.md) aren’t working, connecting
 16. If your Bluetooth settings have motion controllers already paired, Windows won’t discover the new devices until those are removed. If they have been added using a specific dongle, they can be only removed with that dongle.
 17. If your PC has built-in Bluetooth and you’re having connection problems, try using a USB Bluetooth adapter. To do this, turn off your built-in Bluetooth radio in Device Manager and then pair your other Bluetooth devices with the new adapter.
 
-## My controllers jitter, get stuck, or flicker and disappear in Mixed Reality
+## My controllers jitter, get stuck, or flicker and disappear in mixed reality
 
 * If your PC is running on 2.4 GHz Wi-Fi, switch to 5 GHz Wi-Fi. 
 * If you're using an external Bluetooth adapter, make sure it's plugged into a USB 2.0 port (which is often, but not always, black), away from other wireless transmitters or USB flash drives.
@@ -122,7 +122,7 @@ You can pair a Bluetooth Xbox controller to use it with your headset by followin
 
 If you have a wired Xbox controller, plug it in to your PC.
 
-Some games and apps use the Xbox controller differently than it's used in Mixed Reality. To use the controller for a game or app, select "Use as gamepad" on the app bar or say, "Use as gamepad." To switch the controller back to Mixed Reality, select "Use as gamepad"  again, or say "Use with gaze." 
+Some games and apps use the Xbox controller differently than it's used in mixed reality. To use the controller for a game or app, select "Use as gamepad" on the app bar or say "Use as gamepad." To switch the controller back to mixed reality, select "Use as gamepad"  again, or say "Use with gaze." 
 
 ## How do I pair new controllers if Windows Mixed Reality is already set up on my PC
 
