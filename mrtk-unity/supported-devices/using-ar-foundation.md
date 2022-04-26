@@ -40,6 +40,11 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, AR Core,
 
     ![Update Scripting Defines](../features/images/UpdateScriptingDefineUnityAR.png)
 
+## Add the MixedRealityToolKit scene to your project
+
+1. Select Mixed Reality -> Toolkit -> Add to scene and configure <br><br>
+![Mixed Reality -> Toolkit -> Add to scene and configure menu option](https://user-images.githubusercontent.com/32169182/152684919-f2ef049a-4f66-4f54-854c-e2941f0a73ee.png)
+
 
 ## Enabling the Unity AR camera settings provider
 
