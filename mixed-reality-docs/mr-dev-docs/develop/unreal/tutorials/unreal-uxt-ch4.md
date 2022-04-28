@@ -34,7 +34,7 @@ Before you start working with user input, you'll need to add the Mixed Reality U
 3.	The UXTools plugin has a Content folder with subfolders for components, including **Buttons**, **XR Simulation**, and **Pointers**, and a C++ Classes folder with additional code.  
 
 > [!NOTE]
-> If you don’t see the **UXTools Content** section in the **Content Browser**, check **View Options > Show Engine Content** and **View Options > Show Plugin Content*.
+> If you don’t see the **UXTools Content** section in the **Content Browser**, click **View Options > Show Engine Content**.
 
 ![Show engine content](images/unreal-uxt/4-showenginecontent.PNG)
 

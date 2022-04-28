@@ -166,7 +166,7 @@ const createScene = async function(engine) {
     keyboard.parent = piano;
 
     // Import and scale piano frame
-    BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/MicrosoftDocs/mixed-reality/docs/mixed-reality-docs/mr-dev-docs/develop/javascript/tutorials/babylonjs-webxr-piano/files/", "pianoFrame.babylon", scene, function(meshes) {
+    BABYLON.SceneLoader.ImportMesh("frame", "https://docs.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-piano/files", "pianoFrame.babylon", scene, function(meshes) {
         const frame = meshes[0];
         frame.parent = piano;
     });
@@ -553,7 +553,7 @@ const createScene = async function(engine) {
     keyboard.parent = piano;
 
     // Import and scale piano frame
-    BABYLON.SceneLoader.ImportMesh("frame", "https://raw.githubusercontent.com/MicrosoftDocs/mixed-reality/docs/mixed-reality-docs/mr-dev-docs/develop/javascript/tutorials/babylonjs-webxr-piano/files/", "pianoFrame.babylon", scene, function(meshes) {
+    BABYLON.SceneLoader.ImportMesh("frame", "https://docs.microsoft.com/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-piano/files", "pianoFrame.babylon", scene, function(meshes) {
         const frame = meshes[0];
         frame.parent = piano;
     });
@@ -651,4 +651,4 @@ const createScene = async function(engine) {
 
 ## Next steps
 
-For more information on Mixed Reality JavaScript development see [JavaScript development overview](../../javascript-development-overview.md).
+For more information on Mixed Reality JavaScript development see [JavaScript development overview](/windows/mixed-reality/develop/javascript/javascript-development-overview).

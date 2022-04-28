@@ -10,21 +10,15 @@ keywords: HoloLens, HoloLens 2, PIX, capture, mixed reality headset, windows mix
 
 # Installing PIX for HoloLens 2
 
-[PIX](https://devblogs.microsoft.com/pix) is a performance tuning and debugging tool for DirectX 12 applications on Windows but can also be used for DirectX 11 using [Direct3D 11 on 12](/windows/win32/direct3d12/direct3d-11-on-12).
-
-## Prerequisites
-
-1. Latest version of [PIX](https://devblogs.microsoft.com/pix/download) installed on the PC.
-1. Latest [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-sdk/) for **IPoverUSB** to be able to connect the HoloLens 2 to a PC via USB.
-1. An **ARM64** build of your application. PIX only supports ARM64.
-1. The HoloLens2 needs to be connected to the PC via a USB cable.
-
->[!NOTE]
-> Some configurations, like using a [Windows Insider build](https://insider.windows.com) can break PIX on HoloLens 2. If that happens, [reflash your device](/hololens/hololens-recovery) to erase all data and repeat the instructions below.
+[PIX](https://devblogs.microsoft.com/pix) is a performance tuning and debugging tool for DirectX 12 applications on Windows. 
 
 ## Setup
 
-1. Enable **Developer Mode** and **Device Portal**:
+1. Grab the latest PIX [release]( https://devblogs.microsoft.com/pix/download) from your host PC and connect your HoloLens 2 to your PC via a USB cable.
+
+2. If your HoloLens 2 is on a [Windows Insider build](https://insider.windows.com) or has a configuration that breaks PIX,  [reflash your device](/hololens/hololens-recovery) to erase all data.
+
+3. Enable **Developer Mode** and **Device Portal**:
 
 * Open **Settings** from Mixed Reality Home:
 
@@ -92,11 +86,7 @@ First, use Device Portal to verify the app isn't running on the HoloLens 2. Then
 > [!NOTE]
 > The first connection is always slower because binaries are being copied.
 
-1. When PIX has connected to the HoloLens 2, find your app in the **Select Target Process** section in the Launch UWP tab, and then make sure **Launch for GPU Capture** is active. 
-
-1. If your application is running on DX11, make sure that **Force D3D11On12** is selected. 
-
-1. Click **Launch**:
+4. When PIX has connected to the HoloLens 2, find your app in the **Select Target Process** section in the Launch UWP tab, and select **Launch**:
 
 ![Screenshot of PIX application with the select target process window and launch button highlighted](images/pix-img-13.png)
 
@@ -117,9 +107,7 @@ First, use Device Portal to verify the app isn't running on the HoloLens 2. Then
 > [!IMPORTANT]
 > If you collect timing data after taking a GPU capture, you'll be required to reboot the headset. This is a one-time restart of the device and is required for timing data collection.
 
-PIX is now ready for use! For an introduction on how to use PIX, please refer to [PIX GPU captures](https://devblogs.microsoft.com/pix/gpu-captures/).
-
+PIX is now ready for use!
 
 ## See also
 * [PIX homepage](https://devblogs.microsoft.com/pix)
-* [PIX GPU captures](https://devblogs.microsoft.com/pix/gpu-captures/)

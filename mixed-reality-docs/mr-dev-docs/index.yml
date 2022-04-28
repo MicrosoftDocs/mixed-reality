@@ -188,7 +188,7 @@ tools:
     - title: MRTK for Unity
       # imageSrc should be square in ratio with no whitespace
       imageSrc: images/Final_mrtk-small_logo.png
-      url: /windows/mixed-reality/mrtk-unity
+      url: https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-unity
     # Card
     - title: MRTK for Unreal 
       imageSrc: images/Final_mrtk-small_logo.png

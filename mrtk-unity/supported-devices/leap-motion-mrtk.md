@@ -1,10 +1,10 @@
 ---
-title: Using Leap Motion / Ultraleap
-description: Documentation to configure for Leap Motion / Ultraleap 
+title: Using Leap Motion
+description: Documentation to configure for Leap Motion
 author: CDiaz-ms
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Leap Motion, Ultraleap
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Leap Motion,
 ---
 
 # Using Leap Motion
@@ -24,25 +24,16 @@ This provider can be used in editor and on device while on the Standalone platfo
 |2.7.3| 4.5.0, 4.5.1, 4.6.0, 4.7.0, 4.7.1, 4.8.0, 4.9.1 (see note below) |
 
 > [!NOTE]
-> Unity Modules 4.9.1 require the [Gemini 5.2](https://developer.leapmotion.com/tracking-software-download) tracking service or higher. The Unity plugin V4.9.1 is only officially supported on Unity 2019.  See [release notes for 4.9.1](https://github.com/leapmotion/UnityModules/releases/tag/UM-4.9.1).
+> Unity Modules 4.9.1 require the [Gemini 5.2](https://developer.leapmotion.com/tracking-software-download) tracking service or higher, and are only officially supported on Unity 2019.  See [release notes for 4.9.1](https://github.com/leapmotion/UnityModules/releases/tag/UM-4.9.1).
 
-The Unity Modules were renamed the The Unity Plugin in V5.0.0.
-
-| MRTK Version | Ultraleap Unity Plugin Versions Supported |
-| --- | --- |
-|2.7.4| 5.3.0 (see note below) |
-
-> [!NOTE]
-> The Unity Plugin versions 5.0.0, 5.1.0 and 5.2.0 are **not** supported in any version of MRTK. Users are recommended to upgrade to 5.3.0. Unity Plugin 5.3.0 requires the [Gemini 5.2](https://developer.leapmotion.com/tracking-software-download) tracking service or higher. 
 
 ## Using Leap Motion (by Ultraleap) hand tracking in MRTK
 
-1. Importing MRTK and the Leap Motion Unity Modules / Unity Plugin
+1. Importing MRTK and the Leap Motion Unity Modules
     - Install the latest [Leap Motion Tracking Software](https://developer.leapmotion.com/tracking-software-download) to get the Tracking Service if it is not already installed
     - Import the **Microsoft.MixedReality.Toolkit.Foundation** package into the Unity project.
-    - Download and import the latest version of the [Leap Motion Unity Modules / Unity Plugin](https://developer.leapmotion.com/unity) into the project
-        - For Unity Modules: only import the **Core** package within the project
-        - For Unity Plugin: only import the **Tracking** package within the project. Only .unitypackages are supported for now.
+    - Download and import the latest version of the [Leap Motion Unity Modules](https://developer.leapmotion.com/unity) into the project
+        - Only import the **Core** package within the Unity Modules
 
     > [!IMPORTANT]
     > Unity deprecated SelectionMode.OnlyUserModifiable after Unity 2019.4.19 which results in the following error coming from the Ultraleap Hotkeys.cs script:
@@ -50,10 +41,10 @@ The Unity Modules were renamed the The Unity Plugin in V5.0.0.
       
     > To resolve the issues, change the SelectionMode.OnlyUserModifiable to SelectionMode.Editable in the Hotkeys.cs script located in Plugins/LeapMotion/Core/Editor/Hotkeys.cs.
 
-1. Integrate the Leap Motion Unity Modules / Unity Plugin with MRTK
-    - After the Unity Modules / Unity Plugin are in the project, navigate to **Mixed Reality Toolkit** > **Leap Motion** > **Integrate Leap Motion Unity Modules**
+1. Integrate the Leap Motion Unity Modules with MRTK
+    - After the Unity Modules are in the project, navigate to **Mixed Reality Toolkit** > **Leap Motion** > **Integrate Leap Motion Unity Modules**
     > [!NOTE]
-    > Integrating the **Unity Modules** to MRTK adds 10 assembly definitions to the project and adds references to the **Microsoft.MixedReality.Toolkit.Providers.LeapMotion** assembly definition. Make sure Visual Studio is closed.
+    > Integrating the Unity Modules to MRTK adds 10 assembly definitions to the project and adds references to the **Microsoft.MixedReality.Toolkit.Providers.LeapMotion** assembly definition. Make sure Visual Studio is closed.
 
      ![LeapMotionIntegration](../images/cross-platform/leap-motion/LeapMotionIntegrateMenu.png)
 
