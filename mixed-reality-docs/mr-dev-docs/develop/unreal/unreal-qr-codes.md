@@ -45,7 +45,7 @@ QR codes are surfaced through Unreal’s AR tracked geometry system as a tracked
 ![QR Events](images/unreal-spatialmapping-events.PNG)
 
 3. Click **+** next to **On Add Tracked Geometry** to add the node to the Event Graph.
-    - You can find the full list of events in the [UARTrackableNotify](https://docs.unrealengine.com/en-US/API/Runtime/AugmentedReality/UARTrackableNotifyComponent/index.html) component API.
+    - You can find the full list of events in the [UARTrackableNotify](https://docs.unrealengine.com/API/Runtime/AugmentedReality/UARTrackableNotifyComponent/index.html) component API.
 
 ![Add node to On Add Tracked Geometry](images/unreal-qr-codes-tracked-geometry.png)
 

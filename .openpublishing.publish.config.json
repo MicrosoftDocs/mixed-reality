@@ -31,174 +31,6 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "mrtk3-core-alt",
-      "build_source_folder": "mrtk-unity/mrtk3-core-alt",
-      "build_output_subfolder": "mrtk3-core-alt",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "mrtk3-data",
-      "build_source_folder": "mrtk-unity/mrtk3-data",
-      "build_output_subfolder": "mrtk3-data",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "mrtk3-diagnostics",
-      "build_source_folder": "mrtk-unity/mrtk3-diagnostics",
-      "build_output_subfolder": "mrtk3-diagnostics",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "mrtk3-environment",
-      "build_source_folder": "mrtk-unity/mrtk3-environment",
-      "build_output_subfolder": "mrtk3-environment",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "mrtk3-extendedassets",
-      "build_source_folder": "mrtk-unity/mrtk3-extendedassets",
-      "build_output_subfolder": "mrtk3-extendedassets",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "mrtk3-input",
-      "build_source_folder": "mrtk-unity/mrtk3-input",
-      "build_output_subfolder": "mrtk3-input",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "mrtk3-overview",
-      "build_source_folder": "mrtk-unity/mrtk3-overview",
-      "build_output_subfolder": "mrtk3-overview",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "mrtk3-spatialmanipulation",
-      "build_source_folder": "mrtk-unity/mrtk3-spatialmanipulation",
-      "build_output_subfolder": "mrtk3-spatialmanipulation",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "mrtk3-standardassets",
-      "build_source_folder": "mrtk-unity/mrtk3-standardassets",
-      "build_output_subfolder": "mrtk3-standardassets",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "mrtk3-uxcomponents",
-      "build_source_folder": "mrtk-unity/mrtk3-uxcomponents",
-      "build_output_subfolder": "mrtk3-uxcomponents",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "mrtk3-uxcore",
-      "build_source_folder": "mrtk-unity/mrtk3-uxcore",
-      "build_output_subfolder": "mrtk3-uxcore",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
-      "docset_name": "mrtk3-windowsspeech",
-      "build_source_folder": "mrtk-unity/mrtk3-windowsspeech",
-      "build_output_subfolder": "mrtk3-windowsspeech",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "mrtk-unity",
       "build_source_folder": "mrtk-unity",
       "build_output_subfolder": "mrtk-unity",
@@ -242,6 +74,7 @@
   "git_repository_branch_open_to_public_contributors": "docs",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
+  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -268,6 +101,7 @@
       "template_folder": "_themes.pdf"
     }
   },
-  "docs_build_engine": {},
-  "contribution_branch_mappings": {}
+  "docs_build_engine": {
+    "name": "docfx_v3"
+  }
 }

@@ -20,7 +20,7 @@ MaquetteScript development is primarily done within VSCode. MaquetteScript can r
 
 * Download and install [VSCode](https://code.visualstudio.com). 
 
-The Maquette JavaScript extension is in [the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-maquette.vscode-maquette-javascript).
+The Maquette javascript extension is in [the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-maquette.vscode-maquette-javascript).
 
 * Run the [installation procedure for the extension](vscode:extension/ms-maquette.vscode-maquette-javascript).
 
