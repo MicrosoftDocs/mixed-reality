@@ -68,7 +68,7 @@ Find out more about [inside-out tracking](./tracking-system.md).
 
 **Quick Answer:** All smartphone-based VR products, including the Samsung Gear VR and Google Daydream, use three Degrees Of Freedom (3DOF) head position tracking systems. 3DOF based systems allow you to move your head **only** from the neck up in the virtual world. Windows MR on the other hand uses a six Degrees of Freedom (6DOF) head and controllers position tracking systems. 6DOF based systems allow you to move your entire body in the virtual world; so you can walk around an object and see it from different perspectives, just like you can in the physical world. The Rift and the Vive are also 6DOF based systems.
 
-* Read more about 3DOF and 6DOF here: </windows/mixed-reality/enthusiast-guide/tracking-system#what-is-the-difference-between-3dof-and-6dof> 
+* Read more about 3DOF and 6DOF here: <https://docs.microsoft.com/en-us//windows/mixed-reality/enthusiast-guide/tracking-system#what-is-the-difference-between-3dof-and-6dof> 
 * Read more about Positional Tracking and Degree's of Freedom (DOF) here: <https://www.roadtovr.com/introduction-positional-tracking-degrees-freedom-dof/>
 
 ## Technical specifications
