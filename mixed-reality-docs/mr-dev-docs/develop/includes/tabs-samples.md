@@ -75,4 +75,4 @@ Our partners at Epic Games have released an excellent HoloLens 2 sample project 
 > [!NOTE]
 > This experience must be streamed from a high-end PC to the headset.
 
-* [Mission AR](https://docs.unrealengine.com/Resources/Showcases/MissionAR/index.html)
+* [Mission AR](https://docs.unrealengine.com/4.27/en-US/Resources/Showcases/MissionAR/)
