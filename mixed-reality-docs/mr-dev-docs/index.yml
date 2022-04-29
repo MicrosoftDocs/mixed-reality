@@ -144,7 +144,7 @@ conceptualContent:
         - url: develop/unreal/unreal-development-overview.md
           itemType: overview
           text: Unreal docs - Overview
-        - url: /develop/unreal/unreal-mrtk-introduction.md
+        - url: develop/unreal/unreal-mrtk-introduction.md
           itemType: overview
           text: MRTK for Unreal
         - url: develop/unreal/unreal-hololens-camera.md
@@ -188,7 +188,7 @@ tools:
     - title: MRTK for Unity
       # imageSrc should be square in ratio with no whitespace
       imageSrc: images/Final_mrtk-small_logo.png
-      url: https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-unity
+      url: /windows/mixed-reality/mrtk-unity
     # Card
     - title: MRTK for Unreal 
       imageSrc: images/Final_mrtk-small_logo.png

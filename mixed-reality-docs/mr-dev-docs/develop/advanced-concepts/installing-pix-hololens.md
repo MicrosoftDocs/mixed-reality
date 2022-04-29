@@ -10,7 +10,7 @@ keywords: HoloLens, HoloLens 2, PIX, capture, mixed reality headset, windows mix
 
 # Installing PIX for HoloLens 2
 
-[PIX](https://devblogs.microsoft.com/pix) is a performance tuning and debugging tool for DirectX 12 applications on Windows but can also be used for DirectX 11 using [Direct3D 11 on 12](https://docs.microsoft.com/windows/win32/direct3d12/direct3d-11-on-12).
+[PIX](https://devblogs.microsoft.com/pix) is a performance tuning and debugging tool for DirectX 12 applications on Windows but can also be used for DirectX 11 using [Direct3D 11 on 12](/windows/win32/direct3d12/direct3d-11-on-12).
 
 ## Prerequisites
 
