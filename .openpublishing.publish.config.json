@@ -143,6 +143,20 @@
       "template_folder": "_themes"
     },
     {
+      "docset_name": "mrtk3-standardassets",
+      "build_source_folder": "mrtk-unity/mrtk3-standardassets",
+      "build_output_subfolder": "mrtk3-standardassets",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    },
+    {
       "docset_name": "mrtk3-uxcomponents",
       "build_source_folder": "mrtk-unity/mrtk3-uxcomponents",
       "build_output_subfolder": "mrtk3-uxcomponents",
