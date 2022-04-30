@@ -397,6 +397,8 @@
         href: native/openxr-getting-started.md
       - name: OpenXR best practices
         href: native/openxr-best-practices.md
+      - name: OpenXR cookbook
+        href: native/openxr-cookbook.md
       - name: OpenXR performance
         href: native/openxr-performance.md
       - name: OpenXR troubleshooting
