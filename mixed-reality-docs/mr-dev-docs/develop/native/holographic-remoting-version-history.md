@@ -14,9 +14,9 @@ keywords: HoloLens, Remoting, Holographic Remoting, version history, mixed reali
 > This guidance is specific to Holographic Remoting on HoloLens 2 and Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md).
 
 ## Version 2.8.0 (May 03, 2022) <a name="v2.8.0"></a>
-* Full feature support for the XR_MSFT_scene_understanding extension. With that all scene compute features and consistencies are now supported.
-* Optimizations and Latency reduction.
-* Fixed issues with Multi-GPU systems.
+* Full feature support for the XR_MSFT_scene_understanding extension. With that, all scene compute features and scene compute consistencies are now supported.
+* Optimizations and latency reduction.
+* Fixed issues with multi-GPU systems.
 * Lots of other bug fixes and stability improvements.
 
 ## Version 2.7.5 (March 23, 2022) <a name="v2.7.5"></a>
