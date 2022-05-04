@@ -27,7 +27,7 @@ Unity currently uses its general `Input.GetButton/Input.GetAxis` APIs to expose 
 For more information, see the [Unity button/axis mapping table](../../unity/motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) and the overview of the [Common Unity APIs](../../unity/motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis).
 
 > [!IMPORTANT]
-> If you use HP Reverb G2 controllers, see [HP Reverb G2 Controllers in Unity](../../unity/unity-reverb-g2-controllers.md) for more input mapping instructions.
+> If you use HP Reverb G2 controllers, see [HP Reverb G2 Controllers in Unity](../../unity/unity-reverb-g2-controllers.md) for further input mapping instructions.
 
 ## Windows-specific XR.WSA.Input APIs
 
