@@ -37,7 +37,7 @@ Hand meshes, the HoloLens camera, and the system keyboard are unavailable over s
 
 #### OpenXR
 
-Unreal 4.26 running on OpenXR supports streaming to versions 2.4.0+ of the Holographic Remoting Player. OpenXR streaming in 2.4.0 is missing support for spatial mapping and spatial anchors. 
+Unreal 4.26 running on OpenXR supports streaming to versions 2.4.0+ of the Holographic Remoting Player. For the latest feature support with Holographic Remoting see the [version history](../native/holographic-remoting-version-history.md) and the [troubleshooting](../native/holographic-remoting-troubleshooting.md) pages.
 
 ## Device support
 
@@ -57,16 +57,19 @@ Unreal 4.26 running on OpenXR supports streaming to versions 2.4.0+ of the Holog
         <td>Unreal editor</td>
         <td>✔️</td>
         <td>✔️</td>
-        <td>❌</td>
+        <td>✔️</td>
     </tr>
     <tr>
         <td>Windows package</td>
         <td>❌</td>
         <td>✔️</td>
-        <td>❌</td>
+        <td>✔️</td>
     </tr>
 
 </table>
+
+> [!Note]
+> Starting with Holographic Remoting version [2.2.0](../native/holographic-remoting-version-history.md#v2.2.0) streaming is also available for Windows PCs running [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md).
 
 ## Streaming from the Unreal editor
 

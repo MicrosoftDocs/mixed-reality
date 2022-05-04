@@ -16,8 +16,7 @@ Scene understanding provides the MRMesh with planes that are classified with the
 You can find more information in the [Scene Understanding](../../design/scene-understanding.md) document.
 
 > [!NOTE]
-> Using Scene Understanding in Remoting is not supported.  Spatial Mapping must be used instead.
-
+> Starting with Holographic Remoting version [2.8.0](../native/holographic-remoting-version-history.md#v2.8.0) Scene Understanding is fully supported.
 
 ## Prerequisites
 > [!IMPORTANT] 
