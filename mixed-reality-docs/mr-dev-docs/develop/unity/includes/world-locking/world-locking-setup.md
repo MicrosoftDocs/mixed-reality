@@ -41,7 +41,7 @@ To add a world anchor, call `AddComponent<WorldAnchor>()` on the game object wit
 WorldAnchor anchor = gameObject.AddComponent<WorldAnchor>();
 ```
 
-That's it! This game object will now be anchored to its current location in the physical world - you may see its Unity world coordinates adjust slightly over time to ensure that physical alignment. Refer to [loading a world anchor](#loading-a-worldanchor) to find this anchored location again in a future app session.
+That's it! This game object will now be anchored to its current location in the physical world - you may see its Unity world coordinates adjust slightly over time to ensure that physical alignment. Refer to [load a world anchor](../../persistence-in-unity.md#load-a-world-anchor) to find this anchored location again in a future app session.
 
 ### Removing a World Anchor
 

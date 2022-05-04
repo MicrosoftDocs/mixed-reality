@@ -105,4 +105,4 @@ For older Unity versions or WSA projects, use **WorldAnchor**.
 
 The **WorldAnchorStore** creates holographic experiences where holograms stay in specific real world positions across instances of the application. Users can pin individual holograms wherever they want, and find them later in the same spot over app sessions.
 
-For more information and instructions, see [Persistence in Unity](../persistence-in-unity.md).
+For more information and instructions, see [Persistence in Unity](../../persistence-in-unity.md).

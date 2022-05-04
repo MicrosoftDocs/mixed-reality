@@ -24,10 +24,10 @@ Future Unity releases phase out the XR.WSA APIs in favor of the XR SDK. For new 
 
 Unity currently uses its general `Input.GetButton/Input.GetAxis` APIs to expose input for the [Oculus SDK](https://docs.unity3d.com/Manual/OculusControllers.html) and the [OpenVR SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html). If your apps already use these APIs for input, these APIs are the easiest path to support motion controllers in Windows Mixed Reality. You just need to remap buttons and axes in the Input Manager.
 
-For more information, see the [Unity button/axis mapping table](../../unity/motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) and the overview of the [Common Unity APIs](../../unity/motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis).
+For more information, see the [Unity button/axis mapping table](../unity/motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) and the overview of the [Common Unity APIs](../unity/motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis).
 
 > [!IMPORTANT]
-> If you use HP Reverb G2 controllers, see [HP Reverb G2 Controllers in Unity](../../unity/unity-reverb-g2-controllers.md) for further input mapping instructions.
+> If you use HP Reverb G2 controllers, see [HP Reverb G2 Controllers in Unity](../unity/unity-reverb-g2-controllers.md) for further input mapping instructions.
 
 ## Windows-specific XR.WSA.Input APIs
 
