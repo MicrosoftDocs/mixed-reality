@@ -12,17 +12,17 @@ keywords: port, unity, unreal, middleware, engine, UWP, Win32, porting, HoloLens
 
 Windows 10 includes support for immersive and holographic headsets. Other devices like the Oculus Rift or HTC Vive have dependencies on libraries that exist above the operating system's platform API. To bring existing Win32 Unity VR apps over to Windows Mixed Reality, you need to retarget vendor-specific VR SDK usage to Unity's cross-vendor VR APIs.
 
-The following high-level steps are involved in porting existing content:
+Porting existing applications involves the following high-level processes:
 
-1. Make sure your PC is running the Windows 10 Fall Creators Update (16299).
-1. Upgrade to the latest version of your graphics or game engine. Game engines must support the Windows 10 SDK version 10.0.15063.0 or higher.
+1. Make sure your PC is running the **Windows 10 Fall Creators Update (16299)**.
+1. Upgrade to the latest version of your graphics or game engine. Game engines must support the **Windows 10 SDK version 10.0.15063.0** or higher.
 1. Upgrade middleware, plug-ins, and components. If your app contains any components, upgrade to the latest version.
-1. Remove dependencies on duplicate SDKs. Depending on which device your content targeted, you need to remove or conditionally compile out that SDK and target the Windows APIs instead.
+1. Remove dependencies on duplicate SDKs. Depending on which device your content targeted, remove or conditionally compile out that SDK and target the Windows APIs instead.
 1. Work through build issues specific to your app, your engine, and your component dependencies.
 
 ## Common porting steps
 
-First, take the following common porting steps:
+Start with the following common porting steps:
 
 1. Make sure you have the right development hardware. The [VR enthusiast guide](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines) lists the recommended development hardware.
 
@@ -49,7 +49,5 @@ First, take the following common porting steps:
 * [Performance Recommendations for Unity](../unity/performance-recommendations-for-unity.md)
 * [Motion controllers](../../design/motion-controllers.md)
 * [Motion controllers in Unity](../unity/motion-controllers-in-unity.md)
-* [UnityEngine.XR.WSA.Input](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
 * [UnityEngine.XR.InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)
-* [Porting guides](porting-guides.md)
 

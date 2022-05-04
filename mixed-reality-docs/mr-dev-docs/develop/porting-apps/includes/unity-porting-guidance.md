@@ -1,17 +1,8 @@
-Review the common steps to make sure your development environment is set up correctly. If you're using Visual Studio, select the **Game Development with Unity** workload. You can deselect the **Unity Editor optional** component, since you install a newer version of Unity in the next step.
+Review the common steps to make sure your development environment is set up correctly. If you're using Visual Studio, select the **Game Development with Unity** workload. You can deselect the **Unity Editor optional** component, since you'll install a newer version of Unity.
 
 To port existing Unity content, follow these steps:
 
-1. Upgrade to the latest public build of Unity with Windows MR Support.
-1. Upgrade your middleware to the latest versions.
-1. Target your application to run on Win32.
-1. Target your application to run on Windows Mixed Reality.
-1. Set up your Windows Mixed Reality hardware.
-1. Use the stage to place content on the floor.
-1. Work through your input model.
-1. Test and tune performance.
-
-### Upgrade to the latest public build of Unity with Windows MR Support
+### 1. Upgrade to the latest public build of Unity with Windows MR Support
 
 1. Save a copy of your project before you get started.
 1. [Download the latest recommended public build of Unity](../../install-the-tools.md) with mixed reality support.
@@ -19,11 +10,11 @@ To port existing Unity content, follow these steps:
 1. Follow the instructions for using Unity's [automatic API updater](https://docs.unity3d.com/Manual/APIUpdater.html).
 1. See if you need to make any other changes to get your project running, and work through any remaining errors and warnings.
 
-### Upgrade your middleware to the latest versions
+### 2. Upgrade your middleware to the latest versions
 
 With any Unity update, you might need to update one or more middleware packages that your game or application depends on. Updating to the latest middleware increases the likelihood of success throughout the rest of the porting process.
 
-### Target your application to run on Win32
+### 3. Target your application to run on Win32
 
 From inside your Unity application:
 
@@ -36,19 +27,20 @@ From inside your Unity application:
 > [!NOTE]
 > If your application has any dependencies on device-specific services, such as match making from Steam, disable them at this step. You can hook up the Windows equivalent services later.
 
-### Target your application to run on Windows Mixed Reality
+### 4. Target your application to run on Windows Mixed Reality
 
-1. Remove or conditionally compile out any library support specific to another VR SDK. Those assets frequently change settings and properties on your project in ways that are incompatible with VR SDKs like Windows Mixed Reality. For example, if your project references the SteamVR SDK, update your project to instead use Unity's common VR APIs, which support both Windows Mixed Reality and SteamVR.
+1. Remove or conditionally compile out any library support specific to another VR SDK. Those assets frequently change settings and properties on your project in ways that are incompatible with VR SDKs like Windows Mixed Reality.
+
+   For example, if your project references the SteamVR SDK, update your project to instead use Unity's common VR APIs, which support both Windows Mixed Reality and SteamVR.
 1. In your Unity project, [target the Windows 10 SDK](../../unity/tutorials/holograms-100.md#target-windows-10-sdk).
 3. For each scene, [set up the camera](../../unity/tutorials/holograms-100.md#chapter-2---setup-the-camera).
 
-### Set up your Windows Mixed Reality hardware
+### 5. Set up your Windows Mixed Reality hardware
 
 1. Review steps in [Immersive headset setup](/windows/mixed-reality/enthusiast-guide/before-you-start).
-
 1. Learn how to [Use the Windows Mixed Reality simulator](../../advanced-concepts/using-the-windows-mixed-reality-simulator.md) and [Navigate the Windows Mixed Reality home](../../../discover/navigating-the-windows-mixed-reality-home.md).
 
-### Use the stage to place content on the floor
+### 6. Use the stage to place content on the floor
 
 You can build Mixed Reality experiences across a wide range of [experience scales](../../../design/coordinate-systems.md). If you're porting a *seated-scale experience*, make sure Unity is set to the **Stationary** tracking space type:
 
@@ -87,18 +79,16 @@ Example of results:
 
 ![Example of results](../../porting-apps/images/largestrectangle-400px.jpg)
 
-The algorithm is based on a blog post by Daniel Smilkov, [Largest rectangle in a polygon](https://d3plus.org/blog/behind-the-scenes/2014/07/08/largest-rect).
+### 7. Work through your input model
 
-### Work through your input model
-
-Each game or application targeting an existing head-mounted display (HMD) has a set of inputs that it handles, types of inputs that it needs for the experience, and specific APIs that it calls to get those inputs. It's simple and straightforward to take advantage of the inputs available in Windows Mixed Reality.
+Each game or application that targets an existing head-mounted display (HMD) has a set of inputs that it handles, types of inputs that it needs for the experience, and specific APIs that it calls to get those inputs. It's simple and straightforward to take advantage of the inputs available in Windows Mixed Reality.
 
 See the [input porting guide for Unity](../input-porting-guide-for-unity.md) for details about how Windows Mixed Reality exposes input, and how the input maps to what your application does now.
 
 > [!IMPORTANT]
 > If you use HP Reverb G2 controllers, see [HP Reverb G2 Controllers in Unity](../../unity/unity-reverb-g2-controllers.md) for further input mapping instructions.
 
-### Test and tune performance
+### 8. Test and tune performance
 
 Windows Mixed Reality is available on many devices, ranging from high end gaming PCs to broad market mainstream PCs. These devices have significantly different compute and graphics budgets available for your application. If you ported your app using a premium PC with significant compute and graphics budgets, be sure to test and profile your app on hardware that represents the market you want to target. For more information, see [Windows Mixed Reality minimum PC hardware compatibility guidelines](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
 

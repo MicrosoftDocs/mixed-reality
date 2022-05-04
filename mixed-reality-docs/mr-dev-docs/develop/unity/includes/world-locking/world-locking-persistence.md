@@ -1,6 +1,6 @@
 # [World Locking Tools (Recommended)](#tab/wlt)
 
-By default, World Locking Tools restore Unity's coordinate system relative to the physical world across sessions on devices that support persistence of local spatial anchors. To have a hologram appear in the same place in the physical world after quitting and re-running the application, the application only needs to restore the same pose to the hologram.
+By default, World Locking Tools restore Unity's coordinate system relative to the physical world across sessions on devices that support persistence of local spatial anchors. To have a hologram appear in the same place in the physical world after quitting and rerunning the application, the application only needs to restore the same pose to the hologram.
 
 ![World locking context component in Unity inspector](../../images/world-locking-tools-img-02.png)
 
@@ -105,4 +105,4 @@ For older Unity versions or WSA projects, use **WorldAnchor**.
 
 The **WorldAnchorStore** creates holographic experiences where holograms stay in specific real world positions across instances of the application. Users can pin individual holograms wherever they want, and find them later in the same spot over app sessions.
 
-For more information and instructions, see [Persistence in Unity](../../persistence-in-unity.md).
+For more information and instructions, see [Persistence in older Unity versions](../../persistence-in-unity.md).

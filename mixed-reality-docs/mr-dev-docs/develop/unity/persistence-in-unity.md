@@ -1,5 +1,5 @@
 ---
-title: Persistence in Unity
+title: Persistence in older Unity versions
 description: Use the Unity WorldAnchorStore persistence feature in older Unity versions to let users pin holograms and find them later over app sessions.
 author: thetuvix
 ms.author: alexturn
@@ -9,11 +9,13 @@ keywords: HoloLens, persistence, Unity, mixed reality headset, windows mixed rea
 ---
 
 
-# Persistence in Unity
+# Persistence in older Unity versions
 
-When possible, use [World Locking Tools](/mixed-reality/world-locking-tools) for all your hologram positioning needs. For Unity 2019/2020 using OpenXR or the Windows XR Plugin, use `ARAnchorManager`. For more information, see [Choose your world locking approach](spatial-anchors-in-unity.md#choosing-your-world-locking-approach).
+The persistence feature in Unity creates holographic experiences where holograms stay in specific real-world positions across application instances. Users can pin individual holograms wherever they want, and find them in the same spot over many app sessions.
 
-For older Unity versions or WSA projects, the `WorldAnchorStore` creates holographic experiences where holograms stay in specific real-world positions across application instances. Users can pin individual holograms wherever they want, and find them in the same spot over many app sessions.
+When possible, use [World Locking Tools](/mixed-reality/world-locking-tools) for persistent world locking. For Unity 2019/2020 using OpenXR or the Windows XR Plugin, use [ARAnchorManager](includes/world-locking-persistence.md?tabs=anchorstore#persistent-world-locking). For more information, see [Choose your world locking approach](spatial-anchors-in-unity.md#choosing-your-world-locking-approach).
+
+For older Unity versions or WSA projects, this article describes how to use the `WorldAnchorStore` for hologram persistence.
 
 **Namespace:** *UnityEngine.XR.WSA.Persistence*<br>
 **Class:** *WorldAnchorStore*
