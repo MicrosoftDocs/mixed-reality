@@ -71,13 +71,13 @@ In script code, you can then call the `TryGetGeometry` method on the `UnityEngin
 
 The system automatically renders the boundary when the user approaches it. Your app doesn't need to use this polygon to render the boundary itself.
 
-For more information, see [Coordinate systems in Unity](../../unity/coordinate-systems-in-unity.md).
-
 <!-- Some applications use a rectangle to constrain their interaction. Retrieving the largest inscribed rectangle is not directly supported in the UWP API or Unity. The example code linked to below shows how to find a rectangle within the traced bounds. It's heuristic-based so may not find the optimal solution, however, results are consistent with expectations. Parameters in the algorithm can be tuned to find more precise results at the cost of processing time. The algorithm is in a fork of the Mixed Reality Toolkit that uses the 5.6 preview MRTP version of Unity. This isn't publicly available. The code should be directly usable in 2017.2 and higher versions of Unity. The code will be ported to the current MRTK in the near future. -->
 
 Example of results:
 
 ![Example of results](../../porting-apps/images/largestrectangle-400px.jpg)
+
+For more information, see [Coordinate systems in Unity](../../unity/coordinate-systems-in-unity.md).
 
 ### 7. Work through your input model
 
