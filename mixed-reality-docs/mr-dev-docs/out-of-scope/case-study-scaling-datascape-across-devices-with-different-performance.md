@@ -10,9 +10,9 @@ keywords: immersive headset, performance optimization, VR, case study
 
 # Case study - Scale apps across devices with different capabilities
 
-This case study describes how a Windows Mixed Reality application can target various platforms with different hardware capabilities. Datascape is a Windows Mixed Reality application that displays weather data on top of terrain data. The application surrounds users with holographic data visualizations, to explore unique insights by discovering data in mixed reality.
+This case study describes how a Windows Mixed Reality application can target various platforms with different hardware capabilities. Datascape is a Windows Mixed Reality application that displays weather data on top of terrain data. The application surrounds users with holographic data visualizations. Users can explore unique insights they gain by discovering data in mixed reality.
 
-Datascape targets devices ranging from Microsoft HoloLens to Windows Mixed Reality immersive headsets, and from lower-powered PCs to the latest PCs with high-end graphics processing units (GPUs). The main challenge was rendering a visually appealing scene, while executing at a high frame rate, on devices with wildly different [GPU capabilities](../develop/advanced-concepts/understanding-performance-for-mixed-reality.md#gpu-performance-recommendations).
+The Datascape app targets Microsoft HoloLens, Windows Mixed Reality immersive headsets, lower-powered PCs, and powerful PCs with high-end [graphics processing units (GPUs)](../develop/advanced-concepts/understanding-performance-for-mixed-reality.md#gpu-performance-recommendations). The main challenge was rendering a visually appealing scene, while executing at a high frame rate, on devices with wildly different GPU capabilities.
 
 This case study walks through the process and techniques we used to create some of the more GPU-intensive systems, especially rendering clouds. We describe the problems we encountered and how we overcame them.
 
@@ -29,9 +29,9 @@ Here's some background about the Datascape application and challenges.
 
 Our main rendering struggles dealt with transparency, since transparency can be expensive on a GPU.
 
-You can render solid geometry front to back while writing to the depth buffer, which stops any future pixels located behind that pixel from rendering. This operation prevents hidden pixels from executing the pixel shader, and speeds up rendering significantly. If you sort geometry optimally, each pixel on the screen draws only once.
+You can render *solid geometry* front to back while writing to the depth buffer, which stops any future pixels located behind that pixel from rendering. This operation prevents hidden pixels from executing the pixel [shader](../develop/advanced-concepts/understanding-performance-for-mixed-reality.md#shaders), and speeds up rendering significantly. If you sort geometry optimally, each pixel on the screen draws only once.
 
-Transparent geometry must be sorted back to front, and relies on blending the output of the pixel shader to the current pixel on the screen. This process can result in each pixel on the screen being drawn multiple times per frame, called *overdraw*.
+*Transparent geometry* must be sorted back to front, and relies on blending the output of the pixel shader to the current pixel on the screen. This process can result in each pixel on the screen being drawn multiple times per frame, called *overdraw*.
 
 For HoloLens and mainstream PCs, you can only fill the screen a few times, which makes transparent rendering problematic.
 
@@ -39,11 +39,11 @@ For HoloLens and mainstream PCs, you can only fill the screen a few times, which
 
 The Datascape scene has three major components: the **UI**, the **map**, and the **weather**. We knew that the weather effects would need all the GPU they could get, so we designed the UI and map to reduce overdraw.
 
-We reworked the UI several times to minimize the amount of overdraw. For components like glowing buttons and map overviews, we used more complex geometry rather than overlaying transparent art.
+We reworked the UI several times to minimize the amount of overdraw. For components like glowing buttons and map overviews, we chose to use more complex geometry rather than overlaying transparent art.
 
 For the map, we used a custom shader that [stripped out standard Unity features like shadows and complex lighting](../develop/unity/performance-recommendations-for-unity.md#optimal-lighting-settings). The custom shader replaced these features with a simple, single sun lighting model, and a custom fog calculation. This simple pixel shader freed up GPU cycles.
 
-We got both the UI and the map rendering at budget, so they didn't need any changes depending on the hardware. The weather visualization, especially the cloud rendering, was more challenging.
+We got both the UI and the map to render at budget, so they didn't need any changes depending on the hardware. The weather visualization, especially the cloud rendering, was more challenging.
 
 ### Cloud data
 
@@ -53,7 +53,7 @@ Cloud data downloaded from [NOAA servers](https://nomads.ncep.noaa.gov) in three
 
 To make sure lower-powered machines could render the clouds, our backup approach used solid geometry to [minimize overdraw](../develop/unity/performance-recommendations-for-unity.md#limit-overdraw).
 
-First, we tried producing clouds by generating a solid heightmap mesh for each layer. We used the radius of the cloud info texture per vertex to generate the shape. We used a geometry [shader](../develop/advanced-concepts/understanding-performance-for-mixed-reality.md#shaders) to produce the vertices at the tops and bottoms of the clouds, generating solid cloud shapes. We used the density value from the texture to color the cloud with darker colors for denser clouds.
+We produced clouds by generating a solid heightmap mesh for each layer. We used the radius of the cloud info texture per vertex to generate the shape. We used a geometry shader to produce the vertices at the tops and bottoms of the clouds, generating solid cloud shapes. We used the density value from the texture to color the cloud with darker colors for denser clouds.
 
 The following shader code creates the vertices:
 
@@ -102,7 +102,7 @@ fixed4 frag (g2f i) : SV_Target
 }
 ```
 
-We introduced a small noise pattern to get more detail on top of the real data. To produce round cloud edges, we clipped the pixels in the pixel shader when the interpolated radius value hit a threshold, to discard near-zero values.
+We introduced a small noise pattern to get more detail on top of the real data. To produce round cloud edges, we discarded near-zero values by clipping the pixels in the pixel shader when the interpolated radius value hit a threshold.
 
 Since the clouds are solid geometry, they can render before the terrain renders. Hiding the expensive map pixels underneath the clouds further improves frame rate. Because of the solid geometry rendering approach, this solution ran well on all graphics cards, from minimum-spec to high-end graphics cards, and on HoloLens.
 
@@ -162,11 +162,11 @@ v2f vert(uint id : SV_VertexID, uint inst : SV_InstanceID)
 }
 ```
 
-We sorted the particles front-to-back, and still used a solid style shader to clip, not blend, transparent pixels. This technique handles a large number of particles, avoiding costly overdraw even on lower-powered machines.
+We sorted the particles front-to-back, and still used a solid style shader to clip, not blend, transparent pixels. This technique handles a large number of particles even on lower-powered machines, avoiding costly overdraw.
 
 ## Try transparent particle clouds
 
-The solid particles provided an organic feel to the shapes of the clouds, but still needed something to capture the fluffiness of clouds. We decided to try a custom solution for high-end graphics cards that introduces transparency. We simply switched the initial sorting order of the particles, and changed the shader to use the textures alpha.
+The solid particles provided an organic feel to the cloud shapes, but still needed something to capture the fluffiness of clouds. We decided to try a custom solution for high-end graphics cards that introduces transparency. We simply switched the initial sorting order of the particles, and changed the shader to use the textures alpha.
 
 ![Image that shows fluffy clouds.](images/fluffy-clouds-700px.jpg)
 
@@ -174,7 +174,7 @@ This solution looked great, but proved too heavy for even the toughest machines.
 
 ## Render offscreen with lower resolution
 
-To reduce the number of pixels the clouds rendered, we started rendering them in a quarter-resolution buffer, compared to the screen. We stretched the end result back up onto the screen after drawing all the particles.
+To reduce the number of pixels for rendering the clouds, we rendered them in a buffer that was a quarter of screen resolution. We stretched the end result back up onto the screen after drawing all the particles.
 
 The following code shows the offscreen rendering:
 
@@ -219,17 +219,17 @@ To solve this issue, we:
 1. Ran a simple shader on the offscreen buffer, to determine where big changes in contrast occurred.
 1. Put the pixels with big changes into a new stencil buffer.
 1. Used the stencil buffer to mask out these high-contrast areas when applying the offscreen buffer back to the screen, resulting in holes in and around the clouds.
-1. Rendered all the particles again in full-screen mode, using the stencil buffer to mask out everything but the edges, resulting in a minimal set of pixels touched. Since we already created the command buffer for the particles, we simply rendered it again to the new camera.
+1. Rendered all the particles again in full-screen mode, using the stencil buffer to mask out everything but the edges, resulting in a minimal set of pixels touched. Since we already created the command buffer to render the particles, we simply rendered it again to the new camera.
 
 ![Image showing the progression of rendering cloud edges.](images/cloud-steps-1-4-700px.jpg)
 
-The end result was sharp edges with cheap center sections of the clouds. While this solution was much faster than rendering all particles in full screen, there is still a cost to test pixels against the stencil buffer. A massive amount of overdraw was still expensive.
+The end result was sharp edges with cheap center sections of the clouds. While this solution is much faster than rendering all particles in full screen, there's still a cost to test pixels against the stencil buffer. A massive amount of overdraw is still expensive.
 
 ## Cull particles
 
 For the wind effect, we generated long triangle strips in a compute shader, creating many wisps of wind in the world. The wind effect wasn't heavy on fill rate, due to the narrow strips. However, the many hundreds of thousands of vertices caused a heavy load for the vertex shader.
 
-To reduce the load, we introduced append buffers on the compute shader, to feed a subset of the wind strips to be drawn. We used simple view frustum culling logic in the compute shader to determine if a strip was outside of camera view, and prevented those strips from being added to the push buffer. This process significantly reduced the number of strips, freeing up needed GPU cycles.
+To reduce the load, we introduced append buffers on the compute shader, to feed a subset of the wind strips to be drawn. We used simple [view frustum culling](https://docs.unity3d.com/Manual/OcclusionCulling.html) logic in the compute shader to determine if a strip was outside of camera view, and prevented those strips from being added to the push buffer. This process significantly reduced the number of strips, freeing up needed GPU cycles.
 
 The following code demonstrates an append buffer:
 
@@ -286,7 +286,7 @@ One simple way to adapt rendering is to change the screen viewport size so it re
 
 When we detect that we're about to drop frames, we lower the scale by a fixed number, and restore it when we're running fast enough again.
 
-In this case study, we decided which cloud technique to use based on the graphics capabilities of the hardware at startup. You could also base this decision on data from the GPU measurement, to avoid the system staying at low resolution for a long time.
+In this case study, we decided which cloud technique to use based on the graphics capabilities of the hardware at startup. You could also base this decision on data from GPU measurement, to help prevent the system from staying at low resolution for a long time.
 
 ## Recommendations
 

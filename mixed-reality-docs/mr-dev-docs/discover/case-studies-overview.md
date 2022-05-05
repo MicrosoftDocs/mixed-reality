@@ -1,6 +1,6 @@
 ---
 title: Case study overview
-description: Stories, learnings, and experiences the Mixed Reality team has found and jotted down along the way.
+description: Access stories, learnings, and experiences the Mixed Reality team has found and documented along the way.
 author: grbury 
 ms.author: vinnietieto
 ms.date: 12/30/2021
@@ -20,9 +20,9 @@ Stories, learnings, and experiences the Mixed Reality team has found and jotted 
         *February 2021*
     :::column-end:::
     :::column:::
-       [![Scale apps across devices with different performance](images/cloud-steps-1-4-700px.jpg)](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)
-        **[Scale apps across devices with different performance](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)**<br>
-        See how to optimize a mixed reality app to deliver a compelling experience across devices with a range of performance capabilities.<br>
+       [![Scale apps across devices with different GPU capabilities](images/cloud-steps-1-4-700px.jpg)](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)
+        **[Scale apps across devices with different GPU capabilities](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)**<br>
+        See how to optimize a mixed reality app to deliver the best experience across a range of GPU performance capabilities.<br>
         *May 2022*
     :::column-end:::
     :::column:::
