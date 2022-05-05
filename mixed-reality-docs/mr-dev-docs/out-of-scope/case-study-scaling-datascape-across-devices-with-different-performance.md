@@ -1,6 +1,6 @@
 ---
-title: Case study - Scale apps across devices with different capabilities
-description: See how to optimize a mixed reality app to deliver a compelling experience across devices with a range of performance capabilities.
+title: Case study - Scale apps across devices with different GPU capabilities
+description: See how to optimize a mixed reality app to deliver a compelling experience across devices with a range of GPU performance capabilities.
 author: danandersson
 ms.author: alexturn
 ms.date: 05/04/2022
@@ -8,7 +8,7 @@ ms.topic: article
 keywords: immersive headset, performance optimization, VR, case study
 ---
 
-# Case study - Scale apps across devices with different capabilities
+# Case study - Scale apps across devices with different GPU capabilities
 
 This case study describes how a Windows Mixed Reality application can target various platforms with different hardware capabilities. Datascape is a Windows Mixed Reality application that displays weather data on top of terrain data. The application surrounds users with holographic data visualizations. Users can explore unique insights they gain by discovering data in mixed reality.
 
@@ -21,7 +21,7 @@ For more information about performance considerations for mixed reality and for 
 - [Understand performance for Mixed Reality](../develop/advanced-concepts/understanding-performance-for-mixed-reality.md)
 - [Performance recommendations for Unity](../develop/unity/performance-recommendations-for-unity.md)
 
-## Solution background
+## Case study overview
 
 Here's some background about the Datascape application and challenges.
 
@@ -31,9 +31,9 @@ Our main rendering struggles dealt with transparency, since transparency can be 
 
 You can render *solid geometry* front to back while writing to the depth buffer, which stops any future pixels located behind that pixel from rendering. This operation prevents hidden pixels from executing the pixel [shader](../develop/advanced-concepts/understanding-performance-for-mixed-reality.md#shaders), and speeds up rendering significantly. If you sort geometry optimally, each pixel on the screen draws only once.
 
-*Transparent geometry* must be sorted back to front, and relies on blending the output of the pixel shader to the current pixel on the screen. This process can result in each pixel on the screen being drawn multiple times per frame, called *overdraw*.
+*Transparent geometry* must be sorted back to front, and relies on blending the output of the pixel shader to the current pixel on the screen. This process can result in each pixel on the screen being drawn multiple times per frame, called [overdraw](../develop/unity/performance-recommendations-for-unity.md#limit-overdraw).
 
-For HoloLens and mainstream PCs, you can only fill the screen a few times, which makes transparent rendering problematic.
+For HoloLens and mainstream PCs, you can only fill the screen a few times, making transparent rendering problematic.
 
 ### Datascape scene components
 
@@ -43,7 +43,7 @@ We reworked the UI several times to minimize the amount of overdraw. For compone
 
 For the map, we used a custom shader that [stripped out standard Unity features like shadows and complex lighting](../develop/unity/performance-recommendations-for-unity.md#optimal-lighting-settings). The custom shader replaced these features with a simple, single sun lighting model, and a custom fog calculation. This simple pixel shader freed up GPU cycles.
 
-We got both the UI and the map to render at budget, so they didn't need any changes depending on the hardware. The weather visualization, especially the cloud rendering, was more challenging.
+We got both the UI and the map to render at budget, so they didn't need any hardware-dependent changes. The weather visualization, especially the cloud rendering, was more challenging.
 
 ### Cloud data
 
@@ -51,7 +51,7 @@ Cloud data downloaded from [NOAA servers](https://nomads.ncep.noaa.gov) in three
 
 ## Create geometry clouds
 
-To make sure lower-powered machines could render the clouds, our backup approach used solid geometry to [minimize overdraw](../develop/unity/performance-recommendations-for-unity.md#limit-overdraw).
+To make sure lower-powered machines could render the clouds, our backup approach used solid geometry to minimize overdraw.
 
 We produced clouds by generating a solid heightmap mesh for each layer. We used the radius of the cloud info texture per vertex to generate the shape. We used a geometry shader to produce the vertices at the tops and bottoms of the clouds, generating solid cloud shapes. We used the density value from the texture to color the cloud with darker colors for denser clouds.
 
@@ -118,7 +118,7 @@ First, we created particle positions around the center point of the experience a
 
 A compute shader sampled the cloud info texture to position each particle at a correct height, and color it based on density.
 
-We used [DrawProcedural](https://docs.unity3d.com/ScriptReference/Graphics.DrawProcedural.html) to render a quad per particle, allowing the particle data to stay on the GPU at all times.
+We used [DrawProcedural](https://docs.unity3d.com/ScriptReference/Graphics.DrawProcedural.html) to render a quad per particle, allowing the particle data to always stay on the GPU.
 
 Each particle contained both a height and a radius. The height was based on the cloud data sampled from the cloud info texture. The radius was based on the initial distribution, which calculated and stored the horizontal distance to its closest neighbor. The quads used this data to orient themselves, angled by the height. When users look at a particle horizontally, it shows the height. When users look at the particle top-down, the area between it and its neighbors is covered.
 
@@ -162,7 +162,7 @@ v2f vert(uint id : SV_VertexID, uint inst : SV_InstanceID)
 }
 ```
 
-We sorted the particles front-to-back, and still used a solid style shader to clip, not blend, transparent pixels. This technique handles a large number of particles even on lower-powered machines, avoiding costly overdraw.
+We sorted the particles front-to-back, and still used a solid style shader to clip transparent pixels, not blend them. This technique handles a large number of particles even on lower-powered machines, avoiding costly overdraw.
 
 ## Try transparent particle clouds
 
@@ -174,7 +174,7 @@ This solution looked great, but proved too heavy for even the toughest machines.
 
 ## Render offscreen with lower resolution
 
-To reduce the number of pixels for rendering the clouds, we rendered them in a buffer that was a quarter of screen resolution. We stretched the end result back up onto the screen after drawing all the particles.
+To reduce the number of pixels for rendering the clouds, we rendered them in a buffer that was a quarter of screen resolution. We stretched the end result back onto the screen after drawing all the particles.
 
 The following code shows the offscreen rendering:
 
@@ -216,8 +216,8 @@ The stretched-up clouds looked almost identical to normal-size clouds at the cen
 
 To solve this issue, we:
 
-1. Ran a simple shader on the offscreen buffer, to determine where big changes in contrast occurred.
-1. Put the pixels with big changes into a new stencil buffer.
+1. Ran a simple shader on the offscreen buffer, to determine where large changes in contrast occurred.
+1. Put the pixels with large changes into a new stencil buffer.
 1. Used the stencil buffer to mask out these high-contrast areas when applying the offscreen buffer back to the screen, resulting in holes in and around the clouds.
 1. Rendered all the particles again in full-screen mode, using the stencil buffer to mask out everything but the edges, resulting in a minimal set of pixels touched. Since we already created the command buffer to render the particles, we simply rendered it again to the new camera.
 
@@ -231,7 +231,7 @@ For the wind effect, we generated long triangle strips in a compute shader, crea
 
 To reduce the load, we introduced append buffers on the compute shader, to feed a subset of the wind strips to be drawn. We used simple [view frustum culling](https://docs.unity3d.com/Manual/OcclusionCulling.html) logic in the compute shader to determine if a strip was outside of camera view, and prevented those strips from being added to the push buffer. This process significantly reduced the number of strips, freeing up needed GPU cycles.
 
-The following code demonstrates an append buffer:
+The following code demonstrates an append buffer.
 
 Compute shader:
 
@@ -270,7 +270,7 @@ protected void Update()
 
 We tried this technique on the cloud particles, culling them on the compute shader, and only pushing the visible particles to be rendered. But we didn't save much GPU, because the biggest bottleneck was the number of cloud pixels to render onscreen, not the cost of calculating vertices.
 
-Another problem was that the append buffer populated in random order, due to the parallelized computing of the particles. The sorted particles became unsorted, resulting in flickering cloud particles. There are techniques to sort the push buffer, but the limited amount of performance gain from culling particles would probably be offset with an additional sort. We decided not to pursue this optimization for the cloud particles.
+Another problem was that the append buffer populated in random order, due to the parallelized computing of the particles. The sorted particles became unsorted, resulting in flickering cloud particles. There are techniques to sort the push buffer, but the limited amount of performance gain from culling particles would probably be offset by another sort. We decided not to pursue this optimization for the cloud particles.
 
 ## Use adaptive rendering
 
@@ -278,19 +278,19 @@ To ensure a steady frame rate on the app with varying rendering conditions, like
 
 The first step of adaptive rendering is to measure GPU. We inserted custom code into the GPU command buffer at the beginning and end of a rendered frame, to capture both the left and right eye screen time.
 
-Comparing the rendering time to the desired refresh rate shows how close you are to dropping frames. When you come close to dropping frames, you can adapt rendering to be faster.
+Compare the rendering time to the desired refresh rate to show how close you come to dropping frames. When you come close to dropping frames, you can adapt rendering to be faster.
 
-One simple way to adapt rendering is to change the screen viewport size so it requires fewer pixels to render. Using [UnityEngine.XR.XRSettings.renderViewportScale](https://docs.unity3d.com/ScriptReference/XR.XRSettings-renderViewportScale.html), the system shrinks the targeted viewport, and automatically stretches the result back up to fit the screen. A small change in scale is barely noticeable on world geometry, and a scale factor of 0.7 requires half the amount of pixels to be rendered.
+One simple way to adapt rendering is to change the screen viewport size so it requires fewer pixels to render. The system uses [UnityEngine.XR.XRSettings.renderViewportScale](https://docs.unity3d.com/ScriptReference/XR.XRSettings-renderViewportScale.html) to shrink the targeted viewport, and automatically stretches the result back up to fit the screen. A small change in scale is barely noticeable on world geometry, and a scale factor of 0.7 requires half the number of pixels to be rendered.
 
 ![Image showing 70% scale, with half the pixels.](images/datascape-scaling-700px.jpg)
 
-When we detect that we're about to drop frames, we lower the scale by a fixed number, and restore it when we're running fast enough again.
+When we detect that we're about to drop frames, we lower the scale by a fixed ratio, and restore it when we're running fast enough again.
 
 In this case study, we decided which cloud technique to use based on the graphics capabilities of the hardware at startup. You could also base this decision on data from GPU measurement, to help prevent the system from staying at low resolution for a long time.
 
 ## Recommendations
 
-Targeting a variety of hardware is challenging and requires planning. Here are some recommendations:
+Targeting different hardware capabilities is challenging and requires planning. Here are some recommendations:
 
 - Start targeting lower-powered machines, to get familiar with the problem space.
 - Develop a backup solution that runs on all your machines. You can then layer in more complexity for high end machines, or enhance resolution of the backup solution.
