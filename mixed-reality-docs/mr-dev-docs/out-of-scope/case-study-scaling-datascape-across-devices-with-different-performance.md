@@ -29,7 +29,7 @@ Here's some background about the Datascape application and challenges.
 
 Our main rendering struggles dealt with transparency, since transparency can be expensive on a GPU.
 
-Solid geometry renders front to back while writing to the depth buffer, which stops any future pixels located behind that pixel from being discarded. This operation prevents hidden pixels from executing the [pixel shader](../develop/advanced-concepts/understanding-performance-for-mixed-reality.md#shaders), and speeds up rendering significantly. If you sort geometry optimally, each pixel on the screen is drawn only once.
+You can render solid geometry front to back while writing to the depth buffer, which stops any future pixels located behind that pixel from rendering. This operation prevents hidden pixels from executing the pixel shader, and speeds up rendering significantly. If you sort geometry optimally, each pixel on the screen draws only once.
 
 Transparent geometry must be sorted back to front, and relies on blending the output of the pixel shader to the current pixel on the screen. This process can result in each pixel on the screen being drawn multiple times per frame, called *overdraw*.
 
@@ -53,7 +53,7 @@ Cloud data downloaded from [NOAA servers](https://nomads.ncep.noaa.gov) in three
 
 To make sure lower-powered machines could render the clouds, our backup approach used solid geometry to [minimize overdraw](../develop/unity/performance-recommendations-for-unity.md#limit-overdraw).
 
-First, we tried producing clouds by generating a solid heightmap mesh for each layer. We used the radius of the cloud info texture per vertex to generate the shape. We used a geometry shader to produce the vertices at the tops and bottoms of the clouds, generating solid cloud shapes. We used the density value from the texture to color the cloud with darker colors for denser clouds.
+First, we tried producing clouds by generating a solid heightmap mesh for each layer. We used the radius of the cloud info texture per vertex to generate the shape. We used a geometry [shader](../develop/advanced-concepts/understanding-performance-for-mixed-reality.md#shaders) to produce the vertices at the tops and bottoms of the clouds, generating solid cloud shapes. We used the density value from the texture to color the cloud with darker colors for denser clouds.
 
 The following shader code creates the vertices:
 
