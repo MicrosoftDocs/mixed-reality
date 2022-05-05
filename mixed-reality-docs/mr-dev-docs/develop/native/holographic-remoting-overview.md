@@ -28,7 +28,10 @@ You can use Holographic Remoting to stream holographic content to your HoloLens 
 
     - [Write a Holographic Remoting remote app using OpenXR APIs (C++)](../native/holographic-remoting-create-remote-openxr.md)
 
-In either case, inputs from the HoloLens--gaze, gesture, voice, and spatial mapping--are sent to the PC, content is rendered in a virtual immersive view, and the rendered frames are then sent to the HoloLens. 
+In either case, inputs from the HoloLens--gaze, gesture, voice, and spatial mapping--are sent to the PC, content is rendered in a virtual immersive view, and the rendered frames are then sent to the HoloLens.
+
+> [!NOTE]
+> When developing a remote application either the Windows Mixed Reality API or the OpenXR API has to be used. Mixing both APIs within the same application is not supported.
 
 > [!IMPORTANT]
 > Holographic Remoting for HoloLens 2 is a major version change. [Remote applications for **HoloLens (1st gen)**](../native/add-holographic-remoting.md) must use NuGet package version **1.x.x** and [remote applications for **HoloLens 2**](../native/holographic-remoting-create-remote-wmr.md) must use **2.x.x**. This implies that remote applications written for HoloLens 2 are not compatible with HoloLens (1st gen) and vice versa.
