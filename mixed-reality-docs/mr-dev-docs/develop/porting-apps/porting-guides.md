@@ -12,7 +12,7 @@ keywords: port, unity, unreal, middleware, engine, UWP, Win32, porting, HoloLens
 
 Windows 10 includes support for immersive and holographic headsets. Other devices like the Oculus Rift or HTC Vive have dependencies on libraries that exist above the operating system's platform API. To bring existing Win32 Unity VR apps over to Windows Mixed Reality, you need to retarget vendor-specific VR SDK usage to Unity's cross-vendor VR APIs.
 
-Porting existing applications involves the following high-level processes:
+Porting VR apps to Windows Mixed Reality requires the following high-level processes:
 
 1. Making sure your PC is running the **Windows 10 Fall Creators Update (16299)**.
 1. Upgrading to the latest version of your graphics or game engine. Game engines must support the **Windows 10 SDK version 10.0.15063.0** or higher.
