@@ -3,14 +3,14 @@ title: Case study - Scale apps across devices with different GPU capabilities
 description: See how to optimize a mixed reality app to deliver a compelling experience across devices with a range of GPU performance capabilities.
 author: danandersson
 ms.author: alexturn
-ms.date: 05/04/2022
+ms.date: 05/06/2022
 ms.topic: article
 keywords: immersive headset, performance optimization, VR, case study
 ---
 
 # Case study - Scale apps across devices with different GPU capabilities
 
-This case study describes how a Windows Mixed Reality application can target various platforms with different hardware capabilities. Datascape is a Windows Mixed Reality application that displays weather data on top of terrain data. The application surrounds users with holographic data visualizations. Users can explore unique insights they gain by discovering data in mixed reality.
+This case study describes how a Windows Mixed Reality application can target various platforms with [different hardware capabilities](../../enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md). Datascape is a Windows Mixed Reality application that displays weather data on top of terrain data. The application surrounds users with holographic data visualizations. Users can explore unique insights they gain by discovering data in mixed reality.
 
 The Datascape app targets Microsoft HoloLens, Windows Mixed Reality immersive headsets, lower-powered PCs, and powerful PCs with high-end [graphics processing units (GPUs)](../develop/advanced-concepts/understanding-performance-for-mixed-reality.md#gpu-performance-recommendations). The main challenge was rendering a visually appealing scene, while executing at a high frame rate, on devices with wildly different GPU capabilities.
 
