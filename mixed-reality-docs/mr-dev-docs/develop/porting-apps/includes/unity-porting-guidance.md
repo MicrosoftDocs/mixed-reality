@@ -1,6 +1,4 @@
-Review the common steps to make sure your development environment is set up correctly. If you're using Visual Studio, select the **Game Development with Unity** workload. You can deselect the **Unity Editor optional** component, since you'll install a newer version of Unity.
-
-To port existing Unity content, follow these steps:
+Review the common steps to make sure your development environment is set up correctly. To port your existing Unity content, follow these steps:
 
 ### 1. Upgrade to the latest public build of Unity with Windows MR Support
 
@@ -8,7 +6,7 @@ To port existing Unity content, follow these steps:
 1. [Download the latest recommended public build of Unity](../../install-the-tools.md) with mixed reality support.
 1. If your project was built on an older version of Unity, review the [Unity Upgrade Guides](https://docs.unity3d.com/Manual/UpgradeGuides.html).
 1. Follow the instructions for using Unity's [automatic API updater](https://docs.unity3d.com/Manual/APIUpdater.html).
-1. See if you need to make any other changes to get your project running, and work through any remaining errors and warnings.
+1. See if you need to make any other changes to get your project running, and work through any errors and warnings.
 
 ### 2. Upgrade your middleware to the latest versions
 
@@ -25,7 +23,7 @@ From inside your Unity application:
 1. Select **Switch Platform**.
 
 > [!NOTE]
-> If your application has any dependencies on device-specific services, such as match making from Steam, disable them at this step. You can hook up the Windows equivalent services later.
+> If your application has any dependencies on device-specific services, such as match making from Steam, disable them now. You can hook up the Windows equivalent services later.
 
 ### 4. Target your application to run on Windows Mixed Reality
 
@@ -90,7 +88,9 @@ See the [input porting guide for Unity](../input-porting-guide-for-unity.md) for
 
 ### 8. Test and tune performance
 
-Windows Mixed Reality is available on many devices, ranging from high end gaming PCs to broad market mainstream PCs. These devices have significantly different compute and graphics budgets available for your application. If you ported your app using a premium PC with significant compute and graphics budgets, be sure to test and profile your app on hardware that represents the market you want to target. For more information, see [Windows Mixed Reality minimum PC hardware compatibility guidelines](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
+Windows Mixed Reality is available on many devices, ranging from high end gaming PCs to broad market mainstream PCs. These devices have significantly different compute and graphics budgets available for your application.
+
+If you ported your app using a premium PC with significant compute and graphics budgets, be sure to test and profile your app on hardware that represents your target market. For more information, see [Windows Mixed Reality minimum PC hardware compatibility guidelines](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines).
 
 Both [Unity](https://docs.unity3d.com/Manual/Profiler.html) and [Visual Studio](/visualstudio/profiling/index) include performance profilers, and both [Microsoft](../../advanced-concepts/understanding-performance-for-mixed-reality.md) and [Intel](https://software.intel.com/articles/vr-content-developer-guide) publish guidelines on performance profiling and optimization.
 
@@ -98,7 +98,7 @@ For an extensive discussion of performance, see [Understand performance for Mixe
 
 ## Input mapping
 
-For information and instructions, see [Input porting guide for Unity](../input-porting-guide-for-unity.md).
+For input mapping information and instructions, see [Input porting guide for Unity](../input-porting-guide-for-unity.md).
 
 > [!IMPORTANT]
 > If you use HP Reverb G2 controllers, see [HP Reverb G2 Controllers in Unity](../../unity/unity-reverb-g2-controllers.md) for further input mapping instructions.

@@ -101,7 +101,7 @@ To see a full example of persisting / unpersisting anchors, check out the Anchor
 
 # [WorldAnchor](#tab/worldanchor)
 
-For older Unity versions or WSA projects, use **WorldAnchor**.
+For persistence in older Unity versions or WSA projects, use **WorldAnchor**.
 
 **Namespace:** *UnityEngine.XR.WSA.Persistence*<br>
 **Class:** *WorldAnchorStore*
