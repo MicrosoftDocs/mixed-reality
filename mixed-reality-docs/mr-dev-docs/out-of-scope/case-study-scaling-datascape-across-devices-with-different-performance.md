@@ -6,6 +6,7 @@ ms.author: alexturn
 ms.date: 05/06/2022
 ms.topic: article
 keywords: immersive headset, performance optimization, VR, case study
+ms.custom: kr2b-contr-experiment
 ---
 
 # Case study - Scale apps across devices with different GPU capabilities
