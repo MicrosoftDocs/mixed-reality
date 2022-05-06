@@ -6,6 +6,7 @@ ms.author: alexturn
 ms.date: 05/03/2022
 ms.topic: how-to
 keywords: in-app purchases, hololens, XAML, mixed reality headset, windows mixed reality headset, virtual reality headset
+ms.custom: kr2b-contr-experiment
 ---
 
 # In-app purchases
