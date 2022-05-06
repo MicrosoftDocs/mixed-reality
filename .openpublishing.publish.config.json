@@ -31,20 +31,6 @@
       "template_folder": "_themes"
     },
     {
-      "docset_name": "mrtk3-core-alt",
-      "build_source_folder": "mrtk-unity/mrtk3-core-alt",
-      "build_output_subfolder": "mrtk3-core-alt",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
-    },
-    {
       "docset_name": "mrtk-unity",
       "build_source_folder": "mrtk-unity",
       "build_output_subfolder": "mrtk-unity",
