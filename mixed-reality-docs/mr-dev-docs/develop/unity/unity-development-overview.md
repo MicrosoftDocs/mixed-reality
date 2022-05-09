@@ -13,7 +13,7 @@ keywords: Unity, mixed reality, development, getting started, new project, porti
 
 ![Unity banner logo](../images/unity_logo_banner.png)
 
-Unity is one of the leading real-time development platforms on the market, with underlying runtime code written in C++ and all development scripting is done in C#. Whether you're looking to build games, movies and animation cinematics, or even render architectural or engineering concepts in a virtual world, Unity has the infrastructure to support you. When you're ready to get started, head to the development checkpoints below!
+Unity is one of the leading real-time development platforms on the market. Underlying runtime code is written in C++ and all development scripting is created using C#. Whether you're looking to build games, movies and animation cinematics, or even render architectural or engineering concepts in a virtual world, Unity has the infrastructure to support you. When you're ready to get started, head to the development checkpoints below!
 
 > [!IMPORTANT]
 > Take a look at our **[porting guides](../porting-apps/porting-overview.md)** if you have an existing Unity project that you want to bring over to HoloLens 2. We have guides for projects that are using HTK, MRTK v1, or SteamVR.
