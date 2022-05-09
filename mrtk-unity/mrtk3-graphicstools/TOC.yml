@@ -1,2 +1,12 @@
-- name: Index
+- name: Welcome to MR Graphics Tools
   href: index.md
+- name: Example Scenes
+  href: example-scenes/toc.yml
+- name: Architecture overview
+  href: architecture/toc.yml
+- name: Feature overviews
+  href: features/toc.yml
+- name: Contributing
+  href: contributing/toc.yml
+- name: API Reference
+  href: to-do
