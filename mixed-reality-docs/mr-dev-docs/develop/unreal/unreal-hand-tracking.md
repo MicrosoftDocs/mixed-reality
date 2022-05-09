@@ -45,6 +45,11 @@ It can also be subclassed in the editor:
 
 ## Hand Mesh
 
+> [!IMPORTANT]
+> Hand mesh requires OpenXR.
+
+The Microsoft OpenXR plugin must be used, available from the [Unreal Marketplace](https://www.unrealengine.com/marketplace/en-US/product/ef8930ca860148c498b46887da196239) or [GitHub](https://github.com/microsoft/Microsoft-OpenXR-Unreal/releases).
+
 ### Hand Mesh as a Tracked Geometry
 
 > [!IMPORTANT]
