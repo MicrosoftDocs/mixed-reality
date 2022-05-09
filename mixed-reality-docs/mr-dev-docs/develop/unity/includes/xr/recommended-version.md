@@ -4,7 +4,7 @@
 >
 > For new projects, we recommend using **Unity 2020.3.31f1** with **the latest Mixed Reality OpenXR plugin** to avoid this issue.
 > 
-> If using an earlier Unity patch release, consult the [known blocking issues table](../../known-issues.md#blocking-issues-table) to ensure you avoid builds with other blocking issues.
+> If using an earlier Unity patch release, consult the [known blocking issues table](../../known-issues.md#active-blocking-issues) to ensure you avoid builds with other blocking issues.
 
 <!-- UNCOMMENT THE FOLLOWING WHEN THE CURRENT UNITY VERSION HAS NO BLOCKING ISSUE: -->
 <!--
