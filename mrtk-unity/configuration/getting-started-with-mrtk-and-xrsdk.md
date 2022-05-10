@@ -8,11 +8,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, XRSDK, 
 ---
 # Getting started with MRTK and XR SDK
 
-XR SDK is Unity's [new XR pipeline in Unity 2019.3 and beyond](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/). In Unity 2019, it provides an alternative to the existing XR pipeline. In Unity 2020, it is the only XR pipeline in Unity.
-
-## Prerequisites
-
-To get started with the Mixed Reality Toolkit, follow [the provided steps](/windows/mixed-reality/develop/install-the-tools#importing-the-mixed-reality-toolkit) to add MRTK to a project.
+XR SDK is Unity's [new XR pipeline in Unity 2019.3 and beyond](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/). In Unity 2019, it provides an alternative to the existing XR pipeline. In Unity 2020, it's the only XR pipeline in Unity.
 
 ## Configuring Unity for the XR SDK pipeline
 
@@ -49,7 +45,7 @@ Go into **Unity's Package Manager** and install the Windows XR Plugin package, w
 > OpenXR in Unity is only supported on Unity 2020.2 and higher.
 > It also only supports x64, ARM, and ARM64 builds.
 
-1. Follow the [Using the Mixed Reality OpenXR Plugin for Unity](/windows/mixed-reality/develop/unity/openxr-getting-started) guide, including the steps for configuring XR Plugin Management and Optimization to install the OpenXR plug-in to your project. Ensure that the following have successfully installed:
+1. Follow the [Set up a new OpenXR project with MRTK](/windows/mixed-reality/develop/unity/new-openxr-project-with-mrtk.md) instructions to add the OpenXR plug-in to your project. Ensure that the following have successfully installed:
    1. XR Plugin Management
    1. OpenXR Plugin
    1. Mixed Reality OpenXR Plugin
@@ -189,7 +185,7 @@ to
 
 ### Controller mappings
 
-If using custom controller mapping profiles, open one of them and run the Mixed Reality Toolkit -> Utilities -> Update -> Controller Mapping Profiles menu item to ensure the new XR SDK controller types are defined.
+If you're using custom controller mapping profiles, open one of them and run the Mixed Reality Toolkit -> Utilities -> Update -> Controller Mapping Profiles menu item to ensure the new XR SDK controller types are defined.
 
 ## See also
 
