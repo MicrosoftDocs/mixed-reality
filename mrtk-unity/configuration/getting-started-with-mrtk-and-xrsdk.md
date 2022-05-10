@@ -45,7 +45,7 @@ Go into **Unity's Package Manager** and install the Windows XR Plugin package, w
 > OpenXR in Unity is only supported on Unity 2020.2 and higher.
 > It also only supports x64, ARM, and ARM64 builds.
 
-1. Follow the [Set up a new OpenXR project with MRTK](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk) instructions to add the OpenXR plug-in to your project. Ensure that the following have successfully installed:
+1. Follow the [Set up a new OpenXR project with MRTK](/windows/mixed-reality/develop/unity/new-openxr-project-with-mrtk) instructions to add the OpenXR plug-in to your project. Ensure that the following have successfully installed:
    1. XR Plugin Management
    1. OpenXR Plugin
    1. Mixed Reality OpenXR Plugin
