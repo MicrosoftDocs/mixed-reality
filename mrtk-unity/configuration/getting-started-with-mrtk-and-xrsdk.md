@@ -8,11 +8,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, XRSDK, 
 ---
 # Getting started with MRTK and XR SDK
 
-XR SDK is Unity's [new XR pipeline in Unity 2019.3 and beyond](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/). In Unity 2019, it provides an alternative to the existing XR pipeline. In Unity 2020, it is the only XR pipeline in Unity.
-
-## Prerequisites
-
-To get started with the Mixed Reality Toolkit, follow [the provided steps](/windows/mixed-reality/develop/install-the-tools#importing-the-mixed-reality-toolkit) to add MRTK to a project.
+XR SDK is Unity's [new XR pipeline in Unity 2019.3 and beyond](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/). In Unity 2019, it provides an alternative to the existing XR pipeline. In Unity 2020, it's the only XR pipeline in Unity.
 
 ## Configuring Unity for the XR SDK pipeline
 
@@ -189,7 +185,7 @@ to
 
 ### Controller mappings
 
-If using custom controller mapping profiles, open one of them and run the Mixed Reality Toolkit -> Utilities -> Update -> Controller Mapping Profiles menu item to ensure the new XR SDK controller types are defined.
+If you're using custom controller mapping profiles, open one of them and run the Mixed Reality Toolkit -> Utilities -> Update -> Controller Mapping Profiles menu item to ensure the new XR SDK controller types are defined.
 
 ## See also
 
