@@ -14,7 +14,7 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, mixed reality, development, 
 We recommend installing [Unreal Engine version 4.27](https://docs.unrealengine.com//GettingStarted/Installation/index.html) or later to take full advantage of built-in HoloLens support.
 
 Go to the **Library** tab in the Epic Games Launcher, select the dropdown arrow next to **Launch** and click **Options**. Under **Target Platforms**, select **HoloLens 2** and click **Apply**.
-![Unreal Install Option HoloLens 2](../images/Unreal_Install_Option_HoloLens_v4.27.png)
+![Unreal Install Option HoloLens 2](../../images/Unreal_Install_Option_HoloLens_v4.27.png)
 
 ## Import Mixed Reality Toolkit for Unreal
 
