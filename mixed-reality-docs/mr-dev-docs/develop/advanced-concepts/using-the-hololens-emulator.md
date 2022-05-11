@@ -282,6 +282,8 @@ If your debug target list in Visual Studio is empty (for example, Start is the o
 If your system hangs when the emulator is starting, disable hardware acceleration for emulator graphics.
 * Create a registry DWORD value named "DisableGPU" at HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\XDE\10.0 and set its value to 1.
 
+If Hololens2 Emulator does not respond when input from keyboard or mouse, try to disable your VPN connection. 
+
 ## See also
 * [Advanced HoloLens Emulator and Mixed Reality Simulator input](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)
 * [HoloLens Emulator software history](hololens-emulator-archive.md)
