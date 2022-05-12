@@ -1,21 +1,21 @@
 ---
-title: Case study - Scale apps across devices with different GPU capabilities
-description: See how to optimize a mixed reality app to deliver a compelling experience across devices with a range of GPU performance capabilities.
+title: Case study - Scale apps across different devices
+description: See how to optimize a mixed reality app to deliver a compelling experience across devices with a range of performance capabilities.
 author: danandersson
 ms.author: alexturn
-ms.date: 05/06/2022
+ms.date: 05/12/2022
 ms.topic: article
 keywords: immersive headset, performance optimization, VR, case study
 ms.custom: kr2b-contr-experiment
 ---
 
-# Case study - Scale apps across devices with different GPU capabilities
+# Case study - Scale apps across devices with different capabilities
 
 This case study describes how a Windows Mixed Reality application can target various platforms with [different hardware capabilities](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines). Datascape is a Windows Mixed Reality application that displays weather data on top of terrain data. The application surrounds users with holographic data visualizations. Users can explore unique insights they gain by discovering data in mixed reality.
 
-The Datascape app targets Microsoft HoloLens, Windows Mixed Reality immersive headsets, lower-powered PCs, and powerful PCs with high-end [graphics processing units (GPUs)](../develop/advanced-concepts/understanding-performance-for-mixed-reality.md#gpu-performance-recommendations). The main challenge was rendering a visually appealing scene, while executing at a high frame rate, on devices with wildly different GPU capabilities.
+The Datascape app targets Microsoft HoloLens, Windows Mixed Reality immersive headsets, lower-powered PCs, and high-performance PCs. The main challenge was rendering a visually appealing scene, while executing at a high frame rate, on devices with wildly different [performance abilities](../develop/advanced-concepts/understanding-performance-for-mixed-reality.md).
 
-This case study walks through the process and techniques we used to create some of the more GPU-intensive systems, especially rendering clouds. We describe the problems we encountered and how we overcame them.
+This case study walks through the process and techniques we used to create some of the more performance-intensive systems, especially rendering weather like clouds. We describe the problems we encountered and how we overcame them.
 
 For more information about performance considerations for mixed reality and for Unity apps, see:
 
@@ -28,7 +28,7 @@ Here's some background about the Datascape application and challenges.
 
 ### Transparency and overdraw
 
-Our main rendering struggles dealt with transparency, since transparency can be expensive on a GPU.
+Our main rendering struggles dealt with transparency, since transparency can be expensive.
 
 You can render *solid geometry* front to back while writing to the depth buffer, which stops any future pixels located behind that pixel from rendering. This operation prevents hidden pixels from executing the pixel [shader](../develop/advanced-concepts/understanding-performance-for-mixed-reality.md#shaders), and speeds up rendering significantly. If you sort geometry optimally, each pixel on the screen draws only once.
 
@@ -38,17 +38,17 @@ For HoloLens and mainstream PCs, you can only fill the screen a few times, makin
 
 ### Datascape scene components
 
-The Datascape scene has three major components: the **UI**, the **map**, and the **weather**. We knew that the weather effects would need all the GPU they could get, so we designed the UI and map to reduce overdraw.
+The Datascape scene has three major components: the **UI**, the **map**, and the **weather**. We knew that the weather effects would need all the performance they could get, so we designed the UI and map to reduce overdraw.
 
 We reworked the UI several times to minimize the amount of overdraw. For components like glowing buttons and map overviews, we chose to use more complex geometry rather than overlaying transparent art.
 
-For the map, we used a custom shader that [stripped out standard Unity features like shadows and complex lighting](../develop/unity/performance-recommendations-for-unity.md#optimal-lighting-settings). The custom shader replaced these features with a simple, single sun lighting model, and a custom fog calculation. This simple pixel shader freed up GPU cycles.
+For the map, we used a custom shader that [stripped out standard Unity features like shadows and complex lighting](../develop/unity/performance-recommendations-for-unity.md#optimal-lighting-settings). The custom shader replaced these features with a simple, single sun lighting model, and a custom fog calculation. This simple pixel shader improved performance.
 
 We got both the UI and the map to render at budget, so they didn't need any hardware-dependent changes. The weather visualization, especially the cloud rendering, was more challenging.
 
 ### Cloud data
 
-Cloud data downloaded from [NOAA servers](https://nomads.ncep.noaa.gov) in three distinct 2D layers. Each layer had the top and bottom height of the cloud, and density of the cloud, for each cell of the grid. We processed the data into a cloud info texture that stored each component in the red, green, and blue component of the texture for easy GPU access.
+Cloud data downloaded from [NOAA servers](https://nomads.ncep.noaa.gov) in three distinct 2D layers. Each layer had the top and bottom height of the cloud, and density of the cloud, for each cell of the grid. We processed the data into a cloud info texture that stored each component in the red, green, and blue component of the texture.
 
 ## Create geometry clouds
 
@@ -117,11 +117,9 @@ If particles stay solid and sort front-to-back, you still benefit from depth buf
 
 First, we created particle positions around the center point of the experience at startup. We distributed the particles more densely around the center and less so in the distance. We pre-sorted all particles from the center to the back, so the closest particles rendered first.
 
-A compute shader sampled the cloud info texture to position each particle at a correct height, and color it based on density.
+A compute shader sampled the cloud info texture to position each particle at a correct height, and color it based on density. Each particle contained both a height and a radius. The height was based on the cloud data sampled from the cloud info texture. The radius was based on the initial distribution, which calculated and stored the horizontal distance to its closest neighbor.
 
-We used [DrawProcedural](https://docs.unity3d.com/ScriptReference/Graphics.DrawProcedural.html) to render a quad per particle, allowing the particle data to always stay on the GPU.
-
-Each particle contained both a height and a radius. The height was based on the cloud data sampled from the cloud info texture. The radius was based on the initial distribution, which calculated and stored the horizontal distance to its closest neighbor. The quads used this data to orient themselves, angled by the height. When users look at a particle horizontally, it shows the height. When users look at the particle top-down, the area between it and its neighbors is covered.
+We used [DrawProcedural](https://docs.unity3d.com/ScriptReference/Graphics.DrawProcedural.html) to render a quad per particle. The quads used this data to orient themselves, angled by the height. When users look at a particle horizontally, it shows the height. When users look at the particle top-down, the area between it and its neighbors is covered.
 
 ![Diagram that shows particle shape and coverage.](images/particle-shape-700px.png)
 
@@ -230,7 +228,7 @@ The end result was sharp edges with cheap center sections of the clouds. While t
 
 For the wind effect, we generated long triangle strips in a compute shader, creating many wisps of wind in the world. The wind effect wasn't heavy on fill rate, due to the narrow strips. However, the many hundreds of thousands of vertices caused a heavy load for the vertex shader.
 
-To reduce the load, we introduced append buffers on the compute shader, to feed a subset of the wind strips to be drawn. We used simple [view frustum culling](https://docs.unity3d.com/Manual/OcclusionCulling.html) logic in the compute shader to determine if a strip was outside of camera view, and prevented those strips from being added to the push buffer. This process significantly reduced the number of strips, freeing up needed GPU cycles.
+To reduce the load, we introduced append buffers on the compute shader, to feed a subset of the wind strips to be drawn. We used simple [view frustum culling](https://docs.unity3d.com/Manual/OcclusionCulling.html) logic in the compute shader to determine if a strip was outside of camera view, and prevented those strips from being added to the push buffer. This process significantly reduced the number of strips, improving performance.
 
 The following code demonstrates an append buffer.
 
@@ -269,7 +267,7 @@ protected void Update()
 }
 ```
 
-We tried this technique on the cloud particles, culling them on the compute shader, and only pushing the visible particles to be rendered. But we didn't save much GPU, because the biggest bottleneck was the number of cloud pixels to render onscreen, not the cost of calculating vertices.
+We tried this technique on the cloud particles, culling them on the compute shader, and only pushing the visible particles to be rendered. But we didn't save much processing, because the biggest bottleneck was the number of cloud pixels to render onscreen, not the cost of calculating vertices.
 
 Another problem was that the append buffer populated in random order, due to the parallelized computing of the particles. The sorted particles became unsorted, resulting in flickering cloud particles. There are techniques to sort the push buffer, but the limited amount of performance gain from culling particles would probably be offset by another sort. We decided not to pursue this optimization for the cloud particles.
 
@@ -277,7 +275,7 @@ Another problem was that the append buffer populated in random order, due to the
 
 To ensure a steady frame rate on the app with varying rendering conditions, like a cloudy vs. clear view, we introduced adaptive rendering.
 
-The first step of adaptive rendering is to measure GPU. We inserted custom code into the GPU command buffer at the beginning and end of a rendered frame, to capture both the left and right eye screen time.
+The first step of adaptive rendering is to measure performance. We inserted custom code into the command buffer at the beginning and end of a rendered frame, to capture both the left and right eye screen time.
 
 Compare the rendering time to the desired refresh rate to show how close you come to dropping frames. When you come close to dropping frames, you can adapt rendering to be faster.
 
@@ -287,7 +285,7 @@ One simple way to adapt rendering is to change the screen viewport size so it re
 
 When we detect that we're about to drop frames, we lower the scale by a fixed ratio, and restore it when we're running fast enough again.
 
-In this case study, we decided which cloud technique to use based on the graphics capabilities of the hardware at startup. You could also base this decision on data from GPU measurement, to help prevent the system from staying at low resolution for a long time.
+In this case study, we decided which cloud technique to use based on the graphics capabilities of the hardware at startup. You could also base this decision on data from performance measurements, to help prevent the system from staying at low resolution for a long time.
 
 ## Recommendations
 
