@@ -67,46 +67,30 @@ productDirectory:
       links:
         - url: design/design.md
           text: Design and prototype
-        - url: discover/types-of-mixed-reality-apps.md
-          text: Choose your type of Mixed Reality app
         - url: discover/case-study-expanding-the-design-process-for-mixed-reality.md
           text: Expand your design process
         - url: design/app-patterns-landingpage.md
           text: Learn about UX elements
-        - url: design/comfort.md
-          text: Learn about user comfort
-        - url: design/interaction-fundamentals.md
-          text: Understand interaction fundamentals
     # Card
     - title: Develop
       imageSrc: design/images/icon-developer.png
       links:
         - url: develop/development.md
           text: Choose your technology path
-        - url: develop/features-and-samples.md
-          text: Find samples and feature apps
+        - url: mrtk-unity.md
+          text: What is MRTK?
         - url: develop/unity/unity-development-overview.md
           text: Get started with Unity
         - url: develop/unreal/unreal-development-overview.md
           text: Get started with Unreal
-        - url: develop/porting-apps/porting-overview.md
-          text: Port your existing apps
-        - url: distribute/distribute-overview.md
-          text: Publishing your apps
+        - url: develop/unity/features-and-samples.md
+          text: Free sample apps
     # Card
     - title: Deploy
       imageSrc: images/icon-distribution.jpg
       links:
         - url: /hololens/hololens-requirements
           text: Prepare for commercial deployment
-        - url: /hololens/hololens-identity
-          text: Manage user identity and sign-in
-        - url: /hololens/hololens-enroll-mdm
-          text: Enroll your devices 
-        - url: /hololens/hololens-updates
-          text: Manage your HoloLens updates
-        - url: /hololens/hololens2-cloud-connected-overview
-          text: Cloud connected deployment with Remote Assist 
         - url: /hololens/hololens-troubleshooting
           text: Troubleshooting & support
 
@@ -122,16 +106,7 @@ conceptualContent:
       links:
         - url: develop/unity/unity-development-overview.md
           itemType: overview
-          text: Unity docs - Overview
-        - url: /windows/mixed-reality/mrtk-unity/
-          itemType: overview
-          text: MRTK for Unity
-        - url: develop/unity/shared-experiences-in-unity.md
-          itemType: concept
-          text: Platform capabilities and APIs
-        - url: develop/unity/build-and-deploy-to-hololens.md
-          itemType: deploy
-          text: Deploying to device or emulator
+          text: Unity development overview
       # footerLink (optional)
       footerLink:
         url: develop/unity/unity-development-overview.md
@@ -143,16 +118,7 @@ conceptualContent:
       links:
         - url: develop/unreal/unreal-development-overview.md
           itemType: overview
-          text: Unreal docs - Overview
-        - url: develop/unreal/unreal-mrtk-introduction.md
-          itemType: overview
-          text: MRTK for Unreal
-        - url: develop/unreal/unreal-hololens-camera.md
-          itemType: concept
-          text: Platform capabilities and APIs
-        - url: develop/unreal/unreal-deploying.md
-          itemType: deploy
-          text: Deploying to device or emulator
+          text: Unreal development overview
       # footerLink (optional)
       footerLink:
         url: develop/unreal/unreal-development-overview.md
@@ -164,16 +130,7 @@ conceptualContent:
       links:
         - url: develop/native/directx-development-overview.md
           itemType: overview
-          text: Native docs - Overview
-        - url: develop/native/openxr.md
-          itemType: overview
-          text: What is OpenXR?
-        - url: develop/native/openxr-getting-started.md
-          itemType: get-started
-          text: Get started with OpenXR
-        - url: develop/native/openxr-best-practices.md
-          itemType: concept
-          text: OpenXR best practices
+          text: Native development overview
       # footerLink (optional)
       footerLink:
         url: develop/native/directx-development-overview.md
