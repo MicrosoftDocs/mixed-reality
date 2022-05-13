@@ -2,7 +2,7 @@
 title: Case study - Creating a galaxy in mixed reality
 description: Learn about the "Galaxy Explorer" application and how it was built for the Microsft HoloLens and after a 24-hour Twitter poll by community developers.
 author: karimluccin
-ms.author: kaluccin
+ms.author: v-damabe
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Galaxy Explorer, HoloLens, Windows Mixed Reality, share your idea, case study
