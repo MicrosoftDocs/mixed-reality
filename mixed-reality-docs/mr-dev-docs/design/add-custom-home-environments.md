@@ -2,7 +2,7 @@
 title: Design your own immersive environments
 description: Learn how to create Windows Mixed Reality home environments of your own.
 author: thmignon
-ms.author: thmignon
+ms.author: v-chmccl
 ms.date: 04/30/2018
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Home, Custom Environments, places, cliff house, skyloft, user, create, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit

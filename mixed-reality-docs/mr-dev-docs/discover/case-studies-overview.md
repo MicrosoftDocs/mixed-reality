@@ -1,6 +1,6 @@
 ---
 title: Case study overview
-description: Stories, learnings, and experiences the Mixed Reality team has found and jotted down along the way.
+description: Access stories, learnings, and experiences the Mixed Reality team has found and documented along the way.
 author: grbury 
 ms.author: vinnietieto
 ms.date: 12/30/2021
@@ -20,10 +20,10 @@ Stories, learnings, and experiences the Mixed Reality team has found and jotted 
         *February 2021*
     :::column-end:::
     :::column:::
-       [![Scaling Datascape across devices with different performance](images/cloud-steps-1-4-700px.jpg)](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)
-        **[Scaling Datascape across devices with different performance](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)**<br>
-        This case study offers insight on how Microsoft developers optimized the Datascape app to deliver a compelling experience across devices with a range of performance capabilities.<br>
-        *August 2017*
+       [![Scale apps across devices with different GPU capabilities](images/cloud-steps-1-4-700px.jpg)](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)
+        **[Scale apps across devices with different GPU capabilities](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)**<br>
+        See how to optimize a mixed reality app to deliver the best experience across a range of GPU performance capabilities.<br>
+        *May 2022*
     :::column-end:::
     :::column:::
        [![Building HoloSketch, a spatial layout and UX sketching app for HoloLens](images/holosketch-image-01-640px.png)](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)
