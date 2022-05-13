@@ -18,13 +18,13 @@ James Turrell designs with light. Stepping into his work blurs one’s sense of 
 
 ## How do you represent complex real-world environments in mixed reality?
 
-Representing Turrell’s work in an immersive experience makes for a compelling challenge. Lighting, scale, and spatial audio present opportunities to represent his work. While the exhibit’s geometric surroundings would require relatively simple 3D modeling, they are secondary to the artist’s focus: the light’s impact on the senses.
+Representing Turrell’s work in an immersive experience makes for a compelling challenge. Lighting, scale, and spatial audio present opportunities to represent his work. While the exhibit’s geometric surroundings would require relatively simple 3D modeling, they're secondary to the artist’s focus: the light’s impact on the senses.
 
 Turrell’s stark, surreal minimalism is the hallmark of his work, but what if we wanted to represent an exhibit with more complex materials in mixed reality?
 
 ![Artwork by Ai Weiwei. The installation, bang was shown in 2013.](../develop/advanced-concepts/images/bang-ai-weiwie.jpg)
 
-In 2013, the artist Ai Weiwei unveiled [a tangling work of art](https://www.designboom.com/art/ai-weiwei-bang-installation-at-venice-art-biennale-2013/) featuring 886 antique stools at the Venice Biennale. Each wooden stool came from an era where Chinese craftsmanship was highly valued, where these stools would have been passed down between generations. The stools themselves — the intricacies of the wood, the precision of the pieces, their careful placement — are critical to Ai’s commentary on modern culture.
+In 2013, the artist Ai Weiwei unveiled [a tangling work of art](https://www.designboom.com/art/ai-weiwei-bang-installation-at-venice-art-biennale-2013/) featuring 886 antique stools at the Venice Biennale. Each wooden stool came from an era where Chinese craftsmanship was highly valued, where these stools would have been passed down between generations. The stools themselves—the intricacies of the wood, the precision of the pieces, their careful placement—are critical to Ai’s commentary on modern culture.
 
 The antique stools deliver the artist’s message through their authenticity. Their realistic representation is critical to the experience, creating a technical challenge: Sculpting each of the 886 stools by hand would be enormously exhaustive and expensive. How long would it take to model and position? How would you maintain the authenticity of the material? Recreating these objects from scratch becomes, in many ways, an interpretation of the artwork itself. How can you preserve the artist’s intent?
 
@@ -36,7 +36,7 @@ The broad categories range from well-established 2D video to the newest forms of
 
 ![Diagram showing individual icons that represent the categories 2D video, 360 degree capture, motion capture, scanning, and volumetric video.](../develop/advanced-concepts/images/2d-to-volumetric-video.png)
 
-What kind of opportunities emerge when we cannot only create fantastic elements, but utilize the most realistic captures of environments, objects, and people in mixed reality? Exploring the overlap between these methods help illuminate where the medium is headed.
+What kind of opportunities emerge when we can't only create fantastic elements, but utilize the most realistic captures of environments, objects, and people in mixed reality? Exploring the overlap between these methods help illuminate where the medium is headed.
 
 For environments and objects, 360° imaging software is evolving to include elements of photogrammetry. Isolating depth information from scenes, advanced 360° videos help alleviate the feeling of having your head stuck in a fishbowl when looking around a virtual scene.
 
@@ -44,13 +44,13 @@ For people, new methods are emerging that combine and extend motion capture and 
 
 ## Volumetric video and the pursuit of authentic human capture
 
-Humans are central to storytelling — in the most literal sense: a human speaking, performing, or as the story’s subject. Some of the most immersive and eye-opening moments of today’s early immersive experiences are social. From sharing a mixed reality experience together in your living room, to seeing your friends in unbelievable new environments. The human element makes even the most fantastic reality, a reality.
+Humans are central to storytelling—in the most literal sense: a human speaking, performing, or as the story’s subject. Some of the most immersive and eye-opening moments of today’s early immersive experiences are social. From sharing a mixed reality experience together in your living room, to seeing your friends in unbelievable new environments. The human element makes even the most fantastic reality, a reality.
 
 ![A V R character shown in a virtual environment that represents use of a mixed reality experience. ](../develop/advanced-concepts/images/mindshow-in-vr-640px.jpg)
 
-Avatars in immersive experiences enable a new kind of embodiment in storytelling. The latest apps are rethinking the concept of virtual body ownership and setting up a generational leap in eliminating the distance between people. Companies like [Mindshow](https://mindshow.com/) are developing creative tools that leverage avatars, letting users take on entirely new personas and characters. Others are exploring [methods of artistic expression](https://en.wikipedia.org/wiki/Uncanny_valley), a potentially limitless creative opportunity to explore the nature (and necessity) of human-like attributes. Today, this absence of realism helps avoid the [uncanny valley of human likeness](https://en.wikipedia.org/wiki/Uncanny_valley) along with a host of technical issues for everyday developers. For these reasons (and more) it is very likely that non-realistic avatars will become the default for the foreseeable future. And yet, while realism poses an enormous challenge for mixed reality, *there are key scenarios that require authentic representation of humans in 3D space*.
+Avatars in immersive experiences enable a new kind of embodiment in storytelling. The latest apps are rethinking the concept of virtual body ownership and setting up a generational leap in eliminating the distance between people. Companies like [Mindshow](https://mindshow.com/) are developing creative tools that leverage avatars, letting users take on entirely new personas and characters. Others are exploring [methods of artistic expression](https://en.wikipedia.org/wiki/Uncanny_valley), a potentially limitless creative opportunity to explore the nature (and necessity) of human-like attributes. Today, this absence of realism helps avoid the [uncanny valley of human likeness](https://en.wikipedia.org/wiki/Uncanny_valley) along with a host of technical issues for everyday developers. For these reasons (and more) it's likely that non-realistic avatars will become the default for the foreseeable future. And yet, while realism poses an enormous challenge for mixed reality, *there are key scenarios that require authentic representation of humans in 3D space*.
 
-At Microsoft, a small team borne out of Microsoft Research has spent the past several years developing a method for capturing humans through a form of volumetric video. The process today is similar to video production: rather than applying movement to a sculpted asset it is a full, 3D recording. The performance and the image are captured in real-time — it’s not the work of an artist, it’s an authentic representation. And while the technology is just beginning to expand into commercial applications, the implications of volumetric video are critical to [Microsoft’s vision of More Personal Computing](https://www.youtube.com/watch?v=tcyj-_IEWt8).
+At Microsoft, a small team born out of Microsoft Research has spent the past several years developing a method for capturing humans through a form of volumetric video. The process today is similar to video production: rather than applying movement to a sculpted asset it's a full, 3D recording. The performance and the image are captured in real-time—it’s not the work of an artist, it’s an authentic representation. And while the technology is just beginning to expand into commercial applications, the implications of volumetric video are critical to [Microsoft’s vision of More Personal Computing](https://www.youtube.com/watch?v=tcyj-_IEWt8).
 
 ![A volumetric video presented at SIGGRAPH 2015 showing an interaction that contains human and virtual elements.](../develop/advanced-concepts/images/volumetric-video-siggraph-2015.gif)
 
@@ -66,9 +66,9 @@ Designing ways to make these videos seem natural poses a challenge but one in wh
 
 ![Future of conversation represented by a photo showing a conversation using video chat.](../develop/advanced-concepts/images/girl-with-dress.jpg)
 
-From layering a new level of immersion onto everyday apps like Skype, to radically reshaping the concept of digital meetings and business travel — volumetric video opens unique scenarios: A specialist virtually training doctors on a far-away continent or digital friends sitting on the couches and chairs in your living room. Adding authentic human representations to mixed reality experiences will radically reshape the concept of digital meetings and business travel.
+From layering a new level of immersion onto everyday apps like Skype, to radically reshaping the concept of digital meetings and business travel—volumetric video opens unique scenarios: A specialist virtually training doctors on a far-away continent or digital friends sitting on the couches and chairs in your living room. Adding authentic human representations to mixed reality experiences will radically reshape the concept of digital meetings and business travel.
 
-Just as the abstract art of James Turrell and the critical realism of Ai Weiwei offer their own unique technical challenges, so do the methods to represent humans as creative avatars and realistic captures. One cannot be ignored in light of the other and exploring the potential of each will help us understand human interaction in this new space.
+Just as the abstract art of James Turrell and the critical realism of Ai Weiwei offer their own unique technical challenges, so do the methods to represent humans as creative avatars and realistic captures. One can't be ignored in light of the other and exploring the potential of each will help us understand human interaction in this new space.
 
 ## About the author
 
