@@ -2,7 +2,7 @@
 title: Scene System Scene Types
 description: Documentation on different scene types in MRTK
 author: polar-kev
-ms.author: kesemple
+ms.author: roliu 
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
