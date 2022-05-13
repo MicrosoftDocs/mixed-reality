@@ -2,7 +2,7 @@
 title: Deploying to HoloLens and WMR headsets
 description: Documentation to Build and Deploy Apps into various devices.
 author: polar-kev
-ms.author: kesemple
+ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Visual Studio
 ---
