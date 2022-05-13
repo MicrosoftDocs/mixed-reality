@@ -2,7 +2,7 @@
 title: Documentation guidelines
 description: documentation guidelines and standards for the MRTK.
 author: polar-kev
-ms.author: kesemple
+ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---

@@ -2,7 +2,7 @@
 title: MRTK 2.5 release notes
 description: Release notes for MRTK version 2.5
 author: polar-kev
-ms.author: kesemple
+ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
