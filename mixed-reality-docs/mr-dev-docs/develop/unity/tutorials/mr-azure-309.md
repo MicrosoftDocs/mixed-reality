@@ -1,6 +1,7 @@
 ---
 title: HoloLens (1st gen) and Azure 309 - Application insights
-description: Complete this course to learn how to collect analytics regarding user behavior within a mixed reality application, using the Azure Application Insights Service.
+description: With this tutorial, get started learning how to collect analytics about user behavior within a mixed reality application using the Azure Application Insights Service.
+ms.custom: kr2b-contr-experiment
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
@@ -10,12 +11,9 @@ keywords: azure, mixed reality, academy, unity, tutorial, api, application insig
 
 # HoloLens (1st gen) and Azure 309: Application insights
 
-<br>
-
 >[!NOTE]
 >The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.
 
-<br>
 
 ![final product -start](images/AzureLabs-Lab309-00.png)
 
@@ -25,9 +23,9 @@ Application Insights is a Microsoft service, allowing developers to collect anal
 
 Having completed this course, you will have a mixed reality immersive headset application which will be able to do the following:
 
-1.  Allow the user to gaze and move around a scene.
-2.  Trigger the sending of analytics to the *Application Insights Service*, through the use of Gaze and Proximity to in-scene objects.
-3.  The app will also call upon the Service, fetching information about which object has been approached the most by the user, within the last 24 hours. That object will change its color to green.
+1. Allow the user to gaze and move around a scene.
+1. Trigger the sending of analytics to the *Application Insights Service*, through the use of Gaze and Proximity to in-scene objects.
+1. The app will also call upon the Service, fetching information about which object has been approached the most by the user, within the last 24 hours. That object will change its color to green.
 
 This course will teach you how to get the results from the Application Insights Service, into a Unity-based sample application. It will be up to you to apply these concepts to a custom application you might be building.
 
@@ -71,55 +69,55 @@ To avoid encountering issues building this project, it is strongly suggested tha
 
 To use *Application Insights*, you will need to create and configure an *Application Insights Service* in the Azure portal.
 
-1.	Log in to the [Azure Portal](https://portal.azure.com).
+1. Log in to the [Azure Portal](https://portal.azure.com).
 
     > [!NOTE]
     > If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
 
-2.  Once you are logged in, click on **New** in the top left corner, and search for *Application Insights*, and click **Enter**.
+1. Once you are logged in, click on **New** in the top left corner, and search for *Application Insights*, and click **Enter**.
 
     > [!NOTE]
     > The word **New** may have been replaced with **Create a resource**, in newer portals.
 
-    ![Azure Portal](images/AzureLabs-Lab309-01.png)
+    ![Screenshot showing the Azure Portal, Insight is highlighted in the Everything pane.](images/AzureLabs-Lab309-01.png)
 
-3.  The new page to the right will provide a description of the *Azure Application Insights* Service. At the bottom left of this page, select the **Create** button, to create an association with this Service.
+1. The new page to the right will provide a description of the *Azure Application Insights* Service. At the bottom left of this page, select the **Create** button, to create an association with this Service.
 
-    ![Azure Portal](images/AzureLabs-Lab309-02.png)
+    ![Screenshot of the Application Insights screen, Create is highlighted.](images/AzureLabs-Lab309-02.png)
 
-4.  Once you have clicked on **Create**:
+1. Once you have clicked on **Create**:
 
-    1.  Insert your desired **Name** for this Service instance.
+    1. Insert your desired **Name** for this Service instance.
 
-    2.  As **Application Type**, select **General**.
+    2. As **Application Type**, select **General**.
 
-    3.  Select an appropriate **Subscription**.
+    3. Select an appropriate **Subscription**.
 
-    4.  Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure Services associated with a single project (e.g. such as these courses) under a common resource group).
+    4. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure Services associated with a single project (e.g. such as these courses) under a common resource group).
 
         > If you wish to read more about Azure Resource Groups, please [visit the resource group article](/azure/azure-resource-manager/resource-group-portal).
 
-    5.  Select a **Location**.
+    5. Select a **Location**.
 
-    6.  You will also need to confirm that you have understood the Terms and Conditions applied to this Service.
+    6. You will also need to confirm that you have understood the Terms and Conditions applied to this Service.
 
-    7.  Select **Create**.
+    7. Select **Create**.
 
-        ![Azure Portal](images/AzureLabs-Lab309-03.png)
+        ![Screenshot of the Application Insights window. Name and application type are highlighted.](images/AzureLabs-Lab309-03.png)
 
 5.  Once you have clicked on **Create**, you will have to wait for the Service to be created, this might take a minute.
 
 6.  A notification will appear in the portal once the Service instance is created.
 
-    ![Azure Portal](images/AzureLabs-Lab309-04.png)
+    ![Screenshot showing a portion of the menu ribbon, the notification icon is highlighted.](images/AzureLabs-Lab309-04.png)
 
 7.  Click on the notifications to explore your new Service instance.
 
-    ![Azure Portal](images/AzureLabs-Lab309-05.png)
+    ![Screenshot showing the Deployment succeeded dialog, Go to resource is highlighted.](images/AzureLabs-Lab309-05.png)
 
 8.  Click the **Go to resource** button in the notification to explore your new Service instance. You will be taken to your new *Application Insights Service* instance.
 
-    ![Azure Portal](images/AzureLabs-Lab309-06.png)
+    ![Screenshot showing the Application Insights Service instance where the instance name is MyNewInsight.](images/AzureLabs-Lab309-06.png)
 
     > [!NOTE]
     >  Keep this web page open and easy to access, you will come back here often to see the data collected.
@@ -129,21 +127,21 @@ To use *Application Insights*, you will need to create and configure an *Applica
 
 9.  To find the **Instrumentation Key**, you will need to scroll down the list of Service functions, and click on **Properties**, the tab displayed will reveal the **Service Key**.
 
-    ![Azure Portal](images/AzureLabs-Lab309-07.png)
+    ![Screenshot showing service functions, Properties is highlighted in the Configure section and Instrumentation Key is highlighted in the main pane.](images/AzureLabs-Lab309-07.png)
 
 10. A little below **Properties**, you will find **API Access**, which you need to click. The panel to the right will provide the **Application ID** of your app.
 
-    ![Azure Portal](images/AzureLabs-Lab309-08.png)
+    ![Screenshot showing service functions, A P I Access is highlighted. Create A P I Key and Application I D are highlighted in the main pane.](images/AzureLabs-Lab309-08.png)
 
 11. With the **Application ID** panel still open, click **Create API Key**, which will open the *Create API key* panel.
 
-    ![Azure Portal](images/AzureLabs-Lab309-09.png)
+    ![Screenshot showing the Create A P I key panel.](images/AzureLabs-Lab309-09.png)
 
 12. Within the now open *Create API key* panel, type a description, and **tick the three boxes**.
 
 13. Click **Generate Key**. Your **API Key** will be created and displayed. 
 
-    ![Azure Portal](images/AzureLabs-Lab309-10.png)
+    ![Screenshot of the Create A P I key panel showing the new service key information.](images/AzureLabs-Lab309-10.png)
         
     > [!WARNING]
     > This is the only time your **Service Key** will be displayed, so ensure you make a copy of it now.
@@ -152,75 +150,75 @@ To use *Application Insights*, you will need to create and configure an *Applica
 
 The following is a typical set up for developing with the mixed reality, and as such, is a good template for other projects.
 
-1.  Open *Unity* and click **New**.
+1. Open *Unity* and click **New**.
 
-    ![Set up the Unity Project](images/AzureLabs-Lab309-11.png)
+    ![Screenshot of the Unity projects window. No project information is shown.](images/AzureLabs-Lab309-11.png)
 
-2.  You will now need to provide a Unity Project name, insert **MR\_Azure\_Application\_Insights**. Make sure the *Template* is set to **3D**. Set the *Location* to somewhere appropriate for you (remember, closer to root directories is better). Then, click **Create project**.
+2. You will now need to provide a Unity Project name, insert **MR\_Azure\_Application\_Insights**. Make sure the *Template* is set to **3D**. Set the *Location* to somewhere appropriate for you (remember, closer to root directories is better). Then, click **Create project**.
 
-    ![Set up the Unity Project](images/AzureLabs-Lab309-12.png)
+    ![Screenshot of the Unity new projects window, showing project information.](images/AzureLabs-Lab309-12.png)
 
-3.  With Unity open, it is worth checking the default **Script Editor** is set to **Visual Studio**. Go to **Edit \> Preferences** and then from the new window, navigate to **External Tools**. Change **External Script Editor** to **Visual Studio 2017**. Close the **Preferences** window.
+3. With Unity open, it is worth checking the default **Script Editor** is set to **Visual Studio**. Go to **Edit \> Preferences** and then from the new window, navigate to **External Tools**. Change **External Script Editor** to **Visual Studio 2017**. Close the **Preferences** window.
 
-    ![Set up the Unity Project](images/AzureLabs-Lab309-13.png)
+    ![Screenshot showing Visual Studio is set up as the external script editor.](images/AzureLabs-Lab309-13.png)
 
-4.  Next, go to **File \> Build Settings** and switch the platform to **Universal Windows Platform**, by clicking on the **Switch Platform** button.
+4. Next, go to **File \> Build Settings** and switch the platform to **Universal Windows Platform**, by clicking on the **Switch Platform** button.
 
-    ![Set up the Unity Project](images/AzureLabs-Lab309-14.png)
+    ![Screenshot of the Build Settings window, showing the Platform selection list. Universal Windows Platform is selected.](images/AzureLabs-Lab309-14.png)
 
-5.  Go to **File \> Build Settings** and make sure that:
+5. Go to **File \> Build Settings** and make sure that:
 
-    1.  **Target Device** is set to **Any device**
+    1. **Target Device** is set to **Any device**
 
         > For the Microsoft HoloLens, set **Target Device** to *HoloLens*.
 
-    2.  **Build Type** is set to **D3D**
+    2. **Build Type** is set to **D3D**
 
-    3.  **SDK** is set to **Latest installed**
+    3. **SDK** is set to **Latest installed**
 
-    4.  **Build and Run** is set to **Local Machine**
+    4. **Build and Run** is set to **Local Machine**
 
-    5.  Save the scene and add it to the build.
+    5. Save the scene and add it to the build.
 
-        1.  Do this by selecting **Add Open Scenes**. A save window will appear.
+        1. Do this by selecting **Add Open Scenes**. A save window will appear.
 
-            ![Set up the Unity Project](images/AzureLabs-Lab309-15.png)
+            ![Screenshot of the Build Settings window, Add Open Scenes is selected.](images/AzureLabs-Lab309-15.png)
 
         2. Create a new folder for this, and any future scene, then click the **New folder** button, to create a new folder, name it **Scenes**.
 
-            ![Set up the Unity Project](images/AzureLabs-Lab309-16.png)
+            ![Screenshot of the Save Scene window, the Scenes folder is selected.](images/AzureLabs-Lab309-16.png)
 
         3. Open your newly created **Scenes** folder, and then in the *File name:* text field, type **ApplicationInsightsScene**, then click **Save**.
 
-            ![Set up the Unity Project](images/AzureLabs-Lab309-17.png)
+            ![Screenshot of the Save Scene window with the file name entered.](images/AzureLabs-Lab309-17.png)
 
-6.  The remaining settings, in **Build Settings**, should be left as default for now.
+6. The remaining settings, in **Build Settings**, should be left as default for now.
 
-7.  In the **Build Settings** window, click on the **Player Settings** button, this will open the related panel in the space where the **Inspector** is located.
+7. In the **Build Settings** window, click on the **Player Settings** button, this will open the related panel in the space where the **Inspector** is located.
 
-    ![Set up the Unity Project](images/AzureLabs-Lab309-18.png)
+    ![Screenshot of the Inspector tab showing Player Settings.](images/AzureLabs-Lab309-18.png)
 
 8. In this panel, a few settings need to be verified:
 
-    1.  In the **Other Settings** tab:
+    1. In the **Other Settings** tab:
 
-        1.  **Scripting** **Runtime Version** should be **Experimental (.NET 4.6 Equivalent)**, which will trigger a need to restart the Editor.
+        1. **Scripting** **Runtime Version** should be **Experimental (.NET 4.6 Equivalent)**, which will trigger a need to restart the Editor.
 
-        2.  **Scripting Backend** should be **.NET**
+        2. **Scripting Backend** should be **.NET**
 
-        3.  **API Compatibility Level** should be **.NET 4.6**
+        3. **API Compatibility Level** should be **.NET 4.6**
 
-        ![Set up the Unity Project](images/AzureLabs-Lab309-19.png)
+        ![Screenshot of the Inspector tab showing details in the configuration section of Other Settings.](images/AzureLabs-Lab309-19.png)
 
-    2.  Within the **Publishing Settings** tab, under **Capabilities**, check:
+    2. Within the **Publishing Settings** tab, under **Capabilities**, check:
 
         - **InternetClient**     
 
-            ![Set up the Unity Project](images/AzureLabs-Lab309-20.png)
+            ![Screenshot of the Capabilities list, Internet client is checked.](images/AzureLabs-Lab309-20.png)
 
-    3.  Further down the panel, in **XR Settings** (found below **Publishing Settings**), tick **Virtual Reality Supported**, make sure the **Windows Mixed Reality SDK** is added.
+    3. Further down the panel, in **XR Settings** (found below **Publishing Settings**), tick **Virtual Reality Supported**, make sure the **Windows Mixed Reality SDK** is added.
 
-        ![Set up the Unity Project](images/AzureLabs-Lab309-21.png)
+        ![Screenshot of the X R Settings section, Virtual Reality Supported is checked.](images/AzureLabs-Lab309-21.png)
 
 9.  Back in **Build Settings**, **Unity C# Projects** is no longer greyed out; tick the checkbox next to this.
 
