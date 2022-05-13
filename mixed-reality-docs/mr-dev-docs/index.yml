@@ -77,13 +77,13 @@ productDirectory:
       links:
         - url: develop/development.md
           text: Choose your technology path
-        - url: mrtk-unity.md
+        - url: /windows/mixed-reality/mrtk-unity
           text: What is MRTK?
         - url: develop/unity/unity-development-overview.md
           text: Get started with Unity
         - url: develop/unreal/unreal-development-overview.md
           text: Get started with Unreal
-        - url: develop/unity/features-and-samples.md
+        - url: develop/unity/features-and-samples
           text: Free sample apps
     # Card
     - title: Deploy
