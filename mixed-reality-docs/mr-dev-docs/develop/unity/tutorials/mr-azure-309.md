@@ -220,11 +220,11 @@ The following is a typical set up for developing with the mixed reality, and as 
 
         ![Screenshot of the X R Settings section, Virtual Reality Supported is checked.](images/AzureLabs-Lab309-21.png)
 
-9.  Back in **Build Settings**, **Unity C# Projects** is no longer greyed out; tick the checkbox next to this.
+9. Back in **Build Settings**, **Unity C# Projects** is no longer greyed out; tick the checkbox next to this.
 
-10.  Close the Build Settings window.
+10. Close the Build Settings window.
 
-11.  Save your Scene and Project (**FILE** > **SAVE SCENE / FILE** > **SAVE PROJECT**).
+11. Save your Scene and Project (**FILE** > **SAVE SCENE / FILE** > **SAVE PROJECT**).
 
 
 ## Chapter 3 - Import the Unity package
@@ -237,68 +237,68 @@ The following is a typical set up for developing with the mixed reality, and as 
 
 To import Application Insights into your own project, make sure you have [downloaded the '.unitypackage', containing the plugins](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20309%20-%20Application%20insights/AppInsights_LabPlugins.unitypackage). Then, do the following:
 
-1.  Add the **.unitypackage** to Unity by using the **Assets \> Import Package \> Custom Package** menu option.
+1. Add the **.unitypackage** to Unity by using the **Assets \> Import Package \> Custom Package** menu option.
 
-2.  In the **Import Unity Package** box that pops up, ensure everything under (and including) **Plugins** is selected.
+2. In the **Import Unity Package** box that pops up, ensure everything under (and including) **Plugins** is selected.
 
-    ![Import the Unity package](images/AzureLabs-Lab309-22.png)
+    ![Screenshot of the Import Unity Package dialog box showing all items checked.](images/AzureLabs-Lab309-22.png)
 
-3.  Click the **Import** button, to add the items to your project.
+3. Click the **Import** button, to add the items to your project.
 
-4.  Go to the **Insights** folder under **Plugins** in the Project view and select the following plugins *only*:
+4. Go to the **Insights** folder under **Plugins** in the Project view and select the following plugins *only*:
 
-    -   Microsoft.ApplicationInsights
+    - Microsoft.ApplicationInsights
 
-    ![Import the Unity package](images/AzureLabs-Lab309-23.png)
+    ![Screenshot of the Project panel, the Insights folder is open.](images/AzureLabs-Lab309-23.png)
 
-5.  With this *plugin* selected, ensure that **Any Platform** is **unchecked**, then ensure that **WSAPlayer** is also **unchecked**, then click **Apply**. Doing this is just to confirm that the files are configured correctly.
+5. With this *plugin* selected, ensure that **Any Platform** is **unchecked**, then ensure that **WSAPlayer** is also **unchecked**, then click **Apply**. Doing this is just to confirm that the files are configured correctly.
 
-    ![Import the Unity package](images/AzureLabs-Lab309-24.png)
+    ![Screenshot of the Inspector panel showing Editor and Standalone checked.](images/AzureLabs-Lab309-24.png)
 
     > [!NOTE]
     > Marking the plugins like this, configures them to only be used in the Unity Editor. There are a different set of DLLs in the WSA folder which will be used after the project is exported from Unity.
 
-6.  Next, you need to open the **WSA** folder, within the **Insights** folder. You will see a copy of the same file you just configured. Select this file, and then in the inspector, ensure that **Any Platform** is **unchecked**, then ensure that **only** **WSAPlayer** is **checked**. Click **Apply**.
+6. Next, you need to open the **WSA** folder, within the **Insights** folder. You will see a copy of the same file you just configured. Select this file, and then in the inspector, ensure that **Any Platform** is **unchecked**, then ensure that **only** **WSAPlayer** is **checked**. Click **Apply**.
 
-    ![Import the Unity package](images/AzureLabs-Lab309-25.png)
+    ![Screenshot of the Inspector panel showing W S A Player checked.](images/AzureLabs-Lab309-25.png)
 
 7. You will now need to follow **steps 4-6**, but for the *Newtonsoft* plugins instead. See the below screenshot for what the outcome should look like.
 
-    ![Import the Unity package](images/AzureLabs-Lab309-25-5.png)    
+    ![Screenshot of four views of the Project and Inspector panels showing the results of setting up the Newtonsoft folder and plugin selections.](images/AzureLabs-Lab309-25-5.png)    
 
 ## Chapter 4 - Set up the camera and user controls
 
 In this Chapter you will set up the camera and the controls to allow the user to see and move in the scene.
 
-1.  Right-click in an empty area in the Hierarchy Panel, then on **Create** > **Empty**.
+1. Right-click in an empty area in the Hierarchy Panel, then on **Create** > **Empty**.
 
-    ![Set up the camera and the User controls](images/AzureLabs-Lab309-26.png)
+    ![Screenshot of the Hierarchy panel, Create Empty is selected.](images/AzureLabs-Lab309-26.png)
 
-2.  Rename the new empty GameObject to **Camera Parent**.
+2. Rename the new empty GameObject to **Camera Parent**.
 
-    ![Set up the camera and the User controls](images/AzureLabs-Lab309-27.png)
+    ![Screenshot of the Hierarchy panel with Camera Parent selected. The Inspector panel ](images/AzureLabs-Lab309-27.png)
 
-3.  Right-click in an empty area in the Hierarchy Panel, then on **3D Object**, then on **Sphere**.
+3. Right-click in an empty area in the Hierarchy Panel, then on **3D Object**, then on **Sphere**.
 
-4.  Rename the Sphere to **Right Hand**.
+4. Rename the Sphere to **Right Hand**.
 
-5.  Set the **Transform Scale** of the Right Hand to **0.1, 0.1, 0.1**
+5. Set the **Transform Scale** of the Right Hand to **0.1, 0.1, 0.1**
 
-    ![Set up the camera and the User controls](images/AzureLabs-Lab309-28.png)
+    ![Screenshot of the Hierarchy and Inspector panels, the Transform section on the Inspector panel is highlighted.](images/AzureLabs-Lab309-28.png)
 
-6.  Remove the **Sphere Collider** component from the Right Hand by clicking on the **Gear** in the *Sphere Collider* component, and then **Remove Component**.
+6. Remove the **Sphere Collider** component from the Right Hand by clicking on the **Gear** in the *Sphere Collider* component, and then **Remove Component**.
 
-    ![Set up the camera and the User controls](images/AzureLabs-Lab309-29.png)
+    ![Screenshot of the Inspector panel, the gear icon and Remove Component are highlighted in the Sphere Collider section.](images/AzureLabs-Lab309-29.png)
 
-7.  In the Hierarchy Panel drag the **Main Camera** and the **Right Hand** objects onto the **Camera Parent** object.
+7. In the Hierarchy Panel drag the **Main Camera** and the **Right Hand** objects onto the **Camera Parent** object.
 
-    ![Set up the camera and the User controls](images/AzureLabs-Lab309-30.png)
+    ![Screenshot of the Hierarchy panel with Main Camera selected, the Inspector panel shows Main Camera checked.](images/AzureLabs-Lab309-30.png)
 
 8.  Set the **Transform Position** of both the **Main Camera** and the **Right Hand** object to **0, 0, 0**.
 
-    ![Set up the camera and the User controls](images/AzureLabs-Lab309-31.png)
+    ![Screenshot of the Hierarchy panel with Main Camera selected, Transform settings are highlighted in the Inspector panel.](images/AzureLabs-Lab309-31.png)
 
-    ![Set up the camera and the User controls](images/AzureLabs-Lab309-32.png)
+    ![Screenshot of the Hierarchy panel with Right Hand selected, Transform settings are highlighted in the Inspector panel.](images/AzureLabs-Lab309-32.png)
 
 ## Chapter 5 - Set up the objects in the Unity scene
 
