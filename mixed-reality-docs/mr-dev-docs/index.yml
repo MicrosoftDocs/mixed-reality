@@ -83,7 +83,7 @@ productDirectory:
           text: Get started with Unity
         - url: develop/unreal/unreal-development-overview.md
           text: Get started with Unreal
-        - url: develop/unity/features-and-samples
+        - url: /windows/mixed-reality/develop/features-and-samples
           text: Free sample apps
     # Card
     - title: Deploy
