@@ -1,61 +1,49 @@
 ---
-title: Authorizing project changes
-description: Learn how to authorize project changes the MR Feature Tool for HoloLens and VR development.
+title: Authorize project changes
+description: Learn how to authorize project changes by using the Mixed Reality Feature Tool for HoloLens and VR development.
 author: sean-kerawala
 ms.author: sekerawa
-ms.date: 03/04/2021
+ms.date: 05/16/2022
 ms.topic: article
 ms.localizationpriority: high
 keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit, mixed reality headset, windows mixed reality headset, virtual reality headset, installation, Windows, HoloLens, emulator, unreal, openxr
+ms.custom: kr2b-contr-experiment
 ---
 
-# Authorizing project changes
+# Authorize project changes
 
-Before modifying the Unity project, changes to the manifest and project files need to be reviewed and approved:
+To modify a Unity project, you must first review and approve changes to the manifest and project files.
 
-![Requesting authorization](images/FeatureToolApprovalRequest.png)
+On the **Review and Approve** screen:
 
-## Manifest
+- The **Manifest** column on the left shows the proposed manifest changes. The contents are exactly what to write to the project manifest, *Packages/manifest.json*.
 
-The proposed manifest changes can be viewed in the **Manifest** column on the left. The contents are exactly what will be written to the project manifest (**Packages/manifest.json**):
+- The **Files to be copied into the project** section on the right lists the specific feature package files to copy into the Unity project.
 
-![Manifest preview](images/ManifestPreview.png)
-
-## Files to be copied into the project
-
-The **Files to be copied into the project** section on the right lists the specific feature package files that will be copied into the Unity project:
-
-![Manifest preview with files to be copied](images/FilesToCopy.png)
+![Screenshot of the Review and Approve screen.]
 
 ## Compare manifests
 
-You can see a detailed side-by-side comparison of all proposed changes by selecting **Compare**:
+Select **Compare** to see a detailed side-by-side comparison of all proposed changes.
 
-![Compare manifests](images/FeatureToolCompareManifest.png)
+![Screenshot of the Compare manifests screen.](images/FeatureToolCompareManifest.png)
 
-> [!NOTE]
-> Starting with version 1.0.2109.0, either scroll bar will scroll **both** manifests. This helps more easily spot the differences between the two files.
+Either scroll bar scrolls both manifests, making it easier to spot the differences between the two files.
 
-## Approving changes
+## Approve changes
 
-When the proposed changes are approved, the listed files will be copied into the Unity project and the manifest will be updated with references to these files.
+Select **Approve** to copy the listed files into the Unity project and update the manifest with references to these files.
 
-> [!NOTE]
-> The feature package (*.tgz) files should be added to source control. They are referenced using a relative path to enable development teams to easily share features and manifest changes.
+- As part of the modifications, the current *manifest.json* file is backed up. When viewing manifest backups, the oldest is called *manifest.json.backup*. Newer backups are annotated with a numeric value, beginning with *0*.
 
- As part of the modifications, the current **manifest.json** file will be backed up.
+- Add the feature package *.tgz* files to source control. Reference the files with relative paths to help development teams easily share features and manifest changes.
 
-> [!IMPORTANT]
-> When viewing the manifest backups, the oldest will be called **manifest.json.backup**. Newer backups will be annotated with a numeric value, beginning with zero (0).
-
-## Going back to the previous step
-
-If you need to make changes to your feature selections, use **Go Back** to return to the [import](importing-features.md) step.
+- If you need to make changes to your feature selections, select **Go Back** to return to the [import features](importing-features.md) step.
 
 ## See also
 
 - [Welcome to the Mixed Reality Feature Tool](welcome-to-mr-feature-tool.md)
-- [Configuring the feature tool](configuring-feature-tool.md)
+- [Configure the feature tool](configuring-feature-tool.md)
 - [Discovery and acquisition](discovering-features.md)
-- [Viewing feature package details](viewing-package-details.md)
-- [Importing selected packages](importing-features.md)
+- [View feature package details](viewing-package-details.md)
+- [Import selected packages](importing-features.md)
