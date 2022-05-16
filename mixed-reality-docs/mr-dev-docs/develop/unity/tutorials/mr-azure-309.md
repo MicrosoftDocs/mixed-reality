@@ -15,7 +15,7 @@ keywords: azure, mixed reality, academy, unity, tutorial, api, application insig
 >The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.  As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.  These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.  They will be maintained to continue working on the supported devices. There will be a new series of tutorials that will be posted in the future that will demonstrate how to develop for HoloLens 2.  This notice will be updated with a link to those tutorials when they are posted.
 
 
-![final product -start](images/AzureLabs-Lab309-00.png)
+![The Mixed Reality Academy tutorial welcome screen.](images/AzureLabs-Lab309-00.png)
 
 In this course, you will learn how to add Application Insights capabilities to a mixed reality application, using the Azure Application Insights API to collect analytics regarding user behavior.
 
@@ -294,7 +294,7 @@ In this Chapter you will set up the camera and the controls to allow the user to
 
     ![Screenshot of the Hierarchy panel with Main Camera selected, the Inspector panel shows Main Camera checked.](images/AzureLabs-Lab309-30.png)
 
-8.  Set the **Transform Position** of both the **Main Camera** and the **Right Hand** object to **0, 0, 0**.
+8. Set the **Transform Position** of both the **Main Camera** and the **Right Hand** object to **0, 0, 0**.
 
     ![Screenshot of the Hierarchy panel with Main Camera selected, Transform settings are highlighted in the Inspector panel.](images/AzureLabs-Lab309-31.png)
 
@@ -304,67 +304,67 @@ In this Chapter you will set up the camera and the controls to allow the user to
 
 You will now create some basic shapes for your scene, with which the user can interact.
 
-1.  Right-click in an empty area in the *Hierarchy Panel*, then on **3D Object**, then select **Plane**.
+1. Right-click in an empty area in the *Hierarchy Panel*, then on **3D Object**, then select **Plane**.
 
-2.  Set the Plane **Transform Position** to **0, -1, 0**.
+2. Set the Plane **Transform Position** to **0, -1, 0**.
 
-3.  Set the Plane **Transform Scale** to **5, 1, 5**.
+3. Set the Plane **Transform Scale** to **5, 1, 5**.
 
-    ![Set up the objects in the Unity Scene](images/AzureLabs-Lab309-33.png)
+    ![Screenshot of the Scene, Hierarchy, and Inspector panels. The Transform section in the Inspector panel is highlighted.](images/AzureLabs-Lab309-33.png)
 
-4.  Create a basic material to use with your **Plane** object, so that the other shapes are easier to see. Navigate to your *Project Panel*, right-click, then **Create**, followed by **Folder**, to create a new folder. Name it **Materials**.
+4. Create a basic material to use with your **Plane** object, so that the other shapes are easier to see. Navigate to your *Project Panel*, right-click, then **Create**, followed by **Folder**, to create a new folder. Name it **Materials**.
 
-    ![Set up the objects in the Unity Scene](images/AzureLabs-Lab309-34.png) ![Set up the objects in the Unity Scene](images/AzureLabs-Lab309-35.png)
+    ![Screenshot of the Project panel showing Create and Folder highlighted.](images/AzureLabs-Lab309-34.png) ![Screenshot of the Project panel. Materials is highlighted in the Assets pane.](images/AzureLabs-Lab309-35.png)
 
-5.  Open the **Materials** folder, then right-click, click **Create**, then **Material**, to create a new material. Name it **Blue**.
+5. Open the **Materials** folder, then right-click, click **Create**, then **Material**, to create a new material. Name it **Blue**.
 
-    ![Set up the objects in the Unity Scene](images/AzureLabs-Lab309-36.png) ![Set up the objects in the Unity Scene](images/AzureLabs-Lab309-37.png)
+    ![Screenshot of the Project panel showing Create and Material highlighted.](images/AzureLabs-Lab309-36.png) ![Screenshot of the Project panel. Blue is highlighted in the Materials pane.](images/AzureLabs-Lab309-37.png)
 
-6.  With the new **Blue** material selected, look at the *Inspector*, and click the rectangular window alongside **Albedo**. Select a blue color (the one picture below is **Hex Color: \#3592FFFF**). Click the close button once you have chosen.
+6. With the new **Blue** material selected, look at the *Inspector*, and click the rectangular window alongside **Albedo**. Select a blue color (the one picture below is **Hex Color: \#3592FFFF**). Click the close button once you have chosen.
 
-    ![Set up the objects in the Unity Scene](images/AzureLabs-Lab309-38.png)
+    ![Screenshot of the Inspector panel. The color section is highlighted.](images/AzureLabs-Lab309-38.png)
 
-7.  Drag your new material from the **Materials** folder, onto your newly created **Plane**, within your scene (or drop it on the **Plane** object within the *Hierarchy*).
+7. Drag your new material from the **Materials** folder, onto your newly created **Plane**, within your scene (or drop it on the **Plane** object within the *Hierarchy*).
 
-    ![Set up the objects in the Unity Scene](images/AzureLabs-Lab309-39.png)
+    ![Screenshot of the Scene panel showing the new material from the Materials folder.](images/AzureLabs-Lab309-39.png)
 
-8.  Right-click in an empty area in the *Hierarchy Panel*, then on **3D Object, Capsule**.
+8. Right-click in an empty area in the *Hierarchy Panel*, then on **3D Object, Capsule**.
 
-    -  With the **Capsule** selected, change its **Transform** *Position* to: **-10, 1, 0**.
+   - With the **Capsule** selected, change its **Transform** *Position* to: **-10, 1, 0**.
 
-9.  Right-click in an empty area in the *Hierarchy Panel*, then on **3D Object, Cube**.
+9. Right-click in an empty area in the *Hierarchy Panel*, then on **3D Object, Cube**.
 
-    -  With the **Cube** selected, change its **Transform** *Position* to: **0, 0, 10**.
+    - With the **Cube** selected, change its **Transform** *Position* to: **0, 0, 10**.
 
 10. Right-click in an empty area in the *Hierarchy Panel*, then on **3D Object, Sphere**.
 
-    -  With the **Sphere** selected, change its **Transform** *Position* to: **10, 0, 0**.
+    - With the **Sphere** selected, change its **Transform** *Position* to: **10, 0, 0**.
 
-    ![Set up the objects in the Unity Scene](images/AzureLabs-Lab309-40.png)
+    ![Screenshot of the Scene, Hierarchy, and Inspector panels. Capsule is selected in the Hierarchy panel.](images/AzureLabs-Lab309-40.png)
 
     > [!NOTE]
     > These *Position* values are *suggestions*. You are free to set the positions of the objects to whatever you would like, though it is easier for the user of the application if the objects distances are not too far from the camera.
 
 11. When your application is running, it needs to be able to identify the objects within the scene, to achieve this, they need to be tagged. Select one of the objects, and in the *Inspector* panel, click **Add Tag...**, which will swap the *Inspector* with the **Tags & Layers** panel.
 
-    ![Set up the objects in the Unity Scene](images/AzureLabs-Lab309-41.png) ![Screenshot that shows the Tag & Layers panel.](images/AzureLabs-Lab309-42.png)
+    ![Screenshot of the Inspector panel showing the Add Tag option highlighted.](images/AzureLabs-Lab309-41.png) ![Screenshot of the Inspector panel showing Tags and Layers highlighted.](images/AzureLabs-Lab309-42.png)
 
 12. Click the **+ (plus)** symbol, then type the tag name as **ObjectInScene**.
 
-    ![Set up the objects in the Unity Scene](images/AzureLabs-Lab309-43.png)
+    ![Screenshot of the Inspector panel with Tags and Layers selected. The New Tag Name dialog is highlighted.](images/AzureLabs-Lab309-43.png)
 
     > [!WARNING]
     > If you use a different name for your tag, you will need to ensure this change is also made the *DataFromAnalytics*, *ObjectTrigger*, and *Gaze*, scripts later, so that your objects are found, and detected, within your scene.
 
 13. With the tag created, you now need to apply it to all three of your objects. From the *Hierarchy*, hold the **Shift** key, then click the **Capsule**, **Cube**, and **Sphere**, objects, then in the *Inspector*, click the dropdown menu alongside **Tag**, then click the *ObjectInScene* tag you created.
 
-    ![Set up the objects in the Unity Scene](images/AzureLabs-Lab309-44.png) ![Screenshot that shows the menu options.](images/AzureLabs-Lab309-45.png)
+    ![Screenshot of the Inspector panel, an arrow points to Tag. The Untagged menu shows Untagged checked and ObjectInScene is selected.](images/AzureLabs-Lab309-44.png) ![Screenshot showing two menus with Create and Folder highlighted.](images/AzureLabs-Lab309-45.png)
 
 ## Chapter 6 - Create the ApplicationInsightsTracker class
 
 The first script you need to create is **ApplicationInsightsTracker**, which is responsible for:
 
-1.  Creating events based on user interactions to submit to Azure Application Insights.
+1. Creating events based on user interactions to submit to Azure Application Insights.
 
 2. Creating appropriate Event names, depending on user interaction.
 
@@ -372,15 +372,15 @@ The first script you need to create is **ApplicationInsightsTracker**, which is 
 
 To create this class:
 
-1.  Right-click in the *Project Panel*, then **Create** > **Folder**. Name the folder **Scripts**.
+1. Right-click in the *Project Panel*, then **Create** > **Folder**. Name the folder **Scripts**.
 
-    ![Create the ApplicationInsightsTracker class](images/AzureLabs-Lab309-46.png)  ![Create the ApplicationInsightsTracker class](images/AzureLabs-Lab309-47.png)
+    ![Screenshot of the Projects panel. The Scripts folder icon is highlighted in the Assets pane.](images/AzureLabs-Lab309-46.png)  ![Screenshot showing menu options where the options, Create and C# Script are selected.](images/AzureLabs-Lab309-47.png)
 
-2.  With the **Scripts** folder created, double-click it, to open. Then, within that folder, right-click, **Create** > **C# Script**. Name the script **ApplicationInsightsTracker**.
+2. With the **Scripts** folder created, double-click it, to open. Then, within that folder, right-click, **Create** > **C# Script**. Name the script **ApplicationInsightsTracker**.
 
-3.  Double-click on the new **ApplicationInsightsTracker** script to open it with **Visual Studio**.
+3. Double-click on the new **ApplicationInsightsTracker** script to open it with **Visual Studio**.
 
-4.  Update namespaces at the top of the script to be as below:
+4. Update namespaces at the top of the script to be as below:
 
     ```csharp
         using Microsoft.ApplicationInsights;
@@ -389,7 +389,7 @@ To create this class:
         using UnityEngine;
     ```
 
-5.  Inside the class insert the following variables:
+5. Inside the class insert the following variables:
 
     ```csharp
         /// <summary>
@@ -426,7 +426,7 @@ To create this class:
     > [!NOTE] 
     > Set the **instrumentationKey, applicationId and API_Key** values appropriately, using the *Service Keys* from the Azure Portal as mentioned in [Chapter 1](#chapter-1---the-azure-portal), step 9 onwards.
 
-6.  Then add the **Start()** and **Awake()** methods, which will be called when the class initializes:
+6. Then add the **Start()** and **Awake()** methods, which will be called when the class initializes:
 
     ```csharp
         /// <summary>
@@ -454,7 +454,7 @@ To create this class:
         }
     ```
 
-7.  Add the methods responsible for sending the events and metrics registered by your application:
+7. Add the methods responsible for sending the events and metrics registered by your application:
 
     ```csharp
         /// <summary>
@@ -492,19 +492,19 @@ To create this class:
         }
     ```
 
-8.  Be sure to save your changes in *Visual Studio* before returning to *Unity*.
+8. Be sure to save your changes in *Visual Studio* before returning to *Unity*.
 
 ## Chapter 7 - Create the Gaze script
 
 The next script to create is the **Gaze** script. This script is responsible for creating a *Raycast* that will be projected forward from the *Main Camera*, to detect which object the user is looking at. In this case, the *Raycast* will need to identify if the user is looking at an object with the **ObjectInScene** tag, and then count how long the user *gazes* at that object.
 
-1.  Double-click on the **Scripts** folder, to open it.
+1. Double-click on the **Scripts** folder, to open it.
 
-2.  Right-click inside the **Scripts** folder, click **Create** > **C# Script**. Name the script **Gaze**.
+2. Right-click inside the **Scripts** folder, click **Create** > **C# Script**. Name the script **Gaze**.
 
-3.  Double-click on the script to open it with Visual Studio.
+3. Double-click on the script to open it with Visual Studio.
 
-4.  Replace the existing code with the following:
+4. Replace the existing code with the following:
 
     ```csharp
         using UnityEngine;
@@ -550,7 +550,7 @@ The next script to create is the **Gaze** script. This script is responsible for
         }
     ```
 
-5.  Code for the **Awake()** and **Start()** methods now needs to be added.
+5. Code for the **Awake()** and **Start()** methods now needs to be added.
 
     ```csharp
         private void Awake()
@@ -587,7 +587,7 @@ The next script to create is the **Gaze** script. This script is responsible for
         }
     ```
 
-6.  Inside the **Gaze** class, add the following code in the **Update()** method to project a *Raycast* and detect the target hit:
+6. Inside the **Gaze** class, add the following code in the **Update()** method to project a *Raycast* and detect the target hit:
 
     ```csharp
         /// <summary>
@@ -651,7 +651,7 @@ The next script to create is the **Gaze** script. This script is responsible for
         }
     ```
 
-7.  Add the **ResetFocusedObject()** method, to send data to **Application Insights** when the user has looked at an object.
+7. Add the **ResetFocusedObject()** method, to send data to **Application Insights** when the user has looked at an object.
 
     ```csharp
         /// <summary>
@@ -681,7 +681,7 @@ The next script to create is the **Gaze** script. This script is responsible for
         }
     ```
 
-8.  You have now completed the **Gaze** script. Save your changes in *Visual Studio* before returning to *Unity*.
+8. You have now completed the **Gaze** script. Save your changes in *Visual Studio* before returning to *Unity*.
 
 ## Chapter 8 - Create the ObjectTrigger class
 
@@ -692,11 +692,11 @@ The next script you need to create is **ObjectTrigger**, which is responsible fo
 
 To create the script:
 
-1.  Double-click on the **Scripts** folder, to open it.
+1. Double-click on the **Scripts** folder, to open it.
 
-2.  Right-click inside the **Scripts** folder, click **Create** > **C# Script**. Name the script **ObjectTrigger**.
+2. Right-click inside the **Scripts** folder, click **Create** > **C# Script**. Name the script **ObjectTrigger**.
 
-3.  Double-click on the script to open it with Visual Studio. Replace the existing code with the following:
+3. Double-click on the script to open it with Visual Studio. Replace the existing code with the following:
 
     ```csharp
         using UnityEngine;
@@ -751,7 +751,7 @@ To create the script:
         }
     ```
 
-4.  Be sure to save your changes in *Visual Studio* before returning to *Unity*.
+4. Be sure to save your changes in *Visual Studio* before returning to *Unity*.
 
 ## Chapter 9 - Create the DataFromAnalytics class
 
@@ -764,13 +764,13 @@ You will now need to create the **DataFromAnalytics** script, which is responsib
 
 To create the script:
 
-1.  Double-click on the **Scripts** folder, to open it.
+1. Double-click on the **Scripts** folder, to open it.
 
-2.  Right-click inside the **Scripts** folder, click **Create** > **C# Script**. Name the script **DataFromAnalytics**.
+2. Right-click inside the **Scripts** folder, click **Create** > **C# Script**. Name the script **DataFromAnalytics**.
 
-3.  Double-click on the script to open it with Visual Studio.
+3. Double-click on the script to open it with Visual Studio.
 
-4.  Insert the following namespaces:
+4. Insert the following namespaces:
 
     ```csharp
         using Newtonsoft.Json;
@@ -782,7 +782,7 @@ To create the script:
         using UnityEngine.Networking;
     ```
 
-5.  Inside the script, insert the following:
+5. Inside the script, insert the following:
 
     ```csharp
         /// <summary>
@@ -820,7 +820,7 @@ To create the script:
         }
     ```
 
-6.  Within the **DataFromAnalytics** class, right after the **Start()** method, add the following method called **FetchAnalytics()**. This method is responsible for populating the list of key value pairs, with a *GameObject* and a placeholder event count number. It then initializes the **GetWebRequest()** coroutine. The query structure of the call to *Application Insights* can be found within this method also, as the *Query URL* endpoint.
+6. Within the **DataFromAnalytics** class, right after the **Start()** method, add the following method called **FetchAnalytics()**. This method is responsible for populating the list of key value pairs, with a *GameObject* and a placeholder event count number. It then initializes the **GetWebRequest()** coroutine. The query structure of the call to *Application Insights* can be found within this method also, as the *Query URL* endpoint.
 
     ```csharp
         private void FetchAnalytics()
@@ -852,7 +852,7 @@ To create the script:
         }
     ```
 
-7.  Right below the **FetchAnalytics()** method, add a method called **GetWebRequest()**, which returns an *IEnumerator*. This method is responsible for requesting the number of times an event, corresponding with a specific *GameObject*, has been called within *Application Insights*. When all the sent queries have returned, the **DetermineWinner()** method is called.
+7. Right below the **FetchAnalytics()** method, add a method called **GetWebRequest()**, which returns an *IEnumerator*. This method is responsible for requesting the number of times an event, corresponding with a specific *GameObject*, has been called within *Application Insights*. When all the sent queries have returned, the **DetermineWinner()** method is called.
 
     ```csharp
         /// <summary>
@@ -918,7 +918,7 @@ To create the script:
         }
     ```
 
-8.  The next method is **DetermineWinner()**, which sorts the list of *GameObject* and *Int* pairs, according to the highest event count. It then changes the material color of that *GameObject* to *green* (as feedback for it having the highest count). This displays a message with the analytics results.
+8. The next method is **DetermineWinner()**, which sorts the list of *GameObject* and *Int* pairs, according to the highest event count. It then changes the material color of that *GameObject* to *green* (as feedback for it having the highest count). This displays a message with the analytics results.
 
     ```csharp
         /// <summary>
@@ -948,7 +948,7 @@ To create the script:
         }
     ```
 
-9.  Add the class structure which will be used to deserialize the JSON object, received from *Application Insights*. Add these classes at the very bottom of your **DataFromAnalytics** class file, **outside** of the class definition.
+9. Add the class structure which will be used to deserialize the JSON object, received from *Application Insights*. Add these classes at the very bottom of your **DataFromAnalytics** class file, **outside** of the class definition.
 
     ```csharp
         /// <summary>
@@ -993,13 +993,13 @@ The **Movement** script is the next script you will need to create. It is respon
 
 To create the script:
 
-1.  Double-click on the **Scripts** folder, to open it.
+1. Double-click on the **Scripts** folder, to open it.
 
-2.  Right-click inside the **Scripts** folder, click **Create** > **C# Script**. Name the script **Movement**.
+2. Right-click inside the **Scripts** folder, click **Create** > **C# Script**. Name the script **Movement**.
 
-3.  Double-click on the script to open it with *Visual Studio*.
+3. Double-click on the script to open it with *Visual Studio*.
 
-4.  Replace the existing code with the following:
+4. Replace the existing code with the following:
 
     ```csharp
         using UnityEngine;
@@ -1054,7 +1054,7 @@ To create the script:
         }
     ```
 
-5.  Within the **Movement** class, *below* the empty **Update()** method, insert the following methods that allow the user to use the hand controller to move in the virtual space:
+5. Within the **Movement** class, *below* the empty **Update()** method, insert the following methods that allow the user to use the hand controller to move in the virtual space:
 
     ```csharp
         /// <summary>
@@ -1172,7 +1172,7 @@ To create the script:
         }   
     ```
 
-6.  Lastly add the method call within the **Update()** method.
+6. Lastly add the method call within the **Update()** method.
 
     ```csharp
         // Update is called once per frame
@@ -1182,57 +1182,57 @@ To create the script:
         }
     ```
 
-7.  Be sure to save your changes in *Visual Studio* before returning to *Unity*.
+7. Be sure to save your changes in *Visual Studio* before returning to *Unity*.
 
 ## Chapter 11 - Setting up the scripts references
 
 In this Chapter you need to place the **Movement** script onto the **Camera Parent** and set its reference targets. That script will then handle placing the other scripts where they need to be.
 
-1.  From the **Scripts** folder in the *Project Panel*, drag the **Movement** script to the **Camera Parent** object, located in the *Hierarchy Panel*.
+1. From the **Scripts** folder in the *Project Panel*, drag the **Movement** script to the **Camera Parent** object, located in the *Hierarchy Panel*.
 
-    ![Setting up the scripts references in the Unity Scene](images/AzureLabs-Lab309-48.png)
+    ![Screenshot of the Project and Hierarchy panels. Movement is highlighted.](images/AzureLabs-Lab309-48.png)
 
-2.  Click on the **Camera Parent**. In the *Hierarchy Panel*, drag the **Right Hand** object from the *Hierarchy Panel* to the reference target, **Controller**, in the *Inspector Panel*. Set the **User Speed** to **5**, as shown in the image below.
+2. Click on the **Camera Parent**. In the *Hierarchy Panel*, drag the **Right Hand** object from the *Hierarchy Panel* to the reference target, **Controller**, in the *Inspector Panel*. Set the **User Speed** to **5**, as shown in the image below.
 
-    ![Setting up the scripts references in the Unity Scene](images/AzureLabs-Lab309-49.png)
+    ![Screenshot showing the Hierarchy and Inspector panels. A line connects Right Hand on both panels.](images/AzureLabs-Lab309-49.png)
 
 ## Chapter 12 - Build the Unity project
 
 Everything needed for the Unity section of this project has now been completed, so it is time to build it from Unity.
 
-1.  Navigate to **Build Settings**, (**File** > **Build Settings**).
+1. Navigate to **Build Settings**, (**File** > **Build Settings**).
 
-2.  From the **Build Settings** window, click **Build**.
+2. From the **Build Settings** window, click **Build**.
 
-    ![Build the Unity Project to UWP Solution](images/AzureLabs-Lab309-50.png)
+    ![Screenshot of the Build Settings window showing Scenes In Build. ](images/AzureLabs-Lab309-50.png)
 
-3.  A **File Explorer** window will pop-up, prompting you for a location for the build. Create a new folder (by clicking **New Folder** in the top-left corner), and name it **BUILDS**.
+3. A **File Explorer** window will pop-up, prompting you for a location for the build. Create a new folder (by clicking **New Folder** in the top-left corner), and name it **BUILDS**.
 
-    ![Build the Unity Project to UWP Solution](images/AzureLabs-Lab309-51.png)
+    ![Screenshot of File Explorer showing the Builds folder highlighted.](images/AzureLabs-Lab309-51.png)
 
-    1.  Open the new **BUILDS** folder, and create another folder (using **New Folder** once more), and name it **MR\_Azure\_Application\_Insights**.
+    1. Open the new **BUILDS** folder, and create another folder (using **New Folder** once more), and name it **MR\_Azure\_Application\_Insights**.
 
-        ![Build the Unity Project to UWP Solution](images/AzureLabs-Lab309-52.png)
+        ![Screenshot of File explorer showing the MR_Azure_Insights folder.](images/AzureLabs-Lab309-52.png)
 
-    2.  With the **MR\_Azure\_Application\_Insights** folder selected, click **Select Folder**. The project will take a minute or so to build.
+    2. With the **MR\_Azure\_Application\_Insights** folder selected, click **Select Folder**. The project will take a minute or so to build.
 
-4.  Following *Build*, **File Explorer** will appear showing you the location of your new project.
+4. Following *Build*, **File Explorer** will appear showing you the location of your new project.
 
 ## Chapter 13 - Deploy MR_Azure_Application_Insights app to your machine
 
 To deploy the **MR\_Azure\_Application\_Insights** app on your Local Machine:
 
-1.  Open the solution file of your **MR\_Azure\_Application\_Insights** app in **Visual Studio**.
+1. Open the solution file of your **MR\_Azure\_Application\_Insights** app in **Visual Studio**.
 
-2.  In the **Solution Platform**, select **x86, Local Machine**.
+2. In the **Solution Platform**, select **x86, Local Machine**.
 
-3.  In the **Solution Configuration** select **Debug**.
+3. In the **Solution Configuration** select **Debug**.
 
-    ![Build the Unity Project to UWP Solution](images/AzureLabs-Lab309-53.png)
+    ![Screenshot of the the Visual Studio Solution Configuration screen showing Debug in the menu bar.](images/AzureLabs-Lab309-53.png)
 
-4.  Go to **Build menu** and click on **Deploy Solution** to sideload the application to your machine.
+4. Go to **Build menu** and click on **Deploy Solution** to sideload the application to your machine.
 
-5.  Your app should now appear in the list of installed apps, ready to be launched.
+5. Your app should now appear in the list of installed apps, ready to be launched.
 
 6. Launch the mixed reality application.
 
@@ -1245,25 +1245,25 @@ To deploy the **MR\_Azure\_Application\_Insights** app on your Local Machine:
 
 Once you have roamed around the scene and gazed at several objects you can see the data collected in the *Application Insights Service* portal.
 
-1.  Go back to your Application Insights Service portal.
+1. Go back to your Application Insights Service portal.
 
-2.  Click on *Metrics Explorer*.
+2. Click on *Metrics Explorer*.
 
-    ![Looking at collected data](images/AzureLabs-Lab309-54.png)
+    ![Screenshot of the MyNewInsight panel showing the list of options. Metrics Explorer is listed in the Investigate section.](images/AzureLabs-Lab309-54.png)
 
-3.  It will open in a tab containing the graph which represent the *Events and Metrics* related to your application. As mentioned above, it might take some time (up to 1 hour) for the data to be displayed in the graph
+3. It will open in a tab containing the graph which represent the *Events and Metrics* related to your application. As mentioned above, it might take some time (up to 1 hour) for the data to be displayed in the graph
 
-    ![Looking at collected data](images/AzureLabs-Lab309-55.png)
+    ![Screenshot of the Metrics Explorer showing the events and metrics graph.](images/AzureLabs-Lab309-55.png)
 
-4.  Click on the *Events bar* in the *Total of Events* by Application Version, to see a detailed breakdown of the events with their names.
+4. Click on the *Events bar* in the *Total of Events* by Application Version, to see a detailed breakdown of the events with their names.
 
-    ![Looking at collected data](images/AzureLabs-Lab309-56.png)
+    ![Screenshot of the Search panel showing the results of a custom event filter.](images/AzureLabs-Lab309-56.png)
 
 ## Your finished your Application Insights Service application
 
 Congratulations, you built a mixed reality app that leverages the Application Insights Service to monitor user's activity within your app.
 
-![course outcome](images/AzureLabs-Lab309-00.png)
+![Course welcome screen.](images/AzureLabs-Lab309-00.png)
 
 ## Bonus Exercises
 
