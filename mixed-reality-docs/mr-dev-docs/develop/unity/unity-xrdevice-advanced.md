@@ -2,7 +2,7 @@
 title: Mixed Reality native objects in Unity
 description: Learn how to get access to underlying Holographic native objects in Unity using the XR namespace.
 author: vladkol
-ms.author: vladkol
+ms.author: dacoulte
 ms.date: 02/25/2021
 ms.topic: article
 keywords: unity, mixed reality, native, xrdevice, spatialcoordinatesystem, holographicframe, holographiccamera, ispatialcoordinatesystem, iholographicframe, iholographiccamera, getnativeptr, mixed reality headset, windows mixed reality headset, virtual reality headset
