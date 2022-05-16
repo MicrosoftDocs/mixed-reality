@@ -1,7 +1,7 @@
 ---
 layout: LandingPage
 title: Mixed Reality Dev Days
-description: Standard even guidelines and code of conduct for participation in Mixed Reality Dev Days.
+description: Standard event guidelines and code of conduct for participation in Mixed Reality Dev Days.
 ms.custom: kr2b-contr-experiment
 author: jessemcculloch 
 ms.author: jemccull
