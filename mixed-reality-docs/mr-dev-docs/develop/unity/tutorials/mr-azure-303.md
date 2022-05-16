@@ -438,17 +438,32 @@ The following is a typical set up for developing with the mixed reality, and as 
 
 12.	Left click on the **Cube** to select it. In the *Inspector Panel* set the *Transform* component with the following values:
 
-    |        | Transform - *Position* |       |  \| |       | Transform - *Rotation* |       |
-    |:------:|:----------------------:|:-----:|:---:|:-----:|:----------------------:|:-----:|
-    | **X** | **Y**                   | **Z** |  \| | **X** | **Y**                  | **Z** |
-    | 0     | 1                       | 4     |  \| | 45    | 45                     | 0     | 
+**Transform - Position**
+
+| **X** | **Y** | **Z** |
+|:-----:|:-----:|:-----:|
+| 0     | 1     | 4     |  
+
+**Transform - Rotation**
+
+| **X** | **Y** | **Z** |
+|:-----:|:-----:|:-----:|
+| 45    | 45    | 0     |  
 
 13.	Left click on the **New Text** object to select it. In the *Inspector Panel* set the *Transform* component with the following values:
 
-    |       | Transform - *Position* |       |  \| |       | Transform - *Scale* |       |
-    |:-----:|:----------------------:|:-----:|:---:|:-----:|:-------------------:|:-----:|
-    | **X** | **Y**                  | **Z** |  \| | **X** | **Y**               | **Z** |
-    | -2    | 6                      | 9     |  \| | 0.1   | 0.1                 | 0.1   | 
+**Transform - Position**
+
+| **X** | **Y** | **Z** |
+|:-----:|:-----:|:-----:|
+| -2    | 6     | 9     |   
+
+**Transform - Scale**
+
+| **X** | **Y** | **Z** |
+|:-----:|:-----:|:-----:|
+| 0.1   | 0.1   | 0.1   |  
+
 
 14.	Change **Font Size** in the **Text Mesh** component to **50**.
 15.	Change the *name* of the **Text Mesh** object to **Dictation Text**.
