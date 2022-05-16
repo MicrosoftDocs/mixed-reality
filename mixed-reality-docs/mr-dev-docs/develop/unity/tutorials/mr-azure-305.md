@@ -366,14 +366,16 @@ Set up and test your mixed reality immersive headset.
 2.  With the **Plane** object selected, change the following parameters in the *Inspector Panel*:
 
 **Transform - Position**
+
 | **X** | **Y** | **Z** |
 |:-----:|:-----:|:-----:|
 | 0     | 0     | 4     |  
 
 **Transform - Scale**
+
 | **X** | **Y** | **Z** |
 |:-----:|:-----:|:-----:|
-| 10     | 1     | 10     |  
+| 10    | 1     | 10    |  
 
 ![set plane position and scale](images/AzureLabs-Lab5-32.png)
 

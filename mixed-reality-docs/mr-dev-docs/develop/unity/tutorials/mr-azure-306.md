@@ -17,8 +17,8 @@ keywords: azure, mixed reality, academy, unity, tutorial, api, media services, s
 
 <br> 
 
-![final product -start](images/AzureLabs-Lab6-00.png)
-![final product -start](images/AzureLabs-Lab6-01.png)
+![Screenshot of Windows Mixed Reality V R.](images/AzureLabs-Lab6-00.png)
+![Screenshot of a Windows Mixed Reality V R experience.](images/AzureLabs-Lab6-01.png)
 
 In this course you will learn how connect your Azure Media Services to a Windows Mixed Reality VR experience to allow streaming 360 degree video playback on immersive headsets. 
 
@@ -79,11 +79,11 @@ To use the **Azure Storage Service**, you will need to create and configure a **
 
 2.  Once you are logged in, click on **Storage accounts** in the left menu.
 
-    ![Azure Storage Account Setup](images/AzureLabs-Lab6-02.png)
+    ![Screenshot of the Azure Portal menu. Storage accounts is highlighted.](images/AzureLabs-Lab6-02.png)
 
 3.  On the **Storage Accounts** tab, click on **Add**.
 
-    ![Azure Storage Account Setup](images/AzureLabs-Lab6-03.png)
+    ![Screenshot of the storage account dialog box. Add is highlighted.](images/AzureLabs-Lab6-03.png)
 
 4.  In the **Create storage account** tab:
 
@@ -107,13 +107,13 @@ To use the **Azure Storage Service**, you will need to create and configure a **
 
 5.  You will need to confirm that you have understood the Terms and Conditions applied to this Service.
 
-    ![Azure Storage Account Setup](images/AzureLabs-Lab6-04.png)
+    ![Screenshot of the create storage account page.](images/AzureLabs-Lab6-04.png)
 
 6.  Once you have clicked on **Create**, you will have to wait for the service to be created, this might take a minute.
 
 7.  A notification will appear in the portal once the Service instance is created.
 
-    ![Azure Storage Account Setup](images/AzureLabs-Lab6-05.png)
+    ![Screenshot of the deployment succeeded notification.](images/AzureLabs-Lab6-05.png)
 
 8.  At this point you do not need to follow the resource, simply move to the next Chapter.
 
@@ -123,11 +123,11 @@ To use the Azure Media Service, you will need to configure an instance of the se
 
 1.  In the Azure Portal, click on **Create a resource** in the top left corner, and search for **Media Service,** press **Enter**. The resource you want currently has a pink icon; click this, to show a new page.
 
-    ![The Azure Portal](images/AzureLabs-Lab6-06.png)
+    ![Screenshot of the Azure Portal. The Media Services option is highlighted.](images/AzureLabs-Lab6-06.png)
 
 2.  The new page will provide a description of the **Media Service**. At the bottom left of this prompt, click the **Create** button, to create an association with this service.
 
-    ![The Azure Portal](images/AzureLabs-Lab6-07.png)
+    ![Screenshot of the Azure Portal. The Create button is highlighted.](images/AzureLabs-Lab6-07.png)
 
 3.  Once you have clicked on **Create** a panel will appear where you need to provide some details about your new Media Service:
 
@@ -147,17 +147,17 @@ To use the Azure Media Service, you will need to configure an instance of the se
 
     7.  Click **Create**.
 
-        ![The Azure Portal](images/AzureLabs-Lab6-08.png)
+        ![Screnshot of the Media service page.](images/AzureLabs-Lab6-08.png)
 
 4.  Once you have clicked on **Create**, you will have to wait for the service to be created, this might take a minute.
 
 5.  A notification will appear in the portal once the Service instance is created.
 
-    ![The Azure Portal](images/AzureLabs-Lab6-09.png)
+    ![Screenshot of the notification icon.](images/AzureLabs-Lab6-09.png)
 
 6.  Click on the notification to explore your new Service instance.
 
-    ![The Azure Portal](images/AzureLabs-Lab6-10.png)
+    ![Screenshot of the notification for successful deployment.](images/AzureLabs-Lab6-10.png)
 
 7.  Click the **Go to resource** button in the notification to explore your new Service instance.
 
@@ -165,30 +165,30 @@ To use the Azure Media Service, you will need to configure an instance of the se
 
 9.  On the next page, in the top-left corner of the page, click **Upload**.
 
-    ![The Azure Portal](images/AzureLabs-Lab6-11.png)
+    ![Screenshot of the Assets page. Upload and Assets options are highlighted.](images/AzureLabs-Lab6-11.png)
 
 10. Click on the **Folder** icon to browse your files and select the first 360 Video that you would like to stream. 
     
     > You can follow this [link to download a sample video](https://vimeo.com/214401712).
 
-    ![The Azure Portal](images/AzureLabs-Lab6-12.png)
+    ![Screenshot of the upload a video asset page.](images/AzureLabs-Lab6-12.png)
 
 > [!WARNING]
 > Long filenames may cause an issue with the encoder: so to ensure videos do not have issues, consider shortening the length of your video file names.
 
 11. The progress bar will turn green when the video has finished uploading.
 
-    ![The Azure Portal](images/AzureLabs-Lab6-13.png)
+    ![Screenshot of the upload a video asset progress bar.](images/AzureLabs-Lab6-13.png)
 
 12. Click on the text above (**yourservicename - Assets**) to return to the **Assets** page.
 
 13. You will notice that your video has been successfully uploaded. Click on it.
 
-    ![The Azure Portal](images/AzureLabs-Lab6-14.png)
+    ![Screenshot of the Assets page. Video 1 dot M P 4 is highlighted.](images/AzureLabs-Lab6-14.png)
 
 14. The page you are redirected to will show you detailed information about your video. To be able to use your video you need to encode it, by clicking the **Encode** button at the top-left of the page.
 
-    ![The Azure Portal](images/AzureLabs-Lab6-15.png)
+    ![Screenshot of the asset page. The encode button is highlighted.](images/AzureLabs-Lab6-15.png)
 
 15. A new panel will appear to the right, where you will be able to set encoding options for your file. Set the following properties (some will be already set by default):
 
@@ -200,21 +200,21 @@ To use the Azure Media Service, you will need to configure an instance of the se
 
     4.  **Output media asset name *Video1.mp4 -- Media Encoder Standard encoded***
 
-        ![The Azure Portal](images/AzureLabs-Lab6-16.png)
+        ![Screenshot of the encode an asset page.](images/AzureLabs-Lab6-16.png)
 
 16. Click the **Create** button.
 
 17. You will notice a bar with **Encoding job added**, click on that bar and a panel will appear with the Encoding progress displayed in it.
 
-    ![The Azure Portal](images/AzureLabs-Lab6-17.png)
+    ![Screenshot of the notice bar labeled encoding job added.](images/AzureLabs-Lab6-17.png)
 
-    ![The Azure Portal](images/AzureLabs-Lab6-18.png)
+    ![Screenshot of the encoder processing page.](images/AzureLabs-Lab6-18.png)
 
 18. Wait for the Job to be completed. Once it is done, feel free to close the panel with the 'X' at the top right of that panel.
 
-    ![The Azure Portal](images/AzureLabs-Lab6-19.png)
+    ![Screenshot of the progress bar with the status finished.](images/AzureLabs-Lab6-19.png)
 
-    ![The Azure Portal](images/AzureLabs-Lab6-20.png)
+    ![Screenshot of the top menu of the media coder processing page.](images/AzureLabs-Lab6-20.png)
 
     > [!IMPORTANT]
     > The time this takes, depends on the file size of your video. This process can take quite some time.
@@ -222,22 +222,22 @@ To use the Azure Media Service, you will need to configure an instance of the se
 19. Now that the encoded version of the video has been created, you can publish it to make it accessible. To do so, click the blue link
     **Assets** to go back to the assets page.
 
-    ![The Azure Portal](images/AzureLabs-Lab6-21.png)
+    ![Screenshot of the Azure Portal. The assets link is highlighted.](images/AzureLabs-Lab6-21.png)
 
 20. You will see your video along with another, which is of **Asset Type _Multi-Bitrate MP4_**.
 
-    ![The Azure Portal](images/AzureLabs-Lab6-22.png)
+    ![Screenshot of the assets menu.](images/AzureLabs-Lab6-22.png)
 
     > [!NOTE] 
     > You may notice that the new asset, alongside your initial video, is *Unknown*, and has '0' bytes for it's **Size**, just refresh your window for it to update.
 
 21. Click this new asset.
 
-    ![The Azure Portal](images/AzureLabs-Lab6-23.png)
+    ![Screenshot of the directory listing assets.](images/AzureLabs-Lab6-23.png)
 
 22. You will see a similar panel to the one you used before, just this is a different asset. Click the **Publish** button located at the top-center of the page.
 
-    ![The Azure Portal](images/AzureLabs-Lab6-24.png)
+    ![Screenshot of the top menu bar. The Publish button is highlighted.](images/AzureLabs-Lab6-24.png)
 
 23. You will be prompted to set a **Locator**, which is the entry point, to file/s in your Assets. For your scenario set the following properties:
 
@@ -250,13 +250,13 @@ To use the Azure Media Service, you will need to configure an instance of the se
 
 24. At the bottom of that panel, click on the **Add** button.
 
-    ![The Azure Portal](images/AzureLabs-Lab6-25.png)
+    ![Screenshot of the page labeled publish the asset.](images/AzureLabs-Lab6-25.png)
 
 25. Your video is now published and can be streamed by using its endpoint. Further down the page is a **Files** section. This is where the different encoded versions of your video will be. Select the highest possible resolution one (in the image below it is the 1920x960 file), and then a panel to the right will appear. There you will find a **Download URL**. Copy this **Endpoint** as you will use it later in your code.
 
-    ![The Azure Portal](images/AzureLabs-Lab6-26.png)    
+    ![Screenshot of the files section.](images/AzureLabs-Lab6-26.png)    
 
-    ![The Azure Portal](images/AzureLabs-Lab6-27.png)
+    ![Screenshot of the asset information page.](images/AzureLabs-Lab6-27.png)
 
     > [!NOTE] 
     > You can also press the **Play** button to play your video and test it.
@@ -271,15 +271,15 @@ The following is a typical set up for developing with the Mixed Reality, and as 
 
 1.	Open **Unity** and click **New**. 
 
-    ![The Azure Portal](images/AzureLabs-Lab6-28.png)
+    ![Screenshot of Unity projects tab.](images/AzureLabs-Lab6-28.png)
 
 2.	You will now need to provide a Unity Project name, insert **MR\_360VideoStreaming.**. Make sure the project type is set to **3D**. Set the Location to somewhere appropriate for you (remember, closer to root directories is better). Then, click **Create project**.
 
-    ![The Azure Portal](images/AzureLabs-Lab6-29.png)
+    ![Screenshot of the new project page.](images/AzureLabs-Lab6-29.png)
 
 3.  With Unity open, it is worth checking the default **Script Editor** is set to **Visual Studio.** Go to ***Edit* *Preferences*** and then from the new window, navigate to **External Tools**. Change **External Script Editor** to **Visual Studio 2017**. Close the **Preferences** window.
 
-    ![The Azure Portal](images/AzureLabs-Lab6-30.png)
+    ![Screenshot of the external script editor menu. Visual Studio 2017 is selected.](images/AzureLabs-Lab6-30.png)
 
 4.  Next, go to ***File* *Build Settings*** and switch the platform to **Universal Windows Platform**, by clicking on the **Switch Platform** button.
 
@@ -299,7 +299,7 @@ The following is a typical set up for developing with the Mixed Reality, and as 
 
     7.  The remaining settings should be left as default for now.
 
-        ![Setting up the Unity Project](images/AzureLabs-Lab6-31.png)
+        ![Screenshot of the build settings screen.](images/AzureLabs-Lab6-31.png)
 
 6.  In the **Build Settings** window, click on the **Player Settings** button, this will open the related panel in the space where the **Inspector** is located. 
 
@@ -313,17 +313,17 @@ The following is a typical set up for developing with the Mixed Reality, and as 
 
         3. **API Compatibility Level** should be **.NET 4.6.**
 
-            ![Setting up the Unity Project](images/AzureLabs-Lab6-32.png)
+            ![Screenshot of the screen labeled Settings for Universal Windows Platform.](images/AzureLabs-Lab6-32.png)
 
     2.  Further down the panel, in **XR Settings** (found below **Publish Settings**), tick **Virtual Reality Supported**, make sure the **Windows Mixed Reality SDK** is added.
 
-        ![Setting up the Unity Project](images/AzureLabs-Lab6-33.png)
+        ![Screenshot of the XR settings screen.](images/AzureLabs-Lab6-33.png)
 
     3.  Within the **Publishing Settings** tab, under **Capabilities**, check:
 
         - **InternetClient**
 
-            ![Setting up the Unity Project](images/AzureLabs-Lab6-34.png)
+            ![Screenshot of the Capabilities screen.](images/AzureLabs-Lab6-34.png)
 
 8.  Once you have made those changes, close the **Build Settings** window.
 
@@ -342,15 +342,15 @@ How-to import the **unitypackage**:
 
 1.  With the Unity dashboard in front of you, click on **Assets** in the menu at the top of the screen, then click on **Import Package > Custom Package**.
 
-    ![Importing the InsideOutSphere Unity Package](images/AzureLabs-Lab6-35.png)
+    ![Screenshot of the assets menu. The import package menu is open. Custom Package is selected.](images/AzureLabs-Lab6-35.png)
 
 2.  Use the file picker to select the **InsideOutSphere.unitypackage** package and click **Open**. A list of components for this asset will be displayed to you. Confirm the import by clicking **Import**.
 
-    ![Importing the InsideOutSphere Unity Package](images/AzureLabs-Lab6-36.png)
+    ![Screenshot of the Import Unity Package screen.](images/AzureLabs-Lab6-36.png)
 
 3.  Once it has finished importing, you will notice three new folders, **Materials**, **Models**, and **Prefabs**, have been added to your **Assets** folder. This kind of folder structure is typical for a Unity project.
 
-    ![Importing the InsideOutSphere Unity Package](images/AzureLabs-Lab6-37.png)
+    ![Screenshot of the assets folder.](images/AzureLabs-Lab6-37.png)
 
     1.  Open the **Models** folder, and you will see that the **InsideOutSphere** model has been imported.
 
@@ -377,15 +377,15 @@ How-to import the **unitypackage**:
 
         2.  **Clipping Planes**: Near: 0.1, Far: 6.
 
-            ![Importing the InsideOutSphere Unity Package](images/AzureLabs-Lab6-38.png)
+            ![Screenshot of the Inspector screen.](images/AzureLabs-Lab6-38.png)
 
 5.  Navigate to the **Prefab** folder, and then drag the **InsideOutSphere** prefab into the **Hierarchy** Panel.
 
-    ![Importing the InsideOutSphere Unity Package](images/AzureLabs-Lab6-39.png)
+    ![Screenshot of the Prefab folder menu and the developer environment.](images/AzureLabs-Lab6-39.png)
 
 6.  Expand the **InsideOutSphere** object within the **Hierarchy** by clicking the little arrow next to it. You will see a **child** object beneath it called **GazeButton**. This will be used to change scenes and thus videos.
 
-    ![Importing the InsideOutSphere Unity Package](images/AzureLabs-Lab6-40.png)
+    ![Screenshot of the hierarchy tab.](images/AzureLabs-Lab6-40.png)
 
 7.  In the Inspector Window click on the **InsideOutSphere**'s Transform component, ensure that the following properties are set:
 
@@ -407,7 +407,7 @@ How-to import the **unitypackage**:
 |:-----:|:-----:|:-----:|
 | 0     | 0     | 0     |
 
-![Importing the InsideOutSphere Unity Package](images/AzureLabs-Lab6-41.png)
+![Screenshot of the Inspector screen open for Inside Out Sphere.](images/AzureLabs-Lab6-41.png)
 
 8.  Click on the **GazeButton** child object, and set its **Transform** as follows:
 
@@ -430,7 +430,7 @@ How-to import the **unitypackage**:
 | 1     | 1     | 1     |
 
 
-![Importing the InsideOutSphere Unity Package](images/AzureLabs-Lab6-42.png)
+![Screenshot of the scene tab open.](images/AzureLabs-Lab6-42.png)
 
 
 ## Chapter 5 - Create the VideoController class
@@ -441,19 +441,19 @@ To create this class:
 
 1.  Right-click in the **Asset Folder**, located in the **Project** Panel, and click **Create > Folder**. Name the folder **Scripts**.
 
-    ![Create the VideoController class](images/AzureLabs-Lab6-43.png)
+    ![Screenshot of the asset folder menu. The create menu is open and folder is selected.](images/AzureLabs-Lab6-43.png)
 
-    ![Create the VideoController class](images/AzureLabs-Lab6-44.png)
+    ![Screenshot of the project tab. The Assets folder is selected.](images/AzureLabs-Lab6-44.png)
 
 2.  Double click on the **Scripts** folder to open it.
 
 3.  Right-click inside the folder, then click **Create > C\# Script**. Name the script **VideoController**.
 
-    ![Create the VideoController class](images/AzureLabs-Lab6-45.png)
+    ![Screenshot of the file named Video Controller.](images/AzureLabs-Lab6-45.png)
 
 4.  Double click on the new **VideoController** script to open it with **Visual Studio 2017.**
 
-    ![Create the VideoController class](images/AzureLabs-Lab6-46.png)
+    ![Screenshot of the code for the Video Controller file.](images/AzureLabs-Lab6-46.png)
 
 5.  Update the namespaces at the top of the code file as follows:
 
@@ -625,8 +625,8 @@ To create this class:
 
 14. Drag the **InsideOutSphere** object from the **Hierarchy Panel** to the **Sphere** slot, as shown in the image below.
 
-    ![Create the VideoController class](images/AzureLabs-Lab6-47.png)
-    ![Create the VideoController class](images/AzureLabs-Lab6-48.png)
+    ![Screenshot of the hierarchy menu. Main Camera is selected.](images/AzureLabs-Lab6-47.png)
+    ![Screenshot of the Sphere slot.](images/AzureLabs-Lab6-48.png)
 
 ## Chapter 6 - Create the Gaze class
 
@@ -767,7 +767,7 @@ The purpose of this Chapter is to setup the two scenes, each hosting a video to 
 
 7.  With your two scenes, go to **File > Build Settings**. With the **Build Settings** window open, drag your scenes to the **Scenes in Build** section.
 
-    ![Chapter 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-50.png)
+    ![Screenshot of the Build Settings window.](images/AzureLabs-Lab6-50.png)
 
     > [!TIP] 
     > You can select both of your scenes from your **Scenes** folder through holding the **Ctrl** button, and then left-clicking each scene, and finally drag both across.
@@ -796,40 +796,40 @@ The purpose of this Chapter is to setup the two scenes, each hosting a video to 
 
 10. With the **GazeButton** child still selected, look at the **Inspector** and at the **Mesh Filter**. Click the little target next to the **Mesh** reference field:
 
-    ![Chapter 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-51.png)
+    ![Screenshot of the inspector screen for Gaze Button.](images/AzureLabs-Lab6-51.png)
 
 11. A **Select Mesh** popup window will appear. Double click the **Cube** mesh from the list of **Assets**.
 
-    ![Chapter 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-52.png)
+    ![Screenshot of the Select Mesh popup window.](images/AzureLabs-Lab6-52.png)
 
 12. The **Mesh Filter** will update, and now be a **Cube**. Now, click the **Gear** icon next to **Sphere Collider** and click **Remove Component**, to delete the collider from this object.
 
-    ![Chapter 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-53.png)
+    ![Screenshot of the Sphere Collider menu. Remove component is selected.](images/AzureLabs-Lab6-53.png)
 
 13. With the **GazeButton** still selected, click the **Add Component** button at the bottom of the **Inspector**. In the search field, type **box**, and **Box Collider** will be an option -- click that, to add a **Box Collider** to your **GazeButton** object.
 
-    ![Chapter 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-54.png)
+    ![Screenshot of the Add Component search box.](images/AzureLabs-Lab6-54.png)
 
 14. The **GazeButton** is now partially updated, to look different, however, you will now create a new **Material**, so that it looks completely different, and is easier to recognize as a different object, than the object in the first scene.
 
 15. Navigate to your **Materials** folder, within the **Project Panel**. Duplicate the **ButtonMaterial** Material (press **Ctrl** + **D** on the keyboard, or left-click the **Material**, then from the **Edit** file menu option, select **Duplicate**).
 
-    ![Chapter 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-55.png)
-    ![Chapter 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-56.png)
+    ![Screenshot of the Materials folder in the project tab.](images/AzureLabs-Lab6-55.png)
+    ![Screenshot of the edit menu with duplicate selected.](images/AzureLabs-Lab6-56.png)
 
 16. Select the new **ButtonMaterial** Material (here named **ButtonMaterial 1**), and within the **Inspector**, click the **Albedo** color window. A popup will appear, where you can select another color (choose whichever you like), then close the popup. The Material will be its own instance, and different to the original.
 
-    ![Chapter 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-57.png)
+    ![Screenshot of the color selection popup.](images/AzureLabs-Lab6-57.png)
 
 17. Drag the new **Material** onto the **GazeButton** child, to now completely update its look, so that it is easily distinguishable from the first scenes button.
 
-    ![Chapter 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-58.png)
+    ![Screenshot of the scene tab.](images/AzureLabs-Lab6-58.png)
 
 18. At this point you can test the project in the Editor before building the UWP project.
 
     -  Press the **Play** button in the **Editor** and wear your headset.
 
-        ![Chapter 7 -- Setup the two Unity Scenes](images/AzureLabs-Lab6-59.png)
+        ![Screenshot of the play button.](images/AzureLabs-Lab6-59.png)
 
 19. Look at the two **GazeButton** objects to switch between the first and second video.
 
@@ -851,8 +851,8 @@ To Build:
 
 6.  Click your new folder and then click **Select Folder**, so to choose that folder, to begin the build at that location.
 
-    ![Chapter 8 -- Build the UWP Solution](images/AzureLabs-Lab6-60.png)
-    ![Chapter 8 -- Build the UWP Solution](images/AzureLabs-Lab6-61.png)
+    ![Screenshot of the BUILDS folder highlighted.](images/AzureLabs-Lab6-60.png)
+    ![Screenshot of the Video Streaming Build folder highlighted.](images/AzureLabs-Lab6-61.png)
 
 7.  Once Unity has finished building (it might take some time), it will open a **File Explorer** window at the location of your build.
 
@@ -870,7 +870,7 @@ To deploy to Local Machine:
 
 3.  In the **Solution Configuration** select **Debug**.
 
-    ![Chapter 9 -- Deploy on Local Machine](images/AzureLabs-Lab6-62.png)
+    ![Screenshot of the Solution Configuration menu.](images/AzureLabs-Lab6-62.png)
 
 4.  You will now need to restore any packages to your solution. Right-click on your **Solution**, and click **Restore NuGet Packages for Solution...**
 
@@ -881,7 +881,7 @@ To deploy to Local Machine:
 
 6.  Your App should now appear in the list of installed apps, ready to be launched.
 
-    ![Chapter 9 -- Deploy on Local Machine](images/AzureLabs-Lab6-63.png)
+    ![Screenshot of the list of installed apps.](images/AzureLabs-Lab6-63.png)
 
 When you run the Mixed Reality application, you will you be within the **InsideOutSphere** model which you used within your app. This sphere will be where the video will be streamed to, providing a 360-degree view, of the incoming video (which was filmed for this kind of perspective). Do not be surprised if the video takes a couple of seconds to load, your app is subject to your available Internet speed, as the video needs to be fetched and then downloaded, so to stream into your app.
 When you are ready, change scenes and open your second video, by gazing at the red sphere! Then feel free to go back, using the blue cube in the second scene!
@@ -890,9 +890,9 @@ When you are ready, change scenes and open your second video, by gazing at the r
  
 Congratulations, you built a mixed reality app that leverages the Azure Media Service to stream 360 videos.
 
-![lab outcome](images/AzureLabs-Lab6-00.png)
+![Screenshot of an example mixed reality app.](images/AzureLabs-Lab6-00.png)
 
-![lab outcome](images/AzureLabs-Lab6-01.png)
+![Screenshot of a mixed reality app example.](images/AzureLabs-Lab6-01.png)
 
 ## Bonus Exercises
 
