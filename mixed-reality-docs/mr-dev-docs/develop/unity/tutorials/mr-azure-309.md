@@ -17,14 +17,14 @@ keywords: azure, mixed reality, academy, unity, tutorial, api, application insig
 
 ![The Mixed Reality Academy tutorial welcome screen.](images/AzureLabs-Lab309-00.png)
 
-In this course, you will learn how to add Application Insights capabilities to a mixed reality application, using the Azure Application Insights API to collect analytics regarding user behavior.
+In this course, you'll learn how to add Application Insights capabilities to a mixed reality application, using the Azure Application Insights API to collect analytics regarding user behavior.
 
 Application Insights is a Microsoft service, allowing developers to collect analytics from their applications and manage it from an easy-to-use portal. The analytics can be anything from performance to custom information you would like to collect. For more information, visit the [Application Insights page](https://azure.microsoft.com/services/application-insights/).
 
-Having completed this course, you will have a mixed reality immersive headset application which will be able to do the following:
+Having completed this course, you'll have a mixed reality immersive headset application, which will be able to do the following:
 
 1. Allow the user to gaze and move around a scene.
-1. Trigger the sending of analytics to the *Application Insights Service*, through the use of Gaze and Proximity to in-scene objects.
+1. Trigger the sending of analytics to the *Application Insights Service*, by using Gaze and Proximity to in-scene objects.
 1. The app will also call upon the Service, fetching information about which object has been approached the most by the user, within the last 24 hours. That object will change its color to green.
 
 This course will teach you how to get the results from the Application Insights Service, into a Unity-based sample application. It will be up to you to apply these concepts to a custom application you might be building.
@@ -55,26 +55,26 @@ We recommend the following hardware and software for this course:
 - [Unity 2017.4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
 - A [Windows Mixed Reality immersive (VR) headset](/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details) or [Microsoft HoloLens](/hololens/hololens1-hardware) with Developer mode enabled
-- A set of headphones with a built-in microphone (if the headset does not have a built-in mic and speakers)
+- A set of headphones with a built-in microphone (if the headset doesn't have a built-in mic and speakers)
 - Internet access for Azure setup and Application Insights data retrieval
 
 ## Before you start
 
-To avoid encountering issues building this project, it is strongly suggested that you create the project mentioned in this tutorial in a root or near-root folder (long folder paths can cause issues at build-time).
+To avoid issues when building this project, it's strongly suggested that you create the project in this tutorial in a root or near-root folder (long folder paths can cause issues at build-time).
 
 > [!WARNING] 
 > Be aware, data going to *Application Insights* takes time, so be patient. If you want to check if the Service has received your data, check out [Chapter 14](#chapter-14---the-application-insights-service-portal), which will show you how to navigate the portal.
 
 ## Chapter 1 - The Azure Portal
 
-To use *Application Insights*, you will need to create and configure an *Application Insights Service* in the Azure portal.
+To use *Application Insights*, you'll need to create and configure an *Application Insights Service* in the Azure portal.
 
-1. Log in to the [Azure Portal](https://portal.azure.com).
+1. Sign in to the [Azure Portal](https://portal.azure.com).
 
     > [!NOTE]
     > If you do not already have an Azure account, you will need to create one. If you are following this tutorial in a classroom or lab situation, ask your instructor or one of the proctors for help setting up your new account.
 
-1. Once you are logged in, click on **New** in the top left corner, and search for *Application Insights*, and click **Enter**.
+1. Once you're logged in, click **New** in the top left corner, and search for *Application Insights*, and click **Enter**.
 
     > [!NOTE]
     > The word **New** may have been replaced with **Create a resource**, in newer portals.
@@ -85,7 +85,7 @@ To use *Application Insights*, you will need to create and configure an *Applica
 
     ![Screenshot of the Application Insights screen, Create is highlighted.](images/AzureLabs-Lab309-02.png)
 
-1. Once you have clicked on **Create**:
+1. Once you've clicked on **Create**:
 
     1. Insert your desired **Name** for this Service instance.
 
@@ -93,29 +93,29 @@ To use *Application Insights*, you will need to create and configure an *Applica
 
     3. Select an appropriate **Subscription**.
 
-    4. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It is recommended to keep all the Azure Services associated with a single project (e.g. such as these courses) under a common resource group).
+    4. Choose a **Resource Group** or create a new one. A resource group provides a way to monitor, control access, provision and manage billing for a collection of Azure assets. It's recommended to keep all the Azure Services associated with a single project (for example, such as these courses) under a common resource group).
 
         > If you wish to read more about Azure Resource Groups, please [visit the resource group article](/azure/azure-resource-manager/resource-group-portal).
 
     5. Select a **Location**.
 
-    6. You will also need to confirm that you have understood the Terms and Conditions applied to this Service.
+    6. You'll also need to confirm that you've understood the Terms and Conditions applied to this Service.
 
     7. Select **Create**.
 
         ![Screenshot of the Application Insights window. Name and application type are highlighted.](images/AzureLabs-Lab309-03.png)
 
-5.  Once you have clicked on **Create**, you will have to wait for the Service to be created, this might take a minute.
+5.  Once you've clicked on **Create**, you'll have to wait for the Service to be created, this might take a minute.
 
 6.  A notification will appear in the portal once the Service instance is created.
 
     ![Screenshot showing a portion of the menu ribbon, the notification icon is highlighted.](images/AzureLabs-Lab309-04.png)
 
-7.  Click on the notifications to explore your new Service instance.
+7.  Select the notifications to explore your new Service instance.
 
     ![Screenshot showing the Deployment succeeded dialog, Go to resource is highlighted.](images/AzureLabs-Lab309-05.png)
 
-8.  Click the **Go to resource** button in the notification to explore your new Service instance. You will be taken to your new *Application Insights Service* instance.
+8.  Click the **Go to resource** button in the notification to explore your new Service instance. You'll be taken to your new *Application Insights Service* instance.
 
     ![Screenshot showing the Application Insights Service instance where the instance name is MyNewInsight.](images/AzureLabs-Lab309-06.png)
 
@@ -125,11 +125,11 @@ To use *Application Insights*, you will need to create and configure an *Applica
     > [!IMPORTANT]
     > To implement Application Insights, you will need to use three (3) specific values: **Instrumentation Key**, **Application ID**, and **API Key**. Below you will see how to retrieve these values from your Service. Make sure to note these values on a blank *Notepad* page, because you will use them soon in your code.
 
-9.  To find the **Instrumentation Key**, you will need to scroll down the list of Service functions, and click on **Properties**, the tab displayed will reveal the **Service Key**.
+9.  To find the **Instrumentation Key**, you'll need to scroll down the list of Service functions, and select **Properties**, the tab displayed will reveal the **Service Key**.
 
     ![Screenshot showing service functions, Properties is highlighted in the Configure section and Instrumentation Key is highlighted in the main pane.](images/AzureLabs-Lab309-07.png)
 
-10. A little below **Properties**, you will find **API Access**, which you need to click. The panel to the right will provide the **Application ID** of your app.
+10. A little below **Properties**, you'll find **API Access**, which you need to click. The panel to the right will provide the **Application ID** of your app.
 
     ![Screenshot showing service functions, A P I Access is highlighted. Create A P I Key and Application I D are highlighted in the main pane.](images/AzureLabs-Lab309-08.png)
 
@@ -148,17 +148,17 @@ To use *Application Insights*, you will need to create and configure an *Applica
 
 ## Chapter 2 - Set up the Unity project
 
-The following is a typical set up for developing with the mixed reality, and as such, is a good template for other projects.
+The following is a typical setup for developing with the mixed reality, and as such, is a good template for other projects.
 
 1. Open *Unity* and click **New**.
 
     ![Screenshot of the Unity projects window. No project information is shown.](images/AzureLabs-Lab309-11.png)
 
-2. You will now need to provide a Unity Project name, insert **MR\_Azure\_Application\_Insights**. Make sure the *Template* is set to **3D**. Set the *Location* to somewhere appropriate for you (remember, closer to root directories is better). Then, click **Create project**.
+2. You'll now need to provide a Unity Project name, insert **MR\_Azure\_Application\_Insights**. Make sure the *Template* is set to **3D**. Set the *Location* to somewhere appropriate for you (remember, closer to root directories is better). Then, click **Create project**.
 
     ![Screenshot of the Unity new projects window, showing project information.](images/AzureLabs-Lab309-12.png)
 
-3. With Unity open, it is worth checking the default **Script Editor** is set to **Visual Studio**. Go to **Edit \> Preferences** and then from the new window, navigate to **External Tools**. Change **External Script Editor** to **Visual Studio 2017**. Close the **Preferences** window.
+3. With Unity open, it's worth checking the default **Script Editor** is set to **Visual Studio**. Go to **Edit \> Preferences** and then from the new window, navigate to **External Tools**. Change **External Script Editor** to **Visual Studio 2017**. Close the **Preferences** window.
 
     ![Screenshot showing Visual Studio is set up as the external script editor.](images/AzureLabs-Lab309-13.png)
 
@@ -194,7 +194,7 @@ The following is a typical set up for developing with the mixed reality, and as 
 
 6. The remaining settings, in **Build Settings**, should be left as default for now.
 
-7. In the **Build Settings** window, click on the **Player Settings** button, this will open the related panel in the space where the **Inspector** is located.
+7. In the **Build Settings** window, select **Player Settings**, this will open the related panel in the space where the **Inspector** is located.
 
     ![Screenshot of the Inspector tab showing Player Settings.](images/AzureLabs-Lab309-18.png)
 
@@ -235,9 +235,9 @@ The following is a typical set up for developing with the mixed reality, and as 
 > [!IMPORTANT]
 > To use Application Insights within Unity, you need to import the DLL for it, along with the Newtonsoft DLL. There is currently a known issue in Unity which requires plugins to be  reconfigured after import. These steps (4 - 7 in this section) will no longer be required after the bug has been resolved.
 
-To import Application Insights into your own project, make sure you have [downloaded the '.unitypackage', containing the plugins](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20309%20-%20Application%20insights/AppInsights_LabPlugins.unitypackage). Then, do the following:
+To import Application Insights into your own project, make sure you've [downloaded the '.unitypackage', containing the plugins](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20309%20-%20Application%20insights/AppInsights_LabPlugins.unitypackage). Then, do the following:
 
-1. Add the **.unitypackage** to Unity by using the **Assets \> Import Package \> Custom Package** menu option.
+1. Add the.unitypackage** to Unity by using the **Assets \> Import Package \> Custom Package** menu option.
 
 2. In the **Import Unity Package** box that pops up, ensure everything under (and including) **Plugins** is selected.
 
@@ -258,17 +258,17 @@ To import Application Insights into your own project, make sure you have [downlo
     > [!NOTE]
     > Marking the plugins like this, configures them to only be used in the Unity Editor. There are a different set of DLLs in the WSA folder which will be used after the project is exported from Unity.
 
-6. Next, you need to open the **WSA** folder, within the **Insights** folder. You will see a copy of the same file you just configured. Select this file, and then in the inspector, ensure that **Any Platform** is **unchecked**, then ensure that **only** **WSAPlayer** is **checked**. Click **Apply**.
+6. Next, you need to open the **WSA** folder, within the **Insights** folder. You'll see a copy of the same file you configured. Select this file, and then in the inspector, ensure that **Any Platform** is **unchecked**, then ensure that **only** **WSAPlayer** is **checked**. Click **Apply**.
 
     ![Screenshot of the Inspector panel showing W S A Player checked.](images/AzureLabs-Lab309-25.png)
 
-7. You will now need to follow **steps 4-6**, but for the *Newtonsoft* plugins instead. See the below screenshot for what the outcome should look like.
+7. You'll now need to follow **steps 4-6**, but for the *Newtonsoft* plugins instead. See the below screenshot for what the outcome should look like.
 
     ![Screenshot of four views of the Project and Inspector panels showing the results of setting up the Newtonsoft folder and plugin selections.](images/AzureLabs-Lab309-25-5.png)    
 
 ## Chapter 4 - Set up the camera and user controls
 
-In this Chapter you will set up the camera and the controls to allow the user to see and move in the scene.
+In this Chapter, you'll set up the camera and the controls to allow the user to see and move in the scene.
 
 1. Right-click in an empty area in the Hierarchy Panel, then on **Create** > **Empty**.
 
@@ -290,7 +290,7 @@ In this Chapter you will set up the camera and the controls to allow the user to
 
     ![Screenshot of the Inspector panel, the gear icon and Remove Component are highlighted in the Sphere Collider section.](images/AzureLabs-Lab309-29.png)
 
-7. In the Hierarchy Panel drag the **Main Camera** and the **Right Hand** objects onto the **Camera Parent** object.
+7. In the Hierarchy Panel, drag the **Main Camera** and the **Right Hand** objects onto the **Camera Parent** object.
 
     ![Screenshot of the Hierarchy panel with Main Camera selected, the Inspector panel shows Main Camera checked.](images/AzureLabs-Lab309-30.png)
 
@@ -302,7 +302,7 @@ In this Chapter you will set up the camera and the controls to allow the user to
 
 ## Chapter 5 - Set up the objects in the Unity scene
 
-You will now create some basic shapes for your scene, with which the user can interact.
+You'll now create some basic shapes for your scene, with which the user can interact.
 
 1. Right-click in an empty area in the *Hierarchy Panel*, then on **3D Object**, then select **Plane**.
 
@@ -378,7 +378,7 @@ To create this class:
 
 2. With the **Scripts** folder created, double-click it, to open. Then, within that folder, right-click, **Create** > **C# Script**. Name the script **ApplicationInsightsTracker**.
 
-3. Double-click on the new **ApplicationInsightsTracker** script to open it with **Visual Studio**.
+3. Double-click the new **ApplicationInsightsTracker** script to open it with **Visual Studio**.
 
 4. Update namespaces at the top of the script to be as below:
 
@@ -498,11 +498,11 @@ To create this class:
 
 The next script to create is the **Gaze** script. This script is responsible for creating a *Raycast* that will be projected forward from the *Main Camera*, to detect which object the user is looking at. In this case, the *Raycast* will need to identify if the user is looking at an object with the **ObjectInScene** tag, and then count how long the user *gazes* at that object.
 
-1. Double-click on the **Scripts** folder, to open it.
+1. Double-click the **Scripts** folder, to open it.
 
 2. Right-click inside the **Scripts** folder, click **Create** > **C# Script**. Name the script **Gaze**.
 
-3. Double-click on the script to open it with Visual Studio.
+3. Double-click the script to open it with Visual Studio.
 
 4. Replace the existing code with the following:
 
@@ -681,7 +681,7 @@ The next script to create is the **Gaze** script. This script is responsible for
         }
     ```
 
-8. You have now completed the **Gaze** script. Save your changes in *Visual Studio* before returning to *Unity*.
+8. You've now completed the **Gaze** script. Save your changes in *Visual Studio* before returning to *Unity*.
 
 ## Chapter 8 - Create the ObjectTrigger class
 
@@ -692,11 +692,11 @@ The next script you need to create is **ObjectTrigger**, which is responsible fo
 
 To create the script:
 
-1. Double-click on the **Scripts** folder, to open it.
+1. Double-click the **Scripts** folder, to open it.
 
 2. Right-click inside the **Scripts** folder, click **Create** > **C# Script**. Name the script **ObjectTrigger**.
 
-3. Double-click on the script to open it with Visual Studio. Replace the existing code with the following:
+3. Double-click the script to open it with Visual Studio. Replace the existing code with the following:
 
     ```csharp
         using UnityEngine;
@@ -755,7 +755,7 @@ To create the script:
 
 ## Chapter 9 - Create the DataFromAnalytics class
 
-You will now need to create the **DataFromAnalytics** script, which is responsible for:
+You'll now need to create the **DataFromAnalytics** script, which is responsible for:
 
 - Fetching analytics data about which object has been approached by the camera the most.
 - Using the *Service Keys*, that allow communication with your Azure Application Insights Service instance.
@@ -764,11 +764,11 @@ You will now need to create the **DataFromAnalytics** script, which is responsib
 
 To create the script:
 
-1. Double-click on the **Scripts** folder, to open it.
+1. Double-click the **Scripts** folder, to open it.
 
 2. Right-click inside the **Scripts** folder, click **Create** > **C# Script**. Name the script **DataFromAnalytics**.
 
-3. Double-click on the script to open it with Visual Studio.
+3. Double-click the script to open it with Visual Studio.
 
 4. Insert the following namespaces:
 
@@ -986,18 +986,18 @@ To create the script:
 
 ## Chapter 10 - Create the Movement class
 
-The **Movement** script is the next script you will need to create. It is responsible for:
+The **Movement** script is the next script you'll need to create. It's responsible for:
 
 - Moving the Main Camera according to the direction the camera is looking towards.
 - Adding all other scripts to scene objects.
 
 To create the script:
 
-1. Double-click on the **Scripts** folder, to open it.
+1. Double-click the **Scripts** folder, to open it.
 
 2. Right-click inside the **Scripts** folder, click **Create** > **C# Script**. Name the script **Movement**.
 
-3. Double-click on the script to open it with *Visual Studio*.
+3. Double-click the script to open it with *Visual Studio*.
 
 4. Replace the existing code with the following:
 
@@ -1192,13 +1192,13 @@ In this Chapter you need to place the **Movement** script onto the **Camera Pare
 
     ![Screenshot of the Project and Hierarchy panels. Movement is highlighted.](images/AzureLabs-Lab309-48.png)
 
-2. Click on the **Camera Parent**. In the *Hierarchy Panel*, drag the **Right Hand** object from the *Hierarchy Panel* to the reference target, **Controller**, in the *Inspector Panel*. Set the **User Speed** to **5**, as shown in the image below.
+2. Click the **Camera Parent**. In the *Hierarchy Panel*, drag the **Right Hand** object from the *Hierarchy Panel* to the reference target, **Controller**, in the *Inspector Panel*. Set the **User Speed** to **5**, as shown in the image below.
 
     ![Screenshot showing the Hierarchy and Inspector panels. A line connects Right Hand on both panels.](images/AzureLabs-Lab309-49.png)
 
 ## Chapter 12 - Build the Unity project
 
-Everything needed for the Unity section of this project has now been completed, so it is time to build it from Unity.
+Everything needed for the Unity section of this project has now been completed, so it's time to build it from Unity.
 
 1. Navigate to **Build Settings**, (**File** > **Build Settings**).
 
@@ -1206,7 +1206,7 @@ Everything needed for the Unity section of this project has now been completed, 
 
     ![Screenshot of the Build Settings window showing Scenes In Build. ](images/AzureLabs-Lab309-50.png)
 
-3. A **File Explorer** window will pop-up, prompting you for a location for the build. Create a new folder (by clicking **New Folder** in the top-left corner), and name it **BUILDS**.
+3. A **File Explorer** window will pop up, prompting you for a location for the build. Create a new folder (by clicking **New Folder** in the top-left corner), and name it **BUILDS**.
 
     ![Screenshot of File Explorer showing the Builds folder highlighted.](images/AzureLabs-Lab309-51.png)
 
@@ -1230,7 +1230,7 @@ To deploy the **MR\_Azure\_Application\_Insights** app on your Local Machine:
 
     ![Screenshot of the the Visual Studio Solution Configuration screen showing Debug in the menu bar.](images/AzureLabs-Lab309-53.png)
 
-4. Go to **Build menu** and click on **Deploy Solution** to sideload the application to your machine.
+4. Go to **Build menu** and click **Deploy Solution** to sideload the application to your machine.
 
 5. Your app should now appear in the list of installed apps, ready to be launched.
 
@@ -1243,19 +1243,19 @@ To deploy the **MR\_Azure\_Application\_Insights** app on your Local Machine:
 
 ## Chapter 14 - The Application Insights Service portal
 
-Once you have roamed around the scene and gazed at several objects you can see the data collected in the *Application Insights Service* portal.
+Once you have roamed around the scene and gazed at several objects, you can see the data collected in the *Application Insights Service* portal.
 
 1. Go back to your Application Insights Service portal.
 
-2. Click on *Metrics Explorer*.
+2. Select *Metrics Explorer*.
 
     ![Screenshot of the MyNewInsight panel showing the list of options. Metrics Explorer is listed in the Investigate section.](images/AzureLabs-Lab309-54.png)
 
-3. It will open in a tab containing the graph which represent the *Events and Metrics* related to your application. As mentioned above, it might take some time (up to 1 hour) for the data to be displayed in the graph
+3. It will open in a tab containing the graph, which represent the *Events and Metrics* related to your application. As mentioned above, it might take some time (up to 1 hour) for the data to be displayed in the graph
 
     ![Screenshot of the Metrics Explorer showing the events and metrics graph.](images/AzureLabs-Lab309-55.png)
 
-4. Click on the *Events bar* in the *Total of Events* by Application Version, to see a detailed breakdown of the events with their names.
+4. Select the *Events bar* in the *Total of Events* by Application Version, to see a detailed breakdown of the events with their names.
 
     ![Screenshot of the Search panel showing the results of a custom event filter.](images/AzureLabs-Lab309-56.png)
 
