@@ -17,7 +17,7 @@ keywords: azure, mixed reality, academy, unity, tutorial, api, media services, s
 
 <br> 
 
-![Screenshot of Windows Mixed Reality V R.](images/AzureLabs-Lab6-00.png)
+![Screenshot of a Windows Mixed Reality V R example.](images/AzureLabs-Lab6-00.png)
 ![Screenshot of a Windows Mixed Reality V R experience.](images/AzureLabs-Lab6-01.png)
 
 In this course you will learn how connect your Azure Media Services to a Windows Mixed Reality VR experience to allow streaming 360 degree video playback on immersive headsets. 
@@ -147,13 +147,13 @@ To use the Azure Media Service, you will need to configure an instance of the se
 
     7.  Click **Create**.
 
-        ![Screnshot of the Media service page.](images/AzureLabs-Lab6-08.png)
+        ![Screenshot of the Create Media Service Account page.](images/AzureLabs-Lab6-08.png)
 
 4.  Once you have clicked on **Create**, you will have to wait for the service to be created, this might take a minute.
 
 5.  A notification will appear in the portal once the Service instance is created.
 
-    ![Screenshot of the notification icon.](images/AzureLabs-Lab6-09.png)
+    ![Screenshot of the notification icon in the portal menu.](images/AzureLabs-Lab6-09.png)
 
 6.  Click on the notification to explore your new Service instance.
 
@@ -226,7 +226,7 @@ To use the Azure Media Service, you will need to configure an instance of the se
 
 20. You will see your video along with another, which is of **Asset Type _Multi-Bitrate MP4_**.
 
-    ![Screenshot of the assets menu.](images/AzureLabs-Lab6-22.png)
+    ![Screenshot of the Microsoft Azure assets menu.](images/AzureLabs-Lab6-22.png)
 
     > [!NOTE] 
     > You may notice that the new asset, alongside your initial video, is *Unknown*, and has '0' bytes for it's **Size**, just refresh your window for it to update.
@@ -250,11 +250,11 @@ To use the Azure Media Service, you will need to configure an instance of the se
 
 24. At the bottom of that panel, click on the **Add** button.
 
-    ![Screenshot of the page labeled publish the asset.](images/AzureLabs-Lab6-25.png)
+    ![Screenshot showing directory listings with the asset to publish dialog.](images/AzureLabs-Lab6-25.png)
 
 25. Your video is now published and can be streamed by using its endpoint. Further down the page is a **Files** section. This is where the different encoded versions of your video will be. Select the highest possible resolution one (in the image below it is the 1920x960 file), and then a panel to the right will appear. There you will find a **Download URL**. Copy this **Endpoint** as you will use it later in your code.
 
-    ![Screenshot of the files section.](images/AzureLabs-Lab6-26.png)    
+    ![Screenshot of the Microsoft Azure files section.](images/AzureLabs-Lab6-26.png)    
 
     ![Screenshot of the asset information page.](images/AzureLabs-Lab6-27.png)
 
@@ -271,11 +271,11 @@ The following is a typical set up for developing with the Mixed Reality, and as 
 
 1.	Open **Unity** and click **New**. 
 
-    ![Screenshot of Unity projects tab.](images/AzureLabs-Lab6-28.png)
+    ![Screenshot of Unity projects tab. The New button is highlighted.](images/AzureLabs-Lab6-28.png)
 
 2.	You will now need to provide a Unity Project name, insert **MR\_360VideoStreaming.**. Make sure the project type is set to **3D**. Set the Location to somewhere appropriate for you (remember, closer to root directories is better). Then, click **Create project**.
 
-    ![Screenshot of the new project page.](images/AzureLabs-Lab6-29.png)
+    ![Screenshot of the Unity new projects page.](images/AzureLabs-Lab6-29.png)
 
 3.  With Unity open, it is worth checking the default **Script Editor** is set to **Visual Studio.** Go to ***Edit* *Preferences*** and then from the new window, navigate to **External Tools**. Change **External Script Editor** to **Visual Studio 2017**. Close the **Preferences** window.
 
@@ -299,7 +299,7 @@ The following is a typical set up for developing with the Mixed Reality, and as 
 
     7.  The remaining settings should be left as default for now.
 
-        ![Screenshot of the build settings screen.](images/AzureLabs-Lab6-31.png)
+        ![Screenshot of the Unity build settings screen.](images/AzureLabs-Lab6-31.png)
 
 6.  In the **Build Settings** window, click on the **Player Settings** button, this will open the related panel in the space where the **Inspector** is located. 
 
@@ -313,17 +313,17 @@ The following is a typical set up for developing with the Mixed Reality, and as 
 
         3. **API Compatibility Level** should be **.NET 4.6.**
 
-            ![Screenshot of the screen labeled Settings for Universal Windows Platform.](images/AzureLabs-Lab6-32.png)
+            ![Screenshot showing the Settings for Universal Windows Platform page.](images/AzureLabs-Lab6-32.png)
 
     2.  Further down the panel, in **XR Settings** (found below **Publish Settings**), tick **Virtual Reality Supported**, make sure the **Windows Mixed Reality SDK** is added.
 
-        ![Screenshot of the XR settings screen.](images/AzureLabs-Lab6-33.png)
+        ![Screenshot of the Unity X R settings screen.](images/AzureLabs-Lab6-33.png)
 
     3.  Within the **Publishing Settings** tab, under **Capabilities**, check:
 
         - **InternetClient**
 
-            ![Screenshot of the Capabilities screen.](images/AzureLabs-Lab6-34.png)
+            ![Screenshot of the Capabilities screen. Internet Client is checked.](images/AzureLabs-Lab6-34.png)
 
 8.  Once you have made those changes, close the **Build Settings** window.
 
@@ -823,13 +823,13 @@ The purpose of this Chapter is to setup the two scenes, each hosting a video to 
 
 17. Drag the new **Material** onto the **GazeButton** child, to now completely update its look, so that it is easily distinguishable from the first scenes button.
 
-    ![Screenshot of the scene tab.](images/AzureLabs-Lab6-58.png)
+    ![Screenshot of the project editor scene tab.](images/AzureLabs-Lab6-58.png)
 
 18. At this point you can test the project in the Editor before building the UWP project.
 
     -  Press the **Play** button in the **Editor** and wear your headset.
 
-        ![Screenshot of the play button.](images/AzureLabs-Lab6-59.png)
+        ![Screenshot showing the play, pause, and skip buttons. The play button is highlighted.](images/AzureLabs-Lab6-59.png)
 
 19. Look at the two **GazeButton** objects to switch between the first and second video.
 
