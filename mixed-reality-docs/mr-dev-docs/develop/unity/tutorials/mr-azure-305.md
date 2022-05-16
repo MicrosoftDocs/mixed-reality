@@ -337,22 +337,25 @@ Set up and test your mixed reality immersive headset.
 
 4.  Then update the **Transform** component to look like:
 
-    |         |    TRANSFORM - POSITION   |       |
-    | :-----: | :-----------------------: | :----:|
-    | **X**   | **Y**                     | **Z** |
-    | 0       | 1                         | 0     |    
+**Transform - Position**
 
-    |       | TRANSFORM - ROTATION |       |
-    | :---: | :------------------: | :----:|
-    | **X** | **Y**                | **Z** |
-    | 0     | 0                    | 0     |
+| **X** | **Y** | **Z** |
+|:-----:|:-----:|:-----:|
+| 0     | 1     | 0     |  
 
-    |       | TRANSFORM - SCALE |       |
-    | :---: | :---------------: | :---: |
-    | **X** | **Y**             | **Z** |
-    | 1     | 1                 | 1     |
+**Transform - Rotation**
 
-    ![set camera transform](images/AzureLabs-Lab5-30.png)
+| **X** | **Y** | **Z** |
+|:-----:|:-----:|:-----:|
+| 0     | 0     | 0     |  
+
+**Transform - Scale**
+
+| **X** | **Y** | **Z** |
+|:-----:|:-----:|:-----:|
+| 1     | 1     | 1     |  
+
+  ![set camera transform](images/AzureLabs-Lab5-30.png)
 
 ## Chapter 5 - Setting up the Unity scene
 
@@ -362,30 +365,31 @@ Set up and test your mixed reality immersive headset.
 
 2.  With the **Plane** object selected, change the following parameters in the *Inspector Panel*:
 
-    |       | TRANSFORM - POSITION |       |
-    | :---: | :------------------: | :---: |
-    | **X** | **Y**                | **Z** |
-    | 0     | 0                    | 4     |
+**Transform - Position**
+| **X** | **Y** | **Z** |
+|:-----:|:-----:|:-----:|
+| 0     | 0     | 4     |  
 
-    |       | TRANSFORM - SCALE |       |
-    | :---: | :---------------: | :---: |
-    | **X** | **Y**             | **Z** |
-    | 10    | 1                 | 10    |
+**Transform - Scale**
+| **X** | **Y** | **Z** |
+|:-----:|:-----:|:-----:|
+| 10     | 1     | 10     |  
 
-    ![set plane position and scale](images/AzureLabs-Lab5-32.png)
+![set plane position and scale](images/AzureLabs-Lab5-32.png)
 
-    ![scene view of plane](images/AzureLabs-Lab5-33.png)
+![scene view of plane](images/AzureLabs-Lab5-33.png)
 
 3.  Right-click in an empty area of the *Hierarchy Panel*, under **3D Object**, add a **Cube**.
 
     1.  Rename the Cube to **GazeButton** (with the Cube selected, press 'F2').
 
-    2.  Change the following parameters in the *Inspector Panel*:
+    2.  Change the following parameters for **Transform Position** in the *Inspector Panel*:
 
-        |       | TRANSFORM - POSITION |       |
-        | :---: | :------------------: |:-----:|
+
         | **X** | **Y**                | **Z** |
+        | :---: | :------------------: |:-----:|
         | 0     | 3                    | 5     |
+
 
 
         ![set gaze button transform](images/AzureLabs-Lab5-34.png)
@@ -410,11 +414,10 @@ Set up and test your mixed reality immersive headset.
 
 5.  Select the new object and rename it **ShapeSpawnPoint**.
 
-    1.  Change the following parameters in the *Inspector Panel*:
+    1.  Change the following parameters for **Transform Position** in the *Inspector Panel*:
 
-        |       | TRANSFORM - POSITION |       |
-        | :---: | :------------------: |:----: |
         | **X** |**Y**                 | **Z** |
+        | :---: | :------------------: |:----: |
         | 0     | -1                   | 0     |
 
         ![update shape spawn point transform](images/AzureLabs-Lab5-40.png)
@@ -429,18 +432,15 @@ Set up and test your mixed reality immersive headset.
 
 7.  Rename the **3D Text** object to **AzureStatusText**.
 
-8.  Change the **AzureStatusText** object Transform as follows:
+8.  Change the **AzureStatusText** object **Transform Position** as follows:
 
-    |       | TRANSFORM - POSITION |       |
-    | :---: | :------------------: | :---: |
     | **X** | **Y**                | **Z** |
+    | :---: | :---: | :---: |
     | 0     | 0                    | -0.6  |
-
-    |       | TRANSFORM - SCALE |       |
-    | :---: | :---------------: | :---: |
+8.  Change the **AzureStatusText** object **Transform Scale** as follows:
     | **X** | **Y**             | **Z** |
-    | 0.1   | 0.1               | 0.1   |
-
+    | :---: | :---: | :---: |
+    | 0.1   | 0.1  | 0.1   |
 
     > [!NOTE]
     > Do not worry if it appears to be off-centre, as this will be fixed when the below Text Mesh component is updated.

@@ -389,35 +389,48 @@ How-to import the **unitypackage**:
 
 7.  In the Inspector Window click on the **InsideOutSphere**'s Transform component, ensure that the following properties are set:
 
-    |            |    TRANSFORM - POSITION   |           |
-    | :---------:| :-----------------------: | :--------:|
-    |   **X** 0  |          **Y** 0          |  **Z** 0  |
+**Transform - Position**
 
-    |            |    TRANSFORM - ROTATION   |           |
-    | :---------:| :-----------------------: | :--------:|
-    |   **X** 0  |          **Y** -50        |  **Z** 0  |
+| **X** | **Y** | **Z** |
+|:-----:|:-----:|:-----:|
+| 0     | 0     | 0     |
 
-    |            |     TRANSFORM - SCALE     |           |
-    | :---------:| :-----------------------: | :--------:|
-    |  **X** 1   |          **Y** 1          |  **Z** 1  |
+**Transform - Rotation**
 
-    ![Importing the InsideOutSphere Unity Package](images/AzureLabs-Lab6-41.png)
+| **X** | **Y** | **Z** |
+|:-----:|:-----:|:-----:|
+| 0     | -50     | 0     |
+
+**Transform - Scale**
+
+| **X** | **Y** | **Z** |
+|:-----:|:-----:|:-----:|
+| 0     | 0     | 0     |
+
+![Importing the InsideOutSphere Unity Package](images/AzureLabs-Lab6-41.png)
 
 8.  Click on the **GazeButton** child object, and set its **Transform** as follows:
 
-    |            |    TRANSFORM - POSITION   |           |
-    | :---------:| :-----------------------: | :--------:|
-    |   **X** 3.6|          **Y** 1.3        |  **Z** 0  |
+**Transform - Position**
 
-    |            |    TRANSFORM - ROTATION   |           |
-    | :---------:| :-----------------------: | :--------:|
-    |   **X** 0  |          **Y** 0          |  **Z** 0  |
+| **X** | **Y** | **Z** |
+|:-----:|:-----:|:-----:|
+| 3.6     | 1.3     | 0     |
 
-    |            |     TRANSFORM - SCALE     |           |
-    | :---------:| :-----------------------: | :--------:|
-    |  **X** 1   |          **Y** 1          |  **Z** 1  |
+**Transform - Rotation**
 
-    ![Importing the InsideOutSphere Unity Package](images/AzureLabs-Lab6-42.png)
+| **X** | **Y** | **Z** |
+|:-----:|:-----:|:-----:|
+| 0     | 0     | 0     |
+
+**Transform - Scale**
+
+| **X** | **Y** | **Z** |
+|:-----:|:-----:|:-----:|
+| 1     | 1     | 1     |
+
+
+![Importing the InsideOutSphere Unity Package](images/AzureLabs-Lab6-42.png)
 
 
 ## Chapter 5 - Create the VideoController class
@@ -763,17 +776,23 @@ The purpose of this Chapter is to setup the two scenes, each hosting a video to 
 
 9.  With the second scene open, click on the **GazeButton** child object of the **InsideOutSphere**, and set its Transform as follows:
 
-    |            |    TRANSFORM - POSITION   |           |
-    | :---------:| :-----------------------: | :--------:|
-    |   **X** 0  |         **Y** 1.3         | **Z** 3.6 |
+**Transform - Position**
 
-    |            |    TRANSFORM - ROTATION   |           |
-    | :---------:| :-----------------------: | :--------:|
-    |   **X** 0  |          **Y** 0          |  **Z** 0  |
+| **X** | **Y** | **Z** |
+|:-----:|:-----:|:-----:|
+| 0     | 1.3   | 3.6   |
 
-    |            |     TRANSFORM - SCALE     |           |
-    | :---------:| :-----------------------: | :--------:|
-    |  **X** 1   |          **Y** 1          |  **Z** 1  |
+**Transform - Rotation**
+
+| **X** | **Y** | **Z** |
+|:-----:|:-----:|:-----:|
+| 0     | 0   | 0   |
+
+**Transform - Scale**
+
+| **X** | **Y** | **Z** |
+|:-----:|:-----:|:-----:|
+| 1     | 1   | 1  |
 
 10. With the **GazeButton** child still selected, look at the **Inspector** and at the **Mesh Filter**. Click the little target next to the **Mesh** reference field:
 
