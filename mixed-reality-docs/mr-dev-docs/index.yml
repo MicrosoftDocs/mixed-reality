@@ -234,24 +234,24 @@ tools:
 #             - text: Dynamics 365 documentation
 #               url: /dynamics365/mixed-reality/
 #             - text: Using Remote Assist
-#               url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens
+#               url: /dynamics365/mixed-reality/remote-assist/overview-hololens
 #             - text: User guides
-#               url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
+#               url: /dynamics365/mixed-reality/guides/
 #             - text: Remote Assist learning modules
-#               url: https://docs.microsoft.com/learn/browse/?products=dynamics-remote-assist
+#               url: /learn/browse/?products=dynamics-remote-assist
 #         # Card
 #         - title: Azure Cloud Services
 #           links:
 #             - text: Cloud Services overview
 #               url: develop/mixed-reality-cloud-services.md
 #             - text: Jump into Azure Spatial Anchors
-#               url: https://docs.microsoft.com/azure/spatial-anchors/
+#               url: /azure/spatial-anchors/
 #             - text: Azure Spatial Anchors tutorials
 #               url: develop/unity/tutorials/mr-learning-asa-01.md
 #             - text: Develop with Azure Remote Rendering 
-#               url: https://docs.microsoft.com/azure/remote-rendering/
+#               url: /azure/remote-rendering/
 #             - text: Azure Remote Rendering Tutorials
-#               url: https://docs.microsoft.com/en-us/azure/remote-rendering/tutorials/unity/tutorial-landing
+#               url: /azure/remote-rendering/tutorials/unity/tutorial-landing
 #         # Card
 #         - title: HoloLens 2 Sample apps
 #           links:
@@ -265,8 +265,8 @@ tools:
 #         - title: Learn modules
 #           links:
 #             - text: Introduction to Mixed Reality
-#               url: https://docs.microsoft.com/learn/modules/intro-to-mixed-reality/
+#               url: /learn/modules/intro-to-mixed-reality/
 #             - text: Set up a mixed reality project in Unity with the Mixed Reality Toolkit
-#               url: https://docs.microsoft.com/learn/modules/mixed-reality-toolkit-project-unity/
+#               url: /learn/modules/mixed-reality-toolkit-project-unity/
 #             - text: Create a language translator application with Unity and Azure Cognitive Services
-#               url: https://docs.microsoft.com/learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/
+#               url: /learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/
