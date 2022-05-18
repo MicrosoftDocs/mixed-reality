@@ -34,7 +34,7 @@ Failure to properly set up, use, and care for your headset can increase the risk
 
   Use only in a safe place that's appropriate for your activities. Avoid trip hazards, stairs, low ceilings, and fragile or valuable items that you could damage. Avoid situations in which people or things might unexpectedly approach. Don't use your headset when you need to view and attend to your physical surroundings for safety.
 
-- **Create a boundary.** Follow all setup recommendations for Windows Mixed Reality, including using your headset to create a boundary. Boundaries can help you avoid obstacles.
+- **Create a boundary.** Follow all setup recommendations for Windows Mixed Reality, including using your headset to [create a boundary](set-up-windows-mixed-reality.md#set-up-your-room-boundary). Boundaries can help you avoid obstacles.
 
   Your PC setup and some applications or experiences can cause delays or errors in the boundary display. Always use caution and be aware of your surroundings, even if you've created a boundary.
 
@@ -66,5 +66,6 @@ Take note of the type of content you were viewing and other aspects of the situa
 ## See also
 
 - [Headset display FAQs](headset-display.md)
-- [Comfort](../../../design/comfort.md)
+- [Comfort](../mixed-reality-docs/mr-dev-docs/design/comfort.md)
+- [Set up your room boundary](set-up-windows-mixed-reality.md#set-up-your-room-boundary)
 - [Microsoft Support](https://support.microsoft.com/contactus)

@@ -16,11 +16,11 @@ To modify a Unity project, you must first review and approve changes to the mani
 
 On the **Review and Approve** screen:
 
-- The **Manifest** column on the left shows the proposed manifest changes. The contents are exactly what to write to the project manifest, *Packages/manifest.json*.
+- The **Manifest** column on the left shows the proposed manifest changes. The contents show exactly what to write to the project manifest, *Packages/manifest.json*.
 
 - The **Files to be copied into the project** section on the right lists the specific feature package files to copy into the Unity project.
 
-![Screenshot of the Review and Approve screen.]
+![Screenshot of the Review and Approve screen.](images/featuretoolapprovalrequest.png)
 
 ## Compare manifests
 
@@ -32,9 +32,9 @@ Either scroll bar scrolls both manifests, making it easier to spot the differenc
 
 ## Approve changes
 
-Select **Approve** to copy the listed files into the Unity project and update the manifest with references to these files.
+On the **Review and Approve** screen, select **Approve** to copy the listed files into the Unity project and update the manifest with references to these files.
 
-- As part of the modifications, the current *manifest.json* file is backed up. When viewing manifest backups, the oldest backup is called *manifest.json.backup*. Newer backups are annotated with a numeric value, beginning with *0*.
+- As part of the modifications, the current *manifest.json* file is backed up. When you view manifest backups, the oldest backup is called *manifest.json.backup*. Newer backups are annotated with a numeric value, beginning with *0*.
 
 - Add the feature package *.tgz* files to source control. Reference the files with relative paths to help development teams easily share features and manifest changes.
 

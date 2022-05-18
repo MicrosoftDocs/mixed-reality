@@ -68,7 +68,7 @@ The boundary appears when you're close to it. If your boundary includes any sect
 
 If you choose **Seated and standing** during headset setup or later, you use your headset without a boundary. You need to stay in one spot when using the headset to avoid physical obstacles and tripping hazards. You can sit down or stand up, but you shouldn't move around. Keep in mind that obstacles might be overhead and around you.
 
-Some apps might be designed to work with a boundary. They might not work or provide the same experience if you use them without a boundary. If you choose **All experiences**, you'll set up a boundary, and can use apps and experiences that work with and without a boundary.
+If you choose **All experiences**, you set up a boundary, and can use apps and experiences that work with and without a boundary. Some apps might be designed to work with a boundary. Those apps might not work or provide the same experience if you use them without a boundary.
 
 ## Boundary troubleshooting
 
@@ -91,7 +91,7 @@ The device is taking too long to find the bounds. You can bypass this message by
 
 ### Why do I often see a message saying "I've lost my bounds"?
 
-The tracking system is having a hard time tracking and identifying your environment. In this state, the device can no longer display your bounds. The headset switches to 3DOF to keep you from to bumping into things in the real world until it locates your bounds again. Try the following steps to fix the issue:
+The tracking system is having a hard time tracking and identifying your environment. In this state, the device can no longer display your bounds. The headset switches to three degrees of freedom (3DoF) to keep you from to bumping into things in the real world until it locates your bounds again. Try the following steps to fix the issue:
 
 1. Make sure that the room has enough light.
 1. If you recently redecorated or remodeled the room, rerun setup.
@@ -101,7 +101,7 @@ The tracking system is having a hard time tracking and identifying your environm
 
 ### What do I do if a message says my boundary can't be found?
 
-Windows Mixed Reality might have trouble identifying your existing boundary. You can create a new boundary, or you can use your device in Seated and standing mode.
+Windows Mixed Reality might have trouble identifying your existing boundary. You can create a new boundary, or you can use your device in **Seated and standing** mode.
 
 ### What do I do if a message says "Lost tracking" or "We don't have a boundary for this space"?
 
@@ -113,6 +113,7 @@ Create a new boundary.
 
 ## See also
 
+- [Headset display FAQs](headset-display.md)
 - [Set up your room boundary](set-up-windows-mixed-reality.md#set-up-your-room-boundary)
 - [Windows Mixed Reality immersive headset health, safety, and comfort](wmr-health-safety-comfort.md)
 - [Microsoft Support](https://support.microsoft.com/contactus/)
