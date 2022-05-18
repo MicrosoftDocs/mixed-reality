@@ -1,109 +1,114 @@
 ---
-title: Voice commands
-description: Get guidance on voice design, and learn about gaze, gesture, and voice (GGV), the primary means of interaction on HoloLens.
+title: Voice commanding
+description: Gaze, gesture and voice (GGV) are the primary means of interaction on HoloLens. This article provides thoughtful guidance on voice design.
 author: sean-kerawala
 ms.author: sekerawa
-ms.date: 05/16/2022
+ms.date: 04/21/2019
 ms.topic: article
 keywords: Windows Mixed Reality, design, interaction, voice
 ---
 
 
-# Voice commands
+# Voice commanding
 
-Voice is a powerful and convenient way to control the system and apps. Consider adding voice commands to any experience that you build.
+When using voice commands, gaze is typically used as the targeting mechanism, whether as a pointer ("select") or to direct your command to an application ("see it, say it"). Of course, some voice commands don't require a target at all, like "go to start" or "Hey, Cortana."
 
-[HoloLens (1st gen)](/hololens/hololens1-hardware), [HoloLens 2](/hololens/hololens2-hardware), and [immersive headsets](../../../enthusiast-guide/immersive-headset-hardware-details.md) with headsets attached support voice commands.
 
-### Strengths of voice
+## Device support
 
-Voice commands have the following benefits:
+<table>
+    <colgroup>
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    <col width="25%" />
+    </colgroup>
+    <tr>
+        <td><strong>Feature</strong></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
+        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+        <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
+    </tr>
+     <tr>
+        <td>Voice commanding</td>
+        <td>✔️</td>
+        <td>✔️</td>
+        <td>✔️ (with headset attached)</td>
+    </tr>
+</table>
 
-- Voice input is a natural way to communicate intent. 
-- Voice is a convenient input method when users [have their hands full](../design/hands-free.md) or are multi-tasking.
-- Voice dictation can be an efficient, alternative input method on devices where typing on a keyboard is difficult.
-- In some cases with limited range of accuracy for gaze and gesture, voice might be a user's only trusted method of input.
-- Voice is especially good at interface *traversals*, because it can help users cut through multiple steps. A user can say "go back" while looking at a web page, instead of having to locate and select the **Back** button in the app. This small time savings can have a powerful emotional effect on a user's perception of an experience.
 
-Voice input offers users the following advantages:
-
-- Saves time. Voice makes reaching the end goal more efficient.
-- Minimizes effort. Voice makes tasks more fluid and effortless.
-- Reduces cognitive load. Voice commands are intuitive, easy to learn, and easy to remember.
-- Conforms to societal behavior norms.
-- Easily becomes routine, habitual behavior.
-
-### Weaknesses of voice
-
-Voice commands also have the following weaknesses:
-
-- Lack of fine-grained control. For example, a user might say "louder," but can't say how much. "A little" is hard to quantify.
-- Difficulty moving or scaling objects. Voice doesn't offer much granularity of control.
-- Imperfect performance. A voice system can hear a command incorrectly or fail to hear a command. Recovering from such errors is a challenge in any interface.
-- Social issues. Voice input might be disruptive in public places. Users can't or shouldn't say certain things.
 
 ## How to use voice
 
-You typically use [head-gaze](../design/gaze-and-commit.md) as the targeting mechanism for voice commands. You can use gaze as a pointer with "select," or direct your command to an application with "see it, say it." Some voice commands, like "go to start" or "hey cortana" don't need a gaze target.
+Consider adding voice commands to any experience that you build. Voice is a powerful and convenient way to control the system and apps. Because users speak with a variety of dialects and accents, proper choice of speech keywords will make sure that your users' commands are interpreted unambiguously.
 
-### Select
+### Best practices
 
-Users can say "select" at any time to activate whatever the gaze cursor is pointing at.
+Below are some practices that will aid in smooth speech recognition.
+* **Use concise commands** - When possible, choose keywords of two or more syllables. One-syllable words tend to use different vowel sounds when spoken by persons of different accents. Example: "Play video" is better than "Play the currently selected video"
+* **Use simple vocabulary** - Example: "Show note" is better than "Show placard"
+* **Make sure commands are non destructive** - Make sure any action that can be taken by a speech command is non destructive and can easily be undone in case another person speaking near the user accidentally triggers a command.
+* **Avoid similar sounding commands** - Avoid registering multiple speech commands that sound very similar. Example: "Show more" and "Show store" can be very similar sounding.
+* **Unregister your app when not it use** - When your app is not in a state in which a particular speech command is valid, consider unregistering it so that other commands are not confused for that one.
+* **Test with different accents** - Test your app with users of different accents.
+* **Maintain voice command consistency** - If "Go back" goes to the previous page, maintain this behavior in your applications.
+* **Avoid using system commands** - The following voice commands are reserved for the system. These should not be used by applications.
+   * "Hey Cortana"
+   * "Select"
 
-In HoloLens 2, users first invoke the [gaze cursor](../design/cursors.md#head-gaze-cursor) by saying the word "select". Saying "select" again activates the cursor. To hide the gaze cursor, users simply use their hands to air tap or touch an object.
+### "Select"
+
+Saying "select" at any time will activate whatever the gaze cursor is pointing at. 
+
+>Note: In HoloLens 2, the gaze cursor needs to first be invoked by saying the word "select". Say "select" again to activate. To hide the gaze cursor, simply use your hands to airtap or touch an object. 
 
 ### See it, say it
 
-In the Windows Mixed Reality "see it, say it" voice model, button labels are identical to the associated voice commands. Because there's no dissonance between the label and the voice command, users can easily understand what to say to control the system. To reinforce the model, while dwelling on a button, a **voice dwell tip** appears to communicate that the button is voice enabled.
+Windows Mixed Reality has employed a "see it, say it" voice model where **labels on buttons are identical to the associated voice commands**. Because there isn’t any dissonance between the label and the voice command, users can better understand what to say to control the system. To reinforce this, while dwelling on a button, a **"voice dwell tip"** appears to communicate which buttons are voice enabled.
 
-The following images show examples of "see it, say it."
 
-![Image of a see it, say it example.](../design/images/voice-seeitsayit1-640px.jpg)
+![See it say it example 1](../design/images/voice-seeitsayit1-640px.jpg)
 
-![Image of another see it, say it example.](../design/images/voice-seeitsayit2-640px.jpg)<br>
+![See it say it example 2](../design/images/voice-seeitsayit2-640px.jpg)<br>
+*Examples of "see it, say it"*
 
-### Design recommendations
+### Voice's strengths
 
-Because users speak with a variety of dialects and accents, proper choice of speech keywords ensures that your users' commands are interpreted unambiguously. The following practices promote smooth speech recognition.
+Voice input is a natural way to communicate our intents. Voice is especially good at interface **traversals** because it can help users cut through multiple steps of an interface (a user might say "go back" while looking at a Web page, instead of having to go up and click the Back button in the app). This small time savings has a powerful **emotional effect** on a user’s perception of the experience and gives them a small amount of superpower. Using voice is also a convenient input method when we have our arms full or are **multi-tasking**. On devices where typing on a keyboard is difficult, **voice dictation** can be an efficient, alternative way to input. Lastly, in some cases when the **range of accuracy** for gaze and gesture are limited, Voice might be a user’s only trusted method of input.
 
-- **Use multi-syllable commands.** When possible, choose keywords of two or more syllables. People with different accents tend to use different vowel sounds when speaking one-syllable words. For example, "play video" is better than "Play clip."
-- **Use concise commands.** Use short commands. For example, "play video" is better than "Play the currently selected video."
-- **Use simple vocabulary.** For example, "show note" is better than "show placard."
-- **Make sure commands are non-destructive.** Make sure any actions taken are non-destructive and easily undone in case another nearby person accidentally triggers a command.
-- **Avoid similar sounding commands.** Avoid multiple commands that sound very similar, like "show more" and "show store."
-- **Unregister your app when not in use.** When your app isn't in a state to use a particular speech command, consider unregistering it so other commands aren't confused for that one.
-- **Test with different accents.** Test your app with users of different accents.
-- **Maintain voice command consistency.** If "go back" goes to the previous page, maintain this behavior throughout your applications.
-- **Don't use system commands** The voice commands "hey cortana" and "select" are reserved for the system. Don't use these commands in applications.
+**How using voice can benefit the user**
+* Reduces time - it should make the end goal more efficient.
+* Minimizes effort - it should make tasks more fluid and effortless.
+* Reduces cognitive load - it's intuitive, easy to learn, and remember.
+* It's socially acceptable - it should fit in with societal norms in terms of behavior.
+* It's routine - voice can readily become a habitual behavior.
 
-## User interface considerations
+### Voice's weaknesses
 
-When a voice system is applied properly, the user *knows what they can say*, and *gets clear feedback that the system heard them correctly*. These two signals make the user feel confident in using voice as a primary input.
+Voice also has some weaknesses. Fine-grained control is one of them. (for example, a user might say "louder," but can’t say how much. "A little" is hard to quantify. Moving or scaling things with voice is also difficult (voice does not offer the granularity of control). Voice can also be imperfect. Sometimes a voice system incorrectly hears a command or fails to hear a command. Recovering from such errors is a challenge in any interface. Lastly, voice may not be socially acceptable in public places. There are some things that users can’t or shouldn’t say. These cliffs allow speech to be used for what it is best at.
 
-Common questions and concerns users have about voice include:
+### Voice feedback states
 
-- What can I say?
-- How do I know the system heard me correctly?
-  - The system keeps getting my voice commands wrong.
-  - The system reacts the wrong way when I give it a voice command.
-  - The system doesn't react when I give a voice command.
-- How do I target my voice to a specific app or app command?
-- Can I use voice to command things out of the holographic frame on HoloLens?
+When Voice is applied properly, the user understands **what they can say and get clear feedback** the system **heard them correctly**. These two signals make the user feel confident in using Voice as a primary input. Below is a diagram showing what happens to the cursor when voice input is recognized and how it communicates that to the user.
 
-The most important things to instruct users about voice in mixed reality are:
+![Voice feedback states for cursor](../design/images/voicefeedbackstates.png)<br>
+*Voice feedback states for cursor*
 
-- You can say "select" anywhere you're targeting a button to select the button.
-- In some apps, you can say the label name of an app bar button to take an action. For example, while looking at an app, you can say "remove" to remove the app from the world. You don't have to select the app with your hand.
-- You can initiate Cortana listening by saying "hey cortana." You can then ask questions, open apps, or bring up the **Start** menu by saying "hey cortana, take me home."
+## Top things users should know about "speech" in mixed reality
+* Say **"Select"** while targeting a button (you can use this anywhere to click a button).
+* You can say the **label name of an app bar button** in some apps to take an action. For example, while looking at an app, a user can say the command "Remove" to remove the app from the world (this saves time from having to click it with your hand).
+* You can initiate Cortana listening by saying **"Hey Cortana."** You can ask her questions ("Hey Cortana, how tall is the Eiffel tower?"), tell her to open an app ("Hey Cortana, open Netflix"), or tell her to bring up the Start Menu ("Hey Cortana, take me home") and more.
 
-The following diagram shows what happens to the cursor when the system recognizes a voice input, and how the system communicates that to the user.
-
-![Diagram showing voice feedback states for the cursor.](../design/images/voicefeedbackstates.png)
-
-1. Regular cursor state.
-1. System communicates voice feedback and then dissipates.
-1. Regular cursor state.
+## Common questions and concerns users have about voice
+* What can I say?
+* How do I know the system heard me correctly?
+   * The system keeps getting my voice commands wrong.
+   * It doesn’t react when I give it a voice command.
+* It reacts the wrong way when I give it a voice command.
+* How do I target my voice to a specific app or app command?
+* Can I use voice to command things out the holographic frame on HoloLens?
 
 ## See also
-- [Gestures](../design/gaze-and-commit.md#composite-gestures)
-- [Head-gaze and dwell](../design/gaze-and-dwell.md)
+* [Gestures](../design/gaze-and-commit.md#composite-gestures)
+* [Head-gaze and dwell](../design/gaze-and-dwell.md)

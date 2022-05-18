@@ -4,7 +4,7 @@ description: Learn how to authorize project changes by using the Mixed Reality F
 author: sean-kerawala
 ms.author: sekerawa
 ms.date: 05/16/2022
-ms.topic: article
+ms.topic: how-to
 ms.localizationpriority: high
 keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit, mixed reality headset, windows mixed reality headset, virtual reality headset, installation, Windows, HoloLens, emulator, unreal, openxr
 ms.custom: kr2b-contr-experiment
@@ -34,11 +34,11 @@ Either scroll bar scrolls both manifests, making it easier to spot the differenc
 
 Select **Approve** to copy the listed files into the Unity project and update the manifest with references to these files.
 
-- As part of the modifications, the current *manifest.json* file is backed up. When viewing manifest backups, the oldest is called *manifest.json.backup*. Newer backups are annotated with a numeric value, beginning with *0*.
+- As part of the modifications, the current *manifest.json* file is backed up. When viewing manifest backups, the oldest backup is called *manifest.json.backup*. Newer backups are annotated with a numeric value, beginning with *0*.
 
 - Add the feature package *.tgz* files to source control. Reference the files with relative paths to help development teams easily share features and manifest changes.
 
-- If you need to make changes to your feature selections, select **Go Back** to return to the [import features](importing-features.md) step.
+- If you need to make changes to your feature selections, select **Go Back** on the **Review and Approve** screen to return to the [import features](importing-features.md) step.
 
 ## See also
 
