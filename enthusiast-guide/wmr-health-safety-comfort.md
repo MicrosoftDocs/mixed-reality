@@ -3,7 +3,7 @@ title: Windows Mixed Reality headset health and safety
 description: Learn how to stay healthy, safe, and comfortable when using Windows Mixed Reality immersive headsets with virtual reality apps.
 author: sean-kerawala
 ms.author: sekerawa
-ms.date: 05/16/2022
+ms.date: 05/18/2022
 ms.topic: end-user-help
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Feedback, Feedback Hub, bugs
 ms.custom: kr2b-contr-experiment
@@ -11,7 +11,7 @@ appliesto:
     - Windows 10
 ---
 
-# Windows Mixed Reality immersive headset health, safety, and comfort
+# Windows Mixed Reality immersive headset safety, health, and comfort
 
 This article explains how to use Windows Mixed Reality immersive headsets safely and comfortably.
 
@@ -54,10 +54,14 @@ Some people might experience discomfort such as nausea, motion sickness, dizzine
 
 Certain conditions can increase your risk of discomfort:
 
-- Being a new user. Start slowly. Keep your first sessions brief. For most people, discomfort should lessen as you become accustomed to Mixed Reality.
+- Being a new user.
+
+  Start slowly. Keep your first sessions brief. For most people, discomfort should lessen as you become accustomed to Mixed Reality.
 - Games or movies that make you feel as if you're moving through space or looking down from above.
 - Interactions that involve tracking moving objects.
-- Using the headset for extended periods without a break. Take breaks periodically, and stop and rest if you experience any discomfort. The timing and length of breaks depends on the individual user and how you're using the headset.
+- Using the headset for extended periods without a break.
+
+  Take breaks periodically, and stop and rest if you experience any discomfort. The timing and length of breaks depends on the individual user and how you're using the headset.
 
 If you experience discomfort, stop using the headset and rest until you feel better. Sitting still in a well-lit environment can help speed recovery from disorientation. If you feel disoriented, avoid activities that require balance, coordination, or other capabilities until you recover.
 
@@ -66,6 +70,6 @@ Take note of the type of content you were viewing and other aspects of the situa
 ## See also
 
 - [Headset display FAQs](headset-display.md)
-- [Comfort](../mixed-reality-docs/mr-dev-docs/design/comfort.md)
+- [Comfort](/windows/mixed-reality/design/comfort)
 - [Set up your room boundary](set-up-windows-mixed-reality.md#set-up-your-room-boundary)
 - [Microsoft Support](https://support.microsoft.com/contactus)
