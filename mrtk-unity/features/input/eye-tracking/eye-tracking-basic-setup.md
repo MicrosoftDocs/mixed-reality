@@ -114,7 +114,7 @@ Building your app with eye tracking should be similar to how you would compile o
 
 #### Ensure project is configured for HoloLens 2
 
-Make sure you've properly configured your project by reviewing the configuration steps covered in [Set up an OpenXR project with MRTK](../../../../mixed-reality-docs/mr-dev-docs/develop/unity/new-openxr-project-with-mrtk.md).
+Make sure you've properly configured your project by reviewing the configuration steps covered in [Set up an OpenXR project with MRTK](/windows/develop/unity/new-openxr-project-with-mrtk.md).
 
 Key points to think about:
 
