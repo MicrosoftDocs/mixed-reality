@@ -3,7 +3,7 @@ title: Boundary FAQs
 description: Windows Mixed Reality frequently asked questions that go beyond standard consumer support issues.
 author: sean-kerawala
 ms.author: sekerawa
-ms.date: 05/18/2022
+ms.date: 05/20/2022
 ms.topic: faq
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support, Boundary
 ms.custom: kr2b-contr-experiment
@@ -64,7 +64,7 @@ The boundary appears when you're close to it. If your boundary includes any sect
 1. Select **Menu**.
 1. In the Mixed Reality Portal, turn **Boundary** to **Off**. Be sure to stay in one place while the boundary is off.
 
-### How do I choose between "Seated and standing" and "All experiences"?
+### What's the difference between "Seated and standing" and "All experiences"?
 
 If you choose **Seated and standing** during headset setup or later, you use your headset without a boundary. You need to stay in one spot when using the headset to avoid physical obstacles and tripping hazards. You can sit down or stand up, but you shouldn't move around. Keep in mind that obstacles might be overhead and around you.
 

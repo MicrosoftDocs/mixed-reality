@@ -3,7 +3,7 @@ title: Authorize project changes
 description: Learn how to authorize project changes by using the Mixed Reality Feature Tool for HoloLens and VR development.
 author: sean-kerawala
 ms.author: sekerawa
-ms.date: 05/18/2022
+ms.date: 05/20/2022
 ms.topic: how-to
 ms.localizationpriority: high
 keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit, mixed reality headset, windows mixed reality headset, virtual reality headset, installation, Windows, HoloLens, emulator, unreal, openxr

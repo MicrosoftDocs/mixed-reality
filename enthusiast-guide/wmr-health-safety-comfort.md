@@ -3,7 +3,7 @@ title: Windows Mixed Reality headset health and safety
 description: Learn how to stay healthy, safe, and comfortable when using Windows Mixed Reality immersive headsets with virtual reality apps.
 author: sean-kerawala
 ms.author: sekerawa
-ms.date: 05/18/2022
+ms.date: 05/20/2022
 ms.topic: end-user-help
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Feedback, Feedback Hub, bugs
 ms.custom: kr2b-contr-experiment
