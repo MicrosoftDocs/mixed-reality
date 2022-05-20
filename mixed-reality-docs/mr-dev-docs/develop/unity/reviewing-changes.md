@@ -1,6 +1,6 @@
 ---
-title: Authorize project changes
-description: Learn how to authorize project changes by using the Mixed Reality Feature Tool for HoloLens and VR development.
+title: Approve project changes
+description: Learn how to review and approve project changes by using the Mixed Reality Feature Tool for HoloLens and VR development.
 author: sean-kerawala
 ms.author: sekerawa
 ms.date: 05/20/2022
@@ -10,7 +10,7 @@ keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit,
 ms.custom: kr2b-contr-experiment
 ---
 
-# Authorize project changes
+# Approve project changes
 
 To modify a Unity project, you must first review and approve changes to the manifest and project files.
 

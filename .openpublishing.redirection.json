@@ -2252,7 +2252,16 @@
 			"redirect_document_id": false
 
 		},
-
+		{
+			"source_path": "mixed-reality-docs/mr-dev-docs/out-of-scope/voice-design.md",
+			"redirect_url": "/windows/mixed-reality/design/voice-input",
+			"redirect_document_id": false
+		},
+		{
+			"source_path": "enthusiast-guide/pc-compatibility.md",
+			"redirect_url": "/windows/mixed-reality/enthusiast-guide/get-help-with-pc-compatibility",
+			"redirect_document_id": false
+		},
 		{	"source_path": "ignore",
 			"redirect_url": "ignore",
 			"redirect_document_id": false,

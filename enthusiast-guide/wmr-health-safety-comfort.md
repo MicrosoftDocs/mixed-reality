@@ -1,5 +1,5 @@
 ---
-title: Windows Mixed Reality headset health and safety
+title: Windows Mixed Reality headset safety, health, and comfort
 description: Learn how to stay healthy, safe, and comfortable when using Windows Mixed Reality immersive headsets with virtual reality apps.
 author: sean-kerawala
 ms.author: sekerawa
@@ -15,9 +15,10 @@ appliesto:
 
 This article explains how to use Windows Mixed Reality immersive headsets safely and comfortably.
 
-## Safety considerations
+> [!WARNING]
+> Failure to properly set up, use, and care for your headset can increase the risk of serious injury, death, property damage, or damage to the product or accessories.
 
-Failure to properly set up, use, and care for your headset can increase the risk of serious injury, death, property damage, or damage to the product or accessories.
+## Safety considerations
 
 - **Follow all setup procedures, user guidelines, and instructions** from:
 
