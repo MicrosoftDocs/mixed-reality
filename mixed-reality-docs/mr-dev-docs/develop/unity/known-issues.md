@@ -30,7 +30,7 @@ Some versions of Unity or Unity plugins have known incompatibilities blocking ap
 
 | Blocking&nbsp;issues | Status&nbsp;&&nbsp;Last&nbsp;Update | &nbsp;&nbsp;Versions&nbsp;with&nbsp;issue&nbsp;&nbsp; | &nbsp;&nbsp;Versions&nbsp;with&nbsp;fixes&nbsp;&nbsp; |
 | :----------- | :----- | :--------------: | :--------------: |
-| Application with default splash screen will show four spinning dots when launching on HL2, or after suspend and resume the application. | **Fixed:**<br />2022/05/20 | Unity&nbsp;2020.3.32-34f1&nbsp;</br>and Unity&nbsp;2021.2.17~19f1 | Use Unity&nbsp;2020.3.35f1 or Unity&nbsp;2021.3.0f1 or later |
+| Application with default splash screen will show four spinning dots when launching on HL2, or after suspend and resume the application. | **Fixed:**<br />2022/05/20 | Unity&nbsp;2020.3.32-34f1&nbsp;</br>and Unity&nbsp;2021.2.17~19f1 and Unity&nbsp;2021.3.0~3f1| Use Unity&nbsp;2020.3.35f1 or Unity&nbsp;2021.3.4f1 or later |
 | HL2 application shows severely jittery image. | **Fixed:**<br />2021/12/02 | Unity 2020.3.21f1 to <br />Unity 2020.3.23f1 | Use Unity 2020.3.24f1<br /> and later |
 | OpenXR backend with URP can deadlock on HL2. | **Fixed:**<br />2021/05/13 | Unity 2020.3.0f1 to <br />Unity 2020.3.7f1 | Use Unity 2020.3.8f1<br /> and later |
 
