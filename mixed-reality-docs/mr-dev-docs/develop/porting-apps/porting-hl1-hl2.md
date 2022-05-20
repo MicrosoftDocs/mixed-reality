@@ -31,7 +31,7 @@ We highly recommend that you use source control to save a snapshot your applicat
 
 ## Migrate your project to the latest version of Unity
 
-If you're using [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity), we recommend that you update to MRTK 2.7 before you upgrade your project to [Unity 2020.3 LTS](../unity/choosing-unity-version.md). MRTK 2.7 supports Unity 2018, 2019 and 2020, allowing you to ensure your project is ready for Unity 2020 even before you upgrade Unity. Assess any [plugin dependencies](https://docs.unity3d.com/Manual/Plugins.html) that currently exist in your project and determine whether these DLLs can be built for ARM64. For projects with a hard ARM64 dependent plugin, you may need to continue building your app for ARM.
+If you're using [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity), we recommend that you update to MRTK 2.7 before you upgrade your project to [Unity 2020.3 LTS](../unity/choosing-unity-version.md). MRTK 2.7 supports Unity 2018, 2019 and 2020, allowing you to ensure your project is ready for Unity 2020 even before you upgrade Unity. Assess any [plugin dependencies](https://docs.unity3d.com/Manual/Plugins.html) that currently exist in your project and determine whether these DLLs can be built for ARM64. For projects with a hard ARM dependent plugin, you may need to continue building your app for ARM.
 
 ## Update scene/project settings in Unity
 
