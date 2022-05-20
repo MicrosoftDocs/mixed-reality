@@ -55,7 +55,7 @@ Or, if you're ready to get started on your own from a blank project, proceed to 
 # [Windows XR](#tab/windowsxr)
 
 > [!CAUTION]
-> The Windows XR plugin is deprecated in Unity 2021.1 and will be removed in Unity 2021.2.  For Unity 2020 development, Microsoft recommends the OpenXR plugin instead.
+> The Windows XR plugin is deprecated in Unity 2021.1 and removed in Unity 2021.2 or later versions.  For Unity 2020 development, Microsoft recommends the OpenXR plugin instead.
 
 If you're targeting Desktop VR, we suggest using the PC Standalone Platform selected by default on a new Unity project:
 
