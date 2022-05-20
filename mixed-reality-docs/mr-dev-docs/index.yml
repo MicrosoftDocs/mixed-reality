@@ -83,7 +83,7 @@ productDirectory:
           text: Get started with Unity
         - url: develop/unreal/unreal-development-overview.md
           text: Get started with Unreal
-        - url: /windows/mixed-reality/develop/features-and-samples
+        - url: ./develop/features-and-samples.md
           text: Free sample apps
     # Card
     - title: Deploy
@@ -227,4 +227,3 @@ tools:
 #               url: /learn/modules/mixed-reality-toolkit-project-unity/
 #             - text: Create a language translator application with Unity and Azure Cognitive Services
 #               url: /learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/
-
