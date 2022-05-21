@@ -1919,7 +1919,7 @@
 			"redirect_document_id": true
 		},
 		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/out-of-scope/voice-design.md",
+			"source_path": "mixed-reality-docs/mr-dev-docs/voice-design.md",
 			"redirect_url": "/windows/mixed-reality/design/voice-input",
 			"redirect_document_id": false
 		},
