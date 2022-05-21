@@ -1009,7 +1009,7 @@
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/openxr-getting-started.md",
 			"redirect_url": "/windows/mixed-reality/develop/unity/xr-project-setup",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/gaze-in-unity.md",
