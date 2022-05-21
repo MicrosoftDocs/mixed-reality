@@ -3,8 +3,8 @@ title: Input porting guide for Unity
 description: Learn how to handle input for Windows Mixed Reality in Unity.
 author: thetuvix
 ms.author: alexturn
-ms.date: 05/06/2022
-ms.topic: article
+ms.date: 05/21/2022
+ms.topic: conceptual
 keywords: input, unity, porting
 ms.custom: kr2b-contr-experiment
 ---

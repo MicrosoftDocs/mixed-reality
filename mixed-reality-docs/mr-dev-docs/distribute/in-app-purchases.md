@@ -3,7 +3,7 @@ title: In-app purchases
 description: Learn how to use in-app purchases in your mixed reality apps with a 2D XAML view and stock Windows OS popup.
 author: thetuvix
 ms.author: alexturn
-ms.date: 05/03/2022
+ms.date: 05/21/2022
 ms.topic: how-to
 keywords: in-app purchases, hololens, XAML, mixed reality headset, windows mixed reality headset, virtual reality headset
 ms.custom: kr2b-contr-experiment
@@ -15,8 +15,8 @@ HoloLens supports in-app purchases (IAPs), but there's some work to set them up.
 
 To use the in app-purchase functionality:
 
-1. Create a XAML [2D view](../design/app-views.md) to appear as a slate.
-1. Switch to the XAML view to activate placement, which leaves the [immersive view](../design/app-views.md#immersive-views).
+1. [Create a XAML 2D view](../design/app-views.md) to appear as a slate.
+1. [Switch to the XAML view](../design/app-views#switching-from-the-immersive-view-back-to-a-keyboard-xaml-view) to activate placement, which leaves the [immersive view](../design/app-views.md#immersive-views).
 1. Call the [RequestProductPurchaseAsync](/uwp/api/windows.applicationmodel.store.currentapp.requestproductpurchaseasync#windows-applicationmodel-store-currentapp-requestproductpurchaseasync(system-string)) API:
 
    `await CurrentApp.RequestProductPurchaseAsync("DurableItemIAPName");`

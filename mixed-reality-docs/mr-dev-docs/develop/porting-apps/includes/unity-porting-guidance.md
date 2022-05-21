@@ -1,9 +1,9 @@
 Review the common steps to make sure your development environment is set up correctly. To port your existing Unity content, follow these steps:
 
-### 1. Upgrade to the latest public build of Unity with Windows MR Support
+### 1. Upgrade to the latest public build of Unity with Windows MR support
 
 1. Save a copy of your project before you get started.
-1. [Download the latest recommended public build of Unity](../../install-the-tools.md) with mixed reality support.
+1. [Download the latest recommended public build of Unity](../../install-the-tools.md) with Windows Mixed Reality support.
 1. If your project was built on an older version of Unity, review the [Unity Upgrade Guides](https://docs.unity3d.com/Manual/UpgradeGuides.html).
 1. Follow the instructions for using Unity's [automatic API updater](https://docs.unity3d.com/Manual/APIUpdater.html).
 1. See if you need to make any other changes to get your project running, and work through any errors and warnings.
@@ -25,9 +25,11 @@ From inside your Unity application:
 > [!NOTE]
 > If your application has any dependencies on device-specific services, such as match making from Steam, disable them now. You can hook up the Windows equivalent services later.
 
-### 4. Target your application to run on Windows Mixed Reality
+### 4. Add support for the Mixed Reality OpenXR Plugin
 
-1. Remove or conditionally compile out any library support specific to another VR SDK. Those assets frequently change settings and properties on your project in ways that are incompatible with VR SDKs like Windows Mixed Reality.
+1. [Choose and install a Unity version and XR plugin](../../../develop/unity/choosing-unity-version.md). While the [Unity 2020.3 LTS with the Mixed Reality OpenXR plugin](../../../develop/unity/mixed-reality-openxr-plugin.md#import-the-mixed-reality-openxr-plugin) is best for Mixed Reality development, you can also build apps with other Unity configurations.
+
+1. Remove or conditionally compile out any library support specific to another VR SDK. Those assets might change settings and properties on your project in ways that are incompatible with Windows Mixed Reality.
 
    For example, if your project references the SteamVR SDK, update your project to instead use Unity's common VR APIs, which support both Windows Mixed Reality and SteamVR.
 1. In your Unity project, [target the Windows 10 SDK](../../unity/tutorials/holograms-100.md#target-windows-10-sdk).
