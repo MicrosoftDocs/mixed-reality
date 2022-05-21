@@ -16,7 +16,7 @@ HoloLens supports in-app purchases (IAPs), but there's some work to set them up.
 To use the in app-purchase functionality:
 
 1. [Create a XAML 2D view](../design/app-views.md) to appear as a slate.
-1. [Switch to the XAML view](../design/app-views#switching-from-the-immersive-view-back-to-a-keyboard-xaml-view) to activate placement, which leaves the [immersive view](../design/app-views.md#immersive-views).
+1. [Switch to the XAML view](../design/app-views.md#switching-from-the-immersive-view-back-to-a-keyboard-xaml-view) to activate placement, which leaves the [immersive view](../design/app-views.md#immersive-views).
 1. Call the [RequestProductPurchaseAsync](/uwp/api/windows.applicationmodel.store.currentapp.requestproductpurchaseasync#windows-applicationmodel-store-currentapp-requestproductpurchaseasync(system-string)) API:
 
    `await CurrentApp.RequestProductPurchaseAsync("DurableItemIAPName");`

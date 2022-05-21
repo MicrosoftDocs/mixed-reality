@@ -11,7 +11,7 @@ ms.custom: kr2b-contr-experiment
 
 # Port VR apps to Windows Mixed Reality
 
-Windows 10 includes support for immersive and holographic headsets. Other devices like the Oculus Rift or HTC Vive have dependencies on libraries that exist above the operating system's platform API. To bring existing Win32 Unity VR apps over to Windows Mixed Reality, you need to retarget vendor-specific VR SDK usage to [Unity's cross-vendor VR APIs and plugins](../../../develop/unity/choosing-unity-version.md).
+Windows 10 includes support for immersive and holographic headsets. Other devices like the Oculus Rift or HTC Vive have dependencies on libraries that exist above the operating system's platform API. To bring existing Win32 Unity VR apps over to Windows Mixed Reality, you need to retarget vendor-specific VR SDK usage to [Unity's cross-vendor VR APIs and plugins](../unity/choosing-unity-version.md).
 
 Porting VR apps to Windows Mixed Reality requires the following high-level processes:
 
