@@ -30,12 +30,12 @@ You can manually place **spatial anchors** in Unity to maintain a hologram's pos
 
 If possible, use [World Locking Tools](/mixed-reality/world-locking-tools) for hologram positioning.
 
-World Locking Tools provides a stable coordinate system that minimizes the visible inconsistencies between virtual and real world markers. World Locking Tools world-locks the entire scene with a shared pool of anchors, rather than locking each group of objects with the group's own individual anchor.
+**World Locking Tools** provides a stable coordinate system that minimizes the visible inconsistencies between virtual and real world markers. World Locking Tools world-locks the entire scene with a shared pool of anchors, rather than locking each group of objects with the group's own individual anchor.
 
-World Locking Tools automatically handles internal creation and management of spatial anchors. You don't need to interact with **ARAnchorManager** or **WorldAnchor** to keep your holograms world-locked.
+World Locking Tools automatically handles internal creation and management of spatial anchors. You don't need to interact with ARAnchorManager or WorldAnchor to keep your holograms world-locked.
 
-- For Unity 2019/2020 using OpenXR or the Windows XR Plugin, you must use **ARAnchorManager**.
-- For older Unity versions or WSA projects, you must use **WorldAnchor**.
+- For Unity 2019/2020 using OpenXR or the Windows XR Plugin, use **ARAnchorManager**.
+- For older Unity versions or WSA projects, use **WorldAnchor**.
 
 ## Set up world locking
 
@@ -65,7 +65,7 @@ Learn about spatial mapping:
 Go back to the Unity development checkpoints:
 
 > [!div class="nextstepaction"]
-> [Core building blocks](unity-development-overview.md#2-core-building-blocks):
+> [Core building blocks](unity-development-overview.md#2-core-building-blocks)
 
 ## See also
 * [World Locking Tools introduction](/mixed-reality/world-locking-tools/documentation/introfaq)

@@ -1,9 +1,9 @@
 # [World Locking Tools (Recommended)](#tab/wlt)
 
-To get started using the World Locking Tools, [download the Mixed Reality Feature Tool](../../welcome-to-mr-feature-tool.md). To learn more about the basics, see the main World Locking Tools documentation page for links to Overview, Quickstart, and other topics that are useful for getting you started.
+To get started using the World Locking Tools, [download the Mixed Reality Feature Tool](../../welcome-to-mr-feature-tool.md). To learn more about the basics, see the main World Locking Tools documentation page for links to Overview, Quickstart, and other useful topics.
 
 > [!div class="nextstepaction"]
-> [Go to main World Locking Tools documentation page](/mixed-reality/world-locking-tools/)
+> [World Locking Tools documentation](/mixed-reality/world-locking-tools/)
 
 ### Automated setup
 

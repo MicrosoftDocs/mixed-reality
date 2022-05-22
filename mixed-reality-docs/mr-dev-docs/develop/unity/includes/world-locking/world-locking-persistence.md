@@ -108,8 +108,6 @@ For hologram persistence in older Unity versions or WSA projects, use **WorldAnc
 
 The **WorldAnchorStore** creates holographic experiences where holograms stay in specific real world positions across instances of the application. Users can pin individual holograms wherever they want, and find them later in the same spot over app sessions.
 
-## Persist holograms across sessions
-
 The `WorldAnchorStore` lets you persist the location of world anchors across sessions. To persist holograms across sessions, keep separate track of `GameObjects` that use a particular world anchor. You can create a `GameObject` root with a world anchor, and anchor child holograms by it with a local position offset.
 
 To load holograms from previous sessions:
