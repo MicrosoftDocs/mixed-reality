@@ -198,24 +198,3 @@ You can use [Azure Spatial Anchors](/azure/spatial-anchors/overview) to create a
 
 To get started building shared experiences in Unity, try out the five-minute [Azure Spatial Anchors Unity quickstarts](/azure/spatial-anchors/unity-overview). Once you're up and running with Azure Spatial Anchors, you can [create and locate anchors in Unity](/azure/spatial-anchors/concepts/create-locate-anchors-unity).
 
-## Other development checkpoints
-
-Continue on with the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks).
-
-Explore other Mixed Reality core building blocks:
-
-> [!div class="nextstepaction"]
-> [Spatial mapping](spatial-mapping-in-unity.md)
-
-Start exploring the Mixed Reality platform capabilities and APIs:
-
-> [!div class="nextstepaction"]
-> [Shared experiences](shared-experiences-in-unity.md)
-
-## See also
-
-- [World locking and spatial anchors in Unity](spatial-anchors-in-unity.md)
-- [Spatial anchor persistence](../../design/coordinate-systems.md#spatial-anchor-persistence)
-- [Azure Spatial Anchors](/azure/spatial-anchors)
-- [Azure Spatial Anchors SDK for Unity](/dotnet/api/Microsoft.Azure.SpatialAnchors)
-
