@@ -108,9 +108,6 @@ For hologram persistence in older Unity versions or WSA projects, use **WorldAnc
 
 The **WorldAnchorStore** creates holographic experiences where holograms stay in specific real world positions across instances of the application. Users can pin individual holograms wherever they want, and find them later in the same spot over app sessions.
 
-> [!NOTE]
-> When possible, use [World Locking Tools](/mixed-reality/world-locking-tools) instead of `WorldAnchorStore` for persistent world locking. For Unity 2019/2020 with OpenXR or the Windows XR Plugin, use `ARAnchorManager`. For more information, see [Choose your world locking approach](spatial-anchors-in-unity.md#choosing-your-world-locking-approach).
-
 ## Persist holograms across sessions
 
 The `WorldAnchorStore` lets you persist the location of world anchors across sessions. To persist holograms across sessions, keep separate track of `GameObjects` that use a particular world anchor. You can create a `GameObject` root with a world anchor, and anchor child holograms by it with a local position offset.
@@ -195,6 +192,4 @@ for (int index = 0; index < ids.Length; index++)
 ## Persist holograms for multiple devices
 
 You can use [Azure Spatial Anchors](/azure/spatial-anchors/overview) to create a durable cloud anchor from a local world anchor. Your app can locate the cloud anchor across multiple HoloLens, iOS, and Android devices, even if the devices aren't together at the same time. Because cloud anchors are persistent, multiple devices can see content rendered relative to that anchor in the same physical location over time.
-
-To get started building shared experiences in Unity, try out the five-minute [Azure Spatial Anchors Unity quickstarts](/azure/spatial-anchors/unity-overview). Once you're up and running with Azure Spatial Anchors, you can [create and locate anchors in Unity](/azure/spatial-anchors/concepts/create-locate-anchors-unity).
 

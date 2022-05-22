@@ -1,9 +1,9 @@
 # [World Locking Tools (Recommended)](#tab/wlt)
 
-If you're ready to get started using the World Locking Tools, we recommend that you [download the Mixed Reality Feature Tool](../../welcome-to-mr-feature-tool.md). If you'd like to learn more about the basics, visit the main World Locking Tools documentation page. It contains links to our Overview and Quickstart and other topics that are useful for getting you started.
+To get started using the World Locking Tools, [download the Mixed Reality Feature Tool](../../welcome-to-mr-feature-tool.md). To learn more about the basics, see the main World Locking Tools documentation page for links to Overview, Quickstart, and other topics that are useful for getting you started.
 
 > [!div class="nextstepaction"]
-> [Go to main World Locking Tools Documentation page](/mixed-reality/world-locking-tools/)
+> [Go to main World Locking Tools documentation page](/mixed-reality/world-locking-tools/)
 
 ### Automated setup
 
@@ -24,16 +24,14 @@ The Mixed Reality OpenXR Plugin supplies basic anchor functionality through an i
 
 # [WorldAnchor](#tab/worldanchor)
 
-## Building a world-scale experience
-
 **Namespace:** *UnityEngine.XR.WSA*<br>
 **Type:** *WorldAnchor*
 
-For true **world-scale experiences** on HoloLens that let users wander beyond 5 meters, you'll need new techniques beyond those used for room-scale experiences. One key technique you'll use is to create a [spatial anchor](../../../../design/coordinate-systems.md#spatial-anchors) to lock a cluster of holograms precisely in place in the physical world, no matter how far the user has roamed, and then [find those holograms again in later sessions](../../../../design/coordinate-systems.md#spatial-anchor-persistence).
+A key technique is to create a [spatial anchor](../../../../design/coordinate-systems.md#spatial-anchors) to lock a cluster of holograms precisely in place in the physical world, no matter how far the user has roamed, and then [find those holograms again in later sessions](../../../../design/coordinate-systems.md#spatial-anchor-persistence).
 
-In Unity, you create a spatial anchor by adding the **WorldAnchor** Unity component to a GameObject.
+In older Unity versions, you create a spatial anchor by adding the **WorldAnchor** Unity component to a GameObject.
 
-### Adding a World Anchor
+### Add a World Anchor
 
 To add a world anchor, call `AddComponent<WorldAnchor>()` on the game object with the transform you want to anchor in the real world.
 
@@ -41,29 +39,29 @@ To add a world anchor, call `AddComponent<WorldAnchor>()` on the game object wit
 WorldAnchor anchor = gameObject.AddComponent<WorldAnchor>();
 ```
 
-That's it! This game object will now be anchored to its current location in the physical world - you may see its Unity world coordinates adjust slightly over time to ensure that physical alignment. Refer to [load a world anchor](../../persistence-in-unity.md#load-a-world-anchor) to find this anchored location again in a future app session.
+This game object is now anchored to its current location in the physical world. You might see its Unity world coordinates adjust slightly over time to ensure physical alignment. See [load a world anchor](#persistent-world-locking) to find this anchored location again in a future app session.
 
-### Removing a World Anchor
+### Remove a World Anchor
 
-If you no longer want the GameObject locked to a physical world location and don't intend on moving it this frame, then you can just call Destroy on the World Anchor component.
+If you no longer want the `GameObject` locked to a physical world location and don't intend on moving it this frame, call `Destroy` on the World Anchor component.
 
 ```cs
 Destroy(gameObject.GetComponent<WorldAnchor>());
 ```
 
-If you want to move the GameObject this frame, you need to call DestroyImmediate instead.
+If you want to move the `GameObject` this frame, call `DestroyImmediate` instead.
 
 ```cs
 DestroyImmediate(gameObject.GetComponent<WorldAnchor>());
 ```
 
-### Moving a World Anchored GameObject
+### Move a World Anchored GameObject
 
-GameObject's cannot be moved while a World Anchor is on it. If you need to move the GameObject this frame, you need to:
+You can't move a `GameObject` while a World Anchor is on it. If you need to move the `GameObject` this frame, you need to:
 
-1. DestroyImmediate the World Anchor component
-2. Move the GameObject
-3. Add a new World Anchor component to the GameObject.
+1. `DestroyImmediate` the World Anchor component.
+2. Move the `GameObject`.
+3. Add a new World Anchor component to the `GameObject`.
 
 ```cs
 DestroyImmediate(gameObject.GetComponent<WorldAnchor>());
@@ -71,32 +69,29 @@ gameObject.transform.position = new Vector3(0, 0, 2);
 WorldAnchor anchor = gameObject.AddComponent<WorldAnchor>();
 ```
 
-### Handling Locatability Changes
+### Handle locatability changes
 
-A WorldAnchor may not be locatable in the physical world at a point in time. If that occurs, Unity won't be updating the transform of the anchored object. This also can change while an app is running. Failure to handle the change in locatability will cause the object to not appear in the correct physical location in the world.
+A World Anchor might not be locatable in the physical world at a point in time. Unity then won't update the transform of the anchored object. This situation can also happen while an app is running. Failure to handle the change in locatability causes the object to not appear in the correct physical location in the world.
 
 To be notified about locatability changes:
 
-1. Subscribe to the OnTrackingChanged event
-2. Handle the event
+1. Subscribe to the `OnTrackingChanged` event. The `OnTrackingChanged` event is called whenever the underlying spatial anchor changes between a state of being locatable or not being locatable.
+   
+   ```cs
+   anchor.OnTrackingChanged += Anchor_OnTrackingChanged;
+   ```
 
-The **OnTrackingChanged** event will be called whenever the underlying spatial anchor changes between a state of being locatable vs. not being locatable.
+1. Handle the event.
 
-```cs
-anchor.OnTrackingChanged += Anchor_OnTrackingChanged;
-```
+   ```cs
+   private void Anchor_OnTrackingChanged(WorldAnchor self, bool located)
+   {
+       // This simply activates/deactivates this object and all children when tracking changes
+       self.gameObject.SetActiveRecursively(located);
+   }
+   ```
 
-Then handle the event:
-
-```cs
-private void Anchor_OnTrackingChanged(WorldAnchor self, bool located)
-{
-    // This simply activates/deactivates this object and all children when tracking changes
-    self.gameObject.SetActiveRecursively(located);
-}
-```
-
-Sometimes anchors are located immediately. In this case, this isLocated property of the anchor will be set to true when AddComponent\<WorldAnchor\>() returns. As a result, the OnTrackingChanged event won't be triggered. A clean pattern would be to call your OnTrackingChanged handler with the initial IsLocated state after attaching an anchor.
+If anchors are located immediately, the `isLocated` property of the anchor is set to `true` when `AddComponent<WorldAnchor>()` returns. Therefore, the `OnTrackingChanged` event isn't triggered. A cleaner pattern is to call the `OnTrackingChanged` handler with the initial `IsLocated` state after attaching an anchor.
 
 ```cs
 Anchor_OnTrackingChanged(anchor, anchor.isLocated);
