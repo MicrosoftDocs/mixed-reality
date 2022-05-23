@@ -20,6 +20,19 @@
           "LICENSE-CODE",
           "ThirdPartyNotices.md"
         ]
+      },
+      {
+        "group": "mrtk-unity-2",
+        "src": "./mrtk2",
+        "dest":"./mrtk2/",
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/includes/**",
+          "**/docfx.json"
+        ]
       }
     ],
     "resource": [
@@ -39,8 +52,27 @@
           "**/docfx.json",
           "_repo.en-us/**"
         ]
+      },
+      {
+        "group": "mrtk-unity-2",
+        "src": "./mrtk2",
+        "dest": "./mrtk2/",
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "exclude": [
+          "**/includes/**",
+          "**/docfx.json"
+        ]
       }
     ],
+    "groups": {
+      "mrtk-unity-2": {
+        "dest": "dest-mrtk2",
+        "moniker_range": "<= mrtkunity-2022-04"
+      }
+    },
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
@@ -55,18 +87,9 @@
       "feedback_product_url": "https://docs.microsoft.com/windows/mixed-reality/give-us-feedback"
     },
     "fileMetadata": {
-      "monikerRange": {
-        "./**/*.md": ">= mrtkunity-2021-01"
-      }
     },
     "template": [],
     "dest": "mrtk-unity",
     "markdownEngineName": "markdig",
-    "groups": {
-      "mrtk-unity-all-up": {
-        "dest": "temp-mrtk-unity",
-        "moniker_range": ">= mrtkunity-2021-01"
-      }
-    }
   }
 }
