@@ -1006,11 +1006,11 @@
 			"redirect_url": "/windows/mixed-reality/develop/unity/motion-controllers-in-unity",
 			"redirect_document_id": false
 		},
-		{
-			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/openxr-getting-started.md",
-			"redirect_url": "/windows/mixed-reality/develop/unity/xr-project-setup",
-			"redirect_document_id": true
-		},
+//		{
+//			"source_path": "mixed-reality-docs/mr-dev-docs/develop/unity/openxr-getting-started.md",
+//			"redirect_url": "/windows/mixed-reality/develop/unity/xr-project-setup",
+//			"redirect_document_id": true
+//		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/gaze-in-unity.md",
 			"redirect_url": "/windows/mixed-reality/develop/unity/gaze-in-unity",
@@ -1974,12 +1974,6 @@
 			"//": "COMMENT:",
 			"//a": "The content of the following section is:",
 			"//b": "MRTK-Unity"
-		},
-
-		{
-			"source_path": "mrtk-unity/install-the-tools.md",
-			"redirect_url": "/windows/mixed-reality/develop/install-the-tools",
-			"redirect_document_id": false
 		},
 
 		{	"source_path": "ignore",
