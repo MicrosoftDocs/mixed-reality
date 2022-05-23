@@ -96,7 +96,7 @@ but the file is actually there on the drive, then the issue is likely the path l
 git clone https://github.com/microsoft/MixedReality-WorldLockingTools-Unity.git d:\MyGit\wlt
 ```
 
-This path limit is generally not an issue with the World Locking Tools themselves, as they don't utilize a folder structure this is as deep.
+This path limit is generally not an issue with the World Locking Tools themselves, as they don't utilize a folder structure that is as deep.
 
 ## Adding World Locking Tools to a Unity project
 

@@ -64,12 +64,6 @@ Turnaround in this context means the time from sending pose/sensor data from the
 
 While on the main screen, you can say **"disable diagnostics"** to turn off diagnostics.
 
-## PC System Requirements
-
-* Your PC **must** be running the Windows 10 Anniversary Update or newer.
-* We recommend a GeForce GTX 970 or AMD Radeon R9 290 or better graphics card.
-* We recommend you connect your PC to your network via ethernet to reduce the number of Wireless hops.
-
 ## See Also
 
 * [Holographic Remoting overview](holographic-remoting-overview.md)

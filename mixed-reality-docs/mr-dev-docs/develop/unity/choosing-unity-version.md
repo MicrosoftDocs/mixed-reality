@@ -42,17 +42,14 @@ The best way to install and manage Unity is through the **Unity Hub**:
 Once you have Unity 2020.3 installed, get started creating a project or upgrading an existing project using the Mixed Reality OpenXR plugin:
 
 > [!div class="nextstepaction"]
-> [Set up your project with the OpenXR plugin](xr-project-setup.md?tabs=openxr)
+> [Set up a new OpenXR project with MRTK](new-openxr-project-with-mrtk.md)
 
 > [!NOTE]
-> While we recommend using OpenXR for all new projects, Unity 2020.3 LTS also supports the [Windows XR plugin](xr-project-setup.md?tabs=windowsxr). This plugin is fully supported, although it won't receive new features such as AR Foundation 4.0 support.
+> While we recommend using OpenXR for all new projects, Unity 2020.3 LTS also supports the [Windows XR plugin](new-openxr-project-with-mrtk.md). This plugin is fully supported, although it won't receive new features such as AR Foundation 4.0 support.
 
 ## Unity 2019.4 LTS
 
-If you need to use Unity 2019, you can use **Unity 2019 LTS with Legacy Built-in XR**. To get started with Legacy Built-in XR in Unity 2019.4 LTS, click here:
-
-> [!div class="nextstepaction"]
-> [Set up your project with Legacy Built-in XR](xr-project-setup.md?tabs=legacy)
+If you need to use Unity 2019, you can use **Unity 2019 LTS with Legacy Built-in XR**.
 
 > [!NOTE]
 > Unity has deprecated its Legacy Built-in XR support as of Unity 2019.  While Unity 2019 does offer a new XR Plug-in framework, Microsoft is not currently recommending that path in Unity 2019 due to Azure Spatial Anchors incompatibilities with AR Foundation 2.  In Unity 2020, Azure Spatial Anchors is supported within the XR Plug-in framework.
@@ -61,9 +58,9 @@ If you are developing apps for HoloLens (1st gen), these headsets remain support
 
 ## Unity 2021.2
 
-If you are trying out early **Unity 2021.2** builds, get started with the [**Mixed Reality OpenXR plugin**](xr-project-setup.md?tabs=openxr). The OpenXR plugin is the only path for mixed reality development in Unity 2021.2 and later, as the final Unity version to support the Windows XR plugin was Unity 2021.1.
+If you are trying out early **Unity 2021.2** builds, get started with the [**Mixed Reality OpenXR plugin**](new-openxr-project-with-mrtk.md). The OpenXR plugin is the only path for mixed reality development in Unity 2021.2 and later, as the final Unity version to support the Windows XR plugin was Unity 2021.1.
 
-Be sure to consult the [known blocking issues table](known-issues.md#blocking-issues-table) to ensure you avoid Unity 2021 builds with known blocking issues.
+Be sure to consult the [known blocking issues table](known-issues.md#active-blocking-issues) to ensure you avoid Unity 2021 builds with known blocking issues.
 
 ## Unity 2018.4 LTS
 
@@ -74,4 +71,5 @@ If you have a Unity 2018 project, you should consider planning for a migration f
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Set up your XR configuration](./xr-project-setup.md?tabs=openxr)
+> [Set up a new OpenXR project with MRTK](new-openxr-project-with-mrtk.md)
+> [Set up a new OpenXR project without MRTK](new-openxr-project-without-mrtk.md)

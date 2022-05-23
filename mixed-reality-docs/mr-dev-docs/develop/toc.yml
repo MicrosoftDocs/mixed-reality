@@ -103,12 +103,16 @@
                 href: unity/tutorials/mr-azure-312.md
               - name: HoloLens (1st gen) and Azure 313 - IoT Hub Service
                 href: unity/tutorials/mr-azure-301.md
-  - name: Setting up your project
+  - name: Set up your project
     items:
-    - name: Choosing a Unity version and XR plugin
+    - name: Choose a Unity version and XR plugin
       href: unity/choosing-unity-version.md
-    - name: Setting up your XR configuration 
-      href: unity/xr-project-setup.md
+    - name: Set up a new OpenXR project with MRTK 
+      href: unity/new-openxr-project-with-mrtk.md
+    - name: Set up a new OpenXR project without MRTK 
+      href: unity/new-openxr-project-without-mrtk.md
+    - name: Add the Mixed Reality OpenXR Plugin to your existing Unity project 
+      href: unity/mixed-reality-openxr-plugin.md       
     - name: Mixed Reality Feature Tool
       items:
         - name: Welcome to the MR Feature Tool
@@ -393,6 +397,8 @@
         href: native/openxr-getting-started.md
       - name: OpenXR best practices
         href: native/openxr-best-practices.md
+      - name: OpenXR cookbook
+        href: native/openxr-cookbook.md
       - name: OpenXR performance
         href: native/openxr-performance.md
       - name: OpenXR troubleshooting
