@@ -1098,7 +1098,7 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/persistence-in-unity.md",
-			"redirect_url": "/windows/mixed-reality/develop/unity/persistence-in-unity",
+			"redirect_url": "/windows/mixed-reality/develop/unity/spatial-anchors-in-unity",
 			"redirect_document_id": false
 		},
 		{
@@ -1920,8 +1920,8 @@
 		},
 		{
 			"source_path": "mixed-reality-docs/mr-dev-docs/voice-design.md",
-			"redirect_url": "/windows/mixed-reality/out-of-scope/voice-design",
-			"redirect_document_id": true
+			"redirect_url": "/windows/mixed-reality/design/voice-input",
+			"redirect_document_id": false
 		},
 
 		{	"source_path": "ignore",
