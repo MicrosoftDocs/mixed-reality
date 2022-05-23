@@ -2,7 +2,7 @@
 title: Updating from earlier versions
 description: Documentation to Migrate from lower version of MRTK.
 author: polar-kev
-ms.author: kesemple
+ms.author: kurtie
 ms.date: 04/19/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---

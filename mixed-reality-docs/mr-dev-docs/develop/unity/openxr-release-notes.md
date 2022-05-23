@@ -11,13 +11,6 @@ keywords: up-to-date, unity, openxr, unity release notes, openxr release notes, 
 
 # Mixed Reality OpenXR plugin release notes
 
-## 1.1.2 - 2021-10-27
-
-* Fixed a bug where Unity Editor sometimes cannot quit after an unsuccessful connection to Holographic Remoting player in Play Mode.
-* Update the OpenXR remoting runtime 2.7.1 release.
-
-## 1.1.1 - 2021-10-15
-
 The Mixed Reality OpenXR plugin releases and related notes are [available on GitHub](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples/releases).
 
 To receive notifications when a new version of the plugin is released:

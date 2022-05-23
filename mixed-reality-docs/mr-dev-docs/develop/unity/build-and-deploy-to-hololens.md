@@ -10,7 +10,7 @@ keywords: unity, visual studio, export, build, deploy, HoloLens, mixed reality h
 
 # Build and deploy to the HoloLens
 
-Before you build and deploy your project, make sure that you have already [set up your XR configuration and switched to the Universal Windows Platform](xr-project-setup.md).
+Before you build and deploy your project, make sure that you have already [set up your XR configuration and switched to the Universal Windows Platform](choosing-unity-version.md).
 
 ## Build the Unity project
 
@@ -19,7 +19,7 @@ Before you build and deploy your project, make sure that you have already [set u
 
     ![Screen shot of Unity build settings](images/023-build-settings.png)
 
-1. If you followed the instructions in the [Setting up your XR configuration ](xr-project-setup.md) article, you should have all the correct settings for a Universal Windows Platform build in place. As a reminder, here are the settings once again:
+1. If you followed the instructions in the [Set up a new OpenXR project with MRTK](new-openxr-project-with-mrtk.md) article, you should have all the correct settings for a Universal Windows Platform build in place. As a reminder, here are the settings once again:
 
     -Set **Target device** to *HoloLens*  
     -Set **Architecture** to *ARM 64*  

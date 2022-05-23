@@ -2,7 +2,7 @@
 title: Experimental features
 description: Document related to Experimental Features in the MRTK.
 author: polar-kev
-ms.author: kesemple
+ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---

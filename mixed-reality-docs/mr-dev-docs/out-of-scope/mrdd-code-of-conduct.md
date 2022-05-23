@@ -1,7 +1,8 @@
 ---
 layout: LandingPage
 title: Mixed Reality Dev Days
-description: Event page for Mixed Reality Dev Days
+description: Standard event guidelines and code of conduct for participation in Mixed Reality Dev Days.
+ms.custom: kr2b-contr-experiment
 author: jessemcculloch 
 ms.author: jemccull
 ms.date: 02/21/2020
@@ -9,7 +10,7 @@ ms.topic: article
 keywords: Mixed Reality, conference, summit, developer, HoloLens, HoloLens 2, Kinect
 ---
 
-![Mixed Reality Dev Days](../whats-new/images/MRDD/MRDevDaysBanner.png)  
+:::image type="icon" source="../whats-new/images/MRDD/MRDevDaysBanner.png":::
 
 # Code of Conduct and Microsoft Standard Event Guidelines
 

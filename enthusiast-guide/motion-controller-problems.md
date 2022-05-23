@@ -92,7 +92,7 @@ If you can see your controllers in the Mixed Reality home environment but not in
 
 Check the [Bluetooth questions section](motion-controller-problems.md#how-can-i-tell-if-im-using-bluetooth-technology). Poor Bluetooth link quality usually causes these problems.
 
-## I inserted fully charged batteries but the controller virtual battery level does not indicate that the controllers are fully charged or reports low battery levels
+## I inserted fully charged batteries but the controller virtual battery level does not indicate that the batteries are fully charged or reports low battery levels
 
 * Motion controller battery level is tuned for AA batteries that are rated for 1.5V. Some low voltage batteries may not report as full although they're fully charged.
 * Make sure your AA batteries are rated correctly and that the copper contacts are not obstructed and have access to the batteries. 
@@ -138,7 +138,7 @@ To return the motion controllers to their factory pairing, or to pair them with 
 * If the controllers turn on while you're using an external Bluetooth adapter, make sure the adapter is plugged into a USB 2.0 port (which is often, but not always, black), away from other wireless transmitters or USB flash drives. If it still doesn’t work, run the Bluetooth Troubleshooter in Settings > Update & Security > Troubleshoot > Bluetooth.
 * If you're using a Qualcomm adapter and the PC just crashed, restart the PC.
 * Try restarting the motion controllers that aren’t pairing, one at a time, then restart the PC.
-* The motion controller cache may be corrupt. To fix this problem, see these [steps](motion-controller-problems.md#motion-controller-leds-are-not-lit-but-the-buttons-and-thumbstick-still-work-in-mixed-reality-portal).
+* The motion controller cache may be corrupt. To fix this problem, see these [steps](motion-controller-problems.md#motion-controller-leds-are-not-lit-but-the-buttons-and-thumbstick-still-work).
 * If steps don't fix the problem, you should contact your retailer or equipment manufacturer for a replacement or exchange.
 
 ## My paired controllers don’t show up in the Mixed Reality Portal
