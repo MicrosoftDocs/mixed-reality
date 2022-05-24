@@ -18,7 +18,8 @@
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
-          "ThirdPartyNotices.md"
+          "ThirdPartyNotices.md",
+          "./mrtk2/**"
         ]
       },
       {
@@ -30,8 +31,16 @@
           "**/*.yml"
         ],
         "exclude": [
+          "**/obj/**",
           "**/includes/**",
-          "**/docfx.json"
+          "_themes/**",
+          "_themes.pdf/**",
+          "**/docfx.json",
+          "_repo.en-us/**",
+          "README.md",
+          "LICENSE",
+          "LICENSE-CODE",
+          "ThirdPartyNotices.md"
         ]
       }
     ],
@@ -50,7 +59,8 @@
           "_themes/**",
           "_themes.pdf/**",
           "**/docfx.json",
-          "_repo.en-us/**"
+          "_repo.en-us/**",
+          "./mrtk2/**"
         ]
       },
       {
@@ -63,17 +73,15 @@
           "**/*.gif"
         ],
         "exclude": [
+          "**/obj/**",
           "**/includes/**",
-          "**/docfx.json"
+          "_themes/**",
+          "_themes.pdf/**",
+          "**/docfx.json",
+          "_repo.en-us/**"
         ]
       }
     ],
-    "groups": {
-      "mrtk-unity-2": {
-        "dest": "dest-mrtk2",
-        "moniker_range": ">= mrtkunity-2021-01"
-      }
-    },
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
@@ -89,12 +97,17 @@
     },
     "fileMetadata": {
       "monikerRange": {
-        "./**/*.md": ">= mrtkunity-2021-01"
+        "./mrtk2/**/*.md": ">= mrtkunity-2021-01"
       }
-    },
     },
     "template": [],
     "dest": "mrtk-unity",
     "markdownEngineName": "markdig",
+    "groups": {
+      "mrtk-unity-2": {
+        "dest": "dest-mrtk2",
+        "moniker_range": ">= mrtkunity-2021-01"
+      }
+    }
   }
 }
