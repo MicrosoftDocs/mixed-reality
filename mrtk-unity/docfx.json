@@ -19,7 +19,7 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices.md",
-          "**/mrkt2/**"
+          "**./mrkt2/**"
         ]
       },
       {
@@ -60,7 +60,7 @@
           "_themes.pdf/**",
           "**/docfx.json",
           "_repo.en-us/**"
-          "**/mrkt2/**"
+          "**./mrkt2/**"
         ]
       },
       {
@@ -85,7 +85,6 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-//      "monikerRange": ">= mrtkunity-2021-01",
       "breadcrumb_path": "/windows/mixed-reality/mrtk-unity/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "uhfHeaderId": "MSDocsHeader-Hololens",
@@ -97,9 +96,9 @@
       "feedback_product_url": "https://docs.microsoft.com/windows/mixed-reality/give-us-feedback"
     },
     "fileMetadata": {
-//      "monikerRange": {
-//        "./mrtk2/**/*.md": ">= mrtkunity-2021-01"
-//      }
+      "monikerRange": {
+        "./mrtk2/**/*.md": ">= mrtkunity-2021-01"
+      }
     },
     "template": [],
     "dest": "mrtk-unity",
