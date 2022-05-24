@@ -95,7 +95,7 @@
     },
     "fileMetadata": {
       "monikerRange": {
-        "./**/*.md": ">= mrtkunity-2021-01"
+        "./mrtk2/**/*.md": ">= mrtkunity-2021-01"
       }
     },
     "template": [],
