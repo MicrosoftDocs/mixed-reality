@@ -60,7 +60,7 @@
           "_themes.pdf/**",
           "**/docfx.json",
           "_repo.en-us/**",
-          "./mrkt2/**"
+          "./mrtk2/**"
         ]
       },
       {
