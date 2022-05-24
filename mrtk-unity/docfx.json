@@ -58,8 +58,9 @@
         "src": "./mrtk2",
         "dest": "./mrtk2/",
         "files": [
-          "**/*.md",
-          "**/*.yml"
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.gif"
         ],
         "exclude": [
           "**/includes/**",
