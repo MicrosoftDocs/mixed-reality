@@ -88,6 +88,10 @@
       "feedback_product_url": "https://docs.microsoft.com/windows/mixed-reality/give-us-feedback"
     },
     "fileMetadata": {
+      "monikerRange": {
+        "./**/*.md": ">= mrtkunity-2021-01"
+      }
+    },
     },
     "template": [],
     "dest": "mrtk-unity",
