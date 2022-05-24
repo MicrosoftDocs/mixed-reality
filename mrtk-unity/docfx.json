@@ -80,12 +80,6 @@
         ]
       }
     ],
-    "groups": {
-      "mrtk-unity-2": {
-        "dest": "dest-mrtk2",
-        "moniker_range": ">= mrtkunity-2021-01"
-      }
-    },
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
@@ -101,12 +95,17 @@
     },
     "fileMetadata": {
       "monikerRange": {
-        "./mrtk2/**/*.md": ">= mrtkunity-2021-01"
+        "./**/*.md": ">= mrtkunity-2021-01"
       }
-    },
     },
     "template": [],
     "dest": "mrtk-unity",
     "markdownEngineName": "markdig",
+    "groups": {
+      "mrtk-unity-2": {
+        "dest": "dest-mrtk2",
+        "moniker_range": ">= mrtkunity-2021-01"
+      }
+    }
   }
 }
