@@ -83,6 +83,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "monikerRange": ">= mrtkunity-2021-01"
       "breadcrumb_path": "/windows/mixed-reality/mrtk-unity/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "uhfHeaderId": "MSDocsHeader-Hololens",
@@ -93,10 +94,10 @@
       "feedback_github_repo": "MicrosoftDocs/mixed-reality",
       "feedback_product_url": "https://docs.microsoft.com/windows/mixed-reality/give-us-feedback"
     },
-//    "fileMetadata": {
-//      "monikerRange": {
-//        "./mrtk2/**/*.md": ">= mrtkunity-2021-01"
-//      }
+    "fileMetadata": {
+      "monikerRange": {
+        "./mrtk2/**/*.md": ">= mrtkunity-2021-01"
+      }
     },
     "template": [],
     "dest": "mrtk-unity",
