@@ -19,7 +19,7 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices.md",
-          "**./mrkt2/**"
+          "./mrkt2/**"
         ]
       },
       {
