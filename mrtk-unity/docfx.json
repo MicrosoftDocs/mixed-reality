@@ -71,7 +71,7 @@
     "groups": {
       "mrtk-unity-2": {
         "dest": "dest-mrtk2",
-        "moniker_range": "<= mrtkunity-2022-04"
+        "moniker_range": ">= mrtkunity-2021-01"
       }
     },
     "overwrite": [],
