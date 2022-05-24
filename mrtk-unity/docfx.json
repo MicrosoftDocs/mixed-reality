@@ -83,7 +83,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "monikerRange": ">= mrtkunity-2021-01"
+      "monikerRange": ">= mrtkunity-2021-01",
       "breadcrumb_path": "/windows/mixed-reality/mrtk-unity/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "uhfHeaderId": "MSDocsHeader-Hololens",
