@@ -59,7 +59,7 @@
           "_themes/**",
           "_themes.pdf/**",
           "**/docfx.json",
-          "_repo.en-us/**"
+          "_repo.en-us/**",
           "**./mrkt2/**"
         ]
       },
