@@ -125,7 +125,7 @@
           href: unity/importing-features.md
         - name: Package details
           href: unity/viewing-package-details.md
-        - name: Reviewing changes
+        - name: Approve changes
           href: unity/reviewing-changes.md
   - name: Basic building blocks
     items:
