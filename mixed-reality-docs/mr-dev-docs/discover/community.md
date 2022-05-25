@@ -39,7 +39,7 @@ If you run a community that you would like included on this page, send an [email
 
 ## Microsoft MR Developer Ecosystem Team
 
-|||||
+|Team Member|About|Location|Email|
 |---------|---------|---------|---------|
 |![Daniel Escudero](images/BiographyImages/DanielEscudero_270x270.jpg)</br>**Daniel Escudero**</br>*MR Academy Lead Designer*|Interactive designer, prototyper, and coder, specialized in Mixed Reality, with over 15 years of interaction design experience. Currently designing and prototyping new Mixed Reality interactions, while creating workshops and hackathons with San Francisco Bay Area partners and the MR, VR, and AR communities. Mentor and speaker for Mixed Reality Design at multiple MR, VR, and AR events and lectures.|San Francisco, CA|[Email](mailto:daescu@microsoft.com)|
 |<!-- ![Daniel Gonzalez](images/BiographyImages/) --></br>**Daniel Gonzalez**</br>*Program Manager II*| |Redmond, WA|[Email](mailto:dgonza@microsoft.com)|
@@ -52,7 +52,7 @@ If you run a community that you would like included on this page, send an [email
 
 ## Microsoft MR Design Team, Developer Experience
 
-|||||
+|Team Member|About|Location|Email|
 |---------|---------|---------|---------|
 |![Yoon Park](images/BiographyImages/YoonPark_270x270.jpg)</br>**Yoon Park**</br>*Principal UX Designer*|Yoon is a designer, creative technologist, and author from Seoul, Korea. As a Principal UX Designer at Microsoft’s Mixed Reality design team, he's leading the design effort for the open-source Mixed Reality Toolkit(MRTK) project, Mixed Reality Design Labs(MRDL), and documentation. He shares his personal MR project design stories on [Medium](https://medium.com/@dongyoonpark/designing-type-in-space-for-hololens-2-4d926355d5b3). | Redmond, WA|[Twitter](https://twitter.com/cre8ivepark) [Medium](https://medium.com/@dongyoonpark) [LinkedIn](https://www.linkedin.com/in/cre8ivepark/) [Email](mailto:dongyoon.park@microsoft.com)|
 |![Cameron Micka](images/BiographyImages/CameronMicka_270x270.png)</br>**Cameron Micka**</br>*Senior Software Engineer*|Cameron Micka is a software engineer who takes pride in empowering developers to achieve their artistic and creative ambitions. Cameron joined Microsoft in 2016 after developing video games for nearly a decade at LucasArts Entertainment, Fun Bits Interactive, and his own startup. At Microsoft, Cameron’s role is to build tools for Mixed Reality developers and consult with partners and customers. | Redmond, WA|[Twitter](https://twitter.com/tcmicka) [Email](mailto:cameron.micka@microsoft.com)|
@@ -67,7 +67,7 @@ The charter of Azure Cloud Advocates is to help every technologist on the planet
 
 The members listed here are the Cloud Advocates that work on the Spatial Computing team within the Cloud Advocate organization. They work extremely close with the Mixed Reality Developer Ecosystem team, and it's often hard to tell where one team stops, and the other one starts.
 
-||||
+|Team Member|About|Twitter|
 |---------|---------|---------|
 |![April Speight](images/BiographyImages/april-speight_270x270.png)</br>**April Speight**</br>*Cloud Advocate*|I've been in the tech industry for 7 years after a career in luxury fashion as a menswear stylist and visual merchandiser. I love working with bots and voice enabled devices. However, I'm currently creating new realities within the world of spatial computing!</br>I like meeting new coders and people on their journey to transition into the tech industry. I provide advice and code tutorials on both my [website](https://www.vogueandcode.com/code) and [YouTube channel](https://www.youtube.com/c/vogueandcode). In my spare time, you can either find me crafting or scratching' on turntables!|[Twitter](https://twitter.com/vogueandcode)|
 |![Aysegul Yonet](images/BiographyImages/aysegul-yonet_270x270.jpg)</br>**Ayşegül Yönet**</br>*Sr. Cloud Advocate*|Ayşegül is a Senior Azure Cloud Developer Advocate at Microsoft and focuses on Spatial Computing, Mixed Reality, Cognitive Services, and Data Visualization. She's a co-chair of [W3C Immersive Web Working Group](https://www.w3.org/immersive-web/) and [Community Group](https://www.w3.org/community/immersive-web/) and a Google Developer Expert for Web Technologies. She co-hosts of [San Francisco WebXR Meetup](https://www.meetup.com/Web-VR/) and enjoys teaching at different non-profit organizations aiming to increase diversity in the software industry. She's the co-founder of **Code4Good**, an organization with the vision of helping people to contribute to open source. Previously she led Women Who Code meetups, Girl Develop It and Black Girls Code workshops and was a CTO at [AnnieCannons](https://www.anniecannons.com/), a bootcamp dedicated to teaching tech skills to human trafficking survivors. Lately she enjoys creating tutorials for [YouTube AysSomething Channel](https://www.youtube.com/channel/UCeo_soIgcgBSd3SVRbs_MPQ?view_as=subscriber) and [YouTube WebXR Channel](https://www.youtube.com/channel/UCNzjXKJVyqYVyPY8rGKwFtQ?view_as=subscriber).|[Twitter](https://twitter.com/AysSomething)|
@@ -82,7 +82,7 @@ The members listed here are the Cloud Advocates that work on the Spatial Computi
 
 Microsoft Most Valuable Professionals, or MVPs, are technology experts who passionately share their knowledge with the community. They're always on the "bleeding edge" and have an unstoppable urge to get their hands on new, exciting technologies. They have deep knowledge of Microsoft products and services, and can bring together diverse platforms, products, and solutions, to solve real world problems. MVPs make up a global community of over 4,000 technical experts and community leaders across 90 countries/regions, driven by their passion, community spirit, and quest for knowledge. Above all, MVPs are always willing to help others - that's what sets them apart.
 
-||||
+|Team Member|About|Email|
 |---------|---------|---------|
 |![Aleksandr Kudishov](images/BiographyImages/aleksandr_kudishov_270_270.png)</br>**Aleksandr Kudishov**</br>*Russia*|MVP focused on Game Development & Windows Development, VR/AR/MR. Game Producer, Tech Evangelist, Holographic Developer, MSP Lead of Game-Development.|[Email](mailto:draconifore@gmail.com)|
 |![Alexander Meijers](images/BiographyImages/AlexanderMeijers_270x270.png)</br>**Alexander Meijers**</br>*The Netherlands, Rijswijk*|A professional who inspires, motivates, and educates businesses on how to use emerging technologies using Virtual, Augmented, and Mixed Reality in their journey to digital innovation. He has a strong background on SharePoint, Office 365, and Microsoft Azure and is working with machine learning, artificial intelligence, and cognitive services. Primarily focused on manufacturing, construction, industry, logistics, and maritime/offshore, his goal is helping businesses to achieve more on creating, improving, smartening, and shortening of business processes by using services, apps, and devices like HoloLens and Kinect for Azure.|[Email](mailto:alexander@appzinside.com)|

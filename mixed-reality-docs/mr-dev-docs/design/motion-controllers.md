@@ -37,7 +37,7 @@ keywords: 6dof controllers, motion controllers, pairing, mixed reality headset, 
 <tr>
      <td><strong>Feature</strong></td>
      <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></td>
-     <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+     <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="/windows/mixed-reality/enthusiast-guide/immersive-headset-hardware-details"><strong>Immersive headsets</strong></a></td>
 </tr>
 <tr>
@@ -200,11 +200,11 @@ Apps that wish to treat positions differently based on tracking state may go fur
 </tr><tr>
 <td> <b>High accuracy</b> </td><td> &lt; 1.0 </td><td> High </td><td> true</td>
 </tr><tr>
-<td> <b>High accuracy (at risk of losing)</b> </td><td style="background-color: orange"> == 1.0 </td><td> High </td><td> true</td>
+<td> <b>High accuracy (at risk of losing)</b> </td><td> == 1.0 </td><td> High </td><td> true</td>
 </tr><tr>
-<td> <b>Approximate accuracy</b> </td><td style="background-color: orange"> == 1.0 </td><td style="background-color: orange"> Approximate </td><td> true</td>
+<td> <b>Approximate accuracy</b> </td><td> == 1.0 </td><td> Approximate </td><td> true</td>
 </tr><tr>
-<td> <b>No position</b> </td><td style="background-color: orange"> == 1.0 </td><td style="background-color: orange"> Approximate </td><td style="background-color: orange"> false</td>
+<td> <b>No position</b> </td><td> == 1.0 </td><td> Approximate </td><td> false</td>
 </tr>
 </table>
 

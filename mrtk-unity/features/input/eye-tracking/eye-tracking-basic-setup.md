@@ -112,6 +112,18 @@ Now that your scene is set up to use eye tracking, let's take a look at how to a
 
 Building your app with eye tracking should be similar to how you would compile other HoloLens 2 MRTK apps. Be sure that you have enabled the *'Gaze Input'* capability as described above in the section [*A note on the GazeInput capability*](#a-note-on-the-gazeinput-capability).
 
+#### Ensure project is configured for HoloLens 2
+
+Make sure you've properly configured your project by reviewing the configuration steps covered in [Set up an OpenXR project with MRTK](/windows/develop/unity/new-openxr-project-with-mrtk.md).
+
+Key points to think about:
+
+- Review key settings in the **Project Settings** window.
+  - Ensure Plugin Providers are set correctly
+- Resolve **warning triangles**.
+  - Interaction profiles should be set
+  - OpenXR Feature Groups should be properly selected
+
 #### Eye calibration
 
 Finally, please don't forget to run through the eye calibration on your HoloLens 2.

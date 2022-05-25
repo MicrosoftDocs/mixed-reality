@@ -25,10 +25,10 @@ Download the HoloLens Emulator.
 
 Versions:
 
-* [HoloLens 2 Emulator (Windows Holographic, version 22H1, 2202 May Update)](https://go.microsoft.com/fwlink/?linkid=2194584).
+* Download latest build from [HoloLens Emulator archive](hololens-emulator-archive.md) page.
 * [HoloLens Emulator (first Gen) and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2065980).
 
-You can find release notes and older builds of the HoloLens Emulator on the [HoloLens Emulator archive](hololens-emulator-archive.md) page.
+
 
 ### HoloLens Emulator system requirements
 
@@ -281,6 +281,8 @@ If your debug target list in Visual Studio is empty (for example, Start is the o
 
 If your system hangs when the emulator is starting, disable hardware acceleration for emulator graphics.
 * Create a registry DWORD value named "DisableGPU" at HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\XDE\10.0 and set its value to 1.
+
+If Hololens2 Emulator doesn't respond to input from your keyboard or mouse, try disabling your VPN connection. 
 
 ## See also
 * [Advanced HoloLens Emulator and Mixed Reality Simulator input](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)

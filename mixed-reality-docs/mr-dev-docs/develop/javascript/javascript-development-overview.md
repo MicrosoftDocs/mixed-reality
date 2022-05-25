@@ -25,7 +25,7 @@ Mixed Reality features are available on the web by the use of [WebXR](webxr-over
 
 The following list shows the JavaScript frameworks and APIs for building immersive experiences that currently dominate the market and are widely accepted and adopted by Mixed Reality JavaScript developers:
 
-|  |  |
+| Framework |Example  |
 | --- | --- |
 |[**Babylon.js**](https://doc.babylonjs.com/)<br/><br/> Babylon is a JavaScript 3D engine that makes developing 3D content and immersive applications easy. Before getting started with immersive applications, we recommend to learn the basics of Babylon.js development.<br/><br/>- Learn how to build 3D applications with babylon.js [Getting started](https://doc.babylonjs.com/start).<br/>- Play with 3D examples and their source code using babylon.js [Playground](https://doc.babylonjs.com/examples/)<br/>- Dive deeper into [WebXR](https://doc.babylonjs.com/divingDeeper/webXR)<br/>- Learn how to get started with our tutorials [Create your first "Hello World!" app](tutorials/babylonjs-webxr-helloworld/introduction-01.md)|![BabylonJS Logo](images/babylon.js.example.png) |
 |[**A-Frame**](https://aframe.io/) <br/><br/>A-frame is a declarative JavaScript framework to get started with Virtual Reality in the web. Check out the [A-Frame documentation](https://aframe.io/docs/1.2.0/introduction/) to learn more. |![A-Frame](images/a-frame.example.png)  |
