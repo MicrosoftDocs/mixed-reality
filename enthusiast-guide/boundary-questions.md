@@ -91,7 +91,7 @@ The device is taking too long to find the bounds. You can bypass this message by
 
 ### Why do I often see a message saying "I've lost my bounds"?
 
-The tracking system is having a hard time tracking and identifying your environment. In this state, the device can no longer display your bounds. The headset switches to three degrees of freedom (3DoF) to keep you from to bumping into things in the real world until it locates your bounds again. Try the following steps to fix the issue:
+The tracking system is having a hard time tracking and identifying your environment. In this state, the device can no longer display your bounds. The headset switches to three degrees of freedom (3DoF) to keep you from bumping into things in the real world until it locates your bounds again. Try the following steps to fix the issue:
 
 1. Make sure that the room has enough light.
 1. If you recently redecorated or remodeled the room, rerun setup.
