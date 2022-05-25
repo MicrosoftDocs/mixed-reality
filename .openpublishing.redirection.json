@@ -2252,6 +2252,11 @@
 			"redirect_document_id": false
 
 		},
+		{
+			"source_path": "enthusiast-guide/pc-compatibility.md",
+			"redirect_url": "/windows/mixed-reality/enthusiast-guide/get-help-with-pc-compatibility",
+			"redirect_document_id": false
+		},
 		{	"source_path": "ignore",
 			"redirect_url": "ignore",
 			"redirect_document_id": false,
