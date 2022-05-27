@@ -27,11 +27,11 @@ We have dramatically improved the our support for the OpenXR pipeline as of 2.8.
 
 ### Gaze + Pinch
 
-MRTK v2.8.0 now has support for an experimental new experimental UX components that have been requested by our partners and designers. [#10193](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10193)
+MRTK v2.8.0 added a new and experimental input method Gaze + Pinch. You can now target an object by looking at it and selecting it with a pinch gesture. [#10193](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10193)
 
 ### PinchSliderBox + PinchSpring
 
-MRTK v2.8.0 added two experimental new input method Gaze + Pinch. You can now target an object by looking at it and selecting it with a pinch gesture. [#6445](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6445)
+MRTK v2.8.0 now has support for two new experimental UX components that have been requested by our partners and designers. [#6445](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6445)
 
 ![Sample of PinchSliderBox running](https://user-images.githubusercontent.com/13305729/67987465-afb05a00-fbea-11e9-81fe-c323f2366b52.gif)
 
