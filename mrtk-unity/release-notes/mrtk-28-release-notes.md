@@ -23,7 +23,7 @@ While you are waiting for more, we hope that you enjoy MRTK 2.8.0's new features
 
 ### OpenXR support
 
-We have dramatically improved the our support for the OpenXR pipeline as of 2.8.0, specifically for Oculus Quest and other non-HoloLens devices! The [Microsoft OpenXR plugin](../../mixed-reality-docs/mr-dev-docs/develop/unity/openxr-release-notes.md) with the OpenXR pipeline is what we recommend for deploying your projects to HoloLens, Quest, and other platforms when using the latest versions of Unity 2020 LTS and Unity 2021 LTS. If you find any issues while using MRTK with the OpenXR pipeline, please [file an issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/) on our GitHub repository.
+We have dramatically improved the our support for the OpenXR pipeline as of 2.8.0, specifically for Oculus Quest and other non-HoloLens devices! The [Microsoft OpenXR plugin](https://aka.ms/openxr-unity-install) with the OpenXR pipeline is what we recommend for deploying your projects to HoloLens, Quest, and other platforms when using the latest versions of Unity 2020 LTS and Unity 2021 LTS. If you find any issues while using MRTK with the OpenXR pipeline, please [file an issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/) on our GitHub repository.
 
 ### Gaze + Pinch
 
@@ -67,7 +67,7 @@ MRTK 2.8.0 has a few improvements to our profiles. Managing gaze and pointer beh
 - HandTracking Profile Hand Mesh Refactor [#10608](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10608)
 - Make eye gaze capability setting in configurator more consistent with the current MRTK profile [#10525](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10525)
 - Fixed issue where hand joint lookup would throw dictionary exceptions for visualizers [#10574](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/100574)
-- Fix single-frame cursor flickering · Pull Request [#10436](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10436)
+- Fix single-frame cursor flickering [#10436](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10436)
 - Fixed issue where cursors would elongate in special circumstances [#10503](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10503)
 - Fixed issues where rayDistance and rayStepIndex were calculated incorrectly [#10506](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10506)
 
@@ -79,7 +79,7 @@ MRTK 2.8.0 has a few improvements to our profiles. Managing gaze and pointer beh
 - Fixing difference in hand ray pointing math between left and right hands [#10492](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10492)
 - PokePointer and TouchableVolume fix for packed scenes and nested set-ups [#10531](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10531)
 
-#### Engine and Plugin Improvements 
+#### Additional features, improvements and API Changes:
 
 - Adapt obsolete method/property usage for compatibility with Mixed Reality OpenXR 1.4.0 [#10524](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10524)
 - Add support for "select" voice command with Windows XR Plugin [#10533](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10533) 
@@ -88,19 +88,13 @@ MRTK 2.8.0 has a few improvements to our profiles. Managing gaze and pointer beh
 - Update TetheredPlacement.cs to use local pose [#10566](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10566) 
 - Pr fixes, Oculus Integration 39.0 compatibility [#10576](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10576)
 - Guard planefinding native DLL package calls only to Windows [#10595](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10595)
-
-#### Additional features and API Changes:
-
-- Refactor out OpenXRHandJointProvider [#10125](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10125)
-- Update usings to support OpenXR [#10176](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10176)
 - Moving Scene Query code out of the Focus Provider. Improved Sphere Pointer performance [#10146](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10146)
-- (changes API surface) Fix handness -> handedness [#10273](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10273)
+- (**Breaking**) Fix handness -> handedness [#10273](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10273)
 - Add synchronous CloseImmediate() functions to IProgressIndicator [#10323](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10323)
 - Unifying articulated hand visualizer scripts [#10555](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10555)
 - Make ObjectManipulator Start and OnPointerX functions Virtual [#9981](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9981)
 - Make the ObservedObjectParent public via the BaseSpatialObserver class [#9995](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9995)
 - Execution order/priority system for TransformConstraint [#10028](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10028)
-- Fixing protection level [#10032](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10032)
 - Add support for embedded packages in the dependency window [#10042](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10042)
 - Made Near Pointers usable on controllers. [#10059](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10059)
 - Introducing an enum and controlling the behavior [#10078](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10078)
