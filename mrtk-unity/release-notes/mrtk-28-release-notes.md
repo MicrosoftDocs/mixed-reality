@@ -85,7 +85,7 @@ MRTK v2.8.0 now has support for an experimental new input method Gaze + Pinch. Y
 - Add synchronous CloseImmediate() functions to IProgressIndicator [#10323](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10323)
 - Unifying articulated hand visualizer scripts [#10555](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10555)
 
-### Features from the MRTK 2.7.3 cutting-room floor
+### New Features
 
 - Make ObjectManipulator Start and OnPointerX functions Virtual [#9981](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9981)
 - Graduate Step Slider [#9983](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9983)
