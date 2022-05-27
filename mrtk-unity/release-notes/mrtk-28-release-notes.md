@@ -56,7 +56,7 @@ MRTK 2.8.0 now has a default controller and hand visualization for when a platfo
 - Controller model fallbacks [#10568](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10568)
 - Oculus visualization now integrated with MRTK [#10067](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10067)
 
-### MRTK 2.8.0 Bugfixes and Changes
+### MRTK 2.8.0 Improvements and Bugfixes
 
 #### Profile Improvements
 
@@ -79,7 +79,7 @@ MRTK 2.8.0 has a few improvements to our profiles. Managing gaze and pointer beh
 - Fixing difference in hand ray pointing math between left and right hands [#10492](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10492)
 - PokePointer and TouchableVolume fix for packed scenes and nested set-ups [#10531](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10531)
 
-#### Additional features, improvements and API Changes:
+#### Additional features, improvements and API changes:
 
 - Adapt obsolete method/property usage for compatibility with Mixed Reality OpenXR 1.4.0 [#10524](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10524)
 - Add support for "select" voice command with Windows XR Plugin [#10533](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10533) 
