@@ -9,7 +9,7 @@ ms.localizationpriority: high
 monikerRange: '>= mrtkunity-2022-05'
 ---
 
-# Microsoft Mixed Reality Toolkit 2.7 Release Notes
+# Microsoft Mixed Reality Toolkit 2.8.0 Release Notes
 
 ## What's new in 2.8.0
 
@@ -17,7 +17,7 @@ monikerRange: '>= mrtkunity-2022-05'
 
 The release of MRTK 2.8.0 brings in several bug fixes for community-filed issues as well as some new features that you, the MRTK community have requested! 
 
-With the next version of MRTK gleaming in the horizon, we want to remind everyone how important the MRTK community's contributions have been to shaping the MRTK into what it is today and what it is going to be in the future. We would love if you looked over the MRTK v3 section of the MRTK Roadmap as well as watch our [GDC 2022 Creating Cross-Platofrm Mixed Reality Expericenes panel](https://www.youtube.com/watch?v=8i3caXfE318&t=8s), and then bring your thoughts and ideas to the MRTK repository's [Discussions board](https://github.com/microsoft/MixedRealityToolkit-Unity/discussions) or [file a Feature Request issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/new?assignees=&labels=Feature+Request&template=feature-request.md&title=) and tag 'v3'! We are looking forward to sharing more v3 information with you in the near future and hearing your feedback.
+Today we would like to announce MRTK3 as the name that we will be calling the next version MRTK! With the next version of MRTK gleaming in the horizon, we want to remind everyone how important the MRTK community's contributions have been to shaping the MRTK into what it is today and what it is going to be in the future. We would love if you looked over the MRTK3 section of the MRTK Roadmap as well as watch our [GDC 2022 Creating Cross-Platofrm Mixed Reality Expericenes panel](https://www.youtube.com/watch?v=8i3caXfE318&t=8s), and then bring your thoughts and ideas to the MRTK repository's [Discussions board](https://github.com/microsoft/MixedRealityToolkit-Unity/discussions) or [file a Feature Request issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/new?assignees=&labels=Feature+Request&template=feature-request.md&title=) and tag 'MRTK3'! We are looking forward to sharing more MRTK3 information with you in the near future and hearing your feedback.
 
 While you are waiting for more, we hope that you enjoy MRTK 2.8.0's new features, performance improvements, and bug fixes! One last note from us before we dive into the release details. The MRTK is a collaborative project. Everyone that contributes to MRTK is forever remembered, with our thanks on our [Authors page](https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/contributing/authors?view=mrtkunity-2022-05). Without you the MRTK would not be as great as it is, so thank you to every individual that has helped shape MRTK into an amazing set of building blocks for VR and AR experiences!
 
@@ -29,7 +29,7 @@ We have dramatically improved the our support for the OpenXR pipeline as of 2.8.
 
 ### Performance Improvements
 
-Thanks to @jverral and @jonathoncobb for their help in making MRTK 2.8.0 run much smoother with their major performance improvements. 
+MRTK 2.8.0 runs significantly smoother with these major performance improvements. 
 
 - Don't do raycasts for the GazeProvider if it's behavior is set [#10340](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10340)
 - Better handling for excess proximity lights [#10241](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10241)
@@ -57,7 +57,7 @@ MRTK 2.8.0 now has a default controller and hand visualization for when a platfo
 
 ### Input Improvements 
 
-Thanks to the work of @ErianVazquez, MRTK v2.8.0 now has support for an experimental new input method Gaze + Pinch. You can now target an object by looking at it and selecting it with a pinch gesture.
+MRTK v2.8.0 now has support for an experimental new input method Gaze + Pinch. You can now target an object by looking at it and selecting it with a pinch gesture.
 
 - *2.7.3 cutting-room floor* Feature/look and pinch [#10193](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10193)
 - Input Source Parent no longer cached [#10561](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10561)
@@ -78,12 +78,12 @@ Thanks to the work of @ErianVazquez, MRTK v2.8.0 now has support for an experime
 
 ## API Changes:
 
-- *2.7.3 cutting-room floor* Refactor out OpenXRHandJointProvider by keveleigh · Pull Request #10125](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/)
-- *2.7.3 cutting-room floor* Update usings to support OpenXR by keveleigh · Pull Request #10176](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/)
-- *2.7.3 cutting-room floor* Moving Scene Query code out of the Focus Provider. Improved Sphere Pointer performance by RogPodge · Pull Request #10146](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/)
-- *2.7.3 cutting-room floor* (changes API surface) Fix handness -> handedness by keveleigh · Pull Request #10273](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/)
-- Add synchronous CloseImmediate() functions to IProgressIndicator by jonathoncobb · Pull Request #10323](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/)
-- Unifying articulated hand visualizer scripts by RogPodge · Pull Request #10555](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/)
+- *2.7.3 cutting-room floor* Refactor out OpenXRHandJointProvider [#10125](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10125)
+- *2.7.3 cutting-room floor* Update usings to support OpenXR [#10176](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10176)
+- *2.7.3 cutting-room floor* Moving Scene Query code out of the Focus Provider. Improved Sphere Pointer performance [#10146](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10146)
+- *2.7.3 cutting-room floor* (changes API surface) Fix handness -> handedness [#10273](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10273)
+- Add synchronous CloseImmediate() functions to IProgressIndicator [#10323](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10323)
+- Unifying articulated hand visualizer scripts [#10555](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10555)
 
 ### Features from the MRTK 2.7.3 cutting-room floor
 
