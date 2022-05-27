@@ -37,7 +37,7 @@ MRTK 2.8.0 runs significantly smoother with these major performance improvements
 
 ### Profile Improvements
 
-MRTK 2.8.0 has a few improvements to our input system. Managing gaze and pointer behavior should be much easier now.
+MRTK 2.8.0 has a few improvements to our profiles. Managing gaze and pointer behavior should be much easier now.
 
 - Pointer profile layer mask rework by RogPodge [#10508](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10508)
 - Clarifying raycast layermask descriptions and fixed teleport pointer overloading definitions [#10507](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10507)
