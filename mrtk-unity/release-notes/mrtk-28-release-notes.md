@@ -46,10 +46,10 @@ MRTK 2.8.0 has a few improvements to our profiles. Managing gaze and pointer beh
 
 ### Visualization Improvements
 
-MRTK 2.8.0 now has a default controller and hand visualization for when a platform does not provide any controller or hand visualizations. We have also integrated the Oculus visualizations into MRTK! With the Microsoft OpenXR package, you do not need to import the Oculus Integration package to have the Oculus hand or controller visualizations.
+MRTK 2.8.0 now has a default controller and hand visualization for when a platform does not provide any controller or hand visualizations. With the Microsoft OpenXR package, you do not need to import the Oculus Integration package to have the Oculus hand or controller visualizations.
 
 - Controller model fallbacks [#10568](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10568)
-- *2.7.3 cutting-room floor* Oculus visualization now integrated with MRTK [#10067](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10067)
+- Oculus visualization now integrated with MRTK [#10067](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10067)
 - Fixed issue where hand joint lookup would throw dictionary exceptions for visualizers [#10574](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/100574)
 - Fix single-frame cursor flickering by jloehr · Pull Request [#10436](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10436)
 - Fixed issue where cursors would elongate in special circumstances [#10503](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10503)
@@ -59,7 +59,7 @@ MRTK 2.8.0 now has a default controller and hand visualization for when a platfo
 
 MRTK v2.8.0 now has support for an experimental new input method Gaze + Pinch. You can now target an object by looking at it and selecting it with a pinch gesture.
 
-- *2.7.3 cutting-room floor* Feature/look and pinch [#10193](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10193)
+- Feature/look and pinch [#10193](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10193)
 - Input Source Parent no longer cached [#10561](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10561)
 - Fixed issue where gaze provider gets forcibly reset on profile modification [#10510](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10510)
 - Fixed inconsistent interaction behavior for overlapping objects [#10188](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10188)
@@ -78,25 +78,25 @@ MRTK v2.8.0 now has support for an experimental new input method Gaze + Pinch. Y
 
 ## API Changes:
 
-- *2.7.3 cutting-room floor* Refactor out OpenXRHandJointProvider [#10125](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10125)
-- *2.7.3 cutting-room floor* Update usings to support OpenXR [#10176](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10176)
-- *2.7.3 cutting-room floor* Moving Scene Query code out of the Focus Provider. Improved Sphere Pointer performance [#10146](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10146)
-- *2.7.3 cutting-room floor* (changes API surface) Fix handness -> handedness [#10273](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10273)
+- Refactor out OpenXRHandJointProvider [#10125](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10125)
+- Update usings to support OpenXR [#10176](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10176)
+- Moving Scene Query code out of the Focus Provider. Improved Sphere Pointer performance [#10146](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10146)
+- (changes API surface) Fix handness -> handedness [#10273](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10273)
 - Add synchronous CloseImmediate() functions to IProgressIndicator [#10323](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10323)
 - Unifying articulated hand visualizer scripts [#10555](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10555)
 
 ### Features from the MRTK 2.7.3 cutting-room floor
 
-- *2.7.3 cutting-room floor* Make ObjectManipulator Start and OnPointerX functions Virtual [#9981](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9981)
-- *2.7.3 cutting-room floor* Graduate Step Slider [#9983](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9983)
-- *2.7.3 cutting-room floor* Make the ObservedObjectParent public via the BaseSpatialObserver class [#9995](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9995)
-- *2.7.3 cutting-room floor* Execution order/priority system for TransformConstraint [#10028](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10028)
-- *2.7.3 cutting-room floor* Fixing protection level [#10032](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10032)
-- *2.7.3 cutting-room floor* Add support for embedded packages in the dependency window [#10042](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10042)
-- *2.7.3 cutting-room floor* Made Near Pointers usable on controllers. [#10059](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10059)
-- *2.7.3 cutting-room floor* Introducing an enum and controlling the behavior [#10078](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10078)
-- *2.7.3 cutting-room floor* Added option to only have slider sounds play during manipulation [#10081](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10081)
-- *2.7.3 cutting-room floor* MRTK TMP Sprite shader addition [#10096](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10096)
+- Make ObjectManipulator Start and OnPointerX functions Virtual [#9981](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9981)
+- Graduate Step Slider [#9983](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9983)
+- Make the ObservedObjectParent public via the BaseSpatialObserver class [#9995](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9995)
+- Execution order/priority system for TransformConstraint [#10028](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10028)
+- Fixing protection level [#10032](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10032)
+- Add support for embedded packages in the dependency window [#10042](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10042)
+- Made Near Pointers usable on controllers. [#10059](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10059)
+- Introducing an enum and controlling the behavior [#10078](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10078)
+- Added option to only have slider sounds play during manipulation [#10081](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10081)
+- MRTK TMP Sprite shader addition [#10096](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10096)
 
 ### Experimental Features:
 
@@ -108,8 +108,8 @@ MRTK v2.8.0 now has support for an experimental new input method Gaze + Pinch. Y
 - MRTK Logo updates [#10011](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10011)
 - Example scene logo size update [#10048](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10048)
 - Adding the scene reorientation functionality [#10100](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10100)
-- *2.7.3 cutting-room floor* Update assembly name to match MRTK standards [#10129](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10129)
-- *2.7.3 cutting-room floor* Assign missing test icon [#10317](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10317)
+- Update assembly name to match MRTK standards [#10129](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10129)
+- Assign missing test icon [#10317](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10317)
 - Refacotring the controller folder for path length considerations [#10609](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10609)
 
 ### Readme changes
