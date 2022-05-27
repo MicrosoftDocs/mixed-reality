@@ -55,11 +55,14 @@ MRTK 2.8.0 now has a default controller and hand visualization for when a platfo
 - Fixed issue where cursors would elongate in special circumstances [#10503](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10503)
 - Fixed issues where rayDistance and rayStepIndex were calculated incorrectly [#10506](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10506)
 
-### Input Improvements 
+### Gaze + Pinch
 
 MRTK v2.8.0 now has support for an experimental new input method Gaze + Pinch. You can now target an object by looking at it and selecting it with a pinch gesture.
 
 - Feature/look and pinch [#10193](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10193)
+
+### Input Improvements 
+
 - Input Source Parent no longer cached [#10561](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10561)
 - Fixed issue where gaze provider gets forcibly reset on profile modification [#10510](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10510)
 - Fixed inconsistent interaction behavior for overlapping objects [#10188](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10188)
@@ -111,13 +114,3 @@ MRTK v2.8.0 now has support for an experimental new input method Gaze + Pinch. Y
 - Update assembly name to match MRTK standards [#10129](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10129)
 - Assign missing test icon [#10317](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10317)
 - Refacotring the controller folder for path length considerations [#10609](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10609)
-
-### Readme changes
-
-- Moved Docs information to 'Documentation' section. [#9934](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9934)
-- Update README [#10044](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10044)
-- Updated MRTK Release Notes link to current release [#10185](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10185)
-- Fix Ultraleap Hand Tracking 404 link [#10243](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10243)
-- Adding AWE 2021 Auggie Awards Banner [#10314](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10314)
-- Fix link of Surfaces sample app by [#10332](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10332)
-- Updating AWE 2021 Auggie Awards Banner based on the official graphics [#10336](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10336)
