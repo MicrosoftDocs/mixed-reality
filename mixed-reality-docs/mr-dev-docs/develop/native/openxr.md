@@ -86,7 +86,7 @@ Microsoft’s current recommended Unity configuration for HoloLens 2 and Windows
 
 If you are developing for HoloLens (1st gen), you'll need to continue using **Unity 2019.4 LTS** with the legacy WinRT API backend.  If you’re targeting the new HP Reverb G2 controller in a Unity 2019 app, see our [HP Reverb G2 input docs](../unity/unity-reverb-g2-controllers.md).
 
-Starting in **Unity 2021.2**, OpenXR will be the only supported Unity backend for targeting HoloLens 2 and Windows Mixed Reality headsets.
+Starting in **Unity 2021.3 LTS**, OpenXR will be the only supported Unity backend for targeting HoloLens 2 and Windows Mixed Reality headsets.
 
 ### OpenXR in Unreal Engine
 
