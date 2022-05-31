@@ -14,37 +14,35 @@ A `HoverLight` is a [Fluent Design System](https://www.microsoft.com/design/flue
 
 For a material to be influenced by a `HoverLight` the *Graphics Tools/Standard* shader must be used and the *Hover Light* property must be enabled.
 
-> [!Note]
-> The *Graphics Tools/Standard* shader supports up to two `HoverLight`s by default, but will scale to support four and then ten as more lights are added to the scene.
+>[!Note]
+> The *Graphics Tools/Standard* shader supports up to two `HoverLight`s by default, but will scale to support four as more lights are added to the scene.
 
 ## Advanced Usage
 
-Only ten `HoverLight`s can illuminate a [material](https://docs.unity3d.com/ScriptReference/Material.html) at a time. If your project requires more than ten `HoverLight`s to influence a [material](https://docs.unity3d.com/ScriptReference/Material.html) the sample code below demonstrates how to achieve this.
+Only four `HoverLight`s can illuminate a [material](https://docs.unity3d.com/ScriptReference/Material.html) at a time. If your project requires more than four `HoverLight`s to influence a [material](https://docs.unity3d.com/ScriptReference/Material.html) the sample code below demonstrates how to achieve this.
 
-> [!Note]
+>[!Note]
 > Having many `HoverLight`s illuminate a [material](https://docs.unity3d.com/ScriptReference/Material.html) will increase pixel shader instructions and will impact performance. **Please profile these changes within your project.**
 
 *How to increase the number of available `HoverLight`s
- from ten to twelve.*
+ from four to ten.*
 
 ```C#
-// 1) Within GraphicsToolsStandardProgram.cginc change:
+// 1) Within GraphicsToolsStandardInput.hlsl change:
 
-#if defined(_HOVER_LIGHT_HIGH)
-#define HOVER_LIGHT_COUNT 10
+#define HOVER_LIGHT_COUNT 4
 
 // to:
 
-#if defined(_HOVER_LIGHT_HIGH)
-#define HOVER_LIGHT_COUNT 12
+#define HOVER_LIGHT_COUNT 10
 
 // 2) Within HoverLight.cs change:
 
-private const int hoverLightCountHigh = 10;
+private const int hoverLightCount = 4;
 
 // to:
 
-private const int hoverLightCountHigh = 12;
+private const int hoverLightCount = 10;
 ```
 
 > [!NOTE]

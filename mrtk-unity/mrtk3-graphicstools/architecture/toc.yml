@@ -5,5 +5,3 @@ items:
   href: mrdl-mrgt.md
 - name: Connection between Mixed Reality Toolkit to Mixed Reality Graphics Tools
   href: mrgt-mrtk.md
-- name: When/Why Certain materials/meshes Are Used
-  href: meshes-materials.md
