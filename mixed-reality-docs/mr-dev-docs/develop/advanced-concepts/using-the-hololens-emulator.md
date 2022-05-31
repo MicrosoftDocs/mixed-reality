@@ -25,10 +25,10 @@ Download the HoloLens Emulator.
 
 Versions:
 
-* [HoloLens 2 Emulator (Windows Holographic, version 22H1, 2202 May Update)](https://go.microsoft.com/fwlink/?linkid=2194584).
+* Download latest build from [HoloLens Emulator archive](hololens-emulator-archive.md) page.
 * [HoloLens Emulator (first Gen) and holographic project templates](https://go.microsoft.com/fwlink/?linkid=2065980).
 
-You can find release notes and older builds of the HoloLens Emulator on the [HoloLens Emulator archive](hololens-emulator-archive.md) page.
+
 
 ### HoloLens Emulator system requirements
 
