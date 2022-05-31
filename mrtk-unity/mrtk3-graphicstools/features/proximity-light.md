@@ -1,7 +1,7 @@
 ---
 title: Mixed Reality Graphics Tools Standard Shader
 description: Learn about the Graphics Tools Standard Shader.
-author: tayo-madein
+author: tayomadein
 ms.author: omadein
 ms.date: 05/05/2022
 ms.localizationpriority: high

@@ -1,7 +1,7 @@
 ---
 title: Authors
 description:  List of Mixed Reality Graphics Tools Authors
-author: tayo-madein
+author: tayomadein
 ms.author: omadein
 ms.date: 05/05/2022
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,  Graphics Tools, MRGT, MR Graphics Tools, C#, Contributors, Community
