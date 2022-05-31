@@ -1,7 +1,5 @@
 - name: Welcome to MR Graphics Tools
   href: index.md
-- name: Example Scenes
-  href: example-scenes/toc.yml
 - name: Architecture overview
   href: architecture/toc.yml
 - name: Feature overviews

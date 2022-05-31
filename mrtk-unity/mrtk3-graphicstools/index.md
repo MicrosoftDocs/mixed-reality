@@ -10,7 +10,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 
 # What is the Mixed Reality Graphics Tools
 
-![Graphics Tools](images/GraphicsToolsBannerRounded.png)
+![MRTK Banner](images/MRTKBanner.png)
 
 Graphics tools and components for developing Mixed Reality applications in Unity.
 
