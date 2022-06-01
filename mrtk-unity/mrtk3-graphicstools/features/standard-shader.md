@@ -12,17 +12,60 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 
 ![Standard shader examples](images/StandardShader/StandardShader.jpg)
 
-The Graphics Tools Standard shading system utilizes a single, flexible shader that can achieve visuals similar to Unity's Standard Shader, implement [Fluent Design System](https://www.microsoft.com/design/fluent/) principles, and remain performant on mixed reality devices.
+The Graphics Tools Standard shading system utilizes a flexible shader that can achieve visuals similar to Unity's Standard (or Lit) shader, implement [Fluent Design System](https://www.microsoft.com/design/fluent/) principles, and remain performant on mixed reality devices.
+
+## Sample
+
+See the "Material Gallery" sample for multiple demonstrations of `Graphics Tools/Standard` shader variants. For examples of `Graphics Tools/Standard Canvas` please see the "UnityUI" sample.
 
 ## Architecture
 
 The Graphics Tools/Standard shading system is an "uber shader" that uses [Unity's shader program variant feature](https://docs.unity3d.com/Manual/SL-MultipleProgramVariants.html) to auto-generate optimal shader code based on material properties. When a user selects material properties in the material inspector, they only incur performance cost for features they have enabled.
 
+To better support traditional Unity workflows and [UnityUI](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/index.html) (canvas) workflows the Graphics Tools/Standard shading system has two shader entry points:
+
+|        | Default                 | UnityUI                        |
+|--------|-------------------------|--------------------------------|
+| Name   | Graphics Tools/Standard | Graphics Tools/Standard Canvas |
+| Shader | GraphicsToolsStandard   | GraphicsToolsStandardCanvas    |
+
+Both shaders are mostly identical because they share common shader code includes. The `Graphics Tools/Standard Canvas` contains some extra logic specific to UnityUI.
+
+The following shader includes power the Graphics Tools/Standard shading system:
+
+| Include                          | Purpose                                                                                                                                               |
+|----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| GraphicsToolsStandardProgram     | Contains the vertex and fragment shader entry point methods (the core implementation).                                                                |
+| GraphicsToolsStandardMetaProgram | Contains the vertex and fragment shader entry point methods used by Unity for static lighting (not used at runtime).                                  |
+| GraphicsToolsStandardInput       | Definitions for vertex attributes, vertex interpolators, textures, texture samplers, per material constant buffers, global properties, and constants. |
+| GraphicsToolsCommon              | Reusable methods and defines.                                                                                                                         |
+
+## Scriptable render pipeline support
+
+TODO
+
+## UnityUI support
+
+The Graphics Tools Standard shading system works with Unity's built in [UI system](https://docs.unity3d.com/Manual/UISystem.html). On Unity UI components, the unity_ObjectToWorld matrix is not the transformation matrix of the local transform the Graphic component lives on but that of its parent Canvas. Many Graphics Tools/Standard shader effects require object scale to be known. To solve this issue, the `ScaleMeshEffect.cs` will store scaling information into UV channel attributes during UI mesh construction.
+
+Note, when using a Unity Image component, it is recommended to specify "None (Sprite)" for the Source Image to prevent Unity UI from generating extra vertices.
+
+A Canvas within Graphics Tools will prompt for the addition of a `ScaleMeshEffect.cs` when one is required:
+
+![scale mesh effect](images/StandardShader/ScaleMeshEffect.jpg)
+
 ## Material inspector
 
 A custom material inspector exists for the Graphics Tools/Standard shader called `StandardShaderGUI.cs`. The inspector automatically enables/disables shader features, based on user selection and aides in setting up render state. For more information about each feature **please hover over each property in the Unity Editor for a tooltip.**
 
+> [!NOTE]
+> The inspector UI is dynamic. Portions of the UI will change as features are enabled and disabled.
+
 ![Material Inspector](images/StandardShader/MaterialInspector.jpg)
+
+The inspector can be broken into a handful of features areas as described below.
+
+### Rendering mode
 
 The first portion of the inspector controls the material's render state. *Rendering Mode* determines when and how a material will be rendered. The aim of the Graphics Tools/Standard shader is to mirror the [rendering modes found in the Unity/Standard shader](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html). The Graphics Tools/Standard shader also includes an *Additive* rendering mode and *Custom* rendering mode for complete user control.
 
@@ -37,15 +80,44 @@ The first portion of the inspector controls the material's render state. *Render
 
 ![Rendering Modes](images/StandardShader/RenderingModes.jpg)
 
+### Cull mode
+
 | Cull Mode |             Description                                                                                                                                                                       |
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Off       | Disables face culling. Culling should only be set to Off when a two sided mesh is required.                                                                                        |
 | Front     | Enables front face culling.                                                                                                                                                        |
 | Back      | (Default) Enables [back face culling](https://en.wikipedia.org/wiki/Back-face_culling). Back face culling should be enabled as often as possible to improve rendering performance. |
 
-## Performance
+### Main maps
 
-One of the primary advantages to using the Graphics Tools Standard shader over the Unity standard shader is performance. The Graphics Tools Standard Shader is extensible to only utilize the features enabled. However, the Graphics Tools Standard shader has also been written to deliver comparable aesthetic results as the Unity Standard shader, but at a much lower cost. One simple way to compare shader performance is via the number of operations that needs to be performed on the GPU. Of course, the magnitude of calculations may fluctuate by features enabled and other rendering configurations. But, in general, the Graphics Tools Standard shader performs significantly less computation than the Unity Standard shader.
+TODO
+
+To improve parity with the Unity Standard shader per pixel metallic, smoothness, emissive, and occlusion values can all be controlled via [channel packing](http://wiki.polycount.com/wiki/ChannelPacking).
+
+When you use channel packing, you only have to sample and load one texture into memory instead of four separate ones. When you write your texture maps in a program like Substance or Photoshop, you can hand pack them like the following:
+
+| Channel | Property             |
+|---------|----------------------|
+| Red     | Metallic             |
+| Green   | Occlusion            |
+| Blue    | Emission (Greyscale) |
+| Alpha   | Smoothness           |
+
+Triplanar mapping is a technique to programmatically texture a mesh. Often used in terrain, meshes without UVs, or difficult to unwrap shapes. This implementation supports world or local space projection, the specification of blending smoothness, and normal map support. Note, each texture used requires 3 texture samples, so use sparingly in performance critical situations.
+
+### Rendering options
+
+TODO
+
+### Fluent options
+
+TODO
+
+### Advanced options
+
+TODO
+
+Built in configurable stencil test support to achieve a wide array of effects. Such as portals.
 
 ## Lighting
 
@@ -63,74 +135,16 @@ The shader will use Light Probes to approximate lights in the scene using [Spher
 
 For static lighting, the shader will respect lightmaps built by Unity's [Lightmapping system](https://docs.unity3d.com/Manual/Lightmapping.html). Simply mark the renderer as static (or lightmap static) to use lightmaps.
 
-## UGUI support
+## Performance
 
-The Graphics Tools Standard shading system works with Unity's built in [UI system](https://docs.unity3d.com/Manual/UISystem.html). On Unity UI components, the unity_ObjectToWorld matrix is not the transformation matrix of the local transform the Graphic component lives on but that of its parent Canvas. Many Graphics Tools/Standard shader effects require object scale to be known. To solve this issue, the `ScaleMeshEffect.cs` will store scaling information into UV channel attributes during UI mesh construction.
+One of the primary advantages to using the Graphics Tools Standard shader over the Unity standard shader is performance. The Graphics Tools Standard Shader is extensible to only utilize the features enabled. However, the Graphics Tools Standard shader has also been written to deliver comparable aesthetic results as the Unity Standard shader, but at a much lower cost. One simple way to compare shader performance is via the number of operations that needs to be performed on the GPU. The magnitude of calculations may fluctuate by features enabled and other rendering configurations.
 
-Note, when using a Unity Image component, it is recommended to specify "None (Sprite)" for the Source Image to prevent Unity UI from generating extra vertices.
-
-A Canvas within Graphics Tools will prompt for the addition of a `ScaleMeshEffect.cs` when one is required:
-
-![scale mesh effect](images/StandardShader/ScaleMeshEffect.jpg)
-
-## Texture combining
-
-To improve parity with the Unity Standard shader per pixel metallic, smoothness, emissive, and occlusion values can all be controlled via [channel packing](http://wiki.polycount.com/wiki/ChannelPacking).
-
-When you use channel packing, you only have to sample and load one texture into memory instead of four separate ones. When you write your texture maps in a program like Substance or Photoshop, you can hand pack them like the following:
-
-| Channel | Property             |
-|---------|----------------------|
-| Red     | Metallic             |
-| Green   | Occlusion            |
-| Blue    | Emission (Greyscale) |
-| Alpha   | Smoothness           |
-
-## Additional feature documentation
-
-Below are extra details on a handful of feature details available with the Graphics Tools/Standard shader.
-
-### Mesh outlines
-
-Many mesh outline techniques are done using a [post processing](https://docs.unity3d.com/Manual/PostProcessingOverview.html) technique. Post processing provides great quality outlines, but can be prohibitively expensive on many Mixed Reality devices.
-
-<img src="images/StandardShader/MeshOutline.jpg" width="900" alt="Mesh Outline">
-
-`MeshOutline.cs` and `MeshOutlineHierarchy.cs` can be used to render an outline around a mesh renderer. Enabling this component introduces an additional render pass of the object being outlined, but is designed to run performantly on mobile Mixed Reality devices and does not utilize any post processes. Limitations of this effect include it not working well on objects which are not watertight (or required to be two sided) and depth sorting issues can occur on overlapping objects.
-
-The outline behaviors are designed to be used in conjunction with the Graphics Tools/Standard shader. Outline materials are usually a solid unlit color, but can be configured to achieve a wide array of effects. The default configuration of a outline material is as follows:
-
-<img src="images/StandardShader/OutlineMaterial.jpg" width="450" alt="Mesh Outline Material">
-
-1. Depth Write - should be disabled for outline materials to make sure the outline does not prevent other objects from rendering.
-2. Vertex Extrusion - needs to be enabled to render the outline.
-3. Use Smooth Normals - this setting is optional for some meshes. Extrusion occurs by moving a vertex along a vertex normal, on some meshes extruding along the default normals will cause discontinuities in the outline. To fix these discontinuities, you can check this box to use another set of smoothed normals which get generated by `MeshSmoother.cs`.
-
-`MeshSmoother.cs` is a component which can be used to automatically generate smoothed normals on a mesh. This method groups vertices in a mesh that share the same location in space then averages the normals of those vertices. This process creates a copy of the underlying mesh and should be used only when required.
-
-<img src="images/StandardShader/SmoothNormals.jpg" width="450" alt="Smooth Normals Outline">
-
-1. Smooth normals generated via `MeshSmoother.cs`.
-2. Default normals used, notice the artifacts around the cube corners.
-
-### Stencil testing
-
-Built in configurable stencil test support to achieve a wide array of effects. Such as portals.
-
-### Triplanar mapping
-
-Triplanar mapping is a technique to programmatically texture a mesh. Often used in terrain, meshes without UVs, or difficult to unwrap shapes. This implementation supports world or local space projection, the specification of blending smoothness, and normal map support. Note, each texture used requires 3 texture samples, so use sparingly in performance critical situations.
-
-### Dynamic Albedo Assignment
-
-A checkbox to control albedo optimizations. As an optimization albedo operations are disabled when no albedo texture is specified. This is useful for controlling [remote texture loading](http://dotnetbyexample.blogspot.com/2018/10/workaround-remote-texture-loading-does.html).
-
-Simply check this box:
-
-![albedo assignment](images/StandardShader/AlbedoAssignment.jpg)
+> [!TIP]
+> As a rule of thumb, you should use the Graphics Tools Standard shader over built-in shaders on mobile mixed reality devices. But, it is always wise to profile your scenario with tools like [RenderDoc](https://docs.unity3d.com/Manual/RenderDocIntegration.html).
 
 ## See also
 
 * [Hover Light](hover-light.md)
 * [Proximity Light](proximity-light.md)
 * [Clipping Primitive](clipping-primitive.md)
+* [Mesh Outlines](mesh-outlines.md)
