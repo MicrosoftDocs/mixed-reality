@@ -40,19 +40,29 @@ The following shader includes power the Graphics Tools/Standard shading system:
 | GraphicsToolsStandardInput       | Definitions for vertex attributes, vertex interpolators, textures, texture samplers, per material constant buffers, global properties, and constants. |
 | GraphicsToolsCommon              | Reusable methods and defines.                                                                                                                         |
 
-## Scriptable render pipeline support
+## Render pipeline support
 
-TODO
+Unity has a handful of [render pipelines](https://docs.unity3d.com/Manual/render-pipelines-overview.html) for developers to pick from. The Graphics Tools Standard shading system is designed to work automatically with Unity's built-in render pipeline or [Universal Render Pipeline](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@11.0/manual/)(URP). There is no need to switch shaders based on pipeline. Below is a support matrix:
+
+| Pipeline                               | Supported | Exceptions                                    |
+|----------------------------------------|-----------|-----------------------------------------------|
+| Built-in Render Pipeline               | ✅         | Acrylic "Blur Modes" are not supported.       |
+| Universal Render Pipeline (URP)        | ✅         |                                               |
+| High Definition Render Pipeline (HDRP) | ❌         |                                               |
+| Custom Render Pipeline                 | ❔         | Support depends on how the pipeline is built. |
 
 ## UnityUI support
 
-The Graphics Tools Standard shading system works with Unity's built in [UI system](https://docs.unity3d.com/Manual/UISystem.html). On Unity UI components, the unity_ObjectToWorld matrix is not the transformation matrix of the local transform the Graphic component lives on but that of its parent Canvas. Many Graphics Tools/Standard shader effects require object scale to be known. To solve this issue, the `ScaleMeshEffect.cs` will store scaling information into UV channel attributes during UI mesh construction.
+The Graphics Tools Standard shading system works with Unity's built in UI system called [UnityUI](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/index.html). The `Graphics Tools/Standard Canvas` should be used for all materials within UnityUI canvases.
 
-Note, when using a Unity Image component, it is recommended to specify "None (Sprite)" for the Source Image to prevent Unity UI from generating extra vertices.
+A canvas or canvas renderer within Graphics Tools will prompt for the addition of a `ScaleMeshEffect.cs` when one is required:
 
-A Canvas within Graphics Tools will prompt for the addition of a `ScaleMeshEffect.cs` when one is required:
+![Scale Mesh Effect](images/StandardShader/ScaleMeshEffect.jpg)
 
-![scale mesh effect](images/StandardShader/ScaleMeshEffect.jpg)
+On UnityUI components, the `unity_ObjectToWorld` matrix (or `UNITY_MATRIX_M`  in URP) is not the transformation matrix of the local transform the Graphic component lives on but that of its parent Canvas. Many `Graphics Tools/Standard Canvas` shader effects require object scale to be known. To solve this issue, the `ScaleMeshEffect.cs` will store scaling information into UV channel attributes during UI mesh construction.
+
+> [!TIP]
+> When using a Unity Image component, it is recommended to specify "None (Sprite)" for the Source Image to prevent Unity UI from generating extra vertices.
 
 ## Material inspector
 
@@ -90,7 +100,7 @@ The first portion of the inspector controls the material's render state. *Render
 
 ### Main maps
 
-TODO
+This section's primary function is to control the material's albedo color and [physically based rendering](https://en.wikipedia.org/wiki/Physically_based_rendering) options.
 
 To improve parity with the Unity Standard shader per pixel metallic, smoothness, emissive, and occlusion values can all be controlled via [channel packing](http://wiki.polycount.com/wiki/ChannelPacking).
 
@@ -103,37 +113,47 @@ When you use channel packing, you only have to sample and load one texture into 
 | Blue    | Emission (Greyscale) |
 | Alpha   | Smoothness           |
 
+The main map section also has an option for triplanar mapping and super-sample anti-aliasing.
+
 Triplanar mapping is a technique to programmatically texture a mesh. Often used in terrain, meshes without UVs, or difficult to unwrap shapes. This implementation supports world or local space projection, the specification of blending smoothness, and normal map support. Note, each texture used requires 3 texture samples, so use sparingly in performance critical situations.
+
+[Super-sample anti-aliasing](https://bgolus.medium.com/sharper-mipmapping-using-shader-based-supersampling-ed7aadb47bec) should be used on any materials which display an icon or image where details are critical from a distance.
 
 ### Rendering options
 
-TODO
+Rendering options mostly control the lighting settings for a material. This material section also contains a handful of other features that control a surface's color, translucency, or position. For more details about lighting please see [below](#lighting).
 
 ### Fluent options
 
-TODO
+[Fluent](https://www.microsoft.com/design/fluent/#/) is a design framework used across UI components in Microsoft products. This section contains a handful of features that help emulate Fluent design system principles on arbitrary surfaces. If you are looking for bespoke Fluent shaders, they can be found in the `Graphics Tools/Canvas` and  `Graphics Tools/Non-Canvas` shader namespace.
 
 ### Advanced options
 
-TODO
+Similar to the advanced section in Unity's built-in shaders. This section controls rendering order and if GPU instancing variants should be built. Additionally, there are configurable stencil test support to achieve a wide array of effects. Such as portals:
 
-Built in configurable stencil test support to achieve a wide array of effects. Such as portals.
+![Portals](images/StandardShader/Portal.jpg)
 
 ## Lighting
 
-The Graphics Tools/Standard shader uses a simple approximation for lighting. Because this shader does not calculate for physical correctness and energy conservation, it renders quickly and efficiently. Blinn-Phong is the primary lighting technique which is blended with Fresnel and image-based lighting to approximate physically-based lighting. The shader supports the following lighting techniques:
+The Graphics Tools/Standard shader uses a simple approximation for lighting. Because the shader does not calculate for physical correctness and energy conservation, it renders quickly and efficiently. Blinn-Phong is the primary lighting technique used and is blended with Fresnel and image-based lighting to approximate physically-based lighting. The shader supports the following lighting techniques:
 
 ### Directional light
 
-The shader will respect the direction, color, and intensity of the first Unity Directional Light in the scene (if enabled). Dynamic point lights, spot lights, or any other Unity light will not be considered in real time lighting.
+The shader will respect the direction, color, and intensity of the first Unity Directional Light in the scene (if enabled).
+
+> [!IMPORTANT]
+> Dynamic point lights, spot lights, or any other Unity light will not be considered in real time lighting.
 
 ### Spherical harmonics
 
-The shader will use Light Probes to approximate lights in the scene using [Spherical Harmonics](https://docs.unity3d.com/Manual/LightProbes-TechnicalInformation.html), if enabled. Spherical harmonics calculations are performed per vertex to reduce calculation cost.
+The shader uses light probes to approximate lights in the scene using [spherical harmonics](https://docs.unity3d.com/Manual/LightProbes-TechnicalInformation.html), if enabled.
+
+> [!IMPORTANT]
+> Spherical harmonics calculations are performed per vertex and light probes are not blended to reduce calculation costs.
 
 ### Lightmapping
 
-For static lighting, the shader will respect lightmaps built by Unity's [Lightmapping system](https://docs.unity3d.com/Manual/Lightmapping.html). Simply mark the renderer as static (or lightmap static) to use lightmaps.
+For static lighting, the shader will respect lightmaps built by Unity's [lightmapping system](https://docs.unity3d.com/Manual/Lightmapping.html). Simply mark the renderer as static (or lightmap static) to use lightmaps.
 
 ## Performance
 

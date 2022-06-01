@@ -20,7 +20,7 @@ If you are looking for complete MRDL designed components it is best to look at h
 
 ### Shaders
 
-The first option of every material inspector contains a shader dropdown. All Graphics Tools shaders are within the `Graphics Tools` namespace. The majority of bespoke MRDL shaders are in the `Graphics Tools/Canvas` and  `Graphics Tools/Non-Canvas` directories. As the name suggests shaders in the `Canvas` directory should be used with UnityUI canvases and shaders in the `Non-Canvas` directory should be used within normal Unity contexts.
+The first option of every material inspector contains a shader dropdown. All Graphics Tools shaders are within the `Graphics Tools` namespace. The majority of bespoke MRDL shaders are in the `Graphics Tools/Canvas` and  `Graphics Tools/Non-Canvas` shader namespace. As the name suggests shaders in the `Canvas` namespace should be used with UnityUI canvases and shaders in the `Non-Canvas` namespace should be used within normal Unity contexts.
 
 > [!TIP]
 > If you peer into the source code of these shaders you might notice they are more difficult to read than even a traditional shader. This is because they are generated from a tool.
