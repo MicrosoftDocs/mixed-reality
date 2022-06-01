@@ -31,7 +31,7 @@ Now you're ready to create your DirectX 11 Windows Mixed Reality app! Note, to r
 
 ## Creating a UWP project
 
-Once the tools are installed,](../install-the-tools.md) you can then create a holographic DirectX UWP project.
+Once the tools are [installed](../install-the-tools.md), you can then create a holographic DirectX UWP project.
 
 To create a new project in Visual Studio 2019:
 1. Start **Visual Studio**.
