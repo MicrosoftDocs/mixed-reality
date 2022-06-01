@@ -22,7 +22,7 @@ Some versions of Unity or Unity plugins have known incompatibilities blocking ap
 
 | Blocking&nbsp;issues | Status&nbsp;&&nbsp;Last&nbsp;Update | &nbsp;&nbsp;Versions&nbsp;with&nbsp;issue&nbsp;&nbsp; | &nbsp;&nbsp;Mitigation&nbsp;&nbsp; |
 | :----------- | :----- | :--------------: | :--------------: |
-| HL2 app using Unity's Burst package (e.g. commonly used when using URP) will [hit ILCPP compile error in VisualStudio](https://issuetracker.unity3d.com/issues/build-fails-with-error-mono-dot-cecil-dot-assemblyresolutionexception-failed-to-resolve-assembly-when-unity-iap-is-in-the-project). | **Investigating:**<br />2022/05/20 | Unity Burst package 1.6.5 <br/>1.7.* or 1.8.* | Use Burst package 1.6.4 instead. |
+| HL2 app using Unity's Burst package (e.g. commonly used when using URP) will [hit ILCPP compile error in VisualStudio](https://issuetracker.unity3d.com/issues/build-fails-with-error-mono-dot-cecil-dot-assemblyresolutionexception-failed-to-resolve-assembly-when-unity-iap-is-in-the-project). | **Investigating:**<br />2022/05/20 | Unity Burst package 1.6.5 <br/>1.7.* or 1.8.* | Change or add `"com.unity.burst": "1.6.4",` to the *packages/manifest.json* file and delete *packages-lock.json*. |
 | HL2 app using URP, WindowsXR plugin and Gamma color space rendering has worse render performance in Unity 2020 or later. | **Investigating:**<br />2022/05/06 | Unity 2020.\*.\* <br/> with URP 10.\*.\* <br/> and&nbsp;Windows&nbsp;XR&nbsp;Plugin&nbsp;4.\*.\*| Upgrade to OpenXR Plugin instead of WindowsXR plugin |
 | HL2 app using URP has worse render performance in Unity 2021 compared to Unity 2020. | **Investigating:**<br />2022/05/06 | Unity 2021.\*.\* <br/> with URP 12.\*.\* | Either avoid URP in Unity&nbsp;2021 or use URP in Unity&nbsp;2020.LTS |
 
