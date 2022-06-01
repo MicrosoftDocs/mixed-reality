@@ -13,7 +13,14 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 The Graphics Tools Standard shading system utilizes a single, flexible shader that can achieve visuals similar to Unity's Standard Shader, implement [Fluent Design System](https://www.microsoft.com/design/fluent/) principles, and remain performant on Mixed Reality devices.
 In this sample scene you'll find a detailed display of the the capabilities of the Graphics Tools standard shader.
 
-![Standard shader sample scene](images/materialGallery_01.JPG)
+![Standard Shader sample scene](images/materialGallery_01.JPG)
+
+### Surface Effects
+
+This section showcases the surface rendering effects you can achieve with the Graphics Tools standard shader.
+These examples display only a hnadful of possible variations, as stencil and clipping effects or PBR capability.
+
+![Standard Shader surface effects](images/materialGallery_sample_01.gif)
 
 
 
