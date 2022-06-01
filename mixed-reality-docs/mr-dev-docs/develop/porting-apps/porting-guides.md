@@ -15,7 +15,7 @@ Windows 10 includes support for immersive and holographic headsets. Other device
 
 Porting VR apps to Windows Mixed Reality requires the following high-level processes:
 
-1. Make sure your PC is running the **Windows 10 Fall Creators Update (16299)**.
+1. Make sure your PC is running the **Windows 10, version 1709 (the Fall Creator's Update) or newer**, or **Windows 11**.
 1. Upgrade to the latest version of your graphics or game engine. Game engines must support the **Windows 10 SDK version 10.0.15063.0** or higher.
 1. Upgrade middleware, plug-ins, and components. If your app contains any components, upgrade to the latest versions.
 1. Target the latest Unity version and OpenXR plugin. Remove dependencies on duplicate SDKs. Depending on which device your content targeted, remove or conditionally compile out that SDK.
