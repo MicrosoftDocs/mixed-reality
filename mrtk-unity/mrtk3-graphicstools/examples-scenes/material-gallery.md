@@ -15,6 +15,12 @@ In this sample scene you'll find a detailed display of the the capabilities of t
 
 ![Standard Shader sample scene](images/materialGallery_01.JPG)
 
+### Edge and Vertex effects
+
+These examples showcase various effects that make use of an object's texture coordinates (UVs), e.g. procedural edge hightlights, dynamically rounded edges, wireframe rendering and glow effects.
+
+![Standard Shader sample scene](images/edge_vertex_effects_01.jpg)
+
 ### Surface Effects
 
 This section showcases the surface rendering effects you can achieve with the Graphics Tools standard shader.
