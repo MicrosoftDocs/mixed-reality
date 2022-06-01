@@ -12,7 +12,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 
 Many mesh outline techniques are done using a [post processing](https://docs.unity3d.com/Manual/PostProcessingOverview.html) technique. Post processing provides great quality outlines, but can be prohibitively expensive on many Mixed Reality devices.
 
-![Mesh Outlines](images/MeshOutlines/MeshOutline.jpg)
+![Mesh Outlines](images/MeshOutline/MeshOutline.jpg)
 
 `MeshOutline.cs` and `MeshOutlineHierarchy.cs` can be used to render an outline around a mesh renderer. Enabling this component introduces an additional render pass of the object being outlined, but is designed to run performantly on mobile Mixed Reality devices and does not utilize any post processes.
 
@@ -21,13 +21,13 @@ Many mesh outline techniques are done using a [post processing](https://docs.uni
 
 ## Sample
 
-See the "Mesh Outlines" sample for demonstrations of the outline system.
+See the *Mesh Outlines* sample for demonstrations of the outline system.
 
 ## Material setup
 
-The outline behaviors are designed to be used in conjunction with the Graphics Tools/Standard shader. Outline materials are usually a solid unlit color, but can be configured to achieve a wide array of effects. The default configuration of a outline material is as follows:
+The outline behaviors are designed to be used in conjunction with the *Graphics Tools/Standard* shader. Outline materials are usually a solid unlit color, but can be configured to achieve a wide array of effects. The default configuration of a outline material is as follows:
 
-![Mesh Outline Material](images/MeshOutlines/OutlineMaterial.jpg)
+![Mesh Outline Material](images/MeshOutline/OutlineMaterial.jpg)
 
 1. Depth Write - should be disabled for outline materials to make sure the outline does not prevent other objects from rendering.
 2. Vertex Extrusion - needs to be enabled to render the outline.
@@ -37,7 +37,7 @@ The outline behaviors are designed to be used in conjunction with the Graphics T
 
 `MeshSmoother.cs` is a component which can be used to automatically generate smoothed normals on a mesh. This method groups vertices in a mesh that share the same location in space then averages the normals of those vertices. This process creates a copy of the underlying mesh and should be used only when required.
 
-![Smooth Normals](images/MeshOutlines/SmoothNormals.jpg)
+![Smooth Normals](images/MeshOutline/SmoothNormals.jpg)
 
 In the above image cube 1 is utilizing mesh smoothing while cube 2 is not. Notice the discontinuities at the corners of the cube without mesh smoothing.
 

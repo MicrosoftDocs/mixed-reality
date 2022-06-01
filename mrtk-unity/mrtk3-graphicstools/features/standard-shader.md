@@ -12,11 +12,11 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 
 The Graphics Tools Standard shading system utilizes a flexible shader that can achieve visuals similar to Unity's Standard (or Lit) shader, implement [Fluent Design System](https://www.microsoft.com/design/fluent/) principles, and remain performant on mixed reality devices.
 
+![Standard Shader](images/StandardShader/StandardShader.jpg)
+
 ## Sample
 
-See the "Material Gallery" sample for multiple demonstrations of *Graphics Tools/Standard* shader variants. For examples of *Graphics Tools/Standard Canvas* please see the "UnityUI" sample
-
-![Standard shader examples](images/StandardShader/StandardShader.jpg)
+See the *Material Gallery* sample for multiple demonstrations of *Graphics Tools/Standard* shader variants. For examples of *Graphics Tools/Standard Canvas* please see the *UnityUI* sample
 
 ## Architecture
 
@@ -122,6 +122,8 @@ Triplanar mapping is a technique to programmatically texture a mesh. Often used 
 ### Rendering options
 
 Rendering options mostly control the lighting settings for a material. This material section also contains a handful of other features that control a surface's color, translucency, or position. For more details about lighting please see [below](#lighting).
+
+![Lighting](images/StandardShader/Lighting.jpg)
 
 ### Fluent options
 

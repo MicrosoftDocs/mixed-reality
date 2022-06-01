@@ -5,8 +5,8 @@ items:
   href: acrylic.md
 - name: Animation
   href: animation.md
-- name: UnityUI Support
-  href: unityui-support.md
+- name: UnityUI Tooling
+  href: unityui-tooling.md
 - name: Clipping Primitive
   href: clipping-primitive.md
 - name: Hover Light
