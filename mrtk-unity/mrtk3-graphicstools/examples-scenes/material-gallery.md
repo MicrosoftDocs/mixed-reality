@@ -39,7 +39,7 @@ Up to 4 hover lights may be active in a scene at once.
 ### Rendering Modes
 
 Rendering Mode determines when and how a material will be rendered.
-This allows for effects like holes, faded transparency and color calculation effects which you can further refine these using the Custom Rendering mode.
+This allows for effects like holes, faded transparency and color calculation effects, which can be further refined using the Custom Rendering mode.
 
 ![Standard Shader rendering modes](images/renderModes_sample_01.jpg)
 
