@@ -656,6 +656,11 @@
 		"redirect_document_id": true
 	  },
 	  {
+		"source_path_from_root": "/mrtk-unity/release-notes/mrtk-28-release-notes.md",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/release-notes/mrtk-28-release-notes",
+		"redirect_document_id": true
+	  },
+	  {
 		"source_path_from_root": "/mrtk-unity/supported-devices/controllers-mrtk.md",
 		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/supported-devices/controllers-mrtk",
 		"redirect_document_id": true
