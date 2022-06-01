@@ -101,5 +101,9 @@
     }
   },
   "docs_build_engine": {},
-  "contribution_branch_mappings": {}
+  "contribution_branch_mappings": {},
+  "redirection_files": [
+    ".openpublishing.redirection.json",
+    ".openpublishing.redirection.mrtk2.json"
+  ]
 }

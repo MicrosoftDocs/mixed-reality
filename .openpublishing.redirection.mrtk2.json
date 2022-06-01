@@ -2,723 +2,724 @@
 	"redirections": [
 	  {
 		"source_path_from_root": "/mrtk-unity/architecture/controllers-pointers-and-focus.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/architecture/controllers-pointers-and-focus",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/architecture/controllers-pointers-and-focus",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/architecture/core-system.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/architecture/core-system",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/architecture/core-system",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/architecture/framework-and-runtime.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/architecture/framework-and-runtime",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/architecture/framework-and-runtime",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/architecture/overview.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/architecture/overview",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/architecture/overview",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/architecture/systems-extensions-providers.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/architecture/systems-extensions-providers",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/architecture/systems-extensions-providers",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/architecture/terminology.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/architecture/terminology",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/architecture/terminology",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/configuration/getting-started-with-mrtk-and-xrsdk",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/configuration/getting-started-with-mrtk-and-xrsdk",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/configuration/mixed-reality-configuration-guide.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/configuration/mixed-reality-configuration-guide",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/configuration/mixed-reality-configuration-guide",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/configuration/mrtk-configuration-dialog.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/configuration/mrtk-configuration-dialog",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/configuration/mrtk-configuration-dialog",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/configuration/usingupm.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/configuration/usingupm",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/configuration/usingupm",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/contributing/authors.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/contributing/authors",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/contributing/authors",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/contributing/breaking-changes.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/contributing/breaking-changes",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/contributing/breaking-changes",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/contributing/coding-guidelines.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/contributing/coding-guidelines",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/contributing/coding-guidelines",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/contributing/contributing.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/contributing/contributing",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/contributing/contributing",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/contributing/documentation-guide.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/contributing/documentation-guide",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/contributing/documentation-guide",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/contributing/experimental-features.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/contributing/experimental-features",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/contributing/experimental-features",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/contributing/pull-requests.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/contributing/pull-requests",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/contributing/pull-requests",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/contributing/unit-tests.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/contributing/unit-tests",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/contributing/unit-tests",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/boundary/boundary-system-getting-started.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/boundary/boundary-system-getting-started",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/boundary/boundary-system-getting-started",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/boundary/configuring-boundary-visualization.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/boundary/configuring-boundary-visualization",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/boundary/configuring-boundary-visualization",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/camera-system/camera-system-overview.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/camera-system/camera-system-overview",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/camera-system/camera-system-overview",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/camera-system/create-settings-provider.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/camera-system/create-settings-provider",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/camera-system/create-settings-provider",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/camera-system/unity-ar-camera-settings.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/camera-system/unity-ar-camera-settings",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/camera-system/unity-ar-camera-settings",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/camera-system/windows-mixed-reality-camera-settings.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/camera-system/windows-mixed-reality-camera-settings",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/camera-system/windows-mixed-reality-camera-settings",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/diagnostics/configuring-diagnostics.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/diagnostics/configuring-diagnostics",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/diagnostics/configuring-diagnostics",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/diagnostics/diagnostics-system-getting-started.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/diagnostics/diagnostics-system-getting-started",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/diagnostics/diagnostics-system-getting-started",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/diagnostics/using-visual-profiler.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/diagnostics/using-visual-profiler",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/diagnostics/using-visual-profiler",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/example-scenes/example-hub.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/example-scenes/example-hub",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/example-scenes/example-hub",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/example-scenes/eye-tracking-examples-overview.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/example-scenes/eye-tracking-examples-overview",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/example-scenes/eye-tracking-examples-overview",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/example-scenes/hand-interaction-examples.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/example-scenes/hand-interaction-examples",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/example-scenes/hand-interaction-examples",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/example-scenes/hand-joint-chaser.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/example-scenes/hand-joint-chaser",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/example-scenes/hand-joint-chaser",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/experience-settings/experience-settings.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/experience-settings/experience-settings",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/experience-settings/experience-settings",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/experience-settings/scene-content.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/experience-settings/scene-content",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/experience-settings/scene-content",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/experimental/dock.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/experimental/dock",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/experimental/dock",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/experimental/elastic-system.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/experimental/elastic-system",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/experimental/elastic-system",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/experimental/interactive-element.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/experimental/interactive-element",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/experimental/interactive-element",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/experimental/mixed-reality-keyboard.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/experimental/mixed-reality-keyboard",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/experimental/mixed-reality-keyboard",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/extensions/extension-services.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/extensions/extension-services",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/extensions/extension-services",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/extensions/hand-physics-service.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/extensions/hand-physics-service",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/extensions/hand-physics-service",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/extensions/lost-tracking-service.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/extensions/lost-tracking-service",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/extensions/lost-tracking-service",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/extensions/scene-transition-service.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/extensions/scene-transition-service",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/extensions/scene-transition-service",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/input/eye-tracking/eye-tracking-basic-setup.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/input/eye-tracking/eye-tracking-basic-setup",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/input/eye-tracking/eye-tracking-basic-setup",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/input/eye-tracking/eye-tracking-eye-gaze-provider.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/input/eye-tracking/eye-tracking-eye-gaze-provider",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/input/eye-tracking/eye-tracking-eye-gaze-provider",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/input/eye-tracking/eye-tracking-eyes-and-hands.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/input/eye-tracking/eye-tracking-eyes-and-hands",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/input/eye-tracking/eye-tracking-eyes-and-hands",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/input/eye-tracking/eye-tracking-is-user-calibrated.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/input/eye-tracking/eye-tracking-is-user-calibrated",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/input/eye-tracking/eye-tracking-is-user-calibrated",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/input/eye-tracking/eye-tracking-main.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/input/eye-tracking/eye-tracking-main",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/input/eye-tracking/eye-tracking-main",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/input/eye-tracking/eye-tracking-navigation.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/input/eye-tracking/eye-tracking-navigation",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/input/eye-tracking/eye-tracking-navigation",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/input/eye-tracking/eye-tracking-target-selection.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/input/eye-tracking/eye-tracking-target-selection",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/input/eye-tracking/eye-tracking-target-selection",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/input/controllers.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/input/controllers",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/input/controllers",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/input/create-data-provider.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/input/create-data-provider",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/input/create-data-provider",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/input/dictation.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/input/dictation",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/input/dictation",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/input/gaze.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/input/gaze",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/input/gaze",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/input/gestures.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/input/gestures",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/input/gestures",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/input/hand-tracking.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/input/hand-tracking",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/input/hand-tracking",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/input/how-to-add-near-interactivity.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/input/how-to-add-near-interactivity",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/input/how-to-add-near-interactivity",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/input/input-actions.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/input/input-actions",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/input/input-actions",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/input/input-events.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/input/input-events",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/input/input-events",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/input/input-providers.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/input/input-providers",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/input/input-providers",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/input/input-state.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/input/input-state",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/input/input-state",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/input/overview.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/input/overview",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/input/overview",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/input/pointers.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/input/pointers",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/input/pointers",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/input/speech.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/input/speech",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/input/speech",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/input-simulation/input-animation-file-format.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/input-simulation/input-animation-file-format",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/input-simulation/input-animation-file-format",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/input-simulation/input-animation-recording.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/input-simulation/input-animation-recording",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/input-simulation/input-animation-recording",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/input-simulation/input-simulation-service.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/input-simulation/input-simulation-service",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/input-simulation/input-simulation-service",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/profiles/profiles.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/profiles/profiles",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/profiles/profiles",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/rendering/clipping-primitive.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/rendering/clipping-primitive",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/rendering/clipping-primitive",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/rendering/hover-light.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/rendering/hover-light",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/rendering/hover-light",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/rendering/material-instance.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/rendering/material-instance",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/rendering/material-instance",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/rendering/mrtk-standard-shader.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/rendering/mrtk-standard-shader",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/rendering/mrtk-standard-shader",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/rendering/proximity-light.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/rendering/proximity-light",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/rendering/proximity-light",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/rendering/pulse-shader.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/rendering/pulse-shader",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/rendering/pulse-shader",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/scene-system/scene-system-content-loading.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/scene-system/scene-system-content-loading",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/scene-system/scene-system-content-loading",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/scene-system/scene-system-getting-started.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/scene-system/scene-system-getting-started",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/scene-system/scene-system-getting-started",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/scene-system/scene-system-lighting-scenes.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/scene-system/scene-system-lighting-scenes",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/scene-system/scene-system-lighting-scenes",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/scene-system/scene-system-load-progress.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/scene-system/scene-system-load-progress",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/scene-system/scene-system-load-progress",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/scene-system/scene-system-scene-types.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/scene-system/scene-system-scene-types",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/scene-system/scene-system-scene-types",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/service-utilities/mixed-reality-service-registry.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/service-utilities/mixed-reality-service-registry",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/service-utilities/mixed-reality-service-registry",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/spatial-awareness/configuring-spatial-awareness-mesh-observer.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/spatial-awareness/configuring-spatial-awareness-mesh-observer",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/spatial-awareness/configuring-spatial-awareness-mesh-observer",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/spatial-awareness/create-data-provider.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/spatial-awareness/create-data-provider",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/spatial-awareness/create-data-provider",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/spatial-awareness/scene-understanding.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/spatial-awareness/scene-understanding",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/spatial-awareness/scene-understanding",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/spatial-awareness/spatial-awareness-getting-started",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/spatial-awareness/spatial-awareness-getting-started",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/spatial-awareness/spatial-object-mesh-observer.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/spatial-awareness/spatial-object-mesh-observer",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/spatial-awareness/spatial-object-mesh-observer",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/spatial-awareness/usage-guide.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/spatial-awareness/usage-guide",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/spatial-awareness/usage-guide",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/teleport-system/teleport-hotspot.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/teleport-system/teleport-hotspot",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/teleport-system/teleport-hotspot",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/teleport-system/teleport-system.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/teleport-system/teleport-system",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/teleport-system/teleport-system",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/tools/asset-swap-utility.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/tools/asset-swap-utility",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/tools/asset-swap-utility",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/tools/build-window.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/tools/build-window",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/tools/build-window",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/tools/controller-mapping-tool.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/tools/controller-mapping-tool",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/tools/controller-mapping-tool",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/tools/dependency-window.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/tools/dependency-window",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/tools/dependency-window",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/tools/extension-service-creation-wizard.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/tools/extension-service-creation-wizard",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/tools/extension-service-creation-wizard",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/tools/holographic-remoting.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/tools/holographic-remoting",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/tools/holographic-remoting",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/tools/input-feature-usage-tool.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/tools/input-feature-usage-tool",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/tools/input-feature-usage-tool",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/tools/migration-window.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/tools/migration-window",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/tools/migration-window",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/tools/optimize-window.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/tools/optimize-window",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/tools/optimize-window",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/tools/screenshot-utility.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/tools/screenshot-utility",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/tools/screenshot-utility",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/tools/update-mrtk-shaders.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/tools/update-mrtk-shaders",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/tools/update-mrtk-shaders",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/solvers/solver.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/solvers/solver",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/solvers/solver",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/solvers/tap-to-place.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/solvers/tap-to-place",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/solvers/tap-to-place",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/app-bar.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/app-bar",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/app-bar",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/bounding-box.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/bounding-box",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/bounding-box",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/bounds-control.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/bounds-control",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/bounds-control",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/button.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/button",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/button",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/constraint-manager.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/constraint-manager",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/constraint-manager",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/dialog.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/dialog",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/dialog",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/dwell.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/dwell",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/dwell",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/fingertip-visualization.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/fingertip-visualization",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/fingertip-visualization",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/hand-coach.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/hand-coach",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/hand-coach",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/hand-menu.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/hand-menu",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/hand-menu",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/interactable.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/interactable",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/interactable",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/manipulation-handler.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/manipulation-handler",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/manipulation-handler",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/near-menu.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/near-menu",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/near-menu",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/object-collection.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/object-collection",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/object-collection",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/object-manipulator.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/object-manipulator",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/object-manipulator",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/progress-indicator.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/progress-indicator",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/progress-indicator",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/scrolling-object-collection.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/scrolling-object-collection",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/scrolling-object-collection",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/slate.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/slate",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/slate",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/sliders.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/sliders",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/sliders",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/system-keyboard.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/system-keyboard",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/system-keyboard",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/text-prefab.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/text-prefab",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/text-prefab",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/toolbox.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/toolbox",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/toolbox",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/tooltip.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/tooltip",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/tooltip",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/features/ux-building-blocks/visual-themes.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/features/ux-building-blocks/visual-themes",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/visual-themes",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/packages/mrtk-modularization.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/packages/mrtk-modularization",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/packages/mrtk-modularization",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/packages/mrtk-packages.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/packages/mrtk-packages",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/packages/mrtk-packages",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/performance/hologram-stabilization.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/performance/hologram-stabilization",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/performance/hologram-stabilization",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/performance/large-projects.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/performance/large-projects",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/performance/large-projects",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/performance/perf-getting-started.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/performance/perf-getting-started",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/performance/perf-getting-started",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/release-notes/mrtk-25-release-notes.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/release-notes/mrtk-25-release-notes",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/release-notes/mrtk-25-release-notes",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/release-notes/mrtk-26-release-notes.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/release-notes/mrtk-26-release-notes",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/release-notes/mrtk-26-release-notes",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/release-notes/mrtk-27-release-notes.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/release-notes/mrtk-27-release-notes",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/release-notes/mrtk-27-release-notes",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/supported-devices/controllers-mrtk.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/supported-devices/controllers-mrtk",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/supported-devices/controllers-mrtk",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/supported-devices/detecting-platform-capabilities.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/supported-devices/detecting-platform-capabilities",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/supported-devices/detecting-platform-capabilities",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/supported-devices/leap-motion-mrtk.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/supported-devices/leap-motion-mrtk",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/supported-devices/leap-motion-mrtk",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/supported-devices/oculus-quest-mrtk.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/supported-devices/oculus-quest-mrtk",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/supported-devices/oculus-quest-mrtk",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/supported-devices/using-ar-foundation.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/supported-devices/using-ar-foundation",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/supported-devices/using-ar-foundation",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/supported-devices/wmr-mrtk.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/supported-devices/wmr-mrtk",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/supported-devices/wmr-mrtk",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/updates-deployment/htk-to-mrtk-porting-guide.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/updates-deployment/htk-to-mrtk-porting-guide",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/updates-deployment/htk-to-mrtk-porting-guide",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/updates-deployment/mrtk-and-managed-code-stripping.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/updates-deployment/mrtk-and-managed-code-stripping",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/updates-deployment/mrtk-and-managed-code-stripping",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/updates-deployment/updating.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/updates-deployment/updating",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/updates-deployment/updating",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/index.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/index",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/index",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/roadmap.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/roadmap",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/roadmap",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/running-example-scenes.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/running-example-scenes",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/running-example-scenes",
 		"redirect_document_id": true
 	  },
 	  {
 		"source_path_from_root": "/mrtk-unity/running-examples-hub.md",
-		"redirect_url": "/windows/mrtk-unity/mrtk2/running-examples-hub",
+		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk2/running-examples-hub",
 		"redirect_document_id": true
 	  }
 	]
-  }  
+  }
+  
