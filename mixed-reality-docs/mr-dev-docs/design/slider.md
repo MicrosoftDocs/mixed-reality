@@ -12,7 +12,7 @@ keywords: Mixed Reality, Controls, interaction, ui, ux, mixed reality headset, w
 
 ![Slider](images/UX_Hero_Slider.jpg)
 
-A slider is a UI component used to set a value. It provides a visual indication of adjustable content, and the current setting in the total range of content. It's displayed as a track with options on either side. A knob or lever is dragged to one end or the other to make the choice, indicating the current value. The Pinch Slider can be moved by directly grabbing the slider, either directly or at a distance. Sliders work with various input types such as gaze and air-tap and a motion controller.
+A slider is a UI component used to set a value. It provides a visual indication of adjustable content, and the current setting in the total range of content. It's displayed as a track with options on either side. A knob or lever is dragged to one end or the other to make the choice, indicating the current value. The Pinch Slider can be moved by directly grabbing the slider, either directly or at a distance. Sliders work with various input types, such as gaze and air-tap and a motion controller.
 
 <br>
 

@@ -1,6 +1,6 @@
 ---
 title: Babylon.js tutorial to prepare a scene with basic 3D objects
-description: Learn how to use babylon.js and add basic 3D objects to a scene.
+description: Learn how to use Babylon.js and add basic 3D objects to a scene.
 author: bgener
 ms.author: ayyonet
 ms.date: 03/05/2021
@@ -44,7 +44,7 @@ In previous tutorial step a basic web page was created. Have the web page open f
 
 ## Create a scene
 
-A scene is where all the contents will be displayed. There might be multiple scenes and it is possible to switch between scenes. Read more about [babylon.js Scene](https://doc.babylonjs.com/divingDeeper/scene).
+A scene is where all the contents will be displayed. There might be multiple scenes and it is possible to switch between scenes. Read more about [Babylon.js Scene](https://doc.babylonjs.com/divingDeeper/scene).
 
 1. Add the script tag after the canvas html element and add the following code to create a scene filled in black color:
 
@@ -63,7 +63,7 @@ A scene is where all the contents will be displayed. There might be multiple sce
     </script>
     ```
 
-    In the code above we have to create an instance of babylon.js web rendering engine that renders a scene and hooks events on the canvas. For more information about the engine, check the documentation page [babylon.engine](https://doc.babylonjs.com/typedoc/classes/babylon.engine)
+    In the code above we have to create an instance of Babylon.js web rendering engine that renders a scene and hooks events on the canvas. For more information about the engine, check the documentation page [babylon.engine](https://doc.babylonjs.com/typedoc/classes/babylon.engine)
 
 1. The scene is not rendered by default. Remember, there might be multiple scenes and you control which scene is displayed. To render the scene repeatedly on every frame, execute the following code after the call to *createScene* function:
 
