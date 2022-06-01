@@ -45,7 +45,7 @@ This allows for effects like holes, faded transparency and color calculation eff
 
 ### See also
 
-* [Graphics Tools Standard Shader](/features/standard-shader.md)
+* [Graphics Tools Standard Shader](../features/standard-shader.md)
 
 
 
