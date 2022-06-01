@@ -20,7 +20,7 @@ In this sample scene you'll find a detailed display of the the capabilities of t
 This section showcases the surface rendering effects you can achieve with the Graphics Tools standard shader.
 These examples display only a hnadful of possible variations, as stencil and clipping effects or PBR capability.
 
-<img src="images/materialGallery_sample_01.gif" width="900" height="800">
+<img src="images/materialGallery_sample_01.gif" width="450" height="400">
 
 
 
