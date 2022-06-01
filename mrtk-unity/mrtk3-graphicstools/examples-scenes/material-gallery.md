@@ -28,7 +28,13 @@ These examples display only a hnadful of possible variations, as stencil and cli
 
 ![Standard Shader surface effects](images/materialGallery_sample_01.gif)
 
+### Hover Lights
 
+Placing point lights in a scene can end up very expensive on performance.
+Hover Lights are normally used for UI lighting but can also be used as a faster alternative to point lights.
+Up to 4 hover lights may be active in a scene at once.
+
+![Standard Shader surface effects](images/hoverLight_sample_01.gif)
 
 
 
