@@ -1,6 +1,6 @@
 ---
-title: Mixed Reality Graphics Tools Standard Shader
-description: Learn about the Graphics Tools Standard Shader.
+title: Clipping Primitive
+description: Learn about the Graphics Tools clipping primitives.
 author: tayomadein
 ms.author: omadein
 ms.date: 05/05/2022
@@ -18,8 +18,16 @@ The `ClippingPrimitive` behaviors allow for performant `plane`, `sphere`, and `b
 `ClippingPlane.cs`, `ClippingSphere.cs`, and `ClippingBox.cs` can be used to easily control clipping primitive properties. Use these components with the following shaders to leverage clipping scenarios.
 
 - *Graphics Tools/Standard*
+- *Graphics Tools/Text Mesh Pro*
+- *Graphics Tools/Wireframe*
+- *Graphics Tools/Wireframe*
+- *Graphics Tools/Non-Canvas/Backplate*
+- *Graphics Tools/Non-Canvas/Frontplate*
+- *Graphics Tools/Non-Canvas/Glow*
+- *Graphics Tools/Non-Canvas/Quad Glow*
+- *Graphics Tools/Non-Canvas/Beveled*
 
-## Advanced Usage
+## Advanced usage
 
 By default only one `ClippingPrimitive` can clip a [renderer](https://docs.unity3d.com/ScriptReference/Renderer.html) at a time. If your project requires more than one `ClippingPrimitive` to influence a [renderer](https://docs.unity3d.com/ScriptReference/Renderer.html)  the sample code below demonstrates how to achieve this.
 
@@ -29,15 +37,15 @@ By default only one `ClippingPrimitive` can clip a [renderer](https://docs.unity
 *How to have two different `ClippingPrimitive`s clip a render. For example a `ClippingSphere` and `ClippingBox` at the same time:*
 
 ```C#
-// Within GraphicsToolsStandardProgram.cginc (or another Graphics Tools shader) change:
+// Within GraphicsToolsStandard.shader (or another Graphics Tools shader that supports clipping primitives) change:
 
-#pragma multi_compile _ _CLIPPING_PLANE _CLIPPING_SPHERE _CLIPPING_BOX
+#pragma multi_compile_local _ _CLIPPING_PLANE _CLIPPING_SPHERE _CLIPPING_BOX
 
 // to:
 
-#pragma multi_compile _ _CLIPPING_PLANE
-#pragma multi_compile _ _CLIPPING_SPHERE
-#pragma multi_compile _ _CLIPPING_BOX
+#pragma multi_compile_local _ _CLIPPING_PLANE
+#pragma multi_compile_local _ _CLIPPING_SPHERE
+#pragma multi_compile_local _ _CLIPPING_BOX
 ```
 
 > [!NOTE]
@@ -47,6 +55,9 @@ By default only one `ClippingPrimitive` can clip a [renderer](https://docs.unity
 
 ```C#
 // 1) Add the below MonoBehaviour to your project:
+
+using UnityEngine;
+using Microsoft.MixedReality.GraphicsTools;
 
 [ExecuteInEditMode]
 public class SecondClippingBox : ClippingBox
@@ -68,16 +79,23 @@ public class SecondClippingBox : ClippingBox
     {
         base.Initialize();
 
-        clipBoxSizeID = Shader.PropertyToID("_ClipBoxSize2");
         clipBoxInverseTransformID = Shader.PropertyToID("_ClipBoxInverseTransform2");
     }
 }
 
-// 2) Within GraphicsToolsStandardProgram.cginc (or another Graphics Tools shader) add the following multi_compile pragma:
 
-#pragma multi_compile _ _CLIPPING_BOX2
+// 2) Within GraphicsToolsStandard.shader add the following multi_compile pragma:
 
-// 3) In the same shader change:
+#pragma multi_compile_local _ _CLIPPING_BOX2
+
+// 3) In GraphicsToolsStandardInput.hlsl add the following shader variables:
+
+#if defined(_CLIPPING_BOX2)
+    half _ClipBoxSide2;
+    float4x4 _ClipBoxInverseTransform2;
+#endif
+
+// 4) In GraphicsToolsStandardProgram.hlsl change:
 
 #if defined(_CLIPPING_PLANE) || defined(_CLIPPING_SPHERE) || defined(_CLIPPING_BOX)
 
@@ -85,31 +103,23 @@ public class SecondClippingBox : ClippingBox
 
 #if defined(_CLIPPING_PLANE) || defined(_CLIPPING_SPHERE) || defined(_CLIPPING_BOX) || defined(_CLIPPING_BOX2)
 
-// 4) In the same shader add the following shader variables:
-
-#if defined(_CLIPPING_BOX2)
-    fixed _ClipBoxSide2;
-    float4 _ClipBoxSize2;
-    float4x4 _ClipBoxInverseTransform2;
-#endif
-
 // 5) In the same shader change:
 
 #if defined(_CLIPPING_BOX)
-    primitiveDistance = min(primitiveDistance, PointVsBox(i.worldPosition.xyz, _ClipBoxSize.xyz, _ClipBoxInverseTransform) * _ClipBoxSide);
+    primitiveDistance = min(primitiveDistance, GTPointVsBox(input.worldPosition.xyz, _ClipBoxInverseTransform) * _ClipBoxSide);
 #endif
 
 // to:
 
 #if defined(_CLIPPING_BOX)
-    primitiveDistance = min(primitiveDistance, PointVsBox(i.worldPosition.xyz, _ClipBoxSize.xyz, _ClipBoxInverseTransform) * _ClipBoxSide);
+    primitiveDistance = min(primitiveDistance, GTPointVsBox(input.worldPosition.xyz, _ClipBoxInverseTransform) * _ClipBoxSide);
 #endif
 #if defined(_CLIPPING_BOX2)
-    primitiveDistance = min(primitiveDistance, PointVsBox(i.worldPosition.xyz, _ClipBoxSize2.xyz, _ClipBoxInverseTransform2) * _ClipBoxSide2);
+    primitiveDistance = min(primitiveDistance, GTPointVsBox(input.worldPosition.xyz, _ClipBoxInverseTransform2) * _ClipBoxSide2);
 #endif
 ```
 
-Finally, add a `ClippingBox` and SecondClippingBox component to your scene and specify the same renderer for both boxes. The renderer should now be clipped by both boxes simultaneously.
+Finally, add a `ClippingBox` and `SecondClippingBox` component to your scene and specify the same renderer for both boxes. The renderer should now be clipped by both boxes simultaneously.
 
 ## See also
 

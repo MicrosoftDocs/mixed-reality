@@ -1,6 +1,6 @@
 ---
-title: Mixed Reality Graphics Tools Standard Shader
-description: Learn about the Graphics Tools Standard Shader.
+title: Hover Lights
+description: Learn about the Graphics Tools hover lights.
 author: tayomadein
 ms.author: omadein
 ms.date: 05/05/2022
@@ -12,12 +12,12 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 
 A `HoverLight` is a [Fluent Design System](https://www.microsoft.com/design/fluent/) paradigm that mimics a [point light](https://docs.unity3d.com/Manual/Lighting.html) hovering near the surface of an object. Often used for far away interactions, the application can control the properties of a Hover Light via the `HoverLight` component.
 
-For a material to be influenced by a `HoverLight` the *Graphics Tools/Standard* shader must be used and the *Hover Light* property must be enabled.
+For a material to be influenced by a `HoverLight` the *Graphics Tools/Standard* or the *Graphics Tools/Standard Canvas* shader must be used and the *Hover Light* property must be enabled.
 
 >[!Note]
-> The *Graphics Tools/Standard* shader supports up to two `HoverLight`s by default, but will scale to support four as more lights are added to the scene.
+> The *Graphics Tools/Standard* and *Graphics Tools/Standard Canvas* shaders supports up to two `HoverLight`s by default, but will scale to support four as more lights are added to the scene.
 
-## Advanced Usage
+## Advanced usage
 
 Only four `HoverLight`s can illuminate a [material](https://docs.unity3d.com/ScriptReference/Material.html) at a time. If your project requires more than four `HoverLight`s to influence a [material](https://docs.unity3d.com/ScriptReference/Material.html) the sample code below demonstrates how to achieve this.
 
