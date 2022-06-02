@@ -16,14 +16,14 @@ A `HoverLight` is a [Fluent Design System](https://www.microsoft.com/design/flue
 
 For a material to be influenced by a `HoverLight` the *Graphics Tools/Standard* or the *Graphics Tools/Standard Canvas* shader must be used and the *Hover Light* property must be enabled.
 
->[!Note]
+>[!NOTE]
 > The *Graphics Tools/Standard* and *Graphics Tools/Standard Canvas* shaders supports up to two `HoverLight`s by default, but will scale to support four as more lights are added to the scene.
 
 ## Advanced usage
 
 Only four `HoverLight`s can illuminate a [material](https://docs.unity3d.com/ScriptReference/Material.html) at a time. If your project requires more than four `HoverLight`s to influence a [material](https://docs.unity3d.com/ScriptReference/Material.html) the sample code below demonstrates how to achieve this.
 
->[!Note]
+>[!NOTE]
 > Having many `HoverLight`s illuminate a [material](https://docs.unity3d.com/ScriptReference/Material.html) will increase pixel shader instructions and will impact performance. **Please profile these changes within your project.**
 
 *How to increase the number of available `HoverLight`s

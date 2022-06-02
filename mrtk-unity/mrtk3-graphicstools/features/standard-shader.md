@@ -55,7 +55,7 @@ Unity has a handful of [render pipelines](https://docs.unity3d.com/Manual/render
 
 The Graphics Tools Standard shading system works with Unity's built in UI system called [UnityUI](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/index.html). The *Graphics Tools/Standard Canvas* should be used for all materials within UnityUI canvases.
 
-A canvas or canvas renderer within Graphics Tools will prompt for the addition of a `ScaleMeshEffect.cs` when one is required:
+A [Canvas](https://docs.unity3d.com/ScriptReference/Canvas.html) or [CanvasRenderer](https://docs.unity3d.com/ScriptReference/CanvasRenderer.html) within Graphics Tools will prompt for the addition of a `ScaleMeshEffect.cs` when one is required:
 
 ![Scale Mesh Effect](images/StandardShader/ScaleMeshEffect.jpg)
 
