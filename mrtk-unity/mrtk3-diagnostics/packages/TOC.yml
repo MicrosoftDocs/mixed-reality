@@ -1,13 +1,13 @@
 - name: Packages overview
   href: ../mrtk3-overview/packages/packages-overview
-- name: Diagnostics
-  href: diagnostics/toc.yml
 - name: Accessibility
   href: ../../mrtk3-accessibility/packages/accessibility/overview.md
 - name: Core definitions
   href: ../../mrtk3-core/packages/core/overview.md
 - name: Data binding and theming
   href: ../../mrtk3-data/packages/data/overview.md
+- name: Diagnostics
+  href: diagnostics/toc.yml
 - name: Environment
   href: ../../mrtk3-environment/packages/environment/overview.md
 - name: Extended assets

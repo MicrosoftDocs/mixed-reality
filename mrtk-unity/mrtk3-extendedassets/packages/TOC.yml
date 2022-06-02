@@ -1,7 +1,5 @@
 - name: Packages overview
   href: ../mrtk3-overview/packages/packages-overview
-- name: Extended assets
-  href: extendedassets/toc.yml
 - name: Accessibility
   href: ../../mrtk3-accessibility/packages/accessibility/overview.md
 - name: Core definitions
@@ -12,6 +10,8 @@
   href: ../../mrtk3-diagnostics/packages/diagnostics/overview.md
 - name: Environment
   href: ../../mrtk3-environment/packages/environment/overview.md
+- name: Extended assets
+  href: extendedassets/toc.yml
 - name: Graphics tools
   href: ../../mrtk3-graphicstools/index.md
 - name: Input

@@ -1,7 +1,5 @@
 - name: Packages overview
   href: ../mrtk3-overview/packages/packages-overview
-- name: UX components
-  href: uxcomponents/toc.yml
 - name: Accessibility
   href: ../../mrtk3-accessibility/packages/accessibility/overview.md
 - name: Core definitions
@@ -22,6 +20,8 @@
   href: ../../mrtk3-spatialmanipulation/packages/spatialmanipulation/overview.md
 - name: Standard assets
   href: ../../mrtk3-standardassets/packages/standardassets/overview.md
+- name: UX components
+  href: uxcomponents/toc.yml
 - name: UX core
   href: ../../mrtk3-uxcore/packages/uxcore/overview.md
 - name: Windows speech

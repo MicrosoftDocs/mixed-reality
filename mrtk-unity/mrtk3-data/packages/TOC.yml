@@ -1,11 +1,11 @@
 - name: Packages overview
   href: ../mrtk3-overview/packages/packages-overview
-- name: Data binding and theming
-  href: data/toc.yml
 - name: Accessibility
   href: ../../mrtk3-accessibility/packages/accessibility/overview.md
 - name: Core
   href: ../../mrtk3-core/packages/core/overview.md
+- name: Data binding and theming
+  href: data/toc.yml
 - name: Diagnostics
   href: ../../mrtk3-diagnostics/packages/diagnostics/overview.md
 - name: Environment

@@ -1,7 +1,5 @@
 - name: Packages overview
   href: ../mrtk3-overview/packages/packages-overview
-- name: Spatial manipulation
-  href: spatialmanipulation/toc.yml
 - name: Accessibility
   href: ../../mrtk3-accessibility/packages/accessibility/overview.md
 - name: Core definitions
@@ -18,6 +16,8 @@
   href: ../../mrtk3-graphicstools/index.md
 - name: Input
   href: ../../mrtk3-input/packages/input/overview.md
+- name: Spatial manipulation
+  href: spatialmanipulation/toc.yml
 - name: Standard assets
   href: ../../mrtk3-standardassets/packages/standardassets/overview.md
 - name: UX components

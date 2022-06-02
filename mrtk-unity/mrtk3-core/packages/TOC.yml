@@ -1,9 +1,9 @@
 - name: Packages overview
   href: ../mrtk3-overview/packages/packages-overview
-- name: Core
-  href: core/toc.yml
 - name: Accessibility
   href: ../../mrtk3-accessibility/packages/accessibility/overview.md
+- name: Core
+  href: core/toc.yml
 - name: Data binding and theming
   href: ../../mrtk3-data/packages/data/overview.md
 - name: Diagnostics
