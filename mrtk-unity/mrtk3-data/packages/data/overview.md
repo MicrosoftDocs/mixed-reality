@@ -18,7 +18,7 @@ Popular data binding frameworks:
 ---
 ## Windows Presentation Framework data binding block diagram:
 
-![Databinding Windows Presentation Framework (WPF)](.images\databinding-wpf.png)
+![Databinding Windows Presentation Framework (WPF)](images/databinding-wpf.png)
 For more information, see [data binding overview - WPF.NET](https://docs.microsoft.com/dotnet/desktop/wpf/data)
 
 ---
@@ -252,13 +252,13 @@ that have been populated with variable data, and then present them to the user, 
 Theming uses all of the plumbing of data sources and data consumers.  It is possible to theme any hierarchy of GameObjects whether they are static or are dynamically data bound to other data sources.  This allows for both data binding and theming to be applied in combination. It is even possible to theme the data coming from another data source. 
 # Block Diagram and Data flow
 
-![MRTK theming data flow](.images\mrtk-theming-data-flow.png)
+![MRTK theming data flow](images/mrtk-theming-data-flow.png)
 
 # MRTK Theming
 
 Theming is the ability to wholesale change the visual aesthetic of many UX elements at once. Typically, all of the data needed to specify a theme is provided by a single Data Source, such as a Scriptable Object.  It is also possible for theming data to be provided as needed, or divided into logical groups based on its purpose.
 
-![MRTK3 Theming](../.images/UXBuildingBlocks/MRTK_UX_v3_Theming.png)
+![MRTK3 Theming](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_Theming.png)
 
 
 # MRTK3 Theming combined with Data Binding
@@ -272,7 +272,7 @@ To simplify configuration of theming and data binding, it's possible to create b
 * A `ThemeProvider` helper script makes it easy to use a **ScriptableObject** as a `DataSource` for theming.
 * The standard CoreUX theme is provided by the `MRTK_CoreUX_ThemeProfile` **ScriptableObject** that is bound to a `DataSourceReflection` in the `ThemeProvider`.
 
-![Theme Profile DataSource flow diagram](.images\theme-profile-datasource.png)
+![Theme Profile DataSource flow diagram](images/theme-profile-datasource.png)
 
 ### Embedded Data Source
 
