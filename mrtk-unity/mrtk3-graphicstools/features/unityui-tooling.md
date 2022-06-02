@@ -16,6 +16,30 @@ TODO
 
 See the *UnityUI* sample for demonstrations of various components built for UnityUI.
 
+## ScaleMeshEffect
+
+TODO
+
+## RectMask2DFast
+
+TODO
+
+## RoundedRectMask2D
+
+TODO
+
+## CanvasElementRoundedRect
+
+TODO
+
+## CanvasElementBeveledRect
+
+TODO
+
+## CanvasElementMesh
+
+TODO
+
 ## See also
 
 * [Standard Shader](standard-shader.md)
