@@ -45,7 +45,7 @@ To turn on this feature without writing any code, you need to do the following f
 
 Your text will now be inverted. To turn off this feature, simply follow the same step in number 4 above.
 
-### Advanced Usage
+### Advanced usage
 This feature works on a material per material basis. If you need this feature applied to a range of materials, your app logic would have to call the *SetTextColorInversion* method for all text materials it wishes to perform this behavior.
 
 ## See also
