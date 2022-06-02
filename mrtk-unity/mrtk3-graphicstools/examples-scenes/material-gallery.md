@@ -1,6 +1,6 @@
 ---
 title: Material Gallery Sample Scene
-description: Learn about the Graphics Tools Standard Shader.
+description: Illustrated walkthrough of the Material Gallery scene
 author: martinwettig
 ms.author: wettigmarti
 ms.date: 06/01/2022
@@ -11,9 +11,10 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 # The Material Gallery
 
 The Graphics Tools Standard shading system utilizes a single, flexible shader that can achieve visuals similar to Unity's Standard Shader, implement [Fluent Design System](https://www.microsoft.com/design/fluent/) principles, and remain performant on Mixed Reality devices.
-In this sample scene you'll find a detailed display of the the capabilities of the Graphics Tools standard shader.
+In this sample scene you'll find a display of the the capabilities of the Graphics Tools standard shader.
 
 ![Standard Shader sample scene](images/materialGallery_01.JPG)
+    
 
 ## Edge and Vertex effects
 
@@ -24,7 +25,7 @@ These examples showcase various effects that make use of an object's texture coo
 ## Surface Effects
 
 This section showcases the surface rendering effects you can achieve with the Graphics Tools standard shader.
-These examples display only a hnadful of possible variations, as stencil and clipping effects or PBR capability.
+These examples display only a handful of possible variations, as stencil and clipping effects or PBR capability.
 
 ![Standard Shader surface effects](images/materialGallery_sample_01.gif)
 
@@ -43,7 +44,7 @@ This allows for effects like holes, faded transparency and color calculation eff
 
 ![Standard Shader rendering modes](images/renderModes_sample_01.jpg)
 
-### See also
+### For a detailed introduction to the Graphics Tools Standard Shader, see also
 
 * [Graphics Tools Standard Shader](../features/standard-shader.md)
 
