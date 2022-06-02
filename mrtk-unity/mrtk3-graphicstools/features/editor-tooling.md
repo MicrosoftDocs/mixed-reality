@@ -10,13 +10,43 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 
 # Editor tooling
 
-TODO
+Graphics Tools contains a plethora of Unity editor tooling to help with mixed reality development. A handful of items are described below. The rest can be found in their respective subject areas, such as [accessibility uilities](accessibility-utilities.md) and the [measure tool](measure-tooling.md).
 
 ## Menu items
 
-TODO
+Description of menu items found in the `Window > Graphics Tools` menu section.
 
-## Mip map debug
+### Take screenshots
+
+Often taking screenshots in Unity for documentation and promotional imagery can be burdensome and the output often looks less than desirable. The `ScreenshotUtilities` class aides in taking screenshots via menu items and public APIs within the Unity editor. Screenshots can be captured at various resolutions and with transparent clear colors for use in easy post compositing of images.
+
+> [!NOTE]
+> Taking screenshots from a standalone build is not supported by this tool.
+
+Screenshots can be easily capture while in the editor by selecting `Window > Graphics Tools > Take Screenshot` and then selecting your desired option.
+
+> [!TIP]
+> Make sure to have the game window tab visible if capturing while not playing, or a screenshot may not be saved.
+
+By default, all screenshots are saved to your [temporary cache path](https://docs.unity3d.com/ScriptReference/Application-temporaryCachePath.html), the path to the screenshot will be displayed in the Unity console.
+
+![Screenshot Example](images/EditorTooling/ScreenshotExample.png)
+
+The above screenshot was captured with the *"4x Resolution (Transparent Background)"* option. (Scaled down to reduce download size.) This outputs a high-resolution image with whatever pixels normally represented by the clear color saved as transparent pixels. This technique helps developers showcase their application for the store, or other media outlets, by overlaying this image on top of other imagery.
+
+### Canvas material animators
+
+Canvas material animators allow developers to animate material properties on UnityUI Graphic components (more information can be found in the [animation](animation.md) documentation). These animator scripts are auto-generated from shader files. If a shader file changes, so does the the animator script. This is normally performed by right clicking on a shader and selecting `Graphics Tools > Generate Canvas Material Animator`.
+
+The `Window > Graphics Tools > Canvas Material Animators > Generate All` menu item will re-generate all animator scripts for shaders with these conditions met:
+
+- Exists in the *Runtime/Shaders* directory of the Graphics Tools package
+- Does not contain "Non-Canvas" it the shader name.
+
+> [!TIP]
+> Developers should invoke this menu item when they alter shaders within the Graphics Tools package. Custom shaders can have animators generated individually or via the `ShaderUtilities.GenerateCanvasMaterialAnimator` method.
+
+### Mip map debug
 
 The mip map debug feature included with the built-in renderer pipeline's scene view debug draw modes [does not exist](https://github.com/Unity-Technologies/Graphics/pull/4089) in the Universal Render Pipeline (URP). This is a useful feature to have when trying to reduce texture sizes.
 
@@ -35,8 +65,18 @@ For example, texel density is too high on the left cube and a bit too low on the
 
 ![MipMapDebug](images/EditorTooling/MipMapDebug.jpg)
 
+### Show and hide samples
+
+When opening the `MRGTUnityProject` in Unity. The `Samples` folder will not be visible in the `MRTK Graphics Tools` package by default. To show the samples select `Window > Graphics Tools > Show Samples` from the file menu bar.
+
+If you would like to hide samples, for example, before committing a contribution to the Graphics Tools package samples, select `Window > Graphics Tools > Hide Samples` from the file menu bar.
+
+> [!NOTE]
+> These menu items will be greyed out when Graphics Tools is an immutable package.
+
 ## See also
 
 * [Measure Tool](measure-tooling.md)
+* [Animation](animation.md)
 * [UnityUI Support](measure-tooling.md)
-* [Accessibility Utilities](accesibility-utilities.md)
+* [Accessibility Utilities](accessibility-utilities.md)
