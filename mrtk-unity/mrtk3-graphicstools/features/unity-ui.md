@@ -13,6 +13,8 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 UI elements provide interaction models which are intuitive and easily readable for the user.
 
 
+![Standard Shader hover lights](images/SampleScenes/UnityUI_01.jpg)
+
 ## Interactive Elements
 
 Buttons and sliders for example give the user a way to trigger an immediate action, they are two of the most foundational components in Mixed Reality.
