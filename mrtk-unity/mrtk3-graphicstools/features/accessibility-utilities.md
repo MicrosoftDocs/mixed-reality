@@ -1,6 +1,6 @@
 ---
-title: Mixed Reality Graphics Tools Developer Documentation
-description: Learn about the Mixed Reality Graphics Tools for Unity.
+title: Mixed Reality Graphics Tools Accessibility Utilities
+description: Learn about the Mixed Reality Graphics Tools Accessibility Utilities for Unity.
 author: chinezenwosu-ms
 ms.author: chinezenwosu
 ms.date: 06/01/2022
