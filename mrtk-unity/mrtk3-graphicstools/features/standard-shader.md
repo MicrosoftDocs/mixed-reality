@@ -12,7 +12,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 
 The Graphics Tools Standard shading system utilizes a flexible shader that can achieve visuals similar to Unity's Standard (or Lit) shader, implement [Fluent Design System](https://www.microsoft.com/design/fluent/) principles, and remain performant on mixed reality devices.
 
-![Standard Shader](images/StandardShader/StandardShader.jpg)
+![Standard shader material gallery sample](images/StandardShader/StandardShader.jpg)
 
 ## Sample
 
@@ -57,7 +57,7 @@ The Graphics Tools Standard shading system works with Unity's built in UI system
 
 A [Canvas](https://docs.unity3d.com/ScriptReference/Canvas.html) or [CanvasRenderer](https://docs.unity3d.com/ScriptReference/CanvasRenderer.html) within Graphics Tools will prompt for the addition of a `ScaleMeshEffect.cs` when one is required:
 
-![Scale Mesh Effect](images/StandardShader/ScaleMeshEffect.jpg)
+![Scale mesh effect inspector warning](images/StandardShader/ScaleMeshEffect.jpg)
 
 On UnityUI components, the `unity_ObjectToWorld` matrix (or `UNITY_MATRIX_M`  in URP) is not the transformation matrix of the local transform the Graphic component lives on but that of its parent Canvas. Many *Graphics Tools/Standard Canvas* shader effects require object scale to be known. To solve this issue, the `ScaleMeshEffect.cs` will store scaling information into UV channel attributes during UI mesh construction.
 
@@ -71,7 +71,7 @@ A custom material inspector exists for the *Graphics Tools/Standard* and *Graphi
 > [!NOTE]
 > The inspector UI is dynamic. Portions of the UI will change as features are enabled and disabled.
 
-![Material Inspector](images/StandardShader/MaterialInspector.jpg)
+![Material inspector for Graphics Tools/Standard](images/StandardShader/MaterialInspector.jpg)
 
 The inspector can be broken into a handful of features areas as described below.
 
@@ -88,7 +88,7 @@ The first portion of the inspector controls the material's render state. *Render
 | Additive       | Enables an additive blending mode, which sums the previous pixel color with the current pixel color. This is the preferred transparency mode to avoid transparency sorting issues.     |
 | Custom         | Allows for every aspect of the rendering mode to be controlled manually. For advanced usage only.   |
 
-![Rendering Modes](images/StandardShader/RenderingModes.jpg)
+![Rendering modes example lineup](images/StandardShader/RenderingModes.jpg)
 
 ### Cull mode
 
@@ -123,7 +123,7 @@ Triplanar mapping is a technique to programmatically texture a mesh. Often used 
 
 Rendering options mostly control the lighting settings for a material. This material section also contains a handful of other features that control a surface's color, translucency, or position. For more details about lighting please see [below](#lighting).
 
-![Lighting](images/StandardShader/Lighting.jpg)
+![Lighting comparisons](images/StandardShader/Lighting.jpg)
 
 ### Fluent options
 
@@ -133,7 +133,7 @@ Rendering options mostly control the lighting settings for a material. This mate
 
 Similar to the advanced section in Unity's built-in shaders. This section controls rendering order and if GPU instancing variants should be built. Additionally, there are configurable stencil test support to achieve a wide array of effects. Such as portals:
 
-![Portals](images/StandardShader/Portal.jpg)
+![Portal example](images/StandardShader/Portal.jpg)
 
 ## Lighting
 

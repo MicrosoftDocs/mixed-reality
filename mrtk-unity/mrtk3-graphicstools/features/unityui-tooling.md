@@ -12,7 +12,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 
 [UnityUI](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/index.html) may not be the first tool mixed reality developers think of when creating 3D user interfaces. But, with a few helper components and utilities it is possible to make beautiful and flexible 3D user interfaces in UnityUI.
 
-![Unity UI Tooling](images/UnityUITooling/UnityUITooling.jpg)
+![Unity UI example buttons and sliders](images/UnityUITooling/UnityUITooling.jpg)
 
 >[!TIP]
 > It is easy to create performance bottlenecks when authoring UnityUI. Before creating complex UnityUI layouts it is recommended you read this [tutorial](https://learn.unity.com/tutorial/optimizing-unity-ui).
@@ -51,7 +51,7 @@ All *Graphics Tools/Canvas/* shaders and the *Graphics Tools/Standard Canvas* sh
 
 `RoundedRectMask2D` derives from `RectMask2DFast` and acts very similar. The only difference is that `RoundedRectMask2D` contains a corner radius value for rounded corners. This radii can be selected for all corners or each corner individually.
 
-![RoundedRectMask2D](images/UnityUITooling/RoundedRectMask2D.jpg)
+![RoundedRectMask2D example with two images](images/UnityUITooling/RoundedRectMask2D.jpg)
 
 >[!NOTE]
 > Material instancing must be controlled by the user. i.e shared materials may be effected by `RoundedRectMask2D`.
@@ -64,13 +64,13 @@ The below [Graphic](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/api/Uni
 
 This component procedurally generates a 3D rounded rect mesh that is then assigned to the Canvas's vertex stream. Normally this component is used to generate back plate meshes in conjunction with the *Graphics Tools/Canvas/Backplate* shader.
 
-![CanvasElementRoundedRect](images/UnityUITooling/CanvasElementRoundedRect.jpg)
+![CanvasElementRoundedRect example backplate](images/UnityUITooling/CanvasElementRoundedRect.jpg)
 
 ### CanvasElementBeveledRect
 
 Just like `CanvasElementRoundedRect`, this component procedurally generates a 3D rounded rect but with beveled edges. Normally this component is used to generate back plate meshes in conjunction with the *Graphics Tools/Canvas/Beveled* shader.
 
-![CanvasElementBeveledRect](images/UnityUITooling/CanvasElementBeveledRect.jpg)
+![CanvasElementBeveledRect example](images/UnityUITooling/CanvasElementBeveledRect.jpg)
 
 ### CanvasElementMesh
 
@@ -78,7 +78,7 @@ Unity's [MeshRenderer](https://docs.unity3d.com/ScriptReference/MeshRenderer.htm
 
  The `CanvasElementMesh` component takes an input mesh and translates it into a Graphic component.
 
-![CanvasElementMesh](images/UnityUITooling/CanvasElementMesh.jpg)
+![CanvasElementMesh example with rocket](images/UnityUITooling/CanvasElementMesh.jpg)
 
 >[!IMPORTANT]
 > The input mesh must have its *Read/Write* property enabled so that vertices can be read within script.

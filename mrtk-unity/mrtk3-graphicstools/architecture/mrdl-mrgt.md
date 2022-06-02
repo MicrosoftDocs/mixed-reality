@@ -17,13 +17,15 @@ Graphics Tools is built to better share the tools and processes used to build MR
 ## Where can MRDL components be found?
 
 > [!TIP]
-> Looking for complete MRDL designed components? Take a look at higher level UX packages within the [MRTK](https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-unity). 
+> Looking for complete MRDL designed components? Take a look at higher level UX packages within the [MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity).
 
 The shaders and assets that power the MRDL can be found in the following locations:
 
 ### Shaders
 
 The first option of every material inspector contains a shader dropdown. All Graphics Tools shaders are within the `Graphics Tools` namespace. Most bespoke MRDL shaders are in the `Graphics Tools/Canvas` and `Graphics Tools/Non-Canvas` shader namespace. As the name suggests shaders in the `Canvas` namespace should be used with UnityUI canvases and shaders in the `Non-Canvas` namespace should be used within normal Unity contexts.
+
+![Shader dropdown in editor](images/MRDL-MRGT/ShaderDropdown.jpg)
 
 > [!TIP]
 > If you peer into the source code of these shaders you might notice they are more difficult to read than even a traditional shader. This is because they are generated from a tool.
@@ -47,7 +49,9 @@ Graphics Tools supports two user interface creation methods, UnityUI and traditi
 
 Provides an opaque backing for user interface elements to be placed on.
 
-|                    | Canvas                          | Non-Canvas                          |
+![Back plate example](images/MRDL-MRGT/BackPlate.jpg)
+
+| Asset              | Canvas                          | Non-Canvas                          |
 |--------------------|---------------------------------|-------------------------------------|
 | Shader             | Graphics Tools/Canvas/Backplate | Graphics Tools/Non-Canvas/Backplate |
 | Material           | CanvasBackplate                 | Non-CanvasBackplate                 |
@@ -57,7 +61,9 @@ Provides an opaque backing for user interface elements to be placed on.
 
 Displays a translucent surface above the back plate to show volume and proximity lighting.
 
-|                    | Canvas                           | Non-Canvas                           |
+![Front plate example](images/MRDL-MRGT/FrontPlate.jpg)
+
+| Asset              | Canvas                           | Non-Canvas                           |
 |--------------------|----------------------------------|--------------------------------------|
 | Shader             | Graphics Tools/Canvas/Frontplate | Graphics Tools/Non-Canvas/Frontplate |
 | Material           | CanvasFrontplate                 | Non-CanvasFrontplate                 |
@@ -67,7 +73,9 @@ Displays a translucent surface above the back plate to show volume and proximity
 
 A small highlight when an affordance is interacted with.
 
-|                    | Canvas                         | Non-Canvas                     |
+![Glow example](images/MRDL-MRGT/Glow.jpg)
+
+| Asset              | Canvas                         | Non-Canvas                     |
 |--------------------|--------------------------------|--------------------------------|
 | Shader             | Graphics Tools/Canvas/Glow     | Graphics Tools/Non-Canvas/Glow |
 | Material           | CanvasFrontplate               | Non-CanvasFrontplate           |
@@ -77,7 +85,9 @@ A small highlight when an affordance is interacted with.
 
 A larger glow when an affordance is indirectly interacted with.
 
-|                    | Canvas                          | Non-Canvas                          |
+![Quad glow example](images/MRDL-MRGT/QuadGlow.jpg)
+
+| Asset              | Canvas                          | Non-Canvas                          |
 |--------------------|---------------------------------|-------------------------------------|
 | Shader             | Graphics Tools/Canvas/Quad Glow | Graphics Tools/Non-Canvas/Quad Glow |
 | Material           | CanvasQuadGlow                  | Non-CanvasQuadGlow                  |
@@ -87,7 +97,9 @@ A larger glow when an affordance is indirectly interacted with.
 
 Similar to the back plate, but provides a rect with beveled edges.
 
-|                    | Canvas                        | Non-Canvas                                     |
+![Beveled rect example](images/MRDL-MRGT/BeveledRect.jpg)
+
+| Asset              | Canvas                        | Non-Canvas                                     |
 |--------------------|-------------------------------|------------------------------------------------|
 | Shader             | Graphics Tools/Canvas/Beveled | Graphics Tools/Non-Canvas/Beveled              |
 | Material           | BevCanvasBeveled              | Non-CanvasBeveled                              |

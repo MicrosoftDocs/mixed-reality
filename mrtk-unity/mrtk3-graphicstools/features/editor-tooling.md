@@ -10,7 +10,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 
 # Editor tooling
 
-Graphics Tools contains a plethora of Unity editor tooling to help with mixed reality development. A handful of items are described below. The rest can be found in their respective subject areas, such as [accessibility uilities](accessibility-utilities.md) and the [measure tool](measure-tooling.md).
+Graphics Tools contains a plethora of Unity editor tooling to help with mixed reality development. A handful of items are described below. The rest can be found in their respective subject areas, such as [accessibility uilities](accessibility-utilities.md) and the [measure tool](measure-tool.md).
 
 ## Menu items
 
@@ -30,7 +30,7 @@ Screenshots can be easily capture while in the editor by selecting `Window > Gra
 
 By default, all screenshots are saved to your [temporary cache path](https://docs.unity3d.com/ScriptReference/Application-temporaryCachePath.html), the path to the screenshot will be displayed in the Unity console.
 
-![Screenshot Example](images/EditorTooling/ScreenshotExample.png)
+![Screenshot example with transparent background](images/EditorTooling/ScreenshotExample.png)
 
 The above screenshot was captured with the *"4x Resolution (Transparent Background)"* option. (Scaled down to reduce download size.) This outputs a high-resolution image with whatever pixels normally represented by the clear color saved as transparent pixels. This technique helps developers showcase their application for the store, or other media outlets, by overlaying this image on top of other imagery.
 
@@ -63,7 +63,7 @@ In Graphics Tools a similar tool was reintroduced for the URP. The tool can be t
 
 For example, texel density is too high on the left cube and a bit too low on the right cube at this viewing distance:
 
-![MipMapDebug](images/EditorTooling/MipMapDebug.jpg)
+![Texel density comparison](images/EditorTooling/MipMapDebug.jpg)
 
 ### Show and hide samples
 
@@ -76,7 +76,7 @@ If you would like to hide samples, for example, before committing a contribution
 
 ## See also
 
-* [Measure Tool](measure-tooling.md)
+* [Measure Tool](measure-tool.md)
 * [Animation](animation.md)
-* [UnityUI Support](measure-tooling.md)
+* [UnityUI Support](unityui-tooling.md)
 * [Accessibility Utilities](accessibility-utilities.md)

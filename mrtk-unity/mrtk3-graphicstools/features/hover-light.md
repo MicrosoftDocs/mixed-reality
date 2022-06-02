@@ -12,7 +12,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 
 A `HoverLight` is a [Fluent Design System](https://www.microsoft.com/design/fluent/) paradigm that mimics a [point light](https://docs.unity3d.com/Manual/Lighting.html) hovering near the surface of an object. Often used for far away interactions, the application can control the properties of a Hover Light via the `HoverLight` component.
 
-![Hover Light](images/HoverLight/HoverLight.jpg)
+![Hover light example](images/HoverLight/HoverLight.jpg)
 
 For a material to be influenced by a `HoverLight` the *Graphics Tools/Standard* or the *Graphics Tools/Standard Canvas* shader must be used and the *Hover Light* property must be enabled.
 

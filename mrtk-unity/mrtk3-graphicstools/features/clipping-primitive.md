@@ -12,7 +12,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 
 The `ClippingPrimitive` behaviors allow for performant `plane`, `sphere`, and `box` shape clipping with the ability to specify which side of the primitive to clip against (inside or outside) when used with Graphics Tools shaders.
 
-![Clipping Primitive](images/ClippingPrimitive/ClippingPrimitive.jpg)
+![Clipping primitive example](images/ClippingPrimitive/ClippingPrimitive.jpg)
 
 > [!NOTE]
 > `ClippingPrimitive`s utilize [clip/discard](https://developer.download.nvidia.com/cg/clip.html) instructions within shaders and disable Unity's ability to batch clipped renderers. Take these performance implications in mind when utilizing clipping primitives.
