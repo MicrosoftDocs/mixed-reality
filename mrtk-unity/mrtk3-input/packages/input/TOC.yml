@@ -3,7 +3,7 @@
 - name: Input simulation
   href: input-simulation.md
 - name: Speech input
-  href: speech-input.md
+  href: speech.md
 - name: System keyboard
   href: system-keyboard.md
 - name: Hand tracking
