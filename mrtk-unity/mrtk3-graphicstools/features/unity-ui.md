@@ -1,7 +1,7 @@
 ---
 title: Unity UI Sample Scene
 description: Illustrated walkthrough of featured UI elements
-author: martinwettig
+author: Species521
 ms.author: wettigmarti
 ms.date: 06/01/2022
 ms.localizationpriority: medium
