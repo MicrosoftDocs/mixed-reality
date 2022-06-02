@@ -1,4 +1,4 @@
 - name: Packages overview
   href: ../mrtk3-overview/packages/packages-overview
-- name: Core overview
-  href: core-overview.md
+- name: Spatial manipulation overview
+  href: spatialmanipulation-overview.md
