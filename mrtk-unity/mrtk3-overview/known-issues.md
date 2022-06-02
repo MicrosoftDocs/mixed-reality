@@ -54,6 +54,6 @@
 - **BuildFailedException**: No valid MRTK Profile for build target platform.
     - Check the **Player Settings > Mixed Reality Toolkit > MRTK Settings** to see if the profile (the top one above the subsystems) is present.
 
-![Build failed exception in Unity](.images/build-failed-exception.png)
+![Build failed exception in Unity](images/build-failed-exception.png)
 
-![Check in the Player Settings to see if the MRTK Profile is present](.images\mrtk-profile.png)
+![Check in the Player Settings to see if the MRTK Profile is present](images\mrtk-profile.png)

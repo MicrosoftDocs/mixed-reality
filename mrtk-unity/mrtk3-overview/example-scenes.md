@@ -7,7 +7,7 @@
 
 You can experience various hand interaction and UI examples such as poke, touch, grab, and two-handed manipulations.
 
-![Hand Menu](.images/hand-interaction-examples.png)
+![Hand Menu](images/hand-interaction-examples.png)
 
 **BoundsControlExamples**
 
@@ -93,7 +93,7 @@ Demonstration of using Data Binding and Theming to bind to data sources.
 1. Add the **MRTK XR Rig** prefab
 1. Remove the **Main Camera** Game Object because the **MRTK XR Rig** already contains one
 
-    ![Hand Menu](.images\mrtk-xr-rig.png)
+    ![Hand Menu](images\mrtk-xr-rig.png)
 
 1. Add the MRTK Input Simulator prefab to your scene.
 
@@ -101,6 +101,6 @@ Demonstration of using Data Binding and Theming to bind to data sources.
     >This step is optional, but required by in-editor simulations.
 
 
-![MRTK input simulator hierarchy pane](.images\mrtk-input-simulator.png)
+![MRTK input simulator hierarchy pane](images\mrtk-input-simulator.png)
 
 
