@@ -20,3 +20,14 @@ In the Graphics Tools there are already button and slider prefabs available with
 
 
 <img src="images/SampleScenes/UnityUI_interactive_01.jpg" width="40%" height="40%">
+
+## Masking Options
+
+
+<img src="images/SampleScenes/UnityUImasking_sample_01.gif" width="40%" height="40%">
+
+
+## 3D Mesh Integration and Animations
+
+
+<img src="images/SampleScenes/UnityUIinteractive_sample_01.gif" width="40%" height="40%">
