@@ -1,7 +1,7 @@
 - name: Welcome to MRTK3
   href: ../mrtk3-overview/index.md
 - name: Setup
-  href: ../../mrtk3-overview/setup.md
+  href: ../mrtk3-overview/setup.md
 - name: Deployment
   href: ../mrtk3-overview/setup.md
 - name: Packages
