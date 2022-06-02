@@ -3,7 +3,7 @@
 - name: Setup
   href: setup.md
 - name: Deployment
-  href: setup.md
+  href: deployment/toc.yml
 - name: Packages
   href: packages/toc.yml
 - name: Example scenes

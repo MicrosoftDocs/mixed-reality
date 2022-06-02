@@ -3,7 +3,7 @@
 - name: Setup
   href: ../mrtk3-overview/setup.md
 - name: Deployment
-  href: ../mrtk3-overview/setup.md
+  href: ../mrtk3-overview/deployment/toc.yml
 - name: Packages
   href: packages/toc.yml
 - name: Example scenes
