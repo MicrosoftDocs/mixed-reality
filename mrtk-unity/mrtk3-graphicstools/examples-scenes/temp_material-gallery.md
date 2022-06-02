@@ -1,7 +1,7 @@
 ---
 title: Material Gallery Sample Scene
 description: Illustrated walkthrough of the Material Gallery scene
-author: martinwettig
+author: Species521
 ms.author: wettigmarti
 ms.date: 06/01/2022
 ms.localizationpriority: medium
