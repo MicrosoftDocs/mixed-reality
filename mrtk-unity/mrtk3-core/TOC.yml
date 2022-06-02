@@ -1,16 +1,16 @@
 - name: Welcome to MRTK3
-  href: ../../mrtk3-overview/index.md
+  href: ../mrtk3-overview/index.md
 - name: Setup
   href: ../../mrtk3-overview/setup.md
 - name: Deployment
-  href: ../../mrtk3-overview/setup.md
+  href: ../mrtk3-overview/setup.md
 - name: Packages
   href: packages/toc.yml
 - name: Example scenes
-  href: ../../mrtk3-overview/example-scenes.md
+  href: ../mrtk3-overview/example-scenes.md
 - name: Debugging and testing
-  href: ../../mrtk3-overview/debugging-and-testing.md
+  href: ../mrtk3-overview/debugging-and-testing.md
 - name: Known issues
-  href: ../../mrtk3-overview/known-issues.md
+  href: ../mrtk3-overview/known-issues.md
 - name: Release notes
-  href: ../../mrtk3-overview/release-notes.md
+  href: ../mrtk3-overview/release-notes.md
