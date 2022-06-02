@@ -14,7 +14,7 @@ The `Accessibility utilities` provide support for some basic accessibility featu
 
 The following features are supported:
 
-## Toggle Text Color Inversion
+## Toggle text color inversion
 
 This feature instructs a "Graphics Tools/Text Mesh Pro" based material to display a face color which is an inversion of its background color.
 
