@@ -74,7 +74,7 @@ Just like `CanvasElementRoundedRect`, this component procedurally generates a 3D
 
 ### CanvasElementMesh
 
-Unity's [MeshRenderer](https://docs.unity3d.com/ScriptReference/MeshRenderer.html) component can be used to display 3D meshes within UnityUI, but it does not respect some of the layout features UnityUI provides. To solve these layout issues there is the `CanvasElementMesh` component.
+Unity's [MeshRenderer](https://docs.unity3d.com/ScriptReference/MeshRenderer.html) component can be used to display 3D meshes within UnityUI, but it does not respect some of the layout features UnityUI provides. To solve these layout issues there's the `CanvasElementMesh` component.
 
  The `CanvasElementMesh` component takes an input mesh and translates it into a Graphic component.
 

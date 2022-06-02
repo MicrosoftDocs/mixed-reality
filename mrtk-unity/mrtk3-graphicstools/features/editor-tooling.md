@@ -48,13 +48,13 @@ The `Window > Graphics Tools > Canvas Material Animators > Generate All` menu it
 
 ### Mip map debug
 
-The mip map debug feature included with the built-in renderer pipeline's scene view debug draw modes [does not exist](https://github.com/Unity-Technologies/Graphics/pull/4089) in the Universal Render Pipeline (URP). This is a useful feature to have when trying to reduce texture sizes.
+The mip map debug feature included with the built-in renderer pipeline's scene view debug draw modes [doesn't exist](https://github.com/Unity-Technologies/Graphics/pull/4089) in the Universal Render Pipeline (URP). This is a useful feature to have when trying to reduce texture sizes.
 
 In Graphics Tools a similar tool was reintroduced for the URP. The tool can be toggled on via the `Window > Graphics Tools > Draw Modes > Mipmaps - Enable` and off via the `Window > Graphics Tools > Draw Modes > Mipmaps - Disable` menu items. When enabled the scene view will be tinted based on texel to pixel ratio.
 
 | Color          | Meaning                                                                                   |
 |----------------|-------------------------------------------------------------------------------------------|
-| Original Color | It’s a perfect match (1:1 texels to pixels ratio at the current distance and resolution). |
+| Original Color | It’ is a perfect match (1:1 texels to pixels ratio at the current distance and resolution). |
 | Red            | Indicates that the texture is larger than necessary.                                      |
 | Blue           | Indicates that the texture could be larger.                                               |
 
