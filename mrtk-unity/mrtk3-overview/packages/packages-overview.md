@@ -3,7 +3,7 @@
 Microsoft MRTK3 is distributed as a set of packages that are imported into Unity using the Mixed Reality Feature Tool for Unity and the Unity Package Manager (UPM). These packages enable developers to customize the MRTK within their projects.
 
 >[!Note]
->For the MRTK3 Private Preview, the Mixed Reality Feature Tool will not be used. For more information on importing MRTK packages, please review [Initial setup](/Setup).
+>For the MRTK3 Private Preview, the Mixed Reality Feature Tool will not be used. For more information on importing MRTK packages, please review [Initial setup](../Setup).
 
 ## Dependencies
 
@@ -11,7 +11,7 @@ Some MRTK3 packages require additional packages, provided by Microsoft and/or Un
 
 The following diagram illustrates the relationship between MRTK packages and some of the Unity dependencies.
 
-![MRTK3 Package Graph](.images/MRTK3_Packages.png)
+![MRTK3 Package Graph](../images/MRTK3_Packages.png)
 
 >[!Note]
 >When importing packages via the Mixed Reality Feature Tool, dependency management is automatically performed.
