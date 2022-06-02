@@ -1,4 +1,28 @@
 - name: Packages overview
   href: ../mrtk3-overview/packages/packages-overview
-- name: Spatial manipulation overview
-  href: spatialmanipulation-overview.md
+- name: Spatial manipulation
+  href: spatialmanipulation/toc.yml
+- name: Accessibility
+  href: ../../mrtk3-accessibility/packages/accessibility/overview.md
+- name: Core definitions
+  href: ../../mrtk3-core/packages/core/overview.md
+- name: Data binding and theming
+  href: ../../mrtk3-data/packages/data/overview.md
+- name: Diagnostics
+  href: ../../mrtk3-diagnostics/packages/diagnostics/overview.md
+- name: Environment
+  href: ../../mrtk3-environment/packages/environment/overview.md
+- name: Extended assets
+  href: ../../mrtk3-extendedassets/packages/extendedassets/overview.md
+- name: Graphics tools
+  href: ../../mrtk3-graphicstools/index.md
+- name: Input
+  href: ../../mrtk3-input/packages/input/overview.md
+- name: Standard assets
+  href: ../../mrtk3-standardassets/packages/standardassets/overview.md
+- name: UX components
+  href: ../../mrtk3-uxcomponents/packages/uxcomponents/overview.md
+- name: UX core
+  href: ../../mrtk3-uxcore/packages/uxcore/overview.md
+- name: Windows speech
+  href: ../../mrtk3-windowsspeech/packages/windowsspeech/overview.md
