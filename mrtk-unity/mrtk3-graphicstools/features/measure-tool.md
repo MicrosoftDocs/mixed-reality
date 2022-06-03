@@ -16,7 +16,8 @@ The `Measure Tool` is a tool to view the local sizes of objects to graphics tool
 It currently supports four operational modes [RectTransforms](https://docs.unity3d.com/ScriptReference/RectTransform.html), [3d Colliders](https://docs.unity3d.com/ScriptReference/Collider.html), [Mesh Renderers](https://docs.unity3d.com/ScriptReference/MeshRenderer.html), Distance Between Objects.
 
 
-To get started with the Measure Tool, you need to have followed the `Graphics Tools` setup steps. 
+> [!NOTE]
+> To get started with the Measure Tool, you need to have followed the [Graphics Tools setup process](../index.md). 
 
 Navigate to Window/Graphics Tools and Measure Tool should be available if Graphics Tools is properly setup.
 
