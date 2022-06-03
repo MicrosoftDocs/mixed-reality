@@ -43,7 +43,8 @@ There's also an option to gradually blend in an updated map over several frames 
 ### Editor options
 
 Use the `Retain in Editor` option in the Acrylic Layer Manager component to leave the acrylic layers enabled when the app is not playing.
-This option only works with the Copy Framebuffer capture method.
+> [!Note]
+> This option only works with the Copy Framebuffer capture method.
 
 ### Platform-specific settings
 
