@@ -23,14 +23,15 @@ For more information about the this, have a look at the [Acrylic documentation](
 ## Acrylic in real-time
 
 
-<img src="images/SampleScenes/Acrylic_sample_01.gif" width="1057" height="563">
+<img src="images/SampleScenes/Acrylic_sample_01.gif" width="50%" height="50%">
 
 In this example, the shader reacts in realtime to the moving objects in the background.
 While this is a powerful visual, please be aware that the real-time use is rather expensive in terms of performance.
 
 ## Acylic Pre-baked
 
-![Acrylic pre-baked sample](images/SampleScenes/acrylic_sample_02.jpg)
+
+<img src="images/SampleScenes/acrylic_sample_02.jpg" width="50%" height="50%">
 
 As a different option, Acrylic blurs a static background like the photos above beforehand.
 The rounded plates on top of the photos act as stencil windows to make the pre-blurred image visible in that area.
