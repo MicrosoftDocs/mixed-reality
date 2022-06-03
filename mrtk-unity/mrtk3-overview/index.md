@@ -89,8 +89,8 @@ To acquire and use MRTK3, the following software tools are required.
 
 In previous versions of MRTK (HoloToolkit and MRTK v2), all packages were released as a complete set, marked with the same version number (ex: 2.8.0). Starting with MRTK3, each package will be individually versioned, following the [Semantic Versioning 2.0.0 specification](https://semver.org/spec/v2.0.0.html). 
 
-> ![NOTE]
-> The '3' in MRTK3 is not a version number. It is an indicator of the generation of the underlying architecture, with HoloToolkit being generation one and MRTK v2.x being generation two.
+>[!NOTE]
+>The '3' in MRTK3 is not a version number. It is an indicator of the generation of the underlying architecture, with HoloToolkit being generation one and MRTK v2.x being generation two.
 
 Individual versioning will enable faster servicing while providing improved developer understanding of the magnitude of changes and reducing the number of packages needing to be updated to acquire the desired fix(es).
 
