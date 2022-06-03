@@ -54,7 +54,7 @@ Capture Method = Copy Framebuffer
 Filter Method = Kawase
 Update Period = 1
 
-## Example
+## Sample
 
 You can view this feature in action by importing the Acrylic sample from the MRTK Graphics Tools package in the package manager. A `Samples` folder will be created in your project.
 
