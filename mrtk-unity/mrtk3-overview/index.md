@@ -17,19 +17,17 @@ MRTK3 is the third generation of the Microsoft Mixed Reality Toolkit for Unity. 
 * Provides the **cross-platform input system and building blocks for spatial interactions and UI**.
 * Enables **rapid prototyping** via in-editor simulation that allows you to see changes immediately.
 * Operates as an **extensible framework** that allows developers the ability to swap out core components.
-* **Supports a wide range of platforms:**.
-
-## Welcome to the MRTK3 Public Preview!
-
-We hear your excitement, and we want to give you early access to our newest features and invite you to take part in shaping our future iterations through your feedback. MRTK3 is now in public preview, which represents our current snapshot in development. Some features are still missing, broken, or otherwise not at parity with MRTK 2.x. We appreciate your patience while we shape the future of MRTK and look forward to your feedback and suggestions. We’re excited to give you a glimpse of what is to come!
-
-### Supported platforms
+* **Supports a wide range of platforms:**
 
 | Platform | Supported Devices |
 |---|---|
 | OpenXR (Unity 2020.3.30+) | Microsoft HoloLens 2 <br> Meta Quest (experimental) <br> Windows Mixed Reality (experimental) <br> SteamVR (experimental) <br> Oculus Rift on OpenXR (experimental) |
 | Windows | Traditional flat-screen desktop (experimental)
 | And more coming soon! |
+
+## Welcome to the MRTK3 Public Preview!
+
+We hear your excitement, and we want to give you early access to our newest features and invite you to take part in shaping our future iterations through your feedback. MRTK3 is now in public preview, which represents our current snapshot in development. Some features are still missing, broken, or otherwise not at parity with MRTK 2.x. We appreciate your patience while we shape the future of MRTK and look forward to your feedback and suggestions. We’re excited to give you a glimpse of what is to come!
 
 ### Key improvements
 
