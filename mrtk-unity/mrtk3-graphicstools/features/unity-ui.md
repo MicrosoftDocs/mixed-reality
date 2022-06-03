@@ -19,6 +19,7 @@ UI elements provide interaction models which are intuitive and easily readable f
 
 Buttons and sliders for example give the user a way to trigger an immediate action, they are two of the most foundational components in Mixed Reality.
 In the Graphics Tools there are already button and slider prefabs available with a lot of customization options.
+When you enter the scene in Unity's Play mode, you'll be able to interact with the samples.
 
 
 <img src="images/SampleScenes/UnityUI_interactive_01.jpg" width="40%" height="40%">
