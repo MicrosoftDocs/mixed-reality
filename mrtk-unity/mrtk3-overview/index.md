@@ -122,11 +122,59 @@ We very much encourage you to provide any and all feedback to help shape the fin
 
 ## UX building blocks
 
+:::row:::
+    :::column:::
+       [![MRTK_UX_v3_Button.png](images/UXBuildingBlocks/MRTK_UX_v3_Button.png)](features/ux-building-blocks/button.md)
+        **[Button](features/ux-building-blocks/button.md)**<br>
+        A volumetric button optimized for a wide range of input modalities, including poking, gaze-pinch, ray interactions, mouse click, and gamepad.
+    :::column-end:::
+    :::column:::
+        [![MRTK_UX_v3_BoundsControl.png](images/UXBuildingBlocks/MRTK_UX_v3_BoundsControl.png)](features/ux-building-blocks/bounds-control.md)
+        **[Bounds Control](features/ux-building-blocks/bounds-control.md)**<br>
+        Intent feedback and precision manipulation affordances.
+    :::column-end:::
+    :::column:::
+        [![MRTK_UX_v3_ObjectManipulator.png](images/UXBuildingBlocks/MRTK_UX_v3_ObjectManipulator.png)](features/ux-building-blocks/object-manipulator.md)
+        **[Object Manipulator](features/ux-building-blocks/object-manipulator.md)**<br>
+        Move and manipulate objects with one or two hands with a wide variety of input modalities.
+    :::column-end:::
+:::row-end:::
 
-| [![MRTK_UX_v3_Button.png](images/UXBuildingBlocks/MRTK_UX_v3_Button.png)](/features/ux-building-blocks/Button)<br>**[Button](features/ux-building-blocks/Button)**<br>A volumetric button optimized for a wide range of input modalities, including poking, gaze-pinch, ray interactions, mouse click, and gamepad. | [![MRTK_UX_v3_BoundsControl.png](images/UXBuildingBlocks/MRTK_UX_v3_BoundsControl.png)](features/ux-building-blocks/Bounds-control)<br>**[Bounds Control](features/ux-building-blocks/Bounds-control)**<br>Intent feedback and precision manipulation affordances. | [![MRTK_UX_v3_ObjectManipulator.png](images/UXBuildingBlocks/MRTK_UX_v3_ObjectManipulator.png)](features/ux-building-blocks/Object-manipulator)<br>**[Object Manipulator](features/ux-building-blocks/Object-manipulator)**<br>Move and manipulate objects with one or two hands with a wide variety of input modalities. |
-|--|--|--|
-| [![MRTK_UX_v3_HandMenu.png](images/UXBuildingBlocks/MRTK_UX_v3_HandMenu.png)](features/ux-building-blocks/Hand-menu)<br>**[Hand Menu](features/ux-building-blocks/Hand-menu)**<br>A hand-anchored collection of UX controls for easy access to quick actions. | [![MRTK_UX_v3_NearMenu.png](images/UXBuildingBlocks/MRTK_UX_v3_NearMenu.png)](features/ux-building-blocks/Near-menu)<br>**[Near Menu](features/ux-building-blocks/Near-menu)**<br>Collection of UX controls can be manipulated, pinned, and set to follow the user. | [![MRTK_UX_v3_Slider.png](images/UXBuildingBlocks/MRTK_UX_v3_Slider.png)](features/ux-building-blocks/Slider)<br>**[Slider](features/ux-building-blocks/Slider)**<br>Adjust a value along a one-dimensional axis. |
-| [![MRTK_Solver_Main.png](images/UXBuildingBlocks/MRTK_Solver_Main.png)](features/ux-building-blocks/solvers/solver)<br>**[Solver](features/ux-building-blocks/solvers/solver)**<br>Various object positioning behaviors such as tag-along, body-lock, constant view size, and surface magnetism. | [![MRTK_UX_v3_Dialog.png](images/UXBuildingBlocks/MRTK_UX_v3_Dialog.png)](features/ux-building-blocks/Dialog)<br>**[Dialog](features/ux-building-blocks/Dialog)**<br>Prompt for user action. | [![MRTK_UX_v3_Slate.png](images/UXBuildingBlocks/MRTK_UX_v3_Slate.png)](features/ux-building-blocks/Slate)<br>**[Slate](features/ux-building-blocks/Slate)**<br>A flat panel for displaying large-format interfaces and content. |
+:::row:::
+    :::column:::
+       [![MRTK_UX_v3_HandMenu.png](images/UXBuildingBlocks/MRTK_UX_v3_HandMenu.png)](features/ux-building-blocks/slate.md)
+        **[Hand Menu](features/ux-building-blocks/slate.md)**<br>
+        A hand-anchored collection of UX controls for easy access to quick actions.
+    :::column-end:::
+    :::column:::
+        [![MRTK_UX_v3_NearMenu.png](images/UXBuildingBlocks/MRTK_UX_v3_NearMenu.png)](features/ux-building-blocks/system-keyboard.md)
+        **[Near Menu](features/ux-building-blocks/system-keyboard.md)**<br>
+        Collection of UX controls can be manipulated, pinned, and set to follow the user.
+    :::column-end:::
+    :::column:::
+        [![MRTK_UX_v3_Slider.png](images/UXBuildingBlocks/MRTK_UX_v3_Slider.png)](features/ux-building-blocks/interactable.md)
+        **[Slider](features/ux-building-blocks/interactable.md)**<br>
+        Adjust a value along a one-dimensional axis.
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![MRTK_Solver_Main.png](images/UXBuildingBlocks/MRTK_Solver_Main.png)](features/ux-building-blocks/solvers/solver.md)
+        **[Solver](features/ux-building-blocks/solvers/solver.md)**<br>
+        Various object positioning behaviors such as tag-along, body-lock, constant view size and surface magnetism
+    :::column-end:::
+    :::column:::
+        [![MRTK_UX_v3_Dialog.png](images/UXBuildingBlocks/MRTK_UX_v3_Dialog.png)](features/ux-building-blocks/object-collection.md)
+        **[Dialog](features/ux-building-blocks/object-collection.md)**<br>
+        Prompt for user action.
+    :::column-end:::
+    :::column:::
+        [![MRTK_UX_v3_Slate.png](images/UXBuildingBlocks/MRTK_UX_v3_Slate.png)](features/ux-building-blocks/tooltip.md)
+        **[Slate](features/ux-building-blocks/tooltip.md)**<br>
+        A flat panel for displaying large-format interfaces and content.
+    :::column-end:::
+:::row-end:::
 
 ## Roadmap
 
