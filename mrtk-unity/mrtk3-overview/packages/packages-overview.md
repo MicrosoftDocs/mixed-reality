@@ -1,3 +1,13 @@
+---
+title: Mixed Reality Toolkit 3 Developer Documentation - Package overview
+description: Mixed Reality Toolkit 3 for developers - Package overview.
+author: MaxWang-MS
+ms.author: wangmax
+ms.date: 6/3/2022
+ms.localizationpriority: high
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, packages
+---
+
 # Using MRTK3 packages
 
 Microsoft MRTK3 is distributed as a set of packages that are imported into Unity using the Mixed Reality Feature Tool for Unity and the Unity Package Manager (UPM). These packages enable developers to customize the MRTK within their projects.

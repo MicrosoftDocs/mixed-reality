@@ -1,3 +1,13 @@
+---
+title: Mixed Reality Toolkit 3 Developer Documentation - initial setup
+description: Mixed Reality Toolkit 3 for developers - initial setup.
+author: MaxWang-MS
+ms.author: wangmax
+ms.date: 6/3/2022
+ms.localizationpriority: high
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, initial setup
+---
+
 # Initial Setup for MRTK3
 
 Welcome to the MRTK3 preview! As MRTK3 is a collection of loosely coupled packages, consuming MRTK3 is different from that of MRTK 2.x. We don't ship MRTK as a Unity project, so you're expected to either use our example template project, which is pre-configured to consume all MRTK packages, or start fresh with a new project (recommended).
