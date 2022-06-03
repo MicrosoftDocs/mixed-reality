@@ -8,11 +8,11 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, Standard Shader
 ---
 
-![Graphics Tools](images/MRTKBanner.png)
-
 # What is Graphics Tools?
 
 MRTK Graphics Tools for Unity is a Unity engine package with code, shaders, assets, and samples created to help improve the visual fidelity of Mixed Reality applications while staying within performance budgets.
+
+![Graphics Tools](images/MRTKBanner.png)
 
 > [!NOTE]
 > The Graphics Tools package requires Unity 2020.x and above.
@@ -33,7 +33,6 @@ Samples will import into your project's `Assets` folder so they may be opened an
 
 Click on the below topics to learn more about specific features.
 
-| | | | |
-| :------------- | :----------: | -----------: | -----------: | 
-| [Standard shader](features/standard-shader.md) 🎨 | [UnityUI tooling](features/clipping-primitive.md) 🛠 | [Proximity light](features/proximity-light.md) 💡 | [Hover light](features/hover-light.md) 👆 |
-| [Editor tooling](features/editor-tooling.md) ✨ | [Animation](features/animation.md) 🚶‍♀️ | [Clipping primitive](features/clipping-primitive.md) ✂ | [Mesh outlines](features/mesh-outlines.md) 💥 |
+| [Standard shader](features/standard-shader.md) 🎨 | [UnityUI tooling](features/clipping-primitive.md) 🛠 | [Editor tooling](features/editor-tooling.md) ✨         | [Animation](features/animation.md) 🚶‍♀️        |
+|--------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------|----------------------------------------------|
+| [Proximity light](features/proximity-light.md) 💡 | [Hover light](features/hover-light.md) 👆            | [Clipping primitive](features/clipping-primitive.md) ✂ | [Mesh outlines](features/mesh-outlines.md) 💥 |
