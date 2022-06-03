@@ -24,7 +24,7 @@ The Graphics Tools/Standard shading system is an "uber shader" that uses [Unity'
 
 To better support traditional Unity workflows and [UnityUI](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/index.html) (canvas) workflows the Graphics Tools/Standard shading system has two shader entry points:
 
-|        | Default                 | UnityUI                        |
+| Context| Default                 | UnityUI                        |
 |--------|-------------------------|--------------------------------|
 | Name   | *Graphics Tools/Standard* | *Graphics Tools/Standard Canvas* |
 | Shader | GraphicsToolsStandard   | GraphicsToolsStandardCanvas    |
