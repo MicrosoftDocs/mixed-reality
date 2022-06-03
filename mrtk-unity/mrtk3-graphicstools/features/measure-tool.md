@@ -72,4 +72,5 @@ The tool has multiple modes that can be selected via a dropdown menu in the sett
 
 ## See also
 
-* [Architecture Overview](architecture\overview.md)
+* [Architecture Overview](..\architecture\overview.md)
+
