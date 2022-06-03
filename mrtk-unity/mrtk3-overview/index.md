@@ -12,35 +12,16 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3
 
 ![MRTK_UX_v3_Cover.png](images/MRTK_UX_v3_Cover.png)
 
-# Welcome to the MRTK3 Public Preview!
-
-We hear your excitement, and we want to give you early access to our newest features and invite you to take part in shaping our future iterations through your feedback. This public preview represents an early snapshot in development. Some features are still missing, broken, or otherwise not at parity with MRTK 2.x. We appreciate your patience while we shape the future of MRTK and look forward to your feedback and suggestions. We’re excited to give you a glimpse of what is to come!
-
-## What should this private preview be used for?
-
-* Try out our newest features and build prototypes
-* Familiarize yourself with XRI and the Unity infrastructure on top of which MRTK3 is built
-* Evaluate the new packaging strategy and the a la carte dependency model
-* Explore OpenXR compatibility and features
-* Learn about our new UX systems and visual design language
-
-## What should this private preview _not_ be used for?
-
-* Migrating any existing projects from 2.x to MRTK3. The API instability of these early releases may make a migration effort frustrating.
-* Writing production-ready code that expects a stable API
-* Evaluate performance for your applications (Full release may have significant performance differences compared to the codebase today)
-
-## **Head to the docs!**
-Head over to [the Wiki tab for the welcome page (this page)](https://mixedrealitycloud.visualstudio.com/MRTK/_wiki/wikis/MRTK.wiki/216/Welcome-to-MRTK3), instructions on setup, additional information about our features, and feedback/bug reporting options.
-
-## What is MRTK3?
-
-MRTK3 is a Microsoft-driven project that provides a set of components and features used to accelerate cross-platform MR app development in Unity. Here are some of its functions:
+MRTK3 is the third generation of the Microsoft Mixed Reality Toolkit for Unity. It is a Microsoft driven open source project to accelerate cross-platform mixed reality development in Unity. This new version is built on top of Unity's XR Management system and XR Interaction Toolkit. Here are some of its functions:
 
 * Provides the **cross-platform input system and building blocks for spatial interactions and UI**.
 * Enables **rapid prototyping** via in-editor simulation that allows you to see changes immediately.
 * Operates as an **extensible framework** that allows developers the ability to swap out core components.
 * **Supports a wide range of platforms:**.
+
+## Welcome to the MRTK3 Public Preview!
+
+We hear your excitement, and we want to give you early access to our newest features and invite you to take part in shaping our future iterations through your feedback. MRTK3 is now in public preview, which represents our current snapshot in development. Some features are still missing, broken, or otherwise not at parity with MRTK 2.x. We appreciate your patience while we shape the future of MRTK and look forward to your feedback and suggestions. We’re excited to give you a glimpse of what is to come!
 
 ### Supported platforms
 
@@ -50,7 +31,7 @@ MRTK3 is a Microsoft-driven project that provides a set of components and featur
 | Windows | Traditional flat-screen desktop (experimental)
 | And more coming soon! |
 
-## Key improvements
+### Key improvements
 
 **Architecture**
 
@@ -81,6 +62,66 @@ MRTK3 is a Microsoft-driven project that provides a set of components and featur
 
 * OpenXR, Unity 2020.3 LTS, Unity’s XR Interaction Toolkit as minimum requirements
 
+### What should this public preview be used for?
+
+* Try out our newest features and build prototypes
+* Familiarize yourself with XRI and the Unity infrastructure on top of which MRTK3 is built
+* Evaluate the new packaging strategy and the a la carte dependency model
+* Explore OpenXR compatibility and features
+* Learn about our new UX systems and visual design language
+
+### What should this public preview _not_ be used for?
+
+* Migrating any existing projects from 2.x to MRTK3. The current API instability may make a migration effort frustrating.
+* Writing production-ready code that expects a stable API
+* Evaluate performance for your applications (Full release may have significant performance differences compared to the codebase today)
+
+## Software Requirements
+
+To acquire and use MRTK3, the following software tools are required.
+
+| Software | Version | Notes
+| --- | --- | --- |
+| [Microsoft Visual Studio](https://visualstudio.microsoft.com/) | 2019 Community edition or greater | Recommend Visual Studio 2022 |
+| Unity | 2020.3, 2021.3 or newer | Recommend using an LTS release |
+| [Mixed Reality Feature Tool for Unity](https://aka.ms/mrfeaturetool) | | Used to acquire MRTK3 packages |
+| Mixed Reality OpenXR Plugin | | Install via Mixed Reality Feature Tool |
+
+## Versioning
+
+In previous versions of MRTK (HoloToolkit and MRTK v2), all packages were released as a complete set, marked with the same version number (ex: 2.8.0). Starting with MRTK3, each package will be individually versioned, following the [Semantic Versioning 2.0.0 specification](https://semver.org/spec/v2.0.0.html). 
+
+>![NOTE]
+>The '3' in MRTK3 is not a version number. It is an indicator of the generation of the underlying architecture, with HoloToolkit being generation one and MRTK v2.x being generation two.
+
+Individual versioning will enable faster servicing while providing improved developer understanding of the magnitude of changes and reducing the number of packages needing to be updated to acquire the desired fix(es).
+
+For example, if a non-breaking new feature is added to the UX core package, which contains the logic for user interface behavior the minor version number will increase (from 3.0.x to 3.1.0). Since the change is non-breaking, the UX components package, which depends upon UX core, is not required to be updated. 
+
+As a result of this change, there is not a unified MRTK3 product version.
+
+To help identify specific packages and their versions, MRTK3 provides an about dialog that lists the relevant packages included in the project. To access this dialog, select `Mixed Reality` > `MRTK3` > `About MRTK` from the Unity Editor menu.
+
+## Branch Status
+
+MRTK3 is currently in public preview and it is not recommended for use in production projects. We appreciate your testing, issues and feedback while the team works towards general availability (GA).
+
+### Early preview packages
+
+Some parts of MRTK3 are at earlier stages of the development process than others. Early preview packages can be identified in the Mixed Reality Feature Tool and Unity Package Manager by the `Early Preview` designation in their names.
+
+As of June 2022, the following components are considered to be in early preview.
+
+| Name | Package Name |
+| --- | --- |
+| Accessibility | com.microsoft.mrtk.accessibility |
+| Data Binding and Theming | com.microsoft.mrtk.data |
+| Environment | com.microsoft.mrtk.environment |
+ 
+The MRTK team is fully committed to releasing this functionality. It is important to note that the packages may not contain the complete feature set that is planned to be released or they may undergo major, breaking architectural changes before release.
+
+We very much encourage you to provide any and all feedback to help shape the final form of these early preview features.
+
 ## UX building blocks
 
 
@@ -88,3 +129,13 @@ MRTK3 is a Microsoft-driven project that provides a set of components and featur
 |--|--|--|
 | [![MRTK_UX_v3_HandMenu.png](images/UXBuildingBlocks/MRTK_UX_v3_HandMenu.png)](features/ux-building-blocks/Hand-menu)<br>**[Hand Menu](features/ux-building-blocks/Hand-menu)**<br>A hand-anchored collection of UX controls for easy access to quick actions. | [![MRTK_UX_v3_NearMenu.png](images/UXBuildingBlocks/MRTK_UX_v3_NearMenu.png)](features/ux-building-blocks/Near-menu)<br>**[Near Menu](features/ux-building-blocks/Near-menu)**<br>Collection of UX controls can be manipulated, pinned, and set to follow the user. | [![MRTK_UX_v3_Slider.png](images/UXBuildingBlocks/MRTK_UX_v3_Slider.png)](features/ux-building-blocks/Slider)<br>**[Slider](features/ux-building-blocks/Slider)**<br>Adjust a value along a one-dimensional axis. |
 | [![MRTK_Solver_Main.png](features/images/MRTK_Solver_Main.png)](features/ux-building-blocks/solvers/solver)<br>**[Solver](features/ux-building-blocks/solvers/solver)**<br>Various object positioning behaviors such as tag-along, body-lock, constant view size, and surface magnetism. | [![MRTK_UX_v3_Dialog.png](images/UXBuildingBlocks/MRTK_UX_v3_Dialog.png)](features/ux-building-blocks/Dialog)<br>**[Dialog](features/ux-building-blocks/Dialog)**<br>Prompt for user action. | [![MRTK_UX_v3_Slate.png](images/UXBuildingBlocks/MRTK_UX_v3_Slate.png)](features/ux-building-blocks/Slate)<br>**[Slate](features/ux-building-blocks/Slate)**<br>A flat panel for displaying large-format interfaces and content. |
+
+## Roadmap
+
+The roadmap from public preview to GA is detailed in the following table.
+
+| Release | Timeline |
+| --- | --- |
+| Public Preview | June 8, 2022 |
+| Preview updates | Approximately every 2-4 weeks until GA |
+| General Availability | Fall / Winter 2022 |
