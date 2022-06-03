@@ -12,7 +12,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, debugg
 
 As compiling and deploying your app can take a significant amount of time, we recommend a variety of instant iteration/preview solutions while developing your application.
 
-- [In-editor input simulation](features/input/input-simulation.md)
+- [In-editor input simulation](../mrtk3-input/packages/input/input-simulation.md)
     - Easily preview your app without any XR device attached. Control the user's head, hands, and hand gestures with traditional WASD controls.
 - **Recommended:** [Holographic remoting (on HoloLens 2)](https://docs.microsoft.com/windows/mixed-reality/develop/unity/preview-and-debug-your-app)
     - For development on Hololens 2 and related platforms (including other OpenXR targets that include hand tracking), we strongly recommend the use of holographic remoting to accelerate your iteration time.
