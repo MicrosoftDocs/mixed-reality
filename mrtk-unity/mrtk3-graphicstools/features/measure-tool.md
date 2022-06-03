@@ -46,8 +46,9 @@ The tool has multiple modes that can be selected via a dropdown menu in the sett
 | Renderer        | Draws a box and measurements around each selected GameObject with a MeshRenderer component attached. |
 | Collider        | Draws a box and measurements around each selected GameObject with a 3D Collider component attached. |
 | Between Objects | Draws a line and measurement between gameObjects in the order selected |
-> Note 
+> [!Note] 
 > A MeshFilter is also required for Renderer measurements in Unity 2020 and older  
+
 
 ## Settings
 | Units | Description |
