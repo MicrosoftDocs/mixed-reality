@@ -12,7 +12,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 
 This experimental feature allows surfaces to appear translucent (like frosted glass). The acrylic assets can be used to create a blurred background effect on backplates similar to the [acrylic material in Windows](https://docs.microsoft.com/en-us/windows/apps/design/style/acrylic). These assets require use of the Universal Render Pipeline.
 
-> [!Note]
+> [!IMPORTANT]
 > This feature requires com.unity.render-pipelines.universal 10.6.0 or above and may be expensive on mobile devices.
 
 ## Usage
