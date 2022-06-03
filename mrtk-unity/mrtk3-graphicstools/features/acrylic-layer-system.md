@@ -17,7 +17,7 @@ This experimental feature allows surfaces to appear translucent (like frosted gl
 
 ## Usage
 
-A given acrylic layer should have its own render layer (or set of layers) containing the backplate and all UI objects for that layer. Assign the render layer(s) to the Render Layers property of the acrylic layer in the acrylic layer manager. The layers are used to exclude foreground elements from the blurred bg map.
+A given acrylic layer should have its own render layer (or set of layers) containing the backplate and all UI objects for that layer. Assign the render layer(s) to the *Render Layers* property of the acrylic layer in the acrylic layer manager. The layers are used to exclude foreground elements from the blurred background map.
 
 The acrylic layer systen is made up of the following components:
 
