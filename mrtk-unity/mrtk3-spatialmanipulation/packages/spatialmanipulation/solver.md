@@ -1,7 +1,7 @@
 
 # Solvers
 
-![Solver Main](images/MRTK_Solver_Main.png)
+![Solver Main](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_Solver_Main.png)
 
 Solvers are components that facilitate calculating an object's position & orientation according to a predefined algorithm. An example may be placing an object on the surface the user's gaze ray-cast currently hits.
 
