@@ -48,7 +48,7 @@ It is possible to integrate 3D meshes in your UI builds too.
 
 <img src="images/SampleScenes/UnityUIinteractive_sample_01.gif" width="40%" height="40%">
 
-Be aware that only static models can be intergrated, animations as in FBX exports aren't supported at the moment.
+> Be aware that only static models can be intergrated, animations as in FBX exports aren't supported at the moment.
 
 Related Topics:
 
