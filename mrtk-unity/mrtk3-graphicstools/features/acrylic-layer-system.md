@@ -65,5 +65,5 @@ See the *Acrylic (Experimental)* sample for demonstrations of the acrylic layer 
 
 ## Additional reading
 
-[Acrylic material in Windows 11](https://docs.microsoft.com/en-us/windows/apps/design/style/acrylic)
+[Acrylic material in Windows](https://docs.microsoft.com/en-us/windows/apps/design/style/acrylic)
 [An investigation of fast real-time GPU-based image blur algorithms](https://www.intel.com/content/www/us/en/developer/articles/technical/an-investigation-of-fast-real-time-gpu-based-image-blur-algorithms.html)
