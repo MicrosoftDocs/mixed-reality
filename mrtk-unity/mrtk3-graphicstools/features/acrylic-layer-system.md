@@ -18,7 +18,7 @@ This experimental feature allows surfaces to appear translucent (like frosted gl
 ![Acrylic Layer System Sample](images/Acrylic/AcrylicSample.gif)
 
 > [!IMPORTANT]
-> This feature requires com.unity.render-pipelines.universal 10.6.0 or above and may be expensive on mobile devices.
+> This feature requires the [Universal Render Pipeline](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@10.6/manual/index.html) 10.6.0 or above and may be expensive on mobile devices.
 
 ## Usage
 
