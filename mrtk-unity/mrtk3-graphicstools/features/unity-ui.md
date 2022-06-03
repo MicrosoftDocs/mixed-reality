@@ -23,6 +23,9 @@ In the Graphics Tools there are already button and slider prefabs available with
 
 <img src="images/SampleScenes/UnityUI_interactive_01.jpg" width="40%" height="40%">
 
+In the above example, from top to bottom there are:
+* the standard slider prefab, below an example of grouped standard buttons with a backplate as  
+
 Button and slider templates are also heavily featured in the Mixed Reality Toolkit. For more details have a look at these pages:
 
 * [Sliders in the MRTK](https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/sliders?view=mrtkunity-2022-05)
@@ -45,3 +48,8 @@ It is possible to integrate 3D meshes in your UI builds too.
 <img src="images/SampleScenes/UnityUIinteractive_sample_01.gif" width="40%" height="40%">
 
 Be aware that only static models can be intergrated, animations as in FBX exports aren't supported at the moment.
+
+Related Topics:
+
+* [Mixed Reality Toolkit on Github](https://github.com/microsoft/MixedRealityToolkit-Unity)
+* [Graphics Tools Standard Shader sample scene](standard-shader.md)
