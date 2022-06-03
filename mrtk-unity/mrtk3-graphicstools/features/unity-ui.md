@@ -23,7 +23,15 @@ In the Graphics Tools there are already button and slider prefabs available with
 
 <img src="images/SampleScenes/UnityUI_interactive_01.jpg" width="40%" height="40%">
 
+Button and slider templates are also heavily featured in the Mixed Reality Toolkit. For more details have a look at these pages:
+
+* [Sliders in the MRTK](https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/sliders?view=mrtkunity-2022-05)
+* [Buttons in the MRTK](https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/button?view=mrtkunity-2022-05)
+
 ## Masking Options
+
+When building user interfaces you might want to mask out certain areas or restrict visibility for user guidance.
+In Graphics Tools there are several options to achieve that: A fast rectangular masking option, a mask with options for rounded corners which is a little more expensive on performance, and it's also possible to make use of 3D meshes to be used as masking objects.
 
 
 <img src="images/SampleScenes/UnityUImasking_sample_01.gif" width="40%" height="40%">
@@ -31,5 +39,9 @@ In the Graphics Tools there are already button and slider prefabs available with
 
 ## 3D Mesh Integration and Animations
 
+This example is a combination of several UI components. Several properties are also animatable, e.g. position and the amount of corner roundness described above. 
+It is possible to integrate 3D meshes in your UI builds too.
 
 <img src="images/SampleScenes/UnityUIinteractive_sample_01.gif" width="40%" height="40%">
+
+Be aware that only static models can be intergrated, animations as in FBX exports aren't supported at the moment.
