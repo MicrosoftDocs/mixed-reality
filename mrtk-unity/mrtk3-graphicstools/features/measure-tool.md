@@ -69,3 +69,7 @@ The tool has multiple modes that can be selected via a dropdown menu in the sett
 | Line color |Set the color of the bounding box/rectangle |
 | Line offset |Offsets the measurements from the selected object(s) |
 | Line thickness |Sets the thickness of the lines |
+
+## See also
+
+* [Architecture Overview](architecture\overview.md)
