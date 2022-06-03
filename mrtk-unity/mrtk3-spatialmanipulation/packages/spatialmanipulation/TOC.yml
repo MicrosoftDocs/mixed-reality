@@ -1,2 +1,12 @@
 - name: Overview
   href: overview.md
+- name: Solver overview
+  href: solver.md
+- name: Tap to place
+  href: tap-to-place.md
+- name: Bounds control
+  href: bounds-control.md
+- name: Constraint manager
+  href: constraint-manager.md
+- name: Object manipulator
+  href: object-manipulator.md
