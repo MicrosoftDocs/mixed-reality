@@ -59,7 +59,7 @@ Update Period = 1
 
 ## Sample
 
-You can view this feature in action by importing the Acrylic sample from the MRTK Graphics Tools package in the package manager. A `Samples` folder will be created in your project.
+See the *Acrylic (Experimental)* sample for demonstrations of the acrylic layer system.
 
 ## Additional reading
 
