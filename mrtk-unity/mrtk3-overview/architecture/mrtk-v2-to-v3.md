@@ -1,6 +1,14 @@
+---
+title: Mixed Reality Toolkit 3 Developer Documentation - Concept migration guide from MRTK2
+description: Mixed Reality Toolkit 3 for developers - Concept migration guide from MRTK2.
+author: MaxWang-MS
+ms.author: wangmax
+ms.date: 6/3/2022
+ms.localizationpriority: high
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3
+---
 
-
-# MRTK v2 to MRTK3 concept migration guide
+# MRTK2 to MRTK3 concept migration guide
 
 As you begin using MRTK3, you'll notice that several concepts in MRTK v2 have been changed, replaced, or removed. This is because MRTK3 uses Unity’s XR Interaction Toolkit (XRI) framework to handle interaction, and the Unity Input System + OpenXR for input. This document will help bridge the gap between MRTK v2 concepts and their MRTK3 counterparts.
 

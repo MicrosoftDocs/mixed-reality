@@ -1,3 +1,12 @@
+---
+title: Example scenes in Unity
+description: Example scenes in Unity
+author: MaxWang-MS
+ms.author: wangmax
+ms.date: 6/3/2022
+ms.localizationpriority: high
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, scenes, example scenes
+---
 
 # Unity scenes
 

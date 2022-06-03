@@ -1,3 +1,13 @@
+---
+title: Mixed Reality Toolkit 3 Developer Documentation
+description: Learn about the Mixed Reality Toolkit 3 for developers.
+author: MaxWang-MS
+ms.author: wangmax
+ms.date: 6/3/2022
+ms.localizationpriority: high
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3
+---
+
 # Mixed Reality Toolkit 3
 
 ![MRTK_UX_v3_Cover.png](images/MRTK_UX_v3_Cover.png)
