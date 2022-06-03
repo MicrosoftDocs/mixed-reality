@@ -23,7 +23,7 @@ For more information about the this, have a look at the [Acrylic documentation](
 ## Acrylic in real-time
 
 
-![Acrylic real-time sample](images/SampleScenes/Acrylic_sample_01.gif)
+img src="images/SampleScenes/Acrylic_sample_01.gif" width="1057" height="563">
 
 In this example, the shader reacts in realtime to the moving objects in the background.
 While this is a powerful visual, please be aware that the real-time use is rather expensive in terms of performance.
