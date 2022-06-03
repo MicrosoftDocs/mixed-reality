@@ -9,7 +9,8 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 ---
 
 # Getting started with the Measure Tool
-The `Measure Tool` is a tool to view the local sizes of objects to graphics tools.
+The _Measure Tool_ is a tool to view the local sizes of objects to graphics tools.
+
 
 ![EditorTool](Images/MeasureTool/MeasureTool.png)
 
