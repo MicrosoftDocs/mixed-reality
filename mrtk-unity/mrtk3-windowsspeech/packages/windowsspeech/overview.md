@@ -19,4 +19,4 @@ For general information on `PhraseRecognitionSubsystem` in MRTK, please refer to
 
 ## Setup and Usage
 
-Please refer to the [Setup](../../../mrtk3-core/packages/core/subsystems/phraserecognitionsubsystem#setup) and [Using PhraseRecognitionSubsystem](../../../mrtk3-core/packages/core/subsystems/phraserecognitionsubsystem#using-phraserecognitionsubsystem) sections of the [`PhraseRecognitionSubsystem` doc](../../../mrtk3-core/packages/core/subsystems/phraserecognitionsubsystem). Note for `WindowsPhraseRecognitionSubsystem`, configuration asset is not needed and the only capability needed in play settings in microphone.
+Please refer to the [Setup](../../../mrtk3-core/packages/core/subsystems/phraserecognitionsubsystem#setup) and [Using PhraseRecognitionSubsystem](../../../mrtk3-core/packages/core/subsystems/phraserecognitionsubsystem#using-phraserecognitionsubsystem) sections of the [`PhraseRecognitionSubsystem` doc](../../../mrtk3-core/packages/core/subsystems/phraserecognitionsubsystem). Note for `WindowsPhraseRecognitionSubsystem`, a configuration asset is not needed and the only capability needed in player settings is microphone.
