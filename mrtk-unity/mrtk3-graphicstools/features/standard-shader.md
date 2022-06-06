@@ -10,19 +10,19 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 
 # Graphics tools standard shader
 
-The Graphics Tools Standard shading system utilizes a flexible shader that can achieve visuals similar to Unity's Standard (or Lit) shader, implement [Fluent Design System](https://www.microsoft.com/design/fluent/) principles, and remain performant on mixed reality devices.
+The Graphics Tools Standard shading system utilizes a flexible shader that can achieve visuals similar to Unity's Standard (or Lit) shader. It implements [Fluent Design System](https://www.microsoft.com/design/fluent/) principles and remains performant on mixed reality devices.
 
 ![Standard shader material gallery sample](images/StandardShader/StandardShader.jpg)
 
 ## Sample
 
-See the *Material Gallery* sample for multiple demonstrations of *Graphics Tools/Standard* shader variants. For examples of *Graphics Tools/Standard Canvas* please see the *UnityUI* sample
+See the *Material Gallery* sample for multiple demonstrations of *Graphics Tools/Standard* shader variants. For examples of *Graphics Tools/Standard Canvas*, see the *UnityUI* sample
 
 ## Architecture
 
-The Graphics Tools/Standard shading system is an "uber shader" that uses [Unity's shader program variant feature](https://docs.unity3d.com/Manual/SL-MultipleProgramVariants.html) to auto-generate optimal shader code based on material properties. When a user selects material properties in the material inspector, they only incur performance cost for features they have enabled.
+The Graphics Tools/Standard shading system is an "uber shader" that uses [Unity's shader program variant feature](https://docs.unity3d.com/Manual/SL-MultipleProgramVariants.html) to auto-generate optimal shader code based on material properties. When a user selects material properties in the material inspector, they only incur performance cost for features they've enabled.
 
-To better support traditional Unity workflows and [UnityUI](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/index.html) (canvas) workflows the Graphics Tools/Standard shading system has two shader entry points:
+To better support traditional Unity workflows and [UnityUI](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/index.html) (canvas) workflows, the Graphics Tools/Standard shading system has two shader entry points:
 
 | Context| Default                 | UnityUI                        |
 |--------|-------------------------|--------------------------------|
@@ -42,31 +42,31 @@ The following shader includes power the Graphics Tools/Standard shading system:
 
 ## Render pipeline support
 
-Unity has a handful of [render pipelines](https://docs.unity3d.com/Manual/render-pipelines-overview.html) for developers to pick from. The Graphics Tools Standard shading system is designed to work automatically with Unity's built-in render pipeline or [Universal Render Pipeline](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@11.0/manual/)(URP). There is no need to switch shaders based on pipeline. Below is a support matrix:
+Unity has a handful of [render pipelines](https://docs.unity3d.com/Manual/render-pipelines-overview.html) for developers to pick from. The Graphics Tools Standard shading system is designed to work automatically with Unity's built-in render pipeline or [Universal Render Pipeline](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@11.0/manual/)(URP). There's no need to switch shaders based on pipeline. Below is a support matrix:
 
 | Pipeline                               | Supported | Exceptions                                    |
 |----------------------------------------|-----------|-----------------------------------------------|
-| Built-in Render Pipeline               | ✅         | Acrylic "Blur Modes" are not supported.       |
+| Built-in Render Pipeline               | ✅         | Acrylic "Blur Modes" aren't supported.       |
 | Universal Render Pipeline (URP)        | ✅         |                                               |
 | High Definition Render Pipeline (HDRP) | ❌         |                                               |
 | Custom Render Pipeline                 | ❔         | Support depends on how the pipeline is built. |
 
 ## UnityUI support
 
-The Graphics Tools Standard shading system works with Unity's built in UI system called [UnityUI](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/index.html). The *Graphics Tools/Standard Canvas* should be used for all materials within UnityUI canvases.
+The Graphics Tools Standard shading system works with Unity's built-in UI system called [UnityUI](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/index.html). The *Graphics Tools/Standard Canvas* should be used for all materials within UnityUI canvases.
 
 A [Canvas](https://docs.unity3d.com/ScriptReference/Canvas.html) or [CanvasRenderer](https://docs.unity3d.com/ScriptReference/CanvasRenderer.html) within Graphics Tools will prompt for the addition of a `ScaleMeshEffect.cs` when one is required:
 
 ![Scale mesh effect inspector warning](images/StandardShader/ScaleMeshEffect.jpg)
 
-On UnityUI components, the `unity_ObjectToWorld` matrix (or `UNITY_MATRIX_M`  in URP) is not the transformation matrix of the local transform the Graphic component lives on but that of its parent Canvas. Many *Graphics Tools/Standard Canvas* shader effects require object scale to be known. To solve this issue, the `ScaleMeshEffect.cs` will store scaling information into UV channel attributes during UI mesh construction.
+On UnityUI components, the `unity_ObjectToWorld` matrix (or `UNITY_MATRIX_M`  in URP) isn`t the transformation matrix of the local transform the Graphic component lives on but that of its parent Canvas. Many *Graphics Tools/Standard Canvas* shader effects require object scale to be known. To solve this issue, the `ScaleMeshEffect.cs` will store scaling information into UV channel attributes during UI mesh construction.
 
 > [!TIP]
 > When using a Unity Image component, it is recommended to specify "None (Sprite)" for the Source Image to prevent Unity UI from generating extra vertices.
 
 ## Material inspector
 
-A custom material inspector exists for the *Graphics Tools/Standard* and *Graphics Tools/Standard Canvas* shaders called `StandardShaderGUI.cs`. The inspector automatically enables/disables shader features, based on user selection and aides in setting up render state. For more information about each feature **please hover over each property in the Unity Editor for a tooltip.**
+A custom material inspector exists for the *Graphics Tools/Standard* and *Graphics Tools/Standard Canvas* shaders called `StandardShaderGUI.cs`. The inspector automatically enables/disables shader features, based on user selection and aides in setting up render state. For more information about each feature **hover over each property in the Unity Editor for a tooltip.**
 
 > [!NOTE]
 > The inspector UI is dynamic. Portions of the UI will change as features are enabled and disabled.
@@ -77,13 +77,13 @@ The inspector can be broken into a handful of features areas as described below.
 
 ### Rendering mode
 
-The first portion of the inspector controls the material's render state. *Rendering Mode* determines when and how a material will be rendered. The aim of the *Graphics Tools/Standard* and *Graphics Tools/Standard Canvas* shaders are to mirror the [rendering modes found in the Unity/Standard shader](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html). The *Graphics Tools/Standard* and *Graphics Tools/Standard Canvas* shaders also include an *Additive* rendering mode and *Custom* rendering mode for complete user control.
+The first portion of the inspector controls the material's render state. *Rendering Mode* determines when and how a material will be rendered. The aim of the *Graphics Tools/Standard* and *Graphics Tools/Standard Canvas* shaders is to mirror the [rendering modes found in the Unity/Standard shader](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html). The *Graphics Tools/Standard* and *Graphics Tools/Standard Canvas* shaders also include an *Additive* rendering mode and *Custom* rendering mode for complete user control.
 
 | Rendering Mode |         Description                                                       |
 |----------------|---------------------------------------------------------------------------|
 | Opaque         | (Default) Suitable for normal solid objects with no transparent areas.    |
 | Cutout         | Allows creation of transparent effects that have hard edges between the opaque and transparent areas. In this mode, there are no semi-transparent areas, the texture is either 100% opaque, or invisible. This is useful when using transparency to create the shape of materials, such as vegetation. |
-| Fade           | Allows the transparency values to entirely fade an object out, including any specular highlights or reflections it may have. This mode is useful if you want to animate an object fading in or out. It is not suitable for rendering realistic transparent materials such as clear plastic or glass because the reflections and highlights will also be faded out. |
+| Fade           | Allows the transparency values to entirely fade out an object, including any specular highlights or reflections it may have. This mode is useful if you want to animate an object fading in or out. It isn't suitable for rendering realistic transparent materials such as clear plastic or glass because the reflections and highlights will also be faded out. |
 | Transparent    | Suitable for rendering realistic transparent materials such as clear plastic or glass. In this mode, the material itself will take on transparency values (based on the texture’s alpha channel and the alpha of the tint color). However, reflections and lighting highlights will remain visible at full clarity as is the case with real transparent materials. |
 | Additive       | Enables an additive blending mode, which sums the previous pixel color with the current pixel color. This is the preferred transparency mode to avoid transparency sorting issues.     |
 | Custom         | Allows for every aspect of the rendering mode to be controlled manually. For advanced usage only.   |
@@ -115,29 +115,29 @@ When you use channel packing, you only have to sample and load one texture into 
 
 The main map section also has an option for triplanar mapping and super-sample anti-aliasing.
 
-Triplanar mapping is a technique to programmatically texture a mesh. Often used in terrain, meshes without UVs, or difficult to unwrap shapes. This implementation supports world or local space projection, the specification of blending smoothness, and normal map support. Note, each texture used requires 3 texture samples, so use sparingly in performance critical situations.
+Triplanar mapping is a technique to programmatically texture a mesh. It's often used in terrain, meshes without UVs, or difficult to unwrap shapes. This implementation supports world or local space projection, the specification of blending smoothness, and normal map support. Note, each texture used requires three texture samples, so use sparingly in performance critical situations.
 
-[Super-sample anti-aliasing](https://bgolus.medium.com/sharper-mipmapping-using-shader-based-supersampling-ed7aadb47bec) should be used on any materials which display an icon or image where details are critical from a distance.
+[Super-sample anti-aliasing](https://bgolus.medium.com/sharper-mipmapping-using-shader-based-supersampling-ed7aadb47bec) should be used on any materials that display an icon or image where details are critical from a distance.
 
 ### Rendering options
 
-Rendering options mostly control the lighting settings for a material. This material section also contains a handful of other features that control a surface's color, translucency, or position. For more details about lighting please see [below](#lighting).
+Rendering options mostly control the lighting settings for a material. This material section also contains a handful of other features that control a surface's color, translucency, or position. For more details about lighting, see [below](#lighting).
 
 ![Lighting comparisons](images/StandardShader/Lighting.jpg)
 
 ### Fluent options
 
-[Fluent](https://www.microsoft.com/design/fluent/#/) is a design framework used across UI components in Microsoft products. This section contains a handful of features that help emulate Fluent design system principles on arbitrary surfaces. If you are looking for bespoke Fluent shaders, they can be found in the `Graphics Tools/Canvas` and  `Graphics Tools/Non-Canvas` shader namespace.
+[Fluent](https://www.microsoft.com/design/fluent/#/) is a design framework used across UI components in Microsoft products. This section contains a handful of features that help emulate Fluent design system principles on arbitrary surfaces. If you're looking for bespoke Fluent shaders, they can be found in the `Graphics Tools/Canvas` and  `Graphics Tools/Non-Canvas` shader namespace.
 
 ### Advanced options
 
-Similar to the advanced section in Unity's built-in shaders. This section controls rendering order and if GPU instancing variants should be built. Additionally, there are configurable stencil test support to achieve a wide array of effects. Such as portals:
+Similar to the advanced section in Unity's built-in shaders. This section controls rendering order and if GPU instancing variants should be built. Additionally, there are configurable stencil test supports to achieve a wide array of effects. Such as portals:
 
 ![Portal example](images/StandardShader/Portal.jpg)
 
 ## Lighting
 
-The *Graphics Tools/Standard* and *Graphics Tools/Standard Canvas* shaders use a simple approximation for lighting. Because the shaders do not calculate for physical correctness and energy conservation, they renders quickly and efficiently. [Blinn-Phong](https://en.wikipedia.org/wiki/Blinn%E2%80%93Phong_reflection_model) is the primary lighting technique used and is blended with Fresnel and image-based lighting to approximate physically-based lighting. The shaders support the following lighting techniques:
+The *Graphics Tools/Standard* and *Graphics Tools/Standard Canvas* shaders use a simple approximation for lighting. Because the shaders don't calculate for physical correctness and energy conservation, they render quickly and efficiently. [Blinn-Phong](https://en.wikipedia.org/wiki/Blinn%E2%80%93Phong_reflection_model) is the primary lighting technique used and is blended with Fresnel and image-based lighting to approximate physically based lighting. The shaders support the following lighting techniques:
 
 ### Directional light
 
@@ -155,7 +155,7 @@ The shader uses light probes to approximate lights in the scene using [spherical
 
 ### Lightmapping
 
-For static lighting, the shader will respect lightmaps built by Unity's [lightmapping system](https://docs.unity3d.com/Manual/Lightmapping.html). Simply mark the renderer as static (or lightmap static) to use lightmaps.
+For static lighting, the shader will respect lightmaps built by Unity's [lightmapping system](https://docs.unity3d.com/Manual/Lightmapping.html). Mark the renderer as static (or lightmap static) to use lightmaps.
 
 ## Performance
 
