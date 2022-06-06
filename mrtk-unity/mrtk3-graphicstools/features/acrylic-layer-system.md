@@ -32,7 +32,7 @@ Assign this component (script) to every backplate that uses an acrylic material.
 
 ### Acrylic layer manager
 
-Manages creating and updating the blurred background maps used by acrylic materials. The manager works with the Acrylic Helper component to limit the additional processing performed to those acrylic layers that are currently being used in the scene.
+Manages creating and updating the blurred background maps used by acrylic materials. The manager works with the Acrylic Helper component to limit the extra processing performed to those acrylic layers that are currently being used in the scene.
 A scene should have one copy of the manager.
 
 The manager supports two methods of capturing a background image:
