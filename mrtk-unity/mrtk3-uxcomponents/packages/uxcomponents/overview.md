@@ -5,7 +5,7 @@ author: Zee2
 ms.author: finnsinclair
 ms.date: 6/6/2022
 ms.localizationpriority: high
-keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Solvers, ObjectManipulator, BoundsControl
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, Button, PressableButton, Slider, Toggle
 ---
 
 # UX Components | MRTK3
