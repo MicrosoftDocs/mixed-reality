@@ -41,6 +41,8 @@ To turn on this feature without writing any code, you need to do the following f
 
 4. Change the shader of the selected material in the inspector panel from *TextMeshPro/Mobile/Distance Field* (or whatever your current shader is) to *Graphics Tools/Text Mesh Pro*
 
+![Graphics Tools Shader](images/AccessibilityUtilities/GraphicsToolsShader.png)
+
 5. You can now turn on color inversion for the text. Right click on the font material and select **Graphics Tools > Accessibility > Toggle Text Color Inversion**
 
 ![Color Text Inversion Menu](images/AccessibilityUtilities/TextColorInversionToggler.png)
