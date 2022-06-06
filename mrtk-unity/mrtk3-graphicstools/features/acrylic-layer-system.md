@@ -42,7 +42,7 @@ The manager supports two methods of capturing a background image:
 
 The captured image is then blurred based on the per-layer blur settings. If the blur map isn't updated every frame, the blur process is applied during the next frame after the capture.
 
-There's also an option to gradually blend in an updated map over several frames (if the map is not updated every frame).
+There's also an option to gradually blend in an updated map over several frames (if the map isn't updated every frame).
 
 ## Advanced usage
 ### Editor options
