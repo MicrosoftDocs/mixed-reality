@@ -17,18 +17,19 @@ Objects behind that surface will appear blurred as seen through frosted glass.
 ![Acrylic Sample scene](images/SampleScenes/Acrylic_01.jpg)
 
 
-It is enabled by adding the "AcrylicHelpr.cs" script to your object and in Unity's shader menu under "Graphics Tools/Experimental/Acrylic", pick one of the shader options.
-For more information about the this, have a look at the [Acrylic documentation](acrylic-layer-system.md).
+It's enabled by adding the _AcrylicHelpr.cs_ script to your object and in Unity's shader menu under _Graphics Tools/Experimental/Acrylic_, pick one of the shader options.
+For more information about this, have a look at the [Acrylic documentation](acrylic.md).
 
 ## Acrylic in real-time
 
 
 <img src="images/SampleScenes/Acrylic_sample_01.gif" width="50%" height="50%">
 
-In this example, the shader reacts in realtime to the moving objects in the background.
-While this is a powerful visual, please be aware that the real-time use is rather expensive in terms of performance.
+In this example, the shader reacts in real-time to the moving objects in the background.
+> [!NOTE]
+> While this is a powerful visual, it's real-time use is rather expensive in terms of performance.
 
-## Acylic Pre-baked
+## Acrylic Pre-baked
 
 
 <img src="images/SampleScenes/acrylic_sample_02.jpg" width="50%" height="50%">

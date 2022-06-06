@@ -9,14 +9,14 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 
 # The Material Gallery
 
-In this sample scene you'll find a display of the the capabilities of the Graphics Tools standard shader.
+In this sample scene, you'll find a display of the capabilities of the Graphics Tools standard shader.
 
 ![Standard Shader sample scene](images/SampleScenes/materialGallery_01.JPG)
     
 
 ## Edge and Vertex effects
 
-These examples showcase various effects that make use of an object's texture coordinates (UVs), e.g. procedural edge hightlights, dynamically rounded edges, wireframe rendering and glow effects.
+These examples showcase various effects that make use of an object's texture coordinates (UVs). For example, procedural edge highlights, dynamically rounded edges, wireframe rendering and glow effects.
 
 ![Standard Shader edge and vertex effects](images/SampleScenes/edge_vertex_effects_01.jpg)
 
@@ -29,9 +29,9 @@ These examples display only a handful of possible variations, as stencil and cli
 
 ## Hover Lights
 
-Placing point lights in a scene can end up very expensive on performance.
+Placing point lights in a scene can be expensive on performance.
 Hover Lights are normally used for UI lighting but can also be used as a faster alternative to point lights.
-Up to 4 hover lights may be active in a scene at once.
+Up to four hover lights may be active in a scene at once.
 
 ![Standard Shader hover lights](images/SampleScenes/hoverLight_sample_01.gif)
 
