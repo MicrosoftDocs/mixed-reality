@@ -230,7 +230,7 @@ We're working on adding symbols to the next release. In the meantime, you should
 For more information, see [Configuring Visual Studio’s settings](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/#configuring-visual-studios-settings).
 
 ## See also
-* [QR code tracking with native C++ and C## samples](../native/qr-code-tracking-cs-cpp.md)
+* [QR code tracking with native C++ and C# samples](../native/qr-code-tracking-cs-cpp.md)
 * [QR code tracking in Unity](../unity/qr-code-tracking-unity.md)
 * [Coordinate systems](../../design/coordinate-systems.md)
 * [Azure Spatial Anchors](/azure/spatial-anchors/overview)
