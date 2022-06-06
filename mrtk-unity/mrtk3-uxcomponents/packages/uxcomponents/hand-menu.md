@@ -3,11 +3,17 @@
 
 ![Hand Menu](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_HandMenu.png)
 
-Hand menus allow users to bring up hand-attached UI for frequently used functions. The Hand menu provides 'Require Flat Hand' and 'Use Gaze Activation' options to prevent false activation while interacting with other objects. It's recommended to use these options to prevent unwanted activation.
+Hand menus allow users to bring up hand-attached UI for frequently used functions. These are usually small [button groups](button-group.md) that offer quick actions. However, sometimes more complex layouts for displaying information or settings are provided to the user as a hand menu, often with the option to "tear away" the menu from the hand and anchor it in the world.
+
+The Hand menu provides 'Require Flat Hand' and 'Use Gaze Activation' options to prevent false activation while interacting with other objects. It's recommended to use these options to prevent unwanted activation.
 
 ## Example scene and Prefabs
 
-Use `HandConstraintPalmUp` script to implement the hand menu. HandMenuExamples.unity scene demonstrates various hand menu configuration examples using **HandConstraintPalmUp**.
+>[!NOTE]
+> The hand menu prefabs are currently built using the non-canvas controls. They will soon be rebuilt using the [Canvas components](../../../mrtk3-uxcore/packages/uxcore/canvas-ui.md) and auto-layout system as detailed in the [Button Group](button-group.md) documentation.
+
+If you're using the template project, `HandMenuExamples.unity` demonstrates several common configurations for hand menus, all using the `HandConstraintPalmUp` script.
+
 
 ![Hand Menu Example Scene](../../../mrtk3-overview/images/UXBuildingBlocks/HandMenu/MRTK_Examples_HandMenu_Scene.png)
 
