@@ -31,10 +31,11 @@ The following table describes the Mixed Reality Toolkit package dependencies.
 | Display name | Package name | Description | Required  | Optional  |
 | ----------- | ----------- | --------- | -------- | ---------- |
 | MRTK Core Definitions |  com.microsoft.mrtk.core | Shared definitions, utilities and components. | <ul> <li> com.unity.xr.interaction.toolkit </li> <li> com.unity.xr.management </li> </ul> | |
+| MRTK Accessibility | com.microsoft.mrtk.accessibility | Definitions, features and subsystem for building accessibile mixed reality experiences. | <ul> <li> com.microsoft.mrtk.core </li> <li> com.microsoft.mrtk.graphicstools.unity </li> <li> com.unity.textmeshpro </li> </ul> | |
 | MRTK Data Binding and Theming | com.microsoft.mrtk.data | Support for data binding and UI element theming. | <ul> <li> com.microsoft.mrtk.core </li> <li> com.unity.nuget.newtonsoft-json </li> <li> com.unity.textmeshpro </li> </ul> |  |
 | MRTK Diagnostics | com.microsoft.mrtk.diagnostics | Diagnostics and performance monitoring subsystems and tools. | <ul> <li> com.microsoft.mrtk.core </li> <li> com.unity.xr.management </li> </ul> | |
 | MRTK Environment | com.microsoft.mrtk.environment | Environmental features and subsystems, such as Spatial Awareness and boundaries. | <ul> <li> com.microsoft.mrtk.core </li> <li> com.unity.xr.management </li> </ul> |  |
-| MRTK Extended Assets | com.microsoft.mrtk.extendedassets | Additional audio, font, texture and other assets for use in applications. | <ul> <li> com.microsoft.mrtk.standardassets </li> </ul> | |
+| MRTK Extended Assets | com.microsoft.mrtk.extendedassets | Additional audio, font, texture and other assets for use in applications. | <ul> <li> com.microsoft.mrtk.standardassets </li> <li> com.microsoft.mrtk.graphicstools.unity </li> </ul> | |
 | MRTK Input | com.microsoft.mrtk.input | Input components including support for articulated hands, offline speech recognition and in-editor input simulation. | <ul> <li> com.microsoft.mrtk.core </li> <li> com.microsoft.mrtk.graphicstools.unity </li> <li> com.unity.xr.interaction.toolkit </li> <li> com.unity.inputsystem </li> <li> com.unity.xr.management </li> <li> com.unity.xr.openxr </li> <li> com.unity.xr.arfoundation </li> </ul> | |
 | MRTK Spatial Manipulation | com.microsoft.mrtk.spatialmanipulation | Spatial positioning and manipulation components and utilities, including solvers. | <ul> <li> com.microsoft.mrtk.core </li> <li> com.microsoft.mrtk.uxcore </li> <li> com.unity.inputsystem </li> <li> com.unity.xr.interaction.toolkit </li> </ul> | <ul> <li> com.microsoft.mrtk.input </li> </ul> |
 | MRTK Standard Assets | com.microsoft.mrtk.standardassets | Standard assets, including materials and textures, for use by applications. | <ul> <li> com.microsoft.mrtk.graphicstools.unity </li> </ul> | |
@@ -53,14 +54,15 @@ In order to place minimal overhead on applications importing the Mixed Reality T
 
 | Display name | Package name | Test requirements |
 | ------------ | ------------ | ----------------- |
-| MRTK Core Definitions | com.microsoft.mrtk.core  |  |
-| MRTK Data Binding and Theming |  com.microsoft.mrtk.data |   |
-| MRTK Diagnostics |  com.microsoft.mrtk.diagnostics |   |
-| MRTK Environment |  com.microsoft.mrtk.environment |   |
-| MRTK Extended Assets | com.microsoft.mrtk.extendedassets |  |
+| MRTK Core Definitions | com.microsoft.mrtk.core  | |
+| MRTK Accessibility | com.microsoft.mrtk.accessibility | |
+| MRTK Data Binding and Theming | com.microsoft.mrtk.data | |
+| MRTK Diagnostics | com.microsoft.mrtk.diagnostics | |
+| MRTK Environment | com.microsoft.mrtk.environment | |
+| MRTK Extended Assets | com.microsoft.mrtk.extendedassets | |
 | MRTK Input | com.microsoft.mrtk.input |  |
 | MRTK Spatial Manipulation | com.microsoft.mrtk.spatialmanipulation | <ul> <li> com.microsoft.mrtk.input </li> </ul> |
-| MRTK Standard Assets | com.microsoft.mrtk.standardassets |  |
-| MRTK UX Components |  com.microsoft.mrtk.uxcomponents | <ul> <li> com.microsoft.mrtk.input </li> </ul> |
-| MRTK UX Core |  com.microsoft.mrtk.uxcore | <ul> <li> com.microsoft.mrtk.input </li> </ul> |
-| MRTK Windows Speech |  com.microsoft.mrtk.windowsspeech | |
+| MRTK Standard Assets | com.microsoft.mrtk.standardassets | |
+| MRTK UX Components | com.microsoft.mrtk.uxcomponents | <ul> <li> com.microsoft.mrtk.input </li> </ul> |
+| MRTK UX Core | com.microsoft.mrtk.uxcore | <ul> <li> com.microsoft.mrtk.input </li> </ul> |
+| MRTK Windows Speech | com.microsoft.mrtk.windowsspeech | |
