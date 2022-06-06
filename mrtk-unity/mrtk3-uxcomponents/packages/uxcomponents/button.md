@@ -7,7 +7,13 @@ A button gives the user a way to trigger an immediate action. It's one of the mo
 
 ## Example scene and prefabs
 
-**CanvasExample.unity** shows all available canvas-based button prefab variants in MRTK.
+If you're using the development template project, several example scenes are available that demonstrate the available button prefabs.
+
+**CanvasUITearSheet.unity** shows all available canvas-based button prefab variants in MRTK.
+
+![Canvas Tearsheet](../../../mrtk3-overview/images/UXBuildingBlocks/Button/MRTK_Button_CanvasTearsheet.png)
+
+**CanvasExample.unity** shows some examples of building larger layouts using the Canvas-based components.
 
 ![Canvas Example Scene](../../../mrtk3-overview/images/UXBuildingBlocks/Button/MRTK_Button_CanvasExample.png)
 
