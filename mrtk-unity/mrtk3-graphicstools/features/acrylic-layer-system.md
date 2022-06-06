@@ -28,7 +28,7 @@ The acrylic layer system is made up of the following components:
 
 ### Acrylic helper
 
-Assign this component (script) to every backplate that uses an acrylic material. This component notifies the acrylic layer manager whenever the object is enabled or disabled. The acrylic shader currently supports 2 layers (0 and 1).
+Assign this component (script) to every backplate that uses an acrylic material. This component notifies the acrylic layer manager whenever the object is enabled or disabled. The acrylic shader currently supports two layers (0 and 1).
 
 ### Acrylic layer manager
 
