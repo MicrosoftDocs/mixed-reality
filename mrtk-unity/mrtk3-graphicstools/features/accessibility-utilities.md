@@ -16,7 +16,7 @@ The following features are supported:
 
 ## Toggle text color inversion
 
-This feature instructs a "Graphics Tools/Text Mesh Pro" based material to display a face color which is an inversion of its background color.
+This feature instructs a "Graphics Tools/Text Mesh Pro" based material to display a face color that is an inversion of its background color.
 
 ![Text Color Inversion](images/AccessibilityUtilities/TextColorInversion.gif)
 
