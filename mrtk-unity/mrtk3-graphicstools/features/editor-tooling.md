@@ -1,6 +1,6 @@
 ---
 title: Editor Tooling
-description: Learn about the tools availbe to developers in the Unity editor.
+description: Learn about the tools available to developers in the Unity editor.
 author: Cameron-Micka
 ms.author: thmicka
 ms.date: 06/01/2022
@@ -10,11 +10,11 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 
 # Editor tooling
 
-Graphics Tools contains a plethora of Unity editor tooling to help with mixed reality development. A handful of items are described below. The rest can be found in their respective subject areas, such as [accessibility uilities](accessibility-utilities.md) and the [measure tool](measure-tool.md).
+Graphics Tools contains a plethora of Unity editor tooling to help with mixed reality development. A handful of items are described below. The rest can be found in their respective subject areas, such as [accessibility utilities](accessibility-utilities.md) and the [measure tool](measure-tool.md).
 
 ## Menu items
 
-Description of menu items found in the `Window > Graphics Tools` menu section.
+Description of menu items found in the **Window > Graphics Tools** menu section.
 
 ### Take screenshots
 
@@ -23,7 +23,7 @@ Often taking screenshots in Unity for documentation and promotional imagery can 
 > [!NOTE]
 > Taking screenshots from a standalone build is not supported by this tool.
 
-Screenshots can be easily capture while in the editor by selecting `Window > Graphics Tools > Take Screenshot` and then selecting your desired option.
+Screenshots can be easily captured while in the editor by selecting **Window > Graphics Tools > Take Screenshot** and then selecting your desired option.
 
 > [!TIP]
 > Make sure to have the game window tab visible if capturing while not playing, or a screenshot may not be saved.
@@ -36,11 +36,11 @@ The above screenshot was captured with the *"4x Resolution (Transparent Backgrou
 
 ### Canvas material animators
 
-Canvas material animators allow developers to animate material properties on UnityUI Graphic components (more information can be found in the [animation](animation.md) documentation). These animator scripts are auto-generated from shader files. If a shader file changes, so does the the animator script. This is normally performed by right clicking on a shader and selecting `Graphics Tools > Generate Canvas Material Animator`.
+Canvas material animators allow developers to animate material properties on UnityUI Graphic components (more information can be found in the [animation](animation.md) documentation). These animator scripts are auto generated from shader files. If a shader file changes, so does the animator script. This is normally performed by right clicking on a shader and selecting **Graphics Tools > Generate Canvas Material Animator**.
 
-The `Window > Graphics Tools > Canvas Material Animators > Generate All` menu item will re-generate all animator scripts for shaders with these conditions met:
+The **Window > Graphics Tools > Canvas Material Animators > Generate All** menu item will regenerate all animator scripts for shaders with these conditions met:
 
-- Exists in the *Runtime/Shaders* directory of the Graphics Tools package
+- Exists in the _Runtime/Shaders_ directory of the Graphics Tools package
 - Does not contain "Non-Canvas" it the shader name.
 
 > [!TIP]
@@ -48,13 +48,13 @@ The `Window > Graphics Tools > Canvas Material Animators > Generate All` menu it
 
 ### Mip map debug
 
-The mip map debug feature included with the built-in renderer pipeline's scene view debug draw modes [doesn't exist](https://github.com/Unity-Technologies/Graphics/pull/4089) in the Universal Render Pipeline (URP). This is a useful feature to have when trying to reduce texture sizes.
+The mip map debug feature included with the built-in renderer pipeline's scene view debug draw modes [doesn't exist](https://github.com/Unity-Technologies/Graphics/pull/4089) in the Universal Render Pipeline (URP). This feature is a useful to have when trying to reduce texture sizes.
 
-In Graphics Tools a similar tool was reintroduced for the URP. The tool can be toggled on via the `Window > Graphics Tools > Draw Modes > Mipmaps - Enable` and off via the `Window > Graphics Tools > Draw Modes > Mipmaps - Disable` menu items. When enabled the scene view will be tinted based on texel to pixel ratio.
+In Graphics Tools, a similar tool was reintroduced for the URP. The tool can be toggled on via the **Window > Graphics Tools > Draw Modes > Mipmaps - Enable** and off via the **Window > Graphics Tools > Draw Modes > Mipmaps - Disable** menu items. When enabled the scene view will be tinted based on texel to pixel ratio.
 
 | Color          | Meaning                                                                                   |
 |----------------|-------------------------------------------------------------------------------------------|
-| Original Color | It’ is a perfect match (1:1 texels to pixels ratio at the current distance and resolution). |
+| Original Color | It’s a perfect match (1:1 texels to pixels ratio at the current distance and resolution). |
 | Red            | Indicates that the texture is larger than necessary.                                      |
 | Blue           | Indicates that the texture could be larger.                                               |
 
@@ -67,9 +67,9 @@ For example, texel density is too high on the left cube and a bit too low on the
 
 ### Show and hide samples
 
-When opening the `MRGTUnityProject` in Unity. The `Samples` folder will not be visible in the `MRTK Graphics Tools` package by default. To show the samples select `Window > Graphics Tools > Show Samples` from the file menu bar.
+When opening the `MRGTUnityProject` in Unity. The `Samples` folder won't be visible in the `MRTK Graphics Tools` package by default. To show the samples select **Window > Graphics Tools > Show Samples** from the file menu bar.
 
-If you would like to hide samples, for example, before committing a contribution to the Graphics Tools package samples, select `Window > Graphics Tools > Hide Samples` from the file menu bar.
+If you would like to hide samples, for example, before committing a contribution to the Graphics Tools package samples, select **Window > Graphics Tools > Hide Samples** from the file menu bar.
 
 > [!NOTE]
 > These menu items will be greyed out when Graphics Tools is an immutable package.

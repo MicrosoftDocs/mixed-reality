@@ -10,20 +10,20 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 
 # What is Graphics Tools?
 
-MRTK Graphics Tools for Unity is a Unity engine package with code, shaders, assets, and samples created to help improve the visual fidelity of Mixed Reality applications while staying within performance budgets.
+MRTK Graphics Tools for Unity is a Unity engine package with code, shaders, assets, and samples. It's created to help improve the visual fidelity of Mixed Reality applications while staying within performance budgets.
 
 ![Graphics Tools](images/MRTKBanner.png)
 
 ## Getting started with Graphic Tools
 
-If using MRTK please follow the getting started docs found [here](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/mrtk2/?view=mrtkunity-2022-05#getting-started-with-mrtk). If you wish to use the Graphics Tools plugin on its own, please read the instructions in the Graphics Tools [GitHub repository](https://github.com/microsoft/MixedReality-GraphicsTools-Unity).
+If using MRTK, follow the getting started docs found [here](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/mrtk2/?view=mrtkunity-2022-05#getting-started-with-mrtk). If you wish to use the Graphics Tools plugin on its own, read the instructions in the Graphics Tools [GitHub repository](https://github.com/microsoft/MixedReality-GraphicsTools-Unity).
 
 > [!NOTE]
 > The Graphics Tools package requires Unity 2020.x and above.
 
 ## Importing samples
 
-To view the samples contained within Graphics Tools select `Window > Package Manager` from the Unity file menu bar. Click on the `MRTK Graphics Tools` package and expand the `Samples` list. Finally, click the `Import` button for any samples you would like to try:
+To view the samples contained within Graphics Tools, select **Window > Package Manager** from the Unity file menu bar. Select on the **MRTK Graphics Tools** package and expand the **Samples** list. Finally, select the **Import** button for any samples you would like to try:
 
 ![Package Manager Samples](images/PackageManagerSamples.jpg)
 

@@ -13,16 +13,16 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics
 
 1. Fork the [repository](https://github.com/microsoft/MixedReality-GraphicsTools-Unity) and make a branch. Recommended branch naming is `user/username/feature`.
 2. Clone and open the `GraphicsToolsUnityProject` example project in Unity.
-3. Make any desired changes. By default all edits within the `MRTK Graphics Tools` package will be published to the Graphics Tools package. (If you would like to update the samples please see the below section.)
-4. Push your branch up to your fork and create a pull request. Please add a description of changes to the pull request. Images and gifs are always appreciated.
+3. Make any desired changes. By default all edits within the `MRTK Graphics Tools` package will be published to the Graphics Tools package. (If you would like to update the samples, see the below section.)
+4. Push your branch up to your fork and create a pull request. Add a description of changes to the pull request. Images and gifs are always appreciated.
 
 ## Updating the package samples
 
 Samples exist under the `Samples~` subfolder as outlined by Unity's [sample recommendations](https://docs.unity3d.com/Manual/cus-samples.html). The '~' character prevents the `Samples~` folder for being imported by Unity. This is ideal when including the package via the package manager. But, not when you want to update the samples *within* the package.
 
-If you wish to contribute changes to the samples you must make a temporary local change to the Unity project's directory structure.
+If you wish to contribute changes to the samples, you must make a temporary local change to the Unity project's directory structure.
 
-1. Open the `GraphicsToolsUnityProject` in Unity. The `Samples` folder will not be visible in the `MRTK Graphics Tools` package by default. To show the samples select `Window > Graphics Tools > Show Samples` from the file menu bar.
+1. Open the _GraphicsToolsUnityProject_ in Unity. The _Samples_ folder won't be visible in the `MRTK Graphics Tools` package by default. To show the samples select **Window > Graphics Tools > Show Samples** from the file menu bar.
 2. Make any desired changes to the samples.
 3. **Important:** When finished and before committing your changes, remember to hide the samples. Select `Window > Graphics Tools > Hide Samples` from the file menu bar.
 

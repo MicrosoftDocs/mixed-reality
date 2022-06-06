@@ -34,7 +34,7 @@ The `ClippingPrimitive` behaviors allow for performant `plane`, `sphere`, and `b
 By default, only one `ClippingPrimitive` can clip a [renderer](https://docs.unity3d.com/ScriptReference/Renderer.html) at a time. If your project requires more than one `ClippingPrimitive` to influence a [renderer](https://docs.unity3d.com/ScriptReference/Renderer.html) the sample code below demonstrates how to this can be achieved.
 
 > [!NOTE]
-> Having multiple `ClippingPrimitive`s clip a [renderer](https://docs.unity3d.com/ScriptReference/Renderer.html) will increase pixel shader instructions and will impact performance. Please profile these changes within your project.
+> Having multiple `ClippingPrimitive`s clip a [renderer](https://docs.unity3d.com/ScriptReference/Renderer.html) will increase pixel shader instructions and will impact performance. Profile these changes within your project.
 
 *How to have two different `ClippingPrimitive`s clip a render. For example, a `ClippingSphere` and `ClippingBox` at the same time:*
 
