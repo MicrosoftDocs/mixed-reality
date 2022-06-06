@@ -54,14 +54,15 @@ In order to place minimal overhead on applications importing the Mixed Reality T
 
 | Display name | Package name | Test requirements |
 | ------------ | ------------ | ----------------- |
-| MRTK Core Definitions | com.microsoft.mrtk.core  |  |
-| MRTK Data Binding and Theming |  com.microsoft.mrtk.data |   |
-| MRTK Diagnostics |  com.microsoft.mrtk.diagnostics |   |
-| MRTK Environment |  com.microsoft.mrtk.environment |   |
-| MRTK Extended Assets | com.microsoft.mrtk.extendedassets |  |
+| MRTK Core Definitions | com.microsoft.mrtk.core  | |
+| MRTK Accessibility | com.microsoft.mrtk.accessibility | |
+| MRTK Data Binding and Theming | com.microsoft.mrtk.data | |
+| MRTK Diagnostics | com.microsoft.mrtk.diagnostics | |
+| MRTK Environment | com.microsoft.mrtk.environment | |
+| MRTK Extended Assets | com.microsoft.mrtk.extendedassets | |
 | MRTK Input | com.microsoft.mrtk.input |  |
 | MRTK Spatial Manipulation | com.microsoft.mrtk.spatialmanipulation | <ul> <li> com.microsoft.mrtk.input </li> </ul> |
-| MRTK Standard Assets | com.microsoft.mrtk.standardassets |  |
-| MRTK UX Components |  com.microsoft.mrtk.uxcomponents | <ul> <li> com.microsoft.mrtk.input </li> </ul> |
-| MRTK UX Core |  com.microsoft.mrtk.uxcore | <ul> <li> com.microsoft.mrtk.input </li> </ul> |
-| MRTK Windows Speech |  com.microsoft.mrtk.windowsspeech | |
+| MRTK Standard Assets | com.microsoft.mrtk.standardassets | |
+| MRTK UX Components | com.microsoft.mrtk.uxcomponents | <ul> <li> com.microsoft.mrtk.input </li> </ul> |
+| MRTK UX Core | com.microsoft.mrtk.uxcore | <ul> <li> com.microsoft.mrtk.input </li> </ul> |
+| MRTK Windows Speech | com.microsoft.mrtk.windowsspeech | |
