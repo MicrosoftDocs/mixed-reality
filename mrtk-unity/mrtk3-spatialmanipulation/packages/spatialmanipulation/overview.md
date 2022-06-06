@@ -10,4 +10,4 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Solvers,
 
 # Spatial Manipulation | MRTK3
 
-This package contains the MRTK3 implementations of common spatial manipulation components, including [BoundsControl](bounds-control.md), [ObjectManipulator](object-manipulator.md), and [Solvers](solver.md).
+This package contains the MRTK3 implementations of common spatial manipulation components, including [BoundsControl](bounds-control.md), [ObjectManipulator](object-manipulator.md), and [Solvers](solvers/solver.md).
