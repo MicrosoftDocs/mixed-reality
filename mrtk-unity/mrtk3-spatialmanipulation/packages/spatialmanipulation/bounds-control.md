@@ -1,5 +1,13 @@
+---
+title: BoundsControl | MRTK3
+description: Overview on Bounds Control in MRTK3
+author: Zee2
+ms.author: finnsinclair
+ms.date: 4/15/2022
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, Bounds Control, BoundsControl
+---
 
-# Bounds Control
+# BoundsControl
 
 ![Bounds control](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_BoundsControl.png)
 
@@ -13,12 +21,12 @@ The new visuals offer streamlined visual feedback that illustrates the user's in
 
 Simply add BoundsControl to an existing object and populate the `BoundsVisualsPrefab` reference with the bounds visuals you'd like to use. We provide a few different pre-built bounds visuals for you to use.
 
-> **Important**
+> [!IMPORTANT]
 > We strongly recommend developers add **MinMaxScaleConstraint** to prevent the user from scaling the object to an unusably small or large size.
 
 To use the bounds visuals' intention and focus effects, you must have a `StatefulInteractable` on the object. If the interactable isn't automatically detected, you can specify the connection in the BoundsControl inspector.
 
-> **Note**
+> [!NOTE]
 > **We recommend developers use ObjectManipulator alongside BoundsControl** to offer users direct manipulation in addition to the affordance-based manipulation. ObjectManipulator can serve as the `StatefulInteractable` for the hover/focus states that the bounds visuals respond to.
 
 ## Bounds visuals prefabs
@@ -26,16 +34,33 @@ To use the bounds visuals' intention and focus effects, you must have a `Statefu
 We offer several pre-built bounds visuals for use with BoundsControl. Developers are encouraged to make prefab variants of these visuals and customize them to fit their needs. The handle animations and states are powered by StateVisualizer, allowing developers to further customize the look and feel of the affordances.
 
 
-|<h2>Handle occlusion style</h2><br>These bounds visuals offer a simplified visual design with fewer distractions for the user. Only the relevant handles along the edges of the bounds will be visible. The bounds visuals contract, expand, and change color/thickness depending on user intent and selection progress. We strongly recommend using this bounds visual style.|![Occluded handles](../../../mrtk3-overview/images/UXBuildingBlocks/BoundsControl/bc_occluded.png)|
-|--|--|
-
-
-|<h2>Intention-only</h2><br>In some contexts, handles may be undesirable, and developers may want to use the bounds visuals alone as a delightful indicator of user intention. While this prefab does the job, the same effect can be achieved with any of the other bounds visuals by selecting HandleType.None. We've found that the squeezable bounds visuals are a satisfying and delightful visual feedback element for many different contexts, not just for handle-based manipulation.|![No handles](../../../mrtk3-overview/images/UXBuildingBlocks/BoundsControl/bc_nohandles.png)|
-|--|--|
-
-
-|<h2>Legacy style</h2><br>These bounds visuals show all handles and edges of the box. This more closely matches the legacy design language and the previous behavior seen in MRTK 2.x; however, this design can be more distracting for users due to unnecessary visual noise. In addition, the presence of the handles that are in front of the object (and behind) can cause problems with the indirect gaze-pinch manipulation. We don't recommend using this style for new applications, especially those taking advantage of gaze targeting.|![Traditional handles](../../../mrtk3-overview/images/UXBuildingBlocks/BoundsControl/bc_legacy.png)|
-|--|--|
+:::row:::
+    :::column:::
+        ### Handle occlusion style<br>
+        These bounds visuals offer a simplified visual design with fewer distractions for the user. Only the relevant handles along the edges of the bounds will be visible. The bounds visuals contract, expand, and change color/thickness depending on user intent and selection progress. We strongly recommend using this bounds visual style.<br>
+    :::column-end:::
+        :::column:::
+       ![Occluded handles](../../../mrtk3-overview/images/UXBuildingBlocks/BoundsControl/bc_occluded.png)<br>
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        ### Intention-only<br>
+        In some contexts, handles may be undesirable, and developers may want to use the bounds visuals alone as a delightful indicator of user intention. While this prefab does the job, the same effect can be achieved with any of the other bounds visuals by selecting HandleType.None. We've found that the squeezable bounds visuals are a satisfying and delightful visual feedback element for many different contexts, not just for handle-based manipulation.<br>
+    :::column-end:::
+        :::column:::
+       ![No handles](../../../mrtk3-overview/images/UXBuildingBlocks/BoundsControl/bc_nohandles.png)<br>
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        ### Legacy style<br>
+        These bounds visuals show all handles and edges of the box. This more closely matches the legacy design language and the previous behavior seen in MRTK 2.x; however, this design can be more distracting for users due to unnecessary visual noise. In addition, the presence of the handles that are in front of the object (and behind) can cause problems with the indirect gaze-pinch manipulation. We don't recommend using this style for new applications, especially those taking advantage of gaze targeting.<br>
+    :::column-end:::
+        :::column:::
+       ![Traditional handles](../../../mrtk3-overview/images/UXBuildingBlocks/BoundsControl/bc_legacy.png)<br>
+    :::column-end:::
+:::row-end:::
 
 ## Interaction design
 
@@ -45,7 +70,7 @@ In the current iteration, we offer a simple activation/deactivation interaction.
 
 The handles can be manually activated or deactivated from code at any time by setting `HandlesActive`.
 
-## Automatic bounds calculation
+## Automatic bounds calcuation
 
 BoundsControl will attempt to calculate the bounds of the associated object automatically. If a specific bounds shape is desired, check the `OverrideBounds` option and specify the bounds object directly. The bounds calculation system will only calculate the bounds for the specified override object.
 
