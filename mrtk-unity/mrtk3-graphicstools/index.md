@@ -8,37 +8,31 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, Standard Shader
 ---
 
-# What is the Mixed Reality Graphics Tools
+# What is Graphics Tools?
 
-![Graphics Tools](images/GraphicsToolsBannerRounded.png)
+MRTK Graphics Tools for Unity is a Unity engine package with code, shaders, assets, and samples. It's created to help improve the visual fidelity of Mixed Reality applications while staying within performance budgets.
 
-Graphics tools and components for developing Mixed Reality applications in Unity.
+![Graphics Tools](images/MRTKBanner.png)
 
-> **_NOTE:_** This package is an evolution of the [MRTK/Standard shader system](https://docs.microsoft.com/en-us/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader?view=mrtkunity-2021-05) and other components. The equivalent of the `MRTK/Standard` shader within Graphics Tools is the `Graphics Tools/Standard` shader. New features have been added to better support Unity UI and the new Mixed Reality Design System.
+## Getting started with Graphic Tools
 
-> **_NOTE:_** Graphics Tools requires Unity 2020.x and above.
+If using MRTK, follow the getting started docs found [here](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/mrtk2/?view=mrtkunity-2022-05#getting-started-with-mrtk). If you wish to use the Graphics Tools plugin on its own, read the instructions in the Graphics Tools [GitHub repository](https://github.com/microsoft/MixedReality-GraphicsTools-Unity).
+
+> [!NOTE]
+> The Graphics Tools package requires Unity 2020.x and above.
 
 ## Importing samples
 
-To open the samples contained within Graphics Tools expand the `"Samples"` list and click the `"Import"` button for any samples you would like to try:
+To view the samples contained within Graphics Tools, select **Window > Package Manager** from the Unity file menu bar. Select on the **MRTK Graphics Tools** package and expand the **Samples** list. Finally, select the **Import** button for any samples you would like to try:
 
 ![Package Manager Samples](images/PackageManagerSamples.jpg)
 
-Samples will import into your project's Assets folder so they may be opened and modified.
+Samples will import into your project's `Assets` folder so they may be opened and modified.
 
-## Documentation
+## Highlighted feature areas
 
 Click on the below topics to learn more about specific features.
 
-| | | | |
-| :------------- | :----------: | -----------: | -----------: | 
-| [Standard shader](features/standard-shader.md) 🎨 | [Clipping primitive](features/clipping-primitive.md) ✂ | [Proximity light](features/proximity-light.md) 💡 | [Hover light](features/hover-light.md) 👆 |
-| [Material instance](features/material-gallery.md) ✨ | [Animation](features/animation.md) 🚶‍♀️ | | |
-
-## Trademarks
-
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
-trademarks or logos is subject to and must follow 
-[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
-Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
-Any use of third-party trademarks or logos are subject to those third-party's policies.
+| [Standard shader](features/standard-shader.md) 🎨 | [UnityUI tooling](features/clipping-primitive.md) 🛠 | [Editor tooling](features/editor-tooling.md) ✨         | [Animation](features/animation.md) 🚶‍♀️        |
+|--------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------|----------------------------------------------|
+| [Proximity light](features/proximity-light.md) 💡 | [Hover light](features/hover-light.md) 👆            | [Clipping primitive](features/clipping-primitive.md) ✂ | [Mesh outlines](features/mesh-outlines.md) 💥 |

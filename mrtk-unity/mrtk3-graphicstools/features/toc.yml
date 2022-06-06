@@ -1,37 +1,25 @@
 items:
 - name: Accessibility Utilities
   href: accessibility-utilities.md
-- name: Acrylic Layer System
-  href: acrylic-layer-system.md
+- name: Acrylic
+  href: acrylic.md
 - name: Animation
   href: animation.md
-- name: Canvas Classes
-  href: canvas-classes.md
-- name: CanvasElement Classes
-  href: canvaselement-classes.md
+- name: UnityUI Tooling
+  href: unityui-tooling.md
 - name: Clipping Primitive
   href: clipping-primitive.md
-- name: DebugMipColor Shader Usage
-  href: debugmipcolor-shader-usage.md
 - name: Hover Light
   href: hover-light.md
-- name: Inverse Mask
-  href: inverse-mask.md
-- name: Material Gallery
-  href: material-gallery.md
 - name: Material Instance
   href: material-instance.md
 - name: Measure Tool
   href: measure-tool.md
-- name: MeshOutline Usage
-  href: meshoutline-usage.md
-- name: Mixed Reality Graphics Tools Editor Tooling
-  href: mrgt-editor-tooling.md
-- name: Occlusion Effect
-  href: occlusion-effect.md
+- name: Mesh Outlines
+  href: mesh-outlines.md
+- name: Editor Tooling
+  href: editor-tooling.md
 - name: Proximity Light
   href: proximity-light.md
-- name: RectMask2DFast & RoundedRectMask2D Usage
-  href: rectmask2dfast-roundedrectmask2d.md
 - name: Standard Shader
   href: standard-shader.md
