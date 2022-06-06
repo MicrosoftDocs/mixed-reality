@@ -40,7 +40,7 @@ The manager supports two methods of capturing a background image:
 1. Copy framebuffer: records a downsampled copy of the current framebuffer during URP rendering using a set of renderer feature passes
 2. Render to texture: renders a separate reduced-resolution image of the background objects
 
-The captured image is then blurred based on the per-layer blur settings. If the blur map is not updated every frame, the blur process is applied during the next frame after the capture.
+The captured image is then blurred based on the per-layer blur settings. If the blur map isn't updated every frame, the blur process is applied during the next frame after the capture.
 
 There's also an option to gradually blend in an updated map over several frames (if the map is not updated every frame).
 
