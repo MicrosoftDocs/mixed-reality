@@ -28,7 +28,7 @@ In this sample, you'll learn how to do the following:
 - A Windows 10 or 11 PC
 - Visual Studio 2022 with the required workloads (as noted in the [Installation Checklist](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools))
 - Windows 10 SDK 10.0.18362.0 or later
-- Unity Hub with Unity 2021.3.4f1 LT installed
+- Unity Hub with Unity 2021.3.4f1 LTS installed
 
 ## Download the Project
 
