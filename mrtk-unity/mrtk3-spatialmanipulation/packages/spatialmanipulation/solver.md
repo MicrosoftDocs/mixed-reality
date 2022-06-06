@@ -1,3 +1,12 @@
+---
+title: Solvers
+description: Overview of Solvers in MRTK3
+author: CDiaz-MS
+ms.author: cadia
+ms.date: 4/13/2022
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Solvers
+---
 
 # Solvers
 
@@ -186,4 +195,4 @@ The size of the indicator will shrink the closer the user is to capturing the *D
 
 The `HandConstraint` behavior provides a solver that constrains the tracked object to a region safe for hand constrained content (such as hand UI, menus, etc.) Safe regions are considered areas that don't intersect with the hand. A derived class of `HandConstraint` called `HandConstraintPalmUp` is also included to demonstrate a common behavior of activating the solver-tracked object when the palm is facing the user.
 
-[See Hand Menu page](../hand-menu.md) for examples of using Hand Constraint solver to create hand menus.
+[See the Hand Menu documentation](../../../mrtk3-uxcomponents/packages/uxcomponents/hand-menu.md) for examples of using the Hand Constraint solver to create hand menus.
