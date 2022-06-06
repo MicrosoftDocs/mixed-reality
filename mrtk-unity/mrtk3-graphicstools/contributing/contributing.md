@@ -27,4 +27,4 @@ If you wish to contribute changes to the samples you must make a temporary local
 3. **Important:** When finished and before committing your changes, remember to hide the samples. Select `Window > Graphics Tools > Hide Samples` from the file menu bar.
 
 > [!TIP]
-> Failing to invoke the `Window > Graphics Tools > Hide Samples` menu item after editing samples will result in git thinking all sample files have changed. Once samples are hidden the actual files changed should be apparent in git.
+> Failing to invoke the **Window > Graphics Tools > Hide Samples** menu item after editing samples will result in git thinking all sample files have changed. Once samples are hidden the actual files changed should be apparent in git.
