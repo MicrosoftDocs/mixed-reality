@@ -1,8 +1,8 @@
 ---
 title: Mixed Reality Toolkit 3 Developer Documentation - Quest deployment
 description: Mixed Reality Toolkit 3 for developers - Quest deployment.
-author: MaxWang-MS
-ms.author: wangmax
+author: Roger Liu   
+ms.author: roliu
 ms.date: 6/3/2022
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, Quest, Deployment
@@ -12,7 +12,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, Quest,
 
 This page describes how to deploy your Unity Project with MRTK onto a Quest device. To add MRTK to your project, please refer to the [setup page](../setup.md).
 
->**Note**
+>[!NOTE] 
 >We **strongly recommend** using [Holographic remoting](https://docs.microsoft.com/windows/mixed-reality/develop/unity/preview-and-debug-your-app) for rapid iteration and testing on HoloLens 2, which allows for instant testing on the device without the need for compile + deploy. You can also play in Unity directly with the PC's current OpenXR runtime, including [Windows Mixed Reality](https://www.microsoft.com/p/openxr-tools-for-windows-mixed-reality/9n5cvvl23qbt), [SteamVR on OpenXR](https://www.steamvr.com/), or even [Oculus Link for Quest](https://support.oculus.com/airlink). See our complete list [here](../debugging-and-testing.md).
 
 ## Deployment Prerequisites
@@ -49,7 +49,7 @@ This page describes how to deploy your Unity Project with MRTK onto a Quest devi
 
 ## Deploying to Device
 
-1. After you have the project configured, proceed to (Generate Build)[https://developer.oculus.com/documentation/unity/unity-build/#generate-build]
+1. After you have the project configured, proceed to [Generate Build](https://developer.oculus.com/documentation/unity/unity-build/#generate-build)
 
     >[!NOTE] 
     >**Do not** follow the Configure Settings instructions on Oculus's documentation page. Their instructions require the use of the Oculus Integration SDK, and uses the Oculus XR Plug-in rather than the OpenXR Plug-in.
