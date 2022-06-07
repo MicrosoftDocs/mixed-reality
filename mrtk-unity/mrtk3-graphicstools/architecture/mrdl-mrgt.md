@@ -23,7 +23,7 @@ The shaders and assets that power the MRDL can be found in the following locatio
 
 ### Shaders
 
-The first option of every material inspector contains a shader dropdown. All Graphics Tools shaders are within the `Graphics Tools` namespace. Most bespoke MRDL shaders are in the `Graphics Tools/Canvas` and `Graphics Tools/Non-Canvas` shader namespace. As the name suggests shaders in the `Canvas` namespace should be used with UnityUI canvases and shaders in the `Non-Canvas` namespace should be used within normal Unity contexts.
+The first option of every material inspector contains a shader dropdown. All Graphics Tools shaders are within the `Graphics Tools` namespace. Most bespoke MRDL shaders are in the `Graphics Tools/Canvas` and `Graphics Tools/Non-Canvas` shader namespace. As the name suggests, shaders in the `Canvas` namespace should be used with UnityUI canvases and shaders in the `Non-Canvas` namespace should be used within normal Unity contexts.
 
 ![Shader dropdown in editor](images/MRDL-MRGT/ShaderDropdown.jpg)
 
@@ -43,7 +43,7 @@ Some models live in the *Runtime/Models* folder. These models are used for non-c
 
 ## When should I use one MRDL component versus another?
 
-Graphics Tools supports two user interface creation methods, UnityUI and traditional game objects. It's recommended to look at the [sample assets](https://Link-to-sample-assets.com), however, the list below can used as a reference.
+Graphics Tools supports two user interface creation methods, UnityUI and traditional game objects. It's recommended to look at the [sample assets](../features/samples/unity-ui.md), however, the list below can used as a reference.
 
 ### Back plate
 
@@ -107,4 +107,4 @@ Similar to the back plate, but provides a rect with beveled edges.
 
 ## See also
 
-* [Architecture overview](overview.md)
+* [Graphics Tools overview](overview.md)
