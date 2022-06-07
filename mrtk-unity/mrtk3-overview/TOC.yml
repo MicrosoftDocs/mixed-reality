@@ -6,8 +6,8 @@
   href: deployment/toc.yml
 - name: Packages
   href: packages/toc.yml
-- name: Example scenes
-  href: example-scenes.md
+- name: Using and creating scenes
+  href: scenes.md
 - name: Debugging and testing
   href: debugging-and-testing.md
 - name: Known issues

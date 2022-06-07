@@ -6,8 +6,8 @@
   href: ../mrtk3-overview/deployment/toc.yml
 - name: Packages
   href: packages/toc.yml
-- name: Example scenes
-  href: ../mrtk3-overview/example-scenes.md
+- name: Using and creating scenes
+  href: ../mrtk3-overview/scenes.md
 - name: Debugging and testing
   href: ../mrtk3-overview/debugging-and-testing.md
 - name: Known issues

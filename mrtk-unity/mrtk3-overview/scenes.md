@@ -1,16 +1,18 @@
 ---
-title: Example scenes in Unity
-description: Example scenes in Unity
+title: Using and creating scenes in MRTK3
+description: Using and creating scenes in MRTK3
 author: MaxWang-MS
 ms.author: wangmax
-ms.date: 6/3/2022
+ms.date: 6/6/2022
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, scenes, example scenes
 ---
 
-# Unity scenes
+# Using and creating scenes in MRTK3
 
-**The following are sample scenes shipped with the sample Unity project (under `Samples/Assets/Scenes`):**
+## Sample scenes shipped with MRTK3 sample Unity Project
+
+### General sample scenes (under `Samples/Assets/Scenes`)
 
 **HandInteractionExample**
 
@@ -78,6 +80,8 @@ The scene demonstrates `UIBackplate.prefab`, which you can use to construct vari
 
 This scene showcases all available UI building blocks and their permutations in MRTK. All controls are based on the new Mixed Reality Design Language.
 
+### DataBinding and Theming sample scenes
+
 **The following are DataBinding and Theming sample scenes also shipped with the sample Unity project:**
 
 **Assets\CoreUX Theming Example\Scenes\AudioTheming**
@@ -102,14 +106,13 @@ Demonstration of using Data Binding and Theming to bind to data sources.
 1. Add the **MRTK XR Rig** prefab
 1. Remove the **Main Camera** Game Object because the **MRTK XR Rig** already contains one
 
-    ![Hand Menu](images\mrtk-xr-rig.png)
+    ![MRTK XR rig screenshot](images\mrtk-xr-rig.png)
 
 1. Add the MRTK Input Simulator prefab to your scene.
 
     >[!Note]
     >This step is optional, but required by in-editor simulations.
-
-
-![MRTK input simulator hierarchy pane](images\mrtk-input-simulator.png)
+    
+    ![MRTK input simulator hierarchy pane](images\mrtk-input-simulator.png)
 
 
