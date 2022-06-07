@@ -27,10 +27,10 @@ The components below help with rendering UI, but they aren't visible [Graphic](h
 
 ### ScaleMeshEffect
 
-On UnityUI components, the `unity_ObjectToWorld` matrix (or `UNITY_MATRIX_M`  in URP) isn't the transformation matrix of the local transform the Graphic component lives on but that of its parent Canvas. Many shader effects within Graphics Tools require object scale to be known. To solve this issue, the _ScaleMeshEffect.cs_ will store scaling information into UV channel attributes during UI mesh construction.
+On UnityUI components, the `unity_ObjectToWorld` matrix (or `UNITY_MATRIX_M`  in URP) isn't the transformation matrix of the local transform the Graphic component lives on but that of its parent Canvas. Many shader effects within Graphics Tools require object scale to be known. To solve this issue, the *ScaleMeshEffect.cs* will store scaling information into UV channel attributes during UI mesh construction.
 
 >[!TIP]
-> A [Canvas](https://docs.unity3d.com/ScriptReference/Canvas.html) or [CanvasRenderer](https://docs.unity3d.com/ScriptReference/CanvasRenderer.html) within Graphics Tools will prompt for the addition of a _ScaleMeshEffect.c_s when one is required.
+> A [Canvas](https://docs.unity3d.com/ScriptReference/Canvas.html) or [CanvasRenderer](https://docs.unity3d.com/ScriptReference/CanvasRenderer.html) within Graphics Tools will prompt for the addition of a *ScaleMeshEffect.cs* when one is required.
 
 ### RectMask2DFast
 
@@ -42,10 +42,10 @@ UnityUI has a built-in component called [RectMask2D](https://docs.unity3d.com/Pa
 myRectMask2DFast.ForceClip = true;
 ```
 
-All *Graphics Tools/Canvas/* shaders and the *Graphics Tools/Standard Canvas* shaders support `RectMask2D`, `RectMask2DFast`, and `RoundedRectMask2D`.
+All `Graphics Tools/Canvas/` shaders and the `Graphics Tools/Standard Canvas` shaders support `RectMask2D`, `RectMask2DFast`, and `RoundedRectMask2D`.
 
 >[!NOTE]
-> The *Graphics Tools/Canvas/* shaders and the *Graphics Tools/Standard Canvas* shader **do not** support the *Softness* property on `RectMask2D` or `RectMask2DFast.`
+> The `Graphics Tools/Canvas/` shaders and the `Graphics Tools/Standard Canvas` shader **do not** support the *Softness* property on `RectMask2D` or `RectMask2DFast.`
 
 ### RoundedRectMask2D
 
@@ -62,13 +62,13 @@ The below [Graphic](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/api/Uni
 
 ### CanvasElementRoundedRect
 
-This component procedurally generates a 3D rounded rect mesh that is then assigned to the Canvas's vertex stream. Normally this component is used to generate backplate meshes using the *Graphics Tools/Canvas/Backplate* shader.
+This component procedurally generates a 3D rounded rect mesh that is then assigned to the Canvas's vertex stream. Normally this component is used to generate backplate meshes using the `Graphics Tools/Canvas/Backplate` shader.
 
 ![CanvasElementRoundedRect example backplate](images/UnityUITooling/CanvasElementRoundedRect.jpg)
 
 ### CanvasElementBeveledRect
 
-Just like `CanvasElementRoundedRect`, this component procedurally generates a 3D rounded rect but with beveled edges. Normally this component is used to generate back plate meshes using the *Graphics Tools/Canvas/Beveled* shader.
+Just like `CanvasElementRoundedRect`, this component procedurally generates a 3D rounded rect but with beveled edges. Normally this component is used to generate back plate meshes using the `Graphics Tools/Canvas/Beveled` shader.
 
 ![CanvasElementBeveledRect example](images/UnityUITooling/CanvasElementBeveledRect.jpg)
 

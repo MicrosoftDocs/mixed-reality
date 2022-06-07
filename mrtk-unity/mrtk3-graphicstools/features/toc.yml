@@ -23,3 +23,5 @@ items:
   href: proximity-light.md
 - name: Standard Shader
   href: standard-shader.md
+- name: Samples
+  href: samples/toc.yml

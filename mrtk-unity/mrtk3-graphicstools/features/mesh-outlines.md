@@ -25,7 +25,7 @@ See the *Mesh Outlines* sample for demonstrations of the outline system.
 
 ## Material setup
 
-The outline behaviors are used with the *Graphics Tools/Standard* shader. Outline materials are usually a solid unlit color but can be configured to achieve a wide array of effects. The default configuration of an outline material is as follows:
+The outline behaviors are used with the `Graphics Tools/Standard` shader. Outline materials are usually a solid unlit color but can be configured to achieve a wide array of effects. The default configuration of an outline material is as follows:
 
 ![Mesh outline material inspector](images/MeshOutline/OutlineMaterial.jpg)
 

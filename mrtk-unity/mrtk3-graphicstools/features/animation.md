@@ -12,10 +12,10 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 
 Most properties on the Graphics Tools Standard shader can be animated using Unity's built-in [animation system](https://docs.unity3d.com/Manual/AnimationOverview.html). Materials that are used on [Unity UI](https://docs.unity3d.com/ScriptReference/CanvasRenderer.html) components don't expose their material properties to Unity's animation system by default (nor do they support [material property blocks](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html)). Graphics Tools contains a system to support the animation of Unity UI material properties.
 
-The _CanvasMaterialAnimatorGraphicsToolsStandardCanvas.cs_ script exposes all material properties available in the _Graphics Tools/Standard Canvas_ shader. Adding this component to a UnityUI game object with a [CanvasRenderer](https://docs.unity3d.com/ScriptReference/CanvasRenderer.html) will expose material properties to Unity's animation system and will automatically update the correct material when animated.
+The _CanvasMaterialAnimatorGraphicsToolsStandardCanvas.cs_ script exposes all material properties available in the `Graphics Tools/Standard Canvas` shader. Adding this component to a UnityUI game object with a [CanvasRenderer](https://docs.unity3d.com/ScriptReference/CanvasRenderer.html) will expose material properties to Unity's animation system and will automatically update the correct material when animated.
 
 > [!NOTE]
-> _CanvasMaterialAnimatorGraphicsToolsStandardCanvas.cs_ only works with the _Graphics Tools/Standard Canvas_ shader. For other shaders, use their corresponding animation script. For example, _CanvasMaterialAnimatorCanvasBackplate.cs_ for the _Graphics Tools/Canvas/Backplate_ shader.
+> _CanvasMaterialAnimatorGraphicsToolsStandardCanvas.cs_ only works with the `Graphics Tools/Standard Canvas` shader. For other shaders, use their corresponding animation script. For example, _CanvasMaterialAnimatorCanvasBackplate.cs_ for the `Graphics Tools/Canvas/Backplate` shader.
 
 ## Programmatic usage
 

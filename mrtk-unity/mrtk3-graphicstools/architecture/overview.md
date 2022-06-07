@@ -27,7 +27,7 @@ The runtime directory contains most of the package's functionality and included 
 
 ## Samples
 
-Samples exist under the `Samples~` directory as outlined by Unity's [sample recommendations](https://docs.unity3d.com/Manual/cus-samples.html). The '~' character prevents the `Samples~` folder for being imported by Unity. This is ideal when including the package via the package manager.
+Samples exist under the *Samples~* directory as outlined by Unity's [sample recommendations](https://docs.unity3d.com/Manual/cus-samples.html). The '~' character prevents the *Samples~* folder for being imported by Unity. This is ideal when including the package via the package manager.
 
 Samples should be used to gleam example usage and not used directly in production. Sample code and content do **not** follow [semantic versioning](https://semver.org/) and is subject to breaking changes.
 

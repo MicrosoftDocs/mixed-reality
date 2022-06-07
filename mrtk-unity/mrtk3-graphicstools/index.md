@@ -27,11 +27,11 @@ To view the samples contained within Graphics Tools, select **Window > Package M
 
 ![Package Manager Samples](images/PackageManagerSamples.jpg)
 
-Samples will import into your project's `Assets` folder so they may be opened and modified.
+Samples will import into your project's *Assets* folder so they may be opened and modified.
 
 ## Highlighted feature areas
 
-Click on the below topics to learn more about specific features.
+Select an article below to learn more about specific features.
 
 | [Standard shader](features/standard-shader.md) 🎨 | [UnityUI tooling](features/clipping-primitive.md) 🛠 | [Editor tooling](features/editor-tooling.md) ✨         | [Animation](features/animation.md) 🚶‍♀️        |
 |--------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------|----------------------------------------------|

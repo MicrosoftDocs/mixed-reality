@@ -16,7 +16,7 @@ The Graphics Tools Standard shading system utilizes a flexible shader that can a
 
 ## Sample
 
-See the *Material Gallery* sample for multiple demonstrations of *Graphics Tools/Standard* shader variants. For examples of *Graphics Tools/Standard Canvas*, see the *UnityUI* sample
+See the *Material Gallery* sample for multiple demonstrations of `Graphics Tools/Standard` shader variants. For examples of `Graphics Tools/Standard Canvas`, see the *UnityUI* sample
 
 ## Architecture
 
@@ -26,10 +26,10 @@ To better support traditional Unity workflows and [UnityUI](https://docs.unity3d
 
 | Context| Default                 | UnityUI                        |
 |--------|-------------------------|--------------------------------|
-| Name   | *Graphics Tools/Standard* | *Graphics Tools/Standard Canvas* |
+| Name   | `Graphics Tools/Standard` | `Graphics Tools/Standard Canvas` |
 | Shader | GraphicsToolsStandard   | GraphicsToolsStandardCanvas    |
 
-Both shaders are mostly identical because they share common shader code includes. The *Graphics Tools/Standard Canvas* contains some extra logic specific to UnityUI.
+Both shaders are mostly identical because they share common shader code includes. The `Graphics Tools/Standard Canvas` contains some extra logic specific to UnityUI.
 
 The following shader includes power the Graphics Tools/Standard shading system:
 
@@ -53,20 +53,20 @@ Unity has a handful of [render pipelines](https://docs.unity3d.com/Manual/render
 
 ## UnityUI support
 
-The Graphics Tools Standard shading system works with Unity's built-in UI system called [UnityUI](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/index.html). The *Graphics Tools/Standard Canvas* should be used for all materials within UnityUI canvases.
+The Graphics Tools Standard shading system works with Unity's built-in UI system called [UnityUI](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/index.html). The `Graphics Tools/Standard Canvas` should be used for all materials within UnityUI canvases.
 
 A [Canvas](https://docs.unity3d.com/ScriptReference/Canvas.html) or [CanvasRenderer](https://docs.unity3d.com/ScriptReference/CanvasRenderer.html) within Graphics Tools will prompt for the addition of a `ScaleMeshEffect.cs` when one is required:
 
 ![Scale mesh effect inspector warning](images/StandardShader/ScaleMeshEffect.jpg)
 
-On UnityUI components, the `unity_ObjectToWorld` matrix (or `UNITY_MATRIX_M`  in URP) isn`t the transformation matrix of the local transform the Graphic component lives on but that of its parent Canvas. Many *Graphics Tools/Standard Canvas* shader effects require object scale to be known. To solve this issue, the `ScaleMeshEffect.cs` will store scaling information into UV channel attributes during UI mesh construction.
+On UnityUI components, the `unity_ObjectToWorld` matrix (or `UNITY_MATRIX_M`  in URP) isn't the transformation matrix of the local transform the Graphic component lives on but that of its parent Canvas. Many `Graphics Tools/Standard Canvas` shader effects require object scale to be known. To solve this issue, the `ScaleMeshEffect.cs` will store scaling information into UV channel attributes during UI mesh construction.
 
 > [!TIP]
 > When using a Unity Image component, it is recommended to specify "None (Sprite)" for the Source Image to prevent Unity UI from generating extra vertices.
 
 ## Material inspector
 
-A custom material inspector exists for the *Graphics Tools/Standard* and *Graphics Tools/Standard Canvas* shaders called `StandardShaderGUI.cs`. The inspector automatically enables/disables shader features, based on user selection and aides in setting up render state. For more information about each feature **hover over each property in the Unity Editor for a tooltip.**
+A custom material inspector exists for the `Graphics Tools/Standard` and `Graphics Tools/Standard Canvas` shaders called `StandardShaderGUI.cs`. The inspector automatically enables/disables shader features, based on user selection and aides in setting up render state. For more information about each feature **hover over each property in the Unity Editor for a tooltip.**
 
 > [!NOTE]
 > The inspector UI is dynamic. Portions of the UI will change as features are enabled and disabled.
@@ -77,7 +77,7 @@ The inspector can be broken into a handful of features areas as described below.
 
 ### Rendering mode
 
-The first portion of the inspector controls the material's render state. *Rendering Mode* determines when and how a material will be rendered. The aim of the *Graphics Tools/Standard* and *Graphics Tools/Standard Canvas* shaders is to mirror the [rendering modes found in the Unity/Standard shader](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html). The *Graphics Tools/Standard* and *Graphics Tools/Standard Canvas* shaders also include an *Additive* rendering mode and *Custom* rendering mode for complete user control.
+The first portion of the inspector controls the material's render state. *Rendering Mode* determines when and how a material will be rendered. The aim of the `Graphics Tools/Standard` and `Graphics Tools/Standard Canvas` shaders is to mirror the [rendering modes found in the Unity/Standard shader](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html). The `Graphics Tools/Standard` and `Graphics Tools/Standard Canvas` shaders also include an *Additive* rendering mode and *Custom* rendering mode for complete user control.
 
 | Rendering Mode |         Description                                                       |
 |----------------|---------------------------------------------------------------------------|
@@ -137,7 +137,7 @@ Similar to the advanced section in Unity's built-in shaders. This section contro
 
 ## Lighting
 
-The *Graphics Tools/Standard* and *Graphics Tools/Standard Canvas* shaders use a simple approximation for lighting. Because the shaders don't calculate for physical correctness and energy conservation, they render quickly and efficiently. [Blinn-Phong](https://en.wikipedia.org/wiki/Blinn%E2%80%93Phong_reflection_model) is the primary lighting technique used and is blended with Fresnel and image-based lighting to approximate physically based lighting. The shaders support the following lighting techniques:
+The `Graphics Tools/Standard` and `Graphics Tools/Standard Canvas` shaders use a simple approximation for lighting. Because the shaders don't calculate for physical correctness and energy conservation, they render quickly and efficiently. [Blinn-Phong](https://en.wikipedia.org/wiki/Blinn%E2%80%93Phong_reflection_model) is the primary lighting technique used and is blended with Fresnel and image-based lighting to approximate physically based lighting. The shaders support the following lighting techniques:
 
 ### Directional light
 

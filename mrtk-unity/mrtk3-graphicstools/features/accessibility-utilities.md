@@ -21,7 +21,7 @@ This feature instructs a "Graphics Tools/Text Mesh Pro" based material to displa
 ![Text Color Inversion](images/AccessibilityUtilities/TextColorInversion.gif)
 
 > [!NOTE]
-> This feature can only be applied to text that is created with TextMesh Pro which is the recommended text component for Graphic Tools. Also note that for color inversion to work on a font material, the *Graphics Tools/Text Mesh Pro* shader must be applied instead of the default shaders packaged with TextMesh Pro.
+> This feature can only be applied to text that is created with TextMesh Pro which is the recommended text component for Graphic Tools. Also note that for color inversion to work on a font material, the `Graphics Tools/Text Mesh Pro` shader must be applied instead of the default shaders packaged with TextMesh Pro.
 
 ### Usage
 To turn on this feature without writing any code, you need to do the following first:
@@ -39,7 +39,7 @@ To turn on this feature without writing any code, you need to do the following f
 
 3. Select the font material that is associated with the asset.
 
-4. Change the shader of the selected material in the inspector panel from *TextMeshPro/Mobile/Distance Field* (or whatever your current shader is) to *Graphics Tools/Text Mesh Pro*
+4. Change the shader of the selected material in the inspector panel from *TextMeshPro/Mobile/Distance Field* (or whatever your current shader is) to `Graphics Tools/Text Mesh Pro`
 
 ![Graphics Tools Shader](images/AccessibilityUtilities/GraphicsToolsShader.png)
 

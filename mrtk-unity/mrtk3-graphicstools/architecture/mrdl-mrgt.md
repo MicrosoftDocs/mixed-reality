@@ -32,11 +32,11 @@ The first option of every material inspector contains a shader dropdown. All Gra
 
 ### Materials
 
-Within the `Runtime/Materials` folder, you will find a material that represents each shader above. These materials are used for common user interface components. Some materials reference textures that are required for certain effects, like iridescence.
+Within the *Runtime/Materials* folder, you will find a material that represents each shader above. These materials are used for common user interface components. Some materials reference textures that are required for certain effects, like iridescence.
 
 ### Models
 
-Some models live in the `Runtime/Models` folder. These models are used for non-canvas materials.
+Some models live in the *Runtime/Models* folder. These models are used for non-canvas materials.
 
 > [!TIP]
 > Most canvas models are generated programmatically in code.

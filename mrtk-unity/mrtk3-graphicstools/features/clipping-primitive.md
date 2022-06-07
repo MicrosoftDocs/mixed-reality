@@ -17,7 +17,7 @@ The `ClippingPrimitive` behaviors allow for performant `plane`, `sphere`, and `b
 > [!NOTE]
 > `ClippingPrimitive`s utilize [clip/discard](https://developer.download.nvidia.com/cg/clip.html) instructions within shaders and disable Unity's ability to batch clipped renderers. Take these performance implications in mind when utilizing clipping primitives.
 
-`ClippingPlane.cs`, `ClippingSphere.cs`, and `ClippingBox.cs` can be used to easily control clipping primitive properties. Use these components with the following shaders to use clipping scenarios.
+*ClippingPlane.cs*, *ClippingSphere.cs*, and *ClippingBox.cs* can be used to easily control clipping primitive properties. Use these components with the following shaders to use clipping scenarios.
 
 - *Graphics Tools/Standard*
 - *Graphics Tools/Text Mesh Pro*
