@@ -21,7 +21,7 @@ MRTK3 is the third generation of the Microsoft Mixed Reality Toolkit for Unity. 
 
 | Platform | Supported Devices |
 |---|---|
-| OpenXR (Unity 2020.3.35+ or 2021.3.4+) | Microsoft HoloLens 2 <br> Meta Quest (experimental) <br> Windows Mixed Reality (experimental) <br> SteamVR (experimental) <br> Oculus Rift on OpenXR (experimental) |
+| OpenXR XR devices | Microsoft HoloLens 2 <br> Meta Quest (experimental) <br> Windows Mixed Reality (experimental) <br> SteamVR (experimental) <br> Oculus Rift on OpenXR (experimental) |
 | Windows | Traditional flat-screen desktop (experimental)
 | And more coming soon! |
 
@@ -81,7 +81,7 @@ To acquire and use MRTK3, the following software tools are required.
 | Software | Version | Notes
 | --- | --- | --- |
 | [Microsoft Visual Studio](https://visualstudio.microsoft.com/) | 2019 Community edition or greater | Recommend Visual Studio 2022 |
-| Unity | 2020.3, 2021.3 or newer | Recommend using an LTS release |
+| Unity | 2020.3.35+ or 2021.3.4+ | Recommend using an LTS release |
 | [Mixed Reality Feature Tool for Unity](https://aka.ms/mrfeaturetool) | | Used to acquire MRTK3 packages |
 | Mixed Reality OpenXR Plugin | | Install via Mixed Reality Feature Tool |
 
