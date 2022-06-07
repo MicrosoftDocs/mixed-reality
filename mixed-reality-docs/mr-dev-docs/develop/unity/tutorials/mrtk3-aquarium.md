@@ -37,7 +37,7 @@ You can download the MRTK3 Aquarium project from our Code Samples browser [INSER
 ## How to Use the Tutorials
 The Unity in-editor tutorial format provides step-by-step instruction within the editor for how to accomplish each step of the tutorial. Each tutorial is independent of the others so you're welcome to complete them in any order you prefer.
 1. In the top navigation menu in Unity, select <b>Tutorials > Show Tutorials</b>.
-1. In the right <b>Tutorials</b> panel, select a tutorial.
+1. In the right-side <b>Tutorials</b> panel, select a tutorial.
 1. Each tutorial begins with a brief overview and learning objectives. Select the <b>Start</b> button to start the tutorial.
 1. Most steps in the tutorial requires you to complete a series of tasks before continuing to the next step. You must complete the tasks as they are written. Once you complete all tasks, select <b>Next</b> to continue.
 Once you've completed all steps in the tutorial, you can either continue to the next tutorial <i>or</i> go back to the list of all tutorials.
