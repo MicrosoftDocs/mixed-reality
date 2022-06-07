@@ -1,7 +1,7 @@
 ---
 title: Mixed Reality Toolkit 3 Developer Documentation - Quest deployment
 description: Mixed Reality Toolkit 3 for developers - Quest deployment.
-author: Roger Liu   
+author: RogPodge
 ms.author: roliu
 ms.date: 6/3/2022
 ms.localizationpriority: high
@@ -13,15 +13,13 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, Quest,
 This page describes how to deploy your Unity Project with MRTK onto a Quest device. To add MRTK to your project, please refer to the [setup page](../setup.md).
 
 >[!NOTE] 
->We **strongly recommend** using [Holographic remoting](https://docs.microsoft.com/windows/mixed-reality/develop/unity/preview-and-debug-your-app) for rapid iteration and testing on HoloLens 2, which allows for instant testing on the device without the need for compile + deploy. You can also play in Unity directly with the PC's current OpenXR runtime, including [Windows Mixed Reality](https://www.microsoft.com/p/openxr-tools-for-windows-mixed-reality/9n5cvvl23qbt), [SteamVR on OpenXR](https://www.steamvr.com/), or even [Oculus Link for Quest](https://support.oculus.com/airlink). See our complete list [here](../debugging-and-testing.md).
+>We **strongly recommend** using [Holographic remoting](/mixed-reality/develop/unity/preview-and-debug-your-app) for rapid iteration and testing on HoloLens 2, which allows for instant testing on the device without the need for compile + deploy. You can also play in Unity directly with the PC's current OpenXR runtime, including [Windows Mixed Reality](https://www.microsoft.com/p/openxr-tools-for-windows-mixed-reality/9n5cvvl23qbt), [SteamVR on OpenXR](https://www.steamvr.com/), or even [Oculus Link for Quest](https://support.oculus.com/airlink). See our complete list [here](../debugging-and-testing.md).
 
 ## Deployment Prerequisites
 
 1. Follow [these steps](https://developer.oculus.com/documentation/unity/book-unity-gsg/) to ensure that your project is ready to deploy on the Quest Device.
 
 1. Ensure that [developer mode](https://developer.oculus.com/documentation/native/android/mobile-device-setup/) is enabled on your device. Installing the Oculus ADB Drivers is optional.
-
-1. Ensure that your [project settings](../setup.md#mrtk3-configuration-new-unity-project) are configured correctly to use Open XR pipeline and MRTK's feature set. **These features are required to deploy your project onto the Oculus Quest** 
 
 1. Navigate to **File > Build Settings** 
 
@@ -44,7 +42,7 @@ This page describes how to deploy your Unity Project with MRTK onto a Quest devi
     >Several red error icons and yellow warning icon may appear during this process. Click on the icon to open the **OpenXR Project Validation** tool and select **Fix All** to address the issues. You may need to do this several times.
 
     >[!NOTE] 
-    >If you do not see **Oculus Quest Support** under the **OpenXR Feature Groups** panel, make sure you've downloaded the Mixed Reality OpenXR Plugin via the [MR Feature Tool](https://docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool)
+    >If you do not see **Oculus Quest Support** under the **OpenXR Feature Groups** panel, make sure you've downloaded the Mixed Reality OpenXR Plugin via the [MR Feature Tool](/mixed-reality/develop/unity/welcome-to-mr-feature-tool)
 
 
 ## Deploying to Device
