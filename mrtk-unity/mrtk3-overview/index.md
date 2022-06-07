@@ -124,17 +124,17 @@ We very much encourage you to provide any and all feedback to help shape the fin
 
 :::row:::
     :::column:::
-       [![MRTK_UX_v3_Button.png](images/UXBuildingBlocks/MRTK_UX_v3_Button.png)](../mrtk3-uxcomponents/packages/uxcomponents/button.md)
+       [![Button](images/UXBuildingBlocks/MRTK_UX_v3_Button.png)](../mrtk3-uxcomponents/packages/uxcomponents/button.md)
         **[Button](../mrtk3-uxcomponents/packages/uxcomponents/button.md)**<br>
         A volumetric button optimized for a wide range of input modalities, including poking, gaze-pinch, ray interactions, mouse click, and gamepad.
     :::column-end:::
     :::column:::
-        [![MRTK_UX_v3_BoundsControl.png](images/UXBuildingBlocks/MRTK_UX_v3_BoundsControl.png)](../mrtk3-spatialmanipulation/packages/spatialmanipulation/bounds-control.md)
+        [![Bounds Control](images/UXBuildingBlocks/MRTK_UX_v3_BoundsControl.png)](../mrtk3-spatialmanipulation/packages/spatialmanipulation/bounds-control.md)
         **[Bounds Control](../mrtk3-spatialmanipulation/packages/spatialmanipulation/bounds-control.md)**<br>
         Intent feedback and precision manipulation affordances.
     :::column-end:::
     :::column:::
-        [![MRTK_UX_v3_ObjectManipulator.png](images/UXBuildingBlocks/MRTK_UX_v3_ObjectManipulator.png)](../mrtk3-spatialmanipulation/packages/spatialmanipulation/object-manipulator.md)
+        [![Object Manipulator](images/UXBuildingBlocks/MRTK_UX_v3_ObjectManipulator.png)](../mrtk3-spatialmanipulation/packages/spatialmanipulation/object-manipulator.md)
         **[Object Manipulator](../mrtk3-spatialmanipulation/packages/spatialmanipulation/object-manipulator.md)**<br>
         Move and manipulate objects with one or two hands with a wide variety of input modalities.
     :::column-end:::
@@ -142,17 +142,17 @@ We very much encourage you to provide any and all feedback to help shape the fin
 
 :::row:::
     :::column:::
-       [![MRTK_UX_v3_HandMenu.png](images/UXBuildingBlocks/MRTK_UX_v3_HandMenu.png)](../mrtk3-uxcomponents/packages/uxcomponents/hand-menu.md)
+       [![Hand Menu](images/UXBuildingBlocks/MRTK_UX_v3_HandMenu.png)](../mrtk3-uxcomponents/packages/uxcomponents/hand-menu.md)
         **[Hand Menu](../mrtk3-uxcomponents/packages/uxcomponents/hand-menu.md)**<br>
         A hand-anchored collection of UX controls for easy access to quick actions.
     :::column-end:::
     :::column:::
-        [![MRTK_UX_v3_NearMenu.png](images/UXBuildingBlocks/MRTK_UX_v3_NearMenu.png)](../mrtk3-uxcomponents/packages/uxcomponents/near-menu.md)
+        [![Near Menu](images/UXBuildingBlocks/MRTK_UX_v3_NearMenu.png)](../mrtk3-uxcomponents/packages/uxcomponents/near-menu.md)
         **[Near Menu](../mrtk3-uxcomponents/packages/uxcomponents/near-menu.md)**<br>
         Collection of UX controls can be manipulated, pinned, and set to follow the user.
     :::column-end:::
     :::column:::
-        [![MRTK_UX_v3_Slider.png](images/UXBuildingBlocks/MRTK_UX_v3_Slider.png)](../mrtk3-uxcomponents/packages/uxcomponents/slider.md)
+        [![Slider](images/UXBuildingBlocks/MRTK_UX_v3_Slider.png)](../mrtk3-uxcomponents/packages/uxcomponents/slider.md)
         **[Slider](../mrtk3-uxcomponents/packages/uxcomponents/slider.md)**<br>
         Adjust a value along a one-dimensional axis.
     :::column-end:::
@@ -160,17 +160,17 @@ We very much encourage you to provide any and all feedback to help shape the fin
 
 :::row:::
     :::column:::
-       [![MRTK_Solver_Main.png](images/UXBuildingBlocks/MRTK_Solver_Main.png)](../mrtk3-spatialmanipulation/packages/spatialmanipulation/solver.md)
-        **[Solver](../mrtk3-spatialmanipulation/packages/spatialmanipulation/solver.md)**<br>
+       [![Solver](images/UXBuildingBlocks/MRTK_Solver_Main.png)](../mrtk3-spatialmanipulation/packages/spatialmanipulation/solvers/solver.md)
+        **[Solver](../mrtk3-spatialmanipulation/packages/spatialmanipulation/solvers/solver.md)**<br>
         Various object positioning behaviors such as tag-along, body-lock, constant view size and surface magnetism
     :::column-end:::
     :::column:::
-        [![MRTK_UX_v3_Dialog.png](images/UXBuildingBlocks/MRTK_UX_v3_Dialog.png)](../mrtk3-uxcomponents/packages/uxcomponents/dialog.md)
+        [![Dialog](images/UXBuildingBlocks/MRTK_UX_v3_Dialog.png)](../mrtk3-uxcomponents/packages/uxcomponents/dialog.md)
         **[Dialog](../mrtk3-uxcomponents/packages/uxcomponents/dialog.md)**<br>
         Prompt for user action.
     :::column-end:::
     :::column:::
-        [![MRTK_UX_v3_Slate.png](images/UXBuildingBlocks/MRTK_UX_v3_Slate.png)](../mrtk3-uxcomponents/packages/uxcomponents/slate.md)
+        [![Slate](images/UXBuildingBlocks/MRTK_UX_v3_Slate.png)](../mrtk3-uxcomponents/packages/uxcomponents/slate.md)
         **[Slate](../mrtk3-uxcomponents/packages/uxcomponents/slate.md)**<br>
         A flat panel for displaying large-format interfaces and content.
     :::column-end:::
