@@ -1,5 +1,5 @@
 ---
-title: MRTK3 Tutorial -- Zappy's Playground 
+title: MRTK3 Tutorial--Zappy's Playground 
 description: Learn about the features of MRTK3 through this interactive tutorial.
 author: vtieto
 ms.author: vinnietieto
@@ -15,19 +15,19 @@ keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, tutorial, mixed realit
 
 ![Screenshot of a scene from the MRTK3 Zappy's Playground tutorial.](images/037-zappy-playground.png)
 
-In this tutorial, you'll experience the following:
+In this tutorial, you'll gain experience with the following features:
 
-- Use gaze to view text in an expanding tile
-- Move towards objects and have them expand as a result
-- Use data-driven UI objects such as name input
-- Gaze to interact with distant content and reveal more information
-- Gaze and pinch to select objects at a distance
-- Use surface magnetism to orient holographic objects to real-world surfaces
-- Listen to spatial audio to help you locate objects in 3D space
-- Grab, rotate and scale objects using bounds control
-- Use different audio or visual themes to enhance the experience
+- Use gaze to view text in an expanding tile.
+- Move towards objects and have them expand as a result.
+- Use data-driven UI objects such as name input.
+- Gaze to interact with distant content and reveal more information.
+- Gaze and pinch to select objects at a distance.
+- Use surface magnetism to orient holographic objects to real-world surfaces.
+- Listen to spatial audio to help you locate objects in 3D space.
+- Grab, rotate and scale objects using bounds control.
+- Use different audio or visual themes to enhance the experience.
 
-Here is a summary of the MRTK3 features that are covered in the tutorial:
+Here's a summary of the MRTK3 features that are covered in the tutorial:
 
 Directional Indicators  
 Scene Understanding  
