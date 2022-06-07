@@ -16,7 +16,7 @@ MRTK Graphics Tools for Unity is a Unity engine package with code, shaders, asse
 
 ## Getting started with Graphic Tools
 
-If using MRTK, follow the getting started docs found [here](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/mrtk2/?view=mrtkunity-2022-05#getting-started-with-mrtk). If you wish to use the Graphics Tools plugin on its own, read the instructions in the Graphics Tools [GitHub repository](https://github.com/microsoft/MixedReality-GraphicsTools-Unity).
+If using MRTK, follow the getting started docs found [here](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/mrtk2/#getting-started-with-mrtk). If you wish to use the Graphics Tools plugin on its own, read the instructions in the Graphics Tools [GitHub repository](https://github.com/microsoft/MixedReality-GraphicsTools-Unity).
 
 > [!NOTE]
 > The Graphics Tools package requires Unity 2020.x and above.

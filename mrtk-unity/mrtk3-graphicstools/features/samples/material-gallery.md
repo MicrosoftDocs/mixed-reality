@@ -1,3 +1,4 @@
+---
 title: Material Gallery Sample Scene
 description: Illustrated walkthrough of the Material Gallery scene
 author: Species521
@@ -44,4 +45,4 @@ This allows for effects like holes, faded transparency and color calculation eff
 
 ### For a detailed introduction to the Graphics Tools Standard Shader, see also
 
-* [Graphics Tools Standard Shader](standard-shader.md)
+* [Graphics Tools Standard Shader](../standard-shader.md)
