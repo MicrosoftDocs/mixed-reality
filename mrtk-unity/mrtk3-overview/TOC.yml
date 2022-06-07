@@ -1,0 +1,16 @@
+- name: Welcome to MRTK3
+  href: index.md
+- name: Setup
+  href: setup.md
+- name: Deployment
+  href: deployment/toc.yml
+- name: Packages
+  href: packages/toc.yml
+- name: Using and creating scenes
+  href: scenes.md
+- name: Debugging and testing
+  href: debugging-and-testing.md
+- name: Known issues
+  href: known-issues.md
+- name: Release notes
+  href: release-notes.md
