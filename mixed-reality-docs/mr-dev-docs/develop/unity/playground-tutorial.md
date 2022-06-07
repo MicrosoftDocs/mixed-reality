@@ -3,7 +3,7 @@ title: MRTK3 Tutorial -- Zappy's Playground
 description: Learn about the features of MRTK3 through this interactive tutorial.
 author: vtieto
 ms.author: vinnietieto
-ms.date: 06/07/22
+ms.date: 06/07/2022
 ms.topic: article
 ms.localizationpriority: high
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, tutorial, mixed reality headset, windows mixed reality headset, virtual reality headset, unity, HoloLens, 

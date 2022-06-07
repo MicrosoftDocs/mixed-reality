@@ -3,7 +3,7 @@ title: Tutorials
 description: Stay up to date on the mixed reality development tutorials we offer for HoloLens and Azure services.
 author: keveleigh
 ms.author: kurtie
-ms.date: 06/07/22
+ms.date: 06/07/2022
 ms.topic: article
 ms.localizationpriority: high
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, mixed reality headset, windows mixed reality headset, virtual reality headset, unity, unreal, HoloLens, Azure spatial anchors, Azure speech services
