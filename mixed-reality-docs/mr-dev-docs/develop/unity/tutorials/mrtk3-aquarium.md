@@ -35,7 +35,7 @@ In this sample, you'll learn how to do the following:
 You can download the MRTK3 Aquarium project from our Code Samples browser [INSERT LINK TO PAGE]. Once the project is downloaded, add the project to the Unity Hub to open. The MRTK3 packages within the project require a Unity project that's configured for both Windows Mixed Reality development and MRTK3. For instructions on how to configure your project, review [LINK].
 
 ## How to Use the Tutorials
-The Unity in-editor tutorial format provides step-by-step instruction within the editor for how to accomplish each step of the tutorial. Each tutorial is independent of one another and therefore you're welcome to complete them in any order you prefer.
+The Unity in-editor tutorial format provides step-by-step instruction within the editor for how to accomplish each step of the tutorial. Each tutorial is independent of the others so you're welcome to complete them in any order you prefer.
 1. In the top navigation menu in Unity, select <b>Tutorials > Show Tutorials</b>.
 1. In the right <b>Tutorials</b> panel, select a tutorial.
 1. Each tutorial begins with a brief overview and learning objectives. Select the <b>Start</b> button to start the tutorial.
