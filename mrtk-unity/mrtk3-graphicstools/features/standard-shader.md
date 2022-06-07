@@ -16,7 +16,7 @@ The Graphics Tools Standard shading system utilizes a flexible shader that can a
 
 ## Sample
 
-See the *Material Gallery* sample for multiple demonstrations of `Graphics Tools/Standard` shader variants. For examples of `Graphics Tools/Standard Canvas`, see the *UnityUI* sample
+See the [*Material Gallery* sample](samples/material-gallery.md) for multiple demonstrations of `Graphics Tools/Standard` shader variants. For examples of `Graphics Tools/Standard Canvas`, see the *UnityUI* sample
 
 ## Architecture
 

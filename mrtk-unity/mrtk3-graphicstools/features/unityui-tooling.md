@@ -19,7 +19,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 
 ## Sample
 
-See the *UnityUI* sample for demonstrations of various components built for UnityUI.
+See the [*UnityUI* sample](samples/unity-ui.md) for demonstrations of various components built for UnityUI.
 
 ## UI behavior components
 
