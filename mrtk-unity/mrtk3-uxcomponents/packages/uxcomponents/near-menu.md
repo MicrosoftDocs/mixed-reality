@@ -15,6 +15,9 @@ Near Menu is a common pattern for a group of UI elements that can be manipulated
 
 For the most commonly used actions, consider using a [hand menu](hand-menu.md). Near menus are better for less commonly used actions, as it can host larger content, bigger buttons, and can passively follow the user out-of-view.
 
+>[!NOTE]
+> The hand menu prefabs are currently built using the non-canvas controls. They will soon be rebuilt using the [Canvas components](../../../mrtk3-uxcore/packages/uxcore/canvas-ui.md) and auto-layout system as detailed in the [Button Group](button-group.md) documentation.
+
 ## Interaction behavior
 
 - **Tag-along**: The menu follows you and stays within 30-60 cm range from the user for the near interactions.
@@ -40,8 +43,8 @@ Near Menu prefabs are made with the following MRTK components.
 
 - [**PressableButton_32x32mm**](button.md) prefab
 - **Object Bar**: Multiple button layout in grid
-- [**Object Manipulator**](object-manipulator.md): Grab and move the menu
-- [**Radial View Solver**](solvers/solver.md): Follow Me(tag-along) behavior
+- [**Object Manipulator**](../../../mrtk3-spatialmanipulation/packages/spatialmanipulation/object-manipulator.md): Grab and move the menu
+- [**Radial View Solver**](../../../mrtk3-spatialmanipulation/packages/spatialmanipulation/solvers/solver.md): Follow Me(tag-along) behavior
 
 ![Near Menu Prefab](../../../mrtk3-overview/images/UXBuildingBlocks/NearMenu/MRTK_UX_NearMenu_Structure.png)
 
