@@ -10,7 +10,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 
 # Connection between Mixed Reality Toolkit (MRTK) to Graphics Tools
 
-The MRTK is authored as a collection of [Unity packages](https://docs.unity3d.com/Manual/PackagesList.html) that can be chosen as needed. Some developers may chose to use all of MRTK's packages, while others may need only a subset. When choosing a subset, Unity's package manager will automatically pull in dependencies outlined by a package. Graphics Tools sits as substrate to many MRTK packages, especially if the package required contains any visual displayed to the user (materials, shaders, etc.).
+The MRTK is authored as a collection of [Unity packages](https://docs.unity3d.com/Manual/PackagesList.html) that can be chosen as needed. Some developers may chose to use all of MRTK's packages, while others may need only a subset. When choosing a subset, Unity's package manager will automatically pull in dependencies outlined by a package. Graphics Tools sits as substrate to many MRTK packages, especially if the package contains any visuals displayed to the user (materials, shaders, etc.).
 
 Due to the dependency described above, many MRTK packages depend on Graphics Tools and Graphics Tools doesn't depend on any other MRTK packages.
 
@@ -29,4 +29,4 @@ PackageRequirements
 
 ## See also
 
-* [Architecture overview](overview.md)
+* [Graphics Tools overview](overview.md)
