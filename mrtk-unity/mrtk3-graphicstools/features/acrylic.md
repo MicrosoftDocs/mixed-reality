@@ -13,7 +13,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 > [!CAUTION]
 > Some features the MRTK team works on appear to have a lot of initial value even if we haven’t fully fleshed out the details. For these types of features, we want the community to get a chance to see them early. Because they are early in the cycle, we label them as experimental to indicate that they are still evolving, and subject to change over time.
 
-This experimental feature allows surfaces to appear translucent (like frosted glass). The acrylic assets can be used to create a blurred background effect on backplates similar to the [acrylic material in Windows](https://docs.microsoft.com/windows/apps/design/style/acrylic). These assets require use of the Universal Render Pipeline.
+This experimental feature allows surfaces to appear translucent (like frosted glass). The acrylic assets can be used to create a blurred background effect on backplates similar to the [acrylic material in Windows](/windows/apps/design/style/acrylic). These assets require use of the Universal Render Pipeline.
 
 ![Acrylic Layer System Sample](images/Acrylic/AcrylicSample.gif)
 
@@ -65,5 +65,5 @@ See the [*Acrylic (Experimental)* sample](samples/acrylic.md) for demonstrations
 
 ## Additional reading
 
-[Acrylic material in Windows](https://docs.microsoft.com/windows/apps/design/style/acrylic)
+[Acrylic material in Windows](/windows/apps/design/style/acrylic)
 [An investigation of fast real-time GPU-based image blur algorithms](https://www.intel.com/content/www/us/en/developer/articles/technical/an-investigation-of-fast-real-time-gpu-based-image-blur-algorithms.html)

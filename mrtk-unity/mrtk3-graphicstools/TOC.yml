@@ -7,6 +7,6 @@
 - name: Contributing to MR Graphics Tools
   href: contributing.md
 - name: API Reference
-  href: https://docs.microsoft.com/dotnet/api/microsoft.mixedreality.graphicstools
+  href: /dotnet/api/microsoft.mixedreality.graphicstools
 - name: MRTK3
   href: https://aka.ms/mrtk3

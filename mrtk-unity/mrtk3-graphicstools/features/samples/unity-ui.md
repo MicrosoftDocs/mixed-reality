@@ -28,8 +28,8 @@ In the above example, from top to bottom there are:
 
 Button and slider templates are also heavily featured in the Mixed Reality Toolkit. For more details have a look at these pages:
 
-* [Sliders in the MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/sliders)
-* [Buttons in the MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/button)
+* [Sliders in the MRTK](/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/sliders)
+* [Buttons in the MRTK](/windows/mixed-reality/mrtk-unity/mrtk2/features/ux-building-blocks/button)
 
 ## Masking Options
 
