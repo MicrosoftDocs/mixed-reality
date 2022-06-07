@@ -32,7 +32,7 @@ In this sample, you'll learn how to do the following:
 
 ## Download the Project
 
-You can download the MRTK3 Aquarium project from our Code Samples browser [INSERT LINK TO PAGE]. Once the project is downloaded, add the project to the Unity Hub to open. The MRTK3 packages within the project requires a Unity project that's both configured for Windows Mixed Reality development and MRTK3. For instructions on how to configure your project, review [LINK].
+You can download the MRTK3 Aquarium project from our Code Samples browser [INSERT LINK TO PAGE]. Once the project is downloaded, add the project to the Unity Hub to open. The MRTK3 packages within the project require a Unity project that's configured for both Windows Mixed Reality development and MRTK3. For instructions on how to configure your project, review [LINK].
 
 ## How to Use the Tutorials
 The Unity in-editor tutorial format provides step-by-step instruction within the editor for how to accomplish each step of the tutorial. Each tutorial is independent of one another and therefore you're welcome to complete them in any order you prefer.
