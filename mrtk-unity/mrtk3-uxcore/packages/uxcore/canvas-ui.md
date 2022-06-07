@@ -10,8 +10,18 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, UI, Canvas, in
 
 # Volumetric UI with Canvas
 
-|![Flexible and responsive layout](../../../mrtk3-overview/images/UXBuildingBlocks/CanvasUI/layout_demo.gif)|![Resizing a container with sliders in it](../../../mrtk3-overview/images/UXBuildingBlocks/CanvasUI/slider_resize.gif)|![Full articulated hand support](../../../mrtk3-overview/images/UXBuildingBlocks/CanvasUI/layouts.gif)|
-|--|--|--|
+:::row:::
+    :::column:::
+    ![Flexible and responsive layout](../../../mrtk3-overview/images/UXBuildingBlocks/CanvasUI/layout_demo.gif)
+    :::column-end:::
+    :::column:::
+    ![Resizing a container with sliders in it](../../../mrtk3-overview/images/UXBuildingBlocks/CanvasUI/slider_resize.gif)
+    :::column-end:::
+    :::column:::
+    ![Full articulated hand support](../../../mrtk3-overview/images/UXBuildingBlocks/CanvasUI/layouts.gif)
+    :::column-end:::
+:::row-end:::
+
 
 MRTK3 introduces volumetric UI that is integrated with Unity's RectTransform + Canvas system. While RectTransform + Canvas have historically been primarily used for 2D flat UI, it is capable of rendering and laying out volumetric 3D UI, accelerating design iteration and increasing the fidelity of the designs that can be created with volumetric UI.
 
