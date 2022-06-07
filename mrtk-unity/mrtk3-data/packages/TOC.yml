@@ -1,5 +1,5 @@
 - name: Packages overview
-  href: ../mrtk3-overview/packages/packages-overview
+  href: ../../mrtk3-overview/packages/packages-overview.md
 - name: Accessibility
   href: ../../mrtk3-accessibility/packages/accessibility/overview.md
 - name: Core
