@@ -14,7 +14,8 @@ The _Measure Tool_ is a tool to view the local sizes of objects to graphics tool
 
 ![EditorTool](Images/MeasureTool/MeasureTool.png)
 
-It currently supports four operational modes [RectTransforms](https://docs.unity3d.com/ScriptReference/RectTransform.html), [3d Colliders](https://docs.unity3d.com/ScriptReference/Collider.html), [Mesh Renderers](https://docs.unity3d.com/ScriptReference/MeshRenderer.html), Distance Between Objects.
+It currently supports four operational modes [RectTransforms](https://docs.unity3d.com/ScriptReference/RectTransform.html), [3d Colliders](https://docs.unity3d.com/ScriptReference/Collider.html), [Mesh Renderers](https://docs.unity3d.com/ScriptReference/MeshRenderer.html), and Distance Between Objects.
+
 
 
 > [!NOTE]

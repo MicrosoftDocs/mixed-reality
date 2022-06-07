@@ -14,10 +14,10 @@ A `HoverLight` is a [Fluent Design System](https://www.microsoft.com/design/flue
 
 ![Hover light example](images/HoverLight/HoverLight.jpg)
 
-For a material to be influenced by a `HoverLight`, the `Graphics Tools/Standard` or the `Graphics Tools/Standard Canvas` shader must be used and the *Hover Light* property must be enabled.
+For a material to be influenced by a `HoverLight`, the *Graphics Tools/Standard* or the *Graphics Tools/Standard Canvas* shader must be used and the *Hover Light* property must be enabled.
 
 >[!NOTE]
-> The `Graphics Tools/Standard` and `Graphics Tools/Standard Canvas` shaders supports up to two `HoverLight`s by default, but will scale to support four as more lights are added to the scene.
+> The *Graphics Tools/Standard* and *Graphics Tools/Standard Canvas* shaders support up to two `HoverLight`s by default but will scale to support four as more lights are added to the scene.
 
 ## Advanced usage
 

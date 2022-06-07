@@ -10,7 +10,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 
 # The Material Gallery
 
-In this sample scene, you'll find a display of the capabilities of the Graphics Tools standard shader.
+In this sample scene, you'll find a display of the capabilities of the *Graphics Tools/Standard* shader.
 
 ![Standard Shader sample scene](images/SampleScenes/materialGallery_01.JPG)
     
@@ -23,7 +23,7 @@ These examples showcase various effects that make use of an object's texture coo
 
 ## Surface Effects
 
-This section showcases the surface rendering effects you can achieve with the Graphics Tools standard shader.
+This section showcases the surface rendering effects you can achieve with the *Graphics Tools/Standard*  shader.
 These examples display only a handful of possible variations, as stencil and clipping effects or PBR capability.
 
 ![Standard Shader surface effects](images/SampleScenes/materialGallery_sample_01.gif)

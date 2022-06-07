@@ -42,10 +42,10 @@ UnityUI has a built-in component called [RectMask2D](https://docs.unity3d.com/Pa
 myRectMask2DFast.ForceClip = true;
 ```
 
-All `Graphics Tools/Canvas/` shaders and the `Graphics Tools/Standard Canvas` shaders support `RectMask2D`, `RectMask2DFast`, and `RoundedRectMask2D`.
+All *Graphics Tools/Canvas/* shaders and the *Graphics Tools/Standard Canvas* shader support `RectMask2D`, `RectMask2DFast`, and `RoundedRectMask2D`.
 
 >[!NOTE]
-> The `Graphics Tools/Canvas/` shaders and the `Graphics Tools/Standard Canvas` shader **do not** support the *Softness* property on `RectMask2D` or `RectMask2DFast.`
+> The *Graphics Tools/Canvas/* shaders and the *Graphics Tools/Standard Canvas* shader **do not** support the *Softness* property on `RectMask2D` or `RectMask2DFast.`
 
 ### RoundedRectMask2D
 
@@ -62,13 +62,13 @@ The below [Graphic](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/api/Uni
 
 ### CanvasElementRoundedRect
 
-This component procedurally generates a 3D rounded rect mesh that is then assigned to the Canvas's vertex stream. Normally this component is used to generate backplate meshes using the `Graphics Tools/Canvas/Backplate` shader.
+This component procedurally generates a 3D rounded rect mesh that is then assigned to the Canvas's vertex stream. Normally this component is used to generate backplate meshes using the *Graphics Tools/Canvas/Backplate* shader.
 
 ![CanvasElementRoundedRect example backplate](images/UnityUITooling/CanvasElementRoundedRect.jpg)
 
 ### CanvasElementBeveledRect
 
-Just like `CanvasElementRoundedRect`, this component procedurally generates a 3D rounded rect but with beveled edges. Normally this component is used to generate back plate meshes using the `Graphics Tools/Canvas/Beveled` shader.
+Just like `CanvasElementRoundedRect`, this component procedurally generates a 3D rounded rect but with beveled edges. Normally this component is used to generate back plate meshes using the *Graphics Tools/Canvas/Beveled* shader.
 
 ![CanvasElementBeveledRect example](images/UnityUITooling/CanvasElementBeveledRect.jpg)
 
@@ -76,7 +76,7 @@ Just like `CanvasElementRoundedRect`, this component procedurally generates a 3D
 
 Unity's [MeshRenderer](https://docs.unity3d.com/ScriptReference/MeshRenderer.html) component can be used to display 3D meshes within UnityUI, but it doesn't respect some of the layout features UnityUI provides. To solve these layout issues, there's the `CanvasElementMesh` component.
 
- The `CanvasElementMesh` component takes an input mesh and translates it into a Graphic component.
+ The `CanvasElementMesh` component takes an input mesh and translates it into a `Graphic` component.
 
 ![CanvasElementMesh example with rocket](images/UnityUITooling/CanvasElementMesh.jpg)
 
