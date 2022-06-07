@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, Standard Shader, Proximity Light
 ---
 
-# Proximity light
+# Proximity light overview
 
 A `ProximityLight` is a [Fluent Design System](https://www.microsoft.com/design/fluent/) paradigm that mimics a "gradient inverse point light" hovering near the surface of an object. It's often used for near interactions, the application can control the properties of a Proximity Light via the `ProximityLight` component.
 
