@@ -1,1 +1,0 @@
-# Welcome to Extended assets Overview!
