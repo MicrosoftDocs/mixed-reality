@@ -11,7 +11,7 @@ keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, tutorial, mixed realit
 
 # MRTK3 Tutorial: "Zappy's Playground"
 
-"Zappy's Playground" is an interactive, multi-scene experience that can help you learn how to adopt Microsoft's Mixed Reality platform and become familiar with the features of the Mixed Reality Toolkit, version 3 (MRTK3). This tutorial is for developers who are already familiar with Unity.
+Zappy's Playground is a cross-platform developer sample that showcases how to develop intuitive and comprehensive end-to-end experiences for mixed reality. Using the latest features from Microsoft and Unity such as MRTK3, OpenXR, XRI, ARFoundation and more, it provides a place to learn and a foundation for your own app development.
 
 ![Screenshot of a scene from the MRTK3 Zappy's Playground tutorial.](images/037-zappy-playground.png)
 
