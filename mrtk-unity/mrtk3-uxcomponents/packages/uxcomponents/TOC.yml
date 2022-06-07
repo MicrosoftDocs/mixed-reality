@@ -10,13 +10,11 @@
   href: dialog.md
 - name: Hand menu
   href: hand-menu.md
-- name: List menu
-  href: list-menu.md
 - name: Near menu
   href: near-menu.md
 - name: Slate
   href: slate.md
 - name: Slider
   href: slider.md
-- name: Tab view
-  href: tab-view.md
+- name: List menu
+  href: list-menu.md

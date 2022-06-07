@@ -1,5 +1,14 @@
+---
+title: Slider
+description: Sliders in MRTK3
+author: Zee2
+ms.author: finnsinclair
+ms.date: 6/6/2022
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, UI, Slider, PinchSlider
+---
 
-# Slider | MRTK3
+# Slider
 
 ![Slider example](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_Slider.png)
 
@@ -14,36 +23,6 @@ When using Sliders in a RectTransform context, the start and end positions are c
 Outside of a RectTransform context, the start and end positions can be manually adjusted. 
 
 ![Example Slider Configuration](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_Slider_Overview.png)
-
-## Slider Configurations
-
-**Is Touchable** Whether or not this slider is controllable via a poke interactor.
-
-**Snap To Position** Whether or not this slider snaps to interaction point. 
-
-**Use Slider Step Divisions** Controls whether this slider is increments in steps or continuously.
-
-**Slider Step Divisions** Number of subdivisions the slider is split into when Use Slider Step Divisions is enabled.
-
-
-**Slider Events** The slider raises and **OnValueUpdated** event whenever its value changes
-
-## Example Slider Configurations
-
->[!NOTE]
-> The following are gifs recorded in v2. New ones coming soon.
-
-Continuous Sliders with Snap To Position
-![Continuous Sliders](https://user-images.githubusercontent.com/39840334/122488212-d410a400-cf91-11eb-8d31-fc7584ddc465.gif)
-
-Step Sliders with Snap To Position
-
-![Step Sliders](https://user-images.githubusercontent.com/39840334/122488226-dc68df00-cf91-11eb-9459-89655bbb054d.gif)
-
-Touch Sliders
-
-![Touch Sliders](https://user-images.githubusercontent.com/39840334/122488221-d8d55800-cf91-11eb-91a1-bb12debe2797.gif)
-
 
 ## Audio
 
