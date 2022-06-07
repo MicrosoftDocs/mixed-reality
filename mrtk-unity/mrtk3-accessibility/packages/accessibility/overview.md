@@ -12,7 +12,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, access
 
 The accessibility package contains features and components to enable developers to create mixed reality experiences for everyone.
 
->![NOTE]
+>[!NOTE]
 >The accessibility package is currently in early preview. Early preview packages may not contain all planned features and may undergo major architectural changes prior to release.
 
 ## Features
@@ -22,7 +22,7 @@ The accessibility package contains features and components to enable developers 
 To enable assitive technologies to describe, or read, objects in the mixed reality world, MRTK3 provides the `DescribableObject` script. By adding this script to visual components, a future reader component will be able to recognize
 the objcet and read to the user the information needed to understand the object and its place in the world.
 
->![NOTE]
+>[!NOTE]
 > MRTK3 does not currently integrate with assitive readers. The DescribableObject is in the early stages of development and is included to allow advanced review and to gather developer feedback.
 
 To enable a scene element to be described, attach the `DescribableObject` script and fill out the fields.

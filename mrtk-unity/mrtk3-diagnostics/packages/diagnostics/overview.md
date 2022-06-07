@@ -27,4 +27,3 @@ MRTK3 ships with a basic performance statistics visualization `SimpleProfiler` i
 As MRTK3 evolves, it is anticipated that additional diagnostic tools will be written. 
 
 If you have feedback on tools you would like to see or would like to contribute a tool, please feel free to file an issue or pull request at https://github.com/Microsoft/MixedRealityToolkit-Unity.
-

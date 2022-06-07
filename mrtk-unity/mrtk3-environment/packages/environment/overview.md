@@ -12,7 +12,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, enviro
 
 The MRTK3 environment package provides features and components to make working with spatial awareness and virtual reality boundaries easy and to enable compelling visual representations.
 
->![NOTE]
+>[!NOTE]
 >The ebvironment package is currently in early preview. Early preview packages may not contain all planned features and may undergo major architectural changes prior to release.
 
 ## Boundary Subsystem
@@ -21,7 +21,7 @@ The MRTK3 environment package provides features and components to make working w
 
 MRTK3 includes a boundary subsystem that can be enabled by developers wishing to understand the user's safe playspace. Much of this data is sourced from Unity provided APIs, such as the XR Input Subsystem.
 
->![NOTE]
+>[!NOTE]
 >The MRTK team is looking for developer feedback regarding the boundary subsystem.
 >
 >Is there value in aggregating Unity exposed data into a single API?
