@@ -1,3 +1,12 @@
+---
+title: Volumetric UI with Canvas
+description: Conceptual overview of hybrid Canvas-based UI in MRTK3
+author: Zee2
+ms.author: finnsinclair
+ms.date: 6/6/2022
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, UI, Canvas, input, mouse, keyboard, gamepad
+---
 
 # Volumetric UI with Canvas
 
@@ -6,7 +15,7 @@
 
 MRTK3 introduces volumetric UI that is integrated with Unity's RectTransform + Canvas system. While RectTransform + Canvas have historically been primarily used for 2D flat UI, it is capable of rendering and laying out volumetric 3D UI, accelerating design iteration and increasing the fidelity of the designs that can be created with volumetric UI.
 
-> **Note**
+> [!NOTE]
 > The Canvas-based component library is under active development and will change rapidly with new features, look-and-feel, layout, and architecture.
 
 MRTK 2.x's non-Canvas UI systems were very hard to design for, as they lacked many of the basic features expected from an interface design system.
