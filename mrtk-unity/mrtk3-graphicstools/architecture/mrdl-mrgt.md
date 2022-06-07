@@ -17,7 +17,7 @@ Graphics Tools is built to better share the tools and processes used to build MR
 ## Where can MRDL components be found?
 
 > [!TIP]
-> Looking for complete MRDL designed components? Take a look at higher level UX packages within the [MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity).
+> Looking for complete MRDL designed components? Take a look at higher level UX packages within the [MRTK](https://aka.ms/mrtk3).
 
 The shaders and assets that power the MRDL can be found in the following locations:
 

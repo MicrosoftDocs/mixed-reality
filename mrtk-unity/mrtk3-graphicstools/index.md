@@ -33,10 +33,57 @@ Samples will import into your project's *Assets* folder so they may be opened an
 
 Select an article below to learn more about specific features.
 
-|||||
-|---|---|---|---|
-| [Standard shader](features/standard-shader.md) 🎨 | [UnityUI tooling](features/unityui-tooling.md) 🛠 | [Editor tooling](features/editor-tooling.md) ✨ | [Animation](features/animation.md) 🚶‍♀️|
-| [Proximity light](features/proximity-light.md) 💡| [Hover light](features/hover-light.md) 👆| [Clipping primitive](features/clipping-primitive.md) ✂| [Mesh outlines](features/mesh-outlines.md) 💥 |
-| [Acrylic](features/acrylic.md) 💧 | [Accessibility utilities](features/accessibility-utilities.md) ⚓| [UnityUI Tooling](features/unityui-tooling.md) 🛠️ | [Material Instance](features/material-instance.md) 🌈 |
-| [Measure Tool](features/measure-tool.md) 📏 | [Samples](features/samples/acrylic.md)  📋|  |  |
-|||||
+:::row:::
+    :::column:::
+        [Standard shader](features/standard-shader.md) 🎨
+    :::column-end:::
+    :::column:::
+        [UnityUI tooling](features/unityui-tooling.md) 🛠
+    :::column-end:::
+    :::column:::
+        [Editor tooling](features/editor-tooling.md) ✨
+    :::column-end:::
+    :::column:::
+        [Animation](features/animation.md) 🚶‍♀️
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        [Proximity light](features/proximity-light.md) 💡
+    :::column-end:::
+    :::column:::
+        [Hover light](features/hover-light.md) 👆
+    :::column-end:::
+    :::column:::
+        [Clipping primitive](features/clipping-primitive.md) ✂
+    :::column-end:::
+    :::column:::
+        [Mesh outlines](features/mesh-outlines.md) 💥
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        [Acrylic](features/acrylic.md) 💧
+    :::column-end:::
+    :::column:::
+        [Accessibility utilities](features/accessibility-utilities.md) ⚓
+    :::column-end:::
+    :::column:::
+        [UnityUI Tooling](features/unityui-tooling.md) 🛠️
+    :::column-end:::
+    :::column:::
+        [Material Instance](features/material-instance.md) 🌈
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        [Measure Tool](features/measure-tool.md) 📏
+    :::column-end:::
+    :::column:::
+        [Samples](features/samples/acrylic.md)  📋
+    :::column-end:::
+    :::column:::
+    :::column-end:::
+    :::column:::
+    :::column-end:::
+:::row-end:::
