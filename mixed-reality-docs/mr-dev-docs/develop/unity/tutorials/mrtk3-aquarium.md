@@ -39,5 +39,5 @@ The Unity in-editor tutorial format provides step-by-step instruction within the
 1. In the top navigation menu in Unity, select <b>Tutorials > Show Tutorials</b>.
 1. In the right-side <b>Tutorials</b> panel, select a tutorial.
 1. Each tutorial begins with a brief overview and learning objectives. Select the <b>Start</b> button to start the tutorial.
-1. Most steps in the tutorial requires you to complete a series of tasks before continuing to the next step. You must complete the tasks as they are written. Once you complete all tasks, select <b>Next</b> to continue.
+1. Most steps in the tutorial require that you complete a series of tasks before continuing to the next step. You must complete the tasks as they're written. Once you complete all tasks, select <b>Next</b> to continue.
 Once you've completed all steps in the tutorial, you can either continue to the next tutorial <i>or</i> go back to the list of all tutorials.
