@@ -23,7 +23,7 @@ If using MRTK, follow the getting started docs found [here](https://docs.microso
 
 ## Importing samples
 
-To view the samples contained within Graphics Tools, select **Window > Package Manager** from the Unity file menu bar. Select on the **MRTK Graphics Tools** package and expand the **Samples** list. Finally, select the **Import** button for any samples you would like to try:
+To view [the samples](features/samples/acrylic.md) contained within Graphics Tools, select **Window > Package Manager** from the Unity file menu bar. Select on the **MRTK Graphics Tools** package and expand the **Samples** list. Finally, select the **Import** button for any samples you would like to try:
 
 ![Package Manager Samples](images/PackageManagerSamples.jpg)
 

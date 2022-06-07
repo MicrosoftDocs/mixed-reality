@@ -61,7 +61,7 @@ Update Period = 1
 
 ## Sample
 
-See the [*Acrylic (Experimental)* sample](samples/acrylic-samples.md) for demonstrations of the acrylic layer system.
+See the [*Acrylic (Experimental)* sample](samples/acrylic.md) for demonstrations of the acrylic layer system.
 
 ## Additional reading
 
