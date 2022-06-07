@@ -33,6 +33,10 @@ Samples will import into your project's *Assets* folder so they may be opened an
 
 Select an article below to learn more about specific features.
 
-| [Standard shader](features/standard-shader.md) 🎨 | [UnityUI tooling](features/clipping-primitive.md) 🛠 | [Editor tooling](features/editor-tooling.md) ✨         | [Animation](features/animation.md) 🚶‍♀️        |
-|--------------------------------------------------|-----------------------------------------------------|--------------------------------------------------------|----------------------------------------------|
-| [Proximity light](features/proximity-light.md) 💡 | [Hover light](features/hover-light.md) 👆            | [Clipping primitive](features/clipping-primitive.md) ✂ | [Mesh outlines](features/mesh-outlines.md) 💥 |
+|||||
+|---|---|---|---|
+| [Standard shader](features/standard-shader.md) 🎨 | [UnityUI tooling](features/unityui-tooling.md) 🛠 | [Editor tooling](features/editor-tooling.md) ✨ | [Animation](features/animation.md) 🚶‍♀️|
+| [Proximity light](features/proximity-light.md) 💡| [Hover light](features/hover-light.md) 👆| [Clipping primitive](features/clipping-primitive.md) ✂| [Mesh outlines](features/mesh-outlines.md) 💥 |
+| [Acrylic](features/acrylic.md) 💧 | [Accessibility utilities](features/accessibility-utilities.md) ⚓| [UnityUI Tooling](features/unityui-tooling.md) 🛠️ | [Material Instance](features/material-instance.md) 🌈 |
+| [Measure Tool](features/measure-tool.md) 📏 | [Samples](features/samples/acrylic.md)  📋|  |  |
+|||||
