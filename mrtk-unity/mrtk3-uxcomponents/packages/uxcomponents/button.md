@@ -11,7 +11,9 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, 
 
 ![Button Main](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_Button.png)
 
-A button gives the user a way to trigger an immediate action. It's one of the most foundational components in mixed reality, and providing satisfying MRTK provides two categories of button prefabs: canvas-based and non-canvas-based under MRTK UX Components package/Buttons. For more information on canvas vs non-canvas, please see. Both types are using the `PressableButton` script, which is a subclass of [`StatefulInteractable`](../../architecture/interactables.md) extended to include behaviors specific to buttons. For each category you can find various prefabs with different contents (e.g. with ot without an icon) or sizes.
+A button gives the user a way to trigger an immediate action. It's one of the most foundational components in mixed reality, and providing satisfying and reliable button interactions is essential to a quality mixed reality experience. MRTK provides two categories of button prefabs: Canvas-based and non-Canvas-based. Both configurations use the `PressableButton` script, a subclass of [`StatefulInteractable`](../../../mrtk3-overview/architecture/interactables.md) extended to include behaviors specific to buttons.
+
+To learn more about how the hybrid Canvas UI system works, [view the documentation here](../../../mrtk3-uxcore/packages/uxcore/canvas-ui.md).
 
 ## Example scenes
 
