@@ -15,7 +15,8 @@ Popular data binding frameworks:
 * Angular
 * Backbond
 * JavaFX Bindings
----
+-----------------
+
 ## Windows Presentation Framework data binding block diagram:
 
 ![Databinding Windows Presentation Framework (WPF)](images/databinding-wpf.png)
@@ -24,7 +25,7 @@ For more information, see [data binding overview - WPF.NET](https://docs.microso
 ---
 ## MRTK equivalent block diagram:
 
-![DataBinding-MRTK.jpg](/.attachments/DataBinding-MRTK-4d05d95d-1ac5-48f8-9302-cdbf04e5bcb7.jpg)
+![DataBinding-MRTK.jpg](images/databinding-mrtk.jpg)
 
 ---
 ## Design Objectives
@@ -62,7 +63,7 @@ For more information, see [data binding overview - WPF.NET](https://docs.microso
 * Can map between differences in data and view keypath namespaces.
 
 ---
-##Current Functionality
+## Current Functionality
 
 ### 1. Visualize variable data via data consumers. Currently supported:
 - TextMeshPro and TextMesh text
@@ -81,6 +82,7 @@ For more information, see [data binding overview - WPF.NET](https://docs.microso
   * Programmatically altered data
   * Any other method that supports the IDataSource interface
 ### 3. List item placer to manage the visual manifestation of a list
+
 ### 4. List paging, scrolling and virtualization
   * Data is only fetched when visible or in process
   * Supports arbitrarily large back-end data sets
@@ -100,6 +102,7 @@ In addition to what is already available, top priorities for additional capabili
   * Formatting
   * Validation
 ## 2. Predictive list item prefetch for faster/smoother scrolling/paging
+
 ## 3. More Data Consumers
   * Set any public property on a Component
   * Set checkbox on/off state
@@ -252,7 +255,7 @@ that have been populated with variable data, and then present them to the user, 
 Theming uses all of the plumbing of data sources and data consumers.  It is possible to theme any hierarchy of GameObjects whether they are static or are dynamically data bound to other data sources.  This allows for both data binding and theming to be applied in combination. It is even possible to theme the data coming from another data source. 
 # Block Diagram and Data flow
 
-![MRTK theming data flow](images/mrtk-theming-data-flow.png)
+![MRTK theming data flow](images/databinding-data-flow.jpg)
 
 # MRTK Theming
 
@@ -270,7 +273,7 @@ To simplify configuration of theming and data binding, it's possible to create b
 * A `BindingConfigurator` processes a **Binding Profile** to determine the assets within a prefab that are to be themed and associates both bound data elements and themable elements with Keypaths.  It also then adds appropriate `DataConsumers` to bind these visual elements to the correct Keypaths selectors that will be used to reference specific data in one or more `DataSources`, which are typically external to the prefab itself.
 * Theme data is provided by a `DataSource` that contains data for each Keypath identified in the Binding Profile. 
 * A `ThemeProvider` helper script makes it easy to use a **ScriptableObject** as a `DataSource` for theming.
-* The standard CoreUX theme is provided by the `MRTK_CoreUX_ThemeProfile` **ScriptableObject** that is bound to a `DataSourceReflection` in the `ThemeProvider`.
+* The standard UX theme is provided by the `MRTK_UX_ThemeProfile` **ScriptableObject** that is bound to a `DataSourceReflection` in the `ThemeProvider`.
 
 ![Theme Profile DataSource flow diagram](images/theme-profile-datasource.png)
 
@@ -313,7 +316,7 @@ Each control, typically on the topmost GameObject of the root prefab, has a scri
 
 ### DataSourceThemeProvider
 
-The ``DataSourceThemeProvider`` MonoBehaviour can be used to easily make a ScriptableObject containing all references to all theming assets function as a data source. This is demonstrated in the CoreUXThemingExample scene.
+The ``DataSourceThemeProvider`` MonoBehaviour can be used to easily make a ScriptableObject containing all references to all theming assets function as a data source. This is demonstrated in the UXThemingExample scene.
 
 ### ThemeSelector
 
@@ -396,7 +399,7 @@ By adding a BindingConfigurator.cs script to the top level of the new control, y
 
 ### Requirements
 
-- Unity 2019.4 or later
+- Unity 2020.3 LTS or later
 - TextMeshPro 2.1.4 or later
 
 
@@ -406,7 +409,7 @@ For a first step, take a close look at the various data binding example scenes i
 
 Also, for most use cases, the default values work out-of-the-box, but the exposed properties provide a lot of flexibility for the more advanced cases.
 
-><span style="color:red">**Note: To enable theming for MRTK UX components, the ``MRTK_UX_DATABINDING_THEMING_ENABLED`` symbol must be defined in Player Settings. This symbol ensures zero performance impact when theming is not needed.**</span>
+><span style="color:red">**Note: To enable theming for the standard MRTK UX components, the ``MRTK_UX_DATABINDING_THEMING_ENABLED`` symbol must be defined in Player Settings. This symbol ensures zero performance impact when theming is not needed.**</span>
 
 #### Assets/DataBinding Example/Scenes/DataBindingExamples.scene
 
@@ -424,17 +427,24 @@ This scene that demonstrates a variety of variable data scenarios.  Simply load 
 
 - A collection Data Consumer specifies a prefab which itself contains data consumers that will be used to populate that prefab with variable data.
 
-#### Assets/CoreUX Theming Example/Scenes/AudioTheming
+#### Assets/UX Theming Example/Scenes/AudioTheming
 
 This example uses theming to switch AudioClips between a set for Piano and one for Xylophone.
 
-#### Assets/CoreUX Theming Example/Scenes/BatteryLevelExample
+#### Assets/UX Theming Example/Scenes/BatteryLevelExample
 
 This example combines theming and data binding to show a battery level both as a numeric value and as an icon. Theming is used to select between a charging them and a not charging theme.
 
+It is designed to meet the following objectives:
+* All visual assets can exist in a single `ScriptableObject` acting as a theme profile.
+* The number of sprites for charging states can differ from the number for not charging state.
+* The algorithm for mapping reported battery level to which sprite can be non-linear and differ between charging and not charging states.
+
 To change the charging level and state, find the ``BatteryLevelDataSource`` script on the ``Battery Level Slate`` GameObject.  Change the values for ``Battery Level 0 to 1`` and ``Is Charging``.
 
-#### Assets/CoreUX Theming Example/Scenes/CoreUXThemingExample
+><span style="color:red">**Note: How this demo is structured is not a good example of combining theming and data binding. In a production application for proper separation of model and view, the actual battery state (level and charging) would be provided in a separate data source than the resource locators for the sprites themselves.**</span>
+
+#### Assets/UX Theming Example/Scenes/UXThemingExample
 
 This example demonstrates changing the theme of an entire application and also demonstrates using a ``DataSourceGODictionary`` as a data source for managing a variety of textual content to be displayed in the UX. In a more comprehensive scenario, the other more flexible data source types are likely to provide the needed flexibility, such as ``DataSourceReflection`` or ``DataSourceGOJson``.
 
@@ -486,12 +496,12 @@ All item placers must provide the IDataCollectionItemPlacer interface.  Some of 
 
 # Known Limitations and Missing Features #
 
-- Need to verify proper cleanup of resources in all use cases, particularly lists.
+- Not yet integrated with Unity's canvas based controls and scrollable lists.
+- Integration of .NET INotifyPropertyChanged is not yet implemented.
+- Example scene that fetches images from Flickr and trymrtk.com do not work on HoloLens due to an Https SSL bug in later versions of Unity.
+- Additional performance tuning.
+- This release focuses on data presentation, not data capture. MRTK UX controls are not yet wired to set state in a `DataSource`.
 - Dynamic changes to list data completely refreshes entire list instead of incrementally updating.
-- Data validation (eg. number in correct range) and formatting (eg. data and currency formats)
-- Predictive data fetching for faster list navigation
-- Material selector is work in progress
-- Font style selector is a work in progress
-- Populating other UX elements such as sliders, radio buttons, and checkboxes not yet supported
-- DataSourceJson nodes should implement IDataNode interface to be interoperable with DataSourceObjects
-- Not yet integrated with Volumetric Layouts and Scrolling Object Collection
+- Data manipulation pipeline has not yet been implemented
+- Populating all UX components on a slate is not yet fully supported.
+- DataSourceJson nodes should implement IDataNode interface to be interoperable with DataSourceObjects.
