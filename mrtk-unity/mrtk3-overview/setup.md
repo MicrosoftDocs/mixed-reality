@@ -34,7 +34,7 @@ Create a new Unity project with Unity 2020.3.34f1 or newer / Unity 2021.3.2f1 or
 
 ### 2. Import required dependencies and MRTK3 packages with Mixed Reality Feature Tool
 
-There are a handful of packages that MRTK3 uses which are not part of this preview. To obtain these, please use the [`Mixed Reality Feature Tool`](https://docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) and select the latest versions of the following in the Discover Features step:
+There are a handful of packages that MRTK3 uses which are not part of this preview. To obtain these, please use the [`Mixed Reality Feature Tool`](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) and select the latest versions of the following in the Discover Features step:
 
 - **Platform Support → Mixed Reality OpenXR Plugin**
 - [Optional] **Spatial Audio → Microsoft Spatializer**
@@ -60,7 +60,8 @@ Once imported, MRTK3 requires a profile to be set for standalone and each additi
 1. Under **Project Settings**, navigate to **MRTK3** and switch to the standalone tab. Note the profile is initially unspecified.
 1. Populate the field with the default MRTK profile that ships wih the core package. You can type in the keyword "MRTKprofile" in the search bar of the project window and make sure you search in `All`. Alternatively you can find the profile under `Packages/com.microsoft.mrtk.core/Configuration/Default Profiles/MRTKProfile.asset`.
    >[!NOTE]
-   > Not all of the MRTK subsystems are shown in these photos. The MRTK subsystems that you see may be different, depending on the MRTK3 packages you have added to your project.
+   > Not all of the MRTK subsystems are shown in the screenshot below. The MRTK subsystems that you see may be different, depending on the MRTK3 packages you have added to your project.
+
    ![assign the default MRTK profile](images/mrtk-profile.png)
 1. Switch to the tabs of other build target(s) you want to use (e.g. UWP, Android) and ensure the profile is assigned. If not, repeat the previous step on the current tab.
 
