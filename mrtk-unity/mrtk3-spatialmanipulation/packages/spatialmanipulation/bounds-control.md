@@ -1,5 +1,5 @@
 ---
-title: BoundsControl | MRTK3
+title: BoundsControl
 description: Overview on Bounds Control in MRTK3
 author: Zee2
 ms.author: finnsinclair

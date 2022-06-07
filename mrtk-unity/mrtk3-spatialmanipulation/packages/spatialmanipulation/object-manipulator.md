@@ -1,5 +1,14 @@
+---
+title: Object Manipulator
+description: Overview of ObjectManipulator in MRTK3
+author: Zee2
+ms.author: finnsinclair
+ms.date: 6/6/2022
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, ObjectManipulator
+---
 
-# Object Manipulator | MRTK3
+# Object Manipulator
 
 ![Object manipulator](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_ObjectManipulator.png)
 

@@ -1,8 +1,16 @@
+---
+title: Constraints
+description: Overview of constraints and the constraints manager in MRTK3
+author: Zee2
+ms.author: finnsinclair
+ms.date: 6/6/2022
+ms.localizationpriority: high
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Constraints, ConstraintManager
+---
 
-# Constraint manager
+# Constraints
 
-The constraint manager allows you to apply a set of constraint components to a transform. Components of type `TransformConstraint` that are attached to the game object can be taken into consideration.
-Per default, the constraint manager will automatically collect all [constraint components](#transform-constraints) attached to the game object and apply them to processed transforms. However, users can also opt for configuring the list of applied constraints manually and allowing only a subset of attached constraints to be used.
+The `ConstraintManager` allows you to apply a set of constraint components to a transform. By default, the constraint manager will automatically collect all attached [constraint components](#transform-constraints) and apply them to the target object. However, users can also opt to configure the list of applied constraints manually, to only allow a subset of attached constraints to be used.
 
 > [!NOTE]
 > MRTK3 currently offers a limited subset of the constraints from MRTK 2.x. We are currently investigating a refactor of the Constraints system to unify the developer workflow with Solvers and Elastics. Stay tuned!
