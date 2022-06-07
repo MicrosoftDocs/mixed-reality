@@ -3,7 +3,7 @@ title: Tutorials
 description: Stay up to date on the mixed reality development tutorials we offer for HoloLens and Azure services.
 author: keveleigh
 ms.author: kurtie
-ms.date: 09/30/2021
+ms.date: 06/07/22
 ms.topic: article
 ms.localizationpriority: high
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, mixed reality headset, windows mixed reality headset, virtual reality headset, unity, unreal, HoloLens, Azure spatial anchors, Azure speech services
@@ -29,3 +29,9 @@ The HoloLens 2 Fundamentals tutorials for Unity are designed to teach techniques
 
 > [!div class="nextstepaction"]
 > [HoloLens 1 Azure Services Tutorials](tutorials/mr-azure-301.md)
+
+## MRTK3 Tutorial: "Zappy's Playground"
+
+"Zappy's Playground" is an interactive, multi-scene experience that can help you learn how to adopt Microsoft's Mixed Reality platform and become familiar with the features of the Mixed Reality Toolkit, version 3 (MRTK3).
+
+< button >
