@@ -1,5 +1,13 @@
+---
+title: Hand menu
+description: Hand menus in MRTK3
+author: Zee2
+ms.author: finnsinclair
+ms.date: 4/15/2022
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, Hand menu, UI
+---
 
-# Hand menu | MRTK3
+# Hand menu
 
 ![Hand Menu](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_HandMenu.png)
 
@@ -46,8 +54,6 @@ Lastly, the close button needs to reactivate the **SolverHandler.UpdateSolvers**
 The `HandConstraint` behavior provides a solver that constrains the tracked object to a region safe for hand constrained content (such as hand UI, menus, etc.) Safe regions are considered areas that don't intersect with the hand. A derived class of `HandConstraint` called `HandConstraintPalmUp` is also included to demonstrate a common behavior of activating the solver-tracked object when the palm is facing the user.
 
 See the tooltips available for each `HandConstraint` property for additional documentation. A few properties are defined in more detail below.
-
-<img src="../../../features/.images/solver/MRTK_Solver_HandConstraintPalmUp.png" width="450" alt="HandMenu_ExampleScene Palm up">
 
 * **Safe Zone**: The safe zone specifies where on the hand to constrain content. It's recommended that content be placed on the Ulnar Side to avoid overlap with the hand and improved interaction quality. Safe zones are calculated by the hands' orientation projected into a plane orthogonal to the camera's view and raycasting against a bounding box around the hands. Safe zones are defined to work with `XRNode`. Exploring what each safe zone represents on different controller types is recommended.
 

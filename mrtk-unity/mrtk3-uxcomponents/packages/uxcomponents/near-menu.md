@@ -1,9 +1,19 @@
+---
+title: Near Menu
+description: Hand menus in MRTK3
+author: Zee2
+ms.author: finnsinclair
+ms.date: 4/15/2022
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, Hand menu, UI
+---
 
-# Near menu | MRTK3
+# Near Menu
 
 ![Near Menu](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_NearMenu.png)
 
-Near Menu is a menu UI that floats around the user's body and is easily accessible anytime. Since it's loosely coupled with the user, it doesn't disturb the user's interaction with the target content. The user can use the 'Pin' button to world-lock/unlock the menu. The menu can be grabbed and placed at a specific position in the world.
+Near Menu is a common pattern for a group of UI elements that can be manipulated, moved, and can follow the user. Since it's loosely coupled with the user, it doesn't disturb the user's interaction with the target content. The user can use the 'Pin' button to world-lock/unlock the menu. The menu can be grabbed and placed at a specific position in the world.
+
+For the most commonly used actions, consider using a [hand menu](hand-menu.md). Near menus are better for less commonly used actions, as it can host larger content, bigger buttons, and can passively follow the user out-of-view.
 
 ## Interaction behavior
 
