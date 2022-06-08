@@ -3,7 +3,7 @@ title: Set up a new OpenXR project without MRTK
 description: How to set up a new OpenXR project without MRTK.
 author: sean-kerawala
 ms.author: vinnietieto
-ms.date: 04/12/2022
+ms.date: 6/7/2022
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality headset, windows mixed reality headset, virtual reality headset, unity, MRTK, unity
 ---
@@ -11,6 +11,9 @@ keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality headset,
 # Set up a new OpenXR project without MRTK
 
 While Microsoft and the community have created open source tools such as the [Mixed Reality Toolkit (MRTK)](/windows/mixed-reality/mrtk-unity) that will automatically set up your environment for mixed reality, some developers may wish to build their experiences from the ground up.
+
+>[!Note]
+>Starting with MRTK3 we are introducing a new Mixed Reality design language to developers. For more information, see the [MRTK3 documentation](/windows/mixed-reality/mrtk-unity/mrtk3-overview).
 
 ## Other non-OpenXR configuration options
 

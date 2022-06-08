@@ -3,7 +3,7 @@ title: Set up a new OpenXR project with MRTK
 description: How to set up a new OpenXR project with MRTK.
 author: sean-kerawala
 ms.author: vinnietieto
-ms.date: 04/12/2022
+ms.date: 6/7/2022
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, mixed reality headset, windows mixed reality headset, virtual reality headset, unity, MRTK, unity
 ---
@@ -29,6 +29,9 @@ MRTK supports a wide range of platforms, including:
 - Ultraleap Hand Tracking
 
 - Android and iOS devices
+
+>[!Note]
+>Starting with MRTK3 we are introducing a new Mixed Reality design language to developers. For more information, see the [MRTK3 documentation](/windows/mixed-reality/mrtk-unity/mrtk3-overview).
 
 > [!NOTE]
 > You can also [set up a new OpenXR project without MRTK](new-openxr-project-without-mrtk.md).
