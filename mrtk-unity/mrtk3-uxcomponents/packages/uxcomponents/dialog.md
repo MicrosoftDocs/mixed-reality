@@ -1,5 +1,5 @@
 ---
-title: Dialog
+title: Dialog in MRTK3
 description: Description of dialogs in MRTK3
 author: Zee2
 ms.author: finnsinclair

@@ -1,5 +1,5 @@
 ---
-title: Hand menu
+title: Hand menu in MRTK3
 description: Hand menus in MRTK3
 author: Zee2
 ms.author: finnsinclair

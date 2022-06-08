@@ -1,10 +1,10 @@
 ---
 title: Near Menu
-description: Hand menus in MRTK3
+description: Near menus in MRTK3
 author: Zee2
 ms.author: finnsinclair
 ms.date: 4/15/2022
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, Hand menu, UI
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, Near menu, UI
 ---
 
 # Near Menu

@@ -1,6 +1,6 @@
 ---
 title: UX Components | MRTK3
-description: Overview of the Spatial Manipulation package
+description: Overview of the UX Components package
 author: Zee2
 ms.author: finnsinclair
 ms.date: 6/6/2022

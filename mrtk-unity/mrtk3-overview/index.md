@@ -10,7 +10,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3
 
 # Mixed Reality Toolkit 3
 
-![MRTK_UX_v3_Cover.png](images/MRTK_UX_v3_Cover.png)
+![MRTK3 banner](images/MRTK_UX_v3_Cover.png)
 
 MRTK3 is the third generation of the Microsoft Mixed Reality Toolkit for Unity. It is a Microsoft driven open source project to accelerate cross-platform mixed reality development in Unity. This new version is built on top of Unity's XR Management system and XR Interaction Toolkit. Here are some of its functions:
 
