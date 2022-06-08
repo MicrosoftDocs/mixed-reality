@@ -1,6 +1,6 @@
 # System keyboard | MRTK3
 
-![System keyboard](../.images/MRTK_SystemKeyboard_Main.png)
+![System keyboard](../images/system-keyboard.png)
 
 A Unity application can invoke the system keyboard at any time. The system keyboard will behave according to the target platform's capabilities. For example, the keyboard on HoloLens 2 would support direct hand interactions. Additionally, the system keyboard won't show up when performing Holographic Remoting from the editor to a HoloLens.
 
