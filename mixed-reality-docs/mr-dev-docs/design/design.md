@@ -3,7 +3,7 @@ title: Start designing and prototyping
 description: If you're ready to create something, learn the basic concepts you need to begin designing and prototyping.
 author: grbury 
 ms.author: grbury
-ms.date: 12/9/2020
+ms.date: 6/7/2022
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, discover, distribute, index, landing page, design, development, tutorials, sample apps, fundamentals, case studies, resources, HoloLens how-to, Open source projects, core concepts, interaction, mixed reality headset, windows mixed reality headset, virtual reality headset, HoloLens, MRTK, Mixed Reality Toolkit
@@ -106,6 +106,9 @@ A designer's job is never done, especially when learning to create immersive exp
 :::row-end:::
 
 <br>
+
+>[!Note]
+>Starting with MRTK3 we are introducing a new Mixed Reality design language to developers. For more info, see the [MRTK3 documentation](/windows/mixed-reality/mrtk-unity/mrtk3-overview).
 
 ---
 
