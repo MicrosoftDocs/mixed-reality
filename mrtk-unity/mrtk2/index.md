@@ -44,6 +44,9 @@ MRTK-Unity is a Microsoft-driven project that provides a set of components and f
 | Mobile | iOS and Android |
 ::: moniker-end
 
+>[!Note]
+>Starting with MRTK3 we are introducing a new Mixed Reality design language to developers. For more information, see the [MRTK3 documentation](/windows/mixed-reality/mrtk-unity/mrtk3-overview).
+
 ## Getting started with MRTK
 
 If you're new to MRTK or Mixed Reality development in Unity, we recommend installing and exploring the MRTK Examples Hub sample application on your device or [emulator](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator). 
