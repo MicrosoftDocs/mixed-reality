@@ -17,7 +17,8 @@ A Unity application can invoke the system keyboard at any time. The system keybo
 ## How to invoke the system keyboard
 
 ```c#
-public TouchScreenKeyboard keyboard;
+[SerializeField]
+private TouchScreenKeyboard keyboard;
 
 ...
 
@@ -30,7 +31,8 @@ public void OpenSystemKeyboard()
 ## How to read the input
 
 ```c#
-public TouchScreenKeyboard keyboard;
+[SerializeField]
+private TouchScreenKeyboard keyboard;
 
 ...
 
