@@ -14,6 +14,6 @@ The core package contains a set of common features and utilities that the rest o
 
 ## Features
 
-* [Interactables](..\..\..\mrtk3-overview\architecture\interactables.md)
-* [Interactors](..\..\..\mrtk3-overview\architecture\interactors.md)
-* [Subsystems](..\..\..\mrtk3-overview\architecture\subsystems.md)
+* [Interactables](../../../mrtk3-overview/architecture/interactables.md)
+* [Interactors](../../../mrtk3-overview/architecture/interactors.md)
+* [Subsystems](../../../mrtk3-overview/architecture/subsystems.md)
