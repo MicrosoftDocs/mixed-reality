@@ -33,6 +33,9 @@ If you're already familiar with the basic concepts and want to get started build
 > [!div class="nextstepaction"]
 > [HoloLens 2 Fundamentals tutorials](/learn/paths/beginner-hololens-2-tutorials/)
 
+>[!Note]
+>Starting with MRTK3 we are introducing a new Mixed Reality design language to developers. For more information, see the [MRTK3 documentation](/windows/mixed-reality/mrtk-unity/mrtk3-overview).
+
 ## Choose your own development path
 Are you an intermediate-to-advanced developer with some previous experience in Mixed, Augmented, or Virtual Reality? We'll help you choose the proper tools and get set up, if needed, and then we'll direct you to our curated development paths across Unity, Unreal, Native, or Web.
 

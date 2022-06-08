@@ -108,7 +108,7 @@ A designer's job is never done, especially when learning to create immersive exp
 <br>
 
 >[!Note]
->Starting with MRTK3 we are introducing a new Mixed Reality design language to developers. For more info, see the [MRTK3 documentation](/windows/mixed-reality/mrtk-unity/mrtk3-overview).
+>Starting with MRTK3 we are introducing a new Mixed Reality design language to developers. For more information, see the [MRTK3 documentation](/windows/mixed-reality/mrtk-unity/mrtk3-overview).
 
 ---
 
