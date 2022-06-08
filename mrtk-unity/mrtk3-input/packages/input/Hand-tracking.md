@@ -1,11 +1,11 @@
 ---
 title: Hand tracking in MRTK3
 description: Hand tracking in MRTK3
-author: MaxWang-MS
-ms.author: wangmax
+author: keveleigh
+ms.author: kurtie
 ms.date: 6/7/2022
 ms.localizationpriority: high
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, data binding, theme, theming, Mixed Reality Toolkit, hand tracking
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, Mixed Reality Toolkit, hand tracking
 ---
 
 # Hand tracking in MRTK3
@@ -38,7 +38,9 @@ The aggregator computes several measurements regarding the pinching gesture, bas
 
 ![Hands aggregator subsystem configuration](../../../mrtk3-overview/architecture/images/configuration.png)
 
-The <b>Pinch Open Threshold</b> and <b>Pinch Closed Threshold</b> control the absolute world distance between the thumb and forefinger that is used to normalize the pinch progress. When the distance equals the closed threshold, the pinch progress will be 1.0, and when the distance equals the open threshold, it will be 0.0. (These thresholds are currently in world units, but will soon be normalized to the user's hand size.)<br><br>The <b>Hand Raise Camera FOV</b> controls how close to the center of the user's view the hand must be to be considered valid for pinching. The <b>Hand Facing Away Tolerance</b> controls the tolerance for measuring the user's hand rotation, to determine when the user's hand is facing away.
+The **Pinch Open Threshold** and **Pinch Closed Threshold** control the absolute world distance between the thumb and forefinger that is used to normalize the pinch progress. When the distance equals the closed threshold, the pinch progress will be 1.0, and when the distance equals the open threshold, it will be 0.0. (These thresholds are currently in world units, but will soon be normalized to the user's hand size.)
+
+The **Hand Raise Camera FOV** controls how close to the center of the user's view the hand must be to be considered valid for pinching. The **Hand Facing Away Tolerance** controls the tolerance for measuring the user's hand rotation, to determine when the user's hand is facing away.
 
 ## Examples
 
@@ -75,7 +77,7 @@ bool handIsValid = aggregator.TryGetPalmFacingAway(XRNode.LeftHand, out bool isL
 
 ```C#
 // Query pinch characteristics from the left hand.
-// pinchAmount is [0,1], normalized to the open/closed thresholds specified in the aggregator confiugration.
+// pinchAmount is [0,1], normalized to the open/closed thresholds specified in the aggregator configuration.
 // isReadyToPinch is adjusted with the HandRaiseCameraFOV and HandFacingAwayTolerance settings in the configuration.
 bool handIsValid = aggregator.TryGetPinchProgress(XRNode.LeftHand, out bool isReadyToPinch, out bool isPinching, out float pinchAmount)
 ```
