@@ -102,17 +102,15 @@ Demonstration of using Data Binding and Theming to bind to data sources.
 
 ## Creating a new Scene with MRTK3
 
-1. Create a new unity scene 
+1. Create a new Unity scene
 1. Add the **MRTK XR Rig** prefab
 1. Remove the **Main Camera** Game Object because the **MRTK XR Rig** already contains one
 
-    ![MRTK XR rig screenshot](images\mrtk-xr-rig.png)
+   ![MRTK XR rig screenshot](images\mrtk-xr-rig.png)
 
 1. Add the MRTK Input Simulator prefab to your scene.
 
-    >[!Note]
-    >This step is optional, but required by in-editor simulations.
-    
-    ![MRTK input simulator hierarchy pane](images\mrtk-input-simulator.png)
+   > [!Note]
+   > This step is optional, but required by in-editor simulations.
 
-
+   ![MRTK input simulator hierarchy pane](images\mrtk-input-simulator.png)

@@ -10,7 +10,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3
 
 # Mixed Reality Toolkit 3
 
-![MRTK_UX_v3_Cover.png](images/MRTK_UX_v3_Cover.png)
+![MRTK3 banner](images/MRTK_UX_v3_Cover.png)
 
 MRTK3 is the third generation of the Microsoft Mixed Reality Toolkit for Unity. It is a Microsoft driven open source project to accelerate cross-platform mixed reality development in Unity. This new version is built on top of Unity's XR Management system and XR Interaction Toolkit. Here are some of its functions:
 
@@ -87,14 +87,14 @@ To acquire and use MRTK3, the following software tools are required.
 
 ## Versioning
 
-In previous versions of MRTK (HoloToolkit and MRTK v2), all packages were released as a complete set, marked with the same version number (ex: 2.8.0). Starting with MRTK3, each package will be individually versioned, following the [Semantic Versioning 2.0.0 specification](https://semver.org/spec/v2.0.0.html). 
+In previous versions of MRTK (HoloToolkit and MRTK v2), all packages were released as a complete set, marked with the same version number (ex: 2.8.0). Starting with MRTK3, each package will be individually versioned, following the [Semantic Versioning 2.0.0 specification](https://semver.org/spec/v2.0.0.html).
 
 >[!NOTE]
 >The '3' in MRTK3 is not a version number. It is an indicator of the generation of the underlying architecture, with HoloToolkit being generation one and MRTK v2.x being generation two.
 
 Individual versioning will enable faster servicing while providing improved developer understanding of the magnitude of changes and reducing the number of packages needing to be updated to acquire the desired fix(es).
 
-For example, if a non-breaking new feature is added to the UX core package, which contains the logic for user interface behavior the minor version number will increase (from 3.0.x to 3.1.0). Since the change is non-breaking, the UX components package, which depends upon UX core, is not required to be updated. 
+For example, if a non-breaking new feature is added to the UX core package, which contains the logic for user interface behavior the minor version number will increase (from 3.0.x to 3.1.0). Since the change is non-breaking, the UX components package, which depends upon UX core, is not required to be updated.
 
 As a result of this change, there is not a unified MRTK3 product version.
 
@@ -115,7 +115,7 @@ As of June 2022, the following components are considered to be in early preview.
 | Accessibility | com.microsoft.mrtk.accessibility |
 | Data Binding and Theming | com.microsoft.mrtk.data |
 | Environment | com.microsoft.mrtk.environment |
- 
+
 The MRTK team is fully committed to releasing this functionality. It is important to note that the packages may not contain the complete feature set that is planned to be released or they may undergo major, breaking architectural changes before release.
 
 We very much encourage you to provide any and all feedback to help shape the final form of these early preview features.

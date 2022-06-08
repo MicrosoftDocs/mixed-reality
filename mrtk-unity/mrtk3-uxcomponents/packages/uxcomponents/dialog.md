@@ -1,5 +1,5 @@
 ---
-title: Dialog
+title: Dialog in MRTK3
 description: Description of dialogs in MRTK3
 author: Zee2
 ms.author: finnsinclair
@@ -7,7 +7,7 @@ ms.date: 4/15/2022
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, Dialog, UI
 ---
 
-# Dialog
+# Dialog in MRTK3
 
 ![Dialog](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_Dialog.png)
 
@@ -36,4 +36,3 @@ Dialog.InstantiateFromPrefab(DialogPrefabSmall, new DialogProperty("Choice Dialo
 ```
 
 For more information, see `DialogExampleController.cs` in DialogExample.unity scene.
-

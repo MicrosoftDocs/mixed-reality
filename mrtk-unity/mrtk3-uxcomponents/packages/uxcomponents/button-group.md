@@ -14,7 +14,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, Button, Pressa
 
 Flexible and responsive button groups are easy to build using the new Canvas-based layout system. Previously, users had to use the `ObjectBar` script to lay out a collection of children along a single axis, and each child had to be manually added to the `ObjectBar`'s list of managed children.
 
-With [Canvas-based UX](../../../mrtk3-uxcore/packages/uxcore/canvas-ui.md), you can take advantage of the built-in RectTransform-based layout system to easily build and manage rows, columns, and grids of UI components. Button bars and grids can be built using the `HorizontalLayoutGroup`, `VerticalLayoutGroup`, and `GridLayoutGroup` UnityUI components. The children will be automatically laid out according the constraints, padding, and options configured in the layout group. 
+With [Canvas-based UX](../../../mrtk3-uxcore/packages/uxcore/canvas-ui.md), you can take advantage of the built-in RectTransform-based layout system to easily build and manage rows, columns, and grids of UI components. Button bars and grids can be built using the `HorizontalLayoutGroup`, `VerticalLayoutGroup`, and `GridLayoutGroup` UnityUI components. The children will be automatically laid out according the constraints, padding, and options configured in the layout group.
 
 ## Button Bar
 

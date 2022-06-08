@@ -19,9 +19,9 @@ To expand upon the interactable mechanisms included in XRI, MRTK offers two base
 ![Interactables inheritance diagram](images/interactable_classes.svg)
 
 - `MRTKBaseInteractable : XRBaseInteractable`
-    - This class offers filtering and flagging for different types of interactors. While the base XRI `XRBaseInteractable` does not discriminate between interactor types, `MRTKBaseInteractable` provides convenience functions for checking whether common types of interactions are occurring. Convenience properties like `IsGazeHovered` or `IsGrabSelected` are shortcuts to querying whether a participating interactor implements a given interface (correspondingly, `IGazeInteractor` or `IGrabInteractor`). These flags are more performant than iterating through the list of `interactorsHovering` or `interactorsSelecting`. In addition, `MRTKBaseInteractable` can filter/reject certain types of interactors, in the case that the developer wishes to exclude certain input modalities.
+  - This class offers filtering and flagging for different types of interactors. While the base XRI `XRBaseInteractable` does not discriminate between interactor types, `MRTKBaseInteractable` provides convenience functions for checking whether common types of interactions are occurring. Convenience properties like `IsGazeHovered` or `IsGrabSelected` are shortcuts to querying whether a participating interactor implements a given interface (correspondingly, `IGazeInteractor` or `IGrabInteractor`). These flags are more performant than iterating through the list of `interactorsHovering` or `interactorsSelecting`. In addition, `MRTKBaseInteractable` can filter/reject certain types of interactors, in the case that the developer wishes to exclude certain input modalities.
 - `StatefulInteractable : MRTKBaseInteractable`
-    - While `MRTKBaseInteractable` simply adds flags and filters, and avoids adding any additional state to the interactable, `StatefulInteractable` introduces useful stateful features like toggling and variable selection. 
+  - While `MRTKBaseInteractable` simply adds flags and filters, and avoids adding any additional state to the interactable, `StatefulInteractable` introduces useful stateful features like toggling and variable selection.
 
 ## Strict separation of state and visuals
 
@@ -50,7 +50,7 @@ For derived classes like `PressableButton`, the `Selectedness()` function is ove
 For the interactables MRTK provides, `Selectedness()` and `isSelected` will always "agree", i.e., you will never observe a `Selectedness()` greater than the `SelectThreshold` without a corresponding XRI `isSelected` and an accompanying interactor in `interactorsSelecting`.
 
 > [!IMPORTANT]
-> Your custom interactable subclasses can obviously override `Selectedness` to some other value that is completely disconnected from the XRI `isSelected`, however, our interactables do not do this, and we strongly discourage it. **In general, never write *interactions* that do not have a corresponding *interactor*.** XRI selection will, in the vast majority of cases, be sufficient, and any custom interactions you build should be written as interactors.
+> Your custom interactable subclasses can obviously override `Selectedness` to some other value that is completely disconnected from the XRI `isSelected`, however, our interactables do not do this, and we strongly discourage it. **In general, never write _interactions_ that do not have a corresponding _interactor_.** XRI selection will, in the vast majority of cases, be sufficient, and any custom interactions you build should be written as interactors.
 
 When creating a custom interactable that supports a new method of determining `Selectedness()`, simply override the method and combine your new selectedness with the existing selection amount. If you are using `StateVisualizer` or any other visual layer that listens to variable selection, it will respond accordingly to your new selection type.
 
@@ -60,6 +60,6 @@ In some cases, it is desirable to have interactables respond to UGUI events, suc
 
 ![UGUI adapter flow](images/UGUI.svg)
 
-When the `CanvasProxyInteractor` is notified of the UGUI events by the `UGUIInputAdapter`, it issues *equivalent* XRI actions on the relevant interactable. The mapping between UGUI input and XRI actions is somewhat lossy and is an area of active development.
+When the `CanvasProxyInteractor` is notified of the UGUI events by the `UGUIInputAdapter`, it issues _equivalent_ XRI actions on the relevant interactable. The mapping between UGUI input and XRI actions is somewhat lossy and is an area of active development.
 
 With this system, existing XRI interactables that are built for immersive platforms, hands, motion controllers, and 3D input can react equally well to accessible 2D controls like mouse and gamepad.
