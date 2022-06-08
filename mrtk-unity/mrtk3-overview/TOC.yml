@@ -16,3 +16,5 @@
   href: known-issues.md
 - name: Release notes
   href: release-notes.md
+- name: MRTK2.x documentation
+  href: ../mrtk2/index.md
