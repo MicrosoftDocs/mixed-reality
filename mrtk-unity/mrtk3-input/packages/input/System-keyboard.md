@@ -1,3 +1,13 @@
+---
+title: System keyboard in MRTK3
+description: System keyboard in MRTK3
+author: MaxWang-MS
+ms.author: wangmax
+ms.date: 6/7/2022
+ms.localizationpriority: high
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, data binding, theme, theming, Mixed Reality Toolkit
+---
+
 # System keyboard | MRTK3
 
 ![System keyboard](../images/system-keyboard.png)

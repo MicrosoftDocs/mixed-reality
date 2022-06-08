@@ -29,12 +29,12 @@ Popular data binding frameworks:
 ### Windows Presentation Framework data binding block diagram:
 
 ![Databinding Windows Presentation Framework (WPF)](images/databinding-wpf.png)
-For more information, see [data binding overview - WPF.NET](https://docs.microsoft.com/dotnet/desktop/wpf/data)
+For more information, see [data binding overview - WPF.NET](/dotnet/desktop/wpf/data)
 
 ---
 ### MRTK equivalent block diagram:
 
-![DataBinding-MRTK.jpg](images/databinding-mrtk.jpg)
+![MRTK equivalent block diagram](images/databinding-mrtk.jpg)
 
 ---
 ### Design Objectives
@@ -418,7 +418,8 @@ For a first step, take a close look at the various data binding example scenes i
 
 Also, for most use cases, the default values work out-of-the-box, but the exposed properties provide a lot of flexibility for the more advanced cases.
 
-><span style="color:red">**Note: To enable theming for the standard MRTK UX components, the ``MRTK_UX_DATABINDING_THEMING_ENABLED`` symbol must be defined in Player Settings. This symbol ensures zero performance impact when theming is not needed.**</span>
+>[!Note]
+>To enable theming for the standard MRTK UX components, the ``MRTK_UX_DATABINDING_THEMING_ENABLED`` symbol must be defined in Player Settings. This symbol ensures zero performance impact when theming is not needed.
 
 #### Assets/DataBinding Example/Scenes/DataBindingExamples.scene
 
@@ -451,7 +452,8 @@ It is designed to meet the following objectives:
 
 To change the charging level and state, find the ``BatteryLevelDataSource`` script on the ``Battery Level Slate`` GameObject.  Change the values for ``Battery Level 0 to 1`` and ``Is Charging``.
 
-><span style="color:red">**Note: How this demo is structured is not a good example of combining theming and data binding. In a production application for proper separation of model and view, the actual battery state (level and charging) would be provided in a separate data source than the resource locators for the sprites themselves.**</span>
+>[!Note]
+>How this demo is structured is not a good example of combining theming and data binding. In a production application for proper separation of model and view, the actual battery state (level and charging) would be provided in a separate data source than the resource locators for the sprites themselves.
 
 #### Assets/UX Theming Example/Scenes/UXThemingExample
 
