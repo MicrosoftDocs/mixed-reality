@@ -6,6 +6,8 @@
   href: ../mrtk3-overview/deployment/toc.yml
 - name: Packages
   href: packages/toc.yml
+- name: Architecture
+  href: ../mrtk3-overview/architecture/toc.yml
 - name: Using and creating scenes
   href: ../mrtk3-overview/scenes.md
 - name: Debugging and testing
