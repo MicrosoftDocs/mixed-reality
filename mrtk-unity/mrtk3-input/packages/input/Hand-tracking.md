@@ -1,11 +1,11 @@
-
 # Hand tracking in MRTK3
 
 ## Overview
+
 As one of the only pieces of input data that is not yet handled natively by the Unity Input System, articulated hand joint data is handled by our subsystems.
 
->**Note**
->If you are unfamiliar with MRTK3 subsystems and their differences from MRTK 2.x services, see the [MRTK3 Subsystems architecture](../../architecture/subsystems.md) documentation for a deep dive into our philosophy and design.
+> [!NOTE]
+> If you are unfamiliar with MRTK3 subsystems and their differences from MRTK 2.x services, see the [MRTK3 Subsystems architecture](../../architecture/subsystems.md) documentation for a deep dive into our philosophy and design.
 
 Our subsystems ingest hand joint data from several sources and aggregate them into a central API that works across devices and simulation contexts. The below subsystems are implementations of the `HandsSubsystem`:
 
@@ -13,10 +13,10 @@ Our subsystems ingest hand joint data from several sources and aggregate them in
 - The `XRSDKHandsSubsystem` receives hand data from Unity's XR SDK abstraction layer (which, in turn, may be sourcing its data from OpenXR, or some other source)
 - The `SyntheticHandsSubsystem` synthesizes fake hand joints based on the input actions coming from the system (such as `devicePosition`, `deviceRotation`, etc). This subsystem provides the joints you see when using input simulation in-editor.
 
-These `HandsSubsystems` are queried by the `HandsAggregatorSubsystem`, which combines all of the sources of hand data into a central API. 
+These `HandsSubsystems` are queried by the `HandsAggregatorSubsystem`, which combines all of the sources of hand data into a central API.
 
->**Important**
->Whenever you query directly for hand joint data, always prefer to query from the Aggregator, not from any of the individual `HandsSubsystem`s. This way, your code will work for any source of hand data, including simulated data. 
+> [!IMPORTANT]
+> Whenever you query directly for hand joint data, always prefer to query from the Aggregator, not from any of the individual `HandsSubsystem`s. This way, your code will work for any source of hand data, including simulated data.
 
 The aggregator and the hands subsystems lazily evaluate incoming hand data requests. Hand data will not be queried until a "client" script requests it. If the app only requests an individual joint, the hands subsystems will lazily evaluate and only ever query a single joint from the underlying APIs. In addition, if a "client" requests a full hand's worth of joint data, subsequent calls within the same frame will reuse the same data, reducing the cost of querying many joints within the same frame. On each new frame, the cache will be dirtied and flushed, and subsequent calls will begin refilling the cache.
 
@@ -69,4 +69,3 @@ bool handIsValid = aggregator.TryGetPalmFacingAway(XRNode.LeftHand, out bool isL
 // isReadyToPinch is adjusted with the HandRaiseCameraFOV and HandFacingAwayTolerance settings in the configuration.
 bool handIsValid = aggregator.TryGetPinchProgress(XRNode.LeftHand, out bool isReadyToPinch, out bool isPinching, out float pinchAmount)
 ```
-

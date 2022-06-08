@@ -19,6 +19,6 @@ Mode detectors, such as the the `ProximityModeDetector`, dictate which mode shou
 
 ![Near Interaction Mode Detector in Action](../images/InteractionModeManager/interaction-mode-management.gif)
 
-The priority of each mode is determined by the order they are listed within the **Interaction Mode Manager**. Modes listed later in the list have higher priority, making them the dominant mode in cases where multiple interaction contexts may be valid. The interaction mode manager also allows the user to specify a default interaction mode. 
+The priority of each mode is determined by the order they are listed within the **Interaction Mode Manager**. Modes listed later in the list have higher priority, making them the dominant mode in cases where multiple interaction contexts may be valid. The interaction mode manager also allows the user to specify a default interaction mode.
 
 ![Mode Manager Priority](../images/InteractionModeManager/interaction-mode-list.png)
