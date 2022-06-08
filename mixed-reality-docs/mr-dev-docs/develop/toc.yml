@@ -39,7 +39,7 @@
     items:
       - name: Overview
         href: unity/tutorials.md
-      - name: MRTK3--Zappy's Playground
+      - name: MRTK3 Zappy's Playground
         href: unity/playground-tutorial.md        
       - name: HoloLens 2 tutorials
         items:
