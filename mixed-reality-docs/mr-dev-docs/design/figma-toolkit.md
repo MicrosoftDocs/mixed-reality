@@ -3,7 +3,7 @@ title: MRTK Figma Toolkit
 description: Download Figma file which contains assets for common UI building blocks.
 author: dongpark
 ms.author: dongpark
-ms.date: 03/29/2021
+ms.date: 6/7/2022
 ms.topic: article
 keywords: Figma, Sketch, Adobe XD, design, designer, design file, UX design, HoloLens, MRTK, Mixed Reality Toolkit
 ---
@@ -16,6 +16,9 @@ MRTK Figma Toolkit provides 2D versions of the HoloLens 2 style UI controls that
 
 > [!div class="nextstepaction"]
 > [View MRTK Figma Toolkit](https://www.figma.com/file/zeGez3Phuzel9JrU1o20nn/Figma-Toolkit-for-MRTK-HoloLens-Windows-Mixed-Reality?node-id=116%3A4)
+
+>[!Note]
+>Starting with MRTK3 we are introducing a new Mixed Reality design language to developers. For more information, see the [MRTK3 documentation](/windows/mixed-reality/mrtk-unity/mrtk3-overview).
 
 ## How to use Figma Toolkit
 Use **Duplicate to your drafts** menu to make a copy.
