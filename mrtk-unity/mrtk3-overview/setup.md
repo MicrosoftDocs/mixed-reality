@@ -65,7 +65,7 @@ Once imported, MRTK3 requires a profile to be set for standalone and each additi
    ![assign the default MRTK profile](images/mrtk-profile.png)
 1. Switch to the tabs of other build target(s) you want to use (e.g. UWP, Android) and check whether the profile is assigned. If not, repeat the previous step on the current tab.
 
-### 5. Configure OpenXR-related setting
+### 5. Configure OpenXR-related settings
 
 Once imported, MRTK3 requires some configuration on OpenXR if you are targeting an XR device such as HoloLens 2 or Quest.
 
