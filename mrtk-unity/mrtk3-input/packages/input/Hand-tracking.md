@@ -38,7 +38,9 @@ The aggregator computes several measurements regarding the pinching gesture, bas
 
 ![Hands aggregator subsystem configuration](../../../mrtk3-overview/architecture/images/configuration.png)
 
-The <b>Pinch Open Threshold</b> and <b>Pinch Closed Threshold</b> control the absolute world distance between the thumb and forefinger that is used to normalize the pinch progress. When the distance equals the closed threshold, the pinch progress will be 1.0, and when the distance equals the open threshold, it will be 0.0. (These thresholds are currently in world units, but will soon be normalized to the user's hand size.)<br><br>The <b>Hand Raise Camera FOV</b> controls how close to the center of the user's view the hand must be to be considered valid for pinching. The <b>Hand Facing Away Tolerance</b> controls the tolerance for measuring the user's hand rotation, to determine when the user's hand is facing away.
+The __Pinch Open Threshold__ and __Pinch Closed Threshold__ control the absolute world distance between the thumb and forefinger that is used to normalize the pinch progress. When the distance equals the closed threshold, the pinch progress will be 1.0, and when the distance equals the open threshold, it will be 0.0. (These thresholds are currently in world units, but will soon be normalized to the user's hand size.)
+
+The __Hand Raise Camera FOV__ controls how close to the center of the user's view the hand must be to be considered valid for pinching. The __Hand Facing Away Tolerance__ controls the tolerance for measuring the user's hand rotation, to determine when the user's hand is facing away.
 
 ## Examples
 
