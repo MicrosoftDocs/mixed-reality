@@ -8,8 +8,8 @@
     items:
       - name: Mixed Reality
         tocHref: /windows/mixed-reality/
-        topicHref: "/windows/mixed-reality/index"
+        topicHref: /windows/mixed-reality/index
         items:
-          - name: MRTK2
-            tocHref: /windows/mixed-reality/mrtk2
-            topicHref: "/windows/mixed-reality/mrtk-unity/mrtk2"
+          - name: Discover
+            tocHref: /windows/mixed-reality/discover/
+            topicHref: /windows/mixed-reality/discover/mrtk2/get-started-with-mr
