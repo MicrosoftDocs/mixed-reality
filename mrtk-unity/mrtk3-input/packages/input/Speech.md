@@ -1,3 +1,13 @@
+---
+title: Speech input in MRTK3
+description: Speech input in MRTK3
+author: MaxWang-MS
+ms.author: wangmax
+ms.date: 6/7/2022
+ms.localizationpriority: high
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, data binding, theme, theming, Mixed Reality Toolkit
+---
+
 # Speech input | MRTK3
 
 ## Overview
