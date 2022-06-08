@@ -1,4 +1,3 @@
-
 # System keyboard | MRTK3
 
 ![System keyboard](../.images/MRTK_SystemKeyboard_Main.png)

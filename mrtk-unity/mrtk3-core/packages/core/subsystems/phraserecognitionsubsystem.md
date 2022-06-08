@@ -10,7 +10,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, phrase
 
 # Overview of PhraseRecognitionSubsystem
 
-> [!NOTE] 
+> [!NOTE]
 > For general information on subsystems in MRTK3, please see [here](../../../../mrtk3-overview/architecture/subsystems.md).
 
 The Core Definitions package ships `PhraseRecognitionSubsystem`, a base implementation of `MRTKSubsystem` and `IPhraseRecognitionSubsystem` that severs as the base of subsystems responsible for keyword/phrase recognition in MRTK3. Concrete implementation shipped as part of MRTK such as `WindowsPhraseRecognitionSubsystem`, as well as other potential phrase recognition subsystem you might build, should all be based on this class. Subsystem inheriting from `PhraseRecognitionSubsystem` can work with `SpeechInteractor` to trigger select events on `StatefulInteractable`s based on the settings of the interactables. The inherited subclasses will also allow the registration of arbitrary `UnityAction`s to a keyword of your choice so that the action will be invoked when such word is said.
@@ -19,7 +19,7 @@ Please refer to the documentation of the concrete `PhraseRecognitionSubsystem` i
 
 ## Setup
 
-> [!NOTE] 
+> [!NOTE]
 > This guide provides steps to enable speech subsystem in a new MRTK project (with other basic non-speech related setup in place). If you are using our sample project you may notice some steps have been performed for you.
 
 ### 1. Enable the speech subsystem
