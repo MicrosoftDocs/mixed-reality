@@ -1,9 +1,18 @@
+---
+title: Data Binding and Theming Framework Overview
+description: Overview of MRTK3 Data Binding and Theming Framework
+author: MaxWang-MS
+ms.author: wangmax
+ms.date: 6/5/2022
+ms.localizationpriority: high
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, data binding, theme, theming, Mixed Reality Toolkit
+---
 
 # Data Binding and Theming Framework
 
 Welcome to the MRTK3 Data Binding and Theming framework. This framework is designed to make it easy to create visual elements that can be populated and updated dynamically at runtime by data provided from one or more data sources.
 
-# What is data binding
+## What is data binding
 
 Data binding is the process that establishes a connection between an application's UX (view) and the data being presented (model). Suppose the binding has the correct settings and the data provides the proper notifications; when the data changes its value, the elements bound to the data reflect changes automatically.
 
@@ -17,18 +26,18 @@ Popular data binding frameworks:
 * JavaFX Bindings
 -----------------
 
-## Windows Presentation Framework data binding block diagram:
+### Windows Presentation Framework data binding block diagram:
 
 ![Databinding Windows Presentation Framework (WPF)](images/databinding-wpf.png)
 For more information, see [data binding overview - WPF.NET](https://docs.microsoft.com/dotnet/desktop/wpf/data)
 
 ---
-## MRTK equivalent block diagram:
+### MRTK equivalent block diagram:
 
 ![DataBinding-MRTK.jpg](images/databinding-mrtk.jpg)
 
 ---
-## Design Objectives
+### Design Objectives
 
 * Cross platform - deploy anywhere
 * Support any organizational structure and origin of data sources
@@ -50,7 +59,7 @@ For more information, see [data binding overview - WPF.NET](https://docs.microso
 * Easy to white label and/or apply branding to stock assets with minimal effort
 
 ---
-## Key Features
+### Key Features
 
 * Open-ended data sources support any persisted, remote or RAM data strategy.
 * Open-ended data consumers support any UX binding and theming needs.
@@ -63,9 +72,9 @@ For more information, see [data binding overview - WPF.NET](https://docs.microso
 * Can map between differences in data and view keypath namespaces.
 
 ---
-## Current Functionality
+### Current Functionality
 
-### 1. Visualize variable data via data consumers. Currently supported:
+#### 1. Visualize variable data via data consumers. Currently supported:
 - TextMeshPro and TextMesh text
 - Text stylesheets (for theming and accessibility)
 - Sprite texture
@@ -74,48 +83,48 @@ For more information, see [data binding overview - WPF.NET](https://docs.microso
 - Font Icons
 - Collections - arbitrary sized lists containing prefabs populated with variable data
 - Any other consumer that supports the IDataConsumer interface (directly or via base classes derivations)
-### 2. Provide variable data via a variety of data sources:
+#### 2. Provide variable data via a variety of data sources:
   * JSON text (directly or via URL fetch)
   * Dictionary of variable data elements
   * Object - Node based structured data
   * Reflection of any C# object
   * Programmatically altered data
   * Any other method that supports the IDataSource interface
-### 3. List item placer to manage the visual manifestation of a list
+#### 3. List item placer to manage the visual manifestation of a list
 
-### 4. List paging, scrolling and virtualization
+#### 4. List paging, scrolling and virtualization
   * Data is only fetched when visible or in process
   * Supports arbitrarily large back-end data sets
   * Fetching is load balanced across multiple frames
-### 5. List prefab pooling
+#### 5. List prefab pooling
   * Prefabs are reused and repopulated to reduce GC and instantiation time.
-### 6. Apply themes dynamically to elements at runtime.
+#### 6. Apply themes dynamically to elements at runtime.
 
 ---
-# Functionality on the roadmap:
+## Functionality on the roadmap:
 
 In addition to what is already available, top priorities for additional capabilities include:
 
-## 1. Data Manipulator pipelines
+### 1. Data Manipulator pipelines
   * Conversion between data side and view side values
   * Localization (seemless integration with Unity localization)
   * Formatting
   * Validation
-## 2. Predictive list item prefetch for faster/smoother scrolling/paging
+### 2. Predictive list item prefetch for faster/smoother scrolling/paging
 
-## 3. More Data Consumers
+### 3. More Data Consumers
   * Set any public property on a Component
   * Set checkbox on/off state
   * Set slider value
   * Set a radio button in a group
   * Individual Material properties such as set color
-## 4. Theming
+### 4. Theming
   * See themes applied in Editor even when not running application
   * Update prefabs to reflect an applied theme, so as to become the default theme
   * Theme / style inheritance
 
 ---
-## Terminology
+### Terminology
 
 * **Data Source** - Any provider of data, whether it's runtime state, locally persisted, or fetched from a server.
 * **Data Source Provider** - A simple MonoBehaviour that provides access to a Data Source that may not be exposed in the Unity scene graph.
@@ -141,22 +150,22 @@ In addition to what is already available, top priorities for additional capabili
 * **Predictive Prefetch** - Pre-fetching data and populating collection prefabs for items that may soon be seen via scrolling/paging.
 
 
-## Key Concepts
+### Key Concepts
 
-### Data Source
+#### Data Source
 
 A data source is any managed set of data of arbitrary type(s) and complexity
 that can be used to populate data views via data consumers. The data managed by a data source can be static or dynamic. Any changes to data items will be reported to any data consumers that have registered to receive change notifications.
 
-### Data Source Provider
+#### Data Source Provider
 
 A simple interface that has a single method to retrieve a data source. This is designed to allow a MonoBehavior scripting component to be auto-discovered in the game object hierarchy by data consumer components, but without the need to implement a data source directly on the game object itself.  This is useful when an existing MonoBehaviour must derive from another class and multiple inheritence prevents deriving from DataSourceGOBase. It also allows more code to have no Unity dependencies.
 
-### Data Source Provider Singleton
+#### Data Source Provider Singleton
 
 The ``DataSourceProviderSingleton`` MonoBehaviour makes it possible to specify a data source that can be automatically discovered even if it is not in the same GameObject hierarchy as the DataConsumers that wish to listen to it. Simply put the ``DataSourceProviderSingleton``anywhere in the scene and populate the ``Data Sources`` property with any data sources that are to be discovered by data consumers.  Alternatively, data consumers will walk their parents to find an appropriate data source, which implies that you can put a data source that provides the desired data anywhere in the parent chain of those data consumers. 
 
-### Key Path (string)
+#### Key Path (string)
 
 A key path is the mechanism to uniquely identify any piece of information in a data source.
 
@@ -184,7 +193,7 @@ example of a viable key path schema that would work with data sources. As long a
 are consistent with the keypaths expected by the data source, everything will work.
 Furthermore Key Path Mappers can be implemented to translate between different schemas.
 
-### Resolving a Key Path
+#### Resolving a Key Path
 
 Resolving a key path means combining two keypaths:
 1. An absolute keypath that describes how to access a specific
@@ -211,7 +220,7 @@ The fully resolved key paths for one prefab entry in a list might look like this
 * "f3cb1906-d8b3-489d-9f74-725e5542b55d/description"
 
 
-### Key Path Mapper (IDataKeyPathMapper)
+#### Key Path Mapper (IDataKeyPathMapper)
 
 A key path mapper allows data sources and data consumers to use different namespaces and conventions for key paths and still work together.
 
@@ -221,7 +230,7 @@ The prefab may be used with different data sources where the data is stored in a
 template prefab with each data source, a key path mapper can resolve any differences in how the data is organized.
 
 
-### Data Consumer (IDataConsumer)
+#### Data Consumer (IDataConsumer)
 
 An object that knows how to consume information being managed by
 a data source and use that data to populate data views.
@@ -230,7 +239,7 @@ Data Consumers can register with a data source to be notified of any changes to 
 data item that exists at a specified key path in a dataset. Whenever the data specified has changed (or suspected to have changed), the
 Data Consumer(s) will be notified.
 
-### Data Consumer Collection
+#### Data Consumer Collection
 
 A collection data consumer has the added ability to manage a list of similar items. This list can be the entire data set
 managed by a data source, or just a subset. Typically the data for each item in the list contains similar types of information, but this
@@ -242,7 +251,7 @@ to either the nearest parent list, or the root of the data set.
 When processing collections, the correct resolved keypath for the specific entry in the collection is assigned to each data consumer found in the prefab
 that is instantiaged for each collection item. That is then used to full resolve the key path for any relative (local) view data within that prefab.
 
-### Data Collection Item Placer
+#### Data Collection Item Placer
 
 A collection data consumer needs a means to populate user experiences with lists of repeating visual elements, such as might be found in a scrollable
 list of products, photos, or contacts.
@@ -250,21 +259,21 @@ list of products, photos, or contacts.
 This is accomplished by assigning an item placer to the collection data consumer. This item placer is the logic tha knows how to request list items, accept prefabs
 that have been populated with variable data, and then present them to the user, typically by inserting them into a list managed by a ux layout component for lists.
 
-# Theming
+## Theming
 
 Theming uses all of the plumbing of data sources and data consumers.  It is possible to theme any hierarchy of GameObjects whether they are static or are dynamically data bound to other data sources.  This allows for both data binding and theming to be applied in combination. It is even possible to theme the data coming from another data source. 
-# Block Diagram and Data flow
+## Block Diagram and Data flow
 
 ![MRTK theming data flow](images/databinding-data-flow.jpg)
 
-# MRTK Theming
+## MRTK Theming
 
 Theming is the ability to wholesale change the visual aesthetic of many UX elements at once. Typically, all of the data needed to specify a theme is provided by a single Data Source, such as a Scriptable Object.  It is also possible for theming data to be provided as needed, or divided into logical groups based on its purpose.
 
 ![MRTK3 Theming](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_Theming.png)
 
 
-# MRTK3 Theming combined with Data Binding
+## MRTK3 Theming combined with Data Binding
 
 Data Binding and Theming can co-exist for a single UX element. Any individual UX element can be simultaneously themed and data bound. In this scenario, the typical flow is that the datum coming from a DataSource is used to derive the correct theme keypath. This keypath is then used to retrieve an object from the theme Data Source, typically a ScriptableObject profile, but potentially any source of data that can resolve a keypath.
 
@@ -494,7 +503,7 @@ A data collection item placer is responsible for managing which parts of a colle
 
 All item placers must provide the IDataCollectionItemPlacer interface.  Some of the basic funcationality is offered in a base class called DataColletionItemPlacerGOBase.  All item placers should derive from this class.
 
-# Known Limitations and Missing Features #
+## Known Limitations and Missing Features
 
 - Not yet integrated with Unity's canvas based controls and scrollable lists.
 - Integration of .NET INotifyPropertyChanged is not yet implemented.
