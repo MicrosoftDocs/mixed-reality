@@ -10,6 +10,6 @@
         tocHref: /windows/mixed-reality/
         topicHref: /windows/mixed-reality/index
         items:
-        - name: MRTK2
-            tocHref: /windows/mixed-reality/mrtk-unity/mrtk2/
-            topicHref: /windows/mixed-reality/mrtk-unity/mrtk2/index
+        - name: MRTK 2
+          tocHref: /windows/mixed-reality/
+          topicHref: /windows/mixed-reality/mrtk-unity/mrtk2/index
