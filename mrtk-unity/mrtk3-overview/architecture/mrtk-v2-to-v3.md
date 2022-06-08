@@ -35,7 +35,7 @@ As you begin using MRTK3, you'll notice that several concepts in MRTK v2 have be
 
 | MRTK v2 term | XRI term | Notes |
 | ------------ | -------- | ----------- |
-| `OnFocusEnter/Exit`	| `FirstHoverEnter`<br>`LastHoverExit` | Note the `First` and `Last` prefixes; this is due to the fact that any number of Interactors can simultaneously hover an Interactable. You can also listen to each individual hover enter/exit with `HoverEnter` and `HoverExit`, although it's generally less useful than monitoring the overall hover status. |
+| `OnFocusEnter/Exit` | `FirstHoverEnter`<br>`LastHoverExit` | Note the `First` and `Last` prefixes; this is due to the fact that any number of Interactors can simultaneously hover an Interactable. You can also listen to each individual hover enter/exit with `HoverEnter` and `HoverExit`, although it's generally less useful than monitoring the overall hover status. |
 | `OnPointerDown/Up`  | `FirstSelectEnter`<br>`LastSelectExit` | Note the `First` and `Last` prefixes; this is due to the fact that any number of Interactors can simultaneously select an Interactable (depending on the selection mode). You can also listen to each individual select enter/exit with `SelectEnter` and `SelectExit`, although it's generally less useful than monitoring the overall selection status.|
 | `OnPointerDragged`  | N/A  | Simply poll the `interactorsSelecting` attach transforms with `GetAttachTransform` during a selection. Bear in mind that, depending on the selection mode of the Interactable, an unbounded number of Interactors can select (and manipulate) an Interactable. |
-| `OnSourcePoseChanged, OnSourceDetected, OnSourceLost` | N/A | XRI doesn't raise these events. They are handled via the **XRController** monitoring its associated **Input Device**.  |
+| `OnSourcePoseChanged, OnSourceDetected, OnSourceLost` | N/A | XRI doesn't raise these events. They are handled via the **XRController** monitoring its associated **Input Device**. |

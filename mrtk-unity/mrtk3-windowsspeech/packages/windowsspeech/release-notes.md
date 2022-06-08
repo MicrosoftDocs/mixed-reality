@@ -11,4 +11,5 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, Releas
 # Release Notes - Windows Speech
 
 ## 3.0.0-pre.6
+
 Initial release

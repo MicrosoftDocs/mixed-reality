@@ -36,7 +36,5 @@ Textures contains a collection of icons and other image assets.
 
 The models and prefabs folders contain assets used in some of the MRTK demo scenes.
 
->[!NOTE]
->The contents of the models and prefabs folders may be moved to other packages prior to releasing.
-
-
+> [!NOTE]
+> The contents of the models and prefabs folders may be moved to other packages prior to releasing.
