@@ -5,7 +5,7 @@ author: MaxWang-MS
 ms.author: wangmax
 ms.date: 6/7/2022
 ms.localizationpriority: high
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, data binding, theme, theming, Mixed Reality Toolkit
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, keyboard, Mixed Reality Toolkit
 ---
 
 # System keyboard | MRTK3
