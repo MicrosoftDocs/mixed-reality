@@ -1,5 +1,10 @@
 {
 	"redirections": [
+		{
+		  "source_path_from_root": "/mrtk-unity/mrtk3",
+		  "redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk3-overview",
+		  "redirect_document_id": false
+		},
 	  {
 		"source_path_from_root": "/mrtk-unity/mrtk3-accessibility/index.md",
 		"redirect_url": "/windows/mixed-reality/mrtk-unity/mrtk3-accessibility/packages/accessibility/overview",
