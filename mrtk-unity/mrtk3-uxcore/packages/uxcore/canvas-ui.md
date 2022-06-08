@@ -55,9 +55,9 @@ The benefits include:
 - ✔ Support for flex layouts with priority and margins, through [UnityUI AutoLayout groups](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/comp-UIAutoLayout.html)
 - ✔ A single prefab for each type of control, which can be resized and adjusted to fit any content or context
 - ✔ Horizontal, vertical, and grid layouts from [UnityUI AutoLayout groups](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/comp-UIAutoLayout.html). Custom layouts possible through extension of Unity layout interfaces.
-- ✔ Wide variety of advanced design features like absolutely-sized rounded corner radii, stroke widths, and margins, enabled by the advanced UI shader features in the [Mixed Reality Graphics Tools package.](../Mixed-Reality-Graphics-Tools.md)
+- ✔ Wide variety of advanced design features like absolutely-sized rounded corner radii, stroke widths, and margins, enabled by the advanced UI shader features in the [Mixed Reality Graphics Tools package](../../../mrtk3-graphicstools/index.md).
 - ✔ No scaling: all sizing and layout is achieved through RectTransform size and offset metrics. Parents do not scale children.
-- ✔ Full support for mouse + keyboard, natively through UGUI events and the `UGUIInputAdapter` and `CanvasProxyInteractor` (see the [Interactable architecture documentation for more information](../../architecture/interactables.md))
+- ✔ Full support for mouse + keyboard, natively through UGUI events and the `UGUIInputAdapter` and `CanvasProxyInteractor` (see the [Interactable architecture documentation for more information](../../../mrtk3-overview/architecture/interactables.md))
 - ✔ Support for gamepad and directional/relative navigation
 
 This power and flexibility can come at a cost, and Canvas-based UI requires careful management to avoid common performance pitfalls.
