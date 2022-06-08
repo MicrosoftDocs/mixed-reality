@@ -77,7 +77,7 @@ bool handIsValid = aggregator.TryGetPalmFacingAway(XRNode.LeftHand, out bool isL
 
 ```C#
 // Query pinch characteristics from the left hand.
-// pinchAmount is [0,1], normalized to the open/closed thresholds specified in the aggregator confiugration.
+// pinchAmount is [0,1], normalized to the open/closed thresholds specified in the aggregator configuration.
 // isReadyToPinch is adjusted with the HandRaiseCameraFOV and HandFacingAwayTolerance settings in the configuration.
 bool handIsValid = aggregator.TryGetPinchProgress(XRNode.LeftHand, out bool isReadyToPinch, out bool isPinching, out float pinchAmount)
 ```
