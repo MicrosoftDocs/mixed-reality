@@ -34,4 +34,5 @@ The HoloLens 2 Fundamentals tutorials for Unity are designed to teach techniques
 
 Zappy's Playground is a cross-platform developer sample that showcases how to develop intuitive and comprehensive end-to-end experiences for mixed reality. Using the latest features from Microsoft and Unity such as MRTK3, OpenXR, XRI, ARFoundation and more, it provides a place to learn and a foundation for your own app development.
 
-< button >
+> [!div class="nextstepaction"]
+> [MRTK3 tutorial Zappy's Playground](https://github.com/microsoft/ZappysPlayground)
