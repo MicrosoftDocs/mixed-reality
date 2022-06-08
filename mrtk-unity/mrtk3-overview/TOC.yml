@@ -6,6 +6,8 @@
   href: deployment/toc.yml
 - name: Packages
   href: packages/toc.yml
+- name: Architecture
+  href: architecture/toc.yml
 - name: Using and creating scenes
   href: scenes.md
 - name: Debugging and testing
