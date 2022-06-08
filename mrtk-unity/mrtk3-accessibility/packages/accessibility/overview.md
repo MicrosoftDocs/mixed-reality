@@ -12,18 +12,18 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, access
 
 The accessibility package contains features and components to enable developers to create mixed reality experiences for everyone.
 
->[!NOTE]
->The accessibility package is currently in early preview. Early preview packages may not contain all planned features and may undergo major architectural changes prior to release.
+> [!NOTE]
+> The accessibility package is currently in early preview. Early preview packages may not contain all planned features and may undergo major architectural changes prior to release.
 
 ## Features
 
 ### Describable Object
 
-To enable assitive technologies to describe, or read, objects in the mixed reality world, MRTK3 provides the `DescribableObject` script. By adding this script to visual components, a future reader component will be able to recognize
-the objcet and read to the user the information needed to understand the object and its place in the world.
+To enable assistive technologies to describe, or read, objects in the mixed reality world, MRTK3 provides the `DescribableObject` script. By adding this script to visual components, a future reader component will be able to recognize
+the object and read to the user the information needed to understand the object and its place in the world.
 
->[!NOTE]
-> MRTK3 does not currently integrate with assitive readers. The DescribableObject is in the early stages of development and is included to allow advanced review and to gather developer feedback.
+> [!NOTE]
+> MRTK3 does not currently integrate with assistive readers. The DescribableObject is in the early stages of development and is included to allow advanced review and to gather developer feedback.
 
 To enable a scene element to be described, attach the `DescribableObject` script and fill out the fields.
 
@@ -51,7 +51,7 @@ The instructions field gives the user information on how to interact with the ob
 
 #### Role
 
-The role is based on the W3C Accessible Rich Internet Application (ARIA) roles. In a future update to MRTK3, additional non-user interface focused roles are planned to be addd.
+The role is based on the W3C Accessible Rich Internet Application (ARIA) roles. In a future update to MRTK3, additional non-user interface focused roles are planned to be added.
 
 #### Semantic
 
@@ -71,7 +71,7 @@ To help text objects stand out from the background, it is common to use highly c
 
 In virtual reality experiences, it may be desirable to have free-floating text that can be viewed from any angle. To make this as easy as possible, MRTK3 provides the `TextAccessibility` script.
 
-![Text Accessibility Script](images/TextAccessibiliyScript.png)
+![Text Accessibility Script](images/TextAccessibilityScript.png)
 
 This script can be attached to any TextMesh Pro object and, provided that the font material uses the TextMesh Pro shader from the Mixed Reality Graphics Tools (all font assets in the Standard Assets package do so), the text will invert based on the configuration of the Accessibility subsystem.
 
