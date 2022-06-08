@@ -38,7 +38,7 @@ The interactable queries the `attachTransform`, and can treat every `attachTrans
 
 This approach is critical for compatibility with existing XRI interactors, as well as future-proofing your interactions for input modalities that haven't yet been developed. If a new input method is introduced, you don't need to alter existing interactables if the new interactor generates a valid and well-behaved `attachTransform`.
 
-Thus, philosophically, the `attachTransform` *is* the interaction logic. For any custom interactions, always prefer to write a new interactor with new `attachTransform` logic rather than rewriting or extending interactables to be customized for your new interaction. In this way, all existing interactables can enjoy the benefits of your new interaction instead of only the ones you've rewritten or extended.
+Thus, philosophically, the `attachTransform` _is_ the interaction logic. For any custom interactions, always prefer to write a new interactor with new `attachTransform` logic rather than rewriting or extending interactables to be customized for your new interaction. In this way, all existing interactables can enjoy the benefits of your new interaction instead of only the ones you've rewritten or extended.
 
 ### XRControllers and Input Binding
 
@@ -51,8 +51,9 @@ Nonetheless, some interactors may need special input bindings or additional inpu
 XRI defines the basic `IXRInteractor`, `IXRHoverInteractor`, `IXRSelectInteractor`, and `IXRActivateInteractor`. MRTK defines additional interfaces for interactors. Some expose additional information about MRTK-specific interactions, and others simply for categorization and identification. These interfaces are all located within the **Core** package, while the implementations reside in other packages, including **Input**.
 
 > [!IMPORTANT]
-> While these interfaces are helpful if you need to filter for a specific type of interaction, it's recommended that you do *not* hard-code your interactions to listen for these interfaces specifically. *In every situation, always prefer the generic XRI **isSelected** and **isHovered**, rather than any interaction-specific interface*. <br> <br>
-Unless necessary, you should not reference the concrete MRTK implementations of these interfaces in interactables, unless absolutely necessary. In all cases, it's preferred to reference the interfaces. Explicitly referencing the concrete types will restrict your interactables to only work with the current, existing types. By referencing only the interfaces, you ensure compatibility with future implementations that may not subclass the existing implementations.
+> While these interfaces are helpful if you need to filter for a specific type of interaction, it's recommended that you do _not_ hard-code your interactions to listen for these interfaces specifically. _In every situation, always prefer the generic XRI **isSelected** and **isHovered**, rather than any interaction-specific interface_.
+>
+> Unless necessary, you should not reference the concrete MRTK implementations of these interfaces in interactables, unless absolutely necessary. In all cases, it's preferred to reference the interfaces. Explicitly referencing the concrete types will restrict your interactables to only work with the current, existing types. By referencing only the interfaces, you ensure compatibility with future implementations that may not subclass the existing implementations.
 
 ### IVariableSelectInteractor
 
@@ -80,8 +81,8 @@ Interactors that implement this interface represent a ray-based pointing interac
 
 The MRTK implementation of this interface is `MRTKRayInteractor`, inheriting directly from the XRI `XRRayInteractor`.
 
->[!Note]
->The XRI `XRRayInteractor` doesn't implement this MRTK interface.
+> [!NOTE]
+> The XRI `XRRayInteractor` doesn't implement this MRTK interface.
 
 ### ISpeechInteractor
 

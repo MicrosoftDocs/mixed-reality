@@ -15,6 +15,7 @@ Welcome to the MRTK3 public preview! As MRTK3 is a collection of loosely coupled
 You're not expected to consume every MRTK package. See [which features are useful to you](packages/packages-overview.md) and add only the dependencies that matter.
 
 ## Install the tools
+
 Make sure you have all the tools in this link before starting:
 
 > [!div class="nextstepaction"]
@@ -59,49 +60,52 @@ Once imported, MRTK3 requires a profile to be set for standalone and each additi
 1. Navigate to **Edit > Project Settings**
 1. Under **Project Settings**, navigate to **MRTK3** and switch to the standalone tab. Note the profile is initially unspecified.
 1. Populate the field with the default MRTK profile that ships wih the core package. You can type in the keyword "MRTKprofile" in the search bar of the project window and make sure you search in `All`. Alternatively you can find the profile under `Packages/com.microsoft.mrtk.core/Configuration/Default Profiles/MRTKProfile.asset`.
-   >[!NOTE]
+
+   > [!NOTE]
    > Not all of the MRTK subsystems are shown in the screenshot below. The MRTK subsystems that you see may be different, depending on the MRTK3 packages you have added to your project.
 
    ![assign the default MRTK profile](images/mrtk-profile.png)
+
 1. Switch to the tabs of other build target(s) you want to use (e.g. UWP, Android) and check whether the profile is assigned. If not, repeat the previous step on the current tab.
 
 ### 5. Configure OpenXR-related settings
 
 Once imported, MRTK3 requires some configuration on OpenXR if you are targeting an XR device such as HoloLens 2 or Quest.
 
->[!NOTE]
->The following instructions applies to HoloLens 2 or WMR headsets. If you are targeting Quest, please refer to the instructions on the [Quest deployment page](deployment/quest-deployment.md#deployment-prerequisites).
+> [!NOTE]
+> The following instructions applies to HoloLens 2 or WMR headsets. If you are targeting Quest, please refer to the instructions on the [Quest deployment page](deployment/quest-deployment.md#deployment-prerequisites).
 
 1. Navigate to **Edit > Project Settings**
 
 1. Under **Project Settings**, navigate to **XR Plug-in Management** and enable **OpenXR** under both the Standalone and UWP tabs. Under each tab, ensure that **Initialize XR on Startup** is selected and that the **Windows Mixed Reality feature group under Standalone** and the **Microsoft HoloLens feature group under UWP** are enabled.
 
-    >[!NOTE]
-    >A yellow warning icon may appear after checking the **OpenXR** option. Click on that icon to open the **OpenXR Project Validation** tool. Click fix all and ignore the interaction profile issue that cannot be auto fixed. The profiles will be added in the step below.
+   > [!NOTE]
+   > A yellow warning icon may appear after checking the **OpenXR** option. Click on that icon to open the **OpenXR Project Validation** tool. Click fix all and ignore the interaction profile issue that cannot be auto fixed. The profiles will be added in the step below.
 
-    For standalone:
+   For standalone:
 
-    ![Standalone XR Plug-in Management window](images/standalone-xr-plug-in-management.png)
+   ![Standalone XR Plug-in Management window](images/standalone-xr-plug-in-management.png)
 
-    For UWP:
+   For UWP:
 
-    ![UWP XR Plug-in Management window](images/uwp-xr-plug-in-management.png)
+   ![UWP XR Plug-in Management window](images/uwp-xr-plug-in-management.png)
 
 1. Under **Project Settings**, navigate to **XR Plug-in Management > OpenXR > Interaction Profiles** and add the following three profiles for UWP and Standalone:
-    * **Eye Gaze Interaction Profile**
-    * **Microsoft Hand Interaction Profile**
-    * **Microsoft Motion Controller Profile**
 
-    >[!NOTE]
-    >You may need to use the **OpenXR Project Validation** tool to eliminate the yellow triangle.
+   - **Eye Gaze Interaction Profile**
+   - **Microsoft Hand Interaction Profile**
+   - **Microsoft Motion Controller Profile**
 
-    For standalone:
+   > [!NOTE]
+   > You may need to use the **OpenXR Project Validation** tool to eliminate the yellow triangle.
 
-    ![Standalone OpenXR](images/standalone-openxr.png)
+   For standalone:
 
-    For UWP:
+   ![Standalone OpenXR](images/standalone-openxr.png)
 
-    ![UWP OpenXR](images/uwp-openxr.png)
+   For UWP:
+
+   ![UWP OpenXR](images/uwp-openxr.png)
 
 1. For HoloLens 2, we recommend using 16-bit depth submission in the settings above. For immersive headsets, you can use 24-bit depth submission. See the [Microsoft development docs for Unity](/windows/mixed-reality/develop/unity/recommended-settings-for-unity#enable-depth-buffer-sharing) for more info.
 
@@ -111,4 +115,4 @@ Please proceed to [create a new MRTK3 scene](scenes.md#creating-a-new-scene-with
 
 ## Next steps
 
-* [Try out our sample scenes or create your own one](scenes.md)
+- [Try out our sample scenes or create your own one](scenes.md)

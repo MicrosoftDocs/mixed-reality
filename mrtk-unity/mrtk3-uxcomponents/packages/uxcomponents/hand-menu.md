@@ -17,11 +17,10 @@ The Hand menu provides 'Require Flat Hand' and 'Use Gaze Activation' options to 
 
 ## Example scene and Prefabs
 
->[!NOTE]
+> [!NOTE]
 > The hand menu prefabs are currently built using the non-canvas controls. They will soon be rebuilt using the [Canvas components](../../../mrtk3-uxcore/packages/uxcore/canvas-ui.md) and auto-layout system as detailed in the [Button Group](button-group.md) documentation.
 
 If you're using the template project, `HandMenuExamples.unity` demonstrates several common configurations for hand menus, all using the `HandConstraintPalmUp` script.
-
 
 ![Hand Menu Example Scene](../../../mrtk3-overview/images/UXBuildingBlocks/HandMenu/MRTK_Examples_HandMenu_Scene.png)
 
@@ -55,23 +54,23 @@ The `HandConstraint` behavior provides a solver that constrains the tracked obje
 
 See the tooltips available for each `HandConstraint` property for additional documentation. A few properties are defined in more detail below.
 
-* **Safe Zone**: The safe zone specifies where on the hand to constrain content. It's recommended that content be placed on the Ulnar Side to avoid overlap with the hand and improved interaction quality. Safe zones are calculated by the hands' orientation projected into a plane orthogonal to the camera's view and raycasting against a bounding box around the hands. Safe zones are defined to work with `XRNode`. Exploring what each safe zone represents on different controller types is recommended.
+- **Safe Zone**: The safe zone specifies where on the hand to constrain content. It's recommended that content be placed on the Ulnar Side to avoid overlap with the hand and improved interaction quality. Safe zones are calculated by the hands' orientation projected into a plane orthogonal to the camera's view and raycasting against a bounding box around the hands. Safe zones are defined to work with `XRNode`. Exploring what each safe zone represents on different controller types is recommended.
 
-* **Follow Hand Until Facing Camera** With this active, the solver will follow hand rotation until the menu is sufficiently aligned with the gaze when it faces the camera. To make this work, change the `SolverRotationBehavior` in the `HandConstraintSolver`, from `LookAtTrackedObject` to `LookAtMainCamera` as the `GazeAlignment` angle with the solver varies.
+- **Follow Hand Until Facing Camera** With this active, the solver will follow hand rotation until the menu is sufficiently aligned with the gaze when it faces the camera. To make this work, change the `SolverRotationBehavior` in the `HandConstraintSolver`, from `LookAtTrackedObject` to `LookAtMainCamera` as the `GazeAlignment` angle with the solver varies.
 
 ![Hand Menu Example Safe Zone](../../../mrtk3-overview/images/UXBuildingBlocks/HandMenu/MRTK_HandMenu_Areas.png)
 
-* **Activation Events**: Currently, the `HandConstraint` triggers four activation events. These events can be used in many different combinations to create unique `HandConstraint` behaviors.
+- **Activation Events**: Currently, the `HandConstraint` triggers four activation events. These events can be used in many different combinations to create unique `HandConstraint` behaviors.
 
-  * *OnHandActivate*: triggers when a hand satisfies the IsHandActive method.
-  * *OnHandDeactivate*: triggers when the IsHandActive method is no longer satisfied.
-  * *OnFirstHandDetected*: occurs when the hand tracking state changes from no hands in view to the first hand in view.
-  * *OnLastHandLost*: occurs when the hand tracking state changes from at least one hand in view to no hands in view.
+  - _OnHandActivate_: triggers when a hand satisfies the IsHandActive method.
+  - _OnHandDeactivate_: triggers when the IsHandActive method is no longer satisfied.
+  - _OnFirstHandDetected_: occurs when the hand tracking state changes from no hands in view to the first hand in view.
+  - _OnLastHandLost_: occurs when the hand tracking state changes from at least one hand in view to no hands in view.
 
-* **Solver Activation/Deactivation Logic**: Currently, the recommendation for activating and deactivating `HandConstraintPalmUp` logic is to do so by using the `SolverHandler`'s `UpdateSolver` value rather than by disabling/enabling the object. This can be seen in the example scene through the editor-based hooks triggered after the attached menu's ManipulationHandler "OnManipulationStarted/Ended" events.
+- **Solver Activation/Deactivation Logic**: Currently, the recommendation for activating and deactivating `HandConstraintPalmUp` logic is to do so by using the `SolverHandler`'s `UpdateSolver` value rather than by disabling/enabling the object. This can be seen in the example scene through the editor-based hooks triggered after the attached menu's ManipulationHandler "OnManipulationStarted/Ended" events.
 
-  * *Stopping the hand-constraint logic*: When trying to set the hand constrained object to stop (and not run the activation/deactivation logic), set UpdateSolver to False rather than disabling HandConstraintPalmUp.
-    * If you want to enable the gaze-based (or even non-gaze-based) Reattach logic, this is then followed by calling the `HandConstraintPalmUp.StartWorldLockReattachCheckCoroutine()` function. This will trigger a coroutine that then continues to check if the "`IsValidController`" criteria are met and will set UpdateSolver to True once it is (or the object is disabled)
-  * *Starting the hand-constraint logic*: When trying to set the hand constrained object to begin following your hand again (based on whether it meets the activation criteria), set the SolverHandler's UpdateSolver to true.
+  - _Stopping the hand-constraint logic_: When trying to set the hand constrained object to stop (and not run the activation/deactivation logic), set UpdateSolver to False rather than disabling HandConstraintPalmUp.
+    - If you want to enable the gaze-based (or even non-gaze-based) Reattach logic, this is then followed by calling the `HandConstraintPalmUp.StartWorldLockReattachCheckCoroutine()` function. This will trigger a coroutine that then continues to check if the "`IsValidController`" criteria are met and will set UpdateSolver to True once it is (or the object is disabled)
+  - _Starting the hand-constraint logic_: When trying to set the hand constrained object to begin following your hand again (based on whether it meets the activation criteria), set the SolverHandler's UpdateSolver to true.
 
-* **Reattach Logic**: Currently, the `HandConstraintPalmUp` can automatically reattach the target object to the tracked point, regardless of whether the `SolverHandler`'s `UpdateSolver` is True. This is done by calling the `HandConstraintPalmUp`'s `StartWorldLockReattachCheckCoroutine()` function, after it's been world-locked (which in this case, is effectively setting the SolverHandler's UpdateSolver to False).
+- **Reattach Logic**: Currently, the `HandConstraintPalmUp` can automatically reattach the target object to the tracked point, regardless of whether the `SolverHandler`'s `UpdateSolver` is True. This is done by calling the `HandConstraintPalmUp`'s `StartWorldLockReattachCheckCoroutine()` function, after it's been world-locked (which in this case, is effectively setting the SolverHandler's UpdateSolver to False).

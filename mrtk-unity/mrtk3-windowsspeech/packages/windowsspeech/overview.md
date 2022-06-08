@@ -14,7 +14,7 @@ The Windows Speech package adds `WindowsPhraseRecognitionSubsystem` to your proj
 
 For general information on `PhraseRecognitionSubsystem` in MRTK, please refer to the documentation [here](../../../mrtk3-core/packages/core/subsystems/phraserecognitionsubsystem).
 
-> [!NOTE] 
+> [!NOTE]
 > As the name suggests, `WindowsPhraseRecognitionSubsystem` only works on the Windows standalone and UWP platforms.
 
 ## Setup and Usage

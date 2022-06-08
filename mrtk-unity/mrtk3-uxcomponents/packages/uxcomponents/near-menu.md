@@ -15,7 +15,7 @@ Near Menu is a common pattern for a group of UI elements that can be manipulated
 
 For the most commonly used actions, consider using a [hand menu](hand-menu.md). Near menus are better for less commonly used actions, as it can host larger content, bigger buttons, and can passively follow the user out-of-view.
 
->[!NOTE]
+> [!NOTE]
 > The hand menu prefabs are currently built using the non-canvas controls. They will soon be rebuilt using the [Canvas components](../../../mrtk3-uxcore/packages/uxcore/canvas-ui.md) and auto-layout system as detailed in the [Button Group](button-group.md) documentation.
 
 ## Interaction behavior
@@ -29,7 +29,6 @@ For the most commonly used actions, consider using a [hand menu](hand-menu.md). 
 **NearMenuExamples.unity** scene demonstrates various sizes of near menu configuration examples. You can find the menu examples as prefabs.
 
 ![Near Menu Example Scene](../../../mrtk3-overview/images/UXBuildingBlocks/NearMenu/MRTK_Examples_NearMenu_Scene.png)
-
 
 - **NearMenu3x1.prefab**
 - **NearMenu3x2.prefab**
@@ -50,9 +49,10 @@ Near Menu prefabs are made with the following MRTK components.
 
 ## Scripts
 
-Tag-along behavior is achieved with RadialView solver script. 
+Tag-along behavior is achieved with RadialView solver script.
+
 - **Move and Rotate Lerp Time** are set to 0.5 for delayed smooth movement, which creates comfortable leashing experience.
-- **Use Fixed Vertical Position** places the menu 35 cm below the users headset, which allows the user to focus on target content. 
+- **Use Fixed Vertical Position** places the menu 35 cm below the users headset, which allows the user to focus on target content.
 - **Min and Max Distances** places the menu between 30-60 cm from the user for comfortable near-range interactions.
 
 ![RadialView](../../../mrtk3-overview/images/UXBuildingBlocks/NearMenu/MRTK_UX_NearMenu_TagAlong.png)
@@ -62,5 +62,3 @@ When the user grabs the manipulation bar, it triggers Pin Button's **ForceSetTog
 ![Manipulation Bar 1](../../../mrtk3-overview/images/UXBuildingBlocks/NearMenu/MRTK_UX_NearMenu_Grabber.png)
 
 ![Manipulation Bar 2](../../../mrtk3-overview/images/UXBuildingBlocks/NearMenu/MRTK_UX_NearMenu_Pin.png)
-
-
