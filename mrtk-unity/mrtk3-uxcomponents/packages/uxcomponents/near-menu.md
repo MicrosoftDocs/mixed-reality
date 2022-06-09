@@ -1,5 +1,5 @@
 ---
-title: Near Menu
+title: Near Menu | MRTK3
 description: Hand menus in MRTK3
 author: Zee2
 ms.author: finnsinclair
@@ -7,22 +7,22 @@ ms.date: 4/15/2022
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, Hand menu, UI
 ---
 
-# Near Menu
+# Near Menu | MRTK3
 
 ![Near Menu](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_NearMenu.png)
 
-Near Menu is a common pattern for a group of UI elements that can be manipulated, moved, and can follow the user. Since it's loosely coupled with the user, it doesn't disturb the user's interaction with the target content. The user can use the 'Pin' button to world-lock/unlock the menu. The menu can be grabbed and placed at a specific position in the world.
+Near Menu is a common pattern for a group of UI elements that can be manipulated and moved and can follow the user. Since it's loosely coupled with the user, it doesn't disturb the user's interaction with the target content. The user can use the 'Pin' button to world-lock/unlock the menu. The menu can be grabbed and placed at a specific position in the world.
 
-For the most commonly used actions, consider using a [hand menu](hand-menu.md). Near menus are better for less commonly used actions, as it can host larger content, bigger buttons, and can passively follow the user out-of-view.
+For the most commonly used actions, consider using a [hand menu](hand-menu.md). Near menus are better for less commonly used actions, as it can host larger content and bigger buttons and can passively follow the user out-of-view.
 
->[!NOTE]
-> The hand menu prefabs are currently built using the non-canvas controls. They will soon be rebuilt using the [Canvas components](../../../mrtk3-uxcore/packages/uxcore/canvas-ui.md) and auto-layout system as detailed in the [Button Group](button-group.md) documentation.
+> [!NOTE]
+> The hand menu prefabs are currently built using the non-Canvas controls. They will soon be rebuilt using the [Canvas components](../../../mrtk3-uxcore/packages/uxcore/canvas-ui.md) and auto-layout system as detailed in the [Button Group](button-group.md) documentation.
 
 ## Interaction behavior
 
 - **Tag-along**: The menu follows you and stays within 30-60 cm range from the user for the near interactions.
 - **Pin**: Using the 'Pin' button, the menu can be world-locked and released.
-- **Grab and move**: The menu is always grabbable and movable. The menu will be pinned(world-locked) when grabbed and released regardless of the previous state.
+- **Grab and move**: The menu is always grabbable and movable. The menu will be pinned (world-locked) when grabbed and released regardless of the previous state.
 
 ## Example scene and Prefabs
 
@@ -52,7 +52,7 @@ Near Menu prefabs are made with the following MRTK components.
 
 Tag-along behavior is achieved with RadialView solver script. 
 - **Move and Rotate Lerp Time** are set to 0.5 for delayed smooth movement, which creates comfortable leashing experience.
-- **Use Fixed Vertical Position** places the menu 35 cm below the users headset, which allows the user to focus on target content. 
+- **Use Fixed Vertical Position** places the menu 35 cm below the user's headset, which allows the user to focus on target content. 
 - **Min and Max Distances** places the menu between 30-60 cm from the user for comfortable near-range interactions.
 
 ![RadialView](../../../mrtk3-overview/images/UXBuildingBlocks/NearMenu/MRTK_UX_NearMenu_TagAlong.png)

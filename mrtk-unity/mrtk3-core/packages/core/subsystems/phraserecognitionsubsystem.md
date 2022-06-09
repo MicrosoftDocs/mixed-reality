@@ -1,5 +1,5 @@
 ---
-title: PhraseRecognitionSubsystem Overview
+title: Core Subsystem PhraseRecognitionSubsystem | MRTK3
 description: Info on the MRTK3 subsystem responsible for phrase recognition
 author: MaxWang-MS
 ms.author: wangmax
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, phrase, speech, phrase recognition, speech recognition, Mixed Reality Toolkit
 ---
 
-# Overview of PhraseRecognitionSubsystem
+# Core Subsystem: PhraseRecognitionSubsystem | MRTK3
 
 > [!NOTE]
 > For general information on subsystems in MRTK3, please see [here](../../../../mrtk3-overview/architecture/subsystems.md).

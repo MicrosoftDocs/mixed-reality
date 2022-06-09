@@ -1,5 +1,5 @@
 ---
-title: Mixed Reality Design Language
+title: Mixed Reality Design Language | MRTK3
 description: Exploring the new Mixed Reality Design Language.
 author: Zee2
 ms.author: finnsinclair
@@ -7,13 +7,13 @@ ms.date: 4/15/2022
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, design, UI, design language, UX
 ---
 
-# Mixed Reality Design Language
+# Mixed Reality Design Language | MRTK3
 
 ![Button Main](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_Button.png)
 
-Over the last several years, we've shipped many different devices and form factors with different display types, resolutions, and user experiences. We've developed a set of a best practices for designing great experiences in Mixed Reality, but these best practices continue to evolve as we test and evaluate designs across different products and devices. 
+Over the last several years, we've shipped many different devices and form factors with different display types, resolutions, and user experiences. We've developed a set of best practices for designing great experiences in mixed reality, but these best practices continue to evolve as we test and evaluate designs across different products and devices. 
 
-We're excited to introduce the latest Mixed Reality Design Language - first showcased in the Mesh app for HoloLens - to the public through MRTK's building blocks. The new design changes aim to empower developers to build production-ready applications that are more beautiful, usable, and portable. 
+We're excited to introduce the latest Mixed Reality Design Language--first showcased in the Mesh app for HoloLens--to the public through MRTK's building blocks. The new design changes aim to empower developers to build production-ready applications that are more beautiful, usable, and portable. 
 
 ## Improvements
 - Improved visual feedback for multi-modal input
@@ -26,15 +26,15 @@ We're excited to introduce the latest Mixed Reality Design Language - first show
 
 **Geometry**
 
-![Geometry](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Elements_Gemoetry.png)
+![Geometry](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Elements_Geometry.png)
 
-Geometry describes the shape, size, and position of UI elements. These fundamental design elements help experiences feel coherent across the entire design system. The new design language introduces geometry with rounded corners that create a more approachable, engaging, and modern experience. The geometry is also full three-dimensional, with a tangible thickness that helps ground the designs in reality. It also reminds the user that these elements are real, physical objects that exist within their 3D space, and can be attached to objects, grabbed, moved, and manipulated.
+Geometry describes the shape, size, and position of UI elements. These fundamental design elements help experiences feel coherent across the entire design system. The new design language introduces geometry with rounded corners that create a more approachable, engaging, and modern experience. The geometry is also fully three-dimensional, with a tangible thickness that helps ground the designs in reality. It also reminds the user that these elements are real, physical objects that exist within their 3D space, and can be attached to objects and grabbed, moved, or manipulated.
 
 **Color**
 
 ![Backplate color](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Elements_Color.png)
 
-Color helps users focus on their tasks by indicating a visual hierarchy and structure between user interface elements. The new design language uses a darker color scheme to minimize eye fatigue, while still remaining bright and opaque enough on additive displays to aid confidence in direct hand interactions.
+Color helps users focus on their tasks by indicating a visual hierarchy and structure between user interface elements. The new design language uses a darker color scheme to minimize eye fatigue while still remaining bright and opaque enough on additive displays to strengthen user confidence when they make direct hand interactions.
 
 **Light and Materials**
 
@@ -52,13 +52,13 @@ Layering is the concept of overlapping one surface with another. The Mixed Reali
 
 ![Iconography](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Elements_Iconography.png)
 
-Iconography is a set of visual images and symbols that help users understand and navigate your app. The Mixed Reality design language uses Windows 11's iconography. Every glyph in our system icon font has been redesigned to embrace a softer geometry and more modern metaphors.  
+Iconography is a set of visual images and symbols that help users understand and navigate your app. The Mixed Reality Design Language uses Windows 11's iconography. Every glyph in our system icon font has been redesigned to embrace a softer geometry and more modern metaphors.  
 
 **Typography**
 
 ![Typography](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Elements_Typography.png)
 
-As the visual representation of language, typography's main task is to communicate information. The design language's type ramp helps you create structure and hierarchy in your content to maximize legibility and readability in your UI.
+As the visual representation of language, typography's main task is to communicate information. The Design Language's type ramp helps you create structure and hierarchy in your content to maximize legibility and readability in your UI.
 
 ## Mixed Reality Design Language in MRTK3
 

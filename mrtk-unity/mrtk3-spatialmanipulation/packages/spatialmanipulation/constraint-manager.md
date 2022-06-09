@@ -1,5 +1,5 @@
 ---
-title: Constraints
+title: Constraints | MRTK3
 description: Overview of constraints and the constraints manager in MRTK3
 author: Zee2
 ms.author: finnsinclair
@@ -8,19 +8,19 @@ ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Constraints, ConstraintManager
 ---
 
-# Constraints
+# Constraints | MRTK3
 
-The `ConstraintManager` allows you to apply a set of constraint components to a transform. By default, the constraint manager will automatically collect all attached [constraint components](#transform-constraints) and apply them to the target object. However, users can also opt to configure the list of applied constraints manually, to only allow a subset of attached constraints to be used.
+`ConstraintManager` allows you to apply a set of constraint components to a transform. By default, the constraint manager will automatically collect all attached [constraint components](#transform-constraints) and apply them to the target object. However, users can also opt to configure the list of applied constraints manually and only allow a subset of attached constraints to be used.
 
 > [!NOTE]
-> MRTK3 currently offers a limited subset of the constraints from MRTK 2.x. We are currently investigating a refactor of the Constraints system to unify the developer workflow with Solvers and Elastics. Stay tuned!
+> MRTK3 currently offers a limited subset of the constraints from MRTK 2.x. We're currently investigating a refactor of the Constraints system to unify the developer workflow with Solvers and Elastics. Stay tuned!
 
 Currently, the following MRTK UX elements support constraints:
 
 - [Bounds control](bounds-control.md)
 - [Object manipulator](object-manipulator.md)
 
-Constraint manager can operate in two modes:
+The constraint manager can operate in two modes:
 
 - Auto constraint selection
 - Manual constraint selection
@@ -29,7 +29,7 @@ Constraint manager can operate in two modes:
 
 ![Auto Selection mode](images/AutoSelection.png)
 
-The default **Auto** mode will list all attached constraint components. You can jump straight to the component in the inspector using the **Go to component** buttons, or add a new constraint from the dropdown.
+The default **Auto** mode will list all attached constraint components. You can jump straight to the component in the inspector using the **Go to component** buttons or add a new constraint from the dropdown.
 
 ### Manual constraint selection
 
@@ -42,13 +42,13 @@ If the constraint manager is set to manual mode, only constraints linked in the 
 
 ## Execution order
 
-The execution order of each constraint can be defined in the **Execution Order** option on the constraint itself. The order will be reflected in the list displayed in the constraint manager. Some constraints will behave differently when they are combined in different orders, so bear in mind the priorities of each constraint and adjust their order accordingly.
+The execution order of each constraint can be defined in the **Execution Order** option on the constraint itself. The order will be reflected in the list displayed in the constraint manager. Some constraints will behave differently when they're combined in different orders, so keep in mind the priorities of each constraint and adjust their order accordingly.
 
 ## Transform constraints
 
 You can use constraints to limit manipulation in some way. For example, some applications may require rotation and that the object remain upright. In this case, a `RotationAxisConstraint` can be added to the object and used to limit rotation to y-axis rotation. MRTK provides several constraints, all of which are described below.
 
-It's also possible to define new constraints and use them to create unique manipulation behavior that may be needed for some applications. To do this, create a script that inherits from [`TransformConstraint`](xref:Microsoft.MixedReality.Toolkit.UI.TransformConstraint) and implement the abstract `ConstraintType` property and the abstract `ApplyConstraint` method. Your new constraint should appear in the dropdown, and should be registered in the Constraint Manager automatically when added to the object.
+It's also possible to define new constraints and use them to create unique manipulation behavior that may be needed for some applications. To do this, create a script that inherits from [`TransformConstraint`](xref:Microsoft.MixedReality.Toolkit.UI.TransformConstraint) and implement the abstract `ConstraintType` property and the abstract `ApplyConstraint` method. Your new constraint should appear in the dropdown, and should be registered in the constraint manager automatically when added to the object.
 
 All of the constraints provided by MRTK share the following properties:
 

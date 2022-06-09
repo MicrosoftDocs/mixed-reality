@@ -1,5 +1,5 @@
 ---
-title: BoundsControl
+title: BoundsControl | MRTK3
 description: Overview on Bounds Control in MRTK3
 author: Zee2
 ms.author: finnsinclair
@@ -7,7 +7,7 @@ ms.date: 4/15/2022
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, Bounds Control, BoundsControl
 ---
 
-# BoundsControl
+# BoundsControl | MRTK3
 
 ![Bounds control](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_BoundsControl.png)
 
@@ -22,7 +22,7 @@ The new visuals offer streamlined visual feedback that illustrates the user's in
 Simply add BoundsControl to an existing object and populate the `BoundsVisualsPrefab` reference with the bounds visuals you'd like to use. We provide a few different pre-built bounds visuals for you to use.
 
 > [!IMPORTANT]
-> We strongly recommend developers add **MinMaxScaleConstraint** to prevent the user from scaling the object to an unusably small or large size.
+> We strongly recommend that developers add **MinMaxScaleConstraint** to prevent the user from scaling the object to an unusably small or large size.
 
 To use the bounds visuals' intention and focus effects, you must have a `StatefulInteractable` on the object. If the interactable isn't automatically detected, you can specify the connection in the BoundsControl inspector.
 
@@ -64,7 +64,7 @@ We offer several pre-built bounds visuals for use with BoundsControl. Developers
 
 ## Interaction design
 
-In the current iteration, we offer a simple activation/deactivation interaction. By clicking the bounds in-place (i.e., selecting the object, not moving it, and releasing it) the handles can be toggled on and off. The distance tolerance for this check can be adjusted with `DragToggleThreshold`, and this activation behavior itself can be enabled/disabled with the `ToggleHandlesOnClick` property.
+In the current iteration, we offer a simple activation/deactivation interaction. By clicking the bounds in-place (in other words, selecting the object, not moving it, and releasing it) the handles can be toggled on and off. The distance tolerance for this check can be adjusted with `DragToggleThreshold`, and this activation behavior itself can be enabled/disabled with the `ToggleHandlesOnClick` property.
 
 ![Bounds control toggle](../../../mrtk3-overview/images/UXBuildingBlocks/BoundsControl/MRTK_BoundsControl_Toggle.png)
 
@@ -74,7 +74,7 @@ The handles can be manually activated or deactivated from code at any time by se
 
 BoundsControl will attempt to calculate the bounds of the associated object automatically. If a specific bounds shape is desired, check the `OverrideBounds` option and specify the bounds object directly. The bounds calculation system will only calculate the bounds for the specified override object.
 
-The `BoundsCalculationMethod` influences how the algorithm calculates bounds. If the visual shape of the enclosed object does not necessarily match the collider, or vice versa, developers can adjust the calculation method to prefer using renderer or collider bounds, or a combination of both.
+The `BoundsCalculationMethod` influences how the algorithm calculates bounds. If the visual shape of the enclosed object doesn't necessarily match the collider, or the opposite is true, developers can adjust the calculation method to prefer using renderer or collider bounds, or a combination of both.
 
 Regardless of calculation method, the `Padding` option will pad the bounds uniformly in world units. When the bounds are flattened, the flattened axis is not padded.
 
@@ -86,6 +86,6 @@ BoundsControl can be used for manipulating 2D content as well. If `FlattenMode` 
 
 ## Manipulation options
 
-The manipulation behaviour of BoundsControl can be adjusted in several ways. The `RotateAnchor` option controls the pivot point around which the BoundsControl is rotated when using the rotation affordances. Some objects' pivot point is far from their visual center, which can cause discomfort and imprecision when manipulating with the rotation handles. Specifying `BoundsCenter` for the `RotateAnchor` will cause the BoundsControl to always rotate around the geometric center of the computed bounds rather than the actual origin of the object.
+The manipulation behaviour of BoundsControl can be adjusted in several ways. The `RotateAnchor` option controls the pivot point around which the BoundsControl is rotated when using the rotation affordances. Some objects' pivot points are far from their visual center, which can cause discomfort and imprecision when manipulating with the rotation handles. Specifying `BoundsCenter` for the `RotateAnchor` will cause the BoundsControl to always rotate around the geometric center of the computed bounds rather than the actual origin of the object.
 
 Scaling behaviour can be set to either `Uniform` or `Non Uniform`. In Uniform mode, all axes of the object are scaled together, maintaining aspect ratio and appearance. Non-uniform scaling allows each axis of the object to be scaled independently.

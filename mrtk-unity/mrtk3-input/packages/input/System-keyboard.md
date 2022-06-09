@@ -1,5 +1,5 @@
 ---
-title: System keyboard in MRTK3
+title: System keyboard | MRTK3
 description: System keyboard in MRTK3
 author: MaxWang-MS
 ms.author: wangmax
