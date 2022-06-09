@@ -18,11 +18,11 @@ This page describes how to deploy your Unity Project with MRTK onto a HoloLens 2
 
 ## Deployment Prerequisites
 
-1. Ensure that your [project settings](../setup.md#5-configure-openxr-related-settings) are configured correctly to use the OpenXR pipeline and MRTK's feature set. **These features are required to deploy your project onto Hololens** 
+1. Ensure that your [project settings](../setup.md#5-configure-openxr-related-settings) are configured correctly to use the OpenXR pipeline and MRTK's feature set. **These features are required to deploy your project onto Hololens**.
 
 ## Deploying to Device
 
 1. After you have the project configured, proceed to [Build the Unity Project](/mixed-reality/develop/unity/build-and-deploy-to-hololens#build-the-unity-project).
 
-1. Once built, you will need to deploy the project through [Visual Studio](/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2).
+1. Once built, you'll need to deploy the project through [Visual Studio](/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2).
 

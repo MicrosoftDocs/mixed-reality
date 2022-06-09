@@ -12,8 +12,8 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, packag
 
 Microsoft MRTK3 is distributed as a set of packages that are imported into Unity using the Mixed Reality Feature Tool for Unity and the Unity Package Manager (UPM). These packages enable developers to customize the MRTK within their projects.
 
->[!Note]
->For the MRTK3 Private Preview, the Mixed Reality Feature Tool will not be used. For more information on importing MRTK packages, please review [Initial setup](../setup.md).
+> [!Note]
+> For the MRTK3 Private Preview, the Mixed Reality Feature Tool won't be used. For more information on importing MRTK packages, please review [Initial setup](../setup.md).
 
 ## Dependencies
 
@@ -23,8 +23,8 @@ The following diagram illustrates the relationship between MRTK packages and som
 
 ![MRTK3 Package Graph](../images/MRTK3_Packages.png)
 
->[!Note]
->When importing packages via the Mixed Reality Feature Tool, dependency management is automatically performed.
+> [!Note]
+> When importing packages using the Mixed Reality Feature Tool, dependency management is automatically performed.
 
 The following table describes the Mixed Reality Toolkit package dependencies.
 
@@ -47,8 +47,8 @@ The following table describes the Mixed Reality Toolkit package dependencies.
 
 Some MRTK packages contain tests used to validate the included components. In some cases, these tests require additional MRTK packages not asserted as dependencies.
 
->[!Note]
->When importing packages into Unity, test assemblies are not compiled by default. To enable compilation of tests, please use the `testables` element of the project's `manifest.json` file.
+> [!Note]
+> When importing packages into Unity, test assemblies are not compiled by default. To enable compilation of tests, please use the `testables` element of the project's `manifest.json` file.
 
 In order to place minimal overhead on applications importing the Mixed Reality Toolkit, dependencies are asserted only for runtime requirements. The following table describes the additional packages required to enable compiling and running the included test assemblies.
 
