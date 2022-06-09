@@ -140,7 +140,7 @@ If your headset has a knob to adjust calibration, adjust its calibration setting
 
 ## The content in my headset appears choppy
 
-The system may not be able to render content to the headset fast enough, resulting in a low framerate. This may be due to your system's resources being consumed by other apps or processes, or your application being too demanding for your system.
+The system may not be able to render content to the headset fast enough, resulting in a low framerate. This may be due to your system's resources being consumed by other apps or processes, or your application being too demanding for your system. To fix:
 
 1. Open Task Manager to make sure that your PC has enough compute resources. Your memory should have at least 400 MB of free space available, and disk IO should be below 80%. Close all unneeded programs to free up your memory and lower background CPU and disk usage.
 2. Reduce detail settings in your application.
@@ -149,7 +149,10 @@ The system may not be able to render content to the headset fast enough, resulti
 
 ## The environment moves smoothly, but my point of view in the environment keeps shifting or jittering.
 
-1. Make sure the room has enough light.
-2. Go to **Settings > Mixed Reality > Environment** to clear your environment data.
-3. Set up your room boundary in the Mixed Reality Portal.
-4. If the problem persists, contact [customer support](https://support.microsoft.com/).
+Your headset is having issues tracking your playspace. To fix:
+
+1 Make sure the room has enough light.
+2 Set up your room boundary in the Mixed Reality Portal again.
+3 If it still doesn't work, go to **Settings > Mixed Reality > Environment** to clear your environment data.
+4 Set up your room boundary in the Mixed Reality Portal.
+5 If the problem persists, contact [customer support](https://support.microsoft.com/).
