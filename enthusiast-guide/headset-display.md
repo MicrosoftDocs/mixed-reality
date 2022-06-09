@@ -14,21 +14,21 @@ appliesto:
 
 ## My headset displays are black
 
-* Check your system performance and stability:
-    * Use the Task Manager to see if any processes are maxing out your system's CPU, GPU, or disk drives.
+* Check your PC's performance and stability:
+    * Use the Task Manager to see if any processes are maxing out your CPU, GPU, or disk drives.
     * Check the “Application” and “System” logs in **Event Viewer > Windows Logs** to see if an app is crashing and generating Windows Error Reporting (WER) reports.
     * Check Windows Update to make sure your version of Windows is current. You may have to select "Check for Updates" multiple times.
 * Check app and game stability:
-    * Ensure that your system meets the minimum system requirements of any app or game that's not running correctly.
+    * Ensure that your PC meets the minimum system requirements of any app or game that's not running correctly.
     * Make sure your GPU driver version is recent, and check for any new performance and compatibility issues and regressions on new drivers.
     * If you're using SteamVR apps and games, make sure SteamVR and the Windows Mixed Reality for SteamVR components are up to date.
 * Check cable connectivity and compatibility issues:
     * Make sure that the HDMI or DisplayPort cable is plugged in all the way.
     * If you're using an HDMI adapter (for example, a Mini DisplayPort to HDMI adapter), make sure it's compatible with Windows Mixed Reality. The adapter must support HDMI 2.0, and there are many older adapters that only support 1080p. See [Recommended adapters for Windows Mixed Reality](recommended-adapters-for-windows-mixed-reality-capable-pcs.md).
-    * Plug order can be important. Connect the HDMI or DisplayPort adapter to your system before connecting the headset to the adapter, especially if you're using a USB-C to HDMI or USB-C to Displayport adapter.
+    * Plug order can be important. Connect the HDMI or DisplayPort adapter to your PC before connecting the headset to the adapter, especially if you're using a USB-C to HDMI or USB-C to Displayport adapter.
     * Try removing extension cables if you're using them.
 * Check port compatibility:
-    * Test a display by connecting it with the port you're using for your headset. Some systems may have more than one port for connecting displays, but not all of them may be active.
+    * Test a display by connecting it with the port you're using for your headset. Some PC's may have more than one port for connecting displays, but not all of them may be active.
     * Some PC's may contain ports for both an integrated graphics processing unit (iGPU) and a discrete graphics processing unit (dGPU). Make sure that your headset's HDMI or DisplayPort cable is connected to your dGPU.<ul>
         * On desktop PC's, dGPU ports can be identified by locating the dGPU bracket containing one or more rows of ports that mainly include HDMI or DisplayPort ports. The dGPU bracket is likely located at the rear of the desktop and secured to the case with screws. This bracket lies below your motherboard's ports (USB, LAN, audio, etc) that are surrounded by a metal shield.
         * On laptops that include both an iGPU and dGPU, dGPU ports can be more difficult to identify and are not always included. You can identify if a port connects to your dGPU by connecting a display to it:</ul><ol>
@@ -100,12 +100,12 @@ If you see "HoloLens Sensors" with a yellow exclamation mark in Device Manager, 
 
 This issue is likely caused by your headset's or graphics cards drivers or Windows software experiencing problems with adjusting the displayed content to appear correctly on your headset. To fix this:
 
-* Turn off any features that may allow your system to use a pixel resolution higher than your display. These features are present in your graphics card manufacturer's software. You can access this software by doing the following:
-    * Right click on your desktop background > Select "Show more options" (only required for Windows 11 systems) > Select the name of the application matching the name of your graphics card's manufacturer.  
+* Turn off any features that may allow your PC to use a pixel resolution higher than your display. These features are present in your graphics card manufacturer's software. You can access this software by doing the following:
+    * Right click on your desktop background > Select "Show more options" (only required for Windows 11) > Select the name of the application matching the name of your graphics card's manufacturer.  
 * Reinstall your headset drivers.
     1 Go to Device Manager.
     2 Expand the Mixed Reality devices section. 
-    3 Right click and uninstall your Mixed Reality device's drivers from your system. 
+    3 Right click and uninstall your Mixed Reality device's drivers from your PC. 
     4 Disconnect your headset from your PC and plug it back in after a restart.
 * Reset the external display cache in the registry. 
     1 Open Registry Editor and navigate to **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\GraphicsDrivers**. 
@@ -115,7 +115,7 @@ This issue is likely caused by your headset's or graphics cards drivers or Windo
 * Reinstall your graphics drivers.
     1 Go to Device Manager.
     2 Expand the Display adapters section. 
-    3 Right click and uninstall your graphics card's drivers from your system, along with the driver software.
+    3 Right click and uninstall your graphics card's drivers from your PC, along with the driver software.
 * Completely uninstall Windows Mixed Reality and its related components.
     1 Go to **Settings > Mixed reality > Uninstall**.
     2 Uninstall Windows Mixed Reality. Follow any instructions if shown.
@@ -140,16 +140,16 @@ If your headset has a knob to adjust calibration, adjust its calibration setting
 
 ## The content in my headset appears choppy
 
-The system may not be able to render content to the headset fast enough, resulting in a low framerate. This may be due to your system's resources being consumed by other apps or processes, or your application being too demanding for your system. To fix:
+Your PC may not be able to render content to the headset fast enough, resulting in a low framerate. This may be due to your PC's system resources being consumed by other apps or processes, or your application being too demanding for your PC. To fix:
 
-1. Open Task Manager to make sure that your PC has enough compute resources. Your memory should have at least 400 MB of free space available, and disk IO should be below 80%. Close all unneeded programs to free up your memory and lower background CPU and disk usage.
+1. Open Task Manager to make sure that your PC has enough system resources. Your memory should have at least 400 MB of free space available, and disk IO should be below 80%. Close all unneeded programs to free up your memory and lower background CPU and disk usage.
 2. Reduce detail settings in your application.
 3. Go to **Settings > Mixed Reality > Headset Display** to reduce the amount of detail shown in the Windows Mixed Reality home.
 4. Make sure you have the latest graphics drivers for your hardware. See the [graphics driver section](before-you-start.md#make-sure-you-have-a-compatible-graphics-driver).
 
 ## The environment moves smoothly, but my point of view in the environment keeps shifting or jittering.
 
-Your headset is having issues tracking your playspace. To fix:
+The tracking system is having issues with tracking your playspace. To fix:
 
 1 Make sure the room has enough light.
 2 Set up your room boundary in the Mixed Reality Portal again.
