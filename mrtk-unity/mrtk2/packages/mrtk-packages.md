@@ -113,14 +113,14 @@ These tools are located in the **Mixed Reality Toolkit > Utilities** menu in the
 | Folder | Component | Description |
 | --- | --- | --- |
 | MRTK/Tools | |
-| | BuildWindow | Tool that helps simplify the process of building and deploying UWP applications. |
+| | [BuildWindow](../features/tools/build-window.md) | Tool that helps simplify the process of building and deploying UWP applications. |
 | | [DependencyWindow](../features/tools/dependency-window.md) | Tool that creates a dependency graph of assets in a project. |
 | | [ExtensionServiceCreator](../features/tools/extension-service-creation-wizard.md) | Wizard to assist in creating extension services. |
 | | [MigrationWindow](../features/tools/migration-window.md) | Tool that assists in updating code that uses deprecated MRTK components.  |
 | | [OptimizeWindow](../features/tools/optimize-window.md) | Utility to help automate configuring a mixed reality project for the best performance in Unity. |
 | | ReserializeAssetsUtility | Provides support for reserializing specific Unity files. |
 | | [RuntimeTools/Tools/ControllerMappingTool](../features/tools/controller-mapping-tool.md) | Utility enabling developers to quickly determine Unity mappings for hardware controllers. |
-| | ScreenshotUtility | Enables capturing application images in the Unity editor. |
+| | [ScreenshotUtility](../features/tools/screenshot-utility) | Enables capturing application images in the Unity editor. |
 | | TextureCombinerWindow | Utility to combine graphics textures. |
 | | [Toolbox](../features/ux-building-blocks/toolbox.md) | UI that makes it easy to discover and use MRTK UX components. |
 
