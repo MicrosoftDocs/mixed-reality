@@ -23,7 +23,7 @@ Make sure you have all the tools in this link before starting:
 
 ## Path 1: Clone the repository and try out the sample Unity Project
 
-The easiest way of acquiring and trying out MRTK3 is to do so via our pre-configured project with references to all of the current MRTK3 packages. Please clone our project at [our GitHub repo](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk3) and checkout the `mrtk3` branch. After that you can simply launch Unity (2020.3.35f1 or newer) on the `MRTKDevTemplate` project under `UnityProjects` and start playing with the [sample scenes](scenes.md) in Editor, via remoting or deployed to devices.
+The easiest way of acquiring and trying out MRTK3 is to do so via our pre-configured project with references to all of the current MRTK3 packages. Please clone our project at [our GitHub repo](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk3) and checkout the `mrtk3` branch. After that you can simply launch Unity (2020.3.35f1 or newer / 2021.3.4f1 or newer) on the `MRTKDevTemplate` project under `UnityProjects` and start playing with the [sample scenes](scenes.md) in Editor, via remoting or deployed to devices.
 
 For information on the sample scenes included in the preview, please see [Using and creating scenes](scenes.md).
 
@@ -31,7 +31,7 @@ For information on the sample scenes included in the preview, please see [Using 
 
 ### 1. Create a new Unity project
 
-Create a new Unity project with Unity 2020.3.34f1 or newer / Unity 2021.3.2f1 or newer. Close the Unity project before proceeding to the next step.
+Create a new Unity project with Unity 2020.3.35f1 or newer / Unity 2021.3.4f1 or newer. Close the Unity project before proceeding to the next step.
 
 ### 2. Import required dependencies and MRTK3 packages with Mixed Reality Feature Tool
 
