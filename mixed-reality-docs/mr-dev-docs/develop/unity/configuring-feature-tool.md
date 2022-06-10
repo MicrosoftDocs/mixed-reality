@@ -49,7 +49,7 @@ Enable this setting to acquire preview releases.
 * By default, preview releases are not shown in the Mixed Reality Feature Tool 
 
 > [!NOTE]
-> A preview release is defined as containing the **"-preview"** designation in the package version.
+> A preview release is defined as containing the **"-preview"** or **"-pre"** designation in the package version.
 
 ### Show early access program features
 

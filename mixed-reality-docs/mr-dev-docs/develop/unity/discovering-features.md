@@ -22,7 +22,7 @@ The sections in this article outline how to find feature packages in the Mixed R
 The Mixed Reality Feature Tool displays a collection of feature categories to make it easy to find what you want. Expand any of the categories to display its collection of available features.
 
 > [!NOTE]
-> If you can't find the functionality you're looking for, check **Other features**.
+> If you cannot locate the functionality you're looking for, please check **Other features**.
 
 ![Feature category](images/FeatureCategory.png)
 
