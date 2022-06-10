@@ -120,7 +120,7 @@ These tools are located in the **Mixed Reality Toolkit > Utilities** menu in the
 | | [OptimizeWindow](../features/tools/optimize-window.md) | Utility to help automate configuring a mixed reality project for the best performance in Unity. |
 | | ReserializeAssetsUtility | Provides support for reserializing specific Unity files. |
 | | [RuntimeTools/Tools/ControllerMappingTool](../features/tools/controller-mapping-tool.md) | Utility enabling developers to quickly determine Unity mappings for hardware controllers. |
-| | [ScreenshotUtility](../features/tools/screenshot-utility) | Enables capturing application images in the Unity editor. |
+| | [ScreenshotUtility](../features/tools/screenshot-utility.md) | Enables capturing application images in the Unity editor. |
 | | TextureCombinerWindow | Utility to combine graphics textures. |
 | | [Toolbox](../features/ux-building-blocks/toolbox.md) | UI that makes it easy to discover and use MRTK UX components. |
 
