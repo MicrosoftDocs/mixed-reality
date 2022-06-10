@@ -52,7 +52,7 @@
       "ms.prod": "mixed-reality",
       "searchScope":[
         "Mixed Reality",
-        "Windows Mixed Reality"
+        "MRTK Unreal"
       ]
     },
     "fileMetadata": {
