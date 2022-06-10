@@ -26,5 +26,3 @@
   href: contributing/toc.yml
 - name: MRTK3 (Public Preview)
   href: ../mrtk3-overview/index.md
-- name: Archived docs (Pre-2.6)
-  href: https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/WelcomeToMRTK.html
