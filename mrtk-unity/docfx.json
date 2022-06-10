@@ -95,8 +95,8 @@
       "feedback_github_repo": "MicrosoftDocs/mixed-reality",
       "feedback_product_url": "https://docs.microsoft.com/windows/mixed-reality/give-us-feedback",
       "searchScope": [
-        "mixed-reality",
-        "mrtk-unity"
+        "Mixed Reality",
+        "MRTK"
       ]
     },
     "fileMetadata": {
@@ -140,8 +140,8 @@
         "./mrtk2/**/*.yml": "https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/WelcomeToMRTK.html"
       },
       "searchScope": {
-        "./mrtk2/**/*.md": ["mixed-reality","dest-mrtk2"],
-        "./mrtk2/**/*.yml": ["mixed-reality","dest-mrtk2"]
+        "./mrtk2/**/*.md": ["Mixed Reality","MRTK 2"],
+        "./mrtk2/**/*.yml": ["Mixed Reality","MRTK 2"],
       }
     },
     "template": [],
