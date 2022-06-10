@@ -49,7 +49,11 @@
       "breadcrumb_path": "/windows/mixed-reality/mrtk-unreal/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "feedback_system": "None",
-      "ms.prod": "mixed-reality"
+      "ms.prod": "mixed-reality",
+      "searchScope":[
+        "Mixed Reality",
+        "Windows Mixed Reality"
+      ]
     },
     "fileMetadata": {
       "monikerRange": {

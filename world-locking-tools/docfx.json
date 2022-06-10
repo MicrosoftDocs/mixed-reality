@@ -41,7 +41,10 @@
     "globalMetadata": {
       "breadcrumb_path": "/mixed-reality/world-locking-tools/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "feedback_system": "None",
+      "searchScope":[
+        "Mixed Reality"
+      ]
     },
     "fileMetadata": {},
     "template": [],
