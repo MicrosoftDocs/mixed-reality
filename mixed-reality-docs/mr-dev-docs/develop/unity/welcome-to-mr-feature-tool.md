@@ -26,7 +26,7 @@ Before you can run the Mixed Reality Feature Tool, you'll need:
 * [Windows 10](https://www.microsoft.com/software-download/windows10ISO)
 
 > [!NOTE]
-> The Mixed Reality Feature Tool currently only runs on Windows, but MacOS support is coming soon!
+> The Mixed Reality Feature Tool currently only runs on Windows.
 
 ## Download
 
@@ -41,18 +41,14 @@ Once you have your environment set up:
 
 ## Changes in this release
 
-Version 1.0.2103 Beta includes the following fixes:
+Version 1.0.2206.1-Preview includes the following fixes:
 
-* Improvements to download error detection.
-* Updates on how manifests are written to avoid failure to update correctly.
-* Escpaing has been removed from file paths in the project manifest.
+* Improvements to feed processing
+* Updated logging
 
 The following features have been added in this release:
 
-* The feature catalog is now cached. To check for new features and updates, please use the refresh button in Discovery.
-* Move project selection from the Import step to before Discovery.
-* Available packages are filtered by the project's specified Unity version.
-* The discovery view now displays currently installed packages.
+* Packages referenced in the project manifest can now be restored with one click.
 
 ## 1. Getting started
 
@@ -65,6 +61,11 @@ From the start page, you can:
 * [Configure](configuring-feature-tool.md) tool settings using the **gear icon** button
 * Use the **question mark** button to launch the default web browser and display our documentation
 * Select **Start** to begin discovering feature packages
+
+> [!NOTE]
+> If you will be using the MRTK3 public preview release in your project, you must enable `Show preview releases` in the `Feature` tab of settings.
+>
+> ![Recommended Feature Settings for MRTK3](images/FeatureToolSettings-Feature-MRTK3.png)
 
 ## 2. Selecting your Unity project
 
@@ -80,10 +81,15 @@ When you have located your project's folder, click the Open button to return to 
 > [!IMPORTANT]
 > The Mixed Reality Feature Tool performs validation to ensure that it has been directed to a Unity project folder. The folder must contain `Assets`, `Packages` and `Project Settings` folders.
 
-## 3. Discovering and acquiring feature packages
+Once the project has been selected, you can
 
-> [!NOTE]
-> Version 1.0.2103 Beta now caches the feature catalog contents whenever the server is accessed. This change enables fast access to available features, at the expense of displaying the absolute latest data. To update the catalog, please use the **Refresh** button.
+- **Restore Features**: download the Feature Tool shipped packages listed in the project manifest to **Packages/MixedReality** if they are not present there already. The feature is similar to `nuget restore` in concept. Typically you only need to perform this operation if you have a project (with Feature Tool packages) cloned from a repo configured to ignore tarball files. You can close the Feature Tool after restoring if you do not need to get new packages.
+
+**and/or**
+
+- **Discover Features**: proceed to the next page to select the packages you want to add to your project.
+
+## 3. Discovering and acquiring feature packages
 
 Features are grouped by category to make things easier to find. For example, the **Mixed Reality Toolkit** category has several features for you to choose from:
 
@@ -93,8 +99,7 @@ When the Mixed Reality Feature Tool recognizes previously imported feature(s), i
 
 ![Notification of imported feature](images/feature-tool-imported-note.png)
 
-
-Once you've made your choices, select **Get features** to fetch all the required packages from the catalog. For more information, please see [discovering and acquiring features](discovering-features.md).
+Once you've made your choices, select **Get features** to download all the required packages from the catalog. For more information, please see [discovering and acquiring features](discovering-features.md).
 
 ## 4. Importing feature packages
 
