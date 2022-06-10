@@ -12,4 +12,4 @@
       items:
       - name: MRTK3 Windows Speech
         tocHref: /windows/mixed-reality/mrtk-unity/mrtk3-windowsspeech/
-        topicHref: /windows/mixed-reality/mrtk-unity/mrtk3-windowsspeech/packages/windowsspeech/overview.md
+        topicHref: /windows/mixed-reality/mrtk-unity/mrtk3-windowsspeech/packages/windowsspeech/overview
