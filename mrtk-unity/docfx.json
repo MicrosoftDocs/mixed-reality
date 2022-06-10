@@ -130,6 +130,10 @@
         "./mrtk3-uxcore/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-uxcore/breadcrumb/toc.json",
         "./mrtk3-windowsspeech/**/*.md": "/windows/mixed-reality/mrtk-unity/mrtk3-windowsspeech/breadcrumb/toc.json",
         "./mrtk3-windowsspeech/**/*.yml": "/windows/mixed-reality/mrtk-unity/mrtk3-windowsspeech/breadcrumb/toc.json"
+      },
+      "archive_url": {
+        "./mrtk2/**/*.md": "https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/WelcomeToMRTK.html",
+        "./mrtk2/**/*.yml": "https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/WelcomeToMRTK.html"
       }
     },
     "template": [],
