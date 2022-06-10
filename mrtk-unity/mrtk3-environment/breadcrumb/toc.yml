@@ -12,4 +12,4 @@
       items:
       - name: MRTK3 Environment
         tocHref: /windows/mixed-reality/mrtk-unity/mrtk3-environment/
-        topicHref: /windows/mixed-reality/mrtk-unity/mrtk3-environment/packages/environment/overview.md
+        topicHref: /windows/mixed-reality/mrtk-unity/mrtk3-environment/packages/environment/overview
