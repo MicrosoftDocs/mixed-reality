@@ -35,6 +35,9 @@ Create a new Unity project with Unity 2020.3.35f1 or newer / Unity 2021.3.4f1 or
 
 ### 2. Import required dependencies and MRTK3 packages with Mixed Reality Feature Tool
 
+> [!NOTE]
+> Please download [the latest version of Mixed Reality Feature Tool](https://aka.ms/mrfeaturetool) first. Then after launching the feature tool, click on the settings button on the lower left corner and go to the `Feature` tab. Ensure `Show preview releases` is checked, click on OK, and then click on `Start` to proceed. You should now be able to see a MRTK3 category listed on the `Discover Features` page.
+
 There are a handful of packages that MRTK3 uses which are not part of this preview. To obtain these, please use the [`Mixed Reality Feature Tool`](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) and select the latest versions of the following in the Discover Features step:
 
 - **Platform Support → Mixed Reality OpenXR Plugin**
