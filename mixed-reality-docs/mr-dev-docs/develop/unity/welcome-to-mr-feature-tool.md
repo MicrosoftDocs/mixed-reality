@@ -81,9 +81,13 @@ When you have located your project's folder, click the Open button to return to 
 > [!IMPORTANT]
 > The Mixed Reality Feature Tool performs validation to ensure that it has been directed to a Unity project folder. The folder must contain `Assets`, `Packages` and `Project Settings` folders.
 
-Once the project has been selected, the Restore Features button becomes enabled. If you have previously used Mixed Reality Feature Tool to add features to your project, restore will identify the referenced Mixed Reality packages and, if needed, will redownload and copy missing packages into the project.
+Once the project has been selected, you can
 
-Once the restore has been completed, you can continue on and discover additional features or exit the Mixed Reality Feature Tool.
+- **Restore Features**: download the Feature Tool shipped packages listed in the project manifest to **Packages/MixedReality** if they are not present there already. The feature is similar to `nuget restore` in concept. Typically you only need to perform this operation if you have a project (with Feature Tool packages) cloned from a repo configured to ignore tarball files. You can close the Feature Tool after restoring if you do not need to get new packages.
+
+**and/or**
+
+- **Discover Features**: proceed to the next page to select the packages you want to add to your project.
 
 ## 3. Discovering and acquiring feature packages
 
