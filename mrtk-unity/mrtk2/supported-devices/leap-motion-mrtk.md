@@ -30,7 +30,7 @@ The Unity Modules were renamed the The Unity Plugin in V5.0.0.
 
 | MRTK Version | Ultraleap Unity Plugin Versions Supported |
 | --- | --- |
-|2.7.4| 5.3.0 (see note below) |
+|2.8.0| 5.3.0 (see note below) |
 
 > [!NOTE]
 > The Unity Plugin versions 5.0.0, 5.1.0 and 5.2.0 are **not** supported in any version of MRTK. Users are recommended to upgrade to 5.3.0. Unity Plugin 5.3.0 requires the [Gemini 5.2](https://developer.leapmotion.com/tracking-software-download) tracking service or higher. 
@@ -155,6 +155,7 @@ public class LeapHandJoints : MonoBehaviour, IMixedRealityHandJointHandler
             rightHandCube.transform.position = rightHandPalmPosition;
         }
     }
+}
 ```
 
 ## Unity editor workflow tip
