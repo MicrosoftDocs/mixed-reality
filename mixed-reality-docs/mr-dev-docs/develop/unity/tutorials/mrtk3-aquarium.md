@@ -13,7 +13,7 @@ keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, tutorial, unity
 
 :::image type="content" source="images/MRTK3-Aquarium.png" alt-text="MRTK3 Aquarium scene.":::
 
-The MRTK3 Aquarium sample provides a Unity in-editor tutorial that explores various MRTK3 features. Set in an underwater scene, you'll be introduced to the creatures of the aquarium and the objects that make up their habit. Using MRTK3 features, you'll add interactivity to the aquarium which will enable you to create an aquarium of your very own!
+The MRTK3 Aquarium sample provides a Unity in-editor tutorial that explores various MRTK3 features. Set in an underwater scene, you'll be introduced to the creatures of the aquarium and the objects that make up their habitat. Using MRTK3 features, you'll add interactivity to the aquarium which will enable you to create an aquarium of your very own!
 
 In this sample, you'll learn how to do the following:
 - Manipulate and arrange objects in the aquarium
@@ -32,7 +32,7 @@ In this sample, you'll learn how to do the following:
 
 ## Download the Project
 
-You can download the MRTK3 Aquarium project from our Code Samples browser [INSERT LINK TO PAGE]. Once the project is downloaded, add the project to the Unity Hub to open. The MRTK3 packages within the project require a Unity project that's configured for both Windows Mixed Reality development and MRTK3. For instructions on how to configure your project, review [LINK].
+You can download the MRTK3 Aquarium project from our Code Samples browser [INSERT LINK TO PAGE]. Once the project is downloaded, add the project to the Unity Hub to open.
 
 ## How to Use the Tutorials
 The Unity in-editor tutorial format provides step-by-step instruction within the editor for how to accomplish each step of the tutorial. Each tutorial is independent of the others so you're welcome to complete them in any order you prefer.
