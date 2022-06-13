@@ -51,7 +51,7 @@ The Unity Modules were renamed the The Unity Plugin in V5.0.0.
     > To resolve the issues, change the SelectionMode.OnlyUserModifiable to SelectionMode.Editable in the Hotkeys.cs script located in Plugins/LeapMotion/Core/Editor/Hotkeys.cs.
 
 1. Integrate the Leap Motion Unity Modules / Unity Plugin with MRTK
-    - After the Unity Modules / Unity Plugin are in the project, navigate to **Mixed Reality Toolkit** > **Leap Motion** > **Integrate Leap Motion Unity Modules**
+    - After the Unity Modules / Unity Plugin are in the project, navigate to **Mixed Reality** > **Toolkit** > **Utilities** > **Leap Motion** > **Integrate Leap Motion Unity Modules**.
     > [!NOTE]
     > Integrating the **Unity Modules** to MRTK adds 10 assembly definitions to the project and adds references to the **Microsoft.MixedReality.Toolkit.Providers.LeapMotion** assembly definition. Make sure Visual Studio is closed.
 
