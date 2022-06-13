@@ -87,11 +87,11 @@ Once imported, MRTK3 requires some configuration on OpenXR if you are targeting 
 
    For standalone:
 
-   ![Standalone XR Plug-in Management window](images/standalone-xr-plug-in-management.png)
+   [![Standalone XR Plug-in Management window](images/standalone-xr-plug-in-management.png)](images/standalone-xr-plug-in-management.png)
 
    For UWP:
 
-   ![UWP XR Plug-in Management window](images/uwp-xr-plug-in-management.png)
+   [![UWP XR Plug-in Management window](images/uwp-xr-plug-in-management.png)](images/uwp-xr-plug-in-management.png)
 
 1. Under **Project Settings**, navigate to **XR Plug-in Management > OpenXR > Interaction Profiles** and add the following three profiles for UWP and Standalone:
 
@@ -104,11 +104,11 @@ Once imported, MRTK3 requires some configuration on OpenXR if you are targeting 
 
    For standalone:
 
-   ![Standalone OpenXR](images/standalone-openxr.png)
+   [![Standalone OpenXR](images/standalone-openxr.png)](images/standalone-openxr.png)
 
    For UWP:
 
-   ![UWP OpenXR](images/uwp-openxr.png)
+   [![UWP OpenXR](images/uwp-openxr.png)](images/uwp-openxr.png)
 
 1. For HoloLens 2, we recommend using 16-bit depth submission in the settings above. For immersive headsets, you can use 24-bit depth submission. See the [Microsoft development docs for Unity](/windows/mixed-reality/develop/unity/recommended-settings-for-unity#enable-depth-buffer-sharing) for more info.
 
