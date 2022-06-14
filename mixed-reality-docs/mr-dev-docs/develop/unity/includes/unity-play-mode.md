@@ -12,9 +12,9 @@ The following steps assume that you have already set up your project to use Open
 1. In the **Holographic Remoting for Play Mode** window, in the **Remote Host Name** box, enter the IP address of your HoloLens 2.
 
     > [!TIP]
-    > The IP address of your HoloLens 2 can be found on the Holographic Remoting Player
+    > The IP address of your HoloLens 2 can be found when running the Holographic Remoting Player
 
-    ![Screenshot of the Holographic Remoting Player running in the HoloLens with IP address circled.](../images/openxr-features-img-06.png)
+    ![Screenshot of the Holographic Remoting Player running on the HoloLens 2 with IP address circled.](../images/openxr-features-img-06.png)
 
 1. Change other settings as needed.
 1. Click the **Enable Holographic Remoting for Play Mode** button.
