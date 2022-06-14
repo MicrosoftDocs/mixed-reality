@@ -30,7 +30,7 @@ along with a layer of MRTK-defined [interactors](interactors.md) and [subsystems
 
 ### OpenXR
 
-OpenXR is the interface between an application and an XR runtime system, allowing for a common set of features to be called generically and allow the hardware-specific implementation be handled by the XR runtime. Adopting this, along with Unity's Input System, in MRTK3 lets Unity handle more of the cross-platform and extensible input story while allowing MRTK3 to focus on helping you build rich experiences on top.
+OpenXR is the interface between an application and an XR runtime system, allowing for a common set of features to be called generically and allow the hardware-specific implementation to be handled by the XR runtime. Adopting this in MRTK3, along with Unity's Input System, lets Unity handle more of the cross-platform and extensible input story while allowing MRTK3 to focus on helping you build rich experiences on top.
 
 ### Subsystems
 

@@ -26,7 +26,7 @@ Various configurations of BoundsControl, showing both flattened and 3D bounds.
 
 **CanvasExample**
 
-Shows a collection of UX components built on the Unity Canvas. These UX components are built on XRI, support full XR interactions, but are also authored in Canvas and support traditional interactions with mouse, keyboard, and gamepad.
+Shows a collection of UX components built on the Unity Canvas. These UX components are built on XRI and support full XR interactions, but are also authored in Canvas and support traditional interactions with mouse, keyboard, and gamepad.
 
 **DialogExample**
 
@@ -50,11 +50,11 @@ Near interaction menu examples.
 
 **ObjectBarExample**
 
-Shows Object Bar, a dynamic collection of objects positioned in a horizontal or vertical stack with an auto sized back plate.
+Shows Object Bar, a dynamic collection of objects positioned in a horizontal or vertical stack with an auto-sized back plate.
 
 **SampleEmptyMRTKScene**
 
-The sample empty MRTK scene only contains the core MRTK prefab (**MRTK XR Rig**) and the input simulator prefab (**MRTKInputSimulator**). It's intended to give developers an empty scene with the MRTK essentials only to get started.
+The sample empty MRTK scene only contains the core MRTK prefab (**MRTK XR Rig**) and the input simulator prefab (**MRTKInputSimulator**). It's intended to give developers an empty scene with only the MRTK essentials necessary to get started.
 
 **SlateDrawingExample**
 
@@ -102,16 +102,16 @@ Demonstration of using Data Binding and Theming to bind to data sources.
 
 ## Creating a new Scene with MRTK3
 
-1. Create a new unity scene 
-1. Add the **MRTK XR Rig** prefab
-1. Remove the **Main Camera** Game Object because the **MRTK XR Rig** already contains one
+1. Create a new Unity scene.
+1. Add the **MRTK XR Rig** prefab.
+1. Remove the **Main Camera** Game Object because  **MRTK XR Rig** already contains a camera.
 
     ![MRTK XR rig screenshot](images\mrtk-xr-rig.png)
 
 1. Add the MRTK Input Simulator prefab to your scene.
 
-    >[!Note]
-    >This step is optional, but required by in-editor simulations.
+    > [!Note]
+    > This step is optional, but required by in-editor simulations.
     
     ![MRTK input simulator hierarchy pane](images\mrtk-input-simulator.png)
 

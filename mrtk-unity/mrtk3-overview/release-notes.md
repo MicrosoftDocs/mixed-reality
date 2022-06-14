@@ -10,4 +10,4 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, releas
 
 # MRTK3 Public Preview Releases Notes
 
-MRTK3 is now shipping as [a set of individually versioned packages](index.md#versioning), and thus please find release notes on the corresponding page for each package.
+MRTK3 is now shipping as [a set of individually versioned packages](index.md#versioning). You can find release notes on the corresponding page for each package.
