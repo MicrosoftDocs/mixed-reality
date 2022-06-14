@@ -17,18 +17,6 @@ The following steps assume that you have already set up your project to use Open
 1. Change other settings as needed.
 1. Click the **Enable Holographic Remoting for Play Mode** button.
 1. Close the **Holographic Remoting for Play Mode** window. The editor will attempt to connect once Play Mode is started.
-1. On the menu bar, select **Edit** > **Project Settings**.
-1. In the left-side column, under **XR Plug-in Management**, select **OpenXR**.
-1. In the **OpenXR** panel, ensure that you're in the **PC, Mac & Linux Standalone settings** tab.
-
-    ![Screenshot of the PC, Mac & Linus Standalone tab in the OpenXR plugin window of Project Settings.](../images/025-standalone-tab.png)
-
-1. Under **OpenXR Feature Groups**, the three items in the left-side column are selectable. Make sure **All Features** is selected.
-
-    ![Screenshot of the OpenXR Feature Groups section with All Features selected.](../images/026-all-features.png)
-
-1. To the right of **All Features**, select **Holographic Remoting for Play Mode** if it's not already selected.
-1. Close the **Project Settings** window.
 1. Select the Play button to enter Play Mode, and then view the app in your HoloLens.
 
     > [!TIP]
