@@ -13,7 +13,7 @@ A [Leap Motion Controller](https://www.ultraleap.com/product/leap-motion-control
 
 The Leap Motion Data Provider enables articulated hand tracking for VR and could be useful for rapid prototyping in the editor.  The data provider can be configured to use the Leap Motion Controller mounted on a headset or placed on a desk face up.
 
-![LeapMotionIntroGif](../images/cross-platform/leap-motion/LeapHandsGif3.gif)
+![LeapMotionIntroGif](../images/cross-platform/leap-motion/LeapHandsGif3-small.gif)
 
 This provider can be used in editor and on device while on the Standalone platform.  It can also be used in editor while on the UWP platform but NOT in a UWP build.
 
@@ -51,7 +51,7 @@ The Unity Modules were renamed the The Unity Plugin in V5.0.0.
     > To resolve the issues, change the SelectionMode.OnlyUserModifiable to SelectionMode.Editable in the Hotkeys.cs script located in Plugins/LeapMotion/Core/Editor/Hotkeys.cs.
 
 1. Integrate the Leap Motion Unity Modules / Unity Plugin with MRTK
-    - After the Unity Modules / Unity Plugin are in the project, navigate to **Mixed Reality Toolkit** > **Leap Motion** > **Integrate Leap Motion Unity Modules**
+    - After the Unity Modules / Unity Plugin are in the project, navigate to **Mixed Reality** > **Toolkit** > **Utilities** > **Leap Motion** > **Integrate Leap Motion Unity Modules**.
     > [!NOTE]
     > Integrating the **Unity Modules** to MRTK adds 10 assembly definitions to the project and adds references to the **Microsoft.MixedReality.Toolkit.Providers.LeapMotion** assembly definition. Make sure Visual Studio is closed.
 
@@ -94,10 +94,17 @@ The Unity Modules were renamed the The Unity Plugin in V5.0.0.
 
     - `EnterPinchDistance` and `ExitPinchDistance` are the distance thresholds for pinch/air tap gesture detection.  The pinch gesture is calculated by measuring the distance between the index finger tip and the thumb tip.  To raise an on input down event, the default `EnterPinchDistance` is set to 0.02.  To raise an on input up event (exiting the pinch), the default distance between the index finger tip and the thumb tip is 0.05.
 
-    `LeapControllerOrientation`: Headset (Default) |  `LeapControllerOrientation`: Desk
-    :-------------------------:|:-------------------------:
-    ![LeapHeadsetGif](../images/cross-platform/leap-motion/LeapHeadsetOrientationExampleMetacarpals.gif)  |  ![LeapDeskGif](../images/cross-platform/leap-motion/LeapDeskOrientationExampleMetacarpals.gif)
-    ![LeapHeadsetInspector](../images/cross-platform/leap-motion/LeapMotionDeviceManagerHeadset.png) |     ![LeapDeskInspector](../images/cross-platform/leap-motion/LeapMotionDeviceManagerDesk.png)
+    `LeapControllerOrientation`: Headset (Default) 
+    
+    ![LeapHeadsetGif](../images/cross-platform/leap-motion/LeapHeadsetOrientationExampleMetacarpals.gif)
+
+    ![LeapHeadsetInspector](../images/cross-platform/leap-motion/LeapMotionDeviceManagerHeadset.png)  
+    
+    `LeapControllerOrientation`: Desk
+    
+    ![LeapDeskGif](../images/cross-platform/leap-motion/LeapDeskOrientationExampleMetacarpals.gif)  
+
+    ![LeapDeskInspector](../images/cross-platform/leap-motion/LeapMotionDeviceManagerDesk.png)
 
 1. Testing the Leap Motion Data Provider
     - After Leap Motion Data Provider has been added to the input system profile, press play, move your hand in front of the Leap Motion Controller and you should see the joint representation of the hand.
