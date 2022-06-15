@@ -43,11 +43,11 @@ The following steps assume that you have already set up your project to use Open
 
 # [Legacy WSA](#tab/wsa)
 
-1. On your HoloLens 2, go to the **Microsoft Store** and install the **[Holographic Remoting Player](https://www.microsoft.com/store/p/holographic-remoting-player/9nblggh4sv40)** app.
-1. On your HoloLens 2, start the **Holographic Remoting Player** app.
+1. On your HoloLens, go to the **Microsoft Store** and install the **[Holographic Remoting Player](https://www.microsoft.com/store/p/holographic-remoting-player/9nblggh4sv40)** app.
+1. On your HoloLens, start the **Holographic Remoting Player** app.
 1. In Unity, go to the **Window** menu, expand the **XR** submenu, and select **Holographic Emulation** (marked as deprecated in Unity 2019).
 1. Set **Emulation Mode** to **Remote to Device**.
 1. Set **Device Version** according to if you're using a first generation HoloLens or a HoloLens 2.
 1. For **Remote Machine**, enter the IP address of your HoloLens.
-1. Select **Connect**. You should see **Connection Status** change to **Connected** and see the screen go blank in the HoloLens 2.
-1. Select the Play button to start Play Mode and experience the app on your HoloLens 2. To debug C# scripts in play mode, [attach Visual Studio to Unity](/visualstudio/gamedev/unity/get-started/using-visual-studio-tools-for-unity?pivots=windows).
+1. Select **Connect**. You should see **Connection Status** change to **Connected** and see the screen go blank in the HoloLens.
+1. Select the Play button to start Play Mode and experience the app on your HoloLens. To debug C# scripts in play mode, [attach Visual Studio to Unity](/visualstudio/gamedev/unity/get-started/using-visual-studio-tools-for-unity?pivots=windows).
