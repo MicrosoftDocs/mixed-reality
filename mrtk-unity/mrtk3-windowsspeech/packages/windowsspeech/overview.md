@@ -12,7 +12,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, window
 
 The Windows Speech package adds `WindowsPhraseRecognitionSubsystem` to your project, which offers phrase recognition capabilities on Windows and UWP platforms. As a [MRTK `PhraseRecognitionSubsystem`](../../../mrtk3-core/packages/core/subsystems/phraserecognitionsubsystem.md), the subsystem can work with `SpeechInteractor` to trigger select events on `StatefulInteractable`s based on the settings of the interactables. You can also register arbitrary `UnityAction`s to a keyword of your choice so that the action will be invoked when such word is said.
 
-For general information on `PhraseRecognitionSubsystem` in MRTK, please refer to the documentation [here](../../../mrtk3-core/packages/core/subsystems/phraserecognitionsubsystem.md).
+For general information on `PhraseRecognitionSubsystem` in MRTK, [refer to the documentation](../../../mrtk3-core/packages/core/subsystems/phraserecognitionsubsystem).
 
 > [!NOTE]
 > As the name suggests, `WindowsPhraseRecognitionSubsystem` only works on the Windows standalone and UWP platforms.
