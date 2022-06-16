@@ -70,9 +70,7 @@ The following hardware and software is required:
 - Internet Access for Azure, and for IoT Hub Service. For more information, please follow this [link to IoT Hub Service page](https://azure.microsoft.com/services/iot-hub/)
 - A machine learning model. If you do not have your own ready to use model, [you can use the model provided with this course](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20313%20-%20IoT%20Hub%20Service/Custom%20Vision%20Model.zip).
 - **Hyper-V** software enabled on your Windows 10 development machine.
-- A Virtual Machine running Ubuntu (16.4 or 18.4), running on your development machine or alternatively you can use a separate computer running Linux (Ubuntu 16.4 or 18.4). You can find more information on how to create a VM on Windows using Hyper-V in the ["Before you Start" chapter](#before-you-start).(https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine).  
-
-
+- A Virtual Machine running Ubuntu (16.4 or 18.4), running on your development machine or alternatively you can use a separate computer running Linux (Ubuntu 16.4 or 18.4). You can find more information on how to [create a VM on Windows using Hyper-V](/virtualization/hyper-v-on-windows/quick-start/quick-create-virtual-machine) in the ["Before you Start" chapter](#before-you-start).
 
 ### Before you start
 
