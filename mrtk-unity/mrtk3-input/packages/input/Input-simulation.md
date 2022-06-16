@@ -22,7 +22,7 @@ The Input Simulation Service emulates the behavior of devices and platforms that
 > [!WARNING]
 > Input simulation doesn't work when using Unity's XR Holographic Emulation > Emulation Mode = "Simulate in Editor." Unity's in-editor simulation will take control away from MRTK's input simulation. To use MRTK's input simulation, you'll need to set XR Holographic Emulation to:
 
-    Emulation Mode = _"None"_.
+  Emulation Mode = _"None"_.
 
 ## How to use MRTK3 Input simulation (MRTK3 Input Simulator Default Controls)
 
