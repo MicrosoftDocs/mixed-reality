@@ -1037,7 +1037,7 @@ First, you need to create a file that will allow your Azure Function to load the
 
 11. In the left side of the new panel, click the **+** (plus) icon next to *Functions*, to create a new function.
 
-    ![add new function](images/AzureLabs-Lab313-58.png)
+    ![Screenshot that shows the Function Apps page. In the menu on the left next to Functions, the plus sign is circled in red.](images/AzureLabs-Lab313-58.png)
 
 12. Within the central panel, the **Function** creation window will appear. Scroll down further, and click on **Custom function**.
 
@@ -1049,19 +1049,19 @@ First, you need to create a file that will allow your Azure Function to load the
 
 14. In the **IoT Hub (Event Hub)** blade, set the **Language** to **C#** and then click on **new**.
 
-    ![custom function](images/AzureLabs-Lab313-61.png)
+    ![Screenshot that shows the New Function page. C sharp is selected in the Language field. New is circled in red next to the Event Hub connection option.](images/AzureLabs-Lab313-61.png)
 
 15. In the window that will appear, make sure that **IoT Hub** is selected and the name of the *IoT Hub* field corresponds with the name of your *IoT Hub Service* that you have created previously ([in step 8, of Chapter 3](#chapter-3---the-iot-hub-service)). Then click the **Select** button.
 
-    ![custom function](images/AzureLabs-Lab313-62.png)
+    ![Screenshot that shows the I O T hub tab open. The I O T hub and End point fields are circled in red.](images/AzureLabs-Lab313-62.png)
 
 16. Back on the **IoT Hub (Event Hub)** blade, click on **Create**.
 
-    ![custom function](images/AzureLabs-Lab313-63.png)
+    ![Screenshot that shows the New Function page. The Create button is circled in red at the bottom of the page.](images/AzureLabs-Lab313-63.png)
 
 17. You will be redirected to the function editor.
 
-    ![custom function](images/AzureLabs-Lab313-64.png)
+    ![Screenshot that shows the function editor page. The function is selected in the menu on the left.](images/AzureLabs-Lab313-64.png)
 
 18. Delete all the code in it and replace it with the following:
 
@@ -1135,27 +1135,27 @@ First, you need to create a file that will allow your Azure Function to load the
     - **storageAccountName**, with the name of the value corresponding with the name of your **Storage Account** name.
     - **storageAccountKey**, with the Key you have obtained in the Storage Service you have created previously.
 
-    ![custom function](images/AzureLabs-Lab313-65.png)
+    ![Screenshot that shows the command prompt. Lines 15, 16, 19, and 21 are circled in red.](images/AzureLabs-Lab313-65.png)
 
 20. With the code in place, click **Save**.
 
 21. Next, click the **\<** (arrow) icon, on the right-hand side of the page.
 
-    ![custom function](images/AzureLabs-Lab313-66.png)
+    ![Screenshot that shows the Function Apps page. ](images/AzureLabs-Lab313-66.png)
 
 22. A panel will slide in from the right. In that panel, click **Upload**, and a *File Browser* will appear.
 
 23. Navigate to, and click, the **project.json** file, which you created in **Notepad** previously, and then click the **Open** button. This file defines the libraries that your function will use.
 
-    ![custom function](images/AzureLabs-Lab313-67.png)
+    ![Screenshot that shows the upload button circled in red under View files. In the File Browser, project dot jason is selected.](images/AzureLabs-Lab313-67.png)
 
 24. When the file has uploaded, it will appear in the panel on the right. Clicking it will open it within the **Function** editor. It must look **exactly** the same as the next image.
 
-    ![custom function](images/AzureLabs-Lab313-68.png)
+    ![Screenshot that shows The Function Apps page. Integrate in the left menu is circled in red.](images/AzureLabs-Lab313-68.png)
 
 25. At this point it would be good to test the capability of your Function to store the message on your *Table*. On the top right side of the window, click on **Test**.
 
-    ![custom function](images/AzureLabs-Lab313-69.png)
+    ![Screenshot that shows the Function Apps page. Test at the top right and the Run button in the bottom left corner are circled in red.](images/AzureLabs-Lab313-69.png)
 
 26. Insert a message on the **Request body**, as shown in the image above, and click on **Run**. 
 
@@ -1167,7 +1167,7 @@ First, you need to create a file that will allow your Azure Function to load the
 
 If you now open Visual Studio (**not** Visual Studio Code), you can visualize your test message result, as it will be stored in the *MessageContent* string area.
 
-![custom function](images/AzureLabs-Lab313-71.png)
+![Screenshot that shows the I O T Messages Table tab open in Microsoft Visual Studio.](images/AzureLabs-Lab313-71.png)
 
 With the Table Service and Function App in place, your Ubuntu device messages will appear in your *IoTMessages* Table. If not already running, start your device again, and you will be able to see the result messages from your device, and module, within your Table, through using Visual Studio *Cloud Explorer*.
 
@@ -1180,7 +1180,7 @@ To visualize the data from your IOT device you will setup **Power BI** (desktop 
 
 1.  Open the Microsoft Store on Windows 10 and search for **Power BI Desktop**.
 
-    ![Power BI](images/AzureLabs-Lab313-73.png)
+    ![Screenshot that shows the Microsoft Store window. Power BI is entered in the search bar and Power BI Desktop is circled in red.](images/AzureLabs-Lab313-73.png)
 
 2.  Download the application. Once it has finished downloading, open it.
 
@@ -1188,53 +1188,53 @@ To visualize the data from your IOT device you will setup **Power BI** (desktop 
 
 4.  Click on **Get Data** and then click on **More...**.
 
-    ![Power BI](images/AzureLabs-Lab313-74.png)
+    ![Screenshot that shows Power BI Desktop. More is circled in red in the Get Data drop down menu.](images/AzureLabs-Lab313-74.png)
 
 5.  Click **Azure**, **Azure Table Storage**, then click on **Connect**.
 
-    ![Power BI](images/AzureLabs-Lab313-75.png)
+    ![Screenshot that shows the Get Data window. Azure Table Storage is selected in the Azure menu option. The Connect button in the bottom right corner is circled in red.](images/AzureLabs-Lab313-75.png)
 
 6.  You will be prompted to insert the **Table URL** that you collected earlier ([in step 13 of Chapter 11](#chapter-11---create-table-service)), while creating your Table Service. After inserting the URL, delete the portion of the path referring to the Table "sub-folder" (which was IoTMessages, in this course). The final result should be as displayed in the image below. Then click on **OK**.
 
-    ![Power BI](images/AzureLabs-Lab313-76.png)
+    ![Screenshot that shows the Azure Table Storage dialog. A U R L is entered in the Account name or U R L field.](images/AzureLabs-Lab313-76.png)
 
 7.  You will be prompted to insert the **Storage Key** that you noted ([in step 11 of Chapter 11](#chapter-11---create-table-service)) earlier while creating your Table Storage. Then click on **Connect**.
 
-    ![Power BI](images/AzureLabs-Lab313-77.png)  
+    ![Screenshot that shows the Azure Table Storage Account key page.](images/AzureLabs-Lab313-77.png)  
 
 8. A **Navigator Panel** will be displayed, tick the box next to your Table and click on **Load**.
 
-    ![Power BI](images/AzureLabs-Lab313-78.png)  
+    ![Screenshot that shows the Navigator panel. The box next to the I O T Message file is checked.](images/AzureLabs-Lab313-78.png)  
 
 9. Your table has now been loaded on Power BI, but it requires a query to display the values in it. To do so, right-click on the table name located in the **FIELDS panel** at the right side of the screen. Then click on **Edit Query**.
 
-    ![Power BI](images/AzureLabs-Lab313-79.png) 
+    ![Screenshot that shows the Fields panel. Edit query is circled in red in the I O T Messages right click menu.](images/AzureLabs-Lab313-79.png) 
 
 10. A **Power Query Editor**  will open up as a new window, displaying your table. Click on the word **Record** within the *Content* column of the table, to visualize your stored content.
 
-    ![Power BI](images/AzureLabs-Lab313-80.png)    
+    ![Screenshot that shows the Power Query Editor window. Under Content, Record is circled in red.](images/AzureLabs-Lab313-80.png)    
 
 11. Click on **Into Table**, at the top-left of the window. 
 
-    ![Power BI](images/AzureLabs-Lab313-81.png)
+    ![Screenshot that shows the Convert tab in the Power Query Editor. In the top left corner, Into Table is circled in red.](images/AzureLabs-Lab313-81.png)
 
 12. Click on **Close & Apply**.
 
-    ![Power BI](images/AzureLabs-Lab313-82.png)
+    ![Screenshot that shows the home tab in the Power Query Editor. Close and Apply is circled in red.](images/AzureLabs-Lab313-82.png)
 
 13. Once it has finished loading the query, within the **FIELDS panel**, on the right side of the screen, tick the boxes corresponding to the parameters **Name** and **Value**, to visualize the **MessageContent** column content.
 
-    ![Power BI](images/AzureLabs-Lab313-83.png)
+    ![Screenshot that shows the Fields panel. Under I O T Messages, Name and Value are checked. A pop up window with Name and Value columns is circled in red.](images/AzureLabs-Lab313-83.png)
 
 14. Click on the **blue disk icon** at the top left of the window to save your work in a folder of your choice.
 
-    ![Power BI](images/AzureLabs-Lab313-84.png)
+    ![Screenshot that shows the Power BI Desktop. The blue disk in the top left corner is circled in red. The Save As dialog is open and the Save button is circled in red.](images/AzureLabs-Lab313-84.png)
 
 15. You can now click on the Publish button to upload your table to your Workspace. When prompted, click **My workspace** and click *Select*. Wait for it to display the successful result of the submission.
 
-    ![Power BI](images/AzureLabs-Lab313-85.png)
+    ![Screenshot that shows Publish circled in red. In the Publish to Power BI dialog, My workspace is selected under Select a destination.](images/AzureLabs-Lab313-85.png)
 
-    ![Power BI](images/AzureLabs-Lab313-86.png)
+    ![Screenshot that shows a notification indicating that Publishing to Power BI was a success.](images/AzureLabs-Lab313-86.png)
 
 > [!WARNING]
 > The following Chapter is HoloLens specific. Power BI is not currently available as an immersive application, however you can run the desktop version in the Windows Mixed Reality Portal (aka Cliff House), through the Desktop app.
@@ -1243,11 +1243,11 @@ To visualize the data from your IOT device you will setup **Power BI** (desktop 
 
 1. On your HoloLens, log in to the **Microsoft Store**, by tapping on its icon in the applications list.
 
-    ![Power BI HL](images/AzureLabs-Lab313-87.png)
+    ![Holo Lens display that shows a red circled around the Microsoft Store icon in a navigation window.](images/AzureLabs-Lab313-87.png)
 
 2. Search and then download the **Power BI** application.
 
-    ![Power BI HL](images/AzureLabs-Lab313-88.png)
+    ![Holo Lens display that shows the Microsoft Store page. Scroll Tool is selected and power bi is entered in the search bar.](images/AzureLabs-Lab313-88.png)
 
 3. Start **Power BI** from your applications list. 
 
@@ -1255,13 +1255,13 @@ To visualize the data from your IOT device you will setup **Power BI** (desktop 
 
 5. Once inside the app, the workspace should display by default as shown in the image below. If that does not happen, simply click on the workspace icon on the left side of the window.
 
-    ![Power BI HL](images/AzureLabs-Lab313-89.png)
+    ![Holo Lens display that shows the Microsoft Power Bi page. Drag Tool is selected at the top. The workspace icon, which resembles a figure, is circled in red. I O T Edge Table under Reports is circled in red.](images/AzureLabs-Lab313-89.png)
 
 ## Your finished your IoT Hub application
 
 Congratulations, you have successfully created an IoT Hub Service, with a simulated Virtual Machine Edge device. Your device can  communicate the results of a machine learning model to an Azure Table Service, facilitated by an Azure Function App, which is read into Power BI, and visualized within a Microsoft HoloLens.
  
-![Power BI](images/AzureLabs-Lab313-00.png)
+![Holo Lens display that shows the Microsoft Power BI page.](images/AzureLabs-Lab313-00.png)
 
 ## Bonus exercises
 
