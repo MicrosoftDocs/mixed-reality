@@ -55,7 +55,7 @@ The benefits include:
 - ✔ Support for flex layouts with priority and margins through [UnityUI AutoLayout groups](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/comp-UIAutoLayout.html)
 - ✔ A single prefab for each type of control, which can be resized and adjusted to fit any content or context
 - ✔ Horizontal, vertical, and grid layouts from [UnityUI AutoLayout groups](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/comp-UIAutoLayout.html). Custom layouts are possible through extension of Unity layout interfaces.
-- ✔ Wide variety of advanced design features like absolutely-sized rounded corner radii, stroke widths, and margins, enabled by the advanced UI shader features in the [Mixed Reality Graphics Tools package.](../Mixed-Reality-Graphics-Tools.md)
+- ✔ Wide variety of advanced design features like absolutely-sized rounded corner radii, stroke widths, and margins, enabled by the advanced UI shader features in the [Mixed Reality Graphics Tools package.](../../../mrtk3-graphicstools/index.md)
 - ✔ No scaling: all sizing and layout is achieved through RectTransform size and offset metrics. Parents do not scale children.
 - ✔ Full support for mouse + keyboard, natively through UGUI events and the `UGUIInputAdapter` and `CanvasProxyInteractor` (see the [Interactable architecture documentation for more information](../../../mrtk3-overview/architecture/interactables.md))
 - ✔ Support for gamepad and directional/relative navigation
@@ -92,7 +92,5 @@ We're still shaping the development story for building beautiful UI across our v
 Due to the strict separation of state/interaction and visuals, you'll notice that the same state and interaction scripts are shared across Canvas and non-Canvas contexts. This is by design; the same interaction scripts can be reused across any visual or layout contexts, reducing the API surface and enhancing the consistency of our interactions. For example, `Slider` is the slider interaction component for both Canvas and non-Canvas sliders, and `PressableButton` is the same script across Canvas and non-Canvas buttons. In the future, if a new layout or presentation framework is adopted, we can carry over the same interaction logic and systems to ensure consistency and maintainability.
 
 The architecture diagram below details how the different input events and types of interactables work together to provide a unified interaction state. Click the diagram to see a larger version.
-
-![Architecture diagram](../../../mrtk3-overview/images/UXBuildingBlocks/CanvasUI/unification_diagram.svg)
 
 :::image type="content" source="../../../mrtk3-overview/images/UXBuildingBlocks/CanvasUI/unification_diagram-small.png" alt-text="An architectural diagram that shows how different input events and types of interactables work together." lightbox="../../../mrtk3-overview/images/UXBuildingBlocks/CanvasUI/unification_diagram-large.png":::
