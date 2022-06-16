@@ -133,7 +133,7 @@ Neo-geo humanism structuralism post-impressionism die brücke existentialism sup
        **Image #3 label text**<br>
     :::column-end:::
     :::column:::
-       ![Description of what the pictures is here. Placeholder template](images/image-226x226px-4-columns.jpg)<br>
+       ![Description of what the pictures is here. Placeholder template.](images/image-226x226px-4-columns.jpg)<br>
        **Image #4 label text**<br>
     :::column-end:::
 :::row-end:::
@@ -195,7 +195,7 @@ Neo-geo humanism structuralism post-impressionism die brücke existentialism sup
 
 Action painting color field painting new objectivity stuckism modern art structuralism neo-dada stuckism international new objectivity, video game art primitivism lyrical abstraction postminimalism remodernism illusionism. Ego-futurism surrealism installation art kinetic art caravaggisti.
 
-![Large placeholder edge-to-edge image (min width of asset = 940px)](images/image-hero-template.jpg)<br>
+![Large placeholder edge-to-edge image min width of asset = 940 p x.](images/image-hero-template.jpg)<br>
 *Description of what the pictures is here.*
 
 <br>
