@@ -307,7 +307,7 @@ To start creating an experiment:
 
 28. Once the Experiment has been created you will be redirected to a **Dashboard** page where you will have your **API Key** displayed. Copy it into a notepad for the moment, you will need it in your code very soon. Once you have noted your API Key, click on the **REQUEST/RESPONSE** button in the **Default Endpoint** section underneath the Key.
 
-    ![Screenshot of the Microsoft Azure Machine Learning Studio window, which shows the API key and the highlighted Request slash Response link.](images/AzureLabs-Lab7-33.png)
+    ![Screenshot of the Microsoft Azure Machine Learning Studio window, which shows the A P I key and the highlighted Request slash Response link.](images/AzureLabs-Lab7-33.png)
 
     > [!NOTE] 
     > If you click Test in this page, you will be able to enter input data and view the output. Enter the **day** and **hour**. Leave the **product** entry blank. Then click the **Confirm** button. The output on the bottom of the page will show the JSON representing the likelihood of each product being the choice.
@@ -871,7 +871,7 @@ When you run the Mixed Reality application, you will see the bench that was set 
  
 Congratulations, you built a mixed reality app that leverages the Azure Machine Learning to make data predictions and display it on your scene.
 
-![Screenshot of the Microsoft Visual Studio window, which shows a shelf with three objects and a card with the text 15:00 23 Feb.](images/AzureLabs-Lab7-0.png)
+![Screenshot of the Microsoft Visual Studio window, which shows a shelf with three objects and a card with the text 15 o' clock 23 Feb.](images/AzureLabs-Lab7-0.png)
 
 ## Exercise
 
