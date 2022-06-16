@@ -6,6 +6,8 @@
   href: ../mrtk3-overview/deployment/toc.yml
 - name: Packages
   href: packages/toc.yml
+- name: Architecture
+  href: ../mrtk3-overview/architecture/toc.yml
 - name: Using and creating scenes
   href: ../mrtk3-overview/scenes.md
 - name: Debugging and testing
@@ -14,3 +16,5 @@
   href: ../mrtk3-overview/known-issues.md
 - name: Release notes
   href: ../mrtk3-overview/release-notes.md
+- name: MRTK2.x documentation
+  href: ../mrtk2/index.md

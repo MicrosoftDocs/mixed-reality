@@ -4,7 +4,7 @@ description: Hand menus in MRTK3
 author: Zee2
 ms.author: finnsinclair
 ms.date: 4/15/2022
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, Hand menu, UI
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, Near menu, UI
 ---
 
 # Near Menu | MRTK3
@@ -30,7 +30,6 @@ For the most commonly used actions, consider using a [hand menu](hand-menu.md). 
 
 ![Near Menu Example Scene](../../../mrtk3-overview/images/UXBuildingBlocks/NearMenu/MRTK_Examples_NearMenu_Scene.png)
 
-
 - **NearMenu3x1.prefab**
 - **NearMenu3x2.prefab**
 - **NearMenu3x3.prefab**
@@ -50,7 +49,8 @@ Near Menu prefabs are made with the following MRTK components.
 
 ## Scripts
 
-Tag-along behavior is achieved with RadialView solver script. 
+Tag-along behavior is achieved with RadialView solver script.
+
 - **Move and Rotate Lerp Time** are set to 0.5 for delayed smooth movement, which creates comfortable leashing experience.
 - **Use Fixed Vertical Position** places the menu 35 cm below the user's headset, which allows the user to focus on target content. 
 - **Min and Max Distances** places the menu between 30-60 cm from the user for comfortable near-range interactions.
@@ -62,5 +62,3 @@ When the user grabs the manipulation bar, it triggers Pin Button's **ForceSetTog
 ![Manipulation Bar 1](../../../mrtk3-overview/images/UXBuildingBlocks/NearMenu/MRTK_UX_NearMenu_Grabber.png)
 
 ![Manipulation Bar 2](../../../mrtk3-overview/images/UXBuildingBlocks/NearMenu/MRTK_UX_NearMenu_Pin.png)
-
-

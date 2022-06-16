@@ -5,7 +5,7 @@ author: MaxWang-MS
 ms.author: wangmax
 ms.date: 6/7/2022
 ms.localizationpriority: high
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, data binding, theme, theming, Mixed Reality Toolkit
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, keyboard, Mixed Reality Toolkit
 ---
 
 # System keyboard | MRTK3
@@ -17,7 +17,8 @@ A Unity application can invoke the system keyboard at any time. The system keybo
 ## How to invoke the system keyboard
 
 ```c#
-public TouchScreenKeyboard keyboard;
+[SerializeField]
+private TouchScreenKeyboard keyboard;
 
 ...
 
@@ -30,7 +31,8 @@ public void OpenSystemKeyboard()
 ## How to read the input
 
 ```c#
-public TouchScreenKeyboard keyboard;
+[SerializeField]
+private TouchScreenKeyboard keyboard;
 
 ...
 

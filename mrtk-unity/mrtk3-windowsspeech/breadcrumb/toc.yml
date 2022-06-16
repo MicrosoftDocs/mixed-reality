@@ -1,3 +1,15 @@
 - name: Docs
   tocHref: /
   topicHref: /
+  items:
+  - name: Windows
+    tocHref: /windows/
+    topicHref: /windows/
+    items:
+    - name: Mixed Reality
+      tocHref: /windows/mixed-reality/
+      topicHref: /windows/mixed-reality/index
+      items:
+      - name: MRTK3 Windows Speech
+        tocHref: /windows/mixed-reality/mrtk-unity/mrtk3-windowsspeech/
+        topicHref: /windows/mixed-reality/mrtk-unity/mrtk3-windowsspeech/packages/windowsspeech/overview

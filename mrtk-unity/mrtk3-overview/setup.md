@@ -15,6 +15,7 @@ Welcome to the MRTK3 public preview! Since MRTK3 is a collection of loosely coup
 You're not expected to consume every MRTK package. See [which features are useful to you](packages/packages-overview.md) and add only the dependencies that matter.
 
 ## Install the tools
+
 Make sure you have all the tools in this link before starting:
 
 > [!div class="nextstepaction"]
@@ -22,7 +23,7 @@ Make sure you have all the tools in this link before starting:
 
 ## Path 1: Clone the repository and try out the sample Unity Project
 
-The easiest way of acquiring and trying out MRTK3 is to do so via our preconfigured project with references to all of the current MRTK3 packages. Please clone our project at [our GitHub repo](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk3) and check out the `mrtk3` branch. After that you can simply launch Unity (2020.3.33f1 or newer) on the `MRTKDevTemplate` project under `UnityProjects` and start playing with the [sample scenes](scenes.md) in the Editor via remoting or deployment to devices.
+The easiest way of acquiring and trying out MRTK3 is to do so by way of our preconfigured project with references to all of the current MRTK3 packages. Please clone our project at [our GitHub repo](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk3) and check out the `mrtk3` branch. After that you can simply launch Unity (2020.3.33f1 or newer) on the `MRTKDevTemplate` project under `UnityProjects` and start playing with the [sample scenes](scenes.md) in the Editor via remoting or deployment to devices.
 
 For information on the sample scenes included in the preview, please see [Using and creating scenes](scenes.md).
 
@@ -30,7 +31,7 @@ For information on the sample scenes included in the preview, please see [Using 
 
 ### 1. Create a new Unity project
 
-Create a new Unity project with Unity 2020.3.34f1 or newer / Unity 2021.3.2f1 or newer. Close the Unity project before proceeding to the next step.
+Create a new Unity project with Unity 2020.3.35f1 or newer / Unity 2021.3.4f1 or newer. Close the Unity project before proceeding to the next step.
 
 ### 2. Import required dependencies and MRTK3 packages with Mixed Reality Feature Tool
 
@@ -79,13 +80,13 @@ Once imported, MRTK3 requires some configuration on OpenXR if you're targeting a
     > [!NOTE]
     > A yellow warning icon may appear after checking the **OpenXR** option. Click on that icon to open the **OpenXR Project Validation** tool. Click **Fix all** and ignore the interaction profile issue that cannot be auto fixed. The profiles will be added in the step below.
 
-    For standalone:
+   For standalone:
 
-    ![Standalone XR Plug-in Management window](images/standalone-xr-plug-in-management.png)
+   [![Standalone XR Plug-in Management window](images/standalone-xr-plug-in-management.png)](images/standalone-xr-plug-in-management.png)
 
-    For UWP:
+   For UWP:
 
-    ![UWP XR Plug-in Management window](images/uwp-xr-plug-in-management.png)
+   [![UWP XR Plug-in Management window](images/uwp-xr-plug-in-management.png)](images/uwp-xr-plug-in-management.png)
 
 1. Under **Project Settings**, navigate to **XR Plug-in Management > OpenXR > Interaction Profiles** and add the following three profiles for UWP and Standalone:
 
@@ -96,13 +97,16 @@ Once imported, MRTK3 requires some configuration on OpenXR if you're targeting a
     > [!NOTE]
     > You might need to use the **OpenXR Project Validation** tool to eliminate the yellow triangle.
 
-    For standalone:
+   > [!NOTE]
+   > You may need to use the **OpenXR Project Validation** tool to eliminate the yellow triangle.
 
-    ![Standalone OpenXR](images/standalone-openxr.png)
+   For standalone:
 
-    For UWP:
+   [![Standalone OpenXR](images/standalone-openxr.png)](images/standalone-openxr.png)
 
-    ![UWP OpenXR](images/uwp-openxr.png)
+   For UWP:
+
+   [![UWP OpenXR](images/uwp-openxr.png)](images/uwp-openxr.png)
 
 1. For HoloLens 2, we recommend that you set **Depth Submission Mode** to 16-bit in the settings above. For immersive headsets, you can use 24-bit depth submission. See the [Microsoft development docs for Unity](/windows/mixed-reality/develop/unity/recommended-settings-for-unity#enable-depth-buffer-sharing) for more info.
 

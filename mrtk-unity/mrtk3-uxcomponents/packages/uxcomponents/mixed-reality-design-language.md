@@ -16,6 +16,7 @@ Over the last several years, we've shipped many different devices and form facto
 We're excited to introduce the latest Mixed Reality Design Language--first showcased in the Mesh app for HoloLens--to the public through MRTK's building blocks. The new design changes aim to empower developers to build production-ready applications that are more beautiful, usable, and portable. 
 
 ## Improvements
+
 - Improved visual feedback for multi-modal input
 - Beautiful rounded design elements, combining the traditional HoloLens iridescent look and feel with modern Fluent design
 - Modular backplate system for building complex layouts that remain clear and usable
@@ -65,9 +66,9 @@ As the visual representation of language, typography's main task is to communica
 ![MRTKv3 Tearsheet](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_MRTKv3_Tearsheet.png)<br>
 
 ## Examples of using Mixed Reality Design Language
+
 Explore and learn about the Mixed Reality Design Language examples in action.
 
 [Microsoft Mesh app for HoloLens 2](https://techcommunity.microsoft.com/t5/mixed-reality-blog/microsoft-mesh-app-august-2021-update-new-features/ba-p/2746856)
 
 ![Mesh app for HoloLens 2](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_MeshApp.png)<br>
-

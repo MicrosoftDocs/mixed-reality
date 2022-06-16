@@ -33,7 +33,6 @@ To use the bounds visuals' intention and focus effects, you must have a `Statefu
 
 We offer several pre-built bounds visuals for use with BoundsControl. Developers are encouraged to make prefab variants of these visuals and customize them to fit their needs. The handle animations and states are powered by StateVisualizer, allowing developers to further customize the look and feel of the affordances.
 
-
 :::row:::
     :::column:::
         ### Handle occlusion style<br>
@@ -70,7 +69,7 @@ In the current iteration, we offer a simple activation/deactivation interaction.
 
 The handles can be manually activated or deactivated from code at any time by setting `HandlesActive`.
 
-## Automatic bounds calcuation
+## Automatic bounds calculation
 
 BoundsControl will attempt to calculate the bounds of the associated object automatically. If a specific bounds shape is desired, check the `OverrideBounds` option and specify the bounds object directly. The bounds calculation system will only calculate the bounds for the specified override object.
 
@@ -88,4 +87,4 @@ BoundsControl can be used for manipulating 2D content as well. If `FlattenMode` 
 
 The manipulation behaviour of BoundsControl can be adjusted in several ways. The `RotateAnchor` option controls the pivot point around which the BoundsControl is rotated when using the rotation affordances. Some objects' pivot points are far from their visual center, which can cause discomfort and imprecision when manipulating with the rotation handles. Specifying `BoundsCenter` for the `RotateAnchor` will cause the BoundsControl to always rotate around the geometric center of the computed bounds rather than the actual origin of the object.
 
-Scaling behaviour can be set to either `Uniform` or `Non Uniform`. In Uniform mode, all axes of the object are scaled together, maintaining aspect ratio and appearance. Non-uniform scaling allows each axis of the object to be scaled independently.
+Scaling behavior can be set to either `Uniform` or `Non Uniform`. In Uniform mode, all axes of the object are scaled together, maintaining aspect ratio and appearance. Non-uniform scaling allows each axis of the object to be scaled independently.

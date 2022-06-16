@@ -47,8 +47,8 @@ The following table describes the Mixed Reality Toolkit package dependencies.
 
 Some MRTK packages contain tests used to validate the included components. In some cases, these tests require additional MRTK packages not asserted as dependencies.
 
-> [!Note]
-> When importing packages into Unity, test assemblies are not compiled by default. To enable compilation of tests, please use the `testables` element of the project's `manifest.json` file.
+> [!NOTE]
+> When importing packages into Unity, test assemblies aren't compiled by default. To enable compilation of tests, please use the `testables` element of the project's `manifest.json` file.
 
 In order to place minimal overhead on applications importing the Mixed Reality Toolkit, dependencies are asserted only for runtime requirements. The following table describes the additional packages required to enable compiling and running the included test assemblies.
 

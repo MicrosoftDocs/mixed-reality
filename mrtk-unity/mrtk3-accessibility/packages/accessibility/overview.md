@@ -71,7 +71,7 @@ To help text objects stand out from the background, it's common to use highly co
 
 In virtual reality experiences, you may want to provide  free-floating text that can be viewed from any angle. To make this as easy as possible, MRTK3 provides the `TextAccessibility` script.
 
-![Text Accessibility Script](images/TextAccessibiliyScript.png)
+![Text Accessibility Script](images/TextAccessibilityScript.png)
 
 This script can be attached to any TextMesh Pro object and, provided that the font material uses the TextMesh Pro shader from the Mixed Reality Graphics Tools (all font assets in the Standard Assets package do so), the text will invert based on the configuration of the Accessibility subsystem.
 

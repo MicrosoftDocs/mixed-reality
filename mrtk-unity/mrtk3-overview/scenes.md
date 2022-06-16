@@ -106,7 +106,7 @@ Demonstration of using Data Binding and Theming to bind to data sources.
 1. Add the **MRTK XR Rig** prefab.
 1. Remove the **Main Camera** Game Object because  **MRTK XR Rig** already contains a camera.
 
-    ![MRTK XR rig screenshot](images\mrtk-xr-rig.png)
+   ![MRTK XR rig screenshot](images\mrtk-xr-rig.png)
 
 1. Add the MRTK Input Simulator prefab to your scene.
 
@@ -114,5 +114,4 @@ Demonstration of using Data Binding and Theming to bind to data sources.
     > This step is optional, but required by in-editor simulations.
     
     ![MRTK input simulator hierarchy pane](images\mrtk-input-simulator.png)
-
 

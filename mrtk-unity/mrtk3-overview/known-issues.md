@@ -62,7 +62,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, known 
 - StateVisualizer's inspector can become distorted after play mode ends.
     - Collapse/expand the Inspector and the issue should resolve.
 - **BuildFailedException**: No valid MRTK Profile for build target platform.
-    - Check the **Player Settings > Mixed Reality Toolkit > MRTK Settings** to see if the profile (the top one above the subsystems) is present. If not, assign the default profile or your own profile.
+  - Check the **Player Settings > Mixed Reality Toolkit > MRTK Settings** to see if the profile (the top one above the subsystems) is present. If not, assign the default profile or your own profile.
 
 ![Build failed exception in Unity](images/build-failed-exception.png)
 

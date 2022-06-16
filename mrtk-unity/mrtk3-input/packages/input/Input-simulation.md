@@ -1,11 +1,11 @@
 ---
 title: Input simulation | MRTK3
 description: Input simulation in MRTK3
-author: MaxWang-MS
-ms.author: wangmax
+author: davidkline-ms
+ms.author: davidkl
 ms.date: 6/7/2022
 ms.localizationpriority: high
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, data binding, theme, theming, Mixed Reality Toolkit, input simulation
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, Mixed Reality Toolkit, input simulation
 ---
 
 # Input simulation | MRTK3

@@ -8,4 +8,8 @@
     items:
       - name: Mixed Reality
         tocHref: /windows/mixed-reality/
-        topicHref: "/windows/mixed-reality/index"
+        topicHref: /windows/mixed-reality/index
+        items:
+        - name: MRTK 2
+          tocHref: /windows/mixed-reality/
+          topicHref: /windows/mixed-reality/mrtk-unity/mrtk2/index

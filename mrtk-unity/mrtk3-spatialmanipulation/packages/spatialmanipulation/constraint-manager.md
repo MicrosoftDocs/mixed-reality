@@ -25,6 +25,8 @@ The constraint manager can operate in two modes:
 - Auto constraint selection
 - Manual constraint selection
 
+## Constraint selection
+
 ### Auto constraint selection
 
 ![Auto Selection mode](images/AutoSelection.png)

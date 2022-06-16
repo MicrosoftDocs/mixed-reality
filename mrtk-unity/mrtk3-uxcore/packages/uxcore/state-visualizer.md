@@ -12,13 +12,13 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, UX, StateViz, StateVisualiz
 
 ![A graphic showing the State Visualizer script in the Unity Inspector window.](../../../mrtk3-overview/images/UXBuildingBlocks/StateVisualizer/stateviz-cover.png)
 
-StateVisualizer is a low-code designer-friendly interface for authoring visual feedback in response to interaction states. It allows for both complex animation-based effects as well as common pre-made effects. 
+StateVisualizer is a low-code designer-friendly interface for authoring visual feedback in response to interaction states. It allows for both complex animation-based effects as well as common pre-made effects.
 
 ## Philosophy
 
 In MRTK3, we enforce separation of state and visuals. Interactables are responsible for their interaction logic and state, but are designed not to render their own visuals or effects based on their state. The motivation for this separation is that state and interaction logic can be reused across multiple visual contexts, and that the visual feedback and art direction of an interaction can be customized without touching the underlying state or interaction. In addition, mixing state into visuals can result in unmaintainable code with complex, hard-to-understand relationships between visual effects and the interactions they represent.
 
-StateVisualizer, as a result, is largely stateless. It listens to an associated [StatefulInteractable](../../architecture/interactables.md) and executes a graph of `IEffect`s based on the current interaction state. Complex state like `Selectedness` and passive/active hover intent is exposed for use in StateVisualizer. Some effects can respond to the fractional selection value to drive delightful "analog" effects that respond to the user's motion, pinch, or press.
+StateVisualizer, as a result, is largely stateless. It listens to an associated [StatefulInteractable](../../../mrtk3-overview/architecture/interactables.md) and executes a graph of `IEffect`s based on the current interaction state. Complex state like `Selectedness` and passive/active hover intent is exposed for use in StateVisualizer. Some effects can respond to the fractional selection value to drive delightful "analog" effects that respond to the user's motion, pinch, or press.
 
 StateVisualizer is partially built on the [Unity Playables API.](https://docs.unity3d.com/Manual/Playables.html)
 

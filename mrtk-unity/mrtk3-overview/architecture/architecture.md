@@ -19,9 +19,9 @@ One of the goals with MRTK3 was to take everything we've learned from the start 
 The overall architecture of the input stack of MRTK3 is built on four foundational components:
 
 1. OpenXR
-    1. [Khronos Specification](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html)
-    1. [Unity OpenXR Plugin documentation](https://docs.unity3d.com/Packages/com.unity.xr.openxr@latest)
-    1. [Mixed Reality OpenXR Plugin documentation](https://aka.ms/openxr-unity-install)
+   1. [Khronos Specification](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html)
+   1. [Unity OpenXR Plugin documentation](https://docs.unity3d.com/Packages/com.unity.xr.openxr@latest)
+   1. [Mixed Reality OpenXR Plugin documentation](https://aka.ms/openxr-unity-install)
 1. [Unity subsystems](https://docs.unity3d.com/ScriptReference/UnityEngine.SubsystemsModule.html)
 1. [Unity's Input System](https://docs.unity3d.com/Packages/com.unity.inputsystem@latest)
 1. [Unity's XR Interaction Toolkit](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@latest)
@@ -38,7 +38,7 @@ OpenXR is the interface between an application and an XR runtime system, allowin
 
 ### Unity Input System
 
-Conceptually, Unity's Input System will also feel familiar to users of the MRTK2 controller mapping profile. It provides a central place for mapping the buttons and other input axes on a controller or hand to a set of actions. These actions are then consumed by Unity's XR Interaction Toolkit (XRI) and MRTK3, so the object being interacted with doesn't care as much about *what* is manipulating it, just that it *is*.
+Conceptually, Unity's Input System will also feel familiar to users of the MRTK2 controller mapping profile. It provides a central place for mapping the buttons and other input axes on a controller or hand to a set of actions. These actions are then consumed by Unity's XR Interaction Toolkit (XRI) and MRTK3, so the object being interacted with doesn't care as much about _what_ is manipulating it, just that it _is_.
 
 ### XR Interaction Toolkit
 
@@ -46,6 +46,6 @@ XRI provides a foundation of interactors and interactables. MRTK builds upon thi
 
 ## See also
 
-* [Subsystems](subsystems.md)
-* [Interactors](interactors.md)
-* [Interactables](interactables.md)
+- [Subsystems](subsystems.md)
+- [Interactors](interactors.md)
+- [Interactables](interactables.md)

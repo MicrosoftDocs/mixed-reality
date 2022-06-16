@@ -21,7 +21,7 @@ To expand upon the interactable mechanisms included in XRI, MRTK offers two base
 - `MRTKBaseInteractable : XRBaseInteractable`
     - This class offers filtering and flagging for different types of interactors. While the base XRI `XRBaseInteractable` doesn't discriminate between interactor types, `MRTKBaseInteractable` provides convenience functions for checking whether common types of interactions are occurring. Convenience properties like `IsGazeHovered` or `IsGrabSelected` are shortcuts to querying whether a participating interactor implements a given interface (correspondingly, `IGazeInteractor` or `IGrabInteractor`). These flags are more performant than iterating through the list of `interactorsHovering` or `interactorsSelecting`. In addition, `MRTKBaseInteractable` can filter/reject certain types of interactors in the case that the developer wishes to exclude certain input modalities.
 - `StatefulInteractable : MRTKBaseInteractable`
-    - While `MRTKBaseInteractable` simply adds flags and filters, and avoids adding any additional state to the interactable, `StatefulInteractable` introduces useful stateful features like toggling and variable selection. 
+  - While `MRTKBaseInteractable` simply adds flags and filters, and avoids adding any additional state to the interactable, `StatefulInteractable` introduces useful stateful features like toggling and variable selection.
 
 ## Strict separation of state and visuals
 
@@ -60,6 +60,6 @@ In some cases, it's desirable to have interactables respond to UGUI events, such
 
 ![UGUI adapter flow](images/UGUI.svg)
 
-When the `CanvasProxyInteractor` is notified of the UGUI events by the `UGUIInputAdapter`, it issues *equivalent* XRI actions on the relevant interactable. The mapping between UGUI input and XRI actions is somewhat lossy and is an area of active development.
+When the `CanvasProxyInteractor` is notified of the UGUI events by the `UGUIInputAdapter`, it issues _equivalent_ XRI actions on the relevant interactable. The mapping between UGUI input and XRI actions is somewhat lossy and is an area of active development.
 
 With this system, existing XRI interactables that are built for immersive platforms, hands, motion controllers, and 3D input can react equally well to accessible 2D controls like mouse and gamepad.

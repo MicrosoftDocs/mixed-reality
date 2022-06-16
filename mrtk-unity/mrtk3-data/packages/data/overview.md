@@ -18,25 +18,28 @@ Data binding is the process that establishes a connection between an application
 
 Popular data binding frameworks:
 
-* Delphi
-* Windows Presentation Framework (WPF .NET)
-* Windows Forms
-* Angular
-* Backbond
-* JavaFX Bindings
------------------
+- Delphi
+- Windows Presentation Framework (WPF .NET)
+- Windows Forms
+- Angular
+- Backbond
+- JavaFX Bindings
 
-### Windows Presentation Framework data binding block diagram:
+---
+
+### Windows Presentation Framework data binding block diagram
 
 ![Databinding Windows Presentation Framework (WPF)](images/databinding-wpf.png)
 For more information, see [data binding overview - WPF.NET](/dotnet/desktop/wpf/data)
 
 ---
-### MRTK equivalent block diagram:
+
+### MRTK equivalent block diagram
 
 ![MRTK equivalent block diagram](images/databinding-mrtk.jpg)
 
 ---
+
 ### Design Objectives
 
 * Cross platform--deploy anywhere
@@ -59,22 +62,27 @@ For more information, see [data binding overview - WPF.NET](/dotnet/desktop/wpf/
 * Easy to white label and/or apply branding to stock assets with minimal effort
 
 ---
+
 ### Key Features
 
-* Open-ended data sources support any persisted, remote or RAM data strategy.
-* Open-ended data consumers support any UX binding and theming needs.
-* Auto-discovery between data sources and consumers simplifies hookup.
-* Optional auto-configuration from a binding profile
-* Decoupled data model and view support MVC and MVVM patterns.
-* Virtualized collections with navigation via paging and scrolling.
-* Predictive prefetch of collection items for smooth list navigation.
-* Collection objects can be pooled and reused to reduce GC.
-* Can map between differences in data and view keypath namespaces.
+- Open-ended data sources support any persisted, remote or RAM data strategy.
+- Open-ended data consumers support any UX binding and theming needs.
+- Auto-discovery between data sources and consumers simplifies hookup.
+- Optional auto-configuration from a binding profile
+- Decoupled data model and view support MVC and MVVM patterns.
+- Virtualized collections with navigation via paging and scrolling.
+- Predictive prefetch of collection items for smooth list navigation.
+- Collection objects can be pooled and reused to reduce GC.
+- Can map between differences in data and view keypath namespaces.
 
 ---
+
 ### Current Functionality
 
-#### 1. Visualize variable data via data consumers. Currently supported:
+#### 1. Visualize variable data via data consumers
+
+Currently supported:
+
 - TextMeshPro and TextMesh text
 - Text stylesheets (for theming and accessibility)
 - Sprite texture
@@ -94,62 +102,73 @@ For more information, see [data binding overview - WPF.NET](/dotnet/desktop/wpf/
 #### 3. List item placer to manage the visual manifestation of a list
 
 #### 4. List paging, scrolling and virtualization
-  * Data is only fetched when visible or in process
-  * Supports arbitrarily large back-end data sets
-  * Fetching is load balanced across multiple frames
+
+- Data is only fetched when visible or in process
+- Supports arbitrarily large back-end data sets
+- Fetching is load balanced across multiple frames
+
 #### 5. List prefab pooling
-  * Prefabs are reused and repopulated to reduce GC and instantiation time.
-#### 6. Apply themes dynamically to elements at runtime.
+
+- Prefabs are reused and repopulated to reduce GC and instantiation time.
+
+#### 6. Apply themes dynamically to elements at runtime
 
 ---
-## Functionality on the roadmap:
+
+## Functionality on the roadmap
 
 In addition to what's already available, top priorities for additional capabilities include:
 
 ### 1. Data Manipulator pipelines
-  * Conversion between data side and view side values
-  * Localization (seemless integration with Unity localization)
-  * Formatting
-  * Validation
+
+- Conversion between data side and view side values
+- Localization (seamless integration with Unity localization)
+- Formatting
+- Validation
+
 ### 2. Predictive list item prefetch for faster/smoother scrolling/paging
 
 ### 3. More Data Consumers
-  * Set any public property on a Component
-  * Set checkbox on/off state
-  * Set slider value
-  * Set a radio button in a group
-  * Individual Material properties such as set color
+
+- Set any public property on a Component
+- Set checkbox on/off state
+- Set slider value
+- Set a radio button in a group
+- Individual Material properties such as set color
+
 ### 4. Theming
   * See themes applied in Editor even when not running application
   * Update prefabs to reflect an applied theme so it becomes the default theme
   * Theme / style inheritance
 
 ---
+
 ### Terminology
 
-* **Data Source** - Any provider of data, whether it's runtime state, locally persisted, or fetched from a server.
-* **Data Source Provider** - A simple MonoBehaviour that provides access to a Data Source that may not be exposed in the Unity scene graph.
-* **Data Source Type** - A unique name assigned to Data Source such that Data Consumers can specify their desired Data Source(s) by name.
-* **Data Consumer** - Any consumer of data that wishes to act upon data changes, typically a visual element, but not required. As an example, its purpose can be to trigger actions based on data value changes.
-* **Data Controller** - A mechanism for invoking an action with the currently associated data-bound value provided as a parameter.
-* **Keypath** - A data selector that references a specific object in a Data Source. As currently implemented, the keypath format is modelled after JSON data accessors for deciphering any nested combination of maps, lists and atomic elements.
+- **Data Source** - Any provider of data, whether it's runtime state, locally persisted, or fetched from a server.
+- **Data Source Provider** - A simple MonoBehaviour that provides access to a Data Source that may not be exposed in the Unity scene graph.
+- **Data Source Type** - A unique name assigned to Data Source such that Data Consumers can specify their desired Data Source(s) by name.
+- **Data Consumer** - Any consumer of data that wishes to act upon data changes, typically a visual element, but not required. As an example, its purpose can be to trigger actions based on data value changes.
+- **Data Controller** - A mechanism for invoking an action with the currently associated data-bound value provided as a parameter.
+- **Keypath** - A data selector that references a specific object in a Data Source. As currently implemented, the keypath format is modelled after JSON data accessors for deciphering any nested combination of maps, lists and atomic elements.
 
 * **Local Keypath** - A Data Consumer side keypath that can be permanently embedded in a reusable prefab. By way of a combination of resolving collection entities and Keypath Mappers, this will automatically be converted to a fully resolved keypath for a specific item in a collection. When not associated with a collection, these can either map directly to a datum in the data source or can first be modified by way of a Keypath Mapper.
 
-* **Fully Resolved Keypath** - A full, absolute keypath that maps to one specific object in a Data Source. For items in a collection, this is a combination of the fully resolved keypath for one collection entity and a relative (local) keypath for one data element of that collection entity.
+- **Fully Resolved Keypath** - A full, absolute keypath that maps to one specific object in a Data Source. For items in a collection, this is a combination of the fully resolved keypath for one collection entity and a relative (local) keypath for one data element of that collection entity.
 
-* **Keypath Mapper** - Optional namespace mapper between local keypaths and Data Source field names (for example "link" <-> "URL").
+- **Keypath Mapper** - Optional namespace mapper between local keypaths and Data Source field names (for example "link" <-> "URL").
 
-* **Theme** - A Data Source that provides a set of various assets and styles needed to achieve a specific visual aesthetic.
+- **Theme** - A Data Source that provides a set of various assets and styles needed to achieve a specific visual aesthetic.
 
-* **Item Placer** - A DataConsumerCollection companion responsible for placing visible items into a scene.
+- **Item Placer** - A DataConsumerCollection companion responsible for placing visible items into a scene.
 
-* **Data Object Pool** - Instantiated, standby prefabs ready to populate with data for low-GC list navigation.
+- **Data Object Pool** - Instantiated, standby prefabs ready to populate with data for low-GC list navigation.
 
 * **List Virtualization** - Ability to populate, present and navigate lists of arbitrarily large size.
 
 * **Predictive Prefetch** - Pre-fetching data and populating collection prefabs for items that may soon be seen by way of  scrolling/paging.
 
+- **Predictive Prefetch** - Pre-fetching data and populating collection prefabs for items that may soon be seen via scrolling/paging.
 
 ### Key Concepts
 
@@ -174,12 +193,12 @@ of this approach is that it correlates very well with both JSON and XML, which a
 
 Example key paths:
 
-* temperature
-* contacts[10].firstName
-* contacts
-* contacts[10].addresses[3].city
-* [10].title
-* kingdom.animal.mammal.aardvark.diet.foodtypes.termites
+- temperature
+- contacts[10].firstName
+- contacts
+- contacts[10].addresses[3].city
+- [10].title
+- kingdom.animal.mammal.aardvark.diet.foodtypes.termites
 
 Given that a key path is an arbitrary string with no required taxonomy, the actual data specifiers could be any method of describing what data to retrieve. XML's XPath is an
 example of a viable key path schema that would work with data sources. As long as key paths provided by the data consumer
@@ -188,8 +207,9 @@ are consistent with the keypaths expected by the data source, everything will wo
 #### Resolving a Key Path
 
 Resolving a key path means combining two keypaths:
+
 1. An absolute keypath that describes how to access a specific
-subset of a larger dataset, such as one entry in a list of many entries.
+   subset of a larger dataset, such as one entry in a list of many entries.
 2. A partial (relative) keypath that represents a specific datum within that list or map entry.
 
 This makes it possible to treat a subset of the data in such a way that it doesn't matter where in a larger data set hierarchy it actually exists. The most critical
@@ -197,18 +217,17 @@ use of this ability is to describe the data of a single entry in a list without 
 
 Since a "fully resolved" Key path is always generated and consumed by a DataSource and should never (or at least rarely) be modified by a DataConsumer or other external component, it can have any structure that makes sense to the DataSource.  For example, if there's a prefab to show a list entry for a photo and its title, date taken and other attributes, the local key path in the prefab might look like this:
 
-* "photo_url"
-* "title"
-* "date_taken"
-* "description"
+- "photo_url"
+- "title"
+- "date_taken"
+- "description"
 
 The fully resolved key paths for one prefab entry in a list might look like this:
 
-* "f3cb1906-d8b3-489d-9f74-725e5542b55d/photo_url"
-* "f3cb1906-d8b3-489d-9f74-725e5542b55d/title"
-* "f3cb1906-d8b3-489d-9f74-725e5542b55d/date_taken"
-* "f3cb1906-d8b3-489d-9f74-725e5542b55d/description"
-
+- "f3cb1906-d8b3-489d-9f74-725e5542b55d/photo_url"
+- "f3cb1906-d8b3-489d-9f74-725e5542b55d/title"
+- "f3cb1906-d8b3-489d-9f74-725e5542b55d/date_taken"
+- "f3cb1906-d8b3-489d-9f74-725e5542b55d/description"
 
 #### Key Path Mapper (IDataKeyPathMapper)
 
@@ -249,7 +268,6 @@ Theming uses all of the plumbing of data sources and data consumers.  It's possi
 Theming is the ability to change the visual aesthetic of many UX elements at once. Typically, all of the data needed to specify a theme is provided by a single Data Source such as a Scriptable Object. It's also possible for theming data to be provided as needed or divided into logical groups based on its purpose.
 
 ![MRTK3 Theming](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_Theming.png)
-
 
 ## MRTK3 Theming combined with Data Binding
 
@@ -300,7 +318,7 @@ Each control, typically on the topmost GameObject of the root prefab, has a scri
 
 ### DataSourceThemeProvider
 
-The ``DataSourceThemeProvider`` MonoBehaviour can be used to easily make a ScriptableObject containing all references to all theming assets function as a data source. This is demonstrated in the UXThemingExample scene.
+The `DataSourceThemeProvider` MonoBehaviour can be used to easily make a ScriptableObject containing all references to all theming assets function as a data source. This is demonstrated in the UXThemingExample scene.
 
 ### ThemeSelector
 
@@ -319,6 +337,7 @@ Swapping themes at runtime is accomplished by replacing the data at the theme da
 The method of applying a theme to dynamic data can be automatically detected in most cases, or it can be explicitly specified.
 
 When the datum is used to select the correct item from the theme data source, the process is:
+
 - a datum from the primary data source is used to select or construct the correct _theme keypath_
 - the theme keypath is used to retrieve a value from the theme data source specified on the DataConsumerThemeHelper
 - the retrieved theme value is analyzed to auto-detect correct retrieval method
@@ -340,21 +359,21 @@ ResourcePath | A resource path for retrieving the value from a Unity resource (m
 FilePath | A file path for retrieving a Unity streaming asset (may begin with "file://").
 
 ### Auto-detect Data Type
-Autodetect analyzes the data received and decides the retrieval method automatically. In the table below, T represeents the desired type such as Material, Sprite, Image. Autodetect can occur at two places in the process:
+
+Autodetect analyzes the data received and decides the retrieval method automatically. In the table below, T represents the desired type such as Material, Sprite, Image. Autodetect can occur at two places in the process:
 
 - On the primary datum value itself.
 - On the themed value retrieved via the primary datum.
 
-
-Datum Type | Considerations | Has Theme Helper | Behavior
-:---:|---|:---:|---
-T | n/a | Y/N | Used directly with no theming
-int | any integral primitive or Int32 parsable string | No | Passed as index to derived GetObjectByIndex(n) to retrieve Nth object of type T.
-int | any integral primitive or Int32 parsable string | Yes | Index to fetch Nth theme keypath from local lookup and then retrieve themed object via auto-detect.
-string | Format: "resource://{resourcePath}" | Y/N | resourcePath is used to retrieve Unity Resource
-string | Format: "file://{filePath} | Y/N | filePath is used to retrieve a streaming asset
-string | Other | No | Passed as key to derived GetObjectByKey() to retrieve matching object of type T.
-string | Other | Yes | Key to fetch matching theme keypath from local lookup and then retrieve themed object via auto-detect.
+| Datum Type | Considerations                                  | Has Theme Helper | Behavior                                                                                               |
+| :--------: | ----------------------------------------------- | :--------------: | ------------------------------------------------------------------------------------------------------ |
+|     T      | n/a                                             |       Y/N        | Used directly with no theming                                                                          |
+|    int     | any integral primitive or Int32 parsable string |        No        | Passed as index to derived GetObjectByIndex(n) to retrieve Nth object of type T.                       |
+|    int     | any integral primitive or Int32 parsable string |       Yes        | Index to fetch Nth theme keypath from local lookup and then retrieve themed object via auto-detect.    |
+|   string   | Format: "resource://{resourcePath}"             |       Y/N        | resourcePath is used to retrieve Unity Resource                                                        |
+|   string   | Format: "file://{filePath}                      |       Y/N        | filePath is used to retrieve a streaming asset                                                         |
+|   string   | Other                                           |        No        | Passed as key to derived GetObjectByKey() to retrieve matching object of type T.                       |
+|   string   | Other                                           |       Yes        | Key to fetch matching theme keypath from local lookup and then retrieve themed object via auto-detect. |
 
 An example for retrieving a themed status icon from a database containing a numeric status value:
 
@@ -386,19 +405,18 @@ By adding a BindingConfigurator.cs script to the top level of the new control, y
 - Unity 2020.3 LTS or later
 - TextMeshPro 2.1.4 or later
 
-
 ### Sample Scenes
 
-For a first step, take a close look at the various data binding example scenes in the MRTK Examples package and look at how the various data source MonoBehaviours are configured. In general, data binding scripts only need to be placed on the highest level GameObject of a prefab or a related set of UX elements.  
+For a first step, take a close look at the various data binding example scenes in the MRTK Examples package and look at how the various data source MonoBehaviours are configured. In general, data binding scripts only need to be placed on the highest level GameObject of a prefab or a related set of UX elements.
 
 Also, for most use cases, the default values work "out of the box," but the exposed properties provide a lot of flexibility for the more advanced cases.
 
-> [!Note]
-> To enable theming for the standard MRTK UX components, the ``MRTK_UX_DATABINDING_THEMING_ENABLED`` symbol must be defined in Player Settings. This symbol ensures zero performance impact when theming is not needed.
+> [!NOTE]
+> To enable theming for the standard MRTK UX components, the `MRTK_UX_DATABINDING_THEMING_ENABLED` symbol must be defined in Player Settings. This symbol ensures zero performance impact when theming is not needed.
 
 #### Assets/DataBinding Example/Scenes/DataBindingExamples.scene
 
-This scene demonstrates a variety of variable data scenarios--simply load the scene and play. A few things to notice:
+This scene that demonstrates a variety of variable data scenarios. Simply load the scene and play. A few things to notice:
 
 - The Text Input field of TextMeshPro components contains variables that look like this: {{ firstName }}. These markers are used directly as local keypaths.
 
@@ -423,14 +441,16 @@ This example combines theming and data binding to show a battery level both as a
 * The number of sprites for "charging" states can differ from the number for "not charging" state.
 * The algorithm for mapping reported battery level to a particular sprite can be non-linear and differ between "charging" and "not charging" states.
 
-To change the charging level and state, find the ``BatteryLevelDataSource`` script on the ``Battery Level Slate`` GameObject.  Change the values for ``Battery Level 0 to 1`` and ``Is Charging``.
+- All visual assets can exist in a single `ScriptableObject` acting as a theme profile.
+- The number of sprites for charging states can differ from the number for not charging state.
+- The algorithm for mapping reported battery level to which sprite can be non-linear and differ between charging and not charging states.
 
 > [!Note]
 > The structure of this demo is not a good example of combining theming and data binding. In a production application for proper separation of model and view, the actual battery state (level and charging) would be provided in a separate data source than the resource locators for the sprites themselves.
 
 #### Assets/UX Theming Example/Scenes/UXThemingExample
 
-This example demonstrates changing the theme of an entire application and also demonstrates using a ``DataSourceGODictionary`` as a data source for managing a variety of textual content to be displayed in the UX. In a more comprehensive scenario, the other more flexible data source types are likely to provide the needed flexibility, such as ``DataSourceReflection`` or ``DataSourceGOJson``.
+This example demonstrates changing the theme of an entire application and also demonstrates using a `DataSourceGODictionary` as a data source for managing a variety of textual content to be displayed in the UX. In a more comprehensive scenario, the other more flexible data source types are likely to provide the needed flexibility, such as `DataSourceReflection` or `DataSourceGOJson`.
 
 ### First Data Binding project
 

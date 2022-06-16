@@ -36,4 +36,3 @@ Dialog.InstantiateFromPrefab(DialogPrefabSmall, new DialogProperty("Choice Dialo
 ```
 
 For more information, see `DialogExampleController.cs` in DialogExample.unity scene.
-

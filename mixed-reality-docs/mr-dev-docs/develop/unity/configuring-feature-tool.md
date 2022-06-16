@@ -11,11 +11,13 @@ keywords: up-to-date, tools, get started, basics, unity, visual studio, toolkit,
 
 # Configuring the Mixed Reality Feature Tool
 
-When using the Mixed Reality Feature Tool, you have access to three different settings categories that you can customize at will:
+When using the Mixed Reality Feature Tool, you have access to several different settings categories that you can customize at will:
 
 * [Download settings](#download-settings)
 * [Feature settings](#feature-settings)
 * [Import settings](#import-settings)
+* [Early Access settings](#early-access-settings)
+* [Diagnostic settings](#diagnostic-settings)
 
 ## Download settings
 
@@ -49,7 +51,7 @@ Enable this setting to acquire preview releases.
 * By default, preview releases are not shown in the Mixed Reality Feature Tool 
 
 > [!NOTE]
-> A preview release is defined as containing the **"-preview"** designation in the package version.
+> A preview release is defined as containing the **"-preview"** or **"-pre"** designation in the package version.
 
 ### Show early access program features
 

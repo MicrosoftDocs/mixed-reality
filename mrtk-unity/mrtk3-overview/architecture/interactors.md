@@ -80,7 +80,7 @@ Interactors that implement this interface represent a ray-based pointing interac
 
 The MRTK implementation of this interface is `MRTKRayInteractor`, inheriting directly from the XRI `XRRayInteractor`.
 
-> [!Note]
+> [!NOTE]
 > The XRI `XRRayInteractor` doesn't implement this MRTK interface.
 
 ### ISpeechInteractor
