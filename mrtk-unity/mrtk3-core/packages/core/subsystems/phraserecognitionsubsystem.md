@@ -11,11 +11,11 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, phrase
 # Core Subsystem: PhraseRecognitionSubsystem | MRTK3
 
 > [!NOTE]
-> For general information on subsystems in MRTK3, please see [here](../../../../mrtk3-overview/architecture/subsystems.md).
+> For general information on subsystems in MRTK3, see [here](../../../../mrtk3-overview/architecture/subsystems.md).
 
-The Core Definitions package ships `PhraseRecognitionSubsystem`, a base implementation of `MRTKSubsystem` and `IPhraseRecognitionSubsystem` that serves  as the base of subsystems responsible for keyword/phrase recognition in MRTK3. Concrete implementation shipped as part of MRTK such as `WindowsPhraseRecognitionSubsystem`, as well as other potential phrase recognition subsystems you might build, should all be based on this class. Subsystems inheriting from `PhraseRecognitionSubsystem` can work with `SpeechInteractor` to trigger select events on `StatefulInteractable`s based on the settings of the interactables. The inherited subclasses will also allow the registration of arbitrary `UnityAction`s to a keyword of your choice so that the action will be invoked when such word is said.
+The Core Definitions package ships `PhraseRecognitionSubsystem`, a base implementation of `MRTKSubsystem` and `IPhraseRecognitionSubsystem` that serves  as the base of subsystems responsible for keyword/phrase recognition in MRTK3. Concrete implementation shipped as part of MRTK such as `WindowsPhraseRecognitionSubsystem` and other potential phrase recognition subsystems you might build should all be based on this class. Subsystems inheriting from `PhraseRecognitionSubsystem` can work with `SpeechInteractor` to trigger select events on `StatefulInteractable`s based on the settings of the interactables. The inherited subclasses will also allow the registration of arbitrary `UnityAction`s to a keyword of your choice so that the action will be invoked when such word is said.
 
-Please refer to the documentation of the concrete `PhraseRecognitionSubsystem` implementation you want to use for more specific information.
+For more specific information, refer to the documentation of the concrete `PhraseRecognitionSubsystem` implementation you want to use.
 
 ## Setup
 
@@ -31,8 +31,8 @@ Go to **Project Settings** > **MRTK3** **Available MRTK Subsystems** and then en
 For certain subsystems, a [configuration asset](../../../../mrtk3-overview/architecture/subsystems.md#configuration) is required in order for it to perform normally. 
 
 1. Click the subsystem you enabled in Setup 1.
-1. Check to see if an empty `Configuration Asset` slot shows up under Subsystem Details on the right. If so, create a new config by selecting **Assets** -> **Create** **MRTK** > **Subsystems** > **[name of your subsystem] Config** and then draging the created config onto the slot. 
-1. After making sure the config slot is populated, change the settings in the newly created config for your specific project. Remember to save the project when you are finished.
+1. Check to see if an empty `Configuration Asset` slot shows up under Subsystem Details on the right. If so, create a new config by selecting **Assets** -> **Create** **MRTK** > **Subsystems** > **[name of your subsystem] Config** and then dragging the created config onto the slot. 
+1. After making sure the config slot is populated, change the settings in the newly created config for your specific project. Remember to save the project when you're finished.
 
 ### 3. Ensure the MRTK Speech GameObject is active (required in order for `StatefulInteractable`s (for example, buttons) to respond to phrases)
 
@@ -40,7 +40,7 @@ Ensure MRTK XR Rig -> MRTK Speech is active and the attached script(s) is enable
 
 ### 4. Ensure the proper capabilities are set in Player Settings
 
-Different implementations of `PhraseRecognitionSubsystem` have different required capabilities. Please refer to the documentation of the subsystem you want to use for more information.
+Different implementations of `PhraseRecognitionSubsystem` have different required capabilities. For more information, refer to the documentation of the subsystem you want to use.
 
 As an example, to use `WindowsPhraseRecognitionSubsystem` on UWP Platform, go to **Project Settings** > **Player** > **Publishing Settings** > **Capabilities** and ensure the Microphone capability is set.
 
@@ -52,7 +52,7 @@ The project should now be ready to run on device or in editor.
 
 ### Using PhraseRecognitionSubsystem with `StatefulInteractable`s (for example, buttons)
 
-The easiest way to use `PhraseRecognitionSubsystem` is to use it with `StatefulInteractable`s. If Step 3 under the setup section is performed, the `SpeechInteractor` will trigger select events on `StatefulInteractable`s when the conditions specified on such interactables are met (for example, a specified phrase is heard and the interactable is being gaze-hovered). Please see the inspector of `StatefulInteractable` and `SpeechInteractor` (MRTK XR Rig -> MRTK Speech) for configurable settings.
+The easiest way to use `PhraseRecognitionSubsystem` is to use it with `StatefulInteractable`s. If Step 3 under the setup section is performed, the `SpeechInteractor` will trigger select events on `StatefulInteractable`s when the conditions specified on such interactables are met (for example, a specified phrase is heard and the interactable is being gaze-hovered). See the inspector of `StatefulInteractable` and `SpeechInteractor` (MRTK XR Rig -> MRTK Speech) for configurable settings.
 
 ### Using PhraseRecognitionSubsystem manually
 

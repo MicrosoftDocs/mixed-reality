@@ -92,7 +92,7 @@ Currently supported:
 - Collections: arbitrary sized lists containing prefabs populated with variable data
 - Any other consumer that supports the IDataConsumer interface (directly or via base classes derivations)
 
-#### 2. Provide variable data by way of a variety of data sources:
+#### 2. Provide variable data using a variety of data sources:
   * JSON text (directly or by way of URL fetch)
   * Dictionary of variable data elements
   * Object - Node based structured data
@@ -117,7 +117,7 @@ Currently supported:
 
 ## Functionality on the roadmap
 
-In addition to what's already available, top priorities for additional capabilities include:
+In addition to what's already available, top priorities for more capabilities include:
 
 ### 1. Data Manipulator pipelines
 
@@ -152,7 +152,7 @@ In addition to what's already available, top priorities for additional capabilit
 - **Data Controller** - A mechanism for invoking an action with the currently associated data-bound value provided as a parameter.
 - **Keypath** - A data selector that references a specific object in a Data Source. As currently implemented, the keypath format is modelled after JSON data accessors for deciphering any nested combination of maps, lists and atomic elements.
 
-* **Local Keypath** - A Data Consumer side keypath that can be permanently embedded in a reusable prefab. By way of a combination of resolving collection entities and Keypath Mappers, this will automatically be converted to a fully resolved keypath for a specific item in a collection. When not associated with a collection, these can either map directly to a datum in the data source or can first be modified by way of a Keypath Mapper.
+* **Local Keypath** - A Data Consumer side keypath that can be permanently embedded in a reusable prefab. Through resolving collection entities and Keypath Mappers, this will automatically be converted to a fully resolved keypath for a specific item in a collection. When not associated with a collection, these can either map directly to a datum in the data source or can first be modified by way of a Keypath Mapper.
 
 - **Fully Resolved Keypath** - A full, absolute keypath that maps to one specific object in a Data Source. For items in a collection, this is a combination of the fully resolved keypath for one collection entity and a relative (local) keypath for one data element of that collection entity.
 
@@ -178,7 +178,7 @@ A data source is any managed set of data of arbitrary type(s) and complexity tha
 
 #### Data Source Provider
 
-A simple interface that has a single method to retrieve a data source. This is designed to allow a MonoBehavior scripting component to be auto-discovered in the game object hierarchy by data consumer components, but without the need to implement a data source directly on the game object itself.  This is useful when an existing MonoBehaviour must derive from another class and multiple inheritance prevents deriving from DataSourceGOBase. It also allows more code to have no Unity dependencies.
+A simple interface that has a single method to retrieve a data source. This is designed to allow a MonoBehavior scripting component to be auto-discovered in the game object hierarchy by data consumer components. There's no need to implement a data source directly on the game object itself. This is useful when an existing MonoBehaviour must derive from another class and multiple inheritance prevents deriving from DataSourceGOBase. It also allows more code to have no Unity dependencies.
 
 #### Data Source Provider Singleton
 
@@ -188,8 +188,7 @@ The ``DataSourceProviderSingleton`` MonoBehaviour makes it possible to specify a
 
 A key path is the mechanism to uniquely identify any piece of information in a data source.
 
-Although a key path can be any unique identifier per data item, all current implementations use the concept of a logical user readable specifier that indicates the navigational position of the data of interest relative to the entire structured data set. It's modeled on Javascript's concept of lists, dictionaries and primitives, such that key paths are syntactically correct Javascript statements for accessing data that can be represented in JSON. The advantage
-of this approach is that it correlates very well with both JSON and XML, which are the two most prevalent means of transferring information from backend services.
+Although a key path can be any unique identifier per data item, current implementations use a logical user readable specifier that indicates the navigational position of the data of interest relative to the entire structured data set. It's modeled on Javascript's concept of lists, dictionaries and primitives. Key paths are syntactically correct Javascript statements for accessing data that can be represented in JSON. The advantage of this approach is that it correlates well with both JSON and XML. These are the two most prevalent means of transferring information from backend services.
 
 Example key paths:
 
@@ -215,7 +214,7 @@ Resolving a key path means combining two keypaths:
 This makes it possible to treat a subset of the data in such a way that it doesn't matter where in a larger data set hierarchy it actually exists. The most critical
 use of this ability is to describe the data of a single entry in a list without worrying about which entry in that list the current instance is referencing.
 
-Since a "fully resolved" Key path is always generated and consumed by a DataSource and should never (or at least rarely) be modified by a DataConsumer or other external component, it can have any structure that makes sense to the DataSource.  For example, if there's a prefab to show a list entry for a photo and its title, date taken and other attributes, the local key path in the prefab might look like this:
+Since a "fully resolved" Key path is always generated and consumed by a DataSource and should rarely or never be modified by a DataConsumer or other external component, it can have any structure that makes sense to the DataSource.  For example, if there's a prefab to show a list entry for a photo and its title, date taken and other attributes, the local key path in the prefab might look like this:
 
 - "photo_url"
 - "title"

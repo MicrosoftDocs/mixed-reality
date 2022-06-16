@@ -1,6 +1,6 @@
 ---
 title: Near Menu | MRTK3
-description: Hand menus in MRTK3
+description: Details about the "near" hand menu in MRTK3
 author: Zee2
 ms.author: finnsinclair
 ms.date: 4/15/2022

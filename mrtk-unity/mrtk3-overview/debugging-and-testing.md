@@ -22,4 +22,4 @@ Compiling and deploying your app can take a significant amount of time, so we re
     - Some aspects of hand interactions are still being developed for Quest, and your results may vary.
     - Controller interactions should be full parity over Link.
 
-If you've deployed a build to your target device of choice, you can debug the build as it runs on device with [Managed debugging](https://docs.microsoft.com/windows/mixed-reality/develop/unity/managed-debugging-with-unity-il2cpp).
+If you've deployed a build to your target device of choice, you can debug the build as it runs on device with [Managed debugging](/windows/mixed-reality/develop/unity/managed-debugging-with-unity-il2cpp).
