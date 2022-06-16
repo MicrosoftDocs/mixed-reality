@@ -202,7 +202,7 @@ Now you will begin the creation and setup of your **IoT Hub Service**.
 
 9. Once the notification pops up informing you of the successful creation of the *IoT Hub* Service, click on **Go to resource** to be redirected to your Service page.
 
-    ![Screenshot that shows the Deployment succeeded notification. The Go to resource button is circled in red.](images/AzureLabs-Lab313-15.png)
+    ![Screenshot that shows a Deployment succeeded notification. The Go to resource button is circled in red.](images/AzureLabs-Lab313-15.png)
 
 10. Scroll the side panel on the left until you see *Automatic Device Management*, the click on **IoT Edge**.
 
