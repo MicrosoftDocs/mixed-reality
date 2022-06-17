@@ -144,6 +144,10 @@
         "./mrtk2/**/*.yml": ["Mixed Reality","MRTK 2"],
         "./mrtk3*/**/*.md": ["Mixed Reality","MRTK3"],
         "./mrtk3*/**/*.yml": ["Mixed Reality","Mrtk3"]
+      },
+      "titleSuffix": {
+        "./mrtk2/**/*.md": "MRTK 2",
+        "./mrtk2/**/*.yml": "MRTK 2"
       }
     },
     "template": [],
