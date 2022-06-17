@@ -1180,7 +1180,7 @@ To visualize the data from your IOT device you will setup **Power BI** (desktop 
 
 1.  Open the Microsoft Store on Windows 10 and search for **Power BI Desktop**.
 
-    ![Screenshot that shows the Microsoft Store window. Power BI is entered in the search bar and Power BI Desktop is circled in red.](images/AzureLabs-Lab313-73.png)
+    ![Screenshot that shows the Microsoft Store window. Power B I is entered in the search bar and Power B I Desktop is circled in red.](images/AzureLabs-Lab313-73.png)
 
 2.  Download the application. Once it has finished downloading, open it.
 
@@ -1188,7 +1188,7 @@ To visualize the data from your IOT device you will setup **Power BI** (desktop 
 
 4.  Click on **Get Data** and then click on **More...**.
 
-    ![Screenshot that shows Power BI Desktop. More is circled in red in the Get Data drop down menu.](images/AzureLabs-Lab313-74.png)
+    ![Screenshot that shows Power B I Desktop. More is circled in red in the Get Data drop down menu.](images/AzureLabs-Lab313-74.png)
 
 5.  Click **Azure**, **Azure Table Storage**, then click on **Connect**.
 
@@ -1228,13 +1228,13 @@ To visualize the data from your IOT device you will setup **Power BI** (desktop 
 
 14. Click on the **blue disk icon** at the top left of the window to save your work in a folder of your choice.
 
-    ![Screenshot that shows the Power BI Desktop. The blue disk in the top left corner is circled in red. The Save As dialog is open and the Save button is circled in red.](images/AzureLabs-Lab313-84.png)
+    ![Screenshot that shows the Power B I Desktop. The blue disk in the top left corner is circled in red. The Save As dialog is open and the Save button is circled in red.](images/AzureLabs-Lab313-84.png)
 
 15. You can now click on the Publish button to upload your table to your Workspace. When prompted, click **My workspace** and click *Select*. Wait for it to display the successful result of the submission.
 
-    ![Screenshot that shows Publish circled in red. In the Publish to Power BI dialog, My workspace is selected under Select a destination.](images/AzureLabs-Lab313-85.png)
+    ![Screenshot that shows Publish circled in red. In the Publish to Power B I dialog, My workspace is selected under Select a destination.](images/AzureLabs-Lab313-85.png)
 
-    ![Screenshot that shows a notification indicating that Publishing to Power BI was a success.](images/AzureLabs-Lab313-86.png)
+    ![Screenshot that shows a notification indicating that Publishing to Power B I was a success.](images/AzureLabs-Lab313-86.png)
 
 > [!WARNING]
 > The following Chapter is HoloLens specific. Power BI is not currently available as an immersive application, however you can run the desktop version in the Windows Mixed Reality Portal (aka Cliff House), through the Desktop app.
@@ -1247,7 +1247,7 @@ To visualize the data from your IOT device you will setup **Power BI** (desktop 
 
 2. Search and then download the **Power BI** application.
 
-    ![Holo Lens display that shows the Microsoft Store page. Scroll Tool is selected and power bi is entered in the search bar.](images/AzureLabs-Lab313-88.png)
+    ![Holo Lens display that shows the Microsoft Store page. Scroll Tool is selected and power B I is entered in the search bar.](images/AzureLabs-Lab313-88.png)
 
 3. Start **Power BI** from your applications list. 
 
@@ -1255,13 +1255,13 @@ To visualize the data from your IOT device you will setup **Power BI** (desktop 
 
 5. Once inside the app, the workspace should display by default as shown in the image below. If that does not happen, simply click on the workspace icon on the left side of the window.
 
-    ![Holo Lens display that shows the Microsoft Power Bi page. Drag Tool is selected at the top. The workspace icon, which resembles a figure, is circled in red. I O T Edge Table under Reports is circled in red.](images/AzureLabs-Lab313-89.png)
+    ![Holo Lens display that shows the Microsoft Power B I page. Drag Tool is selected at the top. The workspace icon, which resembles a figure, is circled in red. I O T Edge Table under Reports is circled in red.](images/AzureLabs-Lab313-89.png)
 
 ## Your finished your IoT Hub application
 
 Congratulations, you have successfully created an IoT Hub Service, with a simulated Virtual Machine Edge device. Your device can  communicate the results of a machine learning model to an Azure Table Service, facilitated by an Azure Function App, which is read into Power BI, and visualized within a Microsoft HoloLens.
  
-![Holo Lens display that shows the Microsoft Power BI page.](images/AzureLabs-Lab313-00.png)
+![Holo Lens display that shows the Microsoft Power B I page.](images/AzureLabs-Lab313-00.png)
 
 ## Bonus exercises
 
