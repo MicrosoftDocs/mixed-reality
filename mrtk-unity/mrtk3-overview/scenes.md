@@ -96,7 +96,7 @@ Using Data Binding to update a battery level display.
 
 Example of using Data Binding and Theming to control the look of UX Core components.
 
-**Assets\UX Theming Example\Scenes\DataBindingExamples**
+**Assets\Data Binding Example\Scenes\DataBindingExamples**
 
 Demonstration of using Data Binding and Theming to bind to data sources.
 
