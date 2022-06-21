@@ -1,5 +1,5 @@
 ---
-title: Speech
+title: Speech -- MRTK2
 description: configuring Speech input in MRTK
 author: keveleigh
 ms.author: kurtie
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Speech,
 ---
 
-# Speech
+# Speech -- MRTK2
 
 ![Near Menu](../images/input/MRTK_Input_Speech.png)
 

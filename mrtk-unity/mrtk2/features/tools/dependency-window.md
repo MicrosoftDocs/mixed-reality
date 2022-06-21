@@ -1,5 +1,5 @@
 ---
-title: Dependency window
+title: Dependency window -- MRTK2
 description: Documentation on usage of dependency window in MRTK
 author: keveleigh
 ms.author: kurtie
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Dependency window
+# Dependency window -- MRTK2
 
 In Unity, it is often difficult to gleam which assets are being used, and what is referencing them. The "Find References in Scene" option works great when you are only concerned with the current scene, but what about your entire Unity project? This is where the **Dependency Window** (Assets/MRTK/Tools/DependencyWindow) can be useful.
 

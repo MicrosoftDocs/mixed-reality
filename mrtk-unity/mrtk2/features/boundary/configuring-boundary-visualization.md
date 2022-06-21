@@ -1,5 +1,5 @@
 ---
-title: Configuring boundary visualization
+title: Configuring boundary visualization -- MRTK2
 description: Details to configure the Boundary system in MRTK
 author: davidkline-ms
 ms.author: davidkl
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Boundary System,
 ---
 
-# Configuring boundary visualization
+# Configuring boundary visualization -- MRTK2
 
 The *Boundary Visualization Profile* provides options for configuring the visual aesthetics and other related parameters for the Boundary system. Boundary visualizations are attached to the Mixed Reality Playspace object in the scene and teleport with the user.
 

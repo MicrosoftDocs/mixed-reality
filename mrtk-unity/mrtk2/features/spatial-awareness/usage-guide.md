@@ -1,5 +1,5 @@
 ---
-title: UsingGuide
+title: Configuring mesh observers via code -- MRTK2
 description: describes the key mechanisms and APIs to programmatically configure the Spatial Awareness system
 author: davidkline-ms
 ms.author: davidkl

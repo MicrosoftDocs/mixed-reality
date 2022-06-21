@@ -1,5 +1,5 @@
 ---
-title: Asset swap utility
+title: Asset swap utility -- MRTK2
 description: Documentation on using the asset swap utility in MRTK for Unity.
 author: sean-kerawala
 ms.author: sekerawa
@@ -7,7 +7,7 @@ ms.date: 03/9/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK
 ---
 
-# Asset swap utility
+# Asset swap utility -- MRTK2
 
 Find and replace is ubiquitous when working in text and content creation tools. When you need to swap many assets within a Unity scene this is where the [AssetSwapUtility](xref:Microsoft.MixedReality.Toolkit.Utilities.Editor.AssetSwapUtility) [ScriptableObject](https://docs.unity3d.com/Manual/class-ScriptableObject.html) and editor can lend a hand. The utility is included with the `Microsoft.MixedReality.Toolkit.Unity.Tools` package.
 

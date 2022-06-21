@@ -1,5 +1,5 @@
 ---
-title: Experience settings
+title: Experience settings -- MRTK2
 description: Documentation on the different experience settings for MRTK
 author: RogPodge
 ms.author: roliu
@@ -8,7 +8,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK
 monikerRange: '>= mrtkunity-2021-05'
 ---
 
-# Experience settings
+# Experience settings -- MRTK2
 
 One of the challenges of creating UI for Mixed Reality is aligning across different experiences. With MRTK, you can set the `Target Experience Scale` and the `Content Offset` for your scene, will configue the following 
 to behave appropriately for the target scale.

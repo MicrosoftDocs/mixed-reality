@@ -1,5 +1,5 @@
 ---
-title: MRTK modularization
+title: MRTK modularization -- MRTK2
 description: Describes Componentization in MRTK.
 author: davidkline-ms
 ms.author: davidkl
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# MRTK modularization
+# MRTK modularization -- MRTK2
 
 One of the great new features of Mixed Reality Toolkit v2 is improved componentization. Wherever possible, individual components are isolated from all but the core layer of the foundation.
 

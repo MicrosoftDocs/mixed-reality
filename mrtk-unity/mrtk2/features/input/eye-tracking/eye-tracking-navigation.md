@@ -1,5 +1,5 @@
 ---
-title: Eye Tracking Navigation
+title: Eye Tracking Navigation -- MRTK2
 description: How to use eye targeting for Navigation in MRTK
 author: CDiaz-MS
 ms.author: cadia
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, EyeTracking,
 ---
 
-# Eye-supported navigation in MRTK
+# Eye-supported navigation in MRTK -- MRTK2
 
 ![MRTK](../../images/eye-tracking/mrtk_et_navigation.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Input Overview
+title: Input Overview -- MRTK2
 description: Overview of Input system in MRTK
 author: keveleigh
 ms.author: kurtie
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Input overview
+# Input overview -- MRTK2
 
 The Input System in MRTK allows you to:
 

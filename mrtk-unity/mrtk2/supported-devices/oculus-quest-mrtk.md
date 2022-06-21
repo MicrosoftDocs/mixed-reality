@@ -1,5 +1,5 @@
 ---
-title: Deploying to Oculus Quest
+title: Deploying to Oculus Quest -- MRTK2
 description: Documentation to configure for Oculus Quest in MRTK
 author: RogPodge
 ms.author: roliu
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Oculus Quest
 ---
 
-# Deploying to Oculus Quest
+# Deploying to Oculus Quest -- MRTK2
 
 An [Oculus Quest](https://www.oculus.com/quest/) is required.
 

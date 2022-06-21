@@ -1,5 +1,5 @@
 ---
-title: Extension service creation wizard
+title: Extension service creation wizard -- MRTK2
 description: Documentation on Wizard to make the transition from singletons to services MRTK
 author: keveleigh
 ms.author: kurtie
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Extension service creation wizard
+# Extension service creation wizard -- MRTK2
 
 Making the transition from singletons to services can be difficult. This wizard can supplement our other documentation and sample code by enabling devs to create new services with (roughly) the same ease as creating a new MonoBehaviour script. To learn about creating services from scratch, see our [Guide to building Registered Services](../../configuration/mixed-reality-configuration-guide.md) (Coming soon).
 

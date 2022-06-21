@@ -1,5 +1,5 @@
 ---
-title: Hand tracking
+title: Hand tracking -- MRTK2
 description: Documentation on how to use HandTracking in MRTK
 author: keveleigh
 ms.author: kurtie
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Hand Tracking,
 ---
 
-# Hand tracking
+# Hand tracking -- MRTK2
 
 ## Hand tracking profile
 

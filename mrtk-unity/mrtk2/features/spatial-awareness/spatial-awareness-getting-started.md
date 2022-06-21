@@ -1,5 +1,5 @@
 ---
-title: Spatial awareness getting started
+title: Spatial awareness getting started -- MRTK2
 description: describes Spatial awareness in MRTK
 author: davidkline-ms
 ms.author: davidkl
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Spatial awareness getting started
+# Spatial awareness getting started -- MRTK2
 
 ![Spatial Awareness](../images/spatial-awareness/MRTK_SpatialAwareness_Main.png)
 

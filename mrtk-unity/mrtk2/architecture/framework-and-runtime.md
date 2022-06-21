@@ -1,5 +1,5 @@
 ---
-title: Framework and runtime
+title: Framework and runtime -- MRTK2
 description: Information related to framework and runtime in MRTK.
 author: keveleigh
 ms.author: kurtie
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Framework and runtime
+# Framework and runtime -- MRTK2
 
 ## Changes to the scene
 

@@ -1,5 +1,5 @@
 ---
-title: Scene understanding observer
+title: Scene understanding observer -- MRTK2
 description: describes Scene Understanding in MRTK
 author: MaxWang-MS
 ms.author: wangmax
@@ -7,7 +7,7 @@ ms.date: 05/27/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Scene Understanding
 ---
 
-# Scene understanding observer
+# Scene understanding observer -- MRTK2
 
 [Scene Understanding](/windows/mixed-reality/scene-understanding) returns a semantic representation of scene entities as well as their geometric forms on __HoloLens 2__ (HoloLens 1st Gen is not supported).
 

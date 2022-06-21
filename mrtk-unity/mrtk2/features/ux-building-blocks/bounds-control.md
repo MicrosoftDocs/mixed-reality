@@ -1,5 +1,5 @@
 ---
-title: Bounds control
+title: Bounds control -- MRTK2
 description: Overview on Bounds Control in MRTK
 author: thalbern
 ms.author: bethalha
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Bounds Control,
 ---
 
-# Bounds control
+# Bounds control -- MRTK2
 
 ![Bounds control](../images/bounds-control/MRTK_BoundsControl_Main.png)
 

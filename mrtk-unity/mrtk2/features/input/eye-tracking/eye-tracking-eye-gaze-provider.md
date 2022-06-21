@@ -1,5 +1,5 @@
 ---
-title: Eye Tracking Eye Gaze Provider
+title: Eye Tracking Eye Gaze Provider -- MRTK2
 description: Documentation for Eye Gaze provider in MRTK
 author: CDiaz-MS
 ms.author: cadia
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, EyeTracking, EyeGaze,
 ---
 
-# Accessing eye tracking data in your Unity script
+# Accessing eye tracking data in your Unity script -- MRTK2
 
 This article assumes one has understanding for setting up eye tracking in an MRTK scene (see [Basic MRTK setup to use eye tracking](eye-tracking-basic-setup.md)).
 Accessing eye tracking data in a MonoBehaviour script is easy! Simply use *CoreServices.InputSystem.EyeGazeProvider*.

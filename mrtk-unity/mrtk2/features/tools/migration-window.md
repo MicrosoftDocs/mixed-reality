@@ -1,5 +1,5 @@
 ---
-title: Migration window
+title: Migration window -- MRTK2
 description: Documentation on how to migrate to an update in MRTK
 author: keveleigh
 ms.author: kurtie
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Migration window
+# Migration window -- MRTK2
 
 As the MRTK undergoes changes, some components might get deprecated and replacements will get introduced.
 The migration window is a tool that helps users to automatically migrate a subset of those deprecated components to the new replacements.

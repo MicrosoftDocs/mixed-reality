@@ -1,5 +1,5 @@
 ---
-title: Core system
+title: Core system -- MRTK2
 description: Input system, device managers, and data providers in MRTK
 author: cDiaz-MS
 ms.author: cadia
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Events
 ---
 
-# Core system
+# Core system -- MRTK2
 
 At the heart of the input system is the [InputSystem](../features/input/overview.md), which is a service that is responsible for initializing and operating all of the input related functionality associated with the MRTK.
 

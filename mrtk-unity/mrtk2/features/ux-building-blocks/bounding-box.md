@@ -1,5 +1,5 @@
 ---
-title: Bounding box
+title: Bounding box -- MRTK2
 description: Overview on Bounding Box in MRTK
 author: CDiaz-MS
 ms.author: cadia
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Bounding Box
 ---
 
-# Bounding box
+# Bounding box -- MRTK2
 
 ![Bounding box](../images/bounding-box/MRTK_BoundingBox_Main.png)
 

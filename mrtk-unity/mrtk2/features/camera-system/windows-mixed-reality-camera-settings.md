@@ -1,5 +1,5 @@
 ---
-title: Windows Mixed Reality camera settings
+title: Windows Mixed Reality camera settings provider -- MRTK2
 description: Documentation to use Windows Mixed Reality camera settings in MRTK
 author: davidkline-ms
 ms.author: davidkl
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Camera,
 ---
 
-# Windows Mixed Reality camera settings provider
+# Windows Mixed Reality camera settings provider -- MRTK2
 
 The Windows Mixed Reality camera settings provider determines the type of device, upon which the application is running and applies the appropriate configuration settings based on the display (transparent or opaque).
 

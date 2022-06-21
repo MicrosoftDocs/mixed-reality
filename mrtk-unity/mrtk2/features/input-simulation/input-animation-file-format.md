@@ -1,5 +1,5 @@
 ---
-title: Input animation file format
+title: Input animation file format -- MRTK2
 description: Documentation on Input animation binary file format specification in MRTK
 author: CDiaz-MS
 ms.author: cadia
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Input animation file format
+# Input animation file format -- MRTK2
 
 ## Overall structure
 

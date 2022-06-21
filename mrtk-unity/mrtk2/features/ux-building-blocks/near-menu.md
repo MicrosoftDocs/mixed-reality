@@ -1,5 +1,5 @@
 ---
-title: Near menu
+title: Near menu -- MRTK2
 description: Overview Near Menu types in MRTK
 author: CDiaz-MS
 ms.author: cadia
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Near Menu,
 ---
 
-# Near menu
+# Near menu -- MRTK2
 
 ![Near Menu](../images/near-menu/MRTK_UX_NearMenu.png)
 

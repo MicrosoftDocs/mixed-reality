@@ -1,5 +1,5 @@
 ---
-title: Input feature usage tool
+title: Input feature usage tool -- MRTK2
 description: Documentation InputFeatureUsage tool in MRTK
 author: keveleigh
 ms.author: kurtie
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Input feature usage tool
+# Input feature usage tool -- MRTK2
 
 The InputFeatureUsage tool is a runtime (on device or in the editor) tool that enables developers to quickly determine the available Unity InputFeatureUsages for a detected input source (ex: motion controller or articulated hand).
 

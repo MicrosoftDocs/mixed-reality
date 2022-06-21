@@ -1,5 +1,5 @@
 ---
-title: Lost tracking service
+title: Lost tracking service -- MRTK2
 description: Overview on LostTracking Service in MRTK
 author: CDiaz-MS
 ms.author: cadia
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Lost tracking service
+# Lost tracking service -- MRTK2
 
 ![Lost Tracking](../images/lost-tracking/LostTrackingVisualization.jpg)
 

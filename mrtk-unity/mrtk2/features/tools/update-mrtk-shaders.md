@@ -1,5 +1,5 @@
 ---
-title: Shader Update Tool
+title: Shader Update Tool -- MRTK2
 description: Documentation on how to update MRTK standard shaders
 author: davidkline-ms
 ms.author: davidkl
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Updating Shaders
+# Updating Shaders -- MRTK2
 
 Starting with version 2.6.0, the MRTK shaders are being versioned via the MRTK.Shaders.sentinel file. When upgrading to a new version of MRTK, the following message may appear.
 

@@ -1,5 +1,5 @@
 ---
-title: Configuring mesh observers for device
+title: Configuring mesh observers for device -- MRTK2
 description: How configure the out-of-box Spatial Mesh Observer in MRTK
 author: davidkline-ms
 ms.author: davidkl
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Configuring mesh observers for device
+# Configuring mesh observers for device -- MRTK2
 
 This guide will walk through configuring the out-of-box Spatial Mesh Observer in MRTK which supports the Windows Mixed Reality platform (i.e HoloLens). The default implementation provided by the Mixed Reality Toolkit is the [WindowsMixedRealitySpatialMeshObserver](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver) class. Many of the properties in this article though apply for other [custom Observer implementations](create-data-provider.md).
 

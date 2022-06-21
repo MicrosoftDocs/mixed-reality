@@ -1,5 +1,5 @@
 ---
-title: Scene System Lighting Scenes
+title: Scene System Lighting Scenes -- MRTK2
 description: Documentation on Lighting in the scene.
 author: polar-kev
 ms.author: alexturn
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Lighting scene operations
+# Lighting scene operations -- MRTK2
 
 The default lighting scene defined in your profile is loaded on startup. That lighting scene remains loaded until `SetLightingScene` is called.
 

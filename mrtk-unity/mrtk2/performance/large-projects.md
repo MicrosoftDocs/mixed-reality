@@ -1,5 +1,5 @@
----
-title: Using MRTK in large projects
+g---
+title: Using MRTK2 in large projects
 description: Tips for consumers of MRTK with large projects.
 author: polar-kev
 ms.author: kurtie
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Using MRTK in large projects
+# Using MRTK2 in large projects
 
 This page contains some useful tips for consumers of MRTK that are pulling it into existing
 large projects, or setting up something new that will be source controlled and have multiple

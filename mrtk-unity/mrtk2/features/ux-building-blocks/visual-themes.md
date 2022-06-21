@@ -1,5 +1,5 @@
 ---
-title: Visual themes
+title: Visual themes -- MRTK2
 description: Overview Visual Themes flexible control of UX assets in MRTK
 author: CDiaz-MS
 ms.author: cadia
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK Themes,
 ---
 
-# Visual themes
+# Visual themes -- MRTK2
 
 Themes allow for flexible control of UX assets in response to various states transitions. This may involve changing a button's color, resizing an element in response to focus, etc. The Visual Themes framework is made up of two key pieces: 1) configuration and 2) runtime engines.
 
