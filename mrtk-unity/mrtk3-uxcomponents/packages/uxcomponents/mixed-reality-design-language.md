@@ -1,5 +1,5 @@
 ---
-title: Mixed Reality Design Language | MRTK3
+title: Mixed Reality Design Language -- MRTK3
 description: Exploring the new Mixed Reality Design Language.
 author: Zee2
 ms.author: finnsinclair
@@ -7,7 +7,7 @@ ms.date: 4/15/2022
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, design, UI, design language, UX
 ---
 
-# Mixed Reality Design Language | MRTK3
+# Mixed Reality Design Language -- MRTK3
 
 ![Button Main](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_Button.png)
 

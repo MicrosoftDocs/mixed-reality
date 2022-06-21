@@ -1,5 +1,5 @@
 ---
-title: Measure Tool
+title: Measure Tool -- MRTK3
 description: Learn about the Measure Tools.
 author: breezinstein
 ms.author: adogundi
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, Measure Tool
 ---
 
-# Getting started with the Measure Tool
+# Getting started with the Measure Tool -- MRTK3
 The _Measure Tool_ is a tool to view the local sizes of objects to graphics tools.
 
 

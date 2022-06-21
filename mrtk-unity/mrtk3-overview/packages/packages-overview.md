@@ -1,5 +1,5 @@
 ---
-title: Mixed Reality Toolkit 3 Developer Documentation - Package overview
+title: Package overview -- MRTK3
 description: Mixed Reality Toolkit 3 for developers - Package overview.
 author: MaxWang-MS
 ms.author: wangmax

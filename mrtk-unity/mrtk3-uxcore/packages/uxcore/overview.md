@@ -1,5 +1,5 @@
 ---
-title: UX Core | MRTK3
+title: UX Core -- MRTK3
 description: Overview of the UXCore package in MRTK3
 author: Zee2
 ms.author: finnsinclair
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, UX, UXCore, UX Core, packaging
 ---
 
-# UX Core | MRTK3
+# UX Core -- MRTK3
 
 This package includes the core scripts and behaviors for building custom UI controls from scratch. For developers intending to build their own custom component libraries, this package should be the only necessary dependency and won't include any pre-built prefabs.
 

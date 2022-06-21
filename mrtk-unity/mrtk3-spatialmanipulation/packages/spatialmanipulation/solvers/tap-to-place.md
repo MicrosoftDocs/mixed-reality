@@ -1,5 +1,5 @@
 ---
-title: Tap to place | MRTK3
+title: Tap to place -- MRTK3
 description: Documentation of TapToPlace in MRTK3
 author: CDiaz-MS
 ms.author: cadia
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Tap to Place
 ---
 
-# Tap to place | MRTK3
+# Tap to place -- MRTK3
 
 Tap to Place is a solver used to place a game object on the surface of the scene reconstruction (SR) mesh of the environment around the user. Tap to Place uses a combination of two selections and head movement to place an object. You can start the placement with a single selection, use head movement to control the object's position, and place the object in the scene with another select action.
 

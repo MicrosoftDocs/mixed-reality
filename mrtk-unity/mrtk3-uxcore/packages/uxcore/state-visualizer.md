@@ -1,5 +1,5 @@
 ---
-title: State Visualizer
+title: State Visualizer -- MRTK3
 description: Overview of StateVisualizer in MRTK3
 author: Zee2
 ms.author: finnsinclair
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, UX, StateViz, StateVisualizer, State Visualizer, UX, animations
 ---
 
-# State Visualizer
+# State Visualizer -- MRTK3
 
 ![A graphic showing the State Visualizer script in the Unity Inspector window.](../../../mrtk3-overview/images/UXBuildingBlocks/StateVisualizer/stateviz-cover.png)
 

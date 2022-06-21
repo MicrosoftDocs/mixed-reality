@@ -1,5 +1,5 @@
 ---
-title: Hand menu | MRTK3
+title: Hand menu -- MRTK3
 description: Hand menus in MRTK3
 author: Zee2
 ms.author: finnsinclair
@@ -7,7 +7,7 @@ ms.date: 4/15/2022
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, Hand menu, UI
 ---
 
-# Hand menu | MRTK3
+# Hand menu -- MRTK3
 
 ![Hand Menu](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_HandMenu.png)
 

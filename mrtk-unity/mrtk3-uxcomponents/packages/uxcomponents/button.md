@@ -1,5 +1,5 @@
 ---
-title: Buttons | MRTK3
+title: Buttons -- MRTK3
 description: Description of button-based controls in MRTK3
 author: Zee2
 ms.author: finnsinclair
@@ -7,7 +7,7 @@ ms.date: 4/15/2022
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, Button, PressableButton
 ---
 
-# Buttons | MRTK3
+# Buttons -- MRTK3
 
 ![Button Main](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_Button.png)
 

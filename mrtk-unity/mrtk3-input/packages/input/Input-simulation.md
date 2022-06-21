@@ -1,5 +1,5 @@
 ---
-title: Input simulation | MRTK3
+title: Input simulation -- MRTK3
 description: Input simulation in MRTK3
 author: davidkline-ms
 ms.author: davidkl
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, Mixed Reality Toolkit, input simulation
 ---
 
-# Input simulation | MRTK3
+# Input simulation -- MRTK3
 
 With MRTK's input simulation, you can test various types of interactions in the Unity editor without building and deploying them to a device. The input simulation allows you to quickly iterate your ideas in the design and development process. Use keyboard and mouse combinations to control simulated inputs.
 

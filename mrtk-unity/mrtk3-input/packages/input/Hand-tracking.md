@@ -1,5 +1,5 @@
 ---
-title: Hand tracking | MRTK3
+title: Hand tracking -- MRTK3
 description: Hand tracking in MRTK3
 author: keveleigh
 ms.author: kurtie
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, Mixed Reality Toolkit, hand tracking
 ---
 
-# Hand tracking | MRTK3
+# Hand tracking -- MRTK3
 
 ## Overview
 

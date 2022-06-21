@@ -1,5 +1,5 @@
 ---
-title: Slider | MRTK3
+title: Slider -- MRTK3
 description: Sliders in MRTK3
 author: Zee2
 ms.author: finnsinclair
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, UI, Slider, PinchSlider
 ---
 
-# Slider | MRTK3
+# Slider -- MRTK3
 
 ![Slider example](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_Slider.png)
 

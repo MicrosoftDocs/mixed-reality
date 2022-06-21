@@ -1,5 +1,5 @@
 ---
-title: MRTK3 initial setup
+title: Initial setup for MRTK3
 description: Setting up your first MRTK3 project
 author: MaxWang-MS
 ms.author: wangmax

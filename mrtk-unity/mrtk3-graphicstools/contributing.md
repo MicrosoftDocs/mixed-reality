@@ -1,5 +1,5 @@
 ---
-title: Contributing to MR Graphics Tools
+title: Contributing to MR Graphics Tools -- MRTK3
 description: How to contribute to the Mixed Reality Graphics Tools
 author: tayomadein
 ms.author: omadein
@@ -7,7 +7,7 @@ ms.date: 05/05/2022
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, Bug report,
 ---
 
-# Contributing to Graphics Tools
+# Contributing to Graphics Tools -- MRTK3
 
 ## Updating the package
 

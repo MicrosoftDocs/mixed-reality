@@ -1,5 +1,5 @@
 ---
-title: BoundsControl | MRTK3
+title: BoundsControl -- MRTK3
 description: Overview on Bounds Control in MRTK3
 author: Zee2
 ms.author: finnsinclair
@@ -7,7 +7,7 @@ ms.date: 4/15/2022
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, Bounds Control, BoundsControl
 ---
 
-# BoundsControl | MRTK3
+# BoundsControl -- MRTK3
 
 ![Bounds control](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_BoundsControl.png)
 

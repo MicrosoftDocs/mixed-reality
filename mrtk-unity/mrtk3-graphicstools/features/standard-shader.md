@@ -1,5 +1,5 @@
 ---
-title: Graphics Tools Standard Shader
+title: Graphics Tools Standard Shader -- MRTK3
 description: Learn about the Graphics Tools Standard Shader.
 author: tayomadein
 ms.author: omadein
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, Standard Shader, Hover Light, Proximity Light, Clipping Primitive
 ---
 
-# Graphics tools standard shader
+# Graphics tools standard shader -- MRTK3
 
 The Graphics Tools Standard shading system utilizes a flexible shader that can achieve visuals similar to Unity's Standard (or Lit) shader. It implements [Fluent Design System](https://www.microsoft.com/design/fluent/) principles and remains performant on mixed reality devices.
 

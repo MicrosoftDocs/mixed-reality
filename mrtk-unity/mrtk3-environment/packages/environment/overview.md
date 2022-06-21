@@ -1,5 +1,5 @@
 ---
-title: Mixed Reality Toolkit 3 Developer Documentation - Environment overview
+title: Environment overview -- MRTK3
 description: Mixed Reality Toolkit 3 for developers - Environment overview.
 author: davidkline-ms
 ms.author: davidkl
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, environment, boundary, spatial awareness, spatial mapping
 ---
 
-# MRTK3 Environment
+# Environment -- MRTK3
 
 The MRTK3 Environment package provides features and components to make working with spatial awareness and virtual reality boundaries easy and to enable compelling visual representations.
 

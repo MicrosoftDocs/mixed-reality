@@ -1,5 +1,5 @@
 ---
-title: Acrylic Sample Scene
+title: Acrylic Sample Scene -- MRTK3
 description: Illustrated walkthrough of the Acrylic feature
 author: Species521
 ms.author: wettigmarti
@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, Standard Shader, Animation
 ---
 
-# Acrylic
+# Acrylic -- MRTK3
 
 The experimental Acrylic feature adds a translucency effect to a surface.
 Objects behind that surface will appear blurred as seen through frosted glass.

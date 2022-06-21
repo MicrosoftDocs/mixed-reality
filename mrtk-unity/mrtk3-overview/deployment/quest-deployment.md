@@ -1,5 +1,5 @@
 ---
-title: Mixed Reality Toolkit 3 Developer Documentation - Quest deployment
+title: Deploy an MRTK3 project to a Quest device
 description: Mixed Reality Toolkit 3 for developers - Quest deployment.
 author: RogPodge
 ms.author: roliu
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, Quest, Deployment
 ---
 
-# Deploying to a Quest Device
+# Deploy an MRTK3 project to a Quest device
 
 This page describes how to deploy your Unity Project with MRTK onto a Quest device. To add MRTK to your project, please refer to the [setup page](../setup.md).
 

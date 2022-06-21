@@ -1,5 +1,5 @@
 ---
-title: MRTK3 Diagnostics | MRTK3
+title: MRTK3 Diagnostics -- MRTK3
 description: Mixed Reality Toolkit 3 for developers - Diagnostics overview.
 author: davidkline-ms
 ms.author: davidkl
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, diagnostics, performance monitor
 ---
 
-# MRTK3 Diagnostics | MRTK3
+# MRTK3 Diagnostics -- MRTK3
 
 The MRTK3 diagnostics package is a collection of subsystems and components to help developers measure and diagnose their mixed reality experiences.
 

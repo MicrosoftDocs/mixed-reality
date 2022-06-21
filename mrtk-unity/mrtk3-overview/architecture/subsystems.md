@@ -1,5 +1,5 @@
 ---
-title: Mixed Reality Toolkit 3 Developer Documentation - Subsystems
+title: Subsystems -- MRTK3
 description: Mixed Reality Toolkit 3 for developers - Subsystems.
 author: MaxWang-MS
 ms.author: wangmax
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3
 ---
 
-# Subsystems
+# Subsystems -- MRTK3
 
 MRTK3 leverages the Unity XR Subsystem Management infrastructure for writing extensible modules that can help provide cross-platform support for features like speech and hand tracking. These subsystems are initialized and loaded by Unity alongside the existing Unity-native subsystems like `XRMeshSubsystem` and `XRInputSubsystem`. See [the documentation for how Unity subsystems work](https://docs.unity3d.com/ScriptReference/UnityEngine.SubsystemsModule.html).
 
