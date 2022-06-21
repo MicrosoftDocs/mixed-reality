@@ -12,9 +12,9 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, scenes
 
 ## Sample scenes shipped with MRTK3 sample Unity Project
 
-### General sample scenes (under `Samples/Assets/Scenes`)
+### General sample scenes (under `MRTKDevTemplate/Assets/Scenes`)
 
-**HandInteractionExample**
+**HandInteractionExamples**
 
 You can experience various hand interaction and UI examples such as poke, touch, grab, and two-handed manipulations.
 
@@ -84,19 +84,19 @@ This scene showcases all available UI building blocks and their permutations in 
 
 **The following are DataBinding and Theming sample scenes also shipped with the sample Unity project:**
 
-**Assets\CoreUX Theming Example\Scenes\AudioTheming**
+**Assets\UX Theming Example\Scenes\AudioTheming**
 
 Change the sound of a virtual keyboard using Data Binding and Theming.
 
-**Assets\CoreUX Theming Example\Scenes\BatteryLevelExample**
+**Assets\UX Theming Example\Scenes\BatteryLevelExample**
 
 Using Data Binding to update a battery level display.
 
-**Assets\CoreUX Theming Example\Scenes\CoreUXThemingExample**
+**Assets\UX Theming Example\Scenes\CoreUXThemingExample**
 
 Example of using Data Binding and Theming to control the look of UX Core components.
 
-**Assets\DataBinding Example\Scenes\DataBindingExamples**
+**Assets\Data Binding Example\Scenes\DataBindingExamples**
 
 Demonstration of using Data Binding and Theming to bind to data sources.
 
@@ -106,7 +106,7 @@ Demonstration of using Data Binding and Theming to bind to data sources.
 1. Add the **MRTK XR Rig** prefab.
 1. Remove the **Main Camera** Game Object because  **MRTK XR Rig** already contains a camera.
 
-   ![MRTK XR rig screenshot](images\mrtk-xr-rig.png)
+   ![MRTK XR rig screenshot](images/mrtk-xr-rig.png)
 
 1. Add the MRTK Input Simulator prefab to your scene.
 
@@ -114,4 +114,3 @@ Demonstration of using Data Binding and Theming to bind to data sources.
     > This step is optional, but required by in-editor simulations.
     
     ![MRTK input simulator hierarchy pane](images\mrtk-input-simulator.png)
-
