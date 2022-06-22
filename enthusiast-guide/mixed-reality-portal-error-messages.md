@@ -42,7 +42,7 @@ If your headset isn't listed in **Device Manager**, try the following steps:
 
 If you get a **Check your USB cable** error message:
 
-- Make sure your USB port is a a SuperSpeed USB 3.0 port.
+- Make sure your USB port is a SuperSpeed USB 3.0 port.
 - Connect your headset to a different SuperSpeed USB 3.0 USB port, if available.
 - Try removing any extenders or hubs between the headset and the computer.
 
