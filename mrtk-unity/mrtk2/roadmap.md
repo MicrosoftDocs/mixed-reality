@@ -7,7 +7,7 @@ ms.date: 11/18/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, roadmap, v3
 ---
 
-# Roadmap -- MRTK2
+# Roadmap &#8212; MRTK2
 
 Here is our vision for major work in the Mixed Reality Toolkit for calendar year 2021 and 2022. This work is under development, and target dates are estimates only.
 
