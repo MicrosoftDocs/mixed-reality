@@ -17,7 +17,8 @@ This article describes how to troubleshoot Windows Mixed Reality Portal error me
 
 ## "Something went wrong" error message, or other problem with Mixed Reality Portal
 
-First, try restarting Windows Mixed Reality:
+For general Windows Mixed Reality Portal issues or **Something went wrong** errors, first try restarting Windows Mixed Reality:
+
 1. Disconnect both headset cables from your PC.
 2. Restart your PC.
 3. Reconnect your headset.
@@ -39,15 +40,18 @@ If your headset isn't listed in **Device Manager**, try the following steps:
 
 ## "Check your USB cable" error message
 
+If you get a **Check your USB cable** error message:
+
 - Make sure your USB port is a a SuperSpeed USB 3.0 port.
 - Connect your headset to a different SuperSpeed USB 3.0 USB port, if available.
 - Try removing any extenders or hubs between the headset and the computer.
 
 ## "Check your display cable" error message
 
-Try the following steps to troubleshoot the issue:
+If you get a **Check your display cable** error message, try the following steps to troubleshoot the issue:
 
-- Connect your headset to a DisplayPort 1.2 or later, or HDMI 1.4 or later. Make sure the port corresponds with the most advanced graphics card on your PC.
-- If you’re using an adapter, make sure the adapter is 4K capable.
+- Nake sure to connect your headset to a DisplayPort 1.2 or later, or HDMI 1.4 or later.
+- Make sure the connected port corresponds with the most advanced graphics card on your PC.
+- If you're using an adapter, make sure the adapter is 4K capable.
 - Try using a different HDMI port, if available.
-- If you have an external monitor plugged into an HDMI port, try plugging the monitor into a DisplayPort instead, and use the HDMI port for your headset.
+- If you have an external monitor plugged into an HDMI port, try plugging the monitor into a DisplayPort instead, and using the HDMI port for your headset.
