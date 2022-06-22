@@ -41,6 +41,7 @@
 ### [Filing bugs and feedback](filing-feedback.md)
 ### [Error codes](error-codes.md)
 ### [Installation errors](installation_errors.md)
+### [Mixed Reality Portal error messages](mixed-reality-portal-error-messages.md)
 ### [Before you buy](before-you-buy-faqs.md)
 ### [Boundaries](boundary-questions.md)
 ### [Headset connectivity](headset-connectivity.md)
@@ -51,7 +52,7 @@
 ### [SteamVR](steamvr-questions.md)
 ### [Tracking system](tracking.md)
 ### [WebVR](webvr-questions.md)
-### [Immersive hardware FAQ](other-questions.md)
+### [WebVR](webvr-questions.md)
 ### [HP Reverb G2 FAQ](reverbG2-faq.yml)
 ### [Enterprise & LBE FAQ](enterprise-lbe-faq.md)
 
