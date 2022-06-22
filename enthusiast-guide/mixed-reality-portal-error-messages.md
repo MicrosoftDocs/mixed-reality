@@ -50,7 +50,7 @@ If you get a **Check your USB cable** error message:
 
 If you get a **Check your display cable** error message, try the following steps to troubleshoot the issue:
 
-- Nake sure to connect your headset to a DisplayPort 1.2 or later, or HDMI 1.4 or later.
+- Make sure to connect your headset to a DisplayPort 1.2 or later, or HDMI 1.4 or later.
 - Make sure the connected port corresponds with the most advanced graphics card on your PC.
 - If you're using an adapter, make sure the adapter is 4K capable.
 - Try using a different HDMI port, if available.
