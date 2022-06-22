@@ -3,7 +3,7 @@ title: Mixed Reality Toolkit 3 Developer Documentation
 description: Learn about the Mixed Reality Toolkit 3 for developers.
 author: MaxWang-MS
 ms.author: wangmax
-ms.date: 6/3/2022
+ms.date: 6/22/2022
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3
 ---
@@ -83,6 +83,7 @@ To acquire and use MRTK3, the following software tools are required.
 | [Microsoft Visual Studio](https://visualstudio.microsoft.com/) | 2019 Community edition or greater | Recommend Visual Studio 2022 |
 | Unity | 2020.3.35+ or 2021.3.4+ | Recommend using an LTS release |
 | [Mixed Reality Feature Tool for Unity](https://aka.ms/mrfeaturetool) | | Used to acquire MRTK3 packages |
+| [.NET 5.0 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) | | Required by Mixed Reality Feature Tool |
 | Mixed Reality OpenXR Plugin | | Install via Mixed Reality Feature Tool |
 
 ## Versioning
