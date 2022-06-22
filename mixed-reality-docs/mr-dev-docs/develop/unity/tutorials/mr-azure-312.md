@@ -73,33 +73,33 @@ The first step is to create your bot as a local ASP.Net Core Web application. On
 
 2.	In the Window that will appear select **Empty**. Also make sure the target is set to **ASP NET Core 2.0** and the Authentication is set to **No Authentication**. Click **OK**.  
 
-    ![Create the bot application](images/AzureLabs-Lab312-01.png)
+    ![Screenshot that shows the New A S P dot N E T Core Web Application window.](images/AzureLabs-Lab312-01.png)
 
 3.	The solution will now open. Right-click on Solution **Mybot** in the **Solution Explorer** and click on **Manage NuGet Packages for Solution**. 
 
-    ![Create the Bot application](images/AzureLabs-Lab312-02.png)
+    ![Screenshot that shows the opened solution with 'MyBot' and 'Manage NuGet Packages for Solution' highlighted.](images/AzureLabs-Lab312-02.png)
 
 4.	In the **Browse** tab, search for **Microsoft.Bot.Builder.Integration.AspNet.Core** (make sure you have **Include pre-release** checked). Select the package version **4.0.1-preview**, and tick the project boxes. Then click on **Install**. You have now installed the libraries needed for the **Bot Framework v4**. Close the NuGet page.
 
-    ![Create the bot application](images/AzureLabs-Lab312-03.png)
+    ![Screenshot that shows the Nu-Get Solution manager.](images/AzureLabs-Lab312-03.png)
 
 5.	Right-click on your *Project*, **MyBot**, in the **Solution Explorer** and click on **Add** **|** **Class**.
 
-    ![Create the Bot application](images/AzureLabs-Lab312-04.png)
+    ![Screenshot that shows the process to add a new class to MyBot.](images/AzureLabs-Lab312-04.png)
 
 6.	Name the class **MyBot** and click on **Add**.
 
-    ![Create the bot application](images/AzureLabs-Lab312-05.png)
+    ![Screenshot that shows the new class creation 'MyBot'.](images/AzureLabs-Lab312-05.png)
 
 7.	Repeat the previous point, to create another class named **ConversationContext**. 
 
 8.	Right-click on **wwwroot** in the **Solution Explorer** and click on **Add** **|** **New Item**. Select  **HTML Page** (you will find it under the subsection Web). Name the file **default.html**. Click **Add**.
 
-    ![Create the bot application](images/AzureLabs-Lab312-06.png)
+    ![Screenshot that shows the creation of a new H T M L page from within the Solution Explorer window.](images/AzureLabs-Lab312-06.png)
 
 9.	The list of classes / objects in the **Solution Explorer** should look like the image below.
 
-    ![Create the bot application](images/AzureLabs-Lab312-07.png)
+    ![Screenshot of the Solution Explorer window with list of classes.](images/AzureLabs-Lab312-07.png)
 
 10.	Double-click on the **ConversationContext** class. This class is responsible for holding the variables used by the bot to maintain the context of the conversation. These conversation context values are maintained in an instance of this class, because any instance of the **MyBot** class will refresh each time an activity is received. Add the following code to the class:
 
@@ -256,11 +256,11 @@ Now that you have built the code for your bot, you have to publish it to an inst
 
 2.	Once you are logged in, click on **Create a resource** in the top left corner, and search for *Web App bot*, and click **Enter**.
 
-    ![Create the Azure Bot Service](images/AzureLabs-Lab312-08.png)
+    ![Screenshot of the Microsoft Azure dashboard with 'Create a resource' highlighted in the upper left.](images/AzureLabs-Lab312-08.png)
  
 3.	The new page will provide a description of the *Web App Bot* Service. At the bottom left of this page, select the **Create** button, to create an association with this Service.
 
-    ![Create the Azure Bot Service](images/AzureLabs-Lab312-09.png)
+    ![Screenshot of the Web App Bot page and the 'Create' button in the bottom left.](images/AzureLabs-Lab312-09.png)
  
 4.	Once you have clicked on **Create**:
 
@@ -279,29 +279,29 @@ Now that you have built the code for your bot, you have to publish it to an inst
     10. You will also need to confirm that you have understood the Terms and Conditions applied to this Service.
     11. Click Create.
  
-        ![Create the Azure Bot Service](images/AzureLabs-Lab312-10.png)
+        ![Screenshot that shows the required fields needed to create the new Service.](images/AzureLabs-Lab312-10.png)
 
 5.	Once you have clicked on **Create**, you will have to wait for the Service to be created, this might take a minute.
 
 6.	A notification will appear in the Portal once the Service instance is created.
 
-    ![Create the Azure Bot Service](images/AzureLabs-Lab312-11.png) 
+    ![Screenshot that shows the notification icon highlighted after the Service instance is created.](images/AzureLabs-Lab312-11.png) 
  
 7.	Click on the notification to explore your new Service instance. 
 
-    ![Create the Azure Bot Service](images/AzureLabs-Lab312-12.png)
+    ![Screenshot that shows deployment succeeded and the 'Go to resources' button.](images/AzureLabs-Lab312-12.png)
  
 8. Click the **Go to resource** button in the notification to explore your new Service instance. You will be taken to your new Azure Service instance. 
 
-    ![Create the Azure Bot Service](images/AzureLabs-Lab312-13.png)
+    ![Screenshot of the Resources windows after clicking the 'Go to resources' button in the previous window.](images/AzureLabs-Lab312-13.png)
  
 9.	At this point you need to setup a feature called **Direct Line** to allow your client application to communicate with this Bot Service. Click on **Channels**, then in the **Add a featured channel** section, click on **Configure Direct Line channel**.
 
-    ![Create the Azure Bot Service](images/AzureLabs-Lab312-14.png)
+    ![Screenshot that shows the Configure Direct Line channel highlighted in MyHoloLensBot.](images/AzureLabs-Lab312-14.png)
 
 10.	In this page you will find the **Secret keys** that will allow your client app to authenticate with the bot. Click on the **Show** button and take a copy of one of the displayed Keys, as you will need this later in your project. 
 
-    ![Create the Azure Bot Service](images/AzureLabs-Lab312-15.png)
+    ![Screenshot of the secret keys highlighted in MyHoloLensBot Configure Direct Line channel.](images/AzureLabs-Lab312-15.png)
 
 ## Chapter 3 – Publish the Bot to the Azure Web App Bot Service
 
@@ -313,20 +313,20 @@ Now that your Service is ready, you need to publish your Bot code, that you buil
 1.  Go back to your Visual Studio Solution that you created previously. 
 2.  Right-click on your **MyBot** project, in the **Solution Explorer**, then click on **Publish**.
 
-    ![Publish the Bot to the Azure Web App Bot Service](images/AzureLabs-Lab312-16.png)
+    ![Screenshot that shows the 'MyBot' project drop down menu after a right-click.](images/AzureLabs-Lab312-16.png)
 
 3.  On the *Pick a publish target* page, click **App Service**, then **Select Existing**, lastly click on **Create Profile** (you may need to click on the dropdown arrow alongside the *Publish* button, if this is not visible).
 
-    ![Publish the Bot to the Azure Web App Bot Service](images/AzureLabs-Lab312-17.png)
+    ![Screenshot that shows the Pick a publish target page with 'App Service', 'Select Existing', and 'Create Profile' highlighted. ](images/AzureLabs-Lab312-17.png)
 
 4. If you are not yet logged in into your Microsoft Account, you have to do it here.
 5. On the **Publish** page you will find you have to set the same **Subscription** that you used for the *Web App Bot* Service creation. Then set the **View** as **Resource Group** and, in the drop down folder structure, select the **Resource Group** you have created previously. Click **OK**. 
 
-    ![Publish the Bot to the Azure Web App Bot Service](images/AzureLabs-Lab312-18.png)
+    ![Screenshot that shows the App Service window with the same Subscription used for the Web App Bot Service creation selected.](images/AzureLabs-Lab312-18.png)
 
 6.  Now click on the **Publish** button, and wait for the Bot to be published (it might take a few minutes).
 
-    ![Publish the Bot to the Azure Web App Bot Service](images/AzureLabs-Lab312-19.png)
+    ![Screenshot that shows the Publish window with Publish button.](images/AzureLabs-Lab312-19.png)
 
 
 ## Chapter 4 – Set up the Unity project
@@ -335,19 +335,19 @@ The following is a typical set up for developing with mixed reality, and as such
 
 1.	Open *Unity* and click **New**. 
 
-    ![Set up the Unity project](images/AzureLabs-Lab312-20.png)
+    ![Screenshot that shows the Unity Projects window with the 'New' project icon highlighted in the upper right.](images/AzureLabs-Lab312-20.png)
 
 2.	You will now need to provide a Unity project name. Insert **HoloLens Bot**. Make sure the project template is set to **3D**. Set the **Location** to somewhere appropriate for you (remember, closer to root directories is better). Then, click **Create project**.
 
-    ![Set up the Unity project](images/AzureLabs-Lab312-21.png)
+    ![Screenshot that shows the new Unity Project name field highlighted.](images/AzureLabs-Lab312-21.png)
 
 3.	With Unity open, it is worth checking the default **Script Editor** is set to **Visual Studio**. Go to **Edit > Preferences** and then from the new window, navigate to **External Tools**. Change **External Script Editor** to **Visual Studio 2017**. Close the **Preferences** window.
 
-    ![Set up the Unity project](images/AzureLabs-Lab312-22.png)
+    ![Screenshot that shows the Unity Preferences window with the required settings.](images/AzureLabs-Lab312-22.png)
 
 4.	Next, go to **File > Build Settings** and select **Universal Windows Platform**, then click on the **Switch Platform** button to apply your selection.
 
-    ![Set up the Unity project](images/AzureLabs-Lab312-23.png)
+    ![Screenshot that shows the Build Settings window with the 'Switch Platform' button highlighted.](images/AzureLabs-Lab312-23.png)
 
 5.	While still in **File > Build Settings** and make sure that:
 
@@ -367,21 +367,21 @@ The following is a typical set up for developing with mixed reality, and as such
 
         1. Do this by selecting **Add Open Scenes**. A save window will appear.
         
-            ![Set up the Unity project](images/AzureLabs-Lab312-24.png)
+            ![Screenshot that shows the Build Settings window with the 'Add Open Scenes' button highlighted.](images/AzureLabs-Lab312-24.png)
 
         2. Create a new folder for this, and any future, scene, then select the **New folder** button, to create a new folder, name it **Scenes**.
 
-             ![Set up the Unity project](images/AzureLabs-Lab312-25.png)
+             ![Screenshot that shows the creation of a new 'Scenes' folder.](images/AzureLabs-Lab312-25.png)
 
         3. Open your newly created **Scenes** folder, and then in the *File name*: text field, type **BotScene**, then click on **Save**.
 
-            ![Set up the Unity project](images/AzureLabs-Lab312-26.png)
+            ![Screenshot of the Scenes folder and the newly created file being saved.](images/AzureLabs-Lab312-26.png)
 
     7. The remaining settings, in **Build Settings**, should be left as default for now.
 
 6. In the *Build Settings* window, click on the **Player Settings** button, this will open the related panel in the space where the *Inspector* is located. 
 
-    ![Set up the Unity project](images/AzureLabs-Lab312-27.png)
+    ![Screenshot that shows the Build Settings window in the Inspector tab.](images/AzureLabs-Lab312-27.png)
 
 7. In this panel, a few settings need to be verified:
 
@@ -391,18 +391,18 @@ The following is a typical set up for developing with mixed reality, and as such
         2. **Scripting Backend** should be **.NET**
         3. **API Compatibility Level** should be **.NET 4.6**
 
-            ![Set up the Unity project](images/AzureLabs-Lab312-28.png)
+            ![Screenshot that shows the Other Settings tab with the required settings.](images/AzureLabs-Lab312-28.png)
       
     2. Within the **Publishing Settings** tab, under **Capabilities**, check:
 
         - **InternetClient**
         - **Microphone**
 
-            ![Set up the Unity project](images/AzureLabs-Lab312-29.png)
+            ![Screenshot that shows 'InternetClient' and 'Microphone' enabled in the Publishing Settings tab.](images/AzureLabs-Lab312-29.png)
 
     3. Further down the panel, in **XR Settings** (found below **Publish Settings**), tick **Virtual Reality Supported**, make sure the **Windows Mixed Reality SDK** is added.
 
-        ![Set up the Unity project](images/AzureLabs-Lab312-30.png)
+        ![Screenshot that shows Virtual Reality Supported enabled and Windows Mixed Reality S D K added.](images/AzureLabs-Lab312-30.png)
 
 8.	Back in *Build Settings* _Unity C#_ Projects is no longer greyed out; tick the checkbox next to this. 
 9.	Close the Build Settings window.
@@ -423,7 +423,7 @@ The following is a typical set up for developing with mixed reality, and as such
     4. Set **Clear Flags** to **Solid Color**.
     5. Set the **Background** Color of the Camera component to **Black, Alpha 0 (Hex Code: #00000000)**
 
-    ![camera Setup](images/AzureLabs-Lab312-31.png)
+    ![Screenshot that shows all the components of the Main Camera in the Inspector panel.](images/AzureLabs-Lab312-31.png)
  
 
 ## Chapter 6 – Import the Newtonsoft library
@@ -434,11 +434,11 @@ To import the Newtonsoft library into your project, use the Unity Package which 
 
 1.  Add the *.unitypackage* to Unity by using the **Assets** > **Import Package** > **Custom Package** menu option.
 
-    ![Import the Newtonsoft library](images/AzureLabs-Lab312-34.png)
+    ![Screenshot that shows the Assets drop down menu with 'Import Package' then 'Custom Package' selected.](images/AzureLabs-Lab312-34.png)
 
 2.  In the **Import Unity Package** box that pops up, ensure everything under (and including) **Plugins** is selected.
 
-    ![Import the Newtonsoft library](images/AzureLabs-Lab312-35.png)
+    ![Screenshot of the Import Unity Package popup box with'Plugins' selected.](images/AzureLabs-Lab312-35.png)
 
 3.  Click the **Import** button to add the items to your project.
 
@@ -464,11 +464,11 @@ To import the Newtonsoft library into your project, use the Unity Package which 
 
 1.	Create a new **Tag** object called **BotTag**. Select the Main Camera in the scene. Click on the Tag drop down menu in the Inspector panel. Click on **Add Tag**.
 
-    ![camera Setup](images/AzureLabs-Lab312-32.png)
+    ![Screenshot of the Main Camera Tag drop down menu in the Inspector panel with 'Add Tag' highlighted.](images/AzureLabs-Lab312-32.png)
  
 2.	Click on the **+** symbol. Name the new **Tag** as **BotTag**, *Save*.
 
-    ![camera Setup](images/AzureLabs-Lab312-33.png)
+    ![Screenshot of the Inspector panel with the new BotTag name, plus symbol, and Save button.](images/AzureLabs-Lab312-33.png)
 
 > [!WARNING] 
 > **Do not** apply the **BotTag** to the Main Camera. If you have accidentally done this, make sure to change the Main Camera tag back to *MainCamera*.
@@ -1217,7 +1217,7 @@ To create this class:
 8.	Be sure to save your changes in *Visual Studio* before returning to *Unity*.
 9.  In the Unity Editor, drag the **SceneOrganiser** script from the Scripts folder to the Main Camera. The Scene Organiser component should now appear on the Main Camera object, as shown in the image below.
 
-    ![Create the Azure Bot Service](images/AzureLabs-Lab312-37.png)
+    ![Screenshot that shows the Scene Organiser script being added to the Main Camera object in the Unity Editor.](images/AzureLabs-Lab312-37.png)
 
 ## Chapter 13 – Before building
 
