@@ -25,6 +25,7 @@ To achieve the outline effect, add the MeshOutline script for single objects or 
 
 For guides on how to set up an outline material, please visit the [MeshOutline Material Setup](https://github.com/Species521/mixed-reality-pr_mawettig/blob/main/mrtk-unity/mrtk3-graphicstools/features/mesh-outlines.md#material-setup)
 
+
 ## Outline Pulse Example
 
 <img src="images/SampleScenes/OutlinesRainbow_01.gif" width="40%" height="40%">
@@ -33,9 +34,11 @@ In this example, the Outline Width value is animated and applied to the object i
 
 <img src="images/SampleScenes/pulseAnimation_01.jpg" width="40%" height="40%">
 
+
 > [NOTE]
 > Depending on the model's edge hardness, you might experience jagged and disrupted results. For the Outline effect to work properly, the model's vertex normals need to be smooth. If the model itself doesn't provide this, an in-editor solution might be to apply the MeshSmoother script to the model.
 <img src="images/SampleScenes/MeshSmoother_01.jpg" width="40%" height="40%">
+
 
 ## Hierachies, multiple and skinned meshes
 
@@ -43,6 +46,7 @@ In this example, the Outline Width value is animated and applied to the object i
 
 Some imported 3D objects come in mutliple parts in hierarchical structures, in this case the model has several subnodes such as skeletal joints and unattached additional meshes. In order to avoid searching and applying through the entire hierarchy, the MeshOutlineHierarchy script needs merely to be added on the root object and all meshes inside that structure have the effect applied as well. 
 As seen in this example, the outline works very well on skinned and animated meshes too.
+
 
 ## Illumination effects
 
