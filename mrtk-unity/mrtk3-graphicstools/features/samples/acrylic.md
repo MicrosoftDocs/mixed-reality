@@ -32,7 +32,14 @@ In this example, the shader reacts in real-time to the moving objects in the bac
 
 <img src="images/SampleScenes/acrylic_sample_02.jpg" width="50%" height="50%" alt="Acrylic Pre-baked demo">
 
-For more information have a look at the [Acrylic layer system](acrylic.md).
 
 As a different option, Acrylic blurs a static background like the photos above beforehand.
 The rounded plates on top of the photos act as stencil windows to make the pre-blurred image visible in that area.
+
+For more information have a look at the [Acrylic layer system](acrylic.md).
+
+## See also
+
+* [Standard Shader](standard-shader.md)
+* [Material Gallery](samples/material-gallery.md)
+
