@@ -40,5 +40,5 @@ The rounded plates on top of the photos act as stencil windows to make the pre-b
 ## See also
 
 * [Standard Shader](https://github.com/Species521/mixed-reality-pr_mawettig/blob/graphics-tools-docs/mrtk-unity/mrtk3-graphicstools/features/standard-shader.md)
-* [Material Gallery](d)
+* [Material Gallery](https://github.com/Species521/mixed-reality-pr_mawettig/blob/graphics-tools-docs/mrtk-unity/mrtk3-graphicstools/features/samples/material-gallery.md)
 
