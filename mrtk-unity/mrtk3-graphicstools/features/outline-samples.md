@@ -15,7 +15,7 @@ Outlines are a quick and appealing feature to highlight objects in a scene.
 Besides colour and thickness we can further define the highlighting by adding animations and grading effects.
 
 
-![Acrylic Sample scene](images/SampleScenes/OutlinesScene_01.gif)
+![MeshOutlineSampleScene](images/SampleScenes/OutlinesScene_01.gif)
 
 To achieve the outline effect, add the MeshOutline or the MeshOutlineHierarchy script to the 3D object in the Inspector, set up the Outline Width and apply an outline material.
 For guides on how to set up an outline material, please visit the [MeshOutline Material Setup](https://github.com/Species521/mixed-reality-pr_mawettig/blob/main/mrtk-unity/mrtk3-graphicstools/features/mesh-outlines.md#material-setup)
@@ -23,7 +23,7 @@ For guides on how to set up an outline material, please visit the [MeshOutline M
 ## Outline Pulse Example
 
 
-![Acrylic Sample scene](images/SampleScenes/OutlinesRainbow_01.gif)
+![OutlinePulseAnimation](images/SampleScenes/OutlinesRainbow_01.gif)
 
 In this example, the Outline Width value is animated and applied to the object itself as Animator 'OutlinePulseController'.
 
