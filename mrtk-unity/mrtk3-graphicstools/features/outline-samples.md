@@ -49,7 +49,7 @@ As seen in this example, the outline works very well on skinned and animated mes
 <img src="images/SampleScenes/OutlinesReveal_01.gif" width="40%" height="40%">
 
 In this example, the outlines are illuminated by an orbiting Proximity Light, which is part of both the MRTK and the MRGT. Highlight size, colour, gradients and intensity are configurable. 
-For more information of the Proximity Light have a look here: [ProximityLight](proximity-light.md)
+For more information of the Proximity Light have a look at the [Proximity Light Overview](proximity-light.md) and here: [Proximity Lighting Example](https://github.com/Species521/mixed-reality-pr_mawettig/blob/graphics-tools-docs/mrtk-unity/mrtk3-graphicstools/features/samples/material-gallery.md#hover-lights)
 
 ## See also
 
