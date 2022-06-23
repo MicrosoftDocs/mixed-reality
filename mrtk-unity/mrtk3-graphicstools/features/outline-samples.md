@@ -44,6 +44,14 @@ In this example, the Outline Width value is animated and applied to the object i
 Some imported 3D objects come in mutliple parts in hierarchical structures, in this case the model has several subnodes such as skeletal joints and unattached additional meshes. In order to avoid searching and applying through the entire hierarchy, the MeshOutlineHierarchy script needs merely to be added on the root object and all meshes inside that structure have the effect applied as well. 
 As seen in this example, the outline works very well on skinned and animated meshes too.
 
-## Lighting effects
+## Illumination effects
 
 <img src="images/SampleScenes/OutlinesReveal_01.gif" width="40%" height="40%">
+
+In this example, the outlines are illuminated by an orbiting Proximity Light, which is part of both the MRTK and the MRGT. Highlight size, colour, gradients and intensity are configurable. 
+For more information of the Proximity Light have a look here: [ProximityLight](proximity-light.md)
+
+## See also
+
+* [Standard Shader](standard-shader.md)
+* [Material Gallery](samples/material-gallery.md)
