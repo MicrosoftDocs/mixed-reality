@@ -60,5 +60,5 @@ For more information of the Proximity Light have a look at the [Proximity Light 
 
 ## See also
 
-* [Standard Shader](standard-shader.md)
-* [Material Gallery](samples/material-gallery.md)
+* [Standard Shader](https://github.com/MicrosoftDocs/mixed-reality-pr/blob/main/mrtk-unity/mrtk3-graphicstools/features/standard-shader.md)
+* [Material Gallery](https://github.com/MicrosoftDocs/mixed-reality-pr/blob/main/mrtk-unity/mrtk3-graphicstools/features/samples/material-gallery.md)
