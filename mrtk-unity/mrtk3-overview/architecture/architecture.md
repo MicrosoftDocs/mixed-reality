@@ -21,7 +21,7 @@ The overall architecture of the input stack of MRTK3 is built on four foundation
 1. OpenXR
    1. [Khronos Specification](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html)
    1. [Unity OpenXR Plugin documentation](https://docs.unity3d.com/Packages/com.unity.xr.openxr@latest)
-   1. [Mixed Reality OpenXR Plugin documentation](https://aka.ms/openxr-unity-install)
+   1. [Mixed Reality OpenXR Plugin documentation](/windows/mixed-reality/develop/unity/mixed-reality-openxr-plugin)
 1. [Unity subsystems](https://docs.unity3d.com/ScriptReference/UnityEngine.SubsystemsModule.html)
 1. [Unity's Input System](https://docs.unity3d.com/Packages/com.unity.inputsystem@latest)
 1. [Unity's XR Interaction Toolkit](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@latest)
