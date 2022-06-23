@@ -22,12 +22,11 @@ For guides on how to set up an outline material, please visit the [MeshOutline M
 
 ## Outline Pulse Example
 
-
-![OutlinePulseAnimation](images/SampleScenes/OutlinesRainbow_01.gif)
+<img src="images/SampleScenes/OutlinesRainbow_01.gif" width="50%" height="50%">
 
 In this example, the Outline Width value is animated and applied to the object itself as Animator 'OutlinePulseController'.
 
-<img src="images/SampleScenes/pulseAnimation_01.jpg" width="25%" height="25%">
+<img src="images/SampleScenes/pulseAnimation_01.jpg" width="50%" height="50%">
 
 > [!NOTE]
 > Depending on the model's edge hardness, you might experience jagged and disrupted results. For the Outline effect to work properly, the model's vertex normals need to be smooth. If the model itself doesn't provide this, an in-editor solution might be to apply the MeshSmoother script to the model.
