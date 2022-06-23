@@ -28,11 +28,11 @@ For guides on how to set up an outline material, please visit the [MeshOutline M
 
 In this example, the Outline Width value is animated and applied to the object itself as Animator 'OutlinePulseController'.
 
-<img src="images/SampleScenes/pulseAnimation_01.jpg" width="30%" height="30%">
+<img src="images/SampleScenes/pulseAnimation_01.jpg" width="40%" height="40%">
 
 > [NOTE]
 > Depending on the model's edge hardness, you might experience jagged and disrupted results. For the Outline effect to work properly, the model's vertex normals need to be smooth. If the model itself doesn't provide this, an in-editor solution might be to apply the MeshSmoother script to the model.
-> ![MeshSmoother](images/SampleScenes/MeshSmoother_01.jpg)
+> <img src="images/SampleScenes/MeshSmoother_01.jpg" width="40%" height="40%">
 
 ## Acrylic Pre-baked
 
