@@ -19,7 +19,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 
 ## Sample
 
-See the *UnityUI* sample for demonstrations of various components built for UnityUI.
+See the [*UnityUI* sample](samples/unity-ui.md) for demonstrations of various components built for UnityUI.
 
 ## UI behavior components
 
@@ -27,10 +27,10 @@ The components below help with rendering UI, but they aren't visible [Graphic](h
 
 ### ScaleMeshEffect
 
-On UnityUI components, the `unity_ObjectToWorld` matrix (or `UNITY_MATRIX_M`  in URP) isn't the transformation matrix of the local transform the Graphic component lives on but that of its parent Canvas. Many shader effects within Graphics Tools require object scale to be known. To solve this issue, the _ScaleMeshEffect.cs_ will store scaling information into UV channel attributes during UI mesh construction.
+On UnityUI components, the `unity_ObjectToWorld` matrix (or `UNITY_MATRIX_M`  in URP) isn't the transformation matrix of the local transform the Graphic component lives on but that of its parent Canvas. Many shader effects within Graphics Tools require object scale to be known. To solve this issue, the *ScaleMeshEffect.cs* will store scaling information into UV channel attributes during UI mesh construction.
 
 >[!TIP]
-> A [Canvas](https://docs.unity3d.com/ScriptReference/Canvas.html) or [CanvasRenderer](https://docs.unity3d.com/ScriptReference/CanvasRenderer.html) within Graphics Tools will prompt for the addition of a _ScaleMeshEffect.c_s when one is required.
+> A [Canvas](https://docs.unity3d.com/ScriptReference/Canvas.html) or [CanvasRenderer](https://docs.unity3d.com/ScriptReference/CanvasRenderer.html) within Graphics Tools will prompt for the addition of a *ScaleMeshEffect.cs* when one is required.
 
 ### RectMask2DFast
 
@@ -42,7 +42,7 @@ UnityUI has a built-in component called [RectMask2D](https://docs.unity3d.com/Pa
 myRectMask2DFast.ForceClip = true;
 ```
 
-All *Graphics Tools/Canvas/* shaders and the *Graphics Tools/Standard Canvas* shaders support `RectMask2D`, `RectMask2DFast`, and `RoundedRectMask2D`.
+All *Graphics Tools/Canvas/* shaders and the *Graphics Tools/Standard Canvas* shader support `RectMask2D`, `RectMask2DFast`, and `RoundedRectMask2D`.
 
 >[!NOTE]
 > The *Graphics Tools/Canvas/* shaders and the *Graphics Tools/Standard Canvas* shader **do not** support the *Softness* property on `RectMask2D` or `RectMask2DFast.`
@@ -76,7 +76,7 @@ Just like `CanvasElementRoundedRect`, this component procedurally generates a 3D
 
 Unity's [MeshRenderer](https://docs.unity3d.com/ScriptReference/MeshRenderer.html) component can be used to display 3D meshes within UnityUI, but it doesn't respect some of the layout features UnityUI provides. To solve these layout issues, there's the `CanvasElementMesh` component.
 
- The `CanvasElementMesh` component takes an input mesh and translates it into a Graphic component.
+ The `CanvasElementMesh` component takes an input mesh and translates it into a `Graphic` component.
 
 ![CanvasElementMesh example with rocket](images/UnityUITooling/CanvasElementMesh.jpg)
 

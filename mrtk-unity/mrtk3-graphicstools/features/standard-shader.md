@@ -16,7 +16,7 @@ The Graphics Tools Standard shading system utilizes a flexible shader that can a
 
 ## Sample
 
-See the *Material Gallery* sample for multiple demonstrations of *Graphics Tools/Standard* shader variants. For examples of *Graphics Tools/Standard Canvas*, see the *UnityUI* sample
+See the [*Material Gallery* sample](samples/material-gallery.md) for multiple demonstrations of *Graphics Tools/Standard* shader variants. For examples of *Graphics Tools/Standard Canvas*, see the *UnityUI* sample
 
 ## Architecture
 
@@ -53,20 +53,20 @@ Unity has a handful of [render pipelines](https://docs.unity3d.com/Manual/render
 
 ## UnityUI support
 
-The Graphics Tools Standard shading system works with Unity's built-in UI system called [UnityUI](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/index.html). The *Graphics Tools/Standard Canvas* should be used for all materials within UnityUI canvases.
+The Graphics Tools Standard shading system works with Unity's built-in UI system called [UnityUI](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/index.html). The `Graphics Tools/Standard Canvas` should be used for all materials within UnityUI canvases.
 
 A [Canvas](https://docs.unity3d.com/ScriptReference/Canvas.html) or [CanvasRenderer](https://docs.unity3d.com/ScriptReference/CanvasRenderer.html) within Graphics Tools will prompt for the addition of a `ScaleMeshEffect.cs` when one is required:
 
 ![Scale mesh effect inspector warning](images/StandardShader/ScaleMeshEffect.jpg)
 
-On UnityUI components, the `unity_ObjectToWorld` matrix (or `UNITY_MATRIX_M`  in URP) isn`t the transformation matrix of the local transform the Graphic component lives on but that of its parent Canvas. Many *Graphics Tools/Standard Canvas* shader effects require object scale to be known. To solve this issue, the `ScaleMeshEffect.cs` will store scaling information into UV channel attributes during UI mesh construction.
+On UnityUI components, the `unity_ObjectToWorld` matrix (or `UNITY_MATRIX_M`  in URP) isn't the transformation matrix of the local transform the Graphic component lives on but that of its parent Canvas. Many *Graphics Tools/Standard Canvas* shader effects require object scale to be known. To solve this issue, the `ScaleMeshEffect.cs` will store scaling information into UV channel attributes during UI mesh construction.
 
 > [!TIP]
 > When using a Unity Image component, it is recommended to specify "None (Sprite)" for the Source Image to prevent Unity UI from generating extra vertices.
 
 ## Material inspector
 
-A custom material inspector exists for the *Graphics Tools/Standard* and *Graphics Tools/Standard Canvas* shaders called `StandardShaderGUI.cs`. The inspector automatically enables/disables shader features, based on user selection and aides in setting up render state. For more information about each feature **hover over each property in the Unity Editor for a tooltip.**
+A custom material inspector exists for the *Graphics Tools/Standard* and *Graphics Tools/Standard Canvas* shaders called *StandardShaderGUI.cs*. The inspector automatically enables/disables shader features, based on user selection and aides in setting up render state. For more information about each feature **hover over each property in the Unity Editor for a tooltip.**
 
 > [!NOTE]
 > The inspector UI is dynamic. Portions of the UI will change as features are enabled and disabled.
@@ -77,7 +77,7 @@ The inspector can be broken into a handful of features areas as described below.
 
 ### Rendering mode
 
-The first portion of the inspector controls the material's render state. *Rendering Mode* determines when and how a material will be rendered. The aim of the *Graphics Tools/Standard* and *Graphics Tools/Standard Canvas* shaders is to mirror the [rendering modes found in the Unity/Standard shader](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html). The *Graphics Tools/Standard* and *Graphics Tools/Standard Canvas* shaders also include an *Additive* rendering mode and *Custom* rendering mode for complete user control.
+The first portion of the inspector controls the material's render state. *Rendering Mode* determines when and how a material will be rendered. The aim of the `Graphics Tools/Standard` and `Graphics Tools/Standard Canvas` shaders is to mirror the [rendering modes found in the Unity/Standard shader](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html). The *Graphics Tools/Standard* and *Graphics Tools/Standard Canvas* shaders also include an *Additive* rendering mode and *Custom* rendering mode for complete user control.
 
 | Rendering Mode |         Description                                                       |
 |----------------|---------------------------------------------------------------------------|
@@ -127,7 +127,7 @@ Rendering options mostly control the lighting settings for a material. This mate
 
 ### Fluent options
 
-[Fluent](https://www.microsoft.com/design/fluent/#/) is a design framework used across UI components in Microsoft products. This section contains a handful of features that help emulate Fluent design system principles on arbitrary surfaces. If you're looking for bespoke Fluent shaders, they can be found in the `Graphics Tools/Canvas` and  `Graphics Tools/Non-Canvas` shader namespace.
+[Fluent](https://www.microsoft.com/design/fluent/#/) is a design framework used across UI components in Microsoft products. This section contains a handful of features that help emulate Fluent design system principles on arbitrary surfaces. If you're looking for bespoke Fluent shaders, they can be found in the *Graphics Tools/Canvas* and *Graphics Tools/Non-Canvas* shader namespace.
 
 ### Advanced options
 
@@ -144,7 +144,7 @@ The *Graphics Tools/Standard* and *Graphics Tools/Standard Canvas* shaders use a
 The shader will respect the direction, color, and intensity of the first Unity Directional Light in the scene (if enabled).
 
 > [!IMPORTANT]
-> Dynamic point lights, spot lights, or any other Unity light will not be considered in real time lighting.
+> Dynamic point lights, spotlights, or any other Unity light will not be considered in real time lighting. Light masks are not supported at this time.
 
 ### Spherical harmonics
 
@@ -159,7 +159,7 @@ For static lighting, the shader will respect lightmaps built by Unity's [lightma
 
 ## Performance
 
-One of the primary advantages to using the Graphics Tools Standard shader over the Unity standard shader is performance. The Graphics Tools Standard Shader is extensible to only utilize the features enabled. However, the Graphics Tools Standard shader has also been written to deliver comparable aesthetic results as the Unity Standard shader, but at a much lower cost. One simple way to compare shader performance is via the number of operations that needs to be performed on the GPU. The magnitude of calculations may fluctuate by features enabled and other rendering configurations.
+One of the primary advantages to using the Graphics Tools standard shading system over the Unity Standard shader is performance. The *Graphics Tools/Standard* and *Graphics Tools/Standard Canvas* shaders are architected to only utilize the features enabled. However, the *Graphics Tools/Standard* and *Graphics Tools/Standard Canvas* shaders have also been written to deliver comparable aesthetic results as the Unity Standard shader, but at a much lower cost. One simple way to compare shader performance is via the number of operations that need to be performed on the GPU. The magnitude of calculations may fluctuate by features enabled and other rendering configurations.
 
 > [!TIP]
 > As a rule of thumb, you should use the Graphics Tools Standard shader over built-in shaders on mobile mixed reality devices. But, it is always wise to profile your scenario with tools like [RenderDoc](https://docs.unity3d.com/Manual/RenderDocIntegration.html).

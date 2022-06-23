@@ -40,7 +40,7 @@ Canvas material animators allow developers to animate material properties on Uni
 
 The **Window > Graphics Tools > Canvas Material Animators > Generate All** menu item will regenerate all animator scripts for shaders with these conditions met:
 
-- Exists in the _Runtime/Shaders_ directory of the Graphics Tools package
+- Exists in the *Runtime/Shaders* directory of the Graphics Tools package
 - Does not contain "Non-Canvas" it the shader name.
 
 > [!TIP]
@@ -67,7 +67,7 @@ For example, texel density is too high on the left cube and a bit too low on the
 
 ### Show and hide samples
 
-When opening the `MRGTUnityProject` in Unity. The `Samples` folder won't be visible in the `MRTK Graphics Tools` package by default. To show the samples select **Window > Graphics Tools > Show Samples** from the file menu bar.
+When opening the `MRGTUnityProject` in Unity. The *Samples* folder won't be visible in the `MRTK Graphics Tools` package by default. To show the samples select **Window > Graphics Tools > Show Samples** from the file menu bar.
 
 If you would like to hide samples, for example, before committing a contribution to the Graphics Tools package samples, select **Window > Graphics Tools > Hide Samples** from the file menu bar.
 

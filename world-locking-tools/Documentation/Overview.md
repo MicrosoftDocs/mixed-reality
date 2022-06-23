@@ -10,6 +10,7 @@ keywords: Unity, HoloLens, HoloLens 2, Augmented Reality, Mixed Reality, ARCore,
 ---
 
 # Welcome!
+![image showing hologram overlays](../Images/WLT_Final_Hero.png)
 
 World Locking Tools for Unity provides a stable and reliable world-locked coordinate system, binding the virtual/holographic world to the physical world.
 

@@ -8,13 +8,13 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, Standard Shader, Mesh Outlines
 ---
 
-# Mesh outlines
+# Mesh outlines overview
 
-Many mesh outline techniques are done using a [post processing](https://docs.unity3d.com/Manual/PostProcessingOverview.html) technique. Post processing provides great quality outlines, but can be prohibitively expensive on many Mixed Reality devices.
+Many mesh outline techniques are done using a [post processing](https://docs.unity3d.com/Manual/PostProcessingOverview.html) technique. Post processing provides great quality outlines, but can be prohibitively expensive on many mixed reality devices.
 
 ![Mesh outlines example](images/MeshOutline/MeshOutline.jpg)
 
-_MeshOutline.cs_ and _MeshOutlineHierarchy.cs_ can be used to render an outline around a mesh renderer. Enabling this component introduces another render pass of the object being outlined, but it's designed to run optimally on mobile Mixed Reality devices and doesn't utilize any post processes.
+_MeshOutline.cs_ and _MeshOutlineHierarchy.cs_ can be used to render an outline around a mesh renderer. Enabling this component introduces another render pass of the object being outlined, but it's designed to run optimally on mobile mixed reality devices and doesn't utilize any post processes.
 
 > [!NOTE]
 > Limitations of this effect include it not working well on objects which are not watertight (or required to be two sided) and depth sorting issues can occur on overlapping objects.
@@ -39,7 +39,7 @@ The outline behaviors are used with the *Graphics Tools/Standard* shader. Outlin
 
 ![Smooth normals comparison](images/MeshOutline/SmoothNormals.jpg)
 
-In the above image, cube 1 is utilizing mesh smoothing while cube 2 is not. Notice the discontinuities at the corners of the cube without mesh smoothing.
+In the above image, cube one is utilizing mesh smoothing while cube two is not. Notice the discontinuities at the corners of the cube without mesh smoothing.
 
 > [!TIP]
 > Certain meshes (like spheres) don't display these discontinuities. So, it's best to test for meshes that need mesh smoothing.

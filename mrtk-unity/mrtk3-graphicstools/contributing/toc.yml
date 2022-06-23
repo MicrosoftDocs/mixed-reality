@@ -1,9 +1,0 @@
-items: 
-- name: Authors
-  href: authors.md
-- name: Contributing to MRTK
-  href: contributing.md
-- name: Documentation guidelines
-  href: documentation-guide.md
-- name: Experimental features
-  href: experimental-features.md

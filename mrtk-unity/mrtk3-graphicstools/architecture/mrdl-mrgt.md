@@ -17,13 +17,13 @@ Graphics Tools is built to better share the tools and processes used to build MR
 ## Where can MRDL components be found?
 
 > [!TIP]
-> Looking for complete MRDL designed components? Take a look at higher level UX packages within the [MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity).
+> Looking for complete MRDL designed components? Take a look at higher level UX packages within the [MRTK](https://aka.ms/mrtk3).
 
 The shaders and assets that power the MRDL can be found in the following locations:
 
 ### Shaders
 
-The first option of every material inspector contains a shader dropdown. All Graphics Tools shaders are within the `Graphics Tools` namespace. Most bespoke MRDL shaders are in the `Graphics Tools/Canvas` and `Graphics Tools/Non-Canvas` shader namespace. As the name suggests shaders in the `Canvas` namespace should be used with UnityUI canvases and shaders in the `Non-Canvas` namespace should be used within normal Unity contexts.
+The first option of every material inspector contains a shader dropdown. All Graphics Tools shaders are within the `Graphics Tools` namespace. Most bespoke MRDL shaders are in the `Graphics Tools/Canvas` and `Graphics Tools/Non-Canvas` shader namespace. As the name suggests, shaders in the `Canvas` namespace should be used with UnityUI canvases and shaders in the `Non-Canvas` namespace should be used within normal Unity contexts.
 
 ![Shader dropdown in editor](images/MRDL-MRGT/ShaderDropdown.jpg)
 
@@ -32,18 +32,18 @@ The first option of every material inspector contains a shader dropdown. All Gra
 
 ### Materials
 
-Within the `Runtime/Materials` folder, you will find a material that represents each shader above. These materials are used for common user interface components. Some materials reference textures that are required for certain effects, like iridescence.
+Within the *Runtime/Materials* folder, you will find a material that represents each shader above. These materials are used for common user interface components. Some materials reference textures that are required for certain effects, like iridescence.
 
 ### Models
 
-Some models live in the `Runtime/Models` folder. These models are used for non-canvas materials.
+Some models live in the *Runtime/Models* folder. These models are used for non-canvas materials.
 
 > [!TIP]
 > Most canvas models are generated programmatically in code.
 
 ## When should I use one MRDL component versus another?
 
-Graphics Tools supports two user interface creation methods, UnityUI and traditional game objects. It's recommended to look at the [sample assets](https://Link-to-sample-assets.com), however, the list below can used as a reference.
+Graphics Tools supports two user interface creation methods, UnityUI and traditional game objects. It's recommended to look at the [sample assets](../features/samples/unity-ui.md), however, the list below can used as a reference.
 
 ### Back plate
 
@@ -107,4 +107,4 @@ Similar to the back plate, but provides a rect with beveled edges.
 
 ## See also
 
-* [Architecture overview](overview.md)
+* [Graphics Tools overview](overview.md)
