@@ -21,7 +21,7 @@ Besides colour and thickness we can further define the highlighting by adding an
 
 To achieve the outline effect, add the MeshOutline script for single objects or the MeshOutlineHierarchy script for entire mesh hierarchies in the Inspector, set up the Outline Width and apply an outline material.
 
-<img src="images/SampleScenes/outlineScripts_side-side_01.png" width="40%" height="40%">
+<img src="images/SampleScenes/outlineScripts_side-side_01.png" width="60%" height="60%">
 
 For guides on how to set up an outline material, please visit the [MeshOutline Material Setup](https://github.com/Species521/mixed-reality-pr_mawettig/blob/main/mrtk-unity/mrtk3-graphicstools/features/mesh-outlines.md#material-setup)
 
