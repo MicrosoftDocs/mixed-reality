@@ -12,10 +12,12 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 
 This scene illustrates the outline feature and its variation possibilities.
 Outlines are a quick and appealing feature to highlight objects in a scene.
-Besides colour and thickness we can further define the highlighting by adding animations and grading effects.
+Besides colour and thickness we can further define the highlighting by adding animations and gradient effects.
+
 
 
 ![MeshOutlineSampleScene](images/SampleScenes/OutlinesScene_01.gif)
+
 
 To achieve the outline effect, add the MeshOutline or the MeshOutlineHierarchy script to the 3D object in the Inspector, set up the Outline Width and apply an outline material.
 For guides on how to set up an outline material, please visit the [MeshOutline Material Setup](https://github.com/Species521/mixed-reality-pr_mawettig/blob/main/mrtk-unity/mrtk3-graphicstools/features/mesh-outlines.md#material-setup)
@@ -26,11 +28,11 @@ For guides on how to set up an outline material, please visit the [MeshOutline M
 
 In this example, the Outline Width value is animated and applied to the object itself as Animator 'OutlinePulseController'.
 
-<img src="images/SampleScenes/pulseAnimation_01.jpg" width="50%" height="50%">
+<img src="images/SampleScenes/pulseAnimation_01.jpg" width="30%" height="30%">
 
-> [!NOTE]
+> [NOTE]
 > Depending on the model's edge hardness, you might experience jagged and disrupted results. For the Outline effect to work properly, the model's vertex normals need to be smooth. If the model itself doesn't provide this, an in-editor solution might be to apply the MeshSmoother script to the model.
-> [MeshSmoother](images/SampleScenes/MeshSmoother_01.jpg)
+> ![MeshSmoother](images/SampleScenes/MeshSmoother_01.jpg)
 
 ## Acrylic Pre-baked
 
