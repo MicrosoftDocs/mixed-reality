@@ -1,5 +1,5 @@
 ---
-title: Detecting platform capabilities
+title: Detecting platform capabilities -- MRTK2
 description: Details of different capabilities MRTK supports
 author: polar-kev
 ms.author: kurtie
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, capabilities,
 ---
 
-# Detecting platform capabilities
+# Detecting platform capabilities -- MRTK2
 
 A common question asked of the MRTK involves knowing which specific device (ex: Microsoft HoloLens 2) is being
 used to run an application. Identifying the exact hardware can be challenging on different platforms. Instead, the MRTK

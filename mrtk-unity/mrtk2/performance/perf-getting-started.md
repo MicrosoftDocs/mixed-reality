@@ -1,5 +1,5 @@
 ---
-title: Performance
+title: Performance -- MRTK2
 description: Documentation to understand and adjust preformance in MRTK.
 author: keveleigh
 ms.author: kurtie
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Performance
+# Performance -- MRTK2
 
 ## Getting started
 

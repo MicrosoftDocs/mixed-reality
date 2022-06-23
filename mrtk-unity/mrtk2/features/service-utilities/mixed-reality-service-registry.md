@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Mixed Reality service registry
+# Mixed Reality service registry &#8212; MRTK2
 
 The Mixed Reality Toolkit has two very similarly named components that perform related tasks:
 MixedRealityServiceRegistry and IMixedRealityServiceRegistrar.

@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Bounds Control,
 ---
 
-# Bounds control
+# Bounds control &#8212; MRTK2
 
 ![Bounds control](../images/bounds-control/MRTK_BoundsControl_Main.png)
 

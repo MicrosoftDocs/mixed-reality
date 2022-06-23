@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Input overview
+# Input overview &#8212; MRTK2
 
 The Input System in MRTK allows you to:
 

@@ -1,5 +1,5 @@
 ---
-title: Detecting controllers in MRTK
+title: Detecting controllers in MRTK2
 description: Documentation on using various controllers with MRTK
 author: RogPodge
 ms.author: roliu
@@ -7,7 +7,7 @@ ms.date: 05/13/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Controllers, HP Reverb, Oculus, HTC Vive, Hands
 ---
 
-# Detecting controllers in MRTK
+# Detecting controllers in MRTK2
 
 MRTK has support for many different controllers. Many controllers, such as HTC Vive Knuckles and HTC Vive Wands, will work natively once an application built with MRTK is launched on the compatible device. Other controllers, such as articulated hands on the Oculus Quest and the HP Reverb G2 Controllers, require additional packages before they are recognized by MRTK.
 

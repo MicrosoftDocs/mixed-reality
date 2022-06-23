@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Scrolling Object
 ---
 
-# Scrolling object collection
+# Scrolling object collection &#8212; MRTK2
 
 ![Scrolling object collection](../images/scrolling-collection/ScrollingCollection_Main.jpg)
 
