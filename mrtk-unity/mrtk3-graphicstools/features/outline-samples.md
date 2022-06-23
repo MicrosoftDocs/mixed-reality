@@ -1,6 +1,6 @@
 ---
 title: MeshOutline Sample Scene
-description: Illustrated walkthrough of the MeshOutline features
+description: Illustrated walkthrough of the MeshOutline examples
 author: Species521
 ms.author: wettigmarti
 ms.date: 06/23/2022
