@@ -23,7 +23,7 @@ For guides on how to set up an outline material, please visit the [MeshOutline M
 ## Outline Pulse Example
 
 
-<img src="images/SampleScenes/OutlinesRainbow_01.gif" width="50%" height="50%">
+![Acrylic Sample scene](images/SampleScenes/OutlinesRainbow_01.gif)
 
 In this example, the Outline Width value is animated and applied to the object itself as Animator 'OutlinePulseController'.
 
