@@ -1,5 +1,5 @@
 ---
-title: Mixed Reality Graphics Tools Developer Documentation -- MRTK3
+title: Mixed Reality Graphics Tools Developer Documentation
 description: Learn about the Mixed Reality Graphics Tools for Unity.
 author: tayomadein
 ms.author: omadein
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, Standard Shader
 ---
 
-# What is Graphics Tools? -- MRTK3
+# What is Graphics Tools? &#8212; MRTK3
 
 *MRTK Graphics Tools for Unity* is a Unity engine package created to help improve the visual fidelity of mixed reality applications while staying within performance budgets.
 

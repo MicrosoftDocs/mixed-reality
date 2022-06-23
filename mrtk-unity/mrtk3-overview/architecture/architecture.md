@@ -1,5 +1,5 @@
 ---
-title: Architecture overview -- MRTK3
+title: Architecture overview
 description: Mixed Reality Toolkit 3 for developers - Architecture overview.
 author: MaxWang-MS
 ms.author: wangmax
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, architecture
 ---
 
-# Architecture overview -- MRTK3
+# Architecture overview &#8212; MRTK3
 
 ![Architecture MRTK3](../images/MRTK_v3_Architecture.png)
 

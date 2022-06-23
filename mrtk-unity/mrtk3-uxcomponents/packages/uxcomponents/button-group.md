@@ -1,5 +1,5 @@
 ---
-title: Button Group -- MRTK3
+title: Button Group
 description: Button bars and grids in MRTK3
 author: Zee2
 ms.author: finnsinclair
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, Button, PressableButton, ObjectBar, ButtonGroup
 ---
 
-# Button Group -- MRTK3
+# Button Group &#8212; MRTK3
 
 ![Button group](images/button-group.png)
 

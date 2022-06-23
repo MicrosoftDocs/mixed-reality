@@ -1,5 +1,5 @@
 ---
-title: Hover Lights -- MRTK3
+title: Hover Lights
 description: Learn about the Graphics Tools hover lights.
 author: tayomadein
 ms.author: omadein
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, Standard Shader, Hover Light
 ---
 
-# Hover light overview -- MRTK3
+# Hover light overview &#8212; MRTK3
 
 A `HoverLight` is a [Fluent Design System](https://www.microsoft.com/design/fluent/) paradigm that mimics a [point light](https://docs.unity3d.com/Manual/Lighting.html) hovering near the surface of an object. Often used for far away interactions, the application can control the properties of a Hover Light via the `HoverLight` component.
 

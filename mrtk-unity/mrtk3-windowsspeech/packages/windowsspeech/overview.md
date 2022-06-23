@@ -1,5 +1,5 @@
 ---
-title: Windows Speech Package -- MRTK3
+title: Windows Speech Package
 description: Overview of MRTK3 Windows speech package
 author: MaxWang-MS
 ms.author: wangmax
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, windows speech, speech, phrase, phrase recognition, speech recognition, Mixed Reality Toolkit
 ---
 
-# Windows speech package -- MRTK3
+# Windows speech package &#8212; MRTK3
 
 The Windows Speech package adds `WindowsPhraseRecognitionSubsystem` to your project, which offers phrase recognition capabilities on Windows and UWP platforms. As a [MRTK `PhraseRecognitionSubsystem`](../../../mrtk3-core/packages/core/subsystems/phraserecognitionsubsystem.md), the subsystem can work with `SpeechInteractor` to trigger select events on `StatefulInteractable`s based on the settings of the interactables. You can also register arbitrary `UnityAction`s to a keyword of your choice so that the action will be invoked when such word is said.
 

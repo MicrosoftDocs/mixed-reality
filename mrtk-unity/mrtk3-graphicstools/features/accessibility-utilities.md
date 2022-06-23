@@ -1,5 +1,5 @@
 ---
-title: Mixed Reality Graphics Tools Accessibility Utilities -- MRTK3
+title: Mixed Reality Graphics Tools Accessibility Utilities
 description: Learn about the Mixed Reality Graphics Tools Accessibility Utilities for Unity.
 author: chinezenwosu-ms
 ms.author: chinezenwosu
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, Standard Shader, Accessibility Utilities
 ---
 
-# Accessibility utilities -- MRTK3
+# Accessibility utilities  &#8212; MRTK3
 
 The `Accessibility utilities` provide support for some basic accessibility features when developing Mixed Reality applications in Unity.
 

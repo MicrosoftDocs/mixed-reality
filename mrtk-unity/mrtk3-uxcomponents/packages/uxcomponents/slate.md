@@ -1,5 +1,5 @@
 ---
-title: Slate -- MRTK3
+title: Slate
 description: Slates in MRTK3
 author: Zee2
 ms.author: finnsinclair
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, UI, Slate
 ---
 
-# Slate -- MRTK3
+# Slate &#8212; MRTK3
 
 ![Slate](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_Slate.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Solvers -- MRTK3
+title: Solvers
 description: Overview of Solvers in MRTK3
 author: CDiaz-MS
 ms.author: cadia
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Solvers
 ---
 
-# Solvers -- MRTK3
+# Solvers &#8212; MRTK3
 
 ![Solver Main](../../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_Solver_Main.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Extended Assets Overview -- MRTK3
+title: Extended Assets Overview
 description: Overview of MRTK3 Extended Assets
 author: MaxWang-MS
 ms.author: wangmax
@@ -8,4 +8,4 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, data binding, theme, theming, Mixed Reality Toolkit, Extended Assets
 ---
 
-# Welcome to Extended assets Overview -- MRTK3
+# Welcome to Extended assets Overview &#8212; MRTK3

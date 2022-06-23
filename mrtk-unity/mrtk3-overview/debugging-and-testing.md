@@ -1,5 +1,5 @@
 ---
-title: Iteration and debugging -- MRTK3
+title: Iteration and debugging
 description: Iteration and debugging
 author: MaxWang-MS
 ms.author: wangmax
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, debugging
 ---
 
-# Iteration and debugging -- MRTK3
+# Iteration and debugging &#8212; MRTK3
 
 Compiling and deploying your app can take a significant amount of time, so we recommend a variety of instant iteration/preview solutions while developing your application.
 

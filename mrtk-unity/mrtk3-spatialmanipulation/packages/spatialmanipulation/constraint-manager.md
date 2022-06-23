@@ -1,5 +1,5 @@
 ---
-title: Constraints -- MRTK3
+title: Constraints
 description: Overview of constraints and the constraints manager in MRTK3
 author: Zee2
 ms.author: finnsinclair
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Constraints, ConstraintManager
 ---
 
-# Constraints -- MRTK3
+# Constraints &#8212; MRTK3
 
 `ConstraintManager` allows you to apply a set of constraint components to a transform. By default, the constraint manager will automatically collect all attached [constraint components](#transform-constraints) and apply them to the target object. However, users can also opt to configure the list of applied constraints manually and only allow a subset of attached constraints to be used.
 

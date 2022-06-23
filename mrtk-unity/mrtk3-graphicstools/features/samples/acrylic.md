@@ -1,5 +1,5 @@
 ---
-title: Acrylic Sample Scene -- MRTK3
+title: Acrylic Sample Scene
 description: Illustrated walkthrough of the Acrylic feature
 author: Species521
 ms.author: wettigmarti

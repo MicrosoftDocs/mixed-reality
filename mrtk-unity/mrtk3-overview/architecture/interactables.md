@@ -1,5 +1,5 @@
 ---
-title: Interactables -- MRTK3
+title: Interactables
 description: Mixed Reality Toolkit 3 for developers - Interactables.
 author: MaxWang-MS
 ms.author: wangmax
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, interactables
 ---
 
-# Interactables -- MRTK3
+# Interactables &#8212; MRTK3
 
 MRTK builds on the `XRBaseInteractable` provided by Unity's XR Interaction Toolkit. The existing interactable behavior and API is fully supported in MRTK, and all of our custom interactables obey the existing XRI interactable API.
 

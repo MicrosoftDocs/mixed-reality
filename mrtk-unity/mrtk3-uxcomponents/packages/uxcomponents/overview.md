@@ -1,5 +1,5 @@
 ---
-title: UX Components -- MRTK3
+title: UX Components
 description: Overview of the UX Components package
 author: Zee2
 ms.author: finnsinclair
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, Button, PressableButton, Slider, Toggle
 ---
 
-# UX Components -- MRTK3
+# UX Components &#8212; MRTK3
 
 This package contains an extensive library of pre-built UX prefabs ready for use in your mixed reality applications.
 

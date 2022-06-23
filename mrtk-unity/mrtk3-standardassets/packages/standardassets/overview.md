@@ -1,5 +1,5 @@
 ---
-title: Standard assets overview -- MRTK3
+title: Standard assets overview
 description: Mixed Reality Toolkit 3 for developers - Standard assets overview.
 author: davidkline-ms
 ms.author: davidkl
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, assets
 ---
 
-# Standard Assets -- MRTK3
+# Standard Assets &#8212; MRTK3
 
 The standard assets package contains a core set of materials, fonts, audio files and other assets that are recommended to be used by most mixed reality applications. By using components from standard assets, your application will share a common look and feel that can help bring a sense of familiarity to customers.
 

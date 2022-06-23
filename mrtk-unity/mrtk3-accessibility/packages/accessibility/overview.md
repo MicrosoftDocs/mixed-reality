@@ -1,5 +1,5 @@
 ---
-title: Accessibility -- MRTK3
+title: Accessibility 
 description: Mixed Reality Toolkit 3 for developers - Accessibility overview.
 author: davidkline-ms
 ms.author: davidkl
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, accessibility
 ---
 
-# Accessibility -- MRTK3
+# Accessibility &#8212; MRTK3
 
 The accessibility package contains features and components to enable developers to create mixed reality experiences for everyone.
 

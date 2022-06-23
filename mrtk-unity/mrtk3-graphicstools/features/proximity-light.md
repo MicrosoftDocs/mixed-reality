@@ -1,5 +1,5 @@
 ---
-title: Proximity Light -- MRTK3
+title: Proximity Light
 description: Learn about the Graphics Tools proximity lights.
 author: tayomadein
 ms.author: omadein
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, Standard Shader, Proximity Light
 ---
 
-# Proximity light overview -- MRTK3
+# Proximity light overview &#8212; MRTK3
 
 A `ProximityLight` is a [Fluent Design System](https://www.microsoft.com/design/fluent/) paradigm that mimics a "gradient inverse point light" hovering near the surface of an object. It's often used for near interactions, the application can control the properties of a Proximity Light via the `ProximityLight` component.
 

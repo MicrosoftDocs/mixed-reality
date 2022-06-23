@@ -1,5 +1,5 @@
 ---
-title: Volumetric UI with Canvas -- MRTK3
+title: Volumetric UI with Canvas
 description: Conceptual overview of hybrid Canvas-based UI in MRTK3
 author: Zee2
 ms.author: finnsinclair
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, UI, Canvas, input, mouse, keyboard, gamepad
 ---
 
-# Volumetric UI with Canvas -- MRTK3
+# Volumetric UI with Canvas &#8212; MRTK3
 
 :::row:::
     :::column:::
