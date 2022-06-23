@@ -8,13 +8,13 @@ ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, UI, Slider, PinchSlider
 ---
 
-# Slider
+# Slider &#8212; MRTK3
 
 ![Slider example](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_Slider.png)
 
 Sliders are UI components that allow you to continuously change a value by moving a slider on a track. Sliders can be interacted with using Poke, Grab, Ray, Gaze-Pinch, or any other valid interaction in XRI or MRTK3.
 
-As with other interactables in MRTK, the main Slider interactable does not render any visuals. You must combine the Slider script with a visuals script. We provide two scripts in MRTK3, `CanvasSliderVisuals` for the unified RectTransform-based sliders and `SliderVisuals` for non-RectTransform-based sliders.
+As with other interactables in MRTK, the main Slider interactable doesn't render any visuals. You must combine the Slider script with a visuals script. We provide two scripts in MRTK3: `CanvasSliderVisuals` for the unified RectTransform-based sliders and `SliderVisuals` for non-RectTransform-based sliders.
 
 ## Layout
 

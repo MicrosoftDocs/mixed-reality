@@ -1,5 +1,5 @@
 ---
-title: Mixed Reality Toolkit 3 Developer Documentation - Quest deployment
+title: Deploy an MRTK3 project to a Quest device
 description: Mixed Reality Toolkit 3 for developers - Quest deployment.
 author: RogPodge
 ms.author: roliu
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, Quest, Deployment
 ---
 
-# Deploying to a Quest Device
+# Deploy an MRTK3 project to a Quest device
 
 This page describes how to deploy your Unity Project with MRTK onto a Quest device. To add MRTK to your project, please refer to the [setup page](../setup.md).
 
@@ -21,11 +21,11 @@ This page describes how to deploy your Unity Project with MRTK onto a Quest devi
 
 1. Ensure that [developer mode](https://developer.oculus.com/documentation/native/android/mobile-device-setup/) is enabled on your device. Installing the Oculus ADB Drivers is optional.
 
-1. Navigate to **File > Build Settings**
+1. Navigate to **File > Build Settings**.
 
 1. Under **Platform**, select **Android**. Switch the platform to **Android**.
 
-1. Navigate to **Edit > Project Settings**
+1. Navigate to **Edit > Project Settings**.
 
 1. Under **Project Settings**, navigate to **XR Plug-in Management** and enable **OpenXR** under the **Android** tab. Ensure that **Initialize XR on Startup** is selected and that no feature groups are enabled.
 
@@ -33,15 +33,15 @@ This page describes how to deploy your Unity Project with MRTK onto a Quest devi
 
 1. Under **Project Settings**, navigate to **XR Plug-in Management > OpenXR > Interaction Profiles** and change it so only **Oculus Touch Controller Profile** is present.
 
-1. Under **Project Settings**, navigate to **XR Plug-in Management > OpenXR > OpenXR Feature Groups** and ensure the following are checked under **All Features**
+1. Under **Project Settings**, navigate to **XR Plug-in Management > OpenXR > OpenXR Feature Groups** and ensure the following are checked under **All Features**.
 
    ![Oculus OpenXR](../images/oculus-openxr.png)
 
-   > [!NOTE]
-   > Several red error icons and yellow warning icon may appear during this process. Click on the icon to open the **OpenXR Project Validation** tool and select **Fix All** to address the issues. You may need to do this several times.
+    > [!NOTE] 
+    > Red or yellow error/warning icons might appear during this process. Click the icon to open the **OpenXR Project Validation** tool and select **Fix All** to address the issues. You may need to do this several times.
 
-   > [!NOTE]
-   > If you do not see **Oculus Quest Support** under the **OpenXR Feature Groups** panel, make sure you've downloaded the Mixed Reality OpenXR Plugin via the [MR Feature Tool](/mixed-reality/develop/unity/welcome-to-mr-feature-tool)
+    > [!NOTE] 
+    > If you don't see **Oculus Quest Support** under the **OpenXR Feature Groups** panel, make sure you've downloaded the Mixed Reality OpenXR Plugin via the [MR Feature Tool](/mixed-reality/develop/unity/welcome-to-mr-feature-tool)
 
 ## Deploying to Device
 
@@ -50,5 +50,5 @@ This page describes how to deploy your Unity Project with MRTK onto a Quest devi
    > [!NOTE]
    > **Do not** follow the Configure Settings instructions on Oculus's documentation page. Their instructions require the use of the Oculus Integration SDK, and uses the Oculus XR Plug-in rather than the OpenXR Plug-in.
 
-   > [!NOTE]
-   > It is recommended to **Build and Run** your project, as it will deploy it directly onto your Oculus Quest.
+    > [!NOTE] 
+    > We recommend that you select **Build and Run** to build and run your project. This will cause it to deploy  directly to your Oculus Quest.

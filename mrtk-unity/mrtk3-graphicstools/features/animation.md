@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, Standard Shader, Animation
 ---
 
-# Animation
+# Animation &#8212; MRTK3
 
 Most properties on the Graphics Tools Standard shader can be animated using Unity's built-in [animation system](https://docs.unity3d.com/Manual/AnimationOverview.html). Materials that are used on [Unity UI](https://docs.unity3d.com/ScriptReference/CanvasRenderer.html) components don't expose their material properties to Unity's animation system by default (nor do they support [material property blocks](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html)). Graphics Tools contains a system to support the animation of Unity UI material properties.
 

@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, MRDL, Mixed Reality Design Language
 ---
 
-# Connection between the Mixed Reality Design Language (MRDL) to Graphics Tools
+# Connection between the Mixed Reality Design Language (MRDL) to Graphics Tools &#8212; MRTK3
 
 The Mixed Reality Design Language (MRDL) is a design language similar to [Fluent](https://www.microsoft.com/design/fluent/#/), but it has considerations made for Mixed Reality. Over the years MRDL has evolved with each iteration of HoloLens and within products such as the [Mesh app](https://techcommunity.microsoft.com/t5/mixed-reality-blog/mixed-reality-design-language-and-microsoft-mesh-app/ba-p/2746980).
 

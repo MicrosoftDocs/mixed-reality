@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, Standard Shader,Clipping Primitive, Material Instance
 ---
 
-# Clipping primitive overview
+# Clipping primitive overview &#8212; MRTK3
 
 The `ClippingPrimitive` behaviors allow for performant `plane`, `sphere`, and `box` shape clipping with the ability to specify which side of the primitive to clip against (inside or outside) when used with Graphics Tools shaders.
 

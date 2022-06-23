@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools
 ---
 
-# Graphics Tools overview
+# Graphics Tools overview &#8212; MRTK3
 
 Graphics Tools is a [Unity package](https://docs.unity3d.com/Manual/PackagesList.html) that is designed for independent use or with other packages inside the Mixed Reality Toolkit (MRTK). Many developers use Graphics Tools on its own, but also inadvertently when pulled in as a dependency to another MRTK package.
 
