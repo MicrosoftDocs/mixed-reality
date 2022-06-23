@@ -44,7 +44,6 @@ In this example, the Outline Width value is animated and applied to the object i
 Some imported 3D objects come in mutliple parts in hierarchical structures, in this case the model has several subnodes such as skeletal joints and unattached additional meshes. In order to avoid searching and applying through the entire hierarchy, the MeshOutlineHierarchy script needs merely to be added on the root object and all meshes inside that structure have the effect applied as well. 
 As seen in this example, the outline works very well on skinned and animated meshes too.
 
+## Lighting effects
 
-
-As a different option, Acrylic blurs a static background like the photos above beforehand.
-The rounded plates on top of the photos act as stencil windows to make the pre-blurred image visible in that area.
+<img src="images/SampleScenes/OutlinesReveal_01.gif" width="40%" height="40%">
