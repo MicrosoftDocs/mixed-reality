@@ -37,7 +37,7 @@ In this example, the Outline Width value is animated and applied to the object i
 
 > [NOTE]
 > Depending on the model's edge hardness, you might experience jagged and disrupted results. For the Outline effect to work properly, the model's vertex normals need to be smooth. If the model itself doesn't provide this, an in-editor solution might be to apply the MeshSmoother script to the model.
-> Read more about the Mesh Smoother [here](mesh-outlines.md#mesh-smoothing).
+> Read more about the MeshSmoother [here](mesh-outlines.md#mesh-smoothing).
 
 <img src="images/SampleScenes/MeshSmoother_01.jpg" width="40%" height="40%">
 
