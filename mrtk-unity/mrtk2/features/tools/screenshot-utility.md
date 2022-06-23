@@ -1,5 +1,5 @@
 ---
-title: Screenshot utility -- MRTK2
+title: Screenshot utility
 description: Documentation on hopw to use screenshot tool in MRTK
 author: keveleigh
 ms.author: kurtie
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Screenshot utility -- MRTK2
+# Screenshot utility &#8212; MRTK2
 
 Often taking screenshots in Unity for documentation and promotional imagery can be burdensome and the output often looks less than desirable. This is where the `ScreenshotUtility` (xref:Microsoft.MixedReality.Toolkit.Utilities.Editor.ScreenshotUtility) class comes into play.
 

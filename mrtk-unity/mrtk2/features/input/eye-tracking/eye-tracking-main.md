@@ -1,5 +1,5 @@
 ---
-title: Eye Tracking -- MRTK2
+title: Eye Tracking
 description: Eye Tracking landing page in MRTK
 author: CDiaz-MS
 ms.author: cadia
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, EyeTracking,
 ---
 
-# Eye tracking in the Mixed Reality Toolkit -- MRTK2
+# Eye tracking in the Mixed Reality Toolkit &#8212; MRTK2
 
 ![Eye tracking in MRTK](../../images/eye-tracking/mrtk_et_compilation.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Object collection -- MRTK2
+title: Object collection
 description: Overview of Object collection in MRTK
 author: CDiaz-MS
 ms.author: cadia
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Object collection,
 ---
 
-# Object collection -- MRTK2
+# Object collection &#8212; MRTK2
 
 ![Object collection](../images/object-collection/MRTK_ObjectCollection_Main.jpg)
 

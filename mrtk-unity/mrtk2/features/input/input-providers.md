@@ -1,5 +1,5 @@
 ---
-title: Input providers -- MRTK2
+title: Input providers
 description: Documentation on diffrent types of Input Providers in MRTK
 author: keveleigh
 ms.author: kurtie
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Input providers -- MRTK2
+# Input providers &#8212; MRTK2
 
 Input providers are registered in the **Registered Service Providers Profile**, found in the Mixed Reality Toolkit component:
 

@@ -1,5 +1,5 @@
 ---
-title: Input actions -- MRTK2
+title: Input actions
 description: Documentation to create input actions in MRTK
 author: keveleigh
 ms.author: kurtie
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, InputActions,
 ---
 
-# Input actions -- MRTK2
+# Input actions &#8212; MRTK2
 
 [**Input Actions**](input-actions.md) are abstractions over raw inputs meant to help isolating application logic from the specific input sources producing an input. It can be useful, for example, to define a *Select* action and map it to the left mouse button, a button in a gamepad and a trigger in a 6 DOF controller. You can then have your application logic listen for *Select* input action events instead of having to be aware of all the different inputs that can produce it.
 

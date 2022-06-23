@@ -1,5 +1,5 @@
 ---
-title: Pulse shader -- MRTK2
+title: Pulse shader
 description: description on Pulse shaders in MRTK.
 author: CDiaz-MS
 ms.author: cadia
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Pulse shader -- MRTK2
+# Pulse shader &#8212; MRTK2
 
 ![MRTK_SpatialMesh_Pulse](https://user-images.githubusercontent.com/13754172/68261851-3489e200-fff6-11e9-9f6c-5574a7dd8db7.gif)
 

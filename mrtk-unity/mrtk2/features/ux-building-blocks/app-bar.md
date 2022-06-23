@@ -1,5 +1,5 @@
 ---
-title: App bar -- MRTK2
+title: App bar
 description: Overview on App Bar in MRTK
 author: CDiaz-MS
 ms.author: cadia
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, App bar,
 ---
 
-# App bar -- MRTK2
+# App bar &#8212; MRTK2
 
 ![App bar](../images/app-bar/MRTK_AppBar_Main.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Elastic system -- MRTK2
+title: Elastic system
 description: Documentation related to elastics simulation in MRTK
 author: CDiaz-MS
 ms.author: cadia
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, ElasticsSystem,
 ---
 
-# Elastic system -- MRTK2
+# Elastic system &#8212; MRTK2
 
 ![Elastic System](../images/elastics/Elastics_Main1.gif)
 

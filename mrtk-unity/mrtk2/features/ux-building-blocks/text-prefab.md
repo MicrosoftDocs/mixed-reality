@@ -1,5 +1,5 @@
 ---
-title: Text prefab -- MRTK2
+title: Text prefab
 description: Overview of TextPrefab in MRTK
 author: CDiaz-MS
 ms.author: cadia
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, TMP,
 ---
 
-# Text prefab -- MRTK2
+# Text prefab &#8212; MRTK2
 
 These prefabs are optimized for the rendering quality in Windows Mixed Reality. For more information, please read the guideline [Text in Unity](/windows/mixed-reality/text-in-unity) on Microsoft Windows Dev Center.
 

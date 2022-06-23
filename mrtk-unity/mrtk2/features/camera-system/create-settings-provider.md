@@ -1,5 +1,5 @@
 ---
-title: Creating a camera settings provider -- MRTK2
+title: Creating a camera settings provider
 description: Data provider for camera settings in MRTK
 author: davidkline-ms
 ms.author: davidkl
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Creating a camera settings provider -- MRTK2
+# Creating a camera settings provider &#8212; MRTK2
 
 The Camera system is an extensible system for providing support for platform specific camera configurations. To add support for a new camera configuration, a custom settings provider may be required.
 

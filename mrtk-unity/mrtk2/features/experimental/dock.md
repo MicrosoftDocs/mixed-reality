@@ -1,5 +1,5 @@
 ---
-title: Dock -- MRTK2
+title: Dock
 description: description for Dock Controls.
 author: CDiaz-MS
 ms.author: cadia 
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Dock -- MRTK2
+# Dock &#8212; MRTK2
 
 ![Dock](../images/dock/MRTK_UX_Dock_Main.png)
 

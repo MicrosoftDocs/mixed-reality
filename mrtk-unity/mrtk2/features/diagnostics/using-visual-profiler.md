@@ -1,5 +1,5 @@
 ---
-title: Using the visual profiler -- MRTK2
+title: Using the visual profiler
 description: documentation to use Visual profiler in MRTK
 author: davidkline-ms
 ms.author: davidkl
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Using the visual profiler -- MRTK2
+# Using the visual profiler &#8212; MRTK2
 
 The VisualProfiler provides an easy to use, in-application view of a mixed reality application's performance. The profiler is supported on all Mixed Reality Toolkit platforms, including:
 

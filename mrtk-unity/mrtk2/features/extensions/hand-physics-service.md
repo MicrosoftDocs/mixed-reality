@@ -1,5 +1,5 @@
 ---
-title: Hand physics service -- MRTK2
+title: Hand physics service
 description: documentation to use Hand physics extension service in MRTK
 author: RogPodge
 ms.author: roliu
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Hand physics service -- MRTK2
+# Hand physics service &#8212; MRTK2
 
 ![Hand Physics Extension Service](../images/hand-physics/MRTK_UX_HandPhysics_Main.jpg)
 

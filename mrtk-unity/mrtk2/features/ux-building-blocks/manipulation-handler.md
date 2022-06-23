@@ -1,5 +1,5 @@
 ---
-title: Manipulation handler -- MRTK2
+title: Manipulation handler
 description: Documentation on Manipulation Handler in MRTK
 author: CDiaz-MS
 ms.author: cadia 
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Manipulation,
 ---
 
-# Manipulation handler -- MRTK2
+# Manipulation handler &#8212; MRTK2
 
 ![Manipulation handler](../images/manipulation-handler/MRTK_Manipulation_Main.png)
 

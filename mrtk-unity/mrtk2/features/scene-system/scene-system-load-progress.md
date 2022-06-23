@@ -1,5 +1,5 @@
 ---
-title: Scene System Load Progress -- MRTK2
+title: Scene System Load Progress
 description: Documentation on content loading of Scenes in MRTK
 author: polar-kev
 ms.author: kurtie
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Monitoring content loading -- MRTK2
+# Monitoring content loading &#8212; MRTK2
 
 ## Scene operation progress
 

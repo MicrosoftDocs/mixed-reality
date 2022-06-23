@@ -1,5 +1,5 @@
 ---
-title: Tooltip -- MRTK2
+title: Tooltip
 description: Overview of Tool Tip in MRTK
 author: CDiaz-MS
 ms.author: cadia
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, ToolTip,
 ---
 
-# Tooltip -- MRTK2
+# Tooltip &#8212; MRTK2
 
 ![Tooltip Main](../images/tooltip/MRTK_Tooltip_Main.png)
 

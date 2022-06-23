@@ -1,5 +1,5 @@
 ---
-title: Hand menu -- MRTK2
+title: Hand menu
 description: Hand Menu Example scene in MRTK
 author: cre8ivepark
 ms.author: dongpark
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, HandMenu,
 ---
 
-# Hand menu -- MRTK2
+# Hand menu &#8212; MRTK2
 
 ![Hand Menu UX Example](../images/solver/MRTK_UX_HandMenu.png)
 

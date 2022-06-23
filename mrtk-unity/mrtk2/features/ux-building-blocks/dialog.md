@@ -1,5 +1,5 @@
 ---
-title: Dialog -- MRTK2
+title: Dialog
 description: Description for Dialog Controls.
 author: CDiaz-MS
 ms.author: cadia
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Dialog -- MRTK2
+# Dialog &#8212; MRTK2
 
 ![Dialog](../images/dialog/MRTK_UX_Dialog_Main.png)
 

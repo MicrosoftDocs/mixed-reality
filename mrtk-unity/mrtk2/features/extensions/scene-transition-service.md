@@ -1,5 +1,5 @@
 ---
-title: Scene transition service -- MRTK2
+title: Scene transition service
 description: documentation for Scene Transition in MRTK
 author: davidkline-ms
 ms.author: davidkl
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, SceneTransition,
 ---
 
-# Scene transition service -- MRTK2
+# Scene transition service &#8212; MRTK2
 
 This extension simplifies the business of fading out a scene, displaying a progress indicator, loading a scene, then fading back in.
 

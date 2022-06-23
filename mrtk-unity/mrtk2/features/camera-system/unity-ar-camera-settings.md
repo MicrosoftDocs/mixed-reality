@@ -1,5 +1,5 @@
 ---
-title: Unity AR camera settings -- MRTK2
+title: Unity AR camera settings
 description: Documentation to use AR camera in MRTK
 author: davidkline-ms
 ms.author: davidkl
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, AR Camera,
 ---
 
-# Unity AR camera settings provider -- MRTK2
+# Unity AR camera settings provider &#8212; MRTK2
 
 The Unity AR camera settings provider is an experimental MRTK component that enables mixed reality applications to run on Android and iOS devices.
 

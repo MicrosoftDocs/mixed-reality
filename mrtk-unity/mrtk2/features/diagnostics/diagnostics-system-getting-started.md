@@ -1,5 +1,5 @@
 ---
-title: Diagnostics system overview -- MRTK2
+title: Diagnostics system overview
 description: Documentation to enable and disable diagnostics in MRTK
 author: davidkline-ms
 ms.author: davidkl
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Diagnostics system overview -- MRTK2
+# Diagnostics system overview &#8212; MRTK2
 
 The Mixed Reality Toolkit Diagnostic System provides diagnostic tools that run within the application to enable analysis of application issues.
 

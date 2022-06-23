@@ -1,5 +1,5 @@
 ---
-title: Input events -- MRTK2
+title: Input events
 description: Documentation for InputEvents in MRTK
 author: keveleigh
 ms.author: kurtie
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Events,
 ---
 
-# Input events -- MRTK2
+# Input events &#8212; MRTK2
 
 The list below outlines all available input event interfaces to be implemented by a custom MonoBehaviour component. These interfaces will be called by the MRTK input system to handle custom app logic based on user input interactions. [Pointer input events](pointers.md#pointer-event-interfaces) are handled slightly differently than the standard input event types below.
 

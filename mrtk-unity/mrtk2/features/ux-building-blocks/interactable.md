@@ -1,5 +1,5 @@
 ---
-title: Interactable -- MRTK2
+title: Interactable
 description: Overview on Interactable script component in MRTK
 author: CDiaz-MS
 ms.author: cadia
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Interactable, Events,
 ---
 
-# Interactable -- MRTK2
+# Interactable &#8212; MRTK2
 
 ![Interactable](../images/interactable/InteractableExamples.png)
 
