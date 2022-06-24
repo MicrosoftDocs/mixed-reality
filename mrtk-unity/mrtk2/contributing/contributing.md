@@ -1,5 +1,5 @@
 ---
-title: Contributing to MRTK
+title: Contributing to MRTK2
 description: How to contribute to the Mixed Reality Toolkit
 author: polar-kev
 ms.author: qianwen
@@ -7,7 +7,7 @@ ms.date: 03/17/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Bug report,
 ---
 
-# Contributing to MRTK
+# Contributing to MRTK2
 
 The Mixed Reality Toolkit (MRTK) welcomes contributions from the community. All changes be they small or large, need to adhere to the [MRTK coding standards](coding-guidelines.md), so please ensure you are familiar with these while developing to avoid delays when the change is being reviewed.
 

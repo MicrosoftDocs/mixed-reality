@@ -8,7 +8,7 @@ ms.topic: article
 keywords: mixed reality toolkit, MRTK, examples, HoloLens, HoloLens 2, shaders, tooltips, hand interaction, clipping, bounding boxes, buttons, hand menus, slate, slider
 ---
 
-# Example scenes
+# Example scenes &#8212; MRTK2
 
 MRTK provides various types of example scenes that demonstrate MRTK's features and building blocks for spatial user experience. Experiencing and dissecting example scenes could be helpful to understand the features and apply them to your projects. 
 

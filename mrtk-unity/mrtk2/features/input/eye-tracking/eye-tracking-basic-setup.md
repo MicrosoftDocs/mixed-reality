@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Eye Tracking,
 ---
 
-# Getting started with eye tracking in MRTK
+# Getting started with eye tracking in MRTK2
 
 This page covers how to set up your Unity MRTK scene to use eye tracking in your app.
 The following assumes you are starting out with a fresh new scene.

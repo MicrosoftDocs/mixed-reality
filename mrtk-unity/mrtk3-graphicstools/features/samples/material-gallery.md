@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, Standard Shader, Animation
 ---
 
-# The Material Gallery
+# The Material Gallery &#8212; MRTK3
 
 In this sample scene, you'll find a display of the capabilities of the *Graphics Tools/Standard* shader.
 

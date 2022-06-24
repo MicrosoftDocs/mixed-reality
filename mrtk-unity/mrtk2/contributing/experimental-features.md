@@ -1,5 +1,5 @@
 ---
-title: Experimental features
+title: Experimental features 
 description: Document related to Experimental Features in the MRTK.
 author: polar-kev
 ms.author: kurtie
@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Experimental features
+# Experimental features &#8212; MRTK2
 
 Some features the MRTK team works on appear to have a lot of initial value even if we haven’t fully fleshed out the details. For these types of features, we want the community to get a chance to see them early. Because they are early in the cycle, we label them as experimental to indicate that they are still evolving, and subject to change over time.
 

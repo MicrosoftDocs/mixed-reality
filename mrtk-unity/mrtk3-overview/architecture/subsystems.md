@@ -1,5 +1,5 @@
 ---
-title: Mixed Reality Toolkit 3 Developer Documentation - Subsystems
+title: Subsystems
 description: Mixed Reality Toolkit 3 for developers - Subsystems.
 author: MaxWang-MS
 ms.author: wangmax
@@ -8,9 +8,9 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3
 ---
 
-# Subsystems
+# Subsystems &#8212; MRTK3
 
-MRTK3 leverages the Unity XR Subsystem Management infrastructure for writing extensible modules that can help provide cross-platform support for features like speech and hand tracking. These subsystems are initialized and loaded by Unity, alongside the existing Unity-native subsystems like `XRMeshSubsystem` and `XRInputSubsystem`. See [the documentation for how Unity subsystems work](https://docs.unity3d.com/ScriptReference/UnityEngine.SubsystemsModule.html).
+MRTK3 leverages the Unity XR Subsystem Management infrastructure for writing extensible modules that can help provide cross-platform support for features like speech and hand tracking. These subsystems are initialized and loaded by Unity alongside the existing Unity-native subsystems like `XRMeshSubsystem` and `XRInputSubsystem`. See [the documentation for how Unity subsystems work](https://docs.unity3d.com/ScriptReference/UnityEngine.SubsystemsModule.html).
 
 ## Philosophy
 
@@ -20,7 +20,7 @@ While MRTK v2 used systems and services liberally for processing input, MRTK3 ge
 
 ## MRTK subsystem lifecycle
 
-The subsystem definitions that are included with Unity's infrastructure offer simple lifecycle methods like `Start`, `Stop`, and `Destroy`. We extend this definition to include helpful "tick" methods, like `Update`, `LateUpdate`, and `FixedUpdate`. Our `MRTKLifecycleManager` manages subsystems that implement our lifecycle interface. This lifecycle manager is the only MonoBehaviour involved in the subsystem architecture; this can be placed anywhere in the scene, but we generally tend to leave it somewhere on the Rig.
+The subsystem definitions that are included with Unity's infrastructure offer simple lifecycle methods like `Start`, `Stop`, and `Destroy`. We extend this definition to include helpful "tick" methods, such as  `Update`, `LateUpdate`, and `FixedUpdate`. Our `MRTKLifecycleManager` manages subsystems that implement our lifecycle interface. This lifecycle manager is the only MonoBehaviour involved in the subsystem architecture; this can be placed anywhere in the scene, but we tend to leave it somewhere on the Rig.
 
 ## Querying
 
@@ -60,11 +60,11 @@ Not to be confused with MRTK 2.x's profiles, MRTK3 subsystem profiles are a per-
 
 ![Subsystem profiles, as shown in the MRTK project settings view.](images/profiles.png)
 
-Subsystems that have their corresponding checkbox checked will be created and started by the `MRTKLifecycleManager`, as well as have their lifecycle methods called. Different profiles can be assigned to different deployment targets.
+Subsystems that have their corresponding checkbox checked will be created and started by the `MRTKLifecycleManager` and have their lifecycle methods called. Different profiles can be assigned to different deployment targets.
 
 The subsystems shown here are determined by which packages you've installed. If a package isn't installed, the subsystems associated with that package won't be shown here, and the list auto-refreshes.
 
-There's a pre-made `MRTKProfile` supplied as part of the v3 package. It's an immutable asset. However, if you'd like to create a custom selection of subsystems to run, you should create your `MRTKProfile` asset within your project.
+There's a pre-made `MRTKProfile` supplied as part of the MRTK v3 package. It's an immutable asset. However, if you'd like to create a custom selection of subsystems to run, you should create your `MRTKProfile` asset within your project.
 
 ![Create your own MRTK subsystems](images/create-mrtk-asset.png)
 

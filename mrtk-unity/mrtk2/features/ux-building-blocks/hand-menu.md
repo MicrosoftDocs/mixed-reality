@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, HandMenu,
 ---
 
-# Hand menu
+# Hand menu &#8212; MRTK2
 
 ![Hand Menu UX Example](../images/solver/MRTK_UX_HandMenu.png)
 

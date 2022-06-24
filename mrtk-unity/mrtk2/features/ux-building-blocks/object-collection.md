@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Object collection,
 ---
 
-# Object collection
+# Object collection &#8212; MRTK2
 
 ![Object collection](../images/object-collection/MRTK_ObjectCollection_Main.jpg)
 

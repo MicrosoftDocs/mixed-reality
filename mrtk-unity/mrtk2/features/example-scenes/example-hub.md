@@ -1,5 +1,5 @@
 ---
-title: MRTK Examples Hub
+title: MRTK2 Examples Hub
 description: Overview on Example Scenes in MRTK
 author: polar-kev
 ms.author: roliu
@@ -7,11 +7,11 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# MRTK Examples Hub
+# MRTK2 Examples Hub
 
-![MRTK Examples Hub](../images/examples-hub/MRTK_ExamplesHub.png)
+![MRTK2 Examples Hub](../images/examples-hub/MRTK_ExamplesHub.png)
 
-MRTK Examples Hub is a Unity scene that makes it easy to experience multiple scenes. It uses MRTK's Scene System to load & unload the scenes.
+MRTK2 Examples Hub is a Unity scene that makes it easy to experience multiple scenes. It uses MRTK's Scene System to load & unload the scenes.
 
 **MRTKExamplesHub.unity** is the container scene that has shared components including ``MixedRealityToolkit`` and ``MixedRealityPlayspace``. **MRTKExamplesHubMainMenu.unity** scene has the cube buttons.
 
