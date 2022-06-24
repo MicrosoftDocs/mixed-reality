@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Hand physics service
+# Hand physics service &#8212; MRTK2
 
 ![Hand Physics Extension Service](../images/hand-physics/MRTK_UX_HandPhysics_Main.jpg)
 

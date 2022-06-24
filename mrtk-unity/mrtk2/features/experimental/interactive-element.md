@@ -7,7 +7,7 @@ ms.date: 02/22/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Interactive Element, Interactable
 ---
 
-# Interactive Element [Experimental]
+# Interactive Element [Experimental] &#8212; MRTK2
 
 A simplified centralized entry point to the MRTK input system. Contains state management methods, event management and the state setting logic for 
 Core Interaction States.

@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, PR,
 ---
 
-# Pull requests
+# Pull requests &#8212; MRTK2
 
 ## Prerequisites
 

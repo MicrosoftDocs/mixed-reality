@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, Standard Shader
 ---
 
-# What is Graphics Tools?
+# What is Graphics Tools? &#8212; MRTK3
 
 *MRTK Graphics Tools for Unity* is a Unity engine package created to help improve the visual fidelity of mixed reality applications while staying within performance budgets.
 

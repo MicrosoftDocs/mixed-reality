@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Oculus Quest
 ---
 
-# Deploying to Oculus Quest
+# Deploying to Oculus Quest &#8212; MRTK2
 
 An [Oculus Quest](https://www.oculus.com/quest/) is required.
 

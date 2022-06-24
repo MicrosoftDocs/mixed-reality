@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Scene types
+# Scene types &#8212; MRTK2
 
 Scenes have been divided into three types, and each type has a different function.
 

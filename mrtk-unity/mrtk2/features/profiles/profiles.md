@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Profiles,
 ---
 
-# Profiles
+# Profiles &#8212; MRTK2
 
 > [!VIDEO https://docs.microsoft.com/en-us/shows/Docs-Mixed-Reality/Introduction-to-MRTK-Profiles/player]
 

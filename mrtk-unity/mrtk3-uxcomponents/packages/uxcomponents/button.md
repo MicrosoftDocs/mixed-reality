@@ -7,19 +7,19 @@ ms.date: 4/15/2022
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, Button, PressableButton
 ---
 
-# Buttons
+# Buttons &#8212; MRTK3
 
 ![Button Main](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_Button.png)
 
 A button gives the user a way to trigger an immediate action. It's one of the most foundational components in mixed reality, and providing satisfying and reliable button interactions is essential to a quality mixed reality experience. MRTK provides two categories of button prefabs: Canvas-based and non-Canvas-based. Both configurations use the `PressableButton` script, a subclass of [`StatefulInteractable`](../../../mrtk3-overview/architecture/interactables.md) extended to include behaviors specific to buttons.
 
-To learn more about how the hybrid Canvas UI system works, [view the documentation here](../../../mrtk3-uxcore/packages/uxcore/canvas-ui.md).
+[Learn more about how the hybrid Canvas UI system works.](../../../mrtk3-uxcore/packages/uxcore/canvas-ui.md).
 
 ## Example scenes
 
 If you're using the development template project, several example scenes are available that demonstrate the available button prefabs.
 
-**CanvasUITearSheet.unity** shows all available canvas-based button prefab variants in MRTK.
+**CanvasUITearSheet.unity** shows all available Canvas-based button prefab variants in MRTK.
 
 ![Canvas Tearsheet](../../../mrtk3-overview/images/UXBuildingBlocks/Button/MRTK_Button_CanvasTearsheet.png)
 
@@ -27,7 +27,7 @@ If you're using the development template project, several example scenes are ava
 
 ![Canvas Example Scene](../../../mrtk3-overview/images/UXBuildingBlocks/Button/MRTK_Button_CanvasExample.png)
 
-**UITearSheet.unity** shows all available non-canvas-based button prefab variants in MRTK.
+**UITearSheet.unity** shows all available non-Canvas-based button prefab variants in MRTK.
 
 ![Button Example Scene](../../../mrtk3-overview/images/UXBuildingBlocks/Button/MRTK_Button_ExampleScene.png)
 
@@ -35,10 +35,10 @@ If you're using the development template project, several example scenes are ava
 
 [Canvas-based](../../../mrtk3-uxcore/packages/uxcore/canvas-ui.md) buttons are flexible and configurable, and can be resized to any dimension or proportion. As such, only a small number of button prefabs are provided.
 
-- **EmptyButton** provides the pressable surface/frontplate, holographic backplate, and glow effect. There is no text, icon, label, or other content; this is so that more abstract button-like controls can be built as a variant of this prefab without interfering with the text or icon content.
+- **EmptyButton** provides the pressable surface/frontplate, holographic backplate, and glow effect. There's no text, icon, label, or other content; this is so that more abstract button-like controls can be built as a variant of this prefab without interfering with the text or icon content.
 - **ActionButton** is a simple button that includes an icon, text, and a label. These individual components can be enabled or disabled, and the layout system will adapt accordingly.
 
-Additional "complications" can be added to the button, such as the toggle switch indicator. Features that are not intended to move with the frontplate should be attached to the backplate component.
+Additional enhancements can be added to the button, such as the toggle switch indicator. Features that aren't intended to move with the frontplate should be attached to the backplate component.
 
 ![Adding a toggle switch](images/toggle-switch.png)
 
@@ -51,7 +51,7 @@ Non-canvas buttons are not resizable; as a result, a large number of button pref
 
 ## Structure (Canvas)
 
-The different parts of an **ActionButton** can be turned on/off to customize how the button looks and behaves. We've dissected two different possible configurations to show the different parts of the button prefab. Note; the "backglow" is not visible in these screenshots as the button is not actively being pressed.
+The different parts of an **ActionButton** can be turned on/off to customize how the button looks and behaves. We've dissected two different possible configurations to show the different parts of the button prefab. Note that the "backglow" is not visible in these screenshots since the button is not actively being pressed.
 
 First, a larger configuration where the main Text object is active and uses inline styles to display both a header and sub-text.
 ![Large Canvas button structure](images/big-anatomy.png)

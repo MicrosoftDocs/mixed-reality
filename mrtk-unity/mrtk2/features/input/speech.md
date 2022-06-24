@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Speech,
 ---
 
-# Speech
+# Speech &#8212; MRTK2
 
 ![Near Menu](../images/input/MRTK_Input_Speech.png)
 

@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Bounding Box
 ---
 
-# Bounding box
+# Bounding box &#8212; MRTK2
 
 ![Bounding box](../images/bounding-box/MRTK_BoundingBox_Main.png)
 

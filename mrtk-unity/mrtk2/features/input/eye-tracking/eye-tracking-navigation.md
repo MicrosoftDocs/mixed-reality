@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, EyeTracking,
 ---
 
-# Eye-supported navigation in MRTK
+# Eye-supported navigation in MRTK &#8212; MRTK2
 
 ![MRTK](../../images/eye-tracking/mrtk_et_navigation.png)
 

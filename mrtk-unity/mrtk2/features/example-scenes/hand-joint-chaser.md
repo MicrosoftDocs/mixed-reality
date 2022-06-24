@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Hand joint chaser
+# Hand joint chaser &#8212; MRTK2
 
 ![Hand joint chasers](../images/hand-joint-chaser/MRTK_HandJointChaser_Main.jpg)
 This example scene demonstrates how to use Solver to attach objects to the hand joints.

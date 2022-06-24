@@ -7,7 +7,7 @@ ms.date: 04/19/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Updating from earlier versions
+# Updating from earlier versions &#8212; MRTK2
 
 - [Upgrading to a new version of MRTK](#upgrading-to-a-new-version-of-mrtk)
 - [2.3.0 to 2.4.0](#updating-230-to-240)

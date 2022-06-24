@@ -75,14 +75,14 @@ To use the Azure Translator API, you will need to configure an instance of the s
 
 2.  Once you are logged in, click on **Storage Accounts** in the left menu.
 
-    ![Azure Storage Account Setup](images/AzureLabs-Lab7-1.png)
+    ![Screenshot of the Microsoft Azure window, which shows the Storage Accounts item in the left navigation menu.](images/AzureLabs-Lab7-1.png)
 
     > [!NOTE]
     > The word **New** may have been replaced with **Create a resource**, in newer portals.
 
 3.  On the **Storage Accounts** tab, click on **Add**.
 
-    ![Azure Storage Account Setup](images/AzureLabs-Lab7-2.png)
+    ![Screenshot of the Microsoft Azure window, which shows the Storage accounts screen and the highlighted Add button.](images/AzureLabs-Lab7-2.png)
 
 4.  In the **Create Storage Account** panel:
 
@@ -101,13 +101,13 @@ To use the Azure Translator API, you will need to configure an instance of the s
 
 5.  You will also need to confirm that you have understood the Terms and Conditions applied to this Service.
 
-    ![Azure Storage Account Setup](images/AzureLabs-Lab7-3.png)
+    ![Screenshot of the Create storage account dialog, which shows the information that the user filled into the required text fields.](images/AzureLabs-Lab7-3.png)
 
 6.  Once you have clicked on **Create**, you will have to wait for the service to be created, this might take a minute.
 
 7.  A notification will appear in the portal once the Service instance is created.
 
-    ![Azure Storage Account Setup](images/AzureLabs-Lab7-4.png)
+    ![Screenshot of the Deployment succeeded notification, which informs the user that the deployment to the resource group was successful.](images/AzureLabs-Lab7-4.png)
 
 ## Chapter 2 - The Azure Machine Learning Studio  (classic)
 
@@ -115,7 +115,7 @@ To use the *Azure Machine Learning*, you will need to configure an instance of t
 
 1.  In the Azure Portal, click on **New** in the top left corner, and search for **Machine Learning Studio Workspace**, press **Enter**.
 
-    ![The Azure Machine Learning Studio (classic)](images/AzureLabs-Lab7-5.png)
+    ![Screenshot of the Microsoft Azure window, which shows the Machine Learning Studio Workspace in the content pane.](images/AzureLabs-Lab7-5.png)
 
 2.  The new page will provide a description of the **Machine Learning Studio Workspace**  service. At the bottom left of this prompt, click the **Create** button, to create an association with this service.
 
@@ -143,27 +143,27 @@ To use the *Azure Machine Learning*, you will need to configure an instance of t
 
     10. Click **Create**.
 
-        ![The Azure Machine Learning Studio (classic)](images/AzureLabs-Lab7-6.png)
+        ![Screenshot of the Azure Machine Learning Studio dialog, which shows the information the user has entered into the text fields.](images/AzureLabs-Lab7-6.png)
 
 4.  Once you have clicked on **Create**, you will have to wait for the service to be created, this might take a minute.
 
 5.  A notification will appear in the portal once the Service instance is created.
 
-    ![The Azure Machine Learning Studio (classic)](images/AzureLabs-Lab7-7.png)
+    ![Screenshot of the Microsoft Azure window, which shows an unread notification in the navigation menu.](images/AzureLabs-Lab7-7.png)
 
 6.  Click on the notification to explore your new Service instance.
 
-    ![The Azure Machine Learning Studio (classic)](images/AzureLabs-Lab7-8.png)
+    ![Screenshot of the Deployment succeeded notification, which informs the user that the workspace deployment to the resource group was successful.](images/AzureLabs-Lab7-8.png)
 
 7.  Click the **Go to resource** button in the notification to explore your new Service instance.
 
 8.  In the page displayed, under the **Additional Links** section, click **Launch Machine Learning Studio**, which will direct your browser to the **Machine Learning Studio** portal.
 
-    ![The Azure Machine Learning Studio (classic)](images/AzureLabs-Lab7-9.png)
+    ![Screenshot of the Microsoft Azure window, which shows the highlighted Launch Machine Learning Studio link in the content pane.](images/AzureLabs-Lab7-9.png)
 
 9.  Use the **Sign In** button, at the top right or in the center, to log into your Machine Learning Studio (classic).
 
-    ![The Azure Machine Learning Studio (classic)](images/AzureLabs-Lab7-10.png)
+    ![Screenshot of the Machine Learning Studio window, which shows the highlighted Sign In button.](images/AzureLabs-Lab7-10.png)
 
 
 ## Chapter 3 - The Machine Learning Studio (classic): Dataset setup
@@ -177,7 +177,7 @@ A sample table is provided to you, for this course, called [ProductsTableCSV and
 
 This sample data set contains a record of the best-selling objects at every hour of each day of the year 2017.
         
-![The Machine Learning Studio (classic): Dataset setup](images/AzureLabs-Lab7-11.png)
+![Screenshot of the Microsoft Excel window, which shows a sample data set of best selling objects at every hour of each day in the year 2017.](images/AzureLabs-Lab7-11.png)
 
 For example, on day 1 of 2017, at 1pm (hour 13), the best-selling item was salt and pepper.
 
@@ -185,17 +185,17 @@ This sample table contains 9998 entries.
 
 1.  Head back to the **Machine Learning Studio (classic)** portal, and add this table as a **Dataset** for your ML. Do this by clicking the **+ New** button in the bottom left corner of the screen.
 
-    ![The Machine Learning Studio (classic): Dataset setup](images/AzureLabs-Lab7-12.png)
+    ![Screenshot of the Microsoft Azure Machine Learning Studio classic portal, which shows the highlighted New button in the menu.](images/AzureLabs-Lab7-12.png)
 
 2.  A section will come up from the bottom, and within that there is navigation panel on the left. Click **Dataset**, then to the right of that, **From Local File**.
 
-    ![The Machine Learning Studio (classic): Dataset setup](images/AzureLabs-Lab7-13.png)
+    ![Screenshot of the New dialog, which shows the highlighted Dataset and From Local File menu items.](images/AzureLabs-Lab7-13.png)
 
 3.  Upload the new **Dataset** by following these steps:
 
     1. The upload window will appear, where you can **Browse** your hard drive for the new dataset.
 
-        ![The Machine Learning Studio (classic): Dataset setup](images/AzureLabs-Lab7-14.png)
+        ![Screenshot of the Upload a new dataset dialog, which shows the Browse button for the user to find and select the data to upload.](images/AzureLabs-Lab7-14.png)
 
     2.  Once selected, and back in the upload window, leave the checkbox unticked.
 
@@ -213,39 +213,39 @@ To start creating an experiment:
 
 1.  Click again on the **+ New** button on the bottom left of the page, then click on **Experiment** > **Blank Experiment**.
 
-    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-15.png)
+    ![Screenshot of the Microsoft Azure Machine Learning Studio window, which shows the Experiment menu item is selected.](images/AzureLabs-Lab7-15.png)
 
 2.  A new page will be displayed with a blank Experiment:
 
 3.  From the panel on the left expand **Saved Datasets** > **My Datasets** and drag the  **ProductsTableCSV** on to the **Experiment Canvas**.
 
-    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-16.png)
+    ![Screenshot of the Experiment window, which shows the expanded My Datasets folder in the menu and Products Table C S V in the Experiment Canvas.](images/AzureLabs-Lab7-16.png)
 
 4.  In the panel on the left, expand **Data Transformation** > **Sample and Split**. Then drag the **Split Data** item in to the **Experiment Canvas**. The Split Data item will split the data set into two parts. One part you will use for training the machine learning algorithm. The second part will be used to evaluate the accuracy of the algorithm generated.
 
-    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-17.png)
+    ![Screenshot of the Experiment window, which shows the Partition and Sample and Split Data items in the menu with Split Data applied to the Canvas.](images/AzureLabs-Lab7-17.png)
 
 5.  In the right panel (while the Split Data item on the canvas is selected), edit the **Fraction of rows in the first output dataset** to **0.7**. This will split the data into two parts, the first part will be 70% of the data, and the second part will be the remaining 30%. To ensure that the data is split randomly, make sure the **Randomized split** checkbox remains checked.
 
-    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-18.png)
+    ![Screenshot of the Properties panel, which shows the filled Randomized split checkbox and the Fraction of rows field has been set to 0 point 7.](images/AzureLabs-Lab7-18.png)
 
 6.  Drag a connection from the base of the **ProductsTableCSV** item on the canvas to the top of the Split Data item. This will connect the items and send the **ProductsTableCSV** dataset output (the data) to the Split Data input.  
 
-    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-19.png)
+    ![Screenshot of the Experiment Canvas, which shows a connection drawn between Products Table C S V dot c s v and Split Data.](images/AzureLabs-Lab7-19.png)
 
 7.  In the **Experiments** panel on the left side, expand **Machine Learning** > **Train**. Drag the **Train Model** item out in to the Experiment canvas. Your canvas should look the same as the below.
 
-    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-20.png)
+    ![Screenshot of the Experiment Canvas, which shows a connection drawn between Products Table C S V dot c s v and Split Data, with Train Model below.](images/AzureLabs-Lab7-20.png)
 
 8.  From the ***bottom left*** of the **Split Data** item drag a connection to the **top right** of the **Train Model** item. The first 70% split from the dataset will be used by the Train Model to train the algorithm.
 
-    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-21.png)
+    ![Screenshot of the Experiment Canvas, which shows a connection drawn between Products Table C S V dot c s v, Split Data, and Train Model.](images/AzureLabs-Lab7-21.png)
 
 9.  Select the **Train Model** item on the canvas, and in the **Properties** panel (on the right-hand side of your browser window) click the **Launch column selector** button.
 
 10. In the text box type **product** and then press **Enter**, *product* will be set as a column to train predictions. Following this, click on the **tick** in the bottom-right corner to close the selection dialog.
 
-    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-22.png)
+    ![Screenshot of the Select a single column dialog, which shows the highlighted product column in the columns menu.](images/AzureLabs-Lab7-22.png)
 
 11. You are going to train a **Multiclass Logistic Regression** algorithm to predict the most sold **product** based on the hour of the day and the date. It is beyond the scope of this document to explain the details of the different algorithms provided by the Azure Machine Learning studio, though, you can find out more from the [Machine Learning Algorithm Cheat Sheet](/azure/machine-learning/studio/algorithm-cheat-sheet)
 
@@ -253,7 +253,7 @@ To start creating an experiment:
 
 13. Connect the output, from the bottom of the **Multiclass Logistic Regression**, to the top-left input of the **Train Model** item.
 
-    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-23.png)
+    ![Screenshot of the Experiment Canvas, which shows Train Model connected to the Multiclass Logistic Regression and Split Data.](images/AzureLabs-Lab7-23.png)
 
 14. In list of experiment items in the panel on the left, expand **Machine Learning** > **Score**, and drag the **Score Model** item on to the canvas.
 
@@ -261,60 +261,60 @@ To start creating an experiment:
 
 16. Connect the bottom-right output from **Split Data**, to the top-right input of the **Score Model** item.
 
-    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-24.png)
+    ![Screenshot of the Experiment Canvas, which shows the Score Model connected to Train Model and Split Data.](images/AzureLabs-Lab7-24.png)
 
 17. In the list of **Experiment** items in the panel on the left, expand **Machine Learning** > **Evaluate**, and drag the **Evaluate Model** item onto the canvas.
 
 18. Connect the output from the **Score Model** to the top-left input of the **Evaluate Model**.
 
-    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-25.png)
+    ![Screenshot of the Experiment Canvas, which shows the Evaluate Model connected to Score Model.](images/AzureLabs-Lab7-25.png)
 
 19. You have built your first Machine Learning Experiment. You can now save and run the experiment. In the menu at the bottom of the page, click on the **Save** button to save your experiment and then click **Run** to the start the experiment.
 
-    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-26.png)
+    ![Screenshot of the Experiment Canvas menu, which shows the highlighted Save and Run buttons.](images/AzureLabs-Lab7-26.png)
 
 20. You can see the **status** of the experiment in the top-right of the canvas. Wait a few moments for the experiment to finish.
 
     > If you have a big (real world) dataset it is likely that the experiment could take hours to run.
 
-    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-27.png)
+    ![Screenshot of the Experiment Canvas window, which shows the status of the experiment in the top right corner.](images/AzureLabs-Lab7-27.png)
 
 21. Right click on the **Evaluate Model** item in the canvas and from the context menu hover the mouse over **Evaluation Results**, then select **Visualize**.
 
-    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-28.png)
+    ![Screenshot of the Evaluate Model item's right click menu, which shows the highlighted Evaluation results and Visualize menu items.](images/AzureLabs-Lab7-28.png)
 
 22. The evaluation results will be displayed showing the predicted outcomes versus the actual outcomes. This uses the 30% of the original dataset, that was split earlier, for evaluating the model. You can see the results are not great, ideally you would have the highest number in each row be the highlighted item in the columns.
 
-    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-29.png)
+    ![Screenshot of the Results chart, which shows the outcomes of the experiment in a graph of boxes with percentages.](images/AzureLabs-Lab7-29.png)
 
 23. Close the **Results**.
 
 24. To use your newly trained Machine Learning model you need to expose it as a **Web Service**. To do this, click on the **Set Up Web Service** menu item in the menu at the bottom of the page, and click on **Predictive Web Service**.
 
-    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-30.png)
+    ![Screenshot of the Experiment menu, which shows the highlighted Set Up Web Service menu item.](images/AzureLabs-Lab7-30.png)
 
 25. A new tab will be created, and the train model merged to create the new web service. 
 
 26. In the menu at the bottom of the page click **Save**, then click **Run**. You will see the status updated in the top-right corner of the experiment canvas.
 
-    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-31.png)
+    ![Screenshot of the Experiment menu, which shows the highlighted Run menu button and the Run menu item.](images/AzureLabs-Lab7-31.png)
 
 27. Once it has finished running, a **Deploy Web Service** button will appear at the bottom of the page. You are ready to deploy the web service. Click **Deploy Web Service** (Classic) in the menu at the bottom of the page.
 
-    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-32.png)
+    ![Screenshot of the Experiment menu, which shows the highlighted Deploy Web Service Classic menu item from the Deploy Web Service menu button.](images/AzureLabs-Lab7-32.png)
 
     > Your browser may prompt to allow a pop-up, which you should **allow**, though you may need to press **Deploy Web Service** again, if the deploy page does not show. 
 
 28. Once the Experiment has been created you will be redirected to a **Dashboard** page where you will have your **API Key** displayed. Copy it into a notepad for the moment, you will need it in your code very soon. Once you have noted your API Key, click on the **REQUEST/RESPONSE** button in the **Default Endpoint** section underneath the Key.
 
-    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-33.png)
+    ![Screenshot of the Microsoft Azure Machine Learning Studio window, which shows the A P I key and the highlighted Request slash Response link.](images/AzureLabs-Lab7-33.png)
 
     > [!NOTE] 
     > If you click Test in this page, you will be able to enter input data and view the output. Enter the **day** and **hour**. Leave the **product** entry blank. Then click the **Confirm** button. The output on the bottom of the page will show the JSON representing the likelihood of each product being the choice.
 
 29. A new web page will open up, displaying the instructions and some examples about the Request structure required by the Machine Learning Studio (classic). Copy the **Request URI** displayed in this page, into your notepad.
 
-    ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-34.png)
+    ![Screenshot of the Request Response A P I Documentation page, which shows the highlighted Request U R I.](images/AzureLabs-Lab7-34.png)
 
 You have now built a machine learning system that provides the most likely product to be sold based on historical purchasing data, correlated with the time of the day and day of the year.
 
@@ -353,7 +353,7 @@ Set up and test your Mixed Reality Immersive Headset.
 
     7.  The remaining settings should be left as default for now.
 
-        ![Setting up the Unity Project](images/AzureLabs-Lab7-35.png)
+        ![Screenshot of the Build Settings dialog, which shows the Universal Windows Platform menu item is selected.](images/AzureLabs-Lab7-35.png)
 
 5.  In the **Build Settings** window, click on the **Player Settings** button, this will open the related panel in the space where the **Inspector** is located. 
 
@@ -367,17 +367,17 @@ Set up and test your Mixed Reality Immersive Headset.
 
         3. **API Compatibility Level** should be **.NET 4.6**
 
-            ![Setting up the Unity Project](images/AzureLabs-Lab7-36.png)
+            ![Screenshot of the Other Settings tab, which shows the settings that are enabled according to the outlined steps.](images/AzureLabs-Lab7-36.png)
 
     2.  Within the **Publishing Settings** tab, under **Capabilities**, check:
 
         - **InternetClient**
 
-            ![Setting up the Unity Project](images/AzureLabs-Lab7-37.png)
+            ![Screenshot of the Publishing Settings tab, which shows the Internet Client capability is enabled underneath Capabilities.](images/AzureLabs-Lab7-37.png)
 
     3.  Further down the panel, in **XR Settings** (found below **Publish Settings**), tick **Virtual Reality Supported**, make sure the **Windows Mixed Reality SDK** is added
 
-        ![Setting up the Unity Project](images/AzureLabs-Lab7-38.png)
+        ![Screenshot of the X R Settings tab, which shows the Windows Mixed Reality S D K underneath Virtual Reality S D K s is enabled.](images/AzureLabs-Lab7-38.png)
 
     
 
@@ -395,21 +395,21 @@ To import this package:
 
 1.  With the Unity dashboard in front of you, click on **Assets** in the menu at the top of the screen, then click on **Import Package, Custom Package**.
 
-    ![Importing the MLProducts Unity Package](images/AzureLabs-Lab7-39.png)
+    ![Screenshot of the Unity Dashboard, which shows the highlighted Import Package and Custom Package menu items.](images/AzureLabs-Lab7-39.png)
 
 2.  Use the file picker to select the **Azure-MR-307.unitypackage** package and click **Open**.
 
 3.  A list of components for this asset will be displayed to you. Confirm the import by clicking **Import**.
 
-    ![Importing the MLProducts Unity Package](images/AzureLabs-Lab7-40.png)
+    ![Screenshot of the Import Unity Package dialog, which shows the Azure Machine Learning package is being imported.](images/AzureLabs-Lab7-40.png)
 
 4.  Once it has finished importing, you will notice that some new folders have appeared in your Unity **Project Panel**. Those are the 3D models and the respective materials that are part of the pre-made scene you will work on. You will write the majority of the code in this course.
 
-    ![Importing the MLProducts Unity Package](images/AzureLabs-Lab7-41.png)
+    ![Screenshot of the Unity Project Panel, which shows the newly imported folders in the Assets folder.](images/AzureLabs-Lab7-41.png)
 
 5.  Within the **Project Panel** folder, click on the **Scenes** folder and double click on the scene inside (called **MR_MachineLearningScene**). The scene will open (see image below). If the red diamonds are missing, simply click the **Gizmos** button, at the top right of the **Game Panel**.
 
-    ![Importing the MLProducts Unity Package](images/AzureLabs-Lab7-44.png)
+    ![Screenshot of the Unity Scene window, which shows the highlighted Gizmos menu item in the top navigation.](images/AzureLabs-Lab7-44.png)
 
 ## Chapter 7 - Checking the DLLs in Unity
 
@@ -494,7 +494,7 @@ As part of the imported package, you will have been given this class, though it 
 
 4.  Back in the Unity Editor, check that the **ShelfKeeper** class looks like the below:
 
-    ![Create the ShelfKeeper class](images/AzureLabs-Lab7-51.png)
+    ![Screenshot of the Shelf Keeper class, which shows that the reference targets are set to Date Text Mesh and Time Text Mesh.](images/AzureLabs-Lab7-51.png)
 
     > [!IMPORTANT]
     > If your script does not have the reference targets (i.e. *Date (Text Mesh)*), simply drag the corresponding objects from the **Hierarchy Panel**, into the target fields. See below for explanation, if needed:
@@ -504,7 +504,7 @@ As part of the imported package, you will have been given this class, though it 
     > 3. Select the **Main Camera** in the **Hierarchy Panel**. Drag the **Date** and **Time** objects from the **Hierarchy Panel** to the **Date Text** and **Time Text** slots within the **Inspector** of the **Main Camera** in the **ShelfKeeper** component.
     > 4. Drag the **Spawn Points** from the **Hierarchy Panel** (beneath the *Shelf* object) to the **3** **Element** reference targets beneath the **Spawn Point** array, as shown in the image.
     > 
-    >     ![Create the ShelfKeeper class](images/AzureLabs-Lab7-52.png)
+    >     ![Screenshot of the Hierarchy Panel, which shows that the Date, Time, and the three Spawn Point menu items are in the Shelf Keeper class.](images/AzureLabs-Lab7-52.png)
 
 ## Chapter 9 - Create the ProductPrediction class
 
@@ -645,9 +645,9 @@ To create this class:
     > [!IMPORTANT]
     > Make sure to insert the **primary key** and **request-response endpoint**, from the Machine Learning Portal, into the variables here. The below images show where you would have taken the key and endpoint from. 
     >  
-    > ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-53-1.png)
+    > ![Screenshot of the Microsoft Azure Machine Learning Studio, which shows the Request slash Response link underneath A P I Help Page.](images/AzureLabs-Lab7-53-1.png)
     >
-    > ![The Machine Learning Studio (classic): The Experiment](images/AzureLabs-Lab7-53-2.png)
+    > ![Screenshot of the Request Response A P I Documentation page, which shows the highlighted POST Request U R I.](images/AzureLabs-Lab7-53-2.png)
 
 8.  Insert this code within the **Start()** method. The **Start()** method is called when the class initializes:
 
@@ -826,7 +826,7 @@ To Build:
 
 5.  Click **Build**.
 
-    ![Build the UWP Solution](images/AzureLabs-Lab7-54.png)
+    ![Screenshot of the Build Settings dialog, which shows the Universal Windows Platform menu item is highlighted.](images/AzureLabs-Lab7-54.png)
 
 6.  You will be prompted to select the folder where you want to build the Solution.
 
@@ -834,9 +834,9 @@ To Build:
 
 8.  Click your new folder and then click **Select Folder**, to begin the build at that location.
 
-    ![Build the UWP Solution](images/AzureLabs-Lab7-55.png)
+    ![Screenshot of the File Explorer window, which shows the highlighted Builds folder.](images/AzureLabs-Lab7-55.png)
 
-    ![Build the UWP Solution](images/AzureLabs-Lab7-56.png)
+    ![Screenshot of the File Explorer window, which shows the contents of the Builds folder and the highlighted Select Folder button.](images/AzureLabs-Lab7-56.png)
 
 9.  Once Unity has finished building (it might take some time), it will open a **File Explorer** window at the location of your build (check your task bar, as it may not always appear above your windows, but will notify you of the addition of a new window).
 
@@ -848,7 +848,7 @@ To deploy your application:
 
 2.  With Visual Studio open, you need to Restore NuGet Packages, which can be done through right-clicking your MachineLearningLab_Build solution, from the Solution Explorer (found to the right of Visual Studio), and then clicking Restore NuGet Packages:
 
-    ![Add NuGet Packages](images/AzureLabs-Lab7-57.png)
+    ![Screenshot of the Visual Studio window, which shows the highlighted Restore Nu Get Packages menu item.](images/AzureLabs-Lab7-57.png)
 
 3.	In the Solution Configuration select **Debug**.
 
@@ -858,7 +858,7 @@ To deploy your application:
     > - Know the **IP Address** of your HoloLens, which can be found within the *Settings > Network & Internet > Wi-Fi > Advanced Options*; the IPv4 is the address you should use. 
     > - Ensure **Developer Mode** is **On**; found in *Settings > Update & Security > For developers*.
 
-    ![Add NuGet Packages](images/AzureLabs-Lab7-58.png)
+    ![Screenshot of the Microsoft Visual Studio menu, which shows that Local Machine is selected in the Solution Platform.](images/AzureLabs-Lab7-58.png)
 
 5.	Go to **Build menu** and click on **Deploy Solution** to sideload the application to your PC.
 
@@ -871,7 +871,7 @@ When you run the Mixed Reality application, you will see the bench that was set 
  
 Congratulations, you built a mixed reality app that leverages the Azure Machine Learning to make data predictions and display it on your scene.
 
-![Add NuGet Packages](images/AzureLabs-Lab7-0.png)
+![Screenshot of the Microsoft Visual Studio window, which shows a shelf with three objects and a card with the text 15 o' clock 23 Feb.](images/AzureLabs-Lab7-0.png)
 
 ## Exercise
 

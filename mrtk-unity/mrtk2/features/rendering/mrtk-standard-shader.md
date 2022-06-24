@@ -1,16 +1,16 @@
 ---
-title: MRTK standard shader
+title: MRTK2 standard shader
 description: Documentation for MRTKStandardShader
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Material Shader
 ---
-# MRTK standard shader
+# MRTK2 standard shader
 
 ![Standard shader examples](../images/mrtk-standard-shader/MRTK_StandardShader.jpg)
 
-MRTK Standard shading system utilizes a single, flexible shader that can achieve visuals similar to Unity's Standard Shader, implement [Fluent Design System](https://www.microsoft.com/design/fluent/) principles, and remain performant on mixed reality devices.
+MRTK2 Standard shading system utilizes a single, flexible shader that can achieve visuals similar to Unity's Standard Shader, implement [Fluent Design System](https://www.microsoft.com/design/fluent/) principles, and remain performant on mixed reality devices.
 
 ## Example scenes
 

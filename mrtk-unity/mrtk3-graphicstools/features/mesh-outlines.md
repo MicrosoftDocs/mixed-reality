@@ -1,5 +1,5 @@
 ---
-title: Mesh Outlines
+title: Mesh Outlines -- MRTK3
 description: Learn about how to create mesh outlines.
 author: Cameron-Micka
 ms.author: thmicka
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, Standard Shader, Mesh Outlines
 ---
 
-# Mesh outlines overview
+# Mesh outlines overview -- MRTK3
 
 Many mesh outline techniques are done using a [post processing](https://docs.unity3d.com/Manual/PostProcessingOverview.html) technique. Post processing provides great quality outlines, but can be prohibitively expensive on many mixed reality devices.
 

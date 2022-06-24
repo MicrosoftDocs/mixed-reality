@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, App bar,
 ---
 
-# App bar
+# App bar &#8212; MRTK2
 
 ![App bar](../images/app-bar/MRTK_AppBar_Main.png)
 

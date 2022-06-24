@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Creating an input system data provider
+# Creating an input system data provider &#8212; MRTK2
 
 The Mixed Reality Toolkit input system is an extensible system for enabling input device support. To add support for a new hardware platform,
 a custom input data provider may be required.
