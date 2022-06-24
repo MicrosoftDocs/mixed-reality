@@ -70,8 +70,13 @@ The `PressableButton` class is derived from `StatefulInteractable` with new and 
 ![PressableButton inspector screenshot](../../../mrtk3-overview/images/UXBuildingBlocks/Button/MRTK_PressableButton_Inspector.png)
 
 ## Constructing UI with buttons
-When creating menu or UI panels with multiple buttons, it is recommended to use a shared backplate geometry. By using a shared backplate, we can reduce the visual noise and improve the usability. Here are some of the examples of laying out buttons on top of the shared backplate.
+When creating menu or UI panels with multiple buttons, it is recommended to use a shared backplate geometry. By using a shared backplate, we can reduce the visual noise and improve usability. Here are some of the examples of laying out buttons on top of the shared backplate.
 
 ![Constructing UI 1](../../../mrtk3-overview/images/UXBuildingBlocks/Button/MRTK_Button_ConstructingUI0.png)
 
 ![Constructing UI 2](../../../mrtk3-overview/images/UXBuildingBlocks/Button/MRTK_Button_ConstructingUI1.png)
+
+![Constructing UI 3](../../../mrtk3-overview/images/UXBuildingBlocks/Button/MRTK_Button_SharedBackplate.png)
+
+
+
