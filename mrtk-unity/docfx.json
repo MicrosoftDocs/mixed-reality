@@ -97,7 +97,8 @@
       "searchScope": [
         "Mixed Reality",
         "MRTK"
-      ]
+      ],
+      "uhfHeaderId": "MSDocsHeader-MRTK"
     },
     "fileMetadata": {
       "monikerRange": {
