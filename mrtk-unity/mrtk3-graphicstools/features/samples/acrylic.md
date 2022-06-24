@@ -8,7 +8,7 @@ ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, Standard Shader, Animation
 ---
 
-# Acrylic -- MRTK3
+# Acrylic &#8212; MRTK3
 
 The experimental Acrylic feature adds a translucency effect to a surface.
 Objects behind that surface will appear blurred as seen through frosted glass.
