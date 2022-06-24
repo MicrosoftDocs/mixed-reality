@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Hand coach
+# Hand coach &#8212; MRTK2
 
 ![Hand Coach Menu](../images/hand-coach/MRTK_UX_HandCoach_Main.jpg)
 

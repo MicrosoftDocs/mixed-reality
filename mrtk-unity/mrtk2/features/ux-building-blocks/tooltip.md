@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, ToolTip,
 ---
 
-# Tooltip
+# Tooltip &#8212; MRTK2
 
 ![Tooltip Main](../images/tooltip/MRTK_Tooltip_Main.png)
 

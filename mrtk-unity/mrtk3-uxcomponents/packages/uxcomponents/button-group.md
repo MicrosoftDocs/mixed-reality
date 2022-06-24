@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, Button, PressableButton, ObjectBar, ButtonGroup
 ---
 
-# Button Group
+# Button Group &#8212; MRTK3
 
 ![Button group](images/button-group.png)
 
@@ -18,13 +18,13 @@ With [Canvas-based UX](../../../mrtk3-uxcore/packages/uxcore/canvas-ui.md), you 
 
 ## Button Bar
 
-To build a horizontal or vertical "bar" of buttons (or other UI controls!) you can build a simple layout using either `HorizontalLayoutGroup`, `VerticalLayoutGroup`, as well as a `ContentSizeFitter`.
+To build a horizontal or vertical "bar" of buttons (or other UI controls!) you can build a simple layout using either `HorizontalLayoutGroup`, `VerticalLayoutGroup`, or  `ContentSizeFitter`.
 
 ![Configuring layout for a horizontal button bar](images/button-bar-horizontal.png)
 
 ![Configuring layout for a vertical button bar](images/button-bar-vertical.png)
 
-Note that children of these auto-layout components should either have a `LayoutElement` component to inform the layout engine of the minimum and preferred sizes for each child. Our Button prefabs come pre-installed with these components, but you may need to add them to your own custom controls, or customize the minimum and preferred sizing to fit your needs.
+Note that children of these auto-layout components should have a `LayoutElement` component to inform the layout engine of the minimum and preferred sizes for each child. Our Button prefabs come pre-installed with these components, but you may need to add them to your own custom controls or customize the minimum and preferred sizing to fit your needs.
 
 ## Button Grid
 

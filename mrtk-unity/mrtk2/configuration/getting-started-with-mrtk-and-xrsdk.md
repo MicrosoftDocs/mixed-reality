@@ -1,12 +1,12 @@
 ---
-title: Getting started with MRTK and XR SDK
+title: Getting started with MRTK2 and XR SDK
 description: Landing page for MRTK with XR SDK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, XRSDK, XR SDK
 ---
-# Getting started with MRTK and XR SDK
+# Getting started with MRTK2 and XR SDK
 
 XR SDK is Unity's [new XR pipeline in Unity 2019.3 and beyond](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/). In Unity 2019, it provides an alternative to the existing XR pipeline. In Unity 2020, it's the only XR pipeline in Unity.
 

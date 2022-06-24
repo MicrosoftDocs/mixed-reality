@@ -1,5 +1,5 @@
 ---
-title: Try out the MRTK Examples Hub
+title: Try out the MRTK2 Examples Hub
 description: Learn how to load and use the Mixed Reality Toolkit examples hub application on your HoloLens devices.
 author: sean-kerawala
 ms.author: sekerawa
@@ -8,9 +8,9 @@ ms.topic: article
 keywords: mixed reality toolkit, MRTK, examples, HoloLens, HoloLens 2, shaders, tooltips, hand interaction, clipping, bounding boxes, buttons, hand menus, slate, slider
 ---
 
-# Try out the MRTK Examples Hub
+# Try out the MRTK2 Examples Hub
 
-MRTK Examples Hub app allows you to experience MRTK's important example scenes on your HoloLens device without building and deploying them. The app includes examples of hand-tracking interactions, eye-tracking interactions, clipping, tooltips, shaders, bounding boxes, pressable buttons, hand menus, slates, sliders and more!
+MRTK2 Examples Hub app allows you to experience MRTK's important example scenes on your HoloLens device without building and deploying them. The app includes examples of hand-tracking interactions, eye-tracking interactions, clipping, tooltips, shaders, bounding boxes, pressable buttons, hand menus, slates, sliders and more!
 
 ## HoloLens 2 and HoloLens (1st gen)
 ![MRTK Examples Hub page in the Microsoft store](features/images/examples-hub/ExamplesHubStore.jpg)

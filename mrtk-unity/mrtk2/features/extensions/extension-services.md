@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Extension services
+# Extension services &#8212; MRTK2
 
 Extension services are components that extend the functionality of the Mixed Reality Toolkit. These services may be provided
 by the MRTK or by other parties.

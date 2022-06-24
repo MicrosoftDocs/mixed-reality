@@ -1,5 +1,5 @@
 ---
-title: MRTK-Unity Developer Documentation
+title: MRTK2-Unity Developer Documentation
 description: Learn about the Mixed Reality Toolkit for Unity.
 author: polar-kev
 ms.author: alexturn
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK
 ---
 
-# What is the Mixed Reality Toolkit
+# What is the Mixed Reality Toolkit version 2?
 
 ![Mixed Reality Toolkit](features/images/Logo_MRTK_Unity_Banner.png)
 

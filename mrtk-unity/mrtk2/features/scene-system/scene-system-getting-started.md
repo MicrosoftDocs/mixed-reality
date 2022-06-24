@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Scene system getting started
+# Scene system getting started &#8212; MRTK2
 
 ## When to use the scene system
 

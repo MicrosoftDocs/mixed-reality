@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Lighting scene operations
+# Lighting scene operations &#8212; MRTK2
 
 The default lighting scene defined in your profile is loaded on startup. That lighting scene remains loaded until `SetLightingScene` is called.
 

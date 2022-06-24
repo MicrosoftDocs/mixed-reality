@@ -8,7 +8,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 monikerRange: '>= mrtkunity-2021-05'
 ---
 
-# Mixed Reality scene content
+# Mixed Reality scene content &#8212; MRTK2
 
 When adding MRTK to a scene, a `MixedRealitySceneContent` gameobject is created. This object serves as a dedicated place to place and instantiate Mixed Reality content to ensure that it scales
 appropriately across many different experiences. The gameobject has an equivalent **MixedRealitySceneContent** monobehavior, which can be configured via the **Alignment Type** parameter. This 

@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Hand Tracking,
 ---
 
-# Hand tracking
+# Hand tracking &#8212; MRTK2
 
 ## Hand tracking profile
 

@@ -8,4 +8,4 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, data binding, theme, theming, Mixed Reality Toolkit, Extended Assets
 ---
 
-# Welcome to Extended assets Overview!
+# Welcome to Extended assets Overview &#8212; MRTK3
