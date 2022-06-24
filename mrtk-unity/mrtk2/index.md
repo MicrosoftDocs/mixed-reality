@@ -45,7 +45,7 @@ MRTK-Unity is a Microsoft-driven project that provides a set of components and f
 ::: moniker-end
 
 > [!NOTE]
-> We have introduced the public preview of MRTK3, the next chapter of MRTK. For more information, please go to the [MRTK3 documentation](/windows/mixed-reality/mrtk-unity/mrtk3-overview).
+> We have introduced the public preview of MRTK3, the next chapter of MRTK. For more information, please go to the [MRTK3 documentation](../mrtk3-overview/index.md).
 
 ## Getting started with MRTK
 
