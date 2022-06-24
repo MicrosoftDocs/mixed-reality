@@ -1,5 +1,5 @@
 ---
-title: Buttons
+title: Button
 description: Description of button-based controls in MRTK3
 author: Zee2
 ms.author: finnsinclair
@@ -7,7 +7,7 @@ ms.date: 4/15/2022
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, MRTK3, Button, PressableButton
 ---
 
-# Buttons
+# Button
 
 ![Button Main](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK_UX_v3_Button.png)
 
@@ -68,3 +68,10 @@ The follow screenshot shows the structure of a non-canvas-based button.
 
 The `PressableButton` class is derived from `StatefulInteractable` with new and overridden functions specific to buttons. In the inspector you can configure settings related to the volumetric press besides all other configurable settings from `StatefulInteractable`.
 ![PressableButton inspector screenshot](../../../mrtk3-overview/images/UXBuildingBlocks/Button/MRTK_PressableButton_Inspector.png)
+
+## Constructing UI with buttons
+When creating menu or UI panels with multiple buttons, it is recommended to use a shared backplate geometry. By using a shared backplate, we can reduce the visual noise and improve the usability. Here are some of the examples of laying out buttons on top of the shared backplate.
+
+![Constructing UI 1](../../../mrtk3-overview/images/UXBuildingBlocks/Button/MRTK_Button_ConstructingUI0.png)
+
+![Constructing UI 2](../../../mrtk3-overview/images/UXBuildingBlocks/Button/MRTK_Button_ConstructingUI1.png)
