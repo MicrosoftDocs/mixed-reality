@@ -18,7 +18,7 @@ Objects behind that surface will appear blurred as seen through frosted glass.
 
 
 The feature is enabled by adding the _AcrylicHelpr.cs_ script to your object and in Unity's shader menu under `Graphics Tools/Experimental/Acrylic`, pick one of the shader options.
-For more details have a look at the [Acrylic layer system](acrylic.md).
+To learn more, see [Acrylic layer system](acrylic.md).
 
 ## Acrylic in real-time
 
@@ -33,7 +33,7 @@ In this example, the shader reacts in real-time to the moving objects in the bac
 <img src="images/SampleScenes/acrylic_sample_02.jpg" width="50%" height="50%" alt="Acrylic Pre-baked demo">
 
 
-As a different option, Acrylic blurs a static background like the photos above beforehand.
+As a different option, Acrylic blurs a static background beforehand, as you can see in the screenshots above.
 The rounded plates on top of the photos act as stencil windows to make the pre-blurred image visible in that area.
 
 
