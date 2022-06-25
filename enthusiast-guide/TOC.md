@@ -41,6 +41,7 @@
 ### [Filing bugs and feedback](filing-feedback.md)
 ### [Error codes](error-codes.md)
 ### [Installation errors](installation_errors.md)
+### [Mixed Reality Portal error messages](mixed-reality-portal-error-messages.md)
 ### [Before you buy](before-you-buy-faqs.md)
 ### [Boundaries](boundary-questions.md)
 ### [Headset connectivity](headset-connectivity.md)
@@ -56,7 +57,7 @@
 ### [Enterprise & LBE FAQ](enterprise-lbe-faq.md)
 
 ## Resources
-### [Get info about Windows Mixed Reality](get-wmr-info.md)
+### [Get help for Windows Mixed Reality](get-wmr-info.md)
 ### [Immersive headset health, safety, and comfort](wmr-health-safety-comfort.md)
 ### [Mixed Reality software overview and release history](mixed-reality-software.md)
 ### [How inside-out tracking works](tracking-system.md)

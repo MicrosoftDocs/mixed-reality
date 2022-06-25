@@ -23,7 +23,7 @@ While you are waiting for more, we hope that you enjoy MRTK 2.8.0's new features
 
 ### OpenXR support
 
-We have dramatically improved the our support for the OpenXR pipeline as of 2.8.0, specifically for Oculus Quest and other non-HoloLens devices! The [Microsoft OpenXR plugin](https://aka.ms/openxr-unity-install) with the OpenXR pipeline is what we recommend for deploying your projects to HoloLens, Quest, and other platforms when using the latest versions of Unity 2020 LTS and Unity 2021 LTS. If you find any issues while using MRTK with the OpenXR pipeline, please [file an issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/) on our GitHub repository.
+We have dramatically improved the our support for the OpenXR pipeline as of 2.8.0, specifically for Oculus Quest and other non-HoloLens devices! The [Microsoft OpenXR plugin](/windows/mixed-reality/develop/unity/mixed-reality-openxr-plugin) with the OpenXR pipeline is what we recommend for deploying your projects to HoloLens, Quest, and other platforms when using the latest versions of Unity 2020 LTS and Unity 2021 LTS. If you find any issues while using MRTK with the OpenXR pipeline, please [file an issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/) on our GitHub repository.
 
 ### Gaze + Pinch
 
