@@ -87,7 +87,7 @@
     "externalReference": [],
     "globalMetadata": {
       "extendBreadcrumb": true,
-      "uhfHeaderId": "MSDocsHeader-Hololens",
+      "uhfHeaderId": "MSDocsHeader-MRTK",
       "ms.prod": "mixed-reality",
       "ms.topic": "conceptual",
       "titleSuffix": "Mixed Reality Toolkit",
@@ -97,8 +97,7 @@
       "searchScope": [
         "Mixed Reality",
         "MRTK"
-      ],
-      "uhfHeaderId": "MSDocsHeader-MRTK"
+      ]
     },
     "fileMetadata": {
       "monikerRange": {
