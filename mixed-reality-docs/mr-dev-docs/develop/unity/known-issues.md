@@ -22,6 +22,7 @@ Some versions of Unity or Unity plugins have known incompatibilities blocking ap
 
 | Blocking&nbsp;issues | Status&nbsp;&&nbsp;Last&nbsp;Update | &nbsp;&nbsp;Versions&nbsp;with&nbsp;issue&nbsp;&nbsp; | &nbsp;&nbsp;Mitigation&nbsp;&nbsp; |
 | :----------- | :----- | :--------------: | :--------------: |
+| ARM32 UWP Unity apps built in release mode using Visual Studio&nbsp;2022 will [hit an internal compiler error in Visual Studio](https://developercommunity.visualstudio.com/t/uwp-arm-32-build-fails-with-fatal-error-c1001-inte/1697106#T-N10059007). | **Pending release:**<br />2022/06/27 | Visual Studio&nbsp;2022<br />version 17.1.1+ | Avoid compiling using<br />these versions of<br />Visual Studio&nbsp;2022 |
 | HL2 app using URP, WindowsXR plugin and Gamma color space rendering has worse render performance in Unity 2020 or later. | **Investigating:**<br />2022/05/06 | Unity 2020.\*.\* <br/> with URP 10.\*.\* <br/> and&nbsp;Windows&nbsp;XR&nbsp;Plugin&nbsp;4.\*.\*| Upgrade to OpenXR Plugin instead of WindowsXR plugin |
 | HL2 app using URP has worse render performance in Unity 2021 compared to Unity 2020. | **Investigating:**<br />2022/05/06 | Unity 2021.\*.\* <br/> with URP 12.\*.\* | Either avoid URP in Unity&nbsp;2021 or use URP in Unity&nbsp;2020.LTS |
 
