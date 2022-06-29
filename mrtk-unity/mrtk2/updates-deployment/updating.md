@@ -323,11 +323,11 @@ This is a breaking change and requires existing mouse device manager implementat
 
 **_Deprecated_**
 
-The `MouseInputProfile` property has been marked as obsolete and will be removed from a future version of the Microsoft Mixed Reality Toolkit. It is recommended that application code no longer use this property.
+The `MouseInputProfile` property has been marked as obsolete and will be removed from a future version of Microsoft Mixed Reality Toolkit. It is recommended that application code no longer use this property.
 
 **Interactable**
 
-The following methods and properties have been deprecated and will be removed from a future version of the Microsoft Mixed Reality Toolkit. The recommendation is to update application code per the guidance contained in the Obsolete attribute and displayed in the console.
+The following methods and properties have been deprecated and will be removed from a future version of Microsoft Mixed Reality Toolkit. The recommendation is to update application code per the guidance contained in the Obsolete attribute and displayed in the console.
 
 - `public bool Enabled`
 - `public bool FocusEnabled`
@@ -402,7 +402,7 @@ Some axes and input types have been updated in 2.1.0, especially around the Open
 
 ## Updating RC2 to 2.0.0
 
-Between the RC2 and 2.0.0 releases of the Microsoft Mixed Reality Toolkit, changes were made that may impact existing projects. This document describes those changes and how to update projects to the 2.0.0 release.
+Between the RC2 and 2.0.0 releases of Microsoft Mixed Reality Toolkit, changes were made that may impact existing projects. This document describes those changes and how to update projects to the 2.0.0 release.
 
 - [API changes](#api-changes-in-200)
 - [Assembly name changes](#assembly-name-changes-in-200)

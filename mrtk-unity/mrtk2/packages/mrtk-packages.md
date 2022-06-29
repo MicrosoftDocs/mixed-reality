@@ -90,7 +90,7 @@ The MRTK Foundation package contains the following.
 
 ### Extensions package
 
-The optional Microsoft.MixedRealityToolkit.Unity.Extensions package includes additional services that extend the functionality of the Microsoft Mixed Reality Toolkit.
+The optional Microsoft.MixedRealityToolkit.Unity.Extensions package includes additional services that extend the functionality of Microsoft Mixed Reality Toolkit.
 
 > [!NOTE]
 > The extensions package requires Microsoft.MixedRealityToolkit.Unity.Foundation.
@@ -104,7 +104,7 @@ The optional Microsoft.MixedRealityToolkit.Unity.Extensions package includes add
 
 ### Tools package
 
-The optional Microsoft.MixedRealityToolkit.Unity.Tools package includes helpful tools that enhance the mixed reality development experience using the Microsoft Mixed Reality Toolkit.
+The optional Microsoft.MixedRealityToolkit.Unity.Tools package includes helpful tools that enhance the mixed reality development experience using Microsoft Mixed Reality Toolkit.
 These tools are located in the **Mixed Reality Toolkit > Utilities** menu in the Unity Editor.
 
 > [!NOTE]

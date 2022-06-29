@@ -9,7 +9,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Camera,
 
 # Camera system overview &#8212; MRTK2
 
-The camera system enables the Microsoft Mixed Reality Toolkit to configure and optimize the application's camera for use in mixed reality applications. Using the camera system, applications can be written to support both opaque (ex: virtual reality) and transparent (ex: Microsoft HoloLens) devices without needing to write code to distinguish between, and accommodate for, each type of display.
+The camera system enables Microsoft Mixed Reality Toolkit to configure and optimize the application's camera for use in mixed reality applications. Using the camera system, applications can be written to support both opaque (ex: virtual reality) and transparent (ex: Microsoft HoloLens) devices without needing to write code to distinguish between, and accommodate for, each type of display.
 
 ## Enabling the camera system
 
@@ -44,7 +44,7 @@ Camera setting providers enable platform specific configuration of the camera. T
 Providers can be added by clicking the **Add Camera Settings Provider** button. They can be removed by clicking the **-** button to the right of the provider's name.
 
 > [!Note]
-> Not all platforms will require a camera settings provider. If there are no providers that are compatible with the platform on which the application is running, the Microsoft Mixed Reality Toolkit will apply basic defaults.
+> Not all platforms will require a camera settings provider. If there are no providers that are compatible with the platform on which the application is running, Microsoft Mixed Reality Toolkit will apply basic defaults.
 
 ### Display settings
 

@@ -21,7 +21,7 @@ This article describes how to create [custom data providers](../../architecture/
 Data providers can be distributed in one of two ways:
 
 1. Third party add-ons
-1. Part of the Microsoft Mixed Reality Toolkit
+1. Part of Microsoft Mixed Reality Toolkit
 
 The approval process for submissions of new data providers to MRTK will vary on a case-by-case basis and will be communicated at the time of the initial proposal. Proposals can be submitted by creating a new [*Feature Request* type issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues).
 

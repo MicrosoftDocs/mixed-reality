@@ -42,7 +42,7 @@ The [Unity Profiler](https://docs.unity3d.com/Manual/ProfilerWindow.html) is a u
 
 ![Example Unity Profiler Graph](../features/images/performance/UnityProfilerGraph.png)
 
-To maintain comfortable frame rates (typically 60 frames per second), applications need to achieve a maximum frame time of 16.6 milliseconds of CPU time. To help identify the cost of MRTK functionality, the Microsoft Mixed Reality Toolkit contains a markers for inner loop (per frame) code paths. These markers use the following format, to assist in understanding the specific functionality being utilized:
+To maintain comfortable frame rates (typically 60 frames per second), applications need to achieve a maximum frame time of 16.6 milliseconds of CPU time. To help identify the cost of MRTK functionality, Microsoft Mixed Reality Toolkit contains a markers for inner loop (per frame) code paths. These markers use the following format, to assist in understanding the specific functionality being utilized:
 
 ```
 [MRTK] className.methodName

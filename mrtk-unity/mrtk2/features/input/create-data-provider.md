@@ -19,8 +19,7 @@ from the [`WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolki
 
 ## Namespace and folder structure
 
-Data providers can be distributed as a third party add-on or as a part of the Microsoft Mixed Reality Toolkit. The approval process for submissions of
-new data providers to MRTK will vary on a case-by-case basis and will be communicated at the time of the initial proposal.
+Data providers can be distributed as a third party add-on or as a part of Microsoft Mixed Reality Toolkit. The approval process for submissions of new data providers to MRTK will vary on a case-by-case basis and will be communicated at the time of the initial proposal.
 
 > [!Important]
 > If an input system data provider is being submitted to the [Mixed Reality Toolkit repository](https://github.com/Microsoft/MixedRealityToolkit-Unity), the
