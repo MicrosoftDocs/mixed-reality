@@ -234,7 +234,7 @@ Dependencies: none
 
 ### Extension packages
 
-The optional extensions package (`com.microsoft.mixedreality.toolkit.extensions)` contains additional components that expand the functionality of the MRTK.
+The optional extensions package (`com.microsoft.mixedreality.toolkit.extensions)` contains additional components that expand the functionality of MRTK.
 
 | Folder | Component | Description |
 | --- | --- | --- |

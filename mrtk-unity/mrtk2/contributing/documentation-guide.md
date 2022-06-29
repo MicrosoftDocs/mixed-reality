@@ -1,6 +1,6 @@
 ---
 title: Documentation guidelines
-description: documentation guidelines and standards for the MRTK.
+description: documentation guidelines and standards for MRTK.
 author: polar-kev
 ms.author: roliu
 ms.date: 01/12/2021
@@ -290,7 +290,7 @@ As part of this documentation, how-to sections, including illustrations, should 
 
 ## Design documentation
 
-Mixed Reality provides an opportunity to create entirely new worlds. Part of this is likely to involve the creation of custom assets for use with the MRTK. To make this as friction free as possible for customers, components should provide design documentation describing any formatting or other requirements for art assets.
+Mixed Reality provides an opportunity to create entirely new worlds. Part of this is likely to involve the creation of custom assets for use with MRTK. To make this as friction free as possible for customers, components should provide design documentation describing any formatting or other requirements for art assets.
 
 Some examples where design documentation can be helpful:
 

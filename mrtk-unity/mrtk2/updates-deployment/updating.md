@@ -18,13 +18,13 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 ## Finding the current version 
 
-Follow these instructions to figure out which version of the MRTK you're currently using:
+Follow these instructions to figure out which version of MRTK you're currently using:
 
 1. Open your MRTK project in Unity
 2. Navigate to the "MixedRealityToolkit" folder in your Project window
 3. Open the file called "Version"
 
-If the file and folder above doesn't exist, you're on a newer version of the MRTK. In that case, try the following:
+If the file and folder above doesn't exist, you're on a newer version of MRTK. In that case, try the following:
 
 1. Navigate to the "Mixed Reality Toolkit Foundation" folder
 2. Click on the "package.json" to see a preview in Unity or open it with a text editor
@@ -287,7 +287,7 @@ Please update #using statements to resolve compile errors.
 
 **IMixedRealityBoundarySystem.Contains**
 
-This method previously took in a specific, Unity-defined experimental enum. It now takes in an MRTK-defined enum that's identical to the Unity enum. This change helps prepare the MRTK for Unity's future boundary APIs.
+This method previously took in a specific, Unity-defined experimental enum. It now takes in an MRTK-defined enum that's identical to the Unity enum. This change helps prepare MRTK for Unity's future boundary APIs.
 
 **MixedRealityServiceProfileAttribute**
 
@@ -435,7 +435,7 @@ Use [`MixedRealityServiceRegistry`](xref:Microsoft.MixedReality.Toolkit.MixedRea
 The [`CoreServices`](xref:Microsoft.MixedReality.Toolkit.CoreServices) class is the replacement for the static system accessors (ex: BoundarySystem) found in the `MixedRealityToolkit` object.
 
 >[!IMPORTANT]
->The `MixedRealityToolkit` system accessors have been deprecated in version 2.0.0 and will be removed in a future release of the MRTK.
+>The `MixedRealityToolkit` system accessors have been deprecated in version 2.0.0 and will be removed in a future release of MRTK.
 
 The following code example illustrates the old and the new pattern.
 

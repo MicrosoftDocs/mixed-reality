@@ -18,7 +18,7 @@ This guide is a simple walkthrough for each of the configuration profile screens
 The main configuration profile, which is attached to the *MixedRealityToolkit* GameObject in your Scene, provides the main entry point for the Toolkit in your project.
 
 > [!NOTE]
-> Mixed Reality Toolkit "locks" the default configuration screens to ensure you always have a common start point for your project and it is encouraged to start defining your own settings as your project evolves. The MRTK configuration is not editable during play-mode.
+> Mixed Reality Toolkit "locks" the default configuration screens to ensure you always have a common start point for your project and it is encouraged to start defining your own settings as your project evolves. MRTK configuration is not editable during play-mode.
 
 ![MRTK configuration profile](../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_ActiveConfiguration.png)
 
@@ -31,7 +31,7 @@ When you open the main Mixed Reality Toolkit Configuration Profile, you will see
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_MixedRealityToolkitConfigurationScreen.png" width="650px" alt="MRTK configuration scene">
 
-If you select a MixedRealityToolkitConfigurationProfile asset without the MixedRealityToolkit in the scene, it will ask you if you want the MRTK to automatically setup the scene for you. This is optional, however, there must be an active MixedRealityToolkit object in the scene to access all the configuration screens.
+If you select a MixedRealityToolkitConfigurationProfile asset without the MixedRealityToolkit in the scene, it will ask you if you want MRTK to automatically setup the scene for you. This is optional, however, there must be an active MixedRealityToolkit object in the scene to access all the configuration screens.
 
 This houses the current active runtime configuration for the project.
 
@@ -78,7 +78,7 @@ Located on the main Mixed Reality Toolkit configuration page, this setting defin
 
 ## Camera settings
 
-The camera settings define how the camera will be setup for your Mixed Reality project, defining the generic clipping, quality and transparency settings.
+The camera settings define how the camera will be set up for your Mixed Reality project, defining the generic clipping, quality and transparency settings.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_CameraProfile.png" width="650px" alt="Camera Profile">
 
@@ -91,7 +91,7 @@ The Mixed Reality Project provides a robust and well-trained input system for ro
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_InputSystemSelection.png" width="650px" alt="Input System settings 1">
 
-Behind the Input System provided by the MRTK are several other systems, these help to drive and manage the complex inter-weavings required to abstract out the complexities of a multi-platform / mixed reality framework.
+Behind the Input System provided by MRTK are several other systems, these help to drive and manage the complex inter-weavings required to abstract out the complexities of a multi-platform / mixed reality framework.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_InputSystemProfile.png" width="650px" alt="Input System settings 2">
 
@@ -147,7 +147,7 @@ This is only applicable for devices that can provide a scanned environment.
 
 ## Diagnostics settings
 
-An optional but highly useful feature of the MRTK is the plugin diagnostics functionality.
+An optional but highly useful feature of MRTK is the plugin diagnostics functionality.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_DiagnosticsSystemSelection.png" width="650px" alt="Diagnostics settings">
 
@@ -160,7 +160,7 @@ The diagnostics profile provides several simple systems to monitor whilst the pr
 
 ## Scene system settings
 
-The MRTK provides this optional service to help you manage complex additive scene loading / unloading. To decide if the Scene System would be a good fit for your project, read the [Scene System Getting Started Guide.](../features/scene-system/scene-system-getting-started.md)
+MRTK provides this optional service to help you manage complex additive scene loading / unloading. To decide if the Scene System would be a good fit for your project, read the [Scene System Getting Started Guide.](../features/scene-system/scene-system-getting-started.md)
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_SceneSystemProfile.png" width="650px" alt="Scene System settings 1">
 
@@ -216,7 +216,7 @@ This could also be done in your own code. However, seeing as this was a very com
 Input action Rules can be configured for any of the available input axis. However, input actions from one axis type can be translated to another input action of the same axis type. You can map a dual axis action to another dual axis action, but not to a digital or none action.
 
 ![Input action rules profile](../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_InputActionRulesProfile.png)
-
+s
 ---
 <a name="pointer"></a>
 
@@ -274,7 +274,7 @@ The configuration screen below allows you to configure any of the controllers cu
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_ControllerMappingProfile.png" width="650px" alt="Controller Mapping">
 
-The MRTK provides a default configuration for the following controllers / systems:
+MRTK provides a default configuration for the following controllers / systems:
 
 - Mouse (including 3D spatial mouse support)
 - Touch Screen
@@ -301,7 +301,7 @@ In addition to the controller mapping, a separate configuration profile is provi
 
 This can be configured at a "Global" (all instances of a controller for a specific hand) or specific to an individual controller type / hand.
 
-The MRTK also supports native SDK controller models for Windows Mixed Reality and OpenVR. These are loaded as GameObjects in your scene and positioned using the platform's controller tracking.
+MRTK also supports native SDK controller models for Windows Mixed Reality and OpenVR. These are loaded as GameObjects in your scene and positioned using the platform's controller tracking.
 
 If your controller representation in the scene needs to be offset from the physical controller position, then simply set that offset against the controller model's prefab (e.g. setting the transform position of the controller prefab with an offset position).
 
@@ -337,8 +337,8 @@ To ensure a scene renders all necessary data to the depth buffer, developers can
 It is possible to update profiles at runtime, and there are generally two different
 scenarios and times in which in this is helpful:
 
-1. **Pre MRTK initialization profile switch**: At startup, before the MRTK is initialized and profile becomes active, replacing the not-yet-in-use profile to enable/disable different features based on the device capabilities. For example, if the experience is running in VR that doesn't have spatial mapping hardware it probably doesn't make sense to have spatial mapping component enabled.
-1. **Active profile switch**: After startup, after the MRTK is initialized and a profile has become active, swapping the profile currently in use to change the way certain features behave. For example, there may be a specific sub-experience in the application that wants far hand pointers completely removed.
+1. **Pre MRTK initialization profile switch**: At startup, before MRTK is initialized and profile becomes active, replacing the not-yet-in-use profile to enable/disable different features based on the device capabilities. For example, if the experience is running in VR that doesn't have spatial mapping hardware it probably doesn't make sense to have spatial mapping component enabled.
+1. **Active profile switch**: After startup, after MRTK is initialized and a profile has become active, swapping the profile currently in use to change the way certain features behave. For example, there may be a specific sub-experience in the application that wants far hand pointers completely removed.
 
 ### Pre MRTK initialization profile switch
 
@@ -350,7 +350,7 @@ using UnityEngine;
 
 /// <summary>
 /// Sample MonoBehaviour that will run before the MixedRealityToolkit object, and change
-/// the profile, so that when the MRTK initializes it uses the profile specified below
+/// the profile, so that when MRTK initializes it uses the profile specified below
 /// rather than the one that is saved in its scene.
 /// </summary>
 /// <remarks>
@@ -388,7 +388,7 @@ MixedRealityToolkit.Instance.ActiveProfile = profileToUse;
 
 Note when setting `ActiveProfile` during runtime, the destroy of the currently running services will happen after the last LateUpdate() of all services, and the instantiation and initialization of the services associated with the new profile will happen before the first Update() of all services.
 
-A noticeable application hesitation may occur during this process. Also any script with higher priority than the `MixedRealityToolkit` script can enter its Update before the new profile is properly setup. See [Script Execution Order settings](https://docs.unity3d.com/Manual/class-MonoManager.html) for more information on script priority.
+A noticeable application hesitation may occur during this process. Also any script with higher priority than the `MixedRealityToolkit` script can enter its Update before the new profile is properly set up. See [Script Execution Order settings](https://docs.unity3d.com/Manual/class-MonoManager.html) for more information on script priority.
 
 In the profile switching process the existing UI camera will remain unchanged, ensuring Unity UI components that require canvas still work after the switch.
 

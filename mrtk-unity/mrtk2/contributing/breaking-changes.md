@@ -1,6 +1,6 @@
 ---
 title: Breaking changes
-description: Policy regarding breaking changes in the MRTK.
+description: Policy regarding breaking changes in MRTK.
 author: polar-kev
 ms.author: kurtie
 ms.date: 01/12/2021
@@ -9,7 +9,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Breaking changes &#8212; MRTK2
 
-Consumers of the MRTK depend on having a stable release-to-release API surface, so that they can take updates to the MRTK without having large breaking changes each time.
+Consumers of MRTK depend on having a stable release-to-release API surface, so that they can take updates to MRTK without having large breaking changes each time.
 
 This page describes our current policy regarding breaking changes in the MRTK, along with some longer term goals around how we can better manage the tradeoff between keeping breaking changes low and being able to make the right long term technical changes to the code.
 
