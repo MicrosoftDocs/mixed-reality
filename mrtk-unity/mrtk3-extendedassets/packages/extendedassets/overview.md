@@ -18,7 +18,7 @@ The audio folder contains the files used by the hand interaction example scene's
 
 ## Fonts
 
-The open source [Selawik font](https://docs.microsoft.com/en-us/typography/font-list/selawik) is included in the fonts folder. This font is an open source replacement for the Segoe UI font.
+The open source [Selawik font](/typography/font-list/selawik) is included in the fonts folder. This font is an open source replacement for the Segoe UI font.
 
 Also included, in the FontsSDF folder, are Selawik assets for Text Mesh Pro.
 
