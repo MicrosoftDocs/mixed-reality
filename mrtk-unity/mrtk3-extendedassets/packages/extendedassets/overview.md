@@ -14,15 +14,16 @@ The extended assets package builds upon the standard assets and provides additio
 
 ## Audio
 
-
+The audio folder contains the files used by the hand interaction example scene's piano keyboard. Piano and Xylophone note samples are both included.
 
 ## Fonts
 
-## Icons
+The open source [Selawik font](https://docs.microsoft.com/en-us/typography/font-list/selawik) is included in the fonts folder. This font is an open source replacement for the Segoe UI font.
 
-## Materials
+Also included, in the FontsSDF folder, are Selawik assets for Text Mesh Pro.
 
 ## Models
 
-## Textures
+An assortment of 3D models, such as a coffee cup, that are used in the examples scenes are provided in the models folder. 
 
+The materials and textures used with these models can be found in their respective folders.
