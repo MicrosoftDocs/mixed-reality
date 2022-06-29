@@ -286,7 +286,7 @@ or play mode test folder.
 
 When adding a new test, please modify the script to have the correct MRTK icon. There's an easy MRTK tool to do so:
 
-1. Go go the Mixed Reality Toolkit menu item
+1. Go go s menu item
 1. Click on Utilities, then Update, then Icons
 1. Click on Tests, and the updater will run automatically, updating any test scripts missing their icons
 

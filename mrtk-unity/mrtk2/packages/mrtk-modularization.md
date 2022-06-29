@@ -31,7 +31,7 @@ through the Mixed Reality Toolkit core component.
 
 ## Minimizing MRTK import footprint
 
-At this moment, the MRTK is imported as a single foundation package (ignoring for a moment the existence of the examples package, which is a completely optional package). It is possible to make this footprint smaller by manually cutting down on the files imported, though this is a highly manual process which doesn't have a well-defined guide.
+At this moment, the MRTK is imported as a single Foundation package (ignoring for a moment the existence of the examples package, which is a completely optional package). It is possible to make this footprint smaller by manually cutting down on the files imported, though this is a highly manual process which doesn't have a well-defined guide.
 
 It is possible to uncheck arbitrary items during the import of the Foundation package. However, it's not recommended to do this at an early stage in development as it might break functionality. After having figured out the final feature set of an app, pruning unneeded providers and services can be done on the following folders:
 

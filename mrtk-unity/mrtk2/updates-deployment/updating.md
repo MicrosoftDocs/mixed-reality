@@ -123,7 +123,7 @@ Changing to using the Mixed Reality Feature Tool requires a one-time set of manu
     > Some Unity tools, like Unity Collab, save configuration info to the Library folder. If using a tool that does this, first copy the tool's data folder from Library before deleting, then restore it after Library is regenerated.
 1. Re-open the project in Unity
 
-Once the previous steps have been performed, run the [Mixed Reality Feature Tool](#mixed-reality-feature-tool) and import the desired version of the Mixed Reality Toolkit.
+Once the previous steps have been performed, run the [Mixed Reality Feature Tool](#mixed-reality-feature-tool) and import the desired version of Mixed Reality Toolkit.
 
 ## Updating 2.3.0 to 2.4.0
 

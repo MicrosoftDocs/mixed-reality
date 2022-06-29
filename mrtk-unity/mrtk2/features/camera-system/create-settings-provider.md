@@ -118,7 +118,7 @@ The next step is to add the logic of the settings provider by implementing [`IMi
 
 ## Create the profile and inspector
 
-In the Mixed Reality Toolkit, data providers are configured using [profiles](../profiles/profiles.md).
+In Mixed Reality Toolkit, data providers are configured using [profiles](../profiles/profiles.md).
 
 ### Define the profile
 
@@ -184,7 +184,7 @@ namespace namespace Microsoft.MixedReality.Toolkit.Experimental.UnityAR
 
 ## Create assembly definition(s)
 
-The Mixed Reality Toolkit uses assembly definition ([.asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) files to specify dependencies
+Mixed Reality Toolkit uses assembly definition ([.asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) files to specify dependencies
 between components as well as to assist Unity in reducing compilation time.
 
 It is recommended that assembly definition files are created for all data providers and their editor components.

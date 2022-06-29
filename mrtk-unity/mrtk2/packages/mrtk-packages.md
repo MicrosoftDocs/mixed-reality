@@ -9,7 +9,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Unity Pa
 
 # MRTK packages &#8212; MRTK2
 
-The Mixed Reality Toolkit (MRTK) is a collection of packages that enable cross platform Mixed Reality application development by providing support for Mixed Reality hardware and platforms.
+Mixed Reality Toolkit (MRTK) is a collection of packages that enable cross platform Mixed Reality application development by providing support for Mixed Reality hardware and platforms.
 
 MRTK is available as [asset](#asset-packages) (.unitypackage) packages and via the [Unity Package Manager](#unity-package-manager).
 
@@ -179,7 +179,7 @@ Some of the challenges are:
 
 ### Foundation package
 
-The foundation package (`com.microsoft.mixedreality.toolkit.foundation`) forms the basis of the Mixed Reality Toolkit.
+The foundation package (`com.microsoft.mixedreality.toolkit.foundation`) forms the basis of Mixed Reality Toolkit.
 
 | Folder | Component | Description |
 | --- | --- | --- |

@@ -206,7 +206,7 @@ It is recommended to implement the pattern utilized by the MRTK when instrumenti
 
 ## Create the profile and inspector
 
-In the Mixed Reality Toolkit, data providers are configured using [profiles](../profiles/profiles.md).
+In Mixed Reality Toolkit, data providers are configured using [profiles](../profiles/profiles.md).
 
 Data providers with additional configuration options (ex: [InputSimulationService](../input-simulation/input-simulation-service.md)) should create a profile and inspector to allow
 customers to modify the behavior to best suit the needs of the application.
@@ -245,7 +245,7 @@ The `CustomEditor` attribute informs Unity the type of asset to which the inspec
 
 ## Create assembly definition(s)
 
-The Mixed Reality Toolkit uses assembly definition ([.asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) files to specify dependencies
+Mixed Reality Toolkit uses assembly definition ([.asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) files to specify dependencies
 between components as well as to assist Unity in reducing compilation time.
 
 It is recommended that assembly definition files are created for all data providers and their editor components.

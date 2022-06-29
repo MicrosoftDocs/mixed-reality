@@ -9,7 +9,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # MRTK2 profile configuration guide
 
-The Mixed Reality Toolkit centralizes as much of the configuration required to manage the toolkit as possible (except for true runtime "things").
+Mixed Reality Toolkit centralizes as much of the configuration required to manage the toolkit as possible (except for true runtime "things").
 
 This guide is a simple walkthrough for each of the configuration profile screens currently available for the toolkit.
 
@@ -18,11 +18,11 @@ This guide is a simple walkthrough for each of the configuration profile screens
 The main configuration profile, which is attached to the *MixedRealityToolkit* GameObject in your Scene, provides the main entry point for the Toolkit in your project.
 
 > [!NOTE]
-> The Mixed Reality Toolkit "locks" the default configuration screens to ensure you always have a common start point for your project and it is encouraged to start defining your own settings as your project evolves. The MRTK configuration is not editable during play-mode.
+> Mixed Reality Toolkit "locks" the default configuration screens to ensure you always have a common start point for your project and it is encouraged to start defining your own settings as your project evolves. The MRTK configuration is not editable during play-mode.
 
 ![MRTK configuration profile](../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_ActiveConfiguration.png)
 
-All the "default" profiles for the Mixed Reality Toolkit can be found in the SDK project in the folder Assets/MRTK/SDK/Profiles.
+All the "default" profiles for Mixed Reality Toolkit can be found in the SDK project in the folder Assets/MRTK/SDK/Profiles.
 
 > [!IMPORTANT]
 > DefaultHoloLens2ConfigurationProfile is optimized for HoloLens 2. See [Profiles](../features/profiles/profiles.md) for the details.
@@ -133,7 +133,7 @@ The Mixed Reality Project provides a rebuilt spatial awareness system for workin
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_SpatialAwarenessSystemSelection.png" width="650px" alt="Spatial Awareness settings 1">
 
-The Mixed Reality Toolkit spatial awareness configuration lets you tailor how the system starts, whether it is automatically when the application starts
+Mixed Reality Toolkit spatial awareness configuration lets you tailor how the system starts, whether it is automatically when the application starts
 or later programmatically as well as setting the extents for the field of view.
 
 It also lets you configure the mesh and surface settings, further customizing how your project understands the environment around you.
@@ -169,7 +169,7 @@ The MRTK provides this optional service to help you manage complex additive scen
 
 ## Additional services settings
 
-One of the more advanced areas of the Mixed Reality Toolkit is its [service locator pattern](https://en.wikipedia.org/wiki/Service_locator_pattern) implementation which allows the registering of any "Service" with the framework. This allows the framework to be both extended with new features / systems easily but also allows for projects to take advantage of these capabilities to register their own runtime components.
+One of the more advanced areas of Mixed Reality Toolkit is its [service locator pattern](https://en.wikipedia.org/wiki/Service_locator_pattern) implementation which allows the registering of any "Service" with the framework. This allows the framework to be both extended with new features / systems easily but also allows for projects to take advantage of these capabilities to register their own runtime components.
 
 Any registered service still gets the full advantage of all of the Unity events, without the overhead and cost of implementing a MonoBehaviour or clunky singleton patterns. This allows for pure C# components with no scene overhead for running both foreground and background processes, e.g. spawning systems, runtime game logic, or practically anything else.
 
@@ -224,7 +224,7 @@ Input action Rules can be configured for any of the available input axis. Howeve
 
 Pointers are used to drive interactivity in the scene from any input device, giving both a direction and hit test with any object in a scene (that has a collider attached, or is a UI component). Pointers are by default automatically configured for controllers, headsets (gaze / focus) and mouse / touch input.
 
-Pointers can also be visualized within the active scene using one of the many line components provided by the Mixed Reality Toolkit, or any of your own if they implement the MRTK IMixedRealityPointer interface.
+Pointers can also be visualized within the active scene using one of the many line components provided by Mixed Reality Toolkit, or any of your own if they implement the MRTK IMixedRealityPointer interface.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_InputPointerProfile.png" width="650px" alt="Input Pointer Profile">
 
@@ -268,7 +268,7 @@ Like gestures, some runtime platforms also provide intelligent "Speech to Text" 
 
 ## Controller mapping configuration
 
-One of the core configuration screens for the Mixed Reality Toolkit is the ability to configure and map the various types of controllers that can be utilized by your project.
+One of the core configuration screens for Mixed Reality Toolkit is the ability to configure and map the various types of controllers that can be utilized by your project.
 
 The configuration screen below allows you to configure any of the controllers currently recognized by the toolkit.
 
