@@ -142,7 +142,7 @@ that respond to various types of hand input (articulated and non-articulated).
 
 This package also contains eye tracking demos, which are [documented here](../features/example-scenes/eye-tracking-examples-overview.md)
 
-More generally, any new feature in the MRTK should contain a corresponding example in the examples package, roughly following
+More generally, any new feature in MRTK should contain a corresponding example in the examples package, roughly following
 the same folder structure and location.
 
 > [!NOTE]
@@ -157,7 +157,7 @@ the same folder structure and location.
 
 ## Unity Package Manager
 
-For experiences being created using Unity 2019.4 and newer, the MRTK is available via the [Unity Package Manager](https://docs.unity3d.com/Manual/Packages.html).
+For experiences being created using Unity 2019.4 and newer, MRTK is available via the [Unity Package Manager](https://docs.unity3d.com/Manual/Packages.html).
 
 Some of the benefits of using asset packages include:
 

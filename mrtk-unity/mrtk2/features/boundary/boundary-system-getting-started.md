@@ -35,7 +35,7 @@ The following steps presume use of the MixedRealityToolkit object. Steps require
 
     ![Enable the Boundary System](../images/boundary/MRTKConfig_Boundary.png)
 
-1. Select the Boundary System implementation. The default class implementation provided by the MRTK is the [`MixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.MixedRealityBoundarySystem)
+1. Select the Boundary System implementation. The default class implementation provided by MRTK is the [`MixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.MixedRealityBoundarySystem)
 
     ![Select the Boundary System Implementation](../images/boundary/BoundarySelectSystemType.png)
 

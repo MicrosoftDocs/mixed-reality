@@ -1,6 +1,6 @@
 ---
 title: Mixed Reality Toolkit 3 Developer Documentation
-description: Learn about the Mixed Reality Toolkit 3 for developers.
+description: Learn about Mixed Reality Toolkit 3 for developers.
 author: MaxWang-MS
 ms.author: wangmax
 ms.date: 6/22/2022

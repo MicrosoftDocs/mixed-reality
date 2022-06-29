@@ -20,7 +20,7 @@ from the [`WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolki
 ## Namespace and folder structure
 
 Data providers can be distributed as a third party add-on or as a part of the Microsoft Mixed Reality Toolkit. The approval process for submissions of
-new data providers to the MRTK will vary on a case-by-case basis and will be communicated at the time of the initial proposal.
+new data providers to MRTK will vary on a case-by-case basis and will be communicated at the time of the initial proposal.
 
 > [!Important]
 > If an input system data provider is being submitted to the [Mixed Reality Toolkit repository](https://github.com/Microsoft/MixedRealityToolkit-Unity), the
@@ -183,7 +183,7 @@ InputSystem?.RaisePositionInputChanged(InputSource, ControllerHandedness, intera
 
 Performance is critical in mixed reality applications. Every component adds some amount of overhead for which applications must account. To this end, it is important that all input data providers contain Unity Profiler instrumentation in inner loop and frequently utilized code paths.
 
-It is recommended to implement the pattern utilized by the MRTK when instrumenting custom providers.
+It is recommended to implement the pattern utilized by MRTK when instrumenting custom providers.
 
 ```c#
         private static readonly ProfilerMarker GetOrAddControllerPerfMarker = new ProfilerMarker("[MRTK] WindowsMixedRealityDeviceManager.GetOrAddController");
@@ -198,7 +198,7 @@ It is recommended to implement the pattern utilized by the MRTK when instrumenti
 ```
 
 > [!Note]
-> The name used to identify the profiler marker is arbitrary. The MRTK uses the following pattern.
+> The name used to identify the profiler marker is arbitrary. MRTK uses the following pattern.
 >
 > "[product] className.methodName - optional note"
 >

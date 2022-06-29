@@ -9,7 +9,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Migration window &#8212; MRTK2
 
-As the MRTK undergoes changes, some components might get deprecated and replacements will get introduced.
+As MRTK undergoes changes, some components might get deprecated and replacements will get introduced.
 The migration window is a tool that helps users to automatically migrate a subset of those deprecated components to the new replacements.
 
 ![Migration window](../images/migration-window/MRTK_Migration_Window.png)

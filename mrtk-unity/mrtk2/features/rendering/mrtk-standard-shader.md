@@ -107,7 +107,7 @@ The MRTK Standard shading system works with Unity's built in [UI system](https:/
 
 Note, when using a Unity Image component, it is recommended to specify "None (Sprite)" for the Source Image to prevent Unity UI from generating extra vertices.
 
-A Canvas within the MRTK will prompt for the addition of a [`ScaleMeshEffect.cs`](xref:Microsoft.MixedReality.Toolkit.Input.Utilities.ScaleMeshEffect) when one is required:
+A Canvas within MRTK will prompt for the addition of a [`ScaleMeshEffect.cs`](xref:Microsoft.MixedReality.Toolkit.Input.Utilities.ScaleMeshEffect) when one is required:
 
 ![scale mesh effect](../images/mrtk-standard-shader/MRTK_ScaleMeshEffect.jpg)
 
