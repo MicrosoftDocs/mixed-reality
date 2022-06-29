@@ -13,17 +13,17 @@ monikerRange: '>= mrtkunity-2022-05'
 
 ## What's new in 2.8.1
 
-MRTK 2.8.1 provides key fixes for deployments using the Oculus XR or Windows MR pipelines, as well as performance improvements. 
+MRTK 2.8.1 provides key fixes for applications targeting Microsoft or Oculus devices, as well as performance improvements.
 
 ### MRTK 2.8.1 Bugfixes and Changes
 
-- Several performance improvements, reducing allocs and improving efficiency in key code paths [#10643](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10643), [#10606]https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10606
+- Several performance improvements, reducing allocs and improving efficiency in key code paths [#10643](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10643), [#10606](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10606)
 - Update CameraFOVChecker.cs to fix .NET build in Unity 2018  [#10654](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10654)
 - Update the links to our docs and API ref page [#10670](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10670)
-- Add support for "select" voice command with OpenXR  [#10661](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10661)
-Bounding box of SkinnedMeshRenderer support added [#10611](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10611)
-Fixed issue where Controller Visuals weren't initialized before OnSourceDetected [#10625](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10625)
-Fix a reference issue in ClippingPrimitive [#10627](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10627)
+- Add support for "select" voice command with OpenXR on HoloLens 2 [#10661](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10661)
+- Bounding box of SkinnedMeshRenderer support added [#10611](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10611)
+- Fixed issue where Controller Visuals weren't initialized before OnSourceDetected [#10625](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10625)
+- Fix a reference issue in ClippingPrimitive [#10627](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10627)
 
 ## What's new in 2.8.0
 
