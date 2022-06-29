@@ -1,6 +1,6 @@
 ---
-title: MRTK 2.8.0 release notes
-description: Release notes for MRTK version 2.8.0
+title: MRTK 2.8 release notes
+description: Release notes for MRTK version 2.8
 author: RogPodge
 ms.author: roliu
 ms.date: 05/26/2022
@@ -9,7 +9,7 @@ ms.localizationpriority: high
 monikerRange: '>= mrtkunity-2022-05'
 ---
 
-# Microsoft Mixed Reality Toolkit 2.8.0 Release Notes
+# Microsoft Mixed Reality Toolkit 2.8 Release Notes
 
 ## What's new in 2.8.1
 
