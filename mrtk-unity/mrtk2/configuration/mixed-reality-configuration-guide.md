@@ -31,7 +31,7 @@ When you open the main Mixed Reality Toolkit Configuration Profile, you will see
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_MixedRealityToolkitConfigurationScreen.png" width="650px" alt="MRTK configuration scene">
 
-If you select a MixedRealityToolkitConfigurationProfile asset without the MixedRealityToolkit in the scene, it will ask you if you want MRTK to automatically setup the scene for you. This is optional, however, there must be an active MixedRealityToolkit object in the scene to access all the configuration screens.
+If you select a MixedRealityToolkitConfigurationProfile asset without the MixedRealityToolkit in the scene, it will ask you if you want MRTK to automatically set up the scene for you. This is optional; however, there must be an active MixedRealityToolkit object in the scene to access all the configuration screens.
 
 This houses the current active runtime configuration for the project.
 
@@ -216,7 +216,7 @@ This could also be done in your own code. However, seeing as this was a very com
 Input action Rules can be configured for any of the available input axis. However, input actions from one axis type can be translated to another input action of the same axis type. You can map a dual axis action to another dual axis action, but not to a digital or none action.
 
 ![Input action rules profile](../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_InputActionRulesProfile.png)
-s
+
 ---
 <a name="pointer"></a>
 
