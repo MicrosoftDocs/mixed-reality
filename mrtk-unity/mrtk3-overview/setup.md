@@ -22,7 +22,7 @@ Make sure you have all the tools in this link before starting:
 > [Install the tools](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 
 >[!NOTE]
->Please make sure to check out [known issues in certain Unity versions](unity/known-issues.md) before choosing a Unity version.
+>Please make sure to check out [known issues in certain Unity versions](/windows/mixed-reality/develop/unity/known-issues) before choosing a Unity version.
 
 ## Path 1: Clone the repository and try out the sample Unity Project
 
