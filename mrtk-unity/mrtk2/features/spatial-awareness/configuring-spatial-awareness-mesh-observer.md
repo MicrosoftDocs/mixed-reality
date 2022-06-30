@@ -9,7 +9,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 # Configuring mesh observers for device &#8212; MRTK2
 
-This guide will walk through configuring the out-of-box Spatial Mesh Observer in MRTK which supports the Windows Mixed Reality platform (i.e HoloLens). The default implementation provided by the Mixed Reality Toolkit is the [WindowsMixedRealitySpatialMeshObserver](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver) class. Many of the properties in this article though apply for other [custom Observer implementations](create-data-provider.md).
+This guide will walk through configuring the out-of-box Spatial Mesh Observer in MRTK which supports the Windows Mixed Reality platform (for example, HoloLens). The default implementation provided by Mixed Reality Toolkit is the [WindowsMixedRealitySpatialMeshObserver](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver) class. Many of the properties in this article though apply for other [custom Observer implementations](create-data-provider.md).
 
 ## Profile settings
 
@@ -67,7 +67,7 @@ The observation extents define the distance from the observation point that mesh
 The physics layer on which spatial mesh objects will be placed in order to interact with the Unity Physics and RayCast systems.
 
 > [!NOTE]
-> The Mixed Reality Toolkit reserves *layer 31* by default for use by Spatial Awareness observers.
+> Mixed Reality Toolkit reserves *layer 31* by default for use by Spatial Awareness observers.
 
 **Recalculate Normals**
 

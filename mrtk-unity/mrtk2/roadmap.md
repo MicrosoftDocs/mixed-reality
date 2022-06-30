@@ -9,7 +9,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, roadmap,
 
 # Roadmap &#8212; MRTK2
 
-Here is our vision for major work in the Mixed Reality Toolkit for calendar year 2021 and 2022. This work is under development, and target dates are estimates only.
+Here is our vision for major work in Mixed Reality Toolkit for calendar year 2021 and 2022. This work is under development, and target dates are estimates only.
 
 ## Current release
 
@@ -21,14 +21,14 @@ Microsoft Mixed Reality Toolkit v2.7.2
 | --- | --- | --- | --- |
 | [MRTK v2.7.3](#273) | A minor release with targeted bug fixes | Dec 2021 | [MRTK v2.7.3 Milestones](https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/25) |
 | [MRTK v2.8.0](#280) | Next iteration of MRTK with bug fixes and minor improvements | Spring 2022 | [MRTK v2.8.0 Milestones](https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/22) |
-| [MRTK v3.0.0 Public Preview](#300) | A new major release of the MRTK with an all new architecture | Spring/Summer 2022 |[MRTK v3.0.0 Milestones](https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/18) |
+| [MRTK v3.0.0 Public Preview](#300) | A new major release of MRTK with an all new architecture | Spring/Summer 2022 |[MRTK v3.0.0 Milestones](https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/18) |
 
 The MRTK team is currently focusing on the development MRTK v3, which introduces a new architecture. The architecture addresses several pain points being vocalized by the community. We are a lean team, and we need to move away from our typical 8-12 week release cadence in order to focus our attention on building up the core of MRTK v3. We would like to share it with the public and start accepting contributions from the community soon.
 
 Release details, including backlog items, can be found on the [GitHub milestone pages](https://github.com/Microsoft/MixedRealityToolkit-Unity/milestones). The complete set of open issues can also be found on [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/issues).
 
 
-> When Unity releases an LTS (Long Term Support) product, the Mixed Reality Toolkit will update to the LTS release. Although the Mixed Reality Toolkit runs on the latest non-beta (ex: 2021.2) tech branch version of Unity, version 2021.2 is not officially supported.
+> When Unity releases an LTS (Long Term Support) product, Mixed Reality Toolkit will update to the LTS release. Although Mixed Reality Toolkit runs on the latest non-beta (ex: 2021.2) tech branch version of Unity, version 2021.2 is not officially supported.
 
 ## Mixed Reality Toolkit (MRTK) roadmap
 

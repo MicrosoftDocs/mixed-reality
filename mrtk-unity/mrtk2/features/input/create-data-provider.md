@@ -19,8 +19,7 @@ from the [`WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolki
 
 ## Namespace and folder structure
 
-Data providers can be distributed as a third party add-on or as a part of the Microsoft Mixed Reality Toolkit. The approval process for submissions of
-new data providers to the MRTK will vary on a case-by-case basis and will be communicated at the time of the initial proposal.
+Data providers can be distributed as a third party add-on or as a part of Microsoft Mixed Reality Toolkit. The approval process for submissions of new data providers to MRTK will vary on a case-by-case basis and will be communicated at the time of the initial proposal.
 
 > [!Important]
 > If an input system data provider is being submitted to the [Mixed Reality Toolkit repository](https://github.com/Microsoft/MixedRealityToolkit-Unity), the
@@ -183,7 +182,7 @@ InputSystem?.RaisePositionInputChanged(InputSource, ControllerHandedness, intera
 
 Performance is critical in mixed reality applications. Every component adds some amount of overhead for which applications must account. To this end, it is important that all input data providers contain Unity Profiler instrumentation in inner loop and frequently utilized code paths.
 
-It is recommended to implement the pattern utilized by the MRTK when instrumenting custom providers.
+It is recommended to implement the pattern utilized by MRTK when instrumenting custom providers.
 
 ```c#
         private static readonly ProfilerMarker GetOrAddControllerPerfMarker = new ProfilerMarker("[MRTK] WindowsMixedRealityDeviceManager.GetOrAddController");
@@ -198,7 +197,7 @@ It is recommended to implement the pattern utilized by the MRTK when instrumenti
 ```
 
 > [!Note]
-> The name used to identify the profiler marker is arbitrary. The MRTK uses the following pattern.
+> The name used to identify the profiler marker is arbitrary. MRTK uses the following pattern.
 >
 > "[product] className.methodName - optional note"
 >
@@ -206,7 +205,7 @@ It is recommended to implement the pattern utilized by the MRTK when instrumenti
 
 ## Create the profile and inspector
 
-In the Mixed Reality Toolkit, data providers are configured using [profiles](../profiles/profiles.md).
+In Mixed Reality Toolkit, data providers are configured using [profiles](../profiles/profiles.md).
 
 Data providers with additional configuration options (ex: [InputSimulationService](../input-simulation/input-simulation-service.md)) should create a profile and inspector to allow
 customers to modify the behavior to best suit the needs of the application.
@@ -245,7 +244,7 @@ The `CustomEditor` attribute informs Unity the type of asset to which the inspec
 
 ## Create assembly definition(s)
 
-The Mixed Reality Toolkit uses assembly definition ([.asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) files to specify dependencies
+Mixed Reality Toolkit uses assembly definition ([.asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) files to specify dependencies
 between components as well as to assist Unity in reducing compilation time.
 
 It is recommended that assembly definition files are created for all data providers and their editor components.

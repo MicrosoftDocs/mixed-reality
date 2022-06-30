@@ -1,6 +1,6 @@
 ---
 title: Mixed Reality Toolkit 3 Developer Documentation
-description: Learn about the Mixed Reality Toolkit 3 for developers.
+description: Learn about Mixed Reality Toolkit 3 for developers.
 author: MaxWang-MS
 ms.author: wangmax
 ms.date: 6/22/2022
@@ -12,7 +12,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3
 
 ![MRTK3 banner](images/MRTK_UX_v3_Cover.png)
 
-MRTK3 is the third generation of the Microsoft Mixed Reality Toolkit for Unity. It's a Microsoft-driven open source project to accelerate cross-platform mixed reality development in Unity. This new version is built on top of Unity's XR Management system and XR Interaction Toolkit. Here are some of its functions:
+MRTK3 is the third generation of Microsoft Mixed Reality Toolkit for Unity. It's a Microsoft-driven open source project to accelerate cross-platform mixed reality development in Unity. This new version is built on top of Unity's XR Management system and XR Interaction Toolkit. Here are some of its functions:
 
 * Provides the **cross-platform input system and building blocks for spatial interactions and UI**.
 * Enables **rapid prototyping** via in-editor simulation that allows you to see changes immediately.
@@ -81,7 +81,7 @@ To acquire and use MRTK3, the following software tools are required.
 | Software | Version | Notes
 | --- | --- | --- |
 | [Microsoft Visual Studio](https://visualstudio.microsoft.com/) | 2019 Community edition or greater | Recommend Visual Studio 2022 |
-| Unity | 2020.3.35+ or 2021.3.4+ | Recommend using an LTS release |
+| Unity | 2020.3.35+ or 2021.3.4+ | Recommend using an LTS release, make sure to check out [known issues in certain Unity versions]((/windows/mixed-reality/develop/unity/known-issues) |
 | [Mixed Reality Feature Tool for Unity](https://aka.ms/mrfeaturetool) | | Used to acquire MRTK3 packages |
 | [.NET 5.0 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/5.0) | | Required by Mixed Reality Feature Tool |
 | Mixed Reality OpenXR Plugin | | Install via Mixed Reality Feature Tool |
