@@ -1,6 +1,6 @@
 ---
-title: MRTK 2.8.0 release notes
-description: Release notes for MRTK version 2.8.0
+title: MRTK 2.8 release notes
+description: Release notes for MRTK version 2.8
 author: RogPodge
 ms.author: roliu
 ms.date: 05/26/2022
@@ -9,21 +9,35 @@ ms.localizationpriority: high
 monikerRange: '>= mrtkunity-2022-05'
 ---
 
-# Microsoft Mixed Reality Toolkit 2.8.0 Release Notes
+# Microsoft Mixed Reality Toolkit 2.8 Release Notes
+
+## What's new in 2.8.1
+
+MRTK 2.8.1 provides key fixes for applications targeting Microsoft or Oculus devices, as well as performance improvements.
+
+### MRTK 2.8.1 Bugfixes and Changes
+
+- Several performance improvements, reducing allocs and improving efficiency in key code paths [#10643](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10643), [#10606](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10606)
+- Update CameraFOVChecker.cs to fix .NET build in Unity 2018  [#10654](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10654)
+- Update the links to our docs and API ref page [#10670](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10670)
+- Add support for "select" voice command with OpenXR on HoloLens 2 [#10661](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10661)
+- Bounding box of SkinnedMeshRenderer support added [#10611](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10611)
+- Fixed issue where Controller Visuals weren't initialized before OnSourceDetected [#10625](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10625)
+- Fix a reference issue in ClippingPrimitive [#10627](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10627)
 
 ## What's new in 2.8.0
 
 ### Communities help everyone get to where they are going
 
-The release of MRTK 2.8.0 brings in several bug fixes for community-filed issues as well as some new features that you, the MRTK community have requested! 
+The release of MRTK 2.8.0 brings in several bug fixes for community-filed issues and some new features that you, the MRTK community have requested! 
 
-Today we would like to announce MRTK3 as the name that we will be calling the next version of MRTK! With the next version of MRTK gleaming in the horizon, we want to remind everyone how important the MRTK community's contributions have been to shaping MRTK into what it is today and what it is going to be in the future. We would love if you looked over the MRTK3 section of the MRTK Roadmap as well as watch our [GDC 2022 Creating Cross-Platform Mixed Reality Experiences panel](https://www.youtube.com/watch?v=8i3caXfE318&t=8s), and then bring your thoughts and ideas to the MRTK repository's [Discussions board](https://github.com/microsoft/MixedRealityToolkit-Unity/discussions) or [file a Feature Request issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/) and tag 'MRTK3'! We are looking forward to sharing more MRTK3 information with you in the near future and hearing your feedback.
+Today we would like to announce MRTK3 as the name that we'll be calling the next version of MRTK! With the next version of MRTK gleaming in the horizon, we want to remind everyone how important the MRTK community's contributions have been to shaping MRTK into what it is today and what it'll be in the future. We would love if you looked over the MRTK3 section of the MRTK Roadmap and watch our [GDC 2022 Creating Cross-Platform Mixed Reality Experiences panel](https://www.youtube.com/watch?v=8i3caXfE318&t=8s), and then bring your thoughts and ideas to the MRTK repository's [Discussions board](https://github.com/microsoft/MixedRealityToolkit-Unity/discussions) or [file a Feature Request issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/) and tag 'MRTK3'! We're looking forward to sharing more MRTK3 information with you soon and hearing your feedback.
 
-While you are waiting for more, we hope that you enjoy MRTK 2.8.0's new features, performance improvements, and bug fixes! One last note from us before we dive into the release details. MRTK is a collaborative project. Everyone that contributes to MRTK is forever remembered, with our thanks on our [Authors page](../contributing/authors.md). Without you MRTK would not be as great as it is, so thank you to every individual that has helped shape MRTK into an amazing set of building blocks for VR and AR experiences!
+While you're waiting for more, we hope that you enjoy MRTK 2.8.0's new features, performance improvements, and bug fixes! One last note from us before we dive into the release details. MRTK is a collaborative project. Everyone that contributes to MRTK is forever remembered, with our thanks on our [Authors page](../contributing/authors.md). Without your input MRTK wouldn't be as great as it is, so thank you to every individual that has helped shape MRTK into an amazing set of building blocks for VR and AR experiences!
 
 ### OpenXR support
 
-We have dramatically improved the our support for the OpenXR pipeline as of 2.8.0, specifically for Oculus Quest and other non-HoloLens devices! The [Microsoft OpenXR plugin](/windows/mixed-reality/develop/unity/mixed-reality-openxr-plugin) with the OpenXR pipeline is what we recommend for deploying your projects to HoloLens, Quest, and other platforms when using the latest versions of Unity 2020 LTS and Unity 2021 LTS. If you find any issues while using MRTK with the OpenXR pipeline, please [file an issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/) on our GitHub repository.
+We've dramatically improved our support for the OpenXR pipeline as of 2.8.0, specifically for Oculus Quest and other non-HoloLens devices! The [Microsoft OpenXR plugin](/windows/mixed-reality/develop/unity/mixed-reality-openxr-plugin) with the OpenXR pipeline is what we recommend for deploying your projects to HoloLens, Quest, and other platforms when using the latest versions of Unity 2020 LTS and Unity 2021 LTS. If you find any issues while using MRTK with the OpenXR pipeline, [file an issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/) on our GitHub repository.
 
 ### Gaze + Pinch
 
@@ -45,18 +59,18 @@ Merged step slider and touch functionality into the pinch slider and graduated f
 
 MRTK 2.8.0 runs significantly smoother with these major performance improvements. 
 
-- Don't do raycasts for the GazeProvider if it's behavior is set [#10340](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10340)
+- Don't do raycasts for the GazeProvider if its behavior is set [#10340](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10340)
 - Better handling for excess proximity lights [#10241](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10241)
 - Assorted perf improvements in hot code paths [#10601](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10601)
 
 ### Visualization Improvements
 
-MRTK 2.8.0 now has a default controller and hand visualization for when a platform does not provide any controller or hand visualizations. With the Microsoft OpenXR package, you do not need to import the Oculus Integration package to have the Oculus hand or controller visualizations.
+MRTK 2.8.0 now has a default controller and hand visualization for when a platform doesn't provide any controller or hand visualizations. With the Microsoft OpenXR package, you don't need to import the Oculus Integration package to have the Oculus hand or controller visualizations.
 
 - Controller model fallbacks [#10568](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10568)
 - Oculus visualization now integrated with MRTK [#10067](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10067)
 
-### MRTK 2.8.0 Improvements and Bugfixes
+### MRTK 2.8.0 Improvements and Bug Fixes
 
 #### Profile Improvements
 
