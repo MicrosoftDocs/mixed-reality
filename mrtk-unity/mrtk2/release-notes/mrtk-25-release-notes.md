@@ -117,7 +117,7 @@ interface, which queries for nearby objects using a cone. The DefaultHoloLens2In
 ### TestUtilities package
 
 There is now a package (Microsoft.MixedReality.Toolkit.Unity.TestUtilities.2.5.0.unitypackage) that contains the
-PlayMode and TestMode test infrastructure that the MRTK uses to create end-to-end tests. This infrastructure has
+PlayMode and TestMode test infrastructure that MRTK uses to create end-to-end tests. This infrastructure has
 been extremely handy for the MRTK team itself, and we're excited to have consumers use this to add test coverage
 to their own projects.
 

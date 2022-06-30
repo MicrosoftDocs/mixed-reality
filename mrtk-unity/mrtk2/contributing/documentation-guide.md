@@ -1,6 +1,6 @@
 ---
 title: Documentation guidelines
-description: documentation guidelines and standards for the MRTK.
+description: documentation guidelines and standards for MRTK.
 author: polar-kev
 ms.author: roliu
 ms.date: 01/12/2021
@@ -11,7 +11,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 
 <img src="../features/images/MRTK_Logo_Rev.png" alt="MRTK">
 
-This document outlines the documentation guidelines and standards for the Mixed Reality Toolkit (MRTK). This provides an introduction to technical aspects of documentation writing and generation, to highlight common pitfalls, and to describe the recommended writing style.
+This document outlines the documentation guidelines and standards for Mixed Reality Toolkit (MRTK). This provides an introduction to technical aspects of documentation writing and generation, to highlight common pitfalls, and to describe the recommended writing style.
 
 The page itself is supposed to serve as an example, therefore it uses the intended style and the most common markup features of the documentation.
 
@@ -280,7 +280,7 @@ When defining and enumeration, code must also document the meaning of the enum v
 
 ## How-to documentation
 
-Many users of the Mixed Reality Toolkit may not need to use the API documentation. These users will take advantage of our pre-made, reusable prefabs and scripts to create their experiences.
+Many users of Mixed Reality Toolkit may not need to use the API documentation. These users will take advantage of our pre-made, reusable prefabs and scripts to create their experiences.
 
 Each feature area will contain one or more markdown (.md) files that describe at a fairly high level, what is provided. Depending on the size and/or complexity of a given feature area, there may be a need for additional files, up to one per feature provided.
 
@@ -290,7 +290,7 @@ As part of this documentation, how-to sections, including illustrations, should 
 
 ## Design documentation
 
-Mixed Reality provides an opportunity to create entirely new worlds. Part of this is likely to involve the creation of custom assets for use with the MRTK. To make this as friction free as possible for customers, components should provide design documentation describing any formatting or other requirements for art assets.
+Mixed Reality provides an opportunity to create entirely new worlds. Part of this is likely to involve the creation of custom assets for use with MRTK. To make this as friction free as possible for customers, components should provide design documentation describing any formatting or other requirements for art assets.
 
 Some examples where design documentation can be helpful:
 

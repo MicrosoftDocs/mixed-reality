@@ -9,7 +9,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Input,
 
 # Input system terminology &#8212; MRTK2
 
-The input system is one of the largest systems out of all features offered by the MRTK.
+The input system is one of the largest systems out of all features offered by MRTK.
 So many things within the toolkit build on top of it (pointers, focus, prefabs). The code within the input
 system is what allows for natural interactions like grab and rotate across platforms.
 

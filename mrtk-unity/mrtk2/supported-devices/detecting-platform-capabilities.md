@@ -9,7 +9,7 @@ keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, capabili
 
 # Detecting platform capabilities &#8212; MRTK2
 
-A common question asked of the MRTK involves knowing which specific device (ex: Microsoft HoloLens 2) is being
+A common question asked of MRTK involves knowing which specific device (ex: Microsoft HoloLens 2) is being
 used to run an application. Identifying the exact hardware can be challenging on different platforms. Instead, the MRTK
 provides a way to identify specific capabilities at runtime, (e.g. if the current device endpoint supports articulated hands).
 

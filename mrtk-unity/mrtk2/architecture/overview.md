@@ -22,7 +22,7 @@ This section isn't intended to teach you how to do tasks, but rather how such ta
 MRTK doesn't have a single, uniform audience. It's been written to support use cases
 ranging from first time hackathons, to individuals building complex, shared experiences
 for enterprise. Some code and APIs may have been written that are optimized for one more
-than the other (i.e. some parts of the MRTK seem more optimized for "one click configure"),
+than the other (in other words, some parts of MRTK seem more optimized for "one click configure"),
 but it's important to note that some of those are more for historical and resourcing
 reasons. As MRTK evolves, the features that get built should be designed to scale to
 support the range of use cases.
@@ -36,16 +36,16 @@ mixed reality experiences.
 
 ## High level breakdown
 
-The MRTK is both a collection of tools for getting mixed reality (MR) experiences off
+MRTK is both a collection of tools for getting mixed reality (MR) experiences off
 the ground quickly, and also an application framework with opinions on its own runtime,
 how it should be extended, and how it should be configured.
 
-At a high level, the MRTK can be broken down in the following ways:
+At a high level, MRTK can be broken down in the following ways:
 
 ![Architecture Overview Diagram](../features/images/architecture/MRTK_Architecture.png)
 
-The MRTK also contains another set of grab-bag utilities that have little to no
-dependencies on the rest of the MRTK (to list a few: build tools, solvers, audio
+MRTK also contains another set of grab-bag utilities that have little to no
+dependencies on the rest of MRTK (to list a few: build tools, solvers, audio
 influencers, smoothing utilities, and line renderers)
 
 The remainder of the architecture documentation will build bottom up, starting from the framework

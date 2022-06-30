@@ -21,9 +21,9 @@ This article describes how to create [custom data providers](../../architecture/
 Data providers can be distributed in one of two ways:
 
 1. Third party add-ons
-1. Part of the Microsoft Mixed Reality Toolkit
+1. Part of Microsoft Mixed Reality Toolkit
 
-The approval process for submissions of new data providers to the MRTK will vary on a case-by-case basis and will be communicated at the time of the initial proposal. Proposals can be submitted by creating a new [*Feature Request* type issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues).
+The approval process for submissions of new data providers to MRTK will vary on a case-by-case basis and will be communicated at the time of the initial proposal. Proposals can be submitted by creating a new [*Feature Request* type issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues).
 
 ### Third party add-on
 
@@ -189,7 +189,7 @@ private void SendMeshObjects()
 
 Performance is critical in mixed reality applications. Every component adds some amount of overhead for which applications must account. To this end, it is important that all spatial awareness data providers contain Unity Profiler instrumentation in inner loop and frequently utilized code paths.
 
-It is recommended to implement the pattern utilized by the MRTK when instrumenting custom providers.
+It is recommended to implement the pattern utilized by MRTK when instrumenting custom providers.
 
 ```c#
         private static readonly ProfilerMarker UpdateObserverPerfMarker = new ProfilerMarker("[MRTK] WindowsMixedRealitySpatialMeshObserver.UpdateObserver");
@@ -207,7 +207,7 @@ It is recommended to implement the pattern utilized by the MRTK when instrumenti
 ```
 
 > [!Note]
-> The name used to identify the profiler marker is arbitrary. The MRTK uses the following pattern.
+> The name used to identify the profiler marker is arbitrary. MRTK uses the following pattern.
 >
 > "[product] className.methodName - optional note"
 >
@@ -215,7 +215,7 @@ It is recommended to implement the pattern utilized by the MRTK when instrumenti
 
 ## Create the profile and inspector
 
-In the Mixed Reality Toolkit, data providers are configured using [profiles](../profiles/profiles.md).
+In Mixed Reality Toolkit, data providers are configured using [profiles](../profiles/profiles.md).
 
 ### Define the profile
 
@@ -257,7 +257,7 @@ public class SpatialObjectMeshObserverProfileInspector : BaseMixedRealityToolkit
 
 ## Create assembly definition(s)
 
-The Mixed Reality Toolkit uses assembly definition ([.asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) files to specify dependencies
+Mixed Reality Toolkit uses assembly definition ([.asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)) files to specify dependencies
 between components as well as to assist Unity in reducing compilation time.
 
 It is recommended that assembly definition files are created for all data providers and their editor components.
