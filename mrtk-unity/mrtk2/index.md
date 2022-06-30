@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK
 ---
 
-# What is Mixed Reality Toolkit version 2?
+# What is Mixed Reality Toolkit 2?
 
 ![Mixed Reality Toolkit](features/images/Logo_MRTK_Unity_Banner.png)
 
