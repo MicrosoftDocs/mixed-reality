@@ -41,9 +41,17 @@ Create a new Unity project with Unity 2020.3.35f1 or newer / Unity 2021.3.4f1 or
 There are a handful of packages that MRTK3 uses that aren't part of this preview. To obtain these, please use the [`Mixed Reality Feature Tool`](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) and select the latest versions of the following in the Discover Features step:
 
 - **Platform Support → Mixed Reality OpenXR Plugin**
-- [Optional] **Spatial Audio → Microsoft Spatializer**
+- **Spatial Audio → Microsoft Spatializer** (Optional)
 
-For MRTK3 packages, refer to the [package overview page](packages/packages-overview.md) for information on packages and then select the ones that fit your needs. If you are new to MRTK3 and just want to get started quickly, check the **Input and UX Components packages** and go from there. These two packages, along with their dependencies (automatically added by the Feature Tool), will enable you to complete the rest of setup, explore most of our UX offerings and create projects ready to be deployed to various XR devices. Remember you can always come back to the Feature Tool and add more packages to your project later.
+For MRTK3 packages, we highly recommend the following two packages to help you get started quickly:
+
+- **MRTK3 → MRTK Input** (Required for this setup)
+- **MRTK3 → MRTK UX Components**
+
+These two packages, along with their dependencies (automatically added by the Feature Tool), will enable you to explore most of our UX offerings and create projects ready to be deployed to various XR devices. Remember you can always come back to the Feature Tool and add more packages to your project later.
+
+>[!NOTE]
+>For more information on MRTK3 packages, please refer to the [package overview page](packages/packages-overview.md).
 
 When you're finished selecting packages, click **Get features** and then follow the instructions in the Mixed Reality Feature Tool to import the selected packages into your Unity project.
 
