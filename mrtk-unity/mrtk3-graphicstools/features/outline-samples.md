@@ -43,7 +43,7 @@ In this example, the Outline Width value is animated and applied to the object i
 
 
 
-## Hierachies and multiple and skinned meshes
+## Hierarchies and multiple and skinned meshes
 
 <img src="images/SampleScenes/OutlinesCat_01.gif" width="40%" height="40%">
 
