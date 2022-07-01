@@ -14,7 +14,7 @@ This scene illustrates the outline feature and its variation possibilities.
 Outlines are a quick and appealing feature you can use to highlight objects in a scene.
 In addition to color and thickness, we can define the highlighting by adding animations and gradient effects.
 
-![Screenshot of an animated cat with an outline.](images/SampleScenes/OutlinesScene_01.gif)
+![Screenshot of several objects with outlines.](images/SampleScenes/OutlinesScene_01.gif)
 
 To achieve the outline effect, add the MeshOutline script for single objects or the MeshOutlineHierarchy script for entire mesh hierarchies. Adjust the Outline Width to your needs and apply an outline material.
 
