@@ -17,7 +17,7 @@ Compiling and deploying your app can take a significant amount of time, so we re
 - **Recommended:** [Holographic remoting (on HoloLens 2)](/windows/mixed-reality/develop/unity/preview-and-debug-your-app)
     - For development on Hololens 2 and related platforms (including other OpenXR targets that include hand tracking), we strongly recommend the use of holographic remoting to accelerate your iteration time. Advanced features like hand tracking, eye tracking, and scene reconstruction are available through remoting, and behave the same as if the app were deployed to a device.
 - Play-mode testing with the desktop's active OpenXR runtime
-  - Many popular PC VR platforms now support OpenXR, including [Windows Mixed Reality](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/native/openxr-getting-started), [SteamVR](https://www.steamvr.com/), and [Oculus Rift on PC](https://developer.oculus.com/documentation/native/pc/dg-openxr/).
+  - Many popular PC VR platforms now support OpenXR, including [Windows Mixed Reality](/windows/mixed-reality/develop/native/openxr-getting-started), [SteamVR](https://www.steamvr.com/), and [Oculus Rift on PC](https://developer.oculus.com/documentation/native/pc/dg-openxr/).
 - **Experimental**: [Oculus Link for Quest](https://support.oculus.com/airlink)
     - Some aspects of hand interactions are still being developed for Quest, and your results may vary.
     - Controller interactions should be full parity over Link.
