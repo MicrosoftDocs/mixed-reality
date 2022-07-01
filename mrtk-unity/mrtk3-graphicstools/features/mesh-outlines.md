@@ -12,7 +12,7 @@ keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphic
 
 Many mesh outline techniques are done using a [post processing](https://docs.unity3d.com/Manual/PostProcessingOverview.html) technique. Post processing provides great quality outlines, but can be prohibitively expensive on many mixed reality devices.
 
-![Mesh outlines example](images/MeshOutline/MeshOutline.jpg)
+![MeshOutlineSampleScene](images/SampleScenes/OutlinesScene_01.gif)
 
 _MeshOutline.cs_ and _MeshOutlineHierarchy.cs_ can be used to render an outline around a mesh renderer. Enabling this component introduces another render pass of the object being outlined, but it's designed to run optimally on mobile mixed reality devices and doesn't utilize any post processes.
 
