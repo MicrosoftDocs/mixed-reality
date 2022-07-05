@@ -13,7 +13,7 @@ monikerRange: '>= mrtkunity-2022-05'
 
 ## What's new in 2.8.2
 
-MRTK 2.8.1 provides key fixes for applications targeting Microsoft or Oculus devices, as well as performance improvements.
+MRTK 2.8.2 provides key fixes for applications targeting Microsoft or Oculus devices, as well as performance improvements.
 
 ### MRTK 2.8.2 Bugfixes and Changes
 
@@ -27,7 +27,7 @@ MRTK 2.8.1 provides key fixes for applications targeting Microsoft or Oculus dev
 
 ## What's new in 2.8.1
 
-This release is deprecated and should not be used, as it was inadvertently a repackaging of 2.8.0. Please use 2.8.2.
+This release is deprecated and should not be used, as it was inadvertently a repackaging of 2.8.0. Use 2.8.2 instead.
 
 ## What's new in 2.8.0
 
