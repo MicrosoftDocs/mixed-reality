@@ -4,10 +4,21 @@ Welcome to Mixed Reality documentation, the place for all things MR, VR, and AR 
 
 ## Contributing
 
-If you're contributing or updating docs content, please make sure your pull requests are targeting the correct sub-docset (mr-dev-docs, enthusiast-guide, and so on). New contributors should check out our more detailed contribution guidelines for each subdocset:
+If you're contributing or updating docs content, make sure your pull requests are targeting the correct sub-docset (mr-dev-docs, enthusiast-guide, and so on). 
 
-* [Mixed Reality contributors](mixed-reality-docs/mr-dev-docs/CONTRIBUTING.md)
-* [VR Enthusiast Guide contributors](enthusiast-guide/CONTRIBUTING.md)
+To ensure that your PR receives the attention it needs and is merged as soon as it's ready, make sure you're familiar with our [submission guidelines](https://microsoft.sharepoint.com/:w:/t/MRDocumentation/Ed-LEaqIjJZGkwQwFkhZuGUB8d1q0Mq8GyyLy_xdTVrQaA?e=Jh3Rzc). Here's a brief summary of the guidlines:
+
+1. Apply a label to your PR or choose "Draft" mode to convey the current status. Update as the PR evolves.
+
+    **Draft mode**: you're still pushing commits and aren't ready for reviews.
+
+    Label **"MR: Ready for review"**: you're finished pushing commits and want the PR to be reviewed.
+
+    Label **"MR: Ready for merge"**: you're satisfied that the tech review process has been completed and are ready to have the PR copyedit-reviewed and merged.
+
+    The "MR" in the label indicates that your PR is for "Mixed Reality."
+
+1. Choose the technical reviewers for your PR. A copyedit review by a tech writer will be performed on each PR before merging.
 
 For docs-related issues, use the footers at the bottom of each doc, or submit directly to [MicrosoftDocs/mixed-reality/issues](https://github.com/MicrosoftDocs/mixed-reality/issues).
 
