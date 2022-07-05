@@ -15,13 +15,13 @@ monikerRange: '>= mrtkunity-2021-05'
 
 ### A special thanks from Redmond
 
-The MRTK team would like to extend a warm thanks to you, the MRTK community. Your contributions, feedback, and votes have helped MRTK win the [2021 Auggie Award for Best Developer Tool](https://www.awexr.com/usa-2021/auggie-winners)! Without your support, we wouldn't be where we're today. Whether it's adding new platform support, new features, bug fixes, suggestions, questions, or any of the other numerous ways you might have contributed: Thank you!
+The MRTK team would like to extend a warm thanks to you, the MRTK community. Your contributions, feedback, and votes have helped MRTK win the [2021 Auggie Award for Best Developer Tool](https://www.awexr.com/usa-2021/auggie-winners)! Without your support, we wouldn't be where we are today. Whether it's adding new platform support, new features, bug fixes, suggestions, questions, or any of the other numerous ways you might have contributed: Thank you!
 
 ![2021 Auggie Awards Best Developer Tool](images/2021AuggieAward.png)
 
 ### Unity 2021 support
 
-We've made it easier to build on Unity 2021 with the release of 2.7.3! If you find any issues while using MRTK with Unity 2021, please [file an issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/) on our GitHub repository.
+We've made it easier to build on Unity 2021 with the release of 2.7.3! If you find any issues while using MRTK with Unity 2021, [file an issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/) on our GitHub repository.
 
 ### Scene Understanding via Remoting support (OpenXR Only)
 
@@ -38,7 +38,7 @@ Scene Understanding is now available during remoting on the HoloLens 2 with Open
 - Updated controller mapping list's header and alignment [#9976](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9976)
 - Assorted Unity improvements for MRTK [#9940](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9940)
 - Fixed _BoundsControl_ collider issues and inconsistency [#9973](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9973)
-- Fixed the button iconset inspectors [#9999](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9999)
+- Fixed the button icon set inspectors [#9999](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9999)
 - Fixed _BoundsControl_ scale handle collider alignment [#10007](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10007)
 - Fixed SDF font texture categorizing [#10006](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10006)
 - Fixed _BoundsControl_ auto-flatten and scale handle orientation [#10013](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10013)
@@ -81,7 +81,7 @@ Scene Understanding is now available during remoting on the HoloLens 2 with Open
 - Fixed flickering Proximity lighting [#10325](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10325)
 - Added check to see if anything is hooked into events before determining to fire those events [#10330](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10330)
 - Changed an assortment of minor things [#10316](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10316)
-- Introduced an alternative to .HasFlag [#10319](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10319)
+- Introduced an alternative to HasFlag [#10319](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10319)
 - Reduce `HandConstraint` solver debug log spam [#10331](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10331)
 - Fixed log spam that is coming from `HandConstraintPalmUp.cs` [#10326](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10326)
 - Enabled Scene Understanding for Holographic Remoting via OpenXR [#10338](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10338)
@@ -100,17 +100,17 @@ Scene Understanding is now available during remoting on the HoloLens 2 with Open
 - Fixed issue with Scene Understanding example scene profile [#10368](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/10368)
 - Fixed MRTK console errors when imported in latest versions of Unity 2021.2 [#10182](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/10182)
 - Added missing documentation on how to change cursors [#4934](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/4934)
-- Improved instructions on the MRTK Unity package release page to make them more clear [#9575](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9575)
-- Fixed issue where _MicStream_ selection demo scene did not process voice (UPM package) [#9908](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9908)
-- Fixed issue where samples could not be individually imported in MRTK Examples package [#10216](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/10216)
+- Improved instructions on the MRTK Unity package release page to make them clearer [#9575](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9575)
+- Fixed issue where _MicStream_ selection demo scene didn't process voice (UPM package) [#9908](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9908)
+- Fixed issue where samples couldn't be individually imported in MRTK Examples package [#10216](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/10216)
 - Added _BoundsControl_ missing documentation for some properties [#10346](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/10346)
-- Fixed a bug where _InteractableOnClickReceiver_ could not be added to a game object with an interactable component [#10341](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/10341)
+- Fixed a bug where _InteractableOnClickReceiver_ couldn't be added to a game object with an interactable component [#10341](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/10341)
 
 ## What's new in 2.7.2
 
 ### Fixed a UPM package dependency issue
 
-There has been an issue with MRTK 2.7.1 UPM packages where the dependencies aren't set up correctly. The issue causes the Mixed Reality Feature Tool to fail to import MRTK 2.7.1 packages properly. The issue is now resolved in 2.7.2. There is no code change in this version compared to 2.7.1.
+There has been an issue with MRTK 2.7.1 UPM packages where the dependencies aren't set up correctly. The issue causes the Mixed Reality Feature Tool to fail to import MRTK 2.7.1 packages properly. The issue is now resolved in 2.7.2. There's no code change in this version compared to 2.7.1.
 
 ## What's new in 2.7.1
 
@@ -133,7 +133,7 @@ Starting with MRTK 2.7.1, the authors list file is included in the Mixed Reality
 
 ### Integrated OpenXR project setup into the Configurator setup flow
 
-Starting with MRTK 2.7.1, users of the Mixed Reality OpenXR plugin will receive instructions on how to set up that plugin with MRTK. There is an option for users targeting HoloLens 2 to apply recommended settings automatically.
+Starting with MRTK 2.7.1, users of the Mixed Reality OpenXR plugin will receive instructions on how to set up that plugin with MRTK. There's an option for users targeting HoloLens 2 to apply recommended settings automatically.
 
 ![Configurator window with OpenXR setup instructions](images/configuratorMROpenXR.png)
 
@@ -150,7 +150,7 @@ Starting with MRTK 2.7.1, users of the Mixed Reality OpenXR plugin will receive 
 
 ### OpenXR is now officially supported in MRTK
 
-As the new OpenXR plugins are becoming more and more mature MRTK now officially supports OpenXR. Compared to previous releases we added the following capabilities to projects using OpenXR:
+As the new OpenXR plugins are becoming more mature, MRTK now officially supports OpenXR. Compared to previous releases we added the following capabilities to projects using OpenXR:
 
 - [Support for the system-provided motion controller model](#support-for-the-system-provided-motion-controller-model-on-openxr)
 - Support for WinMR gestures (select, hold, manipulation and navigation) [#9843](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9843)
@@ -159,13 +159,13 @@ As the new OpenXR plugins are becoming more and more mature MRTK now officially 
 - Support for Spatial Mapping on HoloLens 2 [#9567](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9567), [#9827](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9827)
 - Support for Scene Understanding on HoloLens 2 [#9744](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9744)
 
-If you are targeting HoloLens 2 or Windows Mixed Reality headsets via OpenXR, please make sure to install/update to **Mixed Reality OpenXR plugin version 0.9.5 or later** via [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool), otherwise you might miss some of the improvements above.
+If you're targeting HoloLens 2 or Windows Mixed Reality headsets via OpenXR, make sure to install/update to **Mixed Reality OpenXR plugin version 0.9.5 or later** via [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool), otherwise you might miss some of the improvements above.
 
 ### Legacy XR and XR SDK Data Providers can now be used within the same profile
 
 Data providers will now also only be loaded when the appropriate pipeline is selected, allowing both Legacy XR and XR SDK data providers to co-exist within
-the same profile. To accommodate this, Legacy XR and XR SDK Data Providers are now organized under different tabs within the profile view, helping users
-determine whether they have the correct profile for their targeted XR pipeline.
+the same profile. To accommodate this, Legacy XR and XR SDK Data Providers are now organized under different tabs within the profile view. This organization
+should help determine whether the correct profile is selected for the targeted XR pipeline.
 
 ![Legacy and XR SDK data providers can now be unified under a single profile](../features/images/xrsdk/LegacyAndXrsdkUnified.png)
 
@@ -180,13 +180,13 @@ under **Edit -> Project Settings -> Mixed Reality Toolkit** to debug unexpected 
 Users can now configure [Experience Settings](../features/experience-settings/experience-settings.md), which will allow MRTK to display [Mixed Reality Scene Content](../features/experience-settings/scene-content.md)
 appropriately based on the targeted experience.
 
-If user's previous Experience Scale settings do not match the new Experience Settings Profile, they will be prompted to correct it in the inspector.
+If user's previous Experience Scale settings don't match the new Experience Settings Profile, they'll be prompted to correct it in the inspector.
 
 ![Experience Scale Migration](https://user-images.githubusercontent.com/39840334/114946863-d70bde80-9e00-11eb-9859-fa40d40d2b36.gif)
 
 ### The Redesigned Configurator now guides the user through the setup process
 
-The new MRTK configurator provides users step-by-step guidance to properly configure the project for XR development and use with MRTK. It covers the selection of XR pipeline, getting the platform specific plugins, importing TextMeshPro, displaying the examples (when using UPM) and other previously included recommended settings for the project.
+The new MRTK configurator provides users step-by-step guidance to properly configure the project for XR development and use with MRTK. It covers the selection of XR pipeline, getting the platform specific plugins, importing TextMeshPro, displaying the examples (when using UPM), and other previously included recommended settings for the project.
 
 ![Configurator showing the pipelines list](images/Configurator.png)
 
@@ -204,13 +204,13 @@ The dwell feature and example is now graduated from experimental. New examples o
 
 ### Added support for Leap Motion Unity Modules version 4.6.0, 4.7.0, 4.7.1 and 4.8.0
 
-Support for the latest versions of the [Leap Motion Unity Modules](https://developer.leapmotion.com/unity) is now compatible with MRTK 2.7.0. See [How to Configure MRTK for Leap Motion](../supported-devices/leap-motion-mrtk.md) for more information.
+Support for the latest versions of the [Leap Motion Unity Modules](https://developer.leapmotion.com/unity) is now compatible with MRTK 2.7.0. For more information, see [How to Configure MRTK for Leap Motion](../supported-devices/leap-motion-mrtk.md).
 
-Big thanks to @jackyangzzh for contributing the new `LeapMotionOrientationExample` scene!
+Many thanks to @jackyangzzh for contributing the new `LeapMotionOrientationExample` scene!
 
 ### Targeted speech events raised no longer restricted to gaze pointers
 
-Previously, targeted speech events could only be raised on objects which were focused on with the gaze pointer. Now, objects can receive speech events if they are focused by any pointer.
+Previously, targeted speech events could only be raised on objects that were focused on with the gaze pointer. Now, objects can receive speech events if they're focused by any pointer.
 
 ![Speech Events with Far Pointers](https://user-images.githubusercontent.com/39840334/117516612-6fa00500-af4e-11eb-94ba-d5fb2ed4e7de.gif)
 
@@ -238,17 +238,17 @@ Added support for eye gaze when using Windows XR Plugin minimum versions of 2.7.
 
 ### Notable Bugfixes and Changes
 
-- Pinch detection made smoother. It is now harder to accidentally drop the pinch gesture. [#9576](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9576)
+- Pinch detection made smoother. It's now harder to accidentally drop the pinch gesture. [#9576](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9576)
 - Objects with the Object Manipulator component now consistently maintain velocity on release when the flag is set. [#9733](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9733)
 - Back-strafing now checks for a floor, helping prevent situations where the camera can clip into the environment or where the user is left hovering over empty space.[#9697](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9697)
 - `IsNearObject` is now a virtual property, allowing more flexibility when extending the sphere or poke pointer. [#9803](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9803)
 - Buttons now display the proper keyword when showing the available speech command. [#9824](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9824)
-- Oculus Controllers now uses it's own standalone visualizer, preventing the MRTK visualization from clashing with the Oculus Integration Package's visualization. [#9589](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9589)
-- Keyboard related scripts have been changed to align with the behavior in latest Unity versions (2019.4.25+ & 2020.3.2+). As of the release there is still an auto-completion bug and a TMP Input Field bug (both are external to MRTK) impacting HoloLens. For more information please see [#9056](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9056) and [#9724](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9724).
+- Oculus Controllers now use their own standalone visualizer, preventing the MRTK visualization from clashing with the Oculus Integration Package's visualization. [#9589](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9589)
+- Keyboard related scripts have been changed to align with the behavior in latest Unity versions (2019.4.25+ & 2020.3.2+). As of the release, there's still an auto-completion bug and a TMP Input Field bug (both are external to MRTK) impacting HoloLens. For more information, see [#9056](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9056) and [#9724](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9724).
 - Improved the performance of Scrolling Object Collection. Also fixed an issue causing `GameObject` within the collection to lose material when duplicated. [#9813](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9813), [#9718](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9718)
 - In the Scene Understanding demo script, added the `GetSceneObjectsOfType` function to retrieve all observed scene object of a certain kind. [#9524](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9524), [#9744](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9744)
 - In command line build tool, only scenes specified by the `sceneList` or `sceneListFile` flags (when any flag is present) will be included in the build. [#9695](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9695)
-- In build tool, there is a new option to specify a path to `nuget.exe` and use that to perform package restore instead of using `msbuild` (the default option). [#9556](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9556)
+- In build tool, there's a new option to specify a path to `nuget.exe` and use that to perform package restore instead of using `msbuild` (the default option). [#9556](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9556)
 - Fixed issue where using Windows XR Plugin could result in stale hand joints and doubled hand meshes. [#9890](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9890)
 - Fixed issue where using Windows XR Plugin's automatic remoting feature led to missing input and interactions. [#9868](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9868)
 - Fixed issue where the `BuildDeployWindow` would try to query an invalid reg key for the Windows SDK path. [#9664](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9664)
@@ -263,9 +263,9 @@ Added support for eye gaze when using Windows XR Plugin minimum versions of 2.7.
 
 ### Audio demos are missing an `asmdef` file (UPM package)
 
-When importing MRTK via the Mixed Reality Feature Tool, samples and demos are added to the project using the Unity Package Manager UI. After importing the Audio demos, the `WindowsMicrophoneStreamDemo.unity` scene will not behave properly. This is a result of a missing .asmdef file for the sample.
+When MRTK is imported via the Mixed Reality Feature Tool, samples and demos are added to the project using the Unity Package Manager UI. After the Audio demos are imported, the `WindowsMicrophoneStreamDemo.unity` scene won't behave properly. This behavior is a result of a missing asmdef file for the sample.
 
-To work around this [issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9908), please perform the following steps:
+To work around this [issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9908), perform the following steps:
 
 - Copy Library/PackageCache/com.microsoft.mixedreality.toolkit.examples@[...]/MRTK.Examples.asmdef into your "Assets/Samples/Mixed Reality Toolkit Examples" folder
 - Rename the copied file to Examples
@@ -278,7 +278,7 @@ This issue will be fixed in an upcoming MRTK release.
 
 ### MRTK build window triggers indefinite "Importing assets" dialog in Unity 2020.3
 
-There is a known [issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9723) with the MRTK build window on Unity 2020.3 where after successfully performing a UWP build, the "Importing assets" dialog does not complete. This issue is being investigated in partnership with Unity.
+There's a known [issue](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9723) with the MRTK build window on Unity 2020.3, where the "Importing assets" dialog doesn't complete after a UWP build. This issue is being investigated with Unity.
 
 ### Text Mesh Pro Canvas Renderer warnings in Unity 2020
 
@@ -288,4 +288,4 @@ The following warning is logged in most MRTK example scenes while using Unity 20
 Please remove the `CanvasRenderer` component from the [TextMeshPro] GameObject as this component is no longer necessary.
 ```
 
-The Canvas Renderer warning was added in [TextMeshPro version 3.0.3](https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0/changelog/CHANGELOG.html#changes-3). These warning do not have an impact on MRTK's example scenes and can be cleared from the console. See [Issue 9811](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9811) for more details.
+The Canvas Renderer warning was added in [TextMeshPro version 3.0.3](https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0/changelog/CHANGELOG.html#changes-3). These warnings don't have an effect on MRTK's example scenes and can be cleared from the console. For more details, ee [Issue 9811](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9811).
