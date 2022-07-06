@@ -7,7 +7,7 @@ ms.date: 05/27/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, C#, Contributors, Community
 ---
 
-# Authors — MRTK2
+# Authors &#8212; MRTK2
 
 The Microsoft Mixed Reality Toolkit is a collaborative project containing contributions from individuals around the world. Our sincere thanks to all who have, and continue to contribute.
 
