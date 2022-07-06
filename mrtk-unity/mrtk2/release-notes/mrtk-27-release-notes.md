@@ -180,13 +180,13 @@ under **Edit -> Project Settings -> Mixed Reality Toolkit** to debug unexpected 
 Users can now configure [Experience Settings](../features/experience-settings/experience-settings.md), which will allow MRTK to display [Mixed Reality Scene Content](../features/experience-settings/scene-content.md)
 appropriately based on the targeted experience.
 
-If user's previous Experience Scale settings don't match the new Experience Settings Profile, they'll be prompted to correct it in the inspector.
+If a user's previous Experience Scale settings don't match the new Experience Settings Profile, they'll be prompted to correct it in the Inspector.
 
 ![Experience Scale Migration](https://user-images.githubusercontent.com/39840334/114946863-d70bde80-9e00-11eb-9859-fa40d40d2b36.gif)
 
 ### The Redesigned Configurator now guides the user through the setup process
 
-The new MRTK configurator provides users step-by-step guidance to properly configure the project for XR development and use with MRTK. It covers the selection of XR pipeline, getting the platform specific plugins, importing TextMeshPro, displaying the examples (when using UPM), and other previously included recommended settings for the project.
+The new MRTK Configurator provides users with step-by-step guidance to properly configure the project for XR development and use with MRTK. It covers the selection of XR pipeline, getting the platform-specific plugins, importing TextMeshPro, displaying the examples (when using UPM), and other previously included recommended settings for the project.
 
 ![Configurator showing the pipelines list](images/Configurator.png)
 
@@ -247,8 +247,8 @@ Added support for eye gaze when using Windows XR Plugin minimum versions of 2.7.
 - Keyboard related scripts have been changed to align with the behavior in latest Unity versions (2019.4.25+ & 2020.3.2+). As of the release, there's still an auto-completion bug and a TMP Input Field bug (both are external to MRTK) impacting HoloLens. For more information, see [#9056](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9056) and [#9724](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9724).
 - Improved the performance of Scrolling Object Collection. Also fixed an issue causing `GameObject` within the collection to lose material when duplicated. [#9813](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9813), [#9718](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9718)
 - In the Scene Understanding demo script, added the `GetSceneObjectsOfType` function to retrieve all observed scene object of a certain kind. [#9524](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9524), [#9744](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9744)
-- In command line build tool, only scenes specified by the `sceneList` or `sceneListFile` flags (when any flag is present) will be included in the build. [#9695](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9695)
-- In build tool, there's a new option to specify a path to `nuget.exe` and use that to perform package restore instead of using `msbuild` (the default option). [#9556](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9556)
+- In the command line build tool, only scenes specified by the `sceneList` or `sceneListFile` flags (when any flag is present) will be included in the build. [#9695](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9695)
+- In the build tool, there's a new option to specify a path to `nuget.exe` and use that to perform package restore instead of using `msbuild` (the default option). [#9556](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9556)
 - Fixed issue where using Windows XR Plugin could result in stale hand joints and doubled hand meshes. [#9890](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9890)
 - Fixed issue where using Windows XR Plugin's automatic remoting feature led to missing input and interactions. [#9868](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9868)
 - Fixed issue where the `BuildDeployWindow` would try to query an invalid reg key for the Windows SDK path. [#9664](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9664)
@@ -288,4 +288,4 @@ The following warning is logged in most MRTK example scenes while using Unity 20
 Please remove the `CanvasRenderer` component from the [TextMeshPro] GameObject as this component is no longer necessary.
 ```
 
-The Canvas Renderer warning was added in [TextMeshPro version 3.0.3](https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0/changelog/CHANGELOG.html#changes-3). These warnings don't have an effect on MRTK's example scenes and can be cleared from the console. For more details, ee [Issue 9811](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9811).
+The Canvas Renderer warning was added in [TextMeshPro version 3.0.3](https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0/changelog/CHANGELOG.html#changes-3). These warnings don't have an effect on MRTK's example scenes and can be cleared from the console. For more details, see [Issue 9811](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9811).
