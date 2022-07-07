@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Graphics Tools, MRGT, MR Graphics Tools, Material Instance, Standard Shader, Clipping Primitive
 ---
 
-# Material instance overview
+# Material instance overview &#8212; MRTK3
 
 The `MaterialInstance` behavior aides in tracking instance material lifetime and automatically destroys instanced materials for the user. This utility component can be used as a replacement to [Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html) or
 [Renderer.materials](https://docs.unity3d.com/ScriptReference/Renderer-materials.html).

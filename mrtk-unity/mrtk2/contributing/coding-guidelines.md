@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, C#,
 ---
 
-# Coding guidelines
+# Coding guidelines &#8212; MRTK2
 
 This document outlines coding principles and conventions to follow when contributing to MRTK.
 
@@ -66,7 +66,7 @@ All Microsoft employees contributing new files should add the following standard
 
 ### Function / method summary headers
 
-All public classes, structs, enums, functions, properties, fields posted to the MRTK should be described as to its purpose and use, exactly as shown below:
+All public classes, structs, enums, functions, properties, fields posted to MRTK should be described as to its purpose and use, exactly as shown below:
 
 ```c#
 /// <summary>

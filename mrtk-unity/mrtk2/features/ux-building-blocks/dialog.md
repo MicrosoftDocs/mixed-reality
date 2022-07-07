@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Dialog
+# Dialog &#8212; MRTK2
 
 ![Dialog](../images/dialog/MRTK_UX_Dialog_Main.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Input simulation in MRTK3
+title: Input simulation
 description: Input simulation in MRTK3
 author: davidkline-ms
 ms.author: davidkl
@@ -8,9 +8,9 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, Mixed Reality Toolkit, input simulation
 ---
 
-# Input simulation | MRTK3
+# Input simulation &#8212; MRTK3
 
-With MRTK's input simulation, you can test various types of interactions in the Unity editor without building and deploying them to a device. The input simulation allows you quickly iterate your ideas in the design and development process. Use keyboard and mouse combinations to control simulated inputs.
+With MRTK's input simulation, you can test various types of interactions in the Unity editor without building and deploying them to a device. The input simulation allows you to quickly iterate your ideas in the design and development process. Use keyboard and mouse combinations to control simulated inputs.
 
 The Input Simulation Service emulates the behavior of devices and platforms that may not be available in the Unity editor. Examples include:
 
@@ -20,7 +20,9 @@ The Input Simulation Service emulates the behavior of devices and platforms that
 - HoloLens 2 eye-tracking
 
 > [!WARNING]
-> Input simulation does not work when using Unity's XR Holographic Emulation > Emulation Mode = "Simulate in Editor." Unity's in-editor simulation will take control away from MRTK's input simulation. To use MRTK's input simulation, you will need to set XR Holographic Emulation to Emulation Mode = _"None"_.
+> Input simulation doesn't work when using Unity's XR Holographic Emulation > Emulation Mode = "Simulate in Editor." Unity's in-editor simulation will take control away from MRTK's input simulation. To use MRTK's input simulation, you'll need to set XR Holographic Emulation to:
+
+  Emulation Mode = _"None"_.
 
 ## How to use MRTK3 Input simulation (MRTK3 Input Simulator Default Controls)
 

@@ -1,6 +1,6 @@
 ---
-title: MRTK-Unity Developer Documentation
-description: Learn about the Mixed Reality Toolkit for Unity.
+title: MRTK2-Unity Developer Documentation
+description: Learn about Mixed Reality Toolkit for Unity.
 author: polar-kev
 ms.author: alexturn
 ms.date: 11/10/2021
@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK
 ---
 
-# What is the Mixed Reality Toolkit
+# What is Mixed Reality Toolkit 2?
 
 ![Mixed Reality Toolkit](features/images/Logo_MRTK_Unity_Banner.png)
 
@@ -45,7 +45,7 @@ MRTK-Unity is a Microsoft-driven project that provides a set of components and f
 ::: moniker-end
 
 > [!NOTE]
-> We have introduced the public preview of MRTK3, the next chapter of MRTK. For more information, please go to the [MRTK3 documentation](/windows/mixed-reality/mrtk-unity/mrtk3-overview).
+> We have introduced the public preview of MRTK3, the next chapter of MRTK. For more information, please go to the [MRTK3 documentation](../mrtk3-overview/index.md).
 
 ## Getting started with MRTK
 
@@ -365,7 +365,7 @@ See [Mixed Reality Dev Days](/windows/mixed-reality/mr-dev-days-sessions) to exp
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information, see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
-## Useful resources on the Mixed Reality Dev Center
+## Useful resources on Mixed Reality Dev Center
 
 | ![Discover](features/images/mrdevcenter/icon-discover.png) [Discover](/windows/mixed-reality/)| ![Design](features/images/mrdevcenter/icon-design.png) [Design](/windows/mixed-reality/design)| ![Develop](features/images/mrdevcenter/icon-develop.png) [Develop](/windows/mixed-reality/development)| ![Distribute)](features/images/mrdevcenter/icon-distribute.png) [Distribute](/windows/mixed-reality/implementing-3d-app-launchers)|
 | :--------------------- | :----------------- | :------------------ | :------------------------ |

@@ -1,15 +1,15 @@
 ---
 title: MRTK packages
-description: Packages in MRTK supporting Mixed reality hardware and platforms.
+description: Packages in MRTK2 supporting Mixed reality hardware and platforms.
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Unity Package Manager,
 ---
 
-# MRTK packages
+# MRTK packages &#8212; MRTK2
 
-The Mixed Reality Toolkit (MRTK) is a collection of packages that enable cross platform Mixed Reality application development by providing support for Mixed Reality hardware and platforms.
+Mixed Reality Toolkit (MRTK) is a collection of packages that enable cross platform Mixed Reality application development by providing support for Mixed Reality hardware and platforms.
 
 MRTK is available as [asset](#asset-packages) (.unitypackage) packages and via the [Unity Package Manager](#unity-package-manager).
 
@@ -90,7 +90,7 @@ The MRTK Foundation package contains the following.
 
 ### Extensions package
 
-The optional Microsoft.MixedRealityToolkit.Unity.Extensions package includes additional services that extend the functionality of the Microsoft Mixed Reality Toolkit.
+The optional Microsoft.MixedRealityToolkit.Unity.Extensions package includes additional services that extend the functionality of Microsoft Mixed Reality Toolkit.
 
 > [!NOTE]
 > The extensions package requires Microsoft.MixedRealityToolkit.Unity.Foundation.
@@ -104,7 +104,7 @@ The optional Microsoft.MixedRealityToolkit.Unity.Extensions package includes add
 
 ### Tools package
 
-The optional Microsoft.MixedRealityToolkit.Unity.Tools package includes helpful tools that enhance the mixed reality development experience using the Microsoft Mixed Reality Toolkit.
+The optional Microsoft.MixedRealityToolkit.Unity.Tools package includes helpful tools that enhance the mixed reality development experience using Microsoft Mixed Reality Toolkit.
 These tools are located in the **Mixed Reality Toolkit > Utilities** menu in the Unity Editor.
 
 > [!NOTE]
@@ -142,7 +142,7 @@ that respond to various types of hand input (articulated and non-articulated).
 
 This package also contains eye tracking demos, which are [documented here](../features/example-scenes/eye-tracking-examples-overview.md)
 
-More generally, any new feature in the MRTK should contain a corresponding example in the examples package, roughly following
+More generally, any new feature in MRTK should contain a corresponding example in the examples package, roughly following
 the same folder structure and location.
 
 > [!NOTE]
@@ -157,7 +157,7 @@ the same folder structure and location.
 
 ## Unity Package Manager
 
-For experiences being created using Unity 2019.4 and newer, the MRTK is available via the [Unity Package Manager](https://docs.unity3d.com/Manual/Packages.html).
+For experiences being created using Unity 2019.4 and newer, MRTK is available via the [Unity Package Manager](https://docs.unity3d.com/Manual/Packages.html).
 
 Some of the benefits of using asset packages include:
 
@@ -179,7 +179,7 @@ Some of the challenges are:
 
 ### Foundation package
 
-The foundation package (`com.microsoft.mixedreality.toolkit.foundation`) forms the basis of the Mixed Reality Toolkit.
+The foundation package (`com.microsoft.mixedreality.toolkit.foundation`) forms the basis of Mixed Reality Toolkit.
 
 | Folder | Component | Description |
 | --- | --- | --- |
@@ -234,7 +234,7 @@ Dependencies: none
 
 ### Extension packages
 
-The optional extensions package (`com.microsoft.mixedreality.toolkit.extensions)` contains additional components that expand the functionality of the MRTK.
+The optional extensions package (`com.microsoft.mixedreality.toolkit.extensions)` contains additional components that expand the functionality of MRTK.
 
 | Folder | Component | Description |
 | --- | --- | --- |

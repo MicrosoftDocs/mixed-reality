@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Pointers, cursor
 ---
 
-# Pointers
+# Pointers &#8212; MRTK2
 
 ![Pointer](../images/pointers/MRTK_Pointer_Main.png)
 

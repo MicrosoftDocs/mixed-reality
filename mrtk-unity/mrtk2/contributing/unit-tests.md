@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, UnitTest,
 ---
 
-# Writing and running tests
+# Writing and running tests &#8212; MRTK2
 
 To ensure MRTK is reliable, MRTK has a set of tests to ensure that changes to the code does not regress existing behavior. Having good test coverage in a big codebase like MRTK is crucial for stability and having confidence when making changes.
 
@@ -286,9 +286,9 @@ or play mode test folder.
 
 When adding a new test, please modify the script to have the correct MRTK icon. There's an easy MRTK tool to do so:
 
-1. Go go the Mixed Reality Toolkit menu item
-1. Click on Utilities, then Update, then Icons
-1. Click on Tests, and the updater will run automatically, updating any test scripts missing their icons
+1. Go to the Mixed Reality Toolkit menu item.
+1. Click on Utilities, then Update, then Icons.
+1. Click on Tests, and the updater will run automatically, updating any test scripts missing their icons.
 
 ### MRTK Utility methods
 

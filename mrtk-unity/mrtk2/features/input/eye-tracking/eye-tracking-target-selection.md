@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, EyeTracking,
 ---
 
-# Eye-supported target selection
+# Eye-supported target selection &#8212; MRTK2
 
 ![MRTK](../../images/eye-tracking/mrtk_et_targetselect.png)
 
@@ -330,7 +330,7 @@ However, there might be situations in which you want to use hand rays while stil
 
 **1. Enable the hand ray:**
 To enable the hand ray, go to _Mixed Reality Toolkit -> Input -> Pointers_.
-In the _EyeTrackingDemo-00-RootScene_ where the Mixed Reality Toolkit is configured once for all of the eye tracking demo scenes, you should see the _EyeTrackingDemoPointerProfile_.
+In the _EyeTrackingDemo-00-RootScene_ where Mixed Reality Toolkit is configured once for all of the eye tracking demo scenes, you should see the _EyeTrackingDemoPointerProfile_.
 You can either create a new _Input Profile_ from scratch or adapt the current eye tracking one:
 
 - **From scratch:**

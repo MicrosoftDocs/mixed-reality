@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Oculus Quest
 ---
 
-# Deploying to Oculus Quest
+# Deploying to Oculus Quest &#8212; MRTK2
 
 An [Oculus Quest](https://www.oculus.com/quest/) is required.
 
@@ -130,7 +130,7 @@ to "Controllers and Hands".
 
 ## Removing Oculus Integration from the Project
 
-1. Navigate to the Mixed Reality Toolkit > Oculus > Separate Oculus Integration Unity Modules
+1. Navigate to Mixed Reality Toolkit > Oculus > Separate Oculus Integration Unity Modules
     ![Oculus Separation Asmdef](../images/cross-platform/oculus-quest/OculusSeparationAsmdef.png)
 1. Let Unity refresh as references in the Microsoft.MixedReality.Toolkit.Providers.Oculus.asmdef and other files are modified in this step
 1. Close Unity

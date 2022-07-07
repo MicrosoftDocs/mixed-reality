@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# MRTK modularization
+# MRTK modularization &#8212; MRTK2
 
 One of the great new features of Mixed Reality Toolkit v2 is improved componentization. Wherever possible, individual components are isolated from all but the core layer of the foundation.
 
@@ -31,7 +31,7 @@ through the Mixed Reality Toolkit core component.
 
 ## Minimizing MRTK import footprint
 
-At this moment, the MRTK is imported as a single foundation package (ignoring for a moment the existence of the examples package, which is a completely optional package). It is possible to make this footprint smaller by manually cutting down on the files imported, though this is a highly manual process which doesn't have a well-defined guide.
+At this moment, MRTK is imported as a single Foundation package (ignoring for a moment the existence of the examples package, which is a completely optional package). It is possible to make this footprint smaller by manually cutting down on the files imported, though this is a highly manual process which doesn't have a well-defined guide.
 
 It is possible to uncheck arbitrary items during the import of the Foundation package. However, it's not recommended to do this at an early stage in development as it might break functionality. After having figured out the final feature set of an app, pruning unneeded providers and services can be done on the following folders:
 
@@ -46,7 +46,7 @@ It is possible to uncheck arbitrary items during the import of the Foundation pa
 
 ### Application architecture
 
-The MRTK will have support to enable applications to be built with a variety of architectures, including:
+MRTK will have support to enable applications to be built with a variety of architectures, including:
 
 - [MixedRealityToolkit service locator](#mixedrealitytoolkit-service-locator)
 - [Individual services](#individual-service-components)
@@ -57,7 +57,7 @@ When selecting an application architecture, it is important to consider design f
 
 #### MixedRealityToolkit service locator
 
-The MRTK enables (and automatically configures) application scenes to use the default [`MixedRealityToolkit`](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit) service locator component. This component includes support for configuring MRTK systems and data providers via configuration inspectors and manages component lifespans and core behaviors (ex: when to update).
+MRTK enables (and automatically configures) application scenes to use the default [`MixedRealityToolkit`](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit) service locator component. This component includes support for configuring MRTK systems and data providers via configuration inspectors and manages component lifespans and core behaviors (ex: when to update).
 
 All systems are represented in the core configuration inspector, regardless of whether or not they are present or enabled in the project. Please see the [Mixed Reality Configuration Guide](../configuration/mixed-reality-configuration-guide.md) for more
 information.
@@ -77,7 +77,7 @@ Some developers have requested the ability to create a custom service locator co
 
 #### Hybrid architecture
 
-The MRTK will support a hybrid architecture in which developers can combine the previous approaches as needed or desired. For example, a developer could start with the [`MixedRealityToolkit`](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit) service locator and add a self-registering
+MRTK will support a hybrid architecture in which developers can combine the previous approaches as needed or desired. For example, a developer could start with the [`MixedRealityToolkit`](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit) service locator and add a self-registering
 service.
 
 > [!NOTE]

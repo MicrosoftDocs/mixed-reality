@@ -7,15 +7,15 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Boundary System,
 ---
 
-# Boundary system overview
+# Boundary system overview &#8212; MRTK2
 
 The Boundary system provides support for visualizing Virtual Reality boundary components in mixed reality applications. Boundaries define the area in which users can safely move around while wearing a VR headset. Boundaries are an important component of a mixed reality experience to help users avoid unseen obstacles while wearing a VR headset.
 
-Many Virtual Reality platforms provide an automatic display, for example a white outline superimposed on the virtual world as the user or their controller nears the boundary. The Mixed Reality Toolkit's Boundary System extends this feature to enable the display of an outline of the tracked area, a floor plane and other features that can be used to provide additional information to users.
+Many Virtual Reality platforms provide an automatic display, for example a white outline superimposed on the virtual world as the user or their controller nears the boundary. Mixed Reality Toolkit's Boundary System extends this feature to enable the display of an outline of the tracked area, a floor plane and other features that can be used to provide additional information to users.
 
 ## Getting started
 
-Adding support for boundaries requires two key components of the Mixed Reality Toolkit: the Boundary System and a Virtual Reality platform configured with a boundary.
+Adding support for boundaries requires two key components of Mixed Reality Toolkit: the Boundary System and a Virtual Reality platform configured with a boundary.
 
 1. [Enable](#enable-boundary-system) the boundary system
 2. [Configure](#configure-boundary-visualization) the boundary visualization
@@ -35,7 +35,7 @@ The following steps presume use of the MixedRealityToolkit object. Steps require
 
     ![Enable the Boundary System](../images/boundary/MRTKConfig_Boundary.png)
 
-1. Select the Boundary System implementation. The default class implementation provided by the MRTK is the [`MixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.MixedRealityBoundarySystem)
+1. Select the Boundary System implementation. The default class implementation provided by MRTK is the [`MixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.MixedRealityBoundarySystem)
 
     ![Select the Boundary System Implementation](../images/boundary/BoundarySelectSystemType.png)
 

@@ -87,7 +87,7 @@
     "externalReference": [],
     "globalMetadata": {
       "extendBreadcrumb": true,
-      "uhfHeaderId": "MSDocsHeader-Hololens",
+      "uhfHeaderId": "MSDocsHeader-MRTK",
       "ms.prod": "mixed-reality",
       "ms.topic": "conceptual",
       "titleSuffix": "Mixed Reality Toolkit",
@@ -143,11 +143,13 @@
         "./mrtk2/**/*.md": ["Mixed Reality","MRTK 2"],
         "./mrtk2/**/*.yml": ["Mixed Reality","MRTK 2"],
         "./mrtk3*/**/*.md": ["Mixed Reality","MRTK3"],
-        "./mrtk3*/**/*.yml": ["Mixed Reality","Mrtk3"]
+        "./mrtk3*/**/*.yml": ["Mixed Reality","MRTK3"]
       },
       "titleSuffix": {
         "./mrtk2/**/*.md": "MRTK 2",
-        "./mrtk2/**/*.yml": "MRTK 2"
+        "./mrtk2/**/*.yml": "MRTK 2",
+        "./mrtk3*/**/*.md": "MRTK3",
+        "./mrtk3*/**/*yml": "MRTK3"
       }
     },
     "template": [],

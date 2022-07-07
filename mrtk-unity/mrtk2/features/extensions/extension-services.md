@@ -7,10 +7,10 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK,
 ---
 
-# Extension services
+# Extension services &#8212; MRTK2
 
-Extension services are components that extend the functionality of the Mixed Reality Toolkit. These services may be provided
-by the MRTK or by other parties.
+Extension services are components that extend the functionality of Mixed Reality Toolkit. These services may be provided
+by MRTK or by other parties.
 
 ## Creating an extension service
 
@@ -31,7 +31,7 @@ When the wizard completes, the service functionality can be implemented.
 
 ## Registering an extension service
 
-To be accessible by an application, the new extension service needs to be registered with the Mixed Reality Toolkit.
+To be accessible by an application, the new extension service needs to be registered with Mixed Reality Toolkit.
 
 The extension service creation wizard can be used to register the service.
 

@@ -7,14 +7,14 @@ ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, System Extensions,
 ---
 
-# Systems, extension services, and data providers
+# Systems, extension services, and data providers &#8212; MRTK2
 
-In the Mixed Reality Toolkit, many of the features are delivered in the form of services. Services are grouped into three
+In Mixed Reality Toolkit, many of the features are delivered in the form of services. Services are grouped into three
 primary categories: systems, extension services and data providers.
 
 ## Systems
 
-Systems are services that provide the core functionality of the Mixed Reality Toolkit. All systems are implementations of the
+Systems are services that provide the core functionality of Mixed Reality Toolkit. All systems are implementations of the
 [`IMixedRealityService`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityService) interface.
 
 - [BoundarySystem](../features/boundary/boundary-system-getting-started.md)
@@ -29,7 +29,7 @@ Each of the listed systems are surfaced in the MixedRealityToolkit component's c
 
 ## Extensions
 
-Extension services are components that extend the functionality of the Mixed Reality Toolkit. All extension services must specify
+Extension services are components that extend the functionality of Mixed Reality Toolkit. All extension services must specify
 that they implement the [`IMixedRealityExtensionService`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityExtensionService) interface.
 
 For information on creating extension services, please reference the [Extension services](../features/extensions/extension-services.md) article.
@@ -45,7 +45,7 @@ Data providers are components that, per their name, provide data to a Mixed Real
 they implement the [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) interface.
 
 > [!NOTE]
-> Not all services will require data providers. Of the Mixed Reality Toolkit's systems, the Input and Spatial Awareness systems are the
+> Not all services will require data providers. Of Mixed Reality Toolkit's systems, the Input and Spatial Awareness systems are the
 only services to utilize data providers.
 
 To be accessible to the specific MRTK service, data providers are registered in the service's configuration profile.

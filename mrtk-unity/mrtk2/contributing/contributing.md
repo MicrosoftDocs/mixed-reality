@@ -1,29 +1,29 @@
 ---
-title: Contributing to MRTK
-description: How to contribute to the Mixed Reality Toolkit
+title: Contributing to MRTK2
+description: How to contribute to Mixed Reality Toolkit
 author: polar-kev
 ms.author: qianwen
 ms.date: 03/17/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Bug report,
 ---
 
-# Contributing to MRTK
+# Contributing to MRTK2
 
-The Mixed Reality Toolkit (MRTK) welcomes contributions from the community. All changes be they small or large, need to adhere to the [MRTK coding standards](coding-guidelines.md), so please ensure you are familiar with these while developing to avoid delays when the change is being reviewed.
+Mixed Reality Toolkit (MRTK) welcomes contributions from the community. All changes be they small or large, need to adhere to the [MRTK coding standards](coding-guidelines.md), so please ensure you are familiar with these while developing to avoid delays when the change is being reviewed.
 
 If you have any questions, please reach out on the [mixed-reality-toolkit channel on Slack](https://holodevelopers.slack.com/messages/C2H4HT858).
  You can join the Slack community via the [automatic invitation sender](https://holodevelopersslack.azurewebsites.net/).
 
-## Submission process
+## Submission processes
 
-We provide several paths to enable developers to contribute to the Mixed Reality Toolkit, all starting with [creating a new Issue](https://github.com/Microsoft/MixedRealityToolkit-Unity/issues/new/choose).
+We provide several paths to enable developers to contribute to Mixed Reality Toolkit, all starting with [creating a new Issue](https://github.com/Microsoft/MixedRealityToolkit-Unity/issues/new/choose).
 
 <img src="../features/images/contributing/SelectIssueType.png" width="600" alt="Select Issue Type">
 
 From here you file:
 
-- **Bug report** - Functionality issue with one of the Mixed Reality Toolkit components
-- **Documentation issue** - Issue with the Mixed Reality Toolkit [documentation](https://microsoft.github.io/MixedRealityToolkit-Unity)
+- **Bug report** - Functionality issue with one of Mixed Reality Toolkit components
+- **Documentation issue** - Issue with Mixed Reality Toolkit [documentation](https://microsoft.github.io/MixedRealityToolkit-Unity)
 - **Feature request** - Proposal for a new Mixed Reality Toolkit feature
 
 ## Proposing feature requests

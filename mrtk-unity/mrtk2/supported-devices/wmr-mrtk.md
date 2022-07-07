@@ -7,7 +7,7 @@ ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK, Visual Studio
 ---
 
-# Deploying to HoloLens and WMR headsets
+# Deploying to HoloLens and WMR headsets &#8212; MRTK2
 
 There are two ways to deploy applications built with MRTK to your windows device, the Univeral Windows Platform (UWP) and the Standalone Platform. Applications built for HoloLens 1 or HoloLens 2 must target UWP, while applications built for WMR headsets may target either UWP or Standalone.
 
