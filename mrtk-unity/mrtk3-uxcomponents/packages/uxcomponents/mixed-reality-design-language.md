@@ -88,7 +88,14 @@ We're excited to introduce the latest Mixed Reality Design Language--first showc
 
 ## Mixed Reality Design Language in MRTK3
 
-![MRTKv3 Tearsheet](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_MRTKv3_Tearsheet.png)<br>
+You can check out these example scenes for various UI elements with Mixed Reality Design Language.
+
+- **CanvasUITearSheet.unity**: Shows all available Canvas-based button prefab variants in MRTK.
+- **CanvasExample.unity**: Examples of building larger layouts using the Canvas-based components.
+- **UITearSheet.unity**: Shows all available non-Canvas-based button prefab variants in MRTK.
+
+
+![Canvas Tearsheet](../../../mrtk3-overview/images/UXBuildingBlocks/Button/MRTK_Button_CanvasTearsheet.png) <br>
 
 ## Examples of using Mixed Reality Design Language
 
