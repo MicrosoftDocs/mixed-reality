@@ -18,11 +18,11 @@ We're excited to introduce the latest Mixed Reality Design Language--first showc
 ## Improvements
 :::row:::
     :::column:::
-    ![Updated geometry](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK3_MRDL_VisualSystemModular.gif) <br>    
+    ![Updated geometry](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Improvements_Geometry.png) <br>    
     Updated geometry with rounded corners for more approachable and friendly experiences, combining the traditional HoloLens iridescent look and feel with modern Fluent design
     :::column-end:::
     :::column:::
-    ![Improved visual feedback](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK3_MRDL_VisualSystemModular.gif) <br>    
+    ![Improved visual feedback](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Improvements_VisualFeedback.gif) <br>    
     Improved visual feedback for enhanced multi-modal input such as eye-gaze + pinch gesture
     :::column-end:::
 :::row-end:::
@@ -32,7 +32,7 @@ We're excited to introduce the latest Mixed Reality Design Language--first showc
     Improved modular units that support various UI scenarios with permutations
     :::column-end:::
     :::column:::
-    ![Modular backpalte system](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK3_MRDL_VisualSystemModular.gif) <br>    
+    ![Modular backpalte system](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Improvements_Backplate.png) <br>    
     Modular backplate system for building complex layouts that remain clear and usable
     :::column-end:::
 :::row-end:::
