@@ -19,16 +19,16 @@ We're excited to introduce the latest Mixed Reality Design Language--first showc
 :::row:::
     :::column:::
     ![Updated geometry](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Improvements_Geometry.png)
-    Updated geometry with rounded corners for more approachable and friendly experiences, combining the traditional HoloLens iridescent look and feel with modern Fluent design
+    Updated geometry with rounded corners for more approachable and friendly experiences
     :::column-end:::
     :::column:::
     ![Improved visual feedback](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Improvements_VisualFeedback2.gif)
-    Improved visual feedback for enhanced multi-modal input such as eye-gaze + pinch gesture
+    Improved visual feedback for enhanced multi-modal input such as eye-gaze combined with pinch gesture
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
-    ![Improved modular units](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK3_MRDL_VisualSystemModular2.gif)
+    ![Improved modular units](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK3_MRDL_VisualSystemModular3.gif)
     Improved modular units that support various UI scenarios with permutations
     :::column-end:::
     :::column:::
@@ -43,7 +43,7 @@ We're excited to introduce the latest Mixed Reality Design Language--first showc
     :::column-end:::
     :::column:::
     ![Canvas-based UI](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Improvements_CanvasUI.gif)
-    Dynamic layout with RectTransform and Canvas
+    Integration with RectTransform and Unity Canvas that supports dyanmic and flexible layout 
     :::column-end:::
 :::row-end:::
 
