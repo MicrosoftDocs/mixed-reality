@@ -18,31 +18,31 @@ We're excited to introduce the latest Mixed Reality Design Language--first showc
 ## Improvements
 :::row:::
     :::column:::
-    ![Updated geometry](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Improvements_Geometry.png) <br>    
+    ![Updated geometry](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Improvements_Geometry.png)
     Updated geometry with rounded corners for more approachable and friendly experiences, combining the traditional HoloLens iridescent look and feel with modern Fluent design
     :::column-end:::
     :::column:::
-    ![Improved visual feedback](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Improvements_VisualFeedback.gif) <br>    
+    ![Improved visual feedback](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Improvements_VisualFeedback2.gif)
     Improved visual feedback for enhanced multi-modal input such as eye-gaze + pinch gesture
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
-    ![Improved modular units](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK3_MRDL_VisualSystemModular.gif) <br>    
+    ![Improved modular units](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK3_MRDL_VisualSystemModular2.gif)
     Improved modular units that support various UI scenarios with permutations
     :::column-end:::
     :::column:::
-    ![Modular backpalte system](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Improvements_Backplate.png) <br>    
+    ![Modular backpalte system](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Improvements_Backplate.png)
     Modular backplate system for building complex layouts that remain clear and usable
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
-    ![Bounding box updates](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK3_MRDL_VisualSystemModular.gif) <br>    
+    ![Bounding box updates](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Improvements_BoundingBox.gif)
     Redesigned bounding box visuals to reduce visual noise and enable fluid gaze-powered interactions
     :::column-end:::
     :::column:::
-    ![Canvas-based UI](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK3_MRDL_VisualSystemModular.gif) <br>    
+    ![Canvas-based UI](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK3_MRDL_VisualSystemModular.gif)
     Dynamic layout with RectTransform and Canvas
     :::column-end:::
 :::row-end:::
