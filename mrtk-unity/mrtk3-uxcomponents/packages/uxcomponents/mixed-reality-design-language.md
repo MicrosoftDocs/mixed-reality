@@ -42,7 +42,7 @@ We're excited to introduce the latest Mixed Reality Design Language--first showc
     Redesigned bounding box visuals to reduce visual noise and enable fluid gaze-powered interactions
     :::column-end:::
     :::column:::
-    ![Canvas-based UI](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK3_MRDL_VisualSystemModular.gif)
+    ![Canvas-based UI](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Improvements_CanvasUI.gif)
     Dynamic layout with RectTransform and Canvas
     :::column-end:::
 :::row-end:::
