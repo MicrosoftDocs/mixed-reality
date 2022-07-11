@@ -17,8 +17,9 @@ We're excited to introduce the latest Mixed Reality Design Language--first showc
 
 ## Improvements
 
-- Improved visual feedback for multi-modal input
-- Beautiful rounded design elements, combining the traditional HoloLens iridescent look and feel with modern Fluent design
+- Improved visual feedback for enhanced multi-modal input such as eye-gaze + pinch gesture
+- Updated geometry with rounded corners for more approachable and friendly experiences, combining the traditional HoloLens iridescent look and feel with modern Fluent design
+- Improved modular units that support various UI scenarios with permutations
 - Modular backplate system for building complex layouts that remain clear and usable
 - Redesigned bounding box visuals to reduce visual noise and enable fluid gaze-powered interactions
 - Dynamic layout with RectTransform and Canvas
@@ -29,26 +30,27 @@ We're excited to introduce the latest Mixed Reality Design Language--first showc
     :::column:::
         ![Geometry](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Elements_Geometry.png) <br>
         **Geometry**<br>
-        Geometry describes the shape, size, and position of UI elements. These fundamental design elements help experiences feel coherent across the entire design system. The new design language introduces geometry with rounded corners that create a more approachable, engaging, and modern experience. The geometry is also fully three-dimensional, with a tangible thickness that helps ground the designs in reality. It also reminds the user that these elements are real, physical objects that exist within their 3D space, and can be attached to objects and grabbed, moved, or manipulated.
+        The new design language introduces geometry with rounded corners that create a more approachable, engaging, and modern experience. The geometry is also fully three-dimensional, with a tangible thickness that helps ground the designs in reality. It also reminds the user that these elements are real, physical objects that exist within their 3D space, and can be attached to objects and grabbed, moved, or manipulated.
     :::column-end:::
     :::column:::
         ![Color](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Elements_Color.png) <br>
         **Color**<br>
-        Geometry describes the shape, size, and position of UI elements. These fundamental design elements help experiences feel coherent across the entire design system. The new design language introduces geometry with rounded corners that create a more approachable, engaging, and modern experience. The geometry is also fully three-dimensional, with a tangible thickness that helps ground the designs in reality. It also reminds the user that these elements are real, physical objects that exist within their 3D space, and can be attached to objects and grabbed, moved, or manipulated.
+        Color helps users focus on their tasks by indicating a visual hierarchy and structure between user interface elements. The new design language uses a darker color scheme to minimize eye fatigue while still remaining bright and opaque enough on additive displays to strengthen user confidence when they make direct hand interactions. Detailed elements such as iridescent effects are the result of design and user research iterations to provide best experience in HoloLens' additive display and other Mixed Reality devices.
     :::column-end:::
+:::row-end:::
+:::row:::
     :::column:::
         ![Light and materials](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Elements_Light.png) <br>
         **Light and materials**<br>
         Light and materials play an essential role in providing visual feedback in spatial interactions. Using contextual 3D illumination helps the user perceive depth and interaction state, especially when the device's additive displays can cause depth confusion. For example, the user's fingertips cast a subtle glow on the pressable surfaces of buttons, improving the user's perception of the distance of their finger from the hologram.
     :::column-end:::
-:::row-end:::
-
-:::row:::
     :::column:::
         ![Layering and Elevation](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Elements_Layering.png) <br>
         **Layers**<br>
         Layering is the concept of overlapping one surface with another. The Mixed Reality Design Language uses layering and elevation to create volumetric UI that enhances interaction quality and usability in spatial interactions, and delights users with a beautiful and intuitive response to their input.
     :::column-end:::
+:::row-end:::
+:::row:::
     :::column:::
         ![Iconography](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Elements_Iconography.png) <br>
         **Iconography**<br>
