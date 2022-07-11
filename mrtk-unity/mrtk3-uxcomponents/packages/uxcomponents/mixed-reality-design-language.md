@@ -16,13 +16,36 @@ Over the last several years, we've shipped many different devices and form facto
 We're excited to introduce the latest Mixed Reality Design Language--first showcased in the Mesh app for HoloLens--to the public through MRTK's building blocks. The new design changes aim to empower developers to build production-ready applications that are more beautiful, usable, and portable. 
 
 ## Improvements
-
-- Improved visual feedback for enhanced multi-modal input such as eye-gaze + pinch gesture
-- Updated geometry with rounded corners for more approachable and friendly experiences, combining the traditional HoloLens iridescent look and feel with modern Fluent design
-- Improved modular units that support various UI scenarios with permutations
-- Modular backplate system for building complex layouts that remain clear and usable
-- Redesigned bounding box visuals to reduce visual noise and enable fluid gaze-powered interactions
-- Dynamic layout with RectTransform and Canvas
+:::row:::
+    :::column:::
+    ![Updated geometry](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK3_MRDL_VisualSystemModular.gif) <br>    
+    Updated geometry with rounded corners for more approachable and friendly experiences, combining the traditional HoloLens iridescent look and feel with modern Fluent design
+    :::column-end:::
+    :::column:::
+    ![Improved visual feedback](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK3_MRDL_VisualSystemModular.gif) <br>    
+    Improved visual feedback for enhanced multi-modal input such as eye-gaze + pinch gesture
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+    ![Improved modular units](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK3_MRDL_VisualSystemModular.gif) <br>    
+    Improved modular units that support various UI scenarios with permutations
+    :::column-end:::
+    :::column:::
+    ![Modular backpalte system](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK3_MRDL_VisualSystemModular.gif) <br>    
+    Modular backplate system for building complex layouts that remain clear and usable
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+    ![Bounding box updates](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK3_MRDL_VisualSystemModular.gif) <br>    
+    Redesigned bounding box visuals to reduce visual noise and enable fluid gaze-powered interactions
+    :::column-end:::
+    :::column:::
+    ![Canvas-based UI](../../../mrtk3-overview/images/UXBuildingBlocks/MRTK3_MRDL_VisualSystemModular.gif) <br>    
+    Dynamic layout with RectTransform and Canvas
+    :::column-end:::
+:::row-end:::
 
 ## Key elements
 
@@ -35,7 +58,7 @@ We're excited to introduce the latest Mixed Reality Design Language--first showc
     :::column:::
         ![Color](../../../mrtk3-overview/images/UXBuildingBlocks/MRDL_Elements_Color.png) <br>
         **Color**<br>
-        Color helps users focus on their tasks by indicating a visual hierarchy and structure between user interface elements. The new design language uses a darker color scheme to minimize eye fatigue while still remaining bright and opaque enough on additive displays to strengthen user confidence when they make direct hand interactions. Detailed elements such as iridescent effects are the result of design and user research iterations to provide best experience in HoloLens' additive display and other Mixed Reality devices.
+        Color helps users focus on their tasks by indicating a visual hierarchy and structure between user interface elements. The new design language's color scheme minimizes eye fatigue while remaining bright and opaque enough on additive displays to strengthen user confidence when they make direct hand interactions. Detailed elements such as iridescent effects are the result of design and user research iterations to provide best experience in HoloLens' additive display and other Mixed Reality devices.
     :::column-end:::
 :::row-end:::
 :::row:::
