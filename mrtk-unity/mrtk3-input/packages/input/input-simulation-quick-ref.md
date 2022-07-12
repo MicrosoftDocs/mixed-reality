@@ -14,16 +14,16 @@ This article contains the most essential input simulations. These instructions a
 
 ## Change the view in the scene
 
-**To move the camera forward/left/back/right**:
+**To move the camera forward/left/back/right**:  
 press the W/A/S/D keys.
 
-**To move the camera vertically**:
+**To move the camera vertically**:  
 Press the Q and E keys.
 
-**To rotate the camera**:
+**To rotate the camera**:  
 Press the right mouse button and then drag left/right or up/down.
 
-**To tilt the camera left or right**:
+**To tilt the camera left or right**:  
 Press the right mouse button and then rotate the mouse scroll wheel forward and back.
 
 ## Use the simulated hands
@@ -32,16 +32,16 @@ A simulated hand appears as a pattern of cubes shaped to indicate a hand.
 
 ![An image showing the cube-based patterns that make up the simulated hands.](../images/simulated-hands.jpg)
 
-**To enable the simulated hands**:
+**To enable the simulated hands**:  
 Press T (for left hand) or Y (for right hand). To remove the hand, press the same key again.
 
-**To move a hand left/right/up/down**:
+**To move a hand left/right/up/down**:  
 Press and hold the left shift key (for left hand) or space bar (for right hand) and then drag left/right/up/down in the scene.
 
-**To move a hand forward into the scene or back out towards you**:
+**To move a hand forward into the scene or back out towards you**:  
 Press and hold the left shift key (for left hand) or space bar (for right hand) and then rotate the mouse scroll wheel forward or back.
 
-**To rotate a hand**:
+**To rotate a hand**:  
 Press and hold the left ALT key (for left hand) or left CTRL (for right hand) and then drag left/right/up/down in the scene or rotate the mouse scroll wheel forward or back.
 
 ## Grab and move an object
