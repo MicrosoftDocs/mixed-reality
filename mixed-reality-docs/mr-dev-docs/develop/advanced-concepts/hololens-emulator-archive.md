@@ -3,7 +3,7 @@ title: HoloLens Emulator archive
 description: Stay up to date on the archived list of released builds for the Microsoft HoloLens(1st gen) and HoloLens 2 Emulators.
 author: hamalawi
 ms.author: moelhama
-ms.date: 6/14/2022
+ms.date: 7/12/2022
 ms.topic: article
 keywords: HoloLens, Emulator, Builds, Versions, mixed reality headset, windows mixed reality headset, virtual reality headset, archive
 ---
@@ -16,6 +16,8 @@ For general HoloLens 2 release notes, see [HoloLens Release Notes](/hololens/hol
 
 |  Build |  Release Date |  Notes |
 |----------|----------|----------|
+|  [HoloLens 2 Emulator build 10.0.20348.1511](https://go.microsoft.com/fwlink/?linkid=2198236) | July 12, 2022 | Windows Holographic, version 22H1 July 2022 Update. |
+|  [HoloLens 2 Emulator build 10.0.19041.1190](https://go.microsoft.com/fwlink/?linkid=2198409) | July 12, 2022 | Windows Holographic, version 20H2 July 2022 Update. |
 |  [HoloLens 2 Emulator build 10.0.20348.1503](https://go.microsoft.com/fwlink/?linkid=2198236) | June 14, 2022 | Windows Holographic, version 22H1 June 2022 Update. |
 |  [HoloLens 2 Emulator build 10.0.19041.1185](https://go.microsoft.com/fwlink/?linkid=2198409) | June 14, 2022 | Windows Holographic, version 20H2 June 2022 Update. |
 |  [HoloLens 2 Emulator build 10.0.20348.1503](https://go.microsoft.com/fwlink/?linkid=2194808) | May 10, 2022 | Windows Holographic, version 22H1 May 2022 Update. |
