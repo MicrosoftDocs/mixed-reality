@@ -114,6 +114,7 @@ When you use channel packing, you only have to sample and load one texture into 
 | Alpha   | Smoothness           |
 
 The main map section also has an option for triplanar mapping and super-sample anti-aliasing.
+It also contains the option to add colored emission texture maps once the Emission checkbox is selected.
 
 Triplanar mapping is a technique to programmatically texture a mesh. It's often used in terrain, meshes without UVs, or difficult to unwrap shapes. This implementation supports world or local space projection, the specification of blending smoothness, and normal map support. Note, each texture used requires three texture samples, so use sparingly in performance critical situations.
 
