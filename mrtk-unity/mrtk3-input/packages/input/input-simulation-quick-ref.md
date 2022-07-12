@@ -8,7 +8,7 @@ ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, development, MRTK3, Mixed Reality Toolkit, input simulation, in-editor tutorial
 ---
 
-# Input simulation &#8212; MRTK3
+# Input simulation Quick Reference &#8212; MRTK3
 
 This article contains the most essential input simulations. These instructions are also listed in the first module of the MRTK3 In-Editor Tutorial.
 
