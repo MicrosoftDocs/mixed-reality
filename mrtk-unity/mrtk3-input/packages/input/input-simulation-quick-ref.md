@@ -53,6 +53,28 @@ After you enable a hand, notice that it has a ray (or what we call a "pointer") 
 
 You can also grab an object with the hand itself, instead of the pointer, by moving the hand close to the object and then pressing the left mouse button. However, we find that in these tutorials, grabbing and moving objects with the pointer is easier.
 
+## Rotate an object
+
+Rotate using the simulated left hand:
+
+1. Press T to enable the hand.
+
+2. Press the left Shift key, and then move the hand until its far pointer is over the coral.
+
+3. Press the left Alt key and then press the left mouse button and drag the cursor. This rotates the hand and the Coral.
+
+4. While continuing to hold down the left Alt key and left mouse button, rotate the scroll wheel. This rotates the Coral on a different axis.
+
+Rotate using the simulated right hand:
+
+1. Press Y to enable the hand.
+
+2. Press the space bar, and then move the hand until its far pointer is over the coral.
+
+3. Press the left Ctrl key and then press the left mouse button and drag the cursor. This rotates the Coral.
+
+4. While continuing to hold down the left Ctrl key and left mouse button, rotate the scroll wheel. This rotates the Coral on a different axis.
+
 ## Tips:
 
 **"Stuck" or "lost" hands**
